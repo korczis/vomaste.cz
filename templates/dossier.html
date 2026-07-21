@@ -12,6 +12,17 @@
     {% endif %}
   </header>
 
+  {% if page.extra.stats %}
+  <section class="mb-12 grid grid-cols-2 gap-4 sm:grid-cols-4">
+    {% for stat in page.extra.stats %}
+    <div class="rounded-lg border border-white/10 p-4 text-center">
+      <p class="text-2xl font-bold">{{ stat.value }}</p>
+      <p class="mt-1 text-xs text-white/50">{{ stat.label }}</p>
+    </div>
+    {% endfor %}
+  </section>
+  {% endif %}
+
   <article class="dossier-prose">
     {{ page.content | safe }}
   </article>
@@ -33,5 +44,11 @@
   .dossier-prose th, .dossier-prose td { border: 1px solid rgba(255,255,255,0.1); padding: 0.5rem 0.75rem; text-align: left; }
   .dossier-prose th { background: rgba(255,255,255,0.05); }
   .dossier-prose em { color: rgba(255,255,255,0.5); }
+  .status-badge { display: inline-block; font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.02em; padding: 0.125rem 0.5rem; border-radius: 9999px; margin-bottom: 0.5rem; text-transform: uppercase; }
+  .status-corroborated { background: rgba(34,197,94,0.15); color: rgb(134,239,172); border: 1px solid rgba(34,197,94,0.3); }
+  .status-quote { background: rgba(59,130,246,0.15); color: rgb(147,197,253); border: 1px solid rgba(59,130,246,0.3); }
+  .status-disputed { background: rgba(234,179,8,0.15); color: rgb(253,224,71); border: 1px solid rgba(234,179,8,0.3); }
+  .status-opinion { background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.6); border: 1px solid rgba(255,255,255,0.15); }
+  .legend { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; margin-bottom: 2rem; font-size: 0.75rem; color: rgba(255,255,255,0.5); }
 </style>
 {% endblock content %}

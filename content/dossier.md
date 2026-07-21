@@ -7,7 +7,30 @@ template = "dossier.html"
 lang = "cs"
 updated = "2026-07-21"
 reviewed_at = "2026-07-21"
+
+[[extra.stats]]
+value = "16"
+label = "Citovaných zdrojů"
+
+[[extra.stats]]
+value = "3"
+label = "Sledované kauzy"
+
+[[extra.stats]]
+value = "10"
+label = "Nezávislých médií"
+
+[[extra.stats]]
+value = "3"
+label = "Otevřené otázky"
 +++
+
+<div class="legend">
+  <span><span class="status-badge status-corroborated">Ověřeno více zdroji</span> potvrzeno nezávisle více médii</span>
+  <span><span class="status-badge status-quote">Citace</span> přímý výrok, ne hodnocení tohoto webu</span>
+  <span><span class="status-badge status-disputed">Sporné</span> neuzavřené, nepotvrzené tvrzení</span>
+  <span><span class="status-badge status-opinion">Názor</span> autorský komentář, ne zpravodajství</span>
+</div>
 
 ## Kdo
 
