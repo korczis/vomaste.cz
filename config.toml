@@ -20,6 +20,11 @@ hard_link_static = false
 
 taxonomies = []
 
+[link_checker]
+# irozhlas.cz returns 403 to Zola's link-checker user agent (bot-blocking),
+# not because the article is gone — skip automated verification for it.
+skip_prefixes = ["https://www.irozhlas.cz/"]
+
 [extra]
 locale = "en_US"
 lang = "en"
