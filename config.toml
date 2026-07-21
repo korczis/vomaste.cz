@@ -1,8 +1,10 @@
-# The URL the site is built for. Must always be the real production host —
-# scripts/seo-validate.mjs rejects any built page whose HTML contains a
-# non-production host (localhost, *.github.io, etc.), so this stays the
-# custom domain even before DNS/Pages custom-domain wiring is finished.
-base_url = "https://vomaste.cz"
+# TEMPORARY: pointed at the working github.io URL because vomaste.cz has no
+# DNS yet (see AGENTS.md / commit 760babe). get_url() emits absolute URLs
+# from this value, so leaving it as vomaste.cz breaks every asset link
+# (main.css 404s, etc.) while the custom domain isn't reachable. Switch back
+# to "https://vomaste.cz" and restore static/CNAME together, once DNS for
+# vomaste.cz actually resolves to GitHub Pages.
+base_url = "https://korczis.github.io/vomaste.cz"
 
 title = "vomaste.cz"
 description = "vomaste.cz"
