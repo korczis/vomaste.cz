@@ -1,6 +1,6 @@
 +++
-title = "Dossier — Macinka a Turek: nehoda a politický tlak na rezignaci"
-description = "Neutrální, zdroji podložený přehled kauzy kolem dopravní nehody Filipa Turka a reakce Petra Macinky. Průběžně sledovaná, nedokončená kauza."
+title = "Dossier — Petr Macinka a Filip Turek"
+description = "Neutrální, zdroji podložený přehled politické kariéry a veřejně řešených kauz Petra Macinky a Filipa Turka. Průběžně sledované, nedokončené případy."
 template = "dossier.html"
 
 [extra]
@@ -12,9 +12,60 @@ reviewed_at = "2026-07-21"
 ## Kdo
 
 - **Petr Macinka** — předseda hnutí Motoristé sobě, člen vlády.
-- **Filip Turek** — poslanec za Motoristy sobě, do vypuknutí kauzy vládní zmocněnec pro Green Deal.
+- **Filip Turek** — poslanec za Motoristy sobě, do vypuknutí kauzy nehody vládní zmocněnec pro Green Deal.
 
-## Co se stalo (fakta, podle více nezávislých zdrojů)
+## Politická kariéra
+
+- **Filip Turek** byl v červnu 2024 zvolen europoslancem za společnou
+  kandidátku Motoristů sobě a Přísahy (druhý nejvyšší počet preferenčních
+  hlasů v zemi, přes 150 000). Dne 30. května 2025 oznámil kandidaturu do
+  Poslanecké sněmovny za Motoristy ve Středočeském kraji. V říjnu 2025
+  získal v kraji nejvyšší počet preferenčních hlasů ze všech kandidátů
+  Motoristů (20 232 hlasů, 34,54 % preferenčních hlasů strany v kraji),
+  stal se poslancem a uvolnil mandát europoslance (nahradil ho Antonín
+  Staněk). *(Zdroj: Seznam Zprávy, iROZHLAS, Aktuálně.cz)*
+- **Petr Macinka** je předsedou hnutí Motoristé sobě od jeho založení v roce
+  2022. V říjnu 2025 byl zvolen poslancem za Jihomoravský kraj. Motoristé
+  sobě získali ve volbách do Poslanecké sněmovny 2025 13 mandátů (kolem
+  6,77–6,78 % hlasů) poté, co interní hlasování (86 % ku 14 %) odmítlo
+  předvolební koalici s Přísahou a hnutí šlo do voleb samostatně. Po volbách
+  se Motoristé sobě stali součástí vlády vedené ANO a SPD. *(Zdroj: Seznam
+  Zprávy, iROZHLAS)*
+
+## Kauza z roku 2024: fotografie a sbírka svícnů
+
+Před volbami do Evropského parlamentu v červnu 2024 čelil Turek kritice kvůli
+fotografii z roku 2013 zachycující ho se zdviženou pravicí, připomínající
+nacistický pozdrav, a kvůli jeho sbírce svícnů/kandelábrů zdobených hákovými
+kříži. Turek to označil za "špatný humor", resp. sběratelský zájem; věcí se
+zabývala policie a kvůli kauze mu byly zrušeny některé předvolební debaty.
+Předseda Motoristů Petr Macinka jej veřejně hájil a kauzu označil za
+"pseudoproblém." *(Zdroj: iROZHLAS, Deník N)*
+
+## Kauza z října 2025: smazané příspěvky na Facebooku
+
+V říjnu 2025 zveřejnil Deník N investigativní text s printscreeny
+příspěvků, které měly být smazané a připisované Filipu Turkovi z let
+přibližně 2010–2014. Podle Deníku N měly příspěvky obsahovat rasistické,
+sexistické a homofobní výroky — mimo jiné komentář zlehčující žhářský útok
+ve Vítkově z roku 2009 a hanlivé označení Baracka Obamy — a odkazy na
+Hitlera a holokaust.
+
+Turek autorství nejzávažnějších příspěvků odmítl. Podle Deníku.cz uvedl:
+„Přijímám zodpovědnost opravdu za mnoho nesmyslů, co jsem kdy napsal,
+protože jsem milovník černého humoru, ale absolutně odmítám to hlavní, o
+čem to celé bylo," a rasismus u sebe odmítl s odkazem na svou spolupráci s
+romským podnikatelským sdružením. Nešlo o jeho první obdobnou obhajobu — už
+v lednu 2024 v pořadu Xaver Live řekl, že nevhodné příspěvky na jeho účtech
+někdy psali cizí lidé v hospodě, kterým půjčil odemčený telefon.
+
+Pravost a autorství původních screenshotů zůstává sporné a nebylo k datu
+psaní tohoto přehledu nezávisle prokázáno ani vyvráceno — jde o otevřenou,
+neuzavřenou otázku, ne o potvrzený fakt. *(Zdroj: Deník N, Deník.cz)*
+
+## Dopravní nehoda (2026)
+
+*(Co se stalo, podle více nezávislých zdrojů)*
 
 Auto Filipa Turka se v Praze střetlo s vozidlem zdravotnické záchranné služby.
 Podle záběrů, které rozebíral Echo24, Turek před střetem předjížděl frontu
@@ -61,10 +112,12 @@ ne zpravodajství, a je zde uveden odděleně a zřetelně jako názor.
 
 ## Otevřené otázky
 
-- Výsledek policejního vyšetřování (přestupek vs. trestný čin, otázka viny)
-  nebyl v době psaní uzavřen.
-- Případný dopad na Turkovo poslanecké působení a Macinkovu pozici ve vládě
-  se dále vyvíjí.
+- Výsledek policejního vyšetřování dopravní nehody (přestupek vs. trestný
+  čin, otázka viny) nebyl v době psaní uzavřen.
+- Případný dopad nehody na Turkovo poslanecké působení a Macinkovu pozici ve
+  vládě se dále vyvíjí.
+- Pravost a autorství příspěvků, které Deník N v říjnu 2025 připsal Turkovi,
+  je sporná a nebyla nezávisle ověřena ani vyvrácena.
 
 ## Zdroje
 
@@ -80,5 +133,11 @@ ne zpravodajství, a je zde uveden odděleně a zřetelně jako názor.
 | 8 | [iRozhlas.cz](https://www.irozhlas.cz/zpravy-domov/pokud-se-zabery-potvrdi-mel-rezignovat-premier-babis-mluvil-s-macinkou-o-turkove_2607141755_jva) | Babišovo vyjádření k záběrům z nehody |
 | 9 | [HlídacíPes.org](https://hlidacipes.org/ales-rozehnal-macinka-a-turek-si-hraji-na-mazaky-ceka-je-navrat-k-bezvyznamnosti/) | Komentář Aleše Rozehnala (názor) |
 | 10 | [Život v Česku](https://zivotvcesku.cz/macinka-se-pustil-do-pavla-po-jeho-slovech-k-turkove-nehode-jiny-by-pry-mohl-rict-nerespektuje-ustavu-at-abdikuje/) | Macinkova reakce na prezidenta Pavla |
+| 11 | [Seznam Zprávy](https://www.seznamzpravy.cz/clanek/volby-do-poslanecke-snemovny-motoriste-se-dockali-turek-chce-vymenit-brusel-za-prahu-277943) | Turkova kandidatura do Sněmovny, politické výroky |
+| 12 | [iROZHLAS](https://www.irozhlas.cz/zpravy-domov/ze-sedacek-aut-a-formuli-do-kresla-v-europarlamentu-jmeno-filipa-turka_2412271818_vtk) | Turkův politický profil, kauza fotografie a svícnů (2024) |
+| 13 | [Aktuálně.cz](https://zpravy.aktualne.cz/domaci/turek-a-jeho-lid-dojeli-do-snemovny-kdo-z-motoristu-mandat/r~9eb44c0ea14b11f0bf960cc47ab5f122/) | Výsledky Motoristů ve volbách 2025, mandáty |
+| 14 | [Deník N](https://denikn.cz/1444758) | Kauza fotografie se zdviženou pravicí (2024) |
+| 15 | [Deník N](https://denikn.cz/1864721/popalit-cikane-je-polehcujici-okolnost-obama-je-negr-odhalujeme-smazany-svet-filipa-turka/) | Investigace o smazaných příspěvcích (říjen 2025) |
+| 16 | [Deník.cz](https://www.denik.cz/z_domova/filip-turek-motoriste-kauza-nevhodne-prispevky-lide-hospoda-obhajoba.html) | Turkova reakce a obhajoba k příspěvkům |
 
-*Tento přehled shrnuje mediálně publikované informace k datu 2026-07-21. Kauza se dále vyvíjí a přehled bude podle potřeby aktualizován. Nejde o právní hodnocení viny — otázka odpovědnosti za nehodu je předmětem probíhajícího šetření.*
+*Tento přehled shrnuje mediálně publikované informace k datu 2026-07-21. Kauzy se dále vyvíjí a přehled bude podle potřeby aktualizován. Nejde o právní hodnocení viny — otázky odpovědnosti (za nehodu i za pravost příspěvků z roku 2025) jsou předmětem probíhajícího šetření, resp. sporu.*

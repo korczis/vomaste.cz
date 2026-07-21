@@ -38,9 +38,22 @@ Rules for this dossier:
   be bumped when the page has actually been re-checked against current
   reporting — this is an active, developing story.
 
+### Scope extension, 2026-07-21: broader political profile
+
+Authorized by the site owner, on the record, in the same session: the
+dossier may also cover Turek's and Macinka's public political careers
+(electoral history, party role) and two earlier, separately-reported public
+controversies — the 2024 photograph/candlestick-collection controversy, and
+the October 2025 Deník N investigation alleging deleted, racist/homophobic
+Facebook posts attributed to Turek. The same sourcing rules below apply.
+The October 2025 posts controversy is treated strictly as a **reported,
+disputed allegation**, not a proven fact: authenticity is contested, Turek
+denies authorship of the most serious posts, and this must stay visible in
+the text rather than be resolved one way or the other by this site.
+
 This authorization does **not** extend to any further named subject beyond
-Macinka and Turek in the scope of this specific controversy, without a new,
-separate, on-record owner decision.
+Macinka and Turek in the scope of these specific, cited controversies,
+without a new, separate, on-record owner decision.
 
 ## Metadata
 
