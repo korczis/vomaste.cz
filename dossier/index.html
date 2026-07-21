@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dossier Template — vomaste.cz</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans leading-relaxed">
+
+  <!-- Header -->
+  <header class="border-b border-gray-200 dark:border-gray-700 px-6 py-4">
+    <div class="max-w-4xl mx-auto">
+      <a href="../" class="text-sm text-blue-600 dark:text-blue-400 hover:underline">&larr; Back to home</a>
+      <h1 class="text-2xl sm:text-3xl font-bold mt-2">Subject: Example Corp</h1>
+      <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">
+        Case ID: DOS-0001 &middot; Last updated: 2026-01-01 &middot; Version 1.0 (placeholder)
+      </p>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-6 py-8 space-y-12">
+
+    <!-- Summary stats -->
+    <section aria-labelledby="summary-heading">
+      <h2 id="summary-heading" class="text-lg font-semibold mb-4">Summary</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 text-center">
+          <p class="text-2xl font-bold">Medium</p>
+          <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Trust level</p>
+        </div>
+        <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 text-center">
+          <p class="text-2xl font-bold">12</p>
+          <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Sources</p>
+        </div>
+        <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 text-center">
+          <p class="text-2xl font-bold">4</p>
+          <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Findings</p>
+        </div>
+        <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 text-center">
+          <p class="text-2xl font-bold">1</p>
+          <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Open questions</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Change log -->
+    <section aria-labelledby="changelog-heading" x-data="{ open: false }">
+      <h2 id="changelog-heading" class="text-lg font-semibold mb-4">Change log</h2>
+      <button @click="open = !open"
+              class="text-sm text-blue-600 dark:text-blue-400 hover:underline">
+        <span x-text="open ? 'Hide history' : 'Show history'"></span>
+      </button>
+      <ul x-show="open" x-cloak class="mt-3 space-y-2 text-sm text-gray-600 dark:text-gray-300 border-l-2 border-gray-200 dark:border-gray-700 pl-4">
+        <li><span class="font-mono text-xs text-gray-400">v1.0</span> — Placeholder entry describing what changed in this revision.</li>
+        <li><span class="font-mono text-xs text-gray-400">v0.1</span> — Initial placeholder draft created.</li>
+      </ul>
+    </section>
+
+    <!-- Executive findings -->
+    <section aria-labelledby="findings-heading">
+      <h2 id="findings-heading" class="text-lg font-semibold mb-4">Executive findings</h2>
+      <ol class="space-y-3">
+        <li id="clm-01" class="flex items-start gap-3">
+          <span class="font-mono text-xs text-gray-400 mt-1">CLM-01</span>
+          <div>
+            <span class="inline-flex items-center rounded-full bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs font-medium px-2 py-0.5 mb-1">VERIFIED_PRIMARY</span>
+            <p class="text-sm">Placeholder claim text — replace with the actual finding and a link to <a href="#evidence-registry" class="text-blue-600 dark:text-blue-400 hover:underline">SRC-01</a>.</p>
+          </div>
+        </li>
+        <li id="clm-02" class="flex items-start gap-3">
+          <span class="font-mono text-xs text-gray-400 mt-1">CLM-02</span>
+          <div>
+            <span class="inline-flex items-center rounded-full bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 text-xs font-medium px-2 py-0.5 mb-1">SELF_REPORTED</span>
+            <p class="text-sm">Placeholder claim text — replace with the actual finding and a link to <a href="#evidence-registry" class="text-blue-600 dark:text-blue-400 hover:underline">SRC-02</a>.</p>
+          </div>
+        </li>
+        <li id="clm-03" class="flex items-start gap-3">
+          <span class="font-mono text-xs text-gray-400 mt-1">CLM-03</span>
+          <div>
+            <span class="inline-flex items-center rounded-full bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 text-xs font-medium px-2 py-0.5 mb-1">BLOCKED</span>
+            <p class="text-sm">Placeholder claim text — replace with the actual finding and a note on why verification was blocked.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Narrative section -->
+    <section aria-labelledby="narrative-heading">
+      <h2 id="narrative-heading" class="text-lg font-semibold mb-4">Narrative — Section title</h2>
+      <p class="text-sm text-gray-700 dark:text-gray-300">
+        Placeholder narrative text. This is where the long-form analysis for a given topic
+        (e.g. finances, relationships, timeline) would go, with inline references such as
+        <a href="#clm-01" class="text-blue-600 dark:text-blue-400 hover:underline">CLM-01</a>.
+      </p>
+    </section>
+
+    <!-- Claim verification matrix -->
+    <section aria-labelledby="matrix-heading">
+      <h2 id="matrix-heading" class="text-lg font-semibold mb-4">Claim verification matrix</h2>
+      <div class="overflow-x-auto border border-gray-200 dark:border-gray-700 rounded-lg">
+        <table class="w-full text-sm text-left">
+          <thead class="bg-gray-50 dark:bg-gray-800 text-xs uppercase text-gray-500 dark:text-gray-400">
+            <tr>
+              <th class="px-4 py-2">Claim</th>
+              <th class="px-4 py-2">Status</th>
+              <th class="px-4 py-2">Source(s)</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
+            <tr><td class="px-4 py-2 font-mono text-xs">CLM-01</td><td class="px-4 py-2">Verified</td><td class="px-4 py-2 font-mono text-xs">SRC-01</td></tr>
+            <tr><td class="px-4 py-2 font-mono text-xs">CLM-02</td><td class="px-4 py-2">Self-reported</td><td class="px-4 py-2 font-mono text-xs">SRC-02</td></tr>
+            <tr><td class="px-4 py-2 font-mono text-xs">CLM-03</td><td class="px-4 py-2">Blocked</td><td class="px-4 py-2 font-mono text-xs">—</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Evidence registry -->
+    <section id="evidence-registry" aria-labelledby="evidence-heading">
+      <h2 id="evidence-heading" class="text-lg font-semibold mb-4">Evidence registry</h2>
+      <div class="overflow-x-auto border border-gray-200 dark:border-gray-700 rounded-lg">
+        <table class="w-full text-sm text-left">
+          <thead class="bg-gray-50 dark:bg-gray-800 text-xs uppercase text-gray-500 dark:text-gray-400">
+            <tr>
+              <th class="px-4 py-2">ID</th>
+              <th class="px-4 py-2">Description</th>
+              <th class="px-4 py-2">Reference</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
+            <tr><td class="px-4 py-2 font-mono text-xs">SRC-01</td><td class="px-4 py-2">Placeholder source description</td><td class="px-4 py-2 font-mono text-xs text-gray-400">example-hash-0001</td></tr>
+            <tr><td class="px-4 py-2 font-mono text-xs">SRC-02</td><td class="px-4 py-2">Placeholder source description</td><td class="px-4 py-2 font-mono text-xs text-gray-400">example-hash-0002</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Open questions -->
+    <section aria-labelledby="open-heading">
+      <h2 id="open-heading" class="text-lg font-semibold mb-4">Open questions</h2>
+      <p class="text-sm text-gray-700 dark:text-gray-300">
+        Placeholder text acknowledging a gap in the available evidence, rather than asserting a conclusion.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-gray-200 dark:border-gray-700 px-6 py-6 mt-8">
+    <div class="max-w-4xl mx-auto text-xs text-gray-500 dark:text-gray-400 space-y-1">
+      <p>This is a layout template only. No claims on this page describe a real person, company, or event.</p>
+      <p>Methodology: replace this note with an explanation of how sources are gathered and verified.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
