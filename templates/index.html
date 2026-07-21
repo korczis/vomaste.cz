@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{#- No metadata blocks here on purpose. Title, description, canonical, Open
+    Graph and JSON-LD all come from front matter via base.html. -#}
+
+{% block content %}
+<main class="relative flex min-h-screen w-full items-center justify-center overflow-hidden bg-gradient-to-b from-gray-900 via-black to-gray-900">
+  <div class="relative z-10 flex w-full flex-col items-center gap-4 px-4 py-16 text-center [text-shadow:0_4px_24px_rgb(0_0_0_/_85%)]">
+    <h1 class="font-sans text-4xl font-black text-white sm:text-6xl">vomaste.cz</h1>
+    <p class="max-w-prose text-white/70">
+      <a
+        href="{{ get_url(path='@/dossier.md') | safe }}"
+        class="text-[#f3e5c0] underline decoration-[#f3e5c0]/40 underline-offset-4 transition-colors hover:text-[#f3e5c0]/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#d4af37]"
+      >View the dossier &rarr;</a>
+    </p>
+  </div>
+</main>
+{% endblock content %}

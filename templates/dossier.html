@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{% block content %}
+<main class="mx-auto max-w-4xl px-6 py-12 text-white">
+  <header class="mb-10 border-b border-white/10 pb-6">
+    <a href="{{ get_url(path='@/_index.md') | safe }}" class="text-sm text-[#f3e5c0] hover:underline">&larr; Back to home</a>
+    <h1 class="mt-2 text-3xl font-black sm:text-4xl">Dossier</h1>
+    <p class="mt-1 text-sm text-white/50">
+      Status: compilation in progress &middot; nothing on this page is a finished claim yet
+    </p>
+  </header>
+
+  <section aria-labelledby="summary-heading" class="mb-12">
+    <h2 id="summary-heading" class="mb-4 text-lg font-semibold">Summary</h2>
+    <div class="grid grid-cols-2 gap-4 sm:grid-cols-4">
+      <div class="rounded-lg border border-white/10 p-4 text-center">
+        <p class="text-2xl font-bold">&mdash;</p>
+        <p class="mt-1 text-xs text-white/50">Sources reviewed</p>
+      </div>
+      <div class="rounded-lg border border-white/10 p-4 text-center">
+        <p class="text-2xl font-bold">&mdash;</p>
+        <p class="mt-1 text-xs text-white/50">Claims verified</p>
+      </div>
+      <div class="rounded-lg border border-white/10 p-4 text-center">
+        <p class="text-2xl font-bold">&mdash;</p>
+        <p class="mt-1 text-xs text-white/50">Claims excluded</p>
+      </div>
+      <div class="rounded-lg border border-white/10 p-4 text-center">
+        <p class="text-2xl font-bold">&mdash;</p>
+        <p class="mt-1 text-xs text-white/50">Open questions</p>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="findings-heading" class="mb-12" x-data="{ open: false }">
+    <h2 id="findings-heading" class="mb-4 text-lg font-semibold">Findings</h2>
+    <p class="text-sm text-white/60">
+      Verified, source-cited findings will appear here once the research and
+      adversarial-verification pass is complete. Each finding will carry a
+      status (verified / multi-sourced, single-sourced, or excluded) and a
+      link to its sources.
+    </p>
+    <button
+      type="button"
+      @click="open = !open"
+      class="mt-4 text-sm text-[#f3e5c0] hover:underline"
+      aria-expanded="false"
+      :aria-expanded="open.toString()"
+    >
+      <span x-text="open ? 'Hide methodology note' : 'Show methodology note'"></span>
+    </button>
+    <p x-show="open" x-cloak class="mt-3 border-l-2 border-white/10 pl-4 text-sm text-white/60">
+      Every claim published here requires at least one, ideally two,
+      independent, named, reputable sources with a direct URL and publication
+      date. Single-sourced or unverifiable claims are excluded rather than
+      presented as fact.
+    </p>
+  </section>
+
+  <section aria-labelledby="evidence-heading" class="mb-12">
+    <h2 id="evidence-heading" class="mb-4 text-lg font-semibold">Evidence registry</h2>
+    <div class="overflow-x-auto rounded-lg border border-white/10">
+      <table class="w-full text-left text-sm">
+        <thead class="bg-white/5 text-xs uppercase text-white/50">
+          <tr>
+            <th class="px-4 py-2">Source</th>
+            <th class="px-4 py-2">Status</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-white/10">
+          <tr>
+            <td class="px-4 py-2 text-white/50" colspan="2">No sources published yet.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer class="border-t border-white/10 pt-6 text-xs text-white/40">
+    <p>This page publishes no claims about any person or organization yet. Sourced, verified content will replace this notice.</p>
+  </footer>
+</main>
+{% endblock content %}

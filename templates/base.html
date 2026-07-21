@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{ config.extra.lang | default(value="en") }}" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  {%- set page_title = page.title | default(value=section.title | default(value=config.title)) -%}
+  {%- set page_description = page.description | default(value=section.description | default(value=config.description)) -%}
+  <title>{{ page_title }}</title>
+  <meta name="description" content="{{ page_description }}">
+  {% if current_url %}<link rel="canonical" href="{{ current_url | safe }}">{% endif %}
+
+  <meta property="og:title" content="{{ page_title }}">
+  <meta property="og:description" content="{{ page_description }}">
+  <meta property="og:type" content="{{ page.extra.og_type | default(value=config.extra.og_type) }}">
+  {% if current_url %}<meta property="og:url" content="{{ current_url | safe }}">{% endif %}
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="bg-black text-white font-sans antialiased" x-cloak>
+{% block content %}{% endblock content %}
+</body>
+</html>

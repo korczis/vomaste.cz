@@ -1,0 +1,36 @@
+# The URL the site is built for. Must always be the real production host —
+# scripts/seo-validate.mjs rejects any built page whose HTML contains a
+# non-production host (localhost, *.github.io, etc.), so this stays the
+# custom domain even before DNS/Pages custom-domain wiring is finished.
+base_url = "https://vomaste.cz"
+
+title = "vomaste.cz"
+description = "vomaste.cz"
+
+compile_sass = false
+build_search_index = false
+generate_robots_txt = true
+generate_feeds = false
+
+# minify_html = true breaks Alpine.js `:attr="..."` bindings — Zola's minifier
+# strips the colon prefix. Disabled for the same reason as sites/promo and
+# unable.cz.
+minify_html = false
+hard_link_static = false
+
+taxonomies = []
+
+[extra]
+locale = "en_US"
+lang = "en"
+
+og_image = "images/og-image.jpg"
+og_image_width = 1200
+og_image_height = 630
+og_image_type = "image/jpeg"
+
+seo_type = "WebPage"
+og_type = "website"
+publisher = "vomaste.cz"
+
+index = true
