@@ -23,6 +23,78 @@ label = "Nezávislých médií"
 [[extra.stats]]
 value = "3"
 label = "Otevřené otázky"
+
+[[extra.cases]]
+anchor = "kauza-z-roku-2024-fotografie-a-sbirka-svicnu"
+period = "2024"
+title = "Fotografie a sbírka svícnů"
+status = "status-disputed"
+label = "Uzavřeno bez trestu"
+summary = "Fotografie připomínající nacistický pozdrav a sbírka svícnů s hákovými kříži. Turek: „špatný humor.“"
+
+[[extra.cases]]
+anchor = "kauza-z-rijna-2025-smazane-prispevky-na-facebooku"
+period = "2025"
+title = "Smazané příspěvky na Facebooku"
+status = "status-disputed"
+label = "Sporné, neuzavřeno"
+summary = "Deník N zveřejnil údajné smazané příspěvky. Turek odmítá autorství těch nejzávažnějších."
+
+[[extra.cases]]
+anchor = "dopravni-nehoda-2026"
+period = "2026"
+title = "Dopravní nehoda"
+status = "status-ongoing"
+label = "Vyšetřování probíhá"
+summary = "Střet s vozidlem záchranné služby v Praze. Turek dočasně opustil funkci zmocněnce."
+
+[[extra.timeline]]
+date = "2013"
+title = "Fotografie se zdviženou pravicí pořízena"
+anchor = "kauza-z-roku-2024-fotografie-a-sbirka-svicnu"
+dot = "dot-disputed"
+
+[[extra.timeline]]
+date = "2022"
+title = "Založení hnutí Motoristé sobě, Macinka předsedou"
+anchor = "politicka-kariera"
+dot = "dot-fact"
+
+[[extra.timeline]]
+date = "leden 2024"
+title = "Turek na Xaver Live obhajuje starší nevhodné příspěvky"
+anchor = "kauza-z-rijna-2025-smazane-prispevky-na-facebooku"
+dot = "dot-fact"
+
+[[extra.timeline]]
+date = "červen 2024"
+title = "Zvolen europoslancem; kauza fotografie a svícnů vypuká"
+anchor = "kauza-z-roku-2024-fotografie-a-sbirka-svicnu"
+dot = "dot-disputed"
+
+[[extra.timeline]]
+date = "30. 5. 2025"
+title = "Turek oznamuje kandidaturu do Poslanecké sněmovny"
+anchor = "politicka-kariera"
+dot = "dot-fact"
+
+[[extra.timeline]]
+date = "říjen 2025"
+title = "Deník N zveřejňuje investigaci o smazaných příspěvcích"
+anchor = "kauza-z-rijna-2025-smazane-prispevky-na-facebooku"
+dot = "dot-disputed"
+
+[[extra.timeline]]
+date = "říjen 2025"
+title = "Volby do PS: Motoristé 13 mandátů, Turek a Macinka zvoleni"
+anchor = "politicka-kariera"
+dot = "dot-fact"
+
+[[extra.timeline]]
+date = "2026"
+title = "Dopravní nehoda a politický tlak na rezignaci"
+anchor = "dopravni-nehoda-2026"
+dot = "dot-ongoing"
 +++
 
 <div class="legend">
