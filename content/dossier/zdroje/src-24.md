@@ -12,6 +12,7 @@ src_type = "veřejný rejstřík / transparentní databáze"
 url = "https://www.hlidacstatu.cz/Osoba/Vazby/petr-macinka?aktualnost=Libovolny"
 retrieved = "2026-07-22"
 claims = ["CLM-22"]
+family = "hlidac-statu"
 +++
 
 Stejná databáze jako SRC-23 (Hlídač státu, rejstříková data, ne

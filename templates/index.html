@@ -4,15 +4,87 @@
     Graph and JSON-LD all come from front matter via base.html. -#}
 
 {% block content %}
-<main class="relative flex min-h-screen w-full items-center justify-center overflow-hidden bg-gradient-to-b from-gray-900 via-black to-gray-900">
-  <div class="relative z-10 flex w-full flex-col items-center gap-4 px-4 py-16 text-center [text-shadow:0_4px_24px_rgb(0_0_0_/_85%)]">
-    <h1 class="font-sans text-4xl font-black text-white sm:text-6xl">vomaste.cz</h1>
-    <p class="max-w-prose text-white/70">
-      <a
-        href="{{ get_url(path='@/dossier/_index.md') | safe }}"
-        class="text-[#f3e5c0] underline decoration-[#f3e5c0]/40 underline-offset-4 transition-colors hover:text-[#f3e5c0]/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#d4af37]"
-      >View the dossier &rarr;</a>
-    </p>
-  </div>
+<a
+  href="#hlavni-obsah"
+  class="sr-only focus-visible:not-sr-only focus-visible:fixed focus-visible:left-4 focus-visible:top-4 focus-visible:z-50 focus-visible:rounded-md focus-visible:bg-[#f3e5c0] focus-visible:px-4 focus-visible:py-2 focus-visible:text-sm focus-visible:font-semibold focus-visible:text-black"
+>Přeskočit na hlavní obsah</a>
+
+<header class="pointer-events-none absolute inset-x-0 top-0 z-20 flex items-center px-6 py-6 sm:px-10">
+  <span class="text-sm font-bold tracking-wide text-white/80">vomaste<span class="text-[#f3e5c0]">.cz</span></span>
+</header>
+
+<main id="hlavni-obsah">
+  <section class="hero-bg relative flex min-h-[100svh] w-full items-center justify-center overflow-hidden bg-gradient-to-b from-gray-900 via-black to-gray-900" aria-labelledby="hero-heading">
+    <div class="absolute inset-0 bg-gradient-to-b from-black/55 via-black/10 to-black" aria-hidden="true"></div>
+
+    <div class="relative z-10 mx-auto flex w-full max-w-2xl flex-col items-center gap-6 px-6 py-28 text-center [text-shadow:0_4px_24px_rgb(0_0_0_/_85%)]">
+      <p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#f3e5c0]/80">Veřejně dostupné &middot; zdrojované</p>
+      <h1 id="hero-heading" class="font-sans text-4xl font-black leading-tight text-white sm:text-6xl">vomaste.cz</h1>
+      <p class="max-w-prose text-balance text-base text-white/70 sm:text-lg">
+        Neutrální, zdroji podložený přehled veřejně řešených kauz kolem veřejných osob.
+        Každé tvrzení je citováno na zdroj; sporné otázky jsou označené jako sporné, ne jako fakt.
+      </p>
+
+      <div class="mt-2 flex flex-col items-center gap-3 sm:flex-row">
+        <a
+          href="{{ get_url(path='@/dossier/_index.md') | safe }}"
+          class="inline-flex items-center justify-center gap-2 rounded-lg bg-[#f3e5c0] px-6 py-3 text-sm font-semibold text-black transition-colors hover:bg-[#e9d6a0] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#d4af37]"
+        >
+          Zobrazit dossier
+          <span aria-hidden="true">&rarr;</span>
+        </a>
+        <a
+          href="#metodika"
+          class="inline-flex items-center justify-center rounded-lg border border-white/20 px-6 py-3 text-sm font-semibold text-white/80 transition-colors hover:border-white/40 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#d4af37]"
+        >
+          Jak pracujeme
+        </a>
+      </div>
+    </div>
+
+    <a
+      href="#metodika"
+      aria-hidden="true"
+      tabindex="-1"
+      class="motion-safe-bounce absolute bottom-8 left-1/2 z-10 hidden -translate-x-1/2 animate-bounce text-white/30 sm:block"
+    >
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </a>
+  </section>
+
+  <section id="metodika" aria-labelledby="metodika-heading" class="mx-auto max-w-5xl px-6 py-20 sm:py-24">
+    <h2 id="metodika-heading" class="text-center text-2xl font-bold text-white sm:text-3xl">Jak pracujeme</h2>
+    <p class="mx-auto mt-3 max-w-xl text-center text-white/60">Tři pravidla, která platí pro každé tvrzení na této stránce.</p>
+
+    <div class="mt-12 grid gap-6 sm:grid-cols-3">
+      <div class="rounded-xl border border-white/10 bg-white/[0.03] p-6">
+        <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-[#f3e5c0]/10 text-[#f3e5c0]" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-4"/><path d="M14 3h7v7"/><path d="M10 14 21 3"/></svg>
+        </div>
+        <h3 class="font-semibold text-white">Zdrojováno</h3>
+        <p class="mt-2 text-sm leading-relaxed text-white/60">Každé tvrzení cituje jmenovaný, nezávislý veřejný zdroj s přímým odkazem. Bez zdroje se tvrzení nepublikuje.</p>
+      </div>
+
+      <div class="rounded-xl border border-white/10 bg-white/[0.03] p-6">
+        <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-[#f3e5c0]/10 text-[#f3e5c0]" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M5 7h14M5 7l-3 7a4 4 0 0 0 8 0zM19 7l-3 7a4 4 0 0 0 8 0z"/></svg>
+        </div>
+        <h3 class="font-semibold text-white">Fakt odděleně od názoru</h3>
+        <p class="mt-2 text-sm leading-relaxed text-white/60">Citace jsou označené jako citace, komentáře jako názor. Sporné a neuzavřené případy zůstávají označené jako neuzavřené.</p>
+      </div>
+
+      <div class="rounded-xl border border-white/10 bg-white/[0.03] p-6">
+        <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-[#f3e5c0]/10 text-[#f3e5c0]" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
+        </div>
+        <h3 class="font-semibold text-white">Průběžně ověřováno</h3>
+        <p class="mt-2 text-sm leading-relaxed text-white/60">Otevřené otázky jsou vedeny jako otevřené, ne jako uzavřené. Přehled se aktualizuje podle nového zpravodajství.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-white/10 px-6 py-8 text-center text-xs text-white/40">
+    <p>Fakta na této stránce vycházejí výhradně z veřejně publikovaného zpravodajství. Opravy: <a href="mailto:corrections@vomaste.cz" class="underline decoration-white/20 underline-offset-2 hover:text-white/60">corrections@vomaste.cz</a></p>
+  </footer>
 </main>
 {% endblock content %}

@@ -13,6 +13,7 @@ url = "https://denikn.cz/1864721/popalit-cikane-je-polehcujici-okolnost-obama-je
 retrieved = "2026-07-21"
 published = "2025-10-10"
 claims = ["CLM-07", "CLM-09"]
+family = "denik-n"
 +++
 
 Klíčový zdroj pro kauzu 2025 — investigativní text Deníku N s printscreeny

@@ -12,6 +12,7 @@ src_type = "veřejný rejstřík / transparentní databáze"
 url = "https://www.hlidacstatu.cz/Osoba/vazby/filip-turek"
 retrieved = "2026-07-22"
 claims = ["CLM-20"]
+family = "hlidac-statu"
 +++
 
 Hlídač státu je nezisková transparentní databáze provozovaná Aliancí pro

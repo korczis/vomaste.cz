@@ -12,6 +12,7 @@ src_type = "veřejný rejstřík / transparentní databáze"
 url = "https://www.hlidacstatu.cz/Osoba/Sponzoring/petr-macinka"
 retrieved = "2026-07-22"
 claims = ["CLM-23"]
+family = "hlidac-statu"
 +++
 
 Stejná kategorie dat jako SRC-25 (zákonem vyžadované zveřejnění dárců

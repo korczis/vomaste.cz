@@ -6,6 +6,21 @@
    templates/dossier-source.html and templates/dossier-sources-index.html.
    Kept in one place instead of duplicated inline <style> blocks. */
 @layer components {
+  /* Landing page hero (templates/index.html). CSS-generated dot grid + gold
+     glows instead of a fetched photo — zero extra requests, matches the
+     dossier's dark/gold palette, and needs no licensing. */
+  .hero-bg {
+    background-image:
+      radial-gradient(circle at 18% 22%, rgba(212, 175, 55, 0.22), transparent 42%),
+      radial-gradient(circle at 84% 78%, rgba(243, 229, 192, 0.12), transparent 46%),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34' height='34' viewBox='0 0 34 34'%3E%3Ccircle cx='1.4' cy='1.4' r='1.4' fill='%23ffffff' fill-opacity='0.07'/%3E%3C/svg%3E");
+    background-repeat: no-repeat, no-repeat, repeat;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .motion-safe-bounce { animation: none; }
+  }
+
   .dossier-prose h2 { font-size: 1.25rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1rem; }
   .dossier-prose p { margin-bottom: 1rem; line-height: 1.7; color: rgba(255,255,255,0.85); }
   .dossier-prose ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem; }

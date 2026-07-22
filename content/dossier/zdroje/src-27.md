@@ -12,6 +12,7 @@ src_type = "veřejný rejstřík / transparentní databáze"
 url = "https://www.hlidacstatu.cz/osoba/funkce/petr-macinka"
 retrieved = "2026-07-22"
 claims = ["CLM-24"]
+family = "hlidac-statu"
 +++
 
 Přehled veřejných a politických funkcí Petra Macinky podle Hlídače

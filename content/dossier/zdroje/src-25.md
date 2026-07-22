@@ -12,6 +12,7 @@ src_type = "veřejný rejstřík / transparentní databáze"
 url = "https://www.hlidacstatu.cz/Osoba/Sponzoring/filip-turek"
 retrieved = "2026-07-22"
 claims = ["CLM-21"]
+family = "hlidac-statu"
 +++
 
 Hlídač státu agreguje povinně zveřejňované přehledy darů politickým

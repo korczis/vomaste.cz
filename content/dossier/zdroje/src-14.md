@@ -13,6 +13,7 @@ url = "https://denikn.cz/1444758"
 retrieved = "2026-07-21"
 published = "2024-06-05"
 claims = ["CLM-04", "CLM-05", "CLM-06"]
+family = "denik-n"
 +++
 
 Deník N je předplatitelský investigativní deník. Tento článek dokumentuje

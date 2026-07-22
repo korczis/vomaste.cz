@@ -87,6 +87,7 @@ for (const file of srcFiles) {
   const srcType = extractField(fm, "src_type");
   const url = extractField(fm, "url");
   const retrieved = extractField(fm, "retrieved");
+  const family = extractField(fm, "family");
   const claims = extractArrayField(fm, "claims") ?? [];
 
   const expectedId = "SRC-" + file.match(/^src-(\d+)\.md$/)[1];
@@ -102,7 +103,7 @@ for (const file of srcFiles) {
 
   if (srcId) {
     if (srcById.has(srcId)) err(`Duplicate src_id across files: ${srcId} (${srcById.get(srcId).file} and ${file})`);
-    else srcById.set(srcId, { file, outlet, srcType, url, claims });
+    else srcById.set(srcId, { file, outlet, srcType, url, claims, family });
   }
   if (url) {
     if (urlToSrc.has(url) && urlToSrc.get(url) !== srcId) {
@@ -137,8 +138,19 @@ for (const [srcId, info] of srcById) {
   }
 }
 
+// --- Source families: named families count as one; sources with no
+// declared family are their own singleton family. ---
+const namedFamilies = new Set();
+let singletons = 0;
+for (const info of srcById.values()) {
+  if (info.family) namedFamilies.add(info.family);
+  else singletons++;
+}
+const familyCount = singletons + namedFamilies.size;
+
 // --- Report ---
 console.log(`Checked ${srcById.size} source files against ${clmIds.size} claims.`);
+console.log(`Source families: ${familyCount} (${namedFamilies.size} named group(s): ${[...namedFamilies].join(", ") || "none"}; ${singletons} singleton source(s)).`);
 if (warnings.length) {
   console.log(`\n${warnings.length} warning(s):`);
   for (const w of warnings) console.log(`  WARN  ${w}`);

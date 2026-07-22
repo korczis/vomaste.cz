@@ -15,15 +15,30 @@
   <article class="dossier-prose mb-10">{{ section.content | safe }}</article>
 
   {% set_global evidentiary_count = 0 %}
+  {% set_global named_families = [] %}
+  {% set_global singleton_count = 0 %}
   {% for p in section.pages %}
     {% if p.extra.claims and p.extra.claims | length > 0 %}
       {% set_global evidentiary_count = evidentiary_count + 1 %}
     {% endif %}
+    {% if p.extra.family %}
+      {% if p.extra.family not in named_families %}
+        {% set_global named_families = named_families | concat(with=[p.extra.family]) %}
+      {% endif %}
+    {% else %}
+      {% set_global singleton_count = singleton_count + 1 %}
+    {% endif %}
   {% endfor %}
-  <div class="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
+  {% set_global named_families_len = named_families | length %}
+  {% set_global family_count = singleton_count + named_families_len %}
+  <div class="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-5">
     <div class="rounded-lg border border-white/10 p-3 text-center">
       <p class="text-xl font-bold">{{ section.pages | length }}</p>
       <p class="mt-1 text-xs text-white/50">Zdrojů celkem</p>
+    </div>
+    <div class="rounded-lg border border-white/10 p-3 text-center">
+      <p class="text-xl font-bold">{{ family_count }}</p>
+      <p class="mt-1 text-xs text-white/50">Zdrojových rodin</p>
     </div>
     <div class="rounded-lg border border-white/10 p-3 text-center">
       <p class="text-xl font-bold">{{ evidentiary_count }}</p>
@@ -50,6 +65,12 @@
         <option value="">Všechny typy</option>
       </select>
     </div>
+    <div class="flex flex-col gap-1">
+      <label for="src-family-filter" class="text-xs text-white/50">Zdrojová rodina</label>
+      <select id="src-family-filter" name="family" class="src-filter-select">
+        <option value="">Všechny (vč. samostatných)</option>
+      </select>
+    </div>
     <button type="button" id="src-filter-reset" class="src-filter-reset">Zrušit filtry</button>
   </form>
 
@@ -60,6 +81,7 @@
     <a href="{{ p.permalink | safe }}"
        class="src-card flex flex-col rounded-lg border border-white/10 bg-white/[0.03] p-4 no-underline transition-colors hover:border-white/20 hover:bg-white/[0.06]"
        data-type="{{ p.extra.src_type }}"
+       data-family="{{ p.extra.family | default(value='') }}"
        data-search="{{ p.extra.src_id }} {{ p.extra.outlet }} {{ p.extra.src_type }} {{ p.description }}">
       <span class="font-mono text-xs text-[#f3e5c0]">{{ p.extra.src_id }}</span>
       <span class="font-semibold text-white break-words">{{ p.extra.outlet }}</span>
@@ -80,17 +102,21 @@
     if (!form) return;
     var search = document.getElementById('src-search');
     var typeSelect = document.getElementById('src-type-filter');
+    var familySelect = document.getElementById('src-family-filter');
     var reset = document.getElementById('src-filter-reset');
     var cards = Array.prototype.slice.call(document.querySelectorAll('.src-card'));
     var countEl = document.getElementById('src-result-count');
     var emptyEl = document.getElementById('src-empty-state');
 
-    // Build the type dropdown from whatever types actually appear on the page
-    // — never a hardcoded list that can drift from the real data.
+    // Build the type/family dropdowns from whatever actually appears on the
+    // page — never a hardcoded list that can drift from the real data.
     var types = [];
+    var families = [];
     cards.forEach(function (c) {
       var t = c.getAttribute('data-type');
       if (t && types.indexOf(t) === -1) types.push(t);
+      var f = c.getAttribute('data-family');
+      if (f && families.indexOf(f) === -1) families.push(f);
     });
     types.sort();
     types.forEach(function (t) {
@@ -99,15 +125,24 @@
       opt.textContent = t;
       typeSelect.appendChild(opt);
     });
+    families.sort();
+    families.forEach(function (f) {
+      var opt = document.createElement('option');
+      opt.value = f;
+      opt.textContent = f;
+      familySelect.appendChild(opt);
+    });
 
     function applyFilter() {
       var q = search.value.trim().toLowerCase();
       var type = typeSelect.value;
+      var family = familySelect.value;
       var shown = 0;
       cards.forEach(function (c) {
         var matchesQ = !q || c.getAttribute('data-search').toLowerCase().indexOf(q) !== -1;
         var matchesType = !type || c.getAttribute('data-type') === type;
-        var show = matchesQ && matchesType;
+        var matchesFamily = !family || c.getAttribute('data-family') === family;
+        var show = matchesQ && matchesType && matchesFamily;
         c.hidden = !show;
         if (show) shown++;
       });
@@ -117,9 +152,11 @@
 
     search.addEventListener('input', applyFilter);
     typeSelect.addEventListener('change', applyFilter);
+    familySelect.addEventListener('change', applyFilter);
     reset.addEventListener('click', function () {
       search.value = '';
       typeSelect.value = '';
+      familySelect.value = '';
       applyFilter();
       search.focus();
     });

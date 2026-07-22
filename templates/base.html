@@ -3,22 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+  <meta name="robots" content="{% if config.extra.index %}index, follow{% else %}noindex, nofollow{% endif %}">
 
   {%- set page_title = page.title | default(value=section.title | default(value=config.title)) -%}
   {%- set page_description = page.description | default(value=section.description | default(value=config.description)) -%}
+  {%- set og_image = page.extra.og_image | default(value=section.extra.og_image | default(value=config.extra.og_image)) -%}
   <title>{{ page_title }}</title>
   <meta name="description" content="{{ page_description }}">
   {% if current_url %}<link rel="canonical" href="{{ current_url | safe }}">{% endif %}
 
+  <link rel="icon" type="image/svg+xml" href="{{ get_url(path='favicon.svg') | safe }}">
+
+  <meta property="og:site_name" content="{{ config.title }}">
   <meta property="og:title" content="{{ page_title }}">
   <meta property="og:description" content="{{ page_description }}">
   <meta property="og:type" content="{{ page.extra.og_type | default(value=config.extra.og_type) }}">
+  <meta property="og:locale" content="{{ page.extra.lang | default(value=config.extra.lang | default(value="en")) }}">
   {% if current_url %}<meta property="og:url" content="{{ current_url | safe }}">{% endif %}
+  {% if og_image %}
+  <meta property="og:image" content="{{ get_url(path=og_image) | safe }}">
+  {% if config.extra.og_image_width %}<meta property="og:image:width" content="{{ config.extra.og_image_width }}">{% endif %}
+  {% if config.extra.og_image_height %}<meta property="og:image:height" content="{{ config.extra.og_image_height }}">{% endif %}
+  <meta name="twitter:card" content="summary_large_image">
+  {% else %}
+  <meta name="twitter:card" content="summary">
+  {% endif %}
+  <meta name="twitter:title" content="{{ page_title }}">
+  <meta name="twitter:description" content="{{ page_description }}">
 
   <link rel="stylesheet" href="{{ get_url(path='css/main.css', cachebust=true) | safe }}">
-  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
-<body class="bg-black text-white font-sans antialiased" x-cloak>
+<body class="bg-black text-white font-sans antialiased">
 {% block content %}{% endblock content %}
 </body>
 </html>
