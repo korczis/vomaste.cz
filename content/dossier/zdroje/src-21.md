@@ -11,6 +11,7 @@ outlet = "Deník.cz"
 src_type = "zpravodajství"
 url = "https://www.denik.cz/z_domova/motoriste-filip-turek-rasisticke-vyroky-trestni-oznameni.html"
 retrieved = "2026-07-22"
+published = "2025-12-08"
 claims = ["CLM-19"]
 +++
 

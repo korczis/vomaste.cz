@@ -6,7 +6,8 @@
   "scripts": {
     "css:build": "tailwindcss -i ./static/css/input.css -o ./static/css/main.css --minify",
     "css:watch": "tailwindcss -i ./static/css/input.css -o ./static/css/main.css --watch",
-    "build": "npm run css:build && zola build",
+    "validate:dossier": "node scripts/dossier/validate-dossier.mjs",
+    "build": "npm run validate:dossier && npm run css:build && zola build",
     "dev": "npm run css:build && zola serve"
   },
   "devDependencies": {

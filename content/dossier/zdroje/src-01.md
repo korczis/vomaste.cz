@@ -11,6 +11,7 @@ outlet = "Echo24.cz"
 src_type = "zpravodajství"
 url = "https://www.echo24.cz/a/HkCB9/zpravy-domaci-turka-se-nikdy-nevzdam-budu-mu-odrezavat-opratku-rika-macinka-okamura-imunita"
 retrieved = "2026-07-21"
+published = "2026-07-15"
 claims = ["CLM-13"]
 +++
 

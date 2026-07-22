@@ -11,6 +11,7 @@ outlet = "ČT24 (Česká televize)"
 src_type = "veřejnoprávní zpravodajství"
 url = "https://ct24.ceskatelevize.cz/clanek/domaci/pokud-zabery-z-nehody-nelzou-turek-by-mel-rezignovat-rekl-babis-375570"
 retrieved = "2026-07-21"
+published = "2026-07-14"
 claims = ["CLM-11", "CLM-12"]
 +++
 

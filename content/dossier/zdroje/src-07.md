@@ -11,6 +11,7 @@ outlet = "ČeskéNoviny.cz"
 src_type = "tisková agentura (ČTK síť)"
 url = "https://www.ceskenoviny.cz/zpravy/babis-mluvil-s-macinkou-o-turkove-nehode-ve-hre-je-post-zmocnence/2850518"
 retrieved = "2026-07-21"
+published = "2026-07-14"
 claims = ["CLM-11", "CLM-12"]
 +++
 

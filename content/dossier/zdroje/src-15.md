@@ -11,6 +11,7 @@ outlet = "Deník N"
 src_type = "investigativní žurnalistika (předplatné)"
 url = "https://denikn.cz/1864721/popalit-cikane-je-polehcujici-okolnost-obama-je-negr-odhalujeme-smazany-svet-filipa-turka/"
 retrieved = "2026-07-21"
+published = "2025-10-10"
 claims = ["CLM-07", "CLM-09"]
 +++
 

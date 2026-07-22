@@ -11,6 +11,7 @@ outlet = "Blesk.cz"
 src_type = "zpravodajství (tabloid)"
 url = "https://www.blesk.cz/clanek/zpravy-politika/843922/macinka-brani-turka-po-bouracce-nikdy-se-ho-nevzdam-budu-za-nej-bojovat.html"
 retrieved = "2026-07-21"
+published = "2026-07-15"
 claims = ["CLM-13"]
 +++
 

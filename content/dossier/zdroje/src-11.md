@@ -11,6 +11,7 @@ outlet = "Seznam Zprávy"
 src_type = "zpravodajství"
 url = "https://www.seznamzpravy.cz/clanek/volby-do-poslanecke-snemovny-motoriste-se-dockali-turek-chce-vymenit-brusel-za-prahu-277943"
 retrieved = "2026-07-21"
+published = "2025-05-30"
 claims = ["CLM-01", "CLM-02", "CLM-03"]
 +++
 

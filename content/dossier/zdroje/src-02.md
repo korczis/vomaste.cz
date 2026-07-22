@@ -11,6 +11,7 @@ outlet = "Echo24.cz"
 src_type = "zpravodajství"
 url = "https://www.echo24.cz/a/HRupy/filip-turek-autonehoda-policie-advokat-terminy-vysetrovani-lhuty-ondrej-horazny-trestny-cin-prestupek"
 retrieved = "2026-07-21"
+published = "2026-07-18"
 claims = ["CLM-10"]
 +++
 

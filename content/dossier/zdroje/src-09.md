@@ -11,6 +11,7 @@ outlet = "HlídacíPes.org"
 src_type = "komentář / názor"
 url = "https://hlidacipes.org/ales-rozehnal-macinka-a-turek-si-hraji-na-mazaky-ceka-je-navrat-k-bezvyznamnosti/"
 retrieved = "2026-07-21"
+published = "2026-04-13"
 claims = []
 +++
 

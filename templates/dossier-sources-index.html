@@ -14,25 +14,120 @@
 
   <article class="dossier-prose mb-10">{{ section.content | safe }}</article>
 
-  <div class="grid gap-3 sm:grid-cols-2">
+  {% set_global evidentiary_count = 0 %}
+  {% for p in section.pages %}
+    {% if p.extra.claims and p.extra.claims | length > 0 %}
+      {% set_global evidentiary_count = evidentiary_count + 1 %}
+    {% endif %}
+  {% endfor %}
+  <div class="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
+    <div class="rounded-lg border border-white/10 p-3 text-center">
+      <p class="text-xl font-bold">{{ section.pages | length }}</p>
+      <p class="mt-1 text-xs text-white/50">Zdrojů celkem</p>
+    </div>
+    <div class="rounded-lg border border-white/10 p-3 text-center">
+      <p class="text-xl font-bold">{{ evidentiary_count }}</p>
+      <p class="mt-1 text-xs text-white/50">Podkládá tvrzení</p>
+    </div>
+    <div class="rounded-lg border border-white/10 p-3 text-center">
+      <p class="text-xl font-bold">{{ section.pages | length - evidentiary_count }}</p>
+      <p class="mt-1 text-xs text-white/50">Kontext / názor</p>
+    </div>
+    <div class="rounded-lg border border-white/10 p-3 text-center">
+      <p id="src-result-count" class="text-xl font-bold" aria-live="polite">{{ section.pages | length }}</p>
+      <p class="mt-1 text-xs text-white/50">Zobrazeno</p>
+    </div>
+  </div>
+
+  <form id="src-filter-form" class="mb-6 flex flex-wrap items-end gap-3" role="search" aria-label="Filtrovat registr zdrojů">
+    <div class="flex flex-col gap-1">
+      <label for="src-search" class="text-xs text-white/50">Hledat (ID, médium, popis)</label>
+      <input type="text" id="src-search" name="q" class="src-filter-input w-56" placeholder="např. Deník N, SRC-14, Turek…" autocomplete="off">
+    </div>
+    <div class="flex flex-col gap-1">
+      <label for="src-type-filter" class="text-xs text-white/50">Typ zdroje</label>
+      <select id="src-type-filter" name="type" class="src-filter-select">
+        <option value="">Všechny typy</option>
+      </select>
+    </div>
+    <button type="button" id="src-filter-reset" class="src-filter-reset">Zrušit filtry</button>
+  </form>
+
+  <p id="src-empty-state" class="mb-4 hidden text-sm text-white/50">Žádný zdroj neodpovídá zadanému filtru.</p>
+
+  <div id="src-grid" class="grid gap-3 sm:grid-cols-2">
     {% for p in section.pages %}
-    <a href="{{ p.permalink | safe }}" class="flex flex-col rounded-lg border border-white/10 bg-white/[0.03] p-4 no-underline transition-colors hover:border-white/20 hover:bg-white/[0.06]">
+    <a href="{{ p.permalink | safe }}"
+       class="src-card flex flex-col rounded-lg border border-white/10 bg-white/[0.03] p-4 no-underline transition-colors hover:border-white/20 hover:bg-white/[0.06]"
+       data-type="{{ p.extra.src_type }}"
+       data-search="{{ p.extra.src_id }} {{ p.extra.outlet }} {{ p.extra.src_type }} {{ p.description }}">
       <span class="font-mono text-xs text-[#f3e5c0]">{{ p.extra.src_id }}</span>
-      <span class="font-semibold text-white">{{ p.extra.outlet }}</span>
+      <span class="font-semibold text-white break-words">{{ p.extra.outlet }}</span>
       <span class="mt-1 text-xs text-white/40">{{ p.extra.src_type }}</span>
       <span class="mt-2 text-sm text-white/70">{{ p.description }}</span>
+      {% if p.extra.claims %}
+      <span class="mt-2 flex flex-wrap gap-1">
+        {% for c in p.extra.claims %}<span class="rounded bg-white/5 px-1.5 py-0.5 font-mono text-[0.6rem] text-white/50">{{ c }}</span>{% endfor %}
+      </span>
+      {% endif %}
     </a>
     {% endfor %}
   </div>
+
+  <script>
+  (function () {
+    var form = document.getElementById('src-filter-form');
+    if (!form) return;
+    var search = document.getElementById('src-search');
+    var typeSelect = document.getElementById('src-type-filter');
+    var reset = document.getElementById('src-filter-reset');
+    var cards = Array.prototype.slice.call(document.querySelectorAll('.src-card'));
+    var countEl = document.getElementById('src-result-count');
+    var emptyEl = document.getElementById('src-empty-state');
+
+    // Build the type dropdown from whatever types actually appear on the page
+    // — never a hardcoded list that can drift from the real data.
+    var types = [];
+    cards.forEach(function (c) {
+      var t = c.getAttribute('data-type');
+      if (t && types.indexOf(t) === -1) types.push(t);
+    });
+    types.sort();
+    types.forEach(function (t) {
+      var opt = document.createElement('option');
+      opt.value = t;
+      opt.textContent = t;
+      typeSelect.appendChild(opt);
+    });
+
+    function applyFilter() {
+      var q = search.value.trim().toLowerCase();
+      var type = typeSelect.value;
+      var shown = 0;
+      cards.forEach(function (c) {
+        var matchesQ = !q || c.getAttribute('data-search').toLowerCase().indexOf(q) !== -1;
+        var matchesType = !type || c.getAttribute('data-type') === type;
+        var show = matchesQ && matchesType;
+        c.hidden = !show;
+        if (show) shown++;
+      });
+      countEl.textContent = shown;
+      emptyEl.classList.toggle('hidden', shown !== 0);
+    }
+
+    search.addEventListener('input', applyFilter);
+    typeSelect.addEventListener('change', applyFilter);
+    reset.addEventListener('click', function () {
+      search.value = '';
+      typeSelect.value = '';
+      applyFilter();
+      search.focus();
+    });
+  })();
+  </script>
 
   <footer class="mt-12 border-t border-white/10 pt-6 text-xs text-white/40">
     <p><a href="{{ get_url(path='@/dossier/_index.md') | safe }}" class="underline">&larr; Zpět na celý dossier</a></p>
   </footer>
 </main>
-
-<style>
-  .dossier-prose p { margin-bottom: 1rem; line-height: 1.7; color: rgba(255,255,255,0.85); }
-  .dossier-prose a { color: #f3e5c0; text-decoration: underline; text-decoration-color: rgba(243,229,192,0.4); }
-  .dossier-prose a:hover { color: rgba(243,229,192,0.8); }
-</style>
 {% endblock content %}

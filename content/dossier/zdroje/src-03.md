@@ -11,6 +11,7 @@ outlet = "Info.cz"
 src_type = "komentář / názor"
 url = "https://www.info.cz/zpravodajstvi-a-komentare/macinka-turek-konec-motoriste"
 retrieved = "2026-07-21"
+published = "2026-01-08"
 claims = []
 +++
 

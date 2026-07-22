@@ -11,6 +11,7 @@ outlet = "Deník.cz"
 src_type = "zpravodajství"
 url = "https://www.denik.cz/z_domova/filip-turek-motoriste-kauza-nevhodne-prispevky-lide-hospoda-obhajoba.html"
 retrieved = "2026-07-21"
+published = "2025-10-13"
 claims = ["CLM-08", "CLM-09"]
 +++
 

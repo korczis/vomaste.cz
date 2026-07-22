@@ -11,6 +11,7 @@ outlet = "Deník N"
 src_type = "investigativní žurnalistika (předplatné)"
 url = "https://denikn.cz/1444758"
 retrieved = "2026-07-21"
+published = "2024-06-05"
 claims = ["CLM-04", "CLM-05", "CLM-06"]
 +++
 

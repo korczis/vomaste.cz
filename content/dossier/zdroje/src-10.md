@@ -11,6 +11,7 @@ outlet = "Život v Česku"
 src_type = "zpravodajství"
 url = "https://zivotvcesku.cz/macinka-se-pustil-do-pavla-po-jeho-slovech-k-turkove-nehode-jiny-by-pry-mohl-rict-nerespektuje-ustavu-at-abdikuje/"
 retrieved = "2026-07-21"
+published = "2026-07-15"
 claims = []
 +++
 
