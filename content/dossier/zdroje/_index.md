@@ -1,6 +1,6 @@
 +++
 title = "Registr zdrojů"
-description = "Všech 37 veřejných zdrojů citovaných v dossieru o Petru Macinkovi a Filipu Turkovi, každý s vlastní detailní stránkou."
+description = "Všech 43 veřejných zdrojů citovaných v dossieru o Petru Macinkovi a Filipu Turkovi, každý s vlastní detailní stránkou."
 template = "dossier-sources-index.html"
 sort_by = "weight"
 

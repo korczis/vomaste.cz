@@ -9,7 +9,7 @@ updated = "2026-07-22"
 reviewed_at = "2026-07-22"
 
 [[extra.stats]]
-value = "37"
+value = "43"
 label = "Citovaných zdrojů"
 
 [[extra.stats]]
@@ -17,11 +17,11 @@ value = "4"
 label = "Sledované kauzy"
 
 [[extra.stats]]
-value = "33"
+value = "37"
 label = "Tvrzení v registru"
 
 [[extra.stats]]
-value = "5"
+value = "6"
 label = "Otevřené mezery"
 
 [[extra.cases]]
@@ -170,6 +170,10 @@ Každé tvrzení má stav ověřenosti a odkaz na zdroj v [registru zdrojů](#re
 | CLM-31 | Turkova firma Zapper-Club s.r.o. nabízela za pandemie „Imunitní balíček ANTI-COVID-19"; přístroj zapper byl předmětem varování Ministerstva zdravotnictví a SZPI mu odebrala certifikát | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-34](@/dossier/zdroje/src-34.md), [SRC-35](@/dossier/zdroje/src-35.md) |
 | CLM-32 | Z 27 dokumentovaných startů Turkovy závodní kariéry (2015–2017, Formula 4 Trophy) měl 12 výher; čtyřikrát jel sám, šestkrát proti jedinému soupeři | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-36](@/dossier/zdroje/src-36.md) |
 | CLM-33 | Turek se (spolu s Kateřinou Konečnou a Václavem Klausem) setkal s íránským velvyslancem; všichni tři schůzku potvrdili, ale bagatelizovali jako „zdvořilostní návštěvu" | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-36](@/dossier/zdroje/src-36.md), [SRC-37](@/dossier/zdroje/src-37.md) |
+| CLM-34 | Turek si v dubnu 2026 koupil byt na Strahově za 18 mil. Kč na hypotéku — jediná další nemovitost vedle pozemku v Praze-Dubči | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-38](@/dossier/zdroje/src-38.md) |
+| CLM-35 | Motoristé sobě zveřejnili povinné přehledy dárců kampaně PS 2025 (UDHPSH); mezi velké dárce patřili Boris Šťastný (~5 mil. Kč přes Medical Investments) a František Fabičovic (1 mil. Kč) | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-39](@/dossier/zdroje/src-39.md), [SRC-40](@/dossier/zdroje/src-40.md) |
+| CLM-36 | Podnikatel Richard Chlad (dřívější osobní vazba na Radovana Krejčíře) oficiálně daroval Motoristům sobě v roce 2025 evidovaných 638 864 Kč, zatímco sám veřejně uváděl podporu v hodnotě „necelých dvou milionů" Kč | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-41](@/dossier/zdroje/src-41.md), [SRC-42](@/dossier/zdroje/src-42.md) |
+| CLM-37 | Turek a Macinka Chladovu roli veřejně zlehčovali; Macinka uváděl vlastní nižší částky (2× 50 000 Kč před eurovolbami) než sám Chlad | <span class="status-badge status-quote">CITACE</span> | [SRC-43](@/dossier/zdroje/src-43.md) |
 
 ## Graf vztahů
 
@@ -254,10 +258,28 @@ zakázaná léčebná tvrzení. *(Zdroj: Manipulátoři.cz, Forum24)*
 Tato data pocházejí ze strojově agregovaných veřejných rejstříků (Hlídač
 státu), ne z redakčně ověřené žurnalistiky — samotná existence
 podnikatelské/spolkové vazby nebo daru není v dossieru vedena jako
-pochybení, jen jako zdokumentovaný fakt. Nedohledané zůstává: úplný
-přehled majetku a nemovitostí (katastr nemovitostí), a kompletní
-financování volební kampaně Motoristů sobě 2025 nad rámec výše
-uvedených darů z roku 2024 — viz aktualizovaný stav GAP-04 a GAP-05.
+pochybení, jen jako zdokumentovaný fakt.
+
+**Nemovitosti**: u Turka se podařilo dohledat pozemek v Praze-Dubči (viz
+černé stavby výše) a byt na Strahově koupený v dubnu 2026 za 18 mil. Kč
+na hypotéku. U Macinky se v citovaném výběru zdrojů žádnou nemovitost
+dohledat nepodařilo — veřejný katastr nemovitostí neumožňuje vyhledávání
+podle jména z důvodu ochrany osobních údajů, a žádná žurnalistika k
+tomuto tématu u Macinky nebyla nalezena; nejde o zjištění, že by
+nemovitosti neměl, jen že se je tímto způsobem hledání nepodařilo najít.
+
+**Dárci kampaně 2025**: Motoristé sobě povinně zveřejnili přehledy
+dárců (SRC-40). Mezi větší dárce patřili Boris Šťastný (~5 mil. Kč přes
+firmu Medical Investments) a František Fabičovic (1 mil. Kč, dlouholetý
+přítel otce Petra Macinky). Zvláštní pozornost si zaslouží podnikatel
+Richard Chlad (hazard, energetika, dřívější osobní vazba na Radovana
+Krejčíře): oficiálně evidovaný dar 638 864 Kč (2025) je výrazně nižší
+než částka, kterou sám veřejně uváděl („necelé dva miliony" Kč); Turek i
+Macinka jeho roli ve straně veřejně zlehčovali.
+
+Zbývá nedohledáno: majetek/nemovitosti Macinky a úplná rekonciliace
+sporných čísel u Chladova sponzoringu (oficiální evidence vs. jeho
+vlastní vyjádření) — viz aktualizovaný stav GAP-04 a GAP-05.
 
 ## Kauza z roku 2024: fotografie a sbírka svícnů
 
@@ -361,9 +383,9 @@ detailů. *(Zdroj: Blesk.cz, Česká justice)*
   z funkce zmocněnce odstoupí. *(ČeskéNoviny.cz, ČT24)*
 - Premiér Andrej Babiš podle ČeskýchNovin/iRozhlas řekl Macinkovi, že pokud
   se záběry potvrdí, měl by Turek nést odpovědnost a rezignovat.
-- Macinka podle Života v Česku ocenil, že Turkovo dočasné stažení z funkce je
-  "vyzrálý přístup", zároveň se ale opřel do prezidenta Pavla za jeho
-  vyjádření ke kauze.
+- Macinka podle [Života v Česku](@/dossier/zdroje/src-10.md) ocenil, že
+  Turkovo dočasné stažení z funkce je "vyzrálý přístup", zároveň se ale
+  opřel do prezidenta Pavla za jeho vyjádření ke kauze.
 - Opozice (mimo jiné TOP 09) žádala Turkův okamžitý odchod ze všech funkcí
   včetně poslaneckého mandátu, s odůvodněním, že mohl vážně ohrozit životy a
   zdraví více lidí. *(ČeskéNoviny.cz)*
@@ -377,7 +399,7 @@ Macinka opakovaně veřejně deklaroval, že za Turkem stojí:
 > „Nikdy se ho nevzdám, budu za něj bojovat!" — Macinka po nehodě, podle Blesk.cz
 
 > „Je, byl a bude to Turek," řekl Macinka k jeho nominaci na ministra
-> životního prostředí. *(ČT24)*
+> životního prostředí. *([SRC-05](@/dossier/zdroje/src-05.md), ČT24)*
 
 Tyto výroky jsou citace, ne hodnocení tohoto dossieru.
 
@@ -411,9 +433,13 @@ trestního řízení, ale zdokumentované a veřejně publikované.)*
 
 ## Komentáře a analýzy (názor, ne fakt)
 
-Server HlídacíPes.org publikoval komentář Aleše Rozehnala "Macinka a Turek si
-hrají na mazáky. Čeká je návrat k bezvýznamnosti" — jde o autorský komentář,
-ne zpravodajství, a je zde uveden odděleně a zřetelně jako názor.
+Server [HlídacíPes.org](@/dossier/zdroje/src-09.md) publikoval komentář
+Aleše Rozehnala "Macinka a Turek si hrají na mazáky. Čeká je návrat k
+bezvýznamnosti". Server [Info.cz](@/dossier/zdroje/src-03.md) v lednu 2026
+(tedy ještě před nehodou) publikoval komentář Martina Schmarcze "Macinka
+už ví, že musí hodit Turka přes palubu", argumentující, že dvojvedení
+Motoristů dlouhodobě nefunguje. Jde o autorské komentáře, ne zpravodajství,
+a jsou zde uvedeny odděleně a zřetelně jako názor.
 
 ## Mezery a otevřené otázky
 
@@ -422,8 +448,8 @@ ne zpravodajství, a je zde uveden odděleně a zřetelně jako názor.
 | GAP-01 | Výsledek policejního vyšetřování dopravní nehody (přestupek vs. trestný čin, otázka viny) | vysoká |
 | GAP-02 | Dopad nehody na Turkovo poslanecké působení a Macinkovu pozici ve vládě | vysoká |
 | GAP-03 | Nezávislé ověření pravosti a autorství příspěvků z CLM-07/CLM-09 (forenzní analýza screenshotů) | vysoká |
-| GAP-04 | Majetkové a podnikatelské zájmy: firemní/spolkové vazby a Macinkova nepřiznaná ukrajinská firma nyní zdokumentovány (CLM-14/15/20/22); nemovitosti a katastr nemovitostí zůstávají nedohledány | střední |
-| GAP-05 | Financování kampaně: osobní a firemní dary 2017–2025 nyní zdokumentovány (CLM-21/23); úplné financování volební kampaně 2025 nad rámec těchto darů zůstává nedohledáno | nízká |
+| GAP-04 | Majetkové a podnikatelské zájmy: firemní/spolkové vazby, Macinkova nepřiznaná ukrajinská firma a Turkovy nemovitosti nyní zdokumentovány (CLM-14/15/20/22/34); Macinkovy nemovitosti zůstávají nedohledány (katastr nemovitostí neumožňuje vyhledávání podle jména) | nízká |
+| GAP-05 | Financování kampaně: osobní/firemní dary 2017–2024 a oficiální přehledy dárců kampaně PS 2025 nyní zdokumentovány (CLM-21/23/35/36/37), včetně rozporu u sponzora Chlada; přesná rekonciliace jeho vlastních tvrzených částek s oficiální evidencí zůstává neuzavřená | nízká |
 | GAP-06 | Výsledek stížnosti proti odložení trestního oznámení pro znásilnění a domácí násilí (CLM-27) — rozhoduje státní zástupkyně, výsledek nebyl v době psaní znám | vysoká |
 
 ## Co tento přehled nezkoumal
@@ -449,11 +475,11 @@ Rozšíření o tyto oblasti by vyžadovalo samostatný sběr z primárních reg
 
 ## Registr zdrojů
 
-Všech 37 citovaných zdrojů má vlastní stránku s typem, originálním
+Všech 43 citovaných zdrojů má vlastní stránku s typem, originálním
 odkazem, datem sestavení a přehledem toho, která tvrzení podporuje.
 
 > **[Otevřít registr zdrojů →](@/dossier/zdroje/_index.md)**
-> 37 zdrojů (SRC-01 – SRC-37), typ média, originální odkaz, podporovaná
+> 43 zdrojů (SRC-01 – SRC-43), typ média, originální odkaz, podporovaná
 > tvrzení a poznámka k nezávislosti redakcí.
 
 *Tento přehled shrnuje mediálně publikované informace k datu 2026-07-22. Kauzy se dále vyvíjí a přehled bude podle potřeby aktualizován. Nejde o právní hodnocení viny — otázky odpovědnosti (za nehodu i za pravost příspěvků z roku 2025) jsou předmětem probíhajícího šetření, resp. sporu.*

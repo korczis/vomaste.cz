@@ -35,3 +35,14 @@
         vztahů doplněn o uzel "Trestní oznámení", `zola build`/`check`
         bez chyb
   - [ ] GAP-06 zůstává otevřená — sledovat výsledek odvolání
+
+- [x] Prohloubit dossier o majetku/financích (kolo 3, 2026-07-22)
+  - [x] Turkovy nemovitosti dohledány (pozemek Dubeč + byt Strahov 18M Kč,
+        SRC-38, CLM-34); Macinkovy nemovitosti nedohledány (ČÚZK
+        neumožňuje jmenné vyhledávání) — GAP-04 downgradováno na nízkou
+  - [x] Oficiální dárcovské přehledy kampaně PS 2025 (UDHPSH/SRC-40),
+        velcí dárci Šťastný a Fabičovic (SRC-39), rozpor u sponzora
+        Chlada — oficiálně 638 864 Kč vs. jím tvrzené ~2 mil. Kč
+        (SRC-41/42/43, CLM-35–37) — GAP-05 downgradováno na nízkou
+  - [x] 43 zdrojů, 37 tvrzení, graf doplněn o uzel Chlad, `zola build`/
+        `check` bez chyb
