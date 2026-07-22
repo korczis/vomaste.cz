@@ -9,15 +9,15 @@ updated = "2026-07-22"
 reviewed_at = "2026-07-22"
 
 [[extra.stats]]
-value = "27"
+value = "37"
 label = "Citovaných zdrojů"
 
 [[extra.stats]]
-value = "3"
+value = "4"
 label = "Sledované kauzy"
 
 [[extra.stats]]
-value = "24"
+value = "33"
 label = "Tvrzení v registru"
 
 [[extra.stats]]
@@ -31,6 +31,14 @@ title = "Fotografie a sbírka svícnů"
 status = "status-disputed"
 label = "Uzavřeno bez trestu"
 summary = "Fotografie připomínající nacistický pozdrav a sbírka svícnů s hákovými kříži. Turek: „špatný humor.“"
+
+[[extra.cases]]
+anchor = "trestni-oznameni-domaci-nasili-a-znasilneni"
+period = "2025–2026"
+title = "Trestní oznámení (domácí násilí, znásilnění)"
+status = "status-disputed"
+label = "Odloženo pro promlčení, ne rozhodnuto"
+summary = "Bývalá partnerka viní Turka ze znásilnění a let násilí. Turek popírá. Případ odložen pro promlčení — ne pro nevinu."
 
 [[extra.cases]]
 anchor = "kauza-z-rijna-2025-smazane-prispevky-na-facebooku"
@@ -79,6 +87,12 @@ anchor = "politicka-kariera"
 dot = "dot-fact"
 
 [[extra.timeline]]
+date = "červen 2025"
+title = "Bývalá partnerka podává trestní oznámení (domácí násilí, znásilnění)"
+anchor = "trestni-oznameni-domaci-nasili-a-znasilneni"
+dot = "dot-disputed"
+
+[[extra.timeline]]
 date = "říjen 2025"
 title = "Deník N zveřejňuje investigaci o smazaných příspěvcích"
 anchor = "kauza-z-rijna-2025-smazane-prispevky-na-facebooku"
@@ -95,6 +109,12 @@ date = "2026"
 title = "Dopravní nehoda a politický tlak na rezignaci"
 anchor = "dopravni-nehoda-2026"
 dot = "dot-ongoing"
+
+[[extra.timeline]]
+date = "květen 2026"
+title = "Státní zastupitelství odkládá trestní oznámení pro promlčení, žena se odvolává"
+anchor = "trestni-oznameni-domaci-nasili-a-znasilneni"
+dot = "dot-disputed"
 +++
 
 <div class="legend">
@@ -141,6 +161,15 @@ Každé tvrzení má stav ověřenosti a odkaz na zdroj v [registru zdrojů](#re
 | CLM-22 | Macinka je/byl statutárním orgánem nebo společníkem v sedmi firmách/spolcích (DRILL COMPANY, Kauppias, Centrum pro výzkum terorismu, Motoristé Praha, PG Contract, Klub motoristů, MEAS Consulting); u DRILL COMPANY a Motoristé Praha skončil počátkem ledna 2026 | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-24](@/dossier/zdroje/src-24.md) |
 | CLM-23 | Macinka osobně daroval 510 000 Kč (ODS 2017, Motoristé sobě 2× 2022) a přes Klub motoristů z.s., kde je statutárním orgánem, přišlo Motoristům sobě v roce 2024 dalších 800 000 Kč — celkem 1 310 000 Kč | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-26](@/dossier/zdroje/src-26.md) |
 | CLM-24 | Macinka byl od 2025 zároveň ministrem zahraničí, místopředsedou vlády a 2025–2026 dočasně pověřen i řízením Ministerstva životního prostředí | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-27](@/dossier/zdroje/src-27.md) |
+| CLM-25 | Bývalá partnerka v červnu 2025 podala trestní oznámení, ve kterém Turka viní z několikaletého domácího násilí, vyhrožování střelnou zbraní a jednoho případu znásilnění, k nimž mělo dojít podle jejího popisu před 15–20 lety | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-28](@/dossier/zdroje/src-28.md), [SRC-29](@/dossier/zdroje/src-29.md), [SRC-30](@/dossier/zdroje/src-30.md) |
+| CLM-26 | Turek trestní jednání a násilí kategoricky odmítl, označil oznámení za „mediální lynč" s politickým motivem; nevěru v tomto kontextu připustil | <span class="status-badge status-quote">CITACE</span> | [SRC-29](@/dossier/zdroje/src-29.md), [SRC-30](@/dossier/zdroje/src-30.md) |
+| CLM-27 | V květnu 2026 státní zastupitelství trestní oznámení odložilo z důvodu promlčení; rozhodnutí není pravomocné, žena se odvolala. Jde o procesní důsledek uplynutí promlčecí doby, ne o rozhodnutí o vině nebo nevině | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-31](@/dossier/zdroje/src-31.md) |
+| CLM-28 | V roce 2017 Turek nechal na autě zaměstnance saúdskoarabské ambasády kresbu oprátky a loveckou nábojnici; policie věc uzavřela jako pravděpodobnou záměnu osob a vyřešila jako přestupek | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-32](@/dossier/zdroje/src-32.md) |
+| CLM-29 | Turkovo vysvětlení: bránil tehdejší přítelkyni, odmítl rasový motiv i vědomí, že jde o zaměstnance ambasády | <span class="status-badge status-quote">CITACE</span> | [SRC-32](@/dossier/zdroje/src-32.md) |
+| CLM-30 | V roce 2026 dostal Turek pokuty v součtu 200 000 Kč za dvě nepovolené stavby na pozemku v Praze-Dubči (80 000 Kč nedbalost, 120 000 Kč úmysl); obě dodatečně zlegalizoval | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-33](@/dossier/zdroje/src-33.md) |
+| CLM-31 | Turkova firma Zapper-Club s.r.o. nabízela za pandemie „Imunitní balíček ANTI-COVID-19"; přístroj zapper byl předmětem varování Ministerstva zdravotnictví a SZPI mu odebrala certifikát | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-34](@/dossier/zdroje/src-34.md), [SRC-35](@/dossier/zdroje/src-35.md) |
+| CLM-32 | Z 27 dokumentovaných startů Turkovy závodní kariéry (2015–2017, Formula 4 Trophy) měl 12 výher; čtyřikrát jel sám, šestkrát proti jedinému soupeři | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-36](@/dossier/zdroje/src-36.md) |
+| CLM-33 | Turek se (spolu s Kateřinou Konečnou a Václavem Klausem) setkal s íránským velvyslancem; všichni tři schůzku potvrdili, ale bagatelizovali jako „zdvořilostní návštěvu" | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-36](@/dossier/zdroje/src-36.md), [SRC-37](@/dossier/zdroje/src-37.md) |
 
 ## Graf vztahů
 
@@ -215,6 +244,13 @@ jeho dlouhodobým zájmem o automobilismus (Art of Performance, Transgas,
 Aston Martin klub ČR, Jaguar klub ČR, Zapper-Club) a osobně daroval
 Motoristům sobě celkem 210 000 Kč (2019, 2025). *(Zdroj: Hlídač státu)*
 
+Jedna z těchto firem, Zapper-Club s.r.o. (Turek u ní veden jako společník
+2016–2023), za pandemie covidu-19 nabízela přes e-shop parazitivnas.cz
+„Imunitní balíček ANTI-COVID-19". Ministerstvo zdravotnictví před
+používáním přístroje zapper důrazně varovalo a Státní zemědělská a
+potravinářská inspekce mu odebrala certifikát; podle inspekce šlo o
+zakázaná léčebná tvrzení. *(Zdroj: Manipulátoři.cz, Forum24)*
+
 Tato data pocházejí ze strojově agregovaných veřejných rejstříků (Hlídač
 státu), ne z redakčně ověřené žurnalistiky — samotná existence
 podnikatelské/spolkové vazby nebo daru není v dossieru vedena jako
@@ -232,6 +268,32 @@ kříži. Turek to označil za "špatný humor", resp. sběratelský zájem; vě
 zabývala policie a kvůli kauze mu byly zrušeny některé předvolební debaty.
 Předseda Motoristů Petr Macinka jej veřejně hájil a kauzu označil za
 "pseudoproblém." *(Zdroj: iROZHLAS, Deník N)*
+
+## Trestní oznámení: obvinění z domácího násilí a znásilnění
+
+*(Nejzávažnější a právně nejcitlivější položka v tomto přehledu. Dossier
+neuvádí jméno oznamovatelky, protože ho neuvádí ani citované zdroje, a
+nehodnotí vinu ani nevinu — jde o probíhající, neuzavřenou věc.)*
+
+V červnu 2025 podala bývalá partnerka Filipa Turka trestní oznámení, ve
+kterém ho viní z několik let trvajícího domácího násilí, vyhrožování
+střelnou zbraní a jednoho případu znásilnění. Incidenty měly podle jejího
+popisu proběhnout před 15 až 20 lety, tedy dávno před začátkem Turkovy
+politické kariéry.
+
+Turek jakékoliv trestní jednání a násilí kategoricky odmítl a označil
+oznámení za pokus o „mediální lynč" s politickým motivem před volbami;
+nevěru a nevázaný vztahový život v tomto kontextu připustil, trestní
+jednání ne.
+
+V květnu 2026 pražské státní zastupitelství trestní oznámení odložilo z
+důvodu promlčení. **Toto rozhodnutí je čistě procesní** — vyplývá z
+uplynutí zákonné promlčecí doby (v době skutku 5, resp. 12 let u těžké
+újmy na zdraví), **ne z posouzení, zda k činům došlo, nebo ne.**
+Rozhodnutí navíc není pravomocné: žena se odvolala a o stížnosti nyní
+rozhoduje státní zástupkyně. Otázka pravdivosti obvinění tímto zůstává
+zcela otevřená a nerozhodnutá — dossier ji tak i vede. *(Zdroj: Deník.cz,
+Blesk.cz, HN.cz, ČT24)*
 
 ## Kauza z října 2025: smazané příspěvky na Facebooku
 
@@ -319,6 +381,34 @@ Macinka opakovaně veřejně deklaroval, že za Turkem stojí:
 
 Tyto výroky jsou citace, ne hodnocení tohoto dossieru.
 
+## Další zaznamenané kontroverze
+
+*(Menší rozsahem než čtyři výše sledované kauzy — bez otevřeného
+trestního řízení, ale zdokumentované a veřejně publikované.)*
+
+- **2017 — incident u saúdské ambasády**: Turek nechal na autě
+  zaměstnance saúdskoarabské ambasády kresbu oprátky a loveckou
+  nábojnici. Policie případ nejprve prošetřovala jako vyhrožování s
+  rasovým motivem, později uzavřela jako pravděpodobnou záměnu osob a
+  vyřešila jako přestupek. Turek tvrdil, že bránil tehdejší přítelkyni,
+  a rasový motiv odmítl. *(Zdroj: Deník.cz)*
+- **2026 — černé stavby**: Turek dostal pokuty v součtu 200 000 Kč za
+  dvě nepovolené stavby na svém pozemku v Praze-Dubči — sadařský domek
+  (80 000 Kč, nedbalost) a stavbu připomínající dvojgaráž, kterou během
+  výstavby označoval jako moštárnu (120 000 Kč, úmysl). Obě dodatečně
+  zlegalizoval. *(Zdroj: Blesk.cz)*
+- **Závodní kariéra**: nezávislá analýza dokumentovaných startů
+  Turkovy automobilové kariéry (2015–2017, kategorie Formula 4 Trophy)
+  zjistila 12 výher z 27 startů — čtyřikrát jel sám, šestkrát proti
+  jedinému soupeři. Dossier to vede jako doklad řídké obsazenosti těchto
+  závodů, ne jako tvrzení o neplatnosti výsledků. *(Zdroj: Aktuálně.cz)*
+- **Setkání s diplomaty**: Turek se (spolu s Kateřinou Konečnou a
+  Václavem Klausem) setkal s íránským velvyslancem Seyedem Majidem
+  Ghafelehem Bashim; všichni tři politici schůzku potvrdili, ale
+  označili ji za pouhou zdvořilostní návštěvu. Turek se hájil členstvím
+  v delegaci Evropského parlamentu pro Írán. *(Zdroj: Aktuálně.cz,
+  Neovlivní.cz)*
+
 ## Komentáře a analýzy (názor, ne fakt)
 
 Server HlídacíPes.org publikoval komentář Aleše Rozehnala "Macinka a Turek si
@@ -334,6 +424,7 @@ ne zpravodajství, a je zde uveden odděleně a zřetelně jako názor.
 | GAP-03 | Nezávislé ověření pravosti a autorství příspěvků z CLM-07/CLM-09 (forenzní analýza screenshotů) | vysoká |
 | GAP-04 | Majetkové a podnikatelské zájmy: firemní/spolkové vazby a Macinkova nepřiznaná ukrajinská firma nyní zdokumentovány (CLM-14/15/20/22); nemovitosti a katastr nemovitostí zůstávají nedohledány | střední |
 | GAP-05 | Financování kampaně: osobní a firemní dary 2017–2025 nyní zdokumentovány (CLM-21/23); úplné financování volební kampaně 2025 nad rámec těchto darů zůstává nedohledáno | nízká |
+| GAP-06 | Výsledek stížnosti proti odložení trestního oznámení pro znásilnění a domácí násilí (CLM-27) — rozhoduje státní zástupkyně, výsledek nebyl v době psaní znám | vysoká |
 
 ## Co tento přehled nezkoumal
 
@@ -358,11 +449,11 @@ Rozšíření o tyto oblasti by vyžadovalo samostatný sběr z primárních reg
 
 ## Registr zdrojů
 
-Všech 27 citovaných zdrojů má vlastní stránku s typem, originálním
+Všech 37 citovaných zdrojů má vlastní stránku s typem, originálním
 odkazem, datem sestavení a přehledem toho, která tvrzení podporuje.
 
 > **[Otevřít registr zdrojů →](@/dossier/zdroje/_index.md)**
-> 27 zdrojů (SRC-01 – SRC-27), typ média, originální odkaz, podporovaná
+> 37 zdrojů (SRC-01 – SRC-37), typ média, originální odkaz, podporovaná
 > tvrzení a poznámka k nezávislosti redakcí.
 
 *Tento přehled shrnuje mediálně publikované informace k datu 2026-07-22. Kauzy se dále vyvíjí a přehled bude podle potřeby aktualizován. Nejde o právní hodnocení viny — otázky odpovědnosti (za nehodu i za pravost příspěvků z roku 2025) jsou předmětem probíhajícího šetření, resp. sporu.*

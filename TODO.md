@@ -22,3 +22,16 @@
   - [ ] Zbývá nedohledáno (viz GAP-04/GAP-05 v dossieru): katastr
         nemovitostí (ČÚZK) a úplné financování volební kampaně 2025
         nad rámec darů 2017–2024 — další kolo
+
+- [x] Prohloubit dossier o Turkovi (kolo 2, 2026-07-22) — scope extension
+      z AGENTS.md, owner-schváleno na záznam 2026-07-22
+  - [x] Nová 4. kauza: trestní oznámení pro domácí násilí/znásilnění
+        (SRC-28–31, CLM-25–27) — explicitní rámování "promlčení ≠
+        rozhodnutí o vině", nová GAP-06 (výsledek stížnosti)
+  - [x] 5 menších témat (SRC-32–37, CLM-28–33): saúdská ambasáda 2017,
+        černé stavby 2026, Zapper Club (varování MZ/SZPI), nesoulad
+        závodní kariéry, kritizovaná setkání s íránským velvyslancem
+  - [x] Stats přepočítány (37 zdrojů, 33 tvrzení, 4 kauzy), graf
+        vztahů doplněn o uzel "Trestní oznámení", `zola build`/`check`
+        bez chyb
+  - [ ] GAP-06 zůstává otevřená — sledovat výsledek odvolání
