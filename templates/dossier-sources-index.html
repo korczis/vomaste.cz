@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<main class="mx-auto max-w-3xl px-6 py-12 text-white">
+  <header class="mb-8 border-b border-white/10 pb-6">
+    <nav class="text-sm text-white/50">
+      <a href="{{ get_url(path='@/dossier/_index.md') | safe }}" class="text-[#f3e5c0] hover:underline">Dossier</a>
+      <span class="mx-1">/</span>
+      <span>Registr zdrojů</span>
+    </nav>
+    <h1 class="mt-2 text-2xl font-black sm:text-3xl">{{ section.title }}</h1>
+    <p class="mt-2 text-sm text-white/60">{{ section.description }}</p>
+  </header>
+
+  <div class="grid gap-3 sm:grid-cols-2">
+    {% for p in section.pages %}
+    <a href="{{ p.permalink | safe }}" class="flex flex-col rounded-lg border border-white/10 bg-white/[0.03] p-4 no-underline transition-colors hover:border-white/20 hover:bg-white/[0.06]">
+      <span class="font-mono text-xs text-[#f3e5c0]">{{ p.extra.src_id }}</span>
+      <span class="font-semibold text-white">{{ p.extra.outlet }}</span>
+      <span class="mt-1 text-xs text-white/40">{{ p.extra.src_type }}</span>
+      <span class="mt-2 text-sm text-white/70">{{ p.description }}</span>
+    </a>
+    {% endfor %}
+  </div>
+
+  <footer class="mt-12 border-t border-white/10 pt-6 text-xs text-white/40">
+    <p><a href="{{ get_url(path='@/dossier/_index.md') | safe }}" class="underline">&larr; Zpět na celý dossier</a></p>
+  </footer>
+</main>
+{% endblock content %}

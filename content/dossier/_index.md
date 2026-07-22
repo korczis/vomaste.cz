@@ -115,19 +115,19 @@ Každé tvrzení má stav ověřenosti a odkaz na zdroj v [registru zdrojů](#re
 
 | ID | Tvrzení | Stav | Zdroj |
 |---|---|---|---|
-| CLM-01 | Turek zvolen europoslancem v červnu 2024 za společnou kandidátku Motoristů a Přísahy | <span class="status-badge status-corroborated">CORROBORATED</span> | SRC-11, SRC-12, SRC-13 |
-| CLM-02 | Turek v říjnu 2025 zvolen poslancem, nejvyšší počet preferenčních hlasů Motoristů ve Středočeském kraji | <span class="status-badge status-corroborated">CORROBORATED</span> | SRC-11, SRC-13 |
-| CLM-03 | Macinka předsedou Motoristů sobě od 2022; zvolen poslancem 2025 za Jihomoravský kraj; Motoristé sobě 13 mandátů, vstup do vlády s ANO a SPD | <span class="status-badge status-corroborated">CORROBORATED</span> | SRC-11, SRC-13 |
-| CLM-04 | V roce 2024 čelil Turek kritice kvůli fotografii se zdviženou pravicí (2013) a sbírce svícnů s hákovými kříži | <span class="status-badge status-corroborated">CORROBORATED</span> | SRC-12, SRC-14 |
-| CLM-05 | Turek fotografii/sbírku označil za „špatný humor" / sběratelský zájem | <span class="status-badge status-quote">CITACE</span> | SRC-12, SRC-14 |
-| CLM-06 | Macinka kauzu 2024 veřejně hájil, označil ji za „pseudoproblém" | <span class="status-badge status-quote">CITACE</span> | SRC-12, SRC-14 |
-| CLM-07 | Deník N v říjnu 2025 zveřejnil údajné smazané příspěvky připisované Turkovi s rasistickým/homofobním obsahem | <span class="status-badge status-corroborated">CORROBORATED</span> | SRC-15 |
-| CLM-08 | Turek odmítl autorství nejzávažnějších z těchto příspěvků | <span class="status-badge status-quote">CITACE</span> | SRC-16 |
-| CLM-09 | Pravost/autorství screenshotů z CLM-07 nebyla nezávisle prokázána ani vyvrácena | <span class="status-badge status-disputed">SPORNÉ</span> | SRC-15, SRC-16 |
-| CLM-10 | Auto Turka se v Praze střetlo s vozidlem záchranné služby (2026); dle záběrů předjížděl frontu v odbočovacím pruhu | <span class="status-badge status-corroborated">CORROBORATED</span> | SRC-02 |
-| CLM-11 | Turek dočasně opustil funkci zmocněnce pro Green Deal, přislíbil rezignaci při prokázání viny | <span class="status-badge status-corroborated">CORROBORATED</span> | SRC-06, SRC-07 |
-| CLM-12 | Babiš dle zdrojů řekl Macinkovi, že pokud se záběry potvrdí, měl by Turek rezignovat | <span class="status-badge status-corroborated">CORROBORATED</span> | SRC-06, SRC-08 |
-| CLM-13 | Macinka veřejně opakovaně prohlásil, že se Turka nevzdá | <span class="status-badge status-quote">CITACE</span> | SRC-01, SRC-04 |
+| CLM-01 | Turek zvolen europoslancem v červnu 2024 za společnou kandidátku Motoristů a Přísahy | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-11](@/dossier/zdroje/src-11.md), [SRC-12](@/dossier/zdroje/src-12.md), [SRC-13](@/dossier/zdroje/src-13.md) |
+| CLM-02 | Turek v říjnu 2025 zvolen poslancem, nejvyšší počet preferenčních hlasů Motoristů ve Středočeském kraji | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-11](@/dossier/zdroje/src-11.md), [SRC-13](@/dossier/zdroje/src-13.md) |
+| CLM-03 | Macinka předsedou Motoristů sobě od 2022; zvolen poslancem 2025 za Jihomoravský kraj; Motoristé sobě 13 mandátů, vstup do vlády s ANO a SPD | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-11](@/dossier/zdroje/src-11.md), [SRC-13](@/dossier/zdroje/src-13.md) |
+| CLM-04 | V roce 2024 čelil Turek kritice kvůli fotografii se zdviženou pravicí (2013) a sbírce svícnů s hákovými kříži | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-12](@/dossier/zdroje/src-12.md), [SRC-14](@/dossier/zdroje/src-14.md) |
+| CLM-05 | Turek fotografii/sbírku označil za „špatný humor" / sběratelský zájem | <span class="status-badge status-quote">CITACE</span> | [SRC-12](@/dossier/zdroje/src-12.md), [SRC-14](@/dossier/zdroje/src-14.md) |
+| CLM-06 | Macinka kauzu 2024 veřejně hájil, označil ji za „pseudoproblém" | <span class="status-badge status-quote">CITACE</span> | [SRC-12](@/dossier/zdroje/src-12.md), [SRC-14](@/dossier/zdroje/src-14.md) |
+| CLM-07 | Deník N v říjnu 2025 zveřejnil údajné smazané příspěvky připisované Turkovi s rasistickým/homofobním obsahem | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-15](@/dossier/zdroje/src-15.md) |
+| CLM-08 | Turek odmítl autorství nejzávažnějších z těchto příspěvků | <span class="status-badge status-quote">CITACE</span> | [SRC-16](@/dossier/zdroje/src-16.md) |
+| CLM-09 | Pravost/autorství screenshotů z CLM-07 nebyla nezávisle prokázána ani vyvrácena | <span class="status-badge status-disputed">SPORNÉ</span> | [SRC-15](@/dossier/zdroje/src-15.md), [SRC-16](@/dossier/zdroje/src-16.md) |
+| CLM-10 | Auto Turka se v Praze střetlo s vozidlem záchranné služby (2026); dle záběrů předjížděl frontu v odbočovacím pruhu | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-02](@/dossier/zdroje/src-02.md) |
+| CLM-11 | Turek dočasně opustil funkci zmocněnce pro Green Deal, přislíbil rezignaci při prokázání viny | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-06](@/dossier/zdroje/src-06.md), [SRC-07](@/dossier/zdroje/src-07.md) |
+| CLM-12 | Babiš dle zdrojů řekl Macinkovi, že pokud se záběry potvrdí, měl by Turek rezignovat | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-06](@/dossier/zdroje/src-06.md), [SRC-08](@/dossier/zdroje/src-08.md) |
+| CLM-13 | Macinka veřejně opakovaně prohlásil, že se Turka nevzdá | <span class="status-badge status-quote">CITACE</span> | [SRC-01](@/dossier/zdroje/src-01.md), [SRC-04](@/dossier/zdroje/src-04.md) |
 
 ## Graf vztahů
 
@@ -269,26 +269,26 @@ Rozšíření o tyto oblasti by vyžadovalo samostatný sběr z primárních reg
 
 | ID | Zdroj | Typ | Popis |
 |---|---|---|---|
-| SRC-01 | [Echo24.cz](https://www.echo24.cz/a/HkCB9/zpravy-domaci-turka-se-nikdy-nevzdam-budu-mu-odrezavat-opratku-rika-macinka-okamura-imunita) | zpravodajství | „Turka se nikdy nevzdám, říká Macinka" |
-| SRC-02 | [Echo24.cz](https://www.echo24.cz/a/HRupy/filip-turek-autonehoda-policie-advokat-terminy-vysetrovani-lhuty-ondrej-horazny-trestny-cin-prestupek) | zpravodajství | Popis nehody a stavu vyšetřování |
-| SRC-03 | [Info.cz](https://www.info.cz/zpravodajstvi-a-komentare/macinka-turek-konec-motoriste) | komentář/názor | „Macinka už ví, že musí hodit Turka přes palubu" |
-| SRC-04 | [Blesk.cz](https://www.blesk.cz/clanek/zpravy-politika/843922/macinka-brani-turka-po-bouracce-nikdy-se-ho-nevzdam-budu-za-nej-bojovat.html) | zpravodajství (tabloid) | Macinkovo vyjádření po nehodě |
-| SRC-05 | [ČT24](https://ct24.ceskatelevize.cz/clanek/domaci/je-byl-a-bude-to-turek-rekl-macinka-k-nominaci-na-ministra-zivotniho-prostredi-369026) | veřejnoprávní zpravodajství | Macinkovo vyjádření k nominaci Turka |
-| SRC-06 | [ČT24](https://ct24.ceskatelevize.cz/clanek/domaci/pokud-zabery-z-nehody-nelzou-turek-by-mel-rezignovat-rekl-babis-375570) | veřejnoprávní zpravodajství | Babišovo stanovisko k rezignaci |
-| SRC-07 | [ČeskéNoviny.cz](https://www.ceskenoviny.cz/zpravy/babis-mluvil-s-macinkou-o-turkove-nehode-ve-hre-je-post-zmocnence/2850518) | tisková agentura (ČTK-síť) | Babiš a Macinka o postu zmocněnce, žádost opozice o rezignaci |
-| SRC-08 | [iRozhlas.cz](https://www.irozhlas.cz/zpravy-domov/pokud-se-zabery-potvrdi-mel-rezignovat-premier-babis-mluvil-s-macinkou-o-turkove_2607141755_jva) | veřejnoprávní zpravodajství | Babišovo vyjádření k záběrům z nehody |
-| SRC-09 | [HlídacíPes.org](https://hlidacipes.org/ales-rozehnal-macinka-a-turek-si-hraji-na-mazaky-ceka-je-navrat-k-bezvyznamnosti/) | komentář/názor | Komentář Aleše Rozehnala |
-| SRC-10 | [Život v Česku](https://zivotvcesku.cz/macinka-se-pustil-do-pavla-po-jeho-slovech-k-turkove-nehode-jiny-by-pry-mohl-rict-nerespektuje-ustavu-at-abdikuje/) | zpravodajství | Macinkova reakce na prezidenta Pavla |
-| SRC-11 | [Seznam Zprávy](https://www.seznamzpravy.cz/clanek/volby-do-poslanecke-snemovny-motoriste-se-dockali-turek-chce-vymenit-brusel-za-prahu-277943) | zpravodajství | Turkova kandidatura do Sněmovny, politické výroky |
-| SRC-12 | [iROZHLAS](https://www.irozhlas.cz/zpravy-domov/ze-sedacek-aut-a-formuli-do-kresla-v-europarlamentu-jmeno-filipa-turka_2412271818_vtk) | veřejnoprávní zpravodajství | Turkův politický profil, kauza fotografie a svícnů (2024) |
-| SRC-13 | [Aktuálně.cz](https://zpravy.aktualne.cz/domaci/turek-a-jeho-lid-dojeli-do-snemovny-kdo-z-motoristu-mandat/r~9eb44c0ea14b11f0bf960cc47ab5f122/) | zpravodajství | Výsledky Motoristů ve volbách 2025, mandáty |
-| SRC-14 | [Deník N](https://denikn.cz/1444758) | investigativní žurnalistika (předplatné) | Kauza fotografie se zdviženou pravicí (2024) |
-| SRC-15 | [Deník N](https://denikn.cz/1864721/popalit-cikane-je-polehcujici-okolnost-obama-je-negr-odhalujeme-smazany-svet-filipa-turka/) | investigativní žurnalistika (předplatné) | Investigace o smazaných příspěvcích (říjen 2025) |
-| SRC-16 | [Deník.cz](https://www.denik.cz/z_domova/filip-turek-motoriste-kauza-nevhodne-prispevky-lide-hospoda-obhajoba.html) | zpravodajství | Turkova reakce a obhajoba k příspěvkům |
+| [SRC-01](@/dossier/zdroje/src-01.md) | [Echo24.cz](https://www.echo24.cz/a/HkCB9/zpravy-domaci-turka-se-nikdy-nevzdam-budu-mu-odrezavat-opratku-rika-macinka-okamura-imunita) | zpravodajství | „Turka se nikdy nevzdám, říká Macinka" |
+| [SRC-02](@/dossier/zdroje/src-02.md) | [Echo24.cz](https://www.echo24.cz/a/HRupy/filip-turek-autonehoda-policie-advokat-terminy-vysetrovani-lhuty-ondrej-horazny-trestny-cin-prestupek) | zpravodajství | Popis nehody a stavu vyšetřování |
+| [SRC-03](@/dossier/zdroje/src-03.md) | [Info.cz](https://www.info.cz/zpravodajstvi-a-komentare/macinka-turek-konec-motoriste) | komentář/názor | „Macinka už ví, že musí hodit Turka přes palubu" |
+| [SRC-04](@/dossier/zdroje/src-04.md) | [Blesk.cz](https://www.blesk.cz/clanek/zpravy-politika/843922/macinka-brani-turka-po-bouracce-nikdy-se-ho-nevzdam-budu-za-nej-bojovat.html) | zpravodajství (tabloid) | Macinkovo vyjádření po nehodě |
+| [SRC-05](@/dossier/zdroje/src-05.md) | [ČT24](https://ct24.ceskatelevize.cz/clanek/domaci/je-byl-a-bude-to-turek-rekl-macinka-k-nominaci-na-ministra-zivotniho-prostredi-369026) | veřejnoprávní zpravodajství | Macinkovo vyjádření k nominaci Turka |
+| [SRC-06](@/dossier/zdroje/src-06.md) | [ČT24](https://ct24.ceskatelevize.cz/clanek/domaci/pokud-zabery-z-nehody-nelzou-turek-by-mel-rezignovat-rekl-babis-375570) | veřejnoprávní zpravodajství | Babišovo stanovisko k rezignaci |
+| [SRC-07](@/dossier/zdroje/src-07.md) | [ČeskéNoviny.cz](https://www.ceskenoviny.cz/zpravy/babis-mluvil-s-macinkou-o-turkove-nehode-ve-hre-je-post-zmocnence/2850518) | tisková agentura (ČTK-síť) | Babiš a Macinka o postu zmocněnce, žádost opozice o rezignaci |
+| [SRC-08](@/dossier/zdroje/src-08.md) | [iRozhlas.cz](https://www.irozhlas.cz/zpravy-domov/pokud-se-zabery-potvrdi-mel-rezignovat-premier-babis-mluvil-s-macinkou-o-turkove_2607141755_jva) | veřejnoprávní zpravodajství | Babišovo vyjádření k záběrům z nehody |
+| [SRC-09](@/dossier/zdroje/src-09.md) | [HlídacíPes.org](https://hlidacipes.org/ales-rozehnal-macinka-a-turek-si-hraji-na-mazaky-ceka-je-navrat-k-bezvyznamnosti/) | komentář/názor | Komentář Aleše Rozehnala |
+| [SRC-10](@/dossier/zdroje/src-10.md) | [Život v Česku](https://zivotvcesku.cz/macinka-se-pustil-do-pavla-po-jeho-slovech-k-turkove-nehode-jiny-by-pry-mohl-rict-nerespektuje-ustavu-at-abdikuje/) | zpravodajství | Macinkova reakce na prezidenta Pavla |
+| [SRC-11](@/dossier/zdroje/src-11.md) | [Seznam Zprávy](https://www.seznamzpravy.cz/clanek/volby-do-poslanecke-snemovny-motoriste-se-dockali-turek-chce-vymenit-brusel-za-prahu-277943) | zpravodajství | Turkova kandidatura do Sněmovny, politické výroky |
+| [SRC-12](@/dossier/zdroje/src-12.md) | [iROZHLAS](https://www.irozhlas.cz/zpravy-domov/ze-sedacek-aut-a-formuli-do-kresla-v-europarlamentu-jmeno-filipa-turka_2412271818_vtk) | veřejnoprávní zpravodajství | Turkův politický profil, kauza fotografie a svícnů (2024) |
+| [SRC-13](@/dossier/zdroje/src-13.md) | [Aktuálně.cz](https://zpravy.aktualne.cz/domaci/turek-a-jeho-lid-dojeli-do-snemovny-kdo-z-motoristu-mandat/r~9eb44c0ea14b11f0bf960cc47ab5f122/) | zpravodajství | Výsledky Motoristů ve volbách 2025, mandáty |
+| [SRC-14](@/dossier/zdroje/src-14.md) | [Deník N](https://denikn.cz/1444758) | investigativní žurnalistika (předplatné) | Kauza fotografie se zdviženou pravicí (2024) |
+| [SRC-15](@/dossier/zdroje/src-15.md) | [Deník N](https://denikn.cz/1864721/popalit-cikane-je-polehcujici-okolnost-obama-je-negr-odhalujeme-smazany-svet-filipa-turka/) | investigativní žurnalistika (předplatné) | Investigace o smazaných příspěvcích (říjen 2025) |
+| [SRC-16](@/dossier/zdroje/src-16.md) | [Deník.cz](https://www.denik.cz/z_domova/filip-turek-motoriste-kauza-nevhodne-prispevky-lide-hospoda-obhajoba.html) | zpravodajství | Turkova reakce a obhajoba k příspěvkům |
 
-Poznámka k nezávislosti: SRC-06 a SRC-08 čerpají ze stejné události
+Poznámka k nezávislosti: [SRC-06](@/dossier/zdroje/src-06.md) a [SRC-08](@/dossier/zdroje/src-08.md) čerpají ze stejné události
 (Babišovo vyjádření), ale jde o dvě samostatné redakce (ČT24, iRozhlas) —
-počítány jako nezávislé potvrzení. SRC-14 a SRC-15 jsou od stejného vydavatele
+počítány jako nezávislé potvrzení. [SRC-14](@/dossier/zdroje/src-14.md) a [SRC-15](@/dossier/zdroje/src-15.md) jsou od stejného vydavatele
 (Deník N) — jde o jednu zdrojovou rodinu, ne o dvě nezávislá potvrzení.
 
 *Tento přehled shrnuje mediálně publikované informace k datu 2026-07-21. Kauzy se dále vyvíjí a přehled bude podle potřeby aktualizován. Nejde o právní hodnocení viny — otázky odpovědnosti (za nehodu i za pravost příspěvků z roku 2025) jsou předmětem probíhajícího šetření, resp. sporu.*

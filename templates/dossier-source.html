@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+<main class="mx-auto max-w-2xl px-6 py-12 text-white">
+  <header class="mb-8 border-b border-white/10 pb-6">
+    <nav class="text-sm text-white/50">
+      <a href="{{ get_url(path='@/dossier/_index.md') | safe }}" class="text-[#f3e5c0] hover:underline">Dossier</a>
+      <span class="mx-1">/</span>
+      <a href="{{ get_url(path='@/dossier/zdroje/_index.md') | safe }}" class="text-[#f3e5c0] hover:underline">Registr zdrojů</a>
+      <span class="mx-1">/</span>
+      <span>{{ page.extra.src_id }}</span>
+    </nav>
+    <h1 class="mt-2 text-2xl font-black sm:text-3xl">{{ page.extra.src_id }} — {{ page.extra.outlet }}</h1>
+  </header>
+
+  <table class="mb-8 w-full text-left text-sm dossier-prose">
+    <tbody class="divide-y divide-white/10">
+      <tr><th class="w-40 py-2 pr-4 align-top text-white/50">Typ</th><td class="py-2">{{ page.extra.src_type }}</td></tr>
+      <tr><th class="w-40 py-2 pr-4 align-top text-white/50">Odkaz</th><td class="py-2"><a href="{{ page.extra.url }}" rel="external" class="break-all">{{ page.extra.url }}</a></td></tr>
+      <tr><th class="w-40 py-2 pr-4 align-top text-white/50">Datum sestavení</th><td class="py-2">{{ page.extra.retrieved }}</td></tr>
+      {% if page.extra.claims %}
+      <tr><th class="w-40 py-2 pr-4 align-top text-white/50">Podporuje tvrzení</th><td class="py-2">
+        {% for c in page.extra.claims %}<a href="{{ get_url(path='@/dossier/_index.md') | safe }}#registr-tvrzeni" class="mr-2 inline-block rounded bg-white/5 px-2 py-0.5 font-mono text-xs text-[#f3e5c0] no-underline hover:bg-white/10">{{ c }}</a>{% endfor %}
+      </td></tr>
+      {% endif %}
+    </tbody>
+  </table>
+
+  <article class="dossier-prose">
+    {{ page.content | safe }}
+  </article>
+
+  <footer class="mt-12 border-t border-white/10 pt-6 text-xs text-white/40">
+    <p><a href="{{ get_url(path='@/dossier/_index.md') | safe }}" class="underline">&larr; Zpět na celý dossier</a></p>
+  </footer>
+</main>
+
+<style>
+  .dossier-prose h2 { font-size: 1.1rem; font-weight: 700; margin-top: 2rem; margin-bottom: 0.75rem; }
+  .dossier-prose p { margin-bottom: 1rem; line-height: 1.7; color: rgba(255,255,255,0.85); }
+  .dossier-prose a { color: #f3e5c0; text-decoration: underline; text-decoration-color: rgba(243,229,192,0.4); }
+  .dossier-prose a:hover { color: rgba(243,229,192,0.8); }
+  .dossier-prose th { font-weight: 600; }
+</style>
+{% endblock content %}

@@ -6,17 +6,17 @@
 <main class="mx-auto max-w-3xl px-6 py-12 text-white">
   <header class="mb-10 border-b border-white/10 pb-6">
     <a href="{{ get_url(path='@/_index.md') | safe }}" class="text-sm text-[#f3e5c0] hover:underline">&larr; Zpět na hlavní stránku</a>
-    <h1 class="mt-2 text-3xl font-black sm:text-4xl">{{ page.title }}</h1>
-    {% if page.extra.updated %}
+    <h1 class="mt-2 text-3xl font-black sm:text-4xl">{{ section.title }}</h1>
+    {% if section.extra.updated %}
     <p class="mt-1 text-sm text-white/50">
-      Naposledy aktualizováno: {{ page.extra.updated }}
+      Naposledy aktualizováno: {{ section.extra.updated }}
     </p>
     {% endif %}
   </header>
 
-  {% if page.extra.stats %}
+  {% if section.extra.stats %}
   <section class="mb-12 grid grid-cols-2 gap-4 sm:grid-cols-4">
-    {% for stat in page.extra.stats %}
+    {% for stat in section.extra.stats %}
     <div class="rounded-lg border border-white/10 p-4 text-center">
       <p class="text-2xl font-bold">{{ stat.value }}</p>
       <p class="mt-1 text-xs text-white/50">{{ stat.label }}</p>
@@ -35,11 +35,11 @@
     </div>
   </section>
 
-  {% if page.extra.cases %}
+  {% if section.extra.cases %}
   <section aria-labelledby="cases-heading" class="mb-12">
     <h2 id="cases-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/40">Kauzy v přehledu</h2>
     <div class="grid gap-4 sm:grid-cols-3">
-      {% for c in page.extra.cases %}
+      {% for c in section.extra.cases %}
       <a href="#{{ c.anchor }}" class="group flex flex-col rounded-xl border border-white/10 bg-white/[0.03] p-4 no-underline transition-colors hover:border-white/20 hover:bg-white/[0.06]">
         <span class="status-badge {{ c.status }} w-fit">{{ c.label }}</span>
         <span class="font-semibold text-white group-hover:text-[#f3e5c0]">{{ c.title }}</span>
@@ -51,11 +51,11 @@
   </section>
   {% endif %}
 
-  {% if page.extra.timeline %}
+  {% if section.extra.timeline %}
   <section aria-labelledby="timeline-heading" class="mb-12">
     <h2 id="timeline-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/40">Časová osa</h2>
     <ol class="timeline">
-      {% for e in page.extra.timeline %}
+      {% for e in section.extra.timeline %}
       <li>
         <span class="timeline-dot {{ e.dot }}"></span>
         <p class="text-xs text-white/40">{{ e.date }}</p>
@@ -67,7 +67,7 @@
   {% endif %}
 
   <article class="dossier-prose">
-    {{ page.content | safe }}
+    {{ section.content | safe }}
   </article>
 
   <footer class="mt-12 border-t border-white/10 pt-6 text-xs text-white/40">
