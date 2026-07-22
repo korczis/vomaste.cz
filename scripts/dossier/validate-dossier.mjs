@@ -26,19 +26,57 @@ function warn(msg) {
 // --- Load the main dossier and extract the claims registry table ---
 const dossierText = readFileSync(DOSSIER_MD, "utf8");
 
-// Every "| CLM-XX | ... |" row in the Registr tvrzení table.
-const clmRowRe = /^\|\s*(CLM-\d+)\s*\|(.+)\|$/gm;
+// Every "| CLM-XX | ... |" row in the Registr tvrzení table. The ID cell may
+// carry a leading `<a id="clm-XX"></a>` anchor before the visible "CLM-XX"
+// text — tolerate it, but require it to match the row's own id if present.
+const clmRowRe = /^\|\s*(?:<a id="clm-(\d+)"><\/a>)?(CLM-\d+)\s*\|(.+)\|$/gm;
 const clmIds = new Map(); // id -> referenced SRC ids
+const clmAnchors = new Set(); // ids that have a real <a id="clm-XX"> anchor
 let m;
 while ((m = clmRowRe.exec(dossierText))) {
-  const id = m[1];
-  const row = m[2];
+  const anchorNum = m[1];
+  const id = m[2];
+  const row = m[3];
   if (!/^CLM-\d{2,}$/.test(id)) err(`Malformed CLM id: "${id}"`);
   if (clmIds.has(id)) err(`Duplicate CLM id in registry table: ${id}`);
+  if (anchorNum) {
+    if (`CLM-${anchorNum}` !== id) err(`${id} row has mismatched anchor id="clm-${anchorNum}"`);
+    clmAnchors.add(id);
+  } else {
+    err(`${id}: table row has no <a id="clm-##"></a> anchor — it isn't directly linkable`);
+  }
   const srcRefs = [...row.matchAll(/SRC-\d+/g)].map((x) => x[0]);
   clmIds.set(id, srcRefs);
 }
 if (clmIds.size === 0) err("No CLM-## rows found in content/dossier/_index.md — table format may have changed.");
+
+// Every "| GAP-XX | ... |" row must have a matching <a id="gap-XX"> anchor,
+// and any bare "CLM-##" mention inside the row text must be a real link.
+const gapRowRe = /^\|\s*(?:<a id="gap-(\d+)"><\/a>)?(GAP-\d+)\s*\|(.+)\|$/gm;
+const gapIds = new Set();
+while ((m = gapRowRe.exec(dossierText))) {
+  const anchorNum = m[1];
+  const id = m[2];
+  const row = m[3];
+  if (!/^GAP-\d{2,}$/.test(id)) err(`Malformed GAP id: "${id}"`);
+  if (gapIds.has(id)) err(`Duplicate GAP id in registry table: ${id}`);
+  gapIds.add(id);
+  if (anchorNum) {
+    if (`GAP-${anchorNum}` !== id) err(`${id} row has mismatched anchor id="gap-${anchorNum}"`);
+  } else {
+    err(`${id}: table row has no <a id="gap-##"></a> anchor — it isn't directly linkable`);
+  }
+  // A bare "CLM-07" (not already inside <a href="#clm-07">CLM-07</a>) left
+  // un-linked inside a GAP row. Zola's own link checker doesn't recognize
+  // arbitrary id="..." attributes as anchor targets, so these are plain
+  // HTML <a href="#..."> rather than markdown [text](#...) links — see
+  // verify-anchors.mjs for the corresponding built-HTML check.
+  const linkedNums = new Set([...row.matchAll(/<a href="#clm-(\d+)">/g)].map((x) => x[1]));
+  const mentionedNums = [...row.matchAll(/CLM-(\d+)/g)].map((x) => x[1]);
+  for (const n of mentionedNums) {
+    if (!linkedNums.has(n)) err(`${id}: mentions CLM-${n} without a <a href="#clm-${n}"> link`);
+  }
+}
 
 // Every SRC-## the dossier body links to (as internal @/... markdown links).
 // Link text may be "SRC-XX" or an outlet name ("[Deník N](@/dossier/zdroje/src-14.md)")

@@ -33,7 +33,7 @@ label = "Uzavřeno bez trestu"
 summary = "Fotografie připomínající nacistický pozdrav a sbírka svícnů s hákovými kříži. Turek: „špatný humor.“"
 
 [[extra.cases]]
-anchor = "trestni-oznameni-domaci-nasili-a-znasilneni"
+anchor = "trestni-oznameni-obvineni-z-domaciho-nasili-a-znasilneni"
 period = "2025–2026"
 title = "Trestní oznámení (domácí násilí, znásilnění)"
 status = "status-disputed"
@@ -89,7 +89,7 @@ dot = "dot-fact"
 [[extra.timeline]]
 date = "červen 2025"
 title = "Bývalá partnerka podává trestní oznámení (domácí násilí, znásilnění)"
-anchor = "trestni-oznameni-domaci-nasili-a-znasilneni"
+anchor = "trestni-oznameni-obvineni-z-domaciho-nasili-a-znasilneni"
 dot = "dot-disputed"
 
 [[extra.timeline]]
@@ -113,7 +113,7 @@ dot = "dot-ongoing"
 [[extra.timeline]]
 date = "květen 2026"
 title = "Státní zastupitelství odkládá trestní oznámení pro promlčení, žena se odvolává"
-anchor = "trestni-oznameni-domaci-nasili-a-znasilneni"
+anchor = "trestni-oznameni-obvineni-z-domaciho-nasili-a-znasilneni"
 dot = "dot-disputed"
 +++
 
@@ -137,43 +137,43 @@ Každé tvrzení má stav ověřenosti a odkaz na zdroj v [registru zdrojů](#re
 
 | ID | Tvrzení | Stav | Zdroj |
 |---|---|---|---|
-| CLM-01 | Turek zvolen europoslancem v červnu 2024 za společnou kandidátku Motoristů a Přísahy | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-11](@/dossier/zdroje/src-11.md), [SRC-12](@/dossier/zdroje/src-12.md), [SRC-13](@/dossier/zdroje/src-13.md) |
-| CLM-02 | Turek v říjnu 2025 zvolen poslancem, nejvyšší počet preferenčních hlasů Motoristů ve Středočeském kraji | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-11](@/dossier/zdroje/src-11.md), [SRC-13](@/dossier/zdroje/src-13.md) |
-| CLM-03 | Macinka předsedou Motoristů sobě od 2022; zvolen poslancem 2025 za Jihomoravský kraj; Motoristé sobě 13 mandátů, vstup do vlády s ANO a SPD | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-11](@/dossier/zdroje/src-11.md), [SRC-13](@/dossier/zdroje/src-13.md) |
-| CLM-04 | V roce 2024 čelil Turek kritice kvůli fotografii se zdviženou pravicí (2013) a sbírce svícnů s hákovými kříži | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-12](@/dossier/zdroje/src-12.md), [SRC-14](@/dossier/zdroje/src-14.md) |
-| CLM-05 | Turek fotografii/sbírku označil za „špatný humor" / sběratelský zájem | <span class="status-badge status-quote">CITACE</span> | [SRC-12](@/dossier/zdroje/src-12.md), [SRC-14](@/dossier/zdroje/src-14.md) |
-| CLM-06 | Macinka kauzu 2024 veřejně hájil, označil ji za „pseudoproblém" | <span class="status-badge status-quote">CITACE</span> | [SRC-12](@/dossier/zdroje/src-12.md), [SRC-14](@/dossier/zdroje/src-14.md) |
-| CLM-07 | Deník N v říjnu 2025 zveřejnil údajné smazané příspěvky připisované Turkovi s rasistickým/homofobním obsahem | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-15](@/dossier/zdroje/src-15.md) |
-| CLM-08 | Turek odmítl autorství nejzávažnějších z těchto příspěvků | <span class="status-badge status-quote">CITACE</span> | [SRC-16](@/dossier/zdroje/src-16.md) |
-| CLM-09 | Pravost/autorství screenshotů z CLM-07 nebyla nezávisle prokázána ani vyvrácena | <span class="status-badge status-disputed">SPORNÉ</span> | [SRC-15](@/dossier/zdroje/src-15.md), [SRC-16](@/dossier/zdroje/src-16.md), [SRC-22](@/dossier/zdroje/src-22.md) |
-| CLM-10 | Auto Turka se v Praze střetlo s vozidlem záchranné služby (2026); dle záběrů předjížděl frontu v odbočovacím pruhu | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-02](@/dossier/zdroje/src-02.md) |
-| CLM-11 | Turek dočasně opustil funkci zmocněnce pro Green Deal, přislíbil rezignaci při prokázání viny | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-06](@/dossier/zdroje/src-06.md), [SRC-07](@/dossier/zdroje/src-07.md) |
-| CLM-12 | Babiš dle zdrojů řekl Macinkovi, že pokud se záběry potvrdí, měl by Turek rezignovat | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-06](@/dossier/zdroje/src-06.md), [SRC-08](@/dossier/zdroje/src-08.md) |
-| CLM-13 | Macinka veřejně opakovaně prohlásil, že se Turka nevzdá | <span class="status-badge status-quote">CITACE</span> | [SRC-01](@/dossier/zdroje/src-01.md), [SRC-04](@/dossier/zdroje/src-04.md) |
-| CLM-14 | Macinka (dnes ministr zahraničí) nepřiznal v majetkovém přiznání 20% podíl v ukrajinské firmě GMR GAS UA LLC (od 2017); po upozornění Investigace.cz podíl dodatečně přiznal, hrozí mu pokuta až 50 000 Kč | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-17](@/dossier/zdroje/src-17.md), [SRC-18](@/dossier/zdroje/src-18.md) |
-| CLM-15 | Macinkovo vysvětlení: firma „de facto neexistuje" kvůli válce na Ukrajině, plánovaná likvidace se zpozdila | <span class="status-badge status-quote">CITACE</span> | [SRC-17](@/dossier/zdroje/src-17.md), [SRC-18](@/dossier/zdroje/src-18.md) |
-| CLM-16 | Policie potvrdila, že dopravní značení na místě nehody odpovídalo projektové dokumentaci — v rozporu s Turkovým tvrzením o odbočovacím pruhu | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-19](@/dossier/zdroje/src-19.md) |
-| CLM-17 | Turkova verze nehody: jel na zelenou křižovatkou Ječná/Sokolská, sanitka vjela na červenou s majáky | <span class="status-badge status-quote">CITACE</span> | [SRC-20](@/dossier/zdroje/src-20.md) |
-| CLM-18 | Turek se vzdal poslanecké imunity pro případ trestního stíhání; dechová zkouška negativní; řidič sanitky utrpěl středně těžké poranění hlavy a zranění lokte | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-20](@/dossier/zdroje/src-20.md) |
-| CLM-19 | Motoristé sobě v říjnu 2025 podali trestní oznámení na Deník N a autory článku o Turkových příspěvcích pro pomluvu a křivé obvinění | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-21](@/dossier/zdroje/src-21.md) |
-| CLM-20 | Turek je/byl 2016–2023 statutárním orgánem nebo společníkem v pěti firmách/spolcích (Art of Performance, Aston Martin klub ČR, Transgas, Jaguar klub ČR, Zapper-Club) | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-23](@/dossier/zdroje/src-23.md) |
-| CLM-21 | Turek osobně daroval Motoristům sobě celkem 210 000 Kč (10 000 Kč v 2019, 200 000 Kč v 2025) | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-25](@/dossier/zdroje/src-25.md) |
-| CLM-22 | Macinka je/byl statutárním orgánem nebo společníkem v sedmi firmách/spolcích (DRILL COMPANY, Kauppias, Centrum pro výzkum terorismu, Motoristé Praha, PG Contract, Klub motoristů, MEAS Consulting); u DRILL COMPANY a Motoristé Praha skončil počátkem ledna 2026 | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-24](@/dossier/zdroje/src-24.md) |
-| CLM-23 | Macinka osobně daroval 510 000 Kč (ODS 2017, Motoristé sobě 2× 2022) a přes Klub motoristů z.s., kde je statutárním orgánem, přišlo Motoristům sobě v roce 2024 dalších 800 000 Kč — celkem 1 310 000 Kč | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-26](@/dossier/zdroje/src-26.md) |
-| CLM-24 | Macinka byl od 2025 zároveň ministrem zahraničí, místopředsedou vlády a 2025–2026 dočasně pověřen i řízením Ministerstva životního prostředí | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-27](@/dossier/zdroje/src-27.md) |
-| CLM-25 | Bývalá partnerka v červnu 2025 podala trestní oznámení, ve kterém Turka viní z několikaletého domácího násilí, vyhrožování střelnou zbraní a jednoho případu znásilnění, k nimž mělo dojít podle jejího popisu před 15–20 lety | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-28](@/dossier/zdroje/src-28.md), [SRC-29](@/dossier/zdroje/src-29.md), [SRC-30](@/dossier/zdroje/src-30.md) |
-| CLM-26 | Turek trestní jednání a násilí kategoricky odmítl, označil oznámení za „mediální lynč" s politickým motivem; nevěru v tomto kontextu připustil | <span class="status-badge status-quote">CITACE</span> | [SRC-29](@/dossier/zdroje/src-29.md), [SRC-30](@/dossier/zdroje/src-30.md) |
-| CLM-27 | V květnu 2026 státní zastupitelství trestní oznámení odložilo z důvodu promlčení; rozhodnutí není pravomocné, žena se odvolala. Jde o procesní důsledek uplynutí promlčecí doby, ne o rozhodnutí o vině nebo nevině | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-31](@/dossier/zdroje/src-31.md) |
-| CLM-28 | V roce 2017 Turek nechal na autě zaměstnance saúdskoarabské ambasády kresbu oprátky a loveckou nábojnici; policie věc uzavřela jako pravděpodobnou záměnu osob a vyřešila jako přestupek | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-32](@/dossier/zdroje/src-32.md) |
-| CLM-29 | Turkovo vysvětlení: bránil tehdejší přítelkyni, odmítl rasový motiv i vědomí, že jde o zaměstnance ambasády | <span class="status-badge status-quote">CITACE</span> | [SRC-32](@/dossier/zdroje/src-32.md) |
-| CLM-30 | V roce 2026 dostal Turek pokuty v součtu 200 000 Kč za dvě nepovolené stavby na pozemku v Praze-Dubči (80 000 Kč nedbalost, 120 000 Kč úmysl); obě dodatečně zlegalizoval | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-33](@/dossier/zdroje/src-33.md) |
-| CLM-31 | Turkova firma Zapper-Club s.r.o. nabízela za pandemie „Imunitní balíček ANTI-COVID-19"; přístroj zapper byl předmětem varování Ministerstva zdravotnictví a SZPI mu odebrala certifikát | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-34](@/dossier/zdroje/src-34.md), [SRC-35](@/dossier/zdroje/src-35.md) |
-| CLM-32 | Z 27 dokumentovaných startů Turkovy závodní kariéry (2015–2017, Formula 4 Trophy) měl 12 výher; čtyřikrát jel sám, šestkrát proti jedinému soupeři | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-36](@/dossier/zdroje/src-36.md) |
-| CLM-33 | Turek se (spolu s Kateřinou Konečnou a Václavem Klausem) setkal s íránským velvyslancem; všichni tři schůzku potvrdili, ale bagatelizovali jako „zdvořilostní návštěvu" | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-36](@/dossier/zdroje/src-36.md), [SRC-37](@/dossier/zdroje/src-37.md) |
-| CLM-34 | Turek si v dubnu 2026 koupil byt na Strahově za 18 mil. Kč na hypotéku — jediná další nemovitost vedle pozemku v Praze-Dubči | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-38](@/dossier/zdroje/src-38.md) |
-| CLM-35 | Motoristé sobě zveřejnili povinné přehledy dárců kampaně PS 2025 (UDHPSH); mezi velké dárce patřili Boris Šťastný (~5 mil. Kč přes Medical Investments) a František Fabičovic (1 mil. Kč) | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-39](@/dossier/zdroje/src-39.md), [SRC-40](@/dossier/zdroje/src-40.md) |
-| CLM-36 | Podnikatel Richard Chlad (dřívější osobní vazba na Radovana Krejčíře) oficiálně daroval Motoristům sobě v roce 2025 evidovaných 638 864 Kč, zatímco sám veřejně uváděl podporu v hodnotě „necelých dvou milionů" Kč | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-41](@/dossier/zdroje/src-41.md), [SRC-42](@/dossier/zdroje/src-42.md) |
-| CLM-37 | Turek a Macinka Chladovu roli veřejně zlehčovali; Macinka uváděl vlastní nižší částky (2× 50 000 Kč před eurovolbami) než sám Chlad | <span class="status-badge status-quote">CITACE</span> | [SRC-43](@/dossier/zdroje/src-43.md) |
+| <a id="clm-01"></a>CLM-01 | Turek zvolen europoslancem v červnu 2024 za společnou kandidátku Motoristů a Přísahy | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-11](@/dossier/zdroje/src-11.md), [SRC-12](@/dossier/zdroje/src-12.md), [SRC-13](@/dossier/zdroje/src-13.md) |
+| <a id="clm-02"></a>CLM-02 | Turek v říjnu 2025 zvolen poslancem, nejvyšší počet preferenčních hlasů Motoristů ve Středočeském kraji | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-11](@/dossier/zdroje/src-11.md), [SRC-13](@/dossier/zdroje/src-13.md) |
+| <a id="clm-03"></a>CLM-03 | Macinka předsedou Motoristů sobě od 2022; zvolen poslancem 2025 za Jihomoravský kraj; Motoristé sobě 13 mandátů, vstup do vlády s ANO a SPD | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-11](@/dossier/zdroje/src-11.md), [SRC-13](@/dossier/zdroje/src-13.md) |
+| <a id="clm-04"></a>CLM-04 | V roce 2024 čelil Turek kritice kvůli fotografii se zdviženou pravicí (2013) a sbírce svícnů s hákovými kříži | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-12](@/dossier/zdroje/src-12.md), [SRC-14](@/dossier/zdroje/src-14.md) |
+| <a id="clm-05"></a>CLM-05 | Turek fotografii/sbírku označil za „špatný humor" / sběratelský zájem | <span class="status-badge status-quote">CITACE</span> | [SRC-12](@/dossier/zdroje/src-12.md), [SRC-14](@/dossier/zdroje/src-14.md) |
+| <a id="clm-06"></a>CLM-06 | Macinka kauzu 2024 veřejně hájil, označil ji za „pseudoproblém" | <span class="status-badge status-quote">CITACE</span> | [SRC-12](@/dossier/zdroje/src-12.md), [SRC-14](@/dossier/zdroje/src-14.md) |
+| <a id="clm-07"></a>CLM-07 | Deník N v říjnu 2025 zveřejnil údajné smazané příspěvky připisované Turkovi s rasistickým/homofobním obsahem | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-15](@/dossier/zdroje/src-15.md) |
+| <a id="clm-08"></a>CLM-08 | Turek odmítl autorství nejzávažnějších z těchto příspěvků | <span class="status-badge status-quote">CITACE</span> | [SRC-16](@/dossier/zdroje/src-16.md) |
+| <a id="clm-09"></a>CLM-09 | Pravost/autorství screenshotů z CLM-07 nebyla nezávisle prokázána ani vyvrácena | <span class="status-badge status-disputed">SPORNÉ</span> | [SRC-15](@/dossier/zdroje/src-15.md), [SRC-16](@/dossier/zdroje/src-16.md), [SRC-22](@/dossier/zdroje/src-22.md) |
+| <a id="clm-10"></a>CLM-10 | Auto Turka se v Praze střetlo s vozidlem záchranné služby (2026); dle záběrů předjížděl frontu v odbočovacím pruhu | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-02](@/dossier/zdroje/src-02.md) |
+| <a id="clm-11"></a>CLM-11 | Turek dočasně opustil funkci zmocněnce pro Green Deal, přislíbil rezignaci při prokázání viny | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-06](@/dossier/zdroje/src-06.md), [SRC-07](@/dossier/zdroje/src-07.md) |
+| <a id="clm-12"></a>CLM-12 | Babiš dle zdrojů řekl Macinkovi, že pokud se záběry potvrdí, měl by Turek rezignovat | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-06](@/dossier/zdroje/src-06.md), [SRC-08](@/dossier/zdroje/src-08.md) |
+| <a id="clm-13"></a>CLM-13 | Macinka veřejně opakovaně prohlásil, že se Turka nevzdá | <span class="status-badge status-quote">CITACE</span> | [SRC-01](@/dossier/zdroje/src-01.md), [SRC-04](@/dossier/zdroje/src-04.md) |
+| <a id="clm-14"></a>CLM-14 | Macinka (dnes ministr zahraničí) nepřiznal v majetkovém přiznání 20% podíl v ukrajinské firmě GMR GAS UA LLC (od 2017); po upozornění Investigace.cz podíl dodatečně přiznal, hrozí mu pokuta až 50 000 Kč | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-17](@/dossier/zdroje/src-17.md), [SRC-18](@/dossier/zdroje/src-18.md) |
+| <a id="clm-15"></a>CLM-15 | Macinkovo vysvětlení: firma „de facto neexistuje" kvůli válce na Ukrajině, plánovaná likvidace se zpozdila | <span class="status-badge status-quote">CITACE</span> | [SRC-17](@/dossier/zdroje/src-17.md), [SRC-18](@/dossier/zdroje/src-18.md) |
+| <a id="clm-16"></a>CLM-16 | Policie potvrdila, že dopravní značení na místě nehody odpovídalo projektové dokumentaci — v rozporu s Turkovým tvrzením o odbočovacím pruhu | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-19](@/dossier/zdroje/src-19.md) |
+| <a id="clm-17"></a>CLM-17 | Turkova verze nehody: jel na zelenou křižovatkou Ječná/Sokolská, sanitka vjela na červenou s majáky | <span class="status-badge status-quote">CITACE</span> | [SRC-20](@/dossier/zdroje/src-20.md) |
+| <a id="clm-18"></a>CLM-18 | Turek se vzdal poslanecké imunity pro případ trestního stíhání; dechová zkouška negativní; řidič sanitky utrpěl středně těžké poranění hlavy a zranění lokte | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-20](@/dossier/zdroje/src-20.md) |
+| <a id="clm-19"></a>CLM-19 | Motoristé sobě v říjnu 2025 podali trestní oznámení na Deník N a autory článku o Turkových příspěvcích pro pomluvu a křivé obvinění | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-21](@/dossier/zdroje/src-21.md) |
+| <a id="clm-20"></a>CLM-20 | Turek je/byl 2016–2023 statutárním orgánem nebo společníkem v pěti firmách/spolcích (Art of Performance, Aston Martin klub ČR, Transgas, Jaguar klub ČR, Zapper-Club) | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-23](@/dossier/zdroje/src-23.md) |
+| <a id="clm-21"></a>CLM-21 | Turek osobně daroval Motoristům sobě celkem 210 000 Kč (10 000 Kč v 2019, 200 000 Kč v 2025) | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-25](@/dossier/zdroje/src-25.md) |
+| <a id="clm-22"></a>CLM-22 | Macinka je/byl statutárním orgánem nebo společníkem v sedmi firmách/spolcích (DRILL COMPANY, Kauppias, Centrum pro výzkum terorismu, Motoristé Praha, PG Contract, Klub motoristů, MEAS Consulting); u DRILL COMPANY a Motoristé Praha skončil počátkem ledna 2026 | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-24](@/dossier/zdroje/src-24.md) |
+| <a id="clm-23"></a>CLM-23 | Macinka osobně daroval 510 000 Kč (ODS 2017, Motoristé sobě 2× 2022) a přes Klub motoristů z.s., kde je statutárním orgánem, přišlo Motoristům sobě v roce 2024 dalších 800 000 Kč — celkem 1 310 000 Kč | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-26](@/dossier/zdroje/src-26.md) |
+| <a id="clm-24"></a>CLM-24 | Macinka byl od 2025 zároveň ministrem zahraničí, místopředsedou vlády a 2025–2026 dočasně pověřen i řízením Ministerstva životního prostředí | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-27](@/dossier/zdroje/src-27.md) |
+| <a id="clm-25"></a>CLM-25 | Bývalá partnerka v červnu 2025 podala trestní oznámení, ve kterém Turka viní z několikaletého domácího násilí, vyhrožování střelnou zbraní a jednoho případu znásilnění, k nimž mělo dojít podle jejího popisu před 15–20 lety | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-28](@/dossier/zdroje/src-28.md), [SRC-29](@/dossier/zdroje/src-29.md), [SRC-30](@/dossier/zdroje/src-30.md) |
+| <a id="clm-26"></a>CLM-26 | Turek trestní jednání a násilí kategoricky odmítl, označil oznámení za „mediální lynč" s politickým motivem; nevěru v tomto kontextu připustil | <span class="status-badge status-quote">CITACE</span> | [SRC-29](@/dossier/zdroje/src-29.md), [SRC-30](@/dossier/zdroje/src-30.md) |
+| <a id="clm-27"></a>CLM-27 | V květnu 2026 státní zastupitelství trestní oznámení odložilo z důvodu promlčení; rozhodnutí není pravomocné, žena se odvolala. Jde o procesní důsledek uplynutí promlčecí doby, ne o rozhodnutí o vině nebo nevině | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-31](@/dossier/zdroje/src-31.md) |
+| <a id="clm-28"></a>CLM-28 | V roce 2017 Turek nechal na autě zaměstnance saúdskoarabské ambasády kresbu oprátky a loveckou nábojnici; policie věc uzavřela jako pravděpodobnou záměnu osob a vyřešila jako přestupek | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-32](@/dossier/zdroje/src-32.md) |
+| <a id="clm-29"></a>CLM-29 | Turkovo vysvětlení: bránil tehdejší přítelkyni, odmítl rasový motiv i vědomí, že jde o zaměstnance ambasády | <span class="status-badge status-quote">CITACE</span> | [SRC-32](@/dossier/zdroje/src-32.md) |
+| <a id="clm-30"></a>CLM-30 | V roce 2026 dostal Turek pokuty v součtu 200 000 Kč za dvě nepovolené stavby na pozemku v Praze-Dubči (80 000 Kč nedbalost, 120 000 Kč úmysl); obě dodatečně zlegalizoval | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-33](@/dossier/zdroje/src-33.md) |
+| <a id="clm-31"></a>CLM-31 | Turkova firma Zapper-Club s.r.o. nabízela za pandemie „Imunitní balíček ANTI-COVID-19"; přístroj zapper byl předmětem varování Ministerstva zdravotnictví a SZPI mu odebrala certifikát | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-34](@/dossier/zdroje/src-34.md), [SRC-35](@/dossier/zdroje/src-35.md) |
+| <a id="clm-32"></a>CLM-32 | Z 27 dokumentovaných startů Turkovy závodní kariéry (2015–2017, Formula 4 Trophy) měl 12 výher; čtyřikrát jel sám, šestkrát proti jedinému soupeři | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-36](@/dossier/zdroje/src-36.md) |
+| <a id="clm-33"></a>CLM-33 | Turek se (spolu s Kateřinou Konečnou a Václavem Klausem) setkal s íránským velvyslancem; všichni tři schůzku potvrdili, ale bagatelizovali jako „zdvořilostní návštěvu" | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-36](@/dossier/zdroje/src-36.md), [SRC-37](@/dossier/zdroje/src-37.md) |
+| <a id="clm-34"></a>CLM-34 | Turek si v dubnu 2026 koupil byt na Strahově za 18 mil. Kč na hypotéku — jediná další nemovitost vedle pozemku v Praze-Dubči | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-38](@/dossier/zdroje/src-38.md) |
+| <a id="clm-35"></a>CLM-35 | Motoristé sobě zveřejnili povinné přehledy dárců kampaně PS 2025 (UDHPSH); mezi velké dárce patřili Boris Šťastný (~5 mil. Kč přes Medical Investments) a František Fabičovic (1 mil. Kč) | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-39](@/dossier/zdroje/src-39.md), [SRC-40](@/dossier/zdroje/src-40.md) |
+| <a id="clm-36"></a>CLM-36 | Podnikatel Richard Chlad (dřívější osobní vazba na Radovana Krejčíře) oficiálně daroval Motoristům sobě v roce 2025 evidovaných 638 864 Kč, zatímco sám veřejně uváděl podporu v hodnotě „necelých dvou milionů" Kč | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-41](@/dossier/zdroje/src-41.md), [SRC-42](@/dossier/zdroje/src-42.md) |
+| <a id="clm-37"></a>CLM-37 | Turek a Macinka Chladovu roli veřejně zlehčovali; Macinka uváděl vlastní nižší částky (2× 50 000 Kč před eurovolbami) než sám Chlad | <span class="status-badge status-quote">CITACE</span> | [SRC-43](@/dossier/zdroje/src-43.md) |
 
 ## Graf vztahů
 
@@ -226,7 +226,7 @@ Každé tvrzení má stav ověřenosti a odkaz na zdroj v [registru zdrojů](#re
 
 *(Doplněno na základě veřejných rejstříkových dat — Hlídač státu — a
 investigativní žurnalistiky; jde o novou vrstvu dossieru adresující dříve
-otevřené mezery GAP-04 a GAP-05, viz níže.)*
+otevřené mezery [GAP-04](@/dossier/mezery/gap-04.md) a [GAP-05](@/dossier/mezery/gap-05.md).)*
 
 **Petr Macinka** neuvedl ve svém majetkovém přiznání dvacetiprocentní
 podíl (od roku 2017) v kyjevské firmě GMR GAS UA LLC, byť to zákon
@@ -279,7 +279,7 @@ Macinka jeho roli ve straně veřejně zlehčovali.
 
 Zbývá nedohledáno: majetek/nemovitosti Macinky a úplná rekonciliace
 sporných čísel u Chladova sponzoringu (oficiální evidence vs. jeho
-vlastní vyjádření) — viz aktualizovaný stav GAP-04 a GAP-05.
+vlastní vyjádření) — viz aktualizovaný stav [GAP-04](@/dossier/mezery/gap-04.md) a [GAP-05](@/dossier/mezery/gap-05.md).
 
 ## Kauza z roku 2024: fotografie a sbírka svícnů
 
@@ -373,7 +373,7 @@ světly a sirénou. Jeho dechová zkouška na alkohol byla negativní. Řidič
 sanitky utrpěl středně těžké poranění hlavy a zranění lokte a zůstal v
 pracovní neschopnosti. Tyto dvě protichůdné verze (policejní zjištění o
 značení vs. Turkovo líčení průjezdu na zelenou) dossier vede vedle sebe —
-otázka viny (GAP-01) tím není rozhodnuta, jen doplněna o víc zdokumentovaných
+otázka viny ([GAP-01](@/dossier/mezery/gap-01.md)) tím není rozhodnuta, jen doplněna o víc zdokumentovaných
 detailů. *(Zdroj: Blesk.cz, Česká justice)*
 
 ## Bezprostřední reakce
@@ -443,14 +443,16 @@ a jsou zde uvedeny odděleně a zřetelně jako názor.
 
 ## Mezery a otevřené otázky
 
-| ID | Mezera / otázka | Priorita |
-|---|---|---|
-| GAP-01 | Výsledek policejního vyšetřování dopravní nehody (přestupek vs. trestný čin, otázka viny) | vysoká |
-| GAP-02 | Dopad nehody na Turkovo poslanecké působení a Macinkovu pozici ve vládě | vysoká |
-| GAP-03 | Nezávislé ověření pravosti a autorství příspěvků z CLM-07/CLM-09 (forenzní analýza screenshotů) | vysoká |
-| GAP-04 | Majetkové a podnikatelské zájmy: firemní/spolkové vazby, Macinkova nepřiznaná ukrajinská firma a Turkovy nemovitosti nyní zdokumentovány (CLM-14/15/20/22/34); Macinkovy nemovitosti zůstávají nedohledány (katastr nemovitostí neumožňuje vyhledávání podle jména) | nízká |
-| GAP-05 | Financování kampaně: osobní/firemní dary 2017–2024 a oficiální přehledy dárců kampaně PS 2025 nyní zdokumentovány (CLM-21/23/35/36/37), včetně rozporu u sponzora Chlada; přesná rekonciliace jeho vlastních tvrzených částek s oficiální evidencí zůstává neuzavřená | nízká |
-| GAP-06 | Výsledek stížnosti proti odložení trestního oznámení pro znásilnění a domácí násilí (CLM-27) — rozhoduje státní zástupkyně, výsledek nebyl v době psaní znám | vysoká |
+Šest otázek zůstává k datu poslední kontroly otevřených — čtyři s vysokou
+prioritou (výsledek vyšetřování nehody, jeho dopad na mandát/vládu,
+ověření pravosti smazaných příspěvků, výsledek stížnosti proti odložení
+trestního oznámení) a dvě s nízkou prioritou (Macinkovy nemovitosti,
+rekonciliace sponzorských částek). Každá má vlastní stránku s tím, co
+přesně chybí, proč, a kdy a jak byla naposledy ověřena.
+
+> **[Otevřít registr mezer →](@/dossier/mezery/_index.md)**
+> GAP-01 – GAP-06, priorita, související tvrzení (CLM-##) a datum
+> poslední kontroly u každé položky.
 
 ## Co tento přehled nezkoumal
 

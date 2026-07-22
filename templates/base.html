@@ -33,8 +33,40 @@
   <meta name="twitter:description" content="{{ page_description }}">
 
   <link rel="stylesheet" href="{{ get_url(path='css/main.css', cachebust=true) | safe }}">
+  <script type="module" defer src="{{ get_url(path='js/app.js', cachebust=true) | safe }}"></script>
 </head>
-<body class="bg-black text-white font-sans antialiased">
+<body class="bg-black text-white font-sans antialiased pb-16 md:pb-0">
+<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:rounded focus:bg-[#f3e5c0] focus:px-3 focus:py-2 focus:text-black">Přeskočit na obsah</a>
+
+{%- set is_zdroje = current_path is starting_with("/dossier/zdroje/") -%}
+{%- set is_dossier = current_path is starting_with("/dossier/") and not is_zdroje -%}
+{%- set is_home = current_path == "/" -%}
+
+<header class="hidden border-b border-white/10 md:block">
+  <nav aria-label="Hlavní navigace" class="mx-auto flex max-w-3xl items-center gap-6 px-6 py-3 text-sm">
+    <a href="{{ get_url(path='@/_index.md') | safe }}" class="font-black text-white no-underline">vomaste.cz</a>
+    <a href="{{ get_url(path='@/_index.md') | safe }}" class="no-underline {% if is_home %}text-[#f3e5c0]{% else %}text-white/60 hover:text-white{% endif %}" {% if is_home %}aria-current="page"{% endif %}>Domů</a>
+    <a href="{{ get_url(path='@/dossier/_index.md') | safe }}" class="no-underline {% if is_dossier %}text-[#f3e5c0]{% else %}text-white/60 hover:text-white{% endif %}" {% if is_dossier %}aria-current="page"{% endif %}>Dossier</a>
+    <a href="{{ get_url(path='@/dossier/zdroje/_index.md') | safe }}" class="no-underline {% if is_zdroje %}text-[#f3e5c0]{% else %}text-white/60 hover:text-white{% endif %}" {% if is_zdroje %}aria-current="page"{% endif %}>Zdroje</a>
+  </nav>
+</header>
+
+<main id="main">
 {% block content %}{% endblock content %}
+</main>
+
+<nav aria-label="Hlavní mobilní navigace" class="fixed inset-x-0 bottom-0 z-40 border-t border-white/10 bg-black/95 backdrop-blur md:hidden" style="padding-bottom: env(safe-area-inset-bottom)">
+  <div class="grid grid-cols-3">
+    <a href="{{ get_url(path='@/_index.md') | safe }}" {% if is_home %}aria-current="page"{% endif %} class="flex min-h-[44px] flex-col items-center justify-center gap-0.5 py-2 no-underline {% if is_home %}text-[#f3e5c0]{% else %}text-white/60{% endif %}">
+      <span class="text-xs font-medium">Domů</span>
+    </a>
+    <a href="{{ get_url(path='@/dossier/_index.md') | safe }}" {% if is_dossier %}aria-current="page"{% endif %} class="flex min-h-[44px] flex-col items-center justify-center gap-0.5 py-2 no-underline {% if is_dossier %}text-[#f3e5c0]{% else %}text-white/60{% endif %}">
+      <span class="text-xs font-medium">Dossier</span>
+    </a>
+    <a href="{{ get_url(path='@/dossier/zdroje/_index.md') | safe }}" {% if is_zdroje %}aria-current="page"{% endif %} class="flex min-h-[44px] flex-col items-center justify-center gap-0.5 py-2 no-underline {% if is_zdroje %}text-[#f3e5c0]{% else %}text-white/60{% endif %}">
+      <span class="text-xs font-medium">Zdroje</span>
+    </a>
+  </div>
+</nav>
 </body>
 </html>

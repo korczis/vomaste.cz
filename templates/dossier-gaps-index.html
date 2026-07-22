@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block content %}
+<main class="mx-auto max-w-3xl px-6 py-12 text-white">
+  <header class="mb-8 border-b border-white/10 pb-6">
+    <nav class="text-sm text-white/50">
+      <a href="{{ get_url(path='@/dossier/_index.md') | safe }}" class="text-[#f3e5c0] hover:underline">Dossier</a>
+      <span class="mx-1">/</span>
+      <span>Registr mezer</span>
+    </nav>
+    <h1 class="mt-2 text-2xl font-black sm:text-3xl">{{ section.title }}</h1>
+    <p class="mt-2 text-sm text-white/60">{{ section.description }}</p>
+  </header>
+
+  <article class="dossier-prose mb-10">{{ section.content | safe }}</article>
+
+  {% set_global high_count = 0 %}
+  {% for p in section.pages %}
+    {% if p.extra.priority == "vysoká" %}{% set_global high_count = high_count + 1 %}{% endif %}
+  {% endfor %}
+  <div class="mb-8 grid grid-cols-2 gap-3 sm:grid-cols-3">
+    <div class="rounded-lg border border-white/10 p-3 text-center">
+      <p class="text-xl font-bold">{{ section.pages | length }}</p>
+      <p class="mt-1 text-xs text-white/50">Otevřených mezer</p>
+    </div>
+    <div class="rounded-lg border border-white/10 p-3 text-center">
+      <p class="text-xl font-bold">{{ high_count }}</p>
+      <p class="mt-1 text-xs text-white/50">Vysoká priorita</p>
+    </div>
+    <div class="rounded-lg border border-white/10 p-3 text-center">
+      <p class="text-xl font-bold">{{ section.pages | length - high_count }}</p>
+      <p class="mt-1 text-xs text-white/50">Střední / nízká</p>
+    </div>
+  </div>
+
+  <div class="grid gap-3">
+    {% for p in section.pages %}
+    <a href="{{ p.permalink | safe }}" class="group flex flex-col gap-1 rounded-lg border border-white/10 bg-white/[0.03] p-4 no-underline transition-colors hover:border-white/20 hover:bg-white/[0.06]">
+      <div class="flex flex-wrap items-center gap-2">
+        <span class="font-mono text-xs text-[#f3e5c0]">{{ p.extra.gap_id }}</span>
+        <span class="status-badge {% if p.extra.priority == 'vysoká' %}status-disputed{% else %}status-opinion{% endif %} m-0">Priorita: {{ p.extra.priority }}</span>
+      </div>
+      <span class="font-semibold text-white group-hover:text-[#f3e5c0]">{{ p.title | split(pat=" — ") | last }}</span>
+      <span class="text-sm text-white/70">{{ p.description }}</span>
+      {% if p.extra.checked %}<span class="mt-1 text-xs text-white/40">Naposledy ověřeno: {{ p.extra.checked }}</span>{% endif %}
+    </a>
+    {% endfor %}
+  </div>
+
+  <footer class="mt-12 border-t border-white/10 pt-6 text-xs text-white/40">
+    <p><a href="{{ get_url(path='@/dossier/_index.md') | safe }}" class="underline">&larr; Zpět na celý dossier</a></p>
+  </footer>
+</main>
+{% endblock content %}

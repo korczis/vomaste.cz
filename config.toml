@@ -7,17 +7,14 @@
 base_url = "https://korczis.github.io/vomaste.cz"
 
 title = "vomaste.cz"
-description = "vomaste.cz"
+description = "Neutrální, zdroji podložený přehled veřejně řešených kauz kolem veřejných osob."
 
 compile_sass = false
 build_search_index = false
 generate_robots_txt = true
 generate_feeds = false
 
-# minify_html = true breaks Alpine.js `:attr="..."` bindings — Zola's minifier
-# strips the colon prefix. Disabled for the same reason as sites/promo and
-# unable.cz.
-minify_html = false
+minify_html = true
 hard_link_static = false
 
 taxonomies = []
@@ -28,13 +25,16 @@ taxonomies = []
 skip_prefixes = ["https://www.irozhlas.cz/"]
 
 [extra]
-locale = "en_US"
-lang = "en"
+locale = "cs_CZ"
+lang = "cs"
 
-og_image = "images/og-image.jpg"
+# SVG so it needs no build step / rasterizer; note that Facebook/LinkedIn
+# don't render SVG og:image previews (Twitter/X, Slack, Discord do) — swap
+# for a rendered PNG/JPG at the same dimensions if those platforms matter.
+og_image = "images/og-image.svg"
 og_image_width = 1200
 og_image_height = 630
-og_image_type = "image/jpeg"
+og_image_type = "image/svg+xml"
 
 seo_type = "WebPage"
 og_type = "website"
