@@ -25,28 +25,14 @@
   </section>
   {% endif %}
 
-  <section class="mb-12 rounded-lg border border-white/10 p-4" x-data x-init="
-    const counts = {};
-    document.querySelectorAll('.dossier-prose .status-badge').forEach(el => {
-      const key = [...el.classList].find(c => c.startsWith('status-') && c !== 'status-badge');
-      if (key) counts[key] = (counts[key] || 0) + 1;
-    });
-    const labels = { 'status-corroborated': 'Ověřeno více zdroji', 'status-quote': 'Citace', 'status-disputed': 'Sporné', 'status-opinion': 'Názor', 'status-ongoing': 'Probíhá' };
-    const colors = { 'status-corroborated': '#4ade80', 'status-quote': '#93c5fd', 'status-disputed': '#facc15', 'status-opinion': '#a3a3a3', 'status-ongoing': '#d8b4fe' };
-    const keys = Object.keys(counts);
-    if (keys.length && window.Chart) {
-      new Chart($refs.chart, {
-        type: 'doughnut',
-        data: {
-          labels: keys.map(k => labels[k] || k),
-          datasets: [{ data: keys.map(k => counts[k]), backgroundColor: keys.map(k => colors[k] || '#666') }],
-        },
-        options: { plugins: { legend: { labels: { color: '#fff', font: { size: 11 } } } } },
-      });
-    }
-  ">
-    <h2 class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/40">Rozložení podle ověřenosti</h2>
-    <div class="mx-auto max-w-xs"><canvas x-ref="chart"></canvas></div>
+  <section class="mb-12 rounded-lg border border-white/10 p-4">
+    <div class="mb-3 flex items-center justify-between">
+      <h2 class="text-xs font-semibold uppercase tracking-wide text-white/40">Rozložení podle ověřenosti</h2>
+      <button type="button" class="fs-btn" data-fs-target="chart-status-box" title="Zobrazit na celou obrazovku" aria-label="Zobrazit na celou obrazovku">⛶</button>
+    </div>
+    <div id="chart-status-box" class="fs-box flex items-center justify-center">
+      <div class="mx-auto w-full max-w-xs"><canvas id="chart-status"></canvas></div>
+    </div>
   </section>
 
   {% if page.extra.cases %}
@@ -91,6 +77,31 @@
 
 <script>
 (function () {
+  // --- status doughnut ---
+  var statusChart = null;
+  (function () {
+    var canvas = document.getElementById('chart-status');
+    if (!canvas || !window.Chart) return;
+    var counts = {};
+    document.querySelectorAll('.dossier-prose .status-badge').forEach(function (el) {
+      var key = [...el.classList].find(function (c) { return c.startsWith('status-') && c !== 'status-badge'; });
+      if (key) counts[key] = (counts[key] || 0) + 1;
+    });
+    var labels = { 'status-corroborated': 'Ověřeno více zdroji', 'status-quote': 'Citace', 'status-disputed': 'Sporné', 'status-opinion': 'Názor', 'status-ongoing': 'Probíhá' };
+    var colors = { 'status-corroborated': '#4ade80', 'status-quote': '#93c5fd', 'status-disputed': '#facc15', 'status-opinion': '#a3a3a3', 'status-ongoing': '#d8b4fe' };
+    var keys = Object.keys(counts);
+    if (!keys.length) return;
+    statusChart = new Chart(canvas, {
+      type: 'doughnut',
+      data: {
+        labels: keys.map(function (k) { return labels[k] || k; }),
+        datasets: [{ data: keys.map(function (k) { return counts[k]; }), backgroundColor: keys.map(function (k) { return colors[k] || '#666'; }) }],
+      },
+      options: { maintainAspectRatio: false, plugins: { legend: { labels: { color: '#fff', font: { size: 11 } } } } },
+    });
+  })();
+
+  // --- relationship graph ---
   var el = document.getElementById('cy');
   if (!el || !window.cytoscape) return;
 
@@ -152,6 +163,39 @@
     minZoom: 0.4,
     maxZoom: 2.5,
   });
+
+  // --- fullscreen: recompute layout for whichever chart is inside ---
+  function resizeFor(boxId) {
+    if (boxId === 'cy-box' && cy) {
+      cy.resize();
+      cy.layout({ name: 'cose', animate: false, padding: 30 }).run();
+      cy.fit(undefined, 20);
+    }
+    if (boxId === 'chart-status-box' && statusChart) {
+      statusChart.resize();
+    }
+  }
+
+  document.querySelectorAll('.fs-btn').forEach(function (btn) {
+    var boxId = btn.getAttribute('data-fs-target');
+    var box = document.getElementById(boxId);
+    if (!box) return;
+    btn.addEventListener('click', function () {
+      if (document.fullscreenElement === box) {
+        document.exitFullscreen();
+      } else if (box.requestFullscreen) {
+        box.requestFullscreen();
+      }
+    });
+    document.addEventListener('fullscreenchange', function () {
+      var isFs = document.fullscreenElement === box;
+      box.classList.toggle('fs-active', isFs);
+      btn.textContent = isFs ? '⤢' : '⛶';
+      btn.title = isFs ? 'Ukončit celou obrazovku' : 'Zobrazit na celou obrazovku';
+      // give the browser one frame to apply the fullscreen box size first
+      requestAnimationFrame(function () { setTimeout(function () { resizeFor(boxId); }, 50); });
+    });
+  });
 })();
 </script>
 
@@ -182,5 +226,24 @@
   .dot-fact { background: rgb(74,222,128); }
   .dot-disputed { background: rgb(250,204,21); }
   .dot-ongoing { background: rgb(192,132,252); }
+
+  .fs-btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 1.75rem; height: 1.75rem; border-radius: 0.375rem;
+    background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.15);
+    color: rgba(255,255,255,0.7); font-size: 0.9rem; cursor: pointer; line-height: 1;
+    transition: background-color 0.15s, color 0.15s;
+  }
+  .fs-btn:hover { background: rgba(255,255,255,0.12); color: #fff; }
+  .fs-box { transition: none; }
+  .fs-box.fs-active,
+  #cy-box.fs-active,
+  #chart-status-box.fs-active {
+    background: #000; display: flex; align-items: center; justify-content: center;
+    width: 100vw; height: 100vh; padding: 2rem;
+  }
+  #cy-box.fs-active #cy { width: 100% !important; height: 100% !important; }
+  #chart-status-box.fs-active > div { width: min(90vw, 90vh); max-width: none; }
+  .fs-box:fullscreen { background: #000; }
 </style>
 {% endblock content %}

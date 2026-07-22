@@ -132,8 +132,13 @@ Každé tvrzení má stav ověřenosti a odkaz na zdroj v [registru zdrojů](#re
 ## Graf vztahů
 
 <section id="relationship-graph" class="mb-4">
-  <div id="cy" style="height: 420px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); border-radius: 0.5rem;"></div>
-  <p class="mt-2 text-xs text-white/40">Interaktivní graf: táhnutím přesuneš uzly, kolečkem myši přiblížíš. Barva hrany odpovídá stavu ověřenosti výše.</p>
+  <div class="mb-2 flex justify-end">
+    <button type="button" class="fs-btn" data-fs-target="cy-box" title="Zobrazit na celou obrazovku" aria-label="Zobrazit na celou obrazovku">⛶</button>
+  </div>
+  <div id="cy-box" class="fs-box">
+    <div id="cy" style="height: 420px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); border-radius: 0.5rem;"></div>
+  </div>
+  <p class="mt-2 text-xs text-white/40">Interaktivní graf: táhnutím přesuneš uzly, kolečkem myši přiblížíš, tlačítkem ⛶ na celou obrazovku (přepočítá se rozložení).</p>
 </section>
 
 ## Politická kariéra
