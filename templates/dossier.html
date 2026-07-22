@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 
 {% block content %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/cytoscape@3.30.2/dist/cytoscape.min.js"></script>
 <main class="mx-auto max-w-3xl px-6 py-12 text-white">
   <header class="mb-10 border-b border-white/10 pb-6">
     <a href="{{ get_url(path='@/_index.md') | safe }}" class="text-sm text-[#f3e5c0] hover:underline">&larr; Zpět na hlavní stránku</a>
@@ -22,6 +24,30 @@
     {% endfor %}
   </section>
   {% endif %}
+
+  <section class="mb-12 rounded-lg border border-white/10 p-4" x-data x-init="
+    const counts = {};
+    document.querySelectorAll('.dossier-prose .status-badge').forEach(el => {
+      const key = [...el.classList].find(c => c.startsWith('status-') && c !== 'status-badge');
+      if (key) counts[key] = (counts[key] || 0) + 1;
+    });
+    const labels = { 'status-corroborated': 'Ověřeno více zdroji', 'status-quote': 'Citace', 'status-disputed': 'Sporné', 'status-opinion': 'Názor', 'status-ongoing': 'Probíhá' };
+    const colors = { 'status-corroborated': '#4ade80', 'status-quote': '#93c5fd', 'status-disputed': '#facc15', 'status-opinion': '#a3a3a3', 'status-ongoing': '#d8b4fe' };
+    const keys = Object.keys(counts);
+    if (keys.length && window.Chart) {
+      new Chart($refs.chart, {
+        type: 'doughnut',
+        data: {
+          labels: keys.map(k => labels[k] || k),
+          datasets: [{ data: keys.map(k => counts[k]), backgroundColor: keys.map(k => colors[k] || '#666') }],
+        },
+        options: { plugins: { legend: { labels: { color: '#fff', font: { size: 11 } } } } },
+      });
+    }
+  ">
+    <h2 class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/40">Rozložení podle ověřenosti</h2>
+    <div class="mx-auto max-w-xs"><canvas x-ref="chart"></canvas></div>
+  </section>
 
   {% if page.extra.cases %}
   <section aria-labelledby="cases-heading" class="mb-12">
@@ -62,6 +88,72 @@
     <p>Tvrzení na této stránce vycházejí výhradně z citovaných veřejných zdrojů (viz tabulka Zdroje výše). Opravy: <a href="mailto:corrections@vomaste.cz" class="underline">corrections@vomaste.cz</a>.</p>
   </footer>
 </main>
+
+<script>
+(function () {
+  var el = document.getElementById('cy');
+  if (!el || !window.cytoscape) return;
+
+  var COLOR = { fact: '#4ade80', disputed: '#facc15', ongoing: '#d8b4fe', quote: '#93c5fd' };
+
+  var nodes = [
+    { data: { id: 'macinka', label: 'Petr Macinka' }, classes: 'person' },
+    { data: { id: 'turek', label: 'Filip Turek' }, classes: 'person' },
+    { data: { id: 'motoriste', label: 'Motoristé sobě' }, classes: 'party' },
+    { data: { id: 'vlada', label: 'Vláda (ANO + SPD + Motoristé)' }, classes: 'entity' },
+    { data: { id: 'ep', label: 'Evropský parlament' }, classes: 'entity' },
+    { data: { id: 'greendeal', label: 'Zmocněnec pro Green Deal' }, classes: 'role' },
+    { data: { id: 'babis', label: 'Andrej Babiš (premiér)' }, classes: 'person-other' },
+    { data: { id: 'pavel', label: 'Petr Pavel (prezident)' }, classes: 'person-other' },
+    { data: { id: 'kauza2024', label: 'Kauza 2024: fotografie a svícny' }, classes: 'case' },
+    { data: { id: 'kauza2025', label: 'Kauza 2025: smazané příspěvky' }, classes: 'case' },
+    { data: { id: 'nehoda2026', label: 'Nehoda 2026' }, classes: 'case' },
+  ];
+
+  var edges = [
+    { data: { source: 'macinka', target: 'motoriste', label: 'předseda' }, classes: 'fact' },
+    { data: { source: 'turek', target: 'motoriste', label: 'poslanec za' }, classes: 'fact' },
+    { data: { source: 'motoriste', target: 'vlada', label: 'člen koalice' }, classes: 'fact' },
+    { data: { source: 'babis', target: 'vlada', label: 'premiér' }, classes: 'fact' },
+    { data: { source: 'turek', target: 'ep', label: 'europoslanec 2024–2025' }, classes: 'fact' },
+    { data: { source: 'turek', target: 'greendeal', label: 'zmocněnec (do nehody)' }, classes: 'fact' },
+    { data: { source: 'turek', target: 'kauza2024', label: 'subjekt' }, classes: 'disputed' },
+    { data: { source: 'macinka', target: 'kauza2024', label: 'hájí ("pseudoproblém")' }, classes: 'quote' },
+    { data: { source: 'turek', target: 'kauza2025', label: 'subjekt' }, classes: 'disputed' },
+    { data: { source: 'turek', target: 'nehoda2026', label: 'subjekt' }, classes: 'fact' },
+    { data: { source: 'macinka', target: 'nehoda2026', label: 'hájí ("nikdy se ho nevzdám")' }, classes: 'quote' },
+    { data: { source: 'babis', target: 'nehoda2026', label: 'vyzval k odpovědnosti' }, classes: 'fact' },
+    { data: { source: 'pavel', target: 'nehoda2026', label: 'vyjádřil se' }, classes: 'fact' },
+  ];
+
+  var cy = cytoscape({
+    container: el,
+    elements: { nodes: nodes, edges: edges },
+    style: [
+      { selector: 'node', style: {
+        'background-color': '#f3e5c0', 'color': '#fff', 'label': 'data(label)',
+        'font-size': '10px', 'text-valign': 'bottom', 'text-margin-y': 6,
+        'width': 22, 'height': 22, 'border-width': 2, 'border-color': 'rgba(255,255,255,0.3)',
+      } },
+      { selector: '.person, .person-other', style: { 'background-color': '#f3e5c0', 'shape': 'ellipse' } },
+      { selector: '.party, .entity', style: { 'background-color': '#93c5fd', 'shape': 'round-rectangle' } },
+      { selector: '.role', style: { 'background-color': '#d8b4fe', 'shape': 'diamond' } },
+      { selector: '.case', style: { 'background-color': '#facc15', 'shape': 'round-rectangle' } },
+      { selector: 'edge', style: {
+        'width': 1.5, 'curve-style': 'bezier', 'target-arrow-shape': 'triangle',
+        'label': 'data(label)', 'font-size': '8px', 'color': 'rgba(255,255,255,0.6)',
+        'text-background-color': '#000', 'text-background-opacity': 0.7, 'text-background-padding': '2px',
+      } },
+      { selector: 'edge.fact', style: { 'line-color': COLOR.fact, 'target-arrow-color': COLOR.fact } },
+      { selector: 'edge.disputed', style: { 'line-color': COLOR.disputed, 'target-arrow-color': COLOR.disputed } },
+      { selector: 'edge.quote', style: { 'line-color': COLOR.quote, 'target-arrow-color': COLOR.quote } },
+    ],
+    layout: { name: 'cose', animate: false, padding: 30 },
+    minZoom: 0.4,
+    maxZoom: 2.5,
+  });
+})();
+</script>
 
 <style>
   .dossier-prose h2 { font-size: 1.25rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1rem; }
