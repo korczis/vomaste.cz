@@ -1,18 +1,24 @@
 # TODO
 
-- [ ] Prohloubit dossier Macinka/Turek (další kolo)
-  - [ ] Detailní text: rozšířit popis u dopravní nehody (GAP-01, GAP-02)
-        a kauzy 2025 (GAP-03) na základě nově dostupných zdrojů
-  - [ ] Detailní rozbor: doplnit interpretační odstavce k otevřeným
-        otázkám — co je fakticky uzavřené vs. co zůstává sporné
-  - [ ] Rozbor zdrojů: ověřit/doplnit nové SRC-## záznamy, zkontrolovat
-        nezávislost redakcí (zdrojové rodiny jako u SRC-14/15)
-  - [ ] OSINT dohledání (GAP-04, GAP-05) přes ~/dev/prismatic-platform:
-        ARES a Justice.cz/ISIR (obchodní/insolvenční rejstřík — majetkové
-        a podnikatelské zájmy), ČÚZK (katastr nemovitostí), případně
-        financování kampaně
-  - [ ] Update grafů: promítnout nová tvrzení/zdroje do grafu vztahů
-        (`#relationship-graph` v content/dossier/_index.md) a statusového
-        chartu
-  - [ ] Reference: přepočítat čísla v `[[extra.stats]]` (počet zdrojů,
-        tvrzení, mezer) a doplnit `retrieved` data u nových SRC-## stránek
+- [x] Prohloubit dossier Macinka/Turek (kolo 1, 2026-07-22)
+  - [x] Detailní text: rozšířeny sekce o dopravní nehodě (GAP-01) a kauze
+        2025 (GAP-03) — policejní vyjádření ke značení, Turkova verze,
+        vzdání se imunity, trestní oznámení na Deník N
+  - [x] Detailní rozbor: doplněny interpretační odstavce (protichůdné
+        verze nehody vedeny vedle sebe, ne jako rozhodnutá otázka viny)
+  - [x] Rozbor zdrojů: přidáno SRC-17 až SRC-27 (11 nových), poznámky k
+        nezávislosti/zdrojovým rodinám doplněny v zdroje/_index.md
+  - [x] OSINT dohledání (GAP-04, GAP-05): místo přímého volání
+        ~/dev/prismatic-platform (těžká Elixir platforma, vyžaduje
+        vlastní infra) použity stejné kategorie veřejných registrů přes
+        web — Hlídač státu (obchodní rejstřík, sponzoring stran) —
+        odhaleno: Macinkova nepřiznaná ukrajinská firma GMR GAS UA LLC,
+        firemní/spolkové vazby obou aktérů, 1 310 000 Kč darů Macinky a
+        210 000 Kč darů Turka směrem k Motoristům sobě
+  - [x] Update grafů: přidány uzly GMR GAS UA LLC a Klub motoristů, z.s.
+        + hrany do templates/dossier.html
+  - [x] Reference: stats přepočítány (27 zdrojů, 24 tvrzení), `updated`/
+        `reviewed_at` na 2026-07-22, `zola build`/`zola check` bez chyb
+  - [ ] Zbývá nedohledáno (viz GAP-04/GAP-05 v dossieru): katastr
+        nemovitostí (ČÚZK) a úplné financování volební kampaně 2025
+        nad rámec darů 2017–2024 — další kolo

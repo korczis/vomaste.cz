@@ -1,6 +1,6 @@
 +++
 title = "Registr zdrojů"
-description = "Všech 16 veřejných zdrojů citovaných v dossieru o Petru Macinkovi a Filipu Turkovi, každý s vlastní detailní stránkou."
+description = "Všech 27 veřejných zdrojů citovaných v dossieru o Petru Macinkovi a Filipu Turkovi, každý s vlastní detailní stránkou."
 template = "dossier-sources-index.html"
 sort_by = "weight"
 
@@ -18,4 +18,11 @@ tvrzení (CLM-##) podporuje — viz [registr tvrzení](@/dossier/_index.md#regis
 vyjádření), ale jde o dvě samostatné redakce (ČT24, iRozhlas) — počítány
 jako nezávislé potvrzení. [SRC-14](@/dossier/zdroje/src-14.md) a
 [SRC-15](@/dossier/zdroje/src-15.md) jsou od stejného vydavatele (Deník N)
-— jde o jednu zdrojovou rodinu, ne o dvě nezávislá potvrzení.
+— jde o jednu zdrojovou rodinu, ne o dvě nezávislá potvrzení. [SRC-17](@/dossier/zdroje/src-17.md)
+a [SRC-18](@/dossier/zdroje/src-18.md) jsou od dvou různých vydavatelů
+(Investigace.cz, Seznam.cz) a počítají se jako nezávislé potvrzení.
+[SRC-23](@/dossier/zdroje/src-23.md) až [SRC-27](@/dossier/zdroje/src-27.md)
+pocházejí ze stejného zdroje dat (Hlídač státu — strojově agregovaná
+rejstříková data, ne redakčně ověřená žurnalistika) — v registru jsou
+vedeny jako jedna zdrojová rodina/jeden typ dat, ne jako pět nezávislých
+redakčních potvrzení.

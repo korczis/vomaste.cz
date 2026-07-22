@@ -119,6 +119,8 @@
     { data: { id: 'kauza2024', label: 'Kauza 2024: fotografie a svícny' }, classes: 'case' },
     { data: { id: 'kauza2025', label: 'Kauza 2025: smazané příspěvky' }, classes: 'case' },
     { data: { id: 'nehoda2026', label: 'Nehoda 2026' }, classes: 'case' },
+    { data: { id: 'gmrgas', label: 'GMR GAS UA LLC (Kyjev)' }, classes: 'entity' },
+    { data: { id: 'klubmotoristu', label: 'Klub motoristů, z.s.' }, classes: 'entity' },
   ];
 
   var edges = [
@@ -135,6 +137,9 @@
     { data: { source: 'macinka', target: 'nehoda2026', label: 'hájí ("nikdy se ho nevzdám")' }, classes: 'quote' },
     { data: { source: 'babis', target: 'nehoda2026', label: 'vyzval k odpovědnosti' }, classes: 'fact' },
     { data: { source: 'pavel', target: 'nehoda2026', label: 'vyjádřil se' }, classes: 'fact' },
+    { data: { source: 'macinka', target: 'gmrgas', label: 'nepřiznaný 20% podíl' }, classes: 'disputed' },
+    { data: { source: 'macinka', target: 'klubmotoristu', label: 'statutární orgán' }, classes: 'fact' },
+    { data: { source: 'klubmotoristu', target: 'motoriste', label: 'dar 800 000 Kč (2024)' }, classes: 'fact' },
   ];
 
   var LAYOUT = {
