@@ -135,10 +135,27 @@ Každé tvrzení má stav ověřenosti a odkaz na zdroj v [registru zdrojů](#re
   <div class="mb-2 flex justify-end">
     <button type="button" class="fs-btn" data-fs-target="cy-box" title="Zobrazit na celou obrazovku" aria-label="Zobrazit na celou obrazovku">⛶</button>
   </div>
-  <div id="cy-box" class="fs-box">
-    <div id="cy" style="height: 420px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); border-radius: 0.5rem;"></div>
+  <div id="cy-box" class="fs-box cy-wrap">
+    <div id="cy" class="cy-canvas"></div>
+    <div class="cy-controls">
+      <button type="button" data-cy-action="zoom-in" title="Přiblížit" aria-label="Přiblížit">+</button>
+      <button type="button" data-cy-action="zoom-out" title="Oddálit" aria-label="Oddálit">−</button>
+      <button type="button" data-cy-action="fit" title="Přizpůsobit oknu" aria-label="Přizpůsobit oknu">⤢</button>
+      <button type="button" data-cy-action="relayout" title="Přeuspořádat" aria-label="Přeuspořádat">↻</button>
+    </div>
+    <div class="cy-legend">
+      <span><i class="cy-ico cy-ico-person"></i>Osoba</span>
+      <span><i class="cy-ico cy-ico-entity"></i>Strana / instituce</span>
+      <span><i class="cy-ico cy-ico-role"></i>Role</span>
+      <span><i class="cy-ico cy-ico-case"></i>Kauza</span>
+      <span class="cy-legend-sep"></span>
+      <span><i class="cy-line" style="background:#4ade80"></i>Fakt</span>
+      <span><i class="cy-line" style="background:#facc15"></i>Sporné</span>
+      <span><i class="cy-line" style="background:#93c5fd"></i>Citace</span>
+    </div>
+    <div id="cy-tooltip" class="cy-tooltip" hidden></div>
   </div>
-  <p class="mt-2 text-xs text-white/40">Interaktivní graf: táhnutím přesuneš uzly, kolečkem myši přiblížíš, tlačítkem ⛶ na celou obrazovku (přepočítá se rozložení).</p>
+  <p class="mt-2 text-xs text-white/40">Interaktivní graf: táhnutím přesuneš uzly, kolečkem myši přiblížíš, najetím na hranu se zobrazí vztah, tlačítka vpravo nahoře ovládají zoom/rozložení, ⛶ přepne na celou obrazovku.</p>
 </section>
 
 ## Politická kariéra
