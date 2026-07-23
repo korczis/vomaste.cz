@@ -5,11 +5,11 @@ template = "dossier.html"
 
 [extra]
 lang = "cs"
-updated = "2026-07-22"
-reviewed_at = "2026-07-22"
+updated = "2026-07-23"
+reviewed_at = "2026-07-23"
 
 [[extra.stats]]
-value = "43"
+value = "46"
 label = "Citovaných zdrojů"
 
 [[extra.stats]]
@@ -17,7 +17,7 @@ value = "4"
 label = "Sledované kauzy"
 
 [[extra.stats]]
-value = "37"
+value = "40"
 label = "Tvrzení v registru"
 
 [[extra.stats]]
@@ -105,6 +105,18 @@ anchor = "politicka-kariera"
 dot = "dot-fact"
 
 [[extra.timeline]]
+date = "leden 2026"
+title = "Prezident Pavel odmítá jmenovat Turka ministrem životního prostředí"
+anchor = "jmenovani-ministrem-zivotniho-prostredi"
+dot = "dot-fact"
+
+[[extra.timeline]]
+date = "9. 1. 2026"
+title = "Turek oznamuje žalobu na ochranu osobnosti proti prezidentu Pavlovi"
+anchor = "jmenovani-ministrem-zivotniho-prostredi"
+dot = "dot-disputed"
+
+[[extra.timeline]]
 date = "2026"
 title = "Dopravní nehoda a politický tlak na rezignaci"
 anchor = "dopravni-nehoda-2026"
@@ -174,6 +186,9 @@ Každé tvrzení má stav ověřenosti a odkaz na zdroj v [registru zdrojů](#re
 | <a id="clm-35"></a>CLM-35 | Motoristé sobě zveřejnili povinné přehledy dárců kampaně PS 2025 (UDHPSH); mezi velké dárce patřili Boris Šťastný (~5 mil. Kč přes Medical Investments) a František Fabičovic (1 mil. Kč) | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-39](@/dossier/zdroje/src-39.md), [SRC-40](@/dossier/zdroje/src-40.md) |
 | <a id="clm-36"></a>CLM-36 | Podnikatel Richard Chlad (dřívější osobní vazba na Radovana Krejčíře) oficiálně daroval Motoristům sobě v roce 2025 evidovaných 638 864 Kč, zatímco sám veřejně uváděl podporu v hodnotě „necelých dvou milionů" Kč | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-41](@/dossier/zdroje/src-41.md), [SRC-42](@/dossier/zdroje/src-42.md) |
 | <a id="clm-37"></a>CLM-37 | Turek a Macinka Chladovu roli veřejně zlehčovali; Macinka uváděl vlastní nižší částky (2× 50 000 Kč před eurovolbami) než sám Chlad | <span class="status-badge status-quote">CITACE</span> | [SRC-43](@/dossier/zdroje/src-43.md) |
+| <a id="clm-38"></a>CLM-38 | V lednu 2026 prezident Petr Pavel odmítl jmenovat Turka ministrem životního prostředí; jako důvod uvedl opakovaný nedostatek respektu k právnímu řádu, zlehčování nacistického Německa a zpochybňování důstojnosti a rovnosti žen a příslušníků menšin | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-44](@/dossier/zdroje/src-44.md), [SRC-45](@/dossier/zdroje/src-45.md) |
+| <a id="clm-39"></a>CLM-39 | Turek 9. 1. 2026 oznámil, že na prezidenta podá žalobu na ochranu osobnosti a bude žádat omluvu za toto zdůvodnění | <span class="status-badge status-quote">CITACE</span> | [SRC-44](@/dossier/zdroje/src-44.md) |
+| <a id="clm-40"></a>CLM-40 | Turek namísto ministerského postu zastává roli vládního zmocněnce pro klimatickou změnu a Green Deal; premiér Babiš označil jeho jmenování ministrem za „uzavřenou kapitolu"; řízením ministerstva byl dočasně pověřen Petr Macinka | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-45](@/dossier/zdroje/src-45.md), [SRC-46](@/dossier/zdroje/src-46.md) |
 
 ## Graf vztahů
 
@@ -221,6 +236,43 @@ Každé tvrzení má stav ověřenosti a odkaz na zdroj v [registru zdrojů](#re
   předvolební koalici s Přísahou a hnutí šlo do voleb samostatně. Po volbách
   se Motoristé sobě stali součástí vlády vedené ANO a SPD. *(Zdroj: Seznam
   Zprávy, iROZHLAS)*
+
+## Jmenování ministrem životního prostředí
+
+Po vzniku vlády byl Turek navrhován jako ministr životního prostředí.
+V lednu 2026 prezident Petr Pavel jeho jmenování odmítl — i po hodinovém
+přesvědčování premiérem Babišem během novoročního oběda svůj postoj
+nezměnil a odmítnutí následně potvrdil písemně. Jako důvod uvedl, že
+Turek „opakovaně prokazoval nedostatek respektu vůči českému právnímu
+řádu", opakovaně glorifikoval nebo přinejmenším zlehčoval nacistické
+Německo jako jeden z nejhorších totalitních režimů 20. století, a vážně
+zpochybňoval důstojnost a rovnost žen a příslušníků různých menšin —
+odkazoval tím na již zdokumentované kauzy fotografie/sbírky svícnů a
+smazaných příspěvků na Facebooku výše, ne na nové, dosud nepopsané
+chování. *(Zdroj: Deník.cz, HN.cz)*
+
+Turek na zdůvodnění reagoval oznámením 9. 1. 2026, že na prezidenta podá
+žalobu na ochranu osobnosti a bude žádat omluvu:
+
+> „Jeho zdůvodnění se mě hluboce dotýká, v nejbližších dnech podám žalobu
+> na ochranu osobnosti a požádám prezidenta o omluvu." — Turek, podle
+> Deníku.cz
+
+Právní komentátoři (mj. Česká justice, s odkazem na historické precedenty
+žalob na prezidenty) i bývalý advokát Miloše Zemana pro Seznam Zprávy
+vyjádřili k vyhlídkám žaloby skepsi s odkazem na ústavní neodpovědnost
+prezidenta z výkonu funkce. Babiš podle HN.cz kompetenční žalobu vlády
+na prezidenta kvůli nejmenování nezvažuje. Tento právní spor byl k datu
+poslední kontroly (2026-07-23) podle dostupných zdrojů stále nerozhodnutý.
+
+Turek namísto ministerského postu zastává roli vládního zmocněnce pro
+klimatickou změnu a Green Deal s kanceláří na ministerstvu — tatáž
+funkce, kterou po dopravní nehodě v roce 2026 dočasně opustil (viz
+[Bezprostřední reakce](#bezprostredni-reakce)). Premiér Babiš v únoru
+2026 zopakoval, že Turkovo jmenování ministrem je „uzavřená kapitola", a
+čeká na nový návrh. Řízením ministerstva byl mezitím dočasně pověřen
+Petr Macinka — přímý důsledek této nedohody, ne samostatné politické
+rozhodnutí popsané jinde v tomto přehledu. *(Zdroj: Deník.cz, HN.cz)*
 
 ## Majetkové, podnikatelské a finanční vazby
 

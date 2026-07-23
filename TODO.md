@@ -46,3 +46,32 @@
         (SRC-41/42/43, CLM-35–37) — GAP-05 downgradováno na nízkou
   - [x] 43 zdrojů, 37 tvrzení, graf doplněn o uzel Chlad, `zola build`/
         `check` bez chyb
+
+- [x] Landing page redesign + registr mezer + kolo 4 OSINT (2026-07-23)
+  - [x] `templates/index.html` přepsán na skutečnou landing page (hero s
+        CSS/SVG pozadím, sekce "Jak pracujeme", footer); `base.html`
+        doplněn o favicon, funkční og:image/twitter meta, odstraněn
+        nepoužívaný Alpine.js skript, `minify_html` znovu zapnuto
+  - [x] Sladěno s paralelně vzniklým nav shellem (Milestone 1) — odstraněn
+        duplicitní skip-link a plovoucí logo z index.html
+  - [x] GAP-01 až GAP-06 dostaly vlastní stránky pod `content/dossier/mezery/`
+        (šablony `dossier-gap.html` / `dossier-gaps-index.html`), hlavní
+        tabulka mezer nahrazena odkazem na registr (stejný vzor jako
+        registr zdrojů)
+  - [x] Research kolo 4 (4 paralelní OSINT dotazy, jen Macinka/Turek,
+        stejná pravidla zdrojování): nové poznatky doplněny do GAP-01/02/03/04/05,
+        GAP-06 znovu ověřena beze změny
+  - [x] Nová sekce "Jmenování ministrem životního prostředí" (CLM-38–40,
+        SRC-44–46): prezident Pavel v 1/2026 odmítl jmenovat Turka
+        ministrem ŽP, Turek podal žalobu na ochranu osobnosti, Macinkovo
+        dočasné pověření vedením MŽP (CLM-24) tímto dovysvětleno jako
+        přímý důsledek — GAP-02 poznámka doplněna, ať se to nepřičítá
+        nehodě
+  - [x] 46 zdrojů, 40 tvrzení, graf doplněn o uzel "Jmenování ministrem ŽP
+        (2026)", `npm run build` (validate + css + js + zola + anchors)
+        bez chyb
+  - [ ] Nedohledáno/neověřeno: "kompetenční žaloba" avizovaná v jednom
+        titulku (odlišná od Turkovy skutečně podané žaloby na ochranu
+        osobnosti) — ukázalo se jako hypotetická právní analýza, ne
+        reálný krok; viz odstavec o právní skepsi. Sledovat výsledek
+        Turkovy žaloby na ochranu osobnosti proti prezidentovi.

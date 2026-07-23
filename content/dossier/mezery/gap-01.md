@@ -18,9 +18,8 @@ biologický materiál (krev) Nemocnice Na Homolce. Policie k polovině
 projektové dokumentaci — v rozporu s Turkovou verzí, že šlo o
 odbočovací pruh. Turek se vzdal poslanecké imunity pro případ trestního
 stíhání, dechová zkouška byla negativní; podrobnosti viz [hlavní
-přehled kauzy](@/dossier/_index.md#dopravni-nehoda-2026) a tvrzení
-<a href="/dossier/#clm-10">CLM-10</a>, <a href="/dossier/#clm-16">CLM-16</a>,
-<a href="/dossier/#clm-17">CLM-17</a>, <a href="/dossier/#clm-18">CLM-18</a>.
+přehled kauzy](@/dossier/_index.md#dopravni-nehoda-2026) a související
+tvrzení CLM-10, CLM-16, CLM-17, CLM-18 (odkazy níže).
 
 **Co zůstává otevřené**: samotné vyšetřování — a tedy klasifikace skutku
 jako přestupek, nebo trestný čin, a otázka viny — nebylo k 2026-07-22

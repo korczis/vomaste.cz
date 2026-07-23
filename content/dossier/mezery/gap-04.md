@@ -8,18 +8,24 @@ weight = 4
 lang = "cs"
 gap_id = "GAP-04"
 priority = "nízká"
-checked = "2026-07-22"
+checked = "2026-07-23"
 claims = ["CLM-14", "CLM-15", "CLM-20", "CLM-22", "CLM-34"]
 +++
 
 Firemní a spolkové vazby obou politiků i Macinkova nepřiznaná
-dvacetiprocentní účast v ukrajinské firmě GMR GAS UA LLC jsou zdokumentovány
-(<a href="/dossier/#clm-14">CLM-14</a>, <a href="/dossier/#clm-15">CLM-15</a>,
-<a href="/dossier/#clm-20">CLM-20</a>, <a href="/dossier/#clm-22">CLM-22</a>).
-U Turka je zdokumentován i pozemek v Praze-Dubči (se dvěma dodatečně
-zlegalizovanými nepovolenými stavbami) a byt na Strahově koupený v dubnu
-2026 za 18 mil. Kč na hypotéku (<a href="/dossier/#clm-34">CLM-34</a>). Viz
-[hlavní přehled](@/dossier/_index.md#majetkove-podnikatelske-a-financni-vazby).
+dvacetiprocentní účast v ukrajinské firmě GMR GAS UA LLC jsou
+zdokumentovány (CLM-14, CLM-15, CLM-20, CLM-22). U Turka je zdokumentován
+i pozemek v Praze-Dubči (se dvěma dodatečně zlegalizovanými nepovolenými
+stavbami) a byt na Strahově koupený v dubnu 2026 za 18 mil. Kč na
+hypotéku (CLM-34). Viz [hlavní přehled](@/dossier/_index.md#majetkove-podnikatelske-a-financni-vazby).
+
+**Doplnění (dohledáno 2026-07-23)**: server [Extra.cz (2025-11-20)](https://www.extra.cz/filip-turek-zverejnil-majetkove-priznani-luxusni-vozy-za-desitky-milionu-drahe-hodinky-a-nemovitost-v-praze-e95a4)
+cituje Turkovo tehdejší majetkové přiznání: „Co se týče nemovitostí,
+Turek vlastní jen jednu: pozemek s chatou v Praze 10" — tedy k listopadu
+2025 (před dubnovým nákupem bytu na Strahově) jen pozemek v Dubči, což
+odpovídá dossieru a nic nerozporuje. Jeho trvalé bydliště bylo v té době
+psané v nájemním bytě na Břevnově, ne ve vlastnictví. Žádný dohledaný
+zdroj neuvádí u Turka další nemovitost nad rámec Dubče a Strahova.
 
 **Co zůstává otevřené**: nemovitosti Petra Macinky. Veřejný katastr
 nemovitostí (ČÚZK) neumožňuje vyhledávání podle jména z důvodu ochrany

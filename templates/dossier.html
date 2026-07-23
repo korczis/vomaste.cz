@@ -123,6 +123,7 @@
     { data: { id: 'gmrgas', label: 'GMR GAS UA LLC (Kyjev)' }, classes: 'entity' },
     { data: { id: 'klubmotoristu', label: 'Klub motoristů, z.s.' }, classes: 'entity' },
     { data: { id: 'chlad', label: 'Richard Chlad (sponzor)' }, classes: 'person-other' },
+    { data: { id: 'mzp2026', label: 'Jmenování ministrem ŽP (2026)' }, classes: 'case' },
   ];
 
   var edges = [
@@ -144,6 +145,10 @@
     { data: { source: 'klubmotoristu', target: 'motoriste', label: 'dar 800 000 Kč (2024)' }, classes: 'fact' },
     { data: { source: 'turek', target: 'trestniozn', label: 'subjekt (oznámení 6/2025, odloženo pro promlčení 5/2026)' }, classes: 'disputed' },
     { data: { source: 'chlad', target: 'motoriste', label: 'dar 638 864 Kč (2025, oficiálně) vs. tvrzené ~2 mil. Kč' }, classes: 'disputed' },
+    { data: { source: 'turek', target: 'mzp2026', label: 'nejmenován (1/2026)' }, classes: 'fact' },
+    { data: { source: 'pavel', target: 'mzp2026', label: 'odmítl jmenovat' }, classes: 'fact' },
+    { data: { source: 'turek', target: 'pavel', label: 'žaloba na ochranu osobnosti (1/2026)' }, classes: 'disputed' },
+    { data: { source: 'macinka', target: 'mzp2026', label: 'dočasně vede resort' }, classes: 'fact' },
   ];
 
   var LAYOUT = {

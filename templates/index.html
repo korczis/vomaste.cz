@@ -3,18 +3,11 @@
 {#- No metadata blocks here on purpose. Title, description, canonical, Open
     Graph and JSON-LD all come from front matter via base.html. -#}
 
+{#- Skip link and site branding/nav live once in base.html and wrap every
+    page — this template doesn't repeat either. -#}
 {% block content %}
-<a
-  href="#hlavni-obsah"
-  class="sr-only focus-visible:not-sr-only focus-visible:fixed focus-visible:left-4 focus-visible:top-4 focus-visible:z-50 focus-visible:rounded-md focus-visible:bg-[#f3e5c0] focus-visible:px-4 focus-visible:py-2 focus-visible:text-sm focus-visible:font-semibold focus-visible:text-black"
->Přeskočit na hlavní obsah</a>
-
-<header class="pointer-events-none absolute inset-x-0 top-0 z-20 flex items-center px-6 py-6 sm:px-10">
-  <span class="text-sm font-bold tracking-wide text-white/80">vomaste<span class="text-[#f3e5c0]">.cz</span></span>
-</header>
-
-<main id="hlavni-obsah">
-  <section class="hero-bg relative flex min-h-[100svh] w-full items-center justify-center overflow-hidden bg-gradient-to-b from-gray-900 via-black to-gray-900" aria-labelledby="hero-heading">
+<main>
+  <section class="hero-bg relative flex min-h-[90svh] w-full items-center justify-center overflow-hidden bg-gradient-to-b from-gray-900 via-black to-gray-900" aria-labelledby="hero-heading">
     <div class="absolute inset-0 bg-gradient-to-b from-black/55 via-black/10 to-black" aria-hidden="true"></div>
 
     <div class="relative z-10 mx-auto flex w-full max-w-2xl flex-col items-center gap-6 px-6 py-28 text-center [text-shadow:0_4px_24px_rgb(0_0_0_/_85%)]">
