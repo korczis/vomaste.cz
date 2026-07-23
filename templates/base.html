@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ page.extra.lang | default(value=config.extra.lang | default(value="en")) }}" class="scroll-smooth">
+<html lang="{{ page.extra.lang | default(value=config.extra.lang | default(value="en")) }}" class="scroll-smooth" data-sidebar="expanded">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,34 +38,59 @@
 <body class="bg-black text-white font-sans antialiased pb-16 md:pb-0">
 <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:rounded focus:bg-[#f3e5c0] focus:px-3 focus:py-2 focus:text-black">Přeskočit na obsah</a>
 
-{%- set is_zdroje = current_path is starting_with("/dossier/zdroje/") -%}
-{%- set is_dossier = current_path is starting_with("/dossier/") and not is_zdroje -%}
-{%- set is_home = current_path == "/" -%}
+{%- set nav_data = load_data(path="data/navigation.toml") -%}
+{%- set nav_items = nav_data.items | sort(attribute="order") -%}
+{%- set_global active_id = "" -%}
+{%- set_global active_len = 0 -%}
+{%- for item in nav_items -%}
+  {%- if item.match_prefix == "/" -%}
+    {%- if current_path == "/" and active_len < 1 -%}
+      {%- set_global active_id = item.id -%}
+      {%- set_global active_len = 1 -%}
+    {%- endif -%}
+  {%- elif current_path is starting_with(item.match_prefix) and item.match_prefix | length > active_len -%}
+    {%- set_global active_id = item.id -%}
+    {%- set_global active_len = item.match_prefix | length -%}
+  {%- endif -%}
+{%- endfor -%}
 
-<header class="hidden border-b border-white/10 md:block">
-  <nav aria-label="Hlavní navigace" class="mx-auto flex max-w-3xl items-center gap-6 px-6 py-3 text-sm">
-    <a href="{{ get_url(path='@/_index.md') | safe }}" class="font-black text-white no-underline">vomaste.cz</a>
-    <a href="{{ get_url(path='@/_index.md') | safe }}" class="no-underline {% if is_home %}text-[#f3e5c0]{% else %}text-white/60 hover:text-white{% endif %}" {% if is_home %}aria-current="page"{% endif %}>Domů</a>
-    <a href="{{ get_url(path='@/dossier/_index.md') | safe }}" class="no-underline {% if is_dossier %}text-[#f3e5c0]{% else %}text-white/60 hover:text-white{% endif %}" {% if is_dossier %}aria-current="page"{% endif %}>Dossier</a>
-    <a href="{{ get_url(path='@/dossier/zdroje/_index.md') | safe }}" class="no-underline {% if is_zdroje %}text-[#f3e5c0]{% else %}text-white/60 hover:text-white{% endif %}" {% if is_zdroje %}aria-current="page"{% endif %}>Zdroje</a>
+<aside id="sidebar" class="sidebar fixed inset-y-0 left-0 z-30 hidden flex-col overflow-hidden border-r border-white/10 bg-black md:flex">
+  <div class="flex h-16 items-center gap-2 border-b border-white/10 px-4">
+    <a href="{{ get_url(path='@/_index.md') | safe }}" class="flex items-center gap-2 font-black text-white no-underline">
+      <span class="shrink-0 text-lg">V</span>
+      <span class="sidebar-label whitespace-nowrap">vomaste.cz</span>
+    </a>
+  </div>
+  <nav aria-label="Hlavní navigace dossieru" class="flex-1 overflow-y-auto py-3">
+    {% for item in nav_items %}
+    <a href="{{ get_url(path=item.path) | safe }}" title="{{ item.label }}"
+       {% if item.id == active_id %}aria-current="page"{% endif %}
+       class="flex items-center gap-3 px-4 py-2.5 text-sm no-underline {% if item.id == active_id %}bg-white/5 text-[#f3e5c0]{% else %}text-white/60 hover:bg-white/5 hover:text-white{% endif %}">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="shrink-0" aria-hidden="true"><path d="{{ item.icon }}"/></svg>
+      <span class="sidebar-label whitespace-nowrap">{{ item.label }}</span>
+    </a>
+    {% endfor %}
   </nav>
-</header>
+  <div class="border-t border-white/10 p-2">
+    <button type="button" id="sidebar-toggle" aria-expanded="true" aria-controls="sidebar" class="flex w-full items-center justify-center gap-2 rounded-lg px-3 py-2.5 text-xs text-white/50 hover:bg-white/5 hover:text-white">
+      <svg id="sidebar-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+      <span class="sidebar-label whitespace-nowrap">Sbalit</span>
+    </button>
+  </div>
+</aside>
 
 <div id="main">
 {% block content %}{% endblock content %}
 </div>
 
 <nav aria-label="Hlavní mobilní navigace" class="fixed inset-x-0 bottom-0 z-40 border-t border-white/10 bg-black/95 backdrop-blur md:hidden" style="padding-bottom: env(safe-area-inset-bottom)">
-  <div class="grid grid-cols-3">
-    <a href="{{ get_url(path='@/_index.md') | safe }}" {% if is_home %}aria-current="page"{% endif %} class="flex min-h-[44px] flex-col items-center justify-center gap-0.5 py-2 no-underline {% if is_home %}text-[#f3e5c0]{% else %}text-white/60{% endif %}">
-      <span class="text-xs font-medium">Domů</span>
+  <div class="grid" style="grid-template-columns: repeat({{ nav_items | length }}, minmax(0, 1fr))">
+    {% for item in nav_items %}
+    <a href="{{ get_url(path=item.path) | safe }}" {% if item.id == active_id %}aria-current="page"{% endif %} class="flex min-h-[44px] flex-col items-center justify-center gap-0.5 py-2 no-underline {% if item.id == active_id %}text-[#f3e5c0]{% else %}text-white/60{% endif %}">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="{{ item.icon }}"/></svg>
+      <span class="text-xs font-medium">{{ item.label }}</span>
     </a>
-    <a href="{{ get_url(path='@/dossier/_index.md') | safe }}" {% if is_dossier %}aria-current="page"{% endif %} class="flex min-h-[44px] flex-col items-center justify-center gap-0.5 py-2 no-underline {% if is_dossier %}text-[#f3e5c0]{% else %}text-white/60{% endif %}">
-      <span class="text-xs font-medium">Dossier</span>
-    </a>
-    <a href="{{ get_url(path='@/dossier/zdroje/_index.md') | safe }}" {% if is_zdroje %}aria-current="page"{% endif %} class="flex min-h-[44px] flex-col items-center justify-center gap-0.5 py-2 no-underline {% if is_zdroje %}text-[#f3e5c0]{% else %}text-white/60{% endif %}">
-      <span class="text-xs font-medium">Zdroje</span>
-    </a>
+    {% endfor %}
   </div>
 </nav>
 </body>

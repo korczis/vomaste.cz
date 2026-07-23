@@ -1,0 +1,41 @@
+# Primary navigation, shared by the mobile bottom-nav and the desktop
+# sidebar in templates/base.html. `match_prefix` drives active-state
+# detection: the item with the longest current_path-matching prefix wins,
+# so /dossier/zdroje/... highlights "zdroje", not "dossier". "/" is
+# special-cased in the template to require an exact match.
+#
+# `icon` is raw SVG <path d="..."> data for a 24x24 stroke-based icon
+# (viewBox 0 0 24 24), rendered inside a shared <svg> wrapper in the
+# template — keeping icon markup out of this data file.
+
+[[items]]
+id = "home"
+label = "Domů"
+path = "@/_index.md"
+match_prefix = "/"
+order = 10
+icon = "M3 10.5 12 3l9 7.5 M5 9.5V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.5"
+
+[[items]]
+id = "dossier"
+label = "Dossier"
+path = "@/dossier/_index.md"
+match_prefix = "/dossier/"
+order = 20
+icon = "M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z M14 3v5h5 M9 13h6 M9 17h6"
+
+[[items]]
+id = "zdroje"
+label = "Zdroje"
+path = "@/dossier/zdroje/_index.md"
+match_prefix = "/dossier/zdroje/"
+order = 30
+icon = "M4 19.5A2.5 2.5 0 0 1 6.5 17H20 M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"
+
+[[items]]
+id = "mezery"
+label = "Mezery"
+path = "@/dossier/mezery/_index.md"
+match_prefix = "/dossier/mezery/"
+order = 40
+icon = "M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3 M12 17h.01"
