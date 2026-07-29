@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<main class="flex min-h-[70svh] items-center justify-center px-6">
+  <div class="max-w-xl text-center">
+    <p class="text-xs font-bold uppercase tracking-[0.25em] text-[#f3e5c0]">Chyba 404</p>
+    <h1 class="type-80s hero-title-80s mt-4 text-6xl leading-none text-white sm:text-8xl">Nenalezeno</h1>
+    <p class="mx-auto mt-6 max-w-prose text-balance text-base leading-relaxed text-white/70">
+      Tahle stránka neexistuje — nebo ještě ne. Staré adresy záznamů
+      přesměrováváme; pokud vás sem přivedl odkaz z tohoto webu, je to
+      chyba a stojí za <a href="https://github.com/korczis/vomaste.cz/issues" class="underline decoration-white/30 underline-offset-2 hover:text-white">nahlášení</a>.
+    </p>
+    <div class="mt-8 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
+      <a href="{{ get_url(path='@/_index.md') | safe }}" class="inline-flex items-center justify-center gap-2 rounded-lg bg-[#f3e5c0] px-6 py-3 text-sm font-bold text-black no-underline transition-colors hover:bg-[#e9d6a0]">Domů</a>
+      <a href="{{ get_url(path='@/dossiers/_index.md') | safe }}" class="inline-flex items-center justify-center rounded-lg border border-white/25 px-6 py-3 text-sm font-semibold text-white no-underline transition-colors hover:border-white/50 hover:bg-white/5">Dossiery</a>
+    </div>
+  </div>
+</main>
+{% endblock content %}

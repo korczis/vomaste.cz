@@ -1,0 +1,14 @@
+/* TEAM */
+Owner: korczis
+Site: https://vomaste.cz/
+Repo: https://github.com/korczis/vomaste.cz
+
+/* THANKS */
+Každý, kdo pošle opravu, druhý nezávislý zdroj nebo protidůkaz.
+
+/* SITE */
+Standards: HTML5, JSON-LD (bez hodnocení pravdivosti)
+Components: Zola, Tailwind CSS, Flowbite, Alpine.js, Chart.js, Cytoscape.js
+Language: čeština
+Doctrine: Nevěřte autorovi. Zkontrolujte data, zdroje a historii změn.
+License: The Unlicense (public domain) — práva třetích stran viz LICENSE.md

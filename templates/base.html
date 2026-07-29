@@ -22,6 +22,9 @@
   {% if current_url %}<link rel="canonical" href="{{ current_url | safe }}">{% endif %}
 
   <link rel="icon" type="image/svg+xml" href="{{ get_url(path='favicon.svg') | safe }}">
+  <link rel="icon" type="image/x-icon" sizes="32x32" href="{{ get_url(path='favicon.ico') | safe }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ get_url(path='apple-touch-icon.png') | safe }}">
+  <link rel="manifest" href="{{ get_url(path='site.webmanifest') | safe }}">
 
   <meta property="og:site_name" content="{{ config.title }}">
   <meta property="og:title" content="{{ page_title }}">
@@ -33,7 +36,11 @@
   <meta property="og:image" content="{{ get_url(path=og_image) | safe }}">
   {% if config.extra.og_image_width %}<meta property="og:image:width" content="{{ config.extra.og_image_width }}">{% endif %}
   {% if config.extra.og_image_height %}<meta property="og:image:height" content="{{ config.extra.og_image_height }}">{% endif %}
+  {% if config.extra.og_image_type %}<meta property="og:image:type" content="{{ config.extra.og_image_type }}">{% endif %}
+  <meta property="og:image:alt" content="{{ config.extra.og_image_alt | default(value=page_title) }}">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{{ get_url(path=og_image) | safe }}">
+  <meta name="twitter:image:alt" content="{{ config.extra.og_image_alt | default(value=page_title) }}">
   {% else %}
   <meta name="twitter:card" content="summary">
   {% endif %}
@@ -55,6 +62,9 @@
 
 {%- set nav_data = load_data(path="data/navigation.toml") -%}
 {%- set nav_items = nav_data.items | sort(attribute="order") -%}
+{#- 404 nemá current_path v kontextu (Zola) — default mimo "/" i mimo
+    všechny match_prefixy: nic není aktivní, sidebar zůstává docked. -#}
+{%- set current_path = current_path | default(value="/404.html") -%}
 {%- set_global active_id = "" -%}
 {%- set_global active_len = 0 -%}
 {%- for item in nav_items -%}

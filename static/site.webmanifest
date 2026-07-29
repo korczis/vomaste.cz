@@ -1,0 +1,15 @@
+{
+  "name": "vomaste.cz — Open Intelligence Commons",
+  "short_name": "vomaste.cz",
+  "description": "Otevřený, Git-native systém pro tvorbu a publikaci dohledatelných dossierů ve veřejném zájmu.",
+  "lang": "cs",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#000000",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
