@@ -115,7 +115,14 @@ source of truth" below.
   byte-identical to the overview row's claim text), `sources` (the
   `SRC-##` it cites). Statuses:
   - `status-corroborated` ("CORROBORATED") — independently confirmed by
-    multiple outlets
+    multiple outlets. `validate-dossier.mjs` enforces ≥2 distinct cited
+    sources for this status; sources from one publisher family still
+    don't count as independent (see the sources-index independence note).
+  - `status-single` ("1 ZDROJ") — a factual claim supported by exactly
+    one cited source, honestly labeled as such instead of being
+    overstated as corroborated. The validator enforces exactly one cited
+    source. Upgrading to CORROBORATED requires adding a second,
+    genuinely independent source — never just relabeling.
   - `status-quote` ("CITACE") — a direct quote from the subject, presented
     as a quote, not this site's own assessment
   - `status-disputed` ("SPORNÉ") — open, unconfirmed, or contested claim
@@ -412,3 +419,31 @@ versioned). Binding constraints:
 - Merge to `master` only with a clean `npm run build` in the worktree
   **and** on `master` after the merge. Pushing `master` is the deploy
   (GitHub Pages CI); deploy continuously after each merged task.
+
+### Structural change, 2026-07-29 (second): full physical decoupling of the entity dossiers
+
+Authorized by the site owner, explicitly and on the record, 2026-07-29
+("konečně jednou a provždy decouple macinka–turek, to jsou dva nezávislé
+dossiery, data driven, JSON-LD from backend, nic hardcoded"): the
+canonical claim/source/case/gap/relation records physically move from
+`content/dossiers/macinka-turek/` into the entity dossier that owns them
+(`petr-macinka` or `filip-turek`), decided per record by its existing
+`subjects` tagging; dual-subject records get exactly one explicit owner
+and remain visible in the other dossier only as a generated
+cross-reference, never a copy. `/dossiers/macinka-turek/` stays routable
+as a clearly-labeled aggregate landing/rollup with **zero** physical
+records; every old record URL redirects to the new canonical location
+via `aliases` (fragment-preserving), on top of the existing `/dossier/`
+aliases. Build scripts, validators, and templates become fully
+registry-driven (`data/dossiers.toml`) with no hardcoded dossier slugs,
+and JSON-LD structured data is generated at build time from the same
+front-matter/data — carrying only already-authorized content, with **no**
+truth ratings (`reviewRating` or similar): the site's statuses describe
+sourcing, not adjudicated truth, and the structured data must not imply
+otherwise.
+
+This is a **structural** change, not a scope change: no new subject,
+topic, controversy, or named third party is authorized by it. Claim
+texts, statuses, labels, and the procedural-outcome phrasing move
+byte-identically; the single-source-of-truth and two-representations
+rules continue to apply per entity dossier.
