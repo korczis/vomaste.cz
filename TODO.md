@@ -173,3 +173,31 @@
         `templates/index.html`, `templates/base.html`, `config.toml`,
         `data/navigation.toml`.
   - [x] `npm run build` (vč. nového `npm test` kroku) zelený.
+
+- [x] JSON-LD provenance research + design (2026-07-30, ORCH direct,
+      docs-only — na žádost vlastníka "rozšiř JSON-LD dossiers pomocí
+      goodies z prismatic-platform")
+  - [x] Prozkoumáno (read-only) ADR-028 (provenance spine:
+        Source→Request→Artifact→Extraction→Assertion, content-hash
+        artefakty, signed manifesty) a ADR-035 (reference topologie:
+        16 typovaných invertibilních hran) z prismatic-platform.
+        prismatic's vlastní JSON-LD generátor je čisté SEO, na
+        provenance spine vůbec nenavázané — přenositelné jsou datové
+        modely, ne kód (jiný stack).
+  - [x] `docs/adr/dossier-jsonld-provenance-extension.md` — návrh pro
+        T-010: přijato (1) content-hash citace zdrojů, (2) manifest +
+        offline verify script (dává T-010 konkrétní tvar), (3) malý
+        invertibilní vztahový vocab pro graph.toml hrany (BEZ
+        `contradicts` — to by vyžadovalo zvlášť redakční diskuzi).
+        Vědomě ODMÍTNUTO: numerické confidence/corroboration skóre
+        (prismaticovo `1 - Π(1-confidence_i)`) — přímý rozpor s
+        konstitucí §8 ("žádné trust skóre, žádná gamifikace
+        obvinění"); existující kategorický stavový enum
+        (CORROBORATED/1 ZDROJ/SPORNÉ/CITACE/NÁZOR) je záměrná
+        nenumerická odpověď na stejnou otázku.
+  - [x] Implementace vědomě NEprovedena — dotýkala by se
+        `templates/macros/jsonld.html`, `templates/partials/jsonld.html`,
+        `content/dossiers/**` front matter, `scripts/dossier/*.mjs`,
+        vše v aktivní scope-check zóně T-001. T-010 na boardu doplněn
+        o odkaz na hotový design.
+  - [ ] Implementace zůstává T-010, čeká na merge T-001.
