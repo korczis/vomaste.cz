@@ -1,50 +1,107 @@
 #!/usr/bin/env node
 /*
- * Derives dossier overview metrics from the registries themselves instead
- * of letting them be hand-typed (and drift) in content/dossier/_index.md
- * front matter. Writes data/dossier-stats.toml, which templates/dossier.html
- * loads via load_data(). Deterministic, no network access.
+ * Derives each dossier's overview metrics from its own registries instead
+ * of letting them be hand-typed (and drift) in front matter. Runs once per
+ * subdirectory of content/dossiers/, writing data/dossiers/<slug>/stats.toml,
+ * which templates load via load_data(). Deterministic, no network access.
  *
- * Counts:
- *   claims_total  — <a id="clm-##"> anchors in the claims registry table
- *   cases_total   — [[extra.cases]] blocks in front matter (tracked cases)
- *   sources_total — content/dossier/zdroje/src-*.md pages
- *   gaps_total    — content/dossier/mezery/gap-*.md pages
+ * Counts are the actual per-record page counts (claims_total/cases_total
+ * are NOT re-derived from the overview table/front-matter array here — the
+ * full text/status/sources parity between table and pages is enforced by
+ * scripts/dossier/validate-dossier.mjs, which runs in `npm run build`).
+ * This script still cross-checks the *counts* on every run, including
+ * `npm run dev`, which does not run the full validator — so a page ever
+ * added/removed without updating the other representation fails loudly
+ * here rather than silently rendering a wrong tile.
+ *
+ * Counts per dossier:
+ *   claims_total    — content/dossiers/<slug>/claims/clm-*.md pages
+ *   cases_total     — content/dossiers/<slug>/cases/case-*.md pages
+ *   sources_total   — content/dossiers/<slug>/sources/src-*.md pages
+ *   gaps_total      — content/dossiers/<slug>/gaps/gap-*.md pages
+ *   entities_total  — GLOBAL content/entities/*.md pages whose `dossiers`
+ *                     array includes this slug (entities are not owned by
+ *                     any one dossier, so this is a filtered count, not a
+ *                     directory listing)
+ *   relations_total — content/dossiers/<slug>/relations/*.md pages
  */
-import { readFileSync, readdirSync, writeFileSync } from "node:fs";
+import { readFileSync, readdirSync, writeFileSync, mkdirSync, statSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
-const DOSSIER_MD = join(ROOT, "content/dossier/_index.md");
-const SRC_DIR = join(ROOT, "content/dossier/zdroje");
-const GAP_DIR = join(ROOT, "content/dossier/mezery");
-const OUT_FILE = join(ROOT, "data/dossier-stats.toml");
+const DOSSIERS_ROOT = join(ROOT, "content/dossiers");
+const ENTITIES_ROOT = join(ROOT, "content/entities");
+const DATA_ROOT = join(ROOT, "data/dossiers");
 
-const dossierText = readFileSync(DOSSIER_MD, "utf8");
+function extractArrayField(text, key) {
+  const re = new RegExp(`^${key}\\s*=\\s*\\[([^\\]]*)\\]`, "m");
+  const found = text.match(re);
+  if (!found) return [];
+  return [...found[1].matchAll(/"((?:[^"\\]|\\.)*)"/g)].map((x) => x[1]);
+}
 
-const claimsTotal = [...dossierText.matchAll(/<a id="clm-\d+">/g)].length;
-const casesTotal = [...dossierText.matchAll(/^\[\[extra\.cases\]\]/gm)].length;
+function generateStatsFor(slug) {
+  const BASE = join(DOSSIERS_ROOT, slug);
+  const DOSSIER_MD = join(BASE, "_index.md");
+  const CLM_DIR = join(BASE, "claims");
+  const CASE_DIR = join(BASE, "cases");
+  const SRC_DIR = join(BASE, "sources");
+  const GAP_DIR = join(BASE, "gaps");
+  const RELATION_DIR = join(BASE, "relations");
+  const OUT_DIR = join(DATA_ROOT, slug);
+  const OUT_FILE = join(OUT_DIR, "stats.toml");
 
-const sourcesTotal = readdirSync(SRC_DIR).filter(
-  (f) => /^src-\d+\.md$/.test(f),
-).length;
-const gapsTotal = readdirSync(GAP_DIR).filter(
-  (f) => /^gap-\d+\.md$/.test(f),
-).length;
+  const dossierText = readFileSync(DOSSIER_MD, "utf8");
 
-if (claimsTotal === 0) throw new Error("generate-stats: found 0 CLM anchors — table format may have changed.");
-if (sourcesTotal === 0) throw new Error("generate-stats: found 0 source pages in content/dossier/zdroje.");
+  const claimsTotal = readdirSync(CLM_DIR).filter((f) => /^clm-\d+\.md$/.test(f)).length;
+  const casesTotal = readdirSync(CASE_DIR).filter((f) => /^case-\d+\.md$/.test(f)).length;
+  const sourcesTotal = readdirSync(SRC_DIR).filter((f) => /^src-\d+\.md$/.test(f)).length;
+  const gapsTotal = readdirSync(GAP_DIR).filter((f) => /^gap-\d+\.md$/.test(f)).length;
+  const entitiesTotal = readdirSync(ENTITIES_ROOT).filter((f) => f !== "_index.md" && f.endsWith(".md")).filter((f) => {
+    const text = readFileSync(join(ENTITIES_ROOT, f), "utf8");
+    const fmEnd = text.indexOf("\n+++", 3);
+    return extractArrayField(text.slice(0, fmEnd), "dossiers").includes(slug);
+  }).length;
+  const relationsTotal = readdirSync(RELATION_DIR).filter((f) => f !== "_index.md" && f.endsWith(".md")).length;
 
-const toml = `# Generated by scripts/dossier/generate-stats.mjs — do not hand-edit.
-# Regenerated on every \`npm run build\`/\`npm run dev\` from the actual
-# claims/sources/gaps registries, so these numbers can't drift from what's
-# really on the page.
+  const tableClaimRows = [...dossierText.matchAll(/<a id="clm-\d+">/g)].length;
+  const tableCaseBlocks = [...dossierText.matchAll(/^\[\[extra\.cases\]\]/gm)].length;
+
+  if (claimsTotal === 0) throw new Error(`generate-stats: [${slug}] found 0 claim pages in ${CLM_DIR}.`);
+  if (sourcesTotal === 0) throw new Error(`generate-stats: [${slug}] found 0 source pages in ${SRC_DIR}.`);
+  if (claimsTotal !== tableClaimRows) {
+    throw new Error(
+      `generate-stats: [${slug}] ${claimsTotal} claim page(s) but ${tableClaimRows} CLM row(s) in the overview table — they must match 1:1. Run scripts/dossier/migrate-claims-to-pages.mjs after editing the table, or fix the drift manually.`,
+    );
+  }
+  if (casesTotal !== tableCaseBlocks) {
+    throw new Error(
+      `generate-stats: [${slug}] ${casesTotal} case page(s) but ${tableCaseBlocks} [[extra.cases]] entr(y/ies) in front matter — they must match 1:1. Run scripts/dossier/migrate-cases-to-pages.mjs after editing the array, or fix the drift manually.`,
+    );
+  }
+
+  const toml = `# Generated by scripts/dossier/generate-stats.mjs — do not hand-edit.
+# Regenerated on every \`npm run build\`/\`npm run dev\` from this dossier's
+# actual registries, so these numbers can't drift from what's really on
+# the page.
 claims_total = ${claimsTotal}
 cases_total = ${casesTotal}
 sources_total = ${sourcesTotal}
 gaps_total = ${gapsTotal}
+entities_total = ${entitiesTotal}
+relations_total = ${relationsTotal}
 `;
 
-writeFileSync(OUT_FILE, toml, "utf8");
-console.log(`Wrote ${OUT_FILE}: ${claimsTotal} claims, ${casesTotal} cases, ${sourcesTotal} sources, ${gapsTotal} gaps.`);
+  mkdirSync(OUT_DIR, { recursive: true });
+  writeFileSync(OUT_FILE, toml, "utf8");
+  console.log(`[${slug}] Wrote ${OUT_FILE}: ${claimsTotal} claims, ${casesTotal} cases, ${sourcesTotal} sources, ${gapsTotal} gaps, ${entitiesTotal} entities, ${relationsTotal} relations.`);
+}
+
+const dossierSlugs = readdirSync(DOSSIERS_ROOT).filter((f) =>
+  statSync(join(DOSSIERS_ROOT, f)).isDirectory(),
+);
+if (dossierSlugs.length === 0) {
+  throw new Error("generate-stats: no dossiers found under content/dossiers/.");
+}
+for (const slug of dossierSlugs) generateStatsFor(slug);

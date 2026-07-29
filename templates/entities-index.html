@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% import "macros/ui.html" as ui %}
+
+{% block content %}
+<main class="mx-auto max-w-6xl px-6 py-12 text-white">
+  {{ ui::page_header(title=section.title, description=section.description, breadcrumb_items=[
+    "Domů::" ~ get_url(path="@/_index.md"),
+    "Registr entit",
+  ]) }}
+
+  <article class="dossier-prose mb-10">{{ section.content | safe }}</article>
+
+  {% set subjects = section.pages | filter(attribute="extra.publication_role", value="subject") %}
+  <div class="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
+    {{ ui::stat_tile(value=section.pages | length, label="Entit celkem") }}
+    {{ ui::stat_tile(value=subjects | length, label="Subjekty dossierů") }}
+    {% set contexts = section.pages | filter(attribute="extra.publication_role", value="context") %}
+    {{ ui::stat_tile(value=contexts | length, label="Kontextové entity") }}
+  </div>
+
+  <div class="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+    {% for p in section.pages %}
+    <a href="{{ p.permalink | safe }}" class="registry-card">
+      <span class="flex flex-wrap items-center gap-2">
+        <span class="font-mono text-xs text-[#f3e5c0]">{{ p.extra.entity_id }}</span>
+        <span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-white/50">{{ p.extra.entity_type }}</span>
+        {% if p.extra.publication_role == "subject" %}
+        <span class="rounded bg-[#f3e5c0]/10 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-[#f3e5c0]">subjekt dossieru</span>
+        {% else %}
+        <span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-white/40">kontextová</span>
+        {% endif %}
+      </span>
+      <span class="mt-1 font-semibold text-white">{{ p.title }}</span>
+      <span class="mt-1 text-xs text-white/40">{{ p.extra.dossiers | length }} dossier{% if p.extra.dossiers | length != 1 %}ů{% endif %}{% if p.extra.cluster %} · {{ p.extra.cluster }}{% endif %}</span>
+    </a>
+    {% endfor %}
+  </div>
+
+  {{ ui::back_link_footer(url=get_url(path="@/_index.md"), label="Zpět na hlavní stránku") }}
+</main>
+{% endblock content %}

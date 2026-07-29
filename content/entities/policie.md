@@ -1,0 +1,23 @@
++++
+title = "Policie ČR"
+template = "entity.html"
+weight = 18
+aliases = ["/dossiers/macinka-turek/entities/policie/"]
+
+[extra]
+record_type = "entity"
+entity_id = "policie"
+entity_type = "public_institution"
+depth = 2
+subject = false
+publication_role = "context"
+dossier_enabled = false
+dossier_status = "not_authorized"
+dossiers = ["macinka-turek"]
+claims = ["CLM-41"]
+sources = ["SRC-47", "SRC-48"]
++++
+
+Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext.
+
+Vyšetřuje dopravní nehodu (2026) a prověřovala Turkovy výroky na sociálních sítích i trestní oznámení Motoristů na Deník N — obě věci 28. 7. 2026 odložila pro promlčení, resp. absenci trestného činu.

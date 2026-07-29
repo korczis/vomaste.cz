@@ -2,9 +2,10 @@
 {% import "macros/ui.html" as ui %}
 
 {% block content %}
-<main class="mx-auto max-w-3xl px-6 py-12 text-white">
+<main class="mx-auto max-w-6xl px-6 py-12 text-white">
+  {% set dossier_slug = section.extra.dossier %}
   {{ ui::page_header(title=section.title, description=section.description, breadcrumb_items=[
-    "Dossier::" ~ get_url(path="@/dossier/_index.md"),
+    "Dossier::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"),
     "Registr zdrojů",
   ]) }}
 
@@ -70,7 +71,7 @@
 
     <div x-show="visibleCount === 0" x-cloak class="mb-4">{{ ui::empty_state(message="Žádný zdroj neodpovídá zadanému filtru.") }}</div>
 
-    <div class="grid gap-3 sm:grid-cols-2">
+    <div class="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
       {% for p in section.pages %}
       <a href="{{ p.permalink | safe }}"
          class="src-card registry-card"
@@ -92,6 +93,6 @@
     </div>
   </div>
 
-  {{ ui::back_link_footer(url=get_url(path="@/dossier/_index.md"), label="Zpět na celý dossier") }}
+  {{ ui::back_link_footer(url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"), label="Zpět na celý dossier") }}
 </main>
 {% endblock content %}

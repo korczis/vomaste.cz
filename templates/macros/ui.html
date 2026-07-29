@@ -21,11 +21,21 @@
 </nav>
 {%- endmacro breadcrumb -%}
 
-{%- macro stat_tile(value, label) -%}
+{#- When `url` is given, the tile is a real link to the underlying
+    registry — every summary count on the site must be reachable, not
+    just a number. -#}
+{%- macro stat_tile(value, label, url="") -%}
+{%- if url -%}
+<a href="{{ url | safe }}" class="stat-tile stat-tile-link">
+  <p class="stat-tile-value">{{ value }}</p>
+  <p class="stat-tile-label">{{ label }}</p>
+</a>
+{%- else -%}
 <div class="stat-tile">
   <p class="stat-tile-value">{{ value }}</p>
   <p class="stat-tile-label">{{ label }}</p>
 </div>
+{%- endif -%}
 {%- endmacro stat_tile -%}
 
 {#- Consistent registry page header: breadcrumb, title, optional
@@ -58,12 +68,6 @@
 {#- Empty state for a filtered/empty registry list. `message` should say
     why it's empty (no results vs. genuinely nothing yet), never a bare
     "nothing here" that reads as a bug. -#}
-{#- Look up a node's label by id for the relationship graph's plain-text
-    list fallback (templates/dossier.html). Small O(n) scan over a ~16-node
-    array — irrelevant at this scale, and avoids needing a Tera dict. -#}
-{%- macro node_label(nodes, id) -%}
-  {%- for n in nodes -%}{%- if n.id == id -%}{{ n.label }}{%- endif -%}{%- endfor -%}
-{%- endmacro node_label -%}
 
 {%- macro empty_state(message) -%}
 <p class="rounded-lg border border-dashed border-white/15 p-6 text-center text-sm text-white/50">{{ message }}</p>

@@ -8,15 +8,46 @@ data model, or scope.
 
 ## Dossier framework (general — applies to any current or future dossier)
 
-### Data model: three linked registries
+### Routing: one namespace per dossier
 
-Every dossier page (`content/dossier/_index.md`, or a future
-`content/<dossier>/_index.md`) is built on three cross-referenced
-registries:
+Every dossier lives under `content/dossiers/<dossier-slug>/`, routed at
+`/dossiers/<dossier-slug>/...`. `content/dossiers/_index.md` is the
+registry-of-dossiers landing page (`/dossiers/`) — it lists every
+authorized dossier by looping over `content/dossiers/*/`, so adding a new
+authorized dossier means adding a new subsection there, not touching a
+template. The one dossier live today is `content/dossiers/macinka-turek/`.
 
-- **Claims registry (`CLM-##`)** — the main table on the dossier page. Each
-  row: an anchor (`<a id="clm-NN"></a>`), the claim text, a status badge,
-  and a link to one or more sources (`SRC-##`). Statuses:
+No template hardcodes a dossier slug. Every dossier-scoped template reads
+its own dossier root from front matter (`page.extra.dossier` on a detail
+page, `section.extra.dossier` on a registry index) and builds sibling
+paths from it, e.g. `get_url(path="@/dossiers/" ~ dossier_slug ~
+"/sources/_index.md")`. `data/navigation.toml` is the one place that *is*
+hardcoded to `macinka-turek` today, by design — it's the curated primary
+nav, not a template; a second authorized dossier gets its own nav entries
+added there.
+
+Per-dossier generated/data files live under `data/dossiers/<slug>/`
+(`graph.toml`, `updates.toml`, the build-generated `stats.toml`) for the
+same reason — nothing dossier-specific sits at a flat top-level path.
+
+### Data model: four linked registries, each independently routable
+
+Every dossier (`content/dossiers/<slug>/_index.md`) is built on four
+cross-referenced registries. Each registry has an index page
+(`.../<registry>/_index.md`) and **one real Zola page per record** — not
+just a row in a table. The overview table/cards on the main dossier page
+and the per-record pages are two views of the *same* data: the table is
+authored by hand (it's what an editor actually edits), the per-record
+pages are derived from it, and `scripts/dossier/validate-dossier.mjs`
+fails the build if they ever disagree — see "Two representations, one
+source of truth" below.
+
+- **Claims registry (`CLM-##`)** — `.../claims/clm-NN.md`, one page per
+  claim, plus the overview row on the main dossier page (anchor `<a
+  id="clm-NN"></a>`, now itself a link to the claim's detail page).
+  Front matter: `clm_id`, `status`, `status_label`, `summary` (must be
+  byte-identical to the overview row's claim text), `sources` (the
+  `SRC-##` it cites). Statuses:
   - `status-corroborated` ("CORROBORATED") — independently confirmed by
     multiple outlets
   - `status-quote` ("CITACE") — a direct quote from the subject, presented
@@ -25,19 +56,48 @@ registries:
   - `status-opinion` ("NÁZOR") — authored commentary, kept structurally
     separate from reporting
 - **Sources registry (`SRC-##`)** — one page per source under
-  `content/dossier/zdroje/src-NN.md`. Front matter: `src_id`, `outlet`,
-  `src_type`, `url`, `retrieved`, `published`, `claims` (the CLM-## it
-  supports). The registry index (`content/dossier/zdroje/_index.md`) notes
-  which sources share a publisher ("source family" — not independent
-  corroboration) versus which are genuinely independent outlets.
+  `.../sources/src-NN.md`. Front matter: `src_id`, `outlet`, `src_type`,
+  `url`, `retrieved`, `published`, `claims` (the CLM-## it supports). The
+  registry index notes which sources share a publisher ("source family" —
+  not independent corroboration) versus which are genuinely independent
+  outlets.
+- **Cases registry (`CASE-##`)** — one page per tracked case under
+  `.../cases/case-NN.md`, mirroring the `[[extra.cases]]` array in the
+  main dossier page's front matter (`anchor`, `period`, `title`, `status`,
+  `label`, `summary`). Detail pages deliberately do **not** duplicate the
+  full narrative — they link back to the canonical prose section by
+  anchor, so the most sensitive case text (e.g. the domestic-violence
+  case) only ever exists in one editable place.
 - **Gaps registry (`GAP-##`)** — one page per open question under
-  `content/dossier/mezery/gap-NN.md`. Front matter: `gap_id`, `priority`
+  `.../gaps/gap-NN.md`. Front matter: `gap_id`, `priority`
   (`vysoká`/`nízká`), `checked` (last-verified date), `claims`. Being
   listed as open is not a finding either way — it means the cited sources
   don't yet support a conclusion.
 
-Registries are bidirectionally linked (CLM ↔ SRC, GAP → CLM), and every
-anchor/link is enforced by two build-time scripts:
+Registries are bidirectionally linked (CLM ↔ SRC, GAP → CLM, SRC → CLM),
+and the four summary metric tiles on the main dossier page and landing
+page are real `<a>` links to each registry index — never a bare count.
+
+#### Two representations, one source of truth
+
+The claims table and case-cards on the main dossier page stay
+hand-authored (that's what an editor actually edits); the per-record
+pages under `claims/` and `cases/` are a second, generated-and-checked
+representation of the same facts. `scripts/dossier/validate-dossier.mjs`
+fails the build if a claim/case page's status, text, or source list
+differs at all from its counterpart in the overview table/front-matter
+array, or if the counts don't match 1:1 in both directions.
+`scripts/dossier/generate-stats.mjs` derives the tile counts from the
+actual per-record page count on disk (not the table), and separately
+throws if that count disagrees with the table/array count — this check
+also runs under `npm run dev`, which doesn't run the full validator. If
+you ever hand-edit the overview table or `[[extra.cases]]`, re-run
+`scripts/dossier/migrate-claims-to-pages.mjs` /
+`migrate-cases-to-pages.mjs` to regenerate the matching detail pages
+before building.
+
+Every anchor/link is additionally enforced by two more build-time
+scripts:
 
 - `scripts/dossier/validate-dossier.mjs` — checks the source Markdown:
   every CLM-##/GAP-## row has a real anchor, every SRC-##/CLM-## reference
@@ -51,13 +111,28 @@ Both run as part of `npm run build` (the exact sequence CI runs too).
 Never wave past a failure here — a broken anchor or an unsourced claim is
 a real defect, not lint noise.
 
+#### Old URLs
+
+The dossier used to live at `/dossier/...` (singular, no slug). Every
+migrated page carries an `aliases` front-matter entry pointing at its old
+`/dossier/...` URL, so old links and bookmarks redirect rather than 404.
+Zola's generated alias page reads `window.location.hash` and appends it
+to the redirect target, so old `#clm-NN`-style fragment links still land
+on the exact anchor after the redirect, not just at the top of the page.
+
 ### Templates
 
-- `templates/index.html` — landing page
-- `templates/dossier.html` — main dossier page (claims table, relationship
-  graph, timeline)
+- `templates/index.html` — landing page; loops over every authorized
+  dossier under `content/dossiers/` rather than assuming exactly one
+- `templates/dossiers-index.html` — `/dossiers/` registry-of-dossiers page
+- `templates/dossier.html` — main per-dossier page (claims table,
+  relationship graph, timeline)
 - `templates/dossier-source.html` / `dossier-sources-index.html` — one
   source page + its index
+- `templates/dossier-claim.html` / `dossier-claims-index.html` — one claim
+  page + its index
+- `templates/dossier-case.html` / `dossier-cases-index.html` — one case
+  page + its index
 - `templates/dossier-gap.html` / `dossier-gaps-index.html` — one gap page +
   its index
 - `templates/base.html` — shared layout; all `<meta>` (title, description,

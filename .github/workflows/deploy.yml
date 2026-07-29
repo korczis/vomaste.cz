@@ -36,8 +36,23 @@ jobs:
       - name: Validate relationship graph
         run: npm run validate:graph
 
+      - name: Validate authorization scope
+        run: npm run validate:authorization
+
+      - name: Build route manifest
+        run: npm run build:routes
+
       - name: Generate dossier stats
         run: npm run generate:stats
+
+      - name: Build global content graph
+        run: npm run build:global-graph
+
+      - name: Build search index
+        run: npm run build:search-index
+
+      - name: Generate authorization-candidates report (not published)
+        run: npm run generate:candidates
 
       - name: Build CSS
         run: npm run css:build

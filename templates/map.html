@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% import "macros/ui.html" as ui %}
+
+{% block content %}
+<script src="https://cdn.jsdelivr.net/npm/cytoscape@3.30.2/dist/cytoscape.min.js" integrity="sha384-IWROdLKRsN1UuJywMlWl7/blXQ8GEooN2n7dzTxfEPd7ybYIKCUJ2Ol/1Gpf3YV4" crossorigin="anonymous"></script>
+<main class="mx-auto max-w-6xl px-6 py-12 text-white">
+  {{ ui::page_header(title=section.title, description=section.description, breadcrumb_items=[
+    "Domů::" ~ get_url(path="@/_index.md"),
+    "Globální mapa",
+  ]) }}
+
+  <article class="dossier-prose mb-10">{{ section.content | safe }}</article>
+
+  {% set graph = load_data(path="data/generated/global-graph.json") %}
+
+  <div class="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
+    {{ ui::stat_tile(value=graph.dossiers | length, label="Autorizované dossiery", url=get_url(path="@/dossiers/_index.md")) }}
+    {{ ui::stat_tile(value=graph.nodes | length, label="Entit v síti", url=get_url(path="@/entities/_index.md")) }}
+    {{ ui::stat_tile(value=graph.edges | length, label="Vztahů v síti") }}
+    {{ ui::stat_tile(value=graph.clusters | length, label="Tematických okruhů") }}
+  </div>
+
+  <section aria-labelledby="dossier-catalog-heading" class="mb-12">
+    <h2 id="dossier-catalog-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/40">Katalog dossierů</h2>
+    <div class="grid gap-3 sm:grid-cols-2">
+      {% for d in graph.dossiers %}
+      {% set dossier_page = get_section(path="dossiers/" ~ d.slug ~ "/_index.md") %}
+      <a href="{{ dossier_page.permalink | safe }}" class="registry-card">
+        <span class="font-semibold text-white">{{ d.title }}</span>
+        <span class="mt-1 text-xs text-white/40">typ: {{ d.dossier_type }} · {{ d.node_count }} entit · {{ d.edge_count }} vztahů</span>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section aria-labelledby="global-graph-heading" class="mb-12">
+    <h2 id="global-graph-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/40">Globální graf</h2>
+    <p class="mb-4 text-xs text-white/50">Agregovaná projekce lokálních grafů výše uvedených dossierů — ne automaticky rozšiřovaná investigace. Klikněte na uzel nebo hranu pro otevření jeho stránky.</p>
+    <div class="mb-8 flex items-center justify-end">
+      <button type="button" class="fs-btn" data-fs-target="global-map-box" title="Zobrazit na celou obrazovku" aria-label="Zobrazit na celou obrazovku">⛶</button>
+    </div>
+    <div id="global-map-box" class="fs-box mb-2 overflow-hidden rounded-lg border border-white/10">
+      <div id="global-map-view"
+           data-graph-view
+           data-data-island="global-graph-data"
+           data-search-index-url="{{ get_url(path='search-index.json', cachebust=true) | safe }}"
+           style="height: 520px;" class="w-full bg-black/40"></div>
+    </div>
+    <noscript><p class="mb-8 text-xs text-white/50">Interaktivní mapa vyžaduje JavaScript — použijte textový registr níže.</p></noscript>
+  </section>
+
+  <section aria-labelledby="global-text-heading" class="mb-12">
+    <h2 id="global-text-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/40">Textová alternativa — všechny vztahy ({{ graph.edges | length }})</h2>
+    {% set entities = get_section(path="entities/_index.md") %}
+    <ul class="space-y-1.5 text-sm text-white/70">
+      {% for e in graph.edges %}
+      {% set source_entity = entities.pages | filter(attribute="extra.entity_id", value=e.source) | first %}
+      {% set target_entity = entities.pages | filter(attribute="extra.entity_id", value=e.target) | first %}
+      {% set relation_page = get_section(path="dossiers/" ~ e.dossier ~ "/relations/_index.md") %}
+      {% set r = relation_page.pages | filter(attribute="extra.rel_id", value=e.id) | first %}
+      <li>
+        <span class="edge-status-dot edge-{{ e.status }}"></span>
+        {% if source_entity %}<a href="{{ source_entity.permalink | safe }}" class="text-white/80 no-underline hover:underline">{{ source_entity.title }}</a>{% endif %}
+        <span aria-hidden="true" class="text-white/30">&rarr;</span>
+        {% if r %}<a href="{{ r.permalink | safe }}" class="text-[#f3e5c0] no-underline hover:underline">{{ e.label }}</a>{% else %}<span class="text-[#f3e5c0]">{{ e.label }}</span>{% endif %}
+        <span aria-hidden="true" class="text-white/30">&rarr;</span>
+        {% if target_entity %}<a href="{{ target_entity.permalink | safe }}" class="text-white/80 no-underline hover:underline">{{ target_entity.title }}</a>{% endif %}
+        <span class="text-white/30">(dossier: {{ e.dossier }})</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  {{ ui::back_link_footer(url=get_url(path="@/_index.md"), label="Zpět na hlavní stránku") }}
+</main>
+
+{#- Same JSON-island pattern as templates/dossier.html's local graph —
+    read by assets/js/modules/graph-view.js, one source of truth
+    (data/generated/global-graph.json), no parallel hand-written dataset. -#}
+<script type="application/json" id="global-graph-data">{{ graph | json_encode | safe }}</script>
+{% endblock content %}

@@ -3,4 +3,6 @@ node_modules/
 public/
 static/css/main.css
 static/js/app.js
-data/dossier-stats.toml
+data/dossiers/*/stats.toml
+data/generated/
+static/search-index.json

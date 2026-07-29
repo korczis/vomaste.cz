@@ -1,0 +1,19 @@
++++
+title = "CLM-15"
+description = "Macinkovo vysvětlení: firma „de facto neexistuje\" kvůli válce na Ukrajině, plánovaná likvidace se zpozdila"
+template = "dossier-claim.html"
+weight = 15
+aliases = ["/dossier/tvrzeni/clm-15/"]
+
+[extra]
+dossier = "macinka-turek"
+record_type = "claim"
+lang = "cs"
+clm_id = "CLM-15"
+status = "status-quote"
+status_label = "CITACE"
+summary = "Macinkovo vysvětlení: firma „de facto neexistuje\" kvůli válce na Ukrajině, plánovaná likvidace se zpozdila"
+sources = ["SRC-17", "SRC-18"]
++++
+
+Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#registr-tvrzeni).

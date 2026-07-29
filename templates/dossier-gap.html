@@ -3,9 +3,10 @@
 
 {% block content %}
 <main class="mx-auto max-w-2xl px-6 py-12 text-white">
+  {% set dossier_slug = page.extra.dossier %}
   {{ ui::page_header(title=page.title, breadcrumb_items=[
-    "Dossier::" ~ get_url(path="@/dossier/_index.md"),
-    "Registr mezer::" ~ get_url(path="@/dossier/mezery/_index.md"),
+    "Dossier::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"),
+    "Registr mezer::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/gaps/_index.md"),
     page.extra.gap_id,
   ]) }}
 
@@ -19,7 +20,15 @@
       {% endif %}
       {% if page.extra.claims %}
       <tr><th class="w-40 py-2 pr-4 align-top text-white/50">Související tvrzení</th><td class="py-2">
-        {% for c in page.extra.claims %}<a href="{{ get_url(path='@/dossier/_index.md') | safe }}#{{ c | lower }}" class="mr-2 inline-block rounded bg-white/5 px-2 py-0.5 font-mono text-xs text-[#f3e5c0] no-underline hover:bg-white/10">{{ c }}</a>{% endfor %}
+        {% set tvrzeni = get_section(path="dossiers/" ~ dossier_slug ~ "/claims/_index.md") %}
+        {% for c in page.extra.claims %}
+          {% set clm_page = tvrzeni.pages | filter(attribute="extra.clm_id", value=c) | first %}
+          {% if clm_page %}
+          <a href="{{ clm_page.permalink | safe }}" class="mr-2 inline-block rounded bg-white/5 px-2 py-0.5 font-mono text-xs text-[#f3e5c0] no-underline hover:bg-white/10">{{ c }}</a>
+          {% else %}
+          <span class="mr-2 inline-block rounded bg-white/5 px-2 py-0.5 font-mono text-xs text-white/40">{{ c }}</span>
+          {% endif %}
+        {% endfor %}
       </td></tr>
       {% endif %}
     </tbody>
@@ -29,6 +38,6 @@
     {{ page.content | safe }}
   </article>
 
-  {{ ui::back_link_footer(url=get_url(path="@/dossier/mezery/_index.md"), label="Zpět na registr mezer") }}
+  {{ ui::back_link_footer(url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/gaps/_index.md"), label="Zpět na registr mezer") }}
 </main>
 {% endblock content %}

@@ -5,19 +5,23 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js" integrity="sha384-NrKB+u6Ts6AtkIhwPixiKTzgSKNblyhlk0Sohlgar9UHUBzai/sgnNNWWd291xqt" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/cytoscape@3.30.2/dist/cytoscape.min.js" integrity="sha384-IWROdLKRsN1UuJywMlWl7/blXQ8GEooN2n7dzTxfEPd7ybYIKCUJ2Ol/1Gpf3YV4" crossorigin="anonymous"></script>
 <main class="mx-auto max-w-3xl px-6 py-12 text-white">
+  {% set dossier_slug = section.extra.dossier %}
   {{ ui::page_header(title=section.title, breadcrumb_items=[
     "Domů::" ~ get_url(path="@/_index.md"),
+    "Dossiery::" ~ get_url(path="@/dossiers/_index.md"),
     section.title,
   ], updated=section.extra.updated | default(value=""), reviewed=section.extra.reviewed_at | default(value="")) }}
 
-  {% set counts = load_data(path="data/dossier-stats.toml") %}
-  <section class="mb-12 grid grid-cols-2 gap-4 sm:grid-cols-4" aria-label="Souhrnné metriky dossieru">
-    {{ ui::stat_tile(value=counts.sources_total, label="Citovaných zdrojů") }}
-    {{ ui::stat_tile(value=counts.cases_total, label="Sledované kauzy") }}
-    {{ ui::stat_tile(value=counts.claims_total, label="Tvrzení v registru") }}
-    {{ ui::stat_tile(value=counts.gaps_total, label="Otevřené mezery") }}
+  {% set counts = load_data(path="data/dossiers/" ~ dossier_slug ~ "/stats.toml") %}
+  <section class="mb-12 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-6" aria-label="Souhrnné metriky dossieru">
+    {{ ui::stat_tile(value=counts.sources_total, label="Citovaných zdrojů", url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/sources/_index.md")) }}
+    {{ ui::stat_tile(value=counts.cases_total, label="Sledované kauzy", url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/cases/_index.md")) }}
+    {{ ui::stat_tile(value=counts.claims_total, label="Tvrzení v registru", url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/claims/_index.md")) }}
+    {{ ui::stat_tile(value=counts.gaps_total, label="Otevřené mezery", url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/gaps/_index.md")) }}
+    {{ ui::stat_tile(value=counts.entities_total, label="Entit v grafu", url=get_url(path="@/entities/_index.md")) }}
+    {{ ui::stat_tile(value=counts.relations_total, label="Vztahů v grafu", url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/relations/_index.md")) }}
   </section>
-  <p class="-mt-8 mb-8 text-xs text-white/40">Metriky se počítají automaticky z registru tvrzení, zdrojů a mezer při buildu (viz <code>scripts/dossier/generate-stats.mjs</code>) — nejsou ručně přepisovány.</p>
+  <p class="-mt-8 mb-8 text-xs text-white/40">Metriky se počítají automaticky z registrů při buildu (viz <code>scripts/dossier/generate-stats.mjs</code>) — nejsou ručně přepisovány.</p>
 
   {#- Plain anchor jump-nav, not ARIA tabs: this page is one continuous
       document, not a set of discrete tab panels, so real tablist/tabpanel
@@ -50,10 +54,27 @@
     <noscript><p class="text-xs text-white/50">Graf vyžaduje JavaScript. Stav ověřenosti každého tvrzení je vidět přímo u něj v registru tvrzení níže.</p></noscript>
   </section>
 
-  {% set graph = load_data(path="data/dossier/graph.toml") %}
-  <section aria-labelledby="graph-list-heading" class="mb-12">
-    <h2 id="graph-list-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/40">Graf vztahů — textová alternativa</h2>
-    <p class="mb-4 text-xs text-white/50">Úplná textová alternativa k interaktivnímu grafu níže na stránce (sekce „Graf vztahů") — stejná data (tematické okruhy i jednotlivé vztahy), bez závislosti na JavaScriptu, funguje i při selhání CDN Cytoscape.js.</p>
+  {% set graph = load_data(path="data/dossiers/" ~ dossier_slug ~ "/graph.toml") %}
+  {% set entity_section = get_section(path="entities/_index.md") %}
+  {% set relation_section = get_section(path="dossiers/" ~ dossier_slug ~ "/relations/_index.md") %}
+  {% set gap_section = get_section(path="dossiers/" ~ dossier_slug ~ "/gaps/_index.md") %}
+  {% set claim_section = get_section(path="dossiers/" ~ dossier_slug ~ "/claims/_index.md") %}
+  <section aria-labelledby="graf-vztahu-heading" id="graf-vztahu" class="mb-12">
+    <h2 id="graf-vztahu-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/40">Graf vztahů — kanonický registr</h2>
+    <p class="mb-4 text-xs text-white/50">Toto NENÍ zjednodušená legenda ke grafu níže — je to týž kanonický registr, ze kterého se graf vykresluje. Každá entita a každý vztah má vlastní stránku; funguje bez JavaScriptu a při selhání CDN Cytoscape.js beze změny. Plný, filtrovatelný <a href="{{ get_url(path='@/dossiers/' ~ dossier_slug ~ '/relations/_index.md') | safe }}" class="text-[#f3e5c0] underline">registr vztahů</a> tohoto dossieru a globální, dossier-nezávislý <a href="{{ get_url(path='@/entities/_index.md') | safe }}" class="text-[#f3e5c0] underline">registr entit</a> mají vlastní routu.</p>
+
+    <div class="mb-6 flex items-center justify-between">
+      <span class="text-xs text-white/40">Klikněte na uzel nebo hranu pro otevření jeho stránky.</span>
+      <button type="button" class="fs-btn" data-fs-target="graph-view-box" title="Zobrazit na celou obrazovku" aria-label="Zobrazit na celou obrazovku">⛶</button>
+    </div>
+    <div id="graph-view-box" class="fs-box mb-8 overflow-hidden rounded-lg border border-white/10">
+      <div id="dossier-graph-view"
+           data-graph-view
+           data-data-island="dossier-graph-data"
+           data-search-index-url="{{ get_url(path='search-index.json', cachebust=true) | safe }}"
+           style="height: 420px;" class="w-full bg-black/40"></div>
+    </div>
+    <noscript><p class="mb-8 text-xs text-white/50">Interaktivní graf vyžaduje JavaScript. Použijte textový registr níže nebo <a href="{{ get_url(path='@/dossiers/' ~ dossier_slug ~ '/relations/_index.md') | safe }}" class="text-[#f3e5c0] underline">registr vztahů</a>.</p></noscript>
 
     <h3 class="mb-2 text-xs font-semibold uppercase tracking-wide text-white/40">Tematické okruhy</h3>
     <div class="mb-6 grid gap-3 sm:grid-cols-2">
@@ -62,21 +83,34 @@
         <p class="font-semibold text-white">{{ c.label }}</p>
         <p class="mt-1 text-xs text-white/50">{{ c.description }}</p>
         {% if c.gaps and c.gaps | length > 0 %}
-        <p class="mt-2 text-xs text-white/40">Otevřené mezery: {% for g in c.gaps %}<a href="{{ get_url(path='@/dossier/mezery/_index.md') | safe }}" class="text-[#f3e5c0]">{{ g }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>
+        <p class="mt-2 text-xs text-white/40">Otevřené mezery:
+          {% for g in c.gaps %}
+            {% set gap_page = gap_section.pages | filter(attribute="extra.gap_id", value=g) | first %}
+            {% if gap_page %}<a href="{{ gap_page.permalink | safe }}" class="text-[#f3e5c0] no-underline hover:underline">{{ g }}</a>{% if not loop.last %}, {% endif %}{% endif %}
+          {% endfor %}
+        </p>
         {% endif %}
       </div>
       {% endfor %}
     </div>
 
-    <h3 class="mb-2 text-xs font-semibold uppercase tracking-wide text-white/40">Všechny vztahy ({{ graph.edges | length }})</h3>
+    <h3 class="mb-2 text-xs font-semibold uppercase tracking-wide text-white/40">Všechny vztahy ({{ relation_section.pages | length }})</h3>
     <ul class="space-y-1.5 text-sm text-white/70">
-      {% for e in graph.edges %}
-      {%- if e.status == "corroborated" %}{% set_global status_label = "fakt" %}
-      {%- elif e.status == "disputed" %}{% set_global status_label = "sporné" %}
-      {%- elif e.status == "quote" %}{% set_global status_label = "citace" %}
-      {%- elif e.status == "contextual" %}{% set_global status_label = "kontextové" %}
-      {%- else %}{% set_global status_label = e.status %}{% endif -%}
-      <li><span class="edge-status-dot edge-{{ e.status }}"></span>{{ ui::node_label(nodes=graph.nodes, id=e.source) }} <span aria-hidden="true" class="text-white/30">&rarr;</span> <span class="text-white/50">{{ e.label }}</span> <span aria-hidden="true" class="text-white/30">&rarr;</span> {{ ui::node_label(nodes=graph.nodes, id=e.target) }} <span class="text-white/30">({{ status_label }}{% if e.claims %}, {{ e.claims | join(sep=", ") }}{% endif %})</span></li>
+      {% for r in relation_section.pages %}
+      {% set source_entity = entity_section.pages | filter(attribute="extra.entity_id", value=r.extra.source) | first %}
+      {% set target_entity = entity_section.pages | filter(attribute="extra.entity_id", value=r.extra.target) | first %}
+      <li>
+        <span class="edge-status-dot edge-{{ r.extra.status }}"></span>
+        {% if source_entity %}<a href="{{ source_entity.permalink | safe }}" class="text-white/80 no-underline hover:underline">{{ source_entity.title }}</a>{% endif %}
+        <span aria-hidden="true" class="text-white/30">&rarr;</span>
+        <a href="{{ r.permalink | safe }}" class="text-[#f3e5c0] no-underline hover:underline">{{ r.extra.label }}</a>
+        <span aria-hidden="true" class="text-white/30">&rarr;</span>
+        {% if target_entity %}<a href="{{ target_entity.permalink | safe }}" class="text-white/80 no-underline hover:underline">{{ target_entity.title }}</a>{% endif %}
+        <span class="text-white/30">(
+          {%- if r.extra.status == "corroborated" %}fakt{% elif r.extra.status == "disputed" %}sporné{% elif r.extra.status == "quote" %}citace{% else %}kontextové{% endif -%}
+          {%- if r.extra.claims %}, {% for c in r.extra.claims %}{% set clm_page = claim_section.pages | filter(attribute="extra.clm_id", value=c) | first %}{% if clm_page %}<a href="{{ clm_page.permalink | safe }}" class="text-[#f3e5c0]/70 no-underline hover:underline">{{ c }}</a>{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}{% endif -%}
+        )</span>
+      </li>
       {% endfor %}
     </ul>
   </section>
@@ -116,7 +150,7 @@
     {{ section.content | safe }}
   </article>
 
-  {% set updates = load_data(path="data/dossier/updates.toml") %}
+  {% set updates = load_data(path="data/dossiers/" ~ dossier_slug ~ "/updates.toml") %}
   {% if updates.updates %}
   <section aria-labelledby="updates-heading" class="mb-12 mt-12">
     <h2 id="updates-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/40">Historie aktualizací</h2>

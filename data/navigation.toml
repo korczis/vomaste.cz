@@ -1,8 +1,14 @@
 # Primary navigation, shared by the mobile bottom-nav and the desktop
 # sidebar in templates/base.html. `match_prefix` drives active-state
 # detection: the item with the longest current_path-matching prefix wins,
-# so /dossier/zdroje/... highlights "zdroje", not "dossier". "/" is
-# special-cased in the template to require an exact match.
+# so /dossiers/macinka-turek/sources/... highlights "zdroje", not "dossier".
+# "/" is special-cased in the template to require an exact match.
+#
+# Paths are scoped to the "macinka-turek" dossier for now — this is the
+# only authorized dossier on the site. If a second dossier is ever
+# authorized, this file (not the templates) is what needs a new entry;
+# the templates themselves derive their dossier root dynamically from
+# each page's own front matter (extra.dossier), never from this file.
 #
 # `icon` is raw SVG <path d="..."> data for a 24x24 stroke-based icon
 # (viewBox 0 0 24 24), rendered inside a shared <svg> wrapper in the
@@ -17,25 +23,74 @@ order = 10
 icon = "M3 10.5 12 3l9 7.5 M5 9.5V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.5"
 
 [[items]]
+id = "dossiers"
+label = "Dossiery"
+path = "@/dossiers/_index.md"
+match_prefix = "/dossiers/"
+order = 15
+icon = "M4 19.5A2.5 2.5 0 0 1 6.5 17H20 M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"
+
+[[items]]
+id = "entities"
+label = "Entity"
+path = "@/entities/_index.md"
+match_prefix = "/entities/"
+order = 16
+icon = "M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z M4 21a8 8 0 0 1 16 0"
+
+[[items]]
+id = "map"
+label = "Globální mapa"
+path = "@/map/_index.md"
+match_prefix = "/map/"
+order = 17
+icon = "M9 20l-5.447-2.724A1 1 0 0 1 3 16.382V5.618a1 1 0 0 1 1.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0 0 21 18.382V7.618a1 1 0 0 0-.553-.894L15 4m0 13V4m0 0L9 7"
+
+[[items]]
 id = "dossier"
-label = "Dossier"
-path = "@/dossier/_index.md"
-match_prefix = "/dossier/"
+label = "Macinka a Turek"
+path = "@/dossiers/macinka-turek/_index.md"
+match_prefix = "/dossiers/macinka-turek/"
 order = 20
 icon = "M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z M14 3v5h5 M9 13h6 M9 17h6"
 
 [[items]]
 id = "zdroje"
 label = "Zdroje"
-path = "@/dossier/zdroje/_index.md"
-match_prefix = "/dossier/zdroje/"
+path = "@/dossiers/macinka-turek/sources/_index.md"
+match_prefix = "/dossiers/macinka-turek/sources/"
 order = 30
 icon = "M4 19.5A2.5 2.5 0 0 1 6.5 17H20 M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"
 
 [[items]]
+id = "tvrzeni"
+label = "Tvrzení"
+path = "@/dossiers/macinka-turek/claims/_index.md"
+match_prefix = "/dossiers/macinka-turek/claims/"
+order = 35
+icon = "M9 12h6 M9 16h6 M9 8h1 M7 21h10a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2Z"
+
+[[items]]
+id = "kauzy"
+label = "Kauzy"
+path = "@/dossiers/macinka-turek/cases/_index.md"
+match_prefix = "/dossiers/macinka-turek/cases/"
+order = 37
+icon = "M3 7h18M3 7l2 13h14l2-13M8 7V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v3"
+
+
+[[items]]
+id = "vztahy"
+label = "Vztahy"
+path = "@/dossiers/macinka-turek/relations/_index.md"
+match_prefix = "/dossiers/macinka-turek/relations/"
+order = 33
+icon = "M8 7a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z M16 23a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z M8 7v6a4 4 0 0 0 4 4h1"
+
+[[items]]
 id = "mezery"
 label = "Mezery"
-path = "@/dossier/mezery/_index.md"
-match_prefix = "/dossier/mezery/"
+path = "@/dossiers/macinka-turek/gaps/_index.md"
+match_prefix = "/dossiers/macinka-turek/gaps/"
 order = 40
 icon = "M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3 M12 17h.01"

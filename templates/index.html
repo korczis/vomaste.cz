@@ -7,8 +7,12 @@
 {#- Skip link and site branding/nav live once in base.html and wrap every
     page — this template doesn't repeat either. -#}
 {% block content %}
-{% set dossier = get_section(path="dossier/_index.md") %}
-{% set counts = load_data(path="data/dossier-stats.toml") %}
+{#- Not hardcoded to a single dossier: every subsection under
+    content/dossiers/ is a real, independently authorized dossier (see
+    AGENTS.md). Today there is exactly one; the loop below (in the
+    "Aktuálně dostupné dossiery" section) renders however many exist
+    without needing a template change. -#}
+{% set dossiers_root = get_section(path="dossiers/_index.md") %}
 <main>
   <section class="hero-bg relative flex min-h-[90svh] w-full items-center justify-center overflow-hidden bg-gradient-to-b from-gray-900 via-black to-gray-900" aria-labelledby="hero-heading">
     <div class="absolute inset-0 bg-gradient-to-b from-black/55 via-black/10 to-black" aria-hidden="true"></div>
@@ -23,10 +27,10 @@
 
       <div class="mt-2 flex flex-col items-center gap-3 sm:flex-row">
         <a
-          href="{{ get_url(path='@/dossier/_index.md') | safe }}"
+          href="{{ get_url(path='@/dossiers/_index.md') | safe }}"
           class="inline-flex items-center justify-center gap-2 rounded-lg bg-[#f3e5c0] px-6 py-3 text-sm font-semibold text-black transition-colors hover:bg-[#e9d6a0] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#d4af37]"
         >
-          Zobrazit dossier
+          Zobrazit dossiery
           <span aria-hidden="true">&rarr;</span>
         </a>
         <a
@@ -110,9 +114,12 @@
     </div>
   </section>
 
-  {% if dossier %}
+  {% if dossiers_root.subsections | length > 0 %}
   <section aria-labelledby="current-dossier-heading" class="mx-auto max-w-3xl px-6 py-16 sm:py-20">
-    <h2 id="current-dossier-heading" class="text-center text-2xl font-bold text-white sm:text-3xl">Aktuálně dostupný dossier</h2>
+    <h2 id="current-dossier-heading" class="text-center text-2xl font-bold text-white sm:text-3xl">{% if dossiers_root.subsections | length == 1 %}Aktuálně dostupný dossier{% else %}Aktuálně dostupné dossiery{% endif %}</h2>
+    {% for sub_path in dossiers_root.subsections %}
+    {% set dossier = get_section(path=sub_path) %}
+    {% set counts = load_data(path="data/dossiers/" ~ dossier.extra.dossier ~ "/stats.toml") %}
     <div class="mt-10 rounded-xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
       <h3 class="text-xl font-bold text-white">{{ dossier.title }}</h3>
       <p class="mt-2 text-sm leading-relaxed text-white/70">{{ dossier.description }}</p>
@@ -126,19 +133,21 @@
 
       {% if counts %}
       <div class="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
-        {{ ui::stat_tile(value=counts.sources_total, label="Citovaných zdrojů") }}
-        {{ ui::stat_tile(value=counts.cases_total, label="Sledované kauzy") }}
-        {{ ui::stat_tile(value=counts.claims_total, label="Tvrzení v registru") }}
-        {{ ui::stat_tile(value=counts.gaps_total, label="Otevřené mezery") }}
+        {{ ui::stat_tile(value=counts.sources_total, label="Citovaných zdrojů", url=get_url(path="@/dossiers/" ~ dossier.extra.dossier ~ "/sources/_index.md")) }}
+        {{ ui::stat_tile(value=counts.cases_total, label="Sledované kauzy", url=get_url(path="@/dossiers/" ~ dossier.extra.dossier ~ "/cases/_index.md")) }}
+        {{ ui::stat_tile(value=counts.claims_total, label="Tvrzení v registru", url=get_url(path="@/dossiers/" ~ dossier.extra.dossier ~ "/claims/_index.md")) }}
+        {{ ui::stat_tile(value=counts.gaps_total, label="Otevřené mezery", url=get_url(path="@/dossiers/" ~ dossier.extra.dossier ~ "/gaps/_index.md")) }}
       </div>
       {% endif %}
 
       <div class="mt-6 flex flex-wrap gap-3 text-sm">
-        <a href="{{ get_url(path='@/dossier/_index.md') | safe }}#registr-tvrzeni" class="rounded-lg border border-white/15 px-4 py-2 text-white/80 no-underline hover:border-white/30 hover:text-white">Registr tvrzení</a>
-        <a href="{{ get_url(path='@/dossier/zdroje/_index.md') | safe }}" class="rounded-lg border border-white/15 px-4 py-2 text-white/80 no-underline hover:border-white/30 hover:text-white">Registr zdrojů</a>
-        <a href="{{ get_url(path='@/dossier/mezery/_index.md') | safe }}" class="rounded-lg border border-white/15 px-4 py-2 text-white/80 no-underline hover:border-white/30 hover:text-white">Registr mezer</a>
+        <a href="{{ get_url(path=sub_path) | safe }}" class="rounded-lg border border-white/15 px-4 py-2 text-white/80 no-underline hover:border-white/30 hover:text-white">Otevřít dossier</a>
+        <a href="{{ get_url(path='@/dossiers/' ~ dossier.extra.dossier ~ '/claims/_index.md') | safe }}" class="rounded-lg border border-white/15 px-4 py-2 text-white/80 no-underline hover:border-white/30 hover:text-white">Registr tvrzení</a>
+        <a href="{{ get_url(path='@/dossiers/' ~ dossier.extra.dossier ~ '/sources/_index.md') | safe }}" class="rounded-lg border border-white/15 px-4 py-2 text-white/80 no-underline hover:border-white/30 hover:text-white">Registr zdrojů</a>
+        <a href="{{ get_url(path='@/dossiers/' ~ dossier.extra.dossier ~ '/gaps/_index.md') | safe }}" class="rounded-lg border border-white/15 px-4 py-2 text-white/80 no-underline hover:border-white/30 hover:text-white">Registr mezer</a>
       </div>
     </div>
+    {% endfor %}
   </section>
   {% endif %}
 

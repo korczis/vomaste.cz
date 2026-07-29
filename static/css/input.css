@@ -36,6 +36,9 @@
     --status-ongoing-bg: rgba(168, 85, 247, 0.15);
     --status-ongoing-fg: rgb(216, 180, 254);
     --status-ongoing-border: rgba(168, 85, 247, 0.3);
+    --status-contextual-bg: rgba(148, 163, 184, 0.12);
+    --status-contextual-fg: rgb(203, 213, 225);
+    --status-contextual-border: rgba(148, 163, 184, 0.3);
 
     --gap-high-fg: rgb(253, 224, 71);
     --gap-low-fg: rgba(255, 255, 255, 0.6);
@@ -112,6 +115,8 @@
   .stat-tile { border-radius: 0.5rem; border: 1px solid var(--border); padding: 0.75rem; text-align: center; }
   .stat-tile-value { font-size: 1.25rem; font-weight: 700; }
   .stat-tile-label { margin-top: 0.25rem; font-size: 0.75rem; color: var(--text-faint); }
+  .stat-tile-link { display: block; text-decoration: none; transition: border-color 0.15s, background-color 0.15s; }
+  .stat-tile-link:hover, .stat-tile-link:focus-visible { border-color: var(--accent); background-color: rgb(255 255 255 / 0.03); }
 
   .registry-card {
     display: flex; flex-direction: column; border-radius: 0.75rem;
@@ -135,6 +140,8 @@
   .status-opinion::before { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); border-radius: 0; }
   .status-ongoing { background: var(--status-ongoing-bg); color: var(--status-ongoing-fg); border: 1px solid var(--status-ongoing-border); }
   .status-ongoing::before { border-radius: 9999px; }
+  .status-contextual { background: var(--status-contextual-bg); color: var(--status-contextual-fg); border: 1px solid var(--status-contextual-border); }
+  .status-contextual::before { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); border-radius: 1px; width: 0.5em; height: 0.3em; }
   .legend { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; margin-bottom: 2rem; font-size: 0.75rem; color: var(--text-faint); }
 
   .timeline { position: relative; margin: 0; padding-left: 1.5rem; border-left: 1px solid rgba(255,255,255,0.1); }

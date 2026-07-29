@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% import "macros/ui.html" as ui %}
+
+{% block content %}
+<main class="mx-auto max-w-6xl px-6 py-12 text-white">
+  {% set dossier_slug = section.extra.dossier %}
+  {{ ui::page_header(title=section.title, description=section.description, breadcrumb_items=[
+    "Dossier::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"),
+    "Registr kauz",
+  ]) }}
+
+  <article class="dossier-prose mb-10">{{ section.content | safe }}</article>
+
+  <div class="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
+    {{ ui::stat_tile(value=section.pages | length, label="Kauzy celkem") }}
+  </div>
+
+  <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+    {% for p in section.pages %}
+    <a href="{{ p.permalink | safe }}" class="registry-card">
+      <span class="status-badge {{ p.extra.status }} w-fit">{{ p.extra.label }}</span>
+      <span class="font-semibold text-white">{{ p.extra.case_id }} — {{ p.title }}</span>
+      <span class="text-xs text-white/40">{{ p.extra.period }}</span>
+      <span class="mt-2 text-sm text-white/70">{{ p.extra.summary }}</span>
+    </a>
+    {% endfor %}
+  </div>
+
+  {{ ui::back_link_footer(url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"), label="Zpět na celý dossier") }}
+</main>
+{% endblock content %}

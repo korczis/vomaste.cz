@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% import "macros/ui.html" as ui %}
+
+{% block content %}
+<main class="mx-auto max-w-2xl px-6 py-12 text-white">
+  {% set dossier_slug = page.extra.dossier %}
+  {{ ui::page_header(title=page.title, breadcrumb_items=[
+    "Dossier::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"),
+    "Registr vztahů::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/relations/_index.md"),
+    page.extra.rel_id,
+  ]) }}
+
+  {% set entity = get_section(path="entities/_index.md") %}
+  {% set tvrzeni = get_section(path="dossiers/" ~ dossier_slug ~ "/claims/_index.md") %}
+  {% set zdroje = get_section(path="dossiers/" ~ dossier_slug ~ "/sources/_index.md") %}
+  {% set source_entity = entity.pages | filter(attribute="extra.entity_id", value=page.extra.source) | first %}
+  {% set target_entity = entity.pages | filter(attribute="extra.entity_id", value=page.extra.target) | first %}
+
+  <p class="mb-6 flex flex-wrap items-center gap-2 text-lg">
+    {% if source_entity %}<a href="{{ source_entity.permalink | safe }}" class="font-semibold text-white no-underline hover:underline">{{ source_entity.title }}</a>{% endif %}
+    <span aria-hidden="true" class="text-white/30">&rarr;</span>
+    <span class="text-[#f3e5c0]">{{ page.extra.label }}</span>
+    <span aria-hidden="true" class="text-white/30">&rarr;</span>
+    {% if target_entity %}<a href="{{ target_entity.permalink | safe }}" class="font-semibold text-white no-underline hover:underline">{{ target_entity.title }}</a>{% endif %}
+  </p>
+
+  <p class="mb-6">
+    <span class="status-badge {% if page.extra.status == "corroborated" %}status-corroborated{% elif page.extra.status == "disputed" %}status-disputed{% elif page.extra.status == "quote" %}status-quote{% else %}status-contextual{% endif %}">
+      {%- if page.extra.status == "corroborated" %}FAKT{% elif page.extra.status == "disputed" %}SPORNÉ{% elif page.extra.status == "quote" %}CITACE{% else %}KONTEXTOVÉ{% endif -%}
+    </span>
+  </p>
+
+  <table class="mb-8 w-full text-left text-sm dossier-prose">
+    <tbody class="divide-y divide-white/10">
+      <tr><th class="w-40 py-2 pr-4 align-top text-white/50">Typ vztahu</th><td class="py-2 font-mono text-xs">{{ page.extra.relation_type }}</td></tr>
+      {% if page.extra.claims %}
+      <tr><th class="w-40 py-2 pr-4 align-top text-white/50">Tvrzení</th><td class="py-2">
+        {% for c in page.extra.claims %}
+          {% set clm_page = tvrzeni.pages | filter(attribute="extra.clm_id", value=c) | first %}
+          {% if clm_page %}<a href="{{ clm_page.permalink | safe }}" class="mr-2 inline-block rounded bg-white/5 px-2 py-0.5 font-mono text-xs text-[#f3e5c0] no-underline hover:bg-white/10">{{ c }}</a>{% endif %}
+        {% endfor %}
+      </td></tr>
+      {% endif %}
+      {% if page.extra.sources %}
+      <tr><th class="w-40 py-2 pr-4 align-top text-white/50">Zdroje</th><td class="py-2">
+        {% for s in page.extra.sources %}
+          {% set src_page = zdroje.pages | filter(attribute="extra.src_id", value=s) | first %}
+          {% if src_page %}<a href="{{ src_page.permalink | safe }}" class="mr-2 inline-block rounded bg-white/5 px-2 py-0.5 font-mono text-xs text-[#f3e5c0] no-underline hover:bg-white/10">{{ s }}</a>{% endif %}
+        {% endfor %}
+      </td></tr>
+      {% endif %}
+    </tbody>
+  </table>
+
+  <article class="dossier-prose">
+    {{ page.content | safe }}
+  </article>
+
+  {{ ui::back_link_footer(url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/relations/_index.md"), label="Zpět na registr vztahů") }}
+</main>
+{% endblock content %}

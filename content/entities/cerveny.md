@@ -1,0 +1,24 @@
++++
+title = "Igor Červený"
+template = "entity.html"
+weight = 17
+aliases = ["/dossiers/macinka-turek/entities/cerveny/"]
+
+[extra]
+record_type = "entity"
+entity_id = "cerveny"
+entity_type = "person"
+depth = 1
+subject = false
+publication_role = "context"
+dossier_enabled = false
+dossier_status = "not_authorized"
+dossiers = ["macinka-turek"]
+cluster = "politicke-role"
+claims = ["CLM-43"]
+sources = ["SRC-49", "SRC-50"]
++++
+
+Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext.
+
+Poslanec za Motoristy sobě; 23. 2. 2026 jmenován ministrem životního prostředí jako nástupce Petra Macinky v čele resortu.

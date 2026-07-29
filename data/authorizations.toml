@@ -1,0 +1,29 @@
+# Structured transcription of AGENTS.md's "Content about real parties" log,
+# for scripts/dossier/validate-authorization.mjs to check dossier front
+# matter against. This file is DERIVED FROM, not a substitute for, AGENTS.md
+# — AGENTS.md's prose log is the actual legal/editorial record and is
+# append-only per CLAUDE.md; if the two ever disagree, AGENTS.md wins.
+# Adding an entry here without a corresponding new dated subsection in
+# AGENTS.md is not a valid authorization — see AGENTS.md's own instructions
+# on how a new authorization gets recorded.
+
+[[authorizations]]
+id = "AUTH-2026-07-21-A"
+authorized_at = "2026-07-21"
+subjects = ["macinka", "turek"]
+agents_md_section = "Authorized subject: Petr Macinka and Filip Turek (on the record)"
+scope_summary = "Traffic accident involving Turek's car and an ambulance, the political fallout, and Macinka's public defense of Turek."
+
+[[authorizations]]
+id = "AUTH-2026-07-21-B"
+authorized_at = "2026-07-21"
+subjects = ["macinka", "turek"]
+agents_md_section = "Scope extension, 2026-07-21: broader political profile"
+scope_summary = "Public political careers (electoral history, party role); the 2024 photograph/candlestick-collection controversy; the October 2025 Deník N deleted-posts allegation."
+
+[[authorizations]]
+id = "AUTH-2026-07-22-A"
+authorized_at = "2026-07-22"
+subjects = ["turek"]
+agents_md_section = "Scope extension, 2026-07-22: additional controversies"
+scope_summary = "Criminal complaint (domestic violence/rape) and its statute-of-limitations closure; 2017 Saudi embassy incident; 2026 unauthorized-structure fines; Zapper Club and the Ministry of Health warning; racing-career record; diplomat-meetings criticism."

@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% import "macros/ui.html" as ui %}
+
+{% block content %}
+<main class="mx-auto max-w-6xl px-6 py-12 text-white">
+  {{ ui::page_header(title=section.title, description=section.description, breadcrumb_items=[
+    "Domů::" ~ get_url(path="@/_index.md"),
+    "Dossiery",
+  ]) }}
+
+  <article class="dossier-prose mb-10">{{ section.content | safe }}</article>
+
+  {% if section.subsections | length == 0 %}
+  {{ ui::empty_state(message="Zatím zde není žádný autorizovaný dossier.") }}
+  {% else %}
+  <div class="grid gap-4">
+    {% for sub_path in section.subsections %}
+    {% set d = get_section(path=sub_path) %}
+    {% set counts = load_data(path="data/dossiers/" ~ d.extra.dossier ~ "/stats.toml") %}
+    <a href="{{ get_url(path=sub_path) | safe }}" class="registry-card">
+      <span class="flex flex-wrap items-center gap-2">
+        <span class="font-semibold text-white">{{ d.title }}</span>
+        {% if d.extra.dossier_type %}<span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-white/50">{{ d.extra.dossier_type }}</span>{% endif %}
+      </span>
+      <span class="mt-2 text-sm text-white/70">{{ d.description }}</span>
+      {% if counts %}
+      <span class="mt-3 flex flex-wrap gap-3 text-xs text-white/40">
+        <span>{{ counts.sources_total }} zdrojů</span>
+        <span>{{ counts.claims_total }} tvrzení</span>
+        <span>{{ counts.cases_total }} kauzy</span>
+        <span>{{ counts.gaps_total }} otevřených mezer</span>
+        <span>{{ counts.entities_total }} entit</span>
+        <span>{{ counts.relations_total }} vztahů</span>
+      </span>
+      {% endif %}
+      {% if d.extra.authorization.authorized %}
+      <span class="mt-2 text-[0.65rem] text-white/30">autorizováno: {{ d.extra.authorization.record_ids | join(sep=", ") }}</span>
+      {% endif %}
+    </a>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {{ ui::back_link_footer(url=get_url(path="@/_index.md"), label="Zpět na hlavní stránku") }}
+</main>
+{% endblock content %}

@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% import "macros/ui.html" as ui %}
+
+{% block content %}
+<main class="mx-auto max-w-2xl px-6 py-12 text-white">
+  {% set dossier_slug = page.extra.dossier %}
+  {{ ui::page_header(title=page.extra.clm_id, breadcrumb_items=[
+    "Dossier::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"),
+    "Registr tvrzení::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/claims/_index.md"),
+    page.extra.clm_id,
+  ]) }}
+
+  <p class="mb-6"><span class="status-badge {{ page.extra.status }}">{{ page.extra.status_label }}</span></p>
+
+  <p class="mb-8 text-lg leading-relaxed text-white/90">{{ page.extra.summary }}</p>
+
+  {% if page.extra.sources %}
+  <table class="mb-8 w-full text-left text-sm dossier-prose">
+    <tbody class="divide-y divide-white/10">
+      <tr><th class="w-40 py-2 pr-4 align-top text-white/50">Zdroje</th><td class="py-2">
+        {% set zdroje = get_section(path="dossiers/" ~ dossier_slug ~ "/sources/_index.md") %}
+        {% for s in page.extra.sources %}
+          {% set src_page = zdroje.pages | filter(attribute="extra.src_id", value=s) | first %}
+          {% if src_page %}
+          <a href="{{ src_page.permalink | safe }}" class="mr-2 inline-block rounded bg-white/5 px-2 py-0.5 font-mono text-xs text-[#f3e5c0] no-underline hover:bg-white/10">{{ s }}</a>
+          {% else %}
+          <span class="mr-2 inline-block rounded bg-white/5 px-2 py-0.5 font-mono text-xs text-white/40">{{ s }}</span>
+          {% endif %}
+        {% endfor %}
+      </td></tr>
+    </tbody>
+  </table>
+  {% endif %}
+
+  {% set kauzy = get_section(path="dossiers/" ~ dossier_slug ~ "/cases/_index.md") %}
+  {% set_global parent_case = "" %}
+  {% for cp in kauzy.pages %}
+    {% if cp.extra.claims and page.extra.clm_id in cp.extra.claims %}
+      {% set_global parent_case = cp.permalink %}
+      {% set_global parent_case_id = cp.extra.case_id %}
+    {% endif %}
+  {% endfor %}
+  {% if parent_case %}
+  <p class="mb-8 text-sm text-white/60">Součást kauzy: <a href="{{ parent_case | safe }}" class="text-[#f3e5c0] underline">{{ parent_case_id }}</a></p>
+  {% endif %}
+
+  <article class="dossier-prose">
+    {{ page.content | safe }}
+  </article>
+
+  {{ ui::back_link_footer(url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"), label="Zpět na celý dossier") }}
+</main>
+{% endblock content %}

@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% import "macros/ui.html" as ui %}
+
+{% block content %}
+<main class="mx-auto max-w-6xl px-6 py-12 text-white">
+  {% set dossier_slug = section.extra.dossier %}
+  {{ ui::page_header(title=section.title, description=section.description, breadcrumb_items=[
+    "Dossier::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"),
+    "Registr tvrzení",
+  ]) }}
+
+  <article class="dossier-prose mb-10">{{ section.content | safe }}</article>
+
+  <div class="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
+    {{ ui::stat_tile(value=section.pages | length, label="Tvrzení celkem") }}
+    {% set corroborated = section.pages | filter(attribute="extra.status", value="status-corroborated") %}
+    {{ ui::stat_tile(value=corroborated | length, label="Corroborated") }}
+    {% set disputed = section.pages | filter(attribute="extra.status", value="status-disputed") %}
+    {{ ui::stat_tile(value=disputed | length, label="Sporné") }}
+    {% set quotes = section.pages | filter(attribute="extra.status", value="status-quote") %}
+    {{ ui::stat_tile(value=quotes | length, label="Citace") }}
+  </div>
+
+  <div class="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+    {% for p in section.pages %}
+    <a href="{{ p.permalink | safe }}" class="registry-card">
+      <span class="font-mono text-xs text-[#f3e5c0]">{{ p.extra.clm_id }}</span>
+      <span class="status-badge {{ p.extra.status }} mt-1 inline-block w-fit">{{ p.extra.status_label }}</span>
+      <span class="mt-2 text-sm text-white/70">{{ p.extra.summary }}</span>
+      {% if p.extra.sources %}
+      <span class="mt-2 flex flex-wrap gap-1">
+        {% for s in p.extra.sources %}<span class="rounded bg-white/5 px-1.5 py-0.5 font-mono text-[0.6rem] text-white/50">{{ s }}</span>{% endfor %}
+      </span>
+      {% endif %}
+    </a>
+    {% endfor %}
+  </div>
+
+  {{ ui::back_link_footer(url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"), label="Zpět na celý dossier") }}
+</main>
+{% endblock content %}
