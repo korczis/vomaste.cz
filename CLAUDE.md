@@ -1,0 +1,35 @@
+# CLAUDE.md
+
+This is Claude Code's entry point for this repository. The full rules —
+the dossier data model, editorial rules, and the append-only authorization
+log for content about real people — live in `AGENTS.md`. Read it in full
+before touching `content/`, `templates/`, or `scripts/dossier/`.
+
+@AGENTS.md
+
+## Claude-Code-specific notes
+
+- Treat the "Content about real parties" log in `AGENTS.md` as append-only
+  and load-bearing: never edit or remove an existing entry, even to "clean
+  up" wording or fix a typo. A new scope extension is always a brand-new
+  dated subsection, added only after the site owner has explicitly
+  authorized it on the record in the current conversation — not inferred
+  from a request to "add more detail" or "cover X too."
+- Before reporting any dossier edit as done, run `npm run build`
+  (`validate:dossier` → `css:build` → `js:build` → `zola build` →
+  `verify:anchors`) and confirm it exits clean. The validator and
+  anchor-checker are the actual spec for this content, not a formality —
+  a passing build is the bar, not a nice-to-have.
+- `npm run dev` starts `zola serve` as a long-running process (it never
+  exits on its own). Run it with a background-capable tool and watch its
+  log for "Web server is available" rather than waiting on it
+  synchronously.
+- Adding a new CLM/SRC/GAP item touches three places that must stay
+  consistent: the front-matter schema of that content type, the
+  corresponding template, and the checks in `scripts/dossier/`. A new
+  front-matter field with no template reading it, or a template field with
+  no validator coverage, is a half-finished change — finish all three
+  before calling it done.
+- When in doubt about whether a piece of content falls inside the
+  currently authorized scope, stop and ask — do not extend coverage to a
+  new person, company, or controversy on your own judgment.
