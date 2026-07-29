@@ -24,9 +24,10 @@ rozporu, vítězí konstituce a autorizační log.
   v patičce odkaz „✎ Navrhnout opravu této stránky" vedoucí na přesný
   zdrojový soubor.
 - **Reakce subjektů a protidůkazy** — subjekty dossierů mohou žádat
-  opravu, dodat vyjádření nebo protidůkazy (veřejně přes PR/issue, nebo
-  e-mailem na corrections@vomaste.cz — také veřejný kanál). Podání samo
-  dataset nemění; projde přezkumem. Subjekty nemají redakční veto.
+  opravu, dodat vyjádření nebo protidůkazy veřejným pull requestem nebo
+  [GitHub issue](https://github.com/korczis/vomaste.cz/issues/new).
+  Podání samo dataset nemění; projde přezkumem. Subjekty nemají redakční
+  veto.
 
 ## Co přispět NELZE bez předchozí autorizace
 

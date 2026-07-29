@@ -19,6 +19,13 @@
   {%- set og_image = page.extra.og_image | default(value=section.extra.og_image | default(value=config.extra.og_image)) -%}
   <title>{{ page_title }}</title>
   <meta name="description" content="{{ page_description }}">
+  {%- set page_keywords = page.extra.keywords | default(value=section.extra.keywords | default(value=config.extra.keywords | default(value=""))) %}
+  {% if page_keywords %}<meta name="keywords" content="{{ page_keywords }}">{% endif %}
+  {% if config.extra.author %}<meta name="author" content="{{ config.extra.author }}">{% endif %}
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="generator" content="Zola">
+  <meta name="apple-mobile-web-app-title" content="{{ config.title }}">
+  <meta name="application-name" content="{{ config.title }}">
   {% if current_url %}<link rel="canonical" href="{{ current_url | safe }}">{% endif %}
 
   <link rel="icon" type="image/svg+xml" href="{{ get_url(path='favicon.svg') | safe }}">
@@ -30,6 +37,8 @@
   <meta property="og:title" content="{{ page_title }}">
   <meta property="og:description" content="{{ page_description }}">
   <meta property="og:type" content="{{ page.extra.og_type | default(value=config.extra.og_type) }}">
+  {%- set page_updated = page.extra.updated | default(value=section.extra.updated | default(value="")) %}
+  {% if page_updated %}<meta property="article:modified_time" content="{{ page_updated }}T00:00:00+02:00">{% endif %}
   <meta property="og:locale" content="{{ page.extra.lang | default(value=config.extra.lang | default(value="en")) }}">
   {% if current_url %}<meta property="og:url" content="{{ current_url | safe }}">{% endif %}
   {% if og_image %}

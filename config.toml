@@ -34,6 +34,8 @@ og_image_width = 1200
 og_image_height = 630
 og_image_type = "image/jpeg"
 og_image_alt = "vomaste.cz — Open Intelligence Commons. Nevěřte autorovi, zkontrolujte data, zdroje a historii změn."
+author = "vomaste.cz / korczis"
+keywords = "dossier, otevřená data, open source, OSINT, investigativní data, veřejný zájem, transparentnost, ověřitelné zdroje, registr tvrzení, JSON-LD, Git"
 # Čtvercová varianta pro platformy preferující 1:1 (WhatsApp, Telegram…):
 # static/images/og-image-square.jpg (1200×1200) — stejný vizuál.
 

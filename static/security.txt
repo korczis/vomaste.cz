@@ -1,0 +1,5 @@
+Contact: https://github.com/korczis/vomaste.cz/security/advisories/new
+Policy: https://github.com/korczis/vomaste.cz/blob/master/SECURITY.md
+Preferred-Languages: cs, en
+Expires: 2027-07-30T00:00:00.000Z
+Canonical: https://vomaste.cz/.well-known/security.txt

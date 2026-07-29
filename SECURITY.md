@@ -16,7 +16,8 @@ statický web nemá starší podporované větve).
 ## Co sem naopak NEpatří
 
 - **Věcná oprava obsahu** (chybný údaj, mrtvý zdroj, právo na odpověď)
-  → veřejný PR/issue nebo corrections@vomaste.cz, viz
+  → veřejný pull request nebo
+  [GitHub issue](https://github.com/korczis/vomaste.cz/issues/new), viz
   [CONTRIBUTING.md](CONTRIBUTING.md).
 - **Citlivé podněty, důkazy, whistleblowing** → tento projekt zatím
   **nemá žádný důvěrný intake kanál**. Ani formulář pro hlášení
