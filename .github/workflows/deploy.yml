@@ -54,6 +54,9 @@ jobs:
       - name: Generate authorization-candidates report (not published)
         run: npm run generate:candidates
 
+      - name: Update discovery log (not published)
+        run: npm run generate:discovery-log
+
       - name: Build CSS
         run: npm run css:build
 

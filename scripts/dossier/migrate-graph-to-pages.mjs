@@ -94,14 +94,28 @@ function main() {
   const graphText = readFileSync(GRAPH_TOML, "utf8");
   const { nodes, edges } = parseBlocks(graphText);
 
+  // Per-node relation ids, for discovered_via provenance — purely
+  // descriptive (see docs/entity-discovery.md); never used to decide
+  // whether something gets published.
+  const relationsByNode = new Map();
+  for (const e of edges) {
+    for (const nid of [e.source, e.target]) {
+      if (!relationsByNode.has(nid)) relationsByNode.set(nid, []);
+      relationsByNode.get(nid).push(e.id);
+    }
+  }
+
   mkdirSync(ENTITIES_DIR, { recursive: true });
   mkdirSync(RELATIONS_DIR, { recursive: true });
+
+  const today = new Date().toISOString().slice(0, 10);
 
   nodes.forEach((n, i) => {
     const filePath = path.join(ENTITIES_DIR, `${n.id}.md`);
     let dossiers = [SLUG];
     let claims = n.claims || [];
     let sources = n.sources || [];
+    let discoveredAt = today;
     if (existsSync(filePath)) {
       const existing = readFileSync(filePath, "utf8");
       const fmEnd = existing.indexOf("\n+++", 3);
@@ -109,6 +123,34 @@ function main() {
       dossiers = union(extractArrayField(fm, "dossiers"), [SLUG]);
       claims = union(extractArrayField(fm, "claims"), n.claims || []);
       sources = union(extractArrayField(fm, "sources"), n.sources || []);
+      // discovered_at is when this entity FIRST appeared — never overwritten
+      // by a later re-run, the same way `claims`/`sources` accumulate rather
+      // than reset.
+      discoveredAt = extractField(fm, "discovered_at") || today;
+    }
+
+    const relationIds = relationsByNode.get(n.id) || [];
+    // Purely descriptive coverage label for reporting — never an input to
+    // any publishing decision. Subject entities (already human-authorized)
+    // are labeled by the depth of their existing dossier; context entities
+    // are capped at "referenced"/"discovered"/"contextual" — "developing"
+    // and "full" only ever describe an *already-authorized* dossier, so
+    // this label can never read as "on track to become one automatically".
+    let coverageState;
+    if (n.subject) {
+      // Subject entities only ever reach dossier_status="authorized" via
+      // scripts/dossier/authorize-entity.mjs, and a dossier's actual claims/
+      // sources are authored separately afterward — by the time that's
+      // happened, "full" describes it accurately. There is currently no
+      // real case of a "developing" (authorized-but-still-being-written)
+      // dossier, so this doesn't invent a threshold that isn't real yet.
+      coverageState = "full";
+    } else if (claims.length === 0) {
+      coverageState = "referenced";
+    } else if (relationIds.length <= 1) {
+      coverageState = "discovered";
+    } else {
+      coverageState = "contextual";
     }
 
     const bodyLines = [];
@@ -137,6 +179,9 @@ subject = ${n.subject ? "true" : "false"}
 publication_role = "${n.subject ? "subject" : "context"}"
 dossier_enabled = ${n.subject ? "true" : "false"}
 dossier_status = "${n.subject ? "authorized" : "not_authorized"}"
+coverage_state = "${coverageState}"
+discovered_at = "${discoveredAt}"
+discovered_via = ${tomlArray(relationIds)}
 dossiers = ${tomlArray(dossiers)}
 ${n.cluster ? `cluster = "${tomlEscape(n.cluster)}"\n` : ""}claims = ${tomlArray(claims)}
 sources = ${tomlArray(sources)}

@@ -10,6 +10,16 @@
 // text-alternative registry list next to this graph — this view is a
 // progressive-enhancement visualization of that same data, not a second
 // source of truth.
+//
+// Resize/fullscreen: Cytoscape caches its canvas dimensions at init time
+// and does NOT observe container size changes on its own — every resize
+// (sidebar toggle, fullscreen enter/exit, orientation change) needs an
+// explicit cy.resize() call or the canvas is left at its stale size. This
+// is the actual cause of "graph looks broken after resize/fullscreen",
+// independent of renderer choice. `cy.resize()` only recomputes the
+// canvas's pixel bounding box — it does NOT touch pan/zoom/layout, so
+// calling it never moves nodes or resets the camera.
+import { resizeHandlers } from "./fullscreen.js";
 const STATUS_COLOR = { corroborated: "#4ade80", disputed: "#facc15", quote: "#93c5fd", contextual: "rgba(255,255,255,0.35)" };
 const TYPE_COLOR = {
   person: "#f3e5c0",
@@ -122,6 +132,39 @@ export async function initGraphView(containerId, dataIslandId, searchIndexUrl) {
   cy.on("mouseout", "node, edge", () => {
     container.style.cursor = "";
   });
+
+  // rAF-batched resize: cy.resize() is cheap (just re-reads the container's
+  // current pixel box) but coalescing bursts of ResizeObserver callbacks
+  // (e.g. during a CSS transition) into one call per frame avoids doing it
+  // dozens of times for a single visual resize.
+  let resizePending = false;
+  const scheduleResize = () => {
+    if (resizePending) return;
+    resizePending = true;
+    requestAnimationFrame(() => {
+      resizePending = false;
+      cy.resize();
+    });
+  };
+
+  // Covers every resize cause, not just fullscreen: sidebar collapse,
+  // context-panel open/close, viewport/orientation change, DevTools, font
+  // loading reflow — anything that changes this container's box.
+  if (window.ResizeObserver) {
+    new ResizeObserver(scheduleResize).observe(container);
+  } else {
+    window.addEventListener("resize", scheduleResize);
+  }
+
+  // The fullscreen module (assets/js/modules/fullscreen.js) calls
+  // resizeHandlers[boxId]() once per fullscreenchange, timed to run after
+  // the browser has actually applied the fullscreen box's new size — the
+  // ResizeObserver above would eventually catch this too, but registering
+  // explicitly avoids relying on timing between two independent observers.
+  const fsBox = container.closest(".fs-box");
+  if (fsBox && fsBox.id) {
+    resizeHandlers[fsBox.id] = scheduleResize;
+  }
 
   return cy;
 }

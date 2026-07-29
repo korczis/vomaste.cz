@@ -94,7 +94,20 @@ for (const file of entityFiles) {
   if (publicationRole === "subject" && dossierStatus !== "authorized") {
     err(`entities/${file}: publication_role is "subject" but dossier_status is "${dossierStatus}", not "authorized" — a subject entity must belong to an actually-authorized dossier.`);
   }
-  entityById.set(id, { file, publicationRole, dossierEnabled, dossierStatus });
+
+  const coverageState = extractField(fm, "coverage_state");
+  const COVERAGE_STATES = ["discovered", "referenced", "contextual", "developing", "full"];
+  if (!COVERAGE_STATES.includes(coverageState)) {
+    err(`entities/${file}: coverage_state "${coverageState}" is not one of ${COVERAGE_STATES.join("|")}`);
+  }
+  if (publicationRole === "context" && ["developing", "full"].includes(coverageState)) {
+    err(`entities/${file}: publication_role is "context" but coverage_state is "${coverageState}" — those two states describe an already-authorized dossier only; a context entity's coverage_state must be discovered|referenced|contextual. Coverage state is descriptive metadata, never itself a path to publication, but it must not read as "on track to become one automatically".`);
+  }
+  if (!extractField(fm, "discovered_at")) {
+    err(`entities/${file}: missing discovered_at provenance field.`);
+  }
+
+  entityById.set(id, { file, publicationRole, dossierEnabled, dossierStatus, coverageState });
 }
 
 // --- check every dossier ---

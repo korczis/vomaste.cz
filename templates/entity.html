@@ -17,6 +17,7 @@
     {% else %}
     <span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-white/40">kontextová entita</span>
     {% endif %}
+    <span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-white/40">coverage: {{ page.extra.coverage_state }}</span>
   </p>
 
   {% if page.extra.publication_role != "subject" %}
@@ -33,6 +34,18 @@
           <a href="{{ dossier_page.permalink | safe }}" class="mr-2 inline-block rounded bg-white/5 px-2 py-0.5 text-xs text-[#f3e5c0] no-underline hover:bg-white/10">{{ dossier_page.title }}</a>
         {% endfor %}
       </td></tr>
+      <tr><th class="w-40 py-2 pr-4 align-top text-white/50">Zjištěno</th><td class="py-2">{{ page.extra.discovered_at }}</td></tr>
+      {% if page.extra.discovered_via %}
+      <tr><th class="w-40 py-2 pr-4 align-top text-white/50">Objeveno přes</th><td class="py-2">
+        {% for d in page.extra.dossiers %}
+          {% set vztahy = get_section(path="dossiers/" ~ d ~ "/relations/_index.md") %}
+          {% for r in page.extra.discovered_via %}
+            {% set rel_page = vztahy.pages | filter(attribute="extra.rel_id", value=r) | first %}
+            {% if rel_page %}<a href="{{ rel_page.permalink | safe }}" class="mr-2 inline-block rounded bg-white/5 px-2 py-0.5 font-mono text-[0.65rem] text-[#f3e5c0] no-underline hover:bg-white/10">{{ r }}</a>{% endif %}
+          {% endfor %}
+        {% endfor %}
+      </td></tr>
+      {% endif %}
       {% if page.extra.claims %}
       <tr><th class="w-40 py-2 pr-4 align-top text-white/50">Tvrzení</th><td class="py-2">
         {% for d in page.extra.dossiers %}
