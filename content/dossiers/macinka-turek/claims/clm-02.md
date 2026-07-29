@@ -17,4 +17,4 @@ sources = ["SRC-11", "SRC-13"]
 subjects = ["turek"]
 +++
 
-Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#registr-tvrzeni).
+Tato stránka je kanonický záznam tvrzení CLM-02 — shrnutí, stav a zdroje výše jsou úplné. Se zdrojem tohoto tvrzení se překrývá CLM-01, CLM-03. Hlavní stránka dossieru zobrazuje tentýž text ze stejného zdroje; build proces ověřuje, že se neliší.

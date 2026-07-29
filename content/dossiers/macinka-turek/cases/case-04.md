@@ -20,5 +20,9 @@ sources = ["SRC-02", "SRC-06", "SRC-07", "SRC-08", "SRC-19", "SRC-20"]
 subjects = ["turek"]
 +++
 
-Plné znění, zdroje a kontext tohoto případu jsou v [hlavním přehledu
-dossieru](@/dossiers/macinka-turek/_index.md#dopravni-nehoda-2026).
+Tato stránka je kanonický záznam kauzy CASE-04 — období, stav, tvrzení a
+zdroje v tabulce výše i shrnutí nad tímto odstavcem jsou úplné. Výsledek
+policejního vyšetřování nebyl v době psaní znám a tato stránka netvrdí
+vinu ani nevinu — to platí zde stejně jako na hlavní stránce dossieru,
+která zobrazuje tentýž text ze stejného zdroje (build proces ověřuje, že
+se neliší).

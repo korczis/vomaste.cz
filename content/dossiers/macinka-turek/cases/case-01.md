@@ -20,5 +20,7 @@ sources = ["SRC-12", "SRC-14"]
 subjects = ["macinka", "turek"]
 +++
 
-Plné znění, zdroje a kontext tohoto případu jsou v [hlavním přehledu
-dossieru](@/dossiers/macinka-turek/_index.md#kauza-z-roku-2024-fotografie-a-sbirka-svicnu).
+Tato stránka je kanonický záznam kauzy CASE-01 — období, stav, tvrzení a
+zdroje v tabulce výše i shrnutí nad tímto odstavcem jsou úplné. Hlavní
+stránka dossieru zobrazuje tentýž text ze stejného zdroje; build proces
+ověřuje, že se neliší.

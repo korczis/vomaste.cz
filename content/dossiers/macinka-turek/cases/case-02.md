@@ -20,5 +20,10 @@ sources = ["SRC-28", "SRC-29", "SRC-30", "SRC-31"]
 subjects = ["turek"]
 +++
 
-Plné znění, zdroje a kontext tohoto případu jsou v [hlavním přehledu
-dossieru](@/dossiers/macinka-turek/_index.md#trestni-oznameni-obvineni-z-domaciho-nasili-a-znasilneni).
+Tato stránka je kanonický záznam kauzy CASE-02 — období, stav, tvrzení a
+zdroje v tabulce výše i shrnutí nad tímto odstavcem jsou úplné. Odložení
+věci pro promlčení je procesní výsledek, který znemožnil trestní stíhání
+kvůli uplynutí času — není to zjištění o tom, zda je obvinění pravdivé,
+nebo nepravdivé; to platí zde stejně jako na hlavní stránce dossieru,
+která zobrazuje tentýž text ze stejného zdroje (build proces ověřuje, že
+se neliší).

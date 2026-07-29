@@ -17,4 +17,4 @@ sources = ["SRC-31"]
 subjects = ["turek"]
 +++
 
-Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#registr-tvrzeni).
+Tato stránka je kanonický záznam tvrzení CLM-27 — shrnutí, stav a zdroje výše jsou úplné. Součástí téže kauzy jsou i CLM-25, CLM-26. Hlavní stránka dossieru zobrazuje tentýž text ze stejného zdroje; build proces ověřuje, že se neliší.

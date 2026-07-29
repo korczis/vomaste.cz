@@ -20,5 +20,9 @@ sources = ["SRC-15", "SRC-16", "SRC-21", "SRC-22", "SRC-47", "SRC-48"]
 subjects = ["turek"]
 +++
 
-Plné znění, zdroje a kontext tohoto případu jsou v [hlavním přehledu
-dossieru](@/dossiers/macinka-turek/_index.md#kauza-z-rijna-2025-smazane-prispevky-na-facebooku).
+Tato stránka je kanonický záznam kauzy CASE-03 — období, stav, tvrzení a
+zdroje v tabulce výše i shrnutí nad tímto odstavcem jsou úplné.
+Autenticita příspěvků je sporná a Turek autorství těch nejzávažnějších
+popírá — to zůstává otevřené zde stejně jako na hlavní stránce dossieru,
+která zobrazuje tentýž text ze stejného zdroje (build proces ověřuje, že
+se neliší).

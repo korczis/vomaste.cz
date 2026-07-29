@@ -21,4 +21,6 @@ claims = ["CLM-03", "CLM-24"]
 sources = ["SRC-11", "SRC-27"]
 +++
 
-Hlavní subjekt autorizovaného dossieru. Viz plné znění a kontext v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#kdo).
+Hlavní subjekt autorizovaného dossieru. Tato stránka je kanonický záznam
+této entity — dossiery, tvrzení, zdroje a vztahy v tabulce a sekcích níže
+jsou úplné; nejde o zkrácenou verzi něčeho podrobnějšího jinde.

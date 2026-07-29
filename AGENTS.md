@@ -365,6 +365,26 @@ what the cited reporting itself already discloses. It does not authorize any
 topic beyond the six items listed above without a further, separate,
 on-record decision.
 
+### Structural change, 2026-07-29: entity dossiers plus a generated aggregate
+
+Authorized by the site owner, explicitly and on the record, 2026-07-29: the
+single dossier at `/dossiers/macinka-turek/` is restructured into two
+entity-scoped dossiers, `/dossiers/petr-macinka/` and
+`/dossiers/filip-turek/`, with `/dossiers/macinka-turek/` kept as a
+generated, clearly-labeled aggregate view (not a third dossier, no
+canonical content of its own).
+
+This is a **structural** change, not a scope change: it does not authorize
+any subject, topic, or controversy beyond what the three authorization
+entries above already cover. Every claim, source, case, gap, and relation
+in the two entity dossiers must be one of the already-authorized records
+above, tagged by which of the two subjects it concerns — never new
+content, never a new topic, never a new named third party. If the entity
+dossiers and the aggregate view ever show different facts for the same
+claim, that is a bug, not a feature; the underlying record is still
+exactly one canonical record per AGENTS.md's existing single-source-of-
+truth rule.
+
 ## Metadata
 
 Metadata (title, description, canonical, Open Graph) is declared once in

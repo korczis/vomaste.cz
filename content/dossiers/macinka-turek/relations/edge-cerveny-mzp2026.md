@@ -17,4 +17,4 @@ sources = ["SRC-49", "SRC-50"]
 subjects = ["macinka"]
 +++
 
-Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#graf-vztahu). Status: nezávisle potvrzený fakt.
+Tato stránka je kanonický záznam vztahu edge-cerveny-mzp2026 — typ vztahu, podporující tvrzení a zdroje v tabulce výše jsou úplné. Status FAKT znamená, že vztah je doložen nezávisle potvrzenými zdroji, ne jen tvrzením jedné strany. Hlavní stránka dossieru vykresluje interaktivní graf ze stejných dat.

@@ -17,4 +17,4 @@ sources = ["SRC-15"]
 subjects = ["turek"]
 +++
 
-Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#graf-vztahu). Status: sporné, neuzavřené tvrzení.
+Tato stránka je kanonický záznam vztahu edge-turek-kauza2025 — typ vztahu, podporující tvrzení a zdroje v tabulce výše jsou úplné. Status SPORNÉ znamená, že vztah je otevřený a neuzavřený — nejde o zjištění viny ani neviny, jen o to, že věc dosud není rozhodnutá. Hlavní stránka dossieru vykresluje interaktivní graf ze stejných dat.

@@ -7,8 +7,9 @@ template = "entity-dossier-evidence.html"
 dossier = "petr-macinka"
 dossier_title = "Petr Macinka"
 canonical_dossier = "macinka-turek"
+subject = "macinka"
 lang = "cs"
 seo_type = "CollectionPage"
 +++
 
-Vazby mezi tvrzeními a zdroji jsou vedené společně pro celou datovou sadu (Petra Macinku i Filipa Turka) — jde o jednu evidenci, ne dvě oddělené.
+Filtrovaný pohled na [evidenci celého dossieru](@/dossiers/macinka-turek/evidence/_index.md) — jen vazby mezi tvrzeními a zdroji, které se týkají Petra Macinky (samostatně nebo společně s Filipem Turkem).

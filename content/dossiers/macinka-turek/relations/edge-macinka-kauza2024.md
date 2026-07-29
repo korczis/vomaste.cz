@@ -17,4 +17,4 @@ sources = ["SRC-12", "SRC-14"]
 subjects = ["macinka", "turek"]
 +++
 
-Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#graf-vztahu). Status: citovaný výrok, ne hodnocení tohoto webu.
+Tato stránka je kanonický záznam vztahu edge-macinka-kauza2024 — typ vztahu, podporující tvrzení a zdroje v tabulce výše jsou úplné. Status CITACE znamená citovaný výrok některé ze zúčastněných stran, ne hodnocení tohoto webu. Hlavní stránka dossieru vykresluje interaktivní graf ze stejných dat.
