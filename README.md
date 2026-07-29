@@ -19,6 +19,8 @@ ověření a historií revizí.
 - **Interní audity obsahu**: [`docs/dossier-audit/`](docs/dossier-audit/)
 - **Licence**: [The Unlicense (public domain)](LICENSE.md) — kód, tooling
   i původní obsah; práva třetích stran viz [Licence](#licence)
+- **Jak přispět**: [CONTRIBUTING.md](CONTRIBUTING.md) · **Hlášení
+  zranitelností**: [SECURITY.md](SECURITY.md) (soukromě, ne issue)
 
 > ⚠️ **Bezpečnostní hranice**: všechny kanály tohoto repozitáře (issues,
 > pull requesty, e-mail, Git historie) jsou **veřejné a trvalé**. Nikdy
