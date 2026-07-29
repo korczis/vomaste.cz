@@ -1,10 +1,8 @@
-# TEMPORARY: pointed at the working github.io URL because vomaste.cz has no
-# DNS yet (see AGENTS.md / commit 760babe). get_url() emits absolute URLs
-# from this value, so leaving it as vomaste.cz breaks every asset link
-# (main.css 404s, etc.) while the custom domain isn't reachable. Switch back
-# to "https://vomaste.cz" and restore static/CNAME together, once DNS for
-# vomaste.cz actually resolves to GitHub Pages.
-base_url = "https://korczis.github.io/vomaste.cz"
+# Custom doména aktivní od 2026-07-29: Route 53 (zóna Z04329971W28TTV7BWJ0M)
+# míří apex A/AAAA na GitHub Pages a www CNAME na korczis.github.io;
+# static/CNAME drží doménu při workflow deployi (bez něj by ji Pages
+# resetly). get_url() generuje absolutní URL z této hodnoty.
+base_url = "https://vomaste.cz"
 
 title = "vomaste.cz"
 description = "Neutrální, zdroji podložený přehled veřejně řešených kauz kolem veřejných osob."
