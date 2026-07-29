@@ -49,6 +49,16 @@
   {"@context":"https://schema.org","@type":{{ seo_type | json_encode | safe }},"name":{{ page_title | json_encode | safe }},"description":{{ page_description | json_encode | safe }}{% if current_url %},"url":{{ current_url | json_encode | safe }}{% endif %}{% if seo_type == "WebSite" %},"inLanguage":{{ page.extra.lang | default(value=config.extra.lang | default(value="en")) | json_encode | safe }}{% endif %}}
   </script>
 
+  {#- SiteNavigationElement JSON-LD for the primary nav (data/navigation.toml),
+      for crawlers/assistants — the rendered navbar/sidebar below is the only
+      thing a human sees; this is a second, non-visual representation of the
+      exact same data, not a separate source of truth. -#}
+  {%- set nav_ld_data = load_data(path="data/navigation.toml") -%}
+  {%- set nav_ld_items = nav_ld_data.items | sort(attribute="order") -%}
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{% for item in nav_ld_items %}{"@type":"SiteNavigationElement","name":{{ item.label | json_encode | safe }},"url":{{ get_url(path=item.path) | json_encode | safe }}}{% if not loop.last %},{% endif %}{% endfor %}]}
+  </script>
+
   <link rel="stylesheet" href="{{ get_url(path='css/main.css', cachebust=true) | safe }}">
   <script type="module" defer src="{{ get_url(path='js/app.js', cachebust=true) | safe }}"></script>
 </head>
