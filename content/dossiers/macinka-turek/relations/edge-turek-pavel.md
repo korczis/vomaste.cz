@@ -14,6 +14,7 @@ label = "hrozil žalobou (1/2026), nakonec nepodal (7/2026)"
 status = "corroborated"
 claims = ["CLM-39", "CLM-44"]
 sources = ["SRC-44", "SRC-51", "SRC-52"]
+subjects = ["turek"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#graf-vztahu). Status: nezávisle potvrzený fakt.

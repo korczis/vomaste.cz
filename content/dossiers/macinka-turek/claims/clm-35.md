@@ -14,6 +14,7 @@ status = "status-corroborated"
 status_label = "CORROBORATED"
 summary = "Motoristé sobě zveřejnili povinné přehledy dárců kampaně PS 2025 (UDHPSH); mezi velké dárce patřili Boris Šťastný (~5 mil. Kč přes Medical Investments) a František Fabičovic (1 mil. Kč)"
 sources = ["SRC-39", "SRC-40"]
+subjects = ["macinka", "turek"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#registr-tvrzeni).

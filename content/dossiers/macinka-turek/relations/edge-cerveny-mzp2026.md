@@ -14,6 +14,7 @@ label = "jmenován ministrem (nahradil Macinku, 23. 2. 2026)"
 status = "corroborated"
 claims = ["CLM-43"]
 sources = ["SRC-49", "SRC-50"]
+subjects = ["macinka"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#graf-vztahu). Status: nezávisle potvrzený fakt.

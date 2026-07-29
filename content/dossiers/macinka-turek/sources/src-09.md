@@ -16,6 +16,7 @@ url = "https://hlidacipes.org/ales-rozehnal-macinka-a-turek-si-hraji-na-mazaky-c
 retrieved = "2026-07-21"
 published = "2026-04-13"
 claims = []
+subjects = ["macinka", "turek"]
 +++
 
 HlídacíPes.org je nezisková investigativní/komentářová platforma. Tento

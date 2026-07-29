@@ -15,6 +15,7 @@ status = "contextual"
 note = "Nesporné veřejné pozadí (kdo je premiérem), ne tvrzení dokládané vlastním zdrojem tohoto dossieru."
 claims = []
 sources = []
+subjects = ["macinka", "turek"]
 +++
 
 Kontextový, strukturální vztah — dossier jej neuvádí jako vlastní doloženou investigaci, jen jako veřejně nesporné pozadí.

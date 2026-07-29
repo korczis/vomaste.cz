@@ -14,6 +14,7 @@ label = "nepřiznaný 20% podíl"
 status = "disputed"
 claims = ["CLM-14"]
 sources = ["SRC-17", "SRC-18"]
+subjects = ["macinka"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#graf-vztahu). Status: sporné, neuzavřené tvrzení.

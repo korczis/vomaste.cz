@@ -1,0 +1,132 @@
+{% extends "base.html" %}
+{% import "macros/ui.html" as ui %}
+
+{#- Generic registry-index view for an ENTITY dossier (petr-macinka,
+    filip-turek): claims/sources/cases/gaps. Owns no content of its own —
+    filters the canonical aggregate dossier's already-validated records by
+    `subjects` (stamped by scripts/dossier/tag-subjects.mjs) and links to
+    the canonical detail page. See AGENTS.md's "Entity dossiers vs. the
+    aggregate view" — this is what keeps every claim/source/case/gap a
+    single record, never physically duplicated per person. -#}
+
+{% block content %}
+<main class="mx-auto max-w-6xl px-6 py-12 text-white">
+  {% set dossier_slug = section.extra.dossier %}
+  {% set canonical_slug = section.extra.canonical_dossier %}
+  {% set subject = section.extra.subject %}
+  {% set registry = section.extra.registry %}
+
+  {%- if registry == "claims" %}{% set registry_label = "Registr tvrzení" %}
+  {%- elif registry == "sources" %}{% set registry_label = "Registr zdrojů" %}
+  {%- elif registry == "cases" %}{% set registry_label = "Registr kauz" %}
+  {%- else %}{% set registry_label = "Registr mezer" %}{% endif -%}
+  {{ ui::page_header(title=section.title, description=section.description, breadcrumb_items=[
+    "Dossiery::" ~ get_url(path="@/dossiers/_index.md"),
+    section.extra.dossier_title ~ "::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"),
+    registry_label,
+  ]) }}
+
+  <article class="dossier-prose mb-10">{{ section.content | safe }}</article>
+
+  {% set canonical = get_section(path="dossiers/" ~ canonical_slug ~ "/" ~ registry ~ "/_index.md") %}
+  {% set_global filtered = [] %}
+  {% for p in canonical.pages %}
+    {% if p.extra.subjects and p.extra.subjects is containing(subject) %}
+      {% set_global filtered = filtered | concat(with=[p]) %}
+    {% endif %}
+  {% endfor %}
+
+  {% if registry == "claims" %}
+  <div class="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
+    {{ ui::stat_tile(value=filtered | length, label="Tvrzení celkem") }}
+    {% set corroborated = filtered | filter(attribute="extra.status", value="status-corroborated") %}
+    {{ ui::stat_tile(value=corroborated | length, label="Corroborated") }}
+    {% set disputed = filtered | filter(attribute="extra.status", value="status-disputed") %}
+    {{ ui::stat_tile(value=disputed | length, label="Sporné") }}
+    {% set quotes = filtered | filter(attribute="extra.status", value="status-quote") %}
+    {{ ui::stat_tile(value=quotes | length, label="Citace") }}
+  </div>
+  {% if filtered | length == 0 %}
+    {{ ui::empty_state(message="Žádné tvrzení v tomto rozsahu.") }}
+  {% else %}
+  <div class="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+    {% for p in filtered %}
+    <a href="{{ p.permalink | safe }}" class="registry-card">
+      <span class="font-mono text-xs text-[#f3e5c0]">{{ p.extra.clm_id }}</span>
+      {% if p.extra.subjects | length > 1 %}<span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.6rem] uppercase tracking-wide text-white/40">sdílené</span>{% endif %}
+      <span class="status-badge {{ p.extra.status }} mt-1 inline-block w-fit">{{ p.extra.status_label }}</span>
+      <span class="mt-2 text-sm text-white/70">{{ p.extra.summary }}</span>
+    </a>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {% elif registry == "sources" %}
+  <div class="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
+    {{ ui::stat_tile(value=filtered | length, label="Zdrojů celkem") }}
+  </div>
+  {% if filtered | length == 0 %}
+    {{ ui::empty_state(message="Žádný zdroj v tomto rozsahu.") }}
+  {% else %}
+  <div class="grid gap-3 sm:grid-cols-2">
+    {% for p in filtered %}
+    <a href="{{ p.permalink | safe }}" class="registry-card">
+      <span class="font-mono text-xs text-[#f3e5c0]">{{ p.extra.src_id }}</span>
+      <span class="font-semibold text-white break-words">{{ p.extra.outlet }}</span>
+      <span class="mt-1 text-xs text-white/40">{{ p.extra.src_type }}</span>
+      <span class="mt-2 text-sm text-white/70">{{ p.description }}</span>
+    </a>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {% elif registry == "cases" %}
+  <div class="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
+    {{ ui::stat_tile(value=filtered | length, label="Kauzy celkem") }}
+  </div>
+  {% if filtered | length == 0 %}
+    {{ ui::empty_state(message="Žádná kauza v tomto rozsahu.") }}
+  {% else %}
+  <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+    {% for p in filtered %}
+    <a href="{{ p.permalink | safe }}" class="registry-card">
+      <span class="status-badge {{ p.extra.status }} w-fit">{{ p.extra.label }}</span>
+      <span class="font-semibold text-white">{{ p.extra.case_id }} — {{ p.title }}</span>
+      <span class="text-xs text-white/40">{{ p.extra.period }}</span>
+      <span class="mt-2 text-sm text-white/70">{{ p.extra.summary }}</span>
+    </a>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {% elif registry == "gaps" %}
+  {% set_global high_count = 0 %}
+  {% for p in filtered %}{% if p.extra.priority == "vysoká" %}{% set_global high_count = high_count + 1 %}{% endif %}{% endfor %}
+  <div class="mb-8 grid grid-cols-2 gap-3 sm:grid-cols-3">
+    {{ ui::stat_tile(value=filtered | length, label="Otevřených mezer") }}
+    {{ ui::stat_tile(value=high_count, label="Vysoká priorita") }}
+    {{ ui::stat_tile(value=filtered | length - high_count, label="Střední / nízká") }}
+  </div>
+  {% if filtered | length == 0 %}
+    {{ ui::empty_state(message="V tomto rozsahu nejsou vedeny žádné otevřené mezery.") }}
+  {% else %}
+  <div class="grid gap-3">
+    {% for p in filtered %}
+    <a href="{{ p.permalink | safe }}" class="registry-card group">
+      <div class="flex flex-wrap items-center gap-2">
+        <span class="font-mono text-xs text-[#f3e5c0]">{{ p.extra.gap_id }}</span>
+        <span class="gap-priority-badge {% if p.extra.priority == 'vysoká' %}gap-priority-high{% else %}gap-priority-low{% endif %}">Priorita: {{ p.extra.priority }}</span>
+      </div>
+      <span class="font-semibold text-white group-hover:text-[#f3e5c0]">{{ p.title | split(pat=" — ") | last }}</span>
+      <span class="text-sm text-white/70">{{ p.description }}</span>
+    </a>
+    {% endfor %}
+  </div>
+  {% endif %}
+  {% endif %}
+
+  <p class="mt-8 text-xs text-white/40">Tento registr je generovaný, filtrovaný pohled nad kanonickými záznamy vedenými v <a href="{{ get_url(path='@/dossiers/' ~ canonical_slug ~ '/' ~ registry ~ '/_index.md') | safe }}" class="text-[#f3e5c0] hover:underline">společném přehledu</a> — žádný záznam zde není fyzickou kopií.</p>
+
+  {{ ui::back_link_footer(url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"), label="Zpět na dossier") }}
+</main>
+{% endblock content %}

@@ -14,6 +14,7 @@ status = "status-quote"
 status_label = "CITACE"
 summary = "Turek a Macinka Chladovu roli veřejně zlehčovali; Macinka uváděl vlastní nižší částky (2× 50 000 Kč před eurovolbami) než sám Chlad"
 sources = ["SRC-43"]
+subjects = ["macinka", "turek"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#registr-tvrzeni).

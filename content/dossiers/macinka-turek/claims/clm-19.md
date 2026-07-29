@@ -14,6 +14,7 @@ status = "status-corroborated"
 status_label = "CORROBORATED"
 summary = "Motoristé sobě v říjnu 2025 podali trestní oznámení na Deník N a autory článku o Turkových příspěvcích pro pomluvu a křivé obvinění"
 sources = ["SRC-21"]
+subjects = ["turek"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#registr-tvrzeni).

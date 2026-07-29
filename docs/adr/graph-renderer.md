@@ -19,6 +19,37 @@ below still applies, per-technology: e.g. Pagefind or Tabulator would be
 judged on the site's actual page/row counts if and when adopted, not
 adopted as part of a bundle because a larger dataset might someday exist.
 
+**Second addendum, same date**: a further follow-up proposed DuckDB-Wasm
+(native + browser), Apache Parquet, Apache Arrow IPC, Kuzu-Wasm, and
+Oxigraph-Wasm as an analytical layer underneath the above, benchmarked at
+1,000 / 25,000 / 250,000 / 1,000,000 rows. Measured, current, full record
+count across every table this would cover:
+
+```
+dossiers: 1
+entities: 23
+claims: 44
+sources: 52
+cases: 4
+gaps: 6
+relations: 30
+total Zola content pages: 170
+```
+
+DuckDB-Wasm's own stated purpose is browser-side analytical SQL over
+datasets large enough that a plain array scan in JavaScript would be
+slow — that threshold is nowhere near 170 rows. The proposed row counts
+are 6 to 6,000 times this project's actual total record count, not just
+its graph size. The decision stands: no build-time DuckDB, no Parquet/
+Arrow export pipeline, no DuckDB-Wasm runtime, no Kuzu-Wasm or
+Oxigraph-Wasm. `data/authorizations.toml`, the Markdown-front-matter
+records, and the generated JSON/JSONL files already in this repo remain
+the only data layer, and they already satisfy "one canonical source per
+record, build-validated, no manual duplication" without a second
+(relational) or third (RDF) parallel format to keep in sync. If total
+record count ever approaches the low thousands, this is worth revisiting
+with real numbers at that time — not before.
+
 ## Measured current scale
 
 Not estimated — read directly from the built data:

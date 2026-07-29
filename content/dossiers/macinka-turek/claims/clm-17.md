@@ -14,6 +14,7 @@ status = "status-quote"
 status_label = "CITACE"
 summary = "Turkova verze nehody: jel na zelenou křižovatkou Ječná/Sokolská, sanitka vjela na červenou s majáky"
 sources = ["SRC-20"]
+subjects = ["turek"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#registr-tvrzeni).

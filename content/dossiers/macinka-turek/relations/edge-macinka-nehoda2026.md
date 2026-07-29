@@ -14,6 +14,7 @@ label = "hájí (\"nikdy se ho nevzdám\")"
 status = "quote"
 claims = ["CLM-13"]
 sources = ["SRC-01", "SRC-04"]
+subjects = ["macinka", "turek"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#graf-vztahu). Status: citovaný výrok, ne hodnocení tohoto webu.

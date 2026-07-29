@@ -14,6 +14,7 @@ status = "status-corroborated"
 status_label = "CORROBORATED"
 summary = "Turek v říjnu 2025 zvolen poslancem, nejvyšší počet preferenčních hlasů Motoristů ve Středočeském kraji"
 sources = ["SRC-11", "SRC-13"]
+subjects = ["turek"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#registr-tvrzeni).

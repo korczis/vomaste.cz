@@ -17,6 +17,7 @@ label = "Vyšetřování probíhá"
 summary = "Střet s vozidlem záchranné služby v Praze. Turek dočasně opustil funkci zmocněnce."
 claims = ["CLM-10", "CLM-11", "CLM-12", "CLM-16", "CLM-17", "CLM-18"]
 sources = ["SRC-02", "SRC-06", "SRC-07", "SRC-08", "SRC-19", "SRC-20"]
+subjects = ["turek"]
 +++
 
 Plné znění, zdroje a kontext tohoto případu jsou v [hlavním přehledu

@@ -17,6 +17,7 @@ label = "Odloženo pro promlčení, ne rozhodnuto"
 summary = "Bývalá partnerka viní Turka ze znásilnění a let násilí. Turek popírá. Případ odložen pro promlčení — ne pro nevinu."
 claims = ["CLM-25", "CLM-26", "CLM-27"]
 sources = ["SRC-28", "SRC-29", "SRC-30", "SRC-31"]
+subjects = ["turek"]
 +++
 
 Plné znění, zdroje a kontext tohoto případu jsou v [hlavním přehledu

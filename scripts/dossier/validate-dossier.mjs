@@ -10,6 +10,7 @@
 import { readFileSync, readdirSync, statSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { isCanonicalDossier } from "./lib/dossier-registry.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const DOSSIERS_ROOT = join(ROOT, "content/dossiers");
@@ -337,9 +338,9 @@ function validateDossier(slug) {
   };
 }
 
-const dossierSlugs = readdirSync(DOSSIERS_ROOT).filter((f) =>
-  statSync(join(DOSSIERS_ROOT, f)).isDirectory(),
-);
+const dossierSlugs = readdirSync(DOSSIERS_ROOT)
+  .filter((f) => statSync(join(DOSSIERS_ROOT, f)).isDirectory())
+  .filter(isCanonicalDossier);
 if (dossierSlugs.length === 0) {
   console.error("No dossiers found under content/dossiers/.");
   process.exit(1);

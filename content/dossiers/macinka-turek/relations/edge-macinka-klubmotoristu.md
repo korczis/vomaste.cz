@@ -14,6 +14,7 @@ label = "statutární orgán"
 status = "corroborated"
 claims = ["CLM-22"]
 sources = ["SRC-24"]
+subjects = ["macinka"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#graf-vztahu). Status: nezávisle potvrzený fakt.

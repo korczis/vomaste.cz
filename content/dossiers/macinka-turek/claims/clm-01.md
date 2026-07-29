@@ -14,6 +14,7 @@ status = "status-corroborated"
 status_label = "CORROBORATED"
 summary = "Turek zvolen europoslancem v červnu 2024 za společnou kandidátku Motoristů a Přísahy"
 sources = ["SRC-11", "SRC-12", "SRC-13"]
+subjects = ["turek"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#registr-tvrzeni).

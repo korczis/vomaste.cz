@@ -14,6 +14,7 @@ status = "status-corroborated"
 status_label = "CORROBORATED"
 summary = "Auto Turka se v Praze střetlo s vozidlem záchranné služby (2026); dle záběrů předjížděl frontu v odbočovacím pruhu"
 sources = ["SRC-02"]
+subjects = ["turek"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#registr-tvrzeni).

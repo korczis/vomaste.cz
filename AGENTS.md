@@ -2,33 +2,99 @@
 
 A Zola static site whose core feature is a general framework for neutral,
 source-cited "dossiers" about publicly reported controversies of public
-figures — currently instantiated with one dossier (Petr Macinka, Filip
-Turek). Read this in full before changing content, templates, the dossier
-data model, or scope.
+figures — currently instantiated with two entity dossiers, Petr Macinka
+and Filip Turek, plus a generated aggregate view over both. Read this in
+full before changing content, templates, the dossier data model, or
+scope.
 
 ## Dossier framework (general — applies to any current or future dossier)
+
+### Entity dossiers vs. the aggregate view
+
+A dossier's `dossier_type` (declared in `data/dossiers.toml`, and
+mirrored in its own `_index.md` front matter for templates that read it
+directly) is one of:
+
+- **`entity`** — a real, primary-navigation-worthy dossier about exactly
+  one person (`petr-macinka`, `filip-turek`). It owns no physical
+  claim/source/case/gap/relation files of its own — every registry it
+  shows (`.../claims/`, `.../sources/`, `.../cases/`, `.../gaps/`,
+  `.../relations/`, `.../entities/`, `.../evidence/`) is a *generated,
+  filtered projection* over the canonical dossier's own already-validated
+  records, filtered by that record's `subjects` array (see below). This
+  is what makes it possible for Petr Macinka and Filip Turek to each have
+  a complete, independently-routable dossier without a single claim,
+  source, case, gap, or relation ever being physically duplicated.
+- **`aggregate`** — a generated intersection/rollup over two or more
+  entity dossiers (currently `macinka-turek`, over `petr-macinka` and
+  `filip-turek`). It is **not** a third person and **not** a third equal
+  dossier: `show_in_primary_navigation = false` in `data/dossiers.toml`,
+  it never appears as a peer of the entity dossiers in
+  `data/navigation.toml`, and `scripts/dossier/validate-navigation.mjs`
+  fails the build if it ever does. It stays routable at its existing URL
+  (`/dossiers/macinka-turek/`) for old links/anchors, and its page header
+  explicitly says so — see `templates/dossier.html`'s aggregate-notice
+  block.
+
+**Where the physical content actually lives.** Zola gives every content
+file exactly one URL. This site's canonical claim/source/case/gap/
+relation detail pages predate the entity-dossier split and already have
+real, bookmarked, cross-referenced URLs under
+`content/dossiers/macinka-turek/...` — moving that physical content to a
+third, "neutral" location would satisfy "the aggregate owns no records"
+in the abstract, but would break every existing canonical URL and anchor,
+which this framework treats as a hard backward-compatibility requirement
+(see "Old URLs" below). So the canonical files stay physically where they
+already were; `petr-macinka` and `filip-turek` are the dossiers with zero
+duplication, not `macinka-turek`. `scripts/dossier/validate-dossier-types.mjs`
+enforces the invariant that actually matters given this constraint: an
+entity dossier must own **zero** physical per-record files — every one it
+shows must resolve to a real detail page under its `canonical_dossier`.
+
+**Subject tagging.** Every claim, source, case, gap, entity, and relation
+under the canonical dossier carries a `subjects` array (`["macinka"]`,
+`["turek"]`, or both) stamped by `scripts/dossier/tag-subjects.mjs` —
+an editorial judgment of who the record is actually about, not something
+mechanically derivable from `graph.toml` alone (see that script's own
+docstring for the reasoning behind each classification). Global entities
+(`content/entities/*.md`) instead extend their existing `dossiers` array
+to include the entity-dossier slug(s) they belong to. `[[extra.cases]]`
+and `[[extra.timeline]]` entries in the canonical dossier's own
+`_index.md` carry the same `subjects` field directly, since those are
+TOML arrays in front matter, not separate content pages.
 
 ### Routing: one namespace per dossier
 
 Every dossier lives under `content/dossiers/<dossier-slug>/`, routed at
 `/dossiers/<dossier-slug>/...`. `content/dossiers/_index.md` is the
 registry-of-dossiers landing page (`/dossiers/`) — it lists every
-authorized dossier by looping over `content/dossiers/*/`, so adding a new
-authorized dossier means adding a new subsection there, not touching a
-template. The one dossier live today is `content/dossiers/macinka-turek/`.
+authorized dossier by looping over `content/dossiers/*/`, splitting them
+into entity dossiers (primary cards) and aggregate views (their own,
+clearly-labeled section) by `dossier_type`. The three dossiers live today
+are `content/dossiers/petr-macinka/`, `content/dossiers/filip-turek/`
+(entity) and `content/dossiers/macinka-turek/` (aggregate, and the
+physical home of the canonical records — see above).
 
 No template hardcodes a dossier slug. Every dossier-scoped template reads
 its own dossier root from front matter (`page.extra.dossier` on a detail
 page, `section.extra.dossier` on a registry index) and builds sibling
 paths from it, e.g. `get_url(path="@/dossiers/" ~ dossier_slug ~
-"/sources/_index.md")`. `data/navigation.toml` is the one place that *is*
-hardcoded to `macinka-turek` today, by design — it's the curated primary
-nav, not a template; a second authorized dossier gets its own nav entries
-added there.
+"/sources/_index.md")`. `data/navigation.toml` is hand-curated by design
+— it's the curated primary nav, not a template — but it is no longer
+free-form: `scripts/dossier/validate-navigation.mjs` fails the build if
+an entity dossier is missing from it, if the aggregate dossier gains
+grouped child items (the thing that would make it look like a third
+tree), or if any item points at a route that doesn't exist. A third
+authorized *person* gets a new entity-dossier entry there; nothing about
+an aggregate view is ever added as a peer of the entity dossiers.
 
 Per-dossier generated/data files live under `data/dossiers/<slug>/`
 (`graph.toml`, `updates.toml`, the build-generated `stats.toml`) for the
 same reason — nothing dossier-specific sits at a flat top-level path.
+Entity dossiers get a real `stats.toml` too, computed by
+`scripts/dossier/generate-stats.mjs` as filtered counts over the
+canonical dossier's records, not a directory listing of their own (empty)
+registry directories.
 
 ### Data model: four linked registries, each independently routable
 
@@ -135,6 +201,19 @@ on the exact anchor after the redirect, not just at the top of the page.
   page + its index
 - `templates/dossier-gap.html` / `dossier-gaps-index.html` — one gap page +
   its index
+- `templates/dossier-entity.html` / `dossier-entities-index.html`,
+  `templates/dossier-relation.html` / `dossier-relations-index.html`,
+  `templates/dossier-evidence.html` — per-dossier entity/relation/evidence
+  registries, for the canonical (aggregate) dossier only
+- `templates/entity-dossier.html` — main page for an ENTITY dossier
+  (Petr Macinka, Filip Turek); every section on it is a filtered view over
+  the canonical dossier's own already-validated data, never a copy
+- `templates/entity-dossier-registry.html` — generic claims/sources/
+  cases/gaps registry-index view for an entity dossier, parameterized by
+  `section.extra.registry`
+- `templates/entity-dossier-relations.html` / `entity-dossier-entities.html`
+  / `entity-dossier-evidence.html` — the same filtered-view pattern for an
+  entity dossier's relations, entities, and evidence pages
 - `templates/base.html` — shared layout; all `<meta>` (title, description,
   canonical, Open Graph) is declared once in front matter and rendered
   once here — do not hand-write `<meta>` tags elsewhere.

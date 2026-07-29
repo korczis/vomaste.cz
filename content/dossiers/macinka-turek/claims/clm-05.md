@@ -14,6 +14,7 @@ status = "status-quote"
 status_label = "CITACE"
 summary = "Turek fotografii/sbírku označil za „špatný humor\" / sběratelský zájem"
 sources = ["SRC-12", "SRC-14"]
+subjects = ["turek"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#registr-tvrzeni).

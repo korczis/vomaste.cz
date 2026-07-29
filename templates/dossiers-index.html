@@ -13,14 +13,26 @@
   {% if section.subsections | length == 0 %}
   {{ ui::empty_state(message="Zatím zde není žádný autorizovaný dossier.") }}
   {% else %}
-  <div class="grid gap-4">
-    {% for sub_path in section.subsections %}
+
+  {% set_global entity_dossiers = [] %}
+  {% set_global aggregate_dossiers = [] %}
+  {% for sub_path in section.subsections %}
+    {% set d = get_section(path=sub_path) %}
+    {% if d.extra.dossier_type == "aggregate" %}
+      {% set_global aggregate_dossiers = aggregate_dossiers | concat(with=[sub_path]) %}
+    {% else %}
+      {% set_global entity_dossiers = entity_dossiers | concat(with=[sub_path]) %}
+    {% endif %}
+  {% endfor %}
+
+  <h2 class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/40">Dossiery</h2>
+  <div class="mb-10 grid gap-4 sm:grid-cols-2">
+    {% for sub_path in entity_dossiers %}
     {% set d = get_section(path=sub_path) %}
     {% set counts = load_data(path="data/dossiers/" ~ d.extra.dossier ~ "/stats.toml") %}
     <a href="{{ get_url(path=sub_path) | safe }}" class="registry-card">
       <span class="flex flex-wrap items-center gap-2">
         <span class="font-semibold text-white">{{ d.title }}</span>
-        {% if d.extra.dossier_type %}<span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-white/50">{{ d.extra.dossier_type }}</span>{% endif %}
       </span>
       <span class="mt-2 text-sm text-white/70">{{ d.description }}</span>
       {% if counts %}
@@ -39,6 +51,23 @@
     </a>
     {% endfor %}
   </div>
+
+  {% if aggregate_dossiers | length > 0 %}
+  <h2 class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/40">Agregované pohledy</h2>
+  <p class="mb-3 text-xs text-white/50">Generované průniky nad výše uvedenými dossiery — ne samostatné dossiery, žádná vlastní kanonická data.</p>
+  <div class="grid gap-4 sm:grid-cols-2">
+    {% for sub_path in aggregate_dossiers %}
+    {% set d = get_section(path=sub_path) %}
+    <a href="{{ get_url(path=sub_path) | safe }}" class="registry-card border-dashed">
+      <span class="flex flex-wrap items-center gap-2">
+        <span class="font-semibold text-white">{{ d.title }}</span>
+        <span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-white/50">agregovaný pohled</span>
+      </span>
+      <span class="mt-2 text-sm text-white/70">{{ d.description }}</span>
+    </a>
+    {% endfor %}
+  </div>
+  {% endif %}
   {% endif %}
 
   {{ ui::back_link_footer(url=get_url(path="@/_index.md"), label="Zpět na hlavní stránku") }}

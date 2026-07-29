@@ -16,7 +16,7 @@ dossier_status = "not_authorized"
 coverage_state = "contextual"
 discovered_at = "2026-07-29"
 discovered_via = ["edge-babis-vlada", "edge-babis-nehoda2026"]
-dossiers = ["macinka-turek"]
+dossiers = ["macinka-turek", "petr-macinka", "filip-turek"]
 claims = ["CLM-12"]
 sources = ["SRC-06"]
 +++

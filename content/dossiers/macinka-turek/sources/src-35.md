@@ -6,6 +6,7 @@ weight = 35
 aliases = ["/dossier/zdroje/src-35/"]
 
 [extra]
+subjects = ["turek"]
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"

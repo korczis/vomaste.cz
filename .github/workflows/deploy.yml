@@ -39,8 +39,14 @@ jobs:
       - name: Validate authorization scope
         run: npm run validate:authorization
 
+      - name: Validate entity/aggregate dossier types
+        run: npm run validate:dossier-types
+
       - name: Build route manifest
         run: npm run build:routes
+
+      - name: Validate primary navigation
+        run: npm run validate:navigation
 
       - name: Generate dossier stats
         run: npm run generate:stats

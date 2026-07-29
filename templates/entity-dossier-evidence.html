@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% import "macros/ui.html" as ui %}
+
+{% block content %}
+<main class="mx-auto max-w-2xl px-6 py-12 text-white">
+  {% set dossier_slug = section.extra.dossier %}
+  {% set canonical_slug = section.extra.canonical_dossier %}
+
+  {{ ui::page_header(title=section.title, description=section.description, breadcrumb_items=[
+    "Dossiery::" ~ get_url(path="@/dossiers/_index.md"),
+    section.extra.dossier_title ~ "::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"),
+    "Evidence",
+  ]) }}
+
+  <article class="dossier-prose">
+    {{ section.content | safe }}
+  </article>
+
+  <p class="mt-6">
+    <a href="{{ get_url(path='@/dossiers/' ~ canonical_slug ~ '/evidence/_index.md') | safe }}" class="text-[#f3e5c0] hover:underline">
+      Otevřít úplnou evidenci tvrzení a zdrojů &rarr;
+    </a>
+  </p>
+
+  {{ ui::back_link_footer(url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"), label="Zpět na dossier") }}
+</main>
+{% endblock content %}

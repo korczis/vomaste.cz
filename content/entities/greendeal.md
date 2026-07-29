@@ -16,7 +16,7 @@ dossier_status = "not_authorized"
 coverage_state = "discovered"
 discovered_at = "2026-07-29"
 discovered_via = ["edge-turek-greendeal"]
-dossiers = ["macinka-turek"]
+dossiers = ["macinka-turek", "filip-turek"]
 claims = ["CLM-11"]
 sources = ["SRC-06"]
 +++

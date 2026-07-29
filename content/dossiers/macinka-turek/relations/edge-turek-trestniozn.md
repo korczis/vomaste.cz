@@ -14,6 +14,7 @@ label = "subjekt (oznámení 6/2025, odloženo pro promlčení 5/2026)"
 status = "disputed"
 claims = ["CLM-25"]
 sources = ["SRC-28", "SRC-29", "SRC-30"]
+subjects = ["turek"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#graf-vztahu). Status: sporné, neuzavřené tvrzení.

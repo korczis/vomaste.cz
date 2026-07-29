@@ -14,6 +14,7 @@ label = "odloženo pro promlčení; nepravomocné, žena se odvolala"
 status = "corroborated"
 claims = ["CLM-27"]
 sources = ["SRC-31"]
+subjects = ["turek"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#graf-vztahu). Status: nezávisle potvrzený fakt.

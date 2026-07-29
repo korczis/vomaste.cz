@@ -14,6 +14,7 @@ label = "zmocněnec (do nehody)"
 status = "corroborated"
 claims = ["CLM-11"]
 sources = ["SRC-06", "SRC-07"]
+subjects = ["turek"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#graf-vztahu). Status: nezávisle potvrzený fakt.

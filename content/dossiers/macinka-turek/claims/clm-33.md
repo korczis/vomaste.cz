@@ -14,6 +14,7 @@ status = "status-corroborated"
 status_label = "CORROBORATED"
 summary = "Turek se (spolu s Kateřinou Konečnou a Václavem Klausem) setkal s íránským velvyslancem; všichni tři schůzku potvrdili, ale bagatelizovali jako „zdvořilostní návštěvu\""
 sources = ["SRC-36", "SRC-37"]
+subjects = ["turek"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#registr-tvrzeni).

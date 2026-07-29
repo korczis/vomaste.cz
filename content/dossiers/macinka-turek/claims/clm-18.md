@@ -14,6 +14,7 @@ status = "status-corroborated"
 status_label = "CORROBORATED"
 summary = "Turek se vzdal poslanecké imunity pro případ trestního stíhání; dechová zkouška negativní; řidič sanitky utrpěl středně těžké poranění hlavy a zranění lokte"
 sources = ["SRC-20"]
+subjects = ["turek"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#registr-tvrzeni).

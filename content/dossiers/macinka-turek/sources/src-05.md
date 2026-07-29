@@ -16,6 +16,7 @@ url = "https://ct24.ceskatelevize.cz/clanek/domaci/je-byl-a-bude-to-turek-rekl-m
 retrieved = "2026-07-21"
 published = "2026-01-07"
 claims = []
+subjects = ["macinka", "turek"]
 +++
 
 ČT24 je zpravodajský kanál veřejnoprávní České televize — v registru

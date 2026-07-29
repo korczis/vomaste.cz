@@ -14,6 +14,7 @@ status = "status-quote"
 status_label = "CITACE"
 summary = "Macinka veřejně opakovaně prohlásil, že se Turka nevzdá"
 sources = ["SRC-01", "SRC-04"]
+subjects = ["macinka", "turek"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#registr-tvrzeni).

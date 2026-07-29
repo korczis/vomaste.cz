@@ -1,0 +1,38 @@
+# Dossier-type registry. Distinguishes "entity" dossiers (a real, primary-
+# navigation-worthy dossier about ONE person, routable at
+# /dossiers/<slug>/, but owning no physical content of its own — its
+# registry pages are generated views filtered from a canonical dossier's
+# records) from the "aggregate" dossier (the one that actually owns
+# content/dossiers/macinka-turek/{claims,sources,cases,gaps,relations}/
+# and data/dossiers/macinka-turek/graph.toml — the single source of truth).
+#
+# "macinka-turek" is not a third person and not a third equal dossier —
+# it is a generated intersection/rollup over the two entity dossiers below,
+# kept routable for old links and for content that is genuinely about the
+# relationship between the two (see AGENTS.md). See
+# scripts/dossier/validate-dossier-types.mjs for the invariants this file
+# is checked against, and scripts/dossier/lib/dossier-registry.mjs for the
+# shared reader every dossier build script uses.
+
+[[dossiers]]
+slug = "petr-macinka"
+title = "Petr Macinka"
+dossier_type = "entity"
+subject = "macinka"
+canonical_dossier = "macinka-turek"
+show_in_primary_navigation = true
+
+[[dossiers]]
+slug = "filip-turek"
+title = "Filip Turek"
+dossier_type = "entity"
+subject = "turek"
+canonical_dossier = "macinka-turek"
+show_in_primary_navigation = true
+
+[[dossiers]]
+slug = "macinka-turek"
+title = "Petr Macinka a Filip Turek"
+dossier_type = "aggregate"
+source_dossiers = ["petr-macinka", "filip-turek"]
+show_in_primary_navigation = false

@@ -1,14 +1,19 @@
 # Primary navigation, shared by the mobile bottom-nav and the desktop
 # sidebar in templates/base.html. `match_prefix` drives active-state
 # detection: the item with the longest current_path-matching prefix wins,
-# so /dossiers/macinka-turek/sources/... highlights "zdroje", not "dossier".
-# "/" is special-cased in the template to require an exact match.
+# so /dossiers/petr-macinka/sources/... highlights "Zdroje" under Petr
+# Macinka, not the top-level "Dossiery" catalog link. "/" is special-cased
+# in the template to require an exact match.
 #
-# Paths are scoped to the "macinka-turek" dossier for now — this is the
-# only authorized dossier on the site. If a second dossier is ever
-# authorized, this file (not the templates) is what needs a new entry;
-# the templates themselves derive their dossier root dynamically from
-# each page's own front matter (extra.dossier), never from this file.
+# Items with a `group` are rendered indented, as children of the most
+# recent non-grouped item above them in `order` — that's how the two
+# entity-dossier trees (Petr Macinka, Filip Turek) are expressed here.
+# See AGENTS.md's "Entity dossiers vs. the aggregate view": the aggregate
+# dossier (macinka-turek) is deliberately NOT one of these two trees and
+# has no children of its own here — it gets exactly one, ungrouped,
+# clearly-labeled link placed after both person trees, so it can never be
+# mistaken for a third equal dossier. scripts/dossier/validate-navigation.mjs
+# enforces this at build time.
 #
 # `icon` is raw SVG <path d="..."> data for a 24x24 stroke-based icon
 # (viewBox 0 0 24 24), rendered inside a shared <svg> wrapper in the
@@ -46,59 +51,160 @@ match_prefix = "/map/"
 order = 17
 icon = "M9 20l-5.447-2.724A1 1 0 0 1 3 16.382V5.618a1 1 0 0 1 1.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0 0 21 18.382V7.618a1 1 0 0 0-.553-.894L15 4m0 13V4m0 0L9 7"
 
+# --- Petr Macinka (entity dossier) -----------------------------------
+
 [[items]]
-id = "dossier"
-label = "Macinka a Turek"
-path = "@/dossiers/macinka-turek/_index.md"
-match_prefix = "/dossiers/macinka-turek/"
+id = "petr-macinka"
+label = "Petr Macinka"
+path = "@/dossiers/petr-macinka/_index.md"
+match_prefix = "/dossiers/petr-macinka/"
 order = 20
 icon = "M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z M14 3v5h5 M9 13h6 M9 17h6"
 
 [[items]]
-id = "zdroje"
-label = "Zdroje"
-path = "@/dossiers/macinka-turek/sources/_index.md"
-match_prefix = "/dossiers/macinka-turek/sources/"
-order = 30
-icon = "M4 19.5A2.5 2.5 0 0 1 6.5 17H20 M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"
-
-[[items]]
-id = "tvrzeni"
+id = "petr-macinka-claims"
 label = "Tvrzení"
-path = "@/dossiers/macinka-turek/claims/_index.md"
-match_prefix = "/dossiers/macinka-turek/claims/"
-order = 35
+path = "@/dossiers/petr-macinka/claims/_index.md"
+match_prefix = "/dossiers/petr-macinka/claims/"
+group = "petr-macinka"
+order = 21
 icon = "M9 12h6 M9 16h6 M9 8h1 M7 21h10a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2Z"
 
 [[items]]
-id = "kauzy"
-label = "Kauzy"
-path = "@/dossiers/macinka-turek/cases/_index.md"
-match_prefix = "/dossiers/macinka-turek/cases/"
-order = 37
-icon = "M3 7h18M3 7l2 13h14l2-13M8 7V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v3"
-
+id = "petr-macinka-sources"
+label = "Zdroje"
+path = "@/dossiers/petr-macinka/sources/_index.md"
+match_prefix = "/dossiers/petr-macinka/sources/"
+group = "petr-macinka"
+order = 22
+icon = "M4 19.5A2.5 2.5 0 0 1 6.5 17H20 M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"
 
 [[items]]
-id = "vztahy"
+id = "petr-macinka-cases"
+label = "Kauzy"
+path = "@/dossiers/petr-macinka/cases/_index.md"
+match_prefix = "/dossiers/petr-macinka/cases/"
+group = "petr-macinka"
+order = 23
+icon = "M3 7h18M3 7l2 13h14l2-13M8 7V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v3"
+
+[[items]]
+id = "petr-macinka-entities"
+label = "Entity"
+path = "@/dossiers/petr-macinka/entities/_index.md"
+match_prefix = "/dossiers/petr-macinka/entities/"
+group = "petr-macinka"
+order = 24
+icon = "M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z M4 21a8 8 0 0 1 16 0"
+
+[[items]]
+id = "petr-macinka-relations"
 label = "Vztahy"
-path = "@/dossiers/macinka-turek/relations/_index.md"
-match_prefix = "/dossiers/macinka-turek/relations/"
-order = 33
+path = "@/dossiers/petr-macinka/relations/_index.md"
+match_prefix = "/dossiers/petr-macinka/relations/"
+group = "petr-macinka"
+order = 25
 icon = "M8 7a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z M16 23a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z M8 7v6a4 4 0 0 0 4 4h1"
 
 [[items]]
-id = "evidence"
+id = "petr-macinka-evidence"
 label = "Evidence"
-path = "@/dossiers/macinka-turek/evidence/_index.md"
-match_prefix = "/dossiers/macinka-turek/evidence/"
-order = 39
+path = "@/dossiers/petr-macinka/evidence/_index.md"
+match_prefix = "/dossiers/petr-macinka/evidence/"
+group = "petr-macinka"
+order = 26
 icon = "M9 17v-6h6v6M9 11V7a3 3 0 0 1 6 0v4M5 21h14a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2Z"
 
 [[items]]
-id = "mezery"
+id = "petr-macinka-gaps"
 label = "Mezery"
-path = "@/dossiers/macinka-turek/gaps/_index.md"
-match_prefix = "/dossiers/macinka-turek/gaps/"
-order = 40
+path = "@/dossiers/petr-macinka/gaps/_index.md"
+match_prefix = "/dossiers/petr-macinka/gaps/"
+group = "petr-macinka"
+order = 27
 icon = "M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3 M12 17h.01"
+
+# --- Filip Turek (entity dossier) -------------------------------------
+
+[[items]]
+id = "filip-turek"
+label = "Filip Turek"
+path = "@/dossiers/filip-turek/_index.md"
+match_prefix = "/dossiers/filip-turek/"
+order = 30
+icon = "M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z M14 3v5h5 M9 13h6 M9 17h6"
+
+[[items]]
+id = "filip-turek-claims"
+label = "Tvrzení"
+path = "@/dossiers/filip-turek/claims/_index.md"
+match_prefix = "/dossiers/filip-turek/claims/"
+group = "filip-turek"
+order = 31
+icon = "M9 12h6 M9 16h6 M9 8h1 M7 21h10a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2Z"
+
+[[items]]
+id = "filip-turek-sources"
+label = "Zdroje"
+path = "@/dossiers/filip-turek/sources/_index.md"
+match_prefix = "/dossiers/filip-turek/sources/"
+group = "filip-turek"
+order = 32
+icon = "M4 19.5A2.5 2.5 0 0 1 6.5 17H20 M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"
+
+[[items]]
+id = "filip-turek-cases"
+label = "Kauzy"
+path = "@/dossiers/filip-turek/cases/_index.md"
+match_prefix = "/dossiers/filip-turek/cases/"
+group = "filip-turek"
+order = 33
+icon = "M3 7h18M3 7l2 13h14l2-13M8 7V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v3"
+
+[[items]]
+id = "filip-turek-entities"
+label = "Entity"
+path = "@/dossiers/filip-turek/entities/_index.md"
+match_prefix = "/dossiers/filip-turek/entities/"
+group = "filip-turek"
+order = 34
+icon = "M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z M4 21a8 8 0 0 1 16 0"
+
+[[items]]
+id = "filip-turek-relations"
+label = "Vztahy"
+path = "@/dossiers/filip-turek/relations/_index.md"
+match_prefix = "/dossiers/filip-turek/relations/"
+group = "filip-turek"
+order = 35
+icon = "M8 7a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z M16 23a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z M8 7v6a4 4 0 0 0 4 4h1"
+
+[[items]]
+id = "filip-turek-evidence"
+label = "Evidence"
+path = "@/dossiers/filip-turek/evidence/_index.md"
+match_prefix = "/dossiers/filip-turek/evidence/"
+group = "filip-turek"
+order = 36
+icon = "M9 17v-6h6v6M9 11V7a3 3 0 0 1 6 0v4M5 21h14a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2Z"
+
+[[items]]
+id = "filip-turek-gaps"
+label = "Mezery"
+path = "@/dossiers/filip-turek/gaps/_index.md"
+match_prefix = "/dossiers/filip-turek/gaps/"
+group = "filip-turek"
+order = 37
+icon = "M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3 M12 17h.01"
+
+# --- Aggregate view — NOT an entity dossier, NOT indented under either
+# person, deliberately last and distinctly labeled. See the file-level
+# comment above. -----------------------------------------------------
+
+[[items]]
+id = "macinka-turek-aggregate"
+label = "Společný přehled (Macinka + Turek)"
+path = "@/dossiers/macinka-turek/_index.md"
+match_prefix = "/dossiers/macinka-turek/"
+order = 50
+icon = "M17 20h5v-2a4 4 0 0 0-3-3.87M9 20H4v-2a4 4 0 0 1 3-3.87m6-1.13a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm6 0a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"

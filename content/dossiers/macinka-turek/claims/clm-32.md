@@ -14,6 +14,7 @@ status = "status-corroborated"
 status_label = "CORROBORATED"
 summary = "Z 27 dokumentovaných startů Turkovy závodní kariéry (2015–2017, Formula 4 Trophy) měl 12 výher; čtyřikrát jel sám, šestkrát proti jedinému soupeři"
 sources = ["SRC-36"]
+subjects = ["turek"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#registr-tvrzeni).

@@ -14,6 +14,7 @@ status = "status-corroborated"
 status_label = "CORROBORATED"
 summary = "V roce 2017 Turek nechal na autě zaměstnance saúdskoarabské ambasády kresbu oprátky a loveckou nábojnici; policie věc uzavřela jako pravděpodobnou záměnu osob a vyřešila jako přestupek"
 sources = ["SRC-32"]
+subjects = ["turek"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#registr-tvrzeni).

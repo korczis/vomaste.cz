@@ -17,6 +17,7 @@ label = "Sporné, neuzavřeno"
 summary = "Deník N zveřejnil údajné smazané příspěvky. Turek odmítá autorství těch nejzávažnějších."
 claims = ["CLM-07", "CLM-08", "CLM-09", "CLM-19", "CLM-41", "CLM-42"]
 sources = ["SRC-15", "SRC-16", "SRC-21", "SRC-22", "SRC-47", "SRC-48"]
+subjects = ["turek"]
 +++
 
 Plné znění, zdroje a kontext tohoto případu jsou v [hlavním přehledu

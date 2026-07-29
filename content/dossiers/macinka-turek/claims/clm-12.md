@@ -14,6 +14,7 @@ status = "status-corroborated"
 status_label = "CORROBORATED"
 summary = "Babiš dle zdrojů řekl Macinkovi, že pokud se záběry potvrdí, měl by Turek rezignovat"
 sources = ["SRC-06", "SRC-08"]
+subjects = ["turek"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#registr-tvrzeni).

@@ -14,6 +14,7 @@ status = "status-corroborated"
 status_label = "CORROBORATED"
 summary = "Deník N v říjnu 2025 zveřejnil údajné smazané příspěvky připisované Turkovi s rasistickým/homofobním obsahem"
 sources = ["SRC-15"]
+subjects = ["turek"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#registr-tvrzeni).

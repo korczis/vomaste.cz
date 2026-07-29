@@ -16,7 +16,7 @@ dossier_status = "not_authorized"
 coverage_state = "contextual"
 discovered_at = "2026-07-29"
 discovered_via = ["edge-macinka-motoriste", "edge-turek-motoriste", "edge-motoriste-vlada", "edge-klubmotoristu-motoriste", "edge-chlad-motoriste"]
-dossiers = ["macinka-turek"]
+dossiers = ["macinka-turek", "petr-macinka", "filip-turek"]
 claims = ["CLM-03"]
 sources = ["SRC-11"]
 +++

@@ -14,6 +14,7 @@ label = "prověřování výroků i oznámení na Deník N odloženo (28. 7. 202
 status = "corroborated"
 claims = ["CLM-41", "CLM-42"]
 sources = ["SRC-47", "SRC-48"]
+subjects = ["turek"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#graf-vztahu). Status: nezávisle potvrzený fakt.

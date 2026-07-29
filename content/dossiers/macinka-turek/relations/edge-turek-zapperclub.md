@@ -14,6 +14,7 @@ label = "společník 2016–2023"
 status = "corroborated"
 claims = ["CLM-20"]
 sources = ["SRC-23"]
+subjects = ["turek"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#graf-vztahu). Status: nezávisle potvrzený fakt.

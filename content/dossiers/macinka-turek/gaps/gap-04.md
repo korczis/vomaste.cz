@@ -6,6 +6,7 @@ weight = 4
 aliases = ["/dossier/mezery/gap-04/"]
 
 [extra]
+subjects = ["macinka", "turek"]
 dossier = "macinka-turek"
 record_type = "gap"
 lang = "cs"

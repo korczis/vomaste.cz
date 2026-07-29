@@ -14,6 +14,7 @@ status = "status-quote"
 status_label = "CITACE"
 summary = "Turek odmítl autorství nejzávažnějších z těchto příspěvků"
 sources = ["SRC-16"]
+subjects = ["turek"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#registr-tvrzeni).

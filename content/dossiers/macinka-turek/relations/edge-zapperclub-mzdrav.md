@@ -14,6 +14,7 @@ label = "varování před přístrojem zapper"
 status = "corroborated"
 claims = ["CLM-31"]
 sources = ["SRC-34", "SRC-35"]
+subjects = ["turek"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#graf-vztahu). Status: nezávisle potvrzený fakt.

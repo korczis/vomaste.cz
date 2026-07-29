@@ -14,6 +14,7 @@ label = "europoslanec 2024–2025"
 status = "corroborated"
 claims = ["CLM-01"]
 sources = ["SRC-11", "SRC-12", "SRC-13"]
+subjects = ["turek"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#graf-vztahu). Status: nezávisle potvrzený fakt.

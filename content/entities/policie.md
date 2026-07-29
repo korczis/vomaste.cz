@@ -16,7 +16,7 @@ dossier_status = "not_authorized"
 coverage_state = "contextual"
 discovered_at = "2026-07-29"
 discovered_via = ["edge-nehoda2026-policie", "edge-kauza2025-policie"]
-dossiers = ["macinka-turek"]
+dossiers = ["macinka-turek", "filip-turek"]
 claims = ["CLM-41"]
 sources = ["SRC-47", "SRC-48"]
 +++

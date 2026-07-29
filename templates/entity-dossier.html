@@ -1,0 +1,132 @@
+{% extends "base.html" %}
+{% import "macros/ui.html" as ui %}
+
+{#- Main page for an ENTITY dossier (petr-macinka, filip-turek) — a real,
+    primary-nav-worthy dossier about ONE person, but owning no physical
+    content of its own. Every stat tile, case, timeline entry and relation
+    below is a generated, filtered view over the canonical aggregate
+    dossier's already-validated, already-sourced records — never a second
+    copy. See AGENTS.md's "Entity dossiers vs. the aggregate view". -#}
+
+{% block content %}
+<main class="mx-auto max-w-3xl px-6 py-12 text-white">
+  {% set dossier_slug = section.extra.dossier %}
+  {% set canonical_slug = section.extra.canonical_dossier %}
+  {% set subject = section.extra.subject %}
+
+  {{ ui::page_header(title=section.title, breadcrumb_items=[
+    "Domů::" ~ get_url(path="@/_index.md"),
+    "Dossiery::" ~ get_url(path="@/dossiers/_index.md"),
+    section.title,
+  ], updated=section.extra.updated | default(value=""), reviewed=section.extra.reviewed_at | default(value="")) }}
+
+  <div class="mb-8 rounded-lg border border-white/10 bg-white/[0.03] p-4 text-sm text-white/70">
+    Toto je samostatný dossier o jedné osobě. Sdílené souvislosti s druhým
+    subjektem stejného politického hnutí jsou uvedeny v
+    <a href="{{ get_url(path='@/dossiers/' ~ canonical_slug ~ '/_index.md') | safe }}" class="text-[#f3e5c0] hover:underline">společném přehledu Petr Macinka a Filip Turek</a>,
+    který je generovaný průnik nad oběma dossiery, ne třetí samostatný předmět.
+  </div>
+
+  <article class="dossier-prose mb-10">{{ section.content | safe }}</article>
+
+  {% set counts = load_data(path="data/dossiers/" ~ dossier_slug ~ "/stats.toml") %}
+  <section class="mb-12 grid grid-cols-2 gap-4 sm:grid-cols-4" aria-label="Souhrnné metriky dossieru">
+    {{ ui::stat_tile(value=counts.sources_total, label="Citovaných zdrojů", url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/sources/_index.md")) }}
+    {{ ui::stat_tile(value=counts.cases_total, label="Sledované kauzy", url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/cases/_index.md")) }}
+    {{ ui::stat_tile(value=counts.claims_total, label="Tvrzení v registru", url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/claims/_index.md")) }}
+    {{ ui::stat_tile(value=counts.gaps_total, label="Otevřené mezery", url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/gaps/_index.md")) }}
+  </section>
+  <p class="-mt-8 mb-8 text-xs text-white/40">Metriky se počítají automaticky, filtrované z kanonického registru podle toho, koho se záznam týká — viz <code>scripts/dossier/generate-stats.mjs</code>.</p>
+
+  <nav aria-label="Registry dossieru" class="mb-12 flex flex-wrap gap-2 text-sm">
+    <a href="{{ get_url(path='@/dossiers/' ~ dossier_slug ~ '/entities/_index.md') | safe }}" class="rounded-full border border-white/15 px-3 py-1 text-white/70 no-underline hover:border-white/30 hover:text-white">Entity</a>
+    <a href="{{ get_url(path='@/dossiers/' ~ dossier_slug ~ '/relations/_index.md') | safe }}" class="rounded-full border border-white/15 px-3 py-1 text-white/70 no-underline hover:border-white/30 hover:text-white">Vztahy</a>
+    <a href="{{ get_url(path='@/dossiers/' ~ dossier_slug ~ '/evidence/_index.md') | safe }}" class="rounded-full border border-white/15 px-3 py-1 text-white/70 no-underline hover:border-white/30 hover:text-white">Evidence</a>
+  </nav>
+
+  {% set canonical_section = get_section(path="dossiers/" ~ canonical_slug ~ "/_index.md") %}
+
+  {% set_global filtered_cases = [] %}
+  {% for c in canonical_section.extra.cases %}
+    {% if c.subjects and c.subjects is containing(subject) %}
+      {% set_global filtered_cases = filtered_cases | concat(with=[c]) %}
+    {% endif %}
+  {% endfor %}
+  {% if filtered_cases | length > 0 %}
+  <section aria-labelledby="cases-heading" class="mb-12">
+    <h2 id="cases-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/40">Kauzy v přehledu</h2>
+    <div class="grid gap-4 sm:grid-cols-2">
+      {% for c in filtered_cases %}
+      <a href="{{ get_url(path='@/dossiers/' ~ canonical_slug ~ '/_index.md') | safe }}#{{ c.anchor }}" class="group flex flex-col rounded-xl border border-white/10 bg-white/[0.03] p-4 no-underline transition-colors hover:border-white/20 hover:bg-white/[0.06]">
+        <span class="status-badge {{ c.status }} w-fit">{{ c.label }}</span>
+        <span class="font-semibold text-white group-hover:text-[#f3e5c0]">{{ c.title }}</span>
+        <span class="text-xs text-white/40">{{ c.period }}</span>
+        <span class="mt-2 text-sm text-white/70">{{ c.summary }}</span>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% set_global filtered_timeline = [] %}
+  {% for e in canonical_section.extra.timeline %}
+    {% if e.subjects and e.subjects is containing(subject) %}
+      {% set_global filtered_timeline = filtered_timeline | concat(with=[e]) %}
+    {% endif %}
+  {% endfor %}
+  {% if filtered_timeline | length > 0 %}
+  <section aria-labelledby="timeline-heading" class="mb-12">
+    <h2 id="timeline-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/40">Časová osa</h2>
+    <ol class="timeline">
+      {% for e in filtered_timeline %}
+      <li>
+        <span class="timeline-dot {{ e.dot }}"></span>
+        <p class="text-xs text-white/40">{{ e.date }}</p>
+        <a href="{{ get_url(path='@/dossiers/' ~ canonical_slug ~ '/_index.md') | safe }}#{{ e.anchor }}" class="text-sm font-medium text-white no-underline hover:text-[#f3e5c0] hover:underline">{{ e.title }}</a>
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+  {% endif %}
+
+  {% set relations = get_section(path="dossiers/" ~ canonical_slug ~ "/relations/_index.md") %}
+  {% set_global filtered_relations = [] %}
+  {% for r in relations.pages %}
+    {% if r.extra.subjects and r.extra.subjects is containing(subject) %}
+      {% set_global filtered_relations = filtered_relations | concat(with=[r]) %}
+    {% endif %}
+  {% endfor %}
+  {% if filtered_relations | length > 0 %}
+  {% set entity = get_section(path="entities/_index.md") %}
+  <section aria-labelledby="graph-list-heading" class="mb-12">
+    <h2 id="graph-list-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/40">Vztahy ({{ filtered_relations | length }})</h2>
+    <p class="mb-4 text-xs text-white/50">Interaktivní graf se všemi vztahy (včetně sdílených) je na <a href="{{ get_url(path='@/dossiers/' ~ canonical_slug ~ '/_index.md') | safe }}#graf-vztahu" class="text-[#f3e5c0] hover:underline">společném přehledu</a>.</p>
+    <ul class="space-y-1.5 text-sm text-white/70">
+      {% for r in filtered_relations %}
+      {% set source_entity = entity.pages | filter(attribute="extra.entity_id", value=r.extra.source) | first %}
+      {% set target_entity = entity.pages | filter(attribute="extra.entity_id", value=r.extra.target) | first %}
+      <li><span class="edge-status-dot edge-{{ r.extra.status }}"></span>{% if source_entity %}{{ source_entity.title }}{% else %}{{ r.extra.source }}{% endif %} <span aria-hidden="true" class="text-white/30">&rarr;</span> <span class="text-white/50">{{ r.extra.label }}</span> <span aria-hidden="true" class="text-white/30">&rarr;</span> {% if target_entity %}{{ target_entity.title }}{% else %}{{ r.extra.target }}{% endif %}</li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% set updates = load_data(path="data/dossiers/" ~ canonical_slug ~ "/updates.toml") %}
+  {% if updates.updates %}
+  <section aria-labelledby="updates-heading" class="mb-12 mt-12">
+    <h2 id="updates-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/40">Historie aktualizací</h2>
+    <p class="mb-3 text-xs text-white/50">Sdílený, append-only auditní záznam kontrol nad kanonickými daty — společný pro oba dossiery, protože jde o jednu datovou sadu.</p>
+    <ol class="space-y-3">
+      {% for u in updates.updates | reverse %}
+      <li class="rounded-lg border border-white/10 bg-white/[0.02] p-4">
+        <p class="font-mono text-xs text-[#f3e5c0]">{{ u.date }}</p>
+        <p class="mt-1 text-sm text-white/70">{{ u.summary }}</p>
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+  {% endif %}
+
+  {{ ui::back_link_footer(url=get_url(path="@/dossiers/_index.md"), label="Zpět na registr dossierů") }}
+</main>
+{% endblock content %}

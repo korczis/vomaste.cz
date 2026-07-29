@@ -14,6 +14,7 @@ status = "status-corroborated"
 status_label = "CORROBORATED"
 summary = "V roce 2024 čelil Turek kritice kvůli fotografii se zdviženou pravicí (2013) a sbírce svícnů s hákovými kříži"
 sources = ["SRC-12", "SRC-14"]
+subjects = ["turek"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#registr-tvrzeni).

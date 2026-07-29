@@ -14,6 +14,7 @@ status = "status-quote"
 status_label = "CITACE"
 summary = "Macinka kauzu 2024 veřejně hájil, označil ji za „pseudoproblém\""
 sources = ["SRC-12", "SRC-14"]
+subjects = ["macinka", "turek"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#registr-tvrzeni).

@@ -14,6 +14,7 @@ label = "provozovatel vozidla záchranné služby"
 status = "corroborated"
 claims = ["CLM-18"]
 sources = ["SRC-20"]
+subjects = ["turek"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#graf-vztahu). Status: nezávisle potvrzený fakt.

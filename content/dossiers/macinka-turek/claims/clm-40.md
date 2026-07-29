@@ -14,6 +14,7 @@ status = "status-corroborated"
 status_label = "CORROBORATED"
 summary = "Turek namísto ministerského postu zastává roli vládního zmocněnce pro klimatickou změnu a Green Deal; premiér Babiš označil jeho jmenování ministrem za „uzavřenou kapitolu\"; řízením ministerstva byl dočasně pověřen Petr Macinka"
 sources = ["SRC-45", "SRC-46"]
+subjects = ["macinka"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#registr-tvrzeni).

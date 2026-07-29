@@ -82,6 +82,26 @@ for (const slug of dossierSlugs) {
   const fmEnd = dossierMd.indexOf("\n+++", 4);
   const fm = dossierMd.slice(0, fmEnd);
   const titleMatch = dossierMd.match(/^title = "(.*)"$/m);
+  const dossierType = extractField(fm, "dossier_type") ?? "unknown";
+
+  // Entity dossiers (dossier_type = "entity") own no graph.toml of their
+  // own — their nodes/edges are the canonical (aggregate) dossier's,
+  // already merged into this graph via that dossier's own pass below.
+  // They still get a `dossiers[]` catalog entry (for the map's
+  // dossier-tree), just with node/edge counts of 0 here — the map reads
+  // real per-entity-dossier counts from data/dossiers/<slug>/stats.toml
+  // instead, same as templates/entity-dossier.html does.
+  if (dossierType === "entity") {
+    dossiers.push({
+      slug,
+      title: titleMatch ? titleMatch[1] : slug,
+      dossier_type: dossierType,
+      subject_entities: extractArrayField(fm, "subject_entities"),
+      node_count: 0,
+      edge_count: 0,
+    });
+    continue;
+  }
 
   const graphToml = readFileSync(join(DATA_ROOT, slug, "graph.toml"), "utf8");
   const { nodes, edges: dossierEdges, clusters: dossierClusters, source_families: dossierFamilies } = parseBlocks(graphToml);

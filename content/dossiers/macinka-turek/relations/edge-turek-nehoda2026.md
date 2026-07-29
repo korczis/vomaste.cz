@@ -14,6 +14,7 @@ label = "subjekt"
 status = "corroborated"
 claims = ["CLM-10"]
 sources = ["SRC-02"]
+subjects = ["turek"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#graf-vztahu). Status: nezávisle potvrzený fakt.

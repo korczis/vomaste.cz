@@ -14,6 +14,7 @@ label = "předseda"
 status = "corroborated"
 claims = ["CLM-03"]
 sources = ["SRC-11", "SRC-13"]
+subjects = ["macinka"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#graf-vztahu). Status: nezávisle potvrzený fakt.

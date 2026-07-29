@@ -14,6 +14,7 @@ status = "status-corroborated"
 status_label = "CORROBORATED"
 summary = "Dne 28. 7. 2026 policie odložila prověřování Turkových výroků z CLM-07 pro promlčení; rozhodnutí není pravomocné. Jde o procesní důsledek uplynutí promlčecí doby, ne o posouzení pravosti nebo obsahu výroků. Policie zároveň nepotvrdila verzi Motoristů, že zveřejněné materiály byly zfalšované"
 sources = ["SRC-47", "SRC-48"]
+subjects = ["turek"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#registr-tvrzeni).

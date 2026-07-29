@@ -16,6 +16,7 @@ url = "https://zivotvcesku.cz/macinka-se-pustil-do-pavla-po-jeho-slovech-k-turko
 retrieved = "2026-07-21"
 published = "2026-07-15"
 claims = []
+subjects = ["macinka", "turek"]
 +++
 
 Zdroj dokládá, že se Macinka veřejně vymezil vůči vyjádření prezidenta

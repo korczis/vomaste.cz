@@ -17,6 +17,7 @@ label = "Uzavřeno bez trestu"
 summary = "Fotografie připomínající nacistický pozdrav a sbírka svícnů s hákovými kříži. Turek: „špatný humor.“"
 claims = ["CLM-04", "CLM-05", "CLM-06"]
 sources = ["SRC-12", "SRC-14"]
+subjects = ["macinka", "turek"]
 +++
 
 Plné znění, zdroje a kontext tohoto případu jsou v [hlavním přehledu

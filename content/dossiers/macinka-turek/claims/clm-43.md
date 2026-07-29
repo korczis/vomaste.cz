@@ -14,6 +14,7 @@ status = "status-corroborated"
 status_label = "CORROBORATED"
 summary = "Dne 23. 2. 2026 prezident Petr Pavel jmenoval ministrem životního prostředí Igora Červeného (Motoristé sobě); tím skončilo dočasné pověření Petra Macinky vedením tohoto úřadu zmiňované v CLM-24 a CLM-40"
 sources = ["SRC-49", "SRC-50"]
+subjects = ["macinka"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#registr-tvrzeni).

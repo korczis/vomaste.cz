@@ -14,6 +14,7 @@ label = "hájí (\"pseudoproblém\")"
 status = "quote"
 claims = ["CLM-06"]
 sources = ["SRC-12", "SRC-14"]
+subjects = ["macinka", "turek"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#graf-vztahu). Status: citovaný výrok, ne hodnocení tohoto webu.

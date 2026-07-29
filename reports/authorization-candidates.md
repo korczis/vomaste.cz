@@ -8,13 +8,13 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 21 context entities across 1 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 21 context entities across 3 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## Andrej Babiš (premiér) (`babis`)
 
 - Type: person
 - Status: not_authorized
-- Appears in: macinka-turek
+- Appears in: macinka-turek, petr-macinka, filip-turek
 - Claims: CLM-12
 - Sources: SRC-06 (1 independent source family)
 - Relations: 
@@ -26,7 +26,7 @@ Generated from 21 context entities across 1 dossier(s). Regenerate with `npm run
 
 - Type: person
 - Status: not_authorized
-- Appears in: macinka-turek
+- Appears in: macinka-turek, petr-macinka
 - Claims: CLM-43
 - Sources: SRC-49, SRC-50 (2 independent source families)
 - Relations: 
@@ -38,7 +38,7 @@ Generated from 21 context entities across 1 dossier(s). Regenerate with `npm run
 
 - Type: person
 - Status: not_authorized
-- Appears in: macinka-turek
+- Appears in: macinka-turek, petr-macinka, filip-turek
 - Claims: CLM-36
 - Sources: SRC-41 (1 independent source family)
 - Relations: 
@@ -49,7 +49,7 @@ Generated from 21 context entities across 1 dossier(s). Regenerate with `npm run
 
 - Type: public_institution
 - Status: not_authorized
-- Appears in: macinka-turek
+- Appears in: macinka-turek, filip-turek
 - Claims: CLM-01
 - Sources: SRC-11 (1 independent source family)
 - Relations: 
@@ -60,7 +60,7 @@ Generated from 21 context entities across 1 dossier(s). Regenerate with `npm run
 
 - Type: company
 - Status: not_authorized
-- Appears in: macinka-turek
+- Appears in: macinka-turek, petr-macinka
 - Claims: CLM-14
 - Sources: SRC-17 (1 independent source family)
 - Relations: 
@@ -71,7 +71,7 @@ Generated from 21 context entities across 1 dossier(s). Regenerate with `npm run
 
 - Type: role
 - Status: not_authorized
-- Appears in: macinka-turek
+- Appears in: macinka-turek, filip-turek
 - Claims: CLM-11
 - Sources: SRC-06 (1 independent source family)
 - Relations: 
@@ -82,7 +82,7 @@ Generated from 21 context entities across 1 dossier(s). Regenerate with `npm run
 
 - Type: controversy
 - Status: not_authorized
-- Appears in: macinka-turek
+- Appears in: macinka-turek, petr-macinka, filip-turek
 - Claims: CLM-04
 - Sources: SRC-12 (1 independent source family)
 - Relations: 
@@ -94,7 +94,7 @@ Generated from 21 context entities across 1 dossier(s). Regenerate with `npm run
 
 - Type: controversy
 - Status: not_authorized
-- Appears in: macinka-turek
+- Appears in: macinka-turek, filip-turek
 - Claims: CLM-07
 - Sources: SRC-15 (1 independent source family)
 - Relations: 
@@ -106,7 +106,7 @@ Generated from 21 context entities across 1 dossier(s). Regenerate with `npm run
 
 - Type: organization
 - Status: not_authorized
-- Appears in: macinka-turek
+- Appears in: macinka-turek, petr-macinka
 - Claims: CLM-22
 - Sources: SRC-24 (1 independent source family)
 - Relations: 
@@ -118,7 +118,7 @@ Generated from 21 context entities across 1 dossier(s). Regenerate with `npm run
 
 - Type: political_party
 - Status: not_authorized
-- Appears in: macinka-turek
+- Appears in: macinka-turek, petr-macinka, filip-turek
 - Claims: CLM-03
 - Sources: SRC-11 (1 independent source family)
 - Relations: 
@@ -133,7 +133,7 @@ Generated from 21 context entities across 1 dossier(s). Regenerate with `npm run
 
 - Type: public_institution
 - Status: not_authorized
-- Appears in: macinka-turek
+- Appears in: macinka-turek, filip-turek
 - Claims: CLM-31
 - Sources: SRC-34 (1 independent source family)
 - Relations: 
@@ -144,7 +144,7 @@ Generated from 21 context entities across 1 dossier(s). Regenerate with `npm run
 
 - Type: controversy
 - Status: not_authorized
-- Appears in: macinka-turek
+- Appears in: macinka-turek, petr-macinka, filip-turek
 - Claims: CLM-38
 - Sources: SRC-44 (1 independent source family)
 - Relations: 
@@ -158,7 +158,7 @@ Generated from 21 context entities across 1 dossier(s). Regenerate with `npm run
 
 - Type: event
 - Status: not_authorized
-- Appears in: macinka-turek
+- Appears in: macinka-turek, petr-macinka, filip-turek
 - Claims: CLM-10
 - Sources: SRC-02 (1 independent source family)
 - Relations: 
@@ -173,7 +173,7 @@ Generated from 21 context entities across 1 dossier(s). Regenerate with `npm run
 
 - Type: public_institution
 - Status: not_authorized
-- Appears in: macinka-turek
+- Appears in: macinka-turek, filip-turek
 - Claims: CLM-18
 - Sources: SRC-20 (1 independent source family)
 - Relations: 
@@ -184,7 +184,7 @@ Generated from 21 context entities across 1 dossier(s). Regenerate with `npm run
 
 - Type: person
 - Status: not_authorized
-- Appears in: macinka-turek
+- Appears in: macinka-turek, filip-turek
 - Claims: CLM-38
 - Sources: SRC-44 (1 independent source family)
 - Relations: 
@@ -196,7 +196,7 @@ Generated from 21 context entities across 1 dossier(s). Regenerate with `npm run
 
 - Type: public_institution
 - Status: not_authorized
-- Appears in: macinka-turek
+- Appears in: macinka-turek, filip-turek
 - Claims: CLM-41
 - Sources: SRC-47, SRC-48 (2 independent source families)
 - Relations: 
@@ -208,7 +208,7 @@ Generated from 21 context entities across 1 dossier(s). Regenerate with `npm run
 
 - Type: public_institution
 - Status: not_authorized
-- Appears in: macinka-turek
+- Appears in: macinka-turek, filip-turek
 - Claims: CLM-27
 - Sources: SRC-31 (1 independent source family)
 - Relations: 
@@ -219,7 +219,7 @@ Generated from 21 context entities across 1 dossier(s). Regenerate with `npm run
 
 - Type: public_institution
 - Status: not_authorized
-- Appears in: macinka-turek
+- Appears in: macinka-turek, filip-turek
 - Claims: CLM-31
 - Sources: SRC-34, SRC-35 (2 independent source families)
 - Relations: 
@@ -230,7 +230,7 @@ Generated from 21 context entities across 1 dossier(s). Regenerate with `npm run
 
 - Type: legal_or_administrative_process
 - Status: not_authorized
-- Appears in: macinka-turek
+- Appears in: macinka-turek, filip-turek
 - Claims: CLM-25
 - Sources: SRC-28 (1 independent source family)
 - Relations: 
@@ -242,7 +242,7 @@ Generated from 21 context entities across 1 dossier(s). Regenerate with `npm run
 
 - Type: public_institution
 - Status: not_authorized
-- Appears in: macinka-turek
+- Appears in: macinka-turek, petr-macinka, filip-turek
 - Claims: CLM-03
 - Sources: SRC-11 (1 independent source family)
 - Relations: 
@@ -254,7 +254,7 @@ Generated from 21 context entities across 1 dossier(s). Regenerate with `npm run
 
 - Type: company
 - Status: not_authorized
-- Appears in: macinka-turek
+- Appears in: macinka-turek, filip-turek
 - Claims: CLM-20, CLM-31
 - Sources: SRC-23, SRC-34 (2 independent source families)
 - Relations: 

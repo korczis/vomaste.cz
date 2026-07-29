@@ -14,6 +14,7 @@ label = "vyzval k odpovědnosti"
 status = "corroborated"
 claims = ["CLM-12"]
 sources = ["SRC-06", "SRC-08"]
+subjects = ["turek"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#graf-vztahu). Status: nezávisle potvrzený fakt.

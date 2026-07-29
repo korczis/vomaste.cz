@@ -14,6 +14,7 @@ status = "status-disputed"
 status_label = "SPORNÉ"
 summary = "Pravost/autorství screenshotů z CLM-07 nebyla nezávisle prokázána ani vyvrácena"
 sources = ["SRC-15", "SRC-16", "SRC-22"]
+subjects = ["turek"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#registr-tvrzeni).

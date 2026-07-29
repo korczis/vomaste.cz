@@ -14,6 +14,7 @@ label = "dočasně vede resort (do 2/2026)"
 status = "corroborated"
 claims = ["CLM-24", "CLM-40"]
 sources = ["SRC-27", "SRC-45", "SRC-46"]
+subjects = ["macinka"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#graf-vztahu). Status: nezávisle potvrzený fakt.

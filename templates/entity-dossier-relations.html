@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% import "macros/ui.html" as ui %}
+
+{% block content %}
+<main class="mx-auto max-w-6xl px-6 py-12 text-white">
+  {% set dossier_slug = section.extra.dossier %}
+  {% set canonical_slug = section.extra.canonical_dossier %}
+  {% set subject = section.extra.subject %}
+
+  {{ ui::page_header(title=section.title, description=section.description, breadcrumb_items=[
+    "Dossiery::" ~ get_url(path="@/dossiers/_index.md"),
+    section.extra.dossier_title ~ "::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"),
+    "Registr vztahů",
+  ]) }}
+
+  <article class="dossier-prose mb-10">{{ section.content | safe }}</article>
+
+  {% set canonical = get_section(path="dossiers/" ~ canonical_slug ~ "/relations/_index.md") %}
+  {% set_global filtered = [] %}
+  {% for r in canonical.pages %}
+    {% if r.extra.subjects and r.extra.subjects is containing(subject) %}
+      {% set_global filtered = filtered | concat(with=[r]) %}
+    {% endif %}
+  {% endfor %}
+
+  {% set factual = filtered | filter(attribute="extra.status", value="corroborated") %}
+  {% set disputed = filtered | filter(attribute="extra.status", value="disputed") %}
+  <div class="mb-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
+    {{ ui::stat_tile(value=filtered | length, label="Vztahů celkem") }}
+    {{ ui::stat_tile(value=factual | length, label="Fakt") }}
+    {{ ui::stat_tile(value=disputed | length, label="Sporné") }}
+  </div>
+
+  {% set entity = get_section(path="entities/_index.md") %}
+
+  {% if filtered | length == 0 %}
+    {{ ui::empty_state(message="Žádný vztah v tomto rozsahu.") }}
+  {% else %}
+  <div class="divide-y divide-white/10 rounded-lg border border-white/10">
+    {% for r in filtered %}
+    {% set source_entity = entity.pages | filter(attribute="extra.entity_id", value=r.extra.source) | first %}
+    {% set target_entity = entity.pages | filter(attribute="extra.entity_id", value=r.extra.target) | first %}
+    <article class="flex flex-col gap-1 p-3 text-sm sm:flex-row sm:flex-wrap sm:items-center sm:gap-2">
+      <span class="font-mono text-[0.65rem] text-white/30">{{ r.extra.rel_id }}</span>
+      {% if source_entity %}<a href="{{ source_entity.permalink | safe }}" class="font-medium text-white no-underline hover:underline">{{ source_entity.title }}</a>{% else %}<span class="text-white/50">{{ r.extra.source }}</span>{% endif %}
+      <span aria-hidden="true" class="text-white/30">&rarr;</span>
+      <a href="{{ r.permalink | safe }}" class="text-[#f3e5c0] no-underline hover:underline">{{ r.extra.label }}</a>
+      <span aria-hidden="true" class="text-white/30">&rarr;</span>
+      {% if target_entity %}<a href="{{ target_entity.permalink | safe }}" class="font-medium text-white no-underline hover:underline">{{ target_entity.title }}</a>{% else %}<span class="text-white/50">{{ r.extra.target }}</span>{% endif %}
+      <span class="status-badge {% if r.extra.status == "corroborated" %}status-corroborated{% elif r.extra.status == "disputed" %}status-disputed{% elif r.extra.status == "quote" %}status-quote{% else %}status-contextual{% endif %}">
+        {%- if r.extra.status == "corroborated" %}FAKT{% elif r.extra.status == "disputed" %}SPORNÉ{% elif r.extra.status == "quote" %}CITACE{% else %}KONTEXTOVÉ{% endif -%}
+      </span>
+      {% if r.extra.subjects | length > 1 %}<span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.6rem] uppercase tracking-wide text-white/40 ml-auto">sdílené</span>{% endif %}
+    </article>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {{ ui::back_link_footer(url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"), label="Zpět na dossier") }}
+</main>
+{% endblock content %}

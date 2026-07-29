@@ -16,6 +16,7 @@ url = "https://www.info.cz/zpravodajstvi-a-komentare/macinka-turek-konec-motoris
 retrieved = "2026-07-21"
 published = "2026-01-08"
 claims = []
+subjects = ["macinka", "turek"]
 +++
 
 Jde o autorský komentář, ne o zpravodajský text — samotný název sekce na

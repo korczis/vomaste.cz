@@ -14,6 +14,7 @@ label = "subjekt"
 status = "disputed"
 claims = ["CLM-04"]
 sources = ["SRC-12", "SRC-14"]
+subjects = ["turek"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#graf-vztahu). Status: sporné, neuzavřené tvrzení.

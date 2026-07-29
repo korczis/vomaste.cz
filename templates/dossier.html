@@ -12,6 +12,42 @@
     section.title,
   ], updated=section.extra.updated | default(value=""), reviewed=section.extra.reviewed_at | default(value="")) }}
 
+  {% if section.extra.dossier_type == "aggregate" %}
+  <section class="mb-10 rounded-xl border border-[#f3e5c0]/25 bg-[#f3e5c0]/[0.04] p-5" aria-labelledby="aggregate-notice-heading">
+    <h2 id="aggregate-notice-heading" class="mb-2 text-xs font-semibold uppercase tracking-wide text-[#f3e5c0]/80">Generovaný společný pohled</h2>
+    <p class="text-sm text-white/80">
+      Tato stránka je generovaný společný přehled nad dvěma samostatnými dossiery —
+      <strong class="text-white">Petra Macinky</strong> a <strong class="text-white">Filipa Turka</strong>.
+      Není to třetí samostatný dossier: každý záznam níže patří do registru jednoho nebo obou
+      z těchto dvou dossierů, nikdy sem samostatně.
+    </p>
+    <div class="mt-4 grid gap-3 sm:grid-cols-2">
+      <a href="{{ get_url(path='@/dossiers/petr-macinka/_index.md') | safe }}" class="group flex flex-col rounded-lg border border-white/10 bg-white/[0.03] p-4 no-underline transition-colors hover:border-[#f3e5c0]/40">
+        <span class="font-semibold text-white group-hover:text-[#f3e5c0]">Petr Macinka &rarr;</span>
+        <span class="mt-1 text-xs text-white/50">Otevřít samostatný dossier</span>
+      </a>
+      <a href="{{ get_url(path='@/dossiers/filip-turek/_index.md') | safe }}" class="group flex flex-col rounded-lg border border-white/10 bg-white/[0.03] p-4 no-underline transition-colors hover:border-[#f3e5c0]/40">
+        <span class="font-semibold text-white group-hover:text-[#f3e5c0]">Filip Turek &rarr;</span>
+        <span class="mt-1 text-xs text-white/50">Otevřít samostatný dossier</span>
+      </a>
+    </div>
+  </section>
+
+  {% set macinka_stats = load_data(path="data/dossiers/petr-macinka/stats.toml") %}
+  {% set turek_stats = load_data(path="data/dossiers/filip-turek/stats.toml") %}
+  {% set claims_section = get_section(path="dossiers/macinka-turek/claims/_index.md") %}
+  {% set_global shared_claims = 0 %}
+  {% for p in claims_section.pages %}
+    {% if p.extra.subjects and p.extra.subjects | length > 1 %}{% set_global shared_claims = shared_claims + 1 %}{% endif %}
+  {% endfor %}
+  <section class="mb-12 grid grid-cols-2 gap-3 sm:grid-cols-4" aria-label="Rozdělení tvrzení podle subjektu">
+    {{ ui::stat_tile(value=macinka_stats.claims_total, label="Jen Petr Macinka", url=get_url(path="@/dossiers/petr-macinka/claims/_index.md")) }}
+    {{ ui::stat_tile(value=turek_stats.claims_total, label="Jen Filip Turek", url=get_url(path="@/dossiers/filip-turek/claims/_index.md")) }}
+    {{ ui::stat_tile(value=shared_claims, label="Sdílená tvrzení") }}
+    {{ ui::stat_tile(value=section.extra.subject_entities | length, label="Subjektů v tomto přehledu") }}
+  </section>
+  {% endif %}
+
   {% set counts = load_data(path="data/dossiers/" ~ dossier_slug ~ "/stats.toml") %}
   <section class="mb-12 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-6" aria-label="Souhrnné metriky dossieru">
     {{ ui::stat_tile(value=counts.sources_total, label="Citovaných zdrojů", url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/sources/_index.md")) }}
