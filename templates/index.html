@@ -13,6 +13,13 @@
     "Aktuálně dostupné dossiery" section) renders however many exist
     without needing a template change. -#}
 {% set dossiers_root = get_section(path="dossiers/_index.md") %}
+{#- Every tile below is a link to its own full page under /koncepty/. The tile
+    label and text come from that page's front matter (extra.tile_title /
+    tile_summary / bullets), so the landing page and the concept page can never
+    disagree — same single-source-of-truth rule the dossier registries follow.
+    Group order and labels live in data/concept-groups.toml. -#}
+{% set concepts_section = get_section(path="koncepty/_index.md") %}
+{% set concepts = concepts_section.pages %}
 <main>
   <section class="hero-bg relative flex min-h-[90svh] w-full items-center justify-center overflow-hidden bg-black" aria-labelledby="hero-heading">
     {#- Pozadí je jen atmosféra: dvojitý overlay ho stáhne do tušené
@@ -86,24 +93,20 @@
   <section aria-labelledby="what-is-heading" class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
     <h2 id="what-is-heading" class="text-center text-2xl font-bold text-white sm:text-3xl">Co vomaste.cz je — a co není</h2>
     <div class="mt-10 grid gap-6 sm:grid-cols-2">
-      <div class="rounded-xl border border-white/10 bg-white/[0.03] p-6">
-        <h3 class="font-semibold text-[#f3e5c0]">Je to</h3>
+      {%- for c in concepts | filter(attribute="extra.group", value="identita") %}
+      <a href="{{ c.permalink | safe }}" class="group block rounded-xl border border-white/10 bg-white/[0.03] p-6 no-underline transition-colors hover:border-white/25 hover:bg-white/[0.05]">
+        <h3 class="flex items-center gap-2 font-semibold {% if c.extra.tile_accent %}text-[#f3e5c0]{% else %}text-white/70{% endif %}">
+          {{ c.extra.tile_title | default(value=c.title) }}
+          <span class="text-white/30 transition-transform group-hover:translate-x-0.5" aria-hidden="true">&rarr;</span>
+        </h3>
         <ul class="mt-3 space-y-2 text-sm leading-relaxed text-white/70">
-          <li>Open-source systém komunitní veřejné inteligence: strukturované registry kauz s auditovatelnou vazbou na zdroje, verzované v Gitu — veřejná data se nikdy nemění potichu.</li>
-          <li>Web, který výslovně rozlišuje ověřený fakt, jednozdrojové tvrzení, citaci, sporné tvrzení a autorský názor.</li>
-          <li>Přehled, který otevřeně přiznává, co zůstává nedořešené nebo nedohledané — a procesní výsledek nikdy nevydává za rozhodnutí o vině.</li>
-          <li>Forkovatelný toolkit — kdokoli může převzít datový model, validátory i šablony a postavit vlastní, řádně autorizovaný dossier (kód i původní obsah jsou public domain).</li>
+          {%- for b in c.extra.bullets %}
+          <li>{{ b | safe }}</li>
+          {%- endfor %}
         </ul>
-      </div>
-      <div class="rounded-xl border border-white/10 bg-white/[0.03] p-6">
-        <h3 class="font-semibold text-white/70">Není to</h3>
-        <ul class="mt-3 space-y-2 text-sm leading-relaxed text-white/70">
-          <li>Drbárna, černá listina ani skladiště podezření — „šedá“ nebo „černá“ vazba tu nikdy není verdikt.</li>
-          <li>Investigativní redakce ani orgán, který by sám vyšetřoval nebo vynášel rozsudek o vině.</li>
-          <li>Místo, kde se tvrzení jedné strany bere jako fakt jen proto, že je hlasitější — a kde se opakování téhož článku počítá jako nezávislé potvrzení.</li>
-          <li>Důvěrná schránka: jediný kanál projektu jsou veřejné GitHub issues a pull requesty. Projekt nemá bezpečný intake pro citlivé podněty a nepředstírá opak.</li>
-        </ul>
-      </div>
+        <span class="mt-4 block text-xs text-white/40">{{ c.title }} &middot; celá stránka</span>
+      </a>
+      {%- endfor %}
     </div>
   </section>
 
@@ -112,26 +115,16 @@
     <p class="mx-auto mt-3 max-w-xl text-center text-white/60">Každý dossier na tomto webu stojí na stejné datové kostře — a každý záznam má vlastní stránku, ne jen řádek v tabulce.</p>
 
     <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-      <div class="rounded-xl border border-white/10 bg-white/[0.03] p-6">
-        <span class="font-mono text-xs text-[#f3e5c0]">CLM-##</span>
-        <h3 class="mt-1 font-semibold text-white">Registr tvrzení</h3>
-        <p class="mt-2 text-sm leading-relaxed text-white/60">Každé tvrzení má stav ověřenosti a odkaz na zdroj, který ho podkládá.</p>
-      </div>
-      <div class="rounded-xl border border-white/10 bg-white/[0.03] p-6">
-        <span class="font-mono text-xs text-[#f3e5c0]">SRC-##</span>
-        <h3 class="mt-1 font-semibold text-white">Registr zdrojů</h3>
-        <p class="mt-2 text-sm leading-relaxed text-white/60">Vydavatel, typ, přímý odkaz, data — a „vydavatelské rodiny“: zdroje téhož vydavatele se nepočítají jako nezávislé potvrzení.</p>
-      </div>
-      <div class="rounded-xl border border-white/10 bg-white/[0.03] p-6">
-        <span class="font-mono text-xs text-[#f3e5c0]">CASE-##</span>
-        <h3 class="mt-1 font-semibold text-white">Registr kauz</h3>
-        <p class="mt-2 text-sm leading-relaxed text-white/60">Tematické celky s obdobím, stavem a vazbou na konkrétní tvrzení — včetně procesního stavu odděleného od merita.</p>
-      </div>
-      <div class="rounded-xl border border-white/10 bg-white/[0.03] p-6">
-        <span class="font-mono text-xs text-[#f3e5c0]">GAP-##</span>
-        <h3 class="mt-1 font-semibold text-white">Registr mezer</h3>
-        <p class="mt-2 text-sm leading-relaxed text-white/60">Otevřené otázky, u kterých dostupné zdroje zatím neumožňují jednoznačný závěr — s prioritou a datem poslední kontroly.</p>
-      </div>
+      {%- for c in concepts | filter(attribute="extra.group", value="model") %}
+      <a href="{{ c.permalink | safe }}" class="group block rounded-xl border border-white/10 bg-white/[0.03] p-6 no-underline transition-colors hover:border-white/25 hover:bg-white/[0.05]">
+        <span class="font-mono text-xs text-[#f3e5c0]">{{ c.extra.code }}</span>
+        <h3 class="mt-1 flex items-center gap-2 font-semibold text-white">
+          {{ c.extra.tile_title | default(value=c.title) }}
+          <span class="text-white/30 transition-transform group-hover:translate-x-0.5" aria-hidden="true">&rarr;</span>
+        </h3>
+        <p class="mt-2 text-sm leading-relaxed text-white/60">{{ c.extra.tile_summary | safe }}</p>
+      </a>
+      {%- endfor %}
     </div>
     <p class="mx-auto mt-6 max-w-2xl text-center text-sm text-white/50">K tomu graf entit a vztahů: každá hrana musí být krytá tvrzením a zdrojem — žádné dekorativní spojnice.</p>
 
@@ -143,12 +136,13 @@
     </div>
 
     <h3 class="mt-14 text-center text-lg font-semibold text-white">Stavy tvrzení</h3>
+    <p class="mx-auto mt-2 max-w-xl text-center text-sm text-white/50">Každý stav má vlastní stránku s tím, co přesně tvrdí a co netvrdí.</p>
     <div class="legend mt-4 justify-center">
-      <span><span class="status-badge status-corroborated">Ověřeno více zdroji</span> potvrzeno nezávisle více médii</span>
-      <span><span class="status-badge status-single">1 zdroj</span> doloženo jedním citovaným zdrojem</span>
-      <span><span class="status-badge status-quote">Citace</span> přímý výrok, ne hodnocení tohoto webu</span>
-      <span><span class="status-badge status-disputed">Sporné</span> neuzavřené, nepotvrzené tvrzení</span>
-      <span><span class="status-badge status-opinion">Názor</span> autorský komentář, ne zpravodajství</span>
+      {%- for c in concepts | filter(attribute="extra.group", value="stav") %}
+      <a href="{{ c.permalink | safe }}" class="no-underline hover:text-white">
+        <span class="status-badge {{ c.extra.badge_class }}">{{ c.extra.badge_label }}</span> {{ c.extra.tile_summary | safe }}
+      </a>
+      {%- endfor %}
     </div>
   </section>
 
@@ -280,61 +274,35 @@
   <section aria-labelledby="open-heading" class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
     <h2 id="open-heading" class="text-center text-2xl font-bold text-white sm:text-3xl">Otevřený systém, ne černá skříňka</h2>
     <div class="mt-10 grid gap-6 sm:grid-cols-2">
-      <div class="rounded-xl border border-white/10 bg-white/[0.03] p-6">
-        <h3 class="font-semibold text-white">Verzováno v Gitu</h3>
-        <p class="mt-2 text-sm leading-relaxed text-white/60">Každá publikovaná revize odpovídá konkrétnímu commitu ve
-        <a href="https://github.com/korczis/vomaste.cz" class="underline decoration-white/20 underline-offset-2 hover:text-white">veřejném repozitáři</a>.
-        Podstatné změny obsahu navíc eviduje append-only historie aktualizací — co bylo kdy skutečně ověřeno a změněno.</p>
-      </div>
-      <div class="rounded-xl border border-white/10 bg-white/[0.03] p-6">
-        <h3 class="font-semibold text-white">Strojově čitelná data</h3>
-        <p class="mt-2 text-sm leading-relaxed text-white/60">Každá stránka nese strukturovaná data JSON-LD generovaná při buildu —
-        záměrně <em>bez</em> jakéhokoli hodnocení pravdivosti: stavy popisují zdrojování, ne rozsudek. Samostatné exportní
-        routy datasetu zatím neexistují a web to netvrdí.</p>
-      </div>
-      <div class="rounded-xl border border-white/10 bg-white/[0.03] p-6">
-        <h3 class="font-semibold text-white">Public domain</h3>
-        <p class="mt-2 text-sm leading-relaxed text-white/60">Kód, tooling i původní obsah jsou uvolněny pod
-        <a href="https://github.com/korczis/vomaste.cz/blob/master/LICENSE.md" class="underline decoration-white/20 underline-offset-2 hover:text-white">The Unlicense</a>.
-        Citované články a úryvky zůstávají právy původních vydavatelů — web je cituje, nerelicencuje.</p>
-      </div>
-      <div class="rounded-xl border border-[#d4af37]/30 bg-[#d4af37]/[0.05] p-6">
-        <h3 class="font-semibold text-[#f3e5c0]">Bezpečnostní hranice</h3>
-        <p class="mt-2 text-sm leading-relaxed text-white/60">Všechny kanály projektu (GitHub issues, pull requesty, Git historie) jsou <strong class="text-white/80">veřejné a trvalé</strong> —
-        Git nezapomíná. Nevkládejte sem důvěrné dokumenty, identitu zdrojů ani nepublikovaný citlivý materiál.
-        Projekt nemá zavedený důvěrný intake kanál, negarantuje anonymitu a nebude předstírat opak.</p>
-      </div>
+      {%- for c in concepts | filter(attribute="extra.group", value="otevrenost") %}
+      <a href="{{ c.permalink | safe }}" class="group block rounded-xl border p-6 no-underline transition-colors {% if c.extra.accent %}border-[#d4af37]/30 bg-[#d4af37]/[0.05] hover:border-[#d4af37]/60{% else %}border-white/10 bg-white/[0.03] hover:border-white/25 hover:bg-white/[0.05]{% endif %}">
+        <h3 class="flex items-center gap-2 font-semibold {% if c.extra.accent %}text-[#f3e5c0]{% else %}text-white{% endif %}">
+          {{ c.extra.tile_title | default(value=c.title) }}
+          <span class="text-white/30 transition-transform group-hover:translate-x-0.5" aria-hidden="true">&rarr;</span>
+        </h3>
+        <p class="mt-2 text-sm leading-relaxed text-white/60">{{ c.extra.tile_summary | safe }}</p>
+      </a>
+      {%- endfor %}
     </div>
   </section>
 
   <section id="metodika" aria-labelledby="metodika-heading" class="mx-auto max-w-5xl px-6 py-20 sm:py-24">
     <h2 id="metodika-heading" class="text-center text-2xl font-bold text-white sm:text-3xl">Jak pracujeme</h2>
-    <p class="mx-auto mt-3 max-w-xl text-center text-white/60">Tři pravidla, která platí pro každé tvrzení na této stránce.</p>
+    <p class="mx-auto mt-3 max-w-xl text-center text-white/60">Pravidla, která platí pro každé tvrzení na této stránce — každé i s tím, kde se obvykle porušují.</p>
 
     <div class="mt-12 grid gap-6 sm:grid-cols-3">
-      <div class="rounded-xl border border-white/10 bg-white/[0.03] p-6">
+      {%- for c in concepts | filter(attribute="extra.group", value="metodika") %}
+      <a href="{{ c.permalink | safe }}" class="group block rounded-xl border border-white/10 bg-white/[0.03] p-6 no-underline transition-colors hover:border-white/25 hover:bg-white/[0.05]">
         <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-[#f3e5c0]/10 text-[#f3e5c0]" aria-hidden="true">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-4"/><path d="M14 3h7v7"/><path d="M10 14 21 3"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="{{ c.extra.icon }}"/></svg>
         </div>
-        <h3 class="font-semibold text-white">Zdrojováno</h3>
-        <p class="mt-2 text-sm leading-relaxed text-white/60">Každé tvrzení cituje jmenovaný, nezávislý veřejný zdroj s přímým odkazem. Bez zdroje se tvrzení nepublikuje.</p>
-      </div>
-
-      <div class="rounded-xl border border-white/10 bg-white/[0.03] p-6">
-        <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-[#f3e5c0]/10 text-[#f3e5c0]" aria-hidden="true">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M5 7h14M5 7l-3 7a4 4 0 0 0 8 0zM19 7l-3 7a4 4 0 0 0 8 0z"/></svg>
-        </div>
-        <h3 class="font-semibold text-white">Fakt odděleně od názoru</h3>
-        <p class="mt-2 text-sm leading-relaxed text-white/60">Citace jsou označené jako citace, komentáře jako názor. Sporné a neuzavřené případy zůstávají označené jako neuzavřené.</p>
-      </div>
-
-      <div class="rounded-xl border border-white/10 bg-white/[0.03] p-6">
-        <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-[#f3e5c0]/10 text-[#f3e5c0]" aria-hidden="true">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
-        </div>
-        <h3 class="font-semibold text-white">Průběžně ověřováno</h3>
-        <p class="mt-2 text-sm leading-relaxed text-white/60">Otevřené otázky jsou vedeny jako otevřené, ne jako uzavřené. Přehled se aktualizuje podle nového zpravodajství.</p>
-      </div>
+        <h3 class="flex items-center gap-2 font-semibold text-white">
+          {{ c.extra.tile_title | default(value=c.title) }}
+          <span class="text-white/30 transition-transform group-hover:translate-x-0.5" aria-hidden="true">&rarr;</span>
+        </h3>
+        <p class="mt-2 text-sm leading-relaxed text-white/60">{{ c.extra.tile_summary | safe }}</p>
+      </a>
+      {%- endfor %}
     </div>
   </section>
 
@@ -376,37 +344,69 @@
     </div>
   </section>
 
-  <footer class="px-6 py-12">
-    <div class="mx-auto grid max-w-5xl gap-10 sm:grid-cols-3">
-      <nav aria-label="Projekt" class="text-sm">
-        <h3 class="font-mono text-xs font-bold uppercase tracking-widest text-white/40">Projekt</h3>
-        <ul class="mt-3 space-y-2">
-          <li><a href="{{ get_url(path='@/dossiers/_index.md') | safe }}" class="text-white/70 no-underline hover:text-white hover:underline">Dossiery</a></li>
-          <li><a href="{{ get_url(path='@/entities/_index.md') | safe }}" class="text-white/70 no-underline hover:text-white hover:underline">Entity</a></li>
-          <li><a href="{{ get_url(path='@/map/_index.md') | safe }}" class="text-white/70 no-underline hover:text-white hover:underline">Globální mapa vztahů</a></li>
-          <li><a href="#metodika" class="text-white/70 no-underline hover:text-white hover:underline">Metodika</a></li>
-        </ul>
-      </nav>
-      <nav aria-label="Zapojení" class="text-sm">
-        <h3 class="font-mono text-xs font-bold uppercase tracking-widest text-white/40">Zapojení</h3>
-        <ul class="mt-3 space-y-2">
-          <li><a href="https://github.com/korczis/vomaste.cz" class="text-white/70 no-underline hover:text-white hover:underline">Zdrojový kód a data</a></li>
-          <li><a href="https://github.com/korczis/vomaste.cz/blob/master/CONTRIBUTING.md" class="text-white/70 no-underline hover:text-white hover:underline">Jak přispět</a></li>
-          <li><a href="https://github.com/korczis/vomaste.cz/blob/master/SECURITY.md" class="text-white/70 no-underline hover:text-white hover:underline">Hlášení zranitelností</a></li>
-          <li><a href="https://github.com/korczis/vomaste.cz/issues/new" class="text-white/70 no-underline hover:text-white hover:underline">Opravy a právo na odpověď</a></li>
-        </ul>
-      </nav>
-      <nav aria-label="Pravidla a data" class="text-sm">
-        <h3 class="font-mono text-xs font-bold uppercase tracking-widest text-white/40">Pravidla a data</h3>
-        <ul class="mt-3 space-y-2">
-          <li><a href="https://github.com/korczis/vomaste.cz/blob/master/docs/constitution/OPEN_INTELLIGENCE_COMMONS.md" class="text-white/70 no-underline hover:text-white hover:underline">Konstituce projektu</a></li>
-          <li><a href="https://github.com/korczis/vomaste.cz/blob/master/AGENTS.md" class="text-white/70 no-underline hover:text-white hover:underline">Redakční pravidla a autorizace</a></li>
-          <li><a href="https://github.com/korczis/vomaste.cz/blob/master/LICENSE.md" class="text-white/70 no-underline hover:text-white hover:underline">Licence (The Unlicense)</a></li>
-          <li><a href="{{ get_url(path='sitemap.xml') | safe }}" class="text-white/70 no-underline hover:text-white hover:underline">Sitemap</a></li>
-        </ul>
-      </nav>
+  {#- Footer, deliberately hierarchical rather than three equal columns:
+      an identity block first (what this is, in one sentence), then the three
+      link groups in reading order — read the content, read the rules, take part.
+      On-site routes and off-site GitHub links are visually distinguished (the
+      latter carry a ↗ marker), because 9 of these 12 links leave the site. -#}
+  <footer class="border-t border-white/10 px-6 py-14">
+    <div class="mx-auto max-w-5xl">
+      <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="text-sm lg:col-span-1">
+          <p class="type-80s text-xl text-white">vomaste.cz</p>
+          <p class="mt-3 leading-relaxed text-white/60">Otevřený, Git-native systém dohledatelných dossierů ve veřejném zájmu. Nevěřte autorovi — zkontrolujte data.</p>
+          {#- Newest date across every canonical dossier's append-only update
+              log — same data the "Poslední aktualizace" section renders. -#}
+          {%- set_global update_dates = [] %}
+          {%- for slug in canonical_slugs %}
+            {%- set upd = load_data(path="data/dossiers/" ~ slug ~ "/updates.toml") %}
+            {%- for u in upd.updates %}{% set_global update_dates = update_dates | concat(with=u.date) %}{% endfor %}
+          {%- endfor %}
+          {%- set last_update = update_dates | sort | last | default(value="") %}
+          {%- if last_update %}
+          <p class="mt-4 text-xs text-white/40">Poslední aktualizace obsahu: <span class="whitespace-nowrap">{{ last_update }}</span></p>
+          {%- endif %}
+        </div>
+
+        <nav aria-label="Obsah" class="text-sm">
+          <h3 class="font-mono text-xs font-bold uppercase tracking-widest text-white/40">Obsah</h3>
+          <ul class="mt-3 space-y-2">
+            <li><a href="{{ get_url(path='@/dossiers/_index.md') | safe }}" class="text-white/70 no-underline hover:text-white hover:underline">Dossiery</a></li>
+            <li><a href="{{ get_url(path='@/entities/_index.md') | safe }}" class="text-white/70 no-underline hover:text-white hover:underline">Entity</a></li>
+            <li><a href="{{ get_url(path='@/map/_index.md') | safe }}" class="text-white/70 no-underline hover:text-white hover:underline">Globální mapa vztahů</a></li>
+            <li><a href="{{ get_url(path='@/koncepty/_index.md') | safe }}" class="text-white/70 no-underline hover:text-white hover:underline">Koncepty a metodika</a></li>
+            <li><a href="{{ get_url(path='sitemap.xml') | safe }}" class="text-white/50 no-underline hover:text-white hover:underline">Sitemap</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Pravidla" class="text-sm">
+          <h3 class="font-mono text-xs font-bold uppercase tracking-widest text-white/40">Pravidla</h3>
+          <ul class="mt-3 space-y-2">
+            <li><a href="{{ get_url(path='@/koncepty/bezpecnostni-hranice.md') | safe }}" class="text-white/70 no-underline hover:text-white hover:underline">Bezpečnostní hranice</a></li>
+            <li><a href="{{ get_url(path='@/koncepty/public-domain.md') | safe }}" class="text-white/70 no-underline hover:text-white hover:underline">Licence obsahu a kódu</a></li>
+            <li><a href="https://github.com/korczis/vomaste.cz/blob/master/docs/constitution/OPEN_INTELLIGENCE_COMMONS.md" class="text-white/70 no-underline hover:text-white hover:underline">Konstituce projektu <span class="text-white/30" aria-hidden="true">&#8599;</span></a></li>
+            <li><a href="https://github.com/korczis/vomaste.cz/blob/master/AGENTS.md" class="text-white/70 no-underline hover:text-white hover:underline">Redakční pravidla a autorizace <span class="text-white/30" aria-hidden="true">&#8599;</span></a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Zapojení" class="text-sm">
+          <h3 class="font-mono text-xs font-bold uppercase tracking-widest text-white/40">Zapojení</h3>
+          <ul class="mt-3 space-y-2">
+            <li><a href="https://github.com/korczis/vomaste.cz" class="text-white/70 no-underline hover:text-white hover:underline">Zdrojový kód a data <span class="text-white/30" aria-hidden="true">&#8599;</span></a></li>
+            <li><a href="https://github.com/korczis/vomaste.cz/blob/master/CONTRIBUTING.md" class="text-white/70 no-underline hover:text-white hover:underline">Jak přispět <span class="text-white/30" aria-hidden="true">&#8599;</span></a></li>
+            <li><a href="https://github.com/korczis/vomaste.cz/issues/new" class="text-white/70 no-underline hover:text-white hover:underline">Navrhnout opravu <span class="text-white/30" aria-hidden="true">&#8599;</span></a></li>
+            <li><a href="https://github.com/korczis/vomaste.cz/blob/master/SECURITY.md" class="text-white/70 no-underline hover:text-white hover:underline">Nahlásit zranitelnost <span class="text-white/30" aria-hidden="true">&#8599;</span></a></li>
+          </ul>
+        </nav>
+      </div>
+
+      {#- Licence, odkaz na zdrojový kód a kanál pro opravy schválně NEjsou
+          zopakované tady: hned pod tímhle blokem je globální patička z
+          base.html, která je nese na každé stránce webu. Dvě patičky nad sebou
+          s týmiž třemi odkazy byly přesně ten zdroj zmatku, který tahle
+          přestavba odstraňuje. -#}
+      <p class="mt-12 border-t border-white/10 pt-6 text-xs leading-relaxed text-white/40">Fakta vycházejí výhradně z veřejně publikovaného zpravodajství. Tenhle web nerozhoduje o vině ani nevině — rozlišuje, čím je co doloženo.</p>
     </div>
-    <p class="mx-auto mt-10 max-w-5xl border-t border-white/10 pt-6 text-center text-xs text-white/40">Fakta na této stránce vycházejí výhradně z veřejně publikovaného zpravodajství. Opravy a právo na odpověď: <a href="https://github.com/korczis/vomaste.cz/issues/new" class="underline decoration-white/20 underline-offset-2 hover:text-white/60">GitHub issue</a> (veřejný kanál — každá věcná změna zůstává dohledatelná v historii).</p>
   </footer>
 </main>
 {% endblock content %}
