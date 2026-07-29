@@ -17,6 +17,7 @@
 import { readFileSync, readdirSync, statSync } from "node:fs";
 import { join, dirname, relative } from "node:path";
 import { fileURLToPath } from "node:url";
+import { loadDossierRegistry } from "./lib/dossier-registry.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const PUBLIC_ROOT = join(ROOT, "public");
@@ -109,9 +110,9 @@ if (claimNodes !== claimFiles)
   err(`coverage: ${claimFiles} claim record file(s) on disk but ${claimNodes} Claim node(s) in the built site.`);
 
 // Person markup exactly on entity dossier main pages, never on the aggregate.
-const registry = readFileSync(join(ROOT, "data/dossiers.toml"), "utf8");
-const entitySlugs = [...registry.matchAll(/\[\[dossiers\]\]\s*\nslug = "([^"]+)"\s*\ntitle = "[^"]*"\s*\ndossier_type = "entity"/g)].map((m) => m[1]);
-const aggregateSlugs = [...registry.matchAll(/\[\[dossiers\]\]\s*\nslug = "([^"]+)"\s*\ntitle = "[^"]*"\s*\ndossier_type = "aggregate"/g)].map((m) => m[1]);
+const registry = loadDossierRegistry();
+const entitySlugs = registry.filter((d) => d.dossierType === "entity").map((d) => d.slug);
+const aggregateSlugs = registry.filter((d) => d.dossierType === "aggregate").map((d) => d.slug);
 for (const slug of entitySlugs) {
   const page = join("dossiers", slug, "index.html");
   if ((personPages.get(page) ?? 0) !== 1) err(`coverage: entity dossier page ${page} must emit exactly one Person node.`);
