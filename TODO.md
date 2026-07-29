@@ -75,3 +75,23 @@
         osobnosti) — ukázalo se jako hypotetická právní analýza, ne
         reálný krok; viz odstavec o právní skepsi. Sledovat výsledek
         Turkovy žaloby na ochranu osobnosti proti prezidentovi.
+
+- [x] Pokus o primární-registr OSINT přes ~/dev/prismatic-platform (2026-07-29)
+  - [x] První průchod (živé dotazy na ARES/Justice.cz/ISIR/ČÚZK klienty
+        platformy) odhalil, že tyto klienty jsou nefunkční proti reálným
+        API (špatná HTTP metoda u ARES, neplatné/rozdílné ISIR URL na
+        dvou místech kódu, ČÚZK endpoint blokovaný Radware bot-ochranou).
+        Opraveno přímo v prismatic-platform (samostatný worktree, mimo
+        tento repozitář) — 4 opravené moduly, přidané regresní testy proti
+        živým API, nic z toho neovlivňuje vomaste.cz kód.
+  - [x] Druhý průchod s opravenými klienty: ARES nezávisle potvrdil
+        přesnost už citovaných rejstříkových údajů (SRC-23, SRC-24) —
+        žádná nová firemní vazba ani změna stavu. Osobní ARES dotaz na
+        "Filip Turek" vrátil 14 shod OSVČ napříč ČR, které bez data
+        narození nelze spolehlivě přiřadit ke skutečnému poslanci —
+        vynecháno jako nespolehlivé, ne dopsáno jako fakt. ČÚZK zůstává
+        programově nedostupný (potvrzeno: přesměrování na bot-ochranu i
+        bez zadaného jména, ne jen u jmenného vyhledávání) — GAP-04
+        doplněn a `checked` posunut na 2026-07-29.
+  - [ ] Beze změny v CLM/SRC registrech — jde čistě o nezávislé ověření
+        existujících dat a upřesnění důvodu nedohledatelnosti u ČÚZK.
