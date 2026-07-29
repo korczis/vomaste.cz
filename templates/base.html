@@ -81,7 +81,7 @@
 <nav class="fixed inset-x-0 top-0 z-40 border-b border-white/10 bg-black">
   <div class="flex h-16 items-center gap-3 px-4">
     <button type="button" data-drawer-target="sidebar" data-drawer-toggle="sidebar" data-drawer-body-scrolling="false" aria-controls="sidebar"
-      class="inline-flex items-center rounded-lg p-2 text-white/60 hover:bg-white/5 hover:text-white md:hidden">
+      class="inline-flex items-center rounded-lg p-2 text-white/60 hover:bg-white/5 hover:text-white{% if current_path is defined and current_path != '/' %} md:hidden{% endif %}">
       <span class="sr-only">Otevřít hlavní menu</span>
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
     </button>
@@ -142,7 +142,11 @@
   </div>
 </nav>
 
-<aside id="sidebar" class="fixed inset-y-0 left-0 z-30 w-64 -translate-x-full border-r border-white/10 bg-black pt-16 md:translate-x-0" aria-label="Hlavní navigace dossieru">
+{#- Na landing page sidebar nedokujeme: hero má být plnoformátový a
+    navigace je tam dostupná hamburgrem (drawer) + obsahem stránky.
+    Všude jinde zůstává na desktopu docked. -#}
+{% set sidebar_docked = current_path is defined and current_path != "/" %}
+<aside id="sidebar" class="fixed inset-y-0 left-0 z-30 w-64 -translate-x-full border-r border-white/10 bg-black pt-16{% if sidebar_docked %} md:translate-x-0{% endif %}" aria-label="Hlavní navigace dossieru">
   <nav aria-label="Hlavní navigace dossieru" class="h-full overflow-y-auto py-3">
     {% for item in nav_items %}
     <a href="{{ get_url(path=item.path) | safe }}" title="{{ item.label }}"
@@ -169,7 +173,7 @@
   </nav>
 </noscript>
 
-<div id="main" class="pt-16 md:ml-64">
+<div id="main" class="pt-16{% if sidebar_docked %} md:ml-64{% endif %}">
 {% block content %}{% endblock content %}
 <footer class="mx-auto max-w-5xl border-t border-white/10 px-4 py-6 text-xs text-white/40">
   <p>

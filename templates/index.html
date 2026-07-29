@@ -31,8 +31,8 @@
     </a>
 
     <div class="relative z-10 mx-auto flex w-full max-w-2xl flex-col items-center gap-6 px-6 py-28 text-center [text-shadow:0_4px_24px_rgb(0_0_0_/_85%)]">
-      <p class="text-sm font-bold uppercase tracking-[0.3em] text-[#f3e5c0]">Open Intelligence Commons &middot; open source &middot; zdrojované</p>
-      <h1 id="hero-heading" class="font-sans text-6xl font-extrabold leading-none tracking-tight text-white sm:text-7xl lg:text-8xl">vomaste.cz</h1>
+      <p class="text-xs font-bold uppercase tracking-[0.25em] text-[#f3e5c0] sm:text-sm sm:tracking-[0.3em]">Open Intelligence Commons &middot; open source &middot; zdrojované</p>
+      <h1 id="hero-heading" class="font-sans text-5xl font-extrabold leading-none tracking-tight text-white sm:text-7xl lg:text-8xl">vomaste.cz</h1>
       <p class="max-w-2xl text-balance text-xl font-medium leading-relaxed text-white sm:text-2xl">
         Otevřený, Git-native systém pro tvorbu a publikaci dohledatelných
         dossierů ve veřejném zájmu.
@@ -47,23 +47,23 @@
         <span class="text-[#f3e5c0]">Zkontrolujte data, zdroje a historii změn.</span>
       </p>
 
-      <div class="mt-2 flex flex-col items-center gap-3 sm:flex-row">
+      <div class="mt-2 flex w-full flex-col items-stretch gap-3 sm:w-auto sm:flex-row sm:items-center">
         <a
           href="{{ get_url(path='@/dossiers/_index.md') | safe }}"
-          class="inline-flex items-center justify-center gap-2 rounded-lg bg-[#f3e5c0] px-6 py-3 text-sm font-semibold text-black transition-colors hover:bg-[#e9d6a0] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#d4af37]"
+          class="inline-flex items-center justify-center gap-2 rounded-lg bg-[#f3e5c0] px-6 py-3.5 text-base font-bold text-black transition-colors hover:bg-[#e9d6a0] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#d4af37] sm:py-3 sm:text-sm"
         >
           Zobrazit dossiery
           <span aria-hidden="true">&rarr;</span>
         </a>
         <a
           href="#metodika"
-          class="inline-flex items-center justify-center rounded-lg border border-white/20 px-6 py-3 text-sm font-semibold text-white/80 transition-colors hover:border-white/40 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#d4af37]"
+          class="inline-flex items-center justify-center rounded-lg border border-white/25 px-6 py-3.5 text-base font-semibold text-white transition-colors hover:border-white/50 hover:bg-white/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#d4af37] sm:py-3 sm:text-sm"
         >
           Jak pracujeme
         </a>
         <a
           href="https://github.com/korczis/vomaste.cz"
-          class="inline-flex items-center justify-center rounded-lg border border-white/20 px-6 py-3 text-sm font-semibold text-white/80 transition-colors hover:border-white/40 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#d4af37]"
+          class="inline-flex items-center justify-center rounded-lg border border-white/25 px-6 py-3.5 text-base font-semibold text-white transition-colors hover:border-white/50 hover:bg-white/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#d4af37] sm:py-3 sm:text-sm"
         >
           Zdrojový kód a data
         </a>
