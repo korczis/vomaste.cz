@@ -5,7 +5,10 @@ projekt je stavěný tak, aby zodpovědné přispění bylo snadné a
 nezodpovědná publikace obtížná. Tento dokument je závazný spolu s
 [konstitucí](docs/constitution/OPEN_INTELLIGENCE_COMMONS.md) a
 redakčními pravidly v [AGENTS.md](AGENTS.md); kde by se zdály v
-rozporu, vítězí konstituce a autorizační log.
+rozporu, vítězí konstituce a autorizační log. Tyto i další řídicí
+dokumenty jsou čitelné i přímo na webu pod
+[`/dokumentace/`](https://vomaste.cz/dokumentace/) — stejný zdrojový
+text, jen bez nutnosti chodit na GitHub.
 
 > ⚠️ **Než cokoli pošlete**: všechny kanály tohoto projektu (issues,
 > pull requesty, e-mail, Git historie) jsou **veřejné a trvalé**.

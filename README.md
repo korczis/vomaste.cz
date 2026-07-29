@@ -356,3 +356,9 @@ Konstituce (`docs/constitution/`), redakční pravidla a datový model
 (`AGENTS.md`), koop protokol (`docs/coop/`), audity obsahu
 (`docs/dossier-audit/`), migrační inventura (`docs/migrations/`),
 architektonická rozhodnutí (`docs/adr/`).
+
+Stejné řídicí dokumenty (AGENTS.md, přispívání, konstituce, licence,
+bezpečnostní politika, koop protokol) jsou navíc čitelné přímo na webu
+pod **[/dokumentace/](https://vomaste.cz/dokumentace/)** — vykreslené
+build-time ze stejných zdrojových souborů (žádná druhá kopie, žádný
+klientský JavaScript; viz [`docs/adr/markdown-and-mermaid-rendering.md`](docs/adr/markdown-and-mermaid-rendering.md)).

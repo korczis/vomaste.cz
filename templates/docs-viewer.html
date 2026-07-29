@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% import "macros/ui.html" as ui %}
+
+{% block content %}
+<main class="mx-auto max-w-3xl px-6 py-12 text-white">
+  {{ ui::page_header(title=page.title, description=page.description, breadcrumb_items=[
+    "Domů::" ~ get_url(path="@/_index.md"),
+    "Dokumentace::" ~ get_url(path="@/dokumentace/_index.md"),
+    page.title,
+  ]) }}
+
+  <p class="mb-8 text-xs text-white/40">
+    Tato stránka je vykreslená přímo ze zdrojového souboru
+    <code class="rounded bg-white/5 px-1.5 py-0.5">{{ page.extra.source_file }}</code>
+    v repozitáři při buildu (Zola, build-time render — žádný klientský
+    JavaScript) — jediná kanonická kopie textu, stejný soubor, jaký
+    vykresluje i GitHub. Historii změn viz Git.
+  </p>
+
+  <article class="dossier-prose">
+    {%- set raw = load_data(path=page.extra.source_file, format="plain") -%}
+    {%- set rendered = raw | markdown(inline=false) -%}
+    {#- The source files link to each other by their repo-root relative
+        path (e.g. `[AGENTS.md](AGENTS.md)`), correct on GitHub but wrong
+        once rendered under /dokumentace/<slug>/. Rewrite exactly the
+        known set of cross-references to their on-site URL rather than
+        leaving them 404 or maintaining a second copy of the text with
+        different links. Extend this list if a new doc page is added
+        here and another source file links to it by relative path. -#}
+    {%- set rendered = rendered | replace(from='href="AGENTS.md"', to='href="' ~ get_url(path="@/dokumentace/agents.md") ~ '"') -%}
+    {%- set rendered = rendered | replace(from='href="CONTRIBUTING.md"', to='href="' ~ get_url(path="@/dokumentace/prispivani.md") ~ '"') -%}
+    {%- set rendered = rendered | replace(from='href="SECURITY.md"', to='href="' ~ get_url(path="@/dokumentace/bezpecnost.md") ~ '"') -%}
+    {%- set rendered = rendered | replace(from='href="LICENSE.md"', to='href="' ~ get_url(path="@/dokumentace/licence.md") ~ '"') -%}
+    {%- set rendered = rendered | replace(from='href="docs/constitution/OPEN_INTELLIGENCE_COMMONS.md"', to='href="' ~ get_url(path="@/dokumentace/konstituce.md") ~ '"') -%}
+    {{ rendered | safe }}
+  </article>
+</main>
+{% endblock content %}
