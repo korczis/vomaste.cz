@@ -135,6 +135,25 @@ dot = "dot-disputed"
 
 Každé tvrzení má stav ověřenosti a odkaz na zdroj v [registru zdrojů](#registr-zdroju). Stav vyjadřuje, co pokrývá **náš** citovaný výběr zdrojů (viz sloupec Zdroj) — ne vyčerpávající mediální pokrytí jako celek.
 
+<div x-data="claimsFilter()" x-cloak class="mb-4 flex flex-wrap items-end gap-3" role="search" aria-label="Filtrovat registr tvrzení">
+  <div class="flex flex-col gap-1">
+    <label for="clm-search" class="text-xs text-white/50">Hledat (ID, text, zdroj)</label>
+    <input type="text" id="clm-search" x-model="search" @input="apply()" class="src-filter-input w-64" placeholder="např. CLM-07, Turek, SRC-15…" autocomplete="off">
+  </div>
+  <div class="flex flex-col gap-1">
+    <label for="clm-status-filter" class="text-xs text-white/50">Stav</label>
+    <select id="clm-status-filter" x-model="status" @change="apply()" class="src-filter-select">
+      <option value="">Všechny stavy</option>
+      <option value="status-corroborated">CORROBORATED</option>
+      <option value="status-quote">CITACE</option>
+      <option value="status-disputed">SPORNÉ</option>
+      <option value="status-opinion">NÁZOR</option>
+    </select>
+  </div>
+  <button type="button" @click="search = ''; status = ''; apply()" class="src-filter-reset">Zrušit filtry</button>
+  <p class="text-xs text-white/50"><span x-text="visible">0</span> z <span x-text="total">0</span> tvrzení</p>
+</div>
+
 | ID | Tvrzení | Stav | Zdroj |
 |---|---|---|---|
 | <a id="clm-01"></a>CLM-01 | Turek zvolen europoslancem v červnu 2024 za společnou kandidátku Motoristů a Přísahy | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-11](@/dossier/zdroje/src-11.md), [SRC-12](@/dossier/zdroje/src-12.md), [SRC-13](@/dossier/zdroje/src-13.md) |
@@ -180,25 +199,34 @@ Každé tvrzení má stav ověřenosti a odkaz na zdroj v [registru zdrojů](#re
 
 ## Graf vztahů
 
-<section id="relationship-graph" class="mb-4">
+<section id="relationship-graph" class="mb-4" x-data="relationshipGraph()">
   <div class="mb-2 flex flex-wrap items-center justify-between gap-2">
-    <div id="cy-kind-filters" class="flex flex-wrap gap-1" role="group" aria-label="Filtrovat podle typu uzlu"></div>
-    <div id="cy-status-filters" class="flex flex-wrap gap-1" role="group" aria-label="Filtrovat podle stavu vztahu"></div>
+    <div class="flex flex-wrap gap-1" role="group" aria-label="Filtrovat podle typu uzlu" x-cloak>
+      <button type="button" class="cy-chip" @click="toggleKind('person')" :aria-pressed="activeKinds.person">Osoba</button>
+      <button type="button" class="cy-chip" @click="toggleKind('entity')" :aria-pressed="activeKinds.entity">Strana / instituce</button>
+      <button type="button" class="cy-chip" @click="toggleKind('role')" :aria-pressed="activeKinds.role">Role</button>
+      <button type="button" class="cy-chip" @click="toggleKind('case')" :aria-pressed="activeKinds.case">Kauza</button>
+    </div>
+    <div class="flex flex-wrap gap-1" role="group" aria-label="Filtrovat podle stavu vztahu" x-cloak>
+      <button type="button" class="cy-chip" @click="toggleStatus('fact')" :aria-pressed="activeStatuses.fact">Fakt</button>
+      <button type="button" class="cy-chip" @click="toggleStatus('disputed')" :aria-pressed="activeStatuses.disputed">Sporné</button>
+      <button type="button" class="cy-chip" @click="toggleStatus('quote')" :aria-pressed="activeStatuses.quote">Citace</button>
+    </div>
   </div>
-  <div class="mb-2 flex flex-wrap items-center gap-2">
+  <div class="mb-2 flex flex-wrap items-center gap-2" x-cloak>
     <label for="cy-search" class="text-xs text-white/50">Hledat uzel</label>
-    <input type="text" id="cy-search" class="src-filter-input w-56" placeholder="např. Turek, Motoristé…" autocomplete="off">
-    <button type="button" id="cy-filter-reset" class="src-filter-reset">Zrušit filtry</button>
-    <span class="text-xs text-white/50"><span id="cy-visible-count">0</span> / <span id="cy-total-count">0</span> uzlů zobrazeno</span>
+    <input type="text" id="cy-search" x-model="search" @input="applyFilters()" class="src-filter-input w-56" placeholder="např. Turek, Motoristé…" autocomplete="off">
+    <button type="button" @click="resetFilters()" class="src-filter-reset">Zrušit filtry</button>
+    <span class="text-xs text-white/50"><span x-text="visibleNodeCount">0</span> / <span x-text="totalNodeCount">0</span> uzlů zobrazeno</span>
     <button type="button" class="fs-btn ml-auto" data-fs-target="cy-box" title="Zobrazit na celou obrazovku" aria-label="Zobrazit na celou obrazovku">⛶</button>
   </div>
   <div id="cy-box" class="fs-box cy-wrap">
     <div id="cy" class="cy-canvas" role="img" aria-label="Interaktivní graf vztahů mezi osobami, institucemi, rolemi a kauzami. Textová alternativa se stejným obsahem je uvedena výše na této stránce v sekci Vztahy mezi aktéry."></div>
     <div class="cy-controls">
-      <button type="button" data-cy-action="zoom-in" title="Přiblížit" aria-label="Přiblížit">+</button>
-      <button type="button" data-cy-action="zoom-out" title="Oddálit" aria-label="Oddálit">−</button>
-      <button type="button" data-cy-action="fit" title="Přizpůsobit oknu" aria-label="Přizpůsobit oknu">⤢</button>
-      <button type="button" data-cy-action="relayout" title="Přeuspořádat" aria-label="Přeuspořádat">↻</button>
+      <button type="button" @click="zoom('in')" title="Přiblížit" aria-label="Přiblížit">+</button>
+      <button type="button" @click="zoom('out')" title="Oddálit" aria-label="Oddálit">−</button>
+      <button type="button" @click="zoom('fit')" title="Přizpůsobit oknu" aria-label="Přizpůsobit oknu">⤢</button>
+      <button type="button" @click="zoom('relayout')" title="Přeuspořádat" aria-label="Přeuspořádat">↻</button>
     </div>
     <div class="cy-legend">
       <span><i class="cy-ico cy-ico-person"></i>Osoba</span>
@@ -212,7 +240,7 @@ Každé tvrzení má stav ověřenosti a odkaz na zdroj v [registru zdrojů](#re
     </div>
     <div id="cy-tooltip" class="cy-tooltip" hidden></div>
   </div>
-  <div id="cy-detail" class="mt-3 hidden rounded-lg border border-white/10 bg-white/[0.03] p-3 text-sm" aria-live="polite"></div>
+  <div class="mt-3 rounded-lg border border-white/10 bg-white/[0.03] p-3 text-sm" aria-live="polite" x-show="detailVisible" x-cloak x-html="detailHtml"></div>
   <p class="mt-2 text-xs text-white/40">Interaktivní graf: táhnutím přesuneš uzly, kolečkem myši přiblížíš, kliknutím nebo najetím na uzel/hranu se zobrazí detail, tlačítka vpravo nahoře ovládají zoom/rozložení, ⛶ přepne na celou obrazovku. Textová alternativa se stejným obsahem je v sekci „Vztahy mezi aktéry" výše na stránce.</p>
 </section>
 

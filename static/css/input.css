@@ -46,6 +46,10 @@
     outline-offset: 2px;
   }
 
+  /* Alpine convention: hide [x-cloak] elements until Alpine has actually
+     initialized them, avoiding a flash of unstyled/uninitialized controls. */
+  [x-cloak] { display: none !important; }
+
   /* Without JS, the interactive canvas + its search/filter/legend chrome
      would just be inert boxes — the claims table (color+text+glyph status)
      and the always-rendered text-list graph alternative already carry the
@@ -248,20 +252,4 @@
      sidebar's aria-current state. */
   .quick-nav-active { background: rgba(255,255,255,0.05); color: var(--accent) !important; }
 
-  /* Desktop collapsible sidebar (templates/base.html). Width and content
-     offset are toggled via the html[data-sidebar] attribute rather than a
-     Tailwind utility class, since the collapsed/expanded state is set by
-     JS (assets/js/app.js) after load and Tailwind can't express a
-     JS-controlled width without a plugin. Mobile is untouched — the
-     sidebar is `hidden md:flex`, so none of this applies below md. */
-  @media (min-width: 768px) {
-    .sidebar { width: 72px; transition: width 150ms ease; }
-    html[data-sidebar="expanded"] .sidebar { width: 288px; }
-    #main { padding-left: 72px; transition: padding-left 150ms ease; }
-    html[data-sidebar="expanded"] #main { padding-left: 288px; }
-    .sidebar-label { display: none; }
-    html[data-sidebar="expanded"] .sidebar-label { display: inline; }
-    #sidebar-toggle-icon { transition: transform 150ms ease; }
-    html[data-sidebar="collapsed"] #sidebar-toggle-icon { transform: rotate(180deg); }
-  }
 }

@@ -1,68 +1,49 @@
-// Real client-side filter over the already-rendered sources registry
-// (templates/dossier-sources-index.html). Dropdown options are built from
-// whatever actually appears on the page, never a hardcoded list that can
-// drift from the real data.
-export function initSourcesFilter() {
-  var form = document.getElementById("src-filter-form");
-  if (!form || form.dataset.filterInit) return;
-  form.dataset.filterInit = "true";
+// Alpine component for the sources registry filter
+// (templates/dossier-sources-index.html). Cards stay plain Tera-rendered
+// markup with data-* attributes; this only owns the reactive filter state
+// that each card's `:hidden="!matches($el)"` binding reads.
+export function registerSourcesFilter() {
+  window.Alpine.data("sourcesFilter", function () {
+    return {
+      search: "",
+      type: "",
+      family: "",
+      types: [],
+      families: [],
+      cards: [],
 
-  var search = document.getElementById("src-search");
-  var typeSelect = document.getElementById("src-type-filter");
-  var familySelect = document.getElementById("src-family-filter");
-  var reset = document.getElementById("src-filter-reset");
-  var cards = Array.prototype.slice.call(document.querySelectorAll(".src-card"));
-  var countEl = document.getElementById("src-result-count");
-  var emptyEl = document.getElementById("src-empty-state");
+      init() {
+        this.cards = Array.prototype.slice.call(this.$root.querySelectorAll(".src-card"));
+        var types = [];
+        var families = [];
+        this.cards.forEach(function (c) {
+          var t = c.dataset.type;
+          if (t && types.indexOf(t) === -1) types.push(t);
+          var f = c.dataset.family;
+          if (f && families.indexOf(f) === -1) families.push(f);
+        });
+        this.types = types.sort();
+        this.families = families.sort();
+      },
 
-  var types = [];
-  var families = [];
-  cards.forEach(function (c) {
-    var t = c.getAttribute("data-type");
-    if (t && types.indexOf(t) === -1) types.push(t);
-    var f = c.getAttribute("data-family");
-    if (f && families.indexOf(f) === -1) families.push(f);
-  });
-  types.sort();
-  types.forEach(function (t) {
-    var opt = document.createElement("option");
-    opt.value = t;
-    opt.textContent = t;
-    typeSelect.appendChild(opt);
-  });
-  families.sort();
-  families.forEach(function (f) {
-    var opt = document.createElement("option");
-    opt.value = f;
-    opt.textContent = f;
-    familySelect.appendChild(opt);
-  });
+      matches(card) {
+        var q = this.search.trim().toLowerCase();
+        var matchesQ = !q || card.dataset.search.toLowerCase().indexOf(q) !== -1;
+        var matchesType = !this.type || card.dataset.type === this.type;
+        var matchesFamily = !this.family || card.dataset.family === this.family;
+        return matchesQ && matchesType && matchesFamily;
+      },
 
-  function applyFilter() {
-    var q = search.value.trim().toLowerCase();
-    var type = typeSelect.value;
-    var family = familySelect.value;
-    var shown = 0;
-    cards.forEach(function (c) {
-      var matchesQ = !q || c.getAttribute("data-search").toLowerCase().indexOf(q) !== -1;
-      var matchesType = !type || c.getAttribute("data-type") === type;
-      var matchesFamily = !family || c.getAttribute("data-family") === family;
-      var show = matchesQ && matchesType && matchesFamily;
-      c.hidden = !show;
-      if (show) shown++;
-    });
-    if (countEl) countEl.textContent = String(shown);
-    if (emptyEl) emptyEl.classList.toggle("hidden", shown !== 0);
-  }
+      get visibleCount() {
+        var self = this;
+        return this.cards.filter(function (c) { return self.matches(c); }).length;
+      },
 
-  search.addEventListener("input", applyFilter);
-  typeSelect.addEventListener("change", applyFilter);
-  familySelect.addEventListener("change", applyFilter);
-  reset.addEventListener("click", function () {
-    search.value = "";
-    typeSelect.value = "";
-    familySelect.value = "";
-    applyFilter();
-    search.focus();
+      reset() {
+        this.search = "";
+        this.type = "";
+        this.family = "";
+      },
+    };
   });
 }

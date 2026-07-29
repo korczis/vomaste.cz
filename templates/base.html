@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ page.extra.lang | default(value=config.extra.lang | default(value="en")) }}" class="scroll-smooth no-js" data-sidebar="expanded">
+<html lang="{{ page.extra.lang | default(value=config.extra.lang | default(value="en")) }}" class="scroll-smooth no-js">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -52,7 +52,7 @@
   <link rel="stylesheet" href="{{ get_url(path='css/main.css', cachebust=true) | safe }}">
   <script type="module" defer src="{{ get_url(path='js/app.js', cachebust=true) | safe }}"></script>
 </head>
-<body class="bg-black text-white font-sans antialiased pb-16 md:pb-0">
+<body class="bg-black text-white font-sans antialiased">
 <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:rounded focus:bg-[#f3e5c0] focus:px-3 focus:py-2 focus:text-black">Přeskočit na obsah</a>
 
 {%- set nav_data = load_data(path="data/navigation.toml") -%}
@@ -71,44 +71,57 @@
   {%- endif -%}
 {%- endfor -%}
 
-<aside id="sidebar" class="sidebar fixed inset-y-0 left-0 z-30 hidden flex-col overflow-hidden border-r border-white/10 bg-black md:flex">
-  <div class="flex h-16 items-center gap-2 border-b border-white/10 px-4">
+{#- Advanced Flowbite application shell: fixed top navbar + a sidebar that
+    doubles as a Flowbite Drawer. The `data-drawer-target`/`data-drawer-toggle`
+    pair on the hamburger button is Flowbite's real, documented contract
+    (verified against node_modules/flowbite/lib/esm/components/drawer) —
+    it creates and wires the Drawer instance with zero custom JS. On
+    desktop the same element is forced visible via `md:translate-x-0`
+    (Flowbite's own official sidebar-block technique); assets/js/modules/shell.js
+    corrects the one known side effect of that trick (Flowbite always sets
+    aria-hidden="true" at init regardless of viewport). -#}
+<nav class="fixed inset-x-0 top-0 z-40 border-b border-white/10 bg-black">
+  <div class="flex h-16 items-center gap-3 px-4">
+    <button type="button" data-drawer-target="sidebar" data-drawer-toggle="sidebar" data-drawer-body-scrolling="false" aria-controls="sidebar"
+      class="inline-flex items-center rounded-lg p-2 text-white/60 hover:bg-white/5 hover:text-white md:hidden">
+      <span class="sr-only">Otevřít hlavní menu</span>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
     <a href="{{ get_url(path='@/_index.md') | safe }}" class="flex items-center gap-2 font-black text-white no-underline">
-      <span class="shrink-0 text-lg">V</span>
-      <span class="sidebar-label whitespace-nowrap">vomaste.cz</span>
+      <span class="text-lg">V</span>
+      <span class="whitespace-nowrap">vomaste.cz</span>
     </a>
   </div>
-  <nav aria-label="Hlavní navigace dossieru" class="flex-1 overflow-y-auto py-3">
+</nav>
+
+<aside id="sidebar" class="fixed inset-y-0 left-0 z-30 w-64 -translate-x-full border-r border-white/10 bg-black pt-16 md:translate-x-0" aria-label="Hlavní navigace dossieru">
+  <nav aria-label="Hlavní navigace dossieru" class="h-full overflow-y-auto py-3">
     {% for item in nav_items %}
     <a href="{{ get_url(path=item.path) | safe }}" title="{{ item.label }}"
        {% if item.id == active_id %}aria-current="page"{% endif %}
        class="flex items-center gap-3 px-4 py-2.5 text-sm no-underline {% if item.id == active_id %}bg-white/5 text-[#f3e5c0]{% else %}text-white/60 hover:bg-white/5 hover:text-white{% endif %}">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="shrink-0" aria-hidden="true"><path d="{{ item.icon }}"/></svg>
-      <span class="sidebar-label whitespace-nowrap">{{ item.label }}</span>
+      <span class="whitespace-nowrap">{{ item.label }}</span>
     </a>
     {% endfor %}
   </nav>
-  <div class="border-t border-white/10 p-2">
-    <button type="button" id="sidebar-toggle" aria-expanded="true" aria-controls="sidebar" class="flex w-full items-center justify-center gap-2 rounded-lg px-3 py-2.5 text-xs text-white/50 hover:bg-white/5 hover:text-white">
-      <svg id="sidebar-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
-      <span class="sidebar-label whitespace-nowrap">Sbalit</span>
-    </button>
-  </div>
 </aside>
 
-<div id="main">
+<noscript>
+  {#- The drawer's hamburger toggle requires JS (inherent to any off-canvas
+      drawer). Without JS, the destinations are still one click away here
+      instead of only reachable via in-page breadcrumbs/footer links. -#}
+  <nav aria-label="Hlavní navigace (bez JavaScriptu)" class="border-b border-white/10 bg-black px-4 py-3 pt-16">
+    <ul class="flex flex-wrap gap-4 text-sm">
+      {% for item in nav_items %}
+      <li><a href="{{ get_url(path=item.path) | safe }}" class="text-[#f3e5c0] underline">{{ item.label }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</noscript>
+
+<div id="main" class="pt-16 md:ml-64">
 {% block content %}{% endblock content %}
 </div>
-
-<nav aria-label="Hlavní mobilní navigace" class="fixed inset-x-0 bottom-0 z-40 border-t border-white/10 bg-black/95 backdrop-blur md:hidden" style="padding-bottom: env(safe-area-inset-bottom)">
-  <div class="grid" style="grid-template-columns: repeat({{ nav_items | length }}, minmax(0, 1fr))">
-    {% for item in nav_items %}
-    <a href="{{ get_url(path=item.path) | safe }}" {% if item.id == active_id %}aria-current="page"{% endif %} class="flex min-h-[44px] flex-col items-center justify-center gap-0.5 py-2 no-underline {% if item.id == active_id %}text-[#f3e5c0]{% else %}text-white/60{% endif %}">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="{{ item.icon }}"/></svg>
-      <span class="text-xs font-medium">{{ item.label }}</span>
-    </a>
-    {% endfor %}
-  </div>
-</nav>
 </body>
 </html>

@@ -63,8 +63,13 @@ a real defect, not lint noise.
 - `templates/base.html` — shared layout; all `<meta>` (title, description,
   canonical, Open Graph) is declared once in front matter and rendered
   once here — do not hand-write `<meta>` tags elsewhere.
-- `data/navigation.toml` — data-driven primary navigation (mobile
-  bottom-nav + desktop sidebar), shared by `base.html`.
+- `data/navigation.toml` — data-driven navigation, rendered by `base.html`
+  as a Flowbite application shell (fixed navbar + a sidebar that's a real
+  Flowbite Drawer, docked on desktop and off-canvas on mobile).
+- `assets/js/modules/` — one file per feature. Alpine.js is a permitted
+  targeted dependency here, used the same way as Chart.js/Cytoscape.js:
+  for genuinely interactive UI (filter toolbars, the relationship graph's
+  chips/detail panel), not as a site-wide framework.
 
 ### Editorial rules (binding for any dossier, present or future)
 

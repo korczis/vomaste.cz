@@ -75,12 +75,18 @@ případě pochybnosti se nejdřív zeptej.
 
 - [Zola](https://www.getzola.org/) — generátor statického webu; obsah v
   Markdown + TOML front matter (`content/`), šablony v Tera (`templates/`)
-- Tailwind CSS (CLI build z `static/css/input.css`) + Flowbite komponenty
-  sbalené esbuildem (`assets/js/app.js` → `static/js/app.js`)
+- Tailwind CSS (CLI build z `static/css/input.css`) + Flowbite aplikační
+  shell (navbar + Drawer sidebar, `data-drawer-*` atributy) sbalené
+  esbuildem (`assets/js/app.js` → `static/js/app.js`)
+- Alpine.js — cílená závislost pro skutečně interaktivní UI (filtrovací
+  lišty, chipy a detail panel grafu vztahů), používaná stejně jako
+  Chart.js/Cytoscape.js níže — ne jako celoplošný framework
 - Chart.js a Cytoscape.js (CDN, jen na stránce dossieru) — graf stavu
   tvrzení a interaktivní graf vztahů mezi osobami, institucemi a kauzami
-- `data/navigation.toml` — datově řízená hlavní navigace (mobilní
-  bottom-nav i desktop sidebar), sdílená přes `templates/base.html`
+- `data/navigation.toml` — datově řízená navigace, vykreslená
+  `templates/base.html` jako Flowbite aplikační shell (navbar + sidebar
+  jako skutečný Flowbite Drawer, doklopený na desktopu, mimo obrazovku na
+  mobilu)
 - Klíčové šablony: `index.html` (landing), `dossier.html`,
   `dossier-source.html` + `dossier-sources-index.html`, `dossier-gap.html`
   + `dossier-gaps-index.html`

@@ -18,8 +18,8 @@ Registries are bidirectionally linked, and link/anchor integrity is enforced aut
 
 - `content/` — Zola content: homepage (`_index.md`) and the `/dossier/` section, which holds the main dossier page and the `zdroje/` (sources) and `mezery/` (gaps) sub-sections, one page per item.
 - `templates/` — Tera templates: `base.html` (shared layout), `index.html` (landing page), `dossier.html`, `dossier-source.html` / `dossier-sources-index.html`, `dossier-gap.html` / `dossier-gaps-index.html`.
-- `data/navigation.toml` — data-driven primary navigation (mobile bottom-nav + desktop sidebar), shared via `base.html`.
-- `assets/js/` — ES module JS source, bundled with esbuild into `static/js/app.js`.
+- `data/navigation.toml` — data-driven navigation, rendered by `base.html` into a Flowbite application shell: fixed top navbar + a sidebar that's a genuine Flowbite Drawer (docked on desktop via `md:translate-x-0`, off-canvas on mobile behind the navbar's hamburger toggle).
+- `assets/js/` — ES module JS source, bundled with esbuild into `static/js/app.js`; `assets/js/modules/` holds one file per feature (filters, relationship graph, charts, fullscreen, etc.).
 - `static/css/input.css` — Tailwind source, compiled into `static/css/main.css`.
 - `scripts/dossier/` — Node scripts that validate the dossier's claim/source registry and anchor links; run as part of the build.
 
@@ -27,7 +27,8 @@ Registries are bidirectionally linked, and link/anchor integrity is enforced aut
 
 - [Zola](https://www.getzola.org/) — content, routing, templating
 - [Tailwind CSS](https://tailwindcss.com/) — compiled via the Tailwind CLI (`npm run css:build`), not loaded from a CDN
-- [Flowbite](https://flowbite.com/) — vanilla JS components, bundled via esbuild
+- [Flowbite](https://flowbite.com/) — the navbar/drawer application shell (`data-drawer-target`/`data-drawer-toggle`, self-initializing), bundled via esbuild
+- [Alpine.js](https://alpinejs.dev/) — used the same way as Chart.js/Cytoscape.js below: a targeted dependency for genuinely interactive UI (filter toolbars, the relationship graph's chips/detail panel), not a site-wide framework. Bundled via esbuild.
 - [Chart.js](https://www.chartjs.org/) and [Cytoscape.js](https://js.cytoscape.org/) — loaded from CDN on the dossier page only, for the status chart and relationship graph
 
 ## Development
