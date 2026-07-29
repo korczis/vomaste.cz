@@ -390,3 +390,25 @@ truth rule.
 Metadata (title, description, canonical, Open Graph) is declared once in
 front matter and rendered once in `templates/base.html`. Do not hand-write
 `<meta>` tags in other templates.
+
+## Multi-instance co-op protocol
+
+Parallel work by multiple Claude Code instances (or people) is
+coordinated by the protocol in `docs/coop/PROTOCOL.md`, with the task
+board in `docs/coop/TASKS.md` and the helper `scripts/coop/coop.sh`
+(message bus: append-only NDJSON under the shared git dir, not
+versioned). Binding constraints:
+
+- The protocol is purely **operational**. It never overrides anything
+  above — the editorial rules, the authorization log, or the build gate.
+  A task touching content about a real person still goes through the
+  same scope check and "stop and ask" rule as any other edit.
+- One task = one branch (`task/T-###`) = one git worktree
+  (`~/dev/vomaste-worktrees/T-###`) = one instance. Only the
+  orchestrator (ORCH, main checkout on `master`) edits
+  `docs/coop/TASKS.md`, merges, and pushes; workers report over the
+  bus, never by editing the board — same single-writer discipline as
+  the dossier's single-source-of-truth rule.
+- Merge to `master` only with a clean `npm run build` in the worktree
+  **and** on `master` after the merge. Pushing `master` is the deploy
+  (GitHub Pages CI); deploy continuously after each merged task.

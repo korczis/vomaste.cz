@@ -33,3 +33,11 @@ before touching `content/`, `templates/`, or `scripts/dossier/`.
 - When in doubt about whether a piece of content falls inside the
   currently authorized scope, stop and ask — do not extend coverage to a
   new person, company, or controversy on your own judgment.
+- Multi-instance co-op: when several Claude Code instances work this repo
+  in parallel, follow `docs/coop/PROTOCOL.md`. Check
+  `scripts/coop/coop.sh status` at session start (a SessionStart hook
+  prints it), report over the bus with `coop.sh send`, and respect the
+  single-writer rule: only the ORCH instance (main checkout, `master`)
+  edits `docs/coop/TASKS.md`, merges, and pushes. Workers live in
+  `~/dev/vomaste-worktrees/T-###` on `task/T-###` branches, one task per
+  instance, and merge-request only with a clean `npm run build`.
