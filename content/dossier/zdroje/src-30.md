@@ -7,7 +7,7 @@ weight = 30
 [extra]
 lang = "cs"
 src_id = "SRC-30"
-outlet = "Hospodářské noviny (HN.cz)"
+outlet = "HN.cz (Hospodářské noviny)"
 src_type = "zpravodajství"
 url = "https://domaci.hn.cz/c1-67759680-turek-odmita-obvineni-ze-znasilneni-a-nasili-na-byvale-partnerce-trestny-cin-jsem-nespachal-rika"
 retrieved = "2026-07-22"

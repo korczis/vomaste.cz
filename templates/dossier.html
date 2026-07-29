@@ -50,17 +50,33 @@
     <noscript><p class="text-xs text-white/50">Graf vyžaduje JavaScript. Stav ověřenosti každého tvrzení je vidět přímo u něj v registru tvrzení níže.</p></noscript>
   </section>
 
-  {% set graph = load_data(path="data/relationship-graph.toml") %}
+  {% set graph = load_data(path="data/dossier/graph.toml") %}
   <section aria-labelledby="graph-list-heading" class="mb-12">
-    <h2 id="graph-list-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/40">Vztahy mezi aktéry (textový seznam)</h2>
-    <p class="mb-3 text-xs text-white/50">Textová alternativa k interaktivnímu grafu vztahů níže na stránce (sekce „Graf vztahů") — stejná data, bez závislosti na JavaScriptu.</p>
+    <h2 id="graph-list-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/40">Graf vztahů — textová alternativa</h2>
+    <p class="mb-4 text-xs text-white/50">Úplná textová alternativa k interaktivnímu grafu níže na stránce (sekce „Graf vztahů") — stejná data (tematické okruhy i jednotlivé vztahy), bez závislosti na JavaScriptu, funguje i při selhání CDN Cytoscape.js.</p>
+
+    <h3 class="mb-2 text-xs font-semibold uppercase tracking-wide text-white/40">Tematické okruhy</h3>
+    <div class="mb-6 grid gap-3 sm:grid-cols-2">
+      {% for c in graph.clusters %}
+      <div class="rounded-lg border border-white/10 bg-white/[0.02] p-3">
+        <p class="font-semibold text-white">{{ c.label }}</p>
+        <p class="mt-1 text-xs text-white/50">{{ c.description }}</p>
+        {% if c.gaps and c.gaps | length > 0 %}
+        <p class="mt-2 text-xs text-white/40">Otevřené mezery: {% for g in c.gaps %}<a href="{{ get_url(path='@/dossier/mezery/_index.md') | safe }}" class="text-[#f3e5c0]">{{ g }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+
+    <h3 class="mb-2 text-xs font-semibold uppercase tracking-wide text-white/40">Všechny vztahy ({{ graph.edges | length }})</h3>
     <ul class="space-y-1.5 text-sm text-white/70">
       {% for e in graph.edges %}
-      {%- if e.status == "fact" %}{% set_global status_label = "fakt" %}
+      {%- if e.status == "corroborated" %}{% set_global status_label = "fakt" %}
       {%- elif e.status == "disputed" %}{% set_global status_label = "sporné" %}
       {%- elif e.status == "quote" %}{% set_global status_label = "citace" %}
+      {%- elif e.status == "contextual" %}{% set_global status_label = "kontextové" %}
       {%- else %}{% set_global status_label = e.status %}{% endif -%}
-      <li><span class="edge-status-dot edge-{{ e.status }}"></span>{{ ui::node_label(nodes=graph.nodes, id=e.source) }} <span aria-hidden="true" class="text-white/30">&rarr;</span> <span class="text-white/50">{{ e.label }}</span> <span aria-hidden="true" class="text-white/30">&rarr;</span> {{ ui::node_label(nodes=graph.nodes, id=e.target) }} <span class="text-white/30">({{ status_label }})</span></li>
+      <li><span class="edge-status-dot edge-{{ e.status }}"></span>{{ ui::node_label(nodes=graph.nodes, id=e.source) }} <span aria-hidden="true" class="text-white/30">&rarr;</span> <span class="text-white/50">{{ e.label }}</span> <span aria-hidden="true" class="text-white/30">&rarr;</span> {{ ui::node_label(nodes=graph.nodes, id=e.target) }} <span class="text-white/30">({{ status_label }}{% if e.claims %}, {{ e.claims | join(sep=", ") }}{% endif %})</span></li>
       {% endfor %}
     </ul>
   </section>
@@ -99,6 +115,26 @@
   <article class="dossier-prose">
     {{ section.content | safe }}
   </article>
+
+  {% set updates = load_data(path="data/dossier/updates.toml") %}
+  {% if updates.updates %}
+  <section aria-labelledby="updates-heading" class="mb-12 mt-12">
+    <h2 id="updates-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/40">Historie aktualizací</h2>
+    <p class="mb-3 text-xs text-white/50">Auditovatelný, append-only záznam skutečně provedených kontrol a změn — datum se zvyšuje jen po reálném ověření, ne automaticky.</p>
+    <ol class="space-y-3">
+      {% for u in updates.updates | reverse %}
+      <li class="rounded-lg border border-white/10 bg-white/[0.02] p-4">
+        <p class="font-mono text-xs text-[#f3e5c0]">{{ u.date }}</p>
+        <p class="mt-1 text-sm text-white/70">{{ u.summary }}</p>
+        <p class="mt-2 text-xs text-white/40">
+          {%- if u.added_claims and u.added_claims | length > 0 %}Nová tvrzení: {{ u.added_claims | join(sep=", ") }}{% endif -%}
+          {%- if u.reviewed_sources and u.reviewed_sources | length > 0 %} · Zkontrolované zdroje: {{ u.reviewed_sources | length }}{% endif -%}
+        </p>
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+  {% endif %}
 
   <footer class="mt-12 border-t border-white/10 pt-6 text-xs text-white/40">
     <p>Tvrzení na této stránce vycházejí výhradně z citovaných veřejných zdrojů (viz tabulka Zdroje výše). Opravy: <a href="mailto:corrections@vomaste.cz" class="underline">corrections@vomaste.cz</a>.</p>

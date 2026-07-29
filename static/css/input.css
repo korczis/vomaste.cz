@@ -243,9 +243,10 @@
   .cy-chip:hover { border-color: var(--border-strong); color: var(--text); }
 
   .edge-status-dot { display: inline-block; width: 0.55rem; height: 0.55rem; border-radius: 9999px; margin-right: 0.4rem; }
-  .edge-status-dot.edge-fact { background: #4ade80; }
+  .edge-status-dot.edge-corroborated { background: #4ade80; }
   .edge-status-dot.edge-disputed { background: #facc15; }
   .edge-status-dot.edge-quote { background: #93c5fd; }
+  .edge-status-dot.edge-contextual { background: rgba(255,255,255,0.35); }
 
   /* Scroll-spy active state on the dossier's sticky quick-nav
      (assets/js/modules/section-nav.js). Same visual language as the main

@@ -1,0 +1,633 @@
+# Relationship graph data model for the dossier's Cytoscape.js
+# visualization (templates/dossier.html, assets/js/modules/relationship-graph.js).
+#
+# This is dossier content, not decoration: every node/edge label is a claim
+# about real people/institutions and follows the same sourcing discipline
+# as the rest of the dossier (see AGENTS.md). Every factual edge (status
+# "corroborated" | "disputed" | "quote") carries at least one CLM-## and
+# one SRC-## from the actual registries in content/dossier/_index.md and
+# content/dossier/zdroje/ — this file is a *projection* of that registry
+# for visualization, not a parallel source of truth. Referential integrity
+# (node ids, CLM/SRC/GAP existence, relation-type/node-type compatibility,
+# depth-path-to-subject) is enforced by scripts/dossier/validate-graph.mjs.
+#
+# depth: 0 = the two dossier subjects; 1 = their direct, already-authorized
+# context (roles, parties, the four tracked cases); 2 = one further
+# authorized level (institutions/companies/persons that appear directly in
+# already-cited source coverage of those depth-1 items). Depth expresses
+# distance from the subjects in *this* model, not importance or
+# credibility — see AGENTS.md's context-node rules for what may appear
+# here at all.
+#
+# status: "corroborated" (independently confirmed), "quote" (a direct
+# quote from someone, not this site's assessment), "disputed" (open/
+# contested), "contextual" (structural/background fact, e.g. "X is PM" —
+# not a claim this dossier is itself asserting or sourcing).
+
+[[nodes]]
+id = "macinka"
+type = "person"
+label = "Petr Macinka"
+depth = 0
+subject = true
+claims = ["CLM-03", "CLM-24"]
+sources = ["SRC-11", "SRC-27"]
+
+[[nodes]]
+id = "turek"
+type = "person"
+label = "Filip Turek"
+depth = 0
+subject = true
+claims = ["CLM-01", "CLM-02"]
+sources = ["SRC-11", "SRC-13"]
+
+[[nodes]]
+id = "motoriste"
+type = "political_party"
+label = "Motoristé sobě"
+depth = 1
+claims = ["CLM-03"]
+sources = ["SRC-11"]
+
+[[nodes]]
+id = "vlada"
+type = "public_institution"
+label = "Vláda (ANO + SPD + Motoristé)"
+depth = 1
+claims = ["CLM-03"]
+sources = ["SRC-11"]
+
+[[nodes]]
+id = "ep"
+type = "public_institution"
+label = "Evropský parlament"
+depth = 1
+claims = ["CLM-01"]
+sources = ["SRC-11"]
+
+[[nodes]]
+id = "greendeal"
+type = "role"
+label = "Zmocněnec pro Green Deal"
+depth = 1
+claims = ["CLM-11"]
+sources = ["SRC-06"]
+
+[[nodes]]
+id = "babis"
+type = "person"
+label = "Andrej Babiš (premiér)"
+depth = 1
+claims = ["CLM-12"]
+sources = ["SRC-06"]
+
+[[nodes]]
+id = "pavel"
+type = "person"
+label = "Petr Pavel (prezident)"
+depth = 1
+claims = ["CLM-38"]
+sources = ["SRC-44"]
+
+[[nodes]]
+id = "kauza2024"
+type = "controversy"
+label = "Kauza 2024: fotografie a svícny"
+depth = 1
+cluster = "kauza-2024-fotografie"
+claims = ["CLM-04"]
+sources = ["SRC-12"]
+
+[[nodes]]
+id = "kauza2025"
+type = "controversy"
+label = "Kauza 2025: smazané příspěvky"
+depth = 1
+cluster = "smazane-prispevky"
+claims = ["CLM-07"]
+sources = ["SRC-15"]
+
+[[nodes]]
+id = "nehoda2026"
+type = "event"
+label = "Nehoda 2026"
+depth = 1
+cluster = "dopravni-nehoda"
+claims = ["CLM-10"]
+sources = ["SRC-02"]
+
+[[nodes]]
+id = "trestniozn"
+type = "legal_or_administrative_process"
+label = "Trestní oznámení (2025)"
+depth = 1
+cluster = "trestni-oznameni"
+claims = ["CLM-25"]
+sources = ["SRC-28"]
+
+[[nodes]]
+id = "mzp2026"
+type = "controversy"
+label = "Jmenování ministrem ŽP (2026)"
+depth = 1
+cluster = "politicke-role"
+claims = ["CLM-38"]
+sources = ["SRC-44"]
+
+[[nodes]]
+id = "gmrgas"
+type = "company"
+label = "GMR GAS UA LLC (Kyjev)"
+depth = 1
+cluster = "financni-vazby"
+claims = ["CLM-14"]
+sources = ["SRC-17"]
+
+[[nodes]]
+id = "klubmotoristu"
+type = "organization"
+label = "Klub motoristů, z.s."
+depth = 1
+cluster = "financni-vazby"
+claims = ["CLM-22"]
+sources = ["SRC-24"]
+
+[[nodes]]
+id = "chlad"
+type = "person"
+label = "Richard Chlad (sponzor)"
+depth = 2
+cluster = "financni-vazby"
+claims = ["CLM-36"]
+sources = ["SRC-41"]
+
+[[nodes]]
+id = "cerveny"
+type = "person"
+label = "Igor Červený"
+depth = 1
+cluster = "politicke-role"
+summary = "Poslanec za Motoristy sobě; 23. 2. 2026 jmenován ministrem životního prostředí jako nástupce Petra Macinky v čele resortu."
+claims = ["CLM-43"]
+sources = ["SRC-49", "SRC-50"]
+
+[[nodes]]
+id = "policie"
+type = "public_institution"
+label = "Policie ČR"
+depth = 2
+summary = "Vyšetřuje dopravní nehodu (2026) a prověřovala Turkovy výroky na sociálních sítích i trestní oznámení Motoristů na Deník N — obě věci 28. 7. 2026 odložila pro promlčení, resp. absenci trestného činu."
+claims = ["CLM-41"]
+sources = ["SRC-47", "SRC-48"]
+
+[[nodes]]
+id = "statni-zastupitelstvi"
+type = "public_institution"
+label = "Státní zastupitelství"
+depth = 2
+cluster = "trestni-oznameni"
+summary = "Odložilo trestní oznámení o domácím násilí a znásilnění pro promlčení; rozhodnutí není pravomocné, žena se odvolala."
+claims = ["CLM-27"]
+sources = ["SRC-31"]
+
+[[nodes]]
+id = "mzdrav"
+type = "public_institution"
+label = "Ministerstvo zdravotnictví"
+depth = 2
+cluster = "zapper-club"
+summary = "Veřejně varovalo před používáním přístroje zapper prodávaného firmou Zapper-Club."
+claims = ["CLM-31"]
+sources = ["SRC-34"]
+
+[[nodes]]
+id = "szpi"
+type = "public_institution"
+label = "SZPI"
+depth = 2
+cluster = "zapper-club"
+summary = "Státní zemědělská a potravinářská inspekce odebrala přístroji zapper certifikát kvůli zakázaným léčebným tvrzením."
+claims = ["CLM-31"]
+sources = ["SRC-34", "SRC-35"]
+
+[[nodes]]
+id = "zapper-club"
+type = "company"
+label = "Zapper-Club s.r.o."
+depth = 1
+cluster = "zapper-club"
+claims = ["CLM-20", "CLM-31"]
+sources = ["SRC-23", "SRC-34"]
+
+[[nodes]]
+id = "nemocnice-homolce"
+type = "public_institution"
+label = "Nemocnice Na Homolce"
+depth = 2
+cluster = "dopravni-nehoda"
+summary = "Provozovatel vozidla zdravotnické záchranné služby, které se srazilo s Turkovým autem."
+claims = ["CLM-18"]
+sources = ["SRC-20"]
+
+# --- edges -------------------------------------------------------------
+# Every factual edge (status != "contextual") carries >=1 CLM-## and
+# >=1 SRC-##. "contextual" edges are structural scaffolding (e.g. "X is
+# prime minister") that this dossier is not itself asserting as a
+# researched claim — see scripts/dossier/validate-graph.mjs for the exact
+# rule.
+
+[[edges]]
+id = "edge-macinka-motoriste"
+source = "macinka"
+target = "motoriste"
+relation = "HOLDS_ROLE"
+label = "předseda"
+status = "corroborated"
+claims = ["CLM-03"]
+sources = ["SRC-11", "SRC-13"]
+
+[[edges]]
+id = "edge-turek-motoriste"
+source = "turek"
+target = "motoriste"
+relation = "MEMBER_OF"
+label = "poslanec za"
+status = "corroborated"
+claims = ["CLM-01"]
+sources = ["SRC-11", "SRC-12", "SRC-13"]
+
+[[edges]]
+id = "edge-motoriste-vlada"
+source = "motoriste"
+target = "vlada"
+relation = "MEMBER_OF"
+label = "člen koalice"
+status = "corroborated"
+claims = ["CLM-03"]
+sources = ["SRC-11", "SRC-13"]
+
+[[edges]]
+id = "edge-babis-vlada"
+source = "babis"
+target = "vlada"
+relation = "HOLDS_ROLE"
+label = "premiér"
+status = "contextual"
+note = "Nesporné veřejné pozadí (kdo je premiérem), ne tvrzení dokládané vlastním zdrojem tohoto dossieru."
+
+[[edges]]
+id = "edge-turek-ep"
+source = "turek"
+target = "ep"
+relation = "HOLDS_ROLE"
+label = "europoslanec 2024–2025"
+status = "corroborated"
+claims = ["CLM-01"]
+sources = ["SRC-11", "SRC-12", "SRC-13"]
+
+[[edges]]
+id = "edge-turek-greendeal"
+source = "turek"
+target = "greendeal"
+relation = "APPOINTED_AS"
+label = "zmocněnec (do nehody)"
+status = "corroborated"
+claims = ["CLM-11"]
+sources = ["SRC-06", "SRC-07"]
+
+[[edges]]
+id = "edge-turek-kauza2024"
+source = "turek"
+target = "kauza2024"
+relation = "ASSOCIATED_WITH_EVENT"
+label = "subjekt"
+status = "disputed"
+claims = ["CLM-04"]
+sources = ["SRC-12", "SRC-14"]
+
+[[edges]]
+id = "edge-macinka-kauza2024"
+source = "macinka"
+target = "kauza2024"
+relation = "DEFENDED"
+label = "hájí (\"pseudoproblém\")"
+status = "quote"
+claims = ["CLM-06"]
+sources = ["SRC-12", "SRC-14"]
+
+[[edges]]
+id = "edge-turek-kauza2025"
+source = "turek"
+target = "kauza2025"
+relation = "ASSOCIATED_WITH_EVENT"
+label = "subjekt"
+status = "disputed"
+claims = ["CLM-07"]
+sources = ["SRC-15"]
+
+[[edges]]
+id = "edge-turek-nehoda2026"
+source = "turek"
+target = "nehoda2026"
+relation = "ASSOCIATED_WITH_EVENT"
+label = "subjekt"
+status = "corroborated"
+claims = ["CLM-10"]
+sources = ["SRC-02"]
+
+[[edges]]
+id = "edge-macinka-nehoda2026"
+source = "macinka"
+target = "nehoda2026"
+relation = "DEFENDED"
+label = "hájí (\"nikdy se ho nevzdám\")"
+status = "quote"
+claims = ["CLM-13"]
+sources = ["SRC-01", "SRC-04"]
+
+[[edges]]
+id = "edge-babis-nehoda2026"
+source = "babis"
+target = "nehoda2026"
+relation = "RESPONDED_TO"
+label = "vyzval k odpovědnosti"
+status = "corroborated"
+claims = ["CLM-12"]
+sources = ["SRC-06", "SRC-08"]
+
+[[edges]]
+id = "edge-macinka-gmrgas"
+source = "macinka"
+target = "gmrgas"
+relation = "UNDISCLOSED_INTEREST_IN"
+label = "nepřiznaný 20% podíl"
+status = "disputed"
+claims = ["CLM-14"]
+sources = ["SRC-17", "SRC-18"]
+
+[[edges]]
+id = "edge-macinka-klubmotoristu"
+source = "macinka"
+target = "klubmotoristu"
+relation = "HOLDS_ROLE"
+label = "statutární orgán"
+status = "corroborated"
+claims = ["CLM-22"]
+sources = ["SRC-24"]
+
+[[edges]]
+id = "edge-klubmotoristu-motoriste"
+source = "klubmotoristu"
+target = "motoriste"
+relation = "DONATED_TO"
+label = "dar 800 000 Kč (2024)"
+status = "corroborated"
+claims = ["CLM-23"]
+sources = ["SRC-26"]
+
+[[edges]]
+id = "edge-turek-trestniozn"
+source = "turek"
+target = "trestniozn"
+relation = "SUBJECT_OF_PROCEEDING"
+label = "subjekt (oznámení 6/2025, odloženo pro promlčení 5/2026)"
+status = "disputed"
+claims = ["CLM-25"]
+sources = ["SRC-28", "SRC-29", "SRC-30"]
+
+[[edges]]
+id = "edge-chlad-motoriste"
+source = "chlad"
+target = "motoriste"
+relation = "DONATED_TO"
+label = "dar 638 864 Kč (2025, oficiálně) vs. tvrzené ~2 mil. Kč"
+status = "disputed"
+claims = ["CLM-36"]
+sources = ["SRC-41", "SRC-42"]
+
+[[edges]]
+id = "edge-turek-mzp2026"
+source = "turek"
+target = "mzp2026"
+relation = "ASSOCIATED_WITH_EVENT"
+label = "navrhován, nejmenován (1/2026)"
+status = "corroborated"
+claims = ["CLM-38"]
+sources = ["SRC-44", "SRC-45"]
+
+[[edges]]
+id = "edge-pavel-mzp2026"
+source = "pavel"
+target = "mzp2026"
+relation = "DENIED"
+label = "odmítl jmenovat"
+status = "corroborated"
+claims = ["CLM-38"]
+sources = ["SRC-44", "SRC-45"]
+
+[[edges]]
+id = "edge-turek-pavel"
+source = "turek"
+target = "pavel"
+relation = "RESPONDED_TO"
+label = "hrozil žalobou (1/2026), nakonec nepodal (7/2026)"
+status = "corroborated"
+claims = ["CLM-39", "CLM-44"]
+sources = ["SRC-44", "SRC-51", "SRC-52"]
+
+[[edges]]
+id = "edge-macinka-mzp2026"
+source = "macinka"
+target = "mzp2026"
+relation = "APPOINTED_AS"
+label = "dočasně vede resort (do 2/2026)"
+status = "corroborated"
+claims = ["CLM-24", "CLM-40"]
+sources = ["SRC-27", "SRC-45", "SRC-46"]
+
+[[edges]]
+id = "edge-cerveny-mzp2026"
+source = "cerveny"
+target = "mzp2026"
+relation = "APPOINTED_AS"
+label = "jmenován ministrem (nahradil Macinku, 23. 2. 2026)"
+status = "corroborated"
+claims = ["CLM-43"]
+sources = ["SRC-49", "SRC-50"]
+
+[[edges]]
+id = "edge-macinka-cerveny"
+source = "macinka"
+target = "cerveny"
+relation = "FOLLOWED_BY"
+label = "nahrazen ve funkci ministra ŽP"
+status = "corroborated"
+claims = ["CLM-43"]
+sources = ["SRC-49", "SRC-50"]
+
+[[edges]]
+id = "edge-nehoda2026-policie"
+source = "nehoda2026"
+target = "policie"
+relation = "INVESTIGATED_BY"
+label = "vyšetřování (výsledek k datu poslední kontroly neuzavřen)"
+status = "corroborated"
+claims = ["CLM-10", "CLM-16", "CLM-18"]
+sources = ["SRC-02", "SRC-19", "SRC-20"]
+
+[[edges]]
+id = "edge-homolce-nehoda2026"
+source = "nemocnice-homolce"
+target = "nehoda2026"
+relation = "ASSOCIATED_WITH_EVENT"
+label = "provozovatel vozidla záchranné služby"
+status = "corroborated"
+claims = ["CLM-18"]
+sources = ["SRC-20"]
+
+[[edges]]
+id = "edge-trestniozn-statnizastupitelstvi"
+source = "trestniozn"
+target = "statni-zastupitelstvi"
+relation = "PROCEDURALLY_CLOSED_BY"
+label = "odloženo pro promlčení; nepravomocné, žena se odvolala"
+status = "corroborated"
+claims = ["CLM-27"]
+sources = ["SRC-31"]
+
+[[edges]]
+id = "edge-kauza2025-policie"
+source = "kauza2025"
+target = "policie"
+relation = "PROCEDURALLY_CLOSED_BY"
+label = "prověřování výroků i oznámení na Deník N odloženo (28. 7. 2026)"
+status = "corroborated"
+claims = ["CLM-41", "CLM-42"]
+sources = ["SRC-47", "SRC-48"]
+
+[[edges]]
+id = "edge-turek-zapperclub"
+source = "turek"
+target = "zapper-club"
+relation = "MEMBER_OF"
+label = "společník 2016–2023"
+status = "corroborated"
+claims = ["CLM-20"]
+sources = ["SRC-23"]
+
+[[edges]]
+id = "edge-zapperclub-mzdrav"
+source = "zapper-club"
+target = "mzdrav"
+relation = "WARNED_BY"
+label = "varování před přístrojem zapper"
+status = "corroborated"
+claims = ["CLM-31"]
+sources = ["SRC-34", "SRC-35"]
+
+[[edges]]
+id = "edge-zapperclub-szpi"
+source = "zapper-club"
+target = "szpi"
+relation = "WARNED_BY"
+label = "odebrání certifikátu"
+status = "corroborated"
+claims = ["CLM-31"]
+sources = ["SRC-34", "SRC-35"]
+
+# --- clusters ------------------------------------------------------------
+# Thematic grouping only — not a status, not a hierarchy of importance.
+
+[[clusters]]
+id = "politicke-role"
+label = "Politické role a veřejné funkce"
+description = "Stranické a vládní role obou subjektů, včetně ministerstva životního prostředí a jeho nástupnictví."
+claims = ["CLM-03", "CLM-24", "CLM-38", "CLM-40", "CLM-43"]
+sources = ["SRC-11", "SRC-27", "SRC-44", "SRC-49", "SRC-50"]
+nodes = ["macinka", "turek", "motoriste", "vlada", "ep", "greendeal", "babis", "pavel", "mzp2026", "cerveny"]
+gaps = ["GAP-02"]
+
+[[clusters]]
+id = "dopravni-nehoda"
+label = "Dopravní nehoda a politická reakce"
+description = "Nehoda Turkova vozidla se sanitkou (2026), vyšetřování a bezprostřední politické reakce."
+claims = ["CLM-10", "CLM-11", "CLM-12", "CLM-16", "CLM-17", "CLM-18"]
+sources = ["SRC-02", "SRC-06", "SRC-19", "SRC-20"]
+nodes = ["turek", "macinka", "babis", "nehoda2026", "policie", "nemocnice-homolce"]
+gaps = ["GAP-01", "GAP-02"]
+
+[[clusters]]
+id = "kauza-2024-fotografie"
+label = "Kauza 2024: fotografie a sbírka svícnů"
+description = "Fotografie připomínající nacistický pozdrav a sbírka svícnů s hákovými kříži, kritizované před eurovolbami 2024."
+claims = ["CLM-04", "CLM-05", "CLM-06"]
+sources = ["SRC-12", "SRC-14"]
+nodes = ["turek", "macinka", "kauza2024"]
+gaps = []
+
+[[clusters]]
+id = "smazane-prispevky"
+label = "Smazané příspěvky na Facebooku"
+description = "Deník N zveřejnil údajné smazané příspěvky (10/2025); Turek autorství nejzávažnějších odmítá. Policie 28. 7. 2026 odložila prověřování i vzájemné trestní oznámení Motoristů na Deník N pro promlčení/beztrestnost — pravost samotných příspěvků tím zůstává neuzavřená."
+claims = ["CLM-07", "CLM-08", "CLM-09", "CLM-19", "CLM-41", "CLM-42"]
+sources = ["SRC-15", "SRC-16", "SRC-22", "SRC-47", "SRC-48"]
+nodes = ["turek", "kauza2025", "policie"]
+gaps = ["GAP-03"]
+
+[[clusters]]
+id = "trestni-oznameni"
+label = "Trestní oznámení (domácí násilí, znásilnění)"
+description = "Nejzávažnější a právně nejcitlivější položka dossieru — viz AGENTS.md pro zvláštní pravidla zacházení. Odloženo pro promlčení; nejde o rozhodnutí ve věci."
+claims = ["CLM-25", "CLM-26", "CLM-27"]
+sources = ["SRC-28", "SRC-29", "SRC-30", "SRC-31"]
+nodes = ["turek", "trestniozn", "statni-zastupitelstvi"]
+gaps = ["GAP-06"]
+
+[[clusters]]
+id = "zapper-club"
+label = "Zapper Club a zdravotní tvrzení"
+description = "Turkova firma nabízela za pandemie přístroj zapper; Ministerstvo zdravotnictví varovalo, SZPI odebrala certifikát."
+claims = ["CLM-20", "CLM-31"]
+sources = ["SRC-23", "SRC-34", "SRC-35"]
+nodes = ["turek", "zapper-club", "mzdrav", "szpi"]
+gaps = []
+
+[[clusters]]
+id = "financni-vazby"
+label = "Majetkové, podnikatelské a finanční vazby"
+description = "Firemní/spolkové vazby a dárcovské vztahy obou subjektů, doložené rejstříkovými daty (Hlídač státu) a investigativní žurnalistikou."
+claims = ["CLM-14", "CLM-15", "CLM-20", "CLM-21", "CLM-22", "CLM-23", "CLM-36", "CLM-37"]
+sources = ["SRC-17", "SRC-18", "SRC-23", "SRC-24", "SRC-26", "SRC-41", "SRC-42"]
+nodes = ["macinka", "turek", "gmrgas", "klubmotoristu", "chlad"]
+gaps = ["GAP-04", "GAP-05"]
+
+[[clusters]]
+id = "dalsi-kontroverze"
+label = "Další zaznamenané kontroverze"
+description = "Menší rozsahem: incident u saúdské ambasády (2017), nepovolené stavby (2026), závodní kariéra, setkání s diplomaty."
+claims = ["CLM-28", "CLM-29", "CLM-30", "CLM-32", "CLM-33"]
+sources = ["SRC-32", "SRC-33", "SRC-36", "SRC-37"]
+nodes = ["turek"]
+gaps = []
+
+# --- source families -------------------------------------------------
+# Mirrors the `family` front-matter field already used in
+# content/dossier/zdroje/*.md — restated here as structured data so the
+# graph/validator can reason about independent-confirmation rules without
+# re-parsing markdown front matter.
+
+[[source_families]]
+id = "denik-n"
+label = "Deník N"
+sources = ["SRC-14", "SRC-15", "SRC-47", "SRC-52"]
+
+[[source_families]]
+id = "hlidac-statu"
+label = "Hlídač státu"
+sources = ["SRC-23", "SRC-24", "SRC-25", "SRC-26", "SRC-27", "SRC-41"]
+
+[[source_families]]
+id = "denik-cz-turek-ministr"
+label = "Deník.cz (ministerská nominace)"
+sources = ["SRC-44", "SRC-46", "SRC-49"]

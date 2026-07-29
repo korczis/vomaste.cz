@@ -8,8 +8,8 @@ weight = 3
 lang = "cs"
 gap_id = "GAP-03"
 priority = "vysoká"
-checked = "2026-07-23"
-claims = ["CLM-07", "CLM-08", "CLM-09", "CLM-19"]
+checked = "2026-07-29"
+claims = ["CLM-07", "CLM-08", "CLM-09", "CLM-19", "CLM-41", "CLM-42"]
 +++
 
 V říjnu 2025 zveřejnil Deník N printscreeny příspěvků z let přibližně
@@ -45,10 +45,19 @@ Podrobnosti viz [hlavní přehled kauzy](@/dossier/_index.md#kauza-z-rijna-2025-
   trestného činu a hanobení národa/rasy — jde o časné stadium bez obvinění
   a bez rozhodnutí o pravosti.
 
-Stav trestního oznámení Motoristů sobě proti Deníku N (podáno 2025-10-12)
-zůstává bez dohledaného výsledku k 2026-07-23.
+**Aktualizace 2026-07-29**: Policie 28. 7. 2026 odložila jak prověřování
+samotných výroků (pro promlčení — CLM-41), tak trestní oznámení Motoristů
+sobě proti Deníku N (pro neexistenci trestného činu — CLM-42; viz
+[SRC-47](@/dossier/zdroje/src-47.md), [SRC-48](@/dossier/zdroje/src-48.md)).
+Obě rozhodnutí jsou procesní a nejsou pravomocná. Podstatné pro tuto
+mezeru: policie **nepotvrdila** verzi Motoristů, že materiály byly
+zfalšované — ale ani se závazně nevyjádřila k jejich pravosti jako
+takové, protože to pro odložení pro promlčení nebylo potřeba. Otázka
+nezávislého forenzního ověření pravosti (CLM-09) tak zůstává **stále
+otevřená** — uzavření obou řízení mezeru neuzavírá, jen mění jejich
+právní stav.
 
 Dossier tento bod nadále vede jako **neuzavřenou, spornou otázku** — ne
 jako potvrzený fakt v žádném směru, ať už ve prospěch, nebo v neprospěch
 pravosti příspěvků — dokud se neobjeví ověřitelná zpráva o výsledku
-forenzní verifikace nebo obou trestních řízení.
+forenzní verifikace.

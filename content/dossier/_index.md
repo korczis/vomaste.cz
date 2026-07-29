@@ -5,8 +5,8 @@ template = "dossier.html"
 
 [extra]
 lang = "cs"
-updated = "2026-07-23"
-reviewed_at = "2026-07-23"
+updated = "2026-07-29"
+reviewed_at = "2026-07-29"
 # Overview stat tiles (sources/cases/claims/gaps counts) are no longer
 # hand-typed here — templates/dossier.html computes them at build time from
 # data/dossier-stats.toml (see scripts/dossier/generate-stats.mjs), so they
@@ -105,6 +105,12 @@ anchor = "jmenovani-ministrem-zivotniho-prostredi"
 dot = "dot-disputed"
 
 [[extra.timeline]]
+date = "23. 2. 2026"
+title = "Igor Červený jmenován ministrem životního prostředí — končí Macinkovo dočasné pověření"
+anchor = "jmenovani-ministrem-zivotniho-prostredi"
+dot = "dot-fact"
+
+[[extra.timeline]]
 date = "2026"
 title = "Dopravní nehoda a politický tlak na rezignaci"
 anchor = "dopravni-nehoda-2026"
@@ -115,6 +121,18 @@ date = "květen 2026"
 title = "Státní zastupitelství odkládá trestní oznámení pro promlčení, žena se odvolává"
 anchor = "trestni-oznameni-obvineni-z-domaciho-nasili-a-znasilneni"
 dot = "dot-disputed"
+
+[[extra.timeline]]
+date = "27. 7. 2026"
+title = "Turek oznamuje, že žalobu na prezidenta Pavla nakonec nepodá"
+anchor = "jmenovani-ministrem-zivotniho-prostredi"
+dot = "dot-fact"
+
+[[extra.timeline]]
+date = "28. 7. 2026"
+title = "Policie odkládá prověřování Turkových výroků i oznámení na Deník N (promlčení / beztrestnost zveřejnění)"
+anchor = "kauza-z-rijna-2025-smazane-prispevky-na-facebooku"
+dot = "dot-fact"
 +++
 
 <div class="legend">
@@ -196,11 +214,21 @@ Každé tvrzení má stav ověřenosti a odkaz na zdroj v [registru zdrojů](#re
 | <a id="clm-38"></a>CLM-38 | V lednu 2026 prezident Petr Pavel odmítl jmenovat Turka ministrem životního prostředí; jako důvod uvedl opakovaný nedostatek respektu k právnímu řádu, zlehčování nacistického Německa a zpochybňování důstojnosti a rovnosti žen a příslušníků menšin | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-44](@/dossier/zdroje/src-44.md), [SRC-45](@/dossier/zdroje/src-45.md) |
 | <a id="clm-39"></a>CLM-39 | Turek 9. 1. 2026 oznámil, že na prezidenta podá žalobu na ochranu osobnosti a bude žádat omluvu za toto zdůvodnění | <span class="status-badge status-quote">CITACE</span> | [SRC-44](@/dossier/zdroje/src-44.md) |
 | <a id="clm-40"></a>CLM-40 | Turek namísto ministerského postu zastává roli vládního zmocněnce pro klimatickou změnu a Green Deal; premiér Babiš označil jeho jmenování ministrem za „uzavřenou kapitolu"; řízením ministerstva byl dočasně pověřen Petr Macinka | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-45](@/dossier/zdroje/src-45.md), [SRC-46](@/dossier/zdroje/src-46.md) |
+| <a id="clm-41"></a>CLM-41 | Dne 28. 7. 2026 policie odložila prověřování Turkových výroků z CLM-07 pro promlčení; rozhodnutí není pravomocné. Jde o procesní důsledek uplynutí promlčecí doby, ne o posouzení pravosti nebo obsahu výroků. Policie zároveň nepotvrdila verzi Motoristů, že zveřejněné materiály byly zfalšované | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-47](@/dossier/zdroje/src-47.md), [SRC-48](@/dossier/zdroje/src-48.md) |
+| <a id="clm-42"></a>CLM-42 | Policie zároveň odložila trestní oznámení, které v říjnu 2025 podali Motoristé sobě na Deník N a autory článku (CLM-19), s odůvodněním, že zveřejnění informací nebylo trestným činem | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-47](@/dossier/zdroje/src-47.md), [SRC-48](@/dossier/zdroje/src-48.md) |
+| <a id="clm-43"></a>CLM-43 | Dne 23. 2. 2026 prezident Petr Pavel jmenoval ministrem životního prostředí Igora Červeného (Motoristé sobě); tím skončilo dočasné pověření Petra Macinky vedením tohoto úřadu zmiňované v CLM-24 a CLM-40 | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-49](@/dossier/zdroje/src-49.md), [SRC-50](@/dossier/zdroje/src-50.md) |
+| <a id="clm-44"></a>CLM-44 | Dne 27. 7. 2026 Turek oznámil, že žalobu na ochranu osobnosti proti prezidentu Pavlovi (avizovanou v CLM-39) nakonec nepodá; jako důvod uvedl, že „z mnoha důvodů" svůj postoj přehodnotil, bez bližšího upřesnění | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-51](@/dossier/zdroje/src-51.md), [SRC-52](@/dossier/zdroje/src-52.md) |
 
 ## Graf vztahů
 
 <section id="relationship-graph" class="mb-4" x-data="relationshipGraph()">
   <div class="mb-2 flex flex-wrap items-center justify-between gap-2">
+    <div class="flex flex-wrap items-center gap-1" role="group" aria-label="Zobrazit do hloubky" x-cloak>
+      <span class="text-xs text-white/50">Hloubka:</span>
+      <button type="button" class="cy-chip" @click="setMaxDepth(0)" :aria-pressed="maxDepth === 0">0</button>
+      <button type="button" class="cy-chip" @click="setMaxDepth(1)" :aria-pressed="maxDepth === 1">≤1</button>
+      <button type="button" class="cy-chip" @click="setMaxDepth(2)" :aria-pressed="maxDepth === 2">≤2 (vše)</button>
+    </div>
     <div class="flex flex-wrap gap-1" role="group" aria-label="Filtrovat podle typu uzlu" x-cloak>
       <button type="button" class="cy-chip" @click="toggleKind('person')" :aria-pressed="activeKinds.person">Osoba</button>
       <button type="button" class="cy-chip" @click="toggleKind('entity')" :aria-pressed="activeKinds.entity">Strana / instituce</button>
@@ -208,16 +236,21 @@ Každé tvrzení má stav ověřenosti a odkaz na zdroj v [registru zdrojů](#re
       <button type="button" class="cy-chip" @click="toggleKind('case')" :aria-pressed="activeKinds.case">Kauza</button>
     </div>
     <div class="flex flex-wrap gap-1" role="group" aria-label="Filtrovat podle stavu vztahu" x-cloak>
-      <button type="button" class="cy-chip" @click="toggleStatus('fact')" :aria-pressed="activeStatuses.fact">Fakt</button>
+      <button type="button" class="cy-chip" @click="toggleStatus('corroborated')" :aria-pressed="activeStatuses.corroborated">Fakt</button>
       <button type="button" class="cy-chip" @click="toggleStatus('disputed')" :aria-pressed="activeStatuses.disputed">Sporné</button>
       <button type="button" class="cy-chip" @click="toggleStatus('quote')" :aria-pressed="activeStatuses.quote">Citace</button>
     </div>
   </div>
   <div class="mb-2 flex flex-wrap items-center gap-2" x-cloak>
+    <label for="cy-cluster" class="text-xs text-white/50">Tematický okruh</label>
+    <select id="cy-cluster" x-model="cluster" @change="applyFilters()" class="src-filter-select">
+      <option value="">Všechny okruhy</option>
+      <template x-for="c in clusters" :key="c.id"><option :value="c.id" x-text="c.label"></option></template>
+    </select>
     <label for="cy-search" class="text-xs text-white/50">Hledat uzel</label>
     <input type="text" id="cy-search" x-model="search" @input="applyFilters()" class="src-filter-input w-56" placeholder="např. Turek, Motoristé…" autocomplete="off">
     <button type="button" @click="resetFilters()" class="src-filter-reset">Zrušit filtry</button>
-    <span class="text-xs text-white/50"><span x-text="visibleNodeCount">0</span> / <span x-text="totalNodeCount">0</span> uzlů zobrazeno</span>
+    <span class="text-xs text-white/50"><span x-text="visibleNodeCount">0</span> / <span x-text="totalNodeCount">0</span> uzlů zobrazeno<template x-if="hiddenNeighborCount > 0"> (<span x-text="hiddenNeighborCount"></span> sousedů skryto)</template></span>
     <button type="button" class="fs-btn ml-auto" data-fs-target="cy-box" title="Zobrazit na celou obrazovku" aria-label="Zobrazit na celou obrazovku">⛶</button>
   </div>
   <div id="cy-box" class="fs-box cy-wrap">
@@ -237,6 +270,7 @@ Každé tvrzení má stav ověřenosti a odkaz na zdroj v [registru zdrojů](#re
       <span><i class="cy-line" style="background:#4ade80"></i>Fakt</span>
       <span><i class="cy-line" style="background:#facc15"></i>Sporné</span>
       <span><i class="cy-line" style="background:#93c5fd"></i>Citace</span>
+      <span><i class="cy-line" style="background:rgba(255,255,255,0.35)"></i>Kontextové</span>
     </div>
     <div id="cy-tooltip" class="cy-tooltip" hidden></div>
   </div>
@@ -287,8 +321,10 @@ Právní komentátoři (mj. Česká justice, s odkazem na historické precedenty
 žalob na prezidenty) i bývalý advokát Miloše Zemana pro Seznam Zprávy
 vyjádřili k vyhlídkám žaloby skepsi s odkazem na ústavní neodpovědnost
 prezidenta z výkonu funkce. Babiš podle HN.cz kompetenční žalobu vlády
-na prezidenta kvůli nejmenování nezvažuje. Tento právní spor byl k datu
-poslední kontroly (2026-07-23) podle dostupných zdrojů stále nerozhodnutý.
+na prezidenta kvůli nejmenování nezvažuje. Dne 27. 7. 2026 Turek oznámil,
+že žalobu nakonec nepodá — jako důvod uvedl, že „z mnoha důvodů" svůj
+postoj přehodnotil, bez bližšího upřesnění (CLM-44). *(Zdroj: Blesk.cz,
+Deník N)*
 
 Turek namísto ministerského postu zastává roli vládního zmocněnce pro
 klimatickou změnu a Green Deal s kanceláří na ministerstvu — tatáž
@@ -298,6 +334,12 @@ funkce, kterou po dopravní nehodě v roce 2026 dočasně opustil (viz
 čeká na nový návrh. Řízením ministerstva byl mezitím dočasně pověřen
 Petr Macinka — přímý důsledek této nedohody, ne samostatné politické
 rozhodnutí popsané jinde v tomto přehledu. *(Zdroj: Deník.cz, HN.cz)*
+
+Toto dočasné uspořádání skončilo 23. 2. 2026: prezident Pavel jmenoval
+ministrem životního prostředí Igora Červeného (Motoristé sobě), čímž se
+vláda premiéra Babiše po zhruba dvou měsících stala kompletní. Macinka
+tak řízení resortu předal a zůstává ministrem zahraničí a
+místopředsedou vlády. *(Zdroj: Deník.cz, Úřad vlády ČR)*
 
 ## Majetkové, podnikatelské a finanční vazby
 
@@ -424,6 +466,15 @@ dostatečným důkazem, ale že Deník N tvrdí, že disponuje i URL adresami
 originálních příspěvků, které by šlo u poskytovatele služby ověřit — tato
 verifikace k datu psaní přehledu podle dostupných zdrojů neproběhla.
 *(Zdroj: Deník.cz, Seznam Zprávy)*
+
+**Aktualizace 28. 7. 2026**: Policie odložila jak prověřování samotných
+Turkových výroků, tak trestní oznámení Motoristů na Deník N — u výroků
+z důvodu promlčení, u oznámení na Deník N s odůvodněním, že zveřejnění
+informací nebylo trestným činem. Obě rozhodnutí jsou procesní a nejsou
+pravomocná. Policie výslovně **nepotvrdila** verzi Motoristů, že
+zveřejněné materiály byly zfalšované — otázka nezávislého forenzního
+ověření pravosti tím ale zůstává otevřená, viz [GAP-03](@/dossier/mezery/gap-03.md).
+*(Zdroj: Deník N, Aktuálně.cz)*
 
 ## Dopravní nehoda (2026)
 
@@ -554,11 +605,11 @@ Rozšíření o tyto oblasti by vyžadovalo samostatný sběr z primárních reg
 
 ## Registr zdrojů
 
-Všech 43 citovaných zdrojů má vlastní stránku s typem, originálním
+Všech 52 citovaných zdrojů má vlastní stránku s typem, originálním
 odkazem, datem sestavení a přehledem toho, která tvrzení podporuje.
 
 > **[Otevřít registr zdrojů →](@/dossier/zdroje/_index.md)**
-> 43 zdrojů (SRC-01 – SRC-43), typ média, originální odkaz, podporovaná
+> 52 zdrojů (SRC-01 – SRC-52), typ média, originální odkaz, podporovaná
 > tvrzení a poznámka k nezávislosti redakcí.
 
-*Tento přehled shrnuje mediálně publikované informace k datu 2026-07-22. Kauzy se dále vyvíjí a přehled bude podle potřeby aktualizován. Nejde o právní hodnocení viny — otázky odpovědnosti (za nehodu i za pravost příspěvků z roku 2025) jsou předmětem probíhajícího šetření, resp. sporu.*
+*Tento přehled shrnuje mediálně publikované informace k datu 2026-07-29. Kauzy se dále vyvíjí a přehled bude podle potřeby aktualizován. Nejde o právní hodnocení viny — otázky odpovědnosti (za nehodu i za pravost příspěvků z roku 2025) jsou předmětem probíhajícího šetření, resp. sporu.*

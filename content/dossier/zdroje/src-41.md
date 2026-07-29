@@ -9,6 +9,7 @@ lang = "cs"
 src_id = "SRC-41"
 outlet = "Hlídač státu"
 src_type = "veřejný rejstřík / transparentní databáze"
+family = "hlidac-statu"
 url = "https://www.hlidacstatu.cz/Osoba/Sponzoring/richard-chlad-2"
 retrieved = "2026-07-22"
 claims = ["CLM-36"]
