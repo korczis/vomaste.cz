@@ -16,6 +16,16 @@ konstituce be24882, README 9456480 + integrace koop tasků T-001/T-002).
 Push = deploy dělá výhradně ORCH dle docs/coop/PROTOCOL.md. Po pushi
 ověřit:
 
+**Výsledek (2026-07-29, po pushi ORCH d959470..f12dd0d)**: CI zelené,
+nasazen f12dd0d (zahrnuje auditní kolo e3c25ea, konstituci be24882,
+README 9456480, JSON-LD gate T-002). Produkce ověřena přímou inspekcí
+/dossiers/macinka-turek/: legenda i tabulka nesou stav „1 ZDROJ",
+CLM-45 přítomno, kauza trestního oznámení správně uvádí odložení
+policií + podanou stížnost, dlaždice 45 tvrzení / 54 zdrojů, nehoda
+datována červenec 2026, updated 2026-07-29. Všech 6 kontrolních bodů ANO.
+
+Původní checklist (pro další pushe):
+
 1. `gh run list` — build zelený, nasazený commit = špička masteru;
 2. produkční smoke: `/`, `/dossiers/`, hlavní stránka dossieru (nové
    stavy „1 ZDROJ" v legendě, filtru i tabulce; CLM-45; oprava
