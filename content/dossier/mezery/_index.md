@@ -6,6 +6,7 @@ sort_by = "weight"
 
 [extra]
 lang = "cs"
+seo_type = "CollectionPage"
 +++
 
 Šest otevřených otázek v [dossieru o Petru Macinkovi a Filipu Turkovi](@/dossier/_index.md),

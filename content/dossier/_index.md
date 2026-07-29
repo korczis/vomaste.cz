@@ -7,22 +7,10 @@ template = "dossier.html"
 lang = "cs"
 updated = "2026-07-23"
 reviewed_at = "2026-07-23"
-
-[[extra.stats]]
-value = "46"
-label = "Citovaných zdrojů"
-
-[[extra.stats]]
-value = "4"
-label = "Sledované kauzy"
-
-[[extra.stats]]
-value = "40"
-label = "Tvrzení v registru"
-
-[[extra.stats]]
-value = "6"
-label = "Otevřené mezery"
+# Overview stat tiles (sources/cases/claims/gaps counts) are no longer
+# hand-typed here — templates/dossier.html computes them at build time from
+# data/dossier-stats.toml (see scripts/dossier/generate-stats.mjs), so they
+# can't drift from what's actually in the registries below.
 
 [[extra.cases]]
 anchor = "kauza-z-roku-2024-fotografie-a-sbirka-svicnu"
@@ -193,11 +181,19 @@ Každé tvrzení má stav ověřenosti a odkaz na zdroj v [registru zdrojů](#re
 ## Graf vztahů
 
 <section id="relationship-graph" class="mb-4">
-  <div class="mb-2 flex justify-end">
-    <button type="button" class="fs-btn" data-fs-target="cy-box" title="Zobrazit na celou obrazovku" aria-label="Zobrazit na celou obrazovku">⛶</button>
+  <div class="mb-2 flex flex-wrap items-center justify-between gap-2">
+    <div id="cy-kind-filters" class="flex flex-wrap gap-1" role="group" aria-label="Filtrovat podle typu uzlu"></div>
+    <div id="cy-status-filters" class="flex flex-wrap gap-1" role="group" aria-label="Filtrovat podle stavu vztahu"></div>
+  </div>
+  <div class="mb-2 flex flex-wrap items-center gap-2">
+    <label for="cy-search" class="text-xs text-white/50">Hledat uzel</label>
+    <input type="text" id="cy-search" class="src-filter-input w-56" placeholder="např. Turek, Motoristé…" autocomplete="off">
+    <button type="button" id="cy-filter-reset" class="src-filter-reset">Zrušit filtry</button>
+    <span class="text-xs text-white/50"><span id="cy-visible-count">0</span> / <span id="cy-total-count">0</span> uzlů zobrazeno</span>
+    <button type="button" class="fs-btn ml-auto" data-fs-target="cy-box" title="Zobrazit na celou obrazovku" aria-label="Zobrazit na celou obrazovku">⛶</button>
   </div>
   <div id="cy-box" class="fs-box cy-wrap">
-    <div id="cy" class="cy-canvas"></div>
+    <div id="cy" class="cy-canvas" role="img" aria-label="Interaktivní graf vztahů mezi osobami, institucemi, rolemi a kauzami. Textová alternativa se stejným obsahem je uvedena výše na této stránce v sekci Vztahy mezi aktéry."></div>
     <div class="cy-controls">
       <button type="button" data-cy-action="zoom-in" title="Přiblížit" aria-label="Přiblížit">+</button>
       <button type="button" data-cy-action="zoom-out" title="Oddálit" aria-label="Oddálit">−</button>
@@ -216,7 +212,8 @@ Každé tvrzení má stav ověřenosti a odkaz na zdroj v [registru zdrojů](#re
     </div>
     <div id="cy-tooltip" class="cy-tooltip" hidden></div>
   </div>
-  <p class="mt-2 text-xs text-white/40">Interaktivní graf: táhnutím přesuneš uzly, kolečkem myši přiblížíš, najetím na hranu se zobrazí vztah, tlačítka vpravo nahoře ovládají zoom/rozložení, ⛶ přepne na celou obrazovku.</p>
+  <div id="cy-detail" class="mt-3 hidden rounded-lg border border-white/10 bg-white/[0.03] p-3 text-sm" aria-live="polite"></div>
+  <p class="mt-2 text-xs text-white/40">Interaktivní graf: táhnutím přesuneš uzly, kolečkem myši přiblížíš, kliknutím nebo najetím na uzel/hranu se zobrazí detail, tlačítka vpravo nahoře ovládají zoom/rozložení, ⛶ přepne na celou obrazovku. Textová alternativa se stejným obsahem je v sekci „Vztahy mezi aktéry" výše na stránce.</p>
 </section>
 
 ## Politická kariéra

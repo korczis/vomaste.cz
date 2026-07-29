@@ -8,9 +8,11 @@
     "css:watch": "tailwindcss -i ./static/css/input.css -o ./static/css/main.css --watch",
     "js:build": "esbuild assets/js/app.js --bundle --minify --target=es2020 --outfile=static/js/app.js",
     "validate:dossier": "node scripts/dossier/validate-dossier.mjs",
+    "validate:graph": "node scripts/dossier/validate-graph.mjs",
+    "generate:stats": "node scripts/dossier/generate-stats.mjs",
     "verify:anchors": "node scripts/dossier/verify-anchors.mjs",
-    "build": "npm run validate:dossier && npm run css:build && npm run js:build && zola build && npm run verify:anchors",
-    "dev": "npm run css:build && npm run js:build && zola serve"
+    "build": "npm run validate:dossier && npm run validate:graph && npm run generate:stats && npm run css:build && npm run js:build && zola build && npm run verify:anchors",
+    "dev": "npm run validate:graph && npm run generate:stats && npm run css:build && npm run js:build && zola serve"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.24",

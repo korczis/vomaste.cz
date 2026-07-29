@@ -1,0 +1,70 @@
+{#- Shared UI fragments used across dossier.html, dossier-source.html,
+    dossier-sources-index.html, dossier-gap.html and dossier-gaps-index.html.
+    Kept to genuinely repeated, meaning-bearing pieces — not one macro per
+    <div>. Callers resolve URLs themselves (get_url(...) or p.permalink)
+    since the source of a URL differs by page. -#}
+
+{#- Tera has no object/map literal syntax usable inline in an expression,
+    so each crumb is encoded as a single string "Label::URL" (linked) or
+    just "Label" (current page, no link — normally the last item). -#}
+{%- macro breadcrumb(items) -%}
+<nav class="mb-2 text-sm text-white/50" aria-label="Drobečková navigace">
+  <ol class="flex flex-wrap items-center gap-1">
+    {%- for item in items %}
+    {%- set parts = item | split(pat="::") %}
+    <li class="flex items-center gap-1">
+      {%- if parts | length > 1 %}<a href="{{ parts.1 | safe }}" class="text-[#f3e5c0] hover:underline">{{ parts.0 }}</a>{% else %}<span aria-current="page">{{ parts.0 }}</span>{% endif -%}
+      {%- if not loop.last %}<span aria-hidden="true">/</span>{% endif %}
+    </li>
+    {%- endfor %}
+  </ol>
+</nav>
+{%- endmacro breadcrumb -%}
+
+{%- macro stat_tile(value, label) -%}
+<div class="stat-tile">
+  <p class="stat-tile-value">{{ value }}</p>
+  <p class="stat-tile-label">{{ label }}</p>
+</div>
+{%- endmacro stat_tile -%}
+
+{#- Consistent registry page header: breadcrumb, title, optional
+    description, optional last-updated/last-reviewed line. `updated` and
+    `reviewed` are only rendered when actually present in front matter —
+    never fabricated. -#}
+{%- macro page_header(breadcrumb_items, title, description="", updated="", reviewed="") -%}
+<header class="mb-8 border-b border-white/10 pb-6">
+  {{ ui::breadcrumb(items=breadcrumb_items) }}
+  <h1 class="mt-1 text-2xl font-black sm:text-3xl">{{ title }}</h1>
+  {%- if description %}
+  <p class="mt-2 text-sm text-white/60">{{ description }}</p>
+  {%- endif %}
+  {%- if updated or reviewed %}
+  <p class="mt-2 text-xs text-white/40">
+    {%- if updated %}Naposledy aktualizováno: {{ updated }}{% endif -%}
+    {%- if updated and reviewed %} &middot; {% endif -%}
+    {%- if reviewed %}Naposledy ověřeno proti zdrojům: {{ reviewed }}{% endif -%}
+  </p>
+  {%- endif %}
+</header>
+{%- endmacro page_header -%}
+
+{%- macro back_link_footer(url, label) -%}
+<footer class="mt-12 border-t border-white/10 pt-6 text-xs text-white/40">
+  <p><a href="{{ url | safe }}" class="underline">&larr; {{ label }}</a></p>
+</footer>
+{%- endmacro back_link_footer -%}
+
+{#- Empty state for a filtered/empty registry list. `message` should say
+    why it's empty (no results vs. genuinely nothing yet), never a bare
+    "nothing here" that reads as a bug. -#}
+{#- Look up a node's label by id for the relationship graph's plain-text
+    list fallback (templates/dossier.html). Small O(n) scan over a ~16-node
+    array — irrelevant at this scale, and avoids needing a Tera dict. -#}
+{%- macro node_label(nodes, id) -%}
+  {%- for n in nodes -%}{%- if n.id == id -%}{{ n.label }}{%- endif -%}{%- endfor -%}
+{%- endmacro node_label -%}
+
+{%- macro empty_state(message) -%}
+<p class="rounded-lg border border-dashed border-white/15 p-6 text-center text-sm text-white/50">{{ message }}</p>
+{%- endmacro empty_state -%}

@@ -32,6 +32,16 @@
   <meta name="twitter:title" content="{{ page_title }}">
   <meta name="twitter:description" content="{{ page_description }}">
 
+  {#- JSON-LD generated from front matter that was already declared but
+      unused (`extra.seo_type`, config.toml default "WebPage", overridden
+      per-page/section — e.g. content/_index.md sets "WebSite"). Each
+      field goes through json_encode + safe for correct JSON string
+      escaping (Tera's default HTML-escaping would corrupt quotes here). -#}
+  {%- set seo_type = page.extra.seo_type | default(value=section.extra.seo_type | default(value=config.extra.seo_type | default(value="WebPage"))) -%}
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":{{ seo_type | json_encode | safe }},"name":{{ page_title | json_encode | safe }},"description":{{ page_description | json_encode | safe }}{% if current_url %},"url":{{ current_url | json_encode | safe }}{% endif %}{% if seo_type == "WebSite" %},"inLanguage":{{ page.extra.lang | default(value=config.extra.lang | default(value="en")) | json_encode | safe }}{% endif %}}
+  </script>
+
   <link rel="stylesheet" href="{{ get_url(path='css/main.css', cachebust=true) | safe }}">
   <script type="module" defer src="{{ get_url(path='js/app.js', cachebust=true) | safe }}"></script>
 </head>

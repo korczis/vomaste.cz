@@ -30,6 +30,15 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Validate dossier registry
+        run: npm run validate:dossier
+
+      - name: Validate relationship graph
+        run: npm run validate:graph
+
+      - name: Generate dossier stats
+        run: npm run generate:stats
+
       - name: Build CSS
         run: npm run css:build
 
@@ -46,6 +55,9 @@ jobs:
 
       - name: Build site
         run: zola build
+
+      - name: Verify anchors
+        run: npm run verify:anchors
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

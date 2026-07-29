@@ -1,16 +1,12 @@
 {% extends "base.html" %}
+{% import "macros/ui.html" as ui %}
 
 {% block content %}
 <main class="mx-auto max-w-3xl px-6 py-12 text-white">
-  <header class="mb-8 border-b border-white/10 pb-6">
-    <nav class="text-sm text-white/50">
-      <a href="{{ get_url(path='@/dossier/_index.md') | safe }}" class="text-[#f3e5c0] hover:underline">Dossier</a>
-      <span class="mx-1">/</span>
-      <span>Registr zdrojů</span>
-    </nav>
-    <h1 class="mt-2 text-2xl font-black sm:text-3xl">{{ section.title }}</h1>
-    <p class="mt-2 text-sm text-white/60">{{ section.description }}</p>
-  </header>
+  {{ ui::page_header(title=section.title, description=section.description, breadcrumb_items=[
+    "Dossier::" ~ get_url(path="@/dossier/_index.md"),
+    "Registr zdrojů",
+  ]) }}
 
   <article class="dossier-prose mb-10">{{ section.content | safe }}</article>
 
@@ -32,25 +28,13 @@
   {% set_global named_families_len = named_families | length %}
   {% set_global family_count = singleton_count + named_families_len %}
   <div class="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-5">
-    <div class="rounded-lg border border-white/10 p-3 text-center">
-      <p class="text-xl font-bold">{{ section.pages | length }}</p>
-      <p class="mt-1 text-xs text-white/50">Zdrojů celkem</p>
-    </div>
-    <div class="rounded-lg border border-white/10 p-3 text-center">
-      <p class="text-xl font-bold">{{ family_count }}</p>
-      <p class="mt-1 text-xs text-white/50">Zdrojových rodin</p>
-    </div>
-    <div class="rounded-lg border border-white/10 p-3 text-center">
-      <p class="text-xl font-bold">{{ evidentiary_count }}</p>
-      <p class="mt-1 text-xs text-white/50">Podkládá tvrzení</p>
-    </div>
-    <div class="rounded-lg border border-white/10 p-3 text-center">
-      <p class="text-xl font-bold">{{ section.pages | length - evidentiary_count }}</p>
-      <p class="mt-1 text-xs text-white/50">Kontext / názor</p>
-    </div>
-    <div class="rounded-lg border border-white/10 p-3 text-center">
-      <p id="src-result-count" class="text-xl font-bold" aria-live="polite">{{ section.pages | length }}</p>
-      <p class="mt-1 text-xs text-white/50">Zobrazeno</p>
+    {{ ui::stat_tile(value=section.pages | length, label="Zdrojů celkem") }}
+    {{ ui::stat_tile(value=family_count, label="Zdrojových rodin") }}
+    {{ ui::stat_tile(value=evidentiary_count, label="Podkládá tvrzení") }}
+    {{ ui::stat_tile(value=section.pages | length - evidentiary_count, label="Kontext / názor") }}
+    <div class="stat-tile">
+      <p id="src-result-count" class="stat-tile-value" aria-live="polite">{{ section.pages | length }}</p>
+      <p class="stat-tile-label">Zobrazeno</p>
     </div>
   </div>
 
@@ -74,12 +58,12 @@
     <button type="button" id="src-filter-reset" class="src-filter-reset">Zrušit filtry</button>
   </form>
 
-  <p id="src-empty-state" class="mb-4 hidden text-sm text-white/50">Žádný zdroj neodpovídá zadanému filtru.</p>
+  <div id="src-empty-state" class="mb-4 hidden">{{ ui::empty_state(message="Žádný zdroj neodpovídá zadanému filtru.") }}</div>
 
   <div id="src-grid" class="grid gap-3 sm:grid-cols-2">
     {% for p in section.pages %}
     <a href="{{ p.permalink | safe }}"
-       class="src-card flex flex-col rounded-lg border border-white/10 bg-white/[0.03] p-4 no-underline transition-colors hover:border-white/20 hover:bg-white/[0.06]"
+       class="src-card registry-card"
        data-type="{{ p.extra.src_type }}"
        data-family="{{ p.extra.family | default(value='') }}"
        data-search="{{ p.extra.src_id }} {{ p.extra.outlet }} {{ p.extra.src_type }} {{ p.description }}">
@@ -96,75 +80,6 @@
     {% endfor %}
   </div>
 
-  <script>
-  (function () {
-    var form = document.getElementById('src-filter-form');
-    if (!form) return;
-    var search = document.getElementById('src-search');
-    var typeSelect = document.getElementById('src-type-filter');
-    var familySelect = document.getElementById('src-family-filter');
-    var reset = document.getElementById('src-filter-reset');
-    var cards = Array.prototype.slice.call(document.querySelectorAll('.src-card'));
-    var countEl = document.getElementById('src-result-count');
-    var emptyEl = document.getElementById('src-empty-state');
-
-    // Build the type/family dropdowns from whatever actually appears on the
-    // page — never a hardcoded list that can drift from the real data.
-    var types = [];
-    var families = [];
-    cards.forEach(function (c) {
-      var t = c.getAttribute('data-type');
-      if (t && types.indexOf(t) === -1) types.push(t);
-      var f = c.getAttribute('data-family');
-      if (f && families.indexOf(f) === -1) families.push(f);
-    });
-    types.sort();
-    types.forEach(function (t) {
-      var opt = document.createElement('option');
-      opt.value = t;
-      opt.textContent = t;
-      typeSelect.appendChild(opt);
-    });
-    families.sort();
-    families.forEach(function (f) {
-      var opt = document.createElement('option');
-      opt.value = f;
-      opt.textContent = f;
-      familySelect.appendChild(opt);
-    });
-
-    function applyFilter() {
-      var q = search.value.trim().toLowerCase();
-      var type = typeSelect.value;
-      var family = familySelect.value;
-      var shown = 0;
-      cards.forEach(function (c) {
-        var matchesQ = !q || c.getAttribute('data-search').toLowerCase().indexOf(q) !== -1;
-        var matchesType = !type || c.getAttribute('data-type') === type;
-        var matchesFamily = !family || c.getAttribute('data-family') === family;
-        var show = matchesQ && matchesType && matchesFamily;
-        c.hidden = !show;
-        if (show) shown++;
-      });
-      countEl.textContent = shown;
-      emptyEl.classList.toggle('hidden', shown !== 0);
-    }
-
-    search.addEventListener('input', applyFilter);
-    typeSelect.addEventListener('change', applyFilter);
-    familySelect.addEventListener('change', applyFilter);
-    reset.addEventListener('click', function () {
-      search.value = '';
-      typeSelect.value = '';
-      familySelect.value = '';
-      applyFilter();
-      search.focus();
-    });
-  })();
-  </script>
-
-  <footer class="mt-12 border-t border-white/10 pt-6 text-xs text-white/40">
-    <p><a href="{{ get_url(path='@/dossier/_index.md') | safe }}" class="underline">&larr; Zpět na celý dossier</a></p>
-  </footer>
+  {{ ui::back_link_footer(url=get_url(path="@/dossier/_index.md"), label="Zpět na celý dossier") }}
 </main>
 {% endblock content %}

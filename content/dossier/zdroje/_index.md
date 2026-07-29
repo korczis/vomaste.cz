@@ -6,6 +6,7 @@ sort_by = "weight"
 
 [extra]
 lang = "cs"
+seo_type = "CollectionPage"
 +++
 
 Kompletní seznam veřejných zdrojů citovaných v [dossieru o Petru Macinkovi

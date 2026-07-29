@@ -1,17 +1,13 @@
 {% extends "base.html" %}
+{% import "macros/ui.html" as ui %}
 
 {% block content %}
 <main class="mx-auto max-w-2xl px-6 py-12 text-white">
-  <header class="mb-8 border-b border-white/10 pb-6">
-    <nav class="text-sm text-white/50">
-      <a href="{{ get_url(path='@/dossier/_index.md') | safe }}" class="text-[#f3e5c0] hover:underline">Dossier</a>
-      <span class="mx-1">/</span>
-      <a href="{{ get_url(path='@/dossier/zdroje/_index.md') | safe }}" class="text-[#f3e5c0] hover:underline">Registr zdrojů</a>
-      <span class="mx-1">/</span>
-      <span>{{ page.extra.src_id }}</span>
-    </nav>
-    <h1 class="mt-2 text-2xl font-black sm:text-3xl">{{ page.extra.src_id }} — {{ page.extra.outlet }}</h1>
-  </header>
+  {{ ui::page_header(title=page.extra.src_id ~ " — " ~ page.extra.outlet, breadcrumb_items=[
+    "Dossier::" ~ get_url(path="@/dossier/_index.md"),
+    "Registr zdrojů::" ~ get_url(path="@/dossier/zdroje/_index.md"),
+    page.extra.src_id,
+  ]) }}
 
   <table class="mb-8 w-full text-left text-sm dossier-prose">
     <tbody class="divide-y divide-white/10">
@@ -59,8 +55,6 @@
   {% endif %}
   {% endif %}
 
-  <footer class="mt-12 border-t border-white/10 pt-6 text-xs text-white/40">
-    <p><a href="{{ get_url(path='@/dossier/_index.md') | safe }}" class="underline">&larr; Zpět na celý dossier</a></p>
-  </footer>
+  {{ ui::back_link_footer(url=get_url(path="@/dossier/_index.md"), label="Zpět na celý dossier") }}
 </main>
 {% endblock content %}

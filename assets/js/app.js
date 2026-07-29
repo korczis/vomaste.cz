@@ -1,30 +1,26 @@
+// Single esbuild entrypoint. Each module below checks for its own DOM
+// before doing anything, so it's a safe no-op on pages that don't have
+// that feature — this file doesn't need to know which page it's on.
+//
 // Flowbite self-initializes any component it finds via data-* attributes
-// (Drawer, Dropdown, Modal, ...) on DOMContentLoaded. Nothing else needed
-// until a page actually uses one of those components.
+// (Drawer, Dropdown, Modal, ...) on DOMContentLoaded — imported for side
+// effects only, nothing to wire up here.
 import "flowbite";
 
-const SIDEBAR_STORAGE_KEY = "vomaste:sidebar";
-
-function initSidebarToggle() {
-  var toggle = document.getElementById("sidebar-toggle");
-  if (!toggle || toggle.dataset.appInit) return;
-  toggle.dataset.appInit = "true";
-
-  var root = document.documentElement;
-  var stored = window.localStorage.getItem(SIDEBAR_STORAGE_KEY);
-  if (stored === "expanded" || stored === "collapsed") {
-    root.dataset.sidebar = stored;
-    toggle.setAttribute("aria-expanded", String(stored === "expanded"));
-  }
-
-  toggle.addEventListener("click", function () {
-    var next = root.dataset.sidebar === "collapsed" ? "expanded" : "collapsed";
-    root.dataset.sidebar = next;
-    toggle.setAttribute("aria-expanded", String(next === "expanded"));
-    window.localStorage.setItem(SIDEBAR_STORAGE_KEY, next);
-  });
-}
+import { initSidebarToggle } from "./modules/sidebar.js";
+import { initClaimsFilter } from "./modules/claims-filter.js";
+import { initSourcesFilter } from "./modules/sources-filter.js";
+import { initStatusChart } from "./modules/charts.js";
+import { initRelationshipGraph } from "./modules/relationship-graph.js";
+import { initFullscreenButtons } from "./modules/fullscreen.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   initSidebarToggle();
+  initClaimsFilter();
+  initSourcesFilter();
+  initStatusChart();
+  initRelationshipGraph();
+  // Registers resize handlers first (charts/graph above), then wires the
+  // fullscreen buttons that call them — order matters here.
+  initFullscreenButtons();
 });

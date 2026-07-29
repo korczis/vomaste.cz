@@ -1,29 +1,39 @@
 {% extends "base.html" %}
+{% import "macros/ui.html" as ui %}
 
 {% block content %}
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/cytoscape@3.30.2/dist/cytoscape.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js" integrity="sha384-NrKB+u6Ts6AtkIhwPixiKTzgSKNblyhlk0Sohlgar9UHUBzai/sgnNNWWd291xqt" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/cytoscape@3.30.2/dist/cytoscape.min.js" integrity="sha384-IWROdLKRsN1UuJywMlWl7/blXQ8GEooN2n7dzTxfEPd7ybYIKCUJ2Ol/1Gpf3YV4" crossorigin="anonymous"></script>
 <main class="mx-auto max-w-3xl px-6 py-12 text-white">
-  <header class="mb-10 border-b border-white/10 pb-6">
-    <a href="{{ get_url(path='@/_index.md') | safe }}" class="text-sm text-[#f3e5c0] hover:underline">&larr; Zpět na hlavní stránku</a>
-    <h1 class="mt-2 text-3xl font-black sm:text-4xl">{{ section.title }}</h1>
-    {% if section.extra.updated %}
-    <p class="mt-1 text-sm text-white/50">
-      Naposledy aktualizováno: {{ section.extra.updated }}
-    </p>
-    {% endif %}
-  </header>
+  {{ ui::page_header(title=section.title, breadcrumb_items=[
+    "Domů::" ~ get_url(path="@/_index.md"),
+    section.title,
+  ], updated=section.extra.updated | default(value=""), reviewed=section.extra.reviewed_at | default(value="")) }}
 
-  {% if section.extra.stats %}
-  <section class="mb-12 grid grid-cols-2 gap-4 sm:grid-cols-4">
-    {% for stat in section.extra.stats %}
-    <div class="rounded-lg border border-white/10 p-4 text-center">
-      <p class="text-2xl font-bold">{{ stat.value }}</p>
-      <p class="mt-1 text-xs text-white/50">{{ stat.label }}</p>
-    </div>
-    {% endfor %}
+  {% set counts = load_data(path="data/dossier-stats.toml") %}
+  <section class="mb-12 grid grid-cols-2 gap-4 sm:grid-cols-4" aria-label="Souhrnné metriky dossieru">
+    {{ ui::stat_tile(value=counts.sources_total, label="Citovaných zdrojů") }}
+    {{ ui::stat_tile(value=counts.cases_total, label="Sledované kauzy") }}
+    {{ ui::stat_tile(value=counts.claims_total, label="Tvrzení v registru") }}
+    {{ ui::stat_tile(value=counts.gaps_total, label="Otevřené mezery") }}
   </section>
-  {% endif %}
+  <p class="-mt-8 mb-8 text-xs text-white/40">Metriky se počítají automaticky z registru tvrzení, zdrojů a mezer při buildu (viz <code>scripts/dossier/generate-stats.mjs</code>) — nejsou ručně přepisovány.</p>
+
+  {#- Plain anchor jump-nav, not ARIA tabs: this page is one continuous
+      document, not a set of discrete tab panels, so real tablist/tabpanel
+      semantics would misrepresent the structure. Works identically with
+      JS disabled — it's just links. -#}
+  <nav aria-label="Sekce dossieru" class="sticky top-0 z-20 -mx-6 mb-12 overflow-x-auto border-b border-white/10 bg-black/90 px-6 py-2 backdrop-blur">
+    <ul class="flex w-max gap-1 text-sm">
+      <li><a href="#kdo" class="block whitespace-nowrap rounded-md px-3 py-1.5 text-white/60 no-underline hover:bg-white/5 hover:text-white">Kdo</a></li>
+      <li><a href="#cases-heading" class="block whitespace-nowrap rounded-md px-3 py-1.5 text-white/60 no-underline hover:bg-white/5 hover:text-white">Kauzy</a></li>
+      <li><a href="#registr-tvrzeni" class="block whitespace-nowrap rounded-md px-3 py-1.5 text-white/60 no-underline hover:bg-white/5 hover:text-white">Tvrzení</a></li>
+      <li><a href="#graf-vztahu" class="block whitespace-nowrap rounded-md px-3 py-1.5 text-white/60 no-underline hover:bg-white/5 hover:text-white">Vztahy</a></li>
+      <li><a href="#timeline-heading" class="block whitespace-nowrap rounded-md px-3 py-1.5 text-white/60 no-underline hover:bg-white/5 hover:text-white">Časová osa</a></li>
+      <li><a href="#registr-zdroju" class="block whitespace-nowrap rounded-md px-3 py-1.5 text-white/60 no-underline hover:bg-white/5 hover:text-white">Zdroje</a></li>
+      <li><a href="#mezery-a-otevrene-otazky" class="block whitespace-nowrap rounded-md px-3 py-1.5 text-white/60 no-underline hover:bg-white/5 hover:text-white">Otevřené otázky</a></li>
+    </ul>
+  </nav>
 
   <section class="mb-12 rounded-lg border border-white/10 p-4">
     <div class="mb-3 flex items-center justify-between">
@@ -33,6 +43,21 @@
     <div id="chart-status-box" class="fs-box flex items-center justify-center">
       <div class="mx-auto w-full max-w-xs"><canvas id="chart-status"></canvas></div>
     </div>
+    {#- Visible textual summary of the same counts the chart shows — not
+        just an aria-label — filled in by assets/js/modules/charts.js from
+        the same DOM-derived counts as the chart itself. -#}
+    <ul id="chart-status-summary" class="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-xs text-white/60"></ul>
+  </section>
+
+  {% set graph = load_data(path="data/relationship-graph.toml") %}
+  <section aria-labelledby="graph-list-heading" class="mb-12">
+    <h2 id="graph-list-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/40">Vztahy mezi aktéry (textový seznam)</h2>
+    <p class="mb-3 text-xs text-white/50">Textová alternativa k interaktivnímu grafu vztahů níže na stránce (sekce „Graf vztahů") — stejná data, bez závislosti na JavaScriptu.</p>
+    <ul class="space-y-1.5 text-sm text-white/70">
+      {% for e in graph.edges %}
+      <li><span class="edge-status-dot edge-{{ e.status }}"></span>{{ ui::node_label(nodes=graph.nodes, id=e.source) }} <span aria-hidden="true" class="text-white/30">&rarr;</span> <span class="text-white/50">{{ e.label }}</span> <span aria-hidden="true" class="text-white/30">&rarr;</span> {{ ui::node_label(nodes=graph.nodes, id=e.target) }}</li>
+      {% endfor %}
+    </ul>
   </section>
 
   {% if section.extra.cases %}
@@ -75,200 +100,9 @@
   </footer>
 </main>
 
-<script>
-(function () {
-  // --- status doughnut ---
-  var statusChart = null;
-  (function () {
-    var canvas = document.getElementById('chart-status');
-    if (!canvas || !window.Chart) return;
-    var counts = {};
-    document.querySelectorAll('.dossier-prose .status-badge').forEach(function (el) {
-      var key = [...el.classList].find(function (c) { return c.startsWith('status-') && c !== 'status-badge'; });
-      if (key) counts[key] = (counts[key] || 0) + 1;
-    });
-    var labels = { 'status-corroborated': 'Ověřeno více zdroji', 'status-quote': 'Citace', 'status-disputed': 'Sporné', 'status-opinion': 'Názor', 'status-ongoing': 'Probíhá' };
-    var colors = { 'status-corroborated': '#4ade80', 'status-quote': '#93c5fd', 'status-disputed': '#facc15', 'status-opinion': '#a3a3a3', 'status-ongoing': '#d8b4fe' };
-    var keys = Object.keys(counts);
-    if (!keys.length) return;
-    statusChart = new Chart(canvas, {
-      type: 'doughnut',
-      data: {
-        labels: keys.map(function (k) { return labels[k] || k; }),
-        datasets: [{ data: keys.map(function (k) { return counts[k]; }), backgroundColor: keys.map(function (k) { return colors[k] || '#666'; }) }],
-      },
-      options: { maintainAspectRatio: false, plugins: { legend: { labels: { color: '#fff', font: { size: 11 } } } } },
-    });
-  })();
-
-  // --- relationship graph ---
-  var el = document.getElementById('cy');
-  if (!el || !window.cytoscape) return;
-
-  var COLOR = { fact: '#4ade80', disputed: '#facc15', ongoing: '#d8b4fe', quote: '#93c5fd' };
-
-  var nodes = [
-    { data: { id: 'macinka', label: 'Petr Macinka' }, classes: 'person' },
-    { data: { id: 'turek', label: 'Filip Turek' }, classes: 'person' },
-    { data: { id: 'motoriste', label: 'Motoristé sobě' }, classes: 'party' },
-    { data: { id: 'vlada', label: 'Vláda (ANO + SPD + Motoristé)' }, classes: 'entity' },
-    { data: { id: 'ep', label: 'Evropský parlament' }, classes: 'entity' },
-    { data: { id: 'greendeal', label: 'Zmocněnec pro Green Deal' }, classes: 'role' },
-    { data: { id: 'babis', label: 'Andrej Babiš (premiér)' }, classes: 'person-other' },
-    { data: { id: 'pavel', label: 'Petr Pavel (prezident)' }, classes: 'person-other' },
-    { data: { id: 'kauza2024', label: 'Kauza 2024: fotografie a svícny' }, classes: 'case' },
-    { data: { id: 'kauza2025', label: 'Kauza 2025: smazané příspěvky' }, classes: 'case' },
-    { data: { id: 'nehoda2026', label: 'Nehoda 2026' }, classes: 'case' },
-    { data: { id: 'trestniozn', label: 'Trestní oznámení (2025)' }, classes: 'case' },
-    { data: { id: 'gmrgas', label: 'GMR GAS UA LLC (Kyjev)' }, classes: 'entity' },
-    { data: { id: 'klubmotoristu', label: 'Klub motoristů, z.s.' }, classes: 'entity' },
-    { data: { id: 'chlad', label: 'Richard Chlad (sponzor)' }, classes: 'person-other' },
-    { data: { id: 'mzp2026', label: 'Jmenování ministrem ŽP (2026)' }, classes: 'case' },
-  ];
-
-  var edges = [
-    { data: { source: 'macinka', target: 'motoriste', label: 'předseda' }, classes: 'fact' },
-    { data: { source: 'turek', target: 'motoriste', label: 'poslanec za' }, classes: 'fact' },
-    { data: { source: 'motoriste', target: 'vlada', label: 'člen koalice' }, classes: 'fact' },
-    { data: { source: 'babis', target: 'vlada', label: 'premiér' }, classes: 'fact' },
-    { data: { source: 'turek', target: 'ep', label: 'europoslanec 2024–2025' }, classes: 'fact' },
-    { data: { source: 'turek', target: 'greendeal', label: 'zmocněnec (do nehody)' }, classes: 'fact' },
-    { data: { source: 'turek', target: 'kauza2024', label: 'subjekt' }, classes: 'disputed' },
-    { data: { source: 'macinka', target: 'kauza2024', label: 'hájí ("pseudoproblém")' }, classes: 'quote' },
-    { data: { source: 'turek', target: 'kauza2025', label: 'subjekt' }, classes: 'disputed' },
-    { data: { source: 'turek', target: 'nehoda2026', label: 'subjekt' }, classes: 'fact' },
-    { data: { source: 'macinka', target: 'nehoda2026', label: 'hájí ("nikdy se ho nevzdám")' }, classes: 'quote' },
-    { data: { source: 'babis', target: 'nehoda2026', label: 'vyzval k odpovědnosti' }, classes: 'fact' },
-    { data: { source: 'pavel', target: 'nehoda2026', label: 'vyjádřil se' }, classes: 'fact' },
-    { data: { source: 'macinka', target: 'gmrgas', label: 'nepřiznaný 20% podíl' }, classes: 'disputed' },
-    { data: { source: 'macinka', target: 'klubmotoristu', label: 'statutární orgán' }, classes: 'fact' },
-    { data: { source: 'klubmotoristu', target: 'motoriste', label: 'dar 800 000 Kč (2024)' }, classes: 'fact' },
-    { data: { source: 'turek', target: 'trestniozn', label: 'subjekt (oznámení 6/2025, odloženo pro promlčení 5/2026)' }, classes: 'disputed' },
-    { data: { source: 'chlad', target: 'motoriste', label: 'dar 638 864 Kč (2025, oficiálně) vs. tvrzené ~2 mil. Kč' }, classes: 'disputed' },
-    { data: { source: 'turek', target: 'mzp2026', label: 'nejmenován (1/2026)' }, classes: 'fact' },
-    { data: { source: 'pavel', target: 'mzp2026', label: 'odmítl jmenovat' }, classes: 'fact' },
-    { data: { source: 'turek', target: 'pavel', label: 'žaloba na ochranu osobnosti (1/2026)' }, classes: 'disputed' },
-    { data: { source: 'macinka', target: 'mzp2026', label: 'dočasně vede resort' }, classes: 'fact' },
-  ];
-
-  var LAYOUT = {
-    name: 'cose',
-    animate: false,
-    padding: 50,
-    nodeDimensionsIncludeLabels: true,
-    nodeRepulsion: function () { return 22000; },
-    idealEdgeLength: function () { return 160; },
-    edgeElasticity: function () { return 120; },
-    nestingFactor: 5,
-    gravity: 30,
-    numIter: 2000,
-    initialTemp: 220,
-    coolingFactor: 0.95,
-    minTemp: 1.0,
-  };
-
-  var cy = cytoscape({
-    container: el,
-    elements: { nodes: nodes, edges: edges },
-    wheelSensitivity: 0.25,
-    style: [
-      { selector: 'node', style: {
-        'background-color': '#f3e5c0', 'color': '#fff', 'label': 'data(label)',
-        'font-size': '9px', 'text-valign': 'bottom', 'text-margin-y': 8,
-        'text-wrap': 'wrap', 'text-max-width': '80px', 'text-halign': 'center',
-        'text-outline-width': 2, 'text-outline-color': '#000', 'text-outline-opacity': 0.85,
-        'width': 20, 'height': 20, 'border-width': 2, 'border-color': 'rgba(255,255,255,0.35)',
-      } },
-      { selector: '.person, .person-other', style: { 'background-color': '#f3e5c0', 'shape': 'ellipse' } },
-      { selector: '.party, .entity', style: { 'background-color': '#93c5fd', 'shape': 'round-rectangle' } },
-      { selector: '.role', style: { 'background-color': '#d8b4fe', 'shape': 'diamond' } },
-      { selector: '.case', style: { 'background-color': '#facc15', 'shape': 'round-rectangle' } },
-      { selector: 'edge', style: {
-        'width': 1.5, 'curve-style': 'bezier', 'target-arrow-shape': 'triangle', 'arrow-scale': 0.7,
-      } },
-      { selector: 'edge.fact', style: { 'line-color': COLOR.fact, 'target-arrow-color': COLOR.fact } },
-      { selector: 'edge.disputed', style: { 'line-color': COLOR.disputed, 'target-arrow-color': COLOR.disputed } },
-      { selector: 'edge.quote', style: { 'line-color': COLOR.quote, 'target-arrow-color': COLOR.quote } },
-      { selector: 'edge:active, edge.hovered', style: { 'width': 3, 'opacity': 1 } },
-      { selector: 'node.hovered-node', style: { 'border-color': '#f3e5c0', 'border-width': 3 } },
-      { selector: '.faded', style: { 'opacity': 0.15 } },
-    ],
-    layout: LAYOUT,
-    minZoom: 0.3,
-    maxZoom: 3,
-  });
-
-  // --- edge hover tooltip (labels aren't drawn permanently — too cluttered) ---
-  var tooltip = document.getElementById('cy-tooltip');
-  if (tooltip) {
-    cy.on('mouseover', 'edge', function (evt) {
-      var edge = evt.target;
-      edge.addClass('hovered');
-      edge.connectedNodes().addClass('hovered-node');
-      cy.elements().not(edge).not(edge.connectedNodes()).addClass('faded');
-      var srcLabel = edge.source().data('label');
-      var tgtLabel = edge.target().data('label');
-      tooltip.textContent = srcLabel + ' → ' + edge.data('label') + ' → ' + tgtLabel;
-      tooltip.hidden = false;
-      var box = el.getBoundingClientRect();
-      var p = edge.renderedMidpoint();
-      tooltip.style.left = Math.min(Math.max(p.x, 60), box.width - 60) + 'px';
-      tooltip.style.top = Math.max(p.y - 28, 4) + 'px';
-    });
-    cy.on('mouseout', 'edge', function (evt) {
-      evt.target.removeClass('hovered');
-      cy.elements().removeClass('faded hovered-node');
-      tooltip.hidden = true;
-    });
-    cy.on('tap', function (evt) {
-      if (evt.target === cy) { cy.elements().removeClass('faded hovered-node'); tooltip.hidden = true; }
-    });
-  }
-
-  // --- on-canvas controls ---
-  document.querySelectorAll('.cy-controls [data-cy-action]').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var action = btn.getAttribute('data-cy-action');
-      var center = { x: cy.width() / 2, y: cy.height() / 2 };
-      if (action === 'zoom-in') cy.zoom({ level: cy.zoom() * 1.3, renderedPosition: center });
-      if (action === 'zoom-out') cy.zoom({ level: cy.zoom() * 0.75, renderedPosition: center });
-      if (action === 'fit') cy.fit(undefined, 30);
-      if (action === 'relayout') { cy.layout(LAYOUT).run(); cy.fit(undefined, 30); }
-    });
-  });
-
-  // --- fullscreen: recompute layout for whichever chart is inside ---
-  function resizeFor(boxId) {
-    if (boxId === 'cy-box' && cy) {
-      cy.resize();
-      cy.layout(LAYOUT).run();
-      cy.fit(undefined, 30);
-    }
-    if (boxId === 'chart-status-box' && statusChart) {
-      statusChart.resize();
-    }
-  }
-
-  document.querySelectorAll('.fs-btn').forEach(function (btn) {
-    var boxId = btn.getAttribute('data-fs-target');
-    var box = document.getElementById(boxId);
-    if (!box) return;
-    btn.addEventListener('click', function () {
-      if (document.fullscreenElement === box) {
-        document.exitFullscreen();
-      } else if (box.requestFullscreen) {
-        box.requestFullscreen();
-      }
-    });
-    document.addEventListener('fullscreenchange', function () {
-      var isFs = document.fullscreenElement === box;
-      box.classList.toggle('fs-active', isFs);
-      btn.textContent = isFs ? '⤢' : '⛶';
-      btn.title = isFs ? 'Ukončit celou obrazovku' : 'Zobrazit na celou obrazovku';
-      // give the browser one frame to apply the fullscreen box size first
-      requestAnimationFrame(function () { setTimeout(function () { resizeFor(boxId); }, 50); });
-    });
-  });
-})();
-</script>
+{#- Graph data as an inert JSON island, not an inline JS literal — read by
+    assets/js/modules/relationship-graph.js. Moved verbatim from what used
+    to be a hardcoded JS array here; see data/relationship-graph.toml for
+    the source of truth and its own provenance note. -#}
+<script type="application/json" id="dossier-graph-data">{{ graph | json_encode | safe }}</script>
 {% endblock content %}

@@ -1,0 +1,228 @@
+# Relationship graph data for the dossier's Cytoscape.js visualization
+# (templates/dossier.html, rendered by assets/js/modules/relationship-graph.js).
+#
+# This is dossier content, not decoration: every label is a claim about
+# real people and must follow the same sourcing discipline as the rest of
+# the dossier (see AGENTS.md). It was moved here verbatim from what was
+# previously an inline JS literal in templates/dossier.html — no label,
+# node, or edge was added, removed, or reworded in that move. Any future
+# edit to this file is a content edit and falls under AGENTS.md's rules,
+# not just a presentation change.
+#
+# `kind` (nodes) / `status` (edges) drive the Cytoscape style classes in
+# assets/js/modules/relationship-graph.js. `status` uses the same
+# fact/disputed/quote vocabulary as the rest of the site.
+# Referential integrity (every edge.source/target resolves to a real node
+# id, no duplicate node ids) is enforced by scripts/dossier/validate-graph.mjs.
+
+[[nodes]]
+id = "macinka"
+label = "Petr Macinka"
+kind = "person"
+
+[[nodes]]
+id = "turek"
+label = "Filip Turek"
+kind = "person"
+
+[[nodes]]
+id = "motoriste"
+label = "Motoristé sobě"
+kind = "party"
+
+[[nodes]]
+id = "vlada"
+label = "Vláda (ANO + SPD + Motoristé)"
+kind = "entity"
+
+[[nodes]]
+id = "ep"
+label = "Evropský parlament"
+kind = "entity"
+
+[[nodes]]
+id = "greendeal"
+label = "Zmocněnec pro Green Deal"
+kind = "role"
+
+[[nodes]]
+id = "babis"
+label = "Andrej Babiš (premiér)"
+kind = "person-other"
+
+[[nodes]]
+id = "pavel"
+label = "Petr Pavel (prezident)"
+kind = "person-other"
+
+[[nodes]]
+id = "kauza2024"
+label = "Kauza 2024: fotografie a svícny"
+kind = "case"
+
+[[nodes]]
+id = "kauza2025"
+label = "Kauza 2025: smazané příspěvky"
+kind = "case"
+
+[[nodes]]
+id = "nehoda2026"
+label = "Nehoda 2026"
+kind = "case"
+
+[[nodes]]
+id = "trestniozn"
+label = "Trestní oznámení (2025)"
+kind = "case"
+
+[[nodes]]
+id = "gmrgas"
+label = "GMR GAS UA LLC (Kyjev)"
+kind = "entity"
+
+[[nodes]]
+id = "klubmotoristu"
+label = "Klub motoristů, z.s."
+kind = "entity"
+
+[[nodes]]
+id = "chlad"
+label = "Richard Chlad (sponzor)"
+kind = "person-other"
+
+[[nodes]]
+id = "mzp2026"
+label = "Jmenování ministrem ŽP (2026)"
+kind = "case"
+
+[[edges]]
+source = "macinka"
+target = "motoriste"
+label = "předseda"
+status = "fact"
+
+[[edges]]
+source = "turek"
+target = "motoriste"
+label = "poslanec za"
+status = "fact"
+
+[[edges]]
+source = "motoriste"
+target = "vlada"
+label = "člen koalice"
+status = "fact"
+
+[[edges]]
+source = "babis"
+target = "vlada"
+label = "premiér"
+status = "fact"
+
+[[edges]]
+source = "turek"
+target = "ep"
+label = "europoslanec 2024–2025"
+status = "fact"
+
+[[edges]]
+source = "turek"
+target = "greendeal"
+label = "zmocněnec (do nehody)"
+status = "fact"
+
+[[edges]]
+source = "turek"
+target = "kauza2024"
+label = "subjekt"
+status = "disputed"
+
+[[edges]]
+source = "macinka"
+target = "kauza2024"
+label = "hájí (\"pseudoproblém\")"
+status = "quote"
+
+[[edges]]
+source = "turek"
+target = "kauza2025"
+label = "subjekt"
+status = "disputed"
+
+[[edges]]
+source = "turek"
+target = "nehoda2026"
+label = "subjekt"
+status = "fact"
+
+[[edges]]
+source = "macinka"
+target = "nehoda2026"
+label = "hájí (\"nikdy se ho nevzdám\")"
+status = "quote"
+
+[[edges]]
+source = "babis"
+target = "nehoda2026"
+label = "vyzval k odpovědnosti"
+status = "fact"
+
+[[edges]]
+source = "pavel"
+target = "nehoda2026"
+label = "vyjádřil se"
+status = "fact"
+
+[[edges]]
+source = "macinka"
+target = "gmrgas"
+label = "nepřiznaný 20% podíl"
+status = "disputed"
+
+[[edges]]
+source = "macinka"
+target = "klubmotoristu"
+label = "statutární orgán"
+status = "fact"
+
+[[edges]]
+source = "klubmotoristu"
+target = "motoriste"
+label = "dar 800 000 Kč (2024)"
+status = "fact"
+
+[[edges]]
+source = "turek"
+target = "trestniozn"
+label = "subjekt (oznámení 6/2025, odloženo pro promlčení 5/2026)"
+status = "disputed"
+
+[[edges]]
+source = "chlad"
+target = "motoriste"
+label = "dar 638 864 Kč (2025, oficiálně) vs. tvrzené ~2 mil. Kč"
+status = "disputed"
+
+[[edges]]
+source = "turek"
+target = "mzp2026"
+label = "nejmenován (1/2026)"
+status = "fact"
+
+[[edges]]
+source = "pavel"
+target = "mzp2026"
+label = "odmítl jmenovat"
+status = "fact"
+
+[[edges]]
+source = "turek"
+target = "pavel"
+label = "žaloba na ochranu osobnosti (1/2026)"
+status = "disputed"
+
+[[edges]]
+source = "macinka"
+target = "mzp2026"
+label = "dočasně vede resort"
+status = "fact"

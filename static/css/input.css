@@ -2,6 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Design tokens. Centralizes the color/surface language already in use
+   across templates so it's declared once instead of repeated as raw
+   rgba()/hex literals in a dozen places. Values are unchanged from what
+   was already hardcoded — this does not alter any visible color or the
+   meaning of any status. */
+@layer base {
+  :root {
+    --surface: #000000;
+    --surface-elevated: rgba(255, 255, 255, 0.03);
+    --surface-elevated-hover: rgba(255, 255, 255, 0.06);
+    --border: rgba(255, 255, 255, 0.1);
+    --border-strong: rgba(255, 255, 255, 0.2);
+    --text: #ffffff;
+    --text-muted: rgba(255, 255, 255, 0.6);
+    --text-faint: rgba(255, 255, 255, 0.4);
+    --accent: #f3e5c0;
+    --accent-strong: #d4af37;
+    --focus-ring: #f3e5c0;
+
+    --status-corroborated-bg: rgba(34, 197, 94, 0.15);
+    --status-corroborated-fg: rgb(134, 239, 172);
+    --status-corroborated-border: rgba(34, 197, 94, 0.3);
+    --status-quote-bg: rgba(59, 130, 246, 0.15);
+    --status-quote-fg: rgb(147, 197, 253);
+    --status-quote-border: rgba(59, 130, 246, 0.3);
+    --status-disputed-bg: rgba(234, 179, 8, 0.15);
+    --status-disputed-fg: rgb(253, 224, 71);
+    --status-disputed-border: rgba(234, 179, 8, 0.3);
+    --status-opinion-bg: rgba(255, 255, 255, 0.08);
+    --status-opinion-fg: rgba(255, 255, 255, 0.6);
+    --status-opinion-border: rgba(255, 255, 255, 0.15);
+    --status-ongoing-bg: rgba(168, 85, 247, 0.15);
+    --status-ongoing-fg: rgb(216, 180, 254);
+    --status-ongoing-border: rgba(168, 85, 247, 0.3);
+
+    --gap-high-fg: rgb(253, 224, 71);
+    --gap-low-fg: rgba(255, 255, 255, 0.6);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--focus-ring);
+    outline-offset: 2px;
+  }
+}
+
 /* Shared dossier styles — used by templates/dossier.html,
    templates/dossier-source.html and templates/dossier-sources-index.html.
    Kept in one place instead of duplicated inline <style> blocks. */
@@ -26,23 +71,56 @@
   .dossier-prose ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem; }
   .dossier-prose li { margin-bottom: 0.5rem; line-height: 1.6; color: rgba(255,255,255,0.85); }
   .dossier-prose blockquote { border-left: 2px solid rgba(243,229,192,0.4); padding-left: 1rem; margin: 1rem 0; font-style: italic; color: rgba(255,255,255,0.7); }
-  .dossier-prose a { color: #f3e5c0; text-decoration: underline; text-decoration-color: rgba(243,229,192,0.4); }
+  .dossier-prose a { color: var(--accent); text-decoration: underline; text-decoration-color: rgba(243,229,192,0.4); }
   .dossier-prose a:hover { color: rgba(243,229,192,0.8); }
   /* Zola's markdown output has no wrapper around <table> — without this,
      wide registry tables (4+ columns of Czech prose) force the whole page
      to scroll horizontally on mobile instead of just the table. */
   .dossier-prose table { display: block; overflow-x: auto; max-width: 100%; width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.875rem; -webkit-overflow-scrolling: touch; }
-  .dossier-prose th, .dossier-prose td { border: 1px solid rgba(255,255,255,0.1); padding: 0.5rem 0.75rem; text-align: left; }
-  .dossier-prose th { background: rgba(255,255,255,0.05); font-weight: 600; }
+  .dossier-prose th, .dossier-prose td { border: 1px solid var(--border); padding: 0.5rem 0.75rem; text-align: left; }
+  .dossier-prose th { background: var(--surface-elevated-hover); font-weight: 600; }
   .dossier-prose em { color: rgba(255,255,255,0.5); }
 
-  .status-badge { display: inline-block; font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.02em; padding: 0.125rem 0.5rem; border-radius: 9999px; margin-bottom: 0.5rem; text-transform: uppercase; }
-  .status-corroborated { background: rgba(34,197,94,0.15); color: rgb(134,239,172); border: 1px solid rgba(34,197,94,0.3); }
-  .status-quote { background: rgba(59,130,246,0.15); color: rgb(147,197,253); border: 1px solid rgba(59,130,246,0.3); }
-  .status-disputed { background: rgba(234,179,8,0.15); color: rgb(253,224,71); border: 1px solid rgba(234,179,8,0.3); }
-  .status-opinion { background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.6); border: 1px solid rgba(255,255,255,0.15); }
-  .status-ongoing { background: rgba(168,85,247,0.15); color: rgb(216,180,254); border: 1px solid rgba(168,85,247,0.3); }
-  .legend { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; margin-bottom: 2rem; font-size: 0.75rem; color: rgba(255,255,255,0.5); }
+  /* Gap priority is not a claim status (CORROBORATED/CITACE/SPORNÉ/NÁZOR) —
+     it gets its own badge classes instead of borrowing status-disputed /
+     status-opinion, so the two meanings never visually collide. */
+  .gap-priority-badge { display: inline-flex; align-items: center; gap: 0.35em; font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.02em; padding: 0.125rem 0.5rem; border-radius: 9999px; text-transform: uppercase; border: 1px solid var(--border-strong); }
+  .gap-priority-high { color: var(--gap-high-fg); }
+  .gap-priority-high::before { content: "\25B2"; font-size: 0.6em; }
+  .gap-priority-low { color: var(--gap-low-fg); }
+  .gap-priority-low::before { content: "\25BC"; font-size: 0.6em; }
+
+  /* Repeated across index.html, dossier.html, dossier-sources-index.html,
+     dossier-gaps-index.html — a plain metric tile and a clickable registry
+     card. Named here once instead of the same long Tailwind class string
+     copy-pasted in every template. */
+  .stat-tile { border-radius: 0.5rem; border: 1px solid var(--border); padding: 0.75rem; text-align: center; }
+  .stat-tile-value { font-size: 1.25rem; font-weight: 700; }
+  .stat-tile-label { margin-top: 0.25rem; font-size: 0.75rem; color: var(--text-faint); }
+
+  .registry-card {
+    display: flex; flex-direction: column; border-radius: 0.75rem;
+    border: 1px solid var(--border); background: var(--surface-elevated);
+    padding: 1rem; text-decoration: none; transition: border-color 0.15s, background-color 0.15s;
+  }
+  .registry-card:hover { border-color: var(--border-strong); background: var(--surface-elevated-hover); }
+
+  /* Status is never color-only: every badge also carries a text label (in
+     the markup) and .status-badge::before draws a small glyph so the
+     distinction survives grayscale/color-blindness. */
+  .status-badge { display: inline-flex; align-items: center; gap: 0.3em; font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.02em; padding: 0.125rem 0.5rem; border-radius: 9999px; margin-bottom: 0.5rem; text-transform: uppercase; }
+  .status-badge::before { content: ""; width: 0.4em; height: 0.4em; border-radius: 9999px; background: currentColor; flex-shrink: 0; }
+  .status-corroborated { background: var(--status-corroborated-bg); color: var(--status-corroborated-fg); border: 1px solid var(--status-corroborated-border); }
+  .status-corroborated::before { border-radius: 9999px; }
+  .status-quote { background: var(--status-quote-bg); color: var(--status-quote-fg); border: 1px solid var(--status-quote-border); }
+  .status-quote::before { border-radius: 1px; }
+  .status-disputed { background: var(--status-disputed-bg); color: var(--status-disputed-fg); border: 1px solid var(--status-disputed-border); }
+  .status-disputed::before { border-radius: 0; transform: rotate(45deg); }
+  .status-opinion { background: var(--status-opinion-bg); color: var(--status-opinion-fg); border: 1px solid var(--status-opinion-border); }
+  .status-opinion::before { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); border-radius: 0; }
+  .status-ongoing { background: var(--status-ongoing-bg); color: var(--status-ongoing-fg); border: 1px solid var(--status-ongoing-border); }
+  .status-ongoing::before { border-radius: 9999px; }
+  .legend { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; margin-bottom: 2rem; font-size: 0.75rem; color: var(--text-faint); }
 
   .timeline { position: relative; margin: 0; padding-left: 1.5rem; border-left: 1px solid rgba(255,255,255,0.1); }
   .timeline li { position: relative; margin-bottom: 1.25rem; }
@@ -110,19 +188,49 @@
     pointer-events: none; box-shadow: 0 4px 12px rgba(0,0,0,0.5);
   }
 
-  /* registry filter/search UI (templates/dossier-sources-index.html) */
+  /* registry filter/search UI — shared by any registry index that adds a
+     client-side filter toolbar (templates/dossier-sources-index.html,
+     templates/dossier.html claims table). */
   .src-filter-input, .src-filter-select {
-    background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.15);
-    border-radius: 0.375rem; color: #fff; padding: 0.4rem 0.6rem; font-size: 0.8125rem;
+    background: var(--surface-elevated); border: 1px solid var(--border-strong);
+    border-radius: 0.375rem; color: var(--text); padding: 0.4rem 0.6rem; font-size: 0.8125rem;
   }
   .src-filter-input:focus, .src-filter-select:focus, .src-filter-reset:focus-visible {
-    outline: 2px solid #f3e5c0; outline-offset: 2px;
+    outline: 2px solid var(--focus-ring); outline-offset: 2px;
   }
   .src-filter-reset {
-    background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.15);
-    border-radius: 0.375rem; color: rgba(255,255,255,0.7); padding: 0.4rem 0.75rem; font-size: 0.8125rem; cursor: pointer;
+    background: var(--surface-elevated-hover); border: 1px solid var(--border-strong);
+    border-radius: 0.375rem; color: var(--text-muted); padding: 0.4rem 0.75rem; font-size: 0.8125rem; cursor: pointer;
   }
-  .src-filter-reset:hover { background: rgba(255,255,255,0.12); color: #fff; }
+  .src-filter-reset:hover { background: rgba(255,255,255,0.12); color: var(--text); }
+
+  /* Copy-direct-link button injected next to each CLM-## anchor
+     (assets/js/modules/claims-filter.js). Progressive enhancement — the
+     anchor itself is a normal, always-present link. */
+  .clm-copy-btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 1.25rem; height: 1.25rem; margin-left: 0.35rem; padding: 0;
+    font-size: 0.7rem; line-height: 1; border-radius: 0.25rem;
+    background: transparent; border: none; color: var(--text-faint); cursor: pointer;
+    vertical-align: middle;
+  }
+  .clm-copy-btn:hover { color: var(--text); background: var(--surface-elevated-hover); }
+
+  /* Relationship-graph kind/status filter chips (assets/js/modules/relationship-graph.js).
+     aria-pressed carries the on/off state for assistive tech; the visual
+     state is driven off the same attribute so they can't drift apart. */
+  .cy-chip {
+    border-radius: 9999px; border: 1px solid var(--border-strong);
+    background: var(--surface-elevated); color: var(--text-muted);
+    padding: 0.2rem 0.65rem; font-size: 0.7rem; cursor: pointer;
+  }
+  .cy-chip[aria-pressed="true"] { background: rgba(243,229,192,0.12); border-color: rgba(243,229,192,0.4); color: var(--accent); }
+  .cy-chip:hover { border-color: var(--border-strong); color: var(--text); }
+
+  .edge-status-dot { display: inline-block; width: 0.55rem; height: 0.55rem; border-radius: 9999px; margin-right: 0.4rem; }
+  .edge-status-dot.edge-fact { background: #4ade80; }
+  .edge-status-dot.edge-disputed { background: #facc15; }
+  .edge-status-dot.edge-quote { background: #93c5fd; }
 
   /* Desktop collapsible sidebar (templates/base.html). Width and content
      offset are toggled via the html[data-sidebar] attribute rather than a
