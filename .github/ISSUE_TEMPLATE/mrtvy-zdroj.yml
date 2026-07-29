@@ -1,0 +1,27 @@
+name: Mrtvý či změněný zdroj
+description: Odkaz v registru zdrojů (SRC-##) nefunguje, přesměrovává jinam nebo se obsah článku změnil.
+title: "[zdroj] "
+labels: ["zdroje"]
+body:
+  - type: input
+    id: src
+    attributes:
+      label: SRC-## a URL
+      placeholder: "SRC-19 — https://…"
+    validations:
+      required: true
+  - type: dropdown
+    id: typ
+    attributes:
+      label: Co se děje
+      options:
+        - Odkaz vrací 404/410 (mrtvý)
+        - Přesměrovává na jiný obsah
+        - Obsah článku byl změněn/opraven vydavatelem
+        - Znám lepší kanonickou/archivní URL
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: Detail (nová URL, archiv, co se změnilo)

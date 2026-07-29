@@ -1,0 +1,31 @@
+name: Reakce subjektu / právo na odpověď
+description: Jste subjektem dossieru (nebo jeho zástupcem) a chcete dodat vyjádření, opravu či protidůkazy.
+title: "[reakce] "
+labels: ["pravo-na-odpoved"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Relevantní a doložené reakce se do záznamů propisují viditelně a s citací; věcné chyby se opravují a každá změna zůstává v historii. Podání samo dataset nemění — projde přezkumem; redakční veto tím nevzniká.
+        > ⚠️ **Tato issue je veřejná.** Pokud vyjádření nechcete podat veřejně, projekt zatím jinou cestu poctivě nenabízí — nemá důvěrný intake kanál.
+  - type: input
+    id: record
+    attributes:
+      label: Kterých záznamů se reakce týká
+      placeholder: "např. CLM-36, CASE-02"
+    validations:
+      required: true
+  - type: textarea
+    id: response
+    attributes:
+      label: Vyjádření / oprava / protidůkazy
+      description: U protidůkazů uveďte ověřitelné zdroje či dokumenty, které lze veřejně citovat.
+    validations:
+      required: true
+  - type: input
+    id: identity
+    attributes:
+      label: Vztah k subjektu
+      placeholder: "subjekt / právní zástupce / mluvčí…"
+    validations:
+      required: true

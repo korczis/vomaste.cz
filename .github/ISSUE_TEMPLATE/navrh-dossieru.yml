@@ -1,0 +1,30 @@
+name: Návrh nového dossieru či rozšíření záběru
+description: Návrh nového subjektu, kauzy nebo tématu. Pozor — bez autorizace v append-only logu se obsah nepřidává.
+title: "[návrh] "
+labels: ["navrh-rozsahu"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Rozsah pokrytí reálných osob určuje výhradně [append-only autorizační log v AGENTS.md](https://github.com/korczis/vomaste.cz/blob/master/AGENTS.md). „Je to zajímavé" ani „už to někde vyšlo" nestačí — návrh musí projít testem veřejného zájmu ([konstituce, § 7](https://github.com/korczis/vomaste.cz/blob/master/docs/constitution/OPEN_INTELLIGENCE_COMMONS.md)).
+  - type: input
+    id: scope
+    attributes:
+      label: Navrhovaný rozsah
+      description: Kdo/co přesně a které konkrétní, už publikované kauzy.
+    validations:
+      required: true
+  - type: textarea
+    id: interest
+    attributes:
+      label: Odůvodnění veřejného zájmu
+      description: Jaká veřejná funkce, veřejné prostředky nebo institucionální odpovědnost je ve hře? Proč je pokrytí přiměřené?
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Výchozí zdroje
+      description: Jmenované, datované, nezávislé veřejné zdroje s URL.
+    validations:
+      required: true

@@ -1,0 +1,38 @@
+name: Oprava faktu nebo stavu tvrzení
+description: Chybný údaj, nepřesná formulace, špatný stav ověření (CLM/CASE/GAP) nebo rozpor mezi záznamy.
+title: "[oprava] "
+labels: ["oprava-faktu"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > ⚠️ **Tato issue je veřejná a trvalá.** Nevkládejte důvěrné dokumenty, identitu zdrojů, soukromé kontakty ani nepublikovaný citlivý materiál. Git nezapomíná.
+  - type: input
+    id: record
+    attributes:
+      label: Kterého záznamu se to týká
+      description: ID záznamu (CLM-##, SRC-##, CASE-##, GAP-##) nebo URL stránky.
+      placeholder: "např. CLM-27, https://vomaste.cz/dossiers/…"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Co je špatně
+      description: Přesně citujte spornou formulaci a popište, v čem je chybná.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Doložení
+      description: Jmenovaný, datovaný veřejný zdroj s přímou URL (zdroj, který jste skutečně otevřeli — ne úryvek z vyhledávače). Bez doložení jde o názor, ne opravu.
+    validations:
+      required: true
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Potvrzení
+      options:
+        - label: Neposílám důvěrný ani nepublikovaný citlivý materiál; beru na vědomí, že issue je veřejná.
+          required: true

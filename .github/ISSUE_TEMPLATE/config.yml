@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 🔒 Hlášení zranitelnosti (soukromě)
+    url: https://github.com/korczis/vomaste.cz/security/advisories/new
+    about: Bezpečnostní chyby NEHLASTE veřejnou issue — použijte soukromé hlášení.
+  - name: ⚠️ Citlivé podklady ke kauzám
+    url: https://github.com/korczis/vomaste.cz/blob/master/docs/constitution/OPEN_INTELLIGENCE_COMMONS.md
+    about: Projekt zatím NEMÁ důvěrný intake kanál. GitHub je veřejný a trvalý — neposílejte sem nepublikovaný citlivý materiál ani identitu zdrojů.
