@@ -13,36 +13,45 @@
   ], updated=section.extra.updated | default(value=""), reviewed=section.extra.reviewed_at | default(value="")) }}
 
   {% if section.extra.dossier_type == "aggregate" %}
+  {#- Which dossiers this aggregate rolls up comes from the registry
+      (data/dossiers.toml → source_dossiers), never from names written here:
+      the notice, the links and the per-subject tiles all follow the data. -#}
+  {% set registry = load_data(path="data/dossiers.toml") %}
+  {% set self_entry = registry.dossiers | filter(attribute="slug", value=section.extra.dossier) | first %}
+  {% set source_slugs = self_entry.source_dossiers | default(value=[]) %}
   <section class="mb-10 rounded-xl border border-[#f3e5c0]/25 bg-[#f3e5c0]/[0.04] p-5" aria-labelledby="aggregate-notice-heading">
     <h2 id="aggregate-notice-heading" class="mb-2 text-xs font-semibold uppercase tracking-wide text-[#f3e5c0]/80">Generovaný společný pohled</h2>
     <p class="text-sm text-white/80">
-      Tato stránka je generovaný společný přehled nad dvěma samostatnými dossiery —
-      <strong class="text-white">Petra Macinky</strong> a <strong class="text-white">Filipa Turka</strong>.
-      Není to třetí samostatný dossier: každý záznam níže patří do registru jednoho nebo obou
-      z těchto dvou dossierů, nikdy sem samostatně.
+      Tato stránka je generovaný společný přehled nad {{ source_slugs | length }} samostatnými dossiery:
+      {%- for slug in source_slugs %}
+      {%- set d = registry.dossiers | filter(attribute="slug", value=slug) | first %}
+      <strong class="text-white">{{ d.title }}</strong>{% if not loop.last %},{% else %}.{% endif %}
+      {%- endfor %}
+      Není to samostatný dossier navíc: každý záznam níže patří do registru jednoho nebo více
+      z nich, nikdy sem samostatně.
     </p>
     <div class="mt-4 grid gap-3 sm:grid-cols-2">
-      <a href="{{ get_url(path='@/dossiers/petr-macinka/_index.md') | safe }}" class="group flex flex-col rounded-lg border border-white/10 bg-white/[0.03] p-4 no-underline transition-colors hover:border-[#f3e5c0]/40">
-        <span class="font-semibold text-white group-hover:text-[#f3e5c0]">Petr Macinka &rarr;</span>
+      {%- for slug in source_slugs %}
+      {%- set d = registry.dossiers | filter(attribute="slug", value=slug) | first %}
+      <a href="{{ get_url(path='@/dossiers/' ~ slug ~ '/_index.md') | safe }}" class="group flex flex-col rounded-lg border border-white/10 bg-white/[0.03] p-4 no-underline transition-colors hover:border-[#f3e5c0]/40">
+        <span class="font-semibold text-white group-hover:text-[#f3e5c0]">{{ d.title }} &rarr;</span>
         <span class="mt-1 text-xs text-white/50">Otevřít samostatný dossier</span>
       </a>
-      <a href="{{ get_url(path='@/dossiers/filip-turek/_index.md') | safe }}" class="group flex flex-col rounded-lg border border-white/10 bg-white/[0.03] p-4 no-underline transition-colors hover:border-[#f3e5c0]/40">
-        <span class="font-semibold text-white group-hover:text-[#f3e5c0]">Filip Turek &rarr;</span>
-        <span class="mt-1 text-xs text-white/50">Otevřít samostatný dossier</span>
-      </a>
+      {%- endfor %}
     </div>
   </section>
 
-  {% set macinka_stats = load_data(path="data/dossiers/petr-macinka/stats.toml") %}
-  {% set turek_stats = load_data(path="data/dossiers/filip-turek/stats.toml") %}
-  {% set claims_section = get_section(path="dossiers/macinka-turek/claims/_index.md") %}
+  {% set claims_section = get_section(path="dossiers/" ~ section.extra.dossier ~ "/claims/_index.md") %}
   {% set_global shared_claims = 0 %}
   {% for p in claims_section.pages %}
     {% if p.extra.subjects and p.extra.subjects | length > 1 %}{% set_global shared_claims = shared_claims + 1 %}{% endif %}
   {% endfor %}
   <section class="mb-12 grid grid-cols-2 gap-3 sm:grid-cols-4" aria-label="Rozdělení tvrzení podle subjektu">
-    {{ ui::stat_tile(value=macinka_stats.claims_total, label="Jen Petr Macinka", url=get_url(path="@/dossiers/petr-macinka/claims/_index.md")) }}
-    {{ ui::stat_tile(value=turek_stats.claims_total, label="Jen Filip Turek", url=get_url(path="@/dossiers/filip-turek/claims/_index.md")) }}
+    {%- for slug in source_slugs %}
+    {%- set d = registry.dossiers | filter(attribute="slug", value=slug) | first %}
+    {%- set s = load_data(path="data/dossiers/" ~ slug ~ "/stats.toml") %}
+    {{ ui::stat_tile(value=s.claims_total, label=d.title, url=get_url(path="@/dossiers/" ~ slug ~ "/claims/_index.md")) }}
+    {%- endfor %}
     {{ ui::stat_tile(value=shared_claims, label="Sdílená tvrzení") }}
     {{ ui::stat_tile(value=section.extra.subject_entities | length, label="Subjektů v tomto přehledu") }}
   </section>

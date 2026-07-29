@@ -79,14 +79,31 @@ No template hardcodes a dossier slug. Every dossier-scoped template reads
 its own dossier root from front matter (`page.extra.dossier` on a detail
 page, `section.extra.dossier` on a registry index) and builds sibling
 paths from it, e.g. `get_url(path="@/dossiers/" ~ dossier_slug ~
-"/sources/_index.md")`. `data/navigation.toml` is hand-curated by design
-— it's the curated primary nav, not a template — but it is no longer
-free-form: `scripts/dossier/validate-navigation.mjs` fails the build if
-an entity dossier is missing from it, if the aggregate dossier gains
-grouped child items (the thing that would make it look like a third
-tree), or if any item points at a route that doesn't exist. A third
-authorized *person* gets a new entity-dossier entry there; nothing about
-an aggregate view is ever added as a peer of the entity dossiers.
+"/sources/_index.md")`. The primary navigation is likewise **generated,
+not hand-curated**: `data/navigation.toml` is a dossier-free skeleton
+(top-level items, the per-dossier registry template, icons) and
+`scripts/dossier/build-navigation.mjs` compiles it together with
+`data/dossiers.toml` and the registry sections that actually exist on
+disk into `data/generated/navigation.json`, which is what
+`templates/base.html` renders. Consequences, enforced by
+`scripts/dossier/validate-navigation.mjs` (and cross-checked by
+`validate-dossier-types.mjs`):
+
+- **No person is ever a top-level sidebar item.** Every dossier hangs
+  under "Dossiery" as its own subtree; entity dossiers get an expandable
+  tree of their registries, an aggregate view stays a single, clearly
+  labelled link with no subtree of its own.
+- The skeleton must stay dossier-free — a slug hand-written into
+  `data/navigation.toml` fails the build.
+- A third authorized *person* needs **no** navigation edit at all: adding
+  the dossier to `data/dossiers.toml` puts it in the tree. Same for
+  adding or removing one of its registries.
+- Every generated node must have a label, an icon and a route that
+  exists on disk.
+
+The same generated tree feeds the `SiteNavigationElement` JSON-LD nodes
+in `templates/partials/jsonld.html`, so structured data and sidebar can
+never drift apart.
 
 Per-dossier generated/data files live under `data/dossiers/<slug>/`
 (`graph.toml`, `updates.toml`, the build-generated `stats.toml`) for the
@@ -536,3 +553,29 @@ jmenování ministrem životního prostředí (odmítnutí prezidentem,
 zmocněnecká role, ohlášená a nepodaná žaloba, jmenování Igora Červeného)
 je součástí již autorizovaného pokrytí veřejné politické kariéry z
 2026-07-21 — nejde o nové téma.
+
+### Structural change, 2026-07-30: generated navigation tree, no person at top level
+
+Authorized by the site owner, explicitly and on the record, 2026-07-30
+("macinka ani turek nejsou top level v sidebar, musí být generováno
+z dat, jsou to stromové cases, dossiers, entities, vše JSON-LD data
+driven, tenhle shell je hodně hardcoded"): the primary navigation stops
+being a hand-curated list. `data/navigation.toml` is reduced to a
+dossier-free skeleton and the sidebar tree is generated at build time
+(`scripts/dossier/build-navigation.mjs` →
+`data/generated/navigation.json`) from the dossier registry plus the
+registry sections that exist on disk. Petr Macinka and Filip Turek are
+no longer top-level sidebar items: every dossier hangs under "Dossiery"
+as its own subtree, an aggregate view stays a single labelled link
+without a subtree, and the same generated tree feeds the
+`SiteNavigationElement` JSON-LD.
+
+This reverses the earlier *mechanism* by which entity dossiers were kept
+reachable (an ungrouped nav item per dossier, previously enforced by
+`validate-navigation.mjs`); the underlying invariant it protected — an
+aggregate view must never look like a third person — is unchanged and is
+still enforced, now on the generated tree.
+
+This is a **structural** change, not a scope change: it authorizes no new
+subject, topic, controversy or named third party, and touches no claim,
+source, case, gap or relation.

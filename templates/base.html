@@ -1,4 +1,5 @@
 {%- import "macros/jsonld.html" as jsonld -%}
+{%- import "macros/nav.html" as nav -%}
 <!DOCTYPE html>
 <html lang="{{ page.extra.lang | default(value=config.extra.lang | default(value="en")) }}" class="scroll-smooth no-js">
 <head>
@@ -15,8 +16,18 @@
   <script>document.documentElement.classList.replace("no-js","js")</script>
 
   {%- set page_title = page.title | default(value=section.title | default(value=config.title)) -%}
-  {%- set page_description = page.description | default(value=section.description | default(value=config.description)) -%}
-  {%- set og_image = page.extra.og_image | default(value=section.extra.og_image | default(value=config.extra.og_image)) -%}
+  {#- Meta description se ořezává na ~200 znaků: delší text vyhledávače i
+      sociální sítě stejně useknou, a u záznamů registru je `description`
+      plné znění tvrzení. Na stránce samotné zůstává text úplný. -#}
+  {%- set page_description = page.description | default(value=section.description | default(value=config.description)) | truncate(length=200) -%}
+  {#- Preview card: front matter wins; jinak dostane každá stránka uvnitř
+      dossieru kartu svého dossieru (static/images/og/<slug>.jpg, generuje
+      scripts/og/build-og-images.mjs, existenci hlídá validate-dossier-types),
+      zbytek webu dostane kartu webu z config.toml. -#}
+  {%- set og_dossier = section.extra.dossier | default(value=page.extra.dossier | default(value="")) -%}
+  {%- set og_image = page.extra.og_image | default(value=section.extra.og_image | default(value=false)) -%}
+  {%- if not og_image and og_dossier -%}{%- set og_image = "images/og/" ~ og_dossier ~ ".jpg" -%}{%- endif -%}
+  {%- if not og_image -%}{%- set og_image = config.extra.og_image -%}{%- endif -%}
   <title>{{ page_title }}</title>
   <meta name="description" content="{{ page_description }}">
   {%- set page_keywords = page.extra.keywords | default(value=section.extra.keywords | default(value=config.extra.keywords | default(value=""))) %}
@@ -36,13 +47,30 @@
   <meta property="og:site_name" content="{{ config.title }}">
   <meta property="og:title" content="{{ page_title }}">
   <meta property="og:description" content="{{ page_description }}">
-  <meta property="og:type" content="{{ page.extra.og_type | default(value=config.extra.og_type) }}">
+  {#- og:type podle typu stránky, ne jedna hodnota pro celý web: dossier o
+      osobě je `profile`, jednotlivý záznam registru (tvrzení/zdroj/kauza/
+      mezera/vztah) je `article`, zbytek `website`. Front matter má vždy
+      přednost. -#}
+  {%- set is_record = page.extra.clm_id | default(value="") or page.extra.src_id | default(value="") or page.extra.case_id | default(value="") or page.extra.gap_id | default(value="") or page.extra.relation_id | default(value="") -%}
+  {%- set is_profile = section.extra.dossier_type | default(value="") == "entity" -%}
+  {%- set og_type = page.extra.og_type | default(value=section.extra.og_type | default(value=false)) -%}
+  {%- if not og_type -%}
+    {%- if is_profile -%}{%- set og_type = "profile" -%}
+    {%- elif is_record -%}{%- set og_type = "article" -%}
+    {%- else -%}{%- set og_type = config.extra.og_type -%}{%- endif -%}
+  {%- endif %}
+  <meta property="og:type" content="{{ og_type }}">
   {%- set page_updated = page.extra.updated | default(value=section.extra.updated | default(value="")) %}
   {% if page_updated %}<meta property="article:modified_time" content="{{ page_updated }}T00:00:00+02:00">{% endif %}
-  <meta property="og:locale" content="{{ page.extra.lang | default(value=config.extra.lang | default(value="en")) }}">
+  {#- og:locale musí být language_TERRITORY (cs_CZ), ne holý jazykový kód —
+      Facebook i LinkedIn holé "cs" ignorují. `lang` (cs) zůstává pro <html>. -#}
+  <meta property="og:locale" content="{{ page.extra.locale | default(value=section.extra.locale | default(value=config.extra.locale | default(value="en_US"))) }}">
   {% if current_url %}<meta property="og:url" content="{{ current_url | safe }}">{% endif %}
   {% if og_image %}
   <meta property="og:image" content="{{ get_url(path=og_image) | safe }}">
+  {#- secure_url je pro scrapery, které rozlišují http/https variantu obrázku
+      (LinkedIn a starší FB crawler); web je https-only, takže je to táž URL. -#}
+  <meta property="og:image:secure_url" content="{{ get_url(path=og_image) | safe }}">
   {% if config.extra.og_image_width %}<meta property="og:image:width" content="{{ config.extra.og_image_width }}">{% endif %}
   {% if config.extra.og_image_height %}<meta property="og:image:height" content="{{ config.extra.og_image_height }}">{% endif %}
   {% if config.extra.og_image_type %}<meta property="og:image:type" content="{{ config.extra.og_image_type }}">{% endif %}
@@ -69,37 +97,74 @@
 <body class="bg-black text-white font-sans antialiased">
 <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:rounded focus:bg-[#f3e5c0] focus:px-3 focus:py-2 focus:text-black">Přeskočit na obsah</a>
 
-{%- set nav_data = load_data(path="data/navigation.toml") -%}
-{%- set nav_items = nav_data.items | sort(attribute="order") -%}
+{#- Navigation is a GENERATED TREE, not a hand-written list:
+    scripts/dossier/build-navigation.mjs writes data/generated/navigation.json
+    from the static skeleton in data/navigation.toml plus data/dossiers.toml
+    plus whatever registry sections exist on disk. No slug, person or dossier
+    route is hardcoded here or there — a new dossier appears in the sidebar
+    without touching a template. Dossiers hang under "Dossiery" as subtrees;
+    no person is ever a top-level item. -#}
+{%- set nav_data = load_data(path="data/generated/navigation.json") -%}
+{%- set nav_items = nav_data.items -%}
 {#- 404 nemá current_path v kontextu (Zola) — default mimo "/" i mimo
     všechny match_prefixy: nic není aktivní, sidebar zůstává docked. -#}
 {%- set current_path = current_path | default(value="/404.html") -%}
+{#- Deepest matching prefix across the whole tree wins, so a source page marks
+    "Zdroje" under its dossier rather than the top-level "Dossiery". -#}
 {%- set_global active_id = "" -%}
 {%- set_global active_len = 0 -%}
+{%- set_global active_trail = [] -%}
 {%- for item in nav_items -%}
-  {%- if item.match_prefix == "/" -%}
+  {%- if item.matchPrefix == "/" -%}
     {%- if current_path == "/" and active_len < 1 -%}
       {%- set_global active_id = item.id -%}
       {%- set_global active_len = 1 -%}
     {%- endif -%}
-  {%- elif current_path is starting_with(item.match_prefix) and item.match_prefix | length > active_len -%}
+  {%- elif current_path is starting_with(item.matchPrefix) and item.matchPrefix | length > active_len -%}
     {%- set_global active_id = item.id -%}
-    {%- set_global active_len = item.match_prefix | length -%}
+    {%- set_global active_len = item.matchPrefix | length -%}
   {%- endif -%}
+  {%- for child in item.children -%}
+    {%- if current_path is starting_with(child.matchPrefix) -%}
+      {%- set_global active_trail = active_trail | concat(with=child.id) -%}
+      {%- if child.matchPrefix | length > active_len -%}
+        {%- set_global active_id = child.id -%}
+        {%- set_global active_len = child.matchPrefix | length -%}
+      {%- endif -%}
+    {%- endif -%}
+    {%- for grandchild in child.children -%}
+      {%- if current_path is starting_with(grandchild.matchPrefix) and grandchild.matchPrefix | length > active_len -%}
+        {%- set_global active_id = grandchild.id -%}
+        {%- set_global active_len = grandchild.matchPrefix | length -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endfor -%}
 {%- endfor -%}
 
-{#- Advanced Flowbite application shell: fixed top navbar + a sidebar that
-    doubles as a Flowbite Drawer. The `data-drawer-target`/`data-drawer-toggle`
-    pair on the hamburger button is Flowbite's real, documented contract
-    (verified against node_modules/flowbite/lib/esm/components/drawer) —
-    it creates and wires the Drawer instance with zero custom JS. On
-    desktop the same element is forced visible via `md:translate-x-0`
-    (Flowbite's own official sidebar-block technique); assets/js/modules/shell.js
-    corrects the one known side effect of that trick (Flowbite always sets
-    aria-hidden="true" at init regardless of viewport). -#}
-<nav class="fixed inset-x-0 top-0 z-40 border-b border-white/10 bg-black">
+{#- Flowbite application shell: fixed top navbar + a sidebar that doubles as a
+    Flowbite Drawer, wired exactly as the Drawer docs require
+    (https://flowbite.com/docs/components/drawer/):
+
+      drawer element  z-40, `transition-transform -translate-x-full`,
+                      tabindex="-1", aria-labelledby, data-drawer-placement
+      backdrop        inserted by Flowbite itself as `fixed inset-0 z-30`
+      trigger         data-drawer-target + data-drawer-toggle + aria-controls
+
+    The z-index layering is load-bearing, not cosmetic: the drawer must sit
+    ABOVE the backdrop. It used to be z-30 — the same layer as the backdrop,
+    which is inserted after it in the DOM — so on mobile the backdrop painted
+    over the open sidebar and swallowed every tap: the menu opened but no link
+    could be clicked. The navbar sits at z-50 so the hamburger stays reachable
+    while the drawer is open.
+
+    On desktop the same element is forced visible via `md:translate-x-0`
+    (Flowbite's own documented docked-sidebar technique);
+    assets/js/modules/shell.js corrects the one side effect of that trick
+    (Drawer.init() sets aria-hidden="true" regardless of viewport) and keeps
+    aria-expanded on the trigger in sync. -#}
+<nav class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-black">
   <div class="flex h-16 items-center gap-3 px-4">
-    <button type="button" data-drawer-target="sidebar" data-drawer-toggle="sidebar" data-drawer-body-scrolling="false" aria-controls="sidebar"
+    <button type="button" data-drawer-target="sidebar" data-drawer-toggle="sidebar" data-drawer-body-scrolling="false" aria-controls="sidebar" aria-expanded="false"
       class="inline-flex items-center rounded-lg p-2 text-white/60 hover:bg-white/5 hover:text-white{% if current_path is defined and current_path != '/' %} md:hidden{% endif %}">
       <span class="sr-only">Otevřít hlavní menu</span>
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
@@ -165,15 +230,34 @@
     navigace je tam dostupná hamburgrem (drawer) + obsahem stránky.
     Všude jinde zůstává na desktopu docked. -#}
 {% set sidebar_docked = current_path is defined and current_path != "/" %}
-<aside id="sidebar" class="fixed inset-y-0 left-0 z-30 w-64 -translate-x-full border-r border-white/10 bg-black pt-16{% if sidebar_docked %} md:translate-x-0{% endif %}" aria-label="Hlavní navigace dossieru">
+<aside id="sidebar" data-drawer-placement="left" tabindex="-1" aria-labelledby="sidebar-heading"
+       class="fixed inset-y-0 left-0 z-40 w-64 -translate-x-full border-r border-white/10 bg-black pt-16 transition-transform{% if sidebar_docked %} md:translate-x-0{% endif %}">
+  <h2 id="sidebar-heading" class="sr-only">Hlavní navigace</h2>
   <nav aria-label="Hlavní navigace dossieru" class="h-full overflow-y-auto py-3">
     {% for item in nav_items %}
-    <a href="{{ get_url(path=item.path) | safe }}" title="{{ item.label }}"
-       {% if item.id == active_id %}aria-current="page"{% endif %}
-       class="flex items-center gap-3 py-2.5 text-sm no-underline {% if item.group %}pl-9 pr-4 text-[0.8rem]{% else %}px-4{% endif %} {% if item.id == active_id %}bg-white/5 text-[#f3e5c0]{% else %}text-white/60 hover:bg-white/5 hover:text-white{% endif %}">
-      <svg width="{% if item.group %}16{% else %}20{% endif %}" height="{% if item.group %}16{% else %}20{% endif %}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="shrink-0" aria-hidden="true"><path d="{{ item.icon }}"/></svg>
-      <span class="whitespace-nowrap">{{ item.label }}</span>
-    </a>
+    {{ nav::nav_link(item=item, depth=0, active_id=active_id) }}
+    {%- if item.children | length > 0 %}
+    {%- for dossier in item.children %}
+    {%- if dossier.children | length > 0 %}
+    {#- Expandable dossier subtree — <details>, so it works without JS and
+        stays open while you are anywhere inside that dossier. An aggregate
+        view never gets one (see AGENTS.md); it renders as a plain link. -#}
+    <details class="group" {% if dossier.id in active_trail %}open{% endif %}>
+      <summary class="flex cursor-pointer list-none items-center gap-3 py-2.5 pl-8 pr-4 text-sm marker:content-none [&::-webkit-details-marker]:hidden {% if dossier.id == active_id %}bg-white/5 text-[#f3e5c0]{% else %}text-white/60 hover:bg-white/5 hover:text-white{% endif %}">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="shrink-0" aria-hidden="true"><path d="{{ dossier.icon }}"/></svg>
+        <span class="min-w-0 flex-1 truncate">{{ dossier.label }}</span>
+        <span class="text-white/30 transition-transform group-open:rotate-90" aria-hidden="true">›</span>
+      </summary>
+      {{ nav::nav_link(item=dossier, depth=1, active_id=active_id, label="Přehled dossieru") }}
+      {%- for child in dossier.children %}
+      {{ nav::nav_link(item=child, depth=2, active_id=active_id) }}
+      {%- endfor %}
+    </details>
+    {%- else %}
+    {{ nav::nav_link(item=dossier, depth=1, active_id=active_id) }}
+    {%- endif %}
+    {%- endfor %}
+    {%- endif %}
     {% endfor %}
   </nav>
 </aside>
@@ -185,8 +269,13 @@
   <nav aria-label="Hlavní navigace (bez JavaScriptu)" class="border-b border-white/10 bg-black px-4 py-3 pt-16">
     <ul class="flex flex-wrap gap-4 text-sm">
       {% for item in nav_items %}
-      {% set parent = nav_items | filter(attribute="id", value=item.group | default(value="")) | first %}
-      <li><a href="{{ get_url(path=item.path) | safe }}" class="text-[#f3e5c0] underline">{% if parent %}{{ parent.label }} — {% endif %}{{ item.label }}</a></li>
+      <li><a href="{{ get_url(path=item.path) | safe }}" class="text-[#f3e5c0] underline">{{ item.label }}</a></li>
+      {%- for dossier in item.children %}
+      <li><a href="{{ get_url(path=dossier.path) | safe }}" class="text-[#f3e5c0] underline">{{ item.label }} — {{ dossier.label }}</a></li>
+      {%- for child in dossier.children %}
+      <li><a href="{{ get_url(path=child.path) | safe }}" class="text-[#f3e5c0] underline">{{ dossier.label }} — {{ child.label }}</a></li>
+      {%- endfor %}
+      {%- endfor %}
       {% endfor %}
     </ul>
   </nav>

@@ -245,24 +245,35 @@
   <section aria-labelledby="verify-heading" class="mx-auto max-w-3xl px-6 py-16 sm:py-20">
     <h2 id="verify-heading" class="text-center text-2xl font-bold text-white sm:text-3xl">Vyzkoušejte to: ověřte si tvrzení</h2>
     <p class="mx-auto mt-3 max-w-xl text-center text-white/60">Skutečný záznam z registru — projděte celý řetěz od výroku ke zdroji a historii.</p>
+    {#- Ukázka se nevybírá ručně: bere se nejnovější tvrzení kanonického
+        registru a jeho první citovaný zdroj, takže nikdy neukazuje na záznam,
+        který mezitím zmizel nebo zastaral. Žádné ID ani text tu nejsou
+        napevno. -#}
+    {% set demo_claims = get_section(path="dossiers/" ~ primary_canon ~ "/claims/_index.md") %}
+    {% set demo = demo_claims.pages | sort(attribute="extra.clm_id") | last %}
+    {% set demo_sources = get_section(path="dossiers/" ~ primary_canon ~ "/sources/_index.md") %}
+    {% set demo_src_id = demo.extra.sources | first %}
+    {% set demo_src = demo_sources.pages | filter(attribute="extra.src_id", value=demo_src_id) | first %}
     <div class="mt-8 overflow-hidden rounded-xl border border-white/10 bg-white/[0.03]">
       <div class="flex flex-wrap items-center gap-2 border-b border-white/10 p-4">
-        <a href="{{ get_url(path='@/dossiers/macinka-turek/claims/clm-45.md') | safe }}" class="font-mono text-xs font-bold text-[#f3e5c0] no-underline hover:underline">CLM-45</a>
-        <span class="status-badge status-single">1 zdroj</span>
+        <a href="{{ demo.permalink | safe }}" class="font-mono text-xs font-bold text-[#f3e5c0] no-underline hover:underline">{{ demo.extra.clm_id }}</a>
+        <span class="status-badge {{ demo.extra.status }}">{{ demo.extra.status_label }}</span>
       </div>
-      <p class="p-4 text-sm leading-relaxed text-white/80">V listopadu 2024 policie odložila případ údajného hajlování (fotografie z roku 2013) z důvodu promlčení trestní odpovědnosti — procesní krok, ne rozhodnutí o vině.</p>
+      <p class="p-4 text-sm leading-relaxed text-white/80">{{ demo.extra.summary }}</p>
       <div class="grid gap-px border-t border-white/10 bg-white/10 sm:grid-cols-3">
-        <a href="{{ get_url(path='@/dossiers/macinka-turek/claims/clm-45.md') | safe }}" class="group bg-black p-4 no-underline transition-colors hover:bg-white/[0.04]">
+        <a href="{{ demo.permalink | safe }}" class="group bg-black p-4 no-underline transition-colors hover:bg-white/[0.04]">
           <span class="font-mono text-[0.65rem] uppercase tracking-widest text-white/40">Krok 1</span>
           <span class="mt-1 block text-sm font-semibold text-white group-hover:text-[#f3e5c0]">Tvrzení a jeho stav →</span>
-          <span class="mt-1 block text-xs text-white/50">Proč nese „1 zdroj", a ne CORROBORATED.</span>
+          <span class="mt-1 block text-xs text-white/50">Proč nese „{{ demo.extra.status_label }}" a co k tomu bylo potřeba doložit.</span>
         </a>
-        <a href="{{ get_url(path='@/dossiers/macinka-turek/sources/src-53.md') | safe }}" class="group bg-black p-4 no-underline transition-colors hover:bg-white/[0.04]">
+        {%- if demo_src %}
+        <a href="{{ demo_src.permalink | safe }}" class="group bg-black p-4 no-underline transition-colors hover:bg-white/[0.04]">
           <span class="font-mono text-[0.65rem] uppercase tracking-widest text-white/40">Krok 2</span>
-          <span class="mt-1 block text-sm font-semibold text-white group-hover:text-[#f3e5c0]">Zdroj SRC-53 →</span>
-          <span class="mt-1 block text-xs text-white/50">ČT24, 8. 11. 2024 — s přímým odkazem na článek.</span>
+          <span class="mt-1 block text-sm font-semibold text-white group-hover:text-[#f3e5c0]">Zdroj {{ demo_src.extra.src_id }} →</span>
+          <span class="mt-1 block text-xs text-white/50">{{ demo_src.extra.outlet }}{% if demo_src.extra.published %}, {{ demo_src.extra.published }}{% endif %} — s přímým odkazem na článek.</span>
         </a>
-        <a href="https://github.com/korczis/vomaste.cz/commits/master/content/dossiers/macinka-turek/claims/clm-45.md" class="group bg-black p-4 no-underline transition-colors hover:bg-white/[0.04]">
+        {%- endif %}
+        <a href="https://github.com/korczis/vomaste.cz/commits/master/content/{{ demo.relative_path }}" class="group bg-black p-4 no-underline transition-colors hover:bg-white/[0.04]">
           <span class="font-mono text-[0.65rem] uppercase tracking-widest text-white/40">Krok 3</span>
           <span class="mt-1 block text-sm font-semibold text-white group-hover:text-[#f3e5c0]">Historie změn v Gitu →</span>
           <span class="mt-1 block text-xs text-white/50">Kdy záznam vznikl a co se v něm kdy změnilo.</span>

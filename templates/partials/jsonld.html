@@ -67,8 +67,20 @@
 {%- if ld_person and current_url -%}
   {%- set ld_person_id = current_url ~ "#person" -%}
 {%- endif -%}
-{%- set ld_nav_data = load_data(path="data/navigation.toml") -%}
-{%- set ld_nav_items = ld_nav_data.items | sort(attribute="order") -%}
+{#- Same generated tree the sidebar renders (data/generated/navigation.json),
+    flattened: top-level items, then every dossier and every dossier registry.
+    No slug or person name is written here. -#}
+{%- set ld_nav_data = load_data(path="data/generated/navigation.json") -%}
+{%- set_global ld_nav_items = [] -%}
+{%- for ld_i in ld_nav_data.items -%}
+  {%- set_global ld_nav_items = ld_nav_items | concat(with=ld_i) -%}
+  {%- for ld_c in ld_i.children -%}
+    {%- set_global ld_nav_items = ld_nav_items | concat(with=ld_c) -%}
+    {%- for ld_g in ld_c.children -%}
+      {%- set_global ld_nav_items = ld_nav_items | concat(with=ld_g) -%}
+    {%- endfor -%}
+  {%- endfor -%}
+{%- endfor -%}
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":{{ ld_seo_type | json_encode | safe }},"name":{{ ld_title | json_encode | safe }},"description":{{ ld_description | json_encode | safe }},"inLanguage":{{ ld_lang | json_encode | safe }}{% if current_url %},"url":{{ current_url | json_encode | safe }}{% endif %}{% if ld_person %},"mainEntity":{"@type":"Person","name":{{ ld_person.title | json_encode | safe }},"description":{{ ld_description | json_encode | safe }}{% if current_url %},"url":{{ current_url | json_encode | safe }},"@id":{{ ld_person_id | json_encode | safe }}{% endif %}}{% endif %}}
 {%- if ld_ancestors | length > 0 -%}

@@ -51,6 +51,9 @@ jobs:
       - name: Build route manifest
         run: npm run build:routes
 
+      - name: Build navigation tree
+        run: npm run build:navigation
+
       - name: Validate primary navigation
         run: npm run validate:navigation
 

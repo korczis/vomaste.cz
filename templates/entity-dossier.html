@@ -20,11 +20,24 @@
     section.title,
   ], updated=section.extra.updated | default(value=""), reviewed=section.extra.reviewed_at | default(value="")) }}
 
+  {#- Název společného přehledu i jména ostatních subjektů čteme z registru
+      (data/dossiers.toml), ať v šabloně není žádné jméno napevno. -#}
+  {% set ed_registry = load_data(path="data/dossiers.toml") %}
+  {% set canonical_entry = ed_registry.dossiers | filter(attribute="slug", value=canonical_slug) | first %}
+  {% set sibling_slugs = canonical_entry.source_dossiers | default(value=[]) %}
+  {%- set_global sibling_titles = [] %}
+  {%- for s in sibling_slugs %}
+    {%- if s != dossier_slug %}
+      {%- set sd = ed_registry.dossiers | filter(attribute="slug", value=s) | first %}
+      {%- set_global sibling_titles = sibling_titles | concat(with=sd.title) %}
+    {%- endif %}
+  {%- endfor %}
   <div class="mb-8 rounded-lg border border-white/10 bg-white/[0.03] p-4 text-sm text-white/70">
-    Toto je samostatný dossier o jedné osobě. Sdílené souvislosti s druhým
-    subjektem stejného politického hnutí jsou uvedeny v
-    <a href="{{ get_url(path='@/dossiers/' ~ canonical_slug ~ '/_index.md') | safe }}" class="text-[#f3e5c0] hover:underline">společném přehledu Petr Macinka a Filip Turek</a>,
-    který je generovaný průnik nad oběma dossiery, ne třetí samostatný předmět.
+    Toto je samostatný dossier o jedné osobě. Sdílené souvislosti
+    {%- if sibling_titles | length > 0 %} s dalšími sledovanými subjekty ({{ sibling_titles | join(sep=", ") }}){%- endif %}
+    jsou uvedeny v
+    <a href="{{ get_url(path='@/dossiers/' ~ canonical_slug ~ '/_index.md') | safe }}" class="text-[#f3e5c0] hover:underline">společném přehledu {{ canonical_entry.title }}</a>,
+    který je generovaný průnik nad těmito dossiery, ne samostatný předmět navíc.
   </div>
 
   <article class="dossier-prose mb-10">{{ section.content | safe }}</article>

@@ -1,23 +1,27 @@
-# Primary navigation, shared by the mobile bottom-nav and the desktop
-# sidebar in templates/base.html. `match_prefix` drives active-state
-# detection: the item with the longest current_path-matching prefix wins,
-# so /dossiers/petr-macinka/sources/... highlights "Zdroje" under Petr
-# Macinka, not the top-level "Dossiery" catalog link. "/" is special-cased
-# in the template to require an exact match.
+# Static navigation SKELETON. This file deliberately contains **no dossier**:
+# no slug, no person, no per-dossier registry item. The dossier subtree under
+# the "dossiers" item is generated at build time by
+# scripts/dossier/build-navigation.mjs from data/dossiers.toml plus whatever
+# registry sections actually exist on disk, and written to
+# data/generated/navigation.json — which is what templates/base.html renders.
 #
-# Items with a `group` are rendered indented, as children of the most
-# recent non-grouped item above them in `order` — that's how the two
-# entity-dossier trees (Petr Macinka, Filip Turek) are expressed here.
-# See AGENTS.md's "Entity dossiers vs. the aggregate view": the aggregate
-# dossier (macinka-turek) is deliberately NOT one of these two trees and
-# has no children of its own here — it gets exactly one, ungrouped,
-# clearly-labeled link placed after both person trees, so it can never be
-# mistaken for a third equal dossier. scripts/dossier/validate-navigation.mjs
-# enforces this at build time.
+# Consequences, enforced by scripts/dossier/validate-navigation.mjs:
+#   * a person is NEVER a top-level sidebar item — every dossier hangs under
+#     "Dossiery" as a subtree, entity dossiers first, aggregate views last and
+#     labelled as such;
+#   * adding, renaming or removing a dossier or one of its registries requires
+#     no edit here — the tree follows the data;
+#   * an aggregate dossier never gets its own expandable subtree (see
+#     AGENTS.md, "Entity dossiers vs. the aggregate view").
 #
 # `icon` is raw SVG <path d="..."> data for a 24x24 stroke-based icon
-# (viewBox 0 0 24 24), rendered inside a shared <svg> wrapper in the
-# template — keeping icon markup out of this data file.
+# (viewBox 0 0 24 24), rendered inside a shared <svg> wrapper in the template —
+# keeping icon markup out of the templates.
+#
+# `match_prefix` drives active-state detection: the deepest matching prefix in
+# the whole generated tree wins, so /dossiers/petr-macinka/sources/... marks
+# "Zdroje" under Petr Macinka, not the top-level "Dossiery". "/" is
+# special-cased in the template to require an exact match.
 
 [[items]]
 id = "home"
@@ -27,6 +31,7 @@ match_prefix = "/"
 order = 10
 icon = "M3 10.5 12 3l9 7.5 M5 9.5V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.5"
 
+# The dossier subtree is attached to this item by the generator.
 [[items]]
 id = "dossiers"
 label = "Dossiery"
@@ -59,160 +64,63 @@ match_prefix = "/koncepty/"
 order = 18
 icon = "M12 3v3 M12 18v3 M3 12h3 M18 12h3 M5.6 5.6l2.1 2.1 M16.3 16.3l2.1 2.1 M18.4 5.6l-2.1 2.1 M7.7 16.3l-2.1 2.1 M12 8.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Z"
 
-# --- Petr Macinka (entity dossier) -----------------------------------
-
 [[items]]
-id = "petr-macinka"
-label = "Petr Macinka"
-path = "@/dossiers/petr-macinka/_index.md"
-match_prefix = "/dossiers/petr-macinka/"
+id = "docs"
+label = "Dokumentace"
+path = "@/dokumentace/_index.md"
+match_prefix = "/dokumentace/"
+order = 19
+icon = "M4 4a2 2 0 0 1 2-2h9l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4Z M15 2v5h5 M8 13h8 M8 17h5"
+
+# --- Per-dossier registry template -----------------------------------------
+# Applied to EVERY dossier by the generator, in this order, but only for the
+# registries that actually exist under content/dossiers/<slug>/. Label and icon
+# live here once instead of being repeated per dossier.
+
+[[registries]]
+id = "claims"
+label = "Tvrzení"
+order = 10
+icon = "M9 12h6 M9 16h6 M9 8h1 M7 21h10a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2Z"
+
+[[registries]]
+id = "sources"
+label = "Zdroje"
 order = 20
-icon = "M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z M14 3v5h5 M9 13h6 M9 17h6"
-
-[[items]]
-id = "petr-macinka-claims"
-label = "Tvrzení"
-path = "@/dossiers/petr-macinka/claims/_index.md"
-match_prefix = "/dossiers/petr-macinka/claims/"
-group = "petr-macinka"
-order = 21
-icon = "M9 12h6 M9 16h6 M9 8h1 M7 21h10a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2Z"
-
-[[items]]
-id = "petr-macinka-sources"
-label = "Zdroje"
-path = "@/dossiers/petr-macinka/sources/_index.md"
-match_prefix = "/dossiers/petr-macinka/sources/"
-group = "petr-macinka"
-order = 22
 icon = "M4 19.5A2.5 2.5 0 0 1 6.5 17H20 M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"
 
-[[items]]
-id = "petr-macinka-cases"
+[[registries]]
+id = "cases"
 label = "Kauzy"
-path = "@/dossiers/petr-macinka/cases/_index.md"
-match_prefix = "/dossiers/petr-macinka/cases/"
-group = "petr-macinka"
-order = 23
-icon = "M3 7h18M3 7l2 13h14l2-13M8 7V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v3"
-
-[[items]]
-id = "petr-macinka-entities"
-label = "Entity"
-path = "@/dossiers/petr-macinka/entities/_index.md"
-match_prefix = "/dossiers/petr-macinka/entities/"
-group = "petr-macinka"
-order = 24
-icon = "M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z M4 21a8 8 0 0 1 16 0"
-
-[[items]]
-id = "petr-macinka-relations"
-label = "Vztahy"
-path = "@/dossiers/petr-macinka/relations/_index.md"
-match_prefix = "/dossiers/petr-macinka/relations/"
-group = "petr-macinka"
-order = 25
-icon = "M8 7a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z M16 23a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z M8 7v6a4 4 0 0 0 4 4h1"
-
-[[items]]
-id = "petr-macinka-evidence"
-label = "Evidence"
-path = "@/dossiers/petr-macinka/evidence/_index.md"
-match_prefix = "/dossiers/petr-macinka/evidence/"
-group = "petr-macinka"
-order = 26
-icon = "M9 17v-6h6v6M9 11V7a3 3 0 0 1 6 0v4M5 21h14a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2Z"
-
-[[items]]
-id = "petr-macinka-gaps"
-label = "Mezery"
-path = "@/dossiers/petr-macinka/gaps/_index.md"
-match_prefix = "/dossiers/petr-macinka/gaps/"
-group = "petr-macinka"
-order = 27
-icon = "M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3 M12 17h.01"
-
-# --- Filip Turek (entity dossier) -------------------------------------
-
-[[items]]
-id = "filip-turek"
-label = "Filip Turek"
-path = "@/dossiers/filip-turek/_index.md"
-match_prefix = "/dossiers/filip-turek/"
 order = 30
-icon = "M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z M14 3v5h5 M9 13h6 M9 17h6"
-
-[[items]]
-id = "filip-turek-claims"
-label = "Tvrzení"
-path = "@/dossiers/filip-turek/claims/_index.md"
-match_prefix = "/dossiers/filip-turek/claims/"
-group = "filip-turek"
-order = 31
-icon = "M9 12h6 M9 16h6 M9 8h1 M7 21h10a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2Z"
-
-[[items]]
-id = "filip-turek-sources"
-label = "Zdroje"
-path = "@/dossiers/filip-turek/sources/_index.md"
-match_prefix = "/dossiers/filip-turek/sources/"
-group = "filip-turek"
-order = 32
-icon = "M4 19.5A2.5 2.5 0 0 1 6.5 17H20 M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"
-
-[[items]]
-id = "filip-turek-cases"
-label = "Kauzy"
-path = "@/dossiers/filip-turek/cases/_index.md"
-match_prefix = "/dossiers/filip-turek/cases/"
-group = "filip-turek"
-order = 33
 icon = "M3 7h18M3 7l2 13h14l2-13M8 7V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v3"
 
-[[items]]
-id = "filip-turek-entities"
+[[registries]]
+id = "entities"
 label = "Entity"
-path = "@/dossiers/filip-turek/entities/_index.md"
-match_prefix = "/dossiers/filip-turek/entities/"
-group = "filip-turek"
-order = 34
+order = 40
 icon = "M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z M4 21a8 8 0 0 1 16 0"
 
-[[items]]
-id = "filip-turek-relations"
+[[registries]]
+id = "relations"
 label = "Vztahy"
-path = "@/dossiers/filip-turek/relations/_index.md"
-match_prefix = "/dossiers/filip-turek/relations/"
-group = "filip-turek"
-order = 35
+order = 50
 icon = "M8 7a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z M16 23a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z M8 7v6a4 4 0 0 0 4 4h1"
 
-[[items]]
-id = "filip-turek-evidence"
+[[registries]]
+id = "evidence"
 label = "Evidence"
-path = "@/dossiers/filip-turek/evidence/_index.md"
-match_prefix = "/dossiers/filip-turek/evidence/"
-group = "filip-turek"
-order = 36
+order = 60
 icon = "M9 17v-6h6v6M9 11V7a3 3 0 0 1 6 0v4M5 21h14a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2Z"
 
-[[items]]
-id = "filip-turek-gaps"
+[[registries]]
+id = "gaps"
 label = "Mezery"
-path = "@/dossiers/filip-turek/gaps/_index.md"
-match_prefix = "/dossiers/filip-turek/gaps/"
-group = "filip-turek"
-order = 37
+order = 70
 icon = "M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3 M12 17h.01"
 
-# --- Aggregate view — NOT an entity dossier, NOT indented under either
-# person, deliberately last and distinctly labeled. See the file-level
-# comment above. -----------------------------------------------------
+# --- Icons for the generated dossier level ---------------------------------
 
-[[items]]
-id = "macinka-turek-aggregate"
-label = "Společný přehled (Macinka + Turek)"
-path = "@/dossiers/macinka-turek/_index.md"
-match_prefix = "/dossiers/macinka-turek/"
-order = 50
-icon = "M17 20h5v-2a4 4 0 0 0-3-3.87M9 20H4v-2a4 4 0 0 1 3-3.87m6-1.13a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm6 0a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"
+[dossier_icons]
+entity = "M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z M14 3v5h5 M9 13h6 M9 17h6"
+aggregate = "M17 20h5v-2a4 4 0 0 0-3-3.87M9 20H4v-2a4 4 0 0 1 3-3.87m6-1.13a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm6 0a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"

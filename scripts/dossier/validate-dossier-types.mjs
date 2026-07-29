@@ -20,7 +20,7 @@
  * never a duplicate. Whichever dossier the canonical files happen to live
  * under is not itself a defect as long as nothing is duplicated.
  */
-import { readFileSync, readdirSync, statSync } from "node:fs";
+import { readFileSync, readdirSync, statSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadDossierRegistry } from "./lib/dossier-registry.mjs";
@@ -98,23 +98,29 @@ for (const slug of physicalSlugs) {
   if (!bySlug.has(slug)) err(`content/dossiers/${slug}/ exists on disk but has no matching entry in data/dossiers.toml.`);
 }
 
-// Cross-check against the primary navigation: exactly the entity dossiers
-// (and nothing else dossier-shaped) may appear as ungrouped nav items
-// whose path points at a dossier root.
-const navText = readFileSync(join(ROOT, "data/navigation.toml"), "utf8");
-const itemBlocks = [...navText.matchAll(/\[\[items\]\]\n([\s\S]*?)(?=\n\[\[|\n*$)/g)].map((m) => m[1]);
-function field(block, key) {
-  const m = block.match(new RegExp(`^${key}\\s*=\\s*"([^"]*)"`, "m"));
-  return m ? m[1] : null;
-}
+// Every dossier needs its own Open Graph card: templates/base.html points
+// every page inside a dossier at static/images/og/<slug>.jpg, so a missing
+// file means a broken LinkedIn/Facebook/Slack preview — invisible in a
+// passing build. Regenerate with scripts/og/build-og-images.mjs.
 for (const record of registry) {
-  const matchingItem = itemBlocks.find((b) => field(b, "path") === `@/dossiers/${record.slug}/_index.md`);
-  if (record.dossierType === "entity") {
-    if (!matchingItem) { err(`data/navigation.toml has no item linking to entity dossier "${record.slug}".`); continue; }
-    if (field(matchingItem, "group")) err(`data/navigation.toml: entity dossier "${record.slug}"'s own nav item must NOT have a "group" (it is a top-level tree root, not someone else's child).`);
+  const card = join(ROOT, "static/images/og", `${record.slug}.jpg`);
+  if (!existsSync(card)) {
+    err(`Dossier "${record.slug}" has no preview card at static/images/og/${record.slug}.jpg — run \`node scripts/og/build-og-images.mjs\` (see its header for the one-time playwright setup).`);
   }
-  if (record.dossierType === "aggregate" && matchingItem && field(matchingItem, "group")) {
-    err(`data/navigation.toml: aggregate dossier "${record.slug}" must not be grouped under an entity dossier either.`);
+}
+if (!existsSync(join(ROOT, "static/images/og/site.jpg"))) {
+  err("Missing the site-wide preview card static/images/og/site.jpg (config.toml extra.og_image points at it).");
+}
+
+// Navigation is no longer hand-written per dossier: the sidebar tree is
+// generated from this very registry by scripts/dossier/build-navigation.mjs
+// and checked by validate-navigation.mjs (a dossier must appear as a subtree
+// under "Dossiery", never as a top-level item). The only thing worth checking
+// from here is that the hand-edited skeleton has not sprouted a dossier again.
+const navText = readFileSync(join(ROOT, "data/navigation.toml"), "utf8").replace(/^\s*#.*$/gm, "");
+for (const record of registry) {
+  if (navText.includes(`/dossiers/${record.slug}/`)) {
+    err(`data/navigation.toml references dossier "${record.slug}" — the skeleton must stay dossier-free; the tree is generated (see build-navigation.mjs).`);
   }
 }
 
