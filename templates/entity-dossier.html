@@ -128,5 +128,12 @@
   {% endif %}
 
   {{ ui::back_link_footer(url=get_url(path="@/dossiers/_index.md"), label="Zpět na registr dossierů") }}
+
+  {#- Same corrections notice as the aggregate dossier page. Wording differs on
+      one point only: an entity dossier has no sources table of its own, it links
+      to its (filtered) sources registry. -#}
+  <footer class="mt-12 border-t border-white/10 pt-6 text-xs text-white/40">
+    <p>Tvrzení na této stránce vycházejí výhradně z citovaných veřejných zdrojů (viz <a href="{{ get_url(path='@/dossiers/' ~ dossier_slug ~ '/sources/_index.md') | safe }}" class="underline">registr zdrojů</a>). Opravy: <a href="https://github.com/korczis/vomaste.cz/issues/new" class="underline">GitHub issue</a> (veřejný kanál).</p>
+  </footer>
 </main>
 {% endblock content %}
