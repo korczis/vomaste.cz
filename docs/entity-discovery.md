@@ -73,12 +73,31 @@ informed by real data rather than made from memory.
 
 ## Promoting a context entity to a subject
 
-When the site owner decides to authorize a new dossier (whether for a
-brand-new subject or extending an existing one), the process is exactly
-what `AGENTS.md` already describes: a new, dated subsection appended to
-its authorization log, stating who, which topics, and the sourcing
-boundary. Only after that record exists does an entity's
-`dossier_status`/`dossier_enabled`/`publication_role` change, and only
-then does a new dossier's content get authored. No script performs this
-step. No prompt, however detailed, performs this step. It is the one part
-of this pipeline that stays entirely human.
+The only way an entity's `dossier_status` becomes `"authorized"` is
+`scripts/dossier/authorize-entity.mjs`, run by the site owner, locally, at
+a real keyboard:
+
+```
+node scripts/dossier/authorize-entity.mjs <entity-id>
+```
+
+It refuses to run at all unless attached to an interactive TTY — no CI job,
+build step, or agent tool call can invoke it non-interactively, because
+there is no flag that skips the prompts. It requires the operator to type,
+in three separate steps: the exact entity id (confirming which entity),
+the authorized scope in their own words (appended verbatim to `AGENTS.md`
+— there is no default text and nothing is auto-generated), and the literal
+word `AUTHORIZE` as a final confirmation. Only after all three does it
+append the new dated entry to `AGENTS.md`'s log, add a matching record to
+`data/authorizations.toml`, and flip the entity's own
+`publication_role`/`dossier_status`/`dossier_enabled` fields.
+
+It deliberately does not write dossier content. Authoring what a new
+dossier actually says — the claims, the sources, the narrative — stays a
+separate, later, still fully human and still fully sourced editorial act.
+This tool only ever unlocks eligibility; `validate-authorization.mjs`
+still fails the build if a dossier's subject wasn't authorized this way.
+
+No script performs this authorization step non-interactively. No prompt,
+however detailed, performs this step. It is the one part of this pipeline
+that stays entirely, mechanically, human.

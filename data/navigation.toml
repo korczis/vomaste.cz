@@ -88,6 +88,14 @@ order = 33
 icon = "M8 7a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z M16 23a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z M8 7v6a4 4 0 0 0 4 4h1"
 
 [[items]]
+id = "evidence"
+label = "Evidence"
+path = "@/dossiers/macinka-turek/evidence/_index.md"
+match_prefix = "/dossiers/macinka-turek/evidence/"
+order = 39
+icon = "M9 17v-6h6v6M9 11V7a3 3 0 0 1 6 0v4M5 21h14a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2Z"
+
+[[items]]
 id = "mezery"
 label = "Mezery"
 path = "@/dossiers/macinka-turek/gaps/_index.md"

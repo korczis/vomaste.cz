@@ -16,6 +16,7 @@
     "build:global-graph": "node scripts/dossier/build-global-graph.mjs",
     "generate:candidates": "node scripts/dossier/generate-authorization-candidates.mjs",
     "verify:anchors": "node scripts/dossier/verify-anchors.mjs",
+    "authorize:entity": "node scripts/dossier/authorize-entity.mjs",
     "build": "npm run validate:dossier && npm run validate:graph && npm run validate:authorization && npm run build:routes && npm run generate:stats && npm run build:global-graph && npm run build:search-index && npm run generate:candidates && npm run css:build && npm run js:build && zola build && npm run verify:anchors",
     "dev": "npm run validate:graph && npm run validate:authorization && npm run build:routes && npm run generate:stats && npm run build:global-graph && npm run build:search-index && npm run generate:candidates && npm run css:build && npm run js:build && zola serve"
   },
