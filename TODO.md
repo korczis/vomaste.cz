@@ -126,3 +126,30 @@
         agent/command ekosystém z prismatic-platform — pro repo této
         velikosti a účelu by to byl over-engineering v rozporu s
         vlastní konstitucí projektu (§10, žádný doktrine/agent sprawl)
+
+- [x] Bootstrap tooling, kolo 2 — rozšíření o mechanické vynucení a další
+      2 skilly (2026-07-30, ORCH direct na masteru, infra-only)
+  - [x] `scripts/dossier/verify-authorization-log-append-only.mjs` —
+        nová validace: append-only autorizační log v `AGENTS.md` byl
+        dosud jen prozní pravidlo ("never edit or remove an existing
+        entry"), teď mechanicky vynucené. Identifikuje existující
+        datované sekce podle nadpisu (ne podle zanoření pod "##
+        Content about real parties" — novější záznamy jsou připojené
+        až za konstitucí/koop sekcemi, takže pozice v souboru není
+        spolehlivá), a shodí build, pokud se libovolná stará sekce
+        smaže nebo změní byť o bajt; nové sekce na konci jsou v pořádku.
+        Otestováno sandboxem mimo repo (fixture repo v scratchpadu):
+        no-op → OK, append-only přidání → OK, úprava existující sekce →
+        FAIL, smazání existující sekce → FAIL. Zapojeno do
+        `npm run build`, `.githooks/pre-commit` i CI
+        (`.github/workflows/deploy.yml`).
+  - [x] `.claude/skills/adr/` — postup pro sepsání ADR pod `docs/adr/`
+        podle existujícího vzoru (`docs/adr/graph-renderer.md`):
+        měřit, ne odhadovat, číselný revisit threshold, poctivé
+        "co bylo skutečně rozbité a opraveno" místo příklonu k větší
+        stack proposal jen proto, že byla navržena.
+  - [x] `.claude/skills/commit/` — formát commit zprávy podle
+        pozorované historie repa, které gate skutečně platí kdy
+        (pre-commit rychlá podmnožina vs. `npm run build` před
+        review-requestem/mergem/pushem), coop bus hlášení podle role.
+  - [x] `npm run build` zelený po zapojení nového validátoru.

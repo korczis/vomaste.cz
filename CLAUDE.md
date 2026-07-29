@@ -3,7 +3,11 @@
 This is Claude Code's entry point for this repository. The full rules —
 the dossier data model, editorial rules, and the append-only authorization
 log for content about real people — live in `AGENTS.md`. Read it in full
-before touching `content/`, `templates/`, or `scripts/dossier/`.
+before touching `content/`, `templates/`, or `scripts/dossier/`. The
+append-only-ness of that log is now also mechanically checked
+(`npm run verify:authorization-log`, part of the pre-commit hook and
+`npm run build`) — but the check only catches an edited/removed prior
+entry; it does not replace reading and applying the rule.
 
 @AGENTS.md
 
@@ -16,7 +20,11 @@ before touching `content/`, `templates/`, or `scripts/dossier/`.
   adding a specific CLM/SRC/CASE/GAP/relation once you're oriented, use
   the `dossier-entry` skill (`.claude/skills/dossier-entry/`) — it
   encodes the authorization-scope gate and the regeneration/validation
-  steps below as a single guided flow.
+  steps below as a single guided flow. For a significant/debatable
+  technical decision (new dependency, renderer swap, etc.), use the `adr`
+  skill (`.claude/skills/adr/`) — measured-scale, not speculative. For
+  the commit itself, `commit` (`.claude/skills/commit/`) — message
+  format, which gate actually applies, and the right coop-bus report.
 - `git commit` runs `.githooks/pre-commit` (installed automatically by
   `npm ci`/`npm install` via `scripts/setup/install-git-hooks.mjs`, or
   manually: `npm run hooks:install`) — a fast, pure-data validator subset.

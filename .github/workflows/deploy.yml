@@ -39,6 +39,9 @@ jobs:
       - name: Validate authorization scope
         run: npm run validate:authorization
 
+      - name: Verify authorization log is append-only
+        run: npm run verify:authorization-log
+
       - name: Validate entity/aggregate dossier types
         run: npm run validate:dossier-types
 

@@ -26,6 +26,7 @@ FAST_CHECKS=(
   validate:dossier
   validate:graph
   validate:authorization
+  verify:authorization-log
   validate:dossier-types
   build:routes
   validate:navigation

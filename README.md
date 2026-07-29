@@ -164,7 +164,7 @@ fallback.
 ├── scripts/coop/           # koordinace více instancí (bus, worktrees)
 ├── scripts/setup/          # instalace git hooks (postinstall)
 ├── .githooks/              # pre-commit: rychlá podmnožina validátorů
-├── .claude/skills/         # bootstrap, dossier-entry — vedení pro Claude Code
+├── .claude/skills/         # bootstrap, dossier-entry, adr, commit — vedení pro Claude Code
 ├── docs/                   # konstituce, audity, migrace, koop protokol, ADR
 ├── reports/                # generované interní reporty (nepublikují se)
 └── .github/workflows/      # deploy.yml — validace + build + GitHub Pages
@@ -191,7 +191,10 @@ build` před review-requestem/mergem/pushem. Claude Code session v tomto
 repu: nejdřív spusť skill `bootstrap` (`.claude/skills/bootstrap/`) —
 zorientuje tě v pravidlech, co-op stavu a tvé roli, než cokoli editneš;
 pro přidávání konkrétních CLM/SRC/CASE/GAP záznamů viz skill
-`dossier-entry`.
+`dossier-entry`, pro sepsání architektonického rozhodnutí (nový
+dependency, výměna renderu apod.) skill `adr`, pro dobře formovaný
+commit (formát zprávy, co skutečně brána vynucuje, co nahlásit na
+co-op sběrnici) skill `commit`.
 
 Plná kvalitní brána (stejná jako CI):
 
@@ -213,6 +216,7 @@ required fields, and contains no truth-rating markup.`
 | `npm run validate:dossier` | integrita registru tvrzení/zdrojů: kotvy, reference, duplicitní ID, parita tabulka ↔ stránky, stavová pravidla |
 | `npm run validate:graph` | referenční integrita grafu, povolené typy vztahů, parita s entitami/vztahy, nezávislost zdrojů hran |
 | `npm run validate:authorization` | každý obsah o reálné osobě odpovídá autorizačnímu záznamu |
+| `npm run verify:authorization-log` | append-only autorizační log v `AGENTS.md`: žádná existující sekce nesmí být upravena ani smazána, jen přidána nová |
 | `npm run validate:dossier-types` | invarianty entity/aggregate dossierů |
 | `npm run validate:navigation` | navigace odpovídá registru a existujícím routám |
 | `npm run verify:anchors` | po buildu: každá kotva ze zdrojů existuje v HTML |
