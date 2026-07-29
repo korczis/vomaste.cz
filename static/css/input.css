@@ -72,15 +72,16 @@
    templates/dossier-source.html and templates/dossier-sources-index.html.
    Kept in one place instead of duplicated inline <style> blocks. */
 @layer components {
-  /* Landing page hero (templates/index.html). CSS-generated dot grid + gold
-     glows instead of a fetched photo — zero extra requests, matches the
-     dossier's dark/gold palette, and needs no licensing. */
+  /* Landing page hero (templates/index.html). Vlastní ilustrace projektu
+     (public domain, static/images/hero-investigator.jpg — investigátor nad
+     mapami a grafem vazeb, žádný text v obraze); čitelnost textu zajišťuje
+     overlay přímo v šabloně (Flowbite hero-with-background pattern). */
   .hero-bg {
-    background-image:
-      radial-gradient(circle at 18% 22%, rgba(212, 175, 55, 0.22), transparent 42%),
-      radial-gradient(circle at 84% 78%, rgba(243, 229, 192, 0.12), transparent 46%),
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34' height='34' viewBox='0 0 34 34'%3E%3Ccircle cx='1.4' cy='1.4' r='1.4' fill='%23ffffff' fill-opacity='0.07'/%3E%3C/svg%3E");
-    background-repeat: no-repeat, no-repeat, repeat;
+    background-image: url("/images/hero-investigator.jpg");
+    background-size: cover;
+    background-position: center 30%;
+    background-repeat: no-repeat;
+    background-color: #0a0a0a;
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -148,6 +149,18 @@
   .status-contextual { background: var(--status-contextual-bg); color: var(--status-contextual-fg); border: 1px solid var(--status-contextual-border); }
   .status-contextual::before { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); border-radius: 1px; width: 0.5em; height: 0.3em; }
   .legend { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; margin-bottom: 2rem; font-size: 0.75rem; color: var(--text-faint); }
+
+  /* "Fork me on GitHub" corner (github-corners pattern) — mávnutí paže
+     na hover, vypnuto při prefers-reduced-motion. */
+  .github-corner:hover .octo-arm { animation: octocat-wave 560ms ease-in-out; }
+  @keyframes octocat-wave {
+    0%, 100% { transform: rotate(0); }
+    20%, 60% { transform: rotate(-25deg); }
+    40%, 80% { transform: rotate(10deg); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .github-corner:hover .octo-arm { animation: none; }
+  }
 
   .timeline { position: relative; margin: 0; padding-left: 1.5rem; border-left: 1px solid rgba(255,255,255,0.1); }
   .timeline li { position: relative; margin-bottom: 1.25rem; }
