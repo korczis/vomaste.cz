@@ -45,6 +45,17 @@
     outline: 2px solid var(--focus-ring);
     outline-offset: 2px;
   }
+
+  /* Without JS, the interactive canvas + its search/filter/legend chrome
+     would just be inert boxes — the claims table (color+text+glyph status)
+     and the always-rendered text-list graph alternative already carry the
+     same information without JS, so we hide the dead controls rather than
+     show a broken-looking canvas. See templates/base.html's no-js/js flip. */
+  .no-js #relationship-graph,
+  .no-js #chart-status-box,
+  .no-js .fs-btn {
+    display: none;
+  }
 }
 
 /* Shared dossier styles — used by templates/dossier.html,
@@ -231,6 +242,11 @@
   .edge-status-dot.edge-fact { background: #4ade80; }
   .edge-status-dot.edge-disputed { background: #facc15; }
   .edge-status-dot.edge-quote { background: #93c5fd; }
+
+  /* Scroll-spy active state on the dossier's sticky quick-nav
+     (assets/js/modules/section-nav.js). Same visual language as the main
+     sidebar's aria-current state. */
+  .quick-nav-active { background: rgba(255,255,255,0.05); color: var(--accent) !important; }
 
   /* Desktop collapsible sidebar (templates/base.html). Width and content
      offset are toggled via the html[data-sidebar] attribute rather than a

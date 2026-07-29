@@ -16,6 +16,7 @@ var STATUS_GROUPS = [
   { key: "disputed", label: "Sporné" },
   { key: "quote", label: "Citace" },
 ];
+var STATUS_LABEL_CS = { fact: "fakt", disputed: "sporné", quote: "citace" };
 
 function readGraphData() {
   var el = document.getElementById("dossier-graph-data");
@@ -84,9 +85,11 @@ export function initRelationshipGraph() {
       { selector: ".role", style: { "background-color": "#d8b4fe", "shape": "diamond" } },
       { selector: ".case", style: { "background-color": "#facc15", "shape": "round-rectangle" } },
       { selector: "edge", style: { "width": 1.5, "curve-style": "bezier", "target-arrow-shape": "triangle", "arrow-scale": 0.7 } },
-      { selector: "edge.fact", style: { "line-color": COLOR.fact, "target-arrow-color": COLOR.fact } },
-      { selector: "edge.disputed", style: { "line-color": COLOR.disputed, "target-arrow-color": COLOR.disputed } },
-      { selector: "edge.quote", style: { "line-color": COLOR.quote, "target-arrow-color": COLOR.quote } },
+      // Status is never color-only on the canvas either — line style
+      // differs per status, same as the status-badge glyphs elsewhere.
+      { selector: "edge.fact", style: { "line-color": COLOR.fact, "target-arrow-color": COLOR.fact, "line-style": "solid" } },
+      { selector: "edge.disputed", style: { "line-color": COLOR.disputed, "target-arrow-color": COLOR.disputed, "line-style": "dashed" } },
+      { selector: "edge.quote", style: { "line-color": COLOR.quote, "target-arrow-color": COLOR.quote, "line-style": "dotted" } },
       { selector: "edge:active, edge.hovered, edge.selected", style: { "width": 3, "opacity": 1 } },
       { selector: "node.hovered-node, node.selected", style: { "border-color": "#f3e5c0", "border-width": 3 } },
       { selector: "node.search-match", style: { "border-color": "#4ade80", "border-width": 3 } },
@@ -127,7 +130,8 @@ export function initRelationshipGraph() {
     var connected = node.connectedEdges().map(function (e) {
       var dir = e.source().id() === node.id() ? "→" : "←";
       var other = e.source().id() === node.id() ? e.target() : e.source();
-      return "<li>" + dir + " <strong>" + other.data("label") + "</strong> — " + e.data("label") + " (" + e.data("status") + ")</li>";
+      var statusLabel = STATUS_LABEL_CS[e.data("status")] || e.data("status");
+      return "<li>" + dir + " <strong>" + other.data("label") + "</strong> — " + e.data("label") + " (" + statusLabel + ")</li>";
     });
     detail.innerHTML =
       "<p class=\"font-semibold text-white\">" + node.data("label") + "</p>" +
@@ -139,7 +143,7 @@ export function initRelationshipGraph() {
     detail.innerHTML =
       "<p class=\"text-white/70\"><strong class=\"text-white\">" + edge.source().data("label") + "</strong> → " +
       edge.data("label") + " → <strong class=\"text-white\">" + edge.target().data("label") + "</strong></p>" +
-      "<p class=\"mt-1 text-xs text-white/40\">Stav: " + edge.data("status") + "</p>";
+      "<p class=\"mt-1 text-xs text-white/40\">Stav: " + (STATUS_LABEL_CS[edge.data("status")] || edge.data("status")) + "</p>";
     detail.classList.remove("hidden");
   }
   function clearDetail() {

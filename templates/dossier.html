@@ -47,6 +47,7 @@
         just an aria-label — filled in by assets/js/modules/charts.js from
         the same DOM-derived counts as the chart itself. -#}
     <ul id="chart-status-summary" class="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-xs text-white/60"></ul>
+    <noscript><p class="text-xs text-white/50">Graf vyžaduje JavaScript. Stav ověřenosti každého tvrzení je vidět přímo u něj v registru tvrzení níže.</p></noscript>
   </section>
 
   {% set graph = load_data(path="data/relationship-graph.toml") %}
@@ -55,7 +56,11 @@
     <p class="mb-3 text-xs text-white/50">Textová alternativa k interaktivnímu grafu vztahů níže na stránce (sekce „Graf vztahů") — stejná data, bez závislosti na JavaScriptu.</p>
     <ul class="space-y-1.5 text-sm text-white/70">
       {% for e in graph.edges %}
-      <li><span class="edge-status-dot edge-{{ e.status }}"></span>{{ ui::node_label(nodes=graph.nodes, id=e.source) }} <span aria-hidden="true" class="text-white/30">&rarr;</span> <span class="text-white/50">{{ e.label }}</span> <span aria-hidden="true" class="text-white/30">&rarr;</span> {{ ui::node_label(nodes=graph.nodes, id=e.target) }}</li>
+      {%- if e.status == "fact" %}{% set_global status_label = "fakt" %}
+      {%- elif e.status == "disputed" %}{% set_global status_label = "sporné" %}
+      {%- elif e.status == "quote" %}{% set_global status_label = "citace" %}
+      {%- else %}{% set_global status_label = e.status %}{% endif -%}
+      <li><span class="edge-status-dot edge-{{ e.status }}"></span>{{ ui::node_label(nodes=graph.nodes, id=e.source) }} <span aria-hidden="true" class="text-white/30">&rarr;</span> <span class="text-white/50">{{ e.label }}</span> <span aria-hidden="true" class="text-white/30">&rarr;</span> {{ ui::node_label(nodes=graph.nodes, id=e.target) }} <span class="text-white/30">({{ status_label }})</span></li>
       {% endfor %}
     </ul>
   </section>

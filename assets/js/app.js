@@ -8,6 +8,7 @@
 import "flowbite";
 
 import { initSidebarToggle } from "./modules/sidebar.js";
+import { initSectionNav } from "./modules/section-nav.js";
 import { initClaimsFilter } from "./modules/claims-filter.js";
 import { initSourcesFilter } from "./modules/sources-filter.js";
 import { initStatusChart } from "./modules/charts.js";
@@ -16,6 +17,7 @@ import { initFullscreenButtons } from "./modules/fullscreen.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   initSidebarToggle();
+  initSectionNav();
   initClaimsFilter();
   initSourcesFilter();
   initStatusChart();

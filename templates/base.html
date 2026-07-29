@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html lang="{{ page.extra.lang | default(value=config.extra.lang | default(value="en")) }}" class="scroll-smooth" data-sidebar="expanded">
+<html lang="{{ page.extra.lang | default(value=config.extra.lang | default(value="en")) }}" class="scroll-smooth no-js" data-sidebar="expanded">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#000000">
   <meta name="robots" content="{% if config.extra.index %}index, follow{% else %}noindex, nofollow{% endif %}">
+  {#- Classic no-js/js flip: starts "no-js", flips before first paint so
+      CSS (see .no-js rules in input.css) can hide controls that are
+      genuinely inert without JavaScript — e.g. the graph's search/filter
+      toolbar — instead of showing dead buttons that do nothing. Anything
+      that works without JS (the claims table, the text-list graph
+      alternative) is never gated behind this. -#}
+  <script>document.documentElement.classList.replace("no-js","js")</script>
 
   {%- set page_title = page.title | default(value=section.title | default(value=config.title)) -%}
   {%- set page_description = page.description | default(value=section.description | default(value=config.description)) -%}
