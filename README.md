@@ -187,14 +187,19 @@ npm run dev     # validace + generátory + zola serve na http://127.0.0.1:1111
 instalaci) — od té chvíle `git commit` sám spustí rychlou podmnožinu
 validátorů (`.githooks/pre-commit`); ruční přeinstalace: `npm run
 hooks:install`. Je to jen rychlá předběžná brána, ne náhrada za `npm run
-build` před review-requestem/mergem/pushem. Claude Code session v tomto
-repu: nejdřív spusť skill `bootstrap` (`.claude/skills/bootstrap/`) —
-zorientuje tě v pravidlech, co-op stavu a tvé roli, než cokoli editneš;
-pro přidávání konkrétních CLM/SRC/CASE/GAP záznamů viz skill
-`dossier-entry`, pro sepsání architektonického rozhodnutí (nový
-dependency, výměna renderu apod.) skill `adr`, pro dobře formovaný
-commit (formát zprávy, co skutečně brána vynucuje, co nahlásit na
-co-op sběrnici) skill `commit`.
+build` před review-requestem/mergem/pushem.
+
+**Přispíváš přes Claude Code (nebo jiného AI agenta)?** Podrobný postup
+je v [`CONTRIBUTING.md`, sekce „Přispívání s Claude Code“](CONTRIBUTING.md#přispívání-s-claude-code-nebo-jiným-ai-agentem).
+Zkráceně — 4 skilly v `.claude/skills/`, spouštěj v tomto pořadí podle
+toho, co děláš:
+
+| Skill | Kdy ho spustit |
+|---|---|
+| `bootstrap` | vždy jako první krok nové session — pravidla, co-op stav, prerekvizity, volba role |
+| `dossier-entry` | přidáváš CLM/SRC/CASE/GAP/relation — vynucuje autorizační scope-gate jako krok 0 |
+| `adr` | řešíš netriviální technické rozhodnutí (nová závislost, výměna komponenty) — měřený stav, ne odhad |
+| `commit` | commit samotný — formát zprávy, který gate skutečně platí, co nahlásit na co-op sběrnici |
 
 Plná kvalitní brána (stejná jako CI):
 

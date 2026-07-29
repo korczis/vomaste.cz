@@ -73,3 +73,15 @@ entry; it does not replace reading and applying the rule.
   edits `docs/coop/TASKS.md`, merges, and pushes. Workers live in
   `~/dev/vomaste-worktrees/T-###` on `task/T-###` branches, one task per
   instance, and merge-request only with a clean `npm run build`.
+- **Why 4 skills and not a large agent/command ecosystem**: this repo's
+  Claude Code tooling (`.githooks/pre-commit`, `scripts/setup/`, the 4
+  skills above) is deliberately scaled to what a small, single-purpose
+  Zola static site actually needs — not a port of a large platform's
+  agent/command registry. That would be exactly the "doctrine/agent
+  sprawl" the constitution's operational-discipline invariants warn
+  against (`docs/constitution/OPEN_INTELLIGENCE_COMMONS.md`), adding
+  maintenance surface with no measured need. If a genuine new need shows
+  up, add the smallest thing that addresses it (another skill, another
+  validator) — not a framework in anticipation of needs this repo
+  doesn't have yet. Same reasoning `adr` asks you to apply to a
+  dependency, applied to this repo's own tooling.

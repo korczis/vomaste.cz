@@ -73,6 +73,39 @@ sekce „Přidání obsahu do dossieru". Generované soubory
 (`static/css/main.css`, `static/js/app.js`, `data/generated/*`,
 `data/dossiers/*/stats.toml`) needitujte ručně.
 
+`npm ci`/`npm install` navíc samo nastaví git pre-commit hook (rychlá
+podmnožina validátorů, viz `.githooks/pre-commit`) — žádný ruční krok
+navíc; přeinstalace: `npm run hooks:install`.
+
+## Přispívání s Claude Code (nebo jiným AI agentem)
+
+Repozitář je připravený na to, aby se v něm agent zorientoval bez
+prodlevy a bez nutnosti znovu objevovat pravidla z první konverzace:
+
+1. `git clone` + `npm ci` jako výše — hook se nastaví sám.
+2. V nové Claude Code session spusť skill **`bootstrap`**
+   (`.claude/skills/bootstrap/`) jako úplně první krok. Projde s tebou
+   pořadí čtení pravidel (`AGENTS.md` → konstituce → koop protokol →
+   `CLAUDE.md`), zkontroluje prerekvizity a coop stav a pomůže zvolit
+   roli, než se čehokoli dotkneš.
+3. Pro konkrétní typ práce pak:
+   - přidání zdroje/tvrzení/kauzy/mezery/vztahu → skill **`dossier-entry`**
+     (vynucuje autorizační scope-gate jako krok 0 — bez záznamu v
+     `AGENTS.md` se obsah o reálné osobě nepřidává, agent se má
+     zeptat, ne hádat);
+   - netriviální technické rozhodnutí (nová závislost, výměna
+     komponenty) → skill **`adr`** (měřený současný stav, ne odhad —
+     viz `docs/adr/graph-renderer.md` jako referenční příklad);
+   - samotný commit → skill **`commit`** (formát zprávy, který gate
+     kdy skutečně platí, co nahlásit na coop sběrnici).
+4. Pokud repo právě žije (více souběžných instancí) — `docs/coop/PROTOCOL.md`
+   je závazný operační rámec navrch, ne náhrada za `AGENTS.md`.
+
+Žádný z těchto skillů nerozšiřuje ani nemění redakční pravidla nebo
+autorizační rozsah — jen zrychluje orientaci v tom, co už tento
+dokument a `AGENTS.md` říkají. Fork si je bere zdarma spolu s repem;
+nejsou vázané na konkrétní instanci ani branding.
+
 ## Přezkum
 
 Každý PR prochází lidským přezkumem (data / důkazy / redakce; u obsahu
