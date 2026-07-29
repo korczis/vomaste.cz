@@ -15,7 +15,10 @@
 {% set dossiers_root = get_section(path="dossiers/_index.md") %}
 <main>
   <section class="hero-bg relative flex min-h-[90svh] w-full items-center justify-center overflow-hidden bg-black" aria-labelledby="hero-heading">
-    <div class="absolute inset-0 bg-gradient-to-b from-black/75 via-black/45 to-black" aria-hidden="true"></div>
+    {#- Pozadí je jen atmosféra: dvojitý overlay ho stáhne do tušené
+        textury, aby typografie zůstala jednoznačně dominantní. -#}
+    <div class="absolute inset-0 bg-black/60" aria-hidden="true"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black" aria-hidden="true"></div>
 
     {#- "Fork me on GitHub" corner (github-corners pattern) — pod fixním
         navbarem (top-16), jen na hero homepage, ať neruší čtení dossierů. -#}
@@ -28,16 +31,20 @@
     </a>
 
     <div class="relative z-10 mx-auto flex w-full max-w-2xl flex-col items-center gap-6 px-6 py-28 text-center [text-shadow:0_4px_24px_rgb(0_0_0_/_85%)]">
-      <p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#f3e5c0]/80">Open Intelligence Commons &middot; open source &middot; zdrojované</p>
-      <h1 id="hero-heading" class="font-sans text-4xl font-extrabold leading-none tracking-tight text-white sm:text-6xl">vomaste.cz</h1>
-      <p class="max-w-prose text-balance text-lg font-normal text-white/80 sm:text-xl">
-        Otevřený, Git-native systém pro tvorbu a publikaci dohledatelných dossierů
-        ve veřejném zájmu. Tvrzení, zdroje, kauzy a vztahy jsou strukturovaná,
-        verzovaná data — každé podstatné tvrzení zůstává propojené se svým zdrojem,
-        stavem ověření a historií změn.
+      <p class="text-sm font-bold uppercase tracking-[0.3em] text-[#f3e5c0]">Open Intelligence Commons &middot; open source &middot; zdrojované</p>
+      <h1 id="hero-heading" class="font-sans text-6xl font-extrabold leading-none tracking-tight text-white sm:text-7xl lg:text-8xl">vomaste.cz</h1>
+      <p class="max-w-2xl text-balance text-xl font-medium leading-relaxed text-white sm:text-2xl">
+        Otevřený, Git-native systém pro tvorbu a publikaci dohledatelných
+        dossierů ve veřejném zájmu.
       </p>
-      <p class="max-w-prose text-balance text-sm italic text-[#f3e5c0]/70">
-        Nevěřte autorovi. Prohlédněte si zdroj, tvrzení, historii — a zpochybněte výsledek.
+      <p class="max-w-2xl text-balance text-base font-normal leading-relaxed text-white/85 sm:text-lg">
+        Tvrzení, zdroje, kauzy a vztahy jsou strukturovaná, verzovaná data —
+        každé podstatné tvrzení zůstává propojené se svým zdrojem, stavem
+        ověření a historií změn.
+      </p>
+      <p class="text-balance text-lg font-black uppercase leading-snug tracking-wide sm:text-xl">
+        <span class="text-white">Nevěřte autorovi.</span>
+        <span class="text-[#f3e5c0]">Zkontrolujte data, zdroje a historii změn.</span>
       </p>
 
       <div class="mt-2 flex flex-col items-center gap-3 sm:flex-row">
