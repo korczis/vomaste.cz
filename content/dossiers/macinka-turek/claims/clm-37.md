@@ -1,6 +1,6 @@
 +++
 title = "CLM-37"
-description = "Turek a Macinka Chladovu roli veřejně zlehčovali; Macinka uváděl vlastní nižší částky (2× 50 000 Kč před eurovolbami) než sám Chlad"
+description = "Turek i Macinka veřejně odmítali, že by Chlad hrál v okolí strany významnější roli; Macinka uváděl vlastní nižší částky (2× 50 000 Kč před eurovolbami) než sám Chlad"
 template = "dossier-claim.html"
 weight = 37
 aliases = ["/dossier/tvrzeni/clm-37/"]
@@ -10,9 +10,9 @@ dossier = "macinka-turek"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-37"
-status = "status-quote"
-status_label = "CITACE"
-summary = "Turek a Macinka Chladovu roli veřejně zlehčovali; Macinka uváděl vlastní nižší částky (2× 50 000 Kč před eurovolbami) než sám Chlad"
+status = "status-single"
+status_label = "1 ZDROJ"
+summary = "Turek i Macinka veřejně odmítali, že by Chlad hrál v okolí strany významnější roli; Macinka uváděl vlastní nižší částky (2× 50 000 Kč před eurovolbami) než sám Chlad"
 sources = ["SRC-43"]
 subjects = ["macinka", "turek"]
 +++

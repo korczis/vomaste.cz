@@ -19,7 +19,7 @@ discovered_via = ["edge-trestniozn-statnizastupitelstvi"]
 dossiers = ["macinka-turek", "filip-turek"]
 cluster = "trestni-oznameni"
 claims = ["CLM-27"]
-sources = ["SRC-31"]
+sources = ["SRC-31", "SRC-54"]
 +++
 
 Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext.

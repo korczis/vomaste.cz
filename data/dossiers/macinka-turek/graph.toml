@@ -177,9 +177,9 @@ id = "policie"
 type = "public_institution"
 label = "Policie ČR"
 depth = 2
-summary = "Vyšetřuje dopravní nehodu (2026) a prověřovala Turkovy výroky na sociálních sítích i trestní oznámení Motoristů na Deník N — obě věci 28. 7. 2026 odložila pro promlčení, resp. absenci trestného činu."
-claims = ["CLM-41"]
-sources = ["SRC-47", "SRC-48"]
+summary = "Vyšetřuje dopravní nehodu (červenec 2026), v květnu 2026 odložila pro promlčení trestní oznámení bývalé partnerky (nepravomocně) a prověřovala Turkovy výroky na sociálních sítích i trestní oznámení Motoristů na Deník N — obě věci 28. 7. 2026 odložila pro promlčení, resp. absenci trestného činu."
+claims = ["CLM-27", "CLM-41"]
+sources = ["SRC-31", "SRC-47", "SRC-48", "SRC-54"]
 
 [[nodes]]
 id = "statni-zastupitelstvi"
@@ -187,9 +187,9 @@ type = "public_institution"
 label = "Státní zastupitelství"
 depth = 2
 cluster = "trestni-oznameni"
-summary = "Odložilo trestní oznámení o domácím násilí a znásilnění pro promlčení; rozhodnutí není pravomocné, žena se odvolala."
+summary = "Obvodní státní zastupitelství pro Prahu 4 oznámilo policejní odložení trestního oznámení (promlčení) a rozhoduje o stížnosti, kterou žena proti odložení podala; rozhodnutí není pravomocné."
 claims = ["CLM-27"]
-sources = ["SRC-31"]
+sources = ["SRC-31", "SRC-54"]
 
 [[nodes]]
 id = "mzdrav"
@@ -490,11 +490,21 @@ sources = ["SRC-20"]
 id = "edge-trestniozn-statnizastupitelstvi"
 source = "trestniozn"
 target = "statni-zastupitelstvi"
-relation = "PROCEDURALLY_CLOSED_BY"
-label = "odloženo pro promlčení; nepravomocné, žena se odvolala"
+relation = "SUBJECT_OF_PROCEEDING"
+label = "OSZ pro Prahu 4 odložení oznámilo; o stížnosti ženy rozhoduje státní zástupkyně"
 status = "corroborated"
 claims = ["CLM-27"]
-sources = ["SRC-31"]
+sources = ["SRC-31", "SRC-54"]
+
+[[edges]]
+id = "edge-trestniozn-policie"
+source = "trestniozn"
+target = "policie"
+relation = "PROCEDURALLY_CLOSED_BY"
+label = "odloženo policií pro promlčení — procesní krok, ne rozhodnutí o vině; nepravomocné"
+status = "corroborated"
+claims = ["CLM-27"]
+sources = ["SRC-31", "SRC-54"]
 
 [[edges]]
 id = "edge-kauza2025-policie"
@@ -581,7 +591,7 @@ label = "Trestní oznámení (domácí násilí, znásilnění)"
 description = "Nejzávažnější a právně nejcitlivější položka dossieru — viz AGENTS.md pro zvláštní pravidla zacházení. Odloženo pro promlčení; nejde o rozhodnutí ve věci."
 claims = ["CLM-25", "CLM-26", "CLM-27"]
 sources = ["SRC-28", "SRC-29", "SRC-30", "SRC-31"]
-nodes = ["turek", "trestniozn", "statni-zastupitelstvi"]
+nodes = ["turek", "trestniozn", "statni-zastupitelstvi", "policie"]
 gaps = ["GAP-06"]
 
 [[clusters]]

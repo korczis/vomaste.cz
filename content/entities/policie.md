@@ -17,8 +17,8 @@ coverage_state = "contextual"
 discovered_at = "2026-07-29"
 discovered_via = ["edge-nehoda2026-policie", "edge-kauza2025-policie"]
 dossiers = ["macinka-turek", "filip-turek"]
-claims = ["CLM-41"]
-sources = ["SRC-47", "SRC-48"]
+claims = ["CLM-27", "CLM-41"]
+sources = ["SRC-31", "SRC-47", "SRC-48", "SRC-54"]
 +++
 
 Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext.

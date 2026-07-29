@@ -1,6 +1,6 @@
 +++
 title = "CLM-27"
-description = "V květnu 2026 státní zastupitelství trestní oznámení odložilo z důvodu promlčení; rozhodnutí není pravomocné, žena se odvolala. Jde o procesní důsledek uplynutí promlčecí doby, ne o rozhodnutí o vině nebo nevině"
+description = "V květnu 2026 policie trestní oznámení odložila z důvodu promlčení (oznámilo Obvodní státní zastupitelství pro Prahu 4); rozhodnutí není pravomocné, žena proti němu podala stížnost. Jde o procesní důsledek uplynutí promlčecí doby, ne o rozhodnutí o vině nebo nevině"
 template = "dossier-claim.html"
 weight = 27
 aliases = ["/dossier/tvrzeni/clm-27/"]
@@ -12,8 +12,8 @@ lang = "cs"
 clm_id = "CLM-27"
 status = "status-corroborated"
 status_label = "CORROBORATED"
-summary = "V květnu 2026 státní zastupitelství trestní oznámení odložilo z důvodu promlčení; rozhodnutí není pravomocné, žena se odvolala. Jde o procesní důsledek uplynutí promlčecí doby, ne o rozhodnutí o vině nebo nevině"
-sources = ["SRC-31"]
+summary = "V květnu 2026 policie trestní oznámení odložila z důvodu promlčení (oznámilo Obvodní státní zastupitelství pro Prahu 4); rozhodnutí není pravomocné, žena proti němu podala stížnost. Jde o procesní důsledek uplynutí promlčecí doby, ne o rozhodnutí o vině nebo nevině"
+sources = ["SRC-31", "SRC-54"]
 subjects = ["turek"]
 +++
 

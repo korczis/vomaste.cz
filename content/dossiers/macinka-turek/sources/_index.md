@@ -1,6 +1,6 @@
 +++
 title = "Registr zdrojů"
-description = "Všech 52 veřejných zdrojů citovaných v dossieru o Petru Macinkovi a Filipu Turkovi, každý s vlastní detailní stránkou."
+description = "Všech 54 veřejných zdrojů citovaných v dossieru o Petru Macinkovi a Filipu Turkovi, každý s vlastní detailní stránkou."
 template = "dossier-sources-index.html"
 sort_by = "weight"
 aliases = ["/dossier/zdroje/"]
@@ -47,3 +47,20 @@ je oficiální zdroj (Úřad vlády) nezávislý na redakci Deníku.cz
 [SRC-51](@/dossiers/macinka-turek/sources/src-51.md) (Blesk.cz) a
 [SRC-52](@/dossiers/macinka-turek/sources/src-52.md) (Deník N) jsou od dvou nezávislých
 vydavatelů — dvě nezávislá potvrzení.
+[SRC-31](@/dossiers/macinka-turek/sources/src-31.md) (ČT24) a
+[SRC-54](@/dossiers/macinka-turek/sources/src-54.md) (Echo24) jsou dvě samostatné redakce,
+každá s vlastní citací téhož státního zástupce — dvě nezávislá potvrzení
+CLM-27.
+
+**Úplný přehled vydavatelských rodin** (zdroje od téhož vydavatele se
+nikdy nepočítají jako vzájemné nezávislé potvrzení): Deník.cz / Vltava
+Labe Media — SRC-16, 21, 28, 32, 44, 46, 49; Blesk.cz / Czech News
+Center — SRC-04, 19, 29, 33, 38, 51; Hlídač státu (datová rodina) —
+SRC-23–27, 41; **Economia** — pozor, zahrnuje dvě domény: Aktuálně.cz
+(SRC-13, 36, 43, 48) i HN.cz (SRC-30, 45); Deník N — SRC-14, 15, 47,
+52; Seznam Zprávy — SRC-11, 18, 22, 39; ČT24 — SRC-05, 06, 31, 53;
+Echo24 — SRC-01, 02, 54; iROZHLAS — SRC-08, 12. U ČT24 a ČeskýchNovin
+(SRC-07, ČTK) platí zvláštní opatrnost: ČT24 část agendy přebírá ze
+servisu ČTK, takže jejich vzájemná nezávislost není u každého článku
+samozřejmá — dossier je jako dvojici nezávislých potvrzení počítá jen
+tam, kde jde prokazatelně o vlastní redakční obsah.

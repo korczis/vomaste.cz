@@ -21,8 +21,9 @@ kampaně do Poslanecké sněmovny 2025 (UDHPSH) jsou zdokumentovány (CLM-21,
 CLM-23, CLM-35), včetně velkých dárců Borise Šťastného a Františka
 Fabičovice. Zvlášť je zdokumentován rozpor u podnikatele Richarda Chlada:
 oficiálně evidovaný dar 638 864 Kč (2025) vs. jeho vlastní veřejné
-tvrzení o podpoře v hodnotě „necelých dvou milionů" Kč, který oba
-politici veřejně zlehčovali (CLM-36, CLM-37). Viz [hlavní přehled](@/dossiers/macinka-turek/_index.md#majetkove-podnikatelske-a-financni-vazby).
+tvrzení o podpoře v hodnotě „necelých dvou milionů" Kč; oba politici
+veřejně odmítali, že by Chlad hrál v okolí strany významnější roli
+(CLM-36, CLM-37). Viz [hlavní přehled](@/dossiers/macinka-turek/_index.md#majetkove-podnikatelske-a-financni-vazby).
 
 **Doplnění (dohledáno 2026-07-23)**: [SRC-42](@/dossiers/macinka-turek/sources/src-42.md) (CNN Prima News, 2025-10-16)
 potvrzuje, že Chladova částka „necelé dva miliony" je jeho vlastním

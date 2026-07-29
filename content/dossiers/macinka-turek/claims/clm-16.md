@@ -1,6 +1,6 @@
 +++
 title = "CLM-16"
-description = "Policie potvrdila, že dopravní značení na místě nehody odpovídalo projektové dokumentaci — v rozporu s Turkovým tvrzením o odbočovacím pruhu"
+description = "Policie potvrdila, že dopravní značení na místě nehody odpovídalo projektové dokumentaci — v rozporu s Turkovým tvrzením, že o odbočovací pruh nešlo"
 template = "dossier-claim.html"
 weight = 16
 aliases = ["/dossier/tvrzeni/clm-16/"]
@@ -10,9 +10,9 @@ dossier = "macinka-turek"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-16"
-status = "status-corroborated"
-status_label = "CORROBORATED"
-summary = "Policie potvrdila, že dopravní značení na místě nehody odpovídalo projektové dokumentaci — v rozporu s Turkovým tvrzením o odbočovacím pruhu"
+status = "status-single"
+status_label = "1 ZDROJ"
+summary = "Policie potvrdila, že dopravní značení na místě nehody odpovídalo projektové dokumentaci — v rozporu s Turkovým tvrzením, že o odbočovací pruh nešlo"
 sources = ["SRC-19"]
 subjects = ["turek"]
 +++

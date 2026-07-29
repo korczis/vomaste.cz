@@ -5,6 +5,7 @@ import { resizeHandlers } from "./fullscreen.js";
 
 var STATUS_LABELS = {
   "status-corroborated": "Ověřeno více zdroji",
+  "status-single": "Doloženo 1 zdrojem",
   "status-quote": "Citace",
   "status-disputed": "Sporné",
   "status-opinion": "Názor",
@@ -12,6 +13,7 @@ var STATUS_LABELS = {
 };
 var STATUS_COLORS = {
   "status-corroborated": "#4ade80",
+  "status-single": "#fdba74",
   "status-quote": "#93c5fd",
   "status-disputed": "#facc15",
   "status-opinion": "#a3a3a3",

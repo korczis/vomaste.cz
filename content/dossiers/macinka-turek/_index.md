@@ -43,9 +43,9 @@ anchor = "kauza-z-roku-2024-fotografie-a-sbirka-svicnu"
 period = "2024"
 title = "Fotografie a sbírka svícnů"
 status = "status-disputed"
-label = "Uzavřeno bez trestu"
+label = "Fotografie: odloženo pro promlčení"
 summary = "Fotografie připomínající nacistický pozdrav a sbírka svícnů s hákovými kříži. Turek: „špatný humor.“"
-claims = ["CLM-04", "CLM-05", "CLM-06"]
+claims = ["CLM-04", "CLM-05", "CLM-06", "CLM-45"]
 subjects = ["macinka", "turek"]
 
 [[extra.cases]]
@@ -60,7 +60,7 @@ subjects = ["turek"]
 
 [[extra.cases]]
 anchor = "kauza-z-rijna-2025-smazane-prispevky-na-facebooku"
-period = "2025"
+period = "2025–2026"
 title = "Smazané příspěvky na Facebooku"
 status = "status-disputed"
 label = "Sporné, neuzavřeno"
@@ -70,12 +70,12 @@ subjects = ["turek"]
 
 [[extra.cases]]
 anchor = "dopravni-nehoda-2026"
-period = "2026"
+period = "červenec 2026"
 title = "Dopravní nehoda"
 status = "status-ongoing"
 label = "Vyšetřování probíhá"
 claims = ["CLM-10", "CLM-11", "CLM-12", "CLM-16", "CLM-17", "CLM-18"]
-summary = "Střet s vozidlem záchranné služby v Praze. Turek dočasně opustil funkci zmocněnce."
+summary = "Střet se zdravotnickým vozem v Praze. Turek dočasně opustil funkci zmocněnce."
 subjects = ["turek"]
 
 [[extra.timeline]]
@@ -104,6 +104,13 @@ date = "červen 2024"
 title = "Zvolen europoslancem; kauza fotografie a svícnů vypuká"
 anchor = "kauza-z-roku-2024-fotografie-a-sbirka-svicnu"
 dot = "dot-disputed"
+subjects = ["turek"]
+
+[[extra.timeline]]
+date = "listopad 2024"
+title = "Policie odkládá případ fotografie (údajné hajlování) pro promlčení — procesní krok, ne rozhodnutí o vině"
+anchor = "kauza-z-roku-2024-fotografie-a-sbirka-svicnu"
+dot = "dot-fact"
 subjects = ["turek"]
 
 [[extra.timeline]]
@@ -156,17 +163,17 @@ dot = "dot-fact"
 subjects = ["macinka"]
 
 [[extra.timeline]]
-date = "2026"
-title = "Dopravní nehoda a politický tlak na rezignaci"
-anchor = "dopravni-nehoda-2026"
-dot = "dot-ongoing"
+date = "květen 2026"
+title = "Policie odkládá trestní oznámení pro promlčení — procesní krok, ne rozhodnutí o vině; žena podává stížnost"
+anchor = "trestni-oznameni-obvineni-z-domaciho-nasili-a-znasilneni"
+dot = "dot-disputed"
 subjects = ["turek"]
 
 [[extra.timeline]]
-date = "květen 2026"
-title = "Státní zastupitelství odkládá trestní oznámení pro promlčení, žena se odvolává"
-anchor = "trestni-oznameni-obvineni-z-domaciho-nasili-a-znasilneni"
-dot = "dot-disputed"
+date = "červenec 2026"
+title = "Dopravní nehoda a politický tlak na rezignaci"
+anchor = "dopravni-nehoda-2026"
+dot = "dot-ongoing"
 subjects = ["turek"]
 
 [[extra.timeline]]
@@ -178,7 +185,7 @@ subjects = ["turek"]
 
 [[extra.timeline]]
 date = "28. 7. 2026"
-title = "Policie odkládá prověřování Turkových výroků i oznámení na Deník N (promlčení / beztrestnost zveřejnění)"
+title = "Policie odkládá prověřování Turkových výroků i oznámení na Deník N (promlčení / beztrestnost zveřejnění) — procesní rozhodnutí, ne posouzení pravosti výroků"
 anchor = "kauza-z-rijna-2025-smazane-prispevky-na-facebooku"
 dot = "dot-fact"
 subjects = ["turek"]
@@ -186,6 +193,7 @@ subjects = ["turek"]
 
 <div class="legend">
   <span><span class="status-badge status-corroborated">Ověřeno více zdroji</span> potvrzeno nezávisle více médii</span>
+  <span><span class="status-badge status-single">1 zdroj</span> doloženo jedním citovaným zdrojem, bez nezávislého potvrzení druhou redakcí</span>
   <span><span class="status-badge status-quote">Citace</span> přímý výrok, ne hodnocení tohoto webu</span>
   <span><span class="status-badge status-disputed">Sporné</span> neuzavřené, nepotvrzené tvrzení</span>
   <span><span class="status-badge status-opinion">Názor</span> autorský komentář, ne zpravodajství</span>
@@ -196,7 +204,7 @@ subjects = ["turek"]
 - **Petr Macinka** — předseda hnutí Motoristé sobě, poslanec, ministr
   zahraničních věcí a místopředseda vlády; v letech 2025–2026 dočasně
   pověřen i řízením Ministerstva životního prostředí. *(CLM-24, SRC-27)*
-- **Filip Turek** — poslanec za Motoristy sobě, do vypuknutí kauzy nehody vládní zmocněnec pro Green Deal.
+- **Filip Turek** — poslanec za Motoristy sobě, do vypuknutí kauzy nehody vládní zmocněnec pro Green Deal. *(CLM-02, CLM-11)*
 
 ## Registr tvrzení
 
@@ -212,6 +220,7 @@ Každé tvrzení má stav ověřenosti a odkaz na zdroj v [registru zdrojů](#re
     <select id="clm-status-filter" x-model="status" @change="apply()" class="src-filter-select">
       <option value="">Všechny stavy</option>
       <option value="status-corroborated">CORROBORATED</option>
+      <option value="status-single">1 ZDROJ</option>
       <option value="status-quote">CITACE</option>
       <option value="status-disputed">SPORNÉ</option>
       <option value="status-opinion">NÁZOR</option>
@@ -229,44 +238,45 @@ Každé tvrzení má stav ověřenosti a odkaz na zdroj v [registru zdrojů](#re
 | <a id="clm-04"></a>[CLM-04](@/dossiers/macinka-turek/claims/clm-04.md) | V roce 2024 čelil Turek kritice kvůli fotografii se zdviženou pravicí (2013) a sbírce svícnů s hákovými kříži | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-12](@/dossiers/macinka-turek/sources/src-12.md), [SRC-14](@/dossiers/macinka-turek/sources/src-14.md) |
 | <a id="clm-05"></a>[CLM-05](@/dossiers/macinka-turek/claims/clm-05.md) | Turek fotografii/sbírku označil za „špatný humor" / sběratelský zájem | <span class="status-badge status-quote">CITACE</span> | [SRC-12](@/dossiers/macinka-turek/sources/src-12.md), [SRC-14](@/dossiers/macinka-turek/sources/src-14.md) |
 | <a id="clm-06"></a>[CLM-06](@/dossiers/macinka-turek/claims/clm-06.md) | Macinka kauzu 2024 veřejně hájil, označil ji za „pseudoproblém" | <span class="status-badge status-quote">CITACE</span> | [SRC-12](@/dossiers/macinka-turek/sources/src-12.md), [SRC-14](@/dossiers/macinka-turek/sources/src-14.md) |
-| <a id="clm-07"></a>[CLM-07](@/dossiers/macinka-turek/claims/clm-07.md) | Deník N v říjnu 2025 zveřejnil údajné smazané příspěvky připisované Turkovi s rasistickým/homofobním obsahem | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-15](@/dossiers/macinka-turek/sources/src-15.md) |
+| <a id="clm-07"></a>[CLM-07](@/dossiers/macinka-turek/claims/clm-07.md) | Deník N v říjnu 2025 zveřejnil údajné smazané příspěvky připisované Turkovi s rasistickým/homofobním obsahem | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-15](@/dossiers/macinka-turek/sources/src-15.md) |
 | <a id="clm-08"></a>[CLM-08](@/dossiers/macinka-turek/claims/clm-08.md) | Turek odmítl autorství nejzávažnějších z těchto příspěvků | <span class="status-badge status-quote">CITACE</span> | [SRC-16](@/dossiers/macinka-turek/sources/src-16.md) |
 | <a id="clm-09"></a>[CLM-09](@/dossiers/macinka-turek/claims/clm-09.md) | Pravost/autorství screenshotů z CLM-07 nebyla nezávisle prokázána ani vyvrácena | <span class="status-badge status-disputed">SPORNÉ</span> | [SRC-15](@/dossiers/macinka-turek/sources/src-15.md), [SRC-16](@/dossiers/macinka-turek/sources/src-16.md), [SRC-22](@/dossiers/macinka-turek/sources/src-22.md) |
-| <a id="clm-10"></a>[CLM-10](@/dossiers/macinka-turek/claims/clm-10.md) | Auto Turka se v Praze střetlo s vozidlem záchranné služby (2026); dle záběrů předjížděl frontu v odbočovacím pruhu | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-02](@/dossiers/macinka-turek/sources/src-02.md) |
+| <a id="clm-10"></a>[CLM-10](@/dossiers/macinka-turek/claims/clm-10.md) | Auto Turka se v červenci 2026 v Praze střetlo se zdravotnickým vozem; dle záběrů předjížděl frontu v odbočovacím pruhu | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-02](@/dossiers/macinka-turek/sources/src-02.md) |
 | <a id="clm-11"></a>[CLM-11](@/dossiers/macinka-turek/claims/clm-11.md) | Turek dočasně opustil funkci zmocněnce pro Green Deal, přislíbil rezignaci při prokázání viny | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-06](@/dossiers/macinka-turek/sources/src-06.md), [SRC-07](@/dossiers/macinka-turek/sources/src-07.md) |
 | <a id="clm-12"></a>[CLM-12](@/dossiers/macinka-turek/claims/clm-12.md) | Babiš dle zdrojů řekl Macinkovi, že pokud se záběry potvrdí, měl by Turek rezignovat | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-06](@/dossiers/macinka-turek/sources/src-06.md), [SRC-08](@/dossiers/macinka-turek/sources/src-08.md) |
 | <a id="clm-13"></a>[CLM-13](@/dossiers/macinka-turek/claims/clm-13.md) | Macinka veřejně opakovaně prohlásil, že se Turka nevzdá | <span class="status-badge status-quote">CITACE</span> | [SRC-01](@/dossiers/macinka-turek/sources/src-01.md), [SRC-04](@/dossiers/macinka-turek/sources/src-04.md) |
-| <a id="clm-14"></a>[CLM-14](@/dossiers/macinka-turek/claims/clm-14.md) | Macinka (dnes ministr zahraničí) nepřiznal v majetkovém přiznání 20% podíl v ukrajinské firmě GMR GAS UA LLC (od 2017); po upozornění Investigace.cz podíl dodatečně přiznal, hrozí mu pokuta až 50 000 Kč | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-17](@/dossiers/macinka-turek/sources/src-17.md), [SRC-18](@/dossiers/macinka-turek/sources/src-18.md) |
+| <a id="clm-14"></a>[CLM-14](@/dossiers/macinka-turek/claims/clm-14.md) | Macinka (od prosince 2025 ministr zahraničí) nepřiznal v majetkovém přiznání 20% podíl v ukrajinské firmě GMR GAS UA LLC (od 2017); po upozornění Investigace.cz podíl dodatečně přiznal, hrozí mu pokuta až 50 000 Kč | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-17](@/dossiers/macinka-turek/sources/src-17.md), [SRC-18](@/dossiers/macinka-turek/sources/src-18.md) |
 | <a id="clm-15"></a>[CLM-15](@/dossiers/macinka-turek/claims/clm-15.md) | Macinkovo vysvětlení: firma „de facto neexistuje" kvůli válce na Ukrajině, plánovaná likvidace se zpozdila | <span class="status-badge status-quote">CITACE</span> | [SRC-17](@/dossiers/macinka-turek/sources/src-17.md), [SRC-18](@/dossiers/macinka-turek/sources/src-18.md) |
-| <a id="clm-16"></a>[CLM-16](@/dossiers/macinka-turek/claims/clm-16.md) | Policie potvrdila, že dopravní značení na místě nehody odpovídalo projektové dokumentaci — v rozporu s Turkovým tvrzením o odbočovacím pruhu | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-19](@/dossiers/macinka-turek/sources/src-19.md) |
+| <a id="clm-16"></a>[CLM-16](@/dossiers/macinka-turek/claims/clm-16.md) | Policie potvrdila, že dopravní značení na místě nehody odpovídalo projektové dokumentaci — v rozporu s Turkovým tvrzením, že o odbočovací pruh nešlo | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-19](@/dossiers/macinka-turek/sources/src-19.md) |
 | <a id="clm-17"></a>[CLM-17](@/dossiers/macinka-turek/claims/clm-17.md) | Turkova verze nehody: jel na zelenou křižovatkou Ječná/Sokolská, sanitka vjela na červenou s majáky | <span class="status-badge status-quote">CITACE</span> | [SRC-20](@/dossiers/macinka-turek/sources/src-20.md) |
-| <a id="clm-18"></a>[CLM-18](@/dossiers/macinka-turek/claims/clm-18.md) | Turek se vzdal poslanecké imunity pro případ trestního stíhání; dechová zkouška negativní; řidič sanitky utrpěl středně těžké poranění hlavy a zranění lokte | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-20](@/dossiers/macinka-turek/sources/src-20.md) |
-| <a id="clm-19"></a>[CLM-19](@/dossiers/macinka-turek/claims/clm-19.md) | Motoristé sobě v říjnu 2025 podali trestní oznámení na Deník N a autory článku o Turkových příspěvcích pro pomluvu a křivé obvinění | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-21](@/dossiers/macinka-turek/sources/src-21.md) |
-| <a id="clm-20"></a>[CLM-20](@/dossiers/macinka-turek/claims/clm-20.md) | Turek je/byl 2016–2023 statutárním orgánem nebo společníkem v pěti firmách/spolcích (Art of Performance, Aston Martin klub ČR, Transgas, Jaguar klub ČR, Zapper-Club) | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-23](@/dossiers/macinka-turek/sources/src-23.md) |
-| <a id="clm-21"></a>[CLM-21](@/dossiers/macinka-turek/claims/clm-21.md) | Turek osobně daroval Motoristům sobě celkem 210 000 Kč (10 000 Kč v 2019, 200 000 Kč v 2025) | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-25](@/dossiers/macinka-turek/sources/src-25.md) |
-| <a id="clm-22"></a>[CLM-22](@/dossiers/macinka-turek/claims/clm-22.md) | Macinka je/byl statutárním orgánem nebo společníkem v sedmi firmách/spolcích (DRILL COMPANY, Kauppias, Centrum pro výzkum terorismu, Motoristé Praha, PG Contract, Klub motoristů, MEAS Consulting); u DRILL COMPANY a Motoristé Praha skončil počátkem ledna 2026 | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-24](@/dossiers/macinka-turek/sources/src-24.md) |
-| <a id="clm-23"></a>[CLM-23](@/dossiers/macinka-turek/claims/clm-23.md) | Macinka osobně daroval 510 000 Kč (ODS 2017, Motoristé sobě 2× 2022) a přes Klub motoristů z.s., kde je statutárním orgánem, přišlo Motoristům sobě v roce 2024 dalších 800 000 Kč — celkem 1 310 000 Kč | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-26](@/dossiers/macinka-turek/sources/src-26.md) |
-| <a id="clm-24"></a>[CLM-24](@/dossiers/macinka-turek/claims/clm-24.md) | Macinka byl od 2025 zároveň ministrem zahraničí, místopředsedou vlády a 2025–2026 dočasně pověřen i řízením Ministerstva životního prostředí | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-27](@/dossiers/macinka-turek/sources/src-27.md) |
+| <a id="clm-18"></a>[CLM-18](@/dossiers/macinka-turek/claims/clm-18.md) | Turek se vzdal poslanecké imunity pro případ trestního stíhání; dechová zkouška negativní; řidič sanitky utrpěl středně těžké poranění hlavy a zranění lokte | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-20](@/dossiers/macinka-turek/sources/src-20.md) |
+| <a id="clm-19"></a>[CLM-19](@/dossiers/macinka-turek/claims/clm-19.md) | Motoristé sobě v říjnu 2025 podali trestní oznámení na Deník N a autory článku o Turkových příspěvcích pro pomluvu a křivé obvinění | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-21](@/dossiers/macinka-turek/sources/src-21.md) |
+| <a id="clm-20"></a>[CLM-20](@/dossiers/macinka-turek/claims/clm-20.md) | Turek je/byl 2016–2023 statutárním orgánem nebo společníkem v pěti firmách/spolcích (Art of Performance, Aston Martin klub ČR, Transgas, Jaguar klub ČR, Zapper-Club) | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-23](@/dossiers/macinka-turek/sources/src-23.md) |
+| <a id="clm-21"></a>[CLM-21](@/dossiers/macinka-turek/claims/clm-21.md) | Turek osobně daroval Motoristům sobě celkem 210 000 Kč (10 000 Kč v 2019, 200 000 Kč v 2025) | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-25](@/dossiers/macinka-turek/sources/src-25.md) |
+| <a id="clm-22"></a>[CLM-22](@/dossiers/macinka-turek/claims/clm-22.md) | Macinka je/byl statutárním orgánem nebo společníkem v sedmi firmách/spolcích (DRILL COMPANY, Kauppias, Centrum pro výzkum terorismu, Motoristé Praha, PG Contract, Klub motoristů, MEAS Consulting); u DRILL COMPANY a Motoristé Praha skončil počátkem ledna 2026 | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-24](@/dossiers/macinka-turek/sources/src-24.md) |
+| <a id="clm-23"></a>[CLM-23](@/dossiers/macinka-turek/claims/clm-23.md) | Macinka osobně daroval 510 000 Kč (ODS 2017, Motoristé sobě 2× 2022) a přes Klub motoristů z.s., kde je statutárním orgánem, přišlo Motoristům sobě v roce 2024 dalších 800 000 Kč — celkem 1 310 000 Kč | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-26](@/dossiers/macinka-turek/sources/src-26.md) |
+| <a id="clm-24"></a>[CLM-24](@/dossiers/macinka-turek/claims/clm-24.md) | Macinka byl od 2025 zároveň ministrem zahraničí, místopředsedou vlády a 2025–2026 dočasně pověřen i řízením Ministerstva životního prostředí | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-27](@/dossiers/macinka-turek/sources/src-27.md) |
 | <a id="clm-25"></a>[CLM-25](@/dossiers/macinka-turek/claims/clm-25.md) | Bývalá partnerka v červnu 2025 podala trestní oznámení, ve kterém Turka viní z několikaletého domácího násilí, vyhrožování střelnou zbraní a jednoho případu znásilnění, k nimž mělo dojít podle jejího popisu před 15–20 lety | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-28](@/dossiers/macinka-turek/sources/src-28.md), [SRC-29](@/dossiers/macinka-turek/sources/src-29.md), [SRC-30](@/dossiers/macinka-turek/sources/src-30.md) |
 | <a id="clm-26"></a>[CLM-26](@/dossiers/macinka-turek/claims/clm-26.md) | Turek trestní jednání a násilí kategoricky odmítl, označil oznámení za „mediální lynč" s politickým motivem; nevěru v tomto kontextu připustil | <span class="status-badge status-quote">CITACE</span> | [SRC-29](@/dossiers/macinka-turek/sources/src-29.md), [SRC-30](@/dossiers/macinka-turek/sources/src-30.md) |
-| <a id="clm-27"></a>[CLM-27](@/dossiers/macinka-turek/claims/clm-27.md) | V květnu 2026 státní zastupitelství trestní oznámení odložilo z důvodu promlčení; rozhodnutí není pravomocné, žena se odvolala. Jde o procesní důsledek uplynutí promlčecí doby, ne o rozhodnutí o vině nebo nevině | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-31](@/dossiers/macinka-turek/sources/src-31.md) |
-| <a id="clm-28"></a>[CLM-28](@/dossiers/macinka-turek/claims/clm-28.md) | V roce 2017 Turek nechal na autě zaměstnance saúdskoarabské ambasády kresbu oprátky a loveckou nábojnici; policie věc uzavřela jako pravděpodobnou záměnu osob a vyřešila jako přestupek | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-32](@/dossiers/macinka-turek/sources/src-32.md) |
+| <a id="clm-27"></a>[CLM-27](@/dossiers/macinka-turek/claims/clm-27.md) | V květnu 2026 policie trestní oznámení odložila z důvodu promlčení (oznámilo Obvodní státní zastupitelství pro Prahu 4); rozhodnutí není pravomocné, žena proti němu podala stížnost. Jde o procesní důsledek uplynutí promlčecí doby, ne o rozhodnutí o vině nebo nevině | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-31](@/dossiers/macinka-turek/sources/src-31.md), [SRC-54](@/dossiers/macinka-turek/sources/src-54.md) |
+| <a id="clm-28"></a>[CLM-28](@/dossiers/macinka-turek/claims/clm-28.md) | V roce 2017 Turek nechal na autě zaměstnance saúdskoarabské ambasády kresbu oprátky a loveckou nábojnici; policie věc uzavřela jako pravděpodobnou záměnu osob a vyřešila jako přestupek | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-32](@/dossiers/macinka-turek/sources/src-32.md) |
 | <a id="clm-29"></a>[CLM-29](@/dossiers/macinka-turek/claims/clm-29.md) | Turkovo vysvětlení: bránil tehdejší přítelkyni, odmítl rasový motiv i vědomí, že jde o zaměstnance ambasády | <span class="status-badge status-quote">CITACE</span> | [SRC-32](@/dossiers/macinka-turek/sources/src-32.md) |
-| <a id="clm-30"></a>[CLM-30](@/dossiers/macinka-turek/claims/clm-30.md) | V roce 2026 dostal Turek pokuty v součtu 200 000 Kč za dvě nepovolené stavby na pozemku v Praze-Dubči (80 000 Kč nedbalost, 120 000 Kč úmysl); obě dodatečně zlegalizoval | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-33](@/dossiers/macinka-turek/sources/src-33.md) |
+| <a id="clm-30"></a>[CLM-30](@/dossiers/macinka-turek/claims/clm-30.md) | V roce 2026 dostal Turek pokuty v součtu 200 000 Kč za dvě nepovolené stavby na pozemku v Praze-Dubči (80 000 Kč nedbalost, 120 000 Kč úmysl); obě dodatečně zlegalizoval | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-33](@/dossiers/macinka-turek/sources/src-33.md) |
 | <a id="clm-31"></a>[CLM-31](@/dossiers/macinka-turek/claims/clm-31.md) | Turkova firma Zapper-Club s.r.o. nabízela za pandemie „Imunitní balíček ANTI-COVID-19"; přístroj zapper byl předmětem varování Ministerstva zdravotnictví a SZPI mu odebrala certifikát | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-34](@/dossiers/macinka-turek/sources/src-34.md), [SRC-35](@/dossiers/macinka-turek/sources/src-35.md) |
-| <a id="clm-32"></a>[CLM-32](@/dossiers/macinka-turek/claims/clm-32.md) | Z 27 dokumentovaných startů Turkovy závodní kariéry (2015–2017, Formula 4 Trophy) měl 12 výher; čtyřikrát jel sám, šestkrát proti jedinému soupeři | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-36](@/dossiers/macinka-turek/sources/src-36.md) |
-| <a id="clm-33"></a>[CLM-33](@/dossiers/macinka-turek/claims/clm-33.md) | Turek se (spolu s Kateřinou Konečnou a Václavem Klausem) setkal s íránským velvyslancem; všichni tři schůzku potvrdili, ale bagatelizovali jako „zdvořilostní návštěvu" | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-36](@/dossiers/macinka-turek/sources/src-36.md), [SRC-37](@/dossiers/macinka-turek/sources/src-37.md) |
-| <a id="clm-34"></a>[CLM-34](@/dossiers/macinka-turek/claims/clm-34.md) | Turek si v dubnu 2026 koupil byt na Strahově za 18 mil. Kč na hypotéku — jediná další nemovitost vedle pozemku v Praze-Dubči | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-38](@/dossiers/macinka-turek/sources/src-38.md) |
+| <a id="clm-32"></a>[CLM-32](@/dossiers/macinka-turek/claims/clm-32.md) | Z 27 dokumentovaných startů Turkovy závodní kariéry (2015–2017, Formula 4 Trophy) měl 12 výher; čtyřikrát jel sám, šestkrát proti jedinému soupeři | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-36](@/dossiers/macinka-turek/sources/src-36.md) |
+| <a id="clm-33"></a>[CLM-33](@/dossiers/macinka-turek/claims/clm-33.md) | Turek se (spolu s Kateřinou Konečnou a Václavem Klausem) setkal s íránským velvyslancem; všichni tři schůzku potvrdili a označili ji za zdvořilostní návštěvu | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-36](@/dossiers/macinka-turek/sources/src-36.md), [SRC-37](@/dossiers/macinka-turek/sources/src-37.md) |
+| <a id="clm-34"></a>[CLM-34](@/dossiers/macinka-turek/claims/clm-34.md) | Turek si v dubnu 2026 koupil byt na Strahově za 18 mil. Kč na hypotéku — jediná další nemovitost vedle pozemku v Praze-Dubči | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-38](@/dossiers/macinka-turek/sources/src-38.md) |
 | <a id="clm-35"></a>[CLM-35](@/dossiers/macinka-turek/claims/clm-35.md) | Motoristé sobě zveřejnili povinné přehledy dárců kampaně PS 2025 (UDHPSH); mezi velké dárce patřili Boris Šťastný (~5 mil. Kč přes Medical Investments) a František Fabičovic (1 mil. Kč) | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-39](@/dossiers/macinka-turek/sources/src-39.md), [SRC-40](@/dossiers/macinka-turek/sources/src-40.md) |
-| <a id="clm-36"></a>[CLM-36](@/dossiers/macinka-turek/claims/clm-36.md) | Podnikatel Richard Chlad (dřívější osobní vazba na Radovana Krejčíře) oficiálně daroval Motoristům sobě v roce 2025 evidovaných 638 864 Kč, zatímco sám veřejně uváděl podporu v hodnotě „necelých dvou milionů" Kč | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-41](@/dossiers/macinka-turek/sources/src-41.md), [SRC-42](@/dossiers/macinka-turek/sources/src-42.md) |
-| <a id="clm-37"></a>[CLM-37](@/dossiers/macinka-turek/claims/clm-37.md) | Turek a Macinka Chladovu roli veřejně zlehčovali; Macinka uváděl vlastní nižší částky (2× 50 000 Kč před eurovolbami) než sám Chlad | <span class="status-badge status-quote">CITACE</span> | [SRC-43](@/dossiers/macinka-turek/sources/src-43.md) |
+| <a id="clm-36"></a>[CLM-36](@/dossiers/macinka-turek/claims/clm-36.md) | Podnikatel Richard Chlad (dřívější osobní vazba na Radovana Krejčíře) oficiálně daroval Motoristům sobě v roce 2025 evidovaných 638 864 Kč, zatímco sám veřejně uváděl podporu v hodnotě „necelých dvou milionů" Kč — do té podle CNN Prima News počítal i nepeněžní plnění (zápůjčky vozů), obě čísla tedy neměří totéž | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-41](@/dossiers/macinka-turek/sources/src-41.md), [SRC-42](@/dossiers/macinka-turek/sources/src-42.md) |
+| <a id="clm-37"></a>[CLM-37](@/dossiers/macinka-turek/claims/clm-37.md) | Turek i Macinka veřejně odmítali, že by Chlad hrál v okolí strany významnější roli; Macinka uváděl vlastní nižší částky (2× 50 000 Kč před eurovolbami) než sám Chlad | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-43](@/dossiers/macinka-turek/sources/src-43.md) |
 | <a id="clm-38"></a>[CLM-38](@/dossiers/macinka-turek/claims/clm-38.md) | V lednu 2026 prezident Petr Pavel odmítl jmenovat Turka ministrem životního prostředí; jako důvod uvedl opakovaný nedostatek respektu k právnímu řádu, zlehčování nacistického Německa a zpochybňování důstojnosti a rovnosti žen a příslušníků menšin | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-44](@/dossiers/macinka-turek/sources/src-44.md), [SRC-45](@/dossiers/macinka-turek/sources/src-45.md) |
 | <a id="clm-39"></a>[CLM-39](@/dossiers/macinka-turek/claims/clm-39.md) | Turek 9. 1. 2026 oznámil, že na prezidenta podá žalobu na ochranu osobnosti a bude žádat omluvu za toto zdůvodnění | <span class="status-badge status-quote">CITACE</span> | [SRC-44](@/dossiers/macinka-turek/sources/src-44.md) |
-| <a id="clm-40"></a>[CLM-40](@/dossiers/macinka-turek/claims/clm-40.md) | Turek namísto ministerského postu zastává roli vládního zmocněnce pro klimatickou změnu a Green Deal; premiér Babiš označil jeho jmenování ministrem za „uzavřenou kapitolu"; řízením ministerstva byl dočasně pověřen Petr Macinka | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-45](@/dossiers/macinka-turek/sources/src-45.md), [SRC-46](@/dossiers/macinka-turek/sources/src-46.md) |
+| <a id="clm-40"></a>[CLM-40](@/dossiers/macinka-turek/claims/clm-40.md) | Turek namísto ministerského postu působil jako vládní zmocněnec pro klimatickou změnu a Green Deal (funkci po nehodě v červenci 2026 dočasně opustil, viz CLM-11); premiér Babiš označil jeho jmenování ministrem za „uzavřenou kapitolu"; řízením ministerstva byl dočasně pověřen Petr Macinka | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-45](@/dossiers/macinka-turek/sources/src-45.md), [SRC-46](@/dossiers/macinka-turek/sources/src-46.md) |
 | <a id="clm-41"></a>[CLM-41](@/dossiers/macinka-turek/claims/clm-41.md) | Dne 28. 7. 2026 policie odložila prověřování Turkových výroků z CLM-07 pro promlčení; rozhodnutí není pravomocné. Jde o procesní důsledek uplynutí promlčecí doby, ne o posouzení pravosti nebo obsahu výroků. Policie zároveň nepotvrdila verzi Motoristů, že zveřejněné materiály byly zfalšované | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-47](@/dossiers/macinka-turek/sources/src-47.md), [SRC-48](@/dossiers/macinka-turek/sources/src-48.md) |
 | <a id="clm-42"></a>[CLM-42](@/dossiers/macinka-turek/claims/clm-42.md) | Policie zároveň odložila trestní oznámení, které v říjnu 2025 podali Motoristé sobě na Deník N a autory článku (CLM-19), s odůvodněním, že zveřejnění informací nebylo trestným činem | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-47](@/dossiers/macinka-turek/sources/src-47.md), [SRC-48](@/dossiers/macinka-turek/sources/src-48.md) |
 | <a id="clm-43"></a>[CLM-43](@/dossiers/macinka-turek/claims/clm-43.md) | Dne 23. 2. 2026 prezident Petr Pavel jmenoval ministrem životního prostředí Igora Červeného (Motoristé sobě); tím skončilo dočasné pověření Petra Macinky vedením tohoto úřadu zmiňované v CLM-24 a CLM-40 | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-49](@/dossiers/macinka-turek/sources/src-49.md), [SRC-50](@/dossiers/macinka-turek/sources/src-50.md) |
 | <a id="clm-44"></a>[CLM-44](@/dossiers/macinka-turek/claims/clm-44.md) | Dne 27. 7. 2026 Turek oznámil, že žalobu na ochranu osobnosti proti prezidentu Pavlovi (avizovanou v CLM-39) nakonec nepodá; jako důvod uvedl, že „z mnoha důvodů" svůj postoj přehodnotil, bez bližšího upřesnění | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-51](@/dossiers/macinka-turek/sources/src-51.md), [SRC-52](@/dossiers/macinka-turek/sources/src-52.md) |
+| <a id="clm-45"></a>[CLM-45](@/dossiers/macinka-turek/claims/clm-45.md) | V listopadu 2024 policie odložila případ Turkova údajného hajlování (fotografie z roku 2013, CLM-04) z důvodu promlčení trestní odpovědnosti; sbírky svícnů se rozhodnutí netýkalo. Jde o procesní důsledek uplynutí promlčecí doby, ne o rozhodnutí o vině | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-53](@/dossiers/macinka-turek/sources/src-53.md) |
 
 ## Graf vztahů
 
@@ -372,12 +382,12 @@ vyjádřili k vyhlídkám žaloby skepsi s odkazem na ústavní neodpovědnost
 prezidenta z výkonu funkce. Babiš podle HN.cz kompetenční žalobu vlády
 na prezidenta kvůli nejmenování nezvažuje. Dne 27. 7. 2026 Turek oznámil,
 že žalobu nakonec nepodá — jako důvod uvedl, že „z mnoha důvodů" svůj
-postoj přehodnotil, bez bližšího upřesnění (CLM-44). *(Zdroj: Blesk.cz,
-Deník N)*
+postoj přehodnotil, bez bližšího upřesnění (CLM-44). *(Zdroj: Česká
+justice, Seznam Zprávy, HN.cz; k nepodání žaloby Blesk.cz, Deník N)*
 
-Turek namísto ministerského postu zastává roli vládního zmocněnce pro
-klimatickou změnu a Green Deal s kanceláří na ministerstvu — tatáž
-funkce, kterou po dopravní nehodě v roce 2026 dočasně opustil (viz
+Turek namísto ministerského postu získal roli vládního zmocněnce pro
+klimatickou změnu a Green Deal s kanceláří na ministerstvu — tutéž
+funkci po dopravní nehodě v červenci 2026 dočasně opustil (viz
 [Bezprostřední reakce](#bezprostredni-reakce)). Premiér Babiš v únoru
 2026 zopakoval, že Turkovo jmenování ministrem je „uzavřená kapitola", a
 čeká na nový návrh. Řízením ministerstva byl mezitím dočasně pověřen
@@ -439,11 +449,14 @@ nemovitosti neměl, jen že se je tímto způsobem hledání nepodařilo najít.
 **Dárci kampaně 2025**: Motoristé sobě povinně zveřejnili přehledy
 dárců (SRC-40). Mezi větší dárce patřili Boris Šťastný (~5 mil. Kč přes
 firmu Medical Investments) a František Fabičovic (1 mil. Kč, dlouholetý
-přítel otce Petra Macinky). Zvláštní pozornost si zaslouží podnikatel
+přítel otce Petra Macinky). Samostatně dokumentovaný je podnikatel
 Richard Chlad (hazard, energetika, dřívější osobní vazba na Radovana
 Krejčíře): oficiálně evidovaný dar 638 864 Kč (2025) je výrazně nižší
-než částka, kterou sám veřejně uváděl („necelé dva miliony" Kč); Turek i
-Macinka jeho roli ve straně veřejně zlehčovali.
+než částka, kterou sám veřejně uváděl („necelé dva miliony" Kč) — sám
+Chlad ale podle CNN Prima News do své částky počítal i nepeněžní plnění
+(zápůjčky vozů pro rallye a natáčení), takže obě čísla neměří totéž.
+Turek i Macinka veřejně odmítali, že by Chlad hrál v okolí strany
+významnější roli.
 
 Zbývá nedohledáno: majetek/nemovitosti Macinky a úplná rekonciliace
 sporných čísel u Chladova sponzoringu (oficiální evidence vs. jeho
@@ -458,6 +471,11 @@ kříži. Turek to označil za "špatný humor", resp. sběratelský zájem; vě
 zabývala policie a kvůli kauze mu byly zrušeny některé předvolební debaty.
 Předseda Motoristů Petr Macinka jej veřejně hájil a kauzu označil za
 "pseudoproblém." *(Zdroj: iROZHLAS, Deník N)*
+
+V listopadu 2024 policie případ údajného hajlování (fotografie z roku
+2013) odložila z důvodu promlčení trestní odpovědnosti. Jde o procesní
+krok — důsledek uplynutí zákonné lhůty, ne rozhodnutí o vině nebo nevině;
+sbírky svícnů se toto rozhodnutí netýkalo (CLM-45). *(Zdroj: ČT24)*
 
 ## Trestní oznámení: obvinění z domácího násilí a znásilnění
 
@@ -476,14 +494,15 @@ oznámení za pokus o „mediální lynč" s politickým motivem před volbami;
 nevěru a nevázaný vztahový život v tomto kontextu připustil, trestní
 jednání ne.
 
-V květnu 2026 pražské státní zastupitelství trestní oznámení odložilo z
-důvodu promlčení. **Toto rozhodnutí je čistě procesní** — vyplývá z
-uplynutí zákonné promlčecí doby (v době skutku 5, resp. 12 let u těžké
-újmy na zdraví), **ne z posouzení, zda k činům došlo, nebo ne.**
-Rozhodnutí navíc není pravomocné: žena se odvolala a o stížnosti nyní
-rozhoduje státní zástupkyně. Otázka pravdivosti obvinění tímto zůstává
-zcela otevřená a nerozhodnutá — dossier ji tak i vede. *(Zdroj: Deník.cz,
-Blesk.cz, HN.cz, ČT24)*
+V květnu 2026 policie trestní oznámení odložila z důvodu promlčení;
+oznámil to vedoucí Obvodního státního zastupitelství pro Prahu 4 Jan
+Vychyta. **Toto rozhodnutí je čistě procesní** — vyplývá z uplynutí
+zákonné promlčecí doby (v době skutku 5, resp. 12 let u těžké újmy na
+zdraví), **ne z posouzení, zda k činům došlo, nebo ne.** Rozhodnutí
+navíc není pravomocné: žena proti němu podala stížnost, o níž k
+29. 7. 2026 rozhoduje státní zástupkyně. Otázka pravdivosti obvinění
+tímto zůstává zcela otevřená a nerozhodnutá — dossier ji tak i vede.
+*(Zdroj: Deník.cz, Blesk.cz, HN.cz, ČT24, Echo24)*
 
 ## Kauza z října 2025: smazané příspěvky na Facebooku
 
@@ -529,11 +548,16 @@ ověření pravosti tím ale zůstává otevřená, viz [GAP-03](@/dossiers/maci
 
 *(Co se stalo, podle více nezávislých zdrojů)*
 
-Auto Filipa Turka se v Praze střetlo s vozidlem zdravotnické záchranné služby.
+Auto Filipa Turka se v červenci 2026 v Praze střetlo se zdravotnickým
+vozem — část zpravodajství jej popisovala jako „sanitku" záchranné
+služby, podle Turkovy verze i navazujícího zpravodajství šlo o vozidlo
+Nemocnice Na Homolce převážející biologický materiál (obojí dossier
+uvádí, protože citované zdroje se v označení vozu liší; na procesním
+stavu věci to nic nemění).
 Podle záběrů, které rozebíral Echo24, Turek před střetem předjížděl frontu
 aut v pruhu určeném k odbočení; do křižovatky pak vjelo jako jediné z kolony
-právě jeho vozidlo a narazilo do boku sanitky, kterou náraz vymrštil do
-vzduchu — u přechodu poblíž přitom podle popisu stála skupina chodců.
+právě jeho vozidlo a narazilo do boku zdravotnického vozu, který náraz
+vymrštil do vzduchu — u přechodu poblíž přitom podle popisu stála skupina chodců.
 Vyšetřování příčiny a viny (přestupek, nebo trestný čin) probíhalo v době
 psaní tohoto přehledu a jeho výsledek nebyl uzavřen. *(Zdroj: Echo24 — "Jízda
 s majáky, stejná křižovatka a viníkem byl řidič sanitky. O nehodě Turka
@@ -654,11 +678,11 @@ Rozšíření o tyto oblasti by vyžadovalo samostatný sběr z primárních reg
 
 ## Registr zdrojů
 
-Všech 52 citovaných zdrojů má vlastní stránku s typem, originálním
+Všech 54 citovaných zdrojů má vlastní stránku s typem, originálním
 odkazem, datem sestavení a přehledem toho, která tvrzení podporuje.
 
 > **[Otevřít registr zdrojů →](@/dossiers/macinka-turek/sources/_index.md)**
-> 52 zdrojů (SRC-01 – SRC-52), typ média, originální odkaz, podporovaná
+> 54 zdrojů (SRC-01 – SRC-54), typ média, originální odkaz, podporovaná
 > tvrzení a poznámka k nezávislosti redakcí.
 
 *Tento přehled shrnuje mediálně publikované informace k datu 2026-07-29. Kauzy se dále vyvíjí a přehled bude podle potřeby aktualizován. Nejde o právní hodnocení viny — otázky odpovědnosti (za nehodu i za pravost příspěvků z roku 2025) jsou předmětem probíhajícího šetření, resp. sporu.*

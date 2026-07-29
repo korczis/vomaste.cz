@@ -197,11 +197,12 @@ Generated from 21 context entities across 3 dossier(s). Regenerate with `npm run
 - Type: public_institution
 - Status: not_authorized
 - Appears in: macinka-turek, filip-turek
-- Claims: CLM-41
-- Sources: SRC-47, SRC-48 (2 independent source families)
+- Claims: CLM-27, CLM-41
+- Sources: SRC-31, SRC-47, SRC-48, SRC-54 (4 independent source families)
 - Relations: 
   - edge-kauza2025-policie (kauza2025 -> policie, "prověřování výroků i oznámení na Deník N odloženo (28. 7. 2026)", dossier: macinka-turek)
   - edge-nehoda2026-policie (nehoda2026 -> policie, "vyšetřování (výsledek k datu poslední kontroly neuzavřen)", dossier: macinka-turek)
+  - edge-trestniozn-policie (trestniozn -> policie, "odloženo policií pro promlčení — procesní krok, ne rozhodnutí o vině; nepravomocné", dossier: macinka-turek)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Státní zastupitelství (`statni-zastupitelstvi`)
@@ -210,9 +211,9 @@ Generated from 21 context entities across 3 dossier(s). Regenerate with `npm run
 - Status: not_authorized
 - Appears in: macinka-turek, filip-turek
 - Claims: CLM-27
-- Sources: SRC-31 (1 independent source family)
+- Sources: SRC-31, SRC-54 (2 independent source families)
 - Relations: 
-  - edge-trestniozn-statnizastupitelstvi (trestniozn -> statni-zastupitelstvi, "odloženo pro promlčení; nepravomocné, žena se odvolala", dossier: macinka-turek)
+  - edge-trestniozn-statnizastupitelstvi (trestniozn -> statni-zastupitelstvi, "OSZ pro Prahu 4 odložení oznámilo; o stížnosti ženy rozhoduje státní zástupkyně", dossier: macinka-turek)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## SZPI (`szpi`)
@@ -234,7 +235,8 @@ Generated from 21 context entities across 3 dossier(s). Regenerate with `npm run
 - Claims: CLM-25
 - Sources: SRC-28 (1 independent source family)
 - Relations: 
-  - edge-trestniozn-statnizastupitelstvi (trestniozn -> statni-zastupitelstvi, "odloženo pro promlčení; nepravomocné, žena se odvolala", dossier: macinka-turek)
+  - edge-trestniozn-policie (trestniozn -> policie, "odloženo policií pro promlčení — procesní krok, ne rozhodnutí o vině; nepravomocné", dossier: macinka-turek)
+  - edge-trestniozn-statnizastupitelstvi (trestniozn -> statni-zastupitelstvi, "OSZ pro Prahu 4 odložení oznámilo; o stížnosti ženy rozhoduje státní zástupkyně", dossier: macinka-turek)
   - edge-turek-trestniozn (turek -> trestniozn, "subjekt (oznámení 6/2025, odloženo pro promlčení 5/2026)", dossier: macinka-turek)
 - Missing: explicit owner authorization to promote this to its own dossier
 

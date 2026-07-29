@@ -1,6 +1,6 @@
 +++
 title = "SRC-31 — ČT24"
-description = "Státní zastupitelství odložilo oznámení pro promlčení; rozhodnutí není pravomocné."
+description = "Policie odložila oznámení pro promlčení (oznámilo OSZ pro Prahu 4); rozhodnutí není pravomocné."
 template = "dossier-source.html"
 weight = 31
 aliases = ["/dossier/zdroje/src-31/"]
@@ -19,9 +19,11 @@ published = "2026-05-12"
 claims = ["CLM-27"]
 +++
 
-ČT24 dne 12. května 2026 informovala, že Obvodní státní zastupitelství
-pro Prahu 4 (vedoucí Jan Vychyta) odložilo trestní oznámení z SRC-28/29/30
-z důvodu promlčení. Přímá citace: „Trestní věc byla skončena rozhodnutím
+ČT24 dne 12. května 2026 informovala, že policejní orgán odložil trestní
+oznámení z SRC-28/29/30 z důvodu promlčení; oznámil to vedoucí Obvodního
+státního zastupitelství pro Prahu 4 Jan Vychyta (státní zastupitelství
+rozhodnutí oznámilo, neodložilo věc samo — viz přímá citace níže).
+Přímá citace: „Trestní věc byla skončena rozhodnutím
 policejního orgánu. Toto rozhodnutí není pravomocné a bylo napadeno
 stížností, o níž bude nyní rozhodovat státní zástupkyně zdejšího
 státního zastupitelství."
@@ -30,6 +32,6 @@ státního zastupitelství."
 formulace.** Odložení pro promlčení je čistě procesní důsledek uplynutí
 zákonné lhůty (v době skutku 5, resp. 12 let u těžké újmy na zdraví) —
 **není** to zjištění, že k činům nedošlo, ani že k nim došlo. Rozhodnutí
-navíc není pravomocné: žena se odvolala a o stížnosti rozhoduje státní
-zástupkyně. Dossier tuto dvojici faktů (procesní povaha + nepravomocnost)
+navíc není pravomocné: žena proti němu podala stížnost, o níž rozhoduje
+státní zástupkyně. Dossier tuto dvojici faktů (procesní povaha + nepravomocnost)
 uvádí společně vždy, když se o odložení zmiňuje.

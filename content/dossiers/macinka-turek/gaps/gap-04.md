@@ -27,9 +27,11 @@ hypotéku (CLM-34). Viz [hlavní přehled](@/dossiers/macinka-turek/_index.md#ma
 cituje Turkovo tehdejší majetkové přiznání: „Co se týče nemovitostí,
 Turek vlastní jen jednu: pozemek s chatou v Praze 10" — tedy k listopadu
 2025 (před dubnovým nákupem bytu na Strahově) jen pozemek v Dubči, což
-odpovídá dossieru a nic nerozporuje. Jeho trvalé bydliště bylo v té době
-psané v nájemním bytě na Břevnově, ne ve vlastnictví. Žádný dohledaný
-zdroj neuvádí u Turka další nemovitost nad rámec Dubče a Strahova.
+odpovídá dossieru a nic nerozporuje; bydlel tehdy podle téhož zdroje
+v nájmu, ne ve vlastní nemovitosti. Žádný dohledaný zdroj neuvádí u
+Turka další nemovitost nad rámec Dubče a Strahova. *(Přesnější údaj o
+místě bydliště dossier záměrně neuvádí — pro účel této mezery není
+potřebný.)*
 
 **Doplnění (dohledáno 2026-07-29)**: přehled poprvé zkusil onen
 „samostatný sběr z primárního registru" zmíněný níže — přímým programovým

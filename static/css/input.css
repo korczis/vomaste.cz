@@ -27,6 +27,9 @@
     --status-quote-bg: rgba(59, 130, 246, 0.15);
     --status-quote-fg: rgb(147, 197, 253);
     --status-quote-border: rgba(59, 130, 246, 0.3);
+    --status-single-bg: rgba(249, 115, 22, 0.15);
+    --status-single-fg: rgb(253, 186, 116);
+    --status-single-border: rgba(249, 115, 22, 0.3);
     --status-disputed-bg: rgba(234, 179, 8, 0.15);
     --status-disputed-fg: rgb(253, 224, 71);
     --status-disputed-border: rgba(234, 179, 8, 0.3);
@@ -134,6 +137,8 @@
   .status-corroborated::before { border-radius: 9999px; }
   .status-quote { background: var(--status-quote-bg); color: var(--status-quote-fg); border: 1px solid var(--status-quote-border); }
   .status-quote::before { border-radius: 1px; }
+  .status-single { background: var(--status-single-bg); color: var(--status-single-fg); border: 1px solid var(--status-single-border); }
+  .status-single::before { border-radius: 1px; width: 0.18em; height: 0.6em; }
   .status-disputed { background: var(--status-disputed-bg); color: var(--status-disputed-fg); border: 1px solid var(--status-disputed-border); }
   .status-disputed::before { border-radius: 0; transform: rotate(45deg); }
   .status-opinion { background: var(--status-opinion-bg); color: var(--status-opinion-fg); border: 1px solid var(--status-opinion-border); }

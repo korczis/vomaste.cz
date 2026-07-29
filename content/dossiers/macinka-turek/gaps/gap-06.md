@@ -12,7 +12,7 @@ record_type = "gap"
 lang = "cs"
 gap_id = "GAP-06"
 priority = "vysoká"
-checked = "2026-07-23"
+checked = "2026-07-29"
 claims = ["CLM-25", "CLM-26", "CLM-27"]
 +++
 
@@ -28,16 +28,18 @@ popisu dojít před 15–20 lety (CLM-25). Turek jakékoliv trestní jednání
 kategoricky odmítl a označil oznámení za „mediální lynč" s politickým
 motivem; nevěru v tomto kontextu připustil, trestní jednání ne (CLM-26).
 
-V květnu 2026 pražské státní zastupitelství trestní oznámení odložilo
-z důvodu promlčení. **Toto rozhodnutí je čistě procesní** — vyplývá z
-uplynutí zákonné promlčecí doby, **ne z posouzení, zda k činům došlo,
-nebo ne.** Rozhodnutí není pravomocné: žena se odvolala a o stížnosti
+V květnu 2026 policie trestní oznámení odložila z důvodu promlčení;
+oznámil to vedoucí Obvodního státního zastupitelství pro Prahu 4.
+**Toto rozhodnutí je čistě procesní** — vyplývá z uplynutí zákonné
+promlčecí doby, **ne z posouzení, zda k činům došlo, nebo ne.**
+Rozhodnutí není pravomocné: žena proti němu podala stížnost, o níž
 rozhoduje státní zástupkyně (CLM-27).
 
 **Co zůstává otevřené**: samotný výsledek této stížnosti. Ověřeno znovu
-2026-07-23 (Echo24, ČeskéNoviny.cz, ČT24, iROZHLAS, Deník N — přímý dotaz
-i přehled aktuálního zpravodajství Deníku N k Turkovi) — žádný z těchto
-zdrojů rozhodnutí o stížnosti k tomuto datu nezaznamenává. Otázka
+2026-07-29 (Echo24, ČeskéNoviny.cz, ČT24, iROZHLAS, Deník N, Česká
+justice — cílené dotazy na rozhodnutí o stížnosti i přehled aktuálního
+zpravodajství k Turkovi) — žádný inspekcí ověřitelný zdroj rozhodnutí o
+stížnosti k tomuto datu nezaznamenává. Otázka
 pravdivosti původního obvinění zůstává touto mezerou zcela otevřená a
 nerozhodnutá — dossier ji tak i nadále vede, bez ohledu na to, jak
 stížnost dopadne, dokud se k věci nevyjádří příslušný orgán.

@@ -13,10 +13,10 @@ case_id = "CASE-01"
 anchor = "kauza-z-roku-2024-fotografie-a-sbirka-svicnu"
 period = "2024"
 status = "status-disputed"
-label = "Uzavřeno bez trestu"
+label = "Fotografie: odloženo pro promlčení"
 summary = "Fotografie připomínající nacistický pozdrav a sbírka svícnů s hákovými kříži. Turek: „špatný humor.“"
-claims = ["CLM-04", "CLM-05", "CLM-06"]
-sources = ["SRC-12", "SRC-14"]
+claims = ["CLM-04", "CLM-05", "CLM-06", "CLM-45"]
+sources = ["SRC-12", "SRC-14", "SRC-53"]
 subjects = ["macinka", "turek"]
 +++
 

@@ -18,6 +18,7 @@ const OUT_DIR = path.join(BASE, "claims");
 
 const STATUS_LABELS = {
   "status-corroborated": "CORROBORATED",
+  "status-single": "1 ZDROJ",
   "status-quote": "CITACE",
   "status-disputed": "SPORNÉ",
   "status-opinion": "NÁZOR",

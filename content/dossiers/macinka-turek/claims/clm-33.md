@@ -1,6 +1,6 @@
 +++
 title = "CLM-33"
-description = "Turek se (spolu s Kateřinou Konečnou a Václavem Klausem) setkal s íránským velvyslancem; všichni tři schůzku potvrdili, ale bagatelizovali jako „zdvořilostní návštěvu\""
+description = "Turek se (spolu s Kateřinou Konečnou a Václavem Klausem) setkal s íránským velvyslancem; všichni tři schůzku potvrdili a označili ji za zdvořilostní návštěvu"
 template = "dossier-claim.html"
 weight = 33
 aliases = ["/dossier/tvrzeni/clm-33/"]
@@ -12,7 +12,7 @@ lang = "cs"
 clm_id = "CLM-33"
 status = "status-corroborated"
 status_label = "CORROBORATED"
-summary = "Turek se (spolu s Kateřinou Konečnou a Václavem Klausem) setkal s íránským velvyslancem; všichni tři schůzku potvrdili, ale bagatelizovali jako „zdvořilostní návštěvu\""
+summary = "Turek se (spolu s Kateřinou Konečnou a Václavem Klausem) setkal s íránským velvyslancem; všichni tři schůzku potvrdili a označili ji za zdvořilostní návštěvu"
 sources = ["SRC-36", "SRC-37"]
 subjects = ["turek"]
 +++

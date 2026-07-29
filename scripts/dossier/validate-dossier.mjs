@@ -76,6 +76,29 @@ function validateDossier(slug) {
     const srcRefs = [...sourcesCell.matchAll(/SRC-\d+/g)].map((x) => x[0]);
     clmIds.set(id, srcRefs);
     clmTableRows.set(id, { text, statusClass, statusLabel: statusLabel.trim(), srcRefs, linkSlug });
+
+    // Status vocabulary + evidentiary-floor checks. "CORROBORATED" is
+    // defined on-page as "potvrzeno nezávisle více médii" — a row carrying
+    // that badge with a single cited source is definitionally wrong (use
+    // status-single instead). Symmetrically, status-single with 2+ sources
+    // is an understatement that hides corroboration.
+    const KNOWN_STATUSES = new Set([
+      "status-corroborated",
+      "status-single",
+      "status-quote",
+      "status-disputed",
+      "status-opinion",
+    ]);
+    if (!KNOWN_STATUSES.has(statusClass)) {
+      err(`[${slug}] ${id}: unknown claim status "${statusClass}" — allowed: ${[...KNOWN_STATUSES].join(", ")}`);
+    }
+    const distinctSrcs = new Set(srcRefs);
+    if (statusClass === "status-corroborated" && distinctSrcs.size < 2) {
+      err(`[${slug}] ${id}: status-corroborated with ${distinctSrcs.size} cited source(s) — the badge's own definition requires 2+ independent sources; use status-single or add a second source`);
+    }
+    if (statusClass === "status-single" && distinctSrcs.size > 1) {
+      err(`[${slug}] ${id}: status-single but cites ${distinctSrcs.size} sources — either sources are not independent (document why) or the status should be status-corroborated`);
+    }
   }
   if (clmIds.size === 0) err(`[${slug}] No CLM-## rows found in ${p("_index.md")} — table format may have changed.`);
 

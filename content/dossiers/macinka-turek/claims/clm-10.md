@@ -1,6 +1,6 @@
 +++
 title = "CLM-10"
-description = "Auto Turka se v Praze střetlo s vozidlem záchranné služby (2026); dle záběrů předjížděl frontu v odbočovacím pruhu"
+description = "Auto Turka se v červenci 2026 v Praze střetlo se zdravotnickým vozem; dle záběrů předjížděl frontu v odbočovacím pruhu"
 template = "dossier-claim.html"
 weight = 10
 aliases = ["/dossier/tvrzeni/clm-10/"]
@@ -10,9 +10,9 @@ dossier = "macinka-turek"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-10"
-status = "status-corroborated"
-status_label = "CORROBORATED"
-summary = "Auto Turka se v Praze střetlo s vozidlem záchranné služby (2026); dle záběrů předjížděl frontu v odbočovacím pruhu"
+status = "status-single"
+status_label = "1 ZDROJ"
+summary = "Auto Turka se v červenci 2026 v Praze střetlo se zdravotnickým vozem; dle záběrů předjížděl frontu v odbočovacím pruhu"
 sources = ["SRC-02"]
 subjects = ["turek"]
 +++

@@ -37,10 +37,12 @@
   {% endfor %}
 
   {% if registry == "claims" %}
-  <div class="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
+  <div class="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-5">
     {{ ui::stat_tile(value=filtered | length, label="Tvrzení celkem") }}
     {% set corroborated = filtered | filter(attribute="extra.status", value="status-corroborated") %}
     {{ ui::stat_tile(value=corroborated | length, label="Corroborated") }}
+    {% set single = filtered | filter(attribute="extra.status", value="status-single") %}
+    {{ ui::stat_tile(value=single | length, label="1 zdroj") }}
     {% set disputed = filtered | filter(attribute="extra.status", value="status-disputed") %}
     {{ ui::stat_tile(value=disputed | length, label="Sporné") }}
     {% set quotes = filtered | filter(attribute="extra.status", value="status-quote") %}
