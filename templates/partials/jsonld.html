@@ -1,0 +1,92 @@
+{#- Central JSON-LD (structured data), rendered exactly once per page from
+    base.html <head> — the same "declared once" discipline as the meta
+    tags. Everything is generated from front matter, config.toml,
+    data/navigation.toml and data/dossiers.toml; no dossier slug, person
+    name, or URL is hardcoded here, so this file needs no change when a
+    dossier is added or records move between dossiers.
+
+    Editorial constraint (AGENTS.md rules 3 & 7): claim statuses on this
+    site describe SOURCING, not adjudicated truth. Therefore no
+    ClaimReview and no reviewRating anywhere — claims are neutral
+    schema.org Claim nodes whose `appearance` points at the cited
+    reporting. scripts/dossier/verify-jsonld.mjs enforces this
+    mechanically after every build.
+
+    Cross-references are resolved layout-agnostically:
+    - the Person entry comes from data/dossiers.toml, matched by the
+      page's own extra.dossier slug (dossier_type = "entity" only — the
+      aggregate view is not a person and never gets Person markup);
+    - a claim's cited sources are found by walking every dossier section
+      under content/dossiers/ and matching extra.src_id, so records may
+      physically live under any dossier;
+    - breadcrumbs come from the page's/section's own `ancestors` chain. -#}
+{%- import "macros/jsonld.html" as jsonld -%}
+
+{%- set ld_lang = page.extra.lang | default(value=section.extra.lang | default(value=config.extra.lang | default(value="en"))) -%}
+{%- set ld_title = page.title | default(value=section.title | default(value=config.title)) -%}
+{%- set ld_description = page.description | default(value=section.description | default(value=config.description)) -%}
+{%- set ld_seo_type = page.extra.seo_type | default(value=section.extra.seo_type | default(value=config.extra.seo_type | default(value="WebPage"))) -%}
+{%- set ld_record_type = page.extra.record_type | default(value=section.extra.record_type | default(value="")) -%}
+{%- set ld_dossier = page.extra.dossier | default(value=section.extra.dossier | default(value="")) -%}
+{%- set ld_dossier_type = page.extra.dossier_type | default(value=section.extra.dossier_type | default(value="")) -%}
+{%- set ld_ancestors = page.ancestors | default(value=section.ancestors | default(value=[])) -%}
+
+{#- Person markup only where data/dossiers.toml itself says this dossier
+    is about one real, primary-navigation-worthy person. -#}
+{%- set ld_person = false -%}
+{%- if ld_dossier_type == "entity" and ld_dossier -%}
+  {%- set ld_registry = load_data(path="data/dossiers.toml") -%}
+  {%- set ld_entry = ld_registry.dossiers | filter(attribute="slug", value=ld_dossier) | filter(attribute="dossier_type", value="entity") | first | default(value=false) -%}
+  {%- if ld_entry and ld_entry.show_in_primary_navigation -%}
+    {%- set_global ld_person = ld_entry -%}
+  {%- endif -%}
+{%- endif -%}
+
+{#- Resolve a claim's cited SRC-## ids to the source pages themselves, by
+    walking every registry section of every dossier — no assumption about
+    which dossier physically owns which record. -#}
+{%- set_global ld_claim_sources = [] -%}
+{%- if ld_record_type == "claim" -%}
+  {%- set ld_wanted = page.extra.sources | default(value=[]) -%}
+  {%- set ld_droot = get_section(path="dossiers/_index.md") -%}
+  {%- for ld_dpath in ld_droot.subsections -%}
+    {%- set ld_dsec = get_section(path=ld_dpath) -%}
+    {%- for ld_rpath in ld_dsec.subsections -%}
+      {%- set ld_rsec = get_section(path=ld_rpath) -%}
+      {%- for ld_sp in ld_rsec.pages -%}
+        {%- set ld_sid = ld_sp.extra.src_id | default(value="") -%}
+        {%- if ld_sid and ld_sid in ld_wanted -%}
+          {%- set_global ld_claim_sources = ld_claim_sources | concat(with=ld_sp) -%}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endfor -%}
+  {%- endfor -%}
+{%- endif -%}
+
+{%- set ld_person_id = "" -%}
+{%- if ld_person and current_url -%}
+  {%- set ld_person_id = current_url ~ "#person" -%}
+{%- endif -%}
+{%- set ld_nav_data = load_data(path="data/navigation.toml") -%}
+{%- set ld_nav_items = ld_nav_data.items | sort(attribute="order") -%}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":{{ ld_seo_type | json_encode | safe }},"name":{{ ld_title | json_encode | safe }},"description":{{ ld_description | json_encode | safe }},"inLanguage":{{ ld_lang | json_encode | safe }}{% if current_url %},"url":{{ current_url | json_encode | safe }}{% endif %}{% if ld_person %},"mainEntity":{"@type":"Person","name":{{ ld_person.title | json_encode | safe }},"description":{{ ld_description | json_encode | safe }}{% if current_url %},"url":{{ current_url | json_encode | safe }},"@id":{{ ld_person_id | json_encode | safe }}{% endif %}}{% endif %}}
+{%- if ld_ancestors | length > 0 -%}
+,{"@type":"BreadcrumbList","itemListElement":[
+{%- for ld_a in ld_ancestors -%}
+{%- set ld_s = get_section(path=ld_a, metadata_only=true) -%}
+{"@type":"ListItem","position":{{ loop.index }},"name":{{ ld_s.title | default(value=config.title) | json_encode | safe }},"item":{{ ld_s.permalink | json_encode | safe }}},
+{%- endfor -%}
+{%- set ld_pos = ld_ancestors | length -%}
+{"@type":"ListItem","position":{{ ld_pos + 1 }},"name":{{ ld_title | json_encode | safe }}{% if current_url %},"item":{{ current_url | json_encode | safe }}{% endif %}}]}
+{%- endif -%}
+{%- if ld_record_type == "claim" -%}
+,{"@type":"Claim","name":{{ page.extra.clm_id | json_encode | safe }},"text":{{ page.extra.summary | json_encode | safe }},"inLanguage":{{ ld_lang | json_encode | safe }}{% if current_url %},"url":{{ current_url | json_encode | safe }}{% endif %}{% if ld_claim_sources | length > 0 %},"appearance":[{% for ld_sp in ld_claim_sources %}{{ jsonld::ld_source_node(sp=ld_sp, name=ld_sp.title) }}{% if not loop.last %},{% endif %}{% endfor %}]{% endif %}}
+{%- endif -%}
+{%- if ld_record_type == "source" -%}
+,{{ jsonld::ld_source_node(sp=page, name=ld_title) }}
+{%- endif -%}
+{%- for ld_item in ld_nav_items -%}
+,{"@type":"SiteNavigationElement","name":{{ ld_item.label | json_encode | safe }},"url":{{ get_url(path=ld_item.path) | json_encode | safe }}}
+{%- endfor -%}]}
+</script>
