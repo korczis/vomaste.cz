@@ -17,6 +17,8 @@ ověření a historií revizí.
 - **Paralelní práce více instancí**: [`docs/coop/PROTOCOL.md`](docs/coop/PROTOCOL.md),
   board [`docs/coop/TASKS.md`](docs/coop/TASKS.md)
 - **Interní audity obsahu**: [`docs/dossier-audit/`](docs/dossier-audit/)
+- **Licence**: [The Unlicense (public domain)](LICENSE.md) — kód, tooling
+  i původní obsah; práva třetích stran viz [Licence](#licence)
 
 > ⚠️ **Bezpečnostní hranice**: všechny kanály tohoto repozitáře (issues,
 > pull requesty, e-mail, Git historie) jsou **veřejné a trvalé**. Nikdy
@@ -293,9 +295,6 @@ s očekávaným commitem (`gh run list`, pak kontrola klíčových rout).
 
 ## Známá omezení (k 2026-07-29)
 
-- **Licence není určena** — repozitář nemá LICENSE; open-source záměr je
-  deklarován konstitucí, konkrétní licenci kódu / dat / redakčního textu
-  musí rozhodnout vlastník. Do té doby platí výchozí autorská práva.
 - JSON-LD žije vložené v HTML stránkách (viz výše); samostatný
   stahovatelný JSON-LD dataset, manifest ani stabilní exportní routy
   zatím neexistují.
@@ -315,6 +314,17 @@ s očekávaným commitem (`gh run list`, pak kontrola klíčových rout).
 | `zola: command not found` / build padá na Zole | Zola není v PATH nebo je jiná řada než **0.22.x** (CI pinuje 0.22.1). Instalace: <https://www.getzola.org/documentation/getting-started/installation/>; ověření `zola --version`. |
 | `validate:dossier`: „page status/text does not match table" | Ručně editovaná tabulka tvrzení nebo `[[extra.cases]]` bez regenerace detailních stránek. Spusť `node scripts/dossier/migrate-claims-to-pages.mjs` / `migrate-cases-to-pages.mjs` a build zopakuj. |
 | `npm run dev` „visí" | Nevisí — `zola serve` je server a sám neskončí. Čekej na řádek `Web server is available`, web běží na <http://127.0.0.1:1111>. |
+
+## Licence
+
+Kód, tooling, šablony, dokumentace i původní redakční text a data tohoto
+repozitáře jsou public domain pod **[The Unlicense](LICENSE.md)** —
+používej, forkuj a šiř bez omezení, atribuce vítána, ne vyžadována.
+Licence se **nevztahuje** na obsah třetích stran (citované články,
+titulky a úryvky zůstávají právy původních vydavatelů — repozitář je
+cituje, nerelicencuje) a nezbavuje přebírajícího vlastní právní
+odpovědnosti (ochrana osobnosti, GDPR, autorské právo jeho jurisdikce).
+Podrobné vymezení: [LICENSE.md](LICENSE.md).
 
 ## Hlubší dokumentace
 
