@@ -30,7 +30,8 @@
     {% for sub_path in entity_dossiers %}
     {% set d = get_section(path=sub_path) %}
     {% set counts = load_data(path="data/dossiers/" ~ d.extra.dossier ~ "/stats.toml") %}
-    <a href="{{ get_url(path=sub_path) | safe }}" class="registry-card">
+    {# permalink, not get_url(sub_path): sub_path is a content path and would 404 #}
+    <a href="{{ d.permalink | safe }}" class="registry-card">
       <span class="flex flex-wrap items-center gap-2">
         <span class="font-semibold text-white">{{ d.title }}</span>
       </span>
@@ -58,7 +59,7 @@
   <div class="grid gap-4 sm:grid-cols-2">
     {% for sub_path in aggregate_dossiers %}
     {% set d = get_section(path=sub_path) %}
-    <a href="{{ get_url(path=sub_path) | safe }}" class="registry-card border-dashed">
+    <a href="{{ d.permalink | safe }}" class="registry-card border-dashed">
       <span class="flex flex-wrap items-center gap-2">
         <span class="font-semibold text-white">{{ d.title }}</span>
         <span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-white/50">agregovaný pohled</span>

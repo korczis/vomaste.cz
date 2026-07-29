@@ -176,7 +176,10 @@
       {% endif %}
 
       <div class="mt-6 flex flex-wrap gap-3 text-sm">
-        <a href="{{ get_url(path=sub_path) | safe }}" class="rounded-lg border border-white/15 px-4 py-2 text-white/80 no-underline hover:border-white/30 hover:text-white">Otevřít dossier</a>
+        {# sub_path is a content path ("dossiers/<slug>/_index.md"); get_url() would
+           emit it verbatim under base_url and 404. The section's own permalink is
+           the built URL. #}
+        <a href="{{ dossier.permalink | safe }}" class="rounded-lg border border-white/15 px-4 py-2 text-white/80 no-underline hover:border-white/30 hover:text-white">Otevřít dossier</a>
         <a href="{{ get_url(path='@/dossiers/' ~ dossier.extra.dossier ~ '/claims/_index.md') | safe }}" class="rounded-lg border border-white/15 px-4 py-2 text-white/80 no-underline hover:border-white/30 hover:text-white">Registr tvrzení</a>
         <a href="{{ get_url(path='@/dossiers/' ~ dossier.extra.dossier ~ '/sources/_index.md') | safe }}" class="rounded-lg border border-white/15 px-4 py-2 text-white/80 no-underline hover:border-white/30 hover:text-white">Registr zdrojů</a>
         <a href="{{ get_url(path='@/dossiers/' ~ dossier.extra.dossier ~ '/gaps/_index.md') | safe }}" class="rounded-lg border border-white/15 px-4 py-2 text-white/80 no-underline hover:border-white/30 hover:text-white">Registr mezer</a>
