@@ -26,13 +26,13 @@ skip_prefixes = ["https://www.irozhlas.cz/"]
 locale = "cs_CZ"
 lang = "cs"
 
-# SVG so it needs no build step / rasterizer; note that Facebook/LinkedIn
-# don't render SVG og:image previews (Twitter/X, Slack, Discord do) — swap
-# for a rendered PNG/JPG at the same dimensions if those platforms matter.
-og_image = "images/og-image.svg"
+# JPEG 1200×630 (ořez z hero ilustrace, static/images/og-image.jpg) —
+# LinkedIn/Facebook SVG og:image nevykreslují, proto rastr. Původní SVG
+# (images/og-image.svg) zůstává v repu jako zdrojová varianta.
+og_image = "images/og-image.jpg"
 og_image_width = 1200
 og_image_height = 630
-og_image_type = "image/svg+xml"
+og_image_type = "image/jpeg"
 
 seo_type = "WebPage"
 og_type = "website"
