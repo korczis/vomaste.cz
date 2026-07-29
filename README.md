@@ -23,7 +23,7 @@ ověření a historií revizí.
   zranitelností**: [SECURITY.md](SECURITY.md) (soukromě, ne issue)
 
 > ⚠️ **Bezpečnostní hranice**: všechny kanály tohoto repozitáře (issues,
-> pull requesty, e-mail, Git historie) jsou **veřejné a trvalé**. Nikdy
+> pull requesty, Git historie) jsou **veřejné a trvalé**. Nikdy
 > sem nevkládejte důvěrné dokumenty, identitu zdrojů, osobní kontakty
 > ani nepublikovaný citlivý materiál. Git nezapomíná — smazaný commit
 > přežívá ve forcích a cache. Projekt **nemá** zavedený důvěrný intake
