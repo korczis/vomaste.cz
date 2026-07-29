@@ -48,6 +48,8 @@ const CLAIM_SUBJECTS = {
   "CLM-31": [T], "CLM-32": [T], "CLM-33": [T], "CLM-34": [T], "CLM-35": SHARED,
   "CLM-36": SHARED, "CLM-37": SHARED, "CLM-38": [T], "CLM-39": [T], "CLM-40": [M],
   "CLM-41": [T], "CLM-42": [T], "CLM-43": [M], "CLM-44": [T],
+  // CLM-45: odložení případu fotografie (hajlování) pro promlčení, 11/2024 — čistě Turek.
+  "CLM-45": [T],
 };
 
 // Entity (graph node) classification: SHARED iff the entity has a direct
@@ -84,6 +86,8 @@ const RELATION_SUBJECTS = {
   "edge-macinka-mzp2026": [M], "edge-cerveny-mzp2026": [M],
   "edge-macinka-cerveny": [M], "edge-nehoda2026-policie": [T],
   "edge-homolce-nehoda2026": [T], "edge-trestniozn-statnizastupitelstvi": [T],
+  // Odložení trestního oznámení policií (audit 2026-07-29) — čistě Turek.
+  "edge-trestniozn-policie": [T],
   "edge-kauza2025-policie": [T], "edge-turek-zapperclub": [T],
   "edge-zapperclub-mzdrav": [T], "edge-zapperclub-szpi": [T],
   "denik-cz-turek-ministr": [T],

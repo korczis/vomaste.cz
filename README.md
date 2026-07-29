@@ -2,9 +2,33 @@
 
 Static site generated with [Zola](https://www.getzola.org/), built and deployed to GitHub Pages via GitHub Actions.
 
-## What this is
+## Co to je
 
-vomaste.cz is a general platform for neutral, source-cited "dossiers" about publicly reported controversies of public figures. It currently hosts one dossier (Petr Macinka, Filip Turek) — see `AGENTS.md` for the exact, dated scope of authorization and the editorial rules it's written under. The data model, templates, and rules are designed generically so a future dossier could reuse them, subject to a new explicit owner authorization.
+vomaste.cz je **otevřený, fork-friendly, Git-native systém komunitní
+veřejné inteligence** — Open Intelligence Commons. Kdokoli může převzít
+tooling, založit vlastní větev výzkumu, přidat strukturovaná data,
+doložit vztahy důkazy, projít automatickými i lidskými kontrolami a
+vrátit výsledek upstreamu. Úplná konstituce — identita, trvalé
+invarianty, architektura dvou zón (veřejný repozitář vs. chráněný
+intake), whistleblower-ohleduplná pravidla, test veřejného zájmu a
+governance — žije v
+[`docs/constitution/OPEN_INTELLIGENCE_COMMONS.md`](docs/constitution/OPEN_INTELLIGENCE_COMMONS.md)
+a je závazná pro každý příspěvek.
+
+Systém existuje k dokumentaci **doložených, atribuovaných, přiměřených
+a přezkoumatelných** vztahů a jednání ve veřejném zájmu — přesně
+rozlišuje fakta, citace, tvrzení, rozpory a otevřené otázky. *Není* to
+veřejné skladiště podezření: „šedá" ani „černá" tu nikdy není verdikt.
+
+**Poctivý aktuální stav (k 2026-07-29)**: repozitář dnes hostí dossiery
+o Petru Macinkovi a Filipu Turkovi — přesný, datovaný, append-only
+rozsah autorizace a redakční pravidla viz `AGENTS.md`. Generalizace
+platformy (dossiery a entity jako čistá data, žádné hardcodované
+subjekty) aktivně probíhá (`docs/coop/TASKS.md`). Příspěvkový tooling
+(balíčky, CLI, sémantický diff, fork starter kit) ani jakýkoli důvěrný
+intake kanál **zatím neexistují** — každý kanál, který tento repozitář
+dnes nabízí (issues, pull requesty, e-mail), je veřejný a nesmí se
+používat pro důvěrný materiál nebo materiál identifikující zdroj.
 
 Every dossier is built on three cross-referenced registries:
 

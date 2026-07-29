@@ -33,6 +33,15 @@ before touching `content/`, `templates/`, or `scripts/dossier/`.
 - When in doubt about whether a piece of content falls inside the
   currently authorized scope, stop and ask — do not extend coverage to a
   new person, company, or controversy on your own judgment.
+- Projekt je Open Intelligence Commons — přečti si a řiď se
+  `docs/constitution/OPEN_INTELLIGENCE_COMMONS.md` (závazné invarianty
+  shrnuty v AGENTS.md). Nad všemi kompromisy pohodlí dominují dvě
+  pravidla: nic z chráněné intake zóny (nepublikované podněty, citlivé
+  důkazy, materiál identifikující zdroj) nesmí nikdy vstoupit do tohoto
+  veřejného repozitáře ani jeho Git historie; a žádný text v
+  dokumentaci ani UI nesmí tvrdit bezpečnostní/příspěvkové schopnosti
+  (bezpečný intake, anonymita, příspěvkové CLI), které nejsou skutečně
+  implementované a vynucované.
 - Multi-instance co-op: when several Claude Code instances work this repo
   in parallel, follow `docs/coop/PROTOCOL.md`. Check
   `scripts/coop/coop.sh status` at session start (a SessionStart hook

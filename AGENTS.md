@@ -392,6 +392,44 @@ claim, that is a bug, not a feature; the underlying record is still
 exactly one canonical record per AGENTS.md's existing single-source-of-
 truth rule.
 
+## Open Intelligence Commons — konstituční invarianty (závazné)
+
+Přijato 2026-07-29 na pokyn vlastníka webu. Plné znění:
+`docs/constitution/OPEN_INTELLIGENCE_COMMONS.md`. Řídí *platformu*;
+nikdy nerozšiřuje rozsah pokrytí konkrétních osob v append-only logu
+výše — v otázkách rozsahu vždy vítězí log. Nepodkročitelné jádro pro
+každého agenta:
+
+1. Vše veřejné je datově řízené a trackované v Gitu; veřejná data se
+   nikdy nemění potichu a narativ se nikdy nestává paralelním úložištěm
+   pravdy.
+2. Každé podstatné tvrzení zůstává inspektovatelné od začátku do konce
+   (výrok, stav, zdroje, data, reakce, historie) a stavy nejistoty
+   (tvrzené/sporné/neověřené/procesní/…) se nikdy neslévají do
+   generických „faktů".
+3. Forkovatelnost je vlastnost: žádný hardcodovaný branding instance,
+   privátní infrastruktura, skrytá API ani nezdokumentované build
+   know-how v core toolingu.
+4. Bezpečnost má přednost před pohodlím. **Materiál zóny B
+   (nepublikované podněty, citlivé důkazy, metadata identifikující
+   zdroj) nesmí nikdy vstoupit do tohoto veřejného repozitáře ani jeho
+   historie** — žádné výjimky, žádné „dočasně". Git nezapomíná.
+5. Nikdy nenaznačuj, že veřejný kanál je důvěrný; nikdy nestav falešný
+   „bezpečný" intake; nikdy nepoužívej slovník typu „anonymní",
+   „nevystopovatelné", „100% bezpečné". Poctivě říkej, co existuje a co
+   ne.
+6. Výzkumné stopy ≠ otevřené otázky ≠ publikovaná tvrzení; mezi
+   úrovněmi se nic nepovyšuje jinak než přezkumem. Žádná trust skóre,
+   žádná gamifikace obvinění, žádný doxxing (anti-doxxing výčet v
+   konstituci je kategorický).
+7. Každý nepříznivý záznam musí projít testem veřejného zájmu (veřejná
+   funkce nebo zdroj, přiměřenost, zvážená méně invazivní alternativa).
+   „Už to někde na internetu je" není odůvodnění.
+8. Politiky musí vynucovat tooling nebo review — politika, kterou nic
+   nevynucuje, se nepočítá jako implementovaná, a README/dokumentace
+   nikdy neinzeruje schopnosti (bezpečný intake, příspěvkové CLI,
+   federace), dokud neexistují.
+
 ## Metadata
 
 Metadata (title, description, canonical, Open Graph) is declared once in
