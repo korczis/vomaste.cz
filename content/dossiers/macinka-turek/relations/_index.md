@@ -10,7 +10,7 @@ lang = "cs"
 seo_type = "CollectionPage"
 +++
 
-Textová, no-JS rovnocenná alternativa k [interaktivnímu grafu vztahů](@/dossiers/macinka-turek/_index.md#graf-vztahu)
+Textová, no-JS rovnocenná alternativa k [interaktivnímu grafu vztahů](../#graf-vztahu)
 — stejná data, ne zjednodušená legenda. Každý vztah (zdrojová entita →
 typ vztahu → cílová entita) je samostatný záznam s vlastním stavem,
 podporujícími tvrzeními a zdroji.

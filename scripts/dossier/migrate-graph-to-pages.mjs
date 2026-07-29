@@ -205,7 +205,10 @@ ${bodyLines.join("\n")}
     } else {
       const statusText = { corroborated: "nezávisle potvrzený fakt", quote: "citovaný výrok, ne hodnocení tohoto webu", disputed: "sporné, neuzavřené tvrzení" }[e.status] || e.status;
       bodyLines.push(
-        `Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/${SLUG}/_index.md#graf-vztahu). Status: ${statusText}.`,
+        // Relative, not `@/...#graf-vztahu`: the graf-vztahu anchor is emitted by
+        // templates/dossier.html, and Zola validates `@/` anchors against the
+        // target page's Markdown headings only — it would fail the build.
+        `Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Status: ${statusText}.`,
       );
     }
     const front = `+++
