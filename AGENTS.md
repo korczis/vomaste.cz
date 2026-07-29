@@ -497,3 +497,42 @@ topic, controversy, or named third party is authorized by it. Claim
 texts, statuses, labels, and the procedural-outcome phrasing move
 byte-identically; the single-source-of-truth and two-representations
 rules continue to apply per entity dossier.
+
+### Rozšíření rozsahu, 2026-07-30: finanční a majetková vrstva
+
+Autorizováno vlastníkem webu, explicitně a on the record, 2026-07-30
+(„autorizuji finanční vrstvu, doplň záznam do logu“) — v návaznosti na
+nález redakčního auditu z 2026-07-29 (docs/dossier-audit/
+OPEN_QUESTIONS.md, bod 12), že tato vrstva nebyla v logu explicitně
+vyjmenována. Dossier smí pokrývat, pro oba již autorizované subjekty
+(Petr Macinka, Filip Turek), finanční, majetkovou a podnikatelskou
+vrstvu v rozsahu, v jakém je již publikována jmenovanými, nezávislými
+veřejnými zdroji, konkrétně:
+
+- Macinkův původně nepřiznaný 20% podíl v GMR GAS UA LLC, jeho
+  dodatečné přiznání a hrozící pokutu (Investigace.cz, Seznam Zprávy);
+- rejstříkové firemní a spolkové vazby obou subjektů (strojově
+  agregovaná data Hlídače státu, ověřená proti ARES) — vedené jako fakt
+  vazby, nikdy jako implikace pochybení;
+- osobní a spolkové dary politickým stranám (vč. Klubu motoristů z.s.);
+- povinně zveřejněné dárcovství kampaně PS 2025 (UDHPSH) včetně
+  jmenovaných velkých dárců — Boris Šťastný, František Fabičovic,
+  Richard Chlad — a u Chlada včetně citovaným zpravodajstvím popsané
+  dřívější osobní vazby na Radovana Krejčíře a rozporu mezi oficiálně
+  evidovanou a jím veřejně uváděnou částkou podpory;
+- nemovitosti Filipa Turka v rozsahu citovaného zpravodajství (pozemek
+  v Praze-Dubči, byt na Strahově).
+
+Limity: jmenovaní dárci a další třetí osoby vystupují **výhradně jako
+záznam vazby** v rozsahu povinného zveřejnění a citovaného zpravodajství
+— nestávají se tím samostatnými subjekty dossieru a žádná jejich vlastní
+kauza se bez nové, samostatné autorizace nepřidává. Zmínka Radovana
+Krejčíře je pouze charakteristikou převzatou z citovaného zdroje. Platí
+stejná zdrojová disciplína jako pro zbytek dossieru (jmenovaný, datovaný
+zdroj s URL; stav dle síly důkazu; rozpory zdokumentované, ne zamlčené).
+
+Pro vyloučení pochybností tento záznam zároveň potvrzuje, že vlákno
+jmenování ministrem životního prostředí (odmítnutí prezidentem,
+zmocněnecká role, ohlášená a nepodaná žaloba, jmenování Igora Červeného)
+je součástí již autorizovaného pokrytí veřejné politické kariéry z
+2026-07-21 — nejde o nové téma.

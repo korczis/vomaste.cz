@@ -15,7 +15,7 @@ subject_entities = ["macinka"]
 
 [extra.authorization]
 authorized = true
-record_ids = ["AUTH-2026-07-21-A", "AUTH-2026-07-21-B"]
+record_ids = ["AUTH-2026-07-21-A", "AUTH-2026-07-21-B", "AUTH-2026-07-30-A"]
 +++
 
 Petr Macinka je předseda hnutí Motoristé sobě a člen vlády — v období od

@@ -27,3 +27,10 @@ authorized_at = "2026-07-22"
 subjects = ["turek"]
 agents_md_section = "Scope extension, 2026-07-22: additional controversies"
 scope_summary = "Criminal complaint (domestic violence/rape) and its statute-of-limitations closure; 2017 Saudi embassy incident; 2026 unauthorized-structure fines; Zapper Club and the Ministry of Health warning; racing-career record; diplomat-meetings criticism."
+
+[[authorizations]]
+id = "AUTH-2026-07-30-A"
+authorized_at = "2026-07-30"
+subjects = ["macinka", "turek"]
+agents_md_section = "Rozšíření rozsahu, 2026-07-30: finanční a majetková vrstva"
+scope_summary = "Finanční/majetková/podnikatelská vrstva: GMR GAS UA LLC, rejstříkové vazby, dary stranám, dárci kampaně PS 2025 (Šťastný, Fabičovic, Chlad vč. citované vazby na Krejčíře a rozporu částek), Turkovy nemovitosti. Třetí osoby jen jako záznam vazby; potvrzeno, že vlákno jmenování ministrem ŽP spadá pod autorizaci politické kariéry z 2026-07-21."

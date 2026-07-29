@@ -24,7 +24,7 @@ reviewed_at = "2026-07-29"
 
 [extra.authorization]
 authorized = true
-record_ids = ["AUTH-2026-07-21-A", "AUTH-2026-07-21-B", "AUTH-2026-07-22-A"]
+record_ids = ["AUTH-2026-07-21-A", "AUTH-2026-07-21-B", "AUTH-2026-07-22-A", "AUTH-2026-07-30-A"]
 # Overview stat tiles (sources/cases/claims/gaps counts) are no longer
 # hand-typed here — templates/dossier.html computes them at build time from
 # data/dossiers/macinka-turek/stats.toml (see scripts/dossier/generate-stats.mjs),

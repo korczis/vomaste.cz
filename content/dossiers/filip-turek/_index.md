@@ -15,7 +15,7 @@ subject_entities = ["turek"]
 
 [extra.authorization]
 authorized = true
-record_ids = ["AUTH-2026-07-21-A", "AUTH-2026-07-21-B", "AUTH-2026-07-22-A"]
+record_ids = ["AUTH-2026-07-21-A", "AUTH-2026-07-21-B", "AUTH-2026-07-22-A", "AUTH-2026-07-30-A"]
 +++
 
 Filip Turek je poslanec za hnutí Motoristé sobě, bývalý europoslanec a

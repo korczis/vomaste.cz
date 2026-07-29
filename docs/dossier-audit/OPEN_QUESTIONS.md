@@ -42,17 +42,16 @@ mezitím přesunuty dolů do „Vyřešeno“, ať je vidět skutečná fronta.
     (allowlist prázdný/odůvodněný) a otevřít T-010 (JSON-LD exportní
     routy + manifest datasetu).
 
-## Governance — čeká na rozhodnutí vlastníka (jediná blokovaná položka)
+## Governance
 
-12. **Pokrytí finanční/majetkové vrstvy v autorizačním logu.**
-    Append-only log v AGENTS.md explicitně vyjmenovává kauzy, ale
-    majetkovou/dárcovskou vrstvu (CLM-14/15, 20–24, 34–37: GMR GAS,
-    rejstříkové vazby, dárci kampaně vč. zmínky Chlad/Krejčíř, nákupy
-    nemovitostí) a vlákno ministerské nominace (CLM-38–40, 43–44)
-    nevyjmenovává. Dá se číst pod „public political careers“ + GAP-04/05,
-    ale standard logu je explicitní výčet. **Doporučení: vlastník buď
-    doplní potvrzující autorizační záznam (nová datovaná subsekce), nebo
-    nařídí odstranění.** Tento audit obsah nerozšířil ani nemazal.
+12. ~~Pokrytí finanční/majetkové vrstvy v autorizačním logu~~ →
+    **VYŘEŠENO 2026-07-30**: vlastník autorizoval on the record
+    („autorizuji finanční vrstvu, doplň záznam do logu"); zapsáno jako
+    „Rozšíření rozsahu, 2026-07-30" v AGENTS.md + AUTH-2026-07-30-A
+    v data/authorizations.toml, referencováno všemi třemi dossiery.
+    Záznam potvrzuje i výklad, že vlákno ministerské nominace spadá pod
+    autorizaci politické kariéry z 2026-07-21. Žádná blokovaná položka
+    nezbývá.
 
 ## Vyřešeno (od 2026-07-29)
 
