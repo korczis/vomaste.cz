@@ -1,5 +1,7 @@
 # vomaste.cz
 
+[![Build & Deploy](https://github.com/korczis/vomaste.cz/actions/workflows/deploy.yml/badge.svg)](https://github.com/korczis/vomaste.cz/actions/workflows/deploy.yml)
+
 Otevřený, Git-native systém pro tvorbu a publikaci dohledatelných
 dossierů ve veřejném zájmu. Tvrzení, zdroje, entity, kauzy a vztahy jsou
 strukturovaná, verzovaná data; validují se reprodukovatelným toolingem a
@@ -56,8 +58,9 @@ ručně psaný obsah (content/) + strukturovaná data (data/)
 → validátory (registr tvrzení/zdrojů, graf, autorizace, typy dossierů, navigace)
 → generátory (statistiky, route manifest, search index, globální graf)
 → Tailwind + esbuild (assets)
-→ zola build (statické HTML)
+→ zola build (statické HTML se strukturovanými daty JSON-LD)
 → verify:anchors (kotvy v hotovém HTML)
+→ verify:jsonld (validita a poctivost strukturovaných dat)
 → GitHub Actions → GitHub Pages
 ```
 
@@ -106,7 +109,31 @@ nasaditelný stav. Generované soubory (`data/dossiers/*/stats.toml`,
 Trvalá pravidla: procesní výsledek (odložení, promlčení, nepravomocné
 rozhodnutí) se **pokaždé** odlišuje od meritorního rozhodnutí o
 vině/pravdě; derivativní články jednoho původu nejsou korroborace;
-povýšení stavu vyžaduje nový důkaz, nikdy jen přeznačení.
+povýšení stavu vyžaduje nový důkaz, nikdy jen přeznačení. Ověření, že
+výrok padl, není ověřením jeho obsahu.
+
+## Strukturovaná data (JSON-LD)
+
+Každá stránka vydává při buildu jeden blok `application/ld+json`
+(`@graph`), generovaný centrálně v `templates/base.html` z front matter a
+registru `data/dossiers.toml` — žádné jméno, slug ani URL nejsou v
+šablonách napevno:
+
+- **WebSite / WebPage / ProfilePage** + **BreadcrumbList** a navigace
+  (`SiteNavigationElement`) na každé stránce;
+- **Person** výhradně na hlavní stránce entity dossieru (agregátní pohled
+  osobu nikdy nevydává);
+- **Claim** na stránce tvrzení: text tvrzení + `appearance` s citovanými
+  zdroji; na stránkách zdrojů citační uzel (vydavatel, URL, datum).
+
+Záměrné omezení: strukturovaná data **nenesou žádné hodnocení
+pravdivosti** (`ClaimReview`, `reviewRating` apod.) — stavy popisují
+zdrojování, ne rozhodnutí o pravdě. `npm run verify:jsonld` (součást
+build gate) po každém buildu parsuje všechny bloky, kontroluje povinná
+pole, pokrytí (každé tvrzení na disku = jeden `Claim` uzel) a build
+shodí, kdyby se hodnoticí typ kdekoli objevil. Data jsou vložená přímo
+v HTML stránkách; samostatné exportní routy (`/data/*.jsonld`,
+manifest datasetu) zatím neexistují — viz Známá omezení.
 
 ## Stack a architektura
 
@@ -154,8 +181,9 @@ Plná kvalitní brána (stejná jako CI):
 npm run build
 ```
 
-Úspěch = poslední řádek `OK — every anchor referenced in the source
-resolves in the built HTML.` a nulový exit kód.
+Úspěch = nulový exit kód a závěrečné `OK` řádky obou post-build kontrol
+(kotvy a JSON-LD), poslední je `OK — all JSON-LD parses, carries
+required fields, and contains no truth-rating markup.`
 
 ## Referenční příkazy
 
@@ -169,6 +197,7 @@ resolves in the built HTML.` a nulový exit kód.
 | `npm run validate:dossier-types` | invarianty entity/aggregate dossierů |
 | `npm run validate:navigation` | navigace odpovídá registru a existujícím routám |
 | `npm run verify:anchors` | po buildu: každá kotva ze zdrojů existuje v HTML |
+| `npm run verify:jsonld` | po buildu: validita, pokrytí a poctivost JSON-LD (žádné truth ratingy) |
 | `npm run lint:historical-coupling` | de-specializační brána: žádná jména subjektů ve strukturálním kódu |
 | `node scripts/dossier/migrate-claims-to-pages.mjs` | přegenerovat stránky tvrzení z tabulky |
 | `node scripts/dossier/migrate-cases-to-pages.mjs` | přegenerovat stránky kauz z front matter |
@@ -197,6 +226,38 @@ resolves in the built HTML.` a nulový exit kód.
    `relations/edge-*.md`; hrana bez tvrzení a zdroje neprojde validací.
 6. `npm run build` — červená znamená chybějící zdroj, kotvu, referenci
    nebo drift mezi tabulkou a stránkami. Nikdy neobcházet.
+
+## Příspěvky (pull requesty)
+
+Standardní GitHub flow: fork → větev → změna → zelený `npm run build` →
+pull request. Každý příspěvek prochází lidským review proti redakčním
+pravidlům a konstituci; **obsah o reálných osobách navíc vyžaduje
+předchozí autorizaci vlastníka v append-only logu `AGENTS.md`** — PR
+rozšiřující pokrytí bez ní nebude přijat, jakkoli je téma „veřejně
+zajímavé". Automatika kontroluje integritu (zdroje, kotvy, parity,
+stavy), **nikoli pravdivost** — tu žádný nástroj nerozhodne, od toho je
+review a zdrojová disciplína. Samostatné `CONTRIBUTING.md`, příspěvkové
+CLI ani sémantický diff zatím neexistují; do té doby je normou tento
+README + `AGENTS.md`. Pamatuj: pull requesty jsou veřejné (viz
+bezpečnostní hranice nahoře).
+
+## Nový dossier
+
+Nový dossier je datová operace, ne zásah do jádra:
+
+1. autorizace subjektu vlastníkem — nový datovaný záznam v append-only
+   logu `AGENTS.md` (bez něj stop);
+2. záznam v registru `data/dossiers.toml` (slug, titul, `dossier_type`);
+3. obsahový strom `content/dossiers/<slug>/` (hlavní `_index.md` +
+   podregistry) a data `data/dossiers/<slug>/` (`graph.toml`,
+   `updates.toml`);
+4. položka v `data/navigation.toml` — `validate:navigation` vynucuje, že
+   entity dossier v navigaci je a odkazuje na existující routy;
+5. `npm run build` — `validate:dossier-types` a spol. vynucují zbytek.
+
+Zbytková historická vazba na výchozí dossiery (viz Fork níže) se právě
+odstraňuje; do jejího dokončení může nový dossier vyžadovat drobné ruční
+úpravy nad rámec kroků výše.
 
 ## Fork a nezávislé nasazení
 
@@ -235,8 +296,9 @@ s očekávaným commitem (`gh run list`, pak kontrola klíčových rout).
 - **Licence není určena** — repozitář nemá LICENSE; open-source záměr je
   deklarován konstitucí, konkrétní licenci kódu / dat / redakčního textu
   musí rozhodnout vlastník. Do té doby platí výchozí autorská práva.
-- JSON-LD zatím pokrývá jen metadata stránek a navigaci; verzovaný
-  JSON-LD export datasetu je ve výstavbě (koop task T-002).
+- JSON-LD žije vložené v HTML stránkách (viz výše); samostatný
+  stahovatelný JSON-LD dataset, manifest ani stabilní exportní routy
+  zatím neexistují.
 - Žádný důvěrný intake kanál; žádné příspěvkové CLI, sémantický diff ani
   fork starter kit — viz roadmapa v konstituci, § 11.
 - DNS pro vomaste.cz nesměřuje na Pages; `base_url` je dočasně
@@ -245,6 +307,14 @@ s očekávaným commitem (`gh run list`, pak kontrola klíčových rout).
   `lint:historical-coupling` není součástí build gate.
 - Vyhledávací index a `data/generated/*` jsou interní artefakty buildu,
   ne stabilní veřejné API.
+
+## Řešení potíží
+
+| Příznak | Příčina a oprava |
+|---|---|
+| `zola: command not found` / build padá na Zole | Zola není v PATH nebo je jiná řada než **0.22.x** (CI pinuje 0.22.1). Instalace: <https://www.getzola.org/documentation/getting-started/installation/>; ověření `zola --version`. |
+| `validate:dossier`: „page status/text does not match table" | Ručně editovaná tabulka tvrzení nebo `[[extra.cases]]` bez regenerace detailních stránek. Spusť `node scripts/dossier/migrate-claims-to-pages.mjs` / `migrate-cases-to-pages.mjs` a build zopakuj. |
+| `npm run dev` „visí" | Nevisí — `zola serve` je server a sám neskončí. Čekej na řádek `Web server is available`, web běží na <http://127.0.0.1:1111>. |
 
 ## Hlubší dokumentace
 
