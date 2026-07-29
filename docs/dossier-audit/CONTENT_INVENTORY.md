@@ -1,0 +1,203 @@
+# Pracovní inventura Zola článků (rozšířená)
+
+Vygenerováno 2026-07-30 · 197 článků · sloupec AKCE je prázdný — vyplní se podle instrukcí vlastníka.
+
+| # | ID | Typ | Titul | Stav | Subjekty | Klíčová meta | Poslední commit | Soubor | AKCE |
+|---|---|---|---|---|---|---|---|---|---|
+| 1 |  | page | vomaste.cz |  |  |  | d128c8e 2026-07-29 | `_index.md` | |
+| 2 |  | page | Dokumentace |  |  |  | 0db2169 2026-07-30 | `dokumentace/_index.md` | |
+| 3 |  | page | AGENTS.md — pravidla a autorizační log |  |  |  | 0db2169 2026-07-30 | `dokumentace/agents.md` | |
+| 4 |  | page | Bezpečnostní politika |  |  |  | 0db2169 2026-07-30 | `dokumentace/bezpecnost.md` | |
+| 5 |  | page | Konstituce — Open Intelligence Commons |  |  |  | 0db2169 2026-07-30 | `dokumentace/konstituce.md` | |
+| 6 |  | page | Co-op protokol pro více instancí |  |  |  | 0db2169 2026-07-30 | `dokumentace/koop-protokol.md` | |
+| 7 |  | page | Licence |  |  |  | 0db2169 2026-07-30 | `dokumentace/licence.md` | |
+| 8 |  | page | Jak přispívat |  |  |  | 0db2169 2026-07-30 | `dokumentace/prispivani.md` | |
+| 9 |  | page | Dossiery |  |  |  | ef57a82 2026-07-29 | `dossiers/_index.md` | |
+| 10 |  | page | Filip Turek |  |  |  | e4c652f 2026-07-29 | `dossiers/filip-turek/_index.md` | |
+| 11 |  | page | Kauzy — Filip Turek |  |  |  | e4c652f 2026-07-29 | `dossiers/filip-turek/cases/_index.md` | |
+| 12 |  | page | Tvrzení — Filip Turek |  |  |  | e4c652f 2026-07-29 | `dossiers/filip-turek/claims/_index.md` | |
+| 13 |  | page | Entity — Filip Turek |  |  |  | e4c652f 2026-07-29 | `dossiers/filip-turek/entities/_index.md` | |
+| 14 |  | page | Evidence — Filip Turek |  |  |  | 325e74a 2026-07-29 | `dossiers/filip-turek/evidence/_index.md` | |
+| 15 |  | page | Mezery — Filip Turek |  |  |  | e4c652f 2026-07-29 | `dossiers/filip-turek/gaps/_index.md` | |
+| 16 |  | page | Vztahy — Filip Turek |  |  |  | e4c652f 2026-07-29 | `dossiers/filip-turek/relations/_index.md` | |
+| 17 |  | page | Zdroje — Filip Turek |  |  |  | e4c652f 2026-07-29 | `dossiers/filip-turek/sources/_index.md` | |
+| 18 |  | dossier | Dossier — Petr Macinka a Filip Turek | status-disputed | Petr Macinka Filip Turek |  | 1fdd4bb 2026-07-30 | `dossiers/macinka-turek/_index.md` | |
+| 19 |  | page | Registr kauz |  |  |  | 325e74a 2026-07-29 | `dossiers/macinka-turek/cases/_index.md` | |
+| 20 | CASE-01 | case | Fotografie a sbírka svícnů | status-disputed | macinka turek | období=2024 · label=Fotografie: odloženo pro promlčení · claims=CLM-04 CLM-05 CLM-06 CLM-45 | e3c25ea 2026-07-29 | `dossiers/macinka-turek/cases/case-01.md` | |
+| 21 | CASE-02 | case | Trestní oznámení (domácí násilí, znásilnění) | status-disputed | turek | období=2025–2026 · label=Odloženo pro promlčení, ne rozhodnuto · claims=CLM-25 CLM-26 CLM-27 | e3c25ea 2026-07-29 | `dossiers/macinka-turek/cases/case-02.md` | |
+| 22 | CASE-03 | case | Smazané příspěvky na Facebooku | status-disputed | turek | období=2025–2026 · label=Sporné, neuzavřeno · claims=CLM-07 CLM-08 CLM-09 CLM-19 CLM-41 CLM-42 | e3c25ea 2026-07-29 | `dossiers/macinka-turek/cases/case-03.md` | |
+| 23 | CASE-04 | case | Dopravní nehoda | status-ongoing | turek | období=červenec 2026 · label=Vyšetřování probíhá · claims=CLM-10 CLM-11 CLM-12 CLM-16 CLM-17 CLM-18 | e3c25ea 2026-07-29 | `dossiers/macinka-turek/cases/case-04.md` | |
+| 24 |  | page | Registr tvrzení |  |  |  | ef57a82 2026-07-29 | `dossiers/macinka-turek/claims/_index.md` | |
+| 25 | CLM-01 | claim | CLM-01 | status-corroborated | turek | sources=SRC-11 SRC-12 SRC-13 | 325e74a 2026-07-29 | `dossiers/macinka-turek/claims/clm-01.md` | |
+| 26 | CLM-02 | claim | CLM-02 | status-corroborated | turek | sources=SRC-11 SRC-13 | 325e74a 2026-07-29 | `dossiers/macinka-turek/claims/clm-02.md` | |
+| 27 | CLM-03 | claim | CLM-03 | status-corroborated | macinka | sources=SRC-11 SRC-13 | 325e74a 2026-07-29 | `dossiers/macinka-turek/claims/clm-03.md` | |
+| 28 | CLM-04 | claim | CLM-04 | status-corroborated | turek | sources=SRC-12 SRC-14 | 325e74a 2026-07-29 | `dossiers/macinka-turek/claims/clm-04.md` | |
+| 29 | CLM-05 | claim | CLM-05 | status-quote | turek | sources=SRC-12 SRC-14 | 325e74a 2026-07-29 | `dossiers/macinka-turek/claims/clm-05.md` | |
+| 30 | CLM-06 | claim | CLM-06 | status-quote | macinka turek | sources=SRC-12 SRC-14 | 325e74a 2026-07-29 | `dossiers/macinka-turek/claims/clm-06.md` | |
+| 31 | CLM-07 | claim | CLM-07 | status-single | turek | sources=SRC-15 | e3c25ea 2026-07-29 | `dossiers/macinka-turek/claims/clm-07.md` | |
+| 32 | CLM-08 | claim | CLM-08 | status-quote | turek | sources=SRC-16 | 325e74a 2026-07-29 | `dossiers/macinka-turek/claims/clm-08.md` | |
+| 33 | CLM-09 | claim | CLM-09 | status-disputed | turek | sources=SRC-15 SRC-16 SRC-22 | 325e74a 2026-07-29 | `dossiers/macinka-turek/claims/clm-09.md` | |
+| 34 | CLM-10 | claim | CLM-10 | status-single | turek | sources=SRC-02 | e3c25ea 2026-07-29 | `dossiers/macinka-turek/claims/clm-10.md` | |
+| 35 | CLM-11 | claim | CLM-11 | status-corroborated | turek | sources=SRC-06 SRC-07 | 325e74a 2026-07-29 | `dossiers/macinka-turek/claims/clm-11.md` | |
+| 36 | CLM-12 | claim | CLM-12 | status-corroborated | turek | sources=SRC-06 SRC-08 | 325e74a 2026-07-29 | `dossiers/macinka-turek/claims/clm-12.md` | |
+| 37 | CLM-13 | claim | CLM-13 | status-quote | macinka turek | sources=SRC-01 SRC-04 | 325e74a 2026-07-29 | `dossiers/macinka-turek/claims/clm-13.md` | |
+| 38 | CLM-14 | claim | CLM-14 | status-corroborated | macinka | sources=SRC-17 SRC-18 | e3c25ea 2026-07-29 | `dossiers/macinka-turek/claims/clm-14.md` | |
+| 39 | CLM-15 | claim | CLM-15 | status-quote | macinka | sources=SRC-17 SRC-18 | 325e74a 2026-07-29 | `dossiers/macinka-turek/claims/clm-15.md` | |
+| 40 | CLM-16 | claim | CLM-16 | status-single | turek | sources=SRC-19 | e3c25ea 2026-07-29 | `dossiers/macinka-turek/claims/clm-16.md` | |
+| 41 | CLM-17 | claim | CLM-17 | status-quote | turek | sources=SRC-20 | 325e74a 2026-07-29 | `dossiers/macinka-turek/claims/clm-17.md` | |
+| 42 | CLM-18 | claim | CLM-18 | status-single | turek | sources=SRC-20 | e3c25ea 2026-07-29 | `dossiers/macinka-turek/claims/clm-18.md` | |
+| 43 | CLM-19 | claim | CLM-19 | status-single | turek | sources=SRC-21 | e3c25ea 2026-07-29 | `dossiers/macinka-turek/claims/clm-19.md` | |
+| 44 | CLM-20 | claim | CLM-20 | status-single | turek | sources=SRC-23 | e3c25ea 2026-07-29 | `dossiers/macinka-turek/claims/clm-20.md` | |
+| 45 | CLM-21 | claim | CLM-21 | status-single | turek | sources=SRC-25 | e3c25ea 2026-07-29 | `dossiers/macinka-turek/claims/clm-21.md` | |
+| 46 | CLM-22 | claim | CLM-22 | status-single | macinka | sources=SRC-24 | e3c25ea 2026-07-29 | `dossiers/macinka-turek/claims/clm-22.md` | |
+| 47 | CLM-23 | claim | CLM-23 | status-single | macinka | sources=SRC-26 | e3c25ea 2026-07-29 | `dossiers/macinka-turek/claims/clm-23.md` | |
+| 48 | CLM-24 | claim | CLM-24 | status-single | macinka | sources=SRC-27 | e3c25ea 2026-07-29 | `dossiers/macinka-turek/claims/clm-24.md` | |
+| 49 | CLM-25 | claim | CLM-25 | status-corroborated | turek | sources=SRC-28 SRC-29 SRC-30 | 325e74a 2026-07-29 | `dossiers/macinka-turek/claims/clm-25.md` | |
+| 50 | CLM-26 | claim | CLM-26 | status-quote | turek | sources=SRC-29 SRC-30 | 325e74a 2026-07-29 | `dossiers/macinka-turek/claims/clm-26.md` | |
+| 51 | CLM-27 | claim | CLM-27 | status-corroborated | turek | sources=SRC-31 SRC-54 | e3c25ea 2026-07-29 | `dossiers/macinka-turek/claims/clm-27.md` | |
+| 52 | CLM-28 | claim | CLM-28 | status-single | turek | sources=SRC-32 | e3c25ea 2026-07-29 | `dossiers/macinka-turek/claims/clm-28.md` | |
+| 53 | CLM-29 | claim | CLM-29 | status-quote | turek | sources=SRC-32 | 325e74a 2026-07-29 | `dossiers/macinka-turek/claims/clm-29.md` | |
+| 54 | CLM-30 | claim | CLM-30 | status-single | turek | sources=SRC-33 | e3c25ea 2026-07-29 | `dossiers/macinka-turek/claims/clm-30.md` | |
+| 55 | CLM-31 | claim | CLM-31 | status-corroborated | turek | sources=SRC-34 SRC-35 | 325e74a 2026-07-29 | `dossiers/macinka-turek/claims/clm-31.md` | |
+| 56 | CLM-32 | claim | CLM-32 | status-single | turek | sources=SRC-36 | e3c25ea 2026-07-29 | `dossiers/macinka-turek/claims/clm-32.md` | |
+| 57 | CLM-33 | claim | CLM-33 | status-corroborated | turek | sources=SRC-36 SRC-37 | e3c25ea 2026-07-29 | `dossiers/macinka-turek/claims/clm-33.md` | |
+| 58 | CLM-34 | claim | CLM-34 | status-single | turek | sources=SRC-38 | e3c25ea 2026-07-29 | `dossiers/macinka-turek/claims/clm-34.md` | |
+| 59 | CLM-35 | claim | CLM-35 | status-corroborated | macinka turek | sources=SRC-39 SRC-40 | 325e74a 2026-07-29 | `dossiers/macinka-turek/claims/clm-35.md` | |
+| 60 | CLM-36 | claim | CLM-36 | status-corroborated | macinka turek | sources=SRC-41 SRC-42 | e3c25ea 2026-07-29 | `dossiers/macinka-turek/claims/clm-36.md` | |
+| 61 | CLM-37 | claim | CLM-37 | status-single | macinka turek | sources=SRC-43 | e3c25ea 2026-07-29 | `dossiers/macinka-turek/claims/clm-37.md` | |
+| 62 | CLM-38 | claim | CLM-38 | status-corroborated | turek | sources=SRC-44 SRC-45 | 325e74a 2026-07-29 | `dossiers/macinka-turek/claims/clm-38.md` | |
+| 63 | CLM-39 | claim | CLM-39 | status-quote | turek | sources=SRC-44 | 325e74a 2026-07-29 | `dossiers/macinka-turek/claims/clm-39.md` | |
+| 64 | CLM-40 | claim | CLM-40 | status-corroborated | macinka | sources=SRC-45 SRC-46 | e3c25ea 2026-07-29 | `dossiers/macinka-turek/claims/clm-40.md` | |
+| 65 | CLM-41 | claim | CLM-41 | status-corroborated | turek | sources=SRC-47 SRC-48 | 325e74a 2026-07-29 | `dossiers/macinka-turek/claims/clm-41.md` | |
+| 66 | CLM-42 | claim | CLM-42 | status-corroborated | turek | sources=SRC-47 SRC-48 | 325e74a 2026-07-29 | `dossiers/macinka-turek/claims/clm-42.md` | |
+| 67 | CLM-43 | claim | CLM-43 | status-corroborated | macinka | sources=SRC-49 SRC-50 | 325e74a 2026-07-29 | `dossiers/macinka-turek/claims/clm-43.md` | |
+| 68 | CLM-44 | claim | CLM-44 | status-corroborated | turek | sources=SRC-51 SRC-52 | 325e74a 2026-07-29 | `dossiers/macinka-turek/claims/clm-44.md` | |
+| 69 | CLM-45 | claim | CLM-45 | status-single | turek | sources=SRC-53 | e3c25ea 2026-07-29 | `dossiers/macinka-turek/claims/clm-45.md` | |
+| 70 |  | page | Evidence — tvrzení a zdroje |  |  |  | ef57a82 2026-07-29 | `dossiers/macinka-turek/evidence/_index.md` | |
+| 71 |  | page | Registr mezer |  |  |  | ef57a82 2026-07-29 | `dossiers/macinka-turek/gaps/_index.md` | |
+| 72 | GAP-01 | gap | GAP-01 — Výsledek policejního vyšetřování dopravní nehody |  | turek | priorita=vysoká · checked=2026-07-29 · claims=CLM-10 CLM-16 CLM-17 CLM-18 | e3c25ea 2026-07-29 | `dossiers/macinka-turek/gaps/gap-01.md` | |
+| 73 | GAP-02 | gap | GAP-02 — Dopad nehody na Turkovo poslanecké působení a Macinkovu pozic |  | macinka turek | priorita=vysoká · checked=2026-07-23 · claims=CLM-11 CLM-12 CLM-38 CLM-40 | e4c652f 2026-07-29 | `dossiers/macinka-turek/gaps/gap-02.md` | |
+| 74 | GAP-03 | gap | GAP-03 — Nezávislé ověření pravosti smazaných příspěvků |  | turek | priorita=vysoká · checked=2026-07-29 · claims=CLM-07 CLM-08 CLM-09 CLM-19 CLM-41 CLM-42 | e4c652f 2026-07-29 | `dossiers/macinka-turek/gaps/gap-03.md` | |
+| 75 | GAP-04 | gap | GAP-04 — Majetkové a podnikatelské zájmy |  | macinka turek | priorita=nízká · checked=2026-07-29 · claims=CLM-14 CLM-15 CLM-20 CLM-22 CLM-34 | e3c25ea 2026-07-29 | `dossiers/macinka-turek/gaps/gap-04.md` | |
+| 76 | GAP-05 | gap | GAP-05 — Financování kampaně |  | macinka turek | priorita=nízká · checked=2026-07-23 · claims=CLM-21 CLM-23 CLM-35 CLM-36 CLM-37 | e3c25ea 2026-07-29 | `dossiers/macinka-turek/gaps/gap-05.md` | |
+| 77 | GAP-06 | gap | GAP-06 — Výsledek stížnosti proti odložení trestního oznámení |  | turek | priorita=vysoká · checked=2026-07-29 · claims=CLM-25 CLM-26 CLM-27 | e3c25ea 2026-07-29 | `dossiers/macinka-turek/gaps/gap-06.md` | |
+| 78 |  | page | Registr vztahů |  |  |  | 1fdd4bb 2026-07-30 | `dossiers/macinka-turek/relations/_index.md` | |
+| 79 | edge-babis-nehoda2026 | relation | Andrej Babiš (premiér) — vyzval k odpovědnosti — Nehoda 2026 | corroborated | turek | babis→nehoda2026 · typ=RESPONDED_TO · claims=CLM-12 | 325e74a 2026-07-29 | `dossiers/macinka-turek/relations/edge-babis-nehoda2026.md` | |
+| 80 | edge-babis-vlada | relation | Andrej Babiš (premiér) — premiér — Vláda (ANO + SPD + Motoristé) | contextual | macinka turek | babis→vlada · typ=HOLDS_ROLE · claims= | e4c652f 2026-07-29 | `dossiers/macinka-turek/relations/edge-babis-vlada.md` | |
+| 81 | edge-cerveny-mzp2026 | relation | Igor Červený — jmenován ministrem (nahradil Macinku, 23. 2. 2026) — Jm | corroborated | macinka | cerveny→mzp2026 · typ=APPOINTED_AS · claims=CLM-43 | 325e74a 2026-07-29 | `dossiers/macinka-turek/relations/edge-cerveny-mzp2026.md` | |
+| 82 | edge-chlad-motoriste | relation | Richard Chlad (sponzor) — dar 638 864 Kč (2025, oficiálně) vs. tvrzené | disputed | macinka turek | chlad→motoriste · typ=DONATED_TO · claims=CLM-36 | 325e74a 2026-07-29 | `dossiers/macinka-turek/relations/edge-chlad-motoriste.md` | |
+| 83 | edge-homolce-nehoda2026 | relation | Nemocnice Na Homolce — provozovatel vozidla záchranné služby — Nehoda  | corroborated | turek | nemocnice-homolce→nehoda2026 · typ=ASSOCIATED_WITH_EVENT · claims=CLM-18 | 325e74a 2026-07-29 | `dossiers/macinka-turek/relations/edge-homolce-nehoda2026.md` | |
+| 84 | edge-kauza2025-policie | relation | Kauza 2025: smazané příspěvky — prověřování výroků i oznámení na Deník | corroborated | turek | kauza2025→policie · typ=PROCEDURALLY_CLOSED_BY · claims=CLM-41 CLM-42 | 325e74a 2026-07-29 | `dossiers/macinka-turek/relations/edge-kauza2025-policie.md` | |
+| 85 | edge-klubmotoristu-motoriste | relation | Klub motoristů, z.s. — dar 800 000 Kč (2024) — Motoristé sobě | corroborated | macinka | klubmotoristu→motoriste · typ=DONATED_TO · claims=CLM-23 | 325e74a 2026-07-29 | `dossiers/macinka-turek/relations/edge-klubmotoristu-motoriste.md` | |
+| 86 | edge-macinka-cerveny | relation | Petr Macinka — nahrazen ve funkci ministra ŽP — Igor Červený | corroborated | macinka | macinka→cerveny · typ=FOLLOWED_BY · claims=CLM-43 | 325e74a 2026-07-29 | `dossiers/macinka-turek/relations/edge-macinka-cerveny.md` | |
+| 87 | edge-macinka-gmrgas | relation | Petr Macinka — nepřiznaný 20% podíl — GMR GAS UA LLC (Kyjev) | disputed | macinka | macinka→gmrgas · typ=UNDISCLOSED_INTEREST_IN · claims=CLM-14 | 325e74a 2026-07-29 | `dossiers/macinka-turek/relations/edge-macinka-gmrgas.md` | |
+| 88 | edge-macinka-kauza2024 | relation | Petr Macinka — hájí (\ | quote | macinka turek | macinka→kauza2024 · typ=DEFENDED · claims=CLM-06 | 325e74a 2026-07-29 | `dossiers/macinka-turek/relations/edge-macinka-kauza2024.md` | |
+| 89 | edge-macinka-klubmotoristu | relation | Petr Macinka — statutární orgán — Klub motoristů, z.s. | corroborated | macinka | macinka→klubmotoristu · typ=HOLDS_ROLE · claims=CLM-22 | 325e74a 2026-07-29 | `dossiers/macinka-turek/relations/edge-macinka-klubmotoristu.md` | |
+| 90 | edge-macinka-motoriste | relation | Petr Macinka — předseda — Motoristé sobě | corroborated | macinka | macinka→motoriste · typ=HOLDS_ROLE · claims=CLM-03 | 325e74a 2026-07-29 | `dossiers/macinka-turek/relations/edge-macinka-motoriste.md` | |
+| 91 | edge-macinka-mzp2026 | relation | Petr Macinka — dočasně vede resort (do 2/2026) — Jmenování ministrem Ž | corroborated | macinka | macinka→mzp2026 · typ=APPOINTED_AS · claims=CLM-24 CLM-40 | 325e74a 2026-07-29 | `dossiers/macinka-turek/relations/edge-macinka-mzp2026.md` | |
+| 92 | edge-macinka-nehoda2026 | relation | Petr Macinka — hájí (\ | quote | macinka turek | macinka→nehoda2026 · typ=DEFENDED · claims=CLM-13 | 325e74a 2026-07-29 | `dossiers/macinka-turek/relations/edge-macinka-nehoda2026.md` | |
+| 93 | edge-motoriste-vlada | relation | Motoristé sobě — člen koalice — Vláda (ANO + SPD + Motoristé) | corroborated | macinka turek | motoriste→vlada · typ=MEMBER_OF · claims=CLM-03 | 325e74a 2026-07-29 | `dossiers/macinka-turek/relations/edge-motoriste-vlada.md` | |
+| 94 | edge-nehoda2026-policie | relation | Nehoda 2026 — vyšetřování (výsledek k datu poslední kontroly neuzavřen | corroborated | turek | nehoda2026→policie · typ=INVESTIGATED_BY · claims=CLM-10 CLM-16 CLM-18 | 325e74a 2026-07-29 | `dossiers/macinka-turek/relations/edge-nehoda2026-policie.md` | |
+| 95 | edge-pavel-mzp2026 | relation | Petr Pavel (prezident) — odmítl jmenovat — Jmenování ministrem ŽP (202 | corroborated | turek | pavel→mzp2026 · typ=DENIED · claims=CLM-38 | 325e74a 2026-07-29 | `dossiers/macinka-turek/relations/edge-pavel-mzp2026.md` | |
+| 96 | edge-trestniozn-policie | relation | Trestní oznámení (2025) — odloženo policií pro promlčení — procesní kr | corroborated | turek | trestniozn→policie · typ=PROCEDURALLY_CLOSED_BY · claims=CLM-27 | e3c25ea 2026-07-29 | `dossiers/macinka-turek/relations/edge-trestniozn-policie.md` | |
+| 97 | edge-trestniozn-statnizastupitelstvi | relation | Trestní oznámení (2025) — OSZ pro Prahu 4 odložení oznámilo; o stížnos | corroborated | turek | trestniozn→statni-zastupitelstvi · typ=SUBJECT_OF_PROCEEDING · claims=CLM-27 | e3c25ea 2026-07-29 | `dossiers/macinka-turek/relations/edge-trestniozn-statnizastupitelstvi.md` | |
+| 98 | edge-turek-ep | relation | Filip Turek — europoslanec 2024–2025 — Evropský parlament | corroborated | turek | turek→ep · typ=HOLDS_ROLE · claims=CLM-01 | 325e74a 2026-07-29 | `dossiers/macinka-turek/relations/edge-turek-ep.md` | |
+| 99 | edge-turek-greendeal | relation | Filip Turek — zmocněnec (do nehody) — Zmocněnec pro Green Deal | corroborated | turek | turek→greendeal · typ=APPOINTED_AS · claims=CLM-11 | 325e74a 2026-07-29 | `dossiers/macinka-turek/relations/edge-turek-greendeal.md` | |
+| 100 | edge-turek-kauza2024 | relation | Filip Turek — subjekt — Kauza 2024: fotografie a svícny | disputed | turek | turek→kauza2024 · typ=ASSOCIATED_WITH_EVENT · claims=CLM-04 | 325e74a 2026-07-29 | `dossiers/macinka-turek/relations/edge-turek-kauza2024.md` | |
+| 101 | edge-turek-kauza2025 | relation | Filip Turek — subjekt — Kauza 2025: smazané příspěvky | disputed | turek | turek→kauza2025 · typ=ASSOCIATED_WITH_EVENT · claims=CLM-07 | 325e74a 2026-07-29 | `dossiers/macinka-turek/relations/edge-turek-kauza2025.md` | |
+| 102 | edge-turek-motoriste | relation | Filip Turek — poslanec za — Motoristé sobě | corroborated | turek | turek→motoriste · typ=MEMBER_OF · claims=CLM-01 | 325e74a 2026-07-29 | `dossiers/macinka-turek/relations/edge-turek-motoriste.md` | |
+| 103 | edge-turek-mzp2026 | relation | Filip Turek — navrhován, nejmenován (1/2026) — Jmenování ministrem ŽP  | corroborated | turek | turek→mzp2026 · typ=ASSOCIATED_WITH_EVENT · claims=CLM-38 | 325e74a 2026-07-29 | `dossiers/macinka-turek/relations/edge-turek-mzp2026.md` | |
+| 104 | edge-turek-nehoda2026 | relation | Filip Turek — subjekt — Nehoda 2026 | corroborated | turek | turek→nehoda2026 · typ=ASSOCIATED_WITH_EVENT · claims=CLM-10 | 325e74a 2026-07-29 | `dossiers/macinka-turek/relations/edge-turek-nehoda2026.md` | |
+| 105 | edge-turek-pavel | relation | Filip Turek — hrozil žalobou (1/2026), nakonec nepodal (7/2026) — Petr | corroborated | turek | turek→pavel · typ=RESPONDED_TO · claims=CLM-39 CLM-44 | 325e74a 2026-07-29 | `dossiers/macinka-turek/relations/edge-turek-pavel.md` | |
+| 106 | edge-turek-trestniozn | relation | Filip Turek — subjekt (oznámení 6/2025, odloženo pro promlčení 5/2026) | disputed | turek | turek→trestniozn · typ=SUBJECT_OF_PROCEEDING · claims=CLM-25 | 325e74a 2026-07-29 | `dossiers/macinka-turek/relations/edge-turek-trestniozn.md` | |
+| 107 | edge-turek-zapperclub | relation | Filip Turek — společník 2016–2023 — Zapper-Club s.r.o. | corroborated | turek | turek→zapper-club · typ=MEMBER_OF · claims=CLM-20 | 325e74a 2026-07-29 | `dossiers/macinka-turek/relations/edge-turek-zapperclub.md` | |
+| 108 | edge-zapperclub-mzdrav | relation | Zapper-Club s.r.o. — varování před přístrojem zapper — Ministerstvo zd | corroborated | turek | zapper-club→mzdrav · typ=WARNED_BY · claims=CLM-31 | 325e74a 2026-07-29 | `dossiers/macinka-turek/relations/edge-zapperclub-mzdrav.md` | |
+| 109 | edge-zapperclub-szpi | relation | Zapper-Club s.r.o. — odebrání certifikátu — SZPI | corroborated | turek | zapper-club→szpi · typ=WARNED_BY · claims=CLM-31 | 325e74a 2026-07-29 | `dossiers/macinka-turek/relations/edge-zapperclub-szpi.md` | |
+| 110 |  | page | Registr zdrojů |  |  |  | e3c25ea 2026-07-29 | `dossiers/macinka-turek/sources/_index.md` | |
+| 111 | SRC-01 | source | SRC-01 — Echo24.cz |  | macinka turek | outlet=Echo24.cz · published=2026-07-15 · claims=CLM-13 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-01.md` | |
+| 112 | SRC-02 | source | SRC-02 — Echo24.cz |  | turek | outlet=Echo24.cz · published=2026-07-18 · claims=CLM-10 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-02.md` | |
+| 113 | SRC-03 | source | SRC-03 — Info.cz |  | macinka turek | outlet=Info.cz · published=2026-01-08 · claims= | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-03.md` | |
+| 114 | SRC-04 | source | SRC-04 — Blesk.cz |  | macinka turek | outlet=Blesk.cz · published=2026-07-15 · claims=CLM-13 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-04.md` | |
+| 115 | SRC-05 | source | SRC-05 — ČT24 |  | macinka turek | outlet=ČT24 (Česká televize) · published=2026-01-07 · claims= | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-05.md` | |
+| 116 | SRC-06 | source | SRC-06 — ČT24 |  | turek | outlet=ČT24 (Česká televize) · published=2026-07-14 · claims=CLM-11 CLM-12 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-06.md` | |
+| 117 | SRC-07 | source | SRC-07 — ČeskéNoviny.cz |  | turek | outlet=ČeskéNoviny.cz · published=2026-07-14 · claims=CLM-11 CLM-12 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-07.md` | |
+| 118 | SRC-08 | source | SRC-08 — iROZHLAS.cz |  | turek | outlet=iROZHLAS.cz (Český rozhlas) · published=2026-07-14 · claims=CLM-11 CLM-12 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-08.md` | |
+| 119 | SRC-09 | source | SRC-09 — HlídacíPes.org |  | macinka turek | outlet=HlídacíPes.org · published=2026-04-13 · claims= | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-09.md` | |
+| 120 | SRC-10 | source | SRC-10 — Život v Česku |  | macinka turek | outlet=Život v Česku · published=2026-07-15 · claims= | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-10.md` | |
+| 121 | SRC-11 | source | SRC-11 — Seznam Zprávy |  | macinka turek | outlet=Seznam Zprávy · published=2025-05-30 · claims=CLM-01 CLM-02 CLM-03 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-11.md` | |
+| 122 | SRC-12 | source | SRC-12 — iROZHLAS |  | macinka turek | outlet=iROZHLAS.cz (Český rozhlas) · published=2024-12-27 · claims=CLM-01 CLM-04 CLM-05 CLM-06 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-12.md` | |
+| 123 | SRC-13 | source | SRC-13 — Aktuálně.cz |  | macinka turek | outlet=Aktuálně.cz · published=2025-10-05 · claims=CLM-01 CLM-02 CLM-03 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-13.md` | |
+| 124 | SRC-14 | source | SRC-14 — Deník N |  | macinka turek | outlet=Deník N · published=2024-06-05 · claims=CLM-04 CLM-05 CLM-06 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-14.md` | |
+| 125 | SRC-15 | source | SRC-15 — Deník N |  | turek | outlet=Deník N · published=2025-10-10 · claims=CLM-07 CLM-09 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-15.md` | |
+| 126 | SRC-16 | source | SRC-16 — Deník.cz |  | turek | outlet=Deník.cz · published=2025-10-13 · claims=CLM-08 CLM-09 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-16.md` | |
+| 127 | SRC-17 | source | SRC-17 — Investigace.cz |  | macinka | outlet=Investigace.cz · published=2025-12-19 · claims=CLM-14 CLM-15 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-17.md` | |
+| 128 | SRC-18 | source | SRC-18 — Seznam Zprávy |  | macinka | outlet=Seznam Zprávy · published=2026-01-28 · claims=CLM-14 CLM-15 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-18.md` | |
+| 129 | SRC-19 | source | SRC-19 — Blesk.cz |  | turek | outlet=Blesk.cz · published=2026-07-16 · claims=CLM-16 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-19.md` | |
+| 130 | SRC-20 | source | SRC-20 — Česká justice |  | turek | outlet=Česká justice · published=2026-07-15 · claims=CLM-17 CLM-18 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-20.md` | |
+| 131 | SRC-21 | source | SRC-21 — Deník.cz |  | turek | outlet=Deník.cz · published=2025-10-12 · claims=CLM-19 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-21.md` | |
+| 132 | SRC-22 | source | SRC-22 — Seznam Zprávy |  | turek | outlet=Seznam Zprávy · published=2025-10-14 · claims=CLM-09 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-22.md` | |
+| 133 | SRC-23 | source | SRC-23 — Hlídač státu (Turek, firmy) |  | turek | outlet=Hlídač státu · published= · claims=CLM-20 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-23.md` | |
+| 134 | SRC-24 | source | SRC-24 — Hlídač státu (Macinka, firmy) |  | macinka | outlet=Hlídač státu · published= · claims=CLM-22 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-24.md` | |
+| 135 | SRC-25 | source | SRC-25 — Hlídač státu (Turek, sponzoring) |  | turek | outlet=Hlídač státu · published= · claims=CLM-21 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-25.md` | |
+| 136 | SRC-26 | source | SRC-26 — Hlídač státu (Macinka, sponzoring) |  | macinka | outlet=Hlídač státu · published= · claims=CLM-23 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-26.md` | |
+| 137 | SRC-27 | source | SRC-27 — Hlídač státu (Macinka, funkce) |  | macinka | outlet=Hlídač státu · published= · claims=CLM-24 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-27.md` | |
+| 138 | SRC-28 | source | SRC-28 — Deník.cz |  | turek | outlet=Deník.cz · published=2025-06-23 · claims=CLM-25 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-28.md` | |
+| 139 | SRC-29 | source | SRC-29 — Blesk.cz |  | turek | outlet=Blesk.cz · published=2025-06-23 · claims=CLM-25 CLM-26 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-29.md` | |
+| 140 | SRC-30 | source | SRC-30 — HN.cz (Hospodářské noviny) |  | turek | outlet=HN.cz (Hospodářské noviny) · published=2025-07-08 · claims=CLM-25 CLM-26 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-30.md` | |
+| 141 | SRC-31 | source | SRC-31 — ČT24 |  | turek | outlet=ČT24 (Česká televize) · published=2026-05-12 · claims=CLM-27 | e3c25ea 2026-07-29 | `dossiers/macinka-turek/sources/src-31.md` | |
+| 142 | SRC-32 | source | SRC-32 — Deník.cz |  | turek | outlet=Deník.cz · published=2025-10-15 · claims=CLM-28 CLM-29 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-32.md` | |
+| 143 | SRC-33 | source | SRC-33 — Blesk.cz |  | turek | outlet=Blesk.cz · published=2026-07-17 · claims=CLM-30 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-33.md` | |
+| 144 | SRC-34 | source | SRC-34 — Manipulátoři.cz |  | turek | outlet=Manipulátoři.cz · published=2020-04-03 · claims=CLM-31 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-34.md` | |
+| 145 | SRC-35 | source | SRC-35 — Forum24 |  | turek | outlet=Forum24 · published=2024-06-02 · claims=CLM-31 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-35.md` | |
+| 146 | SRC-36 | source | SRC-36 — Aktuálně.cz |  | turek | outlet=Aktuálně.cz · published=2025-12-08 · claims=CLM-32 CLM-33 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-36.md` | |
+| 147 | SRC-37 | source | SRC-37 — Neovlivní.cz |  | turek | outlet=Neovlivní.cz · published=2026-03-01 · claims=CLM-33 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-37.md` | |
+| 148 | SRC-38 | source | SRC-38 — Blesk.cz |  | turek | outlet=Blesk.cz · published=2026-07-04 · claims=CLM-34 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-38.md` | |
+| 149 | SRC-39 | source | SRC-39 — Seznam Zprávy |  | macinka turek | outlet=Seznam Zprávy · published=2025-08-14 · claims=CLM-35 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-39.md` | |
+| 150 | SRC-40 | source | SRC-40 — Motoristé sobě / UDHPSH |  | macinka turek | outlet=Motoristé sobě (motoristesobe.cz/udhpsh) · published= · claims=CLM-35 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-40.md` | |
+| 151 | SRC-41 | source | SRC-41 — Hlídač státu (Richard Chlad, sponzoring) |  | macinka turek | outlet=Hlídač státu · published= · claims=CLM-36 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-41.md` | |
+| 152 | SRC-42 | source | SRC-42 — CNN Prima NEWS |  | macinka turek | outlet=CNN Prima NEWS · published=2025-10-16 · claims=CLM-36 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-42.md` | |
+| 153 | SRC-43 | source | SRC-43 — Aktuálně.cz |  | macinka turek | outlet=Aktuálně.cz · published=2026-03-17 · claims=CLM-37 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-43.md` | |
+| 154 | SRC-44 | source | SRC-44 — Deník.cz |  | turek | outlet=Deník.cz · published=2026-01-09 · claims=CLM-38 CLM-39 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-44.md` | |
+| 155 | SRC-45 | source | SRC-45 — HN.cz (Hospodářské noviny) |  | macinka turek | outlet=HN.cz (Hospodářské noviny) · published=2026-01-07 · claims=CLM-38 CLM-40 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-45.md` | |
+| 156 | SRC-46 | source | SRC-46 — Deník.cz |  | macinka | outlet=Deník.cz · published=2026-02-04 · claims=CLM-40 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-46.md` | |
+| 157 | SRC-47 | source | SRC-47 — Deník N |  | turek | outlet=Deník N · published=2026-07-28 · claims=CLM-41 CLM-42 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-47.md` | |
+| 158 | SRC-48 | source | SRC-48 — Aktuálně.cz |  | turek | outlet=Aktuálně.cz · published=2026-07-28 · claims=CLM-41 CLM-42 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-48.md` | |
+| 159 | SRC-49 | source | SRC-49 — Deník.cz |  | macinka | outlet=Deník.cz · published=2026-02-23 · claims=CLM-43 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-49.md` | |
+| 160 | SRC-50 | source | SRC-50 — Vláda České republiky (oficiální web) |  | macinka | outlet=Vláda České republiky (vlada.gov.cz) · published=2026-02-23 · claims=CLM-43 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-50.md` | |
+| 161 | SRC-51 | source | SRC-51 — Blesk.cz |  | turek | outlet=Blesk.cz · published=2026-07-27 · claims=CLM-44 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-51.md` | |
+| 162 | SRC-52 | source | SRC-52 — Deník N |  | turek | outlet=Deník N · published=2026-07-27 · claims=CLM-44 | e4c652f 2026-07-29 | `dossiers/macinka-turek/sources/src-52.md` | |
+| 163 | SRC-53 | source | SRC-53 — ČT24 |  | turek | outlet=ČT24 (Česká televize) · published=2024-11-08 · claims=CLM-45 | e3c25ea 2026-07-29 | `dossiers/macinka-turek/sources/src-53.md` | |
+| 164 | SRC-54 | source | SRC-54 — Echo24.cz |  | turek | outlet=Echo24.cz · published=2026-05-13 · claims=CLM-27 | e3c25ea 2026-07-29 | `dossiers/macinka-turek/sources/src-54.md` | |
+| 165 |  | page | Petr Macinka |  |  |  | e4c652f 2026-07-29 | `dossiers/petr-macinka/_index.md` | |
+| 166 |  | page | Kauzy — Petr Macinka |  |  |  | e4c652f 2026-07-29 | `dossiers/petr-macinka/cases/_index.md` | |
+| 167 |  | page | Tvrzení — Petr Macinka |  |  |  | e4c652f 2026-07-29 | `dossiers/petr-macinka/claims/_index.md` | |
+| 168 |  | page | Entity — Petr Macinka |  |  |  | e4c652f 2026-07-29 | `dossiers/petr-macinka/entities/_index.md` | |
+| 169 |  | page | Evidence — Petr Macinka |  |  |  | 325e74a 2026-07-29 | `dossiers/petr-macinka/evidence/_index.md` | |
+| 170 |  | page | Mezery — Petr Macinka |  |  |  | e4c652f 2026-07-29 | `dossiers/petr-macinka/gaps/_index.md` | |
+| 171 |  | page | Vztahy — Petr Macinka |  |  |  | e4c652f 2026-07-29 | `dossiers/petr-macinka/relations/_index.md` | |
+| 172 |  | page | Zdroje — Petr Macinka |  |  |  | e4c652f 2026-07-29 | `dossiers/petr-macinka/sources/_index.md` | |
+| 173 |  | page | Registr entit |  |  |  | ef57a82 2026-07-29 | `entities/_index.md` | |
+| 174 | babis | entity | Andrej Babiš (premiér) |  |  | dossiers=macinka-turek petr-macinka filip-turek | e4c652f 2026-07-29 | `entities/babis.md` | |
+| 175 | cerveny | entity | Igor Červený |  |  | dossiers=macinka-turek petr-macinka | e4c652f 2026-07-29 | `entities/cerveny.md` | |
+| 176 | chlad | entity | Richard Chlad (sponzor) |  |  | dossiers=macinka-turek petr-macinka filip-turek | e4c652f 2026-07-29 | `entities/chlad.md` | |
+| 177 | ep | entity | Evropský parlament |  |  | dossiers=macinka-turek filip-turek | e4c652f 2026-07-29 | `entities/ep.md` | |
+| 178 | gmrgas | entity | GMR GAS UA LLC (Kyjev) |  |  | dossiers=macinka-turek petr-macinka | e4c652f 2026-07-29 | `entities/gmrgas.md` | |
+| 179 | greendeal | entity | Zmocněnec pro Green Deal |  |  | dossiers=macinka-turek filip-turek | e4c652f 2026-07-29 | `entities/greendeal.md` | |
+| 180 | kauza2024 | entity | Kauza 2024: fotografie a svícny |  |  | dossiers=macinka-turek petr-macinka filip-turek | e4c652f 2026-07-29 | `entities/kauza2024.md` | |
+| 181 | kauza2025 | entity | Kauza 2025: smazané příspěvky |  |  | dossiers=macinka-turek filip-turek | e4c652f 2026-07-29 | `entities/kauza2025.md` | |
+| 182 | klubmotoristu | entity | Klub motoristů, z.s. |  |  | dossiers=macinka-turek petr-macinka | e4c652f 2026-07-29 | `entities/klubmotoristu.md` | |
+| 183 | macinka | entity | Petr Macinka |  |  | dossiers=macinka-turek petr-macinka | 325e74a 2026-07-29 | `entities/macinka.md` | |
+| 184 | motoriste | entity | Motoristé sobě |  |  | dossiers=macinka-turek petr-macinka filip-turek | e4c652f 2026-07-29 | `entities/motoriste.md` | |
+| 185 | mzdrav | entity | Ministerstvo zdravotnictví |  |  | dossiers=macinka-turek filip-turek | e4c652f 2026-07-29 | `entities/mzdrav.md` | |
+| 186 | mzp2026 | entity | Jmenování ministrem ŽP (2026) |  |  | dossiers=macinka-turek petr-macinka filip-turek | e4c652f 2026-07-29 | `entities/mzp2026.md` | |
+| 187 | nehoda2026 | entity | Nehoda 2026 |  |  | dossiers=macinka-turek petr-macinka filip-turek | e4c652f 2026-07-29 | `entities/nehoda2026.md` | |
+| 188 | nemocnice-homolce | entity | Nemocnice Na Homolce |  |  | dossiers=macinka-turek filip-turek | e4c652f 2026-07-29 | `entities/nemocnice-homolce.md` | |
+| 189 | pavel | entity | Petr Pavel (prezident) |  |  | dossiers=macinka-turek filip-turek | e4c652f 2026-07-29 | `entities/pavel.md` | |
+| 190 | policie | entity | Policie ČR |  |  | dossiers=macinka-turek filip-turek | e3c25ea 2026-07-29 | `entities/policie.md` | |
+| 191 | statni-zastupitelstvi | entity | Státní zastupitelství |  |  | dossiers=macinka-turek filip-turek | e3c25ea 2026-07-29 | `entities/statni-zastupitelstvi.md` | |
+| 192 | szpi | entity | SZPI |  |  | dossiers=macinka-turek filip-turek | e4c652f 2026-07-29 | `entities/szpi.md` | |
+| 193 | trestniozn | entity | Trestní oznámení (2025) |  |  | dossiers=macinka-turek filip-turek | e4c652f 2026-07-29 | `entities/trestniozn.md` | |
+| 194 | turek | entity | Filip Turek |  |  | dossiers=macinka-turek filip-turek | 325e74a 2026-07-29 | `entities/turek.md` | |
+| 195 | vlada | entity | Vláda (ANO + SPD + Motoristé) |  |  | dossiers=macinka-turek petr-macinka filip-turek | e4c652f 2026-07-29 | `entities/vlada.md` | |
+| 196 | zapper-club | entity | Zapper-Club s.r.o. |  |  | dossiers=macinka-turek filip-turek | e4c652f 2026-07-29 | `entities/zapper-club.md` | |
+| 197 |  | page | Globální mapa |  |  |  | ef57a82 2026-07-29 | `map/_index.md` | |
