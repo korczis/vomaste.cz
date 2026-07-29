@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% import "macros/ui.html" as ui %}
+
+{#- Full page for ONE concept (a data-model registry, a claim status, a
+    methodology rule, an openness boundary, an identity statement). Every tile
+    on the landing page is a link to one of these — the tile's label and text
+    live in this page's own front matter (extra.tile_title / tile_summary), so
+    there is exactly one source of truth for both representations. See
+    templates/concepts-index.html for the group index. -#}
+
+{% block content %}
+<main class="mx-auto max-w-2xl px-6 py-12 text-white">
+  {% set groups = load_data(path="data/concept-groups.toml") %}
+  {% set group = groups.groups | filter(attribute="id", value=page.extra.group) | first %}
+
+  {{ ui::page_header(title=page.title, breadcrumb_items=[
+    "Domů::" ~ get_url(path="@/_index.md"),
+    "Koncepty::" ~ get_url(path="@/koncepty/_index.md"),
+    page.title,
+  ], description=page.description) }}
+
+  <p class="mb-8 flex flex-wrap items-center gap-2 text-xs">
+    {%- if page.extra.code %}
+    <span class="rounded bg-white/5 px-2 py-1 font-mono text-[#f3e5c0]">{{ page.extra.code }}</span>
+    {%- endif %}
+    {%- if page.extra.badge_label %}
+    <span class="status-badge {{ page.extra.badge_class }}">{{ page.extra.badge_label }}</span>
+    {%- endif %}
+    {%- if group %}
+    <a href="{{ get_url(path='@/koncepty/_index.md') | safe }}#{{ group.id }}" class="rounded border border-white/15 px-2 py-1 text-white/50 no-underline hover:border-white/30 hover:text-white/80">{{ group.label }}</a>
+    {%- endif %}
+  </p>
+
+  {%- if page.extra.bullets %}
+  <ul class="mb-8 space-y-2 rounded-xl border border-white/10 bg-white/[0.03] p-6 text-sm leading-relaxed text-white/70">
+    {%- for b in page.extra.bullets %}
+    <li>{{ b | safe }}</li>
+    {%- endfor %}
+  </ul>
+  {%- endif %}
+
+  <article class="dossier-prose">
+    {{ page.content | safe }}
+  </article>
+
+  {#- Siblings in the same group: keeps every concept one click from the others
+      without a hand-maintained "related" list in front matter. -#}
+  {% set section = get_section(path="koncepty/_index.md") %}
+  {% set siblings = section.pages | filter(attribute="extra.group", value=page.extra.group) %}
+  {%- if siblings | length > 1 %}
+  <nav aria-labelledby="siblings-heading" class="mt-12 border-t border-white/10 pt-6">
+    <h2 id="siblings-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/40">{% if group %}{{ group.label }}{% else %}Související pojmy{% endif %}</h2>
+    <ul class="flex flex-wrap gap-2 text-sm">
+      {%- for s in siblings %}
+      <li>
+        {%- if s.path == page.path %}
+        <span class="rounded-lg border border-[#f3e5c0]/40 bg-[#f3e5c0]/10 px-3 py-1.5 text-[#f3e5c0]">{{ s.extra.tile_title | default(value=s.title) }}</span>
+        {%- else %}
+        <a href="{{ s.permalink | safe }}" class="rounded-lg border border-white/15 px-3 py-1.5 text-white/70 no-underline hover:border-white/30 hover:text-white">{{ s.extra.tile_title | default(value=s.title) }}</a>
+        {%- endif %}
+      </li>
+      {%- endfor %}
+    </ul>
+  </nav>
+  {%- endif %}
+
+  {{ ui::back_link_footer(url=get_url(path="@/koncepty/_index.md"), label="Zpět na koncepty") }}
+</main>
+{% endblock content %}

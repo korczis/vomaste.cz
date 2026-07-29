@@ -221,9 +221,21 @@ on the exact anchor after the redirect, not just at the top of the page.
 - `templates/entity-dossier-relations.html` / `entity-dossier-entities.html`
   / `entity-dossier-evidence.html` — the same filtered-view pattern for an
   entity dossier's relations, entities, and evidence pages
+- `templates/concept.html` / `templates/concepts-index.html` — one page per
+  concept under `content/koncepty/` (`/koncepty/<slug>/`) plus the grouped
+  index. Every tile on the landing page is a link to one of these pages and
+  renders from that page's own front matter (`extra.tile_title`,
+  `tile_summary`, `bullets`, plus `code` / `badge_*` / `icon` per group), so
+  tile and page can't disagree — the same single-source-of-truth rule the
+  registries follow. Group order and labels live in
+  `data/concept-groups.toml`; `scripts/dossier/validate-concepts.mjs`
+  (part of `npm run build`) fails the build on an unknown group, a group
+  with no pages, or a concept missing the fields its tile needs.
 - `templates/base.html` — shared layout; all `<meta>` (title, description,
   canonical, Open Graph) is declared once in front matter and rendered
-  once here — do not hand-write `<meta>` tags elsewhere.
+  once here — do not hand-write `<meta>` tags elsewhere. It also carries the
+  site-wide footer (licence, "navrhnout opravu"); page-level footers must not
+  repeat those links.
 - `data/navigation.toml` — data-driven navigation, rendered by `base.html`
   as a Flowbite application shell (fixed navbar + a sidebar that's a real
   Flowbite Drawer, docked on desktop and off-canvas on mobile).

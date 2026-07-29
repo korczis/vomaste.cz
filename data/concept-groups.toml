@@ -1,0 +1,39 @@
+# Groups for content/koncepty/*. Each concept page declares its group id in
+# `extra.group`; templates/concepts-index.html and templates/index.html loop
+# over the groups here instead of hardcoding section order or labels, and
+# templates/concept.html uses the label for its breadcrumb chip and the
+# "siblings in this group" nav.
+#
+# `id` must match `extra.group` in the concept pages — scripts/dossier/
+# validate-concepts.mjs fails the build on a group with no pages, a page with
+# an unknown group, and on a landing tile whose text is missing.
+
+[[groups]]
+id = "identita"
+label = "Co to je a co to není"
+lead = "Vymezení projektu — pozitivní i negativní, obojí závazné."
+order = 10
+
+[[groups]]
+id = "model"
+label = "Datový model"
+lead = "Čtyři provázané registry, na kterých stojí každý dossier. Každý záznam má vlastní ID a vlastní stránku."
+order = 20
+
+[[groups]]
+id = "stav"
+label = "Stavy tvrzení"
+lead = "Pět stavů, které se nikdy neslévají do generického „faktu“. Dva z nich vynucuje validátor počtem citovaných zdrojů."
+order = 30
+
+[[groups]]
+id = "metodika"
+label = "Metodika"
+lead = "Pravidla platná pro každé publikované tvrzení, bez výjimky pro atraktivnější příběh."
+order = 40
+
+[[groups]]
+id = "otevrenost"
+label = "Otevřenost a hranice"
+lead = "Co je veřejné, pod jakou licencí, v jakém formátu — a kde projekt své schopnosti nepředstírá."
+order = 50

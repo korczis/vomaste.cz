@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% import "macros/ui.html" as ui %}
+
+{#- /koncepty/ — index of every concept, grouped by data/concept-groups.toml.
+    Group order and labels come from that data file, never from this template. -#}
+
+{% block content %}
+<main class="mx-auto max-w-3xl px-6 py-12 text-white">
+  {{ ui::page_header(title=section.title, breadcrumb_items=[
+    "Domů::" ~ get_url(path="@/_index.md"),
+    section.title,
+  ], description=section.description) }}
+
+  <article class="dossier-prose mb-10">{{ section.content | safe }}</article>
+
+  {% set groups = load_data(path="data/concept-groups.toml") %}
+  {% for group in groups.groups | sort(attribute="order") %}
+  {% set pages = section.pages | filter(attribute="extra.group", value=group.id) %}
+  {%- if pages | length > 0 %}
+  <section id="{{ group.id }}" aria-labelledby="{{ group.id }}-heading" class="mb-10">
+    <h2 id="{{ group.id }}-heading" class="mb-1 text-xs font-semibold uppercase tracking-wide text-white/40">{{ group.label }}</h2>
+    <p class="mb-4 text-sm text-white/60">{{ group.lead }}</p>
+    <div class="grid gap-3 sm:grid-cols-2">
+      {%- for p in pages %}
+      <a href="{{ p.permalink | safe }}" class="registry-card">
+        <span class="flex flex-wrap items-center gap-2">
+          {%- if p.extra.code %}<span class="font-mono text-xs text-[#f3e5c0]">{{ p.extra.code }}</span>{%- endif %}
+          {%- if p.extra.badge_label %}<span class="status-badge {{ p.extra.badge_class }}">{{ p.extra.badge_label }}</span>{%- endif %}
+          <span class="font-semibold text-white">{{ p.title }}</span>
+        </span>
+        <span class="mt-2 text-sm text-white/70">{{ p.description }}</span>
+      </a>
+      {%- endfor %}
+    </div>
+  </section>
+  {%- endif %}
+  {% endfor %}
+
+  {{ ui::back_link_footer(url=get_url(path="@/_index.md"), label="Zpět na úvod") }}
+</main>
+{% endblock content %}
