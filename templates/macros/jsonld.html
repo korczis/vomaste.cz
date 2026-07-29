@@ -1,0 +1,25 @@
+{#- JSON-LD helper macros, imported by templates/partials/jsonld.html.
+
+    ld_source_node renders one schema.org node describing a CITED external
+    article/record, entirely from a source page's front matter (src_type,
+    url, outlet, published). The @type is derived from the hand-authored
+    src_type label so that opinion pieces stay machine-readably labeled as
+    opinion (editorial rule 4) and registry/official records are not
+    misrepresented as press articles. It never emits rating fields: claim
+    statuses on this site describe sourcing, not adjudicated truth
+    (editorial rules 3 & 7) — see scripts/dossier/verify-jsonld.mjs for
+    the build-time guard. -#}
+
+{%- macro ld_source_node(sp, name="") -%}
+{%- set st = sp.extra.src_type | default(value="") -%}
+{%- if "komentář" in st or "názor" in st -%}
+  {%- set ld_t = "OpinionNewsArticle" -%}
+{%- elif "rejstřík" in st or "databáze" in st or "oficiální" in st or "primární" in st -%}
+  {%- set ld_t = "WebPage" -%}
+{%- elif "zpravodajství" in st or "žurnalistika" in st or "tabloid" in st or "agentura" in st -%}
+  {%- set ld_t = "NewsArticle" -%}
+{%- else -%}
+  {%- set ld_t = "Article" -%}
+{%- endif -%}
+{"@type":{{ ld_t | json_encode | safe }},"url":{{ sp.extra.url | json_encode | safe }}{% if name %},"name":{{ name | json_encode | safe }}{% endif %}{% if sp.extra.outlet %},"publisher":{"@type":"Organization","name":{{ sp.extra.outlet | json_encode | safe }}}{% endif %}{% if sp.extra.published %},"datePublished":{{ sp.extra.published | json_encode | safe }}{% endif %}}
+{%- endmacro ld_source_node -%}

@@ -1,3 +1,4 @@
+{%- import "macros/jsonld.html" as jsonld -%}
 <!DOCTYPE html>
 <html lang="{{ page.extra.lang | default(value=config.extra.lang | default(value="en")) }}" class="scroll-smooth no-js">
 <head>
@@ -39,25 +40,12 @@
   <meta name="twitter:title" content="{{ page_title }}">
   <meta name="twitter:description" content="{{ page_description }}">
 
-  {#- JSON-LD generated from front matter that was already declared but
-      unused (`extra.seo_type`, config.toml default "WebPage", overridden
-      per-page/section — e.g. content/_index.md sets "WebSite"). Each
-      field goes through json_encode + safe for correct JSON string
-      escaping (Tera's default HTML-escaping would corrupt quotes here). -#}
-  {%- set seo_type = page.extra.seo_type | default(value=section.extra.seo_type | default(value=config.extra.seo_type | default(value="WebPage"))) -%}
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":{{ seo_type | json_encode | safe }},"name":{{ page_title | json_encode | safe }},"description":{{ page_description | json_encode | safe }}{% if current_url %},"url":{{ current_url | json_encode | safe }}{% endif %}{% if seo_type == "WebSite" %},"inLanguage":{{ page.extra.lang | default(value=config.extra.lang | default(value="en")) | json_encode | safe }}{% endif %}}
-  </script>
-
-  {#- SiteNavigationElement JSON-LD for the primary nav (data/navigation.toml),
-      for crawlers/assistants — the rendered navbar/sidebar below is the only
-      thing a human sees; this is a second, non-visual representation of the
-      exact same data, not a separate source of truth. -#}
-  {%- set nav_ld_data = load_data(path="data/navigation.toml") -%}
-  {%- set nav_ld_items = nav_ld_data.items | sort(attribute="order") -%}
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@graph":[{% for item in nav_ld_items %}{"@type":"SiteNavigationElement","name":{{ item.label | json_encode | safe }},"url":{{ get_url(path=item.path) | json_encode | safe }}}{% if not loop.last %},{% endif %}{% endfor %}]}
-  </script>
+  {#- All JSON-LD (page node from `extra.seo_type`, breadcrumbs, Person on
+      entity dossiers, Claim/citation nodes on record pages, the
+      SiteNavigationElement list from data/navigation.toml) is generated in
+      one place from front matter and data files — see
+      templates/partials/jsonld.html and its verify-jsonld.mjs guard. -#}
+  {%- include "partials/jsonld.html" -%}
 
   <link rel="stylesheet" href="{{ get_url(path='css/main.css', cachebust=true) | safe }}">
   <script type="module" defer src="{{ get_url(path='js/app.js', cachebust=true) | safe }}"></script>
