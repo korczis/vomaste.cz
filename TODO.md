@@ -153,3 +153,23 @@
         (pre-commit rychlá podmnožina vs. `npm run build` před
         review-requestem/mergem/pushem), coop bus hlášení podle role.
   - [x] `npm run build` zelený po zapojení nového validátoru.
+
+- [x] Bootstrap tooling, kolo 3 — na webu vykreslené řídicí dokumenty +
+      trvalý regresní test (2026-07-30, ORCH direct na masteru)
+  - [x] `/dokumentace/` — nová sekce webu vykreslující AGENTS.md,
+        CONTRIBUTING.md, LICENSE.md, SECURITY.md, konstituci a koop
+        protokol build-time přes Zolin `load_data` + `markdown` filtr;
+        žádná nová JS závislost (`static/js/app.js` beze změny),
+        funguje bez JS. `docs/adr/markdown-and-mermaid-rendering.md`:
+        mermaid.js záměrně NEadoptován (naměřeno 0 mermaid bloků v
+        repu), zdokumentován levný revisit trigger.
+  - [x] `scripts/dossier/verify-authorization-log-append-only.test.mjs`
+        — dosud jednorázově ověřeno v mazaném sandboxu, teď trvalý
+        regresní test (Node built-in `node --test`, žádná nová
+        devDependency): no-op/append → OK, úprava/smazání existující
+        sekce → FAIL. Zapojeno jako `npm test`, první krok
+        `npm run build` i CI.
+  - [x] Vědomě nedotčeno (kolizní riziko se souběžnou session):
+        `templates/index.html`, `templates/base.html`, `config.toml`,
+        `data/navigation.toml`.
+  - [x] `npm run build` (vč. nového `npm test` kroku) zelený.

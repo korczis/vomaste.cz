@@ -218,6 +218,7 @@ required fields, and contains no truth-rating markup.`
 | `npm run build` | celá kvalitní brána: všechny validátory → generátory → CSS/JS → `zola build` → kontrola kotev |
 | `npm run dev` | totéž bez plné validace registru + `zola serve` s live reloadem |
 | `npm run hooks:install` | nastaví `core.hooksPath` na `.githooks/` (jinak se spustí automaticky přes `npm ci`/`npm install`) |
+| `npm test` | regresní testy tooling skriptů (Node built-in test runner, žádná nová závislost) — součást `npm run build` |
 | `npm run validate:dossier` | integrita registru tvrzení/zdrojů: kotvy, reference, duplicitní ID, parita tabulka ↔ stránky, stavová pravidla |
 | `npm run validate:graph` | referenční integrita grafu, povolené typy vztahů, parita s entitami/vztahy, nezávislost zdrojů hran |
 | `npm run validate:authorization` | každý obsah o reálné osobě odpovídá autorizačnímu záznamu |
