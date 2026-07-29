@@ -9,8 +9,8 @@ materializují do statického webu (Zola), nasazovaného přes GitHub Pages.
 Každé podstatné tvrzení má zůstat propojené se svým zdrojem, stavem
 ověření a historií revizí.
 
-- **Živý web**: <https://korczis.github.io/vomaste.cz/> (vlastní doména
-  vomaste.cz čeká na DNS — viz komentář v `config.toml`)
+- **Živý web**: <https://vomaste.cz/> (vlastní doména GitHub Pages;
+  `korczis.github.io/vomaste.cz` na ni přesměrovává)
 - **Konstituce projektu (závazná)**:
   [`docs/constitution/OPEN_INTELLIGENCE_COMMONS.md`](docs/constitution/OPEN_INTELLIGENCE_COMMONS.md)
 - **Redakční pravidla a autorizační log**: [`AGENTS.md`](AGENTS.md)
@@ -300,8 +300,6 @@ s očekávaným commitem (`gh run list`, pak kontrola klíčových rout).
   zatím neexistují.
 - Žádný důvěrný intake kanál; žádné příspěvkové CLI, sémantický diff ani
   fork starter kit — viz roadmapa v konstituci, § 11.
-- DNS pro vomaste.cz nesměřuje na Pages; `base_url` je dočasně
-  `korczis.github.io/vomaste.cz`.
 - De-specializace architektury (T-001…) probíhá; do jejího dokončení
   `lint:historical-coupling` není součástí build gate.
 - Vyhledávací index a `data/generated/*` jsou interní artefakty buildu,

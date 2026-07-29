@@ -101,8 +101,9 @@ případě pochybnosti se nejdřív zeptej.
   build` → `actions/deploy-pages` na GitHub Pages. Deploy jede na
   vestavěném OIDC tokenu GitHub Actions, bez osobního přístupového tokenu
   nebo jiného secretu.
-- `base_url` je dočasně `korczis.github.io/vomaste.cz` (DNS pro vlastní
-  doménu `vomaste.cz` zatím nenastaveno) — viz komentář v `config.toml`.
+- `base_url` je `https://vomaste.cz` (vlastní doména Pages: apex A/AAAA na
+  GitHub Pages IP v Route 53, `www` CNAME na `korczis.github.io`). Mění se
+  vždy současně se `static/CNAME` — viz komentář v `config.toml`.
 
 ## Jak se mnou pracovat na tomto projektu
 
