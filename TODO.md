@@ -95,3 +95,34 @@
         doplněn a `checked` posunut na 2026-07-29.
   - [ ] Beze změny v CLM/SRC registrech — jde čistě o nezávislé ověření
         existujících dat a upřesnění důvodu nedohledatelnosti u ČÚZK.
+
+- [x] Claude Code bootstrap tooling (2026-07-30), ORCH direct na masteru,
+      infra-only — cíl: ať kdokoli/kdykoli snadno nastartuje session v
+      tomto repu bez re-derivace pravidel z nuly
+  - [x] `.githooks/pre-commit` — rychlá čistě-datová podmnožina build
+        gate (`validate:dossier/graph/authorization/dossier-types`,
+        `build:routes`, `validate:navigation`); záměrně BEZ
+        `lint:historical-coupling` (ten je aktuálně červený kvůli
+        probíhající migraci T-001 — zapojit až po jejím dokončení, viz
+        coop bus poznámka W-3 2026-07-29)
+  - [x] `scripts/setup/install-git-hooks.mjs` — nastaví
+        `core.hooksPath` na `.githooks/`, spouští se automaticky přes
+        `postinstall` (`npm ci`/`npm install`) i ručně
+        (`npm run hooks:install`); best-effort, nikdy nerozbije instalaci
+  - [x] `.claude/skills/bootstrap/` — onboarding: pořadí čtení pravidel
+        (AGENTS.md → konstituce → coop protokol → CLAUDE.md), kontrola
+        prerekvizit, `coop.sh status`, volba role (ORCH přímo vs. worker
+        worktree), scope-gate připomínka
+  - [x] `.claude/skills/dossier-entry/` — vedený postup pro přidání
+        SRC/CLM/CASE/GAP/relation s autorizačním scope-gate jako krokem
+        0 a povinnou regenerací (`migrate-claims-to-pages.mjs` /
+        `migrate-cases-to-pages.mjs`) před validací
+  - [x] Drobné doplňky README.md (Rychlý start, referenční tabulka,
+        strom repozitáře) a CLAUDE.md (Claude-Code-specific notes) —
+        ne architektonický přepis, ten je scope T-003
+  - [x] Ověřeno: hook spuštěný ručně (`bash .githooks/pre-commit`)
+        prochází čistě; `npm run build` zelený po změnách
+  - [ ] Vědomě neportováno (viz odpověď v konverzaci): plný AIAD
+        agent/command ekosystém z prismatic-platform — pro repo této
+        velikosti a účelu by to byl over-engineering v rozporu s
+        vlastní konstitucí projektu (§10, žádný doktrine/agent sprawl)

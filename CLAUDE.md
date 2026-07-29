@@ -9,6 +9,21 @@ before touching `content/`, `templates/`, or `scripts/dossier/`.
 
 ## Claude-Code-specific notes
 
+- **New session in this repo? Run the `bootstrap` skill first**
+  (`.claude/skills/bootstrap/`) — it walks through reading the rules
+  above, checking co-op status, verifying prerequisites, and picking a
+  role (direct/ORCH vs. worker worktree) before you touch anything. For
+  adding a specific CLM/SRC/CASE/GAP/relation once you're oriented, use
+  the `dossier-entry` skill (`.claude/skills/dossier-entry/`) — it
+  encodes the authorization-scope gate and the regeneration/validation
+  steps below as a single guided flow.
+- `git commit` runs `.githooks/pre-commit` (installed automatically by
+  `npm ci`/`npm install` via `scripts/setup/install-git-hooks.mjs`, or
+  manually: `npm run hooks:install`) — a fast, pure-data validator subset.
+  This is a convenience, not the real gate: it does **not** replace the
+  full `npm run build` requirement below, and does not include
+  `lint:historical-coupling` (still red during the in-progress
+  de-specialization migration, see `docs/coop/TASKS.md` T-001).
 - Treat the "Content about real parties" log in `AGENTS.md` as append-only
   and load-bearing: never edit or remove an existing entry, even to "clean
   up" wording or fix a typo. A new scope extension is always a brand-new

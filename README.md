@@ -162,6 +162,9 @@ fallback.
 ├── scripts/dossier/        # validátory, generátory, migrační nástroje
 ├── scripts/lint/           # anti-coupling linter (de-specializace)
 ├── scripts/coop/           # koordinace více instancí (bus, worktrees)
+├── scripts/setup/          # instalace git hooks (postinstall)
+├── .githooks/              # pre-commit: rychlá podmnožina validátorů
+├── .claude/skills/         # bootstrap, dossier-entry — vedení pro Claude Code
 ├── docs/                   # konstituce, audity, migrace, koop protokol, ADR
 ├── reports/                # generované interní reporty (nepublikují se)
 └── .github/workflows/      # deploy.yml — validace + build + GitHub Pages
@@ -179,6 +182,17 @@ npm ci
 npm run dev     # validace + generátory + zola serve na http://127.0.0.1:1111
 ```
 
+`npm ci`/`npm install` mimochodem nastaví `core.hooksPath` na `.githooks/`
+(`scripts/setup/install-git-hooks.mjs`, best-effort, nikdy nerozbije
+instalaci) — od té chvíle `git commit` sám spustí rychlou podmnožinu
+validátorů (`.githooks/pre-commit`); ruční přeinstalace: `npm run
+hooks:install`. Je to jen rychlá předběžná brána, ne náhrada za `npm run
+build` před review-requestem/mergem/pushem. Claude Code session v tomto
+repu: nejdřív spusť skill `bootstrap` (`.claude/skills/bootstrap/`) —
+zorientuje tě v pravidlech, co-op stavu a tvé roli, než cokoli editneš;
+pro přidávání konkrétních CLM/SRC/CASE/GAP záznamů viz skill
+`dossier-entry`.
+
 Plná kvalitní brána (stejná jako CI):
 
 ```bash
@@ -195,6 +209,7 @@ required fields, and contains no truth-rating markup.`
 |---|---|
 | `npm run build` | celá kvalitní brána: všechny validátory → generátory → CSS/JS → `zola build` → kontrola kotev |
 | `npm run dev` | totéž bez plné validace registru + `zola serve` s live reloadem |
+| `npm run hooks:install` | nastaví `core.hooksPath` na `.githooks/` (jinak se spustí automaticky přes `npm ci`/`npm install`) |
 | `npm run validate:dossier` | integrita registru tvrzení/zdrojů: kotvy, reference, duplicitní ID, parita tabulka ↔ stránky, stavová pravidla |
 | `npm run validate:graph` | referenční integrita grafu, povolené typy vztahů, parita s entitami/vztahy, nezávislost zdrojů hran |
 | `npm run validate:authorization` | každý obsah o reálné osobě odpovídá autorizačnímu záznamu |

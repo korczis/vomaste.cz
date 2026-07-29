@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+# vomaste.cz pre-commit gate — fast, pure-data subset of `npm run build`.
+#
+# This is NOT the full build gate. It runs only the referential-integrity
+# and authorization-scope validators (cheap: no CSS/JS bundling, no Zola
+# build, no anchor/JSON-LD verification), so a normal commit stays fast.
+# The full `npm run build` is still required — and is what the coop merge
+# gate (docs/coop/PROTOCOL.md) and CI (.github/workflows/deploy.yml)
+# actually enforce — before opening a review-request, merging, or pushing.
+#
+# lint:historical-coupling is deliberately NOT in this list yet: the
+# entity-dossier de-specialization migration (see
+# docs/migrations/remove-macinka-turek-coupling-audit.md, coop board
+# T-001) is still in progress and the lint is currently red by design.
+# Wire it in here once that migration lands (tracked on the coop bus,
+# W-3 2026-07-29: "po dokonceni migrace zapojit do build gate").
+#
+# Installed via `git config core.hooksPath .githooks` — see
+# scripts/setup/install-git-hooks.mjs (runs automatically on `npm ci`/
+# `npm install`, or manually via `npm run hooks:install`).
+
+set -euo pipefail
+cd "$(git rev-parse --show-toplevel)"
+
+FAST_CHECKS=(
+  validate:dossier
+  validate:graph
+  validate:authorization
+  validate:dossier-types
+  build:routes
+  validate:navigation
+)
+
+for check in "${FAST_CHECKS[@]}"; do
+  echo "pre-commit: $check"
+  if ! npm run --silent "$check"; then
+    echo
+    echo "pre-commit: '$check' failed — commit blocked." >&2
+    echo "Fix the issue and retry. Genuine emergency escape hatch:" >&2
+    echo "  git commit --no-verify   (then run 'npm run build' before you push/merge)" >&2
+    exit 1
+  fi
+done
+
+echo "pre-commit: OK (fast validators only — run 'npm run build' before review-request/merge/push)."
