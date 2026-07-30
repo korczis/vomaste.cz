@@ -8,15 +8,15 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 38 context entities across 19 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 40 context entities across 21 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## Agrofert (`agrofert`)
 
 - Type: company
 - Status: not_authorized
-- Appears in: andrej-babis
-- Claims: CLM-04, CLM-05, CLM-16, CLM-37
-- Sources: SRC-02, SRC-06, SRC-15 (3 independent source families)
+- Appears in: andrej-babis, tunde-bartha
+- Claims: CLM-04, CLM-05, CLM-16, CLM-37, CLM-06
+- Sources: SRC-02, SRC-06, SRC-15, SRC-03 (4 independent source families)
 - Relations: 
   - edge-agrofert-eppo (agrofert -> eppo, "trestní řízení k vyplácení evropských dotací, vedené na neznámého pachatele — nikdo není obviněn", dossier: andrej-babis)
   - edge-agrofert-komise (agrofert -> evropska-komise, "Komise k 5. 6. 2026 neproplatila žádnou náhradu a žádá vysvětlení struktury fondu — dotaz, ne zjištění", dossier: andrej-babis)
@@ -24,6 +24,7 @@ Generated from 38 context entities across 19 dossier(s). Regenerate with `npm ru
   - edge-agrofert-szif (agrofert -> szif, "SZIF obnovil administraci žádostí o dotace (4/2026)", dossier: andrej-babis)
   - edge-babis-agrofert (babis -> agrofert, "vlastnické vazby; od 2/2026 akcie ve svěřenském fondu RSVP Trust, míra vlivu sporná; dividenda 4,25 mld. Kč vyplacena před vkladem (legální krok)", dossier: andrej-babis)
   - edge-rsvp-agrofert (rsvp-trust -> agrofert, "drží akcie Agrofertu (vloženy 2/2026)", dossier: andrej-babis)
+  - edge-bartha-agrofert (bartha -> agrofert, "business development manager (dle zpravodajství, potvrzeno mluvčím)", dossier: tunde-bartha)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## BLAKEY FINANCE LIMITED (BVI) (`blakey-finance`)
@@ -54,11 +55,12 @@ Generated from 38 context entities across 19 dossier(s). Regenerate with `npm ru
 
 - Type: controversy
 - Status: not_authorized
-- Appears in: andrej-babis
-- Claims: CLM-01
-- Sources: SRC-01 (1 independent source family)
+- Appears in: andrej-babis, jaroslav-faltynek
+- Claims: CLM-01, CLM-02, CLM-05
+- Sources: SRC-01, SRC-02, SRC-03 (3 independent source families)
 - Relations: 
   - edge-babis-capihnizdo (babis -> capi-hnizdo, "obžalovaný; stíhání přerušeno po nevydání Sněmovnou — procesní krok, ne rozhodnutí o vině", dossier: andrej-babis)
+  - edge-faltynek-capihnizdo (faltynek -> capi-hnizdo, "stíhán 2015–2018; stíhání zrušeno státním zástupcem", dossier: jaroslav-faltynek)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Richard Chlad (sponzor) (`chlad`)
@@ -151,6 +153,18 @@ Generated from 38 context entities across 19 dossier(s). Regenerate with `npm ru
 - Sources: SRC-16, SRC-17 (1 independent source family)
 - Relations: 
   - edge-synbiol-hartenberg (synbiol -> hartenberg, "zdravotnické aktivity ve skupině Hartenberg, mimo svěřenský fond", dossier: andrej-babis)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Imoba (`imoba`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: tunde-bartha
+- Claims: CLM-05
+- Sources: SRC-01, SRC-02 (2 independent source families)
+- Relations: 
+  - edge-bartha-imoba (bartha -> imoba, "dle vlastního vyjádření bydlí v objektu společnosti", dossier: tunde-bartha)
+  - edge-imoba-babis (imoba -> babis, "dle citovaného zpravodajství společnost patří Andreji Babišovi", dossier: tunde-bartha)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Kauza 2024: fotografie a svícny (`kauza2024`)
@@ -336,6 +350,17 @@ Generated from 38 context entities across 19 dossier(s). Regenerate with `npm ru
   - edge-trestniozn-policie (trestniozn -> policie, "odloženo policií pro promlčení — procesní krok, ne rozhodnutí o vině; nepravomocné", dossier: macinka-turek)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Městská část Praha 3 (`praha3`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: tunde-bartha
+- Claims: CLM-01, CLM-02, CLM-03, CLM-04
+- Sources: SRC-01, SRC-02 (2 independent source families)
+- Relations: 
+  - edge-bartha-praha3 (bartha -> praha3, "výpověď z nájmu obecního bytu (rozhodnutí rady, ne soudu)", dossier: tunde-bartha)
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## RSVP Trust (`rsvp-trust`)
 
 - Type: organization
@@ -443,9 +468,9 @@ Generated from 38 context entities across 19 dossier(s). Regenerate with `npm ru
 
 - Type: public_institution
 - Status: not_authorized
-- Appears in: macinka-turek, petr-macinka, filip-turek, oto-klempir, alena-schillerova, ales-juchelka, ivan-bednarik, boris-stastny, andrej-babis, karel-havlicek, jaromir-zuna, jeronym-tejc, zuzana-mrazova, adam-vojtech, igor-cerveny, robert-plaga, martin-sebestyan
-- Claims: CLM-03, CLM-01, CLM-36
-- Sources: SRC-11, SRC-01, SRC-08, SRC-09, SRC-12 (6 independent source families)
+- Appears in: macinka-turek, petr-macinka, filip-turek, oto-klempir, alena-schillerova, ales-juchelka, ivan-bednarik, boris-stastny, andrej-babis, karel-havlicek, jaromir-zuna, jeronym-tejc, zuzana-mrazova, adam-vojtech, igor-cerveny, robert-plaga, martin-sebestyan, tunde-bartha
+- Claims: CLM-03, CLM-01, CLM-36, CLM-07, CLM-08
+- Sources: SRC-11, SRC-01, SRC-08, SRC-09, SRC-12, SRC-04 (7 independent source families)
 - Relations: 
   - edge-babis-vlada (babis -> vlada, "premiér", dossier: macinka-turek)
   - edge-motoriste-vlada (motoriste -> vlada, "člen koalice", dossier: macinka-turek)
@@ -463,6 +488,7 @@ Generated from 38 context entities across 19 dossier(s). Regenerate with `npm ru
   - edge-cerveny-vlada (cerveny -> vlada, "ministr životního prostředí", dossier: igor-cerveny)
   - edge-plaga-vlada (plaga -> vlada, "ministr školství, mládeže a tělovýchovy", dossier: robert-plaga)
   - edge-sebestyan-vlada (sebestyan -> vlada, "ministr zemědělství", dossier: martin-sebestyan)
+  - edge-bartha-vlada (bartha -> vlada, "pověřena řízením 2018–2021; dle zpravodajství vede úřad i v roce 2026", dossier: tunde-bartha)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Zapper-Club s.r.o. (`zapper-club`)

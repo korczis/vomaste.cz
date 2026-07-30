@@ -183,3 +183,21 @@ title = "Petr Macinka a Filip Turek"
 dossier_type = "aggregate"
 source_dossiers = ["petr-macinka", "filip-turek"]
 show_in_primary_navigation = false
+
+[[dossiers]]
+# AGENTS.md AUTH-2026-07-30-U (Tünde Bartha).
+slug = "tunde-bartha"
+title = "Tünde Bartha"
+dossier_type = "entity"
+subject = "bartha"
+canonical_dossier = "tunde-bartha"
+show_in_primary_navigation = true
+
+[[dossiers]]
+# AGENTS.md AUTH-2026-07-30-V (Jaroslav Faltýnek).
+slug = "jaroslav-faltynek"
+title = "Jaroslav Faltýnek"
+dossier_type = "entity"
+subject = "faltynek"
+canonical_dossier = "jaroslav-faltynek"
+show_in_primary_navigation = true

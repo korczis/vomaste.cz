@@ -1,0 +1,62 @@
+# Relationship graph for the Jaroslav Faltýnek dossier. Projection of the
+# claim/source registries — every edge carries a CLM-## and SRC-## that
+# exist there. The proceeding edge records a CLOSED proceeding; the edge
+# to Babiš records a documented act of testimony, not an alignment claim.
+#
+# The prosecuting authority is deliberately NOT a node here. It already
+# exists as a global context entity at depth 2 (owned by macinka-turek),
+# and validate-graph.mjs requires a shared context entity to carry the
+# same depth in every graph that names it. In this dossier it would sit
+# at depth 1 — directly connected to the subject — so including it would
+# mean writing a depth that misdescribes one of the two graphs. The
+# procedural closure it effected is fully recorded in CLM-02 and CLM-04
+# and in the dossier prose; nothing is lost but a duplicate node.
+
+[[nodes]]
+id = "faltynek"
+type = "person"
+label = "Jaroslav Faltýnek"
+depth = 0
+subject = true
+claims = ["CLM-01"]
+sources = ["SRC-01"]
+
+[[nodes]]
+id = "capi-hnizdo"
+type = "controversy"
+label = "Kauza Čapí hnízdo"
+depth = 1
+subject = false
+claims = ["CLM-02", "CLM-05"]
+sources = ["SRC-02", "SRC-03"]
+
+
+[[nodes]]
+id = "babis"
+type = "person"
+label = "Andrej Babiš"
+depth = 1
+subject = false
+claims = ["CLM-03", "CLM-06"]
+sources = ["SRC-02", "SRC-03"]
+
+[[edges]]
+id = "edge-faltynek-capihnizdo"
+source = "faltynek"
+target = "capi-hnizdo"
+relation = "SUBJECT_OF_PROCEEDING"
+label = "stíhán 2015–2018; stíhání zrušeno státním zástupcem"
+status = "contextual"
+claims = ["CLM-02", "CLM-04"]
+sources = ["SRC-02"]
+
+
+[[edges]]
+id = "edge-faltynek-babis"
+source = "faltynek"
+target = "babis"
+relation = "DEFENDED"
+label = "svědecká výpověď u soudu ve prospěch obžalovaného (2022) — doloženo, že výroky padly"
+status = "contextual"
+claims = ["CLM-05", "CLM-06"]
+sources = ["SRC-03"]

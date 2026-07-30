@@ -16,9 +16,9 @@ dossier_status = "not_authorized"
 coverage_state = "discovered"
 discovered_at = "2026-07-29"
 discovered_via = ["edge-babis-vlada"]
-dossiers = ["macinka-turek", "petr-macinka", "filip-turek", "oto-klempir", "alena-schillerova", "ales-juchelka", "ivan-bednarik", "boris-stastny", "andrej-babis", "karel-havlicek", "jaromir-zuna", "jeronym-tejc", "zuzana-mrazova", "adam-vojtech", "igor-cerveny", "robert-plaga", "martin-sebestyan"]
-claims = ["CLM-03", "CLM-01", "CLM-36"]
-sources = ["SRC-11", "SRC-01", "SRC-08", "SRC-09", "SRC-12"]
+dossiers = ["macinka-turek", "petr-macinka", "filip-turek", "oto-klempir", "alena-schillerova", "ales-juchelka", "ivan-bednarik", "boris-stastny", "andrej-babis", "karel-havlicek", "jaromir-zuna", "jeronym-tejc", "zuzana-mrazova", "adam-vojtech", "igor-cerveny", "robert-plaga", "martin-sebestyan", "tunde-bartha"]
+claims = ["CLM-03", "CLM-01", "CLM-36", "CLM-07", "CLM-08"]
+sources = ["SRC-11", "SRC-01", "SRC-08", "SRC-09", "SRC-12", "SRC-04"]
 +++
 
 Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext.

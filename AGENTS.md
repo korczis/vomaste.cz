@@ -1044,3 +1044,104 @@ subsidies to Agrofert companies amid the then-PM's conflict of interest
 against his nomination. Mandatory framing: no court has found
 wrongdoing by him; NGO and commentary assessments are always attributed
 to their authors, never adopted as this site's own finding.
+
+### Authorized subject: Tünde Bartha (on the record)
+
+Authorized by the site owner, explicitly and on the record, 2026-07-30
+(owner named the subject and, after an initial framing was withdrawn by
+the owner, reaffirmed the subject on the basis that she is a documented,
+publicly exposed official): an entity dossier may be created for **Tünde
+Bartha** — Head of the Office of the Government of the Czech Republic
+(vedoucí Úřadu vlády ČR) since 2025-12-15, previously in the same post
+2018-06 to 2021-12, and director of the Minister's Office at the Ministry
+of Finance from 2015. `AUTH-2026-07-30-U`. Sources for the topics below
+were opened and read directly before this entry was written.
+
+Coverage limited to:
+
+1. **The Prague 3 municipal flat.** On 2026-06-24 the Prague 3 council
+   voted to terminate the lease with three months' notice, citing
+   "přenechání předmětu nájmu třetím osobám bez předchozího souhlasu
+   pronajímatele" (ČTK via Hospodářské noviny, iROZHLAS, Echo24). The
+   flat, ~70 m² for ~11 000 CZK/month, was obtained by exchange from a
+   Prague 8 municipal flat in 2004; Bartha stated she lives in Průhonice
+   in a building belonging to the Prime Minister's company Imoba.
+   **Mandatory framing, at every mention:** this is a *municipal
+   council's contractual decision*, not a finding of illegality, and no
+   unlawful conduct is alleged against her by any cited source. The
+   council's **own two legal opinions advised against the termination** —
+   the law firm Šenkýř Pánik concluded the existing evidence was
+   insufficient to succeed in court, and department head Michal Dobiáš
+   wrote that "neexistuje žádný právně relevantní podklad" and warned of
+   "vysoké riziko" that a court would find the termination unlawful
+   (Echo24). Any record of this topic that omits the adverse legal
+   opinions misrepresents the sources and must not be published.
+
+2. **Her documented career path between the Babiš group and the state
+   apparatus**, as a sequence of dated employment facts: Ministry of
+   Finance (2015) → Office of the Government (2017/2018–2021) → Agrofert
+   as business development manager for Eastern Europe, the Balkans and
+   the Middle East (HlídacíPes.org 2024-08-14; confirmed by Agrofert
+   spokesman Pavel Heřmanský, Aktuálně.cz) → Head of the Office of the
+   Government again (2025-12-15). **Mandatory framing:** these are
+   employment facts. HlídacíPes.org's assessment that working for
+   Agrofert can be considered working for the ANO leader is *attributed
+   commentary*, recorded as such, never adopted as this site's own
+   finding. No claim that any specific decision was influenced may be
+   written from the sequence alone — a career path is not evidence of an
+   act.
+
+3. **Her public roles as such**: leading Babiš's 2022–2023 presidential
+   campaign, and her security clearance level, where published by named
+   outlets.
+
+**Explicitly out of scope**, and not authorized by this entry: any claim
+that she acted as an intermediary, conduit or courier for anyone; any
+claim of unlawful conduct by her; and any characterization of her
+relationship to Jaroslav Faltýnek, for which no cited source has been
+found. The relatives who occupied the Prague 3 flat, her daughter, and
+her spouse are private individuals and **stay unnamed** even where a
+cited outlet named them.
+
+### Authorized subject: Jaroslav Faltýnek (on the record)
+
+Authorized by the site owner, explicitly and on the record, 2026-07-30,
+after the site owner was shown the editorial concern that the Čapí
+hnízdo topic concerns a prosecution that ended in 2018 and reaffirmed
+coverage on the basis that he is a documented, publicly exposed
+politician: an entity dossier may be created for **Jaroslav Faltýnek** —
+Member of the Chamber of Deputies since 2013-10, vice-chairman of the
+ANO parliamentary club since 2025-10-08, member of the Agriculture
+Committee since 2025-11-11, chairman of the ANO parliamentary club
+2013–2021, former 1st vice-chairman of the ANO movement.
+`AUTH-2026-07-30-V`.
+
+**Correction of record, deliberately preserved here:** Faltýnek has
+**never been a member of any government**. "Babiš's right hand" describes
+a *party* role (1st vice-chairman of ANO), not a public office. Any
+record implying he held a ministerial or cabinet post is false and must
+not be written.
+
+Coverage limited to:
+
+1. **The Čapí hnízdo prosecution and its discontinuation.** He was among
+   those originally accused in 2015 and the Chamber released him for
+   prosecution in 2017; **the prosecution against him was discontinued
+   (zastaveno) by the prosecutor in May 2018.** Mandatory framing, at
+   every mention and in the record's own summary: the *discontinuation*
+   is the fact being reported. He was never convicted and never stood
+   trial. A discontinuation is a procedural outcome — it is neither a
+   finding of guilt nor a judicial finding of innocence — and the record
+   must say so rather than leaving the 2015 accusation as the last thing
+   the reader sees.
+
+2. **His court testimony in the Čapí hnízdo trial in support of Andrej
+   Babiš**, including the published quotation that the project was below
+   Babiš's threshold of attention (Echo24). Recorded at **quote status
+   (CITACE)**: what is evidenced is that the statement was made in court,
+   never that its content is true.
+
+**Explicitly out of scope**: any claim that he committed a criminal
+offence; any claim that he acted as an intermediary or handler for any
+person, for which no cited source exists; and any new topic about Andrej
+Babiš, who has his own dossier and authorization.

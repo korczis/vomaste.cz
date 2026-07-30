@@ -26,7 +26,20 @@ import path from "node:path";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..", "..");
-const SLUG = process.argv[2] || "macinka-turek";
+// No default slug, deliberately. This script rewrites files in place, and a
+// default silently rewrote the WRONG dossier when the argument was omitted
+// (it happened, twice, with the sibling claim/case generators). Requiring
+// the argument makes that mistake impossible rather than merely unlikely.
+const SLUG = process.argv[2];
+if (!SLUG) {
+  console.error(
+    "migrate-graph-to-pages: usage: node scripts/dossier/migrate-graph-to-pages.mjs <dossier-slug>",
+  );
+  console.error(
+    "Refusing to guess a dossier — this script rewrites content/entities/*.md and content/dossiers/<slug>/relations/*.md in place.",
+  );
+  process.exit(1);
+}
 const GRAPH_TOML = path.join(ROOT, "data", "dossiers", SLUG, "graph.toml");
 const ENTITIES_DIR = path.join(ROOT, "content", "entities");
 const RELATIONS_DIR = path.join(ROOT, "content", "dossiers", SLUG, "relations");
@@ -123,6 +136,41 @@ function main() {
       dossiers = union(extractArrayField(fm, "dossiers"), [SLUG]);
       claims = union(extractArrayField(fm, "claims"), n.claims || []);
       sources = union(extractArrayField(fm, "sources"), n.sources || []);
+
+      // Entity pages are GLOBAL but their structural fields (depth,
+      // subject, publication_role, dossier_enabled, dossier_status,
+      // coverage_state, body) describe the entity as its OWNING dossier
+      // models it — and validate-graph.mjs enforces exactly that, scoping
+      // depth/subject/role parity to the owning dossier. Regenerating the
+      // page from a *non-owning* dossier's node therefore corrupts it, in
+      // two flavours, both observed while building tunde-bartha and
+      // jaroslav-faltynek: a subject was downgraded to context
+      // (content/entities/babis.md: depth 0 -> 1, subject true -> false,
+      // body replaced by the thin context blurb), and a context entity had
+      // its depth rewritten to this graph's value
+      // (content/entities/statni-zastupitelstvi.md: 2 -> 1).
+      //
+      // The header above already promised this script MERGES rather than
+      // overwrites; for these fields it did not. Now it does. Ownership is
+      // the FIRST entry of the existing `dossiers` list — the dossier that
+      // created the page. When this run is not the owner, union the
+      // accumulating fields into the existing file and change nothing else.
+      const owner = extractArrayField(fm, "dossiers")[0];
+      if (owner && owner !== SLUG) {
+        let merged = existing;
+        for (const [field, value] of [
+          ["dossiers", dossiers],
+          ["claims", claims],
+          ["sources", sources],
+        ]) {
+          merged = merged.replace(
+            new RegExp(`^${field} = \\[[^\\]]*\\]`, "m"),
+            `${field} = ${tomlArray(value)}`,
+          );
+        }
+        if (merged !== existing) writeFileSync(filePath, merged, "utf8");
+        return;
+      }
       // discovered_at is when this entity FIRST appeared — never overwritten
       // by a later re-run, the same way `claims`/`sources` accumulate rather
       // than reset.

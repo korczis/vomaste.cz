@@ -1,0 +1,108 @@
+# Relationship graph for the Tünde Bartha dossier. Projection of the
+# claim/source registries — every edge carries a CLM-## and SRC-## that
+# exist there. No edge asserts influence over any decision; the edges
+# record roles and a tenancy, nothing more (see AUTH-2026-07-30-U).
+
+[[nodes]]
+id = "bartha"
+type = "person"
+label = "Tünde Bartha"
+depth = 0
+subject = true
+claims = ["CLM-07", "CLM-08"]
+sources = ["SRC-01", "SRC-04"]
+
+[[nodes]]
+id = "vlada"
+type = "public_institution"
+label = "Úřad vlády ČR"
+depth = 1
+subject = false
+claims = ["CLM-07", "CLM-08"]
+sources = ["SRC-01", "SRC-04"]
+
+[[nodes]]
+id = "agrofert"
+type = "company"
+label = "Agrofert"
+depth = 1
+subject = false
+claims = ["CLM-06"]
+sources = ["SRC-03"]
+
+[[nodes]]
+id = "praha3"
+type = "public_institution"
+label = "Městská část Praha 3"
+depth = 1
+subject = false
+claims = ["CLM-01", "CLM-02", "CLM-03", "CLM-04"]
+sources = ["SRC-01", "SRC-02"]
+
+[[nodes]]
+id = "imoba"
+type = "company"
+label = "Imoba"
+depth = 1
+subject = false
+claims = ["CLM-05"]
+sources = ["SRC-01", "SRC-02"]
+
+[[nodes]]
+id = "babis"
+type = "person"
+label = "Andrej Babiš"
+depth = 1
+subject = false
+claims = ["CLM-05"]
+sources = ["SRC-01", "SRC-02"]
+
+[[edges]]
+id = "edge-bartha-vlada"
+source = "bartha"
+target = "vlada"
+relation = "HOLDS_ROLE"
+label = "pověřena řízením 2018–2021; dle zpravodajství vede úřad i v roce 2026"
+status = "contextual"
+claims = ["CLM-07", "CLM-08"]
+sources = ["SRC-01", "SRC-04"]
+
+[[edges]]
+id = "edge-bartha-agrofert"
+source = "bartha"
+target = "agrofert"
+relation = "HOLDS_ROLE"
+label = "business development manager (dle zpravodajství, potvrzeno mluvčím)"
+status = "contextual"
+claims = ["CLM-06"]
+sources = ["SRC-03"]
+
+[[edges]]
+id = "edge-bartha-praha3"
+source = "bartha"
+target = "praha3"
+relation = "SUBJECT_OF_PROCEEDING"
+label = "výpověď z nájmu obecního bytu (rozhodnutí rady, ne soudu)"
+status = "contextual"
+claims = ["CLM-01", "CLM-04"]
+sources = ["SRC-01", "SRC-02"]
+
+[[edges]]
+id = "edge-bartha-imoba"
+source = "bartha"
+target = "imoba"
+relation = "ASSOCIATED_WITH_EVENT"
+label = "dle vlastního vyjádření bydlí v objektu společnosti"
+status = "contextual"
+claims = ["CLM-05"]
+sources = ["SRC-01", "SRC-02"]
+
+[[edges]]
+id = "edge-imoba-babis"
+source = "imoba"
+target = "babis"
+relation = "HOLDS_INTEREST_IN"
+label = "dle citovaného zpravodajství společnost patří Andreji Babišovi"
+status = "contextual"
+claims = ["CLM-05"]
+sources = ["SRC-01", "SRC-02"]

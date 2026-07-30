@@ -125,3 +125,17 @@ authorized_at = "2026-07-30"
 subjects = ["babis"]
 agents_md_section = "Scope extension, 2026-07-30: Andrej Babiš — full scope of the authorized topics"
 scope_summary = "Rozšíření AUTH-2026-07-30-C na plný rozsah vyjmenovaných témat: Čapí hnízdo v celé doložené procesní historii (dřívější zrušení, pozice spoluobžalované dle citovaného zpravodajství, osud dotace, vývoj po 2025-06); střet zájmů a dotace šířeji (audity Evropské komise a jejich publikované závěry, pozastavení a obnovení dotací Agrofertu, svěřenské fondy, SynBiol, dividendy); veřejné funkce a doložené veřejné výroky (jako CITACE — doloženo, že výrok padl, nikdy že jeho obsah platí); nemovitosti ve Francii; Setuza; Kostelecké uzeniny; entity a hrany těchto témat v grafu vztahů. „Absolutní clearance“ je rozšíření ROZSAHU, ne pozastavení metody — jmenovaný, datovaný, skutečně otevřený zdroj s URL; stav popisuje doloženost, ne pravdu; procesní výsledek se při každé zmínce odlišuje od rozhodnutí o vině; citace doslovně; nejmenované třetí osoby zůstávají nejmenované; co nelze ověřit, je GAP, ne opatrná věta."
+
+[[authorizations]]
+id = "AUTH-2026-07-30-U"
+authorized_at = "2026-07-30"
+subjects = ["bartha"]
+agents_md_section = "Authorized subject: Tünde Bartha (on the record)"
+scope_summary = "Vedoucí Úřadu vlády ČR (od 2025-12-15, dříve 2018–2021). Obecní byt Praha 3 — výpověď rady 2026-06-24 pro přenechání třetím osobám (ČTK/HN, iROZHLAS, Echo24); POVINNÉ RÁMOVÁNÍ: smluvní rozhodnutí radnice, ne konstatování nezákonnosti, a vlastní právní posudky radnice (AK Šenkýř Pánik; Michal Dobiáš — „neexistuje žádný právně relevantní podklad“) od výpovědi odrazovaly — záznam bez nich se nesmí publikovat. Doložená kariérní dráha MF 2015 → Úřad vlády 2017–2021 → Agrofert business development pro východní Evropu/Balkán/Blízký východ (HlídacíPes 2024-08-14, potvrdil mluvčí Heřmanský) → Úřad vlády 2025-12-15; hodnocení HlídacíPes atribuovat, z posloupnosti nelze psát tvrzení o ovlivnění konkrétního rozhodnutí. Prezidentská kampaň 2022–2023. MIMO ROZSAH: prostředník/kurýr pro kohokoli, jakákoli nezákonnost, jakýkoli vztah k Faltýnkovi (žádný zdroj nenalezen); příbuzní, dcera a manžel zůstávají nejmenovaní."
+
+[[authorizations]]
+id = "AUTH-2026-07-30-V"
+authorized_at = "2026-07-30"
+subjects = ["faltynek"]
+agents_md_section = "Authorized subject: Jaroslav Faltýnek (on the record)"
+scope_summary = "Poslanec od 2013-10, místopředseda klubu ANO od 2025-10-08, zemědělský výbor od 2025-11-11, předseda klubu ANO 2013–2021, bývalý 1. místopředseda ANO. NIKDY nebyl členem vlády — „pravá ruka Babiše“ je stranická role, ne veřejný úřad. Čapí hnízdo: mezi původně obviněnými 2015, vydán Sněmovnou 2017, STÍHÁNÍ ZASTAVENO státním zástupcem v květnu 2018 — zastavení je fakt, který se reportuje; nikdy odsouzen nebyl a před soud nešel; zastavení je procesní výsledek, ne rozhodnutí o vině ani soudní konstatování neviny. Svědectví u soudu ve prospěch Babiše (Echo24) jako CITACE — doloženo, že výrok padl, nikdy že platí. MIMO ROZSAH: jakékoli tvrzení o trestném činu, o roli prostředníka, a jakékoli nové téma o Babišovi."

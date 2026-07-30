@@ -5,7 +5,7 @@ system. This is provenance, not a publication decision — see
 `data/authorizations.toml` and `scripts/dossier/authorize-entity.mjs`
 for the only thing that actually authorizes a dossier.
 
-120 record(s) logged across 2 day(s). 0 new since last run.
+131 record(s) logged across 2 day(s). 0 new since last run.
 
 ## 2026-07-29
 
@@ -132,3 +132,14 @@ for the only thing that actually authorizes a dossier.
 - `edge-babis-synbiol` (relation, created)
 - `edge-synbiol-hartenberg` (relation, created)
 - `edge-synbiol-komise` (relation, created)
+- `bartha` (entity, created)
+- `imoba` (entity, created)
+- `praha3` (entity, created)
+- `edge-bartha-agrofert` (relation, created)
+- `edge-bartha-imoba` (relation, created)
+- `edge-bartha-praha3` (relation, created)
+- `edge-bartha-vlada` (relation, created)
+- `edge-imoba-babis` (relation, created)
+- `faltynek` (entity, created)
+- `edge-faltynek-babis` (relation, created)
+- `edge-faltynek-capihnizdo` (relation, created)
