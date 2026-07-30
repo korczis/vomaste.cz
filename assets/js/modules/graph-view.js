@@ -1,25 +1,30 @@
-// Minimal, real interactive Cytoscape view shared by the per-dossier local
-// graph (templates/dossier.html) and the global map (templates/map.html).
+// Interactive relationship view shared by the per-dossier local graph
+// (templates/dossier.html) and the global map (templates/map.html).
 //
-// Deliberately simpler than a full filter/chip/detail-panel UI: reads graph
-// data from a JSON island, resolves each node/edge's canonical route from
-// the already-published search-index.json (the same id -> route mapping
-// assets/js/modules/global-search.js uses, not a second lookup table), and
-// makes every node/edge a real click target to its own canonical page.
-// Every node/edge already has its own routable page and appears in the
+// Renderer: Sigma.js (WebGL) over a Graphology model — see
+// docs/adr/duckdb-wasm-and-sigma.md, which supersedes the Cytoscape choice
+// in docs/adr/graph-renderer.md. Both libraries are bundled by esbuild into
+// static/js/app.js, so this removes a third-party CDN dependency rather than
+// adding one, and keeps the graph *model* (Graphology) separate from its
+// *rendering* (Sigma).
+//
+// Data flow is unchanged: nodes/edges come from a JSON island generated at
+// build time from graph.toml, and each node/edge resolves its canonical route
+// from the already-published search-index.json (the same id -> route mapping
+// assets/js/modules/global-search.js uses, not a second lookup table).
+// Every node and edge already has its own routable page and appears in the
 // text-alternative registry list next to this graph — this view is a
-// progressive-enhancement visualization of that same data, not a second
-// source of truth.
+// progressive-enhancement visualization of that same data, never the only
+// way to reach a record.
 //
-// Resize/fullscreen: Cytoscape caches its canvas dimensions at init time
-// and does NOT observe container size changes on its own — every resize
+// Resize: Sigma caches its canvas dimensions, so every container resize
 // (sidebar toggle, fullscreen enter/exit, orientation change) needs an
-// explicit cy.resize() call or the canvas is left at its stale size. This
-// is the actual cause of "graph looks broken after resize/fullscreen",
-// independent of renderer choice. `cy.resize()` only recomputes the
-// canvas's pixel bounding box — it does NOT touch pan/zoom/layout, so
-// calling it never moves nodes or resets the camera.
+// explicit refresh — same constraint the Cytoscape implementation had.
+import Graph from "graphology";
+import Sigma from "sigma";
+import forceAtlas2 from "graphology-layout-forceatlas2";
 import { resizeHandlers } from "./fullscreen.js";
+
 const STATUS_COLOR = { corroborated: "#4ade80", disputed: "#facc15", quote: "#93c5fd", contextual: "rgba(255,255,255,0.35)" };
 const TYPE_COLOR = {
   person: "#f3e5c0",
@@ -57,114 +62,105 @@ async function fetchRouteMap(indexUrl) {
 
 export async function initGraphView(containerId, dataIslandId, searchIndexUrl) {
   const container = document.getElementById(containerId);
-  if (!container || !window.cytoscape) return;
+  if (!container) return;
   const data = readJsonIsland(dataIslandId);
   if (!data || !data.nodes || !data.edges) return;
 
   const routeOf = await fetchRouteMap(searchIndexUrl);
+  const graph = new Graph({ multi: true, type: "directed" });
 
-  const elements = [
-    ...data.nodes.map((n) => ({
-      data: {
-        id: n.id,
-        label: n.label,
-        type: n.type,
-        route: routeOf[n.id] || null,
-      },
-    })),
-    ...data.edges.map((e) => ({
-      data: {
-        id: e.id,
-        source: e.source,
-        target: e.target,
-        label: e.label,
-        status: e.status,
-        route: routeOf[e.id] || null,
-      },
-    })),
-  ];
-
-  const cy = window.cytoscape({
-    container,
-    elements,
-    style: [
-      {
-        selector: "node",
-        style: {
-          "background-color": (el) => TYPE_COLOR[el.data("type")] || "#666",
-          label: "data(label)",
-          color: "#fff",
-          "font-size": 9,
-          "text-valign": "bottom",
-          "text-margin-y": 4,
-          width: 18,
-          height: 18,
-        },
-      },
-      {
-        selector: "edge",
-        style: {
-          width: 1.5,
-          "line-color": (el) => STATUS_COLOR[el.data("status")] || "#666",
-          "target-arrow-color": (el) => STATUS_COLOR[el.data("status")] || "#666",
-          "target-arrow-shape": "triangle",
-          "curve-style": "bezier",
-          "arrow-scale": 0.7,
-        },
-      },
-      {
-        selector: "node[route], edge[route]",
-        style: { "overlay-opacity": 0 },
-      },
-    ],
-    layout: { name: "cose", animate: false, padding: 40, nodeRepulsion: 20000, idealEdgeLength: 90 },
-    minZoom: 0.2,
-    maxZoom: 3,
+  // Deterministic seed positions on a circle: ForceAtlas2 needs a starting
+  // layout, and seeding it from the node order (rather than Math.random)
+  // makes the rendered graph identical on every load.
+  data.nodes.forEach((n, i) => {
+    const angle = (2 * Math.PI * i) / data.nodes.length;
+    graph.addNode(n.id, {
+      label: n.label,
+      size: 7,
+      color: TYPE_COLOR[n.type] || "#666",
+      x: Math.cos(angle),
+      y: Math.sin(angle),
+      route: routeOf[n.id] || null,
+      kind: "node",
+    });
   });
 
-  cy.on("tap", "node, edge", (evt) => {
-    const route = evt.target.data("route");
+  for (const e of data.edges) {
+    if (!graph.hasNode(e.source) || !graph.hasNode(e.target)) continue;
+    graph.addEdgeWithKey(e.id, e.source, e.target, {
+      label: e.label,
+      size: 1.4,
+      color: STATUS_COLOR[e.status] || "#666",
+      type: "arrow",
+      route: routeOf[e.id] || null,
+      kind: "edge",
+    });
+  }
+
+  forceAtlas2.assign(graph, {
+    iterations: 220,
+    settings: { ...forceAtlas2.inferSettings(graph), gravity: 1.4, scalingRatio: 12, slowDown: 4 },
+  });
+
+  const renderer = new Sigma(graph, container, {
+    renderEdgeLabels: false,
+    labelColor: { color: "#ffffff" },
+    labelSize: 11,
+    labelWeight: "500",
+    labelDensity: 0.7,
+    labelGridCellSize: 70,
+    edgeLabelColor: { color: "rgba(255,255,255,0.7)" },
+    defaultEdgeType: "arrow",
+    minCameraRatio: 0.3,
+    maxCameraRatio: 4,
+  });
+
+  const routeOfNode = (id) => graph.getNodeAttribute(id, "route");
+  const routeOfEdge = (id) => graph.getEdgeAttribute(id, "route");
+
+  renderer.on("clickNode", ({ node }) => {
+    const route = routeOfNode(node);
     if (route) window.location.href = route;
   });
-  cy.on("mouseover", "node, edge", (evt) => {
-    if (evt.target.data("route")) container.style.cursor = "pointer";
+  renderer.on("clickEdge", ({ edge }) => {
+    const route = routeOfEdge(edge);
+    if (route) window.location.href = route;
   });
-  cy.on("mouseout", "node, edge", () => {
-    container.style.cursor = "";
+  renderer.on("enterNode", ({ node }) => {
+    container.style.cursor = routeOfNode(node) ? "pointer" : "";
   });
+  renderer.on("enterEdge", ({ edge }) => {
+    container.style.cursor = routeOfEdge(edge) ? "pointer" : "";
+  });
+  renderer.on("leaveNode", () => { container.style.cursor = ""; });
+  renderer.on("leaveEdge", () => { container.style.cursor = ""; });
 
-  // rAF-batched resize: cy.resize() is cheap (just re-reads the container's
-  // current pixel box) but coalescing bursts of ResizeObserver callbacks
-  // (e.g. during a CSS transition) into one call per frame avoids doing it
-  // dozens of times for a single visual resize.
+  // rAF-batched refresh: coalesces bursts of ResizeObserver callbacks (e.g.
+  // during a CSS transition) into one call per frame.
   let resizePending = false;
   const scheduleResize = () => {
     if (resizePending) return;
     resizePending = true;
     requestAnimationFrame(() => {
       resizePending = false;
-      cy.resize();
+      renderer.resize();
+      renderer.refresh();
     });
   };
 
   // Covers every resize cause, not just fullscreen: sidebar collapse,
-  // context-panel open/close, viewport/orientation change, DevTools, font
-  // loading reflow — anything that changes this container's box.
+  // viewport/orientation change, font-loading reflow — anything that changes
+  // this container's box.
   if (window.ResizeObserver) {
     new ResizeObserver(scheduleResize).observe(container);
   } else {
     window.addEventListener("resize", scheduleResize);
   }
 
-  // The fullscreen module (assets/js/modules/fullscreen.js) calls
-  // resizeHandlers[boxId]() once per fullscreenchange, timed to run after
-  // the browser has actually applied the fullscreen box's new size — the
-  // ResizeObserver above would eventually catch this too, but registering
-  // explicitly avoids relying on timing between two independent observers.
   const fsBox = container.closest(".fs-box");
   if (fsBox && fsBox.id) {
     resizeHandlers[fsBox.id] = scheduleResize;
   }
 
-  return cy;
+  return renderer;
 }

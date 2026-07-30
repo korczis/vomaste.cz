@@ -146,7 +146,10 @@ Build-time: [Zola](https://www.getzola.org/) 0.22.1 (obsah, routing,
 `scripts/`), Tailwind CSS (kompilace `static/css/input.css` →
 `main.css`), esbuild (bundle `assets/js/` → `static/js/app.js`),
 Flowbite (aplikační shell). Runtime v prohlížeči: Alpine.js (filtry,
-interakce), Chart.js a Cytoscape.js (z CDN, jen na stránce dossieru).
+interakce), Sigma.js + Graphology (graf vztahů a globální mapa, bundlované
+esbuildem) a Chart.js (z CDN, jen na stránce dossieru). Volitelně, výhradně
+po kliknutí uživatele, DuckDB-Wasm pro SQL konzoli na `/data/` — viz
+[`docs/adr/duckdb-wasm-and-sigma.md`](docs/adr/duckdb-wasm-and-sigma.md).
 Statický web nemá žádný běhový backend; kritický obsah má no-JS
 fallback.
 

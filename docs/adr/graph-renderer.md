@@ -1,6 +1,11 @@
 # ADR: graph renderer for `/map/` and local dossier graphs
 
-**Status**: accepted, revisit at the threshold below.
+**Status**: partially superseded by
+[`duckdb-wasm-and-sigma.md`](duckdb-wasm-and-sigma.md) (2026-07-30), which
+adopts Sigma.js and DuckDB-Wasm on the site owner's explicit decision — as
+a capability choice, not because the measurements below changed. The rest
+of this ADR (every other technology it declines, and its revisit
+threshold) still stands.
 **Date**: 2026-07-29.
 
 **Addendum, same date**: a follow-up request proposed an even larger stack

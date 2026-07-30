@@ -283,7 +283,7 @@ on the exact anchor after the redirect, not just at the top of the page.
   as a Flowbite application shell (fixed navbar + a sidebar that's a real
   Flowbite Drawer, docked on desktop and off-canvas on mobile).
 - `assets/js/modules/` — one file per feature. Alpine.js is a permitted
-  targeted dependency here, used the same way as Chart.js/Cytoscape.js:
+  targeted dependency here, used the same way as Chart.js/Sigma.js:
   for genuinely interactive UI (filter toolbars, the relationship graph's
   chips/detail panel), not as a site-wide framework.
 

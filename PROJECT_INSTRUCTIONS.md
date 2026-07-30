@@ -80,8 +80,9 @@ případě pochybnosti se nejdřív zeptej.
   esbuildem (`assets/js/app.js` → `static/js/app.js`)
 - Alpine.js — cílená závislost pro skutečně interaktivní UI (filtrovací
   lišty, chipy a detail panel grafu vztahů), používaná stejně jako
-  Chart.js/Cytoscape.js níže — ne jako celoplošný framework
-- Chart.js a Cytoscape.js (CDN, jen na stránce dossieru) — graf stavu
+  Chart.js/Sigma.js níže — ne jako celoplošný framework
+- Sigma.js + Graphology (bundlované) pro graf vztahů, Chart.js (CDN, jen na
+  stránce dossieru) — graf stavu
   tvrzení a interaktivní graf vztahů mezi osobami, institucemi a kauzami
 - `data/navigation.toml` — datově řízená navigace, vykreslená
   `templates/base.html` jako Flowbite aplikační shell (navbar + sidebar
