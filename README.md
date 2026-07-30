@@ -269,6 +269,7 @@ required fields, and contains no truth-rating markup.`
 | `node scripts/dossier/tag-subjects.mjs` | orazítkovat záznamy poli `subjects` |
 | `npm run scaffold:dossier -- --slug=<slug> --title="<Jméno>"` | vygeneruje placeholder skeleton nového entity dossieru (registry adresáře, `graph.toml`, `updates.toml`) — odmítne běžet, pokud `<Jméno>` není v autorizačním logu `AGENTS.md`; nezapisuje do `data/dossiers.toml` |
 | `npm run build:government-roster` | z `data/government.toml` vygeneruje kontextové entity stránky členů vlády (veřejná funkce z oficiálního zdroje, `publication_role = "context"`, **nikdy** dossier); existující stránky nikdy nepřepisuje; součást `npm run build` |
+| `node scripts/osint/ares-lookup.mjs --ico=… \| --name="…"` | dotaz do ARES (jediný spolehlivě funkční primární rejstřík) — **není** součástí `npm run build`, dělá živý síťový dotaz; doloží identitu/sídlo/formu/status, **nedoloží** vlastníky, skutečné majitele ani „od kdy ovládá" |
 
 ## Přidání obsahu do dossieru
 

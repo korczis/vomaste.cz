@@ -95,6 +95,23 @@
         doplněn a `checked` posunut na 2026-07-29.
   - [ ] Beze změny v CLM/SRC registrech — jde čistě o nezávislé ověření
         existujících dat a upřesnění důvodu nedohledatelnosti u ČÚZK.
+  - [!] **OPRAVA ZÁZNAMU (2026-07-30)**: nezávislá read-only inventura
+        prismatic-platform tento záznam nepotvrdila. V tom repozitáři
+        nebyl nalezen žádný commit, který by se registry klientů dotkl
+        (`git log --since=2026-07-28` = pět commitů, všechny landing
+        page), ani `TODO.md`. Jediný nalezený stavový dokument
+        (`.claude/reports/.../2025-12-03-or-justice-integration-assessment.md`)
+        naopak uvádí „Integration exists but **BROKEN**", „HTML parsing
+        completely broken (0% extraction success)". Buď oprava proběhla
+        v samostatném worktree, který nebyl mergnut, nebo je tento
+        záznam nepřesný. Záznam **nemažeme** (je to historický zápis),
+        ale nesmí se o něj opírat žádné tvrzení o „opravených
+        klientech". Skutečný změřený stav prismatic-platform k
+        2026-07-30: ARES funguje; Justice.cz/OR parsování 0 %; ČÚZK,
+        registr smluv a ÚOHS jsou mock; registr skutečných majitelů
+        vrací procenta jako `nil`; NKÚ a UDHPSH neexistují. Interní
+        reporty téhož repa tvrdící „99%+ coverage, production ready"
+        jsou v rozporu s kódem — aspirace, ne stav.
 
 - [x] Claude Code bootstrap tooling (2026-07-30), ORCH direct na masteru,
       infra-only — cíl: ať kdokoli/kdykoli snadno nastartuje session v
