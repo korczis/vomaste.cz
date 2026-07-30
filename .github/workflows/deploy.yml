@@ -66,6 +66,9 @@ jobs:
       - name: Check templates reuse shared UI components
         run: npm run lint:component-reuse
 
+      - name: Check templates contain no hardcoded records
+        run: npm run lint:hardcoded-records
+
       - name: Generate dossier stats
         run: npm run generate:stats
 

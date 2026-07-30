@@ -27,6 +27,7 @@
     "generate:candidates": "node scripts/dossier/generate-authorization-candidates.mjs",
     "generate:discovery-log": "node scripts/dossier/generate-discovery-log.mjs",
     "verify:anchors": "node scripts/dossier/verify-anchors.mjs",
+    "lint:hardcoded-records": "node scripts/lint/lint-hardcoded-records.mjs",
     "lint:historical-coupling": "node scripts/lint/lint-historical-coupling.mjs",
     "lint:component-reuse": "node scripts/lint/lint-component-reuse.mjs",
     "verify:jsonld": "node scripts/dossier/verify-jsonld.mjs",
@@ -34,7 +35,7 @@
     "authorize:entity": "node scripts/dossier/authorize-entity.mjs",
     "scaffold:dossier": "node scripts/dossier/scaffold-entity-dossier.mjs",
     "build:government-roster": "node scripts/dossier/build-government-roster.mjs",
-    "build": "npm run test && npm run build:government-roster && npm run validate:dossier && npm run validate:graph && npm run validate:authorization && npm run verify:authorization-log && npm run validate:dossier-types && npm run build:routes && npm run build:navigation && npm run validate:navigation && npm run validate:concepts && npm run lint:component-reuse && npm run generate:stats && npm run build:data-exports && npm run build:global-graph && npm run validate:graph-coverage && npm run build:search-index && npm run generate:candidates && npm run generate:discovery-log && npm run css:build && npm run js:build && zola build && npm run verify:anchors && npm run verify:jsonld && npm run verify:full-pages",
+    "build": "npm run test && npm run build:government-roster && npm run validate:dossier && npm run validate:graph && npm run validate:authorization && npm run verify:authorization-log && npm run validate:dossier-types && npm run build:routes && npm run build:navigation && npm run validate:navigation && npm run validate:concepts && npm run lint:component-reuse && npm run lint:hardcoded-records && npm run generate:stats && npm run build:data-exports && npm run build:global-graph && npm run validate:graph-coverage && npm run build:search-index && npm run generate:candidates && npm run generate:discovery-log && npm run css:build && npm run js:build && zola build && npm run verify:anchors && npm run verify:jsonld && npm run verify:full-pages",
     "dev": "npm run validate:graph && npm run validate:authorization && npm run validate:dossier-types && npm run build:routes && npm run build:navigation && npm run validate:navigation && npm run generate:stats && npm run build:data-exports && npm run build:global-graph && npm run validate:graph-coverage && npm run build:search-index && npm run generate:candidates && npm run generate:discovery-log && npm run css:build && npm run js:build && zola serve"
   },
   "devDependencies": {

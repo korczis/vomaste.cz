@@ -9,9 +9,10 @@
 {% block content %}
 {#- Not hardcoded to a single dossier: every subsection under
     content/dossiers/ is a real, independently authorized dossier (see
-    AGENTS.md). Today there is exactly one; the loop below (in the
-    "Aktuálně dostupné dossiery" section) renders however many exist
-    without needing a template change. -#}
+    AGENTS.md). How many there are is never written here: the loop below
+    (in the "Aktuálně dostupné dossiery" section) renders however many the
+    registry contains, and every count on this page is read from the
+    build-generated stats — no constant anyone has to recalculate. -#}
 {% set dossiers_root = get_section(path="dossiers/_index.md") %}
 {#- Every tile below is a link to its own full page under /koncepty/. The tile
     label and text come from that page's front matter (extra.tile_title /
@@ -19,6 +20,17 @@
     disagree — same single-source-of-truth rule the dossier registries follow.
     Group order and labels live in data/concept-groups.toml. -#}
 {% set concepts_section = get_section(path="koncepty/_index.md") %}
+{#- Kanonické dossiery (agregát, případně entity bez canonical_dossier) —
+    z nich se berou živá čísla i ukázkové záznamy. Počítá se jednou tady,
+    protože to potřebují dvě různé sekce níž. -#}
+{% set registry = load_data(path="data/dossiers.toml") %}
+{% set_global canonical_slugs = [] %}
+{% for d in registry.dossiers %}
+  {% if d.dossier_type == "aggregate" or d.canonical_dossier | default(value="") == "" %}
+    {% set_global canonical_slugs = canonical_slugs | concat(with=d.slug) %}
+  {% endif %}
+{% endfor %}
+{% set primary_canon = canonical_slugs | first %}
 {% set concepts = concepts_section.pages %}
 <main>
   <section class="hero-bg relative flex min-h-[90svh] w-full items-center justify-center overflow-hidden bg-black" aria-labelledby="hero-heading">
@@ -128,12 +140,27 @@
     </div>
     <p class="mx-auto mt-6 max-w-2xl text-center text-sm text-white/50">K tomu graf entit a vztahů: každá hrana musí být krytá tvrzením a zdrojem — žádné dekorativní spojnice.</p>
 
+    {#- Ukázka vazby CLM → SRC se bere z registru, ne z natvrdo napsaných ID:
+        první tvrzení kanonického dossieru, které nějaký zdroj cituje. Když
+        se záznam přečísluje nebo zmizí, ukázka se posune sama. -#}
+    {% set demo_pair_claims = get_section(path="dossiers/" ~ primary_canon ~ "/claims/_index.md") %}
+    {% set_global pair_claim = false %}
+    {% for c in demo_pair_claims.pages | sort(attribute="extra.clm_id") %}
+      {% if not pair_claim and c.extra.sources | length > 0 %}{% set_global pair_claim = c %}{% endif %}
+    {% endfor %}
+    {%- if pair_claim %}
+    {% set pair_sources = get_section(path="dossiers/" ~ primary_canon ~ "/sources/_index.md") %}
+    {% set pair_src_id = pair_claim.extra.sources | first %}
+    {% set pair_src = pair_sources.pages | filter(attribute="extra.src_id", value=pair_src_id) | first %}
     <div class="mt-8 flex flex-wrap items-center justify-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] p-6 text-center text-sm text-white/60" aria-label="Ukázka dohledatelnosti tvrzení ke zdroji">
-      <span class="rounded bg-white/5 px-2 py-1 font-mono text-xs text-[#f3e5c0]">CLM-07</span>
+      <a href="{{ pair_claim.permalink | safe }}" class="id-chip rounded bg-white/5 px-2 py-1 font-mono text-xs text-[#f3e5c0] no-underline hover:bg-white/10">{{ pair_claim.extra.clm_id }}</a>
       <span aria-hidden="true">→</span>
-      <span class="rounded bg-white/5 px-2 py-1 font-mono text-xs text-[#93c5fd]">SRC-15</span>
+      {%- if pair_src %}
+      <a href="{{ pair_src.permalink | safe }}" class="id-chip rounded bg-white/5 px-2 py-1 font-mono text-xs text-[#93c5fd] no-underline hover:bg-white/10">{{ pair_src.extra.src_id }}</a>
+      {%- endif %}
       <span class="text-white/40">každé tvrzení je jedno kliknutí od zdroje, ze kterého vychází</span>
     </div>
+    {%- endif %}
 
     <h3 class="mt-14 text-center text-lg font-semibold text-white">Stavy tvrzení</h3>
     <p class="mx-auto mt-2 max-w-xl text-center text-sm text-white/50">Každý stav má vlastní stránku s tím, co přesně tvrdí a co netvrdí.</p>
@@ -189,9 +216,7 @@
   {#- Živá čísla přes kanonické dossiery (aggregate, případně entity bez
       canonical_dossier) — projekce se nesčítají dvakrát. Zdroj: stats.toml
       generované buildem, takže čísla nemohou zestárnout. -#}
-  {% set registry = load_data(path="data/dossiers.toml") %}
   {% set_global tot_claims = 0 %}{% set_global tot_sources = 0 %}{% set_global tot_cases = 0 %}{% set_global tot_gaps = 0 %}{% set_global tot_entities = 0 %}{% set_global tot_relations = 0 %}
-  {% set_global canonical_slugs = [] %}
   {% for d in registry.dossiers %}
     {% set canon = d.canonical_dossier | default(value="") %}
     {% if d.dossier_type == "aggregate" or canon == "" %}
@@ -202,10 +227,8 @@
       {% set_global tot_gaps = tot_gaps + s.gaps_total %}
       {% set_global tot_entities = tot_entities + s.entities_total %}
       {% set_global tot_relations = tot_relations + s.relations_total %}
-      {% set_global canonical_slugs = canonical_slugs | concat(with=d.slug) %}
     {% endif %}
   {% endfor %}
-  {% set primary_canon = canonical_slugs | first %}
   <section aria-labelledby="dataset-heading" class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
     <h2 id="dataset-heading" class="text-center text-2xl font-bold text-white sm:text-3xl">Dataset v číslech</h2>
     <p class="mx-auto mt-3 max-w-xl text-center text-white/60">Počty se generují při každém buildu z reálných záznamů — každá dlaždice je proklik do registru.</p>
