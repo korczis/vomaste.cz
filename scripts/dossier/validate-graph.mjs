@@ -9,10 +9,9 @@
  * site's existing claims registry already uses a looser convention than
  * the strict rule would imply.
  */
-import { readFileSync, readdirSync, statSync } from "node:fs";
+import { readFileSync, readdirSync, statSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import { isCanonicalDossier } from "./lib/dossier-registry.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const DOSSIERS_ROOT = join(ROOT, "content/dossiers");
@@ -27,12 +26,18 @@ const ALLOWED_NODE_TYPES = new Set([
   "person", "political_party", "public_institution", "company", "organization",
   "event", "controversy", "role", "legal_or_administrative_process",
 ]);
-const ALLOWED_EDGE_STATUS = new Set(["corroborated", "disputed", "quote", "contextual"]);
+// "single" mirrors the claims registry's own status-single ("1 ZDROJ"): an
+// edge resting on exactly one cited source. Until it existed, such an edge
+// had to be labelled either "corroborated" (overstating it) or "contextual"
+// (understating it, and reserved for uncontested background carrying no
+// source of its own) — collapsing two different evidentiary states into one,
+// which the constitution's §2 explicitly forbids.
+const ALLOWED_EDGE_STATUS = new Set(["corroborated", "single", "disputed", "quote", "contextual"]);
 const ALLOWED_RELATIONS = new Set([
   "HOLDS_ROLE", "MEMBER_OF", "APPOINTED_AS", "DEFENDED", "DENIED",
   "ASSOCIATED_WITH_EVENT", "RESPONDED_TO", "DONATED_TO",
-  "UNDISCLOSED_INTEREST_IN", "SUBJECT_OF_PROCEEDING", "INVESTIGATED_BY",
-  "PROCEDURALLY_CLOSED_BY", "WARNED_BY", "FOLLOWED_BY",
+  "UNDISCLOSED_INTEREST_IN", "HOLDS_INTEREST_IN", "SUBJECT_OF_PROCEEDING",
+  "INVESTIGATED_BY", "PROCEDURALLY_CLOSED_BY", "WARNED_BY", "FOLLOWED_BY",
 ]);
 
 function extractArrayField(text, key) {
@@ -199,6 +204,14 @@ function validateGraphFor(slug) {
       }
       adjacency.get(e.source).add(e.target);
       adjacency.get(e.target).add(e.source);
+    }
+
+    // Same rule the claims registry already enforces for status-single: the
+    // badge says "1 ZDROJ", so it must actually be one. An edge citing two
+    // sources under this status is either mislabelled or its sources are not
+    // independent — both need fixing, not a looser check.
+    if (e.status === "single" && e.sources && e.sources.length > 1) {
+      err(tag(`Edge "${e.id}": status "single" but cites ${e.sources.length} sources (${e.sources.join(", ")}) — use "corroborated" if they are genuinely independent.`));
     }
 
     if (e.status === "corroborated" && e.sources && e.sources.length) {
@@ -377,9 +390,13 @@ function validateGraphFor(slug) {
   return { slug, nodesCount: nodes.length, edgesCount: edges.length, clustersCount: clusters.length, familiesCount: sourceFamilies.length, updateCount, entityPagesCount: entitiesInThisDossier, relationPagesCount: relationFiles.length };
 }
 
+// Kontroluje se KAŽDÝ dossier, který má vlastní graph.toml — ne jen
+// kanonický. Filtr na `isCanonicalDossier` pocházel z doby, kdy entity
+// dossiery nevlastnily žádné záznamy; od chvíle, kdy mají i vlastní graf,
+// jejich data touhle bránou vůbec neprocházela.
 const dossierSlugs = readdirSync(DOSSIERS_ROOT)
   .filter((f) => statSync(join(DOSSIERS_ROOT, f)).isDirectory())
-  .filter(isCanonicalDossier);
+  .filter((slug) => existsSync(join(DATA_ROOT, slug, "graph.toml")));
 if (dossierSlugs.length === 0) {
   console.error("No dossiers found under content/dossiers/.");
   process.exit(1);
