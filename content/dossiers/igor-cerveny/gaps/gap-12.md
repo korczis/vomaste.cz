@@ -1,0 +1,22 @@
++++
+title = "GAP-12 — Není doloženo, zda opoziční poslanci interpelovali ministra konkrétně kvůli cestě do USA n"
+description = "Jediný dohledaný záznam ze sněmovních interpelací (25. 6. 2026) se týká personálních změn na resortu; k cestě do USA došlo až v červenci."
+template = "dossier-gap.html"
+weight = 12
+
+[extra]
+subjects = ["cerveny"]
+dossier = "igor-cerveny"
+record_type = "gap"
+lang = "cs"
+gap_id = "GAP-12"
+priority = "střední"
+checked = "2026-07-30"
+claims = []
++++
+
+Není doloženo, zda opoziční poslanci interpelovali ministra konkrétně kvůli cestě do USA nebo kvůli nákladům na kanceláře.
+
+**Proč je to mezera**: Jediný dohledaný záznam ze sněmovních interpelací (25. 6. 2026) se týká personálních změn na resortu; k cestě do USA došlo až v červenci. Tato mezera **není** zjištěním žádným
+směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
+otevřeným zdrojem.

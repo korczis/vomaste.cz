@@ -14,8 +14,8 @@ period = "2022"
 status = "status-single"
 label = "Důvody nezveřejněny"
 summary = "Bednárik v únoru 2022 rezignoval na funkci generálního ředitele ČD; konkrétní důvody veřejně neuvedl a citovaný zdroj je nedokládá."
-claims = []
-sources = []
+claims = ["CLM-40", "CLM-41", "CLM-42", "CLM-43", "CLM-44", "CLM-45", "CLM-46", "CLM-47"]
+sources = ["SRC-13", "SRC-20", "SRC-21", "SRC-19", "SRC-12"]
 subjects = ["bednarik"]
 +++
 

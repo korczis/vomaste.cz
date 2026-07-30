@@ -36,7 +36,6 @@ title = "Místopředsedou poslaneckého klubu ANO 2011 (poslanecký mandát od 4
 anchor = "kauza-zrusene-stihani"
 dot = "dot-fact"
 subjects = ["faltynek"]
-
 [[extra.cases]]
 anchor = "kauza-zrusene-stihani"
 period = "2018"

@@ -14,8 +14,8 @@ period = "2026"
 status = "status-single"
 label = "Sledované téma"
 summary = "Zkrácení školního roku 2025/2026 — viz tvrzení CLM-16, CLM-17, CLM-18, CLM-19."
-claims = []
-sources = []
+claims = ["CLM-48", "CLM-49", "CLM-50", "CLM-51", "CLM-52", "CLM-53", "CLM-54"]
+sources = ["SRC-20", "SRC-22", "SRC-21"]
 subjects = ["plaga"]
 +++
 

@@ -1,5 +1,5 @@
 +++
-title = "SRC-07 — Praha na Dlani (agregace Aktuálně.cz)"
+title = "SRC-07 — Praha na dlani (přetisk anotace iROZHLAS.cz)"
 description = "Ve FN Olomouc byly některé defibrilátory voperovány bez splnění kritérií, zjistila komise"
 template = "dossier-source.html"
 weight = 7
@@ -10,7 +10,7 @@ dossier = "adam-vojtech"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-07"
-outlet = "Praha na Dlani (agregace Aktuálně.cz)"
+outlet = "Praha na dlani (přetisk anotace iROZHLAS.cz)"
 src_type = "zpravodajství"
 url = "https://www.prahanadlani.cz/clanek-zprava/1594840-ve-fn-olomouc-byly-nektere-defibrilatory-voperovany-bez-splneni-kriterii-zjistila-komise.html"
 published = "2026-07-10"

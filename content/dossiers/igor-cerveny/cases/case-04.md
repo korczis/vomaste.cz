@@ -14,8 +14,8 @@ period = "2026"
 status = "status-single"
 label = "Sledované téma"
 summary = "Cesta do USA — viz tvrzení CLM-16, CLM-17, CLM-18, CLM-19."
-claims = []
-sources = []
+claims = ["CLM-49", "CLM-50", "CLM-51", "CLM-52", "CLM-53", "CLM-54", "CLM-55", "CLM-56", "CLM-57"]
+sources = ["SRC-18", "SRC-16", "SRC-19", "SRC-17"]
 subjects = ["cerveny"]
 +++
 

@@ -1,0 +1,19 @@
++++
+title = "CLM-42"
+description = "Newstream uvedl, že Bednárik své pohnutky veřejně nesdělil, a jako pravděpodobné příčiny označil plánované vládní úspory a spor o platby za "
+template = "dossier-claim.html"
+weight = 42
+
+[extra]
+dossier = "ivan-bednarik"
+record_type = "claim"
+lang = "cs"
+clm_id = "CLM-42"
+status = "status-single"
+status_label = "1 ZDROJ"
+summary = "Newstream uvedl, že Bednárik své pohnutky veřejně nesdělil, a jako pravděpodobné příčiny označil plánované vládní úspory a spor o platby za pozemky ČD užívané Správou železnic, s nimiž dopravce počítal v byznysplánu předloženém dozorčí radě."
+sources = ["SRC-21"]
+subjects = ["bednarik"]
++++
+
+Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/ivan-bednarik/_index.md#registr-tvrzeni).

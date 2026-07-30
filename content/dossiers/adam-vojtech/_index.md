@@ -128,9 +128,6 @@ anchor = "kauza-benefity-stret"
 dot = "dot-fact"
 subjects = ["vojtech"]
 
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-Q"]
 [[extra.cases]]
 anchor = "kauza-defibrilatory"
 period = "2026"
@@ -161,7 +158,9 @@ summary = "Kritika očkovací strategie od koaliční SPD — viz tvrzení CLM-1
 claims = ["CLM-45", "CLM-46", "CLM-47", "CLM-48", "CLM-49", "CLM-50"]
 subjects = ["vojtech"]
 
-+++
+[extra.authorization]
+authorized = true
+record_ids = ["AUTH-2026-07-30-Q"]+++
 
 Adam Vojtěch zastává funkci ministra zdravotnictví ve třetí vládě Andreje Babiše (viz
 `data/government.toml`, ověřeno proti oficiálnímu seznamu členů vlády).

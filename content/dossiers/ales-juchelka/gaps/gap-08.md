@@ -1,0 +1,22 @@
++++
+title = "GAP-08 — Chybí jakékoli potvrzení, jak policie s podanými trestními oznámeními naložila."
+description = "Nedohledáno žádné vyjádření policie ani státního zastupitelství o přijetí oznámení, zahájení úkonů trestního řízení či odložení. Stav zůstáv"
+template = "dossier-gap.html"
+weight = 8
+
+[extra]
+subjects = ["juchelka"]
+dossier = "ales-juchelka"
+record_type = "gap"
+lang = "cs"
+gap_id = "GAP-08"
+priority = "střední"
+checked = "2026-07-30"
+claims = []
++++
+
+Chybí jakékoli potvrzení, jak policie s podanými trestními oznámeními naložila.
+
+**Proč je to mezera**: Nedohledáno žádné vyjádření policie ani státního zastupitelství o přijetí oznámení, zahájení úkonů trestního řízení či odložení. Stav zůstává u ohlášeného/podaného oznámení — nikoli obvinění. Tato mezera **není** zjištěním žádným
+směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
+otevřeným zdrojem.

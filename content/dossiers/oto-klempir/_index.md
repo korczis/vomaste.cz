@@ -100,6 +100,17 @@ title = "Odboráři Národní galerie Praha posílají ministrovi otevřený dop
 anchor = "kauza-ngp-vyberove-rizeni"
 dot = "dot-fact"
 subjects = ["klempir"]
+
+[extra.authorization]
+authorized = true
+record_ids = ["AUTH-2026-07-30-KLEMPIR"]
+
+[[extra.timeline]]
+date = "2025-12"
+title = "Jmenován ministrem kultury"
+anchor = "kauza-financovani-verejnopravnich-medii"
+dot = "dot-fact"
+subjects = ["klempir"]
 [[extra.cases]]
 anchor = "kauza-financovani-verejnopravnich-medii"
 period = "2026"
@@ -150,16 +161,6 @@ summary = "Vstup do politiky a jmenování ministrem — viz tvrzení CLM-40, CL
 claims = []
 subjects = ["klempir"]
 
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-KLEMPIR"]
-
-[[extra.timeline]]
-date = "2025-12"
-title = "Jmenován ministrem kultury"
-anchor = "kauza-financovani-verejnopravnich-medii"
-dot = "dot-fact"
-subjects = ["klempir"]
 +++
 
 Oto Klempíř je ministrem kultury ve třetí vládě Andreje Babiše a

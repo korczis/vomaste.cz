@@ -128,9 +128,6 @@ anchor = "kauza-pokuta-stret-zajmu"
 dot = "dot-fact"
 subjects = ["mrazova"]
 
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-P"]
 [[extra.cases]]
 anchor = "kauza-pokuta-stret-zajmu"
 period = "2026"
@@ -171,7 +168,9 @@ summary = "Výzvy k rezignaci a podnět resortu spravedlnosti — viz tvrzení C
 claims = ["CLM-24", "CLM-25", "CLM-26", "CLM-51", "CLM-52", "CLM-53", "CLM-56"]
 subjects = ["mrazova"]
 
-+++
+[extra.authorization]
+authorized = true
+record_ids = ["AUTH-2026-07-30-P"]+++
 
 Zuzana Mrázová zastává funkci ministryně pro místní rozvoj ve třetí vládě Andreje Babiše (viz
 `data/government.toml`, ověřeno proti oficiálnímu seznamu členů vlády).

@@ -163,9 +163,6 @@ anchor = "kauza-elektromobilita"
 dot = "dot-fact"
 subjects = ["havlicek"]
 
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-M"]
 [[extra.cases]]
 anchor = "kauza-toustovy-chleb"
 period = "2026"
@@ -196,7 +193,9 @@ summary = "Pozice k EU cílům elektromobility — viz tvrzení CLM-15, CLM-16, 
 claims = ["CLM-40", "CLM-41", "CLM-42", "CLM-43", "CLM-44", "CLM-45", "CLM-46"]
 subjects = ["havlicek"]
 
-+++
+[extra.authorization]
+authorized = true
+record_ids = ["AUTH-2026-07-30-M"]+++
 
 Karel Havlíček zastává funkci 1. místopředsedy vlády a ministra průmyslu a obchodu ve třetí vládě Andreje Babiše (viz
 `data/government.toml`, ověřeno proti oficiálnímu seznamu členů vlády).

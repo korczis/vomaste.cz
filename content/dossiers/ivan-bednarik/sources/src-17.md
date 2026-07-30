@@ -1,0 +1,25 @@
++++
+title = "SRC-17 — Seznam Zprávy"
+description = "Česko není Praha. Ministr dopravy odmítl požadavky z metropole"
+template = "dossier-source.html"
+weight = 17
+
+[extra]
+subjects = ["bednarik"]
+dossier = "ivan-bednarik"
+record_type = "source"
+lang = "cs"
+src_id = "SRC-17"
+outlet = "Seznam Zprávy"
+src_type = "zpravodajství"
+url = "https://www.seznamzpravy.cz/clanek/ekonomika-byznys-doprava-ministr-by-chtel-strop-pro-dalsi-druh-dopravy-a-neni-bez-sance-308778"
+published = "2026-06-18"
+retrieved = "2026-07-30"
+claims = ["CLM-34", "CLM-35"]
++++
+
+**Česko není Praha. Ministr dopravy odmítl požadavky z metropole**
+
+Bednárik odmítá investiční požadavky Prahy a Středočeského kraje s argumentem, že nemůže rozhodovat pouze ve prospěch nejbohatší oblasti a že metropole nemůže spotřebovat 90 % rozpočtu resortu na úkor regionů jako Karlovarsko či Jesenicko. Dále prosazuje na úrovni EU zastropování cen elektřiny při výkyvech trhu jako podporu konkurenceschopnosti nákladní železnice a upozorňuje, že dopravci museli zvýšené náklady promítnout do cen.
+
+Zdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji.

@@ -21,7 +21,6 @@ subject_entities = ["macinka", "turek"]
 lang = "cs"
 updated = "2026-07-29"
 reviewed_at = "2026-07-29"
-
 [[extra.cases]]
 anchor = "kauza-z-roku-2024-fotografie-a-sbirka-svicnu"
 period = "2024"

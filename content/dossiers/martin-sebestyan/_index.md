@@ -156,9 +156,6 @@ anchor = "kauza-vymahani-agrofert"
 dot = "dot-fact"
 subjects = ["sebestyan"]
 
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-T"]
 [[extra.cases]]
 anchor = "kauza-vymahani-agrofert"
 period = "2026"
@@ -189,7 +186,9 @@ summary = "Varování Transparency International — viz tvrzení CLM-12, CLM-13
 claims = ["CLM-31", "CLM-32"]
 subjects = ["sebestyan"]
 
-+++
+[extra.authorization]
+authorized = true
+record_ids = ["AUTH-2026-07-30-T"]+++
 
 Martin Šebestyán zastává funkci ministra zemědělství ve třetí vládě Andreje Babiše (viz
 `data/government.toml`, ověřeno proti oficiálnímu seznamu členů vlády).

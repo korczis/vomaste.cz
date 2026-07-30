@@ -1,5 +1,5 @@
 +++
-title = "SRC-17 — Poslanecká sněmovna Parlamentu ČR (psp.cz)"
+title = "SRC-17 — Poslanecká sněmovna Parlamentu ČR"
 description = "Sněmovní tisk 67 — Novela zákona: stavební zákon (legislativní historie)"
 template = "dossier-source.html"
 weight = 17
@@ -10,7 +10,7 @@ dossier = "karel-havlicek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-17"
-outlet = "Poslanecká sněmovna Parlamentu ČR (psp.cz)"
+outlet = "Poslanecká sněmovna Parlamentu ČR"
 src_type = "oficiální primární zdroj"
 url = "https://www.psp.cz/sqw/historie.sqw?o=10&T=67"
 retrieved = "2026-07-30"

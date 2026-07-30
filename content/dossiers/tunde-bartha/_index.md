@@ -43,7 +43,6 @@ title = "Rada MČ Praha 3 schvaluje výpověď z nájmu obecního bytu — přes
 anchor = "kauza-obecni-byt"
 dot = "dot-fact"
 subjects = ["bartha"]
-
 [[extra.cases]]
 anchor = "kauza-obecni-byt"
 period = "2004–2026"

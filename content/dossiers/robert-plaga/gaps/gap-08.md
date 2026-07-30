@@ -1,0 +1,22 @@
++++
+title = "GAP-08 — Nepodařilo se ověřit doslovné znění navrhované novely (sněmovní tisk 232/0) ani text stano"
+description = "Stránky Poslanecké sněmovny obsahují pouze metadata a odkazy na PDF/DOC; přiložené soubory se nepodařilo strojově přečíst. Obsah novely je p"
+template = "dossier-gap.html"
+weight = 8
+
+[extra]
+subjects = ["plaga"]
+dossier = "robert-plaga"
+record_type = "gap"
+lang = "cs"
+gap_id = "GAP-08"
+priority = "střední"
+checked = "2026-07-30"
+claims = []
++++
+
+Nepodařilo se ověřit doslovné znění navrhované novely (sněmovní tisk 232/0) ani text stanoviska vlády (tisk 232/1).
+
+**Proč je to mezera**: Stránky Poslanecké sněmovny obsahují pouze metadata a odkazy na PDF/DOC; přiložené soubory se nepodařilo strojově přečíst. Obsah novely je proto doložen jen zprostředkovaně přes zpravodajství. Tato mezera **není** zjištěním žádným
+směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
+otevřeným zdrojem.

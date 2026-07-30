@@ -14,8 +14,8 @@ period = "2026"
 status = "status-single"
 label = "Sledované téma"
 summary = "Veřejná vyjádření a obhajoba ministra — viz tvrzení CLM-17, CLM-18, CLM-19, CLM-20, CLM-21, CLM-22."
-claims = []
-sources = []
+claims = ["CLM-25", "CLM-26", "CLM-27", "CLM-28", "CLM-29", "CLM-30"]
+sources = ["SRC-19", "SRC-16", "SRC-25", "SRC-23", "SRC-28", "SRC-21"]
 subjects = ["juchelka"]
 +++
 

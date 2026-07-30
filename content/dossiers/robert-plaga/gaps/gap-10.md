@@ -1,0 +1,22 @@
++++
+title = "GAP-10 — Nebylo dohledáno oficiální stanovisko školských odborů (ČMOS pracovníků školství) ani Peda"
+description = "Cílené dotazy vracely pouze domovskou stránku odborů bez relevantních tiskových zpráv; reakce jsou doloženy jen za Učitelskou platformu, Uni"
+template = "dossier-gap.html"
+weight = 10
+
+[extra]
+subjects = ["plaga"]
+dossier = "robert-plaga"
+record_type = "gap"
+lang = "cs"
+gap_id = "GAP-10"
+priority = "střední"
+checked = "2026-07-30"
+claims = []
++++
+
+Nebylo dohledáno oficiální stanovisko školských odborů (ČMOS pracovníků školství) ani Pedagogické komory k žádnému ze tří témat.
+
+**Proč je to mezera**: Cílené dotazy vracely pouze domovskou stránku odborů bez relevantních tiskových zpráv; reakce jsou doloženy jen za Učitelskou platformu, Unii rodičů a asociace ředitelů. Tato mezera **není** zjištěním žádným
+směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
+otevřeným zdrojem.

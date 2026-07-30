@@ -107,9 +107,6 @@ anchor = "kauza-ustavni-soud"
 dot = "dot-fact"
 subjects = ["tejc"]
 
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-O"]
 [[extra.cases]]
 anchor = "kauza-bitcoin"
 period = "2026"
@@ -140,7 +137,9 @@ summary = "Spor o předběžné opatření Ústavního soudu — viz tvrzení CL
 claims = ["CLM-41", "CLM-42", "CLM-43", "CLM-44", "CLM-45", "CLM-46", "CLM-47", "CLM-48", "CLM-49", "CLM-50", "CLM-51"]
 subjects = ["tejc"]
 
-+++
+[extra.authorization]
+authorized = true
+record_ids = ["AUTH-2026-07-30-O"]+++
 
 Jeroným Tejc zastává funkci ministra spravedlnosti ve třetí vládě Andreje Babiše (viz
 `data/government.toml`, ověřeno proti oficiálnímu seznamu členů vlády).

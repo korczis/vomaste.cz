@@ -5,7 +5,6 @@ template = "dossier-case.html"
 weight = 2
 
 [extra]
-subjects = ["faltynek"]
 dossier = "jaroslav-faltynek"
 record_type = "case"
 lang = "cs"
@@ -17,6 +16,8 @@ label = "Svědek, ne obžalovaný"
 summary = "V září 2022 vypovídal u soudu jako svědek ve prospěch obžalovaného. Doloženo je, že dané výroky u soudu učinil — nikoli že jejich obsah platí."
 claims = ["CLM-05", "CLM-06", "CLM-07", "CLM-08"]
 sources = ["SRC-03"]
+subjects = ["faltynek"]
 +++
 
-Viz plné znění, kontext a metodické hranice v [hlavním přehledu](@/dossiers/jaroslav-faltynek/_index.md#kauza-svedecka-vypoved).
+Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu
+dossieru](@/dossiers/jaroslav-faltynek/_index.md#kauza-svedecka-vypoved).

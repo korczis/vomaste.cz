@@ -38,6 +38,18 @@ title = "MPSV stahuje projekty za 63,8 + 17,6 mil. Kč z vykazování vůči EU 
 anchor = "kauza-poradkyne-stret"
 dot = "dot-fact"
 subjects = ["juchelka"]
+
+[extra.authorization]
+authorized = true
+record_ids = ["AUTH-2026-07-30-B"]
+
+[[extra.timeline]]
+date = "2026-04"
+title = "Čtyři projekty vyřazeny z financování EU"
+anchor = "kauza-poradkyne"
+dot = "dot-disputed"
+subjects = ["juchelka"]
+
 [[extra.cases]]
 anchor = "kauza-poradkyne"
 period = "2026"
@@ -55,7 +67,7 @@ title = "Kauza střetu zájmů bývalé poradkyně"
 status = "status-single"
 label = "Sledované téma"
 summary = "Kauza střetu zájmů bývalé poradkyně — viz tvrzení CLM-06, CLM-07, CLM-08, CLM-10, CLM-16."
-claims = []
+claims = ["CLM-23", "CLM-24", "CLM-45"]
 subjects = ["juchelka"]
 
 [[extra.cases]]
@@ -65,7 +77,7 @@ title = "Rozpočtový dopad kauzy"
 status = "status-single"
 label = "Sledované téma"
 summary = "Rozpočtový dopad kauzy — viz tvrzení CLM-09, CLM-11, CLM-12."
-claims = []
+claims = ["CLM-31", "CLM-32", "CLM-33", "CLM-34", "CLM-35", "CLM-36", "CLM-37", "CLM-43", "CLM-46"]
 subjects = ["juchelka"]
 
 [[extra.cases]]
@@ -75,7 +87,7 @@ title = "Trestní oznámení a kontrola NKÚ"
 status = "status-single"
 label = "Sledované téma"
 summary = "Trestní oznámení a kontrola NKÚ — viz tvrzení CLM-13, CLM-14, CLM-15."
-claims = []
+claims = ["CLM-38", "CLM-39", "CLM-40", "CLM-41", "CLM-42", "CLM-44"]
 subjects = ["juchelka"]
 
 [[extra.cases]]
@@ -85,18 +97,7 @@ title = "Veřejná vyjádření a obhajoba ministra"
 status = "status-single"
 label = "Sledované téma"
 summary = "Veřejná vyjádření a obhajoba ministra — viz tvrzení CLM-17, CLM-18, CLM-19, CLM-20, CLM-21, CLM-22."
-claims = []
-subjects = ["juchelka"]
-
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-B"]
-
-[[extra.timeline]]
-date = "2026-04"
-title = "Čtyři projekty vyřazeny z financování EU"
-anchor = "kauza-poradkyne"
-dot = "dot-disputed"
+claims = ["CLM-25", "CLM-26", "CLM-27", "CLM-28", "CLM-29", "CLM-30"]
 subjects = ["juchelka"]
 
 +++
@@ -142,7 +143,30 @@ citované zpravodajství samo uvádí.
 | <a id="clm-03"></a>[CLM-03](@/dossiers/ales-juchelka/claims/clm-03.md) | Na konci dubna 2026 byly čtyři projekty spojené s firmou poradkyně vyřazeny z financování Evropské unie; ministerstvo tyto přislíbené prostředky nemůže čerpat, což podle citovaného zpravodajství vytváří rozpočtovou mezeru 63,8 milionu korun | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-02](@/dossiers/ales-juchelka/sources/src-02.md) |
 | <a id="clm-04"></a>[CLM-04](@/dossiers/ales-juchelka/claims/clm-04.md) | Juchelka poradkyni nejprve hájil slovy, že je „normální ženská" a „člověk na svém místě", a kritiku odmítal; na dotaz, jak bude deficit řešen, odpověděl „Počkejte." | <span class="status-badge status-quote">CITACE</span> | [SRC-02](@/dossiers/ales-juchelka/sources/src-02.md) |
 | <a id="clm-05"></a>[CLM-05](@/dossiers/ales-juchelka/claims/clm-05.md) | Ministerstvo podle citovaného zpravodajství neplánuje vymáhat po poradkyni náhradu škody s odůvodněním, že vyřazení z financování EU nelze automaticky označit za přímou škodu | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-02](@/dossiers/ales-juchelka/sources/src-02.md) |
-
+| <a id="clm-23"></a>[CLM-23](@/dossiers/ales-juchelka/claims/clm-23.md) | K 29. červenci 2026 MPSV zadání externího právního posudku teprve připravovalo — zpracovatelem má být nezávislá advokátní kancelář, ale konkrétní výběr zpracovatele ani harmonogram v té době ještě nebyly určeny. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-23](@/dossiers/ales-juchelka/sources/src-23.md) [SRC-24](@/dossiers/ales-juchelka/sources/src-24.md) |
+| <a id="clm-24"></a>[CLM-24](@/dossiers/ales-juchelka/claims/clm-24.md) | Žádný výsledek ani závěr externího posudku nebyl k datu rešerše (30. 7. 2026) zveřejněn; Deník N výslovně uvádí, že konkrétní závěry nejsou dosud k dispozici. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-25](@/dossiers/ales-juchelka/sources/src-25.md) |
+| <a id="clm-25"></a>[CLM-25](@/dossiers/ales-juchelka/claims/clm-25.md) | Juchelka k posudku uvedl: „Pokud se prokáže, že škoda vznikla, tak ji budeme samozřejmě vymáhat. Zatím nemáme jednoznačný závěr, že by škoda vznikla, ale vyžádali jsme si na to i externí posudek.“ | <span class="status-badge status-quote">CITACE</span> | [SRC-19](@/dossiers/ales-juchelka/sources/src-19.md) [SRC-16](@/dossiers/ales-juchelka/sources/src-16.md) [SRC-25](@/dossiers/ales-juchelka/sources/src-25.md) |
+| <a id="clm-26"></a>[CLM-26](@/dossiers/ales-juchelka/claims/clm-26.md) | Podle Juchelky bude o tom, zda České republice skutečně vznikla finanční újma, možné rozhodnout až po dokončení administrace projektů. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-23](@/dossiers/ales-juchelka/sources/src-23.md) [SRC-16](@/dossiers/ales-juchelka/sources/src-16.md) |
+| <a id="clm-27"></a>[CLM-27](@/dossiers/ales-juchelka/claims/clm-27.md) | Juchelka podle iROZHLAS.cz sám střet zájmů Semancové nezpochybňuje, zároveň však vylučuje, že by ovlivňovala přerozdělování dotací. (Plný text iROZHLAS byl nedostupný — doloženo z přetištěného úryvku.) | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-28](@/dossiers/ales-juchelka/sources/src-28.md) |
+| <a id="clm-28"></a>[CLM-28](@/dossiers/ales-juchelka/claims/clm-28.md) | V rozhovoru ČT24 dne 27. 7. 2026 s moderátorem Danielem Takáčem Juchelka řekl: „Vůbec nepřijdeme o žádné peníze z EU a vůbec nebude v dluhu státní rozpočet, protože ty peníze jsou alokovány tak, jak alokovány jsou.“ | <span class="status-badge status-quote">CITACE</span> | [SRC-19](@/dossiers/ales-juchelka/sources/src-19.md) |
+| <a id="clm-29"></a>[CLM-29](@/dossiers/ales-juchelka/claims/clm-29.md) | Juchelka v témže rozhovoru uvedl: „A tady o žádné prostředky nepřijdeme, nebudeme podle mě vůbec kráceni v žádné sankci, která se týká NPO a dětských skupin, protože dle mých informací ten milník splníme, opravdu se tomu blížíme.“ | <span class="status-badge status-quote">CITACE</span> | [SRC-19](@/dossiers/ales-juchelka/sources/src-19.md) |
+| <a id="clm-30"></a>[CLM-30](@/dossiers/ales-juchelka/claims/clm-30.md) | Jádrem Juchelkovy rozpočtové obhajoby je argument, že Evropská komise vyplácí peníze za splnění konkrétního milníku, a stát proto o prostředky nepřijde. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-21](@/dossiers/ales-juchelka/sources/src-21.md) |
+| <a id="clm-31"></a>[CLM-31](@/dossiers/ales-juchelka/claims/clm-31.md) | Juchelka v rozhovoru ČT24 hovořil o vyjmutí celkem šesti projektů z Národního plánu obnovy a Operačního programu Zaměstnanost plus — tedy o vyšším počtu, než jsou dosud uváděné čtyři projekty za 63,8 mil. Kč. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-19](@/dossiers/ales-juchelka/sources/src-19.md) |
+| <a id="clm-32"></a>[CLM-32](@/dossiers/ales-juchelka/claims/clm-32.md) | Juchelka zasadil spornou částku do kontextu financování dětských skupin, u nichž uvedl objem 6 miliard korun ze státního rozpočtu a 700 milionů korun od Evropské unie. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-19](@/dossiers/ales-juchelka/sources/src-19.md) |
+| <a id="clm-33"></a>[CLM-33](@/dossiers/ales-juchelka/claims/clm-33.md) | MPSV k částce uvedlo: „Teprve po dokončení administrativních procesů bude možné vyhodnotit, zda došlo k porušení podmínek financování, zda vznikla škoda, a případně stanovit její výši.“ | <span class="status-badge status-quote">CITACE</span> | [SRC-26](@/dossiers/ales-juchelka/sources/src-26.md) |
+| <a id="clm-34"></a>[CLM-34](@/dossiers/ales-juchelka/claims/clm-34.md) | MPSV podle zjištění FORUM 24 z 22. 7. 2026 neplánovalo vymáhat případnou škodu po Semancové s argumentem, že „samotné vyjmutí prostředků z evropského financování nelze automaticky klasifikovat jako přímou škodu“ — tedy pozice předcházející Juchelkovu pozdějšímu příslibu vymáhání z 27. 7. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-22](@/dossiers/ales-juchelka/sources/src-22.md) |
+| <a id="clm-35"></a>[CLM-35](@/dossiers/ales-juchelka/claims/clm-35.md) | Objem 63,8 mil. Kč ministerstvo přiznalo až po tříměsíčním naléhání novinářů na základě zákona o svobodném přístupu k informacím. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-22](@/dossiers/ales-juchelka/sources/src-22.md) |
+| <a id="clm-36"></a>[CLM-36](@/dossiers/ales-juchelka/claims/clm-36.md) | MPSV k projektům uvedlo: „Dotčené projekty jsou předmětem probíhajících administrativních a kontrolních postupů. V současné době probíhá jejich administrace v rámci Národního plánu obnovy a ministerstvo počítá s tím, že nebudou vykazovány vůči Evropské komisi.“ | <span class="status-badge status-quote">CITACE</span> | [SRC-17](@/dossiers/ales-juchelka/sources/src-17.md) [SRC-18](@/dossiers/ales-juchelka/sources/src-18.md) |
+| <a id="clm-37"></a>[CLM-37](@/dossiers/ales-juchelka/claims/clm-37.md) | Ministerstvo počítá s úhradou vyřazených projektů ze státního rozpočtu, konkrétní suma ani rozpočtová kapitola však upřesněny nebyly. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-26](@/dossiers/ales-juchelka/sources/src-26.md) [SRC-18](@/dossiers/ales-juchelka/sources/src-18.md) |
+| <a id="clm-38"></a>[CLM-38](@/dossiers/ales-juchelka/claims/clm-38.md) | Poslanec Jiří Havránek (ODS) postavil Juchelku před alternativu: „Může a měl by podat trestní oznámení směrem k dané úřednici, nebo pokud o celé věci věděl… musí ve své pozici skončit.“ | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-18](@/dossiers/ales-juchelka/sources/src-18.md) [SRC-17](@/dossiers/ales-juchelka/sources/src-17.md) |
+| <a id="clm-39"></a>[CLM-39](@/dossiers/ales-juchelka/claims/clm-39.md) | Premiér Andrej Babiš k věci uvedl: „Pokud vznikne škoda, tak určitě pan ministr podá trestní oznámení.“ — tedy podmínil případné oznámení MPSV prokázáním škody. | <span class="status-badge status-quote">CITACE</span> | [SRC-23](@/dossiers/ales-juchelka/sources/src-23.md) |
+| <a id="clm-40"></a>[CLM-40](@/dossiers/ales-juchelka/claims/clm-40.md) | Pavla Pivoňka Vaňková (STAN) po podání trestního oznámení uvedla, že očekává, že „orgány činné v trestním řízení prošetří a najde se ten, kdo za to bude zodpovídat“. Jde o ohlášené podání oznámení — nikoli o zahájení úkonů trestního řízení, obvinění ani odsouzení kohokoli. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-18](@/dossiers/ales-juchelka/sources/src-18.md) |
+| <a id="clm-41"></a>[CLM-41](@/dossiers/ales-juchelka/claims/clm-41.md) | Předseda STAN Vít Rakušan svůj krok odůvodnil slovy: „Na tenhle střet zájmů doplácí celá naše země.“ | <span class="status-badge status-quote">CITACE</span> | [SRC-21](@/dossiers/ales-juchelka/sources/src-21.md) |
+| <a id="clm-42"></a>[CLM-42](@/dossiers/ales-juchelka/claims/clm-42.md) | NKÚ v rámci své (správní, nikoli trestní) kontroly položil ministerstvu přímý dotaz: „Uveďte a zdůvodněte, zda MPSV zvažuje podat trestní oznámení na dotyčnou osobu“, a zajímal se také, zda se ministerští úředníci obrátili na policii. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-21](@/dossiers/ales-juchelka/sources/src-21.md) [SRC-18](@/dossiers/ales-juchelka/sources/src-18.md) |
+| <a id="clm-43"></a>[CLM-43](@/dossiers/ales-juchelka/claims/clm-43.md) | NKÚ se ministerstva dále dotázal, zda bude vymáhat peníze po příjemcích dotací a z jakých zdrojů zaplatí projekty vyřazené z evropského financování. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-21](@/dossiers/ales-juchelka/sources/src-21.md) |
+| <a id="clm-44"></a>[CLM-44](@/dossiers/ales-juchelka/claims/clm-44.md) | Výsledky kontroly NKÚ (zahájené v červenci 2026, s dokončením kolem poloviny roku 2027) mají být podle FORUM 24 zveřejněny přibližně po letních prázdninách roku 2027. Jde o kontrolu správní povahy, nikoli o trestní řízení. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-21](@/dossiers/ales-juchelka/sources/src-21.md) |
+| <a id="clm-45"></a>[CLM-45](@/dossiers/ales-juchelka/claims/clm-45.md) | Odchod Semancové z MPSV byl podle Juchelky vzájemnou dohodou po jejím návratu z nemocenské; ministr uvedl, že „nechtěla riskovat ohrožení peněz z evropských fondů“ a že „bylo jí jasné, že by byla pořád terčem různých udání“. Semancová je zde uvedena pouze jako záznam pracovního vztahu k subjektu dossieru. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-20](@/dossiers/ales-juchelka/sources/src-20.md) |
+| <a id="clm-46"></a>[CLM-46](@/dossiers/ales-juchelka/claims/clm-46.md) | Komentátor Jiří Sezemský (Reflex) sečetl potenciální dopad na zhruba 82 milionů korun (64 mil. z Národního plánu obnovy plus dalších 18 mil. z OPZ+). Jde o autorský výpočet v komentáři, nikoli o oficiálně vyčíslenou škodu. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-27](@/dossiers/ales-juchelka/sources/src-27.md) |
 ## Střet zájmů bývalé poradkyně a rozpočtový dopad {#kauza-poradkyne}
 
 Podle textu FORUM 24 z 22. 7. 2026
@@ -204,3 +228,19 @@ Téma v autorizovaném rozsahu — viz tvrzení [CLM-13](@/dossiers/ales-juchelk
 ## Veřejná vyjádření a obhajoba ministra {#kauza-obhajoba}
 
 Téma v autorizovaném rozsahu — viz tvrzení [CLM-17](@/dossiers/ales-juchelka/claims/clm-17.md), [CLM-18](@/dossiers/ales-juchelka/claims/clm-18.md), [CLM-19](@/dossiers/ales-juchelka/claims/clm-19.md), [CLM-20](@/dossiers/ales-juchelka/claims/clm-20.md), [CLM-21](@/dossiers/ales-juchelka/claims/clm-21.md), [CLM-22](@/dossiers/ales-juchelka/claims/clm-22.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
+
+## Kauza střetu zájmů bývalé poradkyně {#kauza-poradkyne-stret}
+
+Téma v autorizovaném rozsahu — viz tvrzení [CLM-23](@/dossiers/ales-juchelka/claims/clm-23.md), [CLM-24](@/dossiers/ales-juchelka/claims/clm-24.md), [CLM-45](@/dossiers/ales-juchelka/claims/clm-45.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
+
+## Veřejná vyjádření a obhajoba ministra {#kauza-obhajoba}
+
+Téma v autorizovaném rozsahu — viz tvrzení [CLM-25](@/dossiers/ales-juchelka/claims/clm-25.md), [CLM-26](@/dossiers/ales-juchelka/claims/clm-26.md), [CLM-27](@/dossiers/ales-juchelka/claims/clm-27.md), [CLM-28](@/dossiers/ales-juchelka/claims/clm-28.md), [CLM-29](@/dossiers/ales-juchelka/claims/clm-29.md), [CLM-30](@/dossiers/ales-juchelka/claims/clm-30.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
+
+## Rozpočtový dopad kauzy {#kauza-rozpocet}
+
+Téma v autorizovaném rozsahu — viz tvrzení [CLM-31](@/dossiers/ales-juchelka/claims/clm-31.md), [CLM-32](@/dossiers/ales-juchelka/claims/clm-32.md), [CLM-33](@/dossiers/ales-juchelka/claims/clm-33.md), [CLM-34](@/dossiers/ales-juchelka/claims/clm-34.md), [CLM-35](@/dossiers/ales-juchelka/claims/clm-35.md), [CLM-36](@/dossiers/ales-juchelka/claims/clm-36.md), [CLM-37](@/dossiers/ales-juchelka/claims/clm-37.md), [CLM-43](@/dossiers/ales-juchelka/claims/clm-43.md), [CLM-46](@/dossiers/ales-juchelka/claims/clm-46.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
+
+## Trestní oznámení a kontrola NKÚ {#kauza-trestni-oznameni}
+
+Téma v autorizovaném rozsahu — viz tvrzení [CLM-38](@/dossiers/ales-juchelka/claims/clm-38.md), [CLM-39](@/dossiers/ales-juchelka/claims/clm-39.md), [CLM-40](@/dossiers/ales-juchelka/claims/clm-40.md), [CLM-41](@/dossiers/ales-juchelka/claims/clm-41.md), [CLM-42](@/dossiers/ales-juchelka/claims/clm-42.md), [CLM-44](@/dossiers/ales-juchelka/claims/clm-44.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.

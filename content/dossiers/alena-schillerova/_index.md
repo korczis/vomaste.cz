@@ -93,6 +93,38 @@ title = "Plánované hlasování Sněmovny o prezidentském vetu (25. srpna 2026
 anchor = "kauza-novela-rozpoctovych-pravidel"
 dot = "dot-fact"
 subjects = ["schillerova"]
+
+[extra.authorization]
+authorized = true
+record_ids = ["AUTH-2026-07-30-B"]
+
+[[extra.timeline]]
+date = "2017-12"
+title = "Jmenována ministryní financí"
+anchor = "verejna-kariera"
+dot = "dot-fact"
+subjects = ["schillerova"]
+
+[[extra.timeline]]
+date = "2019-04"
+title = "Jmenována místopředsedkyní vlády"
+anchor = "verejna-kariera"
+dot = "dot-fact"
+subjects = ["schillerova"]
+
+[[extra.timeline]]
+date = "2026-01"
+title = "Národní rozpočtová rada: návrh rozpočtu v rozporu se zákonem"
+anchor = "kauza-rozpoctova-pravidla"
+dot = "dot-disputed"
+subjects = ["schillerova"]
+
+[[extra.timeline]]
+date = "2026-05"
+title = "Novela rozpočtových zákonů ve Sněmovně, kritika opozice"
+anchor = "kauza-rozpoctova-pravidla"
+dot = "dot-disputed"
+subjects = ["schillerova"]
 [[extra.cases]]
 anchor = "kauza-rozpoctova-pravidla"
 period = "2026"
@@ -133,37 +165,6 @@ summary = "Stanoviska Národní rozpočtové rady — viz tvrzení CLM-24, CLM-2
 claims = []
 subjects = ["schillerova"]
 
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-B"]
-
-[[extra.timeline]]
-date = "2017-12"
-title = "Jmenována ministryní financí"
-anchor = "verejna-kariera"
-dot = "dot-fact"
-subjects = ["schillerova"]
-
-[[extra.timeline]]
-date = "2019-04"
-title = "Jmenována místopředsedkyní vlády"
-anchor = "verejna-kariera"
-dot = "dot-fact"
-subjects = ["schillerova"]
-
-[[extra.timeline]]
-date = "2026-01"
-title = "Národní rozpočtová rada: návrh rozpočtu v rozporu se zákonem"
-anchor = "kauza-rozpoctova-pravidla"
-dot = "dot-disputed"
-subjects = ["schillerova"]
-
-[[extra.timeline]]
-date = "2026-05"
-title = "Novela rozpočtových zákonů ve Sněmovně, kritika opozice"
-anchor = "kauza-rozpoctova-pravidla"
-dot = "dot-disputed"
-subjects = ["schillerova"]
 +++
 
 Alena Schillerová je místopředsedkyní vlády a ministryní financí ve třetí

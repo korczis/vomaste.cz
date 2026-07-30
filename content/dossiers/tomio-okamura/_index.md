@@ -52,16 +52,6 @@ anchor = "kauza-rozsudek-plakaty"
 dot = "dot-fact"
 subjects = ["okamura"]
 
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-D"]
-
-[[extra.timeline]]
-date = "2026-06-03"
-title = "Nepravomocný rozsudek: SPD vinna, trest 3 miliony"
-anchor = "kauza-plakaty-spd"
-dot = "dot-disputed"
-subjects = ["okamura"]
 [[extra.cases]]
 anchor = "kauza-plakaty-spd"
 period = "2026"
@@ -112,7 +102,16 @@ summary = "Hlasování Sněmovny o vydání ke stíhání — viz tvrzení CLM-2
 claims = ["CLM-25", "CLM-26", "CLM-27", "CLM-28", "CLM-29", "CLM-30", "CLM-32"]
 subjects = ["okamura"]
 
-+++
+[extra.authorization]
+authorized = true
+record_ids = ["AUTH-2026-07-30-D"]
+
+[[extra.timeline]]
+date = "2026-06-03"
+title = "Nepravomocný rozsudek: SPD vinna, trest 3 miliony"
+anchor = "kauza-plakaty-spd"
+dot = "dot-disputed"
+subjects = ["okamura"]+++
 
 Tomio Okamura je předsedou Poslanecké sněmovny a předsedou hnutí SPD,
 které je součástí vládní koalice. Tento dossier pokrývá **jedno jediné

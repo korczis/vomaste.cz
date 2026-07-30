@@ -59,6 +59,17 @@ title = "Zveřejněno, že zařízení Plaud vyrábí čínská firma Shenzhen S
 anchor = "kauza-nahravaci-zarizeni"
 dot = "dot-fact"
 subjects = ["stastny"]
+
+[extra.authorization]
+authorized = true
+record_ids = ["AUTH-2026-07-30-B"]
+[[extra.timeline]]
+date = "2026-01-22"
+title = "Nahrávací zařízení nalezeno v zasedačce Úřadu vlády"
+anchor = "kauza-nahravaci-zarizeni"
+dot = "dot-fact"
+subjects = ["stastny"]
+
 [[extra.cases]]
 anchor = "kauza-nahravaci-zarizeni"
 period = "2026"
@@ -87,16 +98,6 @@ status = "status-single"
 label = "Sledované téma"
 summary = "Upravené metriky na sociálních sítích — viz tvrzení CLM-32, CLM-33, CLM-34, CLM-35, CLM-36, CLM-37, CLM-38, CLM-39."
 claims = []
-subjects = ["stastny"]
-
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-B"]
-[[extra.timeline]]
-date = "2026-01-22"
-title = "Nahrávací zařízení nalezeno v zasedačce Úřadu vlády"
-anchor = "kauza-nahravaci-zarizeni"
-dot = "dot-fact"
 subjects = ["stastny"]
 
 +++

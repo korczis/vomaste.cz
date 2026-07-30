@@ -44,6 +44,17 @@ title = "Navrhovaná účinnost zrušení policejní ochranné služby NKÚ a p�
 anchor = "kauza-navrh-ochrana-nku"
 dot = "dot-fact"
 subjects = ["metnar"]
+
+[extra.authorization]
+authorized = true
+record_ids = ["AUTH-2026-07-30-B"]
+
+[[extra.timeline]]
+date = "2026-07"
+title = "Návrh vnitra ukončit policejní ochranu NKÚ"
+anchor = "kauza-ochrana-nku"
+dot = "dot-disputed"
+subjects = ["metnar"]
 [[extra.cases]]
 anchor = "kauza-ochrana-nku"
 period = "2026"
@@ -84,16 +95,6 @@ summary = "Reakce NKÚ a kontext sporu — viz tvrzení CLM-18, CLM-19, CLM-20, 
 claims = []
 subjects = ["metnar"]
 
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-B"]
-
-[[extra.timeline]]
-date = "2026-07"
-title = "Návrh vnitra ukončit policejní ochranu NKÚ"
-anchor = "kauza-ochrana-nku"
-dot = "dot-disputed"
-subjects = ["metnar"]
 +++
 
 Lubomír Metnar je ministrem vnitra ve třetí vládě Andreje Babiše. Tento

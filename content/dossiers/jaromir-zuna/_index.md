@@ -156,9 +156,6 @@ anchor = "kauza-rozpocet-nato"
 dot = "dot-fact"
 subjects = ["zuna"]
 
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-N"]
 [[extra.cases]]
 anchor = "kauza-rozpocet-nato"
 period = "2026"
@@ -199,7 +196,9 @@ summary = "Spor o koncepci armády — viz tvrzení CLM-17, CLM-18, CLM-19."
 claims = ["CLM-32", "CLM-33", "CLM-34", "CLM-35", "CLM-36", "CLM-37", "CLM-38", "CLM-39", "CLM-40", "CLM-49", "CLM-50", "CLM-51", "CLM-52", "CLM-53"]
 subjects = ["zuna"]
 
-+++
+[extra.authorization]
+authorized = true
+record_ids = ["AUTH-2026-07-30-N"]+++
 
 Jaromír Zůna zastává funkci místopředsedy vlády a ministra obrany ve třetí vládě Andreje Babiše (viz
 `data/government.toml`, ověřeno proti oficiálnímu seznamu členů vlády).

@@ -14,8 +14,8 @@ period = "2026"
 status = "status-single"
 label = "Sledované téma"
 summary = "Střet zájmů — podcastová firma — viz tvrzení CLM-08, CLM-09, CLM-10."
-claims = []
-sources = []
+claims = ["CLM-27", "CLM-28", "CLM-29", "CLM-30", "CLM-31", "CLM-32", "CLM-33"]
+sources = ["SRC-24", "SRC-26", "SRC-28", "SRC-25", "SRC-27"]
 subjects = ["cerveny"]
 +++
 
