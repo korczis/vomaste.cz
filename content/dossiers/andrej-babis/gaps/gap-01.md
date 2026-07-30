@@ -12,7 +12,7 @@ lang = "cs"
 gap_id = "GAP-01"
 priority = "vysoká"
 checked = "2026-07-30"
-claims = ["CLM-02", "CLM-07", "CLM-08", "CLM-20"]
+claims = ["CLM-02", "CLM-07", "CLM-08", "CLM-20", "CLM-50", "CLM-51", "CLM-52"]
 +++
 
 **Co se od poslední revize uzavřelo (30. 7. 2026).** Procesní vývoj po
@@ -34,9 +34,11 @@ nahrazena — ne smazána.
    přerušeno; k datu poslední kontroly tedy neexistuje **žádné** soudní
    rozhodnutí o jeho vině ani nevině v této kauze. Nepravomocný rozsudek
    nad spoluobžalovanou takovým rozhodnutím není a nelze ho tak číst.
-3. **Osud samotné dotace.** Rozsudek se týká trestní odpovědnosti;
-   správní osud padesátimilionové dotace citované zdroje v tomto dossieru
-   nepopisují.
+3. **Konečný osud dotace v evidenci poskytovatele.** Že firma
+   padesátimilionovou dotaci vrátila už v roce 2018, doložené je
+   ([CLM-52](@/dossiers/andrej-babis/claims/clm-52.md)) — tahle část
+   mezery se tím uzavřela. Otevřené zůstává, zda a jak byla věc uzavřena
+   na straně poskytovatele dotace; citované zdroje to nepopisují.
 
 Otevřenost téhle mezery neznamená ani vinu, ani nevinu, ani že se něco
 zamlčuje. Znamená, že to tenhle web nemá čím doložit.

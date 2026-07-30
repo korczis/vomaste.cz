@@ -86,8 +86,8 @@ type = "controversy"
 label = "Čapí hnízdo (dotační kauza)"
 depth = 1
 subject = false
-claims = ["CLM-01"]
-sources = ["SRC-01"]
+claims = ["CLM-01", "CLM-49", "CLM-50", "CLM-51", "CLM-52"]
+sources = ["SRC-01", "SRC-23", "SRC-24"]
 
 [[nodes]]
 id = "evropska-komise"
@@ -245,10 +245,10 @@ id = "edge-babis-capihnizdo"
 source = "babis"
 target = "capi-hnizdo"
 relation = "SUBJECT_OF_PROCEEDING"
-label = "obžalovaný; stíhání přerušeno po nevydání Sněmovnou — procesní krok, ne rozhodnutí o vině"
+label = "obžalovaný; dvakrát nepravomocně zproštěn (2023, 2024), obě zproštění zrušena; stíhání přerušeno po nevydání Sněmovnou — nic z toho není rozhodnutí o vině"
 status = "disputed"
-claims = ["CLM-01", "CLM-07"]
-sources = ["SRC-01", "SRC-03"]
+claims = ["CLM-01", "CLM-07", "CLM-50", "CLM-51"]
+sources = ["SRC-01", "SRC-03", "SRC-23", "SRC-24"]
 
 [[edges]]
 id = "edge-agrofert-komise"

@@ -56,10 +56,10 @@ Generated from 40 context entities across 22 dossier(s). Regenerate with `npm ru
 - Type: controversy
 - Status: not_authorized
 - Appears in: andrej-babis, jaroslav-faltynek
-- Claims: CLM-01, CLM-02, CLM-05
-- Sources: SRC-01, SRC-02, SRC-03 (3 independent source families)
+- Claims: CLM-01, CLM-02, CLM-05, CLM-49, CLM-50, CLM-51, CLM-52
+- Sources: SRC-01, SRC-02, SRC-03, SRC-23, SRC-24 (4 independent source families)
 - Relations: 
-  - edge-babis-capihnizdo (babis -> capi-hnizdo, "obžalovaný; stíhání přerušeno po nevydání Sněmovnou — procesní krok, ne rozhodnutí o vině", dossier: andrej-babis)
+  - edge-babis-capihnizdo (babis -> capi-hnizdo, "obžalovaný; dvakrát nepravomocně zproštěn (2023, 2024), obě zproštění zrušena; stíhání přerušeno po nevydání Sněmovnou — nic z toho není rozhodnutí o vině", dossier: andrej-babis)
   - edge-faltynek-capihnizdo (faltynek -> capi-hnizdo, "stíhán 2015–2018; stíhání zrušeno státním zástupcem", dossier: jaroslav-faltynek)
 - Missing: explicit owner authorization to promote this to its own dossier
 

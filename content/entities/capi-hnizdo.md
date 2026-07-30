@@ -17,8 +17,8 @@ coverage_state = "discovered"
 discovered_at = "2026-07-30"
 discovered_via = ["edge-babis-capihnizdo"]
 dossiers = ["andrej-babis", "jaroslav-faltynek"]
-claims = ["CLM-01", "CLM-02", "CLM-05"]
-sources = ["SRC-01", "SRC-02", "SRC-03"]
+claims = ["CLM-01", "CLM-02", "CLM-05", "CLM-49", "CLM-50", "CLM-51", "CLM-52"]
+sources = ["SRC-01", "SRC-02", "SRC-03", "SRC-23", "SRC-24"]
 +++
 
 Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext.

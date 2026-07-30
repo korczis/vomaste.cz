@@ -83,8 +83,8 @@ period = "2025–"
 title = "Čapí hnízdo — dotační kauza"
 status = "status-disputed"
 label = "Nepravomocný rozsudek nad spoluobžalovanou, o Babišovi nerozhodnuto"
-summary = "Vrchní soud v Praze podruhé zrušil zprošťující rozsudek a vrátil věc městskému soudu se závazným právním názorem; ten 4. 5. 2026 uznal nepravomocně vinnou spoluobžalovanou Janu Nagyovou. Rozsudek není pravomocný, netýká se Andreje Babiše, jehož stíhání je po nevydání Sněmovnou přerušeno, a oba obžalovaní vinu odmítají."
-claims = ["CLM-01", "CLM-02", "CLM-03", "CLM-07", "CLM-20"]
+summary = "Spor o dotaci 50 mil. Kč na areál Čapí hnízdo z let 2007–2008; dotaci firma vrátila v roce 2018. Městský soud oba obžalované zprostil v lednu 2023 i v únoru 2024, odvolací soud obě zproštění zrušil (naposledy 23. 6. 2025) a vrátil věc se závazným právním názorem; ten 4. 5. 2026 uznal nepravomocně vinnou spoluobžalovanou Janu Nagyovou. Nic z toho není pravomocné, rozsudek nad spoluobžalovanou se netýká Andreje Babiše, jehož stíhání je po nevydání Sněmovnou přerušeno, a oba obžalovaní vinu odmítají."
+claims = ["CLM-01", "CLM-02", "CLM-03", "CLM-07", "CLM-20", "CLM-49", "CLM-50", "CLM-51", "CLM-52"]
 subjects = ["babis"]
 
 [[extra.cases]]
@@ -110,6 +110,27 @@ subjects = ["babis"]
 [extra.authorization]
 authorized = true
 record_ids = ["AUTH-2026-07-30-C", "AUTH-2026-07-30-E"]
+
+[[extra.timeline]]
+date = "2018"
+title = "Dotaci 50 mil. Kč firma vrátila"
+anchor = "kauza-capi-hnizdo"
+dot = "dot-fact"
+subjects = ["babis"]
+
+[[extra.timeline]]
+date = "2023-01-09"
+title = "První zprošťující rozsudek (nepravomocný)"
+anchor = "kauza-capi-hnizdo"
+dot = "dot-fact"
+subjects = ["babis"]
+
+[[extra.timeline]]
+date = "2024-02-14"
+title = "Druhý zprošťující rozsudek (nepravomocný)"
+anchor = "kauza-capi-hnizdo"
+dot = "dot-fact"
+subjects = ["babis"]
 
 [[extra.timeline]]
 date = "2025-06-23"
@@ -385,6 +406,11 @@ odpovědnosti kohokoli — správní soudnictví o ní nerozhoduje —, a zruše
 dotace není sankcí uloženou fyzické osobě. Že je věc pravomocně skončená,
 platí pouze pro tento jeden dotační spor.
 
+| <a id="clm-49"></a>[CLM-49](@/dossiers/andrej-babis/claims/clm-49.md) | Předmětem kauzy Čapí hnízdo je dotace 50 milionů korun na výstavbu areálu z let 2007–2008, kterou čerpala Farma Čapí hnízdo poté, co byla vyvedena ze skupiny Agrofert; sporné bylo, zda šlo o účelové vyvedení kvůli podmínce podpory pro malé a střední podniky | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-23](@/dossiers/andrej-babis/sources/src-23.md) |
+| <a id="clm-50"></a>[CLM-50](@/dossiers/andrej-babis/claims/clm-50.md) | Městský soud v Praze dne 9. ledna 2023 zprostil Andreje Babiše i Janu Nagyovou obžaloby s odůvodněním, že skutek popsaný v obžalobě není trestným činem; rozsudek nebyl pravomocný a státní zástupce si ponechal lhůtu k odvolání | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-23](@/dossiers/andrej-babis/sources/src-23.md) |
+| <a id="clm-51"></a>[CLM-51](@/dossiers/andrej-babis/claims/clm-51.md) | Týž soud dne 14. února 2024 oba obžalované zprostil znovu; podle odůvodnění netvořily nepřímé důkazy ucelený řetězec vyvracející obhajobu. Ani tento rozsudek nebyl pravomocný a státní zastupitelství avizovalo odvolání | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-24](@/dossiers/andrej-babis/sources/src-24.md) |
+| <a id="clm-52"></a>[CLM-52](@/dossiers/andrej-babis/claims/clm-52.md) | Spornou dotaci 50 milionů korun firma podle citovaného zpravodajství vrátila již v roce 2018; jde o skutečnost o osudu peněz, nikoli o přiznání viny ani o vyvrácení obžaloby | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-24](@/dossiers/andrej-babis/sources/src-24.md) |
+
 ## Veřejné funkce {#verejne-funkce}
 
 Veřejný zájem na tomto dossieru stojí na úřadu, který subjekt zastává.
@@ -404,10 +430,38 @@ tvrzením o něm.
 
 ## Čapí hnízdo — dotační kauza {#kauza-capi-hnizdo}
 
-Vrchní soud v Praze dne 23. června 2025 zrušil zprošťující rozsudek
-Městského soudu v Praze z února 2024 — podle citovaného zdroje již podruhé
-([CLM-01](@/dossiers/andrej-babis/claims/clm-01.md),
-[SRC-01](@/dossiers/andrej-babis/sources/src-01.md)).
+**O co v kauze jde.** O dotaci **50 milionů korun** na výstavbu areálu
+Čapí hnízdo z let 2007–2008, kterou čerpala Farma Čapí hnízdo poté, co
+byla vyvedena ze skupiny Agrofert. Sporné je, zda šlo o účelové vyvedení
+kvůli podmínce podpory pro malé a střední podniky
+([CLM-49](@/dossiers/andrej-babis/claims/clm-49.md),
+[SRC-23](@/dossiers/andrej-babis/sources/src-23.md)). Samotnou dotaci
+firma podle citovaného zpravodajství **vrátila už v roce 2018**
+([CLM-52](@/dossiers/andrej-babis/claims/clm-52.md)) — to je skutečnost
+o osudu peněz, ne přiznání viny ani vyvrácení obžaloby.
+
+### Procesní historie, celá
+
+Kdo do kauzy vstoupí v roce 2025, snadno si zrušení zprošťujícího
+rozsudku splete s prvním rozhodnutím ve věci. Není. Posloupnost je tahle:
+
+1. **9. ledna 2023** Městský soud v Praze oba obžalované zprostil
+   s odůvodněním, že skutek popsaný v obžalobě není trestným činem;
+   nepravomocně, státní zástupce si ponechal lhůtu k odvolání
+   ([CLM-50](@/dossiers/andrej-babis/claims/clm-50.md)).
+2. Odvolací soud tento rozsudek zrušil a věc vrátil.
+3. **14. února 2024** týž soud oba zprostil **znovu** — podle odůvodnění
+   netvořily nepřímé důkazy ucelený řetězec vyvracející obhajobu; opět
+   nepravomocně ([CLM-51](@/dossiers/andrej-babis/claims/clm-51.md),
+   [SRC-24](@/dossiers/andrej-babis/sources/src-24.md)).
+4. **23. června 2025** Vrchní soud v Praze zrušil i tento rozsudek —
+   podle citovaného zdroje šlo o druhé zrušení zproštění v této kauze
+   ([CLM-01](@/dossiers/andrej-babis/claims/clm-01.md),
+   [SRC-01](@/dossiers/andrej-babis/sources/src-01.md)).
+
+Dvakrát zproštěn a dvakrát zrušeno neznamená ani „soudy ho pořád
+osvobozují“, ani „už je vlastně odsouzený“. Znamená to, že věc není
+pravomocně rozhodnutá — a přesně tak ji tenhle dossier vede.
 
 Zde je nutné být maximálně přesný, protože právě tady se procesní stav
 nejčastěji zaměňuje za rozhodnutí o vině. Odvolací soud dospěl k závěru,
