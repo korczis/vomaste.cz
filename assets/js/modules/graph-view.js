@@ -111,7 +111,7 @@ export async function initGraphView(containerId, dataIslandId, searchIndexUrl) {
       size: 1.4,
       color: STATUS_COLOR[e.status] || "rgba(255,255,255,0.28)",
       type: "arrow",
-      route: routeOf[e.id] || null,
+      route: e.route || routeOf[e.rel_id || e.id] || null,
       kind: "edge",
     });
   }

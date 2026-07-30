@@ -75,7 +75,8 @@
       {% set source_entity = entities.pages | filter(attribute="extra.entity_id", value=e.source) | first %}
       {% set target_entity = entities.pages | filter(attribute="extra.entity_id", value=e.target) | first %}
       {% set relation_page = get_section(path="dossiers/" ~ e.dossier ~ "/relations/_index.md") %}
-      {% set r = relation_page.pages | filter(attribute="extra.rel_id", value=e.id) | first %}
+      {#- e.id je v globální mapě klíčované "<dossier>::<id>"; stránka vztahu se hledá podle původního rel_id, sekce je už zúžená na e.dossier -#}
+      {% set r = relation_page.pages | filter(attribute="extra.rel_id", value=e.rel_id) | first %}
       <li>
         <span class="edge-status-dot edge-{{ e.status }}"></span>
         {% if source_entity %}<a href="{{ source_entity.permalink | safe }}" class="text-white/80 no-underline hover:underline">{{ source_entity.title }}</a>{% endif %}

@@ -55,6 +55,28 @@ for (const e of full.edges) {
   if (!fullIds.has(e.target)) err(`Full-map edge "${e.id}" points at unknown target "${e.target}".`);
 }
 
+// Klíče hran kurátorské vrstvy musí být jedinečné napříč dossiery. Sigma
+// staví graf přes addEdgeWithKey a na duplicitě spadne celá mapa — což se
+// stalo, jakmile druhý dossier deklaroval hranu se stejným id
+// (`edge-babis-vlada` v macinka-turek i andrej-babis). Build to nechytil,
+// protože každý dossier je sám o sobě konzistentní; chyba vzniká až ve
+// sloučení. Kontroluje se tedy tady, kde ke sloučení dochází.
+const edgeKeys = new Map();
+for (const e of graph.edges) {
+  if (edgeKeys.has(e.id)) {
+    err(
+      `Curated edge key "${e.id}" is used twice (${edgeKeys.get(e.id)} and ${e.dossier}) — the global map cannot add two edges under one key and would fail to render.`,
+    );
+  } else {
+    edgeKeys.set(e.id, e.dossier);
+  }
+}
+const nodeIds = new Set(graph.nodes.map((n) => n.id));
+for (const e of graph.edges) {
+  if (!nodeIds.has(e.source)) err(`Curated edge "${e.id}" points at unknown source node "${e.source}".`);
+  if (!nodeIds.has(e.target)) err(`Curated edge "${e.id}" points at unknown target node "${e.target}".`);
+}
+
 // Curated entity graph: report coverage, never fail on it — a claim with no
 // entity edge is an editorial choice, not a defect.
 const attached = { claims: new Set(), sources: new Set() };

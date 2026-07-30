@@ -119,7 +119,23 @@ for (const slug of dossierSlugs) {
       nodesById.set(n.id, { ...n, dossiers: [slug] });
     }
   }
-  for (const e of dossierEdges) edges.push({ ...e, dossier: slug });
+  // Identifikátor hrany je jedinečný jen uvnitř dossieru — `edge-babis-vlada`
+  // existuje v macinka-turek i v andrej-babis. V globální mapě se tím dvě
+  // různé hrany snažily zabrat jeden klíč a Sigma celou mapu shodila
+  // (`addEdgeWithKey: the "edge-babis-vlada" edge already exists`). Klíč se
+  // proto jmenuje "<dossier>::<id>", stejně jako u clusterů a rodin zdrojů
+  // o dva řádky níž; původní id zůstává v `rel_id`, protože podle něj se
+  // dohledává stránka vztahu, a `route` je rovnou hotová cesta, aby se
+  // nemusela hádat z indexu, kde je taky nejednoznačná.
+  for (const e of dossierEdges) {
+    edges.push({
+      ...e,
+      id: `${slug}::${e.id}`,
+      rel_id: e.id,
+      dossier: slug,
+      route: `/dossiers/${slug}/relations/${e.id}/`,
+    });
+  }
   for (const c of dossierClusters) clusters.push({ ...c, id: `${slug}::${c.id}`, dossier: slug });
   for (const f of dossierFamilies) sourceFamilies.push({ ...f, id: `${slug}::${f.id}`, dossier: slug });
 
