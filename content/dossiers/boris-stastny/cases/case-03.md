@@ -1,6 +1,6 @@
 +++
-title = "Odvolání vedení Národní sportovní agentury"
-description = "Odvolání vedení Národní sportovní agentury — viz tvrzení CLM-22, CLM-23, CLM-24, CLM-25, CLM-26, CLM-27, CLM-28, CLM-29, CLM-30, CLM-31."
+title = "Upravené metriky na sociálních sítích"
+description = "Upravené metriky na sociálních sítích — viz tvrzení CLM-32, CLM-33, CLM-34, CLM-35, CLM-36, CLM-37, CLM-38, CLM-39."
 template = "dossier-case.html"
 weight = 3
 
@@ -9,15 +9,15 @@ dossier = "boris-stastny"
 record_type = "case"
 lang = "cs"
 case_id = "CASE-03"
-anchor = "kauza-odvolani-nsa"
+anchor = "kauza-rozpor-cisla"
 period = "2026"
 status = "status-single"
 label = "Sledované téma"
-summary = "Odvolání vedení Národní sportovní agentury — viz tvrzení CLM-22, CLM-23, CLM-24, CLM-25, CLM-26, CLM-27, CLM-28, CLM-29, CLM-30, CLM-31."
+summary = "Upravené metriky na sociálních sítích — viz tvrzení CLM-32, CLM-33, CLM-34, CLM-35, CLM-36, CLM-37, CLM-38, CLM-39."
 claims = []
 sources = []
 subjects = ["stastny"]
 +++
 
 Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu
-dossieru](@/dossiers/boris-stastny/_index.md#kauza-odvolani-nsa).
+dossieru](@/dossiers/boris-stastny/_index.md#kauza-rozpor-cisla).

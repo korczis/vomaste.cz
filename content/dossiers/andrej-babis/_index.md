@@ -16,6 +16,56 @@ subjects = ["Andrej Babiš"]
 updated = "2026-07-30"
 reviewed_at = "2026-07-30"
 
+[[extra.cases]]
+anchor = "kauza-synbiol-dividenda"
+period = "2025–2026"
+title = "Co zůstalo mimo fond: SynBiol, Hartenberg a dividenda 4,25 mld."
+status = "status-disputed"
+label = "Otevřené; legální kroky, sporný rozsah povinnosti"
+summary = "Do svěřenského fondu vložil pouze Agrofert — SynBiol (podíl 87,75 %), fond Hartenberg a nemovitosti zůstaly mimo. V roce 2025, tedy před vkladem, mu Agrofert vyplatil dividendu 5 mld. Kč v hrubém (4,25 mld. po zdanění). Evropská komise sleduje střet zájmů i u SynBiolu a Hartenbergu. Výplata dividendy i ponechání aktiv mimo fond jsou samy o sobě legální; sporný je zákonný rozsah povinnosti, o němž žádný orgán podle citovaných zdrojů nerozhodl."
+claims = ["CLM-37", "CLM-39", "CLM-41", "CLM-42"]
+subjects = ["babis"]
+
+[[extra.cases]]
+anchor = "kauza-evropske-dotace"
+period = "2025–"
+title = "Evropské dotace: pozastavené proplácení a řízení evropské prokuratury"
+status = "status-disputed"
+label = "Otevřené; řízení na neznámého pachatele, nikdo není obviněn"
+summary = "Národní fond administraci dotací skupině Agrofert obnovil, Evropská komise k 5. 6. 2026 neproplatila nic a dopisem z 20. 5. 2026 si vyžádala vysvětlení struktury fondu. Evropská prokuratura zahájila 24. 5. 2026 trestní řízení k vyplácení evropských dotací — vedené na neznámého pachatele, bez obviněného; zahájení řízení není obvinění ani rozhodnutí o vině."
+claims = ["CLM-25", "CLM-26", "CLM-27", "CLM-28", "CLM-29"]
+subjects = ["babis"]
+
+[[extra.cases]]
+anchor = "kauza-capi-hnizdo"
+period = "2025–"
+title = "Čapí hnízdo — dotační kauza"
+status = "status-disputed"
+label = "Nepravomocný rozsudek nad spoluobžalovanou, o Babišovi nerozhodnuto"
+summary = "Vrchní soud v Praze podruhé zrušil zprošťující rozsudek a vrátil věc městskému soudu se závazným právním názorem; ten 4. 5. 2026 uznal nepravomocně vinnou spoluobžalovanou Janu Nagyovou. Rozsudek není pravomocný, netýká se Andreje Babiše, jehož stíhání je po nevydání Sněmovnou přerušeno, a oba obžalovaní vinu odmítají."
+claims = ["CLM-01", "CLM-02", "CLM-03", "CLM-07", "CLM-20"]
+subjects = ["babis"]
+
+[[extra.cases]]
+anchor = "kauza-nemovitosti-francie"
+period = "2022–2026"
+title = "Nemovitosti ve Francii: předběžné vyšetřování PNF"
+status = "status-single"
+label = "Předběžné vyšetřování, bez obvinění"
+summary = "PNF vede od 24. 2. 2022 předběžné vyšetřování pro podezření z daňového podvodu a praní peněz kolem nákupu nemovitostí na jihu Francie; o stíhání nebylo rozhodnuto a Babiš pochybení odmítá. Majetkovou strukturu nákupů (BLAKEY FINANCE, BOYNE HOLDING, SCP Bigaud) popisuje nezávisle projekt Pandora Papers; offshore struktura sama o sobě není protiprávní a o nezákonnosti nákupů žádný orgán nerozhodl."
+claims = ["CLM-13", "CLM-14", "CLM-15", "CLM-31", "CLM-33", "CLM-34"]
+subjects = ["babis"]
+
+[[extra.cases]]
+anchor = "kauza-stret-zajmu"
+period = "2026"
+title = "Střet zájmů a svěřenský fond RSVP Trust"
+status = "status-disputed"
+label = "Otevřené, spor pokračuje"
+summary = "Akcie Agrofertu vloženy do svěřenského fondu; Babiš považuje střet zájmů za vyřešený, jmenovaní oponenti a podle citovaného zpravodajství i Evropská komise ne."
+claims = ["CLM-04", "CLM-05", "CLM-06"]
+subjects = ["babis"]
+
 [extra.authorization]
 authorized = true
 record_ids = ["AUTH-2026-07-30-C", "AUTH-2026-07-30-E"]
@@ -81,56 +131,6 @@ date = "2026-07-01"
 title = "Z majetkového přiznání: dividenda 4,25 mld. Kč vyplacená před vkladem do fondu"
 anchor = "kauza-synbiol-dividenda"
 dot = "dot-disputed"
-subjects = ["babis"]
-
-[[extra.cases]]
-anchor = "kauza-synbiol-dividenda"
-period = "2025–2026"
-title = "Co zůstalo mimo fond: SynBiol, Hartenberg a dividenda 4,25 mld."
-status = "status-disputed"
-label = "Otevřené; legální kroky, sporný rozsah povinnosti"
-summary = "Do svěřenského fondu vložil pouze Agrofert — SynBiol (podíl 87,75 %), fond Hartenberg a nemovitosti zůstaly mimo. V roce 2025, tedy před vkladem, mu Agrofert vyplatil dividendu 5 mld. Kč v hrubém (4,25 mld. po zdanění). Evropská komise sleduje střet zájmů i u SynBiolu a Hartenbergu. Výplata dividendy i ponechání aktiv mimo fond jsou samy o sobě legální; sporný je zákonný rozsah povinnosti, o němž žádný orgán podle citovaných zdrojů nerozhodl."
-claims = ["CLM-37", "CLM-39", "CLM-41", "CLM-42"]
-subjects = ["babis"]
-
-[[extra.cases]]
-anchor = "kauza-evropske-dotace"
-period = "2025–"
-title = "Evropské dotace: pozastavené proplácení a řízení evropské prokuratury"
-status = "status-disputed"
-label = "Otevřené; řízení na neznámého pachatele, nikdo není obviněn"
-summary = "Národní fond administraci dotací skupině Agrofert obnovil, Evropská komise k 5. 6. 2026 neproplatila nic a dopisem z 20. 5. 2026 si vyžádala vysvětlení struktury fondu. Evropská prokuratura zahájila 24. 5. 2026 trestní řízení k vyplácení evropských dotací — vedené na neznámého pachatele, bez obviněného; zahájení řízení není obvinění ani rozhodnutí o vině."
-claims = ["CLM-25", "CLM-26", "CLM-27", "CLM-28", "CLM-29"]
-subjects = ["babis"]
-
-[[extra.cases]]
-anchor = "kauza-capi-hnizdo"
-period = "2025–"
-title = "Čapí hnízdo — dotační kauza"
-status = "status-disputed"
-label = "Nepravomocný rozsudek nad spoluobžalovanou, o Babišovi nerozhodnuto"
-summary = "Vrchní soud v Praze podruhé zrušil zprošťující rozsudek a vrátil věc městskému soudu se závazným právním názorem; ten 4. 5. 2026 uznal nepravomocně vinnou spoluobžalovanou Janu Nagyovou. Rozsudek není pravomocný, netýká se Andreje Babiše, jehož stíhání je po nevydání Sněmovnou přerušeno, a oba obžalovaní vinu odmítají."
-claims = ["CLM-01", "CLM-02", "CLM-03", "CLM-07", "CLM-20"]
-subjects = ["babis"]
-
-[[extra.cases]]
-anchor = "kauza-nemovitosti-francie"
-period = "2022–2026"
-title = "Nemovitosti ve Francii: předběžné vyšetřování PNF"
-status = "status-single"
-label = "Předběžné vyšetřování, bez obvinění"
-summary = "PNF vede od 24. 2. 2022 předběžné vyšetřování pro podezření z daňového podvodu a praní peněz kolem nákupu nemovitostí na jihu Francie; o stíhání nebylo rozhodnuto a Babiš pochybení odmítá. Majetkovou strukturu nákupů (BLAKEY FINANCE, BOYNE HOLDING, SCP Bigaud) popisuje nezávisle projekt Pandora Papers; offshore struktura sama o sobě není protiprávní a o nezákonnosti nákupů žádný orgán nerozhodl."
-claims = ["CLM-13", "CLM-14", "CLM-15", "CLM-31", "CLM-33", "CLM-34"]
-subjects = ["babis"]
-
-[[extra.cases]]
-anchor = "kauza-stret-zajmu"
-period = "2026"
-title = "Střet zájmů a svěřenský fond RSVP Trust"
-status = "status-disputed"
-label = "Otevřené, spor pokračuje"
-summary = "Akcie Agrofertu vloženy do svěřenského fondu; Babiš považuje střet zájmů za vyřešený, jmenovaní oponenti a podle citovaného zpravodajství i Evropská komise ne."
-claims = ["CLM-04", "CLM-05", "CLM-06"]
 subjects = ["babis"]
 +++
 

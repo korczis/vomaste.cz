@@ -44,7 +44,6 @@ title = "Navrhovaná účinnost zrušení policejní ochranné služby NKÚ a p�
 anchor = "kauza-navrh-ochrana-nku"
 dot = "dot-fact"
 subjects = ["metnar"]
-
 [[extra.cases]]
 anchor = "kauza-ochrana-nku"
 period = "2026"

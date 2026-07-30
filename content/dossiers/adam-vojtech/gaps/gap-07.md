@@ -1,0 +1,22 @@
++++
+title = "GAP-07 — Není doložen aktuální stav ředitele FN Olomouc Romana Havlíka po zveřejnění závěrů komise "
+description = "Dohledané zdroje k jeho postavení pocházejí z února až května 2026 (důvěra premiéra, petice, podpora odborů); k červenci 2026 nebyl nalezen "
+template = "dossier-gap.html"
+weight = 7
+
+[extra]
+subjects = ["vojtech"]
+dossier = "adam-vojtech"
+record_type = "gap"
+lang = "cs"
+gap_id = "GAP-07"
+priority = "střední"
+checked = "2026-07-30"
+claims = []
++++
+
+Není doložen aktuální stav ředitele FN Olomouc Romana Havlíka po zveřejnění závěrů komise (setrvání ve funkci, odvolání, rezignace).
+
+**Proč je to mezera**: Dohledané zdroje k jeho postavení pocházejí z února až května 2026 (důvěra premiéra, petice, podpora odborů); k červenci 2026 nebyl nalezen žádný ověřitelný zdroj. Tato mezera **není** zjištěním žádným
+směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
+otevřeným zdrojem.

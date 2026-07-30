@@ -65,7 +65,72 @@ title = "Debata o benefitech pokračuje ve Sněmovně; komise předběžně potv
 anchor = "kauza-defibrilatory"
 dot = "dot-fact"
 subjects = ["vojtech"]
+[[extra.timeline]]
+date = "2026-02"
+title = "Premiér Babiš ve FN Olomouc vyjádřil řediteli Havlíkovi důvěru a odmítl personální změny"
+anchor = "kauza-defibrilatory"
+dot = "dot-fact"
+subjects = ["vojtech"]
 
+[[extra.timeline]]
+date = "2026-03"
+title = "Vojtěch potvrdil zrušení státní kampaně na propagaci očkování za 50–80 milionů korun, strategie ale zůstává"
+anchor = "kauza-ockovani-spd"
+dot = "dot-fact"
+subjects = ["vojtech"]
+
+[[extra.timeline]]
+date = "2026-04"
+title = "Vojtěch na sněmovním výboru: očkovací strategie nemá právní sílu zavést povinné očkování"
+anchor = "kauza-ockovani-spd"
+dot = "dot-fact"
+subjects = ["vojtech"]
+
+[[extra.timeline]]
+date = "2026-05"
+title = "Vojtěch oznámil výčet preventivních programů, které mají být vyňaty z limitu 50 tisíc Kč"
+anchor = "kauza-benefity-stret"
+dot = "dot-fact"
+subjects = ["vojtech"]
+
+[[extra.timeline]]
+date = "2026-05"
+title = "SPD na koaliční radě požaduje revokaci očkovací strategie; spor Síla vs. Vojtěch na sněmovním výboru"
+anchor = "kauza-ockovani-spd"
+dot = "dot-fact"
+subjects = ["vojtech"]
+
+[[extra.timeline]]
+date = "2026-05"
+title = "VZP prověřuje stovky implantací z let 2023–2025; zásah policie i v Masarykově nemocnici v Ústí nad Labem"
+anchor = "kauza-defibrilatory"
+dot = "dot-fact"
+subjects = ["vojtech"]
+
+[[extra.timeline]]
+date = "2026-07"
+title = "Odborná komise potvrdila implantace ICD bez naplnění indikačních kritérií v roce 2024; FNOL připsala odpovědnost Táborskému"
+anchor = "kauza-defibrilatory"
+dot = "dot-fact"
+subjects = ["vojtech"]
+
+[[extra.timeline]]
+date = "2026-07"
+title = "Rozpočtový výbor doporučil vynětí zdravotních benefitů z limitovaného odpočtu a odmítl konkurenční návrh ODS"
+anchor = "kauza-benefity-stret"
+dot = "dot-fact"
+subjects = ["vojtech"]
+
+[[extra.timeline]]
+date = "2026-07"
+title = "Sněmovna schválila novelu o EET včetně daňového osvobození vybraných zdravotních benefitů (84 pro, 50 proti)"
+anchor = "kauza-benefity-stret"
+dot = "dot-fact"
+subjects = ["vojtech"]
+
+[extra.authorization]
+authorized = true
+record_ids = ["AUTH-2026-07-30-Q"]
 [[extra.cases]]
 anchor = "kauza-defibrilatory"
 period = "2026"
@@ -73,7 +138,7 @@ title = "Kauza defibrilátorů FN Olomouc"
 status = "status-single"
 label = "Sledované téma"
 summary = "Kauza defibrilátorů FN Olomouc — viz tvrzení CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07, CLM-08, CLM-09, CLM-10, CLM-11, CLM-12."
-claims = []
+claims = ["CLM-22", "CLM-23", "CLM-24", "CLM-25", "CLM-26", "CLM-27", "CLM-28", "CLM-29", "CLM-30", "CLM-31", "CLM-32", "CLM-33"]
 subjects = ["vojtech"]
 
 [[extra.cases]]
@@ -83,7 +148,7 @@ title = "Daňové zvýhodnění benefitů a debata o střetu zájmů"
 status = "status-single"
 label = "Sledované téma"
 summary = "Daňové zvýhodnění benefitů a debata o střetu zájmů — viz tvrzení CLM-13, CLM-14, CLM-15, CLM-16, CLM-17."
-claims = []
+claims = ["CLM-34", "CLM-35", "CLM-36", "CLM-37", "CLM-38", "CLM-39", "CLM-40", "CLM-41", "CLM-42", "CLM-43", "CLM-44"]
 subjects = ["vojtech"]
 
 [[extra.cases]]
@@ -93,12 +158,9 @@ title = "Kritika očkovací strategie od koaliční SPD"
 status = "status-single"
 label = "Sledované téma"
 summary = "Kritika očkovací strategie od koaliční SPD — viz tvrzení CLM-18, CLM-19, CLM-20, CLM-21."
-claims = []
+claims = ["CLM-45", "CLM-46", "CLM-47", "CLM-48", "CLM-49", "CLM-50"]
 subjects = ["vojtech"]
 
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-Q"]
 +++
 
 Adam Vojtěch zastává funkci ministra zdravotnictví ve třetí vládě Andreje Babiše (viz
@@ -133,7 +195,35 @@ Rozsah dle `AUTH-2026-07-30-Q`: kauza defibrilátorové studie FN Olomouc — re
 | ID | Tvrzení | Stav | Zdroje |
 |---|---|---|---|
 | <a id="clm-01"></a>[CLM-01](@/dossiers/adam-vojtech/claims/clm-01.md) | Adam Vojtěch je podle oficiálního seznamu členů vlády na webu Úřadu vlády ministrem zdravotnictví | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-01](@/dossiers/adam-vojtech/sources/src-01.md) |
-
+| <a id="clm-22"></a>[CLM-22](@/dossiers/adam-vojtech/claims/clm-22.md) | RÁMCOVÉ UPOZORNĚNÍ: Trestní oznámení podané resortem zdravotnictví v březnu 2026 i navazující policejní šetření směřují na postupy na kardiologickém pracovišti Fakultní nemocnice Olomouc, nikoli na ministra Adama Vojtěcha osobně; ministr v kauze vystupuje jako představitel zřizovatele, který podnět podal. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-13](@/dossiers/adam-vojtech/sources/src-13.md) [SRC-16](@/dossiers/adam-vojtech/sources/src-16.md) |
+| <a id="clm-23"></a>[CLM-23](@/dossiers/adam-vojtech/claims/clm-23.md) | Odborná komise, jejíž předběžné stanovisko bylo zveřejněno v červenci 2026, pracovala pod vedením odborníka pověřeného ministerstvem zdravotnictví a zasedali v ní lékaři I. interní kliniky – kardiologické FN Olomouc a dva zástupci České asociace pro srdeční rytmus. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-13](@/dossiers/adam-vojtech/sources/src-13.md) [SRC-18](@/dossiers/adam-vojtech/sources/src-18.md) |
+| <a id="clm-24"></a>[CLM-24](@/dossiers/adam-vojtech/claims/clm-24.md) | Zjištění komise se vztahuje ke konkrétnímu posuzovanému roku 2024 a týká se implantací ICD u pacientů po infarktu nebo s jiným závažným kardiologickým nálezem, u nichž podle formulace komise „nebyla zcela naplněna indikační kritéria“. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-13](@/dossiers/adam-vojtech/sources/src-13.md) [SRC-14](@/dossiers/adam-vojtech/sources/src-14.md) |
+| <a id="clm-25"></a>[CLM-25](@/dossiers/adam-vojtech/claims/clm-25.md) | Vedení FN Olomouc označilo zjištění komise za závažná a své stanovisko předalo policii, s níž podle vlastního vyjádření spolupracuje. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-13](@/dossiers/adam-vojtech/sources/src-13.md) [SRC-14](@/dossiers/adam-vojtech/sources/src-14.md) |
+| <a id="clm-26"></a>[CLM-26](@/dossiers/adam-vojtech/claims/clm-26.md) | Vedení FN Olomouc podle svého prohlášení „jednoznačně vylučuje jakýkoliv ekonomický zájem FNOL v této věci“ a přislíbilo kompenzaci škod, pokud bude prokázáno poškození zdraví pacientů nebo újma veřejného zdravotního pojištění. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-13](@/dossiers/adam-vojtech/sources/src-13.md) [SRC-17](@/dossiers/adam-vojtech/sources/src-17.md) |
+| <a id="clm-27"></a>[CLM-27](@/dossiers/adam-vojtech/claims/clm-27.md) | Vedení nemocnice v červenci 2026 připsalo hlavní odpovědnost za sporné postupy bývalému přednostovi kardiologické kliniky Miloši Táborskému, kterého označilo za zastánce velmi včasné a s nižším prahem prováděné implantace ICD. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-13](@/dossiers/adam-vojtech/sources/src-13.md) [SRC-17](@/dossiers/adam-vojtech/sources/src-17.md) |
+| <a id="clm-28"></a>[CLM-28](@/dossiers/adam-vojtech/claims/clm-28.md) | Miloš Táborský si spolu s původním arytmologickým týmem za indikacemi léčby ICD nadále stojí a argumentuje tím, že časná léčba po infarktu může zachraňovat životy. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-13](@/dossiers/adam-vojtech/sources/src-13.md) [SRC-18](@/dossiers/adam-vojtech/sources/src-18.md) |
+| <a id="clm-29"></a>[CLM-29](@/dossiers/adam-vojtech/claims/clm-29.md) | Případ převzalo Vrchní státní zastupitelství, které možnou škodu vyčíslilo na více než 150 milionů korun. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-13](@/dossiers/adam-vojtech/sources/src-13.md) [SRC-15](@/dossiers/adam-vojtech/sources/src-15.md) |
+| <a id="clm-30"></a>[CLM-30](@/dossiers/adam-vojtech/claims/clm-30.md) | K datu zveřejnění závěrů komise (10.–11. července 2026) policie v kauze nikoho neobvinila; případ je nadále veden pro podezření z podvodu a těžkého ublížení na zdraví. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-13](@/dossiers/adam-vojtech/sources/src-13.md) [SRC-18](@/dossiers/adam-vojtech/sources/src-18.md) |
+| <a id="clm-31"></a>[CLM-31](@/dossiers/adam-vojtech/claims/clm-31.md) | Všeobecná zdravotní pojišťovna zařadila kontrolu FN Olomouc do plánu kontrol a prověřuje stovky implantací defibrilátorů provedených u svých klientů v letech 2023–2025; mluvčí Viktorie Plívová uvedla, že předmětem kontroly je posouzení, zda k implantaci došlo na základě indikačních pravidel oprávněně. Předběžné výsledky pojišťovna očekávala na podzim 2026. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-19](@/dossiers/adam-vojtech/sources/src-19.md) |
+| <a id="clm-32"></a>[CLM-32](@/dossiers/adam-vojtech/claims/clm-32.md) | V květnu 2026 kriminalisté zasahovali také v Masarykově nemocnici v Ústí nad Labem, kde rovněž stoupl počet implantací a kde kardiologickou kliniku vede profesor Miloš Táborský — tentýž lékař, který do února 2025 řídil obdobné pracoviště v Olomouci. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-19](@/dossiers/adam-vojtech/sources/src-19.md) |
+| <a id="clm-33"></a>[CLM-33](@/dossiers/adam-vojtech/claims/clm-33.md) | Premiér Andrej Babiš 18. února 2026 při otevření nového onkologického pavilonu ve FN Olomouc vyjádřil řediteli Romanu Havlíkovi plnou důvěru slovy „Samozřejmě že má (ředitel) důvěru“ a označil jej za „jednoho z nejlepších, kterého v České republice máme“; uvedl též, že personální změny ve vedení nemocnice nejsou na pořadu dne. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-20](@/dossiers/adam-vojtech/sources/src-20.md) |
+| <a id="clm-34"></a>[CLM-34](@/dossiers/adam-vojtech/claims/clm-34.md) | Adam Vojtěch oznámil návrh na daňové vynětí vybraných preventivních programů 4. května 2026 na tiskové konferenci po jednání vlády; mimo limit 50 tisíc Kč mají spadat nadstandardní preventivní prohlídky, rozšířené onkologické screeningy, vyšetření kardiovaskulárního rizika, screening diabetu u rizikových skupin a vybraná očkování nehrazená z veřejného pojištění. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-26](@/dossiers/adam-vojtech/sources/src-26.md) |
+| <a id="clm-35"></a>[CLM-35](@/dossiers/adam-vojtech/claims/clm-35.md) | Vojtěch svůj návrh při oznámení charakterizoval slovy: „Nejde o rozšiřování benefitů jako takových, ale o jejich lepší zacílení.“ | <span class="status-badge status-quote">CITACE</span> | [SRC-26](@/dossiers/adam-vojtech/sources/src-26.md) |
+| <a id="clm-36"></a>[CLM-36](@/dossiers/adam-vojtech/claims/clm-36.md) | Podle Vojtěcha je cílem zachovat obecný strop zhruba 50 tisíc Kč na zdravotní benefity a vydělit preventivní programy do zvláštního daňově uznatelného režimu; benefity bez limitu by platily od ledna 2027 a musely by být upraveny kolektivní smlouvou, vnitřním předpisem nebo pracovní smlouvou. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-23](@/dossiers/adam-vojtech/sources/src-23.md) |
+| <a id="clm-37"></a>[CLM-37](@/dossiers/adam-vojtech/claims/clm-37.md) | Rozpočtový výbor Sněmovny 13. července 2026 doporučil návrh na vynětí vybraných zdravotních benefitů z limitovaného daňového odpočtu ke schválení a zároveň odmítl konkurenční návrh skupiny poslanců ODS vedených Štěpánem Slovákem. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-23](@/dossiers/adam-vojtech/sources/src-23.md) |
+| <a id="clm-38"></a>[CLM-38](@/dossiers/adam-vojtech/claims/clm-38.md) | Sněmovna 15. července 2026 schválila novelu o elektronické evidenci tržeb, jejíž součástí je na návrh Adama Vojtěcha a ministryně financí Aleny Schillerové (oba ANO) nová příloha zákona o daních z příjmů osvobozující vyjmenované zdravotní služby; pro zákon jako celek hlasovalo 84 koaličních poslanců, proti 50 opozičních ze 159 přítomných. Norma míří do Senátu a k podpisu prezidenta. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-25](@/dossiers/adam-vojtech/sources/src-25.md) |
+| <a id="clm-39"></a>[CLM-39](@/dossiers/adam-vojtech/claims/clm-39.md) | Poslanec ODS Vojtěch Munzar podal při projednávání novely návrh na její zamítnutí. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-21](@/dossiers/adam-vojtech/sources/src-21.md) |
+| <a id="clm-40"></a>[CLM-40](@/dossiers/adam-vojtech/claims/clm-40.md) | Vojtěch obhajoval návrh tím, že impuls přišel od zaměstnavatelských svazů, a k podpoře prevence uvedl: „Skutečně nevidím v principu nic špatného.“ | <span class="status-badge status-quote">CITACE</span> | [SRC-21](@/dossiers/adam-vojtech/sources/src-21.md) |
+| <a id="clm-41"></a>[CLM-41](@/dossiers/adam-vojtech/claims/clm-41.md) | Michaela Šebelová (STAN) kromě otázky střetu zájmů kritizovala i věcnou stránku návrhu — absenci dat prokazujících efektivitu vybraných služeb a chybějící ekonomické zdůvodnění; uvedla: „Mně chybí ta čísla, a to zdůvodnění.“ | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-22](@/dossiers/adam-vojtech/sources/src-22.md) |
+| <a id="clm-42"></a>[CLM-42](@/dossiers/adam-vojtech/claims/clm-42.md) | Poslanec Václav Pláteník (KDU-ČSL) zrušení limitu podpořil, návrhu však vytkl absenci stomatologické péče a dentální hygieny; podle článku pojišťovny dentální hygienu klientům nehradí a jejich rozpočty z fondu prevence na tuto oblast rok od roku klesají. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-22](@/dossiers/adam-vojtech/sources/src-22.md) |
+| <a id="clm-43"></a>[CLM-43](@/dossiers/adam-vojtech/claims/clm-43.md) | Proti návrhu se postavili Tomáš Prouza (Svaz obchodu a cestovního ruchu ČR), Josef Jaroš (Asociace malých a středních podniků a živnostníků ČR) a Jiří Nesrovnal (Komora daňových poradců ČR) s argumentem, že vytvoří „další paralelní byrokracii“ a většina firem jej kvůli složitosti nevyužije; naopak Tomáš Kolář ze Svazu průmyslu a dopravy jej označil za „krok správným směrem“. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-24](@/dossiers/adam-vojtech/sources/src-24.md) |
+| <a id="clm-44"></a>[CLM-44](@/dossiers/adam-vojtech/claims/clm-44.md) | Ministerstvo financí původně navrhovalo zrušit limit pouze pro volnočasové benefity, čímž by zábava byla daňově výhodnější než zdravotní prevence; po kritice slíbil premiér Babiš nápravu, jejímž řešením byl pověřen ministr Vojtěch. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-24](@/dossiers/adam-vojtech/sources/src-24.md) |
+| <a id="clm-45"></a>[CLM-45](@/dossiers/adam-vojtech/claims/clm-45.md) | SPD otevřelo požadavek na revokaci a přepracování celé Národní očkovací strategie na koaliční radě s ANO a Motoristy sobě; kritizuje zejména rozšíření doporučených očkování proti chřipce, covidu a HPV. Za SPD téma vedou Jan Síla a Josef Nerušil. Vojtěch zrušení i přepracování odmítá s tím, že strategie vychází z jasných dat a vědeckých poznatků. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-27](@/dossiers/adam-vojtech/sources/src-27.md) |
+| <a id="clm-46"></a>[CLM-46](@/dossiers/adam-vojtech/claims/clm-46.md) | Jan Síla (SPD) kritizoval složení Vojtěchova vakcinačního týmu s tím, že si ministr přizval podle SPD zprofanované experty z doby covidové pandemie, jmenovitě bývalého ministra zdravotnictví Romana Prymulu. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-28](@/dossiers/adam-vojtech/sources/src-28.md) |
+| <a id="clm-47"></a>[CLM-47](@/dossiers/adam-vojtech/claims/clm-47.md) | Vojtěch 20. března 2026 po jednání s SPD za účasti premiéra Babiše uvedl, že státem placená kampaň na propagaci očkování v hodnotě 50 až 80 milionů korun nebude, protože ministerstvo takovým rozpočtem nedisponuje, a propagace poběží vlastními kanály resortu. Zároveň potvrdil, že strategie zůstává bez zásadních změn a úhrada nepovinného očkování ze zdravotního pojištění je zachována. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-31](@/dossiers/adam-vojtech/sources/src-31.md) |
+| <a id="clm-48"></a>[CLM-48](@/dossiers/adam-vojtech/claims/clm-48.md) | Na jednání sněmovního výboru 3. května 2026 Jan Síla (SPD) tvrdil, že zaznamenávání odmítnutí očkování vytváří „cejch“ a označuje člověka za osobu druhé kategorie; Vojtěch odpověděl, že záznam o odmítnutí se týká pouze povinného očkování, nikoli dobrovolného, a odmítl existenci registru odmítačů s odkazem na běžnou praxi v zemích jako Finsko. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-29](@/dossiers/adam-vojtech/sources/src-29.md) |
+| <a id="clm-49"></a>[CLM-49](@/dossiers/adam-vojtech/claims/clm-49.md) | Debatu o očkovací strategii ve sněmovním výboru inicializovali opoziční poslanci Michaela Šebelová (STAN), Eva Šrámková (Piráti), Tom Philipp (KDU-ČSL), Vlastimil Válek (TOP 09) a Zdenka Němečková Crkvenjaš (ODS), zatímco proti ministrovi z koaličních lavic vystoupili Jan Síla a Jindřich Rajchl (SPD/PRO) — spor tedy nekopíruje standardní dělení koalice a opozice. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-29](@/dossiers/adam-vojtech/sources/src-29.md) |
+| <a id="clm-50"></a>[CLM-50](@/dossiers/adam-vojtech/claims/clm-50.md) | Vojtěch 30. dubna 2026 na sněmovním zdravotnickém výboru uvedl: „Národní očkovací strategie, i kdyby chtěla, tak nemůže zavést žádné povinné očkování“ — zavedení povinnosti by podle něj vyžadovalo novelu zákona o ochraně veřejného zdraví. | <span class="status-badge status-quote">CITACE</span> | [SRC-30](@/dossiers/adam-vojtech/sources/src-30.md) |
 ## Kauza defibrilátorů FN Olomouc {#kauza-defibrilatory}
 
 Téma v autorizovaném rozsahu — viz tvrzení [CLM-02](@/dossiers/adam-vojtech/claims/clm-02.md), [CLM-03](@/dossiers/adam-vojtech/claims/clm-03.md), [CLM-04](@/dossiers/adam-vojtech/claims/clm-04.md), [CLM-05](@/dossiers/adam-vojtech/claims/clm-05.md), [CLM-06](@/dossiers/adam-vojtech/claims/clm-06.md), [CLM-07](@/dossiers/adam-vojtech/claims/clm-07.md), [CLM-08](@/dossiers/adam-vojtech/claims/clm-08.md), [CLM-09](@/dossiers/adam-vojtech/claims/clm-09.md), [CLM-10](@/dossiers/adam-vojtech/claims/clm-10.md), [CLM-11](@/dossiers/adam-vojtech/claims/clm-11.md), [CLM-12](@/dossiers/adam-vojtech/claims/clm-12.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
@@ -145,3 +235,15 @@ Téma v autorizovaném rozsahu — viz tvrzení [CLM-13](@/dossiers/adam-vojtech
 ## Kritika očkovací strategie od koaliční SPD {#kauza-ockovani-spd}
 
 Téma v autorizovaném rozsahu — viz tvrzení [CLM-18](@/dossiers/adam-vojtech/claims/clm-18.md), [CLM-19](@/dossiers/adam-vojtech/claims/clm-19.md), [CLM-20](@/dossiers/adam-vojtech/claims/clm-20.md), [CLM-21](@/dossiers/adam-vojtech/claims/clm-21.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
+
+## Kauza defibrilátorů FN Olomouc {#kauza-defibrilatory}
+
+Téma v autorizovaném rozsahu — viz tvrzení [CLM-22](@/dossiers/adam-vojtech/claims/clm-22.md), [CLM-23](@/dossiers/adam-vojtech/claims/clm-23.md), [CLM-24](@/dossiers/adam-vojtech/claims/clm-24.md), [CLM-25](@/dossiers/adam-vojtech/claims/clm-25.md), [CLM-26](@/dossiers/adam-vojtech/claims/clm-26.md), [CLM-27](@/dossiers/adam-vojtech/claims/clm-27.md), [CLM-28](@/dossiers/adam-vojtech/claims/clm-28.md), [CLM-29](@/dossiers/adam-vojtech/claims/clm-29.md), [CLM-30](@/dossiers/adam-vojtech/claims/clm-30.md), [CLM-31](@/dossiers/adam-vojtech/claims/clm-31.md), [CLM-32](@/dossiers/adam-vojtech/claims/clm-32.md), [CLM-33](@/dossiers/adam-vojtech/claims/clm-33.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
+
+## Daňové zvýhodnění benefitů a debata o střetu zájmů {#kauza-benefity-stret}
+
+Téma v autorizovaném rozsahu — viz tvrzení [CLM-34](@/dossiers/adam-vojtech/claims/clm-34.md), [CLM-35](@/dossiers/adam-vojtech/claims/clm-35.md), [CLM-36](@/dossiers/adam-vojtech/claims/clm-36.md), [CLM-37](@/dossiers/adam-vojtech/claims/clm-37.md), [CLM-38](@/dossiers/adam-vojtech/claims/clm-38.md), [CLM-39](@/dossiers/adam-vojtech/claims/clm-39.md), [CLM-40](@/dossiers/adam-vojtech/claims/clm-40.md), [CLM-41](@/dossiers/adam-vojtech/claims/clm-41.md), [CLM-42](@/dossiers/adam-vojtech/claims/clm-42.md), [CLM-43](@/dossiers/adam-vojtech/claims/clm-43.md), [CLM-44](@/dossiers/adam-vojtech/claims/clm-44.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
+
+## Kritika očkovací strategie od koaliční SPD {#kauza-ockovani-spd}
+
+Téma v autorizovaném rozsahu — viz tvrzení [CLM-45](@/dossiers/adam-vojtech/claims/clm-45.md), [CLM-46](@/dossiers/adam-vojtech/claims/clm-46.md), [CLM-47](@/dossiers/adam-vojtech/claims/clm-47.md), [CLM-48](@/dossiers/adam-vojtech/claims/clm-48.md), [CLM-49](@/dossiers/adam-vojtech/claims/clm-49.md), [CLM-50](@/dossiers/adam-vojtech/claims/clm-50.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.

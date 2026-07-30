@@ -1,0 +1,25 @@
++++
+title = "SRC-15 — CZDEFENCE"
+description = "Koncepce výstavby AČR 2040 má být realistická a udržitelná. Modernizace pokračuje, řekl ministr Zůna ve Sněmovně"
+template = "dossier-source.html"
+weight = 15
+
+[extra]
+subjects = ["zuna"]
+dossier = "jaromir-zuna"
+record_type = "source"
+lang = "cs"
+src_id = "SRC-15"
+outlet = "CZDEFENCE"
+src_type = "zpravodajství"
+url = "https://www.czdefence.cz/clanek/koncepce-vystavby-acr-2040-ma-byt-realisticka-a-udrzitelna-modernizace-pokracuje-rekl-ministr-zuna-ve-snemovne"
+published = "2026-02-04"
+retrieved = "2026-07-30"
+claims = ["CLM-44", "CLM-49", "CLM-50"]
++++
+
+**Koncepce výstavby AČR 2040 má být realistická a udržitelná. Modernizace pokračuje, řekl ministr Zůna ve Sněmovně**
+
+Zůnovo sněmovní vystoupení k rozpočtu obrany 2026 (kapitola MO 154 mld., investice 56 mld.), k akvizicím (SPYDER, CV90, drony s kolmým startem, infrastruktura Čáslav) a k náboru a platům vojáků.
+
+Zdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji.

@@ -38,7 +38,6 @@ title = "MPSV stahuje projekty za 63,8 + 17,6 mil. Kč z vykazování vůči EU 
 anchor = "kauza-poradkyne-stret"
 dot = "dot-fact"
 subjects = ["juchelka"]
-
 [[extra.cases]]
 anchor = "kauza-poradkyne"
 period = "2026"

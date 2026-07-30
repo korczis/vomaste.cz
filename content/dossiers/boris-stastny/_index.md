@@ -59,17 +59,6 @@ title = "Zveřejněno, že zařízení Plaud vyrábí čínská firma Shenzhen S
 anchor = "kauza-nahravaci-zarizeni"
 dot = "dot-fact"
 subjects = ["stastny"]
-
-[[extra.cases]]
-anchor = "kauza-nahravaci-zarizeni"
-period = "2026"
-title = "Nahrávací zařízení v jednacím sále vlády"
-status = "status-single"
-label = "Sledované téma"
-summary = "Nahrávací zařízení v jednacím sále vlády — viz tvrzení CLM-06, CLM-07, CLM-08, CLM-09, CLM-10, CLM-11, CLM-12, CLM-13, CLM-14, CLM-15, CLM-16, CLM-17, CLM-18, CLM-19, CLM-20, CLM-21."
-claims = []
-subjects = ["stastny"]
-
 [[extra.cases]]
 anchor = "kauza-nahravaci-zarizeni"
 period = "2026"

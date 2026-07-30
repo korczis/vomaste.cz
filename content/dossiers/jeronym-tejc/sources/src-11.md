@@ -1,0 +1,25 @@
++++
+title = "SRC-11 — Česká justice"
+description = "Exministr Blažek obviněný kvůli bitcoinům. Policie ukázala na tři lidi"
+template = "dossier-source.html"
+weight = 11
+
+[extra]
+subjects = ["tejc"]
+dossier = "jeronym-tejc"
+record_type = "source"
+lang = "cs"
+src_id = "SRC-11"
+outlet = "Česká justice"
+src_type = "zpravodajství"
+url = "https://www.ceska-justice.cz/2026/05/exministr-blazek-bitcoiny-policie-obvinila/"
+published = "2026-05-04"
+retrieved = "2026-07-30"
+claims = ["CLM-19", "CLM-20", "CLM-21", "CLM-22", "CLM-23"]
++++
+
+**Exministr Blažek obviněný kvůli bitcoinům. Policie ukázala na tři lidi**
+
+NCOZ obvinila Pavla Blažka, exnáměstka Radomíra Daňhela a advokáta Kárima Titze z legalizace výnosů z trestné činnosti (dva skutky) a zneužití pravomoci úřední osoby (zčásti dokonané, zčásti ve stadiu pokusu). Dozor vykonává VSZ v Olomouci, dozorující státní zástupce Radim Dragoun. Sazba 5–12 let. Článek uvádí, že zastupitelství od konce dubna zkoumá trestní oznámení ministra Tejce, ale výslovně netvrdí, že oznámení obvinění vyvolalo.
+
+Zdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji.

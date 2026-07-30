@@ -16,7 +16,8 @@ label = "Otevřené, spor pokračuje"
 summary = "Akcie Agrofertu vloženy do svěřenského fondu; Babiš považuje střet zájmů za vyřešený, jmenovaní oponenti a podle citovaného zpravodajství i Evropská komise ne."
 claims = ["CLM-04", "CLM-05", "CLM-06"]
 sources = ["SRC-02"]
+subjects = ["babis"]
 +++
 
-Plné znění, zdroje a kontext tohoto případu jsou v [hlavním přehledu
+Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu
 dossieru](@/dossiers/andrej-babis/_index.md#kauza-stret-zajmu).

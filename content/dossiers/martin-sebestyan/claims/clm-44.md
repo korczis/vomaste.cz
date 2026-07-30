@@ -1,0 +1,19 @@
++++
+title = "CLM-44"
+description = "Bývalý ministr Marek Výborný (KDU-ČSL) v lednu 2026 uvedl, že u dvou společností z Agrofertu byly kontroly zahájeny ještě za jeho působení, "
+template = "dossier-claim.html"
+weight = 44
+
+[extra]
+dossier = "martin-sebestyan"
+record_type = "claim"
+lang = "cs"
+clm_id = "CLM-44"
+status = "status-single"
+status_label = "1 ZDROJ"
+summary = "Bývalý ministr Marek Výborný (KDU-ČSL) v lednu 2026 uvedl, že u dvou společností z Agrofertu byly kontroly zahájeny ještě za jeho působení, a mluvčí SZIF Eva Češpiva potvrdila, že fond právní analýzu má, ale odmítla sdělit, zda je v ní kategoricky doporučeno vymáhání."
+sources = ["SRC-25"]
+subjects = ["sebestyan"]
++++
+
+Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/martin-sebestyan/_index.md#registr-tvrzeni).

@@ -22,22 +22,6 @@ lang = "cs"
 updated = "2026-07-29"
 reviewed_at = "2026-07-29"
 
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-21-A", "AUTH-2026-07-21-B", "AUTH-2026-07-22-A", "AUTH-2026-07-30-A"]
-# Overview stat tiles (sources/cases/claims/gaps counts) are no longer
-# hand-typed here — templates/dossier.html computes them at build time from
-# data/dossiers/macinka-turek/stats.toml (see scripts/dossier/generate-stats.mjs),
-# so they can't drift from what's actually in the registries below.
-#
-# `claims` on each [[extra.cases]] entry is the editorial judgment of which
-# CLM-## rows belong to that case (not mechanically derivable from the prose,
-# which cites outlets by name rather than by SRC-##/CLM-## id) — it is the
-# single source of truth for case<->claim linking, carried into the
-# per-record page by scripts/dossier/migrate-cases-to-pages.mjs, which also
-# derives that page's `sources` field as the union of its claims' own
-# sources (see content/dossiers/macinka-turek/claims/*.md).
-
 [[extra.cases]]
 anchor = "kauza-z-roku-2024-fotografie-a-sbirka-svicnu"
 period = "2024"
@@ -74,10 +58,25 @@ period = "červenec 2026"
 title = "Dopravní nehoda"
 status = "status-ongoing"
 label = "Vyšetřování probíhá"
-claims = ["CLM-10", "CLM-11", "CLM-12", "CLM-16", "CLM-17", "CLM-18"]
 summary = "Střet se zdravotnickým vozem v Praze. Turek dočasně opustil funkci zmocněnce."
+claims = ["CLM-10", "CLM-11", "CLM-12", "CLM-16", "CLM-17", "CLM-18"]
 subjects = ["turek"]
 
+[extra.authorization]
+authorized = true
+record_ids = ["AUTH-2026-07-21-A", "AUTH-2026-07-21-B", "AUTH-2026-07-22-A", "AUTH-2026-07-30-A"]
+# Overview stat tiles (sources/cases/claims/gaps counts) are no longer
+# hand-typed here — templates/dossier.html computes them at build time from
+# data/dossiers/macinka-turek/stats.toml (see scripts/dossier/generate-stats.mjs),
+# so they can't drift from what's actually in the registries below.
+#
+# `claims` on each [[extra.cases]] entry is the editorial judgment of which
+# CLM-## rows belong to that case (not mechanically derivable from the prose,
+# which cites outlets by name rather than by SRC-##/CLM-## id) — it is the
+# single source of truth for case<->claim linking, carried into the
+# per-record page by scripts/dossier/migrate-cases-to-pages.mjs, which also
+# derives that page's `sources` field as the union of its claims' own
+# sources (see content/dossiers/macinka-turek/claims/*.md).
 [[extra.timeline]]
 date = "2013"
 title = "Fotografie se zdviženou pravicí pořízena"

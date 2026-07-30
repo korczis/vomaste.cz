@@ -100,7 +100,6 @@ title = "Odboráři Národní galerie Praha posílají ministrovi otevřený dop
 anchor = "kauza-ngp-vyberove-rizeni"
 dot = "dot-fact"
 subjects = ["klempir"]
-
 [[extra.cases]]
 anchor = "kauza-financovani-verejnopravnich-medii"
 period = "2026"

@@ -58,7 +58,107 @@ title = "Inspekce MO uzavírá spor o rozhovor s prezidentem: cílená cenzura n
 anchor = "kauza-rozpocet-nato"
 dot = "dot-fact"
 subjects = ["zuna"]
+[[extra.timeline]]
+date = "2026-02"
+title = "Zůna ve Sněmovně obhajuje rozpočet 2026 a avizuje Koncepci výstavby AČR 2040 jako realistickou a rozpočtově udržitelnou"
+anchor = "kauza-rozpocet-nato"
+dot = "dot-fact"
+subjects = ["zuna"]
 
+[[extra.timeline]]
+date = "2026-02"
+title = "Zůna představuje plán růstu rozpočtu obrany na 215 mld. (2027) a 238 mld. Kč (2028)"
+anchor = "kauza-rozpocet-nato"
+dot = "dot-fact"
+subjects = ["zuna"]
+
+[[extra.timeline]]
+date = "2026-04"
+title = "Zůna argumentuje demografickou pastí a nutností strukturální změny výstavby armády"
+anchor = "kauza-koncepce-armady"
+dot = "dot-fact"
+subjects = ["zuna"]
+
+[[extra.timeline]]
+date = "2026-05"
+title = "Babiš po jednání se Zůnou kritizuje cíl 32 tisíc vojáků do roku 2040 a žádá minimálně 2000 vojáků ročně"
+anchor = "kauza-koncepce-armady"
+dot = "dot-fact"
+subjects = ["zuna"]
+
+[[extra.timeline]]
+date = "2026-05"
+title = "Vláda navrhuje Hlaváče náčelníkem generálního štábu, Zůna hlasuje proti"
+anchor = "kauza-nacelnik-gs"
+dot = "dot-fact"
+subjects = ["zuna"]
+
+[[extra.timeline]]
+date = "2026-05"
+title = "Sněmovní výbor pro obranu jednomyslně podporuje Hlaváče; Zůna mu přes hlasování na vládě dává doporučující stanovisko"
+anchor = "kauza-nacelnik-gs"
+dot = "dot-fact"
+subjects = ["zuna"]
+
+[[extra.timeline]]
+date = "2026-06"
+title = "Babiš žádá zvýšení náborového cíle z 2600 na zhruba 3000 profesionálů ročně"
+anchor = "kauza-koncepce-armady"
+dot = "dot-fact"
+subjects = ["zuna"]
+
+[[extra.timeline]]
+date = "2026-06"
+title = "Inspekce ministerstva obrany uzavírá spor o neodvysílaný rozhovor s prezidentem: cenzura neprokázána, pochybení na obou stranách"
+anchor = "kauza-rozhovor-pavel"
+dot = "dot-fact"
+subjects = ["zuna"]
+
+[[extra.timeline]]
+date = "2026-06"
+title = "Bezpečnostní rada státu za účasti prezidenta Pavla projednává koncepci do roku 2040, debatu nedokončí"
+anchor = "kauza-koncepce-armady"
+dot = "dot-fact"
+subjects = ["zuna"]
+
+[[extra.timeline]]
+date = "2026-06"
+title = "Zůna v Bruselu k dvouprocentnímu cíli: „My pro to děláme maximum“"
+anchor = "kauza-rozpocet-nato"
+dot = "dot-fact"
+subjects = ["zuna"]
+
+[[extra.timeline]]
+date = "2026-06"
+title = "Prezident Pavel jmenuje Miroslava Hlaváče náčelníkem generálního štábu a kritizuje přístup vlády k armádě"
+anchor = "kauza-nacelnik-gs"
+dot = "dot-fact"
+subjects = ["zuna"]
+
+[[extra.timeline]]
+date = "2026-07"
+title = "Bezpečnostní rada státu se ke koncepci vrací podruhé, diskuse opět nekončí"
+anchor = "kauza-koncepce-armady"
+dot = "dot-fact"
+subjects = ["zuna"]
+
+[[extra.timeline]]
+date = "2026-07"
+title = "Koalice se dohaduje na 2 % HDP pro obranu v roce 2027 a rozpočtu téměř 191 mld. Kč"
+anchor = "kauza-rozpocet-nato"
+dot = "dot-fact"
+subjects = ["zuna"]
+
+[[extra.timeline]]
+date = "2026-07"
+title = "Babiš se Zůnou na summitu NATO v Ankaře deklarují navýšení o 36 mld. Kč a dosažení 2 % HDP"
+anchor = "kauza-rozpocet-nato"
+dot = "dot-fact"
+subjects = ["zuna"]
+
+[extra.authorization]
+authorized = true
+record_ids = ["AUTH-2026-07-30-N"]
 [[extra.cases]]
 anchor = "kauza-rozpocet-nato"
 period = "2026"
@@ -66,7 +166,7 @@ title = "Obranný rozpočet a závazek 2 % NATO"
 status = "status-single"
 label = "Sledované téma"
 summary = "Obranný rozpočet a závazek 2 % NATO — viz tvrzení CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07."
-claims = []
+claims = ["CLM-41", "CLM-42", "CLM-43", "CLM-44", "CLM-45", "CLM-46", "CLM-47", "CLM-48"]
 subjects = ["zuna"]
 
 [[extra.cases]]
@@ -76,7 +176,7 @@ title = "Neodvysílaný rozhovor s prezidentem Pavlem"
 status = "status-single"
 label = "Sledované téma"
 summary = "Neodvysílaný rozhovor s prezidentem Pavlem — viz tvrzení CLM-08, CLM-09, CLM-10, CLM-11, CLM-12."
-claims = []
+claims = ["CLM-29", "CLM-30", "CLM-31"]
 subjects = ["zuna"]
 
 [[extra.cases]]
@@ -86,7 +186,7 @@ title = "Spor o volbu náčelníka Generálního štábu"
 status = "status-single"
 label = "Sledované téma"
 summary = "Spor o volbu náčelníka Generálního štábu — viz tvrzení CLM-13, CLM-14, CLM-15, CLM-16."
-claims = []
+claims = ["CLM-20", "CLM-21", "CLM-22", "CLM-23", "CLM-24", "CLM-25", "CLM-26", "CLM-27", "CLM-28"]
 subjects = ["zuna"]
 
 [[extra.cases]]
@@ -96,12 +196,9 @@ title = "Spor o koncepci armády"
 status = "status-single"
 label = "Sledované téma"
 summary = "Spor o koncepci armády — viz tvrzení CLM-17, CLM-18, CLM-19."
-claims = []
+claims = ["CLM-32", "CLM-33", "CLM-34", "CLM-35", "CLM-36", "CLM-37", "CLM-38", "CLM-39", "CLM-40", "CLM-49", "CLM-50", "CLM-51", "CLM-52", "CLM-53"]
 subjects = ["zuna"]
 
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-N"]
 +++
 
 Jaromír Zůna zastává funkci místopředsedy vlády a ministra obrany ve třetí vládě Andreje Babiše (viz
@@ -134,7 +231,40 @@ Rozsah dle `AUTH-2026-07-30-N`: škrt 21 miliard z obranného rozpočtu 2026 a s
 | ID | Tvrzení | Stav | Zdroje |
 |---|---|---|---|
 | <a id="clm-01"></a>[CLM-01](@/dossiers/jaromir-zuna/claims/clm-01.md) | Jaromír Zůna zastává podle oficiálního profilu na webu Úřadu vlády funkci místopředsedy vlády a ministra obrany | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-01](@/dossiers/jaromir-zuna/sources/src-01.md) |
-
+| <a id="clm-20"></a>[CLM-20](@/dossiers/jaromir-zuna/claims/clm-20.md) | Prezident Petr Pavel jmenoval 30. června 2026 Miroslava Hlaváče náčelníkem Generálního štábu Armády ČR; do funkce nastoupil 1. července 2026 a nahradil Karla Řehku. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-14](@/dossiers/jaromir-zuna/sources/src-14.md) [SRC-21](@/dossiers/jaromir-zuna/sources/src-21.md) [SRC-28](@/dossiers/jaromir-zuna/sources/src-28.md) [SRC-27](@/dossiers/jaromir-zuna/sources/src-27.md) |
+| <a id="clm-21"></a>[CLM-21](@/dossiers/jaromir-zuna/claims/clm-21.md) | Karel Řehka vedl armádu od července 2022 a jeho služba v armádě končí k 31. srpnu 2026; oficiální předání funkce proběhlo při slavnostním nástupu na Vítkově u příležitosti Dne ozbrojených sil. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-14](@/dossiers/jaromir-zuna/sources/src-14.md) [SRC-21](@/dossiers/jaromir-zuna/sources/src-21.md) [SRC-28](@/dossiers/jaromir-zuna/sources/src-28.md) |
+| <a id="clm-22"></a>[CLM-22](@/dossiers/jaromir-zuna/claims/clm-22.md) | Podle Blesku prezident Pavel při jmenování zkritizoval nízkou účast ústavních činitelů slovy: „Pevně doufám, že skromná účast ústavních činitelů není odrazem pozornosti věnované armádě.“ | <span class="status-badge status-quote">CITACE</span> | [SRC-27](@/dossiers/jaromir-zuna/sources/src-27.md) |
+| <a id="clm-23"></a>[CLM-23](@/dossiers/jaromir-zuna/claims/clm-23.md) | Prezident Pavel podle ČT24 uvedl, že nového náčelníka „čeká nelehké období“, kdy bude třeba přizpůsobit se nové realitě v NATO vzhledem k částečnému ústupu Spojených států z Evropy. | <span class="status-badge status-quote">CITACE</span> | [SRC-14](@/dossiers/jaromir-zuna/sources/src-14.md) |
+| <a id="clm-24"></a>[CLM-24](@/dossiers/jaromir-zuna/claims/clm-24.md) | Ministr obrany Jaromír Zůna při předání funkce řekl: „Úkolů, které nás společně čekají, je řada, ale věřím, že je zvládneme.“ | <span class="status-badge status-quote">CITACE</span> | [SRC-14](@/dossiers/jaromir-zuna/sources/src-14.md) |
+| <a id="clm-25"></a>[CLM-25](@/dossiers/jaromir-zuna/claims/clm-25.md) | Sněmovní výbor pro obranu 27. května 2026 jednomyslně podpořil jmenování generálporučíka Miroslava Hlaváče náčelníkem Generálního štábu s účinností od 1. července 2026. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-25](@/dossiers/jaromir-zuna/sources/src-25.md) |
+| <a id="clm-26"></a>[CLM-26](@/dossiers/jaromir-zuna/claims/clm-26.md) | Přestože Zůna na jednání vlády 18. května 2026 pro Hlaváčovo jmenování nehlasoval, na sněmovním výboru pro obranu jej podpořil slovy, že „generálporučík Miroslav Hlaváč patří k nejzkušenějším důstojníkům Armády České republiky“. | <span class="status-badge status-quote">CITACE</span> | [SRC-25](@/dossiers/jaromir-zuna/sources/src-25.md) |
+| <a id="clm-27"></a>[CLM-27](@/dossiers/jaromir-zuna/claims/clm-27.md) | Hlaváč jako své priority uvedl dokončení výstavby těžké brigády, vybudování střední brigády a rozvoj vícevrstvého systému protivzdušné obrany. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-28](@/dossiers/jaromir-zuna/sources/src-28.md) [SRC-27](@/dossiers/jaromir-zuna/sources/src-27.md) [SRC-25](@/dossiers/jaromir-zuna/sources/src-25.md) |
+| <a id="clm-28"></a>[CLM-28](@/dossiers/jaromir-zuna/claims/clm-28.md) | Odcházející náčelník Karel Řehka podle médií zvažuje kandidaturu do Senátu jako nezávislý kandidát. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-21](@/dossiers/jaromir-zuna/sources/src-21.md) [SRC-28](@/dossiers/jaromir-zuna/sources/src-28.md) [SRC-27](@/dossiers/jaromir-zuna/sources/src-27.md) |
+| <a id="clm-29"></a>[CLM-29](@/dossiers/jaromir-zuna/claims/clm-29.md) | Prezident Pavel v souvislosti s jmenováním Hlaváče poukázal na problémy v komunikaci mezi ministerstvem obrany a armádou a uvedl, že podřízení mají nadřízeným dávat „informace, které jsou nezkreslené, objektivní, i když se jim občas nemusí líbit“. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-21](@/dossiers/jaromir-zuna/sources/src-21.md) [SRC-27](@/dossiers/jaromir-zuna/sources/src-27.md) |
+| <a id="clm-30"></a>[CLM-30](@/dossiers/jaromir-zuna/claims/clm-30.md) | Inspekce ministerstva obrany podle ČT24 zjistila, že vedoucí oddělení komunikace generálního štábu porušil předpisy tím, že vytvořil nový informační kanál bez oficiální žádosti, a že na straně civilních úředníků ministerstva „neexistovaly jasné pokyny, jak zacházet s účty na sociálních sítích“. | <span class="status-badge status-quote">CITACE</span> | [SRC-26](@/dossiers/jaromir-zuna/sources/src-26.md) |
+| <a id="clm-31"></a>[CLM-31](@/dossiers/jaromir-zuna/claims/clm-31.md) | Ministerstvo obrany se po závěrech inspekce zavázalo aktualizovat a metodicky upřesnit rozkazy ke komunikaci, aby „v budoucnu nemohlo docházet k rozdílné interpretaci jejich znění“. | <span class="status-badge status-quote">CITACE</span> | [SRC-26](@/dossiers/jaromir-zuna/sources/src-26.md) |
+| <a id="clm-32"></a>[CLM-32](@/dossiers/jaromir-zuna/claims/clm-32.md) | Zůna připravil tři varianty koncepce výstavby armády do roku 2040 odstupňované podle výše obranných výdajů; rozhodnutí o výběru varianty očekával v červnu 2026. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-25](@/dossiers/jaromir-zuna/sources/src-25.md) [SRC-32](@/dossiers/jaromir-zuna/sources/src-32.md) |
+| <a id="clm-33"></a>[CLM-33](@/dossiers/jaromir-zuna/claims/clm-33.md) | Po jednání s premiérem Babišem Zůna zvýšil plánovaný náborový cíl z původních 2600 na zhruba 3000 profesionálních vojáků ročně. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-31](@/dossiers/jaromir-zuna/sources/src-31.md) [SRC-32](@/dossiers/jaromir-zuna/sources/src-32.md) |
+| <a id="clm-34"></a>[CLM-34](@/dossiers/jaromir-zuna/claims/clm-34.md) | Bezpečnostní rada státu projednávala novou koncepci armády 17. června 2026 za účasti prezidenta Pavla, debatu však nedokončila; podle Zůny „cílem nebylo schválit, ale projednat záměr“, přičemž se posuzovaly dvě varianty financování — 2 % a 3,5 % HDP. | <span class="status-badge status-quote">CITACE</span> | [SRC-19](@/dossiers/jaromir-zuna/sources/src-19.md) |
+| <a id="clm-35"></a>[CLM-35](@/dossiers/jaromir-zuna/claims/clm-35.md) | Prezident Pavel na Bezpečnostní radě státu uvedl, že koncepce musí mít dlouhodobý charakter a „není možné, aby se měnila z roku na rok“, a upozornil, že chybí finanční rámec ze strany vlády. | <span class="status-badge status-quote">CITACE</span> | [SRC-19](@/dossiers/jaromir-zuna/sources/src-19.md) |
+| <a id="clm-36"></a>[CLM-36](@/dossiers/jaromir-zuna/claims/clm-36.md) | Bezpečnostní rada státu se k armádní koncepci sešla znovu 2. července 2026 opět za účasti prezidenta Pavla, ani tehdy však diskuse nebyla uzavřena. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-29](@/dossiers/jaromir-zuna/sources/src-29.md) |
+| <a id="clm-37"></a>[CLM-37](@/dossiers/jaromir-zuna/claims/clm-37.md) | Podle e15 připravovaná koncepce do roku 2040 staví na těžké a střední brigádě, rozšíření vícevrstvé protivzdušné obrany a náboru až deseti tisíc nových vojáků, s odhadovanými náklady v řádu vyšších stovek miliard korun; plánované akvizice zahrnují 8 systémů SPYDER za 37 miliard, střely Derby za 12 miliard, 246 vozidel CV90 za 59,7 miliardy a 77 tanků Leopard za 52 miliard. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-18](@/dossiers/jaromir-zuna/sources/src-18.md) |
+| <a id="clm-38"></a>[CLM-38](@/dossiers/jaromir-zuna/claims/clm-38.md) | Zůna zdůvodňuje změnu koncepce demografickým propadem: počet obyvatel ve věku 18–25 let klesl z 1,4 milionu v roce 2002 na zhruba 800 tisíc, a nová koncepce se proto má zaměřit i na zálohy a mobilizační potenciál státu, nikoli jen na profesionální jádro. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-30](@/dossiers/jaromir-zuna/sources/src-30.md) |
+| <a id="clm-39"></a>[CLM-39](@/dossiers/jaromir-zuna/claims/clm-39.md) | Zůna v rozhovoru pro Deník.cz uvedl, že bývalá ministryně Jana Černochová „neměla dostatečné povědomí o tom, co je to obranné plánování“, a že předchozí vláda odsouhlasila nárůst závazků vůči NATO o 200 procent bez vyjednání lepších podmínek, což označil za obrovskou zátěž. | <span class="status-badge status-quote">CITACE</span> | [SRC-32](@/dossiers/jaromir-zuna/sources/src-32.md) |
+| <a id="clm-40"></a>[CLM-40](@/dossiers/jaromir-zuna/claims/clm-40.md) | Zůna zatím neprosazuje obnovení povinné vojenské služby s odůvodněním, že ještě nebyla dobudována profesionální armáda a nebyl vytěžen její potenciál; současně plánuje první jednotku autonomních systémů a nákup 3000 dronů do roku 2028. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-32](@/dossiers/jaromir-zuna/sources/src-32.md) |
+| <a id="clm-41"></a>[CLM-41](@/dossiers/jaromir-zuna/claims/clm-41.md) | Vládní koalice se na začátku července 2026 shodla, že rozpočet ministerstva obrany na rok 2027 vzroste ze zhruba 1,7 % na 2 % HDP, tedy na téměř 191 miliard korun, o 36 miliard více než v roce 2026. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-16](@/dossiers/jaromir-zuna/sources/src-16.md) [SRC-20](@/dossiers/jaromir-zuna/sources/src-20.md) |
+| <a id="clm-42"></a>[CLM-42](@/dossiers/jaromir-zuna/claims/clm-42.md) | Premiér Babiš na summitu NATO v Ankaře 7.–8. července 2026, kam ho doprovázel i ministr obrany Zůna, oznámil navýšení obranného rozpočtu o 36 miliard korun a poprvé dosažení 2 % HDP, spolu se zvýšením počtu vojáků a aktivních záloh minimálně o čtvrtinu. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-20](@/dossiers/jaromir-zuna/sources/src-20.md) |
+| <a id="clm-43"></a>[CLM-43](@/dossiers/jaromir-zuna/claims/clm-43.md) | Zůna 10. června 2026 požadoval navýšení rozpočtu obrany o 35 miliard na 190 miliard korun (2 % HDP) s odůvodněním, že „základní pozice jsou dvě procenta HDP na obranu, protože jinak to teď nejde“. | <span class="status-badge status-quote">CITACE</span> | [SRC-23](@/dossiers/jaromir-zuna/sources/src-23.md) |
+| <a id="clm-44"></a>[CLM-44](@/dossiers/jaromir-zuna/claims/clm-44.md) | Rozpočet kapitoly ministerstva obrany na rok 2026 činí zhruba 154,8 miliardy korun, což odpovídá přibližně 1,8 % HDP. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-23](@/dossiers/jaromir-zuna/sources/src-23.md) [SRC-15](@/dossiers/jaromir-zuna/sources/src-15.md) |
+| <a id="clm-45"></a>[CLM-45](@/dossiers/jaromir-zuna/claims/clm-45.md) | Zůna v únoru 2026 uvedl, že rozpočet ministerstva obrany má vzrůst ze 154 miliard na 215 miliard korun v roce 2027 a 238 miliard v roce 2028, což by odpovídalo 2,5 % HDP. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-24](@/dossiers/jaromir-zuna/sources/src-24.md) |
+| <a id="clm-46"></a>[CLM-46](@/dossiers/jaromir-zuna/claims/clm-46.md) | Zůna na jednání ministrů obrany NATO v Bruselu 18. června 2026 na otázku, zda Česko letos dosáhne dvouprocentního cíle, odpověděl: „My pro to děláme maximum,“ a k mandátu pro summit dodal, že „mandát bude také o tom, jakým způsobem naznačíme aliančním partnerům naši trajektorii výdajů na obranu“. | <span class="status-badge status-quote">CITACE</span> | [SRC-17](@/dossiers/jaromir-zuna/sources/src-17.md) |
+| <a id="clm-47"></a>[CLM-47](@/dossiers/jaromir-zuna/claims/clm-47.md) | Předseda sněmovního výboru pro obranu Josef Flek (STAN) označil plánované navýšení za nedostatečné — podle něj dvě procenta nebudou stačit kvůli rozjednaným akvizicím a protivzdušné obraně a reálné potřeby přesahují 60 miliard korun. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-16](@/dossiers/jaromir-zuna/sources/src-16.md) [SRC-23](@/dossiers/jaromir-zuna/sources/src-23.md) |
+| <a id="clm-48"></a>[CLM-48](@/dossiers/jaromir-zuna/claims/clm-48.md) | Zůna uvedl, že v roce 2027 začnou dodávky tanků Leopard 2 A8, které jsou společným nákupem s Německem a mají do roku 2031 stát až 40 miliard korun. | <span class="status-badge status-quote">CITACE</span> | [SRC-16](@/dossiers/jaromir-zuna/sources/src-16.md) |
+| <a id="clm-49"></a>[CLM-49](@/dossiers/jaromir-zuna/claims/clm-49.md) | Zůna ve Sněmovně 4. února 2026 informoval, že probíhají vojskové zkoušky systému SPYDER pořízeného v roce 2021, v roce 2026 začnou vojskové zkoušky prvních bojových vozidel pěchoty CV90 a bylo rozhodnuto o pořízení dronů s kolmým startem pro pozemní síly. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-15](@/dossiers/jaromir-zuna/sources/src-15.md) |
+| <a id="clm-50"></a>[CLM-50](@/dossiers/jaromir-zuna/claims/clm-50.md) | Zůna ve Sněmovně uvedl, že rok 2026 počítá s navýšením o 1100 vojáků z povolání a s bytovou výstavbou za více než 3 miliardy korun v osmi posádkách. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-15](@/dossiers/jaromir-zuna/sources/src-15.md) |
+| <a id="clm-51"></a>[CLM-51](@/dossiers/jaromir-zuna/claims/clm-51.md) | V roce 2025 vstoupilo do armády 2396 lidí — nejvíce od roku 2004 — ale zároveň odešlo 1325 osob, takže čistý přírůstek činil 1071 vojáků; aktivní zálohy stagnují pod 5 tisíci osobami. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-22](@/dossiers/jaromir-zuna/sources/src-22.md) |
+| <a id="clm-52"></a>[CLM-52](@/dossiers/jaromir-zuna/claims/clm-52.md) | Náborový cíl 2250 nových profesionálních vojáků pro rok 2026 byl v dubnu splněn na 86 procent a na začátku června na 98 procent; podle premiéra Babiše nastoupilo za prvních šest měsíců roku 2010 nových vojáků. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-22](@/dossiers/jaromir-zuna/sources/src-22.md) [SRC-31](@/dossiers/jaromir-zuna/sources/src-31.md) [SRC-20](@/dossiers/jaromir-zuna/sources/src-20.md) |
+| <a id="clm-53"></a>[CLM-53](@/dossiers/jaromir-zuna/claims/clm-53.md) | Oficiálním cílem je zvýšit počet profesionálních vojáků na 30 tisíc do roku 2030 a aktivních záloh na 10 tisíc, zatímco náčelník generálního štábu Karel Řehka uváděl, že pro naplnění cílů NATO je potřeba 37 500 příslušníků. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-22](@/dossiers/jaromir-zuna/sources/src-22.md) |
 ## Obranný rozpočet a závazek 2 % NATO {#kauza-rozpocet-nato}
 
 Téma v autorizovaném rozsahu — viz tvrzení [CLM-02](@/dossiers/jaromir-zuna/claims/clm-02.md), [CLM-03](@/dossiers/jaromir-zuna/claims/clm-03.md), [CLM-04](@/dossiers/jaromir-zuna/claims/clm-04.md), [CLM-05](@/dossiers/jaromir-zuna/claims/clm-05.md), [CLM-06](@/dossiers/jaromir-zuna/claims/clm-06.md), [CLM-07](@/dossiers/jaromir-zuna/claims/clm-07.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
@@ -150,3 +280,19 @@ Téma v autorizovaném rozsahu — viz tvrzení [CLM-13](@/dossiers/jaromir-zuna
 ## Spor o koncepci armády {#kauza-koncepce-armady}
 
 Téma v autorizovaném rozsahu — viz tvrzení [CLM-17](@/dossiers/jaromir-zuna/claims/clm-17.md), [CLM-18](@/dossiers/jaromir-zuna/claims/clm-18.md), [CLM-19](@/dossiers/jaromir-zuna/claims/clm-19.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
+
+## Spor o volbu náčelníka Generálního štábu {#kauza-nacelnik-gs}
+
+Téma v autorizovaném rozsahu — viz tvrzení [CLM-20](@/dossiers/jaromir-zuna/claims/clm-20.md), [CLM-21](@/dossiers/jaromir-zuna/claims/clm-21.md), [CLM-22](@/dossiers/jaromir-zuna/claims/clm-22.md), [CLM-23](@/dossiers/jaromir-zuna/claims/clm-23.md), [CLM-24](@/dossiers/jaromir-zuna/claims/clm-24.md), [CLM-25](@/dossiers/jaromir-zuna/claims/clm-25.md), [CLM-26](@/dossiers/jaromir-zuna/claims/clm-26.md), [CLM-27](@/dossiers/jaromir-zuna/claims/clm-27.md), [CLM-28](@/dossiers/jaromir-zuna/claims/clm-28.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
+
+## Neodvysílaný rozhovor s prezidentem Pavlem {#kauza-rozhovor-pavel}
+
+Téma v autorizovaném rozsahu — viz tvrzení [CLM-29](@/dossiers/jaromir-zuna/claims/clm-29.md), [CLM-30](@/dossiers/jaromir-zuna/claims/clm-30.md), [CLM-31](@/dossiers/jaromir-zuna/claims/clm-31.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
+
+## Spor o koncepci armády {#kauza-koncepce-armady}
+
+Téma v autorizovaném rozsahu — viz tvrzení [CLM-32](@/dossiers/jaromir-zuna/claims/clm-32.md), [CLM-33](@/dossiers/jaromir-zuna/claims/clm-33.md), [CLM-34](@/dossiers/jaromir-zuna/claims/clm-34.md), [CLM-35](@/dossiers/jaromir-zuna/claims/clm-35.md), [CLM-36](@/dossiers/jaromir-zuna/claims/clm-36.md), [CLM-37](@/dossiers/jaromir-zuna/claims/clm-37.md), [CLM-38](@/dossiers/jaromir-zuna/claims/clm-38.md), [CLM-39](@/dossiers/jaromir-zuna/claims/clm-39.md), [CLM-40](@/dossiers/jaromir-zuna/claims/clm-40.md), [CLM-49](@/dossiers/jaromir-zuna/claims/clm-49.md), [CLM-50](@/dossiers/jaromir-zuna/claims/clm-50.md), [CLM-51](@/dossiers/jaromir-zuna/claims/clm-51.md), [CLM-52](@/dossiers/jaromir-zuna/claims/clm-52.md), [CLM-53](@/dossiers/jaromir-zuna/claims/clm-53.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
+
+## Obranný rozpočet a závazek 2 % NATO {#kauza-rozpocet-nato}
+
+Téma v autorizovaném rozsahu — viz tvrzení [CLM-41](@/dossiers/jaromir-zuna/claims/clm-41.md), [CLM-42](@/dossiers/jaromir-zuna/claims/clm-42.md), [CLM-43](@/dossiers/jaromir-zuna/claims/clm-43.md), [CLM-44](@/dossiers/jaromir-zuna/claims/clm-44.md), [CLM-45](@/dossiers/jaromir-zuna/claims/clm-45.md), [CLM-46](@/dossiers/jaromir-zuna/claims/clm-46.md), [CLM-47](@/dossiers/jaromir-zuna/claims/clm-47.md), [CLM-48](@/dossiers/jaromir-zuna/claims/clm-48.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.

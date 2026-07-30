@@ -1,0 +1,25 @@
++++
+title = "SRC-32 — Deník.cz (VLTAVA LABE MEDIA)"
+description = "Ministr obrany Zůna: Černochová neumí plánovat a armáda na to teď doplácí"
+template = "dossier-source.html"
+weight = 32
+
+[extra]
+subjects = ["zuna"]
+dossier = "jaromir-zuna"
+record_type = "source"
+lang = "cs"
+src_id = "SRC-32"
+outlet = "Deník.cz (VLTAVA LABE MEDIA)"
+src_type = "zpravodajství"
+url = "https://www.denik.cz/z_domova/ministr-obrany-jaromir-zuna-povinna-vojna-armada-penize-cesko.html"
+published = "2026-05-27"
+retrieved = "2026-07-30"
+claims = ["CLM-32", "CLM-33", "CLM-39", "CLM-40"]
++++
+
+**Ministr obrany Zůna: Černochová neumí plánovat a armáda na to teď doplácí**
+
+Rozhovor se Zůnou: kritika obranného plánování za Černochové, tři varianty koncepce do 2040, zvýšení náborové ambice na 3000 rekrutů ročně, odmítnutí povinné vojny prozatím a modernizační plány (autonomní systémy, 3000 dronů do 2028, SPYDER).
+
+Zdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji.

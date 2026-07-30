@@ -65,7 +65,107 @@ title = "Havlíček vyzývá automobilky odmítnout cíl EU 2035; FORUM 24 (Jand
 anchor = "kauza-elektromobilita"
 dot = "dot-fact"
 subjects = ["havlicek"]
+[[extra.timeline]]
+date = "2022-03"
+title = "MPO oznamuje odnětí stomilionové dotace Pekárně Zelená louka po auditu Evropské komise"
+anchor = "kauza-toustovy-chleb"
+dot = "dot-fact"
+subjects = ["havlicek"]
 
+[[extra.timeline]]
+date = "2023-04"
+title = "Ministr zamítá námitku podjatosti, MPO může pokračovat ve vymáhání dotace"
+anchor = "kauza-toustovy-chleb"
+dot = "dot-fact"
+subjects = ["havlicek"]
+
+[[extra.timeline]]
+date = "2024-10"
+title = "NCOZ obviňuje dvě osoby a společnost Pekárna Zelená louka, škoda 100 milionů korun"
+anchor = "kauza-toustovy-chleb"
+dot = "dot-fact"
+subjects = ["havlicek"]
+
+[[extra.timeline]]
+date = "2026-06"
+title = "NCOZ navrhuje obžalobu; 22. června podává EPPO obžalobu ke Krajskému soudu v Praze"
+anchor = "kauza-toustovy-chleb"
+dot = "dot-fact"
+subjects = ["havlicek"]
+
+[[extra.timeline]]
+date = "2025-12"
+title = "Skupina poslanců vedená Andrejem Babišem, včetně Karla Havlíčka, předkládá novelu stavebního zákona (tisk 67)"
+anchor = "kauza-stavebni-zakon"
+dot = "dot-fact"
+subjects = ["havlicek"]
+
+[[extra.timeline]]
+date = "2026-01"
+title = "ČKAIT zveřejňuje kritické stanovisko: nebyla přizvána, novela jde zrychleným režimem bez přechodných ustanovení"
+anchor = "kauza-stavebni-zakon"
+dot = "dot-fact"
+subjects = ["havlicek"]
+
+[[extra.timeline]]
+date = "2026-06"
+title = "Havlíček odmítá tvrzení, že je novela šitá na míru velkým developerům, slovy „Je to lež“"
+anchor = "kauza-stavebni-zakon"
+dot = "dot-fact"
+subjects = ["havlicek"]
+
+[[extra.timeline]]
+date = "2026-07"
+title = "Sněmovna schvaluje novelu ve třetím čtení a 23. července ji postupuje Senátu jako tisk 272"
+anchor = "kauza-stavebni-zakon"
+dot = "dot-fact"
+subjects = ["havlicek"]
+
+[[extra.timeline]]
+date = "2026-08"
+title = "Senát má novelu projednat na schůzi 19.–20. srpna, Vystrčil nevylučuje zamítnutí"
+anchor = "kauza-stavebni-zakon"
+dot = "dot-fact"
+subjects = ["havlicek"]
+
+[[extra.timeline]]
+date = "2026-02"
+title = "Havlíček vede českou delegaci na Radě EU pro konkurenceschopnost k průmyslové odolnosti autoprůmyslu"
+anchor = "kauza-elektromobilita"
+dot = "dot-fact"
+subjects = ["havlicek"]
+
+[[extra.timeline]]
+date = "2026-03"
+title = "Havlíček před senátory označuje revizi emisních cílů za nedostatečnou, problémem je podle něj i rok 2030"
+anchor = "kauza-elektromobilita"
+dot = "dot-fact"
+subjects = ["havlicek"]
+
+[[extra.timeline]]
+date = "2026-04"
+title = "AutoSAP vydává poziční dokument: návrh Komise je odtržený od reality, hrozí sankce až 18 miliard eur ročně"
+anchor = "kauza-elektromobilita"
+dot = "dot-fact"
+subjects = ["havlicek"]
+
+[[extra.timeline]]
+date = "2026-06"
+title = "Havlíček zahajuje konferenci Forum Elektromobilita 2026 v Praze"
+anchor = "kauza-elektromobilita"
+dot = "dot-fact"
+subjects = ["havlicek"]
+
+[[extra.timeline]]
+date = "2026-07"
+title = "Havlíček na tiskové konferenci vlády označuje cíle 2030 a 2035 za naprosto nereálné"
+anchor = "kauza-elektromobilita"
+dot = "dot-fact"
+subjects = ["havlicek"]
+
+[extra.authorization]
+authorized = true
+record_ids = ["AUTH-2026-07-30-M"]
 [[extra.cases]]
 anchor = "kauza-toustovy-chleb"
 period = "2026"
@@ -73,7 +173,7 @@ title = "Dotace na toustový chléb (Penam/Agrofert)"
 status = "status-single"
 label = "Sledované téma"
 summary = "Dotace na toustový chléb (Penam/Agrofert) — viz tvrzení CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07, CLM-08, CLM-09."
-claims = []
+claims = ["CLM-19", "CLM-20", "CLM-21", "CLM-22", "CLM-23", "CLM-24", "CLM-25", "CLM-26", "CLM-27", "CLM-28"]
 subjects = ["havlicek"]
 
 [[extra.cases]]
@@ -83,7 +183,7 @@ title = "Novela stavebního zákona"
 status = "status-single"
 label = "Sledované téma"
 summary = "Novela stavebního zákona — viz tvrzení CLM-10, CLM-11, CLM-12, CLM-13, CLM-14."
-claims = []
+claims = ["CLM-29", "CLM-30", "CLM-31", "CLM-32", "CLM-33", "CLM-34", "CLM-35", "CLM-36", "CLM-37", "CLM-38", "CLM-39"]
 subjects = ["havlicek"]
 
 [[extra.cases]]
@@ -93,12 +193,9 @@ title = "Pozice k EU cílům elektromobility"
 status = "status-single"
 label = "Sledované téma"
 summary = "Pozice k EU cílům elektromobility — viz tvrzení CLM-15, CLM-16, CLM-17, CLM-18."
-claims = []
+claims = ["CLM-40", "CLM-41", "CLM-42", "CLM-43", "CLM-44", "CLM-45", "CLM-46"]
 subjects = ["havlicek"]
 
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-M"]
 +++
 
 Karel Havlíček zastává funkci 1. místopředsedy vlády a ministra průmyslu a obchodu ve třetí vládě Andreje Babiše (viz
@@ -130,7 +227,34 @@ Rozsah dle `AUTH-2026-07-30-M`: kauza dotace na toustový chléb (reportáž FOR
 | ID | Tvrzení | Stav | Zdroje |
 |---|---|---|---|
 | <a id="clm-01"></a>[CLM-01](@/dossiers/karel-havlicek/claims/clm-01.md) | Karel Havlíček zastává podle oficiálního profilu na webu Úřadu vlády funkci 1. místopředsedy vlády a ministra průmyslu a obchodu | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-01](@/dossiers/karel-havlicek/sources/src-01.md) |
-
+| <a id="clm-19"></a>[CLM-19](@/dossiers/karel-havlicek/claims/clm-19.md) | Ministerstvo průmyslu a obchodu oficiálně oznámilo 21. března 2022, že přistoupí k odnětí stomilionové dotace Pekárně Zelená louka ze skupiny Agrofert, protože auditoři Evropské komise zjistili, že projekt nesplňoval kritéria inovativnosti programu INOVACE — zaměřoval se na produkt, jehož výroba již ve skupině probíhala. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-11](@/dossiers/karel-havlicek/sources/src-11.md) |
+| <a id="clm-20"></a>[CLM-20](@/dossiers/karel-havlicek/claims/clm-20.md) | Náměstek MPO Marian Piecha při oznámení odnětí dotace v březnu 2022 upozornil, že „proces odnětí dotace bude dlouhý a komplikovaný a nelze vyloučit ani soudní jednání“. | <span class="status-badge status-quote">CITACE</span> | [SRC-11](@/dossiers/karel-havlicek/sources/src-11.md) |
+| <a id="clm-21"></a>[CLM-21](@/dossiers/karel-havlicek/claims/clm-21.md) | Proces odnětí dotace byl více než rok blokován námitkou podjatosti podanou vedením firmy; ve druhé polovině dubna 2023 ministr opravný prostředek zamítl a napadené rozhodnutí potvrdil, čímž mohlo MPO ve vymáhání pokračovat. Náměstek Piecha to shrnul slovy „Penam vymáháme“. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-12](@/dossiers/karel-havlicek/sources/src-12.md) |
+| <a id="clm-22"></a>[CLM-22](@/dossiers/karel-havlicek/claims/clm-22.md) | V říjnu 2024 obvinila Národní centrála proti organizovanému zločinu dvě fyzické osoby a společnost Pekárna Zelená louka v souvislosti s dotací z roku 2018; zjištěná škoda činí 100 milionů korun a stíhání probíhá pro dotační podvod a poškození finančních zájmů EU. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-13](@/dossiers/karel-havlicek/sources/src-13.md) |
+| <a id="clm-23"></a>[CLM-23](@/dossiers/karel-havlicek/claims/clm-23.md) | Dotace byla vyplacena v plné výši z rozpočtu České republiky, protože Evropská komise ji ČR po auditu neproplatila — ztráta tak jde k tíži českého státního rozpočtu. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-13](@/dossiers/karel-havlicek/sources/src-13.md) [SRC-14](@/dossiers/karel-havlicek/sources/src-14.md) |
+| <a id="clm-24"></a>[CLM-24](@/dossiers/karel-havlicek/claims/clm-24.md) | Vyšetřovatelé zajistili (zaplombovali) majetek pekárny v Herinku — výrobní halu a přilehlé budovy — v hodnotě přibližně 98 milionů korun jako zajištění případné náhrady škody. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-14](@/dossiers/karel-havlicek/sources/src-14.md) [SRC-16](@/dossiers/karel-havlicek/sources/src-16.md) |
+| <a id="clm-25"></a>[CLM-25](@/dossiers/karel-havlicek/claims/clm-25.md) | Dne 8. června 2026 podala NCOZ státnímu zástupci návrh na obžalobu Pekárny Zelená louka a dvou fyzických osob; státní zástupce Adam Bašný potvrdil: „Spisový materiál s návrhem policejního orgánu NCOZ na podání obžaloby mi byl řádně předložen.“ | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-14](@/dossiers/karel-havlicek/sources/src-14.md) |
+| <a id="clm-26"></a>[CLM-26](@/dossiers/karel-havlicek/claims/clm-26.md) | Dne 22. června 2026 podal evropský pověřený žalobce Adam Bašný z Úřadu evropského veřejného žalobce (EPPO) obžalobu ke Krajskému soudu v Praze na společnost Pekárna Zelená louka a dvě fyzické osoby. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-15](@/dossiers/karel-havlicek/sources/src-15.md) [SRC-16](@/dossiers/karel-havlicek/sources/src-16.md) |
+| <a id="clm-27"></a>[CLM-27](@/dossiers/karel-havlicek/claims/clm-27.md) | Obžaloba navrhuje pro obžalovanou společnost náhradu škody ve výši přibližně 100 milionů korun, pokutu až 50 milionů korun a patnáctiletý zákaz čerpání dotací; dvěma fyzickým osobám hrozí pět až deset let odnětí svobody a pětiletý zákaz čerpání dotací. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-15](@/dossiers/karel-havlicek/sources/src-15.md) |
+| <a id="clm-28"></a>[CLM-28](@/dossiers/karel-havlicek/claims/clm-28.md) | Holding Agrofert k obžalobě opakovaně uvedl, že „firma postupovala v souladu se zákonem a na dotaci měla nárok“. | <span class="status-badge status-quote">CITACE</span> | [SRC-15](@/dossiers/karel-havlicek/sources/src-15.md) [SRC-16](@/dossiers/karel-havlicek/sources/src-16.md) |
+| <a id="clm-29"></a>[CLM-29](@/dossiers/karel-havlicek/claims/clm-29.md) | Novelu stavebního zákona (sněmovní tisk 67) předložila 12. prosince 2025 skupina deseti poslanců vedená Andrejem Babišem, mezi nimiž byl i Karel Havlíček; vláda k ní 16. prosince 2025 zaslala souhlasné stanovisko. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-17](@/dossiers/karel-havlicek/sources/src-17.md) |
+| <a id="clm-30"></a>[CLM-30](@/dossiers/karel-havlicek/claims/clm-30.md) | Sněmovna schválila novelu ve třetím čtení 10. července 2026 (hlasování č. 117) a Senátu ji postoupila 23. července 2026 jako senátní tisk č. 272 se lhůtou k projednání do 22. srpna 2026; k návrhu bylo podáno přes 100 písemných pozměňovacích návrhů. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-17](@/dossiers/karel-havlicek/sources/src-17.md) [SRC-22](@/dossiers/karel-havlicek/sources/src-22.md) |
+| <a id="clm-31"></a>[CLM-31](@/dossiers/karel-havlicek/claims/clm-31.md) | Při závěrečném projednávání 8. července 2026 Sněmovna schvalování nedokončila po ostrém vystoupení Karla Havlíčka, který opozici vytkl: „Co jste tady napáchali za poslední roky, to vejde do dějin,“ a její postup k digitalizaci stavebního řízení komentoval slovy „Svazácký boj Pirátů, ale i celé pětikoalice za lepší zítřky dopadl jako vždy, když kolektivisté budují lepší budoucnost.“ | <span class="status-badge status-quote">CITACE</span> | [SRC-18](@/dossiers/karel-havlicek/sources/src-18.md) |
+| <a id="clm-32"></a>[CLM-32](@/dossiers/karel-havlicek/claims/clm-32.md) | Na Havlíčkovo vystoupení reagovala Olga Richterová (Piráti) tvrzením, že ministr „evidentně ztrácí nervy“, Michal Kučera (TOP 09), že „předvedl předvolební projev“, a Marek Výborný (KDU-ČSL) slovy „Vaše arogance a drzost fakt nezná mezí“. | <span class="status-badge status-quote">CITACE</span> | [SRC-18](@/dossiers/karel-havlicek/sources/src-18.md) |
+| <a id="clm-33"></a>[CLM-33](@/dossiers/karel-havlicek/claims/clm-33.md) | Havlíček po schválení novely zdůraznil, že zákon prošel Sněmovnou jen o dva hlasy a že předkladatelé vycházeli opozičním návrhům vstříc. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-19](@/dossiers/karel-havlicek/sources/src-19.md) |
+| <a id="clm-34"></a>[CLM-34](@/dossiers/karel-havlicek/claims/clm-34.md) | Poslankyně Veronika Kovářová (Piráti) novele vytkla, že jí chybělo klasické připomínkové řízení a že „legalizuje vznik černých staveb“, a upozornila na nerovnováhu, kdy velké projekty bude schvalovat lépe vybavený centrální úřad, zatímco menší stavby úřady bez dostatku personálu. | <span class="status-badge status-quote">CITACE</span> | [SRC-19](@/dossiers/karel-havlicek/sources/src-19.md) |
+| <a id="clm-35"></a>[CLM-35](@/dossiers/karel-havlicek/claims/clm-35.md) | Havlíček 4. června 2026 odmítl tvrzení, že novela zvýhodňuje velké developery: „Vyrojila se informace, že novela stavebního zákona urychlí pouze výstavbu bytových projektů nad 10 tisíc metrů čtverečních. Že je šitá pro velké developery. Je to lež.“ Podle něj jde jen o přechodné období do roku 2028, kdy dostanou stejné podmínky všichni. | <span class="status-badge status-quote">CITACE</span> | [SRC-20](@/dossiers/karel-havlicek/sources/src-20.md) |
+| <a id="clm-36"></a>[CLM-36](@/dossiers/karel-havlicek/claims/clm-36.md) | Havlíček 14. července 2026 připustil, že Senát dostane novelu až v srpnu: „Já jsem hodně tlačil na to, aby to šlo ještě do konce července, ale to se časově zvládnout nedá. Takže věřím, že se nám to podaří do té srpnové senátní schůze.“ | <span class="status-badge status-quote">CITACE</span> | [SRC-21](@/dossiers/karel-havlicek/sources/src-21.md) |
+| <a id="clm-37"></a>[CLM-37](@/dossiers/karel-havlicek/claims/clm-37.md) | Senát zařadil novelu stavebního zákona na schůzi 19. a 20. srpna 2026; předseda Senátu Miloš Vystrčil uvedl, že „minimálně stavební zákon bude předmětem velmi podrobné debaty“, a nevyloučil jeho zamítnutí kvůli množství kritických připomínek. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-22](@/dossiers/karel-havlicek/sources/src-22.md) [SRC-23](@/dossiers/karel-havlicek/sources/src-23.md) |
+| <a id="clm-38"></a>[CLM-38](@/dossiers/karel-havlicek/claims/clm-38.md) | Česká komora autorizovaných inženýrů a techniků (ČKAIT), sdružující 32 000 autorizovaných osob, uvedla, že nebyla přizvána k projednávání novely, že novela nereaguje na zásadní chyby stavebního zákona z roku 2021 a že je přijímána ve zrychleném režimu bez odpovídajících přechodných ustanovení. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-24](@/dossiers/karel-havlicek/sources/src-24.md) [SRC-25](@/dossiers/karel-havlicek/sources/src-25.md) |
+| <a id="clm-39"></a>[CLM-39](@/dossiers/karel-havlicek/claims/clm-39.md) | Předseda ČKAIT Robert Špalek varoval, že reforma nepovede k rychlejšímu povolování staveb a že by mohla dopadnout ještě hůře než špatně připravená digitalizace stavebního řízení; kritizuje také chybějící analýzu personálního zajištění jednotné stavební správy. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-25](@/dossiers/karel-havlicek/sources/src-25.md) |
+| <a id="clm-40"></a>[CLM-40](@/dossiers/karel-havlicek/claims/clm-40.md) | Havlíček vedl 26. února 2026 českou delegaci na zasedání Rady EU pro konkurenceschopnost (COMPET) v Bruselu, kde se mimo jiné jednalo o nouzových plánech průmyslové odolnosti navazujících na akční plány pro ocelářský, automobilový a chemický průmysl v rámci Dohody o čistém průmyslu. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-26](@/dossiers/karel-havlicek/sources/src-26.md) |
+| <a id="clm-41"></a>[CLM-41](@/dossiers/karel-havlicek/claims/clm-41.md) | Havlíček označil revizi emisních cílů navrženou Evropskou komisí za nedostatečnou a před senátory uvedl: „Z našeho pohledu je stále nedostatečná, problém není rok 2035, ale i cíle 2030.“ Upozornil, že ačkoliv byl cíl pro rok 2035 zmírněn na 90procentní snížení emisí, sankce zůstávají nastaveny, jako by dál platil absolutní zákaz spalovacích motorů. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-28](@/dossiers/karel-havlicek/sources/src-28.md) |
+| <a id="clm-42"></a>[CLM-42](@/dossiers/karel-havlicek/claims/clm-42.md) | K syntetickým palivům, jimiž má být kompenzováno zbývajících 10 procent emisí, Havlíček řekl: „Podívejte se někdy, co je to syntetické palivo, kolik je ho na světě, jaké jsou šance ho vyrobit, kolik to stojí.“ | <span class="status-badge status-quote">CITACE</span> | [SRC-28](@/dossiers/karel-havlicek/sources/src-28.md) |
+| <a id="clm-43"></a>[CLM-43](@/dossiers/karel-havlicek/claims/clm-43.md) | Na tiskové konferenci po jednání vlády 13. července 2026 Havlíček odůvodnil svou pozici tím, že Česko je automobilově orientovaná země — „deset procent HDP, 25 procent exportu, několik set tisíc pracovních míst“ — a uvedl, že „manažeři významných společností nejenom automobilových velmi dobře už dnes vědí, že jsou nenaplnitelné“. | <span class="status-badge status-quote">CITACE</span> | [SRC-27](@/dossiers/karel-havlicek/sources/src-27.md) |
+| <a id="clm-44"></a>[CLM-44](@/dossiers/karel-havlicek/claims/clm-44.md) | Podle reportáže patřilo Česko do koalice sedmi zemí (spolu s Německem, Itálií, Polskem, Maďarskem, Slovenskem a Bulharskem), která tlačila na zmírnění cíle pro rok 2035 z plného zákazu na 90procentní snížení emisí; česká vláda podporuje technologickou neutralitu a hybridní vozidla jako přechodový most. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-30](@/dossiers/karel-havlicek/sources/src-30.md) |
+| <a id="clm-45"></a>[CLM-45](@/dossiers/karel-havlicek/claims/clm-45.md) | Sdružení automobilového průmyslu (AutoSAP) ve svém pozičním dokumentu z 30. dubna 2026 označilo návrh Evropské komise za odtržený od reality a vyčíslilo, že prognózovaný deficit 1,4 milionu vozidel by generoval sankce až 18 miliard eur ročně; výkonný ředitel Zdeněk Petzl uvedl, že „regulace tlačí na producenty přísnými cíli a hrozbou sankcí, zatímco ignoruje ekonomické fakty a zákazníky nechává stranou“. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-29](@/dossiers/karel-havlicek/sources/src-29.md) |
+| <a id="clm-46"></a>[CLM-46](@/dossiers/karel-havlicek/claims/clm-46.md) | Havlíček zahájil 11. června 2026 v Praze konferenci Forum Elektromobilita 2026, na níž vystoupili zástupci Škoda Auto, Orlen, Fastned, BYD Automotive a Hyundai; registrace elektromobilů v EU přitom v období leden–duben 2026 vzrostly o 33 procent, v Česku o 18 procent. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-31](@/dossiers/karel-havlicek/sources/src-31.md) |
 ## Dotace na toustový chléb (Penam/Agrofert) {#kauza-toustovy-chleb}
 
 Téma v autorizovaném rozsahu — viz tvrzení [CLM-02](@/dossiers/karel-havlicek/claims/clm-02.md), [CLM-03](@/dossiers/karel-havlicek/claims/clm-03.md), [CLM-04](@/dossiers/karel-havlicek/claims/clm-04.md), [CLM-05](@/dossiers/karel-havlicek/claims/clm-05.md), [CLM-06](@/dossiers/karel-havlicek/claims/clm-06.md), [CLM-07](@/dossiers/karel-havlicek/claims/clm-07.md), [CLM-08](@/dossiers/karel-havlicek/claims/clm-08.md), [CLM-09](@/dossiers/karel-havlicek/claims/clm-09.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
@@ -142,3 +266,15 @@ Téma v autorizovaném rozsahu — viz tvrzení [CLM-10](@/dossiers/karel-havlic
 ## Pozice k EU cílům elektromobility {#kauza-elektromobilita}
 
 Téma v autorizovaném rozsahu — viz tvrzení [CLM-15](@/dossiers/karel-havlicek/claims/clm-15.md), [CLM-16](@/dossiers/karel-havlicek/claims/clm-16.md), [CLM-17](@/dossiers/karel-havlicek/claims/clm-17.md), [CLM-18](@/dossiers/karel-havlicek/claims/clm-18.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
+
+## Dotace na toustový chléb (Penam/Agrofert) {#kauza-toustovy-chleb}
+
+Téma v autorizovaném rozsahu — viz tvrzení [CLM-19](@/dossiers/karel-havlicek/claims/clm-19.md), [CLM-20](@/dossiers/karel-havlicek/claims/clm-20.md), [CLM-21](@/dossiers/karel-havlicek/claims/clm-21.md), [CLM-22](@/dossiers/karel-havlicek/claims/clm-22.md), [CLM-23](@/dossiers/karel-havlicek/claims/clm-23.md), [CLM-24](@/dossiers/karel-havlicek/claims/clm-24.md), [CLM-25](@/dossiers/karel-havlicek/claims/clm-25.md), [CLM-26](@/dossiers/karel-havlicek/claims/clm-26.md), [CLM-27](@/dossiers/karel-havlicek/claims/clm-27.md), [CLM-28](@/dossiers/karel-havlicek/claims/clm-28.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
+
+## Novela stavebního zákona {#kauza-stavebni-zakon}
+
+Téma v autorizovaném rozsahu — viz tvrzení [CLM-29](@/dossiers/karel-havlicek/claims/clm-29.md), [CLM-30](@/dossiers/karel-havlicek/claims/clm-30.md), [CLM-31](@/dossiers/karel-havlicek/claims/clm-31.md), [CLM-32](@/dossiers/karel-havlicek/claims/clm-32.md), [CLM-33](@/dossiers/karel-havlicek/claims/clm-33.md), [CLM-34](@/dossiers/karel-havlicek/claims/clm-34.md), [CLM-35](@/dossiers/karel-havlicek/claims/clm-35.md), [CLM-36](@/dossiers/karel-havlicek/claims/clm-36.md), [CLM-37](@/dossiers/karel-havlicek/claims/clm-37.md), [CLM-38](@/dossiers/karel-havlicek/claims/clm-38.md), [CLM-39](@/dossiers/karel-havlicek/claims/clm-39.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
+
+## Pozice k EU cílům elektromobility {#kauza-elektromobilita}
+
+Téma v autorizovaném rozsahu — viz tvrzení [CLM-40](@/dossiers/karel-havlicek/claims/clm-40.md), [CLM-41](@/dossiers/karel-havlicek/claims/clm-41.md), [CLM-42](@/dossiers/karel-havlicek/claims/clm-42.md), [CLM-43](@/dossiers/karel-havlicek/claims/clm-43.md), [CLM-44](@/dossiers/karel-havlicek/claims/clm-44.md), [CLM-45](@/dossiers/karel-havlicek/claims/clm-45.md), [CLM-46](@/dossiers/karel-havlicek/claims/clm-46.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.

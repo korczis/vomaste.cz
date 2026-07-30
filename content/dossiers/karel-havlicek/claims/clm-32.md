@@ -1,0 +1,19 @@
++++
+title = "CLM-32"
+description = "Na Havlíčkovo vystoupení reagovala Olga Richterová (Piráti) tvrzením, že ministr „evidentně ztrácí nervy“, Michal Kučera (TOP 09), že „předv"
+template = "dossier-claim.html"
+weight = 32
+
+[extra]
+dossier = "karel-havlicek"
+record_type = "claim"
+lang = "cs"
+clm_id = "CLM-32"
+status = "status-quote"
+status_label = "CITACE"
+summary = "Na Havlíčkovo vystoupení reagovala Olga Richterová (Piráti) tvrzením, že ministr „evidentně ztrácí nervy“, Michal Kučera (TOP 09), že „předvedl předvolební projev“, a Marek Výborný (KDU-ČSL) slovy „Vaše arogance a drzost fakt nezná mezí“."
+sources = ["SRC-18"]
+subjects = ["havlicek"]
++++
+
+Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/karel-havlicek/_index.md#registr-tvrzeni).

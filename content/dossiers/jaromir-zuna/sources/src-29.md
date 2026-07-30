@@ -1,0 +1,25 @@
++++
+title = "SRC-29 — ČeskéNoviny.cz (ČTK)"
+description = "Bezpečnostní rada státu bude za účasti Pavla opět projednávat armádní koncepci"
+template = "dossier-source.html"
+weight = 29
+
+[extra]
+subjects = ["zuna"]
+dossier = "jaromir-zuna"
+record_type = "source"
+lang = "cs"
+src_id = "SRC-29"
+outlet = "ČeskéNoviny.cz (ČTK)"
+src_type = "zpravodajství"
+url = "https://www.ceskenoviny.cz/zpravy/bezpecnostni-rada-statu-bude-za-ucasti-pavla-opet-projednavat-armadni-koncepci/2846309"
+published = "2026-07-02"
+retrieved = "2026-07-30"
+claims = ["CLM-36"]
++++
+
+**Bezpečnostní rada státu bude za účasti Pavla opět projednávat armádní koncepci**
+
+Opakované zasedání BRS 2. 7. 2026 za účasti prezidenta Pavla; diskuse o armádní koncepci opět nebyla uzavřena, na programu byla asi dvacítka bodů včetně krizového řízení a odolnosti státu.
+
+Zdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji.

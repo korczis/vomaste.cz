@@ -14,8 +14,8 @@ period = "2026"
 status = "status-single"
 label = "Sledované téma"
 summary = "Nepravomocná pokuta za střet zájmů — viz tvrzení CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07, CLM-08."
-claims = []
-sources = []
+claims = ["CLM-20", "CLM-21", "CLM-22", "CLM-23"]
+sources = ["SRC-13", "SRC-14"]
 subjects = ["mrazova"]
 +++
 

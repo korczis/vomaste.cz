@@ -79,7 +79,86 @@ title = "Spor o dopis EK: Šebestyán vyplácí zemědělské dotace Agrofertu d
 anchor = "kauza-vymahani-agrofert"
 dot = "dot-fact"
 subjects = ["sebestyan"]
+[[extra.timeline]]
+date = "2025-12"
+title = "Ministerstvo zemědělství vydává stanovisko, podle nějž se zákaz dotací týká jen nenárokových podpor a ČR by byla jediným státem EU vymáhajícím nárokové dotace"
+anchor = "kauza-vymahani-agrofert"
+dot = "dot-fact"
+subjects = ["sebestyan"]
 
+[[extra.timeline]]
+date = "2026-01"
+title = "Asociace soukromého zemědělství kritizuje nominaci Šebestyána jako lobbisty velkých podniků; Agrární komora a Zemědělský svaz ji podporují"
+anchor = "kauza-szif"
+dot = "dot-fact"
+subjects = ["sebestyan"]
+
+[[extra.timeline]]
+date = "2026-01"
+title = "Výborný uvádí, že o zahájení vymáhání nemá informace; SZIF potvrzuje existenci právní analýzy, ale odmítá sdělit její závěr"
+anchor = "kauza-vymahani-agrofert"
+dot = "dot-fact"
+subjects = ["sebestyan"]
+
+[[extra.timeline]]
+date = "2026-02"
+title = "Ministr prosazuje obnovení dotačního programu pro velké podniky za 250 mil. Kč, dříve ukončeného po zjištěních NKÚ"
+anchor = "kauza-vymahani-agrofert"
+dot = "dot-fact"
+subjects = ["sebestyan"]
+
+[[extra.timeline]]
+date = "2026-02"
+title = "Babiš vkládá Agrofert do svěřenského fondu RSVP Trust (20. 2.); dozorčí rada SZIF vyzývá ředitele Dlouhého k bezodkladnému vymáhání (24. 2.); Piráti a ASZ podávají trestní oznámení"
+anchor = "kauza-vymahani-agrofert"
+dot = "dot-fact"
+subjects = ["sebestyan"]
+
+[[extra.timeline]]
+date = "2026-02"
+title = "Šebestyán jmenuje potravinovým ombudsmanem Jindřicha Fialku"
+anchor = "kauza-szif"
+dot = "dot-fact"
+subjects = ["sebestyan"]
+
+[[extra.timeline]]
+date = "2026-04"
+title = "SZIF rozhoduje, že Agrofert může znovu čerpat dotace, a na základě externích analýz nebude zpětně vymáhat nárokové dotace z let 2017–2021; ministr uvádí, že analýzy nezná a do fondu nezasahuje"
+anchor = "kauza-vymahani-agrofert"
+dot = "dot-fact"
+subjects = ["sebestyan"]
+
+[[extra.timeline]]
+date = "2026-05"
+title = "Agrární komora žádá mimořádné jednání vlády kvůli krizi v zemědělství"
+anchor = "kauza-szif"
+dot = "dot-fact"
+subjects = ["sebestyan"]
+
+[[extra.timeline]]
+date = "2026-05"
+title = "Dopis Evropské komise z 20. 5. se podle představitele EU vztahuje i na zemědělské fondy; ministr jej označuje za právně nezávazný a výplaty pokračují"
+anchor = "kauza-vymahani-agrofert"
+dot = "dot-fact"
+subjects = ["sebestyan"]
+
+[[extra.timeline]]
+date = "2026-05"
+title = "Transparency International ČR odesílá podnět DG AGRI, DG JUST, DG BUDGET, OLAF a Evropskému účetnímu dvoru proti uznání fondu RSVP TRUST"
+anchor = "kauza-transparency"
+dot = "dot-fact"
+subjects = ["sebestyan"]
+
+[[extra.timeline]]
+date = "2026-06"
+title = "DG Agri podle SZIF potvrzuje platnost dohodnutého postupu; mimořádná schůze Sněmovny svolaná opozicí je zablokována hlasováním 66:85"
+anchor = "kauza-vymahani-agrofert"
+dot = "dot-fact"
+subjects = ["sebestyan"]
+
+[extra.authorization]
+authorized = true
+record_ids = ["AUTH-2026-07-30-T"]
 [[extra.cases]]
 anchor = "kauza-vymahani-agrofert"
 period = "2026"
@@ -87,7 +166,7 @@ title = "Vymáhání dotací po Agrofertu"
 status = "status-single"
 label = "Sledované téma"
 summary = "Vymáhání dotací po Agrofertu — viz tvrzení CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07, CLM-16."
-claims = []
+claims = ["CLM-17", "CLM-18", "CLM-19", "CLM-20", "CLM-21", "CLM-22", "CLM-23", "CLM-24", "CLM-25", "CLM-26", "CLM-27", "CLM-28", "CLM-29", "CLM-30", "CLM-36", "CLM-37", "CLM-38", "CLM-39", "CLM-44"]
 subjects = ["sebestyan"]
 
 [[extra.cases]]
@@ -97,7 +176,7 @@ title = "Působení v čele SZIF (2013–2022)"
 status = "status-single"
 label = "Sledované téma"
 summary = "Působení v čele SZIF (2013–2022) — viz tvrzení CLM-08, CLM-09, CLM-10, CLM-11."
-claims = []
+claims = ["CLM-33", "CLM-34", "CLM-35", "CLM-40", "CLM-41", "CLM-42", "CLM-43"]
 subjects = ["sebestyan"]
 
 [[extra.cases]]
@@ -107,12 +186,9 @@ title = "Varování Transparency International"
 status = "status-single"
 label = "Sledované téma"
 summary = "Varování Transparency International — viz tvrzení CLM-12, CLM-13, CLM-14, CLM-15."
-claims = []
+claims = ["CLM-31", "CLM-32"]
 subjects = ["sebestyan"]
 
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-T"]
 +++
 
 Martin Šebestyán zastává funkci ministra zemědělství ve třetí vládě Andreje Babiše (viz
@@ -142,7 +218,34 @@ Rozsah dle `AUTH-2026-07-30-T`: reportované brždění/zastavení vymáhání 5
 | ID | Tvrzení | Stav | Zdroje |
 |---|---|---|---|
 | <a id="clm-01"></a>[CLM-01](@/dossiers/martin-sebestyan/claims/clm-01.md) | Martin Šebestyán zastává podle oficiálního profilu na webu Úřadu vlády funkci ministra zemědělství | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-01](@/dossiers/martin-sebestyan/sources/src-01.md) |
-
+| <a id="clm-17"></a>[CLM-17](@/dossiers/martin-sebestyan/claims/clm-17.md) | Dozorčí rada SZIF na jednání 24. února 2026 vyzvala generálního ředitele fondu Petra Dlouhého k bezodkladnému zahájení kroků potřebných k vymáhání neoprávněně vyplacených dotací; předsedou rady je Tomáš Dubský (STAN). | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-08](@/dossiers/martin-sebestyan/sources/src-08.md) |
+| <a id="clm-18"></a>[CLM-18](@/dossiers/martin-sebestyan/claims/clm-18.md) | Ministr Šebestyán se jednání dozorčí rady SZIF 24. února 2026 nezúčastnil a uvedl, že do činnosti fondu nebude nijak zasahovat; totéž stanovisko zopakoval v dubnu 2026 k otázce zveřejnění právních analýz. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-08](@/dossiers/martin-sebestyan/sources/src-08.md) [SRC-15](@/dossiers/martin-sebestyan/sources/src-15.md) |
+| <a id="clm-19"></a>[CLM-19](@/dossiers/martin-sebestyan/claims/clm-19.md) | Opoziční Piráti podali s podporou Asociace soukromého zemědělství trestní oznámení u Vrchního státního zastupitelství v Praze s tvrzením, že stát v „deagrofertizaci“ nikdy nezačal konat. Trestní oznámení samo o sobě neznamená zahájení stíhání ani zjištění pochybení. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-08](@/dossiers/martin-sebestyan/sources/src-08.md) |
+| <a id="clm-20"></a>[CLM-20](@/dossiers/martin-sebestyan/claims/clm-20.md) | Andrej Babiš vložil 20. února 2026 Agrofert do soukromého svěřenského fondu RSVP Trust. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-08](@/dossiers/martin-sebestyan/sources/src-08.md) [SRC-09](@/dossiers/martin-sebestyan/sources/src-09.md) |
+| <a id="clm-21"></a>[CLM-21](@/dossiers/martin-sebestyan/claims/clm-21.md) | SZIF na konci dubna 2026 rozhodl, že Agrofert může znovu čerpat dotace, protože podle generálního ředitele Petra Dlouhého svěřenský fond RSVP Trust splňuje podmínky vypořádání majetkových poměrů. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-09](@/dossiers/martin-sebestyan/sources/src-09.md) [SRC-10](@/dossiers/martin-sebestyan/sources/src-10.md) [SRC-11](@/dossiers/martin-sebestyan/sources/src-11.md) |
+| <a id="clm-22"></a>[CLM-22](@/dossiers/martin-sebestyan/claims/clm-22.md) | SZIF se na základě objednaných externích právních analýz rozhodl nevymáhat zpětně nárokové evropské dotace vyplacené Agrofertu v letech 2017–2021; podle výkladu se zákaz vztahuje výlučně na nenárokové dotace. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-09](@/dossiers/martin-sebestyan/sources/src-09.md) |
+| <a id="clm-23"></a>[CLM-23](@/dossiers/martin-sebestyan/claims/clm-23.md) | Ivan Bartoš zpochybnil objednané právní analýzy SZIF s poukazem na to, že je zpracovala advokátní kancelář Portos (dříve Češka a Smutný); Vít Rakušan (STAN) uvedl, že nevymáhané miliardy poškodí rozpočet na obranu a vědu. Jde o politická hodnocení opozice. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-09](@/dossiers/martin-sebestyan/sources/src-09.md) |
+| <a id="clm-24"></a>[CLM-24](@/dossiers/martin-sebestyan/claims/clm-24.md) | Ministr Šebestyán v dubnu 2026 uvedl, že se s právními analýzami, o něž SZIF opřel rozhodnutí, sám dosud neseznámil, protože jsou vedeny jako neveřejné, a že k jejich zveřejnění podle něj „jednou“ dojde, ale nezná smluvní ujednání mezi fondem a advokátními kancelářemi. | <span class="status-badge status-quote">CITACE</span> | [SRC-15](@/dossiers/martin-sebestyan/sources/src-15.md) |
+| <a id="clm-25"></a>[CLM-25](@/dossiers/martin-sebestyan/claims/clm-25.md) | Podle nejmenovaného vysokého představitele EU citovaného 28. května 2026 se dopis Evropské komise z 20. května 2026 vztahuje také na zemědělské fondy; podle zdrojů ČTK nebyly informace od českých úřadů pro Komisi dostatečné k uzavření posouzení. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-12](@/dossiers/martin-sebestyan/sources/src-12.md) |
+| <a id="clm-26"></a>[CLM-26](@/dossiers/martin-sebestyan/claims/clm-26.md) | Ministr Šebestyán trvá na tom, že pozastavit platby je oprávněna pouze Evropská komise oficiálním právním aktem, tedy prováděcím rozhodnutím, a že dopis z Bruselu je pouze pracovní, právně nezávaznou komunikací; proto resort dotace Agrofertu vyplácí dál. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-12](@/dossiers/martin-sebestyan/sources/src-12.md) [SRC-13](@/dossiers/martin-sebestyan/sources/src-13.md) |
+| <a id="clm-27"></a>[CLM-27](@/dossiers/martin-sebestyan/claims/clm-27.md) | Ministr Šebestyán ve Sněmovně 11. června 2026 uvedl, že předmětem historického auditního šetření Evropské komise nikdy nebyly nárokové dotace, tedy přímé platby, a že ty Evropská komise po celou dobu proplácela. | <span class="status-badge status-quote">CITACE</span> | [SRC-13](@/dossiers/martin-sebestyan/sources/src-13.md) |
+| <a id="clm-28"></a>[CLM-28](@/dossiers/martin-sebestyan/claims/clm-28.md) | Generální ředitelství Evropské komise pro zemědělství (DG Agri) podle SZIF na začátku června 2026 potvrdilo, že postup dohodnutý se SZIF zůstává v platnosti, včetně režimu vykazování plateb firmám z Agrofertu. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-10](@/dossiers/martin-sebestyan/sources/src-10.md) [SRC-11](@/dossiers/martin-sebestyan/sources/src-11.md) |
+| <a id="clm-29"></a>[CLM-29](@/dossiers/martin-sebestyan/claims/clm-29.md) | Podle údajů Seznam Zpráv převzatých dalšími médii vyplatil SZIF holdingu Agrofert od nástupu Andreje Babiše do funkce premiéra téměř 200 milionů korun na dotacích. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-10](@/dossiers/martin-sebestyan/sources/src-10.md) [SRC-11](@/dossiers/martin-sebestyan/sources/src-11.md) |
+| <a id="clm-30"></a>[CLM-30](@/dossiers/martin-sebestyan/claims/clm-30.md) | Mimořádnou schůzi Sněmovny k dotacím Agrofertu svolanou pěticí opozičních stran Sněmovna 11. června 2026 fakticky zablokovala: program schůze podpořilo 66 poslanců ODS, STAN, Pirátů, KDU-ČSL a TOP 09 ze 151 přítomných, proti bylo 85 poslanců koaličních ANO, SPD a Motoristů. Ministr Šebestyán na schůzi uvedl, že resort postupuje správně a transparentně. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-14](@/dossiers/martin-sebestyan/sources/src-14.md) |
+| <a id="clm-31"></a>[CLM-31](@/dossiers/martin-sebestyan/claims/clm-31.md) | Transparency International ČR odeslala 25. května 2026 podnět institucím EU — DG AGRI, DG JUST, DG BUDGET, úřadu OLAF a Evropskému účetnímu dvoru — s varováním, že svěřenský fond RSVP TRUST nesplňuje parametry pro zamezení střetu zájmů podle čl. 61 nařízení č. 2024/2509. Jde o hodnocení nevládní organizace, nikoli o zjištění orgánu veřejné moci. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-17](@/dossiers/martin-sebestyan/sources/src-17.md) |
+| <a id="clm-32"></a>[CLM-32](@/dossiers/martin-sebestyan/claims/clm-32.md) | Právník Transparency International ČR Kryštof Doležal označil statut Babišova svěřenského fondu za „spíše o zástěrku umožňující obnovení vyplácení dotačních prostředků“; TI v témže materiálu uvádí, že SZIF je podřízen ministerstvu vedenému Martinem Šebestyánem, který byl dříve ředitelem fondu. Jde o stanovisko NGO. | <span class="status-badge status-quote">CITACE</span> | [SRC-17](@/dossiers/martin-sebestyan/sources/src-17.md) |
+| <a id="clm-33"></a>[CLM-33](@/dossiers/martin-sebestyan/claims/clm-33.md) | Server Demagog.cz ověřil výrok Martina Šebestyána z 13. května 2026, že investiční dotace pro Agrofert zastavil on v rámci SZIF po dohodě s Evropskou komisí, a vyhodnotil jej jako pravdivý: SZIF pod jeho vedením pozastavil firmám z Agrofertu 28 investičních projektů za více než půl miliardy korun a ve všech 28 soudních sporech uspěl fond. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-16](@/dossiers/martin-sebestyan/sources/src-16.md) |
+| <a id="clm-34"></a>[CLM-34](@/dossiers/martin-sebestyan/claims/clm-34.md) | Podle ověření Demagog.cz byla jedinou dotací z auditované skupiny, která byla Agrofertu skutečně vyplacena, částka 1,6 milionu korun pro Schrom Farms, poskytnutá ještě před auditním procesem; firma ji následně vracela. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-16](@/dossiers/martin-sebestyan/sources/src-16.md) |
+| <a id="clm-35"></a>[CLM-35](@/dossiers/martin-sebestyan/claims/clm-35.md) | Kontrolní akce NKÚ č. 23/06 zaměřená na Program rozvoje venkova 2014–2020 — tedy období, kdy SZIF vedl Martin Šebestyán — podle vyjádření Ministerstva zemědělství z března 2024 nenašla pochybení při administraci, kontrolách ani zadávání veřejných zakázek; zjištěné nedostatky se týkaly vyplňování monitorovacích zpráv žadateli. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-24](@/dossiers/martin-sebestyan/sources/src-24.md) |
+| <a id="clm-36"></a>[CLM-36](@/dossiers/martin-sebestyan/claims/clm-36.md) | Ministerstvo zemědělství ve stanovisku z 16. prosince 2025 argumentuje, že § 4c zákona o střetu zájmů je napsán nepřesně, že dosud nebylo vydáno žádné soudní rozhodnutí ke způsobilosti Agrofertu na nárokové dotace a že by Česká republika byla jediným členským státem EU vymáhajícím nárokové dotace kvůli střetu zájmů. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-23](@/dossiers/martin-sebestyan/sources/src-23.md) |
+| <a id="clm-37"></a>[CLM-37](@/dossiers/martin-sebestyan/claims/clm-37.md) | Podle stanoviska Ministerstva zemědělství odložily NCOZ a evropský pověřený žalobce trestní věci týkající se této problematiky v letech 2022–2023. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-23](@/dossiers/martin-sebestyan/sources/src-23.md) |
+| <a id="clm-38"></a>[CLM-38](@/dossiers/martin-sebestyan/claims/clm-38.md) | Ministr Šebestyán prosadil obnovení dotačního programu pro velké podniky v objemu 250 milionů korun, z nějž bude moci čerpat i Agrofert; program byl dříve ukončen na základě zjištění NKÚ, který kritizoval jeho netransparentnost a neefektivní vynakládání financí. Ministr částku označil za „pouze symbolickou“. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-18](@/dossiers/martin-sebestyan/sources/src-18.md) [SRC-19](@/dossiers/martin-sebestyan/sources/src-19.md) |
+| <a id="clm-39"></a>[CLM-39](@/dossiers/martin-sebestyan/claims/clm-39.md) | Podle FORUM 24 byl současně program „Zlepšení životních podmínek hospodářských zvířat“ navýšen z necelé miliardy na 1,3 miliardy korun, a to na úkor podpory rozvoje venkova a zemědělského výzkumu. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-18](@/dossiers/martin-sebestyan/sources/src-18.md) |
+| <a id="clm-40"></a>[CLM-40](@/dossiers/martin-sebestyan/claims/clm-40.md) | Ministr Šebestyán v únoru 2026 varoval, že potravinová soběstačnost České republiky se začíná blížit 50 procentům, a avizoval, že vláda chystá zavedení předkupního práva na zemědělskou půdu pro aktivní zemědělce; resort podle něj v roce 2026 hospodaří s rozpočtem 63,4 miliardy korun, z toho 46,2 miliardy pro agrární sektor a 4 miliardy na národní dotace. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-19](@/dossiers/martin-sebestyan/sources/src-19.md) |
+| <a id="clm-41"></a>[CLM-41](@/dossiers/martin-sebestyan/claims/clm-41.md) | Ministr Šebestyán jmenoval 26. února 2026 potravinovým ombudsmanem Jindřicha Fialku, dosavadního ředitele sekce potravinářství ministerstva, který si funkci ředitele sekce ponechal. Krok ocenila Agrární komora, kritizovala jej Asociace soukromého zemědělství i poslanci ODS Petr Bendl a europoslankyně Veronika Vrecionová. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-20](@/dossiers/martin-sebestyan/sources/src-20.md) |
+| <a id="clm-42"></a>[CLM-42](@/dossiers/martin-sebestyan/claims/clm-42.md) | Předseda Asociace soukromého zemědělství Jaroslav Šebek označil v lednu 2026 Šebestyána za „přiznaného lobbistu“ za zájmy zhruba dvacítky zemědělských a potravinářských gigantů a jeho nominaci za popření oprávněných zájmů zemědělců; Agrární komora a Zemědělský svaz nominaci naopak podpořily. Šebestyán reagoval, že postoj ASZ není založen na rozumných argumentech. Jde o hodnocení zájmových svazů. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-21](@/dossiers/martin-sebestyan/sources/src-21.md) |
+| <a id="clm-43"></a>[CLM-43](@/dossiers/martin-sebestyan/claims/clm-43.md) | Prezident Agrární komory Jan Doležal vyzval 21. května 2026 na sněmu komory v Olomouci ke svolání mimořádného jednání vlády kvůli krizi v zemědělství a požadoval nezdaňování dotací, úlevy na sociálním pojištění a zmírnění regulatorní a daňové zátěže; ministr Šebestyán reagoval ujištěním, že resort situaci vyhodnocuje i na evropské úrovni. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-22](@/dossiers/martin-sebestyan/sources/src-22.md) |
+| <a id="clm-44"></a>[CLM-44](@/dossiers/martin-sebestyan/claims/clm-44.md) | Bývalý ministr Marek Výborný (KDU-ČSL) v lednu 2026 uvedl, že u dvou společností z Agrofertu byly kontroly zahájeny ještě za jeho působení, a mluvčí SZIF Eva Češpiva potvrdila, že fond právní analýzu má, ale odmítla sdělit, zda je v ní kategoricky doporučeno vymáhání. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-25](@/dossiers/martin-sebestyan/sources/src-25.md) |
 ## Vymáhání dotací po Agrofertu {#kauza-vymahani-agrofert}
 
 Téma v autorizovaném rozsahu — viz tvrzení [CLM-02](@/dossiers/martin-sebestyan/claims/clm-02.md), [CLM-03](@/dossiers/martin-sebestyan/claims/clm-03.md), [CLM-04](@/dossiers/martin-sebestyan/claims/clm-04.md), [CLM-05](@/dossiers/martin-sebestyan/claims/clm-05.md), [CLM-06](@/dossiers/martin-sebestyan/claims/clm-06.md), [CLM-07](@/dossiers/martin-sebestyan/claims/clm-07.md), [CLM-16](@/dossiers/martin-sebestyan/claims/clm-16.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
@@ -154,3 +257,15 @@ Téma v autorizovaném rozsahu — viz tvrzení [CLM-08](@/dossiers/martin-sebes
 ## Varování Transparency International {#kauza-transparency}
 
 Téma v autorizovaném rozsahu — viz tvrzení [CLM-12](@/dossiers/martin-sebestyan/claims/clm-12.md), [CLM-13](@/dossiers/martin-sebestyan/claims/clm-13.md), [CLM-14](@/dossiers/martin-sebestyan/claims/clm-14.md), [CLM-15](@/dossiers/martin-sebestyan/claims/clm-15.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
+
+## Vymáhání dotací po Agrofertu {#kauza-vymahani-agrofert}
+
+Téma v autorizovaném rozsahu — viz tvrzení [CLM-17](@/dossiers/martin-sebestyan/claims/clm-17.md), [CLM-18](@/dossiers/martin-sebestyan/claims/clm-18.md), [CLM-19](@/dossiers/martin-sebestyan/claims/clm-19.md), [CLM-20](@/dossiers/martin-sebestyan/claims/clm-20.md), [CLM-21](@/dossiers/martin-sebestyan/claims/clm-21.md), [CLM-22](@/dossiers/martin-sebestyan/claims/clm-22.md), [CLM-23](@/dossiers/martin-sebestyan/claims/clm-23.md), [CLM-24](@/dossiers/martin-sebestyan/claims/clm-24.md), [CLM-25](@/dossiers/martin-sebestyan/claims/clm-25.md), [CLM-26](@/dossiers/martin-sebestyan/claims/clm-26.md), [CLM-27](@/dossiers/martin-sebestyan/claims/clm-27.md), [CLM-28](@/dossiers/martin-sebestyan/claims/clm-28.md), [CLM-29](@/dossiers/martin-sebestyan/claims/clm-29.md), [CLM-30](@/dossiers/martin-sebestyan/claims/clm-30.md), [CLM-36](@/dossiers/martin-sebestyan/claims/clm-36.md), [CLM-37](@/dossiers/martin-sebestyan/claims/clm-37.md), [CLM-38](@/dossiers/martin-sebestyan/claims/clm-38.md), [CLM-39](@/dossiers/martin-sebestyan/claims/clm-39.md), [CLM-44](@/dossiers/martin-sebestyan/claims/clm-44.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
+
+## Varování Transparency International {#kauza-transparency}
+
+Téma v autorizovaném rozsahu — viz tvrzení [CLM-31](@/dossiers/martin-sebestyan/claims/clm-31.md), [CLM-32](@/dossiers/martin-sebestyan/claims/clm-32.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
+
+## Působení v čele SZIF a resortní kroky {#kauza-szif}
+
+Téma v autorizovaném rozsahu — viz tvrzení [CLM-33](@/dossiers/martin-sebestyan/claims/clm-33.md), [CLM-34](@/dossiers/martin-sebestyan/claims/clm-34.md), [CLM-35](@/dossiers/martin-sebestyan/claims/clm-35.md), [CLM-40](@/dossiers/martin-sebestyan/claims/clm-40.md), [CLM-41](@/dossiers/martin-sebestyan/claims/clm-41.md), [CLM-42](@/dossiers/martin-sebestyan/claims/clm-42.md), [CLM-43](@/dossiers/martin-sebestyan/claims/clm-43.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.

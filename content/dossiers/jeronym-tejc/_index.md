@@ -44,7 +44,72 @@ title = "Vláda navrhla zamítnutí prezidentovy kompetenční žaloby a vylouč
 anchor = "kauza-bitcoin"
 dot = "dot-fact"
 subjects = ["tejc"]
+[[extra.timeline]]
+date = "2026-04"
+title = "Ministerstvo předkládá interní audit a Tejc ohlašuje trestní oznámení; Decroix mluví o honu na čarodějnice"
+anchor = "kauza-bitcoin"
+dot = "dot-fact"
+subjects = ["tejc"]
 
+[[extra.timeline]]
+date = "2026-05"
+title = "NCOZ zahajuje trestní stíhání Blažka, Daňhela a Titze pro legalizaci výnosů a zneužití pravomoci; obvinění podávají stížnosti"
+anchor = "kauza-bitcoin"
+dot = "dot-fact"
+subjects = ["tejc"]
+
+[[extra.timeline]]
+date = "2026-05"
+title = "Na MPSV poprvé zasedá Komise pro přezkum nepřirozených úmrtí dětí, výstupem je podnět ke kontrole OSPOD ve Středočeském kraji a v Praze"
+anchor = "kauza-viktorka"
+dot = "dot-fact"
+subjects = ["tejc"]
+
+[[extra.timeline]]
+date = "2026-06"
+title = "Tejc představuje novelu občanského zákoníku k opatrovnickým soudům, Marvanová ji označuje za nedostatečnou"
+anchor = "kauza-viktorka"
+dot = "dot-fact"
+subjects = ["tejc"]
+
+[[extra.timeline]]
+date = "2026-06"
+title = "Ústavní soud vydává předběžné opatření ve věci Pl. ÚS 16/26 se soudcem zpravodajem Šámalem, dva soudci uplatňují odlišné stanovisko"
+anchor = "kauza-ustavni-soud"
+dot = "dot-fact"
+subjects = ["tejc"]
+
+[[extra.timeline]]
+date = "2026-06"
+title = "Nejvyšší státní zastupitelství zamítá stížnosti obviněných, zahájení trestního stíhání se stává pravomocným"
+anchor = "kauza-bitcoin"
+dot = "dot-fact"
+subjects = ["tejc"]
+
+[[extra.timeline]]
+date = "2026-07"
+title = "Tejc ve sněmovně zpochybňuje pravomoc Ústavního soudu, zároveň deklaruje respektování rozhodnutí"
+anchor = "kauza-ustavni-soud"
+dot = "dot-fact"
+subjects = ["tejc"]
+
+[[extra.timeline]]
+date = "2026-07"
+title = "Ministr podává kárnou žalobu na soudkyni Kimmelovou s návrhem ročního snížení platu o 30 procent"
+anchor = "kauza-viktorka"
+dot = "dot-fact"
+subjects = ["tejc"]
+
+[[extra.timeline]]
+date = "2026-07"
+title = "Vláda navrhuje zamítnutí kompetenční žaloby a vyloučení soudce Šámala; Soudcovská unie se ohrazuje proti výrokům politiků"
+anchor = "kauza-ustavni-soud"
+dot = "dot-fact"
+subjects = ["tejc"]
+
+[extra.authorization]
+authorized = true
+record_ids = ["AUTH-2026-07-30-O"]
 [[extra.cases]]
 anchor = "kauza-bitcoin"
 period = "2026"
@@ -52,7 +117,7 @@ title = "Bitcoinová kauza resortu spravedlnosti"
 status = "status-single"
 label = "Sledované téma"
 summary = "Bitcoinová kauza resortu spravedlnosti — viz tvrzení CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07."
-claims = []
+claims = ["CLM-19", "CLM-20", "CLM-21", "CLM-22", "CLM-23", "CLM-24", "CLM-25", "CLM-26", "CLM-27", "CLM-28", "CLM-29", "CLM-30", "CLM-31", "CLM-32"]
 subjects = ["tejc"]
 
 [[extra.cases]]
@@ -62,7 +127,7 @@ title = "Kárná žaloba v případu Viktorky"
 status = "status-single"
 label = "Sledované téma"
 summary = "Kárná žaloba v případu Viktorky — viz tvrzení CLM-08, CLM-09, CLM-10, CLM-11, CLM-12, CLM-13."
-claims = []
+claims = ["CLM-33", "CLM-34", "CLM-35", "CLM-36", "CLM-37", "CLM-38", "CLM-39", "CLM-40"]
 subjects = ["tejc"]
 
 [[extra.cases]]
@@ -72,12 +137,9 @@ title = "Spor o předběžné opatření Ústavního soudu"
 status = "status-single"
 label = "Sledované téma"
 summary = "Spor o předběžné opatření Ústavního soudu — viz tvrzení CLM-14, CLM-15, CLM-16, CLM-17, CLM-18."
-claims = []
+claims = ["CLM-41", "CLM-42", "CLM-43", "CLM-44", "CLM-45", "CLM-46", "CLM-47", "CLM-48", "CLM-49", "CLM-50", "CLM-51"]
 subjects = ["tejc"]
 
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-O"]
 +++
 
 Jeroným Tejc zastává funkci ministra spravedlnosti ve třetí vládě Andreje Babiše (viz
@@ -109,7 +171,39 @@ Rozsah dle `AUTH-2026-07-30-O`: bitcoinová kauza resortu — jeho ohlášené t
 | ID | Tvrzení | Stav | Zdroje |
 |---|---|---|---|
 | <a id="clm-01"></a>[CLM-01](@/dossiers/jeronym-tejc/claims/clm-01.md) | Jeroným Tejc zastává podle oficiálního profilu na webu Úřadu vlády funkci ministra spravedlnosti | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-01](@/dossiers/jeronym-tejc/sources/src-01.md) |
-
+| <a id="clm-19"></a>[CLM-19](@/dossiers/jeronym-tejc/claims/clm-19.md) | Detektivové Národní centrály proti organizovanému zločinu zahájili 4. května 2026 trestní stíhání tří osob v bitcoinové kauze — exministra spravedlnosti Pavla Blažka, jeho bývalého náměstka Radomíra Daňhela a brněnského advokáta Kárima Titze. Jde o zahájení stíhání, tedy o obvinění, nikoli o obžalobu ani o odsouzení; platí presumpce neviny. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-11](@/dossiers/jeronym-tejc/sources/src-11.md) [SRC-12](@/dossiers/jeronym-tejc/sources/src-12.md) |
+| <a id="clm-20"></a>[CLM-20](@/dossiers/jeronym-tejc/claims/clm-20.md) | Obvinění je kvalifikováno jako legalizace výnosů z trestné činnosti a zneužití pravomoci úřední osoby; podle České justice jde o dva skutky legalizace a o zneužití pravomoci zčásti dokonané a zčásti ve stadiu pokusu. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-11](@/dossiers/jeronym-tejc/sources/src-11.md) [SRC-12](@/dossiers/jeronym-tejc/sources/src-12.md) |
+| <a id="clm-21"></a>[CLM-21](@/dossiers/jeronym-tejc/claims/clm-21.md) | Dozor nad trestním řízením vykonává Vrchní státní zastupitelství v Olomouci, dozorujícím státním zástupcem je Radim Dragoun. Jde o tentýž úřad, kterému bylo v dubnu 2026 doručeno trestní oznámení ministra Tejce. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-11](@/dossiers/jeronym-tejc/sources/src-11.md) [SRC-12](@/dossiers/jeronym-tejc/sources/src-12.md) |
+| <a id="clm-22"></a>[CLM-22](@/dossiers/jeronym-tejc/claims/clm-22.md) | Obviněným podle České justice hrozí trest odnětí svobody v rozmezí pěti až dvanácti let; všichni tři jsou stíháni na svobodě. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-11](@/dossiers/jeronym-tejc/sources/src-11.md) |
+| <a id="clm-23"></a>[CLM-23](@/dossiers/jeronym-tejc/claims/clm-23.md) | Česká justice v době zahájení stíhání uvedla, že Vrchní státní zastupitelství v Olomouci od konce dubna 2026 zkoumá trestní oznámení ministra Tejce podané na základě auditu, ale výslovně netvrdí, že by právě toto oznámení vedlo k obvinění konkrétních osob. Kauzativní vazba mezi Tejcovým oznámením a obviněním tak není z dostupných zdrojů doložena. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-11](@/dossiers/jeronym-tejc/sources/src-11.md) |
+| <a id="clm-24"></a>[CLM-24](@/dossiers/jeronym-tejc/claims/clm-24.md) | Všichni tři obvinění podali proti zahájení trestního stíhání stížnosti, a to blanketně s avizovaným dodatečným odůvodněním. O stížnostech rozhodovalo Nejvyšší státní zastupitelství. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-13](@/dossiers/jeronym-tejc/sources/src-13.md) |
+| <a id="clm-25"></a>[CLM-25](@/dossiers/jeronym-tejc/claims/clm-25.md) | Nejvyšší státní zastupitelství stížnosti zamítlo jako nedůvodné se závěrem, že trestní stíhání obviněných bylo zahájeno důvodně a v souladu se zákonem; oznámil to první náměstek nejvyššího státního zástupce Zdeněk Kasal. Zahájení stíhání se tím stalo pravomocným — nadále však jde o fázi přípravného řízení, nikoli o rozhodnutí o vině. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-14](@/dossiers/jeronym-tejc/sources/src-14.md) |
+| <a id="clm-26"></a>[CLM-26](@/dossiers/jeronym-tejc/claims/clm-26.md) | Podle Reflexu šlo o dar 468 bitcoinů, které ministerstvo následně prodalo za 956,8 milionu korun. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-15](@/dossiers/jeronym-tejc/sources/src-15.md) |
+| <a id="clm-27"></a>[CLM-27](@/dossiers/jeronym-tejc/claims/clm-27.md) | Tejcův interní audit podle Reflexu konkrétně vytkl, že smlouva byla podepsána ještě před ministerským schválením, že neproběhlo právní posouzení a že při prodeji ministerstvo připustilo účast zájemců, kteří nesložili kauci včas, a snížilo nejnižší cenu o deset procent. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-15](@/dossiers/jeronym-tejc/sources/src-15.md) |
+| <a id="clm-28"></a>[CLM-28](@/dossiers/jeronym-tejc/claims/clm-28.md) | Tejc při prezentaci auditu uvedl: „Audit poukazuje nejen na možné porušení zákona a předpisů z hlediska těch nejvrcholnějších představitelů.“ | <span class="status-badge status-quote">CITACE</span> | [SRC-15](@/dossiers/jeronym-tejc/sources/src-15.md) |
+| <a id="clm-29"></a>[CLM-29](@/dossiers/jeronym-tejc/claims/clm-29.md) | Pavel Blažek podle Reflexu argumentoval tím, že žádný státní orgán „autoritativně nezkonstatoval, že bitcoiny jsou právně vadné“, a že mu audit nebyl dán ani k nahlédnutí. Po zahájení stíhání pak uvedl, že se cítí naprosto nevinný. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-15](@/dossiers/jeronym-tejc/sources/src-15.md) [SRC-13](@/dossiers/jeronym-tejc/sources/src-13.md) |
+| <a id="clm-30"></a>[CLM-30](@/dossiers/jeronym-tejc/claims/clm-30.md) | Exministryně Eva Decroix reagovala na Tejcovy kroky na síti X slovy: „To, co aktuálně pácháte, není spravedlnost. Možná jste chtěl poškodit mě.“ | <span class="status-badge status-quote">CITACE</span> | [SRC-15](@/dossiers/jeronym-tejc/sources/src-15.md) |
+| <a id="clm-31"></a>[CLM-31](@/dossiers/jeronym-tejc/claims/clm-31.md) | Decroix v den ohlášení trestního oznámení ve vysílání CNN Prima NEWS uvedla: „Na koho jiného je dnes možné dělat hon na čarodějnice, než na Decroix?“ a k roli resortu dodala, že „nesluší, když z justice dělá prodlouženou ruku své politiky“. | <span class="status-badge status-quote">CITACE</span> | [SRC-16](@/dossiers/jeronym-tejc/sources/src-16.md) |
+| <a id="clm-32"></a>[CLM-32](@/dossiers/jeronym-tejc/claims/clm-32.md) | Decroix tamtéž vyjádřila přesvědčení, že ministr „k žádné trestní odpovědnosti nedospěje“, pokud si podklady přečte, a označila snahu o politizaci bitcoinové kauzy za nepřekvapivou. | <span class="status-badge status-quote">CITACE</span> | [SRC-16](@/dossiers/jeronym-tejc/sources/src-16.md) |
+| <a id="clm-33"></a>[CLM-33](@/dossiers/jeronym-tejc/claims/clm-33.md) | Kárná žaloba směřuje proti soudkyni Okresního soudu v Benešově Sandře Kimmelové; ministr navrhuje roční snížení platu o 30 procent. O kárné žalobě rozhoduje kárný senát, do jeho rozhodnutí platí presumpce neviny a nejde o zjištění pochybení. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-18](@/dossiers/jeronym-tejc/sources/src-18.md) |
+| <a id="clm-34"></a>[CLM-34](@/dossiers/jeronym-tejc/claims/clm-34.md) | Podle tiskové zprávy ministerstva spravedlnosti ministr tvrdí, že se soudkyně „dopustila excesu“ a „zanedbala své povinnosti“ tím, že si dostatečně nezjistila skutkový stav. Šetření Odboru dohledu a kárné agendy ministerstva podle zprávy začalo v dubnu 2026. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-17](@/dossiers/jeronym-tejc/sources/src-17.md) |
+| <a id="clm-35"></a>[CLM-35](@/dossiers/jeronym-tejc/claims/clm-35.md) | Tejc podle České justice soudkyni vytýká, že rozhodovala, přestože ze spisu vyplývaly informace o paranoidní schizofrenii a drogové závislosti otce. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-18](@/dossiers/jeronym-tejc/sources/src-18.md) |
+| <a id="clm-36"></a>[CLM-36](@/dossiers/jeronym-tejc/claims/clm-36.md) | Soudkyně se podle České justice brání mimo jiné tím, že se všichni účastníci řízení včetně pěstounů vzdali práva na odvolání a že psychiatrické podklady i záznamy z terapie připouštěly řádnou péči otce v době abstinence. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-18](@/dossiers/jeronym-tejc/sources/src-18.md) |
+| <a id="clm-37"></a>[CLM-37](@/dossiers/jeronym-tejc/claims/clm-37.md) | Tejc po případu ohlásil novelu občanského zákoníku, podle níž by opatrovnické soudy nově a povinně posuzovaly, zda není namístě zbavit rodičovské odpovědnosti rodiče, který se dopustil domácího násilí vůči dítěti nebo druhému rodiči; násilný rodič by dál platil výživné a mohl by být v kontaktu například formou asistovaných setkání či videohovorů. Předložení vládě předpokládal během léta 2026. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-19](@/dossiers/jeronym-tejc/sources/src-19.md) |
+| <a id="clm-38"></a>[CLM-38](@/dossiers/jeronym-tejc/claims/clm-38.md) | Advokátka Hana Kordová Marvanová Tejcovu novelu kritizovala s tím, že „nezvyšuje ochranu a bezpečí dětí jako případ Viktorky vůbec“, protože míří především na rozhodování o péči po rozvodu, zatímco v tomto případu podle ní mezi rodiči žádný spor nebyl a oba byli vysoce rizikoví. | <span class="status-badge status-quote">CITACE</span> | [SRC-19](@/dossiers/jeronym-tejc/sources/src-19.md) |
+| <a id="clm-39"></a>[CLM-39](@/dossiers/jeronym-tejc/claims/clm-39.md) | Na ministerstvu práce a sociálních věcí poprvé zasedla Komise pro přezkum nepřirozených úmrtí dětí v čele s ministrem Alešem Juchelkou; jejím členem je i dětský ombudsman Martin Beneš. Výstupem prvního jednání byl podnět ke kontrole postupů orgánů sociálně-právní ochrany dětí ve Středočeském kraji a v Praze, který ministerstvo prezentovalo jako standardní kontrolní nástroj, nikoli jako předjímání pochybení. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-20](@/dossiers/jeronym-tejc/sources/src-20.md) |
+| <a id="clm-40"></a>[CLM-40](@/dossiers/jeronym-tejc/claims/clm-40.md) | Dětský ombudsman Martin Beneš k práci komise uvedl: „Bylo by neodpovědné veřejně hodnotit situaci ve chvíli, kdy práce komise teprve probíhá a její závěry ještě nejsou hotové.“ Podle něj systém dlouhodobě postrádá jednotné metodické vedení a řešení je spíše v metodickém řízení než v legislativních změnách. | <span class="status-badge status-quote">CITACE</span> | [SRC-20](@/dossiers/jeronym-tejc/sources/src-20.md) |
+| <a id="clm-41"></a>[CLM-41](@/dossiers/jeronym-tejc/claims/clm-41.md) | Předběžné opatření Ústavního soudu bylo vydáno ve věci vedené pod sp. zn. Pl. ÚS 16/26. Soud jím nařídil vládě, ministrovi zahraničních věcí a ministerstvu, aby bezodkladně notifikovaly NATO a organizátorům summitu, že součástí oficiální delegace České republiky je také prezident republiky, zajistily mu akreditaci a nebránily jeho účasti ani ji neztěžovaly. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-21](@/dossiers/jeronym-tejc/sources/src-21.md) |
+| <a id="clm-42"></a>[CLM-42](@/dossiers/jeronym-tejc/claims/clm-42.md) | Soudcem zpravodajem ve věci je Pavel Šámal; k rozhodnutí uplatnili odlišné stanovisko soudce Jan Wintr a soudkyně Řepková. Rozhodnutí bylo procesní povahy a nepředjímá výsledek sporu. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-21](@/dossiers/jeronym-tejc/sources/src-21.md) |
+| <a id="clm-43"></a>[CLM-43](@/dossiers/jeronym-tejc/claims/clm-43.md) | Ústavní soud avizoval, že kompetenční spor projedná v režimu přednostního projednání a konečné rozhodnutí lze očekávat v řádu měsíců. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-21](@/dossiers/jeronym-tejc/sources/src-21.md) [SRC-23](@/dossiers/jeronym-tejc/sources/src-23.md) |
+| <a id="clm-44"></a>[CLM-44](@/dossiers/jeronym-tejc/claims/clm-44.md) | Tejc při vyjádření ve sněmovně 2. července 2026, kdy zpochybnil oprávnění soudu vydat předběžné opatření, současně uvedl: „Přes tento nesouhlas já i vláda rozhodnutí Ústavního soudu respektujeme a naplníme ho.“ | <span class="status-badge status-quote">CITACE</span> | [SRC-22](@/dossiers/jeronym-tejc/sources/src-22.md) |
+| <a id="clm-45"></a>[CLM-45](@/dossiers/jeronym-tejc/claims/clm-45.md) | Tejc svou kritiku soudu tamtéž zarámoval slovy: „Máme zaručenu svobodu slova a nikdo není nekritizovatelný, tedy ani soudy nebo jejich rozhodnutí.“ Reagoval na interpelaci poslance Karla Dvořáka (STAN), který varoval před znevažováním justice. | <span class="status-badge status-quote">CITACE</span> | [SRC-22](@/dossiers/jeronym-tejc/sources/src-22.md) |
+| <a id="clm-46"></a>[CLM-46](@/dossiers/jeronym-tejc/claims/clm-46.md) | V téže debatě zaujal ostřejší pozici ministr zahraničí Petr Macinka (Motoristé), který rozhodnutí Ústavního soudu označil za „ústavní puč“ a za důkaz úpadku právní kultury — formulace výrazně ostřejší než Tejcova. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-22](@/dossiers/jeronym-tejc/sources/src-22.md) |
+| <a id="clm-47"></a>[CLM-47](@/dossiers/jeronym-tejc/claims/clm-47.md) | Ve vládním vyjádření z 20. července 2026 Tejc argumentuje, že zákon o Ústavním soudu s možností předběžného opatření u kompetenčních žalob nepočítá a že podpůrné využití občanského soudního řádu bylo chybou. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-23](@/dossiers/jeronym-tejc/sources/src-23.md) [SRC-24](@/dossiers/jeronym-tejc/sources/src-24.md) |
+| <a id="clm-48"></a>[CLM-48](@/dossiers/jeronym-tejc/claims/clm-48.md) | Vláda podle Tejce namítá i porušení práva být slyšen, protože se před vydáním předběžného opatření nemohla k žalobě vyjádřit; ministr uvedl: „Porušení práva na to být slyšen nám připadá velmi zásadní.“ | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-23](@/dossiers/jeronym-tejc/sources/src-23.md) [SRC-24](@/dossiers/jeronym-tejc/sources/src-24.md) |
+| <a id="clm-49"></a>[CLM-49](@/dossiers/jeronym-tejc/claims/clm-49.md) | Tejc k důsledkům prezidentova výkladu uvedl: „Přijetí výkladu pana prezidenta by znamenalo zásadní změnu fungování českého ústavního systému. Vzniklo by druhé mocenské centrum, které by na rozdíl od vlády bylo zcela neodpovědné a neodpovídalo by se Poslanecké sněmovně.“ | <span class="status-badge status-quote">CITACE</span> | [SRC-23](@/dossiers/jeronym-tejc/sources/src-23.md) |
+| <a id="clm-50"></a>[CLM-50](@/dossiers/jeronym-tejc/claims/clm-50.md) | Tejc svou pozici opřel i o tezi, že „Česká republika má pouze jednu zahraniční politiku, a ta nemůže být vedena souběžně vládou a prezidentem“. | <span class="status-badge status-quote">CITACE</span> | [SRC-24](@/dossiers/jeronym-tejc/sources/src-24.md) |
+| <a id="clm-51"></a>[CLM-51](@/dossiers/jeronym-tejc/claims/clm-51.md) | Soudcovská unie se 23. července 2026 vůči výrokům politiků o Ústavním soudu ohradila prohlášením: „Faktem je, že principy a lidé, na kterých česká justice stojí, dávají záruku její nezávislosti a nestrannosti.“ | <span class="status-badge status-quote">CITACE</span> | [SRC-25](@/dossiers/jeronym-tejc/sources/src-25.md) |
 ## Bitcoinová kauza resortu spravedlnosti {#kauza-bitcoin}
 
 Téma v autorizovaném rozsahu — viz tvrzení [CLM-02](@/dossiers/jeronym-tejc/claims/clm-02.md), [CLM-03](@/dossiers/jeronym-tejc/claims/clm-03.md), [CLM-04](@/dossiers/jeronym-tejc/claims/clm-04.md), [CLM-05](@/dossiers/jeronym-tejc/claims/clm-05.md), [CLM-06](@/dossiers/jeronym-tejc/claims/clm-06.md), [CLM-07](@/dossiers/jeronym-tejc/claims/clm-07.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
@@ -121,3 +215,15 @@ Téma v autorizovaném rozsahu — viz tvrzení [CLM-08](@/dossiers/jeronym-tejc
 ## Spor o předběžné opatření Ústavního soudu {#kauza-ustavni-soud}
 
 Téma v autorizovaném rozsahu — viz tvrzení [CLM-14](@/dossiers/jeronym-tejc/claims/clm-14.md), [CLM-15](@/dossiers/jeronym-tejc/claims/clm-15.md), [CLM-16](@/dossiers/jeronym-tejc/claims/clm-16.md), [CLM-17](@/dossiers/jeronym-tejc/claims/clm-17.md), [CLM-18](@/dossiers/jeronym-tejc/claims/clm-18.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
+
+## Bitcoinová kauza resortu spravedlnosti {#kauza-bitcoin}
+
+Téma v autorizovaném rozsahu — viz tvrzení [CLM-19](@/dossiers/jeronym-tejc/claims/clm-19.md), [CLM-20](@/dossiers/jeronym-tejc/claims/clm-20.md), [CLM-21](@/dossiers/jeronym-tejc/claims/clm-21.md), [CLM-22](@/dossiers/jeronym-tejc/claims/clm-22.md), [CLM-23](@/dossiers/jeronym-tejc/claims/clm-23.md), [CLM-24](@/dossiers/jeronym-tejc/claims/clm-24.md), [CLM-25](@/dossiers/jeronym-tejc/claims/clm-25.md), [CLM-26](@/dossiers/jeronym-tejc/claims/clm-26.md), [CLM-27](@/dossiers/jeronym-tejc/claims/clm-27.md), [CLM-28](@/dossiers/jeronym-tejc/claims/clm-28.md), [CLM-29](@/dossiers/jeronym-tejc/claims/clm-29.md), [CLM-30](@/dossiers/jeronym-tejc/claims/clm-30.md), [CLM-31](@/dossiers/jeronym-tejc/claims/clm-31.md), [CLM-32](@/dossiers/jeronym-tejc/claims/clm-32.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
+
+## Kárná žaloba v případu Viktorky {#kauza-viktorka}
+
+Téma v autorizovaném rozsahu — viz tvrzení [CLM-33](@/dossiers/jeronym-tejc/claims/clm-33.md), [CLM-34](@/dossiers/jeronym-tejc/claims/clm-34.md), [CLM-35](@/dossiers/jeronym-tejc/claims/clm-35.md), [CLM-36](@/dossiers/jeronym-tejc/claims/clm-36.md), [CLM-37](@/dossiers/jeronym-tejc/claims/clm-37.md), [CLM-38](@/dossiers/jeronym-tejc/claims/clm-38.md), [CLM-39](@/dossiers/jeronym-tejc/claims/clm-39.md), [CLM-40](@/dossiers/jeronym-tejc/claims/clm-40.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
+
+## Spor o předběžné opatření Ústavního soudu {#kauza-ustavni-soud}
+
+Téma v autorizovaném rozsahu — viz tvrzení [CLM-41](@/dossiers/jeronym-tejc/claims/clm-41.md), [CLM-42](@/dossiers/jeronym-tejc/claims/clm-42.md), [CLM-43](@/dossiers/jeronym-tejc/claims/clm-43.md), [CLM-44](@/dossiers/jeronym-tejc/claims/clm-44.md), [CLM-45](@/dossiers/jeronym-tejc/claims/clm-45.md), [CLM-46](@/dossiers/jeronym-tejc/claims/clm-46.md), [CLM-47](@/dossiers/jeronym-tejc/claims/clm-47.md), [CLM-48](@/dossiers/jeronym-tejc/claims/clm-48.md), [CLM-49](@/dossiers/jeronym-tejc/claims/clm-49.md), [CLM-50](@/dossiers/jeronym-tejc/claims/clm-50.md), [CLM-51](@/dossiers/jeronym-tejc/claims/clm-51.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.

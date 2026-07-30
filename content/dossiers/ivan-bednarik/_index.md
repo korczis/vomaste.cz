@@ -45,7 +45,6 @@ title = "V podcastu HN deklaruje záměr „chladit“ železniční trh — brz
 anchor = "kauza-zeleznicni-vydaje"
 dot = "dot-fact"
 subjects = ["bednarik"]
-
 [[extra.cases]]
 anchor = "kauza-rezignace-cd"
 period = "2022"

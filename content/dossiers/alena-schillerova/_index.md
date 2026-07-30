@@ -93,7 +93,6 @@ title = "Plánované hlasování Sněmovny o prezidentském vetu (25. srpna 2026
 anchor = "kauza-novela-rozpoctovych-pravidel"
 dot = "dot-fact"
 subjects = ["schillerova"]
-
 [[extra.cases]]
 anchor = "kauza-rozpoctova-pravidla"
 period = "2026"

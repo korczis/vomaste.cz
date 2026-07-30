@@ -3,7 +3,6 @@ title = "Smazané příspěvky na Facebooku"
 description = "Deník N zveřejnil údajné smazané příspěvky. Turek odmítá autorství těch nejzávažnějších."
 template = "dossier-case.html"
 weight = 3
-aliases = ["/dossier/kauzy/case-03/"]
 
 [extra]
 dossier = "macinka-turek"
@@ -16,13 +15,9 @@ status = "status-disputed"
 label = "Sporné, neuzavřeno"
 summary = "Deník N zveřejnil údajné smazané příspěvky. Turek odmítá autorství těch nejzávažnějších."
 claims = ["CLM-07", "CLM-08", "CLM-09", "CLM-19", "CLM-41", "CLM-42"]
-sources = ["SRC-15", "SRC-16", "SRC-21", "SRC-22", "SRC-47", "SRC-48"]
+sources = ["SRC-15", "SRC-16", "SRC-22", "SRC-21", "SRC-47", "SRC-48"]
 subjects = ["turek"]
 +++
 
-Tato stránka je kanonický záznam kauzy CASE-03 — období, stav, tvrzení a
-zdroje v tabulce výše i shrnutí nad tímto odstavcem jsou úplné.
-Autenticita příspěvků je sporná a Turek autorství těch nejzávažnějších
-popírá — to zůstává otevřené zde stejně jako na hlavní stránce dossieru,
-která zobrazuje tentýž text ze stejného zdroje (build proces ověřuje, že
-se neliší).
+Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu
+dossieru](@/dossiers/macinka-turek/_index.md#kauza-z-rijna-2025-smazane-prispevky-na-facebooku).

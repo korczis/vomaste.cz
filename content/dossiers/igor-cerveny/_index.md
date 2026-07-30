@@ -58,7 +58,6 @@ title = "Desetidenní cesta do USA (národní parky, Fox News, kritika Green Dea
 anchor = "kauza-majetkove-priznani"
 dot = "dot-fact"
 subjects = ["cerveny"]
-
 [[extra.cases]]
 anchor = "kauza-majetkove-priznani"
 period = "2026"

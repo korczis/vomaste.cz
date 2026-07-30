@@ -14,8 +14,8 @@ period = "2026"
 status = "status-single"
 label = "Sledované téma"
 summary = "Dotace na toustový chléb (Penam/Agrofert) — viz tvrzení CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07, CLM-08, CLM-09."
-claims = []
-sources = []
+claims = ["CLM-19", "CLM-20", "CLM-21", "CLM-22", "CLM-23", "CLM-24", "CLM-25", "CLM-26", "CLM-27", "CLM-28"]
+sources = ["SRC-11", "SRC-12", "SRC-13", "SRC-14", "SRC-16", "SRC-15"]
 subjects = ["havlicek"]
 +++
 

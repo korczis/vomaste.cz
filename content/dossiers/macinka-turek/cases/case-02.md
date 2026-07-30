@@ -3,7 +3,6 @@ title = "Trestní oznámení (domácí násilí, znásilnění)"
 description = "Bývalá partnerka viní Turka ze znásilnění a let násilí. Turek popírá. Případ odložen pro promlčení — ne pro nevinu."
 template = "dossier-case.html"
 weight = 2
-aliases = ["/dossier/kauzy/case-02/"]
 
 [extra]
 dossier = "macinka-turek"
@@ -20,10 +19,5 @@ sources = ["SRC-28", "SRC-29", "SRC-30", "SRC-31", "SRC-54"]
 subjects = ["turek"]
 +++
 
-Tato stránka je kanonický záznam kauzy CASE-02 — období, stav, tvrzení a
-zdroje v tabulce výše i shrnutí nad tímto odstavcem jsou úplné. Odložení
-věci pro promlčení je procesní výsledek, který znemožnil trestní stíhání
-kvůli uplynutí času — není to zjištění o tom, zda je obvinění pravdivé,
-nebo nepravdivé; to platí zde stejně jako na hlavní stránce dossieru,
-která zobrazuje tentýž text ze stejného zdroje (build proces ověřuje, že
-se neliší).
+Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu
+dossieru](@/dossiers/macinka-turek/_index.md#trestni-oznameni-obvineni-z-domaciho-nasili-a-znasilneni).

@@ -14,8 +14,8 @@ period = "2026"
 status = "status-single"
 label = "Sledované téma"
 summary = "Neodvysílaný rozhovor s prezidentem Pavlem — viz tvrzení CLM-08, CLM-09, CLM-10, CLM-11, CLM-12."
-claims = []
-sources = []
+claims = ["CLM-29", "CLM-30", "CLM-31"]
+sources = ["SRC-21", "SRC-27", "SRC-26"]
 subjects = ["zuna"]
 +++
 

@@ -51,7 +51,6 @@ title = "Vláda podpořila zákaz mobilů ve školách s účinností od září
 anchor = "kauza-testovani"
 dot = "dot-fact"
 subjects = ["plaga"]
-
 [[extra.cases]]
 anchor = "kauza-testovani"
 period = "2026"

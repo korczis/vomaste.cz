@@ -3,7 +3,6 @@ title = "Fotografie a sbírka svícnů"
 description = "Fotografie připomínající nacistický pozdrav a sbírka svícnů s hákovými kříži. Turek: „špatný humor.“"
 template = "dossier-case.html"
 weight = 1
-aliases = ["/dossier/kauzy/case-01/"]
 
 [extra]
 dossier = "macinka-turek"
@@ -20,7 +19,5 @@ sources = ["SRC-12", "SRC-14", "SRC-53"]
 subjects = ["macinka", "turek"]
 +++
 
-Tato stránka je kanonický záznam kauzy CASE-01 — období, stav, tvrzení a
-zdroje v tabulce výše i shrnutí nad tímto odstavcem jsou úplné. Hlavní
-stránka dossieru zobrazuje tentýž text ze stejného zdroje; build proces
-ověřuje, že se neliší.
+Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu
+dossieru](@/dossiers/macinka-turek/_index.md#kauza-z-roku-2024-fotografie-a-sbirka-svicnu).
