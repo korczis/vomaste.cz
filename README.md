@@ -150,6 +150,15 @@ interakce), Chart.js a Cytoscape.js (z CDN, jen na stránce dossieru).
 Statický web nemá žádný běhový backend; kritický obsah má no-JS
 fallback.
 
+Tabulární data v šablonách renderuje jednotná komponenta
+`templates/macros/table.html` (`table::advanced_table`, vlastní
+implementace podle vzoru Flowbite „Advanced Tables" nad volným
+Tailwindem/Flowbite), vynuceno branou `npm run lint:component-reuse`;
+obal tabulky nese `data-record-type` provazující řádky s JSON-LD uzly
+stránky. Data tabulek dnes pocházejí ze stejných front-matter/data
+zdrojů jako JSON-LD `@graph`; výhledovým **plánem** (neimplementováno)
+je DuckDB (`.mjs`) pipeline nad stejnými záznamy.
+
 ## Struktura repozitáře
 
 ```text
@@ -228,10 +237,11 @@ required fields, and contains no truth-rating markup.`
 | `npm run verify:anchors` | po buildu: každá kotva ze zdrojů existuje v HTML |
 | `npm run verify:jsonld` | po buildu: validita, pokrytí a poctivost JSON-LD (žádné truth ratingy) |
 | `npm run lint:historical-coupling` | de-specializační brána: žádná jména subjektů ve strukturálním kódu |
-| `npm run lint:component-reuse` | každá šablona (kromě `base.html`/`404.html`) používá `macros/ui.html` — žádný ručně psaný duplicitní markup místo sdílené komponenty |
+| `npm run lint:component-reuse` | každá šablona (kromě `base.html`/`404.html`) používá `macros/ui.html`, a každá šablona s tabulkou používá `macros/table.html` (`table::advanced_table`) — žádný ručně psaný duplicitní markup místo sdílené komponenty |
 | `node scripts/dossier/migrate-claims-to-pages.mjs` | přegenerovat stránky tvrzení z tabulky |
 | `node scripts/dossier/migrate-cases-to-pages.mjs` | přegenerovat stránky kauz z front matter |
 | `node scripts/dossier/tag-subjects.mjs` | orazítkovat záznamy poli `subjects` |
+| `npm run scaffold:dossier -- --slug=<slug> --title="<Jméno>"` | vygeneruje placeholder skeleton nového entity dossieru (registry adresáře, `graph.toml`, `updates.toml`) — odmítne běžet, pokud `<Jméno>` není v autorizačním logu `AGENTS.md`; nezapisuje do `data/dossiers.toml` |
 
 ## Přidání obsahu do dossieru
 

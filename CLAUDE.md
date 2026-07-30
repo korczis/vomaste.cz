@@ -37,7 +37,18 @@ entry; it does not replace reading and applying the rule.
   up" wording or fix a typo. A new scope extension is always a brand-new
   dated subsection, added only after the site owner has explicitly
   authorized it on the record in the current conversation — not inferred
-  from a request to "add more detail" or "cover X too."
+  from a request to "add more detail" or "cover X too." This applies at
+  any scale: a request to authorize many subjects at once (e.g. "the
+  whole cabinet", "everyone in party X") is the same rule, not a bulk
+  exception — every one of them needs their own named, dated, topic-
+  specific entry, never a blanket one. `scripts/dossier/authorize-entity.mjs`
+  (interactive-only, human-typed scope text, no non-interactive/CI path)
+  is the only thing that writes a new authorization entry;
+  `scripts/dossier/scaffold-entity-dossier.mjs` (`npm run scaffold:dossier`)
+  generates a new dossier's placeholder file structure afterward, and
+  itself refuses to run for anyone without a matching `AGENTS.md` entry —
+  scaffolding "just a placeholder" for an unauthorized subject is exactly
+  as out of scope as writing their claims directly.
 - Before reporting any dossier edit as done, run `npm run build`
   (`validate:dossier` → `css:build` → `js:build` → `zola build` →
   `verify:anchors`) and confirm it exits clean. The validator and
@@ -76,7 +87,13 @@ entry; it does not replace reading and applying the rule.
   no concrete, machine-checkable rules (a navigational index into
   Flowbite's docs, not a conformance spec). There is nothing there to
   honestly enforce. What IS real is this site's own established
-  component-reuse convention, which this gate protects. Don't describe
+  component-reuse convention, which this gate protects. Od 2026-07-30
+  brána navíc vynucuje jednotnou tabulkovou komponentu: šablona
+  obsahující `<table` mimo `macros/table.html` musí importovat
+  `macros/table.html` a použít `table::advanced_table` (výjimky jen
+  per-file s odůvodněním v `TABLE_EXEMPT`). Obal tabulky nese
+  `data-record-type` provazující řádky s JSON-LD uzly stránky; DuckDB
+  zdroj dat pro tabulky je jen plán, neimplementováno. Don't describe
   this gate as "Flowbite LLM page compliance" anywhere — that would be
   exactly the kind of claimed-but-not-real enforcement the constitution
   forbids (§8: a policy nothing enforces doesn't count as implemented —
