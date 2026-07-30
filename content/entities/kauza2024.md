@@ -21,5 +21,3 @@ cluster = "kauza-2024-fotografie"
 claims = ["CLM-04"]
 sources = ["SRC-12"]
 +++
-
-Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext.

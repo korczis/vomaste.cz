@@ -20,5 +20,3 @@ dossiers = ["macinka-turek", "filip-turek"]
 claims = ["CLM-11"]
 sources = ["SRC-06"]
 +++
-
-Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext.

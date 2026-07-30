@@ -21,5 +21,3 @@ cluster = "trestni-oznameni"
 claims = ["CLM-25"]
 sources = ["SRC-28"]
 +++
-
-Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext.

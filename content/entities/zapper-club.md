@@ -21,5 +21,3 @@ cluster = "zapper-club"
 claims = ["CLM-20", "CLM-31"]
 sources = ["SRC-23", "SRC-34"]
 +++
-
-Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext.

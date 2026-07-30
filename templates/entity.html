@@ -21,9 +21,19 @@
     <span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-white/40">coverage: {{ page.extra.coverage_state }}</span>
   </p>
 
+  {#- Vysvětlení, čím tahle stránka je, patří do šablony, ne do každého
+      z 23 souborů: text byl doslova stejný a jeho kopie by se rozešly.
+      Liší se jen podle publikační role, kterou nese front matter. -#}
   {% if page.extra.publication_role != "subject" %}
-  <div class="mb-6 rounded-lg border border-white/10 bg-white/[0.02] p-3 text-xs text-white/50">
-    Tato stránka agreguje pouze vazby zveřejněné v autorizovaných dossierech níže. Nejde o samostatný dossier této entity (stav: <strong>{% if page.extra.dossier_status == "authorized" %}autorizováno{% else %}neautorizováno{% endif %}</strong>) — viz <code>AGENTS.md</code> pro pravidla, za jakých smí kontextová entita v dossieru vůbec být. Vytvoření dossieru vyžaduje výslovné, datované rozhodnutí vlastníka webu, nikdy ne automatické odvození.
+  <div class="mb-6 rounded-lg border border-white/10 bg-white/[0.02] p-4 text-sm leading-relaxed text-white/60">
+    <p><strong class="text-white/80">Kontextová entita.</strong> Je tu proto, že se přímo objevuje v citovaném zpravodajství o autorizovaném tématu — ne proto, že by ji tenhle web zkoumal. Stránka agreguje výhradně vazby a záznamy zveřejněné v dossierech níže; <strong class="text-white/80">žádný profil nad rámec toho kontextu tu není a nevznikne</strong>.</p>
+    <p class="mt-2">Výskyt v seznamu není podezření ani hodnocení. Co která vazba skutečně tvrdí, je vidět u jednotlivých vztahů a tvrzení, každé s vlastním <a href="{{ get_url(path='@/koncepty/_index.md') | safe }}#stav" class="text-[#f3e5c0] underline">stavem doloženosti</a>.</p>
+    <p class="mt-2 text-xs text-white/40">Stav dossieru této entity: <strong class="text-white/60">{% if page.extra.dossier_status == "authorized" %}autorizováno{% else %}neautorizováno{% endif %}</strong>. Vlastní dossier vyžaduje výslovné, datované rozhodnutí vlastníka webu zapsané v <a href="{{ get_url(path='@/dokumentace/agents.md') | safe }}" class="text-[#f3e5c0] underline">autorizačním logu</a> — nikdy se neodvozuje automaticky z toho, že se entita často vyskytuje.</p>
+  </div>
+  {% else %}
+  <div class="mb-6 rounded-lg border border-[#f3e5c0]/25 bg-[#f3e5c0]/[0.04] p-4 text-sm leading-relaxed text-white/70">
+    <p><strong class="text-[#f3e5c0]">Subjekt autorizovaného dossieru.</strong> Tahle entita je hlavním předmětem alespoň jednoho dossieru — pokrytí je vymezené <a href="{{ get_url(path='@/dokumentace/agents.md') | safe }}" class="text-[#f3e5c0] underline">autorizačním logem</a>, který jmenuje konkrétní témata, ne osobu paušálně.</p>
+    <p class="mt-2">Tahle stránka je jen rozcestník po záznamech; souvislý přehled je v samotném dossieru. Web nerozhoduje o vině ani nevině — viz <a href="{{ get_url(path='@/koncepty/co-to-neni.md') | safe }}" class="text-[#f3e5c0] underline">co vomaste.cz není</a>.</p>
   </div>
   {% endif %}
 
@@ -70,9 +80,37 @@
       {% endif %}
   {{ table::advanced_table_end() }}
 
+  {%- if page.content | striptags | trim %}
   <article class="dossier-prose mb-8">
     {{ page.content | safe }}
   </article>
+  {%- endif %}
+
+  {#- Proč je entita v dossieru: vypsat tvrzení, která ji zmiňují, i s jejich
+      textem a stavem — dosud tu byly jen holé identifikátory v tabulce, takže
+      čtenář musel proklikat každý zvlášť, aby to zjistil. Text i stav se čtou
+      z registru tvrzení, nic se tu neformuluje znovu. -#}
+  {%- if page.extra.claims %}
+  <section class="mb-8" aria-labelledby="entity-claims-heading">
+    <h2 id="entity-claims-heading" class="mb-1 text-xs font-semibold uppercase tracking-wide text-white/40">Proč je tato entita v dossieru</h2>
+    <p class="mb-3 text-xs text-white/50">Tvrzení z registru, která ji zmiňují. Stav u každého říká, čím je doložené — ne jak je závažné.</p>
+    <ul class="space-y-2">
+      {%- for d in page.extra.dossiers %}
+      {%- set tvrzeni = get_section(path="dossiers/" ~ d ~ "/claims/_index.md") %}
+      {%- for c in page.extra.claims %}
+      {%- set clm = tvrzeni.pages | filter(attribute="extra.clm_id", value=c) | first %}
+      {%- if clm %}
+      <li class="rounded-lg border border-white/10 bg-white/[0.02] p-3 text-sm">
+        <a href="{{ clm.permalink | safe }}" class="id-chip font-mono text-xs font-bold text-[#f3e5c0] no-underline hover:underline">{{ clm.extra.clm_id }}</a>
+        <span class="status-badge {{ clm.extra.status }}">{{ clm.extra.status_label }}</span>
+        <span class="mt-1 block leading-relaxed text-white/75">{{ clm.extra.summary }}</span>
+      </li>
+      {%- endif %}
+      {%- endfor %}
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- endif %}
 
   {#- Relations are dossier-scoped (a dossier's own local graph); an entity
       that belongs to several dossiers has its incoming/outgoing relations

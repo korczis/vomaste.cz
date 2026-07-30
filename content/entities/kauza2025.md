@@ -21,5 +21,3 @@ cluster = "smazane-prispevky"
 claims = ["CLM-07"]
 sources = ["SRC-15"]
 +++
-
-Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext.

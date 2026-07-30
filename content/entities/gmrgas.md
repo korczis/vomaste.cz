@@ -21,5 +21,3 @@ cluster = "financni-vazby"
 claims = ["CLM-14"]
 sources = ["SRC-17"]
 +++
-
-Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext.
