@@ -263,7 +263,17 @@ function contextEntityNode(entityId, label, entityType) {
     name: page?.title ?? label ?? entityId,
   };
   if (entityType) node["vomaste:entityType"] = entityType;
-  if (page) node.url = abs(page.url);
+  if (page) {
+    node.url = abs(page.url);
+    // Fasety, podle kterých entity třídí registr entit v UI. Bez nich by
+    // prohlížeč musel skupiny odvozovat z něčeho jiného než z exportu —
+    // a „seskupeno podle role/dossieru" by nebylo doložitelné v datech,
+    // jen v šabloně. Zdroj je front matter stránky entity, tedy tentýž,
+    // ze kterého se generuje /data/entities.json.
+    if (page.publication_role) node["vomaste:publicationRole"] = page.publication_role;
+    const inDossier = (page.dossiers ?? []).map((slug) => ref(abs(`/dossiers/${slug}/`)));
+    if (inDossier.length) node["vomaste:inDossier"] = inDossier;
+  }
   return node;
 }
 

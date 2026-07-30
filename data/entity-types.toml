@@ -1,0 +1,60 @@
+# Slovník typů entit.
+#
+# Šablona registru entit (templates/entities-index.html) potřebuje pro
+# skupinu „Typ entity" lidský popisek — a ten se nesmí psát do šablony,
+# protože by z něj byla konstanta, kterou nikdo nepřepočítá, až v datech
+# přibude nový typ. Zdrojem pravdy o tom, jaké typy existují, zůstává
+# front matter stránek entit; tenhle soubor k nim jen doplňuje popisek.
+#
+# Vynucuje `scripts/dossier/validate-entity-types.mjs` (součást
+# `npm run build`): typ použitý v datech musí mít záznam tady a záznam
+# tady musí být v datech použitý. Mrtvý ani chybějící překlad tedy
+# neprojde buildem.
+#
+# `label` je název skupiny v množném čísle, jak se zobrazí v hlavičce
+# skupiny. `order` řídí pořadí jen tam, kde nerozhoduje počet.
+
+[[types]]
+id = "person"
+label = "Osoby"
+order = 1
+
+[[types]]
+id = "company"
+label = "Firmy"
+order = 2
+
+[[types]]
+id = "public_institution"
+label = "Veřejné instituce"
+order = 3
+
+[[types]]
+id = "political_party"
+label = "Politické strany"
+order = 4
+
+[[types]]
+id = "organization"
+label = "Organizace a spolky"
+order = 5
+
+[[types]]
+id = "controversy"
+label = "Kauzy"
+order = 6
+
+[[types]]
+id = "event"
+label = "Události"
+order = 7
+
+[[types]]
+id = "legal_or_administrative_process"
+label = "Právní a správní řízení"
+order = 8
+
+[[types]]
+id = "role"
+label = "Funkce a role"
+order = 9

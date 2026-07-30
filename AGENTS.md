@@ -268,6 +268,21 @@ on the exact anchor after the redirect, not just at the top of the page.
   `data/concept-groups.toml`; `scripts/dossier/validate-concepts.mjs`
   (part of `npm run build`) fails the build on an unknown group, a group
   with no pages, or a concept missing the fields its tile needs.
+- `templates/entities-index.html` — globální registr entit (`/entities/`)
+  jako průzkumník: hledání, seskupení (typ entity / dossier / role /
+  abecedně) a rozbalovací skupiny. Řádky renderuje Tera ze stejného front
+  matteru, ze kterého vzniká `/data/entities.json` i JSON-LD `@graph`, a
+  každý nese `data-jsonld-id` na svůj uzel v exportu — UI a strojová data
+  proto nemůžou ukazovat jiný svět. Skupiny nad těmi řádky staví
+  `assets/js/modules/entity-explorer.js` (Alpine, přesouvá existující DOM
+  uzly, nic nedogeneruje); otevírání menu „Seskupit podle" řídí Flowbite
+  dropdown, hodnotu Alpine — jedna komponenta, jeden vlastník na každou
+  věc. Bez JavaScriptu zůstává viditelný plný plochý seznam, takže
+  stránka funguje i tak. Stav (`?q=`, `?group=`, `?role=`) je v URL, takže
+  konkrétní pohled jde poslat odkazem. Lidské názvy typů entit žijí
+  v `data/entity-types.toml`; `scripts/dossier/validate-entity-types.mjs`
+  (součást `npm run build`) shodí build, když typ použitý v datech nemá
+  popisek nebo když popisek nemá v datech odpovídající entitu.
 - `templates/base.html` — shared layout; all `<meta>` (title, description,
   canonical, Open Graph) is declared once in front matter and rendered
   once here — do not hand-write `<meta>` tags elsewhere. It also carries the
