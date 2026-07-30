@@ -448,6 +448,11 @@ for (const c of tables.claims) {
     }));
   if (cited.length) claimSources[`${c.dossier}/${c.clm_id}`] = cited;
 }
+// data/generated/ is build output and gitignored, so it is absent from a
+// fresh checkout and from the site copies verify-export.test.mjs builds.
+// The generator creates its own output directory rather than depending on
+// some earlier pipeline step having run first.
+mkdirSync(dirname(CLAIM_SOURCES_OUT), { recursive: true });
 writeFileSync(CLAIM_SOURCES_OUT, JSON.stringify(claimSources, null, 1) + "\n");
 
 console.log(
