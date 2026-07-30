@@ -9,12 +9,25 @@
     page.title,
   ]) }}
 
+  {#- Redakční úvod z těla obálky (content/dokumentace/*.md): kontext, který
+      do samotného řídicího dokumentu nepatří — proč ho číst, co z něj je
+      závazné a co v něm naopak nehledat. Nikdy neopakuje jeho text; kanonická
+      kopie zůstává jediná, ta vykreslená níže. -#}
+  {%- if page.content %}
+  <aside class="mb-8 rounded-xl border border-white/10 bg-white/[0.03] p-5 dossier-prose" aria-label="Úvod k dokumentu">
+    {{ page.content | safe }}
+  </aside>
+  {%- endif %}
+
   <p class="mb-8 text-xs text-white/40">
-    Tato stránka je vykreslená přímo ze zdrojového souboru
+    Text níže je vykreslený přímo ze zdrojového souboru
     <code class="rounded bg-white/5 px-1.5 py-0.5">{{ page.extra.source_file }}</code>
     v repozitáři při buildu (Zola, build-time render — žádný klientský
     JavaScript) — jediná kanonická kopie textu, stejný soubor, jaký
-    vykresluje i GitHub. Historii změn viz Git.
+    vykresluje i GitHub.
+    <a class="underline hover:text-white/70" href="https://github.com/korczis/vomaste.cz/commits/master/{{ page.extra.source_file }}">historie změn</a>
+    ·
+    <a class="underline hover:text-white/70" href="https://github.com/korczis/vomaste.cz/blame/master/{{ page.extra.source_file }}">kdo co napsal</a>
   </p>
 
   <article class="dossier-prose">
