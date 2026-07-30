@@ -44,3 +44,33 @@ veřejné a trvalé. Podrobně:
 [bezpečnostní hranice](@/koncepty/bezpecnostni-hranice.md).
 
 Pozitivní vymezení najdeš na [co vomaste.cz je](@/koncepty/co-to-je.md).
+
+## Proč se to vymezuje takhle tvrdě
+
+Protože ke všem čtyřem věcem výše má takový web přirozený sklon. Registr
+kauz se snadno čte jako seznam viníků; graf vazeb vypadá jako důkaz; SQL
+konzole svádí spočítat „kdo má nejvíc tvrzení" a vydávat to za měřítko
+provinění. Nic z toho pravidla nezakazují náhodou — zakazují to proto, že
+by to vzniklo samo, kdyby se nepojmenovalo.
+
+Většina těch hranic je i vynucená: autorizační brána nepustí nový subjekt
+bez záznamu na řádku, validátor odmítne stav, který neodpovídá počtu
+zdrojů, a `verify:jsonld` shodí build, kdyby se do strukturovaných dat
+dostalo hodnocení pravdivosti.
+
+## Není to ani hotová věc
+
+Přehled je neúplný z principu — pokrývá jen to, co vyšlo ve jmenovaných
+zdrojích, a co chybí, je vypsané v
+[registru mezer](@/koncepty/registr-mezer.md). Části platformy, které
+neexistují (JSON-LD exportní routy, příspěvkové CLI, fork starter kit),
+jsou přiznané, ne inzerované jako „připravujeme".
+
+## Když s něčím nesouhlasíte
+
+Věcnou chybu — špatný zdroj, překroucené tvrzení, chybějící kontext — jde
+nahlásit jako [veřejnou issue](https://github.com/korczis/vomaste.cz/issues/new)
+a oprava zůstane dohledatelná v historii. Když nesouhlasíte s výběrem
+témat nebo s celým přístupem, je legitimní odpověď fork: kód i data jsou
+[public domain](@/koncepty/public-domain.md) právě proto, aby nesouhlas
+nemusel končit hádkou o tenhle web.

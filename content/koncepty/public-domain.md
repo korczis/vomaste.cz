@@ -34,3 +34,28 @@ nerelicencuje je a nemůže. Kdo přebírá obsah odsud, přebírá i tuhle hran
 Datový model čtyř registrů, validátory, které ho vynucují, šablony a build
 pipeline. Co zatím **neexistuje**: fork starter kit, příspěvkové CLI ani
 sémantický diff — viz [strojově čitelná data](@/koncepty/strojove-citelna-data.md).
+
+## Co licence neřeší
+
+Public domain je licence k **dílu**, ne povolení k čemukoli:
+
+- **Cizí práva.** Citované články, fotografie a jejich úryvky patří svým
+  vydavatelům. Že je odsud smíte zkopírovat technicky, neznamená, že je
+  smíte publikovat jako své.
+- **Osobní údaje.** Data popisují veřejné jednání veřejně činných osob a
+  vznikla pod pravidly, která to omezují (test veřejného zájmu,
+  nejmenování třetích stran). Ta pravidla licence nepřenáší — přebírá je
+  ten, kdo data převezme, jako vlastní odpovědnost.
+- **Kontext.** Vytržený řádek z `claims.json` bez stavu a bez zdroje je
+  přesně ten druh „faktu", proti kterému je celý web postavený.
+
+## Jak fork prakticky vypadá
+
+Naklonovat repozitář, smazat `content/dossiers/*` a `data/dossiers/*`,
+nechat si `templates/`, `scripts/` a `data/navigation.toml`, přidat vlastní
+dossier do `data/dossiers.toml` a spustit `npm run build`. Validátory vám
+řeknou, co chybí, dřív než cokoli publikujete — a autorizační brána
+nepustí subjekt, který není zapsaný na záznam.
+
+Instance zůstane vaše: nikde není hardcodovaný branding, žádné privátní
+API ani skryté know-how — to je záměr, ne náhoda.

@@ -44,3 +44,29 @@ Zranitelnosti webu se hlásí podle
 [SECURITY.md](https://github.com/korczis/vomaste.cz/blob/master/SECURITY.md).
 Citlivý nepublikovaný materiál patří redakci se skutečně zabezpečeným
 kanálem — ne sem.
+
+## Proč tohle není jen právní klauzule
+
+Většina webů má někde větu „neposílejte nám citlivé údaje" a přesto má
+formulář. Tady žádný formulář **není**, a to je ta podstatná část: kanál,
+který neexistuje, se nedá omylem použít. Rozdíl mezi „prosím neposílejte"
+a „nemáme kam" je celý rozdíl mezi slibem a hranicí.
+
+Druhý důvod je technický. Git nezapomíná: co se jednou objeví v commitu,
+přežívá ve forcích, cache a zrcadlech i po smazání. Chyba v úsudku „pošlu
+to a případně se to smaže" je proto **nevratná** — viz
+[verzováno v Gitu](@/koncepty/verzovano-v-gitu.md).
+
+## Co o vás web ví
+
+Sám o sobě nic: je to statické HTML bez analytiky, bez cookies, bez
+serverové části, která by cokoli logovala. I
+[SQL konzole](@/data/_index.md) běží celá ve vašem prohlížeči — dotaz se
+nikam neposílá.
+
+To ale neznamená anonymitu. Stránky servíruje GitHub Pages a část
+prostředků (Chart.js, WASM pro konzoli) se stahuje z jsDelivr; oba vidí
+vaši IP adresu a hlavičky prohlížeče, stejně jako u kteréhokoli jiného
+webu. Projekt to nijak neovlivňuje a nebude předstírat opak. Kdo potřebuje
+skutečnou anonymitu, ať použije nástroje, které ji poskytují — tenhle web
+mezi ně nepatří.

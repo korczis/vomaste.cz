@@ -37,3 +37,30 @@ zrcadlech i po smazání — což je přesně důvod pro
 nepatří žádný citlivý nepublikovaný materiál.
 
 Repozitář: [github.com/korczis/vomaste.cz](https://github.com/korczis/vomaste.cz).
+
+## Jak si historii otevřít z konkrétní stránky
+
+Nemusíte hledat v repozitáři. **Každá stránka** má v patičce dva odkazy:
+„navrhnout opravu" vede na editaci právě toho zdrojového souboru a
+„historie změn" na jeho commit log. Z tvrzení se tedy dostanete k jeho
+diffu na dvě kliknutí — kdo ho psal, kdy, co přesně se změnilo a s jakým
+odůvodněním v commit message.
+
+## Co Git dokazuje a co ne
+
+Dokazuje, **co web tvrdil a kdy**: že se formulace nezměnila potichu a že
+odstraněný odstavec tam byl. Nedokazuje, že citovaný zdroj mluvil pravdu,
+ani že text zdroj vystihuje — to je otázka čtení proti odkazu, viz
+[fakt odděleně od názoru](@/koncepty/fakt-oddelene-od-nazoru.md).
+Historie taky není důkaz, kdo změnu skutečně napsal: commity nejsou
+kryptograficky podepsané a autorství je jen údaj v metadatech.
+
+## Reprodukovatelnost, ne jen archiv
+
+Celý web je z repozitáře **znovu sestavitelný** jedním příkazem
+(`npm run build`) — validátory, generátory i statické HTML. Nezáleží tedy
+jen na tom, že je historie vidět; jde ji i spustit a porovnat, jestli
+publikovaná stránka odpovídá datům, ze kterých měla vzniknout. To je
+praktický rozdíl mezi „máme archiv" a
+[public domain toolkitem](@/koncepty/public-domain.md), který si kdokoli
+odnese.

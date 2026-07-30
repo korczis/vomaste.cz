@@ -46,3 +46,31 @@ postavit vlastní — ne přesvědčovat autora.
 
 Co tenhle web naopak není, je popsané zvlášť:
 [co vomaste.cz není](@/koncepty/co-to-neni.md).
+
+## Jak si to ověřit za tři minuty
+
+Nemusíte věřit ani téhle stránce. Zkuste tohle:
+
+1. Otevřete libovolné tvrzení a klikněte na jeho zdroj — dostanete se
+   na původní článek, ne na další stránku tohohle webu.
+2. V patičce té stránky dejte „historie změn" — uvidíte, kdy vznikla a co
+   se v ní kdy změnilo.
+3. Na [/data/](@/data/_index.md) si spusťte `SELECT status_label,
+   count(*) FROM claims GROUP BY 1` a porovnejte s čísly, která web sám
+   ukazuje.
+
+Když některý z těch tří kroků nevyjde, je to vada — a dá se nahlásit.
+
+## Pro koho to je
+
+Pro čtenáře, kterému nestačí „bylo to v médiích", a pro novináře nebo
+výzkumníka, který potřebuje strukturovaný přehled s dohledatelnými zdroji
+místo dvaceti otevřených záložek. A pro kohokoli, kdo chce ten aparát
+použít na vlastní téma — proto je celý
+[public domain](@/koncepty/public-domain.md).
+
+## Co z toho plyne pro čtení
+
+Že se tenhle web nedá číst jako článek se závěrem. Nemá pointu; má
+registry, stavy a mezery. Kdo hledá verdikt, nenajde ho — kdo hledá, co je
+čím doloženo, dostane to i s tím, co doloženo není.
