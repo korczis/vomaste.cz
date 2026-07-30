@@ -98,6 +98,11 @@
   /* Zola's markdown output has no wrapper around <table> — without this,
      wide registry tables (4+ columns of Czech prose) force the whole page
      to scroll horizontally on mobile instead of just the table. */
+  /* Dlouhý řádek v kódu (příkaz, JSON) roztahoval celou stránku — např.
+     /dokumentace/koop-protokol/ přetékal při 1280 px. Blok scrolluje sám. */
+  .dossier-prose pre { overflow-x: auto; max-width: 100%; -webkit-overflow-scrolling: touch; }
+  .dossier-prose code { overflow-wrap: anywhere; }
+  .dossier-prose pre code { overflow-wrap: normal; white-space: pre; }
   .dossier-prose table { display: block; overflow-x: auto; max-width: 100%; width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.875rem; -webkit-overflow-scrolling: touch; }
   .dossier-prose th, .dossier-prose td { border: 1px solid var(--border); padding: 0.5rem 0.75rem; text-align: left; }
   .dossier-prose th { background: var(--surface-elevated-hover); font-weight: 600; }

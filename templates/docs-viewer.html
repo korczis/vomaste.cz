@@ -32,7 +32,26 @@
 
   <article class="dossier-prose">
     {%- set raw = load_data(path=page.extra.source_file, format="plain") -%}
-    {%- set rendered = raw | markdown(inline=false) -%}
+    {%- set_global rendered = raw | markdown(inline=false) -%}
+    {#- Nadpisy dokumentu posunout o úroveň níž: stránka už jeden <h1> má
+        (page_header), takže vlastní `# Nadpis` zdrojového souboru by z ní
+        udělal stránku se dvěma h1 — což crawl našel na všech deseti. -#}
+    {%- set shifts = ["5::6", "4::5", "3::4", "2::3", "1::2"] -%}
+    {%- for pair in shifts -%}
+      {%- set lv = pair | split(pat="::") -%}
+      {%- set_global rendered = rendered
+            | replace(from="<h" ~ lv.0, to="<h" ~ lv.1)
+            | replace(from="</h" ~ lv.0 ~ ">", to="</h" ~ lv.1 ~ ">") -%}
+    {%- endfor -%}
+    {#- Odkazy mezi řídicími dokumenty jsou v repozitáři relativní (correct na
+        GitHubu, 404 pod /dokumentace/). Mapa se skládá z této sekce, takže
+        přidání dalšího dokumentu nevyžaduje zásah sem. -#}
+    {%- set docs = get_section(path="dokumentace/_index.md") -%}
+    {%- for d in docs.pages -%}
+      {%- set base = d.extra.source_file | split(pat="/") | last -%}
+      {%- set_global rendered = rendered | replace(from='href="' ~ base ~ '"', to='href="' ~ d.permalink ~ '"') -%}
+      {%- set_global rendered = rendered | replace(from='href="' ~ d.extra.source_file ~ '"', to='href="' ~ d.permalink ~ '"') -%}
+    {%- endfor -%}
     {#- The source files link to each other by their repo-root relative
         path (e.g. `[AGENTS.md](AGENTS.md)`), correct on GitHub but wrong
         once rendered under /dokumentace/<slug>/. Rewrite exactly the
@@ -40,7 +59,7 @@
         leaving them 404 or maintaining a second copy of the text with
         different links. Extend this list if a new doc page is added
         here and another source file links to it by relative path. -#}
-    {%- set rendered = rendered | replace(from='href="AGENTS.md"', to='href="' ~ get_url(path="@/dokumentace/agents.md") ~ '"') -%}
+    {%- set_global rendered = rendered | replace(from='href="AGENTS.md"', to='href="' ~ get_url(path="@/dokumentace/agents.md") ~ '"') -%}
     {%- set rendered = rendered | replace(from='href="CONTRIBUTING.md"', to='href="' ~ get_url(path="@/dokumentace/prispivani.md") ~ '"') -%}
     {%- set rendered = rendered | replace(from='href="SECURITY.md"', to='href="' ~ get_url(path="@/dokumentace/bezpecnost.md") ~ '"') -%}
     {%- set rendered = rendered | replace(from='href="LICENSE.md"', to='href="' ~ get_url(path="@/dokumentace/licence.md") ~ '"') -%}
