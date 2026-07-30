@@ -1,0 +1,80 @@
+# Relationship graph for the Richard Chlad dossier. Projection of the
+# claim/source registries — every edge carries a CLM-## and SRC-## that
+# exist there.
+#
+# Radovan Krejčíř is deliberately NOT a node. The reported acquaintance
+# is an attributed descriptive detail in one profile (CLM-08), it is
+# personal and historical rather than financial or political, and his
+# coverage was explicitly refused on the record (AGENTS.md, "Not
+# authorized: Radovan Krejčíř"). Giving him a graph node would make a
+# passing biographical mention look like a mapped relationship.
+#
+# Depths follow the canonical global entity pages: motoriste is depth 1
+# there, so it is depth 1 here — a shared context entity must carry the
+# same depth in every graph that names it.
+
+[[nodes]]
+id = "chlad"
+type = "person"
+label = "Richard Chlad"
+depth = 0
+subject = true
+claims = ["CLM-01", "CLM-07"]
+sources = ["SRC-01", "SRC-02"]
+
+[[nodes]]
+id = "motoriste"
+type = "political_party"
+label = "Motoristé sobě"
+depth = 1
+subject = false
+claims = ["CLM-01", "CLM-02", "CLM-03", "CLM-04"]
+sources = ["SRC-01", "SRC-02", "SRC-03"]
+
+[[nodes]]
+id = "turek"
+type = "person"
+label = "Filip Turek"
+depth = 1
+subject = false
+claims = ["CLM-05"]
+sources = ["SRC-03"]
+
+[[nodes]]
+id = "macinka"
+type = "person"
+label = "Petr Macinka"
+depth = 1
+subject = false
+claims = ["CLM-04", "CLM-06"]
+sources = ["SRC-03"]
+
+[[edges]]
+id = "edge-chlad-motoriste-dary"
+source = "chlad"
+target = "motoriste"
+relation = "DONATED_TO"
+label = "evidováno 638 864 Kč za rok 2025 včetně nepeněžního plnění; veřejně uváděná čísla se liší"
+status = "contextual"
+claims = ["CLM-01", "CLM-02"]
+sources = ["SRC-01", "SRC-02"]
+
+[[edges]]
+id = "edge-turek-chlad-reakce"
+source = "turek"
+target = "chlad"
+relation = "RESPONDED_TO"
+label = "veřejně uvedl, že jeho roli v podpoře strany zpravodajství přeceňuje"
+status = "contextual"
+claims = ["CLM-05"]
+sources = ["SRC-03"]
+
+[[edges]]
+id = "edge-macinka-chlad-reakce"
+source = "macinka"
+target = "chlad"
+relation = "RESPONDED_TO"
+label = "veřejně uvedl nižší částku a odmítl, že by byl ideologem strany"
+status = "contextual"
+claims = ["CLM-04", "CLM-06"]
+sources = ["SRC-03"]

@@ -201,3 +201,12 @@ dossier_type = "entity"
 subject = "faltynek"
 canonical_dossier = "jaroslav-faltynek"
 show_in_primary_navigation = true
+
+[[dossiers]]
+# AGENTS.md AUTH-2026-07-30-W (Richard Chlad).
+slug = "richard-chlad"
+title = "Richard Chlad"
+dossier_type = "entity"
+subject = "chlad"
+canonical_dossier = "richard-chlad"
+show_in_primary_navigation = true

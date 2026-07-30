@@ -16,7 +16,7 @@ dossier_status = "not_authorized"
 coverage_state = "contextual"
 discovered_at = "2026-07-29"
 discovered_via = ["edge-macinka-motoriste", "edge-turek-motoriste", "edge-motoriste-vlada", "edge-klubmotoristu-motoriste", "edge-chlad-motoriste"]
-dossiers = ["macinka-turek", "petr-macinka", "filip-turek"]
-claims = ["CLM-03"]
-sources = ["SRC-11"]
+dossiers = ["macinka-turek", "petr-macinka", "filip-turek", "richard-chlad"]
+claims = ["CLM-03", "CLM-01", "CLM-02", "CLM-04"]
+sources = ["SRC-11", "SRC-01", "SRC-02", "SRC-03"]
 +++

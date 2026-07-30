@@ -1,0 +1,12 @@
+# Auditable update history for "Richard Chlad" (content/dossiers/richard-chlad/).
+# Append-only: each entry records what was *actually* checked and changed
+# on that date -- never claim a change that didn't happen.
+
+[[updates]]
+date = "2026-07-30"
+reviewed_sources = ["SRC-01", "SRC-02", "SRC-03"]
+added_claims = ["CLM-01", "CLM-02", "CLM-03", "CLM-04", "CLM-05", "CLM-06", "CLM-07", "CLM-08"]
+updated_claims = []
+added_gaps = ["GAP-01", "GAP-02"]
+closed_gaps = []
+summary = "Založen dossier dle AUTH-2026-07-30-W ze tří zdrojů dříve otevřených a přečtených pro dossier macinka-turek (Hlídač státu, CNN Prima News 2025-10-16, Aktuálně.cz 2026-03-17). Základ veřejného zájmu je financování stran, ne osobní vazby. Klíčové rámování: darovat straně je legální a žádný zdroj Chladovi nevytýká protiprávní jednání; veřejně uváděná čísla (638 864 Kč / „necelé dva miliony“ / ~1,5 mil. / 2× 50 tis.) se LIŠÍ, ale NEJSOU přímo porovnatelná — různá období a různé vymezení podpory → GAP-01; není doloženo, že by cokoli nebylo řádně vykázáno → GAP-02. Radovan Krejčíř zůstává mimo graf i mimo témata (viz „Not authorized“ v AGENTS.md)."

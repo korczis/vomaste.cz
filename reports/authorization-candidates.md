@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 41 context entities across 21 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 40 context entities across 22 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## Agrofert (`agrofert`)
 
@@ -61,17 +61,6 @@ Generated from 41 context entities across 21 dossier(s). Regenerate with `npm ru
 - Relations: 
   - edge-babis-capihnizdo (babis -> capi-hnizdo, "obžalovaný; stíhání přerušeno po nevydání Sněmovnou — procesní krok, ne rozhodnutí o vině", dossier: andrej-babis)
   - edge-faltynek-capihnizdo (faltynek -> capi-hnizdo, "stíhán 2015–2018; stíhání zrušeno státním zástupcem", dossier: jaroslav-faltynek)
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Richard Chlad (sponzor) (`chlad`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: macinka-turek, petr-macinka, filip-turek
-- Claims: CLM-36
-- Sources: SRC-41 (1 independent source family)
-- Relations: 
-  - edge-chlad-motoriste (chlad -> motoriste, "dar 638 864 Kč (2025, oficiálně) vs. tvrzené ~2 mil. Kč", dossier: macinka-turek)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Evropský parlament (`ep`)
@@ -222,15 +211,16 @@ Generated from 41 context entities across 21 dossier(s). Regenerate with `npm ru
 
 - Type: political_party
 - Status: not_authorized
-- Appears in: macinka-turek, petr-macinka, filip-turek
-- Claims: CLM-03
-- Sources: SRC-11 (1 independent source family)
+- Appears in: macinka-turek, petr-macinka, filip-turek, richard-chlad
+- Claims: CLM-03, CLM-01, CLM-02, CLM-04
+- Sources: SRC-11, SRC-01, SRC-02, SRC-03 (4 independent source families)
 - Relations: 
   - edge-chlad-motoriste (chlad -> motoriste, "dar 638 864 Kč (2025, oficiálně) vs. tvrzené ~2 mil. Kč", dossier: macinka-turek)
   - edge-klubmotoristu-motoriste (klubmotoristu -> motoriste, "dar 800 000 Kč (2024)", dossier: macinka-turek)
   - edge-macinka-motoriste (macinka -> motoriste, "předseda", dossier: macinka-turek)
   - edge-motoriste-vlada (motoriste -> vlada, "člen koalice", dossier: macinka-turek)
   - edge-turek-motoriste (turek -> motoriste, "poslanec za", dossier: macinka-turek)
+  - edge-chlad-motoriste-dary (chlad -> motoriste, "evidováno 638 864 Kč za rok 2025 včetně nepeněžního plnění; veřejně uváděná čísla se liší", dossier: richard-chlad)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Ministerstvo zdravotnictví (`mzdrav`)
