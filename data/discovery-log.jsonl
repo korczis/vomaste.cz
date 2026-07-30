@@ -72,3 +72,5 @@
 {"logged_at":"2026-07-30","record_id":"spd","record_type":"entity","discovered_from":{"claims":["CLM-01","CLM-02"],"sources":["SRC-01"],"dossiers":["tomio-okamura"]},"action":"created"}
 {"logged_at":"2026-07-30","record_id":"edge-babis-agrofert","record_type":"relation","discovered_from":{"source_entity":"babis","target_entity":"agrofert","claims":["CLM-04","CLM-05","CLM-06"],"sources":["SRC-02"],"dossier":"andrej-babis"},"action":"created"}
 {"logged_at":"2026-07-30","record_id":"edge-okamura-spd","record_type":"relation","discovered_from":{"source_entity":"okamura","target_entity":"spd","claims":["CLM-02"],"sources":["SRC-01"],"dossier":"tomio-okamura"},"action":"created"}
+{"logged_at":"2026-07-30","record_id":"nku","record_type":"entity","discovered_from":{"claims":["CLM-01","CLM-03"],"sources":["SRC-01"],"dossiers":["lubomir-metnar"]},"action":"created"}
+{"logged_at":"2026-07-30","record_id":"edge-metnar-nku","record_type":"relation","discovered_from":{"source_entity":"metnar","target_entity":"nku","claims":["CLM-01","CLM-02","CLM-03"],"sources":["SRC-01"],"dossier":"lubomir-metnar"},"action":"created"}

@@ -70,6 +70,15 @@ canonical_dossier = "tomio-okamura"
 show_in_primary_navigation = true
 
 [[dossiers]]
+# AGENTS.md AUTH-2026-07-30-B (five government members).
+slug = "lubomir-metnar"
+title = "Lubomír Metnar"
+dossier_type = "entity"
+subject = "metnar"
+canonical_dossier = "lubomir-metnar"
+show_in_primary_navigation = true
+
+[[dossiers]]
 slug = "macinka-turek"
 title = "Petr Macinka a Filip Turek"
 dossier_type = "aggregate"

@@ -1,0 +1,30 @@
+# Relationship graph for the Lubomír Metnar dossier. Projection of the
+# claim/source registries; every edge carries a CLM-## and SRC-##.
+
+[[nodes]]
+id = "metnar"
+type = "person"
+label = "Lubomír Metnar"
+depth = 0
+subject = true
+claims = ["CLM-02"]
+sources = ["SRC-01"]
+
+[[nodes]]
+id = "nku"
+type = "public_institution"
+label = "Nejvyšší kontrolní úřad"
+depth = 1
+subject = false
+claims = ["CLM-01", "CLM-03"]
+sources = ["SRC-01"]
+
+[[edges]]
+id = "edge-metnar-nku"
+source = "metnar"
+target = "nku"
+relation = "RESPONDED_TO"
+label = "návrh ukončit policejní ochranu úřadu (2026)"
+status = "disputed"
+claims = ["CLM-01", "CLM-02", "CLM-03"]
+sources = ["SRC-01"]

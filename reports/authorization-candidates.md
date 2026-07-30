@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 33 context entities across 7 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 33 context entities across 8 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## Agrofert (`agrofert`)
 
@@ -143,16 +143,6 @@ Generated from 33 context entities across 7 dossier(s). Regenerate with `npm run
   - edge-macinka-klubmotoristu (macinka -> klubmotoristu, "statutární orgán", dossier: macinka-turek)
 - Missing: explicit owner authorization to promote this to its own dossier
 
-## Lubomír Metnar (ministr vnitra) (`metnar`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: —
-- Claims: none
-- Sources: none (0 independent source families)
-- Relations: none
-- Missing: explicit owner authorization to promote this to its own dossier
-
 ## Motoristé sobě (`motoriste`)
 
 - Type: political_party
@@ -227,6 +217,17 @@ Generated from 33 context entities across 7 dossier(s). Regenerate with `npm run
 - Sources: SRC-20 (1 independent source family)
 - Relations: 
   - edge-homolce-nehoda2026 (nemocnice-homolce -> nehoda2026, "provozovatel vozidla záchranné služby", dossier: macinka-turek)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Nejvyšší kontrolní úřad (`nku`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: lubomir-metnar
+- Claims: CLM-01, CLM-03
+- Sources: SRC-01 (1 independent source family)
+- Relations: 
+  - edge-metnar-nku (metnar -> nku, "návrh ukončit policejní ochranu úřadu (2026)", dossier: lubomir-metnar)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Petr Pavel (prezident) (`pavel`)

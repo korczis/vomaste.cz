@@ -1,34 +1,27 @@
 +++
-title = "Lubomír Metnar (ministr vnitra)"
-description = "Lubomír Metnar — ministr vnitra (Třetí vláda Andreje Babiše, stav k 2026-07-30). Kontextový záznam veřejné funkce z oficiálního zdroje, ne dossier."
+title = "Lubomír Metnar"
 template = "entity.html"
-weight = 28
+weight = 1
+aliases = ["/dossiers/lubomir-metnar/entities/metnar/"]
 
 [extra]
 record_type = "entity"
 entity_id = "metnar"
 entity_type = "person"
-subject = false
-publication_role = "context"
-dossier_enabled = false
-dossier_status = "not_authorized"
-coverage_state = "referenced"
+depth = 0
+subject = true
+publication_role = "subject"
+dossier_enabled = true
+dossier_status = "authorized"
+coverage_state = "full"
 discovered_at = "2026-07-30"
-discovered_via = ["government-roster-2026-07-30"]
-dossiers = []
-claims = []
-sources = []
+discovered_via = ["edge-metnar-nku"]
+dossiers = ["lubomir-metnar"]
+claims = ["CLM-02"]
+sources = ["SRC-01"]
 government_office = "ministr vnitra"
 government_party = "ANO"
 government_snapshot = "2026-07-30"
 +++
 
-Kontextová entita ze složení vlády — uvedena proto, že podle oficiálního
-seznamu členů vlády (Třetí vláda Andreje Babiše, ověřeno 2026-07-30 na
-<https://vlada.gov.cz/cz/vlada/clenove-vlady/>) zastává veřejnou funkci **ministr vnitra**.
-
-Tato stránka **není dossier**. Zaznamenává výhradně veřejnou funkci z
-oficiálního zdroje — žádné tvrzení, obvinění, kauzu ani hodnocení. Rozsah
-pokrytí kterékoli reálné osoby na tomto webu určuje výhradně append-only
-autorizační log v `AGENTS.md`; přítomnost v tomto seznamu na něm nic
-nemění a sama o sobě nikdy nevede k dossieru.
+Hlavní subjekt autorizovaného dossieru. Viz plné znění a kontext v [hlavním přehledu](@/dossiers/lubomir-metnar/_index.md#kdo).
