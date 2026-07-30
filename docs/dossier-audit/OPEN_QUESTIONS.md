@@ -12,7 +12,9 @@ mezitím přesunuty dolů do „Vyřešeno“, ať je vidět skutečná fronta.
 1. **[P1] GAP-06 — výsledek stížnosti** proti odložení z 5/2026.
    Snippet vyhledávače 2× tvrdil zamítnutí, žádný inspekcí ověřitelný
    článek to nepotvrdil — správně mimo dossier. **První kontrola každého
-   dalšího rešeršního kola.**
+   dalšího rešeršního kola.** *(Re-check 2026-07-30: snippet totéž tvrdí
+   potřetí, dohledané články jsou stále jen květnové/červencové texty o
+   odložení — o stížnosti nic. Beze změny.)*
 2. **[P1] Rozdělení složených tvrzení** — CLM-03 (4 biografická fakta),
    CLM-18 (vzdání imunity + dechová zkouška + zranění řidiče). Provést
    při/po migraci T-001, nová ID, nikdy recyklace.
@@ -20,6 +22,11 @@ mezitím přesunuty dolů do „Vyřešeno“, ať je vidět skutečná fronta.
    2139584, 28. 7. 2026: část výroků amorální-ale-legální, část trestná-
    ale-promlčená; titulek „K tomu skutku došlo“). Jediný, částečně
    paywallovaný zdroj — doplnit až po plné inspekci nebo s druhým zdrojem.
+   *(Ověřeno 2026-07-30: druhý zdroj neexistuje — Echo24 HBtn6 i
+   ČeskéNoviny 2855833 (obojí 28. 7., přebírají iROZHLAS/ČTK) nesou jen
+   Vychytovu citaci k pomluvě „skutek není trestným činem" +
+   nepravomocnost, diferenciaci výroků ne. Blokováno na plnou inspekci
+   Deníku N — vyžaduje předplatné, tj. akci vlastníka.)*
 4. **[P2] CLM-20/22 „je/byl“** — rozlišit současné vs. bývalé angažmá po
    firmách proti ARES (základ v GAP-04 existuje).
 5. **[P2] CLM-12 kaveát nezávislosti** — ČT24 + iROZHLAS relay „dle
