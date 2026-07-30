@@ -1,6 +1,6 @@
 +++
 title = "Registr kauz"
-description = "TODO: registr kauz pro Andrej Babiš -- doplnit po přidání prvního záznamu."
+description = "Registr kauz dossieru — každý záznam odkazuje na svou zdrojovou stránku."
 template = "dossier-cases-index.html"
 sort_by = "weight"
 
@@ -10,4 +10,3 @@ lang = "cs"
 seo_type = "CollectionPage"
 +++
 
-TODO: zatím žádné záznamy. 

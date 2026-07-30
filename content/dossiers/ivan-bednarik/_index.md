@@ -17,13 +17,32 @@ updated = "2026-07-30"
 reviewed_at = "2026-07-30"
 
 
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-B"]
+
 [[extra.timeline]]
-date = "2022-02-15"
-title = "Rezignace na post generálního ředitele Českých drah"
-anchor = "kauza-rezignace-cd"
+date = "2025-12"
+title = "Jako nový ministr dopravy označuje rozpočet SFDI a financování dopravy na roky 2026–2029 za absolutní prioritu; upozorňuje na chybějících 37,2 mld. Kč"
+anchor = "kauza-zeleznicni-vydaje"
+dot = "dot-fact"
+subjects = ["bednarik"]
+
+[[extra.timeline]]
+date = "2026-02"
+title = "Veřejně odmítá plné financování VRT z národních zdrojů (100 mld. Kč ročně navíc) s poukazem na priority rozpočtu"
+anchor = "kauza-zeleznicni-vydaje"
+dot = "dot-fact"
+subjects = ["bednarik"]
+
+[[extra.timeline]]
+date = "2026-04"
+title = "V rozhovoru uvádí rozpočet SFDI 169,3 mld. Kč na rok 2026 a prioritu stabilního financování a dokončování rozestavěných staveb"
+anchor = "kauza-zeleznicni-vydaje"
+dot = "dot-fact"
+subjects = ["bednarik"]
+
+[[extra.timeline]]
+date = "2026-05"
+title = "V podcastu HN deklaruje záměr „chladit“ železniční trh — brzdit masivní investice a nákupy vlaků"
+anchor = "kauza-zeleznicni-vydaje"
 dot = "dot-fact"
 subjects = ["bednarik"]
 
@@ -37,6 +56,26 @@ summary = "Bednárik v únoru 2022 rezignoval na funkci generálního ředitele 
 claims = ["CLM-02", "CLM-03", "CLM-04"]
 subjects = ["bednarik"]
 
+[[extra.cases]]
+anchor = "kauza-zeleznicni-vydaje"
+period = "2026"
+title = "Resortní pozice k výdajům na železnici"
+status = "status-single"
+label = "Sledované téma"
+summary = "Resortní pozice k výdajům na železnici — viz tvrzení CLM-05, CLM-06, CLM-07, CLM-08, CLM-09, CLM-10."
+claims = ["CLM-05", "CLM-06", "CLM-07", "CLM-08", "CLM-09", "CLM-10"]
+subjects = ["bednarik"]
+
+[extra.authorization]
+authorized = true
+record_ids = ["AUTH-2026-07-30-B"]
+[[extra.timeline]]
+date = "2022-02-15"
+title = "Rezignace na post generálního ředitele Českých drah"
+anchor = "kauza-rezignace-cd"
+dot = "dot-fact"
+subjects = ["bednarik"]
+
 +++
 
 Ivan Bednárik je ministrem dopravy ve třetí vládě Andreje Babiše (viz
@@ -48,16 +87,15 @@ reportovaných sporech o požadované úspory a platby za pozemky Správě
 železnic, a jeho publikované pozice ministra k výdajům na železničním
 trhu.
 
-**Aktuální stav dossieru**: založený skeleton s jediným
-foundačním tvrzením (CLM-01: zastávaná funkce podle oficiálního profilu
-na vlada.gov.cz, otevřeno a přečteno 2026-07-30 — SRC-01). Témata z
-autorizovaného rozsahu výše zatím zpracována nejsou. Autorizace definuje rozsah,
-necertifikuje reportáže: každý citovaný zdroj musí být před zapsáním
-jakéhokoli tvrzení skutečně otevřen a přečten. Do té doby tento dossier
-žádné tvrzení neobsahuje.
+**Aktuální stav dossieru**: autorizovaná témata rozpracována — tvrzení vycházejí výhradně ze zdrojů otevřených a přečtených 2026-07-30 (viz registr zdrojů); co se doložit nepodařilo, eviduje registr mezer. Autorizace definuje rozsah, necertifikuje reportáže.
 
 ## Registr tvrzení {#registr-tvrzeni}
-
+| <a id="clm-05"></a>[CLM-05](@/dossiers/ivan-bednarik/claims/clm-05.md) | V prosinci 2025 Bednárik jako ministr dopravy označil finance a rozpočet SFDI na rok 2026 a léta 2027–2029 za „absolutní prioritu“; podle kritiků citovaných Ekonomickým deníkem chybělo v návrhu rozpočtu na krytí plánovaných výdajů 37,2 miliardy korun. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-03](@/dossiers/ivan-bednarik/sources/src-03.md) |
+| <a id="clm-06"></a>[CLM-06](@/dossiers/ivan-bednarik/claims/clm-06.md) | K cenám na vysokorychlostních tratích Bednárik v prosinci 2025 řekl: „Neumím si představit, že by někdo v Čechách platil 1500 korun za lístek mezi Brnem a Prahou.“ | <span class="status-badge status-quote">CITACE</span> | [SRC-03](@/dossiers/ivan-bednarik/sources/src-03.md) |
+| <a id="clm-07"></a>[CLM-07](@/dossiers/ivan-bednarik/claims/clm-07.md) | V únoru 2026 Bednárik uvedl, že výstavba vysokorychlostních tratí v plném plánovaném rozsahu by stála 100 miliard korun ročně z národních zdrojů, a odmítl takové navýšení státního dluhu: „Sto miliard navíc ročně nevím, odkud bychom vzali. Přestaneme platit učitele, nebo zavřeme nemocnice?“ | <span class="status-badge status-quote">CITACE</span> | [SRC-04](@/dossiers/ivan-bednarik/sources/src-04.md) |
+| <a id="clm-08"></a>[CLM-08](@/dossiers/ivan-bednarik/claims/clm-08.md) | Podle Echo24 Bednárik deklaroval, že vláda bude z programu vysokorychlostních tratí stavět jen to, na co budou prostředky, s prioritou páteřního spojení Praha–Brno–Ostrava a mezinárodních návazností, v závislosti na podmínkách kofinancování EU očekávaných v létě 2026. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-04](@/dossiers/ivan-bednarik/sources/src-04.md) |
+| <a id="clm-09"></a>[CLM-09](@/dossiers/ivan-bednarik/claims/clm-09.md) | V dubnu 2026 Bednárik uvedl, že rozpočet SFDI na rok 2026 činí 169,3 miliardy korun (meziročně o 9 miliard více) a že prioritou je stabilní financování bez „slibů bez krytí“, dokončování rozestavěných staveb a kombinace národních zdrojů s prostředky EU („musíme stavět rychle, kvalitně a levně“). | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-05](@/dossiers/ivan-bednarik/sources/src-05.md) |
+| <a id="clm-10"></a>[CLM-10](@/dossiers/ivan-bednarik/claims/clm-10.md) | V květnu 2026 Bednárik v podcastu Hospodářských novin prohlásil: „Problém české železnice byl, že s penězi nebyl problém. A to se dostalo do její DNA,“ a avizoval záměr železniční trh „chladit“, tedy brzdit další masivní investice; nákupy vlaků za desítky miliard při jednotkových nákladech v řádu stovek korun za kilometr jízdy podle něj nejsou dlouhodobě udržitelné. | <span class="status-badge status-quote">CITACE</span> | [SRC-06](@/dossiers/ivan-bednarik/sources/src-06.md) |
 | ID | Tvrzení | Stav | Zdroje |
 |---|---|---|---|
 | <a id="clm-01"></a>[CLM-01](@/dossiers/ivan-bednarik/claims/clm-01.md) | Ivan Bednárik zastává podle oficiálního profilu na webu Úřadu vlády funkci ministra dopravy | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-01](@/dossiers/ivan-bednarik/sources/src-01.md) |
@@ -101,3 +139,7 @@ nebyly z otevřeného zdroje ověřeny
 Rezignace není přiznání ani zjištění o pochybení. Nezveřejněný důvod není
 skrytý důvod — je to nezveřejněný důvod. Verze kolující ve veřejné debatě
 nejsou doložená tvrzení a tento dossier je jako fakt nepřebírá.
+
+## Resortní pozice k výdajům na železnici {#kauza-zeleznicni-vydaje}
+
+Téma v autorizovaném rozsahu — viz tvrzení [CLM-05](@/dossiers/ivan-bednarik/claims/clm-05.md), [CLM-06](@/dossiers/ivan-bednarik/claims/clm-06.md), [CLM-07](@/dossiers/ivan-bednarik/claims/clm-07.md), [CLM-08](@/dossiers/ivan-bednarik/claims/clm-08.md), [CLM-09](@/dossiers/ivan-bednarik/claims/clm-09.md), [CLM-10](@/dossiers/ivan-bednarik/claims/clm-10.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.

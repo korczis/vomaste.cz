@@ -10,3 +10,12 @@ updated_claims = []
 added_gaps = []
 closed_gaps = []
 summary = "Dossier založen dle AUTH-2026-07-30-B. Oficiální profil na vlada.gov.cz otevřen a přečten, zapsáno foundační tvrzení CLM-01 o zastávané funkci (SRC-01) a kontextová hrana HOLDS_ROLE. Autorizovaná témata zatím nezpracována — čekají na přímé otevření citovaných zdrojů."
+
+[[updates]]
+date = "2026-07-30"
+reviewed_sources = ["SRC-03", "SRC-04", "SRC-05", "SRC-06"]
+added_claims = ["CLM-05", "CLM-06", "CLM-07", "CLM-08", "CLM-09", "CLM-10"]
+updated_claims = []
+added_gaps = ["GAP-03"]
+closed_gaps = []
+summary = "Zpracována autorizovaná témata: zeleznicni-vydaje. 4 zdrojů otevřeno a přečteno, 6 tvrzení, 1 mezer (nedoložitelné položky, paywally). Statusy dle skutečné síly doložení."

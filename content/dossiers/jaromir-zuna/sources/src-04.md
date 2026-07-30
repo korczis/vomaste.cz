@@ -1,0 +1,25 @@
++++
+title = "SRC-04 — Ekonomický deník"
+description = "Babišova vláda přiškrtí výdaje na obranu. Zůna chce 2 procenta dodržet"
+template = "dossier-source.html"
+weight = 4
+
+[extra]
+subjects = ["zuna"]
+dossier = "jaromir-zuna"
+record_type = "source"
+lang = "cs"
+src_id = "SRC-04"
+outlet = "Ekonomický deník"
+src_type = "zpravodajství"
+url = "https://ekonomickydenik.cz/vlada-vydaje-obrana-zuna-2-procenta/"
+published = "2026-01-26"
+retrieved = "2026-07-30"
+claims = ["CLM-02", "CLM-03"]
++++
+
+**Babišova vláda přiškrtí výdaje na obranu. Zůna chce 2 procenta dodržet**
+
+Vláda snížila plánované obranné výdaje 2026 o 21 mld. na cca 185 mld. Kč (2,07 % HDP dle lednové predikce). Zůna: stávající projekty pokračují, nové nevyhlášené se neruší, ale posouvají na 2027. Vláda se nehlásí k závazku předchozí vlády růst k 3 % HDP do 2030.
+
+Zdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji.

@@ -1,0 +1,25 @@
++++
+title = "SRC-02 — Blesk.cz"
+description = "Ministrovi Červenému hrozí pokuta. V majetkovém přiznání chyběl dům za 11,4 milionu"
+template = "dossier-source.html"
+weight = 2
+
+[extra]
+subjects = ["cerveny"]
+dossier = "igor-cerveny"
+record_type = "source"
+lang = "cs"
+src_id = "SRC-02"
+outlet = "Blesk.cz"
+src_type = "zpravodajství"
+url = "https://www.blesk.cz/clanek/zpravy-politika/838865/ministrovi-cervenemu-hrozi-pokuta-v-majetkovem-priznani-chybel-dum-za-11-4-milionu.html"
+published = "2026-05-06"
+retrieved = "2026-07-30"
+claims = ["CLM-02", "CLM-03", "CLM-04", "CLM-05", "CLM-06"]
++++
+
+**Ministrovi Červenému hrozí pokuta. V majetkovém přiznání chyběl dům za 11,4 milionu**
+
+Ministr životního prostředí Igor Červený (Motoristé) neuvedl ve vstupním majetkovém přiznání spoluvlastnictví domu se zahradou ve středočeských Bobnicích oceněného na 11,4 mil. Kč, který měsíc po zvolení poslancem převedl dohodou o vypořádání SJM na manželku; ponechal si bezúplatné doživotní užívací právo. Na věc upozornila MF Dnes. Ministerstvo spravedlnosti po obsahové kontrole postoupilo oznámení přestupkovému orgánu — Městskému úřadu v Nymburce. Za prokázaný přestupek lze uložit pokutu do 50 000 Kč. Červený nejprve trval na správnosti údajů, později připustil: 'Spletl jsem se v termínech.'
+
+Zdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji.

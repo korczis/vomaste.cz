@@ -1,6 +1,6 @@
 +++
 title = "Registr tvrzení"
-description = "TODO: registr tvrzení pro Zuzana Mrázová -- doplnit po přidání prvního záznamu."
+description = "Registr tvrzení dossieru — každý záznam odkazuje na svou zdrojovou stránku."
 template = "dossier-claims-index.html"
 sort_by = "weight"
 
@@ -10,4 +10,3 @@ lang = "cs"
 seo_type = "CollectionPage"
 +++
 
-TODO: zatím žádné záznamy. Jedno tvrzení = jeden ověřitelný výrok se stavem dle skutečné síly důkazu.

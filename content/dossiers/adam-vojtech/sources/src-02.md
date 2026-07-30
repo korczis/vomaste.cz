@@ -1,0 +1,25 @@
++++
+title = "SRC-02 — Seznam Zprávy"
+description = "„Závažná zjištění.“ Kvůli defibrilátorům posílá Vojtěch do nemocnice policii"
+template = "dossier-source.html"
+weight = 2
+
+[extra]
+subjects = ["vojtech"]
+dossier = "adam-vojtech"
+record_type = "source"
+lang = "cs"
+src_id = "SRC-02"
+outlet = "Seznam Zprávy"
+src_type = "zpravodajství"
+url = "https://www.seznamzpravy.cz/clanek/domaci-kauzy-zavazna-zjisteni-kvuli-defibrilatorum-poslal-vojtech-do-olomouce-policii-301861"
+published = "2026-03-17"
+retrieved = "2026-07-30"
+claims = ["CLM-02", "CLM-03", "CLM-04", "CLM-05", "CLM-09"]
++++
+
+**„Závažná zjištění.“ Kvůli defibrilátorům posílá Vojtěch do nemocnice policii**
+
+Ministerstvo zdravotnictví podalo 17. 3. 2026 trestní oznámení kvůli implantacím defibrilátorů na I. interní klinice — kardiologické FN Olomouc; podezření na obcházení indikačních kritérií a účelové úpravy dokumentace. Obsahuje citaci ministra Vojtěcha a kontext jeho zdrženlivého postoje z února 2026 (nechtěl odvolávat ředitele Havlíka, Babiš ředitele podporoval). Seznam Zprávy o kauze poprvé informovaly v prosinci 2025.
+
+Zdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji.

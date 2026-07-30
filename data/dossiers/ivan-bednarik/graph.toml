@@ -9,8 +9,8 @@ type = "person"
 label = "Ivan Bednárik"
 depth = 0
 subject = true
-claims = ["CLM-01"]
-sources = ["SRC-01"]
+claims = ["CLM-01", "CLM-05", "CLM-06", "CLM-07", "CLM-08", "CLM-09", "CLM-10"]
+sources = ["SRC-01", "SRC-03", "SRC-04", "SRC-05", "SRC-06"]
 
 [[nodes]]
 id = "vlada"

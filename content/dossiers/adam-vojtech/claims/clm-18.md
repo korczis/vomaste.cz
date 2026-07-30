@@ -1,0 +1,19 @@
++++
+title = "CLM-18"
+description = "Zdravotnický expert koaliční SPD Jan Síla kritizoval ministra Vojtěcha slovy, že si k prosazování národní očkovací strategie „opět přizval o"
+template = "dossier-claim.html"
+weight = 18
+
+[extra]
+dossier = "adam-vojtech"
+record_type = "claim"
+lang = "cs"
+clm_id = "CLM-18"
+status = "status-quote"
+status_label = "CITACE"
+summary = "Zdravotnický expert koaliční SPD Jan Síla kritizoval ministra Vojtěcha slovy, že si k prosazování národní očkovací strategie „opět přizval osoby odpovědné za zmatky v covidové pandemii“, což je podle SPD příčinou nedůvěry veřejnosti v očkování. Jde o pozici koaliční strany SPD, nikoli o nezávislé zjištění."
+sources = ["SRC-11"]
+subjects = ["vojtech"]
++++
+
+Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/adam-vojtech/_index.md#registr-tvrzeni).

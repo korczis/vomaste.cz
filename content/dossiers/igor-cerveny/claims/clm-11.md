@@ -1,0 +1,19 @@
++++
+title = "CLM-11"
+description = "Ministerstvo životního prostředí plánuje stavební úpravy sekretariátu a nové ministrovy pracovny za až 3 miliony korun (bourání příček, demo"
+template = "dossier-claim.html"
+weight = 11
+
+[extra]
+dossier = "igor-cerveny"
+record_type = "claim"
+lang = "cs"
+clm_id = "CLM-11"
+status = "status-single"
+status_label = "1 ZDROJ"
+summary = "Ministerstvo životního prostředí plánuje stavební úpravy sekretariátu a nové ministrovy pracovny za až 3 miliony korun (bourání příček, demontáže, nátěry, tapetování, nové koberce)."
+sources = ["SRC-07"]
+subjects = ["cerveny"]
++++
+
+Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/igor-cerveny/_index.md#registr-tvrzeni).

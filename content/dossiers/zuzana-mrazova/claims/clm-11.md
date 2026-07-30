@@ -1,0 +1,19 @@
++++
+title = "CLM-11"
+description = "Předseda Pirátů Zdeněk Hřib 3. 6. 2026 ve sněmovně při projednávání novely o podpoře bydlení předal Mrázové klíčenku se slovy, že dostupné b"
+template = "dossier-claim.html"
+weight = 11
+
+[extra]
+dossier = "zuzana-mrazova"
+record_type = "claim"
+lang = "cs"
+clm_id = "CLM-11"
+status = "status-quote"
+status_label = "CITACE"
+summary = "Předseda Pirátů Zdeněk Hřib 3. 6. 2026 ve sněmovně při projednávání novely o podpoře bydlení předal Mrázové klíčenku se slovy, že dostupné bydlení „vyřešila… pro jednoho člověka“, a vyzval ji k doplacení přibližně dvou milionů Kč, které podle výpočtu Pirátů ušetřila na nájmu obecního bytu."
+sources = ["SRC-09"]
+subjects = ["mrazova"]
++++
+
+Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/zuzana-mrazova/_index.md#registr-tvrzeni).
