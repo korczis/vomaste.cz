@@ -168,6 +168,23 @@ Registries are bidirectionally linked (CLM ↔ SRC, GAP → CLM, SRC → CLM),
 and the four summary metric tiles on the main dossier page and landing
 page are real `<a>` links to each registry index — never a bare count.
 
+#### Full-page doktrína (závazná, včetně forků)
+
+Každé tvrzení a každý zdroj je **plnohodnotná stránka**, nikdy stub:
+stránka tvrzení zobrazuje plné texty a metadata citovaných zdrojů,
+kontext kauzy se souvisejícími tvrzeními, grafové vztahy o ně opřené,
+subjekty a Git provenance; stránka zdroje zobrazuje plná znění
+podporovaných tvrzení se stavy, metadata, vydavatelské sourozence a Git
+provenance. To vše **renderují šablony z existujících strukturovaných
+dat** — full-page nikdy neznamená druhou ručně psanou kopii (pravidlo
+dvou reprezentací platí dál). Ručně psaná je u zdroje pouze povinná
+redakční poznámka v těle stránky (co dokládá, nezávislost, limity).
+Vynucení: `validate-dossier.mjs` (povinná pole + min. délka body
+zdroje), `verify-full-pages.mjs` (sekce v hotovém HTML) a
+`verify-jsonld.mjs` (Claim uzel na každé stránce tvrzení, citační uzel
+na každé stránce zdroje) — vše součást `npm run build`. Adoptér, který
+tyto kontroly vypne, se nemůže hlásit k tomuto datovému modelu.
+
 #### Two representations, one source of truth
 
 The claims table and case-cards on the main dossier page stay

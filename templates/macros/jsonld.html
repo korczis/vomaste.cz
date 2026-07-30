@@ -14,8 +14,10 @@
 {%- set st = sp.extra.src_type | default(value="") -%}
 {%- if "komentář" in st or "názor" in st -%}
   {%- set ld_t = "OpinionNewsArticle" -%}
-{%- elif "rejstřík" in st or "databáze" in st or "oficiální" in st or "primární" in st -%}
-  {%- set ld_t = "WebPage" -%}
+{%- elif "rejstřík" in st or "databáze" in st -%}
+  {%- set ld_t = "Dataset" -%}
+{%- elif "oficiální" in st or "primární" in st -%}
+  {%- set ld_t = "Report" -%}
 {%- elif "zpravodajství" in st or "žurnalistika" in st or "tabloid" in st or "agentura" in st -%}
   {%- set ld_t = "NewsArticle" -%}
 {%- else -%}

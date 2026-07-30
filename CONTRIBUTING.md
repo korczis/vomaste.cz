@@ -56,6 +56,11 @@ nejdřív jako issue s odůvodněním veřejného zájmu.
    musí projít testem veřejného zájmu (viz konstituce, § 7).
 5. Nejistota zůstává viditelná: co nejde doložit, patří do registru
    mezer, ne do tvrzení.
+6. **Full-page doktrína**: každé tvrzení a každý zdroj je plnohodnotná
+   stránka (viz AGENTS.md). U nového zdroje to znamená povinnou redakční
+   poznámku v těle stránky — co dokládá, jak je nezávislý, jaké má
+   limity (min. 150 znaků; build to vynucuje). Zbytek stránky renderují
+   šablony z dat — nic se nekopíruje ručně.
 
 ## Technický postup
 

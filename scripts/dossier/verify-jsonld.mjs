@@ -75,6 +75,14 @@ function checkNode(node, tag) {
 
 let files = 0, blocks = 0, nodeCount = 0, claimNodes = 0;
 const personPages = new Map(); // rel html path -> count of Person nodes
+// Full-page doctrine: source pages must emit a citation node (the cited
+// record itself), not only page/nav scaffolding.
+const SCAFFOLDING_TYPES = new Set([
+  "WebSite", "WebPage", "ProfilePage", "BreadcrumbList", "ListItem",
+  "SiteNavigationElement", "Person", "Organization",
+]);
+const sourcePages = new Set();
+const sourceCitationPages = new Set();
 
 for (const file of htmlFiles(PUBLIC_ROOT)) {
   const rel = relative(PUBLIC_ROOT, file);
@@ -94,8 +102,22 @@ for (const file of htmlFiles(PUBLIC_ROOT)) {
       checkNode(node, rel);
       if (node["@type"] === "Claim") claimNodes++;
       if (node["@type"] === "Person") personPages.set(rel, (personPages.get(rel) ?? 0) + 1);
+      // Citation-node coverage for source pages (full-page doctrine): a
+      // source page must carry at least one node describing the cited
+      // external record itself, not just page/nav scaffolding.
+      if (/\/sources\/src-\d+\/index\.html$/.test(rel) &&
+          !SCAFFOLDING_TYPES.has(node["@type"])) {
+        sourceCitationPages.add(rel);
+      }
     }
+    if (/\/sources\/src-\d+\/index\.html$/.test(rel)) sourcePages.add(rel);
   }
+}
+
+// Full-page doctrine: every built source page emits a citation node.
+for (const rel of sourcePages) {
+  if (!sourceCitationPages.has(rel))
+    err(`${rel}: source page has no citation node in JSON-LD (only page/nav scaffolding) — full-page doctrine requires the cited record itself to be machine-readable.`);
 }
 
 // Coverage: one Claim node per physical claim record, wherever it lives.

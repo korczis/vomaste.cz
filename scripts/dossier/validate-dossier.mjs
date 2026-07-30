@@ -149,6 +149,13 @@ function validateDossier(slug) {
     if (!retrieved) err(`[${slug}] ${file}: missing required field retrieved (date added to dossier)`);
     else if (!/^\d{4}-\d{2}-\d{2}$/.test(retrieved)) err(`[${slug}] ${file}: retrieved "${retrieved}" is not YYYY-MM-DD`);
 
+    // Full-page doktrína: zdroj není jen řádek metadat — jeho stránka musí
+    // nést redakční kontext (co dokládá, jak je nezávislý, případné limity).
+    // Kontextové zdroje bez tvrzení tu svou roli vysvětlují také.
+    const body = text.slice(fmEnd + 4).trim();
+    if (body.length < 150)
+      err(`[${slug}] ${file}: source body has ${body.length} chars (<150) — full-page doctrine requires an editorial note (what it supports, independence, caveats), not a bare metadata stub`);
+
     if (srcId) {
       if (srcById.has(srcId)) err(`[${slug}] Duplicate src_id across files: ${srcId} (${srcById.get(srcId).file} and ${file})`);
       else srcById.set(srcId, { file, outlet, srcType, url, claims, family });
