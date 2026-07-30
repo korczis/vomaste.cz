@@ -34,3 +34,17 @@ authorized_at = "2026-07-30"
 subjects = ["macinka", "turek"]
 agents_md_section = "Rozšíření rozsahu, 2026-07-30: finanční a majetková vrstva"
 scope_summary = "Finanční/majetková/podnikatelská vrstva: GMR GAS UA LLC, rejstříkové vazby, dary stranám, dárci kampaně PS 2025 (Šťastný, Fabičovic, Chlad vč. citované vazby na Krejčíře a rozporu částek), Turkovy nemovitosti. Třetí osoby jen jako záznam vazby; potvrzeno, že vlákno jmenování ministrem ŽP spadá pod autorizaci politické kariéry z 2026-07-21."
+
+[[authorizations]]
+id = "AUTH-2026-07-30-KLEMPIR"
+authorized_at = "2026-07-30"
+subjects = ["klempir"]
+agents_md_section = "Authorized subject: Oto Klempíř (on the record)"
+scope_summary = "Jmenování ministrem kultury a vstup do politiky za Motoristy; veřejná obhajoba přesunu financování ČT/ČRo do státního rozpočtu; konkrétní resortní kroky podle investigativního textu RESPEKT 2026-07-19 (granty, stavební zákon, zrušené výběrové řízení na ředitele NGP, veřejné přijetí). Vše 1 ZDROJ do nezávislého potvrzení. Kandidátní položka z Reflex.cz vyřazena — jde o satirickou/fake-news sekci, zjištěno až otevřením zdroje."
+
+[[authorizations]]
+id = "AUTH-2026-07-30-B"
+authorized_at = "2026-07-30"
+subjects = ["schillerova", "juchelka", "metnar", "bednarik", "stastny"]
+agents_md_section = "Authorized subjects, 2026-07-30: five further members of the government (on the record)"
+scope_summary = "Per subject, jen vyjmenovaná témata: Schillerová — novela rozpočtových pravidel a stanovisko NRR; Juchelka — reportovaná kauza střetu zájmů bývalé poradkyně, rozpočtový dopad, ohlášená trestní oznámení, jeho vyjádření (procesní stav vždy přesně); Metnar — návrh na ukončení policejní ochrany NKÚ a reakce NKÚ; Bednárik — rezignace ve vedení ČD 2022 a jeho resortní pozice k výdajům na železnici; Šťastný — nahrávací zařízení v zasedačce, odvolání vedení NSA, rozpor v číslech interakcí. Každý citovaný zdroj musí být před napsáním tvrzení skutečně otevřen."

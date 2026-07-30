@@ -698,3 +698,87 @@ dossier files and registry entry for Oto Klempíř are created once that
 migration lands, to avoid registering a third dossier against a data
 model still being rewritten. This authorization stands regardless of
 that sequencing.
+
+### Authorized subjects, 2026-07-30: five further members of the government (on the record)
+
+Authorized by the site owner, explicitly and on the record, 2026-07-30,
+naming each subject individually in conversation ("autorizuj …") after
+being shown the specific, already-published topic found for each: entity
+dossiers may be created for **Alena Schillerová**, **Aleš Juchelka**,
+**Lubomír Metnar**, **Ivan Bednárik** and **Boris Šťastný** — all
+members of the current government (see `data/government.toml`), public
+officials acting in public capacity. `AUTH-2026-07-30-B`.
+
+Coverage is limited, per subject, to the topics below. These were found
+by research at search-result level and each cited outlet **must be
+opened and read directly before any claim is written from it** — the
+authorization defines scope, it does not certify the reporting. This
+condition is not boilerplate: an earlier candidate item in the Oto
+Klempíř entry above had to be dropped because a URL that read as
+ordinary reporting turned out to be a satire/fake-news section once
+actually opened.
+
+- **Alena Schillerová** (ministryně financí): the amendment to the
+  budget-rules legislation and the criticism that it would permit
+  deficits outside parliamentary control ("escape clauses"), and the
+  National Budget Council's stated position that the state budget
+  proposal conflicts with the fiscal-responsibility law, together with
+  her own published defence of both. Outlets found: Hospodářské noviny,
+  ČT24, Deník.cz, ČeskéNoviny.cz, Echo24.
+- **Aleš Juchelka** (ministr práce a sociálních věcí): the reported
+  conflict-of-interest case around a former ministry advisor whose
+  private company charged clients for help obtaining grants from a
+  programme she oversaw at the ministry; the reported budget shortfall
+  the ministry is addressing as a consequence; criminal complaints
+  announced by civic organisations; and his own public statements and
+  defence, including his reported remarks to a journalist. Outlets
+  found: Forum24, Blesk, Seznam Zprávy. **Handle as the most
+  consequential item in this entry**: an announced criminal complaint is
+  not a charge, a charge is not a conviction, and the procedural stage
+  must be stated accurately at every mention. The former advisor and any
+  other third party appear **only** as a record of relation, in the
+  scope the cited reporting itself discloses — they do not become
+  dossier subjects.
+- **Lubomír Metnar** (ministr vnitra): the Ministry of the Interior's
+  proposal to end the police protection service for the Supreme Audit
+  Office (NKÚ), the NKÚ president's public objection to it, and
+  Metnar's own stated justification. Outlets found: ČT24, Deník N,
+  Blesk, Seznam Zprávy (as originating outlet per the others).
+- **Ivan Bednárik** (ministr dopravy): his 2022 resignation as chairman
+  and CEO of České dráhy after reported disputes over demanded
+  cost-cutting and land payments to Správa železnic, and his published
+  positions as minister on railway-market spending. Outlets found:
+  iROZHLAS, Ekonomický deník, Novinky.cz, Deník.cz, Hospodářské noviny,
+  Zdopravy.cz.
+- **Boris Šťastný** (ministr pro sport, prevenci a zdraví): the
+  recording device reportedly left in a government meeting room and the
+  criticism of it; his proposal to remove the National Sports Agency
+  leadership amid reported criticism of grant-distribution transparency;
+  and the reported discrepancy in social-media engagement figures on one
+  of his posts. Outlets found: CNN Prima News, iROZHLAS, Forum24.
+  (Note: Šťastný already appears in the 2026-07-30 financial-layer entry
+  above as a **named campaign donor** in the Macinka/Turek dossier; this
+  entry authorizes him as a dossier subject in his own right for the
+  topics listed here, and does not retroactively widen that earlier
+  record-of-relation mention.)
+
+All existing editorial rules apply unchanged and in full: named, dated,
+independent sources actually opened before citation; `1 ZDROJ` vs.
+`CORROBORATED` per the validator's own source-family rules; procedural
+outcomes distinguished from substantive findings at every mention, not
+once; direct quotes marked as quotes; no speculation where sources are
+silent (that belongs in the gaps registry); no private addresses, health
+information, information about minors, or family matters without direct
+and serious public relevance.
+
+This authorization covers **only** these five subjects and only the
+topics listed above. It does not extend to any other member of the
+government (the remaining members exist in this repo solely as
+`publication_role = "context"` roster entities — a record of public
+office, never dossier coverage), nor to any named third party appearing
+in the cited reporting, without a further, separate, on-record decision.
+
+**Implementation note (operational)**: as with the Oto Klempíř entry,
+the actual dossier files and `data/dossiers.toml` entries are created
+after the in-progress T-001 migration lands — see `docs/coop/TASKS.md`.
+This authorization stands regardless of that sequencing.
