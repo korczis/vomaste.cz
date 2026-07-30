@@ -62,6 +62,37 @@ anchor = "kauza-evropske-dotace"
 dot = "dot-disputed"
 subjects = ["babis"]
 
+[[extra.timeline]]
+date = "2025-12-31"
+title = "Oznámeno: do fondu jen Agrofert, SynBiol a Hartenberg zůstávají mimo"
+anchor = "kauza-synbiol-dividenda"
+dot = "dot-fact"
+subjects = ["babis"]
+
+[[extra.timeline]]
+date = "2026-06-23"
+title = "Komise sleduje střet zájmů i u SynBiolu a Hartenbergu"
+anchor = "kauza-synbiol-dividenda"
+dot = "dot-disputed"
+subjects = ["babis"]
+
+[[extra.timeline]]
+date = "2026-07-01"
+title = "Z majetkového přiznání: dividenda 4,25 mld. Kč vyplacená před vkladem do fondu"
+anchor = "kauza-synbiol-dividenda"
+dot = "dot-disputed"
+subjects = ["babis"]
+
+[[extra.cases]]
+anchor = "kauza-synbiol-dividenda"
+period = "2025–2026"
+title = "Co zůstalo mimo fond: SynBiol, Hartenberg a dividenda 4,25 mld."
+status = "status-disputed"
+label = "Otevřené; legální kroky, sporný rozsah povinnosti"
+summary = "Do svěřenského fondu vložil pouze Agrofert — SynBiol (podíl 87,75 %), fond Hartenberg a nemovitosti zůstaly mimo. V roce 2025, tedy před vkladem, mu Agrofert vyplatil dividendu 5 mld. Kč v hrubém (4,25 mld. po zdanění). Evropská komise sleduje střet zájmů i u SynBiolu a Hartenbergu. Výplata dividendy i ponechání aktiv mimo fond jsou samy o sobě legální; sporný je zákonný rozsah povinnosti, o němž žádný orgán podle citovaných zdrojů nerozhodl."
+claims = ["CLM-37", "CLM-39", "CLM-41", "CLM-42"]
+subjects = ["babis"]
+
 [[extra.cases]]
 anchor = "kauza-evropske-dotace"
 period = "2025–"
@@ -170,6 +201,67 @@ jednou v poznámce.
 
 | <a id="clm-35"></a>[CLM-35](@/dossiers/andrej-babis/claims/clm-35.md) | Podle oficiálního životopisu na webu Úřadu vlády se Andrej Babiš narodil 2. září 1954 v Bratislavě, v letech 1993–2014 byl zakladatelem a předsedou představenstva Agrofertu, od roku 2013 je poslancem, v letech 2014–2017 byl prvním místopředsedou vlády a ministrem financí a v letech 2017–2021 předsedou vlády; je členem hnutí ANO | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-14](@/dossiers/andrej-babis/sources/src-14.md) |
 | <a id="clm-36"></a>[CLM-36](@/dossiers/andrej-babis/claims/clm-36.md) | Andrej Babiš zastává k datu citovaného zpravodajství (květen až červenec 2026) úřad předsedy vlády České republiky | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-08](@/dossiers/andrej-babis/sources/src-08.md), [SRC-09](@/dossiers/andrej-babis/sources/src-09.md), [SRC-12](@/dossiers/andrej-babis/sources/src-12.md) |
+
+| <a id="clm-37"></a>[CLM-37](@/dossiers/andrej-babis/claims/clm-37.md) | Podle údajů z majetkového přiznání podávaného do 30. června 2026 dostal Andrej Babiš v roce 2025 od Agrofertu dividendu 5 miliard korun v hrubém, po zdanění 4,25 miliardy, a to před vložením akcií holdingu do svěřenského fondu RSVP Trust v únoru 2026; výplata dividendy akcionáři je legální krok a citovaný zdroj netvrdí nic jiného | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-15](@/dossiers/andrej-babis/sources/src-15.md) |
+| <a id="clm-38"></a>[CLM-38](@/dossiers/andrej-babis/claims/clm-38.md) | Babiš k tomu uvedl: „Předtím než jsem vložil firmu do fondu, mi byla vyplacena dividenda ve výši pěti miliard korun. Agrofert z toho zaplatil daň ve výši 750 milionů korun. Kdybych měl sídlo na Kypru, tak z toho stát neuvidí ani korunu.“ — doloženo je, že to řekl | <span class="status-badge status-quote">CITACE</span> | [SRC-15](@/dossiers/andrej-babis/sources/src-15.md) |
+| <a id="clm-39"></a>[CLM-39](@/dossiers/andrej-babis/claims/clm-39.md) | Podle zpravodajství z 31. prosince 2025 Babiš oznámil, že do svěřenského fondu vloží pouze Agrofert; investiční společnost SynBiol s jeho podílem 87,75 %, fond Hartenberg a nemovitosti měly zůstat mimo fond. Prezident Petr Pavel jmenování podmínil vyřešením otázky střetu zájmů, zákonná lhůta byla 30 dnů od jmenování, tedy do 8. ledna 2026 | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-17](@/dossiers/andrej-babis/sources/src-17.md) |
+| <a id="clm-40"></a>[CLM-40](@/dossiers/andrej-babis/claims/clm-40.md) | K rozsahu vkladu do fondu Babiš podle téhož zdroje uvedl: „Týká se to jen Agrofertu“, a zdravotnické aktivity vysvětlil slovy: „Zdravotnické věci spadající pod SynBiol v rámci Hartenbergu fungují tak, že když si klient, občan České republiky, vybere reprodukční kliniku z této skupiny, tak ta automaticky dostává odpovídající částku ze zdravotního pojištění“ | <span class="status-badge status-quote">CITACE</span> | [SRC-17](@/dossiers/andrej-babis/sources/src-17.md) |
+| <a id="clm-41"></a>[CLM-41](@/dossiers/andrej-babis/claims/clm-41.md) | Evropská komise podle své písemné reakce z 23. června 2026 sleduje otázku možného střetu zájmů i ve vztahu ke společnostem SynBiol a Hartenberg Holding, které byly od 9. prosince 2025 vybrány jako příjemci evropských prostředků, a požádala řídicí orgány, aby žádná žádost o platbu předložená Komisi neobsahovala výdaje spojené s těmito subjekty; jde o monitoring a pokyn, ne o zjištění o porušení pravidel | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-16](@/dossiers/andrej-babis/sources/src-16.md) |
+| <a id="clm-42"></a>[CLM-42](@/dossiers/andrej-babis/claims/clm-42.md) | Podle veřejně dostupných informací, na které podle téhož zdroje upozornil europoslanec Tomáš Zdechovský, byl v únoru 2026 ověřen notářský zápis, na jehož základě se Babiš stal opět přímým vlastníkem SynBiolu; jde o výklad veřejných registrů, na který upozornil politik, ne o zjištění Evropské komise ani jiného orgánu | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-16](@/dossiers/andrej-babis/sources/src-16.md) |
+
+## Co zůstalo mimo fond: SynBiol, Hartenberg a dividenda {#kauza-synbiol-dividenda}
+
+Vložení akcií Agrofertu do svěřenského fondu popsané výše je jen část
+obrázku. Druhá část je, co ve fondu **není** a co se vyplatilo předtím.
+
+### Oznámený rozsah vkladu
+
+Na konci roku 2025 Babiš oznámil, že do fondu vloží **pouze Agrofert**:
+investiční společnost SynBiol s jeho podílem 87,75 %, fond Hartenberg
+a nemovitosti měly zůstat mimo
+([CLM-39](@/dossiers/andrej-babis/claims/clm-39.md),
+[SRC-17](@/dossiers/andrej-babis/sources/src-17.md)). Sám to vyjádřil
+větou „Týká se to jen Agrofertu“ a zdravotnickou část skupiny vysvětlil
+mechanismem platby ze zdravotního pojištění
+([CLM-40](@/dossiers/andrej-babis/claims/clm-40.md)). Prezident Petr
+Pavel jmenování podmínil vyřešením otázky střetu zájmů; zákonná lhůta
+byla 30 dnů od jmenování, tedy do 8. ledna 2026.
+
+**Co z toho neplyne.** Že aktivum zůstalo mimo fond, samo o sobě není
+protiprávní — zákonný rozsah povinnosti je právě to, o čem se spor vede,
+a tento dossier ho nerozhoduje ani jedním směrem.
+
+### Dividenda 4,25 miliardy před vkladem
+
+Z majetkového přiznání podávaného do 30. června 2026 vyplynulo, že Babiš
+dostal v roce 2025 od Agrofertu dividendu **5 miliard korun v hrubém, po
+zdanění 4,25 miliardy** — a to **před** únorovým vložením akcií do fondu
+([CLM-37](@/dossiers/andrej-babis/claims/clm-37.md)). Sám k tomu uvedl,
+že Agrofert z dividendy odvedl daň 750 milionů korun a že „kdybych měl
+sídlo na Kypru, tak z toho stát neuvidí ani korunu“
+([CLM-38](@/dossiers/andrej-babis/claims/clm-38.md)).
+
+Výplata dividendy akcionáři je **legální krok** a citovaný zdroj netvrdí
+nic jiného; žádný orgán o její zákonnosti podle citovaných zdrojů
+nerozhodoval. Věcně podstatné pro téma střetu zájmů je **časování**:
+prostředky byly vyplaceny ještě v době přímého vlastnictví, tedy před
+uspořádáním, které má střet zájmů řešit.
+
+### Pozice Evropské komise k SynBiolu a Hartenbergu
+
+Komise v písemné reakci z 23. června 2026 uvedla, že otázku sleduje i ve
+vztahu k SynBiolu a Hartenberg Holdingu, které byly od 9. prosince 2025
+vybrány jako příjemci evropských prostředků, a požádala řídicí orgány,
+aby žádost o platbu neobsahovala výdaje spojené s těmito subjekty
+([CLM-41](@/dossiers/andrej-babis/claims/clm-41.md)). Podle veřejně
+dostupných informací, na které upozornil europoslanec Tomáš Zdechovský,
+byl v únoru 2026 ověřen notářský zápis, na jehož základě se Babiš stal
+opět **přímým** vlastníkem SynBiolu
+([CLM-42](@/dossiers/andrej-babis/claims/clm-42.md)).
+
+Obojí je nutné čtenáři podat přesně: **monitoring a pokyn nejsou zjištění
+o porušení pravidel**, a údaj o notářském zápisu je výklad veřejných
+registrů, na který upozornil politik — ne závěr Komise ani jiného orgánu.
 
 ## Veřejné funkce {#verejne-funkce}
 

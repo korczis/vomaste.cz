@@ -32,8 +32,8 @@ type = "company"
 label = "Agrofert"
 depth = 1
 subject = false
-claims = ["CLM-04", "CLM-16"]
-sources = ["SRC-02", "SRC-06"]
+claims = ["CLM-04", "CLM-16", "CLM-37"]
+sources = ["SRC-02", "SRC-06", "SRC-15"]
 
 [[nodes]]
 id = "rsvp-trust"
@@ -143,6 +143,24 @@ subject = false
 claims = ["CLM-31", "CLM-33"]
 sources = ["SRC-13"]
 
+[[nodes]]
+id = "synbiol"
+type = "company"
+label = "SynBiol"
+depth = 1
+subject = false
+claims = ["CLM-39", "CLM-41", "CLM-42"]
+sources = ["SRC-16", "SRC-17"]
+
+[[nodes]]
+id = "hartenberg"
+type = "company"
+label = "Hartenberg Holding"
+depth = 1
+subject = false
+claims = ["CLM-39", "CLM-41"]
+sources = ["SRC-16", "SRC-17"]
+
 [[edges]]
 id = "edge-babis-vlada"
 source = "babis"
@@ -158,10 +176,10 @@ id = "edge-babis-agrofert"
 source = "babis"
 target = "agrofert"
 relation = "HOLDS_INTEREST_IN"
-label = "vlastnické vazby; od 2/2026 akcie ve svěřenském fondu RSVP Trust, míra vlivu sporná"
+label = "vlastnické vazby; od 2/2026 akcie ve svěřenském fondu RSVP Trust, míra vlivu sporná; dividenda 4,25 mld. Kč vyplacena před vkladem (legální krok)"
 status = "disputed"
-claims = ["CLM-04", "CLM-05", "CLM-06", "CLM-16"]
-sources = ["SRC-02", "SRC-06"]
+claims = ["CLM-04", "CLM-05", "CLM-06", "CLM-16", "CLM-37"]
+sources = ["SRC-02", "SRC-06", "SRC-15"]
 
 [[edges]]
 id = "edge-rsvp-agrofert"
@@ -282,3 +300,33 @@ label = "financování pořízení pozemku; od 8/2019 SCP Bigaud ze 100 % vlastn
 status = "contextual"
 claims = ["CLM-31", "CLM-33"]
 sources = ["SRC-13"]
+
+[[edges]]
+id = "edge-babis-synbiol"
+source = "babis"
+target = "synbiol"
+relation = "HOLDS_INTEREST_IN"
+label = "podíl 87,75 %, ponechán mimo svěřenský fond; 2/2026 podle výkladu veřejných registrů opět přímé vlastnictví"
+status = "disputed"
+claims = ["CLM-39", "CLM-42"]
+sources = ["SRC-16", "SRC-17"]
+
+[[edges]]
+id = "edge-synbiol-hartenberg"
+source = "synbiol"
+target = "hartenberg"
+relation = "HOLDS_INTEREST_IN"
+label = "zdravotnické aktivity ve skupině Hartenberg, mimo svěřenský fond"
+status = "contextual"
+claims = ["CLM-39"]
+sources = ["SRC-17"]
+
+[[edges]]
+id = "edge-synbiol-komise"
+source = "synbiol"
+target = "evropska-komise"
+relation = "SUBJECT_OF_PROCEEDING"
+label = "Komise sleduje střet zájmů i u SynBiolu a Hartenbergu — monitoring a pokyn, ne zjištění o porušení"
+status = "disputed"
+claims = ["CLM-41"]
+sources = ["SRC-16"]

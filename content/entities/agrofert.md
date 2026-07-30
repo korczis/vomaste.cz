@@ -17,8 +17,8 @@ coverage_state = "contextual"
 discovered_at = "2026-07-30"
 discovered_via = ["edge-babis-agrofert", "edge-rsvp-agrofert", "edge-agrofert-kostelecke", "edge-agrofert-szif", "edge-agrofert-komise", "edge-agrofert-eppo"]
 dossiers = ["andrej-babis"]
-claims = ["CLM-04", "CLM-05", "CLM-16"]
-sources = ["SRC-02", "SRC-06"]
+claims = ["CLM-04", "CLM-05", "CLM-16", "CLM-37"]
+sources = ["SRC-02", "SRC-06", "SRC-15"]
 +++
 
 Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext.

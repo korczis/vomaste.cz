@@ -1,6 +1,6 @@
 +++
-title = "Evropské dotace: pozastavené proplácení a řízení evropské prokuratury"
-description = "Národní fond administraci dotací skupině Agrofert obnovil, Evropská komise k 5. 6. 2026 neproplatila nic a dopisem z 20. 5. 2026 si vyžádala vysvětlení struktury fondu. Evropská prokuratura zahájila 24. 5. 2026 trestní řízení k vyplácení evropských dotací — vedené na neznámého pachatele, bez obviněného; zahájení řízení není obvinění ani rozhodnutí o vině."
+title = "Co zůstalo mimo fond: SynBiol, Hartenberg a dividenda 4,25 mld."
+description = "Do svěřenského fondu vložil pouze Agrofert — SynBiol (podíl 87,75 %), fond Hartenberg a nemovitosti zůstaly mimo. V roce 2025, tedy před vkladem, mu Agrofert vyplatil dividendu 5 mld. Kč v hrubém (4,25 mld. po zdanění). Evropská komise sleduje střet zájmů i u SynBiolu a Hartenbergu. Výplata dividendy i ponechání aktiv mimo fond jsou samy o sobě legální; sporný je zákonný rozsah povinnosti, o němž žádný orgán podle citovaných zdrojů nerozhodl."
 template = "dossier-case.html"
 weight = 1
 
@@ -9,13 +9,13 @@ dossier = "andrej-babis"
 record_type = "case"
 lang = "cs"
 case_id = "CASE-01"
-anchor = "kauza-evropske-dotace"
-period = "2025–"
+anchor = "kauza-synbiol-dividenda"
+period = "2025–2026"
 status = "status-disputed"
-label = "Otevřené; řízení na neznámého pachatele, nikdo není obviněn"
-summary = "Národní fond administraci dotací skupině Agrofert obnovil, Evropská komise k 5. 6. 2026 neproplatila nic a dopisem z 20. 5. 2026 si vyžádala vysvětlení struktury fondu. Evropská prokuratura zahájila 24. 5. 2026 trestní řízení k vyplácení evropských dotací — vedené na neznámého pachatele, bez obviněného; zahájení řízení není obvinění ani rozhodnutí o vině."
-claims = ["CLM-25", "CLM-26", "CLM-27", "CLM-28", "CLM-29"]
-sources = ["SRC-10", "SRC-11", "SRC-12"]
+label = "Otevřené; legální kroky, sporný rozsah povinnosti"
+summary = "Do svěřenského fondu vložil pouze Agrofert — SynBiol (podíl 87,75 %), fond Hartenberg a nemovitosti zůstaly mimo. V roce 2025, tedy před vkladem, mu Agrofert vyplatil dividendu 5 mld. Kč v hrubém (4,25 mld. po zdanění). Evropská komise sleduje střet zájmů i u SynBiolu a Hartenbergu. Výplata dividendy i ponechání aktiv mimo fond jsou samy o sobě legální; sporný je zákonný rozsah povinnosti, o němž žádný orgán podle citovaných zdrojů nerozhodl."
+claims = ["CLM-37", "CLM-39", "CLM-41", "CLM-42"]
+sources = ["SRC-15", "SRC-16", "SRC-17"]
 +++
 
 Plné znění, zdroje a kontext tohoto případu jsou v [hlavním přehledu

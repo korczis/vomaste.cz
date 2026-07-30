@@ -8,21 +8,21 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 36 context entities across 19 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 38 context entities across 19 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## Agrofert (`agrofert`)
 
 - Type: company
 - Status: not_authorized
 - Appears in: andrej-babis
-- Claims: CLM-04, CLM-05, CLM-16
-- Sources: SRC-02, SRC-06 (2 independent source families)
+- Claims: CLM-04, CLM-05, CLM-16, CLM-37
+- Sources: SRC-02, SRC-06, SRC-15 (3 independent source families)
 - Relations: 
   - edge-agrofert-eppo (agrofert -> eppo, "trestní řízení k vyplácení evropských dotací, vedené na neznámého pachatele — nikdo není obviněn", dossier: andrej-babis)
   - edge-agrofert-komise (agrofert -> evropska-komise, "Komise k 5. 6. 2026 neproplatila žádnou náhradu a žádá vysvětlení struktury fondu — dotaz, ne zjištění", dossier: andrej-babis)
   - edge-agrofert-kostelecke (agrofert -> kostelecke-uzeniny, "firma ze skupiny Agrofert", dossier: andrej-babis)
   - edge-agrofert-szif (agrofert -> szif, "SZIF obnovil administraci žádostí o dotace (4/2026)", dossier: andrej-babis)
-  - edge-babis-agrofert (babis -> agrofert, "vlastnické vazby; od 2/2026 akcie ve svěřenském fondu RSVP Trust, míra vlivu sporná", dossier: andrej-babis)
+  - edge-babis-agrofert (babis -> agrofert, "vlastnické vazby; od 2/2026 akcie ve svěřenském fondu RSVP Trust, míra vlivu sporná; dividenda 4,25 mld. Kč vyplacena před vkladem (legální krok)", dossier: andrej-babis)
   - edge-rsvp-agrofert (rsvp-trust -> agrofert, "drží akcie Agrofertu (vloženy 2/2026)", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -104,6 +104,7 @@ Generated from 36 context entities across 19 dossier(s). Regenerate with `npm ru
 - Sources: SRC-10, SRC-11 (1 independent source family)
 - Relations: 
   - edge-agrofert-komise (agrofert -> evropska-komise, "Komise k 5. 6. 2026 neproplatila žádnou náhradu a žádá vysvětlení struktury fondu — dotaz, ne zjištění", dossier: andrej-babis)
+  - edge-synbiol-komise (synbiol -> evropska-komise, "Komise sleduje střet zájmů i u SynBiolu a Hartenbergu — monitoring a pokyn, ne zjištění o porušení", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## GMR GAS UA LLC (Kyjev) (`gmrgas`)
@@ -139,6 +140,17 @@ Generated from 36 context entities across 19 dossier(s). Regenerate with `npm ru
 - Sources: SRC-06 (1 independent source family)
 - Relations: 
   - edge-turek-greendeal (turek -> greendeal, "zmocněnec (do nehody)", dossier: macinka-turek)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Hartenberg Holding (`hartenberg`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-39, CLM-41
+- Sources: SRC-16, SRC-17 (1 independent source family)
+- Relations: 
+  - edge-synbiol-hartenberg (synbiol -> hartenberg, "zdravotnické aktivity ve skupině Hartenberg, mimo svěřenský fond", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Kauza 2024: fotografie a svícny (`kauza2024`)
@@ -366,6 +378,19 @@ Generated from 36 context entities across 19 dossier(s). Regenerate with `npm ru
 - Sources: SRC-31, SRC-54 (2 independent source families)
 - Relations: 
   - edge-trestniozn-statnizastupitelstvi (trestniozn -> statni-zastupitelstvi, "OSZ pro Prahu 4 odložení oznámilo; o stížnosti ženy rozhoduje státní zástupkyně", dossier: macinka-turek)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## SynBiol (`synbiol`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-39, CLM-41, CLM-42
+- Sources: SRC-16, SRC-17 (1 independent source family)
+- Relations: 
+  - edge-babis-synbiol (babis -> synbiol, "podíl 87,75 %, ponechán mimo svěřenský fond; 2/2026 podle výkladu veřejných registrů opět přímé vlastnictví", dossier: andrej-babis)
+  - edge-synbiol-hartenberg (synbiol -> hartenberg, "zdravotnické aktivity ve skupině Hartenberg, mimo svěřenský fond", dossier: andrej-babis)
+  - edge-synbiol-komise (synbiol -> evropska-komise, "Komise sleduje střet zájmů i u SynBiolu a Hartenbergu — monitoring a pokyn, ne zjištění o porušení", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Státní zemědělský intervenční fond (`szif`)
