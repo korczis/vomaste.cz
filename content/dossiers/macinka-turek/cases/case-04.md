@@ -1,6 +1,6 @@
 +++
 title = "Dopravní nehoda"
-description = "Střet s vozidlem záchranné služby v Praze. Turek dočasně opustil funkci zmocněnce."
+description = "Střet se zdravotnickým vozem v Praze. Turek dočasně opustil funkci zmocněnce."
 template = "dossier-case.html"
 weight = 4
 aliases = ["/dossier/kauzy/case-04/"]

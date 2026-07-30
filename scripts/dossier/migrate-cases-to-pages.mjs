@@ -19,9 +19,38 @@
 // where that narrative can drift out of the required procedural-vs-
 // substantive framing.
 
-import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
+
+// Same non-destructive contract as migrate-claims-to-pages.mjs: the
+// generator owns only what it derives from [[extra.cases]]; any other
+// front-matter key on an existing page (e.g. `subjects`) and any
+// hand-written body are preserved. Regenerating used to strip both.
+const OWNED_CASE_KEYS = new Set([
+  "title", "description", "template", "weight", "aliases",
+  "dossier", "record_type", "lang", "case_id", "anchor", "period",
+  "status", "label", "summary", "claims", "sources",
+]);
+
+function readExistingCase(file) {
+  if (!existsSync(file)) return { extraKeep: [], body: null };
+  const text = readFileSync(file, "utf8");
+  const end = text.indexOf("\n+++", 3);
+  if (end === -1) return { extraKeep: [], body: null };
+  const fm = text.slice(4, end);
+  const body = text.slice(end + 5).replace(/^\n+/, "");
+  const extraKeep = [];
+  let inExtra = false;
+  for (const line of fm.split("\n")) {
+    if (line.trim() === "[extra]") { inExtra = true; continue; }
+    if (/^\[/.test(line.trim())) { inExtra = false; continue; }
+    const m = line.match(/^([a-z_]+)\s*=/);
+    if (inExtra && m && !OWNED_CASE_KEYS.has(m[1])) extraKeep.push(line);
+  }
+  return { extraKeep, body: body.trim() ? body : null };
+}
+
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..", "..");
@@ -108,6 +137,9 @@ function main() {
     const claimsToml = c.claims.map((s) => `"${s}"`).join(", ");
     const sourcesToml = sources.map((s) => `"${s}"`).join(", ");
 
+    const outFileCase = path.join(OUT_DIR, `case-${num}.md`);
+    const keptCase = readExistingCase(outFileCase);
+    const keptCaseToml = keptCase.extraKeep.length ? keptCase.extraKeep.join("\n") + "\n" : "";
     const front = `+++
 title = "${tomlEscape(c.title)}"
 description = "${tomlEscape(c.summary)}"
@@ -126,10 +158,9 @@ label = "${tomlEscape(c.label)}"
 summary = "${tomlEscape(c.summary)}"
 claims = [${claimsToml}]
 sources = [${sourcesToml}]
-+++
+${keptCaseToml}+++
 
-Plné znění, zdroje a kontext tohoto případu jsou v [hlavním přehledu
-dossieru](@/dossiers/${SLUG}/_index.md#${c.anchor}).
+${(keptCase.body ?? `Plné znění, zdroje a kontext tohoto případu jsou v [hlavním přehledu\ndossieru](@/dossiers/${SLUG}/_index.md#${c.anchor}).\n`).replace(/\n+$/, "")}
 `;
     writeFileSync(path.join(OUT_DIR, `case-${num}.md`), front, "utf8");
   });
