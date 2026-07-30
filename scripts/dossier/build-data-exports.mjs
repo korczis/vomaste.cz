@@ -143,6 +143,22 @@ if (existsSync(entDir)) {
       entity_type: str(block, "entity_type"),
       role: str(block, "role"),
       dossiers: arr(block, "dossiers"),
+      // Publication-state fields: what the entity actually IS in this
+      // system, so a reader querying the export can tell a context entity
+      // apart from an authorized dossier subject without reading prose.
+      publication_role: str(block, "publication_role"),
+      dossier_status: str(block, "dossier_status"),
+      coverage_state: str(block, "coverage_state"),
+      // Government-roster fields (data/government.toml via
+      // build-government-roster.mjs). Null for every entity that isn't a
+      // roster member — a public office held on the snapshot date, nothing
+      // more. Deliberately NOT emitted as schema.org Person/Role in
+      // JSON-LD: Person markup is restricted to authorized entity-dossier
+      // main pages (verify-jsonld.mjs), and holding an office is not
+      // dossier coverage.
+      government_office: str(block, "government_office"),
+      government_party: str(block, "government_party"),
+      government_snapshot: str(block, "government_snapshot"),
       url: `/entities/${f.replace(/\.md$/, "")}/`,
     });
   }

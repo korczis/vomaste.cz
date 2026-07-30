@@ -81,6 +81,7 @@ for (const m of members) {
 }
 
 const created = [];
+const updated = [];
 const skipped = [];
 
 // content/entities/_index.md is sort_by = "weight" — Zola silently IGNORES
@@ -99,7 +100,28 @@ let nextWeight = (existingWeights.length ? Math.max(...existingWeights) : 0) + 1
 for (const m of members) {
   const file = join(ENTITIES_DIR, `${m.entity_id}.md`);
   if (existsSync(file)) {
-    skipped.push(m.entity_id);
+    // Never rewrite a hand-curated page — but DO add the roster fields if
+    // they're missing, so the machine-readable export covers every member
+    // and not only the generated ones. Insert-only: three fields appended
+    // to the end of the [extra] block, nothing existing touched.
+    const text = readFileSync(file, "utf8");
+    if (/^government_office\s*=/m.test(text)) {
+      skipped.push(m.entity_id);
+      continue;
+    }
+    const fmEnd = text.indexOf("\n+++", 3);
+    if (fmEnd === -1) {
+      console.error(`build-government-roster: entities/${m.entity_id}.md has malformed front matter — skipped.`);
+      skipped.push(m.entity_id);
+      continue;
+    }
+    const fields =
+      `government_office = "${m.office}"\n` +
+      `government_party = "${m.party ?? ""}"\n` +
+      `government_snapshot = "${snapshot}"\n`;
+    const updatedText = text.slice(0, fmEnd + 1) + fields + text.slice(fmEnd + 1);
+    if (!dryRun) writeFileSync(file, updatedText);
+    updated.push(m.entity_id);
     continue;
   }
   const weight = nextWeight++;
@@ -151,5 +173,8 @@ nemění a sama o sobě nikdy nevede k dossieru.
 }
 
 console.log(
-  `build-government-roster: ${members.length} roster member(s); ${created.length} entity page(s) ${dryRun ? "would be created" : "created"}${created.length ? ` (${created.join(", ")})` : ""}; ${skipped.length} already existed and left untouched${skipped.length ? ` (${skipped.join(", ")})` : ""}.`,
+  `build-government-roster: ${members.length} roster member(s); ` +
+    `${created.length} page(s) ${dryRun ? "would be created" : "created"}${created.length ? ` (${created.join(", ")})` : ""}; ` +
+    `${updated.length} existing page(s) ${dryRun ? "would get" : "got"} roster fields added${updated.length ? ` (${updated.join(", ")})` : ""}; ` +
+    `${skipped.length} already complete${skipped.length ? ` (${skipped.join(", ")})` : ""}.`,
 );

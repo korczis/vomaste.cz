@@ -19,6 +19,9 @@ discovered_via = ["edge-macinka-motoriste", "edge-macinka-kauza2024", "edge-maci
 dossiers = ["macinka-turek", "petr-macinka"]
 claims = ["CLM-03", "CLM-24"]
 sources = ["SRC-11", "SRC-27"]
+government_office = "místopředseda vlády a ministr zahraničních věcí"
+government_party = "Motoristé sobě"
+government_snapshot = "2026-07-30"
 +++
 
 Hlavní subjekt autorizovaného dossieru. Tato stránka je kanonický záznam

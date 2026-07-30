@@ -19,6 +19,9 @@ discovered_via = ["edge-babis-vlada", "edge-babis-nehoda2026"]
 dossiers = ["macinka-turek", "petr-macinka", "filip-turek"]
 claims = ["CLM-12"]
 sources = ["SRC-06"]
+government_office = "předseda vlády"
+government_party = "ANO"
+government_snapshot = "2026-07-30"
 +++
 
 Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext.

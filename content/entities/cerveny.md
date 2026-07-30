@@ -20,6 +20,9 @@ dossiers = ["macinka-turek", "petr-macinka"]
 cluster = "politicke-role"
 claims = ["CLM-43"]
 sources = ["SRC-49", "SRC-50"]
+government_office = "ministr životního prostředí"
+government_party = "Motoristé sobě"
+government_snapshot = "2026-07-30"
 +++
 
 Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext.
