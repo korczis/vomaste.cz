@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 21 context entities across 3 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 34 context entities across 3 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## Andrej Babiš (premiér) (`babis`)
 
@@ -20,6 +20,16 @@ Generated from 21 context entities across 3 dossier(s). Regenerate with `npm run
 - Relations: 
   - edge-babis-nehoda2026 (babis -> nehoda2026, "vyzval k odpovědnosti", dossier: macinka-turek)
   - edge-babis-vlada (babis -> vlada, "premiér", dossier: macinka-turek)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Ivan Bednárik (ministr dopravy) (`bednarik`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Igor Červený (`cerveny`)
@@ -78,6 +88,26 @@ Generated from 21 context entities across 3 dossier(s). Regenerate with `npm run
   - edge-turek-greendeal (turek -> greendeal, "zmocněnec (do nehody)", dossier: macinka-turek)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Karel Havlíček (1. místopředseda vlády a ministr průmyslu a obchodu) (`havlicek`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Aleš Juchelka (ministr práce a sociálních věcí) (`juchelka`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Kauza 2024: fotografie a svícny (`kauza2024`)
 
 - Type: controversy
@@ -102,6 +132,16 @@ Generated from 21 context entities across 3 dossier(s). Regenerate with `npm run
   - edge-turek-kauza2025 (turek -> kauza2025, "subjekt", dossier: macinka-turek)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Oto Klempíř (ministr kultury) (`klempir`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Klub motoristů, z.s. (`klubmotoristu`)
 
 - Type: organization
@@ -112,6 +152,16 @@ Generated from 21 context entities across 3 dossier(s). Regenerate with `npm run
 - Relations: 
   - edge-klubmotoristu-motoriste (klubmotoristu -> motoriste, "dar 800 000 Kč (2024)", dossier: macinka-turek)
   - edge-macinka-klubmotoristu (macinka -> klubmotoristu, "statutární orgán", dossier: macinka-turek)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Lubomír Metnar (ministr vnitra) (`metnar`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Motoristé sobě (`motoriste`)
@@ -127,6 +177,16 @@ Generated from 21 context entities across 3 dossier(s). Regenerate with `npm run
   - edge-macinka-motoriste (macinka -> motoriste, "předseda", dossier: macinka-turek)
   - edge-motoriste-vlada (motoriste -> vlada, "člen koalice", dossier: macinka-turek)
   - edge-turek-motoriste (turek -> motoriste, "poslanec za", dossier: macinka-turek)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Zuzana Mrázová (ministryně pro místní rozvoj) (`mrazova`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Ministerstvo zdravotnictví (`mzdrav`)
@@ -192,6 +252,16 @@ Generated from 21 context entities across 3 dossier(s). Regenerate with `npm run
   - edge-turek-pavel (turek -> pavel, "hrozil žalobou (1/2026), nakonec nepodal (7/2026)", dossier: macinka-turek)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Robert Plaga (ministr školství, mládeže a tělovýchovy) (`plaga`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Policie ČR (`policie`)
 
 - Type: public_institution
@@ -203,6 +273,36 @@ Generated from 21 context entities across 3 dossier(s). Regenerate with `npm run
   - edge-kauza2025-policie (kauza2025 -> policie, "prověřování výroků i oznámení na Deník N odloženo (28. 7. 2026)", dossier: macinka-turek)
   - edge-nehoda2026-policie (nehoda2026 -> policie, "vyšetřování (výsledek k datu poslední kontroly neuzavřen)", dossier: macinka-turek)
   - edge-trestniozn-policie (trestniozn -> policie, "odloženo policií pro promlčení — procesní krok, ne rozhodnutí o vině; nepravomocné", dossier: macinka-turek)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Alena Schillerová (místopředsedkyně vlády a ministryně financí) (`schillerova`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Martin Šebestyán (ministr zemědělství) (`sebestyan`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Boris Šťastný (ministr pro sport a prevenci v oblasti zdraví) (`stastny`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Státní zastupitelství (`statni-zastupitelstvi`)
@@ -225,6 +325,16 @@ Generated from 21 context entities across 3 dossier(s). Regenerate with `npm run
 - Sources: SRC-34, SRC-35 (2 independent source families)
 - Relations: 
   - edge-zapperclub-szpi (zapper-club -> szpi, "odebrání certifikátu", dossier: macinka-turek)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Jeroným Tejc (ministr spravedlnosti) (`tejc`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Trestní oznámení (2025) (`trestniozn`)
@@ -252,6 +362,16 @@ Generated from 21 context entities across 3 dossier(s). Regenerate with `npm run
   - edge-motoriste-vlada (motoriste -> vlada, "člen koalice", dossier: macinka-turek)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Adam Vojtěch (ministr zdravotnictví) (`vojtech`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Zapper-Club s.r.o. (`zapper-club`)
 
 - Type: company
@@ -263,4 +383,14 @@ Generated from 21 context entities across 3 dossier(s). Regenerate with `npm run
   - edge-turek-zapperclub (turek -> zapper-club, "společník 2016–2023", dossier: macinka-turek)
   - edge-zapperclub-mzdrav (zapper-club -> mzdrav, "varování před přístrojem zapper", dossier: macinka-turek)
   - edge-zapperclub-szpi (zapper-club -> szpi, "odebrání certifikátu", dossier: macinka-turek)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Jaromír Zůna (místopředseda vlády a ministr obrany) (`zuna`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier

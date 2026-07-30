@@ -52,3 +52,16 @@
 {"logged_at":"2026-07-29","record_id":"edge-zapperclub-mzdrav","record_type":"relation","discovered_from":{"source_entity":"zapper-club","target_entity":"mzdrav","claims":["CLM-31"],"sources":["SRC-34","SRC-35"],"dossier":"macinka-turek"},"action":"created"}
 {"logged_at":"2026-07-29","record_id":"edge-zapperclub-szpi","record_type":"relation","discovered_from":{"source_entity":"zapper-club","target_entity":"szpi","claims":["CLM-31"],"sources":["SRC-34","SRC-35"],"dossier":"macinka-turek"},"action":"created"}
 {"logged_at":"2026-07-29","record_id":"edge-trestniozn-policie","record_type":"relation","discovered_from":{"source_entity":"trestniozn","target_entity":"policie","claims":["CLM-27"],"sources":["SRC-31","SRC-54"],"dossier":"macinka-turek"},"action":"created"}
+{"logged_at":"2026-07-30","record_id":"bednarik","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
+{"logged_at":"2026-07-30","record_id":"havlicek","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
+{"logged_at":"2026-07-30","record_id":"juchelka","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
+{"logged_at":"2026-07-30","record_id":"klempir","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
+{"logged_at":"2026-07-30","record_id":"metnar","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
+{"logged_at":"2026-07-30","record_id":"mrazova","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
+{"logged_at":"2026-07-30","record_id":"plaga","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
+{"logged_at":"2026-07-30","record_id":"schillerova","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
+{"logged_at":"2026-07-30","record_id":"sebestyan","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
+{"logged_at":"2026-07-30","record_id":"stastny","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
+{"logged_at":"2026-07-30","record_id":"tejc","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
+{"logged_at":"2026-07-30","record_id":"vojtech","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
+{"logged_at":"2026-07-30","record_id":"zuna","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}

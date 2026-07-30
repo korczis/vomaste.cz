@@ -245,6 +245,7 @@ required fields, and contains no truth-rating markup.`
 | `node scripts/dossier/migrate-cases-to-pages.mjs` | přegenerovat stránky kauz z front matter |
 | `node scripts/dossier/tag-subjects.mjs` | orazítkovat záznamy poli `subjects` |
 | `npm run scaffold:dossier -- --slug=<slug> --title="<Jméno>"` | vygeneruje placeholder skeleton nového entity dossieru (registry adresáře, `graph.toml`, `updates.toml`) — odmítne běžet, pokud `<Jméno>` není v autorizačním logu `AGENTS.md`; nezapisuje do `data/dossiers.toml` |
+| `npm run build:government-roster` | z `data/government.toml` vygeneruje kontextové entity stránky členů vlády (veřejná funkce z oficiálního zdroje, `publication_role = "context"`, **nikdy** dossier); existující stránky nikdy nepřepisuje; součást `npm run build` |
 
 ## Přidání obsahu do dossieru
 
