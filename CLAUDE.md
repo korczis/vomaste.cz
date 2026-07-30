@@ -70,9 +70,24 @@ entry; it does not replace reading and applying the rule.
   front-matter field with no template reading it, or a template field with
   no validator coverage, is a half-finished change — finish all three
   before calling it done.
-- When in doubt about whether a piece of content falls inside the
-  currently authorized scope, stop and ask — do not extend coverage to a
-  new person, company, or controversy on your own judgment.
+- **Discovery is unblocked; publishing findings is not.** Since 2026-07-30
+  these are two different acts and only the second is gated:
+  - **Recording that a registry relation exists** — a context entity page
+    (`publication_role = "context"`, `dossier_enabled = false`,
+    `dossiers = []`, no claims) for a company or person a public register
+    or an already-cited source itself names — needs **no** authorization
+    and no asking. `scripts/osint/expand-entity.mjs` does this from ARES;
+    `build-government-roster.mjs` already did it for the cabinet.
+    `validate-authorization.mjs` permits exactly this shape and blocks only
+    the promotion of such an entity to a dossier subject.
+  - **Writing claims about someone, or opening a dossier on them**, still
+    requires an explicit, dated authorization from the site owner in
+    `AGENTS.md`, written by a human through `authorize-entity.mjs`. No
+    automation may create one, and "the registry is public" is not a
+    substitute for it.
+  When in doubt about which of the two you are doing, you are writing a
+  claim — stop and ask. Personal data (dates of birth, home addresses) is
+  never copied out of a registry in either case.
 - Projekt je Open Intelligence Commons — přečti si a řiď se
   `docs/constitution/OPEN_INTELLIGENCE_COMMONS.md` (závazné invarianty
   shrnuty v AGENTS.md). Nad všemi kompromisy pohodlí dominují dvě

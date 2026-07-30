@@ -338,6 +338,31 @@ reputable, independent sources have already published. It never
 automatically extends to further named third parties beyond what the
 cited reporting itself discloses.
 
+### Context entities are not coverage (2026-07-30)
+
+"Cover no one by default" governs **dossiers and claims**, not the entity
+registry. A context entity — `publication_role = "context"`,
+`dossier_enabled = false`, `dossier_status = "not_authorized"`,
+`dossiers = []`, carrying no claim — records only that a relation exists
+in a public register or in reporting this site already cites. Creating one
+needs no authorization and no case-by-case approval; it is generated
+automatically by `scripts/dossier/build-government-roster.mjs` (public
+office) and `scripts/osint/expand-entity.mjs` (ARES registry
+neighbourhood).
+
+The line this preserves is the one that matters: **a claim about a person,
+or a dossier on them, still needs an explicit dated authorization written
+by a human**. `validate-authorization.mjs` enforces the split — it accepts
+context entities freely and fails the build if one acquires
+`dossier_enabled` or `dossier_status = "authorized"` without a matching
+record in `data/authorizations.toml`.
+
+Two constraints ride along, both enforced in code rather than by
+convention: dates of birth and residential addresses are never copied out
+of a registry, and an existing entity page is never overwritten by a
+generator — a slug collision with a namesake is reported for human review,
+never resolved automatically.
+
 **Process for the next authorization**: when the site owner authorizes a
 new subject or scope extension on the record, append a new dated
 subsection to the "Content about real parties" log below — do not edit or
