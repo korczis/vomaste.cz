@@ -72,6 +72,20 @@
    templates/dossier-source.html and templates/dossier-sources-index.html.
    Kept in one place instead of duplicated inline <style> blocks. */
 @layer components {
+  /* Navigation count badge. Values come from
+     data/generated/navigation-metrics.json at build time — never from JS,
+     never hand-written. tabular-nums is what makes the numbers form one
+     straight right-hand axis instead of jittering per digit width. */
+  .nav-count-badge {
+    @apply inline-flex min-w-7 shrink-0 items-center justify-center rounded-full
+           border border-white/10 bg-white/5 px-1.5 py-0.5 text-[11px]
+           font-semibold leading-none text-white/70;
+    font-variant-numeric: tabular-nums;
+  }
+  a[aria-current="page"] .nav-count-badge {
+    @apply border-[#f3e5c0]/30 bg-[#f3e5c0]/10 text-[#f3e5c0];
+  }
+
   /* Landing page hero (templates/index.html). Vlastní ilustrace projektu
      (public domain, static/images/hero-investigator.jpg — investigátor nad
      mapami a grafem vazeb, žádný text v obraze); čitelnost textu zajišťuje

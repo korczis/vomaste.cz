@@ -45,6 +45,11 @@ const items = blocks("items")
     matchPrefix: str(b, "match_prefix"),
     order: num(b, "order"),
     icon: str(b, "icon"),
+    // Metric NAME only — the value is resolved in the template from
+    // data/generated/navigation-metrics.json, so a count can never be
+    // hand-written into navigation.toml.
+    countMetric: str(b, "count_metric"),
+    countNoun: str(b, "count_noun"),
     children: [],
   }))
   .sort((a, b) => a.order - b.order);

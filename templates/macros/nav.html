@@ -7,7 +7,12 @@
     overrides the item's own label (used for a dossier's "Přehled dossieru"
     self-link inside its expanded subtree). -#}
 
-{%- macro nav_link(item, depth, active_id, label="") -%}
+{#- `metrics` is data/generated/navigation-metrics.json (built by
+    scripts/data/build-navigation-metrics.mjs). The macro takes the WHOLE map
+    and resolves item.countMetric itself, so desktop and mobile cannot end up
+    resolving the same item differently — there is one lookup, in one place.
+    Pass metrics={} to render without badges. -#}
+{%- macro nav_link(item, depth, active_id, label="", metrics="") -%}
 {%- set is_active = item.id == active_id -%}
 {%- set pad = "px-4" -%}
 {%- set size = 20 -%}
@@ -18,10 +23,35 @@
 {%- set anchor = item.anchor | default(value="") -%}
 {%- set href = get_url(path=item.path) -%}
 {%- if anchor -%}{%- set href = href ~ "#" ~ anchor -%}{%- endif -%}
-<a href="{{ href | safe }}" title="{% if label %}{{ label }}{% else %}{{ item.label }}{% endif %}"
+{%- set text = label | default(value="") -%}
+{%- if not text -%}{%- set text = item.label -%}{%- endif -%}
+{#- Resolve the named metric. A missing key renders no badge rather than a
+    zero: absent and zero are different facts, and only the build-time
+    validator is allowed to decide a declared metric is broken. -#}
+{%- set metric_id = item.countMetric | default(value="") -%}
+{%- set has_count = false -%}
+{%- set count = 0 -%}
+{%- if metric_id and metrics and metrics.metrics is defined -%}
+  {%- if metrics.metrics[metric_id] is defined -%}
+    {%- set_global has_count = true -%}
+    {%- set_global count = metrics.metrics[metric_id].value -%}
+  {%- endif -%}
+{%- endif -%}
+{%- set noun = item.countNoun | default(value="položek") -%}
+{#- The count also goes in `title`, which is what stays reachable when the
+    sidebar is collapsed to icons and the badge itself is hidden. -#}
+<a href="{{ href | safe }}" title="{{ text }}{% if has_count %} — {{ count }} {{ noun }}{% endif %}"
+   {% if has_count %}aria-label="{{ text }}, {{ noun }}: {{ count }}"{% endif %}
    {% if is_active %}aria-current="page"{% endif %}
-   class="flex items-center gap-3 py-2.5 text-sm no-underline {{ pad }} {% if is_active %}bg-white/5 text-[#f3e5c0]{% else %}text-white/60 hover:bg-white/5 hover:text-white{% endif %}">
+   class="grid grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-3 py-2.5 text-sm no-underline {{ pad }} {% if is_active %}bg-white/5 text-[#f3e5c0]{% else %}text-white/60 hover:bg-white/5 hover:text-white{% endif %}">
   <svg width="{{ size }}" height="{{ size }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="shrink-0" aria-hidden="true"><path d="{{ item.icon }}"/></svg>
-  <span class="min-w-0 flex-1 truncate">{% if label %}{{ label }}{% else %}{{ item.label }}{% endif %}</span>
+  <span class="min-w-0 truncate">{{ text }}</span>
+  {%- if has_count %}
+  {#- aria-hidden: the number is already in the link's aria-label, so a
+      screen reader must not read it twice. -#}
+  <span class="nav-count-badge justify-self-end" data-metric-id="{{ metric_id }}" data-count="{{ count }}" aria-hidden="true">{{ count }}</span>
+  {%- else %}
+  <span aria-hidden="true"></span>
+  {%- endif %}
 </a>
 {%- endmacro nav_link -%}

@@ -18,6 +18,11 @@
 # (viewBox 0 0 24 24), rendered inside a shared <svg> wrapper in the template —
 # keeping icon markup out of the templates.
 #
+# `count_metric` names a metric in scripts/data/navigation-metrics.registry.mjs;
+# the VALUE never lives here. Resolved at build time from
+# data/generated/navigation-metrics.json. An item without it gets no badge.
+# `count_noun` is used only for the accessible label, never rendered visibly.
+#
 # `match_prefix` drives active-state detection: the deepest matching prefix in
 # the whole generated tree wins, so /dossiers/petr-macinka/sources/... marks
 # "Zdroje" under Petr Macinka, not the top-level "Dossiery". "/" is
@@ -39,6 +44,8 @@ path = "@/dossiers/_index.md"
 match_prefix = "/dossiers/"
 order = 15
 icon = "M4 19.5A2.5 2.5 0 0 1 6.5 17H20 M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"
+count_metric = "dossiers.total"
+count_noun = "dossierů"
 
 [[items]]
 id = "entities"
@@ -47,6 +54,8 @@ path = "@/entities/_index.md"
 match_prefix = "/entities/"
 order = 16
 icon = "M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z M4 21a8 8 0 0 1 16 0"
+count_metric = "entities.total"
+count_noun = "entit"
 
 [[items]]
 id = "map"
@@ -55,6 +64,8 @@ path = "@/map/_index.md"
 match_prefix = "/map/"
 order = 17
 icon = "M9 20l-5.447-2.724A1 1 0 0 1 3 16.382V5.618a1 1 0 0 1 1.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0 0 21 18.382V7.618a1 1 0 0 0-.553-.894L15 4m0 13V4m0 0L9 7"
+count_metric = "relations.total"
+count_noun = "vztahů"
 
 [[items]]
 id = "concepts"

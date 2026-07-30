@@ -106,6 +106,10 @@
     without touching a template. Dossiers hang under "Dossiery" as subtrees;
     no person is ever a top-level item. -#}
 {%- set nav_data = load_data(path="data/generated/navigation.json") -%}
+{#- Build-time counts for the navigation badges. Loaded once and passed into
+    the shared macro, so desktop and mobile can never resolve the same item to
+    different numbers. See docs/architecture/navigation-metrics.md. -#}
+{%- set nav_metrics = load_data(path="data/generated/navigation-metrics.json") -%}
 {%- set nav_items = nav_data.items -%}
 {#- 404 nemá current_path v kontextu (Zola) — default mimo "/" i mimo
     všechny match_prefixy: nic není aktivní, sidebar zůstává docked. -#}
@@ -285,7 +289,7 @@
         data/generated/navigation.json, so nothing here knows what a dossier
         or a concept is. -#}
     {% for item in nav_items %}
-    {{ nav::nav_link(item=item, depth=0, active_id=active_id) }}
+    {{ nav::nav_link(item=item, depth=0, active_id=active_id, metrics=nav_metrics) }}
     {%- for child in item.children %}
     {%- if child.children | length > 0 %}
     <details class="group" {% if child.id in active_trail %}open{% endif %}>
@@ -295,14 +299,14 @@
         <span class="text-white/30 transition-transform group-open:rotate-90" aria-hidden="true">›</span>
       </summary>
       {%- if child.overviewLabel %}
-      {{ nav::nav_link(item=child, depth=1, active_id=active_id, label=child.overviewLabel) }}
+      {{ nav::nav_link(item=child, depth=1, active_id=active_id, label=child.overviewLabel, metrics=nav_metrics) }}
       {%- endif %}
       {%- for grandchild in child.children %}
-      {{ nav::nav_link(item=grandchild, depth=2, active_id=active_id) }}
+      {{ nav::nav_link(item=grandchild, depth=2, active_id=active_id, metrics=nav_metrics) }}
       {%- endfor %}
     </details>
     {%- else %}
-    {{ nav::nav_link(item=child, depth=1, active_id=active_id) }}
+    {{ nav::nav_link(item=child, depth=1, active_id=active_id, metrics=nav_metrics) }}
     {%- endif %}
     {%- endfor %}
     {% endfor %}
