@@ -53,6 +53,7 @@ Autorizace: viz AGENTS.md, „Structural change, 2026-07-29 (second)".
 
 | ID | Titul | Commit | Owner | Stav |
 |----|-------|--------|-------|------|
+| T-023 | Autorizace AUTH-2026-07-30-M…T (8 zbývajících členů vlády, per subjekt on the record) + skeletony dossierů Havlíček/Zůna/Tejc/Mrázová/Vojtěch/Červený/Plaga/Šebestyán — kabinet kompletně pokryt (16/16) | c1e2664 | W-7 | merged |
 | T-020 | Globální command bar — search-core.js (diakritika, AND tokeny, ID-first ranking, skupiny), zkratky / a Cmd/Ctrl+K, seskupený listbox se zvýrazněním a aria-live, 8 testů | (viz git log task/T-020) | W-7 | merged |
 | T-022 | Skeletony dossierů Juchelka/Bednárik/Šťastný (AUTH-2026-07-30-B) — CLM-01/SRC-01 z otevřených oficiálních profilů, HOLDS_ROLE, entity pages subject/developing, OG karty + 2 fixy scaffolderu (evidence template, chybějící registr entit) | f753dab | W-7 | merged |
 | T-017 | Fáze 1 workbench mise — 8 JSON Schemas + validate:schemas (AJV) v build gate, fix build-global-graph (self-canonical entity grafy v globální mapě), verify:export resolvuje @id proti routes.json, docs/data-contract.md | 80c0a67 | W-7 | merged |
