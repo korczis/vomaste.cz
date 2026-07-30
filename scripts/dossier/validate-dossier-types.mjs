@@ -62,10 +62,43 @@ for (const record of registry) {
       err(tag(`is dossier_type "entity" but show_in_primary_navigation is not true — every entity dossier must be primary-nav-worthy.`));
     }
 
-    // The load-bearing check: an entity dossier must own NO physical
-    // per-record files — every claim/source/case/gap/relation it shows
-    // must be a filtered view over its canonical_dossier, never a copy.
+    // The load-bearing check, and what it actually protects: no entity
+    // dossier may hold a COPY of a record that is canonically owned
+    // somewhere else. Two shapes satisfy that, and both are legitimate:
+    //
+    //   * projection (the historical macinka-turek pair):
+    //     canonical_dossier points at a DIFFERENT dossier, so every
+    //     record it shows must be a filtered view over that dossier and
+    //     it must own zero physical files — a file here would be a
+    //     duplicate of the canonical one, which is the actual defect.
+    //
+    //   * self-canonical (every dossier authorized after that pair,
+    //     starting with oto-klempir): canonical_dossier == its own slug,
+    //     so it IS the canonical home of its records and owning files is
+    //     not just allowed but required. There is nothing to duplicate.
+    //
+    // The zero-files rule therefore applies to projections only. This is
+    // the same invariant, stated precisely, not a relaxation of it — and
+    // it is the shape T-001's migration is moving the historical pair
+    // towards, so a third dossier no longer has to be modelled as a
+    // projection of two unrelated people.
+    const isSelfCanonical = record.canonicalDossier === record.slug;
     const base = join(DOSSIERS_ROOT, record.slug);
+    if (isSelfCanonical) {
+      // Still enforce the thing that makes self-canonical meaningful: it
+      // must actually own records, or it is an empty shell claiming to be
+      // a canonical home.
+      let ownsAny = false;
+      for (const { dir, pattern } of RECORD_DIRS) {
+        try {
+          if (readdirSync(join(base, dir)).some((f) => pattern.test(f))) { ownsAny = true; break; }
+        } catch { /* directory absent — keep looking */ }
+      }
+      if (!ownsAny) {
+        err(tag(`is self-canonical (canonical_dossier == "${record.slug}") but owns no records at all — a canonical dossier with nothing in it should not be registered yet.`));
+      }
+      continue;
+    }
     for (const { dir, pattern } of RECORD_DIRS) {
       let files;
       try {

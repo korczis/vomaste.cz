@@ -71,9 +71,18 @@ relations_total = ${counts.relationsTotal}
 function generateStatsForEntity(slug, record) {
   const CANONICAL_BASE = join(DOSSIERS_ROOT, record.canonicalDossier);
   const subject = record.subject;
+  // A SELF-canonical entity dossier (canonical_dossier == its own slug —
+  // every dossier authorized after the historical macinka-turek pair)
+  // owns its records outright, so there is nothing to filter: each record
+  // under it belongs to it by definition. Subject-filtering such a
+  // dossier would report 0 for records that simply never needed a
+  // `subjects` tag, since that tag exists only to split ONE canonical
+  // dossier between TWO projected people.
+  const isSelfCanonical = record.canonicalDossier === slug;
 
   function countFiltered(dir, pattern) {
     const files = readdirSync(join(CANONICAL_BASE, dir)).filter((f) => pattern.test(f));
+    if (isSelfCanonical) return files.length;
     let n = 0;
     for (const f of files) {
       const text = readFileSync(join(CANONICAL_BASE, dir, f), "utf8");
