@@ -66,7 +66,7 @@
     <p class="mb-3 text-xs text-white/50">Zdroje jednoho vydavatele se vzájemně nepočítají jako nezávislá potvrzení.</p>
     <ul class="flex flex-wrap gap-2">
       {% for s in same_outlet %}
-      <li><a href="{{ s.permalink | safe }}" title="{{ s.description | default(value='') | truncate(length=100) }}" class="inline-block rounded bg-white/5 px-2 py-1 font-mono text-xs text-[#f3e5c0] no-underline hover:bg-white/10">{{ s.extra.src_id }}</a></li>
+      <li><a href="{{ s.permalink | safe }}" title="{{ s.description | default(value='') | truncate(length=100) }}" class="id-chip inline-block rounded bg-white/5 px-2 py-1 font-mono text-xs text-[#f3e5c0] no-underline hover:bg-white/10">{{ s.extra.src_id }}</a></li>
       {% endfor %}
     </ul>
   </section>
@@ -91,7 +91,7 @@
     <p class="mb-3 text-xs text-white/50">Tyto zdroje čerpají ze stejného původu dat — počítají se jako jedno potvrzení, ne jako nezávislá vícenásobná potvrzení.</p>
     <ul class="flex flex-wrap gap-2">
       {% for s in siblings %}
-      <li><a href="{{ s.permalink | safe }}" class="inline-block rounded bg-white/5 px-2 py-1 text-xs text-[#f3e5c0] no-underline hover:bg-white/10">{{ s.extra.src_id }} — {{ s.extra.outlet }}</a></li>
+      <li><a href="{{ s.permalink | safe }}" class="id-chip inline-block rounded bg-white/5 px-2 py-1 text-xs text-[#f3e5c0] no-underline hover:bg-white/10">{{ s.extra.src_id }} — {{ s.extra.outlet }}</a></li>
       {% endfor %}
     </ul>
   </section>

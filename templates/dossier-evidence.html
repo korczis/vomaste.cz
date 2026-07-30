@@ -61,7 +61,7 @@
         <span class="mt-2 flex flex-wrap gap-1">
           {% for c in s.extra.claims %}
             {% set clm_page = claims.pages | filter(attribute="extra.clm_id", value=c) | first %}
-            {% if clm_page %}<a href="{{ clm_page.permalink | safe }}" class="rounded bg-white/5 px-1.5 py-0.5 font-mono text-[0.65rem] text-[#f3e5c0] no-underline hover:bg-white/10">{{ c }}</a>{% endif %}
+            {% if clm_page %}<a href="{{ clm_page.permalink | safe }}" class="id-chip rounded bg-white/5 px-1.5 py-0.5 font-mono text-[0.65rem] text-[#f3e5c0] no-underline hover:bg-white/10">{{ c }}</a>{% endif %}
           {% endfor %}
         </span>
       </div>

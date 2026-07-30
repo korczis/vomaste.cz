@@ -123,6 +123,10 @@
   .stat-tile-link:hover, .stat-tile-link:focus-visible { border-color: var(--accent); background-color: rgb(255 255 255 / 0.03); }
 
   .registry-card {
+    /* min-width:0 + zalamování: grid item má default min-width:auto, takže
+       jediná dlouhá cesta nebo URL uvnitř karty roztáhne celý track nad
+       šířku viewportu (projevilo se na /dokumentace/ při 320-360px). */
+    min-width: 0; overflow-wrap: anywhere;
     display: flex; flex-direction: column; border-radius: 0.75rem;
     border: 1px solid var(--border); background: var(--surface-elevated);
     padding: 1rem; text-decoration: none; transition: border-color 0.15s, background-color 0.15s;
@@ -218,12 +222,15 @@
   .dot-ongoing { background: rgb(192,132,252); }
 
   .fs-btn {
+    /* Dotykový cíl: 2.75rem na prstu (WCAG 2.5.8 / Apple HIG), 1.75rem tam,
+       kde je k dispozici přesné polohovací zařízení. */
     display: inline-flex; align-items: center; justify-content: center;
-    width: 1.75rem; height: 1.75rem; border-radius: 0.375rem;
+    width: 2.75rem; height: 2.75rem; border-radius: 0.375rem;
     background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.15);
     color: rgba(255,255,255,0.7); font-size: 0.9rem; cursor: pointer; line-height: 1;
     transition: background-color 0.15s, color 0.15s;
   }
+  @media (pointer: fine) { .fs-btn { width: 1.75rem; height: 1.75rem; } }
   .fs-btn:hover { background: rgba(255,255,255,0.12); color: #fff; }
   .fs-box { transition: none; }
   .fs-box.fs-active,
@@ -295,13 +302,21 @@
      (assets/js/modules/claims-filter.js). Progressive enhancement — the
      anchor itself is a normal, always-present link. */
   .clm-copy-btn {
+    /* 1.25rem byl pod hranicí dotykového cíle; na prstu 2.25rem, u přesného
+       polohovacího zařízení zůstává kompaktní (viz .fs-btn níže). */
     display: inline-flex; align-items: center; justify-content: center;
-    width: 1.25rem; height: 1.25rem; margin-left: 0.35rem; padding: 0;
+    width: 2.25rem; height: 2.25rem; margin-left: 0.35rem; padding: 0;
     font-size: 0.7rem; line-height: 1; border-radius: 0.25rem;
     background: transparent; border: none; color: var(--text-faint); cursor: pointer;
     vertical-align: middle;
   }
+  @media (pointer: fine) { .clm-copy-btn { width: 1.25rem; height: 1.25rem; } }
   .clm-copy-btn:hover { color: var(--text); background: var(--surface-elevated-hover); }
+
+  /* Samostatný identifikátorový odkaz (CLM-07, SRC-15, GAP-03…). Není to
+     odkaz uvnitř věty, takže platí minimum dotykového cíle 24 px — text
+     zůstává stejně velký, roste jen klikací plocha. */
+  .id-chip { display: inline-flex; align-items: center; min-height: 1.5rem; }
 
   /* Relationship-graph kind/status filter chips (assets/js/modules/relationship-graph.js).
      aria-pressed carries the on/off state for assistive tech; the visual
@@ -310,6 +325,7 @@
     border-radius: 9999px; border: 1px solid var(--border-strong);
     background: var(--surface-elevated); color: var(--text-muted);
     padding: 0.2rem 0.65rem; font-size: 0.7rem; cursor: pointer;
+    min-height: 2rem; display: inline-flex; align-items: center;
   }
   .cy-chip[aria-pressed="true"] { background: rgba(243,229,192,0.12); border-color: rgba(243,229,192,0.4); color: var(--accent); }
   .cy-chip:hover { border-color: var(--border-strong); color: var(--text); }
