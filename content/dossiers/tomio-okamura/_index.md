@@ -34,7 +34,7 @@ title = "Trestní kauza předvolebních plakátů SPD"
 status = "status-disputed"
 label = "Nepravomocné, hnutí se odvolává"
 summary = "OS pro Prahu 1 uznal SPD vinným podněcováním k nenávisti kvůli dvěma plakátům a uložil 3 miliony; rozsudek není pravomocný. Okamurovo vlastní stíhání je přerušené, Sněmovna ho nevydala."
-claims = ["CLM-01", "CLM-02", "CLM-03", "CLM-04"]
+claims = ["CLM-01", "CLM-02", "CLM-03", "CLM-04", "CLM-05", "CLM-06"]
 subjects = ["okamura"]
 +++
 
@@ -56,10 +56,12 @@ osobou**, není pravomocný, a Okamurovo vlastní stíhání je **přerušené**
 
 | ID | Tvrzení | Stav | Zdroje |
 |---|---|---|---|
-| <a id="clm-01"></a>[CLM-01](@/dossiers/tomio-okamura/claims/clm-01.md) | Obvodní soud pro Prahu 1 dne 3. června 2026 uznal hnutí SPD vinným z podněcování k nenávisti kvůli dvěma předvolebním plakátům a uložil peněžitý trest 3 miliony korun; soudkyně podle citovaného zpravodajství výslovně uvedla, že rozsudek není pravomocný | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-01](@/dossiers/tomio-okamura/sources/src-01.md) |
-| <a id="clm-02"></a>[CLM-02](@/dossiers/tomio-okamura/claims/clm-02.md) | Rozsudek byl vynesen nad hnutím SPD jako právnickou osobou; Okamura čelí obžalobě individuálně, jeho stíhání je však přerušené, protože ho Poslanecká sněmovna odmítla vydat, a jeho jednání má soud projednávat zvlášť. Nevydání je parlamentní procesní krok, ne rozhodnutí o vině či nevině | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-01](@/dossiers/tomio-okamura/sources/src-01.md) |
+| <a id="clm-01"></a>[CLM-01](@/dossiers/tomio-okamura/claims/clm-01.md) | Obvodní soud pro Prahu 1 dne 3. června 2026 uznal hnutí SPD vinným z podněcování k nenávisti kvůli dvěma předvolebním plakátům a uložil peněžitý trest 3 miliony korun; soudkyně podle citovaného zpravodajství výslovně uvedla, že rozsudek není pravomocný | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-01](@/dossiers/tomio-okamura/sources/src-01.md), [SRC-02](@/dossiers/tomio-okamura/sources/src-02.md) |
+| <a id="clm-02"></a>[CLM-02](@/dossiers/tomio-okamura/claims/clm-02.md) | Rozsudek byl vynesen nad hnutím SPD jako právnickou osobou; Okamura čelí obžalobě individuálně, jeho stíhání je však přerušené, protože ho Poslanecká sněmovna odmítla vydat, a jeho jednání má soud projednávat zvlášť. Nevydání je parlamentní procesní krok, ne rozhodnutí o vině či nevině | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-01](@/dossiers/tomio-okamura/sources/src-01.md), [SRC-02](@/dossiers/tomio-okamura/sources/src-02.md) |
 | <a id="clm-03"></a>[CLM-03](@/dossiers/tomio-okamura/claims/clm-03.md) | SPD i Okamura vinu odmítli s tím, že plakáty podle nich pouze pojmenovávaly reálné společenské problémy; hnutí oznámilo odvolání a připravenost obrátit se na Ústavní soud | <span class="status-badge status-quote">CITACE</span> | [SRC-01](@/dossiers/tomio-okamura/sources/src-01.md) |
 | <a id="clm-04"></a>[CLM-04](@/dossiers/tomio-okamura/claims/clm-04.md) | Okamura podle citovaného zpravodajství kritizoval soudkyni s tím, že rozsudek měla připravený předem a že diktuje, jak se mají vést politické kampaně | <span class="status-badge status-quote">CITACE</span> | [SRC-01](@/dossiers/tomio-okamura/sources/src-01.md) |
+| <a id="clm-05"></a>[CLM-05](@/dossiers/tomio-okamura/claims/clm-05.md) | Obhajoba SPD u soudu argumentovala, že plakáty pravdivě pojmenovávaly společenské problémy, kampaň označila za „satiru a alegorii" a znalecké posudky obžaloby zpochybnila jako účelově zkreslené s návodným policejním zadáním | <span class="status-badge status-quote">CITACE</span> | [SRC-02](@/dossiers/tomio-okamura/sources/src-02.md) |
+| <a id="clm-06"></a>[CLM-06](@/dossiers/tomio-okamura/claims/clm-06.md) | SPD podle citovaného zdroje dříve vyhrálo samostatný spor s Ministerstvem vnitra, v němž soud shledal, že její výroky nešířily strach | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-02](@/dossiers/tomio-okamura/sources/src-02.md) |
 
 ## Trestní kauza předvolebních plakátů SPD {#kauza-plakaty-spd}
 
@@ -90,6 +92,22 @@ Obsah plakátů je popsán ve zdroji
 ([SRC-01](@/dossiers/tomio-okamura/sources/src-01.md)). Osoby na nich
 vyobrazené se v dossieru **nejmenují a jmenovat nebudou** — nejsou
 subjekty tohoto pokrytí.
+
+Dvě věci, které k obrazu patří a bez nichž by byl jednostranný. Obhajoba
+SPD u soudu argumentovala, že plakáty pravdivě pojmenovávaly společenské
+problémy, kampaň označila za „satiru a alegorii" a znalecké posudky
+obžaloby zpochybnila jako účelově zkreslené
+([CLM-05](@/dossiers/tomio-okamura/claims/clm-05.md)). A hnutí podle
+citovaného zdroje dříve **vyhrálo samostatný spor** s Ministerstvem
+vnitra, v němž soud shledal, že jeho výroky nešířily strach
+([CLM-06](@/dossiers/tomio-okamura/claims/clm-06.md)) — jiná věc, jiné
+řízení, ale patří sem, protože bez ní by dossier ukazoval jen jednu
+stranu soudní bilance.
+
+Tvrzení o samotném rozsudku a o procesním stavu Okamurova stíhání jsou
+nově doložena **dvěma nezávislými vydavateli** (Deník.cz a Česká
+justice), proto nesou stav `CORROBORATED`. Ostatní tvrzení zůstávají
+`1 ZDROJ`.
 
 ## Co tento přehled nezkoumal {#mezery}
 
