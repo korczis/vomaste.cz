@@ -114,6 +114,33 @@ subject = false
 claims = ["CLM-27"]
 sources = ["SRC-12"]
 
+[[nodes]]
+id = "blakey-finance"
+type = "company"
+label = "BLAKEY FINANCE LIMITED (BVI)"
+depth = 1
+subject = false
+claims = ["CLM-31"]
+sources = ["SRC-13"]
+
+[[nodes]]
+id = "boyne-holding"
+type = "company"
+label = "BOYNE HOLDING LLC (Washington, D.C.)"
+depth = 1
+subject = false
+claims = ["CLM-31"]
+sources = ["SRC-13"]
+
+[[nodes]]
+id = "scp-bigaud"
+type = "company"
+label = "SCP Bigaud (Monako)"
+depth = 1
+subject = false
+claims = ["CLM-31", "CLM-33"]
+sources = ["SRC-13"]
+
 [[edges]]
 id = "edge-babis-vlada"
 source = "babis"
@@ -223,3 +250,33 @@ label = "prověřováním pověřena NCOZ (24. 5. 2026)"
 status = "contextual"
 claims = ["CLM-27"]
 sources = ["SRC-12"]
+
+[[edges]]
+id = "edge-babis-blakey"
+source = "babis"
+target = "blakey-finance"
+relation = "HOLDS_INTEREST_IN"
+label = "vklad 15 mil. EUR (17. 9. 2009) — offshore struktura sama o sobě není protiprávní"
+status = "contextual"
+claims = ["CLM-31"]
+sources = ["SRC-13"]
+
+[[edges]]
+id = "edge-blakey-boyne"
+source = "blakey-finance"
+target = "boyne-holding"
+relation = "HOLDS_INTEREST_IN"
+label = "úvěr na nákupy nemovitostí ve Francii"
+status = "contextual"
+claims = ["CLM-31"]
+sources = ["SRC-13"]
+
+[[edges]]
+id = "edge-boyne-bigaud"
+source = "boyne-holding"
+target = "scp-bigaud"
+relation = "HOLDS_INTEREST_IN"
+label = "financování pořízení pozemku; od 8/2019 SCP Bigaud ze 100 % vlastněna I.M.O.D.I.M."
+status = "contextual"
+claims = ["CLM-31", "CLM-33"]
+sources = ["SRC-13"]

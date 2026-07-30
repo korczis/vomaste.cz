@@ -88,8 +88,8 @@ period = "2022–2026"
 title = "Nemovitosti ve Francii: předběžné vyšetřování PNF"
 status = "status-single"
 label = "Předběžné vyšetřování, bez obvinění"
-summary = "PNF vede od 24. 2. 2022 předběžné vyšetřování pro podezření z daňového podvodu a praní peněz kolem nákupu nemovitostí na jihu Francie; o stíhání nebylo rozhodnuto a Babiš pochybení odmítá."
-claims = ["CLM-13", "CLM-14", "CLM-15"]
+summary = "PNF vede od 24. 2. 2022 předběžné vyšetřování pro podezření z daňového podvodu a praní peněz kolem nákupu nemovitostí na jihu Francie; o stíhání nebylo rozhodnuto a Babiš pochybení odmítá. Majetkovou strukturu nákupů (BLAKEY FINANCE, BOYNE HOLDING, SCP Bigaud) popisuje nezávisle projekt Pandora Papers; offshore struktura sama o sobě není protiprávní a o nezákonnosti nákupů žádný orgán nerozhodl."
+claims = ["CLM-13", "CLM-14", "CLM-15", "CLM-31", "CLM-33", "CLM-34"]
 subjects = ["babis"]
 
 [[extra.cases]]
@@ -162,6 +162,11 @@ jednou v poznámce.
 | <a id="clm-28"></a>[CLM-28](@/dossiers/andrej-babis/claims/clm-28.md) | Řízení je podle téhož zdroje vedeno na neznámého pachatele, nikdo v něm k datu vydání zprávy není obviněn a Andrej Babiš v něm není uveden jako podezřelý; zahájení trestního řízení není obvinění ani rozhodnutí o vině | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-12](@/dossiers/andrej-babis/sources/src-12.md) |
 | <a id="clm-29"></a>[CLM-29](@/dossiers/andrej-babis/claims/clm-29.md) | Podnětem k řízení bylo podle téhož zdroje trestní oznámení Pirátů z února 2026 k tvrzenému střetu zájmů premiéra; řízení pokrývá pouze evropské dotace, národní dotace do působnosti evropské prokuratury nespadají | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-12](@/dossiers/andrej-babis/sources/src-12.md) |
 | <a id="clm-30"></a>[CLM-30](@/dossiers/andrej-babis/claims/clm-30.md) | Mluvčí Státního zemědělského intervenčního fondu Eva Češpiva k tomu podle téhož zdroje uvedla: „SZIF od Úřadu evropského veřejného žalobce ani od jiných orgánů činných v trestním řízení neobdržel žádnou oficiální výzvu ke spolupráci.“ | <span class="status-badge status-quote">CITACE</span> | [SRC-12](@/dossiers/andrej-babis/sources/src-12.md) |
+
+| <a id="clm-31"></a>[CLM-31](@/dossiers/andrej-babis/claims/clm-31.md) | Podle investigativního textu z projektu Pandora Papers byly nemovitosti na jihu Francie pořízeny přes řetězec společností BLAKEY FINANCE LIMITED (Britské Panenské ostrovy, založena 7. 8. 2009), BOYNE HOLDING LLC (Washington, D.C., 10. 8. 2009) a monacká SCP Bigaud (10. 8. 2009); Babiš podle textu vložil 17. 9. 2009 do BLAKEY FINANCE 15 milionů eur, které posloužily jako úvěr pro nákupy | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-13](@/dossiers/andrej-babis/sources/src-13.md) |
+| <a id="clm-32"></a>[CLM-32](@/dossiers/andrej-babis/claims/clm-32.md) | Andrej Babiš k investicím ve Francii napsal 28. 7. 2013 na sociální síti: „Investujeme po Evropě. Po restauraci Paloma postavíme u Mougins hotel spa 5*“ — doloženo je, že to napsal | <span class="status-badge status-quote">CITACE</span> | [SRC-13](@/dossiers/andrej-babis/sources/src-13.md) |
+| <a id="clm-33"></a>[CLM-33](@/dossiers/andrej-babis/claims/clm-33.md) | Podle téhož textu Babiš 13. 6. 2018 převedl svůj podíl 0,1 % v SCP Bigaud na Moniku Babišovou a od srpna 2019 je SCP Bigaud ze 100 % vlastněna společností I.M.O.D.I.M.; jde o záznam vlastnické změny, ne o tvrzení o pochybení kohokoli | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-13](@/dossiers/andrej-babis/sources/src-13.md) |
+| <a id="clm-34"></a>[CLM-34](@/dossiers/andrej-babis/claims/clm-34.md) | Podle téhož textu poskytovatel offshore služeb ALCOGAL označil Babiše za vysoce rizikového klienta a v roce 2016 podal hlášení o podezřelé transakci s odkazem na dotační kauzu Čapí hnízdo; jde o interní hodnocení a hlášení soukromé firmy, ne o zjištění státního orgánu, obvinění ani rozhodnutí o vině | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-13](@/dossiers/andrej-babis/sources/src-13.md) |
 
 ## Čapí hnízdo — dotační kauza {#kauza-capi-hnizdo}
 
@@ -361,6 +366,35 @@ neříká nic o vině.
 
 Babiš jakékoli pochybení odmítá a tvrdí, že nákupy proběhly v souladu se
 zákony ([CLM-15](@/dossiers/andrej-babis/claims/clm-15.md)).
+
+### Jak byly nemovitosti pořízeny
+
+Majetkovou stránku popisuje nezávisle na soudním zpravodajství
+investigativní text z projektu Pandora Papers
+([SRC-13](@/dossiers/andrej-babis/sources/src-13.md)). Nákupy proběhly
+přes řetězec tří společností založených v srpnu 2009 — BLAKEY FINANCE
+LIMITED na Britských Panenských ostrovech, BOYNE HOLDING LLC ve
+Washingtonu, D.C., a monacká SCP Bigaud —, do nichž Babiš 17. 9. 2009
+vložil 15 milionů eur, jež posloužily jako úvěr na pořízení nemovitostí
+([CLM-31](@/dossiers/andrej-babis/claims/clm-31.md)). Vlastnictví se
+později měnilo: v červnu 2018 převedl svůj podíl 0,1 % v SCP Bigaud na
+Moniku Babišovou a od srpna 2019 je monacká společnost ze 100 % vlastněna
+firmou I.M.O.D.I.M. ([CLM-33](@/dossiers/andrej-babis/claims/clm-33.md)).
+Sám o investicích ve Francii veřejně psal už v roce 2013
+([CLM-32](@/dossiers/andrej-babis/claims/clm-32.md)).
+
+**Co z toho neplyne.** Offshore struktura sama o sobě není protiprávní
+a citovaný text netvrdí, že nákupy byly nezákonné; žádný orgán o jejich
+nezákonnosti podle citovaných zdrojů nerozhodl. Totéž platí o tom, že
+poskytovatel offshore služeb ALCOGAL označil Babiše za vysoce rizikového
+klienta a v roce 2016 podal hlášení o podezřelé transakci
+([CLM-34](@/dossiers/andrej-babis/claims/clm-34.md)) — to je **interní
+krok soukromé firmy**, ne zjištění státního orgánu, obvinění ani
+rozhodnutí o vině. Uvádí se, protože je to doložený fakt o průběhu věci,
+ne proto, že by cokoli dokazoval.
+
+Text je z října 2021; procesní stav francouzského vyšetřování popisuje
+novější [SRC-05](@/dossiers/andrej-babis/sources/src-05.md) výše.
 
 ## Co tento přehled nezkoumal {#mezery}
 

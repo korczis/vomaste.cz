@@ -5,7 +5,7 @@ system. This is provenance, not a publication decision — see
 `data/authorizations.toml` and `scripts/dossier/authorize-entity.mjs`
 for the only thing that actually authorizes a dossier.
 
-101 record(s) logged across 2 day(s). 0 new since last run.
+107 record(s) logged across 2 day(s). 6 new since last run.
 
 ## 2026-07-29
 
@@ -113,3 +113,9 @@ for the only thing that actually authorizes a dossier.
 - `edge-agrofert-eppo` (relation, created)
 - `edge-agrofert-komise` (relation, created)
 - `edge-eppo-ncoz` (relation, created)
+- `blakey-finance` (entity, created)
+- `boyne-holding` (entity, created)
+- `scp-bigaud` (entity, created)
+- `edge-babis-blakey` (relation, created)
+- `edge-blakey-boyne` (relation, created)
+- `edge-boyne-bigaud` (relation, created)

@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 41 context entities across 11 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 44 context entities across 11 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## Agrofert (`agrofert`)
 
@@ -24,6 +24,30 @@ Generated from 41 context entities across 11 dossier(s). Regenerate with `npm ru
   - edge-agrofert-szif (agrofert -> szif, "SZIF obnovil administraci žádostí o dotace (4/2026)", dossier: andrej-babis)
   - edge-babis-agrofert (babis -> agrofert, "vlastnické vazby; od 2/2026 akcie ve svěřenském fondu RSVP Trust, míra vlivu sporná", dossier: andrej-babis)
   - edge-rsvp-agrofert (rsvp-trust -> agrofert, "drží akcie Agrofertu (vloženy 2/2026)", dossier: andrej-babis)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## BLAKEY FINANCE LIMITED (BVI) (`blakey-finance`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-31
+- Sources: SRC-13 (1 independent source family)
+- Relations: 
+  - edge-babis-blakey (babis -> blakey-finance, "vklad 15 mil. EUR (17. 9. 2009) — offshore struktura sama o sobě není protiprávní", dossier: andrej-babis)
+  - edge-blakey-boyne (blakey-finance -> boyne-holding, "úvěr na nákupy nemovitostí ve Francii", dossier: andrej-babis)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## BOYNE HOLDING LLC (Washington, D.C.) (`boyne-holding`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-31
+- Sources: SRC-13 (1 independent source family)
+- Relations: 
+  - edge-blakey-boyne (blakey-finance -> boyne-holding, "úvěr na nákupy nemovitostí ve Francii", dossier: andrej-babis)
+  - edge-boyne-bigaud (boyne-holding -> scp-bigaud, "financování pořízení pozemku; od 8/2019 SCP Bigaud ze 100 % vlastněna I.M.O.D.I.M.", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Čapí hnízdo (dotační kauza) (`capi-hnizdo`)
@@ -351,6 +375,17 @@ Generated from 41 context entities across 11 dossier(s). Regenerate with `npm ru
 - Sources: SRC-02 (1 independent source family)
 - Relations: 
   - edge-rsvp-agrofert (rsvp-trust -> agrofert, "drží akcie Agrofertu (vloženy 2/2026)", dossier: andrej-babis)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## SCP Bigaud (Monako) (`scp-bigaud`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-31, CLM-33
+- Sources: SRC-13 (1 independent source family)
+- Relations: 
+  - edge-boyne-bigaud (boyne-holding -> scp-bigaud, "financování pořízení pozemku; od 8/2019 SCP Bigaud ze 100 % vlastněna I.M.O.D.I.M.", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Martin Šebestyán (ministr zemědělství) (`sebestyan`)
