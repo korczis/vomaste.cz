@@ -8,17 +8,31 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 30 context entities across 11 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 36 context entities across 11 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## Agrofert (`agrofert`)
 
 - Type: company
 - Status: not_authorized
 - Appears in: andrej-babis
-- Claims: CLM-04, CLM-05
-- Sources: SRC-02 (1 independent source family)
+- Claims: CLM-04, CLM-05, CLM-16
+- Sources: SRC-02, SRC-06 (2 independent source families)
 - Relations: 
-  - edge-babis-agrofert (babis -> agrofert, "akcie vloženy do svěřenského fondu RSVP Trust (2026-02)", dossier: andrej-babis)
+  - edge-agrofert-kostelecke (agrofert -> kostelecke-uzeniny, "firma ze skupiny Agrofert", dossier: andrej-babis)
+  - edge-agrofert-szif (agrofert -> szif, "SZIF obnovil administraci žádostí o dotace (4/2026)", dossier: andrej-babis)
+  - edge-babis-agrofert (babis -> agrofert, "vlastnické vazby; od 2/2026 akcie ve svěřenském fondu RSVP Trust, míra vlivu sporná", dossier: andrej-babis)
+  - edge-rsvp-agrofert (rsvp-trust -> agrofert, "drží akcie Agrofertu (vloženy 2/2026)", dossier: andrej-babis)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Čapí hnízdo (dotační kauza) (`capi-hnizdo`)
+
+- Type: controversy
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-01
+- Sources: SRC-01 (1 independent source family)
+- Relations: 
+  - edge-babis-capihnizdo (babis -> capi-hnizdo, "obžalovaný; stíhání přerušeno po nevydání Sněmovnou — procesní krok, ne rozhodnutí o vině", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Igor Červený (`cerveny`)
@@ -123,6 +137,18 @@ Generated from 30 context entities across 11 dossier(s). Regenerate with `npm ru
   - edge-macinka-klubmotoristu (macinka -> klubmotoristu, "statutární orgán", dossier: macinka-turek)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Kostelecké uzeniny (`kostelecke-uzeniny`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-18
+- Sources: SRC-07 (1 independent source family)
+- Relations: 
+  - edge-agrofert-kostelecke (agrofert -> kostelecke-uzeniny, "firma ze skupiny Agrofert", dossier: andrej-babis)
+  - edge-kostelecke-nss (kostelecke-uzeniny -> nss, "NSS potvrdil zrušení dotace (11/2025); rozhodnutí o dotaci, ne o vině osoby", dossier: andrej-babis)
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Motoristé sobě (`motoriste`)
 
 - Type: political_party
@@ -210,6 +236,17 @@ Generated from 30 context entities across 11 dossier(s). Regenerate with `npm ru
   - edge-metnar-nku (metnar -> nku, "návrh ukončit policejní ochranu úřadu (2026)", dossier: lubomir-metnar)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Nejvyšší správní soud (`nss`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-18
+- Sources: SRC-07 (1 independent source family)
+- Relations: 
+  - edge-kostelecke-nss (kostelecke-uzeniny -> nss, "NSS potvrdil zrušení dotace (11/2025); rozhodnutí o dotaci, ne o vině osoby", dossier: andrej-babis)
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Petr Pavel (prezident) (`pavel`)
 
 - Type: person
@@ -232,6 +269,17 @@ Generated from 30 context entities across 11 dossier(s). Regenerate with `npm ru
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Národní finanční prokuratura (PNF, Francie) (`pnf`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-13
+- Sources: SRC-05 (1 independent source family)
+- Relations: 
+  - edge-babis-pnf (babis -> pnf, "předběžné vyšetřování ve Francii; k datu kontroly bez obvinění", dossier: andrej-babis)
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Policie ČR (`policie`)
 
 - Type: public_institution
@@ -243,6 +291,17 @@ Generated from 30 context entities across 11 dossier(s). Regenerate with `npm ru
   - edge-kauza2025-policie (kauza2025 -> policie, "prověřování výroků i oznámení na Deník N odloženo (28. 7. 2026)", dossier: macinka-turek)
   - edge-nehoda2026-policie (nehoda2026 -> policie, "vyšetřování (výsledek k datu poslední kontroly neuzavřen)", dossier: macinka-turek)
   - edge-trestniozn-policie (trestniozn -> policie, "odloženo policií pro promlčení — procesní krok, ne rozhodnutí o vině; nepravomocné", dossier: macinka-turek)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## RSVP Trust (`rsvp-trust`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-04
+- Sources: SRC-02 (1 independent source family)
+- Relations: 
+  - edge-rsvp-agrofert (rsvp-trust -> agrofert, "drží akcie Agrofertu (vloženy 2/2026)", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Martin Šebestyán (ministr zemědělství) (`sebestyan`)
@@ -275,6 +334,17 @@ Generated from 30 context entities across 11 dossier(s). Regenerate with `npm ru
 - Sources: SRC-31, SRC-54 (2 independent source families)
 - Relations: 
   - edge-trestniozn-statnizastupitelstvi (trestniozn -> statni-zastupitelstvi, "OSZ pro Prahu 4 odložení oznámilo; o stížnosti ženy rozhoduje státní zástupkyně", dossier: macinka-turek)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Státní zemědělský intervenční fond (`szif`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-10
+- Sources: SRC-04 (1 independent source family)
+- Relations: 
+  - edge-agrofert-szif (agrofert -> szif, "SZIF obnovil administraci žádostí o dotace (4/2026)", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## SZPI (`szpi`)
@@ -315,7 +385,7 @@ Generated from 30 context entities across 11 dossier(s). Regenerate with `npm ru
 
 - Type: public_institution
 - Status: not_authorized
-- Appears in: macinka-turek, petr-macinka, filip-turek, oto-klempir, alena-schillerova, ales-juchelka, ivan-bednarik, boris-stastny
+- Appears in: macinka-turek, petr-macinka, filip-turek, oto-klempir, alena-schillerova, ales-juchelka, ivan-bednarik, boris-stastny, andrej-babis
 - Claims: CLM-03, CLM-01
 - Sources: SRC-11, SRC-01 (2 independent source families)
 - Relations: 
@@ -326,6 +396,7 @@ Generated from 30 context entities across 11 dossier(s). Regenerate with `npm ru
   - edge-juchelka-vlada (juchelka -> vlada, "ministr práce a sociálních věcí", dossier: ales-juchelka)
   - edge-bednarik-vlada (bednarik -> vlada, "ministr dopravy", dossier: ivan-bednarik)
   - edge-stastny-vlada (stastny -> vlada, "ministr pro sport, prevenci a zdraví", dossier: boris-stastny)
+  - edge-babis-vlada (babis -> vlada, "předseda vlády", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Adam Vojtěch (ministr zdravotnictví) (`vojtech`)
