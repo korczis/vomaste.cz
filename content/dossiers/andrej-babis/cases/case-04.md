@@ -1,6 +1,6 @@
 +++
-title = "Nemovitosti ve Francii: předběžné vyšetřování PNF"
-description = "PNF vede od 24. 2. 2022 předběžné vyšetřování pro podezření z daňového podvodu a praní peněz kolem nákupu nemovitostí na jihu Francie; o stíhání nebylo rozhodnuto a Babiš pochybení odmítá. Majetkovou "
+title = "Evropské dotace: pozastavené proplácení a řízení evropské prokuratury"
+description = "Národní fond administraci dotací skupině Agrofert obnovil, Evropská komise k 5. 6. 2026 neproplatila nic a dopisem z 20. 5. 2026 si vyžádala vysvětlení struktury fondu. Evropská prokuratura zahájila 24. 5. 2026 trestní řízení k vyplácení evropských dotací — vedené na neznámého pachatele, bez obviněného; zahájení řízení není obvinění ani rozhodnutí o vině."
 template = "dossier-case.html"
 weight = 4
 
@@ -9,13 +9,13 @@ dossier = "andrej-babis"
 record_type = "case"
 lang = "cs"
 case_id = "CASE-04"
-anchor = "kauza-nemovitosti-francie"
-period = "2022–2026"
-status = "status-single"
-label = "Předběžné vyšetřování, bez obvinění"
-summary = "PNF vede od 24. 2. 2022 předběžné vyšetřování pro podezření z daňového podvodu a praní peněz kolem nákupu nemovitostí na jihu Francie; o stíhání nebylo rozhodnuto a Babiš pochybení odmítá. Majetkovou strukturu nákupů (BLAKEY FINANCE, BOYNE HOLDING, SCP Bigaud) popisuje nezávisle projekt Pandora Papers; offshore struktura sama o sobě není protiprávní a o nezákonnosti nákupů žádný orgán nerozhodl."
-claims = ["CLM-13", "CLM-14", "CLM-15", "CLM-31", "CLM-33", "CLM-34"]
-sources = ["SRC-05", "SRC-13"]
+anchor = "kauza-evropske-dotace"
+period = "2025–"
+status = "status-disputed"
+label = "Otevřené; řízení na neznámého pachatele, nikdo není obviněn"
+summary = "Národní fond administraci dotací skupině Agrofert obnovil, Evropská komise k 5. 6. 2026 neproplatila nic a dopisem z 20. 5. 2026 si vyžádala vysvětlení struktury fondu. Evropská prokuratura zahájila 24. 5. 2026 trestní řízení k vyplácení evropských dotací — vedené na neznámého pachatele, bez obviněného; zahájení řízení není obvinění ani rozhodnutí o vině."
+claims = ["CLM-25", "CLM-26", "CLM-27", "CLM-28", "CLM-29"]
+sources = ["SRC-10", "SRC-11", "SRC-12"]
 subjects = ["babis"]
 +++
 

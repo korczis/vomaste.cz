@@ -15,10 +15,10 @@ dossier_enabled = false
 dossier_status = "not_authorized"
 coverage_state = "contextual"
 discovered_at = "2026-07-30"
-discovered_via = ["edge-agrofert-komise", "edge-synbiol-komise"]
+discovered_via = ["edge-agrofert-komise", "edge-synbiol-komise", "edge-babis-komise-audit"]
 dossiers = ["andrej-babis"]
-claims = ["CLM-25", "CLM-26"]
-sources = ["SRC-10", "SRC-11"]
+claims = ["CLM-25", "CLM-26", "CLM-43", "CLM-46"]
+sources = ["SRC-10", "SRC-11", "SRC-19", "SRC-20"]
 +++
 
 Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext.

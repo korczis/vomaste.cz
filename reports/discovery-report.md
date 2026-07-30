@@ -5,7 +5,7 @@ system. This is provenance, not a publication decision — see
 `data/authorizations.toml` and `scripts/dossier/authorize-entity.mjs`
 for the only thing that actually authorizes a dossier.
 
-131 record(s) logged across 2 day(s). 0 new since last run.
+135 record(s) logged across 2 day(s). 4 new since last run.
 
 ## 2026-07-29
 
@@ -143,3 +143,7 @@ for the only thing that actually authorizes a dossier.
 - `faltynek` (entity, created)
 - `edge-faltynek-babis` (relation, created)
 - `edge-faltynek-capihnizdo` (relation, created)
+- `ustavni-soud` (entity, created)
+- `edge-babis-komise-audit` (relation, created)
+- `edge-kostelecke-szif` (relation, created)
+- `edge-kostelecke-ustavnisoud` (relation, created)

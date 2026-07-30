@@ -1,6 +1,6 @@
 +++
-title = "Čapí hnízdo — dotační kauza"
-description = "Vrchní soud v Praze podruhé zrušil zprošťující rozsudek a vrátil věc městskému soudu se závazným právním názorem; ten 4. 5. 2026 uznal nepravomocně vinnou spoluobžalovanou Janu Nagyovou. Rozsudek není"
+title = "Co zůstalo mimo fond: SynBiol, Hartenberg a dividenda 4,25 mld."
+description = "Do svěřenského fondu vložil pouze Agrofert — SynBiol (podíl 87,75 %), fond Hartenberg a nemovitosti zůstaly mimo. V roce 2025, tedy před vkladem, mu Agrofert vyplatil dividendu 5 mld. Kč v hrubém (4,25 mld. po zdanění). Evropská komise sleduje střet zájmů i u SynBiolu a Hartenbergu. Výplata dividendy i ponechání aktiv mimo fond jsou samy o sobě legální; sporný je zákonný rozsah povinnosti, o němž žádný orgán podle citovaných zdrojů nerozhodl."
 template = "dossier-case.html"
 weight = 3
 
@@ -9,13 +9,13 @@ dossier = "andrej-babis"
 record_type = "case"
 lang = "cs"
 case_id = "CASE-03"
-anchor = "kauza-capi-hnizdo"
-period = "2025–"
+anchor = "kauza-synbiol-dividenda"
+period = "2025–2026"
 status = "status-disputed"
-label = "Nepravomocný rozsudek nad spoluobžalovanou, o Babišovi nerozhodnuto"
-summary = "Vrchní soud v Praze podruhé zrušil zprošťující rozsudek a vrátil věc městskému soudu se závazným právním názorem; ten 4. 5. 2026 uznal nepravomocně vinnou spoluobžalovanou Janu Nagyovou. Rozsudek není pravomocný, netýká se Andreje Babiše, jehož stíhání je po nevydání Sněmovnou přerušeno, a oba obžalovaní vinu odmítají."
-claims = ["CLM-01", "CLM-02", "CLM-03", "CLM-07", "CLM-20"]
-sources = ["SRC-01", "SRC-03", "SRC-08", "SRC-09"]
+label = "Otevřené; legální kroky, sporný rozsah povinnosti"
+summary = "Do svěřenského fondu vložil pouze Agrofert — SynBiol (podíl 87,75 %), fond Hartenberg a nemovitosti zůstaly mimo. V roce 2025, tedy před vkladem, mu Agrofert vyplatil dividendu 5 mld. Kč v hrubém (4,25 mld. po zdanění). Evropská komise sleduje střet zájmů i u SynBiolu a Hartenbergu. Výplata dividendy i ponechání aktiv mimo fond jsou samy o sobě legální; sporný je zákonný rozsah povinnosti, o němž žádný orgán podle citovaných zdrojů nerozhodl."
+claims = ["CLM-37", "CLM-39", "CLM-41", "CLM-42"]
+sources = ["SRC-15", "SRC-16", "SRC-17"]
 subjects = ["babis"]
 +++
 

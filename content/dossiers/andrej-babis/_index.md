@@ -16,6 +16,47 @@ subjects = ["Andrej Babiš"]
 updated = "2026-07-30"
 reviewed_at = "2026-07-30"
 
+[[extra.timeline]]
+date = "2021-04-24"
+title = "Závěrečná zpráva auditu EK: ovládání fondů, dotace po 9. 2. 2017 neoprávněné"
+anchor = "kauza-audity-ek"
+dot = "dot-disputed"
+subjects = ["babis"]
+
+[[extra.timeline]]
+date = "2022-07-20"
+title = "Komise uzavřela audit REGC414CZ0133 po provedení doporučení"
+anchor = "kauza-audity-ek"
+dot = "dot-fact"
+subjects = ["babis"]
+
+[[extra.timeline]]
+date = "2026-04-01"
+title = "Ústavní soud odmítl stížnost Kosteleckých uzenin; správní větev skončena"
+anchor = "kauza-kostelecke"
+dot = "dot-fact"
+subjects = ["babis"]
+
+[[extra.cases]]
+anchor = "kauza-audity-ek"
+period = "2019–2022"
+title = "Audity Evropské komise ke střetu zájmů"
+status = "status-disputed"
+label = "Uzavřeno 2022 splněním doporučení — ne zproštěním"
+summary = "Auditní proces zahájený 2019 na podnět nevládní organizace; závěrečná zpráva z dubna 2021 uzavřela, že Babiš ovládá svěřenské fondy a jejich prostřednictvím Agrofert, a označila dotace firmám skupiny po 9. 2. 2017 za neoprávněné s doporučením stoprocentní finanční opravy. České ministerstvo se závěry nesouhlasilo, žádosti o platbu ale pozastavilo. Komise audit uzavřela 20. 7. 2022 po provedení doporučení — audit je kontrolní nástroj, ne soud, a nerozhoduje o trestní odpovědnosti."
+claims = ["CLM-43", "CLM-44", "CLM-45", "CLM-46"]
+subjects = ["babis"]
+
+[[extra.cases]]
+anchor = "kauza-kostelecke"
+period = "2018–2026"
+title = "Kostelecké uzeniny: zrušená dotace z Programu rozvoje venkova"
+status = "status-corroborated"
+label = "Pravomocně skončeno; spor o nárok na dotaci, ne o vině"
+summary = "Dotaci z Programu rozvoje venkova z roku 2018 na inovaci technologie výroby masných výrobků schválil SZIF a Ministerstvo zemědělství ji zrušilo pro střet zájmů tehdejšího premiéra. Nejvyšší správní soud kasační stížnost 28. 11. 2025 zamítl s tím, že nepřímý vliv lze vykonávat i přes svěřenské fondy; Ústavní soud stížnost 1. 4. 2026 odmítl jako zjevně neopodstatněnou. Rozhodnuto je o nároku na dotaci, ne o trestní odpovědnosti kohokoli."
+claims = ["CLM-18", "CLM-19", "CLM-47", "CLM-48"]
+subjects = ["babis"]
+
 [[extra.cases]]
 anchor = "kauza-synbiol-dividenda"
 period = "2025–2026"
@@ -262,6 +303,87 @@ opět **přímým** vlastníkem SynBiolu
 Obojí je nutné čtenáři podat přesně: **monitoring a pokyn nejsou zjištění
 o porušení pravidel**, a údaj o notářském zápisu je výklad veřejných
 registrů, na který upozornil politik — ne závěr Komise ani jiného orgánu.
+
+| <a id="clm-43"></a>[CLM-43](@/dossiers/andrej-babis/claims/clm-43.md) | Podle závěrečné zprávy auditu Evropské komise z dubna 2021 jmenoval Babiš všechny činitele svěřenských fondů a může je odvolat, a proto oba fondy — a jejich prostřednictvím Agrofert — ovládá; dotace ze strukturálních fondů a Evropského sociálního fondu firmám skupiny jsou proto po 9. únoru 2017, kdy nabyla účinnosti novela zákona o střetu zájmů, podle auditorů neoprávněné a zpráva doporučila stoprocentní finanční opravu. Audit je kontrolní nástroj Komise, ne soud, a netýká se trestní odpovědnosti | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-19](@/dossiers/andrej-babis/sources/src-19.md) |
+| <a id="clm-44"></a>[CLM-44](@/dossiers/andrej-babis/claims/clm-44.md) | Podle téhož zdroje Ministerstvo pro místní rozvoj se závěry auditu nesouhlasilo, přesto na žádost Evropské komise pozastavilo předkládání žádostí o platbu u projektů označených za problémové; Babiš závěry auditu odmítl | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-19](@/dossiers/andrej-babis/sources/src-19.md) |
+| <a id="clm-45"></a>[CLM-45](@/dossiers/andrej-babis/claims/clm-45.md) | V tiskové zprávě Evropského parlamentu k plenární rozpravě z 19. května 2021 uvedl komisař Johannes Hahn, že na žádnou z operací dotčených auditem dosud nebyly vykázány žádné výdaje a že rozpočet EU „byl a zůstává plně chráněn“; poslanci požadovali přísnější kontrolní mechanismy. Rozprava a usnesení Parlamentu jsou politickým aktem, ne soudním zjištěním | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-18](@/dossiers/andrej-babis/sources/src-18.md) |
+| <a id="clm-46"></a>[CLM-46](@/dossiers/andrej-babis/claims/clm-46.md) | Podle stanoviska organizace, která audit v roce 2018 podnětem iniciovala, obdržely české úřady 20. července 2022 dopis, podle kterého útvary Evropské komise považují audit číslo REGC414CZ0133 za uzavřený, protože všechna doporučení byla „plně a náležitě provedena“; uzavření auditu znamená provedení doporučení, nikoli zproštění ani zjištění, že ke střetu zájmů nedošlo | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-20](@/dossiers/andrej-babis/sources/src-20.md) |
+| <a id="clm-47"></a>[CLM-47](@/dossiers/andrej-babis/claims/clm-47.md) | Ústavní soud dne 1. dubna 2026 odmítl ústavní stížnost Kosteleckých uzenin jako zjevně neopodstatněnou; podle odůvodnění Babiš v době výkonu funkce premiéra v letech 2017–2021 naplňoval znaky ovládající osoby Agrofertu majetkovým podílem i faktickým vlivem přes svěřenské fondy, a námitku podjatosti soud odmítl. Jde o rozhodnutí o nároku na dotaci ve správním soudnictví, ne o trestní odpovědnosti | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-21](@/dossiers/andrej-babis/sources/src-21.md) |
+| <a id="clm-48"></a>[CLM-48](@/dossiers/andrej-babis/claims/clm-48.md) | Spornou podporou byla dotace z Programu rozvoje venkova z roku 2018 na inovaci technologie výroby masných výrobků, kterou nejprve schválil Státní zemědělský intervenční fond a následně ji zrušilo Ministerstvo zemědělství s odkazem na střet zájmů tehdejšího premiéra; podle citovaného zdroje se tento případ liší od jiných sporů skupiny, kde se firmy domáhaly zadržených dotací | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-22](@/dossiers/andrej-babis/sources/src-22.md) |
+
+## Audity Evropské komise (2019–2022) {#kauza-audity-ek}
+
+Nejstarší vrstva tématu střetu zájmů není soudní ani trestní, ale
+**kontrolní**: auditní proces Evropské komise, zahájený počátkem roku
+2019 na podnět nevládní organizace z roku 2018.
+
+Závěrečná zpráva z dubna 2021 dospěla k závěru, že Babiš jmenoval všechny
+činitele svěřenských fondů a může je odvolat, a proto oba fondy — a jejich
+prostřednictvím Agrofert — **ovládá**; dotace ze strukturálních fondů a
+Evropského sociálního fondu firmám skupiny jsou proto po **9. únoru
+2017**, kdy nabyla účinnosti novela zákona o střetu zájmů, podle auditorů
+neoprávněné, a zpráva doporučila stoprocentní finanční opravu
+([CLM-43](@/dossiers/andrej-babis/claims/clm-43.md),
+[SRC-19](@/dossiers/andrej-babis/sources/src-19.md)). Ministerstvo pro
+místní rozvoj se závěry nesouhlasilo, přesto předkládání žádostí o platbu
+u označených projektů pozastavilo; Babiš závěry odmítl
+([CLM-44](@/dossiers/andrej-babis/claims/clm-44.md)).
+
+**Co audit je a co není.** Je to kontrolní a správní nástroj Komise, ne
+soud. Jeho závěr se týká **nároku na evropské peníze**, ne trestní
+odpovědnosti — o té audit nerozhoduje a rozhodovat nemůže. Tento dossier
+z něj proto nikde nevyvozuje nic o vině.
+
+V květnu 2021 k věci proběhla plenární rozprava Evropského parlamentu.
+Komisař Johannes Hahn v ní uvedl, že na žádnou z operací dotčených
+auditem nebyly dosud vykázány žádné výdaje a že rozpočet EU „byl a
+zůstává plně chráněn“; poslanci požadovali přísnější kontrolní
+mechanismy ([CLM-45](@/dossiers/andrej-babis/claims/clm-45.md),
+[SRC-18](@/dossiers/andrej-babis/sources/src-18.md)). I tady platí
+rozlišení: Parlament je **politický orgán**, jeho rozprava a usnesení
+nejsou právním zjištěním.
+
+Auditní proces skončil **20. července 2022**: podle dopisu, který české
+úřady obdržely, považují útvary Komise audit číslo REGC414CZ0133 za
+uzavřený, protože všechna doporučení byla „plně a náležitě provedena“
+([CLM-46](@/dossiers/andrej-babis/claims/clm-46.md)). Zdrojem téhle
+informace je stanovisko organizace, která audit iniciovala — tedy
+**strany sporu**, ne nezávislé redakce ani úředního dokumentu; faktické
+údaje se z něj přebírají, hodnocení ne. A hlavně: uzavření auditu
+znamená, že **doporučení byla provedena**. Není to zproštění, není to
+zjištění, že ke střetu zájmů nedošlo, a není to rozhodnutí o něčí
+odpovědnosti.
+
+## Kostelecké uzeniny: dotace zrušena, potvrzeno až Ústavním soudem {#kauza-kostelecke}
+
+Nejdále dotažený jednotlivý spor o konkrétní dotaci prošel celou
+správní větví až k Ústavnímu soudu.
+
+Šlo o dotaci z **Programu rozvoje venkova z roku 2018** na inovaci
+technologie výroby masných výrobků. Nejprve ji schválil Státní zemědělský
+intervenční fond, následně ji Ministerstvo zemědělství zrušilo s odkazem
+na střet zájmů tehdejšího premiéra
+([CLM-48](@/dossiers/andrej-babis/claims/clm-48.md),
+[SRC-22](@/dossiers/andrej-babis/sources/src-22.md)). Tím se tenhle
+případ liší od jiných sporů skupiny, kde se firmy naopak domáhaly
+zadržených dotací.
+
+Nejvyšší správní soud **28. listopadu 2025** kasační stížnost zamítl
+([CLM-18](@/dossiers/andrej-babis/claims/clm-18.md)) s odůvodněním, že
+nepřímý vliv lze vykonávat i prostřednictvím svěřenských fondů
+([CLM-19](@/dossiers/andrej-babis/claims/clm-19.md)). Ústavní soud pak
+**1. dubna 2026** odmítl ústavní stížnost firmy jako zjevně
+neopodstatněnou a potvrdil, že Babiš v letech 2017–2021 naplňoval znaky
+ovládající osoby Agrofertu majetkovým podílem i faktickým vlivem přes
+fondy; námitku podjatosti odmítl
+([CLM-47](@/dossiers/andrej-babis/claims/clm-47.md),
+[SRC-21](@/dossiers/andrej-babis/sources/src-21.md)).
+
+**Co je tím rozhodnuto a co ne.** Rozhodnuto je, že konkrétní firma
+neměla na konkrétní dotaci nárok. Není tím rozhodnuto nic o trestní
+odpovědnosti kohokoli — správní soudnictví o ní nerozhoduje —, a zrušení
+dotace není sankcí uloženou fyzické osobě. Že je věc pravomocně skončená,
+platí pouze pro tento jeden dotační spor.
 
 ## Veřejné funkce {#verejne-funkce}
 

@@ -13,12 +13,12 @@ subject = false
 publication_role = "context"
 dossier_enabled = false
 dossier_status = "not_authorized"
-coverage_state = "discovered"
+coverage_state = "contextual"
 discovered_at = "2026-07-30"
-discovered_via = ["edge-agrofert-szif"]
+discovered_via = ["edge-agrofert-szif", "edge-kostelecke-szif"]
 dossiers = ["andrej-babis"]
-claims = ["CLM-10"]
-sources = ["SRC-04"]
+claims = ["CLM-10", "CLM-48"]
+sources = ["SRC-04", "SRC-22"]
 +++
 
 Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext.

@@ -1,6 +1,6 @@
 +++
-title = "Co zůstalo mimo fond: SynBiol, Hartenberg a dividenda 4,25 mld."
-description = "Do svěřenského fondu vložil pouze Agrofert — SynBiol (podíl 87,75 %), fond Hartenberg a nemovitosti zůstaly mimo. V roce 2025, tedy před vkladem, mu Agrofert vyplatil dividendu 5 mld. Kč v hrubém (4,2"
+title = "Audity Evropské komise ke střetu zájmů"
+description = "Auditní proces zahájený 2019 na podnět nevládní organizace; závěrečná zpráva z dubna 2021 uzavřela, že Babiš ovládá svěřenské fondy a jejich prostřednictvím Agrofert, a označila dotace firmám skupiny po 9. 2. 2017 za neoprávněné s doporučením stoprocentní finanční opravy. České ministerstvo se závěry nesouhlasilo, žádosti o platbu ale pozastavilo. Komise audit uzavřela 20. 7. 2022 po provedení doporučení — audit je kontrolní nástroj, ne soud, a nerozhoduje o trestní odpovědnosti."
 template = "dossier-case.html"
 weight = 1
 
@@ -9,13 +9,13 @@ dossier = "andrej-babis"
 record_type = "case"
 lang = "cs"
 case_id = "CASE-01"
-anchor = "kauza-synbiol-dividenda"
-period = "2025–2026"
+anchor = "kauza-audity-ek"
+period = "2019–2022"
 status = "status-disputed"
-label = "Otevřené; legální kroky, sporný rozsah povinnosti"
-summary = "Do svěřenského fondu vložil pouze Agrofert — SynBiol (podíl 87,75 %), fond Hartenberg a nemovitosti zůstaly mimo. V roce 2025, tedy před vkladem, mu Agrofert vyplatil dividendu 5 mld. Kč v hrubém (4,25 mld. po zdanění). Evropská komise sleduje střet zájmů i u SynBiolu a Hartenbergu. Výplata dividendy i ponechání aktiv mimo fond jsou samy o sobě legální; sporný je zákonný rozsah povinnosti, o němž žádný orgán podle citovaných zdrojů nerozhodl."
-claims = ["CLM-37", "CLM-39", "CLM-41", "CLM-42"]
-sources = ["SRC-15", "SRC-17", "SRC-16"]
+label = "Uzavřeno 2022 splněním doporučení — ne zproštěním"
+summary = "Auditní proces zahájený 2019 na podnět nevládní organizace; závěrečná zpráva z dubna 2021 uzavřela, že Babiš ovládá svěřenské fondy a jejich prostřednictvím Agrofert, a označila dotace firmám skupiny po 9. 2. 2017 za neoprávněné s doporučením stoprocentní finanční opravy. České ministerstvo se závěry nesouhlasilo, žádosti o platbu ale pozastavilo. Komise audit uzavřela 20. 7. 2022 po provedení doporučení — audit je kontrolní nástroj, ne soud, a nerozhoduje o trestní odpovědnosti."
+claims = ["CLM-43", "CLM-44", "CLM-45", "CLM-46"]
+sources = ["SRC-18", "SRC-19", "SRC-20"]
 subjects = ["babis"]
 +++
 

@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 40 context entities across 21 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 41 context entities across 21 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## Agrofert (`agrofert`)
 
@@ -102,10 +102,11 @@ Generated from 40 context entities across 21 dossier(s). Regenerate with `npm ru
 - Type: public_institution
 - Status: not_authorized
 - Appears in: andrej-babis
-- Claims: CLM-25, CLM-26
-- Sources: SRC-10, SRC-11 (1 independent source family)
+- Claims: CLM-25, CLM-26, CLM-43, CLM-46
+- Sources: SRC-10, SRC-11, SRC-19, SRC-20 (2 independent source families)
 - Relations: 
   - edge-agrofert-komise (agrofert -> evropska-komise, "Komise k 5. 6. 2026 neproplatila žádnou náhradu a žádá vysvětlení struktury fondu — dotaz, ne zjištění", dossier: andrej-babis)
+  - edge-babis-komise-audit (babis -> evropska-komise, "audit REGC414CZ0133: závěr o ovládání fondů (4/2021), uzavřen 20. 7. 2022 splněním doporučení — kontrolní nástroj, ne soud", dossier: andrej-babis)
   - edge-synbiol-komise (synbiol -> evropska-komise, "Komise sleduje střet zájmů i u SynBiolu a Hartenbergu — monitoring a pokyn, ne zjištění o porušení", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -208,11 +209,13 @@ Generated from 40 context entities across 21 dossier(s). Regenerate with `npm ru
 - Type: company
 - Status: not_authorized
 - Appears in: andrej-babis
-- Claims: CLM-18
-- Sources: SRC-07 (1 independent source family)
+- Claims: CLM-18, CLM-47, CLM-48
+- Sources: SRC-07, SRC-21, SRC-22 (3 independent source families)
 - Relations: 
   - edge-agrofert-kostelecke (agrofert -> kostelecke-uzeniny, "firma ze skupiny Agrofert", dossier: andrej-babis)
   - edge-kostelecke-nss (kostelecke-uzeniny -> nss, "NSS potvrdil zrušení dotace (11/2025); rozhodnutí o dotaci, ne o vině osoby", dossier: andrej-babis)
+  - edge-kostelecke-szif (kostelecke-uzeniny -> szif, "dotaci z PRV 2018 schválil SZIF, zrušilo ji Ministerstvo zemědělství", dossier: andrej-babis)
+  - edge-kostelecke-ustavnisoud (kostelecke-uzeniny -> ustavni-soud, "ústavní stížnost odmítnuta 1. 4. 2026 jako zjevně neopodstatněná — spor o nárok na dotaci, ne o vině", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Motoristé sobě (`motoriste`)
@@ -423,10 +426,11 @@ Generated from 40 context entities across 21 dossier(s). Regenerate with `npm ru
 - Type: public_institution
 - Status: not_authorized
 - Appears in: andrej-babis
-- Claims: CLM-10
-- Sources: SRC-04 (1 independent source family)
+- Claims: CLM-10, CLM-48
+- Sources: SRC-04, SRC-22 (2 independent source families)
 - Relations: 
   - edge-agrofert-szif (agrofert -> szif, "SZIF obnovil administraci žádostí o dotace (4/2026)", dossier: andrej-babis)
+  - edge-kostelecke-szif (kostelecke-uzeniny -> szif, "dotaci z PRV 2018 schválil SZIF, zrušilo ji Ministerstvo zemědělství", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## SZPI (`szpi`)
@@ -451,6 +455,17 @@ Generated from 40 context entities across 21 dossier(s). Regenerate with `npm ru
   - edge-trestniozn-policie (trestniozn -> policie, "odloženo policií pro promlčení — procesní krok, ne rozhodnutí o vině; nepravomocné", dossier: macinka-turek)
   - edge-trestniozn-statnizastupitelstvi (trestniozn -> statni-zastupitelstvi, "OSZ pro Prahu 4 odložení oznámilo; o stížnosti ženy rozhoduje státní zástupkyně", dossier: macinka-turek)
   - edge-turek-trestniozn (turek -> trestniozn, "subjekt (oznámení 6/2025, odloženo pro promlčení 5/2026)", dossier: macinka-turek)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Ústavní soud (`ustavni-soud`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-47
+- Sources: SRC-21 (1 independent source family)
+- Relations: 
+  - edge-kostelecke-ustavnisoud (kostelecke-uzeniny -> ustavni-soud, "ústavní stížnost odmítnuta 1. 4. 2026 jako zjevně neopodstatněná — spor o nárok na dotaci, ne o vině", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Petr Vencálek (vlastník GMR GAS s.r.o.) (`vencalek`)

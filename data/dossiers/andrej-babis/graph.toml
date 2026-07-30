@@ -50,8 +50,8 @@ type = "company"
 label = "Kostelecké uzeniny"
 depth = 1
 subject = false
-claims = ["CLM-18"]
-sources = ["SRC-07"]
+claims = ["CLM-18", "CLM-47", "CLM-48"]
+sources = ["SRC-07", "SRC-21", "SRC-22"]
 
 [[nodes]]
 id = "szif"
@@ -59,8 +59,8 @@ type = "public_institution"
 label = "Státní zemědělský intervenční fond"
 depth = 1
 subject = false
-claims = ["CLM-10"]
-sources = ["SRC-04"]
+claims = ["CLM-10", "CLM-48"]
+sources = ["SRC-04", "SRC-22"]
 
 [[nodes]]
 id = "nss"
@@ -95,8 +95,8 @@ type = "public_institution"
 label = "Evropská komise"
 depth = 1
 subject = false
-claims = ["CLM-25", "CLM-26"]
-sources = ["SRC-10", "SRC-11"]
+claims = ["CLM-25", "CLM-26", "CLM-43", "CLM-46"]
+sources = ["SRC-10", "SRC-11", "SRC-19", "SRC-20"]
 
 [[nodes]]
 id = "eppo"
@@ -160,6 +160,15 @@ depth = 1
 subject = false
 claims = ["CLM-39", "CLM-41"]
 sources = ["SRC-16", "SRC-17"]
+
+[[nodes]]
+id = "ustavni-soud"
+type = "public_institution"
+label = "Ústavní soud"
+depth = 1
+subject = false
+claims = ["CLM-47"]
+sources = ["SRC-21"]
 
 [[edges]]
 id = "edge-babis-vlada"
@@ -330,3 +339,33 @@ label = "Komise sleduje střet zájmů i u SynBiolu a Hartenbergu — monitoring
 status = "disputed"
 claims = ["CLM-41"]
 sources = ["SRC-16"]
+
+[[edges]]
+id = "edge-babis-komise-audit"
+source = "babis"
+target = "evropska-komise"
+relation = "INVESTIGATED_BY"
+label = "audit REGC414CZ0133: závěr o ovládání fondů (4/2021), uzavřen 20. 7. 2022 splněním doporučení — kontrolní nástroj, ne soud"
+status = "disputed"
+claims = ["CLM-43", "CLM-46"]
+sources = ["SRC-19", "SRC-20"]
+
+[[edges]]
+id = "edge-kostelecke-ustavnisoud"
+source = "kostelecke-uzeniny"
+target = "ustavni-soud"
+relation = "SUBJECT_OF_PROCEEDING"
+label = "ústavní stížnost odmítnuta 1. 4. 2026 jako zjevně neopodstatněná — spor o nárok na dotaci, ne o vině"
+status = "contextual"
+claims = ["CLM-47"]
+sources = ["SRC-21"]
+
+[[edges]]
+id = "edge-kostelecke-szif"
+source = "kostelecke-uzeniny"
+target = "szif"
+relation = "SUBJECT_OF_PROCEEDING"
+label = "dotaci z PRV 2018 schválil SZIF, zrušilo ji Ministerstvo zemědělství"
+status = "contextual"
+claims = ["CLM-48"]
+sources = ["SRC-22"]
