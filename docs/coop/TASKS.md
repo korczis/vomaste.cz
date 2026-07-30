@@ -29,7 +29,6 @@ Cytoscape.js, repo používá Sigma.js — zachovává se Sigma (audit § 8).
 |----|-------|-----------------------|--------|-------|------|------------|-----------|
 | T-018 | Fáze 4 — `/dossiers/` directory jako hustá sortable tabulka + dossier overview: kompaktní header, metric strip, view tabs, syntéza místo kopie registru | templates/dossiers-index.html, templates/entity-dossier.html, templates/dossier.html, macros | task/T-018 | – | volný | T-012, T-017 | akceptační kritéria § 18 promptu pro directory/overview |
 | T-019 | Fáze 5 — registry tvrzení/zdrojů/evidence/mezer: dense tabulky s toolbar filtry, URL stav (§ 8), inspector master-detail (§ 7), coverage matrix, source families v registru zdrojů | templates/dossier-*-index.html, entity-dossier-*.html, assets/js/data/**, macros | task/T-019 | – | volný | T-013, T-017 | filtry reprodukovatelné URL; detail bez ztráty kontextu; rozlišení zdroje vs. nezávislé rodiny |
-| T-020 | Fáze 7 — globální command bar nad `static/search-index.json` (`/`, `Cmd/Ctrl+K`, skupiny dle typu, deep linky, bez serveru) | assets/js/modules/**, templates/base.html | task/T-020 | – | volný | T-012 | vyhledá osobu/entitu/dossier/CLM/SRC/GAP/CASE/kauzu/vydavatele/text; klávesová navigace; žádný request na server |
 | T-021 | Fáze 8 — Playwright + axe + responsive/screenshot testy (viewporty § 11), density tokeny + lint proti marketingovým mezerám v workbench šablonách, performance budget, docs § 15 | tests/**, scripts/ui/**, static/css/input.css, docs/** | task/T-021 | – | volný | T-012..T-014, T-018, T-019 | build/CI selže na overflow, překrytí, a11y violations; screenshoty jako artefakty; density akceptace § 18 |
 
 ## Aktivní zadání: plné fyzické rozpojení entity dossierů (2026-07-29)
@@ -54,6 +53,7 @@ Autorizace: viz AGENTS.md, „Structural change, 2026-07-29 (second)".
 
 | ID | Titul | Commit | Owner | Stav |
 |----|-------|--------|-------|------|
+| T-020 | Globální command bar — search-core.js (diakritika, AND tokeny, ID-first ranking, skupiny), zkratky / a Cmd/Ctrl+K, seskupený listbox se zvýrazněním a aria-live, 8 testů | (viz git log task/T-020) | W-7 | merged |
 | T-022 | Skeletony dossierů Juchelka/Bednárik/Šťastný (AUTH-2026-07-30-B) — CLM-01/SRC-01 z otevřených oficiálních profilů, HOLDS_ROLE, entity pages subject/developing, OG karty + 2 fixy scaffolderu (evidence template, chybějící registr entit) | f753dab | W-7 | merged |
 | T-017 | Fáze 1 workbench mise — 8 JSON Schemas + validate:schemas (AJV) v build gate, fix build-global-graph (self-canonical entity grafy v globální mapě), verify:export resolvuje @id proti routes.json, docs/data-contract.md | 80c0a67 | W-7 | merged |
 | T-010 | Veřejné JSON-LD export routes — /data/dossiers/<slug>.jsonld + /data/graph.jsonld (max-depth @graph), jsonld-manifest s sha256, verify-export offline gate, citační otisky v exportu i embedded HTML, sdílený record-tables/jsonld-shared lib; dle ADR dossier-jsonld-provenance-extension (numeric confidence odmítnut, supersedes rezervováno neemitováno) | d482f2e | ORCH | merged |
