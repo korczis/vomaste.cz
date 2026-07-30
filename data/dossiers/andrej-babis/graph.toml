@@ -23,6 +23,8 @@ type = "public_institution"
 label = "Vláda ČR"
 depth = 1
 subject = false
+claims = ["CLM-36"]
+sources = ["SRC-08", "SRC-09", "SRC-12"]
 
 [[nodes]]
 id = "agrofert"
@@ -146,10 +148,10 @@ id = "edge-babis-vlada"
 source = "babis"
 target = "vlada"
 relation = "HOLDS_ROLE"
-label = "předseda vlády"
-status = "contextual"
-claims = ["CLM-01"]
-sources = ["SRC-01"]
+label = "předseda vlády (k datu citovaného zpravodajství 2026)"
+status = "corroborated"
+claims = ["CLM-36"]
+sources = ["SRC-08", "SRC-09", "SRC-12"]
 
 [[edges]]
 id = "edge-babis-agrofert"

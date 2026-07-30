@@ -481,8 +481,8 @@ Generated from 44 context entities across 11 dossier(s). Regenerate with `npm ru
 - Type: public_institution
 - Status: not_authorized
 - Appears in: macinka-turek, petr-macinka, filip-turek, oto-klempir, alena-schillerova, ales-juchelka, ivan-bednarik, boris-stastny, andrej-babis
-- Claims: CLM-03, CLM-01
-- Sources: SRC-11, SRC-01 (3 independent source families)
+- Claims: CLM-03, CLM-01, CLM-36
+- Sources: SRC-11, SRC-01, SRC-08, SRC-09, SRC-12 (6 independent source families)
 - Relations: 
   - edge-babis-vlada (babis -> vlada, "premiér", dossier: macinka-turek)
   - edge-motoriste-vlada (motoriste -> vlada, "člen koalice", dossier: macinka-turek)
@@ -491,7 +491,7 @@ Generated from 44 context entities across 11 dossier(s). Regenerate with `npm ru
   - edge-juchelka-vlada (juchelka -> vlada, "ministr práce a sociálních věcí", dossier: ales-juchelka)
   - edge-bednarik-vlada (bednarik -> vlada, "ministr dopravy", dossier: ivan-bednarik)
   - edge-stastny-vlada (stastny -> vlada, "ministr pro sport, prevenci a zdraví", dossier: boris-stastny)
-  - edge-babis-vlada (babis -> vlada, "předseda vlády", dossier: andrej-babis)
+  - edge-babis-vlada (babis -> vlada, "předseda vlády (k datu citovaného zpravodajství 2026)", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Adam Vojtěch (ministr zdravotnictví) (`vojtech`)

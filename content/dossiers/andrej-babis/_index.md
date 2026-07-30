@@ -168,6 +168,26 @@ jednou v poznámce.
 | <a id="clm-33"></a>[CLM-33](@/dossiers/andrej-babis/claims/clm-33.md) | Podle téhož textu Babiš 13. 6. 2018 převedl svůj podíl 0,1 % v SCP Bigaud na Moniku Babišovou a od srpna 2019 je SCP Bigaud ze 100 % vlastněna společností I.M.O.D.I.M.; jde o záznam vlastnické změny, ne o tvrzení o pochybení kohokoli | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-13](@/dossiers/andrej-babis/sources/src-13.md) |
 | <a id="clm-34"></a>[CLM-34](@/dossiers/andrej-babis/claims/clm-34.md) | Podle téhož textu poskytovatel offshore služeb ALCOGAL označil Babiše za vysoce rizikového klienta a v roce 2016 podal hlášení o podezřelé transakci s odkazem na dotační kauzu Čapí hnízdo; jde o interní hodnocení a hlášení soukromé firmy, ne o zjištění státního orgánu, obvinění ani rozhodnutí o vině | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-13](@/dossiers/andrej-babis/sources/src-13.md) |
 
+| <a id="clm-35"></a>[CLM-35](@/dossiers/andrej-babis/claims/clm-35.md) | Podle oficiálního životopisu na webu Úřadu vlády se Andrej Babiš narodil 2. září 1954 v Bratislavě, v letech 1993–2014 byl zakladatelem a předsedou představenstva Agrofertu, od roku 2013 je poslancem, v letech 2014–2017 byl prvním místopředsedou vlády a ministrem financí a v letech 2017–2021 předsedou vlády; je členem hnutí ANO | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-14](@/dossiers/andrej-babis/sources/src-14.md) |
+| <a id="clm-36"></a>[CLM-36](@/dossiers/andrej-babis/claims/clm-36.md) | Andrej Babiš zastává k datu citovaného zpravodajství (květen až červenec 2026) úřad předsedy vlády České republiky | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-08](@/dossiers/andrej-babis/sources/src-08.md), [SRC-09](@/dossiers/andrej-babis/sources/src-09.md), [SRC-12](@/dossiers/andrej-babis/sources/src-12.md) |
+
+## Veřejné funkce {#verejne-funkce}
+
+Veřejný zájem na tomto dossieru stojí na úřadu, který subjekt zastává.
+Ten je proto doložen samostatně, ne předpokládán: k datu citovaného
+zpravodajství z května až července 2026 je Andrej Babiš předsedou vlády
+České republiky ([CLM-36](@/dossiers/andrej-babis/claims/clm-36.md)),
+což shodně uvádějí tři vydavatelsky nezávislé redakce.
+
+Dřívější dráhu dokládá oficiální životopis na webu Úřadu vlády
+([CLM-35](@/dossiers/andrej-babis/claims/clm-35.md),
+[SRC-14](@/dossiers/andrej-babis/sources/src-14.md)): zakladatel a
+předseda představenstva Agrofertu v letech 1993–2014, poslanec od roku
+2013, první místopředseda vlády a ministr financí 2014–2017, předseda
+vlády 2017–2021. Právě překryv podnikatelské a veřejné dráhy je věcným
+jádrem tématu střetu zájmů níž — sám o sobě ale není ani pochybením, ani
+tvrzením o něm.
+
 ## Čapí hnízdo — dotační kauza {#kauza-capi-hnizdo}
 
 Vrchní soud v Praze dne 23. června 2025 zrušil zprošťující rozsudek
