@@ -615,3 +615,77 @@ still enforced, now on the generated tree.
 This is a **structural** change, not a scope change: it authorizes no new
 subject, topic, controversy or named third party, and touches no claim,
 source, case, gap or relation.
+
+### Authorized subject: Oto Klempíř (on the record)
+
+Authorized by the site owner, explicitly and on the record, 2026-07-30,
+via conversation confirming Klempíř's public office ("politik, verejne
+exponovana osoba... clen vlady, ministr"), then explicit approval of a
+research-candidate list ("vse z toho, vse schvalene, o level hloubeji,
+detailneji"): a new entity dossier may be created for **Oto Klempíř** —
+Czech Minister of Culture since 2025-12 (Andrej Babiš's government),
+Member of the Chamber of Deputies for Motoristé sobě since 2025-10 (the
+same party as the already-authorized Petr Macinka and Filip Turek).
+Public official acting in public capacity; public-interest test
+satisfied by his ministerial office.
+
+**Correction made during sourcing, on the record**: an initially
+proposed candidate item (a reported street altercation, sourced from a
+Reflex.cz URL that read as ordinary reporting in a search snippet) was
+dropped after the source was actually opened — it is published in
+Reflex's "Divoký kačer" fake-news/satire section, explicitly
+self-labeled as fictional. It is excluded from this authorization
+entirely and must never be cited as fact. This is recorded here as the
+sourcing-discipline process working as intended, not swept aside.
+
+Coverage is limited to the following specific topics, verified by
+opening the actual source (not a search snippet) before this entry was
+written:
+
+- his appointment as Minister of Culture and entry into politics via
+  Motoristé sobě (biographical/political-career fact; vlada.gov.cz,
+  psp.cz);
+- his public defense of the government's plan to move Czech
+  Television/Czech Radio financing under the state budget, and RESPEKT's
+  reporting of this as an attempted move toward state control of public
+  media (RESPEKT, "Téma" feature, bylined František Trojan / Jan H.
+  Vitvar / Kristýna Jelínková / Eva Soukeníková, 2026-07-19; opened and
+  read directly, not from a snippet);
+- specific reported ministerial actions from the same RESPEKT piece:
+  a "campaign against activist culture" reflected in grant decisions;
+  support for a construction-law change reported as benefiting
+  developers at archaeologists' expense; cancellation of the National
+  Gallery Prague director selection process; and the reported public
+  reception (booed at a folk festival in his home region, avoided public
+  appearances at the Karlovy Vary International Film Festival). Klempíř
+  is reported to have declined to comment to RESPEKT — that refusal is
+  itself part of the record, stated as such, never as an admission.
+
+Every item above is `1 ZDROJ` (single-source) pending independent
+corroboration per this file's existing status rules, since RESPEKT is
+currently the only opened, verified source for the ministerial-action
+claims — never overstated as `CORROBORATED` without a second, genuinely
+independent source.
+
+The owner additionally authorized a deeper research round (financial,
+business-registry, and asset disclosures), matching the process already
+used for Macinka/Turek — same sourcing discipline applies throughout:
+named, dated, independent sources actually opened before citation;
+`1 ZDROJ` vs. `CORROBORATED` per the existing validator rules; procedural
+outcomes distinguished from substantive findings every time; no
+speculation where sources are silent.
+
+This authorization does **not** extend to any further named subject or
+third party beyond what the cited reporting itself discloses, and does
+not authorize any topic beyond the ones listed above (plus the
+authorized deeper financial/registry round) without a further, separate,
+on-record decision.
+
+**Implementation note (operational, not a scope limit)**: at the time of
+this entry, `data/dossiers.toml` and
+`scripts/dossier/lib/dossier-registry.mjs` are under active modification
+by the in-progress T-001 migration (`docs/coop/TASKS.md`) — the actual
+dossier files and registry entry for Oto Klempíř are created once that
+migration lands, to avoid registering a third dossier against a data
+model still being rewritten. This authorization stands regardless of
+that sequencing.
