@@ -1,6 +1,6 @@
 +++
-title = "Čapí hnízdo — dotační kauza"
-description = "Vrchní soud v Praze podruhé zrušil zprošťující rozsudek a vrátil věc městskému soudu se závazným právním názorem; ten 4. 5. 2026 uznal nepravomocně vinnou spoluobžalovanou Janu Nagyovou. Rozsudek není pravomocný, netýká se Andreje Babiše, jehož stíhání je po nevydání Sněmovnou přerušeno, a oba obžalovaní vinu odmítají."
+title = "Evropské dotace: pozastavené proplácení a řízení evropské prokuratury"
+description = "Národní fond administraci dotací skupině Agrofert obnovil, Evropská komise k 5. 6. 2026 neproplatila nic a dopisem z 20. 5. 2026 si vyžádala vysvětlení struktury fondu. Evropská prokuratura zahájila 24. 5. 2026 trestní řízení k vyplácení evropských dotací — vedené na neznámého pachatele, bez obviněného; zahájení řízení není obvinění ani rozhodnutí o vině."
 template = "dossier-case.html"
 weight = 1
 
@@ -9,14 +9,14 @@ dossier = "andrej-babis"
 record_type = "case"
 lang = "cs"
 case_id = "CASE-01"
-anchor = "kauza-capi-hnizdo"
+anchor = "kauza-evropske-dotace"
 period = "2025–"
 status = "status-disputed"
-label = "Nepravomocný rozsudek nad spoluobžalovanou, o Babišovi nerozhodnuto"
-summary = "Vrchní soud v Praze podruhé zrušil zprošťující rozsudek a vrátil věc městskému soudu se závazným právním názorem; ten 4. 5. 2026 uznal nepravomocně vinnou spoluobžalovanou Janu Nagyovou. Rozsudek není pravomocný, netýká se Andreje Babiše, jehož stíhání je po nevydání Sněmovnou přerušeno, a oba obžalovaní vinu odmítají."
-claims = ["CLM-01", "CLM-02", "CLM-03", "CLM-07", "CLM-20"]
-sources = ["SRC-01", "SRC-03", "SRC-08", "SRC-09"]
+label = "Otevřené; řízení na neznámého pachatele, nikdo není obviněn"
+summary = "Národní fond administraci dotací skupině Agrofert obnovil, Evropská komise k 5. 6. 2026 neproplatila nic a dopisem z 20. 5. 2026 si vyžádala vysvětlení struktury fondu. Evropská prokuratura zahájila 24. 5. 2026 trestní řízení k vyplácení evropských dotací — vedené na neznámého pachatele, bez obviněného; zahájení řízení není obvinění ani rozhodnutí o vině."
+claims = ["CLM-25", "CLM-26", "CLM-27", "CLM-28", "CLM-29"]
+sources = ["SRC-10", "SRC-11", "SRC-12"]
 +++
 
 Plné znění, zdroje a kontext tohoto případu jsou v [hlavním přehledu
-dossieru](@/dossiers/andrej-babis/_index.md#kauza-capi-hnizdo).
+dossieru](@/dossiers/andrej-babis/_index.md#kauza-evropske-dotace).

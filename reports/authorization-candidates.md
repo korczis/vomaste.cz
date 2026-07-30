@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 38 context entities across 11 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 41 context entities across 11 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## Agrofert (`agrofert`)
 
@@ -18,6 +18,8 @@ Generated from 38 context entities across 11 dossier(s). Regenerate with `npm ru
 - Claims: CLM-04, CLM-05, CLM-16
 - Sources: SRC-02, SRC-06 (2 independent source families)
 - Relations: 
+  - edge-agrofert-eppo (agrofert -> eppo, "trestní řízení k vyplácení evropských dotací, vedené na neznámého pachatele — nikdo není obviněn", dossier: andrej-babis)
+  - edge-agrofert-komise (agrofert -> evropska-komise, "Komise k 5. 6. 2026 neproplatila žádnou náhradu a žádá vysvětlení struktury fondu — dotaz, ne zjištění", dossier: andrej-babis)
   - edge-agrofert-kostelecke (agrofert -> kostelecke-uzeniny, "firma ze skupiny Agrofert", dossier: andrej-babis)
   - edge-agrofert-szif (agrofert -> szif, "SZIF obnovil administraci žádostí o dotace (4/2026)", dossier: andrej-babis)
   - edge-babis-agrofert (babis -> agrofert, "vlastnické vazby; od 2/2026 akcie ve svěřenském fondu RSVP Trust, míra vlivu sporná", dossier: andrej-babis)
@@ -67,6 +69,29 @@ Generated from 38 context entities across 11 dossier(s). Regenerate with `npm ru
 - Sources: SRC-11 (1 independent source family)
 - Relations: 
   - edge-turek-ep (turek -> ep, "europoslanec 2024–2025", dossier: macinka-turek)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Úřad evropského veřejného žalobce (EPPO) (`eppo`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-27, CLM-28
+- Sources: SRC-12 (1 independent source family)
+- Relations: 
+  - edge-agrofert-eppo (agrofert -> eppo, "trestní řízení k vyplácení evropských dotací, vedené na neznámého pachatele — nikdo není obviněn", dossier: andrej-babis)
+  - edge-eppo-ncoz (eppo -> ncoz, "prověřováním pověřena NCOZ (24. 5. 2026)", dossier: andrej-babis)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Evropská komise (`evropska-komise`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-25, CLM-26
+- Sources: SRC-10, SRC-11 (1 independent source family)
+- Relations: 
+  - edge-agrofert-komise (agrofert -> evropska-komise, "Komise k 5. 6. 2026 neproplatila žádnou náhradu a žádá vysvětlení struktury fondu — dotaz, ne zjištění", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## GMR GAS UA LLC (Kyjev) (`gmrgas`)
@@ -210,6 +235,17 @@ Generated from 38 context entities across 11 dossier(s). Regenerate with `npm ru
   - edge-macinka-mzp2026 (macinka -> mzp2026, "dočasně vede resort (do 2/2026)", dossier: macinka-turek)
   - edge-pavel-mzp2026 (pavel -> mzp2026, "odmítl jmenovat", dossier: macinka-turek)
   - edge-turek-mzp2026 (turek -> mzp2026, "navrhován, nejmenován (1/2026)", dossier: macinka-turek)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Národní centrála proti organizovanému zločinu (`ncoz`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-27
+- Sources: SRC-12 (1 independent source family)
+- Relations: 
+  - edge-eppo-ncoz (eppo -> ncoz, "prověřováním pověřena NCOZ (24. 5. 2026)", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Nehoda 2026 (`nehoda2026`)
@@ -411,7 +447,7 @@ Generated from 38 context entities across 11 dossier(s). Regenerate with `npm ru
 - Status: not_authorized
 - Appears in: macinka-turek, petr-macinka, filip-turek, oto-klempir, alena-schillerova, ales-juchelka, ivan-bednarik, boris-stastny, andrej-babis
 - Claims: CLM-03, CLM-01
-- Sources: SRC-11, SRC-01 (2 independent source families)
+- Sources: SRC-11, SRC-01 (3 independent source families)
 - Relations: 
   - edge-babis-vlada (babis -> vlada, "premiér", dossier: macinka-turek)
   - edge-motoriste-vlada (motoriste -> vlada, "člen koalice", dossier: macinka-turek)

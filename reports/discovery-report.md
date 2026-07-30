@@ -5,7 +5,7 @@ system. This is provenance, not a publication decision — see
 `data/authorizations.toml` and `scripts/dossier/authorize-entity.mjs`
 for the only thing that actually authorizes a dossier.
 
-95 record(s) logged across 2 day(s). 0 new since last run.
+101 record(s) logged across 2 day(s). 0 new since last run.
 
 ## 2026-07-29
 
@@ -107,3 +107,9 @@ for the only thing that actually authorizes a dossier.
 - `vencalek` (entity, created)
 - `edge-gmrgascz-gmrgas` (relation, created)
 - `edge-vencalek-gmrgascz` (relation, created)
+- `eppo` (entity, created)
+- `evropska-komise` (entity, created)
+- `ncoz` (entity, created)
+- `edge-agrofert-eppo` (relation, created)
+- `edge-agrofert-komise` (relation, created)
+- `edge-eppo-ncoz` (relation, created)

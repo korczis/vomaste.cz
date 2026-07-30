@@ -48,6 +48,30 @@ anchor = "kauza-stret-zajmu"
 dot = "dot-disputed"
 subjects = ["babis"]
 
+[[extra.timeline]]
+date = "2026-06-05"
+title = "Komise: národní administrace obnovena, z evropského rozpočtu proplaceno nic"
+anchor = "kauza-evropske-dotace"
+dot = "dot-disputed"
+subjects = ["babis"]
+
+[[extra.timeline]]
+date = "2026-05-24"
+title = "Evropská prokuratura zahájila trestní řízení na neznámého pachatele"
+anchor = "kauza-evropske-dotace"
+dot = "dot-disputed"
+subjects = ["babis"]
+
+[[extra.cases]]
+anchor = "kauza-evropske-dotace"
+period = "2025–"
+title = "Evropské dotace: pozastavené proplácení a řízení evropské prokuratury"
+status = "status-disputed"
+label = "Otevřené; řízení na neznámého pachatele, nikdo není obviněn"
+summary = "Národní fond administraci dotací skupině Agrofert obnovil, Evropská komise k 5. 6. 2026 neproplatila nic a dopisem z 20. 5. 2026 si vyžádala vysvětlení struktury fondu. Evropská prokuratura zahájila 24. 5. 2026 trestní řízení k vyplácení evropských dotací — vedené na neznámého pachatele, bez obviněného; zahájení řízení není obvinění ani rozhodnutí o vině."
+claims = ["CLM-25", "CLM-26", "CLM-27", "CLM-28", "CLM-29"]
+subjects = ["babis"]
+
 [[extra.cases]]
 anchor = "kauza-capi-hnizdo"
 period = "2025–"
@@ -131,6 +155,13 @@ jednou v poznámce.
 | <a id="clm-22"></a>[CLM-22](@/dossiers/andrej-babis/claims/clm-22.md) | Andrej Babiš k rozsudku uvedl: „Je to skandální rozhodnutí a důkaz toho, že politického soupeře můžete stíhat na objednávku.“ a „Považuji to za ostudu české justice.“ — doloženo je, že tyto věty pronesl, ne že jejich obsah platí | <span class="status-badge status-quote">CITACE</span> | [SRC-09](@/dossiers/andrej-babis/sources/src-09.md) |
 | <a id="clm-23"></a>[CLM-23](@/dossiers/andrej-babis/claims/clm-23.md) | Podle téhož zdroje Babiš dále uvedl: „Čapí hnízdo je politický proces, který měl vždy jediný cíl, a to znemožnit moji politickou kariéru.“ a „Soud si myslí, že je paní Nagyová nevinná, a odsoudí ji.“ | <span class="status-badge status-quote">CITACE</span> | [SRC-09](@/dossiers/andrej-babis/sources/src-09.md) |
 | <a id="clm-24"></a>[CLM-24](@/dossiers/andrej-babis/claims/clm-24.md) | Jana Nagyová se podle citovaného zpravodajství vyhlášení rozsudku neúčastnila a v závěrečné řeči vinu nadále odmítala | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-08](@/dossiers/andrej-babis/sources/src-08.md) |
+
+| <a id="clm-25"></a>[CLM-25](@/dossiers/andrej-babis/claims/clm-25.md) | Evropská komise podle citovaného zpravodajství z 5. června 2026 potvrdila, že české úřady mohly obnovit administraci zemědělských dotací firmám ze skupiny Agrofert, ale sama dosud nic neproplatila; mluvčí Komise Louise Bogeyová uvedla: „K dnešnímu dni nebyly českým úřadům vyplaceny žádné náhrady týkající se Agrofertu.“ | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-10](@/dossiers/andrej-babis/sources/src-10.md) |
+| <a id="clm-26"></a>[CLM-26](@/dossiers/andrej-babis/claims/clm-26.md) | Podle popisu dopisu Evropské komise z 20. května 2026 v citovaném zpravodajství si Komise vyžádala potvrzení, že u operací vybraných od 9. prosince 2025 nebudou nárokovány k proplacení platby týkající se skupiny Agrofert ani dalších organizací spojených s Andrejem Babišem (jmenovitě SynBiol a Hartenberg Holding), dále právní posouzení struktury fondu RSVP Trust a informace o subjektech mimo ni, s lhůtou k odpovědi kolem 20. června 2026; jde o dotaz a pozastavené proplácení, ne o zjištění o něčí odpovědnosti | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-11](@/dossiers/andrej-babis/sources/src-11.md) |
+| <a id="clm-27"></a>[CLM-27](@/dossiers/andrej-babis/claims/clm-27.md) | Evropská pověřená žalobkyně Daniela Bártíková vydala 24. května 2026 rozhodnutí o zahájení trestního řízení ve věci vyplácení evropských dotací skupině Agrofert a prověřováním pověřila Národní centrálu proti organizovanému zločinu; podezření se týkají poškození finančních zájmů EU, zneužití pravomoci úřední osoby a porušení povinnosti při správě cizího majetku | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-12](@/dossiers/andrej-babis/sources/src-12.md) |
+| <a id="clm-28"></a>[CLM-28](@/dossiers/andrej-babis/claims/clm-28.md) | Řízení je podle téhož zdroje vedeno na neznámého pachatele, nikdo v něm k datu vydání zprávy není obviněn a Andrej Babiš v něm není uveden jako podezřelý; zahájení trestního řízení není obvinění ani rozhodnutí o vině | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-12](@/dossiers/andrej-babis/sources/src-12.md) |
+| <a id="clm-29"></a>[CLM-29](@/dossiers/andrej-babis/claims/clm-29.md) | Podnětem k řízení bylo podle téhož zdroje trestní oznámení Pirátů z února 2026 k tvrzenému střetu zájmů premiéra; řízení pokrývá pouze evropské dotace, národní dotace do působnosti evropské prokuratury nespadají | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-12](@/dossiers/andrej-babis/sources/src-12.md) |
+| <a id="clm-30"></a>[CLM-30](@/dossiers/andrej-babis/claims/clm-30.md) | Mluvčí Státního zemědělského intervenčního fondu Eva Češpiva k tomu podle téhož zdroje uvedla: „SZIF od Úřadu evropského veřejného žalobce ani od jiných orgánů činných v trestním řízení neobdržel žádnou oficiální výzvu ke spolupráci.“ | <span class="status-badge status-quote">CITACE</span> | [SRC-12](@/dossiers/andrej-babis/sources/src-12.md) |
 
 ## Čapí hnízdo — dotační kauza {#kauza-capi-hnizdo}
 
@@ -240,8 +271,7 @@ potvrzení, že se jeho firmy o dotace ucházet mohou
 ([CLM-12](@/dossiers/andrej-babis/claims/clm-12.md)).
 
 Je to rozhodnutí **národního** fondu opřené o právní analýzu, ne stanovisko
-Evropské komise — to se z citovaných zdrojů doložit nepodařilo a zůstává
-v [GAP-02](@/dossiers/andrej-babis/gaps/gap-02.md).
+Evropské komise. Ta má vlastní pozici a je popsaná níž.
 
 ### Vlastnictví Agrofertu a soudy o dotace
 
@@ -265,6 +295,55 @@ neodstranilo ([CLM-19](@/dossiers/andrej-babis/claims/clm-19.md)).
 
 **Co to není.** Je to rozhodnutí o **nároku na dotaci** ve správním
 soudnictví, ne o trestní odpovědnosti kohokoli.
+
+## Evropské dotace: Komise a evropská prokuratura {#kauza-evropske-dotace}
+
+### Komise: obnoveno národně, proplaceno nic
+
+Komise podle zpravodajství z **5. června 2026** potvrdila, že české úřady
+dotace obnovit mohly — a zároveň že sama dosud **neproplatila nic**:
+„K dnešnímu dni nebyly českým úřadům vyplaceny žádné náhrady týkající se
+Agrofertu,“ uvedla mluvčí Komise Louise Bogeyová
+([CLM-25](@/dossiers/andrej-babis/claims/clm-25.md)). Ty dvě věci se
+snadno slévají, ale znamenají něco jiného: **národní úřad** administraci
+obnovil, **evropský rozpočet** za to zatím neplatí.
+
+V dopise z **20. května 2026** si Komise podle citovaného zpravodajství
+vyžádala potvrzení, že u operací vybraných od 9. prosince 2025 nebudou
+k proplacení nárokovány platby týkající se skupiny Agrofert ani dalších
+organizací spojených s Babišem — jmenovitě SynBiolu a Hartenberg Holdingu
+—, právní posouzení struktury fondu RSVP Trust a informace o subjektech
+mimo ni ([CLM-26](@/dossiers/andrej-babis/claims/clm-26.md)). I tohle je
+nutné číst přesně: **dotaz a pozastavené proplácení nejsou zjištění**
+o něčí odpovědnosti.
+
+### Trestní řízení evropské prokuratury
+
+Evropská pověřená žalobkyně Daniela Bártíková vydala **24. května 2026**
+rozhodnutí o zahájení trestního řízení ve věci vyplácení evropských
+dotací skupině Agrofert a prověřováním pověřila Národní centrálu proti
+organizovanému zločinu; podezření se týkají poškození finančních zájmů
+EU, zneužití pravomoci úřední osoby a porušení povinnosti při správě
+cizího majetku ([CLM-27](@/dossiers/andrej-babis/claims/clm-27.md)).
+
+**Co to není, a je to tady to nejdůležitější:** řízení je vedeno **na
+neznámého pachatele**. Nikdo v něm k datu vydání citované zprávy není
+obviněn a Andrej Babiš v něm není uveden jako podezřelý
+([CLM-28](@/dossiers/andrej-babis/claims/clm-28.md)). Zahájení trestního
+řízení je procesní krok, kterým se začíná prověřování — není to obvinění,
+natož rozhodnutí o vině, a tento dossier ho tak nikde neuvádí.
+
+Podnětem bylo trestní oznámení Pirátů z února 2026; řízení pokrývá pouze
+evropské dotace, národní do působnosti evropské prokuratury nespadají
+([CLM-29](@/dossiers/andrej-babis/claims/clm-29.md)). Mluvčí SZIF Eva
+Češpiva uvedla, že fond od evropského žalobce ani od jiných orgánů
+činných v trestním řízení žádnou oficiální výzvu ke spolupráci neobdržel
+([CLM-30](@/dossiers/andrej-babis/claims/clm-30.md)).
+
+Všechna tvrzení v těchto dvou oddílech stojí na **agenturní** zprávě ČTK
+(u řízení EPPO navíc s převzatým původem u Seznam Zpráv). Že tutéž zprávu
+vydalo mnoho redakcí, není nezávislé potvrzení — proto nesou stav
+`1 ZDROJ` a zůstávají v [GAP-02](@/dossiers/andrej-babis/gaps/gap-02.md).
 
 ## Nemovitosti ve Francii {#kauza-nemovitosti-francie}
 
