@@ -36,3 +36,38 @@ potichu.
 Nic. Zestárnutí tvrzení mu nezvyšuje ani nesnižuje doloženost — stav se mění
 jen novým zdrojem. A odložený případ nezmizí ze stránky jen proto, že přestal
 být aktuální: zůstává, i s procesním vysvětlením.
+
+## Co se při kontrolním kole dělá
+
+Kontrola není přečtení vlastního textu. Je to porovnání s tím, co je venku:
+
+1. **Žijí zdroje?** Odkazy se otevřou a porovná se, jestli článek pořád
+   říká to, co web tvrdí, že říká.
+2. **Přibyl druhý zdroj?** Jednozdrojová tvrzení se zkusí povýšit — ale jen
+   skutečně nezávislým zdrojem, ne přetiskem téhož; viz
+   [registr zdrojů](@/koncepty/registr-zdroju.md).
+3. **Pohnulo se něco procesně?** Nové rozhodnutí se zapíše s rozlišením,
+   jestli je meritorní, nebo procesní.
+4. **Zavřela se mezera?** Otevřené otázky se zkusí zodpovědět; když se to
+   nepovede, přepíše se u nich datum kontroly a zůstávají otevřené.
+
+Poslední bod je ten nepohodlný: **negativní výsledek se taky zaznamenává**.
+„Hledali jsme druhý zdroj a neexistuje" je zjištění, ne selhání.
+
+## Tři vrstvy, ve kterých je to vidět
+
+| vrstva | co ukazuje |
+|---|---|
+| `reviewed_at` u dossieru | kdy byl naposledy porovnán s aktuálním zpravodajstvím |
+| historie aktualizací | append-only záznam: co se kdy zkontrolovalo a změnilo |
+| [Git](@/koncepty/verzovano-v-gitu.md) | úplný diff každé revize, včetně toho, co zmizelo |
+
+První dvě čte člověk, třetí je strojová a nejde ji obejít.
+
+## Co tenhle web nedělá
+
+Nesleduje kauzy v reálném čase a netváří se jako zpravodajství. Mezi
+kontrolními koly může být venku novější informace než tady — proto je u
+každého dossieru datum poslední kontroly viditelně nahoře, ne schované
+v patičce. Kdo potřebuje aktuální stav, jde do zpravodajství; tenhle web je
+strukturovaný, dohledatelný přehled, ne live feed.

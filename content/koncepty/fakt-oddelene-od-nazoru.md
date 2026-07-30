@@ -37,3 +37,34 @@ Možnost nesouhlasit s autorem a přesto použít data. Kdo chce jen fakta,
 přeskočí názory. Kdo chce ověřit sporné, jde na
 [zdroje](@/koncepty/registr-zdroju.md) obou stran. To je celý smysl toho
 oddělení: čtenář nemusí věřit autorovi.
+
+## Čtyři věty, čtyři různé stavy
+
+Rozdíl je snazší vidět na příkladech než na definici. Vezměme čtyři věty,
+které v běžném článku splynou do jednoho odstavce:
+
+| věta | stav |
+|---|---|
+| „Dvě nezávislé redakce popsaly totéž jednání." | [ověřeno více zdroji](@/koncepty/stav-overeno-vice-zdroji.md) |
+| „Napsala to jedna redakce, další to nepřevzala." | [1 zdroj](@/koncepty/stav-jeden-zdroj.md) |
+| „Dotyčný řekl, že se to nestalo." | [citace](@/koncepty/stav-citace.md) |
+| „Jedna strana tvrdí A, druhá B, uzavřeno to není." | [sporné](@/koncepty/stav-sporne.md) |
+
+Poslední kategorie — komentář, který z toho vyvozuje závěr — je
+[názor](@/koncepty/stav-nazor.md) a v registru tvrzení nepodpírá nic.
+
+## Kde to selže i při dodržení pravidel
+
+Formální zdrojování je nutná, ne dostatečná podmínka. Text se dá zkreslit,
+aniž by porušil jediné pravidlo:
+
+- **slovem** — „přiznal" tam, kde zdroj říká „uvedl";
+- **zkrácením** — citace useknutá před podmínkou, která ji oslabuje;
+- **řazením** — tři doložené fakty poskládané tak, že z nich plyne závěr,
+  který netvrdí žádný z nich;
+- **objemem** — deset odstavců k jedné straně a dva ke druhé.
+
+Nic z toho nezachytí validátor. Zachytí to jen čtení proti zdroji — proto
+je u každého tvrzení přímý odkaz a proto je celý web
+[ve veřejné historii](@/koncepty/verzovano-v-gitu.md), kde je vidět, kdy se
+formulace změnila.
