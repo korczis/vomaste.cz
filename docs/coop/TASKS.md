@@ -53,6 +53,9 @@ Autorizace: viz AGENTS.md, „Structural change, 2026-07-29 (second)".
 
 | ID | Titul | Commit | Owner | Stav |
 |----|-------|--------|-------|------|
+| T-026 | Oprava CI driftu — deploy workflow volá `npm run build` (JSON-LD routy v produkci 404 kvůli ručně vypisovaným krokům) + check:workflow-parity; třetí kolo rešerší (+189 tvrzení do 6 dossierů) | 73ff4e7, bdfab28 | W-7 | merged |
+| T-025 | Druhé kolo rešerší (+155 tvrzení do 5 nejméně vytěžených dossierů) + lint:source-outlets (brána proti falešnému CORROBORATED přes alias vydavatele) | b0e63d3 | W-7 | merged |
+| T-024 | Fanout rešerší — +166 tvrzení z 96 otevřených zdrojů napříč 10 dossiery, 42 mezer, oprava 55 stale TODO v registrech | 910046e | W-7 | merged |
 | T-023 | Autorizace AUTH-2026-07-30-M…T (8 zbývajících členů vlády, per subjekt on the record) + skeletony dossierů Havlíček/Zůna/Tejc/Mrázová/Vojtěch/Červený/Plaga/Šebestyán — kabinet kompletně pokryt (16/16) | c1e2664 | W-7 | merged |
 | T-020 | Globální command bar — search-core.js (diakritika, AND tokeny, ID-first ranking, skupiny), zkratky / a Cmd/Ctrl+K, seskupený listbox se zvýrazněním a aria-live, 8 testů | (viz git log task/T-020) | W-7 | merged |
 | T-022 | Skeletony dossierů Juchelka/Bednárik/Šťastný (AUTH-2026-07-30-B) — CLM-01/SRC-01 z otevřených oficiálních profilů, HOLDS_ROLE, entity pages subject/developing, OG karty + 2 fixy scaffolderu (evidence template, chybějící registr entit) | f753dab | W-7 | merged |
