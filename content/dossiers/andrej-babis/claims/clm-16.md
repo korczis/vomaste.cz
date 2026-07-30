@@ -1,6 +1,6 @@
 +++
 title = "CLM-16"
-description = "Andrej Babiš vložil v únoru 2017 akcie Agrofertu do svěřenských fondů AB private trust I a II v reakci na zpřísnění evropské úpravy střetu zájmů; v pr"
+description = "Andrej Babiš vložil v únoru 2017 akcie Agrofertu do svěřenských fondů AB private trust I a II v reakci na zpřísnění evropské úpravy střetu zájmů; v prosinci 2024 převedl zhruba 90 % podílu z prvního fondu zpět na sebe a 15. října 2025 byl ukončen druhý fond, čímž se stal opět jediným vlastníkem"
 template = "dossier-claim.html"
 weight = 16
 

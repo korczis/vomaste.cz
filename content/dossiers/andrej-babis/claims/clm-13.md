@@ -1,6 +1,6 @@
 +++
 title = "CLM-13"
-description = "Francouzská Národní finanční prokuratura (PNF) vede od 24. února 2022 předběžné vyšetřování kolem nákupu nemovitostí na jihu Francie pro podezření z d"
+description = "Francouzská Národní finanční prokuratura (PNF) vede od 24. února 2022 předběžné vyšetřování kolem nákupu nemovitostí na jihu Francie pro podezření z daňového podvodu a praní peněz přes offshorové struktury; jde o předběžné vyšetřování, nikdo nebyl obviněn ani obžalován"
 template = "dossier-claim.html"
 weight = 13
 

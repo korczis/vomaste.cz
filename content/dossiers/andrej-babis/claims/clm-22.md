@@ -1,0 +1,18 @@
++++
+title = "CLM-22"
+description = "Andrej Babiš k rozsudku uvedl: „Je to skandální rozhodnutí a důkaz toho, že politického soupeře můžete stíhat na objednávku.“ a „Považuji to za ostudu české justice.“ — doloženo je, že tyto věty pronesl, ne že jejich obsah platí"
+template = "dossier-claim.html"
+weight = 22
+
+[extra]
+dossier = "andrej-babis"
+record_type = "claim"
+lang = "cs"
+clm_id = "CLM-22"
+status = "status-quote"
+status_label = "CITACE"
+summary = "Andrej Babiš k rozsudku uvedl: „Je to skandální rozhodnutí a důkaz toho, že politického soupeře můžete stíhat na objednávku.“ a „Považuji to za ostudu české justice.“ — doloženo je, že tyto věty pronesl, ne že jejich obsah platí"
+sources = ["SRC-09"]
++++
+
+Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni).

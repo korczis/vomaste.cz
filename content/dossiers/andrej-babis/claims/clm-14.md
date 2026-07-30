@@ -1,6 +1,6 @@
 +++
 title = "CLM-14"
-description = "Podle téhož zdroje prokuratura o zahájení stíhání dosud nerozhodla, protože čeká na předání vyšetřovacího spisu; podstatnou roli v dalším postupu hraj"
+description = "Podle téhož zdroje prokuratura o zahájení stíhání dosud nerozhodla, protože čeká na předání vyšetřovacího spisu; podstatnou roli v dalším postupu hrají promlčecí lhůty, u daňového podvodu a praní peněz podle francouzského práva zpravidla šestileté"
 template = "dossier-claim.html"
 weight = 14
 

@@ -18,11 +18,25 @@ reviewed_at = "2026-07-30"
 
 [extra.authorization]
 authorized = true
-record_ids = ["AUTH-2026-07-30-C"]
+record_ids = ["AUTH-2026-07-30-C", "AUTH-2026-07-30-E"]
 
 [[extra.timeline]]
 date = "2025-06-23"
 title = "Vrchní soud podruhé zrušil zprošťující rozsudek (Čapí hnízdo)"
+anchor = "kauza-capi-hnizdo"
+dot = "dot-disputed"
+subjects = ["babis"]
+
+[[extra.timeline]]
+date = "2026-03"
+title = "Sněmovna nevydala Babiše k trestnímu stíhání, jeho řízení přerušeno"
+anchor = "kauza-capi-hnizdo"
+dot = "dot-fact"
+subjects = ["babis"]
+
+[[extra.timeline]]
+date = "2026-05-04"
+title = "Nepravomocný rozsudek nad spoluobžalovanou; o Babišovi soud nerozhodoval"
 anchor = "kauza-capi-hnizdo"
 dot = "dot-disputed"
 subjects = ["babis"]
@@ -39,9 +53,9 @@ anchor = "kauza-capi-hnizdo"
 period = "2025–"
 title = "Čapí hnízdo — dotační kauza"
 status = "status-disputed"
-label = "Nepravomocné, řízení pokračuje"
-summary = "Vrchní soud v Praze podruhé zrušil zprošťující rozsudek a vrátil věc městskému soudu se závazným právním názorem. Zrušené zproštění není odsouzení; oba obžalovaní vinu odmítají."
-claims = ["CLM-01", "CLM-02", "CLM-03"]
+label = "Nepravomocný rozsudek nad spoluobžalovanou, o Babišovi nerozhodnuto"
+summary = "Vrchní soud v Praze podruhé zrušil zprošťující rozsudek a vrátil věc městskému soudu se závazným právním názorem; ten 4. 5. 2026 uznal nepravomocně vinnou spoluobžalovanou Janu Nagyovou. Rozsudek není pravomocný, netýká se Andreje Babiše, jehož stíhání je po nevydání Sněmovnou přerušeno, a oba obžalovaní vinu odmítají."
+claims = ["CLM-01", "CLM-02", "CLM-03", "CLM-07", "CLM-20"]
 subjects = ["babis"]
 
 [[extra.cases]]
@@ -66,16 +80,21 @@ subjects = ["babis"]
 +++
 
 Andrej Babiš je předsedou vlády České republiky. Tento dossier pokrývá
-dvě témata v rozsahu autorizačního záznamu v `AGENTS.md`
-(`AUTH-2026-07-30-C`): dotační kauzu Čapí hnízdo a otázku střetu zájmů ve
-vztahu k holdingu Agrofert. Nic dalšího tento dossier nepokrývá.
+témata v rozsahu autorizačních záznamů v `AGENTS.md`
+(`AUTH-2026-07-30-C` a jeho rozšíření `AUTH-2026-07-30-E`): dotační kauzu
+Čapí hnízdo, střet zájmů a dotace ve vztahu k holdingu Agrofert včetně
+souvisejících správních rozhodnutí, a předběžné vyšetřování kolem
+nemovitostí na jihu Francie. Nic dalšího tento dossier nepokrývá.
 
-**Nejdůležitější věta tohoto dossieru**: ani jedno z obou témat není
+**Nejdůležitější věta tohoto dossieru**: žádné z pokrytých témat není
 uzavřené. V kauze Čapí hnízdo **nebylo k datu poslední kontroly doloženo
 žádné pravomocné rozhodnutí o vině**; zrušení zprošťujícího rozsudku
-odvolacím soudem **není odsouzení** a odvolací soud sám uvedl, že vinu
-vyslovit nemůže. Otázka střetu zájmů je předmětem probíhajícího
-právního a politického sporu, ne rozhodnutí soudu.
+odvolacím soudem **není odsouzení**, odvolací soud sám uvedl, že vinu
+vyslovit nemůže, a nepravomocný rozsudek nad spoluobžalovanou ze 4. 5.
+2026 **není rozhodnutím o Andreji Babišovi** — jeho stíhání je přerušeno.
+Otázka střetu zájmů je předmětem probíhajícího právního a politického
+sporu, ne rozhodnutí soudu, a francouzské vyšetřování je ve fázi
+předběžného šetření bez obvinění.
 
 ## Kdo to je a čím je pokryt {#kdo}
 
@@ -94,7 +113,7 @@ jednou v poznámce.
 | <a id="clm-04"></a>[CLM-04](@/dossiers/andrej-babis/claims/clm-04.md) | Babiš v únoru 2026 vložil veškeré akcie holdingu Agrofert do soukromého svěřenského fondu RSVP Trust poté, co získal souhlasy regulatorních orgánů tří členských států EU | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-02](@/dossiers/andrej-babis/sources/src-02.md) |
 | <a id="clm-05"></a>[CLM-05](@/dossiers/andrej-babis/claims/clm-05.md) | Babiš uvedl: „Na společnost Agrofert, a. s., nemám žádný vliv ani z ní nemám a nebudu mít žádný prospěch. Plně jsem tak dostál nárokům českého a evropského práva v oblasti prevence střetu zájmů.“ — doloženo je, že to řekl, ne že to platí | <span class="status-badge status-quote">CITACE</span> | [SRC-02](@/dossiers/andrej-babis/sources/src-02.md) |
 | <a id="clm-06"></a>[CLM-06](@/dossiers/andrej-babis/claims/clm-06.md) | Jmenovaní opoziční politici střet zájmů za vyřešený nepovažují: Zdeněk Hřib podle citovaného zpravodajství uvedl, že Babiš „nic nevyřešil“, Vít Rakušan mimo jiné to, že Babiš „veřejnosti lhal“ ohledně vlivu rodiny na Agrofert a odmítá zveřejnit dokumenty fondu, Matěj Ondřej Havel odkázal na zprávu Transparency International a Martin Kupka kritizoval nezveřejněné dokumenty; oslovený expert dodal, že Babiš může správce fondu odvolat | <span class="status-badge status-quote">CITACE</span> | [SRC-02](@/dossiers/andrej-babis/sources/src-02.md) |
-| <a id="clm-07"></a>[CLM-07](@/dossiers/andrej-babis/claims/clm-07.md) | Poslanecká sněmovna počátkem března 2026 nevydala Andreje Babiše k trestnímu stíhání v kauze Čapí hnízdo, jeho stíhání je proto přerušeno; nevydání je parlamentní procesní krok, ne zproštění obžaloby ani rozhodnutí o vině | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-03](@/dossiers/andrej-babis/sources/src-03.md) |
+| <a id="clm-07"></a>[CLM-07](@/dossiers/andrej-babis/claims/clm-07.md) | Poslanecká sněmovna počátkem března 2026 nevydala Andreje Babiše k trestnímu stíhání v kauze Čapí hnízdo, jeho stíhání je proto přerušeno; nevydání je parlamentní procesní krok, ne zproštění obžaloby ani rozhodnutí o vině | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-03](@/dossiers/andrej-babis/sources/src-03.md), [SRC-08](@/dossiers/andrej-babis/sources/src-08.md), [SRC-09](@/dossiers/andrej-babis/sources/src-09.md) |
 | <a id="clm-08"></a>[CLM-08](@/dossiers/andrej-babis/claims/clm-08.md) | Dne 4. května 2026 projednával Městský soud v Praze kauzu Čapí hnízdo potřetí, tentokrát ve věci Jany Nagyové; státní zástupce Jaroslav Šaroch pro ni navrhl tříletý podmíněný trest s pětiletou zkušební dobou a peněžitý trest 500 000 Kč — jde o návrh státního zástupce, ne o uložený trest | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-03](@/dossiers/andrej-babis/sources/src-03.md) |
 | <a id="clm-09"></a>[CLM-09](@/dossiers/andrej-babis/claims/clm-09.md) | Podle téhož zdroje Jana Nagyová vinu odmítá a její obhajoba označila závazný pokyn odvolacího soudu za protiústavní a odporující trestnímu řádu; jde o stanovisko obhajoby, ne o posouzení soudu | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-03](@/dossiers/andrej-babis/sources/src-03.md) |
 | <a id="clm-10"></a>[CLM-10](@/dossiers/andrej-babis/claims/clm-10.md) | Státní zemědělský intervenční fond rozhodl, že skupina Agrofert může opět čerpat dotace a účastnit se veřejných zakázek, a obnovil administraci jejích žádostí s účinností od 20. února 2026; rozhodnutí se opírá o externí právní analýzu, podle níž je vložení akcií do fondu RSVP Trust v souladu s národní i evropskou úpravou střetu zájmů | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-04](@/dossiers/andrej-babis/sources/src-04.md) |
@@ -107,6 +126,11 @@ jednou v poznámce.
 | <a id="clm-17"></a>[CLM-17](@/dossiers/andrej-babis/claims/clm-17.md) | Mluvčí Agrofertu Pavel Heřmanský k tomu podle citovaného zdroje uvedl, že „akcionář čestně prohlašuje, že je jediným akcionářem akciové společnosti Agrofert“ | <span class="status-badge status-quote">CITACE</span> | [SRC-06](@/dossiers/andrej-babis/sources/src-06.md) |
 | <a id="clm-18"></a>[CLM-18](@/dossiers/andrej-babis/claims/clm-18.md) | Nejvyšší správní soud dne 28. listopadu 2025 zamítl kasační stížnost Kosteleckých uzenin ze skupiny Agrofert a potvrdil, že firma neměla nárok na dotaci z Programu rozvoje venkova, o kterou žádala v roce 2018, kvůli střetu zájmů tehdejšího premiéra Andreje Babiše | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-07](@/dossiers/andrej-babis/sources/src-07.md) |
 | <a id="clm-19"></a>[CLM-19](@/dossiers/andrej-babis/claims/clm-19.md) | Podle téhož rozhodnutí lze nepřímý vliv vykonávat i prostřednictvím svěřenských fondů, takže vložení podílu do fondu samo o sobě střet zájmů neodstranilo; jde o výklad podmínek pro dotaci ve správním soudnictví, ne o rozhodnutí o trestní odpovědnosti | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-07](@/dossiers/andrej-babis/sources/src-07.md) |
+| <a id="clm-20"></a>[CLM-20](@/dossiers/andrej-babis/claims/clm-20.md) | Městský soud v Praze dne 4. května 2026 uznal spoluobžalovanou Janu Nagyovou nepravomocně vinnou z dotačního podvodu a poškození finančních zájmů EU a uložil jí tříletý podmíněný trest s pětiletou zkušební dobou a peněžitý trest 500 000 Kč; rozsudek není pravomocný, lze se proti němu odvolat a o vině Andreje Babiše soud v tomto řízení nerozhodoval | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-08](@/dossiers/andrej-babis/sources/src-08.md), [SRC-09](@/dossiers/andrej-babis/sources/src-09.md) |
+| <a id="clm-21"></a>[CLM-21](@/dossiers/andrej-babis/claims/clm-21.md) | Předseda senátu Jan Šott při vyhlášení rozsudku podle citovaného zpravodajství uvedl: „Nadále jsme přesvědčeni, že paní obžalovaná Nagyová by neměla být odsouzena.“ — doloženo je, že to řekl | <span class="status-badge status-quote">CITACE</span> | [SRC-08](@/dossiers/andrej-babis/sources/src-08.md) |
+| <a id="clm-22"></a>[CLM-22](@/dossiers/andrej-babis/claims/clm-22.md) | Andrej Babiš k rozsudku uvedl: „Je to skandální rozhodnutí a důkaz toho, že politického soupeře můžete stíhat na objednávku.“ a „Považuji to za ostudu české justice.“ — doloženo je, že tyto věty pronesl, ne že jejich obsah platí | <span class="status-badge status-quote">CITACE</span> | [SRC-09](@/dossiers/andrej-babis/sources/src-09.md) |
+| <a id="clm-23"></a>[CLM-23](@/dossiers/andrej-babis/claims/clm-23.md) | Podle téhož zdroje Babiš dále uvedl: „Čapí hnízdo je politický proces, který měl vždy jediný cíl, a to znemožnit moji politickou kariéru.“ a „Soud si myslí, že je paní Nagyová nevinná, a odsoudí ji.“ | <span class="status-badge status-quote">CITACE</span> | [SRC-09](@/dossiers/andrej-babis/sources/src-09.md) |
+| <a id="clm-24"></a>[CLM-24](@/dossiers/andrej-babis/claims/clm-24.md) | Jana Nagyová se podle citovaného zpravodajství vyhlášení rozsudku neúčastnila a v závěrečné řeči vinu nadále odmítala | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-08](@/dossiers/andrej-babis/sources/src-08.md) |
 
 ## Čapí hnízdo — dotační kauza {#kauza-capi-hnizdo}
 
@@ -144,9 +168,40 @@ projednával Městský soud v Praze kauzu potřetí a státní zástupce pro ni
 navrhl tříletý podmíněný trest a peněžitý trest 500 000 Kč
 ([CLM-08](@/dossiers/andrej-babis/claims/clm-08.md)). I tady platí
 rozlišení, které se plete nejčastěji: **návrh státního zástupce není
-uložený trest** a nic z toho není pravomocné. Nagyová vinu odmítá a její
-obhajoba označila závazný pokyn odvolacího soudu za protiústavní
+uložený trest**. Nagyová vinu odmítá a její obhajoba označila závazný
+pokyn odvolacího soudu za protiústavní
 ([CLM-09](@/dossiers/andrej-babis/claims/clm-09.md)).
+
+Téhož dne soud rozsudek vyhlásil: Nagyovou uznal **nepravomocně** vinnou
+z dotačního podvodu a poškození finančních zájmů EU a uložil jí tříletý
+podmíněný trest s pětiletou zkušební dobou a peněžitý trest 500 000 Kč
+([CLM-20](@/dossiers/andrej-babis/claims/clm-20.md),
+[SRC-08](@/dossiers/andrej-babis/sources/src-08.md),
+[SRC-09](@/dossiers/andrej-babis/sources/src-09.md)). Tři věci je nutné
+držet u sebe pokaždé, když se tenhle rozsudek zmíní:
+
+1. **není pravomocný** — lze se proti němu odvolat k Vrchnímu soudu
+   v Praze, takže o výsledku kauzy nerozhoduje;
+2. **netýká se Andreje Babiše** — soud o jeho vině v tomto řízení
+   nerozhodoval, protože jeho stíhání je přerušeno. Rozsudek nad
+   spoluobžalovanou není rozsudkem nad ním, a tento dossier ho tak nikde
+   neuvádí;
+3. soud sám rozhodl proti svému přesvědčení: předseda senátu Jan Šott
+   při vyhlášení podle citovaného zpravodajství uvedl, že „nadále jsme
+   přesvědčeni, že paní obžalovaná Nagyová by neměla být odsouzena“
+   ([CLM-21](@/dossiers/andrej-babis/claims/clm-21.md)) — první stupeň
+   byl vázán závazným právním názorem odvolacího soudu
+   ([CLM-02](@/dossiers/andrej-babis/claims/clm-02.md)). Nagyová se
+   vyhlášení neúčastnila a vinu nadále odmítá
+   ([CLM-24](@/dossiers/andrej-babis/claims/clm-24.md)).
+
+Babiš rozsudek veřejně odmítl jako „skandální rozhodnutí“ a „ostudu
+české justice“ ([CLM-22](@/dossiers/andrej-babis/claims/clm-22.md))
+a kauzu označil za politický proces, jehož cílem je znemožnit jeho
+politickou kariéru ([CLM-23](@/dossiers/andrej-babis/claims/clm-23.md)).
+Obojí je vedeno jako **citace**: doloženo je, že to řekl — ne že popis,
+který v těch větách podává, odpovídá skutečnosti. Stejně tak výrok soudu
+není potvrzením jeho hodnocení ani jeho vyvrácením.
 
 Pravomocné rozhodnutí ve věci nepřinesl žádný z citovaných zdrojů —
 zbytek otázky zůstává v [GAP-01](@/dossiers/andrej-babis/gaps/gap-01.md).

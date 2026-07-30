@@ -1,6 +1,6 @@
 +++
 title = "CLM-11"
-description = "Podle téhož zdroje SZIF nebude zpětně vymáhat evropské nárokové dotace poskytnuté Agrofertu v letech 2017–2021, ukončil ale osm nenárokových podpor v "
+description = "Podle téhož zdroje SZIF nebude zpětně vymáhat evropské nárokové dotace poskytnuté Agrofertu v letech 2017–2021, ukončil ale osm nenárokových podpor v objemu zhruba 68 milionů korun"
 template = "dossier-claim.html"
 weight = 11
 

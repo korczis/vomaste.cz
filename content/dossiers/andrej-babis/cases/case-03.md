@@ -1,6 +1,6 @@
 +++
-title = "CASE-03 — Nemovitosti ve Francii: předběžné vyšetřování PNF"
-description = "Francouzská Národní finanční prokuratura vede od února 2022 předběžné vyšetřování kolem nákupu nemovitostí na jihu Francie. Nikdo nebyl obviněn; Babiš pochybení odmítá."
+title = "Střet zájmů a svěřenský fond RSVP Trust"
+description = "Akcie Agrofertu vloženy do svěřenského fondu; Babiš považuje střet zájmů za vyřešený, jmenovaní oponenti a podle citovaného zpravodajství i Evropská komise ne."
 template = "dossier-case.html"
 weight = 3
 
@@ -9,12 +9,14 @@ dossier = "andrej-babis"
 record_type = "case"
 lang = "cs"
 case_id = "CASE-03"
-anchor = "kauza-nemovitosti-francie"
-period = "2022–2026"
-status = "status-single"
-label = "Předběžné vyšetřování, bez obvinění"
-summary = "PNF vede od 24. 2. 2022 předběžné vyšetřování pro podezření z daňového podvodu a praní peněz kolem nákupu nemovitostí na jihu Francie; o stíhání nebylo rozhodnuto a Babiš pochybení odmítá."
-claims = ["CLM-13", "CLM-14", "CLM-15"]
+anchor = "kauza-stret-zajmu"
+period = "2026"
+status = "status-disputed"
+label = "Otevřené, spor pokračuje"
+summary = "Akcie Agrofertu vloženy do svěřenského fondu; Babiš považuje střet zájmů za vyřešený, jmenovaní oponenti a podle citovaného zpravodajství i Evropská komise ne."
+claims = ["CLM-04", "CLM-05", "CLM-06"]
+sources = ["SRC-02"]
 +++
 
-Kanonický text této kauzy je v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#kauza-nemovitosti-francie).
+Plné znění, zdroje a kontext tohoto případu jsou v [hlavním přehledu
+dossieru](@/dossiers/andrej-babis/_index.md#kauza-stret-zajmu).

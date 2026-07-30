@@ -119,3 +119,9 @@ authorized_at = "2026-07-30"
 subjects = ["sebestyan"]
 agents_md_section = "Authorized subject: Martin Šebestyán (on the record)"
 scope_summary = "Reportované brždění/zastavení vymáhání 5,1–7 mld. dotací po Agrofertu (HlídacíPes — atribuovaný komentář, kverulant.org, Deník N, HN); kritika vedení SZIF 2013–2022 (iROZHLAS, HN); varování Transparency International. Žádný soud nekonstatoval pochybení; hodnocení NGO/komentářů vždy atribuovat."
+[[authorizations]]
+id = "AUTH-2026-07-30-E"
+authorized_at = "2026-07-30"
+subjects = ["babis"]
+agents_md_section = "Scope extension, 2026-07-30: Andrej Babiš — full scope of the authorized topics"
+scope_summary = "Rozšíření AUTH-2026-07-30-C na plný rozsah vyjmenovaných témat: Čapí hnízdo v celé doložené procesní historii (dřívější zrušení, pozice spoluobžalované dle citovaného zpravodajství, osud dotace, vývoj po 2025-06); střet zájmů a dotace šířeji (audity Evropské komise a jejich publikované závěry, pozastavení a obnovení dotací Agrofertu, svěřenské fondy, SynBiol, dividendy); veřejné funkce a doložené veřejné výroky (jako CITACE — doloženo, že výrok padl, nikdy že jeho obsah platí); nemovitosti ve Francii; Setuza; Kostelecké uzeniny; entity a hrany těchto témat v grafu vztahů. „Absolutní clearance“ je rozšíření ROZSAHU, ne pozastavení metody — jmenovaný, datovaný, skutečně otevřený zdroj s URL; stav popisuje doloženost, ne pravdu; procesní výsledek se při každé zmínce odlišuje od rozhodnutí o vině; citace doslovně; nejmenované třetí osoby zůstávají nejmenované; co nelze ověřit, je GAP, ne opatrná věta."

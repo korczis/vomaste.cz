@@ -1,6 +1,6 @@
 +++
 title = "CLM-12"
-description = "Mluvčí Agrofertu Pavel Heřmanský k rozhodnutí uvedl, že právní analýzy „potvrzují, že vlastnické uspořádání Agrofertu umožňuje společnostem z koncernu"
+description = "Mluvčí Agrofertu Pavel Heřmanský k rozhodnutí uvedl, že právní analýzy „potvrzují, že vlastnické uspořádání Agrofertu umožňuje společnostem z koncernu ucházet se o dotace“"
 template = "dossier-claim.html"
 weight = 12
 

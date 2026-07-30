@@ -1,6 +1,6 @@
 +++
 title = "CLM-09"
-description = "Podle téhož zdroje Jana Nagyová vinu odmítá a její obhajoba označila závazný pokyn odvolacího soudu za protiústavní a odporující trestnímu řádu; jde o"
+description = "Podle téhož zdroje Jana Nagyová vinu odmítá a její obhajoba označila závazný pokyn odvolacího soudu za protiústavní a odporující trestnímu řádu; jde o stanovisko obhajoby, ne o posouzení soudu"
 template = "dossier-claim.html"
 weight = 9
 

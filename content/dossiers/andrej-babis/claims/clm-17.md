@@ -1,6 +1,6 @@
 +++
 title = "CLM-17"
-description = "Mluvčí Agrofertu Pavel Heřmanský k tomu podle citovaného zdroje uvedl, že „akcionář čestně prohlašuje, že je jediným akcionářem akciové společnosti Ag"
+description = "Mluvčí Agrofertu Pavel Heřmanský k tomu podle citovaného zdroje uvedl, že „akcionář čestně prohlašuje, že je jediným akcionářem akciové společnosti Agrofert“"
 template = "dossier-claim.html"
 weight = 17
 

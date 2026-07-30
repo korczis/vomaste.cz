@@ -7,7 +7,7 @@
  * new authorized dossier does not require touching this script. No network
  * access; deterministic; exits non-zero on any error across any dossier.
  */
-import { readFileSync, readdirSync, statSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync, statSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { isCanonicalDossier } from "./lib/dossier-registry.mjs";
@@ -266,9 +266,18 @@ function validateDossier(slug) {
       claims: getArray("claims"),
     });
   }
-  if (tableCase.length === 0) err(`[${slug}] No [[extra.cases]] entries found in ${p("_index.md")} front matter.`);
-
-  const caseFiles = readdirSync(CASE_DIR).filter((f) => /^case-\d+\.md$/.test(f));
+  const caseFiles = existsSync(CASE_DIR)
+    ? readdirSync(CASE_DIR).filter((f) => /^case-\d+\.md$/.test(f))
+    : [];
+  // Dossier bez jediné kauzy je legitimní stav (subjekt s doloženými
+  // tvrzeními, u nichž zatím žádná kauza pojmenovaná není) — chybou je až
+  // rozpor mezi front matter a stránkami, který kontroluje řádek níž.
+  // Prázdno na obou stranách chybou není; dřívější tvrdý požadavek na
+  // aspoň jednu kauzu by po rozšíření brány na entity dossiery shodil
+  // build kvůli něčemu, co žádnou nesrovnalost v datech neznamená.
+  if (tableCase.length === 0 && caseFiles.length > 0) {
+    err(`[${slug}] ${p("cases/")} has ${caseFiles.length} case page(s) but no [[extra.cases]] entries in ${p("_index.md")} front matter.`);
+  }
   if (caseFiles.length !== tableCase.length) {
     err(`[${slug}] ${p("cases/")} has ${caseFiles.length} case page(s) but front matter declares ${tableCase.length} — must match 1:1`);
   }
@@ -368,9 +377,21 @@ function validateDossier(slug) {
   };
 }
 
+// Kdysi stačilo `isCanonicalDossier`, protože entity dossiery byly čistě
+// generované projekce nad agregátem a žádný vlastní záznam neměly. To už
+// neplatí — babis, klempir, schillerova a další mají fyzické clm-*/src-*
+// stránky. Filtr podle typu je proto nechával celé mimo bránu: tabulka
+// tvrzení a detailní stránky se u nich mohly rozejít a build zůstal
+// zelený. Rozhoduje tedy fakt, ne typ: kontroluje se každý dossier, který
+// skutečně nějaký záznam vlastní.
+const ownsRecords = (slug) => {
+  const dir = join(DOSSIERS_ROOT, slug, "claims");
+  return existsSync(dir) && readdirSync(dir).some((f) => /^clm-\d+\.md$/.test(f));
+};
+
 const dossierSlugs = readdirSync(DOSSIERS_ROOT)
   .filter((f) => statSync(join(DOSSIERS_ROOT, f)).isDirectory())
-  .filter(isCanonicalDossier);
+  .filter((slug) => isCanonicalDossier(slug) || ownsRecords(slug));
 if (dossierSlugs.length === 0) {
   console.error("No dossiers found under content/dossiers/.");
   process.exit(1);
