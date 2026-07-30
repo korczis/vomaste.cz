@@ -782,3 +782,67 @@ in the cited reporting, without a further, separate, on-record decision.
 the actual dossier files and `data/dossiers.toml` entries are created
 after the in-progress T-001 migration lands — see `docs/coop/TASKS.md`.
 This authorization stands regardless of that sequencing.
+
+### Authorized subject: Andrej Babiš (on the record)
+
+Authorized by the site owner, explicitly and on the record, 2026-07-30
+("autorizuj nove dossier pro andrej babis"): an entity dossier may be
+created for **Andrej Babiš** — Prime Minister of the Czech Republic
+(third Babiš government), the most senior office in the executive.
+Public-interest test satisfied by that office. `AUTH-2026-07-30-C`.
+
+Coverage limited, per topic, to what these directly-opened sources state:
+
+- **Čapí hnízdo subsidy case**: the Prague High Court's 2025-06-23
+  decision annulling the acquittal of Babiš and Nagyová for the second
+  time, its binding legal opinion that the established steps meet the
+  elements of two offences (subsidy fraud, damage to EU financial
+  interests), and the case's return to the Municipal Court (Česká
+  justice, 2025-06-23, opened and read directly). **Framing is
+  mandatory at every mention, not once**: an annulled acquittal is not a
+  conviction; the appellate court itself stated it cannot declare a
+  defendant guilty; both defendants deny guilt; nothing in this thread is
+  final. The dossier must record a GAP for the case's current procedural
+  stage, because the 2026 developments could not be verified from a
+  directly-opened source (iROZHLAS returns 403 to automated fetches).
+- **Conflict of interest / Agrofert**: the 2026-02 transfer of Agrofert
+  shares into the RSVP Trust after regulatory approvals in three EU
+  states, his own stated position ("na Agrofert nemám žádný vliv ani z
+  něj neprofituji"), the named opposition politicians' published
+  rejection of it, and the reported European Commission position that
+  the arrangement is not accepted as resolving the matter (ČT24,
+  2026-02-20, opened and read directly). His position and his critics'
+  positions are both quoted, neither adopted as this site's finding.
+
+### Authorized subject: Tomio Okamura (on the record)
+
+Authorized by the site owner, explicitly and on the record, 2026-07-30
+("autorizuj nove dossier pro tomio okamura", "tomio je publicly
+exposed"): an entity dossier may be created for **Tomio Okamura** —
+President of the Chamber of Deputies and chairman of SPD, a governing
+coalition party. He is not a member of the government, so no earlier
+authorization in this log covered him; this entry is what authorizes
+him, and it is scoped to one verified topic. `AUTH-2026-07-30-D`.
+
+Coverage limited to: the **2026 SPD election-poster criminal case** —
+the Prague 1 District Court's 2026-06-03 verdict finding SPD guilty of
+inciting hatred and imposing a 3-million-koruna penalty; the content of
+the two posters as described in the cited reporting; SPD's and Okamura's
+denial and his published criticism of the judge; and the fact that
+Okamura is charged individually but **his own prosecution is suspended
+because the Chamber of Deputies refused to hand him over**, so his acts
+are to be tried separately (Deník.cz, 2026-06-03, opened and read
+directly).
+
+Mandatory framing at every mention: the SPD verdict is **not final**
+(the court itself said so; SPD announced an appeal), a verdict against
+the party is **not** a verdict against Okamura personally, and the
+refusal to hand him over is a **parliamentary procedural** outcome — not
+a finding that the allegations are true or false. The two Roma boys and
+any other person depicted or referenced in the posters are not named and
+never will be; they are not subjects and not third parties to be
+identified here.
+
+Neither entry authorizes any further named third party beyond what the
+cited reporting itself discloses, nor any topic beyond those listed,
+without a further separate on-record decision.

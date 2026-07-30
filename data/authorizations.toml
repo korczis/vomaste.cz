@@ -48,3 +48,18 @@ authorized_at = "2026-07-30"
 subjects = ["schillerova", "juchelka", "metnar", "bednarik", "stastny"]
 agents_md_section = "Authorized subjects, 2026-07-30: five further members of the government (on the record)"
 scope_summary = "Per subject, jen vyjmenovaná témata: Schillerová — novela rozpočtových pravidel a stanovisko NRR; Juchelka — reportovaná kauza střetu zájmů bývalé poradkyně, rozpočtový dopad, ohlášená trestní oznámení, jeho vyjádření (procesní stav vždy přesně); Metnar — návrh na ukončení policejní ochrany NKÚ a reakce NKÚ; Bednárik — rezignace ve vedení ČD 2022 a jeho resortní pozice k výdajům na železnici; Šťastný — nahrávací zařízení v zasedačce, odvolání vedení NSA, rozpor v číslech interakcí. Každý citovaný zdroj musí být před napsáním tvrzení skutečně otevřen."
+
+[[authorizations]]
+id = "AUTH-2026-07-30-C"
+authorized_at = "2026-07-30"
+subjects = ["babis"]
+agents_md_section = "Authorized subject: Andrej Babiš (on the record)"
+scope_summary = "Čapí hnízdo: rozhodnutí Vrchního soudu v Praze z 2025-06-23 rušící zproštění (podruhé) a jeho závazný právní názor; povinné rámování při každé zmínce — zrušené zproštění není odsouzení, soud sám uvedl, že vinu vyslovit nemůže, oba obžalovaní vinu odmítají, nic není pravomocné; povinná GAP pro aktuální procesní stav (2026 vývoj nešel ověřit přímo otevřeným zdrojem). Střet zájmů: vklad akcií Agrofertu do RSVP Trust 2026-02, jeho vlastní pozice, publikovaná kritika jmenovaných politiků, pozice Evropské komise."
+
+[[authorizations]]
+id = "AUTH-2026-07-30-D"
+authorized_at = "2026-07-30"
+subjects = ["okamura"]
+agents_md_section = "Authorized subject: Tomio Okamura (on the record)"
+scope_summary = "Jediné téma: trestní kauza předvolebních plakátů SPD — rozsudek OS pro Prahu 1 z 2026-06-03 (SPD vinna podněcováním k nenávisti, 3 mil. Kč), obsah plakátů dle citovaného zpravodajství, odmítnutí viny a jeho kritika soudkyně, a přerušené vlastní stíhání kvůli nevydání Sněmovnou. Povinné rámování: rozsudek NENÍ pravomocný, rozsudek proti straně není rozsudek proti Okamurovi osobně, nevydání je parlamentní procesní krok, ne zjištění o pravdivosti. Osoby vyobrazené na plakátech se nikdy nejmenují."
+
