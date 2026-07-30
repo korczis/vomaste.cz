@@ -26,6 +26,13 @@ import path from "node:path";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..", "..");
 const SLUG = process.argv[2] || "macinka-turek";
+// Legacy /dossier/* aliases belong ONLY to the historical dossier whose
+// records actually lived at those URLs before the /dossiers/<slug>/ move.
+// Emitting them for every dossier makes each new one claim URLs the old
+// one already owns, and `zola build` dies on path collisions — this bit
+// five consecutive new dossiers and was hand-fixed each time. The alias
+// is now conditional, so a new dossier is correct the first time.
+const LEGACY_ALIAS_DOSSIER = "macinka-turek";
 const BASE = path.join(ROOT, "content", "dossiers", SLUG);
 const INDEX_PATH = path.join(BASE, "_index.md");
 const OUT_DIR = path.join(BASE, "cases");
@@ -106,8 +113,7 @@ title = "${tomlEscape(c.title)}"
 description = "${tomlEscape(c.summary)}"
 template = "dossier-case.html"
 weight = ${i + 1}
-aliases = ["/dossier/kauzy/case-${num}/"]
-
+${SLUG === LEGACY_ALIAS_DOSSIER ? `aliases = ["/dossier/kauzy/case-${num}/"]\n` : ""}
 [extra]
 dossier = "${SLUG}"
 record_type = "case"
