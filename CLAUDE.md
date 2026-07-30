@@ -22,9 +22,15 @@ entry; it does not replace reading and applying the rule.
   encodes the authorization-scope gate and the regeneration/validation
   steps below as a single guided flow. For a significant/debatable
   technical decision (new dependency, renderer swap, etc.), use the `adr`
-  skill (`.claude/skills/adr/`) — measured-scale, not speculative. For
-  the commit itself, `commit` (`.claude/skills/commit/`) — message
-  format, which gate actually applies, and the right coop-bus report.
+  skill (`.claude/skills/adr/`) — measured-scale, not speculative. To run
+  a whole authorized investigation end-to-end (scope check → branch →
+  manifest → sourced research → PR, never auto-publish), use the
+  `investigate` skill (`.claude/skills/investigate/`) — it orchestrates
+  the steps above as one flow rather than duplicating them; see
+  `docs/adr/aiad-and-agent-tooling-import.md` for why this is one skill
+  and not an imported agent framework. For the commit itself, `commit`
+  (`.claude/skills/commit/`) — message format, which gate actually
+  applies, and the right coop-bus report.
 - `git commit` runs `.githooks/pre-commit` (installed automatically by
   `npm ci`/`npm install` via `scripts/setup/install-git-hooks.mjs`, or
   manually: `npm run hooks:install`) — a fast, pure-data validator subset.
@@ -107,8 +113,8 @@ entry; it does not replace reading and applying the rule.
   edits `docs/coop/TASKS.md`, merges, and pushes. Workers live in
   `~/dev/vomaste-worktrees/T-###` on `task/T-###` branches, one task per
   instance, and merge-request only with a clean `npm run build`.
-- **Why 4 skills and not a large agent/command ecosystem**: this repo's
-  Claude Code tooling (`.githooks/pre-commit`, `scripts/setup/`, the 4
+- **Why 5 skills and not a large agent/command ecosystem**: this repo's
+  Claude Code tooling (`.githooks/pre-commit`, `scripts/setup/`, the 5
   skills above) is deliberately scaled to what a small, single-purpose
   Zola static site actually needs — not a port of a large platform's
   agent/command registry. That would be exactly the "doctrine/agent
@@ -117,5 +123,10 @@ entry; it does not replace reading and applying the rule.
   maintenance surface with no measured need. If a genuine new need shows
   up, add the smallest thing that addresses it (another skill, another
   validator) — not a framework in anticipation of needs this repo
-  doesn't have yet. Same reasoning `adr` asks you to apply to a
-  dependency, applied to this repo's own tooling.
+  doesn't have yet. `investigate` is the worked example: a 2026-07-30
+  request to import Prismatic's AIAD framework (549 agents, 234
+  commands, 1,636 files — see `docs/adr/aiad-and-agent-tooling-import.md`
+  for the measured comparison) was evaluated and declined on exactly this
+  reasoning, and the smallest thing that addressed the actual need — one
+  more skill — was added instead. Same reasoning `adr` asks you to apply
+  to a dependency, applied to this repo's own tooling.
