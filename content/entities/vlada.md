@@ -2,7 +2,7 @@
 title = "Vláda ČR"
 template = "entity.html"
 weight = 2
-aliases = ["/dossiers/alena-schillerova/entities/vlada/"]
+aliases = ["/dossiers/andrej-babis/entities/vlada/"]
 
 [extra]
 record_type = "entity"
@@ -15,8 +15,8 @@ dossier_enabled = false
 dossier_status = "not_authorized"
 coverage_state = "discovered"
 discovered_at = "2026-07-29"
-discovered_via = ["edge-schillerova-vlada"]
-dossiers = ["macinka-turek", "petr-macinka", "filip-turek", "oto-klempir", "alena-schillerova", "ales-juchelka", "ivan-bednarik", "boris-stastny"]
+discovered_via = ["edge-schillerova-vlada", "edge-babis-vlada"]
+dossiers = ["macinka-turek", "petr-macinka", "filip-turek", "oto-klempir", "alena-schillerova", "ales-juchelka", "ivan-bednarik", "boris-stastny", "andrej-babis"]
 claims = ["CLM-03", "CLM-01"]
 sources = ["SRC-11", "SRC-01"]
 +++

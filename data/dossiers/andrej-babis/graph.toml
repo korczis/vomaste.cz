@@ -1,7 +1,14 @@
-# Relationship graph for the Andrej Babiš dossier. Projection of the
-# claim/source registries — every edge carries a CLM-## and SRC-## that
-# exist there. Deliberately minimal: no edge is drawn from mere
-# co-occurrence in an article.
+# Relationship graph for the Andrej Babiš dossier
+# (content/dossiers/andrej-babis/). Projekce registrů, ne druhý zdroj
+# pravdy: každá faktická hrana nese aspoň jedno CLM-## a jedno SRC-##,
+# která v registrech skutečně existují (validate-graph.mjs).
+#
+# depth: 0 = subjekt dossieru; 1 = přímo doložený institucionální a
+# majetkový kontext pokrytých témat. Hrana vzniká jen tam, kde ji kryje
+# tvrzení s otevřeným zdrojem — nikdy proto, že se dvě jména objevila
+# v jednom článku. Stav hrany kopíruje stav tvrzení, které ji nese, a
+# neznamená hodnocení: „corroborated" u procesního kroku říká, že ten krok
+# je doložený, ne že o něčí vině bylo rozhodnuto.
 
 [[nodes]]
 id = "babis"
@@ -9,8 +16,13 @@ type = "person"
 label = "Andrej Babiš"
 depth = 0
 subject = true
-claims = ["CLM-04"]
-sources = ["SRC-02"]
+
+[[nodes]]
+id = "vlada"
+type = "public_institution"
+label = "Vláda ČR"
+depth = 1
+subject = false
 
 [[nodes]]
 id = "agrofert"
@@ -18,15 +30,139 @@ type = "company"
 label = "Agrofert"
 depth = 1
 subject = false
-claims = ["CLM-04", "CLM-05"]
+claims = ["CLM-04", "CLM-16"]
+sources = ["SRC-02", "SRC-06"]
+
+[[nodes]]
+id = "rsvp-trust"
+type = "organization"
+label = "RSVP Trust"
+depth = 1
+subject = false
+claims = ["CLM-04"]
 sources = ["SRC-02"]
+
+[[nodes]]
+id = "kostelecke-uzeniny"
+type = "company"
+label = "Kostelecké uzeniny"
+depth = 1
+subject = false
+claims = ["CLM-18"]
+sources = ["SRC-07"]
+
+[[nodes]]
+id = "szif"
+type = "public_institution"
+label = "Státní zemědělský intervenční fond"
+depth = 1
+subject = false
+claims = ["CLM-10"]
+sources = ["SRC-04"]
+
+[[nodes]]
+id = "nss"
+type = "public_institution"
+label = "Nejvyšší správní soud"
+depth = 1
+subject = false
+claims = ["CLM-18"]
+sources = ["SRC-07"]
+
+[[nodes]]
+id = "pnf"
+type = "public_institution"
+label = "Národní finanční prokuratura (PNF, Francie)"
+depth = 1
+subject = false
+claims = ["CLM-13"]
+sources = ["SRC-05"]
+
+[[nodes]]
+id = "capi-hnizdo"
+type = "controversy"
+label = "Čapí hnízdo (dotační kauza)"
+depth = 1
+subject = false
+claims = ["CLM-01"]
+sources = ["SRC-01"]
+
+[[edges]]
+id = "edge-babis-vlada"
+source = "babis"
+target = "vlada"
+relation = "HOLDS_ROLE"
+label = "předseda vlády"
+status = "contextual"
+claims = ["CLM-01"]
+sources = ["SRC-01"]
 
 [[edges]]
 id = "edge-babis-agrofert"
 source = "babis"
 target = "agrofert"
-relation = "UNDISCLOSED_INTEREST_IN"
-label = "akcie vloženy do svěřenského fondu RSVP Trust (2026-02)"
+relation = "HOLDS_INTEREST_IN"
+label = "vlastnické vazby; od 2/2026 akcie ve svěřenském fondu RSVP Trust, míra vlivu sporná"
 status = "disputed"
-claims = ["CLM-04", "CLM-05", "CLM-06"]
+claims = ["CLM-04", "CLM-05", "CLM-06", "CLM-16"]
+sources = ["SRC-02", "SRC-06"]
+
+[[edges]]
+id = "edge-rsvp-agrofert"
+source = "rsvp-trust"
+target = "agrofert"
+relation = "HOLDS_INTEREST_IN"
+label = "drží akcie Agrofertu (vloženy 2/2026)"
+status = "contextual"
+claims = ["CLM-04"]
 sources = ["SRC-02"]
+
+[[edges]]
+id = "edge-agrofert-kostelecke"
+source = "agrofert"
+target = "kostelecke-uzeniny"
+relation = "HOLDS_INTEREST_IN"
+label = "firma ze skupiny Agrofert"
+status = "contextual"
+claims = ["CLM-18"]
+sources = ["SRC-07"]
+
+[[edges]]
+id = "edge-kostelecke-nss"
+source = "kostelecke-uzeniny"
+target = "nss"
+relation = "SUBJECT_OF_PROCEEDING"
+label = "NSS potvrdil zrušení dotace (11/2025); rozhodnutí o dotaci, ne o vině osoby"
+status = "contextual"
+claims = ["CLM-18", "CLM-19"]
+sources = ["SRC-07"]
+
+[[edges]]
+id = "edge-agrofert-szif"
+source = "agrofert"
+target = "szif"
+relation = "SUBJECT_OF_PROCEEDING"
+label = "SZIF obnovil administraci žádostí o dotace (4/2026)"
+status = "contextual"
+claims = ["CLM-10", "CLM-11"]
+sources = ["SRC-04"]
+
+[[edges]]
+id = "edge-babis-pnf"
+source = "babis"
+target = "pnf"
+relation = "INVESTIGATED_BY"
+label = "předběžné vyšetřování ve Francii; k datu kontroly bez obvinění"
+status = "disputed"
+claims = ["CLM-13", "CLM-14"]
+sources = ["SRC-05"]
+
+[[edges]]
+id = "edge-babis-capihnizdo"
+source = "babis"
+target = "capi-hnizdo"
+relation = "SUBJECT_OF_PROCEEDING"
+label = "obžalovaný; stíhání přerušeno po nevydání Sněmovnou — procesní krok, ne rozhodnutí o vině"
+status = "disputed"
+claims = ["CLM-01", "CLM-07"]
+sources = ["SRC-01", "SRC-03"]

@@ -1,12 +1,12 @@
 +++
-title = "Agrofert"
+title = "Kostelecké uzeniny"
 template = "entity.html"
-weight = 3
-aliases = ["/dossiers/andrej-babis/entities/agrofert/"]
+weight = 5
+aliases = ["/dossiers/andrej-babis/entities/kostelecke-uzeniny/"]
 
 [extra]
 record_type = "entity"
-entity_id = "agrofert"
+entity_id = "kostelecke-uzeniny"
 entity_type = "company"
 depth = 1
 subject = false
@@ -15,10 +15,10 @@ dossier_enabled = false
 dossier_status = "not_authorized"
 coverage_state = "contextual"
 discovered_at = "2026-07-30"
-discovered_via = ["edge-babis-agrofert", "edge-rsvp-agrofert", "edge-agrofert-kostelecke", "edge-agrofert-szif"]
+discovered_via = ["edge-agrofert-kostelecke", "edge-kostelecke-nss"]
 dossiers = ["andrej-babis"]
-claims = ["CLM-04", "CLM-05", "CLM-16"]
-sources = ["SRC-02", "SRC-06"]
+claims = ["CLM-18"]
+sources = ["SRC-07"]
 +++
 
 Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext.
