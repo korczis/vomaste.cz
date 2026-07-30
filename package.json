@@ -6,7 +6,7 @@
   "scripts": {
     "postinstall": "node scripts/setup/install-git-hooks.mjs",
     "hooks:install": "node scripts/setup/install-git-hooks.mjs",
-    "test": "node --test scripts/dossier/*.test.mjs",
+    "test": "node --test scripts/dossier/*.test.mjs scripts/lint/*.test.mjs",
     "css:build": "tailwindcss -i ./static/css/input.css -o ./static/css/main.css --minify",
     "css:watch": "tailwindcss -i ./static/css/input.css -o ./static/css/main.css --watch",
     "js:build": "esbuild assets/js/app.js --bundle --minify --target=es2020 --outfile=static/js/app.js",
@@ -26,10 +26,11 @@
     "generate:discovery-log": "node scripts/dossier/generate-discovery-log.mjs",
     "verify:anchors": "node scripts/dossier/verify-anchors.mjs",
     "lint:historical-coupling": "node scripts/lint/lint-historical-coupling.mjs",
+    "lint:component-reuse": "node scripts/lint/lint-component-reuse.mjs",
     "verify:jsonld": "node scripts/dossier/verify-jsonld.mjs",
     "verify:full-pages": "node scripts/dossier/verify-full-pages.mjs",
     "authorize:entity": "node scripts/dossier/authorize-entity.mjs",
-    "build": "npm run test && npm run validate:dossier && npm run validate:graph && npm run validate:authorization && npm run verify:authorization-log && npm run validate:dossier-types && npm run build:routes && npm run build:navigation && npm run validate:navigation && npm run validate:concepts && npm run generate:stats && npm run build:global-graph && npm run build:search-index && npm run generate:candidates && npm run generate:discovery-log && npm run css:build && npm run js:build && zola build && npm run verify:anchors && npm run verify:jsonld && npm run verify:full-pages",
+    "build": "npm run test && npm run validate:dossier && npm run validate:graph && npm run validate:authorization && npm run verify:authorization-log && npm run validate:dossier-types && npm run build:routes && npm run build:navigation && npm run validate:navigation && npm run validate:concepts && npm run lint:component-reuse && npm run generate:stats && npm run build:global-graph && npm run build:search-index && npm run generate:candidates && npm run generate:discovery-log && npm run css:build && npm run js:build && zola build && npm run verify:anchors && npm run verify:jsonld && npm run verify:full-pages",
     "dev": "npm run validate:graph && npm run validate:authorization && npm run validate:dossier-types && npm run build:routes && npm run build:navigation && npm run validate:navigation && npm run generate:stats && npm run build:global-graph && npm run build:search-index && npm run generate:candidates && npm run generate:discovery-log && npm run css:build && npm run js:build && zola serve"
   },
   "devDependencies": {

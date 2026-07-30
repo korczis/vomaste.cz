@@ -65,6 +65,23 @@ entry; it does not replace reading and applying the rule.
   dokumentaci ani UI nesmí tvrdit bezpečnostní/příspěvkové schopnosti
   (bezpečný intake, anonymita, příspěvkové CLI), které nejsou skutečně
   implementované a vynucované.
+- **UI component reuse is a real, enforced gate** —
+  `npm run lint:component-reuse` (part of `npm run build`, pre-commit,
+  and CI) fails if a content template doesn't import and use
+  `macros/ui.html` (`page_header`, `breadcrumb`, `stat_tile`,
+  `registry-card`, `empty_state`, `back_link_footer`). Be precise about
+  what this actually checks: the owner asked for pages to "comply with
+  flowbite.com/docs/getting-started/llm/" — that page and its linked
+  `llms.txt`/`llms-full.txt` were fetched and read directly and contain
+  no concrete, machine-checkable rules (a navigational index into
+  Flowbite's docs, not a conformance spec). There is nothing there to
+  honestly enforce. What IS real is this site's own established
+  component-reuse convention, which this gate protects. Don't describe
+  this gate as "Flowbite LLM page compliance" anywhere — that would be
+  exactly the kind of claimed-but-not-real enforcement the constitution
+  forbids (§8: a policy nothing enforces doesn't count as implemented —
+  the same applies in reverse to a gate enforcing something that isn't
+  actually specified anywhere).
 - Multi-instance co-op: when several Claude Code instances work this repo
   in parallel, follow `docs/coop/PROTOCOL.md`. Check
   `scripts/coop/coop.sh status` at session start (a SessionStart hook

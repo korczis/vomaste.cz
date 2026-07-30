@@ -60,6 +60,9 @@ jobs:
       - name: Validate concept pages and landing tiles
         run: npm run validate:concepts
 
+      - name: Check templates reuse shared UI components
+        run: npm run lint:component-reuse
+
       - name: Generate dossier stats
         run: npm run generate:stats
 

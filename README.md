@@ -228,6 +228,7 @@ required fields, and contains no truth-rating markup.`
 | `npm run verify:anchors` | po buildu: každá kotva ze zdrojů existuje v HTML |
 | `npm run verify:jsonld` | po buildu: validita, pokrytí a poctivost JSON-LD (žádné truth ratingy) |
 | `npm run lint:historical-coupling` | de-specializační brána: žádná jména subjektů ve strukturálním kódu |
+| `npm run lint:component-reuse` | každá šablona (kromě `base.html`/`404.html`) používá `macros/ui.html` — žádný ručně psaný duplicitní markup místo sdílené komponenty |
 | `node scripts/dossier/migrate-claims-to-pages.mjs` | přegenerovat stránky tvrzení z tabulky |
 | `node scripts/dossier/migrate-cases-to-pages.mjs` | přegenerovat stránky kauz z front matter |
 | `node scripts/dossier/tag-subjects.mjs` | orazítkovat záznamy poli `subjects` |

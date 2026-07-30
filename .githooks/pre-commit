@@ -30,6 +30,7 @@ FAST_CHECKS=(
   validate:dossier-types
   build:routes
   validate:navigation
+  lint:component-reuse
 )
 
 for check in "${FAST_CHECKS[@]}"; do
