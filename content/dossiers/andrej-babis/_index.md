@@ -103,6 +103,10 @@ jednou v poznámce.
 | <a id="clm-13"></a>[CLM-13](@/dossiers/andrej-babis/claims/clm-13.md) | Francouzská Národní finanční prokuratura (PNF) vede od 24. února 2022 předběžné vyšetřování kolem nákupu nemovitostí na jihu Francie pro podezření z daňového podvodu a praní peněz přes offshorové struktury; jde o předběžné vyšetřování, nikdo nebyl obviněn ani obžalován | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-05](@/dossiers/andrej-babis/sources/src-05.md) |
 | <a id="clm-14"></a>[CLM-14](@/dossiers/andrej-babis/claims/clm-14.md) | Podle téhož zdroje prokuratura o zahájení stíhání dosud nerozhodla, protože čeká na předání vyšetřovacího spisu; podstatnou roli v dalším postupu hrají promlčecí lhůty, u daňového podvodu a praní peněz podle francouzského práva zpravidla šestileté | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-05](@/dossiers/andrej-babis/sources/src-05.md) |
 | <a id="clm-15"></a>[CLM-15](@/dossiers/andrej-babis/claims/clm-15.md) | Andrej Babiš podle téhož zdroje odmítá jakékoli pochybení a tvrdí, že nákupy na jihu Francie proběhly v souladu se zákony | <span class="status-badge status-quote">CITACE</span> | [SRC-05](@/dossiers/andrej-babis/sources/src-05.md) |
+| <a id="clm-16"></a>[CLM-16](@/dossiers/andrej-babis/claims/clm-16.md) | Andrej Babiš vložil v únoru 2017 akcie Agrofertu do svěřenských fondů AB private trust I a II v reakci na zpřísnění evropské úpravy střetu zájmů; v prosinci 2024 převedl zhruba 90 % podílu z prvního fondu zpět na sebe a 15. října 2025 byl ukončen druhý fond, čímž se stal opět jediným vlastníkem | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-06](@/dossiers/andrej-babis/sources/src-06.md) |
+| <a id="clm-17"></a>[CLM-17](@/dossiers/andrej-babis/claims/clm-17.md) | Mluvčí Agrofertu Pavel Heřmanský k tomu podle citovaného zdroje uvedl, že „akcionář čestně prohlašuje, že je jediným akcionářem akciové společnosti Agrofert“ | <span class="status-badge status-quote">CITACE</span> | [SRC-06](@/dossiers/andrej-babis/sources/src-06.md) |
+| <a id="clm-18"></a>[CLM-18](@/dossiers/andrej-babis/claims/clm-18.md) | Nejvyšší správní soud dne 28. listopadu 2025 zamítl kasační stížnost Kosteleckých uzenin ze skupiny Agrofert a potvrdil, že firma neměla nárok na dotaci z Programu rozvoje venkova, o kterou žádala v roce 2018, kvůli střetu zájmů tehdejšího premiéra Andreje Babiše | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-07](@/dossiers/andrej-babis/sources/src-07.md) |
+| <a id="clm-19"></a>[CLM-19](@/dossiers/andrej-babis/claims/clm-19.md) | Podle téhož rozhodnutí lze nepřímý vliv vykonávat i prostřednictvím svěřenských fondů, takže vložení podílu do fondu samo o sobě střet zájmů neodstranilo; jde o výklad podmínek pro dotaci ve správním soudnictví, ne o rozhodnutí o trestní odpovědnosti | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-07](@/dossiers/andrej-babis/sources/src-07.md) |
 
 ## Čapí hnízdo — dotační kauza {#kauza-capi-hnizdo}
 
@@ -183,6 +187,29 @@ potvrzení, že se jeho firmy o dotace ucházet mohou
 Je to rozhodnutí **národního** fondu opřené o právní analýzu, ne stanovisko
 Evropské komise — to se z citovaných zdrojů doložit nepodařilo a zůstává
 v [GAP-02](@/dossiers/andrej-babis/gaps/gap-02.md).
+
+### Vlastnictví Agrofertu a soudy o dotace
+
+Do února 2017 držel Babiš akcie Agrofertu přímo; tehdy je vložil do
+svěřenských fondů AB private trust I a II v reakci na zpřísnění evropské
+úpravy střetu zájmů. V prosinci 2024 převedl zhruba 90 % podílu z prvního
+fondu zpět na sebe a 15. října 2025 byl ukončen i druhý — stal se opět
+jediným vlastníkem ([CLM-16](@/dossiers/andrej-babis/claims/clm-16.md)).
+Únorové vložení akcií do fondu RSVP Trust popsané výše je tedy až další
+krok v této posloupnosti, ne první.
+
+Mezitím se k účinkům svěřenských fondů vyslovily správní soudy.
+**28. listopadu 2025** Nejvyšší správní soud zamítl kasační stížnost
+Kosteleckých uzenin ze skupiny Agrofert a potvrdil, že firma neměla nárok
+na dotaci z Programu rozvoje venkova, o kterou žádala v roce 2018, kvůli
+střetu zájmů tehdejšího premiéra
+([CLM-18](@/dossiers/andrej-babis/claims/clm-18.md)). Podstatné je
+odůvodnění: nepřímý vliv lze podle soudu vykonávat i prostřednictvím
+svěřenských fondů, takže vložení podílu do fondu samo o sobě střet zájmů
+neodstranilo ([CLM-19](@/dossiers/andrej-babis/claims/clm-19.md)).
+
+**Co to není.** Je to rozhodnutí o **nároku na dotaci** ve správním
+soudnictví, ne o trestní odpovědnosti kohokoli.
 
 ## Nemovitosti ve Francii {#kauza-nemovitosti-francie}
 
