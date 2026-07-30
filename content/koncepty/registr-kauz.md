@@ -38,3 +38,36 @@ Karty kauz v hlavní stránce dossieru a vygenerované detailní stránky musí
 souhlasit 1:1; `validate:dossier` a `generate:stats` build shodí, když se
 počty nebo texty rozejdou. `verify:anchors` navíc kontroluje, že každá kotva,
 na kterou kauza odkazuje, v hotovém HTML skutečně existuje.
+
+## Kauza není obvinění
+
+Že je něco vedené jako kauza, znamená, že se o tom veřejně psalo a že to má
+víc než jedno tvrzení — ne že se něco stalo. Uvnitř kauzy může být tvrzení
+[ověřené více zdroji](@/koncepty/stav-overeno-vice-zdroji.md) vedle
+[sporného](@/koncepty/stav-sporne.md) a vedle
+[citace](@/koncepty/stav-citace.md); souhrnný stav kauzy proto nikdy
+nenahrazuje čtení jednotlivých tvrzení.
+
+## Období není totéž co „kdy se to stalo"
+
+Období u kauzy říká, jaký časový úsek pokrývá **citované zpravodajství** —
+od prvního článku po poslední doložený vývoj. Není to zjištění o tom, kdy
+se co odehrálo, a nekončí tím, že věc skončila; končí tam, kam sahají
+zdroje.
+
+## Když se kauza pohne
+
+Nový vývoj se přidá jako další tvrzení s vlastním zdrojem a stav kauzy se
+upraví jen v rozsahu, který ten vývoj skutečně pokrývá. Uzavření jedné
+větve neuzavírá kauzu jako celek a odložení z procesních důvodů se nikdy
+nezapisuje jako konec věci — viz
+[průběžné ověřování](@/koncepty/prubezne-overovani.md).
+
+## Nejcitlivější texty na webu
+
+Nejzávažnější kauzy — typicky ty, kde stojí obvinění proti popření — se
+řídí přísnějším režimem: nikdy se nenaznačuje vina, procesní výsledek se
+odlišuje pokaždé, popření se cituje doslova a nejmenovaná třetí strana
+zůstává nejmenovaná i tady. Ta pravidla nejsou stylistická preference, jsou
+zapsaná v redakčních pravidlech repozitáře a platí bez výjimky pro
+atraktivnější příběh.

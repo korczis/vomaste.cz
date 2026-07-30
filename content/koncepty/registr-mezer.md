@@ -38,3 +38,33 @@ starý, nikdy neprověřený seznam vypadal stejně jako aktivně sledovaná ot�
 
 Mezery každého dossieru najdeš v jeho vlastním registru; přehled dossierů je
 v [registru dossierů](@/dossiers/_index.md).
+
+## Jak mezera vzniká
+
+Nejčastěji při psaní tvrzení: zdroj odpoví na část otázky a zbytek nechá
+otevřený. Ten zbytek se nezamlčí ani nedomyslí — dostane `GAP-##`, prioritu
+a vazbu na tvrzení, ze kterého vypadl. Druhý zdroj mezer je kontrolní kolo:
+když se při ověřování ukáže, že něco nejde doložit, je to nález, ne
+neúspěch ([průběžné ověřování](@/koncepty/prubezne-overovani.md)).
+
+## Priorita není závažnost obvinění
+
+`vysoká` znamená, že bez odpovědi zůstává přehled neúplný v podstatné věci
+— typicky tam, kde chybějící informace mění výklad už doložených tvrzení.
+`nízká` znamená, že jde o doplňující detail. Priorita popisuje **hodnotu
+odpovědi pro pochopení**, ne jak vážné by to bylo, kdyby odpověď zněla
+nepříznivě.
+
+## Jak se mezera uzavírá
+
+Jen doložením: vznikne nové tvrzení s citovaným zdrojem a mezera se odepíše
+s odkazem na ně. Neuzavírá ji čas, mlčení dotčené strany ani to, že se
+o věci přestalo psát. Když se odpověď nenajde, přepíše se datum kontroly
+a mezera zůstává otevřená — i po letech.
+
+## Proč to není seznam podezření
+
+Otázka „kdo zaplatil X" je otevřená mezera. Věta „není jasné, kdo zaplatil
+X, což vyvolává otázky" je totéž obvinění v převleku. Rozdíl je v tom, že
+mezera se ptá a nenaznačuje odpověď — a proto se formuluje jako otázka, ne
+jako podezření s otazníkem na konci.

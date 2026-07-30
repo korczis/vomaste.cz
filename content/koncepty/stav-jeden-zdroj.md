@@ -37,3 +37,33 @@ změna zůstává v [historii verzí](@/koncepty/verzovano-v-gitu.md).
 
 `validate:dossier` shodí build, pokud tvrzení s tímto stavem cituje jiný počet
 zdrojů než právě jeden.
+
+## Proč jednozdrojové tvrzení vůbec zůstává
+
+Protože vynechat ho není neutrální. Kdyby web publikoval jen to, co potvrdily
+dvě redakce, tichým důsledkem by bylo, že cokoli popsané jedním médiem
+neexistuje — a to je taky tvrzení, jen nevyslovené. Řešením je přiznaný
+štítek, ne mlčení.
+
+Opačný extrém je stejně špatný: publikovat to bez rozlišení. Proto má stav
+vlastní barvu i vlastní stránku a proto se u něj nikdy nepíše „bylo
+prokázáno".
+
+## Jak jednozdrojové tvrzení číst
+
+- **Kdo to napsal.** U zdroje je vydavatel a typ materiálu; zpravodajská
+  reportáž a komentář nemají stejnou váhu, i když jsou obojí „jeden zdroj".
+- **Kdy.** Datum vydání a datum stažení ukazují, jak čerstvá informace to
+  je a kdy ji web naposledy viděl na místě.
+- **Reagoval někdo?** Když dotyčný informaci popřel, je to samostatné
+  tvrzení se stavem [citace](@/koncepty/stav-citace.md) — hledejte ho
+  v registru vedle.
+- **Není to spíš sporné?** Pokud existuje doložený protiklad, tvrzení patří
+  do [sporných](@/koncepty/stav-sporne.md), ne sem.
+
+## Co to znamená pro důvěru v celý web
+
+Podíl jednozdrojových tvrzení je sám o sobě údaj: ukazuje, kolik z přehledu
+stojí na jediné redakci. Registr evidence u každého dossieru tenhle poměr
+zobrazuje — je to jedna z mála metrik, kterou tenhle web o sobě zveřejňuje,
+a nejde ji vylepšit jinak než dohledáním dalších zdrojů.

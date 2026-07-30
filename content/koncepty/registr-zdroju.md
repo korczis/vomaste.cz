@@ -38,3 +38,33 @@ Vazba tvrzení ↔ zdroj je dvousměrná a `validate:dossier` shodí build, kdy�
 odkaz vede na neexistující záznam nebo když seznam zdrojů u tvrzení
 neodpovídá tomu, co je na stránce zdroje. Zdroj bez jediného podporovaného
 tvrzení je taky chyba, ne dekorace.
+
+## Typ zdroje mění jeho váhu
+
+Zpravodajská reportáž, rozhovor, komentář, tisková zpráva a úřední dokument
+nejsou zaměnitelné. Typ je proto samostatné pole a projeví se v tom, co
+zdroj smí podpírat: komentář nikdy nedokládá skutkový stav, jen existenci
+[názoru](@/koncepty/stav-nazor.md); rozhovor dokládá, že výrok padl, tedy
+[citaci](@/koncepty/stav-citace.md).
+
+## Přímý odkaz, ne jen jméno vydavatele
+
+U každého zdroje je URL na konkrétní materiál. „Podle ČT" bez odkazu je
+nedohledatelné tvrzení o zdroji — čtenář musí mít možnost jít na originál
+a porovnat, co v něm doopravdy stojí. Právě tenhle krok tooling nezastane
+a je to hlavní věc, kterou si čtenář může na webu zkontrolovat sám.
+
+## Když článek zmizí nebo se změní
+
+Datum stažení říká, k jakému okamžiku odpovídá to, co web o zdroji tvrdí.
+Když se materiál přepíše nebo zmizí, nemaže se potichu: to, co z něj
+vycházelo, se přehodnotí a změna zůstane v
+[historii](@/koncepty/verzovano-v-gitu.md). Web neprovozuje vlastní archiv
+cizích článků — nemá na to práva ani infrastrukturu a netvrdí opak.
+
+## Co v registru nikdy nebude
+
+Neveřejný dokument, anonymní tip ani materiál, který někdo poslal „jen pro
+informaci". Zdroj je z definice něco už publikovaného — a proč to platí
+i pro doručování, popisují
+[bezpečnostní hranice](@/koncepty/bezpecnostni-hranice.md).

@@ -33,3 +33,30 @@ by z něj dělal hodnocení tohoto webu — web výroky nepřebírá jako své.
 Autorské hodnocení má vlastní, oddělený stav:
 [názor](@/koncepty/stav-nazor.md). Pravidlo, které tyhle vrstvy drží
 oddělené, je [fakt odděleně od názoru](@/koncepty/fakt-oddelene-od-nazoru.md).
+
+## Dvě roviny, které se u citace vždy rozlišují
+
+| otázka | odpověď dává |
+|---|---|
+| Padl ten výrok? | citace a její zdroj |
+| Platí, co ve výroku stojí? | samostatné tvrzení s vlastním stavem, nebo nic |
+
+Když někdo popře obvinění, vzniknou typicky dva záznamy: citace („popřel to
+těmito slovy") a vedle ní [sporné](@/koncepty/stav-sporne.md) tvrzení o
+samotné věci. Sloučit je do jednoho by znamenalo rozhodnout, čí verze platí
+— což tenhle web nedělá.
+
+## Proč se necituje s komentářem
+
+Uvozovací sloveso je hodnocení v převleku: „přiznal", „přiznal se", „hájil
+se" a „uvedl" popisují tentýž akt s velmi různým podtextem. Web volí
+nejneutrálnější variantu, kterou zdroj unese, a zbytek nechává na čtenáři.
+Stejně tak se citace nezkracuje přes podmínku, která ji oslabuje, a
+neuvádí bez kontextu otázky, na kterou odpovídala.
+
+## Citace nezastarává, ale může být překonaná
+
+Výrok z loňska zůstává doloženým výrokem i po změně situace. Když ho
+dotyčný později odvolá nebo řekne opak, nepřepisuje se — přibude druhá
+citace a časová osa ukáže obojí. Jak se to zachytí, popisuje
+[průběžné ověřování](@/koncepty/prubezne-overovani.md).

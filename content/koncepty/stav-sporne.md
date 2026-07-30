@@ -37,3 +37,32 @@ zdrojem — a i pak se rozliší, jestli přišlo **meritorní** zjištění, ne
 [procesní výsledek](@/koncepty/registr-kauz.md) typu odložení či promlčení.
 Otevřené otázky, které z toho zbydou, patří do
 [registru mezer](@/koncepty/registr-mezer.md).
+
+## Tři různé věci pod jedním štítkem
+
+Sporné pokrývá situace, které mají společné jen to, že z nich neplyne
+závěr:
+
+1. **Rozpor mezi zdroji** — dvě redakce popisují tutéž věc neslučitelně.
+2. **Obvinění proti popření** — jedna strana tvrdí, druhá odmítá, nikdo
+   třetí to nerozhodl.
+3. **Zpochybněná pravost** — sporný není obsah, ale to, jestli je materiál
+   autentický.
+
+U každé z nich se v textu uvádí, **o kterou jde** — „sporné" bez vysvětlení,
+co konkrétně je sporné, by byl jen alibismus.
+
+## Co se stane, když to někdo rozhodne
+
+Ani pravomocné rozhodnutí nemění stav automaticky u všeho, co s kauzou
+souvisí. Rozhodnutí se zapíše jako nové tvrzení s vlastním zdrojem a teprve
+podle jeho rozsahu se upraví stavy těch tvrzení, kterých se doopravdy týká.
+Rozšířit dopad rozsudku na věci, o kterých nerozhodoval, je stejná chyba
+jako ho ignorovat.
+
+## Proč je tenhle stav nepohodlný pro obě strany
+
+Kdo čeká potvrzení obvinění, čte „sporné" jako alibismus. Kdo čeká
+vyvrácení, čte to jako pomluvu ponechanou na webu. Obojí je nepochopení:
+sporné je popis stavu **doložení**, ne postoj k věci. Web nemá povinnost mít
+názor — má povinnost neříkat víc, než zdroje unesou.
