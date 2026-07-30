@@ -361,6 +361,11 @@ s očekávaným commitem (`gh run list`, pak kontrola klíčových rout).
 
 ## Známá omezení (k 2026-07-29)
 
+- Do 2026-07-30 se JSON-LD exportní routy (`/data/*.jsonld`) v produkci
+  vůbec negenerovaly, přestože lokální `npm run build` je vytvářel:
+  deploy workflow si kroky pipeline vypisoval ručně a nové kroky do něj
+  nikdo nedoplnil. Opraveno tím, že CI volá `npm run build`; proti
+  opakování hlídá `npm run check:workflow-parity` (součást build gate).
 - Citační otisky (`vomaste:citationFingerprint`) jsou otiskem citace
   (url + retrieved + outlet), **ne** archivované stránky — projekt
   zatím fetchnuté stránky nearchivuje; manifest exportů je hashovaný,

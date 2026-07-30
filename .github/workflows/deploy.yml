@@ -30,74 +30,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run script regression tests
-        run: npm run test
-
-      - name: Build government roster
-        run: npm run build:government-roster
-
-      - name: Validate dossier registry
-        run: npm run validate:dossier
-
-      - name: Validate relationship graph
-        run: npm run validate:graph
-
-      - name: Validate authorization scope
-        run: npm run validate:authorization
-
-      - name: Verify authorization log is append-only
-        run: npm run verify:authorization-log
-
-      - name: Validate entity/aggregate dossier types
-        run: npm run validate:dossier-types
-
-      - name: Build route manifest
-        run: npm run build:routes
-
-      - name: Build navigation tree
-        run: npm run build:navigation
-
-      - name: Validate primary navigation
-        run: npm run validate:navigation
-
-      - name: Validate concept pages and landing tiles
-        run: npm run validate:concepts
-
-      - name: Check templates reuse shared UI components
-        run: npm run lint:component-reuse
-
-      - name: Check templates contain no hardcoded records
-        run: npm run lint:hardcoded-records
-
-      - name: Generate dossier stats
-        run: npm run generate:stats
-
-      # Před global-graphem: ten z exportů skládá vrstvu celého registru,
-      # a data-console.html z nich čte manifest při zola buildu.
-      - name: Build registry data exports
-        run: npm run build:data-exports
-
-      - name: Build global content graph
-        run: npm run build:global-graph
-
-      - name: Validate graph coverage
-        run: npm run validate:graph-coverage
-
-      - name: Build search index
-        run: npm run build:search-index
-
-      - name: Generate authorization-candidates report (not published)
-        run: npm run generate:candidates
-
-      - name: Update discovery log (not published)
-        run: npm run generate:discovery-log
-
-      - name: Build CSS
-        run: npm run css:build
-
-      - name: Build JS
-        run: npm run js:build
-
+      # The build pipeline is defined ONCE, in package.json's `build` script.
+      # This job used to re-list every step by hand, which silently drifted:
+      # steps added to `npm run build` (JSON-LD exports, the schema gate, the
+      # source-independence gate) never ran here, so /data/*.jsonld 404'd in
+      # production while passing locally. Calling `npm run build` is the fix —
+      # scripts/ci/check-workflow-parity.mjs fails if this ever drifts again.
+      #
+      # Zola is installed before the build because `npm run build` invokes it.
       - name: Setup Zola
         uses: taiki-e/install-action@v2
         with:
@@ -106,20 +46,8 @@ jobs:
       - name: Check templates and internal links
         run: zola check
 
-      - name: Build site
-        run: zola build
-
-      - name: Verify anchors
-        run: npm run verify:anchors
-
-      # Poslední tři brány z `npm run build`, které v CI chyběly — CI má
-      # spouštět přesně tutéž sekvenci (AGENTS.md), jinak je zelený lokální
-      # build slabší záruka než tvrdí.
-      - name: Verify JSON-LD
-        run: npm run verify:jsonld
-
-      - name: Verify full-page doctrine
-        run: npm run verify:full-pages
+      - name: Full build (all validators, generators, exports and verifiers)
+        run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
