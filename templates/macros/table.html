@@ -48,9 +48,24 @@
                     table-filter.js, stejný vzor jako claims-filter.js);
                     false = žádný JS
       extra_class — volitelné další utility třídy obalu (např. "mb-8")
+      sort_keys   — pole klíčů řazení, 1:1 podle `columns`; prázdný řetězec
+                    na pozici = sloupec se neřadí. Klíč je čitelný text
+                    (např. "status"), protože se objevuje v URL jako
+                    ?sort=status — index sloupce by se rozpadl při jejich
+                    přeuspořádání. "" (výchozí) = žádné řazení, stejný
+                    sentinel jako u columns/count.
+      facets      — pole dvojic "hodnota::popisek" pro filtrovací čipy nad
+                    tabulkou; řádek se pozná podle data-facet. ""
+                    (výchozí) = bez čipů.
+      url_state   — true promítne hledání/řazení/faset do query stringu,
+                    aby šel výřez dat poslat odkazem (§ 8 mise). Vědomě
+                    opt-in: stránka smí mít víc tabulek a ty by si jinak
+                    přepisovaly tytéž parametry — poslední inicializovaná
+                    by vyhrála a sdílený odkaz by obnovil filtr jinde, než
+                    ho uživatel nastavil. Zapínat na hlavní tabulce stránky.
 -#}
-{%- macro advanced_table(id, caption, record_type="", columns="", count="", searchable=false, extra_class="") -%}
-<div class="relative overflow-x-auto rounded-lg border border-white/10 bg-white/[0.03]{% if extra_class %} {{ extra_class }}{% endif %}"{% if record_type %} data-record-type="{{ record_type }}"{% endif %}{% if searchable %} x-data="advancedTable()"{% endif %}>
+{%- macro advanced_table(id, caption, record_type="", columns="", count="", searchable=false, extra_class="", sort_keys="", facets="", url_state=false) -%}
+<div class="relative overflow-x-auto rounded-lg border border-white/10 bg-white/[0.03]{% if extra_class %} {{ extra_class }}{% endif %}"{% if record_type %} data-record-type="{{ record_type }}"{% endif %}{% if searchable %} x-data="advancedTable()"{% endif %}{% if url_state %} data-url-state="true"{% endif %}>
   {%- if count != "" or searchable %}
   <div class="flex flex-wrap items-center justify-between gap-3 border-b border-white/10 px-3 py-2.5">
     <h2 id="{{ id }}-caption" class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-white/40">
@@ -67,11 +82,41 @@
     {%- endif %}
   </div>
   {%- endif %}
+  {%- if facets | length > 0 %}
+  <div class="flex flex-wrap items-center gap-1.5 border-b border-white/10 px-3 py-2" role="group" aria-label="Filtr: {{ caption }}">
+    {%- for f in facets %}
+    {%- set fp = f | split(pat="::") %}
+    <button type="button" @click="setFacet('{{ fp.0 }}')"
+      :aria-pressed="facet === '{{ fp.0 }}' ? 'true' : 'false'"
+      :class="facet === '{{ fp.0 }}' ? 'border-[#f3e5c0]/60 bg-[#f3e5c0]/10 text-[#f3e5c0]' : 'border-white/15 text-white/60 hover:border-white/35 hover:text-white'"
+      class="inline-flex min-h-8 items-center rounded-lg border px-2.5 text-xs transition-colors">{{ fp.1 }}</button>
+    {%- endfor %}
+  </div>
+  {%- endif %}
   <table id="{{ id }}" class="w-full text-left text-sm">
     <caption class="sr-only">{{ caption }}</caption>
     {%- if columns | length > 0 %}
     <thead class="bg-white/5 text-xs uppercase tracking-wide text-white/50">
-      <tr>{% for col in columns %}<th scope="col" class="p-3">{{ col }}</th>{% endfor %}</tr>
+      <tr>
+        {%- for col in columns %}
+        {%- set key = sort_keys[loop.index0] | default(value="") %}
+        {%- if key %}
+        {#- aria-sort na <th> je to, co odečítač obrazovky ohlásí; ikona je
+            jen vizuální ozvěna téhož stavu, proto aria-hidden. -#}
+        <th scope="col" class="p-0" data-sort-key="{{ key }}" :aria-sort="ariaSort('{{ key }}')">
+          <button type="button" @click="sortBy('{{ key }}')"
+            class="flex w-full items-center gap-1 p-3 text-left uppercase tracking-wide transition-colors hover:text-white">
+            {{ col }}
+            <span aria-hidden="true" class="font-mono text-[0.65rem]"
+              x-text="sortKey === '{{ key }}' ? (sortDir === 'asc' ? '▲' : '▼') : '↕'"
+              :class="sortKey === '{{ key }}' ? 'text-[#f3e5c0]' : 'text-white/25'"></span>
+          </button>
+        </th>
+        {%- else %}
+        <th scope="col" class="p-3">{{ col }}</th>
+        {%- endif %}
+        {%- endfor %}
+      </tr>
     </thead>
     {%- endif %}
     <tbody class="divide-y divide-white/5 [&>tr:nth-child(odd)]:bg-white/[0.02] [&>tr:hover]:bg-white/5">

@@ -19,6 +19,15 @@
 // hodnota `entity_type` nebo nový dossier se objeví sám, bez zásahu do
 // téhle komponenty.
 
+import { readState, syncUrl } from "./url-state.js";
+
+// Stav průzkumníku žije v URL přes sdílený modul (T-019). Dřív si čtení
+// i zápis parametrů psal tenhle soubor sám; druhá kopie v table-filter.js
+// by se dřív nebo později rozešla a rozdíl by se poznal až na sdíleném
+// odkazu, který vede jinam. Výchozí hodnoty určují, co se z adresy
+// vypouští — group="type" je výchozí pohled, proto v čisté URL nestojí.
+const URL_SPEC = { q: "", group: "type", role: "" };
+
 const GROUPINGS = {
   type: { label: "Typ entity", key: (el) => splitList(el.dataset.entityType) },
   dossier: { label: "Dossier", key: (el) => splitList(el.dataset.dossiers) },
@@ -69,10 +78,10 @@ export function registerEntityExplorer() {
         });
         this.total = this.items.length;
 
-        const params = new URLSearchParams(window.location.search);
-        if (params.get("q")) this.search = params.get("q");
-        if (GROUPINGS[params.get("group")]) this.groupBy = params.get("group");
-        if (params.get("role")) this.role = params.get("role");
+        const state = readState(URL_SPEC);
+        this.search = state.q;
+        if (GROUPINGS[state.group]) this.groupBy = state.group;
+        this.role = state.role;
 
         this.apply();
       },
@@ -177,12 +186,10 @@ export function registerEntityExplorer() {
           groups.appendChild(details);
         });
 
-        const url = new URL(window.location.href);
-        const setParam = (k, v) => (v ? url.searchParams.set(k, v) : url.searchParams.delete(k));
-        setParam("q", this.search.trim());
-        setParam("group", this.groupBy === "type" ? "" : this.groupBy);
-        setParam("role", this.role);
-        window.history.replaceState({}, "", url.pathname + (url.search || "") + url.hash);
+        syncUrl(
+          { q: this.search.trim(), group: this.groupBy, role: this.role },
+          URL_SPEC,
+        );
       },
     };
   });

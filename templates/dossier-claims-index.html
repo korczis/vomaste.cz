@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% import "macros/ui.html" as ui %}
+{% import "macros/table.html" as table %}
 
 {% block content %}
 <main class="mx-auto max-w-6xl px-6 py-12 text-white">
@@ -23,20 +24,46 @@
     {{ ui::stat_tile(value=quotes | length, label="Citace") }}
   </div>
 
-  <div class="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+  {#- Hustá tabulka místo karetní mřížky: u dossieru s desítkami tvrzení
+      karty nutily scrollovat a neuměly ani třídit, ani filtrovat. Sloupce,
+      řazení, faseta a URL stav jdou přes sdílené makro, ne přes vlastní
+      komponentu — těží z toho i ostatní tabulky v repozitáři. -#}
+  {{ table::advanced_table(
+    id="claims-registry",
+    caption="Registr tvrzení",
+    record_type="claim",
+    count=section.pages | length,
+    columns=["ID", "Stav", "Tvrzení", "Zdroje"],
+    sort_keys=["id", "status", "", "sources"],
+    facets=[
+      "status-corroborated::Corroborated",
+      "status-single::1 zdroj",
+      "status-disputed::Sporné",
+      "status-quote::Citace",
+    ],
+    searchable=true,
+    url_state=true) }}
     {% for p in section.pages %}
-    <a href="{{ p.permalink | safe }}" class="registry-card">
-      <span class="font-mono text-xs text-[#f3e5c0]">{{ p.extra.clm_id }}</span>
-      <span class="status-badge {{ p.extra.status }} mt-1 inline-block w-fit">{{ p.extra.status_label }}</span>
-      <span class="mt-2 text-sm text-white/70">{{ p.extra.summary }}</span>
-      {% if p.extra.sources %}
-      <span class="mt-2 flex flex-wrap gap-1">
-        {% for s in p.extra.sources %}<span class="rounded bg-white/5 px-1.5 py-0.5 font-mono text-[0.6rem] text-white/50">{{ s }}</span>{% endfor %}
-      </span>
-      {% endif %}
-    </a>
+    <tr data-facet="{{ p.extra.status }}">
+      <td class="whitespace-nowrap p-3 align-top">
+        <a href="{{ p.permalink | safe }}" class="font-mono text-xs text-[#f3e5c0] hover:underline">{{ p.extra.clm_id }}</a>
+      </td>
+      <td class="whitespace-nowrap p-3 align-top">
+        <span class="status-badge {{ p.extra.status }}">{{ p.extra.status_label }}</span>
+      </td>
+      <td class="p-3 align-top text-white/75">
+        <a href="{{ p.permalink | safe }}" class="text-white/75 no-underline hover:text-white hover:underline">{{ p.extra.summary }}</a>
+      </td>
+      {#- data-sort-value nese počet, ne vypsané identifikátory: řadit se má
+          podle míry doložení, ne podle abecedy prvního zdroje. -#}
+      <td class="p-3 align-top" data-sort-value="{{ p.extra.sources | length }}">
+        <span class="flex flex-wrap gap-1">
+        {%- for s in p.extra.sources %}<span class="rounded bg-white/5 px-1.5 py-0.5 font-mono text-[0.6rem] text-white/50">{{ s }}</span>{% endfor %}
+        </span>
+      </td>
+    </tr>
     {% endfor %}
-  </div>
+  {{ table::advanced_table_end(footer="Řazení a filtr se promítají do adresy — výřez dat jde poslat odkazem.") }}
 
   {{ ui::back_link_footer(url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"), label="Zpět na celý dossier") }}
 </main>
