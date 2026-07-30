@@ -20,10 +20,19 @@
  * WHAT ARES CAN AND CANNOT EVIDENCE — read before citing it:
  *   CAN: IČO, registered name, legal form, registered address, statutory
  *        bodies (directors), registrations, active/dissolved status.
- *   CANNOT: shareholders, beneficial owners, ownership percentages, or
- *        "who controlled this company since when". A claim of the form
- *        "X owns/controls Y since DATE" is NOT supportable by ARES alone.
- *        Do not write one and cite this.
+ *   CANNOT: beneficial owners, and "who controlled this company since when".
+ *        A claim of the form "X controls Y since DATE" is NOT supportable by
+ *        ARES alone. Do not write one and cite this.
+ *
+ *   CORRECTION (2026-07-30): this note previously also claimed ARES cannot
+ *        evidence shareholders or ownership percentages. That is true of the
+ *        basic /ekonomicke-subjekty endpoint used here, but NOT of the public
+ *        register branch /ekonomicke-subjekty-vr, which returns `spolecnici`
+ *        with `velikostPodilu` for an s.r.o. — verified against IČO 28274318.
+ *        See scripts/osint/expand-entity.mjs, which uses that branch. Still
+ *        out of reach there: shareholders of an a.s. (generally not
+ *        registered at all), so an empty list means "not registered here",
+ *        never "this company has no owners".
  *
  * Deliberately NOT part of `npm run build`: it makes a live network call,
  * and the production build must stay offline and deterministic. This is a

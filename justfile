@@ -139,6 +139,15 @@ authorize entity:
 ares *args:
     node scripts/osint/ares-lookup.mjs {{ args }}
 
+# Rozbalí rejstříkové okolí firmy na kontextové entity (ARES VR). Výchozí je
+# dry run; --write teprve zapisuje. Nikdy nepřepisuje existující stránku a
+# hlásí podezření na duplicitu pod jiným slugem.
+#   just expand 28274318
+#   just expand 28274318 --write
+[doc("Rozbalí rejstříkové okolí firmy na kontextové entity (dry run bez --write)")]
+expand ico *args:
+    node scripts/osint/expand-entity.mjs --ico={{ ico }} {{ args }}
+
 # --- multi-agent co-op ----------------------------------------------------
 
 # Board, worktrees and the last messages on the co-op bus.
