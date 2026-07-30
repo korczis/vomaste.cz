@@ -130,6 +130,63 @@ for (const slug of dossierSlugs) {
   });
 }
 
+// --- full-registry layer -----------------------------------------------------
+// The curated graph above is an ENTITY graph: hand-authored nodes and edges in
+// graph.toml. It deliberately does not contain every record — measured, only
+// ~62% of claims and ~69% of sources are attached to any node or edge, and
+// gaps appear nowhere. That is a legitimate editorial view, but it is not a
+// map of the dataset, so this second layer derives one mechanically from the
+// registries themselves (static/data/*.json, written by build-data-exports.mjs
+// from the same front matter the pages render from).
+//
+// Nothing here is curated: every node is a record that exists, every edge is a
+// reference that record already declares. No new relationship is invented.
+function buildFullLayer() {
+  const read = (name) => {
+    try {
+      return JSON.parse(readFileSync(join(ROOT, "static/data", `${name}.json`), "utf8"));
+    } catch {
+      return [];
+    }
+  };
+  const claims = read("claims");
+  const sources = read("sources");
+  const cases = read("cases");
+  const gaps = read("gaps");
+  const relations = read("relations");
+
+  const fnodes = [];
+  const fedges = [];
+  const push = (id, type, label, url, extra = {}) => fnodes.push({ id, type, label, url, ...extra });
+
+  for (const n of nodesById.values()) {
+    push(n.id, "entity", n.label, null, { entity_type: n.type, subject: !!n.subject, dossiers: n.dossiers });
+  }
+  for (const c of claims) push(c.clm_id, "claim", c.clm_id, c.url, { status: c.status, summary: c.summary });
+  for (const s of sources) push(s.src_id, "source", s.src_id, s.url, { outlet: s.outlet, src_type: s.src_type });
+  for (const c of cases) push(c.case_id, "case", c.case_id, c.url, { title: c.title, status: c.status });
+  for (const g of gaps) push(g.gap_id, "gap", g.gap_id, g.url, { priority: g.priority });
+
+  const known = new Set(fnodes.map((n) => n.id));
+  const link = (id, source, target, label, kind) => {
+    if (!known.has(source) || !known.has(target)) return;
+    fedges.push({ id, source, target, label, kind });
+  };
+
+  // claim -> source ("cituje"): the backbone of the evidence layer.
+  for (const c of claims) for (const s of c.sources || []) link(`${c.clm_id}->${s}`, c.clm_id, s, "cituje", "cites");
+  // gap -> claim ("otevřená otázka k"): what is not settled about what.
+  for (const g of gaps) for (const c of g.claims || []) link(`${g.gap_id}->${c}`, g.gap_id, c, "otázka k", "asks");
+  // entity -> claim ("figuruje v"): from the curated graph's own claim refs.
+  for (const n of nodesById.values()) for (const c of n.claims || []) link(`${n.id}->${c}`, n.id, c, "figuruje v", "mentions");
+  // relation edge -> claim ("doloženo"): what backs each curated edge.
+  for (const r of relations) for (const c of r.claims || []) link(`${r.relation_id}->${c}`, r.source, c, "doloženo", "backs");
+
+  return { nodes: fnodes, edges: fedges };
+}
+
+const full = buildFullLayer();
+
 mkdirSync(dirname(OUT_FILE), { recursive: true });
 const globalGraph = {
   dossiers,
@@ -137,6 +194,10 @@ const globalGraph = {
   edges,
   clusters,
   source_families: sourceFamilies,
+  full,
 };
 writeFileSync(OUT_FILE, JSON.stringify(globalGraph), "utf8");
-console.log(`Wrote ${OUT_FILE}: ${dossiers.length} dossier(s), ${globalGraph.nodes.length} node(s), ${edges.length} edge(s).`);
+console.log(
+  `Wrote ${OUT_FILE}: ${dossiers.length} dossier(s), ${globalGraph.nodes.length} curated node(s), ${edges.length} curated edge(s); ` +
+    `full registry layer: ${full.nodes.length} node(s), ${full.edges.length} edge(s).`,
+);

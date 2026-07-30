@@ -22,6 +22,7 @@
     "build:routes": "node scripts/dossier/build-route-manifest.mjs",
     "build:search-index": "node scripts/dossier/build-search-index.mjs",
     "build:data-exports": "node scripts/dossier/build-data-exports.mjs",
+    "validate:graph-coverage": "node scripts/dossier/validate-graph-coverage.mjs",
     "build:global-graph": "node scripts/dossier/build-global-graph.mjs",
     "generate:candidates": "node scripts/dossier/generate-authorization-candidates.mjs",
     "generate:discovery-log": "node scripts/dossier/generate-discovery-log.mjs",
@@ -32,8 +33,8 @@
     "verify:full-pages": "node scripts/dossier/verify-full-pages.mjs",
     "authorize:entity": "node scripts/dossier/authorize-entity.mjs",
     "scaffold:dossier": "node scripts/dossier/scaffold-entity-dossier.mjs",
-    "build": "npm run test && npm run validate:dossier && npm run validate:graph && npm run validate:authorization && npm run verify:authorization-log && npm run validate:dossier-types && npm run build:routes && npm run build:navigation && npm run validate:navigation && npm run validate:concepts && npm run lint:component-reuse && npm run generate:stats && npm run build:global-graph && npm run build:search-index && npm run build:data-exports && npm run generate:candidates && npm run generate:discovery-log && npm run css:build && npm run js:build && zola build && npm run verify:anchors && npm run verify:jsonld && npm run verify:full-pages",
-    "dev": "npm run validate:graph && npm run validate:authorization && npm run validate:dossier-types && npm run build:routes && npm run build:navigation && npm run validate:navigation && npm run generate:stats && npm run build:global-graph && npm run build:search-index && npm run build:data-exports && npm run generate:candidates && npm run generate:discovery-log && npm run css:build && npm run js:build && zola serve"
+    "build": "npm run test && npm run validate:dossier && npm run validate:graph && npm run validate:authorization && npm run verify:authorization-log && npm run validate:dossier-types && npm run build:routes && npm run build:navigation && npm run validate:navigation && npm run validate:concepts && npm run lint:component-reuse && npm run generate:stats && npm run build:global-graph && npm run build:search-index && npm run build:data-exports && npm run validate:graph-coverage && npm run generate:candidates && npm run generate:discovery-log && npm run css:build && npm run js:build && zola build && npm run verify:anchors && npm run verify:jsonld && npm run verify:full-pages",
+    "dev": "npm run validate:graph && npm run validate:authorization && npm run validate:dossier-types && npm run build:routes && npm run build:navigation && npm run validate:navigation && npm run generate:stats && npm run build:global-graph && npm run build:search-index && npm run build:data-exports && npm run validate:graph-coverage && npm run generate:candidates && npm run generate:discovery-log && npm run css:build && npm run js:build && zola serve"
   },
   "devDependencies": {
     "alpinejs": "^3.15.12",

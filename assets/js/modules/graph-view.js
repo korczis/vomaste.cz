@@ -26,6 +26,15 @@ import forceAtlas2 from "graphology-layout-forceatlas2";
 import { resizeHandlers } from "./fullscreen.js";
 
 const STATUS_COLOR = { corroborated: "#4ade80", disputed: "#facc15", quote: "#93c5fd", contextual: "rgba(255,255,255,0.35)" };
+// Plná registrová vrstva má vlastní typy uzlů (záznamy, ne entity) — barvy
+// kopírují to, co už používají štítky stavů a registry na stránkách.
+const RECORD_COLOR = {
+  entity: "#f3e5c0",
+  claim: "#93c5fd",
+  source: "#4ade80",
+  case: "#facc15",
+  gap: "#f87171",
+};
 const TYPE_COLOR = {
   person: "#f3e5c0",
   political_party: "#93c5fd",
@@ -63,11 +72,21 @@ async function fetchRouteMap(indexUrl) {
 export async function initGraphView(containerId, dataIslandId, searchIndexUrl) {
   const container = document.getElementById(containerId);
   if (!container) return;
-  const data = readJsonIsland(dataIslandId);
-  if (!data || !data.nodes || !data.edges) return;
+  const island = readJsonIsland(dataIslandId);
+  if (!island || !island.nodes || !island.edges) return;
 
   const routeOf = await fetchRouteMap(searchIndexUrl);
-  const graph = new Graph({ multi: true, type: "directed" });
+  let renderer = null;
+
+  // Layer switch (only the global map ships one): the curated entity graph and
+  // the mechanically derived full-registry graph are two views of the same
+  // data, so switching just rebuilds the Graphology model from a different
+  // node/edge set — no second renderer, no second dataset.
+  const layers = { curated: { nodes: island.nodes, edges: island.edges }, full: island.full || null };
+
+  const render = (data) => {
+    if (renderer) { renderer.kill(); renderer = null; }
+    const graph = new Graph({ multi: true, type: "directed" });
 
   // Deterministic seed positions on a circle: ForceAtlas2 needs a starting
   // layout, and seeding it from the node order (rather than Math.random)
@@ -76,11 +95,11 @@ export async function initGraphView(containerId, dataIslandId, searchIndexUrl) {
     const angle = (2 * Math.PI * i) / data.nodes.length;
     graph.addNode(n.id, {
       label: n.label,
-      size: 7,
-      color: TYPE_COLOR[n.type] || "#666",
+      size: n.subject ? 9 : 7,
+      color: RECORD_COLOR[n.type] || TYPE_COLOR[n.type] || "#666",
       x: Math.cos(angle),
       y: Math.sin(angle),
-      route: routeOf[n.id] || null,
+      route: n.url || routeOf[n.id] || null,
       kind: "node",
     });
   });
@@ -90,7 +109,7 @@ export async function initGraphView(containerId, dataIslandId, searchIndexUrl) {
     graph.addEdgeWithKey(e.id, e.source, e.target, {
       label: e.label,
       size: 1.4,
-      color: STATUS_COLOR[e.status] || "#666",
+      color: STATUS_COLOR[e.status] || "rgba(255,255,255,0.28)",
       type: "arrow",
       route: routeOf[e.id] || null,
       kind: "edge",
@@ -102,7 +121,7 @@ export async function initGraphView(containerId, dataIslandId, searchIndexUrl) {
     settings: { ...forceAtlas2.inferSettings(graph), gravity: 1.4, scalingRatio: 12, slowDown: 4 },
   });
 
-  const renderer = new Sigma(graph, container, {
+  renderer = new Sigma(graph, container, {
     renderEdgeLabels: false,
     labelColor: { color: "#ffffff" },
     labelSize: 11,
@@ -161,6 +180,22 @@ export async function initGraphView(containerId, dataIslandId, searchIndexUrl) {
   if (fsBox && fsBox.id) {
     resizeHandlers[fsBox.id] = scheduleResize;
   }
+
+    return renderer;
+  };
+
+  render(layers.curated);
+
+  const buttons = document.querySelectorAll("[data-graph-layer]");
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const key = btn.getAttribute("data-graph-layer");
+      const data = layers[key];
+      if (!data) return;
+      buttons.forEach((b) => b.setAttribute("aria-pressed", String(b === btn)));
+      render(data);
+    });
+  });
 
   return renderer;
 }

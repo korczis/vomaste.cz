@@ -35,9 +35,28 @@
   <section aria-labelledby="global-graph-heading" class="mb-12">
     <h2 id="global-graph-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/40">Globální graf</h2>
     <p class="mb-4 text-xs text-white/50">Agregovaná projekce lokálních grafů výše uvedených dossierů — ne automaticky rozšiřovaná investigace. Klikněte na uzel nebo hranu pro otevření jeho stránky.</p>
-    <div class="mb-8 flex items-center justify-end">
-      <button type="button" class="fs-btn" data-fs-target="global-map-box" title="Zobrazit na celou obrazovku" aria-label="Zobrazit na celou obrazovku">⛶</button>
+
+    {#- Dvě vrstvy téhož datasetu, obě generované:
+        • kurátorská — ručně psané uzly a hrany z graph.toml (entity a jejich
+          vztahy). Je záměrně neúplná: naváže jen část tvrzení a zdrojů.
+        • celý registr — odvozená mechanicky z registrů, každý záznam je uzel
+          a každá hrana je odkaz, který ten záznam sám deklaruje.
+        Čísla u přepínače jsou spočítaná z dat, ne napsaná do šablony. -#}
+    <div class="mb-4 flex flex-wrap items-center gap-2" role="group" aria-label="Vrstva mapy">
+      <button type="button" data-graph-layer="curated" aria-pressed="true"
+        class="cy-chip">Vztahy entit ({{ graph.nodes | length }} uzlů / {{ graph.edges | length }} hran)</button>
+      <button type="button" data-graph-layer="full" aria-pressed="false"
+        class="cy-chip">Celý registr ({{ graph.full.nodes | length }} uzlů / {{ graph.full.edges | length }} hran)</button>
+      <button type="button" class="fs-btn ml-auto" data-fs-target="global-map-box" title="Zobrazit na celou obrazovku" aria-label="Zobrazit na celou obrazovku">⛶</button>
     </div>
+    <p class="mb-4 text-xs text-white/40" data-graph-layer-note>
+      Kurátorská vrstva ukazuje entity a doložené vazby mezi nimi. „Celý registr"
+      přidá jako uzly i tvrzení, zdroje, kauzy a mezery — a jako hrany jen to,
+      co daný záznam sám deklaruje (tvrzení cituje zdroj, mezera se ptá na
+      tvrzení, entita figuruje v tvrzení). Nic se tím nedovozuje: kauzy proto
+      stojí bez hran, protože vazbu na konkrétní tvrzení dnes v datech nemají —
+      dokreslit ji odhadem by znamenalo vymyslet si vztah, který nikde není.
+    </p>
     <div id="global-map-box" class="fs-box mb-2 overflow-hidden rounded-lg border border-white/10">
       <div id="global-map-view"
            data-graph-view
