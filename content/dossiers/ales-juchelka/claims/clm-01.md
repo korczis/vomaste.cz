@@ -13,7 +13,6 @@ status = "status-single"
 status_label = "1 ZDROJ"
 summary = "Aleš Juchelka zastává podle oficiálního profilu na webu Úřadu vlády funkci ministra práce a sociálních věcí"
 sources = ["SRC-01"]
-subjects = ["juchelka"]
 +++
 
-Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/ales-juchelka/_index.md).
+Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/ales-juchelka/_index.md#registr-tvrzeni).

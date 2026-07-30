@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 33 context entities across 8 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 30 context entities across 11 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## Agrofert (`agrofert`)
 
@@ -19,16 +19,6 @@ Generated from 33 context entities across 8 dossier(s). Regenerate with `npm run
 - Sources: SRC-02 (1 independent source family)
 - Relations: 
   - edge-babis-agrofert (babis -> agrofert, "akcie vloženy do svěřenského fondu RSVP Trust (2026-02)", dossier: andrej-babis)
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Ivan Bednárik (ministr dopravy) (`bednarik`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: —
-- Claims: none
-- Sources: none (0 independent source families)
-- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Igor Červený (`cerveny`)
@@ -88,16 +78,6 @@ Generated from 33 context entities across 8 dossier(s). Regenerate with `npm run
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Karel Havlíček (1. místopředseda vlády a ministr průmyslu a obchodu) (`havlicek`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: —
-- Claims: none
-- Sources: none (0 independent source families)
-- Relations: none
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Aleš Juchelka (ministr práce a sociálních věcí) (`juchelka`)
 
 - Type: person
 - Status: not_authorized
@@ -286,16 +266,6 @@ Generated from 33 context entities across 8 dossier(s). Regenerate with `npm run
   - edge-okamura-spd (okamura -> spd, "předseda hnutí", dossier: tomio-okamura)
 - Missing: explicit owner authorization to promote this to its own dossier
 
-## Boris Šťastný (ministr pro sport a prevenci v oblasti zdraví) (`stastny`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: —
-- Claims: none
-- Sources: none (0 independent source families)
-- Relations: none
-- Missing: explicit owner authorization to promote this to its own dossier
-
 ## Státní zastupitelství (`statni-zastupitelstvi`)
 
 - Type: public_institution
@@ -345,7 +315,7 @@ Generated from 33 context entities across 8 dossier(s). Regenerate with `npm run
 
 - Type: public_institution
 - Status: not_authorized
-- Appears in: macinka-turek, petr-macinka, filip-turek, oto-klempir, alena-schillerova
+- Appears in: macinka-turek, petr-macinka, filip-turek, oto-klempir, alena-schillerova, ales-juchelka, ivan-bednarik, boris-stastny
 - Claims: CLM-03, CLM-01
 - Sources: SRC-11, SRC-01 (2 independent source families)
 - Relations: 
@@ -353,6 +323,9 @@ Generated from 33 context entities across 8 dossier(s). Regenerate with `npm run
   - edge-motoriste-vlada (motoriste -> vlada, "člen koalice", dossier: macinka-turek)
   - edge-klempir-vlada (klempir -> vlada, "ministr kultury", dossier: oto-klempir)
   - edge-schillerova-vlada (schillerova -> vlada, "místopředsedkyně vlády a ministryně financí", dossier: alena-schillerova)
+  - edge-juchelka-vlada (juchelka -> vlada, "ministr práce a sociálních věcí", dossier: ales-juchelka)
+  - edge-bednarik-vlada (bednarik -> vlada, "ministr dopravy", dossier: ivan-bednarik)
+  - edge-stastny-vlada (stastny -> vlada, "ministr pro sport, prevenci a zdraví", dossier: boris-stastny)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Adam Vojtěch (ministr zdravotnictví) (`vojtech`)
