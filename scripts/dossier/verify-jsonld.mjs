@@ -18,6 +18,7 @@ import { readFileSync, readdirSync, statSync } from "node:fs";
 import { join, dirname, relative } from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadDossierRegistry } from "./lib/dossier-registry.mjs";
+import { FORBIDDEN_KEYS, FORBIDDEN_TYPES, citationFingerprint } from "./lib/jsonld-shared.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const PUBLIC_ROOT = join(ROOT, "public");
@@ -28,8 +29,8 @@ const err = (msg) => errors.push(msg);
 
 // The minifier may drop attribute quotes: <script type=application/ld+json>
 const BLOCK_RE = /<script type="?application\/ld\+json"?>([\s\S]*?)<\/script>/g;
-const FORBIDDEN_KEYS = new Set(["reviewRating", "ratingValue", "bestRating", "worstRating", "reviewAspect"]);
-const FORBIDDEN_TYPES = new Set(["ClaimReview", "Review", "Rating", "AggregateRating"]);
+// FORBIDDEN_KEYS / FORBIDDEN_TYPES now live in lib/jsonld-shared.mjs,
+// shared with verify-export.mjs so HTML and export enforcement can't drift.
 
 function* htmlFiles(dir) {
   for (const name of readdirSync(dir)) {
@@ -63,6 +64,19 @@ function checkNode(node, tag) {
     need("text");
     if (!Array.isArray(node.appearance) || node.appearance.length === 0)
       err(`${tag}: Claim node has no non-empty "appearance" — a claim without cited reporting (rule 1).`);
+  }
+  // Embedded citation fingerprints (T-010): if a source node carries one,
+  // it must recompute from the node's own visible fields — same formula
+  // and same shared helper as the /data/*.jsonld exports, so the HTML
+  // and the export can never drift apart silently.
+  if (node["vomaste:citationFingerprint"]) {
+    const recomputed = citationFingerprint({
+      url: node.url,
+      retrieved: node["vomaste:retrieved"],
+      outlet: node.publisher?.name,
+    });
+    if (recomputed !== node["vomaste:citationFingerprint"])
+      err(`${tag}: citation fingerprint on ${type} node does not recompute from its visible fields (url/retrieved/outlet).`);
   }
   if (type === "BreadcrumbList") {
     if (!Array.isArray(node.itemListElement) || node.itemListElement.length === 0)

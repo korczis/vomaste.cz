@@ -1,7 +1,8 @@
 # ADR: dossier JSON-LD provenance extension — design for T-010
 
-**Status**: proposed (design only — not implemented in this pass; the
-implementation is blocked on `docs/coop/TASKS.md` T-001, see below).
+**Status**: accepted & implemented 2026-07-30 (branch `task/T-010` —
+see the "Implementation note" section at the end; the original
+design-only text below is kept unchanged).
 **Date**: 2026-07-30.
 
 ## Measured current state
@@ -140,3 +141,49 @@ commit's.
 - Revisit a `contradicts`/`disputes` relationship type only via a
   dedicated `AGENTS.md` editorial-rules amendment, never as a
   follow-up to this technical ADR.
+
+## Implementation note (2026-07-30, T-010)
+
+Implemented as designed, with these concretizations (owner asked for
+maximum-depth, fully data-driven JSON-LD; prismatic-platform was
+re-checked and confirmed to have no reusable JSON-LD graph exporter —
+only the data-model ideas port, exactly as this ADR concluded):
+
+- **Adopt 1 (content-address citations)** — implemented as the interim
+  citation fingerprint: SHA-256 over the `url + retrieved + outlet`
+  tuple, computed at build time in `scripts/dossier/lib/jsonld-shared.mjs`
+  (`citationFingerprint`), NOT written into front matter — derived,
+  never authored, so no content file was touched. Surfaced both in the
+  `/data/*.jsonld` exports and in the embedded `ld_source_node` HTML
+  markup (via `data/generated/source-fingerprints.json`); both
+  verifiers recompute it from the node's own visible fields.
+- **Adopt 2 (manifest + offline verify)** — `scripts/dossier/`
+  `build-jsonld-exports.mjs` emits `/data/dossiers/<slug>.jsonld` per
+  registry dossier (entity views subject-filtered from their canonical
+  dossier, same rule as the templates), `/data/graph.jsonld` (site-wide
+  union deduplicated by canonical `@id`) and `/data/jsonld-manifest.json`
+  (`{route, sha256, bytes, nodes}`); `verify-export.mjs --dir <copy>`
+  verifies a downloaded copy offline and doubles as the post-`zola build`
+  gate in `npm run build`.
+- **Adopt 3 (invertible vocabulary)** — emitted terms (prefix
+  `https://vomaste.cz/ns#`): `status`, `retrieved`,
+  `citationFingerprint`, `entityType`, `relationType`, `from`/`to`,
+  `basedOnClaim`, `priority`, `checked`, `corroborates`/`corroboratedBy`
+  (only where a claim really cites ≥2 sources), plus types `Relation`,
+  `Case`, `Gap`. `supersedes`/`supersededBy` stay **reserved, not
+  emitted** — no data models supersession yet, and declaring an unused
+  term would be claimed-but-not-real capability.
+- **Reject (numeric confidence)** — upheld; categorical `status_label`
+  values are exported verbatim as `vomaste:status`.
+- **Person discipline carried over to exports**: `schema.org/Person`
+  nodes exist only for authorized dossier subjects (`@id` =
+  `/dossiers/<slug>/#person`, identical to the embedded markup, so the
+  two graphs interlink); every other person-shaped entity (government
+  roster, graph context nodes) is a plain `Thing` +
+  `vomaste:entityType` — pinned by regression test.
+- The T-001 file-contention blocker was resolved differently than
+  anticipated: the implementation touches **no** `content/dossiers/**`
+  front matter (fingerprints are derived at build time) and only adds
+  new scripts + extends two templates, so the overlap with T-001's
+  migration surface is minimal. Rebase burden accepted and noted on the
+  coop bus.

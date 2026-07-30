@@ -67,6 +67,12 @@
 {%- if ld_person and current_url -%}
   {%- set ld_person_id = current_url ~ "#person" -%}
 {%- endif -%}
+{#- Citation fingerprints (sha256 nad url + retrieved + outlet zdroje),
+    generuje build:jsonld-exports — stejná hodnota, kterou nese
+    /data/dossiers/<slug>.jsonld export, takže embedded citace a export
+    jsou ověřitelně tatáž citace. required=false: mimo plnou build
+    pipeline soubor nemusí existovat a stránka se obejde bez otisků. -#}
+{%- set ld_fps = load_data(path="data/generated/source-fingerprints.json", required=false) | default(value=false) -%}
 {#- Same generated tree the sidebar renders (data/generated/navigation.json),
     flattened: top-level items, then every dossier and every dossier registry.
     No slug or person name is written here. -#}
@@ -81,8 +87,12 @@
     {%- endfor -%}
   {%- endfor -%}
 {%- endfor -%}
+{%- set ld_ns = config.base_url ~ "/ns#" -%}
+{%- if ld_dossier %}
+<link rel="alternate" type="application/ld+json" href="{{ get_url(path="data/dossiers/" ~ ld_dossier ~ ".jsonld") }}">
+{%- endif %}
 <script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[{"@type":{{ ld_seo_type | json_encode | safe }},"name":{{ ld_title | json_encode | safe }},"description":{{ ld_description | json_encode | safe }},"inLanguage":{{ ld_lang | json_encode | safe }}{% if current_url %},"url":{{ current_url | json_encode | safe }}{% endif %}{% if ld_person %},"mainEntity":{"@type":"Person","name":{{ ld_person.title | json_encode | safe }},"description":{{ ld_description | json_encode | safe }}{% if current_url %},"url":{{ current_url | json_encode | safe }},"@id":{{ ld_person_id | json_encode | safe }}{% endif %}}{% endif %}}
+{"@context":["https://schema.org",{"vomaste":{{ ld_ns | json_encode | safe }}}],"@graph":[{"@type":{{ ld_seo_type | json_encode | safe }},"name":{{ ld_title | json_encode | safe }},"description":{{ ld_description | json_encode | safe }},"inLanguage":{{ ld_lang | json_encode | safe }}{% if current_url %},"url":{{ current_url | json_encode | safe }}{% endif %}{% if ld_person %},"mainEntity":{"@type":"Person","name":{{ ld_person.title | json_encode | safe }},"description":{{ ld_description | json_encode | safe }}{% if current_url %},"url":{{ current_url | json_encode | safe }},"@id":{{ ld_person_id | json_encode | safe }}{% endif %}}{% endif %}}
 {%- if ld_ancestors | length > 0 -%}
 ,{"@type":"BreadcrumbList","itemListElement":[
 {%- for ld_a in ld_ancestors -%}
@@ -93,10 +103,15 @@
 {"@type":"ListItem","position":{{ ld_pos + 1 }},"name":{{ ld_title | json_encode | safe }}{% if current_url %},"item":{{ current_url | json_encode | safe }}{% endif %}}]}
 {%- endif -%}
 {%- if ld_record_type == "claim" -%}
-,{"@type":"Claim","name":{{ page.extra.clm_id | json_encode | safe }},"text":{{ page.extra.summary | json_encode | safe }},"inLanguage":{{ ld_lang | json_encode | safe }}{% if current_url %},"url":{{ current_url | json_encode | safe }}{% endif %}{% if ld_claim_sources | length > 0 %},"appearance":[{% for ld_sp in ld_claim_sources %}{{ jsonld::ld_source_node(sp=ld_sp, name=ld_sp.title) }}{% if not loop.last %},{% endif %}{% endfor %}]{% endif %}}
+,{"@type":"Claim","name":{{ page.extra.clm_id | json_encode | safe }},"text":{{ page.extra.summary | json_encode | safe }},"inLanguage":{{ ld_lang | json_encode | safe }}{% if current_url %},"url":{{ current_url | json_encode | safe }}{% endif %}{% if ld_claim_sources | length > 0 %},"appearance":[{% for ld_sp in ld_claim_sources %}{%- set ld_fp = "" -%}{%- if ld_fps -%}{%- set ld_fp_key = ld_sp.extra.dossier ~ "/" ~ ld_sp.extra.src_id -%}{%- set ld_fp = ld_fps[ld_fp_key] | default(value="") -%}{%- endif -%}{{ jsonld::ld_source_node(sp=ld_sp, name=ld_sp.title, fp=ld_fp) }}{% if not loop.last %},{% endif %}{% endfor %}]{% endif %}}
 {%- endif -%}
 {%- if ld_record_type == "source" -%}
-,{{ jsonld::ld_source_node(sp=page, name=ld_title) }}
+{%- set ld_fp = "" -%}
+{%- if ld_fps -%}
+  {%- set ld_fp_key = page.extra.dossier ~ "/" ~ page.extra.src_id -%}
+  {%- set ld_fp = ld_fps[ld_fp_key] | default(value="") -%}
+{%- endif -%}
+,{{ jsonld::ld_source_node(sp=page, name=ld_title, fp=ld_fp) }}
 {%- endif -%}
 {%- for ld_item in ld_nav_items -%}
 {#- `anchor` je pro uzly bez vlastní routy (skupina konceptů je sekce

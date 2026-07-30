@@ -44,12 +44,9 @@ zreprodukuj build a zpochybni výsledek.*
 nepodložená obvinění, centrální autorita s nárokem na konečnou pravdu,
 ani důvěrná schránka provozovaná ve veřejném Gitu.
 
-**Poctivý aktuální stav**: které dossiery repozitář hostí, se nepíše sem —
-je to obsah `data/dossiers.toml` a živý seznam na
-[/dossiers/](https://vomaste.cz/dossiers/); přesný, datovaný, append-only
-rozsah autorizace pro každý subjekt je v `AGENTS.md`. Aktuální počty
-záznamů si lze vygenerovat nebo rovnou dotázat v
-[SQL konzoli](https://vomaste.cz/data/). De-specializace platformy — dossiery a
+**Poctivý aktuální stav (k 2026-07-29)**: repozitář hostí dossiery o
+Petru Macinkovi a Filipu Turkovi (přesný, datovaný, append-only rozsah
+autorizace viz `AGENTS.md`). De-specializace platformy — dossiery a
 entity jako čistá data, žádné hardcodované subjekty — aktivně probíhá:
 inventura vazby je v
 [`docs/migrations/remove-macinka-turek-coupling-audit.md`](docs/migrations/remove-macinka-turek-coupling-audit.md)
@@ -138,11 +135,30 @@ pravdivosti** (`ClaimReview`, `reviewRating` apod.) — stavy popisují
 zdrojování, ne rozhodnutí o pravdě. `npm run verify:jsonld` (součást
 build gate) po každém buildu parsuje všechny bloky, kontroluje povinná
 pole, pokrytí (každé tvrzení na disku = jeden `Claim` uzel) a build
-shodí, kdyby se hodnoticí typ kdekoli objevil. Data jsou vložená přímo
-v HTML stránkách. Ploché JSON exporty všech registrů a jejich manifest
-existují na `/data/` (generuje `build:data-exports`); samostatné
-**JSON-LD** exportní routy (`/data/*.jsonld`) a checksumy zatím ne — viz
-Známá omezení.
+shodí, kdyby se hodnoticí typ kdekoli objevil.
+
+Vedle vložených dat existují **samostatné JSON-LD exportní routy**
+(`build:jsonld-exports`, návrh v
+[`docs/adr/dossier-jsonld-provenance-extension.md`](docs/adr/dossier-jsonld-provenance-extension.md)):
+
+- `/data/dossiers/<slug>.jsonld` — plnohloubkový `@graph` každého
+  dossieru: `Dataset` + `Person` (jen autorizované subjekty) + všechna
+  tvrzení, zdroje, kauzy, mezery a vztahy, provázané stabilními `@id`;
+- `/data/graph.jsonld` — sjednocený graf celého webu, deduplikovaný
+  podle `@id`;
+- `/data/jsonld-manifest.json` — `{route, sha256, bytes}` každého
+  exportu; stažená kopie se dá ověřit offline:
+  `node scripts/dossier/verify-export.mjs --dir <stažená-kopie>`;
+- každý citovaný zdroj nese `vomaste:citationFingerprint` — SHA-256 nad
+  trojicí url + retrieved + outlet, přepočitatelný kýmkoli z viditelných
+  polí (otisk citace, ne archivu stránky — archivace zatím neexistuje).
+  Stejný otisk nesou i citační uzly vložené v HTML a dossier stránky na
+  svůj export odkazují `<link rel="alternate" type="application/ld+json">`.
+
+Slovník `vomaste:*` (prefix `https://vomaste.cz/ns#`) je záměrně
+minimální a obsahuje jen termy, které se reálně emitují; žádné číselné
+skóre důvěry se neemituje nikdy (konstituce § 8) — kategorické stavy
+zdrojování vycházejí jako `vomaste:status` doslova.
 
 ## Stack a architektura
 
@@ -243,7 +259,9 @@ required fields, and contains no truth-rating markup.`
 | `npm run validate:dossier-types` | invarianty entity/aggregate dossierů |
 | `npm run validate:navigation` | navigace odpovídá registru a existujícím routám |
 | `npm run verify:anchors` | po buildu: každá kotva ze zdrojů existuje v HTML |
-| `npm run verify:jsonld` | po buildu: validita, pokrytí a poctivost JSON-LD (žádné truth ratingy) |
+| `npm run verify:jsonld` | po buildu: validita, pokrytí a poctivost JSON-LD (žádné truth ratingy, citační otisky se přepočítávají) |
+| `npm run build:jsonld-exports` | vygeneruje `/data/dossiers/<slug>.jsonld`, `/data/graph.jsonld`, manifest s checksumy a citační otisky pro šablony — součást `npm run build` |
+| `npm run verify:export` | po buildu (i offline nad staženou kopií, `--dir <cesta>`): každý export sedí na manifest hash, parsuje, nenese truth ratingy a otisky se přepočítávají |
 | `npm run lint:historical-coupling` | de-specializační brána: žádná jména subjektů ve strukturálním kódu |
 | `npm run lint:component-reuse` | každá šablona (kromě `base.html`/`404.html`) používá `macros/ui.html`, a každá šablona s tabulkou používá `macros/table.html` (`table::advanced_table`) — žádný ručně psaný duplicitní markup místo sdílené komponenty |
 | `node scripts/dossier/migrate-claims-to-pages.mjs` | přegenerovat stránky tvrzení z tabulky |
@@ -342,10 +360,11 @@ s očekávaným commitem (`gh run list`, pak kontrola klíčových rout).
 
 ## Známá omezení (k 2026-07-29)
 
-- JSON-LD žije vložené v HTML stránkách (viz výše) — ploché JSON exporty
-  na `/data/` existují, ale samostatný
-  stahovatelný JSON-LD dataset, manifest ani stabilní exportní routy
-  zatím neexistují.
+- Citační otisky (`vomaste:citationFingerprint`) jsou otiskem citace
+  (url + retrieved + outlet), **ne** archivované stránky — projekt
+  zatím fetchnuté stránky nearchivuje; manifest exportů je hashovaný,
+  ne podepsaný (ADR práh: podpis až bude reálná potřeba prokazovat
+  autorství exportu, ne jen integritu).
 - Žádný důvěrný intake kanál; žádné příspěvkové CLI, sémantický diff ani
   fork starter kit — viz roadmapa v konstituci, § 11.
 - De-specializace architektury (T-001…) probíhá; do jejího dokončení
