@@ -42,25 +42,21 @@
   {%- endif -%}
 {%- endif -%}
 
-{#- Resolve a claim's cited SRC-## ids to the source pages themselves, by
-    walking every registry section of every dossier — no assumption about
-    which dossier physically owns which record. -#}
-{%- set_global ld_claim_sources = [] -%}
+{#- A claim's cited sources come from data/generated/claim-sources.json
+    (written by scripts/dossier/build-jsonld-exports.mjs), keyed
+    "<dossier>/<CLM-##>". This replaced a nested walk over every dossier's
+    every registry section — correct, but quadratic: it dominated
+    `zola build` once the site passed a few hundred claims. The generated
+    map carries the same records the walk used to find, so a record may
+    still physically live under any dossier. required=false keeps the page
+    renderable outside the full pipeline. -#}
+{%- set ld_claim_sources = [] -%}
 {%- if ld_record_type == "claim" -%}
-  {%- set ld_wanted = page.extra.sources | default(value=[]) -%}
-  {%- set ld_droot = get_section(path="dossiers/_index.md") -%}
-  {%- for ld_dpath in ld_droot.subsections -%}
-    {%- set ld_dsec = get_section(path=ld_dpath) -%}
-    {%- for ld_rpath in ld_dsec.subsections -%}
-      {%- set ld_rsec = get_section(path=ld_rpath) -%}
-      {%- for ld_sp in ld_rsec.pages -%}
-        {%- set ld_sid = ld_sp.extra.src_id | default(value="") -%}
-        {%- if ld_sid and ld_sid in ld_wanted -%}
-          {%- set_global ld_claim_sources = ld_claim_sources | concat(with=ld_sp) -%}
-        {%- endif -%}
-      {%- endfor -%}
-    {%- endfor -%}
-  {%- endfor -%}
+  {%- set ld_cs_map = load_data(path="data/generated/claim-sources.json", required=false) | default(value=false) -%}
+  {%- if ld_cs_map -%}
+    {%- set ld_cs_key = ld_dossier ~ "/" ~ page.extra.clm_id -%}
+    {%- set ld_claim_sources = ld_cs_map[ld_cs_key] | default(value=[]) -%}
+  {%- endif -%}
 {%- endif -%}
 
 {%- set ld_person_id = "" -%}
@@ -103,7 +99,7 @@
 {"@type":"ListItem","position":{{ ld_pos + 1 }},"name":{{ ld_title | json_encode | safe }}{% if current_url %},"item":{{ current_url | json_encode | safe }}{% endif %}}]}
 {%- endif -%}
 {%- if ld_record_type == "claim" -%}
-,{"@type":"Claim","name":{{ page.extra.clm_id | json_encode | safe }},"text":{{ page.extra.summary | json_encode | safe }},"inLanguage":{{ ld_lang | json_encode | safe }}{% if current_url %},"url":{{ current_url | json_encode | safe }}{% endif %}{% if ld_claim_sources | length > 0 %},"appearance":[{% for ld_sp in ld_claim_sources %}{%- set ld_fp = "" -%}{%- if ld_fps -%}{%- set ld_fp_key = ld_sp.extra.dossier ~ "/" ~ ld_sp.extra.src_id -%}{%- set ld_fp = ld_fps[ld_fp_key] | default(value="") -%}{%- endif -%}{{ jsonld::ld_source_node(sp=ld_sp, name=ld_sp.title, fp=ld_fp) }}{% if not loop.last %},{% endif %}{% endfor %}]{% endif %}}
+,{"@type":"Claim","name":{{ page.extra.clm_id | json_encode | safe }},"text":{{ page.extra.summary | json_encode | safe }},"inLanguage":{{ ld_lang | json_encode | safe }}{% if current_url %},"url":{{ current_url | json_encode | safe }}{% endif %}{% if ld_claim_sources | length > 0 %},"appearance":[{% for ld_s in ld_claim_sources %}{{ jsonld::ld_source_record(s=ld_s) }}{% if not loop.last %},{% endif %}{% endfor %}]{% endif %}}
 {%- endif -%}
 {%- if ld_record_type == "source" -%}
 {%- set ld_fp = "" -%}

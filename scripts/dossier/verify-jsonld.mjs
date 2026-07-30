@@ -13,15 +13,32 @@
  *    non-empty `appearance` (rule 1 — no uncited claim), every entity
  *    dossier main page emits exactly one Person, and the aggregate dossier
  *    emits none; required fields per @type are present.
+ * 4. Citation identity: a Claim's `appearance` is exactly the sources that
+ *    claim declares, resolved inside its own dossier — no foreign records.
+ *
+ * Job 4 exists because job 3 was not enough. It required `appearance` to be
+ * non-empty and stopped there, so a claim could cite twenty documents about
+ * twenty other people and still pass. That is precisely what happened: the
+ * template used to resolve a claim's SRC-## ids by scanning every dossier,
+ * but SRC ids are numbered per dossier, so every dossier has a SRC-01. A
+ * claim citing SRC-01 collected the SRC-01 of all 21 dossiers. Measured on
+ * the built site: 17 606 embedded citations of which 1 114 were the claim's
+ * own — 94 % pointed at unrelated records. Nothing caught it, because
+ * "has citations" was checked and "has the right citations" was not.
  */
 import { readFileSync, readdirSync, statSync } from "node:fs";
 import { join, dirname, relative } from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadDossierRegistry } from "./lib/dossier-registry.mjs";
 import { FORBIDDEN_KEYS, FORBIDDEN_TYPES, citationFingerprint } from "./lib/jsonld-shared.mjs";
+import { buildRecordTables } from "./lib/record-tables.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
-const PUBLIC_ROOT = join(ROOT, "public");
+// --dir lets the gate run against any built tree, matching verify-export.mjs.
+// Without it a check like job 4 can only ever be observed passing; being able
+// to point it at a known-bad build is what proves it still catches the bug.
+const dirArg = process.argv.indexOf("--dir");
+const PUBLIC_ROOT = dirArg !== -1 && process.argv[dirArg + 1] ? process.argv[dirArg + 1] : join(ROOT, "public");
 const DOSSIERS_ROOT = join(ROOT, "content/dossiers");
 
 const errors = [];
@@ -48,6 +65,19 @@ function* nodes(value) {
   }
 }
 
+// Expected citations per claim, from the same parser the exports use, so the
+// gate cannot drift from the data it is meant to guard. Key: the built page
+// path, because that is what identifies a page during the scan below.
+const tables = buildRecordTables(ROOT);
+const sourceUrlById = new Map(tables.sources.map((s) => [`${s.dossier}/${s.src_id}`, s.source_url]));
+const expectedCitations = new Map();
+for (const c of tables.claims) {
+  const page = join("dossiers", c.dossier, "claims", c.clm_id.toLowerCase(), "index.html");
+  // Scoped per dossier: SRC-01 of this dossier, never SRC-01 of some other.
+  const urls = c.sources.map((sid) => sourceUrlById.get(`${c.dossier}/${sid}`)).filter(Boolean);
+  expectedCitations.set(page, new Set(urls));
+}
+
 function checkNode(node, tag) {
   const type = node["@type"];
   if (FORBIDDEN_TYPES.has(type)) err(`${tag}: forbidden @type "${type}" — this site must not emit truth ratings.`);
@@ -64,6 +94,16 @@ function checkNode(node, tag) {
     need("text");
     if (!Array.isArray(node.appearance) || node.appearance.length === 0)
       err(`${tag}: Claim node has no non-empty "appearance" — a claim without cited reporting (rule 1).`);
+    else if (expectedCitations.has(tag)) {
+      const want = expectedCitations.get(tag);
+      const got = new Set(node.appearance.map((a) => a?.url).filter(Boolean));
+      const foreign = [...got].filter((u) => !want.has(u));
+      const missing = [...want].filter((u) => !got.has(u));
+      if (foreign.length)
+        err(`${tag}: Claim cites ${foreign.length} record(s) it does not declare, e.g. ${foreign[0]} — citations must resolve inside the claim's own dossier.`);
+      if (missing.length)
+        err(`${tag}: Claim declares ${missing.length} source(s) absent from its citations, e.g. ${missing[0]}.`);
+    }
   }
   // Embedded citation fingerprints (T-010): if a source node carries one,
   // it must recompute from the node's own visible fields — same formula

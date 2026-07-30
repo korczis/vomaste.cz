@@ -57,6 +57,7 @@ const argValue = (flag, fallback) => {
 };
 const OUT_DIR = argValue("--out", join(ROOT, "static/data"));
 const FINGERPRINTS_OUT = argValue("--fingerprints-out", join(ROOT, "data/generated/source-fingerprints.json"));
+const CLAIM_SOURCES_OUT = argValue("--claim-sources-out", join(ROOT, "data/generated/claim-sources.json"));
 
 const BASE = readBaseUrl(ROOT);
 const NS = `${BASE}/ns#`;
@@ -422,6 +423,32 @@ for (const s of [...tables.sources].sort((a, b) => `${a.dossier}/${a.src_id}`.lo
   });
 }
 writeFileSync(FINGERPRINTS_OUT, JSON.stringify(fingerprints, null, 1) + "\n");
+
+// Claim → cited source records, keyed "<owner dossier>/<CLM-##>".
+// templates/partials/jsonld.html used to resolve this by walking every
+// dossier's every registry section for every claim page — quadratic, and
+// by far the largest cost in `zola build` once the site passed a few
+// hundred claims. The mapping is already known here, so publish it and
+// let the template look it up directly.
+const claimSources = {};
+for (const c of tables.claims) {
+  const cited = c.sources
+    .map((sid) => sourcesById.get(`${c.dossier}/${sid}`))
+    .filter(Boolean)
+    .map((s) => ({
+      src_id: s.src_id,
+      title: s.title,
+      outlet: s.outlet,
+      src_type: s.src_type,
+      url: s.source_url,
+      published: s.published,
+      retrieved: s.retrieved,
+      page_url: s.url,
+      fingerprint: citationFingerprint({ url: s.source_url, retrieved: s.retrieved, outlet: s.outlet }),
+    }));
+  if (cited.length) claimSources[`${c.dossier}/${c.clm_id}`] = cited;
+}
+writeFileSync(CLAIM_SOURCES_OUT, JSON.stringify(claimSources, null, 1) + "\n");
 
 console.log(
   `Wrote ${manifest.length} JSON-LD export(s) to ${OUT_DIR}: ` +
