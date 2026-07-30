@@ -476,6 +476,25 @@ každého agenta:
    nikdy neinzeruje schopnosti (bezpečný intake, příspěvkové CLI,
    federace), dokud neexistují.
 
+## Flowbite doktrína (závazná, mandatory pro adoptery)
+
+Přijato 2026-07-30 na pokyn vlastníka. Každá stránka webu — tedy každý
+Zola markdown skrze svou šablonu — musí splňovat Flowbite/utility
+konvence (vstupní bod: flowbite.com/docs/getting-started/llm/ a jeho
+llms.txt), konkrétně: **F1** utility-first, žádné inline `style="…"`
+v šablonách (vynucuje `verify-full-pages.mjs` v build gate; výjimka jen
+přes odůvodněný allowlist tamtéž); **F2** dark-first barevné tokeny
+(base.html + input.css, žádné ad-hoc barvy mimo paletu); **F3** viditelný
+focus stav (globální `:focus-visible` v input.css); **F4** responsivita
+přes Tailwind breakpointy, širý obsah v `overflow-x-auto`; **F5**
+sémantika a ARIA (nav/aria-label, sr-only, role) — přímo, nebo přes
+`macros/ui.html`; **F6** interaktivní vzory podle Flowbite komponent
+(drawer/navbar data-atributy, žádný vlastní ad-hoc JS shell); **F7**
+typografická hierarchie dle Flowbite Typography. Per-article ověření a
+plán: `docs/dossier-audit/FLOWBITE_PLAN.md` (regenerovat při přidání
+šablony). Nová šablona, která doktrínu porušuje, neprojde buildem —
+adoptér, který kontroly vypne, se nemůže hlásit k tomuto UI standardu.
+
 ## Metadata
 
 Metadata (title, description, canonical, Open Graph) is declared once in

@@ -67,3 +67,22 @@ if (errors) {
   process.exit(1);
 }
 console.log(`OK — full-page doktrína: ${claims} stránek tvrzení a ${sources} stránek zdrojů má zdroje/tvrzení, metadata i Git provenance.`);
+
+// ---- Flowbite doktrína (AGENTS.md): utility-first šablony bez inline
+// stylů. Jediná povolená výjimka by musela mít odůvodnění v allowlistu
+// níže (dnes prázdný). Kontroluje ZDROJOVÉ šablony, ne výstup.
+const TPL_DIR = join(ROOT, "templates");
+const STYLE_ALLOWLIST = new Set([]); // "soubor.html:radek" + důvod v komentáři
+let styleHits = 0;
+for (const f of readdirSync(TPL_DIR)) {
+  if (!f.endsWith(".html")) continue;
+  const lines = readFileSync(join(TPL_DIR, f), "utf8").split("\n");
+  lines.forEach((l, i) => {
+    if (l.includes(' style="') && !STYLE_ALLOWLIST.has(`${f}:${i + 1}`)) {
+      styleHits++;
+      console.error(`  ERROR templates/${f}:${i + 1}: inline style — Flowbite doktrína vyžaduje utility třídy/CSS vrstvu.`);
+    }
+  });
+}
+if (styleHits) process.exit(1);
+console.log("OK — Flowbite doktrína: žádný inline style v šablonách.");

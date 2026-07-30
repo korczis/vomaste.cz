@@ -192,6 +192,10 @@
     .type-bar, .type-bar-outline { white-space: normal; }
   }
   .hero-kicker-rule { display: inline-block; height: 2px; width: 2.2rem; background: var(--accent); opacity: 0.6; vertical-align: middle; }
+  /* 80s stín pro CTA na světlém (akcentním) podkladu; oktokoččí paže
+     má transform-origin tady místo inline stylu (Flowbite doktrína F1). */
+  .cta-shadow-80s { text-shadow: 0.045em 0.045em 0 rgba(142, 31, 29, 0.85); }
+  .octo-arm { transform-origin: 130px 106px; }
 
   /* "Fork me on GitHub" corner (github-corners pattern) — mávnutí paže
      na hover, vypnuto při prefers-reduced-motion. */
