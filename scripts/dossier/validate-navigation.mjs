@@ -20,7 +20,7 @@
  *
  * Everything the tree links must also exist on disk.
  */
-import { readFileSync, existsSync } from "node:fs";
+import { readFileSync, existsSync, readdirSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadDossierRegistry } from "./lib/dossier-registry.mjs";
@@ -80,6 +80,25 @@ for (const d of registry) {
   }
 }
 
+// --- 2b. concepts subtree: every concept page reachable from the sidebar ----
+// The concept tree is generated the same way as the dossier tree, from
+// data/concept-groups.toml + content/koncepty/*.md. A concept that exists on
+// disk but is missing here is a page nobody can navigate to.
+const conceptsItem = top.find((i) => i.id === "concepts");
+if (conceptsItem) {
+  const dir = join(ROOT, "content/koncepty");
+  const slugs = readdirSync(dir).filter((f) => f.endsWith(".md") && f !== "_index.md").map((f) => f.replace(/\.md$/, ""));
+  const inTree = new Set();
+  for (const g of conceptsItem.children) {
+    if ((g.children ?? []).length === 0) err(`Concept group "${g.id}" has no pages in the generated tree — it would render an empty dropdown.`);
+    if (!g.anchor) err(`Concept group "${g.id}" has no anchor — its sidebar entry would point at the bare /koncepty/ index.`);
+    for (const c of g.children ?? []) inTree.add(c.id.replace(/^koncept-/, ""));
+  }
+  for (const slug of slugs) {
+    if (!inTree.has(slug)) err(`Concept "${slug}" exists on disk but is missing from the sidebar tree.`);
+  }
+}
+
 // --- 3. every linked route exists ------------------------------------------
 const walk = (nodes, fn) => nodes.forEach((n) => { fn(n); walk(n.children ?? [], fn); });
 walk(top, (node) => {
@@ -106,6 +125,7 @@ function report() {
   console.log(
     `OK — generated navigation: ${top.length} top-level item(s), no dossier at top level; ` +
       `${entityCount} entity dossier(s) nested under "Dossiery" with ${regLinks} registry link(s); ` +
-      `aggregate view(s) without a subtree.`,
+      `aggregate view(s) without a subtree; ` +
+      `${(top.find((i) => i.id === "concepts")?.children ?? []).reduce((n, g) => n + (g.children ?? []).length, 0)} concept page(s) in the tree.`,
   );
 }

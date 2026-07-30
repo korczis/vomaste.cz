@@ -11,13 +11,16 @@
  *   content/dossiers/<slug>/<registry>/_index.md — which registries a dossier
  *                            actually has (the tree never links a route that
  *                            isn't on disk).
+ *   data/concept-groups.toml + content/koncepty/*.md — the second subtree:
+ *                            every concept page hangs under its group, which
+ *                            hangs under the "concepts" item.
  *
  * Shape: every dossier hangs UNDER the "dossiers" item as its own subtree —
  * a person is never a top-level sidebar entry. Entity dossiers come first
  * (registry order), aggregate views last, flagged `isAggregate` so the
  * template can label them and refuse them an expandable subtree.
  */
-import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
+import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadDossierRegistry } from "./lib/dossier-registry.mjs";
@@ -91,9 +94,58 @@ for (const d of dossiers) {
     matchPrefix: `/dossiers/${d.slug}/`,
     icon: isAggregate ? dossierIcons.aggregate : dossierIcons.entity,
     isAggregate,
+    overviewLabel: isAggregate ? null : "Přehled dossieru",
     depth: 1,
     children,
   });
+}
+
+// --- concepts subtree: group → concept page ---------------------------------
+// Same shape as the dossier subtree, so templates/base.html renders both with
+// one generic three-level loop. Groups have no page of their own — they are
+// anchors on /koncepty/ — hence `anchor` instead of a deeper route.
+const conceptsItem = items.find((i) => i.id === "concepts");
+if (conceptsItem) {
+  const groupsText = readFileSync(join(ROOT, "data/concept-groups.toml"), "utf8");
+  const groups = [...groupsText.matchAll(/\[\[groups\]\]\n([\s\S]*?)(?=\n\[\[|\n*$)/g)]
+    .map((m) => ({ id: str(m[1], "id"), label: str(m[1], "label"), order: num(m[1], "order"), icon: str(m[1], "icon") }))
+    .sort((a, b) => a.order - b.order);
+
+  const dir = join(ROOT, "content/koncepty");
+  const pages = readdirSync(dir)
+    .filter((f) => f.endsWith(".md") && f !== "_index.md")
+    .map((f) => {
+      const fm = (readFileSync(join(dir, f), "utf8").match(/^\+\+\+\r?\n([\s\S]*?)\r?\n\+\+\+/) ?? [])[1] ?? "";
+      return { slug: f.replace(/\.md$/, ""), title: str(fm, "title"), tile: str(fm, "tile_title"), group: str(fm, "group"), weight: num(fm, "weight") };
+    })
+    .sort((a, b) => a.weight - b.weight);
+
+  for (const g of groups) {
+    const children = pages
+      .filter((p) => p.group === g.id)
+      .map((p) => ({
+        id: `koncept-${p.slug}`,
+        label: p.tile || p.title,
+        path: `@/koncepty/${p.slug}.md`,
+        matchPrefix: `/koncepty/${p.slug}/`,
+        icon: g.icon,
+        depth: 2,
+        children: [],
+      }));
+    if (children.length === 0) continue;
+    conceptsItem.children.push({
+      id: `koncepty-${g.id}`,
+      label: g.label,
+      path: "@/koncepty/_index.md",
+      anchor: g.id,
+      matchPrefix: `/koncepty/#${g.id}`, // never prefix-matches a real path; the
+      // group highlights via its children instead (see base.html active_trail)
+      icon: g.icon,
+      overviewLabel: `Vše: ${g.label.toLowerCase()}`,
+      depth: 1,
+      children,
+    });
+  }
 }
 
 for (const i of items) i.depth = 0;
@@ -103,8 +155,11 @@ writeFileSync(OUT, JSON.stringify({ items }, null, 2) + "\n");
 
 const entityCount = dossiers.filter((d) => d.dossierType === "entity").length;
 const childCount = dossiersItem.children.reduce((n, c) => n + c.children.length, 0);
+const conceptGroups = conceptsItem ? conceptsItem.children.length : 0;
+const conceptPages = conceptsItem ? conceptsItem.children.reduce((n, c) => n + c.children.length, 0) : 0;
 console.log(
   `Wrote ${OUT}: ${items.length} top-level item(s), ${dossiersItem.children.length} dossier(s) ` +
-    `(${entityCount} entity) nested under "${dossiersItem.label}", ${childCount} registry link(s)` +
+    `(${entityCount} entity) nested under "${dossiersItem.label}", ${childCount} registry link(s), ` +
+    `${conceptPages} concept page(s) in ${conceptGroups} group(s)` +
     (skipped ? `; ${skipped} registry slot(s) skipped (no section on disk)` : "") + ".",
 );

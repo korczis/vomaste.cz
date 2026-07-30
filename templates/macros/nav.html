@@ -13,7 +13,12 @@
 {%- set size = 20 -%}
 {%- if depth == 1 -%}{%- set pad = "pl-12 pr-4 text-[0.8rem]" -%}{%- set size = 16 -%}{%- endif -%}
 {%- if depth == 2 -%}{%- set pad = "pl-14 pr-4 text-[0.8rem]" -%}{%- set size = 16 -%}{%- endif -%}
-<a href="{{ get_url(path=item.path) | safe }}" title="{% if label %}{{ label }}{% else %}{{ item.label }}{% endif %}"
+{#- `anchor` is for nodes that have no page of their own (a concept group is a
+    section of /koncepty/, not a route) — the tree keeps them clickable. -#}
+{%- set anchor = item.anchor | default(value="") -%}
+{%- set href = get_url(path=item.path) -%}
+{%- if anchor -%}{%- set href = href ~ "#" ~ anchor -%}{%- endif -%}
+<a href="{{ href | safe }}" title="{% if label %}{{ label }}{% else %}{{ item.label }}{% endif %}"
    {% if is_active %}aria-current="page"{% endif %}
    class="flex items-center gap-3 py-2.5 text-sm no-underline {{ pad }} {% if is_active %}bg-white/5 text-[#f3e5c0]{% else %}text-white/60 hover:bg-white/5 hover:text-white{% endif %}">
   <svg width="{{ size }}" height="{{ size }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="shrink-0" aria-hidden="true"><path d="{{ item.icon }}"/></svg>

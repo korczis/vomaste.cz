@@ -99,6 +99,11 @@
 ,{{ jsonld::ld_source_node(sp=page, name=ld_title) }}
 {%- endif -%}
 {%- for ld_item in ld_nav_items -%}
-,{"@type":"SiteNavigationElement","name":{{ ld_item.label | json_encode | safe }},"url":{{ get_url(path=ld_item.path) | json_encode | safe }}}
+{#- `anchor` je pro uzly bez vlastní routy (skupina konceptů je sekce
+    /koncepty/, ne stránka) — bez něj by pět skupin vydalo pětkrát tutéž URL. -#}
+{%- set ld_anchor = ld_item.anchor | default(value="") -%}
+{%- set ld_nav_url = get_url(path=ld_item.path) -%}
+{%- if ld_anchor %}{% set ld_nav_url = ld_nav_url ~ "#" ~ ld_anchor %}{% endif -%}
+,{"@type":"SiteNavigationElement","name":{{ ld_item.label | json_encode | safe }},"url":{{ ld_nav_url | json_encode | safe }}}
 {%- endfor -%}]}
 </script>
