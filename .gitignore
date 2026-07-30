@@ -9,3 +9,4 @@ static/search-index.json
 # Registrové exporty pro /data/ a SQL konzoli — generuje build:data-exports
 # ze stejných front matter jako stránky; stejný důvod jako u search-indexu.
 static/data/
+.build-lock/
