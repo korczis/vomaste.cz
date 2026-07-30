@@ -44,9 +44,12 @@ zreprodukuj build a zpochybni výsledek.*
 nepodložená obvinění, centrální autorita s nárokem na konečnou pravdu,
 ani důvěrná schránka provozovaná ve veřejném Gitu.
 
-**Poctivý aktuální stav (k 2026-07-29)**: repozitář hostí dossiery o
-Petru Macinkovi a Filipu Turkovi (přesný, datovaný, append-only rozsah
-autorizace viz `AGENTS.md`). De-specializace platformy — dossiery a
+**Poctivý aktuální stav**: které dossiery repozitář hostí, se nepíše sem —
+je to obsah `data/dossiers.toml` a živý seznam na
+[/dossiers/](https://vomaste.cz/dossiers/); přesný, datovaný, append-only
+rozsah autorizace pro každý subjekt je v `AGENTS.md`. Aktuální počty
+záznamů si lze vygenerovat nebo rovnou dotázat v
+[SQL konzoli](https://vomaste.cz/data/). De-specializace platformy — dossiery a
 entity jako čistá data, žádné hardcodované subjekty — aktivně probíhá:
 inventura vazby je v
 [`docs/migrations/remove-macinka-turek-coupling-audit.md`](docs/migrations/remove-macinka-turek-coupling-audit.md)
@@ -136,8 +139,10 @@ zdrojování, ne rozhodnutí o pravdě. `npm run verify:jsonld` (součást
 build gate) po každém buildu parsuje všechny bloky, kontroluje povinná
 pole, pokrytí (každé tvrzení na disku = jeden `Claim` uzel) a build
 shodí, kdyby se hodnoticí typ kdekoli objevil. Data jsou vložená přímo
-v HTML stránkách; samostatné exportní routy (`/data/*.jsonld`,
-manifest datasetu) zatím neexistují — viz Známá omezení.
+v HTML stránkách. Ploché JSON exporty všech registrů a jejich manifest
+existují na `/data/` (generuje `build:data-exports`); samostatné
+**JSON-LD** exportní routy (`/data/*.jsonld`) a checksumy zatím ne — viz
+Známá omezení.
 
 ## Stack a architektura
 
@@ -337,7 +342,8 @@ s očekávaným commitem (`gh run list`, pak kontrola klíčových rout).
 
 ## Známá omezení (k 2026-07-29)
 
-- JSON-LD žije vložené v HTML stránkách (viz výše); samostatný
+- JSON-LD žije vložené v HTML stránkách (viz výše) — ploché JSON exporty
+  na `/data/` existují, ale samostatný
   stahovatelný JSON-LD dataset, manifest ani stabilní exportní routy
   zatím neexistují.
 - Žádný důvěrný intake kanál; žádné příspěvkové CLI, sémantický diff ani

@@ -7,7 +7,11 @@ zdroji podložené „dossiery“** o veřejně řešených kauzách veřejně �
 osob v ČR. Není to zpravodajský web ani blog s názory — je to strukturovaný,
 auditovatelný registr toho, co bylo o dané osobě ve veřejné funkci nezávisle
 publikováno, s explicitním rozlišením faktu, citace, sporného tvrzení a
-názoru. Aktuálně obsahuje jeden dossier (Petr Macinka, Filip Turek), ale
+názoru. Které dossiery zrovna existují, tady schválně nestojí — jsou
+záznamem v `data/dossiers.toml` a řídí se jím šablony, validátory i
+navigace; číslo v textu by byla konstanta, kterou nikdo nepřepočítá. Živý
+seznam je na `/dossiers/`, autorizovaný rozsah v append-only logu v
+`AGENTS.md`. Ale
 datový model, šablony i redakční pravidla jsou navržené obecně — pro
 libovolný další případ, pokud ho vlastník webu explicitně a na záznam
 autorizuje (viz níže).

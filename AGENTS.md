@@ -2,10 +2,13 @@
 
 A Zola static site whose core feature is a general framework for neutral,
 source-cited "dossiers" about publicly reported controversies of public
-figures — currently instantiated with two entity dossiers, Petr Macinka
-and Filip Turek, plus a generated aggregate view over both. Read this in
-full before changing content, templates, the dossier data model, or
-scope.
+figures. Which dossiers exist is **not stated here on purpose**: they live
+in `data/dossiers.toml`, and every template, validator and navigation node
+is driven from that registry — a count written into prose would be a
+constant nobody recalculates. The live list is at `/dossiers/`; the
+authorized scope for each subject is the append-only log at the end of this
+file. Read this file in full before changing content, templates, the
+dossier data model, or scope.
 
 ## Dossier framework (general — applies to any current or future dossier)
 
