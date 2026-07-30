@@ -69,19 +69,19 @@ jobs:
       - name: Generate dossier stats
         run: npm run generate:stats
 
-      - name: Build global content graph
-        run: npm run build:global-graph
-
-      - name: Build search index
-        run: npm run build:search-index
-
-      # Musí běžet před `zola build`: templates/data-console.html čte
-      # static/data/manifest.json a soubory jsou generované, ne verzované.
+      # Před global-graphem: ten z exportů skládá vrstvu celého registru,
+      # a data-console.html z nich čte manifest při zola buildu.
       - name: Build registry data exports
         run: npm run build:data-exports
 
+      - name: Build global content graph
+        run: npm run build:global-graph
+
       - name: Validate graph coverage
         run: npm run validate:graph-coverage
+
+      - name: Build search index
+        run: npm run build:search-index
 
       - name: Generate authorization-candidates report (not published)
         run: npm run generate:candidates

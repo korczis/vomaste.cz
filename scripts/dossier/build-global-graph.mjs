@@ -16,7 +16,7 @@
  *
  * Output: data/generated/global-graph.json
  */
-import { readFileSync, readdirSync, writeFileSync, mkdirSync, statSync } from "node:fs";
+import { readFileSync, readdirSync, writeFileSync, mkdirSync, statSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -142,12 +142,20 @@ for (const slug of dossierSlugs) {
 // Nothing here is curated: every node is a record that exists, every edge is a
 // reference that record already declares. No new relationship is invented.
 function buildFullLayer() {
+  // Tvrdý fail místo prázdné vrstvy: chybějící export znamená špatné pořadí
+  // kroků v buildu (build:data-exports musí předcházet), a tiché []
+  // vyrobí prázdnou "mapu celého registru", které si nikdo nevšimne —
+  // přesně to prošlo lokálně a spadlo až v CI.
   const read = (name) => {
-    try {
-      return JSON.parse(readFileSync(join(ROOT, "static/data", `${name}.json`), "utf8"));
-    } catch {
-      return [];
+    const file = join(ROOT, "static/data", `${name}.json`);
+    if (!existsSync(file)) {
+      console.log(
+        `ERROR build-global-graph: chybí ${file} — spusť nejdřív \`npm run build:data-exports\` ` +
+          "(v npm run build i v CI musí být před tímto krokem).",
+      );
+      process.exit(1);
     }
+    return JSON.parse(readFileSync(file, "utf8"));
   };
   const claims = read("claims");
   const sources = read("sources");
