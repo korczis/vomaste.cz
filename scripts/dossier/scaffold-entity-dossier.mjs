@@ -136,7 +136,7 @@ function write(relPath, content) {
 const registryIndex = (registryLabel, registryPath, extraNote = "") => `+++
 title = "${registryLabel}"
 description = "TODO: ${registryLabel.toLowerCase()} pro ${title} -- doplnit po přidání prvního záznamu."
-template = "dossier-${registryPath}-index.html"
+template = "${registryPath === "evidence" ? "dossier-evidence.html" : `dossier-${registryPath}-index.html`}"
 sort_by = "weight"
 
 [extra]
@@ -201,6 +201,30 @@ write(
 write(
   `content/dossiers/${slug}/evidence/_index.md`,
   registryIndex("Registr evidence", "evidence"),
+);
+// Entities registry — filtered view over the GLOBAL entity registry, so it
+// uses entities-index.html (not the dossier-*-index pattern) and its own
+// body; entity-dossier.html links to it, so a dossier without it fails
+// `zola build` (learned scaffolding ales-juchelka/ivan-bednarik/
+// boris-stastny — this write was missing).
+write(
+  `content/dossiers/${slug}/entities/_index.md`,
+  `+++
+title = "Registr entit"
+description = "Entity evidované v dossieru ${title} — filtrovaný pohled na globální registr entit."
+template = "entities-index.html"
+sort_by = "weight"
+
+[extra]
+dossier = "${slug}"
+lang = "cs"
+seo_type = "CollectionPage"
++++
+
+Entity, které se v tomto dossieru objevují. Kanonický záznam každé entity
+žije v [globálním registru entit](@/entities/_index.md) — tato stránka je
+jeho filtrovaný pohled, ne druhá kopie.
+`,
 );
 
 write(

@@ -79,6 +79,33 @@ canonical_dossier = "lubomir-metnar"
 show_in_primary_navigation = true
 
 [[dossiers]]
+# AGENTS.md AUTH-2026-07-30-B (five government members).
+slug = "ales-juchelka"
+title = "Aleš Juchelka"
+dossier_type = "entity"
+subject = "juchelka"
+canonical_dossier = "ales-juchelka"
+show_in_primary_navigation = true
+
+[[dossiers]]
+# AGENTS.md AUTH-2026-07-30-B (five government members).
+slug = "ivan-bednarik"
+title = "Ivan Bednárik"
+dossier_type = "entity"
+subject = "bednarik"
+canonical_dossier = "ivan-bednarik"
+show_in_primary_navigation = true
+
+[[dossiers]]
+# AGENTS.md AUTH-2026-07-30-B (five government members).
+slug = "boris-stastny"
+title = "Boris Šťastný"
+dossier_type = "entity"
+subject = "stastny"
+canonical_dossier = "boris-stastny"
+show_in_primary_navigation = true
+
+[[dossiers]]
 slug = "macinka-turek"
 title = "Petr Macinka a Filip Turek"
 dossier_type = "aggregate"

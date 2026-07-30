@@ -1,0 +1,12 @@
+# Auditable update history for "Boris Šťastný" (content/dossiers/boris-stastny/).
+# Append-only: each entry records what was *actually* checked and changed
+# on that date -- never claim a change that didn't happen.
+
+[[updates]]
+date = "2026-07-30"
+reviewed_sources = ["SRC-01"]
+added_claims = ["CLM-01"]
+updated_claims = []
+added_gaps = []
+closed_gaps = []
+summary = "Dossier založen dle AUTH-2026-07-30-B. Oficiální profil na vlada.gov.cz otevřen a přečten, zapsáno foundační tvrzení CLM-01 o zastávané funkci (SRC-01) a kontextová hrana HOLDS_ROLE. Autorizovaná témata zatím nezpracována — čekají na přímé otevření citovaných zdrojů."

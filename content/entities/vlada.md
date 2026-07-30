@@ -16,7 +16,7 @@ dossier_status = "not_authorized"
 coverage_state = "discovered"
 discovered_at = "2026-07-29"
 discovered_via = ["edge-schillerova-vlada"]
-dossiers = ["macinka-turek", "petr-macinka", "filip-turek", "oto-klempir", "alena-schillerova"]
+dossiers = ["macinka-turek", "petr-macinka", "filip-turek", "oto-klempir", "alena-schillerova", "ales-juchelka", "ivan-bednarik", "boris-stastny"]
 claims = ["CLM-03", "CLM-01"]
 sources = ["SRC-11", "SRC-01"]
 +++
