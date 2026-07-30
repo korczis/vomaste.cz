@@ -66,7 +66,7 @@ title = "Majetkové přiznání a chybějící dům"
 status = "status-single"
 label = "Sledované téma"
 summary = "Majetkové přiznání a chybějící dům — viz tvrzení CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07."
-claims = ["CLM-02", "CLM-03", "CLM-04", "CLM-05", "CLM-06", "CLM-07"]
+claims = []
 subjects = ["cerveny"]
 
 [[extra.cases]]
@@ -76,7 +76,7 @@ title = "Střet zájmů — podcastová firma"
 status = "status-single"
 label = "Sledované téma"
 summary = "Střet zájmů — podcastová firma — viz tvrzení CLM-08, CLM-09, CLM-10."
-claims = ["CLM-08", "CLM-09", "CLM-10"]
+claims = []
 subjects = ["cerveny"]
 
 [[extra.cases]]
@@ -86,7 +86,7 @@ title = "Rekonstrukce kanceláří ministerstva"
 status = "status-single"
 label = "Sledované téma"
 summary = "Rekonstrukce kanceláří ministerstva — viz tvrzení CLM-11, CLM-12, CLM-13, CLM-14, CLM-15."
-claims = ["CLM-11", "CLM-12", "CLM-13", "CLM-14", "CLM-15"]
+claims = []
 subjects = ["cerveny"]
 
 [[extra.cases]]
@@ -96,7 +96,7 @@ title = "Cesta do USA"
 status = "status-single"
 label = "Sledované téma"
 summary = "Cesta do USA — viz tvrzení CLM-16, CLM-17, CLM-18, CLM-19."
-claims = ["CLM-16", "CLM-17", "CLM-18", "CLM-19"]
+claims = []
 subjects = ["cerveny"]
 
 [extra.authorization]

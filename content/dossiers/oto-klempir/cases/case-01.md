@@ -14,9 +14,10 @@ period = "2026"
 status = "status-single"
 label = "Probíhá, jediný ověřený zdroj"
 summary = "Klempíř prosazuje přesun financování České televize a Českého rozhlasu do státního rozpočtu; RESPEKT to popisuje jako postup ke státní kontrole veřejnoprávních médií."
-claims = ["CLM-04", "CLM-03"]
-sources = ["SRC-02"]
+claims = []
+sources = []
+subjects = ["klempir"]
 +++
 
-Plné znění, zdroje a kontext tohoto případu jsou v [hlavním přehledu
+Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu
 dossieru](@/dossiers/oto-klempir/_index.md#kauza-financovani-verejnopravnich-medii).

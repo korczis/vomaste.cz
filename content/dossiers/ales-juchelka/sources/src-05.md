@@ -1,5 +1,5 @@
 +++
-title = "SRC-05 — ČT24"
+title = "SRC-05 — ČT24 (Česká televize)"
 description = "Semancová s možným střetem zájmů už pro resort nepracuje, řekl Juchelka"
 template = "dossier-source.html"
 weight = 5
@@ -10,7 +10,7 @@ dossier = "ales-juchelka"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-05"
-outlet = "ČT24"
+outlet = "ČT24 (Česká televize)"
 src_type = "zpravodajství"
 url = "https://ct24.ceskatelevize.cz/clanek/domaci/semancova-s-moznym-stretem-zajmu-uz-pro-resort-nepracuje-rekl-juchelka-372467"
 published = "2026-04-16"

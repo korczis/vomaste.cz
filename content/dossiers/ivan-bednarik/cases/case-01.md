@@ -14,9 +14,10 @@ period = "2022"
 status = "status-single"
 label = "Důvody nezveřejněny"
 summary = "Bednárik v únoru 2022 rezignoval na funkci generálního ředitele ČD; konkrétní důvody veřejně neuvedl a citovaný zdroj je nedokládá."
-claims = ["CLM-02", "CLM-03", "CLM-04"]
-sources = ["SRC-02"]
+claims = []
+sources = []
+subjects = ["bednarik"]
 +++
 
-Plné znění, zdroje a kontext tohoto případu jsou v [hlavním přehledu
+Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu
 dossieru](@/dossiers/ivan-bednarik/_index.md#kauza-rezignace-cd).

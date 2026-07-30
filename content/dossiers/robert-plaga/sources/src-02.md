@@ -1,5 +1,5 @@
 +++
-title = "SRC-02 — ČT24"
+title = "SRC-02 — ČT24 (Česká televize)"
 description = "Plaga rozhodl o zastavení testování žáků 5. a 9. tříd ZŠ"
 template = "dossier-source.html"
 weight = 2
@@ -10,7 +10,7 @@ dossier = "robert-plaga"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-02"
-outlet = "ČT24"
+outlet = "ČT24 (Česká televize)"
 src_type = "zpravodajství"
 url = "https://ct24.ceskatelevize.cz/clanek/domaci/plaga-jednal-s-ustrednim-skolnim-inspektorem-zatloukalem-373842"
 published = "2026-05-25"

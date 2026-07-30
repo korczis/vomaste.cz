@@ -14,8 +14,9 @@ period = "2026"
 status = "status-single"
 label = "Sledované téma"
 summary = "Zastavené testování žáků 5. a 9. tříd — viz tvrzení CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07, CLM-08, CLM-09, CLM-10."
-claims = ["CLM-02", "CLM-03", "CLM-04", "CLM-05", "CLM-06", "CLM-07", "CLM-08", "CLM-09", "CLM-10"]
-sources = ["SRC-02", "SRC-03", "SRC-04", "SRC-05"]
+claims = []
+sources = []
+subjects = ["plaga"]
 +++
 
 Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu

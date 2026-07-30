@@ -1,5 +1,5 @@
 +++
-title = "SRC-35 — Forum24"
+title = "SRC-35 — FORUM 24"
 description = "Ministerstvo zdravotnictví varuje před přístrojem zapper; SZPI odebrala certifikát."
 template = "dossier-source.html"
 weight = 35
@@ -11,7 +11,7 @@ dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-35"
-outlet = "Forum24"
+outlet = "FORUM 24"
 src_type = "zpravodajství (komentářový web)"
 url = "https://www.forum24.cz/kandiduje-filip-turek-za-motoristy-nebo-za-sarlatany-spojeni-elitni-policista-a-prodejce-zapperu-prekvapi"
 retrieved = "2026-07-22"

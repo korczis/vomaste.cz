@@ -1,5 +1,5 @@
 +++
-title = "SRC-11 — ČT24"
+title = "SRC-11 — ČT24 (Česká televize)"
 description = "Kvůli možnému střetu zájmů Juchelkovy exporadkyně resort nepožádá EU o proplacení některých projektů"
 template = "dossier-source.html"
 weight = 11
@@ -10,7 +10,7 @@ dossier = "ales-juchelka"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-11"
-outlet = "ČT24"
+outlet = "ČT24 (Česká televize)"
 src_type = "zpravodajství"
 url = "https://ct24.ceskatelevize.cz/clanek/domaci/kvuli-moznemu-stretu-zajmu-juchelkovy-exporadkyne-resort-nepozada-eu-o-proplaceni-nekterych-projektu-375914"
 published = "2026-07-24"

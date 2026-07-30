@@ -1,5 +1,5 @@
 +++
-title = "SRC-05 — ČT24"
+title = "SRC-05 — ČT24 (Česká televize)"
 description = "NATO Česku neuzná jako obranné výdaje asi dvacet miliard, řekl ČT Zůna"
 template = "dossier-source.html"
 weight = 5
@@ -10,7 +10,7 @@ dossier = "jaromir-zuna"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-05"
-outlet = "ČT24"
+outlet = "ČT24 (Česká televize)"
 src_type = "zpravodajství"
 url = "https://ct24.ceskatelevize.cz/clanek/domaci/nato-cesku-neuzna-jako-obranne-vydaje-asi-dvacet-miliard-na-dopravni-stavby-rekl-ct-zuna-372900"
 published = "2026-04-28"

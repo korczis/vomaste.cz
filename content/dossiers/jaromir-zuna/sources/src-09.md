@@ -1,5 +1,5 @@
 +++
-title = "SRC-09 — Echo24.cz"
+title = "SRC-09 — Echo24"
 description = "Ministr Zůna je po kauze s náčelníkem štábu na ručník, míní Vondra"
 template = "dossier-source.html"
 weight = 9
@@ -10,7 +10,7 @@ dossier = "jaromir-zuna"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-09"
-outlet = "Echo24.cz"
+outlet = "Echo24"
 src_type = "zpravodajství"
 url = "https://m.echo24.cz/a/HXZVf/zpravy-domaci-zuna-je-na-rucnik-jedine-cestne-reseni-rezignace-nacelnik-generalniho-stabu-vondra"
 published = "2026-05-24"

@@ -1,0 +1,19 @@
++++
+title = "CLM-12"
+description = "Boris Šťastný na síti X uvedl: „Je to totiž můj obyčejný AI záznamník, kterým si přepisuji své poznámky a projevy, který jsem si koupil v Al"
+template = "dossier-claim.html"
+weight = 12
+
+[extra]
+dossier = "boris-stastny"
+record_type = "claim"
+lang = "cs"
+clm_id = "CLM-12"
+status = "status-quote"
+status_label = "CITACE"
+summary = "Boris Šťastný na síti X uvedl: „Je to totiž můj obyčejný AI záznamník, kterým si přepisuji své poznámky a projevy, který jsem si koupil v Alze a před pár měsíci jsem ho někde ztratil.“"
+sources = ["SRC-03", "SRC-04", "SRC-05"]
+subjects = ["stastny"]
++++
+
+Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/boris-stastny/_index.md#registr-tvrzeni).

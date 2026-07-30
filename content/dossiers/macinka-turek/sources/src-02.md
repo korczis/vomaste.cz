@@ -1,5 +1,5 @@
 +++
-title = "SRC-02 — Echo24.cz"
+title = "SRC-02 — Echo24"
 description = "Rozbor záběrů z nehody — kdo do křižovatky vjel jako první a v jakém pruhu, stav vyšetřování."
 template = "dossier-source.html"
 weight = 2
@@ -11,7 +11,7 @@ dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-02"
-outlet = "Echo24.cz"
+outlet = "Echo24"
 src_type = "zpravodajství"
 url = "https://www.echo24.cz/a/HRupy/filip-turek-autonehoda-policie-advokat-terminy-vysetrovani-lhuty-ondrej-horazny-trestny-cin-prestupek"
 retrieved = "2026-07-21"

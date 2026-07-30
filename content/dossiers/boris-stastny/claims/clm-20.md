@@ -1,0 +1,19 @@
++++
+title = "CLM-20"
+description = "K čínskému původu přístroje Šťastný uvedl: „Většina elektronických přístrojů nebo jejich součástek, se kterými všichni pracujeme, je vyroben"
+template = "dossier-claim.html"
+weight = 20
+
+[extra]
+dossier = "boris-stastny"
+record_type = "claim"
+lang = "cs"
+clm_id = "CLM-20"
+status = "status-quote"
+status_label = "CITACE"
+summary = "K čínskému původu přístroje Šťastný uvedl: „Většina elektronických přístrojů nebo jejich součástek, se kterými všichni pracujeme, je vyrobená v Číně.“"
+sources = ["SRC-08"]
+subjects = ["stastny"]
++++
+
+Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/boris-stastny/_index.md#registr-tvrzeni).

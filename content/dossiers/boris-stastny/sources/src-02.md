@@ -1,5 +1,5 @@
 +++
-title = "SRC-02 — CNN Prima NEWS"
+title = "SRC-02 — CNN Prima News"
 description = "Nahrávací zařízení nalezené v zasedačce Úřadu vlády: Šťastný se k němu přihlásil, IT a bezpečnostní odbor riziko nenašly, formální vyšetřování neproběhlo."
 template = "dossier-source.html"
 weight = 2
@@ -10,7 +10,7 @@ dossier = "boris-stastny"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-02"
-outlet = "CNN Prima NEWS"
+outlet = "CNN Prima News"
 src_type = "celostátní zpravodajství"
 url = "https://cnn.iprima.cz/stastny-pod-palbou-kritiky-v-zasedacce-uradu-vlady-zrejme-zapomnel-nahravaci-zarizeni-516803"
 retrieved = "2026-07-30"

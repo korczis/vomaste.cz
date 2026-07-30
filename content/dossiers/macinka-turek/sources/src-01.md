@@ -1,5 +1,5 @@
 +++
-title = "SRC-01 — Echo24.cz"
+title = "SRC-01 — Echo24"
 description = "„Turka se nikdy nevzdám, říká Macinka“ — přímá citace Macinkovy veřejné podpory Turka."
 template = "dossier-source.html"
 weight = 1
@@ -11,7 +11,7 @@ dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-01"
-outlet = "Echo24.cz"
+outlet = "Echo24"
 src_type = "zpravodajství"
 url = "https://www.echo24.cz/a/HkCB9/zpravy-domaci-turka-se-nikdy-nevzdam-budu-mu-odrezavat-opratku-rika-macinka-okamura-imunita"
 retrieved = "2026-07-21"

@@ -14,8 +14,9 @@ period = "2026"
 status = "status-single"
 label = "Sledované téma"
 summary = "Bitcoinová kauza resortu spravedlnosti — viz tvrzení CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07."
-claims = ["CLM-02", "CLM-03", "CLM-04", "CLM-05", "CLM-06", "CLM-07"]
-sources = ["SRC-02", "SRC-03", "SRC-04"]
+claims = []
+sources = []
+subjects = ["tejc"]
 +++
 
 Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu

@@ -46,7 +46,7 @@ title = "Střet zájmů bývalé poradkyně a rozpočtový dopad"
 status = "status-disputed"
 label = "Bez vyšetřování, spor o následek"
 summary = "Firma poradkyně inkasovala od žadatelů o dotace, na jejichž výzvy poradkyně dohlížela; čtyři projekty vyřazeny z financování EU, mezera 63,8 mil. Kč. Citovaný zdroj neuvádí žádné vyšetřování ani obvinění."
-claims = ["CLM-02", "CLM-03", "CLM-04", "CLM-05"]
+claims = []
 subjects = ["juchelka"]
 
 [[extra.cases]]
@@ -56,7 +56,7 @@ title = "Kauza střetu zájmů bývalé poradkyně"
 status = "status-single"
 label = "Sledované téma"
 summary = "Kauza střetu zájmů bývalé poradkyně — viz tvrzení CLM-06, CLM-07, CLM-08, CLM-10, CLM-16."
-claims = ["CLM-06", "CLM-07", "CLM-08", "CLM-10", "CLM-16"]
+claims = []
 subjects = ["juchelka"]
 
 [[extra.cases]]
@@ -66,7 +66,7 @@ title = "Rozpočtový dopad kauzy"
 status = "status-single"
 label = "Sledované téma"
 summary = "Rozpočtový dopad kauzy — viz tvrzení CLM-09, CLM-11, CLM-12."
-claims = ["CLM-09", "CLM-11", "CLM-12"]
+claims = []
 subjects = ["juchelka"]
 
 [[extra.cases]]
@@ -76,7 +76,7 @@ title = "Trestní oznámení a kontrola NKÚ"
 status = "status-single"
 label = "Sledované téma"
 summary = "Trestní oznámení a kontrola NKÚ — viz tvrzení CLM-13, CLM-14, CLM-15."
-claims = ["CLM-13", "CLM-14", "CLM-15"]
+claims = []
 subjects = ["juchelka"]
 
 [[extra.cases]]
@@ -86,7 +86,7 @@ title = "Veřejná vyjádření a obhajoba ministra"
 status = "status-single"
 label = "Sledované téma"
 summary = "Veřejná vyjádření a obhajoba ministra — viz tvrzení CLM-17, CLM-18, CLM-19, CLM-20, CLM-21, CLM-22."
-claims = ["CLM-17", "CLM-18", "CLM-19", "CLM-20", "CLM-21", "CLM-22"]
+claims = []
 subjects = ["juchelka"]
 
 [extra.authorization]

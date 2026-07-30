@@ -1,5 +1,5 @@
 +++
-title = "SRC-04 — Ekolist.cz"
+title = "SRC-04 — Ekolist.cz (ČTK)"
 description = "Ministr životního prostředí Červený opravil majetkové přiznání a zaplatil pokutu"
 template = "dossier-source.html"
 weight = 4
@@ -10,7 +10,7 @@ dossier = "igor-cerveny"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-04"
-outlet = "Ekolist.cz"
+outlet = "Ekolist.cz (ČTK)"
 src_type = "zpravodajství"
 url = "https://ekolist.cz/cz/zpravodajstvi/zpravy/ministr-zivotniho-prostredi-cerveny-opravil-majetkove-priznani-a-zaplatil-pokutu"
 published = "2026-06-22"

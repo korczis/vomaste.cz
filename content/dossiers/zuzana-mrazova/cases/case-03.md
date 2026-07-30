@@ -14,8 +14,9 @@ period = "2026"
 status = "status-single"
 label = "Sledované téma"
 summary = "Stavby v rozporu s územním plánem — viz tvrzení CLM-12, CLM-13, CLM-14, CLM-15."
-claims = ["CLM-12", "CLM-13", "CLM-14", "CLM-15"]
-sources = ["SRC-06", "SRC-10", "SRC-11"]
+claims = []
+sources = []
+subjects = ["mrazova"]
 +++
 
 Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu

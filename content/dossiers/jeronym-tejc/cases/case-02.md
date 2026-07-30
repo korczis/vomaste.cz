@@ -14,8 +14,9 @@ period = "2026"
 status = "status-single"
 label = "Sledované téma"
 summary = "Kárná žaloba v případu Viktorky — viz tvrzení CLM-08, CLM-09, CLM-10, CLM-11, CLM-12, CLM-13."
-claims = ["CLM-08", "CLM-09", "CLM-10", "CLM-11", "CLM-12", "CLM-13"]
-sources = ["SRC-05", "SRC-06", "SRC-07"]
+claims = []
+sources = []
+subjects = ["tejc"]
 +++
 
 Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu

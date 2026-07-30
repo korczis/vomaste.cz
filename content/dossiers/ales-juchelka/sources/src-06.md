@@ -1,5 +1,5 @@
 +++
-title = "SRC-06 — Blesk"
+title = "SRC-06 — Blesk.cz"
 description = "Štvavá kampaň, stěžuje si Juchelka po konci poradkyně"
 template = "dossier-source.html"
 weight = 6
@@ -10,7 +10,7 @@ dossier = "ales-juchelka"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-06"
-outlet = "Blesk"
+outlet = "Blesk.cz"
 src_type = "zpravodajství"
 url = "https://www.blesk.cz/clanek/zpravy-politika/837610/stvava-kampan-stezuje-si-juchelka-po-konci-poradkyne-zestihlil-pry-ministerstvo.html"
 published = "2026-04-17"

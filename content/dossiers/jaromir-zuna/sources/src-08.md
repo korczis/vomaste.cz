@@ -1,5 +1,5 @@
 +++
-title = "SRC-08 — ČT24"
+title = "SRC-08 — ČT24 (Česká televize)"
 description = "Inspekce našla chyby u obou stran sporu o rozhovor armády s prezidentem"
 template = "dossier-source.html"
 weight = 8
@@ -10,7 +10,7 @@ dossier = "jaromir-zuna"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-08"
-outlet = "ČT24"
+outlet = "ČT24 (Česká televize)"
 src_type = "zpravodajství"
 url = "https://ct24.ceskatelevize.cz/clanek/domaci/inspekce-nasla-chyby-v-armadnim-sporu-o-rozhovor-s-prezidentem-374516"
 published = "2026-06-12"

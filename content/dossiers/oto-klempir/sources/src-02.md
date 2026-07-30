@@ -1,5 +1,5 @@
 +++
-title = "SRC-02 — RESPEKT"
+title = "SRC-02 — Respekt"
 description = "Investigativní text týdeníku RESPEKT (19. 7. 2026) o působení Oto Klempíře v čele ministerstva kultury."
 template = "dossier-source.html"
 weight = 2
@@ -10,7 +10,7 @@ dossier = "oto-klempir"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-02"
-outlet = "RESPEKT (Economia)"
+outlet = "Respekt"
 src_type = "investigativní zpravodajství"
 url = "https://www.respekt.cz/tydenik/2026/30/spatny-oto-na-spatnem-miste"
 retrieved = "2026-07-30"

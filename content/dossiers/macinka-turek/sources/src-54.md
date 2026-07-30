@@ -1,5 +1,5 @@
 +++
-title = "SRC-54 — Echo24.cz"
+title = "SRC-54 — Echo24"
 description = "Echo24 s vlastní citací státního zástupce potvrzuje odložení trestního oznámení (znásilnění, domácí násilí) pro promlčení."
 template = "dossier-source.html"
 weight = 54
@@ -10,7 +10,7 @@ dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-54"
-outlet = "Echo24.cz"
+outlet = "Echo24"
 src_type = "zpravodajství"
 url = "https://www.echo24.cz/a/HnBp9/zpravy-domov-policie-odlozila-pripad-turkova-znasilneni-kvuli-promlceni"
 retrieved = "2026-07-29"

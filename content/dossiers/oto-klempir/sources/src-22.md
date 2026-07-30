@@ -1,0 +1,25 @@
++++
+title = "SRC-22 — ČeskéNoviny.cz (ČTK)"
+description = "Klempíř po výzvě umělců proti Motoristům požádal, aby lidé počkali na program"
+template = "dossier-source.html"
+weight = 22
+
+[extra]
+subjects = ["klempir"]
+dossier = "oto-klempir"
+record_type = "source"
+lang = "cs"
+src_id = "SRC-22"
+outlet = "ČeskéNoviny.cz (ČTK)"
+src_type = "zpravodajství"
+url = "https://www.ceskenoviny.cz/zpravy/klempir-po-vyzve-umelcu-proti-motoristum-pozadal-aby-lide-pockali-na-program/2735972"
+published = "2025-10-18"
+retrieved = "2026-07-30"
+claims = ["CLM-40", "CLM-41"]
++++
+
+**Klempíř po výzvě umělců proti Motoristům požádal, aby lidé počkali na program**
+
+Reakce Klempíře jako poslance za Motoristy a pravděpodobného kandidáta na ministra kultury na otevřený dopis zhruba 500 umělců.
+
+Zdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji.

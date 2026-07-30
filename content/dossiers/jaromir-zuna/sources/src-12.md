@@ -1,5 +1,5 @@
 +++
-title = "SRC-12 — Echo24.cz"
+title = "SRC-12 — Echo24"
 description = "Babiš probíral se Zůnou koncepci armády. Vadí mu malý počet plánovaných vojáků"
 template = "dossier-source.html"
 weight = 12
@@ -10,7 +10,7 @@ dossier = "jaromir-zuna"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-12"
-outlet = "Echo24.cz"
+outlet = "Echo24"
 src_type = "zpravodajství"
 url = "https://m.echo24.cz/a/HQC6W/zpravy-domaci-babisovi-se-nelibi-koncepce-armady-vadi-mu-neambiciozni-nabor-zuna"
 published = "2026-05-20"

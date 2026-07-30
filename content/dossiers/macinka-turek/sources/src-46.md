@@ -1,5 +1,5 @@
 +++
-title = "SRC-46 — Deník.cz"
+title = "SRC-46 — Deník.cz (VLTAVA LABE MEDIA)"
 description = "Babiš označuje Turkovo jmenování ministrem za uzavřenou kapitolu; Turek zůstává zmocněncem pro klima a Green Deal."
 template = "dossier-source.html"
 weight = 46
@@ -11,7 +11,7 @@ dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-46"
-outlet = "Deník.cz"
+outlet = "Deník.cz (VLTAVA LABE MEDIA)"
 src_type = "zpravodajství"
 url = "https://www.denik.cz/z_domova/andrej-babis-filip-turek-ministr-zivotniho-prostredi.html"
 retrieved = "2026-07-23"

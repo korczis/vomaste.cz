@@ -1,5 +1,5 @@
 +++
-title = "SRC-07 — ČT24"
+title = "SRC-07 — ČT24 (Česká televize)"
 description = "V kauze otcem usmrcené dívky podal Tejc vedle kárné žaloby i podnět vůči OSPOD"
 template = "dossier-source.html"
 weight = 7
@@ -10,7 +10,7 @@ dossier = "jeronym-tejc"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-07"
-outlet = "ČT24"
+outlet = "ČT24 (Česká televize)"
 src_type = "zpravodajství"
 url = "https://ct24.ceskatelevize.cz/clanek/domaci/v-kauze-otcem-usmrcene-divky-podal-tejc-vedle-karne-zaloby-i-podnet-vuci-ospod-375130"
 published = "2026-07-01"

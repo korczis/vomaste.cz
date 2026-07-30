@@ -1,5 +1,5 @@
 +++
-title = "SRC-42 — CNN Prima NEWS"
+title = "SRC-42 — CNN Prima News"
 description = "Profil Richarda Chlada: hazard, energetika, vazba na Radovana Krejčíře, vlastní tvrzení o podpoře Motoristů."
 template = "dossier-source.html"
 weight = 42
@@ -11,7 +11,7 @@ dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-42"
-outlet = "CNN Prima NEWS"
+outlet = "CNN Prima News"
 src_type = "zpravodajství"
 url = "https://cnn.iprima.cz/kdo-je-verny-sponzor-motoristu-richard-chlad-podporovatel-turka-i-kontroverzni-podnikatel-488806"
 retrieved = "2026-07-22"

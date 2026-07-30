@@ -1,6 +1,6 @@
 +++
-title = "Nahrávací zařízení v zasedací místnosti Úřadu vlády"
-description = "V zasedačce Úřadu vlády se našel AI rekordér, k němuž se Šťastný přihlásil. Bezpečnostní odbor riziko nenašel, formální vyšetřování neproběhlo; opozice jeho reakci kritizovala."
+title = "Nahrávací zařízení v jednacím sále vlády"
+description = "Nahrávací zařízení v jednacím sále vlády — viz tvrzení CLM-06, CLM-07, CLM-08, CLM-09, CLM-10, CLM-11, CLM-12, CLM-13, CLM-14, CLM-15, CLM-16, CLM-17, CLM-18, CLM-19, CLM-20, CLM-21."
 template = "dossier-case.html"
 weight = 1
 
@@ -11,12 +11,13 @@ lang = "cs"
 case_id = "CASE-01"
 anchor = "kauza-nahravaci-zarizeni"
 period = "2026"
-status = "status-disputed"
-label = "Riziko nezjištěno, kritika trvá"
-summary = "V zasedačce Úřadu vlády se našel AI rekordér, k němuž se Šťastný přihlásil. Bezpečnostní odbor riziko nenašel, formální vyšetřování neproběhlo; opozice jeho reakci kritizovala."
-claims = ["CLM-02", "CLM-03", "CLM-04", "CLM-05"]
-sources = ["SRC-02"]
+status = "status-single"
+label = "Sledované téma"
+summary = "Nahrávací zařízení v jednacím sále vlády — viz tvrzení CLM-06, CLM-07, CLM-08, CLM-09, CLM-10, CLM-11, CLM-12, CLM-13, CLM-14, CLM-15, CLM-16, CLM-17, CLM-18, CLM-19, CLM-20, CLM-21."
+claims = []
+sources = []
+subjects = ["stastny"]
 +++
 
-Plné znění, zdroje a kontext tohoto případu jsou v [hlavním přehledu
+Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu
 dossieru](@/dossiers/boris-stastny/_index.md#kauza-nahravaci-zarizeni).

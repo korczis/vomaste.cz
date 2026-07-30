@@ -14,8 +14,9 @@ period = "2026"
 status = "status-single"
 label = "Sledované téma"
 summary = "Trestní oznámení a kontrola NKÚ — viz tvrzení CLM-13, CLM-14, CLM-15."
-claims = ["CLM-13", "CLM-14", "CLM-15"]
-sources = ["SRC-08", "SRC-09", "SRC-11", "SRC-14", "SRC-15"]
+claims = []
+sources = []
+subjects = ["juchelka"]
 +++
 
 Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu

@@ -1,5 +1,5 @@
 +++
-title = "SRC-04 — ČT24"
+title = "SRC-04 — ČT24 (Česká televize)"
 description = "Mrázová dostala pokutu za porušení zákona o střetu zájmů, píší Seznam Zprávy"
 template = "dossier-source.html"
 weight = 4
@@ -10,7 +10,7 @@ dossier = "zuzana-mrazova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-04"
-outlet = "ČT24"
+outlet = "ČT24 (Česká televize)"
 src_type = "zpravodajství"
 url = "https://ct24.ceskatelevize.cz/clanek/domaci/mrazova-dostala-pokutu-za-poruseni-zakona-o-stretu-zajmu-pisi-seznam-zpravy-375947"
 published = "2026-07-25"

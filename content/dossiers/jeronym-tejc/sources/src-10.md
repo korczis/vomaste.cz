@@ -1,5 +1,5 @@
 +++
-title = "SRC-10 — ČT24"
+title = "SRC-10 — ČT24 (Česká televize)"
 description = "Vláda navrhne Ústavnímu soudu, aby zamítl prezidentovu kompetenční žalobu"
 template = "dossier-source.html"
 weight = 10
@@ -10,7 +10,7 @@ dossier = "jeronym-tejc"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-10"
-outlet = "ČT24"
+outlet = "ČT24 (Česká televize)"
 src_type = "zpravodajství"
 url = "https://ct24.ceskatelevize.cz/clanek/domaci/vlada-navrhne-ustavnimu-soudu-aby-zamitl-prezidentovu-kompetencni-zalobu-375758"
 published = "2026-07-20"

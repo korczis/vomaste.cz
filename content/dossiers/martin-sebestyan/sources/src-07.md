@@ -1,5 +1,5 @@
 +++
-title = "SRC-07 — ČT24"
+title = "SRC-07 — ČT24 (Česká televize)"
 description = "K vymáhání dotací po Agrofertu nám chybí klíčový dokument, tvrdí resort zemědělství"
 template = "dossier-source.html"
 weight = 7
@@ -10,7 +10,7 @@ dossier = "martin-sebestyan"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-07"
-outlet = "ČT24"
+outlet = "ČT24 (Česká televize)"
 src_type = "zpravodajství"
 url = "https://ct24.ceskatelevize.cz/clanek/ekonomika/zemedelsky-fond-nezacal-vymahat-po-agrofertu-vraceni-dotaci-ministerstvu-chybi-klicovy-dokument-369260"
 published = "2026-01-15"

@@ -14,8 +14,9 @@ period = "2026"
 status = "status-single"
 label = "Sledované téma"
 summary = "Resortní pozice k výdajům na železnici — viz tvrzení CLM-05, CLM-06, CLM-07, CLM-08, CLM-09, CLM-10."
-claims = ["CLM-05", "CLM-06", "CLM-07", "CLM-08", "CLM-09", "CLM-10"]
-sources = ["SRC-03", "SRC-04", "SRC-05", "SRC-06"]
+claims = []
+sources = []
+subjects = ["bednarik"]
 +++
 
 Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu

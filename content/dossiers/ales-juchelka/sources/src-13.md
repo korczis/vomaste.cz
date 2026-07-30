@@ -1,5 +1,5 @@
 +++
-title = "SRC-13 — Forum24"
+title = "SRC-13 — FORUM 24"
 description = "Je to odporná práce, styďte se, že pracujete pro Seznam Zprávy, útočil na vládě Juchelka"
 template = "dossier-source.html"
 weight = 13
@@ -10,7 +10,7 @@ dossier = "ales-juchelka"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-13"
-outlet = "Forum24"
+outlet = "FORUM 24"
 src_type = "zpravodajství"
 url = "https://www.forum24.cz/je-to-odporna-prace-stydte-se-ze-pracujete-pro-seznam-zpravy-utocil-na-vlade-juchelka"
 published = "2026-07-27"

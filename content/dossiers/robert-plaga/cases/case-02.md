@@ -14,8 +14,9 @@ period = "2026"
 status = "status-single"
 label = "Sledované téma"
 summary = "Obrat u zákazu mobilů ve školách — viz tvrzení CLM-11, CLM-12, CLM-13, CLM-14, CLM-15."
-claims = ["CLM-11", "CLM-12", "CLM-13", "CLM-14", "CLM-15"]
-sources = ["SRC-06", "SRC-07", "SRC-08"]
+claims = []
+sources = []
+subjects = ["plaga"]
 +++
 
 Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu

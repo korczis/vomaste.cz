@@ -1,5 +1,5 @@
 +++
-title = "SRC-09 — Forum24"
+title = "SRC-09 — FORUM 24"
 description = "Kauzu Juchelkovy poradkyně prověřuje NKÚ. Rakušan chystá trestní oznámení"
 template = "dossier-source.html"
 weight = 9
@@ -10,7 +10,7 @@ dossier = "ales-juchelka"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-09"
-outlet = "Forum24"
+outlet = "FORUM 24"
 src_type = "zpravodajství"
 url = "https://www.forum24.cz/kauzu-juchelkovy-poradkyne-proveruje-nku-rakusan-chysta-trestni-oznameni"
 published = "2026-07-23"

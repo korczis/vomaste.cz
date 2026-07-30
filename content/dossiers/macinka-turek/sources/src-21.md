@@ -1,5 +1,5 @@
 +++
-title = "SRC-21 — Deník.cz"
+title = "SRC-21 — Deník.cz (VLTAVA LABE MEDIA)"
 description = "Motoristé sobě podali trestní oznámení na Deník N kvůli článku o Turkových příspěvcích."
 template = "dossier-source.html"
 weight = 21
@@ -11,7 +11,7 @@ dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-21"
-outlet = "Deník.cz"
+outlet = "Deník.cz (VLTAVA LABE MEDIA)"
 src_type = "zpravodajství"
 url = "https://www.denik.cz/z_domova/motoriste-filip-turek-rasisticke-vyroky-trestni-oznameni.html"
 retrieved = "2026-07-22"

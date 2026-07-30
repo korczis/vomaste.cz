@@ -1,5 +1,5 @@
 +++
-title = "SRC-05 — iROZHLAS.cz"
+title = "SRC-05 — iROZHLAS.cz (Český rozhlas)"
 description = "‚Vynikající kandidát na ministra.‘ Okamura odmítl jakékoli spojení Šebestyána s dotacemi pro Agrofert"
 template = "dossier-source.html"
 weight = 5
@@ -10,7 +10,7 @@ dossier = "martin-sebestyan"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-05"
-outlet = "iROZHLAS.cz"
+outlet = "iROZHLAS.cz (Český rozhlas)"
 src_type = "zpravodajství"
 url = "https://www.irozhlas.cz/zpravy-domov/vynikajici-kandidat-na-ministra-okamura-odmitl-jakekoli-spojeni-sebestyana-s_2511261823_ntu"
 published = "2025-11-26"

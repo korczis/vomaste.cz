@@ -1,0 +1,19 @@
++++
+title = "CLM-10"
+description = "Klempíř popsal legislativní řešení slovy: „Rušíme zákon číslo 248 z roku 2005 o rozhlasových a televizních poplatcích a nahrazujeme jej záko"
+template = "dossier-claim.html"
+weight = 10
+
+[extra]
+dossier = "oto-klempir"
+record_type = "claim"
+lang = "cs"
+clm_id = "CLM-10"
+status = "status-quote"
+status_label = "CITACE"
+summary = "Klempíř popsal legislativní řešení slovy: „Rušíme zákon číslo 248 z roku 2005 o rozhlasových a televizních poplatcích a nahrazujeme jej zákonem o financování médií veřejné služby.“"
+sources = ["SRC-20"]
+subjects = ["klempir"]
++++
+
+Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/oto-klempir/_index.md#registr-tvrzeni).

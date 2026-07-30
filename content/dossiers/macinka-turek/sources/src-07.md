@@ -1,5 +1,5 @@
 +++
-title = "SRC-07 — ČeskéNoviny.cz"
+title = "SRC-07 — ČeskéNoviny.cz (ČTK)"
 description = "Babiš a Macinka jednali o postu zmocněnce; opozice žádala Turkovu rezignaci."
 template = "dossier-source.html"
 weight = 7
@@ -11,7 +11,7 @@ dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-07"
-outlet = "ČeskéNoviny.cz"
+outlet = "ČeskéNoviny.cz (ČTK)"
 src_type = "tisková agentura (ČTK síť)"
 url = "https://www.ceskenoviny.cz/zpravy/babis-mluvil-s-macinkou-o-turkove-nehode-ve-hre-je-post-zmocnence/2850518"
 retrieved = "2026-07-21"

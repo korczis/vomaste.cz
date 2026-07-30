@@ -1,5 +1,5 @@
 +++
-title = "SRC-04 — iROZHLAS.cz"
+title = "SRC-04 — iROZHLAS.cz (Český rozhlas)"
 description = "Po dohodě s Nekulou. Kritizovaný exšéf zemědělského fondu Šebestyán skončil i v radě lesnického fondu"
 template = "dossier-source.html"
 weight = 4
@@ -10,7 +10,7 @@ dossier = "martin-sebestyan"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-04"
-outlet = "iROZHLAS.cz"
+outlet = "iROZHLAS.cz (Český rozhlas)"
 src_type = "zpravodajství"
 url = "https://www.irozhlas.cz/zpravy-domov/szif-zemedelsky-fond-dotace-agrofert-kritika-reditel-konci-v-cele-fondu_2211190500_tec"
 published = "2022-11-19"

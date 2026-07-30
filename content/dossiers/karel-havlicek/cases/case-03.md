@@ -14,8 +14,9 @@ period = "2026"
 status = "status-single"
 label = "Sledované téma"
 summary = "Pozice k EU cílům elektromobility — viz tvrzení CLM-15, CLM-16, CLM-17, CLM-18."
-claims = ["CLM-15", "CLM-16", "CLM-17", "CLM-18"]
-sources = ["SRC-09", "SRC-10"]
+claims = []
+sources = []
+subjects = ["havlicek"]
 +++
 
 Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu

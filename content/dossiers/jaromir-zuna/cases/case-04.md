@@ -14,8 +14,9 @@ period = "2026"
 status = "status-single"
 label = "Sledované téma"
 summary = "Spor o koncepci armády — viz tvrzení CLM-17, CLM-18, CLM-19."
-claims = ["CLM-17", "CLM-18", "CLM-19"]
-sources = ["SRC-12", "SRC-13"]
+claims = []
+sources = []
+subjects = ["zuna"]
 +++
 
 Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu

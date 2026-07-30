@@ -1,5 +1,5 @@
 +++
-title = "SRC-06 — Hospodářské noviny (podcasty.hn.cz)"
+title = "SRC-06 — Hospodářské noviny"
 description = "Problém české železnice byl, že s penězi nebyl problém, říká ministr Bednárik. Teď už chce trh chladit"
 template = "dossier-source.html"
 weight = 6
@@ -10,7 +10,7 @@ dossier = "ivan-bednarik"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-06"
-outlet = "Hospodářské noviny (podcasty.hn.cz)"
+outlet = "Hospodářské noviny"
 src_type = "zpravodajství"
 url = "https://podcasty.hn.cz/c1-67882980-problem-ceske-zeleznice-byl-ze-s-penezi-nebyl-problem-rika-ministr-bednarik-ted-uz-chce-trh-chladit"
 published = "2026-05-28"

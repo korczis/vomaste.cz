@@ -32,6 +32,7 @@
     "verify:anchors": "node scripts/dossier/verify-anchors.mjs",
     "lint:hardcoded-records": "node scripts/lint/lint-hardcoded-records.mjs",
     "lint:historical-coupling": "node scripts/lint/lint-historical-coupling.mjs",
+    "lint:source-outlets": "node scripts/lint/lint-source-outlets.mjs",
     "lint:component-reuse": "node scripts/lint/lint-component-reuse.mjs",
     "verify:jsonld": "node scripts/dossier/verify-jsonld.mjs",
     "verify:full-pages": "node scripts/dossier/verify-full-pages.mjs",

@@ -1,5 +1,5 @@
 +++
-title = "SRC-06 — ČT24"
+title = "SRC-06 — ČT24 (Česká televize)"
 description = "Mrázová cítí Babišovu podporu. Opozice dále žádá rezignaci"
 template = "dossier-source.html"
 weight = 6
@@ -10,7 +10,7 @@ dossier = "zuzana-mrazova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-06"
-outlet = "ČT24"
+outlet = "ČT24 (Česká televize)"
 src_type = "zpravodajství"
 url = "https://ct24.ceskatelevize.cz/clanek/domaci/mrazova-citi-babisovu-podporu-opozice-dale-zada-rezignaci-373216"
 published = "2026-05-07"

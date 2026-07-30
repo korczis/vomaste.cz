@@ -52,7 +52,7 @@ title = "Nepravomocná pokuta za střet zájmů"
 status = "status-single"
 label = "Sledované téma"
 summary = "Nepravomocná pokuta za střet zájmů — viz tvrzení CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07, CLM-08."
-claims = ["CLM-02", "CLM-03", "CLM-04", "CLM-05", "CLM-06", "CLM-07", "CLM-08"]
+claims = []
 subjects = ["mrazova"]
 
 [[extra.cases]]
@@ -62,7 +62,7 @@ title = "Obecní byt v Bílině"
 status = "status-single"
 label = "Sledované téma"
 summary = "Obecní byt v Bílině — viz tvrzení CLM-09, CLM-10, CLM-11."
-claims = ["CLM-09", "CLM-10", "CLM-11"]
+claims = []
 subjects = ["mrazova"]
 
 [[extra.cases]]
@@ -72,7 +72,7 @@ title = "Stavby v rozporu s územním plánem"
 status = "status-single"
 label = "Sledované téma"
 summary = "Stavby v rozporu s územním plánem — viz tvrzení CLM-12, CLM-13, CLM-14, CLM-15."
-claims = ["CLM-12", "CLM-13", "CLM-14", "CLM-15"]
+claims = []
 subjects = ["mrazova"]
 
 [[extra.cases]]
@@ -82,7 +82,7 @@ title = "Výzvy k rezignaci a podnět resortu spravedlnosti"
 status = "status-single"
 label = "Sledované téma"
 summary = "Výzvy k rezignaci a podnět resortu spravedlnosti — viz tvrzení CLM-16, CLM-17, CLM-18, CLM-19."
-claims = ["CLM-16", "CLM-17", "CLM-18", "CLM-19"]
+claims = []
 subjects = ["mrazova"]
 
 [extra.authorization]

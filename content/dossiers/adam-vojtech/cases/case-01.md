@@ -14,8 +14,9 @@ period = "2026"
 status = "status-single"
 label = "Sledované téma"
 summary = "Kauza defibrilátorů FN Olomouc — viz tvrzení CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07, CLM-08, CLM-09, CLM-10, CLM-11, CLM-12."
-claims = ["CLM-02", "CLM-03", "CLM-04", "CLM-05", "CLM-06", "CLM-07", "CLM-08", "CLM-09", "CLM-10", "CLM-11", "CLM-12"]
-sources = ["SRC-02", "SRC-03", "SRC-06", "SRC-04", "SRC-05", "SRC-07"]
+claims = []
+sources = []
+subjects = ["vojtech"]
 +++
 
 Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu

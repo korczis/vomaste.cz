@@ -1,5 +1,5 @@
 +++
-title = "SRC-49 — Deník.cz"
+title = "SRC-49 — Deník.cz (VLTAVA LABE MEDIA)"
 description = "Prezident Pavel jmenoval ministrem životního prostředí Igora Červeného; vláda je kompletní."
 template = "dossier-source.html"
 weight = 49
@@ -11,7 +11,7 @@ dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-49"
-outlet = "Deník.cz"
+outlet = "Deník.cz (VLTAVA LABE MEDIA)"
 src_type = "zpravodajství"
 family = "denik-cz-turek-ministr"
 url = "https://www.denik.cz/cesko/novy-ministr-zivotniho-prostredi-igor-cerveny-jmenovani-petr-pavel/"

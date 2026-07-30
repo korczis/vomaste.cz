@@ -73,7 +73,7 @@ title = "Kauza defibrilátorů FN Olomouc"
 status = "status-single"
 label = "Sledované téma"
 summary = "Kauza defibrilátorů FN Olomouc — viz tvrzení CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07, CLM-08, CLM-09, CLM-10, CLM-11, CLM-12."
-claims = ["CLM-02", "CLM-03", "CLM-04", "CLM-05", "CLM-06", "CLM-07", "CLM-08", "CLM-09", "CLM-10", "CLM-11", "CLM-12"]
+claims = []
 subjects = ["vojtech"]
 
 [[extra.cases]]
@@ -83,7 +83,7 @@ title = "Daňové zvýhodnění benefitů a debata o střetu zájmů"
 status = "status-single"
 label = "Sledované téma"
 summary = "Daňové zvýhodnění benefitů a debata o střetu zájmů — viz tvrzení CLM-13, CLM-14, CLM-15, CLM-16, CLM-17."
-claims = ["CLM-13", "CLM-14", "CLM-15", "CLM-16", "CLM-17"]
+claims = []
 subjects = ["vojtech"]
 
 [[extra.cases]]
@@ -93,7 +93,7 @@ title = "Kritika očkovací strategie od koaliční SPD"
 status = "status-single"
 label = "Sledované téma"
 summary = "Kritika očkovací strategie od koaliční SPD — viz tvrzení CLM-18, CLM-19, CLM-20, CLM-21."
-claims = ["CLM-18", "CLM-19", "CLM-20", "CLM-21"]
+claims = []
 subjects = ["vojtech"]
 
 [extra.authorization]

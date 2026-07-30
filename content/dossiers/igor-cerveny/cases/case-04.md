@@ -14,8 +14,9 @@ period = "2026"
 status = "status-single"
 label = "Sledované téma"
 summary = "Cesta do USA — viz tvrzení CLM-16, CLM-17, CLM-18, CLM-19."
-claims = ["CLM-16", "CLM-17", "CLM-18", "CLM-19"]
-sources = ["SRC-10"]
+claims = []
+sources = []
+subjects = ["cerveny"]
 +++
 
 Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu

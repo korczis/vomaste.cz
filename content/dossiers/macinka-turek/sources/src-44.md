@@ -1,5 +1,5 @@
 +++
-title = "SRC-44 — Deník.cz"
+title = "SRC-44 — Deník.cz (VLTAVA LABE MEDIA)"
 description = "Prezident Pavel zdůvodňuje odmítnutí jmenovat Turka ministrem; Turek oznamuje žalobu na ochranu osobnosti."
 template = "dossier-source.html"
 weight = 44
@@ -11,7 +11,7 @@ dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-44"
-outlet = "Deník.cz"
+outlet = "Deník.cz (VLTAVA LABE MEDIA)"
 src_type = "zpravodajství"
 url = "https://www.denik.cz/z_domova/filip-turek-petr-pavel-zaloba.html"
 retrieved = "2026-07-23"

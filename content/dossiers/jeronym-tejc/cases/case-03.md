@@ -14,8 +14,9 @@ period = "2026"
 status = "status-single"
 label = "Sledované téma"
 summary = "Spor o předběžné opatření Ústavního soudu — viz tvrzení CLM-14, CLM-15, CLM-16, CLM-17, CLM-18."
-claims = ["CLM-14", "CLM-15", "CLM-16", "CLM-17", "CLM-18"]
-sources = ["SRC-08", "SRC-09", "SRC-10"]
+claims = []
+sources = []
+subjects = ["tejc"]
 +++
 
 Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu

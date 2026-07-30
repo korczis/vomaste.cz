@@ -14,8 +14,9 @@ period = "2026"
 status = "status-single"
 label = "Sledované téma"
 summary = "Spor o volbu náčelníka Generálního štábu — viz tvrzení CLM-13, CLM-14, CLM-15, CLM-16."
-claims = ["CLM-13", "CLM-14", "CLM-15", "CLM-16"]
-sources = ["SRC-10", "SRC-09", "SRC-11"]
+claims = []
+sources = []
+subjects = ["zuna"]
 +++
 
 Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu

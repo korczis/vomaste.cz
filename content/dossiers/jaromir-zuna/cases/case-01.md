@@ -14,8 +14,9 @@ period = "2026"
 status = "status-single"
 label = "Sledované téma"
 summary = "Obranný rozpočet a závazek 2 % NATO — viz tvrzení CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07."
-claims = ["CLM-02", "CLM-03", "CLM-04", "CLM-05", "CLM-06", "CLM-07"]
-sources = ["SRC-03", "SRC-04", "SRC-02", "SRC-05", "SRC-12"]
+claims = []
+sources = []
+subjects = ["zuna"]
 +++
 
 Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu

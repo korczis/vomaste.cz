@@ -59,7 +59,7 @@ title = "Zastavené testování žáků 5. a 9. tříd"
 status = "status-single"
 label = "Sledované téma"
 summary = "Zastavené testování žáků 5. a 9. tříd — viz tvrzení CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07, CLM-08, CLM-09, CLM-10."
-claims = ["CLM-02", "CLM-03", "CLM-04", "CLM-05", "CLM-06", "CLM-07", "CLM-08", "CLM-09", "CLM-10"]
+claims = []
 subjects = ["plaga"]
 
 [[extra.cases]]
@@ -69,7 +69,7 @@ title = "Obrat u zákazu mobilů ve školách"
 status = "status-single"
 label = "Sledované téma"
 summary = "Obrat u zákazu mobilů ve školách — viz tvrzení CLM-11, CLM-12, CLM-13, CLM-14, CLM-15."
-claims = ["CLM-11", "CLM-12", "CLM-13", "CLM-14", "CLM-15"]
+claims = []
 subjects = ["plaga"]
 
 [[extra.cases]]
@@ -79,7 +79,7 @@ title = "Zkrácení školního roku 2025/2026"
 status = "status-single"
 label = "Sledované téma"
 summary = "Zkrácení školního roku 2025/2026 — viz tvrzení CLM-16, CLM-17, CLM-18, CLM-19."
-claims = ["CLM-16", "CLM-17", "CLM-18", "CLM-19"]
+claims = []
 subjects = ["plaga"]
 
 [extra.authorization]

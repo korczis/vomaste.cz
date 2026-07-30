@@ -1,5 +1,5 @@
 +++
-title = "SRC-07 — Forum24"
+title = "SRC-07 — FORUM 24"
 description = "Dotační kauza poradkyně Semancové. Ministerstvo řeší ztrátu 64 milionů, ministr Juchelka mlčí"
 template = "dossier-source.html"
 weight = 7
@@ -10,7 +10,7 @@ dossier = "ales-juchelka"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-07"
-outlet = "Forum24"
+outlet = "FORUM 24"
 src_type = "zpravodajství"
 url = "https://www.forum24.cz/dotacni-kauza-poradkyne-semancove-ministerstvo-resi-ztratu-64-milionu-ministr-juchelka-mlci"
 published = "2026-07-22"

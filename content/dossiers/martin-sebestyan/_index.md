@@ -87,7 +87,7 @@ title = "Vymáhání dotací po Agrofertu"
 status = "status-single"
 label = "Sledované téma"
 summary = "Vymáhání dotací po Agrofertu — viz tvrzení CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07, CLM-16."
-claims = ["CLM-02", "CLM-03", "CLM-04", "CLM-05", "CLM-06", "CLM-07", "CLM-16"]
+claims = []
 subjects = ["sebestyan"]
 
 [[extra.cases]]
@@ -97,7 +97,7 @@ title = "Působení v čele SZIF (2013–2022)"
 status = "status-single"
 label = "Sledované téma"
 summary = "Působení v čele SZIF (2013–2022) — viz tvrzení CLM-08, CLM-09, CLM-10, CLM-11."
-claims = ["CLM-08", "CLM-09", "CLM-10", "CLM-11"]
+claims = []
 subjects = ["sebestyan"]
 
 [[extra.cases]]
@@ -107,7 +107,7 @@ title = "Varování Transparency International"
 status = "status-single"
 label = "Sledované téma"
 summary = "Varování Transparency International — viz tvrzení CLM-12, CLM-13, CLM-14, CLM-15."
-claims = ["CLM-12", "CLM-13", "CLM-14", "CLM-15"]
+claims = []
 subjects = ["sebestyan"]
 
 [extra.authorization]

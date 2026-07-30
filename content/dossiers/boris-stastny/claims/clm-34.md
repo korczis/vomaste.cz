@@ -1,0 +1,19 @@
++++
+title = "CLM-34"
+description = "Na rozpor mezi oběma sadami čísel upozornil jako první server NašeTéma.cz na základě podnětu čtenáře; kauzu následně veřejně šířil europosla"
+template = "dossier-claim.html"
+weight = 34
+
+[extra]
+dossier = "boris-stastny"
+record_type = "claim"
+lang = "cs"
+clm_id = "CLM-34"
+status = "status-corroborated"
+status_label = "CORROBORATED"
+summary = "Na rozpor mezi oběma sadami čísel upozornil jako první server NašeTéma.cz na základě podnětu čtenáře; kauzu následně veřejně šířil europoslanec Tomáš Zdechovský (KDU-ČSL)."
+sources = ["SRC-16", "SRC-18"]
+subjects = ["stastny"]
++++
+
+Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/boris-stastny/_index.md#registr-tvrzeni).

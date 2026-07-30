@@ -1,5 +1,5 @@
 +++
-title = "SRC-15 — Blesk"
+title = "SRC-15 — Blesk.cz"
 description = "Trable Juchelky kvůli exporadkyni: Vyžádal si posudek. Dojde i na trestní oznámení?"
 template = "dossier-source.html"
 weight = 15
@@ -10,7 +10,7 @@ dossier = "ales-juchelka"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-15"
-outlet = "Blesk"
+outlet = "Blesk.cz"
 src_type = "zpravodajství"
 url = "https://www.blesk.cz/clanek/zpravy-politika/844934/trable-juchelky-kvuli-exporadkyni-vyzadal-si-posudek-dojde-i-na-trestni-oznameni.html"
 published = "2026-07-29"

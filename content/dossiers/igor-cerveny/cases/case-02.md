@@ -14,8 +14,9 @@ period = "2026"
 status = "status-single"
 label = "Sledované téma"
 summary = "Střet zájmů — podcastová firma — viz tvrzení CLM-08, CLM-09, CLM-10."
-claims = ["CLM-08", "CLM-09", "CLM-10"]
-sources = ["SRC-05", "SRC-06"]
+claims = []
+sources = []
+subjects = ["cerveny"]
 +++
 
 Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu

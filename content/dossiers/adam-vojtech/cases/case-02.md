@@ -14,8 +14,9 @@ period = "2026"
 status = "status-single"
 label = "Sledované téma"
 summary = "Daňové zvýhodnění benefitů a debata o střetu zájmů — viz tvrzení CLM-13, CLM-14, CLM-15, CLM-16, CLM-17."
-claims = ["CLM-13", "CLM-14", "CLM-15", "CLM-16", "CLM-17"]
-sources = ["SRC-08", "SRC-09", "SRC-10"]
+claims = []
+sources = []
+subjects = ["vojtech"]
 +++
 
 Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu

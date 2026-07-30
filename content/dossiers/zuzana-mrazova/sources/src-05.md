@@ -1,5 +1,5 @@
 +++
-title = "SRC-05 — Blesk"
+title = "SRC-05 — Blesk.cz"
 description = "Ministryně Mrázová zatajila půl milionu: A přišel trest!"
 template = "dossier-source.html"
 weight = 5
@@ -10,7 +10,7 @@ dossier = "zuzana-mrazova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-05"
-outlet = "Blesk"
+outlet = "Blesk.cz"
 src_type = "zpravodajství"
 url = "https://www.blesk.cz/clanek/zpravy-politika/844643/ministryne-mrazova-zatajila-pul-milionu-a-prisel-trest.html"
 published = "2026-07-25"

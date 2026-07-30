@@ -1,5 +1,5 @@
 +++
-title = "SRC-09 — Deník.cz"
+title = "SRC-09 — Deník.cz (VLTAVA LABE MEDIA)"
 description = "Školní rok skončí letos v pátek 26. června, ne 30. června, rozhodl Plaga"
 template = "dossier-source.html"
 weight = 9
@@ -10,7 +10,7 @@ dossier = "robert-plaga"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-09"
-outlet = "Deník.cz"
+outlet = "Deník.cz (VLTAVA LABE MEDIA)"
 src_type = "zpravodajství"
 url = "https://www.denik.cz/skolstvi-a-vzdelavani/kdy-konci-skolni-rok-na-skolach-robert-plaga.html"
 published = "2026-03-31"

@@ -14,8 +14,9 @@ period = "2026"
 status = "status-single"
 label = "Sledované téma"
 summary = "Kauza střetu zájmů bývalé poradkyně — viz tvrzení CLM-06, CLM-07, CLM-08, CLM-10, CLM-16."
-claims = ["CLM-06", "CLM-07", "CLM-08", "CLM-10", "CLM-16"]
-sources = ["SRC-03", "SRC-08", "SRC-10", "SRC-11", "SRC-04", "SRC-05", "SRC-06", "SRC-13", "SRC-14", "SRC-15"]
+claims = []
+sources = []
+subjects = ["juchelka"]
 +++
 
 Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu

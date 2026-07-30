@@ -16,6 +16,91 @@ subjects = ["Tomio Okamura"]
 updated = "2026-07-30"
 reviewed_at = "2026-07-30"
 
+
+[[extra.timeline]]
+date = "2025-02"
+title = "Sněmovna vydala Tomia Okamuru k trestnímu stíhání v kauze předvolebních plakátů SPD"
+anchor = "kauza-nevydani-snemovnou"
+dot = "dot-fact"
+subjects = ["okamura"]
+
+[[extra.timeline]]
+date = "2025-08"
+title = "Obvodní státní zastupitelství pro Prahu 1 podalo obžalobu na Tomia Okamuru a hnutí SPD"
+anchor = "kauza-odvolani-proces"
+dot = "dot-fact"
+subjects = ["okamura"]
+
+[[extra.timeline]]
+date = "2026-03"
+title = "Sněmovna Okamuru nevydala; soud jeho stíhání přerušil a věc vyloučil k samostatnému řízení"
+anchor = "kauza-nevydani-snemovnou"
+dot = "dot-fact"
+subjects = ["okamura"]
+
+[[extra.timeline]]
+date = "2026-05"
+title = "Hlavní líčení s hnutím SPD u Obvodního soudu pro Prahu 1, bez věci Tomia Okamury"
+anchor = "kauza-odvolani-proces"
+dot = "dot-fact"
+subjects = ["okamura"]
+
+[[extra.timeline]]
+date = "2026-06"
+title = "Nepravomocný rozsudek: peněžitý trest pro hnutí SPD, hnutí ohlásilo odvolání"
+anchor = "kauza-rozsudek-plakaty"
+dot = "dot-fact"
+subjects = ["okamura"]
+[[extra.cases]]
+anchor = "kauza-plakaty-spd"
+period = "2026"
+title = "Trestní kauza předvolebních plakátů SPD"
+status = "status-disputed"
+label = "Nepravomocné, hnutí se odvolává"
+summary = "OS pro Prahu 1 uznal SPD vinným podněcováním k nenávisti kvůli dvěma plakátům a uložil 3 miliony; rozsudek není pravomocný. Okamurovo vlastní stíhání je přerušené, Sněmovna ho nevydala."
+claims = ["CLM-01", "CLM-02", "CLM-03", "CLM-04", "CLM-05", "CLM-06"]
+subjects = ["okamura"]
+
+[[extra.cases]]
+anchor = "kauza-rozsudek-plakaty"
+period = "2026"
+title = "Nepravomocný rozsudek nad SPD za předvolební plakáty"
+status = "status-single"
+label = "Sledované téma"
+summary = "Nepravomocný rozsudek nad SPD za předvolební plakáty — viz tvrzení CLM-07, CLM-08, CLM-09, CLM-10, CLM-11, CLM-12, CLM-13, CLM-14, CLM-35."
+claims = ["CLM-07", "CLM-08", "CLM-09", "CLM-10", "CLM-11", "CLM-12", "CLM-13", "CLM-14", "CLM-35"]
+subjects = ["okamura"]
+
+[[extra.cases]]
+anchor = "kauza-reakce-obhajoba"
+period = "2026"
+title = "Reakce, obhajoba a hodnocení"
+status = "status-single"
+label = "Sledované téma"
+summary = "Reakce, obhajoba a hodnocení — viz tvrzení CLM-15, CLM-16, CLM-17, CLM-18, CLM-19, CLM-33, CLM-34."
+claims = ["CLM-15", "CLM-16", "CLM-17", "CLM-18", "CLM-19", "CLM-33", "CLM-34"]
+subjects = ["okamura"]
+
+[[extra.cases]]
+anchor = "kauza-odvolani-proces"
+period = "2026"
+title = "Průběh trestního řízení a odvolání"
+status = "status-single"
+label = "Sledované téma"
+summary = "Průběh trestního řízení a odvolání — viz tvrzení CLM-20, CLM-21, CLM-22, CLM-23, CLM-24, CLM-31."
+claims = ["CLM-20", "CLM-21", "CLM-22", "CLM-23", "CLM-24", "CLM-31"]
+subjects = ["okamura"]
+
+[[extra.cases]]
+anchor = "kauza-nevydani-snemovnou"
+period = "2026"
+title = "Hlasování Sněmovny o vydání ke stíhání"
+status = "status-single"
+label = "Sledované téma"
+summary = "Hlasování Sněmovny o vydání ke stíhání — viz tvrzení CLM-25, CLM-26, CLM-27, CLM-28, CLM-29, CLM-30, CLM-32."
+claims = ["CLM-25", "CLM-26", "CLM-27", "CLM-28", "CLM-29", "CLM-30", "CLM-32"]
+subjects = ["okamura"]
+
 [extra.authorization]
 authorized = true
 record_ids = ["AUTH-2026-07-30-D"]
@@ -25,16 +110,6 @@ date = "2026-06-03"
 title = "Nepravomocný rozsudek: SPD vinna, trest 3 miliony"
 anchor = "kauza-plakaty-spd"
 dot = "dot-disputed"
-subjects = ["okamura"]
-
-[[extra.cases]]
-anchor = "kauza-plakaty-spd"
-period = "2026"
-title = "Trestní kauza předvolebních plakátů SPD"
-status = "status-disputed"
-label = "Nepravomocné, hnutí se odvolává"
-summary = "OS pro Prahu 1 uznal SPD vinným podněcováním k nenávisti kvůli dvěma plakátům a uložil 3 miliony; rozsudek není pravomocný. Okamurovo vlastní stíhání je přerušené, Sněmovna ho nevydala."
-claims = ["CLM-01", "CLM-02", "CLM-03", "CLM-04", "CLM-05", "CLM-06"]
 subjects = ["okamura"]
 +++
 
@@ -53,7 +128,35 @@ ho drží odděleně: rozsudek padl nad **hnutím SPD jako právnickou
 osobou**, není pravomocný, a Okamurovo vlastní stíhání je **přerušené**.
 
 ## Registr tvrzení {#registr-tvrzeni}
-
+| <a id="clm-07"></a>[CLM-07](@/dossiers/tomio-okamura/claims/clm-07.md) | Nepravomocný rozsudek ze 3. června 2026 vydala samosoudkyně Ivana Tichá z Obvodního soudu pro Prahu 1. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-03](@/dossiers/tomio-okamura/sources/src-03.md) [SRC-04](@/dossiers/tomio-okamura/sources/src-04.md) [SRC-06](@/dossiers/tomio-okamura/sources/src-06.md) [SRC-09](@/dossiers/tomio-okamura/sources/src-09.md) |
+| <a id="clm-08"></a>[CLM-08](@/dossiers/tomio-okamura/claims/clm-08.md) | Soudkyně Ivana Tichá podle zpravodajství odůvodnila nepravomocný rozsudek slovy: „Mít názor a způsob, jakým ten názor projevím, jsou dvě odlišné věci.“ | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-04](@/dossiers/tomio-okamura/sources/src-04.md) [SRC-07](@/dossiers/tomio-okamura/sources/src-07.md) |
+| <a id="clm-09"></a>[CLM-09](@/dossiers/tomio-okamura/claims/clm-09.md) | Soudkyně Ivana Tichá podle zpravodajství v odůvodnění uvedla: „Problémem volební kampaně obžalované je to, že stavěla ty skupiny vůči zbytku obyvatelstva České republiky do pozice oni a my. Tato polarizace může vést — a podle mého názoru vede — k tomu, že v lidech vzroste strach, případně závist, a to vede následně k nenávisti vůči skupinám osob.“ | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-09](@/dossiers/tomio-okamura/sources/src-09.md) [SRC-10](@/dossiers/tomio-okamura/sources/src-10.md) |
+| <a id="clm-10"></a>[CLM-10](@/dossiers/tomio-okamura/claims/clm-10.md) | Obžalovanou v řízení, které skončilo nepravomocným rozsudkem ze 3. června 2026, bylo hnutí SPD jako právnická osoba; nešlo o rozsudek nad Tomiem Okamurou osobně, jehož trestní věc byla vyloučena k samostatnému projednání a jeho stíhání je přerušené. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-05](@/dossiers/tomio-okamura/sources/src-05.md) [SRC-06](@/dossiers/tomio-okamura/sources/src-06.md) [SRC-21](@/dossiers/tomio-okamura/sources/src-21.md) |
+| <a id="clm-11"></a>[CLM-11](@/dossiers/tomio-okamura/claims/clm-11.md) | Podle zpravodajství soud uložil peněžitý trest při dolní hranici zákonné sazby, označil jej za výchovný a při jeho stanovení vycházel z ročního státního příspěvku hnutí SPD ve výši přibližně 40 milionů korun; rozsudek není pravomocný. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-04](@/dossiers/tomio-okamura/sources/src-04.md) [SRC-12](@/dossiers/tomio-okamura/sources/src-12.md) |
+| <a id="clm-12"></a>[CLM-12](@/dossiers/tomio-okamura/claims/clm-12.md) | Státní zástupce David Jachnický navrhoval podle zpravodajství peněžitý trest o půl milionu korun vyšší, než jaký soud nepravomocně uložil, tedy zhruba 3,5 milionu korun. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-10](@/dossiers/tomio-okamura/sources/src-10.md) [SRC-11](@/dossiers/tomio-okamura/sources/src-11.md) [SRC-12](@/dossiers/tomio-okamura/sources/src-12.md) |
+| <a id="clm-13"></a>[CLM-13](@/dossiers/tomio-okamura/claims/clm-13.md) | Státní zástupce David Jachnický podle zpravodajství v závěrečné řeči uvedl, že obžalovaná k jednání přistoupila „proto, aby získala moc, vliv a tím i materiální prospěch“, a poukázal na nulovou sebereflexi hnutí. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-11](@/dossiers/tomio-okamura/sources/src-11.md) [SRC-12](@/dossiers/tomio-okamura/sources/src-12.md) |
+| <a id="clm-14"></a>[CLM-14](@/dossiers/tomio-okamura/claims/clm-14.md) | Státní zástupce David Jachnický podle zpravodajství argumentoval paralelou s nacistickým Německem, kde podle něj nenávistné projevy nezačaly násilím, ale slovy, a demokratický stát proto nemůže čekat, až se nenávist promění v útok. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-10](@/dossiers/tomio-okamura/sources/src-10.md) [SRC-11](@/dossiers/tomio-okamura/sources/src-11.md) |
+| <a id="clm-15"></a>[CLM-15](@/dossiers/tomio-okamura/claims/clm-15.md) | Obhájce hnutí SPD Adam Batuna u soudu odmítl vinu s tím, že se hnutí cítí nevinné a že žalované skutky nejsou trestným činem; plakáty podle něj pouze pravdivě pojmenovávaly společenské otázky. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-03](@/dossiers/tomio-okamura/sources/src-03.md) [SRC-06](@/dossiers/tomio-okamura/sources/src-06.md) [SRC-07](@/dossiers/tomio-okamura/sources/src-07.md) |
+| <a id="clm-16"></a>[CLM-16](@/dossiers/tomio-okamura/claims/clm-16.md) | Obhájce Adam Batuna podle justičního zpravodajství zpochybnil odborné posudky provedené jako důkaz a označil je za účelově zkreslené. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-06](@/dossiers/tomio-okamura/sources/src-06.md) |
+| <a id="clm-17"></a>[CLM-17](@/dossiers/tomio-okamura/claims/clm-17.md) | Tomio Okamura po vyhlášení nepravomocného rozsudku uvedl: „Cílem našich plakátů nebylo vyvolat nenávist, ale pojmenovat problémy, které reálně jsou“, a dodal: „V žádném případě jsme necílili na rasové pohnutky.“ | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-07](@/dossiers/tomio-okamura/sources/src-07.md) [SRC-08](@/dossiers/tomio-okamura/sources/src-08.md) |
+| <a id="clm-18"></a>[CLM-18](@/dossiers/tomio-okamura/claims/clm-18.md) | Tomio Okamura zpochybnil postup soudu výrokem: „Samosoudkyně měla podle našeho názoru zjevně rozsudek připravený předem bez ohledu na hlavní líčení a dokazování.“ Jde o jeho tvrzení, nikoli o zjištění nadřízeného soudu. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-07](@/dossiers/tomio-okamura/sources/src-07.md) [SRC-08](@/dossiers/tomio-okamura/sources/src-08.md) [SRC-15](@/dossiers/tomio-okamura/sources/src-15.md) |
+| <a id="clm-19"></a>[CLM-19](@/dossiers/tomio-okamura/claims/clm-19.md) | Tomio Okamura podle zpravodajství kritizoval soudkyni Ivanu Tichou s tím, že podle něj kázala, jak má vypadat volební kampaň, a chtěla tím stanovit způsob jejího vedení. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-07](@/dossiers/tomio-okamura/sources/src-07.md) [SRC-15](@/dossiers/tomio-okamura/sources/src-15.md) |
+| <a id="clm-20"></a>[CLM-20](@/dossiers/tomio-okamura/claims/clm-20.md) | Hnutí SPD prostřednictvím Tomia Okamury a obhájce Adama Batuny bezprostředně po vyhlášení ohlásilo odvolání a uvedlo, že je připraveno vést spor až k Ústavnímu soudu; rozsudek proto není pravomocný. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-14](@/dossiers/tomio-okamura/sources/src-14.md) [SRC-15](@/dossiers/tomio-okamura/sources/src-15.md) [SRC-03](@/dossiers/tomio-okamura/sources/src-03.md) |
+| <a id="clm-21"></a>[CLM-21](@/dossiers/tomio-okamura/claims/clm-21.md) | Obžalobu na Tomia Okamuru i na hnutí SPD podal 7. srpna 2025 šéf Obvodního státního zastupitelství pro Prahu 1 Jan Lelek, a to k Obvodnímu soudu pro Prahu 1. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-16](@/dossiers/tomio-okamura/sources/src-16.md) [SRC-17](@/dossiers/tomio-okamura/sources/src-17.md) |
+| <a id="clm-22"></a>[CLM-22](@/dossiers/tomio-okamura/claims/clm-22.md) | Obžaloba navrhovala pro Tomia Okamuru podmíněný a peněžitý trest a pro hnutí SPD peněžitý trest; jde o návrh obžaloby, nikoli o rozhodnutí soudu. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-16](@/dossiers/tomio-okamura/sources/src-16.md) [SRC-17](@/dossiers/tomio-okamura/sources/src-17.md) [SRC-22](@/dossiers/tomio-okamura/sources/src-22.md) |
+| <a id="clm-23"></a>[CLM-23](@/dossiers/tomio-okamura/claims/clm-23.md) | Podle obžaloby měl obsah dvou předvolebních plakátů z kampaně před krajskými a senátními volbami roku 2024 „vzbuzovat či posilovat negativní emoce nenávistného charakteru vůči migrantům negroidní rasy a romskému etniku“; jde o formulaci obžaloby. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-16](@/dossiers/tomio-okamura/sources/src-16.md) [SRC-17](@/dossiers/tomio-okamura/sources/src-17.md) |
+| <a id="clm-24"></a>[CLM-24](@/dossiers/tomio-okamura/claims/clm-24.md) | V základní skutkové podstatě hrozil za žalovaný trestný čin trest do dvou let odnětí svobody, přičemž sazba se zvyšuje na šest měsíců až tři roky, je-li čin spáchán tiskem, filmem, rozhlasem, televizí nebo veřejně přístupnou počítačovou sítí. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-16](@/dossiers/tomio-okamura/sources/src-16.md) [SRC-17](@/dossiers/tomio-okamura/sources/src-17.md) |
+| <a id="clm-25"></a>[CLM-25](@/dossiers/tomio-okamura/claims/clm-25.md) | Sněmovna 12. února 2025 Tomia Okamuru k trestnímu stíhání v této věci vydala; pro vydání hlasovalo 81 ze 143 přítomných poslanců, proti bylo 62. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-18](@/dossiers/tomio-okamura/sources/src-18.md) |
+| <a id="clm-26"></a>[CLM-26](@/dossiers/tomio-okamura/claims/clm-26.md) | Vydání Tomia Okamury v únoru 2025 podpořili podle zpravodajství poslanci tehdejších vládních ODS, STAN, KDU-ČSL a TOP 09, opoziční Piráti a nezařazený Ivo Vondrák; proti hlasovali poslanci SPD a ANO. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-18](@/dossiers/tomio-okamura/sources/src-18.md) |
+| <a id="clm-27"></a>[CLM-27](@/dossiers/tomio-okamura/claims/clm-27.md) | Po sněmovních volbách v říjnu 2025 se Tomiu Okamurovi obnovila poslanecká imunita v plném rozsahu, takže bylo nutné o vydání k trestnímu stíhání rozhodovat znovu. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-20](@/dossiers/tomio-okamura/sources/src-20.md) |
+| <a id="clm-28"></a>[CLM-28](@/dossiers/tomio-okamura/claims/clm-28.md) | Sněmovna 5. března 2026 Tomia Okamuru k trestnímu stíhání nevydala; pro nevydání hlasovalo 104 ze 186 přítomných poslanců, pro vydání 82. Jde o parlamentní procesní rozhodnutí, nikoli o posouzení pravdivosti obvinění. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-19](@/dossiers/tomio-okamura/sources/src-19.md) [SRC-20](@/dossiers/tomio-okamura/sources/src-20.md) |
+| <a id="clm-29"></a>[CLM-29](@/dossiers/tomio-okamura/claims/clm-29.md) | Nevydání Tomia Okamury ke stíhání podpořili 5. března 2026 podle zpravodajství všichni přítomní poslanci vládních klubů ANO, SPD a Motoristů; sněmovní mandátový a imunitní výbor předtím vydání nedoporučil. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-19](@/dossiers/tomio-okamura/sources/src-19.md) [SRC-20](@/dossiers/tomio-okamura/sources/src-20.md) |
+| <a id="clm-30"></a>[CLM-30](@/dossiers/tomio-okamura/claims/clm-30.md) | Obvodní soud pro Prahu 1 rozhodl 12. března 2026 o přerušení trestního stíhání Tomia Okamury s odůvodněním, že stíhání je „pro nedostatek souhlasu oprávněného orgánu dočasně nepřípustné“, a jeho věc vyloučil k samostatnému projednání a rozhodnutí. O kroku informovala místopředsedkyně soudu Eva Švíglerová. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-21](@/dossiers/tomio-okamura/sources/src-21.md) [SRC-22](@/dossiers/tomio-okamura/sources/src-22.md) |
+| <a id="clm-31"></a>[CLM-31](@/dossiers/tomio-okamura/claims/clm-31.md) | Hlavní líčení s hnutím SPD nařídil Obvodní soud pro Prahu 1 na 25. května 2026, tedy bez projednání věci Tomia Okamury. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-21](@/dossiers/tomio-okamura/sources/src-21.md) [SRC-22](@/dossiers/tomio-okamura/sources/src-22.md) |
+| <a id="clm-32"></a>[CLM-32](@/dossiers/tomio-okamura/claims/clm-32.md) | Unie státních zástupců 6. března 2026 po sněmovním hlasování uvedla, že „některá čtvrteční prohlášení představitelů státu jsou způsobilá podrýt důvěru v nezávislost justice“; proti zpochybňování důvěry v justici se vymezila i Transparency International. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-23](@/dossiers/tomio-okamura/sources/src-23.md) |
+| <a id="clm-33"></a>[CLM-33](@/dossiers/tomio-okamura/claims/clm-33.md) | Společnost pro obranu svobody projevu v přehledu z 11. července 2026 rozsudek kritizovala jako „faktické posvěcení cenzury“ a vytváření tlaku na autocenzuru; jde o hodnotící stanovisko advokační organizace, nikoli o zpravodajské zjištění. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-24](@/dossiers/tomio-okamura/sources/src-24.md) |
+| <a id="clm-34"></a>[CLM-34](@/dossiers/tomio-okamura/claims/clm-34.md) | Komentátor Aleš Michal v Reflexu 7. června 2026 rozsudek naopak označil za „další dobrou zprávu o kvalitě právního státu v České republice“ a uvedl, že se Okamura po vyhlášení nevybíravě pustil i do samotné soudkyně; jde o názorový text. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-25](@/dossiers/tomio-okamura/sources/src-25.md) |
+| <a id="clm-35"></a>[CLM-35](@/dossiers/tomio-okamura/claims/clm-35.md) | Podle agenturní zprávy soudkyně v odůvodnění odkázala na dřívější případ Jaromíra Baldy jako na příklad následků nenávistné rétoriky; tento odkaz uvádí pouze jeden zdroj a nebyl potvrzen dalším nezávislým vydavatelem. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-13](@/dossiers/tomio-okamura/sources/src-13.md) |
 | ID | Tvrzení | Stav | Zdroje |
 |---|---|---|---|
 | <a id="clm-01"></a>[CLM-01](@/dossiers/tomio-okamura/claims/clm-01.md) | Obvodní soud pro Prahu 1 dne 3. června 2026 uznal hnutí SPD vinným z podněcování k nenávisti kvůli dvěma předvolebním plakátům a uložil peněžitý trest 3 miliony korun; soudkyně podle citovaného zpravodajství výslovně uvedla, že rozsudek není pravomocný | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-01](@/dossiers/tomio-okamura/sources/src-01.md), [SRC-02](@/dossiers/tomio-okamura/sources/src-02.md) |
@@ -124,3 +227,19 @@ osobou není rozsudkem nad jejím předsedou. Nevydání poslance k trestnímu
 stíhání je procesní rozhodnutí Sněmovny, ne posouzení důkazů. Tento
 dossier nezachycuje nic nad rámec toho, co k uvedenému datu uvedl citovaný,
 skutečně otevřený zdroj.
+
+## Nepravomocný rozsudek nad SPD za předvolební plakáty {#kauza-rozsudek-plakaty}
+
+Téma v autorizovaném rozsahu — viz tvrzení [CLM-07](@/dossiers/tomio-okamura/claims/clm-07.md), [CLM-08](@/dossiers/tomio-okamura/claims/clm-08.md), [CLM-09](@/dossiers/tomio-okamura/claims/clm-09.md), [CLM-10](@/dossiers/tomio-okamura/claims/clm-10.md), [CLM-11](@/dossiers/tomio-okamura/claims/clm-11.md), [CLM-12](@/dossiers/tomio-okamura/claims/clm-12.md), [CLM-13](@/dossiers/tomio-okamura/claims/clm-13.md), [CLM-14](@/dossiers/tomio-okamura/claims/clm-14.md), [CLM-35](@/dossiers/tomio-okamura/claims/clm-35.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
+
+## Reakce, obhajoba a hodnocení {#kauza-reakce-obhajoba}
+
+Téma v autorizovaném rozsahu — viz tvrzení [CLM-15](@/dossiers/tomio-okamura/claims/clm-15.md), [CLM-16](@/dossiers/tomio-okamura/claims/clm-16.md), [CLM-17](@/dossiers/tomio-okamura/claims/clm-17.md), [CLM-18](@/dossiers/tomio-okamura/claims/clm-18.md), [CLM-19](@/dossiers/tomio-okamura/claims/clm-19.md), [CLM-33](@/dossiers/tomio-okamura/claims/clm-33.md), [CLM-34](@/dossiers/tomio-okamura/claims/clm-34.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
+
+## Průběh trestního řízení a odvolání {#kauza-odvolani-proces}
+
+Téma v autorizovaném rozsahu — viz tvrzení [CLM-20](@/dossiers/tomio-okamura/claims/clm-20.md), [CLM-21](@/dossiers/tomio-okamura/claims/clm-21.md), [CLM-22](@/dossiers/tomio-okamura/claims/clm-22.md), [CLM-23](@/dossiers/tomio-okamura/claims/clm-23.md), [CLM-24](@/dossiers/tomio-okamura/claims/clm-24.md), [CLM-31](@/dossiers/tomio-okamura/claims/clm-31.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
+
+## Hlasování Sněmovny o vydání ke stíhání {#kauza-nevydani-snemovnou}
+
+Téma v autorizovaném rozsahu — viz tvrzení [CLM-25](@/dossiers/tomio-okamura/claims/clm-25.md), [CLM-26](@/dossiers/tomio-okamura/claims/clm-26.md), [CLM-27](@/dossiers/tomio-okamura/claims/clm-27.md), [CLM-28](@/dossiers/tomio-okamura/claims/clm-28.md), [CLM-29](@/dossiers/tomio-okamura/claims/clm-29.md), [CLM-30](@/dossiers/tomio-okamura/claims/clm-30.md), [CLM-32](@/dossiers/tomio-okamura/claims/clm-32.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.

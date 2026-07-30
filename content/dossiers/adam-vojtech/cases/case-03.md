@@ -14,8 +14,9 @@ period = "2026"
 status = "status-single"
 label = "Sledované téma"
 summary = "Kritika očkovací strategie od koaliční SPD — viz tvrzení CLM-18, CLM-19, CLM-20, CLM-21."
-claims = ["CLM-18", "CLM-19", "CLM-20", "CLM-21"]
-sources = ["SRC-11", "SRC-12"]
+claims = []
+sources = []
+subjects = ["vojtech"]
 +++
 
 Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu

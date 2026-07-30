@@ -52,7 +52,7 @@ title = "Bitcoinová kauza resortu spravedlnosti"
 status = "status-single"
 label = "Sledované téma"
 summary = "Bitcoinová kauza resortu spravedlnosti — viz tvrzení CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07."
-claims = ["CLM-02", "CLM-03", "CLM-04", "CLM-05", "CLM-06", "CLM-07"]
+claims = []
 subjects = ["tejc"]
 
 [[extra.cases]]
@@ -62,7 +62,7 @@ title = "Kárná žaloba v případu Viktorky"
 status = "status-single"
 label = "Sledované téma"
 summary = "Kárná žaloba v případu Viktorky — viz tvrzení CLM-08, CLM-09, CLM-10, CLM-11, CLM-12, CLM-13."
-claims = ["CLM-08", "CLM-09", "CLM-10", "CLM-11", "CLM-12", "CLM-13"]
+claims = []
 subjects = ["tejc"]
 
 [[extra.cases]]
@@ -72,7 +72,7 @@ title = "Spor o předběžné opatření Ústavního soudu"
 status = "status-single"
 label = "Sledované téma"
 summary = "Spor o předběžné opatření Ústavního soudu — viz tvrzení CLM-14, CLM-15, CLM-16, CLM-17, CLM-18."
-claims = ["CLM-14", "CLM-15", "CLM-16", "CLM-17", "CLM-18"]
+claims = []
 subjects = ["tejc"]
 
 [extra.authorization]

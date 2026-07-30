@@ -14,8 +14,9 @@ period = "2026"
 status = "status-single"
 label = "Sledované téma"
 summary = "Působení v čele SZIF (2013–2022) — viz tvrzení CLM-08, CLM-09, CLM-10, CLM-11."
-claims = ["CLM-08", "CLM-09", "CLM-10", "CLM-11"]
-sources = ["SRC-04"]
+claims = []
+sources = []
+subjects = ["sebestyan"]
 +++
 
 Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu

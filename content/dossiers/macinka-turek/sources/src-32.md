@@ -1,5 +1,5 @@
 +++
-title = "SRC-32 — Deník.cz"
+title = "SRC-32 — Deník.cz (VLTAVA LABE MEDIA)"
 description = "Turek v roce 2017 nechal na autě zaměstnance saúdské ambasády kresbu oprátky a nábojnici."
 template = "dossier-source.html"
 weight = 32
@@ -11,7 +11,7 @@ dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-32"
-outlet = "Deník.cz"
+outlet = "Deník.cz (VLTAVA LABE MEDIA)"
 src_type = "zpravodajství"
 url = "https://www.denik.cz/z_domova/filip-turek-vyhrozovani-saudskoarabska-ambasada.html"
 retrieved = "2026-07-22"

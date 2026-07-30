@@ -1,5 +1,5 @@
 +++
-title = "SRC-28 — Deník.cz"
+title = "SRC-28 — Deník.cz (VLTAVA LABE MEDIA)"
 description = "První zveřejnění: bývalá partnerka podala na Filipa Turka trestní oznámení pro znásilnění a domácí násilí."
 template = "dossier-source.html"
 weight = 28
@@ -11,7 +11,7 @@ dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-28"
-outlet = "Deník.cz"
+outlet = "Deník.cz (VLTAVA LABE MEDIA)"
 src_type = "zpravodajství (krimi)"
 url = "https://www.denik.cz/krimi/filip-turek-znasilneni-20250623.html"
 retrieved = "2026-07-22"

@@ -14,8 +14,9 @@ period = "2026"
 status = "status-single"
 label = "Sledované téma"
 summary = "Novela stavebního zákona — viz tvrzení CLM-10, CLM-11, CLM-12, CLM-13, CLM-14."
-claims = ["CLM-10", "CLM-11", "CLM-12", "CLM-13", "CLM-14"]
-sources = ["SRC-07", "SRC-08"]
+claims = []
+sources = []
+subjects = ["havlicek"]
 +++
 
 Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu

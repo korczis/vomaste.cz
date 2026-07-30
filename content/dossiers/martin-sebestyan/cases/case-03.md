@@ -14,8 +14,9 @@ period = "2026"
 status = "status-single"
 label = "Sledované téma"
 summary = "Varování Transparency International — viz tvrzení CLM-12, CLM-13, CLM-14, CLM-15."
-claims = ["CLM-12", "CLM-13", "CLM-14", "CLM-15"]
-sources = ["SRC-03", "SRC-05"]
+claims = []
+sources = []
+subjects = ["sebestyan"]
 +++
 
 Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu

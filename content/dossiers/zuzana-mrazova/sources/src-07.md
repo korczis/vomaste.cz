@@ -1,5 +1,5 @@
 +++
-title = "SRC-07 — ČT24"
+title = "SRC-07 — ČT24 (Česká televize)"
 description = "Resort spravedlnosti podal podnět k prověření ministryně Mrázové"
 template = "dossier-source.html"
 weight = 7
@@ -10,7 +10,7 @@ dossier = "zuzana-mrazova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-07"
-outlet = "ČT24"
+outlet = "ČT24 (Česká televize)"
 src_type = "zpravodajství"
 url = "https://ct24.ceskatelevize.cz/clanek/domaci/resort-spravedlnosti-podal-podnet-k-provereni-ministryne-mrazove-373716"
 published = "2026-05-21"

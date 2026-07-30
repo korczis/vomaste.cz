@@ -1,5 +1,5 @@
 +++
-title = "SRC-07 — CNN Prima NEWS"
+title = "SRC-07 — CNN Prima News"
 description = "Armáda zveřejnila „tajný“ rozhovor s prezidentem Pavlem. Do vydání zasáhlo ministerstvo"
 template = "dossier-source.html"
 weight = 7
@@ -10,7 +10,7 @@ dossier = "jaromir-zuna"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-07"
-outlet = "CNN Prima NEWS"
+outlet = "CNN Prima News"
 src_type = "zpravodajství"
 url = "https://cnn.iprima.cz/armada-zverejnila-tajny-rozhovor-s-prezidentem-pavlem-vydani-pozdrzelo-ministerstvo-tvrdi-509882"
 published = "2026-04-20"

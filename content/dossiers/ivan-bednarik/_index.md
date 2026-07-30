@@ -53,7 +53,7 @@ title = "Rezignace ve vedení Českých drah"
 status = "status-single"
 label = "Důvody nezveřejněny"
 summary = "Bednárik v únoru 2022 rezignoval na funkci generálního ředitele ČD; konkrétní důvody veřejně neuvedl a citovaný zdroj je nedokládá."
-claims = ["CLM-02", "CLM-03", "CLM-04"]
+claims = []
 subjects = ["bednarik"]
 
 [[extra.cases]]
@@ -63,7 +63,7 @@ title = "Resortní pozice k výdajům na železnici"
 status = "status-single"
 label = "Sledované téma"
 summary = "Resortní pozice k výdajům na železnici — viz tvrzení CLM-05, CLM-06, CLM-07, CLM-08, CLM-09, CLM-10."
-claims = ["CLM-05", "CLM-06", "CLM-07", "CLM-08", "CLM-09", "CLM-10"]
+claims = []
 subjects = ["bednarik"]
 
 [extra.authorization]

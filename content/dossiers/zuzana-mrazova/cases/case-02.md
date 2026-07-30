@@ -14,8 +14,9 @@ period = "2026"
 status = "status-single"
 label = "Sledované téma"
 summary = "Obecní byt v Bílině — viz tvrzení CLM-09, CLM-10, CLM-11."
-claims = ["CLM-09", "CLM-10", "CLM-11"]
-sources = ["SRC-05", "SRC-06", "SRC-11", "SRC-12", "SRC-09"]
+claims = []
+sources = []
+subjects = ["mrazova"]
 +++
 
 Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu

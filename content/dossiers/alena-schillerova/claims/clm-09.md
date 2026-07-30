@@ -1,0 +1,19 @@
++++
+title = "CLM-09"
+description = "Novela rozpočtových zákonů byla Poslanecké sněmovně předložena jako sněmovní tisk č. 90 dne 27. ledna 2026 a mění zákon č. 23/2017 Sb. o pra"
+template = "dossier-claim.html"
+weight = 9
+
+[extra]
+dossier = "alena-schillerova"
+record_type = "claim"
+lang = "cs"
+clm_id = "CLM-09"
+status = "status-single"
+status_label = "1 ZDROJ"
+summary = "Novela rozpočtových zákonů byla Poslanecké sněmovně předložena jako sněmovní tisk č. 90 dne 27. ledna 2026 a mění zákon č. 23/2017 Sb. o pravidlech rozpočtové odpovědnosti; jejím deklarovaným účelem je transpozice reformy Paktu stability a růstu z roku 2024."
+sources = ["SRC-19"]
+subjects = ["schillerova"]
++++
+
+Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/alena-schillerova/_index.md#registr-tvrzeni).

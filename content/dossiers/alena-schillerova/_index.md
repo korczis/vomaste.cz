@@ -16,6 +16,124 @@ subjects = ["Alena Schillerová"]
 updated = "2026-07-30"
 reviewed_at = "2026-07-30"
 
+
+[[extra.timeline]]
+date = "2026-01"
+title = "Schillerová v Interview ČT24 avizuje vlastní novelu zákona o rozpočtové odpovědnosti a odmítá verzi dosluhující vlády"
+anchor = "kauza-obhajoba"
+dot = "dot-fact"
+subjects = ["schillerova"]
+
+[[extra.timeline]]
+date = "2026-01"
+title = "Novela rozpočtových zákonů předložena Sněmovně jako sněmovní tisk č. 90"
+anchor = "kauza-novela-rozpoctovych-pravidel"
+dot = "dot-fact"
+subjects = ["schillerova"]
+
+[[extra.timeline]]
+date = "2026-02"
+title = "NRR ve vyjádření konstatuje přímý rozpor návrhu rozpočtu 2026 se zákonem — překročení limitu 246 mld. Kč o 64 miliard"
+anchor = "kauza-stanovisko-nrr"
+dot = "dot-fact"
+subjects = ["schillerova"]
+
+[[extra.timeline]]
+date = "2026-03"
+title = "Stanovisko NRR č. 1/2026 a téhož dne publikovaná polemická reakce ministerstva financí"
+anchor = "kauza-stanovisko-nrr"
+dot = "dot-fact"
+subjects = ["schillerova"]
+
+[[extra.timeline]]
+date = "2026-04"
+title = "Centrum veřejných financí UK zveřejňuje stanovisko k tisku č. 90 s kritikou únikových doložek a korekčního faktoru"
+anchor = "kauza-novela-rozpoctovych-pravidel"
+dot = "dot-fact"
+subjects = ["schillerova"]
+
+[[extra.timeline]]
+date = "2026-05"
+title = "Sněmovna schvaluje novelu poměrem 91:68; Schillerová ji obhajuje jako cestu z pasti rozpočtových triků"
+anchor = "kauza-novela-rozpoctovych-pravidel"
+dot = "dot-fact"
+subjects = ["schillerova"]
+
+[[extra.timeline]]
+date = "2026-06"
+title = "Stanovisko NRR č. 4/2026: národní fiskální omezení v podstatě přestanou existovat"
+anchor = "kauza-stanovisko-nrr"
+dot = "dot-fact"
+subjects = ["schillerova"]
+
+[[extra.timeline]]
+date = "2026-06"
+title = "Senát vrací novelu Sněmovně se zpřísňujícími pozměňovacími návrhy (limit infrastruktury 1 % HDP)"
+anchor = "kauza-novela-rozpoctovych-pravidel"
+dot = "dot-fact"
+subjects = ["schillerova"]
+
+[[extra.timeline]]
+date = "2026-07"
+title = "Sněmovna přehlasovala Senát 101 hlasy a potvrdila svou verzi novely"
+anchor = "kauza-novela-rozpoctovych-pravidel"
+dot = "dot-fact"
+subjects = ["schillerova"]
+
+[[extra.timeline]]
+date = "2026-07"
+title = "Prezident Pavel novelu vetoval; Schillerová jeho rozhodnutí označila za názorový veletoč"
+anchor = "kauza-novela-rozpoctovych-pravidel"
+dot = "dot-fact"
+subjects = ["schillerova"]
+
+[[extra.timeline]]
+date = "2026-08"
+title = "Plánované hlasování Sněmovny o prezidentském vetu (25. srpna 2026)"
+anchor = "kauza-novela-rozpoctovych-pravidel"
+dot = "dot-fact"
+subjects = ["schillerova"]
+
+[[extra.cases]]
+anchor = "kauza-rozpoctova-pravidla"
+period = "2026"
+title = "Rozpočtová pravidla a stanovisko Národní rozpočtové rady"
+status = "status-disputed"
+label = "Otevřené, spor o výpočet"
+summary = "Národní rozpočtová rada označila návrh rozpočtu 2026 za rozporný se zákonem o rozpočtové odpovědnosti; ministerstvo výpočet rozporuje. Novela rozpočtových zákonů podle kritiků umožňuje obejít Parlament."
+claims = []
+subjects = ["schillerova"]
+
+[[extra.cases]]
+anchor = "kauza-novela-rozpoctovych-pravidel"
+period = "2026"
+title = "Novela rozpočtových pravidel a prezidentské veto"
+status = "status-single"
+label = "Sledované téma"
+summary = "Novela rozpočtových pravidel a prezidentské veto — viz tvrzení CLM-08, CLM-09, CLM-10, CLM-11, CLM-12, CLM-13, CLM-14, CLM-15, CLM-17, CLM-18, CLM-19, CLM-23, CLM-39, CLM-40."
+claims = []
+subjects = ["schillerova"]
+
+[[extra.cases]]
+anchor = "kauza-obhajoba"
+period = "2026"
+title = "Obhajoba ministryně financí"
+status = "status-single"
+label = "Sledované téma"
+summary = "Obhajoba ministryně financí — viz tvrzení CLM-16, CLM-20, CLM-21, CLM-22, CLM-34, CLM-35, CLM-36, CLM-37, CLM-38."
+claims = []
+subjects = ["schillerova"]
+
+[[extra.cases]]
+anchor = "kauza-stanovisko-nrr"
+period = "2026"
+title = "Stanoviska Národní rozpočtové rady"
+status = "status-single"
+label = "Sledované téma"
+summary = "Stanoviska Národní rozpočtové rady — viz tvrzení CLM-24, CLM-25, CLM-26, CLM-27, CLM-28, CLM-29, CLM-30, CLM-31, CLM-32, CLM-33."
+claims = []
+subjects = ["schillerova"]
+
 [extra.authorization]
 authorized = true
 record_ids = ["AUTH-2026-07-30-B"]
@@ -47,16 +165,6 @@ title = "Novela rozpočtových zákonů ve Sněmovně, kritika opozice"
 anchor = "kauza-rozpoctova-pravidla"
 dot = "dot-disputed"
 subjects = ["schillerova"]
-
-[[extra.cases]]
-anchor = "kauza-rozpoctova-pravidla"
-period = "2026"
-title = "Rozpočtová pravidla a stanovisko Národní rozpočtové rady"
-status = "status-disputed"
-label = "Otevřené, spor o výpočet"
-summary = "Národní rozpočtová rada označila návrh rozpočtu 2026 za rozporný se zákonem o rozpočtové odpovědnosti; ministerstvo výpočet rozporuje. Novela rozpočtových zákonů podle kritiků umožňuje obejít Parlament."
-claims = ["CLM-03", "CLM-04", "CLM-05", "CLM-06", "CLM-07"]
-subjects = ["schillerova"]
 +++
 
 Alena Schillerová je místopředsedkyní vlády a ministryní financí ve třetí
@@ -71,7 +179,39 @@ rozpočtové rady, včetně její vlastní publikované obhajoby. Nic dalšího
 tento dossier nepokrývá.
 
 ## Registr tvrzení {#registr-tvrzeni}
-
+| <a id="clm-08"></a>[CLM-08](@/dossiers/alena-schillerova/claims/clm-08.md) | Poslanecká sněmovna schválila novelu rozpočtových zákonů 15. května 2026 na mimořádné schůzi poměrem 91 hlasů pro a 68 proti; pro hlasovala vládní koalice, proti opozice. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-04](@/dossiers/alena-schillerova/sources/src-04.md) |
+| <a id="clm-09"></a>[CLM-09](@/dossiers/alena-schillerova/claims/clm-09.md) | Novela rozpočtových zákonů byla Poslanecké sněmovně předložena jako sněmovní tisk č. 90 dne 27. ledna 2026 a mění zákon č. 23/2017 Sb. o pravidlech rozpočtové odpovědnosti; jejím deklarovaným účelem je transpozice reformy Paktu stability a růstu z roku 2024. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-19](@/dossiers/alena-schillerova/sources/src-19.md) |
+| <a id="clm-10"></a>[CLM-10](@/dossiers/alena-schillerova/claims/clm-10.md) | Podle Centra veřejných financí Univerzity Karlovy umožňuje pozměňovací návrh č. 825 (§ 12 odst. 5) vládě vrátit si vlastní rozpočet k přepracování, přičemž při opětovném předložení by fakticky odpadla všechna pravidla rozpočtové odpovědnosti. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-19](@/dossiers/alena-schillerova/sources/src-19.md) |
+| <a id="clm-11"></a>[CLM-11](@/dossiers/alena-schillerova/claims/clm-11.md) | Centrum veřejných financí označilo za problematický i stoprocentní symetrický korekční faktor zaváděný pozměňovacím návrhem č. 825 v § 10 odst. 5, který by podle něj umožňoval navyšovat výdaje bez ohledu na jejich soulad s pravidly. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-19](@/dossiers/alena-schillerova/sources/src-19.md) |
+| <a id="clm-12"></a>[CLM-12](@/dossiers/alena-schillerova/claims/clm-12.md) | Pozměňovací návrh č. 826 rozšiřuje výjimky z rozpočtových pravidel také na platby za dostupnost v PPP projektech, což by podle Centra veřejných financí vedlo k dvojímu zohlednění investic v povoleném schodku a k porušení pravidel EU. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-19](@/dossiers/alena-schillerova/sources/src-19.md) |
+| <a id="clm-13"></a>[CLM-13](@/dossiers/alena-schillerova/claims/clm-13.md) | Senát novelu 17. června 2026 po více než tříhodinové debatě vrátil Sněmovně s pozměňovacími návrhy: snížil limit pro vyjmuté infrastrukturní výdaje ze 2 % na 1 % HDP a podmínil navyšování výdajů souhlasem rozpočtového výboru. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-05](@/dossiers/alena-schillerova/sources/src-05.md) |
+| <a id="clm-14"></a>[CLM-14](@/dossiers/alena-schillerova/claims/clm-14.md) | Senát chtěl novelou omezit pravomoc ministerstva financí upravovat rozpočty nezávislých institucí, mezi něž patří Kancelář prezidenta republiky, Ústavní soud a veřejný ochránce práv. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-06](@/dossiers/alena-schillerova/sources/src-06.md) |
+| <a id="clm-15"></a>[CLM-15](@/dossiers/alena-schillerova/claims/clm-15.md) | Sněmovna přehlasovala Senát v nočním hlasování v noci na 8. července 2026 a potvrdila svou verzi novely přesně 101 hlasy vládní koalice, tedy minimálním potřebným počtem; všichni přítomní opoziční poslanci hlasovali proti. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-06](@/dossiers/alena-schillerova/sources/src-06.md) |
+| <a id="clm-16"></a>[CLM-16](@/dossiers/alena-schillerova/claims/clm-16.md) | Schillerová odmítla senátní úpravy s odůvodněním, že by přinesly právní nejistotu, a vyzvala poslance k podpoře původní sněmovní verze. | <span class="status-badge status-quote">CITACE</span> | [SRC-06](@/dossiers/alena-schillerova/sources/src-06.md) |
+| <a id="clm-17"></a>[CLM-17](@/dossiers/alena-schillerova/claims/clm-17.md) | Prezident Petr Pavel novelu rozpočtových zákonů vetoval 22. července 2026 a vrátil ji Poslanecké sněmovně; rozhodnutí oznámil videem na sociální síti. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-07](@/dossiers/alena-schillerova/sources/src-07.md) [SRC-08](@/dossiers/alena-schillerova/sources/src-08.md) |
+| <a id="clm-18"></a>[CLM-18](@/dossiers/alena-schillerova/claims/clm-18.md) | Pavel své veto odůvodnil slovy, že zákon umožňuje vládě půjčovat si výrazně více, než je tomu dnes, a že o veřejných penězích má rozhodovat parlament, zatímco novela rozšiřuje prostor vlády navyšovat výdaje bez souhlasu Poslanecké sněmovny. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-07](@/dossiers/alena-schillerova/sources/src-07.md) [SRC-08](@/dossiers/alena-schillerova/sources/src-08.md) |
+| <a id="clm-19"></a>[CLM-19](@/dossiers/alena-schillerova/claims/clm-19.md) | Podle prezidenta Pavla by novela umožnila vládě překročit vlastní schválený rozpočet až o deset procent na základě rozhodnutí pouze jejího vlastního poradního bezpečnostního orgánu, což podle ČT24 odpovídá zhruba 240 miliardám korun. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-08](@/dossiers/alena-schillerova/sources/src-08.md) |
+| <a id="clm-20"></a>[CLM-20](@/dossiers/alena-schillerova/claims/clm-20.md) | Schillerová označila prezidentovo veto na síti X za názorový veletoč s odůvodněním, že to byla právě prezidentská kancelář, kdo netransparentní rozpočtování minulé vlády Petra Fialy dlouhodobě ostře kritizoval. | <span class="status-badge status-quote">CITACE</span> | [SRC-10](@/dossiers/alena-schillerova/sources/src-10.md) |
+| <a id="clm-21"></a>[CLM-21](@/dossiers/alena-schillerova/claims/clm-21.md) | Schillerová k vetu uvedla, že prezident vetoval hospodářský růst, obranyschopnost a výstavbu jaderných bloků. | <span class="status-badge status-quote">CITACE</span> | [SRC-08](@/dossiers/alena-schillerova/sources/src-08.md) |
+| <a id="clm-22"></a>[CLM-22](@/dossiers/alena-schillerova/claims/clm-22.md) | Schillerová tvrdí, že bez přijetí novely by Česko hospodařilo se schodkem, který označila za devastační, přičemž uváděla částku 150 miliard korun. | <span class="status-badge status-quote">CITACE</span> | [SRC-10](@/dossiers/alena-schillerova/sources/src-10.md) [SRC-08](@/dossiers/alena-schillerova/sources/src-08.md) |
+| <a id="clm-23"></a>[CLM-23](@/dossiers/alena-schillerova/claims/clm-23.md) | Sněmovna má o prezidentském vetu hlasovat v úterý 25. srpna 2026; k přehlasování je potřeba nejméně 101 hlasů a vládní koalice jich má 108. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-09](@/dossiers/alena-schillerova/sources/src-09.md) |
+| <a id="clm-24"></a>[CLM-24](@/dossiers/alena-schillerova/claims/clm-24.md) | Ve svém vyjádření z 10. února 2026 rozložila NRR zákonný limit schodku na základní rámec 237 miliard korun odpovídající strukturálnímu schodku 1,75 % HDP plus navýšení o obranu ve výši 9 miliard korun, tedy celkem 246 miliard korun, což navrhovaný schodek 310 miliard překračuje o 64 miliard. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-18](@/dossiers/alena-schillerova/sources/src-18.md) |
+| <a id="clm-25"></a>[CLM-25](@/dossiers/alena-schillerova/claims/clm-25.md) | NRR výslovně odmítla argumentaci ministerstva financí, že se zákonná omezení nevztahují na rozpočet předkládaný opakovaně po vrácení Sněmovnou, s tím, že vláda je zákonem vázána předložit návrh rozpočtu v každém okamžiku v jeho mezích a limitech. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-18](@/dossiers/alena-schillerova/sources/src-18.md) |
+| <a id="clm-26"></a>[CLM-26](@/dossiers/alena-schillerova/claims/clm-26.md) | Ve stanovisku č. 1/2026 z 12. března 2026 NRR uvedla, že kapitola obrany obsahuje jen 154,8 miliardy korun, tedy 1,73 % HDP, což nenaplňuje zákonný závazek 2 % HDP, a že na podporu obnovitelných zdrojů je proti schválené podpoře 41,7 miliardy rozpočtováno jen 31,9 miliardy korun. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-16](@/dossiers/alena-schillerova/sources/src-16.md) |
+| <a id="clm-27"></a>[CLM-27](@/dossiers/alena-schillerova/claims/clm-27.md) | Ministerstvo financí ve své reakci z 12. března 2026 uvedlo, že obranné výdaje rozpočtovalo ve výši 184,6 miliardy korun, tedy 2,06 % HDP, protože započítalo i vybrané obranné výdaje mimo kapitolu ministerstva obrany, konkrétně Host Nation Support, příspěvky NATO a evropský obranný fond. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-15](@/dossiers/alena-schillerova/sources/src-15.md) |
+| <a id="clm-28"></a>[CLM-28](@/dossiers/alena-schillerova/claims/clm-28.md) | Ministerstvo financí v téže reakci zpochybnilo oprávnění NRR hodnotit makroekonomické prognózy slovy, že mu není známo, na základě čeho se Národní rozpočtová rada pasuje do role arbitra, a tuto roli přisoudilo výhradně Výboru pro rozpočtové prognózy. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-15](@/dossiers/alena-schillerova/sources/src-15.md) |
+| <a id="clm-29"></a>[CLM-29](@/dossiers/alena-schillerova/claims/clm-29.md) | Ministerstvo financí v reakci na stanovisko NRR připustilo, že situace v rozpočtové oblasti je napjatá již několik let a že sestavení rozpočtu bez dalších opatření bude pro roky 2027 a 2028 obtížné. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-15](@/dossiers/alena-schillerova/sources/src-15.md) |
+| <a id="clm-30"></a>[CLM-30](@/dossiers/alena-schillerova/claims/clm-30.md) | Ve stanovisku č. 4/2026 z 11. června 2026 NRR uvedla, že po schválení novel národní fiskální omezení v podstatě přestanou existovat, a označila změny za změnu fiskálního paradigmatu. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-17](@/dossiers/alena-schillerova/sources/src-17.md) |
+| <a id="clm-31"></a>[CLM-31](@/dossiers/alena-schillerova/claims/clm-31.md) | NRR ve stanovisku č. 4/2026 upozornila, že novela odklání vládu od dříve deklarovaného snížení strukturálního deficitu na 1,25 % HDP v roce 2027 a 1,00 % HDP od roku 2028, a že obranná výjimka se prodlužuje z roku 2033 na rok 2036. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-17](@/dossiers/alena-schillerova/sources/src-17.md) |
+| <a id="clm-32"></a>[CLM-32](@/dossiers/alena-schillerova/claims/clm-32.md) | NRR ve stanovisku č. 4/2026 odhadla, že schodek státního rozpočtu na rok 2027 může přesáhnout 350 miliard korun a že výnos desetiletého státního dluhopisu se blíží pětiprocentní hranici. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-17](@/dossiers/alena-schillerova/sources/src-17.md) |
+| <a id="clm-33"></a>[CLM-33](@/dossiers/alena-schillerova/claims/clm-33.md) | NRR varovala, že podle nových pravidel by mohl být legální deficit státního rozpočtu ve výši 400 miliard korun a deficit vládního sektoru přes 3 % HDP. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-11](@/dossiers/alena-schillerova/sources/src-11.md) |
+| <a id="clm-34"></a>[CLM-34](@/dossiers/alena-schillerova/claims/clm-34.md) | Schillerová obhajovala novelu tvrzením, že Česko chce jít cestou, kterou se vydalo například Německo, tedy vyjímat obranné a infrastrukturní výdaje z fiskálních pravidel. | <span class="status-badge status-quote">CITACE</span> | [SRC-11](@/dossiers/alena-schillerova/sources/src-11.md) |
+| <a id="clm-35"></a>[CLM-35](@/dossiers/alena-schillerova/claims/clm-35.md) | Schillerová označila novelu za cestu z pasti rozpočtových triků, nikoli za cestu k bezbřehému zadlužování, a uvedla, že Česko zůstane mezi rozpočtově nejodpovědnějšími státy EU. | <span class="status-badge status-quote">CITACE</span> | [SRC-12](@/dossiers/alena-schillerova/sources/src-12.md) |
+| <a id="clm-36"></a>[CLM-36](@/dossiers/alena-schillerova/claims/clm-36.md) | Schillerová kritizovala předchozí vládu Petra Fialy tvrzením, že prokazatelně plánovala hospodařit s deficitem skoro dvou procent HDP, zatímco do Bruselu slibovala deficit skoro čtyřikrát nižší. | <span class="status-badge status-quote">CITACE</span> | [SRC-12](@/dossiers/alena-schillerova/sources/src-12.md) |
+| <a id="clm-37"></a>[CLM-37](@/dossiers/alena-schillerova/claims/clm-37.md) | Již 6. ledna 2026 v Interview ČT24 Schillerová avizovala vlastní verzi novely s odůvodněním, že současný zákon není v souladu s novým evropským Paktem stability, a odmítla novelu, kterou dosluhující vláda poslala dva dny před jejím jmenováním. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-14](@/dossiers/alena-schillerova/sources/src-14.md) |
+| <a id="clm-38"></a>[CLM-38](@/dossiers/alena-schillerova/claims/clm-38.md) | V rozhovoru pro Hospodářské noviny z 15. června 2026 Schillerová uvedla, že vláda v připravovaném fiskálně-strukturálním plánu počítá s deficitem 2,8 % HDP a postupnou konsolidací zhruba o půl procentního bodu ročně, a připustila, že nemůže vyloučit vyšší schodek než v roce 2026. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-13](@/dossiers/alena-schillerova/sources/src-13.md) |
+| <a id="clm-39"></a>[CLM-39](@/dossiers/alena-schillerova/claims/clm-39.md) | Opoziční politici na veto reagovali pochvalně: Martin Kupka (ODS) varoval před oslabením kontrolní role Sněmovny, Vít Rakušan (STAN) uvedl, že si vláda chtěla otevřít cestu k obcházení dluhových pravidel, Zdeněk Hřib (Piráti) mluvil o zaraženém vládním účetním podvodu a Jan Jakob (TOP 09) oznámil přípravu ústavní stížnosti. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-08](@/dossiers/alena-schillerova/sources/src-08.md) |
+| <a id="clm-40"></a>[CLM-40](@/dossiers/alena-schillerova/claims/clm-40.md) | Premiér Andrej Babiš označil prezidentovo veto za velice nezodpovědné vůči občanům a tvrdil, že ohrožuje zdravotnictví, obranu a bezpečnost. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-07](@/dossiers/alena-schillerova/sources/src-07.md) [SRC-08](@/dossiers/alena-schillerova/sources/src-08.md) |
 | ID | Tvrzení | Stav | Zdroje |
 |---|---|---|---|
 | <a id="clm-01"></a>[CLM-01](@/dossiers/alena-schillerova/claims/clm-01.md) | Alena Schillerová zastává podle oficiálního profilu na webu Úřadu vlády funkci místopředsedkyně vlády a ministryně financí | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-01](@/dossiers/alena-schillerova/sources/src-01.md) |
@@ -143,3 +283,15 @@ Zachycuje pouze to, co k uvedenému datu uvedly citované, skutečně
 otevřené zdroje. Stanovisko odborného orgánu není rozhodnutí soudu;
 politická kritika není zjištění; obhajoba subjektu není důkaz. Absence
 tvrzení není důkazem absence problému.
+
+## Novela rozpočtových pravidel a prezidentské veto {#kauza-novela-rozpoctovych-pravidel}
+
+Téma v autorizovaném rozsahu — viz tvrzení [CLM-08](@/dossiers/alena-schillerova/claims/clm-08.md), [CLM-09](@/dossiers/alena-schillerova/claims/clm-09.md), [CLM-10](@/dossiers/alena-schillerova/claims/clm-10.md), [CLM-11](@/dossiers/alena-schillerova/claims/clm-11.md), [CLM-12](@/dossiers/alena-schillerova/claims/clm-12.md), [CLM-13](@/dossiers/alena-schillerova/claims/clm-13.md), [CLM-14](@/dossiers/alena-schillerova/claims/clm-14.md), [CLM-15](@/dossiers/alena-schillerova/claims/clm-15.md), [CLM-17](@/dossiers/alena-schillerova/claims/clm-17.md), [CLM-18](@/dossiers/alena-schillerova/claims/clm-18.md), [CLM-19](@/dossiers/alena-schillerova/claims/clm-19.md), [CLM-23](@/dossiers/alena-schillerova/claims/clm-23.md), [CLM-39](@/dossiers/alena-schillerova/claims/clm-39.md), [CLM-40](@/dossiers/alena-schillerova/claims/clm-40.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
+
+## Obhajoba ministryně financí {#kauza-obhajoba}
+
+Téma v autorizovaném rozsahu — viz tvrzení [CLM-16](@/dossiers/alena-schillerova/claims/clm-16.md), [CLM-20](@/dossiers/alena-schillerova/claims/clm-20.md), [CLM-21](@/dossiers/alena-schillerova/claims/clm-21.md), [CLM-22](@/dossiers/alena-schillerova/claims/clm-22.md), [CLM-34](@/dossiers/alena-schillerova/claims/clm-34.md), [CLM-35](@/dossiers/alena-schillerova/claims/clm-35.md), [CLM-36](@/dossiers/alena-schillerova/claims/clm-36.md), [CLM-37](@/dossiers/alena-schillerova/claims/clm-37.md), [CLM-38](@/dossiers/alena-schillerova/claims/clm-38.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
+
+## Stanoviska Národní rozpočtové rady {#kauza-stanovisko-nrr}
+
+Téma v autorizovaném rozsahu — viz tvrzení [CLM-24](@/dossiers/alena-schillerova/claims/clm-24.md), [CLM-25](@/dossiers/alena-schillerova/claims/clm-25.md), [CLM-26](@/dossiers/alena-schillerova/claims/clm-26.md), [CLM-27](@/dossiers/alena-schillerova/claims/clm-27.md), [CLM-28](@/dossiers/alena-schillerova/claims/clm-28.md), [CLM-29](@/dossiers/alena-schillerova/claims/clm-29.md), [CLM-30](@/dossiers/alena-schillerova/claims/clm-30.md), [CLM-31](@/dossiers/alena-schillerova/claims/clm-31.md), [CLM-32](@/dossiers/alena-schillerova/claims/clm-32.md), [CLM-33](@/dossiers/alena-schillerova/claims/clm-33.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.

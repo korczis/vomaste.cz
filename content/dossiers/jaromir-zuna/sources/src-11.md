@@ -1,5 +1,5 @@
 +++
-title = "SRC-11 — Echo24.cz"
+title = "SRC-11 — Echo24"
 description = "Zůna opět v problémech? Šéf SPD Okamura možnost konce ministra obrany odmítl"
 template = "dossier-source.html"
 weight = 11
@@ -10,7 +10,7 @@ dossier = "jaromir-zuna"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-11"
-outlet = "Echo24.cz"
+outlet = "Echo24"
 src_type = "zpravodajství"
 url = "https://m.echo24.cz/a/H9AHW/armada-rehka-hlavac-okamura-babis-zuna-vlada-kabinet-ministr-konec-spekulace-neshoda-hlasovani-proti-pro-obrana"
 published = "2026-05-19"

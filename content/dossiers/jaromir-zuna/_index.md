@@ -66,7 +66,7 @@ title = "Obranný rozpočet a závazek 2 % NATO"
 status = "status-single"
 label = "Sledované téma"
 summary = "Obranný rozpočet a závazek 2 % NATO — viz tvrzení CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07."
-claims = ["CLM-02", "CLM-03", "CLM-04", "CLM-05", "CLM-06", "CLM-07"]
+claims = []
 subjects = ["zuna"]
 
 [[extra.cases]]
@@ -76,7 +76,7 @@ title = "Neodvysílaný rozhovor s prezidentem Pavlem"
 status = "status-single"
 label = "Sledované téma"
 summary = "Neodvysílaný rozhovor s prezidentem Pavlem — viz tvrzení CLM-08, CLM-09, CLM-10, CLM-11, CLM-12."
-claims = ["CLM-08", "CLM-09", "CLM-10", "CLM-11", "CLM-12"]
+claims = []
 subjects = ["zuna"]
 
 [[extra.cases]]
@@ -86,7 +86,7 @@ title = "Spor o volbu náčelníka Generálního štábu"
 status = "status-single"
 label = "Sledované téma"
 summary = "Spor o volbu náčelníka Generálního štábu — viz tvrzení CLM-13, CLM-14, CLM-15, CLM-16."
-claims = ["CLM-13", "CLM-14", "CLM-15", "CLM-16"]
+claims = []
 subjects = ["zuna"]
 
 [[extra.cases]]
@@ -96,7 +96,7 @@ title = "Spor o koncepci armády"
 status = "status-single"
 label = "Sledované téma"
 summary = "Spor o koncepci armády — viz tvrzení CLM-17, CLM-18, CLM-19."
-claims = ["CLM-17", "CLM-18", "CLM-19"]
+claims = []
 subjects = ["zuna"]
 
 [extra.authorization]

@@ -73,7 +73,7 @@ title = "Dotace na toustový chléb (Penam/Agrofert)"
 status = "status-single"
 label = "Sledované téma"
 summary = "Dotace na toustový chléb (Penam/Agrofert) — viz tvrzení CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07, CLM-08, CLM-09."
-claims = ["CLM-02", "CLM-03", "CLM-04", "CLM-05", "CLM-06", "CLM-07", "CLM-08", "CLM-09"]
+claims = []
 subjects = ["havlicek"]
 
 [[extra.cases]]
@@ -83,7 +83,7 @@ title = "Novela stavebního zákona"
 status = "status-single"
 label = "Sledované téma"
 summary = "Novela stavebního zákona — viz tvrzení CLM-10, CLM-11, CLM-12, CLM-13, CLM-14."
-claims = ["CLM-10", "CLM-11", "CLM-12", "CLM-13", "CLM-14"]
+claims = []
 subjects = ["havlicek"]
 
 [[extra.cases]]
@@ -93,7 +93,7 @@ title = "Pozice k EU cílům elektromobility"
 status = "status-single"
 label = "Sledované téma"
 summary = "Pozice k EU cílům elektromobility — viz tvrzení CLM-15, CLM-16, CLM-17, CLM-18."
-claims = ["CLM-15", "CLM-16", "CLM-17", "CLM-18"]
+claims = []
 subjects = ["havlicek"]
 
 [extra.authorization]
