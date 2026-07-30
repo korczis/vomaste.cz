@@ -165,30 +165,48 @@ function buildFullLayer() {
 
   const fnodes = [];
   const fedges = [];
+  // Identifikátory záznamů jsou jedinečné jen V RÁMCI dossieru: CLM-01
+  // existuje v každém z nich. Uzly proto nesou klíč "<dossier>::<id>",
+  // popisek zůstává holé ID. Bez toho graf spadl na
+  // `Graph.addNode: the "CLM-01" node already exist` v okamžiku, kdy
+  // přibyl třetí dossier.
+  const key = (dossier, id) => `${dossier}::${id}`;
   const push = (id, type, label, url, extra = {}) => fnodes.push({ id, type, label, url, ...extra });
 
   for (const n of nodesById.values()) {
     push(n.id, "entity", n.label, null, { entity_type: n.type, subject: !!n.subject, dossiers: n.dossiers });
   }
-  for (const c of claims) push(c.clm_id, "claim", c.clm_id, c.url, { status: c.status, summary: c.summary });
-  for (const s of sources) push(s.src_id, "source", s.src_id, s.url, { outlet: s.outlet, src_type: s.src_type });
-  for (const c of cases) push(c.case_id, "case", c.case_id, c.url, { title: c.title, status: c.status });
-  for (const g of gaps) push(g.gap_id, "gap", g.gap_id, g.url, { priority: g.priority });
+  for (const c of claims) push(key(c.dossier, c.clm_id), "claim", c.clm_id, c.url, { status: c.status, summary: c.summary, dossier: c.dossier });
+  for (const s of sources) push(key(s.dossier, s.src_id), "source", s.src_id, s.url, { outlet: s.outlet, src_type: s.src_type, dossier: s.dossier });
+  for (const c of cases) push(key(c.dossier, c.case_id), "case", c.case_id, c.url, { title: c.title, status: c.status, dossier: c.dossier });
+  for (const g of gaps) push(key(g.dossier, g.gap_id), "gap", g.gap_id, g.url, { priority: g.priority, dossier: g.dossier });
+
+  const dupes = fnodes.map((n) => n.id).filter((id, i, a) => a.indexOf(id) !== i);
+  if (dupes.length) {
+    console.log(`ERROR build-global-graph: duplicitní id uzlů v plné vrstvě: ${[...new Set(dupes)].slice(0, 5).join(", ")}`);
+    process.exit(1);
+  }
 
   const known = new Set(fnodes.map((n) => n.id));
+  const seenEdges = new Set();
   const link = (id, source, target, label, kind) => {
     if (!known.has(source) || !known.has(target)) return;
+    // Táž vazba může vzniknout víc cestami — entita patřící do dvou dossierů
+    // vypisuje týž CLM v obou. Hrana je ale jedna; bez téhle deduplikace
+    // Sigma spadne na `addEdgeWithKey: the "..." edge already exists`.
+    if (seenEdges.has(id)) return;
+    seenEdges.add(id);
     fedges.push({ id, source, target, label, kind });
   };
 
-  // claim -> source ("cituje"): the backbone of the evidence layer.
-  for (const c of claims) for (const s of c.sources || []) link(`${c.clm_id}->${s}`, c.clm_id, s, "cituje", "cites");
-  // gap -> claim ("otevřená otázka k"): what is not settled about what.
-  for (const g of gaps) for (const c of g.claims || []) link(`${g.gap_id}->${c}`, g.gap_id, c, "otázka k", "asks");
-  // entity -> claim ("figuruje v"): from the curated graph's own claim refs.
-  for (const n of nodesById.values()) for (const c of n.claims || []) link(`${n.id}->${c}`, n.id, c, "figuruje v", "mentions");
-  // relation edge -> claim ("doloženo"): what backs each curated edge.
-  for (const r of relations) for (const c of r.claims || []) link(`${r.relation_id}->${c}`, r.source, c, "doloženo", "backs");
+  // Všechny vazby níž jsou uvnitř jednoho dossieru (tvrzení cituje zdroj
+  // téhož registru), takže se klíčují stejným dossierem. Entita je globální,
+  // proto se napojuje na každý dossier, ve kterém se vyskytuje.
+  for (const c of claims) for (const s of c.sources || []) link(`${key(c.dossier, c.clm_id)}->${s}`, key(c.dossier, c.clm_id), key(c.dossier, s), "cituje", "cites");
+  for (const g of gaps) for (const c of g.claims || []) link(`${key(g.dossier, g.gap_id)}->${c}`, key(g.dossier, g.gap_id), key(g.dossier, c), "otázka k", "asks");
+  for (const n of nodesById.values())
+    for (const d of n.dossiers || []) for (const c of n.claims || []) link(`${n.id}->${key(d, c)}`, n.id, key(d, c), "figuruje v", "mentions");
+  for (const r of relations) for (const c of r.claims || []) link(`${r.source}->${key(r.dossier, c)}`, r.source, key(r.dossier, c), "doloženo", "backs");
 
   return { nodes: fnodes, edges: fedges };
 }

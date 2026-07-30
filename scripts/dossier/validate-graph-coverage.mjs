@@ -37,12 +37,14 @@ const entities = read("static/data/entities.json");
 const full = graph.full ?? { nodes: [], edges: [] };
 if (full.nodes.length === 0) err("data/generated/global-graph.json has no `full` layer — build:global-graph did not run, or it regressed.");
 
+// Uzly plné vrstvy jsou klíčované "<dossier>::<id>", protože identifikátory
+// jsou jedinečné jen uvnitř dossieru (CLM-01 existuje v každém).
 const fullIds = new Set(full.nodes.map((n) => n.id));
 const expect = [
-  ["claim", claims.map((c) => c.clm_id)],
-  ["source", sources.map((s) => s.src_id)],
-  ["case", cases.map((c) => c.case_id)],
-  ["gap", gaps.map((g) => g.gap_id)],
+  ["claim", claims.map((c) => `${c.dossier}::${c.clm_id}`)],
+  ["source", sources.map((s) => `${s.dossier}::${s.src_id}`)],
+  ["case", cases.map((c) => `${c.dossier}::${c.case_id}`)],
+  ["gap", gaps.map((g) => `${g.dossier}::${g.gap_id}`)],
 ];
 for (const [kind, ids] of expect) {
   const missing = ids.filter((id) => !fullIds.has(id));
