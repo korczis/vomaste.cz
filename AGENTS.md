@@ -270,6 +270,15 @@ on the exact anchor after the redirect, not just at the top of the page.
   once here — do not hand-write `<meta>` tags elsewhere. It also carries the
   site-wide footer (licence, "navrhnout opravu"); page-level footers must not
   repeat those links.
+- `templates/macros/table.html` — jednotná komponenta pro tabulární data
+  (`table::advanced_table` / `table::advanced_table_end`; vlastní
+  implementace podle vzoru Flowbite „Advanced Tables" nad volným
+  Tailwindem/Flowbite). Každá `<table>` v šablonách jde přes ni — vynucuje
+  `npm run lint:component-reuse`; obal nese `data-record-type` provazující
+  řádky tabulky s JSON-LD uzly, které stránka už vydává. Data tabulek
+  pocházejí ze stejných front-matter/data zdrojů jako JSON-LD `@graph`;
+  DuckDB (`.mjs`) pipeline jako budoucí zdroj je pouze plán,
+  neimplementováno (konstituce §8).
 - `data/navigation.toml` — data-driven navigation, rendered by `base.html`
   as a Flowbite application shell (fixed navbar + a sidebar that's a real
   Flowbite Drawer, docked on desktop and off-canvas on mobile).

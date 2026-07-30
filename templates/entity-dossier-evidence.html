@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% import "macros/ui.html" as ui %}
+{% import "macros/table.html" as table %}
 
 {% block content %}
 <main class="mx-auto max-w-6xl px-6 py-12 text-white">
@@ -30,17 +31,12 @@
     {% endif %}
   {% endfor %}
 
-  <section aria-labelledby="claims-evidence-heading" class="mb-12">
-    <h2 id="claims-evidence-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/40">Tvrzení &rarr; podkládající zdroje ({{ claims | length }})</h2>
+  <section aria-labelledby="claims-evidence-table-caption" class="mb-12">
     {% if claims | length == 0 %}
+      <h2 id="claims-evidence-table-caption" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/40">Tvrzení &rarr; podkládající zdroje (0)</h2>
       {{ ui::empty_state(message="Žádné tvrzení v tomto rozsahu.") }}
     {% else %}
-    <div class="overflow-x-auto rounded-lg border border-white/10">
-      <table class="w-full text-left text-sm">
-        <thead class="border-b border-white/10 text-xs uppercase tracking-wide text-white/40">
-          <tr><th class="p-3">Tvrzení</th><th class="p-3">Stav</th><th class="p-3">Zdroje</th><th class="p-3">Nezávislé rodiny</th></tr>
-        </thead>
-        <tbody class="divide-y divide-white/5">
+    {{ table::advanced_table(id="claims-evidence-table", caption="Tvrzení → podkládající zdroje", record_type="claim", columns=["Tvrzení", "Stav", "Zdroje", "Nezávislé rodiny"], count=claims | length, searchable=true) }}
           {% for c in claims %}
           {% set_global family_ids = [] %}
           {% for s in c.extra.sources %}
@@ -62,10 +58,7 @@
             <td class="p-3 text-xs {% if family_ids | length < 2 and c.extra.status == 'status-corroborated' %}text-yellow-300{% else %}text-white/50{% endif %}">{{ family_ids | length }}</td>
           </tr>
           {% endfor %}
-        </tbody>
-      </table>
-    </div>
-    <p class="mt-2 text-xs text-white/40">Zvýrazněný počet rodin (žlutě) označuje tvrzení se statusem CORROBORATED podložené jen jednou zdrojovou rodinou — stojí za kontrolu, ne za automatické zpochybnění.</p>
+    {{ table::advanced_table_end(footer="Zvýrazněný počet rodin (žlutě) označuje tvrzení se statusem CORROBORATED podložené jen jednou zdrojovou rodinou — stojí za kontrolu, ne za automatické zpochybnění.") }}
     {% endif %}
   </section>
 

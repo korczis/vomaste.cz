@@ -1,0 +1,90 @@
+{#- Jednotná komponenta pro tabulární data — vlastní implementace podle
+    vzoru Flowbite „Advanced Tables" nad volným Tailwindem/Flowbite (žádný
+    kód z placených Flowbite Pro bloků). Každá <table> v šablonách jde
+    přes tuto dvojici maker; vynucuje scripts/lint/lint-component-reuse.mjs.
+
+    Slotový mechanismus: Tera 0.22 nemá call-bloky s tělem (macros/ui.html
+    proto také řeší vše parametry), takže obsahový slot je dvojice
+    otevírací/uzavírací makro — advanced_table() vypíše obal, hlavičku,
+    <table>, volitelný <thead> a otevře <tbody>; volající vypíše vlastní
+    řádky <tr> 1:1; advanced_table_end() tbody/table uzavře a vykreslí
+    volitelnou patičku. Patička je parametrem uzavíracího makra, protože
+    dvě nezávislá Tera makra nesdílejí stav a patička patří až za tbody.
+
+    Propojení s JSON-LD: obal nese data-record-type (např. "claim",
+    "source", "relation") — deklaruje, že řádky tabulky odpovídají
+    JSON-LD uzlům téhož typu, které stránka už vydává (viz
+    templates/partials/jsonld.html a scripts/dossier/verify-jsonld.mjs;
+    hodnoty odpovídají record_type ve front matter). Data pro tabulky
+    dnes pocházejí ze stejných front-matter/data zdrojů jako JSON-LD
+    @graph — tabulka i strukturovaná data jsou dvě reprezentace téhož
+    záznamu, nikdy dvě ručně udržované kopie. Plánovaný budoucí zdroj je
+    DuckDB (.mjs) pipeline nad stejnými záznamy; je to PLÁN, nikoli
+    existující schopnost — neimplementováno, nic v UI ani dokumentaci
+    nesmí tvrdit opak (konstituce §8).
+
+    Parametry advanced_table:
+      id          — id elementu <table>; hlavička dostává id "<id>-caption",
+                    použitelné pro aria-labelledby okolní <section>
+      caption     — text tabulky; vždy jako <caption class="sr-only">, a
+                    pokud se kreslí hlavička (count >= 0 nebo searchable),
+                    i jako viditelný nadpis
+      record_type — typ JSON-LD uzlu, jemuž řádky odpovídají ("" = tabulka
+                    bez protějšku ve strukturovaných datech, např. metadata)
+      columns     — pole popisků sloupců pro <thead>; "" (výchozí) = bez
+                    <thead> (tabulky typu klíč–hodnota si <th scope="row">
+                    píší v řádcích samy). Sentinel je řetězec ze stejného
+                    důvodu jako u count — Tera 0.22 neumí pole [] jako
+                    výchozí hodnotu parametru makra; `| length` funguje
+                    stejně na řetězci i poli, takže volající, kteří
+                    předávají skutečné pole, nejsou ovlivněni.
+      count       — počet záznamů pro badge v hlavičce; "" (výchozí) = bez
+                    badge. Sentinel je řetězec, ne -1: Tera 0.22 neumí
+                    záporné číslo jako výchozí hodnotu parametru makra
+                    ("expected an integer, a float, a string, or `true`/
+                    `false`" — unární minus tam není literál).
+      searchable  — true přidá vyhledávací pole napojené na Alpine
+                    komponentu advancedTable (assets/js/modules/
+                    table-filter.js, stejný vzor jako claims-filter.js);
+                    false = žádný JS
+      extra_class — volitelné další utility třídy obalu (např. "mb-8")
+-#}
+{%- macro advanced_table(id, caption, record_type="", columns="", count="", searchable=false, extra_class="") -%}
+<div class="relative overflow-x-auto rounded-lg border border-white/10 bg-white/[0.03]{% if extra_class %} {{ extra_class }}{% endif %}"{% if record_type %} data-record-type="{{ record_type }}"{% endif %}{% if searchable %} x-data="advancedTable()"{% endif %}>
+  {%- if count != "" or searchable %}
+  <div class="flex flex-wrap items-center justify-between gap-3 border-b border-white/10 px-3 py-2.5">
+    <h2 id="{{ id }}-caption" class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-white/40">
+      {{ caption }}
+      {%- if count != "" %}
+      <span class="rounded-full bg-white/5 px-2 py-0.5 font-mono text-[0.65rem] normal-case text-white/50"{% if searchable %} x-text="visible + ' / ' + total" aria-live="polite"{% endif %}>{{ count }}</span>
+      {%- endif %}
+    </h2>
+    {%- if searchable %}
+    <label class="flex items-center gap-2" x-cloak>
+      <span class="sr-only">Hledat v tabulce: {{ caption }}</span>
+      <input type="search" x-model="search" @input="apply()" class="src-filter-input w-44" placeholder="Hledat v tabulce…" autocomplete="off">
+    </label>
+    {%- endif %}
+  </div>
+  {%- endif %}
+  <table id="{{ id }}" class="w-full text-left text-sm">
+    <caption class="sr-only">{{ caption }}</caption>
+    {%- if columns | length > 0 %}
+    <thead class="bg-white/5 text-xs uppercase tracking-wide text-white/50">
+      <tr>{% for col in columns %}<th scope="col" class="p-3">{{ col }}</th>{% endfor %}</tr>
+    </thead>
+    {%- endif %}
+    <tbody class="divide-y divide-white/5 [&>tr:nth-child(odd)]:bg-white/[0.02] [&>tr:hover]:bg-white/5">
+{%- endmacro advanced_table -%}
+
+{#- Uzavírací polovina slotu. `footer` je volitelný text patičky (např.
+    původ dat) — parametr je zde, ne na advanced_table, protože se
+    vykresluje až za tbody a makra nesdílejí stav. -#}
+{%- macro advanced_table_end(footer="") -%}
+    </tbody>
+  </table>
+  {%- if footer %}
+  <p class="border-t border-white/10 px-3 py-2 text-xs text-white/40">{{ footer }}</p>
+  {%- endif %}
+</div>
+{%- endmacro advanced_table_end -%}

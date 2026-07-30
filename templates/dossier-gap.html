@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% import "macros/ui.html" as ui %}
+{% import "macros/table.html" as table %}
 
 {% block content %}
 <main class="mx-auto max-w-2xl px-6 py-12 text-white">
@@ -10,16 +11,15 @@
     page.extra.gap_id,
   ]) }}
 
-  <table class="mb-8 w-full text-left text-sm dossier-prose">
-    <tbody class="divide-y divide-white/10">
-      <tr><th class="w-40 py-2 pr-4 align-top text-white/50">Priorita</th><td class="py-2">
+  {{ table::advanced_table(id="gap-meta", caption="Metadata otevřené otázky " ~ page.extra.gap_id, extra_class="mb-8") }}
+      <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Priorita</th><td class="p-3">
         <span class="gap-priority-badge {% if page.extra.priority == 'vysoká' %}gap-priority-high{% else %}gap-priority-low{% endif %}">{{ page.extra.priority }}</span>
       </td></tr>
       {% if page.extra.checked %}
-      <tr><th class="w-40 py-2 pr-4 align-top text-white/50">Naposledy ověřeno</th><td class="py-2">{{ page.extra.checked }}</td></tr>
+      <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Naposledy ověřeno</th><td class="p-3">{{ page.extra.checked }}</td></tr>
       {% endif %}
       {% if page.extra.claims %}
-      <tr><th class="w-40 py-2 pr-4 align-top text-white/50">Související tvrzení</th><td class="py-2">
+      <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Související tvrzení</th><td class="p-3">
         {% set tvrzeni = get_section(path="dossiers/" ~ dossier_slug ~ "/claims/_index.md") %}
         {% for c in page.extra.claims %}
           {% set clm_page = tvrzeni.pages | filter(attribute="extra.clm_id", value=c) | first %}
@@ -31,8 +31,7 @@
         {% endfor %}
       </td></tr>
       {% endif %}
-    </tbody>
-  </table>
+  {{ table::advanced_table_end() }}
 
   <article class="dossier-prose">
     {{ page.content | safe }}
