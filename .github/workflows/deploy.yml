@@ -33,6 +33,9 @@ jobs:
       - name: Run script regression tests
         run: npm run test
 
+      - name: Build government roster
+        run: npm run build:government-roster
+
       - name: Validate dossier registry
         run: npm run validate:dossier
 
@@ -72,6 +75,14 @@ jobs:
       - name: Build search index
         run: npm run build:search-index
 
+      # Musí běžet před `zola build`: templates/data-console.html čte
+      # static/data/manifest.json a soubory jsou generované, ne verzované.
+      - name: Build registry data exports
+        run: npm run build:data-exports
+
+      - name: Validate graph coverage
+        run: npm run validate:graph-coverage
+
       - name: Generate authorization-candidates report (not published)
         run: npm run generate:candidates
 
@@ -97,6 +108,15 @@ jobs:
 
       - name: Verify anchors
         run: npm run verify:anchors
+
+      # Poslední tři brány z `npm run build`, které v CI chyběly — CI má
+      # spouštět přesně tutéž sekvenci (AGENTS.md), jinak je zelený lokální
+      # build slabší záruka než tvrdí.
+      - name: Verify JSON-LD
+        run: npm run verify:jsonld
+
+      - name: Verify full-page doctrine
+        run: npm run verify:full-pages
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
