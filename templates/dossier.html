@@ -151,7 +151,7 @@
         <span aria-hidden="true" class="text-white/30">&rarr;</span>
         {% if target_entity %}<a href="{{ target_entity.permalink | safe }}" class="text-white/80 no-underline hover:underline">{{ target_entity.title }}</a>{% endif %}
         <span class="text-white/30">(
-          {%- if r.extra.status == "corroborated" %}fakt{% elif r.extra.status == "disputed" %}sporné{% elif r.extra.status == "quote" %}citace{% else %}kontextové{% endif -%}
+          {{- ui::relation_status(status=r.extra.status, long=false) -}}
           {%- if r.extra.claims %}, {% for c in r.extra.claims %}{% set clm_page = claim_section.pages | filter(attribute="extra.clm_id", value=c) | first %}{% if clm_page %}<a href="{{ clm_page.permalink | safe }}" class="text-[#f3e5c0]/70 no-underline hover:underline">{{ c }}</a>{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}{% endif -%}
         )</span>
       </li>

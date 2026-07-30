@@ -141,8 +141,29 @@ type = "company"
 label = "GMR GAS UA LLC (Kyjev)"
 depth = 1
 cluster = "financni-vazby"
-claims = ["CLM-14"]
-sources = ["SRC-17"]
+summary = "Kyjevská firma, v níž měl Petr Macinka nepřiznaný 20% podíl; podle citovaného zpravodajství ukrajinská pobočka české GMR GAS s.r.o. Stav a struktura firmy nejsou z primárního ukrajinského registru ověřeny (GAP-07)."
+claims = ["CLM-14", "CLM-15", "CLM-47"]
+sources = ["SRC-17", "SRC-18"]
+
+[[nodes]]
+id = "gmrgas-cz"
+type = "company"
+label = "GMR GAS s.r.o. (Brno)"
+depth = 2
+cluster = "financni-vazby"
+summary = "Česká matka (IČO 28274318), kterou SRC-17 popisuje jen slovně; totožnost doložena rejstříkovým záznamem ARES (SRC-55). Do ledna 2015 KADAR s.r.o."
+claims = ["CLM-46", "CLM-47", "CLM-48"]
+sources = ["SRC-17", "SRC-55"]
+
+[[nodes]]
+id = "vencalek"
+type = "person"
+label = "Petr Vencálek (vlastník GMR GAS s.r.o.)"
+depth = 3
+cluster = "financni-vazby"
+summary = "Jediný společník (100 %) a jednatel české GMR GAS s.r.o. Záznam zveřejněné vlastnické vazby, ne subjekt dossieru a ne veřejný funkcionář."
+claims = ["CLM-48"]
+sources = ["SRC-17", "SRC-55"]
 
 [[nodes]]
 id = "klubmotoristu"
@@ -332,7 +353,7 @@ source = "turek"
 target = "nehoda2026"
 relation = "ASSOCIATED_WITH_EVENT"
 label = "subjekt"
-status = "corroborated"
+status = "single"
 claims = ["CLM-10"]
 sources = ["SRC-02"]
 
@@ -367,12 +388,32 @@ claims = ["CLM-14"]
 sources = ["SRC-17", "SRC-18"]
 
 [[edges]]
+id = "edge-gmrgascz-gmrgas"
+source = "gmrgas-cz"
+target = "gmrgas"
+relation = "HOLDS_INTEREST_IN"
+label = "podíl v ukrajinské pobočce"
+status = "single"
+claims = ["CLM-47"]
+sources = ["SRC-17"]
+
+[[edges]]
+id = "edge-vencalek-gmrgascz"
+source = "vencalek"
+target = "gmrgas-cz"
+relation = "HOLDS_INTEREST_IN"
+label = "jediný společník a jednatel"
+status = "corroborated"
+claims = ["CLM-48"]
+sources = ["SRC-17", "SRC-55"]
+
+[[edges]]
 id = "edge-macinka-klubmotoristu"
 source = "macinka"
 target = "klubmotoristu"
 relation = "HOLDS_ROLE"
 label = "statutární orgán"
-status = "corroborated"
+status = "single"
 claims = ["CLM-22"]
 sources = ["SRC-24"]
 
@@ -382,7 +423,7 @@ source = "klubmotoristu"
 target = "motoriste"
 relation = "DONATED_TO"
 label = "dar 800 000 Kč (2024)"
-status = "corroborated"
+status = "single"
 claims = ["CLM-23"]
 sources = ["SRC-26"]
 
@@ -482,7 +523,7 @@ source = "nemocnice-homolce"
 target = "nehoda2026"
 relation = "ASSOCIATED_WITH_EVENT"
 label = "provozovatel vozidla záchranné služby"
-status = "corroborated"
+status = "single"
 claims = ["CLM-18"]
 sources = ["SRC-20"]
 
@@ -522,7 +563,7 @@ source = "turek"
 target = "zapper-club"
 relation = "MEMBER_OF"
 label = "společník 2016–2023"
-status = "corroborated"
+status = "single"
 claims = ["CLM-20"]
 sources = ["SRC-23"]
 
@@ -607,10 +648,10 @@ gaps = []
 id = "financni-vazby"
 label = "Majetkové, podnikatelské a finanční vazby"
 description = "Firemní/spolkové vazby a dárcovské vztahy obou subjektů, doložené rejstříkovými daty (Hlídač státu) a investigativní žurnalistikou."
-claims = ["CLM-14", "CLM-15", "CLM-20", "CLM-21", "CLM-22", "CLM-23", "CLM-36", "CLM-37"]
-sources = ["SRC-17", "SRC-18", "SRC-23", "SRC-24", "SRC-26", "SRC-41", "SRC-42"]
-nodes = ["macinka", "turek", "gmrgas", "klubmotoristu", "chlad"]
-gaps = ["GAP-04", "GAP-05"]
+claims = ["CLM-14", "CLM-15", "CLM-20", "CLM-21", "CLM-22", "CLM-23", "CLM-36", "CLM-37", "CLM-46", "CLM-47", "CLM-48"]
+sources = ["SRC-17", "SRC-18", "SRC-23", "SRC-24", "SRC-26", "SRC-41", "SRC-42", "SRC-55"]
+nodes = ["macinka", "turek", "gmrgas", "gmrgas-cz", "vencalek", "klubmotoristu", "chlad"]
+gaps = ["GAP-04", "GAP-05", "GAP-07"]
 
 [[clusters]]
 id = "dalsi-kontroverze"

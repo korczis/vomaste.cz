@@ -26,9 +26,7 @@
   </p>
 
   <p class="mb-6">
-    <span class="status-badge {% if page.extra.status == "corroborated" %}status-corroborated{% elif page.extra.status == "disputed" %}status-disputed{% elif page.extra.status == "quote" %}status-quote{% else %}status-contextual{% endif %}">
-      {%- if page.extra.status == "corroborated" %}FAKT{% elif page.extra.status == "disputed" %}SPORNÉ{% elif page.extra.status == "quote" %}CITACE{% else %}KONTEXTOVÉ{% endif -%}
-    </span>
+    {{ ui::relation_status(status=page.extra.status) }}
   </p>
 
   {{ table::advanced_table(id="rel-meta", caption="Metadata vztahu " ~ page.extra.rel_id, extra_class="mb-8") }}

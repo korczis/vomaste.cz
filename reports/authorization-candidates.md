@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 28 context entities across 19 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 38 context entities across 11 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## Agrofert (`agrofert`)
 
@@ -33,6 +33,18 @@ Generated from 28 context entities across 19 dossier(s). Regenerate with `npm ru
 - Sources: SRC-01 (1 independent source family)
 - Relations: 
   - edge-babis-capihnizdo (babis -> capi-hnizdo, "obžalovaný; stíhání přerušeno po nevydání Sněmovnou — procesní krok, ne rozhodnutí o vině", dossier: andrej-babis)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Igor Červený (`cerveny`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: macinka-turek, petr-macinka
+- Claims: CLM-43
+- Sources: SRC-49, SRC-50 (2 independent source families)
+- Relations: 
+  - edge-cerveny-mzp2026 (cerveny -> mzp2026, "jmenován ministrem (nahradil Macinku, 23. 2. 2026)", dossier: macinka-turek)
+  - edge-macinka-cerveny (macinka -> cerveny, "nahrazen ve funkci ministra ŽP", dossier: macinka-turek)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Richard Chlad (sponzor) (`chlad`)
@@ -62,10 +74,23 @@ Generated from 28 context entities across 19 dossier(s). Regenerate with `npm ru
 - Type: company
 - Status: not_authorized
 - Appears in: macinka-turek, petr-macinka
-- Claims: CLM-14
-- Sources: SRC-17 (1 independent source family)
+- Claims: CLM-14, CLM-15, CLM-47
+- Sources: SRC-17, SRC-18 (2 independent source families)
 - Relations: 
+  - edge-gmrgascz-gmrgas (gmrgas-cz -> gmrgas, "podíl v ukrajinské pobočce", dossier: macinka-turek)
   - edge-macinka-gmrgas (macinka -> gmrgas, "nepřiznaný 20% podíl", dossier: macinka-turek)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## GMR GAS s.r.o. (Brno) (`gmrgas-cz`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: macinka-turek, petr-macinka
+- Claims: CLM-46, CLM-47, CLM-48
+- Sources: SRC-17, SRC-55 (2 independent source families)
+- Relations: 
+  - edge-gmrgascz-gmrgas (gmrgas-cz -> gmrgas, "podíl v ukrajinské pobočce", dossier: macinka-turek)
+  - edge-vencalek-gmrgascz (vencalek -> gmrgas-cz, "jediný společník a jednatel", dossier: macinka-turek)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Zmocněnec pro Green Deal (`greendeal`)
@@ -77,6 +102,16 @@ Generated from 28 context entities across 19 dossier(s). Regenerate with `npm ru
 - Sources: SRC-06 (1 independent source family)
 - Relations: 
   - edge-turek-greendeal (turek -> greendeal, "zmocněnec (do nehody)", dossier: macinka-turek)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Karel Havlíček (1. místopředseda vlády a ministr průmyslu a obchodu) (`havlicek`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Kauza 2024: fotografie a svícny (`kauza2024`)
@@ -140,6 +175,16 @@ Generated from 28 context entities across 19 dossier(s). Regenerate with `npm ru
   - edge-macinka-motoriste (macinka -> motoriste, "předseda", dossier: macinka-turek)
   - edge-motoriste-vlada (motoriste -> vlada, "člen koalice", dossier: macinka-turek)
   - edge-turek-motoriste (turek -> motoriste, "poslanec za", dossier: macinka-turek)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Zuzana Mrázová (ministryně pro místní rozvoj) (`mrazova`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Ministerstvo zdravotnictví (`mzdrav`)
@@ -227,6 +272,16 @@ Generated from 28 context entities across 19 dossier(s). Regenerate with `npm ru
   - edge-turek-pavel (turek -> pavel, "hrozil žalobou (1/2026), nakonec nepodal (7/2026)", dossier: macinka-turek)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Robert Plaga (ministr školství, mládeže a tělovýchovy) (`plaga`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Národní finanční prokuratura (PNF, Francie) (`pnf`)
 
 - Type: public_institution
@@ -260,6 +315,16 @@ Generated from 28 context entities across 19 dossier(s). Regenerate with `npm ru
 - Sources: SRC-02 (1 independent source family)
 - Relations: 
   - edge-rsvp-agrofert (rsvp-trust -> agrofert, "drží akcie Agrofertu (vloženy 2/2026)", dossier: andrej-babis)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Martin Šebestyán (ministr zemědělství) (`sebestyan`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## SPD (`spd`)
@@ -306,6 +371,16 @@ Generated from 28 context entities across 19 dossier(s). Regenerate with `npm ru
   - edge-zapperclub-szpi (zapper-club -> szpi, "odebrání certifikátu", dossier: macinka-turek)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Jeroným Tejc (ministr spravedlnosti) (`tejc`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Trestní oznámení (2025) (`trestniozn`)
 
 - Type: legal_or_administrative_process
@@ -319,11 +394,22 @@ Generated from 28 context entities across 19 dossier(s). Regenerate with `npm ru
   - edge-turek-trestniozn (turek -> trestniozn, "subjekt (oznámení 6/2025, odloženo pro promlčení 5/2026)", dossier: macinka-turek)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Petr Vencálek (vlastník GMR GAS s.r.o.) (`vencalek`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: macinka-turek, petr-macinka
+- Claims: CLM-48
+- Sources: SRC-17, SRC-55 (2 independent source families)
+- Relations: 
+  - edge-vencalek-gmrgascz (vencalek -> gmrgas-cz, "jediný společník a jednatel", dossier: macinka-turek)
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Vláda ČR (`vlada`)
 
 - Type: public_institution
 - Status: not_authorized
-- Appears in: macinka-turek, petr-macinka, filip-turek, oto-klempir, alena-schillerova, ales-juchelka, ivan-bednarik, boris-stastny, andrej-babis, karel-havlicek, jaromir-zuna, jeronym-tejc, zuzana-mrazova, adam-vojtech, igor-cerveny, robert-plaga, martin-sebestyan
+- Appears in: macinka-turek, petr-macinka, filip-turek, oto-klempir, alena-schillerova, ales-juchelka, ivan-bednarik, boris-stastny, andrej-babis
 - Claims: CLM-03, CLM-01
 - Sources: SRC-11, SRC-01 (2 independent source families)
 - Relations: 
@@ -335,14 +421,16 @@ Generated from 28 context entities across 19 dossier(s). Regenerate with `npm ru
   - edge-bednarik-vlada (bednarik -> vlada, "ministr dopravy", dossier: ivan-bednarik)
   - edge-stastny-vlada (stastny -> vlada, "ministr pro sport, prevenci a zdraví", dossier: boris-stastny)
   - edge-babis-vlada (babis -> vlada, "předseda vlády", dossier: andrej-babis)
-  - edge-havlicek-vlada (havlicek -> vlada, "1. místopředseda vlády a ministr průmyslu a obchodu", dossier: karel-havlicek)
-  - edge-zuna-vlada (zuna -> vlada, "místopředseda vlády a ministr obrany", dossier: jaromir-zuna)
-  - edge-tejc-vlada (tejc -> vlada, "ministr spravedlnosti", dossier: jeronym-tejc)
-  - edge-mrazova-vlada (mrazova -> vlada, "ministryně pro místní rozvoj", dossier: zuzana-mrazova)
-  - edge-vojtech-vlada (vojtech -> vlada, "ministr zdravotnictví", dossier: adam-vojtech)
-  - edge-cerveny-vlada (cerveny -> vlada, "ministr životního prostředí", dossier: igor-cerveny)
-  - edge-plaga-vlada (plaga -> vlada, "ministr školství, mládeže a tělovýchovy", dossier: robert-plaga)
-  - edge-sebestyan-vlada (sebestyan -> vlada, "ministr zemědělství", dossier: martin-sebestyan)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Adam Vojtěch (ministr zdravotnictví) (`vojtech`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Zapper-Club s.r.o. (`zapper-club`)
@@ -356,4 +444,14 @@ Generated from 28 context entities across 19 dossier(s). Regenerate with `npm ru
   - edge-turek-zapperclub (turek -> zapper-club, "společník 2016–2023", dossier: macinka-turek)
   - edge-zapperclub-mzdrav (zapper-club -> mzdrav, "varování před přístrojem zapper", dossier: macinka-turek)
   - edge-zapperclub-szpi (zapper-club -> szpi, "odebrání certifikátu", dossier: macinka-turek)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Jaromír Zůna (místopředseda vlády a ministr obrany) (`zuna`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier

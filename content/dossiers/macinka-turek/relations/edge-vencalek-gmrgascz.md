@@ -1,0 +1,29 @@
++++
+title = "Petr Vencálek — jediný společník a jednatel — GMR GAS s.r.o. (Brno)"
+template = "dossier-relation.html"
+weight = 33
+
+[extra]
+dossier = "macinka-turek"
+record_type = "relation"
+rel_id = "edge-vencalek-gmrgascz"
+source = "vencalek"
+target = "gmrgas-cz"
+relation_type = "HOLDS_INTEREST_IN"
+label = "jediný společník a jednatel"
+status = "corroborated"
+claims = ["CLM-48"]
+sources = ["SRC-17", "SRC-55"]
+subjects = ["macinka"]
++++
+
+Tato stránka je kanonický záznam vztahu edge-vencalek-gmrgascz — typ
+vztahu, podporující tvrzení a zdroje v tabulce výše jsou úplné. Stav FAKT
+stojí na dvou nezávislých zdrojích různé povahy: investigativní redakce
+(SRC-17) a primární státní registr (SRC-55).
+
+Jde o **záznam zveřejněné vlastnické vazby, ne o obvinění**. Petr Vencálek
+není subjektem tohoto dossieru ani veřejným funkcionářem; vystupuje tu jen
+proto, že ho citované zpravodajství jmenuje jako majitele firmy, která je
+podle téhož zdroje spoluvlastníkem ukrajinské GMR GAS UA LLC. Hlavní
+stránka dossieru vykresluje interaktivní graf ze stejných dat.

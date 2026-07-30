@@ -67,6 +67,32 @@
 </footer>
 {%- endmacro back_link_footer -%}
 
+{#- Evidentiary-status badge for a GRAPH EDGE (a relation), whose status
+    vocabulary is its own — corroborated|single|disputed|quote|contextual,
+    see ALLOWED_EDGE_STATUS in scripts/dossier/validate-graph.mjs — and is
+    NOT the claim registry's `status-*` classes carried in front matter.
+    This lived as the same four-branch ternary copy-pasted into
+    dossier.html, dossier-relation.html, dossier-relations-index.html and
+    entity-dossier-relations.html; adding a status meant editing four
+    copies and silently getting "KONTEXTOVÉ" wherever one was missed.
+
+    `long=false` renders the inline lowercase form used in the graph's
+    relation list; the default renders the badge used in registry tables. -#}
+
+{%- macro relation_status(status, long=true) -%}
+{%- if status == "corroborated" %}{% set cls = "status-corroborated" %}{% set label = "FAKT" %}{% set inline = "fakt" %}
+{%- elif status == "single" %}{% set cls = "status-single" %}{% set label = "1 ZDROJ" %}{% set inline = "1 zdroj" %}
+{%- elif status == "disputed" %}{% set cls = "status-disputed" %}{% set label = "SPORNÉ" %}{% set inline = "sporné" %}
+{%- elif status == "quote" %}{% set cls = "status-quote" %}{% set label = "CITACE" %}{% set inline = "citace" %}
+{%- else %}{% set cls = "status-contextual" %}{% set label = "KONTEXTOVÉ" %}{% set inline = "kontextové" %}
+{%- endif -%}
+{%- if long -%}
+<span class="status-badge {{ cls }}">{{ label }}</span>
+{%- else -%}
+{{ inline }}
+{%- endif -%}
+{%- endmacro relation_status -%}
+
 {#- Empty state for a filtered/empty registry list. `message` should say
     why it's empty (no results vs. genuinely nothing yet), never a bare
     "nothing here" that reads as a bug. -#}

@@ -25,7 +25,7 @@ import Sigma from "sigma";
 import forceAtlas2 from "graphology-layout-forceatlas2";
 import { resizeHandlers } from "./fullscreen.js";
 
-const STATUS_COLOR = { corroborated: "#4ade80", disputed: "#facc15", quote: "#93c5fd", contextual: "rgba(255,255,255,0.35)" };
+const STATUS_COLOR = { corroborated: "#4ade80", single: "#fdba74", disputed: "#facc15", quote: "#93c5fd", contextual: "rgba(255,255,255,0.35)" };
 // Plná registrová vrstva má vlastní typy uzlů (záznamy, ne entity) — barvy
 // kopírují to, co už používají štítky stavů a registry na stránkách.
 const RECORD_COLOR = {

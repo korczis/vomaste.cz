@@ -1,6 +1,6 @@
 +++
 title = "Registr zdrojů"
-description = "Všech 54 veřejných zdrojů citovaných v dossieru o Petru Macinkovi a Filipu Turkovi, každý s vlastní detailní stránkou."
+description = "Veřejné zdroje citované v dossieru o Petru Macinkovi a Filipu Turkovi, každý s vlastní detailní stránkou."
 template = "dossier-sources-index.html"
 sort_by = "weight"
 aliases = ["/dossier/zdroje/"]
@@ -51,6 +51,11 @@ vydavatelů — dvě nezávislá potvrzení.
 [SRC-54](@/dossiers/macinka-turek/sources/src-54.md) (Echo24) jsou dvě samostatné redakce,
 každá s vlastní citací téhož státního zástupce — dvě nezávislá potvrzení
 CLM-27.
+[SRC-55](@/dossiers/macinka-turek/sources/src-55.md) je dotaz na primární
+státní registr (ARES, Ministerstvo financí), tedy zdroj jiné povahy než
+redakce — se SRC-17 (Investigace.cz) tvoří dvě nezávislá potvrzení CLM-48.
+**Není** ve zdrojové rodině s Hlídačem státu (SRC-23–27, 41): ten
+rejstříková data strojově agreguje, tady jde o dotaz na registr samotný.
 
 **Úplný přehled vydavatelských rodin** (zdroje od téhož vydavatele se
 nikdy nepočítají jako vzájemné nezávislé potvrzení): Deník.cz / Vltava

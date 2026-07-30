@@ -47,9 +47,7 @@
       <a href="{{ r.permalink | safe }}" class="id-chip text-[#f3e5c0] no-underline hover:underline">{{ r.extra.label }}</a>
       <span aria-hidden="true" class="text-white/30">&rarr;</span>
       {% if target_entity %}<a href="{{ target_entity.permalink | safe }}" class="inline-flex min-h-6 items-center font-medium text-white no-underline hover:underline">{{ target_entity.title }}</a>{% else %}<span class="text-white/50">{{ r.extra.target }}</span>{% endif %}
-      <span class="status-badge {% if r.extra.status == "corroborated" %}status-corroborated{% elif r.extra.status == "disputed" %}status-disputed{% elif r.extra.status == "quote" %}status-quote{% else %}status-contextual{% endif %}">
-        {%- if r.extra.status == "corroborated" %}FAKT{% elif r.extra.status == "disputed" %}SPORNÉ{% elif r.extra.status == "quote" %}CITACE{% else %}KONTEXTOVÉ{% endif -%}
-      </span>
+      {{ ui::relation_status(status=r.extra.status) }}
       {% if r.extra.subjects | length > 1 %}<span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.6rem] uppercase tracking-wide text-white/40 ml-auto">sdílené</span>{% endif %}
     </article>
     {% endfor %}
