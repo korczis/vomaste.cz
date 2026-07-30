@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 34 context entities across 3 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 33 context entities across 4 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## Andrej Babiš (premiér) (`babis`)
 
@@ -130,16 +130,6 @@ Generated from 34 context entities across 3 dossier(s). Regenerate with `npm run
 - Relations: 
   - edge-kauza2025-policie (kauza2025 -> policie, "prověřování výroků i oznámení na Deník N odloženo (28. 7. 2026)", dossier: macinka-turek)
   - edge-turek-kauza2025 (turek -> kauza2025, "subjekt", dossier: macinka-turek)
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Oto Klempíř (ministr kultury) (`klempir`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: —
-- Claims: none
-- Sources: none (0 independent source families)
-- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Klub motoristů, z.s. (`klubmotoristu`)
@@ -354,12 +344,13 @@ Generated from 34 context entities across 3 dossier(s). Regenerate with `npm run
 
 - Type: public_institution
 - Status: not_authorized
-- Appears in: macinka-turek, petr-macinka, filip-turek
+- Appears in: macinka-turek, petr-macinka, filip-turek, oto-klempir
 - Claims: CLM-03
 - Sources: SRC-11 (1 independent source family)
 - Relations: 
   - edge-babis-vlada (babis -> vlada, "premiér", dossier: macinka-turek)
   - edge-motoriste-vlada (motoriste -> vlada, "člen koalice", dossier: macinka-turek)
+  - edge-klempir-vlada (klempir -> vlada, "ministr kultury", dossier: oto-klempir)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Adam Vojtěch (ministr zdravotnictví) (`vojtech`)
