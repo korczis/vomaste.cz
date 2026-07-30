@@ -1,8 +1,8 @@
 +++
-title = "Vláda (ANO + SPD + Motoristé)"
+title = "Vláda ČR"
 template = "entity.html"
-weight = 4
-aliases = ["/dossiers/macinka-turek/entities/vlada/"]
+weight = 2
+aliases = ["/dossiers/alena-schillerova/entities/vlada/"]
 
 [extra]
 record_type = "entity"
@@ -13,10 +13,12 @@ subject = false
 publication_role = "context"
 dossier_enabled = false
 dossier_status = "not_authorized"
-coverage_state = "contextual"
+coverage_state = "discovered"
 discovered_at = "2026-07-29"
-discovered_via = ["edge-motoriste-vlada", "edge-babis-vlada"]
-dossiers = ["macinka-turek", "petr-macinka", "filip-turek", "oto-klempir"]
-claims = ["CLM-03"]
-sources = ["SRC-11"]
+discovered_via = ["edge-schillerova-vlada"]
+dossiers = ["macinka-turek", "petr-macinka", "filip-turek", "oto-klempir", "alena-schillerova"]
+claims = ["CLM-03", "CLM-01"]
+sources = ["SRC-11", "SRC-01"]
 +++
+
+Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext.

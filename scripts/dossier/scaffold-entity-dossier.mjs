@@ -75,9 +75,33 @@ const agentsPath = path.join(ROOT, "AGENTS.md");
 const agentsText = readFileSync(agentsPath, "utf8");
 const headingRe = /^### Authorized subject: (.+?)(?: \(on the record\))?\s*$/gm;
 const authorizedTitles = [...agentsText.matchAll(headingRe)].map((m) => m[1].trim());
-const isAuthorized = authorizedTitles.some(
+let isAuthorized = authorizedTitles.some(
   (t) => t.toLowerCase() === title.trim().toLowerCase(),
 );
+
+// Second accepted proof, equally on-record: a structured record in
+// data/authorizations.toml naming this subject id. The heading regex above
+// only understands the single-subject form ("### Authorized subject: X");
+// an entry authorizing several people at once is headed differently
+// ("### Authorized subjects, <date>: …") and lists them in prose, so
+// regexing headings alone would refuse subjects that ARE authorized.
+// authorizations.toml is the machine-readable transcription of the same
+// log (see its header) and validate-authorization.mjs checks the two
+// against each other, so trusting it here does not widen what counts as
+// authorization — it just stops the gate from missing half of it.
+// Pass --subject=<entity_id> to use this path.
+if (!isAuthorized && args.subject) {
+  const authPath = path.join(ROOT, "data", "authorizations.toml");
+  if (existsSync(authPath)) {
+    const authText = readFileSync(authPath, "utf8");
+    for (const block of authText.split(/\n\[\[authorizations\]\]/).slice(1)) {
+      const m = block.match(/^subjects\s*=\s*\[([^\]]*)\]/m);
+      if (!m) continue;
+      const ids = [...m[1].matchAll(/"((?:[^"\\]|\\.)*)"/g)].map((x) => x[1]);
+      if (ids.includes(args.subject)) { isAuthorized = true; break; }
+    }
+  }
+}
 
 if (!isAuthorized) {
   console.error(

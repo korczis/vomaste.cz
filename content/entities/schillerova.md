@@ -1,34 +1,27 @@
 +++
-title = "Alena Schillerová (místopředsedkyně vlády a ministryně financí)"
-description = "Alena Schillerová — místopředsedkyně vlády a ministryně financí (Třetí vláda Andreje Babiše, stav k 2026-07-30). Kontextový záznam veřejné funkce z oficiálního zdroje, ne dossier."
+title = "Alena Schillerová"
 template = "entity.html"
-weight = 26
+weight = 1
+aliases = ["/dossiers/alena-schillerova/entities/schillerova/"]
 
 [extra]
 record_type = "entity"
 entity_id = "schillerova"
 entity_type = "person"
-subject = false
-publication_role = "context"
-dossier_enabled = false
-dossier_status = "not_authorized"
-coverage_state = "referenced"
+depth = 0
+subject = true
+publication_role = "subject"
+dossier_enabled = true
+dossier_status = "authorized"
+coverage_state = "full"
 discovered_at = "2026-07-30"
-discovered_via = ["government-roster-2026-07-30"]
-dossiers = []
-claims = []
-sources = []
+discovered_via = ["edge-schillerova-vlada"]
+dossiers = ["alena-schillerova"]
+claims = ["CLM-01", "CLM-02"]
+sources = ["SRC-01"]
 government_office = "místopředsedkyně vlády a ministryně financí"
 government_party = "ANO"
 government_snapshot = "2026-07-30"
 +++
 
-Kontextová entita ze složení vlády — uvedena proto, že podle oficiálního
-seznamu členů vlády (Třetí vláda Andreje Babiše, ověřeno 2026-07-30 na
-<https://vlada.gov.cz/cz/vlada/clenove-vlady/>) zastává veřejnou funkci **místopředsedkyně vlády a ministryně financí**.
-
-Tato stránka **není dossier**. Zaznamenává výhradně veřejnou funkci z
-oficiálního zdroje — žádné tvrzení, obvinění, kauzu ani hodnocení. Rozsah
-pokrytí kterékoli reálné osoby na tomto webu určuje výhradně append-only
-autorizační log v `AGENTS.md`; přítomnost v tomto seznamu na něm nic
-nemění a sama o sobě nikdy nevede k dossieru.
+Hlavní subjekt autorizovaného dossieru. Viz plné znění a kontext v [hlavním přehledu](@/dossiers/alena-schillerova/_index.md#kdo).

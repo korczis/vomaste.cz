@@ -42,6 +42,16 @@ canonical_dossier = "oto-klempir"
 show_in_primary_navigation = true
 
 [[dossiers]]
+# Fourth authorized subject (AGENTS.md, "Authorized subjects, 2026-07-30:
+# five further members of the government", AUTH-2026-07-30-B).
+slug = "alena-schillerova"
+title = "Alena Schillerová"
+dossier_type = "entity"
+subject = "schillerova"
+canonical_dossier = "alena-schillerova"
+show_in_primary_navigation = true
+
+[[dossiers]]
 slug = "macinka-turek"
 title = "Petr Macinka a Filip Turek"
 dossier_type = "aggregate"

@@ -50,6 +50,11 @@ obhajoba přesunu financování ČT a ČRo do státního rozpočtu, a konkrétn�
 resortní kroky podle investigativního textu týdeníku RESPEKT z 19. 7.
 2026. Nic dalšího tento dossier nepokrývá.
 
+## Kdo to je a čím je pokryt {#kdo}
+
+Základní identifikace subjektu a rozsah pokrytí jsou popsané v úvodu této
+stránky výše.
+
 ## Registr tvrzení {#registr-tvrzeni}
 
 | ID | Tvrzení | Stav | Zdroje |

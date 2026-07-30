@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 33 context entities across 4 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 32 context entities across 5 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## Andrej Babiš (premiér) (`babis`)
 
@@ -265,16 +265,6 @@ Generated from 33 context entities across 4 dossier(s). Regenerate with `npm run
   - edge-trestniozn-policie (trestniozn -> policie, "odloženo policií pro promlčení — procesní krok, ne rozhodnutí o vině; nepravomocné", dossier: macinka-turek)
 - Missing: explicit owner authorization to promote this to its own dossier
 
-## Alena Schillerová (místopředsedkyně vlády a ministryně financí) (`schillerova`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: —
-- Claims: none
-- Sources: none (0 independent source families)
-- Relations: none
-- Missing: explicit owner authorization to promote this to its own dossier
-
 ## Martin Šebestyán (ministr zemědělství) (`sebestyan`)
 
 - Type: person
@@ -340,17 +330,18 @@ Generated from 33 context entities across 4 dossier(s). Regenerate with `npm run
   - edge-turek-trestniozn (turek -> trestniozn, "subjekt (oznámení 6/2025, odloženo pro promlčení 5/2026)", dossier: macinka-turek)
 - Missing: explicit owner authorization to promote this to its own dossier
 
-## Vláda (ANO + SPD + Motoristé) (`vlada`)
+## Vláda ČR (`vlada`)
 
 - Type: public_institution
 - Status: not_authorized
-- Appears in: macinka-turek, petr-macinka, filip-turek, oto-klempir
-- Claims: CLM-03
-- Sources: SRC-11 (1 independent source family)
+- Appears in: macinka-turek, petr-macinka, filip-turek, oto-klempir, alena-schillerova
+- Claims: CLM-03, CLM-01
+- Sources: SRC-11, SRC-01 (2 independent source families)
 - Relations: 
   - edge-babis-vlada (babis -> vlada, "premiér", dossier: macinka-turek)
   - edge-motoriste-vlada (motoriste -> vlada, "člen koalice", dossier: macinka-turek)
   - edge-klempir-vlada (klempir -> vlada, "ministr kultury", dossier: oto-klempir)
+  - edge-schillerova-vlada (schillerova -> vlada, "místopředsedkyně vlády a ministryně financí", dossier: alena-schillerova)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Adam Vojtěch (ministr zdravotnictví) (`vojtech`)

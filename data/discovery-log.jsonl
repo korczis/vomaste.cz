@@ -66,3 +66,4 @@
 {"logged_at":"2026-07-30","record_id":"vojtech","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
 {"logged_at":"2026-07-30","record_id":"zuna","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
 {"logged_at":"2026-07-30","record_id":"edge-klempir-vlada","record_type":"relation","discovered_from":{"source_entity":"klempir","target_entity":"vlada","claims":["CLM-01"],"sources":["SRC-01"],"dossier":"oto-klempir"},"action":"created"}
+{"logged_at":"2026-07-30","record_id":"edge-schillerova-vlada","record_type":"relation","discovered_from":{"source_entity":"schillerova","target_entity":"vlada","claims":["CLM-01"],"sources":["SRC-01"],"dossier":"alena-schillerova"},"action":"created"}
