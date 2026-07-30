@@ -1,0 +1,30 @@
++++
+title = "GAP-02 — Jeho resortní pozice k výdajům na železnici jako ministra"
+description = "Autorizovaný rozsah je zahrnuje, ale nebyly ověřeny přímo otevřeným zdrojem."
+template = "dossier-gap.html"
+weight = 2
+
+[extra]
+subjects = ["bednarik"]
+dossier = "ivan-bednarik"
+record_type = "gap"
+lang = "cs"
+gap_id = "GAP-02"
+priority = "nízká"
+checked = "2026-07-30"
+claims = ["CLM-01"]
++++
+
+Autorizační záznam (`AUTH-2026-07-30-B`) zahrnuje i jeho publikované
+pozice k výdajům na železnici jako současného ministra dopravy. Tato část
+**není v dossieru zpracována**, protože k ní při kontrole 2026-07-30
+nebyl otevřen a ověřen zdroj: kandidátní článek (Hospodářské noviny) i
+další nalezené odkazy nebyly přečteny v plném rozsahu, a jeden ze
+zvažovaných zdrojů (iROZHLAS) vrací na automatizované dotazy HTTP 403.
+
+Je to tedy **mezera v pokrytí, ne mezera ve skutečnosti** — dossier
+nezachycuje autorizované téma, které zachytit mohl, a přiznává to místo
+toho, aby prázdné místo vypadalo jako neexistence tématu.
+
+**Podmínka uzavření**: přímé otevření zdroje k jeho konkrétním resortním
+pozicím a doplnění tvrzení se stavem podle síly důkazu.
