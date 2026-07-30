@@ -411,6 +411,22 @@ platí pouze pro tento jeden dotační spor.
 | <a id="clm-51"></a>[CLM-51](@/dossiers/andrej-babis/claims/clm-51.md) | Týž soud dne 14. února 2024 oba obžalované zprostil znovu; podle odůvodnění netvořily nepřímé důkazy ucelený řetězec vyvracející obhajobu. Ani tento rozsudek nebyl pravomocný a státní zastupitelství avizovalo odvolání | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-24](@/dossiers/andrej-babis/sources/src-24.md) |
 | <a id="clm-52"></a>[CLM-52](@/dossiers/andrej-babis/claims/clm-52.md) | Spornou dotaci 50 milionů korun firma podle citovaného zpravodajství vrátila již v roce 2018; jde o skutečnost o osudu peněz, nikoli o přiznání viny ani o vyvrácení obžaloby | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-24](@/dossiers/andrej-babis/sources/src-24.md) |
 
+| <a id="clm-53"></a>[CLM-53](@/dossiers/andrej-babis/claims/clm-53.md) | Andrej Babiš podle analýzy z roku 2011 o ústeckou Setuzu dlouhodobě usiloval, firmu ale nezískal a vybudoval místo toho vlastní závod Preol na výrobu surovin pro biopaliva; citovaný zdroj neuvádí v souvislosti se Setuzou žádné jeho pochybení | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-25](@/dossiers/andrej-babis/sources/src-25.md) |
+
+## Setuza: neúspěšná akvizice, ne kauza {#setuza}
+
+Autorizace z 30. 7. 2026 jmenuje mezi tématy i Setuzu. Co se z otevřených
+zdrojů doložit podařilo, je podnikatelská epizoda, ne kauza: Babiš
+o ústeckou Setuzu dlouhodobě usiloval, **firmu nezískal** a vybudoval
+místo toho vlastní závod Preol na výrobu surovin pro biopaliva
+([CLM-53](@/dossiers/andrej-babis/claims/clm-53.md),
+[SRC-25](@/dossiers/andrej-babis/sources/src-25.md)).
+
+Citovaný zdroj neuvádí v souvislosti se Setuzou žádné jeho pochybení a
+tento dossier žádné netvrdí. Zbytek dohledaných materiálů o Setuze
+popisuje jiné aktéry a jiná řízení — ty do tohoto dossieru nepatří a
+zůstávají v [GAP-03](@/dossiers/andrej-babis/gaps/gap-03.md).
+
 ## Veřejné funkce {#verejne-funkce}
 
 Veřejný zájem na tomto dossieru stojí na úřadu, který subjekt zastává.

@@ -1,6 +1,6 @@
 +++
-title = "GAP-03 — Setuza: vazba na Andreje Babiše není z otevřených zdrojů doložena"
-description = "Téma je autorizované, ale žádný přímo otevřený, jmenovaný zdroj nedoložil vazbu Setuzy na Andreje Babiše; dostupné materiály popisují jiné aktéry."
+title = "GAP-03 — Setuza: doložena jen neúspěšná akvizice, nic víc"
+description = "Podnikatelská epizoda je doložená jedním zdrojem; žádný otevřený zdroj neuvádí v souvislosti se Setuzou pochybení Andreje Babiše."
 template = "dossier-gap.html"
 weight = 3
 
@@ -11,15 +11,22 @@ lang = "cs"
 gap_id = "GAP-03"
 priority = "nízká"
 checked = "2026-07-30"
-claims = []
+claims = ["CLM-53"]
 +++
 
-Rozšíření rozsahu z 30. 7. 2026 (`AUTH-2026-07-30-E`) jmenuje mezi tématy
-i **Setuzu**. Při zakládání se ale nepodařilo najít přímo otevřený,
-jmenovaný zdroj, který by vazbu Setuzy na Andreje Babiše doložil —
-dostupné dohledané materiály popisují spor o privatizaci a jiné aktéry.
+**Co se od poslední revize uzavřelo (30. 7. 2026).** Dřívější znění této
+mezery říkalo, že vazbu Setuzy na Andreje Babiše nedokládá žádný otevřený
+zdroj. To už neplatí v jednom, úzkém bodě: analýza z roku 2011 dokládá, že
+o firmu dlouhodobě usiloval, **nezískal ji** a postavil místo toho vlastní
+závod Preol ([CLM-53](@/dossiers/andrej-babis/claims/clm-53.md)).
 
-Tvrzení proto nevzniklo. Autorizace tématu **není** doklad, že o něm je co
-psát: autorizace určuje, co se **smí** pokrýt, doložení určuje, co se
-**pokryje**. Doplnit půjde jen s citovaným zdrojem, který tu vazbu
-skutečně uvádí.
+**Co zůstává otevřené — a co to znamená.** Žádný přímo otevřený,
+jmenovaný zdroj neuvádí v souvislosti se Setuzou pochybení Andreje
+Babiše. Dohledané materiály o dalších sporech kolem Setuzy popisují jiné
+aktéry a jiná řízení; ti do tohoto dossieru nepatří a nejsou tu vedeni.
+
+Tahle mezera se tedy nedrží otevřená proto, že „se něco tají“. Drží se
+otevřená proto, aby bylo výslovně řečeno, že autorizace tématu **není**
+doklad, že o něm je co psát: autorizace určuje, co se **smí** pokrýt,
+doložení určuje, co se **pokryje**. Jediné, co je doložené, je neúspěšná
+akvizice — a víc tenhle dossier o Setuze netvrdí.
