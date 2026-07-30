@@ -77,9 +77,18 @@ for (const slug of dossierSlugs) {
       if (id !== expectedId) {
         errors.push(`${slug}/${cfg.dir}/${file}: ${cfg.idField} "${id}" does not match filename (expected ${expectedId})`);
       }
-      register(id, {
+      // COMPOSITE key: "<dossier-slug>:<LOCAL-ID>". Record ids restart at
+      // 01 in every dossier by design (CLM-01 exists in each), so a bare
+      // local id is not globally unique and cannot be a manifest key —
+      // the first dossier registered would block every later one. The
+      // dossier/index entries above already use this same scheme
+      // ("DOSSIER:<slug>"), so this makes records consistent with them
+      // rather than introducing a new convention. `local_id` keeps the
+      // bare id available for display and lookups.
+      register(`${slug}:${id}`, {
         type: cfg.type,
         dossier: slug,
+        local_id: id,
         route: `${base}${cfg.dir}/${file.replace(/\.md$/, "")}/`,
       });
     }
@@ -106,7 +115,10 @@ for (const slug of dossierSlugs) {
     if (id !== expectedId) {
       errors.push(`${slug}/relations/${file}: rel_id "${id}" does not match filename (expected ${expectedId})`);
     }
-    register(id, { type: "relation", dossier: slug, route: `${base}relations/${expectedId}/` });
+    // Composite for the same reason as records above: a relation id is
+    // semantic (edge-<a>-<b>) and dossier-local, so two dossiers can
+    // legitimately both have e.g. edge-klempir-vlada.
+    register(`${slug}:${id}`, { type: "relation", dossier: slug, local_id: id, route: `${base}relations/${expectedId}/` });
   }
 }
 

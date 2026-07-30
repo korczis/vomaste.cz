@@ -31,6 +31,17 @@ canonical_dossier = "macinka-turek"
 show_in_primary_navigation = true
 
 [[dossiers]]
+# Third authorized subject (AGENTS.md, "Authorized subject: Oto Klempíř").
+# SELF-CANONICAL: owns its records directly, no aggregate — the shape every
+# dossier after the historical macinka-turek pair follows.
+slug = "oto-klempir"
+title = "Oto Klempíř"
+dossier_type = "entity"
+subject = "klempir"
+canonical_dossier = "oto-klempir"
+show_in_primary_navigation = true
+
+[[dossiers]]
 slug = "macinka-turek"
 title = "Petr Macinka a Filip Turek"
 dossier_type = "aggregate"

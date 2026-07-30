@@ -1,0 +1,38 @@
+# Relationship graph for the Oto Klempíř dossier
+# (content/dossiers/oto-klempir/). A projection of the claim/source
+# registries, never a parallel source of truth — every factual edge
+# carries at least one CLM-## and one SRC-## that exist in those
+# registries. Enforced by scripts/dossier/validate-graph.mjs.
+#
+# depth: 0 = the dossier subject; 1 = his directly documented, already
+# authorized institutional context. Deliberately minimal: an edge is
+# added only when a claim and an opened source actually support it, never
+# because two names appeared in the same article.
+
+[[nodes]]
+id = "klempir"
+type = "person"
+label = "Oto Klempíř"
+depth = 0
+subject = true
+claims = ["CLM-01", "CLM-02"]
+sources = ["SRC-01"]
+
+[[nodes]]
+id = "vlada"
+type = "public_institution"
+label = "Vláda ČR"
+depth = 1
+subject = false
+claims = ["CLM-01"]
+sources = ["SRC-01"]
+
+[[edges]]
+id = "edge-klempir-vlada"
+source = "klempir"
+target = "vlada"
+relation = "HOLDS_ROLE"
+label = "ministr kultury"
+status = "contextual"
+claims = ["CLM-01"]
+sources = ["SRC-01"]
