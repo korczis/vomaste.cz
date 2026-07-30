@@ -84,14 +84,17 @@ for (const slug of dossierSlugs) {
   const titleMatch = dossierMd.match(/^title = "(.*)"$/m);
   const dossierType = extractField(fm, "dossier_type") ?? "unknown";
 
-  // Entity dossiers (dossier_type = "entity") own no graph.toml of their
-  // own — their nodes/edges are the canonical (aggregate) dossier's,
-  // already merged into this graph via that dossier's own pass below.
-  // They still get a `dossiers[]` catalog entry (for the map's
-  // dossier-tree), just with node/edge counts of 0 here — the map reads
-  // real per-entity-dossier counts from data/dossiers/<slug>/stats.toml
-  // instead, same as templates/entity-dossier.html does.
-  if (dossierType === "entity") {
+  // A dossier without its OWN data/dossiers/<slug>/graph.toml is a
+  // generated view — its nodes/edges are the canonical dossier's,
+  // already merged via that dossier's own pass. It still gets a
+  // `dossiers[]` catalog entry (for the map's dossier-tree), with
+  // node/edge counts of 0 here — the map reads per-view counts from
+  // stats.toml instead. Decided by PHYSICAL file existence, not by
+  // dossier_type: self-canonical entity dossiers (oto-klempir,
+  // alena-schillerova, …) own a graph.toml and MUST be merged — the
+  // old dossier_type=="entity" skip silently dropped them from the
+  // global map (baseline audit § 5, fixed in T-017).
+  if (!existsSync(join(DATA_ROOT, slug, "graph.toml"))) {
     dossiers.push({
       slug,
       title: titleMatch ? titleMatch[1] : slug,

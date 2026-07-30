@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vomaste.cz/schemas/relation.schema.json",
+  "title": "Relation row (record-tables projection of content/dossiers/*/relations/*.md front matter)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["relation_id", "dossier", "relation_type", "source", "target", "label", "claims", "url"],
+  "properties": {
+    "relation_id": { "type": "string", "minLength": 1 },
+    "dossier": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+    "relation_type": {
+      "type": "string",
+      "pattern": "^[A-Z][A-Z_]*$",
+      "$comment": "Open set by shape; the ALLOWED list is semantic and owned by validate:graph — one rule, one owner."
+    },
+    "source": { "type": "string", "pattern": "^[a-z0-9][a-z0-9_-]*$" },
+    "target": { "type": "string", "pattern": "^[a-z0-9][a-z0-9_-]*$" },
+    "label": { "type": "string", "minLength": 1 },
+    "status": { "type": ["string", "null"] },
+    "claims": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^CLM-\\d+$" }
+    },
+    "sources": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^SRC-\\d+$" }
+    },
+    "subjects": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" }
+    },
+    "url": { "type": "string", "pattern": "^/dossiers/[a-z0-9-]+/relations/[a-z0-9-]+/$" }
+  }
+}

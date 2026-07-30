@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vomaste.cz/schemas/gap.schema.json",
+  "title": "Gap row (record-tables projection of content/dossiers/*/gaps/*.md front matter)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["gap_id", "dossier", "title", "claims", "subjects", "url"],
+  "properties": {
+    "gap_id": { "type": "string", "pattern": "^GAP-\\d+$" },
+    "dossier": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+    "title": { "type": "string", "minLength": 1 },
+    "priority": { "type": ["string", "null"] },
+    "checked": {
+      "type": ["string", "null"],
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "$comment": "When present: the date this gap was last re-checked against sources."
+    },
+    "claims": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^CLM-\\d+$" }
+    },
+    "subjects": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" }
+    },
+    "url": { "type": "string", "pattern": "^/dossiers/[a-z0-9-]+/gaps/[a-z0-9-]+/$" }
+  }
+}

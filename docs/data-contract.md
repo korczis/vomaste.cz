@@ -1,0 +1,77 @@
+# Datový kontrakt (workbench mise, Fáze 1 — T-017)
+
+Kanonický tok dat a jeho vynucování. Souvisí:
+[mise](missions/2026-07-30-workbench-master-prompt.md) § 5,
+[baseline audit](audits/information-architecture-baseline.md) § 5,
+[`schemas/README.md`](../schemas/README.md).
+
+## Kanonický zdroj → normalizace → konzumenti
+
+```
+content/dossiers/**/*.md   data/dossiers.toml   data/dossiers/<slug>/graph.toml
+content/entities/*.md      data/government.toml
+        │                        │                      │
+        └────────┬───────────────┘                      │
+                 ▼                                      ▼
+  scripts/dossier/lib/record-tables.mjs      lib/jsonld-shared.mjs#readGraphToml
+  (JEDINÝ parser front matter → řádky)       (JEDINÝ parser graph.toml pro exporty)
+                 │
+   ┌─────────────┼──────────────────┬───────────────────┐
+   ▼             ▼                  ▼                   ▼
+ build:data-  build:jsonld-      validate:schemas    (další generátory čtou
+ exports      exports            (AJV brána)          buď řádky, nebo výstupy
+ /data/*.json /data/*.jsonld                          předchozích kroků)
+```
+
+Pravidlo § 1.4 mise: generované artefakty (`static/data/`,
+`data/generated/`, `static/search-index.json`, stats.toml) se **nikdy**
+needitují ručně — jsou gitignorované a každý build je přepíše.
+
+## Kde se data upravují
+
+Jen v kanonických zdrojích: front matter záznamů
+(`content/dossiers/<slug>/{claims,sources,cases,gaps,relations}/*.md`),
+registr `data/dossiers.toml`, graf `data/dossiers/<slug>/graph.toml`,
+roster `data/government.toml`, globální entity `content/entities/*.md`
+(roster stránky generuje `build:government-roster`, ručně se nepřepisují).
+
+## Jak přidat nové pole záznamu
+
+Čtyři místa, jinak je změna nedokončená (rozšíření původního „three
+places" pravidla z CLAUDE.md):
+
+1. front matter schéma daného typu (obsah),
+2. `scripts/dossier/lib/record-tables.mjs` (normalizovaný řádek),
+3. `schemas/<kind>.schema.json` (kontrakt — `additionalProperties:
+   false` jinak build spadne, což je záměr: žádné pole bez validátoru),
+4. konzument (šablona / export / view-model) — pole bez uživatele
+   schéma nepřijímá koncepčně (recenze), technicky ho odhalí mrtvý kód
+   v record-tables.
+
+## Dělba práce validátorů (jedno pravidlo, jeden vlastník)
+
+| Vrstva | Vlastník | Příklady |
+|---|---|---|
+| Tvar (typy, povinnost, formáty ID/URL, uzavřený status enum) | `validate:schemas` (AJV, `schemas/*.schema.json`) | `CLM-\d+`, `retrieved` = ISO datum, claim ≥ 1 zdroj |
+| Referenční integrita registrů | `validate:dossier` | CLM↔SRC křížové odkazy, duplicitní ID |
+| Sémantika grafu | `validate:graph`, `validate:graph-coverage` | povolené typy vztahů, hrany kryté claims/sources, pokrytí záznamů mapou |
+| Autorizace subjektů | `validate:authorization` (+ append-only log gate) | žádný obsah o osobě bez záznamu v AGENTS.md |
+| Struktura entity/aggregate | `validate:dossier-types` | kdo vlastní fyzické záznamy |
+| JSON-LD poctivost + integrita | `verify:jsonld`, `verify:export` | zákaz ClaimReview/ratingů, manifest sha256, přepočet citačních otisků, @id↔routes.json |
+
+## Odvozené hodnoty
+
+Počty (tvrzení, zdrojů, kauz, mezer, entit, vztahů) generuje
+`generate:stats` do `data/dossiers/<slug>/stats.toml`; šablony je čtou
+odtud. Ručně psaný počet v šabloně = bug (audit § 5 žádný nenašel;
+prevence: recenze + budoucí lint ve Fázi 8).
+
+## Rozhodnutí: AJV (mini-ADR)
+
+Přidána dev-závislost `ajv` (build-time only, nic se neservíruje
+klientovi). Alternativa „vlastní mini-validátor" odmítnuta: schémata
+používají draft 2020-12 (`additionalProperties`, `enum`, `pattern`,
+`items`, nullable typy) a vlastní implementace by byla větší údržbová
+plocha než standardní, všude auditovaný AJV — přesně případ, kdy
+`adr` disciplína repa závislost povoluje (měřená potřeba: 8 schémat,
+207+ řádků, brána v každém buildu).

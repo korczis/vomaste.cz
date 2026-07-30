@@ -27,7 +27,7 @@
 import { readFileSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import { FORBIDDEN_KEYS, FORBIDDEN_TYPES, citationFingerprint, jsonLdNodes, sha256Hex } from "./lib/jsonld-shared.mjs";
+import { FORBIDDEN_KEYS, FORBIDDEN_TYPES, citationFingerprint, jsonLdNodes, readBaseUrl, sha256Hex } from "./lib/jsonld-shared.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const args = process.argv.slice(2);
@@ -51,6 +51,38 @@ if (!Array.isArray(manifest.exports) || manifest.exports.length === 0) {
 let checkedFiles = 0;
 let checkedNodes = 0;
 let checkedFingerprints = 0;
+let checkedIds = 0;
+
+// @id ↔ route resolvability (T-017, mission § 5.4): every @id in the
+// exports must point at a real route of this site. Runs ONLY when
+// verifying the repo's own build output (default --dir public/), where
+// data/generated/routes.json is guaranteed fresh — build:routes runs
+// earlier in the same pipeline. For any custom --dir (a downloaded
+// offline copy, a test fixture) the check is skipped: repo-side
+// routes.json may be stale relative to that copy, and the offline
+// contract is hash/parse/forbidden-markup/fingerprints above.
+let routeCheck = null;
+const routesPath = join(ROOT, "data/generated/routes.json");
+const isRepoBuildDir = DIR === join(ROOT, "public");
+if (isRepoBuildDir && existsSync(routesPath) && existsSync(join(ROOT, "config.toml"))) {
+  const base = readBaseUrl(ROOT);
+  const allowed = new Set(["/"]);
+  for (const r of Object.values(JSON.parse(readFileSync(routesPath, "utf8")))) {
+    if (r.route) allowed.add(r.route);
+  }
+  for (const e of manifest.exports) allowed.add(e.route);
+  // Dossier main pages + registry index pages are routable but not
+  // record-keyed in routes.json — derive them from the registry, the
+  // same source Zola's sections are built from.
+  const { loadDossierRegistry } = await import("./lib/dossier-registry.mjs");
+  for (const d of loadDossierRegistry()) {
+    allowed.add(`/dossiers/${d.slug}/`);
+    for (const sub of ["claims", "sources", "cases", "gaps", "relations", "evidence", "entities"]) {
+      allowed.add(`/dossiers/${d.slug}/${sub}/`);
+    }
+  }
+  routeCheck = { base, allowed };
+}
 
 for (const entry of manifest.exports) {
   const file = join(DIR, entry.route.replace(/^\//, ""));
@@ -96,6 +128,17 @@ for (const entry of manifest.exports) {
       if (!Array.isArray(node.appearance) || node.appearance.length === 0)
         err(`${tag}: Claim ${node["@id"]} has no non-empty appearance — a claim without cited reporting (rule 1).`);
     }
+    if (routeCheck && node["@id"]) {
+      checkedIds++;
+      const id = node["@id"];
+      if (!id.startsWith(routeCheck.base)) {
+        err(`${tag}: @id outside the site's base_url: ${id}`);
+      } else {
+        const path = id.slice(routeCheck.base.length).split("#")[0];
+        if (!routeCheck.allowed.has(path))
+          err(`${tag}: @id does not resolve to any known route: ${id} (path ${path})`);
+      }
+    }
     if (node["vomaste:citationFingerprint"]) {
       checkedFingerprints++;
       const recomputed = citationFingerprint({
@@ -112,7 +155,9 @@ for (const entry of manifest.exports) {
 }
 
 console.log(
-  `Verified ${checkedFiles}/${manifest.exports.length} export(s), ${checkedNodes} node(s), ${checkedFingerprints} citation fingerprint(s) against ${manifestPath}.`,
+  `Verified ${checkedFiles}/${manifest.exports.length} export(s), ${checkedNodes} node(s), ${checkedFingerprints} citation fingerprint(s) against ${manifestPath}` +
+    (routeCheck ? `; ${checkedIds} @id(s) resolved against routes.json` : "; @id↔route check skipped (custom --dir — offline copy without repo route context)") +
+    ".",
 );
 if (errors.length) {
   console.log(`\n${errors.length} error(s):`);

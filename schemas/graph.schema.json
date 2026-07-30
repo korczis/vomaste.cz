@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vomaste.cz/schemas/graph.schema.json",
+  "title": "Dossier relationship graph (data/dossiers/<slug>/graph.toml, parsed blocks)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["nodes", "edges"],
+  "properties": {
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "type", "label"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9_-]*$" },
+          "type": { "type": "string", "pattern": "^[a-z][a-z_]*$" },
+          "label": { "type": "string", "minLength": 1 },
+          "depth": { "type": "integer", "minimum": 0 },
+          "subject": { "type": "boolean" },
+          "claims": { "type": "array", "items": { "type": "string", "pattern": "^CLM-\\d+$" } },
+          "sources": { "type": "array", "items": { "type": "string", "pattern": "^SRC-\\d+$" } }
+        }
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "source", "target", "relation"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "source": { "type": "string", "pattern": "^[a-z0-9][a-z0-9_-]*$" },
+          "target": { "type": "string", "pattern": "^[a-z0-9][a-z0-9_-]*$" },
+          "relation": { "type": "string", "pattern": "^[A-Z][A-Z_]*$" },
+          "label": { "type": "string" },
+          "status": { "type": "string" },
+          "claims": { "type": "array", "items": { "type": "string", "pattern": "^CLM-\\d+$" } },
+          "sources": { "type": "array", "items": { "type": "string", "pattern": "^SRC-\\d+$" } }
+        }
+      }
+    }
+  },
+  "$comment": "Shape only. Referential integrity (edge endpoints exist as nodes, CLM/SRC ids exist in the registries, allowed relation types, source independence of edges) is owned by validate:graph and validate:graph-coverage."
+}

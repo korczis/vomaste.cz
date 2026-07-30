@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vomaste.cz/schemas/source.schema.json",
+  "title": "Source row (record-tables projection of content/dossiers/*/sources/*.md front matter)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["src_id", "dossier", "title", "src_type", "retrieved", "claims", "claim_count", "subjects", "source_url", "url"],
+  "properties": {
+    "src_id": { "type": "string", "pattern": "^SRC-\\d+$" },
+    "dossier": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+    "title": { "type": "string", "minLength": 1 },
+    "outlet": { "type": ["string", "null"], "minLength": 1 },
+    "src_type": { "type": "string", "minLength": 1 },
+    "published": {
+      "type": ["string", "null"],
+      "$comment": "Free-form in practice (some official records carry no publication date); when present it is display text, not a computed field."
+    },
+    "retrieved": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "$comment": "Required — provenance anchor: every cited source records WHEN it was opened. Also an input of the citation fingerprint (lib/jsonld-shared.mjs)."
+    },
+    "claims": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^CLM-\\d+$" }
+    },
+    "claim_count": { "type": "integer", "minimum": 0 },
+    "subjects": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" }
+    },
+    "source_url": { "type": "string", "pattern": "^https?://" },
+    "url": { "type": "string", "pattern": "^/dossiers/[a-z0-9-]+/sources/[a-z0-9-]+/$" }
+  }
+}

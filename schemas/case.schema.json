@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vomaste.cz/schemas/case.schema.json",
+  "title": "Case row (record-tables projection of content/dossiers/*/cases/*.md front matter)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["case_id", "dossier", "title", "subjects", "url"],
+  "properties": {
+    "case_id": { "type": "string", "pattern": "^CASE-\\d+$" },
+    "dossier": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+    "title": { "type": "string", "minLength": 1 },
+    "period": { "type": ["string", "null"] },
+    "status": { "type": ["string", "null"] },
+    "label": { "type": ["string", "null"] },
+    "subjects": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" }
+    },
+    "url": { "type": "string", "pattern": "^/dossiers/[a-z0-9-]+/cases/[a-z0-9-]+/$" }
+  }
+}

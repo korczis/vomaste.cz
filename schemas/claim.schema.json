@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vomaste.cz/schemas/claim.schema.json",
+  "title": "Claim row (record-tables projection of content/dossiers/*/claims/*.md front matter)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["clm_id", "dossier", "status", "status_label", "summary", "sources", "source_count", "subjects", "url"],
+  "properties": {
+    "clm_id": { "type": "string", "pattern": "^CLM-\\d+$" },
+    "dossier": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+    "status": {
+      "type": "string",
+      "enum": ["status-corroborated", "status-single", "status-quote", "status-disputed"],
+      "$comment": "Closed editorial set — sourcing states, never truth adjudication. Extending this enum is an editorial-model change (AGENTS.md), not a technical one."
+    },
+    "status_label": { "type": "string", "minLength": 1 },
+    "summary": { "type": "string", "minLength": 1 },
+    "sources": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^SRC-\\d+$" },
+      "minItems": 1,
+      "$comment": "Rule 1: no uncited claim — every claim cites at least one opened source."
+    },
+    "source_count": { "type": "integer", "minimum": 1 },
+    "subjects": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" }
+    },
+    "url": { "type": "string", "pattern": "^/dossiers/[a-z0-9-]+/claims/[a-z0-9-]+/$" }
+  }
+}

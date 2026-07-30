@@ -86,7 +86,7 @@ Skutečné mezery:
   entity dossierů** (podmínka na `dossier_type == "entity"` z doby, kdy
   entity dossiery graph nevlastnily) — grafy Klempíře a Schillerové
   proto chybí v globální mapě (node_count 0 v katalogu). Reálná datová
-  vada k opravě v compiler fázi.
+  vada — opraveno v T-017 (build-global-graph rozhoduje podle fyzické existence graph.toml).
 - JSON-LD: exporty + embedded markup existují (T-002/T-010), ale
   neexistuje referenční validace „všechna `@id` resolvují proti
   routám" (verify:export kontroluje hash/parse/zákazy/otisky, ne

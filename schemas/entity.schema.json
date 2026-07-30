@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vomaste.cz/schemas/entity.schema.json",
+  "title": "Entity row (record-tables projection of content/entities/*.md front matter)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["entity_id", "title", "url"],
+  "properties": {
+    "entity_id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9_-]*$" },
+    "title": { "type": "string", "minLength": 1 },
+    "entity_type": { "type": ["string", "null"], "pattern": "^[a-z][a-z_]*$" },
+    "role": { "type": ["string", "null"] },
+    "dossiers": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" }
+    },
+    "publication_role": {
+      "type": ["string", "null"],
+      "$comment": "e.g. \"context\" for government-roster entities — the weakest publication state; never implies dossier coverage. Authorization semantics enforced by validate:authorization, not here."
+    },
+    "dossier_status": { "type": ["string", "null"] },
+    "coverage_state": { "type": ["string", "null"] },
+    "government_office": { "type": ["string", "null"] },
+    "government_party": { "type": ["string", "null"] },
+    "government_snapshot": { "type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "url": { "type": "string", "pattern": "^/entities/[a-z0-9_-]+/$" }
+  }
+}

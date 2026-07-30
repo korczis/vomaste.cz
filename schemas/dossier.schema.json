@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vomaste.cz/schemas/dossier.schema.json",
+  "title": "Dossier registry row (record-tables projection of data/dossiers.toml)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["slug", "title", "dossier_type", "url"],
+  "properties": {
+    "slug": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+    "title": { "type": "string", "minLength": 1 },
+    "dossier_type": {
+      "type": "string",
+      "enum": ["entity", "aggregate"],
+      "$comment": "Structural invariants between the two types (who owns physical records, who is a generated view) are owned by validate:dossier-types."
+    },
+    "subject": { "type": ["string", "null"], "pattern": "^[a-z0-9][a-z0-9-]*$" },
+    "canonical_dossier": { "type": ["string", "null"], "pattern": "^[a-z0-9][a-z0-9-]*$" },
+    "url": { "type": "string", "pattern": "^/dossiers/[a-z0-9-]+/$" }
+  }
+}
