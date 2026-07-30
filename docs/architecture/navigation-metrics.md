@@ -1,8 +1,10 @@
 # Navigační metriky — počty odvozené z kanonických dat
 
-> **Stav**: datová vrstva hotová a zapojená do buildu. Vykreslení badge
-> v navigaci (Tera macro, desktop sidebar, mobilní drawer) **zatím
-> implementované není** — viz [Co zbývá](#co-zbývá).
+> **Stav**: datová vrstva i vykreslení badge hotové a zapojené do buildu.
+> Badge se renderují na serveru přes sdílené macro `nav::nav_link`, které
+> používá desktop sidebar i mobilní navigace. Neuzavřené položky —
+> post-build verifier, veřejný endpoint, sbalený sidebar, vizuální
+> kontrola — viz [Co zbývá](#co-zbývá).
 
 ## Proč build-time, a ne v prohlížeči
 
@@ -165,14 +167,29 @@ Markdownu ani JavaScriptu — navigační konfigurace smí odkazovat jen na
 
 ## Co zbývá
 
-Datová vrstva je hotová a v buildu. Neimplementované:
+Hotové: registr metrik, generátor, testy, `count_metric` v
+`data/navigation.toml`, vykreslení badge ve sdíleném macru `nav::nav_link`
+(používá ho desktop sidebar i mobilní navigace, takže obě větve resolvují
+metriku jedním lookupem a nemůžou se rozejít).
 
-- sdílené Tera macro pro desktop sidebar i mobilní navigaci (dnes jsou to dva
-  oddělené bloky v `base.html` — reálný markup drift);
-- vykreslení badge, včetně sbaleného sidebaru a mobilního draweru;
-- `count_metric` v `data/navigation.toml`;
-- post-build HTML verifier porovnávající čísla v HTML s manifestem;
-- veřejný endpoint `/data/navigation-metrics.json`.
+Badge dnes mají tři položky s jednoznačnou populací route: `dossiers.total`,
+`entities.total`, `relations.total`.
+
+Neimplementované:
+
+- **post-build HTML verifier** porovnávající čísla v HTML s manifestem.
+  Poznámka pro jeho autora: minifikátor maže uvozovky a přehazuje pořadí
+  atributů, takže `data-count=22 data-metric-id=dossiers.total` je platný
+  výstup. Verifier **musí parsovat HTML, ne regexovat** — první pokus o
+  ověření touhle chybou ohlásil, že badge chybí, ačkoli tam byly;
+- **veřejný endpoint** `/data/navigation-metrics.json`;
+- **sbalený sidebar** — počet je v `title`, takže po sbalení na ikony
+  zůstane dostupný, ale chování badge při sbalení nebylo testováno;
+- **vizuální kontrola** na reálných viewportech (1440×1000, 1024×768,
+  390×844), včetně dlouhých labelů a tříciferných hodnot;
+- **`npm run build` end-to-end** — ověřeno bylo renderem do izolovaného
+  výstupního adresáře, protože sdílený `public/` držel souběžný build jiné
+  session.
 
 Zadání pro tuhle práci předpokládalo jiné informační architektury, než jakou
 web má: sidebar má **sedm** top-level položek (`home`, `dossiers`, `entities`,
