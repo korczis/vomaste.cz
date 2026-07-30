@@ -43,6 +43,7 @@
           "Tvrzení s jediným zdrojem::SELECT clm_id, summary, url FROM claims WHERE source_count = 1 ORDER BY clm_id",
           "Otevřené mezery podle priority::SELECT gap_id, priority, checked, url FROM gaps ORDER BY priority, gap_id",
           "Zdroje, které nepodpírají nic::SELECT src_id, outlet, url FROM sources WHERE claim_count = 0",
+          "Tvrzení a jejich zdroje (správný join)::SELECT c.dossier, c.clm_id, c.summary, s.outlet, s.source_url FROM claims c, UNNEST(c.sources) AS t(sid) JOIN sources s ON s.dossier = c.dossier AND s.src_id = t.sid ORDER BY c.dossier, c.clm_id",
         ] -%}
         {%- for ex in examples %}
         {%- set parts = ex | split(pat="::") %}
@@ -96,6 +97,7 @@
       <li>Počet tvrzení u subjektu není míra provinění; je to míra toho, kolik toho bylo publikováno a zaznamenáno.</li>
       <li>Dataset pokrývá jen <a href="{{ get_url(path='@/dossiers/_index.md') | safe }}" class="text-[#f3e5c0] underline">autorizované dossiery</a> a jen to, co vyšlo ve jmenovaných zdrojích. Absence řádku není doklad, že se něco nestalo — otevřené otázky jsou v tabulce <code>gaps</code>.</li>
       <li>Sloupec <code>subjects</code> je editorské určení, koho se záznam týká, ne strojově odvozená vlastnost.</li>
+      <li><strong class="text-white/85">Identifikátory jsou číslované po dossierech, ne globálně.</strong> Číslování začíná v každém dossieru od jedničky, takže tutéž hodnotu <code>clm_id</code> nebo <code>src_id</code> nese víc nesouvisejících záznamů. Klíčem je vždy dvojice <code>(dossier, id)</code>; join přes samotné <code>src_id</code> spojí zdroje nesouvisejících osob a tiše nafoukne výsledek místo toho, aby zahlásil chybu. Správný tvar ukazuje příklad „Tvrzení a jejich zdroje".</li>
     </ul>
   </section>
 

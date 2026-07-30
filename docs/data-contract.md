@@ -59,6 +59,33 @@ places" pravidla z CLAUDE.md):
 | Struktura entity/aggregate | `validate:dossier-types` | kdo vlastní fyzické záznamy |
 | JSON-LD poctivost + integrita | `verify:jsonld`, `verify:export` | zákaz ClaimReview/ratingů, manifest sha256, přepočet citačních otisků, @id↔routes.json |
 
+## Identifikátory jsou složený klíč `(dossier, id)`
+
+`CLM-01`, `SRC-01`, `CASE-01` i `GAP-01` jsou číslované **po dossierech**, ne
+globálně. Každý dossier začíná od jedničky, takže 472 zdrojů má dohromady jen
+55 různých hodnot `src_id` a 32 z nich sdílí víc dossierů. Klíčem je vždy
+dvojice `(dossier, id)`.
+
+Kdo to přehlédne, dostane tiché nafouknutí místo chyby. Změřeno na skutečných
+datech přes `static/data/*.json`:
+
+| join `claims` → `sources` | řádků |
+|---|---|
+| `ON s.dossier = c.dossier AND s.src_id = t.sid` | 1 141 — shoduje se se `sum(source_count)` |
+| `ON s.src_id = t.sid` (bez `dossier`) | 17 633 — nafouknutí 15,5× |
+
+Přesně tuhle chybu dělala `templates/partials/jsonld.html` do commitu `ce59cf8`:
+překládala odkazy tvrzení průchodem přes všechny dossiery, takže 94 % vložených
+citací ukazovalo na záznamy nesouvisejících osob. Vada byla jen ve strojově
+čitelné vrstvě — viditelné stránky byly správně, a proto ji lidská kontrola
+nemohla zachytit.
+
+Uvnitř repozitáře invariant hlídá `validate:dossier` (referenční integrita
+v rámci dossieru) a `verify:jsonld` job 4 (citace odpovídají deklarovaným
+zdrojům). Pro **externí konzumenty** plochých exportů žádná brána neexistuje —
+proto je správný tvar joinu předvedený jako příklad v SQL konzoli a limity jsou
+uvedené přímo na stránce `/data/`.
+
 ## Odvozené hodnoty
 
 Počty (tvrzení, zdrojů, kauz, mezer, entit, vztahů) generuje
