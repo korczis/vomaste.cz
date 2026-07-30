@@ -1,5 +1,6 @@
 {%- import "macros/jsonld.html" as jsonld -%}
 {%- import "macros/nav.html" as nav -%}
+{%- import "macros/ui.html" as ui -%}
 <!DOCTYPE html>
 <html lang="{{ page.extra.lang | default(value=config.extra.lang | default(value="en")) }}" class="scroll-smooth no-js">
 <head>
@@ -298,28 +299,18 @@
 
 <div id="main" class="pt-16{% if sidebar_docked %} md:ml-64{% endif %}">
 {% block content %}{% endblock content %}
-<footer class="mx-auto max-w-5xl border-t border-white/10 px-4 py-6 text-xs text-white/40">
-  <p>
-    Kód, tooling i původní obsah:
-    <a href="https://github.com/korczis/vomaste.cz/blob/master/LICENSE.md" class="underline hover:text-white/70">The Unlicense (public domain)</a>
-    · <a href="https://github.com/korczis/vomaste.cz" class="underline hover:text-white/70">zdrojový kód a data na GitHubu</a>.
-    Citované články a úryvky zůstávají právy původních vydavatelů — tento
-    web je cituje, nerelicencuje.
-  </p>
-  {%- if page is defined and page.relative_path %}
-  <p class="mt-2">
-    <a href="https://github.com/korczis/vomaste.cz/edit/master/content/{{ page.relative_path }}" class="underline hover:text-white/70">✎ Navrhnout opravu této stránky (GitHub)</a>
-    · <a href="https://github.com/korczis/vomaste.cz/commits/master/content/{{ page.relative_path }}" class="underline hover:text-white/70">historie změn</a>
-    — pull requesty i issues jsou veřejné; pro citlivé podněty tento kanál nepoužívejte.
-  </p>
-  {%- elif section is defined and section.relative_path %}
-  <p class="mt-2">
-    <a href="https://github.com/korczis/vomaste.cz/edit/master/content/{{ section.relative_path }}" class="underline hover:text-white/70">✎ Navrhnout opravu této stránky (GitHub)</a>
-    · <a href="https://github.com/korczis/vomaste.cz/commits/master/content/{{ section.relative_path }}" class="underline hover:text-white/70">historie změn</a>
-    — pull requesty i issues jsou veřejné; pro citlivé podněty tento kanál nepoužívejte.
-  </p>
-  {%- endif %}
-</footer>
+{#- Resolve the content path ONCE (page or section, "" for neither, e.g.
+    404) and let the macro render the footer. Previously the page and
+    section branches each carried their own near-identical copy of the
+    correction links, so any change had to be made twice — the same
+    duplication the dossier data model forbids elsewhere. -#}
+{%- set footer_path = "" -%}
+{%- if page is defined and page.relative_path -%}
+  {%- set footer_path = page.relative_path -%}
+{%- elif section is defined and section.relative_path -%}
+  {%- set footer_path = section.relative_path -%}
+{%- endif -%}
+{{ ui::site_footer(content_path=footer_path) }}
 </div>
 </body>
 </html>
