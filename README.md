@@ -215,6 +215,22 @@ npm ci
 npm run dev     # validace + generátory + zola serve na http://127.0.0.1:1111
 ```
 
+Máš-li [`just`](https://github.com/casey/just), totéž jde kratší cestou —
+a `just doctor` navíc řekne, jestli ti nechybí prerekvizita, než začneš
+hledat chybu v obsahu:
+
+```bash
+just doctor     # Node, Zola, node_modules, git hooks — reportuje, nic neinstaluje
+just setup      # = npm ci (nastaví i git hooks)
+just dev        # = npm run dev
+just build      # = npm run build, TA brána kvality
+just            # vypíše všechny recepty
+```
+
+`just` je **jen pohodlí**: každý recept je obyčejný příkaz, který jde
+spustit i přímo, a nic v buildu, v hooku ani v CI na `just` nezávisí.
+Kompletní seznam je [níže](#task-runner-just).
+
 `npm ci`/`npm install` mimochodem nastaví `core.hooksPath` na `.githooks/`
 (`scripts/setup/install-git-hooks.mjs`, best-effort, nikdy nerozbije
 instalaci) — od té chvíle `git commit` sám spustí rychlou podmnožinu
@@ -243,6 +259,32 @@ npm run build
 Úspěch = nulový exit kód a závěrečné `OK` řádky obou post-build kontrol
 (kotvy a JSON-LD), poslední je `OK — all JSON-LD parses, carries
 required fields, and contains no truth-rating markup.`
+
+## Task runner (`just`)
+
+Repozitář má přes třicet npm skriptů a je snadné netrefit ten, na kterém
+záleží. `justfile` v rootu je tenký obal nad nimi — nic nepřepisuje, nic
+nepřidává; když se rozejde s `package.json`, vyhrává `package.json` a
+justfile je chyba.
+
+| Recept | Obal nad | Poznámka |
+|---|---|---|
+| `just` / `just default` | `just --list` | výpis všech receptů |
+| `just doctor` | – | Node/Zola/`node_modules`/hooks vs. co README předpokládá; jen reportuje, nikdy neinstaluje |
+| `just setup` | `npm ci` | nastaví i `core.hooksPath` (postinstall) |
+| `just hooks` | `npm run hooks:install` | přeinstalace hooků samostatně |
+| `just dev` | `npm run dev` | dlouho běžící, sám neskončí |
+| `just build` | `npm run build` | **ta** brána kvality, stejná sekvence jako CI |
+| `just check` | `.githooks/pre-commit` | rychlá podmnožina; spouští přímo hook, takže se od něj nemůže rozejít |
+| `just test` | `npm test` | regresní testy tooling skriptů |
+| `just clean` | `rm -rf public` | build output není zdroj pravdy |
+| `just regen` | `migrate-claims-to-pages.mjs` + `migrate-cases-to-pages.mjs` | po ruční editaci tabulky tvrzení / `[[extra.cases]]` |
+| `just scaffold <slug> "<Jméno>"` | `npm run scaffold:dossier` | odmítne subjekt, který není v autorizačním logu |
+| `just authorize <entity>` | `npm run authorize:entity` | **interaktivní z principu** — vyžaduje TTY a rozsah napsaný člověkem |
+| `just ares --ico=… \| --name="…"` | `scripts/osint/ares-lookup.mjs` | živý síťový dotaz, **není** součástí buildu |
+| `just coop` / `just inbox` | `scripts/coop/coop.sh` | stav co-op boardu a sběrnice |
+
+Instalace `just`: <https://github.com/casey/just#installation>.
 
 ## Referenční příkazy
 
@@ -341,6 +383,12 @@ neskončí de-specializační migrace, zůstávají v navigaci a několika
 možný, ale vyžaduje jejich ruční úpravu. Redakční odpovědnost, právní
 posouzení a případný intake si každý fork řeší sám; fork nepřebírá
 redakční schválení upstreamu.
+
+Pro adoptéra je nejkratší cesta `just doctor` → `just setup` → `just build`
+(viz [Task runner](#task-runner-just)); `just build` je zároveň ta brána,
+kterou nesmí vypnout, kdo se chce k tomuto datovému modelu hlásit. Veřejné,
+čtivé znění téhož je koncept
+[Forkovatelnost a adopce](https://vomaste.cz/koncepty/forkovatelnost/).
 
 ## Opravy a právo na odpověď
 

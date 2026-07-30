@@ -29,6 +29,13 @@ FAST_CHECKS=(
   verify:authorization-log
   validate:dossier-types
   build:routes
+  # Must generate the navigation before validating it, exactly as build:routes
+  # does for routes.json. Without this the hook failed on the FIRST commit in
+  # any fresh clone — data/generated/ is build output and deliberately not in
+  # git, so validate:navigation had nothing to read. That read as a content
+  # defect ("navigation.json is missing") when nothing was wrong with the
+  # change being committed.
+  build:navigation
   validate:navigation
   lint:component-reuse
 )

@@ -85,6 +85,11 @@ sekce „Přidání obsahu do dossieru". Generované soubory
 podmnožina validátorů, viz `.githooks/pre-commit`) — žádný ruční krok
 navíc; přeinstalace: `npm run hooks:install`.
 
+Máš-li [`just`](https://github.com/casey/just), stejný postup je
+`just doctor` (ověří prerekvizity) → `just setup` → `just build`; `just`
+je pouze obal nad těmito npm skripty a nic na něm nezávisí. Úplný seznam
+receptů: [README, sekce „Task runner"](README.md#task-runner-just).
+
 ## Přispívání s Claude Code (nebo jiným AI agentem)
 
 Repozitář je připravený na to, aby se v něm agent zorientoval bez
