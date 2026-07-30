@@ -63,3 +63,59 @@ subjects = ["okamura"]
 agents_md_section = "Authorized subject: Tomio Okamura (on the record)"
 scope_summary = "Jediné téma: trestní kauza předvolebních plakátů SPD — rozsudek OS pro Prahu 1 z 2026-06-03 (SPD vinna podněcováním k nenávisti, 3 mil. Kč), obsah plakátů dle citovaného zpravodajství, odmítnutí viny a jeho kritika soudkyně, a přerušené vlastní stíhání kvůli nevydání Sněmovnou. Povinné rámování: rozsudek NENÍ pravomocný, rozsudek proti straně není rozsudek proti Okamurovi osobně, nevydání je parlamentní procesní krok, ne zjištění o pravdivosti. Osoby vyobrazené na plakátech se nikdy nejmenují."
 
+
+[[authorizations]]
+id = "AUTH-2026-07-30-M"
+authorized_at = "2026-07-30"
+subjects = ["havlicek"]
+agents_md_section = "Authorized subject: Karel Havlíček (on the record)"
+scope_summary = "Kauza dotace na toustový chléb (od 2019 věděl o auditu EU, nevymáhal — FORUM 24); kritika novely stavebního zákona (Česká justice); pozice k EU cílům elektromobility. Reportovaná nečinnost je tvrzení citovaného zpravodajství, ne zjištění."
+
+[[authorizations]]
+id = "AUTH-2026-07-30-N"
+authorized_at = "2026-07-30"
+subjects = ["zuna"]
+agents_md_section = "Authorized subject: Jaromír Zůna (on the record)"
+scope_summary = "Škrt 21 mld. z obrany a spor o 2 % NATO (e15); neodvysílaný rozhovor s prezidentem — 'cenzura' je charakteristika opozice, ne webu (TN.cz); spor o volbu náčelníka GŠ a výzvy k rezignaci (Echo24); premiérova nespokojenost s koncepcí armády (Blesk)."
+
+[[authorizations]]
+id = "AUTH-2026-07-30-O"
+authorized_at = "2026-07-30"
+subjects = ["tejc"]
+agents_md_section = "Authorized subject: Jeroným Tejc (on the record)"
+scope_summary = "Bitcoinová kauza resortu — ohlášené trestní oznámení po auditu (Echo24, Deník N); kárná žaloba na soudkyni v případu Viktorky + podnět OSPOD (Blesk, Česká justice); zpochybnění předběžného opatření ÚS (Česká justice). Oznámení ≠ obvinění ≠ odsouzení; oběť se nikdy neidentifikuje nad rámec citovaného."
+
+[[authorizations]]
+id = "AUTH-2026-07-30-P"
+authorized_at = "2026-07-30"
+subjects = ["mrazova"]
+agents_md_section = "Authorized subject: Zuzana Mrázová (on the record)"
+scope_summary = "Nepravomocná pokuta za střet zájmů — nezanesený rodinný půlmilion a měněná vysvětlení (Seznam Zprávy, Deník N, Blesk) — nepravomocnost vždy uvést; obecní byt v Bílíně (FORUM 24, ČT24); stavby v rozporu s územním plánem; výzvy k rezignaci a podnět resortu spravedlnosti (ČT24)."
+
+[[authorizations]]
+id = "AUTH-2026-07-30-Q"
+authorized_at = "2026-07-30"
+subjects = ["vojtech"]
+agents_md_section = "Authorized subject: Adam Vojtěch (on the record)"
+scope_summary = "Kauza defibrilátorů FN Olomouc — manipulovaná dokumentace, trestní oznámení 3/2026, kritika ministrovy počáteční zdrženlivosti (Seznam Zprávy) — oznámení míří na nemocniční věc, ne na ministra osobně; návrh daňového zvýhodnění benefitů a debata o střetu zájmů premiérových klinik (Reflex, Zdravotnický deník); kritika očkovací strategie od koaliční SPD (Echo24)."
+
+[[authorizations]]
+id = "AUTH-2026-07-30-R"
+authorized_at = "2026-07-30"
+subjects = ["cerveny"]
+agents_md_section = "Authorized subject: Igor Červený (on the record)"
+scope_summary = "Chybějící dům za 11,4 mil. v majetkovém přiznání (Blesk) — nic pravomocného; podnět kvůli střetu zájmů (podcast firma, Blesk); rekonstrukce kanceláří za 3 mil. a kancelář pro Turka (Blesk); neprůhledná cesta do USA (Deník N). Cross-link na macinka-turek CLM-43; žádné nové téma o Turkovi."
+
+[[authorizations]]
+id = "AUTH-2026-07-30-S"
+authorized_at = "2026-07-30"
+subjects = ["plaga"]
+agents_md_section = "Authorized subject: Robert Plaga (on the record)"
+scope_summary = "Zastavené testování 5./9. tříd — výpadky a kritizované osobní otázky (Blesk); obrat u zákazu mobilů březen→červenec (zdravezpravy.cz); zkrácení školního roku a reakce rodičů (Deník.cz). Politické kontroverze — citované zpravodajství netvrdí protiprávní jednání a nesmí se implikovat."
+
+[[authorizations]]
+id = "AUTH-2026-07-30-T"
+authorized_at = "2026-07-30"
+subjects = ["sebestyan"]
+agents_md_section = "Authorized subject: Martin Šebestyán (on the record)"
+scope_summary = "Reportované brždění/zastavení vymáhání 5,1–7 mld. dotací po Agrofertu (HlídacíPes — atribuovaný komentář, kverulant.org, Deník N, HN); kritika vedení SZIF 2013–2022 (iROZHLAS, HN); varování Transparency International. Žádný soud nekonstatoval pochybení; hodnocení NGO/komentářů vždy atribuovat."

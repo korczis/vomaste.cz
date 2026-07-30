@@ -1,0 +1,32 @@
+# Relationship graph for the Jaromír Zůna dossier. Projection of the
+# claim/source registries — every edge carries at least one CLM-## and one
+# SRC-## that exist there. Minimal by design: an edge exists only where a
+# claim and an opened source support it.
+
+[[nodes]]
+id = "zuna"
+type = "person"
+label = "Jaromír Zůna"
+depth = 0
+subject = true
+claims = ["CLM-01"]
+sources = ["SRC-01"]
+
+[[nodes]]
+id = "vlada"
+type = "public_institution"
+label = "Vláda ČR"
+depth = 1
+subject = false
+claims = ["CLM-01"]
+sources = ["SRC-01"]
+
+[[edges]]
+id = "edge-zuna-vlada"
+source = "zuna"
+target = "vlada"
+relation = "HOLDS_ROLE"
+label = "místopředseda vlády a ministr obrany"
+status = "contextual"
+claims = ["CLM-01"]
+sources = ["SRC-01"]

@@ -885,3 +885,162 @@ adjudicated truth; procedural outcomes stay distinguished from findings at
 every mention; quotes are verbatim; unnamed third parties stay unnamed; and
 what cannot be verified becomes a GAP rather than a hedged sentence. This
 entry authorizes no other subject and no topic beyond those listed.
+### Authorized subject: Karel Havlíček (on the record)
+
+Authorized by the site owner, explicitly and on the record, 2026-07-30
+(per-subject selection in conversation with the proposed topic scope
+shown): an entity dossier may be created for **Karel Havlíček** — First
+Deputy Prime Minister and Minister of Industry and Trade (ANO).
+`AUTH-2026-07-30-M`. Topics found by research at search-result level;
+each cited outlet must be opened and read directly before any claim is
+written from it.
+
+Coverage limited to: the **toast-bread subsidy case** — reporting that
+as minister he knew since at least 2019 of an EU audit deeming a
+100-million-crown subsidy to an Agrofert production line unauthorized
+and did not pursue recovery (FORUM 24); published criticism of his
+**building-law amendment** as rushed (Česká justice; ODS and legal
+experts); and his published positions on **EU electromobility targets**
+(FORUM 24). Framing: reported inaction is a claim of the cited
+reporting, not an adjudicated finding; no proceeding against him
+personally is asserted by these sources.
+
+### Authorized subject: Jaromír Zůna (on the record)
+
+Authorized by the site owner, explicitly and on the record, 2026-07-30
+(per-subject selection in conversation with the proposed topic scope
+shown): an entity dossier may be created for **Jaromír Zůna** — Deputy
+Prime Minister and Minister of Defence (SPD). `AUTH-2026-07-30-N`.
+Topics found at search-result level; each cited outlet must be opened
+and read directly before any claim is written from it.
+
+Coverage limited to: the **21-billion cut from the 2026 defence budget**
+and the dispute over meeting NATO's 2 % commitment, including his own
+published statements (e15); the **unaired interview with President
+Pavel** — the opposition's accusation that the ministry blocked it
+(TN.cz) — where "censorship" is the opposition's characterization, never
+this site's; the **dispute over the selection of the Chief of the
+General Staff**, his refusal to vote for the PM's candidate and
+published calls for his resignation (Echo24); and the Prime Minister's
+published dissatisfaction with his army concept (Blesk). All of it is
+political-conflict reporting: positions attributed to whoever voiced
+them, no side's characterization adopted as fact.
+
+### Authorized subject: Jeroným Tejc (on the record)
+
+Authorized by the site owner, explicitly and on the record, 2026-07-30
+(per-subject selection in conversation with the proposed topic scope
+shown): an entity dossier may be created for **Jeroným Tejc** —
+Minister of Justice (nominated by ANO). `AUTH-2026-07-30-O`. Topics
+found at search-result level; each cited outlet must be opened and read
+directly before any claim is written from it.
+
+Coverage limited to: the **ministry bitcoin case** — his announced
+criminal complaint after an internal audit into the acceptance and sale
+of donated bitcoins under his predecessor (Echo24, Deník N); his
+**disciplinary complaint against the judge in the Viktorka case** and
+the related OSPOD referral (Blesk, Česká justice); and his **published
+questioning of the Constitutional Court's preliminary measure** in the
+president's dispute (Česká justice). Mandatory framing at every
+mention: an announced criminal complaint is not a charge and a charge
+is not a conviction; the predecessor and any judge appear only as a
+record of relation in the scope the cited reporting itself discloses;
+the child victim in the Viktorka case is never identified beyond what
+the cited reporting states.
+
+### Authorized subject: Zuzana Mrázová (on the record)
+
+Authorized by the site owner, explicitly and on the record, 2026-07-30
+(per-subject selection in conversation with the proposed topic scope
+shown): an entity dossier may be created for **Zuzana Mrázová** —
+Minister for Regional Development (ANO). `AUTH-2026-07-30-P`. Topics
+found at search-result level; each cited outlet must be opened and read
+directly before any claim is written from it.
+
+Coverage limited to: the **non-final fine for violating the
+conflict-of-interest law** — an unreported half-million family loan and
+changed explanations of a further 500,000 CZK (Seznam Zprávy as
+originating outlet, Deník N, Blesk) — **the fine must be stated as
+non-final at every mention**; the **municipal apartment in Bílina** and
+the published criticism of it (FORUM 24, ČT24); reported **structures
+on her property in conflict with the zoning plan**; and the
+opposition's resignation calls plus the justice ministry's referral for
+review (ČT24) — a referral is a procedural step, not a finding.
+
+### Authorized subject: Adam Vojtěch (on the record)
+
+Authorized by the site owner, explicitly and on the record, 2026-07-30
+(per-subject selection in conversation with the proposed topic scope
+shown): an entity dossier may be created for **Adam Vojtěch** —
+Minister of Health (ANO). `AUTH-2026-07-30-Q`. Topics found at
+search-result level; each cited outlet must be opened and read directly
+before any claim is written from it.
+
+Coverage limited to: the **FN Olomouc defibrillator-study case** —
+reported manipulation of study documentation, the March 2026 criminal
+report, and published criticism of the minister's initial restraint
+(Seznam Zprávy) — the criminal report targets the hospital matter, not
+the minister personally, and that distinction must be kept explicit;
+the **tax-advantaged health-benefits proposal** and the published
+conflict-of-interest debate concerning the Prime Minister's clinics
+(Reflex, Zdravotnický deník) — commentary labeled as commentary; and
+the **coalition SPD's published criticism of his vaccination strategy**
+(Echo24).
+
+### Authorized subject: Igor Červený (on the record)
+
+Authorized by the site owner, explicitly and on the record, 2026-07-30
+(per-subject selection in conversation with the proposed topic scope
+shown): an entity dossier may be created for **Igor Červený** —
+Minister of the Environment (Motoristé sobě), already present in this
+repository as a context entity in the macinka-turek dossier (his 2026
+appointment, CLM-43). `AUTH-2026-07-30-R`. Topics found at
+search-result level; each cited outlet must be opened and read directly
+before any claim is written from it.
+
+Coverage limited to: the **11.4-million-crown house missing from his
+asset declaration** and the potential fine (Blesk) — administrative,
+nothing final; the **conflict-of-interest referral** concerning his
+role in a podcast company (Blesk); the **3-million-crown office
+renovation** and the ministerial office ceded to Filip Turek (Blesk);
+and the **ten-day USA trip** with reported refusal to disclose
+meetings, delegation and funding (Deník N). Cross-linking to the
+existing macinka-turek appointment coverage is in scope; no new topic
+about Turek is authorized by this entry.
+
+### Authorized subject: Robert Plaga (on the record)
+
+Authorized by the site owner, explicitly and on the record, 2026-07-30
+(per-subject selection in conversation with the proposed topic scope
+shown): an entity dossier may be created for **Robert Plaga** —
+Minister of Education, Youth and Sports (ANO). `AUTH-2026-07-30-S`.
+Topics found at search-result level; each cited outlet must be opened
+and read directly before any claim is written from it.
+
+Coverage limited to: the **halted testing of 5th/9th graders** —
+technical failures and criticized questions about pupils' personal
+lives (Blesk); his **reversal on the school mobile-phone ban** — March
+condemnation vs. the July legislative proposal (zdravezpravy.cz); and
+the **shortening of the 2025/2026 school year** announced three months
+ahead and parents' published reactions (Deník.cz). These are policy
+controversies — no allegation of unlawful conduct is made by the cited
+reporting and none may be implied.
+
+### Authorized subject: Martin Šebestyán (on the record)
+
+Authorized by the site owner, explicitly and on the record, 2026-07-30
+(per-subject selection in conversation with the proposed topic scope
+shown): an entity dossier may be created for **Martin Šebestyán** —
+Minister of Agriculture (nominated by SPD). `AUTH-2026-07-30-T`. Topics
+found at search-result level; each cited outlet must be opened and read
+directly before any claim is written from it.
+
+Coverage limited to: the reported **slowing/halting of the recovery of
+5.1–7 billion CZK in subsidies from the Agrofert group** (HlídacíPes —
+attributed commentary, kverulant.org, Deník N, Hospodářské noviny);
+published **criticism of his 2013–2022 leadership of SZIF** for paying
+subsidies to Agrofert companies amid the then-PM's conflict of interest
+(iROZHLAS, HN); and **Transparency International's published warning**
+against his nomination. Mandatory framing: no court has found
+wrongdoing by him; NGO and commentary assessments are always attributed
+to their authors, never adopted as this site's own finding.

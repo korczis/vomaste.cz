@@ -1,0 +1,32 @@
+# Relationship graph for the Zuzana Mrázová dossier. Projection of the
+# claim/source registries — every edge carries at least one CLM-## and one
+# SRC-## that exist there. Minimal by design: an edge exists only where a
+# claim and an opened source support it.
+
+[[nodes]]
+id = "mrazova"
+type = "person"
+label = "Zuzana Mrázová"
+depth = 0
+subject = true
+claims = ["CLM-01"]
+sources = ["SRC-01"]
+
+[[nodes]]
+id = "vlada"
+type = "public_institution"
+label = "Vláda ČR"
+depth = 1
+subject = false
+claims = ["CLM-01"]
+sources = ["SRC-01"]
+
+[[edges]]
+id = "edge-mrazova-vlada"
+source = "mrazova"
+target = "vlada"
+relation = "HOLDS_ROLE"
+label = "ministryně pro místní rozvoj"
+status = "contextual"
+claims = ["CLM-01"]
+sources = ["SRC-01"]

@@ -1,0 +1,32 @@
+# Relationship graph for the Karel Havlíček dossier. Projection of the
+# claim/source registries — every edge carries at least one CLM-## and one
+# SRC-## that exist there. Minimal by design: an edge exists only where a
+# claim and an opened source support it.
+
+[[nodes]]
+id = "havlicek"
+type = "person"
+label = "Karel Havlíček"
+depth = 0
+subject = true
+claims = ["CLM-01"]
+sources = ["SRC-01"]
+
+[[nodes]]
+id = "vlada"
+type = "public_institution"
+label = "Vláda ČR"
+depth = 1
+subject = false
+claims = ["CLM-01"]
+sources = ["SRC-01"]
+
+[[edges]]
+id = "edge-havlicek-vlada"
+source = "havlicek"
+target = "vlada"
+relation = "HOLDS_ROLE"
+label = "1. místopředseda vlády a ministr průmyslu a obchodu"
+status = "contextual"
+claims = ["CLM-01"]
+sources = ["SRC-01"]

@@ -1,0 +1,32 @@
+# Relationship graph for the Jeroným Tejc dossier. Projection of the
+# claim/source registries — every edge carries at least one CLM-## and one
+# SRC-## that exist there. Minimal by design: an edge exists only where a
+# claim and an opened source support it.
+
+[[nodes]]
+id = "tejc"
+type = "person"
+label = "Jeroným Tejc"
+depth = 0
+subject = true
+claims = ["CLM-01"]
+sources = ["SRC-01"]
+
+[[nodes]]
+id = "vlada"
+type = "public_institution"
+label = "Vláda ČR"
+depth = 1
+subject = false
+claims = ["CLM-01"]
+sources = ["SRC-01"]
+
+[[edges]]
+id = "edge-tejc-vlada"
+source = "tejc"
+target = "vlada"
+relation = "HOLDS_ROLE"
+label = "ministr spravedlnosti"
+status = "contextual"
+claims = ["CLM-01"]
+sources = ["SRC-01"]

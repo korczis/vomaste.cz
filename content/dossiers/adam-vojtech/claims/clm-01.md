@@ -1,0 +1,19 @@
++++
+title = "CLM-01"
+description = "Adam Vojtěch je podle oficiálního seznamu členů vlády na webu Úřadu vlády ministrem zdravotnictví"
+template = "dossier-claim.html"
+weight = 1
+
+[extra]
+dossier = "adam-vojtech"
+record_type = "claim"
+lang = "cs"
+clm_id = "CLM-01"
+status = "status-single"
+status_label = "1 ZDROJ"
+summary = "Adam Vojtěch je podle oficiálního seznamu členů vlády na webu Úřadu vlády ministrem zdravotnictví"
+sources = ["SRC-01"]
+subjects = ["vojtech"]
++++
+
+Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/adam-vojtech/_index.md#registr-tvrzeni).

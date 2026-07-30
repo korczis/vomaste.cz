@@ -106,6 +106,78 @@ canonical_dossier = "boris-stastny"
 show_in_primary_navigation = true
 
 [[dossiers]]
+# AGENTS.md AUTH-2026-07-30-E.
+slug = "karel-havlicek"
+title = "Karel Havlíček"
+dossier_type = "entity"
+subject = "havlicek"
+canonical_dossier = "karel-havlicek"
+show_in_primary_navigation = true
+
+[[dossiers]]
+# AGENTS.md AUTH-2026-07-30-F.
+slug = "jaromir-zuna"
+title = "Jaromír Zůna"
+dossier_type = "entity"
+subject = "zuna"
+canonical_dossier = "jaromir-zuna"
+show_in_primary_navigation = true
+
+[[dossiers]]
+# AGENTS.md AUTH-2026-07-30-G.
+slug = "jeronym-tejc"
+title = "Jeroným Tejc"
+dossier_type = "entity"
+subject = "tejc"
+canonical_dossier = "jeronym-tejc"
+show_in_primary_navigation = true
+
+[[dossiers]]
+# AGENTS.md AUTH-2026-07-30-H.
+slug = "zuzana-mrazova"
+title = "Zuzana Mrázová"
+dossier_type = "entity"
+subject = "mrazova"
+canonical_dossier = "zuzana-mrazova"
+show_in_primary_navigation = true
+
+[[dossiers]]
+# AGENTS.md AUTH-2026-07-30-I.
+slug = "adam-vojtech"
+title = "Adam Vojtěch"
+dossier_type = "entity"
+subject = "vojtech"
+canonical_dossier = "adam-vojtech"
+show_in_primary_navigation = true
+
+[[dossiers]]
+# AGENTS.md AUTH-2026-07-30-J.
+slug = "igor-cerveny"
+title = "Igor Červený"
+dossier_type = "entity"
+subject = "cerveny"
+canonical_dossier = "igor-cerveny"
+show_in_primary_navigation = true
+
+[[dossiers]]
+# AGENTS.md AUTH-2026-07-30-K.
+slug = "robert-plaga"
+title = "Robert Plaga"
+dossier_type = "entity"
+subject = "plaga"
+canonical_dossier = "robert-plaga"
+show_in_primary_navigation = true
+
+[[dossiers]]
+# AGENTS.md AUTH-2026-07-30-L.
+slug = "martin-sebestyan"
+title = "Martin Šebestyán"
+dossier_type = "entity"
+subject = "sebestyan"
+canonical_dossier = "martin-sebestyan"
+show_in_primary_navigation = true
+
+[[dossiers]]
 slug = "macinka-turek"
 title = "Petr Macinka a Filip Turek"
 dossier_type = "aggregate"

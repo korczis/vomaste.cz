@@ -1,0 +1,28 @@
++++
+title = "SRC-01 — Vláda ČR (oficiální web)"
+description = "Oficiální web Úřadu vlády: funkce a údaje, které stránka sama uvádí."
+template = "dossier-source.html"
+weight = 1
+
+[extra]
+subjects = ["sebestyan"]
+dossier = "martin-sebestyan"
+record_type = "source"
+lang = "cs"
+src_id = "SRC-01"
+outlet = "Vláda České republiky (vlada.gov.cz)"
+src_type = "oficiální primární zdroj"
+url = "https://vlada.gov.cz/cz/vlada/clenove-vlady/martin-sebestyan-223982/"
+retrieved = "2026-07-30"
+claims = ["CLM-01"]
++++
+
+Oficiální stránka na webu Úřadu vlády, otevřena a přečtena 2026-07-30.
+Uvádí funkci **ministr zemědělství** a doložený přehled kariéry: narozen 28. 9. 1973 v Pardubicích; ČZU (Ing. 1997, MBA 2003); generální ředitel SZIF (1/2014–8/2022), předtím 1. náměstek ředitele SZIF (2006–2013); dříve Ministerstvo zemědělství a agentura SAPARD.
+
+Poznámka k typu zdroje a jeho limitům: **primární úřední záznam** —
+dokládá existenci a formulaci úředního údaje, ne nezávislé redakční
+posouzení. Potvrzení **současné** funkce v této vládě vychází z ověření
+oficiálního seznamu členů vlády k 2026-07-30 (viz
+`data/government.toml`). Sebeprezentační části profilu nejsou nezávisle
+ověřeným faktem a dossier je jako fakt nepřebírá.

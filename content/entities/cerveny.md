@@ -2,24 +2,24 @@
 title = "Igor Červený"
 template = "entity.html"
 weight = 17
-aliases = ["/dossiers/macinka-turek/entities/cerveny/"]
+aliases = ["/dossiers/macinka-turek/entities/cerveny/", "/dossiers/igor-cerveny/entities/cerveny/"]
 
 [extra]
 record_type = "entity"
 entity_id = "cerveny"
 entity_type = "person"
-depth = 1
-subject = false
-publication_role = "context"
-dossier_enabled = false
-dossier_status = "not_authorized"
-coverage_state = "contextual"
+depth = 0
+subject = true
+publication_role = "subject"
+dossier_enabled = true
+dossier_status = "authorized"
+coverage_state = "developing"
 discovered_at = "2026-07-29"
 discovered_via = ["edge-cerveny-mzp2026", "edge-macinka-cerveny"]
-dossiers = ["macinka-turek", "petr-macinka"]
+dossiers = ["macinka-turek", "petr-macinka", "igor-cerveny"]
 cluster = "politicke-role"
-claims = ["CLM-43"]
-sources = ["SRC-49", "SRC-50"]
+claims = ["CLM-43", "CLM-01"]
+sources = ["SRC-49", "SRC-50", "SRC-01"]
 government_office = "ministr životního prostředí"
 government_party = "Motoristé sobě"
 government_snapshot = "2026-07-30"
