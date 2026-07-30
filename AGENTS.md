@@ -1145,3 +1145,69 @@ Coverage limited to:
 offence; any claim that he acted as an intermediary or handler for any
 person, for which no cited source exists; and any new topic about Andrej
 Babiš, who has his own dossier and authorization.
+
+### Authorized subject: Richard Chlad (on the record)
+
+Authorized by the site owner, explicitly and on the record, 2026-07-30:
+an entity dossier may be created for **Richard Chlad** — businessman and
+documented donor to the political party Motoristé sobě, which is part of
+the current government. `AUTH-2026-07-30-W`.
+
+**Basis for the public-interest test (constitution §7):** not his
+private life and not who he knows. **Party financing.** Money given to a
+party now in government is a public act, recorded in a public register,
+and already reported by named outlets — the three sources below were
+opened and read on 2026-07-29/30 while building the macinka-turek
+dossier, where he is currently a depth-2 context entity (CLM-36, CLM-37;
+SRC-41 Hlídač státu, SRC-42 CNN Prima News 2025-10-16, SRC-43
+Aktuálně.cz 2026-03-17).
+
+Coverage limited to:
+
+1. **His registered donations to Motoristé sobě** and the **published
+   discrepancy** between the officially recorded 638 864 CZK for 2025 and
+   his own public statement of support worth "necelé dva miliony" — which
+   per CNN Prima News included non-monetary provision (vehicle loans), so
+   the two figures do not measure the same thing. That reconciliation
+   must be stated wherever the discrepancy is; presenting the gap without
+   it would manufacture a contradiction the sources do not support.
+2. **The published responses of the party's representatives** — that
+   Turek and Macinka publicly denied he played any significant role
+   around the party, and that Macinka cited lower figures than Chlad
+   himself did.
+
+**Mandatory framing:** donating to a political party is **lawful**. No
+cited source alleges unlawful conduct by him, and none may be implied.
+The subject of this dossier is the **transparency of party financing**,
+not an accusation against a donor.
+
+**Explicitly out of scope**, and not authorized by this entry: his
+reported earlier personal association with Radovan Krejčíř as a *topic*
+in its own right — it may appear only as it already does in the cited
+reporting, as an attributed descriptive detail, never developed into a
+line of coverage; his business activities generally; and any new topic
+about Petr Macinka or Filip Turek, who have their own dossiers.
+
+### Not authorized: Radovan Krejčíř (on the record)
+
+The site owner proposed **Radovan Krejčíř** as a subject on 2026-07-30.
+**No dossier is authorized**, and this entry records the reasoning so the
+question is not silently reopened.
+
+He holds **no public function**. His convictions are final and are
+therefore publishable facts rather than suspicions, but the
+constitution's public-interest test (§7) asks what public office, public
+money, or institutional responsibility is at stake — and for a private
+convicted individual the answer is none. A dossier about him would be a
+true-crime profile, which is a different product from accountability
+coverage of public power, and README's "what this is not" rules it out.
+
+He may appear as a **context entity** where named reporting documents a
+relationship to an authorized subject — which is how he already appears
+in the Chlad material. That is the correct role for him.
+
+If the owner wants him covered as a subject, the only defensible framing
+is **institutional**: how state bodies handled his case. That is a
+separate, much larger undertaking and would need its own authorization
+stating exactly which institutional failures, evidenced by which named
+sources — not an extension of this one.

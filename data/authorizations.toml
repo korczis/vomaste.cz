@@ -139,3 +139,10 @@ authorized_at = "2026-07-30"
 subjects = ["faltynek"]
 agents_md_section = "Authorized subject: Jaroslav Faltýnek (on the record)"
 scope_summary = "Poslanec od 2013-10, místopředseda klubu ANO od 2025-10-08, zemědělský výbor od 2025-11-11, předseda klubu ANO 2013–2021, bývalý 1. místopředseda ANO. NIKDY nebyl členem vlády — „pravá ruka Babiše“ je stranická role, ne veřejný úřad. Čapí hnízdo: mezi původně obviněnými 2015, vydán Sněmovnou 2017, STÍHÁNÍ ZASTAVENO státním zástupcem v květnu 2018 — zastavení je fakt, který se reportuje; nikdy odsouzen nebyl a před soud nešel; zastavení je procesní výsledek, ne rozhodnutí o vině ani soudní konstatování neviny. Svědectví u soudu ve prospěch Babiše (Echo24) jako CITACE — doloženo, že výrok padl, nikdy že platí. MIMO ROZSAH: jakékoli tvrzení o trestném činu, o roli prostředníka, a jakékoli nové téma o Babišovi."
+
+[[authorizations]]
+id = "AUTH-2026-07-30-W"
+authorized_at = "2026-07-30"
+subjects = ["chlad"]
+agents_md_section = "Authorized subject: Richard Chlad (on the record)"
+scope_summary = "Podnikatel a doložený dárce strany Motoristé sobě (dnes ve vládě). Základ veřejného zájmu = FINANCOVÁNÍ STRAN, ne napojení na osoby. Rozsah: evidované dary (638 864 Kč za 2025) a publikovaný rozpor vůči jeho vlastnímu vyjádření o „necelých dvou milionech“ — POVINNĚ vždy s vysvětlením, že jde o nepeněžní plnění (zápůjčky vozů) a obě čísla neměří totéž; publikované reakce Turka a Macinky, kteří jeho významnější roli odmítali. POVINNÉ RÁMOVÁNÍ: darovat straně je legální, žádný citovaný zdroj mu nevytýká protiprávní jednání a nesmí se to implikovat; tématem je transparentnost financování, ne obvinění dárce. MIMO ROZSAH: dřívější osobní vazba na R. Krejčíře jako samostatné téma (jen jako atribuovaný popisný detail, jak už je v citovaném zpravodajství), podnikání obecně, nová témata o Macinkovi a Turkovi. Zdroje již otevřeny: SRC-41 Hlídač státu, SRC-42 CNN Prima News 2025-10-16, SRC-43 Aktuálně.cz 2026-03-17 (macinka-turek)."
