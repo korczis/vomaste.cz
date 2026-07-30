@@ -1,0 +1,40 @@
+{
+ "generated_by": "scripts/dossier/build-data-exports.mjs",
+ "tables": [
+  {
+   "table": "claims",
+   "rows": 45,
+   "url": "/data/claims.json"
+  },
+  {
+   "table": "sources",
+   "rows": 54,
+   "url": "/data/sources.json"
+  },
+  {
+   "table": "cases",
+   "rows": 4,
+   "url": "/data/cases.json"
+  },
+  {
+   "table": "gaps",
+   "rows": 6,
+   "url": "/data/gaps.json"
+  },
+  {
+   "table": "relations",
+   "rows": 31,
+   "url": "/data/relations.json"
+  },
+  {
+   "table": "entities",
+   "rows": 23,
+   "url": "/data/entities.json"
+  },
+  {
+   "table": "dossiers",
+   "rows": 3,
+   "url": "/data/dossiers.json"
+  }
+ ]
+}

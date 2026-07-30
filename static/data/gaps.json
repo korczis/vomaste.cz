@@ -1,0 +1,104 @@
+[
+ {
+  "gap_id": "GAP-01",
+  "dossier": "macinka-turek",
+  "priority": "vysoká",
+  "checked": "2026-07-29",
+  "claims": [
+   "CLM-10",
+   "CLM-16",
+   "CLM-17",
+   "CLM-18"
+  ],
+  "subjects": [
+   "turek"
+  ],
+  "url": "/dossiers/macinka-turek/gaps/gap-01/"
+ },
+ {
+  "gap_id": "GAP-02",
+  "dossier": "macinka-turek",
+  "priority": "vysoká",
+  "checked": "2026-07-23",
+  "claims": [
+   "CLM-11",
+   "CLM-12",
+   "CLM-38",
+   "CLM-40"
+  ],
+  "subjects": [
+   "macinka",
+   "turek"
+  ],
+  "url": "/dossiers/macinka-turek/gaps/gap-02/"
+ },
+ {
+  "gap_id": "GAP-03",
+  "dossier": "macinka-turek",
+  "priority": "vysoká",
+  "checked": "2026-07-29",
+  "claims": [
+   "CLM-07",
+   "CLM-08",
+   "CLM-09",
+   "CLM-19",
+   "CLM-41",
+   "CLM-42"
+  ],
+  "subjects": [
+   "turek"
+  ],
+  "url": "/dossiers/macinka-turek/gaps/gap-03/"
+ },
+ {
+  "gap_id": "GAP-04",
+  "dossier": "macinka-turek",
+  "priority": "nízká",
+  "checked": "2026-07-29",
+  "claims": [
+   "CLM-14",
+   "CLM-15",
+   "CLM-20",
+   "CLM-22",
+   "CLM-34"
+  ],
+  "subjects": [
+   "macinka",
+   "turek"
+  ],
+  "url": "/dossiers/macinka-turek/gaps/gap-04/"
+ },
+ {
+  "gap_id": "GAP-05",
+  "dossier": "macinka-turek",
+  "priority": "nízká",
+  "checked": "2026-07-23",
+  "claims": [
+   "CLM-21",
+   "CLM-23",
+   "CLM-35",
+   "CLM-36",
+   "CLM-37"
+  ],
+  "subjects": [
+   "macinka",
+   "turek"
+  ],
+  "url": "/dossiers/macinka-turek/gaps/gap-05/"
+ },
+ {
+  "gap_id": "GAP-06",
+  "dossier": "macinka-turek",
+  "priority": "vysoká",
+  "checked": "2026-07-29",
+  "claims": [
+   "CLM-25",
+   "CLM-26",
+   "CLM-27"
+  ],
+  "subjects": [
+   "turek"
+  ],
+  "url": "/dossiers/macinka-turek/gaps/gap-06/"
+ }
+]

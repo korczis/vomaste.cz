@@ -22,6 +22,7 @@ import { initStatusChart } from "./modules/charts.js";
 import { initFullscreenButtons } from "./modules/fullscreen.js";
 import { initSidebarAria } from "./modules/shell.js";
 import { initGraphView } from "./modules/graph-view.js";
+import { initSqlConsole } from "./modules/sql-console.js";
 
 document.addEventListener("alpine:init", function () {
   registerClaimsFilter();
@@ -38,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
   initStatusChart();
   initFullscreenButtons();
   initSidebarAria();
+  initSqlConsole();
   // Both checked defensively inside initGraphView (container/data-island
   // absent on pages without a graph) — the per-dossier local graph and the
   // global map each carry their own container/data-island/search-index ids.

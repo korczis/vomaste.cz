@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+{% import "macros/ui.html" as ui %}
+
+{#- /data/ — in-browser SQL console over the generated registry exports.
+    The heavy part (DuckDB-Wasm, several MB) is loaded only after the visitor
+    presses the start button; see assets/js/modules/sql-console.js and
+    docs/adr/duckdb-wasm-and-sigma.md. Everything on this page degrades:
+    without JS the tables are still downloadable as plain JSON below. -#}
+
+{% block content %}
+<main class="mx-auto max-w-5xl px-6 py-12 text-white">
+  {{ ui::page_header(title=section.title, breadcrumb_items=[
+    "Domů::" ~ get_url(path="@/_index.md"),
+    section.title,
+  ], description=section.description) }}
+
+  <article class="dossier-prose mb-10">{{ section.content | safe }}</article>
+
+  {% set manifest = load_data(path="static/data/manifest.json") %}
+
+  <section id="sql-console" class="mb-12 rounded-xl border border-white/10 bg-white/[0.03]" aria-labelledby="sql-heading">
+    <div class="border-b border-white/10 p-5">
+      <h2 id="sql-heading" class="text-lg font-semibold text-white">SQL konzole</h2>
+      <p class="mt-2 text-sm leading-relaxed text-white/60">
+        Poběží ve vašem prohlížeči přes DuckDB-Wasm. Spuštěním se z jsDelivr
+        stáhne <strong class="text-white/80">~6 MB komprimovaně</strong>
+        (34 MB rozbaleno, naměřeno) — proto se nic nenačítá samo a na
+        mobilních datech to zvažte. Bez JavaScriptu nebo při blokované CDN
+        zůstávají data ke stažení jako JSON níže; ta mají dohromady desítky
+        kilobajtů.
+      </p>
+      <button type="button" data-sql-start
+        class="mt-4 inline-flex min-h-11 items-center justify-center rounded-lg bg-[#f3e5c0] px-5 text-sm font-bold text-black transition-colors hover:bg-[#e9d6a0]">
+        Spustit SQL konzoli
+      </button>
+    </div>
+
+    <div data-sql-panel hidden>
+      <div class="flex flex-wrap gap-2 border-b border-white/10 p-4">
+        {%- set examples = [
+          "Rozdělení tvrzení podle stavu::SELECT status_label, count(*) AS pocet FROM claims GROUP BY 1 ORDER BY 2 DESC",
+          "Nejcitovanější vydavatelé::SELECT outlet, count(*) AS zdroju, sum(claim_count) AS podepira_tvrzeni FROM sources GROUP BY 1 ORDER BY 2 DESC",
+          "Tvrzení s jediným zdrojem::SELECT clm_id, summary, url FROM claims WHERE source_count = 1 ORDER BY clm_id",
+          "Otevřené mezery podle priority::SELECT gap_id, priority, checked, url FROM gaps ORDER BY priority, gap_id",
+          "Zdroje, které nepodpírají nic::SELECT src_id, outlet, url FROM sources WHERE claim_count = 0",
+        ] -%}
+        {%- for ex in examples %}
+        {%- set parts = ex | split(pat="::") %}
+        <button type="button" data-sql-example="{{ parts.1 }}"
+          class="inline-flex min-h-8 items-center rounded-lg border border-white/15 px-3 text-xs text-white/70 transition-colors hover:border-white/35 hover:text-white">{{ parts.0 }}</button>
+        {%- endfor %}
+      </div>
+
+      <div class="p-4">
+        <label for="sql-input" class="sr-only">SQL dotaz</label>
+        <textarea id="sql-input" data-sql-input rows="4" spellcheck="false"
+          class="w-full rounded-lg border border-white/15 bg-black p-3 font-mono text-sm text-white/90 focus:border-[#f3e5c0]/50 focus:outline-none">SELECT status_label, count(*) AS pocet FROM claims GROUP BY 1 ORDER BY 2 DESC</textarea>
+        <div class="mt-3 flex flex-wrap items-center gap-3">
+          <button type="button" data-sql-run
+            class="inline-flex min-h-11 items-center justify-center rounded-lg border border-white/25 px-5 text-sm font-semibold text-white transition-colors hover:border-white/50 hover:bg-white/5">
+            Spustit dotaz
+          </button>
+          <span class="text-xs text-white/40">nebo <kbd class="rounded border border-white/20 px-1">Ctrl</kbd>/<kbd class="rounded border border-white/20 px-1">⌘</kbd> + <kbd class="rounded border border-white/20 px-1">Enter</kbd></span>
+          <span data-sql-status aria-live="polite" class="text-xs text-white/50"></span>
+        </div>
+      </div>
+
+      <div data-sql-output class="overflow-x-auto border-t border-white/10"></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="tables-heading" class="mb-12">
+    <h2 id="tables-heading" class="mb-1 text-xs font-semibold uppercase tracking-wide text-white/40">Tabulky</h2>
+    <p class="mb-4 text-sm text-white/60">
+      Generuje <code>scripts/dossier/build-data-exports.mjs</code> při každém buildu
+      z týchž dat, ze kterých se renderují stránky. Prostý JSON, stabilní URL,
+      použitelné s <code>curl</code> a <code>jq</code> bez jakéhokoli WASM.
+    </p>
+    <div class="grid gap-3 sm:grid-cols-2">
+      {%- for t in manifest.tables %}
+      <a href="{{ get_url(path='data/' ~ t.table ~ '.json') | safe }}" class="registry-card">
+        <span class="flex flex-wrap items-baseline gap-2">
+          <span class="font-mono text-sm font-semibold text-[#f3e5c0]">{{ t.table }}</span>
+          <span class="text-xs text-white/50">{{ t.rows }} řádků</span>
+        </span>
+        <span class="mt-1 font-mono text-xs text-white/40">{{ t.url }}</span>
+      </a>
+      {%- endfor %}
+    </div>
+  </section>
+
+  <section aria-labelledby="limits-heading" class="mb-12 rounded-xl border border-[#d4af37]/30 bg-[#d4af37]/[0.05] p-5">
+    <h2 id="limits-heading" class="mb-2 text-xs font-semibold uppercase tracking-wide text-[#f3e5c0]/80">Co si z dotazů nevyvozovat</h2>
+    <ul class="space-y-2 text-sm leading-relaxed text-white/70">
+      <li><code>status</code> popisuje <strong class="text-white/85">zdrojování</strong>, ne pravdivost — „CORROBORATED" znamená dvě nezávislé redakce, ne rozhodnutí o vině.</li>
+      <li>Počet tvrzení u subjektu není míra provinění; je to míra toho, kolik toho bylo publikováno a zaznamenáno.</li>
+      <li>Dataset pokrývá jen <a href="{{ get_url(path='@/dossiers/_index.md') | safe }}" class="text-[#f3e5c0] underline">autorizované dossiery</a> a jen to, co vyšlo ve jmenovaných zdrojích. Absence řádku není doklad, že se něco nestalo — otevřené otázky jsou v tabulce <code>gaps</code>.</li>
+      <li>Sloupec <code>subjects</code> je editorské určení, koho se záznam týká, ne strojově odvozená vlastnost.</li>
+    </ul>
+  </section>
+
+  {{ ui::back_link_footer(url=get_url(path="@/_index.md"), label="Zpět na úvod") }}
+</main>
+{% endblock content %}

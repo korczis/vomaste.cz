@@ -1,0 +1,262 @@
+[
+ {
+  "entity_id": "babis",
+  "title": "Andrej Babiš (premiér)",
+  "entity_type": "person",
+  "role": null,
+  "dossiers": [
+   "macinka-turek",
+   "petr-macinka",
+   "filip-turek"
+  ],
+  "url": "/entities/babis/"
+ },
+ {
+  "entity_id": "cerveny",
+  "title": "Igor Červený",
+  "entity_type": "person",
+  "role": null,
+  "dossiers": [
+   "macinka-turek",
+   "petr-macinka"
+  ],
+  "url": "/entities/cerveny/"
+ },
+ {
+  "entity_id": "chlad",
+  "title": "Richard Chlad (sponzor)",
+  "entity_type": "person",
+  "role": null,
+  "dossiers": [
+   "macinka-turek",
+   "petr-macinka",
+   "filip-turek"
+  ],
+  "url": "/entities/chlad/"
+ },
+ {
+  "entity_id": "ep",
+  "title": "Evropský parlament",
+  "entity_type": "public_institution",
+  "role": null,
+  "dossiers": [
+   "macinka-turek",
+   "filip-turek"
+  ],
+  "url": "/entities/ep/"
+ },
+ {
+  "entity_id": "gmrgas",
+  "title": "GMR GAS UA LLC (Kyjev)",
+  "entity_type": "company",
+  "role": null,
+  "dossiers": [
+   "macinka-turek",
+   "petr-macinka"
+  ],
+  "url": "/entities/gmrgas/"
+ },
+ {
+  "entity_id": "greendeal",
+  "title": "Zmocněnec pro Green Deal",
+  "entity_type": "role",
+  "role": null,
+  "dossiers": [
+   "macinka-turek",
+   "filip-turek"
+  ],
+  "url": "/entities/greendeal/"
+ },
+ {
+  "entity_id": "kauza2024",
+  "title": "Kauza 2024: fotografie a svícny",
+  "entity_type": "controversy",
+  "role": null,
+  "dossiers": [
+   "macinka-turek",
+   "petr-macinka",
+   "filip-turek"
+  ],
+  "url": "/entities/kauza2024/"
+ },
+ {
+  "entity_id": "kauza2025",
+  "title": "Kauza 2025: smazané příspěvky",
+  "entity_type": "controversy",
+  "role": null,
+  "dossiers": [
+   "macinka-turek",
+   "filip-turek"
+  ],
+  "url": "/entities/kauza2025/"
+ },
+ {
+  "entity_id": "klubmotoristu",
+  "title": "Klub motoristů, z.s.",
+  "entity_type": "organization",
+  "role": null,
+  "dossiers": [
+   "macinka-turek",
+   "petr-macinka"
+  ],
+  "url": "/entities/klubmotoristu/"
+ },
+ {
+  "entity_id": "macinka",
+  "title": "Petr Macinka",
+  "entity_type": "person",
+  "role": null,
+  "dossiers": [
+   "macinka-turek",
+   "petr-macinka"
+  ],
+  "url": "/entities/macinka/"
+ },
+ {
+  "entity_id": "motoriste",
+  "title": "Motoristé sobě",
+  "entity_type": "political_party",
+  "role": null,
+  "dossiers": [
+   "macinka-turek",
+   "petr-macinka",
+   "filip-turek"
+  ],
+  "url": "/entities/motoriste/"
+ },
+ {
+  "entity_id": "mzdrav",
+  "title": "Ministerstvo zdravotnictví",
+  "entity_type": "public_institution",
+  "role": null,
+  "dossiers": [
+   "macinka-turek",
+   "filip-turek"
+  ],
+  "url": "/entities/mzdrav/"
+ },
+ {
+  "entity_id": "mzp2026",
+  "title": "Jmenování ministrem ŽP (2026)",
+  "entity_type": "controversy",
+  "role": null,
+  "dossiers": [
+   "macinka-turek",
+   "petr-macinka",
+   "filip-turek"
+  ],
+  "url": "/entities/mzp2026/"
+ },
+ {
+  "entity_id": "nehoda2026",
+  "title": "Nehoda 2026",
+  "entity_type": "event",
+  "role": null,
+  "dossiers": [
+   "macinka-turek",
+   "petr-macinka",
+   "filip-turek"
+  ],
+  "url": "/entities/nehoda2026/"
+ },
+ {
+  "entity_id": "nemocnice-homolce",
+  "title": "Nemocnice Na Homolce",
+  "entity_type": "public_institution",
+  "role": null,
+  "dossiers": [
+   "macinka-turek",
+   "filip-turek"
+  ],
+  "url": "/entities/nemocnice-homolce/"
+ },
+ {
+  "entity_id": "pavel",
+  "title": "Petr Pavel (prezident)",
+  "entity_type": "person",
+  "role": null,
+  "dossiers": [
+   "macinka-turek",
+   "filip-turek"
+  ],
+  "url": "/entities/pavel/"
+ },
+ {
+  "entity_id": "policie",
+  "title": "Policie ČR",
+  "entity_type": "public_institution",
+  "role": null,
+  "dossiers": [
+   "macinka-turek",
+   "filip-turek"
+  ],
+  "url": "/entities/policie/"
+ },
+ {
+  "entity_id": "statni-zastupitelstvi",
+  "title": "Státní zastupitelství",
+  "entity_type": "public_institution",
+  "role": null,
+  "dossiers": [
+   "macinka-turek",
+   "filip-turek"
+  ],
+  "url": "/entities/statni-zastupitelstvi/"
+ },
+ {
+  "entity_id": "szpi",
+  "title": "SZPI",
+  "entity_type": "public_institution",
+  "role": null,
+  "dossiers": [
+   "macinka-turek",
+   "filip-turek"
+  ],
+  "url": "/entities/szpi/"
+ },
+ {
+  "entity_id": "trestniozn",
+  "title": "Trestní oznámení (2025)",
+  "entity_type": "legal_or_administrative_process",
+  "role": null,
+  "dossiers": [
+   "macinka-turek",
+   "filip-turek"
+  ],
+  "url": "/entities/trestniozn/"
+ },
+ {
+  "entity_id": "turek",
+  "title": "Filip Turek",
+  "entity_type": "person",
+  "role": null,
+  "dossiers": [
+   "macinka-turek",
+   "filip-turek"
+  ],
+  "url": "/entities/turek/"
+ },
+ {
+  "entity_id": "vlada",
+  "title": "Vláda (ANO + SPD + Motoristé)",
+  "entity_type": "public_institution",
+  "role": null,
+  "dossiers": [
+   "macinka-turek",
+   "petr-macinka",
+   "filip-turek"
+  ],
+  "url": "/entities/vlada/"
+ },
+ {
+  "entity_id": "zapper-club",
+  "title": "Zapper-Club s.r.o.",
+  "entity_type": "company",
+  "role": null,
+  "dossiers": [
+   "macinka-turek",
+   "filip-turek"
+  ],
+  "url": "/entities/zapper-club/"
+ }
+]

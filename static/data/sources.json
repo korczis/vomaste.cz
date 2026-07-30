@@ -1,0 +1,953 @@
+[
+ {
+  "src_id": "SRC-01",
+  "dossier": "macinka-turek",
+  "outlet": "Echo24.cz",
+  "src_type": "zpravodajství",
+  "published": "2026-07-15",
+  "retrieved": "2026-07-21",
+  "claims": [
+   "CLM-13"
+  ],
+  "claim_count": 1,
+  "subjects": [
+   "macinka",
+   "turek"
+  ],
+  "source_url": "https://www.echo24.cz/a/HkCB9/zpravy-domaci-turka-se-nikdy-nevzdam-budu-mu-odrezavat-opratku-rika-macinka-okamura-imunita",
+  "url": "/dossiers/macinka-turek/sources/src-01/"
+ },
+ {
+  "src_id": "SRC-02",
+  "dossier": "macinka-turek",
+  "outlet": "Echo24.cz",
+  "src_type": "zpravodajství",
+  "published": "2026-07-18",
+  "retrieved": "2026-07-21",
+  "claims": [
+   "CLM-10"
+  ],
+  "claim_count": 1,
+  "subjects": [
+   "turek"
+  ],
+  "source_url": "https://www.echo24.cz/a/HRupy/filip-turek-autonehoda-policie-advokat-terminy-vysetrovani-lhuty-ondrej-horazny-trestny-cin-prestupek",
+  "url": "/dossiers/macinka-turek/sources/src-02/"
+ },
+ {
+  "src_id": "SRC-03",
+  "dossier": "macinka-turek",
+  "outlet": "Info.cz",
+  "src_type": "komentář / názor",
+  "published": "2026-01-08",
+  "retrieved": "2026-07-21",
+  "claims": [],
+  "claim_count": 0,
+  "subjects": [
+   "macinka",
+   "turek"
+  ],
+  "source_url": "https://www.info.cz/zpravodajstvi-a-komentare/macinka-turek-konec-motoriste",
+  "url": "/dossiers/macinka-turek/sources/src-03/"
+ },
+ {
+  "src_id": "SRC-04",
+  "dossier": "macinka-turek",
+  "outlet": "Blesk.cz",
+  "src_type": "zpravodajství (tabloid)",
+  "published": "2026-07-15",
+  "retrieved": "2026-07-21",
+  "claims": [
+   "CLM-13"
+  ],
+  "claim_count": 1,
+  "subjects": [
+   "macinka",
+   "turek"
+  ],
+  "source_url": "https://www.blesk.cz/clanek/zpravy-politika/843922/macinka-brani-turka-po-bouracce-nikdy-se-ho-nevzdam-budu-za-nej-bojovat.html",
+  "url": "/dossiers/macinka-turek/sources/src-04/"
+ },
+ {
+  "src_id": "SRC-05",
+  "dossier": "macinka-turek",
+  "outlet": "ČT24 (Česká televize)",
+  "src_type": "veřejnoprávní zpravodajství",
+  "published": "2026-01-07",
+  "retrieved": "2026-07-21",
+  "claims": [],
+  "claim_count": 0,
+  "subjects": [
+   "macinka",
+   "turek"
+  ],
+  "source_url": "https://ct24.ceskatelevize.cz/clanek/domaci/je-byl-a-bude-to-turek-rekl-macinka-k-nominaci-na-ministra-zivotniho-prostredi-369026",
+  "url": "/dossiers/macinka-turek/sources/src-05/"
+ },
+ {
+  "src_id": "SRC-06",
+  "dossier": "macinka-turek",
+  "outlet": "ČT24 (Česká televize)",
+  "src_type": "veřejnoprávní zpravodajství",
+  "published": "2026-07-14",
+  "retrieved": "2026-07-21",
+  "claims": [
+   "CLM-11",
+   "CLM-12"
+  ],
+  "claim_count": 2,
+  "subjects": [
+   "turek"
+  ],
+  "source_url": "https://ct24.ceskatelevize.cz/clanek/domaci/pokud-zabery-z-nehody-nelzou-turek-by-mel-rezignovat-rekl-babis-375570",
+  "url": "/dossiers/macinka-turek/sources/src-06/"
+ },
+ {
+  "src_id": "SRC-07",
+  "dossier": "macinka-turek",
+  "outlet": "ČeskéNoviny.cz",
+  "src_type": "tisková agentura (ČTK síť)",
+  "published": "2026-07-14",
+  "retrieved": "2026-07-21",
+  "claims": [
+   "CLM-11",
+   "CLM-12"
+  ],
+  "claim_count": 2,
+  "subjects": [
+   "turek"
+  ],
+  "source_url": "https://www.ceskenoviny.cz/zpravy/babis-mluvil-s-macinkou-o-turkove-nehode-ve-hre-je-post-zmocnence/2850518",
+  "url": "/dossiers/macinka-turek/sources/src-07/"
+ },
+ {
+  "src_id": "SRC-08",
+  "dossier": "macinka-turek",
+  "outlet": "iROZHLAS.cz (Český rozhlas)",
+  "src_type": "veřejnoprávní zpravodajství",
+  "published": "2026-07-14",
+  "retrieved": "2026-07-21",
+  "claims": [
+   "CLM-11",
+   "CLM-12"
+  ],
+  "claim_count": 2,
+  "subjects": [
+   "turek"
+  ],
+  "source_url": "https://www.irozhlas.cz/zpravy-domov/pokud-se-zabery-potvrdi-mel-rezignovat-premier-babis-mluvil-s-macinkou-o-turkove_2607141755_jva",
+  "url": "/dossiers/macinka-turek/sources/src-08/"
+ },
+ {
+  "src_id": "SRC-09",
+  "dossier": "macinka-turek",
+  "outlet": "HlídacíPes.org",
+  "src_type": "komentář / názor",
+  "published": "2026-04-13",
+  "retrieved": "2026-07-21",
+  "claims": [],
+  "claim_count": 0,
+  "subjects": [
+   "macinka",
+   "turek"
+  ],
+  "source_url": "https://hlidacipes.org/ales-rozehnal-macinka-a-turek-si-hraji-na-mazaky-ceka-je-navrat-k-bezvyznamnosti/",
+  "url": "/dossiers/macinka-turek/sources/src-09/"
+ },
+ {
+  "src_id": "SRC-10",
+  "dossier": "macinka-turek",
+  "outlet": "Život v Česku",
+  "src_type": "zpravodajství",
+  "published": "2026-07-15",
+  "retrieved": "2026-07-21",
+  "claims": [],
+  "claim_count": 0,
+  "subjects": [
+   "macinka",
+   "turek"
+  ],
+  "source_url": "https://zivotvcesku.cz/macinka-se-pustil-do-pavla-po-jeho-slovech-k-turkove-nehode-jiny-by-pry-mohl-rict-nerespektuje-ustavu-at-abdikuje/",
+  "url": "/dossiers/macinka-turek/sources/src-10/"
+ },
+ {
+  "src_id": "SRC-11",
+  "dossier": "macinka-turek",
+  "outlet": "Seznam Zprávy",
+  "src_type": "zpravodajství",
+  "published": "2025-05-30",
+  "retrieved": "2026-07-21",
+  "claims": [
+   "CLM-01",
+   "CLM-02",
+   "CLM-03"
+  ],
+  "claim_count": 3,
+  "subjects": [
+   "macinka",
+   "turek"
+  ],
+  "source_url": "https://www.seznamzpravy.cz/clanek/volby-do-poslanecke-snemovny-motoriste-se-dockali-turek-chce-vymenit-brusel-za-prahu-277943",
+  "url": "/dossiers/macinka-turek/sources/src-11/"
+ },
+ {
+  "src_id": "SRC-12",
+  "dossier": "macinka-turek",
+  "outlet": "iROZHLAS.cz (Český rozhlas)",
+  "src_type": "veřejnoprávní zpravodajství",
+  "published": "2024-12-27",
+  "retrieved": "2026-07-21",
+  "claims": [
+   "CLM-01",
+   "CLM-04",
+   "CLM-05",
+   "CLM-06"
+  ],
+  "claim_count": 4,
+  "subjects": [
+   "macinka",
+   "turek"
+  ],
+  "source_url": "https://www.irozhlas.cz/zpravy-domov/ze-sedacek-aut-a-formuli-do-kresla-v-europarlamentu-jmeno-filipa-turka_2412271818_vtk",
+  "url": "/dossiers/macinka-turek/sources/src-12/"
+ },
+ {
+  "src_id": "SRC-13",
+  "dossier": "macinka-turek",
+  "outlet": "Aktuálně.cz",
+  "src_type": "zpravodajství",
+  "published": "2025-10-05",
+  "retrieved": "2026-07-21",
+  "claims": [
+   "CLM-01",
+   "CLM-02",
+   "CLM-03"
+  ],
+  "claim_count": 3,
+  "subjects": [
+   "macinka",
+   "turek"
+  ],
+  "source_url": "https://zpravy.aktualne.cz/domaci/turek-a-jeho-lid-dojeli-do-snemovny-kdo-z-motoristu-mandat/r~9eb44c0ea14b11f0bf960cc47ab5f122/",
+  "url": "/dossiers/macinka-turek/sources/src-13/"
+ },
+ {
+  "src_id": "SRC-14",
+  "dossier": "macinka-turek",
+  "outlet": "Deník N",
+  "src_type": "investigativní žurnalistika (předplatné)",
+  "published": "2024-06-05",
+  "retrieved": "2026-07-21",
+  "claims": [
+   "CLM-04",
+   "CLM-05",
+   "CLM-06"
+  ],
+  "claim_count": 3,
+  "subjects": [
+   "macinka",
+   "turek"
+  ],
+  "source_url": "https://denikn.cz/1444758",
+  "url": "/dossiers/macinka-turek/sources/src-14/"
+ },
+ {
+  "src_id": "SRC-15",
+  "dossier": "macinka-turek",
+  "outlet": "Deník N",
+  "src_type": "investigativní žurnalistika (předplatné)",
+  "published": "2025-10-10",
+  "retrieved": "2026-07-21",
+  "claims": [
+   "CLM-07",
+   "CLM-09"
+  ],
+  "claim_count": 2,
+  "subjects": [
+   "turek"
+  ],
+  "source_url": "https://denikn.cz/1864721/popalit-cikane-je-polehcujici-okolnost-obama-je-negr-odhalujeme-smazany-svet-filipa-turka/",
+  "url": "/dossiers/macinka-turek/sources/src-15/"
+ },
+ {
+  "src_id": "SRC-16",
+  "dossier": "macinka-turek",
+  "outlet": "Deník.cz",
+  "src_type": "zpravodajství",
+  "published": "2025-10-13",
+  "retrieved": "2026-07-21",
+  "claims": [
+   "CLM-08",
+   "CLM-09"
+  ],
+  "claim_count": 2,
+  "subjects": [
+   "turek"
+  ],
+  "source_url": "https://www.denik.cz/z_domova/filip-turek-motoriste-kauza-nevhodne-prispevky-lide-hospoda-obhajoba.html",
+  "url": "/dossiers/macinka-turek/sources/src-16/"
+ },
+ {
+  "src_id": "SRC-17",
+  "dossier": "macinka-turek",
+  "outlet": "Investigace.cz",
+  "src_type": "investigativní žurnalistika",
+  "published": "2025-12-19",
+  "retrieved": "2026-07-22",
+  "claims": [
+   "CLM-14",
+   "CLM-15"
+  ],
+  "claim_count": 2,
+  "subjects": [
+   "macinka"
+  ],
+  "source_url": "https://www.investigace.cz/ministr-petr-macinka-nepriznal-podil-v-ukrajinske-firme/",
+  "url": "/dossiers/macinka-turek/sources/src-17/"
+ },
+ {
+  "src_id": "SRC-18",
+  "dossier": "macinka-turek",
+  "outlet": "Seznam Zprávy",
+  "src_type": "zpravodajství",
+  "published": "2026-01-28",
+  "retrieved": "2026-07-22",
+  "claims": [
+   "CLM-14",
+   "CLM-15"
+  ],
+  "claim_count": 2,
+  "subjects": [
+   "macinka"
+  ],
+  "source_url": "https://www.seznamzpravy.cz/clanek/domaci-kauzy-macinka-opravil-chybu-v-priznani-ministra-se-prihlasil-k-ukrajinske-firme-297525",
+  "url": "/dossiers/macinka-turek/sources/src-18/"
+ },
+ {
+  "src_id": "SRC-19",
+  "dossier": "macinka-turek",
+  "outlet": "Blesk.cz",
+  "src_type": "zpravodajství (tabloid)",
+  "published": "2026-07-16",
+  "retrieved": "2026-07-22",
+  "claims": [
+   "CLM-16"
+  ],
+  "claim_count": 1,
+  "subjects": [
+   "turek"
+  ],
+  "source_url": "https://www.blesk.cz/clanek/zpravy-politika/844084/",
+  "url": "/dossiers/macinka-turek/sources/src-19/"
+ },
+ {
+  "src_id": "SRC-20",
+  "dossier": "macinka-turek",
+  "outlet": "Česká justice",
+  "src_type": "zpravodajství (odborný právní server)",
+  "published": "2026-07-15",
+  "retrieved": "2026-07-22",
+  "claims": [
+   "CLM-17",
+   "CLM-18"
+  ],
+  "claim_count": 2,
+  "subjects": [
+   "turek"
+  ],
+  "source_url": "https://www.ceska-justice.cz/2026/07/turek-imunitu-nechce-necha-vydat/",
+  "url": "/dossiers/macinka-turek/sources/src-20/"
+ },
+ {
+  "src_id": "SRC-21",
+  "dossier": "macinka-turek",
+  "outlet": "Deník.cz",
+  "src_type": "zpravodajství",
+  "published": "2025-10-12",
+  "retrieved": "2026-07-22",
+  "claims": [
+   "CLM-19"
+  ],
+  "claim_count": 1,
+  "subjects": [
+   "turek"
+  ],
+  "source_url": "https://www.denik.cz/z_domova/motoriste-filip-turek-rasisticke-vyroky-trestni-oznameni.html",
+  "url": "/dossiers/macinka-turek/sources/src-21/"
+ },
+ {
+  "src_id": "SRC-22",
+  "dossier": "macinka-turek",
+  "outlet": "Seznam Zprávy",
+  "src_type": "zpravodajství",
+  "published": "2025-10-14",
+  "retrieved": "2026-07-22",
+  "claims": [
+   "CLM-09"
+  ],
+  "claim_count": 1,
+  "subjects": [
+   "turek"
+  ],
+  "source_url": "https://www.seznamzpravy.cz/clanek/domaci-politika-kauza-turkovych-prispevku-samotne-screenshoty-nestaci-url-adresy-mohou-289039",
+  "url": "/dossiers/macinka-turek/sources/src-22/"
+ },
+ {
+  "src_id": "SRC-23",
+  "dossier": "macinka-turek",
+  "outlet": "Hlídač státu",
+  "src_type": "veřejný rejstřík / transparentní databáze",
+  "published": null,
+  "retrieved": "2026-07-22",
+  "claims": [
+   "CLM-20"
+  ],
+  "claim_count": 1,
+  "subjects": [
+   "turek"
+  ],
+  "source_url": "https://www.hlidacstatu.cz/Osoba/vazby/filip-turek",
+  "url": "/dossiers/macinka-turek/sources/src-23/"
+ },
+ {
+  "src_id": "SRC-24",
+  "dossier": "macinka-turek",
+  "outlet": "Hlídač státu",
+  "src_type": "veřejný rejstřík / transparentní databáze",
+  "published": null,
+  "retrieved": "2026-07-22",
+  "claims": [
+   "CLM-22"
+  ],
+  "claim_count": 1,
+  "subjects": [
+   "macinka"
+  ],
+  "source_url": "https://www.hlidacstatu.cz/Osoba/Vazby/petr-macinka?aktualnost=Libovolny",
+  "url": "/dossiers/macinka-turek/sources/src-24/"
+ },
+ {
+  "src_id": "SRC-25",
+  "dossier": "macinka-turek",
+  "outlet": "Hlídač státu",
+  "src_type": "veřejný rejstřík / transparentní databáze",
+  "published": null,
+  "retrieved": "2026-07-22",
+  "claims": [
+   "CLM-21"
+  ],
+  "claim_count": 1,
+  "subjects": [
+   "turek"
+  ],
+  "source_url": "https://www.hlidacstatu.cz/Osoba/Sponzoring/filip-turek",
+  "url": "/dossiers/macinka-turek/sources/src-25/"
+ },
+ {
+  "src_id": "SRC-26",
+  "dossier": "macinka-turek",
+  "outlet": "Hlídač státu",
+  "src_type": "veřejný rejstřík / transparentní databáze",
+  "published": null,
+  "retrieved": "2026-07-22",
+  "claims": [
+   "CLM-23"
+  ],
+  "claim_count": 1,
+  "subjects": [
+   "macinka"
+  ],
+  "source_url": "https://www.hlidacstatu.cz/Osoba/Sponzoring/petr-macinka",
+  "url": "/dossiers/macinka-turek/sources/src-26/"
+ },
+ {
+  "src_id": "SRC-27",
+  "dossier": "macinka-turek",
+  "outlet": "Hlídač státu",
+  "src_type": "veřejný rejstřík / transparentní databáze",
+  "published": null,
+  "retrieved": "2026-07-22",
+  "claims": [
+   "CLM-24"
+  ],
+  "claim_count": 1,
+  "subjects": [
+   "macinka"
+  ],
+  "source_url": "https://www.hlidacstatu.cz/osoba/funkce/petr-macinka",
+  "url": "/dossiers/macinka-turek/sources/src-27/"
+ },
+ {
+  "src_id": "SRC-28",
+  "dossier": "macinka-turek",
+  "outlet": "Deník.cz",
+  "src_type": "zpravodajství (krimi)",
+  "published": "2025-06-23",
+  "retrieved": "2026-07-22",
+  "claims": [
+   "CLM-25"
+  ],
+  "claim_count": 1,
+  "subjects": [
+   "turek"
+  ],
+  "source_url": "https://www.denik.cz/krimi/filip-turek-znasilneni-20250623.html",
+  "url": "/dossiers/macinka-turek/sources/src-28/"
+ },
+ {
+  "src_id": "SRC-29",
+  "dossier": "macinka-turek",
+  "outlet": "Blesk.cz",
+  "src_type": "zpravodajství (tabloid)",
+  "published": "2025-06-23",
+  "retrieved": "2026-07-22",
+  "claims": [
+   "CLM-25",
+   "CLM-26"
+  ],
+  "claim_count": 2,
+  "subjects": [
+   "turek"
+  ],
+  "source_url": "https://www.blesk.cz/clanek/zpravy-politika/816116/turka-vini-expartnerka-ze-znasilneni-zamkl-ji-v-aute-hrozil-zbrani-nic-jsem-neudelal-tvrdi-politik.html",
+  "url": "/dossiers/macinka-turek/sources/src-29/"
+ },
+ {
+  "src_id": "SRC-30",
+  "dossier": "macinka-turek",
+  "outlet": "HN.cz (Hospodářské noviny)",
+  "src_type": "zpravodajství",
+  "published": "2025-07-08",
+  "retrieved": "2026-07-22",
+  "claims": [
+   "CLM-25",
+   "CLM-26"
+  ],
+  "claim_count": 2,
+  "subjects": [
+   "turek"
+  ],
+  "source_url": "https://domaci.hn.cz/c1-67759680-turek-odmita-obvineni-ze-znasilneni-a-nasili-na-byvale-partnerce-trestny-cin-jsem-nespachal-rika",
+  "url": "/dossiers/macinka-turek/sources/src-30/"
+ },
+ {
+  "src_id": "SRC-31",
+  "dossier": "macinka-turek",
+  "outlet": "ČT24 (Česká televize)",
+  "src_type": "veřejnoprávní zpravodajství",
+  "published": "2026-05-12",
+  "retrieved": "2026-07-22",
+  "claims": [
+   "CLM-27"
+  ],
+  "claim_count": 1,
+  "subjects": [
+   "turek"
+  ],
+  "source_url": "https://ct24.ceskatelevize.cz/clanek/domaci/oznameni-na-turka-kvuli-udajnemu-domacimu-nasili-policie-odlozila-373328",
+  "url": "/dossiers/macinka-turek/sources/src-31/"
+ },
+ {
+  "src_id": "SRC-32",
+  "dossier": "macinka-turek",
+  "outlet": "Deník.cz",
+  "src_type": "zpravodajství",
+  "published": "2025-10-15",
+  "retrieved": "2026-07-22",
+  "claims": [
+   "CLM-28",
+   "CLM-29"
+  ],
+  "claim_count": 2,
+  "subjects": [
+   "turek"
+  ],
+  "source_url": "https://www.denik.cz/z_domova/filip-turek-vyhrozovani-saudskoarabska-ambasada.html",
+  "url": "/dossiers/macinka-turek/sources/src-32/"
+ },
+ {
+  "src_id": "SRC-33",
+  "dossier": "macinka-turek",
+  "outlet": "Blesk.cz",
+  "src_type": "zpravodajství (tabloid)",
+  "published": "2026-07-17",
+  "retrieved": "2026-07-22",
+  "claims": [
+   "CLM-30"
+  ],
+  "claim_count": 1,
+  "subjects": [
+   "turek"
+  ],
+  "source_url": "https://www.blesk.cz/clanek/zpravy-politika/844092/turek-a-jeho-cerna-mostarna-dostal-mastnou-pokutu.html",
+  "url": "/dossiers/macinka-turek/sources/src-33/"
+ },
+ {
+  "src_id": "SRC-34",
+  "dossier": "macinka-turek",
+  "outlet": "Manipulátoři.cz",
+  "src_type": "faktčekingový / spotřebitelský web",
+  "published": "2020-04-03",
+  "retrieved": "2026-07-22",
+  "claims": [
+   "CLM-31"
+  ],
+  "claim_count": 1,
+  "subjects": [
+   "turek"
+  ],
+  "source_url": "https://manipulatori.cz/navrat-zapperu-aneb-koronavirovou-pandemii-zneuzivaji-dalsi-prodejci-doplnku-stravy/",
+  "url": "/dossiers/macinka-turek/sources/src-34/"
+ },
+ {
+  "src_id": "SRC-35",
+  "dossier": "macinka-turek",
+  "outlet": "Forum24",
+  "src_type": "zpravodajství (komentářový web)",
+  "published": "2024-06-02",
+  "retrieved": "2026-07-22",
+  "claims": [
+   "CLM-31"
+  ],
+  "claim_count": 1,
+  "subjects": [
+   "turek"
+  ],
+  "source_url": "https://www.forum24.cz/kandiduje-filip-turek-za-motoristy-nebo-za-sarlatany-spojeni-elitni-policista-a-prodejce-zapperu-prekvapi",
+  "url": "/dossiers/macinka-turek/sources/src-35/"
+ },
+ {
+  "src_id": "SRC-36",
+  "dossier": "macinka-turek",
+  "outlet": "Aktuálně.cz",
+  "src_type": "zpravodajství / reportáž",
+  "published": "2025-12-08",
+  "retrieved": "2026-07-22",
+  "claims": [
+   "CLM-32",
+   "CLM-33"
+  ],
+  "claim_count": 2,
+  "subjects": [
+   "turek"
+  ],
+  "source_url": "https://zpravy.aktualne.cz/domaci/turkovy-hrichy-prehledne-hajlovani-do-ksichtu-domaci-nasili/r~ec25cb48d3a011f0b589ac1f6b220ee8/",
+  "url": "/dossiers/macinka-turek/sources/src-36/"
+ },
+ {
+  "src_id": "SRC-37",
+  "dossier": "macinka-turek",
+  "outlet": "Neovlivní.cz",
+  "src_type": "investigativní žurnalistika",
+  "published": "2026-03-01",
+  "retrieved": "2026-07-22",
+  "claims": [
+   "CLM-33"
+  ],
+  "claim_count": 1,
+  "subjects": [
+   "turek"
+  ],
+  "source_url": "https://neovlivni.cz/pripomente-si-jak-filip-turek-chodil-na-iranskou-ambasadu/",
+  "url": "/dossiers/macinka-turek/sources/src-37/"
+ },
+ {
+  "src_id": "SRC-38",
+  "dossier": "macinka-turek",
+  "outlet": "Blesk.cz",
+  "src_type": "zpravodajství (tabloid)",
+  "published": "2026-07-04",
+  "retrieved": "2026-07-22",
+  "claims": [
+   "CLM-34"
+  ],
+  "claim_count": 1,
+  "subjects": [
+   "turek"
+  ],
+  "source_url": "https://www.blesk.cz/clanek/zpravy-politika/843108/turek-priznal-majetek-koupil-byt-za-18-milionu-korun-na-hypoteku.html",
+  "url": "/dossiers/macinka-turek/sources/src-38/"
+ },
+ {
+  "src_id": "SRC-39",
+  "dossier": "macinka-turek",
+  "outlet": "Seznam Zprávy",
+  "src_type": "zpravodajství",
+  "published": "2025-08-14",
+  "retrieved": "2026-07-22",
+  "claims": [
+   "CLM-35"
+  ],
+  "claim_count": 1,
+  "subjects": [
+   "macinka",
+   "turek"
+  ],
+  "source_url": "https://www.seznamzpravy.cz/clanek/volby-do-poslanecke-snemovny-dum-za-50-milionu-i-vazba-na-babise-kdo-je-nejvetsi-mecenas-letosnich-voleb-279644",
+  "url": "/dossiers/macinka-turek/sources/src-39/"
+ },
+ {
+  "src_id": "SRC-40",
+  "dossier": "macinka-turek",
+  "outlet": "Motoristé sobě (motoristesobe.cz/udhpsh)",
+  "src_type": "primární zdroj / povinné zveřejnění",
+  "published": null,
+  "retrieved": "2026-07-22",
+  "claims": [
+   "CLM-35"
+  ],
+  "claim_count": 1,
+  "subjects": [
+   "macinka",
+   "turek"
+  ],
+  "source_url": "https://motoristesobe.cz/udhpsh",
+  "url": "/dossiers/macinka-turek/sources/src-40/"
+ },
+ {
+  "src_id": "SRC-41",
+  "dossier": "macinka-turek",
+  "outlet": "Hlídač státu",
+  "src_type": "veřejný rejstřík / transparentní databáze",
+  "published": null,
+  "retrieved": "2026-07-22",
+  "claims": [
+   "CLM-36"
+  ],
+  "claim_count": 1,
+  "subjects": [
+   "macinka",
+   "turek"
+  ],
+  "source_url": "https://www.hlidacstatu.cz/Osoba/Sponzoring/richard-chlad-2",
+  "url": "/dossiers/macinka-turek/sources/src-41/"
+ },
+ {
+  "src_id": "SRC-42",
+  "dossier": "macinka-turek",
+  "outlet": "CNN Prima NEWS",
+  "src_type": "zpravodajství",
+  "published": "2025-10-16",
+  "retrieved": "2026-07-22",
+  "claims": [
+   "CLM-36"
+  ],
+  "claim_count": 1,
+  "subjects": [
+   "macinka",
+   "turek"
+  ],
+  "source_url": "https://cnn.iprima.cz/kdo-je-verny-sponzor-motoristu-richard-chlad-podporovatel-turka-i-kontroverzni-podnikatel-488806",
+  "url": "/dossiers/macinka-turek/sources/src-42/"
+ },
+ {
+  "src_id": "SRC-43",
+  "dossier": "macinka-turek",
+  "outlet": "Aktuálně.cz",
+  "src_type": "zpravodajství",
+  "published": "2026-03-17",
+  "retrieved": "2026-07-22",
+  "claims": [
+   "CLM-37"
+  ],
+  "claim_count": 1,
+  "subjects": [
+   "macinka",
+   "turek"
+  ],
+  "source_url": "https://zpravy.aktualne.cz/domaci/strejda-ricrd-motoriste-davaji-ruce-pryc-od-ideologa-svazaku-pry-jen-kamarad-filipa/r~aaa290508f28eab4877b7a010ace8f05/",
+  "url": "/dossiers/macinka-turek/sources/src-43/"
+ },
+ {
+  "src_id": "SRC-44",
+  "dossier": "macinka-turek",
+  "outlet": "Deník.cz",
+  "src_type": "zpravodajství",
+  "published": "2026-01-09",
+  "retrieved": "2026-07-23",
+  "claims": [
+   "CLM-38",
+   "CLM-39"
+  ],
+  "claim_count": 2,
+  "subjects": [
+   "turek"
+  ],
+  "source_url": "https://www.denik.cz/z_domova/filip-turek-petr-pavel-zaloba.html",
+  "url": "/dossiers/macinka-turek/sources/src-44/"
+ },
+ {
+  "src_id": "SRC-45",
+  "dossier": "macinka-turek",
+  "outlet": "HN.cz (Hospodářské noviny)",
+  "src_type": "zpravodajství",
+  "published": "2026-01-07",
+  "retrieved": "2026-07-23",
+  "claims": [
+   "CLM-38",
+   "CLM-40"
+  ],
+  "claim_count": 2,
+  "subjects": [
+   "macinka",
+   "turek"
+  ],
+  "source_url": "https://domaci.hn.cz/c1-67831390-pavel-dal-odmita-jmenovat-turka-ministrem-podle-babise-mel-dostat-sanci-kompetencni-zalobu-ale-nezvazuje",
+  "url": "/dossiers/macinka-turek/sources/src-45/"
+ },
+ {
+  "src_id": "SRC-46",
+  "dossier": "macinka-turek",
+  "outlet": "Deník.cz",
+  "src_type": "zpravodajství",
+  "published": "2026-02-04",
+  "retrieved": "2026-07-23",
+  "claims": [
+   "CLM-40"
+  ],
+  "claim_count": 1,
+  "subjects": [
+   "macinka"
+  ],
+  "source_url": "https://www.denik.cz/z_domova/andrej-babis-filip-turek-ministr-zivotniho-prostredi.html",
+  "url": "/dossiers/macinka-turek/sources/src-46/"
+ },
+ {
+  "src_id": "SRC-47",
+  "dossier": "macinka-turek",
+  "outlet": "Deník N",
+  "src_type": "zpravodajství",
+  "published": "2026-07-28",
+  "retrieved": "2026-07-29",
+  "claims": [
+   "CLM-41",
+   "CLM-42"
+  ],
+  "claim_count": 2,
+  "subjects": [
+   "turek"
+  ],
+  "source_url": "https://denikn.cz/2139565/policie-odlozila-kauzu-turkovych-nenavistnych-vyroku-jsou-podle-ni-promlcene",
+  "url": "/dossiers/macinka-turek/sources/src-47/"
+ },
+ {
+  "src_id": "SRC-48",
+  "dossier": "macinka-turek",
+  "outlet": "Aktuálně.cz",
+  "src_type": "zpravodajství",
+  "published": "2026-07-28",
+  "retrieved": "2026-07-29",
+  "claims": [
+   "CLM-41",
+   "CLM-42"
+  ],
+  "claim_count": 2,
+  "subjects": [
+   "turek"
+  ],
+  "source_url": "https://zpravy.aktualne.cz/domaci/policie-odlozila-proverovani-turka-v-kauze-nenavistnych-vyroku/r~aaa29fddbab8d2fc9ab5d275662ace2f/?lp=1",
+  "url": "/dossiers/macinka-turek/sources/src-48/"
+ },
+ {
+  "src_id": "SRC-49",
+  "dossier": "macinka-turek",
+  "outlet": "Deník.cz",
+  "src_type": "zpravodajství",
+  "published": "2026-02-23",
+  "retrieved": "2026-07-29",
+  "claims": [
+   "CLM-43"
+  ],
+  "claim_count": 1,
+  "subjects": [
+   "macinka"
+  ],
+  "source_url": "https://www.denik.cz/cesko/novy-ministr-zivotniho-prostredi-igor-cerveny-jmenovani-petr-pavel/",
+  "url": "/dossiers/macinka-turek/sources/src-49/"
+ },
+ {
+  "src_id": "SRC-50",
+  "dossier": "macinka-turek",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "src_type": "oficiální zdroj",
+  "published": "2026-02-23",
+  "retrieved": "2026-07-29",
+  "claims": [
+   "CLM-43"
+  ],
+  "claim_count": 1,
+  "subjects": [
+   "macinka"
+  ],
+  "source_url": "https://vlada.gov.cz/cz/media-centrum/aktualne/premier-babis-uvedl-do-funkce-noveho-ministra-zivotniho-prostredi-igora-cerveneho-225464/",
+  "url": "/dossiers/macinka-turek/sources/src-50/"
+ },
+ {
+  "src_id": "SRC-51",
+  "dossier": "macinka-turek",
+  "outlet": "Blesk.cz",
+  "src_type": "tabloid",
+  "published": "2026-07-27",
+  "retrieved": "2026-07-29",
+  "claims": [
+   "CLM-44"
+  ],
+  "claim_count": 1,
+  "subjects": [
+   "turek"
+  ],
+  "source_url": "https://www.blesk.cz/clanek/zpravy-politika/844802/turek-nepoda-zalobu-na-pavla-zmenil-jsem-z-mnoha-duvodu-nazor.html",
+  "url": "/dossiers/macinka-turek/sources/src-51/"
+ },
+ {
+  "src_id": "SRC-52",
+  "dossier": "macinka-turek",
+  "outlet": "Deník N",
+  "src_type": "zpravodajství",
+  "published": "2026-07-27",
+  "retrieved": "2026-07-29",
+  "claims": [
+   "CLM-44"
+  ],
+  "claim_count": 1,
+  "subjects": [
+   "turek"
+  ],
+  "source_url": "https://denikn.cz/minuta/2139007/",
+  "url": "/dossiers/macinka-turek/sources/src-52/"
+ },
+ {
+  "src_id": "SRC-53",
+  "dossier": "macinka-turek",
+  "outlet": "ČT24 (Česká televize)",
+  "src_type": "veřejnoprávní zpravodajství",
+  "published": "2024-11-08",
+  "retrieved": "2026-07-29",
+  "claims": [
+   "CLM-45"
+  ],
+  "claim_count": 1,
+  "subjects": [
+   "turek"
+  ],
+  "source_url": "https://ct24.ceskatelevize.cz/clanek/domaci/policie-odlozila-pripad-udajneho-hajlovani-europoslance-turka-355149",
+  "url": "/dossiers/macinka-turek/sources/src-53/"
+ },
+ {
+  "src_id": "SRC-54",
+  "dossier": "macinka-turek",
+  "outlet": "Echo24.cz",
+  "src_type": "zpravodajství",
+  "published": "2026-05-13",
+  "retrieved": "2026-07-29",
+  "claims": [
+   "CLM-27"
+  ],
+  "claim_count": 1,
+  "subjects": [
+   "turek"
+  ],
+  "source_url": "https://www.echo24.cz/a/HnBp9/zpravy-domov-policie-odlozila-pripad-turkova-znasilneni-kvuli-promlceni",
+  "url": "/dossiers/macinka-turek/sources/src-54/"
+ }
+]

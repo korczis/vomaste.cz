@@ -1,0 +1,26 @@
+[
+ {
+  "slug": "petr-macinka",
+  "title": "Petr Macinka",
+  "dossier_type": "entity",
+  "subject": "macinka",
+  "canonical_dossier": "macinka-turek",
+  "url": "/dossiers/petr-macinka/"
+ },
+ {
+  "slug": "filip-turek",
+  "title": "Filip Turek",
+  "dossier_type": "entity",
+  "subject": "turek",
+  "canonical_dossier": "macinka-turek",
+  "url": "/dossiers/filip-turek/"
+ },
+ {
+  "slug": "macinka-turek",
+  "title": "Petr Macinka a Filip Turek",
+  "dossier_type": "aggregate",
+  "subject": null,
+  "canonical_dossier": null,
+  "url": "/dossiers/macinka-turek/"
+ }
+]
