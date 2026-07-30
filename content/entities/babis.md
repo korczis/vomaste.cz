@@ -1,25 +1,27 @@
 +++
-title = "Andrej Babiš (premiér)"
+title = "Andrej Babiš"
 template = "entity.html"
-weight = 7
-aliases = ["/dossiers/macinka-turek/entities/babis/"]
+weight = 1
+aliases = ["/dossiers/andrej-babis/entities/babis/"]
 
 [extra]
 record_type = "entity"
 entity_id = "babis"
 entity_type = "person"
-depth = 1
-subject = false
-publication_role = "context"
-dossier_enabled = false
-dossier_status = "not_authorized"
-coverage_state = "contextual"
+depth = 0
+subject = true
+publication_role = "subject"
+dossier_enabled = true
+dossier_status = "authorized"
+coverage_state = "full"
 discovered_at = "2026-07-29"
-discovered_via = ["edge-babis-vlada", "edge-babis-nehoda2026"]
-dossiers = ["macinka-turek", "petr-macinka", "filip-turek"]
-claims = ["CLM-12"]
-sources = ["SRC-06"]
+discovered_via = ["edge-babis-agrofert"]
+dossiers = ["macinka-turek", "petr-macinka", "filip-turek", "andrej-babis"]
+claims = ["CLM-12", "CLM-04"]
+sources = ["SRC-06", "SRC-02"]
 government_office = "předseda vlády"
 government_party = "ANO"
 government_snapshot = "2026-07-30"
 +++
+
+Hlavní subjekt autorizovaného dossieru. Viz plné znění a kontext v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#kdo).

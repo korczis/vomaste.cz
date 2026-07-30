@@ -10,6 +10,29 @@ Stavy: `todo → claimed → in-progress → review → merged`, kdykoliv
 nese štítek `[scope-check]` a před startem se ověřuje proti
 autorizačnímu logu v `AGENTS.md`.
 
+## Aktivní zadání: workbench redesign (2026-07-30)
+
+Zadání vlastníka: přestavět vomaste.cz z řídkého katalogu na hustý,
+data-driven investigativní workbench — plný master prompt uložen
+doslovně v
+[`docs/missions/2026-07-30-workbench-master-prompt.md`](../missions/2026-07-30-workbench-master-prompt.md),
+povinný baseline audit v
+[`docs/audits/information-architecture-baseline.md`](../audits/information-architecture-baseline.md).
+Čistě technická mise (§ 1.2: žádný nový obsahový scope, autorizační log
+netknutý). Navazuje na
+[`docs/adr/application-shell-rebuild.md`](../adr/application-shell-rebuild.md) —
+tasky T-011…T-015 níže zůstávají v platnosti a mapují se na fáze 2/3/6/8;
+nové tasky T-017…T-021 pokrývají zbytek. Pozn.: prompt jmenuje
+Cytoscape.js, repo používá Sigma.js — zachovává se Sigma (audit § 8).
+
+| ID | Titul | Scope (soubory/sekce) | Branch | Owner | Stav | Závislosti | Akceptace |
+|----|-------|-----------------------|--------|-------|------|------------|-----------|
+| T-017 | Fáze 1 — datový kontrakt: JSON Schemas (`schemas/*.schema.json`) + build-time validace front matter proti nim, konsolidovaný view-model nad `lib/record-tables.mjs` (žádný druhý dataset), oprava `build-global-graph.mjs` (graph.toml self-canonical entity dossierů se dnes přeskakuje — audit § 5), referenční validace JSON-LD `@id` ↔ routes.json | scripts/dossier/**, schemas/**, package.json | task/T-017 | ORCH | in-progress | – | `npm run build` zelený; schema pokrývá všechna reálně užitá pole; Klempíř/Schillerová grafy v globální mapě; verify kontroluje @id resolvability |
+| T-018 | Fáze 4 — `/dossiers/` directory jako hustá sortable tabulka + dossier overview: kompaktní header, metric strip, view tabs, syntéza místo kopie registru | templates/dossiers-index.html, templates/entity-dossier.html, templates/dossier.html, macros | task/T-018 | – | volný | T-012, T-017 | akceptační kritéria § 18 promptu pro directory/overview |
+| T-019 | Fáze 5 — registry tvrzení/zdrojů/evidence/mezer: dense tabulky s toolbar filtry, URL stav (§ 8), inspector master-detail (§ 7), coverage matrix, source families v registru zdrojů | templates/dossier-*-index.html, entity-dossier-*.html, assets/js/data/**, macros | task/T-019 | – | volný | T-013, T-017 | filtry reprodukovatelné URL; detail bez ztráty kontextu; rozlišení zdroje vs. nezávislé rodiny |
+| T-020 | Fáze 7 — globální command bar nad `static/search-index.json` (`/`, `Cmd/Ctrl+K`, skupiny dle typu, deep linky, bez serveru) | assets/js/modules/**, templates/base.html | task/T-020 | – | volný | T-012 | vyhledá osobu/entitu/dossier/CLM/SRC/GAP/CASE/kauzu/vydavatele/text; klávesová navigace; žádný request na server |
+| T-021 | Fáze 8 — Playwright + axe + responsive/screenshot testy (viewporty § 11), density tokeny + lint proti marketingovým mezerám v workbench šablonách, performance budget, docs § 15 | tests/**, scripts/ui/**, static/css/input.css, docs/** | task/T-021 | – | volný | T-012..T-014, T-018, T-019 | build/CI selže na overflow, překrytí, a11y violations; screenshoty jako artefakty; density akceptace § 18 |
+
 ## Aktivní zadání: plné fyzické rozpojení entity dossierů (2026-07-29)
 
 Zadání vlastníka: „jednou a provždy decouple macinka–turek — dva
@@ -21,7 +44,6 @@ Autorizace: viz AGENTS.md, „Structural change, 2026-07-29 (second)".
 | T-001 | Fyzický přesun záznamů + inverze validátorů/šablon | `[scope-check]` content/dossiers/**, data/dossiers*, scripts/dossier/**, templates/** | task/T-001 | W-5 (převzato po 3× API pádu W-1; worktree zachován, 89bff0d) | in-progress | – | migrační skript; každý záznam vlastněn právě jedním entity dossierem dle `subjects`; aliasy na staré URL; agregát bez fyzických záznamů; `npm run build` zelený |
 | T-003 | Přepis architektonických sekcí AGENTS.md + README | AGENTS.md (mimo append-only log), README.md, docs/ | task/T-003 | ORCH | todo | T-001 | dokumentace popisuje nový model; log nedotčen |
 | T-004 | Integrace, merge, deploy + porting mapa pro rozpracované edity `_index.md` | master | ORCH | ORCH | todo | T-001, T-002 | oba branche mergnuté, `npm run build` + `zola check` zelené na masteru, push (= deploy), porting mapa předána |
-| T-010 | Veřejné JSON-LD export routes (/data/*.jsonld, manifest, checksums) — dnes JSON-LD jen embedded v HTML. Design hotový: [`docs/adr/dossier-jsonld-provenance-extension.md`](../adr/dossier-jsonld-provenance-extension.md) (content-hash citace, manifest+verify script, invertible vztahový vocab; numeric confidence scoring vědomě odmítnut — rozpor s konstitucí §8) | scripts/dossier/, static/ | – | volný | todo | T-001 | routes reálně generované a nasazené, README aktualizované |
 | T-011 | Advanced application shell — informační architektura + secondary-provider datový model. Audit + fázový plán hotový: [`docs/adr/application-shell-rebuild.md`](../adr/application-shell-rebuild.md) (mnohé z §5/§14/§41/§47 už dnes platí — ověřeno auditem, ne předpokládáno). Fáze B z vlastníkova master promptu | data/navigation.toml, scripts/dossier/build-navigation.mjs, nové data/generated/navigation-secondary.json + dossier-catalog.json + entity-explorer.json | – | volný | todo | T-001 | secondary provider schema definované a generované, žádný hardcoded slug |
 | T-012 | Advanced application shell — shell primitiva (topbar, primary/secondary sidebar, context panel, mobile drawers/bottom nav). Fáze C | templates/base.html, nové templates/partials/app-shell/** | – | volný | todo | T-011 | 0 horizontální overflow na testovaných viewportech, focus trap/return funkční, no-JS fallback zachován |
 | T-013 | Advanced application shell — route layouts (overview/catalog/explorer/registry s advanced table toolbarem/record-detail). Fáze D | nové templates/layouts/**, dossier registry šablony | – | volný | todo | T-012 | registry mají skutečný sort/filter/pagination toolbar, ne jen statická ikona |
@@ -33,6 +55,7 @@ Autorizace: viz AGENTS.md, „Structural change, 2026-07-29 (second)".
 
 | ID | Titul | Commit | Owner | Stav |
 |----|-------|--------|-------|------|
+| T-010 | Veřejné JSON-LD export routes — /data/dossiers/<slug>.jsonld + /data/graph.jsonld (max-depth @graph), jsonld-manifest s sha256, verify-export offline gate, citační otisky v exportu i embedded HTML, sdílený record-tables/jsonld-shared lib; dle ADR dossier-jsonld-provenance-extension (numeric confidence odmítnut, supersedes rezervováno neemitováno) | d482f2e | ORCH | merged |
 | T-002 | Data-driven JSON-LD z front matter — @graph, Person/Claim/citace, verify:jsonld build gate | 6309019 | W-2 | merged |
 | T-006 | README: kanonická rekonstrukce dle exekučního promptu vlastníka — audit proti realitě repa, poctivé mezery, clean-room ověřeno | 4a9ecf9 | W-4 | merged |
 | T-005 | Auditní kolo dossieru — procesní přesnost, status-single, doložený CASE-01 | e3c25ea | W-3 | done |

@@ -5,7 +5,7 @@ system. This is provenance, not a publication decision — see
 `data/authorizations.toml` and `scripts/dossier/authorize-entity.mjs`
 for the only thing that actually authorizes a dossier.
 
-69 record(s) logged across 2 day(s). 0 new since last run.
+74 record(s) logged across 2 day(s). 5 new since last run.
 
 ## 2026-07-29
 
@@ -81,3 +81,8 @@ for the only thing that actually authorizes a dossier.
 - `zuna` (entity, created)
 - `edge-klempir-vlada` (relation, created)
 - `edge-schillerova-vlada` (relation, created)
+- `agrofert` (entity, created)
+- `okamura` (entity, created)
+- `spd` (entity, created)
+- `edge-babis-agrofert` (relation, created)
+- `edge-okamura-spd` (relation, created)

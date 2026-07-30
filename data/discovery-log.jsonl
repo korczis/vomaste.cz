@@ -67,3 +67,8 @@
 {"logged_at":"2026-07-30","record_id":"zuna","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
 {"logged_at":"2026-07-30","record_id":"edge-klempir-vlada","record_type":"relation","discovered_from":{"source_entity":"klempir","target_entity":"vlada","claims":["CLM-01"],"sources":["SRC-01"],"dossier":"oto-klempir"},"action":"created"}
 {"logged_at":"2026-07-30","record_id":"edge-schillerova-vlada","record_type":"relation","discovered_from":{"source_entity":"schillerova","target_entity":"vlada","claims":["CLM-01"],"sources":["SRC-01"],"dossier":"alena-schillerova"},"action":"created"}
+{"logged_at":"2026-07-30","record_id":"agrofert","record_type":"entity","discovered_from":{"claims":["CLM-04","CLM-05"],"sources":["SRC-02"],"dossiers":["andrej-babis"]},"action":"created"}
+{"logged_at":"2026-07-30","record_id":"okamura","record_type":"entity","discovered_from":{"claims":["CLM-02"],"sources":["SRC-01"],"dossiers":["tomio-okamura"]},"action":"created"}
+{"logged_at":"2026-07-30","record_id":"spd","record_type":"entity","discovered_from":{"claims":["CLM-01","CLM-02"],"sources":["SRC-01"],"dossiers":["tomio-okamura"]},"action":"created"}
+{"logged_at":"2026-07-30","record_id":"edge-babis-agrofert","record_type":"relation","discovered_from":{"source_entity":"babis","target_entity":"agrofert","claims":["CLM-04","CLM-05","CLM-06"],"sources":["SRC-02"],"dossier":"andrej-babis"},"action":"created"}
+{"logged_at":"2026-07-30","record_id":"edge-okamura-spd","record_type":"relation","discovered_from":{"source_entity":"okamura","target_entity":"spd","claims":["CLM-02"],"sources":["SRC-01"],"dossier":"tomio-okamura"},"action":"created"}

@@ -52,6 +52,24 @@ canonical_dossier = "alena-schillerova"
 show_in_primary_navigation = true
 
 [[dossiers]]
+# AGENTS.md "Authorized subject: Andrej Babiš" (AUTH-2026-07-30-C).
+slug = "andrej-babis"
+title = "Andrej Babiš"
+dossier_type = "entity"
+subject = "babis"
+canonical_dossier = "andrej-babis"
+show_in_primary_navigation = true
+
+[[dossiers]]
+# AGENTS.md "Authorized subject: Tomio Okamura" (AUTH-2026-07-30-D).
+slug = "tomio-okamura"
+title = "Tomio Okamura"
+dossier_type = "entity"
+subject = "okamura"
+canonical_dossier = "tomio-okamura"
+show_in_primary_navigation = true
+
+[[dossiers]]
 slug = "macinka-turek"
 title = "Petr Macinka a Filip Turek"
 dossier_type = "aggregate"

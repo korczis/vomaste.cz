@@ -1,0 +1,31 @@
+# Relationship graph for the Tomio Okamura dossier. Projection of the
+# claim/source registries — every edge carries a CLM-## and SRC-## that
+# exist there. Minimal by design.
+
+[[nodes]]
+id = "okamura"
+type = "person"
+label = "Tomio Okamura"
+depth = 0
+subject = true
+claims = ["CLM-02"]
+sources = ["SRC-01"]
+
+[[nodes]]
+id = "spd"
+type = "political_party"
+label = "SPD"
+depth = 1
+subject = false
+claims = ["CLM-01", "CLM-02"]
+sources = ["SRC-01"]
+
+[[edges]]
+id = "edge-okamura-spd"
+source = "okamura"
+target = "spd"
+relation = "MEMBER_OF"
+label = "předseda hnutí"
+status = "contextual"
+claims = ["CLM-02"]
+sources = ["SRC-01"]

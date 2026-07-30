@@ -306,11 +306,22 @@ function validateGraphFor(slug) {
     const entityDossiers = extractArrayField(fm, "dossiers") ?? [];
     if (!entityDossiers.includes(slug)) { err(tag(`entities/${file}: ${entityId} is a node in this dossier's graph.toml but its dossiers list does not include "${slug}"`)); continue; }
     entitiesInThisDossier++;
+    // A person can be the SUBJECT of their own dossier and simultaneously
+    // appear as depth-1 CONTEXT in another dossier's graph (Andrej Babiš is
+    // both: subject of andrej-babis, context in macinka-turek). The global
+    // entity page carries exactly one depth/subject/publication_role, so it
+    // cannot satisfy both graphs — and it must describe the dossier where
+    // the person is the subject, that being the stronger publication state.
+    // Depth/subject/role parity is therefore enforced only for the dossier
+    // that owns them as its subject; elsewhere the node must merely not
+    // claim subject status itself (already checked in the node loop).
+    // entity_type / claims / sources parity still apply everywhere.
+    const subjectElsewhere = extractField(fm, "publication_role") === "subject" && !node.subject;
     if (extractField(fm, "entity_type") !== node.type) err(tag(`entity "${entityId}": page entity_type does not match graph.toml node type "${node.type}"`));
-    if (extractIntField(fm, "depth") !== node.depth) err(tag(`entity "${entityId}": page depth does not match graph.toml node depth ${node.depth}`));
-    if (Boolean(extractBoolField(fm, "subject")) !== Boolean(node.subject)) err(tag(`entity "${entityId}": page subject flag does not match graph.toml`));
+    if (!subjectElsewhere && extractIntField(fm, "depth") !== node.depth) err(tag(`entity "${entityId}": page depth does not match graph.toml node depth ${node.depth}`));
+    if (!subjectElsewhere && Boolean(extractBoolField(fm, "subject")) !== Boolean(node.subject)) err(tag(`entity "${entityId}": page subject flag does not match graph.toml`));
     const expectedRole = node.subject ? "subject" : "context";
-    if (extractField(fm, "publication_role") !== expectedRole) err(tag(`entity "${entityId}": publication_role does not match subject flag (expected "${expectedRole}")`));
+    if (!subjectElsewhere && extractField(fm, "publication_role") !== expectedRole) err(tag(`entity "${entityId}": publication_role does not match subject flag (expected "${expectedRole}")`));
     const pageClaims = new Set(extractArrayField(fm, "claims") ?? []);
     const nodeClaims = new Set(node.claims ?? []);
     if ([...nodeClaims].some((c) => !pageClaims.has(c))) err(tag(`entity "${entityId}": page claims do not include all of graph.toml node claims`));

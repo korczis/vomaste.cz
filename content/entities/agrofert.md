@@ -1,0 +1,24 @@
++++
+title = "Agrofert"
+template = "entity.html"
+weight = 2
+aliases = ["/dossiers/andrej-babis/entities/agrofert/"]
+
+[extra]
+record_type = "entity"
+entity_id = "agrofert"
+entity_type = "company"
+depth = 1
+subject = false
+publication_role = "context"
+dossier_enabled = false
+dossier_status = "not_authorized"
+coverage_state = "discovered"
+discovered_at = "2026-07-30"
+discovered_via = ["edge-babis-agrofert"]
+dossiers = ["andrej-babis"]
+claims = ["CLM-04", "CLM-05"]
+sources = ["SRC-02"]
++++
+
+Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext.

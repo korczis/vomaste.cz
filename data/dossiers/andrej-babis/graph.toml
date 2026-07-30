@@ -1,0 +1,32 @@
+# Relationship graph for the Andrej Babiš dossier. Projection of the
+# claim/source registries — every edge carries a CLM-## and SRC-## that
+# exist there. Deliberately minimal: no edge is drawn from mere
+# co-occurrence in an article.
+
+[[nodes]]
+id = "babis"
+type = "person"
+label = "Andrej Babiš"
+depth = 0
+subject = true
+claims = ["CLM-04"]
+sources = ["SRC-02"]
+
+[[nodes]]
+id = "agrofert"
+type = "company"
+label = "Agrofert"
+depth = 1
+subject = false
+claims = ["CLM-04", "CLM-05"]
+sources = ["SRC-02"]
+
+[[edges]]
+id = "edge-babis-agrofert"
+source = "babis"
+target = "agrofert"
+relation = "UNDISCLOSED_INTEREST_IN"
+label = "akcie vloženy do svěřenského fondu RSVP Trust (2026-02)"
+status = "disputed"
+claims = ["CLM-04", "CLM-05", "CLM-06"]
+sources = ["SRC-02"]

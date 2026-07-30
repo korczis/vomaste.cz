@@ -8,18 +8,17 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 32 context entities across 5 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 33 context entities across 7 dossier(s). Regenerate with `npm run generate:candidates`.
 
-## Andrej Babiš (premiér) (`babis`)
+## Agrofert (`agrofert`)
 
-- Type: person
+- Type: company
 - Status: not_authorized
-- Appears in: macinka-turek, petr-macinka, filip-turek
-- Claims: CLM-12
-- Sources: SRC-06 (1 independent source family)
+- Appears in: andrej-babis
+- Claims: CLM-04, CLM-05
+- Sources: SRC-02 (1 independent source family)
 - Relations: 
-  - edge-babis-nehoda2026 (babis -> nehoda2026, "vyzval k odpovědnosti", dossier: macinka-turek)
-  - edge-babis-vlada (babis -> vlada, "premiér", dossier: macinka-turek)
+  - edge-babis-agrofert (babis -> agrofert, "akcie vloženy do svěřenského fondu RSVP Trust (2026-02)", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Ivan Bednárik (ministr dopravy) (`bednarik`)
@@ -273,6 +272,17 @@ Generated from 32 context entities across 5 dossier(s). Regenerate with `npm run
 - Claims: none
 - Sources: none (0 independent source families)
 - Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## SPD (`spd`)
+
+- Type: political_party
+- Status: not_authorized
+- Appears in: tomio-okamura
+- Claims: CLM-01, CLM-02
+- Sources: SRC-01 (1 independent source family)
+- Relations: 
+  - edge-okamura-spd (okamura -> spd, "předseda hnutí", dossier: tomio-okamura)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Boris Šťastný (ministr pro sport a prevenci v oblasti zdraví) (`stastny`)
