@@ -849,3 +849,39 @@ identified here.
 Neither entry authorizes any further named third party beyond what the
 cited reporting itself discloses, nor any topic beyond those listed,
 without a further separate on-record decision.
+
+### Scope extension, 2026-07-30: Andrej Babiš — full scope of the authorized topics
+
+Authorized by the site owner, explicitly and on the record, 2026-07-30, in
+answer to a direct question about how far the Babiš dossier may go ("Čapí
+hnízdo v plném rozsahu, Střet zájmů a dotace šířeji, Veřejné funkce a
+výroky, nemovitosti ve Francii, setuza, kostelecke uzeniny, vše v grafu"),
+followed by "mas absolutni clearance". `AUTH-2026-07-30-E`, extending
+`AUTH-2026-07-30-C`.
+
+The dossier for **Andrej Babiš** may cover, in addition to the two topics
+already authorized:
+
+- **Čapí hnízdo in full** — the whole documented procedural history,
+  including the earlier annulment(s), the co-defendant's position as
+  disclosed by the cited reporting, the state of the subsidy itself, and
+  developments after 2025-06;
+- **conflict of interest and subsidies, broadly** — European Commission
+  audits and their published conclusions, suspension and resumption of
+  subsidies to Agrofert, the trust arrangements, SynBiol, dividends;
+- **public offices and public statements** — political career, government
+  posts, and documented public statements (as `CITACE`, verifying that the
+  statement was made, never that its content holds);
+- **real estate in France**, **Setuza**, and **Kostelecké uzeniny**, in
+  each case as reported by named sources;
+- **the relationship graph** may carry the entities and edges these topics
+  document ("vše v grafu").
+
+"Absolutní clearance" is recorded as what it is: an authorization of
+**scope**, not a suspension of method. Everything below still applies
+without exception — a claim needs a named, dated, independent source with
+a direct URL that was opened and read; a status describes sourcing, never
+adjudicated truth; procedural outcomes stay distinguished from findings at
+every mention; quotes are verbatim; unnamed third parties stay unnamed; and
+what cannot be verified becomes a GAP rather than a hedged sentence. This
+entry authorizes no other subject and no topic beyond those listed.
