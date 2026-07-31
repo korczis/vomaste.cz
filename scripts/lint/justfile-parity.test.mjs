@@ -47,6 +47,27 @@ test("every repo script path the justfile runs exists on disk", () => {
   assert.deepEqual(missing, [], `justfile runs path(s) that do not exist: ${missing.join(", ")}`);
 });
 
+test("every recipe appears in the README task-runner table", () => {
+  // README presents that table as the complete list, so a recipe missing
+  // from it is a documentation claim that quietly stopped being true —
+  // which is exactly how `just expand` fell out of it.
+  const readme = readFileSync(join(ROOT, "README.md"), "utf8");
+  const table = readme.slice(readme.indexOf("## Task runner"));
+
+  const recipes = [...justfile.matchAll(/^([a-z][\w-]*)(?: [^\n:]*)?:$/gm)]
+    .map((m) => m[1])
+    .filter((name) => name !== "default");
+
+  const undocumented = [...new Set(recipes)].filter(
+    (name) => !new RegExp(`\`just ${name}\\b`).test(table),
+  );
+  assert.deepEqual(
+    undocumented,
+    [],
+    `recipe(s) missing from the README task-runner table: ${undocumented.join(", ")}`,
+  );
+});
+
 test("`just build` wraps the real gate, not a subset", () => {
   // If someone ever points `just build` at something cheaper, the README and
   // the landing-page concept both start lying about what the gate is.

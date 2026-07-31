@@ -282,6 +282,7 @@ justfile je chyba.
 | `just scaffold <slug> "<Jméno>"` | `npm run scaffold:dossier` | odmítne subjekt, který není v autorizačním logu |
 | `just authorize <entity>` | `npm run authorize:entity` | **interaktivní z principu** — vyžaduje TTY a rozsah napsaný člověkem |
 | `just ares --ico=… \| --name="…"` | `scripts/osint/ares-lookup.mjs` | živý síťový dotaz, **není** součástí buildu |
+| `just expand <ičo> [--write]` | `scripts/osint/expand-entity.mjs` | rozbalí rejstříkové okolí firmy na **kontextové** entity; výchozí je dry run, existující stránku nikdy nepřepíše |
 | `just coop` / `just inbox` | `scripts/coop/coop.sh` | stav co-op boardu a sběrnice |
 
 Instalace `just`: <https://github.com/casey/just#installation>.
@@ -311,7 +312,8 @@ Instalace `just`: <https://github.com/casey/just#installation>.
 | `node scripts/dossier/tag-subjects.mjs` | orazítkovat záznamy poli `subjects` |
 | `npm run scaffold:dossier -- --slug=<slug> --title="<Jméno>"` | vygeneruje placeholder skeleton nového entity dossieru (registry adresáře, `graph.toml`, `updates.toml`) — odmítne běžet, pokud `<Jméno>` není v autorizačním logu `AGENTS.md`; nezapisuje do `data/dossiers.toml` |
 | `npm run build:government-roster` | z `data/government.toml` vygeneruje kontextové entity stránky členů vlády (veřejná funkce z oficiálního zdroje, `publication_role = "context"`, **nikdy** dossier); existující stránky nikdy nepřepisuje; součást `npm run build` |
-| `node scripts/osint/ares-lookup.mjs --ico=… \| --name="…"` | dotaz do ARES (jediný spolehlivě funkční primární rejstřík) — **není** součástí `npm run build`, dělá živý síťový dotaz; doloží identitu/sídlo/formu/status, **nedoloží** vlastníky, skutečné majitele ani „od kdy ovládá" |
+| `node scripts/osint/ares-lookup.mjs --ico=… \| --name="…"` | dotaz do ARES (jediný spolehlivě funkční primární rejstřík) — **není** součástí `npm run build`, dělá živý síťový dotaz; doloží identitu/sídlo/formu/status, **nedoloží** skutečné majitele ani „od kdy ovládá" |
+| `node scripts/osint/expand-entity.mjs --ico=… [--write]` | rozbalí rejstříkové okolí firmy (statutární orgány, společníci) na kontextové entity; na rozdíl od základního endpointu čte větev veřejného rejstříku, která u s.r.o. **vrací** zapsané společníky i velikost podílu. Akcionáři a.s. v rejstříku nejsou, takže prázdný seznam znamená „nezapsáno", ne „firma nemá vlastníky". Data narození a adresy bydliště nepřebírá |
 
 ## Přidání obsahu do dossieru
 
