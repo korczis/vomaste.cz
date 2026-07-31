@@ -28,6 +28,7 @@ import { loadDossierRegistry } from "./lib/dossier-registry.mjs";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const NAV_TOML = join(ROOT, "data/navigation.toml");
 const OUT = join(ROOT, "data/generated/navigation.json");
+const FLAT_OUT = join(ROOT, "data/generated/navigation-flat.json");
 
 const text = readFileSync(NAV_TOML, "utf8");
 const str = (block, key) => (block.match(new RegExp(`^${key}\\s*=\\s*"((?:[^"\\\\]|\\\\.)*)"`, "m")) ?? [])[1] ?? null;
@@ -212,6 +213,27 @@ for (const i of items) i.depth = 0;
 
 mkdirSync(dirname(OUT), { recursive: true });
 writeFileSync(OUT, JSON.stringify({ items }, null, 2) + "\n");
+
+// Zploštělý seznam pro JSON-LD (templates/partials/jsonld.html).
+//
+// Navigační SiteNavigationElement uzly jsou na KAŽDÉ stránce totožné, ale
+// šablona si je skládala znovu a znovu trojitou vnořenou smyčkou přes
+// items × children × grandchildren. Tera nemá push: každé přidání se dělá
+// přes `concat`, který vytváří nové pole, takže sestavení ~180 položek je
+// kvadratické v alokacích — a opakovalo se to na 1733 stránkách.
+//
+// Změřeno: se zaslepenou šablonou jsonld.html trval `zola build` 48,8 s,
+// s ní 366,1 s. Ta jedna šablona tedy stála 87 % celého buildu a tohle
+// zplošťování byla jeho hlavní část.
+const flat = [];
+const walk = (list) => {
+  for (const item of list ?? []) {
+    flat.push(item);
+    walk(item.children);
+  }
+};
+walk(items);
+writeFileSync(FLAT_OUT, JSON.stringify({ items: flat }, null, 2) + "\n");
 
 const entityCount = dossiers.filter((d) => d.dossierType === "entity").length;
 const childCount = dossiersItem.children.reduce((n, c) => n + c.children.length, 0);

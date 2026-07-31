@@ -40,7 +40,12 @@
 
   {% set_global entity_dossiers = [] %}
   {% set_global aggregate_dossiers = [] %}
-  {% for sub_path in section.subsections %}
+  {#- sort: Zola nezaručuje pořadí subsections, takže bez řazení se
+        obsah mezi dvěma buildy téhož kódu přehází. Ověřeno dvěma běhy:
+        stejná množina, jiné pořadí. U webu, jehož hodnota stojí na
+        doložitelnosti, je nestabilní výstup vada — dva deploye by
+        ukázaly totéž jinak a diff mezi buildy je nečitelný. -#}
+  {% for sub_path in section.subsections | sort %}
     {% set d = get_section(path=sub_path) %}
     {% if d.extra.dossier_type == "aggregate" %}
       {% set_global aggregate_dossiers = aggregate_dossiers | concat(with=[sub_path]) %}

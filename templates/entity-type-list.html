@@ -32,7 +32,7 @@
   </div>
   {% else %}
   <ul class="mt-8 grid gap-2 sm:grid-cols-2 xl:grid-cols-3">
-    {% for sub in section.subsections %}
+    {% for sub in section.subsections | sort %}
     {%- set child = get_section(path=sub) -%}
     {%- set_global n = 0 -%}
     {%- for p in registry.pages -%}

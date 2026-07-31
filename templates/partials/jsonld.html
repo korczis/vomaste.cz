@@ -72,17 +72,17 @@
 {#- Same generated tree the sidebar renders (data/generated/navigation.json),
     flattened: top-level items, then every dossier and every dossier registry.
     No slug or person name is written here. -#}
-{%- set ld_nav_data = load_data(path="data/generated/navigation.json") -%}
-{%- set_global ld_nav_items = [] -%}
-{%- for ld_i in ld_nav_data.items -%}
-  {%- set_global ld_nav_items = ld_nav_items | concat(with=ld_i) -%}
-  {%- for ld_c in ld_i.children -%}
-    {%- set_global ld_nav_items = ld_nav_items | concat(with=ld_c) -%}
-    {%- for ld_g in ld_c.children -%}
-      {%- set_global ld_nav_items = ld_nav_items | concat(with=ld_g) -%}
-    {%- endfor -%}
-  {%- endfor -%}
-{%- endfor -%}
+{#- Zploštělý seznam se načítá hotový z data/generated/navigation-flat.json
+    (píše scripts/dossier/build-navigation.mjs). Dřív ho tahle šablona
+    skládala trojitou vnořenou smyčkou přes items × children × grandchildren.
+    Tera nemá push, takže se přidávalo přes `concat`, který vytváří nové
+    pole — sestavení ~200 položek je tím kvadratické v alokacích, a dělalo
+    se to znovu na každé z 1733 stránek, přestože výsledek je všude stejný.
+
+    Změřeno: se zaslepenou touto šablonou trval `zola build` 48,8 s, s ní
+    366,1 s — stála tedy 87 % celého buildu. -#}
+{%- set ld_nav_flat = load_data(path="data/generated/navigation-flat.json") -%}
+{%- set ld_nav_items = ld_nav_flat.items -%}
 {%- set ld_ns = config.base_url ~ "/ns#" -%}
 {%- if ld_dossier %}
 <link rel="alternate" type="application/ld+json" href="{{ get_url(path="data/dossiers/" ~ ld_dossier ~ ".jsonld") }}">

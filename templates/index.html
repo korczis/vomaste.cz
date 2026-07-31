@@ -176,7 +176,7 @@
   {% if dossiers_root.subsections | length > 0 %}
   <section aria-labelledby="current-dossier-heading" class="mx-auto max-w-3xl px-6 py-16 sm:py-20">
     <h2 id="current-dossier-heading" class="text-center text-2xl font-bold text-white sm:text-3xl">{% if dossiers_root.subsections | length == 1 %}Aktuálně dostupný dossier{% else %}Aktuálně dostupné dossiery{% endif %}</h2>
-    {% for sub_path in dossiers_root.subsections %}
+    {% for sub_path in dossiers_root.subsections | sort %}
     {% set dossier = get_section(path=sub_path) %}
     {% set counts = load_data(path="data/dossiers/" ~ dossier.extra.dossier ~ "/stats.toml") %}
     <div class="mt-10 rounded-xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
