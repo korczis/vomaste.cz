@@ -1,5 +1,8 @@
 .DS_Store
-node_modules/
+# bez lomítka: se `node_modules/` git ignoruje jen adresář, ne symlink
+# téhož jména — přesně tak se do repa dostal odkaz node_modules -> sám
+# na sebe (commit 2e1348a).
+node_modules
 public/
 static/css/main.css
 static/js/app.js
