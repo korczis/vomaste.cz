@@ -9,10 +9,10 @@ dossier = "martin-sebestyan"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-03"
-status = "status-single"
-status_label = "1 ZDROJ"
+status = "status-corroborated"
+status_label = "CORROBORATED"
 summary = "Exministr Marek Výborný (KDU-ČSL) podle ČT24 tvrdil, že SZIF disponuje třemi právními analýzami potvrzujícími nezákonnost vyplacení dotací Agrofertu; podle těchto analýz jde o více než 7 miliard Kč. Deník N v lednu 2026 napsal, že SZIF analýzu externí advokátní kanceláře skutečně má, ač mluvčí ministerstva tvrdil opak."
-sources = ["SRC-07"]
+sources = ["SRC-07", "SRC-27"]
 subjects = ["sebestyan"]
 +++
 

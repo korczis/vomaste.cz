@@ -9,10 +9,10 @@ dossier = "igor-cerveny"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-11"
-status = "status-single"
-status_label = "1 ZDROJ"
+status = "status-corroborated"
+status_label = "CORROBORATED"
 summary = "Ministerstvo životního prostředí plánuje stavební úpravy sekretariátu a nové ministrovy pracovny za až 3 miliony korun (bourání příček, demontáže, nátěry, tapetování, nové koberce)."
-sources = ["SRC-07"]
+sources = ["SRC-07", "SRC-33"]
 subjects = ["cerveny"]
 +++
 

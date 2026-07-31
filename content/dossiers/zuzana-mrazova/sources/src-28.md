@@ -1,0 +1,34 @@
++++
+title = "SRC-28 — Novinky.cz: Ministryně Mrázová žije v problémy zatížené Bílině v levném obecním bytě (29. 4. 2026)"
+description = "Novinky.cz nezávisle na Romea.cz (SRC-26) potvrzuje přestěhování k manželovi Pavlu Mrázovi, dřívější nájem cca 4 500 Kč a exekuční statistiku Bíliny."
+template = "dossier-source.html"
+weight = 28
+
+[extra]
+subjects = ["mrazova"]
+dossier = "zuzana-mrazova"
+record_type = "source"
+lang = "cs"
+src_id = "SRC-28"
+outlet = "Novinky.cz"
+src_type = "zpravodajství"
+url = "https://www.novinky.cz/clanek/domaci-zpravy-ustecky-kraj-ministryne-mrazova-zije-v-problemy-zatizene-biline-v-levnem-obecnim-byte-rada-obyvatel-mesta-pritom-resi-exekuce-40575732"
+published = "2026-04-29"
+retrieved = "2026-07-31"
+claims = ["CLM-28", "CLM-29", "CLM-30"]
++++
+
+Novinky.cz dne 29. 4. 2026: „Přestěhovala se na druhou stranu náměstí ke
+svému současnému manželovi Pavlu Mrázovi, do bytu, jenž rovněž spadá pod
+bytový fond Bíliny." Dřívější nájem: „Až do roku 2024 podle dostupných
+údajů Mrázová platila za 130 metrů čtverečních měsíční nájem zhruba čtyři
+a půl tisíce korun." Exekuce: „V jejím městě byl loni v exekuci reálně
+každý pátý obyvatel a průměrný dluh činí zhruba půl milionu korun."
+
+**Nezávislost**: samostatná redakce od Romea.cz (SRC-26) — obě nezávisle
+potvrzují přestěhování, dřívější výši nájmu a exekuční statistiku. Proto
+CLM-28/29/30 nesou stav `CORROBORATED`.
+
+**Limity**: tento zdroj nepotvrzuje konkrétní novou sazbu 42 Kč/m² od
+2024 (CLM-29) ani tržní nájem ~15 000 Kč/dvouletou čekací dobu na obecní
+byt (CLM-30) — ty zůstávají doloženy jen SRC-26.
