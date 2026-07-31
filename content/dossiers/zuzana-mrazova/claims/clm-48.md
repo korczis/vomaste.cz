@@ -9,10 +9,10 @@ dossier = "zuzana-mrazova"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-48"
-status = "status-single"
-status_label = "1 ZDROJ"
+status = "status-corroborated"
+status_label = "CORROBORATED"
 summary = "Schválená novela umožňuje dodatečné povolení nepovolené stavby v případech, kdy by její odstranění bylo „zjevně nepřiměřené“ ve vztahu k dotčeným osobám a veřejným zájmům, i při nesplnění standardních požadavků."
-sources = ["SRC-18"]
+sources = ["SRC-18", "SRC-30"]
 subjects = ["mrazova"]
 +++
 

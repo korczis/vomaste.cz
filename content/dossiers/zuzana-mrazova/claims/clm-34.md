@@ -9,10 +9,10 @@ dossier = "zuzana-mrazova"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-34"
-status = "status-single"
-status_label = "1 ZDROJ"
+status = "status-corroborated"
+status_label = "CORROBORATED"
 summary = "Před nástupem do vlády byla Mrázová čtyři roky místostarostkou a sedm let starostkou Bíliny."
-sources = ["SRC-21"]
+sources = ["SRC-21", "SRC-29"]
 subjects = ["mrazova"]
 +++
 

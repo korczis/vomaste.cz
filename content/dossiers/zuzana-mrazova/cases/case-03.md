@@ -15,7 +15,7 @@ status = "status-single"
 label = "Sledované téma"
 summary = "Stavby v rozporu s územním plánem — viz tvrzení CLM-12, CLM-13, CLM-14, CLM-15."
 claims = ["CLM-35", "CLM-36", "CLM-37", "CLM-38", "CLM-39", "CLM-40", "CLM-41", "CLM-42", "CLM-43", "CLM-44", "CLM-45", "CLM-46", "CLM-47", "CLM-48", "CLM-49", "CLM-50"]
-sources = ["SRC-15", "SRC-16", "SRC-17", "SRC-25", "SRC-22", "SRC-23", "SRC-18"]
+sources = ["SRC-15", "SRC-16", "SRC-17", "SRC-25", "SRC-22", "SRC-23", "SRC-18", "SRC-30"]
 subjects = ["mrazova"]
 +++
 

@@ -9,10 +9,10 @@ dossier = "alena-schillerova"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-15"
-status = "status-single"
-status_label = "1 ZDROJ"
+status = "status-corroborated"
+status_label = "CORROBORATED"
 summary = "Sněmovna přehlasovala Senát v nočním hlasování v noci na 8. července 2026 a potvrdila svou verzi novely přesně 101 hlasy vládní koalice, tedy minimálním potřebným počtem; všichni přítomní opoziční poslanci hlasovali proti."
-sources = ["SRC-06"]
+sources = ["SRC-06", "SRC-21"]
 subjects = ["schillerova"]
 +++
 
