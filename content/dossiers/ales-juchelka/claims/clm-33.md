@@ -12,7 +12,7 @@ clm_id = "CLM-33"
 status = "status-quote"
 status_label = "CITACE"
 summary = "MPSV k částce uvedlo: „Teprve po dokončení administrativních procesů bude možné vyhodnotit, zda došlo k porušení podmínek financování, zda vznikla škoda, a případně stanovit její výši.“"
-sources = ["SRC-26"]
+sources = ["SRC-12"]
 subjects = ["juchelka"]
 +++
 

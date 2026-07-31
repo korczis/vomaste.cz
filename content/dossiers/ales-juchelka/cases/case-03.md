@@ -15,7 +15,7 @@ status = "status-single"
 label = "Sledované téma"
 summary = "Rozpočtový dopad kauzy — viz tvrzení CLM-09, CLM-11, CLM-12."
 claims = ["CLM-31", "CLM-32", "CLM-33", "CLM-34", "CLM-35", "CLM-36", "CLM-37", "CLM-43", "CLM-46"]
-sources = ["SRC-19", "SRC-26", "SRC-22", "SRC-17", "SRC-18", "SRC-21", "SRC-27"]
+sources = ["SRC-19", "SRC-12", "SRC-02", "SRC-10", "SRC-11", "SRC-09", "SRC-27"]
 subjects = ["juchelka"]
 +++
 

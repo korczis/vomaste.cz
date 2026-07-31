@@ -12,7 +12,7 @@ clm_id = "CLM-36"
 status = "status-quote"
 status_label = "CITACE"
 summary = "MPSV k projektům uvedlo: „Dotčené projekty jsou předmětem probíhajících administrativních a kontrolních postupů. V současné době probíhá jejich administrace v rámci Národního plánu obnovy a ministerstvo počítá s tím, že nebudou vykazovány vůči Evropské komisi.“"
-sources = ["SRC-17", "SRC-18"]
+sources = ["SRC-10", "SRC-11"]
 subjects = ["juchelka"]
 +++
 

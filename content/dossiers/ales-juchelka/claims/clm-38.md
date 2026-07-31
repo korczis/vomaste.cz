@@ -12,7 +12,7 @@ clm_id = "CLM-38"
 status = "status-corroborated"
 status_label = "CORROBORATED"
 summary = "Poslanec Jiří Havránek (ODS) postavil Juchelku před alternativu: „Může a měl by podat trestní oznámení směrem k dané úřednici, nebo pokud o celé věci věděl… musí ve své pozici skončit.“"
-sources = ["SRC-18", "SRC-17"]
+sources = ["SRC-11", "SRC-10"]
 subjects = ["juchelka"]
 +++
 

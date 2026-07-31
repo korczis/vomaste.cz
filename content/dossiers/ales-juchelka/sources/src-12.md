@@ -15,7 +15,7 @@ src_type = "zpravodajství"
 url = "https://ekonomickydenik.cz/zaplatime-to-my-vsichni-stat-zaplati-stret-zajmu-juchelkovy-poradkyne/"
 published = "2026-07-24"
 retrieved = "2026-07-30"
-claims = ["CLM-11", "CLM-12"]
+claims = ["CLM-11", "CLM-12", "CLM-33", "CLM-37"]
 +++
 
 **Zaplatíme to my všichni: Účet za střet zájmů Juchelkovy poradkyně uhradí stát**

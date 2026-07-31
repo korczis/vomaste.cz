@@ -15,7 +15,7 @@ src_type = "zpravodajství / investigativní"
 url = "https://www.forum24.cz/dotacni-kauza-poradkyne-semancove-ministerstvo-resi-ztratu-64-milionu-ministr-juchelka-mlci"
 retrieved = "2026-07-30"
 published = "2026-07-22"
-claims = ["CLM-02", "CLM-03", "CLM-04", "CLM-05"]
+claims = ["CLM-02", "CLM-03", "CLM-04", "CLM-05", "CLM-11", "CLM-12", "CLM-20", "CLM-34", "CLM-35"]
 +++
 
 FORUM 24 dne 22. 7. 2026 informoval, že poradkyně, kterou si ministr

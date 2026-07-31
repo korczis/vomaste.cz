@@ -12,7 +12,7 @@ clm_id = "CLM-20"
 status = "status-quote"
 status_label = "CITACE"
 summary = "Na dotaz novináře Forum24 ve sněmovně 22. července 2026, jak ministerstvo naloží se ztrátou 64 milionů, Juchelka podle serveru odpověděl jediným slovem: 'Čekat.'"
-sources = ["SRC-07"]
+sources = ["SRC-02"]
 subjects = ["juchelka"]
 +++
 

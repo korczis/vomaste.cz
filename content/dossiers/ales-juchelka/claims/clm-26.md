@@ -12,7 +12,7 @@ clm_id = "CLM-26"
 status = "status-corroborated"
 status_label = "CORROBORATED"
 summary = "Podle Juchelky bude o tom, zda České republice skutečně vznikla finanční újma, možné rozhodnout až po dokončení administrace projektů."
-sources = ["SRC-23", "SRC-16"]
+sources = ["SRC-15", "SRC-14"]
 subjects = ["juchelka"]
 +++
 

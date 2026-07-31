@@ -12,7 +12,7 @@ clm_id = "CLM-39"
 status = "status-quote"
 status_label = "CITACE"
 summary = "Premiér Andrej Babiš k věci uvedl: „Pokud vznikne škoda, tak určitě pan ministr podá trestní oznámení.“ — tedy podmínil případné oznámení MPSV prokázáním škody."
-sources = ["SRC-23"]
+sources = ["SRC-15"]
 subjects = ["juchelka"]
 +++
 

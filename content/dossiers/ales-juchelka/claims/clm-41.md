@@ -12,7 +12,7 @@ clm_id = "CLM-41"
 status = "status-quote"
 status_label = "CITACE"
 summary = "Předseda STAN Vít Rakušan svůj krok odůvodnil slovy: „Na tenhle střet zájmů doplácí celá naše země.“"
-sources = ["SRC-21"]
+sources = ["SRC-09"]
 subjects = ["juchelka"]
 +++
 

@@ -12,7 +12,7 @@ clm_id = "CLM-34"
 status = "status-single"
 status_label = "1 ZDROJ"
 summary = "MPSV podle zjištění FORUM 24 z 22. 7. 2026 neplánovalo vymáhat případnou škodu po Semancové s argumentem, že „samotné vyjmutí prostředků z evropského financování nelze automaticky klasifikovat jako přímou škodu“ — tedy pozice předcházející Juchelkovu pozdějšímu příslibu vymáhání z 27. 7."
-sources = ["SRC-22"]
+sources = ["SRC-02"]
 subjects = ["juchelka"]
 +++
 

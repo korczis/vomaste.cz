@@ -12,7 +12,7 @@ clm_id = "CLM-37"
 status = "status-corroborated"
 status_label = "CORROBORATED"
 summary = "Ministerstvo počítá s úhradou vyřazených projektů ze státního rozpočtu, konkrétní suma ani rozpočtová kapitola však upřesněny nebyly."
-sources = ["SRC-26", "SRC-18"]
+sources = ["SRC-12", "SRC-11"]
 subjects = ["juchelka"]
 +++
 

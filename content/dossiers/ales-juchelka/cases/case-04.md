@@ -15,7 +15,7 @@ status = "status-single"
 label = "Sledované téma"
 summary = "Trestní oznámení a kontrola NKÚ — viz tvrzení CLM-13, CLM-14, CLM-15."
 claims = ["CLM-38", "CLM-39", "CLM-40", "CLM-41", "CLM-42", "CLM-44"]
-sources = ["SRC-18", "SRC-17", "SRC-23", "SRC-21"]
+sources = ["SRC-11", "SRC-10", "SRC-15", "SRC-09"]
 subjects = ["juchelka"]
 +++
 

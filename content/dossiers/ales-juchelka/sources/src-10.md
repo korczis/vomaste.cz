@@ -15,7 +15,7 @@ src_type = "zpravodajství"
 url = "https://www.ceskenoviny.cz/zpravy/mpsv-kvuli-moznemu-stretu-zajmu-nezada-proplaceni-projektu-z-eu-zaplati-je-stat/2854549"
 published = "2026-07-24"
 retrieved = "2026-07-30"
-claims = ["CLM-06", "CLM-09", "CLM-11"]
+claims = ["CLM-06", "CLM-09", "CLM-11", "CLM-36", "CLM-38"]
 +++
 
 **MPSV kvůli možnému střetu zájmů nežádá proplacení projektů z EU, zaplatí je stát**

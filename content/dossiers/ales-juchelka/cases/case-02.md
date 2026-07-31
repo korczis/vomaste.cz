@@ -15,7 +15,7 @@ status = "status-single"
 label = "Sledované téma"
 summary = "Kauza střetu zájmů bývalé poradkyně — viz tvrzení CLM-06, CLM-07, CLM-08, CLM-10, CLM-16."
 claims = ["CLM-23", "CLM-24", "CLM-45"]
-sources = ["SRC-23", "SRC-24", "SRC-25", "SRC-20"]
+sources = ["SRC-15", "SRC-24", "SRC-25", "SRC-05"]
 subjects = ["juchelka"]
 +++
 

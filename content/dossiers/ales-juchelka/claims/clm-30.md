@@ -12,7 +12,7 @@ clm_id = "CLM-30"
 status = "status-single"
 status_label = "1 ZDROJ"
 summary = "Jádrem Juchelkovy rozpočtové obhajoby je argument, že Evropská komise vyplácí peníze za splnění konkrétního milníku, a stát proto o prostředky nepřijde."
-sources = ["SRC-21"]
+sources = ["SRC-09"]
 subjects = ["juchelka"]
 +++
 

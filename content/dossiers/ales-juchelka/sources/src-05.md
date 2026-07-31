@@ -15,7 +15,7 @@ src_type = "zpravodajství"
 url = "https://ct24.ceskatelevize.cz/clanek/domaci/semancova-s-moznym-stretem-zajmu-uz-pro-resort-nepracuje-rekl-juchelka-372467"
 published = "2026-04-16"
 retrieved = "2026-07-30"
-claims = ["CLM-10", "CLM-18"]
+claims = ["CLM-10", "CLM-18", "CLM-45"]
 +++
 
 **Semancová s možným střetem zájmů už pro resort nepracuje, řekl Juchelka**

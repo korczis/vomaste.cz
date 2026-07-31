@@ -12,7 +12,7 @@ clm_id = "CLM-23"
 status = "status-corroborated"
 status_label = "CORROBORATED"
 summary = "K 29. červenci 2026 MPSV zadání externího právního posudku teprve připravovalo — zpracovatelem má být nezávislá advokátní kancelář, ale konkrétní výběr zpracovatele ani harmonogram v té době ještě nebyly určeny."
-sources = ["SRC-23", "SRC-24"]
+sources = ["SRC-15", "SRC-24"]
 subjects = ["juchelka"]
 +++
 

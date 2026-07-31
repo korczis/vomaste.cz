@@ -12,7 +12,7 @@ clm_id = "CLM-35"
 status = "status-single"
 status_label = "1 ZDROJ"
 summary = "Objem 63,8 mil. Kč ministerstvo přiznalo až po tříměsíčním naléhání novinářů na základě zákona o svobodném přístupu k informacím."
-sources = ["SRC-22"]
+sources = ["SRC-02"]
 subjects = ["juchelka"]
 +++
 

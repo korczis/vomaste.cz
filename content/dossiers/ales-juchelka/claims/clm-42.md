@@ -12,7 +12,7 @@ clm_id = "CLM-42"
 status = "status-corroborated"
 status_label = "CORROBORATED"
 summary = "NKÚ v rámci své (správní, nikoli trestní) kontroly položil ministerstvu přímý dotaz: „Uveďte a zdůvodněte, zda MPSV zvažuje podat trestní oznámení na dotyčnou osobu“, a zajímal se také, zda se ministerští úředníci obrátili na policii."
-sources = ["SRC-21", "SRC-18"]
+sources = ["SRC-09", "SRC-11"]
 subjects = ["juchelka"]
 +++
 
