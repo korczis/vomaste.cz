@@ -147,3 +147,14 @@
 {"logged_at":"2026-07-31","record_id":"edge-havlicek-penam-zelena-louka","record_type":"relation","discovered_from":{"source_entity":"havlicek","target_entity":"penam-zelena-louka","claims":["CLM-05","CLM-07","CLM-08","CLM-19","CLM-21","CLM-22","CLM-25","CLM-27"],"sources":["SRC-02","SRC-04","SRC-05","SRC-11","SRC-12","SRC-13","SRC-14","SRC-15"],"dossier":"karel-havlicek"},"action":"created"}
 {"logged_at":"2026-07-31","record_id":"fn-olomouc","record_type":"entity","discovered_from":{"claims":["CLM-07","CLM-08","CLM-09","CLM-11","CLM-12","CLM-31","CLM-32","CLM-33"],"sources":["SRC-02","SRC-04","SRC-06","SRC-07","SRC-19","SRC-20"],"dossiers":["adam-vojtech"]},"action":"created"}
 {"logged_at":"2026-07-31","record_id":"edge-vojtech-fn-olomouc","record_type":"relation","discovered_from":{"source_entity":"vojtech","target_entity":"fn-olomouc","claims":["CLM-07","CLM-08","CLM-09","CLM-11","CLM-12","CLM-31","CLM-32","CLM-33"],"sources":["SRC-02","SRC-04","SRC-06","SRC-07","SRC-19","SRC-20"],"dossier":"adam-vojtech"},"action":"created"}
+{"logged_at":"2026-07-31","record_id":"alexej-bilek","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
+{"logged_at":"2026-07-31","record_id":"jaroslav-kurcik","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
+{"logged_at":"2026-07-31","record_id":"jiri-tvrdik","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
+{"logged_at":"2026-07-31","record_id":"josef-mraz","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
+{"logged_at":"2026-07-31","record_id":"libor-nemecek","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
+{"logged_at":"2026-07-31","record_id":"martin-kubu","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
+{"logged_at":"2026-07-31","record_id":"michal-jedlicka","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
+{"logged_at":"2026-07-31","record_id":"pavel-hanus","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
+{"logged_at":"2026-07-31","record_id":"petr-cingr","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
+{"logged_at":"2026-07-31","record_id":"petra-prochazkova","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
+{"logged_at":"2026-07-31","record_id":"zbynek-prusa","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}

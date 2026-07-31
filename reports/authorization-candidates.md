@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 45 context entities across 22 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 56 context entities across 22 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## Agrofert (`agrofert`)
 
@@ -25,6 +25,16 @@ Generated from 45 context entities across 22 dossier(s). Regenerate with `npm ru
   - edge-babis-agrofert (babis -> agrofert, "vlastnické vazby; od 2/2026 akcie ve svěřenském fondu RSVP Trust, míra vlivu sporná; dividenda 4,25 mld. Kč vyplacena před vkladem (legální krok)", dossier: andrej-babis)
   - edge-rsvp-agrofert (rsvp-trust -> agrofert, "drží akcie Agrofertu (vloženy 2/2026)", dossier: andrej-babis)
   - edge-bartha-agrofert (bartha -> agrofert, "business development manager (dle zpravodajství, potvrzeno mluvčím)", dossier: tunde-bartha)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## JUDr. Alexej Bílek (`alexej-bilek`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## BLAKEY FINANCE LIMITED (BVI) (`blakey-finance`)
@@ -179,6 +189,36 @@ Generated from 45 context entities across 22 dossier(s). Regenerate with `npm ru
   - edge-imoba-babis (imoba -> babis, "dle citovaného zpravodajství společnost patří Andreji Babišovi", dossier: tunde-bartha)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Ing. Jaroslav Kurčík (`jaroslav-kurcik`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Jiří Tvrdík (`jiri-tvrdik`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Ing. Josef Mráz (`josef-mraz`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Kauza 2024: fotografie a svícny (`kauza2024`)
 
 - Type: controversy
@@ -227,6 +267,36 @@ Generated from 45 context entities across 22 dossier(s). Regenerate with `npm ru
   - edge-kostelecke-nss (kostelecke-uzeniny -> nss, "NSS potvrdil zrušení dotace (11/2025); rozhodnutí o dotaci, ne o vině osoby", dossier: andrej-babis)
   - edge-kostelecke-szif (kostelecke-uzeniny -> szif, "dotaci z PRV 2018 schválil SZIF, zrušilo ji Ministerstvo zemědělství", dossier: andrej-babis)
   - edge-kostelecke-ustavnisoud (kostelecke-uzeniny -> ustavni-soud, "ústavní stížnost odmítnuta 1. 4. 2026 jako zjevně neopodstatněná — spor o nárok na dotaci, ne o vině", dossier: andrej-babis)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Mgr. Libor Němeček (`libor-nemecek`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Ing. Martin Kubů (`martin-kubu`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Ing. Michal Jedlička (`michal-jedlicka`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Motoristé sobě (`motoriste`)
@@ -352,6 +422,16 @@ Generated from 45 context entities across 22 dossier(s). Regenerate with `npm ru
   - edge-turek-pavel (turek -> pavel, "hrozil žalobou (1/2026), nakonec nepodal (7/2026)", dossier: macinka-turek)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Mgr. Pavel Hanus (`pavel-hanus`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Pekárna Zelená louka (skupina Agrofert) (`penam-zelena-louka`)
 
 - Type: organization
@@ -361,6 +441,26 @@ Generated from 45 context entities across 22 dossier(s). Regenerate with `npm ru
 - Sources: SRC-02, SRC-04, SRC-05, SRC-11, SRC-12, SRC-13, SRC-14, SRC-15 (8 independent source families)
 - Relations: 
   - edge-havlicek-penam-zelena-louka (havlicek -> penam-zelena-louka, "reportovaná nevymáhaná dotace (od 2019 znám audit EU)", dossier: karel-havlicek)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Ing. Petr Cingr (`petr-cingr`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Ing. Petra Procházková (`petra-prochazkova`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Národní finanční prokuratura (PNF, Francie) (`pnf`)
@@ -563,4 +663,14 @@ Generated from 45 context entities across 22 dossier(s). Regenerate with `npm ru
   - edge-turek-zapperclub (turek -> zapper-club, "společník 2016–2023", dossier: macinka-turek)
   - edge-zapperclub-mzdrav (zapper-club -> mzdrav, "varování před přístrojem zapper", dossier: macinka-turek)
   - edge-zapperclub-szpi (zapper-club -> szpi, "odebrání certifikátu", dossier: macinka-turek)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Ing. Zbyněk Průša (`zbynek-prusa`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
