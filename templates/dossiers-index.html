@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% import "macros/ui.html" as ui %}
 {% import "macros/table.html" as table %}
+{% import "partials/dossier-directory.html" as dd %}
 
 {#-
   Adresář dossierů. Se dvěma dossiery stačila zeď dlaždic; s dvaceti je
@@ -78,45 +79,24 @@
     {{ ui::stat_tile(value=t_relations, label="Vztahů v grafech") }}
   </div>
 
-  {#- Adresář jede přes tutéž komponentu jako registry tvrzení/zdrojů/
-      mezer/kauz. Vlastní dossierDirectory() zanikl: vznikl souběžně
-      s advancedTable() a dělal totéž jinak, což je přesně duplikace, proti
-      které stojí CDUP. To lepší z něj (povyšování hlaviček na tlačítka až
-      v JS, výchozí sestupný směr u číselných sloupců) je teď v té sdílené.
-      Hledání, počet i „zrušit filtr" nese hlavička makra. -#}
-  <section aria-labelledby="dossier-directory-caption" class="mb-4">
-    {{ table::advanced_table(
-      id="dossier-directory",
-      caption="Autorizované dossiery",
-      record_type="dossier",
-      columns=["Dossier", "Tvrzení", "Zdroje", "Kauzy", "Mezery", "Entity", "Vztahy", "Prověřeno"],
-      sort_keys=["name", "claims", "sources", "cases", "gaps", "entities", "relations", "reviewed"],
-      count=entity_dossiers | length,
-      searchable=true,
-      url_state=true,
-      export_name="dossiery"
-    ) }}
-    {% for sub_path in entity_dossiers %}
-    {% set d = get_section(path=sub_path) %}
-    {% set counts = load_data(path="data/dossiers/" ~ d.extra.dossier ~ "/stats.toml") %}
-    <tr>
-      {#- data-sort-value nese jen titul: textContent buňky obsahuje i popisek,
-          takže bez toho by se řadilo podle věty, ne podle jména dossieru. -#}
-      <th scope="row" class="p-3 font-normal align-top" data-sort-value="{{ d.title }}">
-        <a href="{{ d.permalink | safe }}" class="font-semibold text-white no-underline hover:underline">{{ d.title }}</a>
-        <span class="mt-0.5 block max-w-md text-xs text-white/55">{{ d.description | truncate(length=110) }}</span>
-      </th>
-      <td class="p-3 tabular-nums text-white/70" data-sort-value="{{ counts.claims_total }}">{{ counts.claims_total }}</td>
-      <td class="p-3 tabular-nums text-white/70" data-sort-value="{{ counts.sources_total }}">{{ counts.sources_total }}</td>
-      <td class="p-3 tabular-nums text-white/70" data-sort-value="{{ counts.cases_total }}">{{ counts.cases_total }}</td>
-      <td class="p-3 tabular-nums text-white/70" data-sort-value="{{ counts.gaps_total }}">{{ counts.gaps_total }}</td>
-      <td class="p-3 tabular-nums text-white/70" data-sort-value="{{ counts.entities_total }}">{{ counts.entities_total }}</td>
-      <td class="p-3 tabular-nums text-white/70" data-sort-value="{{ counts.relations_total }}">{{ counts.relations_total }}</td>
-      <td class="p-3 text-xs text-white/50" data-sort-value="{{ d.extra.reviewed_at | default(value='') }}">{{ d.extra.reviewed_at | default(value="—") }}</td>
-    </tr>
-    {% endfor %}
-    {{ table::advanced_table_end(footer="Počty generuje scripts/dossier/generate-stats.mjs při každém buildu z reálných registrů daného dossieru, ne z čísel zapsaných do šablony. Sloupec „Prověřeno“ je datum poslední redakční kontroly, ne datum poslední změny souboru.") }}
-  </section>
+  {#- Plný adresář: tři projekce téhož datasetu, filtrování, řazení,
+      export i sdílitelný stav v adrese. Data z /data/dossiers.json, které
+      staví record-tables.mjs z kanonických zdrojů — počty ani routy nejsou
+      psané v šabloně. -#}
+  {%- set directory_items = load_data(path="static/data/dossiers.json") -%}
+  {{ dd::directory(
+    id="dossier-directory",
+    items=directory_items,
+    title="Autorizované dossiery",
+    default_view="table",
+    url_state=true,
+    export_name="dossiery") }}
+
+  <p class="mt-3 text-xs text-white/55">
+    Počty generuje <code>scripts/dossier/generate-stats.mjs</code> při každém buildu
+    z reálných registrů daného dossieru, ne z čísel zapsaných do šablony.
+    Sloupec „Ověřeno" je datum poslední redakční kontroly, ne datum poslední změny souboru.
+  </p>
 
   <p class="mb-10 text-xs text-white/55">
     Počet mezer není měřítko kvality. Otevřená mezera je otázka, kterou citované zdroje nezodpověděly, a je vedena schválně — dossier bez mezer by znamenal buď hotovou věc, nebo zamlčenou nejistotu.

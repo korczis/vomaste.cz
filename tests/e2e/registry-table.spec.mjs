@@ -106,11 +106,15 @@ test.describe("registr tvrzení", () => {
 
 test.describe("adresář dossierů", () => {
   test("řazení podle počtu tvrzení dá největší číslo nahoru", async ({ page }) => {
-    await page.goto("/dossiers/");
-    await page.locator('#dossier-directory thead th[data-sort-key="claims"] button').click();
-    await page.waitForTimeout(200);
+    // Adresář má nově tři projekce (T-027), takže se tabulka musí vyžádat
+    // explicitně: na mobilu je výchozí hustý seznam. Tabulka je vnořená
+    // ve sdíleném makru, proto id s příponou -table.
+    await page.goto("/dossiers/?view=table");
+    await page.waitForTimeout(250);
+    await page.locator('#dossier-directory-table thead th[data-sort-key="claims"] button').click();
+    await page.waitForTimeout(250);
     const nums = await page
-      .locator("#dossier-directory tbody tr:visible td:nth-child(2)")
+      .locator("#dossier-directory-table tbody tr:not([hidden]) td:nth-child(2)")
       .allInnerTexts();
     const parsed = nums.map((n) => Number(n.trim())).filter((n) => !Number.isNaN(n));
     expect(parsed.length).toBeGreaterThan(1);

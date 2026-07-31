@@ -45,12 +45,21 @@ export function stateToSearch(state, spec, existingSearch) {
   return qs ? `?${qs}` : "";
 }
 
-// Zapíše stav do adresního řádku. replaceState, ne pushState: filtrování je
-// průběžné ladění pohledu, ne navigace — kdyby každý úhoz plnil historii,
-// tlačítko zpět by přestalo dělat to, co uživatel čeká.
-export function syncUrl(state, spec) {
+// Zapíše stav do adresního řádku. Výchozí je replaceState; push si volající
+// vyžádá pro akce, které uživatel vnímá jako navigaci. Zdůvodnění obou
+// variant je u samotné podmínky níže.
+export function syncUrl(state, spec, { push = false } = {}) {
   if (typeof window === "undefined" || !window.history) return;
   const url = new URL(window.location.href);
   const search = stateToSearch(state, spec, url.search);
-  window.history.replaceState({}, "", url.pathname + search + url.hash);
+  const next = url.pathname + search + url.hash;
+  // push pro akce, které uživatel vnímá jako navigaci (přepnutí pohledu):
+  // tlačítko zpět se pak vrátí k předchozímu pohledu, ne pryč ze stránky.
+  // replace pro průběžné ladění filtru — jinak by každý úhoz zaplnil
+  // historii a zpět by přestalo dělat to, co uživatel čeká.
+  if (push && next !== url.pathname + url.search + url.hash) {
+    window.history.pushState({}, "", next);
+  } else {
+    window.history.replaceState({}, "", next);
+  }
 }

@@ -15,11 +15,65 @@ const arr = (b, k) => {
   return m ? [...m[1].matchAll(/"((?:[^"\\]|\\.)*)"/g)].map((x) => x[1]) : [];
 };
 
+// Adresář dossierů potřebuje vedle identity i počty, popis, data poslední
+// kontroly a routy jednotlivých registrů. Všechno to už v repozitáři je —
+// jen roztroušeně, takže si to dosud každá šablona skládala sama:
+//
+//   počty  — data/dossiers/<slug>/stats.toml (generuje generate-stats.mjs)
+//   popis  — front matter content/dossiers/<slug>/_index.md
+//   routy  — data/generated/navigation.json (generuje build-navigation.mjs)
+//
+// Sesbírá se to sem, aby existoval JEDEN prezentační index a tři projekce
+// adresáře (tabulka/seznam/dlaždice) byly opravdu projekcemi týchž dat.
+// Routy se ČTOU z navigačního manifestu, neskládají se z řetězců: manifest
+// je kanonický a při přejmenování registru se změní na jednom místě.
+const num = (b, k) => {
+  const m = b.match(new RegExp(`^${k}\\s*=\\s*(\\d+)`, "m"));
+  return m ? Number(m[1]) : 0;
+};
+
+function readDossierStats(root, slug) {
+  const file = join(root, "data/dossiers", slug, "stats.toml");
+  if (!existsSync(file)) return null;
+  const b = readFileSync(file, "utf8");
+  return {
+    claims: num(b, "claims_total"),
+    sources: num(b, "sources_total"),
+    cases: num(b, "cases_total"),
+    gaps: num(b, "gaps_total"),
+    entities: num(b, "entities_total"),
+    relations: num(b, "relations_total"),
+  };
+}
+
+function readNavigationRoutes(root) {
+  const file = join(root, "data/generated/navigation.json");
+  if (!existsSync(file)) return new Map();
+  const nav = JSON.parse(readFileSync(file, "utf8"));
+  const dossiers = (nav.items ?? []).find((i) => i.matchPrefix === "/dossiers/");
+  const out = new Map();
+  for (const item of dossiers?.children ?? []) {
+    const slug = (item.matchPrefix ?? "").split("/").filter(Boolean)[1];
+    if (!slug) continue;
+    const routes = { dossier: item.matchPrefix };
+    for (const child of item.children ?? []) {
+      const key = (child.matchPrefix ?? "").split("/").filter(Boolean)[2];
+      if (key) routes[key] = child.matchPrefix;
+    }
+    out.set(slug, { routes, labels: Object.fromEntries((item.children ?? []).map((c) => [(c.matchPrefix ?? "").split("/").filter(Boolean)[2], c.label])) });
+  }
+  return out;
+}
+
 export function buildRecordTables(root) {
   const registry = loadDossierRegistry();
   const rows = { claims: [], sources: [], cases: [], gaps: [], relations: [], entities: [], dossiers: [] };
 
+  const navRoutes = readNavigationRoutes(root);
   for (const d of registry) {
+    const indexFile = join(root, "content/dossiers", d.slug, "_index.md");
+    const block = existsSync(indexFile) ? fm(readFileSync(indexFile, "utf8")) : "";
+    const nav = navRoutes.get(d.slug) ?? { routes: {}, labels: {} };
     rows.dossiers.push({
       slug: d.slug,
       title: d.title,
@@ -27,6 +81,12 @@ export function buildRecordTables(root) {
       subject: d.subject,
       canonical_dossier: d.canonicalDossier,
       url: `/dossiers/${d.slug}/`,
+      description: str(block, "description") ?? "",
+      updated: str(block, "updated") ?? "",
+      reviewed_at: str(block, "reviewed_at") ?? "",
+      counts: readDossierStats(root, d.slug),
+      routes: nav.routes,
+      route_labels: nav.labels,
     });
   }
 

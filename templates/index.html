@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% import "macros/ui.html" as ui %}
+{% import "partials/dossier-directory.html" as dd %}
 
 {#- No metadata blocks here on purpose. Title, description, canonical, Open
     Graph and JSON-LD all come from front matter via base.html. -#}
@@ -173,43 +174,27 @@
     </div>
   </section>
 
-  {% if dossiers_root.subsections | length > 0 %}
-  <section aria-labelledby="current-dossier-heading" class="mx-auto max-w-3xl px-6 py-16 sm:py-20">
-    <h2 id="current-dossier-heading" class="text-center text-2xl font-bold text-white sm:text-3xl">{% if dossiers_root.subsections | length == 1 %}Aktuálně dostupný dossier{% else %}Aktuálně dostupné dossiery{% endif %}</h2>
-    {% for sub_path in dossiers_root.subsections | sort %}
-    {% set dossier = get_section(path=sub_path) %}
-    {% set counts = load_data(path="data/dossiers/" ~ dossier.extra.dossier ~ "/stats.toml") %}
-    <div class="mt-10 rounded-xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
-      <h3 class="text-xl font-bold text-white">{{ dossier.title }}</h3>
-      <p class="mt-2 text-sm leading-relaxed text-white/70">{{ dossier.description }}</p>
-      {% if dossier.extra.updated or dossier.extra.reviewed_at %}
-      <p class="mt-3 text-xs text-white/55">
-        {%- if dossier.extra.updated %}Naposledy aktualizováno: {{ dossier.extra.updated }}{% endif -%}
-        {%- if dossier.extra.updated and dossier.extra.reviewed_at %} &middot; {% endif -%}
-        {%- if dossier.extra.reviewed_at %}Naposledy ověřeno proti zdrojům: {{ dossier.extra.reviewed_at }}{% endif -%}
-      </p>
-      {% endif %}
+  {#- Adresář místo zdi karet. Původně tu byla na každý dossier karta přes
+      celou šířku se čtyřmi statistickými dlaždicemi a čtyřmi velkými
+      tlačítky — při dvou dossierech vitrína, při dvaadvaceti stěna, kterou
+      musí člověk na mobilu odrolovat, aby zjistil, co web obsahuje.
 
-      {% if counts %}
-      <div class="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
-        {{ ui::stat_tile(value=counts.sources_total, label="Citovaných zdrojů", url=get_url(path="@/dossiers/" ~ dossier.extra.dossier ~ "/sources/_index.md")) }}
-        {{ ui::stat_tile(value=counts.cases_total, label="Sledované kauzy", url=get_url(path="@/dossiers/" ~ dossier.extra.dossier ~ "/cases/_index.md")) }}
-        {{ ui::stat_tile(value=counts.claims_total, label="Tvrzení v registru", url=get_url(path="@/dossiers/" ~ dossier.extra.dossier ~ "/claims/_index.md")) }}
-        {{ ui::stat_tile(value=counts.gaps_total, label="Otevřené mezery", url=get_url(path="@/dossiers/" ~ dossier.extra.dossier ~ "/gaps/_index.md")) }}
-      </div>
-      {% endif %}
-
-      <div class="mt-6 flex flex-wrap gap-3 text-sm">
-        {# sub_path is a content path ("dossiers/<slug>/_index.md"); get_url() would
-           emit it verbatim under base_url and 404. The section's own permalink is
-           the built URL. #}
-        <a href="{{ dossier.permalink | safe }}" class="rounded-lg border border-white/15 px-4 py-2 text-white/80 no-underline hover:border-white/30 hover:text-white">Otevřít dossier</a>
-        <a href="{{ get_url(path='@/dossiers/' ~ dossier.extra.dossier ~ '/claims/_index.md') | safe }}" class="rounded-lg border border-white/15 px-4 py-2 text-white/80 no-underline hover:border-white/30 hover:text-white">Registr tvrzení</a>
-        <a href="{{ get_url(path='@/dossiers/' ~ dossier.extra.dossier ~ '/sources/_index.md') | safe }}" class="rounded-lg border border-white/15 px-4 py-2 text-white/80 no-underline hover:border-white/30 hover:text-white">Registr zdrojů</a>
-        <a href="{{ get_url(path='@/dossiers/' ~ dossier.extra.dossier ~ '/gaps/_index.md') | safe }}" class="rounded-lg border border-white/15 px-4 py-2 text-white/80 no-underline hover:border-white/30 hover:text-white">Registr mezer</a>
-      </div>
-    </div>
-    {% endfor %}
+      Data jdou z /data/dossiers.json (staví record-tables.mjs z dossiers.toml,
+      stats.toml, front matter a navigačního manifestu), takže počty ani
+      routy nejsou psané v šabloně a nemůžou zastarat. -#}
+  {%- set directory_items = load_data(path="static/data/dossiers.json") -%}
+  {%- if directory_items | length > 0 %}
+  <section class="mx-auto max-w-6xl px-6 py-16 sm:py-20">
+    {{ dd::directory(
+      id="home-dossiers",
+      items=directory_items,
+      title="Aktuálně dostupné dossiery",
+      default_view="list",
+      url_state=false,
+      show_filters=false) }}
+    <p class="mt-4 text-center text-sm">
+      <a href="{{ get_url(path='@/dossiers/_index.md') | safe }}" class="text-[#f3e5c0] underline decoration-white/30 underline-offset-2">Celý adresář s filtrováním a exportem →</a>
+    </p>
   </section>
   {% endif %}
 

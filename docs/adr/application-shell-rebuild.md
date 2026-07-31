@@ -90,6 +90,12 @@ other was doing it. Re-reading a stale gap list is one way that happens.
 - **Command palette (§40) — BUILT** (coop T-020). `assets/js/modules/
   global-search.js` + `search-core.js`: `/` and Cmd/Ctrl+K focus the bar,
   diacritics-insensitive matching, ID-first ranking, grouped results.
+- **Dossier directory as a dense, switchable catalog — BUILT** (coop
+  T-027). `templates/partials/dossier-directory.html`: table / compact
+  list / grid, three projections over one normalised dataset, one
+  collection state, `?view=` in the URL, list as the mobile default. The
+  landing page's full-width card wall (one dossier ≈ one viewport) is
+  gone. See `docs/adr/dossier-directory-multi-view.md`.
 - **Advanced registry table toolbar (§17–§19) — BUILT** (coop T-019,
   `5a2aba4`, `ea8f3b3`, `5d06502`). `templates/macros/table.html` +
   `assets/js/modules/table-filter.js`: search, chip and select facets,

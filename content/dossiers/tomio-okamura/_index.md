@@ -111,8 +111,8 @@ date = "2026-06-03"
 title = "Nepravomocný rozsudek: SPD vinna, trest 3 miliony"
 anchor = "kauza-plakaty-spd"
 dot = "dot-disputed"
-subjects = ["okamura"]+++
-
+subjects = ["okamura"]
++++
 Tomio Okamura je předsedou Poslanecké sněmovny a předsedou hnutí SPD,
 které je součástí vládní koalice. Tento dossier pokrývá **jedno jediné
 téma** — trestní kauzu předvolebních plakátů SPD z roku 2026 — v rozsahu

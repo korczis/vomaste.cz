@@ -102,11 +102,25 @@ export function registerTableFilter() {
       inspected: "",
       inspectedFields: [],
       inspectedHref: "",
+      // Vrstva adresáře: tatáž kolekce vykreslená ve třech projekcích.
+      // Není to druhý filtrovací engine — hledání, řazení i URL stav
+      // zůstávají tady, takže se tři pohledy nemůžou rozejít.
+      directory: false,
+      view: "table",
+      allowedViews: ["table", "list", "grid"],
+      records: new Map(),
 
       // Klíče v URL jsou názvy atributů (?type=…), aby adresa popisovala,
       // co filtruje, a ne pořadí selectů v šabloně.
       spec() {
-        const spec = Object.assign({}, SPEC, this.$root.dataset.inspector ? { inspect: "" } : {});
+        const spec = Object.assign(
+          {},
+          SPEC,
+          this.$root.dataset.inspector ? { inspect: "" } : {},
+          this.$root.dataset.dossierDirectory !== undefined
+            ? { view: this.$root.dataset.defaultView || "table" }
+            : {},
+        );
         this.selectFacets.forEach(function (attr) {
           spec[attr] = "";
         });
@@ -126,6 +140,9 @@ export function registerTableFilter() {
         this.visible = this.rows.length;
         this.urlState = this.$root.dataset.urlState === "true";
         this.exportName = this.$root.dataset.exportName || "";
+
+        this.directory = this.$root.dataset.dossierDirectory !== undefined;
+        if (this.directory) this.initDirectory();
 
         this.upgradeHeaders();
         this.readFacetOptions();
@@ -283,7 +300,8 @@ export function registerTableFilter() {
           this.sortKey = key;
           this.sortDir = this.isNumeric(key) ? "desc" : "asc";
         }
-        this.applySort();
+        if (this.directory) this.applyDirectorySort();
+        else this.applySort();
         this.sync();
       },
 
@@ -330,6 +348,7 @@ export function registerTableFilter() {
       },
 
       apply() {
+        if (this.directory) return this.applyDirectory();
         const q = normalize(this.search);
         const facet = this.facet;
         const selects = this.selectFacets;
@@ -403,6 +422,113 @@ export function registerTableFilter() {
         this.download(blob, "vyrez.json");
       },
 
+      // ---- adresář: jedna kolekce, tři projekce ----------------------
+
+      initDirectory() {
+        // Záznam existuje v každé projekci jednou; pojí je data-record-key.
+        // Filtrování a řazení pak pracuje s POJMEM záznamu, ne s řádkem
+        // tabulky, takže se seznam a dlaždice nemůžou lišit od tabulky.
+        this.$root.querySelectorAll("[data-record-key]").forEach((node) => {
+          const key = node.dataset.recordKey;
+          if (!this.records.has(key)) this.records.set(key, []);
+          this.records.get(key).push(node);
+          node.dataset.search = normalize(node.textContent);
+        });
+        this.total = this.records.size;
+        this.visible = this.records.size;
+
+        this.view = this.resolveInitialView();
+        this.applyView();
+
+        // Back/Forward musí obnovit pohled i filtr. Bez toho by tlačítko
+        // zpět po přepnutí projekce odešlo ze stránky, což uživatel nečeká.
+        window.addEventListener("popstate", () => {
+          const s = readState(this.spec());
+          if (this.allowedViews.includes(s.view)) {
+            this.view = s.view;
+            this.applyView();
+          }
+          this.search = s.q || "";
+          this.apply();
+        });
+      },
+
+      // Pořadí priorit: URL > uložená preference > šířka displeje.
+      // URL vyhrává, aby sdílený odkaz ukázal to, co odesílatel viděl.
+      resolveInitialView() {
+        // Číst proti prázdné výchozí hodnotě, ne proti spec(): tam má `view`
+        // jako výchozí data-default-view, takže by readState u chybějícího
+        // parametru vrátil tuhle hodnotu a větev „z URL" by vždycky vyhrála.
+        // Rozlišení „parametr chybí" vs. „parametr má výchozí hodnotu" je
+        // přesně to, na čem tohle rozhodování stojí.
+        const fromUrl = this.urlState ? readState({ view: "" }).view : "";
+        if (this.allowedViews.includes(fromUrl)) return fromUrl;
+        let stored = "";
+        try {
+          stored = window.localStorage.getItem("vomaste:directory-view") || "";
+        } catch (e) {
+          stored = "";
+        }
+        if (this.allowedViews.includes(stored)) return stored;
+        const fallback = this.$root.dataset.defaultView || "table";
+        // Na úzkém displeji je tabulka nepoužitelná; seznam je hustý
+        // a čitelný. Rozhoduje se jednou při startu, ne při každé změně
+        // šířky — přepnutí pohledu pod rukama je horší než nepohodlí.
+        if (window.matchMedia("(max-width: 767px)").matches && this.allowedViews.includes("list")) {
+          return "list";
+        }
+        return this.allowedViews.includes(fallback) ? fallback : "table";
+      },
+
+      setView(next) {
+        if (!this.allowedViews.includes(next) || next === this.view) return;
+        this.view = next;
+        this.applyView();
+        try {
+          window.localStorage.setItem("vomaste:directory-view", next);
+        } catch (e) {
+          /* soukromý režim: preference se neuloží, funkčnost to nemění */
+        }
+        this.sync({ push: true });
+      },
+
+      // `hidden` na kontejneru, ne jen CSS: skrytá projekce nesmí být
+      // dosažitelná tabulátorem ani odečítačem, jinak by uživatel na
+      // klávesnici procházel tři kopie téhož seznamu.
+      applyView() {
+        this.$root.querySelectorAll("[data-view]").forEach((el) => {
+          el.hidden = el.dataset.view !== this.view;
+        });
+      },
+
+      // Řazení adresáře: pořadí určí řádky tabulky (ty nesou data-sort-value),
+      // ostatní projekce se pak přeskládají podle stejného klíče. Jedna
+      // pravda o pořadí, tři vykreslení.
+      applyDirectorySort() {
+        const index = this.sortIndexes[this.sortKey];
+        const dir = this.sortDir === "desc" ? -1 : 1;
+        const keys = [...this.records.keys()];
+        if (index !== undefined) {
+          const valueOfKey = (k) => {
+            const row = this.records.get(k).find((n) => n.tagName === "TR");
+            return row ? cellText(row.cells[index]) : "";
+          };
+          keys.sort((a, b) => compareValues(valueOfKey(a), valueOfKey(b), dir));
+        } else {
+          keys.sort((a, b) => a.localeCompare(b, "cs"));
+        }
+        // Každou projekci přeskládáme v jejím vlastním kontejneru.
+        const containers = new Map();
+        for (const key of keys) {
+          for (const node of this.records.get(key)) {
+            const parent = node.parentElement;
+            if (!containers.has(parent)) containers.set(parent, document.createDocumentFragment());
+            containers.get(parent).appendChild(node);
+          }
+        }
+        for (const [parent, frag] of containers) parent.appendChild(frag);
+      },
+
       // Panel se plní Z ŘÁDKU: popisky ze záhlaví, hodnoty z buněk téhož
       // řádku. Nevzniká tedy druhá kopie dat, která by se mohla rozejít
       // s tabulkou — je to tatáž data, jen jinak vypsaná.
@@ -439,7 +565,26 @@ export function registerTableFilter() {
         row?.querySelector("button, a")?.focus();
       },
 
-      sync() {
+      // Filtruje ZÁZNAMY: skryje nebo zobrazí všechny jeho uzly napříč
+      // projekcemi najednou. Kdyby se filtrovalo po projekcích zvlášť,
+      // vznikly by tři nezávislé stavy a přepnutí pohledu by ukázalo jiný
+      // výsledek než ten, který uživatel právě viděl.
+      applyDirectory() {
+        const q = normalize(this.search);
+        let shown = 0;
+        for (const [, nodes] of this.records) {
+          const match = !q || nodes.some((n) => (n.dataset.search || "").indexOf(q) !== -1);
+          nodes.forEach((n) => {
+            n.hidden = !match;
+          });
+          if (match) shown++;
+        }
+        this.visible = shown;
+        if (this.sortKey) this.applyDirectorySort();
+        this.sync();
+      },
+
+      sync(opts) {
         if (!this.urlState) return;
         const state = {
           q: this.search.trim(),
@@ -448,10 +593,11 @@ export function registerTableFilter() {
           f: this.facet,
         };
         if (this.$root.dataset.inspector) state.inspect = this.inspected;
+        if (this.directory) state.view = this.view;
         this.selectFacets.forEach((attr) => {
           state[attr] = this.facetValues[attr];
         });
-        syncUrl(state, this.spec());
+        syncUrl(state, this.spec(), opts);
       },
     };
   });

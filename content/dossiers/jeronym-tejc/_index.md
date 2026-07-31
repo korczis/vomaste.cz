@@ -139,8 +139,8 @@ subjects = ["tejc"]
 
 [extra.authorization]
 authorized = true
-record_ids = ["AUTH-2026-07-30-O"]+++
-
+record_ids = ["AUTH-2026-07-30-O"]
++++
 Jeroným Tejc zastává funkci ministra spravedlnosti ve třetí vládě Andreje Babiše (viz
 `data/government.toml`, ověřeno proti oficiálnímu seznamu členů vlády).
 Tento dossier je autorizován záznamem `AUTH-2026-07-30-O` v `AGENTS.md`.

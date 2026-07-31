@@ -1,0 +1,202 @@
+{% import "macros/table.html" as table %}
+{#- Adresář dossierů — jeden dataset, tři projekce (coop T-027).
+    ============================================================
+
+    PROČ TAHLE KOMPONENTA EXISTUJE
+
+    Úvodní stránka vykreslovala každý dossier jako kartu přes celou šířku
+    se čtyřmi statistickými dlaždicemi a čtyřmi velkými tlačítky. Při dvou
+    dossierech to byla vitrína; při dvaadvaceti je to stěna, kterou musí
+    člověk na mobilu odrolovat, aby zjistil, co web vlastně obsahuje.
+    Adresář se dvaceti a více položkami je katalog, ne upoutávka.
+
+    JEDEN DATASET, TŘI PROJEKCE
+
+    Tabulka, seznam i dlaždice čtou TÝŽ normalizovaný seznam předaný
+    parametrem `items`. Nevzniká tedy druhý model, který by se mohl
+    rozejít — a filtrování, řazení i URL stav řídí jedna komponenta pro
+    všechny tři pohledy najednou (assets/js/modules/table-filter.js).
+
+    Zdroj dat: static/data/dossiers.json, který staví
+    scripts/dossier/lib/record-tables.mjs z kanonických zdrojů:
+      identita a typ  — data/dossiers.toml
+      počty           — data/dossiers/<slug>/stats.toml (generuje generate-stats.mjs)
+      popis a data    — front matter content/dossiers/<slug>/_index.md
+      routy registrů  — data/generated/navigation.json (build-navigation.mjs)
+
+    Routy se ČTOU z navigačního manifestu, neskládají se z řetězců.
+    Přejmenování registru se tak projeví na jednom místě.
+
+    PROGRESIVNÍ VYLEPŠENÍ
+
+    Všechny tři projekce vykresluje Tera na serveru. JavaScript jen
+    přepíná, která je vidět, filtruje, řadí a zapisuje stav do adresy.
+    Bez skriptu zůstane viditelná výchozí projekce s plnými odkazy —
+    žádný prázdný <div> čekající na fetch, žádná routa držená jen v JS.
+
+    Skryté projekce nesou `hidden`, takže do nich nevstupuje ani
+    tabulátor, ani odečítač obrazovky.
+
+    PARAMETRY
+      id            — prefix id prvků; musí být na stránce jedinečný
+      items         — normalizovaný seznam (static/data/dossiers.json)
+      title         — nadpis sekce
+      default_view  — "table" | "list" | "grid"; bez JS se zobrazí tato
+      url_state     — true promítne view/hledání/řazení do adresy
+      export_name   — zapne export výřezu; "" = bez exportu
+      show_filters  — false skryje toolbar (pro krátké přehledy)
+-#}
+
+{%- macro directory(id, items, title="", default_view="table", url_state=false, export_name="", show_filters=true) -%}
+{#- Pořadí sloupců a jejich klíče drží jedno místo, aby se projekce
+    nemohly významově rozejít: tabulka je vypisuje jako sloupce, seznam
+    a dlaždice jako kompaktní metriky, ale jde o tytéž hodnoty. -#}
+{%- set metrics = [
+  "claims::Tvrzení::claims",
+  "sources::Zdroje::sources",
+  "cases::Kauzy::cases",
+  "gaps::Mezery::gaps",
+  "entities::Entity::entities",
+  "relations::Vztahy::relations",
+] -%}
+<section id="{{ id }}" aria-labelledby="{{ id }}-heading"
+  x-data="advancedTable()"
+  data-dossier-directory
+  data-default-view="{{ default_view }}"
+  {% if url_state %}data-url-state="true"{% endif %}
+  {% if export_name %}data-export-name="{{ export_name }}"{% endif %}
+  class="scroll-mt-24">
+
+  <div class="mb-4 flex flex-wrap items-end justify-between gap-3">
+    <h2 id="{{ id }}-heading" class="text-lg font-semibold text-white">{{ title | default(value="Adresář dossierů") }}</h2>
+
+    {#- Přepínač projekcí. role="group" s aria-pressed, ne tabs: pohledy
+        nejsou panely jednoho obsahu, ale tři podoby téhož seznamu, a
+        tab pattern by sliboval navigaci, která tu není. Popisky jsou
+        textové; ikona by nesla význam jen pro vidoucí. -#}
+    <div class="flex items-center gap-2" x-cloak>
+      <div role="group" aria-label="Zobrazení adresáře" class="inline-flex overflow-hidden rounded-lg border border-white/15">
+        {%- for v in ["table::Tabulka", "list::Seznam", "grid::Dlaždice"] %}
+        {%- set vp = v | split(pat="::") %}
+        <button type="button" @click="setView('{{ vp.0 }}')"
+          :aria-pressed="view === '{{ vp.0 }}' ? 'true' : 'false'"
+          :class="view === '{{ vp.0 }}' ? 'bg-[#f3e5c0]/15 text-[#f3e5c0]' : 'text-white/60 hover:bg-white/5 hover:text-white'"
+          class="min-h-9 px-3 text-xs font-medium transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#f3e5c0]">{{ vp.1 }}</button>
+        {%- endfor %}
+      </div>
+      <span class="font-mono text-xs text-white/50" aria-live="polite" x-text="visible + ' / ' + total"></span>
+    </div>
+  </div>
+
+  {%- if show_filters %}
+  <div class="mb-3 flex flex-wrap items-end gap-3" x-cloak>
+    <label class="flex flex-col gap-1">
+      <span class="text-xs text-white/55">Hledat dossier</span>
+      <input type="search" x-model="search" @input="apply()" class="src-filter-input w-56" placeholder="jméno nebo popis…" autocomplete="off">
+    </label>
+    <label class="flex flex-col gap-1">
+      <span class="text-xs text-white/55">Řadit podle</span>
+      <select x-model="sortKey" @change="sortBy(sortKey)" class="src-filter-select">
+        <option value="">Abecedně</option>
+        {%- for m in metrics %}{% set mp = m | split(pat="::") %}
+        <option value="{{ mp.0 }}">{{ mp.1 }}</option>
+        {%- endfor %}
+        <option value="reviewed">Poslední kontrola</option>
+      </select>
+    </label>
+    <button type="button" @click="reset()" x-show="filtered" class="src-filter-reset">Zrušit filtr a řazení</button>
+  </div>
+  {%- endif %}
+
+  {#- Projekce A: tabulka. Jde přes sdílené macros/table.html, ne přes
+      vlastní <table> — jinak by vznikla druhá tabulková implementace a
+      lint:component-reuse to (správně) odmítne. searchable=false: toolbar
+      i stav vlastní tahle sekce, takže makro nesmí zakládat vlastní
+      x-data, které by běželo vedle. Obal makra zároveň řeší vodorovný
+      posuv na úzkém displeji. -#}
+  <div data-view="table" :hidden="view !== 'table'" {% if default_view != "table" %}hidden{% endif %}>
+    {{ table::advanced_table(
+      id=id ~ "-table",
+      caption=title | default(value="Adresář dossierů"),
+      record_type="dossier",
+      columns=["Dossier", "Tvrzení", "Zdroje", "Kauzy", "Mezery", "Entity", "Vztahy", "Ověřeno"],
+      sort_keys=["name", "claims", "sources", "cases", "gaps", "entities", "relations", "reviewed"]) }}
+    {%- for d in items %}
+    <tr data-record-key="{{ d.slug }}" data-type="{{ d.dossier_type }}" id="{{ id }}-table-{{ d.slug }}">
+      <th scope="row" class="p-3 align-top font-normal" data-sort-value="{{ d.title }}">
+        <a href="{{ d.routes.dossier }}" class="font-semibold text-white no-underline hover:underline">{{ d.title }}</a>
+        {%- if d.dossier_type != "entity" %}
+        <span class="ml-1 rounded bg-white/5 px-1.5 py-0.5 text-[0.6rem] uppercase tracking-wide text-white/55">agregát</span>
+        {%- endif %}
+        <span class="mt-0.5 block max-w-md text-xs text-white/55">{{ d.description | truncate(length=110) }}</span>
+      </th>
+      {%- for m in metrics %}{% set mp = m | split(pat="::") %}
+      <td class="p-3 align-top tabular-nums text-white/70" data-sort-value="{{ d.counts[mp.2] | default(value=0) }}">
+        {%- if d.routes[mp.2] %}<a href="{{ d.routes[mp.2] }}" class="text-white/70 no-underline hover:text-white hover:underline">{{ d.counts[mp.2] | default(value=0) }}</a>
+        {%- else %}{{ d.counts[mp.2] | default(value=0) }}{% endif -%}
+      </td>
+      {%- endfor %}
+      <td class="whitespace-nowrap p-3 align-top text-xs text-white/55" data-sort-value="{{ d.reviewed_at | default(value=d.updated) }}">{{ d.reviewed_at | default(value=d.updated) | default(value="—") }}</td>
+    </tr>
+    {%- endfor %}
+    {{ table::advanced_table_end() }}
+  </div>
+
+  {#- ---------- projekce B: kompaktní seznam ---------- -#}
+  <div data-view="list" :hidden="view !== 'list'" {% if default_view != "list" %}hidden{% endif %}>
+    <ul class="divide-y divide-white/10 overflow-hidden rounded-lg border border-white/10 bg-white/[0.03]">
+      {%- for d in items %}
+      <li data-record-key="{{ d.slug }}" data-type="{{ d.dossier_type }}" id="{{ id }}-list-{{ d.slug }}" class="p-3">
+        <div class="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
+          <a href="{{ d.routes.dossier }}" class="font-semibold text-white no-underline hover:underline">{{ d.title }}</a>
+          <span class="font-mono text-xs text-white/55">{{ d.reviewed_at | default(value=d.updated) | default(value="—") }}</span>
+        </div>
+        <p class="mt-0.5 line-clamp-2 text-xs leading-snug text-white/60">{{ d.description }}</p>
+        {#- Metriky jako odkazy, ne tlačítka: je to navigace do registru,
+            a šest velkých tlačítek na položku byla přesně ta plocha,
+            kvůli které se adresář nedal projít. -#}
+        <p class="mt-1.5 flex flex-wrap gap-x-3 gap-y-1 text-xs">
+          {%- for m in metrics %}{% set mp = m | split(pat="::") %}
+          {%- if d.routes[mp.2] and d.counts[mp.2] %}
+          <a href="{{ d.routes[mp.2] }}" class="text-white/55 no-underline hover:text-white">
+            <span class="tabular-nums text-white/80">{{ d.counts[mp.2] }}</span> {{ mp.1 | lower }}</a>
+          {%- endif %}
+          {%- endfor %}
+        </p>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+
+  {#- ---------- projekce C: dlaždice ---------- -#}
+  <div data-view="grid" :hidden="view !== 'grid'" {% if default_view != "grid" %}hidden{% endif %}>
+    <div class="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+      {%- for d in items %}
+      <article data-record-key="{{ d.slug }}" data-type="{{ d.dossier_type }}" id="{{ id }}-grid-{{ d.slug }}"
+        class="rounded-lg border border-white/10 bg-white/[0.03] p-3">
+        <h3 class="text-sm font-semibold">
+          <a href="{{ d.routes.dossier }}" class="text-white no-underline hover:underline">{{ d.title }}</a>
+        </h3>
+        <p class="mt-1 line-clamp-3 text-xs leading-snug text-white/60">{{ d.description }}</p>
+        <dl class="mt-2 grid grid-cols-3 gap-x-2 gap-y-1 text-xs">
+          {%- for m in metrics %}{% set mp = m | split(pat="::") %}
+          <div>
+            <dt class="sr-only">{{ mp.1 }}</dt>
+            <dd>
+              {%- if d.routes[mp.2] %}<a href="{{ d.routes[mp.2] }}" class="no-underline hover:text-white"><span class="tabular-nums text-white/80">{{ d.counts[mp.2] | default(value=0) }}</span> <span class="text-white/55">{{ mp.1 | lower }}</span></a>
+              {%- else %}<span class="tabular-nums text-white/80">{{ d.counts[mp.2] | default(value=0) }}</span> <span class="text-white/55">{{ mp.1 | lower }}</span>{% endif -%}
+            </dd>
+          </div>
+          {%- endfor %}
+        </dl>
+        <p class="mt-2 font-mono text-[0.65rem] text-white/55">{{ d.reviewed_at | default(value=d.updated) | default(value="—") }}</p>
+      </article>
+      {%- endfor %}
+    </div>
+  </div>
+
+  <p x-show="visible === 0" x-cloak class="rounded-lg border border-white/10 px-3 py-6 text-center text-sm text-white/55">
+    Žádný dossier neodpovídá zadanému filtru.
+  </p>
+</section>
+{%- endmacro directory -%}

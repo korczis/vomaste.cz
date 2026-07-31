@@ -86,6 +86,29 @@ zdrojům). Pro **externí konzumenty** plochých exportů žádná brána neexis
 proto je správný tvar joinu předvedený jako příklad v SQL konzoli a limity jsou
 uvedené přímo na stránce `/data/`.
 
+## Prezentační index adresáře
+
+`static/data/dossiers.json` slouží jako jediný vstup pro adresář dossierů
+(tabulka / seznam / dlaždice na `/` a `/dossiers/`). Staví ho
+`scripts/dossier/lib/record-tables.mjs` z kanonických zdrojů:
+
+| údaj | zdroj |
+|---|---|
+| identita, typ, subjekt | `data/dossiers.toml` |
+| počty záznamů | `data/dossiers/<slug>/stats.toml` (generuje `generate-stats.mjs`) |
+| popis, `updated`, `reviewed_at` | front matter `content/dossiers/<slug>/_index.md` |
+| routy registrů | `data/generated/navigation.json` (generuje `build-navigation.mjs`) |
+
+Routy se **čtou** z navigačního manifestu, neskládají se z řetězců —
+manifest je kanonický, takže přejmenování registru se projeví na jednom
+místě. Počty se nikdy nepíšou do šablony; test
+`scripts/ui/dossier-directory.test.mjs` je porovnává se `stats.toml`.
+
+Není to druhý významový model: jde o prezentační projekci týchž front
+matter dat, ze kterých vzniká `@graph` v `build-jsonld-exports.mjs`.
+Rozhodnutí a jeho důsledky popisuje
+[ADR o adresáři](adr/dossier-directory-multi-view.md).
+
 ## Odvozené hodnoty
 
 Počty (tvrzení, zdrojů, kauz, mezer, entit, vztahů) generuje

@@ -170,8 +170,8 @@ subjects = ["mrazova"]
 
 [extra.authorization]
 authorized = true
-record_ids = ["AUTH-2026-07-30-P"]+++
-
+record_ids = ["AUTH-2026-07-30-P"]
++++
 Zuzana Mrázová zastává funkci ministryně pro místní rozvoj ve třetí vládě Andreje Babiše (viz
 `data/government.toml`, ověřeno proti oficiálnímu seznamu členů vlády).
 Tento dossier je autorizován záznamem `AUTH-2026-07-30-P` v `AGENTS.md`.
