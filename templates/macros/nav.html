@@ -31,8 +31,18 @@
 {%- set metric_id = item.countMetric | default(value="") -%}
 {%- set has_count = false -%}
 {%- set dossier_key = "" -%}
+{%- set group_key = "" -%}
 {%- set count = 0 -%}
-{%- if metric_id and metrics and metrics.metrics is defined -%}
+{#- Grouped metric: the item names the metric and its group key, the value
+    lives in the manifest under that key. Same manifest, same lookup shape as
+    a total — only partitioned. -#}
+{%- if metric_id == "entities.by_type" and metrics and metrics.perType is defined -%}
+  {%- if metrics.perType[item.countGroup] is defined -%}
+    {%- set_global has_count = true -%}
+    {%- set_global count = metrics.perType[item.countGroup].entities -%}
+    {%- set_global group_key = item.countGroup -%}
+  {%- endif -%}
+{%- elif metric_id and metrics and metrics.metrics is defined -%}
   {%- if metrics.metrics[metric_id] is defined -%}
     {%- set_global has_count = true -%}
     {%- set_global count = metrics.metrics[metric_id].value -%}
@@ -62,7 +72,7 @@
   {%- if has_count %}
   {#- aria-hidden: the number is already in the link's aria-label, so a
       screen reader must not read it twice. -#}
-  <span class="nav-count-badge justify-self-end" data-metric-id="{{ metric_id }}"{% if dossier_key %} data-dossier="{{ dossier_key }}"{% endif %} data-count="{{ count }}" aria-hidden="true">{{ count }}</span>
+  <span class="nav-count-badge justify-self-end" data-metric-id="{{ metric_id }}"{% if dossier_key %} data-dossier="{{ dossier_key }}"{% endif %}{% if group_key %} data-group="{{ group_key }}"{% endif %} data-count="{{ count }}" aria-hidden="true">{{ count }}</span>
   {%- else %}
   <span aria-hidden="true"></span>
   {%- endif %}

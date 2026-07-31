@@ -136,6 +136,25 @@ for (const file of pages) {
       continue;
     }
 
+    // Grouped per-entity-type metric: keyed by data-group.
+    if (id === "entities.by_type") {
+      const key = attrs["data-group"];
+      const group = key ? manifest.perType?.[key] : null;
+      if (!key) {
+        fail(`${rel}: an entities.by_type badge has no data-group — its number cannot be attributed.`);
+        continue;
+      }
+      if (!group) {
+        fail(`${rel}: badge claims entity type "${key}", which has no per-type entry in the manifest.`);
+        continue;
+      }
+      seenMetrics.add(id);
+      const wantType = String(group.entities);
+      if (dataCount !== wantType) fail(`${rel}: entity type "${key}" — data-count is ${dataCount}, manifest says ${wantType}.`);
+      if (text !== wantType) fail(`${rel}: entity type "${key}" — visible text is "${text}", manifest says ${wantType}.`);
+      continue;
+    }
+
     if (!expected.has(id)) {
       // A number rendered from a metric that no longer exists is the exact
       // failure mode "no hand-written counts" is meant to prevent.
