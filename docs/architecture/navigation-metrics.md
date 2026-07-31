@@ -175,13 +175,18 @@ metriku jedním lookupem a nemůžou se rozejít).
 Badge dnes mají tři položky s jednoznačnou populací route: `dossiers.total`,
 `entities.total`, `relations.total`.
 
+Post-build verifier `scripts/data/verify-navigation-counts.mjs` porovnává
+každé číslo v postaveném HTML s manifestem a odmítne badge odkazující na
+neexistující metriku. Běží v `npm run build` za `zola build`.
+
+Parsuje atributy, neregexuje je — minifikátor maže uvozovky a přehazuje
+pořadí, takže badge ve výstupu vypadá jako
+`data-count=22 data-metric-id=dossiers.total`. Regex hledající
+`data-metric-id="..."` proti tomu nenajde nic; přesně tahle chyba při vývoji
+ohlásila chybějící badge, které tam byly.
+
 Neimplementované:
 
-- **post-build HTML verifier** porovnávající čísla v HTML s manifestem.
-  Poznámka pro jeho autora: minifikátor maže uvozovky a přehazuje pořadí
-  atributů, takže `data-count=22 data-metric-id=dossiers.total` je platný
-  výstup. Verifier **musí parsovat HTML, ne regexovat** — první pokus o
-  ověření touhle chybou ohlásil, že badge chybí, ačkoli tam byly;
 - **veřejný endpoint** `/data/navigation-metrics.json`;
 - **sbalený sidebar** — počet je v `title`, takže po sbalení na ikony
   zůstane dostupný, ale chování badge při sbalení nebylo testováno;
