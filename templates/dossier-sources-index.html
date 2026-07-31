@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% import "macros/ui.html" as ui %}
+{% import "macros/table.html" as table %}
 
 {% block content %}
 <main class="mx-auto max-w-6xl px-6 py-12 text-white">
@@ -29,69 +30,51 @@
   {% set_global named_families_len = named_families | length %}
   {% set_global family_count = singleton_count + named_families_len %}
 
-  {#- Alpine component (assets/js/modules/sources-filter.js) owns the
-      filter state; cards stay plain Tera-rendered markup with data-*
-      attributes and are shown/hidden via a reactive :hidden binding —
-      no manual DOM scanning/event-listener wiring needed. x-cloak keeps
-      the form invisible until Alpine actually initializes it (see
-      static/css/input.css [x-cloak]). -#}
-  <div x-data="sourcesFilter()">
-    <div class="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-5">
-      {{ ui::stat_tile(value=section.pages | length, label="Zdrojů celkem") }}
-      {{ ui::stat_tile(value=family_count, label="Zdrojových rodin") }}
-      {{ ui::stat_tile(value=evidentiary_count, label="Podkládá tvrzení") }}
-      {{ ui::stat_tile(value=section.pages | length - evidentiary_count, label="Kontext / názor") }}
-      <div class="stat-tile">
-        <p class="stat-tile-value" x-text="visibleCount" aria-live="polite">{{ section.pages | length }}</p>
-        <p class="stat-tile-label">Zobrazeno</p>
-      </div>
-    </div>
-
-    <form class="mb-6 flex flex-wrap items-end gap-3" role="search" aria-label="Filtrovat registr zdrojů" @submit.prevent x-cloak>
-      <div class="flex flex-col gap-1">
-        <label for="src-search" class="text-xs text-white/50">Hledat (ID, médium, popis)</label>
-        <input type="text" id="src-search" x-model="search" class="src-filter-input w-56" placeholder="např. vydavatel, SRC-##, klíčové slovo…" autocomplete="off">
-      </div>
-      <div class="flex flex-col gap-1">
-        <label for="src-type-filter" class="text-xs text-white/50">Typ zdroje</label>
-        <select id="src-type-filter" x-model="type" class="src-filter-select">
-          <option value="">Všechny typy</option>
-          <template x-for="t in types" :key="t"><option :value="t" x-text="t"></option></template>
-        </select>
-      </div>
-      <div class="flex flex-col gap-1">
-        <label for="src-family-filter" class="text-xs text-white/50">Zdrojová rodina</label>
-        <select id="src-family-filter" x-model="family" class="src-filter-select">
-          <option value="">Všechny (vč. samostatných)</option>
-          <template x-for="f in families" :key="f"><option :value="f" x-text="f"></option></template>
-        </select>
-      </div>
-      <button type="button" @click="reset()" class="src-filter-reset">Zrušit filtry</button>
-    </form>
-
-    <div x-show="visibleCount === 0" x-cloak class="mb-4">{{ ui::empty_state(message="Žádný zdroj neodpovídá zadanému filtru.") }}</div>
-
-    <div class="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
-      {% for p in section.pages %}
-      <a href="{{ p.permalink | safe }}"
-         class="src-card registry-card"
-         data-type="{{ p.extra.src_type }}"
-         data-family="{{ p.extra.family | default(value='') }}"
-         data-search="{{ p.extra.src_id }} {{ p.extra.outlet }} {{ p.extra.src_type }} {{ p.description }}"
-         :hidden="!matches($el)">
-        <span class="font-mono text-xs text-[#f3e5c0]">{{ p.extra.src_id }}</span>
-        <span class="font-semibold text-white break-words">{{ p.extra.outlet }}</span>
-        <span class="mt-1 text-xs text-white/40">{{ p.extra.src_type }}</span>
-        <span class="mt-2 text-sm text-white/70">{{ p.description }}</span>
-        {% if p.extra.claims %}
-        <span class="mt-2 flex flex-wrap gap-1">
-          {% for c in p.extra.claims %}<span class="rounded bg-white/5 px-1.5 py-0.5 font-mono text-[0.6rem] text-white/50">{{ c }}</span>{% endfor %}
-        </span>
-        {% endif %}
-      </a>
-      {% endfor %}
-    </div>
+  <div class="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
+    {{ ui::stat_tile(value=section.pages | length, label="Zdrojů celkem") }}
+    {{ ui::stat_tile(value=family_count, label="Zdrojových rodin") }}
+    {{ ui::stat_tile(value=evidentiary_count, label="Podkládá tvrzení") }}
+    {{ ui::stat_tile(value=section.pages | length - evidentiary_count, label="Kontext / názor") }}
   </div>
+
+  {#- Registr zdrojů přešel z karetní mřížky na hustou tabulku přes sdílené
+      makro. Vlastní komponenta sourcesFilter() tím zanikla: filtrování,
+      řazení i URL stav umí advancedTable() pro všechny registry stejně,
+      takže se dvě implementace nemůžou rozejít. Oproti kartám navíc
+      přibylo řazení a sdílitelná adresa; počet zobrazených nese badge
+      v hlavičce tabulky, ne samostatná dlaždice. -#}
+  {{ table::advanced_table(
+    id="sources-registry",
+    caption="Registr zdrojů",
+    record_type="source",
+    count=section.pages | length,
+    columns=["ID", "Vydavatel", "Typ", "Popis", "Podkládá"],
+    sort_keys=["id", "outlet", "type", "", "claims"],
+    select_facets=["type::Typ zdroje", "family::Zdrojová rodina"],
+    searchable=true,
+    url_state=true) }}
+    {% for p in section.pages %}
+    <tr data-type="{{ p.extra.src_type }}" data-family="{{ p.extra.family | default(value='') }}">
+      <td class="whitespace-nowrap p-3 align-top">
+        <a href="{{ p.permalink | safe }}" class="font-mono text-xs text-[#f3e5c0] hover:underline">{{ p.extra.src_id }}</a>
+      </td>
+      <td class="p-3 align-top font-semibold text-white">{{ p.extra.outlet }}</td>
+      <td class="whitespace-nowrap p-3 align-top text-xs text-white/40">{{ p.extra.src_type }}</td>
+      <td class="p-3 align-top text-white/70">
+        <a href="{{ p.permalink | safe }}" class="text-white/70 no-underline hover:text-white hover:underline">{{ p.description }}</a>
+      </td>
+      {#- Řadí se podle počtu podepřených tvrzení, ne podle abecedy jejich
+          identifikátorů: zajímavé je, co nese důkazní váhu. -#}
+      <td class="p-3 align-top" data-sort-value="{{ p.extra.claims | default(value=[]) | length }}">
+        <span class="flex flex-wrap gap-1">
+        {%- for c in p.extra.claims | default(value=[]) %}<span class="rounded bg-white/5 px-1.5 py-0.5 font-mono text-[0.6rem] text-white/50">{{ c }}</span>{% endfor %}
+        </span>
+      </td>
+    </tr>
+    {% endfor %}
+  {{ table::advanced_table_end(
+    footer="Řazení a filtr se promítají do adresy — výřez dat jde poslat odkazem.",
+    empty_text="Žádný zdroj neodpovídá zadanému filtru.") }}
 
   {{ ui::back_link_footer(url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"), label="Zpět na celý dossier") }}
 </main>

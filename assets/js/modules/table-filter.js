@@ -66,6 +66,23 @@ export function registerTableFilter() {
       rows: [],
       urlState: false,
       sortIndexes: {},
+      // Selektorové fasety: klíč je název data-* atributu řádku, hodnoty se
+      // sbírají z řádků samotných. Výčet se nepíše do šablony — nová
+      // hodnota (nový typ zdroje, nová zdrojová rodina) se objeví sama,
+      // jinak by seznam voleb tiše zastaral vůči datům.
+      selectFacets: [],
+      facetOptions: {},
+      facetValues: {},
+
+      // Klíče v URL jsou názvy atributů (?type=…&family=…), aby adresa
+      // popisovala, co filtruje, a ne pořadí selectů v šabloně.
+      spec() {
+        const spec = Object.assign({}, SPEC);
+        this.selectFacets.forEach(function (attr) {
+          spec[attr] = "";
+        });
+        return spec;
+      },
 
       init() {
         const table = this.$root.querySelector("table");
@@ -87,10 +104,33 @@ export function registerTableFilter() {
           this.sortIndexes[th.dataset.sortKey] = th.cellIndex;
         });
 
+        this.selectFacets = (this.$root.dataset.selectFacets || "")
+          .split("|")
+          .filter(Boolean);
+        this.selectFacets.forEach((attr) => {
+          const values = [];
+          this.rows.forEach(function (row) {
+            const v = row.dataset[attr];
+            if (v && values.indexOf(v) === -1) values.push(v);
+          });
+          this.facetOptions[attr] = values.sort(function (a, b) {
+            return a.localeCompare(b, "cs");
+          });
+          this.facetValues[attr] = "";
+        });
+
         if (this.urlState) {
-          const state = readState(SPEC);
+          const state = readState(this.spec());
           this.search = state.q;
           this.facet = state.f;
+          this.selectFacets.forEach((attr) => {
+            // Hodnota z URL se přijme jen když ji data skutečně nabízejí —
+            // jinak by zastaralý odkaz zobrazil prázdnou tabulku bez
+            // vysvětlení, místo aby spadl zpět na plný pohled.
+            if (this.facetOptions[attr].indexOf(state[attr]) !== -1) {
+              this.facetValues[attr] = state[attr];
+            }
+          });
           if (this.sortIndexes[state.sort] !== undefined) {
             this.sortKey = state.sort;
             this.sortDir = state.dir === "desc" ? "desc" : "asc";
@@ -137,14 +177,34 @@ export function registerTableFilter() {
         return this.sortDir === "asc" ? "ascending" : "descending";
       },
 
+      reset() {
+        this.search = "";
+        this.facet = "";
+        this.selectFacets.forEach((attr) => {
+          this.facetValues[attr] = "";
+        });
+        this.apply();
+      },
+
+      get filtered() {
+        if (this.search) return true;
+        if (this.facet) return true;
+        return this.selectFacets.some((attr) => this.facetValues[attr]);
+      },
+
       apply() {
         const q = normalize(this.search);
         const facet = this.facet;
+        const selects = this.selectFacets;
+        const values = this.facetValues;
         let shown = 0;
         this.rows.forEach(function (row) {
           const matchesQuery = !q || row.dataset.search.indexOf(q) !== -1;
           const matchesFacet = !facet || row.dataset.facet === facet;
-          const show = matchesQuery && matchesFacet;
+          const matchesSelects = selects.every(function (attr) {
+            return !values[attr] || row.dataset[attr] === values[attr];
+          });
+          const show = matchesQuery && matchesFacet && matchesSelects;
           row.hidden = !show;
           if (show) shown++;
         });
@@ -154,10 +214,16 @@ export function registerTableFilter() {
 
       sync() {
         if (!this.urlState) return;
-        syncUrl(
-          { q: this.search.trim(), sort: this.sortKey, dir: this.sortDir, f: this.facet },
-          SPEC,
-        );
+        const state = {
+          q: this.search.trim(),
+          sort: this.sortKey,
+          dir: this.sortDir,
+          f: this.facet,
+        };
+        this.selectFacets.forEach((attr) => {
+          state[attr] = this.facetValues[attr];
+        });
+        syncUrl(state, this.spec());
       },
     };
   });
