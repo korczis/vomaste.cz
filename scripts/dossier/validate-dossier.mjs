@@ -184,6 +184,30 @@ function validateDossier(slug) {
     if (!srcById.has(s)) err(`[${slug}] Dossier body links to ${s}, but no matching source file exists`);
   }
 
+  /* CORROBORATED means "independently confirmed", and the check above counts
+     distinct SRC ids — which is not the same thing. The same article can be
+     registered twice under two ids (it already is: ales-juchelka SRC-02 and
+     SRC-22 are the same forum24.cz URL, and there are ~25 such pairs across
+     the dossiers). A claim citing both would read as corroborated while
+     resting on one article.
+     
+     No claim does that today — verified before adding this — so the gate is
+     going in while it is still preventive rather than a cleanup. The
+     duplicate SRC pages themselves stay a warning: two pages for one article
+     is untidy, but only becomes a false statement when a claim leans on both
+     to earn a badge. */
+  for (const [clmId, row] of clmTableRows) {
+    if (row.statusClass !== "status-corroborated") continue;
+    const urls = new Set(
+      row.srcRefs.map((s) => srcById.get(s)?.url).filter(Boolean),
+    );
+    if (row.srcRefs.length >= 2 && urls.size < 2) {
+      err(
+        `[${slug}] ${clmId}: status-corroborated cites ${row.srcRefs.length} source(s) (${row.srcRefs.join(", ")}) that resolve to ${urls.size} distinct URL(s) — the same article cited twice is one source, not independent confirmation`,
+      );
+    }
+  }
+
   for (const [srcId, info] of srcById) {
     if (info.claims.length === 0 && !linkedSrcIds.has(srcId)) {
       warn(`[${slug}] ${srcId} (${info.file}) is claims = [] (context-only) and is not linked anywhere in the dossier body — dead page?`);
