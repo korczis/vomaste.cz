@@ -183,6 +183,20 @@ stránky. Data tabulek dnes pocházejí ze stejných front-matter/data
 zdrojů jako JSON-LD `@graph`; výhledovým **plánem** (neimplementováno)
 je DuckDB (`.mjs`) pipeline nad stejnými záznamy.
 
+## Adresář dossierů
+
+`/` i `/dossiers/` vykreslují tentýž adresář ve třech projekcích — tabulka,
+kompaktní seznam, dlaždice — nad **jedním** datasetem
+(`static/data/dossiers.json`, staví `scripts/dossier/lib/record-tables.mjs`
+z `dossiers.toml`, `stats.toml`, front matter a navigačního manifestu).
+
+Projekce se přepíná parametrem `?view=table|list|grid`; stav je sdílitelný
+odkazem a tlačítko zpět ho obnoví. Na mobilu je výchozí hustý seznam.
+Filtrování a řazení řídí jedna kolekce pro všechny tři pohledy, takže se
+nemůžou rozejít. Bez JavaScriptu zůstává výchozí projekce plně použitelná.
+
+Rozhodnutí a jeho důsledky: [ADR](docs/adr/dossier-directory-multi-view.md).
+
 ## Struktura repozitáře
 
 ```text

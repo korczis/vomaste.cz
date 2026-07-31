@@ -132,3 +132,21 @@ gate-ovaná), ale v **prezentační a interakční vrstvě**: čtecí layout na
 datových stránkách, card-grid místo tabulek, žádný master-detail, žádný
 URL stav, žádné UI testy. Dekompozice na board tasky:
 `docs/coop/TASKS.md` (T-011…T-015 revidované + T-017…T-021).
+
+## Aktualizace 2026-07-31 — adresář dossierů
+
+Audit popisoval landing page jako zeď karet (`max-w-3xl`, `py-16`, jedna
+karta na dossier se čtyřmi statistickými dlaždicemi a čtyřmi tlačítky).
+**To už neplatí.**
+
+Naměřeno na 390 px proti tehdejší produkci: 525 px na kartu, 1,5 dossieru
+na obrazovku, 12 430 px rolování pro 22 dossierů. Po převodu na sdílený
+adresář: 125 px na položku, 6,8 dossieru na obrazovku, 2 750 px.
+
+Landing i `/dossiers/` používají tutéž komponentu
+(`templates/partials/dossier-directory.html`) se třemi projekcemi nad
+jedním datasetem. Karetní mřížky (`registry-card`) zmizely i ze čtyř
+registrů — tvrzení, zdroje, mezery, kauzy.
+
+Otevřené: 34 duplicitních kotev kauz v obsahu (viz ráčna v
+`tests/e2e/a11y-sweep.spec.mjs`) — vyžaduje redakční, ne strojové řešení.

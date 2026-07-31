@@ -122,6 +122,13 @@ export function buildRecordTables(root) {
         claim_count: arr(block, "claims").length,
         subjects: arr(block, "subjects"),
         source_url: str(block, "url"),
+        // Zdrojová rodina: zdroje sdílející jednu pojmenovanou rodinu se
+        // počítají jako JEDEN nezávislý zdroj. Prázdná hodnota znamená
+        // samostatný zdroj, tedy vlastní rodinu — stejná sémantika jako
+        // ve validate-dossier.mjs (familyCount = singletons + namedFamilies).
+        // Pochází z front matter, které je verzované, takže smí být
+        // v kanonických řádcích.
+        family: str(block, "family") ?? "",
         url: `/dossiers/${d.slug}/sources/${slug}/`,
       });
     }

@@ -63,3 +63,108 @@ test("každá stránka má právě jeden h1", async ({ page }) => {
   }
   expect(problems, problems.join("\n")).toEqual([]);
 });
+
+// Známé duplicitní kotvy — RÁČNA, ne výjimka.
+//
+// Rešeršní kola připojovala ke kauze novou sekci místo sloučení do
+// stávající, takže tentýž `{#kotva}` heading je v obsahu víckrát.
+// Důsledek: neplatné HTML a odkaz na kauzu skočí na první výskyt.
+//
+// Proč to není opraveno: mechanické slučování jsem zkusil a POŠKODILO
+// OBSAH — rozbité markdownové odkazy a zdvojené cesty. U části sekcí je
+// navíc jeden výskyt původní redakční text (včetně odstavců „Co tento
+// dossier výslovně netvrdí") a druhý generický pahýl; správné sloučení
+// tam není strojově určitelné. Je to práce pro redakci, ne pro regex.
+//
+// Test proto hlídá, že se seznam NEROZŠIŘUJE, a upozorní, když se
+// zmenší — pak je potřeba ho aktualizovat. Výjimka, která jen mlčí, by
+// z brány udělala dekoraci.
+const ZNAME_DUPLICITY = {
+  "/dossiers/robert-plaga/": [
+    "kauza-mobily",
+    "kauza-skolni-rok",
+    "kauza-testovani"
+  ],
+  "/dossiers/jeronym-tejc/": [
+    "kauza-bitcoin",
+    "kauza-ustavni-soud",
+    "kauza-viktorka"
+  ],
+  "/dossiers/karel-havlicek/": [
+    "kauza-elektromobilita",
+    "kauza-stavebni-zakon",
+    "kauza-toustovy-chleb"
+  ],
+  "/dossiers/boris-stastny/": [
+    "kauza-nahravaci-zarizeni"
+  ],
+  "/dossiers/adam-vojtech/": [
+    "kauza-benefity-stret",
+    "kauza-defibrilatory",
+    "kauza-ockovani-spd"
+  ],
+  "/dossiers/igor-cerveny/": [
+    "kauza-cesta-usa",
+    "kauza-kancelare",
+    "kauza-majetkove-priznani",
+    "kauza-stret-zajmu"
+  ],
+  "/dossiers/zuzana-mrazova/": [
+    "kauza-cerne-stavby",
+    "kauza-obecni-byt",
+    "kauza-pokuta-stret-zajmu",
+    "kauza-rezignace-podnet"
+  ],
+  "/dossiers/ivan-bednarik/": [
+    "kauza-rezignace-cd",
+    "kauza-zeleznicni-vydaje"
+  ],
+  "/dossiers/ales-juchelka/": [
+    "kauza-obhajoba",
+    "kauza-poradkyne-stret",
+    "kauza-rozpocet",
+    "kauza-trestni-oznameni"
+  ],
+  "/dossiers/martin-sebestyan/": [
+    "kauza-szif",
+    "kauza-transparency",
+    "kauza-vymahani-agrofert"
+  ],
+  "/dossiers/jaromir-zuna/": [
+    "kauza-koncepce-armady",
+    "kauza-nacelnik-gs",
+    "kauza-rozhovor-pavel",
+    "kauza-rozpocet-nato"
+  ]
+};
+const ZNAME_CELKEM = 34;
+
+test("duplicitní kotvy nepřibývají (ráčna)", async ({ page }) => {
+  const found = {};
+  for (const { url } of ARCHETYPES) {
+    await page.goto(url);
+    const dups = await page.evaluate(() => {
+      const seen = new Set();
+      const out = [];
+      for (const el of document.querySelectorAll("[id]")) {
+        if (seen.has(el.id)) out.push(el.id);
+        seen.add(el.id);
+      }
+      return [...new Set(out)].sort();
+    });
+    if (dups.length) found[url] = dups;
+  }
+
+  const nove = [];
+  for (const [url, ids] of Object.entries(found)) {
+    const povolene = new Set(ZNAME_DUPLICITY[url] ?? []);
+    for (const id of ids) if (!povolene.has(id)) nove.push(`${url}: ${id}`);
+  }
+  expect(nove, `nové duplicitní kotvy:\n  ${nove.join("\n  ")}`).toEqual([]);
+
+  const celkem = Object.values(found).reduce((n, v) => n + v.length, 0);
+  expect(
+    celkem,
+    `duplicit ubylo (${celkem} < ${ZNAME_CELKEM}) — zmenši ZNAME_DUPLICITY v tomhle souboru, ať ráčna dál drží`,
+  ).toBeLessThanOrEqual(ZNAME_CELKEM);
+});

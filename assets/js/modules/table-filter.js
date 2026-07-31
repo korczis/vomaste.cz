@@ -437,8 +437,14 @@ export function registerTableFilter() {
         this.total = this.records.size;
         this.visible = this.records.size;
 
+        // Povolené projekce určuje šablona; komponenta si je nevymýšlí.
+        const allowed = (this.$root.dataset.allowedViews || "").split(",").map((s) => s.trim()).filter(Boolean);
+        if (allowed.length) this.allowedViews = allowed;
         this.view = this.resolveInitialView();
         this.applyView();
+
+        this.handleHash();
+        window.addEventListener("hashchange", () => this.handleHash());
 
         // Back/Forward musí obnovit pohled i filtr. Bez toho by tlačítko
         // zpět po přepnutí projekce odešlo ze stránky, což uživatel nečeká.
@@ -478,6 +484,48 @@ export function registerTableFilter() {
           return "list";
         }
         return this.allowedViews.includes(fallback) ? fallback : "table";
+      },
+
+      // Odkaz na konkrétní záznam musí dovést k záznamu, i když míří do
+      // právě skryté projekce. Kotvy jsou tvaru <sekce>-<projekce>-<slug>,
+      // protože tentýž záznam je v DOM třikrát a duplicitní id by bylo
+      // neplatné HTML. Bez tohohle by ale sdílený odkaz na dlaždici při
+      // aktivní tabulce nikam nevedl — prohlížeč by cíl nenašel, protože
+      // je uvnitř kontejneru s `hidden`.
+      //
+      // Postup: z hashe se přečte projekce, přepne se na ni a teprve pak
+      // se scrolluje. Kdyby se scrollovalo dřív, cíl by ještě byl skrytý.
+      handleHash() {
+        const raw = (window.location.hash || "").replace(/^#/, "");
+        if (!raw) return;
+        const prefix = `${this.$root.id}-`;
+        if (!raw.startsWith(prefix)) return;
+        const rest = raw.slice(prefix.length);
+        const view = this.allowedViews.find((v) => rest.startsWith(`${v}-`));
+        if (!view) return;
+        const key = rest.slice(view.length + 1);
+        if (!this.records.has(key)) return;
+
+        if (view !== this.view) {
+          this.view = view;
+          this.applyView();
+          this.sync();
+        }
+        // Skrytý filtr by cíl nechal neviditelný; sdílený odkaz na záznam
+        // má přednost před dřív nastaveným filtrem.
+        const nodes = this.records.get(key);
+        if (nodes.every((n) => n.hidden)) {
+          this.search = "";
+          this.apply();
+        }
+        this.$nextTick(() => {
+          const target = document.getElementById(raw);
+          if (!target) return;
+          target.scrollIntoView({ block: "center", behavior: "auto" });
+          // Fokus na první odkaz v záznamu: uživatel na klávesnici pokračuje
+          // od cíle, ne od začátku stránky.
+          target.querySelector("a")?.focus({ preventScroll: true });
+        });
       },
 
       setView(next) {

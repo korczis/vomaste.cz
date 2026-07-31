@@ -154,3 +154,43 @@ test.describe("úvodní stránka", () => {
     expect(viewport / spacing, "na jednu obrazovku se vejdou méně než tři dossiery").toBeGreaterThanOrEqual(3);
   });
 });
+
+test.describe("hash navigace", () => {
+  test("odkaz na záznam ve skryté projekci přepne pohled a dovede k němu", async ({ page }) => {
+    // Kotvy jsou tvaru <sekce>-<projekce>-<slug>, protože tentýž záznam je
+    // v DOM třikrát. Bez přepnutí by prohlížeč cíl nenašel — je uvnitř
+    // kontejneru s hidden — a sdílený odkaz by nikam nevedl.
+    await page.goto("/dossiers/?view=table");
+    await page.waitForTimeout(200);
+    const key = await page
+      .locator('#dossier-directory [data-view="grid"] [data-record-key]')
+      .first()
+      .getAttribute("data-record-key");
+
+    await page.goto(`/dossiers/?view=table#dossier-directory-grid-${key}`);
+    await page.waitForTimeout(400);
+    await expect(page.locator('#dossier-directory [data-view="grid"]')).toBeVisible();
+    await expect(page.locator(`#dossier-directory-grid-${key}`)).toBeInViewport();
+  });
+
+  test("hash na záznam odfiltrovaný hledáním filtr zruší", async ({ page }) => {
+    // Sdílený odkaz na konkrétní záznam má přednost před dřív nastaveným
+    // filtrem; jinak by odkaz vedl na prázdno.
+    await page.goto("/dossiers/?view=list&q=zzzznenajdenic");
+    await page.waitForTimeout(300);
+    const key = await page
+      .locator('#dossier-directory [data-view="list"] [data-record-key]')
+      .first()
+      .getAttribute("data-record-key");
+    await page.evaluate((k) => { window.location.hash = `dossier-directory-list-${k}`; }, key);
+    await page.waitForTimeout(400);
+    await expect(page.locator(`#dossier-directory-list-${key}`)).toBeVisible();
+  });
+
+  test("neznámý hash nic nerozbije", async ({ page }) => {
+    await page.goto("/dossiers/#dossier-directory-grid-neexistuje");
+    await page.waitForTimeout(300);
+    const visible = page.locator("#dossier-directory [data-view]:not([hidden])");
+    await expect(visible).toHaveCount(1);
+  });
+});

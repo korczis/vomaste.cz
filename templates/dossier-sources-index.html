@@ -48,8 +48,8 @@
     caption="Registr zdrojů",
     record_type="source",
     count=section.pages | length,
-    columns=["ID", "Vydavatel", "Typ", "Popis", "Podkládá"],
-    sort_keys=["id", "outlet", "type", "", "claims"],
+    columns=["ID", "Vydavatel", "Typ", "Rodina", "Popis", "Podkládá"],
+    sort_keys=["id", "outlet", "type", "family", "", "claims"],
     select_facets=["type::Typ zdroje", "family::Zdrojová rodina"],
     searchable=true,
     url_state=true,
@@ -61,6 +61,16 @@
       </td>
       <td class="p-3 align-top font-semibold text-white">{{ p.extra.outlet }}</td>
       <td class="whitespace-nowrap p-3 align-top text-xs text-white/55">{{ p.extra.src_type }}</td>
+      {#- Zdrojová rodina: zdroje se stejnou hodnotou nejsou nezávislá
+          doložení, ale jedno — převzetí téže agenturní zprávy nebo tentýž
+          článek na dvou doménách. Bez tohohle sloupce čtenář vidí „tři
+          zdroje" tam, kde jde o jednu redakci. Prázdno znamená samostatný
+          zdroj, tedy vlastní rodinu. -#}
+      <td class="whitespace-nowrap p-3 align-top" data-sort-value="{{ p.extra.family | default(value='') }}">
+        {%- if p.extra.family %}
+        <span class="rounded bg-[#f3e5c0]/10 px-1.5 py-0.5 font-mono text-[0.65rem] text-[#f3e5c0]">{{ p.extra.family }}</span>
+        {%- else %}<span class="text-xs text-white/40" title="samostatný zdroj">—</span>{% endif -%}
+      </td>
       <td class="p-3 align-top text-white/70">
         <a href="{{ p.permalink | safe }}" class="text-white/70 no-underline hover:text-white hover:underline">{{ p.description }}</a>
       </td>

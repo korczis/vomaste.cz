@@ -31,6 +31,41 @@ const rows = buildRecordTables(ROOT);
 // generátorech, takže se přidávají tady, ne do kanonických řádků.
 rows.dossiers = enrichDossiersForDirectory(ROOT, rows.dossiers);
 
+// Nezávislost doložení každého tvrzení: kolik CITOVANÝCH zdrojů a kolik
+// z nich je nezávislých rodin.
+//
+// Zdroje sdílející jednu pojmenovanou rodinu se počítají jako JEDEN
+// nezávislý zdroj — převzetí téže agenturní zprávy nebo tentýž článek na
+// dvou doménách není druhé ověření. Zdroj bez rodiny je vlastní rodina.
+// Stejná sémantika jako familyCount ve validate-dossier.mjs.
+//
+// NENÍ TO SKÓRE. Je to počet deklarované vlastnosti, stejně jako počet
+// zdrojů — neříká nic o pravdivosti tvrzení, jen o tom, na kolika
+// nezávislých redakcích citovaný výběr stojí.
+//
+// Počítá se tady, ne v šabloně: hledat rodinu ke každému zdroji každého
+// tvrzení by byl průchod přes všechny zdroje dossieru pro každé tvrzení,
+// tedy přesně ten kvadratický vzorec, který dnes stál 87 % času buildu.
+const familyByKey = new Map(rows.sources.map((s) => [`${s.dossier}/${s.src_id}`, s.family || ""]));
+const independence = {};
+for (const c of rows.claims) {
+  const families = new Set();
+  let cited = 0;
+  for (const sid of c.sources) {
+    const fam = familyByKey.get(`${c.dossier}/${sid}`);
+    if (fam === undefined) continue;
+    cited++;
+    // Prázdná rodina = samostatný zdroj, tedy vlastní rodina.
+    families.add(fam || `__self__:${sid}`);
+  }
+  independence[`${c.dossier}/${c.clm_id}`] = { sources: cited, families: families.size };
+}
+mkdirSync(join(ROOT, "data/generated"), { recursive: true });
+writeFileSync(
+  join(ROOT, "data/generated/claim-independence.json"),
+  JSON.stringify(independence, null, 1) + "\n",
+);
+
 const manifest = [];
 for (const [name, data] of Object.entries(rows)) {
   writeFileSync(join(OUT_DIR, `${name}.json`), JSON.stringify(data, null, 1) + "\n");

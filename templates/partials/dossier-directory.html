@@ -47,7 +47,9 @@
       show_filters  — false skryje toolbar (pro krátké přehledy)
 -#}
 
-{%- macro directory(id, items, title="", default_view="table", url_state=false, export_name="", show_filters=true) -%}
+{%- macro directory(id, items, title="", default_view="table", allowed_views="", url_state=false, export_name="", show_filters=true, show_summary=false) -%}
+{%- set views = allowed_views | default(value=["table", "list", "grid"]) -%}
+{%- if views | length == 0 %}{% set views = ["table", "list", "grid"] %}{% endif -%}
 {#- Pořadí sloupců a jejich klíče drží jedno místo, aby se projekce
     nemohly významově rozejít: tabulka je vypisuje jako sloupce, seznam
     a dlaždice jako kompaktní metriky, ale jde o tytéž hodnoty. -#}
@@ -63,12 +65,26 @@
   x-data="advancedTable()"
   data-dossier-directory
   data-default-view="{{ default_view }}"
+  data-allowed-views="{{ views | join(sep=',') }}"
   {% if url_state %}data-url-state="true"{% endif %}
   {% if export_name %}data-export-name="{{ export_name }}"{% endif %}
   class="scroll-mt-24">
 
   <div class="mb-4 flex flex-wrap items-end justify-between gap-3">
-    <h2 id="{{ id }}-heading" class="text-lg font-semibold text-white">{{ title | default(value="Adresář dossierů") }}</h2>
+    <div>
+      <h2 id="{{ id }}-heading" class="text-lg font-semibold text-white">{{ title | default(value="Adresář dossierů") }}</h2>
+      {%- if show_summary %}
+      {#- Souhrn se SČÍTÁ z týchž záznamů, které plní projekce; nikdy se
+          nepíše do šablony, jinak by se s tabulkou rozešel. -#}
+      {%- set_global sum_claims = 0 %}{% set_global sum_sources = 0 %}{% set_global sum_gaps = 0 %}
+      {%- for d in items %}
+        {%- set_global sum_claims = sum_claims + d.counts.claims %}
+        {%- set_global sum_sources = sum_sources + d.counts.sources %}
+        {%- set_global sum_gaps = sum_gaps + d.counts.gaps %}
+      {%- endfor %}
+      <p class="mt-0.5 text-xs text-white/55">{{ items | length }} dossierů · {{ sum_claims }} tvrzení · {{ sum_sources }} zdrojů · {{ sum_gaps }} otevřených mezer</p>
+      {%- endif %}
+    </div>
 
     {#- Přepínač projekcí. role="group" s aria-pressed, ne tabs: pohledy
         nejsou panely jednoho obsahu, ale tři podoby téhož seznamu, a
@@ -78,10 +94,12 @@
       <div role="group" aria-label="Zobrazení adresáře" class="inline-flex overflow-hidden rounded-lg border border-white/15">
         {%- for v in ["table::Tabulka", "list::Seznam", "grid::Dlaždice"] %}
         {%- set vp = v | split(pat="::") %}
+        {%- if vp.0 in views %}
         <button type="button" @click="setView('{{ vp.0 }}')"
           :aria-pressed="view === '{{ vp.0 }}' ? 'true' : 'false'"
           :class="view === '{{ vp.0 }}' ? 'bg-[#f3e5c0]/15 text-[#f3e5c0]' : 'text-white/60 hover:bg-white/5 hover:text-white'"
           class="min-h-9 px-3 text-xs font-medium transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#f3e5c0]">{{ vp.1 }}</button>
+        {%- endif %}
         {%- endfor %}
       </div>
       <span class="font-mono text-xs text-white/50" aria-live="polite" x-text="visible + ' / ' + total"></span>
