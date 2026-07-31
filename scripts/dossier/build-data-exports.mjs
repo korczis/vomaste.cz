@@ -20,13 +20,16 @@
 import { writeFileSync, mkdirSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import { buildRecordTables } from "./lib/record-tables.mjs";
+import { buildRecordTables, enrichDossiersForDirectory } from "./lib/record-tables.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const OUT_DIR = join(ROOT, "static/data");
 mkdirSync(OUT_DIR, { recursive: true });
 
 const rows = buildRecordTables(ROOT);
+// Adresář potřebuje počty, popis a routy; ty ale existují až po
+// generátorech, takže se přidávají tady, ne do kanonických řádků.
+rows.dossiers = enrichDossiersForDirectory(ROOT, rows.dossiers);
 
 const manifest = [];
 for (const [name, data] of Object.entries(rows)) {

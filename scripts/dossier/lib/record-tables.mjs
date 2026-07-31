@@ -32,7 +32,7 @@ const num = (b, k) => {
   return m ? Number(m[1]) : 0;
 };
 
-function readDossierStats(root, slug) {
+export function readDossierStats(root, slug) {
   const file = join(root, "data/dossiers", slug, "stats.toml");
   if (!existsSync(file)) return null;
   const b = readFileSync(file, "utf8");
@@ -46,7 +46,7 @@ function readDossierStats(root, slug) {
   };
 }
 
-function readNavigationRoutes(root) {
+export function readNavigationRoutes(root) {
   const file = join(root, "data/generated/navigation.json");
   if (!existsSync(file)) return new Map();
   const nav = JSON.parse(readFileSync(file, "utf8"));
@@ -69,11 +69,7 @@ export function buildRecordTables(root) {
   const registry = loadDossierRegistry();
   const rows = { claims: [], sources: [], cases: [], gaps: [], relations: [], entities: [], dossiers: [] };
 
-  const navRoutes = readNavigationRoutes(root);
   for (const d of registry) {
-    const indexFile = join(root, "content/dossiers", d.slug, "_index.md");
-    const block = existsSync(indexFile) ? fm(readFileSync(indexFile, "utf8")) : "";
-    const nav = navRoutes.get(d.slug) ?? { routes: {}, labels: {} };
     rows.dossiers.push({
       slug: d.slug,
       title: d.title,
@@ -81,12 +77,6 @@ export function buildRecordTables(root) {
       subject: d.subject,
       canonical_dossier: d.canonicalDossier,
       url: `/dossiers/${d.slug}/`,
-      description: str(block, "description") ?? "",
-      updated: str(block, "updated") ?? "",
-      reviewed_at: str(block, "reviewed_at") ?? "",
-      counts: readDossierStats(root, d.slug),
-      routes: nav.routes,
-      route_labels: nav.labels,
     });
   }
 
@@ -216,4 +206,35 @@ export function buildRecordTables(root) {
   }
 
   return rows;
+}
+
+// Obohacení pro ADRESÁŘ, volané až při zápisu exportu — ne při stavbě
+// kanonických řádků.
+//
+// Důvod je konkrétní: `data/dossiers/*/stats.toml` i `data/generated/` jsou
+// gitignorované, takže v čerstvém checkoutu neexistují. Kdyby obohacení
+// viselo v kanonických řádcích, `validate:schemas` (běží v `npm test`, tedy
+// PŘED generátory) by dostal counts: null a spadl — přesně to shodilo CI.
+//
+// Rozdělení podle toho, co která vrstva zaručuje: kanonické řádky nesou
+// identitu, která existuje vždy; prezentační index nese odvozené hodnoty,
+// které existují až po generátorech. Kontroluje ho validate-directory-index.mjs.
+export function enrichDossiersForDirectory(root, dossierRows) {
+  const navRoutes = readNavigationRoutes(root);
+  return dossierRows.map((d) => {
+    const indexFile = join(root, "content/dossiers", d.slug, "_index.md");
+    const block = existsSync(indexFile) ? fm(readFileSync(indexFile, "utf8")) : "";
+    const nav = navRoutes.get(d.slug) ?? { routes: {}, labels: {} };
+    return {
+      ...d,
+      description: str(block, "description") ?? "",
+      updated: str(block, "updated") ?? "",
+      reviewed_at: str(block, "reviewed_at") ?? "",
+      counts: readDossierStats(root, d.slug) ?? {
+        claims: 0, sources: 0, cases: 0, gaps: 0, entities: 0, relations: 0,
+      },
+      routes: Object.keys(nav.routes).length ? nav.routes : { dossier: d.url },
+      route_labels: nav.labels,
+    };
+  });
 }
