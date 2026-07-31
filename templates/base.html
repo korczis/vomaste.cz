@@ -297,7 +297,7 @@
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="shrink-0" aria-hidden="true"><path d="{{ child.icon }}"/></svg>
         <span class="min-w-0 flex-1 truncate">{{ child.label }}</span>
         {{ nav::dossier_count(metrics=nav_metrics, slug=child.id) }}
-        <span class="text-white/30 transition-transform group-open:rotate-90" aria-hidden="true">›</span>
+        <span class="text-white/55 transition-transform group-open:rotate-90" aria-hidden="true">›</span>
       </summary>
       {%- if child.overviewLabel %}
       {{ nav::nav_link(item=child, depth=1, active_id=active_id, label=child.overviewLabel, metrics=nav_metrics) }}

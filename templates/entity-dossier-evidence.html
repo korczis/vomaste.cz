@@ -47,7 +47,7 @@
             {% endif %}
           {% endfor %}
           <tr>
-            <td class="p-3"><a href="{{ c.permalink | safe }}" class="text-[#f3e5c0] no-underline hover:underline">{{ c.extra.clm_id }}</a> <span class="text-white/50">{{ c.extra.summary | truncate(length=70) }}</span></td>
+            <td class="p-3"><a href="{{ c.permalink | safe }}" class="text-[#f3e5c0] underline decoration-white/30 underline-offset-2">{{ c.extra.clm_id }}</a> <span class="text-white/50">{{ c.extra.summary | truncate(length=70) }}</span></td>
             <td class="p-3"><span class="status-badge {{ c.extra.status }}">{{ c.extra.status_label }}</span></td>
             <td class="p-3">
               {% for s in c.extra.sources %}
@@ -71,7 +71,7 @@
       {% for s in sources %}
       {% if s.extra.claims %}
       <div class="registry-card">
-        <a href="{{ s.permalink | safe }}" class="font-mono text-xs text-[#f3e5c0] no-underline hover:underline">{{ s.extra.src_id }}</a>
+        <a href="{{ s.permalink | safe }}" class="font-mono text-xs text-[#f3e5c0] underline decoration-white/30 underline-offset-2">{{ s.extra.src_id }}</a>
         <span class="mt-1 text-sm font-semibold text-white">{{ s.extra.outlet }}</span>
         {% if s.extra.family %}<span class="mt-1 text-xs text-white/55">rodina: {{ s.extra.family }}</span>{% endif %}
         <span class="mt-2 flex flex-wrap gap-1">

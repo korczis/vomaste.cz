@@ -36,7 +36,7 @@
     Toto je samostatný dossier o jedné osobě. Sdílené souvislosti
     {%- if sibling_titles | length > 0 %} s dalšími sledovanými subjekty ({{ sibling_titles | join(sep=", ") }}){%- endif %}
     jsou uvedeny v
-    <a href="{{ get_url(path='@/dossiers/' ~ canonical_slug ~ '/_index.md') | safe }}" class="text-[#f3e5c0] hover:underline">společném přehledu {{ canonical_entry.title }}</a>,
+    <a href="{{ get_url(path='@/dossiers/' ~ canonical_slug ~ '/_index.md') | safe }}" class="text-[#f3e5c0] underline decoration-white/30 underline-offset-2">společném přehledu {{ canonical_entry.title }}</a>,
     který je generovaný průnik nad těmito dossiery, ne samostatný předmět navíc.
   </div>
 
@@ -118,7 +118,7 @@
       {% for r in filtered_relations %}
       {% set source_entity = entity.pages | filter(attribute="extra.entity_id", value=r.extra.source) | first %}
       {% set target_entity = entity.pages | filter(attribute="extra.entity_id", value=r.extra.target) | first %}
-      <li><span class="edge-status-dot edge-{{ r.extra.status }}"></span>{% if source_entity %}{{ source_entity.title }}{% else %}{{ r.extra.source }}{% endif %} <span aria-hidden="true" class="text-white/30">&rarr;</span> <span class="text-white/50">{{ r.extra.label }}</span> <span aria-hidden="true" class="text-white/30">&rarr;</span> {% if target_entity %}{{ target_entity.title }}{% else %}{{ r.extra.target }}{% endif %}</li>
+      <li><span class="edge-status-dot edge-{{ r.extra.status }}"></span>{% if source_entity %}{{ source_entity.title }}{% else %}{{ r.extra.source }}{% endif %} <span aria-hidden="true" class="text-white/55">&rarr;</span> <span class="text-white/50">{{ r.extra.label }}</span> <span aria-hidden="true" class="text-white/55">&rarr;</span> {% if target_entity %}{{ target_entity.title }}{% else %}{{ r.extra.target }}{% endif %}</li>
       {% endfor %}
     </ul>
   </section>

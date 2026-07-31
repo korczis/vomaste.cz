@@ -146,11 +146,11 @@
       <li>
         <span class="edge-status-dot edge-{{ r.extra.status }}"></span>
         {% if source_entity %}<a href="{{ source_entity.permalink | safe }}" class="text-white/80 no-underline hover:underline">{{ source_entity.title }}</a>{% endif %}
-        <span aria-hidden="true" class="text-white/30">&rarr;</span>
+        <span aria-hidden="true" class="text-white/55">&rarr;</span>
         <a href="{{ r.permalink | safe }}" class="text-[#f3e5c0] no-underline hover:underline">{{ r.extra.label }}</a>
-        <span aria-hidden="true" class="text-white/30">&rarr;</span>
+        <span aria-hidden="true" class="text-white/55">&rarr;</span>
         {% if target_entity %}<a href="{{ target_entity.permalink | safe }}" class="text-white/80 no-underline hover:underline">{{ target_entity.title }}</a>{% endif %}
-        <span class="text-white/30">(
+        <span class="text-white/55">(
           {{- ui::relation_status(status=r.extra.status, long=false) -}}
           {%- if r.extra.claims %}, {% for c in r.extra.claims %}{% set clm_page = claim_section.pages | filter(attribute="extra.clm_id", value=c) | first %}{% if clm_page %}<a href="{{ clm_page.permalink | safe }}" class="text-[#f3e5c0]/70 no-underline hover:underline">{{ c }}</a>{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}{% endif -%}
         )</span>

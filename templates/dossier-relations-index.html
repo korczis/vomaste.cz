@@ -33,11 +33,11 @@
     {% set source_entity = entity.pages | filter(attribute="extra.entity_id", value=r.extra.source) | first %}
     {% set target_entity = entity.pages | filter(attribute="extra.entity_id", value=r.extra.target) | first %}
     <article id="{{ r.extra.rel_id }}" class="flex flex-col gap-1 p-3 text-sm sm:flex-row sm:flex-wrap sm:items-center sm:gap-2">
-      <span class="font-mono text-[0.65rem] text-white/30">{{ r.extra.rel_id }}</span>
+      <span class="font-mono text-[0.65rem] text-white/55">{{ r.extra.rel_id }}</span>
       {% if source_entity %}<a href="{{ source_entity.permalink | safe }}" class="inline-flex min-h-6 items-center font-medium text-white no-underline hover:underline">{{ source_entity.title }}</a>{% else %}<span class="text-white/50">{{ r.extra.source }}</span>{% endif %}
-      <span aria-hidden="true" class="text-white/30">&rarr;</span>
+      <span aria-hidden="true" class="text-white/55">&rarr;</span>
       <a href="{{ r.permalink | safe }}" class="id-chip text-[#f3e5c0] no-underline hover:underline">{{ r.extra.label }}</a>
-      <span aria-hidden="true" class="text-white/30">&rarr;</span>
+      <span aria-hidden="true" class="text-white/55">&rarr;</span>
       {% if target_entity %}<a href="{{ target_entity.permalink | safe }}" class="inline-flex min-h-6 items-center font-medium text-white no-underline hover:underline">{{ target_entity.title }}</a>{% else %}<span class="text-white/50">{{ r.extra.target }}</span>{% endif %}
       {{ ui::relation_status(status=r.extra.status) }}
       {% if r.extra.claims %}

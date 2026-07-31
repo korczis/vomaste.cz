@@ -22,7 +22,7 @@
 {% block content %}
 <main class="mx-auto max-w-6xl px-6 py-12 text-white">
 
-  <nav aria-label="Drobečková navigace" class="text-xs text-white/40">
+  <nav aria-label="Drobečková navigace" class="text-xs text-white/55">
     <a href="{{ get_url(path='@/entities/_index.md') | safe }}" class="hover:text-white">Entity</a>
     <span aria-hidden="true"> › </span>
     <a href="{{ get_url(path='@/entities/typ/_index.md') | safe }}" class="hover:text-white">Podle typu</a>
@@ -44,7 +44,7 @@
     {%- endif -%}
   {%- endfor -%}
 
-  <p class="mt-6 text-xs text-white/40">
+  <p class="mt-6 text-xs text-white/55">
     <span class="tabular-nums text-white">{{ matching | length }}</span>
     {% if matching | length == 1 %}entita{% elif matching | length < 5 %}entity{% else %}entit{% endif %}
     tohoto typu ·
@@ -65,11 +65,11 @@
           {% if p.extra.publication_role == "subject" %}
           <span class="rounded bg-[#f3e5c0]/10 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-[#f3e5c0]">subjekt dossieru</span>
           {% else %}
-          <span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-white/40">kontextová</span>
+          <span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-white/55">kontextová</span>
           {% endif %}
         </span>
         <span class="mt-1 font-semibold text-white">{{ p.title }}</span>
-        <span class="mt-1 text-xs text-white/40">
+        <span class="mt-1 text-xs text-white/55">
           {{ p.extra.dossiers | length }} dossier{% if p.extra.dossiers | length != 1 %}ů{% endif %}
           {%- if p.extra.government_office %} · {{ p.extra.government_office }}{% endif %}
         </span>

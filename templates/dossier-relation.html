@@ -19,9 +19,9 @@
 
   <p class="mb-6 flex flex-wrap items-center gap-2 text-lg">
     {% if source_entity %}<a href="{{ source_entity.permalink | safe }}" class="font-semibold text-white no-underline hover:underline">{{ source_entity.title }}</a>{% endif %}
-    <span aria-hidden="true" class="text-white/30">&rarr;</span>
+    <span aria-hidden="true" class="text-white/55">&rarr;</span>
     <span class="text-[#f3e5c0]">{{ page.extra.label }}</span>
-    <span aria-hidden="true" class="text-white/30">&rarr;</span>
+    <span aria-hidden="true" class="text-white/55">&rarr;</span>
     {% if target_entity %}<a href="{{ target_entity.permalink | safe }}" class="font-semibold text-white no-underline hover:underline">{{ target_entity.title }}</a>{% endif %}
   </p>
 

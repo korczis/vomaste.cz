@@ -133,7 +133,7 @@
     <ul class="space-y-1.5 text-sm">
       {% for r in outgoing %}
       {% set target_entity = entities.pages | filter(attribute="extra.entity_id", value=r.extra.target) | first %}
-      <li><a href="{{ r.permalink | safe }}" class="text-[#f3e5c0] no-underline hover:underline">{{ r.extra.label }}</a> <span aria-hidden="true" class="text-white/30">&rarr;</span> {% if target_entity %}<a href="{{ target_entity.permalink | safe }}" class="text-white/80 no-underline hover:underline">{{ target_entity.title }}</a>{% endif %}</li>
+      <li><a href="{{ r.permalink | safe }}" class="text-[#f3e5c0] no-underline hover:underline">{{ r.extra.label }}</a> <span aria-hidden="true" class="text-white/55">&rarr;</span> {% if target_entity %}<a href="{{ target_entity.permalink | safe }}" class="text-white/80 no-underline hover:underline">{{ target_entity.title }}</a>{% endif %}</li>
       {% endfor %}
       {% for r in incoming %}
       {% set source_entity = entities.pages | filter(attribute="extra.entity_id", value=r.extra.source) | first %}

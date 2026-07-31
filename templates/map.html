@@ -79,12 +79,12 @@
       {% set r = relation_page.pages | filter(attribute="extra.rel_id", value=e.rel_id) | first %}
       <li>
         <span class="edge-status-dot edge-{{ e.status }}"></span>
-        {% if source_entity %}<a href="{{ source_entity.permalink | safe }}" class="text-white/80 no-underline hover:underline">{{ source_entity.title }}</a>{% endif %}
-        <span aria-hidden="true" class="text-white/30">&rarr;</span>
-        {% if r %}<a href="{{ r.permalink | safe }}" class="text-[#f3e5c0] no-underline hover:underline">{{ e.label }}</a>{% else %}<span class="text-[#f3e5c0]">{{ e.label }}</span>{% endif %}
-        <span aria-hidden="true" class="text-white/30">&rarr;</span>
-        {% if target_entity %}<a href="{{ target_entity.permalink | safe }}" class="text-white/80 no-underline hover:underline">{{ target_entity.title }}</a>{% endif %}
-        <span class="text-white/30">(dossier: {{ e.dossier }})</span>
+        {% if source_entity %}<a href="{{ source_entity.permalink | safe }}" class="text-white/80 underline decoration-white/30 underline-offset-2">{{ source_entity.title }}</a>{% endif %}
+        <span aria-hidden="true" class="text-white/55">&rarr;</span>
+        {% if r %}<a href="{{ r.permalink | safe }}" class="text-[#f3e5c0] underline decoration-white/30 underline-offset-2">{{ e.label }}</a>{% else %}<span class="text-[#f3e5c0]">{{ e.label }}</span>{% endif %}
+        <span aria-hidden="true" class="text-white/55">&rarr;</span>
+        {% if target_entity %}<a href="{{ target_entity.permalink | safe }}" class="text-white/80 underline decoration-white/30 underline-offset-2">{{ target_entity.title }}</a>{% endif %}
+        <span class="text-white/55">(dossier: {{ e.dossier }})</span>
       </li>
       {% endfor %}
     </ul>
