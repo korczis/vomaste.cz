@@ -15,7 +15,7 @@ status = "status-single"
 label = "Stíhání zrušeno 2018"
 summary = "Státní zástupce v květnu 2018 zrušil trestní stíhání Jaroslava Faltýnka poté, co vyhověl jeho stížnosti proti obvinění. Rozhodl státní zástupce, ne soud — nejde o rozhodnutí o vině ani o nevině. Faltýnek nebyl odsouzen a před soud jako obžalovaný nešel."
 claims = ["CLM-02", "CLM-03", "CLM-04"]
-sources = ["SRC-02"]
+sources = ["SRC-02", "SRC-04"]
 subjects = ["faltynek"]
 +++
 

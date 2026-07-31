@@ -9,10 +9,10 @@ dossier = "adam-vojtech"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-14"
-status = "status-single"
-status_label = "1 ZDROJ"
+status = "status-corroborated"
+status_label = "CORROBORATED"
 summary = "Poslankyně Michaela Šebelová (STAN) v souvislosti s návrhem upozornila, že premiér Babiš vlastní zdravotnické kliniky, které by z opatření profitovaly; podle ní nejde formálně o střet zájmů, ale fakticky ano. Ptala se, zda změna není „šita na míru“ klinikám z holdingu spojeného s premiérem."
-sources = ["SRC-08"]
+sources = ["SRC-08", "SRC-22"]
 subjects = ["vojtech"]
 +++
 

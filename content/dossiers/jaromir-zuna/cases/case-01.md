@@ -15,7 +15,7 @@ status = "status-single"
 label = "Sledované téma"
 summary = "Obranný rozpočet a závazek 2 % NATO — viz tvrzení CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07."
 claims = ["CLM-41", "CLM-42", "CLM-43", "CLM-44", "CLM-45", "CLM-46", "CLM-47", "CLM-48"]
-sources = ["SRC-16", "SRC-20", "SRC-23", "SRC-15", "SRC-24", "SRC-17"]
+sources = ["SRC-16", "SRC-20", "SRC-23", "SRC-15", "SRC-24", "SRC-17", "SRC-33"]
 subjects = ["zuna"]
 +++
 

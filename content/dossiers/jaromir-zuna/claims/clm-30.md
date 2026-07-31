@@ -12,7 +12,7 @@ clm_id = "CLM-30"
 status = "status-quote"
 status_label = "CITACE"
 summary = "Inspekce ministerstva obrany podle ČT24 zjistila, že vedoucí oddělení komunikace generálního štábu porušil předpisy tím, že vytvořil nový informační kanál bez oficiální žádosti, a že na straně civilních úředníků ministerstva „neexistovaly jasné pokyny, jak zacházet s účty na sociálních sítích“."
-sources = ["SRC-26"]
+sources = ["SRC-08"]
 subjects = ["zuna"]
 +++
 

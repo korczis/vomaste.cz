@@ -22,7 +22,7 @@ summary = "Zpracována autorizovaná témata: rozpocet-nato, rozhovor-pavel, nac
 
 [[updates]]
 date = "2026-07-30"
-reviewed_sources = ["SRC-14", "SRC-15", "SRC-16", "SRC-17", "SRC-18", "SRC-19", "SRC-20", "SRC-21", "SRC-22", "SRC-23", "SRC-24", "SRC-25", "SRC-26", "SRC-27", "SRC-28", "SRC-29", "SRC-30", "SRC-31", "SRC-32"]
+reviewed_sources = ["SRC-14", "SRC-15", "SRC-16", "SRC-17", "SRC-18", "SRC-19", "SRC-20", "SRC-21", "SRC-22", "SRC-23", "SRC-24", "SRC-25", "SRC-27", "SRC-28", "SRC-29", "SRC-30", "SRC-31", "SRC-32"]
 added_claims = ["CLM-20", "CLM-21", "CLM-22", "CLM-23", "CLM-24", "CLM-25", "CLM-26", "CLM-27", "CLM-28", "CLM-29", "CLM-30", "CLM-31", "CLM-32", "CLM-33", "CLM-34", "CLM-35", "CLM-36", "CLM-37", "CLM-38", "CLM-39", "CLM-40", "CLM-41", "CLM-42", "CLM-43", "CLM-44", "CLM-45", "CLM-46", "CLM-47", "CLM-48", "CLM-49", "CLM-50", "CLM-51", "CLM-52", "CLM-53"]
 updated_claims = []
 added_gaps = ["GAP-06", "GAP-07", "GAP-08", "GAP-09", "GAP-10", "GAP-11"]

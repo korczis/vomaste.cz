@@ -30,3 +30,22 @@ label = "ministr zdravotnictví"
 status = "contextual"
 claims = ["CLM-01"]
 sources = ["SRC-01"]
+
+[[nodes]]
+id = "fn-olomouc"
+type = "public_institution"
+label = "Fakultní nemocnice Olomouc"
+depth = 1
+subject = false
+claims = ["CLM-07", "CLM-08", "CLM-09", "CLM-11", "CLM-12", "CLM-31", "CLM-32", "CLM-33"]
+sources = ["SRC-02", "SRC-04", "SRC-06", "SRC-07", "SRC-19", "SRC-20"]
+
+[[edges]]
+id = "edge-vojtech-fn-olomouc"
+source = "vojtech"
+target = "fn-olomouc"
+relation = "ASSOCIATED_WITH_EVENT"
+label = "kauza studie PROFID EHRA a trestní oznámení resortu (2025–2026)"
+status = "disputed"
+claims = ["CLM-07", "CLM-08", "CLM-09", "CLM-11", "CLM-12", "CLM-31", "CLM-32", "CLM-33"]
+sources = ["SRC-02", "SRC-04", "SRC-06", "SRC-07", "SRC-19", "SRC-20"]

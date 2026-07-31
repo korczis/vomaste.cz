@@ -15,7 +15,7 @@ status = "status-single"
 label = "Sledované téma"
 summary = "Reakce, obhajoba a hodnocení — viz tvrzení CLM-15, CLM-16, CLM-17, CLM-18, CLM-19, CLM-33, CLM-34."
 claims = ["CLM-15", "CLM-16", "CLM-17", "CLM-18", "CLM-19", "CLM-33", "CLM-34"]
-sources = ["SRC-03", "SRC-06", "SRC-07", "SRC-08", "SRC-15", "SRC-24", "SRC-25"]
+sources = ["SRC-03", "SRC-06", "SRC-07", "SRC-08", "SRC-15", "SRC-24", "SRC-25", "SRC-26"]
 subjects = ["okamura"]
 +++
 

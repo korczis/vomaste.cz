@@ -15,7 +15,7 @@ status = "status-quote"
 label = "Svědek, ne obžalovaný"
 summary = "V září 2022 vypovídal u soudu jako svědek ve prospěch obžalovaného. Doloženo je, že dané výroky u soudu učinil — nikoli že jejich obsah platí."
 claims = ["CLM-05", "CLM-06", "CLM-07", "CLM-08"]
-sources = ["SRC-03"]
+sources = ["SRC-03", "SRC-05"]
 subjects = ["faltynek"]
 +++
 

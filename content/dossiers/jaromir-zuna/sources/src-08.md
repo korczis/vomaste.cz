@@ -15,7 +15,7 @@ src_type = "zpravodajství"
 url = "https://ct24.ceskatelevize.cz/clanek/domaci/inspekce-nasla-chyby-v-armadnim-sporu-o-rozhovor-s-prezidentem-374516"
 published = "2026-06-12"
 retrieved = "2026-07-30"
-claims = ["CLM-08", "CLM-12"]
+claims = ["CLM-08", "CLM-12", "CLM-30", "CLM-31"]
 +++
 
 **Inspekce našla chyby u obou stran sporu o rozhovor armády s prezidentem**

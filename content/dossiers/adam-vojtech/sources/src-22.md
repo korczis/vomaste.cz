@@ -15,7 +15,7 @@ src_type = "zpravodajství"
 url = "https://www.zdravezpravy.cz/2026/07/07/cast-opozice-souhlasi-se-zrusenim-limitu-zdravotnich-benefitu-chybi-ale-zubni-pece/"
 published = "2026-07-07"
 retrieved = "2026-07-30"
-claims = ["CLM-41", "CLM-42"]
+claims = ["CLM-14", "CLM-41", "CLM-42"]
 +++
 
 **Lidovci souhlasí se zrušením limitu zdravotních benefitů. Ale chybí jim zubní péče**

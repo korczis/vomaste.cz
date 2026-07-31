@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 44 context entities across 22 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 45 context entities across 22 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## Agrofert (`agrofert`)
 
@@ -108,6 +108,17 @@ Generated from 44 context entities across 22 dossier(s). Regenerate with `npm ru
   - edge-agrofert-komise (agrofert -> evropska-komise, "Komise k 5. 6. 2026 neproplatila žádnou náhradu a žádá vysvětlení struktury fondu — dotaz, ne zjištění", dossier: andrej-babis)
   - edge-babis-komise-audit (babis -> evropska-komise, "audit REGC414CZ0133: závěr o ovládání fondů (4/2021), uzavřen 20. 7. 2022 splněním doporučení — kontrolní nástroj, ne soud", dossier: andrej-babis)
   - edge-synbiol-komise (synbiol -> evropska-komise, "Komise sleduje střet zájmů i u SynBiolu a Hartenbergu — monitoring a pokyn, ne zjištění o porušení", dossier: andrej-babis)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Fakultní nemocnice Olomouc (`fn-olomouc`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: adam-vojtech
+- Claims: CLM-07, CLM-08, CLM-09, CLM-11, CLM-12, CLM-31, CLM-32, CLM-33
+- Sources: SRC-02, SRC-04, SRC-06, SRC-07, SRC-19, SRC-20 (6 independent source families)
+- Relations: 
+  - edge-vojtech-fn-olomouc (vojtech -> fn-olomouc, "kauza studie PROFID EHRA a trestní oznámení resortu (2025–2026)", dossier: adam-vojtech)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## GMR GAS UA LLC (Kyjev) (`gmrgas`)

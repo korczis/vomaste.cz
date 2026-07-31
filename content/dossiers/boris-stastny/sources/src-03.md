@@ -15,7 +15,7 @@ src_type = "zpravodajství"
 url = "https://www.ceskenoviny.cz/zpravy/na-uradu-vlady-se-naslo-nahravaci-zarizeni-stastny-uvedl-ze-patrilo-jemu/2849515"
 published = "2026-07-10"
 retrieved = "2026-07-30"
-claims = ["CLM-06", "CLM-07", "CLM-09", "CLM-10", "CLM-12", "CLM-16"]
+claims = ["CLM-02", "CLM-06", "CLM-07", "CLM-09", "CLM-10", "CLM-12", "CLM-16"]
 +++
 
 **Na úřadu vlády se našlo nahrávací zařízení, Šťastný uvedl, že patřilo jemu**

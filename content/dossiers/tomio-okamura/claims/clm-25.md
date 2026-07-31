@@ -9,10 +9,10 @@ dossier = "tomio-okamura"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-25"
-status = "status-single"
-status_label = "1 ZDROJ"
+status = "status-corroborated"
+status_label = "CORROBORATED"
 summary = "Sněmovna 12. února 2025 Tomia Okamuru k trestnímu stíhání v této věci vydala; pro vydání hlasovalo 81 ze 143 přítomných poslanců, proti bylo 62."
-sources = ["SRC-18"]
+sources = ["SRC-18", "SRC-27"]
 subjects = ["okamura"]
 +++
 
