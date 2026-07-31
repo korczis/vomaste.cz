@@ -92,6 +92,25 @@ pravidlo deduplikace, zacházení s nepublikovanými záznamy a cílovou route.
 | `relations.total` | `/map/` | **kurátorované** hrany, ne odvozená registrová vrstva |
 | `gaps.total` | `/dossiers/` | evidované mezery |
 
+**Grouped metriky** — rozdělení, ne rodina ručně vypsaných metrik. Klíčem je
+pole, které záznam už nese, takže přidání dossieru nebo typu entity
+nevyžaduje sáhnout do registru:
+
+| Metric ID | Klíč skupiny | Kde se zobrazí |
+|---|---|---|
+| `claims.by_dossier` | `dossier` | počet tvrzení u každého dossieru v sidebaru |
+| `entities.by_type` | `entity_type` | počet entit u každého typu v podstromu „Entity" |
+
+Obě mají v generátoru **kontrolu rozdělení proti celku**: součet skupin se musí
+rovnat `claims.total`, resp. `entities.total`, jinak build spadne. Kdyby se
+rozešly, čtenář by viděl dvě čísla, která si odporují — přesně to, čemu má tahle
+vrstva bránit. Seskupovací logika je jeden sdílený helper, aby druhé seskupení
+nemohlo zavést druhou interpretaci toho, jak se počítá.
+
+`entities.by_type` **záměrně nedělí podle `publication_role`**: to by postavilo
+„lidi, o kterých píšeme" a „lidi, které jen zmiňujeme" do oddělených vizuálních
+přihrádek, což je redakční tvrzení, do kterého navigaci nic není.
+
 Dvě sémantiky, které se snadno popletou:
 
 - **`sources.total` počítá záznamy, ne média.** Jedno médium citované ke třem
@@ -101,6 +120,35 @@ Dvě sémantiky, které se snadno popletou:
   v `data/dossiers/<slug>/graph.toml`, každá krytá tvrzeními a zdroji. Odvozená
   plná registrová vrstva globálního grafu materializuje řádově víc hran a není
   to, co `/map/` prezentuje jako vztahy.
+
+## Routy /entities/typ/<typ>/
+
+Devět filtrovaných pohledů na globální registr entit, jeden na typ, generuje
+`scripts/dossier/build-entity-type-sections.mjs` do
+`content/entities/typ/<id>/`. Podstrom v sidebaru staví z existujících sekcí
+`build-navigation.mjs`.
+
+**Proč routa a ne kotva**: `/entities/` seskupení podle typu už má, ale dělá
+ho za běhu — server renderuje jeden plochý pool všech entit a Alpine z něj
+staví skupiny. Je to záměrný a správný návrh (pool je použitelný registr
+i s vypnutým JavaScriptem), ale znamená to, že není kam odkazovat: kotva
+`#type-person` serverově neexistuje a byla by špatně ve chvíli, kdy si čtenář
+přepne seskupení na „dossier" nebo „role", což ovládá on. Routa je stabilní
+cíl, fragment do uživatelem ovládaného stavu ne.
+
+**Proč projekce a ne přesun**: stránky entit zůstávají, kde jsou. Každá entita
+má jedinou kanonickou stránku a URL, na které visí aliasy z dossierových
+podstromů a `@id` v JSON-LD exportech; rozházet je do adresářů podle typu by
+všechny ty identifikátory změnilo. Sekce jsou filtrované pohledy nad jedním
+registrem, nikdy druhá kopie záznamů.
+
+Routa vzniká pro **každý** typ v datech, včetně typů s jedinou entitou. Práh by
+byl nezdokumentovaná mezera — čtenář, který vidí „9 typů" a najde 6 rout, byl
+uveden v omyl.
+
+Šablony **neemitují JSON-LD `Person`**: `verify-jsonld.mjs` vynucuje, že Person
+markup nese výhradně hlavní stránka entitního dossieru, a druhý uzel pro tutéž
+osobu by z jednoho člověka udělal ve strojových datech dva.
 
 ## Položky bez badge
 
