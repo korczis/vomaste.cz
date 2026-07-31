@@ -37,13 +37,22 @@
 
     <div data-sql-panel hidden>
       <div class="flex flex-wrap gap-2 border-b border-white/10 p-4">
+        {#- Ukázkové dotazy. Pozor u posledního: používá list_contains,
+            ne UNNEST. Verze DuckDB ve WebAssembly neumí navázat sloupec
+            z vnějšího FROM na JOIN za UNNESTem a dotaz skončí chybou
+            „Failed to bind column reference"; takový pád navíc invaliduje
+            celou databázi, takže uživateli přestane fungovat i zbytek
+            konzole. Ověřeno přímo v prohlížeči (tests/e2e/interactive.spec.mjs)
+            — kontrola nad desktopovým DuckDB to neodhalila, protože ten
+            UNNEST v tomhle tvaru umí. Komentář stojí ZDE, ne uvnitř pole:
+            Tera v poli komentář nepřipouští a build spadne. -#}
         {%- set examples = [
           "Rozdělení tvrzení podle stavu::SELECT status_label, count(*) AS pocet FROM claims GROUP BY 1 ORDER BY 2 DESC",
           "Nejcitovanější vydavatelé::SELECT outlet, count(*) AS zdroju, sum(claim_count) AS podepira_tvrzeni FROM sources GROUP BY 1 ORDER BY 2 DESC",
           "Tvrzení s jediným zdrojem::SELECT clm_id, summary, url FROM claims WHERE source_count = 1 ORDER BY clm_id",
           "Otevřené mezery podle priority::SELECT gap_id, priority, checked, url FROM gaps ORDER BY priority, gap_id",
           "Zdroje, které nepodpírají nic::SELECT src_id, outlet, url FROM sources WHERE claim_count = 0",
-          "Tvrzení a jejich zdroje (správný join)::SELECT c.dossier, c.clm_id, c.summary, s.outlet, s.source_url FROM claims c, UNNEST(c.sources) AS t(sid) JOIN sources s ON s.dossier = c.dossier AND s.src_id = t.sid ORDER BY c.dossier, c.clm_id",
+          "Tvrzení a jejich zdroje (správný join)::SELECT c.dossier, c.clm_id, c.summary, s.outlet, s.source_url FROM claims c JOIN sources s ON s.dossier = c.dossier AND list_contains(c.sources, s.src_id) ORDER BY c.dossier, c.clm_id",
         ] -%}
         {%- for ex in examples %}
         {%- set parts = ex | split(pat="::") %}
