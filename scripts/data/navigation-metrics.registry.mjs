@@ -166,7 +166,7 @@ export const INTENTIONALLY_UNMEASURED = {
   home: "Rozcestník, ne kolekce — žádná populace, kterou by číslo popisovalo.",
   docs: "Dokumentační stránky nejsou v kanonickém JSON-LD grafu; počet souborů v content/dokumentace/ není datová metrika a odpovídal by jinému modelu než ostatní badge.",
   concepts:
-    "Koncepty jsou taxonomická vrstva mimo JSON-LD export; dokud pro ně neexistuje kolekce ve static/data/, badge by nešel odvodit ze stejného zdroje jako ostatní.",
+    "Koncepty jsou taxonomická vrstva mimo JSON-LD export; dokud pro ně neexistuje vlastní kanonická kolekce, badge by nešel odvodit ze stejného zdroje jako ostatní metriky.",
   data: "Route /data/ prezentuje samotné exporty; počet kolekcí popisuje infrastrukturu, ne obsah, a mísil by dvě různé jednotky v jednom sloupci.",
 };
 

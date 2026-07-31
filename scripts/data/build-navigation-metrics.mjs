@@ -238,12 +238,42 @@ if (CHECK_ONLY) {
   process.exit(0);
 }
 
+// --- public endpoint ------------------------------------------------------
+// Same in-memory result as the manifest the templates read, so there cannot
+// be two implementations of the aggregation. Trimmed, not re-derived:
+// `source` names a repo path and is an implementation detail — a public
+// endpoint should describe what a number MEANS, not where the build read it
+// from.
+const publicPayload = {
+  schemaVersion: manifest.schemaVersion,
+  sourceDigest: manifest.sourceDigest,
+  metrics: Object.fromEntries(
+    Object.entries(metrics).map(([id, m]) => [
+      id,
+      { value: m.value, description: m.description, semantics: m.semantics, route: m.route },
+    ]),
+  ),
+  perDossier,
+  perType,
+  grouped: {
+    [PER_DOSSIER_METRIC.id]: { description: PER_DOSSIER_METRIC.description, key: "perDossier", route: PER_DOSSIER_METRIC.route },
+    [PER_TYPE_METRIC.id]: { description: PER_TYPE_METRIC.description, key: "perType", route: PER_TYPE_METRIC.route },
+  },
+  intentionallyUnmeasured: INTENTIONALLY_UNMEASURED,
+};
+
 // --- write ---------------------------------------------------------------
 
 mkdirSync(path.dirname(OUT), { recursive: true });
 const tmp = `${OUT}.tmp-${process.pid}`;
 writeFileSync(tmp, serialized);
 renameSync(tmp, OUT);
+
+const PUBLIC_OUT = path.join(ROOT, "static", "data", "navigation-metrics.json");
+mkdirSync(path.dirname(PUBLIC_OUT), { recursive: true });
+const publicTmp = `${PUBLIC_OUT}.tmp-${process.pid}`;
+writeFileSync(publicTmp, `${JSON.stringify(publicPayload, null, 2)}\n`);
+renameSync(publicTmp, PUBLIC_OUT);
 
 console.log(
   `build-navigation-metrics: wrote ${path.relative(ROOT, OUT)} — ${definitions.length} metric(s):`,
