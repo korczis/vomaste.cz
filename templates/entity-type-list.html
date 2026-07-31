@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% import "macros/ui.html" as ui %}
+
+{#-
+  Rozcestník filtrovaných pohledů podle typu entity.
+
+  Seznam typů se nepíše ručně — bere se ze skutečných podsekcí, které
+  generuje scripts/dossier/build-entity-type-sections.mjs z dat. Nový typ
+  entity se tu proto objeví bez zásahu do šablony a zaniklý zmizí.
+-#}
+
+{% block content %}
+<main class="mx-auto max-w-6xl px-6 py-12 text-white">
+
+  <nav aria-label="Drobečková navigace" class="text-xs text-white/40">
+    <a href="{{ get_url(path='@/entities/_index.md') | safe }}" class="hover:text-white">Entity</a>
+    <span aria-hidden="true"> › </span>
+    <span class="text-white/60">Podle typu</span>
+  </nav>
+
+  <h1 class="mt-4 text-3xl font-semibold tracking-tight">{{ section.title }}</h1>
+
+  <div class="mt-3 max-w-2xl text-sm leading-relaxed text-white/60">
+    {{ section.content | safe }}
+  </div>
+
+  {%- set registry = get_section(path="entities/_index.md") -%}
+
+  {% if section.subsections | length == 0 %}
+  <div class="mt-8">
+    {{ ui::empty_state(message="Zatím není evidován žádný typ entity. Sekce se generují z dat — spusťte `npm run build:entity-type-sections`.") }}
+  </div>
+  {% else %}
+  <ul class="mt-8 grid gap-2 sm:grid-cols-2 xl:grid-cols-3">
+    {% for sub in section.subsections %}
+    {%- set child = get_section(path=sub) -%}
+    {%- set_global n = 0 -%}
+    {%- for p in registry.pages -%}
+      {%- if p.extra.entity_type == child.extra.entity_type -%}{%- set_global n = n + 1 -%}{%- endif -%}
+    {%- endfor -%}
+    <li>
+      <a href="{{ child.permalink | safe }}" class="registry-card h-full">
+        <span class="font-mono text-xs text-[#f3e5c0]">{{ child.extra.entity_type }}</span>
+        <span class="mt-1 font-semibold text-white">{{ child.title }}</span>
+        <span class="mt-1 text-xs text-white/40">
+          <span class="tabular-nums text-white/70">{{ n }}</span>
+          {% if n == 1 %}entita{% elif n < 5 %}entity{% else %}entit{% endif %}
+        </span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+</main>
+{% endblock content %}

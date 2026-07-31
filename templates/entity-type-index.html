@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% import "macros/ui.html" as ui %}
+
+{#-
+  Filtrovaný pohled na globální registr entit — jeden typ entity.
+
+  Sekce sama nemá žádné vlastní stránky: entity zůstávají tam, kde jsou,
+  protože každá má jedinou kanonickou stránku a URL, na které visí aliasy
+  z dossierových podstromů a `@id` v JSON-LD exportech. Tahle šablona proto
+  čte globální registr a filtruje ho podle `extra.entity_type` ze sekce.
+  Žádná druhá kopie záznamů.
+
+  Stránku generuje scripts/dossier/build-entity-type-sections.mjs — ručně se
+  needituje.
+
+  Vědomě NEEMITUJE JSON-LD `Person`. verify-jsonld.mjs vynucuje, že Person
+  markup nese výhradně hlavní stránka entitního dossieru; filtrovaný pohled
+  není profil a druhý Person uzel pro tutéž osobu by z jednoho člověka
+  udělal ve strojových datech dva.
+-#}
+
+{% block content %}
+<main class="mx-auto max-w-6xl px-6 py-12 text-white">
+
+  <nav aria-label="Drobečková navigace" class="text-xs text-white/40">
+    <a href="{{ get_url(path='@/entities/_index.md') | safe }}" class="hover:text-white">Entity</a>
+    <span aria-hidden="true"> › </span>
+    <a href="{{ get_url(path='@/entities/typ/_index.md') | safe }}" class="hover:text-white">Podle typu</a>
+    <span aria-hidden="true"> › </span>
+    <span class="text-white/60">{{ section.title }}</span>
+  </nav>
+
+  <h1 class="mt-4 text-3xl font-semibold tracking-tight">{{ section.title }}</h1>
+
+  <div class="mt-3 max-w-2xl text-sm leading-relaxed text-white/60">
+    {{ section.content | safe }}
+  </div>
+
+  {%- set registry = get_section(path="entities/_index.md") -%}
+  {%- set_global matching = [] -%}
+  {%- for p in registry.pages -%}
+    {%- if p.extra.entity_type == section.extra.entity_type -%}
+      {%- set_global matching = matching | concat(with=p) -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+  <p class="mt-6 text-xs text-white/40">
+    <span class="tabular-nums text-white">{{ matching | length }}</span>
+    {% if matching | length == 1 %}entita{% elif matching | length < 5 %}entity{% else %}entit{% endif %}
+    tohoto typu ·
+    <a href="{{ get_url(path='@/entities/_index.md') | safe }}" class="text-[#f3e5c0] underline">celý registr</a>
+  </p>
+
+  {% if matching | length == 0 %}
+  <div class="mt-6">
+    {{ ui::empty_state(message="Tento typ zatím nemá žádnou evidovanou entitu.") }}
+  </div>
+  {% else %}
+  <ul class="mt-6 grid gap-2 sm:grid-cols-2 xl:grid-cols-3">
+    {% for p in matching %}
+    <li data-entity-id="{{ p.extra.entity_id }}" data-jsonld-id="{{ p.permalink | safe }}#entity">
+      <a href="{{ p.permalink | safe }}" class="registry-card h-full">
+        <span class="flex flex-wrap items-center gap-2">
+          <span class="font-mono text-xs text-[#f3e5c0]">{{ p.extra.entity_id }}</span>
+          {% if p.extra.publication_role == "subject" %}
+          <span class="rounded bg-[#f3e5c0]/10 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-[#f3e5c0]">subjekt dossieru</span>
+          {% else %}
+          <span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-white/40">kontextová</span>
+          {% endif %}
+        </span>
+        <span class="mt-1 font-semibold text-white">{{ p.title }}</span>
+        <span class="mt-1 text-xs text-white/40">
+          {{ p.extra.dossiers | length }} dossier{% if p.extra.dossiers | length != 1 %}ů{% endif %}
+          {%- if p.extra.government_office %} · {{ p.extra.government_office }}{% endif %}
+        </span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+</main>
+{% endblock content %}
