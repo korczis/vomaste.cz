@@ -52,7 +52,8 @@
     sort_keys=["id", "outlet", "type", "", "claims"],
     select_facets=["type::Typ zdroje", "family::Zdrojová rodina"],
     searchable=true,
-    url_state=true) }}
+    url_state=true,
+    export_name="zdroje") }}
     {% for p in section.pages %}
     <tr data-type="{{ p.extra.src_type }}" data-family="{{ p.extra.family | default(value='') }}">
       <td class="whitespace-nowrap p-3 align-top">

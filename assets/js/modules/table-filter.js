@@ -1,54 +1,81 @@
 // Alpine komponenta pod sdíleným makrem advanced_table
-// (templates/macros/table.html). Řádky zůstávají prostý Tera markup;
-// komponenta vlastní jen reaktivní stav — hledání, řazení, faset a jejich
-// promítnutí do URL. Žádný framework navíc, na stránkách bez tabulky no-op.
+// (templates/macros/table.html). Jediná tabulková komponenta v repozitáři:
+// registry tvrzení/zdrojů/mezer/kauz i adresář dossierů jedou přes ni.
 //
-// Tři schopnosti přibyly v T-019 (§ 7 a § 8 mise):
+// Vznikla sloučením dvou implementací, které vznikly souběžně (T-018 a
+// T-019) a dělaly totéž jinak. Z každé zůstalo to lepší:
 //
-// 1. Hledání ignoruje diakritiku. Do té doby se porovnávalo
-//    textContent.toLowerCase(), takže „vojtech" nenašlo „Vojtěch" — na
-//    česky psaném webu tichá past, protože prázdný výsledek vypadá jako
-//    „nic tam není", ne jako „špatně jsi to napsal". normalize() se
-//    přebírá ze search-core.js, ať příkazový řádek a tabulky nesoudí
-//    shodu různě.
+//   z dossier-directory.js
+//     - hlavičky se na tlačítka povyšují až v JS. Bez skriptu by v HTML
+//       ležela mrtvá tlačítka, která nic nedělají, a aria-sort by lhal.
+//     - výchozí směr podle typu sloupce: čísla sestupně (koho zajímá,
+//       kdo má nejvíc), text vzestupně.
+//     - varování o valueOf níže — draze zaplacená znalost.
 //
-// 2. Řazení podle sloupce. Buňka může nést data-sort-value (datum, počet)
-//    a pak se řadí podle ní, ne podle zobrazeného textu — jinak by se
-//    „10" řadilo před „9".
+//   z table-filter.js
+//     - hledání ignoruje diakritiku přes normalize() ze search-core.js.
+//       Porovnávat textContent.toLowerCase() znamená, že „vojtech"
+//       nenajde „Vojtěch" — na česky psaném webu tichá past, protože
+//       prázdný výsledek vypadá jako „nic tam není".
+//     - prázdné hodnoty se řadí na konec v OBOU směrech.
+//     - řazení číslic v textu (CLM-2 před CLM-10).
+//     - fasety: čipy i rozbalovací selektory.
 //
-// 3. URL stav, ale jen když si ho tabulka vyžádá přes data-url-state.
-//    Stránka smí mít víc tabulek a ty by si jinak přepisovaly tytéž
-//    parametry: poslední inicializovaná by vyhrála a sdílený odkaz by
-//    obnovil filtr jinde, než ho uživatel nastavil.
+// Nové schopnosti (T-019, inspirace funkcemi Flowbite Advanced Tables /
+// Datatables, implementace vlastní): přepínání viditelnosti sloupců a
+// export právě zobrazeného výřezu do CSV/JSON.
+//
+// VĚDOMĚ CHYBÍ:
+//   - stránkování. Nejdelší registr má desítky řádků, a stránkování by
+//     rozbilo Ctrl+F i odkaz na konkrétní řádek. Až bude tabulka nad
+//     tisíc řádků, je to první věc k doplnění.
+//   - výběr řádků a hromadné akce. Na read-only důkazním webu není co
+//     hromadně provést; přepínač bez akce je dekorace.
+//   - simple-datatables jako závislost. Knihovna je pod GNU licencí a
+//     nesla by s sebou runtime framework; tenhle web staví na tom, že
+//     bez JS zůstane použitelná plná tabulka.
 
 import { normalize } from "./search-core.js";
 import { readState, syncUrl } from "./url-state.js";
 
 const SPEC = { q: "", sort: "", dir: "asc", f: "" };
 
-// Směr je parametr, ne násobitel výsledku. Prázdná hodnota patří na konec
-// v OBOU směrech: řádek bez údaje není „nejmenší", jen neúplný, a kdyby
-// chybějící data vyplavala nahoru, byla by nejnápadnějším obsahem tabulky.
-// Kdyby volající násobil návratovou hodnotu -1, tohle pravidlo by se
-// sestupně obrátilo — proto se dir aplikuje jen na srovnání dvou
-// skutečných hodnot.
+// Prázdná hodnota patří na konec bez ohledu na směr: řádek bez údaje není
+// „nejmenší", jen neúplný, a kdyby chybějící data vyplavala nahoru, byla
+// by nejnápadnějším obsahem tabulky. Proto je směr parametr, ne násobitel
+// návratové hodnoty — jinak by se tohle pravidlo sestupně obrátilo.
 //
-// numeric: true řeší CLM-2 vs CLM-10 — bez něj je řazení lexikografické a
-// desítka skončí před dvojkou. Dnešní id jsou nulou doplněná na dvě místa,
-// takže by to prošlo; přestane to platit u prvního dossieru se stovkou
-// záznamů, a to je tichá vada, ne pád.
+// numeric: true řeší CLM-2 vs CLM-10. Dnešní identifikátory jsou nulou
+// doplněné na dvě místa, takže by to prošlo; přestane to platit u prvního
+// dossieru se stovkou záznamů, a to je tichá vada, ne pád.
 export function compareValues(a, b, dir = 1) {
   if (a === b) return 0;
   if (a === "") return 1;
   if (b === "") return -1;
   const na = Number(a);
   const nb = Number(b);
-  if (a !== "" && b !== "" && !Number.isNaN(na) && !Number.isNaN(nb)) return (na - nb) * dir;
+  if (!Number.isNaN(na) && !Number.isNaN(nb)) return (na - nb) * dir;
   return a.localeCompare(b, "cs", { numeric: true }) * dir;
 }
 
-function cellValue(row, index) {
-  const cell = row.cells[index];
+// Buňka tabulky do jednoho pole CSV.
+//
+// Escapuje se uvozovkami podle RFC 4180. Navíc apostrof před =, +, - a @:
+// tabulkové procesory takový text vyhodnotí jako vzorec, takže hodnota
+// zkopírovaná ze zdroje by mohla v cizím Excelu spustit odkaz nebo výpočet.
+// Na webu, jehož smyslem je předávat doložené záznamy dál, je export do
+// tabulky očekávaná cesta — tohle je vstup pro cizí software, ne jen text.
+export function csvCell(value) {
+  let s = value == null ? "" : String(value);
+  if (/^[=+\-@\t\r]/.test(s)) s = `'${s}`;
+  return `"${s.replace(/"/g, '""')}"`;
+}
+
+export function toCsv(headers, rows) {
+  return [headers, ...rows].map((r) => r.map(csvCell).join(",")).join("\r\n");
+}
+
+function cellText(cell) {
   if (!cell) return "";
   const explicit = cell.dataset ? cell.dataset.sortValue : undefined;
   return (explicit !== undefined && explicit !== "" ? explicit : cell.textContent).trim();
@@ -66,16 +93,15 @@ export function registerTableFilter() {
       rows: [],
       urlState: false,
       sortIndexes: {},
-      // Selektorové fasety: klíč je název data-* atributu řádku, hodnoty se
-      // sbírají z řádků samotných. Výčet se nepíše do šablony — nová
-      // hodnota (nový typ zdroje, nová zdrojová rodina) se objeví sama,
-      // jinak by seznam voleb tiše zastaral vůči datům.
       selectFacets: [],
       facetOptions: {},
       facetValues: {},
+      columns: [],
+      hiddenColumns: {},
+      exportName: "",
 
-      // Klíče v URL jsou názvy atributů (?type=…&family=…), aby adresa
-      // popisovala, co filtruje, a ne pořadí selectů v šabloně.
+      // Klíče v URL jsou názvy atributů (?type=…), aby adresa popisovala,
+      // co filtruje, a ne pořadí selectů v šabloně.
       spec() {
         const spec = Object.assign({}, SPEC);
         this.selectFacets.forEach(function (attr) {
@@ -87,6 +113,7 @@ export function registerTableFilter() {
       init() {
         const table = this.$root.querySelector("table");
         if (!table || !table.tBodies.length) return;
+        this.table = table;
         this.body = table.tBodies[0];
         this.rows = Array.prototype.slice.call(this.body.rows);
         this.rows.forEach(function (row) {
@@ -95,15 +122,61 @@ export function registerTableFilter() {
         this.total = this.rows.length;
         this.visible = this.rows.length;
         this.urlState = this.$root.dataset.urlState === "true";
+        this.exportName = this.$root.dataset.exportName || "";
 
-        // Řaditelné sloupce se hlásí samy v hlavičce; klíč je čitelný
-        // řetězec, aby ?sort=status dávalo smysl i bez znalosti pořadí
-        // sloupců (a přežilo jejich případné přeuspořádání).
-        const heads = table.querySelectorAll("th[data-sort-key]");
-        Array.prototype.forEach.call(heads, (th) => {
-          this.sortIndexes[th.dataset.sortKey] = th.cellIndex;
+        this.upgradeHeaders();
+        this.readFacetOptions();
+
+        if (this.urlState) {
+          const state = readState(this.spec());
+          this.search = state.q;
+          this.facet = state.f;
+          this.selectFacets.forEach((attr) => {
+            // Hodnota z URL se přijme jen když ji data skutečně nabízejí.
+            // Jinak by zastaralý odkaz zobrazil prázdnou tabulku bez
+            // vysvětlení, místo aby spadl zpět na plný pohled.
+            if (this.facetOptions[attr].indexOf(state[attr]) !== -1) {
+              this.facetValues[attr] = state[attr];
+            }
+          });
+          if (this.sortIndexes[state.sort] !== undefined) {
+            this.sortKey = state.sort;
+            this.sortDir = state.dir === "desc" ? "desc" : "asc";
+          }
+        }
+        this.apply();
+      },
+
+      // Hlavičky se na tlačítka povyšují až tady. Šablona vypisuje prostý
+      // text s data-sort-key; bez JS tedy nikde neleží ovládací prvek,
+      // který nic nedělá, a aria-sort se objeví jen když řazení funguje.
+      upgradeHeaders() {
+        const heads = this.table.tHead ? this.table.tHead.rows[0].cells : [];
+        Array.prototype.forEach.call(heads, (th, index) => {
+          this.columns.push({ index: index, label: th.textContent.trim() });
+          const key = th.dataset.sortKey;
+          if (!key) return;
+          this.sortIndexes[key] = index;
+          const label = th.textContent.trim();
+          const button = document.createElement("button");
+          button.type = "button";
+          button.className =
+            "flex w-full items-center gap-1 text-left uppercase tracking-wide transition-colors hover:text-white";
+          button.textContent = label;
+          const caret = document.createElement("span");
+          caret.className = "font-mono text-[0.65rem] text-white/25";
+          caret.setAttribute("aria-hidden", "true");
+          caret.textContent = "↕";
+          button.appendChild(caret);
+          button.addEventListener("click", () => this.sortBy(key));
+          th.textContent = "";
+          th.appendChild(button);
         });
+      },
 
+      // Volby selektorů se sbírají z řádků, ne z výčtu v šabloně — nová
+      // hodnota v datech se objeví sama, jinak by seznam tiše zastaral.
+      readFacetOptions() {
         this.selectFacets = (this.$root.dataset.selectFacets || "")
           .split("|")
           .filter(Boolean);
@@ -118,26 +191,26 @@ export function registerTableFilter() {
           });
           this.facetValues[attr] = "";
         });
+      },
 
-        if (this.urlState) {
-          const state = readState(this.spec());
-          this.search = state.q;
-          this.facet = state.f;
-          this.selectFacets.forEach((attr) => {
-            // Hodnota z URL se přijme jen když ji data skutečně nabízejí —
-            // jinak by zastaralý odkaz zobrazil prázdnou tabulku bez
-            // vysvětlení, místo aby spadl zpět na plný pohled.
-            if (this.facetOptions[attr].indexOf(state[attr]) !== -1) {
-              this.facetValues[attr] = state[attr];
-            }
-          });
-          if (this.sortIndexes[state.sort] !== undefined) {
-            this.sortKey = state.sort;
-            this.sortDir = state.dir === "desc" ? "desc" : "asc";
-          }
-        }
-        if (this.sortKey) this.applySort();
-        this.apply();
+      // Sloupec sám o sobě neví, čím je; pozná se to podle toho, jestli
+      // jeho buňky nesou číselné data-sort-value. U čísel dává smysl
+      // začít od největšího, u textu od A.
+      isNumeric(key) {
+        const index = this.sortIndexes[key];
+        if (index === undefined || !this.rows.length) return false;
+        const cell = this.rows[0].cells[index];
+        if (!cell || cell.dataset.sortValue === undefined) return false;
+        return cell.dataset.sortValue !== "" && !Number.isNaN(Number(cell.dataset.sortValue));
+      },
+
+      // POZOR na jméno: metoda se nesmí jmenovat `valueOf`. Alpine drží
+      // stav v reaktivním Proxy a `valueOf` je metoda z Object.prototype,
+      // kterou proxy obsluhuje sama — volání pak vrátilo celý objekt místo
+      // hodnoty buňky a řazení tiše dopadlo jako vzestupné bez ohledu na
+      // směr. (Znalost z T-018.)
+      cellValue(row, index) {
+        return cellText(row.cells[index]);
       },
 
       // Řadí se celá množina řádků, ne jen viditelné — jinak by změna
@@ -146,22 +219,41 @@ export function registerTableFilter() {
         const index = this.sortIndexes[this.sortKey];
         if (index === undefined) return;
         const dir = this.sortDir === "desc" ? -1 : 1;
+        const self = this;
         const sorted = this.rows.slice().sort(function (x, y) {
-          return compareValues(cellValue(x, index), cellValue(y, index), dir);
+          return compareValues(self.cellValue(x, index), self.cellValue(y, index), dir);
         });
         const frag = document.createDocumentFragment();
         sorted.forEach(function (row) {
           frag.appendChild(row);
         });
         this.body.appendChild(frag);
+        this.markSortedHeader();
+      },
+
+      markSortedHeader() {
+        if (!this.table.tHead) return;
+        Array.prototype.forEach.call(this.table.tHead.rows[0].cells, (th) => {
+          const key = th.dataset.sortKey;
+          if (!key) return;
+          const active = key === this.sortKey;
+          th.setAttribute("aria-sort", active ? (this.sortDir === "asc" ? "ascending" : "descending") : "none");
+          const caret = th.querySelector("button span");
+          if (!caret) return;
+          caret.textContent = active ? (this.sortDir === "asc" ? "▲" : "▼") : "↕";
+          caret.className = active
+            ? "font-mono text-[0.65rem] text-[#f3e5c0]"
+            : "font-mono text-[0.65rem] text-white/25";
+        });
       },
 
       sortBy(key) {
         if (this.sortIndexes[key] === undefined) return;
-        if (this.sortKey === key) this.sortDir = this.sortDir === "asc" ? "desc" : "asc";
-        else {
+        if (this.sortKey === key) {
+          this.sortDir = this.sortDir === "asc" ? "desc" : "asc";
+        } else {
           this.sortKey = key;
-          this.sortDir = "asc";
+          this.sortDir = this.isNumeric(key) ? "desc" : "asc";
         }
         this.applySort();
         this.sync();
@@ -172,23 +264,40 @@ export function registerTableFilter() {
         this.apply();
       },
 
-      ariaSort(key) {
-        if (this.sortKey !== key) return "none";
-        return this.sortDir === "asc" ? "ascending" : "descending";
+      toggleColumn(index) {
+        this.hiddenColumns[index] = !this.hiddenColumns[index];
+        this.renderColumnVisibility();
+      },
+
+      renderColumnVisibility() {
+        const hidden = this.hiddenColumns;
+        const apply = function (cells) {
+          Array.prototype.forEach.call(cells, function (cell, i) {
+            cell.hidden = !!hidden[i];
+          });
+        };
+        if (this.table.tHead) apply(this.table.tHead.rows[0].cells);
+        this.rows.forEach(function (row) {
+          apply(row.cells);
+        });
       },
 
       reset() {
         this.search = "";
         this.facet = "";
+        this.sortKey = "";
+        this.sortDir = "asc";
         this.selectFacets.forEach((attr) => {
           this.facetValues[attr] = "";
         });
+        this.markSortedHeader();
         this.apply();
       },
 
       get filtered() {
         if (this.search) return true;
         if (this.facet) return true;
+        if (this.sortKey) return true;
         return this.selectFacets.some((attr) => this.facetValues[attr]);
       },
 
@@ -209,7 +318,61 @@ export function registerTableFilter() {
           if (show) shown++;
         });
         this.visible = shown;
+        if (this.sortKey) this.applySort();
         this.sync();
+      },
+
+      // Exportuje PRÁVĚ ZOBRAZENÝ výřez — filtr, řazení i skryté sloupce.
+      // To je smysl toho tlačítka: co uživatel vidí, to si odnese. Kdyby
+      // se exportovalo vždy všechno, byl by výsledek v rozporu s tím, co
+      // je na obrazovce, a to je horší než žádný export.
+      //
+      // Plná data v strojové podobě jsou v /data/*.json; tohle je výřez,
+      // ne náhrada datasetu.
+      visibleMatrix() {
+        const cols = this.columns
+          .map((c) => c.index)
+          .filter((i) => !this.hiddenColumns[i]);
+        const headers = cols.map((i) => this.columns[i].label);
+        const rows = this.rows
+          .filter((row) => !row.hidden)
+          .map((row) => cols.map((i) => (row.cells[i] ? row.cells[i].textContent.trim().replace(/\s+/g, " ") : "")));
+        return { headers, rows };
+      },
+
+      download(blob, suffix) {
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = `${this.exportName || "tabulka"}-${suffix}`;
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        URL.revokeObjectURL(url);
+      },
+
+      exportCsv() {
+        const { headers, rows } = this.visibleMatrix();
+        // BOM, aby Excel poznal UTF-8 a nerozsypal diakritiku.
+        const blob = new Blob(["﻿" + toCsv(headers, rows)], {
+          type: "text/csv;charset=utf-8",
+        });
+        this.download(blob, "vyrez.csv");
+      },
+
+      exportJson() {
+        const { headers, rows } = this.visibleMatrix();
+        const objects = rows.map(function (row) {
+          const o = {};
+          headers.forEach(function (h, i) {
+            o[h] = row[i];
+          });
+          return o;
+        });
+        const blob = new Blob([JSON.stringify(objects, null, 1)], {
+          type: "application/json;charset=utf-8",
+        });
+        this.download(blob, "vyrez.json");
       },
 
       sync() {
@@ -217,7 +380,7 @@ export function registerTableFilter() {
         const state = {
           q: this.search.trim(),
           sort: this.sortKey,
-          dir: this.sortDir,
+          dir: this.sortKey ? this.sortDir : "asc",
           f: this.facet,
         };
         this.selectFacets.forEach((attr) => {

@@ -34,7 +34,8 @@
     sort_keys=["id", "priority", "", "checked"],
     select_facets=["priority::Priorita"],
     searchable=true,
-    url_state=true) }}
+    url_state=true,
+    export_name="mezery") }}
     {% for p in section.pages %}
     <tr data-priority="{{ p.extra.priority }}">
       <td class="whitespace-nowrap p-3 align-top">

@@ -15,8 +15,10 @@
   sečtením týchž hodnot, takže se s tabulkou nemůže rozejít.
 
   Bez JavaScriptu zůstává celá tabulka vykreslená a čitelná; toolbar a
-  řazení jsou progresivní vylepšení (assets/js/modules/dossier-directory.js),
-  ne podmínka použitelnosti.
+  řazení jsou progresivní vylepšení (assets/js/modules/table-filter.js,
+  sdílené se všemi registry), ne podmínka použitelnosti. Hlavičky se na
+  řadicí tlačítka povyšují až v JS, takže bez skriptu tu neleží ovládací
+  prvek, který nic nedělá.
 
   Agregované pohledy zůstávají v samostatné, výslovně označené sekci pod
   tabulkou — invariant z AGENTS.md: agregát nikdy nesmí vypadat jako další
@@ -71,36 +73,31 @@
     {{ ui::stat_tile(value=t_relations, label="Vztahů v grafech") }}
   </div>
 
-  <section x-data="dossierDirectory"
-           data-sort-keys="name,claims,sources,cases,gaps,entities,relations,reviewed"
-           aria-labelledby="dossier-directory-caption"
-           class="mb-4">
-    <div class="mb-3 flex flex-wrap items-end gap-3" x-cloak>
-      <div class="min-w-[14rem] flex-1">
-        <label for="dossier-search" class="mb-1 block text-xs uppercase tracking-wide text-white/40">Hledat dossier</label>
-        <input id="dossier-search" type="search" x-model="search" x-on:input="apply()"
-               placeholder="jméno nebo popis…" autocomplete="off"
-               class="w-full rounded-lg border border-white/10 bg-black/40 px-3 py-2 text-sm text-white placeholder:text-white/30">
-      </div>
-      <div class="flex flex-wrap items-center gap-3 pb-2 text-xs text-white/50">
-        <span><span class="tabular-nums text-white" x-text="visible"></span> z <span class="tabular-nums" x-text="total"></span></span>
-        <button type="button" x-on:click="reset()" x-show="search || sortKey"
-                class="rounded border border-white/10 px-2 py-1 hover:text-white">Zrušit filtr a řazení</button>
-      </div>
-    </div>
-
+  {#- Adresář jede přes tutéž komponentu jako registry tvrzení/zdrojů/
+      mezer/kauz. Vlastní dossierDirectory() zanikl: vznikl souběžně
+      s advancedTable() a dělal totéž jinak, což je přesně duplikace, proti
+      které stojí CDUP. To lepší z něj (povyšování hlaviček na tlačítka až
+      v JS, výchozí sestupný směr u číselných sloupců) je teď v té sdílené.
+      Hledání, počet i „zrušit filtr" nese hlavička makra. -#}
+  <section aria-labelledby="dossier-directory-caption" class="mb-4">
     {{ table::advanced_table(
       id="dossier-directory",
       caption="Autorizované dossiery",
       record_type="dossier",
       columns=["Dossier", "Tvrzení", "Zdroje", "Kauzy", "Mezery", "Entity", "Vztahy", "Prověřeno"],
-      count=entity_dossiers | length
+      sort_keys=["name", "claims", "sources", "cases", "gaps", "entities", "relations", "reviewed"],
+      count=entity_dossiers | length,
+      searchable=true,
+      url_state=true,
+      export_name="dossiery"
     ) }}
     {% for sub_path in entity_dossiers %}
     {% set d = get_section(path=sub_path) %}
     {% set counts = load_data(path="data/dossiers/" ~ d.extra.dossier ~ "/stats.toml") %}
     <tr>
-      <th scope="row" class="p-3 font-normal align-top">
+      {#- data-sort-value nese jen titul: textContent buňky obsahuje i popisek,
+          takže bez toho by se řadilo podle věty, ne podle jména dossieru. -#}
+      <th scope="row" class="p-3 font-normal align-top" data-sort-value="{{ d.title }}">
         <a href="{{ d.permalink | safe }}" class="font-semibold text-white no-underline hover:underline">{{ d.title }}</a>
         <span class="mt-0.5 block max-w-md text-xs text-white/40">{{ d.description | truncate(length=110) }}</span>
       </th>

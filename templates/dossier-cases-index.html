@@ -25,7 +25,8 @@
     sort_keys=["id", "status", "", "period"],
     select_facets=["status::Stav"],
     searchable=true,
-    url_state=true) }}
+    url_state=true,
+    export_name="kauzy") }}
     {% for p in section.pages %}
     <tr data-status="{{ p.extra.label }}">
       <td class="whitespace-nowrap p-3 align-top">
