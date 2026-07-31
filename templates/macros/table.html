@@ -62,6 +62,13 @@
                     v šabloně, aby nová hodnota v datech nemusela čekat na
                     zásah do UI. Klíč se objevuje i v URL (?type=…).
                     "" (výchozí) = bez selectů.
+      inspector   — true zapne postranní panel s detailem řádku (§ 7 mise).
+                    Řádky pak musí nést data-inspect-id. Panel se skládá
+                    Z ŘÁDKU SAMOTNÉHO: popisky bere z <th> hlavičky, hodnoty
+                    z buněk. Žádný druhý dataset tedy nevzniká a panel se
+                    nemůže rozejít s tabulkou, protože je to tatáž data.
+                    Bez JavaScriptu se nic nezobrazuje a řádek dál funguje
+                    jako odkaz na kanonickou stránku záznamu.
       url_state   — true promítne hledání/řazení/faset do query stringu,
                     aby šel výřez dat poslat odkazem (§ 8 mise). Vědomě
                     opt-in: stránka smí mít víc tabulek a ty by si jinak
@@ -69,10 +76,10 @@
                     by vyhrála a sdílený odkaz by obnovil filtr jinde, než
                     ho uživatel nastavil. Zapínat na hlavní tabulce stránky.
 -#}
-{%- macro advanced_table(id, caption, record_type="", columns="", count="", searchable=false, extra_class="", sort_keys="", facets="", select_facets="", url_state=false, export_name="") -%}
+{%- macro advanced_table(id, caption, record_type="", columns="", count="", searchable=false, extra_class="", sort_keys="", facets="", select_facets="", url_state=false, export_name="", inspector=false) -%}
 {%- set facet_attrs = [] -%}
 {%- for sf in select_facets %}{% set_global facet_attrs = facet_attrs | concat(with=sf | split(pat="::") | first) %}{% endfor -%}
-<div class="relative overflow-x-auto rounded-lg border border-white/10 bg-white/[0.03]{% if extra_class %} {{ extra_class }}{% endif %}"{% if record_type %} data-record-type="{{ record_type }}"{% endif %}{% if searchable %} x-data="advancedTable()"{% endif %}{% if url_state %} data-url-state="true"{% endif %}{% if facet_attrs | length > 0 %} data-select-facets="{{ facet_attrs | join(sep='|') }}"{% endif %}{% if export_name %} data-export-name="{{ export_name }}"{% endif %}>
+<div class="relative overflow-x-auto rounded-lg border border-white/10 bg-white/[0.03]{% if extra_class %} {{ extra_class }}{% endif %}"{% if record_type %} data-record-type="{{ record_type }}"{% endif %}{% if searchable %} x-data="advancedTable()"{% endif %}{% if url_state %} data-url-state="true"{% endif %}{% if facet_attrs | length > 0 %} data-select-facets="{{ facet_attrs | join(sep='|') }}"{% endif %}{% if export_name %} data-export-name="{{ export_name }}"{% endif %}{% if inspector %} data-inspector="true"{% endif %}>
   {%- if count != "" or searchable %}
   <div class="flex flex-wrap items-center justify-between gap-3 border-b border-white/10 px-3 py-2.5">
     <h2 id="{{ id }}-caption" class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-white/55">
@@ -185,9 +192,40 @@
 
     empty_text stojí za vyplnění všude, kde se filtruje — prázdná tabulka
     bez vysvětlení vypadá jako chyba webu, ne jako výsledek filtru. -#}
-{%- macro advanced_table_end(footer="", empty_text="") -%}
+{%- macro advanced_table_end(footer="", empty_text="", inspector=false) -%}
     </tbody>
   </table>
+  {%- if inspector %}
+  {#- Postranní panel s detailem řádku. Není to modální dialog: seznam
+      zůstává čitelný a ovladatelný vedle něj, což je celý smysl pohledu
+      master-detail — uživatel neztratí kontext, ve kterém záznam našel.
+      Proto role="region" s popiskem, ne role="dialog" s past na fokus.
+
+      Obsah plní JS z řádku samotného; bez skriptu se panel vůbec
+      nevykreslí a řádek dál funguje jako odkaz na kanonickou stránku. -#}
+  <aside x-show="inspected" x-cloak
+    role="region" aria-live="polite"
+    :aria-label="'Detail záznamu ' + (inspected || '')"
+    class="border-t border-[#f3e5c0]/30 bg-[#f3e5c0]/[0.04] p-4">
+    <div class="mb-2 flex items-start justify-between gap-3">
+      <h3 class="font-mono text-sm font-semibold text-[#f3e5c0]" x-text="inspected"></h3>
+      <button type="button" @click="closeInspector()" x-ref="inspectorClose"
+        class="rounded border border-white/20 px-2 py-0.5 text-xs text-white/70 transition-colors hover:border-white/40 hover:text-white">
+        Zavřít <kbd class="ml-1 opacity-60">Esc</kbd>
+      </button>
+    </div>
+    <dl class="grid gap-x-4 gap-y-1 text-sm sm:grid-cols-[auto_1fr]">
+      <template x-for="f in inspectedFields" :key="f.label">
+        <div class="contents">
+          <dt class="text-xs uppercase tracking-wide text-white/55" x-text="f.label"></dt>
+          <dd class="text-white/80" x-text="f.value"></dd>
+        </div>
+      </template>
+    </dl>
+    <a x-show="inspectedHref" :href="inspectedHref"
+      class="mt-3 inline-block text-sm text-[#f3e5c0] underline decoration-white/30 underline-offset-2">Otevřít celý záznam →</a>
+  </aside>
+  {%- endif %}
   {%- if empty_text %}
   <p x-show="visible === 0" x-cloak class="px-3 py-6 text-center text-sm text-white/50">{{ empty_text }}</p>
   {%- endif %}

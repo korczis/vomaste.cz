@@ -43,11 +43,21 @@
     ],
     searchable=true,
     url_state=true,
-    export_name="tvrzeni") }}
+    export_name="tvrzeni",
+    inspector=true) }}
     {% for p in section.pages %}
-    <tr data-facet="{{ p.extra.status }}">
+    <tr data-facet="{{ p.extra.status }}" data-inspect-id="{{ p.extra.clm_id }}">
+      {#- Zůstává to ODKAZ na kanonickou stránku; JS jen zachytí kliknutí a
+          místo odchodu otevře detail vedle seznamu. Bez skriptu tedy vede
+          normální navigace a nikde neleží ovládací prvek, který nic nedělá —
+          stejný důvod, proč se řadicí hlavičky povyšují na tlačítka až v JS.
+          Prostřední tlačítko myši i Cmd+klik dál otevřou stránku v novém
+          panelu, protože @click.prevent na ně nesahá. -#}
       <td class="whitespace-nowrap p-3 align-top">
-        <a href="{{ p.permalink | safe }}" class="font-mono text-xs text-[#f3e5c0] hover:underline">{{ p.extra.clm_id }}</a>
+        <a href="{{ p.permalink | safe }}"
+          @click.prevent="openInspector('{{ p.extra.clm_id }}')"
+          :aria-expanded="inspected === '{{ p.extra.clm_id }}' ? 'true' : 'false'"
+          class="font-mono text-xs text-[#f3e5c0] underline decoration-white/30 underline-offset-2 transition-colors hover:text-white">{{ p.extra.clm_id }}</a>
       </td>
       <td class="whitespace-nowrap p-3 align-top">
         <span class="status-badge {{ p.extra.status }}">{{ p.extra.status_label }}</span>
@@ -64,7 +74,10 @@
       </td>
     </tr>
     {% endfor %}
-  {{ table::advanced_table_end(footer="Řazení a filtr se promítají do adresy — výřez dat jde poslat odkazem.") }}
+  {{ table::advanced_table_end(
+    footer="Řazení, filtr i otevřený detail se promítají do adresy — výřez dat jde poslat odkazem.",
+    empty_text="Žádné tvrzení neodpovídá zadanému filtru.",
+    inspector=true) }}
 
   {{ ui::back_link_footer(url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"), label="Zpět na celý dossier") }}
 </main>

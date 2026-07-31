@@ -142,6 +142,11 @@
      copy-pasted in every template. */
   .stat-tile { border-radius: 0.5rem; border: 1px solid var(--border); padding: 0.75rem; text-align: center; }
   .stat-tile-value { font-size: 1.25rem; font-weight: 700; }
+  /* Zvýraznění řádku, jehož detail je právě v postranním panelu.
+     Levý pruh, ne změna pozadí: pruh nekoliduje se střídavým zebra
+     podbarvením řádků a zůstane viditelný i na sudém řádku. */
+  tbody tr.is-inspected { box-shadow: inset 3px 0 0 0 #f3e5c0; }
+
   .stat-tile-label { margin-top: 0.25rem; font-size: 0.75rem; color: var(--text-faint); }
   .stat-tile-link { display: block; text-decoration: none; transition: border-color 0.15s, background-color 0.15s; }
   .stat-tile-link:hover, .stat-tile-link:focus-visible { border-color: var(--accent); background-color: rgb(255 255 255 / 0.03); }

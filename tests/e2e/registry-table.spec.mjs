@@ -117,3 +117,61 @@ test.describe("adresář dossierů", () => {
     expect(parsed[0]).toBeGreaterThanOrEqual(parsed[parsed.length - 1]);
   });
 });
+
+test.describe("inspektor záznamu", () => {
+  const REG = "/dossiers/andrej-babis/claims/";
+
+  test("otevře detail vedle seznamu, aniž by seznam zmizel", async ({ page }) => {
+    // Celý smysl pohledu master-detail: uživatel neztratí kontext, ve
+    // kterém záznam našel. Kdyby se seznam schoval, byla by to jen
+    // pomalejší cesta na detailní stránku.
+    await page.goto(REG);
+    const rowsBefore = await page.locator("#claims-registry tbody tr:visible").count();
+    await page.locator("#claims-registry tbody a[href*='clm-01']").first().click();
+    await expect(page.locator('[role="region"]')).toBeVisible();
+    expect(await page.locator("#claims-registry tbody tr:visible").count()).toBe(rowsBefore);
+  });
+
+  test("panel ukazuje hodnoty z téhož řádku, ne z druhého zdroje", async ({ page }) => {
+    await page.goto(REG);
+    const row = page.locator("#claims-registry tbody tr").first();
+    const summary = (await row.locator("td").nth(2).innerText()).trim().replace(/\s+/g, " ");
+    await row.locator("a").first().click();
+    const panel = page.locator('[role="region"]');
+    await expect(panel).toBeVisible();
+    await expect(panel).toContainText(summary.slice(0, 40));
+  });
+
+  test("otevřený detail jde poslat odkazem", async ({ page }) => {
+    await page.goto(REG);
+    await page.locator("#claims-registry tbody a[href*='clm-02']").first().click();
+    await expect(page).toHaveURL(/inspect=CLM-02/);
+
+    await page.goto(`${REG}?inspect=CLM-02`);
+    await expect(page.locator('[role="region"]')).toBeVisible();
+    await expect(page.locator('[role="region"] h3')).toHaveText("CLM-02");
+  });
+
+  test("Esc zavře panel a vrátí fokus na řádek", async ({ page }) => {
+    // Bez vrácení fokusu skončí uživatel na klávesnici na začátku stránky
+    // a musí se k místu, kde byl, znovu proklikat.
+    await page.goto(REG);
+    await page.locator("#claims-registry tbody a[href*='clm-03']").first().click();
+    await expect(page.locator('[role="region"]')).toBeVisible();
+    await page.keyboard.press("Escape");
+    await expect(page.locator('[role="region"]')).toBeHidden();
+    const focused = await page.evaluate(() => document.activeElement?.textContent?.trim());
+    expect(focused).toBe("CLM-03");
+  });
+
+  test("bez JavaScriptu vede odkaz na kanonickou stránku", async ({ browser }) => {
+    // Progresivní vylepšení: bez skriptu se panel nevykreslí a odkaz musí
+    // fungovat jako odkaz, ne jako mrtvý ovládací prvek.
+    const context = await browser.newContext({ javaScriptEnabled: false });
+    const page = await context.newPage();
+    await page.goto(REG);
+    await page.locator("#claims-registry tbody a[href*='clm-01']").first().click();
+    await expect(page).toHaveURL(/\/claims\/clm-01\//);
+    await context.close();
+  });
+});

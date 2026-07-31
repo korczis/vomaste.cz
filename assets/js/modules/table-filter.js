@@ -99,11 +99,14 @@ export function registerTableFilter() {
       columns: [],
       hiddenColumns: {},
       exportName: "",
+      inspected: "",
+      inspectedFields: [],
+      inspectedHref: "",
 
       // Klíče v URL jsou názvy atributů (?type=…), aby adresa popisovala,
       // co filtruje, a ne pořadí selectů v šabloně.
       spec() {
-        const spec = Object.assign({}, SPEC);
+        const spec = Object.assign({}, SPEC, this.$root.dataset.inspector ? { inspect: "" } : {});
         this.selectFacets.forEach(function (attr) {
           spec[attr] = "";
         });
@@ -144,7 +147,28 @@ export function registerTableFilter() {
             this.sortDir = state.dir === "desc" ? "desc" : "asc";
           }
         }
+        // Přečíst PŘED apply(): apply() volá sync(), a ten zapisuje
+        // this.inspected (v tu chvíli prázdné) zpátky do adresy, čímž by
+        // parametr ze sdíleného odkazu smazal dřív, než ho stihneme použít.
+        const wantedInspect = this.$root.dataset.inspector && this.urlState
+          ? readState(this.spec()).inspect
+          : "";
+
         this.apply();
+
+        if (this.$root.dataset.inspector) {
+          // Esc zavírá panel odkudkoli z tabulky — očekávané chování,
+          // které nesmí záviset na tom, jestli má fokus zrovna tlačítko.
+          this.$root.addEventListener("keydown", (e) => {
+            if (e.key === "Escape" && this.inspected) {
+              e.stopPropagation();
+              this.closeInspector();
+            }
+          });
+          // Otevření ze sdíleného odkazu až tady, aby se řádek nehledal
+          // mezi ještě neinicializovanými.
+          if (wantedInspect) this.openInspector(wantedInspect);
+        }
       },
 
       // Hlavičky se na tlačítka povyšují až tady. Šablona vypisuje prostý
@@ -379,6 +403,42 @@ export function registerTableFilter() {
         this.download(blob, "vyrez.json");
       },
 
+      // Panel se plní Z ŘÁDKU: popisky ze záhlaví, hodnoty z buněk téhož
+      // řádku. Nevzniká tedy druhá kopie dat, která by se mohla rozejít
+      // s tabulkou — je to tatáž data, jen jinak vypsaná.
+      openInspector(id) {
+        const row = this.rows.find((r) => r.dataset.inspectId === id);
+        if (!row) return;
+        this.inspected = id;
+        this.inspectedFields = this.columns
+          .filter((c) => !this.hiddenColumns[c.index])
+          .map((c) => ({
+            label: c.label,
+            value: (row.cells[c.index]?.textContent ?? "").trim().replace(/\s+/g, " "),
+          }))
+          .filter((f) => f.value);
+        const link = row.querySelector("a[href]");
+        this.inspectedHref = link ? link.getAttribute("href") : "";
+        this.rows.forEach((r) => {
+          r.classList.toggle("is-inspected", r === row);
+        });
+        this.sync();
+        this.$nextTick(() => this.$refs.inspectorClose?.focus());
+      },
+
+      closeInspector() {
+        // Fokus se vrací na řádek, ze kterého se panel otevřel. Bez toho
+        // by uživatel na klávesnici skončil na začátku stránky a musel se
+        // k místu, kde byl, znovu proklikat.
+        const row = this.rows.find((r) => r.dataset.inspectId === this.inspected);
+        this.inspected = "";
+        this.inspectedFields = [];
+        this.inspectedHref = "";
+        this.rows.forEach((r) => r.classList.remove("is-inspected"));
+        this.sync();
+        row?.querySelector("button, a")?.focus();
+      },
+
       sync() {
         if (!this.urlState) return;
         const state = {
@@ -387,6 +447,7 @@ export function registerTableFilter() {
           dir: this.sortKey ? this.sortDir : "asc",
           f: this.facet,
         };
+        if (this.$root.dataset.inspector) state.inspect = this.inspected;
         this.selectFacets.forEach((attr) => {
           state[attr] = this.facetValues[attr];
         });
