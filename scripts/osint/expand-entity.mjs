@@ -59,6 +59,7 @@
 import { writeFileSync, readdirSync, readFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { slugify, findPossibleDuplicate } from "./lib/entity-dedupe.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const ENTITIES_DIR = join(ROOT, "content", "entities");
@@ -196,15 +197,7 @@ function extract(record) {
 
 // --- ids and weights ------------------------------------------------------
 
-function slugify(text) {
-  return String(text)
-    .normalize("NFD")
-    .replace(/[̀-ͯ]/g, "")
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-|-$/g, "")
-    .slice(0, 48);
-}
+// --- registry state -------------------------------------------------------
 
 const entityFiles = readdirSync(ENTITIES_DIR).filter(
   (f) => f.endsWith(".md") && f !== "_index.md",
@@ -213,35 +206,6 @@ const existingIds = new Set(entityFiles.map((f) => f.replace(/\.md$/, "")));
 const entityTexts = new Map(
   entityFiles.map((f) => [f.replace(/\.md$/, ""), readFileSync(join(ENTITIES_DIR, f), "utf8")]),
 );
-
-/* A slug match is not the only way a page can already exist for the same
-   real-world subject. content/entities/gmrgas-cz.md and vencalek.md were
-   written by hand for exactly the company and person this script derives
-   from IČO 28274318 — different slugs, same subjects. Creating a second
-   page for them would quietly split the registry.
-   
-   So look for the IČO anywhere in an existing page (front matter or prose),
-   and for people fall back to a surname match. Both are heuristics and both
-   only WARN: the script cannot know whether two pages are the same person,
-   and silently merging them would be worse than a duplicate. */
-function findPossibleDuplicate(candidate) {
-  if (candidate.ico) {
-    for (const [id, text] of entityTexts) {
-      if (id !== candidate.id && text.includes(candidate.ico)) return { id, why: `zmiňuje IČO ${candidate.ico}` };
-    }
-    return null;
-  }
-  const surname = (candidate.slugSource ?? candidate.name ?? "").split(/\s+/).pop();
-  if (!surname || surname.length < 4) return null;
-  const needle = slugify(surname);
-  for (const [id, text] of entityTexts) {
-    if (id === candidate.id) continue;
-    if (id.includes(needle) || slugify(text.match(/^title = "(.*)"$/m)?.[1] ?? "").includes(needle)) {
-      return { id, why: `podobné příjmení (${surname})` };
-    }
-  }
-  return null;
-}
 
 /* content/entities/_index.md is sort_by = "weight", so a page without one
    sorts unpredictably. Continue past the current maximum rather than
@@ -364,7 +328,7 @@ plan(
   "company",
   `${data.name} (IČO ${data.ico})`,
   (self, w) => renderCompany({ ...data, id: self.id }, w),
-  { ico: data.ico },
+  { ico: data.ico, name: data.name },
 );
 
 for (const o of data.officers) {
@@ -402,7 +366,7 @@ const created = [];
 const skipped = [];
 const suspected = [];
 for (const p of planned.values()) {
-  const dup = findPossibleDuplicate(p);
+  const dup = findPossibleDuplicate(p, entityTexts);
   if (dup) {
     suspected.push({ ...p, duplicateOf: dup.id, why: dup.why });
     continue;
