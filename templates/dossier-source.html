@@ -17,7 +17,7 @@
       {% if page.extra.published %}
       <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Publikováno</th><td class="p-3">{{ page.extra.published }}</td></tr>
       {% else %}
-      <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Publikováno</th><td class="p-3 text-white/40">neuvedeno</td></tr>
+      <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Publikováno</th><td class="p-3 text-white/55">neuvedeno</td></tr>
       {% endif %}
       <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Zařazeno do dossieru</th><td class="p-3">{{ page.extra.retrieved }}</td></tr>
       {% if page.extra.family %}
@@ -27,7 +27,7 @@
 
   {% if page.extra.claims %}
   <section class="mb-8" aria-labelledby="src-claims-h">
-    <h2 id="src-claims-h" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/40">Podporuje tvrzení ({{ page.extra.claims | length }})</h2>
+    <h2 id="src-claims-h" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Podporuje tvrzení ({{ page.extra.claims | length }})</h2>
     {% set tvrzeni = get_section(path="dossiers/" ~ dossier_slug ~ "/claims/_index.md") %}
     <ul class="space-y-3">
       {% for c in page.extra.claims %}
@@ -41,7 +41,7 @@
           <p class="mt-1 text-sm leading-relaxed text-white/70">{{ clm_page.extra.summary }}</p>
         </li>
         {% else %}
-        <li class="rounded-lg border border-white/10 p-4 font-mono text-xs text-white/40">{{ c }}</li>
+        <li class="rounded-lg border border-white/10 p-4 font-mono text-xs text-white/55">{{ c }}</li>
         {% endif %}
       {% endfor %}
     </ul>
@@ -61,7 +61,7 @@
   {% endfor %}
   {% if same_outlet | length > 0 %}
   <section class="mt-8 rounded-lg border border-white/10 bg-white/[0.03] p-4">
-    <h2 class="mb-2 text-xs font-semibold uppercase tracking-wide text-white/40">Další zdroje téhož vydavatele ({{ page.extra.outlet }})</h2>
+    <h2 class="mb-2 text-xs font-semibold uppercase tracking-wide text-white/55">Další zdroje téhož vydavatele ({{ page.extra.outlet }})</h2>
     <p class="mb-3 text-xs text-white/50">Zdroje jednoho vydavatele se vzájemně nepočítají jako nezávislá potvrzení.</p>
     <ul class="flex flex-wrap gap-2">
       {% for s in same_outlet %}
@@ -71,7 +71,7 @@
   </section>
   {% endif %}
 
-  <p class="mt-8 text-xs text-white/40">
+  <p class="mt-8 text-xs text-white/55">
     Provenance: <a href="https://github.com/korczis/vomaste.cz/commits/master/content/{{ page.relative_path }}" class="underline decoration-white/20 underline-offset-2 hover:text-white/70">historie změn tohoto záznamu v Gitu</a>
     — kdy byl zdroj zařazen a kdy naposledy ověřen.
   </p>
@@ -86,7 +86,7 @@
   {% endfor %}
   {% if siblings | length > 0 %}
   <section class="mt-10 rounded-lg border border-white/10 bg-white/[0.03] p-4">
-    <h2 class="mb-2 text-xs font-semibold uppercase tracking-wide text-white/40">Stejná zdrojová rodina ({{ page.extra.family }})</h2>
+    <h2 class="mb-2 text-xs font-semibold uppercase tracking-wide text-white/55">Stejná zdrojová rodina ({{ page.extra.family }})</h2>
     <p class="mb-3 text-xs text-white/50">Tyto zdroje čerpají ze stejného původu dat — počítají se jako jedno potvrzení, ne jako nezávislá vícenásobná potvrzení.</p>
     <ul class="flex flex-wrap gap-2">
       {% for s in siblings %}

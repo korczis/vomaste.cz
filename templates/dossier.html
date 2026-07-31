@@ -65,7 +65,7 @@
     {{ ui::stat_tile(value=counts.entities_total, label="Entit v grafu", url=get_url(path="@/entities/_index.md")) }}
     {{ ui::stat_tile(value=counts.relations_total, label="Vztahů v grafu", url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/relations/_index.md")) }}
   </section>
-  <p class="-mt-8 mb-8 text-xs text-white/40">Metriky se počítají automaticky z registrů při buildu (viz <code>scripts/dossier/generate-stats.mjs</code>) — nejsou ručně přepisovány.</p>
+  <p class="-mt-8 mb-8 text-xs text-white/55">Metriky se počítají automaticky z registrů při buildu (viz <code>scripts/dossier/generate-stats.mjs</code>) — nejsou ručně přepisovány.</p>
 
   {#- Plain anchor jump-nav, not ARIA tabs: this page is one continuous
       document, not a set of discrete tab panels, so real tablist/tabpanel
@@ -85,7 +85,7 @@
 
   <section class="mb-12 rounded-lg border border-white/10 p-4">
     <div class="mb-3 flex items-center justify-between">
-      <h2 class="text-xs font-semibold uppercase tracking-wide text-white/40">Rozložení podle ověřenosti</h2>
+      <h2 class="text-xs font-semibold uppercase tracking-wide text-white/55">Rozložení podle ověřenosti</h2>
       <button type="button" class="fs-btn" data-fs-target="chart-status-box" title="Zobrazit na celou obrazovku" aria-label="Zobrazit na celou obrazovku">⛶</button>
     </div>
     <div id="chart-status-box" class="fs-box flex items-center justify-center">
@@ -104,11 +104,11 @@
   {% set gap_section = get_section(path="dossiers/" ~ dossier_slug ~ "/gaps/_index.md") %}
   {% set claim_section = get_section(path="dossiers/" ~ dossier_slug ~ "/claims/_index.md") %}
   <section aria-labelledby="graf-vztahu-heading" id="graf-vztahu" class="mb-12">
-    <h2 id="graf-vztahu-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/40">Graf vztahů — kanonický registr</h2>
+    <h2 id="graf-vztahu-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Graf vztahů — kanonický registr</h2>
     <p class="mb-4 text-xs text-white/50">Toto NENÍ zjednodušená legenda ke grafu níže — je to týž kanonický registr, ze kterého se graf vykresluje. Každá entita a každý vztah má vlastní stránku; funguje bez JavaScriptu a při selhání CDN Cytoscape.js beze změny. Plný, filtrovatelný <a href="{{ get_url(path='@/dossiers/' ~ dossier_slug ~ '/relations/_index.md') | safe }}" class="text-[#f3e5c0] underline">registr vztahů</a> tohoto dossieru a globální, dossier-nezávislý <a href="{{ get_url(path='@/entities/_index.md') | safe }}" class="text-[#f3e5c0] underline">registr entit</a> mají vlastní routu.</p>
 
     <div class="mb-6 flex items-center justify-between">
-      <span class="text-xs text-white/40">Klikněte na uzel nebo hranu pro otevření jeho stránky.</span>
+      <span class="text-xs text-white/55">Klikněte na uzel nebo hranu pro otevření jeho stránky.</span>
       <button type="button" class="fs-btn" data-fs-target="graph-view-box" title="Zobrazit na celou obrazovku" aria-label="Zobrazit na celou obrazovku">⛶</button>
     </div>
     <div id="graph-view-box" class="fs-box mb-8 overflow-hidden rounded-lg border border-white/10">
@@ -120,14 +120,14 @@
     </div>
     <noscript><p class="mb-8 text-xs text-white/50">Interaktivní graf vyžaduje JavaScript. Použijte textový registr níže nebo <a href="{{ get_url(path='@/dossiers/' ~ dossier_slug ~ '/relations/_index.md') | safe }}" class="text-[#f3e5c0] underline">registr vztahů</a>.</p></noscript>
 
-    <h3 class="mb-2 text-xs font-semibold uppercase tracking-wide text-white/40">Tematické okruhy</h3>
+    <h3 class="mb-2 text-xs font-semibold uppercase tracking-wide text-white/55">Tematické okruhy</h3>
     <div class="mb-6 grid gap-3 sm:grid-cols-2">
       {% for c in graph.clusters %}
       <div class="rounded-lg border border-white/10 bg-white/[0.02] p-3">
         <p class="font-semibold text-white">{{ c.label }}</p>
         <p class="mt-1 text-xs text-white/50">{{ c.description }}</p>
         {% if c.gaps and c.gaps | length > 0 %}
-        <p class="mt-2 text-xs text-white/40">Otevřené mezery:
+        <p class="mt-2 text-xs text-white/55">Otevřené mezery:
           {% for g in c.gaps %}
             {% set gap_page = gap_section.pages | filter(attribute="extra.gap_id", value=g) | first %}
             {% if gap_page %}<a href="{{ gap_page.permalink | safe }}" class="text-[#f3e5c0] no-underline hover:underline">{{ g }}</a>{% if not loop.last %}, {% endif %}{% endif %}
@@ -138,7 +138,7 @@
       {% endfor %}
     </div>
 
-    <h3 class="mb-2 text-xs font-semibold uppercase tracking-wide text-white/40">Všechny vztahy ({{ relation_section.pages | length }})</h3>
+    <h3 class="mb-2 text-xs font-semibold uppercase tracking-wide text-white/55">Všechny vztahy ({{ relation_section.pages | length }})</h3>
     <ul class="space-y-1.5 text-sm text-white/70">
       {% for r in relation_section.pages %}
       {% set source_entity = entity_section.pages | filter(attribute="extra.entity_id", value=r.extra.source) | first %}
@@ -161,13 +161,13 @@
 
   {% if section.extra.cases %}
   <section aria-labelledby="cases-heading" class="mb-12">
-    <h2 id="cases-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/40">Kauzy v přehledu</h2>
+    <h2 id="cases-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Kauzy v přehledu</h2>
     <div class="grid gap-4 sm:grid-cols-3">
       {% for c in section.extra.cases %}
       <a href="#{{ c.anchor }}" class="group flex flex-col rounded-xl border border-white/10 bg-white/[0.03] p-4 no-underline transition-colors hover:border-white/20 hover:bg-white/[0.06]">
         <span class="status-badge {{ c.status }} w-fit">{{ c.label }}</span>
         <span class="font-semibold text-white group-hover:text-[#f3e5c0]">{{ c.title }}</span>
-        <span class="text-xs text-white/40">{{ c.period }}</span>
+        <span class="text-xs text-white/55">{{ c.period }}</span>
         <span class="mt-2 text-sm text-white/70">{{ c.summary }}</span>
       </a>
       {% endfor %}
@@ -177,12 +177,12 @@
 
   {% if section.extra.timeline %}
   <section aria-labelledby="timeline-heading" class="mb-12">
-    <h2 id="timeline-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/40">Časová osa</h2>
+    <h2 id="timeline-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Časová osa</h2>
     <ol class="timeline">
       {% for e in section.extra.timeline %}
       <li>
         <span class="timeline-dot {{ e.dot }}"></span>
-        <p class="text-xs text-white/40">{{ e.date }}</p>
+        <p class="text-xs text-white/55">{{ e.date }}</p>
         <a href="#{{ e.anchor }}" class="text-sm font-medium text-white no-underline hover:text-[#f3e5c0] hover:underline">{{ e.title }}</a>
       </li>
       {% endfor %}
@@ -197,14 +197,14 @@
   {% set updates = load_data(path="data/dossiers/" ~ dossier_slug ~ "/updates.toml") %}
   {% if updates.updates %}
   <section aria-labelledby="updates-heading" class="mb-12 mt-12">
-    <h2 id="updates-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/40">Historie aktualizací</h2>
+    <h2 id="updates-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Historie aktualizací</h2>
     <p class="mb-3 text-xs text-white/50">Auditovatelný, append-only záznam skutečně provedených kontrol a změn — datum se zvyšuje jen po reálném ověření, ne automaticky.</p>
     <ol class="space-y-3">
       {% for u in updates.updates | reverse %}
       <li class="rounded-lg border border-white/10 bg-white/[0.02] p-4">
         <p class="font-mono text-xs text-[#f3e5c0]">{{ u.date }}</p>
         <p class="mt-1 text-sm text-white/70">{{ u.summary }}</p>
-        <p class="mt-2 text-xs text-white/40">
+        <p class="mt-2 text-xs text-white/55">
           {%- if u.added_claims and u.added_claims | length > 0 %}Nová tvrzení: {{ u.added_claims | join(sep=", ") }}{% endif -%}
           {%- if u.reviewed_sources and u.reviewed_sources | length > 0 %} · Zkontrolované zdroje: {{ u.reviewed_sources | length }}{% endif -%}
         </p>
@@ -214,7 +214,7 @@
   </section>
   {% endif %}
 
-  <footer class="mt-12 border-t border-white/10 pt-6 text-xs text-white/40">
+  <footer class="mt-12 border-t border-white/10 pt-6 text-xs text-white/55">
     <p>Tvrzení na této stránce vycházejí výhradně z citovaných veřejných zdrojů (viz tabulka Zdroje výše). Opravy: <a href="https://github.com/korczis/vomaste.cz/issues/new" class="underline">GitHub issue</a> (veřejný kanál).</p>
   </footer>
 </main>

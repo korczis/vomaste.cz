@@ -18,7 +18,7 @@
   {% set pages = section.pages | filter(attribute="extra.group", value=group.id) %}
   {%- if pages | length > 0 %}
   <section id="{{ group.id }}" aria-labelledby="{{ group.id }}-heading" class="mb-10">
-    <h2 id="{{ group.id }}-heading" class="mb-1 text-xs font-semibold uppercase tracking-wide text-white/40">{{ group.label }}</h2>
+    <h2 id="{{ group.id }}-heading" class="mb-1 text-xs font-semibold uppercase tracking-wide text-white/55">{{ group.label }}</h2>
     <p class="mb-4 text-sm text-white/60">{{ group.lead }}</p>
     <div class="grid gap-3 sm:grid-cols-2">
       {%- for p in pages %}

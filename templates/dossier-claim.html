@@ -20,7 +20,7 @@
 
   {% if page.extra.sources %}
   <section class="mb-8" aria-labelledby="clm-sources-h">
-    <h2 id="clm-sources-h" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/40">Citované zdroje ({{ page.extra.sources | length }})</h2>
+    <h2 id="clm-sources-h" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Citované zdroje ({{ page.extra.sources | length }})</h2>
     {% set zdroje = get_section(path="dossiers/" ~ dossier_slug ~ "/sources/_index.md") %}
     <ul class="space-y-3">
       {% for s in page.extra.sources %}
@@ -30,7 +30,7 @@
           <div class="flex flex-wrap items-baseline gap-2">
             <a href="{{ src_page.permalink | safe }}" class="id-chip font-mono text-xs font-bold text-[#f3e5c0] no-underline hover:underline">{{ s }}</a>
             <span class="text-sm font-semibold text-white">{{ src_page.extra.outlet }}</span>
-            {% if src_page.extra.published %}<span class="text-xs text-white/40">{{ src_page.extra.published }}</span>{% endif %}
+            {% if src_page.extra.published %}<span class="text-xs text-white/55">{{ src_page.extra.published }}</span>{% endif %}
           </div>
           {% if src_page.description %}<p class="mt-1 text-sm leading-relaxed text-white/60">{{ src_page.description }}</p>{% endif %}
           <p class="mt-2 flex flex-wrap gap-3 text-xs">
@@ -39,7 +39,7 @@
           </p>
         </li>
         {% else %}
-        <li class="rounded-lg border border-white/10 p-4 font-mono text-xs text-white/40">{{ s }}</li>
+        <li class="rounded-lg border border-white/10 p-4 font-mono text-xs text-white/55">{{ s }}</li>
         {% endif %}
       {% endfor %}
     </ul>
@@ -55,12 +55,12 @@
   {% endfor %}
   {% if parent_case %}
   <section class="mb-8" aria-labelledby="clm-case-h">
-    <h2 id="clm-case-h" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/40">Kontext kauzy</h2>
+    <h2 id="clm-case-h" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Kontext kauzy</h2>
     <div class="rounded-lg border border-white/10 bg-white/[0.03] p-4">
       <p class="flex flex-wrap items-baseline gap-2">
         <a href="{{ parent_case.permalink | safe }}" class="id-chip font-mono text-xs font-bold text-[#f3e5c0] no-underline hover:underline">{{ parent_case.extra.case_id }}</a>
         <span class="text-sm font-semibold text-white">{{ parent_case.title }}</span>
-        <span class="text-xs text-white/40">{{ parent_case.extra.period }}</span>
+        <span class="text-xs text-white/55">{{ parent_case.extra.period }}</span>
         <span class="status-badge {{ parent_case.extra.status }}">{{ parent_case.extra.label }}</span>
       </p>
       {% if parent_case.extra.summary %}<p class="mt-1 text-sm leading-relaxed text-white/60">{{ parent_case.extra.summary }}</p>{% endif %}
@@ -89,7 +89,7 @@
   {% endfor %}
   {% if backing | length > 0 %}
   <section class="mb-8" aria-labelledby="clm-rel-h">
-    <h2 id="clm-rel-h" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/40">Vztahy v grafu opřené o toto tvrzení ({{ backing | length }})</h2>
+    <h2 id="clm-rel-h" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Vztahy v grafu opřené o toto tvrzení ({{ backing | length }})</h2>
     <ul class="space-y-2">
       {% for rp in backing %}
       <li class="rounded-lg border border-white/10 bg-white/[0.03] p-3 text-sm">
@@ -103,7 +103,7 @@
   {% if page.extra.subjects %}
   {% set registry = load_data(path="data/dossiers.toml") %}
   <section class="mb-8" aria-labelledby="clm-subj-h">
-    <h2 id="clm-subj-h" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/40">Subjekty</h2>
+    <h2 id="clm-subj-h" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Subjekty</h2>
     <p class="flex flex-wrap gap-2">
       {% for subj in page.extra.subjects %}
         {% for d in registry.dossiers %}
@@ -120,7 +120,7 @@
     {{ page.content | safe }}
   </article>
 
-  <p class="mt-8 text-xs text-white/40">
+  <p class="mt-8 text-xs text-white/55">
     Provenance: <a href="https://github.com/korczis/vomaste.cz/commits/master/content/{{ page.relative_path }}" class="underline decoration-white/20 underline-offset-2 hover:text-white/70">historie změn tohoto záznamu v Gitu</a>
     — kdy tvrzení vzniklo, kdy a proč se měnil jeho text či stav.
   </p>

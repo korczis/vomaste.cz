@@ -78,6 +78,27 @@ reviewed, build-gated changes:
   shell template" invariant (§5, §50) already holds in practice, not just
   in theory.
 
+### Closed since this audit (2026-07-31)
+
+Two items this audit listed as missing have since been built. They are
+recorded here rather than deleted, because an audit that keeps claiming a
+capability is absent causes the same waste as one that claims a capability
+exists: on 2026-07-31 two sessions independently built a sortable table
+component (`dossier-directory.js` and `advancedTable()`), each unaware the
+other was doing it. Re-reading a stale gap list is one way that happens.
+
+- **Command palette (§40) — BUILT** (coop T-020). `assets/js/modules/
+  global-search.js` + `search-core.js`: `/` and Cmd/Ctrl+K focus the bar,
+  diacritics-insensitive matching, ID-first ranking, grouped results.
+- **Advanced registry table toolbar (§17–§19) — BUILT** (coop T-019,
+  `5a2aba4`, `ea8f3b3`, `5d06502`). `templates/macros/table.html` +
+  `assets/js/modules/table-filter.js`: search, chip and select facets,
+  column sort, column visibility, CSV/JSON export of the visible slice,
+  and filter state reproduced in the URL. Used by the dossier directory
+  and the claims/sources/gaps/cases registries. The `registry-card` grid
+  this audit described is gone from those five views.
+  Pagination is deliberately absent — see the module header for why.
+
 ### What is genuinely NOT built yet (the real gap vs. the master prompt)
 
 - **No secondary sidebar / explorer layer.** Today's shell is a single
@@ -88,12 +109,7 @@ reviewed, build-gated changes:
   does not exist.
 - **No right context panel** (§15) -- clicking a record goes straight to
   its canonical detail page; there is no preview-panel pattern.
-- **No command palette** (§40).
 - **No density modes** (§39).
-- **No advanced registry table toolbar** (search/facets/sort/column
-  visibility/permalink) -- current registry index pages are the
-  `ui::registry-card` grid pattern, not a sortable/filterable table
-  (§17–§19).
 - **No mobile bottom navigation** distinct from the drawer (§25) -- the
   `<noscript>` fallback and the drawer are the only two mobile paths
   today.

@@ -99,7 +99,7 @@
           takže bez toho by se řadilo podle věty, ne podle jména dossieru. -#}
       <th scope="row" class="p-3 font-normal align-top" data-sort-value="{{ d.title }}">
         <a href="{{ d.permalink | safe }}" class="font-semibold text-white no-underline hover:underline">{{ d.title }}</a>
-        <span class="mt-0.5 block max-w-md text-xs text-white/40">{{ d.description | truncate(length=110) }}</span>
+        <span class="mt-0.5 block max-w-md text-xs text-white/55">{{ d.description | truncate(length=110) }}</span>
       </th>
       <td class="p-3 tabular-nums text-white/70" data-sort-value="{{ counts.claims_total }}">{{ counts.claims_total }}</td>
       <td class="p-3 tabular-nums text-white/70" data-sort-value="{{ counts.sources_total }}">{{ counts.sources_total }}</td>
@@ -113,12 +113,12 @@
     {{ table::advanced_table_end(footer="Počty generuje scripts/dossier/generate-stats.mjs při každém buildu z reálných registrů daného dossieru, ne z čísel zapsaných do šablony. Sloupec „Prověřeno“ je datum poslední redakční kontroly, ne datum poslední změny souboru.") }}
   </section>
 
-  <p class="mb-10 text-xs text-white/40">
+  <p class="mb-10 text-xs text-white/55">
     Počet mezer není měřítko kvality. Otevřená mezera je otázka, kterou citované zdroje nezodpověděly, a je vedena schválně — dossier bez mezer by znamenal buď hotovou věc, nebo zamlčenou nejistotu.
   </p>
 
   {% if aggregate_dossiers | length > 0 %}
-  <h2 class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/40">Agregované pohledy</h2>
+  <h2 class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Agregované pohledy</h2>
   <p class="mb-3 text-xs text-white/50">Generované průniky nad výše uvedenými dossiery — ne samostatné dossiery, žádná vlastní kanonická data.</p>
   <div class="grid gap-4 sm:grid-cols-2">
     {% for sub_path in aggregate_dossiers %}

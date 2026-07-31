@@ -171,6 +171,10 @@ export function registerTableFilter() {
           button.addEventListener("click", () => this.sortBy(key));
           th.textContent = "";
           th.appendChild(button);
+          // Řaditelný, ale zatím neseřazený sloupec má hlásit "none".
+          // Bez toho odečítač neví, že se sloupcem jde řadit — vidoucí to
+          // pozná podle ikony, nevidomý nemá z čeho.
+          th.setAttribute("aria-sort", "none");
         });
       },
 

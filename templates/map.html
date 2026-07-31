@@ -20,20 +20,20 @@
   </div>
 
   <section aria-labelledby="dossier-catalog-heading" class="mb-12">
-    <h2 id="dossier-catalog-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/40">Katalog dossierů</h2>
+    <h2 id="dossier-catalog-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Katalog dossierů</h2>
     <div class="grid gap-3 sm:grid-cols-2">
       {% for d in graph.dossiers %}
       {% set dossier_page = get_section(path="dossiers/" ~ d.slug ~ "/_index.md") %}
       <a href="{{ dossier_page.permalink | safe }}" class="registry-card">
         <span class="font-semibold text-white">{{ d.title }}</span>
-        <span class="mt-1 text-xs text-white/40">typ: {{ d.dossier_type }} · {{ d.node_count }} entit · {{ d.edge_count }} vztahů</span>
+        <span class="mt-1 text-xs text-white/55">typ: {{ d.dossier_type }} · {{ d.node_count }} entit · {{ d.edge_count }} vztahů</span>
       </a>
       {% endfor %}
     </div>
   </section>
 
   <section aria-labelledby="global-graph-heading" class="mb-12">
-    <h2 id="global-graph-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/40">Globální graf</h2>
+    <h2 id="global-graph-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Globální graf</h2>
     <p class="mb-4 text-xs text-white/50">Agregovaná projekce lokálních grafů výše uvedených dossierů — ne automaticky rozšiřovaná investigace. Klikněte na uzel nebo hranu pro otevření jeho stránky.</p>
 
     {#- Dvě vrstvy téhož datasetu, obě generované:
@@ -49,7 +49,7 @@
         class="cy-chip">Celý registr ({{ graph.full.nodes | length }} uzlů / {{ graph.full.edges | length }} hran)</button>
       <button type="button" class="fs-btn ml-auto" data-fs-target="global-map-box" title="Zobrazit na celou obrazovku" aria-label="Zobrazit na celou obrazovku">⛶</button>
     </div>
-    <p class="mb-4 text-xs text-white/40" data-graph-layer-note>
+    <p class="mb-4 text-xs text-white/55" data-graph-layer-note>
       Kurátorská vrstva ukazuje entity a doložené vazby mezi nimi. „Celý registr"
       přidá jako uzly i tvrzení, zdroje, kauzy a mezery — a jako hrany jen to,
       co daný záznam sám deklaruje (tvrzení cituje zdroj, mezera se ptá na
@@ -68,7 +68,7 @@
   </section>
 
   <section aria-labelledby="global-text-heading" class="mb-12">
-    <h2 id="global-text-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/40">Textová alternativa — všechny vztahy ({{ graph.edges | length }})</h2>
+    <h2 id="global-text-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Textová alternativa — všechny vztahy ({{ graph.edges | length }})</h2>
     {% set entities = get_section(path="entities/_index.md") %}
     <ul class="space-y-1.5 text-sm text-white/70">
       {% for e in graph.edges %}

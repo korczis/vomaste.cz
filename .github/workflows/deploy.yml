@@ -49,6 +49,33 @@ jobs:
       - name: Full build (all validators, generators, exports and verifiers)
         run: npm run build
 
+      # Prohlížečové testy běží AŽ PO buildu a PŘED nahráním artefaktu:
+      # potřebují hotové public/ a jejich smyslem je nepustit ven build,
+      # ve kterém nefunguje řazení, filtr nebo přístupnost. Nejsou součástí
+      # `npm run build` schválně — plný build je předcommitová brána a
+      # prodlužovat ho o prohlížeč by zdražilo každý commit, který se
+      # HTML netýká.
+      #
+      # Chrome se instaluje explicitně: Playwright na macOS 13 (vývojářský
+      # stroj) odmítá stáhnout vlastní build, takže konfigurace používá
+      # systémový prohlížeč přes `channel`. Aby se CI chovalo stejně jako
+      # lokál, instaluje se i tady Chrome, ne Playwright chromium.
+      - name: Install Chrome for browser tests
+        run: npx playwright install --with-deps chrome
+
+      - name: Browser tests (interakce, přístupnost, mobilní viewport)
+        run: npm run test:e2e
+
+      - name: Upload test artifacts on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: |
+            playwright-report/
+            test-results/
+          retention-days: 7
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
         with:

@@ -68,7 +68,7 @@
     <div class="rounded-2xl border border-white/10 bg-white/[0.02] p-4">
       <div class="flex flex-wrap items-end gap-3">
         <div class="min-w-[14rem] flex-1">
-          <label for="entity-search" class="mb-1 block text-xs uppercase tracking-wide text-white/40">Hledat entitu</label>
+          <label for="entity-search" class="mb-1 block text-xs uppercase tracking-wide text-white/55">Hledat entitu</label>
           <input
             id="entity-search"
             type="search"
@@ -80,7 +80,7 @@
         </div>
 
         <div>
-          <span id="entity-group-label" class="mb-1 block text-xs uppercase tracking-wide text-white/40">Seskupit podle</span>
+          <span id="entity-group-label" class="mb-1 block text-xs uppercase tracking-wide text-white/55">Seskupit podle</span>
           {#- Otevírání menu řídí Flowbite (data-dropdown-*), hodnotu drží
               Alpine. Jedna komponenta, jeden vlastník na každou věc —
               nikdy obojí na totéž (viz docs/coop/TASKS.md, T-014). -#}
@@ -92,7 +92,7 @@
             class="inline-flex w-full items-center justify-between gap-2 rounded-lg border border-white/10 bg-black/40 px-3 py-2 text-xs text-white sm:w-48"
           >
             <span x-text="groupings.find(g => g.id === groupBy).label"></span>
-            <svg class="h-3 w-3 text-white/40" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <svg class="h-3 w-3 text-white/55" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
             </svg>
           </button>
@@ -115,7 +115,7 @@
         </div>
 
         <div>
-          <span class="mb-1 block text-xs uppercase tracking-wide text-white/40">Role</span>
+          <span class="mb-1 block text-xs uppercase tracking-wide text-white/55">Role</span>
           <div class="flex flex-wrap gap-1" role="group" aria-label="Filtr podle role v publikaci">
             <button type="button" x-on:click="toggleRole('subject')" :aria-pressed="role === 'subject' ? 'true' : 'false'"
               :class="role === 'subject' ? 'border-[#f3e5c0]/40 bg-[#f3e5c0]/10 text-[#f3e5c0]' : 'border-white/10 bg-black/40 text-white/60 hover:text-white'"
@@ -164,11 +164,11 @@
             {% if p.extra.publication_role == "subject" %}
             <span class="rounded bg-[#f3e5c0]/10 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-[#f3e5c0]">subjekt dossieru</span>
             {% else %}
-            <span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-white/40">kontextová</span>
+            <span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-white/55">kontextová</span>
             {% endif %}
           </span>
           <span class="mt-1 font-semibold text-white">{{ p.title }}</span>
-          <span class="mt-1 text-xs text-white/40">
+          <span class="mt-1 text-xs text-white/55">
             {{ p.extra.dossiers | length }} dossier{% if p.extra.dossiers | length != 1 %}ů{% endif %}
             {%- if p.extra.government_office %} · {{ p.extra.government_office }}{% endif %}
           </span>

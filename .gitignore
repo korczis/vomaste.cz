@@ -13,3 +13,7 @@ static/search-index.json
 # ze stejných front matter jako stránky; stejný důvod jako u search-indexu.
 static/data/
 .build-lock/
+
+# Playwright artefakty (T-021) — reporty a trace z padlych behu
+test-results/
+playwright-report/

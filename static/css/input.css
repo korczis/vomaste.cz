@@ -16,7 +16,12 @@
     --border-strong: rgba(255, 255, 255, 0.2);
     --text: #ffffff;
     --text-muted: rgba(255, 255, 255, 0.6);
-    --text-faint: rgba(255, 255, 255, 0.4);
+    /* 0.55, ne 0.4: na tmavém podkladu dává 0.4 kontrast 3,66:1, zatímco
+     WCAG 2 AA vyžaduje u běžného textu 4,5:1. Odhalil axe v prohlížečovém
+     testu (tests/e2e/accessibility.spec.mjs) — statická kontrola šablon
+     to zachytit nemohla, protože kontrast jde spočítat až nad vykresleným
+     DOM s aplikovaným CSS. 0.55 dává 6,25:1. */
+  --text-faint: rgba(255, 255, 255, 0.55);
     --accent: #f3e5c0;
     --accent-strong: #d4af37;
     --focus-ring: #f3e5c0;

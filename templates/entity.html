@@ -16,9 +16,9 @@
     {% if page.extra.publication_role == "subject" %}
     <span class="rounded bg-[#f3e5c0]/10 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-[#f3e5c0]">subjekt autorizovaného dossieru</span>
     {% else %}
-    <span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-white/40">kontextová entita</span>
+    <span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-white/55">kontextová entita</span>
     {% endif %}
-    <span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-white/40">coverage: {{ page.extra.coverage_state }}</span>
+    <span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-white/55">coverage: {{ page.extra.coverage_state }}</span>
   </p>
 
   {#- Vysvětlení, čím tahle stránka je, patří do šablony, ne do každého
@@ -28,7 +28,7 @@
   <div class="mb-6 rounded-lg border border-white/10 bg-white/[0.02] p-4 text-sm leading-relaxed text-white/60">
     <p><strong class="text-white/80">Kontextová entita.</strong> Je tu proto, že se přímo objevuje v citovaném zpravodajství o autorizovaném tématu — ne proto, že by ji tenhle web zkoumal. Stránka agreguje výhradně vazby a záznamy zveřejněné v dossierech níže; <strong class="text-white/80">žádný profil nad rámec toho kontextu tu není a nevznikne</strong>.</p>
     <p class="mt-2">Výskyt v seznamu není podezření ani hodnocení. Co která vazba skutečně tvrdí, je vidět u jednotlivých vztahů a tvrzení, každé s vlastním <a href="{{ get_url(path='@/koncepty/_index.md') | safe }}#stav" class="text-[#f3e5c0] underline">stavem doloženosti</a>.</p>
-    <p class="mt-2 text-xs text-white/40">Stav dossieru této entity: <strong class="text-white/60">{% if page.extra.dossier_status == "authorized" %}autorizováno{% else %}neautorizováno{% endif %}</strong>. Vlastní dossier vyžaduje výslovné, datované rozhodnutí vlastníka webu zapsané v <a href="{{ get_url(path='@/dokumentace/agents.md') | safe }}" class="text-[#f3e5c0] underline">autorizačním logu</a> — nikdy se neodvozuje automaticky z toho, že se entita často vyskytuje.</p>
+    <p class="mt-2 text-xs text-white/55">Stav dossieru této entity: <strong class="text-white/60">{% if page.extra.dossier_status == "authorized" %}autorizováno{% else %}neautorizováno{% endif %}</strong>. Vlastní dossier vyžaduje výslovné, datované rozhodnutí vlastníka webu zapsané v <a href="{{ get_url(path='@/dokumentace/agents.md') | safe }}" class="text-[#f3e5c0] underline">autorizačním logu</a> — nikdy se neodvozuje automaticky z toho, že se entita často vyskytuje.</p>
   </div>
   {% else %}
   <div class="mb-6 rounded-lg border border-[#f3e5c0]/25 bg-[#f3e5c0]/[0.04] p-4 text-sm leading-relaxed text-white/70">
@@ -92,7 +92,7 @@
       z registru tvrzení, nic se tu neformuluje znovu. -#}
   {%- if page.extra.claims %}
   <section class="mb-8" aria-labelledby="entity-claims-heading">
-    <h2 id="entity-claims-heading" class="mb-1 text-xs font-semibold uppercase tracking-wide text-white/40">Proč je tato entita v dossieru</h2>
+    <h2 id="entity-claims-heading" class="mb-1 text-xs font-semibold uppercase tracking-wide text-white/55">Proč je tato entita v dossieru</h2>
     <p class="mb-3 text-xs text-white/50">Tvrzení z registru, která ji zmiňují. Stav u každého říká, čím je doložené — ne jak je závažné.</p>
     <ul class="space-y-2">
       {%- for d in page.extra.dossiers %}
@@ -129,7 +129,7 @@
   {% if outgoing | length > 0 or incoming | length > 0 %}
   {% set dossier_page = get_section(path="dossiers/" ~ d ~ "/_index.md") %}
   <section class="mb-8">
-    <h2 class="mb-2 text-xs font-semibold uppercase tracking-wide text-white/40">Vztahy v dossieru „{{ dossier_page.title }}"</h2>
+    <h2 class="mb-2 text-xs font-semibold uppercase tracking-wide text-white/55">Vztahy v dossieru „{{ dossier_page.title }}"</h2>
     <ul class="space-y-1.5 text-sm">
       {% for r in outgoing %}
       {% set target_entity = entities.pages | filter(attribute="extra.entity_id", value=r.extra.target) | first %}

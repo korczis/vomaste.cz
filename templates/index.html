@@ -116,7 +116,7 @@
           <li>{{ b | safe }}</li>
           {%- endfor %}
         </ul>
-        <span class="mt-4 block text-xs text-white/40">{{ c.title }} &middot; celá stránka</span>
+        <span class="mt-4 block text-xs text-white/55">{{ c.title }} &middot; celá stránka</span>
       </a>
       {%- endfor %}
     </div>
@@ -158,7 +158,7 @@
       {%- if pair_src %}
       <a href="{{ pair_src.permalink | safe }}" class="id-chip rounded bg-white/5 px-2 py-1 font-mono text-xs text-[#93c5fd] no-underline hover:bg-white/10">{{ pair_src.extra.src_id }}</a>
       {%- endif %}
-      <span class="text-white/40">každé tvrzení je jedno kliknutí od zdroje, ze kterého vychází</span>
+      <span class="text-white/55">každé tvrzení je jedno kliknutí od zdroje, ze kterého vychází</span>
     </div>
     {%- endif %}
 
@@ -183,7 +183,7 @@
       <h3 class="text-xl font-bold text-white">{{ dossier.title }}</h3>
       <p class="mt-2 text-sm leading-relaxed text-white/70">{{ dossier.description }}</p>
       {% if dossier.extra.updated or dossier.extra.reviewed_at %}
-      <p class="mt-3 text-xs text-white/40">
+      <p class="mt-3 text-xs text-white/55">
         {%- if dossier.extra.updated %}Naposledy aktualizováno: {{ dossier.extra.updated }}{% endif -%}
         {%- if dossier.extra.updated and dossier.extra.reviewed_at %} &middot; {% endif -%}
         {%- if dossier.extra.reviewed_at %}Naposledy ověřeno proti zdrojům: {{ dossier.extra.reviewed_at }}{% endif -%}
@@ -251,7 +251,7 @@
         <summary class="flex cursor-pointer items-baseline gap-3 p-4 text-sm marker:content-none [&::-webkit-details-marker]:hidden">
           <span class="font-mono text-xs font-bold text-[#f3e5c0]">{{ u.date }}</span>
           <span class="min-w-0 flex-1 truncate text-white/75 group-open:whitespace-normal group-open:text-white">{{ u.summary | truncate(length=110) }}</span>
-          <span class="text-white/40 transition-transform group-open:rotate-90" aria-hidden="true">›</span>
+          <span class="text-white/55 transition-transform group-open:rotate-90" aria-hidden="true">›</span>
         </summary>
         <div class="border-t border-white/10 p-4 text-sm leading-relaxed text-white/70">
           <p>{{ u.summary }}</p>
@@ -285,19 +285,19 @@
       <p class="p-4 text-sm leading-relaxed text-white/80">{{ demo.extra.summary }}</p>
       <div class="grid gap-px border-t border-white/10 bg-white/10 sm:grid-cols-3">
         <a href="{{ demo.permalink | safe }}" class="group bg-black p-4 no-underline transition-colors hover:bg-white/[0.04]">
-          <span class="font-mono text-[0.65rem] uppercase tracking-widest text-white/40">Krok 1</span>
+          <span class="font-mono text-[0.65rem] uppercase tracking-widest text-white/55">Krok 1</span>
           <span class="mt-1 block text-sm font-semibold text-white group-hover:text-[#f3e5c0]">Tvrzení a jeho stav →</span>
           <span class="mt-1 block text-xs text-white/50">Proč nese „{{ demo.extra.status_label }}" a co k tomu bylo potřeba doložit.</span>
         </a>
         {%- if demo_src %}
         <a href="{{ demo_src.permalink | safe }}" class="group bg-black p-4 no-underline transition-colors hover:bg-white/[0.04]">
-          <span class="font-mono text-[0.65rem] uppercase tracking-widest text-white/40">Krok 2</span>
+          <span class="font-mono text-[0.65rem] uppercase tracking-widest text-white/55">Krok 2</span>
           <span class="mt-1 block text-sm font-semibold text-white group-hover:text-[#f3e5c0]">Zdroj {{ demo_src.extra.src_id }} →</span>
           <span class="mt-1 block text-xs text-white/50">{{ demo_src.extra.outlet }}{% if demo_src.extra.published %}, {{ demo_src.extra.published }}{% endif %} — s přímým odkazem na článek.</span>
         </a>
         {%- endif %}
         <a href="https://github.com/korczis/vomaste.cz/commits/master/content/{{ demo.relative_path }}" class="group bg-black p-4 no-underline transition-colors hover:bg-white/[0.04]">
-          <span class="font-mono text-[0.65rem] uppercase tracking-widest text-white/40">Krok 3</span>
+          <span class="font-mono text-[0.65rem] uppercase tracking-widest text-white/55">Krok 3</span>
           <span class="mt-1 block text-sm font-semibold text-white group-hover:text-[#f3e5c0]">Historie změn v Gitu →</span>
           <span class="mt-1 block text-xs text-white/50">Kdy záznam vznikl a co se v něm kdy změnilo.</span>
         </a>
@@ -344,23 +344,23 @@
     <h2 id="faq-heading" class="text-center text-2xl font-bold text-white sm:text-3xl">Časté otázky</h2>
     <div class="mt-8 space-y-3">
       <details class="group rounded-xl border border-white/10 bg-white/[0.03] open:border-[#f3e5c0]/30">
-        <summary class="flex cursor-pointer items-center justify-between gap-3 p-5 text-sm font-semibold text-white marker:content-none [&::-webkit-details-marker]:hidden">Proč bych tomuhle webu měl věřit?<span class="text-white/40 transition-transform group-open:rotate-90" aria-hidden="true">›</span></summary>
+        <summary class="flex cursor-pointer items-center justify-between gap-3 p-5 text-sm font-semibold text-white marker:content-none [&::-webkit-details-marker]:hidden">Proč bych tomuhle webu měl věřit?<span class="text-white/55 transition-transform group-open:rotate-90" aria-hidden="true">›</span></summary>
         <p class="border-t border-white/10 p-5 text-sm leading-relaxed text-white/70">Neměl. To je celá pointa: každé tvrzení nese stav ověření a proklik na zdroj, každá změna je commit ve <a href="https://github.com/korczis/vomaste.cz" class="underline decoration-white/30 underline-offset-2 hover:text-white">veřejném repozitáři</a> a build shodí obsah, který pravidla poruší. Ověřte si to — nevěřte tomu.</p>
       </details>
       <details class="group rounded-xl border border-white/10 bg-white/[0.03] open:border-[#f3e5c0]/30">
-        <summary class="flex cursor-pointer items-center justify-between gap-3 p-5 text-sm font-semibold text-white marker:content-none [&::-webkit-details-marker]:hidden">Našel jsem chybu nebo mrtvý odkaz. Co s tím?<span class="text-white/40 transition-transform group-open:rotate-90" aria-hidden="true">›</span></summary>
+        <summary class="flex cursor-pointer items-center justify-between gap-3 p-5 text-sm font-semibold text-white marker:content-none [&::-webkit-details-marker]:hidden">Našel jsem chybu nebo mrtvý odkaz. Co s tím?<span class="text-white/55 transition-transform group-open:rotate-90" aria-hidden="true">›</span></summary>
         <p class="border-t border-white/10 p-5 text-sm leading-relaxed text-white/70">Každá stránka má v patičce „✎ Navrhnout opravu" — vede na přesný zdrojový soubor na GitHubu. Kdo nechce pull request, napíše na <a href="https://github.com/korczis/vomaste.cz/issues/new" class="underline decoration-white/30 underline-offset-2 hover:text-white">veřejnou GitHub issue</a>. Postup a pravidla: <a href="https://github.com/korczis/vomaste.cz/blob/master/CONTRIBUTING.md" class="underline decoration-white/30 underline-offset-2 hover:text-white">CONTRIBUTING.md</a>.</p>
       </details>
       <details class="group rounded-xl border border-white/10 bg-white/[0.03] open:border-[#f3e5c0]/30">
-        <summary class="flex cursor-pointer items-center justify-between gap-3 p-5 text-sm font-semibold text-white marker:content-none [&::-webkit-details-marker]:hidden">Jsem subjektem dossieru a nesouhlasím s obsahem.<span class="text-white/40 transition-transform group-open:rotate-90" aria-hidden="true">›</span></summary>
+        <summary class="flex cursor-pointer items-center justify-between gap-3 p-5 text-sm font-semibold text-white marker:content-none [&::-webkit-details-marker]:hidden">Jsem subjektem dossieru a nesouhlasím s obsahem.<span class="text-white/55 transition-transform group-open:rotate-90" aria-hidden="true">›</span></summary>
         <p class="border-t border-white/10 p-5 text-sm leading-relaxed text-white/70">Máte právo na opravu, vyjádření i protidůkazy — pošlete je na <a href="https://github.com/korczis/vomaste.cz/issues/new" class="underline decoration-white/30 underline-offset-2 hover:text-white">veřejnou GitHub issue</a>. Relevantní a doložené reakce se do záznamů propisují (viditelně, s citací), věcné chyby se opravují a každá změna zůstává v historii. Redakční veto tím nevzniká — a platí to i obráceně: web nikdy netvrdí vinu, procesní výsledky vede odděleně od merita.</p>
       </details>
       <details class="group rounded-xl border border-white/10 bg-white/[0.03] open:border-[#f3e5c0]/30">
-        <summary class="flex cursor-pointer items-center justify-between gap-3 p-5 text-sm font-semibold text-white marker:content-none [&::-webkit-details-marker]:hidden">Můžu si na tomhle postavit vlastní dossier?<span class="text-white/40 transition-transform group-open:rotate-90" aria-hidden="true">›</span></summary>
+        <summary class="flex cursor-pointer items-center justify-between gap-3 p-5 text-sm font-semibold text-white marker:content-none [&::-webkit-details-marker]:hidden">Můžu si na tomhle postavit vlastní dossier?<span class="text-white/55 transition-transform group-open:rotate-90" aria-hidden="true">›</span></summary>
         <p class="border-t border-white/10 p-5 text-sm leading-relaxed text-white/70">Ano — kód, validátory, šablony i datový model jsou <a href="https://github.com/korczis/vomaste.cz/blob/master/LICENSE.md" class="underline decoration-white/30 underline-offset-2 hover:text-white">public domain</a>. Forkněte repozitář a řiďte se <a href="https://github.com/korczis/vomaste.cz/blob/master/README.md" class="underline decoration-white/30 underline-offset-2 hover:text-white">README</a>; redakční a právní odpovědnost za vlastní obsah je vaše. Do tohoto webu se nový subjekt přidává jen s autorizací v <a href="https://github.com/korczis/vomaste.cz/blob/master/AGENTS.md" class="underline decoration-white/30 underline-offset-2 hover:text-white">append-only logu</a>.</p>
       </details>
       <details class="group rounded-xl border border-white/10 bg-white/[0.03] open:border-[#f3e5c0]/30">
-        <summary class="flex cursor-pointer items-center justify-between gap-3 p-5 text-sm font-semibold text-white marker:content-none [&::-webkit-details-marker]:hidden">Mám citlivé podklady ke kauze. Kam je poslat?<span class="text-white/40 transition-transform group-open:rotate-90" aria-hidden="true">›</span></summary>
+        <summary class="flex cursor-pointer items-center justify-between gap-3 p-5 text-sm font-semibold text-white marker:content-none [&::-webkit-details-marker]:hidden">Mám citlivé podklady ke kauze. Kam je poslat?<span class="text-white/55 transition-transform group-open:rotate-90" aria-hidden="true">›</span></summary>
         <p class="border-t border-white/10 p-5 text-sm leading-relaxed text-white/70"><strong class="text-white">Zatím nikam.</strong> Projekt nemá důvěrný intake kanál a nebude předstírat opak — GitHub, e-mail i Git historie jsou veřejné a trvalé a nechrání identitu zdroje. Poctivé vysvětlení limitů: <a href="https://github.com/korczis/vomaste.cz/blob/master/docs/constitution/OPEN_INTELLIGENCE_COMMONS.md" class="underline decoration-white/30 underline-offset-2 hover:text-white">konstituce, § 4–5</a>.</p>
       </details>
     </div>
@@ -398,12 +398,12 @@
           {%- endfor %}
           {%- set last_update = update_dates | sort | last | default(value="") %}
           {%- if last_update %}
-          <p class="mt-4 text-xs text-white/40">Poslední aktualizace obsahu: <span class="whitespace-nowrap">{{ last_update }}</span></p>
+          <p class="mt-4 text-xs text-white/55">Poslední aktualizace obsahu: <span class="whitespace-nowrap">{{ last_update }}</span></p>
           {%- endif %}
         </div>
 
         <nav aria-label="Obsah" class="text-sm">
-          <h3 class="font-mono text-xs font-bold uppercase tracking-widest text-white/40">Obsah</h3>
+          <h3 class="font-mono text-xs font-bold uppercase tracking-widest text-white/55">Obsah</h3>
           <ul class="mt-3 space-y-2">
             <li><a href="{{ get_url(path='@/dossiers/_index.md') | safe }}" class="text-white/70 no-underline hover:text-white hover:underline">Dossiery</a></li>
             <li><a href="{{ get_url(path='@/entities/_index.md') | safe }}" class="text-white/70 no-underline hover:text-white hover:underline">Entity</a></li>
@@ -414,7 +414,7 @@
         </nav>
 
         <nav aria-label="Pravidla" class="text-sm">
-          <h3 class="font-mono text-xs font-bold uppercase tracking-widest text-white/40">Pravidla</h3>
+          <h3 class="font-mono text-xs font-bold uppercase tracking-widest text-white/55">Pravidla</h3>
           <ul class="mt-3 space-y-2">
             <li><a href="{{ get_url(path='@/koncepty/bezpecnostni-hranice.md') | safe }}" class="text-white/70 no-underline hover:text-white hover:underline">Bezpečnostní hranice</a></li>
             <li><a href="{{ get_url(path='@/koncepty/public-domain.md') | safe }}" class="text-white/70 no-underline hover:text-white hover:underline">Licence obsahu a kódu</a></li>
@@ -424,7 +424,7 @@
         </nav>
 
         <nav aria-label="Zapojení" class="text-sm">
-          <h3 class="font-mono text-xs font-bold uppercase tracking-widest text-white/40">Zapojení</h3>
+          <h3 class="font-mono text-xs font-bold uppercase tracking-widest text-white/55">Zapojení</h3>
           <ul class="mt-3 space-y-2">
             <li><a href="https://github.com/korczis/vomaste.cz" class="text-white/70 no-underline hover:text-white hover:underline">Zdrojový kód a data <span class="text-white/30" aria-hidden="true">&#8599;</span></a></li>
             <li><a href="https://github.com/korczis/vomaste.cz/blob/master/CONTRIBUTING.md" class="text-white/70 no-underline hover:text-white hover:underline">Jak přispět <span class="text-white/30" aria-hidden="true">&#8599;</span></a></li>
@@ -439,7 +439,7 @@
           base.html, která je nese na každé stránce webu. Dvě patičky nad sebou
           s týmiž třemi odkazy byly přesně ten zdroj zmatku, který tahle
           přestavba odstraňuje. -#}
-      <p class="mt-12 border-t border-white/10 pt-6 text-xs leading-relaxed text-white/40">Fakta vycházejí výhradně z veřejně publikovaného zpravodajství. Tenhle web nerozhoduje o vině ani nevině — rozlišuje, čím je co doloženo.</p>
+      <p class="mt-12 border-t border-white/10 pt-6 text-xs leading-relaxed text-white/55">Fakta vycházejí výhradně z veřejně publikovaného zpravodajství. Tenhle web nerozhoduje o vině ani nevině — rozlišuje, čím je co doloženo.</p>
     </div>
   </footer>
 </main>

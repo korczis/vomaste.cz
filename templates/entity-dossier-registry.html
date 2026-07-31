@@ -55,7 +55,7 @@
     {% for p in filtered %}
     <a href="{{ p.permalink | safe }}" class="registry-card">
       <span class="font-mono text-xs text-[#f3e5c0]">{{ p.extra.clm_id }}</span>
-      {% if p.extra.subjects | length > 1 %}<span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.6rem] uppercase tracking-wide text-white/40">sdílené</span>{% endif %}
+      {% if p.extra.subjects | length > 1 %}<span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.6rem] uppercase tracking-wide text-white/55">sdílené</span>{% endif %}
       <span class="status-badge {{ p.extra.status }} mt-1 inline-block w-fit">{{ p.extra.status_label }}</span>
       <span class="mt-2 text-sm text-white/70">{{ p.extra.summary }}</span>
     </a>
@@ -75,7 +75,7 @@
     <a href="{{ p.permalink | safe }}" class="registry-card">
       <span class="font-mono text-xs text-[#f3e5c0]">{{ p.extra.src_id }}</span>
       <span class="font-semibold text-white break-words">{{ p.extra.outlet }}</span>
-      <span class="mt-1 text-xs text-white/40">{{ p.extra.src_type }}</span>
+      <span class="mt-1 text-xs text-white/55">{{ p.extra.src_type }}</span>
       <span class="mt-2 text-sm text-white/70">{{ p.description }}</span>
     </a>
     {% endfor %}
@@ -94,7 +94,7 @@
     <a href="{{ p.permalink | safe }}" class="registry-card">
       <span class="status-badge {{ p.extra.status }} w-fit">{{ p.extra.label }}</span>
       <span class="font-semibold text-white">{{ p.extra.case_id }} — {{ p.title }}</span>
-      <span class="text-xs text-white/40">{{ p.extra.period }}</span>
+      <span class="text-xs text-white/55">{{ p.extra.period }}</span>
       <span class="mt-2 text-sm text-white/70">{{ p.extra.summary }}</span>
     </a>
     {% endfor %}
@@ -127,7 +127,7 @@
   {% endif %}
   {% endif %}
 
-  <p class="mt-8 text-xs text-white/40">Tento registr je generovaný, filtrovaný pohled nad kanonickými záznamy vedenými v <a href="{{ get_url(path='@/dossiers/' ~ canonical_slug ~ '/' ~ registry ~ '/_index.md') | safe }}" class="text-[#f3e5c0] hover:underline">společném přehledu</a> — žádný záznam zde není fyzickou kopií.</p>
+  <p class="mt-8 text-xs text-white/55">Tento registr je generovaný, filtrovaný pohled nad kanonickými záznamy vedenými v <a href="{{ get_url(path='@/dossiers/' ~ canonical_slug ~ '/' ~ registry ~ '/_index.md') | safe }}" class="text-[#f3e5c0] hover:underline">společném přehledu</a> — žádný záznam zde není fyzickou kopií.</p>
 
   {{ ui::back_link_footer(url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"), label="Zpět na dossier") }}
 </main>

@@ -48,7 +48,7 @@
       <span aria-hidden="true" class="text-white/30">&rarr;</span>
       {% if target_entity %}<a href="{{ target_entity.permalink | safe }}" class="inline-flex min-h-6 items-center font-medium text-white no-underline hover:underline">{{ target_entity.title }}</a>{% else %}<span class="text-white/50">{{ r.extra.target }}</span>{% endif %}
       {{ ui::relation_status(status=r.extra.status) }}
-      {% if r.extra.subjects | length > 1 %}<span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.6rem] uppercase tracking-wide text-white/40 ml-auto">sdílené</span>{% endif %}
+      {% if r.extra.subjects | length > 1 %}<span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.6rem] uppercase tracking-wide text-white/55 ml-auto">sdílené</span>{% endif %}
     </article>
     {% endfor %}
   </div>

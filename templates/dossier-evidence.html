@@ -42,14 +42,14 @@
   </section>
 
   <section aria-labelledby="sources-evidence-heading" class="mb-12">
-    <h2 id="sources-evidence-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/40">Zdroje &rarr; podložená tvrzení ({{ sources.pages | length }})</h2>
+    <h2 id="sources-evidence-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Zdroje &rarr; podložená tvrzení ({{ sources.pages | length }})</h2>
     <div class="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
       {% for s in sources.pages %}
       {% if s.extra.claims %}
       <div class="registry-card">
         <a href="{{ s.permalink | safe }}" class="font-mono text-xs text-[#f3e5c0] no-underline hover:underline">{{ s.extra.src_id }}</a>
         <span class="mt-1 text-sm font-semibold text-white">{{ s.extra.outlet }}</span>
-        {% if s.extra.family %}<span class="mt-1 text-xs text-white/40">rodina: {{ s.extra.family }}</span>{% endif %}
+        {% if s.extra.family %}<span class="mt-1 text-xs text-white/55">rodina: {{ s.extra.family }}</span>{% endif %}
         <span class="mt-2 flex flex-wrap gap-1">
           {% for c in s.extra.claims %}
             {% set clm_page = claims.pages | filter(attribute="extra.clm_id", value=c) | first %}

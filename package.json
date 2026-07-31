@@ -46,9 +46,13 @@
     "data:metrics": "node scripts/data/build-navigation-metrics.mjs",
     "validate:navigation-metrics": "node scripts/data/build-navigation-metrics.mjs --check",
     "verify:navigation-counts": "node scripts/data/verify-navigation-counts.mjs",
-    "build:entity-type-sections": "node scripts/dossier/build-entity-type-sections.mjs"
+    "build:entity-type-sections": "node scripts/dossier/build-entity-type-sections.mjs",
+    "test:e2e": "playwright test",
+    "test:e2e:desktop": "playwright test --project=desktop"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.12.1",
+    "@playwright/test": "^1.62.1",
     "ajv": "^8.20.0",
     "alpinejs": "^3.15.12",
     "autoprefixer": "^10.4.24",

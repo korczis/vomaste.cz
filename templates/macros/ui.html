@@ -52,7 +52,7 @@
   <p class="mt-2 text-sm text-white/60">{{ description }}</p>
   {%- endif %}
   {%- if updated or reviewed %}
-  <p class="mt-2 text-xs text-white/40">
+  <p class="mt-2 text-xs text-white/55">
     {%- if updated %}Naposledy aktualizováno: {{ updated }}{% endif -%}
     {%- if updated and reviewed %} &middot; {% endif -%}
     {%- if reviewed %}Naposledy ověřeno proti zdrojům: {{ reviewed }}{% endif -%}
@@ -62,7 +62,7 @@
 {%- endmacro page_header -%}
 
 {%- macro back_link_footer(url, label) -%}
-<footer class="mt-12 border-t border-white/10 pt-6 text-xs text-white/40">
+<footer class="mt-12 border-t border-white/10 pt-6 text-xs text-white/55">
   <p><a href="{{ url | safe }}" class="underline">&larr; {{ label }}</a></p>
 </footer>
 {%- endmacro back_link_footer -%}
@@ -150,7 +150,7 @@
     </nav>
     {%- endif %}
 
-    <div class="flex flex-col gap-4 border-t border-white/10 pt-6 text-xs leading-relaxed text-white/45 sm:flex-row sm:items-start sm:justify-between">
+    <div class="flex flex-col gap-4 border-t border-white/10 pt-6 text-xs leading-relaxed text-white/55 sm:flex-row sm:items-start sm:justify-between">
       <p class="sm:max-w-md">
         Kód, tooling i původní obsah:
         <a href="{{ repo }}/blob/master/LICENSE.md" class="text-white/70 underline decoration-white/25 underline-offset-2 hover:text-white hover:decoration-white/60">The&nbsp;Unlicense</a>

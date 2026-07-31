@@ -27,10 +27,21 @@ export function initSidebarAria() {
   function sync() {
     if (mq.matches) {
       sidebar.removeAttribute("aria-hidden");
+      sidebar.removeAttribute("inert");
     } else if (!isOpen()) {
       // Only on mobile and only when the drawer is actually closed —
       // Flowbite's own show()/hide() already set this on every toggle.
       sidebar.setAttribute("aria-hidden", "true");
+      // aria-hidden samo nestačí: panel dál obsahuje odkazy, na které se
+      // dá dostat tabulátorem, takže klávesnicí šlo zabloudit do zavřeného
+      // a neviditelného menu. `inert` odebere celý podstrom z pořadí
+      // tabulátoru i ze stromu přístupnosti najednou. Odhalil axe
+      // v mobilním projektu prohlížečových testů (aria-hidden-focus);
+      // statická kontrola šablony to najít nemohla, protože atribut
+      // nastavuje až tenhle skript za běhu.
+      sidebar.setAttribute("inert", "");
+    } else {
+      sidebar.removeAttribute("inert");
     }
     for (var i = 0; i < toggles.length; i++) {
       toggles[i].setAttribute("aria-expanded", isOpen() ? "true" : "false");

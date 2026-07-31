@@ -75,7 +75,7 @@
 <div class="relative overflow-x-auto rounded-lg border border-white/10 bg-white/[0.03]{% if extra_class %} {{ extra_class }}{% endif %}"{% if record_type %} data-record-type="{{ record_type }}"{% endif %}{% if searchable %} x-data="advancedTable()"{% endif %}{% if url_state %} data-url-state="true"{% endif %}{% if facet_attrs | length > 0 %} data-select-facets="{{ facet_attrs | join(sep='|') }}"{% endif %}{% if export_name %} data-export-name="{{ export_name }}"{% endif %}>
   {%- if count != "" or searchable %}
   <div class="flex flex-wrap items-center justify-between gap-3 border-b border-white/10 px-3 py-2.5">
-    <h2 id="{{ id }}-caption" class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-white/40">
+    <h2 id="{{ id }}-caption" class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-white/55">
       {{ caption }}
       {%- if count != "" %}
       <span class="rounded-full bg-white/5 px-2 py-0.5 font-mono text-[0.65rem] normal-case text-white/50"{% if searchable %} x-text="visible + ' / ' + total" aria-live="polite"{% endif %}>{{ count }}</span>
@@ -99,7 +99,7 @@
         <svg class="h-3 w-3" aria-hidden="true" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/></svg>
       </button>
       <div id="{{ id }}-columns" class="z-20 hidden w-52 rounded-lg border border-white/10 bg-[#0b0f14] p-2 shadow-lg">
-        <p class="px-2 pb-1 text-[0.65rem] uppercase tracking-wide text-white/40">Zobrazené sloupce</p>
+        <p class="px-2 pb-1 text-[0.65rem] uppercase tracking-wide text-white/55">Zobrazené sloupce</p>
         <ul class="space-y-0.5 text-sm text-white/70">
           {%- for col in columns %}
           <li>
@@ -126,7 +126,7 @@
       <div id="{{ id }}-export" class="z-20 hidden w-56 rounded-lg border border-white/10 bg-[#0b0f14] p-2 text-sm shadow-lg">
         <button type="button" @click="exportCsv()" class="block w-full rounded px-2 py-1.5 text-left text-white/70 hover:bg-white/5 hover:text-white">CSV (tabulkový procesor)</button>
         <button type="button" @click="exportJson()" class="block w-full rounded px-2 py-1.5 text-left text-white/70 hover:bg-white/5 hover:text-white">JSON</button>
-        <p class="px-2 pt-1 text-[0.65rem] leading-snug text-white/40">Stáhne jen to, co je právě vidět. Celý dataset je na <code>/data/</code>.</p>
+        <p class="px-2 pt-1 text-[0.65rem] leading-snug text-white/55">Stáhne jen to, co je právě vidět. Celý dataset je na <code>/data/</code>.</p>
       </div>
       {%- endif %}
     </div>
@@ -192,7 +192,7 @@
   <p x-show="visible === 0" x-cloak class="px-3 py-6 text-center text-sm text-white/50">{{ empty_text }}</p>
   {%- endif %}
   {%- if footer %}
-  <p class="border-t border-white/10 px-3 py-2 text-xs text-white/40">{{ footer }}</p>
+  <p class="border-t border-white/10 px-3 py-2 text-xs text-white/55">{{ footer }}</p>
   {%- endif %}
 </div>
 {%- endmacro advanced_table_end -%}
