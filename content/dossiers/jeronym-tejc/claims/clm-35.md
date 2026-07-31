@@ -12,7 +12,7 @@ clm_id = "CLM-35"
 status = "status-single"
 status_label = "1 ZDROJ"
 summary = "Tejc podle České justice soudkyni vytýká, že rozhodovala, přestože ze spisu vyplývaly informace o paranoidní schizofrenii a drogové závislosti otce."
-sources = ["SRC-18"]
+sources = ["SRC-06"]
 subjects = ["tejc"]
 +++
 

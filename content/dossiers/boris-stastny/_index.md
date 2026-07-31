@@ -112,6 +112,12 @@ vedení Národní sportovní agentury a reportovaný rozpor v uváděných
 
 **Aktuální stav dossieru**: autorizovaná témata rozpracována — tvrzení vycházejí výhradně ze zdrojů otevřených a přečtených 2026-07-30 (viz registr zdrojů); co se doložit nepodařilo, eviduje registr mezer. Autorizace definuje rozsah, necertifikuje reportáže.
 
+## Kdo to je a čím je pokryt {#kdo}
+
+Identifikace subjektu a rozsah pokrytí jsou popsané v úvodu výše. Zmínka
+v dárcovském rejstříku dossieru macinka-turek se touto stránkou
+nerozšiřuje — jde o samostatné, zde autorizované téma.
+
 ## Registr tvrzení {#registr-tvrzeni}
 | <a id="clm-06"></a>[CLM-06](@/dossiers/boris-stastny/claims/clm-06.md) | Zaměstnanci Úřadu vlády našli 22. ledna 2026 při běžném úklidu v jednacím sále vlády ve Strakově akademii chytré nahrávací zařízení. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-03](@/dossiers/boris-stastny/sources/src-03.md) [SRC-04](@/dossiers/boris-stastny/sources/src-04.md) [SRC-06](@/dossiers/boris-stastny/sources/src-06.md) |
 | <a id="clm-07"></a>[CLM-07](@/dossiers/boris-stastny/claims/clm-07.md) | Šlo o přístroj značky Plaud ve formátu kreditní karty, který umožňuje nahrávat konverzace, odesílat je na internetové servery a pomocí umělé inteligence je převádět na text. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-03](@/dossiers/boris-stastny/sources/src-03.md) [SRC-04](@/dossiers/boris-stastny/sources/src-04.md) [SRC-05](@/dossiers/boris-stastny/sources/src-05.md) |

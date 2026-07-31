@@ -15,7 +15,7 @@ status = "status-single"
 label = "Sledované téma"
 summary = "Pozice k EU cílům elektromobility — viz tvrzení CLM-15, CLM-16, CLM-17, CLM-18."
 claims = ["CLM-40", "CLM-41", "CLM-42", "CLM-43", "CLM-44", "CLM-45", "CLM-46"]
-sources = ["SRC-26", "SRC-28", "SRC-27", "SRC-30", "SRC-29", "SRC-31"]
+sources = ["SRC-26", "SRC-10", "SRC-27", "SRC-30", "SRC-29", "SRC-31"]
 subjects = ["havlicek"]
 +++
 

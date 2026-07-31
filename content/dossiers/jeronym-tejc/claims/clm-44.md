@@ -12,7 +12,7 @@ clm_id = "CLM-44"
 status = "status-quote"
 status_label = "CITACE"
 summary = "Tejc při vyjádření ve sněmovně 2. července 2026, kdy zpochybnil oprávnění soudu vydat předběžné opatření, současně uvedl: „Přes tento nesouhlas já i vláda rozhodnutí Ústavního soudu respektujeme a naplníme ho.“"
-sources = ["SRC-22"]
+sources = ["SRC-08"]
 subjects = ["tejc"]
 +++
 

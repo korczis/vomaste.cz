@@ -12,8 +12,8 @@ record_type = "gap"
 lang = "cs"
 gap_id = "GAP-03"
 priority = "vysoká"
-checked = "2026-07-29"
-claims = ["CLM-07", "CLM-08", "CLM-09", "CLM-19", "CLM-41", "CLM-42"]
+checked = "2026-07-31"
+claims = ["CLM-07", "CLM-08", "CLM-09", "CLM-19", "CLM-41", "CLM-42", "CLM-49"]
 +++
 
 V říjnu 2025 zveřejnil Deník N printscreeny příspěvků z let přibližně
@@ -65,3 +65,23 @@ Dossier tento bod nadále vede jako **neuzavřenou, spornou otázku** — ne
 jako potvrzený fakt v žádném směru, ať už ve prospěch, nebo v neprospěch
 pravosti příspěvků — dokud se neobjeví ověřitelná zpráva o výsledku
 forenzní verifikace.
+
+**Aktualizace 2026-07-31**: podrobnější zpráva o témže odložení
+(Romea.cz, 28. 7. 2026) cituje dozorujícího státního zástupce Jana
+Vychytu konkrétněji, než výše popsané zdroje: „Z pohledu práva jsme
+však dospěli k závěru, že k danému skutku došlo a že by byl trestným
+činem" — trestní odpovědnost ale zanikla promlčením
+([CLM-49](@/dossiers/macinka-turek/claims/clm-49.md)). Podle téhož
+zdroje policie zjištění Deníku N „ve svém faktickém jádru"
+nezpochybnila. Turek nadále autorství konkrétního komentáře odmítal a
+za některé jiné výroky se omluvil.
+
+Toto je **vyjádření dozorového orgánu v rámci promlčeného, odloženého
+prověřování — ne rozsudek soudu, ne pravomocné rozhodnutí a ne
+zjištění viny** v žádném trestněprávním smyslu; rozhodnutí je nadále
+napadnutelné stížností. Nemění to, co tato mezera sleduje — nezávislé
+**forenzní** ověření pravosti a autorství screenshotů (CLM-09) — protože
+citovaný orgán se k forenzní stránce věci nevyjadřoval, jen k tomu, zda
+by popsané jednání (pokud k němu došlo) naplňovalo znaky trestného
+činu. Mezera proto zůstává otevřená stejným způsobem jako dosud, jen
+s přesnějším popisem toho, co bylo řečeno a co ne.

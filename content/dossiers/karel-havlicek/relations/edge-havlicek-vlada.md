@@ -14,7 +14,6 @@ label = "1. místopředseda vlády a ministr průmyslu a obchodu"
 status = "contextual"
 claims = ["CLM-01"]
 sources = ["SRC-01"]
-subjects = ["havlicek"]
 +++
 
 Kontextový, strukturální vztah — dossier jej neuvádí jako vlastní doloženou investigaci, jen jako veřejně nesporné pozadí.

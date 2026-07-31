@@ -208,6 +208,12 @@ Rozsah dle `AUTH-2026-07-30-N`: škrt 21 miliard z obranného rozpočtu 2026 a s
 
 **Aktuální stav dossieru**: autorizovaná témata rozpracována — tvrzení vycházejí výhradně ze zdrojů otevřených a přečtených 2026-07-30 (viz registr zdrojů); co se doložit nepodařilo, eviduje registr mezer. Autorizace definuje rozsah, necertifikuje reportáže.
 
+## Kdo to je a čím je pokryt {#kdo}
+
+Identifikace subjektu a rozsah pokrytí jsou popsané v úvodu výše. Dossier
+vede pozice jednotlivých stran politického sporu jako atribuovaná
+stanoviska, ne jako vlastní zjištění tohoto webu.
+
 ## Registr tvrzení {#registr-tvrzeni}
 | <a id="clm-02"></a>[CLM-02](@/dossiers/jaromir-zuna/claims/clm-02.md) | Babišova vláda v lednu 2026 snížila plánované obranné výdaje na rok 2026 o 21 miliard korun — z 206 miliard (2,35 % HDP podle návrhu předchozí vlády) na zhruba 185 miliard, tedy 2,07 % HDP podle tehdejší predikce. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-03](@/dossiers/jaromir-zuna/sources/src-03.md) [SRC-04](@/dossiers/jaromir-zuna/sources/src-04.md) |
 | <a id="clm-03"></a>[CLM-03](@/dossiers/jaromir-zuna/claims/clm-03.md) | Ministr obrany Jaromír Zůna škrt hájil s tím, že se dotkne pouze nových, dosud nevyhlášených projektů, které se podle něj neruší, ale posouvají na rok 2027; všechny běžící projekty ministerstva mají pokračovat. | <span class="status-badge status-quote">CITACE</span> | [SRC-03](@/dossiers/jaromir-zuna/sources/src-03.md) [SRC-04](@/dossiers/jaromir-zuna/sources/src-04.md) |

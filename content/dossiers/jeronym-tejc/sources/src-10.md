@@ -15,7 +15,7 @@ src_type = "zpravodajství"
 url = "https://ct24.ceskatelevize.cz/clanek/domaci/vlada-navrhne-ustavnimu-soudu-aby-zamitl-prezidentovu-kompetencni-zalobu-375758"
 published = "2026-07-20"
 retrieved = "2026-07-30"
-claims = ["CLM-16", "CLM-17", "CLM-18"]
+claims = ["CLM-16", "CLM-17", "CLM-18", "CLM-47", "CLM-48", "CLM-50"]
 +++
 
 **Vláda navrhne Ústavnímu soudu, aby zamítl prezidentovu kompetenční žalobu**

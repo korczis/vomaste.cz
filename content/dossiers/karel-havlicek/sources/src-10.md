@@ -15,7 +15,7 @@ src_type = "zpravodajství"
 url = "https://ekonomickydenik.cz/zmirneni-zakazu-spalovaci-motory-sankce-havlicek/"
 published = "2026-03-25"
 retrieved = "2026-07-30"
-claims = ["CLM-16", "CLM-17"]
+claims = ["CLM-16", "CLM-17", "CLM-41", "CLM-42"]
 +++
 
 **Zmírnění u spalovacích motorů? Sankce zůstávají a hrozí průšvih, varuje Havlíček**

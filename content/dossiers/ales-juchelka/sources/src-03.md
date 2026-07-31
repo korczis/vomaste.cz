@@ -15,7 +15,7 @@ src_type = "zpravodajství"
 url = "https://www.seznamzpravy.cz/clanek/domaci-kauzy-juchelka-dal-vliv-na-dotace-poradkyni-firmu-prepsala-na-dceru-z-gymnazia-299592"
 published = "2026-03-19"
 retrieved = "2026-07-30"
-claims = ["CLM-06", "CLM-07", "CLM-17"]
+claims = ["CLM-02", "CLM-06", "CLM-07", "CLM-17"]
 +++
 
 **Juchelkova poradkyně má vliv na 17 miliard dotací. A podniká v jejich získávání**

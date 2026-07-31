@@ -12,7 +12,7 @@ clm_id = "CLM-50"
 status = "status-quote"
 status_label = "CITACE"
 summary = "Tejc svou pozici opřel i o tezi, že „Česká republika má pouze jednu zahraniční politiku, a ta nemůže být vedena souběžně vládou a prezidentem“."
-sources = ["SRC-24"]
+sources = ["SRC-10"]
 subjects = ["tejc"]
 +++
 

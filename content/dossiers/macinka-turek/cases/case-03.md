@@ -14,8 +14,8 @@ period = "2025–2026"
 status = "status-disputed"
 label = "Sporné, neuzavřeno"
 summary = "Deník N zveřejnil údajné smazané příspěvky. Turek odmítá autorství těch nejzávažnějších."
-claims = ["CLM-07", "CLM-08", "CLM-09", "CLM-19", "CLM-41", "CLM-42"]
-sources = ["SRC-15", "SRC-16", "SRC-22", "SRC-21", "SRC-47", "SRC-48"]
+claims = ["CLM-07", "CLM-08", "CLM-09", "CLM-19", "CLM-41", "CLM-42", "CLM-49"]
+sources = ["SRC-15", "SRC-16", "SRC-22", "SRC-21", "SRC-47", "SRC-48", "SRC-56"]
 subjects = ["turek"]
 +++
 

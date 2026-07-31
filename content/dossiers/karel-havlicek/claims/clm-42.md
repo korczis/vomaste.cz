@@ -12,7 +12,7 @@ clm_id = "CLM-42"
 status = "status-quote"
 status_label = "CITACE"
 summary = "K syntetickým palivům, jimiž má být kompenzováno zbývajících 10 procent emisí, Havlíček řekl: „Podívejte se někdy, co je to syntetické palivo, kolik je ho na světě, jaké jsou šance ho vyrobit, kolik to stojí.“"
-sources = ["SRC-28"]
+sources = ["SRC-10"]
 subjects = ["havlicek"]
 +++
 

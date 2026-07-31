@@ -15,7 +15,7 @@ src_type = "zpravodajství"
 url = "https://www.ceska-justice.cz/2026/07/ministr-tejc-ostre-ustavni-soud-prezident-spor/"
 published = "2026-07-02"
 retrieved = "2026-07-30"
-claims = ["CLM-14", "CLM-15"]
+claims = ["CLM-14", "CLM-15", "CLM-44", "CLM-45", "CLM-46"]
 +++
 
 **Ministr Tejc ostře: Mám velké pochybnosti o postupu Ústavního soudu ve sporu prezidenta**

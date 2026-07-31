@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 43 context entities across 22 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 44 context entities across 22 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## Agrofert (`agrofert`)
 
@@ -339,6 +339,17 @@ Generated from 43 context entities across 22 dossier(s). Regenerate with `npm ru
 - Relations: 
   - edge-pavel-mzp2026 (pavel -> mzp2026, "odmítl jmenovat", dossier: macinka-turek)
   - edge-turek-pavel (turek -> pavel, "hrozil žalobou (1/2026), nakonec nepodal (7/2026)", dossier: macinka-turek)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Pekárna Zelená louka (skupina Agrofert) (`penam-zelena-louka`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: karel-havlicek
+- Claims: CLM-05, CLM-07, CLM-08, CLM-19, CLM-21, CLM-22, CLM-25, CLM-27
+- Sources: SRC-02, SRC-04, SRC-05, SRC-11, SRC-12, SRC-13, SRC-14, SRC-15 (8 independent source families)
+- Relations: 
+  - edge-havlicek-penam-zelena-louka (havlicek -> penam-zelena-louka, "reportovaná nevymáhaná dotace (od 2019 znám audit EU)", dossier: karel-havlicek)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Národní finanční prokuratura (PNF, Francie) (`pnf`)

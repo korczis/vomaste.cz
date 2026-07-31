@@ -48,7 +48,7 @@ title = "Smazané příspěvky na Facebooku"
 status = "status-disputed"
 label = "Sporné, neuzavřeno"
 summary = "Deník N zveřejnil údajné smazané příspěvky. Turek odmítá autorství těch nejzávažnějších."
-claims = ["CLM-07", "CLM-08", "CLM-09", "CLM-19", "CLM-41", "CLM-42"]
+claims = ["CLM-07", "CLM-08", "CLM-09", "CLM-19", "CLM-41", "CLM-42", "CLM-49"]
 subjects = ["turek"]
 
 [[extra.cases]]
@@ -278,6 +278,7 @@ Každé tvrzení má stav ověřenosti a odkaz na zdroj v [registru zdrojů](#re
 | <a id="clm-46"></a>[CLM-46](@/dossiers/macinka-turek/claims/clm-46.md) | Českou společností za GMR GAS UA LLC je podle obchodního rejstříku GMR GAS s.r.o., IČO 28274318, se sídlem v Brně, zapsaná 2008 pod jménem KADAR s.r.o. a přejmenovaná 2015; mezi jejími zapsanými činnostmi je montáž, opravy a revize plynových zařízení | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-55](@/dossiers/macinka-turek/sources/src-55.md) |
 | <a id="clm-47"></a>[CLM-47](@/dossiers/macinka-turek/claims/clm-47.md) | Podle Investigace.cz je GMR GAS UA LLC ukrajinskou pobočkou české společnosti vyrábějící regulátory tlaku plynu a vedle Macinky v ní drží podíl i tato česká společnost a podnikatel Tomáš Cabal | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-17](@/dossiers/macinka-turek/sources/src-17.md) |
 | <a id="clm-48"></a>[CLM-48](@/dossiers/macinka-turek/claims/clm-48.md) | Jediným společníkem (podíl 100 %, vklad 200 000 Kč) a jednatelem GMR GAS s.r.o. je Petr Vencálek, jednatelem od prosince 2014 | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-17](@/dossiers/macinka-turek/sources/src-17.md), [SRC-55](@/dossiers/macinka-turek/sources/src-55.md) |
+| <a id="clm-49"></a>[CLM-49](@/dossiers/macinka-turek/claims/clm-49.md) | K odložení věci pro promlčení dozorující státní zástupce Jan Vychyta uvedl, že k danému skutku došlo a že by byl trestným činem, ale trestní odpovědnost zanikla promlčením; policie podle citovaného zdroje zjištění Deníku N nezpochybnila. Turek autorství konkrétního komentáře odmítal, za některé jiné výroky se omluvil | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-56](@/dossiers/macinka-turek/sources/src-56.md) |
 
 ## Politická kariéra
 

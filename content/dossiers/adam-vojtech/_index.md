@@ -170,6 +170,12 @@ Rozsah dle `AUTH-2026-07-30-Q`: kauza defibrilátorové studie FN Olomouc — re
 
 **Aktuální stav dossieru**: autorizovaná témata rozpracována — tvrzení vycházejí výhradně ze zdrojů otevřených a přečtených 2026-07-30 (viz registr zdrojů); co se doložit nepodařilo, eviduje registr mezer. Autorizace definuje rozsah, necertifikuje reportáže.
 
+## Kdo to je a čím je pokryt {#kdo}
+
+Identifikace subjektu a rozsah pokrytí jsou popsané v úvodu výše. Dossier
+odlišuje kauzu FN Olomouc (nemocnice) od případné odpovědnosti ministra
+osobně, a komentáře od zjištění tohoto webu.
+
 ## Registr tvrzení {#registr-tvrzeni}
 | <a id="clm-02"></a>[CLM-02](@/dossiers/adam-vojtech/claims/clm-02.md) | Ministerstvo zdravotnictví podalo 17. března 2026 trestní oznámení Vrchnímu státnímu zastupitelství v Olomouci kvůli implantacím kardioverterů-defibrilátorů (ICD) na I. interní klinice — kardiologické Fakultní nemocnice Olomouc. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-02](@/dossiers/adam-vojtech/sources/src-02.md) [SRC-03](@/dossiers/adam-vojtech/sources/src-03.md) |
 | <a id="clm-03"></a>[CLM-03](@/dossiers/adam-vojtech/claims/clm-03.md) | Trestní oznámení míří na postupy Fakultní nemocnice Olomouc, respektive na zaměstnance její kardiologické kliniky (bez jmenovitého označení osob) — nikoli na ministra Vojtěcha osobně; ministr, resp. jeho resort, je stranou, která oznámení podala. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-02](@/dossiers/adam-vojtech/sources/src-02.md) [SRC-03](@/dossiers/adam-vojtech/sources/src-03.md) [SRC-06](@/dossiers/adam-vojtech/sources/src-06.md) |

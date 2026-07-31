@@ -15,7 +15,7 @@ src_type = "zpravodajství"
 url = "https://www.ceska-justice.cz/2026/07/viktorka-rodice-drogy-tejc-trest-soudkyni/"
 published = "2026-07-01"
 retrieved = "2026-07-30"
-claims = ["CLM-08", "CLM-09", "CLM-10", "CLM-13"]
+claims = ["CLM-08", "CLM-09", "CLM-10", "CLM-13", "CLM-33", "CLM-35", "CLM-36"]
 +++
 
 **Soud svěřil Viktorku rodičům na drogách. Tejc chce trest pro soudkyni**
