@@ -16,6 +16,7 @@ import { registerClaimsFilter } from "./modules/claims-filter.js";
 import { registerSourcesFilter } from "./modules/sources-filter.js";
 import { registerTableFilter } from "./modules/table-filter.js";
 import { registerEntityExplorer } from "./modules/entity-explorer.js";
+import { registerDossierDirectory } from "./modules/dossier-directory.js";
 import { registerGlobalSearch, initSearchShortcuts } from "./modules/global-search.js";
 
 import { initSectionNav } from "./modules/section-nav.js";
@@ -30,6 +31,7 @@ document.addEventListener("alpine:init", function () {
   registerSourcesFilter();
   registerTableFilter();
   registerEntityExplorer();
+  registerDossierDirectory();
   registerGlobalSearch();
 });
 

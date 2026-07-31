@@ -1,5 +1,27 @@
 {% extends "base.html" %}
 {% import "macros/ui.html" as ui %}
+{% import "macros/table.html" as table %}
+
+{#-
+  Adresář dossierů. Se dvěma dossiery stačila zeď dlaždic; s dvaceti je
+  nepoužitelná — nešlo se zeptat „kde je nejvíc otevřených mezer" ani „co
+  bylo naposledy prověřené". Hlavní pohled je proto hustá tabulka přes
+  jednotnou komponentu macros/table.html, řaditelná podle každého
+  číselného sloupce.
+
+  Data: počty jsou z data/dossiers/<slug>/stats.toml, který při každém
+  buildu generuje scripts/dossier/generate-stats.mjs z reálných registrů —
+  ne z čísel napsaných do šablony. Souhrnný pás nad tabulkou se počítá
+  sečtením týchž hodnot, takže se s tabulkou nemůže rozejít.
+
+  Bez JavaScriptu zůstává celá tabulka vykreslená a čitelná; toolbar a
+  řazení jsou progresivní vylepšení (assets/js/modules/dossier-directory.js),
+  ne podmínka použitelnosti.
+
+  Agregované pohledy zůstávají v samostatné, výslovně označené sekci pod
+  tabulkou — invariant z AGENTS.md: agregát nikdy nesmí vypadat jako další
+  rovnocenný dossier o osobě.
+-#}
 
 {% block content %}
 <main class="mx-auto max-w-6xl px-6 py-12 text-white">
@@ -25,33 +47,78 @@
     {% endif %}
   {% endfor %}
 
-  <h2 class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/40">Dossiery</h2>
-  <div class="mb-10 grid gap-4 sm:grid-cols-2">
+  {#- Souhrn se sčítá z týchž stats.toml, které plní řádky tabulky. -#}
+  {% set_global t_claims = 0 %}
+  {% set_global t_sources = 0 %}
+  {% set_global t_gaps = 0 %}
+  {% set_global t_relations = 0 %}
+  {% for sub_path in entity_dossiers %}
+    {% set d = get_section(path=sub_path) %}
+    {% set counts = load_data(path="data/dossiers/" ~ d.extra.dossier ~ "/stats.toml") %}
+    {% if counts %}
+      {% set_global t_claims = t_claims + counts.claims_total %}
+      {% set_global t_sources = t_sources + counts.sources_total %}
+      {% set_global t_gaps = t_gaps + counts.gaps_total %}
+      {% set_global t_relations = t_relations + counts.relations_total %}
+    {% endif %}
+  {% endfor %}
+
+  <div class="mb-8 grid grid-cols-2 gap-3 sm:grid-cols-5">
+    {{ ui::stat_tile(value=entity_dossiers | length, label="Dossierů") }}
+    {{ ui::stat_tile(value=t_claims, label="Tvrzení celkem") }}
+    {{ ui::stat_tile(value=t_sources, label="Zdrojů celkem") }}
+    {{ ui::stat_tile(value=t_gaps, label="Otevřených mezer") }}
+    {{ ui::stat_tile(value=t_relations, label="Vztahů v grafech") }}
+  </div>
+
+  <section x-data="dossierDirectory"
+           data-sort-keys="name,claims,sources,cases,gaps,entities,relations,reviewed"
+           aria-labelledby="dossier-directory-caption"
+           class="mb-4">
+    <div class="mb-3 flex flex-wrap items-end gap-3" x-cloak>
+      <div class="min-w-[14rem] flex-1">
+        <label for="dossier-search" class="mb-1 block text-xs uppercase tracking-wide text-white/40">Hledat dossier</label>
+        <input id="dossier-search" type="search" x-model="search" x-on:input="apply()"
+               placeholder="jméno nebo popis…" autocomplete="off"
+               class="w-full rounded-lg border border-white/10 bg-black/40 px-3 py-2 text-sm text-white placeholder:text-white/30">
+      </div>
+      <div class="flex flex-wrap items-center gap-3 pb-2 text-xs text-white/50">
+        <span><span class="tabular-nums text-white" x-text="visible"></span> z <span class="tabular-nums" x-text="total"></span></span>
+        <button type="button" x-on:click="reset()" x-show="search || sortKey"
+                class="rounded border border-white/10 px-2 py-1 hover:text-white">Zrušit filtr a řazení</button>
+      </div>
+    </div>
+
+    {{ table::advanced_table(
+      id="dossier-directory",
+      caption="Autorizované dossiery",
+      record_type="dossier",
+      columns=["Dossier", "Tvrzení", "Zdroje", "Kauzy", "Mezery", "Entity", "Vztahy", "Prověřeno"],
+      count=entity_dossiers | length
+    ) }}
     {% for sub_path in entity_dossiers %}
     {% set d = get_section(path=sub_path) %}
     {% set counts = load_data(path="data/dossiers/" ~ d.extra.dossier ~ "/stats.toml") %}
-    {# permalink, not get_url(sub_path): sub_path is a content path and would 404 #}
-    <a href="{{ d.permalink | safe }}" class="registry-card">
-      <span class="flex flex-wrap items-center gap-2">
-        <span class="font-semibold text-white">{{ d.title }}</span>
-      </span>
-      <span class="mt-2 text-sm text-white/70">{{ d.description }}</span>
-      {% if counts %}
-      <span class="mt-3 flex flex-wrap gap-3 text-xs text-white/40">
-        <span>{{ counts.sources_total }} zdrojů</span>
-        <span>{{ counts.claims_total }} tvrzení</span>
-        <span>{{ counts.cases_total }} kauzy</span>
-        <span>{{ counts.gaps_total }} otevřených mezer</span>
-        <span>{{ counts.entities_total }} entit</span>
-        <span>{{ counts.relations_total }} vztahů</span>
-      </span>
-      {% endif %}
-      {% if d.extra.authorization.authorized %}
-      <span class="mt-2 text-[0.65rem] text-white/30">autorizováno: {{ d.extra.authorization.record_ids | join(sep=", ") }}</span>
-      {% endif %}
-    </a>
+    <tr>
+      <th scope="row" class="p-3 font-normal align-top">
+        <a href="{{ d.permalink | safe }}" class="font-semibold text-white no-underline hover:underline">{{ d.title }}</a>
+        <span class="mt-0.5 block max-w-md text-xs text-white/40">{{ d.description | truncate(length=110) }}</span>
+      </th>
+      <td class="p-3 tabular-nums text-white/70" data-sort-value="{{ counts.claims_total }}">{{ counts.claims_total }}</td>
+      <td class="p-3 tabular-nums text-white/70" data-sort-value="{{ counts.sources_total }}">{{ counts.sources_total }}</td>
+      <td class="p-3 tabular-nums text-white/70" data-sort-value="{{ counts.cases_total }}">{{ counts.cases_total }}</td>
+      <td class="p-3 tabular-nums text-white/70" data-sort-value="{{ counts.gaps_total }}">{{ counts.gaps_total }}</td>
+      <td class="p-3 tabular-nums text-white/70" data-sort-value="{{ counts.entities_total }}">{{ counts.entities_total }}</td>
+      <td class="p-3 tabular-nums text-white/70" data-sort-value="{{ counts.relations_total }}">{{ counts.relations_total }}</td>
+      <td class="p-3 text-xs text-white/50" data-sort-value="{{ d.extra.reviewed_at | default(value='') }}">{{ d.extra.reviewed_at | default(value="—") }}</td>
+    </tr>
     {% endfor %}
-  </div>
+    {{ table::advanced_table_end(footer="Počty generuje scripts/dossier/generate-stats.mjs při každém buildu z reálných registrů daného dossieru, ne z čísel zapsaných do šablony. Sloupec „Prověřeno“ je datum poslední redakční kontroly, ne datum poslední změny souboru.") }}
+  </section>
+
+  <p class="mb-10 text-xs text-white/40">
+    Počet mezer není měřítko kvality. Otevřená mezera je otázka, kterou citované zdroje nezodpověděly, a je vedena schválně — dossier bez mezer by znamenal buď hotovou věc, nebo zamlčenou nejistotu.
+  </p>
 
   {% if aggregate_dossiers | length > 0 %}
   <h2 class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/40">Agregované pohledy</h2>
