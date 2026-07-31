@@ -1,10 +1,11 @@
 # Navigační metriky — počty odvozené z kanonických dat
 
-> **Stav**: datová vrstva i vykreslení badge hotové a zapojené do buildu.
-> Badge se renderují na serveru přes sdílené macro `nav::nav_link`, které
-> používá desktop sidebar i mobilní navigace. Neuzavřené položky —
-> post-build verifier, veřejný endpoint, sbalený sidebar, vizuální
-> kontrola — viz [Co zbývá](#co-zbývá).
+> **Stav**: datová vrstva, vykreslení badge i post-build ověření hotové a
+> zapojené do buildu. Badge se renderují na serveru přes sdílené macro
+> `nav::nav_link` (desktop sidebar i mobilní navigace) a
+> `verify:navigation-counts` porovnává každé číslo v postaveném HTML
+> s manifestem. Neuzavřené položky — veřejný endpoint, sbalený sidebar,
+> vizuální kontrola — viz [Co zbývá](#co-zbývá).
 
 ## Proč build-time, a ne v prohlížeči
 
@@ -24,8 +25,10 @@ static/data/*.json             kanonické kolekční exporty
 static/data/graph.jsonld       kanonický JSON-LD graf
         ↓ scripts/data/build-navigation-metrics.mjs
 data/generated/navigation-metrics.json   generovaný manifest
-        ↓ (dosud neimplementováno) Tera macro
+        ↓ templates/macros/nav.html (nav::nav_link)
 statické HTML s badge
+        ↓ scripts/data/verify-navigation-counts.mjs
+ověřeno proti manifestu
 ```
 
 ## Kde leží kanonická data a proč se nepočítají `@type`
