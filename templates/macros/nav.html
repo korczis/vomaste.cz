@@ -30,6 +30,7 @@
     validator is allowed to decide a declared metric is broken. -#}
 {%- set metric_id = item.countMetric | default(value="") -%}
 {%- set has_count = false -%}
+{%- set dossier_key = "" -%}
 {%- set count = 0 -%}
 {%- if metric_id and metrics and metrics.metrics is defined -%}
   {%- if metrics.metrics[metric_id] is defined -%}
@@ -37,7 +38,19 @@
     {%- set_global count = metrics.metrics[metric_id].value -%}
   {%- endif -%}
 {%- endif -%}
+{#- A dossier node carries no countMetric of its own: its number comes from
+    the GROUPED per-dossier metric, keyed by slug (which is the node id).
+    Same records, same identity rule as claims.total — only partitioned. -#}
+{%- if not has_count and depth == 1 and metrics and metrics.perDossier is defined -%}
+  {%- if metrics.perDossier[item.id] is defined -%}
+    {%- set_global has_count = true -%}
+    {%- set_global count = metrics.perDossier[item.id].claims -%}
+    {%- set_global metric_id = "claims.by_dossier" -%}
+    {%- set_global dossier_key = item.id -%}
+  {%- endif -%}
+{%- endif -%}
 {%- set noun = item.countNoun | default(value="položek") -%}
+{%- if metric_id == "claims.by_dossier" -%}{%- set noun = "tvrzení" -%}{%- endif -%}
 {#- The count also goes in `title`, which is what stays reachable when the
     sidebar is collapsed to icons and the badge itself is hidden. -#}
 <a href="{{ href | safe }}" title="{{ text }}{% if has_count %} — {{ count }} {{ noun }}{% endif %}"
@@ -49,9 +62,21 @@
   {%- if has_count %}
   {#- aria-hidden: the number is already in the link's aria-label, so a
       screen reader must not read it twice. -#}
-  <span class="nav-count-badge justify-self-end" data-metric-id="{{ metric_id }}" data-count="{{ count }}" aria-hidden="true">{{ count }}</span>
+  <span class="nav-count-badge justify-self-end" data-metric-id="{{ metric_id }}"{% if dossier_key %} data-dossier="{{ dossier_key }}"{% endif %} data-count="{{ count }}" aria-hidden="true">{{ count }}</span>
   {%- else %}
   <span aria-hidden="true"></span>
   {%- endif %}
 </a>
 {%- endmacro nav_link -%}
+
+{#- Standalone badge for rows that are not rendered through nav_link — a
+    dossier with an expandable subtree is a <summary>, not an <a>, so its
+    number has to be emitted there. Same manifest, same lookup, so the two
+    render paths cannot disagree. -#}
+{%- macro dossier_count(metrics, slug) -%}
+{%- if metrics and metrics.perDossier is defined -%}
+{%- if metrics.perDossier[slug] is defined -%}
+<span class="nav-count-badge" data-metric-id="claims.by_dossier" data-dossier="{{ slug }}" data-count="{{ metrics.perDossier[slug].claims }}" aria-hidden="true">{{ metrics.perDossier[slug].claims }}</span>
+{%- endif -%}
+{%- endif -%}
+{%- endmacro dossier_count -%}

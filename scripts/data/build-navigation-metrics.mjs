@@ -45,7 +45,9 @@ import {
   REGISTRY_VERSION,
   METRIC_DEFINITIONS,
   INTENTIONALLY_UNMEASURED,
+  PER_DOSSIER_METRIC,
   countDistinct,
+  canonicalIdentity,
 } from "./navigation-metrics.registry.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -117,12 +119,51 @@ for (const def of definitions) {
   };
 }
 
+// --- grouped per-dossier counts ------------------------------------------
+// Emitted alongside the totals rather than as N separate metrics, so adding a
+// dossier never requires editing the registry.
+const perDossier = {};
+{
+  const abs = path.join(ROOT, PER_DOSSIER_METRIC.source);
+  const raw = readFileSync(abs, "utf8");
+  const records = JSON.parse(raw);
+  if (!Array.isArray(records)) fail(`${PER_DOSSIER_METRIC.source} is not a JSON array.`);
+  const groups = new Map();
+  records.forEach((record, index) => {
+    const key = record?.[PER_DOSSIER_METRIC.groupBy];
+    if (typeof key !== "string" || key.length === 0) {
+      fail(`${PER_DOSSIER_METRIC.source}: record ${index} has no "${PER_DOSSIER_METRIC.groupBy}" — cannot be attributed to a dossier.`);
+      return;
+    }
+    if (!groups.has(key)) groups.set(key, new Set());
+    groups.get(key).add(canonicalIdentity(record, index));
+  });
+  // Sorted so the manifest stays byte-stable.
+  for (const key of [...groups.keys()].sort()) perDossier[key] = { claims: groups.get(key).size };
+
+  // The partition must reconstruct the total exactly. If it does not, the two
+  // numbers shown to the reader disagree, which is the failure this whole
+  // layer exists to prevent.
+  const summed = Object.values(perDossier).reduce((a, g) => a + g.claims, 0);
+  const total = metrics["claims.total"]?.value;
+  if (total !== undefined && summed !== total) {
+    fail(`per-dossier claim counts sum to ${summed} but claims.total is ${total} — the partition is lossy.`);
+  }
+}
+
 const manifest = {
   // Not hand-editable: regenerate with `npm run data:metrics`.
   generator: "scripts/data/build-navigation-metrics.mjs",
   schemaVersion: REGISTRY_VERSION,
   sourceDigest: `sha256:${digest.digest("hex")}`,
   metrics,
+  perDossier,
+  perDossierMetric: {
+    id: PER_DOSSIER_METRIC.id,
+    description: PER_DOSSIER_METRIC.description,
+    semantics: PER_DOSSIER_METRIC.semantics,
+    route: PER_DOSSIER_METRIC.route,
+  },
   intentionallyUnmeasured: INTENTIONALLY_UNMEASURED,
 };
 
@@ -169,3 +210,4 @@ console.log(
 for (const def of definitions) {
   console.log(`  ${def.id.padEnd(20)} ${String(metrics[def.id].value).padStart(5)}  → ${def.route}`);
 }
+console.log(`  ${"claims.by_dossier".padEnd(20)} ${String(Object.keys(perDossier).length).padStart(5)}  → per-dossier groups`);

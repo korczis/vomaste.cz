@@ -117,6 +117,25 @@ for (const file of pages) {
       fail(`${rel}: a nav-count-badge has no data-metric-id — the value cannot be traced to a metric.`);
       continue;
     }
+    // Grouped per-dossier metric: keyed by slug, not present in the totals map.
+    if (id === "claims.by_dossier") {
+      const slug = attrs["data-dossier"];
+      if (!slug) {
+        fail(`${rel}: a claims.by_dossier badge has no data-dossier — its number cannot be attributed.`);
+        continue;
+      }
+      const group = manifest.perDossier?.[slug];
+      if (!group) {
+        fail(`${rel}: badge claims dossier "${slug}", which has no per-dossier entry in the manifest.`);
+        continue;
+      }
+      seenMetrics.add(id);
+      const wantGroup = String(group.claims);
+      if (dataCount !== wantGroup) fail(`${rel}: dossier "${slug}" — data-count is ${dataCount}, manifest says ${wantGroup}.`);
+      if (text !== wantGroup) fail(`${rel}: dossier "${slug}" — visible text is "${text}", manifest says ${wantGroup}.`);
+      continue;
+    }
+
     if (!expected.has(id)) {
       // A number rendered from a metric that no longer exists is the exact
       // failure mode "no hand-written counts" is meant to prevent.

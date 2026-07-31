@@ -296,6 +296,7 @@
       <summary class="flex cursor-pointer list-none items-center gap-3 py-2.5 pl-8 pr-4 text-sm marker:content-none [&::-webkit-details-marker]:hidden {% if child.id == active_id %}bg-white/5 text-[#f3e5c0]{% else %}text-white/60 hover:bg-white/5 hover:text-white{% endif %}">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="shrink-0" aria-hidden="true"><path d="{{ child.icon }}"/></svg>
         <span class="min-w-0 flex-1 truncate">{{ child.label }}</span>
+        {{ nav::dossier_count(metrics=nav_metrics, slug=child.id) }}
         <span class="text-white/30 transition-transform group-open:rotate-90" aria-hidden="true">›</span>
       </summary>
       {%- if child.overviewLabel %}

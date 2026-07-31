@@ -203,3 +203,25 @@ export function countDistinct(records) {
   records.forEach((record, index) => seen.add(canonicalIdentity(record, index)));
   return seen.size;
 }
+
+/**
+ * Per-dossier claim counts. Same source and same identity rule as
+ * `claims.total`, just grouped — so the number next to a dossier in the
+ * sidebar and the global Claims total can never come from two different
+ * interpretations of the data.
+ *
+ * This is a GROUPED metric, not a family of hand-listed ones: adding a
+ * dossier must not require touching this file. The group key is the
+ * `dossier` field each claim record already carries.
+ */
+export const PER_DOSSIER_METRIC = {
+  id: "claims.by_dossier",
+  description: "Počet tvrzení v jednotlivém dossieru",
+  source: "static/data/claims.json",
+  groupBy: "dossier",
+  semantics:
+    "COUNT(DISTINCT canonical id) of claim records grouped by their owning dossier. Sums to claims.total by construction — the same records, the same identity rule, only partitioned.",
+  dedupe: "By canonical id within the group.",
+  publication: "All claim records in the export are published.",
+  route: "/dossiers/<slug>/",
+};
