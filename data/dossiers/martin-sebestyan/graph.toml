@@ -30,3 +30,22 @@ label = "ministr zemědělství"
 status = "contextual"
 claims = ["CLM-01"]
 sources = ["SRC-01"]
+
+[[nodes]]
+id = "szif"
+type = "public_institution"
+label = "Státní zemědělský intervenční fond (SZIF)"
+depth = 1
+subject = false
+claims = ["CLM-08", "CLM-09", "CLM-11"]
+sources = ["SRC-04", "SRC-26"]
+
+[[edges]]
+id = "edge-sebestyan-szif"
+source = "sebestyan"
+target = "szif"
+relation = "HOLDS_ROLE"
+label = "bývalý ředitel (2013–2022)"
+status = "corroborated"
+claims = ["CLM-08", "CLM-09", "CLM-11"]
+sources = ["SRC-04", "SRC-26"]

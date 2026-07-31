@@ -15,7 +15,7 @@ status = "status-single"
 label = "Sledované téma"
 summary = "Výzvy k rezignaci a podnět resortu spravedlnosti — viz tvrzení CLM-16, CLM-17, CLM-18, CLM-19."
 claims = ["CLM-24", "CLM-25", "CLM-26", "CLM-51", "CLM-52", "CLM-53", "CLM-56"]
-sources = ["SRC-20", "SRC-19", "SRC-26"]
+sources = ["SRC-20", "SRC-19", "SRC-26", "SRC-27"]
 subjects = ["mrazova"]
 +++
 

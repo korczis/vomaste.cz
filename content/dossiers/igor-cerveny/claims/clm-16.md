@@ -9,10 +9,10 @@ dossier = "igor-cerveny"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-16"
-status = "status-single"
-status_label = "1 ZDROJ"
+status = "status-corroborated"
+status_label = "CORROBORATED"
 summary = "Červený strávil v červenci 2026 deset dní na cestě po USA, během níž navštívil národní parky Yosemite a Sequoia; oficiálním cílem byla příprava podzimní obchodní mise a seznámení se systémem prevence a zvládání lesních požárů; delegace jednala i se společností Meta o využití AI pro ochranu životního prostředí."
-sources = ["SRC-10"]
+sources = ["SRC-10", "SRC-16"]
 subjects = ["cerveny"]
 +++
 

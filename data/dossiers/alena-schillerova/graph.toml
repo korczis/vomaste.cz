@@ -30,3 +30,22 @@ label = "místopředsedkyně vlády a ministryně financí"
 status = "contextual"
 claims = ["CLM-01"]
 sources = ["SRC-01"]
+
+[[nodes]]
+id = "nrr"
+type = "public_institution"
+label = "Národní rozpočtová rada"
+depth = 1
+subject = false
+claims = ["CLM-24", "CLM-25", "CLM-26", "CLM-30", "CLM-31", "CLM-32", "CLM-33"]
+sources = ["SRC-18", "SRC-16", "SRC-17", "SRC-11"]
+
+[[edges]]
+id = "edge-schillerova-nrr"
+source = "schillerova"
+target = "nrr"
+relation = "ASSOCIATED_WITH_EVENT"
+label = "kritika souladu rozpočtu se zákonem o rozpočtové odpovědnosti"
+status = "disputed"
+claims = ["CLM-24", "CLM-25", "CLM-26", "CLM-30", "CLM-31", "CLM-32", "CLM-33"]
+sources = ["SRC-18", "SRC-16", "SRC-17", "SRC-11"]

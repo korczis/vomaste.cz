@@ -9,10 +9,10 @@ dossier = "oto-klempir"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-22"
-status = "status-single"
-status_label = "1 ZDROJ"
+status = "status-corroborated"
+status_label = "CORROBORATED"
 summary = "Ministerstvo kultury zrušilo výběrové řízení na generálního ředitele Národní galerie Praha; informace byla zveřejněna 2. července 2026 s tím, že řízení bude vypsáno znovu."
-sources = ["SRC-04"]
+sources = ["SRC-04", "SRC-27"]
 subjects = ["klempir"]
 +++
 

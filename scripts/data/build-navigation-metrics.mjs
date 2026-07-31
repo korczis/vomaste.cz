@@ -46,6 +46,7 @@ import {
   METRIC_DEFINITIONS,
   INTENTIONALLY_UNMEASURED,
   PER_DOSSIER_METRIC,
+  PER_TYPE_METRIC,
   countDistinct,
   canonicalIdentity,
 } from "./navigation-metrics.registry.mjs";
@@ -119,6 +120,39 @@ for (const def of definitions) {
   };
 }
 
+// --- grouped counts -------------------------------------------------------
+// One helper for every grouped metric, so a second grouping can never drift
+// into a second interpretation of "how do we count".
+function groupedCounts(def, totalMetricId, valueKey) {
+  const abs = path.join(ROOT, def.source);
+  const raw = readFileSync(abs, "utf8");
+  const records = JSON.parse(raw);
+  if (!Array.isArray(records)) fail(`${def.source} is not a JSON array.`);
+  const groups = new Map();
+  records.forEach((record, index) => {
+    const key = record?.[def.groupBy];
+    if (typeof key !== "string" || key.length === 0) {
+      fail(`${def.source}: record ${index} has no "${def.groupBy}" — cannot be attributed to a group.`);
+      return;
+    }
+    if (!groups.has(key)) groups.set(key, new Set());
+    groups.get(key).add(canonicalIdentity(record, index));
+  });
+  const out = {};
+  for (const key of [...groups.keys()].sort()) out[key] = { [valueKey]: groups.get(key).size };
+  // The partition must reconstruct the total exactly. If it does not, the two
+  // numbers shown to the reader disagree, which is the failure this whole
+  // layer exists to prevent.
+  const summed = Object.values(out).reduce((a, g) => a + g[valueKey], 0);
+  const total = metrics[totalMetricId]?.value;
+  if (total !== undefined && summed !== total) {
+    fail(`${def.id}: groups sum to ${summed} but ${totalMetricId} is ${total} — the partition is lossy.`);
+  }
+  return out;
+}
+
+const perType = groupedCounts(PER_TYPE_METRIC, "entities.total", "entities");
+
 // --- grouped per-dossier counts ------------------------------------------
 // Emitted alongside the totals rather than as N separate metrics, so adding a
 // dossier never requires editing the registry.
@@ -158,6 +192,13 @@ const manifest = {
   sourceDigest: `sha256:${digest.digest("hex")}`,
   metrics,
   perDossier,
+  perType,
+  perTypeMetric: {
+    id: PER_TYPE_METRIC.id,
+    description: PER_TYPE_METRIC.description,
+    semantics: PER_TYPE_METRIC.semantics,
+    route: PER_TYPE_METRIC.route,
+  },
   perDossierMetric: {
     id: PER_DOSSIER_METRIC.id,
     description: PER_DOSSIER_METRIC.description,
@@ -210,4 +251,5 @@ console.log(
 for (const def of definitions) {
   console.log(`  ${def.id.padEnd(20)} ${String(metrics[def.id].value).padStart(5)}  → ${def.route}`);
 }
+console.log(`  ${"entities.by_type".padEnd(20)} ${String(Object.keys(perType).length).padStart(5)}  → per-type groups`);
 console.log(`  ${"claims.by_dossier".padEnd(20)} ${String(Object.keys(perDossier).length).padStart(5)}  → per-dossier groups`);

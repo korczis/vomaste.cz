@@ -89,6 +89,13 @@ trhu.
 
 **Aktuální stav dossieru**: autorizovaná témata rozpracována — tvrzení vycházejí výhradně ze zdrojů otevřených a přečtených 2026-07-30 (viz registr zdrojů); co se doložit nepodařilo, eviduje registr mezer. Autorizace definuje rozsah, necertifikuje reportáže.
 
+## Kdo to je a čím je pokryt {#kdo}
+
+Identifikace subjektu a rozsah pokrytí jsou popsané v úvodu výše. Dossier
+odlišuje rezignaci jako personální krok od jejích nedoložených důvodů
+(viz [GAP-01](@/dossiers/ivan-bednarik/gaps/gap-01.md)) a odděluje
+ministrovy vlastní resortní pozice od sporů, které pouze reportuje.
+
 ## Registr tvrzení {#registr-tvrzeni}
 | <a id="clm-05"></a>[CLM-05](@/dossiers/ivan-bednarik/claims/clm-05.md) | V prosinci 2025 Bednárik jako ministr dopravy označil finance a rozpočet SFDI na rok 2026 a léta 2027–2029 za „absolutní prioritu“; podle kritiků citovaných Ekonomickým deníkem chybělo v návrhu rozpočtu na krytí plánovaných výdajů 37,2 miliardy korun. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-03](@/dossiers/ivan-bednarik/sources/src-03.md) |
 | <a id="clm-06"></a>[CLM-06](@/dossiers/ivan-bednarik/claims/clm-06.md) | K cenám na vysokorychlostních tratích Bednárik v prosinci 2025 řekl: „Neumím si představit, že by někdo v Čechách platil 1500 korun za lístek mezi Brnem a Prahou.“ | <span class="status-badge status-quote">CITACE</span> | [SRC-03](@/dossiers/ivan-bednarik/sources/src-03.md) |
@@ -99,7 +106,7 @@ trhu.
 | ID | Tvrzení | Stav | Zdroje |
 |---|---|---|---|
 | <a id="clm-01"></a>[CLM-01](@/dossiers/ivan-bednarik/claims/clm-01.md) | Ivan Bednárik zastává podle oficiálního profilu na webu Úřadu vlády funkci ministra dopravy | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-01](@/dossiers/ivan-bednarik/sources/src-01.md) |
-| <a id="clm-02"></a>[CLM-02](@/dossiers/ivan-bednarik/claims/clm-02.md) | Ivan Bednárik dne 15. února 2022 rezignoval na funkci generálního ředitele Českých drah slovy „Dnes jsem se rozhodl využít práva na rezignaci."; z představenstva tehdy odešli také Václav Nebeský a Petr Pavelec | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-02](@/dossiers/ivan-bednarik/sources/src-02.md) |
+| <a id="clm-02"></a>[CLM-02](@/dossiers/ivan-bednarik/claims/clm-02.md) | Ivan Bednárik dne 15. února 2022 rezignoval na funkci generálního ředitele Českých drah slovy „Dnes jsem se rozhodl využít práva na rezignaci."; z představenstva tehdy odešli také Václav Nebeský a Petr Pavelec | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-02](@/dossiers/ivan-bednarik/sources/src-02.md), [SRC-29](@/dossiers/ivan-bednarik/sources/src-29.md) |
 | <a id="clm-03"></a>[CLM-03](@/dossiers/ivan-bednarik/claims/clm-03.md) | Konkrétní důvody rezignace Bednárik veřejně neuvedl; podle citovaného zdroje je „podrobně vysvětlil dozorčí radě" a dodal, že „další spekulace o mém odchodu Českým drahám škodí" | <span class="status-badge status-quote">CITACE</span> | [SRC-02](@/dossiers/ivan-bednarik/sources/src-02.md) |
 | <a id="clm-04"></a>[CLM-04](@/dossiers/ivan-bednarik/claims/clm-04.md) | Tehdejší ministr dopravy Martin Kupka odcházejícímu řediteli poděkoval za pokračující obnovu vozového parku a uvedl, že nový šéf „musí být silný manažer, který stabilizuje provoz Českých drah" | <span class="status-badge status-quote">CITACE</span> | [SRC-02](@/dossiers/ivan-bednarik/sources/src-02.md) |
 | <a id="clm-11"></a>[CLM-11](@/dossiers/ivan-bednarik/claims/clm-11.md) | Rozpočet SFDI na rok 2026, který Bednárik obhajoval, přidělil Ředitelství silnic a dálnic 81,1 miliardy korun a Správě železnic 72,2 miliardy korun; Ředitelství vodních cest získalo 1,3 miliardy. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-07](@/dossiers/ivan-bednarik/sources/src-07.md) [SRC-08](@/dossiers/ivan-bednarik/sources/src-08.md) |

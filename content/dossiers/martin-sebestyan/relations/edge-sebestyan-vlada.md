@@ -14,7 +14,6 @@ label = "ministr zemědělství"
 status = "contextual"
 claims = ["CLM-01"]
 sources = ["SRC-01"]
-subjects = ["sebestyan"]
 +++
 
 Kontextový, strukturální vztah — dossier jej neuvádí jako vlastní doloženou investigaci, jen jako veřejně nesporné pozadí.

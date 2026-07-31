@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 40 context entities across 22 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 43 context entities across 22 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## Agrofert (`agrofert`)
 
@@ -61,6 +61,17 @@ Generated from 40 context entities across 22 dossier(s). Regenerate with `npm ru
 - Relations: 
   - edge-babis-capihnizdo (babis -> capi-hnizdo, "obžalovaný; dvakrát nepravomocně zproštěn (2023, 2024), obě zproštění zrušena; stíhání přerušeno po nevydání Sněmovnou — nic z toho není rozhodnutí o vině", dossier: andrej-babis)
   - edge-faltynek-capihnizdo (faltynek -> capi-hnizdo, "stíhán 2015–2018; stíhání zrušeno státním zástupcem", dossier: jaroslav-faltynek)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## České dráhy (`ceske-drahy`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: ivan-bednarik
+- Claims: CLM-02
+- Sources: SRC-02, SRC-29 (2 independent source families)
+- Relations: 
+  - edge-bednarik-ceske-drahy (bednarik -> ceske-drahy, "bývalý předseda představenstva a generální ředitel (rezignace 2022)", dossier: ivan-bednarik)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Evropský parlament (`ep`)
@@ -296,6 +307,17 @@ Generated from 40 context entities across 22 dossier(s). Regenerate with `npm ru
   - edge-metnar-nku (metnar -> nku, "návrh ukončit policejní ochranu úřadu (2026)", dossier: lubomir-metnar)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Národní rozpočtová rada (`nrr`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: alena-schillerova
+- Claims: CLM-24, CLM-25, CLM-26, CLM-30, CLM-31, CLM-32, CLM-33
+- Sources: SRC-18, SRC-16, SRC-17, SRC-11 (4 independent source families)
+- Relations: 
+  - edge-schillerova-nrr (schillerova -> nrr, "kritika souladu rozpočtu se zákonem o rozpočtové odpovědnosti", dossier: alena-schillerova)
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Nejvyšší správní soud (`nss`)
 
 - Type: public_institution
@@ -387,6 +409,17 @@ Generated from 40 context entities across 22 dossier(s). Regenerate with `npm ru
   - edge-okamura-spd (okamura -> spd, "předseda hnutí", dossier: tomio-okamura)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Správa železnic (`sprava-zeleznic`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: ivan-bednarik
+- Claims: CLM-18, CLM-19
+- Sources: SRC-14 (1 independent source family)
+- Relations: 
+  - edge-bednarik-sprava-zeleznic (bednarik -> sprava-zeleznic, "spor o pozemky a reforma úspor (2026)", dossier: ivan-bednarik)
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Státní zastupitelství (`statni-zastupitelstvi`)
 
 - Type: public_institution
@@ -415,12 +448,13 @@ Generated from 40 context entities across 22 dossier(s). Regenerate with `npm ru
 
 - Type: public_institution
 - Status: not_authorized
-- Appears in: andrej-babis
-- Claims: CLM-10, CLM-48
-- Sources: SRC-04, SRC-22 (2 independent source families)
+- Appears in: andrej-babis, martin-sebestyan
+- Claims: CLM-10, CLM-48, CLM-08, CLM-09, CLM-11
+- Sources: SRC-04, SRC-22, SRC-26 (4 independent source families)
 - Relations: 
   - edge-agrofert-szif (agrofert -> szif, "SZIF obnovil administraci žádostí o dotace (4/2026)", dossier: andrej-babis)
   - edge-kostelecke-szif (kostelecke-uzeniny -> szif, "dotaci z PRV 2018 schválil SZIF, zrušilo ji Ministerstvo zemědělství", dossier: andrej-babis)
+  - edge-sebestyan-szif (sebestyan -> szif, "bývalý ředitel (2013–2022)", dossier: martin-sebestyan)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## SZPI (`szpi`)

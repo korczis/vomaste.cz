@@ -12,7 +12,7 @@ clm_id = "CLM-17"
 status = "status-quote"
 status_label = "CITACE"
 summary = "Červený odmítl sdělit podrobnosti o jednáních a složení delegace na cestě do USA a novinářské dotazy (Deníku N) označil za 'útok na zájmy České republiky'."
-sources = ["SRC-10"]
+sources = ["SRC-10", "SRC-16"]
 subjects = ["cerveny"]
 +++
 

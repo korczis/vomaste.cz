@@ -225,3 +225,30 @@ export const PER_DOSSIER_METRIC = {
   publication: "All claim records in the export are published.",
   route: "/dossiers/<slug>/",
 };
+
+/**
+ * Per-entity-type counts. Same source and same identity rule as
+ * `entities.total`, grouped by the entity's own `entity_type`.
+ *
+ * Grouped, not a family of hand-listed metrics: adding an entity type must
+ * not require editing this file. Prerequisite for a per-type navigation
+ * subtree; emitted now so the number exists before anything renders it, and
+ * so the partition can be checked against the total from the first day.
+ *
+ * Note the partition is over ALL entities, subjects and context entities
+ * alike — the same population `/entities/` lists. It deliberately does NOT
+ * split by publication_role: that would put "people we cover" and "people
+ * merely mentioned" in separate visual buckets, which is an editorial
+ * statement the navigation has no business making.
+ */
+export const PER_TYPE_METRIC = {
+  id: "entities.by_type",
+  description: "Počet entit podle typu",
+  source: "static/data/entities.json",
+  groupBy: "entity_type",
+  semantics:
+    "COUNT(DISTINCT canonical id) of entity records grouped by entity_type. Sums to entities.total by construction.",
+  dedupe: "By canonical id within the group.",
+  publication: "Context entities are published pages and are counted.",
+  route: "/entities/",
+};

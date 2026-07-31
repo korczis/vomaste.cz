@@ -9,10 +9,10 @@ dossier = "oto-klempir"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-43"
-status = "status-single"
-status_label = "1 ZDROJ"
+status = "status-corroborated"
+status_label = "CORROBORATED"
 summary = "Na folklorním festivalu ve Strážnici byl Klempíř v červnu 2026 vypískán publikem; spolek Milion chvilek následně spustil petici „Oto, zabal to!“ za jeho odvolání, kterou k 28. červnu 2026 podepsalo 45 000 lidí."
-sources = ["SRC-12"]
+sources = ["SRC-12", "SRC-28"]
 subjects = ["klempir"]
 +++
 

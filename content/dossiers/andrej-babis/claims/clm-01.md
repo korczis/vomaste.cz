@@ -9,10 +9,10 @@ dossier = "andrej-babis"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-01"
-status = "status-single"
-status_label = "1 ZDROJ"
+status = "status-corroborated"
+status_label = "CORROBORATED"
 summary = "Vrchní soud v Praze dne 23. června 2025 zrušil zprošťující rozsudek Městského soudu v Praze z února 2024 nad Andrejem Babišem a Janou Nagyovou v kauze Čapí hnízdo; podle citovaného zdroje šlo již o druhé zrušení zprošťujícího verdiktu v této kauze"
-sources = ["SRC-01"]
+sources = ["SRC-01", "SRC-27"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni).

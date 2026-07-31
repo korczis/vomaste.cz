@@ -13,8 +13,8 @@ lang = "cs"
 seo_type = "ProfilePage"
 subject_entities = ["babis"]
 subjects = ["Andrej Babiš"]
-updated = "2026-07-30"
-reviewed_at = "2026-07-30"
+updated = "2026-07-31"
+reviewed_at = "2026-07-31"
 
 [[extra.timeline]]
 date = "2021-04-24"
@@ -92,9 +92,9 @@ anchor = "kauza-nemovitosti-francie"
 period = "2022–2026"
 title = "Nemovitosti ve Francii: předběžné vyšetřování PNF"
 status = "status-single"
-label = "Předběžné vyšetřování, bez obvinění"
-summary = "PNF vede od 24. 2. 2022 předběžné vyšetřování pro podezření z daňového podvodu a praní peněz kolem nákupu nemovitostí na jihu Francie; o stíhání nebylo rozhodnuto a Babiš pochybení odmítá. Majetkovou strukturu nákupů (BLAKEY FINANCE, BOYNE HOLDING, SCP Bigaud) popisuje nezávisle projekt Pandora Papers; offshore struktura sama o sobě není protiprávní a o nezákonnosti nákupů žádný orgán nerozhodl."
-claims = ["CLM-13", "CLM-14", "CLM-15", "CLM-31", "CLM-33", "CLM-34"]
+label = "Vyšetřování uzavřeno, věc u prokuratury; bez obvinění"
+summary = "PNF vede od 24. 2. 2022 předběžné vyšetřování pro podezření z daňového podvodu a praní peněz kolem nákupu nemovitostí na jihu Francie; o stíhání nebylo rozhodnuto a Babiš pochybení odmítá. Majetkovou strukturu nákupů (BLAKEY FINANCE, BOYNE HOLDING, SCP Bigaud) popisuje nezávisle projekt Pandora Papers; offshore struktura sama o sobě není protiprávní a o nezákonnosti nákupů žádný orgán nerozhodl. V květnu 2026 francouzská policie vyšetřování uzavřela a případ převzala Národní finanční prokuratura, která má o dalším postupu rozhodnout do konce roku 2026; Babiš po opětovném nástupu do funkce premiéra koncem roku 2025 získal podle francouzských pravidel imunitu chránící ho po dobu výkonu funkce před případným stíháním — jde o procesní ochranu, ne o rozhodnutí o vině či nevině."
+claims = ["CLM-13", "CLM-14", "CLM-15", "CLM-31", "CLM-33", "CLM-34", "CLM-54"]
 subjects = ["babis"]
 
 [[extra.cases]]
@@ -224,7 +224,7 @@ jednou v poznámce.
 
 | ID | Tvrzení | Stav | Zdroje |
 |---|---|---|---|
-| <a id="clm-01"></a>[CLM-01](@/dossiers/andrej-babis/claims/clm-01.md) | Vrchní soud v Praze dne 23. června 2025 zrušil zprošťující rozsudek Městského soudu v Praze z února 2024 nad Andrejem Babišem a Janou Nagyovou v kauze Čapí hnízdo; podle citovaného zdroje šlo již o druhé zrušení zprošťujícího verdiktu v této kauze | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-01](@/dossiers/andrej-babis/sources/src-01.md) |
+| <a id="clm-01"></a>[CLM-01](@/dossiers/andrej-babis/claims/clm-01.md) | Vrchní soud v Praze dne 23. června 2025 zrušil zprošťující rozsudek Městského soudu v Praze z února 2024 nad Andrejem Babišem a Janou Nagyovou v kauze Čapí hnízdo; podle citovaného zdroje šlo již o druhé zrušení zprošťujícího verdiktu v této kauze | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-01](@/dossiers/andrej-babis/sources/src-01.md), [SRC-27](@/dossiers/andrej-babis/sources/src-27.md) |
 | <a id="clm-02"></a>[CLM-02](@/dossiers/andrej-babis/claims/clm-02.md) | Odvolací soud dospěl k závěru, že zjištěné jednání naplňuje znaky dvou trestných činů, ale podle citovaného zdroje výslovně uvedl, že sám vinu vyslovit nemůže a věc pouze vrací soudu prvního stupně se závazným právním názorem. Zrušené zproštění není odsouzení | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-01](@/dossiers/andrej-babis/sources/src-01.md) |
 | <a id="clm-03"></a>[CLM-03](@/dossiers/andrej-babis/claims/clm-03.md) | Oba obžalovaní vinu v kauze Čapí hnízdo odmítají | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-01](@/dossiers/andrej-babis/sources/src-01.md) |
 | <a id="clm-04"></a>[CLM-04](@/dossiers/andrej-babis/claims/clm-04.md) | Babiš v únoru 2026 vložil veškeré akcie holdingu Agrofert do soukromého svěřenského fondu RSVP Trust poté, co získal souhlasy regulatorních orgánů tří členských států EU | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-02](@/dossiers/andrej-babis/sources/src-02.md) |
@@ -412,6 +412,7 @@ platí pouze pro tento jeden dotační spor.
 | <a id="clm-52"></a>[CLM-52](@/dossiers/andrej-babis/claims/clm-52.md) | Spornou dotaci 50 milionů korun firma podle citovaného zpravodajství vrátila již v roce 2018; jde o skutečnost o osudu peněz, nikoli o přiznání viny ani o vyvrácení obžaloby | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-24](@/dossiers/andrej-babis/sources/src-24.md) |
 
 | <a id="clm-53"></a>[CLM-53](@/dossiers/andrej-babis/claims/clm-53.md) | Andrej Babiš podle analýzy z roku 2011 o ústeckou Setuzu dlouhodobě usiloval, firmu ale nezískal a vybudoval místo toho vlastní závod Preol na výrobu surovin pro biopaliva; citovaný zdroj neuvádí v souvislosti se Setuzou žádné jeho pochybení | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-25](@/dossiers/andrej-babis/sources/src-25.md) |
+| <a id="clm-54"></a>[CLM-54](@/dossiers/andrej-babis/claims/clm-54.md) | Francouzská policie v květnu 2026 uzavřela vyšetřování nákupu nemovitostí na jihu Francie a případ převzala Národní finanční prokuratura (PNF), která má o dalším postupu rozhodnout do konce roku 2026; poté, co se Babiš koncem roku 2025 znovu stal předsedou vlády, získal podle francouzských pravidel imunitu, jež ho po dobu výkonu funkce chrání před případným stíháním ve Francii | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-26](@/dossiers/andrej-babis/sources/src-26.md) |
 
 ## Setuza: neúspěšná akvizice, ne kauza {#setuza}
 
@@ -670,6 +671,17 @@ neříká nic o vině.
 
 Babiš jakékoli pochybení odmítá a tvrdí, že nákupy proběhly v souladu se
 zákony ([CLM-15](@/dossiers/andrej-babis/claims/clm-15.md)).
+
+**Co se od poslední revize posunulo.** Francouzská policie v květnu 2026
+vyšetřování uzavřela a případ převzala Národní finanční prokuratura,
+která má o dalším postupu rozhodnout do konce roku 2026
+([CLM-54](@/dossiers/andrej-babis/claims/clm-54.md)). Poté, co se Babiš
+koncem roku 2025 znovu stal předsedou vlády, získal podle francouzských
+pravidel imunitu, která ho po dobu výkonu funkce chrání před případným
+stíháním ve Francii — jde o procesní ochranu po dobu funkce, ne o
+rozhodnutí o vině či nevině. Co se s případem stane po skončení jeho
+funkce, citované zdroje neuvádějí; zůstává otevřené v
+[GAP-05](@/dossiers/andrej-babis/gaps/gap-05.md).
 
 ### Jak byly nemovitosti pořízeny
 

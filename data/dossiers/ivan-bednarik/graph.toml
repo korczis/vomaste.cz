@@ -30,3 +30,41 @@ label = "ministr dopravy"
 status = "contextual"
 claims = ["CLM-01"]
 sources = ["SRC-01"]
+
+[[nodes]]
+id = "ceske-drahy"
+type = "organization"
+label = "České dráhy"
+depth = 1
+subject = false
+claims = ["CLM-02"]
+sources = ["SRC-02", "SRC-29"]
+
+[[edges]]
+id = "edge-bednarik-ceske-drahy"
+source = "bednarik"
+target = "ceske-drahy"
+relation = "HOLDS_ROLE"
+label = "bývalý předseda představenstva a generální ředitel (rezignace 2022)"
+status = "corroborated"
+claims = ["CLM-02"]
+sources = ["SRC-02", "SRC-29"]
+
+[[nodes]]
+id = "sprava-zeleznic"
+type = "organization"
+label = "Správa železnic"
+depth = 1
+subject = false
+claims = ["CLM-18", "CLM-19"]
+sources = ["SRC-14"]
+
+[[edges]]
+id = "edge-bednarik-sprava-zeleznic"
+source = "bednarik"
+target = "sprava-zeleznic"
+relation = "ASSOCIATED_WITH_EVENT"
+label = "spor o pozemky a reforma úspor (2026)"
+status = "contextual"
+claims = ["CLM-18", "CLM-19"]
+sources = ["SRC-14"]
