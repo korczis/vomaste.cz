@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/petr-vencalek/sources/SRC-03",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/petr-vencalek"
+  },
+  "title": "SRC-03 — Hlídač státu",
+  "description": "Veřejný rejstřík sponzoringu: u Petra Vencálka evidován jeden dar 20 000 Kč jiné politické straně; žádný dar Klubu motoristů, z.s. ani Motoristům sobě evidován není.",
+  "outlet": "Hlídač státu",
+  "sourceType": "veřejný rejstřík / transparentní databáze",
+  "url": "https://www.hlidacstatu.cz/osoba/petr-vencalek",
+  "retrieved": "2026-08-01",
+  "claims": [],
+  "subjects": [
+    "vencalek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Hlídač státu eviduje u Petra Vencálka **jeden** přímý dar politické\nstraně, v hodnotě **20 000 Kč** (detail příjemce a data v podstránce\nsponzoringu tento zdroj sám neuvádí). **Žádný dar Klubu motoristů, z.s.\nani straně Motoristé sobě evidován není.**\n\n**Proč je tento zdroj tady, přestože nepodporuje žádné tvrzení**:\nautorizace `AUTH-2026-08-01-VENCALEK` výslovně povolila téma darů Klubu\nmotoristů. Tento zdroj je zápis toho, že veřejný rejstřík byl k\n2026-08-01 aktivně prověřen a téma v něm nenašlo oporu — proto zůstává v\n[GAP-01](@/dossiers/petr-vencalek/gaps/gap-01.md) jako aktivně\nprověřená, ne jen nezkontrolovaná mezera. Evidovaný dar jiné straně je\nmimo autorizovaný rozsah tohoto dossieru a není zde rozvíjen jako\ntvrzení."
+    }
+  ],
+  "order": 3
+}

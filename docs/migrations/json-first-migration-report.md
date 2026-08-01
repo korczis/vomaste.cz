@@ -14,14 +14,14 @@ autoritou až do fáze H.
 
 | typ | počet |
 |---|---|
-| case | 81 |
-| claim | 835 |
-| dossier | 22 |
-| entity | 84 |
-| gap | 187 |
-| relation | 101 |
-| source | 514 |
-| update | 42 |
+| case | 85 |
+| claim | 846 |
+| dossier | 24 |
+| entity | 86 |
+| gap | 188 |
+| relation | 108 |
+| source | 525 |
+| update | 46 |
 
 | dossier | claims | sources | cases | gaps | relations | updates |
 |---|---|---|---|---|---|---|
@@ -42,10 +42,12 @@ autoritou až do fáze H.
 | martin-sebestyan | 44 | 27 | 3 | 14 | 2 | 3 |
 | oto-klempir | 43 | 28 | 5 | 7 | 1 | 1 |
 | petr-macinka | 0 | 0 | 0 | 0 | 0 | 0 |
+| petr-pavel | 3 | 4 | 1 | 0 | 2 | 1 |
+| petr-vencalek | 3 | 3 | 1 | 1 | 1 | 2 |
 | richard-chlad | 8 | 3 | 2 | 2 | 3 | 1 |
 | robert-plaga | 54 | 32 | 3 | 12 | 1 | 3 |
 | tomio-okamura | 35 | 27 | 5 | 8 | 1 | 1 |
-| tunde-bartha | 8 | 5 | 2 | 4 | 5 | 1 |
+| tunde-bartha | 13 | 9 | 4 | 4 | 9 | 2 |
 | zuzana-mrazova | 56 | 30 | 4 | 15 | 1 | 3 |
 
 ## Klíčová rozhodnutí
@@ -126,6 +128,7 @@ Pravidla S5/S6 (autorizace) grandfatherovat nelze.
 - updates karel-havlicek: 2 zápis(y) se sdíleným datem dostaly pořadový sufix identifieru (append-only pořadí z updates.toml)
 - updates macinka-turek: 1 zápis(y) se sdíleným datem dostaly pořadový sufix identifieru (append-only pořadí z updates.toml)
 - updates martin-sebestyan: 2 zápis(y) se sdíleným datem dostaly pořadový sufix identifieru (append-only pořadí z updates.toml)
+- updates petr-vencalek: 1 zápis(y) se sdíleným datem dostaly pořadový sufix identifieru (append-only pořadí z updates.toml)
 - updates robert-plaga: 2 zápis(y) se sdíleným datem dostaly pořadový sufix identifieru (append-only pořadí z updates.toml)
 - updates zuzana-mrazova: 2 zápis(y) se sdíleným datem dostaly pořadový sufix identifieru (append-only pořadí z updates.toml)
 
@@ -141,23 +144,23 @@ kanonická obálka a umístění souboru.
 
 | typ záznamu | klíč | výskytů |
 |---|---|---|
-| entity | `claims` | 73 |
+| entity | `claims` | 75 |
 | entity | `cluster` | 16 |
-| entity | `depth` | 84 |
+| entity | `depth` | 86 |
 | entity | `description` | 16 |
-| entity | `discovered_at` | 84 |
-| entity | `discovered_via` | 84 |
-| entity | `generated` | 84 |
+| entity | `discovered_at` | 86 |
+| entity | `discovered_via` | 86 |
+| entity | `generated` | 78 |
 | entity | `government_office` | 16 |
 | entity | `government_party` | 16 |
-| entity | `record_id` | 84 |
-| entity | `sources` | 73 |
-| entity | `subject` | 84 |
-| entity | `view_model` | 84 |
+| entity | `record_id` | 78 |
+| entity | `sources` | 75 |
+| entity | `subject` | 86 |
+| entity | `view_model` | 78 |
 | claim | `aliases` | 45 |
-| claim | `generated` | 835 |
-| claim | `record_id` | 835 |
-| claim | `view_model` | 835 |
+| claim | `generated` | 827 |
+| claim | `record_id` | 827 |
+| claim | `view_model` | 827 |
 | source | `aliases` | 52 |
 | source | `generated` | 514 |
 | source | `record_id` | 514 |
@@ -166,13 +169,13 @@ kanonická obálka a umístění souboru.
 | case | `record_id` | 81 |
 | case | `view_model` | 81 |
 | gap | `aliases` | 6 |
-| gap | `generated` | 187 |
-| gap | `record_id` | 187 |
-| gap | `view_model` | 187 |
-| relation | `generated` | 101 |
+| gap | `generated` | 185 |
+| gap | `record_id` | 185 |
+| gap | `view_model` | 185 |
+| relation | `generated` | 99 |
 | relation | `note` | 1 |
-| relation | `record_id` | 101 |
-| relation | `view_model` | 101 |
+| relation | `record_id` | 99 |
+| relation | `view_model` | 99 |
 
 Pozn.: `aliases` u claim/source/gap stránek (staré routy) nemá v
 schématech claim/source/gap ekvivalent — routing aliasy převezme

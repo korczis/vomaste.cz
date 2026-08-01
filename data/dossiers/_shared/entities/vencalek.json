@@ -9,19 +9,20 @@
   "entityId": "vencalek",
   "title": "Petr Vencálek (vlastník GMR GAS s.r.o.)",
   "entityType": "person",
-  "publicationRole": "context",
-  "dossierEnabled": false,
-  "dossierStatus": "not_authorized",
-  "coverageState": "discovered",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "full",
   "dossiers": [
     "macinka-turek",
-    "petr-macinka"
+    "petr-macinka",
+    "petr-vencalek"
   ],
   "order": 38,
   "content": [
     {
       "type": "markdown",
-      "value": "Jediný společník (podíl 100 %) a jednatel společnosti GMR GAS s.r.o.\nObjevuje se tu z jednoho jediného důvodu: citované zpravodajství\n(Investigace.cz) ho jmenuje jako majitele české firmy, která je podle\ntéhož zdroje spoluvlastníkem ukrajinské GMR GAS UA LLC — tedy firmy, v níž\nměl Petr Macinka nepřiznaný podíl.\n\n**Není subjektem dossieru a není veřejným funkcionářem.** Tato stránka je\nzáznam jedné zveřejněné vlastnické vazby a nic víc: žádný profil, žádná\njeho vlastní kauza, žádné naznačené pochybení. Vlastnit firmu a být jejím\njednatelem je běžný, veřejně zapsaný podnikatelský fakt. Dossier záměrně\nneuvádí ani jeho datum narození, ani adresu, přestože je rejstříkový\nzáznam obsahuje — pro doložení citovaného tvrzení nejsou potřebné."
+      "value": "Jediný společník (podíl 100 %) a jednatel společnosti GMR GAS s.r.o.,\nod 2026-08-01 subjektem vlastního dossieru\n([AUTH-2026-08-01-VENCALEK](@/dossiers/petr-vencalek/_index.md)).\nZáklad veřejného zájmu zůstává úzký a jmenovaný v autorizaci: citované\nzpravodajství (Investigace.cz) ho jmenuje jako majitele české firmy,\nkterá je podle téhož zdroje spoluvlastníkem ukrajinské GMR GAS UA LLC —\ntedy firmy, v níž měl Petr Macinka nepřiznaný podíl.\n\n**Není veřejným funkcionářem** a žádný citovaný zdroj mu nic nevytýká —\nvlastnit firmu a být jejím jednatelem je běžný, veřejně zapsaný\npodnikatelský fakt. Plné znění je v jeho vlastním dossieru; tato stránka\nzůstává jen odkazem do globálního registru entit. Dossier záměrně\nneuvádí ani jeho datum narození, ani adresu, přestože je rejstříkový\nzáznam obsahuje — pro doložení citovaného tvrzení nejsou potřebné."
     }
   ]
 }

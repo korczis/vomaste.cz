@@ -146,3 +146,17 @@ authorized_at = "2026-07-30"
 subjects = ["chlad"]
 agents_md_section = "Authorized subject: Richard Chlad (on the record)"
 scope_summary = "Podnikatel a doložený dárce strany Motoristé sobě (dnes ve vládě). Základ veřejného zájmu = FINANCOVÁNÍ STRAN, ne napojení na osoby. Rozsah: evidované dary (638 864 Kč za 2025) a publikovaný rozpor vůči jeho vlastnímu vyjádření o „necelých dvou milionech“ — POVINNĚ vždy s vysvětlením, že jde o nepeněžní plnění (zápůjčky vozů) a obě čísla neměří totéž; publikované reakce Turka a Macinky, kteří jeho významnější roli odmítali. POVINNÉ RÁMOVÁNÍ: darovat straně je legální, žádný citovaný zdroj mu nevytýká protiprávní jednání a nesmí se to implikovat; tématem je transparentnost financování, ne obvinění dárce. MIMO ROZSAH: dřívější osobní vazba na R. Krejčíře jako samostatné téma (jen jako atribuovaný popisný detail, jak už je v citovaném zpravodajství), podnikání obecně, nová témata o Macinkovi a Turkovi. Zdroje již otevřeny: SRC-41 Hlídač státu, SRC-42 CNN Prima News 2025-10-16, SRC-43 Aktuálně.cz 2026-03-17 (macinka-turek)."
+
+[[authorizations]]
+id = "AUTH-2026-08-01-PAVEL"
+authorized_at = "2026-08-01"
+subjects = ["pavel"]
+agents_md_section = "Authorized subject: Petr Pavel (on the record)"
+scope_summary = "Jediné již zdokumentované téma přenesené z kontextové entity v macinka-turek/filip-turek: odmítnutí (leden 2026) jmenovat Filipa Turka ministrem životního prostředí a jeho zdůvodnění (nedostatek respektu k právnímu řádu, zlehčování nacistického Německa, zpochybňování důstojnosti žen a menšin) — SRC-44 Deník.cz, SRC-45 HN.cz (CLM-38); a Turkova oznámená, nakonec nepodaná žaloba na ochranu osobnosti. Žádné nové téma o prezidentském úřadu není autorizováno."
+
+[[authorizations]]
+id = "AUTH-2026-08-01-VENCALEK"
+authorized_at = "2026-08-01"
+subjects = ["vencalek"]
+agents_md_section = "Authorized subject: Petr Vencálek (on the record)"
+scope_summary = "Jediný společník (100 %) a jednatel GMR GAS s.r.o. (Brno) od 2014-12; není veřejný funkcionář, veřejný zájem stojí na vazbě k Macinkově již autorizované kauze GMR GAS UA LLC. Rozsah: (1) vlastnictví/jednatelství GMR GAS s.r.o. a vazba firmy na GMR GAS UA LLC (Kyjev), kde měl Macinka nepřiznaný 20% podíl — již zdokumentováno CLM-46/47/48, SRC-17 Investigace.cz, SRC-55 ARES; (2) dary Klubu motoristů, z.s. — autorizováno jako téma, ale ŽÁDNÝ zdroj zatím nebyl otevřen ani citován; bez dohledaného jmenovaného zdroje zůstává GAP, ne tvrzení. Mimo rozsah: podnikání obecně, nová témata o Macinkovi."

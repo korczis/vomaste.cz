@@ -15,9 +15,17 @@ record_type = "gap"
 lang = "cs"
 gap_id = "GAP-04"
 priority = "nízká"
-checked = "2026-07-30"
-claims = ["CLM-06"]
+checked = "2026-08-01"
+claims = ["CLM-06", "CLM-13"]
 +++
+**Aktualizace 1. 8. 2026.** Firemní web Agrofertu ze září 2024 dokládá
+další datovaný employment fact — funkci country managerky AGROFERT
+Hungária s odpovědností za rozvoj koncernu ve východní Evropě
+([CLM-13](@/dossiers/tunde-bartha/claims/clm-13.md),
+[SRC-09](@/dossiers/tunde-bartha/sources/src-09.md)). Přesná data
+nástupu do holdingu a odchodu z něj tím ale doložena nejsou — mezera
+zůstává otevřená.
+
 Citovaný zdroj ([SRC-03](@/dossiers/tunde-bartha/sources/src-03.md))
 dokládá pracovní zařazení v Agrofertu potvrzené mluvčím společnosti,
 uvádí však pouze datum vlastního zveřejnění (14. 8. 2024). **Kdy Tünde

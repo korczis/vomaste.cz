@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
-title = "GAP-02 — Přesné datum nástupu do současné funkce"
-description = "Datum nástupu Tünde Barthy do funkce vedoucí Úřadu vlády není doloženo primárním ani jmenovaně ozdrojovaným zpravodajstvím."
+title = "GAP-02 — Přesné datum nástupu do současné funkce (uzavřeno 2026-08-01)"
+description = "Mezera uzavřena: primární úřední zdroj dokládá, že vláda Barthu jmenovala vedoucí Úřadu vlády na ustavující schůzi 15. 12. 2025."
 template = "dossier-gap.html"
 weight = 2
 
@@ -14,22 +14,22 @@ dossier = "tunde-bartha"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-02"
-priority = "střední"
-checked = "2026-07-30"
-claims = ["CLM-07", "CLM-08"]
+priority = "nízká"
+checked = "2026-08-01"
+claims = ["CLM-07", "CLM-08", "CLM-09"]
 +++
-Že Tünde Bartha v červnu 2026 Úřad vlády vede, dokládají dvě nezávislá
-média ([CLM-07](@/dossiers/tunde-bartha/claims/clm-07.md)). **Přesné
-datum nástupu doloženo není**:
+**Co se od poslední revize uzavřelo (1. 8. 2026).** Dřívější znění této
+mezery konstatovalo, že přesné datum nástupu Tünde Barthy do funkce
+vedoucí Úřadu vlády není doloženo primárním ani jmenovaně ozdrojovaným
+zdrojem (oficiální přehled úřadu nástupce neuváděl a zpráva Echo24
+z 9. 12. 2025 stála na nejmenovaných zdrojích). To už neplatí: tisková
+zpráva Úřadu vlády z ustavující schůze vlády dokládá, že ji vláda
+jmenovala **15. prosince 2025**
+([CLM-09](@/dossiers/tunde-bartha/claims/clm-09.md),
+[SRC-06](@/dossiers/tunde-bartha/sources/src-06.md)).
 
-- Oficiální přehled Úřadu vlády
-  ([SRC-04](@/dossiers/tunde-bartha/sources/src-04.md)) ke dni stažení
-  2026-07-30 neuvádí nástupce po Petře Fojtíkové (do 15. 12. 2025).
-- Zpráva Echo24 z 9. 12. 2025 o jejím návratu se opírá o **nejmenované
-  zdroje** („Podle informací deníku Echo") a je anticipační — oznamuje
-  očekávaný krok, nikoli potvrzené jmenování. Dossier ji proto necituje
-  jako zdroj tvrzení o datu.
-
-Datum 15. 12. 2025 uvádí encyklopedický souhrn, který tento web jako
-zdroj tvrzení nepoužívá. **Do doplnění primárního záznamu nebo jmenovaně
-ozdrojované zprávy zůstává datum nedoložené.**
+**Co zůstává mimo záznam.** Tiskové sdělení není textem usnesení vlády
+a neuvádí, na čí návrh byla jmenována; pro faktum a datum jmenování je
+však primární úřední zdroj dostačující. Mezera se tímto považuje za
+**uzavřenou** — záznam zůstává v registru jako auditní stopa toho, že
+předchozí stav („datum nedoloženo“) byl skutečný a kdy se změnil.

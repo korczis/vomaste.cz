@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/case.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/cases/CASE-04",
+  "@type": "vomaste:Case",
+  "recordType": "case",
+  "identifier": "CASE-04",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tunde-bartha"
+  },
+  "title": "Bezpečnostní prověrka",
+  "summary": "Podle odpovědi Úřadu vlády na žádost podle informačního zákona má Bartha od roku 2019 osvědčení fyzické osoby pro stupeň utajení Tajné a osvědčení NATO Personnel Clearance Certificate; úřad uvedl, že splňuje požadavky na výkon funkce. Nejde o kauzu — záznam je veden jako doložený korektiv k případným spekulacím, které žádný citovaný zdroj nedokládá.",
+  "period": "2019–2026",
+  "status": "status-single",
+  "statusLabel": "Korektiv, ne kauza",
+  "anchor": "kauza-proverka",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-12"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-08"
+    }
+  ],
+  "subjects": [],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Plné znění, zdroje a kontext tohoto případu jsou v [hlavním přehledu\ndossieru](@/dossiers/tunde-bartha/_index.md#kauza-proverka)."
+    }
+  ],
+  "order": 4
+}

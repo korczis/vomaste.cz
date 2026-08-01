@@ -22,8 +22,8 @@ depth = 0
 subject = true
 discovered_at = "2026-07-29"
 discovered_via = ["edge-babis-vlada", "edge-babis-agrofert", "edge-babis-pnf", "edge-babis-capihnizdo", "edge-babis-blakey", "edge-babis-synbiol"]
-claims = ["CLM-12", "CLM-04", "CLM-05", "CLM-03", "CLM-06"]
-sources = ["SRC-06", "SRC-02", "SRC-01", "SRC-03"]
+claims = ["CLM-12", "CLM-04", "CLM-05", "CLM-03", "CLM-06", "CLM-10"]
+sources = ["SRC-06", "SRC-02", "SRC-01", "SRC-03", "SRC-07"]
 government_office = "předseda vlády"
 government_party = "ANO"
 +++

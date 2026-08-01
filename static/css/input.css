@@ -108,6 +108,28 @@
   }
 
   .dossier-prose h2 { font-size: 1.25rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1rem; }
+  /* Tailwind preflight resetuje nadpisy na velikost běžného textu a nulové
+     okraje. Bez těchto pravidel byl h3 k nerozeznání od odstavce: podnadpis
+     seděl nalepený na textu pod sebou a členění se ztratilo. Postihovalo to
+     i živý dossier Andreje Babiše, ne jen novou stránku. */
+  /* Jedna šířka pro všechny sekce landing page. Dřív se střídaly max-w-3xl,
+     max-w-5xl a max-w-6xl, takže se obsah při scrollování rozšiřoval
+     a zužoval a stránka působila jako složená z cizích dílů.
+
+     Mobile-first: na úzkém displeji 1rem po stranách (ne 1,5rem) — na
+     390 px je to 32 px obsahu navíc, což je u hustých tabulek znát. */
+  .landing-section {
+    margin-inline: auto;
+    width: 100%;
+    max-width: 64rem;
+    padding-inline: 1rem;
+  }
+  @media (min-width: 640px) { .landing-section { padding-inline: 1.5rem; } }
+
+  .dossier-prose h3 { font-size: 1.0625rem; font-weight: 600; color: #fff; margin-top: 1.75rem; margin-bottom: 0.5rem; }
+  .dossier-prose h4 { font-size: 0.9375rem; font-weight: 600; color: rgba(255,255,255,0.9); margin-top: 1.25rem; margin-bottom: 0.375rem; }
+  /* Nadpis nesmí zůstat na konci stránky/sloupce oddělený od svého textu. */
+  .dossier-prose h2, .dossier-prose h3, .dossier-prose h4 { break-after: avoid-page; }
   .dossier-prose p { margin-bottom: 1rem; line-height: 1.7; color: rgba(255,255,255,0.85); }
   .dossier-prose ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem; }
   .dossier-prose li { margin-bottom: 0.5rem; line-height: 1.6; color: rgba(255,255,255,0.85); }
@@ -387,6 +409,29 @@
   .graph-inspector-note { margin-top: 0.75rem; font-size: 0.75rem; color: var(--text-faint); font-style: italic; }
   .graph-inspector-open { display: inline-block; margin-top: 1rem; font-size: 0.8125rem; color: var(--accent); }
   .graph-inspector-open:hover { text-decoration: underline; }
+
+  /* Seznam sousedů: cíl kliknutí min. 36 px, protože tohle je hlavní
+     způsob procházení grafu na dotykovém displeji, kde trefit se do
+     tečky na plátně nejde. */
+  .graph-count {
+    margin-top: 0.5rem; font-size: 0.75rem; color: var(--text-faint);
+    font-variant-numeric: tabular-nums;
+  }
+  .graph-count-warn { color: #fcd34d; }
+
+  .graph-inspector-neighbors { margin-top: 1rem; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 0.75rem; }
+  .graph-inspector-subheading { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-faint); margin-bottom: 0.4rem; }
+  .graph-inspector-neighbor-list { display: flex; flex-direction: column; gap: 0.125rem; }
+  .graph-inspector-neighbor {
+    display: flex; align-items: baseline; gap: 0.5rem; width: 100%;
+    min-height: 36px; padding: 0.3rem 0.4rem; border-radius: 0.375rem;
+    text-align: left; color: rgba(255,255,255,0.78); font-size: 0.8125rem;
+    transition: background-color 120ms, color 120ms;
+  }
+  .graph-inspector-neighbor:hover { background: rgba(255,255,255,0.06); color: #fff; }
+  .graph-inspector-neighbor:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+  .graph-inspector-neighbor-label { flex: 1 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .graph-inspector-neighbor-meta { flex: 0 0 auto; font-size: 0.6875rem; color: var(--text-faint); font-variant-numeric: tabular-nums; }
 
   .graph-path-note { font-size: 0.75rem; color: var(--text-faint); margin-bottom: 0.5rem; }
   .graph-path-steps { display: flex; flex-wrap: wrap; align-items: center; gap: 0.15rem; font-size: 0.8125rem; }

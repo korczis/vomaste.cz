@@ -1,6 +1,6 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
-title = "Tünde Bartha — pověřena řízením 2018–2021; dle zpravodajství vede úřad i v roce 2026 — Úřad vlády ČR"
+title = "Tünde Bartha — pověřena řízením 2018–2021; 15. 12. 2025 jmenována vedoucí Úřadu vlády (primární úřední zdroj) — Úřad vlády ČR"
 template = "dossier-relation.html"
 weight = 1
 
@@ -14,9 +14,9 @@ rel_id = "edge-bartha-vlada"
 source = "bartha"
 target = "vlada"
 relation_type = "HOLDS_ROLE"
-label = "pověřena řízením 2018–2021; dle zpravodajství vede úřad i v roce 2026"
+label = "pověřena řízením 2018–2021; 15. 12. 2025 jmenována vedoucí Úřadu vlády (primární úřední zdroj)"
 status = "contextual"
-claims = ["CLM-07", "CLM-08"]
-sources = ["SRC-01", "SRC-04"]
+claims = ["CLM-07", "CLM-08", "CLM-09"]
+sources = ["SRC-01", "SRC-04", "SRC-06"]
 +++
 Kontextový, strukturální vztah — dossier jej neuvádí jako vlastní doloženou investigaci, jen jako veřejně nesporné pozadí.

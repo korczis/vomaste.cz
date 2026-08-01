@@ -61,6 +61,21 @@
         class="graph-chip">Celý registr ({{ manifest.layers.registry.node_count }} uzlů / {{ manifest.layers.registry.edge_count }} hran)</button>
       <button type="button" class="fs-btn ml-auto" data-fs-target="global-map-workbench" title="Zobrazit na celou obrazovku" aria-label="Zobrazit na celou obrazovku">⛶</button>
     </div>
+    {#- Hloubka procházení. Engine (reducers.js, focusDepth) uměl zvýraznit
+        sousedy vybraného uzlu i celou souvislou komponentu, a permalink to
+        i ukládal do adresy — ale nic to nevolalo, takže se k té funkci
+        nedalo dostat. Tohle je to chybějící ovládání.
+
+        Má smysl až po výběru uzlu; do té doby nemá co zvýrazňovat, proto
+        je popsané jako „okolí vybraného uzlu". -#}
+    <div class="graph-toolbar mb-2" role="group" aria-label="Zvýraznit okolí vybraného uzlu">
+      <span class="text-xs text-white/55">Okolí vybraného uzlu:</span>
+      {%- for d in ["0::vypnuto", "1::sousedé", "2::dva kroky", "component::celá komponenta"] %}
+      {%- set dp = d | split(pat="::") %}
+      <button type="button" class="graph-chip" data-graph-depth="{{ dp.0 }}"
+        aria-pressed="{% if dp.0 == '0' %}true{% else %}false{% endif %}">{{ dp.1 }}</button>
+      {%- endfor %}
+    </div>
     <div class="graph-toolbar mb-4" role="group" aria-label="Nástroje mapy">
       <label class="sr-only" for="graph-search-input">Hledat v grafu</label>
       <input id="graph-search-input" type="search" data-graph-search placeholder="Hledat podle názvu, ID, dossieru…" class="graph-search-input">
@@ -112,6 +127,13 @@
         <p class="graph-inspector-empty">Nic není vybráno. Klikněte na uzel nebo hranu.</p>
       </aside>
     </div>
+    {#- Viditelné počítadlo. Hlášení v data-graph-status je sr-only, takže
+        počet uzlů po filtru slyšel jen odečítač — vidoucí uživatel viděl
+        jen ztlumené tečky a nepoznal, jestli našel dva záznamy nebo dvě
+        stě. Verbózní hlášení (výběr uzlu, průběh načítání) zůstávají
+        sr-only, aby vizuální lišta nebyla hlučná; sem jde jen počet
+        a případná porucha. -#}
+    <p data-graph-count aria-hidden="true" class="graph-count"></p>
     <p class="sr-only" data-graph-status role="status" aria-live="polite"></p>
     <noscript><p class="mb-8 mt-4 text-xs text-white/50">Interaktivní mapa vyžaduje JavaScript — použijte textový registr níže.</p></noscript>
 

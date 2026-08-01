@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/case.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/petr-vencalek/cases/CASE-01",
+  "@type": "vomaste:Case",
+  "recordType": "case",
+  "identifier": "CASE-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/petr-vencalek"
+  },
+  "title": "Vlastnictví GMR GAS s.r.o. a vazba na GMR GAS UA LLC",
+  "summary": "Petr Vencálek je jediným společníkem a jednatelem české GMR GAS s.r.o. Podle Investigace.cz je tato firma spojena s ukrajinskou GMR GAS UA LLC, ve které měl ministr Petr Macinka nepřiznaný 20% podíl. Žádný citovaný zdroj Vencálkovi ani jeho firmě nic nevytýká.",
+  "period": "od 2014",
+  "status": "status-corroborated",
+  "statusLabel": "Rejstříková vazba, bez tvrzení o pochybení",
+  "anchor": "kauza-gmrgas",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-vencalek/claims/CLM-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-vencalek/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-vencalek/claims/CLM-03"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-vencalek/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-vencalek/sources/SRC-02"
+    }
+  ],
+  "subjects": [
+    "vencalek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Plné znění, zdroje a kontext tohoto případu jsou v [hlavním přehledu\ndossieru](@/dossiers/petr-vencalek/_index.md#kauza-gmrgas)."
+    }
+  ],
+  "order": 1
+}

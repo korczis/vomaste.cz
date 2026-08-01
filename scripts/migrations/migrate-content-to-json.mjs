@@ -662,7 +662,7 @@ function summarizeCounts(outputs, perDossierCounts) {
 
 // --- křížové ověření proti buildRecordTables (závazný oracle) -----------
 async function crossCheckAgainstRecordTables(root, outputs) {
-  const { buildRecordTables } = await import("../dossier/lib/record-tables.mjs");
+  const { buildRecordTables } = await import("./lib/legacy-record-tables.mjs");
   const rows = buildRecordTables(root);
   const errors = [];
   const get = (path) => outputs.get(path)?.record;

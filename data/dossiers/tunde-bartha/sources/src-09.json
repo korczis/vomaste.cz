@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-09",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-09",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tunde-bartha"
+  },
+  "title": "SRC-09 — Agrofert: Agrofert posiluje partnerství s Univerzitou Istvána Széchenyiho (13. 9. 2024)",
+  "description": "Firemní web označuje Barthu za country managerku AGROFERT Hungária s odpovědností za řízení rozvoje koncernu ve východní Evropě a v dalších regionech.",
+  "outlet": "Agrofert (agrofert.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://www.agrofert.cz/akce-a-aktuality/agrofert-posiluje-partnerstvi-s-univerzitou-istvana-szechenyiho-podpori-rozvoj",
+  "published": "2024-09-13",
+  "retrieved": "2026-08-01",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-13"
+    }
+  ],
+  "subjects": [
+    "bartha"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Firemní aktualita Agrofertu z 13. 9. 2024 označuje Tünde Barthu za\n„country managerku za AGROFERT Hungária, která má zároveň na starosti\nřízení rozvoje koncernu ve východní Evropě“ a v dalších regionech, kam\nkoncern dosud neexpandoval (Balkán, Blízký východ).\n\n**Co zdroj dokládá a limity**: jde o **firemní** primární zdroj — popis\npracovního zařazení vlastní zaměstnankyně samotným holdingem. Dokládá\ndatovaný employment fact; nedokládá smluvní interval působení\n(zůstává v [GAP-04](@/dossiers/tunde-bartha/gaps/gap-04.md)) a jako\nstrana věci není nezávislou redakcí.\n\n**Nezávislost**: firemní zdroj, jediný přímo otevřený k této konkrétní\nfunkci — stav `1 ZDROJ`. Otevřeno a přečteno 2026-08-01."
+    }
+  ],
+  "order": 9
+}

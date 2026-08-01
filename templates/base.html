@@ -266,7 +266,11 @@
           </div>
         </template>
       </div>
-      <p x-show="open && query.trim().length > 0 && flat.length === 0" x-cloak class="absolute left-0 right-0 top-full z-50 mt-1 rounded-lg border border-white/10 bg-black p-3 text-xs text-white/50">Nic nenalezeno pro „<span x-text="query"></span>“. Zkuste ID záznamu (CLM-##, SRC-##), jméno, kauzu nebo vydavatele.</p>
+      {#- Nenačtený rejstřík NENÍ prázdný výsledek: „Nic nenalezeno" by
+          uživatele nechalo v přesvědčení, že záznam neexistuje, přestože
+          hledání vůbec neběželo. Rozlišené hlášení proto i vizuálně. -#}
+      <p x-show="open && query.trim().length > 0 && flat.length === 0 && !loadError" x-cloak class="absolute left-0 right-0 top-full z-50 mt-1 rounded-lg border border-white/10 bg-black p-3 text-xs text-white/50">Nic nenalezeno pro „<span x-text="query"></span>“. Zkuste ID záznamu (CLM-##, SRC-##), jméno, kauzu nebo vydavatele.</p>
+      <p x-show="open && loadError" x-cloak class="absolute left-0 right-0 top-full z-50 mt-1 rounded-lg border border-amber-400/40 bg-black p-3 text-xs text-amber-200/90">Rejstřík hledání se nepodařilo načíst, takže výsledky teď nejsou k dispozici — <strong>neznamená to, že záznam neexistuje</strong>. Zkuste to znovu, nebo procházejte přes <a href="/dossiers/" class="underline">seznam dossierů</a>.</p>
       <p class="sr-only" role="status" aria-live="polite" x-text="resultAnnouncement"></p>
     </div>
 

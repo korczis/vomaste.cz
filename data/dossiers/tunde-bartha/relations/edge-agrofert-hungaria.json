@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/relations/edge-agrofert-hungaria",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-agrofert-hungaria",
+  "relationId": "edge-agrofert-hungaria",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tunde-bartha"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/agrofert"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/agrofert-hungaria"
+  },
+  "relationType": "HOLDS_INTEREST_IN",
+  "label": "maďarská společnost koncernu",
+  "status": "contextual",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-13"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-09"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 5,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextový, strukturální vztah — dossier jej neuvádí jako vlastní doloženou investigaci, jen jako veřejně nesporné pozadí."
+    }
+  ]
+}

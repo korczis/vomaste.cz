@@ -9,13 +9,14 @@
   "entityId": "pavel",
   "title": "Petr Pavel (prezident)",
   "entityType": "person",
-  "publicationRole": "context",
-  "dossierEnabled": false,
-  "dossierStatus": "not_authorized",
-  "coverageState": "contextual",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "full",
   "dossiers": [
     "macinka-turek",
-    "filip-turek"
+    "filip-turek",
+    "petr-pavel"
   ],
   "routeAliases": [
     "/dossiers/macinka-turek/entities/pavel/"

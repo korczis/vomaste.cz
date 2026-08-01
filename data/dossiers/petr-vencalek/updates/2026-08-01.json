@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/petr-vencalek/updates/2026-08-01",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-08-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/petr-vencalek"
+  },
+  "date": "2026-08-01",
+  "summary": "Založen dossier dle AUTH-2026-08-01-VENCALEK ze dvou zdrojů dříve otevřených a přečtených pro dossier petr-macinka (Investigace.cz, ARES — zde jako SRC-01/02, nový fyzický záznam téhož faktu). Rozsah: vlastnictví/jednatelství GMR GAS s.r.o. a vazba na GMR GAS UA LLC. Druhé autorizované téma (dary Klubu motoristů) zůstává bez zdroje — zapsáno jako GAP-01, ne jako tvrzení.",
+  "addedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-vencalek/claims/CLM-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-vencalek/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-vencalek/claims/CLM-03"
+    }
+  ],
+  "updatedClaims": [],
+  "addedGaps": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-vencalek/gaps/GAP-01"
+    }
+  ],
+  "closedGaps": [],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-vencalek/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-vencalek/sources/SRC-02"
+    }
+  ]
+}

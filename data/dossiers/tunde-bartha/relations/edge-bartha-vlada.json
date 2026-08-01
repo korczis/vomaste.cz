@@ -17,7 +17,7 @@
     "@id": "https://vomaste.cz/id/entities/vlada"
   },
   "relationType": "HOLDS_ROLE",
-  "label": "pověřena řízením 2018–2021; dle zpravodajství vede úřad i v roce 2026",
+  "label": "pověřena řízením 2018–2021; 15. 12. 2025 jmenována vedoucí Úřadu vlády (primární úřední zdroj)",
   "status": "contextual",
   "claims": [
     {
@@ -25,6 +25,9 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-09"
     }
   ],
   "sources": [
@@ -33,6 +36,9 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-06"
     }
   ],
   "subjects": [],

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/case.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/cases/CASE-03",
+  "@type": "vomaste:Case",
+  "recordType": "case",
+  "identifier": "CASE-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tunde-bartha"
+  },
+  "title": "Vedení prezidentské kampaně Andreje Babiše",
+  "summary": "Bartha podle zpravodajství z prosince 2022 vedla prezidentskou kampaň Andreje Babiše a spolupracovala s ním „už sedmým rokem“; Babiš tehdy uvedl, že v případě volebního vítězství by se stala jeho kancléřkou — šlo o zamýšlenou budoucí roli deklarovanou v průběhu kampaně, nikoli o zastávanou funkci. Jde o doloženou politickou a organizační roli, žádný citovaný zdroj v souvislosti s ní netvrdí protiprávní jednání.",
+  "period": "2022–2023",
+  "status": "status-single",
+  "statusLabel": "Doložená politická a organizační role",
+  "anchor": "kauza-kampan",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-11"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-07"
+    }
+  ],
+  "subjects": [],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Plné znění, zdroje a kontext tohoto případu jsou v [hlavním přehledu\ndossieru](@/dossiers/tunde-bartha/_index.md#kauza-kampan)."
+    }
+  ],
+  "order": 3
+}

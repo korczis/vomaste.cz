@@ -8,11 +8,11 @@
 // (mission § 19.2): a page that omits the filter/path-finder markup just
 // doesn't get that feature, nothing throws.
 import { GraphController } from "./controller.js";
-import { computeReducers } from "./reducers.js";
+import { computeReducers, countMatching } from "./reducers.js";
 import { createGraphState } from "./state.js";
 import { readStateFromUrl, writeStateToUrl } from "./permalink.js";
 import { fetchLayer, readJsonIsland } from "./loader.js";
-import { renderNodeInspector, renderEdgeInspector, clearInspector } from "./inspector.js";
+import { renderNodeInspector, renderEdgeInspector, renderNeighbors, clearInspector } from "./inspector.js";
 import { shortestPath } from "./path-finder.js";
 
 const DEFAULT_LAYER = "curated";
@@ -20,6 +20,17 @@ const DEFAULT_LAYER = "curated";
 function announce(section, message) {
   const status = section && section.querySelector("[data-graph-status]");
   if (status) status.textContent = message;
+}
+
+// Viditelný protějšek sr-only hlášení. Odděleno schválně: do vizuální
+// lišty patří jen počet a porucha, ne každé oznámení o výběru uzlu —
+// jinak by se lišta při procházení překreslovala u každého kliknutí
+// a přestala by se číst jako stav.
+function showCount(section, message, warn) {
+  const el = section && section.querySelector("[data-graph-count]");
+  if (!el) return;
+  el.textContent = message;
+  el.classList.toggle("graph-count-warn", Boolean(warn));
 }
 
 // mission § 13: WebGL unavailable/blocked must never leave a blank
@@ -74,8 +85,42 @@ export async function initGraphView(containerId, dataIslandId, fullLayerUrl) {
 
   function refreshReducers() {
     if (!controller.graph) return;
-    const { nodeReducer, edgeReducer } = computeReducers(controller.graph, state.get());
+    const snapshot = state.get();
+    const { nodeReducer, edgeReducer } = computeReducers(controller.graph, snapshot);
     controller.setReducers(nodeReducer, edgeReducer);
+    announceFilter(snapshot);
+  }
+
+  // Filtr uzly ZTLUMÍ, ale nesmaže je z plátna, takže po zadání dotazu
+  // uživatel nepozná, jestli našel dva záznamy nebo dvě stě. Bez tohohle
+  // hlášení je hledání v grafu o 1631 uzlech odhad.
+  //
+  // Počítá countMatching TÝMIŽ predikáty jako reducery — jinak by se
+  // hlášené číslo rozešlo s tím, co je vidět.
+  function announceFilter(snapshot) {
+    if (!controller.graph) return;
+    const { matching, total, active } = countMatching(controller.graph, snapshot);
+    if (!active) {
+      // Po zrušení filtru se MUSÍ počítadlo přepsat, ne jen přeskočit:
+      // jinak by nad plným grafem zůstalo viset staré „3 z 1631",
+      // tedy číslo, které už neplatí. Zastaralý údaj je horší než žádný,
+      // protože se tváří stejně důvěryhodně jako platný.
+      showCount(section, `${total} uzlů`, false);
+      return;
+    }
+    announce(
+      section,
+      matching === 0
+        ? `Filtru neodpovídá žádný z ${total} uzlů.`
+        : `Filtru odpovídá ${matching} z ${total} uzlů.`,
+    );
+    showCount(
+      section,
+      matching === 0
+        ? `Filtru neodpovídá žádný z ${total} uzlů`
+        : `${matching} z ${total} uzlů odpovídá filtru`,
+      matching === 0,
+    );
   }
 
   function refreshInspector() {
@@ -88,6 +133,12 @@ export async function initGraphView(containerId, dataIslandId, fullLayerUrl) {
     if (selected.kind === "node" && controller.graph.hasNode(selected.id)) {
       const attrs = controller.graph.getNodeAttributes(selected.id);
       renderNodeInspector(inspectorEl, attrs);
+      // Prokliknutí souseda je běžný pohyb v grafu, ne otevření nové
+      // stránky: mění se výběr, takže zůstane zachovaný filtr, vrstva
+      // i hloubka zvýraznění a adresa se udrží sdílitelná.
+      renderNeighbors(inspectorEl, controller.graph, selected.id, (id) => {
+        state.setSelected({ kind: "node", id });
+      });
       const degree = controller.graph.degree(selected.id);
       announce(section, `Vybrán uzel ${attrs.label}, ${attrs.recordType === "entity" ? attrs.entityType || "entita" : attrs.recordType}, ${degree} přímých deklarovaných vazeb.`);
     } else if (selected.kind === "edge" && controller.graph.hasEdge(selected.id)) {
@@ -105,10 +156,26 @@ export async function initGraphView(containerId, dataIslandId, fullLayerUrl) {
 
   async function activateLayer(key) {
     if (key === "full" && !layers.full && fullLayerUrl) {
+      // Registrová vrstva má 1690 uzlů a stahuje se na vyžádání, takže
+      // mezi kliknutím a překreslením je znatelná prodleva. Bez
+      // viditelného průběhu vypadá pomalé připojení stejně jako
+      // rozbité tlačítko a uživatel klikne znovu.
       announce(section, "Načítám registrovou vrstvu…");
-      layers.full = await fetchLayer(fullLayerUrl);
+      showCount(section, "Načítám registrovou vrstvu…", false);
+      // fetchLayer chybu ZÁMĚRNĚ přehazuje dál (aby se do cache neuložil
+      // neúspěch), takže se musí odchytit tady. Bez toho výjimka
+      // propadla ven z activateLayer jako neošetřené odmítnutí a
+      // v liště zůstalo viset „Načítám…" navždy — chybová větev níž
+      // byla pro výpadek sítě nedosažitelná a řešila jen prázdnou
+      // odpověď. Nejhorší podoba selhání: vypadá jako pomalé připojení.
+      layers.full = await fetchLayer(fullLayerUrl).catch(() => null);
       if (!layers.full) {
+        // Dřív se porucha hlásila jen do sr-only oblasti: vidoucí
+        // uživatel klikl na „celý registr", nic se nestalo a nedozvěděl
+        // se proč. Tichá porucha je k nerozeznání od nefunkčního
+        // ovládání — a svádí k závěru, že data neexistují.
         announce(section, "Registrovou vrstvu se nepodařilo načíst.");
+        showCount(section, "Registrovou vrstvu se nepodařilo načíst — zkuste to znovu.", true);
         return;
       }
     }
@@ -118,6 +185,9 @@ export async function initGraphView(containerId, dataIslandId, fullLayerUrl) {
     state.setLayer(key);
     layerButtons.forEach((b) => b.setAttribute("aria-pressed", String(b.getAttribute("data-graph-layer") === key)));
     announce(section, `Vrstva „${key === "full" ? "celý registr" : "vztahy entit"}" — ${payload.nodes.length} uzlů, ${payload.edges.length} hran.`);
+    // Po úspěšném přepnutí musí počítadlo odpovídat NOVÉ vrstvě, jinak
+    // by tam zůstalo číslo z předchozí (nebo hlášení o načítání).
+    refreshReducers();
   }
 
   // Initial layer: from URL if valid, else the default. Restored in a
@@ -143,6 +213,19 @@ export async function initGraphView(containerId, dataIslandId, fullLayerUrl) {
   if (searchEl) {
     searchEl.addEventListener("input", () => state.setQuery(searchEl.value));
   }
+  // Hloubka procházení: 0 = bez zvýraznění, 1/2 = kroky od vybraného uzlu,
+  // "component" = celá souvislá komponenta. Hodnota jde i do adresy, takže
+  // konkrétní pohled na okolí záznamu je sdílitelný.
+  const depthButtons = section ? section.querySelectorAll("[data-graph-depth]") : [];
+  depthButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const raw = btn.getAttribute("data-graph-depth");
+      const value = raw === "component" ? "component" : Number(raw);
+      state.setFocusDepth(value);
+      depthButtons.forEach((b) => b.setAttribute("aria-pressed", String(b === btn)));
+    });
+  });
+
   filterEls.forEach((select) => {
     select.addEventListener("change", () => {
       const key = select.getAttribute("data-graph-filter") === "record_type" ? "recordType" : "dossier";

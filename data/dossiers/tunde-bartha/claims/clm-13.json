@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-13",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-13",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tunde-bartha"
+  },
+  "text": "Agrofert v září 2024 na svém webu označil Barthu za country managerku společnosti AGROFERT Hungária, „která má zároveň na starosti řízení rozvoje koncernu ve východní Evropě“ a v dalších regionech, kam koncern dosud neexpandoval (Balkán, Blízký východ); jde o popis pracovního zařazení z firemního zdroje, ne o tvrzení o jakémkoli pochybení",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-09"
+    }
+  ],
+  "subjects": [],
+  "order": 13,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/tunde-bartha/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

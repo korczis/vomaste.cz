@@ -20,7 +20,7 @@ dossiers = ["tunde-bartha"]
 depth = 0
 subject = true
 discovered_at = "2026-07-30"
-discovered_via = ["edge-bartha-vlada", "edge-bartha-agrofert", "edge-bartha-praha3", "edge-bartha-imoba"]
+discovered_via = ["edge-bartha-vlada", "edge-bartha-agrofert", "edge-bartha-kampan", "edge-bartha-agrofert-hungaria", "edge-bartha-praha3", "edge-bartha-imoba"]
 claims = ["CLM-07", "CLM-08"]
 sources = ["SRC-01", "SRC-04"]
 +++

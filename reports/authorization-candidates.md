@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 63 context entities across 22 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 63 context entities across 24 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -43,7 +43,20 @@ Generated from 63 context entities across 22 dossier(s). Regenerate with `npm ru
   - edge-agrofert-vodnanska (agrofert -> vodnanska-drubez, "firma ze skupiny", dossier: andrej-babis)
   - edge-babis-agrofert (babis -> agrofert, "vlastnické vazby; od 2/2026 akcie ve svěřenském fondu RSVP Trust, míra vlivu sporná; dividenda 4,25 mld. Kč vyplacena před vkladem (legální krok)", dossier: andrej-babis)
   - edge-rsvp-agrofert (rsvp-trust -> agrofert, "drží akcie Agrofertu (vloženy 2/2026)", dossier: andrej-babis)
-  - edge-bartha-agrofert (bartha -> agrofert, "business development manager (dle zpravodajství, potvrzeno mluvčím)", dossier: tunde-bartha)
+  - edge-agrofert-hungaria (agrofert -> agrofert-hungaria, "maďarská společnost koncernu", dossier: tunde-bartha)
+  - edge-bartha-agrofert (bartha -> agrofert, "business development manager (dle zpravodajství, potvrzeno mluvčím); firemní web 9/2024: country managerka AGROFERT Hungária", dossier: tunde-bartha)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## AGROFERT Hungária (`agrofert-hungaria`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: tunde-bartha
+- Claims: CLM-13
+- Sources: SRC-09 (1 independent source family)
+- Relations: 
+  - edge-agrofert-hungaria (agrofert -> agrofert-hungaria, "maďarská společnost koncernu", dossier: tunde-bartha)
+  - edge-bartha-agrofert-hungaria (bartha -> agrofert-hungaria, "country managerka (dle firemního webu, 9/2024) — popis pracovního zařazení, ne tvrzení o pochybení", dossier: tunde-bartha)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## JUDr. Alexej Bílek (`alexej-bilek`)
@@ -170,12 +183,13 @@ Generated from 63 context entities across 22 dossier(s). Regenerate with `npm ru
 
 - Type: company
 - Status: not_authorized
-- Appears in: macinka-turek, petr-macinka
-- Claims: CLM-46, CLM-47, CLM-48
-- Sources: SRC-17, SRC-55 (2 independent source families)
+- Appears in: macinka-turek, petr-macinka, petr-vencalek
+- Claims: CLM-46, CLM-47, CLM-48, CLM-01
+- Sources: SRC-17, SRC-55, SRC-01, SRC-02 (4 independent source families)
 - Relations: 
   - edge-gmrgascz-gmrgas (gmrgas-cz -> gmrgas, "podíl v ukrajinské pobočce", dossier: macinka-turek)
   - edge-vencalek-gmrgascz (vencalek -> gmrgas-cz, "jediný společník a jednatel", dossier: macinka-turek)
+  - edge-vencalek-gmrgascz (vencalek -> gmrgas-cz, "jediný společník a jednatel", dossier: petr-vencalek)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Zmocněnec pro Green Deal (`greendeal`)
@@ -241,6 +255,18 @@ Generated from 63 context entities across 22 dossier(s). Regenerate with `npm ru
 - Claims: none
 - Sources: none (0 independent source families)
 - Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Prezidentská kampaň Andreje Babiše (2022–2023) (`kampan-babis-2023`)
+
+- Type: event
+- Status: not_authorized
+- Appears in: tunde-bartha
+- Claims: CLM-10, CLM-11
+- Sources: SRC-07 (1 independent source family)
+- Relations: 
+  - edge-bartha-kampan (bartha -> kampan-babis-2023, "šéfka prezidentské kampaně (12/2022); zmínka o kancléřce = zamýšlená budoucí role, ne funkce", dossier: tunde-bartha)
+  - edge-kampan-babis (kampan-babis-2023 -> babis, "kampaň kandidáta Andreje Babiše", dossier: tunde-bartha)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Kauza 2024: fotografie a svícny (`kauza2024`)
@@ -471,18 +497,6 @@ Generated from 63 context entities across 22 dossier(s). Regenerate with `npm ru
   - edge-capihnizdo-olaf (capi-hnizdo -> olaf, "šetření OLAF; zveřejněné části zprávy hovoří o nesrovnalostech — zjištění kontrolního úřadu, ne rozsudek", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
-## Petr Pavel (prezident) (`pavel`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: macinka-turek, filip-turek
-- Claims: CLM-38
-- Sources: SRC-44 (1 independent source family)
-- Relations: 
-  - edge-pavel-mzp2026 (pavel -> mzp2026, "odmítl jmenovat", dossier: macinka-turek)
-  - edge-turek-pavel (turek -> pavel, "hrozil žalobou (1/2026), nakonec nepodal (7/2026)", dossier: macinka-turek)
-- Missing: explicit owner authorization to promote this to its own dossier
-
 ## Mgr. Pavel Hanus (`pavel-hanus`)
 
 - Type: person
@@ -703,17 +717,6 @@ Generated from 63 context entities across 22 dossier(s). Regenerate with `npm ru
   - edge-vodnanska-ustavnisoud (vodnanska-drubez -> ustavni-soud, "ústavní stížnost odmítnuta 1/2026 (dotace 75 mil. Kč) — spor o nárok na dotaci, ne o vině", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
-## Petr Vencálek (vlastník GMR GAS s.r.o.) (`vencalek`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: macinka-turek, petr-macinka
-- Claims: CLM-48
-- Sources: SRC-17, SRC-55 (2 independent source families)
-- Relations: 
-  - edge-vencalek-gmrgascz (vencalek -> gmrgas-cz, "jediný společník a jednatel", dossier: macinka-turek)
-- Missing: explicit owner authorization to promote this to its own dossier
-
 ## Vláda ČR (`vlada`)
 
 - Type: public_institution
@@ -738,7 +741,7 @@ Generated from 63 context entities across 22 dossier(s). Regenerate with `npm ru
   - edge-cerveny-vlada (cerveny -> vlada, "ministr životního prostředí", dossier: igor-cerveny)
   - edge-plaga-vlada (plaga -> vlada, "ministr školství, mládeže a tělovýchovy", dossier: robert-plaga)
   - edge-sebestyan-vlada (sebestyan -> vlada, "ministr zemědělství", dossier: martin-sebestyan)
-  - edge-bartha-vlada (bartha -> vlada, "pověřena řízením 2018–2021; dle zpravodajství vede úřad i v roce 2026", dossier: tunde-bartha)
+  - edge-bartha-vlada (bartha -> vlada, "pověřena řízením 2018–2021; 15. 12. 2025 jmenována vedoucí Úřadu vlády (primární úřední zdroj)", dossier: tunde-bartha)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Vodňanská drůbež (`vodnanska-drubez`)

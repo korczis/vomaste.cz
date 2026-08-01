@@ -82,6 +82,70 @@ export function renderEdgeInspector(container, attrs) {
   if (link) container.append(link);
 }
 
+// Seznam sousedů = vlastní procházení grafu.
+//
+// Bez něj se k sousednímu záznamu dostaneš jen tak, že se na plátně s
+// 1631 uzly trefíš do správné tečky. To není procházení, to je zručnost
+// s myší — a na dotykovém displeji to nejde vůbec.
+//
+// Sousedé se řadí podle stupně sestupně: uzel s mnoha vazbami je
+// zpravidla ten, kudy vede cesta dál. Seznam se zkracuje, protože
+// rozbalený seznam dvou set sousedů je stejně nepoužitelný jako žádný —
+// zbytek je dostupný přes filtr.
+const MAX_SOUSEDU = 12;
+
+export function renderNeighbors(container, graph, nodeId, onPick) {
+  const existing = container.querySelector("[data-graph-neighbors]");
+  if (existing) existing.remove();
+  if (!graph || !graph.hasNode(nodeId)) return;
+
+  const neighbors = graph
+    .neighbors(nodeId)
+    .map((id) => ({ id, attrs: graph.getNodeAttributes(id), degree: graph.degree(id) }))
+    .sort((a, b) => b.degree - a.degree || String(a.attrs.label).localeCompare(String(b.attrs.label), "cs"));
+
+  const box = el("nav", { "data-graph-neighbors": "", class: "graph-inspector-neighbors", "aria-label": "Propojené záznamy" });
+  box.append(
+    el("h4", {
+      class: "graph-inspector-subheading",
+      text: neighbors.length === 0 ? "Bez deklarovaných vazeb" : `Propojené záznamy (${neighbors.length})`,
+    }),
+  );
+
+  if (neighbors.length === 0) {
+    // Uzel bez vazeb je legitimní stav, ne chyba — ale musí se říct,
+    // jinak vypadá prázdný seznam jako nenačtený seznam.
+    box.append(el("p", { class: "graph-inspector-note", text: "Tento záznam nemá v grafu žádnou deklarovanou vazbu." }));
+    container.append(box);
+    return;
+  }
+
+  const list = el("ul", { class: "graph-inspector-neighbor-list" });
+  for (const n of neighbors.slice(0, MAX_SOUSEDU)) {
+    const btn = el("button", {
+      type: "button",
+      class: "graph-inspector-neighbor",
+      "data-neighbor-id": n.id,
+    }, [
+      el("span", { class: "graph-inspector-neighbor-label", text: n.attrs.label || n.id }),
+      el("span", {
+        class: "graph-inspector-neighbor-meta",
+        text: `${RECORD_LABEL[n.attrs.recordType] || n.attrs.recordType} · ${n.degree}`,
+      }),
+    ]);
+    btn.addEventListener("click", () => onPick(n.id));
+    list.append(el("li", null, [btn]));
+  }
+  box.append(list);
+  if (neighbors.length > MAX_SOUSEDU) {
+    box.append(el("p", {
+      class: "graph-inspector-note",
+      text: `Zobrazeno ${MAX_SOUSEDU} z ${neighbors.length}; zbytek zúžíte filtrem.`,
+    }));
+  }
+  container.append(box);
+}
+
 export function clearInspector(container, emptyMessage) {
   container.replaceChildren(el("p", { class: "graph-inspector-empty", text: emptyMessage || "Nic není vybráno. Klikněte na uzel nebo hranu." }));
 }

@@ -1,0 +1,44 @@
+# Relationship graph for the Petr Pavel dossier. Projection of the
+# claim/source registries — every edge carries a CLM-## and SRC-## that
+# exist there. Scope is narrow on purpose (AUTH-2026-08-01-PAVEL): only
+# the already-documented appointment-refusal thread, transplanted from
+# macinka-turek's context-entity appearance of "pavel", not a new
+# investigation into the presidency.
+
+[[nodes]]
+id = "pavel"
+type = "person"
+label = "Petr Pavel"
+depth = 0
+subject = true
+claims = ["CLM-01"]
+sources = ["SRC-01", "SRC-02"]
+
+[[nodes]]
+id = "turek"
+type = "person"
+label = "Filip Turek"
+depth = 1
+subject = false
+claims = ["CLM-02", "CLM-03"]
+sources = ["SRC-01", "SRC-03", "SRC-04"]
+
+[[edges]]
+id = "edge-pavel-turek-nejmenovani"
+source = "pavel"
+target = "turek"
+relation = "DENIED"
+label = "odmítl jmenovat ministrem životního prostředí (leden 2026)"
+status = "corroborated"
+claims = ["CLM-01"]
+sources = ["SRC-01", "SRC-02"]
+
+[[edges]]
+id = "edge-turek-pavel-zaloba"
+source = "turek"
+target = "pavel"
+relation = "RESPONDED_TO"
+label = "hrozil žalobou (1/2026), nakonec nepodal (7/2026)"
+status = "corroborated"
+claims = ["CLM-02", "CLM-03"]
+sources = ["SRC-01", "SRC-03", "SRC-04"]

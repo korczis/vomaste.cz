@@ -9,6 +9,13 @@
 # an unknown group, and on a landing tile whose text is missing.
 
 [[groups]]
+id = "zaklad"
+label = "Základ"
+lead = "Co je dossier — výchozí pojem, na kterém stojí všechno ostatní."
+order = 5
+icon = "M4 5h16v14H4z M8 9h8 M8 13h5"
+
+[[groups]]
 id = "identita"
 label = "Co to je a co to není"
 lead = "Vymezení projektu — pozitivní i negativní, obojí závazné."

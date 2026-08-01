@@ -9,16 +9,19 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/tunde-bartha"
   },
-  "title": "GAP-02 — Přesné datum nástupu do současné funkce",
-  "description": "Datum nástupu Tünde Barthy do funkce vedoucí Úřadu vlády není doloženo primárním ani jmenovaně ozdrojovaným zpravodajstvím.",
-  "priority": "střední",
-  "checked": "2026-07-30",
+  "title": "GAP-02 — Přesné datum nástupu do současné funkce (uzavřeno 2026-08-01)",
+  "description": "Mezera uzavřena: primární úřední zdroj dokládá, že vláda Barthu jmenovala vedoucí Úřadu vlády na ustavující schůzi 15. 12. 2025.",
+  "priority": "nízká",
+  "checked": "2026-08-01",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-07"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-09"
     }
   ],
   "subjects": [
@@ -27,7 +30,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Že Tünde Bartha v červnu 2026 Úřad vlády vede, dokládají dvě nezávislá\nmédia ([CLM-07](@/dossiers/tunde-bartha/claims/clm-07.md)). **Přesné\ndatum nástupu doloženo není**:\n\n- Oficiální přehled Úřadu vlády\n  ([SRC-04](@/dossiers/tunde-bartha/sources/src-04.md)) ke dni stažení\n  2026-07-30 neuvádí nástupce po Petře Fojtíkové (do 15. 12. 2025).\n- Zpráva Echo24 z 9. 12. 2025 o jejím návratu se opírá o **nejmenované\n  zdroje** („Podle informací deníku Echo\") a je anticipační — oznamuje\n  očekávaný krok, nikoli potvrzené jmenování. Dossier ji proto necituje\n  jako zdroj tvrzení o datu.\n\nDatum 15. 12. 2025 uvádí encyklopedický souhrn, který tento web jako\nzdroj tvrzení nepoužívá. **Do doplnění primárního záznamu nebo jmenovaně\nozdrojované zprávy zůstává datum nedoložené.**"
+      "value": "**Co se od poslední revize uzavřelo (1. 8. 2026).** Dřívější znění této\nmezery konstatovalo, že přesné datum nástupu Tünde Barthy do funkce\nvedoucí Úřadu vlády není doloženo primárním ani jmenovaně ozdrojovaným\nzdrojem (oficiální přehled úřadu nástupce neuváděl a zpráva Echo24\nz 9. 12. 2025 stála na nejmenovaných zdrojích). To už neplatí: tisková\nzpráva Úřadu vlády z ustavující schůze vlády dokládá, že ji vláda\njmenovala **15. prosince 2025**\n([CLM-09](@/dossiers/tunde-bartha/claims/clm-09.md),\n[SRC-06](@/dossiers/tunde-bartha/sources/src-06.md)).\n\n**Co zůstává mimo záznam.** Tiskové sdělení není textem usnesení vlády\na neuvádí, na čí návrh byla jmenována; pro faktum a datum jmenování je\nvšak primární úřední zdroj dostačující. Mezera se tímto považuje za\n**uzavřenou** — záznam zůstává v registru jako auditní stopa toho, že\npředchozí stav („datum nedoloženo“) byl skutečný a kdy se změnil."
     }
   ],
   "order": 2

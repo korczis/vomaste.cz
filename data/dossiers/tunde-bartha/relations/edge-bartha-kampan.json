@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/relations/edge-bartha-kampan",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-bartha-kampan",
+  "relationId": "edge-bartha-kampan",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tunde-bartha"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/bartha"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/kampan-babis-2023"
+  },
+  "relationType": "HOLDS_ROLE",
+  "label": "šéfka prezidentské kampaně (12/2022); zmínka o kancléřce = zamýšlená budoucí role, ne funkce",
+  "status": "single",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-10"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-07"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 3,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Status: single."
+    }
+  ]
+}

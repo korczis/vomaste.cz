@@ -15,14 +15,14 @@ publication_role = "context"
 dossier_enabled = false
 dossier_status = "not_authorized"
 coverage_state = "discovered"
-dossiers = ["macinka-turek", "petr-macinka"]
-depth = 2
+dossiers = ["macinka-turek", "petr-macinka", "petr-vencalek"]
+depth = 1
 subject = false
 discovered_at = "2026-07-30"
 discovered_via = ["edge-gmrgascz-gmrgas"]
 cluster = "financni-vazby"
-claims = ["CLM-46", "CLM-47", "CLM-48"]
-sources = ["SRC-17", "SRC-55"]
+claims = ["CLM-46", "CLM-47", "CLM-48", "CLM-01"]
+sources = ["SRC-17", "SRC-55", "SRC-01", "SRC-02"]
 +++
 Česká společnost (IČO 28274318, Brno), kterou Investigace.cz v citovaném
 článku popisuje jen slovně jako „českou společnost vyrábějící regulátory

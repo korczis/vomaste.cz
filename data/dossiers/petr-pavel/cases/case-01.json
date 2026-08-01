@@ -1,0 +1,53 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/case.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/petr-pavel/cases/CASE-01",
+  "@type": "vomaste:Case",
+  "recordType": "case",
+  "identifier": "CASE-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/petr-pavel"
+  },
+  "title": "Nejmenování Filipa Turka ministrem životního prostředí",
+  "summary": "Prezident v lednu 2026 odmítl Turka jmenovat a rozhodnutí veřejně zdůvodnil; Turek o půl roku později oznámenou žalobu na ochranu osobnosti nakonec nepodal.",
+  "period": "2026-01–2026-07",
+  "status": "status-corroborated",
+  "statusLabel": "Ústavní pravomoc, veřejně zdůvodněná",
+  "anchor": "kauza-nejmenovani",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-pavel/claims/CLM-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-pavel/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-pavel/claims/CLM-03"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-pavel/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-pavel/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-pavel/sources/SRC-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-pavel/sources/SRC-04"
+    }
+  ],
+  "subjects": [
+    "pavel"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Plné znění, zdroje a kontext tohoto případu jsou v [hlavním přehledu\ndossieru](@/dossiers/petr-pavel/_index.md#kauza-nejmenovani)."
+    }
+  ],
+  "order": 1
+}

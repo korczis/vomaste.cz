@@ -210,3 +210,21 @@ dossier_type = "entity"
 subject = "chlad"
 canonical_dossier = "richard-chlad"
 show_in_primary_navigation = true
+
+[[dossiers]]
+# AGENTS.md AUTH-2026-08-01-PAVEL (Petr Pavel).
+slug = "petr-pavel"
+title = "Petr Pavel"
+dossier_type = "entity"
+subject = "pavel"
+canonical_dossier = "petr-pavel"
+show_in_primary_navigation = true
+
+[[dossiers]]
+# AGENTS.md AUTH-2026-08-01-VENCALEK (Petr Vencálek).
+slug = "petr-vencalek"
+title = "Petr Vencálek"
+dossier_type = "entity"
+subject = "vencalek"
+canonical_dossier = "petr-vencalek"
+show_in_primary_navigation = true

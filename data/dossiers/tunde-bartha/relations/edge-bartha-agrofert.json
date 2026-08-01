@@ -17,16 +17,22 @@
     "@id": "https://vomaste.cz/id/entities/agrofert"
   },
   "relationType": "HOLDS_ROLE",
-  "label": "business development manager (dle zpravodajství, potvrzeno mluvčím)",
+  "label": "business development manager (dle zpravodajství, potvrzeno mluvčím); firemní web 9/2024: country managerka AGROFERT Hungária",
   "status": "contextual",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-13"
     }
   ],
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-09"
     }
   ],
   "subjects": [],
