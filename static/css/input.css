@@ -108,6 +108,28 @@
   }
 
   .dossier-prose h2 { font-size: 1.25rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1rem; }
+  /* Tailwind preflight resetuje nadpisy na velikost běžného textu a nulové
+     okraje. Bez těchto pravidel byl h3 k nerozeznání od odstavce: podnadpis
+     seděl nalepený na textu pod sebou a členění se ztratilo. Postihovalo to
+     i živý dossier Andreje Babiše, ne jen novou stránku. */
+  /* Jedna šířka pro všechny sekce landing page. Dřív se střídaly max-w-3xl,
+     max-w-5xl a max-w-6xl, takže se obsah při scrollování rozšiřoval
+     a zužoval a stránka působila jako složená z cizích dílů.
+
+     Mobile-first: na úzkém displeji 1rem po stranách (ne 1,5rem) — na
+     390 px je to 32 px obsahu navíc, což je u hustých tabulek znát. */
+  .landing-section {
+    margin-inline: auto;
+    width: 100%;
+    max-width: 64rem;
+    padding-inline: 1rem;
+  }
+  @media (min-width: 640px) { .landing-section { padding-inline: 1.5rem; } }
+
+  .dossier-prose h3 { font-size: 1.0625rem; font-weight: 600; color: #fff; margin-top: 1.75rem; margin-bottom: 0.5rem; }
+  .dossier-prose h4 { font-size: 0.9375rem; font-weight: 600; color: rgba(255,255,255,0.9); margin-top: 1.25rem; margin-bottom: 0.375rem; }
+  /* Nadpis nesmí zůstat na konci stránky/sloupce oddělený od svého textu. */
+  .dossier-prose h2, .dossier-prose h3, .dossier-prose h4 { break-after: avoid-page; }
   .dossier-prose p { margin-bottom: 1rem; line-height: 1.7; color: rgba(255,255,255,0.85); }
   .dossier-prose ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem; }
   .dossier-prose li { margin-bottom: 0.5rem; line-height: 1.6; color: rgba(255,255,255,0.85); }
