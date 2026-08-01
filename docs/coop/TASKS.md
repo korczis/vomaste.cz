@@ -49,6 +49,23 @@ Autorizace: viz AGENTS.md, „Structural change, 2026-07-29 (second)".
 | T-015 | Advanced application shell — Playwright test suite + syntetický 1000-entity scale test (nepublikovat jako reálná data) + build-time validátory (`scripts/navigation/validate-*`, `scripts/ui/validate-*`). Fáze G | nové tests/, scripts/navigation/**, scripts/ui/** | – | volný | todo | T-011..T-014 | `npm run build` + browser testy zelené, scale test bez zamrznutí exploreru |
 | T-016 | `[scope-check]` Nový entity dossier: Oto Klempíř — vytvoření souborů + registrace. Autorizace: viz AGENTS.md, „Authorized subject: Oto Klempíř" (2026-07-30). Zdroje ověřeny přímým otevřením (ne snippet); jedna kandidátní položka vyřazena jako Reflex.cz fake-news/satira — viz autorizační záznam | content/dossiers/oto-klempir/**, data/dossiers.toml, data/dossiers/oto-klempir/** | – | volný | todo | T-001 | dossier založen, zdroje/tvrzení dle autorizovaného rozsahu, `npm run build` zelený, JSON-LD generováno stejným registry-driven mechanismem jako ostatní dossiery |
 
+## Aktivní zadání: graph workbench (2026-08-01)
+
+Zadání vlastníka: škálovatelný, datově řízený investigativní graph
+workbench nad globální mapou vztahů a lokálními dossierovými grafy —
+plný master prompt uložen doslovně v
+[`docs/missions/2026-08-01-graph-workbench-master-prompt.md`](../missions/2026-08-01-graph-workbench-master-prompt.md),
+povinný baseline audit v
+[`docs/audits/graph-workbench-baseline.md`](../audits/graph-workbench-baseline.md).
+Čistě technická mise (§ 2.1: žádný nový obsahový scope, autorizační log
+netknutý). Pozn.: prompt formuluje "zachovej Sigma.js 3, nepřecházej na
+GoJS" jako rozhodnutí — repo už dnes stojí na Sigma.js 3 + Graphology,
+žádná migrace neproběhla ani se nevynucuje (audit).
+
+| ID | Titul | Scope (soubory/sekce) | Branch | Owner | Stav | Závislosti | Akceptace |
+|----|-------|-----------------------|--------|-------|------|------------|-----------|
+| T-027 | Graph workbench fáze B–J — datový kontrakt (manifest + curated/registry/dossier payloady + schémata), build-time layout (deterministický ForceAtlas2 + Barnes-Hut), bundle split (graph-app.js mimo globální app.js), modulární runtime core (jedna Sigma instance, lifecycle/cleanup), interakční model (selection/focus/path finder/search/URL state), workbench UI (`/map/` + lokální dossier graf sdílející stejné jádro), a11y + fallback, Playwright testy + syntetický benchmark, ADR + finální report | scripts/dossier/build-graph-*.mjs, scripts/dossier/validate-graph-projections.mjs, schemas/graph-*.schema.json, assets/js/modules/graph/**, assets/js/app.js, assets/js/graph-app.js, templates/map.html, templates/dossier.html, static/css/input.css (cy-* rename), tests/**, docs/adr/graph-workbench-and-data-projection.md, reports/graph-workbench-implementation.md | task/T-027 | W-8 | in-progress | – | akceptační kritéria § 24 promptu (Definition of Done); `npm run build` zelený; žádný nový content scope; autorizační log netknutý |
+
 ## Archiv
 
 | ID | Titul | Commit | Owner | Stav |
