@@ -44,68 +44,85 @@ zreprodukuj build a zpochybni výsledek.*
 nepodložená obvinění, centrální autorita s nárokem na konečnou pravdu,
 ani důvěrná schránka provozovaná ve veřejném Gitu.
 
-**Poctivý aktuální stav (k 2026-07-29)**: repozitář hostí dossiery o
-Petru Macinkovi a Filipu Turkovi (přesný, datovaný, append-only rozsah
-autorizace viz `AGENTS.md`). De-specializace platformy — dossiery a
-entity jako čistá data, žádné hardcodované subjekty — aktivně probíhá:
-inventura vazby je v
-[`docs/migrations/remove-macinka-turek-coupling-audit.md`](docs/migrations/remove-macinka-turek-coupling-audit.md)
-a regresní brána `npm run lint:historical-coupling` hlídá, aby se
-historická vazba nevracela. Příspěvkové balíčky, CLI, sémantický diff,
-fork starter kit ani JSON-LD dataset **zatím neexistují** — nic z toho
-tento README neinzeruje jako hotové.
+**Poctivý aktuální stav (k 2026-08-01)**: repozitář hostí dossiery
+autorizovaných veřejně činných osob (přesný, datovaný, append-only rozsah
+autorizace viz `AGENTS.md`; živý seznam na `/dossiers/`). Dossiery a
+entity jsou čistá, kanonická JSON/JSON-LD data (`data/dossiers/**`,
+mise T-028) — Markdown pod `content/` je generovaný routing adaptér a
+žádný hardcodovaný subjekt ve strukturálním kódu není; regresní brána
+`npm run lint:historical-coupling` hlídá, aby se historická vazba
+nevracela (inventura:
+[`docs/migrations/remove-macinka-turek-coupling-audit.md`](docs/migrations/remove-macinka-turek-coupling-audit.md)).
+Příspěvkové balíčky, sémantický diff ani fork starter kit **zatím
+neexistují** — nic z toho tento README neinzeruje jako hotové.
 
 ## Jak systém funguje
 
 ```text
-ručně psaný obsah (content/) + strukturovaná data (data/)
-→ validátory (registr tvrzení/zdrojů, graf, autorizace, typy dossierů, navigace)
-→ generátory (statistiky, route manifest, search index, globální graf)
+kanonická data (data/dossiers/**/*.json — JSON Schema + JSON-LD context)
+→ data:validate (tvar · reference R1–R7 · sémantika S1–S8 · parita tabulky T1–T8 · JSON-LD expanze)
+→ jednotný kompilátor (scripts/data/) → compiled model
+→ view modely (data/generated/views/**) + generované content adaptéry (content/**)
+→ validátory a generátory (autorizace, navigace, route manifest, exporty, search index, graf)
 → Tailwind + esbuild (assets)
-→ zola build (statické HTML se strukturovanými daty JSON-LD)
-→ verify:anchors (kotvy v hotovém HTML)
-→ verify:jsonld (validita a poctivost strukturovaných dat)
+→ zola build (statické HTML; šablony čtou view modely přes load_data)
+→ verify:anchors / verify:jsonld / verify:full-pages / verify:export
 → GitHub Actions → GitHub Pages
 ```
 
-Tentýž řetěz běží lokálně (`npm run build`) i v CI
+Jediný orchestrační entrypoint je `scripts/build/pipeline.mjs`
+(`npm run build` / `dev` / `check`); tentýž řetěz běží lokálně i v CI
 (`.github/workflows/deploy.yml`) — zelený lokální build znamená
-nasaditelný stav. Generované soubory (`data/dossiers/*/stats.toml`,
-`data/generated/*`, `static/search-index.json`, `static/css/main.css`,
-`static/js/app.js`) se needitují ručně.
+nasaditelný stav. Generované soubory (`content/dossiers/**`,
+`content/entities/*.md`, `data/generated/*`, `static/search-index.json`,
+`static/css/main.css`, `static/js/app.js`) se needitují ručně — obsah se
+edituje výhradně v kanonickém JSON a adaptéry regeneruje
+`npm run data:build`.
 
 ## Datový model
 
+Kanonickým zdrojem pravdy je výhradně `data/dossiers/**/*.json` — každý
+záznam je validní JSON (JSON Schema, `schemas/canonical/`) i JSON-LD
+(lokální context `/context/v1.jsonld`) se stabilním globálním `@id`
+(`https://vomaste.cz/id/dossiers/<slug>/claims/CLM-01`). Lokální
+identifikátory (`CLM-01`, `SRC-01`, …) jsou číslované po dossierech a
+slouží jen UI; globální `@id` dělá kolizi napříč dossiery mechanicky
+nemožnou. Plný kontrakt: [`docs/data-contract.md`](docs/data-contract.md),
+rozhodnutí: [ADR](docs/adr/json-first-canonical-data-model.md).
+
 - **Dossier** — kurátorovaný vyšetřovací rozsah
-  (`content/dossiers/<slug>/`, registr `data/dossiers.toml`). Typ
-  `entity` (jedna osoba; fyzicky vlastní záznamy — po probíhající
-  migraci) nebo `aggregate` (generovaný souhrn, bez vlastních záznamů).
-- **Tvrzení (CLM-##)** — atomický, ozdrojovaný výrok se stavem ověření.
-  Žije dvakrát: řádek v tabulce hlavní stránky dossieru (to edituje
-  redaktor) a vlastní stránka `claims/clm-NN.md` (derivát). Validátor
-  build shodí, pokud se liší byť o bajt.
-- **Zdroj (SRC-##)** — `sources/src-NN.md`: outlet, typ, URL, datum
-  vydání i stažení, podporovaná tvrzení. Index zdrojů vede „vydavatelské
+  (`data/dossiers/<slug>/dossier.json`; přítomnost souboru JE
+  registrace). Typ `entity` (jedna osoba) nebo `aggregate` (generovaný
+  souhrn, bez vlastních záznamů). Nese i ručně psanou tabulku tvrzení
+  (markdown content block), timeline a kurátorovanou grafovou vrstvu
+  (`graph`: popisky uzlů, clustery, pořadí hran, zdrojové rodiny) —
+  hloubka grafu se počítá BFS, nikde se neukládá.
+- **Tvrzení (CLM-##)** — `claims/clm-NN.json`: atomický, ozdrojovaný
+  výrok se stavem ověření. Žije dvakrát: řádek v ručně psané tabulce
+  v `dossier.json` a kanonický záznam; parita T1–T8 build shodí, pokud
+  se liší byť o bajt. Detailní stránka se generuje.
+- **Zdroj (SRC-##)** — `sources/src-NN.json`: outlet, typ, URL, datum
+  vydání i stažení, podporovaná tvrzení, `sourceFamily` („vydavatelské
   rodiny" — zdroje téhož vydavatele se nepočítají jako nezávislá
-  potvrzení.
-- **Kauza (CASE-##)** — tematický celek; karta v front matter hlavní
-  stránky + odvozená stránka `cases/case-NN.md`.
-- **Mezera (GAP-##)** — otevřená otázka s prioritou, datem poslední
-  kontroly a vazbou na tvrzení. Otevřenost není zjištění žádným směrem.
-- **Entita a vztah** — globální entity (`content/entities/`) a hrany
-  grafu (`data/dossiers/<slug>/graph.toml` + stránky `relations/`);
-  každá hrana musí být krytá tvrzeními a zdroji, validátor kontroluje
-  paritu dat a stránek.
-- **Opravy** — append-only historie revizí
-  (`data/dossiers/<slug>/updates.toml`): co bylo kdy skutečně ověřeno a
-  změněno.
+  potvrzení) a povinná redakční poznámka (≥ 150 znaků).
+- **Kauza (CASE-##)** — `cases/case-NN.json`: tematický celek; detailní
+  stránka odkazuje na kanonickou prózu kotvou, nikdy ji nekopíruje.
+- **Mezera (GAP-##)** — `gaps/gap-NN.json`: otevřená otázka s prioritou,
+  datem poslední kontroly a vazbou na tvrzení. Otevřenost není zjištění
+  žádným směrem.
+- **Entita a vztah** — globální entity
+  (`data/dossiers/_shared/entities/*.json`) a hrany grafu
+  (`relations/edge-*.json`); každá ne-kontextová hrana musí být krytá
+  tvrzeními a zdroji (pravidlo S3), endpointy musí být uzly grafu (R7).
+- **Opravy** — append-only historie revizí (`updates/*.json`): co bylo
+  kdy skutečně ověřeno a změněno.
 
 ## Stavy tvrzení
 
 | Stav | Význam | Vynucení |
 |---|---|---|
-| `CORROBORATED` | potvrzeno nezávisle více redakcemi | validátor vyžaduje ≥ 2 různé zdroje |
-| `1 ZDROJ` | doloženo jediným citovaným zdrojem, bez nezávislého potvrzení | validátor vyžaduje právě 1 zdroj |
+| `CORROBORATED` | potvrzeno nezávisle více redakcemi | pravidlo S2 vyžaduje ≥ 2 zdroje z ≥ 2 nezávislých rodin |
+| `1 ZDROJ` | doloženo jediným citovaným zdrojem, bez nezávislého potvrzení | pravidlo S1 vyžaduje právě 1 zdroj |
 | `CITACE` | přímý výrok subjektu — ověřuje, že výrok padl, **ne** že platí jeho obsah | — |
 | `SPORNÉ` | neuzavřené, nepotvrzené či rozporované tvrzení | — |
 | `NÁZOR` | autorský komentář, strukturálně oddělený od zpravodajství | — |
@@ -118,9 +135,10 @@ výrok padl, není ověřením jeho obsahu.
 
 ## Strukturovaná data (JSON-LD)
 
-Každá stránka vydává při buildu jeden blok `application/ld+json`
-(`@graph`), generovaný centrálně v `templates/base.html` z front matter a
-registru `data/dossiers.toml` — žádné jméno, slug ani URL nejsou v
+Kanonické záznamy jsou JSON-LD už na vstupu (`@context`, `@id`, `@type`);
+každá stránka navíc vydává při buildu jeden blok `application/ld+json`
+(`@graph`), generovaný centrálně v `templates/base.html` z view modelů
+compiled kanonického datasetu — žádné jméno, slug ani URL nejsou v
 šablonách napevno:
 
 - **WebSite / WebPage / ProfilePage** + **BreadcrumbList** a navigace
@@ -179,8 +197,8 @@ Tabulární data v šablonách renderuje jednotná komponenta
 implementace podle vzoru Flowbite „Advanced Tables" nad volným
 Tailwindem/Flowbite), vynuceno branou `npm run lint:component-reuse`;
 obal tabulky nese `data-record-type` provazující řádky s JSON-LD uzly
-stránky. Data tabulek dnes pocházejí ze stejných front-matter/data
-zdrojů jako JSON-LD `@graph`; výhledovým **plánem** (neimplementováno)
+stránky. Data tabulek pocházejí z téhož compiled kanonického modelu
+jako JSON-LD `@graph`; výhledovým **plánem** (neimplementováno)
 je DuckDB (`.mjs`) pipeline nad stejnými záznamy.
 
 ## Adresář dossierů
@@ -188,7 +206,7 @@ je DuckDB (`.mjs`) pipeline nad stejnými záznamy.
 `/` i `/dossiers/` vykreslují tentýž adresář ve třech projekcích — tabulka,
 kompaktní seznam, dlaždice — nad **jedním** datasetem
 (`static/data/dossiers.json`, staví `scripts/dossier/lib/record-tables.mjs`
-z `dossiers.toml`, `stats.toml`, front matter a navigačního manifestu).
+jako tenkou projekci compiled kanonického modelu + navigačního manifestu).
 
 Projekce se přepíná parametrem `?view=table|list|grid`; stav je sdílitelný
 odkazem a tlačítko zpět ho obnoví. Na mobilu je výchozí hustý seznam.
@@ -201,18 +219,25 @@ Rozhodnutí a jeho důsledky: [ADR](docs/adr/dossier-directory-multi-view.md).
 
 ```text
 .
-├── content/                # obsah Zoly: dossiery (1 stránka = 1 záznam), entity, mapa
-├── templates/              # Tera šablony (base, dossier*, entity-dossier*, macros)
-├── data/                   # registr dossierů, navigace, graf, updates, generovaná data
+├── data/dossiers/          # KANONICKÁ DATA: <slug>/dossier.json + registry záznamů,
+│                           # _shared/ (entity, slovníky, JSON-LD context)
+├── schemas/canonical/      # JSON Schema kontrakt kanonických záznamů (AJV strict)
+├── content/                # Zola routing: GENEROVANÉ adaptéry kanonických dat
+│                           # (ručně psané zůstávají jen kořenové indexy a koncepty)
+├── templates/              # Tera šablony (čtou view modely přes load_data)
+├── data/                   # navigační skeleton, government roster, generovaná data
 ├── assets/js/              # zdrojové JS moduly (bundluje esbuild)
 ├── static/                 # statická aktiva + zkompilované CSS/JS + search index
-├── scripts/dossier/        # validátory, generátory, migrační nástroje
-├── scripts/lint/           # anti-coupling linter (de-specializace)
+├── scripts/data/           # kanonický kompilátor, validátory, generátory adaptérů, scaffold
+├── scripts/build/          # pipeline.mjs — jediný orchestrační entrypoint buildu
+├── scripts/dossier/        # build/verify nástroje nad compiled modelem (exporty, navigace…)
+├── scripts/lint/           # linty (generated content, hardcoded records, komponenty…)
+├── scripts/osint/          # živé rejstříkové nástroje (ARES) — mimo build
 ├── scripts/coop/           # koordinace více instancí (bus, worktrees)
 ├── scripts/setup/          # instalace git hooks (postinstall)
 ├── .githooks/              # pre-commit: rychlá podmnožina validátorů
-├── .claude/skills/         # bootstrap, dossier-entry, adr, commit — vedení pro Claude Code
-├── docs/                   # konstituce, audity, migrace, koop protokol, ADR
+├── .claude/skills/         # bootstrap, dossier-entry, investigate, adr, commit
+├── docs/                   # konstituce, datový kontrakt, audity, migrace, koop, ADR
 ├── reports/                # generované interní reporty (nepublikují se)
 └── .github/workflows/      # deploy.yml — validace + build + GitHub Pages
 ```
@@ -254,13 +279,14 @@ build` před review-requestem/mergem/pushem.
 
 **Přispíváš přes Claude Code (nebo jiného AI agenta)?** Podrobný postup
 je v [`CONTRIBUTING.md`, sekce „Přispívání s Claude Code“](CONTRIBUTING.md#přispívání-s-claude-code-nebo-jiným-ai-agentem).
-Zkráceně — 4 skilly v `.claude/skills/`, spouštěj v tomto pořadí podle
+Zkráceně — 5 skillů v `.claude/skills/`, spouštěj v tomto pořadí podle
 toho, co děláš:
 
 | Skill | Kdy ho spustit |
 |---|---|
 | `bootstrap` | vždy jako první krok nové session — pravidla, co-op stav, prerekvizity, volba role |
-| `dossier-entry` | přidáváš CLM/SRC/CASE/GAP/relation — vynucuje autorizační scope-gate jako krok 0 |
+| `dossier-entry` | přidáváš CLM/SRC/CASE/GAP/relation (kanonický JSON) — vynucuje autorizační scope-gate jako krok 0 |
+| `investigate` | celé autorizované šetření end-to-end (scope check → větev → manifest → zdrojovaný výzkum → PR) |
 | `adr` | řešíš netriviální technické rozhodnutí (nová závislost, výměna komponenty) — měřený stav, ne odhad |
 | `commit` | commit samotný — formát zprávy, který gate skutečně platí, co nahlásit na co-op sběrnici |
 
@@ -292,11 +318,11 @@ justfile je chyba.
 | `just check` | `.githooks/pre-commit` | rychlá podmnožina; spouští přímo hook, takže se od něj nemůže rozejít |
 | `just test` | `npm test` | regresní testy tooling skriptů |
 | `just clean` | `rm -rf public` | build output není zdroj pravdy |
-| `just regen` | `migrate-claims-to-pages.mjs` + `migrate-cases-to-pages.mjs` | po ruční editaci tabulky tvrzení / `[[extra.cases]]` |
-| `just scaffold <slug> "<Jméno>"` | `npm run scaffold:dossier` | odmítne subjekt, který není v autorizačním logu |
+| `just regen` | `npm run data:build` | přegeneruje view modely a content adaptéry po editaci kanonického JSON |
+| `just scaffold <slug> "<Jméno>" <subjekt> <AUTH-id>` | `npm run dossier:scaffold` | založí kanonický balíček; odmítne subjekt bez záznamu v `data/authorizations.toml` |
 | `just authorize <entity>` | `npm run authorize:entity` | **interaktivní z principu** — vyžaduje TTY a rozsah napsaný člověkem |
 | `just ares --ico=… \| --name="…"` | `scripts/osint/ares-lookup.mjs` | živý síťový dotaz, **není** součástí buildu |
-| `just expand <ičo> [--write]` | `scripts/osint/expand-entity.mjs` | rozbalí rejstříkové okolí firmy na **kontextové** entity; výchozí je dry run, existující stránku nikdy nepřepíše |
+| `just expand <ičo> [--write]` | `scripts/osint/expand-entity.mjs` | rozbalí rejstříkové okolí firmy na **kontextové** entity (kanonické JSON záznamy); výchozí je dry run, existující záznam nikdy nepřepíše |
 | `just coop` / `just inbox` | `scripts/coop/coop.sh` | stav co-op boardu a sběrnice |
 
 Instalace `just`: <https://github.com/casey/just#installation>.
@@ -305,29 +331,29 @@ Instalace `just`: <https://github.com/casey/just#installation>.
 
 | Příkaz | K čemu |
 |---|---|
-| `npm run build` | celá kvalitní brána: všechny validátory → generátory → CSS/JS → `zola build` → kontrola kotev |
-| `npm run dev` | totéž bez plné validace registru + `zola serve` s live reloadem |
+| `npm run build` | celá kvalitní brána (`scripts/build/pipeline.mjs build`): kanonická validace → view modely + adaptéry → validátory → generátory → CSS/JS → `zola build` → post-build kontroly |
+| `npm run dev` | rychlá podmnožina pipeline + `zola serve` s live reloadem |
+| `npm run check` | validace bez generování (`pipeline.mjs check`) |
 | `npm run hooks:install` | nastaví `core.hooksPath` na `.githooks/` (jinak se spustí automaticky přes `npm ci`/`npm install`) |
 | `npm test` | regresní testy tooling skriptů (Node built-in test runner, žádná nová závislost) — součást `npm run build` |
-| `npm run validate:dossier` | integrita registru tvrzení/zdrojů: kotvy, reference, duplicitní ID, parita tabulka ↔ stránky, stavová pravidla |
-| `npm run validate:graph` | referenční integrita grafu, povolené typy vztahů, parita s entitami/vztahy, nezávislost zdrojů hran |
+| `npm run data:validate` | kanonická brána: tvar (`schemas/canonical/`, AJV strict) → reference R1–R7 → sémantika S1–S8 → parita tabulky T1–T8 → JSON-LD expanze |
+| `npm run data:validate -- --file <cesta>` | rychlá tvarová validace jediného kanonického souboru; chybové hlášky nesou cestu |
+| `npm run data:build` | kompilace datasetu + view modely + regenerace content adaptérů + parity brána content == staging |
+| `npm run dossier:scaffold -- --slug=… --title="…" --subject=… --authorization-record-id=AUTH-…` | založí minimální validní kanonický balíček nového dossieru; **odmítne** subjekt bez odpovídajícího záznamu v `data/authorizations.toml` |
 | `npm run validate:authorization` | každý obsah o reálné osobě odpovídá autorizačnímu záznamu |
 | `npm run verify:authorization-log` | append-only autorizační log v `AGENTS.md`: žádná existující sekce nesmí být upravena ani smazána, jen přidána nová |
 | `npm run validate:dossier-types` | invarianty entity/aggregate dossierů |
-| `npm run validate:navigation` | navigace odpovídá registru a existujícím routám |
+| `npm run validate:navigation` | navigace odpovídá kanonickému datasetu a existujícím routám |
 | `npm run verify:anchors` | po buildu: každá kotva ze zdrojů existuje v HTML |
 | `npm run verify:jsonld` | po buildu: validita, pokrytí a poctivost JSON-LD (žádné truth ratingy, citační otisky se přepočítávají) |
 | `npm run build:jsonld-exports` | vygeneruje `/data/dossiers/<slug>.jsonld`, `/data/graph.jsonld`, manifest s checksumy a citační otisky pro šablony — součást `npm run build` |
 | `npm run verify:export` | po buildu (i offline nad staženou kopií, `--dir <cesta>`): každý export sedí na manifest hash, parsuje, nenese truth ratingy a otisky se přepočítávají |
 | `npm run lint:historical-coupling` | de-specializační brána: žádná jména subjektů ve strukturálním kódu |
+| `npm run lint:generated-content` | generované content adaptéry zůstávají minimální obálkou — ruční doménová pole neprojdou |
 | `npm run lint:component-reuse` | každá šablona (kromě `base.html`/`404.html`) používá `macros/ui.html`, a každá šablona s tabulkou používá `macros/table.html` (`table::advanced_table`) — žádný ručně psaný duplicitní markup místo sdílené komponenty |
-| `node scripts/dossier/migrate-claims-to-pages.mjs` | přegenerovat stránky tvrzení z tabulky |
-| `node scripts/dossier/migrate-cases-to-pages.mjs` | přegenerovat stránky kauz z front matter |
-| `node scripts/dossier/tag-subjects.mjs` | orazítkovat záznamy poli `subjects` |
-| `npm run scaffold:dossier -- --slug=<slug> --title="<Jméno>"` | vygeneruje placeholder skeleton nového entity dossieru (registry adresáře, `graph.toml`, `updates.toml`) — odmítne běžet, pokud `<Jméno>` není v autorizačním logu `AGENTS.md`; nezapisuje do `data/dossiers.toml` |
-| `npm run build:government-roster` | z `data/government.toml` vygeneruje kontextové entity stránky členů vlády (veřejná funkce z oficiálního zdroje, `publication_role = "context"`, **nikdy** dossier); existující stránky nikdy nepřepisuje; součást `npm run build` |
+| `npm run build:government-roster` | z `data/government.toml` vygeneruje kontextové entity členů vlády (veřejná funkce z oficiálního zdroje, `publicationRole = "context"`, **nikdy** dossier); existující záznamy nikdy nepřepisuje; součást `npm run build` |
 | `node scripts/osint/ares-lookup.mjs --ico=… \| --name="…"` | dotaz do ARES (jediný spolehlivě funkční primární rejstřík) — **není** součástí `npm run build`, dělá živý síťový dotaz; doloží identitu/sídlo/formu/status, **nedoloží** skutečné majitele ani „od kdy ovládá" |
-| `node scripts/osint/expand-entity.mjs --ico=… [--write]` | rozbalí rejstříkové okolí firmy (statutární orgány, společníci) na kontextové entity; na rozdíl od základního endpointu čte větev veřejného rejstříku, která u s.r.o. **vrací** zapsané společníky i velikost podílu. Akcionáři a.s. v rejstříku nejsou, takže prázdný seznam znamená „nezapsáno", ne „firma nemá vlastníky". Data narození a adresy bydliště nepřebírá |
+| `node scripts/osint/expand-entity.mjs --ico=… [--write]` | rozbalí rejstříkové okolí firmy (statutární orgány, společníci) na kontextové entity — kanonické JSON záznamy v `data/dossiers/_shared/entities/` (stránky `/entities/…` přegeneruje `npm run data:build`); na rozdíl od základního endpointu čte větev veřejného rejstříku, která u s.r.o. **vrací** zapsané společníky i velikost podílu. Akcionáři a.s. v rejstříku nejsou, takže prázdný seznam znamená „nezapsáno", ne „firma nemá vlastníky". Data narození a adresy bydliště nepřebírá; existující záznam nikdy nepřepíše |
 
 ## Přidání obsahu do dossieru
 
@@ -336,22 +362,28 @@ Instalace `just`: <https://github.com/casey/just#installation>.
 > se obsah o reálných osobách nepřidává — v pochybnostech se ptej,
 > nerozšiřuj.
 
-1. **Zdroj**: `content/dossiers/<slug>/sources/src-NN.md` dle existujícího
-   schématu (`src_id`, `outlet`, `src_type`, `url`, `retrieved`,
-   `published`, `claims`, `subjects`). Zdroj cituj, jen pokud jsi ho
-   skutečně otevřel — nikdy ze snippetu vyhledávače.
-2. **Tvrzení**: řádek `CLM-NN` do tabulky v `_index.md` (s kotvou
-   `<a id="clm-NN"></a>` a odkazem na detail), pak přegenerovat/dopsat
-   `claims/clm-NN.md`. Jedno tvrzení = jeden ověřitelný výrok; stav
-   podle skutečné síly důkazu (viz tabulka výše).
-3. **Kauza**: `[[extra.cases]]` ve front matter `_index.md`, pak
-   `cases/case-NN.md`.
-4. **Mezera**: `gaps/gap-NN.md` (`gap_id`, `priority`, `checked`,
-   `claims`) — neutrálně formulovaná otázka, ne insinuace.
-5. **Vztah**: hrana v `data/dossiers/<slug>/graph.toml` + stránka
-   `relations/edge-*.md`; hrana bez tvrzení a zdroje neprojde validací.
-6. `npm run build` — červená znamená chybějící zdroj, kotvu, referenci
-   nebo drift mezi tabulkou a stránkami. Nikdy neobcházet.
+Vše se edituje jako kanonický JSON v `data/dossiers/<slug>/…` — detailní
+průvodce krok za krokem (včetně běžných chybových hlášek):
+[`docs/contributing/add-dossier-data.md`](docs/contributing/add-dossier-data.md).
+
+1. **Zdroj**: `sources/src-NN.json` dle schématu
+   (`identifier`, `outlet`, `sourceType`, `url`, `retrieved`,
+   `published`, `claims`, `subjects`, povinná redakční poznámka
+   v `content` bloku). Zdroj cituj, jen pokud jsi ho skutečně otevřel —
+   nikdy ze snippetu vyhledávače.
+2. **Tvrzení**: `claims/clm-NN.json` + řádek `CLM-NN` do tabulky tvrzení
+   v `dossier.json` (s kotvou `<a id="clm-NN"></a>` a odkazem na detail)
+   — parita T1–T8 vynucuje byte-shodu. Jedno tvrzení = jeden ověřitelný
+   výrok; stav podle skutečné síly důkazu (viz tabulka výše).
+3. **Kauza**: `cases/case-NN.json`; narativ patří do content bloku
+   `dossier.json`, kauza na něj odkazuje kotvou.
+4. **Mezera**: `gaps/gap-NN.json` (`priority`, `checked`, `claims`) —
+   neutrálně formulovaná otázka, ne insinuace.
+5. **Vztah**: `relations/edge-*.json` + uzel/hrana v `graph` poli
+   `dossier.json`; hrana bez tvrzení a zdroje neprojde validací (S3, R7).
+6. `npm run data:validate` → `npm run data:build` → `npm run build` —
+   červená znamená chybějící zdroj, kotvu, referenci nebo drift mezi
+   tabulkou a kanonickými záznamy. Nikdy neobcházet.
 
 ## Příspěvky (pull requesty)
 
@@ -362,28 +394,28 @@ předchozí autorizaci vlastníka v append-only logu `AGENTS.md`** — PR
 rozšiřující pokrytí bez ní nebude přijat, jakkoli je téma „veřejně
 zajímavé". Automatika kontroluje integritu (zdroje, kotvy, parity,
 stavy), **nikoli pravdivost** — tu žádný nástroj nerozhodne, od toho je
-review a zdrojová disciplína. Samostatné `CONTRIBUTING.md`, příspěvkové
-CLI ani sémantický diff zatím neexistují; do té doby je normou tento
-README + `AGENTS.md`. Pamatuj: pull requesty jsou veřejné (viz
-bezpečnostní hranice nahoře).
+review a zdrojová disciplína. Závazný postup: [CONTRIBUTING.md](CONTRIBUTING.md)
++ `AGENTS.md`; sémantický diff zatím neexistuje. Pamatuj: pull requesty
+jsou veřejné (viz bezpečnostní hranice nahoře).
 
 ## Nový dossier
 
 Nový dossier je datová operace, ne zásah do jádra:
 
 1. autorizace subjektu vlastníkem — nový datovaný záznam v append-only
-   logu `AGENTS.md` (bez něj stop);
-2. záznam v registru `data/dossiers.toml` (slug, titul, `dossier_type`);
-3. obsahový strom `content/dossiers/<slug>/` (hlavní `_index.md` +
-   podregistry) a data `data/dossiers/<slug>/` (`graph.toml`,
-   `updates.toml`);
-4. položka v `data/navigation.toml` — `validate:navigation` vynucuje, že
-   entity dossier v navigaci je a odkazuje na existující routy;
-5. `npm run build` — `validate:dossier-types` a spol. vynucují zbytek.
-
-Zbytková historická vazba na výchozí dossiery (viz Fork níže) se právě
-odstraňuje; do jejího dokončení může nový dossier vyžadovat drobné ruční
-úpravy nad rámec kroků výše.
+   logu `AGENTS.md` (`npm run authorize:entity`, interaktivně; bez něj
+   stop);
+2. `npm run dossier:scaffold -- --slug=<slug> --title="<Jméno>"
+   --subject=<subjekt> --authorization-record-id=<AUTH-id>` — založí
+   kanonický balíček `data/dossiers/<slug>/` (dossier.json + prázdné
+   registry); bez autorizačního záznamu odmítne běžet;
+3. obsah: kanonické záznamy `claims/`, `sources/`, … (skill
+   `dossier-entry`, průvodce `docs/contributing/add-dossier-data.md`);
+4. žádná úprava navigace, šablon ani JS — vše se generuje z datasetu;
+   `validate:navigation` vynucuje, že entity dossier v navigaci je a
+   odkazuje na existující routy;
+5. `npm run data:build` a `npm run build` — `validate:dossier-types`
+   a spol. vynucují zbytek.
 
 ## Fork a nezávislé nasazení
 
@@ -391,14 +423,14 @@ Fork je deklarovaný cíl (konstituce, invariant 4) a z velké části už
 realita: build nepotřebuje žádné tajemství, privátní backend ani službu
 mimo repozitář; nasazení jede přes GitHub Actions → Pages (OIDC token
 workflow, žádný PAT). Co fork nastavuje: `base_url` v `config.toml`
-(+ `static/CNAME` pro vlastní doménu), `title`/`description`,
-`data/dossiers.toml` a obsah `content/`. **Poctivé omezení**: dokud
-neskončí de-specializační migrace, zůstávají v navigaci a několika
-šablonách zbytky historické vazby na výchozí dossiery (přesný seznam:
-`docs/migrations/remove-macinka-turek-coupling-audit.md`) — fork je
-možný, ale vyžaduje jejich ruční úpravu. Redakční odpovědnost, právní
-posouzení a případný intake si každý fork řeší sám; fork nepřebírá
-redakční schválení upstreamu.
+(+ `static/CNAME` pro vlastní doménu), `title`/`description` a vlastní
+kanonická data `data/dossiers/**` (+ ručně psané kořenové indexy a
+koncepty v `content/`). Zbytky historické vazby na výchozí dossiery
+hlídá regresní brána `npm run lint:historical-coupling` (mimo build
+gate; historická inventura:
+`docs/migrations/remove-macinka-turek-coupling-audit.md`). Redakční
+odpovědnost, právní posouzení a případný intake si každý fork řeší sám;
+fork nepřebírá redakční schválení upstreamu.
 
 Pro adoptéra je nejkratší cesta `just doctor` → `just setup` → `just build`
 (viz [Task runner](#task-runner-just)); `just build` je zároveň ta brána,
@@ -410,7 +442,7 @@ kterou nesmí vypnout, kdo se chce k tomuto datovému modelu hlásit. Veřejné,
 
 Návrhy oprav a reakce subjektů přijímá veřejný kanál uvedený na webu
 (sekce Metodika). Každá věcná změna publikovaného obsahu je dohledatelná:
-commit + záznam v `data/dossiers/<slug>/updates.toml` (append-only).
+commit + kanonický záznam v `data/dossiers/<slug>/updates/` (append-only).
 Subjekty dossierů mohou žádat opravu, dodat reakci nebo protidůkazy;
 nemají redakční veto. Podání samo o sobě dataset nemění — projde
 posouzením proti redakčním pravidlům v `AGENTS.md`.
@@ -423,7 +455,7 @@ validace (stejné příkazy jako lokálně) → `zola check` → `zola build` �
 spuštění: workflow_dispatch. Ověření produkce: porovnat nasazený obsah
 s očekávaným commitem (`gh run list`, pak kontrola klíčových rout).
 
-## Známá omezení (k 2026-07-29)
+## Známá omezení (k 2026-08-01)
 
 - Do 2026-07-30 se JSON-LD exportní routy (`/data/*.jsonld`) v produkci
   vůbec negenerovaly, přestože lokální `npm run build` je vytvářel:
@@ -435,19 +467,21 @@ s očekávaným commitem (`gh run list`, pak kontrola klíčových rout).
   zatím fetchnuté stránky nearchivuje; manifest exportů je hashovaný,
   ne podepsaný (ADR práh: podpis až bude reálná potřeba prokazovat
   autorství exportu, ne jen integritu).
-- Žádný důvěrný intake kanál; žádné příspěvkové CLI, sémantický diff ani
-  fork starter kit — viz roadmapa v konstituci, § 11.
-- De-specializace architektury (T-001…) probíhá; do jejího dokončení
-  `lint:historical-coupling` není součástí build gate.
+- Žádný důvěrný intake kanál; žádný sémantický diff ani fork starter
+  kit — viz roadmapa v konstituci, § 11.
+- `lint:historical-coupling` zůstává mimo build gate (spouští se ručně);
+  zapojení do gate je otevřený úkol.
 - Vyhledávací index a `data/generated/*` jsou interní artefakty buildu,
-  ne stabilní veřejné API.
+  ne stabilní veřejné API. Stabilní strojová vrstva jsou exporty
+  `/data/*.json(ld)` s manifestem.
 
 ## Řešení potíží
 
 | Příznak | Příčina a oprava |
 |---|---|
 | `zola: command not found` / build padá na Zole | Zola není v PATH nebo je jiná řada než **0.22.x** (CI pinuje 0.22.1). Instalace: <https://www.getzola.org/documentation/getting-started/installation/>; ověření `zola --version`. |
-| `validate:dossier`: „page status/text does not match table" | Ručně editovaná tabulka tvrzení nebo `[[extra.cases]]` bez regenerace detailních stránek. Spusť `node scripts/dossier/migrate-claims-to-pages.mjs` / `migrate-cases-to-pages.mjs` a build zopakuj. |
+| `data:validate` hlásí T3 „řádka tabulky se neshoduje s kanonickým claimem" | Tabulka tvrzení v `dossier.json` a kanonický záznam `claims/clm-NN.json` se rozešly (text/stav/zdroje se porovnávají byte-verně). Uprav jedno či druhé tak, aby se shodovaly, a validaci zopakuj. |
+| `data:check-generated:content` hlásí drift | Ručně editovaný generovaný soubor pod `content/dossiers/**` nebo `content/entities/`. Vrať úpravu do kanonického JSON a spusť `npm run data:build`. |
 | `npm run dev` „visí" | Nevisí — `zola serve` je server a sám neskončí. Čekej na řádek `Web server is available`, web běží na <http://127.0.0.1:1111>. |
 
 ## Licence

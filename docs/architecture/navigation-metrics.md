@@ -115,9 +115,10 @@ Dvě sémantiky, které se snadno popletou:
 
 - **`sources.total` počítá záznamy, ne média.** Jedno médium citované ke třem
   článkům jsou tři záznamy. Liší se to od source-**family** seskupení, kterým
-  `validate-dossier.mjs` rozhoduje o korroboraci.
-- **`relations.total` počítá kurátorovanou vrstvu** — hrany ručně zapsané
-  v `data/dossiers/<slug>/graph.toml`, každá krytá tvrzeními a zdroji. Odvozená
+  pravidlo S2 (`scripts/data/validate-semantics.mjs`) rozhoduje o korroboraci.
+- **`relations.total` počítá kurátorovanou vrstvu** — hrany zapsané jako
+  kanonické relation záznamy a vedené v `graph` poli
+  `data/dossiers/<slug>/dossier.json`, každá krytá tvrzeními a zdroji. Odvozená
   plná registrová vrstva globálního grafu materializuje řádově víc hran a není
   to, co `/map/` prezentuje jako vztahy.
 

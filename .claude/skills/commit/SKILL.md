@@ -11,6 +11,13 @@ first — this skill assumes you already know your role (ORCH direct vs.
 worker-in-worktree) and have confirmed any content change is inside
 authorized scope (see `dossier-entry` for content changes specifically).
 
+For content changes: the edit lives in canonical JSON
+(`data/dossiers/**`); run `npm run data:build` before committing and
+include the regenerated adapters (`content/dossiers/**`,
+`content/entities/*.md`; other generated outputs are gitignored) in the
+same commit — the pre-commit hook's `data:validate` + generated-content
+parity gate will otherwise catch the drift.
+
 ## Message format
 
 This repo's history is conventional-commit-style (not strictly

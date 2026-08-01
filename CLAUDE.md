@@ -50,35 +50,51 @@ entry; it does not replace reading and applying the rule.
   specific entry, never a blanket one. `scripts/dossier/authorize-entity.mjs`
   (interactive-only, human-typed scope text, no non-interactive/CI path)
   is the only thing that writes a new authorization entry;
-  `scripts/dossier/scaffold-entity-dossier.mjs` (`npm run scaffold:dossier`)
-  generates a new dossier's placeholder file structure afterward, and
-  itself refuses to run for anyone without a matching `AGENTS.md` entry —
-  scaffolding "just a placeholder" for an unauthorized subject is exactly
-  as out of scope as writing their claims directly.
+  `scripts/data/scaffold-dossier.mjs` (`npm run dossier:scaffold`)
+  generates a new dossier's canonical package (`data/dossiers/<slug>/`)
+  afterward, and itself refuses to run for any subject without a matching
+  record in `data/authorizations.toml` (the audited transcription of the
+  `AGENTS.md` log) — scaffolding "just a placeholder" for an unauthorized
+  subject is exactly as out of scope as writing their claims directly.
 - Before reporting any dossier edit as done, run `npm run build`
-  (`validate:dossier` → `css:build` → `js:build` → `zola build` →
-  `verify:anchors`) and confirm it exits clean. The validator and
-  anchor-checker are the actual spec for this content, not a formality —
-  a passing build is the bar, not a nice-to-have.
+  (`scripts/build/pipeline.mjs`: `data:validate` → view models →
+  regenerated content adapters → tests + validators → generators →
+  CSS/JS → `zola build` → `verify:anchors`/`verify:jsonld`/
+  `verify:full-pages`) and confirm it exits clean. The canonical
+  validators and post-build checks are the actual spec for this content,
+  not a formality — a passing build is the bar, not a nice-to-have. For
+  a fast edit loop on one record:
+  `npm run data:validate -- --file data/dossiers/<slug>/claims/clm-NN.json`.
 - `npm run dev` starts `zola serve` as a long-running process (it never
   exits on its own). Run it with a background-capable tool and watch its
   log for "Web server is available" rather than waiting on it
   synchronously.
-- Adding a new CLM/SRC/GAP item touches three places that must stay
-  consistent: the front-matter schema of that content type, the
-  corresponding template, and the checks in `scripts/dossier/`. A new
-  front-matter field with no template reading it, or a template field with
-  no validator coverage, is a half-finished change — finish all three
-  before calling it done.
+- Adding a new CLM/SRC/GAP **record** is a pure data operation: write the
+  canonical JSON file under `data/dossiers/<slug>/…`, run
+  `npm run data:validate`, then `npm run data:build` to regenerate view
+  models and content adapters — no template, schema or validator edit
+  needed, and drift between table, detail page and exports is impossible
+  by construction. Adding a new **field** to a record type still touches
+  three places that must stay consistent: the canonical schema
+  (`schemas/canonical/<kind>.schema.json`, `additionalProperties: false`
+  fails the build otherwise, which is the point), the view-model builder
+  (`scripts/data/build-view-models.mjs`) and the template/export that
+  consumes it. A field no consumer reads, or a template field with no
+  schema coverage, is a half-finished change — see
+  `docs/data-contract.md` for the full contract.
 - **Discovery is unblocked; publishing findings is not.** Since 2026-07-30
   these are two different acts and only the second is gated:
-  - **Recording that a registry relation exists** — a context entity page
-    (`publication_role = "context"`, `dossier_enabled = false`,
-    `dossiers = []`, no claims) for a company or person a public register
+  - **Recording that a registry relation exists** — a context entity
+    record (`data/dossiers/_shared/entities/<id>.json` with
+    `publicationRole: "context"`, `dossierEnabled: false`,
+    `dossiers: []`, no claims) for a company or person a public register
     or an already-cited source itself names — needs **no** authorization
-    and no asking. `scripts/osint/expand-entity.mjs` does this from ARES;
+    and no asking. `scripts/osint/expand-entity.mjs` writes these
+    canonical JSON records from ARES (the `/entities/…` pages are
+    regenerated adapters, `npm run data:build`);
     `build-government-roster.mjs` already did it for the cabinet.
-    `validate-authorization.mjs` permits exactly this shape and blocks only
+    `validate-authorization.mjs` and canonical rule S6
+    (`validate-semantics.mjs`) permit exactly this shape and block only
     the promotion of such an entity to a dossier subject.
   - **Writing claims about someone, or opening a dossier on them**, still
     requires an explicit, dated authorization from the site owner in

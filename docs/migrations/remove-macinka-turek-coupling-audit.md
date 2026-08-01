@@ -1,3 +1,5 @@
+*Historický dokument — popisuje stav před JSON-first migrací (T-028).*
+
 # Audit historické vazby Macinka–Turek v architektuře (2026-07-29)
 
 Kompletní inventura všech výskytů historické dvojice v repozitáři ke

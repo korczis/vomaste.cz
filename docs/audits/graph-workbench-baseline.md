@@ -1,3 +1,5 @@
+*Historický dokument — popisuje stav před JSON-first migrací (T-028).*
+
 # Graph workbench — baseline audit (2026-08-01)
 
 Phase A (audit only) of the Sigma.js/Graphology global relationship map

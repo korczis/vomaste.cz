@@ -1,3 +1,5 @@
+*Historický dokument — popisuje stav před JSON-first migrací (T-028).*
+
 # Baseline audit informační architektury (workbench mise, 2026-07-30)
 
 **Kontext**: povinný § 0.5 auditu z

@@ -2,92 +2,166 @@
 
 A Zola static site whose core feature is a general framework for neutral,
 source-cited "dossiers" about publicly reported controversies of public
-figures. Which dossiers exist is **not stated here on purpose**: they live
-in `data/dossiers.toml`, and every template, validator and navigation node
-is driven from that registry — a count written into prose would be a
-constant nobody recalculates. The live list is at `/dossiers/`; the
-authorized scope for each subject is the append-only log at the end of this
-file. Read this file in full before changing content, templates, the
-dossier data model, or scope.
+figures. Which dossiers exist is **not stated here on purpose**: the
+canonical dataset is `data/dossiers/**/*.json`, a directory containing a
+`dossier.json` *is* the registration (no hand-maintained registry file
+exists), and every template, validator and navigation node is driven from
+that dataset — a count written into prose would be a constant nobody
+recalculates. The live list is at `/dossiers/`; the authorized scope for
+each subject is the append-only log at the end of this file. Read this
+file in full before changing content, templates, the dossier data model,
+or scope.
+
+## Canonical data model: JSON-first (T-028)
+
+Since mission T-028 the **only source of truth** for every dossier domain
+record is the canonical JSON dataset:
+
+- `data/dossiers/<slug>/dossier.json` — the dossier itself (identity,
+  description, authorization pointers, ordered `contentBlocks` incl. the
+  hand-written claims table and timeline, and the curated `graph` layer:
+  node labels, clusters, edge order, source families);
+- `data/dossiers/<slug>/{claims,sources,cases,gaps,relations,updates}/*.json`
+  — one canonical record per file;
+- `data/dossiers/_shared/entities/*.json` — the global entity registry;
+- `data/dossiers/_shared/vocabularies/*.json` +
+  `data/dossiers/_shared/context/vomaste-v1.jsonld` — vocabularies and the
+  versioned local JSON-LD context (published as `/context/v1.jsonld`).
+
+Every record is JSON Schema-validated (`schemas/canonical/`, AJV strict)
+and simultaneously valid JSON-LD: it carries `@context`, a **global**
+`@id` under `https://vomaste.cz/id/…`
+(e.g. `https://vomaste.cz/id/dossiers/<slug>/claims/CLM-01`), `@type`,
+`recordType` and a local `identifier` (`CLM-01`, `SRC-01`, …) kept for the
+UI. Identifiers are dossier-scoped; the global `@id` is what makes
+cross-dossier collisions mechanically impossible.
+
+**`content/dossiers/**` and `content/entities/*.md` are GENERATED
+adapters**, not sources: Zola needs a content file to create a route, so
+`npm run data:build` regenerates minimal stubs (`generated = true`, a
+pointer to the record's view model, the canonical markdown body) and the
+`lint:generated-content` gate blocks any hand edit. Templates read view
+models (`data/generated/views/**`, gitignored) via
+`load_data("data/" ~ extra.view_model)`. The only hand-written pages left
+under those trees are the root indexes `content/dossiers/_index.md` and
+`content/entities/_index.md`.
+
+One rule, one owner — the validators that guard the dataset (all run by
+`npm run data:validate`, the first step of every pipeline mode):
+
+| Layer | Owner |
+|---|---|
+| Shape (types, required fields, `@id`/ISO formats, closed enums) | `schemas/canonical/*.schema.json` via `scripts/data/validate-shape.mjs` |
+| Referential integrity R1–R7 (unique `@id`s, path ↔ `@id` consistency, same-dossier references, graph layer integrity) | `scripts/data/validate-references.mjs` |
+| Editorial semantics S1–S8 (single/corroborated source rules, authorization S5/S6, graph subject nodes S7, connectivity S8) | `scripts/data/validate-semantics.mjs` |
+| Claims-table parity T1–T8 (table row ↔ canonical claim, byte-exact) | `scripts/data/validate-registry-table.mjs` |
+| JSON-LD expansion (local context only, no network) | `scripts/data/validate-jsonld.mjs` |
+| Export shape gate | schema check inside `build:data-exports` (`scripts/dossier/lib/export-schemas.mjs`) |
+| content == generated staging | `npm run data:check-generated:content` + `lint:generated-content` |
+
+The build has a single orchestration entrypoint,
+`scripts/build/pipeline.mjs` (`npm run build` / `dev` / `check`). Graph
+depth is **computed** (BFS from subject nodes,
+`scripts/data/lib/graph-depth.mjs`), never stored. Contributor loop:
+
+```
+$EDITOR data/dossiers/<slug>/…        # edit canonical JSON
+npm run data:validate                 # shape + references + semantics + JSON-LD
+npm run data:build                    # compile + view models + regenerate content adapters
+npm run build                         # full quality gate (same as CI)
+```
+
+`npm run data:validate -- --file <path>` validates a single record's shape
+for a fast edit loop. `npm run dossier:scaffold` creates a new, valid,
+empty canonical package — and refuses any subject without a matching
+record in `data/authorizations.toml` (the audited transcription of this
+file's append-only log). Step-by-step contributor guide:
+`docs/contributing/add-dossier-data.md`; full contract:
+`docs/data-contract.md`; decision record:
+`docs/adr/json-first-canonical-data-model.md`.
 
 ## Dossier framework (general — applies to any current or future dossier)
 
 ### Entity dossiers vs. the aggregate view
 
-A dossier's `dossier_type` (declared in `data/dossiers.toml`, and
-mirrored in its own `_index.md` front matter for templates that read it
-directly) is one of:
+A dossier's `dossierType` (declared in its canonical `dossier.json`, and
+mirrored into the generated `_index.md` adapter for templates that read
+it directly) is one of:
 
 - **`entity`** — a real, primary-navigation-worthy dossier about exactly
-  one person (`petr-macinka`, `filip-turek`). It owns no physical
-  claim/source/case/gap/relation files of its own — every registry it
-  shows (`.../claims/`, `.../sources/`, `.../cases/`, `.../gaps/`,
-  `.../relations/`, `.../entities/`, `.../evidence/`) is a *generated,
-  filtered projection* over the canonical dossier's own already-validated
-  records, filtered by that record's `subjects` array (see below). This
-  is what makes it possible for Petr Macinka and Filip Turek to each have
-  a complete, independently-routable dossier without a single claim,
+  one person (`petr-macinka`, `filip-turek`, and every dossier authorized
+  since). A newly scaffolded entity dossier owns its canonical records
+  directly (`canonicalDossier` = its own slug — see `petr-pavel`). The
+  historical Macinka/Turek pair is the special case below: those two
+  entity dossiers own no per-record files of their own — every registry
+  they show (`…/claims/`, `…/sources/`, `…/cases/`, `…/gaps/`,
+  `…/relations/`, `…/entities/`, `…/evidence/`) is a *generated, filtered
+  projection* over the canonical dossier's own already-validated records,
+  filtered by each record's `subjects` array (see below). This is what
+  makes it possible for Petr Macinka and Filip Turek to each have a
+  complete, independently-routable dossier without a single claim,
   source, case, gap, or relation ever being physically duplicated.
 - **`aggregate`** — a generated intersection/rollup over two or more
   entity dossiers (currently `macinka-turek`, over `petr-macinka` and
-  `filip-turek`). It is **not** a third person and **not** a third equal
-  dossier: `show_in_primary_navigation = false` in `data/dossiers.toml`,
-  it never appears as a peer of the entity dossiers in
-  `data/navigation.toml`, and `scripts/dossier/validate-navigation.mjs`
-  fails the build if it ever does. It stays routable at its existing URL
+  `filip-turek`, declared via its `aggregates` array). It is **not** a
+  third person and **not** a third equal dossier:
+  `navigationVisible: false` in its `dossier.json`, it never appears as a
+  peer of the entity dossiers in the generated navigation, and
+  `scripts/dossier/validate-navigation.mjs` fails the build if it ever
+  does. It stays routable at its existing URL
   (`/dossiers/macinka-turek/`) for old links/anchors, and its page header
   explicitly says so — see `templates/dossier.html`'s aggregate-notice
   block.
 
-**Where the physical content actually lives.** Zola gives every content
-file exactly one URL. This site's canonical claim/source/case/gap/
-relation detail pages predate the entity-dossier split and already have
-real, bookmarked, cross-referenced URLs under
-`content/dossiers/macinka-turek/...` — moving that physical content to a
-third, "neutral" location would satisfy "the aggregate owns no records"
-in the abstract, but would break every existing canonical URL and anchor,
-which this framework treats as a hard backward-compatibility requirement
-(see "Old URLs" below). So the canonical files stay physically where they
-already were; `petr-macinka` and `filip-turek` are the dossiers with zero
+**Where the canonical records actually live.** Zola gives every content
+file exactly one URL. The Macinka/Turek claim/source/case/gap/relation
+detail pages predate the entity-dossier split and already have real,
+bookmarked, cross-referenced URLs under `/dossiers/macinka-turek/…` —
+moving those records to a third, "neutral" location would satisfy "the
+aggregate owns no records" in the abstract, but would break every
+existing canonical URL and anchor, which this framework treats as a hard
+backward-compatibility requirement (see "Old URLs" below). So those
+canonical records stay physically in the `data/dossiers/macinka-turek/`
+package; `petr-macinka` and `filip-turek` (with
+`canonicalDossier: "macinka-turek"`) are the dossiers with zero
 duplication, not `macinka-turek`. `scripts/dossier/validate-dossier-types.mjs`
-enforces the invariant that actually matters given this constraint: an
-entity dossier must own **zero** physical per-record files — every one it
-shows must resolve to a real detail page under its `canonical_dossier`.
+enforces the invariant that actually matters given this constraint: such
+an entity dossier owns **zero** physical per-record files — every record
+it shows must resolve to a real detail page under its `canonicalDossier`.
 
-**Subject tagging.** Every claim, source, case, gap, entity, and relation
-under the canonical dossier carries a `subjects` array (`["macinka"]`,
-`["turek"]`, or both) stamped by `scripts/dossier/tag-subjects.mjs` —
-an editorial judgment of who the record is actually about, not something
-mechanically derivable from `graph.toml` alone (see that script's own
-docstring for the reasoning behind each classification). Global entities
-(`content/entities/*.md`) instead extend their existing `dossiers` array
-to include the entity-dossier slug(s) they belong to. `[[extra.cases]]`
-and `[[extra.timeline]]` entries in the canonical dossier's own
-`_index.md` carry the same `subjects` field directly, since those are
-TOML arrays in front matter, not separate content pages.
+**Subject tagging.** Every claim, source, case, gap, and relation record
+carries a canonical `subjects` array (`["macinka"]`, `["turek"]`, or
+both) — an editorial judgment of who the record is actually about, not
+something mechanically derivable from the graph alone. It was stamped
+once during the T-028 migration (preserving the earlier
+`tag-subjects.mjs` classifications) and is edited directly in the JSON
+record since. Global entities (`data/dossiers/_shared/entities/*.json`)
+instead carry a `dossiers` array with the dossier slug(s) they belong to.
+Timeline entries (the `timeline` content block in `dossier.json`) carry
+the same `subjects` field directly.
 
 ### Routing: one namespace per dossier
 
-Every dossier lives under `content/dossiers/<dossier-slug>/`, routed at
-`/dossiers/<dossier-slug>/...`. `content/dossiers/_index.md` is the
-registry-of-dossiers landing page (`/dossiers/`) — it lists every
-authorized dossier by looping over `content/dossiers/*/`, splitting them
-into entity dossiers (primary cards) and aggregate views (their own,
-clearly-labeled section) by `dossier_type`. The three dossiers live today
-are `content/dossiers/petr-macinka/`, `content/dossiers/filip-turek/`
-(entity) and `content/dossiers/macinka-turek/` (aggregate, and the
-physical home of the canonical records — see above).
+Every dossier is routed at `/dossiers/<dossier-slug>/...` via its
+generated content adapters under `content/dossiers/<dossier-slug>/`.
+`content/dossiers/_index.md` is the hand-written registry-of-dossiers
+landing page (`/dossiers/`) — it lists every authorized dossier from the
+compiled dataset, splitting entity dossiers (primary cards) and aggregate
+views (their own, clearly-labeled section) by `dossierType`. Which
+dossiers exist is decided in exactly one place: the canonical packages
+under `data/dossiers/` (a `dossier.json` *is* the registration).
 
 No template hardcodes a dossier slug. Every dossier-scoped template reads
-its own dossier root from front matter (`page.extra.dossier` on a detail
-page, `section.extra.dossier` on a registry index) and builds sibling
-paths from it, e.g. `get_url(path="@/dossiers/" ~ dossier_slug ~
-"/sources/_index.md")`. The primary navigation is likewise **generated,
-not hand-curated**: `data/navigation.toml` is a dossier-free skeleton
-(top-level items, the per-dossier registry template, icons) and
-`scripts/dossier/build-navigation.mjs` compiles it together with
-`data/dossiers.toml` and the registry sections that actually exist on
-disk into `data/generated/navigation.json`, which is what
+its own dossier root from the adapter's front matter
+(`page.extra.dossier` on a detail page, `section.extra.dossier` on a
+registry index) and builds sibling paths from it, e.g.
+`get_url(path="@/dossiers/" ~ dossier_slug ~ "/sources/_index.md")`. The
+primary navigation is likewise **generated, not hand-curated**:
+`data/navigation.toml` is a dossier-free skeleton (top-level items, the
+per-dossier registry template, icons) and
+`scripts/dossier/build-navigation.mjs` compiles it together with the
+compiled canonical dataset and the registry sections that actually exist
+on disk into `data/generated/navigation.json`, which is what
 `templates/base.html` renders. Consequences, enforced by
 `scripts/dossier/validate-navigation.mjs` (and cross-checked by
 `validate-dossier-types.mjs`):
@@ -98,9 +172,10 @@ disk into `data/generated/navigation.json`, which is what
   labelled link with no subtree of its own.
 - The skeleton must stay dossier-free — a slug hand-written into
   `data/navigation.toml` fails the build.
-- A third authorized *person* needs **no** navigation edit at all: adding
-  the dossier to `data/dossiers.toml` puts it in the tree. Same for
-  adding or removing one of its registries.
+- A third authorized *person* needs **no** navigation edit at all:
+  creating the canonical package (`npm run dossier:scaffold`) puts it in
+  the tree once its adapters are generated. Same for adding or removing
+  one of its registries.
 - Every generated node must have a label, an icon and a route that
   exists on disk.
 
@@ -108,39 +183,39 @@ The same generated tree feeds the `SiteNavigationElement` JSON-LD nodes
 in `templates/partials/jsonld.html`, so structured data and sidebar can
 never drift apart.
 
-Per-dossier generated/data files live under `data/dossiers/<slug>/`
-(`graph.toml`, `updates.toml`, the build-generated `stats.toml`) for the
-same reason — nothing dossier-specific sits at a flat top-level path.
-Entity dossiers get a real `stats.toml` too, computed by
-`scripts/dossier/generate-stats.mjs` as filtered counts over the
-canonical dossier's records, not a directory listing of their own (empty)
-registry directories.
+Everything dossier-specific lives inside the dossier's canonical package
+`data/dossiers/<slug>/` — nothing dossier-specific sits at a flat
+top-level path. The curated graph layer is the `graph` field of
+`dossier.json`, the update history is the `updates/` registry, and the
+record counts shown on tiles are computed from the compiled model (view
+models), never hand-written and never stored in a separate stats file.
 
 ### Data model: four linked registries, each independently routable
 
-Every dossier (`content/dossiers/<slug>/_index.md`) is built on four
-cross-referenced registries. Each registry has an index page
-(`.../<registry>/_index.md`) and **one real Zola page per record** — not
-just a row in a table. The overview table/cards on the main dossier page
-and the per-record pages are two views of the *same* data: the table is
-authored by hand (it's what an editor actually edits), the per-record
-pages are derived from it, and `scripts/dossier/validate-dossier.mjs`
-fails the build if they ever disagree — see "Two representations, one
-source of truth" below.
+Every dossier is built on four cross-referenced registries. Each registry
+is a directory of canonical records (`data/dossiers/<slug>/<registry>/`)
+and gets an index page plus **one real Zola page per record** — not just
+a row in a table (both generated adapters). The overview table on the
+main dossier page and the canonical claim records are two views of the
+*same* data: the table (markdown in `dossier.json`'s `contentBlocks`) is
+authored by hand — it's what an editor actually edits alongside the
+records — and `scripts/data/validate-registry-table.mjs` (rules T1–T8,
+part of `npm run data:validate`) fails the build if table and canonical
+records ever disagree — see "One canonical source" below.
 
-- **Claims registry (`CLM-##`)** — `.../claims/clm-NN.md`, one page per
-  claim, plus the overview row on the main dossier page (anchor `<a
-  id="clm-NN"></a>`, now itself a link to the claim's detail page).
-  Front matter: `clm_id`, `status`, `status_label`, `summary` (must be
-  byte-identical to the overview row's claim text), `sources` (the
-  `SRC-##` it cites). Statuses:
+- **Claims registry (`CLM-##`)** — `…/claims/clm-NN.json`, one canonical
+  record per claim, plus the overview row on the main dossier page
+  (anchor `<a id="clm-NN"></a>`, itself a link to the claim's detail
+  page). Record fields: `identifier`, `status`, `statusLabel`, `text`
+  (must be byte-identical to the overview row's claim text), `sources`
+  (`@id` refs to the `SRC-##` it cites), `subjects`. Statuses:
   - `status-corroborated` ("CORROBORATED") — independently confirmed by
-    multiple outlets. `validate-dossier.mjs` enforces ≥2 distinct cited
-    sources for this status; sources from one publisher family still
-    don't count as independent (see the sources-index independence note).
+    multiple outlets. Rule S2 (`validate-semantics.mjs`) enforces ≥2
+    cited sources from ≥2 distinct source families for this status —
+    sources from one publisher family don't count as independent.
   - `status-single` ("1 ZDROJ") — a factual claim supported by exactly
     one cited source, honestly labeled as such instead of being
-    overstated as corroborated. The validator enforces exactly one cited
+    overstated as corroborated. Rule S1 enforces exactly one cited
     source. Upgrading to CORROBORATED requires adding a second,
     genuinely independent source — never just relabeling.
   - `status-quote` ("CITACE") — a direct quote from the subject, presented
@@ -148,24 +223,23 @@ source of truth" below.
   - `status-disputed` ("SPORNÉ") — open, unconfirmed, or contested claim
   - `status-opinion` ("NÁZOR") — authored commentary, kept structurally
     separate from reporting
-- **Sources registry (`SRC-##`)** — one page per source under
-  `.../sources/src-NN.md`. Front matter: `src_id`, `outlet`, `src_type`,
-  `url`, `retrieved`, `published`, `claims` (the CLM-## it supports). The
-  registry index notes which sources share a publisher ("source family" —
-  not independent corroboration) versus which are genuinely independent
-  outlets.
-- **Cases registry (`CASE-##`)** — one page per tracked case under
-  `.../cases/case-NN.md`, mirroring the `[[extra.cases]]` array in the
-  main dossier page's front matter (`anchor`, `period`, `title`, `status`,
-  `label`, `summary`). Detail pages deliberately do **not** duplicate the
-  full narrative — they link back to the canonical prose section by
-  anchor, so the most sensitive case text (e.g. the domestic-violence
-  case) only ever exists in one editable place.
-- **Gaps registry (`GAP-##`)** — one page per open question under
-  `.../gaps/gap-NN.md`. Front matter: `gap_id`, `priority`
-  (`vysoká`/`nízká`), `checked` (last-verified date), `claims`. Being
-  listed as open is not a finding either way — it means the cited sources
-  don't yet support a conclusion.
+- **Sources registry (`SRC-##`)** — one canonical record per source under
+  `…/sources/src-NN.json`: `outlet`, `sourceType`, `url`, `retrieved`,
+  `published`, `claims` (the CLM-## it supports), `sourceFamily` (sources
+  sharing a publisher family — not independent corroboration — versus
+  genuinely independent outlets; the S2 rule counts families, not files),
+  and a mandatory editorial markdown body (rule T7, ≥ 150 chars).
+- **Cases registry (`CASE-##`)** — one canonical record per tracked case
+  under `…/cases/case-NN.json` (`anchor`, `period`, `title`, `status`,
+  `label`, `summary`, `subjects`). Detail pages deliberately do **not**
+  duplicate the full narrative — they link back to the canonical prose
+  section by anchor, so the most sensitive case text (e.g. the
+  domestic-violence case) only ever exists in one editable place
+  (a markdown content block of `dossier.json`).
+- **Gaps registry (`GAP-##`)** — one canonical record per open question
+  under `…/gaps/gap-NN.json`: `priority` (`vysoká`/`nízká`), `checked`
+  (last-verified date), `claims`. Being listed as open is not a finding
+  either way — it means the cited sources don't yet support a conclusion.
 
 Registries are bidirectionally linked (CLM ↔ SRC, GAP → CLM, SRC → CLM),
 and the four summary metric tiles on the main dossier page and landing
@@ -182,40 +256,44 @@ provenance. To vše **renderují šablony z existujících strukturovaných
 dat** — full-page nikdy neznamená druhou ručně psanou kopii (pravidlo
 dvou reprezentací platí dál). Ručně psaná je u zdroje pouze povinná
 redakční poznámka v těle stránky (co dokládá, nezávislost, limity).
-Vynucení: `validate-dossier.mjs` (povinná pole + min. délka body
-zdroje), `verify-full-pages.mjs` (sekce v hotovém HTML) a
+Vynucení: `validate-registry-table.mjs` T7 (povinná redakční poznámka
+zdroje, min. 150 znaků, v `npm run data:validate`),
+`verify-full-pages.mjs` (sekce v hotovém HTML) a
 `verify-jsonld.mjs` (Claim uzel na každé stránce tvrzení, citační uzel
 na každé stránce zdroje) — vše součást `npm run build`. Adoptér, který
 tyto kontroly vypne, se nemůže hlásit k tomuto datovému modelu.
 
-#### Two representations, one source of truth
+#### One canonical source (the two-representations rule, post-T-028)
 
-The claims table and case-cards on the main dossier page stay
-hand-authored (that's what an editor actually edits); the per-record
-pages under `claims/` and `cases/` are a second, generated-and-checked
-representation of the same facts. `scripts/dossier/validate-dossier.mjs`
-fails the build if a claim/case page's status, text, or source list
-differs at all from its counterpart in the overview table/front-matter
-array, or if the counts don't match 1:1 in both directions.
-`scripts/dossier/generate-stats.mjs` derives the tile counts from the
-actual per-record page count on disk (not the table), and separately
-throws if that count disagrees with the table/array count — this check
-also runs under `npm run dev`, which doesn't run the full validator. If
-you ever hand-edit the overview table or `[[extra.cases]]`, re-run
-`scripts/dossier/migrate-claims-to-pages.mjs` /
-`migrate-cases-to-pages.mjs` to regenerate the matching detail pages
-before building.
+The claims table on the main dossier page stays hand-authored — it lives
+as a markdown content block in the dossier's canonical `dossier.json`,
+and it is what an editor actually edits together with the canonical
+claim records. Those are deliberately two representations of the same
+facts, and `scripts/data/validate-registry-table.mjs` (T1–T8, part of
+`npm run data:validate` and therefore of every build/dev/check run) fails
+the build if a table row's text, status, label or source list differs at
+all from its canonical claim record, or if the sets don't match 1:1 in
+both directions.
 
-Every anchor/link is additionally enforced by two more build-time
-scripts:
+Everything else that used to be a second hand-maintained copy is now
+**generated from the canonical records**, so drift with it is impossible
+by construction: the per-record detail pages, registry indexes, case
+cards, timeline rendering, tile counts, navigation, exports and JSON-LD
+all come from one compiled model. There are no `migrate-*-to-pages.mjs`
+regeneration scripts anymore — after editing canonical JSON, run
+`npm run data:build` to regenerate view models and content adapters, and
+never edit a generated file by hand (`lint:generated-content` blocks it).
 
-- `scripts/dossier/validate-dossier.mjs` — checks the source Markdown:
-  every CLM-##/GAP-## row has a real anchor, every SRC-##/CLM-## reference
-  resolves, no duplicate IDs.
+Every anchor/link is additionally enforced by two build-time checks:
+
+- `scripts/data/validate-registry-table.mjs` — every CLM row has a real
+  `<a id="clm-##">` anchor and a link to its detail page (T1); internal
+  body links to sources/gaps resolve to existing records (T6); duplicate
+  or missing IDs fail (T2).
 - `scripts/dossier/verify-anchors.mjs` — runs after `zola build`; checks
-  that every anchor and every `extra.cases`/`extra.timeline` reference in
-  the source actually resolves to a real `id` in the built HTML (Zola's
-  own link checker doesn't validate hand-written `id="..."` attributes).
+  that every anchor and every case/timeline reference actually resolves
+  to a real `id` in the built HTML (Zola's own link checker doesn't
+  validate hand-written `id="..."` attributes).
 
 Both run as part of `npm run build` (the exact sequence CI runs too).
 Never wave past a failure here — a broken anchor or an unsourced claim is
@@ -223,14 +301,24 @@ a real defect, not lint noise.
 
 #### Old URLs
 
-The dossier used to live at `/dossier/...` (singular, no slug). Every
-migrated page carries an `aliases` front-matter entry pointing at its old
-`/dossier/...` URL, so old links and bookmarks redirect rather than 404.
-Zola's generated alias page reads `window.location.hash` and appends it
-to the redirect target, so old `#clm-NN`-style fragment links still land
-on the exact anchor after the redirect, not just at the top of the page.
+The dossier used to live at `/dossier/...` (singular, no slug). Aliases
+are canonical data: a dossier's `aliases` array in `dossier.json` and an
+entity's `routeAliases` are emitted into the generated content adapters
+as Zola `aliases`, so old links and bookmarks redirect rather than 404
+(this also covers the old per-record `/dossiers/macinka-turek/…` URLs
+that moved during the entity-dossier split). Zola's generated alias page
+reads `window.location.hash` and appends it to the redirect target, so
+old `#clm-NN`-style fragment links still land on the exact anchor after
+the redirect, not just at the top of the page.
 
 ### Templates
+
+Templates are a pure presentation layer: every dossier-scoped template
+reads its data from the record's **view model**
+(`load_data("data/" ~ extra.view_model)` → `data/generated/views/**`,
+built from the compiled canonical dataset by `npm run data:views`), never
+from hand-maintained front matter — the generated content adapters carry
+only the routing envelope.
 
 - `templates/index.html` — landing page; loops over every authorized
   dossier under `content/dossiers/` rather than assuming exactly one
@@ -270,8 +358,9 @@ on the exact anchor after the redirect, not just at the top of the page.
   with no pages, or a concept missing the fields its tile needs.
 - `templates/entities-index.html` — globální registr entit (`/entities/`)
   jako průzkumník: hledání, seskupení (typ entity / dossier / role /
-  abecedně) a rozbalovací skupiny. Řádky renderuje Tera ze stejného front
-  matteru, ze kterého vzniká `/data/entities.json` i JSON-LD `@graph`, a
+  abecedně) a rozbalovací skupiny. Řádky renderuje Tera z view modelů
+  téhož kanonického datasetu, ze kterého vzniká `/data/entities.json`
+  i JSON-LD `@graph`, a
   každý nese `data-jsonld-id` na svůj uzel v exportu — UI a strojová data
   proto nemůžou ukazovat jiný svět. Skupiny nad těmi řádky staví
   `assets/js/modules/entity-explorer.js` (Alpine, přesouvá existující DOM
@@ -294,7 +383,7 @@ on the exact anchor after the redirect, not just at the top of the page.
   Tailwindem/Flowbite). Každá `<table>` v šablonách jde přes ni — vynucuje
   `npm run lint:component-reuse`; obal nese `data-record-type` provazující
   řádky tabulky s JSON-LD uzly, které stránka už vydává. Data tabulek
-  pocházejí ze stejných front-matter/data zdrojů jako JSON-LD `@graph`;
+  pocházejí z téhož compiled kanonického modelu jako JSON-LD `@graph`;
   DuckDB (`.mjs`) pipeline jako budoucí zdroj je pouze plán,
   neimplementováno (konstituce §8).
 - `data/navigation.toml` — data-driven navigation, rendered by `base.html`

@@ -1,3 +1,5 @@
+*Historický dokument — popisuje stav před JSON-first migrací (T-028).*
+
 # ADR: advanced application shell rebuild — audit and phased plan
 
 **Status**: accepted in principle, phased; implementation sequenced after
