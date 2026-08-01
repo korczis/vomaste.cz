@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "title": "Kanonický záznam Update (data/dossiers/<slug>/updates/YYYY-MM-DD.json) — auditovatelná, append-only historie dossieru",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["$schema", "schemaVersion", "@context", "@id", "@type", "recordType", "identifier", "dossier", "date", "summary"],
+  "properties": {
+    "$schema": { "const": "https://vomaste.cz/schemas/canonical/update.schema.json" },
+    "schemaVersion": { "const": 1 },
+    "@context": { "const": "https://vomaste.cz/context/v1.jsonld" },
+    "@id": { "$ref": "_defs.schema.json#/$defs/updateGlobalId" },
+    "@type": { "const": "vomaste:Update" },
+    "recordType": { "const": "update" },
+    "identifier": {
+      "$ref": "_defs.schema.json#/$defs/isoDate",
+      "$comment": "Datum je lokální id záznamu (dnešní updates.toml má jeden vstup na datum)."
+    },
+    "dossier": { "$ref": "_defs.schema.json#/$defs/dossierRef" },
+    "date": { "$ref": "_defs.schema.json#/$defs/isoDate" },
+    "summary": {
+      "type": "string",
+      "minLength": 1,
+      "$comment": "Append-only zásada z hlavičky updates.toml: zaznamenává se, co bylo SKUTEČNĚ zkontrolováno a změněno — nikdy změna, která neproběhla."
+    },
+    "addedClaims": {
+      "type": "array",
+      "items": { "$ref": "_defs.schema.json#/$defs/claimRef" }
+    },
+    "updatedClaims": {
+      "type": "array",
+      "items": { "$ref": "_defs.schema.json#/$defs/claimRef" }
+    },
+    "addedGaps": {
+      "type": "array",
+      "items": { "$ref": "_defs.schema.json#/$defs/gapRef" }
+    },
+    "closedGaps": {
+      "type": "array",
+      "items": { "$ref": "_defs.schema.json#/$defs/gapRef" }
+    },
+    "reviewedSources": {
+      "type": "array",
+      "items": { "$ref": "_defs.schema.json#/$defs/sourceRef" }
+    },
+    "content": { "$ref": "_defs.schema.json#/$defs/contentBlocks" }
+  },
+  "$comment": "Zrcadlí [[updates]] bloky dnešních data/dossiers/<slug>/updates.toml (date, summary, added_claims, updated_claims, added_gaps, closed_gaps, reviewed_sources). Referenční existenci odkazovaných záznamů vynucuje validátor fáze C (dnes validate-graph.mjs, sekce update history)."
+}

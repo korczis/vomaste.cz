@@ -1,0 +1,17 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/vocabulary.schema.json",
+  "schemaVersion": 1,
+  "id": "entity-types",
+  "$comment": "Uzavřená množina typů entit — hodnoty z ALLOWED_NODE_TYPES ve scripts/dossier/validate-graph.mjs, popisky z data/entity-types.toml (vynucuje validate:entity-types oběma směry). Pořadí podle pole order v data/entity-types.toml.",
+  "values": [
+    { "value": "person", "label": "Osoby" },
+    { "value": "company", "label": "Firmy" },
+    { "value": "public_institution", "label": "Veřejné instituce" },
+    { "value": "political_party", "label": "Politické strany" },
+    { "value": "organization", "label": "Organizace a spolky" },
+    { "value": "controversy", "label": "Kauzy" },
+    { "value": "event", "label": "Události" },
+    { "value": "legal_or_administrative_process", "label": "Právní a správní řízení" },
+    { "value": "role", "label": "Funkce a role" }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "title": "Kanonický záznam Source (data/dossiers/<slug>/sources/src-##.json)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["$schema", "schemaVersion", "@context", "@id", "@type", "recordType", "identifier", "dossier", "title", "outlet", "sourceType", "url", "retrieved", "claims", "subjects", "content", "order"],
+  "properties": {
+    "$schema": { "const": "https://vomaste.cz/schemas/canonical/source.schema.json" },
+    "schemaVersion": { "const": 1 },
+    "@context": { "const": "https://vomaste.cz/context/v1.jsonld" },
+    "@id": { "$ref": "_defs.schema.json#/$defs/sourceGlobalId" },
+    "@type": { "const": "vomaste:Source" },
+    "recordType": { "const": "source" },
+    "identifier": { "$ref": "_defs.schema.json#/$defs/srcId" },
+    "dossier": { "$ref": "_defs.schema.json#/$defs/dossierRef" },
+    "title": { "type": "string", "minLength": 1 },
+    "outlet": {
+      "type": ["string", "null"],
+      "$comment": "Vydavatel/médium. Nullable stejně jako dnešní řádkové schéma — oficiální primární zdroje nemají outlet. Nesmí se míchat se sourceFamily (viz komentář family ve schemas/source.schema.json)."
+    },
+    "sourceFamily": {
+      "type": "string",
+      "$comment": "Zdrojová rodina — zdroje se stejnou neprázdnou hodnotou se počítají jako JEDEN nezávislý zdroj (převzetí téže agenturní zprávy). Prázdný string = samostatný zdroj; sémantiku nezávislosti vynucuje validátor fáze C, ne tvar."
+    },
+    "sourceType": {
+      "type": "string",
+      "minLength": 1,
+      "$comment": "Otevřená množina (schemas/README.md) — deskriptivní inventář hodnot drží _shared/vocabularies/source-types.json, ale enum se tu nevynucuje, stejně jako u dnešního src_type."
+    },
+    "url": { "$ref": "_defs.schema.json#/$defs/httpUrl" },
+    "published": { "$ref": "_defs.schema.json#/$defs/publishedDate" },
+    "retrieved": {
+      "$ref": "_defs.schema.json#/$defs/isoDate",
+      "$comment": "Povinné — provenienční kotva: KDY byl zdroj otevřen. Vstup citation fingerprintu (lib/jsonld-shared.mjs)."
+    },
+    "claims": {
+      "type": "array",
+      "items": { "$ref": "_defs.schema.json#/$defs/claimRef" }
+    },
+    "subjects": { "$ref": "_defs.schema.json#/$defs/subjects" },
+    "content": { "$ref": "_defs.schema.json#/$defs/contentBlocks" },
+    "order": { "type": "integer", "minimum": 0 },
+    "archiveUrl": { "$ref": "_defs.schema.json#/$defs/httpUrl" },
+    "availability": {
+      "type": "string",
+      "minLength": 1,
+      "$comment": "Volitelný stav dostupnosti (validate:dossier dnes hlásí possibly-dead zdroje jen jako warning; strukturované pole je připraveno pro fázi C/D)."
+    }
+  },
+  "$comment": "Jen tvar. Nezávislost source families a mrtvé odkazy vlastní sémantické validátory fáze C."
+}

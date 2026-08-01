@@ -1,0 +1,21 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/example-subject/updates/2026-01-01",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-01-01",
+  "dossier": { "@id": "https://vomaste.cz/id/dossiers/example-subject" },
+  "date": "2026-01-01",
+  "summary": "Založení syntetického testovacího dossieru: CLM-01, SRC-01, CASE-01, GAP-01 a hrana edge-example-org.",
+  "addedClaims": [
+    { "@id": "https://vomaste.cz/id/dossiers/example-subject/claims/CLM-01" }
+  ],
+  "addedGaps": [
+    { "@id": "https://vomaste.cz/id/dossiers/example-subject/gaps/GAP-01" }
+  ],
+  "reviewedSources": [
+    { "@id": "https://vomaste.cz/id/dossiers/example-subject/sources/SRC-01" }
+  ]
+}

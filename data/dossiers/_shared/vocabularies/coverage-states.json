@@ -1,0 +1,13 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/vocabulary.schema.json",
+  "schemaVersion": 1,
+  "id": "coverage-states",
+  "$comment": "Uzavřená množina stavů pokrytí entity — hodnoty přesně z COVERAGE_STATES ve scripts/dossier/validate-authorization.mjs, ve stejném pořadí. Popisná metadata, nikdy sama o sobě cesta k publikaci (kontextová entita smí mít jen discovered|referenced|contextual; developing|full popisují už autorizovaný dossier — sémantiku vynucuje validate:authorization).",
+  "values": [
+    { "value": "discovered", "label": "discovered" },
+    { "value": "referenced", "label": "referenced" },
+    { "value": "contextual", "label": "contextual" },
+    { "value": "developing", "label": "developing" },
+    { "value": "full", "label": "full" }
+  ]
+}

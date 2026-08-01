@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/vocabulary.schema.json",
+  "schemaVersion": 1,
+  "id": "relation-types",
+  "$comment": "Uzavřená množina typů vztahů — hodnoty přesně z ALLOWED_RELATIONS ve scripts/dossier/validate-graph.mjs, ve stejném pořadí. Repo dnes nemá žádný centrální překladový slovník typů vztahů (lidský popisek nese každá hrana ve svém poli label), takže label = value; přidat české popisky je redakční změna, ne technická.",
+  "values": [
+    { "value": "HOLDS_ROLE", "label": "HOLDS_ROLE" },
+    { "value": "MEMBER_OF", "label": "MEMBER_OF" },
+    { "value": "APPOINTED_AS", "label": "APPOINTED_AS" },
+    { "value": "DEFENDED", "label": "DEFENDED" },
+    { "value": "DENIED", "label": "DENIED" },
+    { "value": "ASSOCIATED_WITH_EVENT", "label": "ASSOCIATED_WITH_EVENT" },
+    { "value": "RESPONDED_TO", "label": "RESPONDED_TO" },
+    { "value": "DONATED_TO", "label": "DONATED_TO" },
+    { "value": "UNDISCLOSED_INTEREST_IN", "label": "UNDISCLOSED_INTEREST_IN" },
+    { "value": "HOLDS_INTEREST_IN", "label": "HOLDS_INTEREST_IN" },
+    { "value": "SUBJECT_OF_PROCEEDING", "label": "SUBJECT_OF_PROCEEDING" },
+    { "value": "INVESTIGATED_BY", "label": "INVESTIGATED_BY" },
+    { "value": "PROCEDURALLY_CLOSED_BY", "label": "PROCEDURALLY_CLOSED_BY" },
+    { "value": "WARNED_BY", "label": "WARNED_BY" },
+    { "value": "FOLLOWED_BY", "label": "FOLLOWED_BY" }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vomaste.cz/schemas/canonical/_defs.schema.json",
+  "title": "Sdílené definice kanonického JSON/JSON-LD datového modelu (T-028, fáze B)",
+  "$comment": "Tvarová vrstva (shape). Sémantiku — referenční integritu, source-families, autorizaci, single-source pravidlo — vlastní sémantické validátory fáze C, nikdy tento soubor (schemas/README.md: jedno pravidlo, jeden vlastník). Enumy tady MUSÍ zůstat synchronní se slovníky v data/dossiers/_shared/vocabularies/ — hlídá to scripts/data/validate-shape.test.mjs.",
+  "$defs": {
+    "globalId": {
+      "type": "string",
+      "pattern": "^https://vomaste\\.cz/id/[a-z0-9][a-zA-Z0-9/_.-]*$",
+      "$comment": "Každé @id i každá interní reference je globální IRI pod https://vomaste.cz/id/ — řešení composite-key problému z baseline auditu (1 649 dossier-scoped identifikátorů typu CLM-01 existujících ve 22 dossierech současně). Konkrétní tvary vynucují typované varianty níže."
+    },
+    "dossierGlobalId": {
+      "type": "string",
+      "pattern": "^https://vomaste\\.cz/id/dossiers/[a-z0-9][a-z0-9-]*$"
+    },
+    "entityGlobalId": {
+      "type": "string",
+      "pattern": "^https://vomaste\\.cz/id/entities/[a-z0-9][a-z0-9_-]*$",
+      "$comment": "Entity jsou jediný už dnes globální jmenný prostor (content/entities/*.md) — nejsou dossier-scoped. Underscore povolen (existující entity_id vzor ^[a-z0-9][a-z0-9_-]*$)."
+    },
+    "claimGlobalId": {
+      "type": "string",
+      "pattern": "^https://vomaste\\.cz/id/dossiers/[a-z0-9][a-z0-9-]*/claims/CLM-\\d+$"
+    },
+    "sourceGlobalId": {
+      "type": "string",
+      "pattern": "^https://vomaste\\.cz/id/dossiers/[a-z0-9][a-z0-9-]*/sources/SRC-\\d+$"
+    },
+    "caseGlobalId": {
+      "type": "string",
+      "pattern": "^https://vomaste\\.cz/id/dossiers/[a-z0-9][a-z0-9-]*/cases/CASE-\\d+$"
+    },
+    "gapGlobalId": {
+      "type": "string",
+      "pattern": "^https://vomaste\\.cz/id/dossiers/[a-z0-9][a-z0-9-]*/gaps/GAP-\\d+$"
+    },
+    "relationGlobalId": {
+      "type": "string",
+      "pattern": "^https://vomaste\\.cz/id/dossiers/[a-z0-9][a-z0-9-]*/relations/edge-[a-z0-9-]+$"
+    },
+    "updateGlobalId": {
+      "type": "string",
+      "pattern": "^https://vomaste\\.cz/id/dossiers/[a-z0-9][a-z0-9-]*/updates/\\d{4}-\\d{2}-\\d{2}$"
+    },
+
+    "clmId": { "type": "string", "pattern": "^CLM-\\d+$" },
+    "srcId": { "type": "string", "pattern": "^SRC-\\d+$" },
+    "caseId": { "type": "string", "pattern": "^CASE-\\d+$" },
+    "gapId": { "type": "string", "pattern": "^GAP-\\d+$" },
+    "edgeId": { "type": "string", "pattern": "^edge-[a-z0-9-]+$" },
+    "slug": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+    "entityId": { "type": "string", "pattern": "^[a-z0-9][a-z0-9_-]*$" },
+
+    "isoDate": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "publishedDate": {
+      "type": "string",
+      "pattern": "^\\d{4}(-\\d{2}(-\\d{2})?)?$",
+      "$comment": "Redukovaná přesnost je záměr: reálné zdroje nesou i hodnoty typu \"2026-03\" (měsíc bez dne) — viz front matter content/dossiers/*/sources/*.md; vynutit plné ISO datum by znamenalo den vymyslet."
+    },
+    "httpUrl": { "type": "string", "pattern": "^https?://" },
+
+    "idRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["@id"],
+      "properties": { "@id": { "$ref": "#/$defs/globalId" } }
+    },
+    "dossierRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["@id"],
+      "properties": { "@id": { "$ref": "#/$defs/dossierGlobalId" } }
+    },
+    "entityRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["@id"],
+      "properties": { "@id": { "$ref": "#/$defs/entityGlobalId" } }
+    },
+    "claimRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["@id"],
+      "properties": { "@id": { "$ref": "#/$defs/claimGlobalId" } }
+    },
+    "sourceRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["@id"],
+      "properties": { "@id": { "$ref": "#/$defs/sourceGlobalId" } }
+    },
+    "caseRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["@id"],
+      "properties": { "@id": { "$ref": "#/$defs/caseGlobalId" } }
+    },
+    "gapRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["@id"],
+      "properties": { "@id": { "$ref": "#/$defs/gapGlobalId" } }
+    },
+
+    "subjects": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/slug" },
+      "$comment": "Subject id-čka (\"babis\", \"macinka\") jako prosté slugy — stejná hodnota jako dnešní pole subjects ve front matter (mechanismus tag-subjects.mjs), ne IRI."
+    },
+
+    "claimStatus": {
+      "type": "string",
+      "enum": ["status-corroborated", "status-single", "status-quote", "status-disputed", "status-opinion"],
+      "$comment": "Uzavřená redakční množina — KNOWN_STATUSES z validate-dossier.mjs (status-opinion je deklarovaný v AGENTS.md, jen zatím bez záznamu). Stavy zdrojování, nikdy rozhodnutí o pravdě. Synchronní s _shared/vocabularies/claim-statuses.json."
+    },
+    "edgeStatus": {
+      "type": "string",
+      "enum": ["corroborated", "single", "disputed", "quote", "contextual"],
+      "$comment": "ALLOWED_EDGE_STATUS z validate-graph.mjs."
+    },
+    "relationType": {
+      "type": "string",
+      "enum": [
+        "HOLDS_ROLE", "MEMBER_OF", "APPOINTED_AS", "DEFENDED", "DENIED",
+        "ASSOCIATED_WITH_EVENT", "RESPONDED_TO", "DONATED_TO",
+        "UNDISCLOSED_INTEREST_IN", "HOLDS_INTEREST_IN", "SUBJECT_OF_PROCEEDING",
+        "INVESTIGATED_BY", "PROCEDURALLY_CLOSED_BY", "WARNED_BY", "FOLLOWED_BY"
+      ],
+      "$comment": "ALLOWED_RELATIONS z validate-graph.mjs. Synchronní s _shared/vocabularies/relation-types.json. Rozšíření množiny je redakční změna datového modelu, ne technická."
+    },
+    "entityType": {
+      "type": "string",
+      "enum": [
+        "person", "political_party", "public_institution", "company", "organization",
+        "event", "controversy", "role", "legal_or_administrative_process"
+      ],
+      "$comment": "ALLOWED_NODE_TYPES z validate-graph.mjs; popisky drží data/entity-types.toml. Synchronní s _shared/vocabularies/entity-types.json."
+    },
+    "coverageState": {
+      "type": "string",
+      "enum": ["discovered", "referenced", "contextual", "developing", "full"],
+      "$comment": "COVERAGE_STATES z validate-authorization.mjs. Synchronní s _shared/vocabularies/coverage-states.json."
+    },
+    "gapPriority": {
+      "type": "string",
+      "enum": ["vysoká", "střední", "nízká"],
+      "$comment": "Skutečně použité hodnoty ve front matter gaps (24× vysoká, 155× střední, 8× nízká k 2026-08-01) — zadání fáze B uvádělo jen vysoká|nízká, ale reálná data mají většinově střední; vynechat ji by rozbilo fázi D."
+    },
+
+    "contentBlock": {
+      "type": "object",
+      "required": ["type"],
+      "properties": {
+        "type": {
+          "enum": [
+            "markdown", "paragraph", "quote", "process-note", "editorial-note",
+            "warning", "list", "table", "references", "related-records"
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": { "type": { "const": "markdown" } },
+            "required": ["type"]
+          },
+          "then": {
+            "additionalProperties": false,
+            "required": ["type", "value"],
+            "properties": {
+              "type": { "const": "markdown" },
+              "value": { "type": "string", "minLength": 1 }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": { "type": { "const": "quote" } },
+            "required": ["type"]
+          },
+          "then": {
+            "additionalProperties": false,
+            "required": ["type", "value"],
+            "properties": {
+              "type": { "const": "quote" },
+              "value": { "type": "string", "minLength": 1 },
+              "attribution": { "type": "string", "minLength": 1 },
+              "source": { "$ref": "#/$defs/sourceRef" }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": { "type": { "enum": ["process-note", "editorial-note", "warning"] } },
+            "required": ["type"]
+          },
+          "then": {
+            "additionalProperties": false,
+            "required": ["type", "value"],
+            "properties": {
+              "type": { "enum": ["process-note", "editorial-note", "warning"] },
+              "value": { "type": "string", "minLength": 1 }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": { "type": { "enum": ["paragraph", "list", "table", "references", "related-records"] } },
+            "required": ["type"]
+          },
+          "then": {
+            "additionalProperties": false,
+            "required": ["type", "value"],
+            "properties": {
+              "type": { "enum": ["paragraph", "list", "table", "references", "related-records"] },
+              "value": true
+            },
+            "$comment": "Rezervované typy bloků (fáze B): tvar value se plně specifikuje, až je začne emitovat migrátor / konzumovat generátor — do té doby je value libovolný JSON, ale cizí klíče mimo type/value neprojdou."
+          }
+        }
+      ]
+    },
+    "contentBlocks": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/contentBlock" }
+    }
+  }
+}

@@ -10,6 +10,7 @@
     "css:build": "tailwindcss -i ./static/css/input.css -o ./static/css/main.css --minify",
     "css:watch": "tailwindcss -i ./static/css/input.css -o ./static/css/main.css --watch",
     "js:build": "esbuild assets/js/app.js assets/js/graph-app.js --bundle --minify --target=es2020 --outdir=static/js",
+    "data:validate": "node scripts/data/validate-shape.mjs",
     "validate:dossier": "node scripts/dossier/validate-dossier.mjs",
     "validate:schemas": "node scripts/dossier/validate-schemas.mjs",
     "validate:graph": "node scripts/dossier/validate-graph.mjs",

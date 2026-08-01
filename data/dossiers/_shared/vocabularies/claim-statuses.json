@@ -1,0 +1,13 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/vocabulary.schema.json",
+  "schemaVersion": 1,
+  "id": "claim-statuses",
+  "$comment": "Uzavřená redakční množina stavů tvrzení — stavy ZDROJOVÁNÍ, nikdy rozhodnutí o pravdě (AGENTS.md pravidla 3 a 7). Hodnoty převzaty z KNOWN_STATUSES ve scripts/dossier/validate-dossier.mjs (nadmnožina enum v schemas/claim.schema.json — status-opinion je deklarován v AGENTS.md a validate-dossier.mjs, jen zatím nemá žádný záznam). Popisky ze STATUS_LABELS ve scripts/dossier/migrate-claims-to-pages.mjs.",
+  "values": [
+    { "value": "status-corroborated", "label": "CORROBORATED" },
+    { "value": "status-single", "label": "1 ZDROJ" },
+    { "value": "status-quote", "label": "CITACE" },
+    { "value": "status-disputed", "label": "SPORNÉ" },
+    { "value": "status-opinion", "label": "NÁZOR" }
+  ]
+}

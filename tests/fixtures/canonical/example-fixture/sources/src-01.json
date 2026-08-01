@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/example-subject/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": { "@id": "https://vomaste.cz/id/dossiers/example-subject" },
+  "title": "SRC-01 — Example Daily: Syntetický článek o Example Subject",
+  "outlet": "Example Daily",
+  "sourceFamily": "",
+  "sourceType": "zpravodajství",
+  "url": "https://example.invalid/clanek/example-subject",
+  "published": "2026-01",
+  "retrieved": "2026-01-01",
+  "claims": [
+    { "@id": "https://vomaste.cz/id/dossiers/example-subject/claims/CLM-01" }
+  ],
+  "subjects": ["example"],
+  "content": [
+    { "type": "markdown", "value": "Syntetický popis obsahu zdroje pro účely testu tvaru." }
+  ],
+  "order": 1,
+  "archiveUrl": "https://archive.example.invalid/example-subject",
+  "availability": "available"
+}

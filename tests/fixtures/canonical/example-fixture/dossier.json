@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/example-subject",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "example-subject",
+  "slug": "example-subject",
+  "title": "Example Subject",
+  "description": "Syntetický testovací dossier — žádná reálná osoba. Slouží výhradně jako fixture tvarového validátoru (scripts/data/validate-shape.test.mjs).",
+  "dossierType": "entity",
+  "canonicalDossier": "example-subject",
+  "subject": "example",
+  "language": "cs",
+  "aliases": ["/dossiers/example-subject-old/"],
+  "navigationVisible": false,
+  "coverageState": "full",
+  "updated": "2026-01-01",
+  "authorization": {
+    "records": ["AUTH-0000-00-00-TEST"]
+  },
+  "seo": {
+    "title": "Example Subject — testovací dossier",
+    "description": "Syntetická SEO metadata testovacího dossieru."
+  },
+  "contentBlocks": [
+    { "type": "markdown", "value": "Syntetický úvodní text testovacího dossieru." },
+    { "type": "process-note", "value": "Fixture — data nevznikla žádnou investigací." }
+  ]
+}

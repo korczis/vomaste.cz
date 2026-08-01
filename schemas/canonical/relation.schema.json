@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "title": "Kanonický záznam Relation (data/dossiers/<slug>/relations/edge-*.json) — jediný zdroj hran grafu",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["$schema", "schemaVersion", "@context", "@id", "@type", "recordType", "identifier", "dossier", "relationId", "sourceEntity", "targetEntity", "relationType", "label", "status", "claims", "sources", "subjects"],
+  "properties": {
+    "$schema": { "const": "https://vomaste.cz/schemas/canonical/relation.schema.json" },
+    "schemaVersion": { "const": 1 },
+    "@context": { "const": "https://vomaste.cz/context/v1.jsonld" },
+    "@id": { "$ref": "_defs.schema.json#/$defs/relationGlobalId" },
+    "@type": { "const": "vomaste:Relation" },
+    "recordType": { "const": "relation" },
+    "identifier": { "$ref": "_defs.schema.json#/$defs/edgeId" },
+    "relationId": {
+      "$ref": "_defs.schema.json#/$defs/edgeId",
+      "$comment": "Shodné s identifier — zachováno obojí: identifier je jednotná obálka všech záznamů, relationId explicitní doménové pole ze zadání."
+    },
+    "dossier": { "$ref": "_defs.schema.json#/$defs/dossierRef" },
+    "sourceEntity": {
+      "$ref": "_defs.schema.json#/$defs/entityRef",
+      "$comment": "V JSON-LD mapováno na vomaste:from (kontext v1) — stejný term, který už emituje build-jsonld-exports.mjs."
+    },
+    "targetEntity": {
+      "$ref": "_defs.schema.json#/$defs/entityRef",
+      "$comment": "V JSON-LD mapováno na vomaste:to."
+    },
+    "relationType": { "$ref": "_defs.schema.json#/$defs/relationType" },
+    "label": { "type": "string", "minLength": 1 },
+    "status": { "$ref": "_defs.schema.json#/$defs/edgeStatus" },
+    "claims": {
+      "type": "array",
+      "items": { "$ref": "_defs.schema.json#/$defs/claimRef" }
+    },
+    "sources": {
+      "type": "array",
+      "items": { "$ref": "_defs.schema.json#/$defs/sourceRef" }
+    },
+    "subjects": { "$ref": "_defs.schema.json#/$defs/subjects" },
+    "directed": {
+      "type": "boolean",
+      "default": true,
+      "$comment": "Chybějící pole = true (orientovaná hrana). JSON Schema default je anotace — konzument fáze C/G doplňuje true při čtení."
+    },
+    "content": { "$ref": "_defs.schema.json#/$defs/contentBlocks" }
+  },
+  "if": {
+    "properties": { "status": { "not": { "const": "contextual" } } },
+    "required": ["status"]
+  },
+  "then": {
+    "properties": {
+      "claims": { "type": "array", "minItems": 1 },
+      "sources": { "type": "array", "minItems": 1 }
+    },
+    "$comment": "Stejné pravidlo jako validate-graph.mjs: každá ne-kontextová hrana nese aspoň jeden CLM a jeden SRC. Kontextová hrana je nekontestované pozadí bez vlastního zdroje."
+  },
+  "$comment": "Jen tvar. Single-source pravidlo (status single ⇒ přesně 1 zdroj), nezávislost rodin u corroborated, depth pravidla a konektivita ke subjektu patří sémantickému validátoru fáze C (dnes validate-graph.mjs)."
+}
