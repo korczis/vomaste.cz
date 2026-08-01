@@ -30,6 +30,10 @@ zdroje dokládají tři otevřené procesní větve bez konečného rozhodnutí:
    ([CLM-63](@/dossiers/andrej-babis/claims/clm-63.md)) — zda firmy
    kasační stížnosti podaly a s jakým výsledkem, citované zdroje
    nedokládají.
+4. **Žaloba Seznam.cz na ochranu pověsti** podaná 3. 3. 2026
+   ([CLM-86](@/dossiers/andrej-babis/claims/clm-86.md)) — o žalobě
+   soud nerozhodl; termín případného jednání nebyl k datu kontroly
+   doložen přímo otevřeným zdrojem.
 
 **Co to znamená.** Dossier výsledek žádné z těchto větví nepředjímá:
 obžaloba není odsouzení, žaloba není rozhodnutí a pravomocný rozsudek

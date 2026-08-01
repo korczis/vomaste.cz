@@ -22,13 +22,16 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-63"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-86"
     }
   ],
   "subjects": [],
   "content": [
     {
       "type": "markdown",
-      "value": "**Co je doloženo.** K datu poslední kontroly (1. 8. 2026) citované\nzdroje dokládají tři otevřené procesní větve bez konečného rozhodnutí:\n\n1. **Obžaloba ve věci Pekárny Zelená louka** podaná 22. 6. 2026 ke\n   Krajskému soudu v Praze\n   ([CLM-57](@/dossiers/andrej-babis/claims/clm-57.md)) — o vině soud\n   nerozhodl a žádný citovaný zdroj nedokládá ani nařízení hlavního\n   líčení.\n2. **Žaloby PGRLF na 28 firem** podané 20. 7. 2026\n   ([CLM-60](@/dossiers/andrej-babis/claims/clm-60.md)) — o nárocích\n   nerozhodl žádný soud.\n3. **Kasační větve sporů se SZIF** po rozsudcích Městského soudu\n   v Praze z dubna 2025\n   ([CLM-63](@/dossiers/andrej-babis/claims/clm-63.md)) — zda firmy\n   kasační stížnosti podaly a s jakým výsledkem, citované zdroje\n   nedokládají.\n\n**Co to znamená.** Dossier výsledek žádné z těchto větví nepředjímá:\nobžaloba není odsouzení, žaloba není rozhodnutí a pravomocný rozsudek\nprvního stupně může být kasační stížností ještě zvrácen. Mezera se\nuzavře, až o věcech rozhodnou soudy a rozhodnutí bude doloženo přímo\notevřeným zdrojem."
+      "value": "**Co je doloženo.** K datu poslední kontroly (1. 8. 2026) citované\nzdroje dokládají tři otevřené procesní větve bez konečného rozhodnutí:\n\n1. **Obžaloba ve věci Pekárny Zelená louka** podaná 22. 6. 2026 ke\n   Krajskému soudu v Praze\n   ([CLM-57](@/dossiers/andrej-babis/claims/clm-57.md)) — o vině soud\n   nerozhodl a žádný citovaný zdroj nedokládá ani nařízení hlavního\n   líčení.\n2. **Žaloby PGRLF na 28 firem** podané 20. 7. 2026\n   ([CLM-60](@/dossiers/andrej-babis/claims/clm-60.md)) — o nárocích\n   nerozhodl žádný soud.\n3. **Kasační větve sporů se SZIF** po rozsudcích Městského soudu\n   v Praze z dubna 2025\n   ([CLM-63](@/dossiers/andrej-babis/claims/clm-63.md)) — zda firmy\n   kasační stížnosti podaly a s jakým výsledkem, citované zdroje\n   nedokládají.\n4. **Žaloba Seznam.cz na ochranu pověsti** podaná 3. 3. 2026\n   ([CLM-86](@/dossiers/andrej-babis/claims/clm-86.md)) — o žalobě\n   soud nerozhodl; termín případného jednání nebyl k datu kontroly\n   doložen přímo otevřeným zdrojem.\n\n**Co to znamená.** Dossier výsledek žádné z těchto větví nepředjímá:\nobžaloba není odsouzení, žaloba není rozhodnutí a pravomocný rozsudek\nprvního stupně může být kasační stížností ještě zvrácen. Mezera se\nuzavře, až o věcech rozhodnou soudy a rozhodnutí bude doloženo přímo\notevřeným zdrojem."
     }
   ],
   "order": 6

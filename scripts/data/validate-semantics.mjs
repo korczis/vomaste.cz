@@ -3,8 +3,13 @@
 // pravidlo, jeden vlastník — schemas/README.md); tvar vlastní
 // schemas/canonical/, referenční existenci validate-references.mjs.
 //
-//   S1  claim status-single ⇒ přesně 1 citovaný zdroj (zrcadlí
-//       validate-dossier.mjs, ERROR)
+//   S1  claim status-single ⇒ ≥1 citovaný zdroj a všechny citované
+//       zdroje z JEDNÉ source family (ERROR). Nezávislost se počítá
+//       přes rodiny, ne přes ID/URL: dva zdroje téže rodiny (převzatá
+//       agenturní zpráva) jsou jedno doložení, takže status-single je
+//       pro ně správný; 2+ rodin evidenci podhodnocuje a patří
+//       status-corroborated (sémantika opravy 6b0bd4d, dříve
+//       validate-dossier.mjs)
 //   S2  claim status-corroborated ⇒ ≥2 zdroje z ≥2 různých source
 //       families; rodina = neprázdné sourceFamily, jinak outlet, jinak
 //       zdroj sám za sebe (ERROR — zrcadlí validate-dossier.mjs)
@@ -113,12 +118,18 @@ export function collectSemanticsFindings(model, options = {}) {
     if (wrapper.registry !== "claims") continue;
     const { record, relPath } = wrapper;
     const distinct = [...new Set(refIds(record.sources))];
-    if (record.status === "status-single" && distinct.length !== 1) {
-      found(
-        "S1",
-        wrapper,
-        `${relPath}: status-single cituje ${distinct.length} zdrojů — „1 ZDROJ" znamená přesně jeden; u 2+ nezávislých zdrojů patří status-corroborated`,
-      );
+    if (record.status === "status-single") {
+      // Nezávislost přes RODINY, ne přes ID/URL (oprava 6b0bd4d): dva
+      // zdroje téže rodiny jsou jedno doložení — status-single je pro ně
+      // správný. Kontrola slepá k rodinám by správnou opravu zablokovala.
+      const families = familiesOf(distinct);
+      if (distinct.length === 0 || families.size > 1) {
+        found(
+          "S1",
+          wrapper,
+          `${relPath}: status-single cituje ${distinct.length} zdroj(ů) z ${families.size} nezávislých source families — „1 ZDROJ" znamená jedno nezávislé doložení; u 2+ rodin patří status-corroborated`,
+        );
+      }
     }
     if (record.status === "status-corroborated") {
       const families = familiesOf(distinct);

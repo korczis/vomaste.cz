@@ -5,7 +5,7 @@ system. This is provenance, not a publication decision — see
 `data/authorizations.toml` and `scripts/dossier/authorize-entity.mjs`
 for the only thing that actually authorizes a dossier.
 
-193 record(s) logged across 4 day(s). 0 new since last run.
+199 record(s) logged across 4 day(s). 0 new since last run.
 
 ## 2026-07-29
 
@@ -211,3 +211,9 @@ for the only thing that actually authorizes a dossier.
 - `edge-bartha-agrofert-hungaria` (relation, created)
 - `edge-bartha-kampan` (relation, created)
 - `edge-kampan-babis` (relation, created)
+- `preol` (entity, created)
+- `seznam-cz` (entity, created)
+- `zaloba-seznam-2026` (entity, created)
+- `edge-agrofert-preol` (relation, created)
+- `edge-babis-zaloba-seznam` (relation, created)
+- `edge-seznam-zaloba` (relation, created)

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-77",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-77",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "Policie 9. října 2017 obvinila Andreje Babiše a Jaroslava Faltýnka v souvislosti s padesátimilionovou dotací na stavbu Farmy Čapí hnízdo; podezření se týkala dotačního podvodu a poškození finančních zájmů EU a oba předtím vydala ke stíhání Poslanecká sněmovna. Babiš proti usnesení ihned podal opravný prostředek a věc označil za „pseudokauzu“ — obvinění je procesní krok, ne rozhodnutí o vině",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-54"
+    }
+  ],
+  "subjects": [],
+  "order": 77,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

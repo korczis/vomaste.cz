@@ -9,26 +9,26 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
   },
-  "title": "Původní svěřenské fondy a návrat k přímému vlastnictví",
-  "summary": "V únoru 2017 vložil Babiš akcie Agrofertu do svěřenských fondů AB private trust I a II v reakci na zpřísnění úpravy střetu zájmů. V prosinci 2024 převedl zhruba 90 % podílu z prvního fondu zpět na sebe a 15. října 2025 byl ukončen i druhý fond — stal se opět jediným vlastníkem. Jde o doloženou majetkovou posloupnost, která sama o sobě není protiprávní; k jejím účinkům na střet zájmů se v samostatných kauzách tohoto dossieru vyslovují správní soudy a Evropská komise.",
-  "period": "2017–2025",
-  "status": "status-corroborated",
-  "statusLabel": "Majetková posloupnost — sama o sobě legální",
-  "anchor": "kauza-ab-trusty",
+  "title": "Zemědělská větev auditu Evropské komise",
+  "summary": "Vedle auditu strukturálních fondů (REGC414CZ0133) vedla Evropská komise samostatný audit zemědělských dotací; v dubnu 2021 podle citovaného zpravodajství ještě nebyl finalizován. Finální zprávu Česko obdrželo 31. března 2022: audit se týkal Programu rozvoje venkova a plateb SZIF, předmětem bylo 29 projektů v různém stadiu administrace a v auditovaném období byla podle fondu vyplacena jen dotace zhruba 30 600 eur; SZIF uvedl, že České republice nehrozí škoda. Auditní závěr je kontrolní nástroj pro správu evropských prostředků — není to trestní rozsudek a o vině nikoho nerozhoduje.",
+  "period": "2019–2022",
+  "status": "status-single",
+  "statusLabel": "Auditní závěr, ne trestní rozsudek",
+  "anchor": "kauza-audit-zemedelsky",
   "claims": [
     {
-      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-16"
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-82"
     },
     {
-      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-17"
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-83"
     }
   ],
   "sources": [
     {
-      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-06"
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-58"
     },
     {
-      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-28"
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-59"
     }
   ],
   "subjects": [],

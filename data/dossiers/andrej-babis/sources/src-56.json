@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-56",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-56",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-56 — Aktuálně.cz: Nejvyšší žalobce Zeman znovu otevřel kauzu Čapí hnízdo (4. 12. 2019)",
+  "description": "Zastavení stíhání Babiše a Mayerové zrušeno „jako nezákonné a předčasné“; u dalších čtyř obviněných zastavení potvrzeno.",
+  "outlet": "Aktuálně.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://zpravy.aktualne.cz/domaci/nejvyssi-zalobce-znovu-otevrel-kauzu-capi-hnizdo-se-zavery-s/r~7c64e9c2167f11eab259ac1f6b220ee8/",
+  "published": "2019-12-04",
+  "retrieved": "2026-08-01",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-79"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Aktuálně.cz 4. 12. 2019 informuje o rozhodnutí nejvyššího státního\nzástupce Pavla Zemana: „Vůči dvěma obviněným – inženýrovi Babišovi a\ninženýrce Mayerové – bylo usnesení o zastavení trestního stíhání\nzrušeno jako nezákonné a předčasné.“ U dalších čtyř obviněných\nneshledal důvody pro zrušení a jejich stíhání zůstalo zastaveno.\n\n**Poznámka k procesní přesnosti**: zrušení zastavovacího usnesení\nznamená pokračování vyšetřování — není to rozhodnutí o vině ani\no obžalobě; ta přišla až v březnu 2022\n([SRC-57](@/dossiers/andrej-babis/sources/src-57.md)).\n\n**Nezávislost**: jediný přímo otevřený zdroj — stav `1 ZDROJ`.\nOtevřeno a přečteno 2026-08-01."
+    }
+  ],
+  "order": 56
+}

@@ -139,12 +139,23 @@ function addSource(model, { sourceFamily = "", outlet = "Jiný deník" } = {}) {
   return src;
 }
 
-test("status-single se 2 zdroji je chyba", () => {
+test("status-single se 2 zdroji ze 2 nezávislých rodin je chyba", () => {
   const model = clone();
   addSource(model);
   find(model, CLAIM).record.sources.push({ "@id": "https://vomaste.cz/id/dossiers/example-subject/sources/SRC-02" });
   const { errors } = validateSemantics(model, { authorizations: AUTHS });
-  assert.ok(errors.some((e) => e.includes("status-single cituje 2 zdrojů")), errors.join("\n"));
+  assert.ok(errors.some((e) => e.includes("status-single cituje 2 zdroj(ů) z 2 nezávislých source families")), errors.join("\n"));
+});
+
+test("status-single se 2 zdroji TÉŽE rodiny je správně (nezávislost přes rodiny, 6b0bd4d)", () => {
+  // Dva zdroje téže rodiny (převzatá agenturní zpráva) = jedno doložení;
+  // kontrola slepá k rodinám by správnou opravu zablokovala.
+  const model = clone();
+  addSource(model, { sourceFamily: "ctk", outlet: "Deník B" });
+  find(model, SOURCE).record.sourceFamily = "ctk";
+  find(model, CLAIM).record.sources.push({ "@id": "https://vomaste.cz/id/dossiers/example-subject/sources/SRC-02" });
+  const { errors } = validateSemantics(model, { authorizations: AUTHS });
+  assert.deepEqual(errors.filter((e) => e.includes("status-single")), [], errors.join("\n"));
 });
 
 test("status-corroborated s jedinou source family je chyba (sourceFamily i outlet fallback)", () => {

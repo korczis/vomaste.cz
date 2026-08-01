@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-82",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-82",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "Vedle auditu strukturálních fondů vedla Evropská komise samostatný audit čerpání zemědělských dotací; v době finalizace strukturálního auditu v dubnu 2021 podle citovaného zpravodajství zemědělský audit „zatím ještě neskončil, nebyl finalizován“. Jde o dva samostatné kontrolní procesy, které tento dossier nezaměňuje",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-58"
+    }
+  ],
+  "subjects": [],
+  "order": 82,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

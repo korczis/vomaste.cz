@@ -132,7 +132,7 @@ tooling coverage that doesn't exist, per
 |---|---|
 | Scope not authorized | `npm run validate:authorization`, `verify:authorization-log` — **and** step 0 above, which is the real gate; the validators only catch a record whose scope tag doesn't resolve, not "should this exist at all" |
 | Claim status doesn't match cited source count | `npm run validate:dossier` |
-| `CORROBORATED` sources are actually the same publisher family | **Not mechanically enforced.** `validate:dossier` checks distinct `SRC-##` count only; family independence is human judgment recorded in the source-family notes (see `dossier-entry` step re: source families). Check this yourself, every time. |
+| `CORROBORATED` sources are actually the same publisher family | **Now mechanically enforced** (fixed 2026-08-01, `6b0bd4d`): `validate:dossier` is family-aware in both directions — a claim citing two sources from the same `family` no longer passes as `CORROBORATED`. Regression test: `scripts/ui/source-independence.test.mjs`. Still worth a human read on genuinely new outlets, since `family` itself is a human-assigned field. |
 | Table and generated detail page disagree | `npm run validate:dossier` |
 | Anchors/case references don't resolve in built HTML | `npm run verify:anchors` |
 | Generated page missing required sections / JSON-LD node | `npm run verify:full-pages`, `npm run verify:jsonld` |

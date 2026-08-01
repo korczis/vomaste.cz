@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-86",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-86",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "Společnost Seznam.cz podala 3. března 2026 na premiéra Babiše žalobu na ochranu pověsti kvůli jeho opakovaným výrokům, že firma v souvislosti s výplatou dividend neodvedla srážkovou daň; požaduje smazání příspěvků na jeho sociálních sítích, zákaz dalšího šíření a omluvu. Podaná civilní žaloba není rozhodnutí soudu",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-62"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-63"
+    }
+  ],
+  "subjects": [],
+  "order": 86,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

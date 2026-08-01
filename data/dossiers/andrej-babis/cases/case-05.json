@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
   },
   "title": "Čapí hnízdo — dotační kauza",
-  "summary": "Spor o dotaci 50 mil. Kč na areál Čapí hnízdo z let 2007–2008; dotaci firma vrátila v roce 2018. Městský soud oba obžalované zprostil v lednu 2023 i v únoru 2024, odvolací soud obě zproštění zrušil (naposledy 23. 6. 2025) a vrátil věc se závazným právním názorem; ten 4. 5. 2026 uznal nepravomocně vinnou spoluobžalovanou Janu Nagyovou. Nic z toho není pravomocné, rozsudek nad spoluobžalovanou se netýká Andreje Babiše, jehož stíhání je po nevydání Sněmovnou přerušeno, a oba obžalovaní vinu odmítají.",
-  "period": "2025–",
+  "summary": "Spor o dotaci 50 mil. Kč na areál Čapí hnízdo z let 2007–2008; dotaci firma vrátila v roce 2018. Stíhání zahájeno v říjnu 2017 po vydání Sněmovnou, v září 2019 je státní zástupce zastavil a nejvyšší státní zástupce zastavení v prosinci 2019 zrušil jako nezákonné a předčasné; obžaloba podána v březnu 2022. Městský soud oba obžalované zprostil v lednu 2023 i v únoru 2024, odvolací soud obě zproštění zrušil (naposledy 23. 6. 2025) a vrátil věc se závazným právním názorem; ten 4. 5. 2026 uznal nepravomocně vinnou spoluobžalovanou Janu Nagyovou. Nic z toho není pravomocné, rozsudek nad spoluobžalovanou se netýká Andreje Babiše, jehož stíhání je po nevydání Sněmovnou přerušeno, a oba obžalovaní vinu odmítají.",
+  "period": "2015–",
   "status": "status-disputed",
   "statusLabel": "Nepravomocný rozsudek nad spoluobžalovanou, o Babišovi nerozhodnuto",
   "anchor": "kauza-capi-hnizdo",
@@ -42,6 +42,21 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-52"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-77"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-78"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-79"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-80"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-81"
     }
   ],
   "sources": [
@@ -71,6 +86,18 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-33"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-54"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-55"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-56"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-57"
     }
   ],
   "subjects": [

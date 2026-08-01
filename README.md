@@ -227,6 +227,18 @@ git clone git@github.com:korczis/vomaste.cz.git
 cd vomaste.cz
 npm ci
 npm run dev     # validace + generátory + zola serve na http://127.0.0.1:1111
+
+**Nespouštěj `zola serve` přímo.** `data/generated/*` a `data/dossiers/*/stats.toml`
+jsou v `.gitignore` — vznikají buildem, takže je `git clone` ani `git pull` nikdy
+nepřinese. Samotná zola je neumí vytvořit a skončí hláškou `load_data: … does not
+exist` z hloubi `base.html`, ze které není poznat, že chybí krok pipeline.
+
+```bash
+npm run preflight   # zkontroluje, co chybí, a vypíše co spustit
+npm run serve       # dogeneruje jen co chybí + zola serve (bez plné validace)
+```
+
+Po `git pull` na to upozorní hook `.githooks/post-merge`.
 ```
 
 Máš-li [`just`](https://github.com/casey/just), totéž jde kratší cestou —

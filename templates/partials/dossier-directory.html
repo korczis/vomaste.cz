@@ -1,3 +1,4 @@
+{% import "macros/cz.html" as cz %}
 {% import "macros/table.html" as table %}
 {#- Adresář dossierů — jeden dataset, tři projekce (coop T-027).
     ============================================================
@@ -53,13 +54,17 @@
 {#- Pořadí sloupců a jejich klíče drží jedno místo, aby se projekce
     nemohly významově rozejít: tabulka je vypisuje jako sloupce, seznam
     a dlaždice jako kompaktní metriky, ale jde o tytéž hodnoty. -#}
+{#- Formát: klíč :: popisek sloupce :: datový klíč :: 1 :: 2–4 :: 0,5+
+    Tři české tvary jsou tu proto, že „{{ n }} {{ popisek | lower }}"
+    vypisovalo „32 zdroje" a „13 mezery" — tvar, který po tom čísle
+    v češtině nestojí. -#}
 {%- set metrics = [
-  "claims::Tvrzení::claims",
-  "sources::Zdroje::sources",
-  "cases::Kauzy::cases",
-  "gaps::Mezery::gaps",
-  "entities::Entity::entities",
-  "relations::Vztahy::relations",
+  "claims::Tvrzení::claims::tvrzení::tvrzení::tvrzení",
+  "sources::Zdroje::sources::zdroj::zdroje::zdrojů",
+  "cases::Kauzy::cases::kauza::kauzy::kauz",
+  "gaps::Mezery::gaps::mezera::mezery::mezer",
+  "entities::Entity::entities::entita::entity::entit",
+  "relations::Vztahy::relations::vztah::vztahy::vztahů",
 ] -%}
 <section id="{{ id }}" aria-labelledby="{{ id }}-heading"
   x-data="advancedTable()"
@@ -82,7 +87,7 @@
         {%- set_global sum_sources = sum_sources + d.counts.sources %}
         {%- set_global sum_gaps = sum_gaps + d.counts.gaps %}
       {%- endfor %}
-      <p class="mt-0.5 text-xs text-white/55">{{ items | length }} dossierů · {{ sum_claims }} tvrzení · {{ sum_sources }} zdrojů · {{ sum_gaps }} otevřených mezer</p>
+      <p class="mt-0.5 text-xs text-white/55">{{ cz::pocet(n=items | length, one="dossier", few="dossiery", many="dossierů") }} · {{ cz::pocet(n=sum_claims, one="tvrzení", few="tvrzení", many="tvrzení") }} · {{ cz::pocet(n=sum_sources, one="zdroj", few="zdroje", many="zdrojů") }} · {{ cz::pocet(n=sum_gaps, one="otevřená otázka", few="otevřené otázky", many="otevřených otázek") }}</p>
       {%- endif %}
     </div>
 
@@ -177,7 +182,7 @@
           {%- for m in metrics %}{% set mp = m | split(pat="::") %}
           {%- if d.routes[mp.2] and d.counts[mp.2] %}
           <a href="{{ d.routes[mp.2] }}" class="text-white/55 no-underline hover:text-white">
-            <span class="tabular-nums text-white/80">{{ d.counts[mp.2] }}</span> {{ mp.1 | lower }}</a>
+            <span class="tabular-nums text-white/80">{{ d.counts[mp.2] }}</span> {{ cz::tvar(n=d.counts[mp.2], one=mp.3, few=mp.4, many=mp.5) }}</a>
           {%- endif %}
           {%- endfor %}
         </p>
@@ -201,8 +206,8 @@
           <div>
             <dt class="sr-only">{{ mp.1 }}</dt>
             <dd>
-              {%- if d.routes[mp.2] %}<a href="{{ d.routes[mp.2] }}" class="no-underline hover:text-white"><span class="tabular-nums text-white/80">{{ d.counts[mp.2] | default(value=0) }}</span> <span class="text-white/55">{{ mp.1 | lower }}</span></a>
-              {%- else %}<span class="tabular-nums text-white/80">{{ d.counts[mp.2] | default(value=0) }}</span> <span class="text-white/55">{{ mp.1 | lower }}</span>{% endif -%}
+              {%- if d.routes[mp.2] %}<a href="{{ d.routes[mp.2] }}" class="no-underline hover:text-white"><span class="tabular-nums text-white/80">{{ d.counts[mp.2] | default(value=0) }}</span> <span class="text-white/55">{{ cz::tvar(n=d.counts[mp.2] | default(value=0), one=mp.3, few=mp.4, many=mp.5) }}</span></a>
+              {%- else %}<span class="tabular-nums text-white/80">{{ d.counts[mp.2] | default(value=0) }}</span> <span class="text-white/55">{{ cz::tvar(n=d.counts[mp.2] | default(value=0), one=mp.3, few=mp.4, many=mp.5) }}</span>{% endif -%}
             </dd>
           </div>
           {%- endfor %}

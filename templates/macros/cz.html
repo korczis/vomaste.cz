@@ -1,0 +1,28 @@
+{#- České skloňování po číslovce.
+    ============================
+
+    Čeština má tři tvary podle počtu, ne dva:
+      1        → 1 zdroj      (nominativ jednotného čísla)
+      2–4      → 3 zdroje     (nominativ množného čísla)
+      0, 5+    → 32 zdrojů    (genitiv množného čísla)
+
+    Bez toho vypisoval adresář „32 zdroje" a „13 mezery" u každého
+    dossieru — tedy tvar, který v češtině po tomhle čísle nestojí.
+    Na webu, který je celý česky a jehož smysl je přesnost, je to vidět.
+
+    Pravidlo záměrně NEřeší 11–14 zvlášť: v češtině (na rozdíl od
+    ruštiny) se „11 zdrojů" tvoří stejně jako „15 zdrojů", takže by to
+    byla výjimka bez opory v jazyce.
+
+    Použití:
+      {{ cz::pocet(n=d.counts.sources, one="zdroj", few="zdroje", many="zdrojů") }}
+-#}
+{%- macro pocet(n, one, few, many) -%}
+{{ n }} {% if n == 1 %}{{ one }}{% elif n >= 2 and n <= 4 %}{{ few }}{% else %}{{ many }}{% endif %}
+{%- endmacro pocet -%}
+
+{#- Jen tvar bez čísla — když se číslo vypisuje zvlášť (např. v jiném
+    <span> kvůli zarovnání číslic). -#}
+{%- macro tvar(n, one, few, many) -%}
+{% if n == 1 %}{{ one }}{% elif n >= 2 and n <= 4 %}{{ few }}{% else %}{{ many }}{% endif %}
+{%- endmacro tvar -%}
