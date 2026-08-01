@@ -52,3 +52,8 @@ Deal (CLM-40) — tu funkci až následně po nehodě dočasně opustil (viz
 výše). Tato mezera (GAP-02) se tedy nadále týká výhradně toho, zda
 samotná nehoda z roku 2026 něco změnila navíc k tomuto již dříve
 existujícímu stavu — a k tomu žádný nový zdroj nalezen nebyl.
+
+Opakovaná kontrola k 2026-08-02: žádný dohledaný zdroj neuvádí, že by
+Turek na funkci zmocněnce formálně rezignoval nebo že by byl jmenován
+nástupce — stav zůstává „dočasně pozastaveno do uzavření vyšetřování
+nehody", stejně jako k 2026-07-23.

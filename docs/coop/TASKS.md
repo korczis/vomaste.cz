@@ -10,6 +10,41 @@ Stavy: `todo → claimed → in-progress → review → merged`, kdykoliv
 nese štítek `[scope-check]` a před startem se ověřuje proti
 autorizačnímu logu v `AGENTS.md`.
 
+## Aktivní zadání: čtvrté kolo rešerší + provázání grafu (2026-08-02)
+
+Zadání vlastníka: „rozvin každý dossier, provaž" — prohloubit obsah
+(nová tvrzení/zdroje) u všech 24 subjektů v rámci již autorizovaného
+scope (viz AGENTS.md log) a doplnit relationship graph napříč
+dossiery. Navazuje na precedens T-024/025/026 (kola rešerší). Survey
+stavu 2026-08-02 (`ls data/dossiers/*/{claims,sources,relations}`):
+nejtenčí obsahem jsou jaroslav-faltynek (CLM 8), richard-chlad (8),
+petr-pavel (3), petr-vencalek (3), tunde-bartha (13) — pozor, u těchto
+pěti je autorizovaný scope úzký (viz AGENTS.md), takže "prohloubení"
+= dohledání dalších už-v-mezích-scope zdrojů, nikdy nové téma. REL
+(relace) jsou skoro všude na 1–2 kromě andrej-babis (40) a
+macinka-turek (33) — to je cíl T-038. Čistě obsahová/datová práce v
+mezích už autorizovaných témat; žádné nové autorizace, žádný nový
+subjekt. Každé tvrzení musí citovat jmenovaný, datovaný, přímo
+otevřený zdroj (AGENTS.md editorial rules 1–8); `1 ZDROJ` vs.
+`CORROBORATED` dle validátoru. Per-tvrzení worklist (813 položek, vše
+už dříve zmapováno) je v
+[`docs/dossier-audit/CLAIM_DEEPENING_TODO.md`](../dossier-audit/CLAIM_DEEPENING_TODO.md)
+(guardrail tamtéž shodný s tímto zadáním — použít jako zdroj pravdy pro
+T-039…T-043 místo znovuobjevování scope; odškrtávat `[ ]` u položek,
+které daný task skutečně dovede na CORROBORATED/ověří). Per-dossier
+externí OSINT nástroje (`~/dev/prismatic-platform`, mimo tento repo,
+nikdy nezapojen do buildu) jsou v
+[`docs/dossier-audit/PRISMATIC_SOURCING_TODO.md`](../dossier-audit/PRISMATIC_SOURCING_TODO.md).
+
+| ID | Titul | Scope (soubory/sekce) | Branch | Owner | Stav | Závislosti | Akceptace |
+|----|-------|-----------------------|--------|-------|------|------------|-----------|
+| T-038 | `[scope-check]` Provázání grafu napříč dossiery — audit entit/relací a doplnění chybějících relací (Agrofert, ANO, Motoristé sobě, vláda, dárci) čerpaných výhradně z už-citovaných tvrzení v datech (žádný nový výzkum, žádný nový fakt) | `data/dossiers/*/relations/**`, `data/dossiers/*/entities/**`, generátor grafu | task/T-038 | – | todo | – | žádná relace bez odpovídajícího už-existujícího CLM/SRC; `npm run build` zelený; graf viditelně hustší napříč subjekty, ne jen Babiš/macinka-turek |
+| T-039 | `[scope-check]` Kolo rešerší, dávka 1 (nejtenčí + úzký scope): jaroslav-faltynek, richard-chlad, petr-pavel, petr-vencalek, tunde-bartha — dohledat a přidat další CLM/SRC striktně v mezích autorizovaného tématu | `data/dossiers/{jaroslav-faltynek,richard-chlad,petr-pavel,petr-vencalek,tunde-bartha}/**` | task/T-039 | – | todo | – | žádné nové téma/subjekt nad rámec AGENTS.md logu; každý zdroj přímo otevřen; `npm run build` zelený |
+| T-040 | `[scope-check]` Kolo rešerší, dávka 2: lubomir-metnar, tomio-okamura, boris-stastny, alena-schillerova | `data/dossiers/{lubomir-metnar,tomio-okamura,boris-stastny,alena-schillerova}/**` | task/T-040 | – | todo | T-039 | stejné jako T-039 |
+| T-041 | `[scope-check]` Kolo rešerší, dávka 3: ales-juchelka, karel-havlicek, oto-klempir, martin-sebestyan | `data/dossiers/{ales-juchelka,karel-havlicek,oto-klempir,martin-sebestyan}/**` | task/T-041 | – | todo | T-040 | stejné jako T-039 |
+| T-042 | `[scope-check]` Kolo rešerší, dávka 4: ivan-bednarik, robert-plaga, jeronym-tejc, jaromir-zuna | `data/dossiers/{ivan-bednarik,robert-plaga,jeronym-tejc,jaromir-zuna}/**` | task/T-042 | – | todo | T-041 | stejné jako T-039 |
+| T-043 | `[scope-check]` Kolo rešerší, dávka 5: igor-cerveny, zuzana-mrazova, adam-vojtech, andrej-babis, macinka-turek — poslední dávka, nejvytěženější dossiery, jen nové doplňkové zdroje/CLM | `data/dossiers/{igor-cerveny,zuzana-mrazova,adam-vojtech,andrej-babis,macinka-turek}/**` | task/T-043 | – | todo | T-042 | stejné jako T-039 |
+
 ## Aktivní zadání: workbench redesign (2026-07-30)
 
 Zadání vlastníka: přestavět vomaste.cz z řídkého katalogu na hustý,
