@@ -1,6 +1,7 @@
 {%- import "macros/jsonld.html" as jsonld -%}
 {%- import "macros/nav.html" as nav -%}
 {%- import "macros/ui.html" as ui -%}
+{%- import "partials/app-shell/secondary-sidebar.html" as app_shell -%}
 <!DOCTYPE html>
 <html lang="{{ page.extra.lang | default(value=config.extra.lang | default(value="en")) }}" class="scroll-smooth no-js">
 <head>
@@ -286,6 +287,24 @@
     navigace je tam dostupná hamburgrem (drawer) + obsahem stránky.
     Všude jinde zůstává na desktopu docked. -#}
 {% set sidebar_docked = current_path is defined and current_path != "/" %}
+{#- Secondary sidebar (T-012): page or section extra.dossier tells us which
+    dossier we are inside, if any — same page/section resolution the footer
+    below already uses. Resolved here (not inside the macro) so both the
+    <aside> and #main's margin agree on whether it is actually rendered. -#}
+{%- set_global dossier_slug = "" -%}
+{%- if page is defined and page.extra.dossier -%}
+  {%- set_global dossier_slug = page.extra.dossier -%}
+{%- elif section is defined and section.extra.dossier -%}
+  {%- set_global dossier_slug = section.extra.dossier -%}
+{%- endif -%}
+{%- set_global has_secondary_sidebar = false -%}
+{%- if dossier_slug -%}
+  {%- set secondary_nav = load_data(path="data/generated/navigation-secondary.json") -%}
+  {%- set secondary_entry = secondary_nav[dossier_slug] | default(value=false) -%}
+  {%- if secondary_entry and secondary_entry.registries | length > 0 -%}
+    {%- set_global has_secondary_sidebar = true -%}
+  {%- endif -%}
+{%- endif -%}
 <aside id="sidebar" data-drawer-placement="left" tabindex="-1" aria-labelledby="sidebar-heading"
        class="fixed inset-y-0 left-0 z-40 w-64 -translate-x-full border-r border-white/10 bg-black pt-16 transition-transform{% if sidebar_docked %} md:translate-x-0{% endif %}">
   <h2 id="sidebar-heading" class="sr-only">Hlavní navigace</h2>
@@ -324,6 +343,8 @@
   </nav>
 </aside>
 
+{{ app_shell::render(dossier_slug=dossier_slug, current_path=current_path) }}
+
 <noscript>
   {#- The drawer's hamburger toggle requires JS (inherent to any off-canvas
       drawer). Without JS, the destinations are still one click away here
@@ -343,7 +364,7 @@
   </nav>
 </noscript>
 
-<div id="main" class="pt-16{% if sidebar_docked %} md:ml-64{% endif %}">
+<div id="main" class="pt-16{% if sidebar_docked %} md:ml-64{% endif %}{% if has_secondary_sidebar %} lg:ml-[32rem]{% endif %}">
 {% block content %}{% endblock content %}
 {#- Resolve the content path ONCE (page or section, "" for neither, e.g.
     404) and let the macro render the footer. Previously the page and
