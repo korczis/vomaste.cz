@@ -620,3 +620,60 @@ label = "Pandora Papers, česká větev: jednání nelze posoudit jako TČ na ú
 status = "single"
 claims = ["CLM-75"]
 sources = ["SRC-52"]
+
+[[nodes]]
+id = "preol"
+type = "company"
+label = "Preol"
+depth = 2
+subject = false
+claims = ["CLM-84"]
+sources = ["SRC-60"]
+
+[[nodes]]
+id = "seznam-cz"
+type = "company"
+label = "Seznam.cz"
+depth = 1
+subject = false
+claims = ["CLM-86", "CLM-87"]
+sources = ["SRC-62", "SRC-63"]
+
+[[nodes]]
+id = "zaloba-seznam-2026"
+type = "legal_or_administrative_process"
+label = "Žaloba Seznam.cz na ochranu pověsti (2026)"
+depth = 1
+subject = false
+claims = ["CLM-86"]
+sources = ["SRC-62", "SRC-63"]
+
+[[edges]]
+id = "edge-agrofert-preol"
+source = "agrofert"
+target = "preol"
+relation = "HOLDS_INTEREST_IN"
+label = "největší tuzemský producent biopaliv ve skupině (kontext sporu o podporu biopaliv 2015)"
+status = "contextual"
+claims = ["CLM-84"]
+sources = ["SRC-60"]
+
+[[edges]]
+id = "edge-babis-zaloba-seznam"
+source = "babis"
+target = "zaloba-seznam-2026"
+relation = "SUBJECT_OF_PROCEEDING"
+label = "žalovaný v civilním sporu o ochranu pověsti — podaná žaloba není rozhodnutí soudu"
+status = "corroborated"
+claims = ["CLM-86"]
+sources = ["SRC-62", "SRC-63"]
+
+[[edges]]
+id = "edge-seznam-zaloba"
+source = "seznam-cz"
+target = "zaloba-seznam-2026"
+relation = "ASSOCIATED_WITH_EVENT"
+label = "žalobce"
+status = "contextual"
+claims = ["CLM-86"]
+sources = ["SRC-62"]

@@ -8,3 +8,9 @@ summary = "Rozšíření dossieru v rozsahu AUTH-2026-07-30-E: devět nových ka
 added_claims = ["CLM-55", "CLM-56", "CLM-57", "CLM-58", "CLM-59", "CLM-60", "CLM-61", "CLM-62", "CLM-63", "CLM-64", "CLM-65", "CLM-66", "CLM-67", "CLM-68", "CLM-69", "CLM-70", "CLM-71", "CLM-72", "CLM-73", "CLM-74", "CLM-75", "CLM-76"]
 added_gaps = ["GAP-06"]
 reviewed_sources = ["SRC-34", "SRC-35", "SRC-36", "SRC-37", "SRC-38", "SRC-39", "SRC-40", "SRC-41", "SRC-42", "SRC-43", "SRC-44", "SRC-45", "SRC-46", "SRC-47", "SRC-48", "SRC-49", "SRC-50", "SRC-51", "SRC-52", "SRC-53"]
+
+[[updates]]
+date = "2026-08-01"
+summary = "Vlna 2 v rozsahu AUTH-2026-07-30-C/E: raná procesní historie Čapího hnízda 2017–2022 (obvinění, zastavení, obnovení, obžaloba — CLM-77 až CLM-81), samostatná kauza zemědělské větve auditu EK (CLM-82, CLM-83), biopaliva/Preol s přiznaným střetem zájmů 2015 (CLM-84, CLM-85) a výroková kauza žaloby Seznam.cz (CLM-86, CLM-87). Zdroje SRC-54 až SRC-63 všechny otevřeny a přečteny 2026-08-01; GAP-06 rozšířena o žalobu Seznam.cz; graf +3 uzly a +3 hrany."
+added_claims = ["CLM-77", "CLM-78", "CLM-79", "CLM-80", "CLM-81", "CLM-82", "CLM-83", "CLM-84", "CLM-85", "CLM-86", "CLM-87"]
+reviewed_sources = ["SRC-54", "SRC-55", "SRC-56", "SRC-57", "SRC-58", "SRC-59", "SRC-60", "SRC-61", "SRC-62", "SRC-63"]
