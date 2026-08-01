@@ -18,15 +18,30 @@ export function registerGlobalSearch() {
       open: false,
       activeIndex: -1,
       loaded: false,
+      loadError: false,
 
       async ensureLoaded() {
         if (this.loaded) return;
-        this.loaded = true;
         try {
           const res = await fetch(this.indexUrl);
+          // Statický hosting vrací na chybějící soubor HTML stránku 404,
+          // ne chybu sítě — bez kontroly res.ok by se pak parsovalo HTML
+          // jako JSON a spadlo by to až na výjimce, tedy nejasně.
+          if (!res.ok) throw new Error(`HTTP ${res.status}`);
           this.index = await res.json();
+          this.loaded = true;
+          this.loadError = false;
         } catch (e) {
+          // Nenačtený index NENÍ prázdný výsledek. Dřív se tu jen tiše
+          // nastavilo index = [], takže rozbité hledání hlásilo „Žádný
+          // výsledek." — uživatel z toho vyčetl, že záznam neexistuje,
+          // místo že hledání nefunguje. To je horší než viditelná chyba.
           this.index = [];
+          this.loadError = true;
+          // `loaded` se schválně NEnastavuje: dřív se nastavovalo PŘED
+          // fetchem, takže jediné selhání (výpadek při načítání stránky)
+          // vyřadilo hledání na celou session a další pokus se už ani
+          // nezkusil. Teď se při dalším psaní načtení zopakuje.
         }
       },
 
@@ -65,6 +80,7 @@ export function registerGlobalSearch() {
       // Announced result summary (aria-live) — counts, not colors.
       get resultAnnouncement() {
         if (!this.open) return "";
+        if (this.loadError) return "Rejstřík se nepodařilo načíst, hledání je nedostupné.";
         if (this.flat.length === 0) return "Žádný výsledek.";
         const shown = this.flat.length;
         return shown === this.totalMatches
