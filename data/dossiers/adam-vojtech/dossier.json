@@ -61,7 +61,10 @@
           "CLM-47",
           "CLM-48",
           "CLM-49",
-          "CLM-50"
+          "CLM-50",
+          "CLM-14",
+          "CLM-16",
+          "CLM-21"
         ],
         "sources": [
           "SRC-01",
@@ -83,7 +86,10 @@
           "SRC-28",
           "SRC-29",
           "SRC-30",
-          "SRC-31"
+          "SRC-31",
+          "SRC-08",
+          "SRC-10",
+          "SRC-12"
         ]
       },
       {
@@ -117,11 +123,48 @@
           "SRC-19",
           "SRC-20"
         ]
+      },
+      {
+        "entity": "babis",
+        "label": "Andrej Babiš",
+        "claims": [
+          "CLM-14",
+          "CLM-33"
+        ],
+        "sources": [
+          "SRC-08",
+          "SRC-22",
+          "SRC-20"
+        ]
+      },
+      {
+        "entity": "synbiol",
+        "label": "SynBiol",
+        "claims": [
+          "CLM-16"
+        ],
+        "sources": [
+          "SRC-10"
+        ]
+      },
+      {
+        "entity": "okamura",
+        "label": "Tomio Okamura",
+        "claims": [
+          "CLM-21"
+        ],
+        "sources": [
+          "SRC-12"
+        ]
       }
     ],
     "edges": [
       "edge-vojtech-vlada",
-      "edge-vojtech-fn-olomouc"
+      "edge-vojtech-fn-olomouc",
+      "edge-vojtech-babis",
+      "edge-babis-fn-olomouc",
+      "edge-vojtech-synbiol",
+      "edge-okamura-vojtech"
     ]
   },
   "contentBlocks": [

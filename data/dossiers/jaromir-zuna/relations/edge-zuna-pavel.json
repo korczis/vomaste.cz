@@ -1,0 +1,50 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/relations/edge-zuna-pavel",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-zuna-pavel",
+  "relationId": "edge-zuna-pavel",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/zuna"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/pavel"
+  },
+  "relationType": "ASSOCIATED_WITH_EVENT",
+  "label": "spor o nezveřejněný rozhovor prezidenta Pavla pro armádní podcast Kamufláž",
+  "status": "disputed",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-10"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-08"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 3,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-038 (provázání grafu) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/relations/edge-juchelka-nku",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-juchelka-nku",
+  "relationId": "edge-juchelka-nku",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/juchelka"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/nku"
+  },
+  "relationType": "INVESTIGATED_BY",
+  "label": "NKÚ zahrnul kauzu bývalé poradkyně do probíhající kontroly MPSV",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-14"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-14"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 4,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-038 (provázání grafu) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

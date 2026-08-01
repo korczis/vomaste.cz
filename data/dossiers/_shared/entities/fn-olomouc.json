@@ -23,7 +23,8 @@
   "provenance": {
     "discoveredAt": "2026-07-31",
     "discoveredVia": [
-      "edge-vojtech-fn-olomouc"
+      "edge-vojtech-fn-olomouc",
+      "edge-babis-fn-olomouc"
     ],
     "claimRefs": [
       "CLM-07",

@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/relations/edge-babis-zuna",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-babis-zuna",
+  "relationId": "edge-babis-zuna",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/babis"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/zuna"
+  },
+  "relationType": "RESPONDED_TO",
+  "label": "Babiš veřejně kritizoval Zůnovu koncepci armády (32 tisíc vojáků do roku 2040)",
+  "status": "quote",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-17"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-12"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 2,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-038 (provázání grafu) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

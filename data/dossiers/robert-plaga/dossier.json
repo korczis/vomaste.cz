@@ -67,7 +67,9 @@
           "CLM-51",
           "CLM-52",
           "CLM-53",
-          "CLM-54"
+          "CLM-54",
+          "CLM-12",
+          "CLM-13"
         ],
         "sources": [
           "SRC-01",
@@ -90,7 +92,10 @@
           "SRC-28",
           "SRC-29",
           "SRC-30",
-          "SRC-31"
+          "SRC-31",
+          "SRC-07",
+          "SRC-06",
+          "SRC-08"
         ]
       },
       {
@@ -102,10 +107,24 @@
         "sources": [
           "SRC-01"
         ]
+      },
+      {
+        "entity": "babis",
+        "label": "Andrej Babiš",
+        "claims": [
+          "CLM-12",
+          "CLM-13"
+        ],
+        "sources": [
+          "SRC-07",
+          "SRC-06",
+          "SRC-08"
+        ]
       }
     ],
     "edges": [
-      "edge-plaga-vlada"
+      "edge-plaga-vlada",
+      "edge-babis-plaga"
     ]
   },
   "contentBlocks": [

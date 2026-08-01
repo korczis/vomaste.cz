@@ -17,7 +17,8 @@
     "macinka-turek",
     "filip-turek",
     "richard-chlad",
-    "petr-pavel"
+    "petr-pavel",
+    "igor-cerveny"
   ],
   "routeAliases": [
     "/dossiers/macinka-turek/entities/turek/"
@@ -35,7 +36,8 @@
       "edge-turek-trestniozn",
       "edge-turek-mzp2026",
       "edge-turek-pavel",
-      "edge-turek-zapperclub"
+      "edge-turek-zapperclub",
+      "edge-cerveny-turek"
     ],
     "claimRefs": [
       "CLM-01",

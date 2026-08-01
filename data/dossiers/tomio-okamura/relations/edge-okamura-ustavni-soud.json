@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/relations/edge-okamura-ustavni-soud",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-okamura-ustavni-soud",
+  "relationId": "edge-okamura-ustavni-soud",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/okamura"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/ustavni-soud"
+  },
+  "relationType": "ASSOCIATED_WITH_EVENT",
+  "label": "SPD ohlásilo připravenost obrátit se na Ústavní soud (odvolání, k datu rešerše nepodáno)",
+  "status": "quote",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-03"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-01"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 2,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-038 (provázání grafu) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

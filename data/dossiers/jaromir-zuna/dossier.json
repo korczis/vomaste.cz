@@ -66,7 +66,11 @@
           "CLM-50",
           "CLM-51",
           "CLM-52",
-          "CLM-53"
+          "CLM-53",
+          "CLM-17",
+          "CLM-08",
+          "CLM-10",
+          "CLM-16"
         ],
         "sources": [
           "SRC-01",
@@ -87,7 +91,12 @@
           "SRC-29",
           "SRC-30",
           "SRC-31",
-          "SRC-32"
+          "SRC-32",
+          "SRC-12",
+          "SRC-06",
+          "SRC-07",
+          "SRC-08",
+          "SRC-11"
         ]
       },
       {
@@ -99,10 +108,46 @@
         "sources": [
           "SRC-01"
         ]
+      },
+      {
+        "entity": "babis",
+        "label": "Andrej Babiš",
+        "claims": [
+          "CLM-17"
+        ],
+        "sources": [
+          "SRC-12"
+        ]
+      },
+      {
+        "entity": "pavel",
+        "label": "Petr Pavel (prezident)",
+        "claims": [
+          "CLM-08",
+          "CLM-10"
+        ],
+        "sources": [
+          "SRC-06",
+          "SRC-07",
+          "SRC-08"
+        ]
+      },
+      {
+        "entity": "okamura",
+        "label": "Tomio Okamura",
+        "claims": [
+          "CLM-16"
+        ],
+        "sources": [
+          "SRC-11"
+        ]
       }
     ],
     "edges": [
-      "edge-zuna-vlada"
+      "edge-zuna-vlada",
+      "edge-babis-zuna",
+      "edge-zuna-pavel",
+      "edge-okamura-zuna"
     ]
   },
   "contentBlocks": [

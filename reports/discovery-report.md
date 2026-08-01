@@ -5,7 +5,7 @@ system. This is provenance, not a publication decision — see
 `data/authorizations.toml` and `scripts/dossier/authorize-entity.mjs`
 for the only thing that actually authorizes a dossier.
 
-199 record(s) logged across 4 day(s). 0 new since last run.
+230 record(s) logged across 4 day(s). 31 new since last run.
 
 ## 2026-07-29
 
@@ -217,3 +217,34 @@ for the only thing that actually authorizes a dossier.
 - `edge-agrofert-preol` (relation, created)
 - `edge-babis-zaloba-seznam` (relation, created)
 - `edge-seznam-zaloba` (relation, created)
+- `edge-babis-fn-olomouc` (relation, created)
+- `edge-okamura-vojtech` (relation, created)
+- `edge-vojtech-babis` (relation, created)
+- `edge-vojtech-synbiol` (relation, created)
+- `edge-babis-schillerova` (relation, created)
+- `edge-schillerova-pavel` (relation, created)
+- `edge-babis-juchelka` (relation, created)
+- `edge-juchelka-evropska-komise` (relation, created)
+- `edge-juchelka-nku` (relation, created)
+- `edge-babis-stastny` (relation, created)
+- `edge-bartha-stastny` (relation, created)
+- `edge-cerveny-pavel` (relation, created)
+- `edge-cerveny-turek` (relation, created)
+- `edge-babis-zuna` (relation, created)
+- `edge-okamura-zuna` (relation, created)
+- `edge-zuna-pavel` (relation, created)
+- `edge-tejc-juchelka` (relation, created)
+- `edge-tejc-ncoz` (relation, created)
+- `edge-tejc-pavel` (relation, created)
+- `edge-tejc-ustavni-soud` (relation, created)
+- `edge-havlicek-agrofert` (relation, created)
+- `edge-havlicek-babis` (relation, created)
+- `edge-havlicek-evropska-komise` (relation, created)
+- `edge-okamura-sebestyan` (relation, created)
+- `edge-sebestyan-agrofert` (relation, created)
+- `edge-sebestyan-babis` (relation, created)
+- `edge-sebestyan-evropska-komise` (relation, created)
+- `edge-klempir-pavel` (relation, created)
+- `edge-babis-plaga` (relation, created)
+- `edge-okamura-ustavni-soud` (relation, created)
+- `edge-babis-mrazova` (relation, created)

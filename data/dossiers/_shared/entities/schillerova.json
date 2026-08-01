@@ -25,7 +25,9 @@
     "discoveredAt": "2026-07-30",
     "discoveredVia": [
       "edge-schillerova-vlada",
-      "edge-schillerova-nrr"
+      "edge-schillerova-nrr",
+      "edge-schillerova-pavel",
+      "edge-babis-schillerova"
     ],
     "claimRefs": [
       "CLM-01",

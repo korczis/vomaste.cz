@@ -14,7 +14,8 @@
   "dossierStatus": "authorized",
   "coverageState": "full",
   "dossiers": [
-    "tunde-bartha"
+    "tunde-bartha",
+    "boris-stastny"
   ],
   "routeAliases": [
     "/dossiers/tunde-bartha/entities/bartha/"
@@ -28,7 +29,8 @@
       "edge-bartha-kampan",
       "edge-bartha-agrofert-hungaria",
       "edge-bartha-praha3",
-      "edge-bartha-imoba"
+      "edge-bartha-imoba",
+      "edge-bartha-stastny"
     ],
     "claimRefs": [
       "CLM-07",

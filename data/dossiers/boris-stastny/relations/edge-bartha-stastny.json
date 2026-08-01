@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/boris-stastny/relations/edge-bartha-stastny",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-bartha-stastny",
+  "relationId": "edge-bartha-stastny",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/boris-stastny"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/bartha"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/stastny"
+  },
+  "relationType": "RESPONDED_TO",
+  "label": "vedoucí Úřadu vlády Tünde Bartha se vyjádřila k nálezu nahrávacího zařízení v jednací místnosti",
+  "status": "single",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-15"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-05"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 3,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-038 (provázání grafu) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

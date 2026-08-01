@@ -26,9 +26,9 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
 
 - Type: company
 - Status: not_authorized
-- Appears in: andrej-babis, tunde-bartha
+- Appears in: andrej-babis, tunde-bartha, karel-havlicek, martin-sebestyan
 - Claims: CLM-04, CLM-05, CLM-16, CLM-37, CLM-06
-- Sources: SRC-02, SRC-06, SRC-15, SRC-03 (4 independent source families)
+- Sources: SRC-02, SRC-06, SRC-15, SRC-03 (5 independent source families)
 - Relations: 
   - edge-ab-trusts-agrofert (ab-private-trusts -> agrofert, "držely akcie Agrofertu (2017–2025)", dossier: andrej-babis)
   - edge-agrofert-capihnizdo-reklamy (agrofert -> capi-hnizdo, "platby firem skupiny za reklamu >270 mil. Kč (2010–2013); dvakrát odloženo, trestný čin nezjištěn — odložení není potvrzení přiměřenosti plateb", dossier: andrej-babis)
@@ -46,6 +46,8 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
   - edge-rsvp-agrofert (rsvp-trust -> agrofert, "drží akcie Agrofertu (vloženy 2/2026)", dossier: andrej-babis)
   - edge-agrofert-hungaria (agrofert -> agrofert-hungaria, "maďarská společnost koncernu", dossier: tunde-bartha)
   - edge-bartha-agrofert (bartha -> agrofert, "business development manager (dle zpravodajství, potvrzeno mluvčím); firemní web 9/2024: country managerka AGROFERT Hungária", dossier: tunde-bartha)
+  - edge-havlicek-agrofert (havlicek -> agrofert, "dotace na toustovou linku Agrofertu — ministrův výrok o povinnosti vrácení, pokud EK rozhodne", dossier: karel-havlicek)
+  - edge-sebestyan-agrofert (sebestyan -> agrofert, "ministerstvo zemědělství pod Šebestyánem nezahájilo vymáhání dotací od firem Agrofertu", dossier: martin-sebestyan)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## AGROFERT Hungária (`agrofert-hungaria`)
@@ -148,13 +150,16 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
 
 - Type: public_institution
 - Status: not_authorized
-- Appears in: andrej-babis
+- Appears in: andrej-babis, ales-juchelka, karel-havlicek, martin-sebestyan
 - Claims: CLM-25, CLM-26, CLM-43, CLM-46
-- Sources: SRC-10, SRC-11, SRC-19, SRC-20 (2 independent source families)
+- Sources: SRC-10, SRC-11, SRC-19, SRC-20 (5 independent source families)
 - Relations: 
   - edge-agrofert-komise (agrofert -> evropska-komise, "Komise k 5. 6. 2026 neproplatila žádnou náhradu a žádá vysvětlení struktury fondu — dotaz, ne zjištění", dossier: andrej-babis)
   - edge-babis-komise-audit (babis -> evropska-komise, "audit REGC414CZ0133: závěr o ovládání fondů (4/2021), uzavřen 20. 7. 2022 splněním doporučení — kontrolní nástroj, ne soud", dossier: andrej-babis)
   - edge-synbiol-komise (synbiol -> evropska-komise, "Komise sleduje střet zájmů i u SynBiolu a Hartenbergu — monitoring a pokyn, ne zjištění o porušení", dossier: andrej-babis)
+  - edge-juchelka-evropska-komise (juchelka -> evropska-komise, "Komise si dopisem vyžádala vysvětlení ke střetu zájmů poradkyně (březen 2026)", dossier: ales-juchelka)
+  - edge-havlicek-evropska-komise (havlicek -> evropska-komise, "odmítnutí proplacení dotace na toustovou linku Agrofertu Evropskou komisí", dossier: karel-havlicek)
+  - edge-sebestyan-evropska-komise (sebestyan -> evropska-komise, "spor o rozsah dopisu Evropské komise — zda se vztahuje i na zemědělské fondy", dossier: martin-sebestyan)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Fakultní nemocnice Olomouc (`fn-olomouc`)
@@ -165,6 +170,7 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
 - Claims: CLM-07, CLM-08, CLM-09, CLM-11, CLM-12, CLM-31, CLM-32, CLM-33
 - Sources: SRC-02, SRC-04, SRC-06, SRC-07, SRC-19, SRC-20 (6 independent source families)
 - Relations: 
+  - edge-babis-fn-olomouc (babis -> fn-olomouc, "premiér Babiš vyjádřil řediteli FN Olomouc plnou důvěru (18. 2. 2026)", dossier: adam-vojtech)
   - edge-vojtech-fn-olomouc (vojtech -> fn-olomouc, "kauza studie PROFID EHRA a trestní oznámení resortu (2025–2026)", dossier: adam-vojtech)
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -418,12 +424,13 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
 
 - Type: public_institution
 - Status: not_authorized
-- Appears in: andrej-babis
+- Appears in: andrej-babis, jeronym-tejc
 - Claims: CLM-27, CLM-75
-- Sources: SRC-12, SRC-52 (2 independent source families)
+- Sources: SRC-12, SRC-52 (3 independent source families)
 - Relations: 
   - edge-babis-ncoz-pandora (babis -> ncoz, "Pandora Papers, česká větev: jednání nelze posoudit jako TČ na území ČR, poznatky předány jiné zemi EU — závěr o příslušnosti, ne zproštění", dossier: andrej-babis)
   - edge-eppo-ncoz (eppo -> ncoz, "prověřováním pověřena NCOZ (24. 5. 2026)", dossier: andrej-babis)
+  - edge-tejc-ncoz (tejc -> ncoz, "NCOZ zahájila trestní stíhání v bitcoinové kauze, kterou ministr oznámil", dossier: jeronym-tejc)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Nehoda 2026 (`nehoda2026`)
@@ -456,11 +463,12 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
 
 - Type: public_institution
 - Status: not_authorized
-- Appears in: lubomir-metnar
+- Appears in: lubomir-metnar, ales-juchelka
 - Claims: CLM-01, CLM-03
 - Sources: SRC-01 (1 independent source family)
 - Relations: 
   - edge-metnar-nku (metnar -> nku, "návrh ukončit policejní ochranu úřadu (2026)", dossier: lubomir-metnar)
+  - edge-juchelka-nku (juchelka -> nku, "NKÚ zahrnul kauzu bývalé poradkyně do probíhající kontroly MPSV", dossier: ales-juchelka)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Národní rozpočtová rada (`nrr`)
@@ -681,13 +689,14 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
 
 - Type: company
 - Status: not_authorized
-- Appears in: andrej-babis
+- Appears in: andrej-babis, adam-vojtech
 - Claims: CLM-39, CLM-41, CLM-42
-- Sources: SRC-16, SRC-17 (1 independent source family)
+- Sources: SRC-16, SRC-17 (3 independent source families)
 - Relations: 
   - edge-babis-synbiol (babis -> synbiol, "podíl 87,75 %, ponechán mimo svěřenský fond; 2/2026 podle výkladu veřejných registrů opět přímé vlastnictví", dossier: andrej-babis)
   - edge-synbiol-hartenberg (synbiol -> hartenberg, "zdravotnické aktivity ve skupině Hartenberg, mimo svěřenský fond", dossier: andrej-babis)
   - edge-synbiol-komise (synbiol -> evropska-komise, "Komise sleduje střet zájmů i u SynBiolu a Hartenbergu — monitoring a pokyn, ne zjištění o porušení", dossier: andrej-babis)
+  - edge-vojtech-synbiol (vojtech -> synbiol, "komentář: holding SynBiol získal z veřejného zdravotního pojištění téměř 3 miliardy Kč", dossier: adam-vojtech)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Státní zemědělský intervenční fond (`szif`)
@@ -732,12 +741,14 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
 
 - Type: public_institution
 - Status: not_authorized
-- Appears in: andrej-babis
+- Appears in: andrej-babis, jeronym-tejc, tomio-okamura
 - Claims: CLM-47, CLM-66
 - Sources: SRC-21, SRC-44 (2 independent source families)
 - Relations: 
   - edge-kostelecke-ustavnisoud (kostelecke-uzeniny -> ustavni-soud, "ústavní stížnost odmítnuta 1. 4. 2026 jako zjevně neopodstatněná — spor o nárok na dotaci, ne o vině", dossier: andrej-babis)
   - edge-vodnanska-ustavnisoud (vodnanska-drubez -> ustavni-soud, "ústavní stížnost odmítnuta 1/2026 (dotace 75 mil. Kč) — spor o nárok na dotaci, ne o vině", dossier: andrej-babis)
+  - edge-tejc-ustavni-soud (tejc -> ustavni-soud, "spor o předběžné opatření Ústavního soudu v kompetenční žalobě prezidenta", dossier: jeronym-tejc)
+  - edge-okamura-ustavni-soud (okamura -> ustavni-soud, "SPD ohlásilo připravenost obrátit se na Ústavní soud (odvolání, k datu rešerše nepodáno)", dossier: tomio-okamura)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Vláda ČR (`vlada`)

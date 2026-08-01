@@ -24,7 +24,11 @@
   "provenance": {
     "discoveredAt": "2026-07-30",
     "discoveredVia": [
-      "edge-tejc-vlada"
+      "edge-tejc-vlada",
+      "edge-tejc-ncoz",
+      "edge-tejc-ustavni-soud",
+      "edge-tejc-pavel",
+      "edge-tejc-juchelka"
     ],
     "claimRefs": [
       "CLM-01",

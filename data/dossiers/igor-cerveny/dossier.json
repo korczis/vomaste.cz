@@ -70,7 +70,8 @@
           "CLM-54",
           "CLM-55",
           "CLM-56",
-          "CLM-57"
+          "CLM-57",
+          "CLM-12"
         ],
         "sources": [
           "SRC-01",
@@ -95,7 +96,9 @@
           "SRC-29",
           "SRC-30",
           "SRC-31",
-          "SRC-32"
+          "SRC-32",
+          "SRC-07",
+          "SRC-36"
         ]
       },
       {
@@ -107,10 +110,33 @@
         "sources": [
           "SRC-01"
         ]
+      },
+      {
+        "entity": "turek",
+        "label": "Filip Turek",
+        "claims": [
+          "CLM-12"
+        ],
+        "sources": [
+          "SRC-07"
+        ]
+      },
+      {
+        "entity": "pavel",
+        "label": "Petr Pavel (prezident)",
+        "claims": [
+          "CLM-33"
+        ],
+        "sources": [
+          "SRC-26",
+          "SRC-36"
+        ]
       }
     ],
     "edges": [
-      "edge-cerveny-vlada"
+      "edge-cerveny-vlada",
+      "edge-cerveny-turek",
+      "edge-cerveny-pavel"
     ]
   },
   "contentBlocks": [

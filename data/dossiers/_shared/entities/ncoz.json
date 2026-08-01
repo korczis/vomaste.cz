@@ -14,7 +14,8 @@
   "dossierStatus": "not_authorized",
   "coverageState": "contextual",
   "dossiers": [
-    "andrej-babis"
+    "andrej-babis",
+    "jeronym-tejc"
   ],
   "routeAliases": [
     "/dossiers/andrej-babis/entities/ncoz/"
@@ -24,7 +25,8 @@
     "discoveredAt": "2026-07-30",
     "discoveredVia": [
       "edge-eppo-ncoz",
-      "edge-babis-ncoz-pandora"
+      "edge-babis-ncoz-pandora",
+      "edge-tejc-ncoz"
     ],
     "claimRefs": [
       "CLM-27",

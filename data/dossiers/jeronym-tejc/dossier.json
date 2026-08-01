@@ -65,7 +65,9 @@
           "CLM-48",
           "CLM-49",
           "CLM-50",
-          "CLM-51"
+          "CLM-51",
+          "CLM-14",
+          "CLM-17"
         ],
         "sources": [
           "SRC-01",
@@ -83,7 +85,8 @@
           "SRC-20",
           "SRC-21",
           "SRC-23",
-          "SRC-25"
+          "SRC-25",
+          "SRC-09"
         ]
       },
       {
@@ -95,10 +98,58 @@
         "sources": [
           "SRC-01"
         ]
+      },
+      {
+        "entity": "ncoz",
+        "label": "Národní centrála proti organizovanému zločinu",
+        "claims": [
+          "CLM-19"
+        ],
+        "sources": [
+          "SRC-11",
+          "SRC-12"
+        ]
+      },
+      {
+        "entity": "ustavni-soud",
+        "label": "Ústavní soud",
+        "claims": [
+          "CLM-14",
+          "CLM-17"
+        ],
+        "sources": [
+          "SRC-08",
+          "SRC-09",
+          "SRC-10"
+        ]
+      },
+      {
+        "entity": "pavel",
+        "label": "Petr Pavel (prezident)",
+        "claims": [
+          "CLM-41"
+        ],
+        "sources": [
+          "SRC-21"
+        ]
+      },
+      {
+        "entity": "juchelka",
+        "label": "Aleš Juchelka",
+        "claims": [
+          "CLM-39"
+        ],
+        "sources": [
+          "SRC-20"
+        ]
       }
     ],
     "edges": [
-      "edge-tejc-vlada"
+      "edge-tejc-vlada",
+      "edge-tejc-ncoz",
+      "edge-tejc-ustavni-soud",
+      "edge-tejc-pavel",
+      "edge-tejc-juchelka"
     ]
   },
   "contentBlocks": [

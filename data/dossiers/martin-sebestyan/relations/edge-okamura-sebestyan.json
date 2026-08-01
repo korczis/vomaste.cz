@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/relations/edge-okamura-sebestyan",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-okamura-sebestyan",
+  "relationId": "edge-okamura-sebestyan",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/okamura"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/sebestyan"
+  },
+  "relationType": "DEFENDED",
+  "label": "předseda SPD Okamura hájil Šebestyána proti kritice Transparency International",
+  "status": "quote",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-15"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-05"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 5,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-038 (provázání grafu) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

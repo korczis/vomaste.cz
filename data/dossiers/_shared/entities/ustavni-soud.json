@@ -14,7 +14,9 @@
   "dossierStatus": "not_authorized",
   "coverageState": "contextual",
   "dossiers": [
-    "andrej-babis"
+    "andrej-babis",
+    "jeronym-tejc",
+    "tomio-okamura"
   ],
   "routeAliases": [
     "/dossiers/andrej-babis/entities/ustavni-soud/"
@@ -24,7 +26,9 @@
     "discoveredAt": "2026-07-30",
     "discoveredVia": [
       "edge-kostelecke-ustavnisoud",
-      "edge-vodnanska-ustavnisoud"
+      "edge-vodnanska-ustavnisoud",
+      "edge-tejc-ustavni-soud",
+      "edge-okamura-ustavni-soud"
     ],
     "claimRefs": [
       "CLM-47",

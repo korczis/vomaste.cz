@@ -14,7 +14,8 @@
   "dossierStatus": "not_authorized",
   "coverageState": "discovered",
   "dossiers": [
-    "lubomir-metnar"
+    "lubomir-metnar",
+    "ales-juchelka"
   ],
   "routeAliases": [
     "/dossiers/lubomir-metnar/entities/nku/"
@@ -23,7 +24,8 @@
   "provenance": {
     "discoveredAt": "2026-07-30",
     "discoveredVia": [
-      "edge-metnar-nku"
+      "edge-metnar-nku",
+      "edge-juchelka-nku"
     ],
     "claimRefs": [
       "CLM-01",

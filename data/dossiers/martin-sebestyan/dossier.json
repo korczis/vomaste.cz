@@ -60,7 +60,11 @@
           "CLM-41",
           "CLM-42",
           "CLM-43",
-          "CLM-44"
+          "CLM-44",
+          "CLM-02",
+          "CLM-15",
+          "CLM-06",
+          "CLM-07"
         ],
         "sources": [
           "SRC-01",
@@ -81,7 +85,11 @@
           "SRC-22",
           "SRC-23",
           "SRC-24",
-          "SRC-25"
+          "SRC-25",
+          "SRC-07",
+          "SRC-27",
+          "SRC-05",
+          "SRC-02"
         ]
       },
       {
@@ -106,11 +114,61 @@
           "SRC-04",
           "SRC-26"
         ]
+      },
+      {
+        "entity": "agrofert",
+        "label": "Agrofert",
+        "claims": [
+          "CLM-02"
+        ],
+        "sources": [
+          "SRC-07",
+          "SRC-27"
+        ]
+      },
+      {
+        "entity": "babis",
+        "label": "Andrej Babiš",
+        "claims": [
+          "CLM-20",
+          "CLM-21"
+        ],
+        "sources": [
+          "SRC-08",
+          "SRC-09",
+          "SRC-10",
+          "SRC-11"
+        ]
+      },
+      {
+        "entity": "okamura",
+        "label": "Tomio Okamura",
+        "claims": [
+          "CLM-15"
+        ],
+        "sources": [
+          "SRC-05"
+        ]
+      },
+      {
+        "entity": "evropska-komise",
+        "label": "Evropská komise",
+        "claims": [
+          "CLM-06",
+          "CLM-07"
+        ],
+        "sources": [
+          "SRC-02"
+        ]
       }
     ],
     "edges": [
       "edge-sebestyan-vlada",
-      "edge-sebestyan-szif"
+      "edge-sebestyan-szif",
+      "edge-sebestyan-agrofert",
+      "edge-sebestyan-babis",
+      "edge-okamura-sebestyan",
+      "edge-sebestyan-evropska-komise"
     ]
   },
   "contentBlocks": [

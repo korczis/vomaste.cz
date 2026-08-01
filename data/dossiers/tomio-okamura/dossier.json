@@ -61,7 +61,8 @@
           "CLM-32",
           "CLM-33",
           "CLM-34",
-          "CLM-35"
+          "CLM-35",
+          "CLM-03"
         ],
         "sources": [
           "SRC-01",
@@ -100,10 +101,21 @@
         "sources": [
           "SRC-01"
         ]
+      },
+      {
+        "entity": "ustavni-soud",
+        "label": "Ústavní soud",
+        "claims": [
+          "CLM-03"
+        ],
+        "sources": [
+          "SRC-01"
+        ]
       }
     ],
     "edges": [
-      "edge-okamura-spd"
+      "edge-okamura-spd",
+      "edge-okamura-ustavni-soud"
     ]
   },
   "contentBlocks": [

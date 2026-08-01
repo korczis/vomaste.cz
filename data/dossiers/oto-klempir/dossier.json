@@ -107,10 +107,21 @@
         "sources": [
           "SRC-01"
         ]
+      },
+      {
+        "entity": "pavel",
+        "label": "Petr Pavel (prezident)",
+        "claims": [
+          "CLM-20"
+        ],
+        "sources": [
+          "SRC-19"
+        ]
       }
     ],
     "edges": [
-      "edge-klempir-vlada"
+      "edge-klempir-vlada",
+      "edge-klempir-pavel"
     ]
   },
   "contentBlocks": [

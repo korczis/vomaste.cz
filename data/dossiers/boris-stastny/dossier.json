@@ -97,10 +97,32 @@
         "sources": [
           "SRC-01"
         ]
+      },
+      {
+        "entity": "babis",
+        "label": "Andrej Babiš",
+        "claims": [
+          "CLM-25"
+        ],
+        "sources": [
+          "SRC-11"
+        ]
+      },
+      {
+        "entity": "bartha",
+        "label": "Tünde Bartha",
+        "claims": [
+          "CLM-15"
+        ],
+        "sources": [
+          "SRC-05"
+        ]
       }
     ],
     "edges": [
-      "edge-stastny-vlada"
+      "edge-stastny-vlada",
+      "edge-babis-stastny",
+      "edge-bartha-stastny"
     ]
   },
   "contentBlocks": [
