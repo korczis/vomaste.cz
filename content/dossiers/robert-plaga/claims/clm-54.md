@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-54"
 description = "Poslankyně ODS Renáta Zajíčková kritizovala náročnost procesu žádosti o výjimku ze zkrácení školního roku a upozornila, že rozděluje třídní "
 template = "dossier-claim.html"
 weight = 54
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-54"
+view_model = "generated/views/dossiers/robert-plaga/claims/clm-54.json"
 dossier = "robert-plaga"
 record_type = "claim"
 lang = "cs"
@@ -15,5 +19,4 @@ summary = "Poslankyně ODS Renáta Zajíčková kritizovala náročnost procesu 
 sources = ["SRC-21"]
 subjects = ["plaga"]
 +++
-
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/robert-plaga/_index.md#registr-tvrzeni).

@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-11"
 description = "MPSV v červenci 2026 rozhodlo, že čtyři projekty za 63,8 milionu korun nebude vykazovat vůči Evropské komisi k proplacení z Národního plánu "
 template = "dossier-claim.html"
 weight = 11
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-11"
+view_model = "generated/views/dossiers/ales-juchelka/claims/clm-11.json"
 dossier = "ales-juchelka"
 record_type = "claim"
 lang = "cs"
@@ -15,5 +19,4 @@ summary = "MPSV v červenci 2026 rozhodlo, že čtyři projekty za 63,8 milionu 
 sources = ["SRC-02", "SRC-10", "SRC-11", "SRC-12"]
 subjects = ["juchelka"]
 +++
-
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/ales-juchelka/_index.md#registr-tvrzeni).

@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-04 — Zdravotnický deník"
 description = "Kauza defibrilátorů: FN Olomouc poprvé upřesnila, co policie prověřuje. Zasahuje i ministr"
 template = "dossier-source.html"
 weight = 4
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-04"
+view_model = "generated/views/dossiers/adam-vojtech/sources/src-04.json"
 subjects = ["vojtech"]
 dossier = "adam-vojtech"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-02-11"
 retrieved = "2026-07-30"
 claims = ["CLM-06", "CLM-07", "CLM-08"]
 +++
-
 **Kauza defibrilátorů: FN Olomouc poprvé upřesnila, co policie prověřuje. Zasahuje i ministr**
 
 FN Olomouc upřesnila, že policie prověřuje možné nesrovnalosti mezi zdravotnickou dokumentací a výsledky hlášenými v mezinárodní studii PROFID EHRA; prověřování pokrývá implantace 2015 až únor 2025 (několik stovek pacientů). Nemocnice studii opustila v únoru 2025. Ministr Vojtěch v únoru 2026 uložil zřídit infolinku pro pacienty a vyžádal si komplexní zprávu; personální odpovědnost odložil na později.

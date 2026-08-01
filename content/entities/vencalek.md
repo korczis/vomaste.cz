@@ -1,26 +1,29 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Petr Vencálek (vlastník GMR GAS s.r.o.)"
 template = "entity.html"
-weight = 38
+weight = 78
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/entities/vencalek"
+view_model = "generated/views/entities/vencalek.json"
 record_type = "entity"
 entity_id = "vencalek"
 entity_type = "person"
-depth = 3
-subject = false
 publication_role = "context"
 dossier_enabled = false
 dossier_status = "not_authorized"
 coverage_state = "discovered"
+dossiers = ["macinka-turek", "petr-macinka"]
+depth = 3
+subject = false
 discovered_at = "2026-07-30"
 discovered_via = ["edge-vencalek-gmrgascz"]
-dossiers = ["macinka-turek", "petr-macinka"]
 cluster = "financni-vazby"
 claims = ["CLM-48"]
 sources = ["SRC-17", "SRC-55"]
 +++
-
 Jediný společník (podíl 100 %) a jednatel společnosti GMR GAS s.r.o.
 Objevuje se tu z jednoho jediného důvodu: citované zpravodajství
 (Investigace.cz) ho jmenuje jako majitele české firmy, která je podle

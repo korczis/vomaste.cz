@@ -1,24 +1,27 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-22 — Novinky.cz (ČTK): Kasační stížnost Kosteleckých uzenin soud smetl (28. 11. 2025)"
 description = "Správní historie zrušené dotace: schválil SZIF, zrušilo ministerstvo zemědělství; účel a program podpory."
 template = "dossier-source.html"
 weight = 22
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-22"
+view_model = "generated/views/dossiers/andrej-babis/sources/src-22.json"
 subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-22"
 outlet = "Novinky.cz"
-src_type = "agenturní zpravodajství"
 family = "ctk"
+src_type = "agenturní zpravodajství"
 url = "https://www.novinky.cz/clanek/domaci-kasacni-stiznost-kosteleckych-uzenin-soud-smetl-na-dotaci-nemely-kvuli-babisove-stretu-zajmu-narok-40550933"
 published = "2025-11-28"
 retrieved = "2026-07-30"
 claims = ["CLM-48"]
 +++
-
 Agenturní zpráva ČTK k rozsudku Nejvyššího správního soudu.
 **Co dokládá:** správní historii sporné podpory — šlo o dotaci z Programu
 rozvoje venkova z roku 2018 na inovaci technologie výroby masných

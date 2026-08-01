@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-01 — Vláda ČR (oficiální profil)"
 description = "Oficiální profil člena vlády: Oto Klempíř zastává funkci ministra kultury; životopisné údaje."
 template = "dossier-source.html"
 weight = 1
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-01"
+view_model = "generated/views/dossiers/oto-klempir/sources/src-01.json"
 subjects = ["klempir"]
 dossier = "oto-klempir"
 record_type = "source"
@@ -16,7 +20,6 @@ url = "https://vlada.gov.cz/cz/vlada/clenove-vlady/oto-klempir-223983/"
 retrieved = "2026-07-30"
 claims = ["CLM-01", "CLM-02"]
 +++
-
 Oficiální profil člena vlády na webu Úřadu vlády. Uvádí funkci
 **ministr kultury** a životopisné údaje: narozen 20. května 1963 v
 Kyjově; přes třicet let praxe v reklamě, marketingu, filmu a literatuře;

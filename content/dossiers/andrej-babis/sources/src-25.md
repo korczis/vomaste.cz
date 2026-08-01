@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-25 — Ekonom: Příběh kolem Setuzy končí bez happy endu (9. 6. 2011)"
 description = "Analýza konce sporů o Setuzu; Babišova neúspěšná snaha firmu získat a vybudování vlastního závodu Preol."
 template = "dossier-source.html"
 weight = 25
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-25"
+view_model = "generated/views/dossiers/andrej-babis/sources/src-25.json"
 subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2011-06-09"
 retrieved = "2026-07-30"
 claims = ["CLM-53"]
 +++
-
 Analýza týdeníku Ekonom (autor Martin Mařík) k závěru sporů o ústeckou
 Setuzu.
 **Co dokládá:** že Andrej Babiš o Setuzu dlouhodobě usiloval, **firmu

@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-19 — Echo24"
 description = "Ujistil jsem prezidenta, že vláda veřejnoprávní média neohrozí, říká ministr Klempíř"
 template = "dossier-source.html"
 weight = 19
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-19"
+view_model = "generated/views/dossiers/oto-klempir/sources/src-19.json"
 subjects = ["klempir"]
 dossier = "oto-klempir"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-07-01"
 retrieved = "2026-07-30"
 claims = ["CLM-20"]
 +++
-
 **Ujistil jsem prezidenta, že vláda veřejnoprávní média neohrozí, říká ministr Klempíř**
 
 Zpráva o schůzce Klempíře s prezidentem Pavlem 30. 6. 2026; prezident se ptal na garance nezávislosti ČT a ČRo po změně financování a vyzval k odborné debatě.

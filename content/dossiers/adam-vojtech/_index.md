@@ -1,21 +1,29 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Adam Vojtěch"
 description = "Neutrální, zdroji doložený přehled o osobě Adam Vojtěch — ministr zdravotnictví. Autorizovaný rozsah dle AUTH-2026-07-30-Q; registry se teprve plní."
 template = "entity-dossier.html"
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/adam-vojtech"
+view_model = "generated/views/dossiers/adam-vojtech/overview.json"
 dossier = "adam-vojtech"
 dossier_title = "Adam Vojtěch"
+record_type = "dossier"
 dossier_type = "entity"
 canonical_dossier = "adam-vojtech"
 subject = "vojtech"
 lang = "cs"
 seo_type = "ProfilePage"
-subject_entities = ["vojtech"]
-subjects = ["Adam Vojtěch"]
 updated = "2026-07-30"
 reviewed_at = "2026-07-30"
+subject_entities = ["vojtech"]
+subjects = ["Adam Vojtěch"]
 
+[extra.authorization]
+authorized = true
+record_ids = ["AUTH-2026-07-30-Q"]
 
 [[extra.timeline]]
 date = "2025-02"
@@ -65,6 +73,7 @@ title = "Debata o benefitech pokračuje ve Sněmovně; komise předběžně potv
 anchor = "kauza-defibrilatory"
 dot = "dot-fact"
 subjects = ["vojtech"]
+
 [[extra.timeline]]
 date = "2026-02"
 title = "Premiér Babiš ve FN Olomouc vyjádřil řediteli Havlíkovi důvěru a odmítl personální změny"
@@ -157,10 +166,6 @@ label = "Sledované téma"
 summary = "Kritika očkovací strategie od koaliční SPD — viz tvrzení CLM-18, CLM-19, CLM-20, CLM-21."
 claims = ["CLM-45", "CLM-46", "CLM-47", "CLM-48", "CLM-49", "CLM-50"]
 subjects = ["vojtech"]
-
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-Q"]
 +++
 Adam Vojtěch zastává funkci ministra zdravotnictví ve třetí vládě Andreje Babiše (viz
 `data/government.toml`, ověřeno proti oficiálnímu seznamu členů vlády).

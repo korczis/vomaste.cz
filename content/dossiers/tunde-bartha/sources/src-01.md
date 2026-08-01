@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-01 — Hospodářské noviny (ČTK)"
 description = "Zpráva ČTK z 24. 6. 2026: rada MČ Praha 3 rozhodla o výpovědi z nájmu obecního bytu manželům Barthovým pro přenechání bytu třetím osobám bez souhlasu pronajímatele."
 template = "dossier-source.html"
 weight = 1
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-01"
+view_model = "generated/views/dossiers/tunde-bartha/sources/src-01.json"
 subjects = ["bartha"]
 dossier = "tunde-bartha"
 record_type = "source"
@@ -13,11 +17,10 @@ src_id = "SRC-01"
 outlet = "Hospodářské noviny"
 src_type = "celostátní zpravodajství (agenturní)"
 url = "https://domaci.hn.cz/c1-67896320-zije-v-pruhonicich-byt-prenechala-pribuznym-praha-3-vypovedela-babisove-sefce-uradu-vlady-smlouvu-na-najem-mestskeho-bytu"
-retrieved = "2026-07-30"
 published = "2026-06-24"
+retrieved = "2026-07-30"
 claims = ["CLM-01", "CLM-04", "CLM-05", "CLM-07"]
 +++
-
 Hospodářské noviny dne 24. 6. 2026 přinesly zprávu ČTK, podle níž rada
 městské části Praha 3 rozhodla o výpovědi z nájmu obecního bytu na
 Žižkově s tříměsíční výpovědní dobou. Jako důvod rada podle článku

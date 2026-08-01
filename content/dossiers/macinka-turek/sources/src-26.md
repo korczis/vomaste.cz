@@ -1,4 +1,5 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-26 — Hlídač státu (Macinka, sponzoring)"
 description = "Macinkovy osobní a firemní dary: 1 310 000 Kč směrem k Motoristům sobě/ODS 2017–2024."
 template = "dossier-source.html"
@@ -6,19 +7,21 @@ weight = 26
 aliases = ["/dossier/zdroje/src-26/"]
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-26"
+view_model = "generated/views/dossiers/macinka-turek/sources/src-26.json"
 subjects = ["macinka"]
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-26"
 outlet = "Hlídač státu"
+family = "hlidac-statu"
 src_type = "veřejný rejstřík / transparentní databáze"
 url = "https://www.hlidacstatu.cz/Osoba/Sponzoring/petr-macinka"
 retrieved = "2026-07-22"
 claims = ["CLM-23"]
-family = "hlidac-statu"
 +++
-
 Stejná kategorie dat jako SRC-25 (zákonem vyžadované zveřejnění dárců
 politických stran, agregováno Hlídačem státu). U Petra Macinky:
 

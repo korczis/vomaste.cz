@@ -1,4 +1,5 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "GAP-02 — Dopad nehody na Turkovo poslanecké působení a Macinkovu pozici ve vládě"
 description = "Turek dočasně opustil funkci zmocněnce pro Green Deal; trvalejší dopad na mandát nebo na Macinkovu vládní pozici zatím zdokumentován nebyl."
 template = "dossier-gap.html"
@@ -6,6 +7,9 @@ weight = 2
 aliases = ["/dossier/mezery/gap-02/"]
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/macinka-turek/gaps/GAP-02"
+view_model = "generated/views/dossiers/macinka-turek/gaps/gap-02.json"
 subjects = ["macinka", "turek"]
 dossier = "macinka-turek"
 record_type = "gap"
@@ -15,7 +19,6 @@ priority = "vysoká"
 checked = "2026-07-23"
 claims = ["CLM-11", "CLM-12", "CLM-38", "CLM-40"]
 +++
-
 Po nehodě Turek oznámil, že do uzavření vyšetřování nebude vykonávat
 funkci vládního zmocněnce pro Green Deal, a přislíbil rezignaci na tuto
 funkci v případě prokázané viny (CLM-11). Premiér Babiš měl podle

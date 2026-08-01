@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-04 — FORUM 24"
 description = "Zlom v kauze toustové linky Penamu. Dotaci zpochybňuje další svědek zevnitř Babišova impéria"
 template = "dossier-source.html"
 weight = 4
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-04"
+view_model = "generated/views/dossiers/karel-havlicek/sources/src-04.json"
 subjects = ["havlicek"]
 dossier = "karel-havlicek"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2021-01-06"
 retrieved = "2026-07-30"
 claims = ["CLM-05", "CLM-07"]
 +++
-
 **Zlom v kauze toustové linky Penamu. Dotaci zpochybňuje další svědek zevnitř Babišova impéria**
 
 Článek uvádí zjištění auditorů EK, že velmi podobné tousty vyráběla německá firma Lieken AG už v roce 2013, projekt tedy nebyl inovativní; kritizuje, že ministerstvo průmyslu 100 milionů iniciativně nevymáhá.

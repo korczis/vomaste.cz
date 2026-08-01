@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-22 — Hospodářské noviny: Koaliční poslanci schválili kontroverzní rozpočtovou novelu, opozice se chce obrátit na Ústavní soud (15. 5. 2026)"
 description = "HN nezávisle na ČeskéNoviny.cz/ČTK (SRC-03) potvrzuje výjimku pro strategickou infrastrukturu, 10% bezpečnostní klauzuli a obcházení souhlasu Sněmovny."
 template = "dossier-source.html"
 weight = 22
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-22"
+view_model = "generated/views/dossiers/alena-schillerova/sources/src-22.json"
 subjects = ["schillerova"]
 dossier = "alena-schillerova"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-05-15"
 retrieved = "2026-07-31"
 claims = ["CLM-05"]
 +++
-
 Hospodářské noviny dne 15. 5. 2026 potvrzují: vláda by mohla navyšovat
 výdaje na strategickou infrastrukturu podle liniového zákona; návrh
 umožňuje navýšit celkové výdaje státního rozpočtu až o deset procent

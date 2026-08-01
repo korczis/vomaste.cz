@@ -19,6 +19,7 @@
   "routeAliases": [
     "/dossiers/andrej-babis/entities/pnf/"
   ],
+  "order": 59,
   "content": [
     {
       "type": "markdown",

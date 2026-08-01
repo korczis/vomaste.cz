@@ -5,7 +5,10 @@
 
 {% block content %}
 <main class="mx-auto max-w-6xl px-6 py-12 text-white">
+  {#- T-028 fáze F: řádky registru pochází z view modelu, ne z front
+      matter section.pages — content adaptéry jsou generované. -#}
   {% set dossier_slug = section.extra.dossier %}
+  {% set idx = load_data(path="data/" ~ section.extra.view_model) %}
   {{ ui::page_header(title=section.title, description=section.description, breadcrumb_items=[
     "Dossier::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"),
     "Registr zdrojů",
@@ -16,13 +19,13 @@
   {% set_global evidentiary_count = 0 %}
   {% set_global named_families = [] %}
   {% set_global singleton_count = 0 %}
-  {% for p in section.pages %}
-    {% if p.extra.claims and p.extra.claims | length > 0 %}
+  {% for p in idx.rows %}
+    {% if p.claims and p.claims | length > 0 %}
       {% set_global evidentiary_count = evidentiary_count + 1 %}
     {% endif %}
-    {% if p.extra.family %}
-      {% if p.extra.family not in named_families %}
-        {% set_global named_families = named_families | concat(with=[p.extra.family]) %}
+    {% if p.sourceFamily %}
+      {% if p.sourceFamily not in named_families %}
+        {% set_global named_families = named_families | concat(with=[p.sourceFamily]) %}
       {% endif %}
     {% else %}
       {% set_global singleton_count = singleton_count + 1 %}
@@ -32,10 +35,10 @@
   {% set_global family_count = singleton_count + named_families_len %}
 
   <div class="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
-    {{ ui::stat_tile(value=section.pages | length, label="Zdrojů celkem") }}
+    {{ ui::stat_tile(value=idx.rows | length, label="Zdrojů celkem") }}
     {{ ui::stat_tile(value=family_count, label="Zdrojových rodin") }}
     {{ ui::stat_tile(value=evidentiary_count, label="Podkládá tvrzení") }}
-    {{ ui::stat_tile(value=section.pages | length - evidentiary_count, label="Kontext / názor") }}
+    {{ ui::stat_tile(value=idx.rows | length - evidentiary_count, label="Kontext / názor") }}
   </div>
 
   {#- Registr zdrojů přešel z karetní mřížky na hustou tabulku přes sdílené
@@ -47,7 +50,7 @@
   {{ views::open(
     id="sources-registry",
     title="Registr zdrojů",
-    count=section.pages | length,
+    count=idx.rows | length,
     default_view="table",
     search_label="Hledat ve zdrojích",
     sort_options=["id::ID", "outlet::Vydavatel", "type::Typ", "claims::Podkládá tvrzení"],
@@ -60,37 +63,37 @@
     id="sources-registry-table",
     caption="Registr zdrojů",
     record_type="source",
-    count=section.pages | length,
+    count=idx.rows | length,
     columns=["ID", "Vydavatel", "Typ", "Rodina", "Popis", "Podkládá"],
     sort_keys=["id", "outlet", "type", "family", "", "claims"],
     searchable=true,
     url_state=true,
     export_name="zdroje") }}
-    {% for p in section.pages %}
-    <tr data-record-key="{{ p.extra.src_id }}" data-type="{{ p.extra.src_type }}" data-family="{{ p.extra.family | default(value='') }}" id="sources-registry-table-{{ p.extra.src_id | lower }}">
+    {% for p in idx.rows %}
+    <tr data-record-key="{{ p.identifier }}" data-type="{{ p.sourceType }}" data-family="{{ p.sourceFamily | default(value='') }}" id="sources-registry-table-{{ p.identifier | lower }}">
       <td class="whitespace-nowrap p-3 align-top">
-        <a href="{{ p.permalink | safe }}" class="font-mono text-xs text-[#f3e5c0] hover:underline">{{ p.extra.src_id }}</a>
+        <a href="{{ config.base_url }}{{ p.route }}" class="font-mono text-xs text-[#f3e5c0] hover:underline">{{ p.identifier }}</a>
       </td>
-      <td class="p-3 align-top font-semibold text-white">{{ p.extra.outlet }}</td>
-      <td class="whitespace-nowrap p-3 align-top text-xs text-white/55">{{ p.extra.src_type }}</td>
+      <td class="p-3 align-top font-semibold text-white">{{ p.outlet }}</td>
+      <td class="whitespace-nowrap p-3 align-top text-xs text-white/55">{{ p.sourceType }}</td>
       {#- Zdrojová rodina: zdroje se stejnou hodnotou nejsou nezávislá
           doložení, ale jedno — převzetí téže agenturní zprávy nebo tentýž
           článek na dvou doménách. Bez tohohle sloupce čtenář vidí „tři
           zdroje" tam, kde jde o jednu redakci. Prázdno znamená samostatný
           zdroj, tedy vlastní rodinu. -#}
-      <td class="whitespace-nowrap p-3 align-top" data-sort-value="{{ p.extra.family | default(value='') }}">
-        {%- if p.extra.family %}
-        <span class="rounded bg-[#f3e5c0]/10 px-1.5 py-0.5 font-mono text-[0.65rem] text-[#f3e5c0]">{{ p.extra.family }}</span>
+      <td class="whitespace-nowrap p-3 align-top" data-sort-value="{{ p.sourceFamily | default(value='') }}">
+        {%- if p.sourceFamily %}
+        <span class="rounded bg-[#f3e5c0]/10 px-1.5 py-0.5 font-mono text-[0.65rem] text-[#f3e5c0]">{{ p.sourceFamily }}</span>
         {%- else %}<span class="text-xs text-white/40" title="samostatný zdroj">—</span>{% endif -%}
       </td>
       <td class="p-3 align-top text-white/70">
-        <a href="{{ p.permalink | safe }}" class="line-clamp-2 text-white/70 no-underline hover:text-white hover:underline sm:line-clamp-none">{{ p.description }}</a>
+        <a href="{{ config.base_url }}{{ p.route }}" class="line-clamp-2 text-white/70 no-underline hover:text-white hover:underline sm:line-clamp-none">{{ p.description }}</a>
       </td>
       {#- Řadí se podle počtu podepřených tvrzení, ne podle abecedy jejich
           identifikátorů: zajímavé je, co nese důkazní váhu. -#}
-      <td class="p-3 align-top" data-sort-value="{{ p.extra.claims | default(value=[]) | length }}">
+      <td class="p-3 align-top" data-sort-value="{{ p.claims | default(value=[]) | length }}">
         <span class="flex flex-wrap gap-1">
-        {%- for c in p.extra.claims | default(value=[]) %}<span class="rounded bg-white/5 px-1.5 py-0.5 font-mono text-[0.6rem] text-white/50">{{ c }}</span>{% endfor %}
+        {%- for c in p.claims | default(value=[]) %}<span class="rounded bg-white/5 px-1.5 py-0.5 font-mono text-[0.6rem] text-white/50">{{ c.identifier }}</span>{% endfor %}
         </span>
       </td>
     </tr>
@@ -102,14 +105,14 @@
 
   {{ views::projection(name="list", default_view="table") }}
     <ul class="divide-y divide-white/10 overflow-hidden rounded-lg border border-white/10 bg-white/[0.03]">
-      {%- for p in section.pages %}
-      <li data-record-key="{{ p.extra.src_id }}" data-type="{{ p.extra.src_type }}" data-family="{{ p.extra.family | default(value='') }}" data-facet="{{ p.extra.src_type }}" id="sources-registry-list-{{ p.extra.src_id | lower }}" class="p-3">
+      {%- for p in idx.rows %}
+      <li data-record-key="{{ p.identifier }}" data-type="{{ p.sourceType }}" data-family="{{ p.sourceFamily | default(value='') }}" data-facet="{{ p.sourceType }}" id="sources-registry-list-{{ p.identifier | lower }}" class="p-3">
         <div class="flex flex-wrap items-baseline gap-x-2 gap-y-1">
-          <a href="{{ p.permalink | safe }}" class="font-mono text-xs text-[#f3e5c0] no-underline hover:underline">{{ p.extra.src_id }}</a>
-          {% if p.extra.family %}<span class="rounded bg-[#f3e5c0]/10 px-1.5 py-0.5 font-mono text-[0.65rem] text-[#f3e5c0]">{{ p.extra.family }}</span>{% endif %}
-          <span class="ml-auto font-mono text-[0.65rem] text-white/55">{{ p.extra.src_type }}</span>
+          <a href="{{ config.base_url }}{{ p.route }}" class="font-mono text-xs text-[#f3e5c0] no-underline hover:underline">{{ p.identifier }}</a>
+          {% if p.sourceFamily %}<span class="rounded bg-[#f3e5c0]/10 px-1.5 py-0.5 font-mono text-[0.65rem] text-[#f3e5c0]">{{ p.sourceFamily }}</span>{% endif %}
+          <span class="ml-auto font-mono text-[0.65rem] text-white/55">{{ p.sourceType }}</span>
         </div>
-        <a href="{{ p.permalink | safe }}" class="mt-1 block font-semibold text-white no-underline hover:underline">{{ p.extra.outlet }}</a>
+        <a href="{{ config.base_url }}{{ p.route }}" class="mt-1 block font-semibold text-white no-underline hover:underline">{{ p.outlet }}</a>
         <p class="mt-0.5 line-clamp-2 text-xs leading-snug text-white/60">{{ p.description }}</p>
       </li>
       {%- endfor %}
@@ -118,14 +121,14 @@
 
   {{ views::projection(name="grid", default_view="table") }}
     <div class="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
-      {%- for p in section.pages %}
-      <article data-record-key="{{ p.extra.src_id }}" data-type="{{ p.extra.src_type }}" data-family="{{ p.extra.family | default(value='') }}" data-facet="{{ p.extra.src_type }}" id="sources-registry-grid-{{ p.extra.src_id | lower }}"
+      {%- for p in idx.rows %}
+      <article data-record-key="{{ p.identifier }}" data-type="{{ p.sourceType }}" data-family="{{ p.sourceFamily | default(value='') }}" data-facet="{{ p.sourceType }}" id="sources-registry-grid-{{ p.identifier | lower }}"
         class="rounded-lg border border-white/10 bg-white/[0.03] p-3">
         <div class="flex flex-wrap items-baseline justify-between gap-2">
-          <a href="{{ p.permalink | safe }}" class="font-mono text-xs text-[#f3e5c0] no-underline hover:underline">{{ p.extra.src_id }}</a>
-          {% if p.extra.family %}<span class="rounded bg-[#f3e5c0]/10 px-1.5 py-0.5 font-mono text-[0.65rem] text-[#f3e5c0]">{{ p.extra.family }}</span>{% endif %}
+          <a href="{{ config.base_url }}{{ p.route }}" class="font-mono text-xs text-[#f3e5c0] no-underline hover:underline">{{ p.identifier }}</a>
+          {% if p.sourceFamily %}<span class="rounded bg-[#f3e5c0]/10 px-1.5 py-0.5 font-mono text-[0.65rem] text-[#f3e5c0]">{{ p.sourceFamily }}</span>{% endif %}
         </div>
-        <a href="{{ p.permalink | safe }}" class="mt-1.5 block text-sm font-semibold text-white no-underline hover:underline">{{ p.extra.outlet }}</a>
+        <a href="{{ config.base_url }}{{ p.route }}" class="mt-1.5 block text-sm font-semibold text-white no-underline hover:underline">{{ p.outlet }}</a>
         <p class="mt-1 line-clamp-3 text-xs leading-snug text-white/60">{{ p.description }}</p>
       </article>
       {%- endfor %}

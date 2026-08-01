@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-34 — ČT24: Padla obžaloba za dotace Agrofertu na linku na toastový chléb (22. 6. 2026)"
 description = "Státní zástupce EPPO Adam Bašný podal obžalobu na Pekárnu Zelená louka a dvě fyzické osoby ke Krajskému soudu v Praze; dotace 100 mil. Kč, zajištěný majetek 98 mil. Kč."
 template = "dossier-source.html"
 weight = 34
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-34"
+view_model = "generated/views/dossiers/andrej-babis/sources/src-34.json"
 subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-06-22"
 retrieved = "2026-08-01"
 claims = ["CLM-57", "CLM-58", "CLM-59"]
 +++
-
 ČT24 informuje, že státní zástupce Adam Bašný z Úřadu evropského
 veřejného žalobce (EPPO) podal 22. 6. 2026 ke Krajskému soudu v Praze
 obžalobu na společnost Pekárna Zelená louka ze skupiny Agrofert a dvě

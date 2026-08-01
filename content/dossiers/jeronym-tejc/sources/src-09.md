@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-09 — Deník N"
 description = "Česká justice: Tejc má velké pochybnosti o předběžném opatření ÚS o summitu NATO"
 template = "dossier-source.html"
 weight = 9
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-09"
+view_model = "generated/views/dossiers/jeronym-tejc/sources/src-09.json"
 subjects = ["tejc"]
 dossier = "jeronym-tejc"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-07-02"
 retrieved = "2026-07-30"
 claims = ["CLM-14", "CLM-15"]
 +++
-
 **Česká justice: Tejc má velké pochybnosti o předběžném opatření ÚS o summitu NATO**
 
 Krátká zpráva (Minuta N, 2. 7. 2026): Tejc má „velké pochybnosti o předběžném opatření“ ÚS k summitu NATO v Ankaře, zpochybnil oprávněnost jeho vydání i možnost ukládat vládě aktivní povinnosti; zároveň uvedl, že vláda rozhodnutí respektuje a naplní.

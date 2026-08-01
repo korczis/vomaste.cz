@@ -37,6 +37,7 @@
     "turek"
   ],
   "directed": true,
+  "order": 17,
   "content": [
     {
       "type": "markdown",

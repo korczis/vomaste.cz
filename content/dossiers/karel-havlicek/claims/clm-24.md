@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-24"
 description = "Vyšetřovatelé zajistili (zaplombovali) majetek pekárny v Herinku — výrobní halu a přilehlé budovy — v hodnotě přibližně 98 milionů korun jak"
 template = "dossier-claim.html"
 weight = 24
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-24"
+view_model = "generated/views/dossiers/karel-havlicek/claims/clm-24.json"
 dossier = "karel-havlicek"
 record_type = "claim"
 lang = "cs"
@@ -15,5 +19,4 @@ summary = "Vyšetřovatelé zajistili (zaplombovali) majetek pekárny v Herinku 
 sources = ["SRC-14", "SRC-16"]
 subjects = ["havlicek"]
 +++
-
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/karel-havlicek/_index.md#registr-tvrzeni).

@@ -19,6 +19,7 @@
   "routeAliases": [
     "/dossiers/andrej-babis/entities/kostelecke-uzeniny/"
   ],
+  "order": 32,
   "content": [
     {
       "type": "markdown",

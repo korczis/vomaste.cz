@@ -1,21 +1,29 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Alena Schillerová"
 description = "Neutrální, zdroji doložený přehled o Aleně Schillerové — místopředsedkyni vlády a ministryni financí ve třetí vládě Andreje Babiše."
 template = "entity-dossier.html"
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/alena-schillerova"
+view_model = "generated/views/dossiers/alena-schillerova/overview.json"
 dossier = "alena-schillerova"
 dossier_title = "Alena Schillerová"
+record_type = "dossier"
 dossier_type = "entity"
 canonical_dossier = "alena-schillerova"
 subject = "schillerova"
 lang = "cs"
 seo_type = "ProfilePage"
-subject_entities = ["schillerova"]
-subjects = ["Alena Schillerová"]
 updated = "2026-07-30"
 reviewed_at = "2026-07-30"
+subject_entities = ["schillerova"]
+subjects = ["Alena Schillerová"]
 
+[extra.authorization]
+authorized = true
+record_ids = ["AUTH-2026-07-30-B"]
 
 [[extra.timeline]]
 date = "2026-01"
@@ -94,10 +102,6 @@ anchor = "kauza-novela-rozpoctovych-pravidel"
 dot = "dot-fact"
 subjects = ["schillerova"]
 
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-B"]
-
 [[extra.timeline]]
 date = "2017-12"
 title = "Jmenována ministryní financí"
@@ -125,6 +129,7 @@ title = "Novela rozpočtových zákonů ve Sněmovně, kritika opozice"
 anchor = "kauza-rozpoctova-pravidla"
 dot = "dot-disputed"
 subjects = ["schillerova"]
+
 [[extra.cases]]
 anchor = "kauza-rozpoctova-pravidla"
 period = "2026"
@@ -164,9 +169,7 @@ label = "Sledované téma"
 summary = "Stanoviska Národní rozpočtové rady — viz tvrzení CLM-24, CLM-25, CLM-26, CLM-27, CLM-28, CLM-29, CLM-30, CLM-31, CLM-32, CLM-33."
 claims = []
 subjects = ["schillerova"]
-
 +++
-
 Alena Schillerová je místopředsedkyní vlády a ministryní financí ve třetí
 vládě Andreje Babiše. Tento dossier shrnuje veřejně doložené skutečnosti
 o její veřejné funkci a kariéře a o rozpočtové kauze roku 2026 — vždy s

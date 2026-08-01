@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "GAP-02 — Obsah bezpečnostní analýzy, na niž se ministerstvo odvolává"
 description = "Analýza Policie ČR nebyla v citovaných zdrojích zveřejněna ani ověřena."
 template = "dossier-gap.html"
 weight = 2
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/lubomir-metnar/gaps/GAP-02"
+view_model = "generated/views/dossiers/lubomir-metnar/gaps/gap-02.json"
 subjects = ["metnar"]
 dossier = "lubomir-metnar"
 record_type = "gap"
@@ -14,7 +18,6 @@ priority = "nízká"
 checked = "2026-07-30"
 claims = ["CLM-02", "CLM-03"]
 +++
-
 Ministerstvo odůvodňuje návrh bezpečnostní analýzou Policie ČR
 ([CLM-02](@/dossiers/lubomir-metnar/claims/clm-02.md)). Tato analýza
 nebyla v citovaných zdrojích zveřejněna, takže dossier **nemůže posoudit

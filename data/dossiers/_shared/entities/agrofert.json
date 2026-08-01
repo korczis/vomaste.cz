@@ -20,6 +20,7 @@
   "routeAliases": [
     "/dossiers/andrej-babis/entities/agrofert/"
   ],
+  "order": 2,
   "content": [
     {
       "type": "markdown",

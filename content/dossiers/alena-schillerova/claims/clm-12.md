@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-12"
 description = "Pozměňovací návrh č. 826 rozšiřuje výjimky z rozpočtových pravidel také na platby za dostupnost v PPP projektech, což by podle Centra veřejn"
 template = "dossier-claim.html"
 weight = 12
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-12"
+view_model = "generated/views/dossiers/alena-schillerova/claims/clm-12.json"
 dossier = "alena-schillerova"
 record_type = "claim"
 lang = "cs"
@@ -15,5 +19,4 @@ summary = "Pozměňovací návrh č. 826 rozšiřuje výjimky z rozpočtových p
 sources = ["SRC-19"]
 subjects = ["schillerova"]
 +++
-
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/alena-schillerova/_index.md#registr-tvrzeni).

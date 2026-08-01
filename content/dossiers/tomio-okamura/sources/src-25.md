@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-25 — Reflex"
 description = "Okamura kope na všechny strany. Pokuta pro SPD ale svědčí o kvalitě justice v Česku"
 template = "dossier-source.html"
 weight = 25
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-25"
+view_model = "generated/views/dossiers/tomio-okamura/sources/src-25.json"
 subjects = ["okamura"]
 dossier = "tomio-okamura"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-06-07"
 retrieved = "2026-07-30"
 claims = ["CLM-34"]
 +++
-
 **Okamura kope na všechny strany. Pokuta pro SPD ale svědčí o kvalitě justice v Česku**
 
 Autorský komentář Aleše Michala, který rozsudek hodnotí kladně jako doklad kvality právního státu a popisuje, že se Okamura po vyhlášení rozsudku pustil i do samotné soudkyně. Jde o názorový text, nikoli zpravodajství.

@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-12 — Sport.cz"
 description = "Vláda bleskově odvolala předsedu Národní sportovní agentury Šebka"
 template = "dossier-source.html"
 weight = 12
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-12"
+view_model = "generated/views/dossiers/boris-stastny/sources/src-12.json"
 subjects = ["stastny"]
 dossier = "boris-stastny"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2025-12-16"
 retrieved = "2026-07-30"
 claims = ["CLM-22", "CLM-23", "CLM-24", "CLM-25", "CLM-28"]
 +++
-
 **Vláda bleskově odvolala předsedu Národní sportovní agentury Šebka**
 
 Agenturní zpráva zdůrazňující rychlost kroku — vláda byla jmenována prezidentem 15. prosince, odvolání proběhlo následující den. Obsahuje Šebkovo vyjádření, že se o odvolání dozvěděl telefonicky, a jeho odmítnutí střetu zájmů.

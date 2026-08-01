@@ -19,6 +19,7 @@
   "routeAliases": [
     "/dossiers/andrej-babis/entities/blakey-finance/"
   ],
+  "order": 7,
   "content": [
     {
       "type": "markdown",

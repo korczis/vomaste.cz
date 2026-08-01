@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-03"
 description = "Prezident NKÚ Miloslav Kala označil návrh za „útok na nezávislou instituci\" a „další pokus o vyhladovění\" a uvedl, že úřad nebyl předem informován a dozvěděl se o návrhu z vládních dokumentů"
 template = "dossier-claim.html"
 weight = 3
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-03"
+view_model = "generated/views/dossiers/lubomir-metnar/claims/clm-03.json"
 dossier = "lubomir-metnar"
 record_type = "claim"
 lang = "cs"
@@ -14,5 +18,4 @@ status_label = "CITACE"
 summary = "Prezident NKÚ Miloslav Kala označil návrh za „útok na nezávislou instituci\" a „další pokus o vyhladovění\" a uvedl, že úřad nebyl předem informován a dozvěděl se o návrhu z vládních dokumentů"
 sources = ["SRC-01"]
 +++
-
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/lubomir-metnar/_index.md#registr-tvrzeni).

@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-21 — ČeskéNoviny.cz (ČTK)"
 description = "Pavel jmenoval novým náčelníkem generálního štábu Miroslava Hlaváče"
 template = "dossier-source.html"
 weight = 21
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-21"
+view_model = "generated/views/dossiers/jaromir-zuna/sources/src-21.json"
 subjects = ["zuna"]
 dossier = "jaromir-zuna"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-06-30"
 retrieved = "2026-07-30"
 claims = ["CLM-20", "CLM-21", "CLM-28", "CLM-29"]
 +++
-
 **Pavel jmenoval novým náčelníkem generálního štábu Miroslava Hlaváče**
 
 Jmenování Hlaváče 30. 6. s nástupem 1. 7. 2026, hodnocení prezidenta Pavla včetně poznámky o nezkreslených informacích pro nadřízené, profil Hlaváče, odchod Řehky k 31. 8. a jeho úvahy o kandidatuře do Senátu.

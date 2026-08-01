@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-25 — Novinky.cz"
 description = "Střet zájmů jsem vyřešil, sdělil nový ministr Červený"
 template = "dossier-source.html"
 weight = 25
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-25"
+view_model = "generated/views/dossiers/igor-cerveny/sources/src-25.json"
 subjects = ["cerveny"]
 dossier = "igor-cerveny"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-02-23"
 retrieved = "2026-07-30"
 claims = ["CLM-31"]
 +++
-
 **Střet zájmů jsem vyřešil, sdělil nový ministr Červený**
 
 Cituje Červeného před jednáním vlády: „Já žádný nemám, už je to vyřešené. Nejspíše tento týden se to propíše v rejstříku, už je to pryč.“ Rekapituluje jednatelství v podcastové firmě, lhůtu 30 dnů a roli Lubora Nováka.

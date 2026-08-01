@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-12 — ČT24 (Česká televize)"
 description = "Pozastavení dotací kvůli Babišově možnému střetu zájmů se týká i zemědělství"
 template = "dossier-source.html"
 weight = 12
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-12"
+view_model = "generated/views/dossiers/martin-sebestyan/sources/src-12.json"
 subjects = ["sebestyan"]
 dossier = "martin-sebestyan"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-05-28"
 retrieved = "2026-07-30"
 claims = ["CLM-25", "CLM-26"]
 +++
-
 **Pozastavení dotací kvůli Babišově možnému střetu zájmů se týká i zemědělství**
 
 Nejmenovaný vysoký představitel EU potvrdil, že dopis Evropské komise z 20. května 2026 se vztahuje i na zemědělské fondy. Podle zdrojů ČTK nejsou informace od českých úřadů pro Komisi dostatečné k uzavření posouzení. Ministr Šebestyán trvá na tom, že jeho resort dotace vyplácí dál, a argumentuje, že pozastavit platby je oprávněna pouze Evropská komise oficiálním právním aktem, tedy prováděcím rozhodnutím. SZIF avizoval, že proaktivně oslovil DG Agri. Obsahuje reakci Agrofertu a Víta Rakušana.

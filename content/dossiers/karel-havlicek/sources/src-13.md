@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-13 — Pražský deník"
 description = "Kauza dotace na výrobu toustového chleba od Penamu má našlápnuto k soudu"
 template = "dossier-source.html"
 weight = 13
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-13"
+view_model = "generated/views/dossiers/karel-havlicek/sources/src-13.json"
 subjects = ["havlicek"]
 dossier = "karel-havlicek"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2024-10-25"
 retrieved = "2026-07-30"
 claims = ["CLM-22", "CLM-23"]
 +++
-
 **Kauza dotace na výrobu toustového chleba od Penamu má našlápnuto k soudu**
 
 Národní centrála proti organizovanému zločinu (NCOZ) obvinila dvě fyzické osoby a jednu firmu v souvislosti s dotací na linku na výrobu toastového chleba z roku 2018. Jde o Pekárnu Zelená louka z Herinku, součást skupiny Penam (Agrofert). Zjištěná škoda činí 100 milionů korun; dotace byla poskytnuta v plné výši z rozpočtu ČR, přestože ji Evropská komise označila za nezpůsobilou k proplacení. MPO bylo poskytovatelem dotace a v březnu 2022 oznámilo odnětí, proces zbrzdila námitka podjatosti. Stíhání probíhá za dotační podvod a poškození finančních zájmů EU, fyzickým osobám hrozí pět až deset let. Agrofert pochybení odmítá.

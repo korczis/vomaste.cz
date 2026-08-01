@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-03 — ČeskéNoviny.cz (ČTK)"
 description = "Na úřadu vlády se našlo nahrávací zařízení, Šťastný uvedl, že patřilo jemu"
 template = "dossier-source.html"
 weight = 3
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-03"
+view_model = "generated/views/dossiers/boris-stastny/sources/src-03.json"
 subjects = ["stastny"]
 dossier = "boris-stastny"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-07-10"
 retrieved = "2026-07-30"
 claims = ["CLM-02", "CLM-06", "CLM-07", "CLM-09", "CLM-10", "CLM-12", "CLM-16"]
 +++
-
 **Na úřadu vlády se našlo nahrávací zařízení, Šťastný uvedl, že patřilo jemu**
 
 Agenturní zpráva ČTK o nálezu chytrého nahrávacího zařízení v jednacím sále vlády ve Strakově akademii 22. ledna 2026. Popisuje zařízení firmy Plaud, přiznání ministra Šťastného, postup Úřadu vlády (uschování, prověření IT a bezpečnostním oddělením) a fakt, že bezpečnostní složky nález oficiálně neprověřovaly.

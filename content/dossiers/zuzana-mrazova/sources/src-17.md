@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-17 — Novinky.cz"
 description = "Černé stavby na pozemku ministryně Mrázové bude řešit místní stavební úřad, ujišťuje starosta"
 template = "dossier-source.html"
 weight = 17
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-17"
+view_model = "generated/views/dossiers/zuzana-mrazova/sources/src-17.json"
 subjects = ["mrazova"]
 dossier = "zuzana-mrazova"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-05-02"
 retrieved = "2026-07-30"
 claims = ["CLM-41"]
 +++
-
 **Černé stavby na pozemku ministryně Mrázové bude řešit místní stavební úřad, ujišťuje starosta**
 
 Starosta Bíliny Karel Matuška (ANO) na sociální síti uvedl, že věc bude řešit stavební úřad podle zákonného postupu a město do toho nemůže a nebude zasahovat. Rekapituluje stavby (pergola, objekt s komínem, velké zastřešení karavanu) na ploše vedené jako lesní. Připomíná, že Mrázová je bývalou starostkou Bíliny.

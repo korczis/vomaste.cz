@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-25 — Česká justice"
 description = "Ústavní válka graduje: Soudci vrací úder politikům"
 template = "dossier-source.html"
 weight = 25
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-25"
+view_model = "generated/views/dossiers/jeronym-tejc/sources/src-25.json"
 subjects = ["tejc"]
 dossier = "jeronym-tejc"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-07-23"
 retrieved = "2026-07-30"
 claims = ["CLM-51"]
 +++
-
 **Ústavní válka graduje: Soudci vrací úder politikům**
 
 Reakce Soudcovské unie na výroky politiků o Ústavním soudu, včetně Tejcova návrhu na vyloučení soudce Šámala. Unie deklaruje, že principy a lidé, na nichž česká justice stojí, dávají záruku její nezávislosti a nestrannosti.

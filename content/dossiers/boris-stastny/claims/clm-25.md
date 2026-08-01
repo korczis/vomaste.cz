@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-25"
 description = "Premiér Andrej Babiš odvolání odůvodnil slovy: „Pan předseda si z toho udělal cestovní kancelář a my si myslíme, že peníze mají dostávat hla"
 template = "dossier-claim.html"
 weight = 25
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-25"
+view_model = "generated/views/dossiers/boris-stastny/claims/clm-25.json"
 dossier = "boris-stastny"
 record_type = "claim"
 lang = "cs"
@@ -15,5 +19,4 @@ summary = "Premiér Andrej Babiš odvolání odůvodnil slovy: „Pan předseda 
 sources = ["SRC-11", "SRC-12", "SRC-13"]
 subjects = ["stastny"]
 +++
-
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/boris-stastny/_index.md#registr-tvrzeni).

@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "GAP-02 — Zda byla plnění řádně vykázána"
 description = "Není doloženo, zda a jak byla jednotlivá plnění vykázána ve výroční finanční zprávě strany, ani že by se jimi zabýval dozorový úřad."
 template = "dossier-gap.html"
 weight = 2
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/richard-chlad/gaps/GAP-02"
+view_model = "generated/views/dossiers/richard-chlad/gaps/gap-02.json"
 subjects = ["chlad"]
 dossier = "richard-chlad"
 record_type = "gap"
@@ -14,7 +18,6 @@ priority = "vysoká"
 checked = "2026-07-30"
 claims = ["CLM-01", "CLM-02"]
 +++
-
 **Není doloženo**, zda a jak byla jednotlivá plnění vykázána ve výroční
 finanční zprávě strany, ani že by je přezkoumával dozorový úřad, ani že
 by kdokoli podal podnět.

@@ -1,9 +1,13 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Filip Turek — hrozil žalobou (1/2026), nakonec nepodal (7/2026) — Petr Pavel (prezident)"
 template = "dossier-relation.html"
 weight = 20
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/macinka-turek/relations/edge-turek-pavel"
+view_model = "generated/views/dossiers/macinka-turek/relations/edge-turek-pavel.json"
 dossier = "macinka-turek"
 record_type = "relation"
 rel_id = "edge-turek-pavel"
@@ -16,5 +20,4 @@ claims = ["CLM-39", "CLM-44"]
 sources = ["SRC-44", "SRC-51", "SRC-52"]
 subjects = ["turek"]
 +++
-
 Tato stránka je kanonický záznam vztahu edge-turek-pavel — typ vztahu, podporující tvrzení a zdroje v tabulce výše jsou úplné. Status FAKT znamená, že vztah je doložen nezávisle potvrzenými zdroji, ne jen tvrzením jedné strany. Hlavní stránka dossieru vykresluje interaktivní graf ze stejných dat.

@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-04 — ČT24 (Česká televize)"
 description = "Klempíř zrušil výběrové řízení na ředitele Národní galerie"
 template = "dossier-source.html"
 weight = 4
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-04"
+view_model = "generated/views/dossiers/oto-klempir/sources/src-04.json"
 subjects = ["klempir"]
 dossier = "oto-klempir"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-07-02"
 retrieved = "2026-07-30"
 claims = ["CLM-22", "CLM-23", "CLM-24", "CLM-25", "CLM-26"]
 +++
-
 **Klempíř zrušil výběrové řízení na ředitele Národní galerie**
 
 Ministerstvo kultury zrušilo výběrové řízení na generálního ředitele NGP. Uvádí zdůvodnění ministra, jména tří postupujících uchazečů, pověřenou ředitelku Olgu Kotkovou a kritiku Martina Baxy a Tomáše Pospiszyla.

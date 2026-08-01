@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-10 — Blesk.cz"
 description = "Plakáty s „chirurgy z dovozu“: SPD je vinna! Podněcovala k nenávisti, rozhodl soud"
 template = "dossier-source.html"
 weight = 10
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-10"
+view_model = "generated/views/dossiers/tomio-okamura/sources/src-10.json"
 subjects = ["okamura"]
 dossier = "tomio-okamura"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-06-03"
 retrieved = "2026-07-30"
 claims = ["CLM-09", "CLM-12", "CLM-14"]
 +++
-
 **Plakáty s „chirurgy z dovozu“: SPD je vinna! Podněcovala k nenávisti, rozhodl soud**
 
 Zpravodajství o vyhlášení rozsudku s odůvodněním soudkyně a s informací, že státní zástupce požadoval trest o půl milionu korun vyšší a v závěrečné řeči použil paralelu s nacistickým Německem.

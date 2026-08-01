@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-01 — Česká justice"
 description = "Vrchní soud v Praze 23. 6. 2025 podruhé zrušil zprošťující rozsudek v kauze Čapí hnízdo a vrátil věc městskému soudu se závazným právním názorem."
 template = "dossier-source.html"
 weight = 1
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-01"
+view_model = "generated/views/dossiers/andrej-babis/sources/src-01.json"
 subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
@@ -13,11 +17,10 @@ src_id = "SRC-01"
 outlet = "Česká justice"
 src_type = "odborné právní zpravodajství"
 url = "https://www.ceska-justice.cz/2025/06/babis-je-vinen-trva-na-svem-zalobce-obhajce-varuje-pred-porusenim-ustavy/"
-retrieved = "2026-07-30"
 published = "2025-06-23"
+retrieved = "2026-07-30"
 claims = ["CLM-01", "CLM-02", "CLM-03"]
 +++
-
 Česká justice dne 23. 6. 2025 informovala, že Vrchní soud v Praze zrušil
 zprošťující rozsudek Městského soudu v Praze z února 2024 nad Andrejem
 Babišem a Janou Nagyovou — podle článku **již podruhé**, kdy odvolací

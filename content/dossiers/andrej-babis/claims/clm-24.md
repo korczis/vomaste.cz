@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-24"
 description = "Jana Nagyová se podle citovaného zpravodajství vyhlášení rozsudku neúčastnila a v závěrečné řeči vinu nadále odmítala"
 template = "dossier-claim.html"
 weight = 24
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-24"
+view_model = "generated/views/dossiers/andrej-babis/claims/clm-24.json"
 dossier = "andrej-babis"
 record_type = "claim"
 lang = "cs"
@@ -14,5 +18,4 @@ status_label = "1 ZDROJ"
 summary = "Jana Nagyová se podle citovaného zpravodajství vyhlášení rozsudku neúčastnila a v závěrečné řeči vinu nadále odmítala"
 sources = ["SRC-08"]
 +++
-
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni).

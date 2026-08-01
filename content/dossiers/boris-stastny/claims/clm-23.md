@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-23"
 description = "Odvolání proběhlo den poté, co byla vláda jmenována prezidentem republiky (15. prosince 2025)."
 template = "dossier-claim.html"
 weight = 23
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-23"
+view_model = "generated/views/dossiers/boris-stastny/claims/clm-23.json"
 dossier = "boris-stastny"
 record_type = "claim"
 lang = "cs"
@@ -15,5 +19,4 @@ summary = "Odvolání proběhlo den poté, co byla vláda jmenována prezidentem
 sources = ["SRC-12"]
 subjects = ["stastny"]
 +++
-
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/boris-stastny/_index.md#registr-tvrzeni).

@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-02 — CNN Prima News"
 description = "Nahrávací zařízení nalezené v zasedačce Úřadu vlády: Šťastný se k němu přihlásil, IT a bezpečnostní odbor riziko nenašly, formální vyšetřování neproběhlo."
 template = "dossier-source.html"
 weight = 2
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-02"
+view_model = "generated/views/dossiers/boris-stastny/sources/src-02.json"
 subjects = ["stastny"]
 dossier = "boris-stastny"
 record_type = "source"
@@ -13,11 +17,10 @@ src_id = "SRC-02"
 outlet = "CNN Prima News"
 src_type = "celostátní zpravodajství"
 url = "https://cnn.iprima.cz/stastny-pod-palbou-kritiky-v-zasedacce-uradu-vlady-zrejme-zapomnel-nahravaci-zarizeni-516803"
-retrieved = "2026-07-30"
 published = "2026-07-10"
+retrieved = "2026-07-30"
 claims = ["CLM-02", "CLM-03", "CLM-04", "CLM-05"]
 +++
-
 CNN Prima NEWS dne 10. 7. 2026 informovala, že 22. ledna 2026 bylo v
 zasedací místnosti Úřadu vlády (Strakova akademie) při běžném úklidu
 nalezeno nahrávací zařízení — AI rekordér Plaud čínské výroby. Několik

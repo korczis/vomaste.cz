@@ -1,21 +1,29 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Robert Plaga"
 description = "Neutrální, zdroji doložený přehled o osobě Robert Plaga — ministr školství, mládeže a tělovýchovy. Autorizovaný rozsah dle AUTH-2026-07-30-S; registry se teprve plní."
 template = "entity-dossier.html"
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/robert-plaga"
+view_model = "generated/views/dossiers/robert-plaga/overview.json"
 dossier = "robert-plaga"
 dossier_title = "Robert Plaga"
+record_type = "dossier"
 dossier_type = "entity"
 canonical_dossier = "robert-plaga"
 subject = "plaga"
 lang = "cs"
 seo_type = "ProfilePage"
-subject_entities = ["plaga"]
-subjects = ["Robert Plaga"]
 updated = "2026-07-30"
 reviewed_at = "2026-07-30"
+subject_entities = ["plaga"]
+subjects = ["Robert Plaga"]
 
+[extra.authorization]
+authorized = true
+record_ids = ["AUTH-2026-07-30-S"]
 
 [[extra.timeline]]
 date = "2026-03"
@@ -52,9 +60,6 @@ anchor = "kauza-testovani"
 dot = "dot-fact"
 subjects = ["plaga"]
 
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-S"]
 [[extra.cases]]
 anchor = "kauza-testovani"
 period = "2026"
@@ -84,9 +89,7 @@ label = "Sledované téma"
 summary = "Zkrácení školního roku 2025/2026 — viz tvrzení CLM-16, CLM-17, CLM-18, CLM-19."
 claims = ["CLM-48", "CLM-49", "CLM-50", "CLM-51", "CLM-52", "CLM-53", "CLM-54"]
 subjects = ["plaga"]
-
 +++
-
 Robert Plaga zastává funkci ministra školství, mládeže a tělovýchovy ve třetí vládě Andreje Babiše (viz
 `data/government.toml`, ověřeno proti oficiálnímu seznamu členů vlády).
 Tento dossier je autorizován záznamem `AUTH-2026-07-30-S` v `AGENTS.md`.

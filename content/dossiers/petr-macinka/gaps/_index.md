@@ -1,18 +1,20 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Mezery — Petr Macinka"
 description = "Otevřené otázky z kanonického registru, které se týkají Petra Macinky."
 template = "entity-dossier-registry.html"
 
 [extra]
+generated = true
+view_model = "generated/views/dossiers/petr-macinka/gaps-index.json"
 dossier = "petr-macinka"
+lang = "cs"
+seo_type = "CollectionPage"
 dossier_title = "Petr Macinka"
 canonical_dossier = "macinka-turek"
 subject = "macinka"
 registry = "gaps"
-lang = "cs"
-seo_type = "CollectionPage"
 +++
-
 Filtrovaný pohled na [registr mezer](@/dossiers/macinka-turek/gaps/_index.md) — jen otevřené otázky týkající se Petra Macinky.
 
 ## Proč se mezery publikují

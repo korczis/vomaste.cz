@@ -1,4 +1,5 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-37 — Neovlivní.cz"
 description = "Turek se setkal s íránským velvyslancem; totéž setkání měli i Konečná a Klaus, všichni ho bagatelizovali."
 template = "dossier-source.html"
@@ -6,6 +7,9 @@ weight = 37
 aliases = ["/dossier/zdroje/src-37/"]
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-37"
+view_model = "generated/views/dossiers/macinka-turek/sources/src-37.json"
 subjects = ["turek"]
 dossier = "macinka-turek"
 record_type = "source"
@@ -14,11 +18,10 @@ src_id = "SRC-37"
 outlet = "Neovlivní.cz"
 src_type = "investigativní žurnalistika"
 url = "https://neovlivni.cz/pripomente-si-jak-filip-turek-chodil-na-iranskou-ambasadu/"
-retrieved = "2026-07-22"
 published = "2026-03-01"
+retrieved = "2026-07-22"
 claims = ["CLM-33"]
 +++
-
 Investigativní text Sabiny Slonkové (Neovlivní.cz, 1. 3. 2026)
 zmapoval setkání íránského velvyslance Seyeda Majida Ghafeleha Bashiho s
 Filipem Turkem — a se dvěma dalšími českými politiky, Kateřinou Konečnou

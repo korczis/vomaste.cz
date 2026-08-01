@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-20 — e15.cz"
 description = "Šéf Českých drah Bednárik rezignoval, národního dopravce dočasně povede Michal Kraus"
 template = "dossier-source.html"
 weight = 20
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-20"
+view_model = "generated/views/dossiers/ivan-bednarik/sources/src-20.json"
 subjects = ["bednarik"]
 dossier = "ivan-bednarik"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2022-02-15"
 retrieved = "2026-07-30"
 claims = ["CLM-41", "CLM-43", "CLM-44", "CLM-45", "CLM-46"]
 +++
-
 **Šéf Českých drah Bednárik rezignoval, národního dopravce dočasně povede Michal Kraus**
 
 Bednárik jako důvod uvádí vládní úsporná opatření, která se dotknou i Českých drah a nebude jednoduché se s nimi vypořádat. Zmiňuje se snižování slev pro studenty a seniory a pozastavený spor o nájem pozemků mezi Správou železnic a ČD s výpadkem 3,5 mld. Kč. Uvádí též hospodářský kontext: ztráta 4,1 mld. Kč v roce 2020 a 217 mil. Kč za první pololetí 2021.

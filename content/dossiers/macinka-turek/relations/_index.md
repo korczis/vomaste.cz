@@ -1,15 +1,17 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Registr vztahů"
 description = "Kanonický, plně routovatelný registr všech vztahů z grafu dossieru o Petru Macinkovi a Filipu Turkovi — každý řádek s vlastní stránkou a odkazy na entity, tvrzení a zdroje."
 template = "dossier-relations-index.html"
 sort_by = "weight"
 
 [extra]
+generated = true
+view_model = "generated/views/dossiers/macinka-turek/relations-index.json"
 dossier = "macinka-turek"
 lang = "cs"
 seo_type = "CollectionPage"
 +++
-
 Textová, no-JS rovnocenná alternativa k [interaktivnímu grafu vztahů](../#graf-vztahu)
 — stejná data, ne zjednodušená legenda. Každý vztah (zdrojová entita →
 typ vztahu → cílová entita) je samostatný záznam s vlastním stavem,

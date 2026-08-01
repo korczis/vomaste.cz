@@ -19,6 +19,7 @@
   "routeAliases": [
     "/dossiers/lubomir-metnar/entities/nku/"
   ],
+  "order": 47,
   "content": [
     {
       "type": "markdown",

@@ -1,20 +1,29 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Tünde Bartha"
 description = "Neutrální, zdroji doložený přehled o Tünde Barthě — vedoucí Úřadu vlády ČR. Autorizovaný rozsah: obecní byt v Praze 3 a doložená kariérní dráha mezi Agrofertem a státním aparátem."
 template = "entity-dossier.html"
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/tunde-bartha"
+view_model = "generated/views/dossiers/tunde-bartha/overview.json"
 dossier = "tunde-bartha"
 dossier_title = "Tünde Bartha"
+record_type = "dossier"
 dossier_type = "entity"
 canonical_dossier = "tunde-bartha"
 subject = "bartha"
 lang = "cs"
 seo_type = "ProfilePage"
-subject_entities = ["bartha"]
-subjects = ["Tünde Bartha"]
 updated = "2026-07-30"
 reviewed_at = "2026-07-30"
+subject_entities = ["bartha"]
+subjects = ["Tünde Bartha"]
+
+[extra.authorization]
+authorized = true
+record_ids = ["AUTH-2026-07-30-U"]
 
 [[extra.timeline]]
 date = "2004"
@@ -43,6 +52,7 @@ title = "Rada MČ Praha 3 schvaluje výpověď z nájmu obecního bytu — přes
 anchor = "kauza-obecni-byt"
 dot = "dot-fact"
 subjects = ["bartha"]
+
 [[extra.cases]]
 anchor = "kauza-obecni-byt"
 period = "2004–2026"
@@ -62,12 +72,7 @@ label = "Doložená posloupnost funkcí"
 summary = "Doložená posloupnost: pověření řízením Úřadu vlády 2018–2021, poté pracovní zařazení v holdingu Agrofert potvrzené mluvčím společnosti, poté opět vedení Úřadu vlády. Posloupnost funkcí sama o sobě není důkazem o ovlivnění jakéhokoli rozhodnutí."
 claims = ["CLM-06", "CLM-07", "CLM-08"]
 subjects = ["bartha"]
-
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-U"]
 +++
-
 ## Kdo je Tünde Bartha {#kdo}
 
 Tünde Bartha je podle citovaného zpravodajství z června 2026 vedoucí

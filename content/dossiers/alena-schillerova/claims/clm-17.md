@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-17"
 description = "Prezident Petr Pavel novelu rozpočtových zákonů vetoval 22. července 2026 a vrátil ji Poslanecké sněmovně; rozhodnutí oznámil videem na soci"
 template = "dossier-claim.html"
 weight = 17
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-17"
+view_model = "generated/views/dossiers/alena-schillerova/claims/clm-17.json"
 dossier = "alena-schillerova"
 record_type = "claim"
 lang = "cs"
@@ -15,5 +19,4 @@ summary = "Prezident Petr Pavel novelu rozpočtových zákonů vetoval 22. červ
 sources = ["SRC-07", "SRC-08"]
 subjects = ["schillerova"]
 +++
-
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/alena-schillerova/_index.md#registr-tvrzeni).

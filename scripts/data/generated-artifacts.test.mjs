@@ -12,7 +12,8 @@ import { loadCanonicalTree } from "./load.mjs";
 import { compileDataset } from "./compile.mjs";
 import { validateShapeTree } from "./validate-shape.mjs";
 import { buildViewModels, writeViewModels } from "./build-view-models.mjs";
-import { buildStubs, writeStubs, STAGING_REL } from "./generate-zola-content.mjs";
+import { buildStubs, writeStubs, STAGING_REL, SYNC_EXCLUDED } from "./generate-zola-content.mjs";
+import { syncContent, isSyncedPath } from "./sync-content.mjs";
 import { checkGenerated, routeOfStubPath } from "./check-generated.mjs";
 import { migrate } from "../migrations/migrate-content-to-json.mjs";
 
@@ -322,6 +323,56 @@ test("stub generátor: stub nese record_id, view_model a přenesené aliasy", ()
   assert.match(stubs.get("entities/example-person.md"), /aliases = \["\/dossiers\/example-subject\/entities\/example-person\/"\]/);
   // updates nemají routu → žádný stub
   assert.equal([...stubs.keys()].some((p) => p.includes("/updates/")), false);
+});
+
+// --- sync-content (fáze F swap) ------------------------------------------
+
+test("isSyncedPath: pokrývá záznamy, registry indexy, dossier _index a entity — ne kořeny ani aux indexy", () => {
+  assert.equal(isSyncedPath(`dossiers/${SLUG}/_index.md`), true);
+  assert.equal(isSyncedPath(`dossiers/${SLUG}/claims/_index.md`), true);
+  assert.equal(isSyncedPath(`dossiers/${SLUG}/claims/clm-2.md`), true);
+  assert.equal(isSyncedPath("entities/example-person.md"), true);
+  for (const excluded of SYNC_EXCLUDED) assert.equal(isSyncedPath(excluded), false);
+  assert.equal(isSyncedPath(`dossiers/${SLUG}/evidence/_index.md`), false);
+  assert.equal(isSyncedPath(`dossiers/${SLUG}/entities/_index.md`), false);
+  assert.equal(isSyncedPath("entities/person/_index.md"), false, "entity-type sekce nejsou synchronizované");
+});
+
+test("sync-content: kopíruje staging do content, maže sirotky, nechává výjimky; idempotentní", () => {
+  const root = freshRoot();
+  generateAll(root);
+  // ručně psané soubory, kterých se sync nesmí dotknout
+  put(root, "content/dossiers/_index.md", "+++\ntitle = \"Dossiery\"\n+++\nRuční tělo.\n");
+  put(root, `content/dossiers/${SLUG}/evidence/_index.md`, "+++\ntitle = \"Registr evidence\"\n+++\n");
+  // sirotčí záznam bez kanonického protějšku — musí zaniknout
+  put(root, `content/dossiers/${SLUG}/claims/clm-99.md`, "+++\ntitle = \"CLM-99\"\n+++\n");
+
+  const first = syncContent({ root });
+  assert.ok(first.copied.length > 0);
+  assert.deepEqual(first.deleted, [`dossiers/${SLUG}/claims/clm-99.md`]);
+  assert.equal(readFileSync(join(root, "content/dossiers/_index.md"), "utf8").includes("Ruční tělo."), true);
+  assert.equal(
+    readFileSync(join(root, `content/dossiers/${SLUG}/claims/clm-2.md`), "utf8"),
+    readFileSync(join(root, STAGING_REL, `dossiers/${SLUG}/claims/clm-2.md`), "utf8"),
+  );
+  // idempotence: druhý běh nic nemění
+  const second = syncContent({ root });
+  assert.deepEqual({ copied: second.copied, deleted: second.deleted }, { copied: [], deleted: [] });
+});
+
+test("check-generated --content: drift content/ vs staging je chyba brány", async () => {
+  const root = freshRoot();
+  generateAll(root);
+  syncContent({ root });
+  const clean = await checkGenerated({ root, content: true });
+  assert.deepEqual(clean.errors, [], clean.errors.join("\n"));
+  assert.equal(clean.summary.contentParity.mismatched, 0);
+
+  // ruční edit generovaného adaptéru = drift
+  const file = join(root, `content/dossiers/${SLUG}/claims/clm-2.md`);
+  writeFileSync(file, readFileSync(file, "utf8").replace("CLM-2", "CLM-2-EDITED"));
+  const drifted = await checkGenerated({ root, content: true });
+  assert.ok(drifted.errors.some((e) => e.includes("content parity") && e.includes("clm-2.md")), drifted.errors.join("\n"));
 });
 
 // --- check-generated gate ------------------------------------------------

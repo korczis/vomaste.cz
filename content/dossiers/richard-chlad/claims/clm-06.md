@@ -1,11 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-06"
 description = "Petr Macinka podle citovaného zpravodajství uvedl: „Richard Chlad je kamarád Filipa Turka, ale rozhodně není ideologem Motoristů. Tím jsem já.\""
 template = "dossier-claim.html"
 weight = 6
 
 [extra]
-subjects = ["chlad"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-06"
+view_model = "generated/views/dossiers/richard-chlad/claims/clm-06.json"
 dossier = "richard-chlad"
 record_type = "claim"
 lang = "cs"
@@ -14,6 +17,6 @@ status = "status-quote"
 status_label = "CITACE"
 summary = "Petr Macinka podle citovaného zpravodajství uvedl: „Richard Chlad je kamarád Filipa Turka, ale rozhodně není ideologem Motoristů. Tím jsem já.\""
 sources = ["SRC-03"]
+subjects = ["chlad"]
 +++
-
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/richard-chlad/_index.md#registr-tvrzeni).

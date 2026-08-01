@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "GAP-05 — Chybí přesné počty hlasů z jednání Senátu 17. června 2026."
 description = "Zpravodajský článek ČTK počty hlasů neuvádí a stenozáznam Senátu nebyl v rámci autorizovaného rozsahu dohledán."
 template = "dossier-gap.html"
 weight = 5
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/alena-schillerova/gaps/GAP-05"
+view_model = "generated/views/dossiers/alena-schillerova/gaps/gap-05.json"
 subjects = ["schillerova"]
 dossier = "alena-schillerova"
 record_type = "gap"
@@ -14,7 +18,6 @@ priority = "střední"
 checked = "2026-07-30"
 claims = []
 +++
-
 Chybí přesné počty hlasů z jednání Senátu 17. června 2026.
 
 **Proč je to mezera**: Zpravodajský článek ČTK počty hlasů neuvádí a stenozáznam Senátu nebyl v rámci autorizovaného rozsahu dohledán. Tato mezera **není** zjištěním žádným

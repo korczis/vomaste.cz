@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "GAP-10 — Není doloženo, zda přestupkové řízení pokrylo i chybějící DAR (polovina pozemku od tehdejš"
 description = "Podnět ministerstva spravedlnosti podle ČT24 zmiňoval půjčku i dar, ale zpravodajství o uložené pokutě z 25. 7. 2026 popisuje výhradně nezan"
 template = "dossier-gap.html"
 weight = 10
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/zuzana-mrazova/gaps/GAP-10"
+view_model = "generated/views/dossiers/zuzana-mrazova/gaps/gap-10.json"
 subjects = ["mrazova"]
 dossier = "zuzana-mrazova"
 record_type = "gap"
@@ -14,7 +18,6 @@ priority = "střední"
 checked = "2026-07-30"
 claims = []
 +++
-
 Není doloženo, zda přestupkové řízení pokrylo i chybějící DAR (polovina pozemku od tehdejšího manžela v roce 2021), nebo jen nezanesenou půjčku 500 tisíc korun.
 
 **Proč je to mezera**: Podnět ministerstva spravedlnosti podle ČT24 zmiňoval půjčku i dar, ale zpravodajství o uložené pokutě z 25. 7. 2026 popisuje výhradně nezanesenou půjčku. Tato mezera **není** zjištěním žádným

@@ -1,22 +1,29 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Aleš Juchelka"
 description = "Neutrální, zdroji doložený přehled o Aleši Juchelkovi — ministru práce a sociálních věcí. Autorizovaný rozsah: reportovaná kauza střetu zájmů bývalé poradkyně ministerstva; registry se teprve plní."
 template = "entity-dossier.html"
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/ales-juchelka"
+view_model = "generated/views/dossiers/ales-juchelka/overview.json"
 dossier = "ales-juchelka"
 dossier_title = "Aleš Juchelka"
+record_type = "dossier"
 dossier_type = "entity"
 canonical_dossier = "ales-juchelka"
 subject = "juchelka"
 lang = "cs"
 seo_type = "ProfilePage"
-subject_entities = ["juchelka"]
-subjects = ["Aleš Juchelka"]
 updated = "2026-07-30"
 reviewed_at = "2026-07-30"
+subject_entities = ["juchelka"]
+subjects = ["Aleš Juchelka"]
 
-
+[extra.authorization]
+authorized = true
+record_ids = ["AUTH-2026-07-30-B"]
 
 [[extra.timeline]]
 date = "2026-03"
@@ -38,10 +45,6 @@ title = "MPSV stahuje projekty za 63,8 + 17,6 mil. Kč z vykazování vůči EU 
 anchor = "kauza-poradkyne-stret"
 dot = "dot-fact"
 subjects = ["juchelka"]
-
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-B"]
 
 [[extra.timeline]]
 date = "2026-04"
@@ -99,9 +102,7 @@ label = "Sledované téma"
 summary = "Veřejná vyjádření a obhajoba ministra — viz tvrzení CLM-17, CLM-18, CLM-19, CLM-20, CLM-21, CLM-22."
 claims = ["CLM-25", "CLM-26", "CLM-27", "CLM-28", "CLM-29", "CLM-30"]
 subjects = ["juchelka"]
-
 +++
-
 Aleš Juchelka je ministrem práce a sociálních věcí ve třetí vládě
 Andreje Babiše (viz `data/government.toml`, ověřeno proti oficiálnímu
 seznamu členů vlády). Tento dossier je autorizován záznamem

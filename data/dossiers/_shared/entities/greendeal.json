@@ -19,5 +19,6 @@
   ],
   "routeAliases": [
     "/dossiers/macinka-turek/entities/greendeal/"
-  ]
+  ],
+  "order": 20
 }

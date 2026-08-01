@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-28"
 description = "Ministerstvo financí v téže reakci zpochybnilo oprávnění NRR hodnotit makroekonomické prognózy slovy, že mu není známo, na základě čeho se N"
 template = "dossier-claim.html"
 weight = 28
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-28"
+view_model = "generated/views/dossiers/alena-schillerova/claims/clm-28.json"
 dossier = "alena-schillerova"
 record_type = "claim"
 lang = "cs"
@@ -15,5 +19,4 @@ summary = "Ministerstvo financí v téže reakci zpochybnilo oprávnění NRR ho
 sources = ["SRC-15"]
 subjects = ["schillerova"]
 +++
-
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/alena-schillerova/_index.md#registr-tvrzeni).

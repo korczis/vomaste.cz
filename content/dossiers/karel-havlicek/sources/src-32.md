@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-32 — CNN Prima News: Policie navrhla obžalovat pekárnu patřící pod Agrofert, měla zneužívat stamilionových dotací (8. 6. 2026)"
 description = "CNN Prima News nezávisle na Pražský deník (SRC-13) potvrzuje říjnové 2024 obvinění NCOZ vůči Pekárně Zelená louka a dvěma jejím představitelům."
 template = "dossier-source.html"
 weight = 32
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-32"
+view_model = "generated/views/dossiers/karel-havlicek/sources/src-32.json"
 subjects = ["havlicek"]
 dossier = "karel-havlicek"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-06-08"
 retrieved = "2026-07-31"
 claims = ["CLM-22"]
 +++
-
 CNN Prima News dne 8. 6. 2026: „Národní centrála proti organizovanému
 zločinu (NCOZ) otevřela vyšetřování případu v říjnu 2024. Tehdy
 policisté obvinili Pekárnu Zelená louka, dceřinou společnost Penamu, a

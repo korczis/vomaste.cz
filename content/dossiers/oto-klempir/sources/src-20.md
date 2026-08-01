@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-20 — Médiář"
 description = "Poplatky letos skončí. Pak ČT a Český rozhlas dostanou miliardy ze státního rozpočtu"
 template = "dossier-source.html"
 weight = 20
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-20"
+view_model = "generated/views/dossiers/oto-klempir/sources/src-20.json"
 subjects = ["klempir"]
 dossier = "oto-klempir"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-06-15"
 retrieved = "2026-07-30"
 claims = ["CLM-07", "CLM-08", "CLM-10", "CLM-16"]
 +++
-
 **Poplatky letos skončí. Pak ČT a Český rozhlas dostanou miliardy ze státního rozpočtu**
 
 Vláda 15. 6. 2026 schválila zrušení koncesionářských poplatků a přechod na financování ze státního rozpočtu od 2027; částky, valorizační vzorec a reakce obou generálních ředitelů.

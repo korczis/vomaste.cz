@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-38"
 description = "Předseda STAN Vít Rakušan na ministrovo vysvětlení reagoval slovy: „Lžím a podvodům se teď bude říkat ‚stylizace‘.“"
 template = "dossier-claim.html"
 weight = 38
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-38"
+view_model = "generated/views/dossiers/boris-stastny/claims/clm-38.json"
 dossier = "boris-stastny"
 record_type = "claim"
 lang = "cs"
@@ -15,5 +19,4 @@ summary = "Předseda STAN Vít Rakušan na ministrovo vysvětlení reagoval slov
 sources = ["SRC-18"]
 subjects = ["stastny"]
 +++
-
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/boris-stastny/_index.md#registr-tvrzeni).

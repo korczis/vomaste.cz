@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "GAP-05 — Klempířovy vlastní citáty k zrušení výběrového řízení na ředitele NGP nad rámec oficiálníh"
 description = "Podrobnější zpracování mělo iROZHLAS (článek z 18. 7. 2026), server ale vrací HTTP 403; rozhovor Deníku N z 2. 7. 2026 je za paywallem."
 template = "dossier-gap.html"
 weight = 5
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/oto-klempir/gaps/GAP-05"
+view_model = "generated/views/dossiers/oto-klempir/gaps/gap-05.json"
 subjects = ["klempir"]
 dossier = "oto-klempir"
 record_type = "gap"
@@ -14,7 +18,6 @@ priority = "střední"
 checked = "2026-07-30"
 claims = []
 +++
-
 Klempířovy vlastní citáty k zrušení výběrového řízení na ředitele NGP nad rámec oficiálního zdůvodnění a k reakci na dopis odborů
 
 **Proč je to mezera**: Podrobnější zpracování mělo iROZHLAS (článek z 18. 7. 2026), server ale vrací HTTP 403; rozhovor Deníku N z 2. 7. 2026 je za paywallem. Tato mezera **není** zjištěním žádným

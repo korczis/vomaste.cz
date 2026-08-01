@@ -1,4 +1,5 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-34 — Manipulátoři.cz"
 description = "Zapper-Club s.r.o. nabízela za pandemie „Imunitní balíček ANTI-COVID-19“."
 template = "dossier-source.html"
@@ -6,6 +7,9 @@ weight = 34
 aliases = ["/dossier/zdroje/src-34/"]
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-34"
+view_model = "generated/views/dossiers/macinka-turek/sources/src-34.json"
 subjects = ["turek"]
 dossier = "macinka-turek"
 record_type = "source"
@@ -14,11 +18,10 @@ src_id = "SRC-34"
 outlet = "Manipulátoři.cz"
 src_type = "faktčekingový / spotřebitelský web"
 url = "https://manipulatori.cz/navrat-zapperu-aneb-koronavirovou-pandemii-zneuzivaji-dalsi-prodejci-doplnku-stravy/"
-retrieved = "2026-07-22"
 published = "2020-04-03"
+retrieved = "2026-07-22"
 claims = ["CLM-31"]
 +++
-
 Manipulátoři.cz (projekt zaměřený na dezinformace a spotřebitelské
 podvody) 3. dubna 2020 zdokumentoval, že firma Zapper-Club s.r.o. pod
 vedením Filipa Turka a Terezy Turkové nabízela přes e-shop

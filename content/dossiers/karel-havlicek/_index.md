@@ -1,21 +1,29 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Karel Havlíček"
 description = "Neutrální, zdroji doložený přehled o osobě Karel Havlíček — 1. místopředseda vlády a ministr průmyslu a obchodu. Autorizovaný rozsah dle AUTH-2026-07-30-M; registry se teprve plní."
 template = "entity-dossier.html"
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/karel-havlicek"
+view_model = "generated/views/dossiers/karel-havlicek/overview.json"
 dossier = "karel-havlicek"
 dossier_title = "Karel Havlíček"
+record_type = "dossier"
 dossier_type = "entity"
 canonical_dossier = "karel-havlicek"
 subject = "havlicek"
 lang = "cs"
 seo_type = "ProfilePage"
-subject_entities = ["havlicek"]
-subjects = ["Karel Havlíček"]
 updated = "2026-07-30"
 reviewed_at = "2026-07-30"
+subject_entities = ["havlicek"]
+subjects = ["Karel Havlíček"]
 
+[extra.authorization]
+authorized = true
+record_ids = ["AUTH-2026-07-30-M"]
 
 [[extra.timeline]]
 date = "2019-12"
@@ -65,6 +73,7 @@ title = "Havlíček vyzývá automobilky odmítnout cíl EU 2035; FORUM 24 (Jand
 anchor = "kauza-elektromobilita"
 dot = "dot-fact"
 subjects = ["havlicek"]
+
 [[extra.timeline]]
 date = "2022-03"
 title = "MPO oznamuje odnětí stomilionové dotace Pekárně Zelená louka po auditu Evropské komise"
@@ -192,10 +201,6 @@ label = "Sledované téma"
 summary = "Pozice k EU cílům elektromobility — viz tvrzení CLM-15, CLM-16, CLM-17, CLM-18."
 claims = ["CLM-40", "CLM-41", "CLM-42", "CLM-43", "CLM-44", "CLM-45", "CLM-46"]
 subjects = ["havlicek"]
-
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-M"]
 +++
 Karel Havlíček zastává funkci 1. místopředsedy vlády a ministra průmyslu a obchodu ve třetí vládě Andreje Babiše (viz
 `data/government.toml`, ověřeno proti oficiálnímu seznamu členů vlády).

@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-02 — FORUM 24"
 description = "Dotační kauza bývalé poradkyně ministra: firma poradkyně inkasovala od žadatelů, čtyři projekty vyřazeny z financování EU, rozpočtový dopad 63,8 milionu."
 template = "dossier-source.html"
 weight = 2
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-02"
+view_model = "generated/views/dossiers/ales-juchelka/sources/src-02.json"
 subjects = ["juchelka"]
 dossier = "ales-juchelka"
 record_type = "source"
@@ -13,11 +17,10 @@ src_id = "SRC-02"
 outlet = "FORUM 24"
 src_type = "zpravodajství / investigativní"
 url = "https://www.forum24.cz/dotacni-kauza-poradkyne-semancove-ministerstvo-resi-ztratu-64-milionu-ministr-juchelka-mlci"
-retrieved = "2026-07-30"
 published = "2026-07-22"
+retrieved = "2026-07-30"
 claims = ["CLM-02", "CLM-03", "CLM-04", "CLM-05", "CLM-11", "CLM-12", "CLM-20", "CLM-34", "CLM-35"]
 +++
-
 FORUM 24 dne 22. 7. 2026 informoval, že poradkyně, kterou si ministr
 práce a sociálních věcí Aleš Juchelka osobně vybral, dohlížela na
 dotační výzvy v objemu 17 miliard korun, přičemž její soukromá firma

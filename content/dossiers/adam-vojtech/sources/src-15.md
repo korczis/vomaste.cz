@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-15 — Hanácká Drbna"
 description = "Defibrilátory dostali pacienti, kteří je nepotřebovali. Fakultní nemocnice Olomouc přiznala pochybení"
 template = "dossier-source.html"
 weight = 15
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-15"
+view_model = "generated/views/dossiers/adam-vojtech/sources/src-15.json"
 subjects = ["vojtech"]
 dossier = "adam-vojtech"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-07-10"
 retrieved = "2026-07-30"
 claims = ["CLM-29"]
 +++
-
 **Defibrilátory dostali pacienti, kteří je nepotřebovali. Fakultní nemocnice Olomouc přiznala pochybení**
 
 Shrnuje prověřování ze strany VZP, policie a Úřadu evropského veřejného žalobce, přiznání FNOL k nenaplněným indikačním kritériím v roce 2024, přisouzení odpovědnosti bývalému přednostovi Táborskému a odhad škody přes 150 mil. Kč.

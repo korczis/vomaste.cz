@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-36 — Ministerstvo průmyslu a obchodu: MPO přistoupí k odnětí dotace pro Pekárnu Zelená louka (21. 3. 2022)"
 description = "Tisková zpráva MPO: zahájení odnětí stomilionové dotace; podle auditorů EK projekt nesplňoval kritéria inovativnosti programu INOVACE (OP PIK)."
 template = "dossier-source.html"
 weight = 36
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-36"
+view_model = "generated/views/dossiers/andrej-babis/sources/src-36.json"
 subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2022-03-21"
 retrieved = "2026-08-01"
 claims = ["CLM-55"]
 +++
-
 Tisková zpráva Ministerstva průmyslu a obchodu oznamuje, že resort
 přistoupí k odnětí dotace na projekt „Inovační linka na výrobu
 toastového chleba“ společnosti Pekárna Zelená louka; výše dotace

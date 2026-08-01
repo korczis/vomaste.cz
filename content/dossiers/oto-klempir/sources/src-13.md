@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-13 — FORUM 24"
 description = "Milion chvilek donesl vládě 180 tisíc podpisů proti Klempířovu zákonu"
 template = "dossier-source.html"
 weight = 13
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-13"
+view_model = "generated/views/dossiers/oto-klempir/sources/src-13.json"
 subjects = ["klempir"]
 dossier = "oto-klempir"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-05-24"
 retrieved = "2026-07-30"
 claims = ["CLM-18", "CLM-19"]
 +++
-
 **Milion chvilek donesl vládě 180 tisíc podpisů proti Klempířovu zákonu**
 
 Demonstrace na Staroměstském náměstí a pochod k Úřadu vlády, odhad pořadatelů přes 10 000 účastníků, petice se 184 000 podpisy za stažení zákona o médiích veřejné služby.

@@ -31,8 +31,20 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 
 // Plný build — stejné pořadí jako dřívější `npm run build` řetěz,
 // s `data:validate` navíc jako první krok (kanonická brána).
+//
+// Fáze F (JSON-first content adaptéry): hned po kanonické bráně se
+// z compiled modelu vygenerují view modely (datový vstup šablon,
+// data/generated/views/**, gitignored) a content adaptéry (staging),
+// staging se synchronizuje do content/** (data:sync-content) a parity
+// brána data:check-generated:content ověří, že content == staging.
+// Pořadí je závazné: content validátory i zola build musí číst už
+// synchronizovaný stav; view modely musí existovat před zola build,
+// protože šablony je čtou přes load_data().
 const BUILD_STEPS = [
   "data:validate",
+  "data:views",
+  "data:generate-content",
+  "data:sync-content",
   "test",
   "build:government-roster",
   "validate:dossier",
@@ -43,6 +55,10 @@ const BUILD_STEPS = [
   "validate:dossier-types",
   "build:entity-type-sections",
   "build:routes",
+  // Content parity brána běží až po build:routes — C4 (route parity) čte
+  // data/generated/routes.json a před prvním build:routes by neexistoval
+  // (fresh clone) nebo byl stale (změna kanonických dat v témže běhu).
+  "data:check-generated:content",
   "build:navigation",
   "validate:navigation",
   "validate:concepts",
@@ -75,6 +91,9 @@ const BUILD_STEPS = [
 // serverem.
 const DEV_STEPS = [
   "data:validate",
+  "data:views",
+  "data:generate-content",
+  "data:sync-content",
   "validate:schemas",
   "validate:graph",
   "validate:authorization",

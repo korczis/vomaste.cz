@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-18"
 description = "Prezident NKÚ Miloslav Kala uvedl, že o plánu na zrušení policejní ochrany jeho úřad nikdo neinformoval a dozvěděl se o něm až z elektronick"
 template = "dossier-claim.html"
 weight = 18
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-18"
+view_model = "generated/views/dossiers/lubomir-metnar/claims/clm-18.json"
 dossier = "lubomir-metnar"
 record_type = "claim"
 lang = "cs"
@@ -15,5 +19,4 @@ summary = "Prezident NKÚ Miloslav Kala uvedl, že o plánu na zrušení policej
 sources = ["SRC-02", "SRC-03", "SRC-05"]
 subjects = ["metnar"]
 +++
-
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/lubomir-metnar/_index.md#registr-tvrzeni).

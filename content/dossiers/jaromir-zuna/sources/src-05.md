@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-05 — ČT24 (Česká televize)"
 description = "NATO Česku neuzná jako obranné výdaje asi dvacet miliard, řekl ČT Zůna"
 template = "dossier-source.html"
 weight = 5
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-05"
+view_model = "generated/views/dossiers/jaromir-zuna/sources/src-05.json"
 subjects = ["zuna"]
 dossier = "jaromir-zuna"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-04-28"
 retrieved = "2026-07-30"
 claims = ["CLM-06"]
 +++
-
 **NATO Česku neuzná jako obranné výdaje asi dvacet miliard, řekl ČT Zůna**
 
 Zůna v ČT uvedl, že NATO Česku neuzná cca 20 mld. Kč na dopravní stavby (zahrnuté do výkazů předchozí vládou) jako 'tvrdé' obranné výdaje; podle metodiky NATO tak ČR letos dosáhne jen 1,78 % HDP místo 2 %.

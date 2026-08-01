@@ -1,4 +1,5 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "GAP-01 — Výsledek policejního vyšetřování dopravní nehody"
 description = "Zůstává otevřené, zda jde o přestupek nebo trestný čin a kdo nese vinu — vyšetřování k datu poslední kontroly neskončilo."
 template = "dossier-gap.html"
@@ -6,6 +7,9 @@ weight = 1
 aliases = ["/dossier/mezery/gap-01/"]
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/macinka-turek/gaps/GAP-01"
+view_model = "generated/views/dossiers/macinka-turek/gaps/gap-01.json"
 subjects = ["turek"]
 dossier = "macinka-turek"
 record_type = "gap"
@@ -15,7 +19,6 @@ priority = "vysoká"
 checked = "2026-07-29"
 claims = ["CLM-10", "CLM-16", "CLM-17", "CLM-18"]
 +++
-
 Auto Filipa Turka se v červenci 2026 v Praze střetlo s vozidlem převážejícím
 biologický materiál (krev) Nemocnice Na Homolce — část raného
 zpravodajství vůz popisovala jako „sanitku“ záchranné služby; dossier

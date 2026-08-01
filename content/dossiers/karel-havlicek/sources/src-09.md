@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-09 — FORUM 24"
 description = "Havlíček chce nejspíš zničit náš automobilový průmysl. Prý moc nespí, ale elektromobilitu zaspal"
 template = "dossier-source.html"
 weight = 9
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-09"
+view_model = "generated/views/dossiers/karel-havlicek/sources/src-09.json"
 subjects = ["havlicek"]
 dossier = "karel-havlicek"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-07-15"
 retrieved = "2026-07-30"
 claims = ["CLM-15", "CLM-18"]
 +++
-
 **Havlíček chce nejspíš zničit náš automobilový průmysl. Prý moc nespí, ale elektromobilitu zaspal**
 
 Komentář Jana Jandourka cituje Havlíčkovu výzvu automobilkám postavit se proti cíli EU 2035 jako „naprosto nereálnému“ a oponuje mu daty o podílu elektromobilů v Norsku a Číně; problém autoprůmyslu vidí v čínské konkurenci, ne v regulaci EU.

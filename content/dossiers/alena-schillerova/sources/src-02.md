@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-02 — Deník.cz"
 description = "Národní rozpočtová rada uvedla, že návrh rozpočtu na rok 2026 je v rozporu se zákonem o pravidlech rozpočtové odpovědnosti; reakce ministerstva."
 template = "dossier-source.html"
 weight = 2
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-02"
+view_model = "generated/views/dossiers/alena-schillerova/sources/src-02.json"
 subjects = ["schillerova"]
 dossier = "alena-schillerova"
 record_type = "source"
@@ -13,11 +17,10 @@ src_id = "SRC-02"
 outlet = "Deník.cz (VLTAVA LABE MEDIA)"
 src_type = "celostátní zpravodajství"
 url = "https://www.denik.cz/ekonomika/rozpocet-schodek-narodni-rozpoctova-rada-stanovisko-rozpor-schillerova/"
-retrieved = "2026-07-30"
 published = "2026-01-28"
+retrieved = "2026-07-30"
 claims = ["CLM-03", "CLM-04"]
 +++
-
 Deník.cz (aktualizováno 28. 1. 2026) informoval, že Národní rozpočtová
 rada ve svém stanovisku označila návrh státního rozpočtu na rok 2026 za
 **nepochybně v rozporu** se zákonem o pravidlech rozpočtové odpovědnosti

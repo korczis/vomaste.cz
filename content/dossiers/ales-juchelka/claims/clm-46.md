@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-46"
 description = "Komentátor Jiří Sezemský (Reflex) sečetl potenciální dopad na zhruba 82 milionů korun (64 mil. z Národního plánu obnovy plus dalších 18 mil."
 template = "dossier-claim.html"
 weight = 46
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-46"
+view_model = "generated/views/dossiers/ales-juchelka/claims/clm-46.json"
 dossier = "ales-juchelka"
 record_type = "claim"
 lang = "cs"
@@ -15,5 +19,4 @@ summary = "Komentátor Jiří Sezemský (Reflex) sečetl potenciální dopad na 
 sources = ["SRC-27"]
 subjects = ["juchelka"]
 +++
-
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/ales-juchelka/_index.md#registr-tvrzeni).

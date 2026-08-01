@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-10 — Blesk.cz"
 description = "Vladní dohady kvůli novému náčelníkovi: „Zůna hlasoval proti,“ přiznal Babiš. Pavel výběr ocenil"
 template = "dossier-source.html"
 weight = 10
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-10"
+view_model = "generated/views/dossiers/jaromir-zuna/sources/src-10.json"
 subjects = ["zuna"]
 dossier = "jaromir-zuna"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-05-18"
 retrieved = "2026-07-30"
 claims = ["CLM-13", "CLM-14"]
 +++
-
 **Vladní dohady kvůli novému náčelníkovi: „Zůna hlasoval proti,“ přiznal Babiš. Pavel výběr ocenil**
 
 Vláda vybrala Miroslava Hlaváče jako nástupce Karla Řehky v čele generálního štábu. Babiš potvrdil, že Zůna jako jediný hlasoval proti. Prezident Pavel podle své kanceláře považuje Hlaváče za dobrého kandidáta a je připraven ho jmenovat.

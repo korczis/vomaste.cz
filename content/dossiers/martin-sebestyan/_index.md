@@ -1,21 +1,29 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Martin Šebestyán"
 description = "Neutrální, zdroji doložený přehled o osobě Martin Šebestyán — ministr zemědělství. Autorizovaný rozsah dle AUTH-2026-07-30-T; registry se teprve plní."
 template = "entity-dossier.html"
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/martin-sebestyan"
+view_model = "generated/views/dossiers/martin-sebestyan/overview.json"
 dossier = "martin-sebestyan"
 dossier_title = "Martin Šebestyán"
+record_type = "dossier"
 dossier_type = "entity"
 canonical_dossier = "martin-sebestyan"
 subject = "sebestyan"
 lang = "cs"
 seo_type = "ProfilePage"
-subject_entities = ["sebestyan"]
-subjects = ["Martin Šebestyán"]
 updated = "2026-07-30"
 reviewed_at = "2026-07-30"
+subject_entities = ["sebestyan"]
+subjects = ["Martin Šebestyán"]
 
+[extra.authorization]
+authorized = true
+record_ids = ["AUTH-2026-07-30-T"]
 
 [[extra.timeline]]
 date = "2013-01"
@@ -79,6 +87,7 @@ title = "Spor o dopis EK: Šebestyán vyplácí zemědělské dotace Agrofertu d
 anchor = "kauza-vymahani-agrofert"
 dot = "dot-fact"
 subjects = ["sebestyan"]
+
 [[extra.timeline]]
 date = "2025-12"
 title = "Ministerstvo zemědělství vydává stanovisko, podle nějž se zákaz dotací týká jen nenárokových podpor a ČR by byla jediným státem EU vymáhajícím nárokové dotace"
@@ -185,10 +194,6 @@ label = "Sledované téma"
 summary = "Varování Transparency International — viz tvrzení CLM-12, CLM-13, CLM-14, CLM-15."
 claims = ["CLM-31", "CLM-32"]
 subjects = ["sebestyan"]
-
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-T"]
 +++
 Martin Šebestyán zastává funkci ministra zemědělství ve třetí vládě Andreje Babiše (viz
 `data/government.toml`, ověřeno proti oficiálnímu seznamu členů vlády).

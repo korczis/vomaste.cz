@@ -4,38 +4,40 @@
 
 {% block content %}
 <main class="mx-auto max-w-2xl px-6 py-12 text-white">
-  {% set dossier_slug = page.extra.dossier %}
-  {{ ui::page_header(title=page.extra.case_id ~ " — " ~ page.title, breadcrumb_items=[
+  {#- T-028 fáze F: fakta pochází z view modelu (data/generated/views/**),
+      content adaptér nese jen routing + kanonické markdown tělo. -#}
+  {% set view = load_data(path="data/" ~ page.extra.view_model) %}
+  {% set record = view.record %}
+  {% set dossier_slug = view.dossier %}
+  {{ ui::page_header(title=record.identifier ~ " — " ~ record.title, breadcrumb_items=[
     "Dossier::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"),
     "Registr kauz::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/cases/_index.md"),
-    page.extra.case_id,
+    record.identifier,
   ]) }}
 
-  {% set tvrzeni = get_section(path="dossiers/" ~ dossier_slug ~ "/claims/_index.md") %}
-  {% set zdroje = get_section(path="dossiers/" ~ dossier_slug ~ "/sources/_index.md") %}
-  {{ table::advanced_table(id="case-meta", caption="Metadata kauzy " ~ page.extra.case_id, extra_class="mb-8") }}
-      <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Období</th><td class="p-3">{{ page.extra.period }}</td></tr>
-      <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Stav</th><td class="p-3"><span class="status-badge {{ page.extra.status }}">{{ page.extra.label }}</span></td></tr>
-      {% if page.extra.claims %}
+  {{ table::advanced_table(id="case-meta", caption="Metadata kauzy " ~ record.identifier, extra_class="mb-8") }}
+      <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Období</th><td class="p-3">{{ record.period }}</td></tr>
+      <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Stav</th><td class="p-3"><span class="status-badge {{ record.status }}">{{ record.statusLabel }}</span></td></tr>
+      {% if view.resolved.claims %}
       <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Tvrzení</th><td class="p-3">
-        {% for c in page.extra.claims %}
-          {% set clm_page = tvrzeni.pages | filter(attribute="extra.clm_id", value=c) | first %}
-          {% if clm_page %}<a href="{{ clm_page.permalink | safe }}" class="mr-2 inline-block rounded bg-white/5 px-2 py-0.5 font-mono text-xs text-[#f3e5c0] no-underline hover:bg-white/10">{{ c }}</a>{% endif %}
+        {% for c in view.resolved.claims %}
+          <a href="{{ config.base_url }}{{ c.route }}" class="mr-2 inline-block rounded bg-white/5 px-2 py-0.5 font-mono text-xs text-[#f3e5c0] no-underline hover:bg-white/10">{{ c.identifier }}</a>
         {% endfor %}
       </td></tr>
       {% endif %}
-      {% if page.extra.sources %}
+      {% if view.resolved.sources %}
       <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Zdroje</th><td class="p-3">
-        {% for s in page.extra.sources %}
-          {% set src_page = zdroje.pages | filter(attribute="extra.src_id", value=s) | first %}
-          {% if src_page %}<a href="{{ src_page.permalink | safe }}" class="mr-2 inline-block rounded bg-white/5 px-2 py-0.5 font-mono text-xs text-[#f3e5c0] no-underline hover:bg-white/10">{{ s }}</a>{% endif %}
+        {% for s in view.resolved.sources %}
+          <a href="{{ config.base_url }}{{ s.route }}" class="mr-2 inline-block rounded bg-white/5 px-2 py-0.5 font-mono text-xs text-[#f3e5c0] no-underline hover:bg-white/10">{{ s.identifier }}</a>
         {% endfor %}
       </td></tr>
       {% endif %}
   {{ table::advanced_table_end() }}
 
-  <p class="mb-8 text-lg leading-relaxed text-white/90">{{ page.extra.summary }}</p>
+  <p class="mb-8 text-lg leading-relaxed text-white/90">{{ record.summary }}</p>
 
+  {#- page.content JE kanonický markdown blok záznamu (vkládá ho generátor
+      content adaptérů) — renderuje ho Zola, takže @/ odkazy fungují. -#}
   <article class="dossier-prose">
     {{ page.content | safe }}
   </article>

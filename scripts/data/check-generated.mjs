@@ -20,6 +20,11 @@
  *   C5  alias parity: každý top-level alias dnešních content souborů
  *       (dossiery, registry, záznamy, entity) je přítomen v odpovídajícím
  *       stubu.
+ *   C6  (--content, fáze F po swapu) content parity: každá synchronizovaná
+ *       cesta (viz isSyncedPath v sync-content.mjs) je v content/
+ *       byte-identická se stagingem a v pokrytém scope content/ neleží
+ *       žádný .md bez staging protějšku — content/ je pro tyto cesty
+ *       generovaný artefakt, ruční drift je chyba brány.
  */
 import { existsSync, readFileSync, readdirSync, statSync } from "node:fs";
 import { join, dirname } from "node:path";
@@ -27,6 +32,7 @@ import { fileURLToPath } from "node:url";
 import { loadCanonicalDataset, compileDataset } from "./lib/dataset.mjs";
 import { VIEW_REGISTRIES } from "./build-view-models.mjs";
 import { STAGING_REL } from "./generate-zola-content.mjs";
+import { isSyncedPath } from "./sync-content.mjs";
 import { frontMatter, str, arr, bool, sections, sectionBody } from "../migrations/lib/read-content.mjs";
 
 const REPO_ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
@@ -54,7 +60,7 @@ export function routeOfStubPath(relPath) {
   return file === "_index.md" ? base : `${base}${file.replace(/\.md$/, "")}/`;
 }
 
-export function checkGenerated({ root = REPO_ROOT } = {}) {
+export function checkGenerated({ root = REPO_ROOT, content = false } = {}) {
   const errors = [];
   const warnings = [];
 
@@ -171,6 +177,32 @@ export function checkGenerated({ root = REPO_ROOT } = {}) {
       }
     }
 
+    // --- C6: content parity po swapu (--content) -----------------------
+    let contentParity = { checked: 0, mismatched: 0, orphans: 0 };
+    if (content) {
+      const syncedStubs = actualStubs.filter(isSyncedPath);
+      for (const rel of syncedStubs) {
+        contentParity.checked++;
+        const contentFile = join(root, "content", ...rel.split("/"));
+        if (!existsSync(contentFile)) {
+          contentParity.mismatched++;
+          errors.push(`content parity: content/${rel} chybí — spusť npm run data:sync-content`);
+          continue;
+        }
+        if (readFileSync(contentFile, "utf8") !== readFileSync(join(stagingDir, ...rel.split("/")), "utf8")) {
+          contentParity.mismatched++;
+          errors.push(`content parity: content/${rel} se liší od stagingu — content je generovaný artefakt, edituj data/dossiers/** a spusť npm run data:sync-content`);
+        }
+      }
+      const stagedSet = new Set(syncedStubs);
+      for (const rel of walk(join(root, "content")).filter(isSyncedPath)) {
+        if (!stagedSet.has(rel)) {
+          contentParity.orphans++;
+          errors.push(`content parity: content/${rel} nemá staging protějšek (sirotčí stránka bez kanonického záznamu) — spusť npm run data:sync-content`);
+        }
+      }
+    }
+
     return {
       errors,
       warnings,
@@ -181,6 +213,7 @@ export function checkGenerated({ root = REPO_ROOT } = {}) {
         routeParity,
         aliasSources: contentAliases.length,
         aliasChecked,
+        contentParity: content ? contentParity : null,
       },
     };
   });
@@ -188,7 +221,8 @@ export function checkGenerated({ root = REPO_ROOT } = {}) {
 
 const isMain = process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1];
 if (isMain) {
-  const { errors, warnings, summary } = await checkGenerated();
+  const content = process.argv.includes("--content");
+  const { errors, warnings, summary } = await checkGenerated({ content });
   console.log(
     `Kontrola generovaných artefaktů: ${summary.stubs} stubů, ${summary.views} view modelů, ` +
       `${summary.records} očekávaných stub cest.`,
@@ -200,6 +234,12 @@ if (isMain) {
     );
   }
   console.log(`Alias parity: ${summary.aliasChecked} aliasů z ${summary.aliasSources} content souborů.`);
+  if (summary.contentParity) {
+    console.log(
+      `Content parity (po swapu): ${summary.contentParity.checked} synchronizovaných cest, ` +
+        `${summary.contentParity.mismatched} rozdílných, ${summary.contentParity.orphans} sirotků.`,
+    );
+  }
   for (const w of warnings) console.log(`  WARNING ${w}`);
   if (errors.length) {
     console.log(`\n${errors.length} chyb(a):`);

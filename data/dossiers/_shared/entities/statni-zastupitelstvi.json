@@ -20,6 +20,7 @@
   "routeAliases": [
     "/dossiers/macinka-turek/entities/statni-zastupitelstvi/"
   ],
+  "order": 70,
   "content": [
     {
       "type": "markdown",

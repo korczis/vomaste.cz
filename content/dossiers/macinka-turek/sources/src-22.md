@@ -1,4 +1,5 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-22 — Seznam Zprávy"
 description = "Experti: samotné screenshoty nestačí jako důkaz, ale URL adresy originálů mohou pravost ověřit."
 template = "dossier-source.html"
@@ -6,6 +7,9 @@ weight = 22
 aliases = ["/dossier/zdroje/src-22/"]
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-22"
+view_model = "generated/views/dossiers/macinka-turek/sources/src-22.json"
 subjects = ["turek"]
 dossier = "macinka-turek"
 record_type = "source"
@@ -14,11 +18,10 @@ src_id = "SRC-22"
 outlet = "Seznam Zprávy"
 src_type = "zpravodajství"
 url = "https://www.seznamzpravy.cz/clanek/domaci-politika-kauza-turkovych-prispevku-samotne-screenshoty-nestaci-url-adresy-mohou-289039"
-retrieved = "2026-07-22"
 published = "2025-10-14"
+retrieved = "2026-07-22"
 claims = ["CLM-09"]
 +++
-
 Seznam Zprávy citují experty společnosti Gen Digital k technické stránce
 kauzy 2025: samotný screenshot podle nich není dostatečným důkazem, mimo
 jiné protože poskytovatelé služeb archivují komunikaci jen zhruba šest

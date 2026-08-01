@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-39"
 description = "TOP 09 kauzu komentovala slovy: „Ministr Šťastný fejkuje lajky, tak doufáme, že aspoň nefejkuje těch 10 tisíc kroků“; Tomáš Zdechovský (KDU-"
 template = "dossier-claim.html"
 weight = 39
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-39"
+view_model = "generated/views/dossiers/boris-stastny/claims/clm-39.json"
 dossier = "boris-stastny"
 record_type = "claim"
 lang = "cs"
@@ -15,5 +19,4 @@ summary = "TOP 09 kauzu komentovala slovy: „Ministr Šťastný fejkuje lajky, 
 sources = ["SRC-18"]
 subjects = ["stastny"]
 +++
-
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/boris-stastny/_index.md#registr-tvrzeni).

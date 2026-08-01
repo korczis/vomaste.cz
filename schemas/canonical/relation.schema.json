@@ -43,6 +43,11 @@
       "default": true,
       "$comment": "Chybějící pole = true (orientovaná hrana). JSON Schema default je anotace — konzument fáze C/G doplňuje true při čtení."
     },
+    "order": {
+      "type": "integer",
+      "minimum": 0,
+      "$comment": "Redakční pořadí v registru vztahů (fáze F, aditivní): u macinka-turek se pořadí hran v content liší od pořadí v graph.toml i od abecedního pořadí id — bez kanonického order by adaptéry/view modely nemohly reprodukovat dnešní pořadí výpisů. Stejný term vomaste:order jako u claim/source/case/gap."
+    },
     "content": { "$ref": "_defs.schema.json#/$defs/contentBlocks" }
   },
   "if": {

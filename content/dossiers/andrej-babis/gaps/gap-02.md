@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "GAP-02 — Postoj Evropské komise: doložen agenturní zprávou, ne primárním dokumentem"
 description = "Stanovisko Komise i zahájení řízení evropské prokuratury už doložené jsou, ale jediným agenturním zdrojem a bez primárních dokumentů."
 template = "dossier-gap.html"
 weight = 2
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis/gaps/GAP-02"
+view_model = "generated/views/dossiers/andrej-babis/gaps/gap-02.json"
 subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "gap"
@@ -14,7 +18,6 @@ priority = "vysoká"
 checked = "2026-07-30"
 claims = ["CLM-25", "CLM-26", "CLM-27", "CLM-28"]
 +++
-
 **Co se od poslední revize uzavřelo (30. 7. 2026).** Dřívější znění této
 mezery říkalo, že postoj Evropské komise není doložen žádným otevřeným
 zdrojem. To už neplatí: doloženo je, že Komise k 5. 6. 2026 neproplatila

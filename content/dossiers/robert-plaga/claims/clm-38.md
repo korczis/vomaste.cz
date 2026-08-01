@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-38"
 description = "Dětský ombudsman Martin Beneš k návrhu uvedl: „Nadále pochybuji o tom, že je vhodné upravovat zákaz mobilních telefonů ve školách celostátně"
 template = "dossier-claim.html"
 weight = 38
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-38"
+view_model = "generated/views/dossiers/robert-plaga/claims/clm-38.json"
 dossier = "robert-plaga"
 record_type = "claim"
 lang = "cs"
@@ -15,5 +19,4 @@ summary = "Dětský ombudsman Martin Beneš k návrhu uvedl: „Nadále pochybuj
 sources = ["SRC-16", "SRC-19"]
 subjects = ["plaga"]
 +++
-
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/robert-plaga/_index.md#registr-tvrzeni).

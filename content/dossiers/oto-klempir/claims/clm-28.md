@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-28"
 description = "Základní odborová organizace Národní galerie Praha odeslala 10. července 2026 ministrovi otevřený dopis, který podepsalo 63 zaměstnanců; pod"
 template = "dossier-claim.html"
 weight = 28
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-28"
+view_model = "generated/views/dossiers/oto-klempir/claims/clm-28.json"
 dossier = "oto-klempir"
 record_type = "claim"
 lang = "cs"
@@ -15,5 +19,4 @@ summary = "Základní odborová organizace Národní galerie Praha odeslala 10. 
 sources = ["SRC-08"]
 subjects = ["klempir"]
 +++
-
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/oto-klempir/_index.md#registr-tvrzeni).

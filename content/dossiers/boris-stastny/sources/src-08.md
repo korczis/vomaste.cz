@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-08 — Blesk.cz"
 description = "Kauza ztraceného diktafonu: Šťastného nahrávací zařízení vyrábí firma poslouchající čínskou rozvědku"
 template = "dossier-source.html"
 weight = 8
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-08"
+view_model = "generated/views/dossiers/boris-stastny/sources/src-08.json"
 subjects = ["stastny"]
 dossier = "boris-stastny"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-07-19"
 retrieved = "2026-07-30"
 claims = ["CLM-11", "CLM-17", "CLM-18", "CLM-19", "CLM-20"]
 +++
-
 **Kauza ztraceného diktafonu: Šťastného nahrávací zařízení vyrábí firma poslouchající čínskou rozvědku**
 
 Navazující text o původu zařízení Plaud — firma se prezentuje jako americký startup z Delaware, výrobcem je čínská Shenzhen Smart Connect Technology. Obsahuje výroky expertů a Šťastného reakci na čínský původ přístroje.

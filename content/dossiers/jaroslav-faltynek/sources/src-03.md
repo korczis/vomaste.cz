@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-03 — Echo24"
 description = "Echo24, 14. 9. 2022: Faltýnek vypovídal u soudu v kauze Čapí hnízdo jako svědek a k Babišovu zájmu o projekt uvedl, že „bylo to pod jeho rozlišovací schopnosti“."
 template = "dossier-source.html"
 weight = 3
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-03"
+view_model = "generated/views/dossiers/jaroslav-faltynek/sources/src-03.json"
 subjects = ["faltynek"]
 dossier = "jaroslav-faltynek"
 record_type = "source"
@@ -13,11 +17,10 @@ src_id = "SRC-03"
 outlet = "Echo24"
 src_type = "celostátní zpravodajství"
 url = "https://echo24.cz/a/Sbrks/zpravy-domaci-soud-babis-kauza-capi-hnizdo-faltynek-podvod"
-retrieved = "2026-07-30"
 published = "2022-09-14"
+retrieved = "2026-07-30"
 claims = ["CLM-05", "CLM-06", "CLM-07", "CLM-08"]
 +++
-
 Echo24 dne 14. 9. 2022 informovalo o výpovědi Jaroslava Faltýnka u soudu
 v kauze Čapí hnízdo. Vypovídal **jako svědek** — jeho vlastní stíhání
 skončilo zrušením v květnu 2018.

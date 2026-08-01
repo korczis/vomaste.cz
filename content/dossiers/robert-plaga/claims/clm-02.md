@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-02"
 description = "Ministr školství Robert Plaga (ANO) 25. května 2026 nařídil okamžité zastavení povinného testování žáků 5. a 9. tříd základních škol, které "
 template = "dossier-claim.html"
 weight = 2
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-02"
+view_model = "generated/views/dossiers/robert-plaga/claims/clm-02.json"
 dossier = "robert-plaga"
 record_type = "claim"
 lang = "cs"
@@ -15,5 +19,4 @@ summary = "Ministr školství Robert Plaga (ANO) 25. května 2026 nařídil okam
 sources = ["SRC-02", "SRC-03", "SRC-04"]
 subjects = ["plaga"]
 +++
-
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/robert-plaga/_index.md#registr-tvrzeni).

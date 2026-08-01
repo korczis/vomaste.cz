@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-54 — Echo24"
 description = "Echo24 s vlastní citací státního zástupce potvrzuje odložení trestního oznámení (znásilnění, domácí násilí) pro promlčení."
 template = "dossier-source.html"
 weight = 54
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-54"
+view_model = "generated/views/dossiers/macinka-turek/sources/src-54.json"
 subjects = ["turek"]
 dossier = "macinka-turek"
 record_type = "source"
@@ -13,11 +17,10 @@ src_id = "SRC-54"
 outlet = "Echo24"
 src_type = "zpravodajství"
 url = "https://www.echo24.cz/a/HnBp9/zpravy-domov-policie-odlozila-pripad-turkova-znasilneni-kvuli-promlceni"
-retrieved = "2026-07-29"
 published = "2026-05-13"
+retrieved = "2026-07-29"
 claims = ["CLM-27"]
 +++
-
 Echo24 dne 13. května 2026 informovalo o odložení trestního oznámení na
 Filipa Turka (domácí násilí, vyhrožování zbraní, znásilnění) z důvodu
 promlčení — s **vlastní přímou citací** vedoucího Obvodního státního

@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-17"
 description = "Ministr Metnar se k dotazům Seznam Zpráv v úterý nevyjádřil; podrobnější zdůvodnění poskytlo ministerstvo vnitra až následně."
 template = "dossier-claim.html"
 weight = 17
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-17"
+view_model = "generated/views/dossiers/lubomir-metnar/claims/clm-17.json"
 dossier = "lubomir-metnar"
 record_type = "claim"
 lang = "cs"
@@ -15,5 +19,4 @@ summary = "Ministr Metnar se k dotazům Seznam Zpráv v úterý nevyjádřil; po
 sources = ["SRC-02"]
 subjects = ["metnar"]
 +++
-
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/lubomir-metnar/_index.md#registr-tvrzeni).

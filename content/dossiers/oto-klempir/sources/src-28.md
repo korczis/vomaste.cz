@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-28 — Novinky.cz: Ministra kultury Klempíře ve Strážnici hlasitě vypískali (27. 6. 2026)"
 description = "Novinky.cz nezávisle na FORUM 24 (SRC-12) potvrzuje vypískání ministra kultury Klempíře na folklorním festivalu ve Strážnici."
 template = "dossier-source.html"
 weight = 28
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-28"
+view_model = "generated/views/dossiers/oto-klempir/sources/src-28.json"
 subjects = ["klempir"]
 dossier = "oto-klempir"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-06-27"
 retrieved = "2026-07-31"
 claims = ["CLM-43"]
 +++
-
 Novinky.cz dne 27. 6. 2026: „Návštěvníci Mezinárodního folklorního
 festivalu ve Strážnici v pátek vypískali ministra kultury Otu
 Klempíře." Lidé během jeho vystoupení hlasitě pískali a křičeli „Fuj“.

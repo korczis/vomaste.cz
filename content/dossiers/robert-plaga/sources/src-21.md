@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-21 — Seznam Zprávy"
 description = "Zkrácení školního roku komplikuje plány některým učitelům"
 template = "dossier-source.html"
 weight = 21
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-21"
+view_model = "generated/views/dossiers/robert-plaga/sources/src-21.json"
 subjects = ["plaga"]
 dossier = "robert-plaga"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-04-01"
 retrieved = "2026-07-30"
 claims = ["CLM-49", "CLM-50", "CLM-51", "CLM-52", "CLM-53", "CLM-54"]
 +++
-
 **Zkrácení školního roku komplikuje plány některým učitelům**
 
 Pedagog Robert Müller (Gymnázium Jana Keplera) souhlasí s podstatou, kritizuje načasování, upozorňuje na vícedenní výlet přesahující nový konec roku. Petra Mazancová (Učitelská platforma) kritizuje dopad na tábory a rodiny. Angelika Gergelová (Unie rodičů) upozorňuje na rodiče bez flexibilní práce. Poslankyně ODS Renáta Zajíčková kritizuje proces žádostí o výjimku. Mluvčí MŠMT Ondřej Macura hájí, že opatření neovlivní kvalitu ani rozsah výuky. Luboš Zajíc (Asociace ředitelů ZŠ) změnu považuje za zvladatelnou.

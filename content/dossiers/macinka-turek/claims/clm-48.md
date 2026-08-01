@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-48"
 description = "Jediným společníkem (podíl 100 %, vklad 200 000 Kč) a jednatelem GMR GAS s.r.o. je Petr Vencálek, jednatelem od prosince 2014"
 template = "dossier-claim.html"
 weight = 48
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-48"
+view_model = "generated/views/dossiers/macinka-turek/claims/clm-48.json"
 dossier = "macinka-turek"
 record_type = "claim"
 lang = "cs"
@@ -15,7 +19,6 @@ summary = "Jediným společníkem (podíl 100 %, vklad 200 000 Kč) a jednatelem
 sources = ["SRC-17", "SRC-55"]
 subjects = ["macinka"]
 +++
-
 Tato stránka je kanonický záznam tvrzení CLM-48 — shrnutí, stav a zdroje
 výše jsou úplné. Stav CORROBORATED stojí na dvou vzájemně nezávislých
 zdrojích různé povahy:

@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-06"
 description = "Jmenovaní opoziční politici střet zájmů za vyřešený nepovažují: Zdeněk Hřib podle citovaného zpravodajství uvedl, že Babiš „nic nevyřešil“, Vít Rakušan mimo jiné to, že Babiš „veřejnosti lhal“ ohledně vlivu rodiny na Agrofert a odmítá zveřejnit dokumenty fondu, Matěj Ondřej Havel odkázal na zprávu Transparency International a Martin Kupka kritizoval nezveřejněné dokumenty; oslovený expert dodal, že Babiš může správce fondu odvolat"
 template = "dossier-claim.html"
 weight = 6
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-06"
+view_model = "generated/views/dossiers/andrej-babis/claims/clm-06.json"
 dossier = "andrej-babis"
 record_type = "claim"
 lang = "cs"
@@ -14,5 +18,4 @@ status_label = "CITACE"
 summary = "Jmenovaní opoziční politici střet zájmů za vyřešený nepovažují: Zdeněk Hřib podle citovaného zpravodajství uvedl, že Babiš „nic nevyřešil“, Vít Rakušan mimo jiné to, že Babiš „veřejnosti lhal“ ohledně vlivu rodiny na Agrofert a odmítá zveřejnit dokumenty fondu, Matěj Ondřej Havel odkázal na zprávu Transparency International a Martin Kupka kritizoval nezveřejněné dokumenty; oslovený expert dodal, že Babiš může správce fondu odvolat"
 sources = ["SRC-02"]
 +++
-
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni).

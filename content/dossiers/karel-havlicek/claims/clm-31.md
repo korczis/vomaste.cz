@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-31"
 description = "Při závěrečném projednávání 8. července 2026 Sněmovna schvalování nedokončila po ostrém vystoupení Karla Havlíčka, který opozici vytkl: „Co "
 template = "dossier-claim.html"
 weight = 31
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-31"
+view_model = "generated/views/dossiers/karel-havlicek/claims/clm-31.json"
 dossier = "karel-havlicek"
 record_type = "claim"
 lang = "cs"
@@ -15,5 +19,4 @@ summary = "Při závěrečném projednávání 8. července 2026 Sněmovna schva
 sources = ["SRC-18"]
 subjects = ["havlicek"]
 +++
-
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/karel-havlicek/_index.md#registr-tvrzeni).

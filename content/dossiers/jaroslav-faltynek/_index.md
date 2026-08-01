@@ -1,20 +1,29 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Jaroslav Faltýnek"
 description = "Neutrální, zdroji doložený přehled o Jaroslavu Faltýnkovi — poslanci a místopředsedovi klubu ANO. Autorizovaný rozsah: zrušené stíhání v kauze Čapí hnízdo (2018) a svědecká výpověď u soudu (2022)."
 template = "entity-dossier.html"
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/jaroslav-faltynek"
+view_model = "generated/views/dossiers/jaroslav-faltynek/overview.json"
 dossier = "jaroslav-faltynek"
 dossier_title = "Jaroslav Faltýnek"
+record_type = "dossier"
 dossier_type = "entity"
 canonical_dossier = "jaroslav-faltynek"
 subject = "faltynek"
 lang = "cs"
 seo_type = "ProfilePage"
-subject_entities = ["faltynek"]
-subjects = ["Jaroslav Faltýnek"]
 updated = "2026-07-30"
 reviewed_at = "2026-07-30"
+subject_entities = ["faltynek"]
+subjects = ["Jaroslav Faltýnek"]
+
+[extra.authorization]
+authorized = true
+record_ids = ["AUTH-2026-07-30-V"]
 
 [[extra.timeline]]
 date = "2018-05-03"
@@ -36,6 +45,7 @@ title = "Místopředsedou poslaneckého klubu ANO 2011 (poslanecký mandát od 4
 anchor = "kauza-zrusene-stihani"
 dot = "dot-fact"
 subjects = ["faltynek"]
+
 [[extra.cases]]
 anchor = "kauza-zrusene-stihani"
 period = "2018"
@@ -55,12 +65,7 @@ label = "Svědek, ne obžalovaný"
 summary = "V září 2022 vypovídal u soudu jako svědek ve prospěch obžalovaného. Doloženo je, že dané výroky u soudu učinil — nikoli že jejich obsah platí."
 claims = ["CLM-05", "CLM-06", "CLM-07", "CLM-08"]
 subjects = ["faltynek"]
-
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-V"]
 +++
-
 ## Kdo je Jaroslav Faltýnek {#kdo}
 
 Jaroslav Faltýnek je podle oficiálního profilu Poslanecké sněmovny

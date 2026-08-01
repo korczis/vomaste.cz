@@ -1,4 +1,5 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-06 — ČT24"
 description = "Babišovo stanovisko: pokud se záběry z nehody potvrdí, Turek by měl rezignovat z postu zmocněnce."
 template = "dossier-source.html"
@@ -6,6 +7,9 @@ weight = 6
 aliases = ["/dossier/zdroje/src-06/"]
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-06"
+view_model = "generated/views/dossiers/macinka-turek/sources/src-06.json"
 subjects = ["turek"]
 dossier = "macinka-turek"
 record_type = "source"
@@ -14,11 +18,10 @@ src_id = "SRC-06"
 outlet = "ČT24 (Česká televize)"
 src_type = "veřejnoprávní zpravodajství"
 url = "https://ct24.ceskatelevize.cz/clanek/domaci/pokud-zabery-z-nehody-nelzou-turek-by-mel-rezignovat-rekl-babis-375570"
-retrieved = "2026-07-21"
 published = "2026-07-14"
+retrieved = "2026-07-21"
 claims = ["CLM-11", "CLM-12"]
 +++
-
 Přímá redakční zpráva ČT24 citující premiéra Andreje Babiše k Turkově
 nehodě — konkrétně jeho podmínečné stanovisko ("pokud se záběry
 potvrdí..."), ne definitivní odsudek. Dossier proto formuluje CLM-12 stejně

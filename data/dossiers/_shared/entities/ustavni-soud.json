@@ -19,6 +19,7 @@
   "routeAliases": [
     "/dossiers/andrej-babis/entities/ustavni-soud/"
   ],
+  "order": 77,
   "content": [
     {
       "type": "markdown",

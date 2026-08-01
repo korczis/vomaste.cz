@@ -19,6 +19,7 @@
   "routeAliases": [
     "/dossiers/andrej-babis/entities/navos-farm-technic/"
   ],
+  "order": 43,
   "content": [
     {
       "type": "markdown",

@@ -1,18 +1,20 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Zdroje — Petr Macinka"
 description = "Zdroje z kanonického registru dossieru, které podkládají tvrzení o Petru Macinkovi."
 template = "entity-dossier-registry.html"
 
 [extra]
+generated = true
+view_model = "generated/views/dossiers/petr-macinka/sources-index.json"
 dossier = "petr-macinka"
+lang = "cs"
+seo_type = "CollectionPage"
 dossier_title = "Petr Macinka"
 canonical_dossier = "macinka-turek"
 subject = "macinka"
 registry = "sources"
-lang = "cs"
-seo_type = "CollectionPage"
 +++
-
 Filtrovaný pohled na [registr zdrojů](@/dossiers/macinka-turek/sources/_index.md) — jen zdroje relevantní k Petru Macinkovi.
 
 ## Co u každého zdroje stojí

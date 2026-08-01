@@ -19,6 +19,7 @@
   "routeAliases": [
     "/dossiers/andrej-babis/entities/hartenberg/"
   ],
+  "order": 21,
   "content": [
     {
       "type": "markdown",

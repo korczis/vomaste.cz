@@ -1,4 +1,5 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-20"
 description = "Turek je/byl 2016–2023 statutárním orgánem nebo společníkem v pěti firmách/spolcích (Art of Performance, Aston Martin klub ČR, Transgas, Jaguar klub ČR, Zapper-Club)"
 template = "dossier-claim.html"
@@ -6,6 +7,9 @@ weight = 20
 aliases = ["/dossier/tvrzeni/clm-20/"]
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-20"
+view_model = "generated/views/dossiers/macinka-turek/claims/clm-20.json"
 dossier = "macinka-turek"
 record_type = "claim"
 lang = "cs"
@@ -16,5 +20,4 @@ summary = "Turek je/byl 2016–2023 statutárním orgánem nebo společníkem v 
 sources = ["SRC-23"]
 subjects = ["turek"]
 +++
-
 Tato stránka je kanonický záznam tvrzení CLM-20 — shrnutí, stav a zdroje výše jsou úplné. Hlavní stránka dossieru zobrazuje tentýž text ze stejného zdroje; build proces ověřuje, že se neliší.

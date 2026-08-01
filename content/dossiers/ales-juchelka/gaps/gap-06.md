@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "GAP-06 — Výsledky externího právního posudku, kontroly NKÚ (plán do poloviny 2027) a policejního pr"
 description = "Všechna řízení byla v době rešerše na počátku; dossier je nutné aktualizovat po jejich uzavření."
 template = "dossier-gap.html"
 weight = 6
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/ales-juchelka/gaps/GAP-06"
+view_model = "generated/views/dossiers/ales-juchelka/gaps/gap-06.json"
 subjects = ["juchelka"]
 dossier = "ales-juchelka"
 record_type = "gap"
@@ -14,7 +18,6 @@ priority = "střední"
 checked = "2026-07-30"
 claims = []
 +++
-
 Výsledky externího právního posudku, kontroly NKÚ (plán do poloviny 2027) a policejního prověřování trestního oznámení nejsou k 30. 7. 2026 známy.
 
 **Proč je to mezera**: Všechna řízení byla v době rešerše na počátku; dossier je nutné aktualizovat po jejich uzavření. Tato mezera **není** zjištěním žádným

@@ -1,4 +1,5 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-09 — HlídacíPes.org"
 description = "Autorský komentář Aleše Rozehnala — explicitně veden jako názor, ne zpravodajství."
 template = "dossier-source.html"
@@ -6,6 +7,10 @@ weight = 9
 aliases = ["/dossier/zdroje/src-09/"]
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-09"
+view_model = "generated/views/dossiers/macinka-turek/sources/src-09.json"
+subjects = ["macinka", "turek"]
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
@@ -13,12 +18,10 @@ src_id = "SRC-09"
 outlet = "HlídacíPes.org"
 src_type = "komentář / názor"
 url = "https://hlidacipes.org/ales-rozehnal-macinka-a-turek-si-hraji-na-mazaky-ceka-je-navrat-k-bezvyznamnosti/"
-retrieved = "2026-07-21"
 published = "2026-04-13"
+retrieved = "2026-07-21"
 claims = []
-subjects = ["macinka", "turek"]
 +++
-
 HlídacíPes.org je nezisková investigativní/komentářová platforma. Tento
 konkrétní text je podepsaný autorský komentář Aleše Rozehnala, ne
 redakční zpravodajská zpráva — proto je v dossieru systematicky označen

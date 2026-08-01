@@ -3,7 +3,16 @@
 
 {% block content %}
 <main class="mx-auto max-w-4xl px-6 py-12 text-white">
+  {#- T-028 fáze F: filtruje globální entities-index view model podle
+      dossiers[].slug, ne get_section + p.extra.dossiers filtr. -#}
   {% set dossier_slug = section.extra.dossier %}
+  {% set entities = load_data(path="data/generated/views/entities-index.json") %}
+  {% set_global filtered = [] %}
+  {% for p in entities.rows %}
+    {% set_global belongs = false %}
+    {% for d in p.dossiers %}{% if d.slug == dossier_slug %}{% set_global belongs = true %}{% endif %}{% endfor %}
+    {% if belongs %}{% set_global filtered = filtered | concat(with=[p]) %}{% endif %}
+  {% endfor %}
 
   {{ ui::page_header(title=section.title, description=section.description, breadcrumb_items=[
     "Dossiery::" ~ get_url(path="@/dossiers/_index.md"),
@@ -12,14 +21,6 @@
   ]) }}
 
   <article class="dossier-prose mb-10">{{ section.content | safe }}</article>
-
-  {% set entities = get_section(path="entities/_index.md") %}
-  {% set_global filtered = [] %}
-  {% for p in entities.pages %}
-    {% if p.extra.dossiers and p.extra.dossiers is containing(dossier_slug) %}
-      {% set_global filtered = filtered | concat(with=[p]) %}
-    {% endif %}
-  {% endfor %}
 
   <div class="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
     {{ ui::stat_tile(value=filtered | length, label="Entit celkem") }}
@@ -30,12 +31,12 @@
   {% else %}
   <div class="grid gap-3 sm:grid-cols-2">
     {% for p in filtered %}
-    <a href="{{ p.permalink | safe }}" class="registry-card">
+    <a href="{{ config.base_url }}{{ p.route }}" class="registry-card">
       <span class="flex flex-wrap items-center gap-2">
-        <span class="font-mono text-xs text-[#f3e5c0]">{{ p.extra.entity_id }}</span>
-        <span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-white/50">{{ p.extra.entity_type }}</span>
-        {% if p.extra.subject %}<span class="rounded bg-[#f3e5c0]/10 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-[#f3e5c0]">subjekt</span>{% endif %}
-        {% if p.extra.dossiers | length > 2 %}<span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.6rem] uppercase tracking-wide text-white/55">sdílené</span>{% endif %}
+        <span class="font-mono text-xs text-[#f3e5c0]">{{ p.entityId }}</span>
+        <span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-white/50">{{ p.entityType }}</span>
+        {% if p.publicationRole == "subject" %}<span class="rounded bg-[#f3e5c0]/10 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-[#f3e5c0]">subjekt</span>{% endif %}
+        {% if p.dossiers | length > 2 %}<span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.6rem] uppercase tracking-wide text-white/55">sdílené</span>{% endif %}
       </span>
       <span class="mt-1 font-semibold text-white">{{ p.title }}</span>
     </a>

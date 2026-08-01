@@ -1,21 +1,29 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Oto Klempíř"
 description = "Neutrální, zdroji doložený přehled o Oto Klempířovi — ministru kultury ve třetí vládě Andreje Babiše."
 template = "entity-dossier.html"
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/oto-klempir"
+view_model = "generated/views/dossiers/oto-klempir/overview.json"
 dossier = "oto-klempir"
 dossier_title = "Oto Klempíř"
+record_type = "dossier"
 dossier_type = "entity"
 canonical_dossier = "oto-klempir"
 subject = "klempir"
 lang = "cs"
 seo_type = "ProfilePage"
-subject_entities = ["klempir"]
-subjects = ["Oto Klempíř"]
 updated = "2026-07-30"
 reviewed_at = "2026-07-30"
+subject_entities = ["klempir"]
+subjects = ["Oto Klempíř"]
 
+[extra.authorization]
+authorized = true
+record_ids = ["AUTH-2026-07-30-KLEMPIR"]
 
 [[extra.timeline]]
 date = "2025-10"
@@ -101,16 +109,13 @@ anchor = "kauza-ngp-vyberove-rizeni"
 dot = "dot-fact"
 subjects = ["klempir"]
 
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-KLEMPIR"]
-
 [[extra.timeline]]
 date = "2025-12"
 title = "Jmenován ministrem kultury"
 anchor = "kauza-financovani-verejnopravnich-medii"
 dot = "dot-fact"
 subjects = ["klempir"]
+
 [[extra.cases]]
 anchor = "kauza-financovani-verejnopravnich-medii"
 period = "2026"
@@ -160,9 +165,7 @@ label = "Sledované téma"
 summary = "Vstup do politiky a jmenování ministrem — viz tvrzení CLM-40, CLM-41, CLM-42, CLM-43."
 claims = []
 subjects = ["klempir"]
-
 +++
-
 Oto Klempíř je ministrem kultury ve třetí vládě Andreje Babiše a
 poslancem za hnutí Motoristé sobě. Tento dossier shrnuje veřejně
 doložené skutečnosti o jeho veřejné funkci a o konkrétních resortních

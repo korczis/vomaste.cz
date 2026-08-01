@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-13"
 description = "Předseda opozičního hnutí STAN Vít Rakušan 23. července 2026 oznámil na síti X, že hnutí podává trestní oznámení kvůli případnému střetu záj"
 template = "dossier-claim.html"
 weight = 13
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-13"
+view_model = "generated/views/dossiers/ales-juchelka/claims/clm-13.json"
 dossier = "ales-juchelka"
 record_type = "claim"
 lang = "cs"
@@ -15,5 +19,4 @@ summary = "Předseda opozičního hnutí STAN Vít Rakušan 23. července 2026 o
 sources = ["SRC-08", "SRC-09", "SRC-11", "SRC-14"]
 subjects = ["juchelka"]
 +++
-
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/ales-juchelka/_index.md#registr-tvrzeni).

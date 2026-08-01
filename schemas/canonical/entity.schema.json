@@ -50,6 +50,11 @@
       "items": { "type": "string", "pattern": "^/" },
       "$comment": "Dnešní top-level aliases stránky entity (staré routy /dossiers/<slug>/entities/…)."
     },
+    "order": {
+      "type": "integer",
+      "minimum": 0,
+      "$comment": "Redakční pořadí v registru entit (fáze F, aditivní): dnešní pořadí je historický artefakt scaffoldu (per-dossier pořadí objevení, front matter weight) a není derivovatelné z ničeho jiného — bez kanonického order by adaptéry/view modely nemohly reprodukovat dnešní pořadí výpisu. Stejný term vomaste:order jako u ostatních záznamů."
+    },
     "snapshotDate": {
       "$ref": "_defs.schema.json#/$defs/isoDate",
       "$comment": "Government-roster snapshot (dnešní government_snapshot) — funkce držená k datu snímku, nikdy pokrytí dossierem."

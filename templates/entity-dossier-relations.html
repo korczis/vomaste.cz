@@ -3,9 +3,12 @@
 
 {% block content %}
 <main class="mx-auto max-w-6xl px-6 py-12 text-white">
+  {#- T-028 fáze F: filtrovaný pohled nad kanonickými relations čte
+      předfiltrovaný view model (build-view-models.mjs visibleRecords),
+      ne get_section + subjects filtr v šabloně. -#}
   {% set dossier_slug = section.extra.dossier %}
-  {% set canonical_slug = section.extra.canonical_dossier %}
-  {% set subject = section.extra.subject %}
+  {% set idx = load_data(path="data/" ~ section.extra.view_model) %}
+  {% set filtered = idx.rows %}
 
   {{ ui::page_header(title=section.title, description=section.description, breadcrumb_items=[
     "Dossiery::" ~ get_url(path="@/dossiers/_index.md"),
@@ -15,40 +18,28 @@
 
   <article class="dossier-prose mb-10">{{ section.content | safe }}</article>
 
-  {% set canonical = get_section(path="dossiers/" ~ canonical_slug ~ "/relations/_index.md") %}
-  {% set_global filtered = [] %}
-  {% for r in canonical.pages %}
-    {% if r.extra.subjects and r.extra.subjects is containing(subject) %}
-      {% set_global filtered = filtered | concat(with=[r]) %}
-    {% endif %}
-  {% endfor %}
-
-  {% set factual = filtered | filter(attribute="extra.status", value="corroborated") %}
-  {% set disputed = filtered | filter(attribute="extra.status", value="disputed") %}
+  {% set factual = filtered | filter(attribute="status", value="corroborated") %}
+  {% set disputed = filtered | filter(attribute="status", value="disputed") %}
   <div class="mb-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
     {{ ui::stat_tile(value=filtered | length, label="Vztahů celkem") }}
     {{ ui::stat_tile(value=factual | length, label="Fakt") }}
     {{ ui::stat_tile(value=disputed | length, label="Sporné") }}
   </div>
 
-  {% set entity = get_section(path="entities/_index.md") %}
-
   {% if filtered | length == 0 %}
     {{ ui::empty_state(message="Žádný vztah v tomto rozsahu.") }}
   {% else %}
   <div class="divide-y divide-white/10 rounded-lg border border-white/10">
     {% for r in filtered %}
-    {% set source_entity = entity.pages | filter(attribute="extra.entity_id", value=r.extra.source) | first %}
-    {% set target_entity = entity.pages | filter(attribute="extra.entity_id", value=r.extra.target) | first %}
     <article class="flex flex-col gap-1 p-3 text-sm sm:flex-row sm:flex-wrap sm:items-center sm:gap-2">
-      <span class="font-mono text-[0.65rem] text-white/55">{{ r.extra.rel_id }}</span>
-      {% if source_entity %}<a href="{{ source_entity.permalink | safe }}" class="inline-flex min-h-6 items-center font-medium text-white no-underline hover:underline">{{ source_entity.title }}</a>{% else %}<span class="text-white/50">{{ r.extra.source }}</span>{% endif %}
+      <span class="font-mono text-[0.65rem] text-white/55">{{ r.identifier }}</span>
+      {% if r.from.title %}<a href="{{ config.base_url }}{{ r.from.route }}" class="inline-flex min-h-6 items-center font-medium text-white no-underline hover:underline">{{ r.from.title }}</a>{% else %}<span class="text-white/50">{{ r.from.entityId }}</span>{% endif %}
       <span aria-hidden="true" class="text-white/55">&rarr;</span>
-      <a href="{{ r.permalink | safe }}" class="id-chip text-[#f3e5c0] no-underline hover:underline">{{ r.extra.label }}</a>
+      <a href="{{ config.base_url }}{{ r.route }}" class="id-chip text-[#f3e5c0] no-underline hover:underline">{{ r.label }}</a>
       <span aria-hidden="true" class="text-white/55">&rarr;</span>
-      {% if target_entity %}<a href="{{ target_entity.permalink | safe }}" class="inline-flex min-h-6 items-center font-medium text-white no-underline hover:underline">{{ target_entity.title }}</a>{% else %}<span class="text-white/50">{{ r.extra.target }}</span>{% endif %}
-      {{ ui::relation_status(status=r.extra.status) }}
-      {% if r.extra.subjects | length > 1 %}<span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.6rem] uppercase tracking-wide text-white/55 ml-auto">sdílené</span>{% endif %}
+      {% if r.to.title %}<a href="{{ config.base_url }}{{ r.to.route }}" class="inline-flex min-h-6 items-center font-medium text-white no-underline hover:underline">{{ r.to.title }}</a>{% else %}<span class="text-white/50">{{ r.to.entityId }}</span>{% endif %}
+      {{ ui::relation_status(status=r.status) }}
+      {% if r.subjects | length > 1 %}<span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.6rem] uppercase tracking-wide text-white/55 ml-auto">sdílené</span>{% endif %}
     </article>
     {% endfor %}
   </div>

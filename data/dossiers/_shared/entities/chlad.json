@@ -21,5 +21,6 @@
   ],
   "routeAliases": [
     "/dossiers/macinka-turek/entities/chlad/"
-  ]
+  ],
+  "order": 12
 }

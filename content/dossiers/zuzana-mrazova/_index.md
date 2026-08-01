@@ -1,21 +1,29 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Zuzana Mrázová"
 description = "Neutrální, zdroji doložený přehled o osobě Zuzana Mrázová — ministryně pro místní rozvoj. Autorizovaný rozsah dle AUTH-2026-07-30-P; registry se teprve plní."
 template = "entity-dossier.html"
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+view_model = "generated/views/dossiers/zuzana-mrazova/overview.json"
 dossier = "zuzana-mrazova"
 dossier_title = "Zuzana Mrázová"
+record_type = "dossier"
 dossier_type = "entity"
 canonical_dossier = "zuzana-mrazova"
 subject = "mrazova"
 lang = "cs"
 seo_type = "ProfilePage"
-subject_entities = ["mrazova"]
-subjects = ["Zuzana Mrázová"]
 updated = "2026-07-30"
 reviewed_at = "2026-07-30"
+subject_entities = ["mrazova"]
+subjects = ["Zuzana Mrázová"]
 
+[extra.authorization]
+authorized = true
+record_ids = ["AUTH-2026-07-30-P"]
 
 [[extra.timeline]]
 date = "2026-05"
@@ -44,6 +52,7 @@ title = "25. 7. Seznam Zprávy informovaly, že mostecký magistrát uložil Mr�
 anchor = "kauza-pokuta-stret-zajmu"
 dot = "dot-fact"
 subjects = ["mrazova"]
+
 [[extra.timeline]]
 date = "2021-01"
 title = "Mrázová získává darem polovinu parcely v Bílině od tehdejšího manžela Romana Schwarze"
@@ -167,10 +176,6 @@ label = "Sledované téma"
 summary = "Výzvy k rezignaci a podnět resortu spravedlnosti — viz tvrzení CLM-16, CLM-17, CLM-18, CLM-19."
 claims = ["CLM-24", "CLM-25", "CLM-26", "CLM-51", "CLM-52", "CLM-53", "CLM-56"]
 subjects = ["mrazova"]
-
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-P"]
 +++
 Zuzana Mrázová zastává funkci ministryně pro místní rozvoj ve třetí vládě Andreje Babiše (viz
 `data/government.toml`, ověřeno proti oficiálnímu seznamu členů vlády).

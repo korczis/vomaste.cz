@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-49"
 description = "Tejc k důsledkům prezidentova výkladu uvedl: „Přijetí výkladu pana prezidenta by znamenalo zásadní změnu fungování českého ústavního systému"
 template = "dossier-claim.html"
 weight = 49
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-49"
+view_model = "generated/views/dossiers/jeronym-tejc/claims/clm-49.json"
 dossier = "jeronym-tejc"
 record_type = "claim"
 lang = "cs"
@@ -15,5 +19,4 @@ summary = "Tejc k důsledkům prezidentova výkladu uvedl: „Přijetí výkladu
 sources = ["SRC-23"]
 subjects = ["tejc"]
 +++
-
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jeronym-tejc/_index.md#registr-tvrzeni).

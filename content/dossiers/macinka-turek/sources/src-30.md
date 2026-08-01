@@ -1,4 +1,5 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-30 — HN.cz (Hospodářské noviny)"
 description = "Turkovo pozdější vyjádření: „Trvám na tom, že jsem žádný trestný čin nespáchal.“"
 template = "dossier-source.html"
@@ -6,6 +7,9 @@ weight = 30
 aliases = ["/dossier/zdroje/src-30/"]
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-30"
+view_model = "generated/views/dossiers/macinka-turek/sources/src-30.json"
 subjects = ["turek"]
 dossier = "macinka-turek"
 record_type = "source"
@@ -14,11 +18,10 @@ src_id = "SRC-30"
 outlet = "HN.cz (Hospodářské noviny)"
 src_type = "zpravodajství"
 url = "https://domaci.hn.cz/c1-67759680-turek-odmita-obvineni-ze-znasilneni-a-nasili-na-byvale-partnerce-trestny-cin-jsem-nespachal-rika"
-retrieved = "2026-07-22"
 published = "2025-07-08"
+retrieved = "2026-07-22"
 claims = ["CLM-25", "CLM-26"]
 +++
-
 Druhá nezávislá redakce (Economia) potvrzuje totéž jádro kauzy jako
 SRC-28/SRC-29, s odstupem asi dvou týdnů od prvních zpráv. Turek zde
 opakuje popření: „Trvám na tom, že jsem žádný trestný čin nespáchal,"

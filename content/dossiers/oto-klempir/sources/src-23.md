@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-23 — Aktuálně.cz"
 description = "Nedávejte ministerstvo kultury Motoristům, resort rozloží, varují umělci Babiše"
 template = "dossier-source.html"
 weight = 23
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-23"
+view_model = "generated/views/dossiers/oto-klempir/sources/src-23.json"
 subjects = ["klempir"]
 dossier = "oto-klempir"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2025-10-17"
 retrieved = "2026-07-30"
 claims = ["CLM-40", "CLM-42"]
 +++
-
 **Nedávejte ministerstvo kultury Motoristům, resort rozloží, varují umělci Babiše**
 
 Otevřený dopis zhruba 500 umělců prezidentu Pavlovi a Andreji Babišovi proti obsazení ministerstva kultury Motoristy; obavy z politické kontroly umělecké produkce.

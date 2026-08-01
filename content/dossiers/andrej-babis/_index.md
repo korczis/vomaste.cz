@@ -1,20 +1,29 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Andrej Babiš"
 description = "Neutrální, zdroji doložený přehled o Andreji Babišovi — předsedovi vlády ČR. Procesní stav kauz je odlišen od rozhodnutí o vině."
 template = "entity-dossier.html"
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis"
+view_model = "generated/views/dossiers/andrej-babis/overview.json"
 dossier = "andrej-babis"
 dossier_title = "Andrej Babiš"
+record_type = "dossier"
 dossier_type = "entity"
 canonical_dossier = "andrej-babis"
 subject = "babis"
 lang = "cs"
 seo_type = "ProfilePage"
-subject_entities = ["babis"]
-subjects = ["Andrej Babiš"]
 updated = "2026-08-01"
 reviewed_at = "2026-08-01"
+subject_entities = ["babis"]
+subjects = ["Andrej Babiš"]
+
+[extra.authorization]
+authorized = true
+record_ids = ["AUTH-2026-07-30-C", "AUTH-2026-07-30-E"]
 
 [[extra.timeline]]
 date = "2021-04-24"
@@ -36,170 +45,6 @@ title = "Ústavní soud odmítl stížnost Kosteleckých uzenin; správní věte
 anchor = "kauza-kostelecke"
 dot = "dot-fact"
 subjects = ["babis"]
-
-[[extra.cases]]
-anchor = "kauza-audity-ek"
-period = "2019–2022"
-title = "Audity Evropské komise ke střetu zájmů"
-status = "status-disputed"
-label = "Uzavřeno 2022 splněním doporučení — ne zproštěním"
-summary = "Auditní proces zahájený 2019 na podnět nevládní organizace; závěrečná zpráva z dubna 2021 uzavřela, že Babiš ovládá svěřenské fondy a jejich prostřednictvím Agrofert, a označila dotace firmám skupiny po 9. 2. 2017 za neoprávněné s doporučením stoprocentní finanční opravy. České ministerstvo se závěry nesouhlasilo, žádosti o platbu ale pozastavilo. Komise audit uzavřela 20. 7. 2022 po provedení doporučení — audit je kontrolní nástroj, ne soud, a nerozhoduje o trestní odpovědnosti."
-claims = ["CLM-43", "CLM-44", "CLM-45", "CLM-46"]
-subjects = ["babis"]
-
-[[extra.cases]]
-anchor = "kauza-kostelecke"
-period = "2018–2026"
-title = "Kostelecké uzeniny: zrušená dotace z Programu rozvoje venkova"
-status = "status-corroborated"
-label = "Pravomocně skončeno; spor o nárok na dotaci, ne o vině"
-summary = "Dotaci z Programu rozvoje venkova z roku 2018 na inovaci technologie výroby masných výrobků schválil SZIF a Ministerstvo zemědělství ji zrušilo pro střet zájmů tehdejšího premiéra. Nejvyšší správní soud kasační stížnost 28. 11. 2025 zamítl s tím, že nepřímý vliv lze vykonávat i přes svěřenské fondy; Ústavní soud stížnost 1. 4. 2026 odmítl jako zjevně neopodstatněnou. Rozhodnuto je o nároku na dotaci, ne o trestní odpovědnosti kohokoli."
-claims = ["CLM-18", "CLM-19", "CLM-47", "CLM-48"]
-subjects = ["babis"]
-
-[[extra.cases]]
-anchor = "kauza-synbiol-dividenda"
-period = "2025–2026"
-title = "Co zůstalo mimo fond: SynBiol, Hartenberg a dividenda 4,25 mld."
-status = "status-disputed"
-label = "Otevřené; legální kroky, sporný rozsah povinnosti"
-summary = "Do svěřenského fondu vložil pouze Agrofert — SynBiol (podíl 87,75 %), fond Hartenberg a nemovitosti zůstaly mimo. V roce 2025, tedy před vkladem, mu Agrofert vyplatil dividendu 5 mld. Kč v hrubém (4,25 mld. po zdanění). Evropská komise sleduje střet zájmů i u SynBiolu a Hartenbergu. Výplata dividendy i ponechání aktiv mimo fond jsou samy o sobě legální; sporný je zákonný rozsah povinnosti, o němž žádný orgán podle citovaných zdrojů nerozhodl."
-claims = ["CLM-37", "CLM-39", "CLM-41", "CLM-42"]
-subjects = ["babis"]
-
-[[extra.cases]]
-anchor = "kauza-evropske-dotace"
-period = "2025–"
-title = "Evropské dotace: pozastavené proplácení a řízení evropské prokuratury"
-status = "status-disputed"
-label = "Otevřené; řízení na neznámého pachatele, nikdo není obviněn"
-summary = "Národní fond administraci dotací skupině Agrofert obnovil, Evropská komise k 5. 6. 2026 neproplatila nic a dopisem z 20. 5. 2026 si vyžádala vysvětlení struktury fondu. Evropská prokuratura zahájila 24. 5. 2026 trestní řízení k vyplácení evropských dotací — vedené na neznámého pachatele, bez obviněného; zahájení řízení není obvinění ani rozhodnutí o vině."
-claims = ["CLM-25", "CLM-26", "CLM-27", "CLM-28", "CLM-29"]
-subjects = ["babis"]
-
-[[extra.cases]]
-anchor = "kauza-capi-hnizdo"
-period = "2025–"
-title = "Čapí hnízdo — dotační kauza"
-status = "status-disputed"
-label = "Nepravomocný rozsudek nad spoluobžalovanou, o Babišovi nerozhodnuto"
-summary = "Spor o dotaci 50 mil. Kč na areál Čapí hnízdo z let 2007–2008; dotaci firma vrátila v roce 2018. Městský soud oba obžalované zprostil v lednu 2023 i v únoru 2024, odvolací soud obě zproštění zrušil (naposledy 23. 6. 2025) a vrátil věc se závazným právním názorem; ten 4. 5. 2026 uznal nepravomocně vinnou spoluobžalovanou Janu Nagyovou. Nic z toho není pravomocné, rozsudek nad spoluobžalovanou se netýká Andreje Babiše, jehož stíhání je po nevydání Sněmovnou přerušeno, a oba obžalovaní vinu odmítají."
-claims = ["CLM-01", "CLM-02", "CLM-03", "CLM-07", "CLM-20", "CLM-49", "CLM-50", "CLM-51", "CLM-52"]
-subjects = ["babis"]
-
-[[extra.cases]]
-anchor = "kauza-nemovitosti-francie"
-period = "2022–2026"
-title = "Nemovitosti ve Francii: předběžné vyšetřování PNF"
-status = "status-single"
-label = "Vyšetřování uzavřeno, věc u prokuratury; bez obvinění"
-summary = "PNF vede od 24. 2. 2022 předběžné vyšetřování pro podezření z daňového podvodu a praní peněz kolem nákupu nemovitostí na jihu Francie; o stíhání nebylo rozhodnuto a Babiš pochybení odmítá. Majetkovou strukturu nákupů (BLAKEY FINANCE, BOYNE HOLDING, SCP Bigaud) popisuje nezávisle projekt Pandora Papers; offshore struktura sama o sobě není protiprávní a o nezákonnosti nákupů žádný orgán nerozhodl. V květnu 2026 francouzská policie vyšetřování uzavřela a případ převzala Národní finanční prokuratura, která má o dalším postupu rozhodnout do konce roku 2026; Babiš po opětovném nástupu do funkce premiéra koncem roku 2025 získal podle francouzských pravidel imunitu chránící ho po dobu výkonu funkce před případným stíháním — jde o procesní ochranu, ne o rozhodnutí o vině či nevině."
-claims = ["CLM-13", "CLM-14", "CLM-15", "CLM-31", "CLM-33", "CLM-34", "CLM-54"]
-subjects = ["babis"]
-
-[[extra.cases]]
-anchor = "kauza-stret-zajmu"
-period = "2026"
-title = "Střet zájmů a svěřenský fond RSVP Trust"
-status = "status-disputed"
-label = "Otevřené, spor pokračuje"
-summary = "Akcie Agrofertu vloženy do svěřenského fondu; Babiš považuje střet zájmů za vyřešený, jmenovaní oponenti a podle citovaného zpravodajství i Evropská komise ne."
-claims = ["CLM-04", "CLM-05", "CLM-06"]
-subjects = ["babis"]
-
-[[extra.cases]]
-anchor = "kauza-ch-reklamy"
-period = "2019–2024"
-title = "Čapí hnízdo: reklamní a daňová větev"
-status = "status-corroborated"
-label = "Definitivně odloženo — trestný čin nezjištěn"
-summary = "Policie prověřovala platby více než deseti firem Agrofertu za reklamu na Čapím hnízdě za více než 270 milionů korun z let 2010–2013 pro podezření z krácení daní. Věc dvakrát odložila, trestný čin nezjistila; ani na základě pěti znaleckých posudků se nepodařilo objasnit rozsah zadané reklamy a její obvyklou cenu. Státní zástupce odložení v roce 2022 potvrdil a nejvyšší státní zástupce v roce 2024 mimořádnou kontrolu nenařídil. Odložení znamená, že orgány nezískaly základ pro trestní pokračování — není to potvrzení přiměřenosti plateb ani zjištění podvodu; finanční správa podle citovaného zpravodajství pravomocně doměřila Agrofertu daň 1,2 milionu korun."
-claims = ["CLM-69", "CLM-70", "CLM-71"]
-subjects = ["babis"]
-
-[[extra.cases]]
-anchor = "kauza-ch-olaf"
-period = "2016–2018"
-title = "Čapí hnízdo: šetření OLAF a vrácení dotace"
-status = "status-single"
-label = "Dotace vrácena — vrácení není přiznání viny"
-summary = "Evropský úřad pro boj proti podvodům (OLAF) ve zveřejněných částech závěrečné zprávy hovořil o nesrovnalostech a doporučil vyjmout 42 497 827 Kč z evropského financování; Ministerstvo financí v lednu 2018 navrhlo doporučení akceptovat. Společnost Imoba v červnu 2018 dotaci téměř 50 milionů korun vrátila, do dohody ale prosadila, že podmínky přidělení dotace neporušila, a zprávu OLAF označila za nepoužitelný důkaz. Vrácení peněz je účetní a smluvní krok — není to rozsudek o vině a nezasahuje do trestního řízení."
-claims = ["CLM-52", "CLM-72", "CLM-73", "CLM-74"]
-subjects = ["babis"]
-
-[[extra.cases]]
-anchor = "kauza-penam"
-period = "2018–"
-title = "Penam / Pekárna Zelená louka: dotace na toastovou linku"
-status = "status-disputed"
-label = "Obžaloba podána, o vině soud nerozhodl"
-summary = "Stomilionová dotace z programu Inovace na výrobní linku na toastový chléb: Evropská komise ji odmítla proplatit a peníze šly z českého rozpočtu, ministerstvo průmyslu dotaci v roce 2022 odňalo s odkazem na nedostatečnou inovativnost projektu. Státní zástupce evropské prokuratury podal 22. 6. 2026 obžalobu na společnost Pekárna Zelená louka a dvě fyzické osoby pro dotační podvod a poškození finančních zájmů EU. Obžaloba není rozhodnutí o vině, věc projedná Krajský soud v Praze; Agrofert trvá na tom, že postupoval v souladu s předpisy."
-claims = ["CLM-55", "CLM-56", "CLM-57", "CLM-58", "CLM-59"]
-subjects = ["babis"]
-
-[[extra.cases]]
-anchor = "kauza-pgrlf"
-period = "2026–"
-title = "PGRLF: žaloby na 28 společností skupiny"
-status = "status-disputed"
-label = "Podané žaloby — soud o nich nerozhodl"
-summary = "Podpůrný a garanční rolnický a lesnický fond podal 20. 7. 2026 žaloby na 28 firem, které byly v rozhodném období součástí koncernu Agrofert, o vrácení podpor v souhrnné výši 22 milionů korun poskytnutých v letech 2017–2021, s odkazem na rozpor s pravidly střetu zájmů; výzvě k dobrovolnému vrácení firmy nevyhověly. Jde o civilní vymáhání proti společnostem, nikoli o obžalobu Andreje Babiše, a podaná žaloba není rozhodnutí soudu; Agrofert nároky odmítá."
-claims = ["CLM-60", "CLM-61"]
-subjects = ["babis"]
-
-[[extra.cases]]
-anchor = "kauza-szif-projekty"
-period = "2019–2025"
-title = "SZIF: 21 ukončených projektů za 357 milionů"
-status = "status-disputed"
-label = "Správní spory o nárok na dotace, ne o vině"
-summary = "SZIF v roce 2019 kvůli auditu Evropské komise pozastavil firmám skupiny 28 projektů za více než půl miliardy korun a u 21 z nich za zhruba 357 milionů počátkem roku 2023 ukončil administraci; firmy se bránily žalobami. Městský soud v Praze v dubnu 2025 žaloby čtyř firem zamítl, Nejvyšší správní soud už v lednu 2025 vyhověl kasačním stížnostem SZIF a v srpnu 2025 zamítl stížnost Sady CZ se závěrem, že rozhodný je stav v době podání žádosti. Vše jsou správní spory o nárok na dotaci — o trestní odpovědnosti kohokoli nerozhodují."
-claims = ["CLM-62", "CLM-63", "CLM-64", "CLM-65"]
-subjects = ["babis"]
-
-[[extra.cases]]
-anchor = "kauza-vodnanska-drubez"
-period = "2018–2026"
-title = "Vodňanská drůbež: 75milionová dotace"
-status = "status-single"
-label = "Ústavní stížnost odmítnuta — spor o dotaci, ne o vině"
-summary = "Smlouvu o dotaci 75 milionů korun z Programu rozvoje venkova firma podepsala v roce 2018, SZIF administraci žádosti v roce 2023 ukončil. Správní žalobu zamítl Městský soud v Praze, kasační stížnost Nejvyšší správní soud a Ústavní soud stížnost v lednu 2026 odmítl; podle citovaného usnesení si Andrej Babiš přes formální roli svěřenských správců ponechal faktický rozhodující vliv. Rozhodnuto je o nároku firmy na dotaci, ne o trestní odpovědnosti kohokoli."
-claims = ["CLM-66", "CLM-67"]
-subjects = ["babis"]
-
-[[extra.cases]]
-anchor = "kauza-navos"
-period = "2018–2025"
-title = "Navos Farm Technic: veřejné zakázky malého rozsahu"
-status = "status-corroborated"
-label = "NSS: zákaz platí i pro zakázky malého rozsahu"
-summary = "Moravskoslezský kraj zadal firmě Navos Farm Technic ze skupiny Agrofert zakázku při budování školních dílen v Bruntále; Ministerstvo pro místní rozvoj kvůli střetu zájmů odmítlo proplatit dotace za více než 43 milionů korun. Nejvyšší správní soud 11. 12. 2025 zamítl kasační stížnost kraje: dodavatel byl ovládán veřejným funkcionářem, a zákaz podle zákona o střetu zájmů proto dopadá i na zakázky malého rozsahu. Jde o výklad dotačních a zadávacích pravidel ve správním soudnictví, ne o rozhodnutí o trestní vině."
-claims = ["CLM-68"]
-subjects = ["babis"]
-
-[[extra.cases]]
-anchor = "kauza-pandora-ceska-vetev"
-period = "2021–2022"
-title = "Pandora Papers: česká větev"
-status = "status-single"
-label = "Předáno do zahraničí; odložení není potvrzení zákonnosti"
-summary = "NCOZ v únoru 2022 uzavřela, že jednání popsané v Pandora Papers nelze posoudit jako podezření ze spáchání trestného činu na území České republiky, a poznatky předala policejnímu orgánu jiné členské země EU — jde o závěr o místní příslušnosti, ne o meritorní zproštění ani o potvrzení zákonnosti transakcí. Souběžné správní prověřování možného přestupku proti zákonu o střetu zájmů naráželo na nedostupnost zahraničních dokumentů a hrozící zánik odpovědnosti; Babiš jakékoli pochybení odmítá."
-claims = ["CLM-75", "CLM-76"]
-subjects = ["babis"]
-
-[[extra.cases]]
-anchor = "kauza-ab-trusty"
-period = "2017–2025"
-title = "Původní svěřenské fondy a návrat k přímému vlastnictví"
-status = "status-corroborated"
-label = "Majetková posloupnost — sama o sobě legální"
-summary = "V únoru 2017 vložil Babiš akcie Agrofertu do svěřenských fondů AB private trust I a II v reakci na zpřísnění úpravy střetu zájmů. V prosinci 2024 převedl zhruba 90 % podílu z prvního fondu zpět na sebe a 15. října 2025 byl ukončen i druhý fond — stal se opět jediným vlastníkem. Jde o doloženou majetkovou posloupnost, která sama o sobě není protiprávní; k jejím účinkům na střet zájmů se v samostatných kauzách tohoto dossieru vyslovují správní soudy a Evropská komise."
-claims = ["CLM-16", "CLM-17"]
-subjects = ["babis"]
-
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-C", "AUTH-2026-07-30-E"]
 
 [[extra.timeline]]
 date = "2018"
@@ -361,8 +206,167 @@ title = "PGRLF podal žaloby na 28 firem skupiny o 22 mil. Kč"
 anchor = "kauza-pgrlf"
 dot = "dot-disputed"
 subjects = ["babis"]
-+++
 
+[[extra.cases]]
+anchor = "kauza-audity-ek"
+period = "2019–2022"
+title = "Audity Evropské komise ke střetu zájmů"
+status = "status-disputed"
+label = "Uzavřeno 2022 splněním doporučení — ne zproštěním"
+summary = "Auditní proces zahájený 2019 na podnět nevládní organizace; závěrečná zpráva z dubna 2021 uzavřela, že Babiš ovládá svěřenské fondy a jejich prostřednictvím Agrofert, a označila dotace firmám skupiny po 9. 2. 2017 za neoprávněné s doporučením stoprocentní finanční opravy. České ministerstvo se závěry nesouhlasilo, žádosti o platbu ale pozastavilo. Komise audit uzavřela 20. 7. 2022 po provedení doporučení — audit je kontrolní nástroj, ne soud, a nerozhoduje o trestní odpovědnosti."
+claims = ["CLM-43", "CLM-44", "CLM-45", "CLM-46"]
+subjects = ["babis"]
+
+[[extra.cases]]
+anchor = "kauza-kostelecke"
+period = "2018–2026"
+title = "Kostelecké uzeniny: zrušená dotace z Programu rozvoje venkova"
+status = "status-corroborated"
+label = "Pravomocně skončeno; spor o nárok na dotaci, ne o vině"
+summary = "Dotaci z Programu rozvoje venkova z roku 2018 na inovaci technologie výroby masných výrobků schválil SZIF a Ministerstvo zemědělství ji zrušilo pro střet zájmů tehdejšího premiéra. Nejvyšší správní soud kasační stížnost 28. 11. 2025 zamítl s tím, že nepřímý vliv lze vykonávat i přes svěřenské fondy; Ústavní soud stížnost 1. 4. 2026 odmítl jako zjevně neopodstatněnou. Rozhodnuto je o nároku na dotaci, ne o trestní odpovědnosti kohokoli."
+claims = ["CLM-18", "CLM-19", "CLM-47", "CLM-48"]
+subjects = ["babis"]
+
+[[extra.cases]]
+anchor = "kauza-synbiol-dividenda"
+period = "2025–2026"
+title = "Co zůstalo mimo fond: SynBiol, Hartenberg a dividenda 4,25 mld."
+status = "status-disputed"
+label = "Otevřené; legální kroky, sporný rozsah povinnosti"
+summary = "Do svěřenského fondu vložil pouze Agrofert — SynBiol (podíl 87,75 %), fond Hartenberg a nemovitosti zůstaly mimo. V roce 2025, tedy před vkladem, mu Agrofert vyplatil dividendu 5 mld. Kč v hrubém (4,25 mld. po zdanění). Evropská komise sleduje střet zájmů i u SynBiolu a Hartenbergu. Výplata dividendy i ponechání aktiv mimo fond jsou samy o sobě legální; sporný je zákonný rozsah povinnosti, o němž žádný orgán podle citovaných zdrojů nerozhodl."
+claims = ["CLM-37", "CLM-39", "CLM-41", "CLM-42"]
+subjects = ["babis"]
+
+[[extra.cases]]
+anchor = "kauza-evropske-dotace"
+period = "2025–"
+title = "Evropské dotace: pozastavené proplácení a řízení evropské prokuratury"
+status = "status-disputed"
+label = "Otevřené; řízení na neznámého pachatele, nikdo není obviněn"
+summary = "Národní fond administraci dotací skupině Agrofert obnovil, Evropská komise k 5. 6. 2026 neproplatila nic a dopisem z 20. 5. 2026 si vyžádala vysvětlení struktury fondu. Evropská prokuratura zahájila 24. 5. 2026 trestní řízení k vyplácení evropských dotací — vedené na neznámého pachatele, bez obviněného; zahájení řízení není obvinění ani rozhodnutí o vině."
+claims = ["CLM-25", "CLM-26", "CLM-27", "CLM-28", "CLM-29"]
+subjects = ["babis"]
+
+[[extra.cases]]
+anchor = "kauza-capi-hnizdo"
+period = "2025–"
+title = "Čapí hnízdo — dotační kauza"
+status = "status-disputed"
+label = "Nepravomocný rozsudek nad spoluobžalovanou, o Babišovi nerozhodnuto"
+summary = "Spor o dotaci 50 mil. Kč na areál Čapí hnízdo z let 2007–2008; dotaci firma vrátila v roce 2018. Městský soud oba obžalované zprostil v lednu 2023 i v únoru 2024, odvolací soud obě zproštění zrušil (naposledy 23. 6. 2025) a vrátil věc se závazným právním názorem; ten 4. 5. 2026 uznal nepravomocně vinnou spoluobžalovanou Janu Nagyovou. Nic z toho není pravomocné, rozsudek nad spoluobžalovanou se netýká Andreje Babiše, jehož stíhání je po nevydání Sněmovnou přerušeno, a oba obžalovaní vinu odmítají."
+claims = ["CLM-01", "CLM-02", "CLM-03", "CLM-07", "CLM-20", "CLM-49", "CLM-50", "CLM-51", "CLM-52"]
+subjects = ["babis"]
+
+[[extra.cases]]
+anchor = "kauza-nemovitosti-francie"
+period = "2022–2026"
+title = "Nemovitosti ve Francii: předběžné vyšetřování PNF"
+status = "status-single"
+label = "Vyšetřování uzavřeno, věc u prokuratury; bez obvinění"
+summary = "PNF vede od 24. 2. 2022 předběžné vyšetřování pro podezření z daňového podvodu a praní peněz kolem nákupu nemovitostí na jihu Francie; o stíhání nebylo rozhodnuto a Babiš pochybení odmítá. Majetkovou strukturu nákupů (BLAKEY FINANCE, BOYNE HOLDING, SCP Bigaud) popisuje nezávisle projekt Pandora Papers; offshore struktura sama o sobě není protiprávní a o nezákonnosti nákupů žádný orgán nerozhodl. V květnu 2026 francouzská policie vyšetřování uzavřela a případ převzala Národní finanční prokuratura, která má o dalším postupu rozhodnout do konce roku 2026; Babiš po opětovném nástupu do funkce premiéra koncem roku 2025 získal podle francouzských pravidel imunitu chránící ho po dobu výkonu funkce před případným stíháním — jde o procesní ochranu, ne o rozhodnutí o vině či nevině."
+claims = ["CLM-13", "CLM-14", "CLM-15", "CLM-31", "CLM-33", "CLM-34", "CLM-54"]
+subjects = ["babis"]
+
+[[extra.cases]]
+anchor = "kauza-stret-zajmu"
+period = "2026"
+title = "Střet zájmů a svěřenský fond RSVP Trust"
+status = "status-disputed"
+label = "Otevřené, spor pokračuje"
+summary = "Akcie Agrofertu vloženy do svěřenského fondu; Babiš považuje střet zájmů za vyřešený, jmenovaní oponenti a podle citovaného zpravodajství i Evropská komise ne."
+claims = ["CLM-04", "CLM-05", "CLM-06"]
+subjects = ["babis"]
+
+[[extra.cases]]
+anchor = "kauza-ch-reklamy"
+period = "2019–2024"
+title = "Čapí hnízdo: reklamní a daňová větev"
+status = "status-corroborated"
+label = "Definitivně odloženo — trestný čin nezjištěn"
+summary = "Policie prověřovala platby více než deseti firem Agrofertu za reklamu na Čapím hnízdě za více než 270 milionů korun z let 2010–2013 pro podezření z krácení daní. Věc dvakrát odložila, trestný čin nezjistila; ani na základě pěti znaleckých posudků se nepodařilo objasnit rozsah zadané reklamy a její obvyklou cenu. Státní zástupce odložení v roce 2022 potvrdil a nejvyšší státní zástupce v roce 2024 mimořádnou kontrolu nenařídil. Odložení znamená, že orgány nezískaly základ pro trestní pokračování — není to potvrzení přiměřenosti plateb ani zjištění podvodu; finanční správa podle citovaného zpravodajství pravomocně doměřila Agrofertu daň 1,2 milionu korun."
+claims = ["CLM-69", "CLM-70", "CLM-71"]
+subjects = ["babis"]
+
+[[extra.cases]]
+anchor = "kauza-ch-olaf"
+period = "2016–2018"
+title = "Čapí hnízdo: šetření OLAF a vrácení dotace"
+status = "status-single"
+label = "Dotace vrácena — vrácení není přiznání viny"
+summary = "Evropský úřad pro boj proti podvodům (OLAF) ve zveřejněných částech závěrečné zprávy hovořil o nesrovnalostech a doporučil vyjmout 42 497 827 Kč z evropského financování; Ministerstvo financí v lednu 2018 navrhlo doporučení akceptovat. Společnost Imoba v červnu 2018 dotaci téměř 50 milionů korun vrátila, do dohody ale prosadila, že podmínky přidělení dotace neporušila, a zprávu OLAF označila za nepoužitelný důkaz. Vrácení peněz je účetní a smluvní krok — není to rozsudek o vině a nezasahuje do trestního řízení."
+claims = ["CLM-52", "CLM-72", "CLM-73", "CLM-74"]
+subjects = ["babis"]
+
+[[extra.cases]]
+anchor = "kauza-penam"
+period = "2018–"
+title = "Penam / Pekárna Zelená louka: dotace na toastovou linku"
+status = "status-disputed"
+label = "Obžaloba podána, o vině soud nerozhodl"
+summary = "Stomilionová dotace z programu Inovace na výrobní linku na toastový chléb: Evropská komise ji odmítla proplatit a peníze šly z českého rozpočtu, ministerstvo průmyslu dotaci v roce 2022 odňalo s odkazem na nedostatečnou inovativnost projektu. Státní zástupce evropské prokuratury podal 22. 6. 2026 obžalobu na společnost Pekárna Zelená louka a dvě fyzické osoby pro dotační podvod a poškození finančních zájmů EU. Obžaloba není rozhodnutí o vině, věc projedná Krajský soud v Praze; Agrofert trvá na tom, že postupoval v souladu s předpisy."
+claims = ["CLM-55", "CLM-56", "CLM-57", "CLM-58", "CLM-59"]
+subjects = ["babis"]
+
+[[extra.cases]]
+anchor = "kauza-pgrlf"
+period = "2026–"
+title = "PGRLF: žaloby na 28 společností skupiny"
+status = "status-disputed"
+label = "Podané žaloby — soud o nich nerozhodl"
+summary = "Podpůrný a garanční rolnický a lesnický fond podal 20. 7. 2026 žaloby na 28 firem, které byly v rozhodném období součástí koncernu Agrofert, o vrácení podpor v souhrnné výši 22 milionů korun poskytnutých v letech 2017–2021, s odkazem na rozpor s pravidly střetu zájmů; výzvě k dobrovolnému vrácení firmy nevyhověly. Jde o civilní vymáhání proti společnostem, nikoli o obžalobu Andreje Babiše, a podaná žaloba není rozhodnutí soudu; Agrofert nároky odmítá."
+claims = ["CLM-60", "CLM-61"]
+subjects = ["babis"]
+
+[[extra.cases]]
+anchor = "kauza-szif-projekty"
+period = "2019–2025"
+title = "SZIF: 21 ukončených projektů za 357 milionů"
+status = "status-disputed"
+label = "Správní spory o nárok na dotace, ne o vině"
+summary = "SZIF v roce 2019 kvůli auditu Evropské komise pozastavil firmám skupiny 28 projektů za více než půl miliardy korun a u 21 z nich za zhruba 357 milionů počátkem roku 2023 ukončil administraci; firmy se bránily žalobami. Městský soud v Praze v dubnu 2025 žaloby čtyř firem zamítl, Nejvyšší správní soud už v lednu 2025 vyhověl kasačním stížnostem SZIF a v srpnu 2025 zamítl stížnost Sady CZ se závěrem, že rozhodný je stav v době podání žádosti. Vše jsou správní spory o nárok na dotaci — o trestní odpovědnosti kohokoli nerozhodují."
+claims = ["CLM-62", "CLM-63", "CLM-64", "CLM-65"]
+subjects = ["babis"]
+
+[[extra.cases]]
+anchor = "kauza-vodnanska-drubez"
+period = "2018–2026"
+title = "Vodňanská drůbež: 75milionová dotace"
+status = "status-single"
+label = "Ústavní stížnost odmítnuta — spor o dotaci, ne o vině"
+summary = "Smlouvu o dotaci 75 milionů korun z Programu rozvoje venkova firma podepsala v roce 2018, SZIF administraci žádosti v roce 2023 ukončil. Správní žalobu zamítl Městský soud v Praze, kasační stížnost Nejvyšší správní soud a Ústavní soud stížnost v lednu 2026 odmítl; podle citovaného usnesení si Andrej Babiš přes formální roli svěřenských správců ponechal faktický rozhodující vliv. Rozhodnuto je o nároku firmy na dotaci, ne o trestní odpovědnosti kohokoli."
+claims = ["CLM-66", "CLM-67"]
+subjects = ["babis"]
+
+[[extra.cases]]
+anchor = "kauza-navos"
+period = "2018–2025"
+title = "Navos Farm Technic: veřejné zakázky malého rozsahu"
+status = "status-corroborated"
+label = "NSS: zákaz platí i pro zakázky malého rozsahu"
+summary = "Moravskoslezský kraj zadal firmě Navos Farm Technic ze skupiny Agrofert zakázku při budování školních dílen v Bruntále; Ministerstvo pro místní rozvoj kvůli střetu zájmů odmítlo proplatit dotace za více než 43 milionů korun. Nejvyšší správní soud 11. 12. 2025 zamítl kasační stížnost kraje: dodavatel byl ovládán veřejným funkcionářem, a zákaz podle zákona o střetu zájmů proto dopadá i na zakázky malého rozsahu. Jde o výklad dotačních a zadávacích pravidel ve správním soudnictví, ne o rozhodnutí o trestní vině."
+claims = ["CLM-68"]
+subjects = ["babis"]
+
+[[extra.cases]]
+anchor = "kauza-pandora-ceska-vetev"
+period = "2021–2022"
+title = "Pandora Papers: česká větev"
+status = "status-single"
+label = "Předáno do zahraničí; odložení není potvrzení zákonnosti"
+summary = "NCOZ v únoru 2022 uzavřela, že jednání popsané v Pandora Papers nelze posoudit jako podezření ze spáchání trestného činu na území České republiky, a poznatky předala policejnímu orgánu jiné členské země EU — jde o závěr o místní příslušnosti, ne o meritorní zproštění ani o potvrzení zákonnosti transakcí. Souběžné správní prověřování možného přestupku proti zákonu o střetu zájmů naráželo na nedostupnost zahraničních dokumentů a hrozící zánik odpovědnosti; Babiš jakékoli pochybení odmítá."
+claims = ["CLM-75", "CLM-76"]
+subjects = ["babis"]
+
+[[extra.cases]]
+anchor = "kauza-ab-trusty"
+period = "2017–2025"
+title = "Původní svěřenské fondy a návrat k přímému vlastnictví"
+status = "status-corroborated"
+label = "Majetková posloupnost — sama o sobě legální"
+summary = "V únoru 2017 vložil Babiš akcie Agrofertu do svěřenských fondů AB private trust I a II v reakci na zpřísnění úpravy střetu zájmů. V prosinci 2024 převedl zhruba 90 % podílu z prvního fondu zpět na sebe a 15. října 2025 byl ukončen i druhý fond — stal se opět jediným vlastníkem. Jde o doloženou majetkovou posloupnost, která sama o sobě není protiprávní; k jejím účinkům na střet zájmů se v samostatných kauzách tohoto dossieru vyslovují správní soudy a Evropská komise."
+claims = ["CLM-16", "CLM-17"]
+subjects = ["babis"]
++++
 Andrej Babiš je předsedou vlády České republiky. Tento dossier pokrývá
 témata v rozsahu autorizačních záznamů v `AGENTS.md`
 (`AUTH-2026-07-30-C` a jeho rozšíření `AUTH-2026-07-30-E`): kauzu Čapí

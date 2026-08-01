@@ -1,4 +1,5 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-16 — Deník.cz (VLTAVA LABE MEDIA)"
 description = "Turkova reakce a obhajoba k příspěvkům z kauzy 2025."
 template = "dossier-source.html"
@@ -6,6 +7,9 @@ weight = 16
 aliases = ["/dossier/zdroje/src-16/"]
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-16"
+view_model = "generated/views/dossiers/macinka-turek/sources/src-16.json"
 subjects = ["turek"]
 dossier = "macinka-turek"
 record_type = "source"
@@ -14,11 +18,10 @@ src_id = "SRC-16"
 outlet = "Deník.cz (VLTAVA LABE MEDIA)"
 src_type = "zpravodajství"
 url = "https://www.denik.cz/z_domova/filip-turek-motoriste-kauza-nevhodne-prispevky-lide-hospoda-obhajoba.html"
-retrieved = "2026-07-21"
 published = "2025-10-13"
+retrieved = "2026-07-21"
 claims = ["CLM-08", "CLM-09"]
 +++
-
 Deník.cz (síť regionálních deníků, vydavatel Vltava Labe Media) zaznamenal
 Turkovu přímou reakci na zveřejněné příspěvky — odmítnutí autorství těch
 nejzávažnějších z nich a jeho vysvětlení (cizí lidé s přístupem k

@@ -19,6 +19,7 @@
   "routeAliases": [
     "/dossiers/andrej-babis/entities/scp-bigaud/"
   ],
+  "order": 65,
   "content": [
     {
       "type": "markdown",

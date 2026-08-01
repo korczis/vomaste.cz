@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-49 — Aktuálně.cz: Daně se nekrátily, reklama na Čapím hnízdě byla reálná, potvrdil konec kauzy žalobce (21. 7. 2022)"
 description = "Státní zástupce potvrdil odložení reklamní větve; tři roky prověřované platby 272 mil. Kč od více než deseti firem Agrofertu; ani pět posudků neobjasnilo rozsah reklamy a obvyklou cenu."
 template = "dossier-source.html"
 weight = 49
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-49"
+view_model = "generated/views/dossiers/andrej-babis/sources/src-49.json"
 subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2022-07-21"
 retrieved = "2026-08-01"
 claims = ["CLM-69", "CLM-70"]
 +++
-
 Aktuálně.cz informuje, že státní zástupce potvrdil rozhodnutí policie
 o odložení tzv. reklamní větve kauzy Čapí hnízdo. Kriminalisté se tři
 roky zabývali podezřením, že suma 272 milionů korun vynaložená

@@ -6,13 +6,19 @@
     content of its own. Every stat tile, case, timeline entry and relation
     below is a generated, filtered view over the canonical aggregate
     dossier's already-validated, already-sourced records — never a second
-    copy. See AGENTS.md's "Entity dossiers vs. the aggregate view". -#}
+    copy. See AGENTS.md's "Entity dossiers vs. the aggregate view".
+
+    T-028 fáze F: kauzy, timeline i vztahy pochází z view modelů
+    (data/generated/views/**) — filtr podle subjektu zůstává v šabloně,
+    stejná sémantika jako dřívější scan canonical sekce. -#}
 
 {% block content %}
 <main class="mx-auto max-w-3xl px-6 py-12 text-white">
-  {% set dossier_slug = section.extra.dossier %}
-  {% set canonical_slug = section.extra.canonical_dossier %}
-  {% set subject = section.extra.subject %}
+  {% set view = load_data(path="data/" ~ section.extra.view_model) %}
+  {% set dossier_slug = view.slug %}
+  {% set canonical_slug = view.canonicalDossier %}
+  {% set subject = view.subject %}
+  {% set canonical_view = load_data(path="data/generated/views/dossiers/" ~ canonical_slug ~ "/overview.json") %}
 
   {{ ui::page_header(title=section.title, breadcrumb_items=[
     "Domů::" ~ get_url(path="@/_index.md"),
@@ -57,10 +63,8 @@
     <a href="{{ get_url(path='@/dossiers/' ~ dossier_slug ~ '/evidence/_index.md') | safe }}" class="rounded-full border border-white/15 px-3 py-1 text-white/70 no-underline hover:border-white/30 hover:text-white">Evidence</a>
   </nav>
 
-  {% set canonical_section = get_section(path="dossiers/" ~ canonical_slug ~ "/_index.md") %}
-
   {% set_global filtered_cases = [] %}
-  {% for c in canonical_section.extra.cases %}
+  {% for c in canonical_view.cases %}
     {% if c.subjects and c.subjects is containing(subject) %}
       {% set_global filtered_cases = filtered_cases | concat(with=[c]) %}
     {% endif %}
@@ -71,7 +75,7 @@
     <div class="grid gap-4 sm:grid-cols-2">
       {% for c in filtered_cases %}
       <a href="{{ get_url(path='@/dossiers/' ~ canonical_slug ~ '/_index.md') | safe }}#{{ c.anchor }}" class="group flex flex-col rounded-xl border border-white/10 bg-white/[0.03] p-4 no-underline transition-colors hover:border-white/20 hover:bg-white/[0.06]">
-        <span class="status-badge {{ c.status }} w-fit">{{ c.label }}</span>
+        <span class="status-badge {{ c.status }} w-fit">{{ c.statusLabel }}</span>
         <span class="font-semibold text-white group-hover:text-[#f3e5c0]">{{ c.title }}</span>
         <span class="text-xs text-white/55">{{ c.period }}</span>
         <span class="mt-2 text-sm text-white/70">{{ c.summary }}</span>
@@ -81,8 +85,12 @@
   </section>
   {% endif %}
 
+  {% set_global timeline_entries = [] %}
+  {% for b in canonical_view.contentBlocks %}
+    {% if b.type == "timeline" %}{% set_global timeline_entries = b.entries %}{% endif %}
+  {% endfor %}
   {% set_global filtered_timeline = [] %}
-  {% for e in canonical_section.extra.timeline %}
+  {% for e in timeline_entries %}
     {% if e.subjects and e.subjects is containing(subject) %}
       {% set_global filtered_timeline = filtered_timeline | concat(with=[e]) %}
     {% endif %}
@@ -102,23 +110,20 @@
   </section>
   {% endif %}
 
-  {% set relations = get_section(path="dossiers/" ~ canonical_slug ~ "/relations/_index.md") %}
+  {% set relations_idx = load_data(path="data/generated/views/dossiers/" ~ canonical_slug ~ "/relations-index.json") %}
   {% set_global filtered_relations = [] %}
-  {% for r in relations.pages %}
-    {% if r.extra.subjects and r.extra.subjects is containing(subject) %}
+  {% for r in relations_idx.rows %}
+    {% if r.subjects and r.subjects is containing(subject) %}
       {% set_global filtered_relations = filtered_relations | concat(with=[r]) %}
     {% endif %}
   {% endfor %}
   {% if filtered_relations | length > 0 %}
-  {% set entity = get_section(path="entities/_index.md") %}
   <section aria-labelledby="graph-list-heading" class="mb-12">
     <h2 id="graph-list-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Vztahy ({{ filtered_relations | length }})</h2>
     <p class="mb-4 text-xs text-white/50">Interaktivní graf se všemi vztahy (včetně sdílených) je na <a href="{{ get_url(path='@/dossiers/' ~ canonical_slug ~ '/_index.md') | safe }}#graf-vztahu" class="text-[#f3e5c0] hover:underline">společném přehledu</a>.</p>
     <ul class="space-y-1.5 text-sm text-white/70">
       {% for r in filtered_relations %}
-      {% set source_entity = entity.pages | filter(attribute="extra.entity_id", value=r.extra.source) | first %}
-      {% set target_entity = entity.pages | filter(attribute="extra.entity_id", value=r.extra.target) | first %}
-      <li><span class="edge-status-dot edge-{{ r.extra.status }}"></span>{% if source_entity %}{{ source_entity.title }}{% else %}{{ r.extra.source }}{% endif %} <span aria-hidden="true" class="text-white/55">&rarr;</span> <span class="text-white/50">{{ r.extra.label }}</span> <span aria-hidden="true" class="text-white/55">&rarr;</span> {% if target_entity %}{{ target_entity.title }}{% else %}{{ r.extra.target }}{% endif %}</li>
+      <li><span class="edge-status-dot edge-{{ r.status }}"></span>{% if r.from.title %}{{ r.from.title }}{% else %}{{ r.from.entityId }}{% endif %} <span aria-hidden="true" class="text-white/55">&rarr;</span> <span class="text-white/50">{{ r.label }}</span> <span aria-hidden="true" class="text-white/55">&rarr;</span> {% if r.to.title %}{{ r.to.title }}{% else %}{{ r.to.entityId }}{% endif %}</li>
       {% endfor %}
     </ul>
   </section>

@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-51"
 description = "Předsedkyně Učitelské platformy a ředitelka Petra Mazancová k načasování uvedla: „Komplikuje to život školám i rodičům. První prázdninový tý"
 template = "dossier-claim.html"
 weight = 51
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-51"
+view_model = "generated/views/dossiers/robert-plaga/claims/clm-51.json"
 dossier = "robert-plaga"
 record_type = "claim"
 lang = "cs"
@@ -15,5 +19,4 @@ summary = "Předsedkyně Učitelské platformy a ředitelka Petra Mazancová k n
 sources = ["SRC-21"]
 subjects = ["plaga"]
 +++
-
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/robert-plaga/_index.md#registr-tvrzeni).

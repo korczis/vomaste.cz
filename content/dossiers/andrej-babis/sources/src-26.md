@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-26 — FORUM 24: Francouzská policie uzavřela vyšetřování Babišova panství za 350 milionů, případ míří k žalobci (12. 5. 2026)"
 description = "Francouzská policie uzavřela vyšetřování nákupu nemovitostí na jihu Francie; případ nyní řeší Národní finanční prokuratura (PNF), Babiš jako sitting premiér získal procesní imunitu."
 template = "dossier-source.html"
 weight = 26
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-26"
+view_model = "generated/views/dossiers/andrej-babis/sources/src-26.json"
 subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-05-12"
 retrieved = "2026-07-31"
 claims = ["CLM-54"]
 +++
-
 FORUM 24 dne 12. 5. 2026 informoval, že francouzská policie uzavřela
 vyšetřování kauzy kolem jihofrancouzského panství premiéra Andreje
 Babiše. Citace: „Případ nyní převzala Národní finanční prokuratura,

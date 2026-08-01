@@ -1,22 +1,29 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Boris Šťastný"
 description = "Neutrální, zdroji doložený přehled o Borisi Šťastném — ministru pro sport a prevenci v oblasti zdraví. Autorizovaný rozsah: nahrávací zařízení v zasedačce, odvolání vedení NSA a rozpor v číslech interakcí; registry se teprve plní."
 template = "entity-dossier.html"
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/boris-stastny"
+view_model = "generated/views/dossiers/boris-stastny/overview.json"
 dossier = "boris-stastny"
 dossier_title = "Boris Šťastný"
+record_type = "dossier"
 dossier_type = "entity"
 canonical_dossier = "boris-stastny"
 subject = "stastny"
 lang = "cs"
 seo_type = "ProfilePage"
-subject_entities = ["stastny"]
-subjects = ["Boris Šťastný"]
 updated = "2026-07-30"
 reviewed_at = "2026-07-30"
+subject_entities = ["stastny"]
+subjects = ["Boris Šťastný"]
 
-
+[extra.authorization]
+authorized = true
+record_ids = ["AUTH-2026-07-30-B"]
 
 [[extra.timeline]]
 date = "2025-12"
@@ -60,9 +67,6 @@ anchor = "kauza-nahravaci-zarizeni"
 dot = "dot-fact"
 subjects = ["stastny"]
 
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-B"]
 [[extra.timeline]]
 date = "2026-01-22"
 title = "Nahrávací zařízení nalezeno v zasedačce Úřadu vlády"
@@ -99,9 +103,7 @@ label = "Sledované téma"
 summary = "Upravené metriky na sociálních sítích — viz tvrzení CLM-32, CLM-33, CLM-34, CLM-35, CLM-36, CLM-37, CLM-38, CLM-39."
 claims = []
 subjects = ["stastny"]
-
 +++
-
 Boris Šťastný je ministrem pro sport a prevenci v oblasti zdraví ve
 třetí vládě Andreje Babiše (viz `data/government.toml`, ověřeno proti
 oficiálnímu seznamu členů vlády). Tento dossier je autorizován záznamem

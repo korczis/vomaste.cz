@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-50 — Aktuálně.cz: OLAF zjistil nesrovnalosti kolem Čapího hnízda, doporučil dotaci vyškrtnout. Česko poslechlo (4. 1. 2018)"
 description = "Zveřejněné části zprávy OLAF hovoří o nesrovnalostech; doporučeno vyjmout 42 497 827 Kč z evropského financování, Ministerstvo financí navrhlo akceptaci."
 template = "dossier-source.html"
 weight = 50
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-50"
+view_model = "generated/views/dossiers/andrej-babis/sources/src-50.json"
 subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2018-01-04"
 retrieved = "2026-08-01"
 claims = ["CLM-72"]
 +++
-
 Aktuálně.cz popisuje závěry šetření Evropského úřadu pro boj proti
 podvodům (OLAF) k Čapímu hnízdu: zveřejněné části zprávy hovoří
 o „nesrovnalostech“ a úřad doporučil přijmout opatření, aby částka

@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-40"
 description = "Dětský ombudsman Martin Beneš k práci komise uvedl: „Bylo by neodpovědné veřejně hodnotit situaci ve chvíli, kdy práce komise teprve probíhá"
 template = "dossier-claim.html"
 weight = 40
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-40"
+view_model = "generated/views/dossiers/jeronym-tejc/claims/clm-40.json"
 dossier = "jeronym-tejc"
 record_type = "claim"
 lang = "cs"
@@ -15,5 +19,4 @@ summary = "Dětský ombudsman Martin Beneš k práci komise uvedl: „Bylo by ne
 sources = ["SRC-20"]
 subjects = ["tejc"]
 +++
-
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jeronym-tejc/_index.md#registr-tvrzeni).

@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-03 — Seznam Zprávy"
 description = "Ministr Červený po zvolení převedl rodinný dům na svou manželku, ten nepřiznal"
 template = "dossier-source.html"
 weight = 3
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-03"
+view_model = "generated/views/dossiers/igor-cerveny/sources/src-03.json"
 subjects = ["cerveny"]
 dossier = "igor-cerveny"
 record_type = "source"
@@ -16,7 +20,6 @@ url = "https://www.seznamzpravy.cz/clanek/domaci-politika-ministr-cerveny-po-zvo
 retrieved = "2026-07-30"
 claims = ["CLM-02", "CLM-03", "CLM-04", "CLM-05"]
 +++
-
 **Ministr Červený po zvolení převedl rodinný dům na svou manželku, ten nepřiznal**
 
 Červený zhruba měsíc po zvolení do Sněmovny přepsal na manželku rodinný dům (11,4 mil. Kč), dva bankovní účty a osobní auto; spoluvlastníkem domu byl i v den zvolení. Ve vstupním oznámení majetku dům vůbec neuvedl. Městský úřad v Nymburce zahájil řízení pro možný přestupek, hrozí pokuta až 50 tis. Kč. Červený: 'Jestli jsem se spletl, na což mě doposud nikdo neupozornil, tak mě to mrzí.' Podle článku na situaci upozornil server iDnes v březnu 2026.

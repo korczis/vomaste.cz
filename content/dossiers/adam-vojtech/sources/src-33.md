@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-33 — Report.cz (Olomoucký deník): FN Olomouc, policie a kauza kardiostimulátorů (12. 2. 2026)"
 description = "Report.cz nezávisle na Zdravotnický deník (SRC-04) potvrzuje ministrův pokyn zřídit informační linku a vyžádat si komplexní zprávu."
 template = "dossier-source.html"
 weight = 33
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-33"
+view_model = "generated/views/dossiers/adam-vojtech/sources/src-33.json"
 subjects = ["vojtech"]
 dossier = "adam-vojtech"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-02-12"
 retrieved = "2026-07-31"
 claims = ["CLM-08"]
 +++
-
 Report.cz cituje ministra Vojtěcha: řediteli FN Olomouc Romanu Havlíkovi
 „uložil, aby zprovoznil informační linku, na které pacienti s
 voperovaným defibrilátorem získají srozumitelné informace." Zároveň:

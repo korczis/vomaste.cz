@@ -67,6 +67,15 @@ export function buildViewModels(compiled) {
     recordsOf.set(w.dossier, perRegistry);
     perRegistry.set(w.registry, [...(perRegistry.get(w.registry) ?? []), w]);
   }
+  // Prezentační pořadí = kanonické `order` (redakční pořadí, dřív front
+  // matter weight). U claims/sources/cases/gaps se shoduje s numerickým
+  // pořadím identifierů, u relations NE (macinka-turek) — stránky řadily
+  // podle weight, view modely musí dát totéž pořadí. Sort je stabilní,
+  // takže záznamy bez `order` drží compiled pořadí.
+  const byOrder = (a, b) => (a.record.order ?? 0) - (b.record.order ?? 0);
+  for (const perRegistry of recordsOf.values()) {
+    for (const list of perRegistry.values()) list.sort(byOrder);
+  }
 
   // Viditelné záznamy dossieru: entity view (canonicalDossier != slug) je
   // deterministický filtr nad záznamy kanonického dossieru podle subject
@@ -110,6 +119,9 @@ export function buildViewModels(compiled) {
       route: w?.route ?? null,
       title: w?.record.title ?? null,
       outlet: w?.record.outlet ?? null,
+      description: w?.record.description ?? null,
+      published: w?.record.published ?? null,
+      url: w?.record.url ?? null,
     };
   };
   const shortRef = (w) => ({ "@id": w.record["@id"], identifier: w.record.identifier, route: w.route });
@@ -123,12 +135,18 @@ export function buildViewModels(compiled) {
       referencedBy.set(ref["@id"], list);
     }
   };
-  for (const w of compiled.records) {
-    if (w.registry === "cases" || w.registry === "relations") {
-      addReverse(w.record.claims, w);
-      addReverse(w.record.sources, w);
-    } else if (w.registry === "gaps") {
-      addReverse(w.record.claims, w);
+  // Iteruje se přes order-sorted seznamy (ne compiled.records), aby
+  // related.* držely prezentační pořadí registrů — viz byOrder výše.
+  for (const perRegistry of recordsOf.values()) {
+    for (const [registry, list] of perRegistry.entries()) {
+      for (const w of list) {
+        if (registry === "cases" || registry === "relations") {
+          addReverse(w.record.claims, w);
+          addReverse(w.record.sources, w);
+        } else if (registry === "gaps") {
+          addReverse(w.record.claims, w);
+        }
+      }
     }
   }
   const relatedOf = (recordIri) => {
@@ -136,12 +154,20 @@ export function buildViewModels(compiled) {
     for (const w of referencedBy.get(recordIri) ?? []) {
       if (w.registry === "cases") grouped.cases.push({ ...shortRef(w), title: w.record.title });
       else if (w.registry === "gaps") grouped.gaps.push({ ...shortRef(w), title: w.record.title });
-      else if (w.registry === "relations") grouped.relations.push({ ...shortRef(w), label: w.record.label });
+      else if (w.registry === "relations")
+        grouped.relations.push({
+          ...shortRef(w),
+          label: w.record.label,
+          title: `${entityLink(w.record.sourceEntity["@id"]).title} — ${w.record.label} — ${entityLink(w.record.targetEntity["@id"]).title}`,
+        });
     }
     return grouped;
   };
 
-  const caseCard = (w) => ({
+  // fallbackSubjects: case bez explicitního taggingu patří subjektu svého
+  // dossieru — stejné pravidlo, kterým [[extra.cases]] mirror bloky nesly
+  // subjects i u netagovaných case záznamů (single-subject dossiery).
+  const caseCard = (w, fallbackSubjects = []) => ({
     "@id": w.record["@id"],
     identifier: w.record.identifier,
     title: w.record.title,
@@ -151,6 +177,7 @@ export function buildViewModels(compiled) {
     summary: w.record.summary,
     anchor: w.record.anchor,
     route: w.route,
+    subjects: w.record.subjects?.length ? w.record.subjects : fallbackSubjects,
     claims: (w.record.claims ?? []).map((ref) => ({
       "@id": ref["@id"],
       identifier: byId[ref["@id"]]?.record.identifier ?? localPart(ref["@id"]),
@@ -190,7 +217,11 @@ export function buildViewModels(compiled) {
     overview.breadcrumb = [...breadcrumbRoot, { title: record.title }];
     overview.counts = countsOf(slug);
     overview.contentBlocks = record.contentBlocks ?? [];
-    overview.cases = visibleRecords(slug, "cases").map(caseCard);
+    {
+      const ownerSlug = record.canonicalDossier && record.canonicalDossier !== slug ? record.canonicalDossier : slug;
+      const ownerSubject = dossierBySlug.get(ownerSlug)?.record.subject;
+      overview.cases = visibleRecords(slug, "cases").map((cw) => caseCard(cw, ownerSubject ? [ownerSubject] : []));
+    }
     overview.registries = Object.fromEntries(
       VIEW_REGISTRIES.map((registry) => [
         registry,
@@ -211,6 +242,9 @@ export function buildViewModels(compiled) {
             text: r.text,
             status: r.status,
             statusLabel: r.statusLabel,
+            // Subjekt tagging — entity-dossier-registry ukazuje badge
+            // „sdílené" u záznamu s víc než jedním subjektem.
+            subjects: r.subjects ?? [],
             sources: (r.sources ?? []).map((ref) => ({
               "@id": ref["@id"],
               identifier: byId[ref["@id"]]?.record.identifier ?? localPart(ref["@id"]),
@@ -219,8 +253,9 @@ export function buildViewModels(compiled) {
           };
         }
         if (registry === "sources") {
-          const row = { ...base, title: r.title, outlet: r.outlet };
+          const row = { ...base, title: r.title, outlet: r.outlet, description: r.description ?? null };
           if (r.sourceFamily !== undefined) row.sourceFamily = r.sourceFamily;
+          row.sourceType = r.sourceType;
           row.url = r.url;
           if (r.published !== undefined) row.published = r.published;
           row.retrieved = r.retrieved;
@@ -238,6 +273,7 @@ export function buildViewModels(compiled) {
           return {
             ...base,
             title: r.title,
+            description: r.description,
             priority: r.priority,
             checked: r.checked,
             claims: (r.claims ?? []).map((ref) => ({
@@ -253,8 +289,14 @@ export function buildViewModels(compiled) {
           label: r.label,
           relationType: r.relationType,
           status: r.status,
+          subjects: r.subjects ?? [],
           from: entityLink(r.sourceEntity["@id"]),
           to: entityLink(r.targetEntity["@id"]),
+          claims: (r.claims ?? []).map((ref) => ({
+            "@id": ref["@id"],
+            identifier: byId[ref["@id"]]?.record.identifier ?? localPart(ref["@id"]),
+            route: byId[ref["@id"]]?.route ?? null,
+          })),
         };
       });
       views.set(`dossiers/${slug}/${registry}-index.json`, {
@@ -307,7 +349,12 @@ export function buildViewModels(compiled) {
   }
 
   // --- entity -----------------------------------------------------------
-  const relationWrappers = compiled.records.filter((w) => w.registry === "relations");
+  // Order-sorted per dossier (viz byOrder) — entity stránky vypisují
+  // vztahy per dossier v prezentačním pořadí registru.
+  const relationWrappers = compiled.records
+    .filter((w) => w.registry === "relations")
+    .slice()
+    .sort((a, b) => cmp(a.dossier, b.dossier) || byOrder(a, b));
   for (const w of compiled.entities) {
     const r = w.record;
     const iri = r["@id"];
@@ -365,10 +412,13 @@ export function buildViewModels(compiled) {
     views.set(`entities/${r.entityId}.json`, view);
   }
 
+  // Řádky registru entit v redakčním pořadí (order = dřívější front
+  // matter weight; stabilní sort drží abecední pořadí u shodných hodnot).
+  const orderedEntities = compiled.entities.slice().sort(byOrder);
   views.set("entities-index.json", {
     route: "/entities/",
     count: compiled.entities.length,
-    rows: compiled.entities.map((w) => ({
+    rows: orderedEntities.map((w) => ({
       "@id": w.record["@id"],
       entityId: w.record.entityId,
       title: w.record.title,

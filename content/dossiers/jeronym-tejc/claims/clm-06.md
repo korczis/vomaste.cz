@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-06"
 description = "Audit podle citovaného zpravodajství rovněž uvádí, že chybí záznamy o schůzkách se zájemci o odkup bitcoinů, což znemožňuje posoudit, zda zv"
 template = "dossier-claim.html"
 weight = 6
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-06"
+view_model = "generated/views/dossiers/jeronym-tejc/claims/clm-06.json"
 dossier = "jeronym-tejc"
 record_type = "claim"
 lang = "cs"
@@ -15,5 +19,4 @@ summary = "Audit podle citovaného zpravodajství rovněž uvádí, že chybí z
 sources = ["SRC-03", "SRC-04"]
 subjects = ["tejc"]
 +++
-
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jeronym-tejc/_index.md#registr-tvrzeni).

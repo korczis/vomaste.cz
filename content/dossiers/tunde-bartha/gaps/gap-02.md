@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "GAP-02 — Přesné datum nástupu do současné funkce"
 description = "Datum nástupu Tünde Barthy do funkce vedoucí Úřadu vlády není doloženo primárním ani jmenovaně ozdrojovaným zpravodajstvím."
 template = "dossier-gap.html"
 weight = 2
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/tunde-bartha/gaps/GAP-02"
+view_model = "generated/views/dossiers/tunde-bartha/gaps/gap-02.json"
 subjects = ["bartha"]
 dossier = "tunde-bartha"
 record_type = "gap"
@@ -14,7 +18,6 @@ priority = "střední"
 checked = "2026-07-30"
 claims = ["CLM-07", "CLM-08"]
 +++
-
 Že Tünde Bartha v červnu 2026 Úřad vlády vede, dokládají dvě nezávislá
 média ([CLM-07](@/dossiers/tunde-bartha/claims/clm-07.md)). **Přesné
 datum nástupu doloženo není**:

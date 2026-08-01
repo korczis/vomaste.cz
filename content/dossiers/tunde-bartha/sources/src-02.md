@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-02 — Echo24"
 description = "Echo24, 24. 6. 2026: radnice Prahy 3 měla před hlasováním nejméně dvě právní stanoviska, která před výpovědí varovala; vedoucí odboru uvedl, že pro ni neexistuje právně relevantní podklad."
 template = "dossier-source.html"
 weight = 2
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-02"
+view_model = "generated/views/dossiers/tunde-bartha/sources/src-02.json"
 subjects = ["bartha"]
 dossier = "tunde-bartha"
 record_type = "source"
@@ -13,11 +17,10 @@ src_id = "SRC-02"
 outlet = "Echo24"
 src_type = "celostátní zpravodajství"
 url = "https://echo24.cz/a/HWGig/zpravy-tunde-bartha-dostane-vypoved-z-mestskeho-bytu-radnici-pritom-od-vypovedi-pravni-stanoviska-odrazuji"
-retrieved = "2026-07-30"
 published = "2026-06-24"
+retrieved = "2026-07-30"
 claims = ["CLM-01", "CLM-02", "CLM-03", "CLM-05", "CLM-07"]
 +++
-
 Echo24 dne 24. 6. 2026 informovalo, že vedení městské části Praha 3 si
 před rozhodnutím opatřilo nejméně dvě právní stanoviska a **obě před
 výpovědí varovala**.

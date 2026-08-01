@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "GAP-03 — Setuza: doložena jen neúspěšná akvizice, nic víc"
 description = "Podnikatelská epizoda je doložená jedním zdrojem; žádný otevřený zdroj neuvádí v souvislosti se Setuzou pochybení Andreje Babiše."
 template = "dossier-gap.html"
 weight = 3
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis/gaps/GAP-03"
+view_model = "generated/views/dossiers/andrej-babis/gaps/gap-03.json"
 dossier = "andrej-babis"
 record_type = "gap"
 lang = "cs"
@@ -13,7 +17,6 @@ priority = "nízká"
 checked = "2026-07-30"
 claims = ["CLM-53"]
 +++
-
 **Co se od poslední revize uzavřelo (30. 7. 2026).** Dřívější znění této
 mezery říkalo, že vazbu Setuzy na Andreje Babiše nedokládá žádný otevřený
 zdroj. To už neplatí v jednom, úzkém bodě: analýza z roku 2011 dokládá, že

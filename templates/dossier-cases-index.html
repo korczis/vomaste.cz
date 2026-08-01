@@ -5,7 +5,10 @@
 
 {% block content %}
 <main class="mx-auto max-w-6xl px-6 py-12 text-white">
+  {#- T-028 fáze F: řádky registru pochází z view modelu, ne z front
+      matter section.pages — content adaptéry jsou generované. -#}
   {% set dossier_slug = section.extra.dossier %}
+  {% set idx = load_data(path="data/" ~ section.extra.view_model) %}
   {{ ui::page_header(title=section.title, description=section.description, breadcrumb_items=[
     "Dossier::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"),
     "Registr kauz",
@@ -14,13 +17,13 @@
   <article class="dossier-prose mb-10">{{ section.content | safe }}</article>
 
   <div class="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
-    {{ ui::stat_tile(value=section.pages | length, label="Kauzy celkem") }}
+    {{ ui::stat_tile(value=idx.rows | length, label="Kauzy celkem") }}
   </div>
 
   {{ views::open(
     id="cases-registry",
     title="Registr kauz",
-    count=section.pages | length,
+    count=idx.rows | length,
     default_view="table",
     search_label="Hledat v kauzách",
     sort_options=["id::ID", "status::Stav", "period::Období"],
@@ -32,25 +35,25 @@
     id="cases-registry-table",
     caption="Registr kauz",
     record_type="case",
-    count=section.pages | length,
+    count=idx.rows | length,
     columns=["ID", "Stav", "Kauza", "Období"],
     sort_keys=["id", "status", "", "period"],
     searchable=true,
     url_state=true,
     export_name="kauzy") }}
-    {% for p in section.pages %}
-    <tr data-record-key="{{ p.extra.case_id }}" data-status="{{ p.extra.label }}" data-facet="{{ p.extra.label }}" id="cases-registry-table-{{ p.extra.case_id | lower }}">
+    {% for p in idx.rows %}
+    <tr data-record-key="{{ p.identifier }}" data-status="{{ p.statusLabel }}" data-facet="{{ p.statusLabel }}" id="cases-registry-table-{{ p.identifier | lower }}">
       <td class="whitespace-nowrap p-3 align-top">
-        <a href="{{ p.permalink | safe }}" class="font-mono text-xs text-[#f3e5c0] hover:underline">{{ p.extra.case_id }}</a>
+        <a href="{{ config.base_url }}{{ p.route }}" class="font-mono text-xs text-[#f3e5c0] hover:underline">{{ p.identifier }}</a>
       </td>
       <td class="whitespace-nowrap p-3 align-top">
-        <span class="status-badge {{ p.extra.status }}">{{ p.extra.label }}</span>
+        <span class="status-badge {{ p.status }}">{{ p.statusLabel }}</span>
       </td>
       <td class="p-3 align-top">
-        <a href="{{ p.permalink | safe }}" class="font-semibold text-white no-underline hover:text-[#f3e5c0]">{{ p.title }}</a>
-        <span class="mt-0.5 line-clamp-3 text-white/70 sm:line-clamp-none sm:block">{{ p.extra.summary }}</span>
+        <a href="{{ config.base_url }}{{ p.route }}" class="font-semibold text-white no-underline hover:text-[#f3e5c0]">{{ p.title }}</a>
+        <span class="mt-0.5 line-clamp-3 text-white/70 sm:line-clamp-none sm:block">{{ p.summary }}</span>
       </td>
-      <td class="whitespace-nowrap p-3 align-top text-xs text-white/55">{{ p.extra.period }}</td>
+      <td class="whitespace-nowrap p-3 align-top text-xs text-white/55">{{ p.period }}</td>
     </tr>
     {% endfor %}
   {{ table::advanced_table_end(empty_text="Žádná kauza neodpovídá zadanému filtru.") }}
@@ -58,15 +61,15 @@
 
   {{ views::projection(name="list", default_view="table") }}
     <ul class="divide-y divide-white/10 overflow-hidden rounded-lg border border-white/10 bg-white/[0.03]">
-      {%- for p in section.pages %}
-      <li data-record-key="{{ p.extra.case_id }}" data-facet="{{ p.extra.label }}" id="cases-registry-list-{{ p.extra.case_id | lower }}" class="p-3">
+      {%- for p in idx.rows %}
+      <li data-record-key="{{ p.identifier }}" data-facet="{{ p.statusLabel }}" id="cases-registry-list-{{ p.identifier | lower }}" class="p-3">
         <div class="flex flex-wrap items-baseline gap-x-2 gap-y-1">
-          <a href="{{ p.permalink | safe }}" class="font-mono text-xs text-[#f3e5c0] no-underline hover:underline">{{ p.extra.case_id }}</a>
-          <span class="status-badge {{ p.extra.status }}">{{ p.extra.label }}</span>
-          <span class="ml-auto font-mono text-[0.65rem] text-white/55">{{ p.extra.period }}</span>
+          <a href="{{ config.base_url }}{{ p.route }}" class="font-mono text-xs text-[#f3e5c0] no-underline hover:underline">{{ p.identifier }}</a>
+          <span class="status-badge {{ p.status }}">{{ p.statusLabel }}</span>
+          <span class="ml-auto font-mono text-[0.65rem] text-white/55">{{ p.period }}</span>
         </div>
-        <a href="{{ p.permalink | safe }}" class="mt-1 block font-semibold text-white no-underline hover:underline">{{ p.title }}</a>
-        <p class="mt-0.5 line-clamp-2 text-xs leading-snug text-white/60">{{ p.extra.summary }}</p>
+        <a href="{{ config.base_url }}{{ p.route }}" class="mt-1 block font-semibold text-white no-underline hover:underline">{{ p.title }}</a>
+        <p class="mt-0.5 line-clamp-2 text-xs leading-snug text-white/60">{{ p.summary }}</p>
       </li>
       {%- endfor %}
     </ul>
@@ -74,15 +77,15 @@
 
   {{ views::projection(name="grid", default_view="table") }}
     <div class="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
-      {%- for p in section.pages %}
-      <article data-record-key="{{ p.extra.case_id }}" data-facet="{{ p.extra.label }}" id="cases-registry-grid-{{ p.extra.case_id | lower }}"
+      {%- for p in idx.rows %}
+      <article data-record-key="{{ p.identifier }}" data-facet="{{ p.statusLabel }}" id="cases-registry-grid-{{ p.identifier | lower }}"
         class="rounded-lg border border-white/10 bg-white/[0.03] p-3">
         <div class="flex flex-wrap items-baseline justify-between gap-2">
-          <a href="{{ p.permalink | safe }}" class="font-mono text-xs text-[#f3e5c0] no-underline hover:underline">{{ p.extra.case_id }}</a>
-          <span class="status-badge {{ p.extra.status }}">{{ p.extra.label }}</span>
+          <a href="{{ config.base_url }}{{ p.route }}" class="font-mono text-xs text-[#f3e5c0] no-underline hover:underline">{{ p.identifier }}</a>
+          <span class="status-badge {{ p.status }}">{{ p.statusLabel }}</span>
         </div>
-        <a href="{{ p.permalink | safe }}" class="mt-1.5 block text-sm font-semibold text-white no-underline hover:underline">{{ p.title }}</a>
-        <p class="mt-1 line-clamp-3 text-xs leading-snug text-white/60">{{ p.extra.summary }}</p>
+        <a href="{{ config.base_url }}{{ p.route }}" class="mt-1.5 block text-sm font-semibold text-white no-underline hover:underline">{{ p.title }}</a>
+        <p class="mt-1 line-clamp-3 text-xs leading-snug text-white/60">{{ p.summary }}</p>
       </article>
       {%- endfor %}
     </div>

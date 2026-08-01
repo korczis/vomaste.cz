@@ -4,31 +4,38 @@
 
 {% block content %}
 <main class="mx-auto max-w-2xl px-6 py-12 text-white">
+  {#- T-028 fáze F: kanonická pole entity (typ, role, coverage, dossiery,
+      vztahy) pochází z view modelu. Provenienční pole (discovered_at,
+      discovered_via) a per-dossier inventáře claims/sources jsou MIMO
+      kanonický model v1 — do fáze H se čtou dál z content adaptéru
+      (page.extra), stejně jako je čtou generate-authorization-candidates
+      a generate-discovery-log. -#}
+  {% set view = load_data(path="data/" ~ page.extra.view_model) %}
   {{ ui::page_header(title=page.title, breadcrumb_items=[
     "Domů::" ~ get_url(path="@/_index.md"),
     "Registr entit::" ~ get_url(path="@/entities/_index.md"),
-    page.extra.entity_id,
+    view.entityId,
   ]) }}
 
   <p class="mb-6 flex flex-wrap items-center gap-2">
-    <span class="font-mono text-xs text-[#f3e5c0]">{{ page.extra.entity_id }}</span>
-    <span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-white/50">{{ page.extra.entity_type }}</span>
-    {% if page.extra.publication_role == "subject" %}
+    <span class="font-mono text-xs text-[#f3e5c0]">{{ view.entityId }}</span>
+    <span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-white/50">{{ view.entityType }}</span>
+    {% if view.publicationRole == "subject" %}
     <span class="rounded bg-[#f3e5c0]/10 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-[#f3e5c0]">subjekt autorizovaného dossieru</span>
     {% else %}
     <span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-white/55">kontextová entita</span>
     {% endif %}
-    <span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-white/55">coverage: {{ page.extra.coverage_state }}</span>
+    <span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-white/55">coverage: {{ view.coverageState }}</span>
   </p>
 
   {#- Vysvětlení, čím tahle stránka je, patří do šablony, ne do každého
-      z 23 souborů: text byl doslova stejný a jeho kopie by se rozešly.
-      Liší se jen podle publikační role, kterou nese front matter. -#}
-  {% if page.extra.publication_role != "subject" %}
+      z desítek souborů: text byl doslova stejný a jeho kopie by se
+      rozešly. Liší se jen podle publikační role z kanonického záznamu. -#}
+  {% if view.publicationRole != "subject" %}
   <div class="mb-6 rounded-lg border border-white/10 bg-white/[0.02] p-4 text-sm leading-relaxed text-white/60">
     <p><strong class="text-white/80">Kontextová entita.</strong> Je tu proto, že se přímo objevuje v citovaném zpravodajství o autorizovaném tématu — ne proto, že by ji tenhle web zkoumal. Stránka agreguje výhradně vazby a záznamy zveřejněné v dossierech níže; <strong class="text-white/80">žádný profil nad rámec toho kontextu tu není a nevznikne</strong>.</p>
     <p class="mt-2">Výskyt v seznamu není podezření ani hodnocení. Co která vazba skutečně tvrdí, je vidět u jednotlivých vztahů a tvrzení, každé s vlastním <a href="{{ get_url(path='@/koncepty/_index.md') | safe }}#stav" class="text-[#f3e5c0] underline">stavem doloženosti</a>.</p>
-    <p class="mt-2 text-xs text-white/55">Stav dossieru této entity: <strong class="text-white/60">{% if page.extra.dossier_status == "authorized" %}autorizováno{% else %}neautorizováno{% endif %}</strong>. Vlastní dossier vyžaduje výslovné, datované rozhodnutí vlastníka webu zapsané v <a href="{{ get_url(path='@/dokumentace/agents.md') | safe }}" class="text-[#f3e5c0] underline">autorizačním logu</a> — nikdy se neodvozuje automaticky z toho, že se entita často vyskytuje.</p>
+    <p class="mt-2 text-xs text-white/55">Stav dossieru této entity: <strong class="text-white/60">{% if view.dossierStatus == "authorized" %}autorizováno{% else %}neautorizováno{% endif %}</strong>. Vlastní dossier vyžaduje výslovné, datované rozhodnutí vlastníka webu zapsané v <a href="{{ get_url(path='@/dokumentace/agents.md') | safe }}" class="text-[#f3e5c0] underline">autorizačním logu</a> — nikdy se neodvozuje automaticky z toho, že se entita často vyskytuje.</p>
   </div>
   {% else %}
   <div class="mb-6 rounded-lg border border-[#f3e5c0]/25 bg-[#f3e5c0]/[0.04] p-4 text-sm leading-relaxed text-white/70">
@@ -37,18 +44,22 @@
   </div>
   {% endif %}
 
-  {{ table::advanced_table(id="entity-meta", caption="Metadata entity " ~ page.extra.entity_id, extra_class="mb-8") }}
+  {{ table::advanced_table(id="entity-meta", caption="Metadata entity " ~ view.entityId, extra_class="mb-8") }}
       <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Vyskytuje se v</th><td class="p-3">
-        {% for d in page.extra.dossiers %}
-          {% set dossier_page = get_section(path="dossiers/" ~ d ~ "/_index.md") %}
+        {#- Titulek chipu je prezentační title stránky dossieru (adaptér),
+            ne kanonický title — u agregátu se liší („Dossier — …"). -#}
+        {% for d in view.dossiers %}
+          {% set dossier_page = get_section(path="dossiers/" ~ d.slug ~ "/_index.md") %}
           <a href="{{ dossier_page.permalink | safe }}" class="mr-2 inline-block rounded bg-white/5 px-2 py-0.5 text-xs text-[#f3e5c0] no-underline hover:bg-white/10">{{ dossier_page.title }}</a>
         {% endfor %}
       </td></tr>
       <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Zjištěno</th><td class="p-3">{{ page.extra.discovered_at }}</td></tr>
       {% if page.extra.discovered_via %}
       <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Objeveno přes</th><td class="p-3">
-        {% for d in page.extra.dossiers %}
-          {% set vztahy = get_section(path="dossiers/" ~ d ~ "/relations/_index.md") %}
+        {#- discovered_via je provenienční pole mimo model v1 — resolve
+            přes registry sekce jako dosud (adaptér, rozhodnutí H). -#}
+        {% for d in view.dossiers %}
+          {% set vztahy = get_section(path="dossiers/" ~ d.slug ~ "/relations/_index.md") %}
           {% for r in page.extra.discovered_via %}
             {% set rel_page = vztahy.pages | filter(attribute="extra.rel_id", value=r) | first %}
             {% if rel_page %}<a href="{{ rel_page.permalink | safe }}" class="mr-2 inline-block rounded bg-white/5 px-2 py-0.5 font-mono text-[0.65rem] text-[#f3e5c0] no-underline hover:bg-white/10">{{ r }}</a>{% endif %}
@@ -58,8 +69,8 @@
       {% endif %}
       {% if page.extra.claims %}
       <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Tvrzení</th><td class="p-3">
-        {% for d in page.extra.dossiers %}
-          {% set tvrzeni = get_section(path="dossiers/" ~ d ~ "/claims/_index.md") %}
+        {% for d in view.dossiers %}
+          {% set tvrzeni = get_section(path="dossiers/" ~ d.slug ~ "/claims/_index.md") %}
           {% for c in page.extra.claims %}
             {% set clm_page = tvrzeni.pages | filter(attribute="extra.clm_id", value=c) | first %}
             {% if clm_page %}<a href="{{ clm_page.permalink | safe }}" class="mr-2 inline-block rounded bg-white/5 px-2 py-0.5 font-mono text-xs text-[#f3e5c0] no-underline hover:bg-white/10">{{ c }}</a>{% endif %}
@@ -69,8 +80,8 @@
       {% endif %}
       {% if page.extra.sources %}
       <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Zdroje</th><td class="p-3">
-        {% for d in page.extra.dossiers %}
-          {% set zdroje = get_section(path="dossiers/" ~ d ~ "/sources/_index.md") %}
+        {% for d in view.dossiers %}
+          {% set zdroje = get_section(path="dossiers/" ~ d.slug ~ "/sources/_index.md") %}
           {% for s in page.extra.sources %}
             {% set src_page = zdroje.pages | filter(attribute="extra.src_id", value=s) | first %}
             {% if src_page %}<a href="{{ src_page.permalink | safe }}" class="mr-2 inline-block rounded bg-white/5 px-2 py-0.5 font-mono text-xs text-[#f3e5c0] no-underline hover:bg-white/10">{{ s }}</a>{% endif %}
@@ -87,16 +98,16 @@
   {%- endif %}
 
   {#- Proč je entita v dossieru: vypsat tvrzení, která ji zmiňují, i s jejich
-      textem a stavem — dosud tu byly jen holé identifikátory v tabulce, takže
-      čtenář musel proklikat každý zvlášť, aby to zjistil. Text i stav se čtou
-      z registru tvrzení, nic se tu neformuluje znovu. -#}
+      textem a stavem. Per-dossier inventář `claims` je mimo kanonický model
+      v1 (composite-key problém dossier-scoped identifikátorů) — do fáze H
+      zůstává na content adaptéru, resolve běží přes registry sekce. -#}
   {%- if page.extra.claims %}
   <section class="mb-8" aria-labelledby="entity-claims-heading">
     <h2 id="entity-claims-heading" class="mb-1 text-xs font-semibold uppercase tracking-wide text-white/55">Proč je tato entita v dossieru</h2>
     <p class="mb-3 text-xs text-white/50">Tvrzení z registru, která ji zmiňují. Stav u každého říká, čím je doložené — ne jak je závažné.</p>
     <ul class="space-y-2">
-      {%- for d in page.extra.dossiers %}
-      {%- set tvrzeni = get_section(path="dossiers/" ~ d ~ "/claims/_index.md") %}
+      {%- for d in view.dossiers %}
+      {%- set tvrzeni = get_section(path="dossiers/" ~ d.slug ~ "/claims/_index.md") %}
       {%- for c in page.extra.claims %}
       {%- set clm = tvrzeni.pages | filter(attribute="extra.clm_id", value=c) | first %}
       {%- if clm %}
@@ -112,32 +123,28 @@
   </section>
   {%- endif %}
 
-  {#- Relations are dossier-scoped (a dossier's own local graph); an entity
-      that belongs to several dossiers has its incoming/outgoing relations
-      computed per dossier here, never hand-maintained on the entity page
-      itself. -#}
-  {% for d in page.extra.dossiers %}
-  {% set vztahy = get_section(path="dossiers/" ~ d ~ "/relations/_index.md") %}
-  {% set entities = get_section(path="entities/_index.md") %}
+  {#- Vztahy per dossier z view modelu (kanonický graf): odchozí, pak
+      příchozí, v prezentačním pořadí registru vztahů. -#}
+  {% for d in view.dossiers %}
   {% set_global outgoing = [] %}
   {% set_global incoming = [] %}
-  {% for r in vztahy.pages %}
-    {% if r.extra.source == page.extra.entity_id %}{% set_global outgoing = outgoing | concat(with=[r]) %}{% endif %}
-    {% if r.extra.target == page.extra.entity_id %}{% set_global incoming = incoming | concat(with=[r]) %}{% endif %}
+  {% for r in view.relations %}
+    {% if r.dossier == d.slug %}
+      {% if r.direction == "outgoing" %}{% set_global outgoing = outgoing | concat(with=[r]) %}{% endif %}
+      {% if r.direction == "incoming" %}{% set_global incoming = incoming | concat(with=[r]) %}{% endif %}
+    {% endif %}
   {% endfor %}
 
   {% if outgoing | length > 0 or incoming | length > 0 %}
-  {% set dossier_page = get_section(path="dossiers/" ~ d ~ "/_index.md") %}
+  {% set dossier_page = get_section(path="dossiers/" ~ d.slug ~ "/_index.md") %}
   <section class="mb-8">
     <h2 class="mb-2 text-xs font-semibold uppercase tracking-wide text-white/55">Vztahy v dossieru „{{ dossier_page.title }}"</h2>
     <ul class="space-y-1.5 text-sm">
       {% for r in outgoing %}
-      {% set target_entity = entities.pages | filter(attribute="extra.entity_id", value=r.extra.target) | first %}
-      <li><a href="{{ r.permalink | safe }}" class="text-[#f3e5c0] no-underline hover:underline">{{ r.extra.label }}</a> <span aria-hidden="true" class="text-white/55">&rarr;</span> {% if target_entity %}<a href="{{ target_entity.permalink | safe }}" class="text-white/80 no-underline hover:underline">{{ target_entity.title }}</a>{% endif %}</li>
+      <li><a href="{{ config.base_url }}{{ r.route }}" class="text-[#f3e5c0] no-underline hover:underline">{{ r.label }}</a> <span aria-hidden="true" class="text-white/55">&rarr;</span> {% if r.other.title %}<a href="{{ config.base_url }}{{ r.other.route }}" class="text-white/80 no-underline hover:underline">{{ r.other.title }}</a>{% endif %}</li>
       {% endfor %}
       {% for r in incoming %}
-      {% set source_entity = entities.pages | filter(attribute="extra.entity_id", value=r.extra.source) | first %}
-      <li>{% if source_entity %}<a href="{{ source_entity.permalink | safe }}" class="text-white/80 no-underline hover:underline">{{ source_entity.title }}</a>{% endif %} <a href="{{ r.permalink | safe }}" class="text-[#f3e5c0] no-underline hover:underline">{{ r.extra.label }}</a></li>
+      <li>{% if r.other.title %}<a href="{{ config.base_url }}{{ r.other.route }}" class="text-white/80 no-underline hover:underline">{{ r.other.title }}</a>{% endif %} <a href="{{ config.base_url }}{{ r.route }}" class="text-[#f3e5c0] no-underline hover:underline">{{ r.label }}</a></li>
       {% endfor %}
     </ul>
   </section>

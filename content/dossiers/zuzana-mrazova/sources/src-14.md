@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-14 — e15.cz"
 description = "Ministryně Mrázová za ANO dostala pokutu za porušení zákona o střetu zájmů"
 template = "dossier-source.html"
 weight = 14
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-14"
+view_model = "generated/views/dossiers/zuzana-mrazova/sources/src-14.json"
 subjects = ["mrazova"]
 dossier = "zuzana-mrazova"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-07-25"
 retrieved = "2026-07-30"
 claims = ["CLM-20", "CLM-21", "CLM-23"]
 +++
-
 **Ministryně Mrázová za ANO dostala pokutu za porušení zákona o střetu zájmů**
 
 Nepravomocná pokuta od mosteckého magistrátu, hodnoceno jako přestupek z nedbalosti. V majetkovém oznámení za 2024 nepravdivě uvedla, že neměla peněžité příjmy ani majetkový prospěch nad 100 tis. Kč. Půjčku 500 tis. Kč od rodiny přiznala až na květnové tiskové konferenci. Rozhodnutí může nabýt právní moci do tří týdnů, pokud se neodvolá. Uvádí souvislost s dalšími kauzami (černé stavby, obecní byt 130 m² za ~4 500 Kč od 2009) a obhajobu Babiše.

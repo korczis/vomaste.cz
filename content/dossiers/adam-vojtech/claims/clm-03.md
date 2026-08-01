@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-03"
 description = "Trestní oznámení míří na postupy Fakultní nemocnice Olomouc, respektive na zaměstnance její kardiologické kliniky (bez jmenovitého označení "
 template = "dossier-claim.html"
 weight = 3
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-03"
+view_model = "generated/views/dossiers/adam-vojtech/claims/clm-03.json"
 dossier = "adam-vojtech"
 record_type = "claim"
 lang = "cs"
@@ -15,5 +19,4 @@ summary = "Trestní oznámení míří na postupy Fakultní nemocnice Olomouc, r
 sources = ["SRC-02", "SRC-03", "SRC-06"]
 subjects = ["vojtech"]
 +++
-
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/adam-vojtech/_index.md#registr-tvrzeni).

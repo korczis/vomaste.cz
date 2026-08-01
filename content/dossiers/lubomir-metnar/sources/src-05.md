@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-05 — Deník N"
 description = "Ministerstvo vnitra navrhuje zrušení policejní ochranné služby NKÚ"
 template = "dossier-source.html"
 weight = 5
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-05"
+view_model = "generated/views/dossiers/lubomir-metnar/sources/src-05.json"
 subjects = ["metnar"]
 dossier = "lubomir-metnar"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-07-29"
 retrieved = "2026-07-30"
 claims = ["CLM-05", "CLM-08", "CLM-12", "CLM-18"]
 +++
-
 **Ministerstvo vnitra navrhuje zrušení policejní ochranné služby NKÚ**
 
 Krátký zpravodajský záznam (formát „minuta“), volně čitelný v části textu. Potvrzuje jádro návrhu, termín od příštího roku, částku cca 20 mil. Kč ročně za soukromou ochranu, nový úkol policie střežit sídlo ČNB a Metnarovo zdůvodnění bezpečnostní analýzou policie. Explicitně uvádí, že informaci přinesl server Seznam Zprávy. Neobsahuje citace Kaly ani popis stavu vládního procesu.

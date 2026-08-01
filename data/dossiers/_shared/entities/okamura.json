@@ -19,6 +19,7 @@
   "routeAliases": [
     "/dossiers/tomio-okamura/entities/okamura/"
   ],
+  "order": 50,
   "content": [
     {
       "type": "markdown",

@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-12"
 description = "O návrhu jako první informoval server Seznam Zprávy ve středu 29. července 2026; ostatní česká média zprávu následně přebírala. Doloženo víc"
 template = "dossier-claim.html"
 weight = 12
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-12"
+view_model = "generated/views/dossiers/lubomir-metnar/claims/clm-12.json"
 dossier = "lubomir-metnar"
 record_type = "claim"
 lang = "cs"
@@ -15,5 +19,4 @@ summary = "O návrhu jako první informoval server Seznam Zprávy ve středu 29.
 sources = ["SRC-02", "SRC-05"]
 subjects = ["metnar"]
 +++
-
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/lubomir-metnar/_index.md#registr-tvrzeni).

@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-04 — Úřad vlády ČR, přehled vedoucích"
 description = "Primární úřední rejstřík: u Tünde Barthy je uvedeno „pověřena řízením: 28.6.2018 – 17.12.2021“, tedy pověření, nikoli jmenování do funkce."
 template = "dossier-source.html"
 weight = 4
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-04"
+view_model = "generated/views/dossiers/tunde-bartha/sources/src-04.json"
 subjects = ["bartha"]
 dossier = "tunde-bartha"
 record_type = "source"
@@ -16,7 +20,6 @@ url = "https://vlada.gov.cz/scripts/detail.php?pgid=1477"
 retrieved = "2026-07-30"
 claims = ["CLM-08"]
 +++
-
 Oficiální přehled vedoucích Úřadu vlády ČR uvádí u Tünde Barthy
 formulaci „**pověřena řízením: 28.6.2018 - 17.12.2021**". Ostatní osoby
 v přehledu mají uvedeno funkční období; u Barthy jde tedy podle úředního

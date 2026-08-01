@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-54"
 description = "Francouzská policie v květnu 2026 uzavřela vyšetřování nákupu nemovitostí na jihu Francie a případ převzala Národní finanční prokuratura (PNF), která má o dalším postupu rozhodnout do konce roku 2026; poté, co se Babiš koncem roku 2025 znovu stal předsedou vlády, získal podle francouzských pravidel imunitu, jež ho po dobu výkonu funkce chrání před případným stíháním ve Francii"
 template = "dossier-claim.html"
 weight = 54
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-54"
+view_model = "generated/views/dossiers/andrej-babis/claims/clm-54.json"
 dossier = "andrej-babis"
 record_type = "claim"
 lang = "cs"
@@ -14,5 +18,4 @@ status_label = "1 ZDROJ"
 summary = "Francouzská policie v květnu 2026 uzavřela vyšetřování nákupu nemovitostí na jihu Francie a případ převzala Národní finanční prokuratura (PNF), která má o dalším postupu rozhodnout do konce roku 2026; poté, co se Babiš koncem roku 2025 znovu stal předsedou vlády, získal podle francouzských pravidel imunitu, jež ho po dobu výkonu funkce chrání před případným stíháním ve Francii"
 sources = ["SRC-26"]
 +++
-
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni).

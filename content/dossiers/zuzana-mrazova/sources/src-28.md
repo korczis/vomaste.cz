@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-28 — Novinky.cz: Ministryně Mrázová žije v problémy zatížené Bílině v levném obecním bytě (29. 4. 2026)"
 description = "Novinky.cz nezávisle na Romea.cz (SRC-26) potvrzuje přestěhování k manželovi Pavlu Mrázovi, dřívější nájem cca 4 500 Kč a exekuční statistiku Bíliny."
 template = "dossier-source.html"
 weight = 28
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-28"
+view_model = "generated/views/dossiers/zuzana-mrazova/sources/src-28.json"
 subjects = ["mrazova"]
 dossier = "zuzana-mrazova"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-04-29"
 retrieved = "2026-07-31"
 claims = ["CLM-28", "CLM-29", "CLM-30"]
 +++
-
 Novinky.cz dne 29. 4. 2026: „Přestěhovala se na druhou stranu náměstí ke
 svému současnému manželovi Pavlu Mrázovi, do bytu, jenž rovněž spadá pod
 bytový fond Bíliny." Dřívější nájem: „Až do roku 2024 podle dostupných

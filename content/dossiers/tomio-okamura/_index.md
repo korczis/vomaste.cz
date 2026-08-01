@@ -1,21 +1,29 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Tomio Okamura"
 description = "Neutrální, zdroji doložený přehled o Tomiu Okamurovi — předsedovi Poslanecké sněmovny a předsedovi SPD."
 template = "entity-dossier.html"
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/tomio-okamura"
+view_model = "generated/views/dossiers/tomio-okamura/overview.json"
 dossier = "tomio-okamura"
 dossier_title = "Tomio Okamura"
+record_type = "dossier"
 dossier_type = "entity"
 canonical_dossier = "tomio-okamura"
 subject = "okamura"
 lang = "cs"
 seo_type = "ProfilePage"
-subject_entities = ["okamura"]
-subjects = ["Tomio Okamura"]
 updated = "2026-07-30"
 reviewed_at = "2026-07-30"
+subject_entities = ["okamura"]
+subjects = ["Tomio Okamura"]
 
+[extra.authorization]
+authorized = true
+record_ids = ["AUTH-2026-07-30-D"]
 
 [[extra.timeline]]
 date = "2025-02"
@@ -50,6 +58,13 @@ date = "2026-06"
 title = "Nepravomocný rozsudek: peněžitý trest pro hnutí SPD, hnutí ohlásilo odvolání"
 anchor = "kauza-rozsudek-plakaty"
 dot = "dot-fact"
+subjects = ["okamura"]
+
+[[extra.timeline]]
+date = "2026-06-03"
+title = "Nepravomocný rozsudek: SPD vinna, trest 3 miliony"
+anchor = "kauza-plakaty-spd"
+dot = "dot-disputed"
 subjects = ["okamura"]
 
 [[extra.cases]]
@@ -100,17 +115,6 @@ status = "status-single"
 label = "Sledované téma"
 summary = "Hlasování Sněmovny o vydání ke stíhání — viz tvrzení CLM-25, CLM-26, CLM-27, CLM-28, CLM-29, CLM-30, CLM-32."
 claims = ["CLM-25", "CLM-26", "CLM-27", "CLM-28", "CLM-29", "CLM-30", "CLM-32"]
-subjects = ["okamura"]
-
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-D"]
-
-[[extra.timeline]]
-date = "2026-06-03"
-title = "Nepravomocný rozsudek: SPD vinna, trest 3 miliony"
-anchor = "kauza-plakaty-spd"
-dot = "dot-disputed"
 subjects = ["okamura"]
 +++
 Tomio Okamura je předsedou Poslanecké sněmovny a předsedou hnutí SPD,

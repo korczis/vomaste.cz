@@ -8,19 +8,23 @@
 {% block content %}
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js" integrity="sha384-NrKB+u6Ts6AtkIhwPixiKTzgSKNblyhlk0Sohlgar9UHUBzai/sgnNNWWd291xqt" crossorigin="anonymous"></script>
 <main class="mx-auto max-w-3xl px-6 py-12 text-white" data-graph-workbench>
+  {#- T-028 fáze F: kauzy, timeline i seznam vztahů pochází z view modelů
+      (data/generated/views/**); stats.toml, graph projekce a updates.toml
+      zůstávají generovanými datovými soubory (rozhodnutí fáze H). -#}
   {% set dossier_slug = section.extra.dossier %}
+  {% set view = load_data(path="data/" ~ section.extra.view_model) %}
   {{ ui::page_header(title=section.title, breadcrumb_items=[
     "Domů::" ~ get_url(path="@/_index.md"),
     "Dossiery::" ~ get_url(path="@/dossiers/_index.md"),
     section.title,
   ], updated=section.extra.updated | default(value=""), reviewed=section.extra.reviewed_at | default(value="")) }}
 
-  {% if section.extra.dossier_type == "aggregate" %}
+  {% if view.dossierType == "aggregate" %}
   {#- Which dossiers this aggregate rolls up comes from the registry
       (data/dossiers.toml → source_dossiers), never from names written here:
       the notice, the links and the per-subject tiles all follow the data. -#}
   {% set registry = load_data(path="data/dossiers.toml") %}
-  {% set self_entry = registry.dossiers | filter(attribute="slug", value=section.extra.dossier) | first %}
+  {% set self_entry = registry.dossiers | filter(attribute="slug", value=dossier_slug) | first %}
   {% set source_slugs = self_entry.source_dossiers | default(value=[]) %}
   <section class="mb-10 rounded-xl border border-[#f3e5c0]/25 bg-[#f3e5c0]/[0.04] p-5" aria-labelledby="aggregate-notice-heading">
     <h2 id="aggregate-notice-heading" class="mb-2 text-xs font-semibold uppercase tracking-wide text-[#f3e5c0]/80">Generovaný společný pohled</h2>
@@ -44,10 +48,10 @@
     </div>
   </section>
 
-  {% set claims_section = get_section(path="dossiers/" ~ section.extra.dossier ~ "/claims/_index.md") %}
+  {% set claims_idx = load_data(path="data/generated/views/dossiers/" ~ dossier_slug ~ "/claims-index.json") %}
   {% set_global shared_claims = 0 %}
-  {% for p in claims_section.pages %}
-    {% if p.extra.subjects and p.extra.subjects | length > 1 %}{% set_global shared_claims = shared_claims + 1 %}{% endif %}
+  {% for p in claims_idx.rows %}
+    {% if p.subjects and p.subjects | length > 1 %}{% set_global shared_claims = shared_claims + 1 %}{% endif %}
   {% endfor %}
   <section class="mb-12 grid grid-cols-2 gap-3 sm:grid-cols-4" aria-label="Rozdělení tvrzení podle subjektu">
     {%- for slug in source_slugs %}
@@ -108,10 +112,8 @@
       (schemas/graph-payload.schema.json), so both share one runtime
       (assets/js/modules/graph/index.js). -#}
   {% set graph = load_data(path="static/data/graph/dossier/" ~ dossier_slug ~ ".json") %}
-  {% set entity_section = get_section(path="entities/_index.md") %}
-  {% set relation_section = get_section(path="dossiers/" ~ dossier_slug ~ "/relations/_index.md") %}
-  {% set gap_section = get_section(path="dossiers/" ~ dossier_slug ~ "/gaps/_index.md") %}
-  {% set claim_section = get_section(path="dossiers/" ~ dossier_slug ~ "/claims/_index.md") %}
+  {% set relations_idx = load_data(path="data/generated/views/dossiers/" ~ dossier_slug ~ "/relations-index.json") %}
+  {% set gaps_idx = load_data(path="data/generated/views/dossiers/" ~ dossier_slug ~ "/gaps-index.json") %}
   <section aria-labelledby="graf-vztahu-heading" id="graf-vztahu" class="mb-12" data-graph-section>
     <h2 id="graf-vztahu-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Graf vztahů — kanonický registr</h2>
     <p class="mb-4 text-xs text-white/50">Toto NENÍ zjednodušená legenda ke grafu níže — je to týž kanonický registr, ze kterého se graf vykresluje. Každá entita a každý vztah má vlastní stránku; funguje bez JavaScriptu. Plný, filtrovatelný <a href="{{ get_url(path='@/dossiers/' ~ dossier_slug ~ '/relations/_index.md') | safe }}" class="text-[#f3e5c0] underline">registr vztahů</a> tohoto dossieru a globální, dossier-nezávislý <a href="{{ get_url(path='@/entities/_index.md') | safe }}" class="text-[#f3e5c0] underline">registr entit</a> mají vlastní routu.</p>
@@ -143,8 +145,8 @@
         {% if c.gaps and c.gaps | length > 0 %}
         <p class="mt-2 text-xs text-white/55">Otevřené mezery:
           {% for g in c.gaps %}
-            {% set gap_page = gap_section.pages | filter(attribute="extra.gap_id", value=g) | first %}
-            {% if gap_page %}<a href="{{ gap_page.permalink | safe }}" class="text-[#f3e5c0] underline decoration-white/30 underline-offset-2">{{ g }}</a>{% if not loop.last %}, {% endif %}{% endif %}
+            {% set gap_row = gaps_idx.rows | filter(attribute="identifier", value=g) | first %}
+            {% if gap_row %}<a href="{{ config.base_url }}{{ gap_row.route }}" class="text-[#f3e5c0] underline decoration-white/30 underline-offset-2">{{ g }}</a>{% if not loop.last %}, {% endif %}{% endif %}
           {% endfor %}
         </p>
         {% endif %}
@@ -152,34 +154,32 @@
       {% endfor %}
     </div>
 
-    <h3 class="mb-2 text-xs font-semibold uppercase tracking-wide text-white/55">Všechny vztahy ({{ relation_section.pages | length }})</h3>
+    <h3 class="mb-2 text-xs font-semibold uppercase tracking-wide text-white/55">Všechny vztahy ({{ relations_idx.rows | length }})</h3>
     <ul class="space-y-1.5 text-sm text-white/70">
-      {% for r in relation_section.pages %}
-      {% set source_entity = entity_section.pages | filter(attribute="extra.entity_id", value=r.extra.source) | first %}
-      {% set target_entity = entity_section.pages | filter(attribute="extra.entity_id", value=r.extra.target) | first %}
+      {% for r in relations_idx.rows %}
       <li>
-        <span class="edge-status-dot edge-{{ r.extra.status }}"></span>
-        {% if source_entity %}<a href="{{ source_entity.permalink | safe }}" class="text-white/80 no-underline hover:underline">{{ source_entity.title }}</a>{% endif %}
+        <span class="edge-status-dot edge-{{ r.status }}"></span>
+        {% if r.from.title %}<a href="{{ config.base_url }}{{ r.from.route }}" class="text-white/80 no-underline hover:underline">{{ r.from.title }}</a>{% endif %}
         <span aria-hidden="true" class="text-white/55">&rarr;</span>
-        <a href="{{ r.permalink | safe }}" class="text-[#f3e5c0] no-underline hover:underline">{{ r.extra.label }}</a>
+        <a href="{{ config.base_url }}{{ r.route }}" class="text-[#f3e5c0] no-underline hover:underline">{{ r.label }}</a>
         <span aria-hidden="true" class="text-white/55">&rarr;</span>
-        {% if target_entity %}<a href="{{ target_entity.permalink | safe }}" class="text-white/80 no-underline hover:underline">{{ target_entity.title }}</a>{% endif %}
+        {% if r.to.title %}<a href="{{ config.base_url }}{{ r.to.route }}" class="text-white/80 no-underline hover:underline">{{ r.to.title }}</a>{% endif %}
         <span class="text-white/55">(
-          {{- ui::relation_status(status=r.extra.status, long=false) -}}
-          {%- if r.extra.claims %}, {% for c in r.extra.claims %}{% set clm_page = claim_section.pages | filter(attribute="extra.clm_id", value=c) | first %}{% if clm_page %}<a href="{{ clm_page.permalink | safe }}" class="text-[#f3e5c0]/70 no-underline hover:underline">{{ c }}</a>{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}{% endif -%}
+          {{- ui::relation_status(status=r.status, long=false) -}}
+          {%- if r.claims %}, {% for c in r.claims %}<a href="{{ config.base_url }}{{ c.route }}" class="text-[#f3e5c0]/70 no-underline hover:underline">{{ c.identifier }}</a>{% if not loop.last %}, {% endif %}{% endfor %}{% endif -%}
         )</span>
       </li>
       {% endfor %}
     </ul>
   </section>
 
-  {% if section.extra.cases %}
+  {% if view.cases %}
   <section aria-labelledby="cases-heading" class="mb-12">
     <h2 id="cases-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Kauzy v přehledu</h2>
     <div class="grid gap-4 sm:grid-cols-3">
-      {% for c in section.extra.cases %}
+      {% for c in view.cases %}
       <a href="#{{ c.anchor }}" class="group flex flex-col rounded-xl border border-white/10 bg-white/[0.03] p-4 no-underline transition-colors hover:border-white/20 hover:bg-white/[0.06]">
-        <span class="status-badge {{ c.status }} w-fit">{{ c.label }}</span>
+        <span class="status-badge {{ c.status }} w-fit">{{ c.statusLabel }}</span>
         <span class="font-semibold text-white group-hover:text-[#f3e5c0]">{{ c.title }}</span>
         <span class="text-xs text-white/55">{{ c.period }}</span>
         <span class="mt-2 text-sm text-white/70">{{ c.summary }}</span>
@@ -189,11 +189,15 @@
   </section>
   {% endif %}
 
-  {% if section.extra.timeline %}
+  {% set_global timeline_entries = [] %}
+  {% for b in view.contentBlocks %}
+    {% if b.type == "timeline" %}{% set_global timeline_entries = b.entries %}{% endif %}
+  {% endfor %}
+  {% if timeline_entries | length > 0 %}
   <section aria-labelledby="timeline-heading" class="mb-12">
     <h2 id="timeline-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Časová osa</h2>
     <ol class="timeline">
-      {% for e in section.extra.timeline %}
+      {% for e in timeline_entries %}
       <li>
         <span class="timeline-dot {{ e.dot }}"></span>
         <p class="text-xs text-white/55">{{ e.date }}</p>

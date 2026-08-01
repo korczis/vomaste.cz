@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-18"
 description = "Ministr Šebestyán se jednání dozorčí rady SZIF 24. února 2026 nezúčastnil a uvedl, že do činnosti fondu nebude nijak zasahovat; totéž stanov"
 template = "dossier-claim.html"
 weight = 18
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-18"
+view_model = "generated/views/dossiers/martin-sebestyan/claims/clm-18.json"
 dossier = "martin-sebestyan"
 record_type = "claim"
 lang = "cs"
@@ -15,5 +19,4 @@ summary = "Ministr Šebestyán se jednání dozorčí rady SZIF 24. února 2026 
 sources = ["SRC-08", "SRC-15"]
 subjects = ["sebestyan"]
 +++
-
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/martin-sebestyan/_index.md#registr-tvrzeni).

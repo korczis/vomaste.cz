@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-21"
 description = "Klempíř v červnu 2026 uvedl, že bude usilovat o rozpočet ministerstva kultury až 21 miliard korun na rok 2027 proti letošním 17,6 miliardy, "
 template = "dossier-claim.html"
 weight = 21
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-21"
+view_model = "generated/views/dossiers/oto-klempir/claims/clm-21.json"
 dossier = "oto-klempir"
 record_type = "claim"
 lang = "cs"
@@ -15,5 +19,4 @@ summary = "Klempíř v červnu 2026 uvedl, že bude usilovat o rozpočet ministe
 sources = ["SRC-06"]
 subjects = ["klempir"]
 +++
-
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/oto-klempir/_index.md#registr-tvrzeni).

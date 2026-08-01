@@ -1,4 +1,5 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-35 — FORUM 24"
 description = "Ministerstvo zdravotnictví varuje před přístrojem zapper; SZPI odebrala certifikát."
 template = "dossier-source.html"
@@ -6,6 +7,9 @@ weight = 35
 aliases = ["/dossier/zdroje/src-35/"]
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-35"
+view_model = "generated/views/dossiers/macinka-turek/sources/src-35.json"
 subjects = ["turek"]
 dossier = "macinka-turek"
 record_type = "source"
@@ -14,11 +18,10 @@ src_id = "SRC-35"
 outlet = "FORUM 24"
 src_type = "zpravodajství (komentářový web)"
 url = "https://www.forum24.cz/kandiduje-filip-turek-za-motoristy-nebo-za-sarlatany-spojeni-elitni-policista-a-prodejce-zapperu-prekvapi"
-retrieved = "2026-07-22"
 published = "2024-06-02"
+retrieved = "2026-07-22"
 claims = ["CLM-31"]
 +++
-
 Forum24 (autor Jiří X. Doležal, 2. 6. 2024) — druhý nezávislý zdroj k
 tématu Zapper Club. Potvrzuje, že Turek byl jednatelem Zapper-Club
 s.r.o. od roku 2016 do roku 2022, a shrnuje, že Ministerstvo zdravotnictví

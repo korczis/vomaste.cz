@@ -23,6 +23,7 @@
     "/dossiers/igor-cerveny/entities/cerveny/"
   ],
   "snapshotDate": "2026-07-30",
+  "order": 10,
   "content": [
     {
       "type": "markdown",

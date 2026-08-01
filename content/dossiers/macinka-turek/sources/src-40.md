@@ -1,4 +1,5 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-40 — Motoristé sobě / UDHPSH"
 description = "Povinně zveřejněné přehledy dárců volební kampaně PS 2025 (primární zdroj)."
 template = "dossier-source.html"
@@ -6,6 +7,9 @@ weight = 40
 aliases = ["/dossier/zdroje/src-40/"]
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-40"
+view_model = "generated/views/dossiers/macinka-turek/sources/src-40.json"
 subjects = ["macinka", "turek"]
 dossier = "macinka-turek"
 record_type = "source"
@@ -17,7 +21,6 @@ url = "https://motoristesobe.cz/udhpsh"
 retrieved = "2026-07-22"
 claims = ["CLM-35"]
 +++
-
 Oficiální stránka hnutí Motoristé sobě s dokumenty povinně zveřejňovanými
 podle zákona o financování politických stran (dohled Úřadu pro dohled nad
 hospodařením politických stran a politických hnutí — UDHPSH). Obsahuje

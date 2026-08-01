@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-20 — Učitelské noviny"
 description = "Školní rok ZŠ a SŠ skončí letos v pátek 26. června, ne 30. června, rozhodl Plaga"
 template = "dossier-source.html"
 weight = 20
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-20"
+view_model = "generated/views/dossiers/robert-plaga/sources/src-20.json"
 subjects = ["plaga"]
 dossier = "robert-plaga"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-03-31"
 retrieved = "2026-07-30"
 claims = ["CLM-48"]
 +++
-
 **Školní rok ZŠ a SŠ skončí letos v pátek 26. června, ne 30. června, rozhodl Plaga**
 
 Zkrácení se týká základních škol, středních škol a konzervatoří, nikoli mateřských škol. Reakce Luboše Zajíce (Asociace ředitelů ZŠ), Renaty Schejbalové (Asociace ředitelů gymnázií) a Jiřího Nekudy (CZESHA). Konkrétní paragraf školského zákona ani přímé citace ministra článek neuvádí.

@@ -4,93 +4,96 @@
 
 {% block content %}
 <main class="mx-auto max-w-2xl px-6 py-12 text-white">
-  {% set dossier_slug = page.extra.dossier %}
-  {{ ui::page_header(title=page.extra.src_id ~ " — " ~ page.extra.outlet, breadcrumb_items=[
+  {% set view = load_data(path="data/" ~ page.extra.view_model) %}
+  {% set record = view.record %}
+  {% set dossier_slug = view.dossier %}
+  {{ ui::page_header(title=record.identifier ~ " — " ~ record.outlet, breadcrumb_items=[
     "Dossier::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"),
     "Registr zdrojů::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/sources/_index.md"),
-    page.extra.src_id,
+    record.identifier,
   ]) }}
 
-  {{ table::advanced_table(id="src-meta", caption="Metadata zdroje " ~ page.extra.src_id, extra_class="mb-8") }}
-      <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Typ</th><td class="p-3">{{ page.extra.src_type }}</td></tr>
-      <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Odkaz</th><td class="p-3"><a href="{{ page.extra.url }}" rel="external" class="break-all">{{ page.extra.url }}</a></td></tr>
-      {% if page.extra.published %}
-      <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Publikováno</th><td class="p-3">{{ page.extra.published }}</td></tr>
+  {{ table::advanced_table(id="src-meta", caption="Metadata zdroje " ~ record.identifier, extra_class="mb-8") }}
+      <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Typ</th><td class="p-3">{{ record.sourceType }}</td></tr>
+      <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Odkaz</th><td class="p-3"><a href="{{ record.url }}" rel="external" class="break-all">{{ record.url }}</a></td></tr>
+      {% if record.published %}
+      <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Publikováno</th><td class="p-3">{{ record.published }}</td></tr>
       {% else %}
       <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Publikováno</th><td class="p-3 text-white/55">neuvedeno</td></tr>
       {% endif %}
-      <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Zařazeno do dossieru</th><td class="p-3">{{ page.extra.retrieved }}</td></tr>
-      {% if page.extra.family %}
-      <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Zdrojová rodina</th><td class="p-3">{{ page.extra.family }}</td></tr>
+      <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Zařazeno do dossieru</th><td class="p-3">{{ record.retrieved }}</td></tr>
+      {% if record.sourceFamily %}
+      <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Zdrojová rodina</th><td class="p-3">{{ record.sourceFamily }}</td></tr>
       {% endif %}
   {{ table::advanced_table_end() }}
 
-  {% if page.extra.claims %}
+  {% if view.resolved.claims %}
   <section class="mb-8" aria-labelledby="src-claims-h">
-    <h2 id="src-claims-h" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Podporuje tvrzení ({{ page.extra.claims | length }})</h2>
-    {% set tvrzeni = get_section(path="dossiers/" ~ dossier_slug ~ "/claims/_index.md") %}
+    <h2 id="src-claims-h" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Podporuje tvrzení ({{ view.resolved.claims | length }})</h2>
     <ul class="space-y-3">
-      {% for c in page.extra.claims %}
-        {% set clm_page = tvrzeni.pages | filter(attribute="extra.clm_id", value=c) | first %}
-        {% if clm_page %}
+      {% for c in view.resolved.claims %}
         <li class="rounded-lg border border-white/10 bg-white/[0.03] p-4">
           <p class="flex flex-wrap items-baseline gap-2">
-            <a href="{{ clm_page.permalink | safe }}" class="font-mono text-xs font-bold text-[#f3e5c0] no-underline hover:underline">{{ c }}</a>
-            <span class="status-badge {{ clm_page.extra.status }}">{{ clm_page.extra.status_label }}</span>
+            <a href="{{ config.base_url }}{{ c.route }}" class="font-mono text-xs font-bold text-[#f3e5c0] no-underline hover:underline">{{ c.identifier }}</a>
+            <span class="status-badge {{ c.status }}">{{ c.statusLabel }}</span>
           </p>
-          <p class="mt-1 text-sm leading-relaxed text-white/70">{{ clm_page.extra.summary }}</p>
+          <p class="mt-1 text-sm leading-relaxed text-white/70">{{ c.text }}</p>
         </li>
-        {% else %}
-        <li class="rounded-lg border border-white/10 p-4 font-mono text-xs text-white/55">{{ c }}</li>
-        {% endif %}
       {% endfor %}
     </ul>
   </section>
   {% endif %}
 
+  {#- Tělo NErenderujeme runtime `markdown()` filtrem z view modelu:
+      filtr neresolvuje Zola @/ interní odkazy (redakční poznámky zdrojů
+      je obsahují). Kanonický markdown blok vkládá do content adaptéru
+      generátor a Zola ho renderuje standardně — page.content JE
+      kanonické tělo záznamu. -#}
   <article class="dossier-prose">
     {{ page.content | safe }}
   </article>
 
-  {% set zdroje_all = get_section(path="dossiers/" ~ dossier_slug ~ "/sources/_index.md") %}
+  {% set idx = load_data(path="data/generated/views/dossiers/" ~ dossier_slug ~ "/sources-index.json") %}
   {% set_global same_outlet = [] %}
-  {% for p in zdroje_all.pages %}
-    {% if p.extra.outlet == page.extra.outlet and p.extra.src_id != page.extra.src_id %}
-      {% set_global same_outlet = same_outlet | concat(with=[p]) %}
+  {% for s in idx.rows %}
+    {% if s.outlet == record.outlet and s.identifier != record.identifier %}
+      {% set_global same_outlet = same_outlet | concat(with=[s]) %}
     {% endif %}
   {% endfor %}
   {% if same_outlet | length > 0 %}
   <section class="mt-8 rounded-lg border border-white/10 bg-white/[0.03] p-4">
-    <h2 class="mb-2 text-xs font-semibold uppercase tracking-wide text-white/55">Další zdroje téhož vydavatele ({{ page.extra.outlet }})</h2>
+    <h2 class="mb-2 text-xs font-semibold uppercase tracking-wide text-white/55">Další zdroje téhož vydavatele ({{ record.outlet }})</h2>
     <p class="mb-3 text-xs text-white/50">Zdroje jednoho vydavatele se vzájemně nepočítají jako nezávislá potvrzení.</p>
     <ul class="flex flex-wrap gap-2">
       {% for s in same_outlet %}
-      <li><a href="{{ s.permalink | safe }}" title="{{ s.description | default(value='') | truncate(length=100) }}" class="id-chip inline-block rounded bg-white/5 px-2 py-1 font-mono text-xs text-[#f3e5c0] no-underline hover:bg-white/10">{{ s.extra.src_id }}</a></li>
+      <li><a href="{{ config.base_url }}{{ s.route }}" title="{{ s.description | default(value='') | truncate(length=100) }}" class="id-chip inline-block rounded bg-white/5 px-2 py-1 font-mono text-xs text-[#f3e5c0] no-underline hover:bg-white/10">{{ s.identifier }}</a></li>
       {% endfor %}
     </ul>
   </section>
   {% endif %}
 
+  {#- Provenance zůstává na content cestě: adaptér nahradil původní
+      soubor na stejné cestě, takže git log nese celou redakční historii
+      záznamu. Přesměrování na data/dossiers/**.json je rozhodnutí H. -#}
   <p class="mt-8 text-xs text-white/55">
     Provenance: <a href="https://github.com/korczis/vomaste.cz/commits/master/content/{{ page.relative_path }}" class="underline decoration-white/20 underline-offset-2 hover:text-white/70">historie změn tohoto záznamu v Gitu</a>
     — kdy byl zdroj zařazen a kdy naposledy ověřen.
   </p>
 
-  {% if page.extra.family %}
-  {% set zdroje = get_section(path="dossiers/" ~ dossier_slug ~ "/sources/_index.md") %}
+  {% if record.sourceFamily %}
   {% set_global siblings = [] %}
-  {% for p in zdroje.pages %}
-    {% if p.extra.family and p.extra.family == page.extra.family and p.extra.src_id != page.extra.src_id %}
-      {% set_global siblings = siblings | concat(with=[p]) %}
+  {% for s in idx.rows %}
+    {% if s.sourceFamily and s.sourceFamily == record.sourceFamily and s.identifier != record.identifier %}
+      {% set_global siblings = siblings | concat(with=[s]) %}
     {% endif %}
   {% endfor %}
   {% if siblings | length > 0 %}
   <section class="mt-10 rounded-lg border border-white/10 bg-white/[0.03] p-4">
-    <h2 class="mb-2 text-xs font-semibold uppercase tracking-wide text-white/55">Stejná zdrojová rodina ({{ page.extra.family }})</h2>
+    <h2 class="mb-2 text-xs font-semibold uppercase tracking-wide text-white/55">Stejná zdrojová rodina ({{ record.sourceFamily }})</h2>
     <p class="mb-3 text-xs text-white/50">Tyto zdroje čerpají ze stejného původu dat — počítají se jako jedno potvrzení, ne jako nezávislá vícenásobná potvrzení.</p>
     <ul class="flex flex-wrap gap-2">
       {% for s in siblings %}
-      <li><a href="{{ s.permalink | safe }}" class="id-chip inline-block rounded bg-white/5 px-2 py-1 text-xs text-[#f3e5c0] no-underline hover:bg-white/10">{{ s.extra.src_id }} — {{ s.extra.outlet }}</a></li>
+      <li><a href="{{ config.base_url }}{{ s.route }}" class="id-chip inline-block rounded bg-white/5 px-2 py-1 text-xs text-[#f3e5c0] no-underline hover:bg-white/10">{{ s.identifier }} — {{ s.outlet }}</a></li>
       {% endfor %}
     </ul>
   </section>

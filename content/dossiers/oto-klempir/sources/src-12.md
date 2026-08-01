@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-12 — FORUM 24"
 description = "„Oto, zabal to!“ Petice Milionu chvilek za odvolání ministra kultury Klempíře po Strážnici akceleruje"
 template = "dossier-source.html"
 weight = 12
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-12"
+view_model = "generated/views/dossiers/oto-klempir/sources/src-12.json"
 subjects = ["klempir"]
 dossier = "oto-klempir"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-06-28"
 retrieved = "2026-07-30"
 claims = ["CLM-43"]
 +++
-
 **„Oto, zabal to!“ Petice Milionu chvilek za odvolání ministra kultury Klempíře po Strážnici akceleruje**
 
 Zpráva o vypískání ministra na folklorním festivalu ve Strážnici a o akceleraci petice Milionu chvilek za jeho odvolání (45 000 podpisů).

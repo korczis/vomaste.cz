@@ -14,6 +14,7 @@
   "dossierStatus": "not_authorized",
   "coverageState": "referenced",
   "dossiers": [],
+  "order": 25,
   "content": [
     {
       "type": "markdown",

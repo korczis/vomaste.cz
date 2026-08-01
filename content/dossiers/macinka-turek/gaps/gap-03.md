@@ -1,4 +1,5 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "GAP-03 — Nezávislé ověření pravosti smazaných příspěvků"
 description = "Pravost a autorství screenshotů, které v říjnu 2025 zveřejnil Deník N, nebyly k datu poslední kontroly nezávisle prokázány ani vyvráceny."
 template = "dossier-gap.html"
@@ -6,6 +7,9 @@ weight = 3
 aliases = ["/dossier/mezery/gap-03/"]
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/macinka-turek/gaps/GAP-03"
+view_model = "generated/views/dossiers/macinka-turek/gaps/gap-03.json"
 subjects = ["turek"]
 dossier = "macinka-turek"
 record_type = "gap"
@@ -15,7 +19,6 @@ priority = "vysoká"
 checked = "2026-07-31"
 claims = ["CLM-07", "CLM-08", "CLM-09", "CLM-19", "CLM-41", "CLM-42", "CLM-49"]
 +++
-
 V říjnu 2025 zveřejnil Deník N printscreeny příspěvků z let přibližně
 2010–2014 připisovaných Filipu Turkovi s rasistickým, sexistickým a
 homofobním obsahem (CLM-07). Turek autorství nejzávažnějších z nich

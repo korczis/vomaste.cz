@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Střet zájmů — podcastová firma"
 description = "Střet zájmů — podcastová firma — viz tvrzení CLM-08, CLM-09, CLM-10."
 template = "dossier-case.html"
 weight = 2
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/igor-cerveny/cases/CASE-02"
+view_model = "generated/views/dossiers/igor-cerveny/cases/case-02.json"
 dossier = "igor-cerveny"
 record_type = "case"
 lang = "cs"
@@ -18,6 +22,5 @@ claims = ["CLM-27", "CLM-28", "CLM-29", "CLM-30", "CLM-31", "CLM-32", "CLM-33"]
 sources = ["SRC-24", "SRC-26", "SRC-28", "SRC-25", "SRC-27", "SRC-35", "SRC-36"]
 subjects = ["cerveny"]
 +++
-
 Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu
 dossieru](@/dossiers/igor-cerveny/_index.md#kauza-stret-zajmu).

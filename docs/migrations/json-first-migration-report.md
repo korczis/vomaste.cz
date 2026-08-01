@@ -147,14 +147,32 @@ kanonická obálka a umístění souboru.
 | entity | `description` | 16 |
 | entity | `discovered_at` | 84 |
 | entity | `discovered_via` | 84 |
+| entity | `generated` | 84 |
 | entity | `government_office` | 16 |
 | entity | `government_party` | 16 |
+| entity | `record_id` | 84 |
 | entity | `sources` | 73 |
 | entity | `subject` | 84 |
+| entity | `view_model` | 84 |
 | claim | `aliases` | 45 |
+| claim | `generated` | 835 |
+| claim | `record_id` | 835 |
+| claim | `view_model` | 835 |
 | source | `aliases` | 52 |
+| source | `generated` | 514 |
+| source | `record_id` | 514 |
+| source | `view_model` | 514 |
+| case | `generated` | 81 |
+| case | `record_id` | 81 |
+| case | `view_model` | 81 |
 | gap | `aliases` | 6 |
+| gap | `generated` | 187 |
+| gap | `record_id` | 187 |
+| gap | `view_model` | 187 |
+| relation | `generated` | 101 |
 | relation | `note` | 1 |
+| relation | `record_id` | 101 |
+| relation | `view_model` | 101 |
 
 Pozn.: `aliases` u claim/source/gap stránek (staré routy) nemá v
 schématech claim/source/gap ekvivalent — routing aliasy převezme

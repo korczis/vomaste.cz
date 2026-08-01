@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "GAP-01 — Plný text citovaného investigativního článku je za předplatným"
 description = "Doslovné formulace uvnitř textu RESPEKT 30/2026 nebylo možné ověřit v plném rozsahu; ověřena byla rubrika, datum, autoři a tematický rozsah."
 template = "dossier-gap.html"
 weight = 1
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/oto-klempir/gaps/GAP-01"
+view_model = "generated/views/dossiers/oto-klempir/gaps/gap-01.json"
 subjects = ["klempir"]
 dossier = "oto-klempir"
 record_type = "gap"
@@ -14,7 +18,6 @@ priority = "vysoká"
 checked = "2026-07-30"
 claims = ["CLM-03", "CLM-04", "CLM-05", "CLM-06"]
 +++
-
 Tvrzení CLM-03 až CLM-06 vycházejí z investigativního textu týdeníku
 RESPEKT (číslo 30/2026, 19. 7. 2026, [SRC-02](@/dossiers/oto-klempir/sources/src-02.md)).
 Při kontrole 2026-07-30 bylo přímým otevřením stránky ověřeno: rubrika

@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-06 — Hospodářské noviny"
 description = "Problém české železnice byl, že s penězi nebyl problém, říká ministr Bednárik. Teď už chce trh chladit"
 template = "dossier-source.html"
 weight = 6
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-06"
+view_model = "generated/views/dossiers/ivan-bednarik/sources/src-06.json"
 subjects = ["bednarik"]
 dossier = "ivan-bednarik"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-05-28"
 retrieved = "2026-07-30"
 claims = ["CLM-10"]
 +++
-
 **Problém české železnice byl, že s penězi nebyl problém, říká ministr Bednárik. Teď už chce trh chladit**
 
 Podcastový rozhovor; plný textový obsah je částečně za paywallem, volně dostupný úvod obsahuje citaci ministra: 'Problém české železnice byl, že s penězi nebyl problém. A to se dostalo do její DNA.' Bednárik chce železniční trh 'chladit' — brzdit masivní investice; nákupy vlaků za desítky miliard při cenách v řádu stovek korun za kilometr jízdy nepovažuje za dlouhodobě udržitelné; kraje podle článku ztrácejí trpělivost s náklady na provoz linek. Citováno pouze z volně dostupné části.

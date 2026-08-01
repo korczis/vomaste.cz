@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "GAP-09 — Výsledky ohlášeného interního auditu Národní sportovní agentury."
 description = "Žádný z prostudovaných zdrojů neuvádí, zda byl audit dokončen ani jaká byla jeho zjištění."
 template = "dossier-gap.html"
 weight = 9
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/boris-stastny/gaps/GAP-09"
+view_model = "generated/views/dossiers/boris-stastny/gaps/gap-09.json"
 subjects = ["stastny"]
 dossier = "boris-stastny"
 record_type = "gap"
@@ -14,7 +18,6 @@ priority = "střední"
 checked = "2026-07-30"
 claims = []
 +++
-
 Výsledky ohlášeného interního auditu Národní sportovní agentury.
 
 **Proč je to mezera**: Žádný z prostudovaných zdrojů neuvádí, zda byl audit dokončen ani jaká byla jeho zjištění. Tato mezera **není** zjištěním žádným

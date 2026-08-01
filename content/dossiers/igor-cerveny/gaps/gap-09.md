@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "GAP-09 — Není doložena celková vysoutěžená či skutečně proplacená částka za úpravy ministrovy praco"
 description = "Deník N mluví jen o „dalších statisících“ a klíčové pasáže obou článků (18. 4. a 18. 5. 2026) jsou za paywallem; článek z 18. 4. je nepřístu"
 template = "dossier-gap.html"
 weight = 9
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/igor-cerveny/gaps/GAP-09"
+view_model = "generated/views/dossiers/igor-cerveny/gaps/gap-09.json"
 subjects = ["cerveny"]
 dossier = "igor-cerveny"
 record_type = "gap"
@@ -14,7 +18,6 @@ priority = "střední"
 checked = "2026-07-30"
 claims = []
 +++
-
 Není doložena celková vysoutěžená či skutečně proplacená částka za úpravy ministrovy pracovny.
 
 **Proč je to mezera**: Deník N mluví jen o „dalších statisících“ a klíčové pasáže obou článků (18. 4. a 18. 5. 2026) jsou za paywallem; článek z 18. 4. je nepřístupný zcela. Tato mezera **není** zjištěním žádným

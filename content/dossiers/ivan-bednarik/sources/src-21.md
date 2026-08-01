@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-21 — Newstream"
 description = "Personální zemětřesení v Českých drahách. Skončil šéf Bednárik"
 template = "dossier-source.html"
 weight = 21
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-21"
+view_model = "generated/views/dossiers/ivan-bednarik/sources/src-21.json"
 subjects = ["bednarik"]
 dossier = "ivan-bednarik"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2022-02-15"
 retrieved = "2026-07-30"
 claims = ["CLM-42", "CLM-45", "CLM-46"]
 +++
-
 **Personální zemětřesení v Českých drahách. Skončil šéf Bednárik**
 
 Uvádí, že Bednárik své pohnutky veřejně nesdělil, a jako pravděpodobné příčiny označuje plánované vládní úspory, spor o platby za pozemky ČD užívané Správou železnic, s nimiž dopravce počítal v byznysplánu předloženém dozorčí radě. Bednárik vedl ČD zhruba 15 měsíců od prosince 2020. Zmiňuje také Kupkův výrok o silném manažerovi a hospodářský kontext ztrát skupiny.

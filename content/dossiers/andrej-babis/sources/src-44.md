@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-44 — ČT24: Ústavní soud odmítl stížnost Vodňanské drůbeže kvůli nevyplaceným dotacím (23. 1. 2026)"
 description = "ÚS odmítl stížnost Vodňanské drůbeže ve sporu o 75mil. dotaci z PRV (smlouva 2018); podle usnesení si Babiš přes formální roli svěřenských správců ponechal faktický rozhodující vliv."
 template = "dossier-source.html"
 weight = 44
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-44"
+view_model = "generated/views/dossiers/andrej-babis/sources/src-44.json"
 subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-01-23"
 retrieved = "2026-08-01"
 claims = ["CLM-66", "CLM-67"]
 +++
-
 ČT24 informuje, že Ústavní soud odmítl stížnost společnosti Vodňanská
 drůbež ze skupiny Agrofert, která nesouhlasila se zamítnutím
 75milionové dotace z Programu rozvoje venkova (smlouva podepsána

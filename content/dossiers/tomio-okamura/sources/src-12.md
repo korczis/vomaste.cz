@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-12 — Týden.cz"
 description = "Soud uložil SPD třímilionový peněžitý trest za nenávistné předvolební plakáty"
 template = "dossier-source.html"
 weight = 12
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-12"
+view_model = "generated/views/dossiers/tomio-okamura/sources/src-12.json"
 subjects = ["okamura"]
 dossier = "tomio-okamura"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-06-03"
 retrieved = "2026-07-30"
 claims = ["CLM-11", "CLM-12", "CLM-13"]
 +++
-
 **Soud uložil SPD třímilionový peněžitý trest za nenávistné předvolební plakáty**
 
 Přebraná agenturní zpráva ČTK. Obsahuje výši navrhovaného trestu státního zástupce, citaci o nulové sebereflexi hnutí a údaj, že soud vycházel z ročního státního příspěvku SPD ve výši 40 milionů korun.

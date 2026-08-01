@@ -20,6 +20,7 @@
   "routeAliases": [
     "/dossiers/macinka-turek/entities/gmrgas/"
   ],
+  "order": 18,
   "content": [
     {
       "type": "markdown",

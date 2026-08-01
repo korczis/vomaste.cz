@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-19 — Aktuálně.cz"
 description = "Personální změny v Českých drahách začaly, šéf Bednárik rezignoval"
 template = "dossier-source.html"
 weight = 19
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-19"
+view_model = "generated/views/dossiers/ivan-bednarik/sources/src-19.json"
 subjects = ["bednarik"]
 dossier = "ivan-bednarik"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2022-02-15"
 retrieved = "2026-07-30"
 claims = ["CLM-43", "CLM-44"]
 +++
-
 **Personální změny v Českých drahách začaly, šéf Bednárik rezignoval**
 
 Zpráva o mimořádném jednání dozorčí rady ČD. Kromě Bednárika odešli místopředseda představenstva Václav Nebeský a člen představenstva Petr Pavelec, novou členkou se stala Blanka Havelková. Předsedou dozorčí rady byl zvolen ekonom Miroslav Zámečník, který nahradil Pavla Kysilku rezignovavšího v prosinci.

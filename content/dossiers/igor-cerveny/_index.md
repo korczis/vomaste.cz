@@ -1,21 +1,29 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Igor Červený"
 description = "Neutrální, zdroji doložený přehled o osobě Igor Červený — ministr životního prostředí. Autorizovaný rozsah dle AUTH-2026-07-30-R; registry se teprve plní."
 template = "entity-dossier.html"
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/igor-cerveny"
+view_model = "generated/views/dossiers/igor-cerveny/overview.json"
 dossier = "igor-cerveny"
 dossier_title = "Igor Červený"
+record_type = "dossier"
 dossier_type = "entity"
 canonical_dossier = "igor-cerveny"
 subject = "cerveny"
 lang = "cs"
 seo_type = "ProfilePage"
-subject_entities = ["cerveny"]
-subjects = ["Igor Červený"]
 updated = "2026-07-30"
 reviewed_at = "2026-07-30"
+subject_entities = ["cerveny"]
+subjects = ["Igor Červený"]
 
+[extra.authorization]
+authorized = true
+record_ids = ["AUTH-2026-07-30-R"]
 
 [[extra.timeline]]
 date = "2025-10"
@@ -59,9 +67,6 @@ anchor = "kauza-majetkove-priznani"
 dot = "dot-fact"
 subjects = ["cerveny"]
 
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-R"]
 [[extra.cases]]
 anchor = "kauza-majetkove-priznani"
 period = "2026"
@@ -101,9 +106,7 @@ label = "Sledované téma"
 summary = "Cesta do USA — viz tvrzení CLM-16, CLM-17, CLM-18, CLM-19."
 claims = ["CLM-49", "CLM-50", "CLM-51", "CLM-52", "CLM-53", "CLM-54", "CLM-55", "CLM-56", "CLM-57"]
 subjects = ["cerveny"]
-
 +++
-
 Igor Červený zastává funkci ministra životního prostředí ve třetí vládě Andreje Babiše (viz
 `data/government.toml`, ověřeno proti oficiálnímu seznamu členů vlády).
 Tento dossier je autorizován záznamem `AUTH-2026-07-30-R` v `AGENTS.md`.

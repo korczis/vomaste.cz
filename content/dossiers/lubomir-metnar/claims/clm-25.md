@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-25"
 description = "Prezident Petr Pavel 22. července 2026 vetoval novelu rozpočtových zákonů mimo jiné s odůvodněním obav o nezávislost institucí; norma by pod"
 template = "dossier-claim.html"
 weight = 25
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-25"
+view_model = "generated/views/dossiers/lubomir-metnar/claims/clm-25.json"
 dossier = "lubomir-metnar"
 record_type = "claim"
 lang = "cs"
@@ -15,5 +19,4 @@ summary = "Prezident Petr Pavel 22. července 2026 vetoval novelu rozpočtových
 sources = ["SRC-06"]
 subjects = ["metnar"]
 +++
-
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/lubomir-metnar/_index.md#registr-tvrzeni).

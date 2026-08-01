@@ -1,21 +1,29 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Jaromír Zůna"
 description = "Neutrální, zdroji doložený přehled o osobě Jaromír Zůna — místopředseda vlády a ministr obrany. Autorizovaný rozsah dle AUTH-2026-07-30-N; registry se teprve plní."
 template = "entity-dossier.html"
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/jaromir-zuna"
+view_model = "generated/views/dossiers/jaromir-zuna/overview.json"
 dossier = "jaromir-zuna"
 dossier_title = "Jaromír Zůna"
+record_type = "dossier"
 dossier_type = "entity"
 canonical_dossier = "jaromir-zuna"
 subject = "zuna"
 lang = "cs"
 seo_type = "ProfilePage"
-subject_entities = ["zuna"]
-subjects = ["Jaromír Zůna"]
 updated = "2026-07-30"
 reviewed_at = "2026-07-30"
+subject_entities = ["zuna"]
+subjects = ["Jaromír Zůna"]
 
+[extra.authorization]
+authorized = true
+record_ids = ["AUTH-2026-07-30-N"]
 
 [[extra.timeline]]
 date = "2026-01"
@@ -58,6 +66,7 @@ title = "Inspekce MO uzavírá spor o rozhovor s prezidentem: cílená cenzura n
 anchor = "kauza-rozpocet-nato"
 dot = "dot-fact"
 subjects = ["zuna"]
+
 [[extra.timeline]]
 date = "2026-02"
 title = "Zůna ve Sněmovně obhajuje rozpočet 2026 a avizuje Koncepci výstavby AČR 2040 jako realistickou a rozpočtově udržitelnou"
@@ -195,10 +204,6 @@ label = "Sledované téma"
 summary = "Spor o koncepci armády — viz tvrzení CLM-17, CLM-18, CLM-19."
 claims = ["CLM-32", "CLM-33", "CLM-34", "CLM-35", "CLM-36", "CLM-37", "CLM-38", "CLM-39", "CLM-40", "CLM-49", "CLM-50", "CLM-51", "CLM-52", "CLM-53"]
 subjects = ["zuna"]
-
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-N"]
 +++
 Jaromír Zůna zastává funkci místopředsedy vlády a ministra obrany ve třetí vládě Andreje Babiše (viz
 `data/government.toml`, ověřeno proti oficiálnímu seznamu členů vlády).

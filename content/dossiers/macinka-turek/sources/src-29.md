@@ -1,4 +1,5 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-29 — Blesk.cz"
 description = "Nejpodrobnější přímé citace obou stran: obvinění bývalé partnerky i Turkovo popření."
 template = "dossier-source.html"
@@ -6,6 +7,9 @@ weight = 29
 aliases = ["/dossier/zdroje/src-29/"]
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-29"
+view_model = "generated/views/dossiers/macinka-turek/sources/src-29.json"
 subjects = ["turek"]
 dossier = "macinka-turek"
 record_type = "source"
@@ -14,11 +18,10 @@ src_id = "SRC-29"
 outlet = "Blesk.cz"
 src_type = "zpravodajství (tabloid)"
 url = "https://www.blesk.cz/clanek/zpravy-politika/816116/turka-vini-expartnerka-ze-znasilneni-zamkl-ji-v-aute-hrozil-zbrani-nic-jsem-neudelal-tvrdi-politik.html"
-retrieved = "2026-07-22"
 published = "2025-06-23"
+retrieved = "2026-07-22"
 claims = ["CLM-25", "CLM-26"]
 +++
-
 Stejná kauza jako SRC-28 (Deník.cz), ale s nejpodrobnějšími přímými
 citacemi obou stran ze všech dohledaných zdrojů. Žena popisuje opakované
 fyzické napadání, vyhrožování zbraní v odlehlé části a znásilnění v autě

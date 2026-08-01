@@ -19,6 +19,7 @@
   "routeAliases": [
     "/dossiers/andrej-babis/entities/ab-private-trusts/"
   ],
+  "order": 1,
   "content": [
     {
       "type": "markdown",

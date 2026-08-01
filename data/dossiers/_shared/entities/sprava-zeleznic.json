@@ -19,6 +19,7 @@
   "routeAliases": [
     "/dossiers/ivan-bednarik/entities/sprava-zeleznic/"
   ],
+  "order": 68,
   "content": [
     {
       "type": "markdown",

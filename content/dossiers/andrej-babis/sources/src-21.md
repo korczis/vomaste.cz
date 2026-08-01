@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-21 — ČT24: Ústavní soud odmítl stížnost Kosteleckých uzenin (29. 4. 2026)"
 description = "Rozhodnutí Ústavního soudu z 1. 4. 2026 o odmítnutí stížnosti jako zjevně neopodstatněné a jeho odůvodnění."
 template = "dossier-source.html"
 weight = 21
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-21"
+view_model = "generated/views/dossiers/andrej-babis/sources/src-21.json"
 subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-04-29"
 retrieved = "2026-07-30"
 claims = ["CLM-47"]
 +++
-
 Zpravodajství veřejnoprávní televize k rozhodnutí Ústavního soudu.
 **Co dokládá:** že Ústavní soud 1. dubna 2026 odmítl ústavní stížnost
 Kosteleckých uzenin jako zjevně neopodstatněnou, že podle odůvodnění

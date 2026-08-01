@@ -222,6 +222,11 @@ export async function migrate(options = {}) {
     if (aliases) record.routeAliases = aliases;
     const snapshot = str(page.block, "government_snapshot");
     if (snapshot) record.snapshotDate = snapshot;
+    // Redakční pořadí registru entit (fáze F, aditivní pole schématu) —
+    // z front matter weight; není derivovatelné (historický artefakt
+    // scaffoldu, hodnoty se opakují napříč per-dossier skupinami).
+    const entityWeight = num(page.block, "weight");
+    if (entityWeight !== null) record.order = entityWeight;
     if (page.body) record.content = mdBlocks(page.body);
     emit(`_shared/entities/${id}.json`, record, [page.relPath]);
   }
@@ -497,6 +502,10 @@ export async function migrate(options = {}) {
         sources: refs(slug, "sources", edge.sources ?? []),
         subjects: arr(page.block, "subjects") ?? [],
         directed: true,
+        // Redakční pořadí v registru (fáze F, aditivní pole schématu):
+        // z front matter weight detailní stránky — u macinka-turek se liší
+        // od pořadí hran v graph.toml i od abecedního pořadí id.
+        order: num(page.block, "weight") ?? 0,
       };
       if (page.body) record.content = mdBlocks(page.body);
       emit(`${slug}/relations/${edge.id}.json`, record, [`data/dossiers/${slug}/graph.toml#${edge.id}`, `content/${page.relPath}`]);
@@ -849,6 +858,10 @@ export function runParityChecks(root = REPO_ROOT) {
       expect(rec.label === edge.label, `${p}: label se změnil`);
       expect(rec.status === edge.status, `${p}: status se změnil`);
       expect(rec.relationType === edge.relation, `${p}: relationType se změnil`);
+      {
+        const page = readRecordPages(root, "content/dossiers", slug, "relations").find((pg) => pg.fileSlug === edge.id);
+        if (page) expect((rec.order ?? 0) === (num(page.block, "weight") ?? 0), `${p}: order ≠ weight detailní stránky`);
+      }
       sameList(localIds(rec.claims), edge.claims ?? [], `${p}: REL→CLM vazby se změnily`);
       sameList(localIds(rec.sources), edge.sources ?? [], `${p}: REL→SRC vazby se změnily`);
     }

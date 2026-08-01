@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-07"
 description = "Vláda 15. června 2026 schválila zrušení financování České televize a Českého rozhlasu z koncesionářských poplatků a jeho nahrazení přímým fi"
 template = "dossier-claim.html"
 weight = 7
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-07"
+view_model = "generated/views/dossiers/oto-klempir/claims/clm-07.json"
 dossier = "oto-klempir"
 record_type = "claim"
 lang = "cs"
@@ -15,5 +19,4 @@ summary = "Vláda 15. června 2026 schválila zrušení financování České te
 sources = ["SRC-20", "SRC-26"]
 subjects = ["klempir"]
 +++
-
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/oto-klempir/_index.md#registr-tvrzeni).

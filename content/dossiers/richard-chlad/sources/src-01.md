@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-01 — Hlídač státu"
 description = "Veřejný rejstřík sponzoringu: u Richarda Chlada evidováno celkem 638 864 Kč darů straně Motoristé sobě v roce 2025, položkově rozepsaných."
 template = "dossier-source.html"
 weight = 1
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/richard-chlad/sources/SRC-01"
+view_model = "generated/views/dossiers/richard-chlad/sources/src-01.json"
 subjects = ["chlad"]
 dossier = "richard-chlad"
 record_type = "source"
@@ -16,7 +20,6 @@ url = "https://www.hlidacstatu.cz/Osoba/Sponzoring/richard-chlad-2"
 retrieved = "2026-07-22"
 claims = ["CLM-01"]
 +++
-
 Hlídač státu eviduje u podnikatele Richarda Chlada tyto dary straně
 Motoristé sobě v roce 2025:
 

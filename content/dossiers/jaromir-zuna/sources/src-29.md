@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-29 — ČeskéNoviny.cz (ČTK)"
 description = "Bezpečnostní rada státu bude za účasti Pavla opět projednávat armádní koncepci"
 template = "dossier-source.html"
 weight = 29
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-29"
+view_model = "generated/views/dossiers/jaromir-zuna/sources/src-29.json"
 subjects = ["zuna"]
 dossier = "jaromir-zuna"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-07-02"
 retrieved = "2026-07-30"
 claims = ["CLM-36"]
 +++
-
 **Bezpečnostní rada státu bude za účasti Pavla opět projednávat armádní koncepci**
 
 Opakované zasedání BRS 2. 7. 2026 za účasti prezidenta Pavla; diskuse o armádní koncepci opět nebyla uzavřena, na programu byla asi dvacítka bodů včetně krizového řízení a odolnosti státu.

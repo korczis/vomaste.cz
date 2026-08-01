@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-14 — Učitelské noviny"
 description = "Plaga zastavil testování na ZŠ kvůli špatné komunikaci a technickým potížím"
 template = "dossier-source.html"
 weight = 14
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-14"
+view_model = "generated/views/dossiers/robert-plaga/sources/src-14.json"
 subjects = ["plaga"]
 dossier = "robert-plaga"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-05-26"
 retrieved = "2026-07-30"
 claims = ["CLM-22", "CLM-23", "CLM-24"]
 +++
-
 **Plaga zastavil testování na ZŠ kvůli špatné komunikaci a technickým potížím**
 
 Plaga uvádí, že individualizovaná data budou smazána po agregaci na úroveň škol. Zatloukal se omlouvá školám a rodičům a vylučuje přístup kohokoli k identitě žáků. ČŠI má provést analýzu procesu včetně souladu s GDPR. Personální důsledky článek neuvádí.

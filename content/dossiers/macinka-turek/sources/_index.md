@@ -1,4 +1,5 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Registr zdrojů"
 description = "Veřejné zdroje citované v dossieru o Petru Macinkovi a Filipu Turkovi, každý s vlastní detailní stránkou."
 template = "dossier-sources-index.html"
@@ -6,11 +7,12 @@ sort_by = "weight"
 aliases = ["/dossier/zdroje/"]
 
 [extra]
+generated = true
+view_model = "generated/views/dossiers/macinka-turek/sources-index.json"
 dossier = "macinka-turek"
 lang = "cs"
 seo_type = "CollectionPage"
 +++
-
 Kompletní seznam veřejných zdrojů citovaných v [dossieru o Petru Macinkovi
 a Filipu Turkovi](@/dossiers/macinka-turek/_index.md). Každý zdroj má vlastní stránku s
 typem, originálním odkazem, datem sestavení a přehledem toho, která

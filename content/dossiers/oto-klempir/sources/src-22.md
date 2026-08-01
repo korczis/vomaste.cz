@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-22 — ČeskéNoviny.cz (ČTK)"
 description = "Klempíř po výzvě umělců proti Motoristům požádal, aby lidé počkali na program"
 template = "dossier-source.html"
 weight = 22
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-22"
+view_model = "generated/views/dossiers/oto-klempir/sources/src-22.json"
 subjects = ["klempir"]
 dossier = "oto-klempir"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2025-10-18"
 retrieved = "2026-07-30"
 claims = ["CLM-40", "CLM-41"]
 +++
-
 **Klempíř po výzvě umělců proti Motoristům požádal, aby lidé počkali na program**
 
 Reakce Klempíře jako poslance za Motoristy a pravděpodobného kandidáta na ministra kultury na otevřený dopis zhruba 500 umělců.

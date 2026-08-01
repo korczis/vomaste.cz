@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-01 — Deník.cz"
 description = "Rozsudek OS pro Prahu 1 z 3. 6. 2026: SPD vinna podněcováním k nenávisti kvůli předvolebním plakátům, trest 3 miliony; rozsudek není pravomocný."
 template = "dossier-source.html"
 weight = 1
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-01"
+view_model = "generated/views/dossiers/tomio-okamura/sources/src-01.json"
 subjects = ["okamura"]
 dossier = "tomio-okamura"
 record_type = "source"
@@ -13,11 +17,10 @@ src_id = "SRC-01"
 outlet = "Deník.cz (VLTAVA LABE MEDIA)"
 src_type = "celostátní zpravodajství"
 url = "https://www.denik.cz/krimi/spd-predvolebni-plakaty-tomio-okamura.html"
-retrieved = "2026-07-30"
 published = "2026-06-03"
+retrieved = "2026-07-30"
 claims = ["CLM-01", "CLM-02", "CLM-03", "CLM-04"]
 +++
-
 Deník.cz dne 3. 6. 2026 informoval, že Obvodní soud pro Prahu 1 uznal
 hnutí SPD vinným z podněcování k nenávisti kvůli dvěma předvolebním
 plakátům a uložil peněžitý trest 3 miliony korun. Soudkyně Ivana Tichá

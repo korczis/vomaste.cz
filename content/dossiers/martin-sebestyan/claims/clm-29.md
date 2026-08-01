@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-29"
 description = "Podle údajů Seznam Zpráv převzatých dalšími médii vyplatil SZIF holdingu Agrofert od nástupu Andreje Babiše do funkce premiéra téměř 200 mil"
 template = "dossier-claim.html"
 weight = 29
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-29"
+view_model = "generated/views/dossiers/martin-sebestyan/claims/clm-29.json"
 dossier = "martin-sebestyan"
 record_type = "claim"
 lang = "cs"
@@ -15,5 +19,4 @@ summary = "Podle údajů Seznam Zpráv převzatých dalšími médii vyplatil SZ
 sources = ["SRC-10", "SRC-11"]
 subjects = ["sebestyan"]
 +++
-
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/martin-sebestyan/_index.md#registr-tvrzeni).

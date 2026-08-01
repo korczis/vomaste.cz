@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-56 — Romea.cz: Potvrzeno, Filip Turek zveřejňoval rasistické a nenávistné příspěvky (28. 7. 2026)"
 description = "Dozorující státní zástupce Jan Vychyta k odložení věci pro promlčení uvedl, že k danému skutku došlo a byl by trestným činem; policie zjištění Deníku N nezpochybnila."
 template = "dossier-source.html"
 weight = 56
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-56"
+view_model = "generated/views/dossiers/macinka-turek/sources/src-56.json"
 subjects = ["turek"]
 dossier = "macinka-turek"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-07-28"
 retrieved = "2026-07-31"
 claims = ["CLM-49"]
 +++
-
 Romea.cz dne 28. 7. 2026 cituje dozorujícího státního zástupce Jana
 Vychytu k odložení věci pro promlčení: „Z pohledu práva jsme však
 dospěli k závěru, že k danému skutku došlo a že by byl trestným

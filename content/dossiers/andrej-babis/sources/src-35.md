@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-35 — Blesk.cz: Kauza dotací na „inovativní“ toastový chleba: Pekárna Agrofertu čelí obžalobě (22. 6. 2026)"
 description = "Obžaloba EPPO na Pekárnu Zelená louka a dvě fyzické osoby pro dotační podvod a poškození finančních zájmů EU; zaplombovaný majetek 98 mil. Kč, věc projedná Krajský soud v Praze."
 template = "dossier-source.html"
 weight = 35
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-35"
+view_model = "generated/views/dossiers/andrej-babis/sources/src-35.json"
 subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-06-22"
 retrieved = "2026-08-01"
 claims = ["CLM-57"]
 +++
-
 Blesk.cz popisuje obžalobu podanou státním zástupcem Adamem Bašným
 z Úřadu evropského veřejného žalobce (EPPO) na společnost Pekárna Zelená
 louka (dceřiná společnost Penamu ze skupiny Agrofert) a dvě fyzické

@@ -1,4 +1,5 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "GAP-05 — Financování kampaně"
 description = "Velcí dárci kampaně 2025 jsou zdokumentovaní; přesná rekonciliace Chladova sponzoringu a úplné financování kampaně zůstávají neuzavřené."
 template = "dossier-gap.html"
@@ -6,6 +7,9 @@ weight = 5
 aliases = ["/dossier/mezery/gap-05/"]
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/macinka-turek/gaps/GAP-05"
+view_model = "generated/views/dossiers/macinka-turek/gaps/gap-05.json"
 subjects = ["macinka", "turek"]
 dossier = "macinka-turek"
 record_type = "gap"
@@ -15,7 +19,6 @@ priority = "nízká"
 checked = "2026-07-23"
 claims = ["CLM-21", "CLM-23", "CLM-35", "CLM-36", "CLM-37"]
 +++
-
 Osobní a firemní dary z let 2017–2024 i oficiální přehledy dárců
 kampaně do Poslanecké sněmovny 2025 (UDHPSH) jsou zdokumentovány (CLM-21,
 CLM-23, CLM-35), včetně velkých dárců Borise Šťastného a Františka

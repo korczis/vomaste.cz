@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-01 — ČT24"
 description = "Ministerstvo vnitra navrhuje ukončit policejní ochranu NKÚ; Metnar to odůvodňuje bezpečnostní analýzou, prezident NKÚ Kala mluví o útoku na nezávislou instituci."
 template = "dossier-source.html"
 weight = 1
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-01"
+view_model = "generated/views/dossiers/lubomir-metnar/sources/src-01.json"
 subjects = ["metnar"]
 dossier = "lubomir-metnar"
 record_type = "source"
@@ -16,7 +20,6 @@ url = "https://ct24.ceskatelevize.cz/clanek/domaci/vnitro-chce-zrusit-policejni-
 retrieved = "2026-07-30"
 claims = ["CLM-01", "CLM-02", "CLM-03"]
 +++
-
 ČT24 informovala, že Ministerstvo vnitra navrhuje od příštího roku
 ukončit policejní ochrannou službu u Nejvyššího kontrolního úřadu. Úřad
 by si podle článku musel platit soukromou ostrahu, odhadem přibližně

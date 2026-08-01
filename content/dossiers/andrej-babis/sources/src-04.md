@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-04 — ČT24: Agrofert může opět čerpat dotace, rozhodl zemědělský fond (22. 4. 2026)"
 description = "Rozhodnutí Státního zemědělského intervenčního fondu obnovit administraci žádostí skupiny Agrofert, jeho odůvodnění a rozsah — včetně ukončených nenárokových podpor."
 template = "dossier-source.html"
 weight = 4
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-04"
+view_model = "generated/views/dossiers/andrej-babis/sources/src-04.json"
 subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-04-22"
 retrieved = "2026-07-30"
 claims = ["CLM-10", "CLM-11", "CLM-12"]
 +++
-
 Článek „Agrofert může opět čerpat dotace, rozhodl zemědělský fond"
 (22. 4. 2026). Uvádí rozhodnutí Státního zemědělského intervenčního fondu
 obnovit administraci žádostí skupiny Agrofert s účinností od 20. února

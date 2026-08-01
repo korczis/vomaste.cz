@@ -1,4 +1,5 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-07 — ČeskéNoviny.cz (ČTK)"
 description = "Babiš a Macinka jednali o postu zmocněnce; opozice žádala Turkovu rezignaci."
 template = "dossier-source.html"
@@ -6,6 +7,9 @@ weight = 7
 aliases = ["/dossier/zdroje/src-07/"]
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-07"
+view_model = "generated/views/dossiers/macinka-turek/sources/src-07.json"
 subjects = ["turek"]
 dossier = "macinka-turek"
 record_type = "source"
@@ -14,11 +18,10 @@ src_id = "SRC-07"
 outlet = "ČeskéNoviny.cz (ČTK)"
 src_type = "tisková agentura (ČTK síť)"
 url = "https://www.ceskenoviny.cz/zpravy/babis-mluvil-s-macinkou-o-turkove-nehode-ve-hre-je-post-zmocnence/2850518"
-retrieved = "2026-07-21"
 published = "2026-07-14"
+retrieved = "2026-07-21"
 claims = ["CLM-11", "CLM-12"]
 +++
-
 ČeskéNoviny.cz je portál napojený na síť ČTK (Česká tisková kancelář) —
 zpravodajství agenturního typu, obvykle rychlé a věcné, s nižší mírou
 autorské interpretace než komentářové servery.

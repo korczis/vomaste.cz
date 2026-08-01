@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-14 — ČT24 (Česká televize)"
 description = "Hlaváč převzal funkci náčelníka generálního štábu"
 template = "dossier-source.html"
 weight = 14
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-14"
+view_model = "generated/views/dossiers/jaromir-zuna/sources/src-14.json"
 subjects = ["zuna"]
 dossier = "jaromir-zuna"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-06-30"
 retrieved = "2026-07-30"
 claims = ["CLM-20", "CLM-21", "CLM-23", "CLM-24"]
 +++
-
 **Hlaváč převzal funkci náčelníka generálního štábu**
 
 Prezident Pavel jmenoval 30. 6. 2026 Miroslava Hlaváče náčelníkem Generálního štábu; předání funkce od Karla Řehky proběhlo při slavnostním nástupu na Vítkově ke Dni ozbrojených sil. Obsahuje výroky Pavla, Zůny, Řehky i Hlaváče.

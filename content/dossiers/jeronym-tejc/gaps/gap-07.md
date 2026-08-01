@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "GAP-07 — Není doloženo, jak Ústavní soud rozhodl o vládním návrhu na vyloučení soudce Šámala."
 description = "Vyjádření vlády bylo podáno 20. 7. 2026 a podle České justice je soud v době publikace ještě neobdržel; k datu rešerše nebylo nalezeno navaz"
 template = "dossier-gap.html"
 weight = 7
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/jeronym-tejc/gaps/GAP-07"
+view_model = "generated/views/dossiers/jeronym-tejc/gaps/gap-07.json"
 subjects = ["tejc"]
 dossier = "jeronym-tejc"
 record_type = "gap"
@@ -14,7 +18,6 @@ priority = "střední"
 checked = "2026-07-30"
 claims = []
 +++
-
 Není doloženo, jak Ústavní soud rozhodl o vládním návrhu na vyloučení soudce Šámala.
 
 **Proč je to mezera**: Vyjádření vlády bylo podáno 20. 7. 2026 a podle České justice je soud v době publikace ještě neobdržel; k datu rešerše nebylo nalezeno navazující rozhodnutí. Tato mezera **není** zjištěním žádným

@@ -19,6 +19,7 @@
   "routeAliases": [
     "/dossiers/adam-vojtech/entities/fn-olomouc/"
   ],
+  "order": 17,
   "content": [
     {
       "type": "markdown",

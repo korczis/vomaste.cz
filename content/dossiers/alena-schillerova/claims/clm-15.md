@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-15"
 description = "Sněmovna přehlasovala Senát v nočním hlasování v noci na 8. července 2026 a potvrdila svou verzi novely přesně 101 hlasy vládní koalice, ted"
 template = "dossier-claim.html"
 weight = 15
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-15"
+view_model = "generated/views/dossiers/alena-schillerova/claims/clm-15.json"
 dossier = "alena-schillerova"
 record_type = "claim"
 lang = "cs"
@@ -15,5 +19,4 @@ summary = "Sněmovna přehlasovala Senát v nočním hlasování v noci na 8. č
 sources = ["SRC-06", "SRC-21"]
 subjects = ["schillerova"]
 +++
-
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/alena-schillerova/_index.md#registr-tvrzeni).

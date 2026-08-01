@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-23"
 description = "Podle obžaloby měl obsah dvou předvolebních plakátů z kampaně před krajskými a senátními volbami roku 2024 „vzbuzovat či posilovat negativní"
 template = "dossier-claim.html"
 weight = 23
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-23"
+view_model = "generated/views/dossiers/tomio-okamura/claims/clm-23.json"
 dossier = "tomio-okamura"
 record_type = "claim"
 lang = "cs"
@@ -15,5 +19,4 @@ summary = "Podle obžaloby měl obsah dvou předvolebních plakátů z kampaně 
 sources = ["SRC-16", "SRC-17"]
 subjects = ["okamura"]
 +++
-
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/tomio-okamura/_index.md#registr-tvrzeni).

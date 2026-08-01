@@ -1,22 +1,29 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Ivan Bednárik"
 description = "Neutrální, zdroji doložený přehled o Ivanu Bednárikovi — ministru dopravy. Autorizovaný rozsah: rezignace ve vedení Českých drah 2022 a resortní pozice k výdajům na železnici; registry se teprve plní."
 template = "entity-dossier.html"
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/ivan-bednarik"
+view_model = "generated/views/dossiers/ivan-bednarik/overview.json"
 dossier = "ivan-bednarik"
 dossier_title = "Ivan Bednárik"
+record_type = "dossier"
 dossier_type = "entity"
 canonical_dossier = "ivan-bednarik"
 subject = "bednarik"
 lang = "cs"
 seo_type = "ProfilePage"
-subject_entities = ["bednarik"]
-subjects = ["Ivan Bednárik"]
 updated = "2026-07-30"
 reviewed_at = "2026-07-30"
+subject_entities = ["bednarik"]
+subjects = ["Ivan Bednárik"]
 
-
+[extra.authorization]
+authorized = true
+record_ids = ["AUTH-2026-07-30-B"]
 
 [[extra.timeline]]
 date = "2025-12"
@@ -46,9 +53,6 @@ anchor = "kauza-zeleznicni-vydaje"
 dot = "dot-fact"
 subjects = ["bednarik"]
 
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-B"]
 [[extra.timeline]]
 date = "2022-02-15"
 title = "Rezignace na post generálního ředitele Českých drah"
@@ -75,9 +79,7 @@ label = "Sledované téma"
 summary = "Resortní pozice k výdajům na železnici — viz tvrzení CLM-05, CLM-06, CLM-07, CLM-08, CLM-09, CLM-10."
 claims = ["CLM-11", "CLM-12", "CLM-13", "CLM-14", "CLM-15", "CLM-16", "CLM-17", "CLM-18", "CLM-19", "CLM-20", "CLM-21", "CLM-22", "CLM-23", "CLM-24", "CLM-25", "CLM-26", "CLM-27", "CLM-28", "CLM-29", "CLM-30", "CLM-31", "CLM-32", "CLM-33", "CLM-34", "CLM-35", "CLM-36", "CLM-37", "CLM-38", "CLM-39"]
 subjects = ["bednarik"]
-
 +++
-
 Ivan Bednárik je ministrem dopravy ve třetí vládě Andreje Babiše (viz
 `data/government.toml`, ověřeno proti oficiálnímu seznamu členů vlády).
 Tento dossier je autorizován záznamem `AUTH-2026-07-30-B` v `AGENTS.md`

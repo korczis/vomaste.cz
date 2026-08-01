@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-12 — RAILTARGET"
 description = "Odchod Ivana Bednárika připomněl nedokončenou transformaci Českých drah"
 template = "dossier-source.html"
 weight = 12
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-12"
+view_model = "generated/views/dossiers/ivan-bednarik/sources/src-12.json"
 subjects = ["bednarik"]
 dossier = "ivan-bednarik"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2022-03-01"
 retrieved = "2026-07-30"
 claims = ["CLM-47"]
 +++
-
 **Odchod Ivana Bednárika připomněl nedokončenou transformaci Českých drah**
 
 Analytický text spojující Bednárikův odchod s nedokončeným majetkovým vypořádáním mezi ČD a Správou železnic od rozdělení v letech 2002–2003. Uvádí kontext: převod 12 mld. v roce 2008, 3,3 mld. za zhruba 1500 nádražních budov v roce 2016, zvažovaný prodej pozemků za 3,5 mld. a zhruba 3 mld. Kč ročně v nájemném za sporné nemovitosti.

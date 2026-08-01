@@ -1,21 +1,29 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Jeroným Tejc"
 description = "Neutrální, zdroji doložený přehled o osobě Jeroným Tejc — ministr spravedlnosti. Autorizovaný rozsah dle AUTH-2026-07-30-O; registry se teprve plní."
 template = "entity-dossier.html"
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/jeronym-tejc"
+view_model = "generated/views/dossiers/jeronym-tejc/overview.json"
 dossier = "jeronym-tejc"
 dossier_title = "Jeroným Tejc"
+record_type = "dossier"
 dossier_type = "entity"
 canonical_dossier = "jeronym-tejc"
 subject = "tejc"
 lang = "cs"
 seo_type = "ProfilePage"
-subject_entities = ["tejc"]
-subjects = ["Jeroným Tejc"]
 updated = "2026-07-30"
 reviewed_at = "2026-07-30"
+subject_entities = ["tejc"]
+subjects = ["Jeroným Tejc"]
 
+[extra.authorization]
+authorized = true
+record_ids = ["AUTH-2026-07-30-O"]
 
 [[extra.timeline]]
 date = "2026-04"
@@ -44,6 +52,7 @@ title = "Vláda navrhla zamítnutí prezidentovy kompetenční žaloby a vylouč
 anchor = "kauza-bitcoin"
 dot = "dot-fact"
 subjects = ["tejc"]
+
 [[extra.timeline]]
 date = "2026-04"
 title = "Ministerstvo předkládá interní audit a Tejc ohlašuje trestní oznámení; Decroix mluví o honu na čarodějnice"
@@ -136,10 +145,6 @@ label = "Sledované téma"
 summary = "Spor o předběžné opatření Ústavního soudu — viz tvrzení CLM-14, CLM-15, CLM-16, CLM-17, CLM-18."
 claims = ["CLM-41", "CLM-42", "CLM-43", "CLM-44", "CLM-45", "CLM-46", "CLM-47", "CLM-48", "CLM-49", "CLM-50", "CLM-51"]
 subjects = ["tejc"]
-
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-O"]
 +++
 Jeroným Tejc zastává funkci ministra spravedlnosti ve třetí vládě Andreje Babiše (viz
 `data/government.toml`, ověřeno proti oficiálnímu seznamu členů vlády).

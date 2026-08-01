@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-21"
 description = "Přestože bylo testování zastaveno, ročník 2025/2026 se podle Deníku.cz započítá jako platný, protože ČŠI stihla nashromáždit dostatek dat pr"
 template = "dossier-claim.html"
 weight = 21
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-21"
+view_model = "generated/views/dossiers/robert-plaga/claims/clm-21.json"
 dossier = "robert-plaga"
 record_type = "claim"
 lang = "cs"
@@ -15,5 +19,4 @@ summary = "Přestože bylo testování zastaveno, ročník 2025/2026 se podle De
 sources = ["SRC-12"]
 subjects = ["plaga"]
 +++
-
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/robert-plaga/_index.md#registr-tvrzeni).

@@ -1,20 +1,29 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Richard Chlad"
 description = "Neutrální, zdroji doložený přehled o Richardu Chladovi — dárci strany Motoristé sobě. Autorizovaný rozsah: evidované dary, veřejně uváděná čísla a publikované reakce vedení strany."
 template = "entity-dossier.html"
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/richard-chlad"
+view_model = "generated/views/dossiers/richard-chlad/overview.json"
 dossier = "richard-chlad"
 dossier_title = "Richard Chlad"
+record_type = "dossier"
 dossier_type = "entity"
 canonical_dossier = "richard-chlad"
 subject = "chlad"
 lang = "cs"
 seo_type = "ProfilePage"
-subject_entities = ["chlad"]
-subjects = ["Richard Chlad"]
 updated = "2026-07-30"
 reviewed_at = "2026-07-30"
+subject_entities = ["chlad"]
+subjects = ["Richard Chlad"]
+
+[extra.authorization]
+authorized = true
+record_ids = ["AUTH-2026-07-30-W"]
 
 [[extra.timeline]]
 date = "2024"
@@ -63,12 +72,7 @@ label = "Citace obou stran"
 summary = "Turek i Macinka veřejně uvedli, že jeho roli zpravodajství přeceňuje. Doloženo je, že tato vyjádření padla — nikoli že jejich obsah platí."
 claims = ["CLM-05", "CLM-06"]
 subjects = ["chlad"]
-
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-W"]
 +++
-
 ## Kdo je Richard Chlad {#kdo}
 
 Richard Chlad je podnikatel a doložený **dárce strany Motoristé sobě**,

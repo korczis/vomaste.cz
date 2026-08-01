@@ -19,6 +19,7 @@
   "routeAliases": [
     "/dossiers/andrej-babis/entities/evropska-komise/"
   ],
+  "order": 15,
   "content": [
     {
       "type": "markdown",

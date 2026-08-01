@@ -1,21 +1,29 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Lubomír Metnar"
 description = "Neutrální, zdroji doložený přehled o Lubomíru Metnarovi — ministru vnitra. Pokrývá spor o policejní ochranu Nejvyššího kontrolního úřadu."
 template = "entity-dossier.html"
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/lubomir-metnar"
+view_model = "generated/views/dossiers/lubomir-metnar/overview.json"
 dossier = "lubomir-metnar"
 dossier_title = "Lubomír Metnar"
+record_type = "dossier"
 dossier_type = "entity"
 canonical_dossier = "lubomir-metnar"
 subject = "metnar"
 lang = "cs"
 seo_type = "ProfilePage"
-subject_entities = ["metnar"]
-subjects = ["Lubomír Metnar"]
 updated = "2026-07-30"
 reviewed_at = "2026-07-30"
+subject_entities = ["metnar"]
+subjects = ["Lubomír Metnar"]
 
+[extra.authorization]
+authorized = true
+record_ids = ["AUTH-2026-07-30-B"]
 
 [[extra.timeline]]
 date = "2026-07"
@@ -45,16 +53,13 @@ anchor = "kauza-navrh-ochrana-nku"
 dot = "dot-fact"
 subjects = ["metnar"]
 
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-B"]
-
 [[extra.timeline]]
 date = "2026-07"
 title = "Návrh vnitra ukončit policejní ochranu NKÚ"
 anchor = "kauza-ochrana-nku"
 dot = "dot-disputed"
 subjects = ["metnar"]
+
 [[extra.cases]]
 anchor = "kauza-ochrana-nku"
 period = "2026"
@@ -94,9 +99,7 @@ label = "Sledované téma"
 summary = "Reakce NKÚ a kontext sporu — viz tvrzení CLM-18, CLM-19, CLM-20, CLM-21, CLM-22, CLM-23, CLM-24, CLM-25."
 claims = []
 subjects = ["metnar"]
-
 +++
-
 Lubomír Metnar je ministrem vnitra ve třetí vládě Andreje Babiše. Tento
 dossier pokrývá **jedno téma** v rozsahu autorizačního záznamu v
 `AGENTS.md` (`AUTH-2026-07-30-B`): návrh ministerstva ukončit policejní

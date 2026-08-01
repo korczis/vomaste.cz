@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-08 — Dopravní noviny"
 description = "100 dní ministra Ivana Bednárika: rekordní rozpočet na výstavbu, důraz na efektivitu a transparentnost"
 template = "dossier-source.html"
 weight = 8
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-08"
+view_model = "generated/views/dossiers/ivan-bednarik/sources/src-08.json"
 subjects = ["bednarik"]
 dossier = "ivan-bednarik"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-03-24"
 retrieved = "2026-07-30"
 claims = ["CLM-11", "CLM-20"]
 +++
-
 **100 dní ministra Ivana Bednárika: rekordní rozpočet na výstavbu, důraz na efektivitu a transparentnost**
 
 Bilance prvních 100 dní Bednárika v čele resortu. Uvádí rozpis rozpočtu SFDI 2026: 81,1 mld. ŘSD, 72,2 mld. Správa železnic, 1,3 mld. Ředitelství vodních cest. Bednárik popisuje nápravu zděděného dopravního rozpočtu a úspory u Správy železnic v řádu stovek milionů korun na projekt. Zmiňuje též 75% slevy pro studenty a seniory od 1. 1. 2027.

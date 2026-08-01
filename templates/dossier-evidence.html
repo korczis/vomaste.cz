@@ -4,7 +4,14 @@
 
 {% block content %}
 <main class="mx-auto max-w-6xl px-6 py-12 text-white">
+  {#- T-028 fáze F: claims/sources-index view modely, ne get_section
+      + front-matter extra filtry. -#}
   {% set dossier_slug = section.extra.dossier %}
+  {% set claims_idx = load_data(path="data/generated/views/dossiers/" ~ dossier_slug ~ "/claims-index.json") %}
+  {% set sources_idx = load_data(path="data/generated/views/dossiers/" ~ dossier_slug ~ "/sources-index.json") %}
+  {% set claims = claims_idx.rows %}
+  {% set sources = sources_idx.rows %}
+
   {{ ui::page_header(title=section.title, description=section.description, breadcrumb_items=[
     "Dossier::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"),
     "Evidence",
@@ -12,49 +19,38 @@
 
   <article class="dossier-prose mb-10">{{ section.content | safe }}</article>
 
-  {% set claims = get_section(path="dossiers/" ~ dossier_slug ~ "/claims/_index.md") %}
-  {% set sources = get_section(path="dossiers/" ~ dossier_slug ~ "/sources/_index.md") %}
-
   <section aria-labelledby="claims-evidence-table-caption" class="mb-12">
-    {{ table::advanced_table(id="claims-evidence-table", caption="Tvrzení → podkládající zdroje", record_type="claim", columns=["Tvrzení", "Stav", "Zdroje", "Nezávislé rodiny"], count=claims.pages | length, searchable=true) }}
-          {% for c in claims.pages %}
+    {{ table::advanced_table(id="claims-evidence-table", caption="Tvrzení → podkládající zdroje", record_type="claim", columns=["Tvrzení", "Stav", "Zdroje", "Nezávislé rodiny"], count=claims | length, searchable=true) }}
+          {% for c in claims %}
           {% set_global family_ids = [] %}
-          {% for s in c.extra.sources %}
-            {% set src_page = sources.pages | filter(attribute="extra.src_id", value=s) | first %}
-            {% if src_page %}
-              {% set fam = src_page.extra.family | default(value="singleton:" ~ s) %}
-              {% if fam not in family_ids %}{% set_global family_ids = family_ids | concat(with=[fam]) %}{% endif %}
-            {% endif %}
+          {% for s in c.sources %}
+            {% set src_row = sources | filter(attribute="identifier", value=s.identifier) | first %}
+            {% set fam = src_row.sourceFamily | default(value="singleton:" ~ s.identifier) %}
+            {% if fam not in family_ids %}{% set_global family_ids = family_ids | concat(with=[fam]) %}{% endif %}
           {% endfor %}
           <tr>
-            <td class="p-3"><a href="{{ c.permalink | safe }}" class="text-[#f3e5c0] underline decoration-white/30 underline-offset-2">{{ c.extra.clm_id }}</a> <span class="text-white/50">{{ c.extra.summary | truncate(length=70) }}</span></td>
-            <td class="p-3"><span class="status-badge {{ c.extra.status }}">{{ c.extra.status_label }}</span></td>
+            <td class="p-3"><a href="{{ config.base_url }}{{ c.route }}" class="text-[#f3e5c0] underline decoration-white/30 underline-offset-2">{{ c.identifier }}</a> <span class="text-white/50">{{ c.text | truncate(length=70) }}</span></td>
+            <td class="p-3"><span class="status-badge {{ c.status }}">{{ c.statusLabel }}</span></td>
             <td class="p-3">
-              {% for s in c.extra.sources %}
-                {% set src_page = sources.pages | filter(attribute="extra.src_id", value=s) | first %}
-                {% if src_page %}<a href="{{ src_page.permalink | safe }}" class="mr-1 inline-block rounded bg-white/5 px-1.5 py-0.5 font-mono text-[0.65rem] text-[#f3e5c0] no-underline hover:bg-white/10">{{ s }}</a>{% endif %}
-              {% endfor %}
+              {% for s in c.sources %}<a href="{{ config.base_url }}{{ s.route }}" class="mr-1 inline-block rounded bg-white/5 px-1.5 py-0.5 font-mono text-[0.65rem] text-[#f3e5c0] no-underline hover:bg-white/10">{{ s.identifier }}</a>{% endfor %}
             </td>
-            <td class="p-3 text-xs {% if family_ids | length < 2 and c.extra.status == 'status-corroborated' %}text-yellow-300{% else %}text-white/50{% endif %}">{{ family_ids | length }}</td>
+            <td class="p-3 text-xs {% if family_ids | length < 2 and c.status == 'status-corroborated' %}text-yellow-300{% else %}text-white/50{% endif %}">{{ family_ids | length }}</td>
           </tr>
           {% endfor %}
     {{ table::advanced_table_end(footer="Zvýrazněný počet rodin (žlutě) označuje tvrzení se statusem CORROBORATED podložené jen jednou zdrojovou rodinou — stojí za kontrolu, ne za automatické zpochybnění.") }}
   </section>
 
   <section aria-labelledby="sources-evidence-heading" class="mb-12">
-    <h2 id="sources-evidence-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Zdroje &rarr; podložená tvrzení ({{ sources.pages | length }})</h2>
+    <h2 id="sources-evidence-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Zdroje &rarr; podložená tvrzení ({{ sources | length }})</h2>
     <div class="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
-      {% for s in sources.pages %}
-      {% if s.extra.claims %}
+      {% for s in sources %}
+      {% if s.claims %}
       <div class="registry-card">
-        <a href="{{ s.permalink | safe }}" class="font-mono text-xs text-[#f3e5c0] underline decoration-white/30 underline-offset-2">{{ s.extra.src_id }}</a>
-        <span class="mt-1 text-sm font-semibold text-white">{{ s.extra.outlet }}</span>
-        {% if s.extra.family %}<span class="mt-1 text-xs text-white/55">rodina: {{ s.extra.family }}</span>{% endif %}
+        <a href="{{ config.base_url }}{{ s.route }}" class="font-mono text-xs text-[#f3e5c0] underline decoration-white/30 underline-offset-2">{{ s.identifier }}</a>
+        <span class="mt-1 text-sm font-semibold text-white">{{ s.outlet }}</span>
+        {% if s.sourceFamily %}<span class="mt-1 text-xs text-white/55">rodina: {{ s.sourceFamily }}</span>{% endif %}
         <span class="mt-2 flex flex-wrap gap-1">
-          {% for c in s.extra.claims %}
-            {% set clm_page = claims.pages | filter(attribute="extra.clm_id", value=c) | first %}
-            {% if clm_page %}<a href="{{ clm_page.permalink | safe }}" class="id-chip rounded bg-white/5 px-1.5 py-0.5 font-mono text-[0.65rem] text-[#f3e5c0] no-underline hover:bg-white/10">{{ c }}</a>{% endif %}
-          {% endfor %}
+          {% for c in s.claims %}<a href="{{ config.base_url }}{{ c.route }}" class="id-chip rounded bg-white/5 px-1.5 py-0.5 font-mono text-[0.65rem] text-[#f3e5c0] no-underline hover:bg-white/10">{{ c.identifier }}</a>{% endfor %}
         </span>
       </div>
       {% endif %}

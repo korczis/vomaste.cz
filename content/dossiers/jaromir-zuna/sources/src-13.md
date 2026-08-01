@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-13 — Blesk.cz"
 description = "Babiš a Zůna projednají armádní koncepci. Premiér posledně spokojený nebyl"
 template = "dossier-source.html"
 weight = 13
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-13"
+view_model = "generated/views/dossiers/jaromir-zuna/sources/src-13.json"
 subjects = ["zuna"]
 dossier = "jaromir-zuna"
 record_type = "source"
@@ -17,7 +21,6 @@ published = "2026-06-02"
 retrieved = "2026-07-30"
 claims = ["CLM-19"]
 +++
-
 **Babiš a Zůna projednají armádní koncepci. Premiér posledně spokojený nebyl**
 
 Babiš a Zůna se začátkem června znovu sešli ke koncepci armády; už v květnu měl premiér podle svých slov k dokumentu několik připomínek. Babiš deklaroval záměr vrátit se ke koncepci budování armády schválené za předchozí vlády ANO.

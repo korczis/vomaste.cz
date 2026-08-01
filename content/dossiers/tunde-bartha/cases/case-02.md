@@ -1,10 +1,14 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Kariérní dráha mezi Agrofertem a státním aparátem"
 description = "Doložená posloupnost: pověření řízením Úřadu vlády 2018–2021, poté pracovní zařazení v holdingu Agrofert potvrzené mluvčím společnosti, poté opět vedení Úřadu vlády. Posloupnost funkcí sama o sobě nen"
 template = "dossier-case.html"
 weight = 2
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/tunde-bartha/cases/CASE-02"
+view_model = "generated/views/dossiers/tunde-bartha/cases/case-02.json"
 dossier = "tunde-bartha"
 record_type = "case"
 lang = "cs"
@@ -18,6 +22,5 @@ claims = ["CLM-06", "CLM-07", "CLM-08"]
 sources = ["SRC-03", "SRC-01", "SRC-02", "SRC-04"]
 subjects = ["bartha"]
 +++
-
 Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu
 dossieru](@/dossiers/tunde-bartha/_index.md#kauza-karierni-draha).
