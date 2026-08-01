@@ -9,17 +9,10 @@ weight = 51
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-51"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-51.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-51"
-outlet = "Seznam Zprávy"
-src_type = "zpravodajství"
-url = "https://www.seznamzpravy.cz/clanek/spolecnost-imoba-vratila-50-milionovou-dotaci-na-capi-hnizdo-50507"
-published = "2018-06-29"
-retrieved = "2026-08-01"
-claims = ["CLM-73", "CLM-74"]
 +++
 Seznam Zprávy informují, že společnost Imoba z holdingu Agrofert
 vrátila středočeskému dotačnímu úřadu téměř padesátimilionovou dotaci

@@ -9,17 +9,10 @@ weight = 4
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-04"
 view_model = "generated/views/dossiers/jeronym-tejc/sources/src-04.json"
-subjects = ["tejc"]
 dossier = "jeronym-tejc"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-04"
-outlet = "Blesk.cz"
-src_type = "zpravodajství"
-url = "https://www.blesk.cz/clanek/zpravy-politika/838133/kauza-blazkovy-bitcoiny-tejc-podal-trestni-oznameni-vedly-ho-k-tomu-zavery-auditu.html"
-published = "2026-04-24"
-retrieved = "2026-07-30"
-claims = ["CLM-03", "CLM-04", "CLM-05", "CLM-06", "CLM-07"]
 +++
 **Kauza Blažkovy bitcoiny: Tejc podal trestní oznámení, vedly ho k tomu závěry auditu**
 

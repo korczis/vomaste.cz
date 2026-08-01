@@ -9,14 +9,10 @@ weight = 1
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jeronym-tejc/gaps/GAP-01"
 view_model = "generated/views/dossiers/jeronym-tejc/gaps/gap-01.json"
-subjects = ["tejc"]
 dossier = "jeronym-tejc"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-01"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Článek iROZHLAS.cz s tvrzením Aleny Schillerové o údajném pochybení šéfa kabinetu ministra Stanjury nebyl přečten (HTTP 403); související dílčí tvrzení ČTK o Filipu Bendovi proto nebylo zařazeno mezi klíčová tvrzení.
 

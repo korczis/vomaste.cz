@@ -9,17 +9,10 @@ weight = 6
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-06"
 view_model = "generated/views/dossiers/jaromir-zuna/sources/src-06.json"
-subjects = ["zuna"]
 dossier = "jaromir-zuna"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-06"
-outlet = "TN.cz (TV Nova)"
-src_type = "zpravodajství"
-url = "https://tn.nova.cz/zpravodajstvi/clanek/645329-ministr-zuna-cenzuruje-prezidenta-musi-skoncit-zuri-opozice"
-published = "2026-04-14"
-retrieved = "2026-07-30"
-claims = ["CLM-08", "CLM-09", "CLM-10"]
 +++
 **Ministr Zůna cenzuruje prezidenta. Musí skončit, zuří opozice**
 

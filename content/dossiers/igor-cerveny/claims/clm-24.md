@@ -13,10 +13,5 @@ dossier = "igor-cerveny"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-24"
-status = "status-single"
-status_label = "1 ZDROJ"
-summary = "Dohoda o vypořádání společného jmění s manželkou nezahrnovala jen dům v Bobnicích, ale také bankovní účty a automobil."
-sources = ["SRC-14"]
-subjects = ["cerveny"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/igor-cerveny/_index.md#registr-tvrzeni).

@@ -9,17 +9,10 @@ weight = 15
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-15"
 view_model = "generated/views/dossiers/ales-juchelka/sources/src-15.json"
-subjects = ["juchelka"]
 dossier = "ales-juchelka"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-15"
-outlet = "Blesk.cz"
-src_type = "zpravodajství"
-url = "https://www.blesk.cz/clanek/zpravy-politika/844934/trable-juchelky-kvuli-exporadkyni-vyzadal-si-posudek-dojde-i-na-trestni-oznameni.html"
-published = "2026-07-29"
-retrieved = "2026-07-30"
-claims = ["CLM-15", "CLM-16", "CLM-23", "CLM-26", "CLM-39"]
 +++
 **Trable Juchelky kvůli exporadkyni: Vyžádal si posudek. Dojde i na trestní oznámení?**
 

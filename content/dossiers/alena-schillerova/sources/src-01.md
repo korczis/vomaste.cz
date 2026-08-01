@@ -9,16 +9,10 @@ weight = 1
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-01"
 view_model = "generated/views/dossiers/alena-schillerova/sources/src-01.json"
-subjects = ["schillerova"]
 dossier = "alena-schillerova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-01"
-outlet = "Vláda České republiky (vlada.gov.cz)"
-src_type = "oficiální primární zdroj"
-url = "https://vlada.gov.cz/cz/clenove-vlady/alena-schillerova-167019/"
-retrieved = "2026-07-30"
-claims = ["CLM-01", "CLM-02"]
 +++
 Oficiální profil na webu Úřadu vlády. Uvádí funkci **místopředsedkyně
 vlády a ministryně financí** a doložený přehled kariéry: narozena 18. 3.

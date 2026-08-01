@@ -9,16 +9,10 @@ weight = 1
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-01"
 view_model = "generated/views/dossiers/jaromir-zuna/sources/src-01.json"
-subjects = ["zuna"]
 dossier = "jaromir-zuna"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-01"
-outlet = "Vláda České republiky (vlada.gov.cz)"
-src_type = "oficiální primární zdroj"
-url = "https://vlada.gov.cz/cz/vlada/clenove-vlady/jaromir-zuna-223972/"
-retrieved = "2026-07-30"
-claims = ["CLM-01"]
 +++
 Oficiální stránka na webu Úřadu vlády, otevřena a přečtena 2026-07-30.
 Uvádí funkci **místopředseda vlády a ministr obrany** a doložený přehled kariéry: narozen 26. 11. 1960; voják z povolání od 1980, generálporučík; 1. zástupce náčelníka Generálního štábu AČR (2019–2022); přidělenec obrany v Číně, Mongolsku a KLDR (2022–2024); National War College (Washington).

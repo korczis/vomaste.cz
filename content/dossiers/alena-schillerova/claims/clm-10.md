@@ -13,10 +13,5 @@ dossier = "alena-schillerova"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-10"
-status = "status-single"
-status_label = "1 ZDROJ"
-summary = "Podle Centra veřejných financí Univerzity Karlovy umožňuje pozměňovací návrh č. 825 (§ 12 odst. 5) vládě vrátit si vlastní rozpočet k přepracování, přičemž při opětovném předložení by fakticky odpadla všechna pravidla rozpočtové odpovědnosti."
-sources = ["SRC-19"]
-subjects = ["schillerova"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/alena-schillerova/_index.md#registr-tvrzeni).

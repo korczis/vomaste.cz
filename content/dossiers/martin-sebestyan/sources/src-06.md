@@ -9,17 +9,10 @@ weight = 6
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-06"
 view_model = "generated/views/dossiers/martin-sebestyan/sources/src-06.json"
-subjects = ["sebestyan"]
 dossier = "martin-sebestyan"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-06"
-outlet = "Ministerstvo zemědělství (MZe)"
-src_type = "oficiální primární zdroj"
-url = "https://mze.gov.cz/public/portal/mze/tiskovy-servis/vystoupeni-v-mediich/ministr-sebestyan-vymahani-dotaci-po-agrofertu-nikdo-nezastavil-minula-vlada-jej-vubec-nezacala"
-published = "2026-03-05"
-retrieved = "2026-07-30"
-claims = ["CLM-04"]
 +++
 **Ministr Šebestyán: Vymáhání dotací po Agrofertu nikdo nezastavil, minulá vláda jej vůbec nezačala**
 

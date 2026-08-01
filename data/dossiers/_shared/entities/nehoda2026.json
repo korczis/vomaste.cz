@@ -21,5 +21,23 @@
   "routeAliases": [
     "/dossiers/macinka-turek/entities/nehoda2026/"
   ],
-  "order": 11
+  "order": 11,
+  "provenance": {
+    "discoveredAt": "2026-07-29",
+    "discoveredVia": [
+      "edge-turek-nehoda2026",
+      "edge-macinka-nehoda2026",
+      "edge-babis-nehoda2026",
+      "edge-nehoda2026-policie",
+      "edge-homolce-nehoda2026"
+    ],
+    "claimRefs": [
+      "CLM-10"
+    ],
+    "sourceRefs": [
+      "SRC-02"
+    ],
+    "cluster": "dopravni-nehoda",
+    "depth": 1
+  }
 }

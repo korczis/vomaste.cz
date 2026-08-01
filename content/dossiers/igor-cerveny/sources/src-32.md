@@ -9,17 +9,10 @@ weight = 32
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-32"
 view_model = "generated/views/dossiers/igor-cerveny/sources/src-32.json"
-subjects = ["cerveny"]
 dossier = "igor-cerveny"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-32"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/poslanci-maji-na-programu-pravidelne-interpelace-374944"
-published = "2026-06-25"
-retrieved = "2026-07-30"
-claims = ["CLM-48"]
 +++
 **Červený čelil ve sněmovně výtkám kvůli změnám na resortu, Macinka za výroky k Pavlovi**
 

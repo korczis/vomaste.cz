@@ -9,14 +9,10 @@ weight = 7
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jeronym-tejc/gaps/GAP-07"
 view_model = "generated/views/dossiers/jeronym-tejc/gaps/gap-07.json"
-subjects = ["tejc"]
 dossier = "jeronym-tejc"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-07"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Není doloženo, jak Ústavní soud rozhodl o vládním návrhu na vyloučení soudce Šámala.
 

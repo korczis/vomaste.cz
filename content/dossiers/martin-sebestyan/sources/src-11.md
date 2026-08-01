@@ -9,17 +9,10 @@ weight = 11
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-11"
 view_model = "generated/views/dossiers/martin-sebestyan/sources/src-11.json"
-subjects = ["sebestyan"]
 dossier = "martin-sebestyan"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-11"
-outlet = "Echo24"
-src_type = "zpravodajství"
-url = "https://m.echo24.cz/a/HaUWx/zpravy-ekonomika-agrofert-muze-dostavat-dotace-i-nadale-fond-postupoval-spravne-uvedl-organ-eu"
-published = "2026-06-04"
-retrieved = "2026-07-30"
-claims = ["CLM-21", "CLM-28", "CLM-29"]
 +++
 **Agrofert může dostávat dotace i nadále. Fond postupoval správně, uvedl orgán EU**
 

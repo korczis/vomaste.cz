@@ -9,14 +9,10 @@ weight = 4
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/tomio-okamura/gaps/GAP-04"
 view_model = "generated/views/dossiers/tomio-okamura/gaps/gap-04.json"
-subjects = ["okamura"]
 dossier = "tomio-okamura"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-04"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Zda a kdy bylo odvolání SPD formálně podáno a kdy je nařízeno odvolací jednání.
 

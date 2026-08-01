@@ -9,17 +9,10 @@ weight = 2
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/richard-chlad/sources/SRC-02"
 view_model = "generated/views/dossiers/richard-chlad/sources/src-02.json"
-subjects = ["chlad"]
 dossier = "richard-chlad"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-02"
-outlet = "CNN Prima News"
-src_type = "celostátní zpravodajství"
-url = "https://cnn.iprima.cz/kdo-je-verny-sponzor-motoristu-richard-chlad-podporovatel-turka-i-kontroverzni-podnikatel-488806"
-published = "2025-10-16"
-retrieved = "2026-07-22"
-claims = ["CLM-02", "CLM-07", "CLM-08"]
 +++
 CNN Prima News dne 16. 10. 2025 profiluje podnikatele Richarda Chlada:
 začínal v 80. letech dovozem videokazet a hodinek, po roce 1989 se

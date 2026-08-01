@@ -10,13 +10,7 @@ record_id = "https://vomaste.cz/id/dossiers/andrej-babis/relations/edge-vodnansk
 view_model = "generated/views/dossiers/andrej-babis/relations/edge-vodnanska-ustavnisoud.json"
 dossier = "andrej-babis"
 record_type = "relation"
+lang = "cs"
 rel_id = "edge-vodnanska-ustavnisoud"
-source = "vodnanska-drubez"
-target = "ustavni-soud"
-relation_type = "SUBJECT_OF_PROCEEDING"
-label = "ústavní stížnost odmítnuta 1/2026 (dotace 75 mil. Kč) — spor o nárok na dotaci, ne o vině"
-status = "single"
-claims = ["CLM-66"]
-sources = ["SRC-44"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Status: single.

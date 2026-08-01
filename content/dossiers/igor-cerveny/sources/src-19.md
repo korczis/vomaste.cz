@@ -9,17 +9,10 @@ weight = 19
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-19"
 view_model = "generated/views/dossiers/igor-cerveny/sources/src-19.json"
-subjects = ["cerveny"]
 dossier = "igor-cerveny"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-19"
-outlet = "Ekolist.cz (ČTK)"
-src_type = "zpravodajství"
-url = "https://ekolist.cz/cz/zpravodajstvi/zpravy/cerveny-navstivi-narodni-parky-v-usa-bude-tam-resit-protipozarni-ochranu"
-published = "2026-07-10"
-retrieved = "2026-07-30"
-claims = ["CLM-50", "CLM-51", "CLM-54", "CLM-55"]
 +++
 **Červený navštíví národní parky v USA, bude tam řešit protipožární ochranu**
 

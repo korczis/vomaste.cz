@@ -9,17 +9,10 @@ weight = 1
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/petr-vencalek/sources/SRC-01"
 view_model = "generated/views/dossiers/petr-vencalek/sources/src-01.json"
-subjects = ["vencalek"]
 dossier = "petr-vencalek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-01"
-outlet = "Investigace.cz"
-src_type = "investigativní žurnalistika"
-url = "https://www.investigace.cz/ministr-petr-macinka-nepriznal-podil-v-ukrajinske-firme/"
-published = "2025-12-19"
-retrieved = "2026-07-22"
-claims = ["CLM-03"]
 +++
 Investigativní web Investigace.cz zjistil, že ministr zahraničních věcí
 Petr Macinka neuvedl ve svém majetkovém přiznání dvacetiprocentní podíl

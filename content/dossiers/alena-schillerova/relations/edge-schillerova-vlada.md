@@ -10,13 +10,7 @@ record_id = "https://vomaste.cz/id/dossiers/alena-schillerova/relations/edge-sch
 view_model = "generated/views/dossiers/alena-schillerova/relations/edge-schillerova-vlada.json"
 dossier = "alena-schillerova"
 record_type = "relation"
+lang = "cs"
 rel_id = "edge-schillerova-vlada"
-source = "schillerova"
-target = "vlada"
-relation_type = "HOLDS_ROLE"
-label = "místopředsedkyně vlády a ministryně financí"
-status = "contextual"
-claims = ["CLM-01"]
-sources = ["SRC-01"]
 +++
 Kontextový, strukturální vztah — dossier jej neuvádí jako vlastní doloženou investigaci, jen jako veřejně nesporné pozadí.

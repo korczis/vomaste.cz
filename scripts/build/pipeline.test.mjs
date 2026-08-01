@@ -27,10 +27,18 @@ test("každý npm krok pipeline existuje v package.json", () => {
   }
 });
 
-test("build režim drží validátory obou toků (dvojitá pojistka do fáze H)", () => {
+test("build režim drží validátory a post-build verify brány", () => {
+  // T-028 fáze H: validate:dossier/validate:schemas/validate:graph
+  // zanikly — jejich pravidla vlastní kanonické validátory
+  // (validate-references R1–R7, validate-semantics S1–S8,
+  // validate-registry-table T1–T8, schemas/canonical/) v kroku
+  // data:validate a schema brána exportů v build:data-exports.
   const steps = MODES.build;
-  for (const validator of ["validate:dossier", "validate:schemas", "validate:graph", "validate:navigation", "verify:anchors", "verify:jsonld", "verify:export"]) {
+  for (const validator of ["data:validate", "validate:navigation", "verify:anchors", "verify:jsonld", "verify:export"]) {
     assert.ok(steps.includes(validator), `build musí dál obsahovat ${validator}`);
+  }
+  for (const removed of ["validate:dossier", "validate:schemas", "validate:graph"]) {
+    assert.ok(!steps.includes(removed), `${removed} zanikl s fází H — vlastníkem pravidel jsou kanonické validátory`);
   }
   // zola build musí běžet až po generátorech a před post-build verify
   const zolaIdx = steps.findIndex((s) => typeof s !== "string" && s.raw.includes("zola"));

@@ -9,17 +9,10 @@ weight = 20
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-20"
 view_model = "generated/views/dossiers/ivan-bednarik/sources/src-20.json"
-subjects = ["bednarik"]
 dossier = "ivan-bednarik"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-20"
-outlet = "e15.cz"
-src_type = "zpravodajství"
-url = "https://www.e15.cz/byznys/doprava-a-logistika/sef-ceskych-drah-bednarik-rezignoval-narodniho-dopravce-docasne-povede-michal-kraus-1387729"
-published = "2022-02-15"
-retrieved = "2026-07-30"
-claims = ["CLM-41", "CLM-43", "CLM-44", "CLM-45", "CLM-46"]
 +++
 **Šéf Českých drah Bednárik rezignoval, národního dopravce dočasně povede Michal Kraus**
 

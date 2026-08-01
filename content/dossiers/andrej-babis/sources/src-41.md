@@ -9,17 +9,10 @@ weight = 41
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-41"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-41.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-41"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/agrofert-zaluje-zemedelsky-fond-ktery-ukoncil-predjednane-dotace-pise-irozhlas-5970"
-published = "2023-06-01"
-retrieved = "2026-08-01"
-claims = ["CLM-62"]
 +++
 ČT24 (s odvoláním na iROZHLAS.cz) informuje, že firmy z koncernu
 Agrofert podaly žaloby na Státní zemědělský intervenční fond, který

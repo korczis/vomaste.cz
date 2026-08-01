@@ -10,17 +10,10 @@ aliases = ["/dossier/zdroje/src-19/"]
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-19"
 view_model = "generated/views/dossiers/macinka-turek/sources/src-19.json"
-subjects = ["turek"]
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-19"
-outlet = "Blesk.cz"
-src_type = "zpravodajství (tabloid)"
-url = "https://www.blesk.cz/clanek/zpravy-politika/844084/"
-published = "2026-07-16"
-retrieved = "2026-07-22"
-claims = ["CLM-16"]
 +++
 Blesk.cz cituje mluvčí pražské policie Evu Kropáčovou: „Dopravní značení
 bylo v pořádku a v souladu s inženýrskými plány." Jde o přímé policejní

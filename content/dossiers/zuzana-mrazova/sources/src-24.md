@@ -9,17 +9,10 @@ weight = 24
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-24"
 view_model = "generated/views/dossiers/zuzana-mrazova/sources/src-24.json"
-subjects = ["mrazova"]
 dossier = "zuzana-mrazova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-24"
-outlet = "Poslanecká sněmovna PČR (stenoprotokol)"
-src_type = "oficiální primární zdroj"
-url = "https://www.psp.cz/eknih/2025ps/stenprot/020schuz/bqbs/b15914101.htm"
-published = "2026-05-28"
-retrieved = "2026-07-30"
-claims = ["CLM-54", "CLM-55"]
 +++
 **PČR, PS 2025-…, 20. schůze, část 159 (28. 5. 2026)**
 

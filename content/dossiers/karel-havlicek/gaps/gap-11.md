@@ -9,14 +9,10 @@ weight = 11
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/gaps/GAP-11"
 view_model = "generated/views/dossiers/karel-havlicek/gaps/gap-11.json"
-subjects = ["havlicek"]
 dossier = "karel-havlicek"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-11"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Nepodařilo se otevřít klíčové původní texty serveru iROZHLAS ke kauze (obžaloba, zajištěný majetek, historie vymáhání).
 

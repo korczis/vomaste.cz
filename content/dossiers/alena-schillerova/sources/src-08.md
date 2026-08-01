@@ -9,17 +9,10 @@ weight = 8
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-08"
 view_model = "generated/views/dossiers/alena-schillerova/sources/src-08.json"
-subjects = ["schillerova"]
 dossier = "alena-schillerova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-08"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/prezident-vetoval-uvolneni-pravidel-rozpoctove-odpovednosti-375837"
-published = "2026-07-22"
-retrieved = "2026-07-30"
-claims = ["CLM-17", "CLM-18", "CLM-19", "CLM-21", "CLM-22", "CLM-39", "CLM-40"]
 +++
 **Prezident vetoval uvolnění pravidel rozpočtové odpovědnosti**
 

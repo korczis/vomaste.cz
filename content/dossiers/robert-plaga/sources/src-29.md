@@ -9,17 +9,10 @@ weight = 29
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-29"
 view_model = "generated/views/dossiers/robert-plaga/sources/src-29.json"
-subjects = ["plaga"]
 dossier = "robert-plaga"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-29"
-outlet = "Deník.cz (VLTAVA LABE MEDIA)"
-src_type = "zpravodajství"
-url = "https://www.denik.cz/skolstvi-a-vzdelavani/zakaz-mobilu-ve-skolach-cesko-opozice-zakon-ministr-robert-plaga/"
-published = "2026-03-02"
-retrieved = "2026-07-30"
-claims = ["CLM-45"]
 +++
 **Zákaz mobilů ve školách: Opozice navrhla vlastní zákon, Plaga se radí s experty**
 

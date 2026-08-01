@@ -9,17 +9,10 @@ weight = 16
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-16"
 view_model = "generated/views/dossiers/karel-havlicek/sources/src-16.json"
-subjects = ["havlicek"]
 dossier = "karel-havlicek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-16"
-outlet = "Blesk.cz"
-src_type = "zpravodajství"
-url = "https://www.blesk.cz/clanek/zpravy-politika/842211/kauza-dotaci-na-inovativni-toastovy-chleba-pekarna-agrofertu-celi-obzalobe.html"
-published = "2026-06-22"
-retrieved = "2026-07-30"
-claims = ["CLM-24", "CLM-26", "CLM-28"]
 +++
 **Kauza dotací na „inovativní“ toastový chleba: Pekárna Agrofertu čelí obžalobě**
 

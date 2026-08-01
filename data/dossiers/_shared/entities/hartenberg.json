@@ -20,6 +20,21 @@
     "/dossiers/andrej-babis/entities/hartenberg/"
   ],
   "order": 17,
+  "provenance": {
+    "discoveredAt": "2026-07-30",
+    "discoveredVia": [
+      "edge-synbiol-hartenberg"
+    ],
+    "claimRefs": [
+      "CLM-39",
+      "CLM-41"
+    ],
+    "sourceRefs": [
+      "SRC-16",
+      "SRC-17"
+    ],
+    "depth": 1
+  },
   "content": [
     {
       "type": "markdown",

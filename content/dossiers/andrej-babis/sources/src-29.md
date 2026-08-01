@@ -9,17 +9,10 @@ weight = 29
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-29"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-29.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-29"
-outlet = "Seznam Zprávy"
-src_type = "zpravodajství"
-url = "https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-kostelecke-uzeniny-u-soudu-neuspely-na-dotaci-kvuli-stretu-zajmu-narok-nemely-292738"
-published = "2025-11-28"
-retrieved = "2026-07-31"
-claims = ["CLM-18", "CLM-19"]
 +++
 Seznam Zprávy dne 28. 11. 2025 potvrzuje zamítnutí kasační stížnosti
 Nejvyšším správním soudem a cituje odůvodnění: „Nepřímý vliv lze přitom

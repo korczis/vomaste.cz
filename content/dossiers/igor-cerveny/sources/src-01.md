@@ -9,16 +9,10 @@ weight = 1
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-01"
 view_model = "generated/views/dossiers/igor-cerveny/sources/src-01.json"
-subjects = ["cerveny"]
 dossier = "igor-cerveny"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-01"
-outlet = "Vláda České republiky (vlada.gov.cz)"
-src_type = "oficiální primární zdroj"
-url = "https://vlada.gov.cz/cz/vlada/clenove-vlady/igor-cerveny-225455/"
-retrieved = "2026-07-30"
-claims = ["CLM-01"]
 +++
 Oficiální stránka na webu Úřadu vlády, otevřena a přečtena 2026-07-30.
 Uvádí funkci **ministr životního prostředí** a doložený přehled: narozen 13. 7. 1984; informační studia a knihovnictví (Bc. 2020) a informační věda (Mgr. 2024) na FF UK; kariéra v akademické sféře a technologickém transferu (UK, ČVUT, VŠCHT); poslanec za Motoristé sobě.

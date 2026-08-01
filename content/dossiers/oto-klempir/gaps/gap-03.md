@@ -9,14 +9,10 @@ weight = 3
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/oto-klempir/gaps/GAP-03"
 view_model = "generated/views/dossiers/oto-klempir/gaps/gap-03.json"
-subjects = ["klempir"]
 dossier = "oto-klempir"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-03"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Rozporné údaje o valorizačním mechanismu příspěvku pro ČT a ČRo
 

@@ -9,17 +9,10 @@ weight = 3
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-03"
 view_model = "generated/views/dossiers/tunde-bartha/sources/src-03.json"
-subjects = ["bartha"]
 dossier = "tunde-bartha"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-03"
-outlet = "Aktuálně.cz"
-src_type = "celostátní zpravodajství"
-url = "https://zpravy.aktualne.cz/domaci/tunde-bartha-opet-v-babisovych-sluzbach-stara-se-o-vychodni/r~541224525a2811efb589ac1f6b220ee8/"
-published = "2024-08-14"
-retrieved = "2026-07-30"
-claims = ["CLM-06"]
 +++
 Aktuálně.cz dne 14. 8. 2024 informovalo — s odkazem na zjištění serveru
 HlídacíPes.org z téhož dne — že Tünde Bartha pracuje v holdingu Agrofert

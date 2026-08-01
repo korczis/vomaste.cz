@@ -9,17 +9,10 @@ weight = 14
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-14"
 view_model = "generated/views/dossiers/martin-sebestyan/sources/src-14.json"
-subjects = ["sebestyan"]
 dossier = "martin-sebestyan"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-14"
-outlet = "ČeskéNoviny.cz (ČTK)"
-src_type = "zpravodajství"
-url = "https://www.ceskenoviny.cz/zpravy/snemovni-jednani-svolane-opozici-k-dotacim-agrofertu-skoncilo-bez-vysledku/2836489"
-published = "2026-06-11"
-retrieved = "2026-07-30"
-claims = ["CLM-30"]
 +++
 **Sněmovní jednání svolané opozicí k dotacím Agrofertu skončilo bez výsledku**
 

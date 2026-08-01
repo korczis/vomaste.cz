@@ -9,16 +9,10 @@ weight = 4
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-04"
 view_model = "generated/views/dossiers/tunde-bartha/sources/src-04.json"
-subjects = ["bartha"]
 dossier = "tunde-bartha"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-04"
-outlet = "Vláda České republiky (vlada.gov.cz)"
-src_type = "primární úřední záznam"
-url = "https://vlada.gov.cz/scripts/detail.php?pgid=1477"
-retrieved = "2026-07-30"
-claims = ["CLM-08"]
 +++
 Oficiální přehled vedoucích Úřadu vlády ČR uvádí u Tünde Barthy
 formulaci „**pověřena řízením: 28.6.2018 - 17.12.2021**". Ostatní osoby

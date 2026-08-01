@@ -9,17 +9,10 @@ weight = 3
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-03"
 view_model = "generated/views/dossiers/zuzana-mrazova/sources/src-03.json"
-subjects = ["mrazova"]
 dossier = "zuzana-mrazova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-03"
-outlet = "Deník N"
-src_type = "zpravodajství"
-url = "https://denikn.cz/minuta/2137376/"
-published = "2026-07-25"
-retrieved = "2026-07-30"
-claims = ["CLM-02"]
 +++
 **Ministryně pro místní rozvoj Zuzana Mrázová (ANO) dostala zatím nepravomocně pokutu za porušení zákona o střetu zájmů, píšou Seznam Zprávy**
 

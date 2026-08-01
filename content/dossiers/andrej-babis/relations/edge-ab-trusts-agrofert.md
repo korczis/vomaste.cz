@@ -10,13 +10,7 @@ record_id = "https://vomaste.cz/id/dossiers/andrej-babis/relations/edge-ab-trust
 view_model = "generated/views/dossiers/andrej-babis/relations/edge-ab-trusts-agrofert.json"
 dossier = "andrej-babis"
 record_type = "relation"
+lang = "cs"
 rel_id = "edge-ab-trusts-agrofert"
-source = "ab-private-trusts"
-target = "agrofert"
-relation_type = "HOLDS_INTEREST_IN"
-label = "držely akcie Agrofertu (2017–2025)"
-status = "contextual"
-claims = ["CLM-16"]
-sources = ["SRC-06"]
 +++
 Kontextový, strukturální vztah — dossier jej neuvádí jako vlastní doloženou investigaci, jen jako veřejně nesporné pozadí.

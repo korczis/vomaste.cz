@@ -9,17 +9,10 @@ weight = 13
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-13"
 view_model = "generated/views/dossiers/robert-plaga/sources/src-13.json"
-subjects = ["plaga"]
 dossier = "robert-plaga"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-13"
-outlet = "Ministerstvo školství, mládeže a tělovýchovy ČR"
-src_type = "oficiální primární zdroj"
-url = "https://msmt.gov.cz/doporuceni-k-plosnemu-testovani-zaku-5-a-9-trid"
-published = "2026-05"
-retrieved = "2026-07-30"
-claims = ["CLM-29"]
 +++
 **Doporučení k plošnému testování žáků 5. a 9. tříd**
 

@@ -9,14 +9,10 @@ weight = 10
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jaromir-zuna/gaps/GAP-10"
 view_model = "generated/views/dossiers/jaromir-zuna/gaps/gap-10.json"
-subjects = ["zuna"]
 dossier = "jaromir-zuna"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-10"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Chybí primární dokument koncepce do roku 2040 a jeho tři varianty financování.
 

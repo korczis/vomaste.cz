@@ -9,17 +9,10 @@ weight = 10
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-10"
 view_model = "generated/views/dossiers/jaromir-zuna/sources/src-10.json"
-subjects = ["zuna"]
 dossier = "jaromir-zuna"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-10"
-outlet = "Blesk.cz"
-src_type = "zpravodajství"
-url = "https://www.blesk.cz/clanek/zpravy-politika/839646/vladni-dohady-kvuli-novemu-nacelnikovi-zuna-hlasoval-proti-priznal-babis-pavel-vyber-ocenil.html"
-published = "2026-05-18"
-retrieved = "2026-07-30"
-claims = ["CLM-13", "CLM-14"]
 +++
 **Vladní dohady kvůli novému náčelníkovi: „Zůna hlasoval proti,“ přiznal Babiš. Pavel výběr ocenil**
 

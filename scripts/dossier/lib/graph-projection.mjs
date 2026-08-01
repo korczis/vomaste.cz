@@ -2,7 +2,7 @@
 // (docs/missions/2026-08-01-graph-workbench-master-prompt.md § 3). Builds
 // normalized node/edge objects — matching schemas/graph-payload.schema.json
 // — from the SAME canonical sources every other generator already reads:
-// data/dossiers/<slug>/graph.toml (curated entity graph) and the flat
+// dossier.json `graph` (curated entity layer — dřív graph.toml) and the flat
 // registry exports under static/data/*.json (built by
 // build-data-exports.mjs from the same front matter the pages render
 // from). Nothing here invents a relationship: every edge is a reference a
@@ -48,10 +48,19 @@ export function listDossierSlugs(root) {
     .sort();
 }
 
+// Dossier vlastní kurátorovaný graf ⇔ jeho kanonický záznam nese `graph`
+// (T-028 fáze H — dřívější existence data/dossiers/<slug>/graph.toml).
+export function dossierOwnsGraph(root, slug) {
+  const record = getCompiledModel(root).records.find(
+    (w) => w.registry === "dossier" && w.dossier === slug,
+  )?.record;
+  return Boolean(record?.graph);
+}
+
 // Every dossier gets a catalog entry (title/type from data/dossiers.toml,
 // the actual source of truth for that metadata — see lib/dossier-registry.mjs).
 // node_count/edge_count are filled in by the caller once the curated
-// payloads are built, since a generated view (no own graph.toml) has 0 by
+// payloads are built, since a generated view (no own graph curation) has 0 by
 // definition and a self-canonical dossier's counts come from its own file.
 export function buildDossierCatalog(root, dossierSlugs) {
   const registry = loadDossierRegistry();
@@ -96,16 +105,12 @@ function resolveRoute(routeMap, key, errors, label) {
 // ids — the shape written to static/data/graph/dossier/<slug>.json, and
 // the raw material buildGlobalCuratedPayload namespaces and merges below.
 //
-// T-028 fáze G — dělba zdrojů:
-//   * UZLY, clustery a source_families zůstávají z data/dossiers/<slug>/
-//     graph.toml — kurátorovaná vrstva (popisky, subject flag, mention
-//     membership), kterou kanonický model v1 nenese; graph.toml zůstává
-//     do fáze H jejím kanonickým zdrojem (a zdrojem hran pro
-//     validate:graph).
-//   * DATA HRAN jdou z COMPILED kanonických relation záznamů; graph.toml
-//     určuje jen kurátorované POŘADÍ hran (stabilita layoutu). Oba toky
-//     musí souhlasit 1:1 — každý nesoulad (id množiny, label, status,
-//     typ, vazby, směr) je tvrdá chyba buildu, ne tichá preference.
+// T-028 fáze H — jediný zdroj: KANONICKÝ dataset. Uzly/clustery/rodiny
+// jdou z dossier.json `graph` (kurátorovaná vrstva), hrany z kanonických
+// relations v kurátorském pořadí graph.edges — obojí projektuje
+// lib/jsonld-shared.mjs readGraphTomlBlocks(). Dřívější mirror gate
+// (graph.toml vs relations) zanikl: druhý tok neexistuje, 1:1 úplnost
+// graph.edges ↔ relations vynucuje validate-references R7 už na vstupu.
 export function buildDossierCuratedPayload(root, slug, routeMap, errors) {
   const blocks = readGraphTomlBlocks(root, slug);
   const nodes = blocks.nodes.map((n) => ({
@@ -124,58 +129,26 @@ export function buildDossierCuratedPayload(root, slug, routeMap, errors) {
     ...(n.sources ? { sources: n.sources } : {}),
   }));
 
-  // Kanonické relation záznamy dossieru, seřazené podle kurátorovaného
-  // pořadí hran v graph.toml.
-  const compiled = getCompiledModel(root);
-  const relationById = new Map(recordsOf(compiled, slug, "relations").map((w) => [w.record.identifier, w]));
-  const tomlIds = blocks.edges.map((e) => e.id);
-  if (tomlIds.length !== relationById.size || tomlIds.some((id) => !relationById.has(id))) {
-    errors.push(
-      `dossier ${slug}: hrany v graph.toml (${tomlIds.length}) a kanonické relations záznamy (${relationById.size}) nejsou 1:1 — oba toky musí do fáze H souhlasit`,
-    );
-  }
-  const sameList = (a, b) => a.length === b.length && a.every((x, i) => x === b[i]);
-  const edges = blocks.edges
-    .filter((e) => relationById.has(e.id))
-    .map((e) => {
-      const w = relationById.get(e.id);
-      const r = w.record;
-      const from = localPart(r.sourceEntity?.["@id"]);
-      const to = localPart(r.targetEntity?.["@id"]);
-      const mismatches = [];
-      if (e.source !== from) mismatches.push(`source ${e.source} ≠ ${from}`);
-      if (e.target !== to) mismatches.push(`target ${e.target} ≠ ${to}`);
-      if (e.label !== r.label) mismatches.push("label");
-      if (e.status !== r.status) mismatches.push("status");
-      if (e.relation !== r.relationType) mismatches.push("relation/relationType");
-      if (!sameList(e.claims ?? [], localIds(r.claims))) mismatches.push("claims");
-      if (!sameList(e.sources ?? [], localIds(r.sources))) mismatches.push("sources");
-      if (mismatches.length) {
-        errors.push(`dossier ${slug}: hrana "${e.id}" se rozchází s kanonickým relation záznamem (${mismatches.join(", ")})`);
-      }
-      const claims = localIds(r.claims);
-      const sources = localIds(r.sources);
-      return {
-        id: r.identifier,
-        source: from,
-        target: to,
-        edge_class: "curated_relation",
-        label: r.label,
-        status: r.status,
-        relation: r.relationType,
-        dossier: slug,
-        rel_id: r.identifier,
-        route: resolveRoute(routeMap, `${slug}:${r.identifier}`, errors, `relation "${r.identifier}" (dossier ${slug})`),
-        ...(claims.length ? { claims } : {}),
-        ...(sources.length ? { sources } : {}),
-      };
-    });
+  const edges = blocks.edges.map((e) => ({
+    id: e.id,
+    source: e.source,
+    target: e.target,
+    edge_class: "curated_relation",
+    label: e.label,
+    status: e.status,
+    relation: e.relation,
+    dossier: slug,
+    rel_id: e.id,
+    route: resolveRoute(routeMap, `${slug}:${e.id}`, errors, `relation "${e.id}" (dossier ${slug})`),
+    ...((e.claims ?? []).length ? { claims: e.claims } : {}),
+    ...((e.sources ?? []).length ? { sources: e.sources } : {}),
+  }));
   return { nodes, edges, clusters: blocks.clusters, source_families: blocks.source_families };
 }
 
 // Merges every dossier's own curated payload into one global layer:
 // entity nodes dedup by bare id (a node can legitimately appear in more
-// than one dossier's graph.toml — e.g. a government-roster entity), edges/
+// than one dossier's curated graph — e.g. a government-roster entity), edges/
 // clusters/source_families are namespaced "<slug>::<id>" because their ids
 // are only unique within one dossier (see build-global-graph.mjs history —
 // this collision is what broke the map the first time a second dossier
@@ -188,7 +161,7 @@ export function buildGlobalCuratedPayload(root, dossierSlugs, routeMap, errors) 
   const perDossier = {};
 
   for (const slug of dossierSlugs) {
-    if (!existsSync(join(root, "data/dossiers", slug, "graph.toml"))) continue;
+    if (!dossierOwnsGraph(root, slug)) continue;
     const payload = buildDossierCuratedPayload(root, slug, routeMap, errors);
     perDossier[slug] = payload;
 

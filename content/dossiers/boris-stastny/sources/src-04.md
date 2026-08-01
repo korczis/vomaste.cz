@@ -9,17 +9,10 @@ weight = 4
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-04"
 view_model = "generated/views/dossiers/boris-stastny/sources/src-04.json"
-subjects = ["stastny"]
 dossier = "boris-stastny"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-04"
-outlet = "Deník.cz (VLTAVA LABE MEDIA)"
-src_type = "zpravodajství"
-url = "https://www.denik.cz/cesko/na-uradu-vlady-se-naslo-nahravaci-zarizeni-je-moje-priznal-stastny/"
-published = "2026-07-10"
-retrieved = "2026-07-30"
-claims = ["CLM-06", "CLM-07", "CLM-09", "CLM-10", "CLM-12"]
 +++
 **Na úřadu vlády se našlo nahrávací zařízení. Je moje, přiznal Šťastný**
 

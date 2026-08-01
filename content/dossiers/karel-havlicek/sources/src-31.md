@@ -9,17 +9,10 @@ weight = 31
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-31"
 view_model = "generated/views/dossiers/karel-havlicek/sources/src-31.json"
-subjects = ["havlicek"]
 dossier = "karel-havlicek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-31"
-outlet = "Hospodářské noviny"
-src_type = "zpravodajství"
-url = "https://ai.hn.cz/kontext/6a1d8c31622877658b34a560/forum-elektromobilita-2026-a-transformace-trhu-elektroaut"
-published = "2026-06"
-retrieved = "2026-07-30"
-claims = ["CLM-46"]
 +++
 **Forum Elektromobilita 2026 a transformace trhu elektroaut**
 

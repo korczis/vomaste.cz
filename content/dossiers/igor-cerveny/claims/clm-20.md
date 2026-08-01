@@ -13,10 +13,5 @@ dossier = "igor-cerveny"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-20"
-status = "status-single"
-status_label = "1 ZDROJ"
-summary = "Ministerstvo spravedlnosti provedlo obsahovou kontrolu ministrova oznámení „na základě žádosti o součinnost ze strany Městského úřadu Nymburk“ — podnět tedy nevznikl na ministerstvu, ale úřad si k již vedené věci vyžádal odbornou součinnost."
-sources = ["SRC-14"]
-subjects = ["cerveny"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/igor-cerveny/_index.md#registr-tvrzeni).

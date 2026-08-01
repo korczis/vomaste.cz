@@ -9,17 +9,10 @@ weight = 11
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-11"
 view_model = "generated/views/dossiers/adam-vojtech/sources/src-11.json"
-subjects = ["vojtech"]
 dossier = "adam-vojtech"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-11"
-outlet = "Echo24"
-src_type = "zpravodajství"
-url = "https://m.echo24.cz/a/HwTTW/narodni-ockovaci-strategie-covid-hpv-prymula-vojtech-sila-ano-koalice-spor-povinne-dobrovolne-doporucene-lekari-zdravi"
-published = "2026-05-05"
-retrieved = "2026-07-30"
-claims = ["CLM-18", "CLM-19", "CLM-20"]
 +++
 **„Nedůvěra široké veřejnosti.“ Vládní SPD kritizuje ministra Vojtěcha za očkovací strategii**
 

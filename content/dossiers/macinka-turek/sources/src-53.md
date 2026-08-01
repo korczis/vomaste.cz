@@ -9,17 +9,10 @@ weight = 53
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-53"
 view_model = "generated/views/dossiers/macinka-turek/sources/src-53.json"
-subjects = ["turek"]
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-53"
-outlet = "ČT24 (Česká televize)"
-src_type = "veřejnoprávní zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/policie-odlozila-pripad-udajneho-hajlovani-europoslance-turka-355149"
-published = "2024-11-08"
-retrieved = "2026-07-29"
-claims = ["CLM-45"]
 +++
 ČT24 dne 8. listopadu 2024 informovala, že policie odložila případ
 údajného hajlování Filipa Turka (fotografie z roku 2013 se zdviženou

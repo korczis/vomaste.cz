@@ -20,6 +20,21 @@
     "/dossiers/andrej-babis/entities/navos-farm-technic/"
   ],
   "order": 27,
+  "provenance": {
+    "discoveredAt": "2026-08-01",
+    "discoveredVia": [
+      "edge-agrofert-navos",
+      "edge-navos-nss"
+    ],
+    "claimRefs": [
+      "CLM-68"
+    ],
+    "sourceRefs": [
+      "SRC-46",
+      "SRC-47"
+    ],
+    "depth": 2
+  },
   "content": [
     {
       "type": "markdown",

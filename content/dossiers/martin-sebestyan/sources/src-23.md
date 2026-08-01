@@ -9,17 +9,10 @@ weight = 23
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-23"
 view_model = "generated/views/dossiers/martin-sebestyan/sources/src-23.json"
-subjects = ["sebestyan"]
 dossier = "martin-sebestyan"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-23"
-outlet = "Ministerstvo zemědělství ČR"
-src_type = "oficiální primární zdroj"
-url = "https://mze.gov.cz/public/portal/mze/tiskovy-servis/aktuality/stanovisko-k-problematice-stretu-zajmu"
-published = "2025-12-16"
-retrieved = "2026-07-30"
-claims = ["CLM-36", "CLM-37"]
 +++
 **Stanovisko k problematice střetu zájmů**
 

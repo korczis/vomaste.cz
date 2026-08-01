@@ -9,17 +9,10 @@ weight = 2
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-02"
 view_model = "generated/views/dossiers/ivan-bednarik/sources/src-02.json"
-subjects = ["bednarik"]
 dossier = "ivan-bednarik"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-02"
-outlet = "Ekonomický deník"
-src_type = "odborné ekonomické zpravodajství"
-url = "https://ekonomickydenik.cz/generalni-reditel-cd-jozef-bednarik-rezignoval-z-vyberoveho-rizeni-musi-vzejit-silny-manazer-rika-ministr-dopravy-martin-kupka/"
-published = "2022-02-15"
-retrieved = "2026-07-30"
-claims = ["CLM-02", "CLM-03", "CLM-04"]
 +++
 Ekonomický deník dne 15. 2. 2022 informoval, že Ivan Bednárik rezignoval
 na funkci generálního ředitele Českých drah. Citace: „Dnes jsem se

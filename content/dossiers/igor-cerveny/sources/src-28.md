@@ -9,17 +9,10 @@ weight = 28
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-28"
 view_model = "generated/views/dossiers/igor-cerveny/sources/src-28.json"
-subjects = ["cerveny"]
 dossier = "igor-cerveny"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-28"
-outlet = "Seznam Zprávy"
-src_type = "zpravodajství"
-url = "https://www.seznamzpravy.cz/clanek/audio-podcast-vlevo-dole-mene-aut-a-uhli-novy-ministr-motoristu-za-dotace-skolil-deti-o-ekologii-299094"
-published = "2026-02-17"
-retrieved = "2026-07-30"
-claims = ["CLM-29", "CLM-32"]
 +++
 **Méně aut a uhlí. Nový ministr Motoristů školil za dotace děti o ekologii**
 

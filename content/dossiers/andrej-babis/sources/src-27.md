@@ -9,18 +9,10 @@ weight = 27
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-27"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-27.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-27"
-outlet = "ČTK (Deník.cz)"
-family = "ctk"
-src_type = "agenturní zpravodajství"
-url = "https://www.denik.cz/krimi/capi-hnizdo-vrchni-soud-andrej-babis-20250623.html"
-published = "2025-06-23"
-retrieved = "2026-07-31"
-claims = ["CLM-01"]
 +++
 Agenturní zpráva ČTK (převzatá Deník.cz) dne 23. 6. 2025, nezávisle na
 Česká justice (SRC-01): „Odvolací senát zrušil rozsudek, kterým nižší

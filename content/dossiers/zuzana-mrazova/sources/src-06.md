@@ -9,17 +9,10 @@ weight = 6
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-06"
 view_model = "generated/views/dossiers/zuzana-mrazova/sources/src-06.json"
-subjects = ["mrazova"]
 dossier = "zuzana-mrazova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-06"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/mrazova-citi-babisovu-podporu-opozice-dale-zada-rezignaci-373216"
-published = "2026-05-07"
-retrieved = "2026-07-30"
-claims = ["CLM-09", "CLM-10", "CLM-12", "CLM-16", "CLM-17"]
 +++
 **Mrázová cítí Babišovu podporu. Opozice dále žádá rezignaci**
 

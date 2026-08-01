@@ -9,17 +9,10 @@ weight = 21
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-21"
 view_model = "generated/views/dossiers/igor-cerveny/sources/src-21.json"
-subjects = ["cerveny"]
 dossier = "igor-cerveny"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-21"
-outlet = "Deník N"
-src_type = "zpravodajství"
-url = "https://denikn.cz/1986452/cerveny-sedi-ve-spelunce-po-sefce-sekretariatu-ministerskou-kancelar-si-nechal-turek/"
-published = "2026-02-26"
-retrieved = "2026-07-30"
-claims = ["CLM-34"]
 +++
 **Červený sedí ve „špeluňce“ po šéfce sekretariátu, ministerskou kancelář si nechal Turek**
 

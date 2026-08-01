@@ -13,9 +13,5 @@ dossier = "andrej-babis"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-29"
-status = "status-single"
-status_label = "1 ZDROJ"
-summary = "Podnětem k řízení bylo podle téhož zdroje trestní oznámení Pirátů z února 2026 k tvrzenému střetu zájmů premiéra; řízení pokrývá pouze evropské dotace, národní dotace do působnosti evropské prokuratury nespadají"
-sources = ["SRC-12"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni).

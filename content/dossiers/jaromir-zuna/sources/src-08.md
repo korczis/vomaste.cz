@@ -9,17 +9,10 @@ weight = 8
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-08"
 view_model = "generated/views/dossiers/jaromir-zuna/sources/src-08.json"
-subjects = ["zuna"]
 dossier = "jaromir-zuna"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-08"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/inspekce-nasla-chyby-v-armadnim-sporu-o-rozhovor-s-prezidentem-374516"
-published = "2026-06-12"
-retrieved = "2026-07-30"
-claims = ["CLM-08", "CLM-12", "CLM-30", "CLM-31"]
 +++
 **Inspekce našla chyby u obou stran sporu o rozhovor armády s prezidentem**
 

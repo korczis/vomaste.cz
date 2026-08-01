@@ -20,6 +20,22 @@
     "/dossiers/andrej-babis/entities/eppo/"
   ],
   "order": 11,
+  "provenance": {
+    "discoveredAt": "2026-07-30",
+    "discoveredVia": [
+      "edge-agrofert-eppo",
+      "edge-eppo-ncoz",
+      "edge-pekarna-eppo"
+    ],
+    "claimRefs": [
+      "CLM-27",
+      "CLM-28"
+    ],
+    "sourceRefs": [
+      "SRC-12"
+    ],
+    "depth": 1
+  },
   "content": [
     {
       "type": "markdown",

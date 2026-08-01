@@ -20,6 +20,20 @@
     "/dossiers/andrej-babis/entities/scp-bigaud/"
   ],
   "order": 15,
+  "provenance": {
+    "discoveredAt": "2026-07-30",
+    "discoveredVia": [
+      "edge-boyne-bigaud"
+    ],
+    "claimRefs": [
+      "CLM-31",
+      "CLM-33"
+    ],
+    "sourceRefs": [
+      "SRC-13"
+    ],
+    "depth": 1
+  },
   "content": [
     {
       "type": "markdown",

@@ -9,17 +9,10 @@ weight = 18
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-18"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-18.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-18"
-outlet = "Evropský parlament"
-src_type = "úřední zdroj"
-url = "https://www.europarl.europa.eu/news/cs/press-room/20210517IPR04145/stret-zajmu-a-zneuziti-financnich-prostredku-eu-pripad-ceskeho-premiera-babise"
-published = "2021-05-19"
-retrieved = "2026-07-30"
-claims = ["CLM-45"]
 +++
 Oficiální tisková zpráva Evropského parlamentu k plenární rozpravě.
 **Co dokládá:** že audit Evropské komise podle rozpravy potvrdil vliv

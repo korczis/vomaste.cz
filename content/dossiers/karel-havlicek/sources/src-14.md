@@ -9,17 +9,10 @@ weight = 14
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-14"
 view_model = "generated/views/dossiers/karel-havlicek/sources/src-14.json"
-subjects = ["havlicek"]
 dossier = "karel-havlicek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-14"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/policie-navrhla-obzalovat-pekarnu-kvuli-dotacim-na-linku-na-toastovy-chleb-374357"
-published = "2026-06-08"
-retrieved = "2026-07-30"
-claims = ["CLM-23", "CLM-24", "CLM-25"]
 +++
 **Policie navrhla obžalovat pekárnu z Agrofertu kvůli dotacím na linku na toastový chléb**
 

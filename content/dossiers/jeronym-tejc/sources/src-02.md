@@ -9,17 +9,10 @@ weight = 2
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-02"
 view_model = "generated/views/dossiers/jeronym-tejc/sources/src-02.json"
-subjects = ["tejc"]
 dossier = "jeronym-tejc"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-02"
-outlet = "Echo24"
-src_type = "zpravodajství"
-url = "https://www.echo24.cz/a/HPFNG/zpravy-domov-tejc-podal-trestni-oznameni-kvuli-auditu-v-bitcoinove-kauze"
-published = "2026-04-24"
-retrieved = "2026-07-30"
-claims = ["CLM-02", "CLM-03", "CLM-04", "CLM-05", "CLM-07"]
 +++
 **Ministr Tejc podal trestní oznámení kvůli auditu v bitcoinové kauze**
 

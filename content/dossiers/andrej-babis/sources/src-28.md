@@ -9,17 +9,10 @@ weight = 28
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-28"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-28.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-28"
-outlet = "ČT24 (Česká televize)"
-src_type = "veřejnoprávní zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/babis-je-znovu-jedinym-vlastnikem-agrofertu-366177"
-published = "2025-10-17"
-retrieved = "2026-07-31"
-claims = ["CLM-16"]
 +++
 ČT24 dne 17. 10. 2025: „Babiš v únoru 2017 vložil akcie Agrofertu do
 svěřenských fondů AB private trust I a AB private trust II." „První

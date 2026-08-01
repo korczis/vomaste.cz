@@ -9,16 +9,10 @@ weight = 1
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-01"
 view_model = "generated/views/dossiers/oto-klempir/sources/src-01.json"
-subjects = ["klempir"]
 dossier = "oto-klempir"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-01"
-outlet = "Vláda České republiky (vlada.gov.cz)"
-src_type = "oficiální primární zdroj"
-url = "https://vlada.gov.cz/cz/vlada/clenove-vlady/oto-klempir-223983/"
-retrieved = "2026-07-30"
-claims = ["CLM-01", "CLM-02"]
 +++
 Oficiální profil člena vlády na webu Úřadu vlády. Uvádí funkci
 **ministr kultury** a životopisné údaje: narozen 20. května 1963 v

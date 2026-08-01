@@ -9,17 +9,10 @@ weight = 26
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-26"
 view_model = "generated/views/dossiers/ivan-bednarik/sources/src-26.json"
-subjects = ["bednarik"]
 dossier = "ivan-bednarik"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-26"
-outlet = "Hospodářské noviny"
-src_type = "zpravodajství"
-url = "https://podcasty.hn.cz/c1-67882980-problem-ceske-zeleznice-byl-ze-s-penezi-nebyl-problem-rika-ministr-bednarik-ted-uz-chce-trh-chladit"
-published = "2026-05-28"
-retrieved = "2026-07-30"
-claims = ["CLM-36"]
 +++
 **Problém české železnice byl, že s penězi nebyl problém, říká ministr Bednárik. Teď už chce trh chladit**
 

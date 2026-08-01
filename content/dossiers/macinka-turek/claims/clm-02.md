@@ -14,10 +14,5 @@ dossier = "macinka-turek"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-02"
-status = "status-corroborated"
-status_label = "CORROBORATED"
-summary = "Turek v říjnu 2025 zvolen poslancem, nejvyšší počet preferenčních hlasů Motoristů ve Středočeském kraji"
-sources = ["SRC-11", "SRC-13"]
-subjects = ["turek"]
 +++
 Tato stránka je kanonický záznam tvrzení CLM-02 — shrnutí, stav a zdroje výše jsou úplné. Se zdrojem tohoto tvrzení se překrývá CLM-01, CLM-03. Hlavní stránka dossieru zobrazuje tentýž text ze stejného zdroje; build proces ověřuje, že se neliší.

@@ -9,17 +9,10 @@ weight = 46
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-46"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-46.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-46"
-outlet = "ČeskéNoviny.cz (ČTK)"
-src_type = "zpravodajství"
-url = "https://www.ceskenoviny.cz/zpravy/nss-firmy-z-agrofertu-nemely-kvuli-stretu-zajmu-babise-dostavat-zakazky/2759349"
-published = "2025-12-11"
-retrieved = "2026-08-01"
-claims = ["CLM-68"]
 +++
 Agenturní zpráva ČTK o rozsudku Nejvyššího správního soudu z 11. 12.
 2025: Moravskoslezský kraj zadal zakázku při budování školních dílen

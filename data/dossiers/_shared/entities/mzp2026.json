@@ -21,5 +21,22 @@
   "routeAliases": [
     "/dossiers/macinka-turek/entities/mzp2026/"
   ],
-  "order": 13
+  "order": 13,
+  "provenance": {
+    "discoveredAt": "2026-07-29",
+    "discoveredVia": [
+      "edge-turek-mzp2026",
+      "edge-pavel-mzp2026",
+      "edge-macinka-mzp2026",
+      "edge-cerveny-mzp2026"
+    ],
+    "claimRefs": [
+      "CLM-38"
+    ],
+    "sourceRefs": [
+      "SRC-44"
+    ],
+    "cluster": "politicke-role",
+    "depth": 1
+  }
 }

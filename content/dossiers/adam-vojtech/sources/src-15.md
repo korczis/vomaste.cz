@@ -9,17 +9,10 @@ weight = 15
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-15"
 view_model = "generated/views/dossiers/adam-vojtech/sources/src-15.json"
-subjects = ["vojtech"]
 dossier = "adam-vojtech"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-15"
-outlet = "Hanácká Drbna"
-src_type = "zpravodajství"
-url = "https://hanacka.drbna.cz/zpravy/spolecnost/37968-kausa-defibrilatory-vzp-proveruje-stovky-implantaci-ve-fakultni-nemocnici-v-olomouci.html"
-published = "2026-07-10"
-retrieved = "2026-07-30"
-claims = ["CLM-29"]
 +++
 **Defibrilátory dostali pacienti, kteří je nepotřebovali. Fakultní nemocnice Olomouc přiznala pochybení**
 

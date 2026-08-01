@@ -9,14 +9,10 @@ weight = 1
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ales-juchelka/gaps/GAP-01"
 view_model = "generated/views/dossiers/ales-juchelka/gaps/gap-01.json"
-subjects = ["juchelka"]
 dossier = "ales-juchelka"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-01"
-priority = "vysoká"
-checked = "2026-07-30"
-claims = ["CLM-02", "CLM-03", "CLM-05"]
 +++
 Citovaný zdroj ([SRC-02](@/dossiers/ales-juchelka/sources/src-02.md))
 popisuje střet zájmů a jeho rozpočtový následek, ale **neuvádí žádné

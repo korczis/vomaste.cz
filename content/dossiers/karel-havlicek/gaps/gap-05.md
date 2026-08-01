@@ -9,14 +9,10 @@ weight = 5
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/gaps/GAP-05"
 view_model = "generated/views/dossiers/karel-havlicek/gaps/gap-05.json"
-subjects = ["havlicek"]
 dossier = "karel-havlicek"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-05"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Není doloženo, zda a kolik peněz stát z dotace na toustovou linku k roku 2026 reálně vymohl (exekuce, platba, splátky), ani zda věc řeší finanční úřad.
 

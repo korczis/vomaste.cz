@@ -9,17 +9,10 @@ weight = 9
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-09"
 view_model = "generated/views/dossiers/tomio-okamura/sources/src-09.json"
-subjects = ["okamura"]
 dossier = "tomio-okamura"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-09"
-outlet = "Deník Referendum"
-src_type = "zpravodajství"
-url = "https://denikreferendum.cz/clanek/238962-spd-podnecovalo-nenavist-uznal-soud-hnuti-ma-zaplatit-trimilionovou-pokutu"
-published = "2026-06-03"
-retrieved = "2026-07-30"
-claims = ["CLM-07", "CLM-09"]
 +++
 **SPD podněcovalo nenávist, uznal soud. Hnutí má zaplatit třímilionovou pokutu**
 

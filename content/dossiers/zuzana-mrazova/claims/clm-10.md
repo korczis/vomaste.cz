@@ -13,10 +13,5 @@ dossier = "zuzana-mrazova"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-10"
-status = "status-quote"
-status_label = "CITACE"
-summary = "Mrázová se na tiskové konferenci 7. 5. 2026 hájila tím, že v době přidělení bytu splňovala podmínky nastavené městem, že s energiemi platila podle svých slov 14–18 tisíc Kč měsíčně a že devět let žila jako samoživitelka (obhajoba citována s atribucí)."
-sources = ["SRC-06", "SRC-11"]
-subjects = ["mrazova"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/zuzana-mrazova/_index.md#registr-tvrzeni).

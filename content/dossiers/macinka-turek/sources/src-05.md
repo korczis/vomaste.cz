@@ -10,17 +10,10 @@ aliases = ["/dossier/zdroje/src-05/"]
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-05"
 view_model = "generated/views/dossiers/macinka-turek/sources/src-05.json"
-subjects = ["macinka", "turek"]
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-05"
-outlet = "ČT24 (Česká televize)"
-src_type = "veřejnoprávní zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/je-byl-a-bude-to-turek-rekl-macinka-k-nominaci-na-ministra-zivotniho-prostredi-369026"
-published = "2026-01-07"
-retrieved = "2026-07-21"
-claims = []
 +++
 ČT24 je zpravodajský kanál veřejnoprávní České televize — v registru
 zdrojů veden jako nejvyšší dostupná tier nezávislosti (financování ze

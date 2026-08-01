@@ -9,17 +9,10 @@ weight = 8
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-08"
 view_model = "generated/views/dossiers/zuzana-mrazova/sources/src-08.json"
-subjects = ["mrazova"]
 dossier = "zuzana-mrazova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-08"
-outlet = "FORUM 24"
-src_type = "zpravodajství"
-url = "https://www.forum24.cz/s-vami-se-bavit-nebudu-desetkrat-zopakovala-mrazova-taji-okolnosti-pokuty-za-nepriznanou-pujcku"
-published = "2026-07-25"
-retrieved = "2026-07-30"
-claims = ["CLM-03", "CLM-05", "CLM-07", "CLM-08"]
 +++
 **„S vámi se bavit nebudu,“ desetkrát zopakovala Mrázová. Tají okolnosti pokuty za nepřiznanou půjčku**
 

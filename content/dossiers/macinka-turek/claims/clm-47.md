@@ -13,11 +13,6 @@ dossier = "macinka-turek"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-47"
-status = "status-single"
-status_label = "1 ZDROJ"
-summary = "Podle Investigace.cz je GMR GAS UA LLC ukrajinskou pobočkou české společnosti vyrábějící regulátory tlaku plynu a vedle Macinky v ní drží podíl i tato česká společnost a podnikatel Tomáš Cabal"
-sources = ["SRC-17"]
-subjects = ["macinka"]
 +++
 Tato stránka je kanonický záznam tvrzení CLM-47 — shrnutí, stav a zdroje
 výše jsou úplné. Popisuje **strukturu vlastnictví ukrajinské firmy** z

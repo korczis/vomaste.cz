@@ -10,18 +10,10 @@ aliases = ["/dossier/zdroje/src-47/"]
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-47"
 view_model = "generated/views/dossiers/macinka-turek/sources/src-47.json"
-subjects = ["turek"]
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-47"
-outlet = "Deník N"
-family = "denik-n"
-src_type = "zpravodajství"
-url = "https://denikn.cz/2139565/policie-odlozila-kauzu-turkovych-nenavistnych-vyroku-jsou-podle-ni-promlcene"
-published = "2026-07-28"
-retrieved = "2026-07-29"
-claims = ["CLM-41", "CLM-42"]
 +++
 Policie 28. 7. 2026 odložila prověřování Turkových výroků na sociálních
 sítích (viz CLM-07) z důvodu promlčení; rozhodnutí není pravomocné.

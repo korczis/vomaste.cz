@@ -9,17 +9,10 @@ weight = 50
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-50"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-50.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-50"
-outlet = "Aktuálně.cz"
-src_type = "zpravodajství"
-url = "https://zpravy.aktualne.cz/domaci/skrtnete-capi-hnizdo-z-projektu-financovanych-z-evropskych-p/r~898ecfeef13511e7a4500cc47ab5f122/"
-published = "2018-01-04"
-retrieved = "2026-08-01"
-claims = ["CLM-72"]
 +++
 Aktuálně.cz popisuje závěry šetření Evropského úřadu pro boj proti
 podvodům (OLAF) k Čapímu hnízdu: zveřejněné části zprávy hovoří

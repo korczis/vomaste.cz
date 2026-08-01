@@ -9,16 +9,10 @@ weight = 1
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-01"
 view_model = "generated/views/dossiers/boris-stastny/sources/src-01.json"
-subjects = ["stastny"]
 dossier = "boris-stastny"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-01"
-outlet = "Vláda České republiky (vlada.gov.cz)"
-src_type = "oficiální primární zdroj"
-url = "https://vlada.gov.cz/cz/clenove-vlady/pri-uradu-vlady/boris_stastny/"
-retrieved = "2026-07-30"
-claims = ["CLM-01"]
 +++
 Oficiální profil na webu Úřadu vlády, otevřen a přečten 2026-07-30.
 Uvádí funkci **ministr pro sport, prevenci a zdraví** (stranická příslušnost Motoristé sobě) a popisuje mandát pozice: stabilní podpora sportu a konsolidace dříve roztříštěných agend napříč institucemi. Profil na této stránce neuvádí kariérní historii — jen odkazuje na biografii. Pozn.: `data/government.toml` (snapshot 2026-07-30) uvádí formulaci „ministr pro sport a prevenci v oblasti zdraví“; tvrzení CLM-01 následuje přesné znění otevřeného profilu.

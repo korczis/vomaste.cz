@@ -14,6 +14,7 @@
   "subject": "vencalek",
   "language": "cs",
   "navigationVisible": true,
+  "order": 24,
   "updated": "2026-08-01",
   "reviewedAt": "2026-08-01",
   "authorization": {
@@ -23,6 +24,36 @@
   },
   "seo": {
     "seoType": "ProfilePage"
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "vencalek",
+        "label": "Petr Vencálek",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      },
+      {
+        "entity": "gmrgas-cz",
+        "label": "GMR GAS s.r.o. (Brno)",
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": [
+      "edge-vencalek-gmrgascz"
+    ]
   },
   "contentBlocks": [
     {

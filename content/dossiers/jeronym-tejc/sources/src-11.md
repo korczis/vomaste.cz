@@ -9,17 +9,10 @@ weight = 11
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-11"
 view_model = "generated/views/dossiers/jeronym-tejc/sources/src-11.json"
-subjects = ["tejc"]
 dossier = "jeronym-tejc"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-11"
-outlet = "Česká justice"
-src_type = "zpravodajství"
-url = "https://www.ceska-justice.cz/2026/05/exministr-blazek-bitcoiny-policie-obvinila/"
-published = "2026-05-04"
-retrieved = "2026-07-30"
-claims = ["CLM-19", "CLM-20", "CLM-21", "CLM-22", "CLM-23"]
 +++
 **Exministr Blažek obviněný kvůli bitcoinům. Policie ukázala na tři lidi**
 

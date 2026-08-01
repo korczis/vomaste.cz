@@ -9,17 +9,10 @@ weight = 43
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-43"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-43.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-43"
-outlet = "ČeskéNoviny.cz (ČTK)"
-src_type = "zpravodajství"
-url = "https://www.ceskenoviny.cz/zpravy/2620368"
-published = "2025-01-15"
-retrieved = "2026-08-01"
-claims = ["CLM-64"]
 +++
 Agenturní zpráva ČTK: SZIF podle Nejvyššího správního soudu nechyboval,
 když zamítl dotace pro společnosti Vodňanská drůbež a Výkrm Tagrea

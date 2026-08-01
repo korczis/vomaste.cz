@@ -9,14 +9,10 @@ weight = 8
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/igor-cerveny/gaps/GAP-08"
 view_model = "generated/views/dossiers/igor-cerveny/gaps/gap-08.json"
-subjects = ["cerveny"]
 dossier = "igor-cerveny"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-08"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Chybí vyúčtování cesty do USA — celkové náklady, počet a jména členů delegace, zdroj financování a seznam uskutečněných schůzek.
 

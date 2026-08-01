@@ -9,14 +9,10 @@ weight = 2
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/boris-stastny/gaps/GAP-02"
 view_model = "generated/views/dossiers/boris-stastny/gaps/gap-02.json"
-subjects = ["stastny"]
 dossier = "boris-stastny"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-02"
-priority = "nízká"
-checked = "2026-07-30"
-claims = ["CLM-04", "CLM-05"]
 +++
 Ve zkontrolovaných zdrojích nebyl k datu kontroly nalezen doklad o
 jakémkoli následku — personálním, procedurálním ani jiném. Podle

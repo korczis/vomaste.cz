@@ -22,5 +22,28 @@
   "routeAliases": [
     "/dossiers/macinka-turek/entities/motoriste/"
   ],
-  "order": 3
+  "order": 3,
+  "provenance": {
+    "discoveredAt": "2026-07-29",
+    "discoveredVia": [
+      "edge-macinka-motoriste",
+      "edge-turek-motoriste",
+      "edge-motoriste-vlada",
+      "edge-klubmotoristu-motoriste",
+      "edge-chlad-motoriste"
+    ],
+    "claimRefs": [
+      "CLM-03",
+      "CLM-01",
+      "CLM-02",
+      "CLM-04"
+    ],
+    "sourceRefs": [
+      "SRC-11",
+      "SRC-01",
+      "SRC-02",
+      "SRC-03"
+    ],
+    "depth": 1
+  }
 }

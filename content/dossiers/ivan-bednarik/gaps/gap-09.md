@@ -9,14 +9,10 @@ weight = 9
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ivan-bednarik/gaps/GAP-09"
 view_model = "generated/views/dossiers/ivan-bednarik/gaps/gap-09.json"
-subjects = ["bednarik"]
 dossier = "ivan-bednarik"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-09"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Vývoj kolem Českých drah po Bednárikově nástupu na ministerstvo (personální či majetkové kroky) nebyl samostatně doložen.
 

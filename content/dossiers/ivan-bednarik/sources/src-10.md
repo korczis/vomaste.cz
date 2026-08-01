@@ -9,17 +9,10 @@ weight = 10
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-10"
 view_model = "generated/views/dossiers/ivan-bednarik/sources/src-10.json"
-subjects = ["bednarik"]
 dossier = "ivan-bednarik"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-10"
-outlet = "Echo24"
-src_type = "zpravodajství"
-url = "https://echo24.cz/a/HgZHN/zpravy-domov-bednarik-chce-investovat-do-vrt-mezi-praha-a-brno-hranicni-useky-odlozi"
-published = "2026-04-11"
-retrieved = "2026-07-30"
-claims = ["CLM-25"]
 +++
 **Ministr Bednárik chce investovat hlavně do VRT mezi Prahou a Brnem, hraniční úseky odloží**
 

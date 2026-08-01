@@ -9,96 +9,12 @@ generated = true
 record_id = "https://vomaste.cz/id/dossiers/lubomir-metnar"
 view_model = "generated/views/dossiers/lubomir-metnar/overview.json"
 dossier = "lubomir-metnar"
-dossier_title = "Lubomír Metnar"
 record_type = "dossier"
 dossier_type = "entity"
-canonical_dossier = "lubomir-metnar"
-subject = "metnar"
 lang = "cs"
 seo_type = "ProfilePage"
 updated = "2026-07-30"
 reviewed_at = "2026-07-30"
-subject_entities = ["metnar"]
-subjects = ["Lubomír Metnar"]
-
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-B"]
-
-[[extra.timeline]]
-date = "2026-07"
-title = "Prezident Petr Pavel vetoval novelu rozpočtových zákonů, mimo jiné s odkazem na možnost zásahů ministerstva financí do hospodaření nezávislých institucí včetně NKÚ"
-anchor = "kauza-reakce-nku"
-dot = "dot-fact"
-subjects = ["metnar"]
-
-[[extra.timeline]]
-date = "2026-07"
-title = "Ministr vnitra Lubomír Metnar předložil do vládního systému návrh na zrušení policejní ochranné služby NKÚ s výjimkou z připomínkového řízení; návrh zveřejnily Seznam Zprávy"
-anchor = "kauza-navrh-ochrana-nku"
-dot = "dot-fact"
-subjects = ["metnar"]
-
-[[extra.timeline]]
-date = "2026-07"
-title = "Prezident NKÚ Miloslav Kala označil návrh za útok na nezávislou instituci a za další pokus o vyhladovění úřadu; ministerstvo vnitra reagovalo odkazem na bezpečnostní analýzu policie"
-anchor = "kauza-reakce-nku"
-dot = "dot-fact"
-subjects = ["metnar"]
-
-[[extra.timeline]]
-date = "2027-01"
-title = "Navrhovaná účinnost zrušení policejní ochranné služby NKÚ a převedení policejní ochrany na sídlo České národní banky"
-anchor = "kauza-navrh-ochrana-nku"
-dot = "dot-fact"
-subjects = ["metnar"]
-
-[[extra.timeline]]
-date = "2026-07"
-title = "Návrh vnitra ukončit policejní ochranu NKÚ"
-anchor = "kauza-ochrana-nku"
-dot = "dot-disputed"
-subjects = ["metnar"]
-
-[[extra.cases]]
-anchor = "kauza-ochrana-nku"
-period = "2026"
-title = "Návrh ukončit policejní ochranu Nejvyššího kontrolního úřadu"
-status = "status-disputed"
-label = "Návrh, bez rozhodnutí"
-summary = "Ministerstvo vnitra navrhuje ukončit policejní ochranu NKÚ; Metnar to odůvodňuje bezpečnostní analýzou, prezident NKÚ v tom vidí tlak na nezávislou instituci."
-claims = []
-subjects = ["metnar"]
-
-[[extra.cases]]
-anchor = "kauza-navrh-ochrana-nku"
-period = "2026"
-title = "Návrh zrušit policejní ochranu NKÚ"
-status = "status-single"
-label = "Sledované téma"
-summary = "Návrh zrušit policejní ochranu NKÚ — viz tvrzení CLM-04, CLM-05, CLM-06, CLM-07, CLM-08, CLM-09, CLM-10, CLM-12."
-claims = []
-subjects = ["metnar"]
-
-[[extra.cases]]
-anchor = "kauza-zduvodneni-metnar"
-period = "2026"
-title = "Zdůvodnění ministerstva vnitra"
-status = "status-single"
-label = "Sledované téma"
-summary = "Zdůvodnění ministerstva vnitra — viz tvrzení CLM-11, CLM-13, CLM-14, CLM-15, CLM-16, CLM-17."
-claims = []
-subjects = ["metnar"]
-
-[[extra.cases]]
-anchor = "kauza-reakce-nku"
-period = "2026"
-title = "Reakce NKÚ a kontext sporu"
-status = "status-single"
-label = "Sledované téma"
-summary = "Reakce NKÚ a kontext sporu — viz tvrzení CLM-18, CLM-19, CLM-20, CLM-21, CLM-22, CLM-23, CLM-24, CLM-25."
-claims = []
-subjects = ["metnar"]
 +++
 Lubomír Metnar je ministrem vnitra ve třetí vládě Andreje Babiše. Tento
 dossier pokrývá **jedno téma** v rozsahu autorizačního záznamu v

@@ -9,17 +9,10 @@ weight = 25
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-25"
 view_model = "generated/views/dossiers/karel-havlicek/sources/src-25.json"
-subjects = ["havlicek"]
 dossier = "karel-havlicek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-25"
-outlet = "Česká justice"
-src_type = "zpravodajství"
-url = "https://www.ceska-justice.cz/2026/01/novela-stavebniho-zakona-je-horsi-nez-zpackana-digitaliza-spalek/"
-published = "2026-01-31"
-retrieved = "2026-07-30"
-claims = ["CLM-38", "CLM-39"]
 +++
 **Horší než zpackaná digitalizace. Šéf inženýrské komory odsuzuje novelu stavebního zákona**
 

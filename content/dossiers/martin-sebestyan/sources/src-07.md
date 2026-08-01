@@ -9,17 +9,10 @@ weight = 7
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-07"
 view_model = "generated/views/dossiers/martin-sebestyan/sources/src-07.json"
-subjects = ["sebestyan"]
 dossier = "martin-sebestyan"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-07"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/ekonomika/zemedelsky-fond-nezacal-vymahat-po-agrofertu-vraceni-dotaci-ministerstvu-chybi-klicovy-dokument-369260"
-published = "2026-01-15"
-retrieved = "2026-07-30"
-claims = ["CLM-02", "CLM-03", "CLM-05"]
 +++
 **K vymáhání dotací po Agrofertu nám chybí klíčový dokument, tvrdí resort zemědělství**
 

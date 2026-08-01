@@ -7,7 +7,6 @@ public/
 static/css/main.css
 static/js/app.js
 static/js/graph-app.js
-data/dossiers/*/stats.toml
 data/generated/
 static/search-index.json
 # Registrové exporty pro /data/ a SQL konzoli — generuje build:data-exports

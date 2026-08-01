@@ -14,10 +14,5 @@ dossier = "macinka-turek"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-38"
-status = "status-corroborated"
-status_label = "CORROBORATED"
-summary = "V lednu 2026 prezident Petr Pavel odmítl jmenovat Turka ministrem životního prostředí; jako důvod uvedl opakovaný nedostatek respektu k právnímu řádu, zlehčování nacistického Německa a zpochybňování důstojnosti a rovnosti žen a příslušníků menšin"
-sources = ["SRC-44", "SRC-45"]
-subjects = ["turek"]
 +++
 Tato stránka je kanonický záznam tvrzení CLM-38 — shrnutí, stav a zdroje výše jsou úplné. Se zdrojem tohoto tvrzení se překrývá CLM-39, CLM-40. Hlavní stránka dossieru zobrazuje tentýž text ze stejného zdroje; build proces ověřuje, že se neliší.

@@ -9,14 +9,10 @@ weight = 9
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/zuzana-mrazova/gaps/GAP-09"
 view_model = "generated/views/dossiers/zuzana-mrazova/gaps/gap-09.json"
-subjects = ["mrazova"]
 dossier = "zuzana-mrazova"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-09"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Není doloženo, jak dopadla žádost Mrázové o změnu územního plánu, kterou avizovala jako cestu k legalizaci stavu na pozemku.
 

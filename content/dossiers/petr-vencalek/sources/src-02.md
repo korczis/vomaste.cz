@@ -9,17 +9,10 @@ weight = 2
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/petr-vencalek/sources/SRC-02"
 view_model = "generated/views/dossiers/petr-vencalek/sources/src-02.json"
-subjects = ["vencalek"]
 dossier = "petr-vencalek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-02"
-outlet = "ARES — Administrativní registr ekonomických subjektů (Ministerstvo financí ČR)"
-src_type = "primární registr / veřejný rejstřík"
-url = "https://ares.gov.cz/ekonomicke-subjekty?ico=28274318"
-published = "2023-11-26"
-retrieved = "2026-07-30"
-claims = ["CLM-01", "CLM-02"]
 +++
 Primární státní registr — ne rešerše přes žurnalistiku. Datum
 „zveřejněno" je datum poslední aktualizace samotného rejstříkového

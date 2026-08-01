@@ -9,17 +9,10 @@ weight = 9
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-09"
 view_model = "generated/views/dossiers/jaromir-zuna/sources/src-09.json"
-subjects = ["zuna"]
 dossier = "jaromir-zuna"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-09"
-outlet = "Echo24"
-src_type = "zpravodajství"
-url = "https://m.echo24.cz/a/HXZVf/zpravy-domaci-zuna-je-na-rucnik-jedine-cestne-reseni-rezignace-nacelnik-generalniho-stabu-vondra"
-published = "2026-05-24"
-retrieved = "2026-07-30"
-claims = ["CLM-13", "CLM-15"]
 +++
 **Ministr Zůna je po kauze s náčelníkem štábu na ručník, míní Vondra**
 

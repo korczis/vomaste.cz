@@ -9,17 +9,10 @@ weight = 28
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-28"
 view_model = "generated/views/dossiers/zuzana-mrazova/sources/src-28.json"
-subjects = ["mrazova"]
 dossier = "zuzana-mrazova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-28"
-outlet = "Novinky.cz"
-src_type = "zpravodajství"
-url = "https://www.novinky.cz/clanek/domaci-zpravy-ustecky-kraj-ministryne-mrazova-zije-v-problemy-zatizene-biline-v-levnem-obecnim-byte-rada-obyvatel-mesta-pritom-resi-exekuce-40575732"
-published = "2026-04-29"
-retrieved = "2026-07-31"
-claims = ["CLM-28", "CLM-29", "CLM-30"]
 +++
 Novinky.cz dne 29. 4. 2026: „Přestěhovala se na druhou stranu náměstí ke
 svému současnému manželovi Pavlu Mrázovi, do bytu, jenž rovněž spadá pod

@@ -9,17 +9,10 @@ weight = 5
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-05"
 view_model = "generated/views/dossiers/martin-sebestyan/sources/src-05.json"
-subjects = ["sebestyan"]
 dossier = "martin-sebestyan"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-05"
-outlet = "iROZHLAS.cz (Český rozhlas)"
-src_type = "zpravodajství"
-url = "https://www.irozhlas.cz/zpravy-domov/vynikajici-kandidat-na-ministra-okamura-odmitl-jakekoli-spojeni-sebestyana-s_2511261823_ntu"
-published = "2025-11-26"
-retrieved = "2026-07-30"
-claims = ["CLM-09", "CLM-12", "CLM-13", "CLM-14", "CLM-15", "CLM-16"]
 +++
 **‚Vynikající kandidát na ministra.‘ Okamura odmítl jakékoli spojení Šebestyána s dotacemi pro Agrofert**
 

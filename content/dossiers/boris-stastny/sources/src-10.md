@@ -9,17 +9,10 @@ weight = 10
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-10"
 view_model = "generated/views/dossiers/boris-stastny/sources/src-10.json"
-subjects = ["stastny"]
 dossier = "boris-stastny"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-10"
-outlet = "FORUM 24"
-src_type = "zpravodajství"
-url = "https://www.forum24.cz/diky-konecne-vim-kde-je-stastny-se-prihlasil-k-tajemnemu-zaznamniku-zkazil-pry-aferu-watergate"
-published = "2026-07-10"
-retrieved = "2026-07-30"
-claims = ["CLM-11", "CLM-13"]
 +++
 **Díky, konečně vím, kde je! Šťastný se přihlásil k tajemnému záznamníku, zkazil prý aféru Watergate**
 

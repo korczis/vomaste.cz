@@ -9,17 +9,10 @@ weight = 7
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-07"
 view_model = "generated/views/dossiers/tunde-bartha/sources/src-07.json"
-subjects = ["bartha"]
 dossier = "tunde-bartha"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-07"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/je-urputny-pracovity-a-neskutecne-prisny-rikaji-babisovi-spolupracovnici-z-kampane-12826"
-published = "2022-12-06"
-retrieved = "2026-08-01"
-claims = ["CLM-10", "CLM-11"]
 +++
 ČT24 v prosinci 2022 popisuje tým prezidentské kampaně Andreje Babiše.
 O Tünde Barthě uvádí, že je šéfkou kampaně a že s kandidátem „úzce

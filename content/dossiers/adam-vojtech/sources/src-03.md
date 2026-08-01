@@ -9,17 +9,10 @@ weight = 3
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-03"
 view_model = "generated/views/dossiers/adam-vojtech/sources/src-03.json"
-subjects = ["vojtech"]
 dossier = "adam-vojtech"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-03"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/resort-zdravotnictvi-podal-trestni-oznameni-na-fn-olomouc-kvuli-defibrilatorum-371400"
-published = "2026-03-17"
-retrieved = "2026-07-30"
-claims = ["CLM-02", "CLM-03", "CLM-04", "CLM-05", "CLM-06"]
 +++
 **Resort zdravotnictví podal trestní oznámení na FN Olomouc kvůli defibrilátorům**
 

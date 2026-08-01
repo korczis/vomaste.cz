@@ -9,17 +9,10 @@ weight = 26
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-26"
 view_model = "generated/views/dossiers/karel-havlicek/sources/src-26.json"
-subjects = ["havlicek"]
 dossier = "karel-havlicek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-26"
-outlet = "Vláda České republiky (vlada.gov.cz)"
-src_type = "oficiální primární zdroj"
-url = "https://vlada.gov.cz/cz/ppov/ez/sekce_pro_ez/aktualne/9--tyden-v-eu-23--unora-_-2--brezna-2026-225552/"
-published = "2026-03"
-retrieved = "2026-07-30"
-claims = ["CLM-40"]
 +++
 **9. týden v EU (23. února – 2. března 2026)**
 

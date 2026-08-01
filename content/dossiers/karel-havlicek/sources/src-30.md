@@ -9,17 +9,10 @@ weight = 30
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-30"
 view_model = "generated/views/dossiers/karel-havlicek/sources/src-30.json"
-subjects = ["havlicek"]
 dossier = "karel-havlicek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-30"
-outlet = "EV Magazín"
-src_type = "zpravodajství"
-url = "https://www.evmagazin.cz/eu-meni-pravidla-pro-rok-2035-z-plneho-zakazu-spalovacich-aut-bude-90-cil-cesko-tlacilo-na-tuto"
-published = "2026-03-19"
-retrieved = "2026-07-30"
-claims = ["CLM-44"]
 +++
 **EU mění pravidla pro rok 2035: z plného zákazu spalovacích aut bude 90% cíl. Česko tlačilo na tuto změnu**
 

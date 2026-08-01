@@ -9,16 +9,10 @@ weight = 1
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-01"
 view_model = "generated/views/dossiers/robert-plaga/sources/src-01.json"
-subjects = ["plaga"]
 dossier = "robert-plaga"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-01"
-outlet = "Vláda České republiky (vlada.gov.cz)"
-src_type = "oficiální primární zdroj"
-url = "https://vlada.gov.cz/cz/vlada/clenove-vlady/robert-plaga-223976/"
-retrieved = "2026-07-30"
-claims = ["CLM-01"]
 +++
 Oficiální stránka na webu Úřadu vlády, otevřena a přečtena 2026-07-30.
 Uvádí funkci **ministr školství, mládeže a tělovýchovy** a doložený přehled kariéry: narozen 21. 7. 1978 v Ivančicích; Ing. (2002) a Ph.D. (2010) MENDELU; náměstek pro vysoké školství, vědu a výzkum (2015–2017); ministr školství (2017–2021); předseda Národního akreditačního úřadu (2022–2025).

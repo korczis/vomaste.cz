@@ -9,14 +9,10 @@ weight = 5
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/lubomir-metnar/gaps/GAP-05"
 view_model = "generated/views/dossiers/lubomir-metnar/gaps/gap-05.json"
-subjects = ["metnar"]
 dossier = "lubomir-metnar"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-05"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Chybí reakce dalších aktérů — poslanců, sněmovního výboru pro bezpečnost, opozice, vedení policie či policejních odborů.
 

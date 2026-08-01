@@ -9,17 +9,10 @@ weight = 5
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-05"
 view_model = "generated/views/dossiers/tunde-bartha/sources/src-05.json"
-subjects = ["bartha"]
 dossier = "tunde-bartha"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-05"
-outlet = "ČT24 (Česká televize)"
-src_type = "veřejnoprávní zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/regiony/praha-3-vypovi-smlouvu-na-mestsky-byt-sefce-uradu-vlady-374919"
-published = "2026-06-24"
-retrieved = "2026-07-31"
-claims = ["CLM-03"]
 +++
 ČT24 dne 24. 6. 2026: advokátní kancelář Šenkýř Pánik uvedla, že
 „výpověď [je] problematická v případě, že by se proti ní manželé

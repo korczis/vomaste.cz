@@ -9,16 +9,10 @@ weight = 17
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-17"
 view_model = "generated/views/dossiers/igor-cerveny/sources/src-17.json"
-subjects = ["cerveny"]
 dossier = "igor-cerveny"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-17"
-outlet = "Blesk.cz"
-src_type = "zpravodajství"
-url = "https://www.blesk.cz/clanek/zpravy-politika/844424/pracovni-vylet-ministra-cerveneho-krasy-narodnich-parku-v-usa-kritikou-eu-ponizil-evropu.html"
-retrieved = "2026-07-30"
-claims = ["CLM-56", "CLM-57"]
 +++
 **Pracovní „výlet“ ministra Červeného: Krásy národních parků v USA! Kritikou EU „ponížil“ Evropu?**
 

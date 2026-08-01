@@ -20,6 +20,22 @@
     "/dossiers/andrej-babis/entities/ncoz/"
   ],
   "order": 12,
+  "provenance": {
+    "discoveredAt": "2026-07-30",
+    "discoveredVia": [
+      "edge-eppo-ncoz",
+      "edge-babis-ncoz-pandora"
+    ],
+    "claimRefs": [
+      "CLM-27",
+      "CLM-75"
+    ],
+    "sourceRefs": [
+      "SRC-12",
+      "SRC-52"
+    ],
+    "depth": 1
+  },
   "content": [
     {
       "type": "markdown",

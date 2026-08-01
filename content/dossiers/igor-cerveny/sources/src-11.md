@@ -9,17 +9,10 @@ weight = 11
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-11"
 view_model = "generated/views/dossiers/igor-cerveny/sources/src-11.json"
-subjects = ["cerveny"]
 dossier = "igor-cerveny"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-11"
-outlet = "Ekolist.cz (ČTK)"
-src_type = "zpravodajství"
-url = "https://ekolist.cz/cz/zpravodajstvi/zpravy/ministr-zivotniho-prostredi-cerveny-opravil-majetkove-priznani-a-zaplatil-pokutu"
-published = "2026-06-22"
-retrieved = "2026-07-30"
-claims = ["CLM-22", "CLM-26"]
 +++
 **Ministr životního prostředí Červený opravil majetkové přiznání a zaplatil pokutu**
 

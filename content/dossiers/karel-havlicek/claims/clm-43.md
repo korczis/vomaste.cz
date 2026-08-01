@@ -13,10 +13,5 @@ dossier = "karel-havlicek"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-43"
-status = "status-quote"
-status_label = "CITACE"
-summary = "Na tiskové konferenci po jednání vlády 13. července 2026 Havlíček odůvodnil svou pozici tím, že Česko je automobilově orientovaná země — „deset procent HDP, 25 procent exportu, několik set tisíc pracovních míst“ — a uvedl, že „manažeři významných společností nejenom automobilových velmi dobře už dnes vědí, že jsou nenaplnitelné“."
-sources = ["SRC-27"]
-subjects = ["havlicek"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/karel-havlicek/_index.md#registr-tvrzeni).

@@ -9,14 +9,10 @@ weight = 2
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/gaps/GAP-02"
 view_model = "generated/views/dossiers/andrej-babis/gaps/gap-02.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-02"
-priority = "vysoká"
-checked = "2026-07-30"
-claims = ["CLM-25", "CLM-26", "CLM-27", "CLM-28"]
 +++
 **Co se od poslední revize uzavřelo (30. 7. 2026).** Dřívější znění této
 mezery říkalo, že postoj Evropské komise není doložen žádným otevřeným

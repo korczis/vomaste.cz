@@ -9,17 +9,10 @@ weight = 9
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-09"
 view_model = "generated/views/dossiers/martin-sebestyan/sources/src-09.json"
-subjects = ["sebestyan"]
 dossier = "martin-sebestyan"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-09"
-outlet = "Aktuálně.cz"
-src_type = "zpravodajství"
-url = "https://zpravy.aktualne.cz/domaci/agrofert-muze-opet-cerpat-dotace-rozhodl-zemedelsky-fond/r~aaa296fc028699cf709e299426cf7ed0/?lp=1"
-published = "2026-04"
-retrieved = "2026-07-30"
-claims = ["CLM-20", "CLM-21", "CLM-22", "CLM-23"]
 +++
 **Agrofert může opět čerpat dotace, rozhodl zemědělský fond. Opozici se to nelíbí**
 

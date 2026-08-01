@@ -9,17 +9,10 @@ weight = 3
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-03"
 view_model = "generated/views/dossiers/alena-schillerova/sources/src-03.json"
-subjects = ["schillerova"]
 dossier = "alena-schillerova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-03"
-outlet = "ČeskéNoviny.cz (ČTK)"
-src_type = "agenturní zpravodajství"
-url = "https://www.ceskenoviny.cz/zpravy/schillerova-cr-by-bez-zmeny-pravidel-pro-rozpocty-cekala-paralyza/2824577"
-published = "2026-05-13"
-retrieved = "2026-07-30"
-claims = ["CLM-05", "CLM-06", "CLM-07"]
 +++
 Zpráva z 13. 5. 2026 popisuje obsah novely rozpočtových zákonů: mění
 způsob výpočtu výdajových rámců — z pravidla maximálního strukturálního

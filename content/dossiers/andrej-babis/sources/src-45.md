@@ -9,17 +9,10 @@ weight = 45
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-45"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-45.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-45"
-outlet = "ČeskéNoviny.cz (ČTK)"
-src_type = "zpravodajství"
-url = "https://www.ceskenoviny.cz/zpravy/firmy-z-agrofertu-kvuli-odeprenym-dotacim-podaly-serii-neuspesnych-stiznosti/2710356"
-published = "2025-08-19"
-retrieved = "2026-08-01"
-claims = ["CLM-65"]
 +++
 Agenturní zpráva ČTK o sérii neúspěšných kasačních stížností firem
 skupiny Agrofert. „Naposledy v polovině srpna NSS zamítl stížnost

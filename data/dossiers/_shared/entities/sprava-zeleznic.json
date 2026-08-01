@@ -20,6 +20,20 @@
     "/dossiers/ivan-bednarik/entities/sprava-zeleznic/"
   ],
   "order": 4,
+  "provenance": {
+    "discoveredAt": "2026-07-31",
+    "discoveredVia": [
+      "edge-bednarik-sprava-zeleznic"
+    ],
+    "claimRefs": [
+      "CLM-18",
+      "CLM-19"
+    ],
+    "sourceRefs": [
+      "SRC-14"
+    ],
+    "depth": 1
+  },
   "content": [
     {
       "type": "markdown",

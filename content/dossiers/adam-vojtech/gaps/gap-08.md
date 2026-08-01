@@ -9,14 +9,10 @@ weight = 8
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/adam-vojtech/gaps/GAP-08"
 view_model = "generated/views/dossiers/adam-vojtech/gaps/gap-08.json"
-subjects = ["vojtech"]
 dossier = "adam-vojtech"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-08"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Není znám termín ani rozsah finální (nikoli předběžné) zprávy odborné komise a počet konkrétních problematických implantací.
 

@@ -9,17 +9,10 @@ weight = 8
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-08"
 view_model = "generated/views/dossiers/igor-cerveny/sources/src-08.json"
-subjects = ["cerveny"]
 dossier = "igor-cerveny"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-08"
-outlet = "Blesk.cz"
-src_type = "zpravodajství"
-url = "https://www.blesk.cz/clanek/zpravy-politika/841120/ministr-cerveny-o-rekonstrukci-za-miliony-plisen-a-havarijni-stav-dela-upravy-kvuli-turkovi.html"
-published = "2026-06-06"
-retrieved = "2026-07-30"
-claims = ["CLM-11", "CLM-12", "CLM-13", "CLM-14"]
 +++
 **Ministr Červený o rekonstrukci za miliony: Plíseň a havarijní stav. Dělá úpravy kvůli Turkovi?**
 

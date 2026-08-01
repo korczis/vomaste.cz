@@ -10,17 +10,10 @@ aliases = ["/dossier/zdroje/src-06/"]
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-06"
 view_model = "generated/views/dossiers/macinka-turek/sources/src-06.json"
-subjects = ["turek"]
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-06"
-outlet = "ČT24 (Česká televize)"
-src_type = "veřejnoprávní zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/pokud-zabery-z-nehody-nelzou-turek-by-mel-rezignovat-rekl-babis-375570"
-published = "2026-07-14"
-retrieved = "2026-07-21"
-claims = ["CLM-11", "CLM-12"]
 +++
 Přímá redakční zpráva ČT24 citující premiéra Andreje Babiše k Turkově
 nehodě — konkrétně jeho podmínečné stanovisko ("pokud se záběry

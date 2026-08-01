@@ -9,17 +9,10 @@ weight = 24
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-24"
 view_model = "generated/views/dossiers/oto-klempir/sources/src-24.json"
-subjects = ["klempir"]
 dossier = "oto-klempir"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-24"
-outlet = "Opera PLUS"
-src_type = "zpravodajství"
-url = "https://operaplus.cz/mene-penez-pro-zivou-kulturu-ministerstvo-kultury-haji-rozpoctove-skrty/"
-published = "2026-02-18"
-retrieved = "2026-07-30"
-claims = ["CLM-32"]
 +++
 **Méně peněz pro živou kulturu. Ministerstvo kultury hájí rozpočtové škrty**
 

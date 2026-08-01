@@ -9,14 +9,10 @@ weight = 9
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/martin-sebestyan/gaps/GAP-09"
 view_model = "generated/views/dossiers/martin-sebestyan/gaps/gap-09.json"
-subjects = ["sebestyan"]
 dossier = "martin-sebestyan"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-09"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Nepodařilo se ověřit, zda Evropská komise vydala prováděcí rozhodnutí o pozastavení plateb nebo uplatnila finanční korekci vůči České republice.
 

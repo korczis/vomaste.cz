@@ -9,17 +9,10 @@ weight = 2
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-02"
 view_model = "generated/views/dossiers/jaromir-zuna/sources/src-02.json"
-subjects = ["zuna"]
 dossier = "jaromir-zuna"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-02"
-outlet = "e15.cz"
-src_type = "zpravodajství"
-url = "https://www.e15.cz/rozhovory/mame-nejvyssi-vydaje-na-obranu-nikdy-jsme-nebyli-v-tak-luxusni-situaci-rika-ministr-obrany-zuna-1431795"
-published = "2026-04-02"
-retrieved = "2026-07-30"
-claims = ["CLM-04", "CLM-05"]
 +++
 **Ministr Zůna: Armáda nikdy nebyla v tak luxusní situaci jako teď**
 

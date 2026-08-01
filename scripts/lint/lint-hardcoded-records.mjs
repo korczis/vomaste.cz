@@ -11,7 +11,11 @@
  *
  * Kontroluje se jen to, co jde ověřit strojově:
  *   - identifikátory záznamů (CLM/SRC/CASE/GAP-##) mimo komentáře,
- *   - slugy dossierů z data/dossiers.toml v cestách `@/dossiers/<slug>/`.
+ *   - slugy dossierů z kanonického registru v cestách `@/dossiers/<slug>/`
+ *     (T-028 fáze H: registrem je kanonický dataset),
+ *   - slugy dossierů jako string literály ("<slug>") kdekoli v šabloně,
+ *   - natvrdo zapsané POČTY ve stat dlaždicích (stat_tile(value=<číslo>)
+ *     — počet musí jít z dat, ne ze šablony).
  * Jména osob se nekontrolují — v komentářích a příkladech jsou legitimní a
  * regulární výraz by z toho udělal hlídače slovníku.
  */
@@ -47,8 +51,19 @@ for (const file of walk(TEMPLATES)) {
   for (const slug of slugs) {
     const re = new RegExp(`["'\`/]dossiers/${slug}[/"'\`]`);
     if (re.test(body)) {
-      errors.push(`${rel}: natvrdo zapsaný slug dossieru "${slug}" — cestu skládej z proměnné (section.extra.dossier, registry z data/dossiers.toml).`);
+      errors.push(`${rel}: natvrdo zapsaný slug dossieru "${slug}" — cestu skládej z proměnné (section.extra.dossier, kanonický registr přes view modely).`);
     }
+    // Slug jako holý string literál (mimo cesty) — šablona nesmí znát
+    // konkrétní dossier ani mimo URL kontext (T-028 fáze H).
+    const literal = new RegExp(`["'\`]${slug}["'\`]`);
+    if (literal.test(body)) {
+      errors.push(`${rel}: natvrdo zapsaný slug dossieru "${slug}" jako literál — vyber ho z dat (view modely), ne ze šablony.`);
+    }
+  }
+  // Natvrdo zapsané počty ve stat dlaždicích — číslo v šabloně zestárne
+  // tiše; počty musí přicházet z view modelů/manifestů.
+  for (const m of body.matchAll(/stat_tile\(\s*value\s*=\s*(\d+)/g)) {
+    errors.push(`${rel}: stat_tile s natvrdo zapsaným počtem ${m[1]} — počet musí jít z dat, ne ze šablony.`);
   }
 }
 

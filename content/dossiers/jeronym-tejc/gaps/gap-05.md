@@ -9,14 +9,10 @@ weight = 5
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jeronym-tejc/gaps/GAP-05"
 view_model = "generated/views/dossiers/jeronym-tejc/gaps/gap-05.json"
-subjects = ["tejc"]
 dossier = "jeronym-tejc"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-05"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Není doloženo, zda a kdy kárný senát nařídil jednání o kárné žalobě na soudkyni, ani jak rozhodl.
 

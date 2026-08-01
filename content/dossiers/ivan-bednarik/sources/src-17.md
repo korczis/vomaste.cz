@@ -9,17 +9,10 @@ weight = 17
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-17"
 view_model = "generated/views/dossiers/ivan-bednarik/sources/src-17.json"
-subjects = ["bednarik"]
 dossier = "ivan-bednarik"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-17"
-outlet = "Seznam Zprávy"
-src_type = "zpravodajství"
-url = "https://www.seznamzpravy.cz/clanek/ekonomika-byznys-doprava-ministr-by-chtel-strop-pro-dalsi-druh-dopravy-a-neni-bez-sance-308778"
-published = "2026-06-18"
-retrieved = "2026-07-30"
-claims = ["CLM-34", "CLM-35"]
 +++
 **Česko není Praha. Ministr dopravy odmítl požadavky z metropole**
 

@@ -9,14 +9,10 @@ weight = 3
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ales-juchelka/gaps/GAP-03"
 view_model = "generated/views/dossiers/ales-juchelka/gaps/gap-03.json"
-subjects = ["juchelka"]
 dossier = "ales-juchelka"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-03"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Autorizace (AUTH-2026-07-30-B) zmiňuje trestní oznámení ohlášená občanskými organizacemi, ale dohledané zpravodajství připisuje jediné podané trestní oznámení opozičnímu politickému hnutí STAN (podala poslankyně Pivoňka Vaňková). Žádné trestní oznámení občanské/neziskové organizace (Transparency International, Oživení apod.) nebylo v otevřených zdrojích nalezeno.
 

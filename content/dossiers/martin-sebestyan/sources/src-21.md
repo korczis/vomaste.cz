@@ -9,17 +9,10 @@ weight = 21
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-21"
 view_model = "generated/views/dossiers/martin-sebestyan/sources/src-21.json"
-subjects = ["sebestyan"]
 dossier = "martin-sebestyan"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-21"
-outlet = "Ekolist.cz (ČTK)"
-src_type = "zpravodajství"
-url = "https://ekolist.cz/cz/zpravodajstvi/zpravy/sebestyan-budu-spolupracovat-se-vsemi-nevladnimi-zemedelskymi-organizacemi"
-published = "2026-01-14"
-retrieved = "2026-07-30"
-claims = ["CLM-42"]
 +++
 **Šebestyán: Budu spolupracovat se všemi nevládními zemědělskými organizacemi**
 

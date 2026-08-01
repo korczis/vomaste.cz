@@ -9,14 +9,10 @@ weight = 4
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ales-juchelka/gaps/GAP-04"
 view_model = "generated/views/dossiers/ales-juchelka/gaps/gap-04.json"
-subjects = ["juchelka"]
 dossier = "ales-juchelka"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-04"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Článek iROZHLAS k externímu posudku nebylo možné otevřít (HTTP 403), obsah tedy nebyl použit jako důkaz.
 

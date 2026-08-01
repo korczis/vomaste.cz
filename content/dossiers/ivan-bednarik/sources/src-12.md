@@ -9,17 +9,10 @@ weight = 12
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-12"
 view_model = "generated/views/dossiers/ivan-bednarik/sources/src-12.json"
-subjects = ["bednarik"]
 dossier = "ivan-bednarik"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-12"
-outlet = "RAILTARGET"
-src_type = "komentář/názor"
-url = "https://www.railtarget.cz/byznys/odchod-ivana-bednarika-pripomnel-nedokoncenou-transformaci-ceskych-drah-1929.html"
-published = "2022-03-01"
-retrieved = "2026-07-30"
-claims = ["CLM-47"]
 +++
 **Odchod Ivana Bednárika připomněl nedokončenou transformaci Českých drah**
 

@@ -9,17 +9,10 @@ weight = 8
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-08"
 view_model = "generated/views/dossiers/jeronym-tejc/sources/src-08.json"
-subjects = ["tejc"]
 dossier = "jeronym-tejc"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-08"
-outlet = "Česká justice"
-src_type = "zpravodajství"
-url = "https://www.ceska-justice.cz/2026/07/ministr-tejc-ostre-ustavni-soud-prezident-spor/"
-published = "2026-07-02"
-retrieved = "2026-07-30"
-claims = ["CLM-14", "CLM-15", "CLM-44", "CLM-45", "CLM-46"]
 +++
 **Ministr Tejc ostře: Mám velké pochybnosti o postupu Ústavního soudu ve sporu prezidenta**
 

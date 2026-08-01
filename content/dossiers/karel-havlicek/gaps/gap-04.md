@@ -9,14 +9,10 @@ weight = 4
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/gaps/GAP-04"
 view_model = "generated/views/dossiers/karel-havlicek/gaps/gap-04.json"
-subjects = ["havlicek"]
 dossier = "karel-havlicek"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-04"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Přesné datum, kdy se ministerstvo průmyslu poprvé oficiálně seznámilo s auditem EK k toustové lince (v průběhu roku 2019).
 

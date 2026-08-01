@@ -9,17 +9,10 @@ weight = 11
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-11"
 view_model = "generated/views/dossiers/jaromir-zuna/sources/src-11.json"
-subjects = ["zuna"]
 dossier = "jaromir-zuna"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-11"
-outlet = "Echo24"
-src_type = "zpravodajství"
-url = "https://m.echo24.cz/a/H9AHW/armada-rehka-hlavac-okamura-babis-zuna-vlada-kabinet-ministr-konec-spekulace-neshoda-hlasovani-proti-pro-obrana"
-published = "2026-05-19"
-retrieved = "2026-07-30"
-claims = ["CLM-16"]
 +++
 **Zůna opět v problémech? Šéf SPD Okamura možnost konce ministra obrany odmítl**
 

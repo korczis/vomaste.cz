@@ -9,17 +9,10 @@ weight = 10
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-10"
 view_model = "generated/views/dossiers/tomio-okamura/sources/src-10.json"
-subjects = ["okamura"]
 dossier = "tomio-okamura"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-10"
-outlet = "Blesk.cz"
-src_type = "zpravodajství"
-url = "https://www.blesk.cz/clanek/zpravy-politika/840898/plakaty-s-chirurgy-z-dovozu-spd-je-vinna-podnecovala-k-nenavisti-rozhodl-soud.html"
-published = "2026-06-03"
-retrieved = "2026-07-30"
-claims = ["CLM-09", "CLM-12", "CLM-14"]
 +++
 **Plakáty s „chirurgy z dovozu“: SPD je vinna! Podněcovala k nenávisti, rozhodl soud**
 

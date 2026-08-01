@@ -10,17 +10,10 @@ aliases = ["/dossier/zdroje/src-28/"]
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-28"
 view_model = "generated/views/dossiers/macinka-turek/sources/src-28.json"
-subjects = ["turek"]
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-28"
-outlet = "Deník.cz (VLTAVA LABE MEDIA)"
-src_type = "zpravodajství (krimi)"
-url = "https://www.denik.cz/krimi/filip-turek-znasilneni-20250623.html"
-published = "2025-06-23"
-retrieved = "2026-07-22"
-claims = ["CLM-25"]
 +++
 Nejstarší dohledané zveřejnění kauzy. Bývalá partnerka poslance Filipa
 Turka (v článku nejmenovaná) podala trestní oznámení, ve kterém ho viní

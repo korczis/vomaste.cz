@@ -9,17 +9,10 @@ weight = 6
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-06"
 view_model = "generated/views/dossiers/tomio-okamura/sources/src-06.json"
-subjects = ["okamura"]
 dossier = "tomio-okamura"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-06"
-outlet = "Česká justice"
-src_type = "zpravodajství"
-url = "https://www.ceska-justice.cz/2026/06/plakaty-jen-pravdive-pojmenovaly-problemy-spd-u-soudu-odmitla-ze-by-kampan-byla-trestnym-cinem/"
-published = "2026-06-03"
-retrieved = "2026-07-30"
-claims = ["CLM-07", "CLM-10", "CLM-15", "CLM-16"]
 +++
 **Za „chirurgy z dovozu“ milionová pokuta: SPD odmítá vinu v kauze nenávistných plakátů**
 

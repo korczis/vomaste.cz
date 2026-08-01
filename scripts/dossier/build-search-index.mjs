@@ -9,10 +9,10 @@
  *
  * T-028 fáze G: zdrojem je COMPILED kanonický dataset, ne content/**
  * front matter. Jediný vstup mimo compiled model jsou popisky uzlů
- * z data/dossiers/<slug>/graph.toml — prezentanční titulek vztahu se
+ * z kurátorované grafové vrstvy dossieru (dossier.json `graph`, dřív graph.toml) — prezentanční titulek vztahu se
  * skládá „<label zdroje> — <label vztahu> — <label cíle>“ ze stejných
  * kurátorovaných popisků, ze kterých kdysi vznikly titulky relation
- * stránek (graph.toml zůstává do fáze H kanonickým kurátorovaným
+ * stránek (kanonickým kurátorovaným zdrojem popisků je od fáze H
  * zdrojem grafu).
  */
 import { writeFileSync } from "node:fs";

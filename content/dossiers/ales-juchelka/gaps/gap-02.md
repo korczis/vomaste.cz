@@ -9,14 +9,10 @@ weight = 2
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ales-juchelka/gaps/GAP-02"
 view_model = "generated/views/dossiers/ales-juchelka/gaps/gap-02.json"
-subjects = ["juchelka"]
 dossier = "ales-juchelka"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-02"
-priority = "nízká"
-checked = "2026-07-30"
-claims = ["CLM-03", "CLM-04"]
 +++
 Vyřazení čtyř projektů z financování EU podle citovaného zdroje vytváří
 rozpočtovou mezeru 63,8 milionu korun

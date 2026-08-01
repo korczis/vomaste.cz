@@ -9,16 +9,10 @@ weight = 1
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-01"
 view_model = "generated/views/dossiers/jeronym-tejc/sources/src-01.json"
-subjects = ["tejc"]
 dossier = "jeronym-tejc"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-01"
-outlet = "Vláda České republiky (vlada.gov.cz)"
-src_type = "oficiální primární zdroj"
-url = "https://vlada.gov.cz/cz/vlada/clenove-vlady/jeronym-tejc-223974/"
-retrieved = "2026-07-30"
-claims = ["CLM-01"]
 +++
 Oficiální stránka na webu Úřadu vlády, otevřena a přečtena 2026-07-30.
 Uvádí funkci **ministr spravedlnosti** a doložený přehled kariéry: narozen 23. 8. 1977 v Brně; JUDr. MU Brno (2001); advokát (2005–2012); poslanec (2006–2017); náměstek ministra spravedlnosti (2018–2021); náměstek GŘ Vězeňské služby (2022–2025). Profil uvádí, že je aktuálně bez politické příslušnosti (ČSSD 1997–2017).

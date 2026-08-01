@@ -9,14 +9,10 @@ weight = 10
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/gaps/GAP-10"
 view_model = "generated/views/dossiers/karel-havlicek/gaps/gap-10.json"
-subjects = ["havlicek"]
 dossier = "karel-havlicek"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-10"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Není ověřeno, jak Havlíček hlasoval nebo vystupoval při formování obecného přístupu Rady EU k revizi emisních norem CO2 pro osobní automobily.
 

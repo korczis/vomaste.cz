@@ -9,17 +9,10 @@ weight = 11
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-11"
 view_model = "generated/views/dossiers/alena-schillerova/sources/src-11.json"
-subjects = ["schillerova"]
 dossier = "alena-schillerova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-11"
-outlet = "Echo24"
-src_type = "zpravodajství"
-url = "https://m.echo24.cz/a/HR9Ua/zpravy-ekonomika-novela-rozpocet-pravidla-naraz-dluhova-brzda-schillerova-vlada-nrr-verejne-finance"
-published = "2026-05-02"
-retrieved = "2026-07-30"
-claims = ["CLM-33", "CLM-34"]
 +++
 **Změna pravidel rozpočtu by umožnila náraz na dluhovou brzdu. Schillerová: Jdeme německou cestou**
 

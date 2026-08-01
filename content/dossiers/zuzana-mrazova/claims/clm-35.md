@@ -13,10 +13,5 @@ dossier = "zuzana-mrazova"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-35"
-status = "status-single"
-status_label = "1 ZDROJ"
-summary = "Sporná parcela má podle Seznam Zpráv rozlohu zhruba 500 metrů čtverečních; kromě objektu s komínem a dřevěné pergoly se sezením se na ní nachází šedý přístřešek o výměře přes 40 metrů čtverečních, pod nímž stojí bílý karavan."
-sources = ["SRC-15"]
-subjects = ["mrazova"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/zuzana-mrazova/_index.md#registr-tvrzeni).

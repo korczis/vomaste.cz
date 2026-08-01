@@ -20,6 +20,27 @@
     "/dossiers/andrej-babis/entities/evropska-komise/"
   ],
   "order": 10,
+  "provenance": {
+    "discoveredAt": "2026-07-30",
+    "discoveredVia": [
+      "edge-agrofert-komise",
+      "edge-synbiol-komise",
+      "edge-babis-komise-audit"
+    ],
+    "claimRefs": [
+      "CLM-25",
+      "CLM-26",
+      "CLM-43",
+      "CLM-46"
+    ],
+    "sourceRefs": [
+      "SRC-10",
+      "SRC-11",
+      "SRC-19",
+      "SRC-20"
+    ],
+    "depth": 1
+  },
   "content": [
     {
       "type": "markdown",

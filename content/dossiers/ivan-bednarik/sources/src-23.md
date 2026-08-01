@@ -9,17 +9,10 @@ weight = 23
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-23"
 view_model = "generated/views/dossiers/ivan-bednarik/sources/src-23.json"
-subjects = ["bednarik"]
 dossier = "ivan-bednarik"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-23"
-outlet = "Ministerstvo dopravy ČR"
-src_type = "oficiální primární zdroj"
-url = "https://md.gov.cz/Media/Media-a-tiskove-zpravy/Hospodarsky-vybor-Snemovny-doporucil-schvalit-roz"
-published = "2026-02-19"
-retrieved = "2026-07-30"
-claims = ["CLM-14"]
 +++
 **Hospodářský výbor Sněmovny doporučil schválit rozpočet SFDI**
 

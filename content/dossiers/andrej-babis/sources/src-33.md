@@ -9,18 +9,10 @@ weight = 33
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-33"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-33.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-33"
-outlet = "ČeskéNoviny.cz (ČTK)"
-family = "ctk"
-src_type = "agenturní zpravodajství"
-url = "https://www.ceskenoviny.cz/zpravy/soud-opet-zprostil-babise-a-nagyovou-obzaloby-v-kauze-capi-hnizdo/2476160"
-published = "2024-02-14"
-retrieved = "2026-07-31"
-claims = ["CLM-51"]
 +++
 ČeskéNoviny.cz dne 14. 2. 2024: nepřímé důkazy „mohly nasvědčovat
 protiprávnímu jednání, ale netvořily ucelený řetězec". „Státní zástupce

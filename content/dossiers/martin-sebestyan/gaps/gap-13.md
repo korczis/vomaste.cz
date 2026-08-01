@@ -9,14 +9,10 @@ weight = 13
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/martin-sebestyan/gaps/GAP-13"
 view_model = "generated/views/dossiers/martin-sebestyan/gaps/gap-13.json"
-subjects = ["sebestyan"]
 dossier = "martin-sebestyan"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-13"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Řada dohledaných zpráv (ČeskéNoviny.cz, Aktuálně.cz, Echo24, ČT24, Ekolist.cz, části textu Ekonomického deníku) vychází ze společného zpravodajství ČTK.
 

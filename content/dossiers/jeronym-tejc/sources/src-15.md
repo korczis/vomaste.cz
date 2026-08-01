@@ -9,17 +9,10 @@ weight = 15
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-15"
 view_model = "generated/views/dossiers/jeronym-tejc/sources/src-15.json"
-subjects = ["tejc"]
 dossier = "jeronym-tejc"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-15"
-outlet = "Reflex"
-src_type = "zpravodajství"
-url = "https://www.reflex.cz/clanek/zpravy/135123/tejcuv-audit-trestni-oznameni-a-udajne-poskozovani-decroix-jak-pokracuje-bitcoinova-kauza.html"
-published = "2026-04-23"
-retrieved = "2026-07-30"
-claims = ["CLM-26", "CLM-27", "CLM-28", "CLM-29", "CLM-30"]
 +++
 **Tejcův audit, trestní oznámení a údajné poškozování Decroix. Jak pokračuje bitcoinová kauza?**
 

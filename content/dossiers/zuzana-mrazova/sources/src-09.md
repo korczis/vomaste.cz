@@ -9,17 +9,10 @@ weight = 9
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-09"
 view_model = "generated/views/dossiers/zuzana-mrazova/sources/src-09.json"
-subjects = ["mrazova"]
 dossier = "zuzana-mrazova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-09"
-outlet = "FORUM 24"
-src_type = "zpravodajství"
-url = "https://www.forum24.cz/bydleni-jste-vyresili-alespon-pro-jednoho-hrib-si-vystrelil-z-ministryne-mrazove-predal-ji-klicenku"
-published = "2026-06-03"
-retrieved = "2026-07-30"
-claims = ["CLM-11"]
 +++
 **Bydlení jste vyřešili, alespoň pro jednoho. Hřib si vystřelil z ministryně Mrázové, předal jí klíčenku**
 

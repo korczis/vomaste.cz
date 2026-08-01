@@ -9,14 +9,10 @@ weight = 5
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/robert-plaga/gaps/GAP-05"
 view_model = "generated/views/dossiers/robert-plaga/gaps/gap-05.json"
-subjects = ["plaga"]
 dossier = "robert-plaga"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-05"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Nebylo dohledáno žádné veřejné vyjádření Úřadu pro ochranu osobních údajů (ÚOOÚ) k plošnému testování žáků ani informace o zahájení kontroly či podnětu vůči České školní inspekci.
 

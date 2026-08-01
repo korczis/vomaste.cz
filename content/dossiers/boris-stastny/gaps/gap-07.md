@@ -9,14 +9,10 @@ weight = 7
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/boris-stastny/gaps/GAP-07"
 view_model = "generated/views/dossiers/boris-stastny/gaps/gap-07.json"
-subjects = ["stastny"]
 dossier = "boris-stastny"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-07"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Původní zjištění Seznam Zpráv v plném znění (autor, rozsah dokumentace, přesné otázky položené Úřadu vlády).
 

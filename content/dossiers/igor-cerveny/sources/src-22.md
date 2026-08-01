@@ -9,17 +9,10 @@ weight = 22
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-22"
 view_model = "generated/views/dossiers/igor-cerveny/sources/src-22.json"
-subjects = ["cerveny"]
 dossier = "igor-cerveny"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-22"
-outlet = "FORUM 24"
-src_type = "zpravodajství"
-url = "https://www.forum24.cz/motoriste-se-opevnuji-na-ministerstvu-chystaji-dvojite-dvere-pro-turka-a-stavebni-prace-za-miliony"
-published = "2026-05-31"
-retrieved = "2026-07-30"
-claims = ["CLM-37", "CLM-38", "CLM-39", "CLM-42"]
 +++
 **Motoristé se opevňují na ministerstvu. Chystají dvojité dveře pro Turka a stavební práce za miliony**
 

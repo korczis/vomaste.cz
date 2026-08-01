@@ -9,17 +9,10 @@ weight = 13
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-13"
 view_model = "generated/views/dossiers/martin-sebestyan/sources/src-13.json"
-subjects = ["sebestyan"]
 dossier = "martin-sebestyan"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-13"
-outlet = "ParlamentníListy.cz"
-src_type = "oficiální primární zdroj"
-url = "https://www.parlamentnilisty.cz/politika/politici-volicum/Ministr-Sebestyan-Hospodarsky-i-osobni-zajem-je-vyloucen-792603"
-published = "2026-06-11"
-retrieved = "2026-07-30"
-claims = ["CLM-26", "CLM-27"]
 +++
 **Ministr Šebestyán: Hospodářský i osobní zájem je vyloučen**
 

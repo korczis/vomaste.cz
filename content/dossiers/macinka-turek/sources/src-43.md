@@ -10,17 +10,10 @@ aliases = ["/dossier/zdroje/src-43/"]
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-43"
 view_model = "generated/views/dossiers/macinka-turek/sources/src-43.json"
-subjects = ["macinka", "turek"]
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-43"
-outlet = "Aktuálně.cz"
-src_type = "zpravodajství"
-url = "https://zpravy.aktualne.cz/domaci/strejda-ricrd-motoriste-davaji-ruce-pryc-od-ideologa-svazaku-pry-jen-kamarad-filipa/r~aaa290508f28eab4877b7a010ace8f05/"
-published = "2026-03-17"
-retrieved = "2026-07-22"
-claims = ["CLM-37"]
 +++
 Aktuálně.cz cituje přímá vyjádření vedení Motoristů k Richardu Chladovi:
 

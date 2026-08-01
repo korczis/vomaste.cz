@@ -10,17 +10,10 @@ aliases = ["/dossier/zdroje/src-42/"]
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-42"
 view_model = "generated/views/dossiers/macinka-turek/sources/src-42.json"
-subjects = ["macinka", "turek"]
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-42"
-outlet = "CNN Prima News"
-src_type = "zpravodajství"
-url = "https://cnn.iprima.cz/kdo-je-verny-sponzor-motoristu-richard-chlad-podporovatel-turka-i-kontroverzni-podnikatel-488806"
-published = "2025-10-16"
-retrieved = "2026-07-22"
-claims = ["CLM-36"]
 +++
 CNN Prima NEWS (16. 10. 2025) profiluje podnikatele Richarda Chlada:
 začínal v 80. letech dovozem videokazet a hodinek, po revoluci se

@@ -9,17 +9,10 @@ weight = 16
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-16"
 view_model = "generated/views/dossiers/martin-sebestyan/sources/src-16.json"
-subjects = ["sebestyan"]
 dossier = "martin-sebestyan"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-16"
-outlet = "Demagog.cz"
-src_type = "oficiální primární zdroj"
-url = "https://demagog.cz/vyrok/24740"
-published = "2026-05"
-retrieved = "2026-07-30"
-claims = ["CLM-33", "CLM-34"]
 +++
 **Martin Šebestyán (Za SPD): „Ty (investiční dotace pro Agrofert) byly zastaveny mnou v rámci SZIF…“**
 

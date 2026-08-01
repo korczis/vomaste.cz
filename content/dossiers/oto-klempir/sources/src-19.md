@@ -9,17 +9,10 @@ weight = 19
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-19"
 view_model = "generated/views/dossiers/oto-klempir/sources/src-19.json"
-subjects = ["klempir"]
 dossier = "oto-klempir"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-19"
-outlet = "Echo24"
-src_type = "zpravodajství"
-url = "https://m.echo24.cz/a/HRbg7/zpravy-domov-klempir-ujistil-pavla-ze-vlada-verejnopravni-media-neohrozi"
-published = "2026-07-01"
-retrieved = "2026-07-30"
-claims = ["CLM-20"]
 +++
 **Ujistil jsem prezidenta, že vláda veřejnoprávní média neohrozí, říká ministr Klempíř**
 

@@ -9,17 +9,10 @@ weight = 2
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-02"
 view_model = "generated/views/dossiers/igor-cerveny/sources/src-02.json"
-subjects = ["cerveny"]
 dossier = "igor-cerveny"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-02"
-outlet = "Blesk.cz"
-src_type = "zpravodajství"
-url = "https://www.blesk.cz/clanek/zpravy-politika/838865/ministrovi-cervenemu-hrozi-pokuta-v-majetkovem-priznani-chybel-dum-za-11-4-milionu.html"
-published = "2026-05-06"
-retrieved = "2026-07-30"
-claims = ["CLM-02", "CLM-03", "CLM-04", "CLM-05", "CLM-06"]
 +++
 **Ministrovi Červenému hrozí pokuta. V majetkovém přiznání chyběl dům za 11,4 milionu**
 

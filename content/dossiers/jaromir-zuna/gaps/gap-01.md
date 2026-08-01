@@ -9,14 +9,10 @@ weight = 1
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jaromir-zuna/gaps/GAP-01"
 view_model = "generated/views/dossiers/jaromir-zuna/gaps/gap-01.json"
-subjects = ["zuna"]
 dossier = "jaromir-zuna"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-01"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Tvrzení náčelníka Řehky, že resort považoval rozhovor s prezidentem za 'politicky citlivý', a Zůnova replika nejsou doložitelné.
 

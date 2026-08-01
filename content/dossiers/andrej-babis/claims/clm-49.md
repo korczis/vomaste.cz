@@ -13,9 +13,5 @@ dossier = "andrej-babis"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-49"
-status = "status-single"
-status_label = "1 ZDROJ"
-summary = "Předmětem kauzy Čapí hnízdo je dotace 50 milionů korun na výstavbu areálu z let 2007–2008, kterou čerpala Farma Čapí hnízdo poté, co byla vyvedena ze skupiny Agrofert; sporné bylo, zda šlo o účelové vyvedení kvůli podmínce podpory pro malé a střední podniky"
-sources = ["SRC-23"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni).

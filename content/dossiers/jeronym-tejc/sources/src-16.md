@@ -9,17 +9,10 @@ weight = 16
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-16"
 view_model = "generated/views/dossiers/jeronym-tejc/sources/src-16.json"
-subjects = ["tejc"]
 dossier = "jeronym-tejc"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-16"
-outlet = "CNN Prima News"
-src_type = "zpravodajství"
-url = "https://cnn.iprima.cz/decroix-k-bitcoinove-kauze-hon-na-carodejnice-z-justice-se-dela-prodlouzena-ruka-vlady-509654"
-published = "2026-04-17"
-retrieved = "2026-07-30"
-claims = ["CLM-31", "CLM-32"]
 +++
 **Decroix k bitcoinové kauze: Hon na čarodějnice. Z justice se dělá prodloužená ruka vlády**
 

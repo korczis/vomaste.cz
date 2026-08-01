@@ -10,9 +10,6 @@ view_model = "generated/views/dossiers/filip-turek/relations-index.json"
 dossier = "filip-turek"
 lang = "cs"
 seo_type = "CollectionPage"
-dossier_title = "Filip Turek"
-canonical_dossier = "macinka-turek"
-subject = "turek"
 +++
 Filtrovaný pohled na [registr vztahů](@/dossiers/macinka-turek/relations/_index.md) — jen vztahy, ve kterých Filip Turek přímo figuruje.
 

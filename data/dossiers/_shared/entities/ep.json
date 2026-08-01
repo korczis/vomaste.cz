@@ -20,5 +20,18 @@
   "routeAliases": [
     "/dossiers/macinka-turek/entities/ep/"
   ],
-  "order": 5
+  "order": 5,
+  "provenance": {
+    "discoveredAt": "2026-07-29",
+    "discoveredVia": [
+      "edge-turek-ep"
+    ],
+    "claimRefs": [
+      "CLM-01"
+    ],
+    "sourceRefs": [
+      "SRC-11"
+    ],
+    "depth": 1
+  }
 }

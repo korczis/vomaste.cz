@@ -8,6 +8,7 @@
   "identifier": "jaroslav-kurcik",
   "entityId": "jaroslav-kurcik",
   "title": "Ing. Jaroslav Kurčík",
+  "description": "Ing. Jaroslav Kurčík — kontextový záznam rejstříkové vazby z ARES, ne dossier.",
   "entityType": "person",
   "publicationRole": "context",
   "dossierEnabled": false,
@@ -15,6 +16,13 @@
   "coverageState": "referenced",
   "dossiers": [],
   "order": 42,
+  "provenance": {
+    "discoveredAt": "2026-07-31",
+    "discoveredVia": [
+      "ares-expansion-26185610-2026-07-31"
+    ],
+    "depth": 3
+  },
   "content": [
     {
       "type": "markdown",

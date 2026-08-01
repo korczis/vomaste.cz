@@ -9,18 +9,10 @@ weight = 11
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-11"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-11.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-11"
-outlet = "Echo24"
-family = "ctk"
-src_type = "agenturní zpravodajství"
-url = "https://www.echo24.cz/a/HmrPv/zpravy-domaci-evropska-komise-ceske-urady-mohly-obnovit-dotace-firmam-z-agrofertu-eu-zatim-nic-neproplaci"
-published = "2026-06-05"
-retrieved = "2026-07-30"
-claims = ["CLM-26"]
 +++
 Delší verze téže agenturní zprávy z 5. 6. 2026, obsahující navíc obsah
 dopisu Evropské komise z 20. května 2026.

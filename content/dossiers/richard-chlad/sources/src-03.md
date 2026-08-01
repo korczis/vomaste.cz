@@ -9,17 +9,10 @@ weight = 3
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/richard-chlad/sources/SRC-03"
 view_model = "generated/views/dossiers/richard-chlad/sources/src-03.json"
-subjects = ["chlad"]
 dossier = "richard-chlad"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-03"
-outlet = "Aktuálně.cz"
-src_type = "celostátní zpravodajství"
-url = "https://zpravy.aktualne.cz/domaci/strejda-ricrd-motoriste-davaji-ruce-pryc-od-ideologa-svazaku-pry-jen-kamarad-filipa/r~aaa290508f28eab4877b7a010ace8f05/"
-published = "2026-03-17"
-retrieved = "2026-07-22"
-claims = ["CLM-03", "CLM-04", "CLM-05", "CLM-06"]
 +++
 Aktuálně.cz dne 17. 3. 2026 cituje přímá vyjádření vedení strany
 Motoristé sobě k Richardu Chladovi.

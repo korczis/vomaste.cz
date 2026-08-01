@@ -9,17 +9,10 @@ weight = 10
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-10"
 view_model = "generated/views/dossiers/jeronym-tejc/sources/src-10.json"
-subjects = ["tejc"]
 dossier = "jeronym-tejc"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-10"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/vlada-navrhne-ustavnimu-soudu-aby-zamitl-prezidentovu-kompetencni-zalobu-375758"
-published = "2026-07-20"
-retrieved = "2026-07-30"
-claims = ["CLM-16", "CLM-17", "CLM-18", "CLM-47", "CLM-48", "CLM-50"]
 +++
 **Vláda navrhne Ústavnímu soudu, aby zamítl prezidentovu kompetenční žalobu**
 

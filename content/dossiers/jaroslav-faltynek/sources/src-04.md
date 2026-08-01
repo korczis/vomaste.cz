@@ -9,17 +9,10 @@ weight = 4
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-04"
 view_model = "generated/views/dossiers/jaroslav-faltynek/sources/src-04.json"
-subjects = ["faltynek"]
 dossier = "jaroslav-faltynek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-04"
-outlet = "ČT24 (Česká televize)"
-src_type = "veřejnoprávní zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/zalobce-zrusil-trestni-stihani-jaroslava-faltynka-v-kauze-capi-hnizdo-u-babise-trva-80778"
-published = "2018-05-03"
-retrieved = "2026-07-31"
-claims = ["CLM-02", "CLM-04"]
 +++
 ČT24 dne 3. 5. 2018: „Vyhověno bylo stížnostem Jaroslava Faltýnka a tří
 dalších osob a usnesení o jejich stíhání bylo zrušeno." Naproti tomu

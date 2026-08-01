@@ -13,10 +13,5 @@ dossier = "igor-cerveny"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-21"
-status = "status-single"
-status_label = "1 ZDROJ"
-summary = "Ministerstvo spravedlnosti postoupilo věc přestupkovému orgánu 22. dubna 2026; veřejně se o tom informovalo až 6. května 2026."
-sources = ["SRC-13"]
-subjects = ["cerveny"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/igor-cerveny/_index.md#registr-tvrzeni).

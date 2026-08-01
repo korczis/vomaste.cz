@@ -10,13 +10,7 @@ record_id = "https://vomaste.cz/id/dossiers/ivan-bednarik/relations/edge-bednari
 view_model = "generated/views/dossiers/ivan-bednarik/relations/edge-bednarik-ceske-drahy.json"
 dossier = "ivan-bednarik"
 record_type = "relation"
+lang = "cs"
 rel_id = "edge-bednarik-ceske-drahy"
-source = "bednarik"
-target = "ceske-drahy"
-relation_type = "HOLDS_ROLE"
-label = "bývalý předseda představenstva a generální ředitel (rezignace 2022)"
-status = "corroborated"
-claims = ["CLM-02"]
-sources = ["SRC-02", "SRC-29"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Status: nezávisle potvrzený fakt.

@@ -21,6 +21,24 @@
     "/dossiers/macinka-turek/entities/policie/"
   ],
   "order": 18,
+  "provenance": {
+    "discoveredAt": "2026-07-29",
+    "discoveredVia": [
+      "edge-nehoda2026-policie",
+      "edge-kauza2025-policie"
+    ],
+    "claimRefs": [
+      "CLM-27",
+      "CLM-41"
+    ],
+    "sourceRefs": [
+      "SRC-31",
+      "SRC-47",
+      "SRC-48",
+      "SRC-54"
+    ],
+    "depth": 2
+  },
   "content": [
     {
       "type": "markdown",

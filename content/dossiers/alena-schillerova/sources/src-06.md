@@ -9,17 +9,10 @@ weight = 6
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-06"
 view_model = "generated/views/dossiers/alena-schillerova/sources/src-06.json"
-subjects = ["schillerova"]
 dossier = "alena-schillerova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-06"
-outlet = "ČeskéNoviny.cz (ČTK)"
-src_type = "zpravodajství"
-url = "https://www.ceskenoviny.cz/zpravy/snemovna-odmitla-senatni-podminky-pro-zvysovani-vydaju-nad-schvaleny-ramec/2846576"
-published = "2026-07-07"
-retrieved = "2026-07-30"
-claims = ["CLM-14", "CLM-15", "CLM-16"]
 +++
 **Sněmovna odmítla senátní podmínky pro zvyšování výdajů nad schválený rámec**
 

@@ -9,18 +9,10 @@ weight = 22
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-22"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-22.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-22"
-outlet = "Novinky.cz"
-family = "ctk"
-src_type = "agenturní zpravodajství"
-url = "https://www.novinky.cz/clanek/domaci-kasacni-stiznost-kosteleckych-uzenin-soud-smetl-na-dotaci-nemely-kvuli-babisove-stretu-zajmu-narok-40550933"
-published = "2025-11-28"
-retrieved = "2026-07-30"
-claims = ["CLM-48"]
 +++
 Agenturní zpráva ČTK k rozsudku Nejvyššího správního soudu.
 **Co dokládá:** správní historii sporné podpory — šlo o dotaci z Programu

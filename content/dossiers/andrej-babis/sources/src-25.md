@@ -9,17 +9,10 @@ weight = 25
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-25"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-25.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-25"
-outlet = "Ekonom"
-src_type = "analytické zpravodajství"
-url = "https://ekonom.cz/c1-52046900-setuza-story-bez-happy-endu"
-published = "2011-06-09"
-retrieved = "2026-07-30"
-claims = ["CLM-53"]
 +++
 Analýza týdeníku Ekonom (autor Martin Mařík) k závěru sporů o ústeckou
 Setuzu.

@@ -9,17 +9,10 @@ weight = 4
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-04"
 view_model = "generated/views/dossiers/oto-klempir/sources/src-04.json"
-subjects = ["klempir"]
 dossier = "oto-klempir"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-04"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/kultura/klempir-zrusil-vyberove-rizeni-na-reditele-narodni-galerie-375202"
-published = "2026-07-02"
-retrieved = "2026-07-30"
-claims = ["CLM-22", "CLM-23", "CLM-24", "CLM-25", "CLM-26"]
 +++
 **Klempíř zrušil výběrové řízení na ředitele Národní galerie**
 

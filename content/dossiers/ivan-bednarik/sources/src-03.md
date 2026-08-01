@@ -9,17 +9,10 @@ weight = 3
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-03"
 view_model = "generated/views/dossiers/ivan-bednarik/sources/src-03.json"
-subjects = ["bednarik"]
 dossier = "ivan-bednarik"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-03"
-outlet = "Ekonomický deník"
-src_type = "zpravodajství"
-url = "https://ekonomickydenik.cz/podle-ministra-bednarika-chybi-penize-na-dopravni-stavby/"
-published = "2025-12-15"
-retrieved = "2026-07-30"
-claims = ["CLM-05", "CLM-06"]
 +++
 **„Dejte mi 100 minut.“ Bednárik čas na hájení nechce. Řekl, kde dopravě chybí peníze**
 

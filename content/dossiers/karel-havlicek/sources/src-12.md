@@ -9,17 +9,10 @@ weight = 12
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-12"
 view_model = "generated/views/dossiers/karel-havlicek/sources/src-12.json"
-subjects = ["havlicek"]
 dossier = "karel-havlicek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-12"
-outlet = "Průmyslová automatizace"
-src_type = "zpravodajství"
-url = "https://www.prumyslovaautomatizace.com/mpo-muze-pokracovat-ve-vymahani-dotace-pro-agrofert-na-linku-pro-vyrobu-toustoveho-chleba/"
-published = "2023-07-13"
-retrieved = "2026-07-30"
-claims = ["CLM-21"]
 +++
 **MPO může pokračovat ve vymáhání dotace pro Agrofert na linku pro výrobu toustového chleba**
 

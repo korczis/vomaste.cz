@@ -9,14 +9,10 @@ weight = 5
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ales-juchelka/gaps/GAP-05"
 view_model = "generated/views/dossiers/ales-juchelka/gaps/gap-05.json"
-subjects = ["juchelka"]
 dossier = "ales-juchelka"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-05"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Není známo, z jaké konkrétní rozpočtové kapitoly MPSV výpadek 63,8 + 17,6 milionu korun uhradí, ani konečná celková výše škody.
 

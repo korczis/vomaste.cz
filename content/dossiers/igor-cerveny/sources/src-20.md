@@ -9,17 +9,10 @@ weight = 20
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-20"
 view_model = "generated/views/dossiers/igor-cerveny/sources/src-20.json"
-subjects = ["cerveny"]
 dossier = "igor-cerveny"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-20"
-outlet = "Deník N"
-src_type = "zpravodajství"
-url = "https://denikn.cz/2063739/upravy-cerveneho-pracovny-stoji-dalsi-statisice-v-ministerske-kancelari-dal-sedi-turek/"
-published = "2026-05-18"
-retrieved = "2026-07-30"
-claims = ["CLM-35", "CLM-36", "CLM-41"]
 +++
 **Úpravy Červeného pracovny stojí další statisíce. V ministerské kanceláři dál sedí Turek**
 

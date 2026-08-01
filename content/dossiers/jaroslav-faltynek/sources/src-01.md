@@ -9,16 +9,10 @@ weight = 1
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-01"
 view_model = "generated/views/dossiers/jaroslav-faltynek/sources/src-01.json"
-subjects = ["faltynek"]
 dossier = "jaroslav-faltynek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-01"
-outlet = "Poslanecká sněmovna Parlamentu ČR"
-src_type = "primární úřední záznam"
-url = "https://www.psp.cz/sqw/detail.sqw?id=6190"
-retrieved = "2026-07-30"
-claims = ["CLM-01"]
 +++
 Oficiální profil poslance na webu Poslanecké sněmovny uvádí: **poslanec od
 4. 10. 2025**, volební kraj Olomoucký, člen **Poslaneckého klubu ANO 2011**

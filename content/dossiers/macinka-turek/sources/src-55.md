@@ -9,17 +9,10 @@ weight = 55
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-55"
 view_model = "generated/views/dossiers/macinka-turek/sources/src-55.json"
-subjects = ["macinka"]
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-55"
-outlet = "ARES — Administrativní registr ekonomických subjektů (Ministerstvo financí ČR)"
-src_type = "primární registr / veřejný rejstřík"
-url = "https://ares.gov.cz/ekonomicke-subjekty?ico=28274318"
-published = "2023-11-26"
-retrieved = "2026-07-30"
-claims = ["CLM-46", "CLM-48"]
 +++
 Primární státní registr, dotázaný programově 2026-07-30 (rozhraní
 `ekonomicke-subjekty-v-be/rest`, včetně větve veřejného rejstříku

@@ -13,10 +13,5 @@ dossier = "jeronym-tejc"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-03"
-status = "status-corroborated"
-status_label = "CORROBORATED"
-summary = "Trestní oznámení bylo podle citovaného zpravodajství doručeno Vrchnímu státnímu zastupitelství v Olomouci večer 23. dubna 2026; doručení potvrdil mluvčí zastupitelství Radek Bartoš."
-sources = ["SRC-02", "SRC-04"]
-subjects = ["tejc"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jeronym-tejc/_index.md#registr-tvrzeni).

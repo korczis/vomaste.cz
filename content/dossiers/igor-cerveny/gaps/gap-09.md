@@ -9,14 +9,10 @@ weight = 9
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/igor-cerveny/gaps/GAP-09"
 view_model = "generated/views/dossiers/igor-cerveny/gaps/gap-09.json"
-subjects = ["cerveny"]
 dossier = "igor-cerveny"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-09"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Není doložena celková vysoutěžená či skutečně proplacená částka za úpravy ministrovy pracovny.
 

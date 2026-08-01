@@ -9,14 +9,10 @@ weight = 4
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/oto-klempir/gaps/GAP-04"
 view_model = "generated/views/dossiers/oto-klempir/gaps/gap-04.json"
-subjects = ["klempir"]
 dossier = "oto-klempir"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-04"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Obsah dvou pozměňovacích návrhů ministerstva kultury ke stavebnímu zákonu (ochranná pásma, archeologické výzkumy)
 

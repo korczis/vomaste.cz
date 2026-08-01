@@ -9,14 +9,10 @@ weight = 2
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jaroslav-faltynek/gaps/GAP-02"
 view_model = "generated/views/dossiers/jaroslav-faltynek/gaps/gap-02.json"
-subjects = ["faltynek"]
 dossier = "jaroslav-faltynek"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-02"
-priority = "střední"
-checked = "2026-07-30"
-claims = ["CLM-02"]
 +++
 Kauza podle veřejné debaty začala obviněním v roce 2015 a Sněmovna
 Faltýnka v roce 2017 vydala k trestnímu stíhání. **Tento dossier ani

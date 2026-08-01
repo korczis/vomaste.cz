@@ -13,19 +13,33 @@
   "canonicalDossier": "example-subject",
   "subject": "example",
   "language": "cs",
-  "aliases": ["/dossiers/example-subject-old/"],
+  "aliases": [
+    "/dossiers/example-subject-old/"
+  ],
   "navigationVisible": false,
   "coverageState": "full",
   "updated": "2026-01-01",
   "authorization": {
-    "records": ["AUTH-0000-00-00-TEST"]
+    "records": [
+      "AUTH-0000-00-00-TEST"
+    ]
   },
   "seo": {
     "title": "Example Subject — testovací dossier",
     "description": "Syntetická SEO metadata testovacího dossieru."
   },
   "contentBlocks": [
-    { "type": "markdown", "value": "Syntetický úvodní text testovacího dossieru." },
-    { "type": "process-note", "value": "Fixture — data nevznikla žádnou investigací." }
+    {
+      "type": "markdown",
+      "value": "Syntetický úvodní text testovacího dossieru."
+    },
+    {
+      "type": "markdown",
+      "value": "## Registr tvrzení\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/example-subject/claims/clm-01.md) | Example Subject podle citovaného syntetického zdroje vykonává funkci v Example Organization. | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-01](@/dossiers/example-subject/sources/src-01.md) |"
+    },
+    {
+      "type": "process-note",
+      "value": "Fixture — data nevznikla žádnou investigací."
+    }
   ]
 }

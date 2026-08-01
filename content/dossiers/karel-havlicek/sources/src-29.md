@@ -9,17 +9,10 @@ weight = 29
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-29"
 view_model = "generated/views/dossiers/karel-havlicek/sources/src-29.json"
-subjects = ["havlicek"]
 dossier = "karel-havlicek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-29"
-outlet = "Kurzy.cz"
-src_type = "zpravodajství"
-url = "https://zpravy.kurzy.cz/857826-aktualni-navrh-evropske-komise-na-revizi-emisnich-limitu-co2-pro-nove-osobni-automobily-a-lehka/"
-published = "2026-04-30"
-retrieved = "2026-07-30"
-claims = ["CLM-45"]
 +++
 **Aktuální návrh Evropské komise na revizi emisních limitů CO2 pro nové osobní automobily a lehká užitková vozidla zůstává odtržený od reality**
 

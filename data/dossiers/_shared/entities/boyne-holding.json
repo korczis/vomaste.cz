@@ -20,6 +20,20 @@
     "/dossiers/andrej-babis/entities/boyne-holding/"
   ],
   "order": 14,
+  "provenance": {
+    "discoveredAt": "2026-07-30",
+    "discoveredVia": [
+      "edge-blakey-boyne",
+      "edge-boyne-bigaud"
+    ],
+    "claimRefs": [
+      "CLM-31"
+    ],
+    "sourceRefs": [
+      "SRC-13"
+    ],
+    "depth": 1
+  },
   "content": [
     {
       "type": "markdown",

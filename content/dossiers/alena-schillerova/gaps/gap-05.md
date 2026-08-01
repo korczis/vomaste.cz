@@ -9,14 +9,10 @@ weight = 5
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/alena-schillerova/gaps/GAP-05"
 view_model = "generated/views/dossiers/alena-schillerova/gaps/gap-05.json"
-subjects = ["schillerova"]
 dossier = "alena-schillerova"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-05"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Chybí přesné počty hlasů z jednání Senátu 17. června 2026.
 

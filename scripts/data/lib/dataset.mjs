@@ -11,6 +11,7 @@ import { loadCanonicalTree } from "../load.mjs";
 import { createValidators, validateRecordObject, RECORDS_ROOT } from "../validate-shape.mjs";
 import { validateReferences } from "../validate-references.mjs";
 import { validateSemantics } from "../validate-semantics.mjs";
+import { validateRegistryTables } from "../validate-registry-table.mjs";
 import { validateJsonLd } from "../validate-jsonld.mjs";
 import { compileDataset } from "../compile.mjs";
 
@@ -53,6 +54,12 @@ export async function validateCanonicalDataset(model, options = {}) {
   const semantics = validateSemantics(model, options);
   errors.push(...semantics.errors);
   warnings.push(...semantics.warnings);
+
+  // 3b) parita přehledové tabulky s kanonickými záznamy (T1–T8 — fáze H,
+  //     dřívější validate-dossier.mjs)
+  const tables = validateRegistryTables(model);
+  errors.push(...tables.errors);
+  warnings.push(...tables.warnings);
 
   // 4) JSON-LD expanze (lokální kontexty, safe mode)
   errors.push(...(await validateJsonLd(model)));

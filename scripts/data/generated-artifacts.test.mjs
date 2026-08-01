@@ -15,7 +15,6 @@ import { buildViewModels, writeViewModels } from "./build-view-models.mjs";
 import { buildStubs, writeStubs, STAGING_REL, SYNC_EXCLUDED } from "./generate-zola-content.mjs";
 import { syncContent, isSyncedPath } from "./sync-content.mjs";
 import { checkGenerated, routeOfStubPath } from "./check-generated.mjs";
-import { migrate } from "../migrations/migrate-content-to-json.mjs";
 
 const SCHEMA_BASE = "https://vomaste.cz/schemas/canonical";
 const CONTEXT = "https://vomaste.cz/context/v1.jsonld";
@@ -222,7 +221,9 @@ test("view modely: overview nese meta, počty, case karty i timeline", () => {
   assert.equal(overview.title, "Example Subject");
   assert.equal(overview.route, `/dossiers/${SLUG}/`);
   assert.deepEqual(overview.aliases, ["/stary-dossier/"]);
-  assert.deepEqual(overview.counts, { claims: 2, sources: 2, cases: 1, gaps: 1, relations: 1 });
+  // counts.entities = globální entity s členstvím v dossieru (fáze H —
+  // dřívější stats.toml entities_total).
+  assert.deepEqual(overview.counts, { claims: 2, sources: 2, cases: 1, gaps: 1, relations: 1, entities: 2 });
   assert.deepEqual(overview.authorization, { records: ["AUTH-TEST-1"] });
   // timeline blok projde do view modelu beze změny (lossless projekce)
   const timeline = overview.contentBlocks.find((b) => b.type === "timeline");
@@ -431,183 +432,4 @@ test("routeOfStubPath mapuje _index i záznamy na Zola routy", () => {
   assert.equal(routeOfStubPath(`dossiers/${SLUG}/claims/_index.md`), `/dossiers/${SLUG}/claims/`);
   assert.equal(routeOfStubPath(`dossiers/${SLUG}/claims/clm-2.md`), `/dossiers/${SLUG}/claims/clm-2/`);
   assert.equal(routeOfStubPath("entities/agrofert.md"), "/entities/agrofert/");
-});
-
-// --- timeline round-trip přes migrátor -----------------------------------
-
-function writeMarkdownFixture(root) {
-  put(
-    root,
-    "data/dossiers.toml",
-    `[[dossiers]]
-slug = "example-subject"
-title = "Example Subject"
-dossier_type = "entity"
-subject = "example"
-canonical_dossier = "example-subject"
-show_in_primary_navigation = true
-`,
-  );
-  put(
-    root,
-    "data/authorizations.toml",
-    `[[authorizations]]
-id = "AUTH-TEST-1"
-authorized_at = "2026-01-01"
-subjects = ["example"]
-agents_md_section = "Test"
-scope_summary = "Testovací rozsah."
-`,
-  );
-  put(
-    root,
-    "content/dossiers/example-subject/_index.md",
-    `+++
-title = "Example Subject"
-description = "Testovací dossier pro timeline round-trip."
-template = "entity-dossier.html"
-
-[extra]
-dossier = "example-subject"
-lang = "cs"
-updated = "2026-08-01"
-
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-TEST-1"]
-
-[[extra.timeline]]
-date = "2026-01-05"
-title = "První událost"
-anchor = "kauza-test"
-dot = "dot-fact"
-subjects = ["example"]
-
-[[extra.timeline]]
-date = "23. 2. 2026"
-title = "Druhá událost (český volný formát data)"
-anchor = "kauza-test"
-dot = "dot-disputed"
-+++
-
-Tělo přehledu dossieru.
-`,
-  );
-  put(
-    root,
-    "content/dossiers/example-subject/claims/clm-01.md",
-    `+++
-title = "CLM-01"
-description = "První tvrzení."
-template = "dossier-claim.html"
-weight = 1
-
-[extra]
-dossier = "example-subject"
-record_type = "claim"
-lang = "cs"
-clm_id = "CLM-01"
-status = "status-single"
-status_label = "1 ZDROJ"
-summary = "První tvrzení."
-sources = ["SRC-01"]
-subjects = ["example"]
-+++
-
-Tělo tvrzení CLM-01.
-`,
-  );
-  put(
-    root,
-    "content/dossiers/example-subject/sources/src-01.md",
-    `+++
-title = "SRC-01 — Testovací zdroj"
-description = "Popis zdroje SRC-01."
-template = "dossier-source.html"
-weight = 1
-
-[extra]
-subjects = ["example"]
-dossier = "example-subject"
-record_type = "source"
-lang = "cs"
-src_id = "SRC-01"
-outlet = "Outlet A"
-src_type = "zpravodajství"
-url = "https://example.org/src-01"
-published = "2026-07-01"
-retrieved = "2026-08-01"
-claims = ["CLM-01"]
-+++
-
-Tělo zdroje SRC-01.
-`,
-  );
-  put(
-    root,
-    "content/entities/example-person.md",
-    `+++
-title = "Example Subject"
-template = "entity.html"
-weight = 1
-
-[extra]
-record_type = "entity"
-entity_id = "example-person"
-entity_type = "person"
-publication_role = "subject"
-dossier_enabled = true
-dossier_status = "authorized"
-coverage_state = "full"
-dossiers = ["example-subject"]
-+++
-
-Hlavní subjekt testovacího dossieru.
-`,
-  );
-}
-
-test("timeline round-trip: [[extra.timeline]] bloky migrují lossless a idempotentně", async () => {
-  const root = mkdtempSync(join(tmpdir(), "vomaste-timeline-"));
-  writeMarkdownFixture(root);
-  const result = await migrate({ root, crossCheck: false });
-  assert.deepEqual(result.errors, [], result.errors.join("\n"));
-
-  const dossier = JSON.parse(readFileSync(join(root, "data/dossiers/example-subject/dossier.json"), "utf8"));
-  assert.deepEqual(
-    dossier.contentBlocks.map((b) => b.type),
-    ["markdown", "timeline"],
-  );
-  const timeline = dossier.contentBlocks[1];
-  assert.equal(timeline.entries.length, 2); // počet entries == počet [[extra.timeline]] bloků
-  assert.deepEqual(timeline.entries[0], {
-    date: "2026-01-05",
-    title: "První událost",
-    anchor: "kauza-test",
-    dot: "dot-fact",
-    subjects: ["example"],
-  });
-  // český volný formát data zůstává byte-verně (lossless, žádný přepis)
-  assert.deepEqual(timeline.entries[1], {
-    date: "23. 2. 2026",
-    title: "Druhá událost (český volný formát data)",
-    anchor: "kauza-test",
-    dot: "dot-disputed",
-  });
-  // zapsaný strom projde tvarovou bránou (timeline blok je validní)
-  assert.deepEqual(validateShapeTree(join(root, "data/dossiers")).errors, []);
-
-  // idempotence: druhý běh nezmění jediný bajt
-  const before = hashTree(join(root, "data/dossiers"));
-  assert.deepEqual((await migrate({ root, crossCheck: false })).errors, []);
-  assert.deepEqual([...hashTree(join(root, "data/dossiers")).entries()], [...before.entries()]);
-});
-
-test("timeline blok s neznámým klíčem migraci odmítne (lossless pojistka)", async () => {
-  const root = mkdtempSync(join(tmpdir(), "vomaste-timeline-bad-"));
-  writeMarkdownFixture(root);
-  const file = join(root, "content/dossiers/example-subject/_index.md");
-  writeFileSync(file, readFileSync(file, "utf8").replace('dot = "dot-fact"', 'dot = "dot-fact"\nmystery = "x"'));
-  const result = await migrate({ root, crossCheck: false });
-  assert.ok(result.errors.some((e) => e.includes('neznámý klíč "mystery"')), result.errors.join("\n"));
 });

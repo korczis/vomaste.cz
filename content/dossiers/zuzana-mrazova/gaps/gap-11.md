@@ -9,14 +9,10 @@ weight = 11
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/zuzana-mrazova/gaps/GAP-11"
 view_model = "generated/views/dossiers/zuzana-mrazova/gaps/gap-11.json"
-subjects = ["mrazova"]
 dossier = "zuzana-mrazova"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-11"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Není doloženo, zda Krajský úřad Ústeckého kraje zahájil vůči Bílině formální opatření proti nečinnosti.
 

@@ -12,9 +12,9 @@
 {% block content %}
 <main class="mx-auto max-w-6xl px-6 py-12 text-white">
   {% set dossier_slug = section.extra.dossier %}
-  {% set canonical_slug = section.extra.canonical_dossier %}
-  {% set registry = section.extra.registry %}
   {% set idx = load_data(path="data/" ~ section.extra.view_model) %}
+  {% set canonical_slug = idx.canonicalDossier %}
+  {% set registry = idx.registry %}
   {% set filtered = idx.rows %}
 
   {%- if registry == "claims" %}{% set registry_label = "Registr tvrzení" %}
@@ -23,7 +23,7 @@
   {%- else %}{% set registry_label = "Registr mezer" %}{% endif -%}
   {{ ui::page_header(title=section.title, description=section.description, breadcrumb_items=[
     "Dossiery::" ~ get_url(path="@/dossiers/_index.md"),
-    section.extra.dossier_title ~ "::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"),
+    idx.dossierTitle ~ "::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"),
     registry_label,
   ]) }}
 

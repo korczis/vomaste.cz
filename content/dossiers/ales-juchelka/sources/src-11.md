@@ -9,17 +9,10 @@ weight = 11
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-11"
 view_model = "generated/views/dossiers/ales-juchelka/sources/src-11.json"
-subjects = ["juchelka"]
 dossier = "ales-juchelka"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-11"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/kvuli-moznemu-stretu-zajmu-juchelkovy-exporadkyne-resort-nepozada-eu-o-proplaceni-nekterych-projektu-375914"
-published = "2026-07-24"
-retrieved = "2026-07-30"
-claims = ["CLM-06", "CLM-09", "CLM-11", "CLM-13", "CLM-22", "CLM-36", "CLM-37", "CLM-38", "CLM-40", "CLM-42"]
 +++
 **Kvůli možnému střetu zájmů Juchelkovy exporadkyně resort nepožádá EU o proplacení některých projektů**
 

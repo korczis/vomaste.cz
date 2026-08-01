@@ -9,17 +9,10 @@ weight = 12
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-12"
 view_model = "generated/views/dossiers/zuzana-mrazova/sources/src-12.json"
-subjects = ["mrazova"]
 dossier = "zuzana-mrazova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-12"
-outlet = "Tiscali.cz"
-src_type = "zpravodajství"
-url = "https://www.tiscali.cz/mrazova-bydlela-v-levnem-mestskem-byte-a-letala-do-japonska-ted-po-ni-jde-ministerstvo-spravedlnosti-663378"
-published = "2026-05-25"
-retrieved = "2026-07-30"
-claims = ["CLM-07", "CLM-09", "CLM-18"]
 +++
 **Mrázová bydlela v levném městském bytě a létala do Japonska. Teď po ní jde ministerstvo spravedlnosti**
 

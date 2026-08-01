@@ -9,17 +9,10 @@ weight = 18
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-18"
 view_model = "generated/views/dossiers/karel-havlicek/sources/src-18.json"
-subjects = ["havlicek"]
 dossier = "karel-havlicek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-18"
-outlet = "ČeskéNoviny.cz (ČTK)"
-src_type = "zpravodajství"
-url = "https://www.ceskenoviny.cz/zpravy/-snemovna-po-sporu-po-vystoupeni-havlicka-nedokoncila-schvalovani-stavebni-novely/2848496"
-published = "2026-07-08"
-retrieved = "2026-07-30"
-claims = ["CLM-31", "CLM-32"]
 +++
 **Sněmovna po sporu po vystoupení Havlíčka nedokončila schvalování stavební novely**
 

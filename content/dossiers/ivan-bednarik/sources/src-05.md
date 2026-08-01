@@ -9,17 +9,10 @@ weight = 5
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-05"
 view_model = "generated/views/dossiers/ivan-bednarik/sources/src-05.json"
-subjects = ["bednarik"]
 dossier = "ivan-bednarik"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-05"
-outlet = "silnice-zeleznice.cz"
-src_type = "zpravodajství"
-url = "https://silnice-zeleznice.cz/lide/moje-priorita-aby-doprava-fungovala-rika-resortni-ministr-ivan-bednarik-1181"
-published = "2026-04-22"
-retrieved = "2026-07-30"
-claims = ["CLM-09"]
 +++
 **Moje priorita? Aby doprava fungovala, říká resortní ministr Ivan Bednárik**
 

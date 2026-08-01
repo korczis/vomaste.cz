@@ -9,14 +9,10 @@ weight = 1
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/martin-sebestyan/gaps/GAP-01"
 view_model = "generated/views/dossiers/martin-sebestyan/gaps/gap-01.json"
-subjects = ["sebestyan"]
 dossier = "martin-sebestyan"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-01"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Článek kverulant.org „Ministr Šebestyán brzdí vymáhání miliard po Agrofertu“ se nepodařilo otevřít (reCAPTCHA bot-wall, HTTP 403 při všech pokusech).
 

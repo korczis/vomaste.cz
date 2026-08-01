@@ -14,10 +14,5 @@ dossier = "macinka-turek"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-24"
-status = "status-single"
-status_label = "1 ZDROJ"
-summary = "Macinka byl od 2025 zároveň ministrem zahraničí, místopředsedou vlády a 2025–2026 dočasně pověřen i řízením Ministerstva životního prostředí"
-sources = ["SRC-27"]
-subjects = ["macinka"]
 +++
 Tato stránka je kanonický záznam tvrzení CLM-24 — shrnutí, stav a zdroje výše jsou úplné. Hlavní stránka dossieru zobrazuje tentýž text ze stejného zdroje; build proces ověřuje, že se neliší.

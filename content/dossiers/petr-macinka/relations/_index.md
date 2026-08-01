@@ -10,9 +10,6 @@ view_model = "generated/views/dossiers/petr-macinka/relations-index.json"
 dossier = "petr-macinka"
 lang = "cs"
 seo_type = "CollectionPage"
-dossier_title = "Petr Macinka"
-canonical_dossier = "macinka-turek"
-subject = "macinka"
 +++
 Filtrovaný pohled na [registr vztahů](@/dossiers/macinka-turek/relations/_index.md) — jen vztahy, ve kterých Petr Macinka přímo figuruje.
 

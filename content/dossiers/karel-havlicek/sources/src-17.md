@@ -9,16 +9,10 @@ weight = 17
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-17"
 view_model = "generated/views/dossiers/karel-havlicek/sources/src-17.json"
-subjects = ["havlicek"]
 dossier = "karel-havlicek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-17"
-outlet = "Poslanecká sněmovna Parlamentu ČR"
-src_type = "oficiální primární zdroj"
-url = "https://www.psp.cz/sqw/historie.sqw?o=10&T=67"
-retrieved = "2026-07-30"
-claims = ["CLM-29", "CLM-30"]
 +++
 **Sněmovní tisk 67 — Novela zákona: stavební zákon (legislativní historie)**
 

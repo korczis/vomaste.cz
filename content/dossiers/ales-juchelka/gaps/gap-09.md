@@ -9,14 +9,10 @@ weight = 9
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ales-juchelka/gaps/GAP-09"
 view_model = "generated/views/dossiers/ales-juchelka/gaps/gap-09.json"
-subjects = ["juchelka"]
 dossier = "ales-juchelka"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-09"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Chybí oficiální reakce Evropské komise po březnovém dopise o „závažných obavách“.
 

@@ -9,14 +9,10 @@ weight = 1
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/boris-stastny/gaps/GAP-01"
 view_model = "generated/views/dossiers/boris-stastny/gaps/gap-01.json"
-subjects = ["stastny"]
 dossier = "boris-stastny"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-01"
-priority = "vysoká"
-checked = "2026-07-30"
-claims = ["CLM-02", "CLM-04"]
 +++
 Podle citovaného zdroje
 ([SRC-02](@/dossiers/boris-stastny/sources/src-02.md)) neproběhlo formální

@@ -10,13 +10,7 @@ record_id = "https://vomaste.cz/id/dossiers/andrej-babis/relations/edge-babis-ab
 view_model = "generated/views/dossiers/andrej-babis/relations/edge-babis-ab-trusts.json"
 dossier = "andrej-babis"
 record_type = "relation"
+lang = "cs"
 rel_id = "edge-babis-ab-trusts"
-source = "babis"
-target = "ab-private-trusts"
-relation_type = "HOLDS_INTEREST_IN"
-label = "akcie Agrofertu ve fondech 2/2017–2024/2025; poté návrat k přímému vlastnictví — majetková posloupnost, sama o sobě legální"
-status = "corroborated"
-claims = ["CLM-16"]
-sources = ["SRC-06", "SRC-28"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Status: nezávisle potvrzený fakt.

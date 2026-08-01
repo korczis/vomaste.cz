@@ -9,17 +9,10 @@ weight = 17
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-17"
 view_model = "generated/views/dossiers/martin-sebestyan/sources/src-17.json"
-subjects = ["sebestyan"]
 dossier = "martin-sebestyan"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-17"
-outlet = "Transparency International ČR"
-src_type = "oficiální primární zdroj"
-url = "https://www.transparency.cz/transparency-se-podnetem-obraci-na-instituce-eu-v-souvislosti-se-stretem-zajmu-andreje-babise/"
-published = "2026-06-03"
-retrieved = "2026-07-30"
-claims = ["CLM-31", "CLM-32"]
 +++
 **Transparency se podnětem obrací na instituce EU v souvislosti se střetem zájmů Andreje Babiše**
 

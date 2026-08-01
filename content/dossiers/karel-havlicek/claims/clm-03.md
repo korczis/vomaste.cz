@@ -13,10 +13,5 @@ dossier = "karel-havlicek"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-03"
-status = "status-quote"
-status_label = "CITACE"
-summary = "Havlíček v prosinci 2019 odmítl závěr auditu Evropské komise, že je premiér Babiš ve střetu zájmů („V tom s vámi úplně nesouhlasím“), a odkazoval na rozdíl mezi českým a evropským právem."
-sources = ["SRC-03"]
-subjects = ["havlicek"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/karel-havlicek/_index.md#registr-tvrzeni).

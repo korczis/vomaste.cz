@@ -14,6 +14,7 @@
   "subject": "bartha",
   "language": "cs",
   "navigationVisible": true,
+  "order": 20,
   "updated": "2026-08-01",
   "reviewedAt": "2026-08-01",
   "authorization": {
@@ -23,6 +24,115 @@
   },
   "seo": {
     "seoType": "ProfilePage"
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "bartha",
+        "label": "Tünde Bartha",
+        "subject": true,
+        "claims": [
+          "CLM-07",
+          "CLM-08"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-04"
+        ]
+      },
+      {
+        "entity": "vlada",
+        "label": "Úřad vlády ČR",
+        "claims": [
+          "CLM-07",
+          "CLM-08"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-04"
+        ]
+      },
+      {
+        "entity": "agrofert",
+        "label": "Agrofert",
+        "claims": [
+          "CLM-06"
+        ],
+        "sources": [
+          "SRC-03"
+        ]
+      },
+      {
+        "entity": "praha3",
+        "label": "Městská část Praha 3",
+        "claims": [
+          "CLM-01",
+          "CLM-02",
+          "CLM-03",
+          "CLM-04"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      },
+      {
+        "entity": "imoba",
+        "label": "Imoba",
+        "claims": [
+          "CLM-05"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      },
+      {
+        "entity": "babis",
+        "label": "Andrej Babiš",
+        "claims": [
+          "CLM-05",
+          "CLM-10"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02",
+          "SRC-07"
+        ]
+      },
+      {
+        "entity": "kampan-babis-2023",
+        "label": "Prezidentská kampaň Andreje Babiše (2022–2023)",
+        "claims": [
+          "CLM-10",
+          "CLM-11"
+        ],
+        "sources": [
+          "SRC-07"
+        ]
+      },
+      {
+        "entity": "agrofert-hungaria",
+        "label": "AGROFERT Hungária",
+        "claims": [
+          "CLM-13"
+        ],
+        "sources": [
+          "SRC-09"
+        ]
+      }
+    ],
+    "edges": [
+      "edge-bartha-vlada",
+      "edge-bartha-agrofert",
+      "edge-bartha-kampan",
+      "edge-kampan-babis",
+      "edge-agrofert-hungaria",
+      "edge-bartha-agrofert-hungaria",
+      "edge-bartha-praha3",
+      "edge-bartha-imoba",
+      "edge-imoba-babis"
+    ]
   },
   "contentBlocks": [
     {

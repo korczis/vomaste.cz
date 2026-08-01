@@ -13,10 +13,5 @@ dossier = "tunde-bartha"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-03"
-status = "status-corroborated"
-status_label = "CORROBORATED"
-summary = "Advokátní kancelář Šenkýř Pánik podle citovaného zpravodajství dospěla k závěru, že výpověď vyžaduje prokázat, že nájemci v bytě fakticky a trvale nebydlí, a že dosavadní důkazy k úspěchu u soudu nestačí"
-sources = ["SRC-02", "SRC-05"]
-subjects = ["bartha"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/tunde-bartha/_index.md#registr-tvrzeni).

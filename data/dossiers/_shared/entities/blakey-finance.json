@@ -20,6 +20,20 @@
     "/dossiers/andrej-babis/entities/blakey-finance/"
   ],
   "order": 13,
+  "provenance": {
+    "discoveredAt": "2026-07-30",
+    "discoveredVia": [
+      "edge-babis-blakey",
+      "edge-blakey-boyne"
+    ],
+    "claimRefs": [
+      "CLM-31"
+    ],
+    "sourceRefs": [
+      "SRC-13"
+    ],
+    "depth": 1
+  },
   "content": [
     {
       "type": "markdown",

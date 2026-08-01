@@ -9,14 +9,10 @@ weight = 14
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/zuzana-mrazova/gaps/GAP-14"
 view_model = "generated/views/dossiers/zuzana-mrazova/gaps/gap-14.json"
-subjects = ["mrazova"]
 dossier = "zuzana-mrazova"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-14"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 U tvrzení o přestěhování do jiného městského bytu na tomtéž náměstí nelze vyloučit, že jde o převzatou (syndikovanou) reprodukci téhož původního zjištění Seznam Zpráv.
 

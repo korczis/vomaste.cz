@@ -9,17 +9,10 @@ weight = 19
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-19"
 view_model = "generated/views/dossiers/robert-plaga/sources/src-19.json"
-subjects = ["plaga"]
 dossier = "robert-plaga"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-19"
-outlet = "Advokátní deník"
-src_type = "zpravodajství"
-url = "https://advokatnidenik.cz/2026/07/21/zakaz-mobilu-ve-skolach-podle-ocekavani-vlada-podporila/"
-published = "2026-07-21"
-retrieved = "2026-07-30"
-claims = ["CLM-36", "CLM-37", "CLM-38", "CLM-42"]
 +++
 **Zákaz mobilů ve školách podle očekávání vláda podpořila**
 

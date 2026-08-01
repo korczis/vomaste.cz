@@ -10,17 +10,10 @@ aliases = ["/dossier/zdroje/src-09/"]
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-09"
 view_model = "generated/views/dossiers/macinka-turek/sources/src-09.json"
-subjects = ["macinka", "turek"]
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-09"
-outlet = "HlídacíPes.org"
-src_type = "komentář / názor"
-url = "https://hlidacipes.org/ales-rozehnal-macinka-a-turek-si-hraji-na-mazaky-ceka-je-navrat-k-bezvyznamnosti/"
-published = "2026-04-13"
-retrieved = "2026-07-21"
-claims = []
 +++
 HlídacíPes.org je nezisková investigativní/komentářová platforma. Tento
 konkrétní text je podepsaný autorský komentář Aleše Rozehnala, ne

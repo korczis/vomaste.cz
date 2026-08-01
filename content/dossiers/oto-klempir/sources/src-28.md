@@ -9,17 +9,10 @@ weight = 28
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-28"
 view_model = "generated/views/dossiers/oto-klempir/sources/src-28.json"
-subjects = ["klempir"]
 dossier = "oto-klempir"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-28"
-outlet = "Novinky.cz"
-src_type = "zpravodajství"
-url = "https://www.novinky.cz/clanek/domaci-zpravy-jihomoravsky-kraj-klempire-ve-straznici-hlasite-vypiskali-40585336"
-published = "2026-06-27"
-retrieved = "2026-07-31"
-claims = ["CLM-43"]
 +++
 Novinky.cz dne 27. 6. 2026: „Návštěvníci Mezinárodního folklorního
 festivalu ve Strážnici v pátek vypískali ministra kultury Otu

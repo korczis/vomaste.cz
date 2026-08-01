@@ -9,17 +9,10 @@ weight = 12
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-12"
 view_model = "generated/views/dossiers/alena-schillerova/sources/src-12.json"
-subjects = ["schillerova"]
 dossier = "alena-schillerova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-12"
-outlet = "Týden.cz"
-src_type = "zpravodajství"
-url = "https://www.tyden.cz/schillerova-vs-opozice-rozpoctova-odpovednost-nebo-system-vyjimek-a-triku"
-published = "2026-05-06"
-retrieved = "2026-07-30"
-claims = ["CLM-35", "CLM-36"]
 +++
 **Schillerová vs. opozice: Rozpočtová odpovědnost, nebo systém výjimek a triků**
 

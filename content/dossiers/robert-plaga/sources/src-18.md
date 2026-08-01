@@ -9,17 +9,10 @@ weight = 18
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-18"
 view_model = "generated/views/dossiers/robert-plaga/sources/src-18.json"
-subjects = ["plaga"]
 dossier = "robert-plaga"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-18"
-outlet = "Česká justice"
-src_type = "zpravodajství"
-url = "https://www.ceska-justice.cz/2026/07/babis-oznamil-zakaz-mobilu-ve-skolach-plaga-tam-posila-ombudsmana/"
-published = "2026-07-20"
-retrieved = "2026-07-30"
-claims = ["CLM-40", "CLM-41"]
 +++
 **Babiš oznámil zákaz mobilů ve školách, Plaga tam posílá ombudsmana**
 

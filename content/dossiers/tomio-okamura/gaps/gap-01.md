@@ -9,14 +9,10 @@ weight = 1
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/tomio-okamura/gaps/GAP-01"
 view_model = "generated/views/dossiers/tomio-okamura/gaps/gap-01.json"
-subjects = ["okamura"]
 dossier = "tomio-okamura"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-01"
-priority = "vysoká"
-checked = "2026-07-30"
-claims = ["CLM-01", "CLM-03"]
 +++
 Rozsudek OS pro Prahu 1 z 3. 6. 2026 není pravomocný a SPD oznámila
 odvolání ([SRC-01](@/dossiers/tomio-okamura/sources/src-01.md)). Ve

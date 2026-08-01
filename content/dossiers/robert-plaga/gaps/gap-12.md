@@ -9,14 +9,10 @@ weight = 12
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/robert-plaga/gaps/GAP-12"
 view_model = "generated/views/dossiers/robert-plaga/gaps/gap-12.json"
-subjects = ["plaga"]
 dossier = "robert-plaga"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-12"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Rešerše probíhala bez plnohodnotného vyhledávače.
 

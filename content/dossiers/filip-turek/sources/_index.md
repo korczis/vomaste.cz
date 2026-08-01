@@ -10,10 +10,6 @@ view_model = "generated/views/dossiers/filip-turek/sources-index.json"
 dossier = "filip-turek"
 lang = "cs"
 seo_type = "CollectionPage"
-dossier_title = "Filip Turek"
-canonical_dossier = "macinka-turek"
-subject = "turek"
-registry = "sources"
 +++
 Filtrovaný pohled na [registr zdrojů](@/dossiers/macinka-turek/sources/_index.md) — jen zdroje relevantní k Filipu Turkovi.
 

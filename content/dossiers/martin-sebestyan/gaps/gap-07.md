@@ -9,14 +9,10 @@ weight = 7
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/martin-sebestyan/gaps/GAP-07"
 view_model = "generated/views/dossiers/martin-sebestyan/gaps/gap-07.json"
-subjects = ["sebestyan"]
 dossier = "martin-sebestyan"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-07"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Nepodařilo se ověřit, zda SZIF po květnu 2026 formálně zahájil správní řízení o vrácení dotací vůči konkrétním společnostem z Agrofertu.
 

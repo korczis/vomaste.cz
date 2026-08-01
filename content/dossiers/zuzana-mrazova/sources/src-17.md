@@ -9,17 +9,10 @@ weight = 17
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-17"
 view_model = "generated/views/dossiers/zuzana-mrazova/sources/src-17.json"
-subjects = ["mrazova"]
 dossier = "zuzana-mrazova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-17"
-outlet = "Novinky.cz"
-src_type = "zpravodajství"
-url = "https://www.novinky.cz/clanek/domaci-zpravy-ustecky-kraj-cerne-stavby-na-pozemku-ministryne-mrazove-bude-resit-mistni-stavebni-urad-40576257"
-published = "2026-05-02"
-retrieved = "2026-07-30"
-claims = ["CLM-41"]
 +++
 **Černé stavby na pozemku ministryně Mrázové bude řešit místní stavební úřad, ujišťuje starosta**
 

@@ -9,17 +9,10 @@ weight = 5
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-05"
 view_model = "generated/views/dossiers/oto-klempir/sources/src-05.json"
-subjects = ["klempir"]
 dossier = "oto-klempir"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-05"
-outlet = "HlídacíPes.org"
-src_type = "zpravodajství"
-url = "https://hlidacipes.org/je-to-nezakonne-vime-to-ale-nic-delat-nemuzeme-podepsal-novy-ministr-klempir/"
-published = "2026-03-25"
-retrieved = "2026-07-30"
-claims = ["CLM-35"]
 +++
 **„Je to nezákonné, víme to, ale nic dělat nemůžeme, podepsal nový ministr Klempíř“**
 

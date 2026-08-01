@@ -20,6 +20,20 @@
     "/dossiers/andrej-babis/entities/mpo/"
   ],
   "order": 23,
+  "provenance": {
+    "discoveredAt": "2026-08-01",
+    "discoveredVia": [
+      "edge-pekarna-mpo"
+    ],
+    "claimRefs": [
+      "CLM-55"
+    ],
+    "sourceRefs": [
+      "SRC-36",
+      "SRC-37"
+    ],
+    "depth": 2
+  },
   "content": [
     {
       "type": "markdown",

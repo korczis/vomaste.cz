@@ -22,12 +22,25 @@ import { writeFileSync, mkdirSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { buildRecordTables, enrichDossiersForDirectory } from "./lib/record-tables.mjs";
+import { validateExportRows } from "./lib/export-schemas.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const OUT_DIR = join(ROOT, "static/data");
 mkdirSync(OUT_DIR, { recursive: true });
 
 const rows = buildRecordTables(ROOT);
+
+// Schema brána exportního kontraktu (T-028 fáze H — dřívější
+// validate:schemas): žádný řádek, který neodpovídá schemas/*.schema.json,
+// se nesmí zapsat do veřejného exportu.
+{
+  const schemaErrors = validateExportRows(ROOT, rows);
+  if (schemaErrors.length) {
+    console.error(`build-data-exports: ${schemaErrors.length} schema error(s):`);
+    for (const e of schemaErrors) console.error(`  ERROR ${e}`);
+    process.exit(1);
+  }
+}
 // Adresář potřebuje počty, popis a routy; ty ale existují až po
 // generátorech, takže se přidávají tady, ne do kanonických řádků.
 rows.dossiers = enrichDossiersForDirectory(ROOT, rows.dossiers);

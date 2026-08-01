@@ -55,6 +55,7 @@
     "sourceFamily": "vomaste:sourceFamily",
     "citationFingerprint": "vomaste:citationFingerprint",
 
+    "note": "vomaste:note",
     "relationId": "vomaste:relationId",
     "relationType": "vomaste:relationType",
     "sourceEntity": { "@id": "vomaste:from", "@type": "@id" },
@@ -72,6 +73,7 @@
     "dossiers": { "@id": "vomaste:inDossier", "@container": "@set" },
     "externalIds": { "@id": "vomaste:externalIds", "@type": "@json" },
     "routeAliases": { "@id": "vomaste:routeAliases", "@container": "@set" },
+    "provenance": { "@id": "vomaste:provenance", "@type": "@json" },
 
     "slug": "vomaste:slug",
     "dossierType": "vomaste:dossierType",
@@ -82,6 +84,7 @@
     "navigationVisible": "vomaste:navigationVisible",
     "aggregates": { "@id": "vomaste:aggregates", "@container": "@set" },
     "authorization": { "@id": "vomaste:authorization", "@type": "@json" },
+    "graph": { "@id": "vomaste:graphCuration", "@type": "@json" },
     "seo": { "@id": "vomaste:seo", "@type": "@json" },
     "priority": "vomaste:priority",
 

@@ -9,17 +9,10 @@ weight = 5
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-05"
 view_model = "generated/views/dossiers/karel-havlicek/sources/src-05.json"
-subjects = ["havlicek"]
 dossier = "karel-havlicek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-05"
-outlet = "FORUM 24"
-src_type = "komentář/názor"
-url = "https://www.forum24.cz/jsou-v-tom-namoceni-babis-i-karel-havlicek-hedvabny-toustovy-podvod-zatim-odnaseji-male-ryby"
-published = "2026-06-23"
-retrieved = "2026-07-30"
-claims = ["CLM-08", "CLM-09"]
 +++
 **„Babiš i Karel Havlíček jsou v tom namočení.“ Hedvábný toustový podvod zatím odnášejí malé ryby**
 

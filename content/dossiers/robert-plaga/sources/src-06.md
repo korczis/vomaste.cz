@@ -9,17 +9,10 @@ weight = 6
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-06"
 view_model = "generated/views/dossiers/robert-plaga/sources/src-06.json"
-subjects = ["plaga"]
 dossier = "robert-plaga"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-06"
-outlet = "zdravezpravy.cz"
-src_type = "zpravodajství"
-url = "https://www.zdravezpravy.cz/2026/07/20/ministr-plaga-na-vode-v-breznu-zakaz-mobilu-na-skolach-odsoudil-ted-ho-navrhl/"
-published = "2026-07-20"
-retrieved = "2026-07-30"
-claims = ["CLM-11", "CLM-13", "CLM-15"]
 +++
 **Ministr Plaga v březnu zákaz mobilů na školách odsoudil, teď ho navrhl**
 

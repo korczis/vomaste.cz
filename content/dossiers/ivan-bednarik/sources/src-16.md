@@ -9,17 +9,10 @@ weight = 16
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-16"
 view_model = "generated/views/dossiers/ivan-bednarik/sources/src-16.json"
-subjects = ["bednarik"]
 dossier = "ivan-bednarik"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-16"
-outlet = "Deník VEKTOR"
-src_type = "zpravodajství"
-url = "https://www.denikvektor.cz/nazory-a-rozhovory/bednarik-mluvil-o-rozpoctovem-soku-tohle-je-darek-ktery-nechcete-3580.html"
-published = "2025-12-02"
-retrieved = "2026-07-30"
-claims = ["CLM-16", "CLM-17"]
 +++
 **Bednárik mluvil o rozpočtovém šoku: Tohle je dárek, který nechcete**
 

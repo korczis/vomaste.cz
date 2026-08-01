@@ -20,5 +20,20 @@
   "routeAliases": [
     "/dossiers/macinka-turek/entities/kauza2025/"
   ],
-  "order": 10
+  "order": 10,
+  "provenance": {
+    "discoveredAt": "2026-07-29",
+    "discoveredVia": [
+      "edge-turek-kauza2025",
+      "edge-kauza2025-policie"
+    ],
+    "claimRefs": [
+      "CLM-07"
+    ],
+    "sourceRefs": [
+      "SRC-15"
+    ],
+    "cluster": "smazane-prispevky",
+    "depth": 1
+  }
 }

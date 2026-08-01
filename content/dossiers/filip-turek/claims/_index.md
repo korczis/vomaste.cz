@@ -10,10 +10,6 @@ view_model = "generated/views/dossiers/filip-turek/claims-index.json"
 dossier = "filip-turek"
 lang = "cs"
 seo_type = "CollectionPage"
-dossier_title = "Filip Turek"
-canonical_dossier = "macinka-turek"
-subject = "turek"
-registry = "claims"
 +++
 Filtrovaný pohled na [registr tvrzení](@/dossiers/macinka-turek/claims/_index.md) — jen záznamy, které se týkají Filipa Turka (samostatně nebo společně s Petrem Macinkou).
 

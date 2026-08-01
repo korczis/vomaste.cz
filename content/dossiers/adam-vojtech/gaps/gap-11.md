@@ -9,14 +9,10 @@ weight = 11
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/adam-vojtech/gaps/GAP-11"
 view_model = "generated/views/dossiers/adam-vojtech/gaps/gap-11.json"
-subjects = ["vojtech"]
 dossier = "adam-vojtech"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-11"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Nebyly zpracovány resortní kroky mimo tři autorizovaná témata (úhradová vyhláška 2027, dohodovací řízení, elektronizace zdravotnictví a kompetenční centrum ve FN Olomouc).
 

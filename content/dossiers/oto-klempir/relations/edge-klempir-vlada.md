@@ -10,13 +10,7 @@ record_id = "https://vomaste.cz/id/dossiers/oto-klempir/relations/edge-klempir-v
 view_model = "generated/views/dossiers/oto-klempir/relations/edge-klempir-vlada.json"
 dossier = "oto-klempir"
 record_type = "relation"
+lang = "cs"
 rel_id = "edge-klempir-vlada"
-source = "klempir"
-target = "vlada"
-relation_type = "HOLDS_ROLE"
-label = "ministr kultury"
-status = "contextual"
-claims = ["CLM-01"]
-sources = ["SRC-01"]
 +++
 Kontextový, strukturální vztah — dossier jej neuvádí jako vlastní doloženou investigaci, jen jako veřejně nesporné pozadí.

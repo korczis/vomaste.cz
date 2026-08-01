@@ -9,17 +9,10 @@ weight = 16
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-16"
 view_model = "generated/views/dossiers/tomio-okamura/sources/src-16.json"
-subjects = ["okamura"]
 dossier = "tomio-okamura"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-16"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/statni-zastupce-podal-obzalobu-na-okamuru-a-spd-za-podnecovani-k-nenavisti-363800"
-published = "2025-08-07"
-retrieved = "2026-07-30"
-claims = ["CLM-21", "CLM-22", "CLM-23", "CLM-24"]
 +++
 **Státní zástupce podal obžalobu na Okamuru a SPD za podněcování k nenávisti**
 

@@ -9,62 +9,12 @@ generated = true
 record_id = "https://vomaste.cz/id/dossiers/jaroslav-faltynek"
 view_model = "generated/views/dossiers/jaroslav-faltynek/overview.json"
 dossier = "jaroslav-faltynek"
-dossier_title = "Jaroslav Faltýnek"
 record_type = "dossier"
 dossier_type = "entity"
-canonical_dossier = "jaroslav-faltynek"
-subject = "faltynek"
 lang = "cs"
 seo_type = "ProfilePage"
 updated = "2026-07-30"
 reviewed_at = "2026-07-30"
-subject_entities = ["faltynek"]
-subjects = ["Jaroslav Faltýnek"]
-
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-V"]
-
-[[extra.timeline]]
-date = "2018-05-03"
-title = "Státní zástupce zrušil trestní stíhání Jaroslava Faltýnka v kauze Čapí hnízdo; stíhání Andreje Babiše pokračovalo"
-anchor = "kauza-zrusene-stihani"
-dot = "dot-fact"
-subjects = ["faltynek"]
-
-[[extra.timeline]]
-date = "2022-09-14"
-title = "Vypovídal u soudu v kauze Čapí hnízdo jako svědek ve prospěch obžalovaného"
-anchor = "kauza-svedecka-vypoved"
-dot = "dot-fact"
-subjects = ["faltynek"]
-
-[[extra.timeline]]
-date = "2025-10-08"
-title = "Místopředsedou poslaneckého klubu ANO 2011 (poslanecký mandát od 4. 10. 2025)"
-anchor = "kauza-zrusene-stihani"
-dot = "dot-fact"
-subjects = ["faltynek"]
-
-[[extra.cases]]
-anchor = "kauza-zrusene-stihani"
-period = "2018"
-title = "Zrušené trestní stíhání v kauze Čapí hnízdo"
-status = "status-single"
-label = "Stíhání zrušeno 2018"
-summary = "Státní zástupce v květnu 2018 zrušil trestní stíhání Jaroslava Faltýnka poté, co vyhověl jeho stížnosti proti obvinění. Rozhodl státní zástupce, ne soud — nejde o rozhodnutí o vině ani o nevině. Faltýnek nebyl odsouzen a před soud jako obžalovaný nešel."
-claims = ["CLM-02", "CLM-03", "CLM-04"]
-subjects = ["faltynek"]
-
-[[extra.cases]]
-anchor = "kauza-svedecka-vypoved"
-period = "2022"
-title = "Svědecká výpověď u soudu s Andrejem Babišem"
-status = "status-quote"
-label = "Svědek, ne obžalovaný"
-summary = "V září 2022 vypovídal u soudu jako svědek ve prospěch obžalovaného. Doloženo je, že dané výroky u soudu učinil — nikoli že jejich obsah platí."
-claims = ["CLM-05", "CLM-06", "CLM-07", "CLM-08"]
-subjects = ["faltynek"]
 +++
 ## Kdo je Jaroslav Faltýnek {#kdo}
 

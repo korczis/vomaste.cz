@@ -9,17 +9,10 @@ weight = 27
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-27"
 view_model = "generated/views/dossiers/ivan-bednarik/sources/src-27.json"
-subjects = ["bednarik"]
 dossier = "ivan-bednarik"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-27"
-outlet = "MHD86"
-src_type = "zpravodajství"
-url = "https://mhd86.cz/2026/04/22/co-zaznelo-na-diskusnim-foru-acri-o-budoucnosti-ceske-zeleznice/"
-published = "2026-04-22"
-retrieved = "2026-07-30"
-claims = ["CLM-37", "CLM-38"]
 +++
 **Co zaznělo na Diskusním fóru ACRI o budoucnosti české železnice**
 

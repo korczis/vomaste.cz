@@ -9,17 +9,10 @@ weight = 9
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-09"
 view_model = "generated/views/dossiers/igor-cerveny/sources/src-09.json"
-subjects = ["cerveny"]
 dossier = "igor-cerveny"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-09"
-outlet = "Blesk.cz"
-src_type = "zpravodajství"
-url = "https://www.blesk.cz/clanek/zpravy-politika/836848/ministr-cerveny-pro-blesk-nejsem-zadna-figurka-proc-turkovi-nechal-kancelar.html"
-published = "2026-04-08"
-retrieved = "2026-07-30"
-claims = ["CLM-12", "CLM-13"]
 +++
 **Ministr Červený pro Blesk: Nejsem žádná figurka! Proč Turkovi nechal kancelář?**
 

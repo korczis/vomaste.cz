@@ -9,14 +9,10 @@ weight = 5
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ivan-bednarik/gaps/GAP-05"
 view_model = "generated/views/dossiers/ivan-bednarik/gaps/gap-05.json"
-subjects = ["bednarik"]
 dossier = "ivan-bednarik"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-05"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Podrobnosti o rezignaci z pohledu portálu Zdopravy.cz, včetně jeho formulace o nejistotě kolem převodu pozemků, nebyly ověřeny.
 

@@ -9,14 +9,10 @@ weight = 14
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/igor-cerveny/gaps/GAP-14"
 view_model = "generated/views/dossiers/igor-cerveny/gaps/gap-14.json"
-subjects = ["cerveny"]
 dossier = "igor-cerveny"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-14"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Rešerše nebyla vyčerpávající — vyhledávací rozpočet relace byl vyčerpán po dvou dotazech, další zdroje byly dohledávány přes indexové a vyhledávací stránky.
 

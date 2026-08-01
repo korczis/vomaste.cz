@@ -9,17 +9,10 @@ weight = 18
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-18"
 view_model = "generated/views/dossiers/zuzana-mrazova/sources/src-18.json"
-subjects = ["mrazova"]
 dossier = "zuzana-mrazova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-18"
-outlet = "Advokátní deník"
-src_type = "zpravodajství"
-url = "https://advokatnidenik.cz/2026/07/13/snemovna-schvalila-stavebni-novelu-se-vznikem-statnich-stavebnich-uradu/"
-published = "2026-07-13"
-retrieved = "2026-07-30"
-claims = ["CLM-47", "CLM-48", "CLM-49"]
 +++
 **Sněmovna schválila stavební novelu se vznikem státních stavebních úřadů**
 

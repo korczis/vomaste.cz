@@ -9,17 +9,10 @@ weight = 4
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-04"
 view_model = "generated/views/dossiers/ivan-bednarik/sources/src-04.json"
-subjects = ["bednarik"]
 dossier = "ivan-bednarik"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-04"
-outlet = "Echo24"
-src_type = "zpravodajství"
-url = "https://www.echo24.cz/a/HYedp/zpravy-ekonomika-vysokorychlostni-trate-100-miliard-deficit-navic-zavrit-nemocnice"
-published = "2026-02-24"
-retrieved = "2026-07-30"
-claims = ["CLM-07", "CLM-08"]
 +++
 **Vysokorychlostní tratě = 100 miliard ročně do dluhu. To máme zavřít nemocnice? ptá se Bednárik**
 

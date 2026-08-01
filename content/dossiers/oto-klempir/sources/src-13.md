@@ -9,17 +9,10 @@ weight = 13
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-13"
 view_model = "generated/views/dossiers/oto-klempir/sources/src-13.json"
-subjects = ["klempir"]
 dossier = "oto-klempir"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-13"
-outlet = "FORUM 24"
-src_type = "zpravodajství"
-url = "https://www.forum24.cz/milion-chvilek-donesl-vlade-180-tisic-podpisu-proti-klempirovu-zakonu"
-published = "2026-05-24"
-retrieved = "2026-07-30"
-claims = ["CLM-18", "CLM-19"]
 +++
 **Milion chvilek donesl vládě 180 tisíc podpisů proti Klempířovu zákonu**
 

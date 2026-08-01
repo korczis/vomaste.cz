@@ -9,14 +9,10 @@ weight = 2
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/adam-vojtech/gaps/GAP-02"
 view_model = "generated/views/dossiers/adam-vojtech/gaps/gap-02.json"
-subjects = ["vojtech"]
 dossier = "adam-vojtech"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-02"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Částka „14 miliard“ pro Babišovy kliniky (Neovlivní.cz) není ověřena do hloubky.
 

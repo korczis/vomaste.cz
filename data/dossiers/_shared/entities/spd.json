@@ -20,6 +20,20 @@
     "/dossiers/tomio-okamura/entities/spd/"
   ],
   "order": 2,
+  "provenance": {
+    "discoveredAt": "2026-07-30",
+    "discoveredVia": [
+      "edge-okamura-spd"
+    ],
+    "claimRefs": [
+      "CLM-01",
+      "CLM-02"
+    ],
+    "sourceRefs": [
+      "SRC-01"
+    ],
+    "depth": 1
+  },
   "content": [
     {
       "type": "markdown",

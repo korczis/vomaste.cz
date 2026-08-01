@@ -9,14 +9,10 @@ weight = 10
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ales-juchelka/gaps/GAP-10"
 view_model = "generated/views/dossiers/ales-juchelka/gaps/gap-10.json"
-subjects = ["juchelka"]
 dossier = "ales-juchelka"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-10"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Nedohledáno sněmovní projednávání kauzy Semancové (interpelace, mimořádná schůze, jednání sociálního výboru).
 

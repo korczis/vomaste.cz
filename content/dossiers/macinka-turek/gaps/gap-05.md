@@ -10,14 +10,10 @@ aliases = ["/dossier/mezery/gap-05/"]
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/macinka-turek/gaps/GAP-05"
 view_model = "generated/views/dossiers/macinka-turek/gaps/gap-05.json"
-subjects = ["macinka", "turek"]
 dossier = "macinka-turek"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-05"
-priority = "nízká"
-checked = "2026-07-23"
-claims = ["CLM-21", "CLM-23", "CLM-35", "CLM-36", "CLM-37"]
 +++
 Osobní a firemní dary z let 2017–2024 i oficiální přehledy dárců
 kampaně do Poslanecké sněmovny 2025 (UDHPSH) jsou zdokumentovány (CLM-21,

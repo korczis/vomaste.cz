@@ -3,11 +3,11 @@
 - **Stav**: accepted (mise T-028, vlastník zadal 2026-08-01)
 - **Kontext úlohy**: docs/coop/TASKS.md T-028; baseline
   docs/migrations/json-first-baseline.md
-- **Fáze**: A (baseline) a B (schémata + context) hotové; C (kompilátor),
-  D (lossless migrátor) v implementaci; E–J (adaptéry, view modely,
-  přepojení generátorů, odstranění starých zdrojů pravdy, tooling,
-  finální parity gate) navazují. Tento dokument se po každé fázi
-  aktualizuje — sekce „Stav implementace" na konci.
+- **Fáze**: A–H hotové (baseline, schémata + context, kompilátor,
+  lossless migrátor, adaptéry, view modely, přepojení generátorů,
+  ODSTRANĚNÍ STARÝCH ZDROJŮ PRAVDY); I–J (tooling, finální parity gate)
+  navazují. Tento dokument se po každé fázi aktualizuje — sekce „Stav
+  implementace" na konci.
 
 ## Rozhodnutí
 
@@ -119,4 +119,5 @@ JS ani ručního seznamu slugů.
 | E — view modely + content adaptéry (staging) | hotovo | scripts/data/{build-view-models,generate-zola-content,check-generated}.mjs; 1 938 view modelů, 1 936 stubů, route parity 0/0, alias parity 179/179, determinismus ověřen; timeline (225 entries) doplněna do dossier.json |
 | G — přepojení build generátorů na compiled model | hotovo (v pracovním stromu) | record-tables.mjs = tenká projekce nad compiled modelem (API beze změny); generate-stats, build-route-manifest, build-data-exports, build-search-index, build-jsonld-exports, build-graph-projections (hrany z compiled relations, uzly/pořadí z graph.toml s mirror gatem), build-navigation, build-entity-type-sections přepnuty; schémata source/dossier aditivně rozšířena o `description`/`reviewedAt` (+ context v1 term `reviewedAt`, migrátor, 535 kanonických souborů); `scripts/build/pipeline.mjs` (build\|dev\|check) je jediný orchestrační entrypoint s `data:validate` bránou; generate-authorization-candidates + generate-discovery-log zůstávají na front matter (provenienční pole entit mimo model v1 — inventář, rozhodnutí fáze H); koncepty-subtree navigace mimo kanonický model (dokumentovaná výjimka) |
 | F — šablony na view modelech + content swap | hotovo (v pracovním stromu) | content/dossiers/** a content/entities/*.md jsou GENEROVANÉ adaptéry (`data:sync-content` kopíruje staging → content, gate `data:check-generated --content` vynucuje content == staging; kořenové `dossiers/_index.md` a `entities/_index.md` zůstávají ruční — SYNC_EXCLUDED). Adaptéry jsou plnohodnotná regenerace dnešních souborů: doménová pole DERIVOVANÁ z kanonického modelu (inverze migrátoru), pole mimo model v1 passthrough (aliasy, entity provenience, redakční těla registry indexů, prezentační tituly). Tělo záznamu nese adaptér (kanonický markdown blok) — runtime `markdown()` filtr neresolvuje @/ odkazy, proto tělo renderuje Zola standardně a {#kotvy} vznikají beze změny (verify:anchors kontrakt drží). Šablony (claim/source/case/gap/relation/entity, 5 registry indexů, entity-dossier-registry, dossier/entity-dossier overview, entities-index, dossiers-index, landing demo bloky, jsonld partial pro Claim/citation uzly) čtou `load_data("data/" ~ extra.view_model)`. Aditivní schémata: relation.order + entity.order (redakční pořadí — bez něj view modely nereprodukují dnešní pořadí výpisů; hodnoty entity order obnoveny z původních weight v commitu 55562e0). Parita: public/ byte-identický s HEAD renderem (2 203 HTML) kromě 22 evidence stránek (whitespace-only) a graph manifest generated_at; Playwright 195 passed/17 skipped beze změny |
-| H–J | čeká | — |
+| H — odstranění starých zdrojů pravdy | hotovo (v pracovním stromu) | Jediný kanonický vstup = data/dossiers/**/*.json. SMAZÁNO: data/dossiers.toml (registr = kanonický dataset, pořadí nese aditivní dossier.order), data/dossiers/*/graph.toml (kurátorovaná vrstva → dossier.json `graph` + relation.note; depth se POČÍTÁ BFS — scripts/data/lib/graph-depth.mjs), data/dossiers/*/updates.toml (šablony čtou view modely), stats.toml (generátor zrušen, počty ve view modelech/readDossierStats). Provenience entit → entity.provenance (+ entity.description); government_* vlastní data/government.toml. Zrušené validátory s předaným vlastnictvím pravidel: validate-dossier → validate-registry-table T1–T8; validate-graph → R7 (validate-references) + S7/S8 (validate-semantics) + dossier.schema `graph`; validate-schemas → schema brána v build:data-exports (lib/export-schemas). Content adaptéry = minimální obálka (lint-generated-content vynucuje, lint-hardcoded-records rozšířen o slug literály a hardcoded počty). Jednorázové migrátory + scaffold archivovány (scripts/migrations/archive/, README tamtéž); parity testy migrace nahrazeny golden testy compiled modelu (scripts/data/compiled-golden.test.mjs). HTML výstup byte-identický (2 258 souborů, žádná výjimka), plný build zelený. |
+| I–J | čeká | — |

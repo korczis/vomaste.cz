@@ -12,13 +12,15 @@
  * definuje jako data; `npm run build` na něj jen deleguje, takže CI
  * (deploy.yml přes check-workflow-parity.mjs) dál volá jediný vstup.
  *
- * Kanonická brána: KAŽDÝ režim začíná `data:validate` — od fáze G jsou
- * build generátory napojené na compiled kanonický dataset
- * (data/dossiers/**), takže nevalidní kanonická data musí zastavit
- * pipeline dřív, než cokoli vygenerují. Validátory obsahové vrstvy
- * (validate:dossier, validate:schemas, validate:graph, …) BĚŽÍ DÁL —
- * do fáze H jedou oba toky souběžně jako dvojitá pojistka a musí
- * souhlasit.
+ * Kanonická brána: KAŽDÝ režim začíná `data:validate` — build generátory
+ * čtou výhradně compiled kanonický dataset (data/dossiers/**), takže
+ * nevalidní kanonická data musí zastavit pipeline dřív, než cokoli
+ * vygenerují. Od fáze H (T-028) je kanonický dataset JEDINÝ zdroj
+ * pravdy: dřívější validátory obsahové vrstvy (validate:dossier,
+ * validate:schemas, validate:graph) zanikly — jejich pravidla vlastní
+ * kanonické validátory (validate-references R1–R7, validate-semantics
+ * S1–S8, validate-registry-table T1–T8, schemas/canonical/) a schema
+ * brána exportů žije přímo v build:data-exports.
  *
  * Kroky se spouštějí přes `npm run <script>`, aby definice příkazů
  * zůstala na jednom místě (package.json) a pipeline jen skládala pořadí.
@@ -47,9 +49,6 @@ const BUILD_STEPS = [
   "data:sync-content",
   "test",
   "build:government-roster",
-  "validate:dossier",
-  "validate:schemas",
-  "validate:graph",
   "validate:authorization",
   "verify:authorization-log",
   "validate:dossier-types",
@@ -65,7 +64,7 @@ const BUILD_STEPS = [
   "validate:entity-types",
   "lint:component-reuse",
   "lint:hardcoded-records",
-  "generate:stats",
+  "lint:generated-content",
   "build:data-exports",
   "build:graph-projections",
   "validate:graph-projections",
@@ -94,15 +93,12 @@ const DEV_STEPS = [
   "data:views",
   "data:generate-content",
   "data:sync-content",
-  "validate:schemas",
-  "validate:graph",
   "validate:authorization",
   "validate:dossier-types",
   "build:entity-type-sections",
   "build:routes",
   "build:navigation",
   "validate:navigation",
-  "generate:stats",
   "build:data-exports",
   "build:graph-projections",
   "validate:graph-projections",
@@ -123,9 +119,6 @@ const DEV_STEPS = [
 // data/generated/).
 const CHECK_STEPS = [
   "data:validate",
-  "validate:dossier",
-  "validate:schemas",
-  "validate:graph",
   "validate:authorization",
   "verify:authorization-log",
   "validate:dossier-types",
@@ -133,6 +126,7 @@ const CHECK_STEPS = [
   "validate:entity-types",
   "lint:component-reuse",
   "lint:hardcoded-records",
+  "lint:generated-content",
   "lint:source-outlets",
   "check:workflow-parity",
 ];

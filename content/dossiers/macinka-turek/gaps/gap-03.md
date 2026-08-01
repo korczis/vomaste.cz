@@ -10,14 +10,10 @@ aliases = ["/dossier/mezery/gap-03/"]
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/macinka-turek/gaps/GAP-03"
 view_model = "generated/views/dossiers/macinka-turek/gaps/gap-03.json"
-subjects = ["turek"]
 dossier = "macinka-turek"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-03"
-priority = "vysoká"
-checked = "2026-07-31"
-claims = ["CLM-07", "CLM-08", "CLM-09", "CLM-19", "CLM-41", "CLM-42", "CLM-49"]
 +++
 V říjnu 2025 zveřejnil Deník N printscreeny příspěvků z let přibližně
 2010–2014 připisovaných Filipu Turkovi s rasistickým, sexistickým a

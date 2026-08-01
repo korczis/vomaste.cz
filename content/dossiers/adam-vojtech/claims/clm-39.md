@@ -13,10 +13,5 @@ dossier = "adam-vojtech"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-39"
-status = "status-single"
-status_label = "1 ZDROJ"
-summary = "Poslanec ODS Vojtěch Munzar podal při projednávání novely návrh na její zamítnutí."
-sources = ["SRC-21"]
-subjects = ["vojtech"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/adam-vojtech/_index.md#registr-tvrzeni).

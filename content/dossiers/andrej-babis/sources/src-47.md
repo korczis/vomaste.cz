@@ -9,17 +9,10 @@ weight = 47
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-47"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-47.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-47"
-outlet = "Echo24"
-src_type = "zpravodajství"
-url = "https://www.echo24.cz/a/HcTLq/zpravy-domov-nss-firmy-z-agrofertu-nemely-kvuli-babisovu-stretu-zajmu-dostavat-zakazky"
-published = "2025-12-11"
-retrieved = "2026-08-01"
-claims = ["CLM-68"]
 +++
 Echo24 k rozsudku NSS z 11. 12. 2025 uvádí, že střet zájmů Andreje
 Babiše v době jeho prvního premiérského působení „znemožňoval firmám

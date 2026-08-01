@@ -9,17 +9,10 @@ weight = 48
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-48"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-48.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-48"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/kauza-reklamy-na-capim-hnizde-konci-striz-do-ni-nezasahne-350932"
-published = "2024-07-08"
-retrieved = "2026-08-01"
-claims = ["CLM-69", "CLM-71"]
 +++
 ČT24 informuje, že případ reklamy na Čapím hnízdě zůstane definitivně
 odložený. Policie prověřovala platby od firem z Agrofertu na reklamu

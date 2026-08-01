@@ -9,14 +9,10 @@ weight = 3
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jaromir-zuna/gaps/GAP-03"
 view_model = "generated/views/dossiers/jaromir-zuna/gaps/gap-03.json"
-subjects = ["zuna"]
 dossier = "jaromir-zuna"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-03"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Mediální spekulace (Blesk), že Zůna po sporu o náčelníka zvažoval rezignaci, není zahrnuta.
 

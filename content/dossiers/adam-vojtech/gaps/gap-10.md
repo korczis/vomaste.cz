@@ -9,14 +9,10 @@ weight = 10
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/adam-vojtech/gaps/GAP-10"
 view_model = "generated/views/dossiers/adam-vojtech/gaps/gap-10.json"
-subjects = ["vojtech"]
 dossier = "adam-vojtech"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-10"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Nebylo možné ověřit tvrzení o skluzu akčního plánu Národní očkovací strategie a o tom, že premiér Babiš ministra Vojtěcha přes tlak SPD drží.
 

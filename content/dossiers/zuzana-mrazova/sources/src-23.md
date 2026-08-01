@@ -9,17 +9,10 @@ weight = 23
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-23"
 view_model = "generated/views/dossiers/zuzana-mrazova/sources/src-23.json"
-subjects = ["mrazova"]
 dossier = "zuzana-mrazova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-23"
-outlet = "Deník.cz (VLTAVA LABE MEDIA)"
-src_type = "zpravodajství"
-url = "https://www.denik.cz/cesko/zuzana-mrazova-ano-opozice-odmitla-vyzvy-k-rezignaci/"
-published = "2026-04-30"
-retrieved = "2026-07-30"
-claims = ["CLM-27", "CLM-44", "CLM-45"]
 +++
 **Mrázová odmítla opoziční výzvy k rezignaci. Předpisy jsem neporušila, tvrdí**
 

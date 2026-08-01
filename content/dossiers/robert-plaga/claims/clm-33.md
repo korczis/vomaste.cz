@@ -13,10 +13,5 @@ dossier = "robert-plaga"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-33"
-status = "status-single"
-status_label = "1 ZDROJ"
-summary = "Podle oficiální karty projednávání Poslanecké sněmovny k 30. červenci 2026 první čtení tisku 232 dosud neproběhlo a další projednávání bylo možné až od 1. srpna 2026."
-sources = ["SRC-24"]
-subjects = ["plaga"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/robert-plaga/_index.md#registr-tvrzeni).

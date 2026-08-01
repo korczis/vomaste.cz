@@ -10,15 +10,8 @@ record_id = "https://vomaste.cz/id/dossiers/petr-pavel/relations/edge-pavel-ture
 view_model = "generated/views/dossiers/petr-pavel/relations/edge-pavel-turek-nejmenovani.json"
 dossier = "petr-pavel"
 record_type = "relation"
+lang = "cs"
 rel_id = "edge-pavel-turek-nejmenovani"
-source = "pavel"
-target = "turek"
-relation_type = "DENIED"
-label = "odmítl jmenovat ministrem životního prostředí (leden 2026)"
-status = "corroborated"
-claims = ["CLM-01"]
-sources = ["SRC-01", "SRC-02"]
-subjects = ["pavel"]
 +++
 Tato stránka je kanonický záznam vztahu edge-pavel-turek-nejmenovani —
 typ vztahu, podporující tvrzení a zdroje v tabulce výše jsou úplné. Status

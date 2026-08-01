@@ -10,16 +10,10 @@ aliases = ["/dossier/zdroje/src-40/"]
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-40"
 view_model = "generated/views/dossiers/macinka-turek/sources/src-40.json"
-subjects = ["macinka", "turek"]
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-40"
-outlet = "Motoristé sobě (motoristesobe.cz/udhpsh)"
-src_type = "primární zdroj / povinné zveřejnění"
-url = "https://motoristesobe.cz/udhpsh"
-retrieved = "2026-07-22"
-claims = ["CLM-35"]
 +++
 Oficiální stránka hnutí Motoristé sobě s dokumenty povinně zveřejňovanými
 podle zákona o financování politických stran (dohled Úřadu pro dohled nad

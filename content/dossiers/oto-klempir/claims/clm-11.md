@@ -13,10 +13,5 @@ dossier = "oto-klempir"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-11"
-status = "status-quote"
-status_label = "CITACE"
-summary = "Klempíř označil stávající systém koncesionářských poplatků za „nemoderní“ a uvedl, že zákon má být platný od 1. ledna 2027."
-sources = ["SRC-03"]
-subjects = ["klempir"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/oto-klempir/_index.md#registr-tvrzeni).

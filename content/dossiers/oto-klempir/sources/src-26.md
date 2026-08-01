@@ -9,18 +9,10 @@ weight = 26
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-26"
 view_model = "generated/views/dossiers/oto-klempir/sources/src-26.json"
-subjects = ["klempir"]
 dossier = "oto-klempir"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-26"
-outlet = "ČeskéNoviny.cz (ČTK)"
-family = "ctk"
-src_type = "agenturní zpravodajství"
-url = "https://www.ceskenoviny.cz/zpravy/vlada-schvalila-zruseni-poplatku-pro-ct-a-cro-da-jim-o-14-miliardy-mene-/2838404"
-published = "2026-06-15"
-retrieved = "2026-07-31"
-claims = ["CLM-07"]
 +++
 ČeskéNoviny.cz (ČTK) dne 15. 6. 2026: Česká televize by měla v příštím
 roce získat z rozpočtu 5,74 miliardy korun, Český rozhlas 2,065

@@ -14,10 +14,5 @@ dossier = "macinka-turek"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-01"
-status = "status-corroborated"
-status_label = "CORROBORATED"
-summary = "Turek zvolen europoslancem v červnu 2024 za společnou kandidátku Motoristů a Přísahy"
-sources = ["SRC-11", "SRC-12", "SRC-13"]
-subjects = ["turek"]
 +++
 Tato stránka je kanonický záznam tvrzení CLM-01 — shrnutí, stav a zdroje výše jsou úplné. Se zdrojem tohoto tvrzení se překrývá CLM-02, CLM-03, CLM-04, CLM-05, CLM-06. Hlavní stránka dossieru zobrazuje tentýž text ze stejného zdroje; build proces ověřuje, že se neliší.

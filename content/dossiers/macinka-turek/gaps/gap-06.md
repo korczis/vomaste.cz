@@ -10,14 +10,10 @@ aliases = ["/dossier/mezery/gap-06/"]
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/macinka-turek/gaps/GAP-06"
 view_model = "generated/views/dossiers/macinka-turek/gaps/gap-06.json"
-subjects = ["turek"]
 dossier = "macinka-turek"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-06"
-priority = "vysoká"
-checked = "2026-07-29"
-claims = ["CLM-25", "CLM-26", "CLM-27"]
 +++
 *(Nejcitlivější položka tohoto přehledu — viz [plný popis kauzy](@/dossiers/macinka-turek/_index.md#trestni-oznameni-obvineni-z-domaciho-nasili-a-znasilneni)
 pro nutný kontext. Tento přehled neuvádí jméno oznamovatelky, protože ho

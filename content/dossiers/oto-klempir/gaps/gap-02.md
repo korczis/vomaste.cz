@@ -9,14 +9,10 @@ weight = 2
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/oto-klempir/gaps/GAP-02"
 view_model = "generated/views/dossiers/oto-klempir/gaps/gap-02.json"
-subjects = ["klempir"]
 dossier = "oto-klempir"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-02"
-priority = "vysoká"
-checked = "2026-07-30"
-claims = ["CLM-03", "CLM-04", "CLM-05", "CLM-06"]
 +++
 Tvrzení CLM-03 až CLM-06 mají k datu kontroly (2026-07-30) jediný
 citovaný zdroj — [SRC-02](@/dossiers/oto-klempir/sources/src-02.md)

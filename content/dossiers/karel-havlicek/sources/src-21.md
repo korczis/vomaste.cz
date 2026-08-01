@@ -9,17 +9,10 @@ weight = 21
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-21"
 view_model = "generated/views/dossiers/karel-havlicek/sources/src-21.json"
-subjects = ["havlicek"]
 dossier = "karel-havlicek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-21"
-outlet = "TZB-info"
-src_type = "zpravodajství"
-url = "https://stavba.tzb-info.cz/134791-havlicek-novelu-stavebniho-zakona-dostane-senat-az-v-srpnu"
-published = "2026-07-14"
-retrieved = "2026-07-30"
-claims = ["CLM-36"]
 +++
 **Havlíček: Novelu stavebního zákona dostane Senát až v srpnu**
 

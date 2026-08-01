@@ -9,17 +9,10 @@ weight = 30
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-30"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-30.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-30"
-outlet = "Novinky.cz"
-src_type = "zpravodajství"
-url = "https://www.novinky.cz/clanek/domaci-spor-o-dotaci-dohnaly-kostelecke-uzeniny-k-ustavnimu-soudu-neuspely-40575837"
-published = "2026-04-29"
-retrieved = "2026-07-31"
-claims = ["CLM-47"]
 +++
 Novinky.cz potvrzuje odmítnutí ústavní stížnosti Kosteleckých uzenin
 počátkem dubna 2026: „Soudy dostatečně zdůvodnily, že Andrej Babiš

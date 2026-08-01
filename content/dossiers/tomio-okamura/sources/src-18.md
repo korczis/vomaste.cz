@@ -9,17 +9,10 @@ weight = 18
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-18"
 view_model = "generated/views/dossiers/tomio-okamura/sources/src-18.json"
-subjects = ["okamura"]
 dossier = "tomio-okamura"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-18"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/snemovna-vydala-tomia-okamuru-k-trestnimu-stihani-358064"
-published = "2025-02-12"
-retrieved = "2026-07-30"
-claims = ["CLM-25", "CLM-26"]
 +++
 **Sněmovna vydala Tomia Okamuru k trestnímu stíhání**
 

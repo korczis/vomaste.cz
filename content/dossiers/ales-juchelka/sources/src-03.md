@@ -9,17 +9,10 @@ weight = 3
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-03"
 view_model = "generated/views/dossiers/ales-juchelka/sources/src-03.json"
-subjects = ["juchelka"]
 dossier = "ales-juchelka"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-03"
-outlet = "Seznam Zprávy"
-src_type = "zpravodajství"
-url = "https://www.seznamzpravy.cz/clanek/domaci-kauzy-juchelka-dal-vliv-na-dotace-poradkyni-firmu-prepsala-na-dceru-z-gymnazia-299592"
-published = "2026-03-19"
-retrieved = "2026-07-30"
-claims = ["CLM-02", "CLM-06", "CLM-07", "CLM-17"]
 +++
 **Juchelkova poradkyně má vliv na 17 miliard dotací. A podniká v jejich získávání**
 

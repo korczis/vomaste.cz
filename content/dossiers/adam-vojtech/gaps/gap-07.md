@@ -9,14 +9,10 @@ weight = 7
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/adam-vojtech/gaps/GAP-07"
 view_model = "generated/views/dossiers/adam-vojtech/gaps/gap-07.json"
-subjects = ["vojtech"]
 dossier = "adam-vojtech"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-07"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Není doložen aktuální stav ředitele FN Olomouc Romana Havlíka po zveřejnění závěrů komise (setrvání ve funkci, odvolání, rezignace).
 

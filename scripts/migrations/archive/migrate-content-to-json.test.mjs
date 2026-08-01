@@ -9,10 +9,10 @@ import { mkdtempSync, mkdirSync, readFileSync, readdirSync, writeFileSync, exist
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { migrate, runParityChecks } from "./migrate-content-to-json.mjs";
-import { loadCanonicalTree } from "../data/load.mjs";
-import { validateShapeTree } from "../data/validate-shape.mjs";
-import { validateReferences } from "../data/validate-references.mjs";
-import { validateSemantics } from "../data/validate-semantics.mjs";
+import { loadCanonicalTree } from "../../data/load.mjs";
+import { validateShapeTree } from "../../data/validate-shape.mjs";
+import { validateReferences } from "../../data/validate-references.mjs";
+import { validateSemantics } from "../../data/validate-semantics.mjs";
 
 // --- syntetický fixture repozitář ---------------------------------------
 function writeFixture(root) {

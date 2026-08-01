@@ -9,17 +9,10 @@ weight = 25
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-25"
 view_model = "generated/views/dossiers/ales-juchelka/sources/src-25.json"
-subjects = ["juchelka"]
 dossier = "ales-juchelka"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-25"
-outlet = "Deník N"
-src_type = "zpravodajství"
-url = "https://denikn.cz/minuta/2138837"
-published = "2026-07-27"
-retrieved = "2026-07-30"
-claims = ["CLM-24", "CLM-25"]
 +++
 **Ministerstvo práce si vyžádalo externí posudek kvůli možnému střetu zájmů bývalé ministrovy poradkyně Semancové**
 

@@ -9,17 +9,10 @@ weight = 25
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-25"
 view_model = "generated/views/dossiers/ivan-bednarik/sources/src-25.json"
-subjects = ["bednarik"]
 dossier = "ivan-bednarik"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-25"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/ekonomika/rsd-varuje-pred-stopkou-i-pro-rozestavene-projekty-dle-vlady-se-vyhled-bude-menit-370126"
-published = "2026-02-08"
-retrieved = "2026-07-30"
-claims = ["CLM-30", "CLM-31"]
 +++
 **ŘSD varuje před stopkou i pro rozestavěné projekty, dle vlády se výhled bude měnit**
 

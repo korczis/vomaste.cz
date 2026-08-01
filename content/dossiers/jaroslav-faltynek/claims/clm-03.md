@@ -13,10 +13,5 @@ dossier = "jaroslav-faltynek"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-03"
-status = "status-single"
-status_label = "1 ZDROJ"
-summary = "Týž státní zástupce podle citovaného zpravodajství zamítl stížnost Andreje Babiše jako nedůvodnou a jeho trestní stíhání pokračovalo"
-sources = ["SRC-02"]
-subjects = ["faltynek"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jaroslav-faltynek/_index.md#registr-tvrzeni).

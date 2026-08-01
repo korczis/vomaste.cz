@@ -9,86 +9,12 @@ generated = true
 record_id = "https://vomaste.cz/id/dossiers/robert-plaga"
 view_model = "generated/views/dossiers/robert-plaga/overview.json"
 dossier = "robert-plaga"
-dossier_title = "Robert Plaga"
 record_type = "dossier"
 dossier_type = "entity"
-canonical_dossier = "robert-plaga"
-subject = "plaga"
 lang = "cs"
 seo_type = "ProfilePage"
 updated = "2026-07-30"
 reviewed_at = "2026-07-30"
-subject_entities = ["plaga"]
-subjects = ["Robert Plaga"]
-
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-S"]
-
-[[extra.timeline]]
-date = "2026-03"
-title = "Plaga označil opoziční návrh zákazu mobilů za 'tupý zákaz' (9. 3.); MŠMT oznámilo zkrácení školního roku 2025/2026 na 26. 6. (31. 3.)"
-anchor = "kauza-testovani"
-dot = "dot-fact"
-subjects = ["plaga"]
-
-[[extra.timeline]]
-date = "2026-04"
-title = "Reakce rodičů na pozdě oznámené zkrácení školního roku (hlídání dětí, rušené akce)"
-anchor = "kauza-testovani"
-dot = "dot-fact"
-subjects = ["plaga"]
-
-[[extra.timeline]]
-date = "2026-05"
-title = "Zastavení povinného testování žáků 5. a 9. tříd po výpadcích a kritice osobních otázek; jednání se šéfem školní inspekce Zatloukalem (25. 5.)"
-anchor = "kauza-testovani"
-dot = "dot-fact"
-subjects = ["plaga"]
-
-[[extra.timeline]]
-date = "2026-06"
-title = "Babiš a Plaga podali poslanecký návrh zákazu mobilů ve školách; školní rok skončil zkráceně 26. 6."
-anchor = "kauza-testovani"
-dot = "dot-fact"
-subjects = ["plaga"]
-
-[[extra.timeline]]
-date = "2026-07"
-title = "Vláda podpořila zákaz mobilů ve školách s účinností od září 2027 (20. 7.)"
-anchor = "kauza-testovani"
-dot = "dot-fact"
-subjects = ["plaga"]
-
-[[extra.cases]]
-anchor = "kauza-testovani"
-period = "2026"
-title = "Zastavené testování žáků 5. a 9. tříd"
-status = "status-single"
-label = "Sledované téma"
-summary = "Zastavené testování žáků 5. a 9. tříd — viz tvrzení CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07, CLM-08, CLM-09, CLM-10."
-claims = ["CLM-20", "CLM-21", "CLM-22", "CLM-23", "CLM-24", "CLM-25", "CLM-26", "CLM-27", "CLM-28", "CLM-29"]
-subjects = ["plaga"]
-
-[[extra.cases]]
-anchor = "kauza-mobily"
-period = "2026"
-title = "Obrat u zákazu mobilů ve školách"
-status = "status-single"
-label = "Sledované téma"
-summary = "Obrat u zákazu mobilů ve školách — viz tvrzení CLM-11, CLM-12, CLM-13, CLM-14, CLM-15."
-claims = ["CLM-30", "CLM-31", "CLM-32", "CLM-33", "CLM-34", "CLM-35", "CLM-36", "CLM-37", "CLM-38", "CLM-39", "CLM-40", "CLM-41", "CLM-42", "CLM-43", "CLM-44", "CLM-45", "CLM-46", "CLM-47"]
-subjects = ["plaga"]
-
-[[extra.cases]]
-anchor = "kauza-skolni-rok"
-period = "2026"
-title = "Zkrácení školního roku 2025/2026"
-status = "status-single"
-label = "Sledované téma"
-summary = "Zkrácení školního roku 2025/2026 — viz tvrzení CLM-16, CLM-17, CLM-18, CLM-19."
-claims = ["CLM-48", "CLM-49", "CLM-50", "CLM-51", "CLM-52", "CLM-53", "CLM-54"]
-subjects = ["plaga"]
 +++
 Robert Plaga zastává funkci ministra školství, mládeže a tělovýchovy ve třetí vládě Andreje Babiše (viz
 `data/government.toml`, ověřeno proti oficiálnímu seznamu členů vlády).

@@ -9,17 +9,10 @@ weight = 25
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-25"
 view_model = "generated/views/dossiers/jeronym-tejc/sources/src-25.json"
-subjects = ["tejc"]
 dossier = "jeronym-tejc"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-25"
-outlet = "Česká justice"
-src_type = "zpravodajství"
-url = "https://www.ceska-justice.cz/2026/07/ustavni-valka-graduje-soudci-vraci-uder-politikum/"
-published = "2026-07-23"
-retrieved = "2026-07-30"
-claims = ["CLM-51"]
 +++
 **Ústavní válka graduje: Soudci vrací úder politikům**
 

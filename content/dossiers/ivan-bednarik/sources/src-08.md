@@ -9,17 +9,10 @@ weight = 8
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-08"
 view_model = "generated/views/dossiers/ivan-bednarik/sources/src-08.json"
-subjects = ["bednarik"]
 dossier = "ivan-bednarik"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-08"
-outlet = "Dopravní noviny"
-src_type = "zpravodajství"
-url = "https://dnoviny.cz/dopravni-politika/100-dni-ministra-ivana-bednarika-rekordni-rozpocet-na-vystavbu-duraz-na-efektivitu-a-transparentnost"
-published = "2026-03-24"
-retrieved = "2026-07-30"
-claims = ["CLM-11", "CLM-20"]
 +++
 **100 dní ministra Ivana Bednárika: rekordní rozpočet na výstavbu, důraz na efektivitu a transparentnost**
 

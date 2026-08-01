@@ -21,5 +21,20 @@
   "routeAliases": [
     "/dossiers/macinka-turek/entities/kauza2024/"
   ],
-  "order": 9
+  "order": 9,
+  "provenance": {
+    "discoveredAt": "2026-07-29",
+    "discoveredVia": [
+      "edge-turek-kauza2024",
+      "edge-macinka-kauza2024"
+    ],
+    "claimRefs": [
+      "CLM-04"
+    ],
+    "sourceRefs": [
+      "SRC-12"
+    ],
+    "cluster": "kauza-2024-fotografie",
+    "depth": 1
+  }
 }

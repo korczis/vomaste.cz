@@ -9,17 +9,10 @@ weight = 30
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-30"
 view_model = "generated/views/dossiers/igor-cerveny/sources/src-30.json"
-subjects = ["cerveny"]
 dossier = "igor-cerveny"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-30"
-outlet = "Respekt"
-src_type = "zpravodajství"
-url = "https://www.respekt.cz/cesko/dalsi-podporovatel-filipa-turka-dostal-praci-na-ministerstvu-zivotniho-prostredi"
-published = "2026-06-15"
-retrieved = "2026-07-30"
-claims = ["CLM-44", "CLM-45"]
 +++
 **Další podporovatel Filipa Turka dostal práci na ministerstvu životního prostředí**
 

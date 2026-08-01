@@ -31,14 +31,17 @@
 {%- set ld_dossier_type = page.extra.dossier_type | default(value=section.extra.dossier_type | default(value="")) -%}
 {%- set ld_ancestors = page.ancestors | default(value=section.ancestors | default(value=[])) -%}
 
-{#- Person markup only where data/dossiers.toml itself says this dossier
-    is about one real, primary-navigation-worthy person. -#}
+{#- Person markup only where the canonical dossier record itself (view
+    model overview.json — T-028 fáze H, dřívější data/dossiers.toml) says
+    this dossier is about one real, primary-navigation-worthy person. -#}
 {%- set ld_person = false -%}
 {%- if ld_dossier_type == "entity" and ld_dossier -%}
-  {%- set ld_registry = load_data(path="data/dossiers.toml") -%}
-  {%- set ld_entry = ld_registry.dossiers | filter(attribute="slug", value=ld_dossier) | filter(attribute="dossier_type", value="entity") | first | default(value=false) -%}
-  {%- if ld_entry and ld_entry.show_in_primary_navigation -%}
-    {%- set_global ld_person = ld_entry -%}
+  {%- set ld_overview_path = page.extra.view_model | default(value=section.extra.view_model | default(value="")) -%}
+  {%- if ld_overview_path -%}
+    {%- set ld_overview = load_data(path="data/" ~ ld_overview_path) -%}
+    {%- if ld_overview.dossierType == "entity" and ld_overview.navigationVisible -%}
+      {%- set_global ld_person = ld_overview -%}
+    {%- endif -%}
   {%- endif -%}
 {%- endif -%}
 

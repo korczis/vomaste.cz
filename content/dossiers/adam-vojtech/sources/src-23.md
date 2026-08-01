@@ -9,17 +9,10 @@ weight = 23
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-23"
 view_model = "generated/views/dossiers/adam-vojtech/sources/src-23.json"
-subjects = ["vojtech"]
 dossier = "adam-vojtech"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-23"
-outlet = "Zdravé zprávy"
-src_type = "zpravodajství"
-url = "https://www.zdravezpravy.cz/2026/07/13/zdravotni-benefity-bez-limitu-doporucil-snemovne-rozpoctovy-vybor/"
-published = "2026-07-13"
-retrieved = "2026-07-30"
-claims = ["CLM-36", "CLM-37"]
 +++
 **Zdravotní benefity bez limitu odpočtu doporučil Sněmovně rozpočtový výbor**
 

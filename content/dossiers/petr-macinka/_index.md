@@ -9,18 +9,10 @@ generated = true
 record_id = "https://vomaste.cz/id/dossiers/petr-macinka"
 view_model = "generated/views/dossiers/petr-macinka/overview.json"
 dossier = "petr-macinka"
-dossier_title = "Petr Macinka"
 record_type = "dossier"
 dossier_type = "entity"
-canonical_dossier = "macinka-turek"
-subject = "macinka"
 lang = "cs"
 seo_type = "ProfilePage"
-subject_entities = ["macinka"]
-
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-21-A", "AUTH-2026-07-21-B", "AUTH-2026-07-30-A"]
 +++
 Petr Macinka je předseda hnutí Motoristé sobě a člen vlády — v období od
 lednové nominace Filipa Turka do jmenování Igora Červeného dočasně vedl

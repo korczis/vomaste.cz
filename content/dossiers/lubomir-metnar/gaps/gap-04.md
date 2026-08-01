@@ -9,14 +9,10 @@ weight = 4
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/lubomir-metnar/gaps/GAP-04"
 view_model = "generated/views/dossiers/lubomir-metnar/gaps/gap-04.json"
-subjects = ["metnar"]
 dossier = "lubomir-metnar"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-04"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Nebylo ověřeno, jakým kanálem Metnar své zdůvodnění zveřejnil (uvádí se sociální síť X), protože doslovné znění příspěvku nebylo v žádném načteném zdroji doloženo.
 

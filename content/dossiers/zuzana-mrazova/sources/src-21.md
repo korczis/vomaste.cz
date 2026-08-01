@@ -9,17 +9,10 @@ weight = 21
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-21"
 view_model = "generated/views/dossiers/zuzana-mrazova/sources/src-21.json"
-subjects = ["mrazova"]
 dossier = "zuzana-mrazova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-21"
-outlet = "Blesk.cz"
-src_type = "zpravodajství"
-url = "https://www.blesk.cz/clanek/zpravy-politika/841888/ministryne-mrazova-konci-v-zastupitelstvu-biliny-kde-vyuzivala-levny-byt-funkce-nestiha.html"
-published = "2026-06-17"
-retrieved = "2026-07-30"
-claims = ["CLM-33", "CLM-34"]
 +++
 **Ministryně Mrázová končí v zastupitelstvu Bíliny, kde využívala levný byt. Funkce nestíhá**
 

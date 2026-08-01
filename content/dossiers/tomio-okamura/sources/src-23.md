@@ -9,17 +9,10 @@ weight = 23
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-23"
 view_model = "generated/views/dossiers/tomio-okamura/sources/src-23.json"
-subjects = ["okamura"]
 dossier = "tomio-okamura"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-23"
-outlet = "ČeskéNoviny.cz (ČTK)"
-src_type = "zpravodajství"
-url = "https://www.ceskenoviny.cz/zpravy/prohlaseni-politiku-mohou-podryt-duveru-v-nezavislost-justice-uvedli-zalobci/2795788"
-published = "2026-03-06"
-retrieved = "2026-07-30"
-claims = ["CLM-32"]
 +++
 **Prohlášení politiků mohou podrýt důvěru v nezávislost justice, uvedli žalobci**
 

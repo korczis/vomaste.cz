@@ -13,10 +13,5 @@ dossier = "alena-schillerova"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-19"
-status = "status-single"
-status_label = "1 ZDROJ"
-summary = "Podle prezidenta Pavla by novela umožnila vládě překročit vlastní schválený rozpočet až o deset procent na základě rozhodnutí pouze jejího vlastního poradního bezpečnostního orgánu, což podle ČT24 odpovídá zhruba 240 miliardám korun."
-sources = ["SRC-08"]
-subjects = ["schillerova"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/alena-schillerova/_index.md#registr-tvrzeni).

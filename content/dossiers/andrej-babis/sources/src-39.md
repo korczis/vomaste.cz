@@ -9,17 +9,10 @@ weight = 39
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-39"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-39.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-39"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/rolnicky-fond-podal-zaloby-na-28-firem-agrofertu-chce-vratit-dotace-375772"
-published = "2026-07-20"
-retrieved = "2026-08-01"
-claims = ["CLM-60"]
 +++
 ČT24 přebírá zprávu o žalobách PGRLF na 28 dceřiných firem holdingu
 Agrofert o vrácení podpor 22 milionů korun z let 2017–2021 kvůli

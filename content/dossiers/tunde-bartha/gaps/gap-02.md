@@ -9,14 +9,10 @@ weight = 2
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/tunde-bartha/gaps/GAP-02"
 view_model = "generated/views/dossiers/tunde-bartha/gaps/gap-02.json"
-subjects = ["bartha"]
 dossier = "tunde-bartha"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-02"
-priority = "nízká"
-checked = "2026-08-01"
-claims = ["CLM-07", "CLM-08", "CLM-09"]
 +++
 **Co se od poslední revize uzavřelo (1. 8. 2026).** Dřívější znění této
 mezery konstatovalo, že přesné datum nástupu Tünde Barthy do funkce

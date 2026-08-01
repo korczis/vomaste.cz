@@ -9,17 +9,10 @@ weight = 4
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-04"
 view_model = "generated/views/dossiers/tomio-okamura/sources/src-04.json"
-subjects = ["okamura"]
 dossier = "tomio-okamura"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-04"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/soud-nepravomocne-ulozil-spd-trimilionovy-penezity-trest-za-nenavistne-plakaty-374182"
-published = "2026-06-03"
-retrieved = "2026-07-30"
-claims = ["CLM-07", "CLM-08", "CLM-11"]
 +++
 **Soud nepravomocně uložil SPD třímilionový peněžitý trest za nenávistné plakáty**
 

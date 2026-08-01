@@ -9,17 +9,10 @@ weight = 25
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-25"
 view_model = "generated/views/dossiers/oto-klempir/sources/src-25.json"
-subjects = ["klempir"]
 dossier = "oto-klempir"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-25"
-outlet = "Taneční aktuality"
-src_type = "komentář/názor"
-url = "https://www.tanecniaktuality.cz/uhel-pohledu/penize-nebyly-a-najednou-jsou-na-zivou-kulturu-jde-ministerstvo-s-bicem-a-cukrem"
-published = "2026-07-15"
-retrieved = "2026-07-30"
-claims = ["CLM-34"]
 +++
 **Peníze nebyly a najednou jsou. Na živou kulturu jde ministerstvo s bičem a cukrem**
 

@@ -9,17 +9,10 @@ weight = 6
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-06"
 view_model = "generated/views/dossiers/igor-cerveny/sources/src-06.json"
-subjects = ["cerveny"]
 dossier = "igor-cerveny"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-06"
-outlet = "Ekolist.cz (ČTK)"
-src_type = "zpravodajství"
-url = "https://ekolist.cz/cz/zpravodajstvi/zpravy/nove-jmenovany-ministr-cerveny-uvedl-ze-uz-vyresil-svuj-stret-zajmu"
-published = "2026-02-23"
-retrieved = "2026-07-30"
-claims = ["CLM-08", "CLM-09", "CLM-10"]
 +++
 **Nově jmenovaný ministr Červený uvedl, že už vyřešil svůj střet zájmů**
 

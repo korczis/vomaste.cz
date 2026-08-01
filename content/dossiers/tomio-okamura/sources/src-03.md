@@ -9,17 +9,10 @@ weight = 3
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-03"
 view_model = "generated/views/dossiers/tomio-okamura/sources/src-03.json"
-subjects = ["okamura"]
 dossier = "tomio-okamura"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-03"
-outlet = "ČeskéNoviny.cz (ČTK)"
-src_type = "zpravodajství"
-url = "https://www.ceskenoviny.cz/zpravy/advokat-spd-u-soudu-odmitl-vinu-hnuti-v-trestni-kauze-plakatu/2833892"
-published = "2026-06-03"
-retrieved = "2026-07-30"
-claims = ["CLM-07", "CLM-15", "CLM-20"]
 +++
 **Soud uložil SPD třímilionový peněžitý trest za nenávistné předvolební plakáty**
 

@@ -9,17 +9,10 @@ weight = 5
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-05"
 view_model = "generated/views/dossiers/adam-vojtech/sources/src-05.json"
-subjects = ["vojtech"]
 dossier = "adam-vojtech"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-05"
-outlet = "Seznam Zprávy"
-src_type = "komentář/názor"
-url = "https://www.seznamzpravy.cz/clanek/nazory-komentare-kauza-defibrilatory-stacilo-cist-noviny-pane-ministre-302267"
-published = "2026-03-22"
-retrieved = "2026-07-30"
-claims = ["CLM-10"]
 +++
 **Kauza, kterou česká medicína nepamatuje. Co všechno přehlédl ministr Vojtěch?**
 

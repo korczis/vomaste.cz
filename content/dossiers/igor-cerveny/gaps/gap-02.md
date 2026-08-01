@@ -9,14 +9,10 @@ weight = 2
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/igor-cerveny/gaps/GAP-02"
 view_model = "generated/views/dossiers/igor-cerveny/gaps/gap-02.json"
-subjects = ["cerveny"]
 dossier = "igor-cerveny"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-02"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Detaily cesty do USA z primárního zdroje Deníku N (financování delegace, konkrétní schůzky, plné znění výroku) nelze ověřit.
 

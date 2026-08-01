@@ -22,5 +22,23 @@
   "routeAliases": [
     "/dossiers/macinka-turek/entities/chlad/"
   ],
-  "order": 16
+  "order": 16,
+  "provenance": {
+    "discoveredAt": "2026-07-29",
+    "discoveredVia": [
+      "edge-chlad-motoriste"
+    ],
+    "claimRefs": [
+      "CLM-36",
+      "CLM-01",
+      "CLM-07"
+    ],
+    "sourceRefs": [
+      "SRC-41",
+      "SRC-01",
+      "SRC-02"
+    ],
+    "cluster": "financni-vazby",
+    "depth": 0
+  }
 }

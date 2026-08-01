@@ -9,17 +9,10 @@ weight = 27
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-27"
 view_model = "generated/views/dossiers/tomio-okamura/sources/src-27.json"
-subjects = ["okamura"]
 dossier = "tomio-okamura"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-27"
-outlet = "Hospodářské noviny"
-src_type = "zpravodajství"
-url = "https://domaci.hn.cz/c1-67608930-bdquo-neodvolam-ldquo-snemovna-vydala-okamuru-k-trestnimu-stihani-kvuli-podezreni-ze-sireni-nenavisti-v-predvolebni-kampani"
-published = "2025-02-13"
-retrieved = "2026-07-31"
-claims = ["CLM-25", "CLM-26"]
 +++
 Hospodářské noviny dne 13. 2. 2025: „Pro vyslovení souhlasu s trestním
 stíháním lídra SPD hlasovalo 81 ze 143 přítomných poslanců. Proti jich

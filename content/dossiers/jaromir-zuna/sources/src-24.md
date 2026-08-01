@@ -9,17 +9,10 @@ weight = 24
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-24"
 view_model = "generated/views/dossiers/jaromir-zuna/sources/src-24.json"
-subjects = ["zuna"]
 dossier = "jaromir-zuna"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-24"
-outlet = "CNN Prima News"
-src_type = "zpravodajství"
-url = "https://cnn.iprima.cz/vydaje-na-obranu-brzy-masivne-vzrostou-zuna-pocita-s-80-miliardami-navic-504153"
-published = "2026-02-14"
-retrieved = "2026-07-30"
-claims = ["CLM-45"]
 +++
 **Výdaje na obranu brzy masivně vzrostou. Zůna počítá s 80 miliardami navíc, opozice je skeptická**
 

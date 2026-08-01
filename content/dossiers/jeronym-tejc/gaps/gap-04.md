@@ -9,14 +9,10 @@ weight = 4
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jeronym-tejc/gaps/GAP-04"
 view_model = "generated/views/dossiers/jeronym-tejc/gaps/gap-04.json"
-subjects = ["tejc"]
 dossier = "jeronym-tejc"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-04"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Původní článek Deníku N přímo k bitcoinové kauze (uvedený v zadání jako dříve nalezený) se nepodařilo dohledat v přístupné podobě; z Deníku N byla ověřena pouze krátká zpráva k Ústavnímu soudu.
 

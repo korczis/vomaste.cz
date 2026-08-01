@@ -9,14 +9,10 @@ weight = 9
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/robert-plaga/gaps/GAP-09"
 view_model = "generated/views/dossiers/robert-plaga/gaps/gap-09.json"
-subjects = ["plaga"]
 dossier = "robert-plaga"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-09"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Nebylo možné ověřit reportáž iDNES.cz o škole, která zkrácení školního roku pro své žáky zrušila a poslala ministrovi jeho vlastní argumenty (16. 4. 2026).
 

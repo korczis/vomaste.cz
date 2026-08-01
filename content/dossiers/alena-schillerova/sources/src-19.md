@@ -9,17 +9,10 @@ weight = 19
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-19"
 view_model = "generated/views/dossiers/alena-schillerova/sources/src-19.json"
-subjects = ["schillerova"]
 dossier = "alena-schillerova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-19"
-outlet = "Centrum veřejných financí (Univerzita Karlova)"
-src_type = "komentář/názor"
-url = "https://centrumverejnychfinanci.cz/stanovisko-k-novele-zakona-o-pravidlech-rozpoctove-odpovednosti-a-dalsich-zakonu/"
-published = "2026-04-21"
-retrieved = "2026-07-30"
-claims = ["CLM-09", "CLM-10", "CLM-11", "CLM-12"]
 +++
 **Stanovisko k novele zákona o pravidlech rozpočtové odpovědnosti a dalších zákonů**
 

@@ -9,17 +9,10 @@ weight = 11
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-11"
 view_model = "generated/views/dossiers/boris-stastny/sources/src-11.json"
-subjects = ["stastny"]
 dossier = "boris-stastny"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-11"
-outlet = "Deník.cz (VLTAVA LABE MEDIA)"
-src_type = "zpravodajství"
-url = "https://www.denik.cz/ostatni_sport/predseda-nsa-ondrej-sebek-odvolan-vlada-ministr-boris-stastny-andrej-babis.html"
-published = "2025-12-16"
-retrieved = "2026-07-30"
-claims = ["CLM-22", "CLM-24", "CLM-25", "CLM-28", "CLM-29"]
 +++
 **Vláda odvolala předsedu NSA Šebka. Babiš: Udělal si z agentury cestovní kancelář**
 

@@ -20,6 +20,19 @@
     "/dossiers/andrej-babis/entities/olaf/"
   ],
   "order": 21,
+  "provenance": {
+    "discoveredAt": "2026-08-01",
+    "discoveredVia": [
+      "edge-capihnizdo-olaf"
+    ],
+    "claimRefs": [
+      "CLM-72"
+    ],
+    "sourceRefs": [
+      "SRC-50"
+    ],
+    "depth": 2
+  },
   "content": [
     {
       "type": "markdown",

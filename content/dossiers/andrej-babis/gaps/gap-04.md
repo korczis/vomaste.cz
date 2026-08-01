@@ -13,9 +13,6 @@ dossier = "andrej-babis"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-04"
-priority = "vysoká"
-checked = "2026-07-30"
-claims = ["CLM-18", "CLM-19"]
 +++
 Doložen je rozsudek Nejvyššího správního soudu ve věci dotace pro
 Kostelecké uzeniny ([CLM-18](@/dossiers/andrej-babis/claims/clm-18.md),

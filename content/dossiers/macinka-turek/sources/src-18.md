@@ -10,17 +10,10 @@ aliases = ["/dossier/zdroje/src-18/"]
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-18"
 view_model = "generated/views/dossiers/macinka-turek/sources/src-18.json"
-subjects = ["macinka"]
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-18"
-outlet = "Seznam Zprávy"
-src_type = "zpravodajství"
-url = "https://www.seznamzpravy.cz/clanek/domaci-kauzy-macinka-opravil-chybu-v-priznani-ministra-se-prihlasil-k-ukrajinske-firme-297525"
-published = "2026-01-28"
-retrieved = "2026-07-22"
-claims = ["CLM-14", "CLM-15"]
 +++
 Seznam Zprávy potvrzují totéž jádro faktu jako SRC-17 (Investigace.cz),
 ale jako samostatná redakce: ministr zahraničí Petr Macinka dodatečně

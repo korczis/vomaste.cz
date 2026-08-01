@@ -9,14 +9,10 @@ weight = 2
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/tomio-okamura/gaps/GAP-02"
 view_model = "generated/views/dossiers/tomio-okamura/gaps/gap-02.json"
-subjects = ["okamura"]
 dossier = "tomio-okamura"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-02"
-priority = "vysoká"
-checked = "2026-07-30"
-claims = ["CLM-02"]
 +++
 Okamura čelí obžalobě individuálně, jeho stíhání je však přerušené,
 protože ho Poslanecká sněmovna odmítla vydat, a jeho jednání má soud

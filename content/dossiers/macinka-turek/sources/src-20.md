@@ -10,17 +10,10 @@ aliases = ["/dossier/zdroje/src-20/"]
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-20"
 view_model = "generated/views/dossiers/macinka-turek/sources/src-20.json"
-subjects = ["turek"]
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-20"
-outlet = "Česká justice"
-src_type = "zpravodajství (odborný právní server)"
-url = "https://www.ceska-justice.cz/2026/07/turek-imunitu-nechce-necha-vydat/"
-published = "2026-07-15"
-retrieved = "2026-07-22"
-claims = ["CLM-17", "CLM-18"]
 +++
 Česká justice je specializovaný server zaměřený na justici a trestní
 právo. Podle článku poslanec Filip Turek prohlásil, že by imunitu

@@ -11,7 +11,7 @@
  *   static/data/graph/dossier/<slug>.json     — one canonical dossier's own curated graph
  *
  * Everything here is a PROJECTION, not a new source of truth: node/edge
- * assembly reads data/dossiers/<slug>/graph.toml and the flat registry
+ * assembly reads the canonical dossier.json `graph` layer and the flat registry
  * exports (lib/graph-projection.mjs); coordinates are computed once at
  * build time (lib/graph-layout.mjs) so the browser never runs a
  * synchronous layout on load. Validated by validate-graph-projections.mjs.
@@ -26,6 +26,7 @@ import { fileURLToPath } from "node:url";
 import {
   loadRouteMap,
   listDossierSlugs,
+  dossierOwnsGraph,
   buildDossierCatalog,
   buildGlobalCuratedPayload,
   buildRegistryPayload,
@@ -47,15 +48,17 @@ function writeJson(path, value) {
 // Content hash over every canonical input this pipeline reads — the
 // manifest's cache-busting/audit key, not a timestamp (mission § 3.1:
 // "Nepoužívej timestamp jako jediný cache invalidátor").
+// T-028 fáze H: kurátorovaná vrstva žije v dossier.json (`graph`) —
+// hashují se kanonické dossier.json souborů místo dřívějších graph.toml.
 function computeSourceHash(root, dossierSlugs) {
   const hash = createHash("sha256");
   const inputs = [];
   for (const slug of dossierSlugs) {
-    const file = join(root, "data/dossiers", slug, "graph.toml");
+    const file = join(root, "data/dossiers", slug, "dossier.json");
     try {
-      inputs.push([`data/dossiers/${slug}/graph.toml`, readFileSync(file)]);
+      inputs.push([`data/dossiers/${slug}/dossier.json`, readFileSync(file)]);
     } catch {
-      /* no own graph.toml — not an input */
+      /* bez kanonického záznamu — není vstup */
     }
   }
   for (const name of ["claims", "sources", "cases", "gaps", "relations", "entities"]) {
@@ -72,14 +75,7 @@ function computeSourceHash(root, dossierSlugs) {
 const errors = [];
 const routeMap = loadRouteMap(ROOT);
 const dossierSlugs = listDossierSlugs(ROOT);
-const canonicalSlugs = dossierSlugs.filter((slug) => {
-  try {
-    statSync(join(ROOT, "data/dossiers", slug, "graph.toml"));
-    return true;
-  } catch {
-    return false;
-  }
-});
+const canonicalSlugs = dossierSlugs.filter((slug) => dossierOwnsGraph(ROOT, slug));
 
 const curated = buildGlobalCuratedPayload(ROOT, dossierSlugs, routeMap, errors);
 const registry = buildRegistryPayload(ROOT, curated.nodes, routeMap, errors);

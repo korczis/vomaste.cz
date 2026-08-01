@@ -9,103 +9,12 @@ generated = true
 record_id = "https://vomaste.cz/id/dossiers/igor-cerveny"
 view_model = "generated/views/dossiers/igor-cerveny/overview.json"
 dossier = "igor-cerveny"
-dossier_title = "Igor Červený"
 record_type = "dossier"
 dossier_type = "entity"
-canonical_dossier = "igor-cerveny"
-subject = "cerveny"
 lang = "cs"
 seo_type = "ProfilePage"
 updated = "2026-07-30"
 reviewed_at = "2026-07-30"
-subject_entities = ["cerveny"]
-subjects = ["Igor Červený"]
-
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-R"]
-
-[[extra.timeline]]
-date = "2025-10"
-title = "Červený zvolen poslancem (4. 10. 2025); zhruba o měsíc později převádí rodinný dům na manželku"
-anchor = "kauza-majetkove-priznani"
-dot = "dot-fact"
-subjects = ["cerveny"]
-
-[[extra.timeline]]
-date = "2026-02"
-title = "Jmenován ministrem životního prostředí (po Macinkovi); prodává podíl v podcastové firmě Extreme BFG Cast svému asistentovi Novákovi a prohlašuje střet zájmů za vyřešený"
-anchor = "kauza-majetkove-priznani"
-dot = "dot-fact"
-subjects = ["cerveny"]
-
-[[extra.timeline]]
-date = "2026-04"
-title = "MF Dnes/iDnes (březen–duben) upozorňují na chybějící dům za 11,4 mil. Kč v majetkovém přiznání; Červený v rozhovoru pro Blesk vysvětluje přenechání ministerské kanceláře Turkovi"
-anchor = "kauza-majetkove-priznani"
-dot = "dot-fact"
-subjects = ["cerveny"]
-
-[[extra.timeline]]
-date = "2026-05"
-title = "Ministerstvo spravedlnosti postupuje majetkové přiznání přestupkovému úřadu v Nymburce (hrozba pokuty do 50 tis. Kč); Blesk zveřejňuje plány přestaveb kanceláří MŽP za 3 miliony"
-anchor = "kauza-majetkove-priznani"
-dot = "dot-fact"
-subjects = ["cerveny"]
-
-[[extra.timeline]]
-date = "2026-06"
-title = "Červený hájí rekonstrukci havarijním stavem budovy; podává opravné majetkové přiznání a podle Ekolistu platí pokutu 7 500 Kč"
-anchor = "kauza-majetkove-priznani"
-dot = "dot-fact"
-subjects = ["cerveny"]
-
-[[extra.timeline]]
-date = "2026-07"
-title = "Desetidenní cesta do USA (národní parky, Fox News, kritika Green Dealu); odmítá sdělit schůzky, složení delegace i financování, dotazy označuje za 'útok na zájmy ČR'"
-anchor = "kauza-majetkove-priznani"
-dot = "dot-fact"
-subjects = ["cerveny"]
-
-[[extra.cases]]
-anchor = "kauza-majetkove-priznani"
-period = "2026"
-title = "Majetkové přiznání a chybějící dům"
-status = "status-single"
-label = "Sledované téma"
-summary = "Majetkové přiznání a chybějící dům — viz tvrzení CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07."
-claims = ["CLM-20", "CLM-21", "CLM-22", "CLM-23", "CLM-24", "CLM-25", "CLM-26"]
-subjects = ["cerveny"]
-
-[[extra.cases]]
-anchor = "kauza-stret-zajmu"
-period = "2026"
-title = "Střet zájmů — podcastová firma"
-status = "status-single"
-label = "Sledované téma"
-summary = "Střet zájmů — podcastová firma — viz tvrzení CLM-08, CLM-09, CLM-10."
-claims = ["CLM-27", "CLM-28", "CLM-29", "CLM-30", "CLM-31", "CLM-32", "CLM-33"]
-subjects = ["cerveny"]
-
-[[extra.cases]]
-anchor = "kauza-kancelare"
-period = "2026"
-title = "Rekonstrukce kanceláří ministerstva"
-status = "status-single"
-label = "Sledované téma"
-summary = "Rekonstrukce kanceláří ministerstva — viz tvrzení CLM-11, CLM-12, CLM-13, CLM-14, CLM-15."
-claims = ["CLM-34", "CLM-35", "CLM-36", "CLM-37", "CLM-38", "CLM-39", "CLM-40", "CLM-41", "CLM-42", "CLM-43", "CLM-44", "CLM-45", "CLM-46", "CLM-47", "CLM-48"]
-subjects = ["cerveny"]
-
-[[extra.cases]]
-anchor = "kauza-cesta-usa"
-period = "2026"
-title = "Cesta do USA"
-status = "status-single"
-label = "Sledované téma"
-summary = "Cesta do USA — viz tvrzení CLM-16, CLM-17, CLM-18, CLM-19."
-claims = ["CLM-49", "CLM-50", "CLM-51", "CLM-52", "CLM-53", "CLM-54", "CLM-55", "CLM-56", "CLM-57"]
-subjects = ["cerveny"]
 +++
 Igor Červený zastává funkci ministra životního prostředí ve třetí vládě Andreje Babiše (viz
 `data/government.toml`, ověřeno proti oficiálnímu seznamu členů vlády).

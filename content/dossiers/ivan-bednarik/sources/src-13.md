@@ -9,17 +9,10 @@ weight = 13
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-13"
 view_model = "generated/views/dossiers/ivan-bednarik/sources/src-13.json"
-subjects = ["bednarik"]
 dossier = "ivan-bednarik"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-13"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/bednarik-skonci-posledniho-unora-v-cele-ceskych-drah-docasne-je-potom-povede-namestek-kraus-23142"
-published = "2022-02-15"
-retrieved = "2026-07-30"
-claims = ["CLM-40"]
 +++
 **Bednárik skončí posledního února v čele Českých drah, dočasně je potom povede náměstek Kraus**
 

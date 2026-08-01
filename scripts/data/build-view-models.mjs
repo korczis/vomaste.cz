@@ -25,6 +25,8 @@ import { mkdirSync, rmSync, writeFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadCanonicalDataset, compileDataset } from "./lib/dataset.mjs";
+import { readGovernmentRoster } from "./lib/government.mjs";
+import { dossierGraphDepths } from "./lib/graph-depth.mjs";
 
 const REPO_ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 export const VIEWS_REL = "data/generated/views";
@@ -51,7 +53,7 @@ const jsonldFragment = (record) => Object.fromEntries(Object.entries(record).fil
  * buildViewModels(compiled) → Map<posixRelPath, object>
  * relPath je relativní k data/generated/views/.
  */
-export function buildViewModels(compiled) {
+export function buildViewModels(compiled, { governmentRoster = new Map() } = {}) {
   const views = new Map();
   const byId = compiled.indexes.byId;
 
@@ -185,8 +187,36 @@ export function buildViewModels(compiled) {
     })),
   });
 
-  const countsOf = (slug) =>
-    Object.fromEntries(VIEW_REGISTRIES.map((registry) => [registry, visibleRecords(slug, registry).length]));
+  // counts.entities = globální entity, jejichž `dossiers` obsahuje slug
+  // (fáze H — dřívější stats.toml entities_total; entity nevlastní žádný
+  // dossier, je to filtr členství).
+  const countsOf = (slug) => ({
+    ...Object.fromEntries(VIEW_REGISTRIES.map((registry) => [registry, visibleRecords(slug, registry).length])),
+    entities: compiled.entities.filter((w) => (w.record.dossiers ?? []).includes(slug)).length,
+  });
+
+  // Registr dossierů v redakčním (autorizačním) pořadí — kanonické pole
+  // dossier.order (fáze H, dřívější pořadí bloků data/dossiers.toml).
+  const registryOrdered = dossierWrappers
+    .slice()
+    .sort((a, b) => (a.record.order ?? 0) - (b.record.order ?? 0));
+  // Kanonický vlastník záznamů: bez canonicalDossier (agregát/samostatný)
+  // nebo canonicalDossier == vlastní slug.
+  const isOwnerDossier = (record) => !record.canonicalDossier || record.canonicalDossier === record.slug;
+
+  // Update záznamy dossieru (kanonický registr updates, pořadí = compiled
+  // pořadí identifikátorů = chronologické append-only pořadí) —
+  // prezentační tvar pro šablony (dřívější updates.toml).
+  const updatesOf = (slug) =>
+    (recordsOf.get(slug)?.get("updates") ?? []).map((uw) => ({
+      date: uw.record.date,
+      summary: uw.record.summary,
+      addedClaims: (uw.record.addedClaims ?? []).map((ref) => localPart(ref["@id"])),
+      updatedClaims: (uw.record.updatedClaims ?? []).map((ref) => localPart(ref["@id"])),
+      addedGaps: (uw.record.addedGaps ?? []).map((ref) => localPart(ref["@id"])),
+      closedGaps: (uw.record.closedGaps ?? []).map((ref) => localPart(ref["@id"])),
+      reviewedSources: (uw.record.reviewedSources ?? []).map((ref) => localPart(ref["@id"])),
+    }));
 
   // --- dossiery ---------------------------------------------------------
   for (const w of dossierWrappers) {
@@ -228,6 +258,62 @@ export function buildViewModels(compiled) {
         { title: REGISTRY_LABELS[registry], route: registryRoute(slug, registry) },
       ]),
     );
+    // Subjektové entity dossieru (fáze H — dřívější front matter
+    // subject_entities): vlastní subjekt, u agregátu subjekty
+    // agregovaných dossierů.
+    overview.subjectEntities = record.subject
+      ? [record.subject]
+      : (record.aggregates ?? []).map((s) => dossierBySlug.get(s)?.record.subject).filter(Boolean);
+    // Historie aktualizací viditelná NA STRÁNCE dossieru (fáze H —
+    // dřívější load_data updates.toml): kanonický vlastník má vlastní
+    // updates, entity view sdílí updates kanonického vlastníka.
+    {
+      const ownerSlug = record.canonicalDossier && record.canonicalDossier !== slug ? record.canonicalDossier : slug;
+      overview.updates = updatesOf(ownerSlug);
+    }
+    // Agregát: rozklad na zdrojové dossiery s tituly/routami/počty
+    // (dřívější registry lookup v šabloně dossier.html).
+    if (record.aggregates?.length) {
+      overview.aggregatesResolved = record.aggregates.map((s) => ({
+        slug: s,
+        title: dossierBySlug.get(s)?.record.title ?? s,
+        route: dossierRoute(s),
+        claims: countsOf(s).claims,
+      }));
+    }
+    // Entity dossier: kanonický vlastník + sourozenci (dřívější registry
+    // lookup v šabloně entity-dossier.html). U self-canonical dossieru
+    // ukazuje sám na sebe a siblings je prázdné — stejně jako dřív.
+    if (record.canonicalDossier) {
+      const canonicalRecord = dossierBySlug.get(record.canonicalDossier)?.record;
+      overview.canonical = {
+        slug: record.canonicalDossier,
+        title: canonicalRecord?.title ?? record.canonicalDossier,
+        route: dossierRoute(record.canonicalDossier),
+        siblings: (canonicalRecord?.aggregates ?? [])
+          .filter((s) => s !== slug)
+          .map((s) => ({ slug: s, title: dossierBySlug.get(s)?.record.title ?? s })),
+      };
+    }
+    // Kurátorovaný graf dossieru (fáze H — dřívější graph.toml): per-dossier
+    // popisky uzlů, cluster membership a DETERMINISTICKY POČÍTANÁ hloubka
+    // (BFS od subjektových uzlů, scripts/data/lib/graph-depth.mjs) — depth
+    // už není kurátorované pole.
+    if (record.graph) {
+      const depths = dossierGraphDepths(compiled, slug);
+      overview.graph = {
+        nodes: record.graph.nodes.map((n) => {
+          const node = { entity: n.entity, label: n.label, subject: n.subject === true, depth: depths.get(n.entity) ?? null };
+          if (n.cluster !== undefined) node.cluster = n.cluster;
+          if (n.claims !== undefined) node.claims = n.claims;
+          if (n.sources !== undefined) node.sources = n.sources;
+          return node;
+        }),
+        edges: [...record.graph.edges],
+        clusters: record.graph.clusters ?? [],
+        sourceFamilies: record.graph.sourceFamilies ?? [],
+      };
+    }
     overview.jsonld = jsonldFragment(record);
     views.set(`dossiers/${slug}/overview.json`, overview);
 
@@ -301,6 +387,10 @@ export function buildViewModels(compiled) {
       });
       views.set(`dossiers/${slug}/${registry}-index.json`, {
         dossier: slug,
+        // Titulek/vlastník dossieru pro breadcrumby filtrovaných pohledů
+        // (fáze H — dřívější front matter dossier_title/canonical_dossier).
+        dossierTitle: record.title,
+        canonicalDossier: record.canonicalDossier ?? null,
         registry,
         title: REGISTRY_LABELS[registry],
         route: registryRoute(slug, registry),
@@ -322,6 +412,15 @@ export function buildViewModels(compiled) {
         if (registry === "relations") {
           resolved.sourceEntity = entityLink(r.sourceEntity["@id"]);
           resolved.targetEntity = entityLink(r.targetEntity["@id"]);
+        }
+        // Subjekt → dossier(y) subjektu (fáze H — dřívější registry lookup
+        // v šabloně dossier-claim.html): pořadí = subjects × registr.
+        if (registry === "claims" && r.subjects?.length) {
+          resolved.subjectDossiers = r.subjects.flatMap((subj) =>
+            registryOrdered
+              .filter((dw) => dw.record.subject === subj)
+              .map((dw) => ({ subject: subj, slug: dw.dossier, title: dw.record.title, route: dossierRoute(dw.dossier) })),
+          );
         }
         const detail = {
           dossier: slug,
@@ -389,6 +488,41 @@ export function buildViewModels(compiled) {
     };
     if (r.routeAliases) view.routeAliases = r.routeAliases;
     if (r.snapshotDate) view.snapshotDate = r.snapshotDate;
+    if (r.description !== undefined) view.description = r.description;
+    // Provenience objevení (fáze H — kanonická, viz entity.schema.json);
+    // government_* z data/government.toml (kanonický vlastník, injektuje
+    // se jako governmentRoster mapou — view model je čistá projekce).
+    if (r.provenance !== undefined) view.provenance = r.provenance;
+    // Resolved provenienční chipy pro šablonu entity.html (fáze H —
+    // dřívější resolve přes registry sekce a content front matter):
+    // lokální id se resolvují per dossier členství, ve STEJNÉM vnořeném
+    // pořadí (dossier × id) jako dřívější šablona — composite-key id se
+    // legitimně resolvuje ve VÍCE dossierech na různé stránky.
+    if (r.provenance !== undefined) {
+      const chipsFor = (ids, registry, detail = false) =>
+        (r.dossiers ?? []).flatMap((slug) =>
+          (ids ?? []).flatMap((id) => {
+            const rw = compiled.indexes.byDossierIdentifier[`${slug}:${id}`];
+            if (!rw || rw.registry !== registry) return [];
+            const chip = { dossier: slug, identifier: id, route: rw.route };
+            if (detail) {
+              chip.status = rw.record.status;
+              chip.statusLabel = rw.record.statusLabel;
+              chip.text = rw.record.text;
+            }
+            return [chip];
+          }),
+        );
+      view.provenanceResolved = {
+        discoveredVia: chipsFor(r.provenance.discoveredVia, "relations"),
+        claims: chipsFor(r.provenance.claimRefs, "claims", true),
+        sources: chipsFor(r.provenance.sourceRefs, "sources"),
+      };
+    }
+    {
+      const gov = governmentRoster.get(r.entityId);
+      if (gov) view.government = { office: gov.office, party: gov.party };
+    }
     view.breadcrumb = [{ title: "Registr entit", route: "/entities/" }, { title: r.title }];
     view.content = r.content ?? [];
     view.dossiers = (r.dossiers ?? []).map(dossierLink);
@@ -418,16 +552,24 @@ export function buildViewModels(compiled) {
   views.set("entities-index.json", {
     route: "/entities/",
     count: compiled.entities.length,
-    rows: orderedEntities.map((w) => ({
-      "@id": w.record["@id"],
-      entityId: w.record.entityId,
-      title: w.record.title,
-      entityType: w.record.entityType,
-      publicationRole: w.record.publicationRole,
-      coverageState: w.record.coverageState,
-      route: w.route,
-      dossiers: (w.record.dossiers ?? []).map(dossierLink),
-    })),
+    // Registr dossierů v redakčním pořadí (fáze H — dřívější
+    // load_data("data/dossiers.toml") pro počet a popisky skupin).
+    dossierRegistry: registryOrdered.map((w) => ({ slug: w.dossier, title: w.record.title })),
+    rows: orderedEntities.map((w) => {
+      const row = {
+        "@id": w.record["@id"],
+        entityId: w.record.entityId,
+        title: w.record.title,
+        entityType: w.record.entityType,
+        publicationRole: w.record.publicationRole,
+        coverageState: w.record.coverageState,
+        route: w.route,
+        dossiers: (w.record.dossiers ?? []).map(dossierLink),
+      };
+      const gov = governmentRoster.get(w.record.entityId);
+      if (gov) row.government = { office: gov.office, party: gov.party };
+      return row;
+    }),
   });
 
   // --- dossiers index + landing ----------------------------------------
@@ -452,7 +594,32 @@ export function buildViewModels(compiled) {
     relations: compiled.counts.perType.relation ?? 0,
   };
   views.set("dossiers-index.json", { route: "/dossiers/", count: cards.length, totals, cards });
-  views.set("landing.json", { totals, dossiers: cards.filter((c) => c.navigationVisible) });
+  // Landing (fáze H): kanoničtí vlastníci v redakčním pořadí registru
+  // (dossier.order) + jejich update historie + součty se sémantikou
+  // dřívějších stats.toml dlaždic (entities = Σ členství per dossier,
+  // entita ve víc dossierech se počítá vícekrát — stejné číslo jako dřív).
+  const canonicalOrdered = registryOrdered.filter((w) => isOwnerDossier(w.record));
+  const canonicalTotals = { claims: 0, sources: 0, cases: 0, gaps: 0, entities: 0, relations: 0 };
+  for (const w of canonicalOrdered) {
+    const c = countsOf(w.dossier);
+    canonicalTotals.claims += c.claims;
+    canonicalTotals.sources += c.sources;
+    canonicalTotals.cases += c.cases;
+    canonicalTotals.gaps += c.gaps;
+    canonicalTotals.entities += c.entities;
+    canonicalTotals.relations += c.relations;
+  }
+  views.set("landing.json", {
+    totals,
+    dossiers: cards.filter((c) => c.navigationVisible),
+    canonicalTotals,
+    primaryCanonical: canonicalOrdered[0]?.dossier ?? null,
+    canonicalDossiers: canonicalOrdered.map((w) => ({
+      slug: w.dossier,
+      title: w.record.title,
+      updates: updatesOf(w.dossier),
+    })),
+  });
 
   // --- mapa (graf) ------------------------------------------------------
   views.set("map.json", {
@@ -483,7 +650,7 @@ if (isMain) {
   // jen načte a zkompiluje (loader hází tvrdou chybu na nečitelný soubor).
   const model = await loadCanonicalDataset();
   const compiled = compileDataset(model);
-  const views = buildViewModels(compiled);
+  const views = buildViewModels(compiled, { governmentRoster: readGovernmentRoster(REPO_ROOT) });
   writeViewModels(views, join(REPO_ROOT, VIEWS_REL));
   console.log(`View modely: ${views.size} souborů → ${VIEWS_REL}/`);
   console.log("OK");

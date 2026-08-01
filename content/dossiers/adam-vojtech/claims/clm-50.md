@@ -13,10 +13,5 @@ dossier = "adam-vojtech"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-50"
-status = "status-quote"
-status_label = "CITACE"
-summary = "Vojtěch 30. dubna 2026 na sněmovním zdravotnickém výboru uvedl: „Národní očkovací strategie, i kdyby chtěla, tak nemůže zavést žádné povinné očkování“ — zavedení povinnosti by podle něj vyžadovalo novelu zákona o ochraně veřejného zdraví."
-sources = ["SRC-30"]
-subjects = ["vojtech"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/adam-vojtech/_index.md#registr-tvrzeni).

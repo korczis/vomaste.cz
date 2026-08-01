@@ -9,17 +9,10 @@ weight = 8
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-08"
 view_model = "generated/views/dossiers/adam-vojtech/sources/src-08.json"
-subjects = ["vojtech"]
 dossier = "adam-vojtech"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-08"
-outlet = "Zdravotnický deník"
-src_type = "zpravodajství"
-url = "https://www.zdravotnickydenik.cz/2026/07/vojtechuv-navrh-rozviril-debatu-o-babisovi/"
-published = "2026-07-07"
-retrieved = "2026-07-30"
-claims = ["CLM-13", "CLM-14", "CLM-15", "CLM-17"]
 +++
 **Od prevence ke střetu zájmů. Vojtěchův návrh rozvířil debatu o Babišovi**
 

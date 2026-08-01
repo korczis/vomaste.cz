@@ -13,10 +13,5 @@ dossier = "jaromir-zuna"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-35"
-status = "status-quote"
-status_label = "CITACE"
-summary = "Prezident Pavel na Bezpečnostní radě státu uvedl, že koncepce musí mít dlouhodobý charakter a „není možné, aby se měnila z roku na rok“, a upozornil, že chybí finanční rámec ze strany vlády."
-sources = ["SRC-19"]
-subjects = ["zuna"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jaromir-zuna/_index.md#registr-tvrzeni).

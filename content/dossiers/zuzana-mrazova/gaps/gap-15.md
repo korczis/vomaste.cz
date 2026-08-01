@@ -9,14 +9,10 @@ weight = 15
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/zuzana-mrazova/gaps/GAP-15"
 view_model = "generated/views/dossiers/zuzana-mrazova/gaps/gap-15.json"
-subjects = ["mrazova"]
 dossier = "zuzana-mrazova"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-15"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Kritika resortní agendy Mrázové mimo čtyři autorizovaná témata (odklad účinnosti zákona o podpoře bydlení, škrty v podpoře dostupného bydlení) nebyla dotěžena.
 

@@ -9,17 +9,10 @@ weight = 14
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-14"
 view_model = "generated/views/dossiers/ivan-bednarik/sources/src-14.json"
-subjects = ["bednarik"]
 dossier = "ivan-bednarik"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-14"
-outlet = "Ministerstvo dopravy ČR"
-src_type = "oficiální primární zdroj"
-url = "https://md.gov.cz/Media/Media-a-tiskove-zpravy/Mene-byrokracie,-otevrenejsi-tendry-a-uspory-Spra"
-published = "2026-02-24"
-retrieved = "2026-07-30"
-claims = ["CLM-18", "CLM-19"]
 +++
 **Méně byrokracie, otevřenější tendry a úspory Správy železnic**
 

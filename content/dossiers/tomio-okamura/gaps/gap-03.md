@@ -9,14 +9,10 @@ weight = 3
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/tomio-okamura/gaps/GAP-03"
 view_model = "generated/views/dossiers/tomio-okamura/gaps/gap-03.json"
-subjects = ["okamura"]
 dossier = "tomio-okamura"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-03"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Přesná právní věta výroku rozsudku a citovaný paragraf trestního zákoníku.
 

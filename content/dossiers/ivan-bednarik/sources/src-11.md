@@ -9,17 +9,10 @@ weight = 11
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-11"
 view_model = "generated/views/dossiers/ivan-bednarik/sources/src-11.json"
-subjects = ["bednarik"]
 dossier = "ivan-bednarik"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-11"
-outlet = "Česká infrastruktura"
-src_type = "zpravodajství"
-url = "https://www.ceskainfrastruktura.cz/zpravy/vysokorychlostni-spojeni-a-podpora-nakladni-zeleznicni-dopravy-ministr-bednarik-jednal-se-svym-nemeckym-protejskem/"
-published = "2026-03-06"
-retrieved = "2026-07-30"
-claims = ["CLM-27", "CLM-28"]
 +++
 **Vysokorychlostní spojení a podpora nákladní železniční dopravy. Ministr Bednárik jednal se svým německým protějškem**
 

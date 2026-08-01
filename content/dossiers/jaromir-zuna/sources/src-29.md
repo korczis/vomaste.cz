@@ -9,17 +9,10 @@ weight = 29
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-29"
 view_model = "generated/views/dossiers/jaromir-zuna/sources/src-29.json"
-subjects = ["zuna"]
 dossier = "jaromir-zuna"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-29"
-outlet = "ČeskéNoviny.cz (ČTK)"
-src_type = "zpravodajství"
-url = "https://www.ceskenoviny.cz/zpravy/bezpecnostni-rada-statu-bude-za-ucasti-pavla-opet-projednavat-armadni-koncepci/2846309"
-published = "2026-07-02"
-retrieved = "2026-07-30"
-claims = ["CLM-36"]
 +++
 **Bezpečnostní rada státu bude za účasti Pavla opět projednávat armádní koncepci**
 

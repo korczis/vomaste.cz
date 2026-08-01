@@ -9,17 +9,10 @@ weight = 19
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-19"
 view_model = "generated/views/dossiers/jeronym-tejc/sources/src-19.json"
-subjects = ["tejc"]
 dossier = "jeronym-tejc"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-19"
-outlet = "Česká justice"
-src_type = "zpravodajství"
-url = "https://www.ceska-justice.cz/2026/06/viktorka-vrazda-novela-marvanova-tejc/"
-published = "2026-06-01"
-retrieved = "2026-07-30"
-claims = ["CLM-37", "CLM-38"]
 +++
 **Otec Viktorky byl nebezpečný už před vraždou. Tejcova novela to neřeší, tvrdí Marvanová**
 

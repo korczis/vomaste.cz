@@ -9,17 +9,10 @@ weight = 2
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-02"
 view_model = "generated/views/dossiers/lubomir-metnar/sources/src-02.json"
-subjects = ["metnar"]
 dossier = "lubomir-metnar"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-02"
-outlet = "Seznam Zprávy"
-src_type = "zpravodajství"
-url = "https://www.seznamzpravy.cz/clanek/domaci-kauzy-babisova-vlada-rusi-nku-ochranku-chteji-nas-vyhladovet-rika-sef-uradu-311921"
-published = "2026-07-29"
-retrieved = "2026-07-30"
-claims = ["CLM-04", "CLM-05", "CLM-06", "CLM-07", "CLM-08", "CLM-09", "CLM-10", "CLM-11", "CLM-12", "CLM-15", "CLM-16", "CLM-17", "CLM-18", "CLM-19", "CLM-20", "CLM-21", "CLM-22", "CLM-23", "CLM-24"]
 +++
 **Babišova vláda ruší NKÚ ochranku. Chtějí nás vyhladovět, říká šéf úřadu**
 

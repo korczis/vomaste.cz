@@ -10,17 +10,10 @@ aliases = ["/dossier/zdroje/src-23/"]
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-23"
 view_model = "generated/views/dossiers/macinka-turek/sources/src-23.json"
-subjects = ["turek"]
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-23"
-outlet = "Hlídač státu"
-family = "hlidac-statu"
-src_type = "veřejný rejstřík / transparentní databáze"
-url = "https://www.hlidacstatu.cz/Osoba/vazby/filip-turek"
-retrieved = "2026-07-22"
-claims = ["CLM-20"]
 +++
 Hlídač státu je nezisková transparentní databáze provozovaná Aliancí pro
 otevřenost, která strojově agreguje data z obchodního rejstříku (justice.cz)

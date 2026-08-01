@@ -20,5 +20,23 @@
   "routeAliases": [
     "/dossiers/macinka-turek/entities/zapper-club/"
   ],
-  "order": 22
+  "order": 22,
+  "provenance": {
+    "discoveredAt": "2026-07-29",
+    "discoveredVia": [
+      "edge-turek-zapperclub",
+      "edge-zapperclub-mzdrav",
+      "edge-zapperclub-szpi"
+    ],
+    "claimRefs": [
+      "CLM-20",
+      "CLM-31"
+    ],
+    "sourceRefs": [
+      "SRC-23",
+      "SRC-34"
+    ],
+    "cluster": "zapper-club",
+    "depth": 1
+  }
 }

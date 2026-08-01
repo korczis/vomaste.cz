@@ -9,17 +9,10 @@ weight = 34
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-34"
 view_model = "generated/views/dossiers/igor-cerveny/sources/src-34.json"
-subjects = ["cerveny"]
 dossier = "igor-cerveny"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-34"
-outlet = "ČT24 (Česká televize)"
-src_type = "veřejnoprávní zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/mzp-rusi-desitky-pracovnich-mist-podle-deniku-n-zridi-nove-oddeleni-pod-turkek-371933"
-published = "2026-03-31"
-retrieved = "2026-07-31"
-claims = ["CLM-47"]
 +++
 ČT24 dne 31. 3. 2026 cituje ministra Červeného: „Ministerstvo životního
 prostředí (MŽP) k začátku dubna zrušilo na úřadu při systemizaci 38

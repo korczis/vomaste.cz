@@ -9,14 +9,10 @@ weight = 8
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/martin-sebestyan/gaps/GAP-08"
 view_model = "generated/views/dossiers/martin-sebestyan/gaps/gap-08.json"
-subjects = ["sebestyan"]
 dossier = "martin-sebestyan"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-08"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Nepodařilo se ověřit obsah zprávy o zahájení trestního řízení Úřadem evropského veřejného žalobce (EPPO) kvůli dotacím pro Agrofert a o tom, které české úřady jsou prověřovány.
 

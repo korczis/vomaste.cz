@@ -9,17 +9,10 @@ weight = 10
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-10"
 view_model = "generated/views/dossiers/alena-schillerova/sources/src-10.json"
-subjects = ["schillerova"]
 dossier = "alena-schillerova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-10"
-outlet = "Echo24"
-src_type = "zpravodajství"
-url = "https://m.echo24.cz/a/HnkLt/zpravy-ekonomika-prezident-ukazal-nazorovy-veletoc-rozpoctova-pravidla-schillerova-statni-rozpocet"
-published = "2026-07-22"
-retrieved = "2026-07-30"
-claims = ["CLM-20", "CLM-22"]
 +++
 **Prezident ukázal názorový veletoč, říká Schillerová k vetu změny rozpočtových pravidel**
 

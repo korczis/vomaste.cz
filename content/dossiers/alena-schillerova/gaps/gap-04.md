@@ -9,14 +9,10 @@ weight = 4
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/alena-schillerova/gaps/GAP-04"
 view_model = "generated/views/dossiers/alena-schillerova/gaps/gap-04.json"
-subjects = ["schillerova"]
 dossier = "alena-schillerova"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-04"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Není potvrzeno, zda opozice skutečně podala ústavní stížnost proti novele, ani jaké konkrétní ustanovení by napadala.
 

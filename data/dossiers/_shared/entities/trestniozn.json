@@ -20,5 +20,20 @@
   "routeAliases": [
     "/dossiers/macinka-turek/entities/trestniozn/"
   ],
-  "order": 12
+  "order": 12,
+  "provenance": {
+    "discoveredAt": "2026-07-29",
+    "discoveredVia": [
+      "edge-turek-trestniozn",
+      "edge-trestniozn-statnizastupitelstvi"
+    ],
+    "claimRefs": [
+      "CLM-25"
+    ],
+    "sourceRefs": [
+      "SRC-28"
+    ],
+    "cluster": "trestni-oznameni",
+    "depth": 1
+  }
 }

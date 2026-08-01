@@ -10,17 +10,10 @@ aliases = ["/dossier/zdroje/src-48/"]
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-48"
 view_model = "generated/views/dossiers/macinka-turek/sources/src-48.json"
-subjects = ["turek"]
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-48"
-outlet = "Aktuálně.cz"
-src_type = "zpravodajství"
-url = "https://zpravy.aktualne.cz/domaci/policie-odlozila-proverovani-turka-v-kauze-nenavistnych-vyroku/r~aaa29fddbab8d2fc9ab5d275662ace2f/?lp=1"
-published = "2026-07-28"
-retrieved = "2026-07-29"
-claims = ["CLM-41", "CLM-42"]
 +++
 Nezávislé potvrzení zprávy Deníku N (SRC-47) od jiného vydavatele:
 policie odložila prověřování Turkových nenávistných výroků na

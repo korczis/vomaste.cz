@@ -10,17 +10,10 @@ aliases = ["/dossier/zdroje/src-17/"]
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-17"
 view_model = "generated/views/dossiers/macinka-turek/sources/src-17.json"
-subjects = ["macinka"]
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-17"
-outlet = "Investigace.cz"
-src_type = "investigativní žurnalistika"
-url = "https://www.investigace.cz/ministr-petr-macinka-nepriznal-podil-v-ukrajinske-firme/"
-published = "2025-12-19"
-retrieved = "2026-07-22"
-claims = ["CLM-14", "CLM-15"]
 +++
 Investigativní web Investigace.cz zjistil, že ministr zahraničních věcí
 Petr Macinka neuvedl ve svém majetkovém přiznání dvacetiprocentní podíl

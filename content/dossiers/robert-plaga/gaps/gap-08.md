@@ -9,14 +9,10 @@ weight = 8
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/robert-plaga/gaps/GAP-08"
 view_model = "generated/views/dossiers/robert-plaga/gaps/gap-08.json"
-subjects = ["plaga"]
 dossier = "robert-plaga"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-08"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Nepodařilo se ověřit doslovné znění navrhované novely (sněmovní tisk 232/0) ani text stanoviska vlády (tisk 232/1).
 

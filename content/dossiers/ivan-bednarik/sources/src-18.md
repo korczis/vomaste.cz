@@ -9,17 +9,10 @@ weight = 18
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-18"
 view_model = "generated/views/dossiers/ivan-bednarik/sources/src-18.json"
-subjects = ["bednarik"]
 dossier = "ivan-bednarik"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-18"
-outlet = "Transport Minutes"
-src_type = "zpravodajství"
-url = "https://www.transportminutes.eu/cesky-ministr-dopravy-naleha-na-eu-aby-prijala-opatreni-v-oblasti-zeleznicni-nakladni-dopravy/"
-published = "2025-12-21"
-retrieved = "2026-07-30"
-claims = ["CLM-35"]
 +++
 **Český ministr dopravy naléhá na EU, aby přijala opatření v oblasti železniční nákladní dopravy**
 

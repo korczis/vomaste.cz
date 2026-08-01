@@ -9,17 +9,10 @@ weight = 30
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-30"
 view_model = "generated/views/dossiers/adam-vojtech/sources/src-30.json"
-subjects = ["vojtech"]
 dossier = "adam-vojtech"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-30"
-outlet = "Zdravé zprávy"
-src_type = "zpravodajství"
-url = "https://www.zdravezpravy.cz/2026/04/30/ministr-vojtech-ockovaci-strategie-ockovani-nerozsiruje-na-to-nema-pravni-silu/"
-published = "2026-04-30"
-retrieved = "2026-07-30"
-claims = ["CLM-50"]
 +++
 **Vojtěch: Očkovací strategie očkování nerozšiřuje, na to nemá právní sílu**
 

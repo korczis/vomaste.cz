@@ -13,10 +13,5 @@ dossier = "igor-cerveny"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-03"
-status = "status-corroborated"
-status_label = "CORROBORATED"
-summary = "Zhruba měsíc po zvolení poslancem (do Sněmovny zvolen 4. října 2025) převedl Červený dům dohodou o vypořádání společného jmění na manželku; spoluvlastníkem byl i v den zvolení."
-sources = ["SRC-02", "SRC-03"]
-subjects = ["cerveny"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/igor-cerveny/_index.md#registr-tvrzeni).

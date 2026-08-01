@@ -9,17 +9,10 @@ weight = 9
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-09"
 view_model = "generated/views/dossiers/tunde-bartha/sources/src-09.json"
-subjects = ["bartha"]
 dossier = "tunde-bartha"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-09"
-outlet = "Agrofert (agrofert.cz)"
-src_type = "oficiální primární zdroj"
-url = "https://www.agrofert.cz/akce-a-aktuality/agrofert-posiluje-partnerstvi-s-univerzitou-istvana-szechenyiho-podpori-rozvoj"
-published = "2024-09-13"
-retrieved = "2026-08-01"
-claims = ["CLM-13"]
 +++
 Firemní aktualita Agrofertu z 13. 9. 2024 označuje Tünde Barthu za
 „country managerku za AGROFERT Hungária, která má zároveň na starosti

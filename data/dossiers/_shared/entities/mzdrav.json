@@ -21,6 +21,20 @@
     "/dossiers/macinka-turek/entities/mzdrav/"
   ],
   "order": 20,
+  "provenance": {
+    "discoveredAt": "2026-07-29",
+    "discoveredVia": [
+      "edge-zapperclub-mzdrav"
+    ],
+    "claimRefs": [
+      "CLM-31"
+    ],
+    "sourceRefs": [
+      "SRC-34"
+    ],
+    "cluster": "zapper-club",
+    "depth": 2
+  },
   "content": [
     {
       "type": "markdown",

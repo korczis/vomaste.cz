@@ -21,9 +21,11 @@ const read = (p) => readFileSync(join(ROOT, p), "utf8");
 const COMPONENT = "templates/partials/dossier-directory.html";
 const CONTROLLER = "assets/js/modules/table-filter.js";
 
-// data/dossiers.toml je verzovaný registr, ne generovaný soubor.
-const registrySlugs = () => [...read("data/dossiers.toml").matchAll(/^slug\s*=\s*"([^"]+)"/gm)].map((m) => m[1]);
-const registryTitles = () => [...read("data/dossiers.toml").matchAll(/^title\s*=\s*"([^"]+)"/gm)].map((m) => m[1]);
+// Registrem dossierů je kanonický dataset (T-028 fáze H) — čte se přes
+// sdílený registry reader, žádný druhý parser.
+import { loadDossierRegistry } from "../dossier/lib/dossier-registry.mjs";
+const registrySlugs = () => loadDossierRegistry().map((d) => d.slug);
+const registryTitles = () => loadDossierRegistry().map((d) => d.title);
 
 test("komponenta vykresluje všechny tři projekce serverem", () => {
   // Progresivní vylepšení: bez JavaScriptu musí zůstat použitelný aspoň

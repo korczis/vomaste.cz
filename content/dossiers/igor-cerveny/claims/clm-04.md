@@ -13,10 +13,5 @@ dossier = "igor-cerveny"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-04"
-status = "status-corroborated"
-status_label = "CORROBORATED"
-summary = "Podle Blesku si Červený při převodu domu na manželku ponechal bezúplatné doživotní užívací právo; podle Seznam Zpráv na ni převedl také dva bankovní účty a osobní auto."
-sources = ["SRC-02", "SRC-03"]
-subjects = ["cerveny"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/igor-cerveny/_index.md#registr-tvrzeni).

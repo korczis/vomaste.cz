@@ -9,18 +9,10 @@ weight = 27
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-27"
 view_model = "generated/views/dossiers/oto-klempir/sources/src-27.json"
-subjects = ["klempir"]
 dossier = "oto-klempir"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-27"
-outlet = "ČeskéNoviny.cz (ČTK)"
-family = "ctk"
-src_type = "agenturní zpravodajství"
-url = "https://www.ceskenoviny.cz/zpravy/vyberove-rizeni-na-reditele-narodni-galerie-praha-klempir-zrusil-chce-nove/2846745"
-published = "2026-07-02"
-retrieved = "2026-07-31"
-claims = ["CLM-22"]
 +++
 ČeskéNoviny.cz (ČTK) dne 2. 7. 2026 potvrzuje zrušení výběrového řízení
 na generálního ředitele Národní galerie Praha, jmenuje tři postupující

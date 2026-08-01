@@ -13,10 +13,5 @@ dossier = "karel-havlicek"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-36"
-status = "status-quote"
-status_label = "CITACE"
-summary = "Havlíček 14. července 2026 připustil, že Senát dostane novelu až v srpnu: „Já jsem hodně tlačil na to, aby to šlo ještě do konce července, ale to se časově zvládnout nedá. Takže věřím, že se nám to podaří do té srpnové senátní schůze.“"
-sources = ["SRC-21"]
-subjects = ["havlicek"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/karel-havlicek/_index.md#registr-tvrzeni).

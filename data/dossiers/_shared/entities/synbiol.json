@@ -20,6 +20,24 @@
     "/dossiers/andrej-babis/entities/synbiol/"
   ],
   "order": 16,
+  "provenance": {
+    "discoveredAt": "2026-07-30",
+    "discoveredVia": [
+      "edge-babis-synbiol",
+      "edge-synbiol-hartenberg",
+      "edge-synbiol-komise"
+    ],
+    "claimRefs": [
+      "CLM-39",
+      "CLM-41",
+      "CLM-42"
+    ],
+    "sourceRefs": [
+      "SRC-16",
+      "SRC-17"
+    ],
+    "depth": 1
+  },
   "content": [
     {
       "type": "markdown",

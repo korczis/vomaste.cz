@@ -54,18 +54,19 @@
     {% endif %}
   {% endfor %}
 
-  {#- Souhrn se sčítá z týchž stats.toml, které plní řádky tabulky. -#}
+  {#- Souhrn se sčítá z týchž view-model počtů (card.counts ← kanonický
+      dataset, T-028 fáze H), které plní řádky tabulky. -#}
   {% set_global t_claims = 0 %}
   {% set_global t_sources = 0 %}
   {% set_global t_gaps = 0 %}
   {% set_global t_relations = 0 %}
-  {% for slug in entity_dossiers %}
-    {% set counts = load_data(path="data/dossiers/" ~ slug ~ "/stats.toml") %}
-    {% if counts %}
-      {% set_global t_claims = t_claims + counts.claims_total %}
-      {% set_global t_sources = t_sources + counts.sources_total %}
-      {% set_global t_gaps = t_gaps + counts.gaps_total %}
-      {% set_global t_relations = t_relations + counts.relations_total %}
+  {% for card in idx.cards %}
+    {% if card.dossierType != "aggregate" %}
+      {% set counts = card.counts %}
+      {% set_global t_claims = t_claims + counts.claims %}
+      {% set_global t_sources = t_sources + counts.sources %}
+      {% set_global t_gaps = t_gaps + counts.gaps %}
+      {% set_global t_relations = t_relations + counts.relations %}
     {% endif %}
   {% endfor %}
 

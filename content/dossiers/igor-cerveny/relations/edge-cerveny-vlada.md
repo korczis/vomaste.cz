@@ -10,14 +10,7 @@ record_id = "https://vomaste.cz/id/dossiers/igor-cerveny/relations/edge-cerveny-
 view_model = "generated/views/dossiers/igor-cerveny/relations/edge-cerveny-vlada.json"
 dossier = "igor-cerveny"
 record_type = "relation"
+lang = "cs"
 rel_id = "edge-cerveny-vlada"
-source = "cerveny"
-target = "vlada"
-relation_type = "HOLDS_ROLE"
-label = "ministr životního prostředí"
-status = "contextual"
-claims = ["CLM-01"]
-sources = ["SRC-01"]
-subjects = ["cerveny"]
 +++
 Kontextový, strukturální vztah — dossier jej neuvádí jako vlastní doloženou investigaci, jen jako veřejně nesporné pozadí.

@@ -9,14 +9,10 @@ weight = 7
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/gaps/GAP-07"
 view_model = "generated/views/dossiers/karel-havlicek/gaps/gap-07.json"
-subjects = ["havlicek"]
 dossier = "karel-havlicek"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-07"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Není ověřeno, zda a jak se Pekárna Zelená louka nebo Agrofert bránily proti odnětí dotace správní žalobou a s jakým výsledkem.
 

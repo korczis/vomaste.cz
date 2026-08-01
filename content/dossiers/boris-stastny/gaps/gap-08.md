@@ -9,14 +9,10 @@ weight = 8
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/boris-stastny/gaps/GAP-08"
 view_model = "generated/views/dossiers/boris-stastny/gaps/gap-08.json"
-subjects = ["stastny"]
 dossier = "boris-stastny"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-08"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Reakce Českého olympijského výboru a jednotlivých sportovních svazů na odvolání Ondřeje Šebka bezprostředně v prosinci 2025.
 

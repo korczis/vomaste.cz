@@ -13,10 +13,5 @@ dossier = "jaromir-zuna"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-42"
-status = "status-corroborated"
-status_label = "CORROBORATED"
-summary = "Premiér Babiš na summitu NATO v Ankaře 7.–8. července 2026, kam ho doprovázel i ministr obrany Zůna, oznámil navýšení obranného rozpočtu o 36 miliard korun a poprvé dosažení 2 % HDP, spolu se zvýšením počtu vojáků a aktivních záloh minimálně o čtvrtinu."
-sources = ["SRC-20", "SRC-33"]
-subjects = ["zuna"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jaromir-zuna/_index.md#registr-tvrzeni).

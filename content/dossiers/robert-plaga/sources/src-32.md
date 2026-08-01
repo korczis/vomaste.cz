@@ -9,18 +9,10 @@ weight = 32
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-32"
 view_model = "generated/views/dossiers/robert-plaga/sources/src-32.json"
-subjects = ["plaga"]
 dossier = "robert-plaga"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-32"
-outlet = "ČeskéNoviny.cz (ČTK)"
-family = "ctk"
-src_type = "agenturní zpravodajství"
-url = "https://www.ceskenoviny.cz/zpravy/vlada-podporila-zakaz-pouzivani-mobilnich-telefonu-ve-skolach/2852409"
-published = "2026-07-20"
-retrieved = "2026-07-31"
-claims = ["CLM-14"]
 +++
 ČeskéNoviny.cz dne 20. 7. 2026: vláda podpořila zákaz mobilních
 telefonů v mateřských, základních školách a nižších ročnících gymnázií.

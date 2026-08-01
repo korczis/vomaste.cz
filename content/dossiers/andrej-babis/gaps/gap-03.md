@@ -13,9 +13,6 @@ dossier = "andrej-babis"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-03"
-priority = "nízká"
-checked = "2026-07-30"
-claims = ["CLM-53"]
 +++
 **Co se od poslední revize uzavřelo (30. 7. 2026).** Dřívější znění této
 mezery říkalo, že vazbu Setuzy na Andreje Babiše nedokládá žádný otevřený

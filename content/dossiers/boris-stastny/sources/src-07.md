@@ -9,17 +9,10 @@ weight = 7
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-07"
 view_model = "generated/views/dossiers/boris-stastny/sources/src-07.json"
-subjects = ["stastny"]
 dossier = "boris-stastny"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-07"
-outlet = "Blesk.cz"
-src_type = "zpravodajství"
-url = "https://www.blesk.cz/clanek/zpravy-politika/843633/experti-o-nalezu-spehovaciho-zarizeni-na-vlade-zavazny-incident-jak-se-haji-stastny.html"
-published = "2026-07-11"
-retrieved = "2026-07-30"
-claims = ["CLM-13", "CLM-14", "CLM-18", "CLM-19"]
 +++
 **Experti o nálezu špehovacího zařízení na vládě: Závažný incident! Jak se hájí Šťastný?**
 

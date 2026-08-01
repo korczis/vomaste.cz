@@ -14,10 +14,5 @@ dossier = "macinka-turek"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-44"
-status = "status-corroborated"
-status_label = "CORROBORATED"
-summary = "Dne 27. 7. 2026 Turek oznámil, že žalobu na ochranu osobnosti proti prezidentu Pavlovi (avizovanou v CLM-39) nakonec nepodá; jako důvod uvedl, že „z mnoha důvodů\" svůj postoj přehodnotil, bez bližšího upřesnění"
-sources = ["SRC-51", "SRC-52"]
-subjects = ["turek"]
 +++
 Tato stránka je kanonický záznam tvrzení CLM-44 — shrnutí, stav a zdroje výše jsou úplné. Hlavní stránka dossieru zobrazuje tentýž text ze stejného zdroje; build proces ověřuje, že se neliší.

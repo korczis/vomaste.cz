@@ -9,18 +9,10 @@ weight = 17
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-17"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-17.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-17"
-outlet = "Česká justice"
-family = "ctk"
-src_type = "agenturní zpravodajství"
-url = "https://www.ceska-justice.cz/2025/12/jen-agrofert-babis-popsal-co-vlozi-do-sverenskeho-fondu/"
-published = "2025-12-31"
-retrieved = "2026-07-30"
-claims = ["CLM-39", "CLM-40"]
 +++
 Zpráva ČTK publikovaná Českou justicí na konci roku 2025, tedy **před**
 únorovým vložením akcií do fondu.

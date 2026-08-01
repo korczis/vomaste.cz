@@ -9,17 +9,10 @@ weight = 18
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-18"
 view_model = "generated/views/dossiers/jaromir-zuna/sources/src-18.json"
-subjects = ["zuna"]
 dossier = "jaromir-zuna"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-18"
-outlet = "e15.cz"
-src_type = "zpravodajství"
-url = "https://www.e15.cz/byznys/obrana-a-zbrojni-prumysl/nova-armadni-koncepce-do-roku-2040-cesko-chysta-obri-nakupy-za-stovky-miliard-do-hry-vstoupi-i-prezident-pavel-1433160"
-published = "2026-05-29"
-retrieved = "2026-07-30"
-claims = ["CLM-37"]
 +++
 **Nová armádní koncepce do roku 2040. Česko chystá obří nákupy za stovky miliard, do hry vstoupí i prezident Pavel**
 

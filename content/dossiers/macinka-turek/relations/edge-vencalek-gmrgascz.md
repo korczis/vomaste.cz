@@ -10,15 +10,8 @@ record_id = "https://vomaste.cz/id/dossiers/macinka-turek/relations/edge-vencale
 view_model = "generated/views/dossiers/macinka-turek/relations/edge-vencalek-gmrgascz.json"
 dossier = "macinka-turek"
 record_type = "relation"
+lang = "cs"
 rel_id = "edge-vencalek-gmrgascz"
-source = "vencalek"
-target = "gmrgas-cz"
-relation_type = "HOLDS_INTEREST_IN"
-label = "jediný společník a jednatel"
-status = "corroborated"
-claims = ["CLM-48"]
-sources = ["SRC-17", "SRC-55"]
-subjects = ["macinka"]
 +++
 Tato stránka je kanonický záznam vztahu edge-vencalek-gmrgascz — typ
 vztahu, podporující tvrzení a zdroje v tabulce výše jsou úplné. Stav FAKT

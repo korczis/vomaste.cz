@@ -48,6 +48,11 @@
       "minimum": 0,
       "$comment": "Redakční pořadí v registru vztahů (fáze F, aditivní): u macinka-turek se pořadí hran v content liší od pořadí v graph.toml i od abecedního pořadí id — bez kanonického order by adaptéry/view modely nemohly reprodukovat dnešní pořadí výpisů. Stejný term vomaste:order jako u claim/source/case/gap."
     },
+    "note": {
+      "type": "string",
+      "minLength": 1,
+      "$comment": "Redakční poznámka ke hraně (fáze H, aditivní — dřívější graph.toml edge `note` / front matter `note`, dnes 1 výskyt: kontextová hrana s vysvětlením, proč nenese vlastní zdroj)."
+    },
     "content": { "$ref": "_defs.schema.json#/$defs/contentBlocks" }
   },
   "if": {

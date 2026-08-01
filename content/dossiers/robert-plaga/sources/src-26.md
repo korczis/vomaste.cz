@@ -9,17 +9,10 @@ weight = 26
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-26"
 view_model = "generated/views/dossiers/robert-plaga/sources/src-26.json"
-subjects = ["plaga"]
 dossier = "robert-plaga"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-26"
-outlet = "Seznam Zprávy"
-src_type = "zpravodajství"
-url = "https://www.seznamzpravy.cz/clanek/kampus-zakladni-vzdelavani-mohou-diteti-ve-skole-telefon-zabavit-odpovidame-na-otazky-k-zakazu-mobilu-311258"
-published = "2026-07-20"
-retrieved = "2026-07-30"
-claims = ["CLM-34", "CLM-35"]
 +++
 **Zákaz mobilů ve školách: Odpovědi na nejčastější otázky**
 

@@ -9,17 +9,10 @@ weight = 5
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-05"
 view_model = "generated/views/dossiers/jeronym-tejc/sources/src-05.json"
-subjects = ["tejc"]
 dossier = "jeronym-tejc"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-05"
-outlet = "Blesk.cz"
-src_type = "zpravodajství"
-url = "https://blesk.cz/clanek/zpravy-politika/842919/tejc-zasahl-v-kauze-viktorky-usmrcene-otcem-krome-karne-zaloby-na-soudkyni-dal-podnet-na-ospod.html"
-published = "2026-07-01"
-retrieved = "2026-07-30"
-claims = ["CLM-08", "CLM-09", "CLM-10", "CLM-11", "CLM-12", "CLM-13"]
 +++
 **Tejc zasáhl v kauze Viktorky usmrcené otcem: kromě kárné žaloby na soudkyni dal podnět na OSPOD**
 

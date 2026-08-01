@@ -9,17 +9,10 @@ weight = 26
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-26"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-26.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-26"
-outlet = "FORUM 24"
-src_type = "zpravodajství"
-url = "https://www.forum24.cz/francouzska-policie-uzavrela-vysetrovani-babisova-panstvi-za-350-milionu-pripad-miri-k-zalobci"
-published = "2026-05-12"
-retrieved = "2026-07-31"
-claims = ["CLM-54"]
 +++
 FORUM 24 dne 12. 5. 2026 informoval, že francouzská policie uzavřela
 vyšetřování kauzy kolem jihofrancouzského panství premiéra Andreje

@@ -10,17 +10,10 @@ aliases = ["/dossier/zdroje/src-38/"]
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-38"
 view_model = "generated/views/dossiers/macinka-turek/sources/src-38.json"
-subjects = ["turek"]
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-38"
-outlet = "Blesk.cz"
-src_type = "zpravodajství (tabloid)"
-url = "https://www.blesk.cz/clanek/zpravy-politika/843108/turek-priznal-majetek-koupil-byt-za-18-milionu-korun-na-hypoteku.html"
-published = "2026-07-04"
-retrieved = "2026-07-22"
-claims = ["CLM-34"]
 +++
 Podle Turkova majetkového přiznání a vlastního vyjádření si v dubnu 2026
 koupil byt na Strahově (pomezí Prahy 6 a Prahy 1) za 18 milionů Kč —

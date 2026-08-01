@@ -9,17 +9,10 @@ weight = 20
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-20"
 view_model = "generated/views/dossiers/robert-plaga/sources/src-20.json"
-subjects = ["plaga"]
 dossier = "robert-plaga"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-20"
-outlet = "Učitelské noviny"
-src_type = "zpravodajství"
-url = "https://www.ucitelskenoviny.cz/skolni-rok-zs-a-ss-skonci-letos-v-patek-26-cervna-ne-30-cervna-rozhodl-plaga"
-published = "2026-03-31"
-retrieved = "2026-07-30"
-claims = ["CLM-48"]
 +++
 **Školní rok ZŠ a SŠ skončí letos v pátek 26. června, ne 30. června, rozhodl Plaga**
 

@@ -1,19 +1,22 @@
 #!/usr/bin/env node
-// Regression tests for the schema gate (T-017). Load-bearing behaviors:
+// Regression tests for the export schema gate (T-017 → T-028 fáze H:
+// brána žije v build:data-exports přes lib/export-schemas.mjs, dřívější
+// samostatný validate-schemas.mjs zanikl). Load-bearing behaviors:
 // (1) the real repo dataset passes; (2) shape violations actually fail —
 // a schema layer that never rejects anything would be claimed-but-not-real
 // enforcement; (3) the claim status enum stays closed (extending it is an
 // editorial-model change, not a technical one).
 //
-// Usage: node --test scripts/dossier/validate-schemas.test.mjs
+// Usage: node --test scripts/dossier/export-schemas.test.mjs
 
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { execFileSync } from "node:child_process";
 import { readFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { Ajv2020 } from "ajv/dist/2020.js";
+import { buildRecordTables } from "./lib/record-tables.mjs";
+import { validateExportRows } from "./lib/export-schemas.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..", "..");
@@ -34,9 +37,9 @@ const VALID_CLAIM = {
   url: "/dossiers/test-dossier/claims/clm-01/",
 };
 
-test("the real repo dataset passes the schema gate", () => {
-  const out = execFileSync("node", [path.join(__dirname, "validate-schemas.mjs")], { stdio: "pipe" }).toString();
-  assert.match(out, /OK — every canonical row and graph conforms/);
+test("the real repo dataset passes the export schema gate", () => {
+  const errors = validateExportRows(ROOT, buildRecordTables(ROOT));
+  assert.deepEqual(errors, []);
 });
 
 test("a well-formed claim row validates", () => {

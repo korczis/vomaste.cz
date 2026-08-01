@@ -9,17 +9,10 @@ weight = 15
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-15"
 view_model = "generated/views/dossiers/tomio-okamura/sources/src-15.json"
-subjects = ["okamura"]
 dossier = "tomio-okamura"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-15"
-outlet = "Tiscali.cz"
-src_type = "zpravodajství"
-url = "https://zpravy.tiscali.cz/spd-se-odvola-proti-trestu-za-plakaty-je-pripravena-spor-dovest-az-k-us-671224"
-published = "2026-06-03"
-retrieved = "2026-07-30"
-claims = ["CLM-18", "CLM-19", "CLM-20"]
 +++
 **SPD se odvolá proti trestu za plakáty, je připravená spor dovést až k ÚS**
 

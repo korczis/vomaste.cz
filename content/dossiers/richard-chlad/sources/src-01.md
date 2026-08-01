@@ -9,16 +9,10 @@ weight = 1
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/richard-chlad/sources/SRC-01"
 view_model = "generated/views/dossiers/richard-chlad/sources/src-01.json"
-subjects = ["chlad"]
 dossier = "richard-chlad"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-01"
-outlet = "Hlídač státu"
-src_type = "veřejný rejstřík / transparentní databáze"
-url = "https://www.hlidacstatu.cz/Osoba/Sponzoring/richard-chlad-2"
-retrieved = "2026-07-22"
-claims = ["CLM-01"]
 +++
 Hlídač státu eviduje u podnikatele Richarda Chlada tyto dary straně
 Motoristé sobě v roce 2025:

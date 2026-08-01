@@ -10,17 +10,10 @@ aliases = ["/dossier/zdroje/src-25/"]
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-25"
 view_model = "generated/views/dossiers/macinka-turek/sources/src-25.json"
-subjects = ["turek"]
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-25"
-outlet = "Hlídač státu"
-family = "hlidac-statu"
-src_type = "veřejný rejstřík / transparentní databáze"
-url = "https://www.hlidacstatu.cz/Osoba/Sponzoring/filip-turek"
-retrieved = "2026-07-22"
-claims = ["CLM-21"]
 +++
 Hlídač státu agreguje povinně zveřejňované přehledy darů politickým
 stranám (nad 5 000 Kč, zveřejňováno po dobu 10 let). U Filipa Turka

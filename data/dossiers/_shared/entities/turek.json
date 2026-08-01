@@ -23,6 +23,35 @@
     "/dossiers/macinka-turek/entities/turek/"
   ],
   "order": 2,
+  "provenance": {
+    "discoveredAt": "2026-07-29",
+    "discoveredVia": [
+      "edge-turek-motoriste",
+      "edge-turek-ep",
+      "edge-turek-greendeal",
+      "edge-turek-kauza2024",
+      "edge-turek-kauza2025",
+      "edge-turek-nehoda2026",
+      "edge-turek-trestniozn",
+      "edge-turek-mzp2026",
+      "edge-turek-pavel",
+      "edge-turek-zapperclub"
+    ],
+    "claimRefs": [
+      "CLM-01",
+      "CLM-02",
+      "CLM-05",
+      "CLM-03"
+    ],
+    "sourceRefs": [
+      "SRC-11",
+      "SRC-13",
+      "SRC-03",
+      "SRC-01",
+      "SRC-04"
+    ],
+    "depth": 0
+  },
   "content": [
     {
       "type": "markdown",

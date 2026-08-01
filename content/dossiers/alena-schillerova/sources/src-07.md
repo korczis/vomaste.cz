@@ -9,17 +9,10 @@ weight = 7
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-07"
 view_model = "generated/views/dossiers/alena-schillerova/sources/src-07.json"
-subjects = ["schillerova"]
 dossier = "alena-schillerova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-07"
-outlet = "Echo24"
-src_type = "zpravodajství"
-url = "https://m.echo24.cz/a/HsiHd/zpravy-ekonomika-prezident-pavel-vetoval-novelu-k-verejnym-rozpoctum"
-published = "2026-07-22"
-retrieved = "2026-07-30"
-claims = ["CLM-17", "CLM-18", "CLM-40"]
 +++
 **Pavel vetoval novelu rozpočtových zákonů. Ohrožuje bezpečnost občanů, reaguje Babiš**
 

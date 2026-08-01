@@ -23,6 +23,30 @@
   ],
   "snapshotDate": "2026-07-30",
   "order": 1,
+  "provenance": {
+    "discoveredAt": "2026-07-29",
+    "discoveredVia": [
+      "edge-macinka-motoriste",
+      "edge-macinka-kauza2024",
+      "edge-macinka-nehoda2026",
+      "edge-macinka-gmrgas",
+      "edge-macinka-klubmotoristu",
+      "edge-macinka-mzp2026",
+      "edge-macinka-cerveny"
+    ],
+    "claimRefs": [
+      "CLM-03",
+      "CLM-24",
+      "CLM-04",
+      "CLM-06"
+    ],
+    "sourceRefs": [
+      "SRC-11",
+      "SRC-27",
+      "SRC-03"
+    ],
+    "depth": 0
+  },
   "content": [
     {
       "type": "markdown",

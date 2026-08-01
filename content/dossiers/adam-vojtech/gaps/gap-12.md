@@ -9,14 +9,10 @@ weight = 12
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/adam-vojtech/gaps/GAP-12"
 view_model = "generated/views/dossiers/adam-vojtech/gaps/gap-12.json"
-subjects = ["vojtech"]
 dossier = "adam-vojtech"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-12"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Chybí oficiální primární zdroj (tisková zpráva ministerstva zdravotnictví nebo stanovisko FN Olomouc na vlastním webu) k závěrům komise z července 2026.
 

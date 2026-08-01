@@ -13,10 +13,5 @@ dossier = "martin-sebestyan"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-02"
-status = "status-corroborated"
-status_label = "CORROBORATED"
-summary = "Podle ČT24 (15. 1. 2026) SZIF k polovině ledna 2026 nezahájil vymáhání dotací po firmách Agrofertu a ministerstvo zemědělství vedené Šebestyánem uvádělo, že mu k zahájení řízení „chybí klíčový dokument“."
-sources = ["SRC-07", "SRC-27"]
-subjects = ["sebestyan"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/martin-sebestyan/_index.md#registr-tvrzeni).

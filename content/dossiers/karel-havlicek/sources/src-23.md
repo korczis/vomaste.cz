@@ -9,17 +9,10 @@ weight = 23
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-23"
 view_model = "generated/views/dossiers/karel-havlicek/sources/src-23.json"
-subjects = ["havlicek"]
 dossier = "karel-havlicek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-23"
-outlet = "FORUM 24"
-src_type = "zpravodajství"
-url = "https://www.forum24.cz/mrazova-ocekava-bourlivou-diskusi-v-senatu-k-novele-stavebniho-zakona"
-published = "2026-07-28"
-retrieved = "2026-07-30"
-claims = ["CLM-37"]
 +++
 **Mrázová očekává bouřlivou diskusi v Senátu k novele stavebního zákona**
 

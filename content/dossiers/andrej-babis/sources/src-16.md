@@ -9,18 +9,10 @@ weight = 16
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-16"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-16.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-16"
-outlet = "ČeskéNoviny.cz (ČTK)"
-family = "ctk"
-src_type = "agenturní zpravodajství"
-url = "https://www.ceskenoviny.cz/zpravy/ek-sleduje-babisuv-stret-zajmu-i-kvuli-synbiolu-i-hartenbergu-vyplyva-z-reakce/2842416"
-published = "2026-06-23"
-retrieved = "2026-07-30"
-claims = ["CLM-41", "CLM-42"]
 +++
 Agenturní zpráva ČTK k písemné reakci Evropské komise.
 **Co dokládá:** že Komise sleduje otázku možného střetu zájmů i ve

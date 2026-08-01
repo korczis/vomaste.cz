@@ -9,17 +9,10 @@ weight = 1
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-01"
 view_model = "generated/views/dossiers/tunde-bartha/sources/src-01.json"
-subjects = ["bartha"]
 dossier = "tunde-bartha"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-01"
-outlet = "Hospodářské noviny"
-src_type = "celostátní zpravodajství (agenturní)"
-url = "https://domaci.hn.cz/c1-67896320-zije-v-pruhonicich-byt-prenechala-pribuznym-praha-3-vypovedela-babisove-sefce-uradu-vlady-smlouvu-na-najem-mestskeho-bytu"
-published = "2026-06-24"
-retrieved = "2026-07-30"
-claims = ["CLM-01", "CLM-04", "CLM-05", "CLM-07"]
 +++
 Hospodářské noviny dne 24. 6. 2026 přinesly zprávu ČTK, podle níž rada
 městské části Praha 3 rozhodla o výpovědi z nájmu obecního bytu na

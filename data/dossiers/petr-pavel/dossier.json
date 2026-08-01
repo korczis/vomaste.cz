@@ -14,6 +14,7 @@
   "subject": "pavel",
   "language": "cs",
   "navigationVisible": true,
+  "order": 23,
   "updated": "2026-08-01",
   "reviewedAt": "2026-08-01",
   "authorization": {
@@ -23,6 +24,39 @@
   },
   "seo": {
     "seoType": "ProfilePage"
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "pavel",
+        "label": "Petr Pavel",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      },
+      {
+        "entity": "turek",
+        "label": "Filip Turek",
+        "claims": [
+          "CLM-02",
+          "CLM-03"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-03",
+          "SRC-04"
+        ]
+      }
+    ],
+    "edges": [
+      "edge-pavel-turek-nejmenovani",
+      "edge-turek-pavel-zaloba"
+    ]
   },
   "contentBlocks": [
     {

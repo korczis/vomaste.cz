@@ -9,17 +9,10 @@ weight = 8
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-08"
 view_model = "generated/views/dossiers/oto-klempir/sources/src-08.json"
-subjects = ["klempir"]
 dossier = "oto-klempir"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-08"
-outlet = "Pražský deník"
-src_type = "zpravodajství"
-url = "https://prazsky.denik.cz/zpravy-region/zamestnanci-narodni-galerie-praha-podepsali-otevreny-dopis-ministr-zatim-mlci/"
-published = "2026-07-17"
-retrieved = "2026-07-30"
-claims = ["CLM-25", "CLM-28", "CLM-29"]
 +++
 **Zaměstnanci Národní galerie Praha podepsali otevřený dopis. Ministr zatím mlčí**
 

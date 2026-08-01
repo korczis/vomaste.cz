@@ -13,10 +13,5 @@ dossier = "robert-plaga"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-40"
-status = "status-quote"
-status_label = "CITACE"
-summary = "Plaga na dětského ombudsmana reagoval na sociálních sítích slovy: „Zaráží mě, že dětský ombudsman při svých připomínkách k mobilům čerpá jen z novinových titulků, aniž by se seznámil s fakty.“"
-sources = ["SRC-18"]
-subjects = ["plaga"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/robert-plaga/_index.md#registr-tvrzeni).

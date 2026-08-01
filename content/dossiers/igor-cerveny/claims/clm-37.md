@@ -13,10 +13,5 @@ dossier = "igor-cerveny"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-37"
-status = "status-corroborated"
-status_label = "CORROBORATED"
-summary = "Veřejná zakázka na úpravy byla zveřejněna v pátek 31. května 2026 a zahrnuje bourání příček, demontáž skříní, vybourání otvoru v ocelové zdi, odstranění keramické dlažby a starých tapet, malování, nátěry topení, tapetování a nové koberce."
-sources = ["SRC-22", "SRC-23"]
-subjects = ["cerveny"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/igor-cerveny/_index.md#registr-tvrzeni).

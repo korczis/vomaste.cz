@@ -9,17 +9,10 @@ weight = 25
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-25"
 view_model = "generated/views/dossiers/zuzana-mrazova/sources/src-25.json"
-subjects = ["mrazova"]
 dossier = "zuzana-mrazova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-25"
-outlet = "FORUM 24"
-src_type = "zpravodajství"
-url = "https://www.forum24.cz/ministryne-mrazova-ma-na-svem-pozemku-cerne-stavby"
-published = "2026-04-30"
-retrieved = "2026-07-30"
-claims = ["CLM-42", "CLM-43"]
 +++
 **Ministryně Mrázová má na svém pozemku černé stavby**
 

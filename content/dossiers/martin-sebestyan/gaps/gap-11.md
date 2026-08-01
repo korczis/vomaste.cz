@@ -9,14 +9,10 @@ weight = 11
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/martin-sebestyan/gaps/GAP-11"
 view_model = "generated/views/dossiers/martin-sebestyan/gaps/gap-11.json"
-subjects = ["sebestyan"]
 dossier = "martin-sebestyan"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-11"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Nepodařilo se ověřit, zda proběhla nebo byla zahájena samostatná kontrola NKÚ zaměřená na postup SZIF nebo ministerstva ve věci dotací Agrofertu za působení Martina Šebestyána jako ministra.
 

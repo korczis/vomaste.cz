@@ -13,10 +13,5 @@ dossier = "ales-juchelka"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-07"
-status = "status-single"
-status_label = "1 ZDROJ"
-summary = "Podle zjištění Seznam Zpráv firma Siptrade v době reportáže nárokovala pro své klienty z evropských zdrojů více než 100 milionů korun; řízení firmy bylo formálně přepsáno na devatenáctiletou dceru majitelky, vlastnicky se ale nic nezměnilo."
-sources = ["SRC-03"]
-subjects = ["juchelka"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/ales-juchelka/_index.md#registr-tvrzeni).

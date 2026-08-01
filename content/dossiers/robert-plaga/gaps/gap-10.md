@@ -9,14 +9,10 @@ weight = 10
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/robert-plaga/gaps/GAP-10"
 view_model = "generated/views/dossiers/robert-plaga/gaps/gap-10.json"
-subjects = ["plaga"]
 dossier = "robert-plaga"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-10"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Nebylo dohledáno oficiální stanovisko školských odborů (ČMOS pracovníků školství) ani Pedagogické komory k žádnému ze tří témat.
 

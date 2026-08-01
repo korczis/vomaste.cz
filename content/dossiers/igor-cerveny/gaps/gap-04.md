@@ -9,14 +9,10 @@ weight = 4
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/igor-cerveny/gaps/GAP-04"
 view_model = "generated/views/dossiers/igor-cerveny/gaps/gap-04.json"
-subjects = ["cerveny"]
 dossier = "igor-cerveny"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-04"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Rozpor v datu a médiu prvního upozornění na chybějící dům: Blesk uvádí MF Dnes v dubnu 2026, Seznam Zprávy uvádí server iDnes v březnu 2026.
 

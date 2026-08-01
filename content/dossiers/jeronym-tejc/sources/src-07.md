@@ -9,17 +9,10 @@ weight = 7
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-07"
 view_model = "generated/views/dossiers/jeronym-tejc/sources/src-07.json"
-subjects = ["tejc"]
 dossier = "jeronym-tejc"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-07"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/v-kauze-otcem-usmrcene-divky-podal-tejc-vedle-karne-zaloby-i-podnet-vuci-ospod-375130"
-published = "2026-07-01"
-retrieved = "2026-07-30"
-claims = ["CLM-08", "CLM-09", "CLM-10", "CLM-11", "CLM-12"]
 +++
 **V kauze otcem usmrcené dívky podal Tejc vedle kárné žaloby i podnět vůči OSPOD**
 

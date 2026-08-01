@@ -9,14 +9,10 @@ weight = 2
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/lubomir-metnar/gaps/GAP-02"
 view_model = "generated/views/dossiers/lubomir-metnar/gaps/gap-02.json"
-subjects = ["metnar"]
 dossier = "lubomir-metnar"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-02"
-priority = "nízká"
-checked = "2026-07-30"
-claims = ["CLM-02", "CLM-03"]
 +++
 Ministerstvo odůvodňuje návrh bezpečnostní analýzou Policie ČR
 ([CLM-02](@/dossiers/lubomir-metnar/claims/clm-02.md)). Tato analýza

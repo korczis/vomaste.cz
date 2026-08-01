@@ -21,6 +21,24 @@
     "/dossiers/tunde-bartha/entities/imoba/"
   ],
   "order": 5,
+  "provenance": {
+    "discoveredAt": "2026-07-30",
+    "discoveredVia": [
+      "edge-bartha-imoba",
+      "edge-imoba-babis"
+    ],
+    "claimRefs": [
+      "CLM-05",
+      "CLM-73",
+      "CLM-74"
+    ],
+    "sourceRefs": [
+      "SRC-01",
+      "SRC-02",
+      "SRC-51"
+    ],
+    "depth": 1
+  },
   "content": [
     {
       "type": "markdown",

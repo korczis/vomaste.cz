@@ -9,17 +9,10 @@ weight = 14
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-14"
 view_model = "generated/views/dossiers/alena-schillerova/sources/src-14.json"
-subjects = ["schillerova"]
 dossier = "alena-schillerova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-14"
-outlet = "Ministerstvo financí ČR"
-src_type = "oficiální primární zdroj"
-url = "https://mf.gov.cz/cs/ministerstvo/media/v-mediich/2026/alena-schillerova-prioritou-v-oblasti-rozpoctovani-62435"
-published = "2026-01-06"
-retrieved = "2026-07-30"
-claims = ["CLM-37"]
 +++
 **Alena Schillerová: Prioritou v oblasti rozpočtování je návrat k realitě**
 

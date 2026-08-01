@@ -9,17 +9,10 @@ weight = 11
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-11"
 view_model = "generated/views/dossiers/zuzana-mrazova/sources/src-11.json"
-subjects = ["mrazova"]
 dossier = "zuzana-mrazova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-11"
-outlet = "FORUM 24"
-src_type = "zpravodajství"
-url = "https://www.forum24.cz/omluva-slzy-a-podpora-od-babise-ministryne-mrazova-vysvetlovala-levny-najem-i-cerne-stavby"
-published = "2026-05-07"
-retrieved = "2026-07-30"
-claims = ["CLM-09", "CLM-10", "CLM-12", "CLM-13", "CLM-16", "CLM-17"]
 +++
 **Omluva, slzy a podpora od Babiše. Ministryně Mrázová vysvětlovala levný nájem i černé stavby**
 

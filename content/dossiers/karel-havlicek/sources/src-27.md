@@ -9,17 +9,10 @@ weight = 27
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-27"
 view_model = "generated/views/dossiers/karel-havlicek/sources/src-27.json"
-subjects = ["havlicek"]
 dossier = "karel-havlicek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-27"
-outlet = "Vláda České republiky (vlada.gov.cz)"
-src_type = "oficiální primární zdroj"
-url = "https://vlada.gov.cz/cz/media-centrum/tiskove-konference/tiskova-konference-po-jednani-vlady--13--cervence-2026-227999/"
-published = "2026-07-13"
-retrieved = "2026-07-30"
-claims = ["CLM-43"]
 +++
 **Tisková konference po jednání vlády, 13. července 2026**
 

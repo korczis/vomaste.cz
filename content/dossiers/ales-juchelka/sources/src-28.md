@@ -9,17 +9,10 @@ weight = 28
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-28"
 view_model = "generated/views/dossiers/ales-juchelka/sources/src-28.json"
-subjects = ["juchelka"]
 dossier = "ales-juchelka"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-28"
-outlet = "Praha na dlani (přetisk anotace iROZHLAS.cz)"
-src_type = "zpravodajství"
-url = "https://www.prahanadlani.cz/clanek-zprava/1607760-ministerstvo-prace-si-vyzadalo-externi-posudek-kvuli-stretu-zajmu-semancove-juchelka-ho-nezpochybnil.html"
-published = "2026-07-27"
-retrieved = "2026-07-30"
-claims = ["CLM-27"]
 +++
 **Ministerstvo práce si vyžádalo externí posudek kvůli střetu zájmů Semancové. Juchelka ho nezpochybnil**
 

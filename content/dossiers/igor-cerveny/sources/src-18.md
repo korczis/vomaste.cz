@@ -9,17 +9,10 @@ weight = 18
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-18"
 view_model = "generated/views/dossiers/igor-cerveny/sources/src-18.json"
-subjects = ["cerveny"]
 dossier = "igor-cerveny"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-18"
-outlet = "Ministerstvo životního prostředí ČR"
-src_type = "oficiální primární zdroj"
-url = "https://mzp.gov.cz/cz/pro-media-a-verejnost/aktuality/archiv-tiskovych-zprav/ministr-cerveny-vystoupi-v-osn-na-tema-udrzitelneho-rozvoje-cr-je-v-plneni-cilu-na-10-miste-ze-169"
-published = "2026-07-10"
-retrieved = "2026-07-30"
-claims = ["CLM-49", "CLM-51", "CLM-52", "CLM-53", "CLM-54"]
 +++
 **Ministr Červený vystoupí v OSN na téma udržitelného rozvoje, ČR je v plnění cílů na 10. místě ze 169**
 

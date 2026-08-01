@@ -9,17 +9,10 @@ weight = 26
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-26"
 view_model = "generated/views/dossiers/tomio-okamura/sources/src-26.json"
-subjects = ["okamura"]
 dossier = "tomio-okamura"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-26"
-outlet = "Respekt"
-src_type = "zpravodajství"
-url = "https://www.respekt.cz/informacni-servis/pravni-zastupce-spd-u-soudu-odmitl-vinu-za-predvolebni-plakaty-slo-o-politicky-nazor-2026-06-03-11-21"
-published = "2026-06-03"
-retrieved = "2026-07-31"
-claims = ["CLM-16"]
 +++
 RESPEKT dne 3. 6. 2026 cituje obhájce Adama Batunu: „Podle něj bylo
 zadání policie návodné, a proto účelově zkreslilo výsledky."

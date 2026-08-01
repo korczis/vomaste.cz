@@ -9,17 +9,10 @@ weight = 35
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-35"
 view_model = "generated/views/dossiers/igor-cerveny/sources/src-35.json"
-subjects = ["cerveny"]
 dossier = "igor-cerveny"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-35"
-outlet = "Refresher.cz"
-src_type = "zpravodajství"
-url = "https://news.refresher.cz/198387-Navrhovany-ministr-za-Motoristy-ma-stret-zajmu-Podnikani-musi-prerusit"
-published = "2026-02-17"
-retrieved = "2026-07-31"
-claims = ["CLM-30"]
 +++
 Refresher.cz dne 17. 2. 2026: Lubor Novák je „jediným členem
 představenstva akciové společnosti Hemmont, jejíž sto procent akcií

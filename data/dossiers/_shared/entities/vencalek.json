@@ -19,6 +19,24 @@
     "petr-vencalek"
   ],
   "order": 38,
+  "provenance": {
+    "discoveredAt": "2026-07-30",
+    "discoveredVia": [
+      "edge-vencalek-gmrgascz"
+    ],
+    "claimRefs": [
+      "CLM-48",
+      "CLM-01"
+    ],
+    "sourceRefs": [
+      "SRC-17",
+      "SRC-55",
+      "SRC-01",
+      "SRC-02"
+    ],
+    "cluster": "financni-vazby",
+    "depth": 0
+  },
   "content": [
     {
       "type": "markdown",

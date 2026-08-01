@@ -9,17 +9,10 @@ weight = 28
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-28"
 view_model = "generated/views/dossiers/ivan-bednarik/sources/src-28.json"
-subjects = ["bednarik"]
 dossier = "ivan-bednarik"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-28"
-outlet = "ACRI — Asociace podniků českého železničního průmyslu"
-src_type = "oficiální primární zdroj"
-url = "https://acri.cz/2025/12/15/prioritou-noveho-ministra-dopravy-je-i-rozvoj-zeleznicni-infrastruktury/"
-published = "2025-12-15"
-retrieved = "2026-07-30"
-claims = ["CLM-39"]
 +++
 **Prioritou nového ministra dopravy je i rozvoj železniční infrastruktury**
 

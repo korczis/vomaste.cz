@@ -9,16 +9,10 @@ weight = 1
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-01"
 view_model = "generated/views/dossiers/ales-juchelka/sources/src-01.json"
-subjects = ["juchelka"]
 dossier = "ales-juchelka"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-01"
-outlet = "Vláda České republiky (vlada.gov.cz)"
-src_type = "oficiální primární zdroj"
-url = "https://vlada.gov.cz/cz/vlada/clenove-vlady/ales-juchelka-223977/"
-retrieved = "2026-07-30"
-claims = ["CLM-01"]
 +++
 Oficiální profil na webu Úřadu vlády, otevřen a přečten 2026-07-30.
 Uvádí funkci **ministr práce a sociálních věcí** a doložený přehled kariéry: narozen 18. 4. 1976 v Ostravě; Ekonomická fakulta VŠB-TU Ostrava (1998–2003); moderátor České televize do roku 2012; zastupitel Ostravy od 2010; poslanec od 2017 se zaměřením na sociální oblast a média; místopředseda Poslanecké sněmovny (2024–2025).

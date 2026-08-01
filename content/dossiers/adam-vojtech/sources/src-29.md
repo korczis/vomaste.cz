@@ -9,17 +9,10 @@ weight = 29
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-29"
 view_model = "generated/views/dossiers/adam-vojtech/sources/src-29.json"
-subjects = ["vojtech"]
 dossier = "adam-vojtech"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-29"
-outlet = "Blesk.cz"
-src_type = "zpravodajství"
-url = "https://www.blesk.cz/clanek/zpravy-politika/838510/vojtech-pod-palbou-okamurovcu-kvuli-ockovani-haji-strategii-od-spd-sklizi-bidu-za-cejchovani.html"
-published = "2026-05-03"
-retrieved = "2026-07-30"
-claims = ["CLM-48", "CLM-49"]
 +++
 **Vojtěch pod palbou okamurovců kvůli očkování: Hájí strategii, od SPD sklízí bídu za „cejchování“**
 

@@ -9,17 +9,10 @@ weight = 10
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-10"
 view_model = "generated/views/dossiers/karel-havlicek/sources/src-10.json"
-subjects = ["havlicek"]
 dossier = "karel-havlicek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-10"
-outlet = "Ekonomický deník"
-src_type = "zpravodajství"
-url = "https://ekonomickydenik.cz/zmirneni-zakazu-spalovaci-motory-sankce-havlicek/"
-published = "2026-03-25"
-retrieved = "2026-07-30"
-claims = ["CLM-16", "CLM-17", "CLM-41", "CLM-42"]
 +++
 **Zmírnění u spalovacích motorů? Sankce zůstávají a hrozí průšvih, varuje Havlíček**
 

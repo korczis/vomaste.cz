@@ -9,17 +9,10 @@ weight = 13
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-13"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-13.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-13"
-outlet = "Investigace.cz"
-src_type = "investigativní zpravodajství"
-url = "https://www.investigace.cz/pandora-papers-andrej-babis-podnikani/"
-published = "2021-10-03"
-retrieved = "2026-07-30"
-claims = ["CLM-31", "CLM-32", "CLM-33", "CLM-34"]
 +++
 Investigativní text (autorka Zuzana Šotová) z projektu Pandora Papers,
 opřený o uniklé dokumenty poskytovatele offshore služeb.

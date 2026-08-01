@@ -9,17 +9,10 @@ weight = 26
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-26"
 view_model = "generated/views/dossiers/adam-vojtech/sources/src-26.json"
-subjects = ["vojtech"]
 dossier = "adam-vojtech"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-26"
-outlet = "Zdravotnický deník"
-src_type = "zpravodajství"
-url = "https://www.zdravotnickydenik.cz/2026/05/prevence-ministr-vojtech-dane/"
-published = "2026-05-04"
-retrieved = "2026-07-30"
-claims = ["CLM-34", "CLM-35"]
 +++
 **Prevence bez limitu: Ministr Vojtěch oznámil, které zdravotní výhody už nebudou daněny**
 

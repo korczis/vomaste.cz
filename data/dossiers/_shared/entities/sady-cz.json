@@ -20,6 +20,20 @@
     "/dossiers/andrej-babis/entities/sady-cz/"
   ],
   "order": 26,
+  "provenance": {
+    "discoveredAt": "2026-08-01",
+    "discoveredVia": [
+      "edge-agrofert-sady",
+      "edge-sady-nss"
+    ],
+    "claimRefs": [
+      "CLM-65"
+    ],
+    "sourceRefs": [
+      "SRC-45"
+    ],
+    "depth": 2
+  },
   "content": [
     {
       "type": "markdown",

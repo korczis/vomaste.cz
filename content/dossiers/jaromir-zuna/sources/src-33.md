@@ -9,18 +9,10 @@ weight = 33
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-33"
 view_model = "generated/views/dossiers/jaromir-zuna/sources/src-33.json"
-subjects = ["zuna"]
 dossier = "jaromir-zuna"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-33"
-outlet = "ČeskéNoviny.cz (ČTK)"
-family = "ctk"
-src_type = "agenturní zpravodajství"
-url = "https://www.ceskenoviny.cz/zpravy/zive-vyjadreni-premiera-babise-pred-odletem-na-summit-nato/2847769"
-published = "2026-07-07"
-retrieved = "2026-07-31"
-claims = ["CLM-42"]
 +++
 ČeskéNoviny.cz dne 7. 7. 2026 cituje premiéra Babiše: „Příští rok
 navýšíme rozpočet obrany o 36 miliard korun." Vláda chce podle článku

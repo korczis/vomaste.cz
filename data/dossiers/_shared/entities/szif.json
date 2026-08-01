@@ -21,6 +21,27 @@
     "/dossiers/andrej-babis/entities/szif/"
   ],
   "order": 6,
+  "provenance": {
+    "discoveredAt": "2026-07-30",
+    "discoveredVia": [
+      "edge-agrofert-szif",
+      "edge-kostelecke-szif",
+      "edge-vodnanska-szif"
+    ],
+    "claimRefs": [
+      "CLM-10",
+      "CLM-48",
+      "CLM-08",
+      "CLM-09",
+      "CLM-11"
+    ],
+    "sourceRefs": [
+      "SRC-04",
+      "SRC-22",
+      "SRC-26"
+    ],
+    "depth": 1
+  },
   "content": [
     {
       "type": "markdown",

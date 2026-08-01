@@ -9,17 +9,10 @@ weight = 31
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-31"
 view_model = "generated/views/dossiers/robert-plaga/sources/src-31.json"
-subjects = ["plaga"]
 dossier = "robert-plaga"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-31"
-outlet = "Poslanecká sněmovna Parlamentu ČR"
-src_type = "oficiální primární zdroj"
-url = "https://www.psp.cz/sqw/text/tiskt.sqw?O=10&CT=232&CT1=1"
-published = "2026-07-22"
-retrieved = "2026-07-30"
-claims = []
 +++
 **Sněmovní tisk 232/1 — Stanovisko vlády k tisku 232/0**
 

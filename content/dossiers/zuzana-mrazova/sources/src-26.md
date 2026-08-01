@@ -9,17 +9,10 @@ weight = 26
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-26"
 view_model = "generated/views/dossiers/zuzana-mrazova/sources/src-26.json"
-subjects = ["mrazova"]
 dossier = "zuzana-mrazova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-26"
-outlet = "Romea.cz"
-src_type = "zpravodajství"
-url = "https://romea.cz/cz/domaci/ministryne-mrazova-vyuziva-levne-obecni-bydleni-v-biline-rada-mistnich-pritom-resi-exekuce-a-bytovou-nouzi-opozice-mluvi-o-pokrytectvi"
-published = "2026-04-30"
-retrieved = "2026-07-30"
-claims = ["CLM-28", "CLM-29", "CLM-30", "CLM-31", "CLM-32", "CLM-56"]
 +++
 **Ministryně Mrázová využívá levné obecní bydlení v Bílině. Řada místních přitom řeší exekuce a bytovou nouzi, opozice mluví o pokrytectví**
 

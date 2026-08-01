@@ -9,17 +9,10 @@ weight = 4
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-04"
 view_model = "generated/views/dossiers/karel-havlicek/sources/src-04.json"
-subjects = ["havlicek"]
 dossier = "karel-havlicek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-04"
-outlet = "FORUM 24"
-src_type = "zpravodajství"
-url = "https://www.forum24.cz/zlom-v-kauze-toustove-linky-penamu-dalsi-svedek-zevnitr-babisova-imperia-zpochybnuje-dotaci/"
-published = "2021-01-06"
-retrieved = "2026-07-30"
-claims = ["CLM-05", "CLM-07"]
 +++
 **Zlom v kauze toustové linky Penamu. Dotaci zpochybňuje další svědek zevnitř Babišova impéria**
 

@@ -9,99 +9,12 @@ generated = true
 record_id = "https://vomaste.cz/id/dossiers/ales-juchelka"
 view_model = "generated/views/dossiers/ales-juchelka/overview.json"
 dossier = "ales-juchelka"
-dossier_title = "Aleš Juchelka"
 record_type = "dossier"
 dossier_type = "entity"
-canonical_dossier = "ales-juchelka"
-subject = "juchelka"
 lang = "cs"
 seo_type = "ProfilePage"
 updated = "2026-07-30"
 reviewed_at = "2026-07-30"
-subject_entities = ["juchelka"]
-subjects = ["Aleš Juchelka"]
-
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-B"]
-
-[[extra.timeline]]
-date = "2026-03"
-title = "Seznam Zprávy zveřejňují zjištění o možném střetu zájmů poradkyně Semancové; Evropská komise žádá vysvětlení; Juchelka se poradkyně zastává"
-anchor = "kauza-poradkyne-stret"
-dot = "dot-fact"
-subjects = ["juchelka"]
-
-[[extra.timeline]]
-date = "2026-04"
-title = "Semancová končí na MPSV; Juchelka mluví o 'štvavé kampani' a říká, že 'není práce ministra hlídat střety zájmů'"
-anchor = "kauza-poradkyne-stret"
-dot = "dot-fact"
-subjects = ["juchelka"]
-
-[[extra.timeline]]
-date = "2026-07"
-title = "MPSV stahuje projekty za 63,8 + 17,6 mil. Kč z vykazování vůči EU a hradí je ze státního rozpočtu; NKÚ zahajuje kontrolu; STAN podává trestní oznámení; ministerstvo zadává externí posudek; Juchelka na vládní tiskovce útočí na novinářku Seznam Zpráv"
-anchor = "kauza-poradkyne-stret"
-dot = "dot-fact"
-subjects = ["juchelka"]
-
-[[extra.timeline]]
-date = "2026-04"
-title = "Čtyři projekty vyřazeny z financování EU"
-anchor = "kauza-poradkyne"
-dot = "dot-disputed"
-subjects = ["juchelka"]
-
-[[extra.cases]]
-anchor = "kauza-poradkyne"
-period = "2026"
-title = "Střet zájmů bývalé poradkyně a rozpočtový dopad"
-status = "status-disputed"
-label = "Bez vyšetřování, spor o následek"
-summary = "Firma poradkyně inkasovala od žadatelů o dotace, na jejichž výzvy poradkyně dohlížela; čtyři projekty vyřazeny z financování EU, mezera 63,8 mil. Kč. Citovaný zdroj neuvádí žádné vyšetřování ani obvinění."
-claims = []
-subjects = ["juchelka"]
-
-[[extra.cases]]
-anchor = "kauza-poradkyne-stret"
-period = "2026"
-title = "Kauza střetu zájmů bývalé poradkyně"
-status = "status-single"
-label = "Sledované téma"
-summary = "Kauza střetu zájmů bývalé poradkyně — viz tvrzení CLM-06, CLM-07, CLM-08, CLM-10, CLM-16."
-claims = ["CLM-23", "CLM-24", "CLM-45"]
-subjects = ["juchelka"]
-
-[[extra.cases]]
-anchor = "kauza-rozpocet"
-period = "2026"
-title = "Rozpočtový dopad kauzy"
-status = "status-single"
-label = "Sledované téma"
-summary = "Rozpočtový dopad kauzy — viz tvrzení CLM-09, CLM-11, CLM-12."
-claims = ["CLM-31", "CLM-32", "CLM-33", "CLM-34", "CLM-35", "CLM-36", "CLM-37", "CLM-43", "CLM-46"]
-subjects = ["juchelka"]
-
-[[extra.cases]]
-anchor = "kauza-trestni-oznameni"
-period = "2026"
-title = "Trestní oznámení a kontrola NKÚ"
-status = "status-single"
-label = "Sledované téma"
-summary = "Trestní oznámení a kontrola NKÚ — viz tvrzení CLM-13, CLM-14, CLM-15."
-claims = ["CLM-38", "CLM-39", "CLM-40", "CLM-41", "CLM-42", "CLM-44"]
-subjects = ["juchelka"]
-
-[[extra.cases]]
-anchor = "kauza-obhajoba"
-period = "2026"
-title = "Veřejná vyjádření a obhajoba ministra"
-status = "status-single"
-label = "Sledované téma"
-summary = "Veřejná vyjádření a obhajoba ministra — viz tvrzení CLM-17, CLM-18, CLM-19, CLM-20, CLM-21, CLM-22."
-claims = ["CLM-25", "CLM-26", "CLM-27", "CLM-28", "CLM-29", "CLM-30"]
-subjects = ["juchelka"]
 +++
 Aleš Juchelka je ministrem práce a sociálních věcí ve třetí vládě
 Andreje Babiše (viz `data/government.toml`, ověřeno proti oficiálnímu

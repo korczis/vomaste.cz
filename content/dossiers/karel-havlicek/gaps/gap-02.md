@@ -9,14 +9,10 @@ weight = 2
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/gaps/GAP-02"
 view_model = "generated/views/dossiers/karel-havlicek/gaps/gap-02.json"
-subjects = ["havlicek"]
 dossier = "karel-havlicek"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-02"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Tvrzení, že vymáhání 100mil. dotace zahájilo ministerstvo až v roce 2022 za Havlíčkova nástupce, se nepodařilo potvrdit druhým nezávislým vydavatelem.
 

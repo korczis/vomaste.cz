@@ -9,17 +9,10 @@ weight = 21
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-21"
 view_model = "generated/views/dossiers/robert-plaga/sources/src-21.json"
-subjects = ["plaga"]
 dossier = "robert-plaga"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-21"
-outlet = "Seznam Zprávy"
-src_type = "zpravodajství"
-url = "https://www.seznamzpravy.cz/clanek/kampus-april-o-den-drive-zkraceni-skolniho-roku-komplikuje-plany-nekterym-ucitelum-303150"
-published = "2026-04-01"
-retrieved = "2026-07-30"
-claims = ["CLM-49", "CLM-50", "CLM-51", "CLM-52", "CLM-53", "CLM-54"]
 +++
 **Zkrácení školního roku komplikuje plány některým učitelům**
 

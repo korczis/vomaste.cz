@@ -10,17 +10,10 @@ aliases = ["/dossier/zdroje/src-32/"]
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-32"
 view_model = "generated/views/dossiers/macinka-turek/sources/src-32.json"
-subjects = ["turek"]
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-32"
-outlet = "Deník.cz (VLTAVA LABE MEDIA)"
-src_type = "zpravodajství"
-url = "https://www.denik.cz/z_domova/filip-turek-vyhrozovani-saudskoarabska-ambasada.html"
-published = "2025-10-15"
-retrieved = "2026-07-22"
-claims = ["CLM-28", "CLM-29"]
 +++
 Retrospektivní článek (publikován 2025, k události z 2017): Filip Turek
 nakreslil oprátku na papír a nechal ji za stěračem auta patřícího

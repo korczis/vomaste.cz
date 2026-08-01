@@ -9,14 +9,10 @@ weight = 7
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/igor-cerveny/gaps/GAP-07"
 view_model = "generated/views/dossiers/igor-cerveny/gaps/gap-07.json"
-subjects = ["cerveny"]
 dossier = "igor-cerveny"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-07"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Nebyl dohledán žádný formální podnět (od instituce, poslance či nevládní organizace) kvůli střetu zájmů ohledně podcastové firmy Extreme BFG Cast.
 

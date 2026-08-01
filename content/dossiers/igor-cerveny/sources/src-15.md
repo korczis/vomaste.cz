@@ -9,16 +9,10 @@ weight = 15
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-15"
 view_model = "generated/views/dossiers/igor-cerveny/sources/src-15.json"
-subjects = ["cerveny"]
 dossier = "igor-cerveny"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-15"
-outlet = "CNN Prima News"
-src_type = "zpravodajství"
-url = "https://cnn.iprima.cz/cervenemu-hrozi-pokuta-v-radu-desitek-tisic-ministr-nepriznal-dum-za-jedenact-milionu-511357"
-retrieved = "2026-07-30"
-claims = ["CLM-25"]
 +++
 **Červenému hrozí pokuta v řádu desítek tisíc. Ministr nepřiznal dům za jedenáct milionů**
 

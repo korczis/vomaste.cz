@@ -21,6 +21,38 @@
     "/dossiers/andrej-babis/entities/agrofert/"
   ],
   "order": 3,
+  "provenance": {
+    "discoveredAt": "2026-07-30",
+    "discoveredVia": [
+      "edge-babis-agrofert",
+      "edge-rsvp-agrofert",
+      "edge-agrofert-kostelecke",
+      "edge-agrofert-szif",
+      "edge-agrofert-komise",
+      "edge-agrofert-eppo",
+      "edge-ab-trusts-agrofert",
+      "edge-agrofert-capihnizdo-reklamy",
+      "edge-agrofert-pekarna",
+      "edge-agrofert-pgrlf",
+      "edge-agrofert-vodnanska",
+      "edge-agrofert-sady",
+      "edge-agrofert-navos"
+    ],
+    "claimRefs": [
+      "CLM-04",
+      "CLM-05",
+      "CLM-16",
+      "CLM-37",
+      "CLM-06"
+    ],
+    "sourceRefs": [
+      "SRC-02",
+      "SRC-06",
+      "SRC-15",
+      "SRC-03"
+    ],
+    "depth": 1
+  },
   "content": [
     {
       "type": "markdown",

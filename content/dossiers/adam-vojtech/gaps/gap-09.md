@@ -9,14 +9,10 @@ weight = 9
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/adam-vojtech/gaps/GAP-09"
 view_model = "generated/views/dossiers/adam-vojtech/gaps/gap-09.json"
-subjects = ["vojtech"]
 dossier = "adam-vojtech"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-09"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Není doložen výsledek projednání novely o EET se zdravotními benefity v Senátu ani případný podpis prezidenta.
 

@@ -9,17 +9,10 @@ weight = 4
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-04"
 view_model = "generated/views/dossiers/lubomir-metnar/sources/src-04.json"
-subjects = ["metnar"]
 dossier = "lubomir-metnar"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-04"
-outlet = "Respekt"
-src_type = "zpravodajství"
-url = "https://www.respekt.cz/informacni-servis/ministerstvo-vnitra-navrhuje-zrusit-policejni-ochranu-nku-misto-toho-by-mela-nove-strezit-centralni-banku-2026-07-29-10-46"
-published = "2026-07-29"
-retrieved = "2026-07-30"
-claims = ["CLM-05", "CLM-08", "CLM-14"]
 +++
 **Ministerstvo vnitra navrhuje zrušit policejní ochranu NKÚ – místo toho by měla nově střežit centrální banku**
 

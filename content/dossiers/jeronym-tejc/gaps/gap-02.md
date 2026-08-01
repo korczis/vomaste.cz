@@ -9,14 +9,10 @@ weight = 2
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jeronym-tejc/gaps/GAP-02"
 view_model = "generated/views/dossiers/jeronym-tejc/gaps/gap-02.json"
-subjects = ["tejc"]
 dossier = "jeronym-tejc"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-02"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Aktuální procesní stav trestního oznámení (zda státní zastupitelství věc prověřuje, odložilo, či zahájilo úkony trestního řízení) po dubnu 2026 se nepodařilo z otevřených přečtených zdrojů zjistit.
 

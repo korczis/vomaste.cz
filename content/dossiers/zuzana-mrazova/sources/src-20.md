@@ -9,17 +9,10 @@ weight = 20
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-20"
 view_model = "generated/views/dossiers/zuzana-mrazova/sources/src-20.json"
-subjects = ["mrazova"]
 dossier = "zuzana-mrazova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-20"
-outlet = "Česká televize (ČT24)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/resort-spravedlnosti-podal-podnet-k-provereni-ministryne-mrazove-373716"
-published = "2026-05-21"
-retrieved = "2026-07-30"
-claims = ["CLM-24", "CLM-25", "CLM-26"]
 +++
 **Resort spravedlnosti podal podnět k prověření ministryně Mrázové**
 

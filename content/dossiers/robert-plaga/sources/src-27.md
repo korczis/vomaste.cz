@@ -9,16 +9,10 @@ weight = 27
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-27"
 view_model = "generated/views/dossiers/robert-plaga/sources/src-27.json"
-subjects = ["plaga"]
 dossier = "robert-plaga"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-27"
-outlet = "Novinky.cz"
-src_type = "zpravodajství"
-url = "https://www.novinky.cz/clanek/domaci-mobily-ve-skolach-zakaze-zakon-40584234"
-retrieved = "2026-07-30"
-claims = ["CLM-36", "CLM-43", "CLM-44"]
 +++
 **Mobily ve školách zakáže zákon**
 

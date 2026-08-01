@@ -9,17 +9,10 @@ weight = 10
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-10"
 view_model = "generated/views/dossiers/zuzana-mrazova/sources/src-10.json"
-subjects = ["mrazova"]
 dossier = "zuzana-mrazova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-10"
-outlet = "FORUM 24"
-src_type = "zpravodajství"
-url = "https://www.forum24.cz/tady-nejste-v-severni-koreji-mrazova-sklizi-kritiku-za-vyjadreni-k-cernym-stavbam"
-published = "2026-05-01"
-retrieved = "2026-07-30"
-claims = ["CLM-12", "CLM-13", "CLM-14", "CLM-15"]
 +++
 **„Tady nejste v Severní Koreji.“ Mrázová sklízí kritiku za vyjádření k černým stavbám**
 

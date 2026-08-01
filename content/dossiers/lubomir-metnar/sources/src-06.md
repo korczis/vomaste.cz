@@ -9,17 +9,10 @@ weight = 6
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-06"
 view_model = "generated/views/dossiers/lubomir-metnar/sources/src-06.json"
-subjects = ["metnar"]
 dossier = "lubomir-metnar"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-06"
-outlet = "Blesk.cz"
-src_type = "zpravodajství"
-url = "https://www.blesk.cz/clanek/zpravy-politika/844445/pavel-vetoval-zakon-o-rozpoctech-boji-se-o-budouci-generace-i-nezavislost-instituci.html"
-published = "2026-07-22"
-retrieved = "2026-07-30"
-claims = ["CLM-25"]
 +++
 **Pavel vetoval zákon o rozpočtech! Bojí se o budoucí generace i nezávislost institucí**
 

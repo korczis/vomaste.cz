@@ -13,10 +13,5 @@ dossier = "oto-klempir"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-14"
-status = "status-quote"
-status_label = "CITACE"
-summary = "Klempíř potvrdil zúžení původního záměru: podle něj koalice dospěla k závěru, že pro splnění programového prohlášení není nutné měnit celý systém, a hlavním cílem zůstává zrušení poplatků."
-sources = ["SRC-07"]
-subjects = ["klempir"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/oto-klempir/_index.md#registr-tvrzeni).

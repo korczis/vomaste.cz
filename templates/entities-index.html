@@ -21,10 +21,9 @@
 
 {% block content %}
 <main class="mx-auto max-w-6xl px-6 py-12 text-white">
-  {#- T-028 fáze F: řádky registru pochází z view modelu
-      (entities-index.json), ne z front matter section.pages. Jediné pole
-      mimo kanonický model v1 je government_office (subtitle) — čte se
-      z content adaptéru přes get_page (rozhodnutí H).
+  {#- T-028 fáze H: řádky registru pochází z view modelu
+      (entities-index.json) — včetně government pole (kanonický vlastník
+      data/government.toml, projektované view modelem).
 
       Tutéž šablonu používají per-dossier aux stránky
       content/dossiers/<slug>/entities/_index.md (mají extra.dossier);
@@ -39,14 +38,14 @@
 
   <article class="dossier-prose mb-10">{{ section.content | safe }}</article>
 
-  {%- set registry = load_data(path="data/dossiers.toml") -%}
+  {%- set dossier_registry = idx.dossierRegistry -%}
   {%- set subjects = rows | filter(attribute="publicationRole", value="subject") -%}
   {%- set contexts = rows | filter(attribute="publicationRole", value="context") -%}
   <div class="mb-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
     {{ ui::stat_tile(value=rows | length, label="Entit celkem") }}
     {{ ui::stat_tile(value=subjects | length, label="Subjekty dossierů") }}
     {{ ui::stat_tile(value=contexts | length, label="Kontextové entity") }}
-    {{ ui::stat_tile(value=registry.dossiers | length, label="Dossierů v registru", url=get_url(path="@/dossiers/_index.md")) }}
+    {{ ui::stat_tile(value=dossier_registry | length, label="Dossierů v registru", url=get_url(path="@/dossiers/_index.md")) }}
   </div>
 
   {#- Popisky skupin: dossiery z registru dossierů, typy entit ze slovníku
@@ -61,10 +60,11 @@
     {%- set_global type_labels = type_labels ~ tsep ~ '"' ~ ty.id ~ '":"' ~ ty.label ~ '"' -%}
   {%- endfor -%}
 
-  {#- Popisky dossierů z registru, aby skupina „Dossier" ukazovala jméno,
-      ne slug. Sestavuje se jako JSON string předávaný komponentě. -#}
+  {#- Popisky dossierů z registru (view model idx.dossierRegistry —
+      kanonický dataset v redakčním pořadí, T-028 fáze H), aby skupina
+      „Dossier" ukazovala jméno, ne slug. JSON string pro komponentu. -#}
   {%- set_global dossier_labels = "" -%}
-  {%- for d in registry.dossiers -%}
+  {%- for d in dossier_registry -%}
     {%- set sep = "" -%}
     {%- if not loop.first %}{% set sep = "," %}{% endif -%}
     {%- set_global dossier_labels = dossier_labels ~ sep ~ '"' ~ d.slug ~ '":"' ~ d.title ~ '"' -%}
@@ -99,7 +99,6 @@
       columns=["ID", "Název", "Typ", "Role", "Dossierů"],
       sort_keys=["id", "name", "type", "role", "dossiers"]) }}
       {%- for p in rows %}
-      {%- set entity_page = get_page(path="entities/" ~ p.entityId ~ ".md") %}
       <tr data-record-key="{{ p.entityId }}" data-entitytype="{{ p.entityType }}" data-role="{{ p.publicationRole }}"
         data-jsonld-id="{{ config.base_url }}{{ p.route }}#entity" id="entities-registry-table-{{ p.entityId | lower }}">
         <td class="whitespace-nowrap p-3 align-top" data-sort-value="{{ p.entityId }}">
@@ -107,7 +106,7 @@
         </td>
         <td class="p-3 align-top" data-sort-value="{{ p.title }}">
           <a href="{{ config.base_url }}{{ p.route }}" class="font-semibold text-white no-underline hover:underline">{{ p.title }}</a>
-          {%- if entity_page.extra.government_office %}<span class="mt-0.5 block text-xs text-white/55">{{ entity_page.extra.government_office }}</span>{% endif %}
+          {%- if p.government %}<span class="mt-0.5 block text-xs text-white/55">{{ p.government.office }}</span>{% endif %}
         </td>
         <td class="whitespace-nowrap p-3 align-top text-xs text-white/55" data-sort-value="{{ p.entityType }}">{{ p.entityType }}</td>
         <td class="whitespace-nowrap p-3 align-top" data-sort-value="{{ p.publicationRole }}">

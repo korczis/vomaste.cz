@@ -9,14 +9,10 @@ weight = 4
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/martin-sebestyan/gaps/GAP-04"
 view_model = "generated/views/dossiers/martin-sebestyan/gaps/gap-04.json"
-subjects = ["sebestyan"]
 dossier = "martin-sebestyan"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-04"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Tvrzení Deníku N, že Šebestyán je nadále veden jako předseda spolku (IZPP), jehož členem je Agrofert, nebylo ověřeno z primárního zdroje (spolkový rejstřík).
 

@@ -9,18 +9,10 @@ weight = 32
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-32"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-32.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-32"
-outlet = "ČeskéNoviny.cz (ČTK)"
-family = "ctk"
-src_type = "agenturní zpravodajství"
-url = "https://www.ceskenoviny.cz/zpravy/soud-v-pondeli-vynese-rozsudek-nad-babisem-a-nagyovou-v-kauze-capi-hnizdo/2308137"
-published = "2023-01-09"
-retrieved = "2026-07-31"
-claims = ["CLM-50"]
 +++
 ČeskéNoviny.cz dne 9. 1. 2023: „Podle soudce Jana Šotta není skutek
 popsaný v obžalobě trestným činem." „Verdikt není pravomocný" — obhajoba

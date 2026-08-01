@@ -9,17 +9,10 @@ weight = 31
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-31"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-31.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-31"
-outlet = "Tiscali.cz"
-src_type = "zpravodajství"
-url = "https://www.tiscali.cz/rozhodnuto-agrofert-muze-znovu-cerpat-dotace-opozice-zuri-639147"
-published = "2026-04-24"
-retrieved = "2026-07-31"
-claims = ["CLM-10", "CLM-11"]
 +++
 Tiscali.cz dne 24. 4. 2026: „Státní zemědělský intervenční fond od 20.
 února 2026 nevidí důvod držet Agrofert mimo zemědělské dotace",

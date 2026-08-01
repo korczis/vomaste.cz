@@ -9,14 +9,10 @@ weight = 11
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/robert-plaga/gaps/GAP-11"
 view_model = "generated/views/dossiers/robert-plaga/gaps/gap-11.json"
-subjects = ["plaga"]
 dossier = "robert-plaga"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-11"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Rozhovor Deníku N s Tomášem Zatloukalem (24. 5. 2026) nebyl obsahově ověřen.
 

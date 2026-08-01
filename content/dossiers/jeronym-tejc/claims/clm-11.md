@@ -13,10 +13,5 @@ dossier = "jeronym-tejc"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-11"
-status = "status-corroborated"
-status_label = "CORROBORATED"
-summary = "Tejc soudkyni v kárné žalobě vytýká, že se věci věnovala nedbale, rozhodla formálně a opomenula provést řadu dostupných důkazů. Jde o tvrzení ministra jako kárného žalobce; jeho oprávněnost posoudí kárný senát."
-sources = ["SRC-05", "SRC-07"]
-subjects = ["tejc"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jeronym-tejc/_index.md#registr-tvrzeni).

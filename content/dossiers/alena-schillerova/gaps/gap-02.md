@@ -9,14 +9,10 @@ weight = 2
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/alena-schillerova/gaps/GAP-02"
 view_model = "generated/views/dossiers/alena-schillerova/gaps/gap-02.json"
-subjects = ["schillerova"]
 dossier = "alena-schillerova"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-02"
-priority = "vysoká"
-checked = "2026-07-30"
-claims = ["CLM-03", "CLM-04"]
 +++
 Národní rozpočtová rada vypočítala maximální přípustný schodek na 247
 miliard korun; ministerstvo financí tvrdí, že obranné výdaje 55 miliard

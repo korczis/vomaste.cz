@@ -9,17 +9,10 @@ weight = 3
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-03"
 view_model = "generated/views/dossiers/jaroslav-faltynek/sources/src-03.json"
-subjects = ["faltynek"]
 dossier = "jaroslav-faltynek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-03"
-outlet = "Echo24"
-src_type = "celostátní zpravodajství"
-url = "https://echo24.cz/a/Sbrks/zpravy-domaci-soud-babis-kauza-capi-hnizdo-faltynek-podvod"
-published = "2022-09-14"
-retrieved = "2026-07-30"
-claims = ["CLM-05", "CLM-06", "CLM-07", "CLM-08"]
 +++
 Echo24 dne 14. 9. 2022 informovalo o výpovědi Jaroslava Faltýnka u soudu
 v kauze Čapí hnízdo. Vypovídal **jako svědek** — jeho vlastní stíhání

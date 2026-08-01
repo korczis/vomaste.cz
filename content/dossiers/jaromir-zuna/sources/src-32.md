@@ -9,17 +9,10 @@ weight = 32
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-32"
 view_model = "generated/views/dossiers/jaromir-zuna/sources/src-32.json"
-subjects = ["zuna"]
 dossier = "jaromir-zuna"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-32"
-outlet = "Deník.cz (VLTAVA LABE MEDIA)"
-src_type = "zpravodajství"
-url = "https://www.denik.cz/z_domova/ministr-obrany-jaromir-zuna-povinna-vojna-armada-penize-cesko.html"
-published = "2026-05-27"
-retrieved = "2026-07-30"
-claims = ["CLM-32", "CLM-33", "CLM-39", "CLM-40"]
 +++
 **Ministr obrany Zůna: Černochová neumí plánovat a armáda na to teď doplácí**
 

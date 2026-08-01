@@ -20,5 +20,20 @@
   "routeAliases": [
     "/dossiers/macinka-turek/entities/klubmotoristu/"
   ],
-  "order": 15
+  "order": 15,
+  "provenance": {
+    "discoveredAt": "2026-07-29",
+    "discoveredVia": [
+      "edge-macinka-klubmotoristu",
+      "edge-klubmotoristu-motoriste"
+    ],
+    "claimRefs": [
+      "CLM-22"
+    ],
+    "sourceRefs": [
+      "SRC-24"
+    ],
+    "cluster": "financni-vazby",
+    "depth": 1
+  }
 }

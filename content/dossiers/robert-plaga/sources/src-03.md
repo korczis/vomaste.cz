@@ -9,17 +9,10 @@ weight = 3
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-03"
 view_model = "generated/views/dossiers/robert-plaga/sources/src-03.json"
-subjects = ["plaga"]
 dossier = "robert-plaga"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-03"
-outlet = "Blesk.cz"
-src_type = "zpravodajství"
-url = "https://www.blesk.cz/clanek/zpravy-politika/840131/podivne-dotazy-pro-zaky-5-a-9-trid-ministr-plaga-zastavil-testovani.html"
-published = "2026-05-25"
-retrieved = "2026-07-30"
-claims = ["CLM-02", "CLM-03", "CLM-04", "CLM-05", "CLM-06"]
 +++
 **Podivné dotazy pro žáky 5. a 9. tříd: Ministr Plaga zastavil testování!**
 

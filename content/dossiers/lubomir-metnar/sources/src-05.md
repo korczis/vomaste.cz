@@ -9,17 +9,10 @@ weight = 5
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-05"
 view_model = "generated/views/dossiers/lubomir-metnar/sources/src-05.json"
-subjects = ["metnar"]
 dossier = "lubomir-metnar"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-05"
-outlet = "Deník N"
-src_type = "zpravodajství"
-url = "https://denikn.cz/minuta/2140312"
-published = "2026-07-29"
-retrieved = "2026-07-30"
-claims = ["CLM-05", "CLM-08", "CLM-12", "CLM-18"]
 +++
 **Ministerstvo vnitra navrhuje zrušení policejní ochranné služby NKÚ**
 

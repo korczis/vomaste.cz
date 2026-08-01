@@ -9,17 +9,10 @@ weight = 14
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-14"
 view_model = "generated/views/dossiers/ales-juchelka/sources/src-14.json"
-subjects = ["juchelka"]
 dossier = "ales-juchelka"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-14"
-outlet = "ČeskéNoviny.cz (ČTK)"
-src_type = "zpravodajství"
-url = "https://www.ceskenoviny.cz/zpravy/juchelka-mpsv-si-vyzadalo-externi-posudek-kvuli-stretu-zajmu-semancove-u-dotaci/2855554"
-published = "2026-07-27"
-retrieved = "2026-07-30"
-claims = ["CLM-13", "CLM-14", "CLM-16", "CLM-22", "CLM-25", "CLM-26"]
 +++
 **Juchelka: MPSV si vyžádalo externí posudek kvůli střetu zájmů Semancové u dotací**
 

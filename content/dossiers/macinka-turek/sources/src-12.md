@@ -10,17 +10,10 @@ aliases = ["/dossier/zdroje/src-12/"]
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-12"
 view_model = "generated/views/dossiers/macinka-turek/sources/src-12.json"
-subjects = ["macinka", "turek"]
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-12"
-outlet = "iROZHLAS.cz (Český rozhlas)"
-src_type = "veřejnoprávní zpravodajství"
-url = "https://www.irozhlas.cz/zpravy-domov/ze-sedacek-aut-a-formuli-do-kresla-v-europarlamentu-jmeno-filipa-turka_2412271818_vtk"
-published = "2024-12-27"
-retrieved = "2026-07-21"
-claims = ["CLM-01", "CLM-04", "CLM-05", "CLM-06"]
 +++
 Profilový text veřejnoprávního Českého rozhlasu mapující Turkovu cestu do
 politiky (včetně jeho dřívějšího podnikání) a shrnující kauzu z roku 2024

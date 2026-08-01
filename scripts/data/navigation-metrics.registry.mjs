@@ -136,7 +136,7 @@ export const METRIC_DEFINITIONS = [
     description: "Počet vztahů v globálním grafu",
     source: "static/data/relations.json",
     semantics:
-      "COUNT(DISTINCT canonical id) over curated relation records — the edges hand-authored in data/dossiers/<slug>/graph.toml, each of which must be backed by claims and sources. This is the curated layer, NOT the derived full registry layer of the global graph, which materializes far more edges and is not what /map/ presents as relationships.",
+      "COUNT(DISTINCT canonical id) over curated relation records — the canonical relations of each dossier (data/dossiers/<slug>/relations/, curated order in dossier.json graph.edges), each of which must be backed by claims and sources. This is the curated layer, NOT the derived full registry layer of the global graph, which materializes far more edges and is not what /map/ presents as relationships.",
     dedupe:
       "By canonical edge id. Direction is preserved: this project treats a relation as directed, so an inverse is a separate edge only when it is separately authored. The same edge supported by several sources is still one edge.",
     publication: "All relation records in the export are published.",

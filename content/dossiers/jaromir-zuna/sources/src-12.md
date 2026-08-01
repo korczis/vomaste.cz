@@ -9,17 +9,10 @@ weight = 12
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-12"
 view_model = "generated/views/dossiers/jaromir-zuna/sources/src-12.json"
-subjects = ["zuna"]
 dossier = "jaromir-zuna"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-12"
-outlet = "Echo24"
-src_type = "zpravodajství"
-url = "https://m.echo24.cz/a/HQC6W/zpravy-domaci-babisovi-se-nelibi-koncepce-armady-vadi-mu-neambiciozni-nabor-zuna"
-published = "2026-05-20"
-retrieved = "2026-07-30"
-claims = ["CLM-07", "CLM-17", "CLM-18"]
 +++
 **Babiš probíral se Zůnou koncepci armády. Vadí mu malý počet plánovaných vojáků**
 

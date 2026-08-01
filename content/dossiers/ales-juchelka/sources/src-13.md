@@ -9,17 +9,10 @@ weight = 13
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-13"
 view_model = "generated/views/dossiers/ales-juchelka/sources/src-13.json"
-subjects = ["juchelka"]
 dossier = "ales-juchelka"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-13"
-outlet = "FORUM 24"
-src_type = "zpravodajství"
-url = "https://www.forum24.cz/je-to-odporna-prace-stydte-se-ze-pracujete-pro-seznam-zpravy-utocil-na-vlade-juchelka"
-published = "2026-07-27"
-retrieved = "2026-07-30"
-claims = ["CLM-16", "CLM-21", "CLM-22"]
 +++
 **Je to odporná práce, styďte se, že pracujete pro Seznam Zprávy, útočil na vládě Juchelka**
 

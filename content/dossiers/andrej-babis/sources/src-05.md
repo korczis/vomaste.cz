@@ -9,17 +9,10 @@ weight = 5
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-05"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-05.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-05"
-outlet = "Česká justice"
-src_type = "zpravodajství"
-url = "https://www.ceska-justice.cz/2026/04/danove-podvody-a-promlceni-babis-francie/"
-published = "2026-04-05"
-retrieved = "2026-07-30"
-claims = ["CLM-13", "CLM-14", "CLM-15"]
 +++
 Článek „Daňové podvody a promlčení: Unikne Babiš francouzským
 vyšetřovatelům?" (5. 4. 2026). Popisuje **předběžné** vyšetřování

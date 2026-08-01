@@ -9,14 +9,10 @@ weight = 6
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ivan-bednarik/gaps/GAP-06"
 view_model = "generated/views/dossiers/ivan-bednarik/gaps/gap-06.json"
-subjects = ["bednarik"]
 dossier = "ivan-bednarik"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-06"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Konkrétní kroky ministra k objednávce regionální železniční dopravy a k jednáním s kraji o dopravní obslužnosti se nepodařilo doložit nad rámec obecné zmínky o nákladech přesahujících 100 Kč na kilometr.
 

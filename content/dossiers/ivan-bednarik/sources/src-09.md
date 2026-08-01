@@ -9,17 +9,10 @@ weight = 9
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-09"
 view_model = "generated/views/dossiers/ivan-bednarik/sources/src-09.json"
-subjects = ["bednarik"]
 dossier = "ivan-bednarik"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-09"
-outlet = "Ministerstvo dopravy ČR"
-src_type = "oficiální primární zdroj"
-url = "https://md.gov.cz/Media/Media-a-tiskove-zpravy/Priprava-paterni-site-vysokorychlostnich-trati-pok"
-published = "2026-04-20"
-retrieved = "2026-07-30"
-claims = ["CLM-21", "CLM-22", "CLM-23", "CLM-24", "CLM-25"]
 +++
 **Příprava páteřní sítě vysokorychlostních tratí pokračuje**
 

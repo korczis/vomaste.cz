@@ -14,10 +14,5 @@ dossier = "macinka-turek"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-06"
-status = "status-quote"
-status_label = "CITACE"
-summary = "Macinka kauzu 2024 veřejně hájil, označil ji za „pseudoproblém\""
-sources = ["SRC-12", "SRC-14"]
-subjects = ["macinka", "turek"]
 +++
 Tato stránka je kanonický záznam tvrzení CLM-06 — shrnutí, stav a zdroje výše jsou úplné. Součástí téže kauzy jsou i CLM-04, CLM-05. Se zdrojem tohoto tvrzení se překrývá CLM-01. Hlavní stránka dossieru zobrazuje tentýž text ze stejného zdroje; build proces ověřuje, že se neliší.

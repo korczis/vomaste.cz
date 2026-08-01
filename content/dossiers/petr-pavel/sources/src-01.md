@@ -9,18 +9,10 @@ weight = 1
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/petr-pavel/sources/SRC-01"
 view_model = "generated/views/dossiers/petr-pavel/sources/src-01.json"
-subjects = ["pavel"]
 dossier = "petr-pavel"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-01"
-outlet = "Deník.cz (VLTAVA LABE MEDIA)"
-family = "denik-cz-turek-ministr"
-src_type = "zpravodajství"
-url = "https://www.denik.cz/z_domova/filip-turek-petr-pavel-zaloba.html"
-published = "2026-01-09"
-retrieved = "2026-07-23"
-claims = ["CLM-01", "CLM-02"]
 +++
 Prezident Petr Pavel zdůvodnil odmítnutí jmenovat Filipa Turka ministrem
 životního prostředí: uvedl, že Turek opakovaně prokazoval nedostatek

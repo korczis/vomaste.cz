@@ -30,7 +30,9 @@ import { fileURLToPath } from "node:url";
 import readline from "node:readline";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
-const ENTITIES_ROOT = join(ROOT, "content/entities");
+// T-028 fáze H: kanonickým záznamem entity je data/dossiers/_shared/
+// entities/<id>.json — content/entities/** je generovaný adaptér.
+const ENTITIES_ROOT = join(ROOT, "data/dossiers/_shared/entities");
 const AGENTS_MD = join(ROOT, "AGENTS.md");
 const AUTHORIZATIONS_TOML = join(ROOT, "data/authorizations.toml");
 
@@ -57,21 +59,18 @@ if (!entityId) {
   process.exit(1);
 }
 
-const entityFile = join(ENTITIES_ROOT, `${entityId}.md`);
-let entityText;
+const entityFile = join(ENTITIES_ROOT, `${entityId}.json`);
+let entityRecord;
 try {
-  entityText = readFileSync(entityFile, "utf8");
+  entityRecord = JSON.parse(readFileSync(entityFile, "utf8"));
 } catch (e) {
-  console.error(`No entity page found at content/entities/${entityId}.md`);
+  console.error(`No canonical entity record found at data/dossiers/_shared/entities/${entityId}.json`);
   process.exit(1);
 }
 
-const fmEnd = entityText.indexOf("\n+++", 3);
-const fm = entityText.slice(0, fmEnd);
-const currentRole = extractField(fm, "publication_role");
-const currentStatus = extractField(fm, "dossier_status");
-const titleMatch = entityText.match(/^title = "(.*)"$/m);
-const entityName = titleMatch ? titleMatch[1] : entityId;
+const currentRole = entityRecord.publicationRole;
+const currentStatus = entityRecord.dossierStatus;
+const entityName = entityRecord.title ?? entityId;
 
 if (currentRole === "subject" && currentStatus === "authorized") {
   console.log(`${entityName} (${entityId}) is already an authorized subject. Nothing to do.`);
@@ -86,7 +85,7 @@ console.log(`Current publication_role: ${currentRole}, dossier_status: ${current
 console.log("This will:");
 console.log(`  - append a new dated authorization entry to AGENTS.md, in your own words`);
 console.log(`  - add a matching record to data/authorizations.toml`);
-console.log(`  - flip this entity's publication_role to "subject" and dossier_status to "authorized"\n`);
+console.log(`  - flip this entity's canonical publicationRole to "subject" and dossierStatus to "authorized"\n`);
 
 const typedId = await ask(`Type the exact entity id to confirm you mean "${entityId}": `);
 if (typedId.trim() !== entityId) {
@@ -124,11 +123,11 @@ writeFileSync(AGENTS_MD, readFileSync(AGENTS_MD, "utf8").replace(/\s*$/, "") + "
 const authEntry = `\n[[authorizations]]\nid = "${recordId}"\nauthorized_at = "${today}"\nsubjects = ["${entityId}"]\nagents_md_section = "Scope extension, ${today}: ${entityName.replace(/"/g, '\\"')}"\nscope_summary = "${scope.trim().replace(/\\/g, "\\\\").replace(/"/g, '\\"').replace(/\n/g, " ")}"\n`;
 writeFileSync(AUTHORIZATIONS_TOML, readFileSync(AUTHORIZATIONS_TOML, "utf8").replace(/\s*$/, "") + "\n" + authEntry, "utf8");
 
-let newEntityText = entityText;
-newEntityText = newEntityText.replace(/^publication_role = "context"/m, 'publication_role = "subject"');
-newEntityText = newEntityText.replace(/^dossier_status = "not_authorized"/m, 'dossier_status = "authorized"');
-newEntityText = newEntityText.replace(/^dossier_enabled = false/m, "dossier_enabled = true");
-writeFileSync(entityFile, newEntityText, "utf8");
+entityRecord.publicationRole = "subject";
+entityRecord.dossierStatus = "authorized";
+entityRecord.dossierEnabled = true;
+writeFileSync(entityFile, `${JSON.stringify(entityRecord, null, 2)}\n`, "utf8");
+console.log("Kanonický záznam entity aktualizován — spusť `npm run data:build` pro regeneraci adaptérů.");
 
 console.log(`\nDone. ${entityName} is now an authorized subject (record ${recordId}).`);
 console.log("Next: author the actual dossier content (claims, sources) yourself — this");

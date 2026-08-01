@@ -9,17 +9,10 @@ weight = 10
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-10"
 view_model = "generated/views/dossiers/adam-vojtech/sources/src-10.json"
-subjects = ["vojtech"]
 dossier = "adam-vojtech"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-10"
-outlet = "Reflex"
-src_type = "komentář/názor"
-url = "https://www.reflex.cz/clanek/komentare/136410/ministr-vojtech-si-hraje-na-neznalka-netusil-ze-zvyhodnuje-babisovy-kliniky-ve-stretu-zajmu.html"
-published = "2026-06-12"
-retrieved = "2026-07-30"
-claims = ["CLM-16"]
 +++
 **Ministr Vojtěch si hraje na neználka. Netušil, že zvýhodňuje Babišovy kliniky ve střetu zájmů**
 

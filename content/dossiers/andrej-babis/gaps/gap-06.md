@@ -13,9 +13,6 @@ dossier = "andrej-babis"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-06"
-priority = "vysoká"
-checked = "2026-08-01"
-claims = ["CLM-57", "CLM-60", "CLM-63"]
 +++
 **Co je doloženo.** K datu poslední kontroly (1. 8. 2026) citované
 zdroje dokládají tři otevřené procesní větve bez konečného rozhodnutí:

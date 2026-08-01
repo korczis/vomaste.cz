@@ -9,17 +9,10 @@ weight = 9
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-09"
 view_model = "generated/views/dossiers/robert-plaga/sources/src-09.json"
-subjects = ["plaga"]
 dossier = "robert-plaga"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-09"
-outlet = "Deník.cz (VLTAVA LABE MEDIA)"
-src_type = "zpravodajství"
-url = "https://www.denik.cz/skolstvi-a-vzdelavani/kdy-konci-skolni-rok-na-skolach-robert-plaga.html"
-published = "2026-03-31"
-retrieved = "2026-07-30"
-claims = ["CLM-16", "CLM-17", "CLM-19"]
 +++
 **Školní rok skončí letos v pátek 26. června, ne 30. června, rozhodl Plaga**
 

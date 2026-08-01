@@ -10,17 +10,10 @@ aliases = ["/dossier/zdroje/src-39/"]
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-39"
 view_model = "generated/views/dossiers/macinka-turek/sources/src-39.json"
-subjects = ["macinka", "turek"]
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-39"
-outlet = "Seznam Zprávy"
-src_type = "zpravodajství"
-url = "https://www.seznamzpravy.cz/clanek/volby-do-poslanecke-snemovny-dum-za-50-milionu-i-vazba-na-babise-kdo-je-nejvetsi-mecenas-letosnich-voleb-279644"
-published = "2025-08-14"
-retrieved = "2026-07-22"
-claims = ["CLM-35"]
 +++
 Seznam Zprávy (14. 8. 2025) mapují velké dárce napříč stranami před
 volbami do PS 2025. U Motoristů sobě uvádí dva významné dárce:

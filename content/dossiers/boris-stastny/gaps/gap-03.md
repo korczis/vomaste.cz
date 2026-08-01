@@ -9,14 +9,10 @@ weight = 3
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/boris-stastny/gaps/GAP-03"
 view_model = "generated/views/dossiers/boris-stastny/gaps/gap-03.json"
-subjects = ["stastny"]
 dossier = "boris-stastny"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-03"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Znění vládního dokumentu se zdůvodněním odvolání šéfa NSA (údajně obsahuje formulace o obtížně obhajitelných cestách, negativní medializaci a střetu zájmů).
 

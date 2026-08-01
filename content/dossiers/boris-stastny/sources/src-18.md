@@ -9,17 +9,10 @@ weight = 18
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-18"
 view_model = "generated/views/dossiers/boris-stastny/sources/src-18.json"
-subjects = ["stastny"]
 dossier = "boris-stastny"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-18"
-outlet = "FORUM 24"
-src_type = "zpravodajství"
-url = "https://www.forum24.cz/snad-nefejkuje-i-kroky-opozice-se-vysmala-trapnemu-svindlu-ministra-stastneho"
-published = "2026-06-24"
-retrieved = "2026-07-30"
-claims = ["CLM-34", "CLM-36", "CLM-37", "CLM-38", "CLM-39"]
 +++
 **Snad nefejkuje i kroky. Opozice se vysmála „trapnému svindlu“ ministra Šťastného**
 

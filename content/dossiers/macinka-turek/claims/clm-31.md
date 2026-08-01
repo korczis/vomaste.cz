@@ -14,10 +14,5 @@ dossier = "macinka-turek"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-31"
-status = "status-corroborated"
-status_label = "CORROBORATED"
-summary = "Turkova firma Zapper-Club s.r.o. nabízela za pandemie „Imunitní balíček ANTI-COVID-19\"; přístroj zapper byl předmětem varování Ministerstva zdravotnictví a SZPI mu odebrala certifikát"
-sources = ["SRC-34", "SRC-35"]
-subjects = ["turek"]
 +++
 Tato stránka je kanonický záznam tvrzení CLM-31 — shrnutí, stav a zdroje výše jsou úplné. Hlavní stránka dossieru zobrazuje tentýž text ze stejného zdroje; build proces ověřuje, že se neliší.

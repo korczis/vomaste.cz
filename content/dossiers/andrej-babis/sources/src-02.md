@@ -9,17 +9,10 @@ weight = 2
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-02"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-02.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-02"
-outlet = "ČT24 (Česká televize)"
-src_type = "veřejnoprávní zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/babis-oznamil-ze-vlozil-akcie-agrofertu-do-sverenskeho-fondu-rsvp-trust-370561"
-published = "2026-02-20"
-retrieved = "2026-07-30"
-claims = ["CLM-04", "CLM-05", "CLM-06"]
 +++
 ČT24 dne 20. 2. 2026 informovala, že premiér Andrej Babiš vložil veškeré
 akcie holdingu Agrofert do soukromého svěřenského fondu RSVP Trust poté,

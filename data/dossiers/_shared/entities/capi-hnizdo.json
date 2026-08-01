@@ -21,6 +21,32 @@
     "/dossiers/andrej-babis/entities/capi-hnizdo/"
   ],
   "order": 9,
+  "provenance": {
+    "discoveredAt": "2026-07-30",
+    "discoveredVia": [
+      "edge-babis-capihnizdo",
+      "edge-imoba-capihnizdo",
+      "edge-capihnizdo-olaf",
+      "edge-agrofert-capihnizdo-reklamy"
+    ],
+    "claimRefs": [
+      "CLM-01",
+      "CLM-02",
+      "CLM-05",
+      "CLM-49",
+      "CLM-50",
+      "CLM-51",
+      "CLM-52"
+    ],
+    "sourceRefs": [
+      "SRC-01",
+      "SRC-02",
+      "SRC-03",
+      "SRC-23",
+      "SRC-24"
+    ],
+    "depth": 1
+  },
   "content": [
     {
       "type": "markdown",

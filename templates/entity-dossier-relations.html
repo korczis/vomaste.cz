@@ -12,7 +12,7 @@
 
   {{ ui::page_header(title=section.title, description=section.description, breadcrumb_items=[
     "Dossiery::" ~ get_url(path="@/dossiers/_index.md"),
-    section.extra.dossier_title ~ "::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"),
+    idx.dossierTitle ~ "::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"),
     "Registr vztahů",
   ]) }}
 

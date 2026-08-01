@@ -9,17 +9,10 @@ weight = 7
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-07"
 view_model = "generated/views/dossiers/adam-vojtech/sources/src-07.json"
-subjects = ["vojtech"]
 dossier = "adam-vojtech"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-07"
-outlet = "Praha na dlani (přetisk anotace iROZHLAS.cz)"
-src_type = "zpravodajství"
-url = "https://www.prahanadlani.cz/clanek-zprava/1594840-ve-fn-olomouc-byly-nektere-defibrilatory-voperovany-bez-splneni-kriterii-zjistila-komise.html"
-published = "2026-07-10"
-retrieved = "2026-07-30"
-claims = ["CLM-11"]
 +++
 **Ve FN Olomouc byly některé defibrilátory voperovány bez splnění kritérií, zjistila komise**
 

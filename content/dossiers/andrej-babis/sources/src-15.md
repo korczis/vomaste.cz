@@ -9,18 +9,10 @@ weight = 15
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-15"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-15.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-15"
-outlet = "Echo24"
-family = "idnes-dividenda-2026-07"
-src_type = "zpravodajství"
-url = "https://m.echo24.cz/a/H4mha/zpravy-domov-babis-priznal-ze-od-agrofertu-inkasoval-dividendu-4-25-miliardy-korun"
-published = "2026-07-01"
-retrieved = "2026-07-30"
-claims = ["CLM-37", "CLM-38"]
 +++
 Zpravodajský text k údajům z majetkového přiznání podávaného do
 30. června.

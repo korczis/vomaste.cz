@@ -9,17 +9,10 @@ weight = 12
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-12"
 view_model = "generated/views/dossiers/boris-stastny/sources/src-12.json"
-subjects = ["stastny"]
 dossier = "boris-stastny"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-12"
-outlet = "Sport.cz"
-src_type = "zpravodajství"
-url = "https://www.sport.cz/clanek/ostatni-vlada-odvolala-predsedu-narodni-sportovni-agentury-sebka-5356947"
-published = "2025-12-16"
-retrieved = "2026-07-30"
-claims = ["CLM-22", "CLM-23", "CLM-24", "CLM-25", "CLM-28"]
 +++
 **Vláda bleskově odvolala předsedu Národní sportovní agentury Šebka**
 

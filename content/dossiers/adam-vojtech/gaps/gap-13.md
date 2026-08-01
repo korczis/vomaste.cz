@@ -9,14 +9,10 @@ weight = 13
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/adam-vojtech/gaps/GAP-13"
 view_model = "generated/views/dossiers/adam-vojtech/gaps/gap-13.json"
-subjects = ["vojtech"]
 dossier = "adam-vojtech"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-13"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Není doložena reakce České kardiologické společnosti ani České asociace pro srdeční rytmus na červencové závěry komise jako celku.
 

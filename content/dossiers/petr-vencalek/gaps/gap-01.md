@@ -9,14 +9,10 @@ weight = 1
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/petr-vencalek/gaps/GAP-01"
 view_model = "generated/views/dossiers/petr-vencalek/gaps/gap-01.json"
-subjects = ["vencalek"]
 dossier = "petr-vencalek"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-01"
-priority = "nízká"
-checked = "2026-08-01"
-claims = []
 +++
 Autorizační záznam `AUTH-2026-08-01-VENCALEK` v `AGENTS.md` výslovně
 povoluje pokrýt dary Petra Vencálka Klubu motoristů, z.s. jako téma.

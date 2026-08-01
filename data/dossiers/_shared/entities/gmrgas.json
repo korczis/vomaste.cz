@@ -21,6 +21,23 @@
     "/dossiers/macinka-turek/entities/gmrgas/"
   ],
   "order": 14,
+  "provenance": {
+    "discoveredAt": "2026-07-29",
+    "discoveredVia": [
+      "edge-macinka-gmrgas"
+    ],
+    "claimRefs": [
+      "CLM-14",
+      "CLM-15",
+      "CLM-47"
+    ],
+    "sourceRefs": [
+      "SRC-17",
+      "SRC-18"
+    ],
+    "cluster": "financni-vazby",
+    "depth": 1
+  },
   "content": [
     {
       "type": "markdown",

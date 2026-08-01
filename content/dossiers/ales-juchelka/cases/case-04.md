@@ -13,14 +13,6 @@ dossier = "ales-juchelka"
 record_type = "case"
 lang = "cs"
 case_id = "CASE-04"
-anchor = "kauza-trestni-oznameni"
-period = "2026"
-status = "status-single"
-label = "Sledované téma"
-summary = "Trestní oznámení a kontrola NKÚ — viz tvrzení CLM-13, CLM-14, CLM-15."
-claims = ["CLM-38", "CLM-39", "CLM-40", "CLM-41", "CLM-42", "CLM-44"]
-sources = ["SRC-11", "SRC-10", "SRC-15", "SRC-09"]
-subjects = ["juchelka"]
 +++
 Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu
 dossieru](@/dossiers/ales-juchelka/_index.md#kauza-trestni-oznameni).

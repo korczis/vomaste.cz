@@ -10,17 +10,10 @@ aliases = ["/dossier/zdroje/src-03/"]
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-03"
 view_model = "generated/views/dossiers/macinka-turek/sources/src-03.json"
-subjects = ["macinka", "turek"]
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-03"
-outlet = "Info.cz"
-src_type = "komentář / názor"
-url = "https://www.info.cz/zpravodajstvi-a-komentare/macinka-turek-konec-motoriste"
-published = "2026-01-08"
-retrieved = "2026-07-21"
-claims = []
 +++
 Jde o autorský komentář, ne o zpravodajský text — samotný název sekce na
 Info.cz ("zpravodajství a komentáře") to nerozlišuje, ale obsahově je text

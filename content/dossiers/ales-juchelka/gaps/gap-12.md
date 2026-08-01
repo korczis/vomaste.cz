@@ -9,14 +9,10 @@ weight = 12
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ales-juchelka/gaps/GAP-12"
 view_model = "generated/views/dossiers/ales-juchelka/gaps/gap-12.json"
-subjects = ["juchelka"]
 dossier = "ales-juchelka"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-12"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Rozpor mezi pozicí MPSV z 22. 7. (nevymáhat po Semancové) a Juchelkovým příslibem z 27. 7. (škodu vymáhat) nebyl žádným médiem konfrontován.
 

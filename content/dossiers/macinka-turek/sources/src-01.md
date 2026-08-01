@@ -10,17 +10,10 @@ aliases = ["/dossier/zdroje/src-01/"]
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-01"
 view_model = "generated/views/dossiers/macinka-turek/sources/src-01.json"
-subjects = ["macinka", "turek"]
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-01"
-outlet = "Echo24"
-src_type = "zpravodajství"
-url = "https://www.echo24.cz/a/HkCB9/zpravy-domaci-turka-se-nikdy-nevzdam-budu-mu-odrezavat-opratku-rika-macinka-okamura-imunita"
-published = "2026-07-15"
-retrieved = "2026-07-21"
-claims = ["CLM-13"]
 +++
 Článek zaznamenává veřejné vyjádření Petra Macinky, ve kterém deklaruje
 trvalou podporu Filipu Turkovi navzdory politickému tlaku. Citovaný výrok

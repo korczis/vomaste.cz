@@ -13,9 +13,5 @@ dossier = "andrej-babis"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-41"
-status = "status-single"
-status_label = "1 ZDROJ"
-summary = "Evropská komise podle své písemné reakce z 23. června 2026 sleduje otázku možného střetu zájmů i ve vztahu ke společnostem SynBiol a Hartenberg Holding, které byly od 9. prosince 2025 vybrány jako příjemci evropských prostředků, a požádala řídicí orgány, aby žádná žádost o platbu předložená Komisi neobsahovala výdaje spojené s těmito subjekty; jde o monitoring a pokyn, ne o zjištění o porušení pravidel"
-sources = ["SRC-16"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni).

@@ -10,17 +10,10 @@ aliases = ["/dossier/zdroje/src-27/"]
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-27"
 view_model = "generated/views/dossiers/macinka-turek/sources/src-27.json"
-subjects = ["macinka"]
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-27"
-outlet = "Hlídač státu"
-family = "hlidac-statu"
-src_type = "veřejný rejstřík / transparentní databáze"
-url = "https://www.hlidacstatu.cz/osoba/funkce/petr-macinka"
-retrieved = "2026-07-22"
-claims = ["CLM-24"]
 +++
 Přehled veřejných a politických funkcí Petra Macinky podle Hlídače
 státu, použitý k upřesnění sekce "Kdo" v hlavním dossieru (dříve jen

@@ -9,17 +9,10 @@ weight = 9
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-09"
 view_model = "generated/views/dossiers/adam-vojtech/sources/src-09.json"
-subjects = ["vojtech"]
 dossier = "adam-vojtech"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-09"
-outlet = "Zdravotnický deník"
-src_type = "zpravodajství"
-url = "https://www.zdravotnickydenik.cz/2026/06/vojtech-pred-poslanci-odrazel-utok-kvuli-zdravotnim-benefitum/"
-published = "2026-06-04"
-retrieved = "2026-07-30"
-claims = ["CLM-13", "CLM-14", "CLM-15"]
 +++
 **Vůbec jsem to netušil. Vojtěch odmítl, že by luxusní zdravotní benefity nahrály Babišovi**
 

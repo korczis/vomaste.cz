@@ -10,10 +10,6 @@ view_model = "generated/views/dossiers/petr-macinka/cases-index.json"
 dossier = "petr-macinka"
 lang = "cs"
 seo_type = "CollectionPage"
-dossier_title = "Petr Macinka"
-canonical_dossier = "macinka-turek"
-subject = "macinka"
-registry = "cases"
 +++
 Filtrovaný pohled na [registr kauz](@/dossiers/macinka-turek/cases/_index.md) — jen kauzy, ve kterých je Petr Macinka přímo zmíněn.
 

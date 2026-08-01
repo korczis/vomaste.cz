@@ -10,15 +10,8 @@ record_id = "https://vomaste.cz/id/dossiers/macinka-turek/relations/edge-trestni
 view_model = "generated/views/dossiers/macinka-turek/relations/edge-trestniozn-policie.json"
 dossier = "macinka-turek"
 record_type = "relation"
+lang = "cs"
 rel_id = "edge-trestniozn-policie"
-source = "trestniozn"
-target = "policie"
-relation_type = "PROCEDURALLY_CLOSED_BY"
-label = "odloženo policií pro promlčení — procesní krok, ne rozhodnutí o vině; nepravomocné"
-status = "corroborated"
-claims = ["CLM-27"]
-sources = ["SRC-31", "SRC-54"]
-subjects = ["turek"]
 +++
 Tato stránka je kanonický záznam vztahu edge-trestniozn-policie — typ vztahu, podporující tvrzení a zdroje v tabulce výše jsou úplné. Status FAKT znamená, že vztah je doložen nezávisle potvrzenými zdroji, ne jen tvrzením jedné strany. Hlavní stránka dossieru vykresluje interaktivní graf ze stejných dat.
 

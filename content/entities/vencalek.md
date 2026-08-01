@@ -10,19 +10,6 @@ record_id = "https://vomaste.cz/id/entities/vencalek"
 view_model = "generated/views/entities/vencalek.json"
 record_type = "entity"
 entity_id = "vencalek"
-entity_type = "person"
-publication_role = "subject"
-dossier_enabled = true
-dossier_status = "authorized"
-coverage_state = "full"
-dossiers = ["macinka-turek", "petr-macinka", "petr-vencalek"]
-depth = 0
-subject = true
-discovered_at = "2026-07-30"
-discovered_via = ["edge-vencalek-gmrgascz"]
-cluster = "financni-vazby"
-claims = ["CLM-48", "CLM-01"]
-sources = ["SRC-17", "SRC-55", "SRC-01", "SRC-02"]
 +++
 Jediný společník (podíl 100 %) a jednatel společnosti GMR GAS s.r.o.,
 od 2026-08-01 subjektem vlastního dossieru

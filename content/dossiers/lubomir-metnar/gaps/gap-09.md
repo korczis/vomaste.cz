@@ -9,14 +9,10 @@ weight = 9
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/lubomir-metnar/gaps/GAP-09"
 view_model = "generated/views/dossiers/lubomir-metnar/gaps/gap-09.json"
-subjects = ["metnar"]
 dossier = "lubomir-metnar"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-09"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Zdroj Radio Prague International nebyl přečten.
 

@@ -14,6 +14,7 @@
   "subject": "faltynek",
   "language": "cs",
   "navigationVisible": true,
+  "order": 21,
   "updated": "2026-07-30",
   "reviewedAt": "2026-07-30",
   "authorization": {
@@ -23,6 +24,49 @@
   },
   "seo": {
     "seoType": "ProfilePage"
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "faltynek",
+        "label": "Jaroslav Faltýnek",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01"
+        ]
+      },
+      {
+        "entity": "capi-hnizdo",
+        "label": "Kauza Čapí hnízdo",
+        "claims": [
+          "CLM-02",
+          "CLM-05"
+        ],
+        "sources": [
+          "SRC-02",
+          "SRC-03"
+        ]
+      },
+      {
+        "entity": "babis",
+        "label": "Andrej Babiš",
+        "claims": [
+          "CLM-03",
+          "CLM-06"
+        ],
+        "sources": [
+          "SRC-02",
+          "SRC-03"
+        ]
+      }
+    ],
+    "edges": [
+      "edge-faltynek-capihnizdo",
+      "edge-faltynek-babis"
+    ]
   },
   "contentBlocks": [
     {

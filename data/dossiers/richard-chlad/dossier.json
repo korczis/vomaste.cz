@@ -14,6 +14,7 @@
   "subject": "chlad",
   "language": "cs",
   "navigationVisible": true,
+  "order": 22,
   "updated": "2026-07-30",
   "reviewedAt": "2026-07-30",
   "authorization": {
@@ -23,6 +24,64 @@
   },
   "seo": {
     "seoType": "ProfilePage"
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "chlad",
+        "label": "Richard Chlad",
+        "subject": true,
+        "claims": [
+          "CLM-01",
+          "CLM-07"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      },
+      {
+        "entity": "motoriste",
+        "label": "Motoristé sobě",
+        "claims": [
+          "CLM-01",
+          "CLM-02",
+          "CLM-03",
+          "CLM-04"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02",
+          "SRC-03"
+        ]
+      },
+      {
+        "entity": "turek",
+        "label": "Filip Turek",
+        "claims": [
+          "CLM-05"
+        ],
+        "sources": [
+          "SRC-03"
+        ]
+      },
+      {
+        "entity": "macinka",
+        "label": "Petr Macinka",
+        "claims": [
+          "CLM-04",
+          "CLM-06"
+        ],
+        "sources": [
+          "SRC-03"
+        ]
+      }
+    ],
+    "edges": [
+      "edge-chlad-motoriste-dary",
+      "edge-turek-chlad-reakce",
+      "edge-macinka-chlad-reakce"
+    ]
   },
   "contentBlocks": [
     {

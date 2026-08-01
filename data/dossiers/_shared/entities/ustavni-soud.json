@@ -20,6 +20,22 @@
     "/dossiers/andrej-babis/entities/ustavni-soud/"
   ],
   "order": 18,
+  "provenance": {
+    "discoveredAt": "2026-07-30",
+    "discoveredVia": [
+      "edge-kostelecke-ustavnisoud",
+      "edge-vodnanska-ustavnisoud"
+    ],
+    "claimRefs": [
+      "CLM-47",
+      "CLM-66"
+    ],
+    "sourceRefs": [
+      "SRC-21",
+      "SRC-44"
+    ],
+    "depth": 1
+  },
   "content": [
     {
       "type": "markdown",

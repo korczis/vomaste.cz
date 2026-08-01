@@ -9,17 +9,10 @@ weight = 25
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-25"
 view_model = "generated/views/dossiers/jaromir-zuna/sources/src-25.json"
-subjects = ["zuna"]
 dossier = "jaromir-zuna"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-25"
-outlet = "Security magazín"
-src_type = "zpravodajství"
-url = "https://www.securitymagazin.cz/defence/vybor-pro-obranu-general-hlavac-1404074345.html"
-published = "2026-05-27"
-retrieved = "2026-07-30"
-claims = ["CLM-25", "CLM-26", "CLM-27", "CLM-32"]
 +++
 **Kontinuita s akcentem na rychlost: ministr Zůna a generál Hlaváč plánují proměnit českou armádu**
 

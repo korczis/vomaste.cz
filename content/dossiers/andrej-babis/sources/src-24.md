@@ -9,18 +9,10 @@ weight = 24
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-24"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-24.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-24"
-outlet = "Aktuálně.cz"
-family = "ctk"
-src_type = "agenturní zpravodajství"
-url = "https://zpravy.aktualne.cz/domaci/capi-hnizdo-jsem-vzdy-zamyslel-jako-rodinny-podnik-rekl-babi/r~7f97cda0cb1911eeaf28ac1f6b220ee8/"
-published = "2024-02-14"
-retrieved = "2026-07-30"
-claims = ["CLM-51", "CLM-52"]
 +++
 Zpráva ČTK publikovaná Aktuálně.cz k druhému zprošťujícímu rozsudku.
 **Co dokládá:** že Městský soud v Praze 14. února 2024 oba obžalované

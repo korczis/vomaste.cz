@@ -14,6 +14,7 @@
   "subject": "metnar",
   "language": "cs",
   "navigationVisible": true,
+  "order": 7,
   "updated": "2026-07-30",
   "reviewedAt": "2026-07-30",
   "authorization": {
@@ -23,6 +24,62 @@
   },
   "seo": {
     "seoType": "ProfilePage"
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "metnar",
+        "label": "Lubomír Metnar",
+        "subject": true,
+        "claims": [
+          "CLM-01",
+          "CLM-04",
+          "CLM-05",
+          "CLM-06",
+          "CLM-07",
+          "CLM-08",
+          "CLM-09",
+          "CLM-10",
+          "CLM-11",
+          "CLM-12",
+          "CLM-13",
+          "CLM-14",
+          "CLM-15",
+          "CLM-16",
+          "CLM-17",
+          "CLM-18",
+          "CLM-19",
+          "CLM-20",
+          "CLM-21",
+          "CLM-22",
+          "CLM-23",
+          "CLM-24",
+          "CLM-25"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02",
+          "SRC-03",
+          "SRC-04",
+          "SRC-05",
+          "SRC-06"
+        ]
+      },
+      {
+        "entity": "nku",
+        "label": "Nejvyšší kontrolní úřad",
+        "claims": [
+          "CLM-01",
+          "CLM-03"
+        ],
+        "sources": [
+          "SRC-01"
+        ]
+      }
+    ],
+    "edges": [
+      "edge-metnar-nku"
+    ]
   },
   "contentBlocks": [
     {

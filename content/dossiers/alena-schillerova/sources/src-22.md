@@ -9,17 +9,10 @@ weight = 22
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-22"
 view_model = "generated/views/dossiers/alena-schillerova/sources/src-22.json"
-subjects = ["schillerova"]
 dossier = "alena-schillerova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-22"
-outlet = "Hospodářské noviny"
-src_type = "zpravodajství"
-url = "https://domaci.hn.cz/c1-67877450-koalicni-poslanci-schvalili-kontroverzni-rozpoctovou-novelu-opozice-se-chce-obratit-na-ustavni-soud"
-published = "2026-05-15"
-retrieved = "2026-07-31"
-claims = ["CLM-05"]
 +++
 Hospodářské noviny dne 15. 5. 2026 potvrzují: vláda by mohla navyšovat
 výdaje na strategickou infrastrukturu podle liniového zákona; návrh

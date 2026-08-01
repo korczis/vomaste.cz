@@ -9,17 +9,10 @@ weight = 10
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-10"
 view_model = "generated/views/dossiers/robert-plaga/sources/src-10.json"
-subjects = ["plaga"]
 dossier = "robert-plaga"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-10"
-outlet = "Deník.cz (VLTAVA LABE MEDIA)"
-src_type = "zpravodajství"
-url = "https://www.denik.cz/skolstvi-a-vzdelavani/skolstvi-novy-termin-letni-prazdniny-prodlouzeni-plaga-rodice-jsou-nastvani.html"
-published = "2026-04-01"
-retrieved = "2026-07-30"
-claims = ["CLM-16", "CLM-18"]
 +++
 **Rodiče kritizují posunutí letních prázdnin. Kam dáme děti? ptají se Plagy**
 

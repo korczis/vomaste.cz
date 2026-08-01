@@ -9,17 +9,10 @@ weight = 8
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-08"
 view_model = "generated/views/dossiers/martin-sebestyan/sources/src-08.json"
-subjects = ["sebestyan"]
 dossier = "martin-sebestyan"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-08"
-outlet = "Ekonomický deník"
-src_type = "zpravodajství"
-url = "https://ekonomickydenik.cz/dotace-agrofert-dozorci-rada/"
-published = "2026-02-24"
-retrieved = "2026-07-30"
-claims = ["CLM-17", "CLM-18", "CLM-19", "CLM-20"]
 +++
 **Vymáhat bezodkladně. Dotace od Agrofertu má stát chtít zpět. Padlo i trestní oznámení**
 

@@ -9,14 +9,10 @@ weight = 9
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jaromir-zuna/gaps/GAP-09"
 view_model = "generated/views/dossiers/jaromir-zuna/gaps/gap-09.json"
-subjects = ["zuna"]
 dossier = "jaromir-zuna"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-09"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Není zjištěno, zda z inspekčních závěrů ke sporu o rozhovor s prezidentem vyplynuly konkrétní personální důsledky pro označené pracovníky.
 

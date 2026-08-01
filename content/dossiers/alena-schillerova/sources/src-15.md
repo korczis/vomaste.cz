@@ -9,17 +9,10 @@ weight = 15
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-15"
 view_model = "generated/views/dossiers/alena-schillerova/sources/src-15.json"
-subjects = ["schillerova"]
 dossier = "alena-schillerova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-15"
-outlet = "Ministerstvo financí ČR"
-src_type = "oficiální primární zdroj"
-url = "https://mf.gov.cz/cs/ministerstvo/media/v-mediich/2026/reakce-ministerstva-financi-na-stanovisko-narodni-63276"
-published = "2026-03-12"
-retrieved = "2026-07-30"
-claims = ["CLM-27", "CLM-28", "CLM-29"]
 +++
 **Reakce Ministerstva financí na stanovisko Národní rozpočtové rady č. 1/2026 ze dne 12.3.2026**
 

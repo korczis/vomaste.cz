@@ -20,6 +20,20 @@
     "/dossiers/tunde-bartha/entities/agrofert-hungaria/"
   ],
   "order": 8,
+  "provenance": {
+    "discoveredAt": "2026-08-01",
+    "discoveredVia": [
+      "edge-agrofert-hungaria",
+      "edge-bartha-agrofert-hungaria"
+    ],
+    "claimRefs": [
+      "CLM-13"
+    ],
+    "sourceRefs": [
+      "SRC-09"
+    ],
+    "depth": 1
+  },
   "content": [
     {
       "type": "markdown",

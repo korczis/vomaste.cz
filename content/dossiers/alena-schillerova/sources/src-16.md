@@ -9,17 +9,10 @@ weight = 16
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-16"
 view_model = "generated/views/dossiers/alena-schillerova/sources/src-16.json"
-subjects = ["schillerova"]
 dossier = "alena-schillerova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-16"
-outlet = "Národní rozpočtová rada"
-src_type = "oficiální primární zdroj"
-url = "https://www.rozpoctovarada.cz/publikace/stanovisko-nrr-c-1-2026-k-vyvoji-hospodareni-sektoru-verejnych-instituci-a-k-nastaveni-fiskalni-a-rozpoctove-politiky/"
-published = "2026-03-12"
-retrieved = "2026-07-30"
-claims = ["CLM-26"]
 +++
 **Stanovisko NRR č. 1/2026: k vývoji hospodaření sektoru veřejných institucí a k nastavení fiskální a rozpočtové politiky**
 

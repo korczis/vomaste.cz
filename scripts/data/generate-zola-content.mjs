@@ -1,36 +1,39 @@
 #!/usr/bin/env node
 /*
- * Generátor Zola content adaptérů (T-028 fáze E staging → fáze F full-fidelity).
+ * Generátor Zola content adaptérů (T-028: fáze E staging → fáze F
+ * full-fidelity → fáze H MINIMÁLNÍ OBÁLKA).
  *
  * Z compiled modelu (compileDataset) generuje content adaptéry do
- * data/generated/content-staging/ — STEJNÁ struktura jako content/
- * (dossiers/_index.md, dossiers/<slug>/_index.md,
- * dossiers/<slug>/<registry>/{_index.md,<record>.md},
- * entities/{_index.md,<entity>.md}). Fáze F je přes `data:sync-content`
- * kopíruje do content/ (viz scripts/data/sync-content.mjs) — content/**
- * pro dossierové záznamy a entity je od fáze F GENEROVANÝ artefakt.
+ * data/generated/content-staging/ — STEJNÁ struktura jako content/;
+ * `data:sync-content` je kopíruje do content/ — content/** pro
+ * dossierové záznamy a entity je GENEROVANÝ artefakt.
  *
- * Tvar adaptéru (fáze F): NE minimální stub, ale plnohodnotná regenerace
- * dnešního content souboru z kanonického modelu:
+ * Tvar adaptéru (fáze H): MINIMÁLNÍ stub — jen routing obálka:
  *
- *   - VŠECHNA doménová front matter pole se DERIVUJÍ z kanonického
- *     záznamu (inverze mapování migrátoru fáze D) — do fáze H je čtou
- *     validátory obsahové vrstvy (validate-dossier, verify-anchors),
- *     base.html/jsonld partial a aux šablony; každé derivované pole je
- *     dočasný adaptér, o kterém rozhodne fáze H;
- *   - pole/tělo MIMO kanonický model v1 (aliasy starých rout, provenience
- *     entit discovered_at/discovered_via, redakční těla registry indexů,
- *     prezentační title macinka-turek, …) se PŘENÁŠEJÍ beze změny
- *     z existujícího content souboru (passthrough RAW řádků). Po swapu
- *     je content == staging, takže passthrough je stabilní pevný bod
- *     (generátor čte tytéž hodnoty, které sám zapsal);
- *   - tělo detailních záznamů a dossier _index = markdown content bloky
- *     kanonického záznamu (byte-verně, viz migrátor) — Zola je renderuje
- *     jako dřív, takže {#kotvy}, @/ interní odkazy i footnotes fungují
- *     beze změny (runtime `markdown()` filtr @/ odkazy neresolvuje,
- *     proto tělo nese adaptér, ne šablona);
- *   - [extra] navíc nese generated = true, record_id (@id) a view_model
- *     (datový vstup šablon fáze F).
+ *   top:    title, template, weight, description, sort_by, aliases
+ *   extra:  generated, record_id, view_model, dossier, record_type,
+ *           lang (+ id pole záznamu: clm_id/src_id/case_id/gap_id/
+ *           rel_id/entity_id — čte je base.html is_record a entity.html
+ *           lookupy; u dossieru dossier_type/seo_type/updated/reviewed_at
+ *           — čtou je base.html a partials/jsonld.html)
+ *
+ *   Všechna OSTATNÍ doménová pole zanikla — šablony čtou view modely
+ *   (load_data("data/" ~ extra.view_model)), verify skripty kanonický
+ *   model. Vynucuje lint-generated-content.mjs (fáze H krok 5).
+ *
+ *   Passthrough zůstává JEN pro prezentační pole, o kterých adaptér
+ *   rozhoduje sám (dokumentováno v reportu fáze H):
+ *     - title (prezentační titulky: „Dossier — …" u agregátu, 1 relation
+ *       s odchylkou od derivace z graph labelů),
+ *     - description u claim/case (legacy scaffold truncace — sjednocení
+ *       je redakční změna mimo fázi H),
+ *     - sort_by/template/description u registry indexů.
+ *   Po swapu je content == staging, takže passthrough je stabilní pevný
+ *   bod (generátor čte tytéž hodnoty, které sám zapsal).
+ *
+ *   Tělo detailních záznamů a dossier _index = markdown content bloky
+ *   kanonického záznamu (byte-verně) — Zola je renderuje jako dřív,
+ *   takže {#kotvy}, @/ interní odkazy i footnotes fungují beze změny.
  *
  * Determinismus: stabilní pořadí klíčů, LF, trailing newline, žádné
  * timestampy; výstupní adresář se před zápisem čistí.
@@ -127,28 +130,20 @@ const rawValue = (entries, key) => entries?.find((e) => e.key === key)?.line ?? 
 
 /*
  * Skládání front matter: derivované klíče (key→hodnota už zrenderovaná
- * jako TOML pravá strana) v pevném pořadí, potom passthrough RAW řádky
- * všech klíčů, které derivace nepokrývá (v původním pořadí souboru).
+ * jako TOML pravá strana) v pevném pořadí. Fáze H: žádný passthrough
+ * cizích klíčů — minimální obálka.
  */
-function renderEntries(derived, passthroughEntries, derivedKeys) {
+function renderEntries(derived) {
   const lines = [];
   for (const [key, rhs] of derived) {
     if (rhs === undefined || rhs === null) continue;
     lines.push(`${key} = ${rhs}`);
   }
-  for (const e of passthroughEntries ?? []) {
-    if (derivedKeys.has(e.key)) continue;
-    lines.push(e.line);
-  }
   return lines;
 }
 
-function renderStub({ top, extra, sectionsText = [], body = "" }) {
-  const lines = ["+++", GENERATED_MARKER, ...top, "", "[extra]", ...extra];
-  for (const block of sectionsText) {
-    lines.push("", ...block);
-  }
-  lines.push("+++");
+function renderStub({ top, extra, body = "" }) {
+  const lines = ["+++", GENERATED_MARKER, ...top, "", "[extra]", ...extra, "+++"];
   const text = `${lines.join("\n")}\n`;
   return body ? `${text}${body}\n` : text;
 }
@@ -177,14 +172,14 @@ export function buildStubs(compiled, { contentRoot = REPO_ROOT } = {}) {
   //                  passthrough cizích sekcí neexistuje, viz inventář
   //                  front matter klíčů v reportu fáze F)
   //   body           derivované tělo; null = passthrough těla
-  const put = (relPath, { topDerived, extraDerived, ownSections = [], body = null }) => {
-    const existing = readExisting(contentRoot, relPath);
-    const topKeys = new Set(topDerived.map(([k]) => k));
-    const extraKeys = new Set(extraDerived.map(([k]) => k));
-    const top = renderEntries(topDerived, existing?.top, topKeys);
-    const extra = renderEntries(extraDerived, existing?.extra, extraKeys);
-    const finalBody = body !== null ? body : (existing?.body ?? "");
-    stubs.set(relPath, renderStub({ top, extra, sectionsText: ownSections, body: finalBody }));
+  const put = (relPath, { topDerived, extraDerived, body = "" }) => {
+    // Fáze H: ŽÁDNÝ generický passthrough — stub nese jen explicitně
+    // derivovaná pole (minimální obálka). Prezentační výjimky (title,
+    // description, sort_by, template) se čtou adresně přes rawTitle/
+    // templateOf/passthroughRhs.
+    const top = renderEntries(topDerived);
+    const extra = renderEntries(extraDerived);
+    stubs.set(relPath, renderStub({ top, extra, body }));
   };
 
   // template + aliasy z existujícího souboru (passthrough) — template
@@ -247,46 +242,10 @@ export function buildStubs(compiled, { contentRoot = REPO_ROOT } = {}) {
     const isView = Boolean(record.canonicalDossier && record.canonicalDossier !== slug);
     const isAggregate = record.dossierType === "aggregate";
 
-    // [extra.authorization] + [[extra.timeline]] + [[extra.cases]] se
-    // derivují z kanonického modelu (mirror bloky case záznamů, timeline
-    // content blok) — verify-anchors je dál čte ze zdroje content/.
-    const ownSections = [];
-    if (record.authorization?.records?.length) {
-      ownSections.push([
-        "[extra.authorization]",
-        "authorized = true",
-        `record_ids = ${tomlArray(record.authorization.records)}`,
-      ]);
-    }
-    const timelineBlock = (record.contentBlocks ?? []).find((b) => b.type === "timeline");
-    for (const entry of timelineBlock?.entries ?? []) {
-      const block = ["[[extra.timeline]]", `date = ${tomlString(entry.date)}`, `title = ${tomlString(entry.title)}`];
-      if (entry.anchor !== undefined) block.push(`anchor = ${tomlString(entry.anchor)}`);
-      if (entry.dot !== undefined) block.push(`dot = ${tomlString(entry.dot)}`);
-      if (entry.subjects !== undefined) block.push(`subjects = ${tomlArray(entry.subjects)}`);
-      ownSections.push(block);
-    }
-    for (const cw of recordsOf.get(slug)?.get("cases") ?? []) {
-      const c = cw.record;
-      const subjects = c.subjects?.length ? c.subjects : record.subject ? [record.subject] : [];
-      const block = [
-        "[[extra.cases]]",
-        `anchor = ${tomlString(c.anchor)}`,
-        `period = ${tomlString(c.period)}`,
-        `title = ${tomlString(c.title)}`,
-        `status = ${tomlString(c.status)}`,
-        `label = ${tomlString(c.statusLabel)}`,
-        `summary = ${tomlString(c.summary)}`,
-        `claims = ${tomlArray(localIds(c.claims))}`,
-      ];
-      if (subjects.length) block.push(`subjects = ${tomlArray(subjects)}`);
-      ownSections.push(block);
-    }
-
     put(relPath, {
       topDerived: [
         // Prezentační title stránky se přenáší (macinka-turek: „Dossier — …");
-        // kanonický title žije v record.title/dossier_title.
+        // kanonický title žije v record.title.
         ["title", tomlString(rawTitle(contentRoot, relPath) ?? record.title)],
         ["description", tomlString(record.description)],
         ["template", tomlString(templateOf(relPath, isAggregate ? DEFAULT_TEMPLATES["dossier-aggregate"] : DEFAULT_TEMPLATES.dossier))],
@@ -297,19 +256,17 @@ export function buildStubs(compiled, { contentRoot = REPO_ROOT } = {}) {
         ["record_id", tomlString(record["@id"])],
         ["view_model", tomlString(viewPath(`dossiers/${slug}/overview.json`))],
         ["dossier", tomlString(slug)],
-        ["dossier_title", isAggregate ? null : tomlString(record.title)],
         ["record_type", tomlString("dossier")],
+        // dossier_type/seo_type/lang/updated/reviewed_at čtou base.html a
+        // partials/jsonld.html napříč typy stránek — zůstávají v obálce.
         ["dossier_type", tomlString(record.dossierType)],
-        ["canonical_dossier", record.canonicalDossier ? tomlString(record.canonicalDossier) : null],
-        ["subject", record.subject ? tomlString(record.subject) : null],
         ["lang", tomlString(record.language ?? "cs")],
         ["seo_type", record.seo?.seoType ? tomlString(record.seo.seoType) : null],
         // Entity view (petr-macinka, filip-turek) updated/reviewed_at nenese —
-        // dědí je z kanonického dossieru až kompilátor (viz migrátor fáze D).
+        // dědí je z kanonického dossieru až view model (viz fáze D/F).
         ["updated", isView ? null : tomlString(record.updated)],
         ["reviewed_at", record.reviewedAt !== undefined && !isView ? tomlString(record.reviewedAt) : null],
       ],
-      ownSections,
       body: mdBody(record.contentBlocks),
     });
 
@@ -328,7 +285,7 @@ export function buildStubs(compiled, { contentRoot = REPO_ROOT } = {}) {
           ],
           ["template", tomlString(templateOf(idxPath, DEFAULT_TEMPLATES[`${registry}-index`]))],
           // sort_by: entity-view registry indexy ho dnes nemají (karty se
-          // skládají z kanonické sekce) — presence se přenáší 1:1.
+          // skládají z view modelu) — presence se přenáší 1:1.
           ["sort_by", existing ? passthroughRhs(rawValue(existing.top, "sort_by")) : tomlString("weight")],
           ["aliases", mergedAliases(idxPath, null)],
         ],
@@ -342,12 +299,20 @@ export function buildStubs(compiled, { contentRoot = REPO_ROOT } = {}) {
             existing && !rawValue(existing.extra, "seo_type") ? null : tomlString("CollectionPage"),
           ],
         ],
+        // Redakční tělo registry indexu — prezentační text mimo kanonický
+        // model v1, adresný passthrough (rozhodnutí fáze H, viz report).
+        body: existing?.body ?? "",
       });
     }
   }
 
   // --- záznamy -----------------------------------------------------------
   const entityTitle = (iri) => byId[iri]?.record.title ?? localPart(iri);
+  const graphLabelMaps = new Map(
+    dossierWrappers
+      .filter((w) => w.record.graph)
+      .map((w) => [w.dossier, new Map(w.record.graph.nodes.map((n) => [n.entity, n.label]))]),
+  );
   const perRegistryPosition = new Map(); // `${slug}/${registry}` -> counter
   for (const w of compiled.records) {
     if (w.registry === "dossier" || w.registry === "updates") continue;
@@ -358,178 +323,76 @@ export function buildStubs(compiled, { contentRoot = REPO_ROOT } = {}) {
     perRegistryPosition.set(posKey, position);
     const relPath = `dossiers/${slug}/${w.registry}/${String(r.identifier).toLowerCase()}.md`;
     const weight = r.order ?? position;
-    const subjectsRhs = r.subjects?.length ? tomlArray(r.subjects) : null;
-    const common = {
-      generated: ["generated", "true"],
-      recordId: ["record_id", tomlString(r["@id"])],
-      viewModel: ["view_model", tomlString(viewPath(`dossiers/${slug}/${w.registry}/${String(r.identifier).toLowerCase()}.json`))],
-      dossier: ["dossier", tomlString(slug)],
-      recordType: ["record_type", tomlString(r.recordType)],
-      lang: ["lang", tomlString("cs")],
-    };
+    const idField = { claims: "clm_id", sources: "src_id", cases: "case_id", gaps: "gap_id", relations: "rel_id" }[w.registry];
 
     // Meta `description` u claim/case je legacy scaffold artefakt (někde
     // plné znění, jinde historická truncace na 140/200 znaků — per soubor,
-    // bez jednotného pravidla). Není to kanonické pole: přenáší se
-    // passthrough beze změny; teprve u záznamu bez content protějšku se
-    // derivuje plný text/summary. Rozhodnutí o sjednocení patří fázi H.
+    // bez jednotného pravidla). Přenáší se adresným passthrough beze změny;
+    // u záznamu bez content protějšku se derivuje plný text/summary.
+    // Sjednocení je redakční změna mimo fázi H (viz report).
     const existingDescription = passthroughRhs(rawValue(readExisting(contentRoot, relPath)?.top, "description"));
 
+    let title;
+    let description = null;
     if (r.recordType === "claim") {
-      put(relPath, {
-        topDerived: [
-          ["title", tomlString(r.identifier)],
-          ["description", existingDescription ?? tomlString(r.text)],
-          ["template", tomlString(templateOf(relPath, DEFAULT_TEMPLATES.claim))],
-          ["weight", String(weight)],
-          ["aliases", mergedAliases(relPath, null)],
-        ],
-        extraDerived: [
-          common.generated,
-          common.recordId,
-          common.viewModel,
-          common.dossier,
-          common.recordType,
-          common.lang,
-          ["clm_id", tomlString(r.identifier)],
-          ["status", tomlString(r.status)],
-          ["status_label", tomlString(r.statusLabel)],
-          ["summary", tomlString(r.text)],
-          ["sources", tomlArray(localIds(r.sources))],
-          ["subjects", subjectsRhs],
-        ],
-        body: mdBody(r.content),
-      });
+      title = tomlString(r.identifier);
+      description = existingDescription ?? tomlString(r.text);
     } else if (r.recordType === "source") {
-      put(relPath, {
-        topDerived: [
-          ["title", tomlString(r.title)],
-          ["description", r.description !== undefined ? tomlString(r.description) : null],
-          ["template", tomlString(templateOf(relPath, DEFAULT_TEMPLATES.source))],
-          ["weight", String(weight)],
-          ["aliases", mergedAliases(relPath, null)],
-        ],
-        extraDerived: [
-          common.generated,
-          common.recordId,
-          common.viewModel,
-          ["subjects", subjectsRhs],
-          common.dossier,
-          common.recordType,
-          common.lang,
-          ["src_id", tomlString(r.identifier)],
-          ["outlet", tomlString(r.outlet)],
-          ["family", r.sourceFamily !== undefined ? tomlString(r.sourceFamily) : null],
-          ["src_type", tomlString(r.sourceType)],
-          ["url", tomlString(r.url)],
-          ["published", r.published !== undefined ? tomlString(r.published) : null],
-          ["retrieved", tomlString(r.retrieved)],
-          ["claims", tomlArray(localIds(r.claims))],
-        ],
-        body: mdBody(r.content),
-      });
+      title = tomlString(r.title);
+      description = r.description !== undefined ? tomlString(r.description) : null;
     } else if (r.recordType === "case") {
-      put(relPath, {
-        topDerived: [
-          ["title", tomlString(r.title)],
-          ["description", existingDescription ?? tomlString(r.summary)],
-          ["template", tomlString(templateOf(relPath, DEFAULT_TEMPLATES.case))],
-          ["weight", String(weight)],
-          ["aliases", mergedAliases(relPath, null)],
-        ],
-        extraDerived: [
-          common.generated,
-          common.recordId,
-          common.viewModel,
-          common.dossier,
-          common.recordType,
-          common.lang,
-          ["case_id", tomlString(r.identifier)],
-          ["anchor", tomlString(r.anchor)],
-          ["period", tomlString(r.period)],
-          ["status", tomlString(r.status)],
-          ["label", tomlString(r.statusLabel)],
-          ["summary", tomlString(r.summary)],
-          ["claims", tomlArray(localIds(r.claims))],
-          ["sources", tomlArray(localIds(r.sources))],
-          ["subjects", subjectsRhs],
-        ],
-        body: mdBody(r.content),
-      });
+      title = tomlString(r.title);
+      description = existingDescription ?? tomlString(r.summary);
     } else if (r.recordType === "gap") {
-      put(relPath, {
-        topDerived: [
-          ["title", tomlString(r.title)],
-          ["description", tomlString(r.description)],
-          ["template", tomlString(templateOf(relPath, DEFAULT_TEMPLATES.gap))],
-          ["weight", String(weight)],
-          ["aliases", mergedAliases(relPath, null)],
-        ],
-        extraDerived: [
-          common.generated,
-          common.recordId,
-          common.viewModel,
-          ["subjects", subjectsRhs],
-          common.dossier,
-          common.recordType,
-          common.lang,
-          ["gap_id", tomlString(r.identifier)],
-          ["priority", tomlString(r.priority)],
-          ["checked", r.checked !== undefined && r.checked !== null ? tomlString(r.checked) : null],
-          ["claims", tomlArray(localIds(r.claims))],
-        ],
-        body: mdBody(r.content),
-      });
-    } else if (r.recordType === "relation") {
-      // Titulek vztahu dnes nese per-dossier labely uzlů z graph.toml
-      // („Andrej Babiš (premiér)"), které kanonický model v1 nemá (globální
-      // entita má jeden title) — passthrough; derivace jen pro novou hranu.
-      put(relPath, {
-        topDerived: [
-          [
-            "title",
-            rawValue(readExisting(contentRoot, relPath)?.top, "title")
-              ? tomlString(rawTitle(contentRoot, relPath))
-              : tomlString(`${entityTitle(r.sourceEntity["@id"])} — ${r.label} — ${entityTitle(r.targetEntity["@id"])}`),
-          ],
-          ["template", tomlString(templateOf(relPath, DEFAULT_TEMPLATES.relation))],
-          ["weight", String(weight)],
-          ["aliases", mergedAliases(relPath, null)],
-        ],
-        extraDerived: [
-          common.generated,
-          common.recordId,
-          common.viewModel,
-          common.dossier,
-          common.recordType,
-          ["rel_id", tomlString(r.identifier)],
-          ["source", tomlString(localPart(r.sourceEntity["@id"]))],
-          ["target", tomlString(localPart(r.targetEntity["@id"]))],
-          ["relation_type", tomlString(r.relationType)],
-          ["label", tomlString(r.label)],
-          ["status", tomlString(r.status)],
-          ["claims", tomlArray(localIds(r.claims))],
-          ["sources", tomlArray(localIds(r.sources))],
-          ["subjects", subjectsRhs],
-        ],
-        body: mdBody(r.content),
-      });
+      title = tomlString(r.title);
+      description = tomlString(r.description);
+    } else {
+      // relation: titulek nese per-dossier labely uzlů z kanonické grafové
+      // vrstvy (dossier.graph); prezentační odchylka (1 stránka) se
+      // přenáší passthrough — title je prezentační pole adaptéru.
+      const labels = graphLabelMaps.get(slug) ?? new Map();
+      const src = localPart(r.sourceEntity["@id"]);
+      const tgt = localPart(r.targetEntity["@id"]);
+      const derived = `${labels.get(src) ?? entityTitle(r.sourceEntity["@id"])} — ${r.label} — ${labels.get(tgt) ?? entityTitle(r.targetEntity["@id"])}`;
+      title = tomlString(rawTitle(contentRoot, relPath) ?? derived);
     }
+
+    put(relPath, {
+      topDerived: [
+        ["title", title],
+        ["description", description],
+        ["template", tomlString(templateOf(relPath, DEFAULT_TEMPLATES[r.recordType]))],
+        ["weight", String(weight)],
+        ["aliases", mergedAliases(relPath, null)],
+      ],
+      extraDerived: [
+        ["generated", "true"],
+        ["record_id", tomlString(r["@id"])],
+        ["view_model", tomlString(viewPath(`dossiers/${slug}/${w.registry}/${String(r.identifier).toLowerCase()}.json`))],
+        ["dossier", tomlString(slug)],
+        ["record_type", tomlString(r.recordType)],
+        ["lang", tomlString("cs")],
+        // Jediné doménové id pole — čte ho base.html (is_record) a
+        // entity.html lookupy; všechno ostatní jde z view modelu.
+        [idField, tomlString(r.identifier)],
+      ],
+      body: mdBody(r.content),
+    });
   }
 
   // --- entity ------------------------------------------------------------
   for (const [i, w] of compiled.entities.entries()) {
     const r = w.record;
     const relPath = `entities/${r.entityId}.md`;
-    // Entity weight = kanonické `order` (redakční pořadí registru,
-    // aditivní pole schématu — fáze F); nová entita bez order dostane
-    // pozici v abecedním pořadí.
+    // Entity weight = kanonické `order` (redakční pořadí registru);
+    // nová entita bez order dostane pozici v abecedním pořadí.
     put(relPath, {
       topDerived: [
-        ["title", tomlString(rawTitle(contentRoot, relPath) ?? r.title)],
+        ["title", tomlString(r.title)],
         ["template", tomlString(templateOf(relPath, DEFAULT_TEMPLATES.entity))],
         ["weight", String(r.order ?? i + 1)],
         ["aliases", mergedAliases(relPath, r.routeAliases)],
+        ["description", r.description !== undefined ? tomlString(r.description) : null],
       ],
       extraDerived: [
         ["generated", "true"],
@@ -537,13 +400,6 @@ export function buildStubs(compiled, { contentRoot = REPO_ROOT } = {}) {
         ["view_model", tomlString(viewPath(`entities/${r.entityId}.json`))],
         ["record_type", tomlString("entity")],
         ["entity_id", tomlString(r.entityId)],
-        ["entity_type", tomlString(r.entityType)],
-        ["publication_role", tomlString(r.publicationRole)],
-        ["dossier_enabled", String(r.dossierEnabled === true)],
-        ["dossier_status", tomlString(r.dossierStatus)],
-        ["coverage_state", tomlString(r.coverageState)],
-        ["dossiers", tomlArray(r.dossiers ?? [])],
-        ["government_snapshot", r.snapshotDate !== undefined ? tomlString(r.snapshotDate) : null],
       ],
       body: mdBody(r.content),
     });

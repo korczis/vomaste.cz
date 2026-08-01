@@ -21,6 +21,21 @@
     "/dossiers/macinka-turek/entities/statni-zastupitelstvi/"
   ],
   "order": 19,
+  "provenance": {
+    "discoveredAt": "2026-07-29",
+    "discoveredVia": [
+      "edge-trestniozn-statnizastupitelstvi"
+    ],
+    "claimRefs": [
+      "CLM-27"
+    ],
+    "sourceRefs": [
+      "SRC-31",
+      "SRC-54"
+    ],
+    "cluster": "trestni-oznameni",
+    "depth": 2
+  },
   "content": [
     {
       "type": "markdown",

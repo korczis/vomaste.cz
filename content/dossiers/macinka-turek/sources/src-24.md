@@ -10,17 +10,10 @@ aliases = ["/dossier/zdroje/src-24/"]
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-24"
 view_model = "generated/views/dossiers/macinka-turek/sources/src-24.json"
-subjects = ["macinka"]
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-24"
-outlet = "Hlídač státu"
-family = "hlidac-statu"
-src_type = "veřejný rejstřík / transparentní databáze"
-url = "https://www.hlidacstatu.cz/Osoba/Vazby/petr-macinka?aktualnost=Libovolny"
-retrieved = "2026-07-22"
-claims = ["CLM-22"]
 +++
 Stejná databáze jako SRC-23 (Hlídač státu, rejstříková data, ne
 žurnalistika) — pro Petra Macinku eviduje sedm subjektů, žádný se

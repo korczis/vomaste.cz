@@ -9,17 +9,10 @@ weight = 21
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-21"
 view_model = "generated/views/dossiers/jaromir-zuna/sources/src-21.json"
-subjects = ["zuna"]
 dossier = "jaromir-zuna"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-21"
-outlet = "ČeskéNoviny.cz (ČTK)"
-src_type = "zpravodajství"
-url = "https://www.ceskenoviny.cz/zpravy/-pavel-jmenoval-novym-nacelnikem-generalniho-stabu-miroslava-hlavace-/2843386"
-published = "2026-06-30"
-retrieved = "2026-07-30"
-claims = ["CLM-20", "CLM-21", "CLM-28", "CLM-29"]
 +++
 **Pavel jmenoval novým náčelníkem generálního štábu Miroslava Hlaváče**
 

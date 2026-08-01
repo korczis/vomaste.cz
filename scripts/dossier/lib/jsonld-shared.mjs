@@ -5,7 +5,7 @@
 // export files). One definition of "forbidden truth-rating markup", one
 // src_type → schema.org @type mapping, one citation-fingerprint formula.
 import { createHash } from "node:crypto";
-import { readFileSync, existsSync } from "node:fs";
+import { readFileSync } from "node:fs";
 import { join } from "node:path";
 
 // Editorial rules 3 & 7 in mechanical form: claim statuses on this site
@@ -64,57 +64,76 @@ export function readBaseUrl(root) {
   return m[1].replace(/\/$/, "");
 }
 
-// Minimal graph.toml block parser, shared by every reader below (kept
-// intentionally simple; the files are machine-validated by
-// validate:graph). Was duplicated near-verbatim in build-global-graph.mjs
-// until the graph-workbench rebuild (T-027) consolidated it here as the
-// one parser both the JSON-LD pipeline and the graph transport
-// projections (lib/graph-projection.mjs) use.
-function parseGraphTomlBlocks(text) {
-  const blocks = { nodes: [], edges: [], clusters: [], source_families: [], updates: [] };
-  const re = /^\[\[(nodes|edges|clusters|source_families|updates)\]\]\s*$/gm;
-  const matches = [...text.matchAll(re)];
-  for (let i = 0; i < matches.length; i++) {
-    const kind = matches[i][1];
-    const start = matches[i].index + matches[i][0].length;
-    const end = i + 1 < matches.length ? matches[i + 1].index : text.length;
-    const body = text.slice(start, end);
-    const obj = {};
-    for (const m of body.matchAll(/^(\w+)\s*=\s*(.+)$/gm)) {
-      const key = m[1];
-      const raw = m[2].trim();
-      if (raw.startsWith("[")) {
-        obj[key] = [...raw.matchAll(/"((?:[^"\\]|\\.)*)"/g)].map((x) => x[1].replace(/\\"/g, '"'));
-      } else if (raw.startsWith('"')) {
-        obj[key] = raw.slice(1, -1).replace(/\\"/g, '"');
-      } else if (raw === "true" || raw === "false") {
-        obj[key] = raw === "true";
-      } else if (/^-?\d+$/.test(raw)) {
-        obj[key] = parseInt(raw, 10);
-      } else {
-        obj[key] = raw;
-      }
-    }
-    if (blocks[kind]) blocks[kind].push(obj);
-  }
-  return blocks;
-}
+// Kurátorovaná grafová vrstva dossieru z KANONICKÉHO modelu (T-028 fáze
+// H — dřívější data/dossiers/<slug>/graph.toml zaniklo; jeho obsah nese
+// dossier.json `graph` + kanonické relations). Návratový tvar zůstává
+// blokový (nodes/edges/clusters/source_families) kvůli dosavadním
+// konzumentům (graph-projection, build-jsonld-exports, build-search-index):
+//   uzly    — graph.nodes v kurátorském pořadí; type = entityType globální
+//             entity (jediný zdroj), subject explicitní flag;
+//   hrany   — kanonické relations dossieru v pořadí graph.edges
+//             (kurátorské pořadí — stabilita layoutu);
+//   clustery a rodiny zdrojů — verbatim z dossier.json (pořadí klíčů
+//             zachováno, payloady je nesou beze změny).
+import { getCompiledModel, localIds, localPart } from "./compiled-model.mjs";
 
-// Reads wherever the file physically exists, regardless of dossier_type:
-// self-canonical entity dossiers (oto-klempir, alena-schillerova, …) own
-// a graph.toml of their own.
-export function readGraphToml(root, slug) {
-  const file = join(root, "data/dossiers", slug, "graph.toml");
-  if (!existsSync(file)) return { nodes: [], edges: [] };
-  const blocks = parseGraphTomlBlocks(readFileSync(file, "utf8"));
-  return { nodes: blocks.nodes, edges: blocks.edges };
-}
-
-// Same file, full block set (adds clusters/source_families) — for
-// consumers that need the whole graph.toml, not just the schema-checked
-// {nodes, edges} shape validate:schemas pins readGraphToml() to.
 export function readGraphTomlBlocks(root, slug) {
-  const file = join(root, "data/dossiers", slug, "graph.toml");
-  if (!existsSync(file)) return { nodes: [], edges: [], clusters: [], source_families: [], updates: [] };
-  return parseGraphTomlBlocks(readFileSync(file, "utf8"));
+  const empty = { nodes: [], edges: [], clusters: [], source_families: [], updates: [] };
+  const compiled = getCompiledModel(root);
+  const record = compiled.records.find((w) => w.registry === "dossier" && w.dossier === slug)?.record;
+  const graph = record?.graph;
+  if (!graph) return empty;
+
+  const entityById = new Map(compiled.entities.map((w) => [w.record.entityId, w.record]));
+  const nodes = (graph.nodes ?? []).map((n) => {
+    const entity = entityById.get(n.entity);
+    const out = { id: n.entity, type: entity?.entityType ?? null, label: n.label };
+    if (n.subject === true) out.subject = true;
+    if (n.cluster !== undefined) out.cluster = n.cluster;
+    if (n.summary !== undefined) out.summary = n.summary;
+    if (n.claims !== undefined) out.claims = n.claims;
+    if (n.sources !== undefined) out.sources = n.sources;
+    return out;
+  });
+
+  const relationById = new Map(
+    compiled.records
+      .filter((w) => w.dossier === slug && w.registry === "relations")
+      .map((w) => [w.record.identifier, w.record]),
+  );
+  // 1:1 úplnost graph.edges ↔ relations vlastní validate-references R7 —
+  // tady se jen projektuje kurátorské pořadí.
+  const edges = (graph.edges ?? [])
+    .filter((id) => relationById.has(id))
+    .map((id) => {
+      const r = relationById.get(id);
+      const out = {
+        id: r.identifier,
+        source: localPart(r.sourceEntity?.["@id"]),
+        target: localPart(r.targetEntity?.["@id"]),
+        relation: r.relationType,
+        label: r.label,
+        status: r.status,
+      };
+      const claims = localIds(r.claims);
+      const sources = localIds(r.sources);
+      if (claims.length || r.claims !== undefined) out.claims = claims;
+      if (sources.length || r.sources !== undefined) out.sources = sources;
+      if (r.note !== undefined) out.note = r.note;
+      return out;
+    });
+
+  return {
+    nodes,
+    edges,
+    clusters: structuredClone(graph.clusters ?? []),
+    source_families: structuredClone(graph.sourceFamilies ?? []),
+    updates: [],
+  };
+}
+
+// Zpětně kompatibilní {nodes, edges} projekce (build-jsonld-exports).
+export function readGraphToml(root, slug) {
+  const blocks = readGraphTomlBlocks(root, slug);
+  return { nodes: blocks.nodes, edges: blocks.edges };
 }

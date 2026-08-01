@@ -9,14 +9,10 @@ weight = 1
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/igor-cerveny/gaps/GAP-01"
 view_model = "generated/views/dossiers/igor-cerveny/gaps/gap-01.json"
-subjects = ["cerveny"]
 dossier = "igor-cerveny"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-01"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Formální 'podnět' kvůli střetu zájmů v souvislosti s podcastovou firmou Extreme BFG Cast se nepodařilo v přístupných zdrojích doložit.
 

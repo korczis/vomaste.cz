@@ -9,14 +9,10 @@ weight = 6
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/tomio-okamura/gaps/GAP-06"
 view_model = "generated/views/dossiers/tomio-okamura/gaps/gap-06.json"
-subjects = ["okamura"]
 dossier = "tomio-okamura"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-06"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Aktuální stav samostatně vedené trestní věci Tomia Okamury po vyloučení k samostatnému řízení.
 

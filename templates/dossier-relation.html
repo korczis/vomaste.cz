@@ -6,7 +6,7 @@
 <main class="mx-auto max-w-2xl px-6 py-12 text-white">
   {#- T-028 fáze F: fakta pochází z view modelu (data/generated/views/**).
       H1 (page.title) zůstává z content adaptéru — nese per-dossier labely
-      uzlů z graph.toml, které kanonický model v1 nemá (rozhodnutí H). -#}
+      uzlů z kanonické grafové vrstvy (dossier.json `graph`, fáze H). -#}
   {% set view = load_data(path="data/" ~ page.extra.view_model) %}
   {% set record = view.record %}
   {% set dossier_slug = view.dossier %}

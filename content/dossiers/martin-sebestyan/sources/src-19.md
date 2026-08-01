@@ -9,17 +9,10 @@ weight = 19
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-19"
 view_model = "generated/views/dossiers/martin-sebestyan/sources/src-19.json"
-subjects = ["sebestyan"]
 dossier = "martin-sebestyan"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-19"
-outlet = "Ekonomický deník"
-src_type = "zpravodajství"
-url = "https://ekonomickydenik.cz/sobestacnost-puda-ministr/"
-published = "2026-02-18"
-retrieved = "2026-07-30"
-claims = ["CLM-38", "CLM-40"]
 +++
 **Soběstačnost padá k 50 procentům. Ministr chce víc regulovat trh s půdou**
 

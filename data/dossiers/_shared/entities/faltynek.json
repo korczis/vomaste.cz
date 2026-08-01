@@ -20,6 +20,20 @@
     "/dossiers/jaroslav-faltynek/entities/faltynek/"
   ],
   "order": 1,
+  "provenance": {
+    "discoveredAt": "2026-07-30",
+    "discoveredVia": [
+      "edge-faltynek-capihnizdo",
+      "edge-faltynek-babis"
+    ],
+    "claimRefs": [
+      "CLM-01"
+    ],
+    "sourceRefs": [
+      "SRC-01"
+    ],
+    "depth": 0
+  },
   "content": [
     {
       "type": "markdown",

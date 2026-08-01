@@ -20,6 +20,28 @@
     "/dossiers/alena-schillerova/entities/nrr/"
   ],
   "order": 3,
+  "provenance": {
+    "discoveredAt": "2026-07-31",
+    "discoveredVia": [
+      "edge-schillerova-nrr"
+    ],
+    "claimRefs": [
+      "CLM-24",
+      "CLM-25",
+      "CLM-26",
+      "CLM-30",
+      "CLM-31",
+      "CLM-32",
+      "CLM-33"
+    ],
+    "sourceRefs": [
+      "SRC-18",
+      "SRC-16",
+      "SRC-17",
+      "SRC-11"
+    ],
+    "depth": 1
+  },
   "content": [
     {
       "type": "markdown",

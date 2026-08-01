@@ -9,14 +9,10 @@ weight = 1
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/oto-klempir/gaps/GAP-01"
 view_model = "generated/views/dossiers/oto-klempir/gaps/gap-01.json"
-subjects = ["klempir"]
 dossier = "oto-klempir"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-01"
-priority = "vysoká"
-checked = "2026-07-30"
-claims = ["CLM-03", "CLM-04", "CLM-05", "CLM-06"]
 +++
 Tvrzení CLM-03 až CLM-06 vycházejí z investigativního textu týdeníku
 RESPEKT (číslo 30/2026, 19. 7. 2026, [SRC-02](@/dossiers/oto-klempir/sources/src-02.md)).

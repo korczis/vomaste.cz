@@ -9,17 +9,10 @@ weight = 25
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-25"
 view_model = "generated/views/dossiers/robert-plaga/sources/src-25.json"
-subjects = ["plaga"]
 dossier = "robert-plaga"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-25"
-outlet = "Poslanecká sněmovna Parlamentu ČR"
-src_type = "oficiální primární zdroj"
-url = "https://www.psp.cz/sqw/text/tiskt.sqw?O=10&CT=232&CT1=0"
-published = "2026-06-22"
-retrieved = "2026-07-30"
-claims = []
 +++
 **Sněmovní tisk 232/0 — Novela z. — školský zákon**
 

@@ -9,14 +9,10 @@ weight = 4
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/tunde-bartha/gaps/GAP-04"
 view_model = "generated/views/dossiers/tunde-bartha/gaps/gap-04.json"
-subjects = ["bartha"]
 dossier = "tunde-bartha"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-04"
-priority = "nízká"
-checked = "2026-08-01"
-claims = ["CLM-06", "CLM-13"]
 +++
 **Aktualizace 1. 8. 2026.** Firemní web Agrofertu ze září 2024 dokládá
 další datovaný employment fact — funkci country managerky AGROFERT

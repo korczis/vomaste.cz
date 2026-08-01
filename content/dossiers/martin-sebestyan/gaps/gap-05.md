@@ -9,14 +9,10 @@ weight = 5
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/martin-sebestyan/gaps/GAP-05"
 view_model = "generated/views/dossiers/martin-sebestyan/gaps/gap-05.json"
-subjects = ["sebestyan"]
 dossier = "martin-sebestyan"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-05"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Nedohledána přímá reakce samotného Šebestyána na varování Transparency International z listopadu 2025.
 

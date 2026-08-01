@@ -9,14 +9,10 @@ weight = 10
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/igor-cerveny/gaps/GAP-10"
 view_model = "generated/views/dossiers/igor-cerveny/gaps/gap-10.json"
-subjects = ["cerveny"]
 dossier = "igor-cerveny"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-10"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Údaj o smlouvě na rekonstrukci ministrovy kanceláře za přibližně 191 479 Kč s DPH a o předchozí renovaci za zhruba 150 tisíc Kč nebyl potvrzen přímo ve zpravodajském zdroji.
 

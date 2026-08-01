@@ -9,17 +9,10 @@ weight = 12
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-12"
 view_model = "generated/views/dossiers/oto-klempir/sources/src-12.json"
-subjects = ["klempir"]
 dossier = "oto-klempir"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-12"
-outlet = "FORUM 24"
-src_type = "zpravodajství"
-url = "https://www.forum24.cz/oto-zabal-to-milion-chvilek-spustil-petici-za-odvolani-ministra-kultury-klempire"
-published = "2026-06-28"
-retrieved = "2026-07-30"
-claims = ["CLM-43"]
 +++
 **„Oto, zabal to!“ Petice Milionu chvilek za odvolání ministra kultury Klempíře po Strážnici akceleruje**
 

@@ -9,14 +9,10 @@ weight = 6
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/alena-schillerova/gaps/GAP-06"
 view_model = "generated/views/dossiers/alena-schillerova/gaps/gap-06.json"
-subjects = ["schillerova"]
 dossier = "alena-schillerova"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-06"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Nebylo možné ověřit obsah zpravodajství iRozhlas ke schválení novely 15. května 2026.
 

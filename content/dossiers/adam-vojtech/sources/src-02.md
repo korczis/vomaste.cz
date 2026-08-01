@@ -9,17 +9,10 @@ weight = 2
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-02"
 view_model = "generated/views/dossiers/adam-vojtech/sources/src-02.json"
-subjects = ["vojtech"]
 dossier = "adam-vojtech"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-02"
-outlet = "Seznam Zprávy"
-src_type = "zpravodajství"
-url = "https://www.seznamzpravy.cz/clanek/domaci-kauzy-zavazna-zjisteni-kvuli-defibrilatorum-poslal-vojtech-do-olomouce-policii-301861"
-published = "2026-03-17"
-retrieved = "2026-07-30"
-claims = ["CLM-02", "CLM-03", "CLM-04", "CLM-05", "CLM-09"]
 +++
 **„Závažná zjištění.“ Kvůli defibrilátorům posílá Vojtěch do nemocnice policii**
 

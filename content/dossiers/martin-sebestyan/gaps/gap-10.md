@@ -9,14 +9,10 @@ weight = 10
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/martin-sebestyan/gaps/GAP-10"
 view_model = "generated/views/dossiers/martin-sebestyan/gaps/gap-10.json"
-subjects = ["sebestyan"]
 dossier = "martin-sebestyan"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-10"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Nepodařilo se získat obsah právních analýz, o něž SZIF opřel rozhodnutí nevymáhat nárokové dotace, ani jména všech zpracovávajících advokátních kanceláří.
 

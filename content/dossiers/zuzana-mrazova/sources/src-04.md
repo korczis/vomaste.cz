@@ -9,17 +9,10 @@ weight = 4
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-04"
 view_model = "generated/views/dossiers/zuzana-mrazova/sources/src-04.json"
-subjects = ["mrazova"]
 dossier = "zuzana-mrazova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-04"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/mrazova-dostala-pokutu-za-poruseni-zakona-o-stretu-zajmu-pisi-seznam-zpravy-375947"
-published = "2026-07-25"
-retrieved = "2026-07-30"
-claims = ["CLM-02", "CLM-03", "CLM-04", "CLM-05", "CLM-06"]
 +++
 **Mrázová dostala pokutu za porušení zákona o střetu zájmů, píší Seznam Zprávy**
 

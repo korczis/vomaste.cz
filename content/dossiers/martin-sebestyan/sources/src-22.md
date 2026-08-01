@@ -9,17 +9,10 @@ weight = 22
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-22"
 view_model = "generated/views/dossiers/martin-sebestyan/sources/src-22.json"
-subjects = ["sebestyan"]
 dossier = "martin-sebestyan"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-22"
-outlet = "Hrot24.cz"
-src_type = "zpravodajství"
-url = "https://www.hrot24.cz/clanek/agrarni-komora-krize-zemedelstvi-vlada-HmAgK"
-published = "2026-05-21"
-retrieved = "2026-07-30"
-claims = ["CLM-43"]
 +++
 **Agrární komora varuje před krizí zemědělství. Žádá mimořádné jednání vlády**
 

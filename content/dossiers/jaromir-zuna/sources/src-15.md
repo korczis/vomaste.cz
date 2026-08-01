@@ -9,17 +9,10 @@ weight = 15
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-15"
 view_model = "generated/views/dossiers/jaromir-zuna/sources/src-15.json"
-subjects = ["zuna"]
 dossier = "jaromir-zuna"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-15"
-outlet = "CZDEFENCE"
-src_type = "zpravodajství"
-url = "https://www.czdefence.cz/clanek/koncepce-vystavby-acr-2040-ma-byt-realisticka-a-udrzitelna-modernizace-pokracuje-rekl-ministr-zuna-ve-snemovne"
-published = "2026-02-04"
-retrieved = "2026-07-30"
-claims = ["CLM-44", "CLM-49", "CLM-50"]
 +++
 **Koncepce výstavby AČR 2040 má být realistická a udržitelná. Modernizace pokračuje, řekl ministr Zůna ve Sněmovně**
 

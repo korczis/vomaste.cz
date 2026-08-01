@@ -13,10 +13,5 @@ dossier = "jeronym-tejc"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-27"
-status = "status-single"
-status_label = "1 ZDROJ"
-summary = "Tejcův interní audit podle Reflexu konkrétně vytkl, že smlouva byla podepsána ještě před ministerským schválením, že neproběhlo právní posouzení a že při prodeji ministerstvo připustilo účast zájemců, kteří nesložili kauci včas, a snížilo nejnižší cenu o deset procent."
-sources = ["SRC-15"]
-subjects = ["tejc"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jeronym-tejc/_index.md#registr-tvrzeni).

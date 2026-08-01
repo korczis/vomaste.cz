@@ -9,16 +9,10 @@ weight = 3
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-03"
 view_model = "generated/views/dossiers/igor-cerveny/sources/src-03.json"
-subjects = ["cerveny"]
 dossier = "igor-cerveny"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-03"
-outlet = "Seznam Zprávy"
-src_type = "zpravodajství"
-url = "https://www.seznamzpravy.cz/clanek/domaci-politika-ministr-cerveny-po-zvoleni-prevedl-rodinny-dum-na-svou-manzelku-ten-nepriznal-303118"
-retrieved = "2026-07-30"
-claims = ["CLM-02", "CLM-03", "CLM-04", "CLM-05"]
 +++
 **Ministr Červený po zvolení převedl rodinný dům na svou manželku, ten nepřiznal**
 

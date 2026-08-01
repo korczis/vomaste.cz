@@ -9,17 +9,10 @@ weight = 3
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-03"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-03.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-03"
-outlet = "Česká justice"
-src_type = "zpravodajství"
-url = "https://www.ceska-justice.cz/2026/05/tri-roky-podminky-a-pulmilionovy-trest-nagyova-capi-hnizdo/"
-published = "2026-05-04"
-retrieved = "2026-07-30"
-claims = ["CLM-07", "CLM-08", "CLM-09"]
 +++
 Článek „Tři roky podmínky a půlmilionový trest. Nagyová stojí v kauze Čapí
 hnízdo potřetí před soudem" (4. 5. 2026). Popisuje třetí projednávání věci

@@ -20,6 +20,19 @@
     "/dossiers/andrej-babis/entities/rsvp-trust/"
   ],
   "order": 4,
+  "provenance": {
+    "discoveredAt": "2026-07-30",
+    "discoveredVia": [
+      "edge-rsvp-agrofert"
+    ],
+    "claimRefs": [
+      "CLM-04"
+    ],
+    "sourceRefs": [
+      "SRC-02"
+    ],
+    "depth": 1
+  },
   "content": [
     {
       "type": "markdown",

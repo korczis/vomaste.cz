@@ -9,14 +9,10 @@ weight = 2
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ivan-bednarik/gaps/GAP-02"
 view_model = "generated/views/dossiers/ivan-bednarik/gaps/gap-02.json"
-subjects = ["bednarik"]
 dossier = "ivan-bednarik"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-02"
-priority = "nízká"
-checked = "2026-07-30"
-claims = ["CLM-01"]
 +++
 Autorizační záznam (`AUTH-2026-07-30-B`) zahrnuje i jeho publikované
 pozice k výdajům na železnici jako současného ministra dopravy. Tato část

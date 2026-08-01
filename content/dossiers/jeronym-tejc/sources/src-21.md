@@ -9,17 +9,10 @@ weight = 21
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-21"
 view_model = "generated/views/dossiers/jeronym-tejc/sources/src-21.json"
-subjects = ["tejc"]
 dossier = "jeronym-tejc"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-21"
-outlet = "Ústavní soud ČR"
-src_type = "oficiální primární zdroj"
-url = "https://www.usoud.cz/aktualne/ustavni-soud-vydal-procesni-rozhodnuti-v-rizeni-o-kompetencnim-sporu-mezi-prezidentem-republiky-a-vladou-konecne-rozhodnuti-sporu-lze-ocekavat-v-radech-mesicu"
-published = "2026-06-24"
-retrieved = "2026-07-30"
-claims = ["CLM-41", "CLM-42", "CLM-43"]
 +++
 **Ústavní soud vydal procesní rozhodnutí v řízení o kompetenčním sporu mezi prezidentem republiky a vládou**
 

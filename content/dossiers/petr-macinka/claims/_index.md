@@ -10,10 +10,6 @@ view_model = "generated/views/dossiers/petr-macinka/claims-index.json"
 dossier = "petr-macinka"
 lang = "cs"
 seo_type = "CollectionPage"
-dossier_title = "Petr Macinka"
-canonical_dossier = "macinka-turek"
-subject = "macinka"
-registry = "claims"
 +++
 Filtrovaný pohled na [registr tvrzení](@/dossiers/macinka-turek/claims/_index.md) — jen záznamy, které se týkají Petra Macinky (samostatně nebo společně s Filipem Turkem).
 

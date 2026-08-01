@@ -9,17 +9,10 @@ weight = 35
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-35"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-35.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-35"
-outlet = "Blesk.cz"
-src_type = "zpravodajství"
-url = "https://www.blesk.cz/clanek/zpravy-politika/842211/kauza-dotaci-na-inovativni-toastovy-chleba-pekarna-agrofertu-celi-obzalobe.html"
-published = "2026-06-22"
-retrieved = "2026-08-01"
-claims = ["CLM-57"]
 +++
 Blesk.cz popisuje obžalobu podanou státním zástupcem Adamem Bašným
 z Úřadu evropského veřejného žalobce (EPPO) na společnost Pekárna Zelená

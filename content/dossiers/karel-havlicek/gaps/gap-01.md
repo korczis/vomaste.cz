@@ -9,14 +9,10 @@ weight = 1
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/gaps/GAP-01"
 view_model = "generated/views/dossiers/karel-havlicek/gaps/gap-01.json"
-subjects = ["havlicek"]
 dossier = "karel-havlicek"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-01"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Nezávislé potvrzení Havlíčkova výroku z 29. 11. 2020 o vymáhání dotace po Penamu druhým vydavatelem (iROZHLAS).
 

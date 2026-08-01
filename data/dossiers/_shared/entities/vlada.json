@@ -37,6 +37,28 @@
     "/dossiers/andrej-babis/entities/vlada/"
   ],
   "order": 2,
+  "provenance": {
+    "discoveredAt": "2026-07-29",
+    "discoveredVia": [
+      "edge-babis-vlada"
+    ],
+    "claimRefs": [
+      "CLM-03",
+      "CLM-01",
+      "CLM-36",
+      "CLM-07",
+      "CLM-08"
+    ],
+    "sourceRefs": [
+      "SRC-11",
+      "SRC-01",
+      "SRC-08",
+      "SRC-09",
+      "SRC-12",
+      "SRC-04"
+    ],
+    "depth": 1
+  },
   "content": [
     {
       "type": "markdown",

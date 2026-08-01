@@ -20,6 +20,21 @@
     "/dossiers/andrej-babis/entities/ab-private-trusts/"
   ],
   "order": 19,
+  "provenance": {
+    "discoveredAt": "2026-08-01",
+    "discoveredVia": [
+      "edge-babis-ab-trusts",
+      "edge-ab-trusts-agrofert"
+    ],
+    "claimRefs": [
+      "CLM-16"
+    ],
+    "sourceRefs": [
+      "SRC-06",
+      "SRC-28"
+    ],
+    "depth": 1
+  },
   "content": [
     {
       "type": "markdown",

@@ -9,17 +9,10 @@ weight = 23
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-23"
 view_model = "generated/views/dossiers/jaromir-zuna/sources/src-23.json"
-subjects = ["zuna"]
 dossier = "jaromir-zuna"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-23"
-outlet = "Ekonomický deník"
-src_type = "zpravodajství"
-url = "https://ekonomickydenik.cz/zuna-chce-navic-35-miliard/"
-published = "2026-06-10"
-retrieved = "2026-07-30"
-claims = ["CLM-43", "CLM-44", "CLM-47"]
 +++
 **Zůna chce navíc 35 miliard. Jeho vyjádření mají hodnotu písku mezi prsty, reaguje poslanec**
 

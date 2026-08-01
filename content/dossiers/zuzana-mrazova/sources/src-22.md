@@ -9,17 +9,10 @@ weight = 22
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-22"
 view_model = "generated/views/dossiers/zuzana-mrazova/sources/src-22.json"
-subjects = ["mrazova"]
 dossier = "zuzana-mrazova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-22"
-outlet = "Seznam Zprávy"
-src_type = "zpravodajství"
-url = "https://www.seznamzpravy.cz/clanek/domaci-politika-mrazova-odmitla-opozicni-vyzvy-k-rezignaci-trva-na-tom-ze-neporusila-predpisy-305224"
-published = "2026-04-30"
-retrieved = "2026-07-30"
-claims = ["CLM-27", "CLM-44"]
 +++
 **Mrázová odmítla opoziční výzvy k rezignaci, trvá na tom, že neporušila předpisy**
 

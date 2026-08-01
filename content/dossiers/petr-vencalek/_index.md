@@ -9,45 +9,12 @@ generated = true
 record_id = "https://vomaste.cz/id/dossiers/petr-vencalek"
 view_model = "generated/views/dossiers/petr-vencalek/overview.json"
 dossier = "petr-vencalek"
-dossier_title = "Petr Vencálek"
 record_type = "dossier"
 dossier_type = "entity"
-canonical_dossier = "petr-vencalek"
-subject = "vencalek"
 lang = "cs"
 seo_type = "ProfilePage"
 updated = "2026-08-01"
 reviewed_at = "2026-08-01"
-subject_entities = ["vencalek"]
-subjects = ["Petr Vencálek"]
-
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-08-01-VENCALEK"]
-
-[[extra.timeline]]
-date = "2014-12-18"
-title = "Petr Vencálek se stává jediným společníkem (100 %) a jednatelem GMR GAS s.r.o."
-anchor = "kauza-gmrgas"
-dot = "dot-fact"
-subjects = ["vencalek"]
-
-[[extra.timeline]]
-date = "2025-12-19"
-title = "Investigace.cz zveřejňuje kauzu nepřiznaného podílu ministra Macinky v ukrajinské GMR GAS UA LLC a jmenuje Vencálka jako majitele spřízněné české firmy"
-anchor = "kauza-gmrgas"
-dot = "dot-fact"
-subjects = ["vencalek"]
-
-[[extra.cases]]
-anchor = "kauza-gmrgas"
-period = "od 2014"
-title = "Vlastnictví GMR GAS s.r.o. a vazba na GMR GAS UA LLC"
-status = "status-corroborated"
-label = "Rejstříková vazba, bez tvrzení o pochybení"
-summary = "Petr Vencálek je jediným společníkem a jednatelem české GMR GAS s.r.o. Podle Investigace.cz je tato firma spojena s ukrajinskou GMR GAS UA LLC, ve které měl ministr Petr Macinka nepřiznaný 20% podíl. Žádný citovaný zdroj Vencálkovi ani jeho firmě nic nevytýká."
-claims = ["CLM-01", "CLM-02", "CLM-03"]
-subjects = ["vencalek"]
 +++
 ## Kdo je Petr Vencálek {#kdo}
 

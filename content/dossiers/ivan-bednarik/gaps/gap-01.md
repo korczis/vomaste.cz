@@ -9,14 +9,10 @@ weight = 1
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ivan-bednarik/gaps/GAP-01"
 view_model = "generated/views/dossiers/ivan-bednarik/gaps/gap-01.json"
-subjects = ["bednarik"]
 dossier = "ivan-bednarik"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-01"
-priority = "vysoká"
-checked = "2026-07-31"
-claims = ["CLM-02", "CLM-03", "CLM-40", "CLM-41", "CLM-42", "CLM-47"]
 +++
 **Co se od poslední revize upřesnilo (31. 7. 2026).** Zdroj bezprostředně
 k rezignaci ([SRC-02](@/dossiers/ivan-bednarik/sources/src-02.md))

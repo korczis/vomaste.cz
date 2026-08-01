@@ -9,17 +9,10 @@ weight = 26
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-26"
 view_model = "generated/views/dossiers/igor-cerveny/sources/src-26.json"
-subjects = ["cerveny"]
 dossier = "igor-cerveny"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-26"
-outlet = "Ekonomický deník"
-src_type = "zpravodajství"
-url = "https://ekonomickydenik.cz/stret-zajmu-noveho-ministra-cerveny/"
-published = "2026-02-23"
-retrieved = "2026-07-30"
-claims = ["CLM-28", "CLM-32", "CLM-33"]
 +++
 **Střet zájmů u nového ministra: Červený popsal, jak ho vyřešil**
 

@@ -10,14 +10,10 @@ aliases = ["/dossier/mezery/gap-02/"]
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/macinka-turek/gaps/GAP-02"
 view_model = "generated/views/dossiers/macinka-turek/gaps/gap-02.json"
-subjects = ["macinka", "turek"]
 dossier = "macinka-turek"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-02"
-priority = "vysoká"
-checked = "2026-07-23"
-claims = ["CLM-11", "CLM-12", "CLM-38", "CLM-40"]
 +++
 Po nehodě Turek oznámil, že do uzavření vyšetřování nebude vykonávat
 funkci vládního zmocněnce pro Green Deal, a přislíbil rezignaci na tuto

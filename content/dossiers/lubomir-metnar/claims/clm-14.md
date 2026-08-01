@@ -13,10 +13,5 @@ dossier = "lubomir-metnar"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-14"
-status = "status-quote"
-status_label = "CITACE"
-summary = "Metnar svůj postoj dále odůvodnil výrokem: „Bezpečnostní kapacity musí být nasazovány tam, kde jsou podle odborného posouzení nejvíce potřeba.“"
-sources = ["SRC-03", "SRC-04"]
-subjects = ["metnar"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/lubomir-metnar/_index.md#registr-tvrzeni).

@@ -20,6 +20,19 @@
     "/dossiers/andrej-babis/entities/pnf/"
   ],
   "order": 8,
+  "provenance": {
+    "discoveredAt": "2026-07-30",
+    "discoveredVia": [
+      "edge-babis-pnf"
+    ],
+    "claimRefs": [
+      "CLM-13"
+    ],
+    "sourceRefs": [
+      "SRC-05"
+    ],
+    "depth": 1
+  },
   "content": [
     {
       "type": "markdown",

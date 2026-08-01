@@ -9,17 +9,10 @@ weight = 2
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-02"
 view_model = "generated/views/dossiers/karel-havlicek/sources/src-02.json"
-subjects = ["havlicek"]
 dossier = "karel-havlicek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-02"
-outlet = "FORUM 24"
-src_type = "zpravodajství"
-url = "https://www.forum24.cz/agrofert-bude-muset-vratit-dotaci-na-linku-na-toastovy-chleb-pripustil-havlicek/"
-published = "2020-11-29"
-retrieved = "2026-07-30"
-claims = ["CLM-05", "CLM-06"]
 +++
 **Agrofert bude muset vrátit dotaci na linku na toastový chléb, připustil Havlíček**
 

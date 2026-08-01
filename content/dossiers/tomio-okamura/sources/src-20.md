@@ -9,17 +9,10 @@ weight = 20
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-20"
 view_model = "generated/views/dossiers/tomio-okamura/sources/src-20.json"
-subjects = ["okamura"]
 dossier = "tomio-okamura"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-20"
-outlet = "Romea.cz"
-src_type = "zpravodajství"
-url = "https://romea.cz/cz/domaci/vladni-koalice-odmitla-vydat-tomia-okamuru-k-trestnimu-stihani-kvuli-rasistickym-plakatum-spd-nevydala-ani-babise"
-published = "2026-03-06"
-retrieved = "2026-07-30"
-claims = ["CLM-27", "CLM-28", "CLM-29"]
 +++
 **Vládní koalice odmítla vydat Tomia Okamuru k trestnímu stíhání kvůli rasistickým plakátům SPD, nevydala ani Babiše**
 

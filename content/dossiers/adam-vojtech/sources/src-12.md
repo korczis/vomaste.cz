@@ -9,17 +9,10 @@ weight = 12
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-12"
 view_model = "generated/views/dossiers/adam-vojtech/sources/src-12.json"
-subjects = ["vojtech"]
 dossier = "adam-vojtech"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-12"
-outlet = "Echo24"
-src_type = "zpravodajství"
-url = "https://www.echo24.cz/a/H6U9N/zpravy-domaci-vzp-proockovanost-proti-chripce-okamura-mluvi-o-uplaceni-vlada-vojtech-ockovani"
-published = "2026-05-24"
-retrieved = "2026-07-30"
-claims = ["CLM-19", "CLM-21"]
 +++
 **Stát chce odměňovat firmy za očkování zaměstnanců, říká Okamura a mluví o uplácení**
 

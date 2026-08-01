@@ -13,11 +13,6 @@ dossier = "macinka-turek"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-46"
-status = "status-single"
-status_label = "1 ZDROJ"
-summary = "Českou společností za GMR GAS UA LLC je podle obchodního rejstříku GMR GAS s.r.o., IČO 28274318, se sídlem v Brně, zapsaná 2008 pod jménem KADAR s.r.o. a přejmenovaná 2015; mezi jejími zapsanými činnostmi je montáž, opravy a revize plynových zařízení"
-sources = ["SRC-55"]
-subjects = ["macinka"]
 +++
 Tato stránka je kanonický záznam tvrzení CLM-46 — shrnutí, stav a zdroje
 výše jsou úplné. Jde o **rejstříkovou identifikaci** firmy, kterou

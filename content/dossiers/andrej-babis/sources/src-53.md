@@ -9,17 +9,10 @@ weight = 53
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-53"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-53.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-53"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/proverovani-babise-v-pripadu-pandora-papers-speje-k-odlozeni-zadost-cernosic-o-pomoc-odmitl-dalsi-re-25688"
-published = "2022-01-04"
-retrieved = "2026-08-01"
-claims = ["CLM-76"]
 +++
 ČT24 popisuje správní větev české části kauzy Pandora Papers:
 černošický městský úřad prověřoval, zda se Andrej Babiš nedopustil

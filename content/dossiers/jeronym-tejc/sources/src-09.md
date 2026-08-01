@@ -9,17 +9,10 @@ weight = 9
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-09"
 view_model = "generated/views/dossiers/jeronym-tejc/sources/src-09.json"
-subjects = ["tejc"]
 dossier = "jeronym-tejc"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-09"
-outlet = "Deník N"
-src_type = "zpravodajství"
-url = "https://denikn.cz/minuta/2114829/"
-published = "2026-07-02"
-retrieved = "2026-07-30"
-claims = ["CLM-14", "CLM-15"]
 +++
 **Česká justice: Tejc má velké pochybnosti o předběžném opatření ÚS o summitu NATO**
 

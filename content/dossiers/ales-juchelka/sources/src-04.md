@@ -9,17 +9,10 @@ weight = 4
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-04"
 view_model = "generated/views/dossiers/ales-juchelka/sources/src-04.json"
-subjects = ["juchelka"]
 dossier = "ales-juchelka"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-04"
-outlet = "Seznam Zprávy"
-src_type = "zpravodajství"
-url = "https://www.seznamzpravy.cz/clanek/domaci-kauzy-zavazne-obavy-ze-stretu-zajmu-eu-zada-opatreni-kvuli-juchelkove-poradkyni-302517"
-published = "2026-03-25"
-retrieved = "2026-07-30"
-claims = ["CLM-08", "CLM-09", "CLM-17"]
 +++
 **Závažné obavy ze střetu zájmů. EU žádá opatření kvůli Juchelkově poradkyni**
 

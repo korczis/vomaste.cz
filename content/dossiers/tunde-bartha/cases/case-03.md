@@ -13,13 +13,6 @@ dossier = "tunde-bartha"
 record_type = "case"
 lang = "cs"
 case_id = "CASE-03"
-anchor = "kauza-kampan"
-period = "2022–2023"
-status = "status-single"
-label = "Doložená politická a organizační role"
-summary = "Bartha podle zpravodajství z prosince 2022 vedla prezidentskou kampaň Andreje Babiše a spolupracovala s ním „už sedmým rokem“; Babiš tehdy uvedl, že v případě volebního vítězství by se stala jeho kancléřkou — šlo o zamýšlenou budoucí roli deklarovanou v průběhu kampaně, nikoli o zastávanou funkci. Jde o doloženou politickou a organizační roli, žádný citovaný zdroj v souvislosti s ní netvrdí protiprávní jednání."
-claims = ["CLM-10", "CLM-11"]
-sources = ["SRC-07"]
 +++
 Plné znění, zdroje a kontext tohoto případu jsou v [hlavním přehledu
 dossieru](@/dossiers/tunde-bartha/_index.md#kauza-kampan).

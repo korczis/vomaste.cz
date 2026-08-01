@@ -9,14 +9,10 @@ weight = 1
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/tunde-bartha/gaps/GAP-01"
 view_model = "generated/views/dossiers/tunde-bartha/gaps/gap-01.json"
-subjects = ["bartha"]
 dossier = "tunde-bartha"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-01"
-priority = "vysoká"
-checked = "2026-07-30"
-claims = ["CLM-01", "CLM-02", "CLM-03"]
 +++
 Otevřené a ověřené zdroje končí u rozhodnutí rady městské části z
 24. 6. 2026. **Nedoloženo zůstává**, zda výpověď nabyla účinnosti, zda ji

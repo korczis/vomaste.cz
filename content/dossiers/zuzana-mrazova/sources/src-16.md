@@ -9,17 +9,10 @@ weight = 16
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-16"
 view_model = "generated/views/dossiers/zuzana-mrazova/sources/src-16.json"
-subjects = ["mrazova"]
 dossier = "zuzana-mrazova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-16"
-outlet = "Deník.cz (VLTAVA LABE MEDIA)"
-src_type = "zpravodajství"
-url = "https://www.denik.cz/regiony/bilina-udajne-roky-vedela-o-cernych-stavbach-mrazove-urednici-ale-nekonali/"
-published = "2026-06-23"
-retrieved = "2026-07-30"
-claims = ["CLM-36", "CLM-37", "CLM-38", "CLM-39", "CLM-40"]
 +++
 **Bílina údajně roky věděla o černých stavbách Mrázové. Úředníci ale nekonali**
 

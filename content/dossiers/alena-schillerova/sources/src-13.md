@@ -9,17 +9,10 @@ weight = 13
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-13"
 view_model = "generated/views/dossiers/alena-schillerova/sources/src-13.json"
-subjects = ["schillerova"]
 dossier = "alena-schillerova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-13"
-outlet = "Ministerstvo financí ČR"
-src_type = "oficiální primární zdroj"
-url = "https://mf.gov.cz/cs/ministerstvo/media/v-mediich/2026/ministryne-alena-schillerova-v-rozhovoru-pro-hospo-64265"
-published = "2026-06-15"
-retrieved = "2026-07-30"
-claims = ["CLM-38"]
 +++
 **Ministryně Alena Schillerová v rozhovoru pro Hospodářské noviny**
 

@@ -9,17 +9,10 @@ weight = 24
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-24"
 view_model = "generated/views/dossiers/igor-cerveny/sources/src-24.json"
-subjects = ["cerveny"]
 dossier = "igor-cerveny"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-24"
-outlet = "Novinky.cz"
-src_type = "zpravodajství"
-url = "https://www.novinky.cz/clanek/domaci-cerveny-bude-muset-vyresit-stret-zajmu-40562815"
-published = "2026-02-16"
-retrieved = "2026-07-30"
-claims = ["CLM-27", "CLM-28", "CLM-30"]
 +++
 **Červený bude muset vyřešit střet zájmů**
 

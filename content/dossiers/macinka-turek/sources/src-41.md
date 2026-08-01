@@ -10,17 +10,10 @@ aliases = ["/dossier/zdroje/src-41/"]
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-41"
 view_model = "generated/views/dossiers/macinka-turek/sources/src-41.json"
-subjects = ["macinka", "turek"]
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-41"
-outlet = "Hlídač státu"
-family = "hlidac-statu"
-src_type = "veřejný rejstřík / transparentní databáze"
-url = "https://www.hlidacstatu.cz/Osoba/Sponzoring/richard-chlad-2"
-retrieved = "2026-07-22"
-claims = ["CLM-36"]
 +++
 Hlídač státu eviduje u podnikatele Richarda Chlada tyto dary Motoristům
 sobě v roce 2025:

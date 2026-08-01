@@ -10,14 +10,10 @@ aliases = ["/dossier/mezery/gap-01/"]
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/macinka-turek/gaps/GAP-01"
 view_model = "generated/views/dossiers/macinka-turek/gaps/gap-01.json"
-subjects = ["turek"]
 dossier = "macinka-turek"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-01"
-priority = "vysoká"
-checked = "2026-07-29"
-claims = ["CLM-10", "CLM-16", "CLM-17", "CLM-18"]
 +++
 Auto Filipa Turka se v červenci 2026 v Praze střetlo s vozidlem převážejícím
 biologický materiál (krev) Nemocnice Na Homolce — část raného

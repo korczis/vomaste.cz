@@ -9,14 +9,10 @@ weight = 6
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/martin-sebestyan/gaps/GAP-06"
 view_model = "generated/views/dossiers/martin-sebestyan/gaps/gap-06.json"
-subjects = ["sebestyan"]
 dossier = "martin-sebestyan"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-06"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Rozpětí částky (5,1 vs. více než 7 mld. Kč) se mezi zdroji liší.
 

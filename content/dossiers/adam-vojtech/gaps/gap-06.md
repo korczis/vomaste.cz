@@ -9,14 +9,10 @@ weight = 6
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/adam-vojtech/gaps/GAP-06"
 view_model = "generated/views/dossiers/adam-vojtech/gaps/gap-06.json"
-subjects = ["vojtech"]
 dossier = "adam-vojtech"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-06"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Není doloženo, zda ministr Vojtěch veřejně reagoval na červencové závěry odborné komise a zda z nich vyvodil personální důsledky.
 

@@ -9,17 +9,10 @@ weight = 2
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/petr-pavel/sources/SRC-02"
 view_model = "generated/views/dossiers/petr-pavel/sources/src-02.json"
-subjects = ["pavel"]
 dossier = "petr-pavel"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-02"
-outlet = "HN.cz (Hospodářské noviny)"
-src_type = "zpravodajství"
-url = "https://domaci.hn.cz/c1-67831390-pavel-dal-odmita-jmenovat-turka-ministrem-podle-babise-mel-dostat-sanci-kompetencni-zalobu-ale-nezvazuje"
-published = "2026-01-07"
-retrieved = "2026-07-23"
-claims = ["CLM-01"]
 +++
 Premiér Andrej Babiš se pokusil prezidenta Pavla během novoročního oběda
 přesvědčit ke jmenování Filipa Turka ministrem životního prostředí,

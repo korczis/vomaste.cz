@@ -9,18 +9,10 @@ weight = 29
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-29"
 view_model = "generated/views/dossiers/zuzana-mrazova/sources/src-29.json"
-subjects = ["mrazova"]
 dossier = "zuzana-mrazova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-29"
-outlet = "ČeskéNoviny.cz (ČTK)"
-family = "ctk"
-src_type = "agenturní zpravodajství"
-url = "https://www.ceskenoviny.cz/zpravy/ministryne-mrazova-ano-se-vzdala-zastupitelskeho-mandatu-v-biline-na-teplicku/2839785"
-published = "2026-06-17"
-retrieved = "2026-07-31"
-claims = ["CLM-33", "CLM-34"]
 +++
 ČeskéNoviny.cz dne 17. 6. 2026: „Ministryně pro místní rozvoj Zuzana
 Mrázová (ANO) se vzdala mandátu členky zastupitelstva města Bíliny."

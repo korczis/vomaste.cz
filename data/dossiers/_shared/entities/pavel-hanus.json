@@ -8,6 +8,7 @@
   "identifier": "pavel-hanus",
   "entityId": "pavel-hanus",
   "title": "Mgr. Pavel Hanus",
+  "description": "Mgr. Pavel Hanus — kontextový záznam rejstříkové vazby z ARES, ne dossier.",
   "entityType": "person",
   "publicationRole": "context",
   "dossierEnabled": false,
@@ -15,6 +16,13 @@
   "coverageState": "referenced",
   "dossiers": [],
   "order": 49,
+  "provenance": {
+    "discoveredAt": "2026-07-31",
+    "discoveredVia": [
+      "ares-expansion-26185610-2026-07-31"
+    ],
+    "depth": 3
+  },
   "content": [
     {
       "type": "markdown",

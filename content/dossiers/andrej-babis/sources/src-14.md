@@ -9,17 +9,10 @@ weight = 14
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-14"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-14.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-14"
-outlet = "Úřad vlády ČR (vlada.gov.cz)"
-src_type = "úřední zdroj"
-url = "https://vlada.gov.cz/cz/vlada/clenove-vlady/premier/zivotopis/andrej-babis-223989/"
-published = "2026-07-30"
-retrieved = "2026-07-30"
-claims = ["CLM-35"]
 +++
 Oficiální životopis na webu Úřadu vlády.
 **Co dokládá:** datum narození (2. 9. 1954, Bratislava), profesní dráhu

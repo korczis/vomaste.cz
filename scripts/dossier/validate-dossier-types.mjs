@@ -32,7 +32,7 @@ const errors = [];
 const err = (msg) => errors.push(msg);
 
 const registry = loadDossierRegistry();
-if (registry.length === 0) err("data/dossiers.toml: no [[dossiers]] entries found.");
+if (registry.length === 0) err("kanonický registr dossierů: žádný dossier záznam nenalezen.");
 
 const bySlug = new Map(registry.map((d) => [d.slug, d]));
 const RECORD_DIRS = [
@@ -56,7 +56,7 @@ for (const record of registry) {
     if (record.sourceDossiers.length > 0) err(tag(`is dossier_type "entity" but has source_dossiers — only aggregate dossiers roll up other dossiers.`));
     if (!record.canonicalDossier) err(tag(`is dossier_type "entity" but has no canonical_dossier to project from.`));
     if (record.canonicalDossier && !bySlug.has(record.canonicalDossier)) {
-      err(tag(`canonical_dossier "${record.canonicalDossier}" does not exist in data/dossiers.toml.`));
+      err(tag(`canonical_dossier "${record.canonicalDossier}" does not exist in the canonical dossier registry.`));
     }
     if (record.showInPrimaryNavigation !== true) {
       err(tag(`is dossier_type "entity" but show_in_primary_navigation is not true — every entity dossier must be primary-nav-worthy.`));
@@ -116,7 +116,7 @@ for (const record of registry) {
     if (record.subject) err(tag(`is dossier_type "aggregate" but has a "subject" field — only entity dossiers have one.`));
     if (record.sourceDossiers.length === 0) err(tag(`is dossier_type "aggregate" but has no source_dossiers.`));
     for (const s of record.sourceDossiers) {
-      if (!bySlug.has(s)) { err(tag(`source_dossiers references "${s}", which does not exist in data/dossiers.toml.`)); continue; }
+      if (!bySlug.has(s)) { err(tag(`source_dossiers references "${s}", which does not exist in the canonical dossier registry.`)); continue; }
       if (bySlug.get(s).dossierType !== "entity") err(tag(`source_dossiers references "${s}", which is not dossier_type "entity".`));
     }
     if (record.showInPrimaryNavigation !== false) {
@@ -128,7 +128,7 @@ for (const record of registry) {
 // Every physical content/dossiers/<slug>/ directory must be registered.
 const physicalSlugs = readdirSync(DOSSIERS_ROOT).filter((f) => statSync(join(DOSSIERS_ROOT, f)).isDirectory());
 for (const slug of physicalSlugs) {
-  if (!bySlug.has(slug)) err(`content/dossiers/${slug}/ exists on disk but has no matching entry in data/dossiers.toml.`);
+  if (!bySlug.has(slug)) err(`content/dossiers/${slug}/ exists on disk but has no matching canonical dossier record (data/dossiers/<slug>/dossier.json).`);
 }
 
 // Every dossier needs its own Open Graph card: templates/base.html points

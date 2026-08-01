@@ -9,17 +9,10 @@ weight = 5
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-05"
 view_model = "generated/views/dossiers/jaromir-zuna/sources/src-05.json"
-subjects = ["zuna"]
 dossier = "jaromir-zuna"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-05"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/nato-cesku-neuzna-jako-obranne-vydaje-asi-dvacet-miliard-na-dopravni-stavby-rekl-ct-zuna-372900"
-published = "2026-04-28"
-retrieved = "2026-07-30"
-claims = ["CLM-06"]
 +++
 **NATO Česku neuzná jako obranné výdaje asi dvacet miliard, řekl ČT Zůna**
 

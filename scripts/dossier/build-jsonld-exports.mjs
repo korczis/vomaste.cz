@@ -5,7 +5,7 @@
  *
  * Emits, entirely derived from the compiled canonical dataset (via
  * lib/record-tables.mjs, T-028 fáze G), the dossier registry and the
- * curated graph.toml node layer (derived, never authored):
+ * curated graph node layer — dossier.json `graph`, dřív graph.toml (derived, never authored):
  *
  *   static/data/dossiers/<slug>.jsonld  — one full-depth @graph per
  *     registry dossier: Dataset + Person (authorized subjects only) +

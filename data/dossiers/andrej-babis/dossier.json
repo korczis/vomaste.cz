@@ -14,6 +14,7 @@
   "subject": "babis",
   "language": "cs",
   "navigationVisible": true,
+  "order": 5,
   "updated": "2026-08-01",
   "reviewedAt": "2026-08-01",
   "authorization": {
@@ -24,6 +25,362 @@
   },
   "seo": {
     "seoType": "ProfilePage"
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "babis",
+        "label": "Andrej Babiš",
+        "subject": true
+      },
+      {
+        "entity": "vlada",
+        "label": "Vláda ČR",
+        "claims": [
+          "CLM-36"
+        ],
+        "sources": [
+          "SRC-08",
+          "SRC-09",
+          "SRC-12"
+        ]
+      },
+      {
+        "entity": "agrofert",
+        "label": "Agrofert",
+        "claims": [
+          "CLM-04",
+          "CLM-16",
+          "CLM-37"
+        ],
+        "sources": [
+          "SRC-02",
+          "SRC-06",
+          "SRC-15"
+        ]
+      },
+      {
+        "entity": "rsvp-trust",
+        "label": "RSVP Trust",
+        "claims": [
+          "CLM-04"
+        ],
+        "sources": [
+          "SRC-02"
+        ]
+      },
+      {
+        "entity": "kostelecke-uzeniny",
+        "label": "Kostelecké uzeniny",
+        "claims": [
+          "CLM-18",
+          "CLM-47",
+          "CLM-48"
+        ],
+        "sources": [
+          "SRC-07",
+          "SRC-21",
+          "SRC-22"
+        ]
+      },
+      {
+        "entity": "szif",
+        "label": "Státní zemědělský intervenční fond",
+        "claims": [
+          "CLM-10",
+          "CLM-48"
+        ],
+        "sources": [
+          "SRC-04",
+          "SRC-22"
+        ]
+      },
+      {
+        "entity": "nss",
+        "label": "Nejvyšší správní soud",
+        "claims": [
+          "CLM-18"
+        ],
+        "sources": [
+          "SRC-07"
+        ]
+      },
+      {
+        "entity": "pnf",
+        "label": "Národní finanční prokuratura (PNF, Francie)",
+        "claims": [
+          "CLM-13"
+        ],
+        "sources": [
+          "SRC-05"
+        ]
+      },
+      {
+        "entity": "capi-hnizdo",
+        "label": "Čapí hnízdo (dotační kauza)",
+        "claims": [
+          "CLM-01",
+          "CLM-49",
+          "CLM-50",
+          "CLM-51",
+          "CLM-52"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-23",
+          "SRC-24"
+        ]
+      },
+      {
+        "entity": "evropska-komise",
+        "label": "Evropská komise",
+        "claims": [
+          "CLM-25",
+          "CLM-26",
+          "CLM-43",
+          "CLM-46"
+        ],
+        "sources": [
+          "SRC-10",
+          "SRC-11",
+          "SRC-19",
+          "SRC-20"
+        ]
+      },
+      {
+        "entity": "eppo",
+        "label": "Úřad evropského veřejného žalobce (EPPO)",
+        "claims": [
+          "CLM-27",
+          "CLM-28"
+        ],
+        "sources": [
+          "SRC-12"
+        ]
+      },
+      {
+        "entity": "ncoz",
+        "label": "Národní centrála proti organizovanému zločinu",
+        "claims": [
+          "CLM-27",
+          "CLM-75"
+        ],
+        "sources": [
+          "SRC-12",
+          "SRC-52"
+        ]
+      },
+      {
+        "entity": "blakey-finance",
+        "label": "BLAKEY FINANCE LIMITED (BVI)",
+        "claims": [
+          "CLM-31"
+        ],
+        "sources": [
+          "SRC-13"
+        ]
+      },
+      {
+        "entity": "boyne-holding",
+        "label": "BOYNE HOLDING LLC (Washington, D.C.)",
+        "claims": [
+          "CLM-31"
+        ],
+        "sources": [
+          "SRC-13"
+        ]
+      },
+      {
+        "entity": "scp-bigaud",
+        "label": "SCP Bigaud (Monako)",
+        "claims": [
+          "CLM-31",
+          "CLM-33"
+        ],
+        "sources": [
+          "SRC-13"
+        ]
+      },
+      {
+        "entity": "synbiol",
+        "label": "SynBiol",
+        "claims": [
+          "CLM-39",
+          "CLM-41",
+          "CLM-42"
+        ],
+        "sources": [
+          "SRC-16",
+          "SRC-17"
+        ]
+      },
+      {
+        "entity": "hartenberg",
+        "label": "Hartenberg Holding",
+        "claims": [
+          "CLM-39",
+          "CLM-41"
+        ],
+        "sources": [
+          "SRC-16",
+          "SRC-17"
+        ]
+      },
+      {
+        "entity": "ustavni-soud",
+        "label": "Ústavní soud",
+        "claims": [
+          "CLM-47",
+          "CLM-66"
+        ],
+        "sources": [
+          "SRC-21",
+          "SRC-44"
+        ]
+      },
+      {
+        "entity": "ab-private-trusts",
+        "label": "AB private trust I a II",
+        "claims": [
+          "CLM-16"
+        ],
+        "sources": [
+          "SRC-06",
+          "SRC-28"
+        ]
+      },
+      {
+        "entity": "imoba",
+        "label": "IMOBA",
+        "claims": [
+          "CLM-73",
+          "CLM-74"
+        ],
+        "sources": [
+          "SRC-51"
+        ]
+      },
+      {
+        "entity": "olaf",
+        "label": "Evropský úřad pro boj proti podvodům (OLAF)",
+        "claims": [
+          "CLM-72"
+        ],
+        "sources": [
+          "SRC-50"
+        ]
+      },
+      {
+        "entity": "penam-zelena-louka",
+        "label": "Pekárna Zelená louka (skupina Agrofert)",
+        "claims": [
+          "CLM-55",
+          "CLM-57",
+          "CLM-58"
+        ],
+        "sources": [
+          "SRC-34",
+          "SRC-35",
+          "SRC-36",
+          "SRC-37"
+        ]
+      },
+      {
+        "entity": "mpo",
+        "label": "Ministerstvo průmyslu a obchodu",
+        "claims": [
+          "CLM-55"
+        ],
+        "sources": [
+          "SRC-36",
+          "SRC-37"
+        ]
+      },
+      {
+        "entity": "pgrlf",
+        "label": "Podpůrný a garanční rolnický a lesnický fond (PGRLF)",
+        "claims": [
+          "CLM-60"
+        ],
+        "sources": [
+          "SRC-38",
+          "SRC-40"
+        ]
+      },
+      {
+        "entity": "vodnanska-drubez",
+        "label": "Vodňanská drůbež",
+        "claims": [
+          "CLM-64",
+          "CLM-66",
+          "CLM-67"
+        ],
+        "sources": [
+          "SRC-43",
+          "SRC-44"
+        ]
+      },
+      {
+        "entity": "sady-cz",
+        "label": "Sady CZ",
+        "claims": [
+          "CLM-65"
+        ],
+        "sources": [
+          "SRC-45"
+        ]
+      },
+      {
+        "entity": "navos-farm-technic",
+        "label": "Navos Farm Technic",
+        "claims": [
+          "CLM-68"
+        ],
+        "sources": [
+          "SRC-46",
+          "SRC-47"
+        ]
+      }
+    ],
+    "edges": [
+      "edge-babis-vlada",
+      "edge-babis-agrofert",
+      "edge-rsvp-agrofert",
+      "edge-agrofert-kostelecke",
+      "edge-kostelecke-nss",
+      "edge-agrofert-szif",
+      "edge-babis-pnf",
+      "edge-babis-capihnizdo",
+      "edge-agrofert-komise",
+      "edge-agrofert-eppo",
+      "edge-eppo-ncoz",
+      "edge-babis-blakey",
+      "edge-blakey-boyne",
+      "edge-boyne-bigaud",
+      "edge-babis-synbiol",
+      "edge-synbiol-hartenberg",
+      "edge-synbiol-komise",
+      "edge-babis-komise-audit",
+      "edge-kostelecke-ustavnisoud",
+      "edge-kostelecke-szif",
+      "edge-babis-ab-trusts",
+      "edge-ab-trusts-agrofert",
+      "edge-imoba-capihnizdo",
+      "edge-capihnizdo-olaf",
+      "edge-agrofert-capihnizdo-reklamy",
+      "edge-agrofert-pekarna",
+      "edge-pekarna-eppo",
+      "edge-pekarna-mpo",
+      "edge-agrofert-pgrlf",
+      "edge-agrofert-vodnanska",
+      "edge-vodnanska-ustavnisoud",
+      "edge-agrofert-sady",
+      "edge-sady-nss",
+      "edge-agrofert-navos",
+      "edge-navos-nss",
+      "edge-vodnanska-szif",
+      "edge-babis-ncoz-pandora"
+    ]
   },
   "contentBlocks": [
     {

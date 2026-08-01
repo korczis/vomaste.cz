@@ -15,6 +15,7 @@
     "/dossier/"
   ],
   "navigationVisible": false,
+  "order": 19,
   "updated": "2026-07-29",
   "reviewedAt": "2026-07-29",
   "authorization": {
@@ -23,6 +24,600 @@
       "AUTH-2026-07-21-B",
       "AUTH-2026-07-22-A",
       "AUTH-2026-07-30-A"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "macinka",
+        "label": "Petr Macinka",
+        "subject": true,
+        "claims": [
+          "CLM-03",
+          "CLM-24"
+        ],
+        "sources": [
+          "SRC-11",
+          "SRC-27"
+        ]
+      },
+      {
+        "entity": "turek",
+        "label": "Filip Turek",
+        "subject": true,
+        "claims": [
+          "CLM-01",
+          "CLM-02"
+        ],
+        "sources": [
+          "SRC-11",
+          "SRC-13"
+        ]
+      },
+      {
+        "entity": "motoriste",
+        "label": "Motoristé sobě",
+        "claims": [
+          "CLM-03"
+        ],
+        "sources": [
+          "SRC-11"
+        ]
+      },
+      {
+        "entity": "vlada",
+        "label": "Vláda (ANO + SPD + Motoristé)",
+        "claims": [
+          "CLM-03"
+        ],
+        "sources": [
+          "SRC-11"
+        ]
+      },
+      {
+        "entity": "ep",
+        "label": "Evropský parlament",
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-11"
+        ]
+      },
+      {
+        "entity": "greendeal",
+        "label": "Zmocněnec pro Green Deal",
+        "claims": [
+          "CLM-11"
+        ],
+        "sources": [
+          "SRC-06"
+        ]
+      },
+      {
+        "entity": "babis",
+        "label": "Andrej Babiš (premiér)",
+        "claims": [
+          "CLM-12"
+        ],
+        "sources": [
+          "SRC-06"
+        ]
+      },
+      {
+        "entity": "pavel",
+        "label": "Petr Pavel (prezident)",
+        "claims": [
+          "CLM-38"
+        ],
+        "sources": [
+          "SRC-44"
+        ]
+      },
+      {
+        "entity": "kauza2024",
+        "label": "Kauza 2024: fotografie a svícny",
+        "cluster": "kauza-2024-fotografie",
+        "claims": [
+          "CLM-04"
+        ],
+        "sources": [
+          "SRC-12"
+        ]
+      },
+      {
+        "entity": "kauza2025",
+        "label": "Kauza 2025: smazané příspěvky",
+        "cluster": "smazane-prispevky",
+        "claims": [
+          "CLM-07"
+        ],
+        "sources": [
+          "SRC-15"
+        ]
+      },
+      {
+        "entity": "nehoda2026",
+        "label": "Nehoda 2026",
+        "cluster": "dopravni-nehoda",
+        "claims": [
+          "CLM-10"
+        ],
+        "sources": [
+          "SRC-02"
+        ]
+      },
+      {
+        "entity": "trestniozn",
+        "label": "Trestní oznámení (2025)",
+        "cluster": "trestni-oznameni",
+        "claims": [
+          "CLM-25"
+        ],
+        "sources": [
+          "SRC-28"
+        ]
+      },
+      {
+        "entity": "mzp2026",
+        "label": "Jmenování ministrem ŽP (2026)",
+        "cluster": "politicke-role",
+        "claims": [
+          "CLM-38"
+        ],
+        "sources": [
+          "SRC-44"
+        ]
+      },
+      {
+        "entity": "gmrgas",
+        "label": "GMR GAS UA LLC (Kyjev)",
+        "cluster": "financni-vazby",
+        "summary": "Kyjevská firma, v níž měl Petr Macinka nepřiznaný 20% podíl; podle citovaného zpravodajství ukrajinská pobočka české GMR GAS s.r.o. Stav a struktura firmy nejsou z primárního ukrajinského registru ověřeny (GAP-07).",
+        "claims": [
+          "CLM-14",
+          "CLM-15",
+          "CLM-47"
+        ],
+        "sources": [
+          "SRC-17",
+          "SRC-18"
+        ]
+      },
+      {
+        "entity": "gmrgas-cz",
+        "label": "GMR GAS s.r.o. (Brno)",
+        "cluster": "financni-vazby",
+        "summary": "Česká matka (IČO 28274318), kterou SRC-17 popisuje jen slovně; totožnost doložena rejstříkovým záznamem ARES (SRC-55). Do ledna 2015 KADAR s.r.o.",
+        "claims": [
+          "CLM-46",
+          "CLM-47",
+          "CLM-48"
+        ],
+        "sources": [
+          "SRC-17",
+          "SRC-55"
+        ]
+      },
+      {
+        "entity": "vencalek",
+        "label": "Petr Vencálek (vlastník GMR GAS s.r.o.)",
+        "cluster": "financni-vazby",
+        "summary": "Jediný společník (100 %) a jednatel české GMR GAS s.r.o. Záznam zveřejněné vlastnické vazby, ne subjekt dossieru a ne veřejný funkcionář.",
+        "claims": [
+          "CLM-48"
+        ],
+        "sources": [
+          "SRC-17",
+          "SRC-55"
+        ]
+      },
+      {
+        "entity": "klubmotoristu",
+        "label": "Klub motoristů, z.s.",
+        "cluster": "financni-vazby",
+        "claims": [
+          "CLM-22"
+        ],
+        "sources": [
+          "SRC-24"
+        ]
+      },
+      {
+        "entity": "chlad",
+        "label": "Richard Chlad (sponzor)",
+        "cluster": "financni-vazby",
+        "claims": [
+          "CLM-36"
+        ],
+        "sources": [
+          "SRC-41"
+        ]
+      },
+      {
+        "entity": "cerveny",
+        "label": "Igor Červený",
+        "cluster": "politicke-role",
+        "summary": "Poslanec za Motoristy sobě; 23. 2. 2026 jmenován ministrem životního prostředí jako nástupce Petra Macinky v čele resortu.",
+        "claims": [
+          "CLM-43"
+        ],
+        "sources": [
+          "SRC-49",
+          "SRC-50"
+        ]
+      },
+      {
+        "entity": "policie",
+        "label": "Policie ČR",
+        "summary": "Vyšetřuje dopravní nehodu (červenec 2026), v květnu 2026 odložila pro promlčení trestní oznámení bývalé partnerky (nepravomocně) a prověřovala Turkovy výroky na sociálních sítích i trestní oznámení Motoristů na Deník N — obě věci 28. 7. 2026 odložila pro promlčení, resp. absenci trestného činu.",
+        "claims": [
+          "CLM-27",
+          "CLM-41"
+        ],
+        "sources": [
+          "SRC-31",
+          "SRC-47",
+          "SRC-48",
+          "SRC-54"
+        ]
+      },
+      {
+        "entity": "statni-zastupitelstvi",
+        "label": "Státní zastupitelství",
+        "cluster": "trestni-oznameni",
+        "summary": "Obvodní státní zastupitelství pro Prahu 4 oznámilo policejní odložení trestního oznámení (promlčení) a rozhoduje o stížnosti, kterou žena proti odložení podala; rozhodnutí není pravomocné.",
+        "claims": [
+          "CLM-27"
+        ],
+        "sources": [
+          "SRC-31",
+          "SRC-54"
+        ]
+      },
+      {
+        "entity": "mzdrav",
+        "label": "Ministerstvo zdravotnictví",
+        "cluster": "zapper-club",
+        "summary": "Veřejně varovalo před používáním přístroje zapper prodávaného firmou Zapper-Club.",
+        "claims": [
+          "CLM-31"
+        ],
+        "sources": [
+          "SRC-34"
+        ]
+      },
+      {
+        "entity": "szpi",
+        "label": "SZPI",
+        "cluster": "zapper-club",
+        "summary": "Státní zemědělská a potravinářská inspekce odebrala přístroji zapper certifikát kvůli zakázaným léčebným tvrzením.",
+        "claims": [
+          "CLM-31"
+        ],
+        "sources": [
+          "SRC-34",
+          "SRC-35"
+        ]
+      },
+      {
+        "entity": "zapper-club",
+        "label": "Zapper-Club s.r.o.",
+        "cluster": "zapper-club",
+        "claims": [
+          "CLM-20",
+          "CLM-31"
+        ],
+        "sources": [
+          "SRC-23",
+          "SRC-34"
+        ]
+      },
+      {
+        "entity": "nemocnice-homolce",
+        "label": "Nemocnice Na Homolce",
+        "cluster": "dopravni-nehoda",
+        "summary": "Provozovatel vozidla zdravotnické záchranné služby, které se srazilo s Turkovým autem.",
+        "claims": [
+          "CLM-18"
+        ],
+        "sources": [
+          "SRC-20"
+        ]
+      }
+    ],
+    "edges": [
+      "edge-macinka-motoriste",
+      "edge-turek-motoriste",
+      "edge-motoriste-vlada",
+      "edge-babis-vlada",
+      "edge-turek-ep",
+      "edge-turek-greendeal",
+      "edge-turek-kauza2024",
+      "edge-macinka-kauza2024",
+      "edge-turek-kauza2025",
+      "edge-turek-nehoda2026",
+      "edge-macinka-nehoda2026",
+      "edge-babis-nehoda2026",
+      "edge-macinka-gmrgas",
+      "edge-gmrgascz-gmrgas",
+      "edge-vencalek-gmrgascz",
+      "edge-macinka-klubmotoristu",
+      "edge-klubmotoristu-motoriste",
+      "edge-turek-trestniozn",
+      "edge-chlad-motoriste",
+      "edge-turek-mzp2026",
+      "edge-pavel-mzp2026",
+      "edge-turek-pavel",
+      "edge-macinka-mzp2026",
+      "edge-cerveny-mzp2026",
+      "edge-macinka-cerveny",
+      "edge-nehoda2026-policie",
+      "edge-homolce-nehoda2026",
+      "edge-trestniozn-statnizastupitelstvi",
+      "edge-trestniozn-policie",
+      "edge-kauza2025-policie",
+      "edge-turek-zapperclub",
+      "edge-zapperclub-mzdrav",
+      "edge-zapperclub-szpi"
+    ],
+    "clusters": [
+      {
+        "id": "politicke-role",
+        "label": "Politické role a veřejné funkce",
+        "description": "Stranické a vládní role obou subjektů, včetně ministerstva životního prostředí a jeho nástupnictví.",
+        "claims": [
+          "CLM-03",
+          "CLM-24",
+          "CLM-38",
+          "CLM-40",
+          "CLM-43"
+        ],
+        "sources": [
+          "SRC-11",
+          "SRC-27",
+          "SRC-44",
+          "SRC-49",
+          "SRC-50"
+        ],
+        "nodes": [
+          "macinka",
+          "turek",
+          "motoriste",
+          "vlada",
+          "ep",
+          "greendeal",
+          "babis",
+          "pavel",
+          "mzp2026",
+          "cerveny"
+        ],
+        "gaps": [
+          "GAP-02"
+        ]
+      },
+      {
+        "id": "dopravni-nehoda",
+        "label": "Dopravní nehoda a politická reakce",
+        "description": "Nehoda Turkova vozidla se sanitkou (2026), vyšetřování a bezprostřední politické reakce.",
+        "claims": [
+          "CLM-10",
+          "CLM-11",
+          "CLM-12",
+          "CLM-16",
+          "CLM-17",
+          "CLM-18"
+        ],
+        "sources": [
+          "SRC-02",
+          "SRC-06",
+          "SRC-19",
+          "SRC-20"
+        ],
+        "nodes": [
+          "turek",
+          "macinka",
+          "babis",
+          "nehoda2026",
+          "policie",
+          "nemocnice-homolce"
+        ],
+        "gaps": [
+          "GAP-01",
+          "GAP-02"
+        ]
+      },
+      {
+        "id": "kauza-2024-fotografie",
+        "label": "Kauza 2024: fotografie a sbírka svícnů",
+        "description": "Fotografie připomínající nacistický pozdrav a sbírka svícnů s hákovými kříži, kritizované před eurovolbami 2024.",
+        "claims": [
+          "CLM-04",
+          "CLM-05",
+          "CLM-06"
+        ],
+        "sources": [
+          "SRC-12",
+          "SRC-14"
+        ],
+        "nodes": [
+          "turek",
+          "macinka",
+          "kauza2024"
+        ],
+        "gaps": []
+      },
+      {
+        "id": "smazane-prispevky",
+        "label": "Smazané příspěvky na Facebooku",
+        "description": "Deník N zveřejnil údajné smazané příspěvky (10/2025); Turek autorství nejzávažnějších odmítá. Policie 28. 7. 2026 odložila prověřování i vzájemné trestní oznámení Motoristů na Deník N pro promlčení/beztrestnost — pravost samotných příspěvků tím zůstává neuzavřená.",
+        "claims": [
+          "CLM-07",
+          "CLM-08",
+          "CLM-09",
+          "CLM-19",
+          "CLM-41",
+          "CLM-42"
+        ],
+        "sources": [
+          "SRC-15",
+          "SRC-16",
+          "SRC-22",
+          "SRC-47",
+          "SRC-48"
+        ],
+        "nodes": [
+          "turek",
+          "kauza2025",
+          "policie"
+        ],
+        "gaps": [
+          "GAP-03"
+        ]
+      },
+      {
+        "id": "trestni-oznameni",
+        "label": "Trestní oznámení (domácí násilí, znásilnění)",
+        "description": "Nejzávažnější a právně nejcitlivější položka dossieru — viz AGENTS.md pro zvláštní pravidla zacházení. Odloženo pro promlčení; nejde o rozhodnutí ve věci.",
+        "claims": [
+          "CLM-25",
+          "CLM-26",
+          "CLM-27"
+        ],
+        "sources": [
+          "SRC-28",
+          "SRC-29",
+          "SRC-30",
+          "SRC-31"
+        ],
+        "nodes": [
+          "turek",
+          "trestniozn",
+          "statni-zastupitelstvi",
+          "policie"
+        ],
+        "gaps": [
+          "GAP-06"
+        ]
+      },
+      {
+        "id": "zapper-club",
+        "label": "Zapper Club a zdravotní tvrzení",
+        "description": "Turkova firma nabízela za pandemie přístroj zapper; Ministerstvo zdravotnictví varovalo, SZPI odebrala certifikát.",
+        "claims": [
+          "CLM-20",
+          "CLM-31"
+        ],
+        "sources": [
+          "SRC-23",
+          "SRC-34",
+          "SRC-35"
+        ],
+        "nodes": [
+          "turek",
+          "zapper-club",
+          "mzdrav",
+          "szpi"
+        ],
+        "gaps": []
+      },
+      {
+        "id": "financni-vazby",
+        "label": "Majetkové, podnikatelské a finanční vazby",
+        "description": "Firemní/spolkové vazby a dárcovské vztahy obou subjektů, doložené rejstříkovými daty (Hlídač státu) a investigativní žurnalistikou.",
+        "claims": [
+          "CLM-14",
+          "CLM-15",
+          "CLM-20",
+          "CLM-21",
+          "CLM-22",
+          "CLM-23",
+          "CLM-36",
+          "CLM-37",
+          "CLM-46",
+          "CLM-47",
+          "CLM-48"
+        ],
+        "sources": [
+          "SRC-17",
+          "SRC-18",
+          "SRC-23",
+          "SRC-24",
+          "SRC-26",
+          "SRC-41",
+          "SRC-42",
+          "SRC-55"
+        ],
+        "nodes": [
+          "macinka",
+          "turek",
+          "gmrgas",
+          "gmrgas-cz",
+          "vencalek",
+          "klubmotoristu",
+          "chlad"
+        ],
+        "gaps": [
+          "GAP-04",
+          "GAP-05",
+          "GAP-07"
+        ]
+      },
+      {
+        "id": "dalsi-kontroverze",
+        "label": "Další zaznamenané kontroverze",
+        "description": "Menší rozsahem: incident u saúdské ambasády (2017), nepovolené stavby (2026), závodní kariéra, setkání s diplomaty.",
+        "claims": [
+          "CLM-28",
+          "CLM-29",
+          "CLM-30",
+          "CLM-32",
+          "CLM-33"
+        ],
+        "sources": [
+          "SRC-32",
+          "SRC-33",
+          "SRC-36",
+          "SRC-37"
+        ],
+        "nodes": [
+          "turek"
+        ],
+        "gaps": []
+      }
+    ],
+    "sourceFamilies": [
+      {
+        "id": "denik-n",
+        "label": "Deník N",
+        "sources": [
+          "SRC-14",
+          "SRC-15",
+          "SRC-47",
+          "SRC-52"
+        ]
+      },
+      {
+        "id": "hlidac-statu",
+        "label": "Hlídač státu",
+        "sources": [
+          "SRC-23",
+          "SRC-24",
+          "SRC-25",
+          "SRC-26",
+          "SRC-27",
+          "SRC-41"
+        ]
+      },
+      {
+        "id": "denik-cz-turek-ministr",
+        "label": "Deník.cz (ministerská nominace)",
+        "sources": [
+          "SRC-44",
+          "SRC-46",
+          "SRC-49"
+        ]
+      }
     ]
   },
   "contentBlocks": [

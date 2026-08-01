@@ -9,17 +9,10 @@ weight = 23
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-23"
 view_model = "generated/views/dossiers/igor-cerveny/sources/src-23.json"
-subjects = ["cerveny"]
 dossier = "igor-cerveny"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-23"
-outlet = "Blesk.cz"
-src_type = "zpravodajství"
-url = "https://www.blesk.cz/clanek/zpravy-politika/840615/prestavby-na-ministerstvu-za-3-miliony-turek-s-cervenym-si-vylepsuji-kancly.html"
-published = "2026-06-01"
-retrieved = "2026-07-30"
-claims = ["CLM-37", "CLM-38", "CLM-39", "CLM-40"]
 +++
 **Přestavby na ministerstvu za 3 miliony: Turek s Červeným si vylepšují kancly**
 

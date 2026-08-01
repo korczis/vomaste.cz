@@ -9,17 +9,10 @@ weight = 16
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-16"
 view_model = "generated/views/dossiers/adam-vojtech/sources/src-16.json"
-subjects = ["vojtech"]
 dossier = "adam-vojtech"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-16"
-outlet = "Zdravé zprávy"
-src_type = "zpravodajství"
-url = "https://www.zdravezpravy.cz/2026/07/10/defibrilator-sem-defibrilator-tam-kauza-fnol-pokracuje/"
-published = "2026-07-10"
-retrieved = "2026-07-30"
-claims = ["CLM-22"]
 +++
 **Defibrilátor sem, defibrilátor tam! Kauza FNOL pokračuje**
 

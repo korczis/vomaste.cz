@@ -9,17 +9,10 @@ weight = 20
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-20"
 view_model = "generated/views/dossiers/martin-sebestyan/sources/src-20.json"
-subjects = ["sebestyan"]
 dossier = "martin-sebestyan"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-20"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/ministr-sebestyan-predstavi-pozici-potravinoveho-ombudsmana-370731"
-published = "2026-02-26"
-retrieved = "2026-07-30"
-claims = ["CLM-41"]
 +++
 **Potravinový ombudsman Fialka má chránit spotřebitele, zemědělce i výrobce**
 

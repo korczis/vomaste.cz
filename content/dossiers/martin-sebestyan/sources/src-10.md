@@ -9,17 +9,10 @@ weight = 10
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-10"
 view_model = "generated/views/dossiers/martin-sebestyan/sources/src-10.json"
-subjects = ["sebestyan"]
 dossier = "martin-sebestyan"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-10"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/eu-rozhodla-o-dotacich-pro-agrofert-374228"
-published = "2026-06-04"
-retrieved = "2026-07-30"
-claims = ["CLM-21", "CLM-28", "CLM-29"]
 +++
 **EU potvrdila fondu, že postupuje správně při obnovení nárokových dotací pro Agrofert**
 

@@ -9,17 +9,10 @@ weight = 9
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-09"
 view_model = "generated/views/dossiers/karel-havlicek/sources/src-09.json"
-subjects = ["havlicek"]
 dossier = "karel-havlicek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-09"
-outlet = "FORUM 24"
-src_type = "komentář/názor"
-url = "https://www.forum24.cz/havlicek-chce-nejspis-znicit-nas-automobilovy-prumysl-pry-moc-nespi-ale-elektromobilitu-zaspal"
-published = "2026-07-15"
-retrieved = "2026-07-30"
-claims = ["CLM-15", "CLM-18"]
 +++
 **Havlíček chce nejspíš zničit náš automobilový průmysl. Prý moc nespí, ale elektromobilitu zaspal**
 

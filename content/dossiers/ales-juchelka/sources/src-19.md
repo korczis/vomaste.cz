@@ -9,17 +9,10 @@ weight = 19
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-19"
 view_model = "generated/views/dossiers/ales-juchelka/sources/src-19.json"
-subjects = ["juchelka"]
 dossier = "ales-juchelka"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-19"
-outlet = "Česká televize (ČT24)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/cesko-neprijde-o-zadne-finance-tvrdi-juchelka-o-kauze-se-stretem-zajmu-376012"
-published = "2026-07-27"
-retrieved = "2026-07-30"
-claims = ["CLM-25", "CLM-28", "CLM-29", "CLM-31", "CLM-32"]
 +++
 **Česko nepřijde o žádné finance, tvrdí Juchelka o kauze se střetem zájmů**
 

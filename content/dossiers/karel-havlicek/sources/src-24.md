@@ -9,17 +9,10 @@ weight = 24
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-24"
 view_model = "generated/views/dossiers/karel-havlicek/sources/src-24.json"
-subjects = ["havlicek"]
 dossier = "karel-havlicek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-24"
-outlet = "ČKAIT (Česká komora autorizovaných inženýrů a techniků)"
-src_type = "oficiální primární zdroj"
-url = "https://www.ckait.cz/snemovni-tisk-67-novela-stavebniho-zakona"
-published = "2026-01-29"
-retrieved = "2026-07-30"
-claims = ["CLM-38"]
 +++
 **Sněmovní tisk 67 — novela stavebního zákona (stanovisko ČKAIT)**
 

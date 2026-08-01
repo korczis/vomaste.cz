@@ -9,17 +9,10 @@ weight = 7
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-07"
 view_model = "generated/views/dossiers/karel-havlicek/sources/src-07.json"
-subjects = ["havlicek"]
 dossier = "karel-havlicek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-07"
-outlet = "Česká justice"
-src_type = "zpravodajství"
-url = "https://www.ceska-justice.cz/2026/03/havlicek-stavebni-zakon-ods-kritika/"
-published = "2026-03-09"
-retrieved = "2026-07-30"
-claims = ["CLM-10", "CLM-12", "CLM-13", "CLM-14"]
 +++
 **Havlíček slibuje rychlejší stavění bytů. ODS varuje před uspěchanými pravidly**
 

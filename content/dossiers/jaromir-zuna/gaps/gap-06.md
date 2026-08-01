@@ -9,14 +9,10 @@ weight = 6
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jaromir-zuna/gaps/GAP-06"
 view_model = "generated/views/dossiers/jaromir-zuna/gaps/gap-06.json"
-subjects = ["zuna"]
 dossier = "jaromir-zuna"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-06"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Není doloženo, že vláda ke dni rešerše (30. 7. 2026) Koncepci výstavby AČR 2040 formálně schválila.
 

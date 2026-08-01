@@ -9,14 +9,10 @@ weight = 1
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/richard-chlad/gaps/GAP-01"
 view_model = "generated/views/dossiers/richard-chlad/gaps/gap-01.json"
-subjects = ["chlad"]
 dossier = "richard-chlad"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-01"
-priority = "vysoká"
-checked = "2026-07-30"
-claims = ["CLM-01", "CLM-02", "CLM-03", "CLM-04"]
 +++
 V citovaných zdrojích figurují čtyři různá čísla:
 

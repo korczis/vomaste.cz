@@ -9,17 +9,10 @@ weight = 18
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-18"
 view_model = "generated/views/dossiers/martin-sebestyan/sources/src-18.json"
-subjects = ["sebestyan"]
 dossier = "martin-sebestyan"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-18"
-outlet = "FORUM 24"
-src_type = "zpravodajství"
-url = "https://www.forum24.cz/pouze-symbolicka-ctvrt-miliarda-ministr-sebestyan-nahral-agrofertu-dalsi-dotace"
-published = "2026-02-19"
-retrieved = "2026-07-30"
-claims = ["CLM-38", "CLM-39"]
 +++
 **Pouze symbolická čtvrt miliarda. Ministr Šebestyán nahrál Agrofertu další dotace**
 

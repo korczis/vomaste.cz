@@ -9,17 +9,10 @@ weight = 33
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-33"
 view_model = "generated/views/dossiers/adam-vojtech/sources/src-33.json"
-subjects = ["vojtech"]
 dossier = "adam-vojtech"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-33"
-outlet = "Report.cz"
-src_type = "regionální zpravodajství"
-url = "https://www.report.cz/olomouc-fnol-policie-kardiostimulator-kauza"
-published = "2026-02-12"
-retrieved = "2026-07-31"
-claims = ["CLM-08"]
 +++
 Report.cz cituje ministra Vojtěcha: řediteli FN Olomouc Romanu Havlíkovi
 „uložil, aby zprovoznil informační linku, na které pacienti s

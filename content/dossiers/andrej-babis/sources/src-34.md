@@ -9,17 +9,10 @@ weight = 34
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-34"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-34.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-34"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/statni-zastupce-obzaloval-pekarnu-pod-agrofertem-a-dva-lidi-kvuli-dotacim-na-inovacni-linku-374836"
-published = "2026-06-22"
-retrieved = "2026-08-01"
-claims = ["CLM-57", "CLM-58", "CLM-59"]
 +++
 ČT24 informuje, že státní zástupce Adam Bašný z Úřadu evropského
 veřejného žalobce (EPPO) podal 22. 6. 2026 ke Krajskému soudu v Praze

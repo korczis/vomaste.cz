@@ -9,14 +9,10 @@ weight = 7
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/robert-plaga/gaps/GAP-07"
 view_model = "generated/views/dossiers/robert-plaga/gaps/gap-07.json"
-subjects = ["plaga"]
 dossier = "robert-plaga"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-07"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Není doloženo, zda a v jaké podobě se plošné testování žáků 5. a 9. tříd bude opakovat ve školním roce 2026/2027.
 

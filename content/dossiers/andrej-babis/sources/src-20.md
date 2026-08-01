@@ -9,17 +9,10 @@ weight = 20
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-20"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-20.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-20"
-outlet = "Transparency International ČR"
-src_type = "stanovisko organizace"
-url = "https://www.transparency.cz/evropska-komise-uzavrela-auditni-proces-tykajici-se-stretu-zajmu-andreje-babise-potvrzuje-tak-opet-zavery-transparency/"
-published = "2022-07-26"
-retrieved = "2026-07-30"
-claims = ["CLM-46"]
 +++
 Stanovisko nevládní organizace, která auditní proces v roce 2018 podnětem
 iniciovala.

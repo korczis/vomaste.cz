@@ -9,17 +9,10 @@ weight = 3
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-03"
 view_model = "generated/views/dossiers/boris-stastny/sources/src-03.json"
-subjects = ["stastny"]
 dossier = "boris-stastny"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-03"
-outlet = "ČeskéNoviny.cz (ČTK)"
-src_type = "zpravodajství"
-url = "https://www.ceskenoviny.cz/zpravy/na-uradu-vlady-se-naslo-nahravaci-zarizeni-stastny-uvedl-ze-patrilo-jemu/2849515"
-published = "2026-07-10"
-retrieved = "2026-07-30"
-claims = ["CLM-02", "CLM-06", "CLM-07", "CLM-09", "CLM-10", "CLM-12", "CLM-16"]
 +++
 **Na úřadu vlády se našlo nahrávací zařízení, Šťastný uvedl, že patřilo jemu**
 

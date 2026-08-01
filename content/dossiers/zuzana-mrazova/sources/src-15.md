@@ -9,17 +9,10 @@ weight = 15
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-15"
 view_model = "generated/views/dossiers/zuzana-mrazova/sources/src-15.json"
-subjects = ["mrazova"]
 dossier = "zuzana-mrazova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-15"
-outlet = "Seznam Zprávy"
-src_type = "zpravodajství"
-url = "https://www.seznamzpravy.cz/clanek/domaci-kauzy-ministryne-mrazova-ma-na-pozemku-cerne-stavby-a-ted-chce-menit-pravidla-305091"
-published = "2026-04-30"
-retrieved = "2026-07-30"
-claims = ["CLM-35", "CLM-36", "CLM-39", "CLM-42", "CLM-46", "CLM-50"]
 +++
 **Ministryně Mrázová má na pozemku černé stavby. A teď chce měnit pravidla**
 

@@ -14,6 +14,7 @@
   "subject": "juchelka",
   "language": "cs",
   "navigationVisible": true,
+  "order": 8,
   "updated": "2026-07-30",
   "reviewedAt": "2026-07-30",
   "authorization": {
@@ -23,6 +24,71 @@
   },
   "seo": {
     "seoType": "ProfilePage"
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "juchelka",
+        "label": "Aleš Juchelka",
+        "subject": true,
+        "claims": [
+          "CLM-01",
+          "CLM-23",
+          "CLM-24",
+          "CLM-25",
+          "CLM-26",
+          "CLM-27",
+          "CLM-28",
+          "CLM-29",
+          "CLM-30",
+          "CLM-31",
+          "CLM-32",
+          "CLM-33",
+          "CLM-34",
+          "CLM-35",
+          "CLM-36",
+          "CLM-37",
+          "CLM-38",
+          "CLM-39",
+          "CLM-40",
+          "CLM-41",
+          "CLM-42",
+          "CLM-43",
+          "CLM-44",
+          "CLM-45",
+          "CLM-46"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-14",
+          "SRC-10",
+          "SRC-11",
+          "SRC-19",
+          "SRC-05",
+          "SRC-09",
+          "SRC-02",
+          "SRC-15",
+          "SRC-24",
+          "SRC-25",
+          "SRC-12",
+          "SRC-27",
+          "SRC-28"
+        ]
+      },
+      {
+        "entity": "vlada",
+        "label": "Vláda ČR",
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01"
+        ]
+      }
+    ],
+    "edges": [
+      "edge-juchelka-vlada"
+    ]
   },
   "contentBlocks": [
     {

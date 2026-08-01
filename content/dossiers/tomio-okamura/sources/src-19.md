@@ -9,17 +9,10 @@ weight = 19
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-19"
 view_model = "generated/views/dossiers/tomio-okamura/sources/src-19.json"
-subjects = ["okamura"]
 dossier = "tomio-okamura"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-19"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/poslanci-projednaji-zadosti-o-babisovo-a-okamurovo-vydani-k-trestnimu-stihani-370974"
-published = "2026-03-05"
-retrieved = "2026-07-30"
-claims = ["CLM-28", "CLM-29"]
 +++
 **Sněmovna nevydala Babiše a Okamuru k trestnímu stíhání**
 

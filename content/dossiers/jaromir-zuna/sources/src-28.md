@@ -9,17 +9,10 @@ weight = 28
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-28"
 view_model = "generated/views/dossiers/jaromir-zuna/sources/src-28.json"
-subjects = ["zuna"]
 dossier = "jaromir-zuna"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-28"
-outlet = "Echo24"
-src_type = "zpravodajství"
-url = "https://www.echo24.cz/a/HdZvC/zpravy-svet-prezident-pavel-jmenoval-noveho-sefa-generalniho-stabu"
-published = "2026-06-30"
-retrieved = "2026-07-30"
-claims = ["CLM-20", "CLM-21", "CLM-27", "CLM-28"]
 +++
 **Petr Pavel jmenoval nového náčelníka generálního štábu. Je jím Miroslav Hlaváč**
 

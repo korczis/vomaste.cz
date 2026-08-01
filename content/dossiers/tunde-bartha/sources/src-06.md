@@ -9,17 +9,10 @@ weight = 6
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-06"
 view_model = "generated/views/dossiers/tunde-bartha/sources/src-06.json"
-subjects = ["bartha"]
 dossier = "tunde-bartha"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-06"
-outlet = "Vláda České republiky (vlada.gov.cz)"
-src_type = "oficiální primární zdroj"
-url = "https://vlada.gov.cz/scripts/detail.php?id=224164&tmplid=50"
-published = "2025-12-15"
-retrieved = "2026-08-01"
-claims = ["CLM-09"]
 +++
 Tisková zpráva Úřadu vlády z ustavující schůze vlády 15. prosince 2025:
 „Vláda také jmenovala novou vedoucí Úřadu vlády. Stala se jí Tünde

@@ -9,17 +9,10 @@ weight = 11
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-11"
 view_model = "generated/views/dossiers/karel-havlicek/sources/src-11.json"
-subjects = ["havlicek"]
 dossier = "karel-havlicek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-11"
-outlet = "Ministerstvo průmyslu a obchodu (MPO)"
-src_type = "oficiální primární zdroj"
-url = "https://mpo.gov.cz/cz/rozcestnik/pro-media/tiskove-zpravy/mpo-pristoupi-k-odneti-dotace-pro-pekarnu-zelena-louka--266490/"
-published = "2022-03-21"
-retrieved = "2026-07-30"
-claims = ["CLM-19", "CLM-20"]
 +++
 **MPO přistoupí k odnětí dotace pro Pekárnu Zelená louka**
 

@@ -9,18 +9,10 @@ weight = 23
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-23"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-23.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-23"
-outlet = "Deník.cz (VLTAVA LABE MEDIA)"
-family = "ctk"
-src_type = "agenturní zpravodajství"
-url = "https://www.denik.cz/krimi/capi-hnizdo-andrej-babis-rozsudek-20230109.html"
-published = "2023-01-09"
-retrieved = "2026-07-30"
-claims = ["CLM-49", "CLM-50"]
 +++
 Zpráva ČTK publikovaná Deníkem k prvnímu rozsudku v kauze.
 **Co dokládá:** předmět kauzy — padesátimilionovou dotaci na výstavbu

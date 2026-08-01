@@ -9,17 +9,10 @@ weight = 32
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-32"
 view_model = "generated/views/dossiers/karel-havlicek/sources/src-32.json"
-subjects = ["havlicek"]
 dossier = "karel-havlicek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-32"
-outlet = "CNN Prima News"
-src_type = "zpravodajství"
-url = "https://cnn.iprima.cz/policie-navrhla-obzalovat-pekarnu-patrici-pod-agrofert-mela-zneuzivat-stamilionovych-dotaci-514192"
-published = "2026-06-08"
-retrieved = "2026-07-31"
-claims = ["CLM-22"]
 +++
 CNN Prima News dne 8. 6. 2026: „Národní centrála proti organizovanému
 zločinu (NCOZ) otevřela vyšetřování případu v říjnu 2024. Tehdy

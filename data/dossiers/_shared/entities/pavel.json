@@ -21,5 +21,22 @@
   "routeAliases": [
     "/dossiers/macinka-turek/entities/pavel/"
   ],
-  "order": 8
+  "order": 8,
+  "provenance": {
+    "discoveredAt": "2026-07-29",
+    "discoveredVia": [
+      "edge-pavel-mzp2026",
+      "edge-turek-pavel"
+    ],
+    "claimRefs": [
+      "CLM-38",
+      "CLM-01"
+    ],
+    "sourceRefs": [
+      "SRC-44",
+      "SRC-01",
+      "SRC-02"
+    ],
+    "depth": 0
+  }
 }

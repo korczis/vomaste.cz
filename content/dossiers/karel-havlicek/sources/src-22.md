@@ -9,17 +9,10 @@ weight = 22
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-22"
 view_model = "generated/views/dossiers/karel-havlicek/sources/src-22.json"
-subjects = ["havlicek"]
 dossier = "karel-havlicek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-22"
-outlet = "Právní prostor"
-src_type = "zpravodajství"
-url = "https://www.pravniprostor.cz/aktuality/o-obnoveni-eet-nebo-stavebnim-zakonu-bude-senat-jednat-od-19-srpna"
-published = "2026-07-22"
-retrieved = "2026-07-30"
-claims = ["CLM-30", "CLM-37"]
 +++
 **O obnovení EET nebo stavebním zákonu bude Senát jednat od 19. srpna**
 

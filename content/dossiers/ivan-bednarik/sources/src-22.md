@@ -9,17 +9,10 @@ weight = 22
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-22"
 view_model = "generated/views/dossiers/ivan-bednarik/sources/src-22.json"
-subjects = ["bednarik"]
 dossier = "ivan-bednarik"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-22"
-outlet = "eLogistika.info"
-src_type = "zpravodajství"
-url = "https://www.elogistika.info/sprava-zeleznic-ma-podle-rozpoctu-sfdi-zpomalit-pripravy-neprioritnich-projektu/"
-published = "2026-01-29"
-retrieved = "2026-07-30"
-claims = ["CLM-12", "CLM-29", "CLM-30"]
 +++
 **Správa železnic má podle rozpočtu SFDI zpomalit přípravy neprioritních projektů**
 

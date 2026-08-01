@@ -20,6 +20,20 @@
     "/dossiers/ivan-bednarik/entities/ceske-drahy/"
   ],
   "order": 3,
+  "provenance": {
+    "discoveredAt": "2026-07-31",
+    "discoveredVia": [
+      "edge-bednarik-ceske-drahy"
+    ],
+    "claimRefs": [
+      "CLM-02"
+    ],
+    "sourceRefs": [
+      "SRC-02",
+      "SRC-29"
+    ],
+    "depth": 1
+  },
   "content": [
     {
       "type": "markdown",

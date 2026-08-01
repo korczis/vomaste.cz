@@ -9,17 +9,10 @@ weight = 29
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-29"
 view_model = "generated/views/dossiers/ivan-bednarik/sources/src-29.json"
-subjects = ["bednarik"]
 dossier = "ivan-bednarik"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-29"
-outlet = "Deník.cz (VLTAVA LABE MEDIA)"
-src_type = "zpravodajství"
-url = "https://www.denik.cz/ekonomika/ceske-drahy-ivan-bednarik-20220215.html"
-published = "2022-02-15"
-retrieved = "2026-07-31"
-claims = ["CLM-02"]
 +++
 Deník.cz dne 15. 2. 2022: „Bednárik byl předsedou představenstva a
 generálním ředitelem ČD od prosince 2020, kdy v čele společnosti

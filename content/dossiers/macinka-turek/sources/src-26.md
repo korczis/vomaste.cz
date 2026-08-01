@@ -10,17 +10,10 @@ aliases = ["/dossier/zdroje/src-26/"]
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-26"
 view_model = "generated/views/dossiers/macinka-turek/sources/src-26.json"
-subjects = ["macinka"]
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-26"
-outlet = "Hlídač státu"
-family = "hlidac-statu"
-src_type = "veřejný rejstřík / transparentní databáze"
-url = "https://www.hlidacstatu.cz/Osoba/Sponzoring/petr-macinka"
-retrieved = "2026-07-22"
-claims = ["CLM-23"]
 +++
 Stejná kategorie dat jako SRC-25 (zákonem vyžadované zveřejnění dárců
 politických stran, agregováno Hlídačem státu). U Petra Macinky:

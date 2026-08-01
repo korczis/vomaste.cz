@@ -10,10 +10,6 @@ view_model = "generated/views/dossiers/filip-turek/gaps-index.json"
 dossier = "filip-turek"
 lang = "cs"
 seo_type = "CollectionPage"
-dossier_title = "Filip Turek"
-canonical_dossier = "macinka-turek"
-subject = "turek"
-registry = "gaps"
 +++
 Filtrovaný pohled na [registr mezer](@/dossiers/macinka-turek/gaps/_index.md) — jen otevřené otázky týkající se Filipa Turka.
 

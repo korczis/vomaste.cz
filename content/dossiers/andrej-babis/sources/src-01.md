@@ -9,17 +9,10 @@ weight = 1
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-01"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-01.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-01"
-outlet = "Česká justice"
-src_type = "odborné právní zpravodajství"
-url = "https://www.ceska-justice.cz/2025/06/babis-je-vinen-trva-na-svem-zalobce-obhajce-varuje-pred-porusenim-ustavy/"
-published = "2025-06-23"
-retrieved = "2026-07-30"
-claims = ["CLM-01", "CLM-02", "CLM-03"]
 +++
 Česká justice dne 23. 6. 2025 informovala, že Vrchní soud v Praze zrušil
 zprošťující rozsudek Městského soudu v Praze z února 2024 nad Andrejem

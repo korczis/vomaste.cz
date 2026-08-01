@@ -9,17 +9,10 @@ weight = 31
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-31"
 view_model = "generated/views/dossiers/igor-cerveny/sources/src-31.json"
-subjects = ["cerveny"]
 dossier = "igor-cerveny"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-31"
-outlet = "Ekonews"
-src_type = "zpravodajství"
-url = "https://www.ekonews.cz/oddeleni-klimaticke-politiky-a-green-dealu-povede-expert-na-auta-a-turkuv-clovek/"
-published = "2026-06-15"
-retrieved = "2026-07-30"
-claims = ["CLM-44", "CLM-45", "CLM-46"]
 +++
 **Oddělení klimatické politiky a Green Dealu povede expert na auta a Turkův člověk**
 

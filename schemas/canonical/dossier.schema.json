@@ -40,7 +40,12 @@
     },
     "navigationVisible": {
       "type": "boolean",
-      "$comment": "Dnešní show_in_primary_navigation z data/dossiers.toml."
+      "$comment": "Dřívější show_in_primary_navigation (registr dossierů byl do fáze H data/dossiers.toml; od fáze H je registrem kanonický dataset sám)."
+    },
+    "order": {
+      "type": "integer",
+      "minimum": 1,
+      "$comment": "Redakční pořadí registru dossierů (fáze H, aditivní): historické autorizační pořadí bloků dřívějšího data/dossiers.toml. Není derivovatelné z ničeho jiného — bez něj by exporty a landing sekce nemohly reprodukovat dnešní pořadí. Stejný term vomaste:order jako u ostatních záznamů."
     },
     "coverageState": { "$ref": "_defs.schema.json#/$defs/coverageState" },
     "updated": { "$ref": "_defs.schema.json#/$defs/isoDate" },
@@ -71,6 +76,68 @@
       }
     },
     "contentBlocks": { "$ref": "_defs.schema.json#/$defs/contentBlocks" },
+    "graph": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["nodes", "edges"],
+      "$comment": "Kurátorovaná grafová vrstva dossieru (fáze H — dřívější data/dossiers/<slug>/graph.toml). Hrany jsou kanonické relation záznamy; tady žije jen to, co relation/entity záznamy nenesou: per-dossier popisky uzlů, kurátorské pořadí, clustery a rodiny zdrojů. Hloubka (depth) se NEukládá — počítá se deterministicky BFS od subjektových uzlů (scripts/data/lib/graph-depth.mjs). Typ uzlu se NEukládá — je to entityType globální entity. Referenční integritu vlastní validate-references (R7), redakční pravidla validate-semantics (S7/S8).",
+      "properties": {
+        "nodes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["entity", "label"],
+            "properties": {
+              "entity": { "$ref": "_defs.schema.json#/$defs/entityId" },
+              "label": { "type": "string", "minLength": 1, "$comment": "Per-dossier prezentační popisek uzlu (např. „Andrej Babiš (premiér)“) — globální entita má jeden title, graf dossieru kontextový popisek." },
+              "subject": { "const": true, "$comment": "Jen u subjektových uzlů — soulad s autorizovanými subjekty dossieru vynucuje validate-semantics S7." },
+              "cluster": { "type": "string", "minLength": 1 },
+              "summary": { "type": "string", "minLength": 1 },
+              "claims": { "type": "array", "items": { "$ref": "_defs.schema.json#/$defs/clmId" }, "$comment": "LOKÁLNÍ CLM-## id v namespace tohoto dossieru (kurátorovaná membership uzlu, ne unie vazeb z relations)." },
+              "sources": { "type": "array", "items": { "$ref": "_defs.schema.json#/$defs/srcId" } }
+            }
+          },
+          "$comment": "Pořadí pole = kurátorské pořadí uzlů (stabilita layoutu — dřívější pořadí [[nodes]] bloků)."
+        },
+        "edges": {
+          "type": "array",
+          "items": { "$ref": "_defs.schema.json#/$defs/edgeId" },
+          "$comment": "Kurátorské POŘADÍ hran — identifikátory kanonických relation záznamů tohoto dossieru, 1:1 (úplnost vynucuje validate-references R7). Data hran nesou relations; tohle je jen pořadí (relation.order nese pořadí VÝPISŮ, které se od grafového pořadí historicky liší — macinka-turek)."
+        },
+        "clusters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "label"],
+            "properties": {
+              "id": { "type": "string", "minLength": 1 },
+              "label": { "type": "string", "minLength": 1 },
+              "description": { "type": "string", "minLength": 1 },
+              "claims": { "type": "array", "items": { "$ref": "_defs.schema.json#/$defs/clmId" } },
+              "sources": { "type": "array", "items": { "$ref": "_defs.schema.json#/$defs/srcId" } },
+              "nodes": { "type": "array", "items": { "$ref": "_defs.schema.json#/$defs/entityId" } },
+              "gaps": { "type": "array", "items": { "$ref": "_defs.schema.json#/$defs/gapId" } }
+            }
+          }
+        },
+        "sourceFamilies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "sources"],
+            "properties": {
+              "id": { "type": "string", "minLength": 1 },
+              "label": { "type": "string", "minLength": 1 },
+              "sources": { "type": "array", "items": { "$ref": "_defs.schema.json#/$defs/srcId" } }
+            }
+          }
+        }
+      }
+    },
     "aggregates": {
       "type": "array",
       "items": { "$ref": "_defs.schema.json#/$defs/slug" },

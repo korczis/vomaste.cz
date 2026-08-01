@@ -9,17 +9,10 @@ weight = 44
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-44"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-44.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-44"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/ustavni-soud-odmitl-stiznost-vodnanske-drubeze-kvuli-nevyplacenym-dotacim-369579"
-published = "2026-01-23"
-retrieved = "2026-08-01"
-claims = ["CLM-66", "CLM-67"]
 +++
 ČT24 informuje, že Ústavní soud odmítl stížnost společnosti Vodňanská
 drůbež ze skupiny Agrofert, která nesouhlasila se zamítnutím

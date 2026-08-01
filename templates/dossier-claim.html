@@ -93,16 +93,13 @@
   {% endif %}
 
   {% if record.subjects %}
-  {% set registry = load_data(path="data/dossiers.toml") %}
+  {#- Subjekt → dossier subjektu jde z view modelu
+      (resolved.subjectDossiers ← kanonický registr, T-028 fáze H). -#}
   <section class="mb-8" aria-labelledby="clm-subj-h">
     <h2 id="clm-subj-h" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Subjekty</h2>
     <p class="flex flex-wrap gap-2">
-      {% for subj in record.subjects %}
-        {% for d in registry.dossiers %}
-          {% if d.subject is defined and d.subject == subj %}
-          <a href="{{ get_url(path='@/dossiers/' ~ d.slug ~ '/_index.md') | safe }}" class="inline-block rounded-lg border border-white/15 px-3 py-1.5 text-sm text-white/80 no-underline hover:border-white/40 hover:text-white">{{ d.title }} →</a>
-          {% endif %}
-        {% endfor %}
+      {% for d in view.resolved.subjectDossiers | default(value=[]) %}
+      <a href="{{ get_url(path='@/dossiers/' ~ d.slug ~ '/_index.md') | safe }}" class="inline-block rounded-lg border border-white/15 px-3 py-1.5 text-sm text-white/80 no-underline hover:border-white/40 hover:text-white">{{ d.title }} →</a>
       {% endfor %}
     </p>
   </section>

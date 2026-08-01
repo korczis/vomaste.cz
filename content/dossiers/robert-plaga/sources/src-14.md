@@ -9,17 +9,10 @@ weight = 14
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-14"
 view_model = "generated/views/dossiers/robert-plaga/sources/src-14.json"
-subjects = ["plaga"]
 dossier = "robert-plaga"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-14"
-outlet = "Učitelské noviny"
-src_type = "zpravodajství"
-url = "https://www.ucitelskenoviny.cz/plaga-zastavil-testovani-na-zs-kvuli-spatne-komunikaci-a-technickym-potizim"
-published = "2026-05-26"
-retrieved = "2026-07-30"
-claims = ["CLM-22", "CLM-23", "CLM-24"]
 +++
 **Plaga zastavil testování na ZŠ kvůli špatné komunikaci a technickým potížím**
 

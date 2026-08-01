@@ -37,23 +37,31 @@ import { getCompiledModel, localIds, localPart, recordsOf } from "./compiled-mod
 // adresáře (tabulka/seznam/dlaždice) byly opravdu projekcemi týchž dat.
 // Routy se ČTOU z navigačního manifestu, neskládají se z řetězců: manifest
 // je kanonický a při přejmenování registru se změní na jednom místě.
-const num = (b, k) => {
-  const m = b.match(new RegExp(`^${k}\\s*=\\s*(\\d+)`, "m"));
-  return m ? Number(m[1]) : 0;
-};
 const str = (b, k) => (b.match(new RegExp(`^${k}\\s*=\\s*"((?:[^"\\\\]|\\\\.)*)"`, "m")) ?? [])[1]?.replace(/\\(.)/g, "$1") ?? null;
 
+/*
+ * Viditelné počty dossieru přímo z compiled modelu (T-028 fáze H —
+ * dřívější data/dossiers/<slug>/stats.toml zaniklo): entity VIEW
+ * (canonicalDossier != slug) filtruje záznamy kanonického vlastníka podle
+ * subject taggingu; entities = globální entity s členstvím v dossieru.
+ */
 export function readDossierStats(root, slug) {
-  const file = join(root, "data/dossiers", slug, "stats.toml");
-  if (!existsSync(file)) return null;
-  const b = readFileSync(file, "utf8");
+  const compiled = getCompiledModel(root);
+  const record = compiled.records.find((w) => w.registry === "dossier" && w.dossier === slug)?.record;
+  if (!record) return null;
+  const isView = record.canonicalDossier && record.canonicalDossier !== slug;
+  const owner = isView ? record.canonicalDossier : slug;
+  const visible = (registry) => {
+    const rows = recordsOf(compiled, owner, registry);
+    return isView ? rows.filter((w) => (w.record.subjects ?? []).includes(record.subject)) : rows;
+  };
   return {
-    claims: num(b, "claims_total"),
-    sources: num(b, "sources_total"),
-    cases: num(b, "cases_total"),
-    gaps: num(b, "gaps_total"),
-    entities: num(b, "entities_total"),
-    relations: num(b, "relations_total"),
+    claims: visible("claims").length,
+    sources: visible("sources").length,
+    cases: visible("cases").length,
+    gaps: visible("gaps").length,
+    entities: compiled.entities.filter((w) => (w.record.dossiers ?? []).includes(slug)).length,
+    relations: visible("relations").length,
   };
 }
 

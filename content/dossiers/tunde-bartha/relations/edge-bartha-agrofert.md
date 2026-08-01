@@ -10,13 +10,7 @@ record_id = "https://vomaste.cz/id/dossiers/tunde-bartha/relations/edge-bartha-a
 view_model = "generated/views/dossiers/tunde-bartha/relations/edge-bartha-agrofert.json"
 dossier = "tunde-bartha"
 record_type = "relation"
+lang = "cs"
 rel_id = "edge-bartha-agrofert"
-source = "bartha"
-target = "agrofert"
-relation_type = "HOLDS_ROLE"
-label = "business development manager (dle zpravodajství, potvrzeno mluvčím); firemní web 9/2024: country managerka AGROFERT Hungária"
-status = "contextual"
-claims = ["CLM-06", "CLM-13"]
-sources = ["SRC-03", "SRC-09"]
 +++
 Kontextový, strukturální vztah — dossier jej neuvádí jako vlastní doloženou investigaci, jen jako veřejně nesporné pozadí.

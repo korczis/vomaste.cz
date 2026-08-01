@@ -9,17 +9,10 @@ weight = 20
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-20"
 view_model = "generated/views/dossiers/jeronym-tejc/sources/src-20.json"
-subjects = ["tejc"]
 dossier = "jeronym-tejc"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-20"
-outlet = "Echo24"
-src_type = "zpravodajství"
-url = "https://m.echo24.cz/a/HbqVH/deti-ochrana-viktorka-ospod-komise-mpsv-juchelka-marvanova-tejc-legislativa-benes-detsky-ombudsman"
-published = "2026-05-20"
-retrieved = "2026-07-30"
-claims = ["CLM-39", "CLM-40"]
 +++
 **Komise řeší smrt Viktorky, žádá citlivý přístup. Ombudsman dětí promluvil o chybách systému**
 

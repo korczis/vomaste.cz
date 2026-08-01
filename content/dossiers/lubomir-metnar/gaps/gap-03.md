@@ -9,14 +9,10 @@ weight = 3
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/lubomir-metnar/gaps/GAP-03"
 view_model = "generated/views/dossiers/lubomir-metnar/gaps/gap-03.json"
-subjects = ["metnar"]
 dossier = "lubomir-metnar"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-03"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Nepodařilo se ověřit počet policistů ochranné služby, kteří sídlo NKÚ dosud střeží, ani vyčíslení úspory na straně státu či policie.
 

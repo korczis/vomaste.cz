@@ -9,17 +9,10 @@ weight = 20
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-20"
 view_model = "generated/views/dossiers/oto-klempir/sources/src-20.json"
-subjects = ["klempir"]
 dossier = "oto-klempir"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-20"
-outlet = "Médiář"
-src_type = "zpravodajství"
-url = "https://www.mediar.cz/poplatky-letos-skonci-pak-ct-a-cesky-rozhlas-dostanou-miliardy-ze-statniho-rozpoctu/"
-published = "2026-06-15"
-retrieved = "2026-07-30"
-claims = ["CLM-07", "CLM-08", "CLM-10", "CLM-16"]
 +++
 **Poplatky letos skončí. Pak ČT a Český rozhlas dostanou miliardy ze státního rozpočtu**
 

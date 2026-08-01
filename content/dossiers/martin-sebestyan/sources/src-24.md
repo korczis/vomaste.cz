@@ -9,17 +9,10 @@ weight = 24
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-24"
 view_model = "generated/views/dossiers/martin-sebestyan/sources/src-24.json"
-subjects = ["sebestyan"]
 dossier = "martin-sebestyan"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-24"
-outlet = "Ministerstvo zemědělství ČR"
-src_type = "oficiální primární zdroj"
-url = "https://mze.gov.cz/public/portal/mze/tiskovy-servis/tiskove-zpravy/ministerstvo-zemedelstvi-kontrola-nejvyssiho-kontrolniho-uradu-nezjistila-chyby-pri-vyplaceni-dotaci-a-kontrolach-jejich-vyuziti"
-published = "2024-03-18"
-retrieved = "2026-07-30"
-claims = ["CLM-35"]
 +++
 **Ministerstvo zemědělství: Kontrola Nejvyššího kontrolního úřadu nezjistila chyby při vyplácení dotací a kontrolách jejich využití**
 

@@ -9,17 +9,10 @@ weight = 4
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-04"
 view_model = "generated/views/dossiers/jaromir-zuna/sources/src-04.json"
-subjects = ["zuna"]
 dossier = "jaromir-zuna"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-04"
-outlet = "Ekonomický deník"
-src_type = "zpravodajství"
-url = "https://ekonomickydenik.cz/vlada-vydaje-obrana-zuna-2-procenta/"
-published = "2026-01-26"
-retrieved = "2026-07-30"
-claims = ["CLM-02", "CLM-03"]
 +++
 **Babišova vláda přiškrtí výdaje na obranu. Zůna chce 2 procenta dodržet**
 

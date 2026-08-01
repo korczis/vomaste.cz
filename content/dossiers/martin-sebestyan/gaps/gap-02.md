@@ -9,14 +9,10 @@ weight = 2
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/martin-sebestyan/gaps/GAP-02"
 view_model = "generated/views/dossiers/martin-sebestyan/gaps/gap-02.json"
-subjects = ["sebestyan"]
 dossier = "martin-sebestyan"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-02"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Rozhovor HN s exministrem Nekulou je za paywallem — přečteno bylo jen cca 20 % (úvod).
 

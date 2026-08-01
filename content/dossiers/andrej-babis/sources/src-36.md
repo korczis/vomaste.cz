@@ -9,17 +9,10 @@ weight = 36
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-36"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-36.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-36"
-outlet = "Ministerstvo průmyslu a obchodu (MPO)"
-src_type = "oficiální primární zdroj"
-url = "https://mpo.gov.cz/cz/rozcestnik/pro-media/tiskove-zpravy/mpo-pristoupi-k-odneti-dotace-pro-pekarnu-zelena-louka--266490/"
-published = "2022-03-21"
-retrieved = "2026-08-01"
-claims = ["CLM-55"]
 +++
 Tisková zpráva Ministerstva průmyslu a obchodu oznamuje, že resort
 přistoupí k odnětí dotace na projekt „Inovační linka na výrobu

@@ -9,14 +9,10 @@ weight = 11
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/lubomir-metnar/gaps/GAP-11"
 view_model = "generated/views/dossiers/lubomir-metnar/gaps/gap-11.json"
-subjects = ["metnar"]
 dossier = "lubomir-metnar"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-11"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Žádné tvrzení k této kauze nemá status CORROBORATED, přestože ji přineslo několik titulů.
 

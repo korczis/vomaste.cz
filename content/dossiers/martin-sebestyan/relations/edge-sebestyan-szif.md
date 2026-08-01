@@ -10,13 +10,7 @@ record_id = "https://vomaste.cz/id/dossiers/martin-sebestyan/relations/edge-sebe
 view_model = "generated/views/dossiers/martin-sebestyan/relations/edge-sebestyan-szif.json"
 dossier = "martin-sebestyan"
 record_type = "relation"
+lang = "cs"
 rel_id = "edge-sebestyan-szif"
-source = "sebestyan"
-target = "szif"
-relation_type = "HOLDS_ROLE"
-label = "bývalý ředitel (2013–2022)"
-status = "corroborated"
-claims = ["CLM-08", "CLM-09", "CLM-11"]
-sources = ["SRC-04", "SRC-26"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Status: nezávisle potvrzený fakt.

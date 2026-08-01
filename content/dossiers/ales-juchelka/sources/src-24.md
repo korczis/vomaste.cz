@@ -9,17 +9,10 @@ weight = 24
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-24"
 view_model = "generated/views/dossiers/ales-juchelka/sources/src-24.json"
-subjects = ["juchelka"]
 dossier = "ales-juchelka"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-24"
-outlet = "Deník N"
-src_type = "zpravodajství"
-url = "https://denikn.cz/minuta/2140386"
-published = "2026-07-29"
-retrieved = "2026-07-30"
-claims = ["CLM-23"]
 +++
 **MPSV chystá zadání právního posudku kvůli střetu zájmů Semancové a dotacím EU**
 

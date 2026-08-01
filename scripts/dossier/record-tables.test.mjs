@@ -81,7 +81,7 @@ test("record-tables: pořadí dossierů = pořadí registru, záznamy numericky"
   const registryOrder = loadDossierRegistry().map((d) => d.slug);
   const seen = [...new Set(tables.claims.map((r) => r.dossier))];
   const expected = registryOrder.filter((s) => seen.includes(s));
-  assert.deepEqual(seen, expected, "claims musí jít v pořadí data/dossiers.toml");
+  assert.deepEqual(seen, expected, "claims musí jít v redakčním pořadí registru (dossier.order)");
   const mt = tables.claims.filter((r) => r.dossier === "macinka-turek").map((r) => r.clm_id);
   const sorted = [...mt].sort((a, b) => Number(a.slice(4)) - Number(b.slice(4)));
   assert.deepEqual(mt, sorted, "claims uvnitř dossieru musí být numericky seřazené");

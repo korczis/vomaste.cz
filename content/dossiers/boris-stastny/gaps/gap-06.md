@@ -9,14 +9,10 @@ weight = 6
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/boris-stastny/gaps/GAP-06"
 view_model = "generated/views/dossiers/boris-stastny/gaps/gap-06.json"
-subjects = ["stastny"]
 dossier = "boris-stastny"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-06"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Zda se kauzou nahrávacího zařízení zabýval bezpečnostní výbor Poslanecké sněmovny nebo zda byla podána interpelace.
 

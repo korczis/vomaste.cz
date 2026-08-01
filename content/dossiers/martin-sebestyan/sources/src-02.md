@@ -9,17 +9,10 @@ weight = 2
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-02"
 view_model = "generated/views/dossiers/martin-sebestyan/sources/src-02.json"
-subjects = ["sebestyan"]
 dossier = "martin-sebestyan"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-02"
-outlet = "HlídacíPes.org"
-src_type = "komentář/názor"
-url = "https://hlidacipes.org/ales-rozehnal-ministr-sebestyan-klame-verejnost-a-neresi-podstatu-problemu-babis/"
-published = "2026-05-29"
-retrieved = "2026-07-30"
-claims = ["CLM-06", "CLM-07"]
 +++
 **Aleš Rozehnal: Ministr Šebestyán v dotacích pro Agrofert klame veřejnost**
 

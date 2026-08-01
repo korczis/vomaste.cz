@@ -10,15 +10,8 @@ record_id = "https://vomaste.cz/id/dossiers/petr-vencalek/relations/edge-vencale
 view_model = "generated/views/dossiers/petr-vencalek/relations/edge-vencalek-gmrgascz.json"
 dossier = "petr-vencalek"
 record_type = "relation"
+lang = "cs"
 rel_id = "edge-vencalek-gmrgascz"
-source = "vencalek"
-target = "gmrgas-cz"
-relation_type = "HOLDS_INTEREST_IN"
-label = "jediný společník a jednatel"
-status = "corroborated"
-claims = ["CLM-01"]
-sources = ["SRC-01", "SRC-02"]
-subjects = ["vencalek"]
 +++
 Tato stránka je kanonický záznam vztahu edge-vencalek-gmrgascz — typ
 vztahu, podporující tvrzení a zdroje v tabulce výše jsou úplné. Status

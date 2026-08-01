@@ -13,10 +13,5 @@ dossier = "alena-schillerova"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-24"
-status = "status-single"
-status_label = "1 ZDROJ"
-summary = "Ve svém vyjádření z 10. února 2026 rozložila NRR zákonný limit schodku na základní rámec 237 miliard korun odpovídající strukturálnímu schodku 1,75 % HDP plus navýšení o obranu ve výši 9 miliard korun, tedy celkem 246 miliard korun, což navrhovaný schodek 310 miliard překračuje o 64 miliard."
-sources = ["SRC-18"]
-subjects = ["schillerova"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/alena-schillerova/_index.md#registr-tvrzeni).

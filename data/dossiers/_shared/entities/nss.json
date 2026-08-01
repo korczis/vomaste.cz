@@ -20,6 +20,21 @@
     "/dossiers/andrej-babis/entities/nss/"
   ],
   "order": 7,
+  "provenance": {
+    "discoveredAt": "2026-07-30",
+    "discoveredVia": [
+      "edge-kostelecke-nss",
+      "edge-sady-nss",
+      "edge-navos-nss"
+    ],
+    "claimRefs": [
+      "CLM-18"
+    ],
+    "sourceRefs": [
+      "SRC-07"
+    ],
+    "depth": 1
+  },
   "content": [
     {
       "type": "markdown",

@@ -9,17 +9,10 @@ weight = 14
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-14"
 view_model = "generated/views/dossiers/zuzana-mrazova/sources/src-14.json"
-subjects = ["mrazova"]
 dossier = "zuzana-mrazova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-14"
-outlet = "e15.cz"
-src_type = "zpravodajství"
-url = "https://www.e15.cz/domaci/ministryne-mrazova-za-ano-dostala-pokutu-za-poruseni-zakona-o-stretu-zajmu-1434545"
-published = "2026-07-25"
-retrieved = "2026-07-30"
-claims = ["CLM-20", "CLM-21", "CLM-23"]
 +++
 **Ministryně Mrázová za ANO dostala pokutu za porušení zákona o střetu zájmů**
 

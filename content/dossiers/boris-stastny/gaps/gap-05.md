@@ -9,14 +9,10 @@ weight = 5
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/boris-stastny/gaps/GAP-05"
 view_model = "generated/views/dossiers/boris-stastny/gaps/gap-05.json"
-subjects = ["stastny"]
 dossier = "boris-stastny"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-05"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Zda NÚKIB, BIS nebo Policie ČR po zveřejnění kauzy dodatečně zahájily prověřování nalezeného zařízení.
 

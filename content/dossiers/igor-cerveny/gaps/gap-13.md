@@ -9,14 +9,10 @@ weight = 13
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/igor-cerveny/gaps/GAP-13"
 view_model = "generated/views/dossiers/igor-cerveny/gaps/gap-13.json"
-subjects = ["cerveny"]
 dossier = "igor-cerveny"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-13"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Nepodařilo se ověřit obsah článků serveru iDNES.cz k tématu (přestupkové řízení, kanceláře).
 

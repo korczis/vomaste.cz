@@ -20,6 +20,21 @@
     "/dossiers/tunde-bartha/entities/kampan-babis-2023/"
   ],
   "order": 7,
+  "provenance": {
+    "discoveredAt": "2026-08-01",
+    "discoveredVia": [
+      "edge-bartha-kampan",
+      "edge-kampan-babis"
+    ],
+    "claimRefs": [
+      "CLM-10",
+      "CLM-11"
+    ],
+    "sourceRefs": [
+      "SRC-07"
+    ],
+    "depth": 1
+  },
   "content": [
     {
       "type": "markdown",

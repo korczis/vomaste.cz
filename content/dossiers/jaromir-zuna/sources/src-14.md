@@ -9,17 +9,10 @@ weight = 14
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-14"
 view_model = "generated/views/dossiers/jaromir-zuna/sources/src-14.json"
-subjects = ["zuna"]
 dossier = "jaromir-zuna"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-14"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/pavel-na-hrade-jmenuje-noveho-sefa-armady-hlavace-ve-funkci-vystrida-rehku-375088"
-published = "2026-06-30"
-retrieved = "2026-07-30"
-claims = ["CLM-20", "CLM-21", "CLM-23", "CLM-24"]
 +++
 **Hlaváč převzal funkci náčelníka generálního štábu**
 

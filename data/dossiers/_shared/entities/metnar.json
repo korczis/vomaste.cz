@@ -21,6 +21,47 @@
   ],
   "snapshotDate": "2026-07-30",
   "order": 1,
+  "provenance": {
+    "discoveredAt": "2026-07-30",
+    "discoveredVia": [
+      "edge-metnar-nku"
+    ],
+    "claimRefs": [
+      "CLM-02",
+      "CLM-04",
+      "CLM-05",
+      "CLM-06",
+      "CLM-07",
+      "CLM-08",
+      "CLM-09",
+      "CLM-10",
+      "CLM-11",
+      "CLM-12",
+      "CLM-13",
+      "CLM-14",
+      "CLM-15",
+      "CLM-16",
+      "CLM-17",
+      "CLM-18",
+      "CLM-19",
+      "CLM-20",
+      "CLM-21",
+      "CLM-22",
+      "CLM-23",
+      "CLM-24",
+      "CLM-25",
+      "CLM-01"
+    ],
+    "sourceRefs": [
+      "SRC-01",
+      "SRC-02",
+      "SRC-03",
+      "SRC-04",
+      "SRC-05",
+      "SRC-06"
+    ],
+    "depth": 0
+  },
   "content": [
     {
       "type": "markdown",

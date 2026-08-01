@@ -13,10 +13,5 @@ dossier = "karel-havlicek"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-46"
-status = "status-single"
-status_label = "1 ZDROJ"
-summary = "Havlíček zahájil 11. června 2026 v Praze konferenci Forum Elektromobilita 2026, na níž vystoupili zástupci Škoda Auto, Orlen, Fastned, BYD Automotive a Hyundai; registrace elektromobilů v EU přitom v období leden–duben 2026 vzrostly o 33 procent, v Česku o 18 procent."
-sources = ["SRC-31"]
-subjects = ["havlicek"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/karel-havlicek/_index.md#registr-tvrzeni).

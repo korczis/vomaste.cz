@@ -9,17 +9,10 @@ weight = 9
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-09"
 view_model = "generated/views/dossiers/alena-schillerova/sources/src-09.json"
-subjects = ["schillerova"]
 dossier = "alena-schillerova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-09"
-outlet = "ČeskéNoviny.cz (ČTK)"
-src_type = "zpravodajství"
-url = "https://www.ceskenoviny.cz/zpravy/snemovna-ma-o-vetovane-novele-rozpoctovych-zakonu-hlasovat-25-srpna/2854058"
-published = "2026-07-23"
-retrieved = "2026-07-30"
-claims = ["CLM-23"]
 +++
 **Sněmovna má o vetované novele rozpočtových zákonů hlasovat 25. srpna**
 

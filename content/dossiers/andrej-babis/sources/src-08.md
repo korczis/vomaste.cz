@@ -9,17 +9,10 @@ weight = 8
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-08"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-08.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-08"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/soud-nepravomocne-uznal-vinu-nagyove-v-kauze-capi-hnizdo-373074"
-published = "2026-05-04"
-retrieved = "2026-07-30"
-claims = ["CLM-07", "CLM-20", "CLM-21", "CLM-24"]
 +++
 Zpravodajský článek veřejnoprávní televize k jednacímu dni 4. 5. 2026.
 **Co dokládá:** výrok Městského soudu v Praze o vině spoluobžalované Jany

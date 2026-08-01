@@ -11,16 +11,6 @@ record_id = "https://vomaste.cz/id/entities/jaroslav-kurcik"
 view_model = "generated/views/entities/jaroslav-kurcik.json"
 record_type = "entity"
 entity_id = "jaroslav-kurcik"
-entity_type = "person"
-publication_role = "context"
-dossier_enabled = false
-dossier_status = "not_authorized"
-coverage_state = "referenced"
-dossiers = []
-depth = 3
-subject = false
-discovered_at = "2026-07-31"
-discovered_via = ["ares-expansion-26185610-2026-07-31"]
 +++
 Záznam z veřejného rejstříku (ARES), pořízený programově 2026-07-31:
 zapsán jako **člen představenstva** společnosti AGROFERT, a.s. (IČO 26185610).

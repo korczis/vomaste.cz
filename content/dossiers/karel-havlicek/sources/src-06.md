@@ -9,17 +9,10 @@ weight = 6
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-06"
 view_model = "generated/views/dossiers/karel-havlicek/sources/src-06.json"
-subjects = ["havlicek"]
 dossier = "karel-havlicek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-06"
-outlet = "Seznam Zprávy"
-src_type = "zpravodajství"
-url = "https://www.seznamzpravy.cz/clanek/havlicek-audit-jsem-necetl-podobne-problemovych-dotaci-mame-stovky-84488"
-published = "2019-12-10"
-retrieved = "2026-07-30"
-claims = ["CLM-02", "CLM-04"]
 +++
 **Havlíček: Audit jsem nečetl, podobně problémových dotací máme stovky**
 

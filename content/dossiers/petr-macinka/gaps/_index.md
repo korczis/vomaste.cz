@@ -10,10 +10,6 @@ view_model = "generated/views/dossiers/petr-macinka/gaps-index.json"
 dossier = "petr-macinka"
 lang = "cs"
 seo_type = "CollectionPage"
-dossier_title = "Petr Macinka"
-canonical_dossier = "macinka-turek"
-subject = "macinka"
-registry = "gaps"
 +++
 Filtrovaný pohled na [registr mezer](@/dossiers/macinka-turek/gaps/_index.md) — jen otevřené otázky týkající se Petra Macinky.
 

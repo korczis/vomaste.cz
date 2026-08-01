@@ -9,17 +9,10 @@ weight = 24
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-24"
 view_model = "generated/views/dossiers/ivan-bednarik/sources/src-24.json"
-subjects = ["bednarik"]
 dossier = "ivan-bednarik"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-24"
-outlet = "Ekonomický deník"
-src_type = "zpravodajství"
-url = "https://ekonomickydenik.cz/veletoce-okolo-rozpoctu/"
-published = "2025-12-22"
-retrieved = "2026-07-30"
-claims = ["CLM-32", "CLM-33"]
 +++
 **Veletoče okolo peněz na dálnice a železnice. Chybí miliardy, vláda…**
 

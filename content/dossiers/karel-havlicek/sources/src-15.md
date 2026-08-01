@@ -9,17 +9,10 @@ weight = 15
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-15"
 view_model = "generated/views/dossiers/karel-havlicek/sources/src-15.json"
-subjects = ["havlicek"]
 dossier = "karel-havlicek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-15"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/statni-zastupce-obzaloval-pekarnu-pod-agrofertem-a-dva-lidi-kvuli-dotacim-na-inovacni-linku-374836"
-published = "2026-06-22"
-retrieved = "2026-07-30"
-claims = ["CLM-26", "CLM-27", "CLM-28"]
 +++
 **Padla obžaloba za dotace Agrofertu na linku na toastový chléb**
 

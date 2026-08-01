@@ -10,17 +10,10 @@ aliases = ["/dossier/zdroje/src-34/"]
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-34"
 view_model = "generated/views/dossiers/macinka-turek/sources/src-34.json"
-subjects = ["turek"]
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-34"
-outlet = "Manipulátoři.cz"
-src_type = "faktčekingový / spotřebitelský web"
-url = "https://manipulatori.cz/navrat-zapperu-aneb-koronavirovou-pandemii-zneuzivaji-dalsi-prodejci-doplnku-stravy/"
-published = "2020-04-03"
-retrieved = "2026-07-22"
-claims = ["CLM-31"]
 +++
 Manipulátoři.cz (projekt zaměřený na dezinformace a spotřebitelské
 podvody) 3. dubna 2020 zdokumentoval, že firma Zapper-Club s.r.o. pod

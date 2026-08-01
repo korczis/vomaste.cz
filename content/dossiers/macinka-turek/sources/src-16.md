@@ -10,17 +10,10 @@ aliases = ["/dossier/zdroje/src-16/"]
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-16"
 view_model = "generated/views/dossiers/macinka-turek/sources/src-16.json"
-subjects = ["turek"]
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-16"
-outlet = "Deník.cz (VLTAVA LABE MEDIA)"
-src_type = "zpravodajství"
-url = "https://www.denik.cz/z_domova/filip-turek-motoriste-kauza-nevhodne-prispevky-lide-hospoda-obhajoba.html"
-published = "2025-10-13"
-retrieved = "2026-07-21"
-claims = ["CLM-08", "CLM-09"]
 +++
 Deník.cz (síť regionálních deníků, vydavatel Vltava Labe Media) zaznamenal
 Turkovu přímou reakci na zveřejněné příspěvky — odmítnutí autorství těch

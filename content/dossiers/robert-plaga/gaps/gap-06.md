@@ -9,14 +9,10 @@ weight = 6
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/robert-plaga/gaps/GAP-06"
 view_model = "generated/views/dossiers/robert-plaga/gaps/gap-06.json"
-subjects = ["plaga"]
 dossier = "robert-plaga"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-06"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Nebyly dohledány žádné personální důsledky v České školní inspekci (odvolání, rezignace, kázeňská opatření) v souvislosti se zastaveným testováním.
 

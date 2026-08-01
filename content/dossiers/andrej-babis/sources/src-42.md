@@ -9,17 +9,10 @@ weight = 42
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-42"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-42.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-42"
-outlet = "ČeskéNoviny.cz (ČTK)"
-src_type = "zpravodajství"
-url = "https://www.ceskenoviny.cz/zpravy/soud-zamitl-zaloby-ctyr-firem-z-agrofertu-kvuli-dotacim-od-szif/2664476"
-published = "2025-04-23"
-retrieved = "2026-08-01"
-claims = ["CLM-63"]
 +++
 Agenturní zpráva ČTK: „Pražský městský soud dnes zamítl žaloby čtyř
 firem ze skupiny Agrofert na Státní zemědělský intervenční fond.“

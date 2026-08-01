@@ -10,13 +10,7 @@ record_id = "https://vomaste.cz/id/dossiers/tunde-bartha/relations/edge-kampan-b
 view_model = "generated/views/dossiers/tunde-bartha/relations/edge-kampan-babis.json"
 dossier = "tunde-bartha"
 record_type = "relation"
+lang = "cs"
 rel_id = "edge-kampan-babis"
-source = "kampan-babis-2023"
-target = "babis"
-relation_type = "ASSOCIATED_WITH_EVENT"
-label = "kampaň kandidáta Andreje Babiše"
-status = "contextual"
-claims = ["CLM-10"]
-sources = ["SRC-07"]
 +++
 Kontextový, strukturální vztah — dossier jej neuvádí jako vlastní doloženou investigaci, jen jako veřejně nesporné pozadí.

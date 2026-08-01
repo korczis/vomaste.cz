@@ -13,14 +13,6 @@ dossier = "ales-juchelka"
 record_type = "case"
 lang = "cs"
 case_id = "CASE-01"
-anchor = "kauza-poradkyne"
-period = "2026"
-status = "status-disputed"
-label = "Bez vyšetřování, spor o následek"
-summary = "Firma poradkyně inkasovala od žadatelů o dotace, na jejichž výzvy poradkyně dohlížela; čtyři projekty vyřazeny z financování EU, mezera 63,8 mil. Kč. Citovaný zdroj neuvádí žádné vyšetřování ani obvinění."
-claims = []
-sources = []
-subjects = ["juchelka"]
 +++
 Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu
 dossieru](@/dossiers/ales-juchelka/_index.md#kauza-poradkyne).

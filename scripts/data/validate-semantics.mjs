@@ -23,6 +23,13 @@
 //   S6  žádná kontextová entita (publicationRole=context) nesmí být
 //       subjektem dossieru — nesmí mít subjectOf, dossierEnabled=true
 //       ani dossierStatus=authorized (zrcadlí validate-authorization.mjs)
+//   S7  subjektové uzly grafu (dossier.graph, fáze H — dřívější
+//       validate-graph.mjs): množina uzlů se subject=true se přesně
+//       rovná autorizovaným subjektům dossieru (dossier.subject, u
+//       agregátu sjednocení subjektů agregovaných dossierů)
+//   S8  souvislost grafu (dřívější validate-graph.mjs): každý uzel má
+//       cestu k subjektovému uzlu — BFS hloubka
+//       (scripts/data/lib/graph-depth.mjs) nesmí být null
 //
 // Baseline (T-028 fáze D, grandfathered debt): porušení zděděná 1:1
 // z migrovaného obsahu se NEopravují změnou dat ani změkčením pravidel —
@@ -35,6 +42,7 @@
 import { existsSync, readFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { computeGraphDepths } from "./lib/graph-depth.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 export const AUTHORIZATIONS_TOML = join(ROOT, "data/authorizations.toml");
@@ -194,6 +202,58 @@ export function collectSemanticsFindings(model, options = {}) {
     }
     if (record.dossierStatus === "authorized") {
       found("S6", wrapper, `${relPath}: kontextová entita má dossierStatus "authorized" — automatika nesmí kontextové entitě přiznat autorizaci`);
+    }
+  }
+
+  // --- S7 + S8: kurátorovaný graf dossieru -------------------------------
+  {
+    const localPart = (iri) => (typeof iri === "string" ? iri.split("/").pop() : null);
+    const dossierBySlug = new Map(
+      model.records.filter((w) => w.registry === "dossier").map((w) => [w.record.slug, w]),
+    );
+    for (const wrapper of model.records) {
+      if (wrapper.registry !== "dossier") continue;
+      const { record, relPath } = wrapper;
+      const graph = record.graph;
+      if (!graph) continue;
+
+      // Autorizované subjekty dossieru: vlastní subject, u agregátu
+      // sjednocení subjektů agregovaných dossierů.
+      const expectedSubjects = new Set();
+      if (record.subject) expectedSubjects.add(record.subject);
+      for (const slug of record.aggregates ?? []) {
+        const agg = dossierBySlug.get(slug)?.record;
+        if (agg?.subject) expectedSubjects.add(agg.subject);
+      }
+      const subjectNodes = new Set((graph.nodes ?? []).filter((n) => n.subject === true).map((n) => n.entity));
+      for (const id of subjectNodes) {
+        if (!expectedSubjects.has(id)) {
+          found("S7", wrapper, `${relPath}: graph uzel "${id}" má subject=true, ale není autorizovaným subjektem dossieru — nový subjekt vyžaduje samostatnou, explicitní autorizaci v AGENTS.md`);
+        }
+      }
+      for (const id of expectedSubjects) {
+        if (!subjectNodes.has(id)) {
+          found("S7", wrapper, `${relPath}: autorizovaný subjekt "${id}" nemá v grafu uzel se subject=true`);
+        }
+      }
+
+      // S8: každý uzel má cestu k subjektu (BFS hloubka != null).
+      const edges = model.records
+        .filter((w) => w.dossier === record.slug && w.registry === "relations")
+        .map((w) => ({
+          from: localPart(w.record.sourceEntity?.["@id"]),
+          to: localPart(w.record.targetEntity?.["@id"]),
+        }));
+      const depths = computeGraphDepths(
+        (graph.nodes ?? []).map((n) => n.entity),
+        [...subjectNodes],
+        edges,
+      );
+      for (const [id, depth] of depths) {
+        if (depth === null) {
+          found("S8", wrapper, `${relPath}: graph uzel "${id}" nemá cestu k žádnému subjektovému uzlu — osiřelý od subjektů dossieru`);
+        }
+      }
     }
   }
 

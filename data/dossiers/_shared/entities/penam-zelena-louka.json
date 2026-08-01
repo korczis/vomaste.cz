@@ -21,6 +21,40 @@
     "/dossiers/karel-havlicek/entities/penam-zelena-louka/"
   ],
   "order": 3,
+  "provenance": {
+    "discoveredAt": "2026-07-31",
+    "discoveredVia": [
+      "edge-havlicek-penam-zelena-louka"
+    ],
+    "claimRefs": [
+      "CLM-05",
+      "CLM-07",
+      "CLM-08",
+      "CLM-19",
+      "CLM-21",
+      "CLM-22",
+      "CLM-25",
+      "CLM-27",
+      "CLM-55",
+      "CLM-57",
+      "CLM-58"
+    ],
+    "sourceRefs": [
+      "SRC-02",
+      "SRC-04",
+      "SRC-05",
+      "SRC-11",
+      "SRC-12",
+      "SRC-13",
+      "SRC-14",
+      "SRC-15",
+      "SRC-34",
+      "SRC-35",
+      "SRC-36",
+      "SRC-37"
+    ],
+    "depth": 1
+  },
   "content": [
     {
       "type": "markdown",

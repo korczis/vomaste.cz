@@ -9,17 +9,10 @@ weight = 12
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-12"
 view_model = "generated/views/dossiers/igor-cerveny/sources/src-12.json"
-subjects = ["cerveny"]
 dossier = "igor-cerveny"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-12"
-outlet = "Seznam Zprávy"
-src_type = "zpravodajství"
-url = "https://www.seznamzpravy.cz/clanek/domaci-politika-ministr-cerveny-opravil-majetkove-priznani-a-zaplatil-pokutu-309080"
-published = "2026-06-22"
-retrieved = "2026-07-30"
-claims = ["CLM-22", "CLM-23"]
 +++
 **Ministr Červený opravil majetkové přiznání a zaplatil pokutu**
 

@@ -9,17 +9,10 @@ weight = 19
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-19"
 view_model = "generated/views/dossiers/zuzana-mrazova/sources/src-19.json"
-subjects = ["mrazova"]
 dossier = "zuzana-mrazova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-19"
-outlet = "ČeskéNoviny.cz (ČTK)"
-src_type = "zpravodajství"
-url = "https://www.ceskenoviny.cz/zpravy/2846411"
-published = "2026-07-02"
-retrieved = "2026-07-30"
-claims = ["CLM-51", "CLM-52", "CLM-53", "CLM-56"]
 +++
 **Pirátští poslanci se ve Sněmovně opět pustili do ministryně Mrázové**
 

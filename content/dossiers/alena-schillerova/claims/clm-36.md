@@ -13,10 +13,5 @@ dossier = "alena-schillerova"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-36"
-status = "status-quote"
-status_label = "CITACE"
-summary = "Schillerová kritizovala předchozí vládu Petra Fialy tvrzením, že prokazatelně plánovala hospodařit s deficitem skoro dvou procent HDP, zatímco do Bruselu slibovala deficit skoro čtyřikrát nižší."
-sources = ["SRC-12"]
-subjects = ["schillerova"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/alena-schillerova/_index.md#registr-tvrzeni).

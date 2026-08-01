@@ -9,17 +9,10 @@ weight = 4
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-04"
 view_model = "generated/views/dossiers/adam-vojtech/sources/src-04.json"
-subjects = ["vojtech"]
 dossier = "adam-vojtech"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-04"
-outlet = "Zdravotnický deník"
-src_type = "zpravodajství"
-url = "https://www.zdravotnickydenik.cz/2026/02/kauza-defibrilatoru-fn-olomouc-poprve-upresnila-co-policie-proveruje-zasahuje-i-ministr/"
-published = "2026-02-11"
-retrieved = "2026-07-30"
-claims = ["CLM-06", "CLM-07", "CLM-08"]
 +++
 **Kauza defibrilátorů: FN Olomouc poprvé upřesnila, co policie prověřuje. Zasahuje i ministr**
 

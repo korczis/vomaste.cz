@@ -9,17 +9,10 @@ weight = 19
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-19"
 view_model = "generated/views/dossiers/adam-vojtech/sources/src-19.json"
-subjects = ["vojtech"]
 dossier = "adam-vojtech"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-19"
-outlet = "Zdravotnický deník"
-src_type = "zpravodajství"
-url = "https://www.zdravotnickydenik.cz/2026/05/vzp-defibrilatory-fn-olomouc-policie-usti-nad-labem/"
-published = "2026-05-14"
-retrieved = "2026-07-30"
-claims = ["CLM-31", "CLM-32"]
 +++
 **Kauza defibrilátorů se rozrůstá: VZP prověřuje stovky operací, policie zasahovala i v Ústí**
 

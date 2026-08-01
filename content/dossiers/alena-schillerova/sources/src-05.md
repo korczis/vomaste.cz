@@ -9,17 +9,10 @@ weight = 5
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-05"
 view_model = "generated/views/dossiers/alena-schillerova/sources/src-05.json"
-subjects = ["schillerova"]
 dossier = "alena-schillerova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-05"
-outlet = "ČeskéNoviny.cz (ČTK)"
-src_type = "zpravodajství"
-url = "https://www.ceskenoviny.cz/zpravy/senat-zprisnil-podminky-pro-vladni-zvysovani-vydaju/2830447"
-published = "2026-06-17"
-retrieved = "2026-07-30"
-claims = ["CLM-13"]
 +++
 **Senát zpřísnil podmínky pro vládní zvyšování výdajů**
 

@@ -9,17 +9,10 @@ weight = 13
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-13"
 view_model = "generated/views/dossiers/karel-havlicek/sources/src-13.json"
-subjects = ["havlicek"]
 dossier = "karel-havlicek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-13"
-outlet = "Pražský deník"
-src_type = "zpravodajství"
-url = "https://prazsky.denik.cz/zpravy_region/kauza-dotace-na-vyrobu-toustoveho-chleba-od-penamu-ma-naslapnuto-k-soudu-2024102.html"
-published = "2024-10-25"
-retrieved = "2026-07-30"
-claims = ["CLM-22", "CLM-23"]
 +++
 **Kauza dotace na výrobu toustového chleba od Penamu má našlápnuto k soudu**
 

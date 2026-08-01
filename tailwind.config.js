@@ -12,6 +12,12 @@ module.exports = {
     "./assets/js/**/*.js",
     "./node_modules/flowbite/**/*.js",
   ],
+  // T-028 fáze H: třídy timeline teček (input.css @layer components) se
+  // do scanu dostávaly JEN přes front matter [[extra.timeline]] dot = "…"
+  // content adaptérů. Od fáze H nesou dot hodnoty kanonická data
+  // (dossier.json contentBlocks timeline) a šablona je renderuje dynamicky
+  // ({{ entry.dot }}), takže je scan nevidí — safelist je drží explicitně.
+  safelist: ["dot-fact", "dot-disputed", "dot-ongoing"],
   darkMode: "media",
   theme: {
     extend: {

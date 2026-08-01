@@ -9,17 +9,10 @@ weight = 2
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-02"
 view_model = "generated/views/dossiers/jaroslav-faltynek/sources/src-02.json"
-subjects = ["faltynek"]
 dossier = "jaroslav-faltynek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-02"
-outlet = "Hospodářské noviny"
-src_type = "celostátní zpravodajství"
-url = "https://domaci.hn.cz/c1-66128330-statni-zastupce-rozhodl-o-stiznostech-proti-obvineni-v-kauze-capi-hnizdo-babis-rozhodnuti-jeste-neobdrzel"
-published = "2018-05-04"
-retrieved = "2026-07-30"
-claims = ["CLM-02", "CLM-03", "CLM-04"]
 +++
 Hospodářské noviny dne 4. 5. 2018 informovaly, že státní zástupce
 **Jaroslav Šaroch** z Městského státního zastupitelství v Praze

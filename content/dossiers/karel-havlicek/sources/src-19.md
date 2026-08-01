@@ -9,17 +9,10 @@ weight = 19
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-19"
 view_model = "generated/views/dossiers/karel-havlicek/sources/src-19.json"
-subjects = ["havlicek"]
 dossier = "karel-havlicek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-19"
-outlet = "ČeskéNoviny.cz (ČTK)"
-src_type = "zpravodajství"
-url = "https://www.ceskenoviny.cz/zpravy/opozice-novela-stavebniho-zakona-obsahuje-chyby-a-uprednostnuje-developery/2849655"
-published = "2026-07-10"
-retrieved = "2026-07-30"
-claims = ["CLM-33", "CLM-34"]
 +++
 **Opozice: Novela stavebního zákona obsahuje chyby a upřednostňuje developery**
 

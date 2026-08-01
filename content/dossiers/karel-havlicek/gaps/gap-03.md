@@ -9,14 +9,10 @@ weight = 3
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/gaps/GAP-03"
 view_model = "generated/views/dossiers/karel-havlicek/gaps/gap-03.json"
-subjects = ["havlicek"]
 dossier = "karel-havlicek"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-03"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Kritika novely stavebního zákona je doložena pouze z jednoho vydavatele (Česká justice, více článků).
 

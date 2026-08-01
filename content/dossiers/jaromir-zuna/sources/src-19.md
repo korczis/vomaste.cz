@@ -9,17 +9,10 @@ weight = 19
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-19"
 view_model = "generated/views/dossiers/jaromir-zuna/sources/src-19.json"
-subjects = ["zuna"]
 dossier = "jaromir-zuna"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-19"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/bezpecnostni-rada-statu-projedna-koncepci-armady-na-zasedani-dorazi-pavel-374649"
-published = "2026-06-17"
-retrieved = "2026-07-30"
-claims = ["CLM-34", "CLM-35"]
 +++
 **Bezpečnostní rada státu nestihla dokončit debatu kolem nové koncepce armády, řekl Babiš**
 

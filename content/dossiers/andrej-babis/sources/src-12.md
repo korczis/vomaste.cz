@@ -9,18 +9,10 @@ weight = 12
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-12"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-12.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-12"
-outlet = "ČeskéNoviny.cz (ČTK)"
-family = "ctk"
-src_type = "agenturní zpravodajství"
-url = "https://www.ceskenoviny.cz/zpravy/-evropsti-zalobci-zahajili-trestni-rizeni-kvuli-vyplaceni-dotaci-agrofertu/2850717"
-published = "2026-07-15"
-retrieved = "2026-07-30"
-claims = ["CLM-27", "CLM-28", "CLM-29", "CLM-30"]
 +++
 Agenturní zpráva ČTK, která sama uvádí jako původní zdroj informace
 server Seznam Zprávy.

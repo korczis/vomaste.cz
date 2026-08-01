@@ -9,14 +9,10 @@ weight = 8
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/jaromir-zuna/gaps/GAP-08"
 view_model = "generated/views/dossiers/jaromir-zuna/gaps/gap-08.json"
-subjects = ["zuna"]
 dossier = "jaromir-zuna"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-08"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Rozpor v údajích o aktuálním počtu vojáků: Echo24 v květnu 2026 uvádí 25 750 vojáků, zatímco CZDEFENCE hovoří o více než 28 tisících na začátku roku 2025.
 

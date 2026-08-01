@@ -10,10 +10,6 @@ view_model = "generated/views/dossiers/petr-macinka/sources-index.json"
 dossier = "petr-macinka"
 lang = "cs"
 seo_type = "CollectionPage"
-dossier_title = "Petr Macinka"
-canonical_dossier = "macinka-turek"
-subject = "macinka"
-registry = "sources"
 +++
 Filtrovaný pohled na [registr zdrojů](@/dossiers/macinka-turek/sources/_index.md) — jen zdroje relevantní k Petru Macinkovi.
 

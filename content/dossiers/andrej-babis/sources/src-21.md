@@ -9,17 +9,10 @@ weight = 21
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-21"
 view_model = "generated/views/dossiers/andrej-babis/sources/src-21.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-21"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/ustavni-soud-odmitl-stiznost-kosteleckych-uzenin-nemely-narok-na-dotaci-kvuli-stretu-zajmu-babise-372923"
-published = "2026-04-29"
-retrieved = "2026-07-30"
-claims = ["CLM-47"]
 +++
 Zpravodajství veřejnoprávní televize k rozhodnutí Ústavního soudu.
 **Co dokládá:** že Ústavní soud 1. dubna 2026 odmítl ústavní stížnost

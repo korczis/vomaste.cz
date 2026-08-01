@@ -10,10 +10,6 @@ view_model = "generated/views/dossiers/filip-turek/cases-index.json"
 dossier = "filip-turek"
 lang = "cs"
 seo_type = "CollectionPage"
-dossier_title = "Filip Turek"
-canonical_dossier = "macinka-turek"
-subject = "turek"
-registry = "cases"
 +++
 Filtrovaný pohled na [registr kauz](@/dossiers/macinka-turek/cases/_index.md) — jen kauzy, ve kterých je Filip Turek přímo zmíněn.
 

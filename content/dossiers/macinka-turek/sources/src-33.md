@@ -10,17 +10,10 @@ aliases = ["/dossier/zdroje/src-33/"]
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-33"
 view_model = "generated/views/dossiers/macinka-turek/sources/src-33.json"
-subjects = ["turek"]
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-33"
-outlet = "Blesk.cz"
-src_type = "zpravodajství (tabloid)"
-url = "https://www.blesk.cz/clanek/zpravy-politika/844092/turek-a-jeho-cerna-mostarna-dostal-mastnou-pokutu.html"
-published = "2026-07-17"
-retrieved = "2026-07-22"
-claims = ["CLM-30"]
 +++
 Stavební úřad Prahy 15 udělil Filipu Turkovi ve dvou samostatných
 řízeních (pravomocných 3. 7. 2026) pokuty za nepovolené stavby na jeho

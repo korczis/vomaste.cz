@@ -9,14 +9,10 @@ weight = 7
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/lubomir-metnar/gaps/GAP-07"
 view_model = "generated/views/dossiers/lubomir-metnar/gaps/gap-07.json"
-subjects = ["metnar"]
 dossier = "lubomir-metnar"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-07"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Nebylo dohledáno oficiální stanovisko NKÚ ani tisková zpráva ministerstva vnitra k tomuto návrhu jako primární zdroj.
 

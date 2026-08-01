@@ -9,14 +9,10 @@ weight = 5
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/andrej-babis/gaps/GAP-05"
 view_model = "generated/views/dossiers/andrej-babis/gaps/gap-05.json"
-subjects = ["babis"]
 dossier = "andrej-babis"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-05"
-priority = "vysoká"
-checked = "2026-07-31"
-claims = ["CLM-13", "CLM-14", "CLM-54"]
 +++
 **Co je doložené.** Francouzská policie uzavřela v květnu 2026
 vyšetřování nákupu nemovitostí na jihu Francie a případ převzala

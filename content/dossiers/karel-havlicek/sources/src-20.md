@@ -9,17 +9,10 @@ weight = 20
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-20"
 view_model = "generated/views/dossiers/karel-havlicek/sources/src-20.json"
-subjects = ["havlicek"]
 dossier = "karel-havlicek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-20"
-outlet = "Pražský deník"
-src_type = "zpravodajství"
-url = "https://prazsky.denik.cz/zpravy_region/stavebni-zakon-sity-na-miru-velkym-developerum-lez-tvrdi-havlicek-20260604.html"
-published = "2026-06-04"
-retrieved = "2026-07-30"
-claims = ["CLM-35"]
 +++
 **Stavební zákon šitý na míru velkým developerům? Lež, tvrdí Havlíček**
 

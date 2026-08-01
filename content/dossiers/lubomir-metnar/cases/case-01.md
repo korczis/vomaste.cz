@@ -13,14 +13,6 @@ dossier = "lubomir-metnar"
 record_type = "case"
 lang = "cs"
 case_id = "CASE-01"
-anchor = "kauza-ochrana-nku"
-period = "2026"
-status = "status-disputed"
-label = "Návrh, bez rozhodnutí"
-summary = "Ministerstvo vnitra navrhuje ukončit policejní ochranu NKÚ; Metnar to odůvodňuje bezpečnostní analýzou, prezident NKÚ v tom vidí tlak na nezávislou instituci."
-claims = []
-sources = []
-subjects = ["metnar"]
 +++
 Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu
 dossieru](@/dossiers/lubomir-metnar/_index.md#kauza-ochrana-nku).

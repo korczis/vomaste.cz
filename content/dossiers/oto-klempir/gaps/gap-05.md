@@ -9,14 +9,10 @@ weight = 5
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/oto-klempir/gaps/GAP-05"
 view_model = "generated/views/dossiers/oto-klempir/gaps/gap-05.json"
-subjects = ["klempir"]
 dossier = "oto-klempir"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-05"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Klempířovy vlastní citáty k zrušení výběrového řízení na ředitele NGP nad rámec oficiálního zdůvodnění a k reakci na dopis odborů
 

@@ -105,21 +105,19 @@ clean:
 
 # --- content work ---------------------------------------------------------
 
-# Regenerate the per-record claim/case pages from the hand-authored overview
-# table and front matter, after editing either by hand. `just build` then
-# verifies the two representations still agree.
-[doc("Přegeneruje stránky tvrzení a kauz z ručně psané tabulky")]
+# T-028 fáze H: dřívější `just regen` (migrate-claims/cases-to-pages)
+# zanikl — content/** je generovaný adaptér kanonických dat. Edituj
+# data/dossiers/**/*.json a spusť `npm run data:build`; paritu tabulky
+# s kanonickými záznamy hlídá validate-registry-table (data:validate).
+[doc("Regeneruje content adaptéry z kanonických dat")]
 regen:
-    node scripts/dossier/migrate-claims-to-pages.mjs
-    node scripts/dossier/migrate-cases-to-pages.mjs
+    npm run data:build
 
-# Scaffold a new entity dossier's placeholder files. Refuses to run for a
-# subject that has no matching entry in the AGENTS.md authorization log, and
-# does not register the dossier in data/dossiers.toml for you.
-#   just scaffold jan-novak "Jan Novák"
-[doc("Skeleton nového entity dossieru (jen pro autorizovaný subjekt)")]
-scaffold slug title:
-    npm run scaffold:dossier -- --slug={{ slug }} --title="{{ title }}"
+# T-028 fáze H: dřívější scaffold (content/** + TOML registry) zanikl —
+# nový dossier vzniká založením kanonického balíčku data/dossiers/<slug>/
+# (dossier.json + registry) po autorizaci přes authorize-entity; adaptéry
+# vygeneruje `npm run data:build`. Scaffold kanonického balíčku je tooling
+# fáze I.
 
 # Record a new authorization for an entity. INTERACTIVE ON PURPOSE: it needs a
 # real terminal and a human typing the scope in their own words, and it is the

@@ -9,17 +9,10 @@ weight = 8
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-08"
 view_model = "generated/views/dossiers/robert-plaga/sources/src-08.json"
-subjects = ["plaga"]
 dossier = "robert-plaga"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-08"
-outlet = "Lupa.cz"
-src_type = "zpravodajství"
-url = "https://www.lupa.cz/aktuality/plosny-zakaz-mobilu-ve-skolach-prosel-vladou-platit-ma-od-pristiho-zari/"
-published = "2026-07-20"
-retrieved = "2026-07-30"
-claims = ["CLM-13", "CLM-14"]
 +++
 **Plošný zákaz mobilů ve školách prošel vládou, platit má od příštího září**
 

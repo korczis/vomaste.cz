@@ -9,17 +9,10 @@ weight = 4
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-04"
 view_model = "generated/views/dossiers/martin-sebestyan/sources/src-04.json"
-subjects = ["sebestyan"]
 dossier = "martin-sebestyan"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-04"
-outlet = "iROZHLAS.cz (Český rozhlas)"
-src_type = "zpravodajství"
-url = "https://www.irozhlas.cz/zpravy-domov/szif-zemedelsky-fond-dotace-agrofert-kritika-reditel-konci-v-cele-fondu_2211190500_tec"
-published = "2022-11-19"
-retrieved = "2026-07-30"
-claims = ["CLM-08", "CLM-09", "CLM-10", "CLM-11"]
 +++
 **Po dohodě s Nekulou. Kritizovaný exšéf zemědělského fondu Šebestyán skončil i v radě lesnického fondu**
 

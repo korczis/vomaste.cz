@@ -9,17 +9,10 @@ weight = 15
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-15"
 view_model = "generated/views/dossiers/ivan-bednarik/sources/src-15.json"
-subjects = ["bednarik"]
 dossier = "ivan-bednarik"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-15"
-outlet = "Transport a logistika"
-src_type = "zpravodajství"
-url = "https://transport-logistika.cz/zpravy/zeleznicni-doprava/bednarik-v-bruselu/"
-published = "2026-03-25"
-retrieved = "2026-07-30"
-claims = ["CLM-26"]
 +++
 **Bednárik v Bruselu vyjednával budoucnost financování železnice**
 

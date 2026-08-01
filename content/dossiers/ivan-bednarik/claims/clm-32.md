@@ -13,10 +13,5 @@ dossier = "ivan-bednarik"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-32"
-status = "status-single"
-status_label = "1 ZDROJ"
-summary = "Předseda Národní rozpočtové rady Mojmír Hampl kritizoval výdajovou trajektorii dopravní infrastruktury jako nepřiměřenou ekonomice a poukázal na růst navrhovaných výdajů ze 160 miliard na více než 311 miliard korun do roku 2028."
-sources = ["SRC-24"]
-subjects = ["bednarik"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/ivan-bednarik/_index.md#registr-tvrzeni).

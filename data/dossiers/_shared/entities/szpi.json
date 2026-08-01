@@ -21,6 +21,21 @@
     "/dossiers/macinka-turek/entities/szpi/"
   ],
   "order": 21,
+  "provenance": {
+    "discoveredAt": "2026-07-29",
+    "discoveredVia": [
+      "edge-zapperclub-szpi"
+    ],
+    "claimRefs": [
+      "CLM-31"
+    ],
+    "sourceRefs": [
+      "SRC-34",
+      "SRC-35"
+    ],
+    "cluster": "zapper-club",
+    "depth": 2
+  },
   "content": [
     {
       "type": "markdown",

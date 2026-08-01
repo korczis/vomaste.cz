@@ -9,17 +9,10 @@ weight = 24
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-24"
 view_model = "generated/views/dossiers/adam-vojtech/sources/src-24.json"
-subjects = ["vojtech"]
 dossier = "adam-vojtech"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-24"
-outlet = "Podnikatel.cz"
-src_type = "zpravodajství"
-url = "https://www.podnikatel.cz/clanky/boj-o-zdravotni-benefity-nekonci-vojtechuv-navrh-prinese-jen-byrokracii-tvrdi-firmy/"
-published = "2026-07-08"
-retrieved = "2026-07-30"
-claims = ["CLM-43", "CLM-44"]
 +++
 **Boj o zdravotní benefity nekončí. Vojtěchův návrh přinese jen byrokracii, tvrdí firmy**
 

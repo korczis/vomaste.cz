@@ -9,17 +9,10 @@ weight = 17
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-17"
 view_model = "generated/views/dossiers/robert-plaga/sources/src-17.json"
-subjects = ["plaga"]
 dossier = "robert-plaga"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-17"
-outlet = "CNN Prima News"
-src_type = "zpravodajství"
-url = "https://cnn.iprima.cz/zakazu-mobily-na-skolach-dcery-mi-rekly-ze-jsem-se-zblaznil-rika-plaga-492262"
-published = "2025-11-21"
-retrieved = "2026-07-30"
-claims = ["CLM-46"]
 +++
 **Zakážu mobily ve školách. Dcery mi řekly, že jsem se zbláznil, říká Plaga**
 

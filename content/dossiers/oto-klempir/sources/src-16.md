@@ -9,17 +9,10 @@ weight = 16
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-16"
 view_model = "generated/views/dossiers/oto-klempir/sources/src-16.json"
-subjects = ["klempir"]
 dossier = "oto-klempir"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-16"
-outlet = "Jezdci.cz"
-src_type = "zpravodajství"
-url = "https://www.jezdci.cz/clanky/zasadni-obrat-v-napajedlich-klempir-zrusil-vyjmuti-pastvin-z-ochrany/"
-published = "2026-06-16"
-retrieved = "2026-07-30"
-claims = ["CLM-39"]
 +++
 **Zásadní obrat v Napajedlích. Klempíř zrušil vyjmutí pastvin z ochrany**
 

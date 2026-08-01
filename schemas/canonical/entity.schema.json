@@ -59,6 +59,45 @@
       "$ref": "_defs.schema.json#/$defs/isoDate",
       "$comment": "Government-roster snapshot (dnešní government_snapshot) — funkce držená k datu snímku, nikdy pokrytí dossierem."
     },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "$comment": "Prezentační meta description stránky entity (fáze H: dřív top-level front matter `description` ARES/roster stránek). Nepovinné — nese ho jen entita, jejíž stránka ho dnes má."
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "discoveredAt": { "$ref": "_defs.schema.json#/$defs/isoDate" },
+        "discoveredVia": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "$comment": "Kurátorovaná stopa objevení: id hran/vztahů (edge-*) NEBO syntetické značky procesu (government-roster-<datum>, ares-expansion-<ičo>-<datum>). Lokální id vztahů se interpretují v kontextu dossierů z pole `dossiers` této entity."
+        },
+        "claimRefs": {
+          "type": "array",
+          "items": { "$ref": "_defs.schema.json#/$defs/clmId" },
+          "$comment": "LOKÁLNÍ CLM-## id (composite-key inventář zachovaný věrně z front matter, fáze H): platí v kontextu dossierů z pole `dossiers` této entity — NENÍ to globální reference a NENÍ to unie vazeb z relations (ověřeno migrací: 30/63 kontextových entit se liší), je to ručně kurátorovaná stopa „přes co byla entita objevena“."
+        },
+        "sourceRefs": {
+          "type": "array",
+          "items": { "$ref": "_defs.schema.json#/$defs/srcId" },
+          "$comment": "LOKÁLNÍ SRC-## id — stejný composite-key tvar a stejná sémantika jako claimRefs."
+        },
+        "cluster": {
+          "type": "string",
+          "minLength": 1,
+          "$comment": "Tematický okruh (cluster) grafu dossieru, ve kterém byla entita objevena — dřív front matter `cluster`."
+        },
+        "depth": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3,
+          "$comment": "Kurátorovaná vzdálenost od subjektu při objevení (0 = subjekt, 3 = ARES expanze) — dřív front matter `depth`. Prezentační hloubka grafu se od fáze H počítá deterministicky BFS; tohle je provenience, ne layout."
+        }
+      },
+      "$comment": "Provenience objevení entity (fáze H, aditivní): dřív žila jen ve front matter content/entities/*.md. Government_office/government_party se sem NEduplikují — jejich kanonický vlastník je data/government.toml (viz build-government-roster + record-tables)."
+    },
     "subjectOf": {
       "type": "array",
       "items": { "$ref": "_defs.schema.json#/$defs/dossierRef" },

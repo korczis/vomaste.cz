@@ -10,13 +10,7 @@ record_id = "https://vomaste.cz/id/dossiers/andrej-babis/relations/edge-capihniz
 view_model = "generated/views/dossiers/andrej-babis/relations/edge-capihnizdo-olaf.json"
 dossier = "andrej-babis"
 record_type = "relation"
+lang = "cs"
 rel_id = "edge-capihnizdo-olaf"
-source = "capi-hnizdo"
-target = "olaf"
-relation_type = "INVESTIGATED_BY"
-label = "šetření OLAF; zveřejněné části zprávy hovoří o nesrovnalostech — zjištění kontrolního úřadu, ne rozsudek"
-status = "single"
-claims = ["CLM-72"]
-sources = ["SRC-50"]
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Status: single.

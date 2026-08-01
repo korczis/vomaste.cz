@@ -9,17 +9,10 @@ weight = 4
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-04"
 view_model = "generated/views/dossiers/alena-schillerova/sources/src-04.json"
-subjects = ["schillerova"]
 dossier = "alena-schillerova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-04"
-outlet = "ČeskéNoviny.cz (ČTK)"
-src_type = "zpravodajství"
-url = "https://www.ceskenoviny.cz/zpravy/snemovna-schvalila-spornou-novelu-rozpoctovych-zakonu/2825582"
-published = "2026-05-15"
-retrieved = "2026-07-30"
-claims = ["CLM-08"]
 +++
 **Sněmovna schválila spornou novelu rozpočtových zákonů**
 

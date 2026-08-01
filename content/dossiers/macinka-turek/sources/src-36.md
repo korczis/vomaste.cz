@@ -10,17 +10,10 @@ aliases = ["/dossier/zdroje/src-36/"]
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-36"
 view_model = "generated/views/dossiers/macinka-turek/sources/src-36.json"
-subjects = ["turek"]
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-36"
-outlet = "Aktuálně.cz"
-src_type = "zpravodajství / reportáž"
-url = "https://zpravy.aktualne.cz/domaci/turkovy-hrichy-prehledne-hajlovani-do-ksichtu-domaci-nasili/r~ec25cb48d3a011f0b589ac1f6b220ee8/"
-published = "2025-12-08"
-retrieved = "2026-07-22"
-claims = ["CLM-32", "CLM-33"]
 +++
 Souhrnný přehledový článek Vieta Trana (Aktuálně.cz, 8. 12. 2025) mapuje
 více Turkových kauz najednou. Pro tento dossier jsou relevantní dvě

@@ -9,17 +9,10 @@ weight = 28
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-28"
 view_model = "generated/views/dossiers/robert-plaga/sources/src-28.json"
-subjects = ["plaga"]
 dossier = "robert-plaga"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-28"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/plaga-jednal-s-ustrednim-skolnim-inspektorem-zatloukalem-373842"
-published = "2026-05-25"
-retrieved = "2026-07-30"
-claims = ["CLM-22", "CLM-25", "CLM-27"]
 +++
 **Plaga rozhodl o zastavení testování žáků 5. a 9. tříd ZŠ**
 

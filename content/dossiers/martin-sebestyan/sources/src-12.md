@@ -9,17 +9,10 @@ weight = 12
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-12"
 view_model = "generated/views/dossiers/martin-sebestyan/sources/src-12.json"
-subjects = ["sebestyan"]
 dossier = "martin-sebestyan"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-12"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/pozastaveni-dotaci-kvuli-babisove-moznemu-stretu-zajmu-se-tyka-i-zemedelstvi-373964"
-published = "2026-05-28"
-retrieved = "2026-07-30"
-claims = ["CLM-25", "CLM-26"]
 +++
 **Pozastavení dotací kvůli Babišově možnému střetu zájmů se týká i zemědělství**
 

@@ -9,17 +9,10 @@ weight = 17
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-17"
 view_model = "generated/views/dossiers/tomio-okamura/sources/src-17.json"
-subjects = ["okamura"]
 dossier = "tomio-okamura"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-17"
-outlet = "ČeskéNoviny.cz (ČTK)"
-src_type = "zpravodajství"
-url = "https://www.ceskenoviny.cz/zpravy/statni-zastupce-zaluje-okamuru-a-spd-za-podnecovani-k-nenavisti/2701742"
-published = "2025-08-07"
-retrieved = "2026-07-30"
-claims = ["CLM-21", "CLM-22", "CLM-23", "CLM-24"]
 +++
 **Státní zástupce žaluje Okamuru a SPD za podněcování k nenávisti**
 

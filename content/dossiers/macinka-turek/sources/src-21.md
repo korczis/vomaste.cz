@@ -10,17 +10,10 @@ aliases = ["/dossier/zdroje/src-21/"]
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-21"
 view_model = "generated/views/dossiers/macinka-turek/sources/src-21.json"
-subjects = ["turek"]
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-21"
-outlet = "Deník.cz (VLTAVA LABE MEDIA)"
-src_type = "zpravodajství"
-url = "https://www.denik.cz/z_domova/motoriste-filip-turek-rasisticke-vyroky-trestni-oznameni.html"
-published = "2025-10-12"
-retrieved = "2026-07-22"
-claims = ["CLM-19"]
 +++
 Deník.cz referuje, že hnutí Motoristé sobě (za stranu vystupoval předseda
 Petr Macinka) oznámilo podání trestního oznámení na redakci Deníku N a

@@ -9,14 +9,10 @@ weight = 8
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/tomio-okamura/gaps/GAP-08"
 view_model = "generated/views/dossiers/tomio-okamura/gaps/gap-08.json"
-subjects = ["okamura"]
 dossier = "tomio-okamura"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-08"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Okolnosti vzniku plakátů (role generativní AI, autorství zadání) podle dokazování u soudu.
 

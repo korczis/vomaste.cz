@@ -9,17 +9,10 @@ weight = 30
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-30"
 view_model = "generated/views/dossiers/robert-plaga/sources/src-30.json"
-subjects = ["plaga"]
 dossier = "robert-plaga"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-30"
-outlet = "Blesk.cz"
-src_type = "zpravodajství"
-url = "https://www.blesk.cz/clanek/zpravy-politika/844436/babis-razi-zakaz-mobilu-ve-skolach-ods-varuje-pred-skanzenem-odbornici-melo-to-prijit-uz-davno.html"
-published = "2026-07-22"
-retrieved = "2026-07-30"
-claims = ["CLM-42", "CLM-43", "CLM-47"]
 +++
 **Babiš razí zákaz mobilů ve školách, ODS varuje před skanzenem**
 

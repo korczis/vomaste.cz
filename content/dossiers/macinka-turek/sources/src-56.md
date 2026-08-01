@@ -9,17 +9,10 @@ weight = 56
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-56"
 view_model = "generated/views/dossiers/macinka-turek/sources/src-56.json"
-subjects = ["turek"]
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-56"
-outlet = "Romea.cz"
-src_type = "zpravodajství"
-url = "https://romea.cz/cz/domaci/potvrzeno-filip-turek-zverejnoval-rasisticke-a-nenavistne-prispevky-cast-byla-trestna-stihani-je-ale-promlcene-policie-nezpochybnila-pravdivost-clanku"
-published = "2026-07-28"
-retrieved = "2026-07-31"
-claims = ["CLM-49"]
 +++
 Romea.cz dne 28. 7. 2026 cituje dozorujícího státního zástupce Jana
 Vychytu k odložení věci pro promlčení: „Z pohledu práva jsme však

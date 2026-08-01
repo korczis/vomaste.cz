@@ -20,6 +20,20 @@
     "/dossiers/andrej-babis/entities/pgrlf/"
   ],
   "order": 24,
+  "provenance": {
+    "discoveredAt": "2026-08-01",
+    "discoveredVia": [
+      "edge-agrofert-pgrlf"
+    ],
+    "claimRefs": [
+      "CLM-60"
+    ],
+    "sourceRefs": [
+      "SRC-38",
+      "SRC-40"
+    ],
+    "depth": 2
+  },
   "content": [
     {
       "type": "markdown",

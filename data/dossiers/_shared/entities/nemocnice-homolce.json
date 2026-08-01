@@ -21,6 +21,20 @@
     "/dossiers/macinka-turek/entities/nemocnice-homolce/"
   ],
   "order": 23,
+  "provenance": {
+    "discoveredAt": "2026-07-29",
+    "discoveredVia": [
+      "edge-homolce-nehoda2026"
+    ],
+    "claimRefs": [
+      "CLM-18"
+    ],
+    "sourceRefs": [
+      "SRC-20"
+    ],
+    "cluster": "dopravni-nehoda",
+    "depth": 2
+  },
   "content": [
     {
       "type": "markdown",

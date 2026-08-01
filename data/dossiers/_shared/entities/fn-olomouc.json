@@ -20,6 +20,31 @@
     "/dossiers/adam-vojtech/entities/fn-olomouc/"
   ],
   "order": 3,
+  "provenance": {
+    "discoveredAt": "2026-07-31",
+    "discoveredVia": [
+      "edge-vojtech-fn-olomouc"
+    ],
+    "claimRefs": [
+      "CLM-07",
+      "CLM-08",
+      "CLM-09",
+      "CLM-11",
+      "CLM-12",
+      "CLM-31",
+      "CLM-32",
+      "CLM-33"
+    ],
+    "sourceRefs": [
+      "SRC-02",
+      "SRC-04",
+      "SRC-06",
+      "SRC-07",
+      "SRC-19",
+      "SRC-20"
+    ],
+    "depth": 1
+  },
   "content": [
     {
       "type": "markdown",

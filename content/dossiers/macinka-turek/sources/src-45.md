@@ -10,17 +10,10 @@ aliases = ["/dossier/zdroje/src-45/"]
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-45"
 view_model = "generated/views/dossiers/macinka-turek/sources/src-45.json"
-subjects = ["macinka", "turek"]
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-45"
-outlet = "HN.cz (Hospodářské noviny)"
-src_type = "zpravodajství"
-url = "https://domaci.hn.cz/c1-67831390-pavel-dal-odmita-jmenovat-turka-ministrem-podle-babise-mel-dostat-sanci-kompetencni-zalobu-ale-nezvazuje"
-published = "2026-01-07"
-retrieved = "2026-07-23"
-claims = ["CLM-38", "CLM-40"]
 +++
 Premiér Andrej Babiš se pokusil prezidenta Pavla během novoročního oběda
 přesvědčit ke jmenování Filipa Turka ministrem životního prostředí,

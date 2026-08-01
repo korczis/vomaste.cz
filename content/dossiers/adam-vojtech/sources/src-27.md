@@ -9,17 +9,10 @@ weight = 27
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-27"
 view_model = "generated/views/dossiers/adam-vojtech/sources/src-27.json"
-subjects = ["vojtech"]
 dossier = "adam-vojtech"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-27"
-outlet = "CNN Prima News"
-src_type = "zpravodajství"
-url = "https://cnn.iprima.cz/tlak-na-vojtecha-kvuli-ockovani-sili-spd-zada-vyrazne-zmeny-511294"
-published = "2026-05-06"
-retrieved = "2026-07-30"
-claims = ["CLM-45"]
 +++
 **Tlak na Vojtěcha kvůli očkování sílí. SPD žádá výrazné změny, ministr to odmítá**
 

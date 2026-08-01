@@ -9,17 +9,10 @@ weight = 20
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-20"
 view_model = "generated/views/dossiers/adam-vojtech/sources/src-20.json"
-subjects = ["vojtech"]
 dossier = "adam-vojtech"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-20"
-outlet = "ČeskéNoviny.cz (ČTK)"
-src_type = "zpravodajství"
-url = "https://www.ceskenoviny.cz/zpravy/babis-reditel-fn-olomouc-havlik-ma-mou-duveru-cekame-na-vysledky-vysetrovani/2788149"
-published = "2026-02-18"
-retrieved = "2026-07-30"
-claims = ["CLM-33"]
 +++
 **Babiš: Ředitel FN Olomouc Havlík má mou důvěru, čekáme na výsledky vyšetřování**
 

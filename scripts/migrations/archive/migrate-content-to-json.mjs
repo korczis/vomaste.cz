@@ -40,15 +40,18 @@
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import { readGraphTomlBlocks } from "../dossier/lib/jsonld-shared.mjs";
-import { validateShapeTree } from "../data/validate-shape.mjs";
-import { loadCanonicalTree } from "../data/load.mjs";
-import { validateReferences, ID_BASE } from "../data/validate-references.mjs";
+// T-028 fáze H: readGraphTomlBlocks v lib/jsonld-shared.mjs už čte
+// KANONICKÝ model — migrátor ale parsuje historický graph.toml vstup,
+// takže používá zamrzlý legacy parser (lib/legacy-graph-toml.mjs).
+import { readGraphTomlBlocks } from "./lib/legacy-graph-toml.mjs";
+import { validateShapeTree } from "../../data/validate-shape.mjs";
+import { loadCanonicalTree } from "../../data/load.mjs";
+import { validateReferences, ID_BASE } from "../../data/validate-references.mjs";
 import {
   collectSemanticsFindings,
   validateSemantics,
   BASELINEABLE_RULES,
-} from "../data/validate-semantics.mjs";
+} from "../../data/validate-semantics.mjs";
 import {
   arr,
   bool,
@@ -61,9 +64,9 @@ import {
   sectionBodies,
   sectionBody,
   str,
-} from "./lib/read-content.mjs";
+} from "../lib/read-content.mjs";
 
-const REPO_ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
+const REPO_ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..", "..");
 const SCHEMA_BASE = "https://vomaste.cz/schemas/canonical";
 const CONTEXT = "https://vomaste.cz/context/v1.jsonld";
 

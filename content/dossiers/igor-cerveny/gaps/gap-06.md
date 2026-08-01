@@ -9,14 +9,10 @@ weight = 6
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/igor-cerveny/gaps/GAP-06"
 view_model = "generated/views/dossiers/igor-cerveny/gaps/gap-06.json"
-subjects = ["cerveny"]
 dossier = "igor-cerveny"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-06"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Není doložena přesná právní kvalifikace přestupku ani konkrétní ustanovení zákona o střetu zájmů, podle nějž byla pokuta 7 500 Kč uložena.
 

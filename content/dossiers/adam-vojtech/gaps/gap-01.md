@@ -9,14 +9,10 @@ weight = 1
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/adam-vojtech/gaps/GAP-01"
 view_model = "generated/views/dossiers/adam-vojtech/gaps/gap-01.json"
-subjects = ["vojtech"]
 dossier = "adam-vojtech"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-01"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
 Článek iRozhlas o trestním oznámení nebylo možné otevřít (HTTP 403).
 

@@ -10,14 +10,10 @@ aliases = ["/dossier/mezery/gap-04/"]
 generated = true
 record_id = "https://vomaste.cz/id/dossiers/macinka-turek/gaps/GAP-04"
 view_model = "generated/views/dossiers/macinka-turek/gaps/gap-04.json"
-subjects = ["macinka", "turek"]
 dossier = "macinka-turek"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-04"
-priority = "nízká"
-checked = "2026-07-29"
-claims = ["CLM-14", "CLM-15", "CLM-20", "CLM-22", "CLM-34"]
 +++
 Firemní a spolkové vazby obou politiků i Macinkova nepřiznaná
 dvacetiprocentní účast v ukrajinské firmě GMR GAS UA LLC jsou
