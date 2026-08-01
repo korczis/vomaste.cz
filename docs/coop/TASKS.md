@@ -69,6 +69,7 @@ významu); autorizační log v AGENTS.md se nemění. Fáze A (audit,
 
 | ID | Titul | Commit | Owner | Stav |
 |----|-------|--------|-------|------|
+| T-037 | `zola serve` po čerstvém klonu/pullu selhávalo nesrozumitelně (generated/* je v .gitignore, klon je nikdy nepřinese) — `scripts/build/require-generated.mjs` (preflight), `npm run preflight`/`serve`, post-checkout/post-merge hooky jen VARUJÍ (negenerují samy), README poznámka | 06816b3 | (worktree T-037) | merged |
 | T-034 | Skloňování po číslovce v registrech ("32 zdroje" → "32 zdrojů") — makro `cz::tvar`/`cz::pocet`, oprava projekce seznam i dlaždice, 7 chybných tvarů v `updates.toml`, regex test s unicode hranicí slova | 5b0222c | (worktree T-034-graph) | merged |
 | T-027 | Graph workbench fáze B–J — layered data kontrakt + build-time layout, bundle split (graph-app.js), modulární runtime (jedna Sigma instance), interakční model (selection/focus/path finder/URL state), workbench UI, a11y + WebGL fallback, Playwright testy + syntetický 10k-uzlový benchmark, ADR + finální report (`reports/graph-workbench-implementation.md`) | e95368c..ee4b7b0 (5 commitů), merge c296c61 | W-8 | merged |
 | T-018 | Fáze 4 — entity dossier overview: view tabs (Přehled/Tvrzení/Zdroje/Kauzy/Entity/Vztahy/Evidence/Mezery), rozšířený metric strip (6 dlaždic), preview otevřených mezer. Directory (`/dossiers/`) byl už hotový (dd::directory) — ověřeno před psaním, ne předpokládáno | 59d60ea, merge 47fe59c | W-9 | merged |
