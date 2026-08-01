@@ -18,7 +18,10 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const FIXTURE = join(ROOT, "tests/fixtures/canonical/example-fixture");
 const VOCAB_DIR = join(ROOT, "data/dossiers/_shared/vocabularies");
 
-const loadFixture = (rel) => JSON.parse(readFileSync(join(FIXTURE, rel), "utf8"));
+// Fixture je od fáze C plný kanonický ROOT (balíček example-subject/ +
+// _shared/entities/), ne jediný balíček — staví na něm i compiler pipeline
+// (scripts/data/lib/dataset.mjs a její testy).
+const loadFixture = (rel) => JSON.parse(readFileSync(join(FIXTURE, "example-subject", rel), "utf8"));
 
 test("všechna kanonická schémata se zkompilují v Ajv2020 strict módu", () => {
   const { byRecordType, vocabulary } = createValidators();
@@ -32,7 +35,7 @@ test("všechna kanonická schémata se zkompilují v Ajv2020 strict módu", () =
 test("validní syntetický fixture dossier projde beze zbytku", () => {
   const { errors, records } = validateShapeTree(FIXTURE);
   assert.deepEqual(errors, []);
-  assert.equal(records, 7, "fixture má 7 kanonických záznamů (dossier + claim + source + case + gap + relation + update)");
+  assert.equal(records, 9, "fixture má 9 kanonických záznamů (dossier + claim + source + case + gap + relation + update + 2 sdílené entity)");
 });
 
 test("chybějící povinné pole selže s cestou k souboru i poli", () => {

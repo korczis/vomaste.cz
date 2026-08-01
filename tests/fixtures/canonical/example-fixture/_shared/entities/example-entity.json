@@ -1,0 +1,18 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/example-entity",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "example-entity",
+  "entityId": "example-entity",
+  "title": "Example Subject",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "full",
+  "dossiers": ["example-subject"],
+  "subjectOf": [{ "@id": "https://vomaste.cz/id/dossiers/example-subject" }]
+}
