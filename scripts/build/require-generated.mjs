@@ -2,11 +2,11 @@
 // Preflight: jsou tu vygenerované vstupy, které šablony čtou?
 // ============================================================
 //
-// data/generated/* a data/dossiers/*/stats.toml jsou v .gitignore — vznikají
-// buildem, ne v repozitáři. Po klonu nebo po git pull tedy neexistují (nebo
-// jsou zastaralé) a přímé spuštění "zola serve" skončí na prvním load_data
-// hláškou z hloubi base.html, ze které NENÍ poznat, že chybí krok pipeline,
-// natož který příkaz to spraví.
+// data/generated/* je v .gitignore — vzniká buildem, ne v repozitáři. Po
+// klonu nebo po git pull tedy neexistuje (nebo je zastaralé) a přímé
+// spuštění "zola serve" skončí na prvním load_data hláškou z hloubi
+// base.html, ze které NENÍ poznat, že chybí krok pipeline, natož který
+// příkaz to spraví.
 //
 // Tenhle skript to řekne rovnou. Není to náhrada generátorů — je to mapa
 // mezi symptomem ("load_data ... does not exist") a příčinou ("neběžely
@@ -45,16 +45,6 @@ function pozadovaneZeSablon() {
 }
 
 const chybi = pozadovaneZeSablon().filter((rel) => !existsSync(join(ROOT, rel)));
-
-// stats.toml se načítá dynamicky podle slugu, takže se ze šablon staticky
-// vyčíst nedá — kontroluje se existence aspoň jednoho.
-const dossiersDir = join(ROOT, "data/dossiers");
-if (existsSync(dossiersDir)) {
-  const maStats = readdirSync(dossiersDir, { withFileTypes: true })
-    .filter((e) => e.isDirectory())
-    .some((e) => existsSync(join(dossiersDir, e.name, "stats.toml")));
-  if (!maStats) chybi.push("data/dossiers/*/stats.toml");
-}
 
 if (chybi.length === 0) {
   if (!quiet) console.log("preflight OK — vygenerované vstupy jsou na místě.");

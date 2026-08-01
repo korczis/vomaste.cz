@@ -59,6 +59,7 @@ const BUILD_STEPS = [
   // (fresh clone) nebo byl stale (změna kanonických dat v témže běhu).
   "data:check-generated:content",
   "build:navigation",
+  "build:secondary-providers",
   "validate:navigation",
   "validate:concepts",
   "validate:entity-types",
@@ -98,6 +99,7 @@ const DEV_STEPS = [
   "build:entity-type-sections",
   "build:routes",
   "build:navigation",
+  "build:secondary-providers",
   "validate:navigation",
   "build:data-exports",
   "build:graph-projections",
