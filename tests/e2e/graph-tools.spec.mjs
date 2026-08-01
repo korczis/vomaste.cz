@@ -111,3 +111,50 @@ test.describe("procházení sousedů", () => {
     expect(stupne).toEqual([...stupne].sort((a, b) => b - a));
   });
 });
+
+test.describe("viditelný počet", () => {
+  // Hlášení v data-graph-status je sr-only. Počet po filtru tedy slyšel
+  // jen odečítač a vidoucí uživatel viděl jen ztlumené tečky — pro
+  // většinu lidí graf po filtru mlčel dál.
+  const pocet = (page) => page.locator("[data-graph-count]");
+
+  test("počet uzlů je vidět, ne jen slyšet", async ({ page }) => {
+    await page.goto("/map/");
+    await page.waitForTimeout(2500);
+    await expect(pocet(page)).toBeVisible();
+    await expect(pocet(page)).toHaveText(/\d+ uzlů/);
+  });
+
+  test("po filtru ukazuje viditelný počet shodu", async ({ page }) => {
+    await page.goto("/map/");
+    await page.waitForTimeout(2500);
+    await page.locator("[data-graph-search]").fill("Babiš");
+    await page.waitForTimeout(600);
+    await expect(pocet(page)).toHaveText(/\d+ z \d+ uzlů odpovídá filtru/);
+  });
+
+  test("po zrušení filtru nezůstane viset staré číslo", async ({ page }) => {
+    // Zastaralý údaj je horší než žádný: tváří se stejně důvěryhodně
+    // jako platný.
+    await page.goto("/map/");
+    await page.waitForTimeout(2500);
+    const search = page.locator("[data-graph-search]");
+    await search.fill("Babiš");
+    await page.waitForTimeout(600);
+    const filtrovano = await pocet(page).textContent();
+
+    await search.fill("");
+    await page.waitForTimeout(600);
+    const po = await pocet(page).textContent();
+    expect(po).not.toBe(filtrovano);
+    expect(po).toMatch(/^\d+ uzlů$/);
+  });
+
+  test("prázdná shoda se vizuálně odliší", async ({ page }) => {
+    await page.goto("/map/");
+    await page.waitForTimeout(2500);
+    await page.locator("[data-graph-search]").fill("zzzzz-neexistuje");
+    await page.waitForTimeout(600);
+    await expect(pocet(page)).toHaveClass(/graph-count-warn/);
+  });
+});

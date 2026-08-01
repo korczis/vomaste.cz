@@ -127,6 +127,13 @@
         <p class="graph-inspector-empty">Nic není vybráno. Klikněte na uzel nebo hranu.</p>
       </aside>
     </div>
+    {#- Viditelné počítadlo. Hlášení v data-graph-status je sr-only, takže
+        počet uzlů po filtru slyšel jen odečítač — vidoucí uživatel viděl
+        jen ztlumené tečky a nepoznal, jestli našel dva záznamy nebo dvě
+        stě. Verbózní hlášení (výběr uzlu, průběh načítání) zůstávají
+        sr-only, aby vizuální lišta nebyla hlučná; sem jde jen počet
+        a případná porucha. -#}
+    <p data-graph-count aria-hidden="true" class="graph-count"></p>
     <p class="sr-only" data-graph-status role="status" aria-live="polite"></p>
     <noscript><p class="mb-8 mt-4 text-xs text-white/50">Interaktivní mapa vyžaduje JavaScript — použijte textový registr níže.</p></noscript>
 

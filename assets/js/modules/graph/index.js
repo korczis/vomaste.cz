@@ -22,6 +22,17 @@ function announce(section, message) {
   if (status) status.textContent = message;
 }
 
+// Viditelný protějšek sr-only hlášení. Odděleno schválně: do vizuální
+// lišty patří jen počet a porucha, ne každé oznámení o výběru uzlu —
+// jinak by se lišta při procházení překreslovala u každého kliknutí
+// a přestala by se číst jako stav.
+function showCount(section, message, warn) {
+  const el = section && section.querySelector("[data-graph-count]");
+  if (!el) return;
+  el.textContent = message;
+  el.classList.toggle("graph-count-warn", Boolean(warn));
+}
+
 // mission § 13: WebGL unavailable/blocked must never leave a blank
 // canvas — explain what happened and point at the text alternative that
 // already exists lower on the same page, instead of a silent void.
@@ -89,12 +100,26 @@ export async function initGraphView(containerId, dataIslandId, fullLayerUrl) {
   function announceFilter(snapshot) {
     if (!controller.graph) return;
     const { matching, total, active } = countMatching(controller.graph, snapshot);
-    if (!active) return;
+    if (!active) {
+      // Po zrušení filtru se MUSÍ počítadlo přepsat, ne jen přeskočit:
+      // jinak by nad plným grafem zůstalo viset staré „3 z 1631",
+      // tedy číslo, které už neplatí. Zastaralý údaj je horší než žádný,
+      // protože se tváří stejně důvěryhodně jako platný.
+      showCount(section, `${total} uzlů`, false);
+      return;
+    }
     announce(
       section,
       matching === 0
         ? `Filtru neodpovídá žádný z ${total} uzlů.`
         : `Filtru odpovídá ${matching} z ${total} uzlů.`,
+    );
+    showCount(
+      section,
+      matching === 0
+        ? `Filtru neodpovídá žádný z ${total} uzlů`
+        : `${matching} z ${total} uzlů odpovídá filtru`,
+      matching === 0,
     );
   }
 

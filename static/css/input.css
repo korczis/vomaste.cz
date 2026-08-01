@@ -391,6 +391,12 @@
   /* Seznam sousedů: cíl kliknutí min. 36 px, protože tohle je hlavní
      způsob procházení grafu na dotykovém displeji, kde trefit se do
      tečky na plátně nejde. */
+  .graph-count {
+    margin-top: 0.5rem; font-size: 0.75rem; color: var(--text-faint);
+    font-variant-numeric: tabular-nums;
+  }
+  .graph-count-warn { color: #fcd34d; }
+
   .graph-inspector-neighbors { margin-top: 1rem; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 0.75rem; }
   .graph-inspector-subheading { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-faint); margin-bottom: 0.4rem; }
   .graph-inspector-neighbor-list { display: flex; flex-direction: column; gap: 0.125rem; }
