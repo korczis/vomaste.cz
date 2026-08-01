@@ -2,7 +2,7 @@
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Jaromír Zůna (místopředseda vlády a ministr obrany)"
 template = "entity.html"
-weight = 84
+weight = 25
 aliases = ["/dossiers/jaromir-zuna/entities/zuna/"]
 description = "Jaromír Zůna — místopředseda vlády a ministr obrany (Třetí vláda Andreje Babiše, stav k 2026-07-30). Kontextový záznam veřejné funkce z oficiálního zdroje, ne dossier."
 

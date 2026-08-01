@@ -2,7 +2,7 @@
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Podpůrný a garanční rolnický a lesnický fond (PGRLF)"
 template = "entity.html"
-weight = 57
+weight = 24
 aliases = ["/dossiers/andrej-babis/entities/pgrlf/"]
 
 [extra]

@@ -20,7 +20,7 @@
   "routeAliases": [
     "/dossiers/macinka-turek/entities/policie/"
   ],
-  "order": 60,
+  "order": 18,
   "content": [
     {
       "type": "markdown",

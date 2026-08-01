@@ -2,7 +2,7 @@
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Pekárna Zelená louka (skupina Agrofert)"
 template = "entity.html"
-weight = 54
+weight = 3
 aliases = ["/dossiers/karel-havlicek/entities/penam-zelena-louka/"]
 
 [extra]

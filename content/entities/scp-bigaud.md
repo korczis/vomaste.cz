@@ -2,7 +2,7 @@
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SCP Bigaud (Monako)"
 template = "entity.html"
-weight = 65
+weight = 15
 aliases = ["/dossiers/andrej-babis/entities/scp-bigaud/"]
 
 [extra]

@@ -2,7 +2,7 @@
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Robert Plaga (ministr školství, mládeže a tělovýchovy)"
 template = "entity.html"
-weight = 58
+weight = 31
 aliases = ["/dossiers/robert-plaga/entities/plaga/"]
 description = "Robert Plaga — ministr školství, mládeže a tělovýchovy (Třetí vláda Andreje Babiše, stav k 2026-07-30). Kontextový záznam veřejné funkce z oficiálního zdroje, ne dossier."
 

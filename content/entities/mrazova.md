@@ -2,7 +2,7 @@
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Zuzana Mrázová (ministryně pro místní rozvoj)"
 template = "entity.html"
-weight = 40
+weight = 29
 aliases = ["/dossiers/zuzana-mrazova/entities/mrazova/"]
 description = "Zuzana Mrázová — ministryně pro místní rozvoj (Třetí vláda Andreje Babiše, stav k 2026-07-30). Kontextový záznam veřejné funkce z oficiálního zdroje, ne dossier."
 

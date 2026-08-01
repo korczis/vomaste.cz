@@ -2,7 +2,7 @@
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Fakultní nemocnice Olomouc"
 template = "entity.html"
-weight = 17
+weight = 3
 aliases = ["/dossiers/adam-vojtech/entities/fn-olomouc/"]
 
 [extra]

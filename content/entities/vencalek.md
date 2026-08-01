@@ -2,7 +2,7 @@
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Petr Vencálek (vlastník GMR GAS s.r.o.)"
 template = "entity.html"
-weight = 78
+weight = 38
 
 [extra]
 generated = true

@@ -2,7 +2,7 @@
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "BOYNE HOLDING LLC (Washington, D.C.)"
 template = "entity.html"
-weight = 8
+weight = 14
 aliases = ["/dossiers/andrej-babis/entities/boyne-holding/"]
 
 [extra]

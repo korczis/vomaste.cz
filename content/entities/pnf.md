@@ -2,7 +2,7 @@
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Národní finanční prokuratura (PNF, Francie)"
 template = "entity.html"
-weight = 59
+weight = 8
 aliases = ["/dossiers/andrej-babis/entities/pnf/"]
 
 [extra]

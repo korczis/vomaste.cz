@@ -50,11 +50,20 @@
     map carries the same records the walk used to find, so a record may
     still physically live under any dossier. required=false keeps the page
     renderable outside the full pipeline. -#}
+{#- T-028 fáze F: doménová pole záznamu (identifier, text, kanonická
+    metadata zdroje) čte partial z view modelu (page.extra.view_model),
+    ne z front matter — front matter adaptér zůstává jen pro
+    prezentační/SEO scaffolding (title/description/seo_type/lang),
+    tedy tatáž pole, která plní <meta> tagy. -#}
+{%- set ld_view = false -%}
+{%- if ld_record_type == "claim" or ld_record_type == "source" -%}{%- if page.extra.view_model is defined -%}
+  {%- set ld_view = load_data(path="data/" ~ page.extra.view_model) -%}
+{%- endif -%}{%- endif -%}
 {%- set ld_claim_sources = [] -%}
 {%- if ld_record_type == "claim" -%}
   {%- set ld_cs_map = load_data(path="data/generated/claim-sources.json", required=false) | default(value=false) -%}
-  {%- if ld_cs_map -%}
-    {%- set ld_cs_key = ld_dossier ~ "/" ~ page.extra.clm_id -%}
+  {%- if ld_cs_map and ld_view -%}
+    {%- set ld_cs_key = ld_dossier ~ "/" ~ ld_view.record.identifier -%}
     {%- set ld_claim_sources = ld_cs_map[ld_cs_key] | default(value=[]) -%}
   {%- endif -%}
 {%- endif -%}
@@ -98,16 +107,16 @@
 {%- set ld_pos = ld_ancestors | length -%}
 {"@type":"ListItem","position":{{ ld_pos + 1 }},"name":{{ ld_title | json_encode | safe }}{% if current_url %},"item":{{ current_url | json_encode | safe }}{% endif %}}]}
 {%- endif -%}
-{%- if ld_record_type == "claim" -%}
-,{"@type":"Claim","name":{{ page.extra.clm_id | json_encode | safe }},"text":{{ page.extra.summary | json_encode | safe }},"inLanguage":{{ ld_lang | json_encode | safe }}{% if current_url %},"url":{{ current_url | json_encode | safe }}{% endif %}{% if ld_claim_sources | length > 0 %},"appearance":[{% for ld_s in ld_claim_sources %}{{ jsonld::ld_source_record(s=ld_s) }}{% if not loop.last %},{% endif %}{% endfor %}]{% endif %}}
+{%- if ld_record_type == "claim" and ld_view -%}
+,{"@type":"Claim","name":{{ ld_view.record.identifier | json_encode | safe }},"text":{{ ld_view.record.text | json_encode | safe }},"inLanguage":{{ ld_lang | json_encode | safe }}{% if current_url %},"url":{{ current_url | json_encode | safe }}{% endif %}{% if ld_claim_sources | length > 0 %},"appearance":[{% for ld_s in ld_claim_sources %}{{ jsonld::ld_source_record(s=ld_s) }}{% if not loop.last %},{% endif %}{% endfor %}]{% endif %}}
 {%- endif -%}
-{%- if ld_record_type == "source" -%}
+{%- if ld_record_type == "source" and ld_view -%}
 {%- set ld_fp = "" -%}
 {%- if ld_fps -%}
-  {%- set ld_fp_key = page.extra.dossier ~ "/" ~ page.extra.src_id -%}
+  {%- set ld_fp_key = ld_dossier ~ "/" ~ ld_view.record.identifier -%}
   {%- set ld_fp = ld_fps[ld_fp_key] | default(value="") -%}
 {%- endif -%}
-,{{ jsonld::ld_source_node(sp=page, name=ld_title, fp=ld_fp) }}
+,{{ jsonld::ld_source_canonical(record=ld_view.record, name=ld_title, fp=ld_fp) }}
 {%- endif -%}
 {%- for ld_item in ld_nav_items -%}
 {#- `anchor` je pro uzly bez vlastní routy (skupina konceptů je sekce

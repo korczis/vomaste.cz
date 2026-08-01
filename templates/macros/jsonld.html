@@ -18,6 +18,27 @@
     embedded citation and the export citation are verifiably the same.
     `vomaste:` prefixed keys resolve via the extended @context in
     templates/partials/jsonld.html. -#}
+{#- T-028 fáze F: citační uzel stránky zdroje se staví z KANONICKÉHO
+    záznamu (view model record: sourceType/url/outlet/published/retrieved),
+    ne z front matter — klíčové pořadí i tvar drží 1:1 s ld_source_node,
+    takže emitované JSON-LD bajty se nemění a fingerprint dál přepočítává
+    verify-jsonld ze stejných viditelných polí. -#}
+{%- macro ld_source_canonical(record, name="", fp="") -%}
+{%- set st = record.sourceType | default(value="") -%}
+{%- if "komentář" in st or "názor" in st -%}
+  {%- set ld_t = "OpinionNewsArticle" -%}
+{%- elif "rejstřík" in st or "databáze" in st -%}
+  {%- set ld_t = "Dataset" -%}
+{%- elif "oficiální" in st or "primární" in st -%}
+  {%- set ld_t = "Report" -%}
+{%- elif "zpravodajství" in st or "žurnalistika" in st or "tabloid" in st or "agentura" in st -%}
+  {%- set ld_t = "NewsArticle" -%}
+{%- else -%}
+  {%- set ld_t = "Article" -%}
+{%- endif -%}
+{"@type":{{ ld_t | json_encode | safe }},"url":{{ record.url | json_encode | safe }}{% if name %},"name":{{ name | json_encode | safe }}{% endif %}{% if record.outlet %},"publisher":{"@type":"Organization","name":{{ record.outlet | json_encode | safe }}}{% endif %}{% if record.published %},"datePublished":{{ record.published | json_encode | safe }}{% endif %}{% if record.retrieved %},"vomaste:retrieved":{{ record.retrieved | json_encode | safe }}{% endif %}{% if fp %},"vomaste:citationFingerprint":{{ fp | json_encode | safe }}{% endif %}}
+{%- endmacro ld_source_canonical -%}
+
 {%- macro ld_source_node(sp, name="", fp="") -%}
 {%- set st = sp.extra.src_type | default(value="") -%}
 {%- if "komentář" in st or "názor" in st -%}

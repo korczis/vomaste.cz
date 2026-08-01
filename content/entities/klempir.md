@@ -2,7 +2,7 @@
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Oto Klempíř (ministr kultury)"
 template = "entity.html"
-weight = 30
+weight = 35
 description = "Oto Klempíř — ministr kultury (Třetí vláda Andreje Babiše, stav k 2026-07-30). Kontextový záznam veřejné funkce z oficiálního zdroje, ne dossier."
 
 [extra]

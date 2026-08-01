@@ -35,23 +35,22 @@
 
   <article class="dossier-prose mb-10">{{ section.content | safe }}</article>
 
-  {% if section.subsections | length == 0 %}
+  {#- T-028 fáze F: rozdělení dossierů čte view model
+      (dossiers-index.json, karty v deterministickém abecedním pořadí),
+      ne front matter subsekcí; ruční prezentační title agregátu se dál
+      bere ze stránky (get_section) — kanonický title žije v kartě. -#}
+  {% set idx = load_data(path="data/generated/views/dossiers-index.json") %}
+  {% if idx.cards | length == 0 %}
   {{ ui::empty_state(message="Zatím zde není žádný autorizovaný dossier.") }}
   {% else %}
 
   {% set_global entity_dossiers = [] %}
   {% set_global aggregate_dossiers = [] %}
-  {#- sort: Zola nezaručuje pořadí subsections, takže bez řazení se
-        obsah mezi dvěma buildy téhož kódu přehází. Ověřeno dvěma běhy:
-        stejná množina, jiné pořadí. U webu, jehož hodnota stojí na
-        doložitelnosti, je nestabilní výstup vada — dva deploye by
-        ukázaly totéž jinak a diff mezi buildy je nečitelný. -#}
-  {% for sub_path in section.subsections | sort %}
-    {% set d = get_section(path=sub_path) %}
-    {% if d.extra.dossier_type == "aggregate" %}
-      {% set_global aggregate_dossiers = aggregate_dossiers | concat(with=[sub_path]) %}
+  {% for card in idx.cards %}
+    {% if card.dossierType == "aggregate" %}
+      {% set_global aggregate_dossiers = aggregate_dossiers | concat(with=[card.slug]) %}
     {% else %}
-      {% set_global entity_dossiers = entity_dossiers | concat(with=[sub_path]) %}
+      {% set_global entity_dossiers = entity_dossiers | concat(with=[card.slug]) %}
     {% endif %}
   {% endfor %}
 
@@ -60,9 +59,8 @@
   {% set_global t_sources = 0 %}
   {% set_global t_gaps = 0 %}
   {% set_global t_relations = 0 %}
-  {% for sub_path in entity_dossiers %}
-    {% set d = get_section(path=sub_path) %}
-    {% set counts = load_data(path="data/dossiers/" ~ d.extra.dossier ~ "/stats.toml") %}
+  {% for slug in entity_dossiers %}
+    {% set counts = load_data(path="data/dossiers/" ~ slug ~ "/stats.toml") %}
     {% if counts %}
       {% set_global t_claims = t_claims + counts.claims_total %}
       {% set_global t_sources = t_sources + counts.sources_total %}
@@ -106,8 +104,8 @@
   <h2 class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Agregované pohledy</h2>
   <p class="mb-3 text-xs text-white/50">Generované průniky nad výše uvedenými dossiery — ne samostatné dossiery, žádná vlastní kanonická data.</p>
   <div class="grid gap-4 sm:grid-cols-2">
-    {% for sub_path in aggregate_dossiers %}
-    {% set d = get_section(path=sub_path) %}
+    {% for slug in aggregate_dossiers %}
+    {% set d = get_section(path="dossiers/" ~ slug ~ "/_index.md") %}
     <a href="{{ d.permalink | safe }}" class="registry-card border-dashed">
       <span class="flex flex-wrap items-center gap-2">
         <span class="font-semibold text-white">{{ d.title }}</span>

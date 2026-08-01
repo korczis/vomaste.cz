@@ -2,7 +2,7 @@
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Národní rozpočtová rada"
 template = "entity.html"
-weight = 48
+weight = 3
 aliases = ["/dossiers/alena-schillerova/entities/nrr/"]
 
 [extra]

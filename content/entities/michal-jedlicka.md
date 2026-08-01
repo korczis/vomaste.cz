@@ -2,7 +2,7 @@
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Ing. Michal Jedlička"
 template = "entity.html"
-weight = 37
+weight = 47
 description = "Ing. Michal Jedlička — kontextový záznam rejstříkové vazby z ARES, ne dossier."
 
 [extra]

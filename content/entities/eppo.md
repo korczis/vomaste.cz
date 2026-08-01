@@ -2,7 +2,7 @@
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Úřad evropského veřejného žalobce (EPPO)"
 template = "entity.html"
-weight = 14
+weight = 11
 aliases = ["/dossiers/andrej-babis/entities/eppo/"]
 
 [extra]

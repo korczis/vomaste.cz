@@ -2,7 +2,7 @@
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Nehoda 2026"
 template = "entity.html"
-weight = 45
+weight = 11
 aliases = ["/dossiers/macinka-turek/entities/nehoda2026/"]
 
 [extra]

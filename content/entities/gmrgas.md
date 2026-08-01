@@ -2,7 +2,7 @@
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "GMR GAS UA LLC (Kyjev)"
 template = "entity.html"
-weight = 18
+weight = 14
 aliases = ["/dossiers/macinka-turek/entities/gmrgas/"]
 
 [extra]

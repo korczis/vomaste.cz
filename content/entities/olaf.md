@@ -2,7 +2,7 @@
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Evropský úřad pro boj proti podvodům (OLAF)"
 template = "entity.html"
-weight = 51
+weight = 21
 aliases = ["/dossiers/andrej-babis/entities/olaf/"]
 
 [extra]
