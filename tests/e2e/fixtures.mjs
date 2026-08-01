@@ -39,6 +39,10 @@ export const test = base.extend({
       });
     });
     await use(page);
+    // Bez tohohle se kontext požadavků ruší dřív, než doběhnou zachycené
+    // requesty, a test spadne na „Request context disposed" — což vypadá
+    // jako vada produktu, ale je to závod v úklidu fixture.
+    await page.unrouteAll({ behavior: "ignoreErrors" });
   },
 });
 

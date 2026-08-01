@@ -61,6 +61,24 @@ export function buildDossierCatalog(root, dossierSlugs) {
   });
 }
 
+// Popisek uzlu má nést VÝZNAM, ne kód.
+//
+// Uzly záznamů se dosud popisovaly identifikátorem (CLM-01, SRC-14).
+// V grafu o 1631 uzlech je to k ničemu: čtenář vidí mřížku kódů, které
+// nic neříkají, a musí kliknout na každý, aby zjistil, o co jde. Kód
+// zůstává v inspektoru a v adrese, kde slouží k dohledání; na plátně
+// patří text, který dává smysl na první pohled.
+//
+// Zkracuje se na hranici slova, aby popisek nekončil uprostřed výrazu.
+function graphLabel(text, fallback, max = 48) {
+  const s = (text || "").trim();
+  if (!s) return fallback;
+  if (s.length <= max) return s;
+  const cut = s.slice(0, max);
+  const space = cut.lastIndexOf(" ");
+  return (space > max * 0.6 ? cut.slice(0, space) : cut).trimEnd() + "…";
+}
+
 function resolveRoute(routeMap, key, errors, label) {
   const entry = routeMap[key];
   if (!entry) {
@@ -190,7 +208,7 @@ export function buildRegistryPayload(root, curatedEntityNodes, routeMap, errors)
       id: key(c.dossier, c.clm_id),
       canonical_id: c.clm_id,
       record_type: "claim",
-      label: c.clm_id,
+      label: graphLabel(c.summary, c.clm_id),
       route: resolveRoute(routeMap, `${c.dossier}:${c.clm_id}`, errors, `claim ${c.dossier}/${c.clm_id}`),
       dossier: c.dossier,
       status: c.status,
@@ -204,7 +222,7 @@ export function buildRegistryPayload(root, curatedEntityNodes, routeMap, errors)
       id: key(s.dossier, s.src_id),
       canonical_id: s.src_id,
       record_type: "source",
-      label: s.src_id,
+      label: graphLabel(s.outlet, s.src_id, 32),
       route: resolveRoute(routeMap, `${s.dossier}:${s.src_id}`, errors, `source ${s.dossier}/${s.src_id}`),
       dossier: s.dossier,
       outlet: s.outlet,
@@ -216,7 +234,7 @@ export function buildRegistryPayload(root, curatedEntityNodes, routeMap, errors)
       id: key(c.dossier, c.case_id),
       canonical_id: c.case_id,
       record_type: "case",
-      label: c.case_id,
+      label: graphLabel(c.title, c.case_id),
       route: resolveRoute(routeMap, `${c.dossier}:${c.case_id}`, errors, `case ${c.dossier}/${c.case_id}`),
       dossier: c.dossier,
       title: c.title,
@@ -229,7 +247,9 @@ export function buildRegistryPayload(root, curatedEntityNodes, routeMap, errors)
       id: key(g.dossier, g.gap_id),
       canonical_id: g.gap_id,
       record_type: "gap",
-      label: g.gap_id,
+      // Titulek mezery už kód obsahuje ("GAP-01 — …"), takže by se v popisku
+      // objevil dvakrát; odřízne se prefix a zůstane jen text otázky.
+      label: graphLabel((g.title || g.summary || "").replace(/^GAP-\d+\s*[—-]\s*/, ""), g.gap_id),
       route: resolveRoute(routeMap, `${g.dossier}:${g.gap_id}`, errors, `gap ${g.dossier}/${g.gap_id}`),
       dossier: g.dossier,
       priority: g.priority,

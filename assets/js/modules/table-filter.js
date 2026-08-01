@@ -107,6 +107,11 @@ export function registerTableFilter() {
       // zůstávají tady, takže se tři pohledy nemůžou rozejít.
       directory: false,
       view: "table",
+      // Rozlišuje VOLBU uživatele od automatického odvození podle šířky
+      // displeje. Jen volba se zapisuje do adresy: čerstvá návštěva na
+      // mobilu by jinak dostala ?view=list, aniž by o to kdo požádal, a
+      // sdílený odkaz by pak nesl rozhodnutí, které udělal prohlížeč.
+      viewExplicit: false,
       allowedViews: ["table", "list", "grid"],
       records: new Map(),
 
@@ -473,6 +478,7 @@ export function registerTableFilter() {
         // Rozlišení „parametr chybí" vs. „parametr má výchozí hodnotu" je
         // přesně to, na čem tohle rozhodování stojí.
         const fromUrl = this.urlState ? readState({ view: "" }).view : "";
+        if (this.allowedViews.includes(fromUrl)) this.viewExplicit = true;
         if (this.allowedViews.includes(fromUrl)) return fromUrl;
         let stored = "";
         try {
@@ -480,7 +486,10 @@ export function registerTableFilter() {
         } catch (e) {
           stored = "";
         }
-        if (this.allowedViews.includes(stored)) return stored;
+        if (this.allowedViews.includes(stored)) {
+          this.viewExplicit = true;
+          return stored;
+        }
         const fallback = this.$root.dataset.defaultView || "table";
         // Na úzkém displeji je tabulka nepoužitelná; seznam je hustý
         // a čitelný. Rozhoduje se jednou při startu, ne při každé změně
@@ -536,6 +545,7 @@ export function registerTableFilter() {
       setView(next) {
         if (!this.allowedViews.includes(next) || next === this.view) return;
         this.view = next;
+        this.viewExplicit = true;
         this.applyView();
         try {
           window.localStorage.setItem("vomaste:directory-view", next);
@@ -671,7 +681,7 @@ export function registerTableFilter() {
           f: this.facet,
         };
         if (this.$root.dataset.inspector) state.inspect = this.inspected;
-        if (this.directory) state.view = this.view;
+        if (this.directory && this.viewExplicit) state.view = this.view;
         this.selectFacets.forEach((attr) => {
           state[attr] = this.facetValues[attr];
         });

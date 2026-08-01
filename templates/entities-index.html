@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 {% import "macros/ui.html" as ui %}
+{% import "macros/views.html" as views %}
+{% import "macros/table.html" as table %}
 
 {#-
   Registr entit jako průzkumník, ne jako plochá zeď dlaždic.
@@ -13,7 +15,8 @@
   bez zásahu do šablony.
 
   Bez JavaScriptu zůstává viditelný plochý seznam všech entit (pool) —
-  skupiny nad ním staví assets/js/modules/entity-explorer.js.
+  projekce nad ním řídí sdílená komponenta advancedTable()
+  (assets/js/modules/table-filter.js), stejně jako u ostatních registrů.
 -#}
 
 {% block content %}
@@ -56,128 +59,93 @@
     {%- set_global dossier_labels = dossier_labels ~ sep ~ '"' ~ d.slug ~ '":"' ~ d.title ~ '"' -%}
   {%- endfor -%}
 
-  <section
-    x-data="entityExplorer"
-    data-dossier-labels='{ {{- dossier_labels | safe -}} }'
-    data-type-labels='{ {{- type_labels | safe -}} }'
-    data-role-labels='{"subject":"Subjekty dossierů","context":"Kontextové entity"}'
-    data-letter-labels='{}'
-    class="mb-10"
-    aria-label="Průzkumník entit"
-  >
-    <div class="rounded-2xl border border-white/10 bg-white/[0.02] p-4">
-      <div class="flex flex-wrap items-end gap-3">
-        <div class="min-w-[14rem] flex-1">
-          <label for="entity-search" class="mb-1 block text-xs uppercase tracking-wide text-white/55">Hledat entitu</label>
-          <input
-            id="entity-search"
-            type="search"
-            x-model="search"
-            x-on:input="apply()"
-            placeholder="jméno, typ, dossier…"
-            class="w-full rounded-lg border border-white/10 bg-black/40 px-3 py-2 text-sm text-white placeholder:text-white/55"
-          />
+    {#- Tři projekce jako u ostatních registrů (coop T-033).
+      Nahradilo to entityExplorer, který entity vizuálně seskupoval podle
+      typu. KOMPROMIS, který stojí za zmínku: filtrovací hodnota seskupení
+      zůstává jako selektory (typ, role, dossier), ale vizuální shlukování
+      s počty na skupinu zaniklo. Důvodem je konzistence — entity se do
+      teď chovaly jinak než všech pět ostatních kolekcí, a uživatel se
+      musel učit dvě různá ovládání.
+
+      data-jsonld-id zůstává na každé položce, takže co je vidět, je
+      dohledatelné jako uzel v exportu. -#}
+  {{ views::open(
+    id="entities-registry",
+    title="Registr entit",
+    count=section.pages | length,
+    default_view="table",
+    search_label="Hledat entitu",
+    sort_options=["name::Název", "type::Typ", "role::Role", "dossiers::Počet dossierů"],
+    columns=["ID", "Název", "Typ", "Role", "Dossierů"],
+    export_name="entity",
+    select_facets=["entitytype::Typ entity", "role::Role v publikaci"]) }}
+
+  {{ views::projection(name="table", default_view="table") }}
+    {{ table::advanced_table(
+      id="entities-registry-table",
+      caption="Registr entit",
+      record_type="entity",
+      columns=["ID", "Název", "Typ", "Role", "Dossierů"],
+      sort_keys=["id", "name", "type", "role", "dossiers"]) }}
+      {%- for p in section.pages %}
+      <tr data-record-key="{{ p.extra.entity_id }}" data-entitytype="{{ p.extra.entity_type }}" data-role="{{ p.extra.publication_role }}"
+        data-jsonld-id="{{ p.permalink | safe }}#entity" id="entities-registry-table-{{ p.extra.entity_id | lower }}">
+        <td class="whitespace-nowrap p-3 align-top" data-sort-value="{{ p.extra.entity_id }}">
+          <a href="{{ p.permalink | safe }}" class="font-mono text-xs text-[#f3e5c0] no-underline hover:underline">{{ p.extra.entity_id }}</a>
+        </td>
+        <td class="p-3 align-top" data-sort-value="{{ p.title }}">
+          <a href="{{ p.permalink | safe }}" class="font-semibold text-white no-underline hover:underline">{{ p.title }}</a>
+          {%- if p.extra.government_office %}<span class="mt-0.5 block text-xs text-white/55">{{ p.extra.government_office }}</span>{% endif %}
+        </td>
+        <td class="whitespace-nowrap p-3 align-top text-xs text-white/55" data-sort-value="{{ p.extra.entity_type }}">{{ p.extra.entity_type }}</td>
+        <td class="whitespace-nowrap p-3 align-top" data-sort-value="{{ p.extra.publication_role }}">
+          {%- if p.extra.publication_role == "subject" %}
+          <span class="rounded bg-[#f3e5c0]/10 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-[#f3e5c0]">subjekt dossieru</span>
+          {%- else %}
+          <span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-white/55">kontextová</span>
+          {%- endif %}
+        </td>
+        <td class="p-3 align-top tabular-nums text-white/70" data-sort-value="{{ p.extra.dossiers | length }}">{{ p.extra.dossiers | length }}</td>
+      </tr>
+      {%- endfor %}
+    {{ table::advanced_table_end() }}
+  {{ views::projection_end() }}
+
+  {{ views::projection(name="list", default_view="table") }}
+    <ul class="divide-y divide-white/10 overflow-hidden rounded-lg border border-white/10 bg-white/[0.03]">
+      {%- for p in section.pages %}
+      <li data-record-key="{{ p.extra.entity_id }}" data-entitytype="{{ p.extra.entity_type }}" data-role="{{ p.extra.publication_role }}"
+        data-jsonld-id="{{ p.permalink | safe }}#entity" id="entities-registry-list-{{ p.extra.entity_id | lower }}" class="p-3">
+        <div class="flex flex-wrap items-baseline gap-x-2 gap-y-1">
+          <a href="{{ p.permalink | safe }}" class="font-mono text-xs text-[#f3e5c0] no-underline hover:underline">{{ p.extra.entity_id }}</a>
+          <span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-white/55">{{ p.extra.entity_type }}</span>
+          <span class="ml-auto text-xs text-white/55">{{ p.extra.dossiers | length }} dossier{% if p.extra.dossiers | length != 1 %}ů{% endif %}</span>
         </div>
-
-        <div>
-          <span id="entity-group-label" class="mb-1 block text-xs uppercase tracking-wide text-white/55">Seskupit podle</span>
-          {#- Otevírání menu řídí Flowbite (data-dropdown-*), hodnotu drží
-              Alpine. Jedna komponenta, jeden vlastník na každou věc —
-              nikdy obojí na totéž (viz docs/coop/TASKS.md, T-014). -#}
-          <button
-            id="entity-group-button"
-            data-dropdown-toggle="entity-group-menu"
-            type="button"
-            aria-labelledby="entity-group-label entity-group-button"
-            class="inline-flex w-full items-center justify-between gap-2 rounded-lg border border-white/10 bg-black/40 px-3 py-2 text-xs text-white sm:w-48"
-          >
-            <span x-text="groupings.find(g => g.id === groupBy).label"></span>
-            <svg class="h-3 w-3 text-white/55" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
-            </svg>
-          </button>
-          <div id="entity-group-menu" class="z-20 hidden w-56 rounded-lg border border-white/10 bg-[#0b0b0b] py-1 shadow-xl">
-            <ul class="text-xs text-white/70" aria-labelledby="entity-group-button">
-              <template x-for="g in groupings" :key="g.id">
-                <li>
-                  <button
-                    type="button"
-                    x-on:click="setGroup(g.id)"
-                    x-text="g.label"
-                    :aria-current="groupBy === g.id ? 'true' : 'false'"
-                    :class="groupBy === g.id ? 'bg-[#f3e5c0]/10 text-[#f3e5c0]' : 'hover:bg-white/5 hover:text-white'"
-                    class="block w-full px-3 py-2 text-left"
-                  ></button>
-                </li>
-              </template>
-            </ul>
-          </div>
-        </div>
-
-        <div>
-          <span class="mb-1 block text-xs uppercase tracking-wide text-white/55">Role</span>
-          <div class="flex flex-wrap gap-1" role="group" aria-label="Filtr podle role v publikaci">
-            <button type="button" x-on:click="toggleRole('subject')" :aria-pressed="role === 'subject' ? 'true' : 'false'"
-              :class="role === 'subject' ? 'border-[#f3e5c0]/40 bg-[#f3e5c0]/10 text-[#f3e5c0]' : 'border-white/10 bg-black/40 text-white/60 hover:text-white'"
-              class="rounded-lg border px-3 py-2 text-xs">Subjekty</button>
-            <button type="button" x-on:click="toggleRole('context')" :aria-pressed="role === 'context' ? 'true' : 'false'"
-              :class="role === 'context' ? 'border-[#f3e5c0]/40 bg-[#f3e5c0]/10 text-[#f3e5c0]' : 'border-white/10 bg-black/40 text-white/60 hover:text-white'"
-              class="rounded-lg border px-3 py-2 text-xs">Kontextové</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="mt-3 flex flex-wrap items-center gap-3 border-t border-white/10 pt-3 text-xs text-white/50">
-        <span><span class="tabular-nums text-white" x-text="visible"></span> z <span class="tabular-nums" x-text="total"></span> entit ve <span class="tabular-nums text-white" x-text="groupCount"></span> skupinách</span>
-        <button type="button" x-on:click="setAllOpen(true)" class="rounded border border-white/10 px-2 py-1 hover:text-white">Rozbalit vše</button>
-        <button type="button" x-on:click="setAllOpen(false)" class="rounded border border-white/10 px-2 py-1 hover:text-white">Sbalit vše</button>
-        <button type="button" x-on:click="reset()" x-show="search || role" class="rounded border border-white/10 px-2 py-1 hover:text-white">Zrušit filtry</button>
-      </div>
-    </div>
-
-    {#- Skupiny staví komponenta z uzlů poolu níž. -#}
-    <div x-ref="groups" class="mt-4 grid gap-3"></div>
-
-    <div x-show="visible === 0" x-cloak class="mt-4">
-      {{ ui::empty_state(message="Žádná entita neodpovídá zadání. Zkuste jiné slovo nebo zrušte filtr role.") }}
-    </div>
-
-    {#- Pool: úplný seznam entit. S JavaScriptem slouží jako zdroj uzlů pro
-        skupiny a skryje se; bez něj je to plnohodnotný, použitelný registr. -#}
-    {#- x-show="false" skryje pool teprve tehdy, když Alpine skutečně
-        naběhne. Bez JavaScriptu žádné pravidlo nezasáhne a seznam zůstane
-        viditelný — proto ne `hidden` ani CSS třída. -#}
-    <ul x-ref="pool" x-show="false" class="mt-4 grid gap-2 sm:grid-cols-2 xl:grid-cols-3">
-      {% for p in section.pages %}
-      <li
-        data-entity-id="{{ p.extra.entity_id }}"
-        data-name="{{ p.title }}"
-        data-entity-type="{{ p.extra.entity_type }}"
-        data-role="{{ p.extra.publication_role }}"
-        data-dossiers="{{ p.extra.dossiers | join(sep='|') }}"
-        data-jsonld-id="{{ p.permalink | safe }}#entity"
-      >
-        <a href="{{ p.permalink | safe }}" class="registry-card h-full">
-          <span class="flex flex-wrap items-center gap-2">
-            <span class="font-mono text-xs text-[#f3e5c0]">{{ p.extra.entity_id }}</span>
-            <span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-white/50">{{ p.extra.entity_type }}</span>
-            {% if p.extra.publication_role == "subject" %}
-            <span class="rounded bg-[#f3e5c0]/10 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-[#f3e5c0]">subjekt dossieru</span>
-            {% else %}
-            <span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-white/55">kontextová</span>
-            {% endif %}
-          </span>
-          <span class="mt-1 font-semibold text-white">{{ p.title }}</span>
-          <span class="mt-1 text-xs text-white/55">
-            {{ p.extra.dossiers | length }} dossier{% if p.extra.dossiers | length != 1 %}ů{% endif %}
-            {%- if p.extra.government_office %} · {{ p.extra.government_office }}{% endif %}
-          </span>
-        </a>
+        <a href="{{ p.permalink | safe }}" class="mt-1 block font-semibold text-white no-underline hover:underline">{{ p.title }}</a>
       </li>
-      {% endfor %}
+      {%- endfor %}
     </ul>
-  </section>
+  {{ views::projection_end() }}
 
-  {{ ui::back_link_footer(url=get_url(path="@/_index.md"), label="Zpět na hlavní stránku") }}
+  {{ views::projection(name="grid", default_view="table") }}
+    <div class="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+      {%- for p in section.pages %}
+      <article data-record-key="{{ p.extra.entity_id }}" data-entitytype="{{ p.extra.entity_type }}" data-role="{{ p.extra.publication_role }}"
+        data-jsonld-id="{{ p.permalink | safe }}#entity" id="entities-registry-grid-{{ p.extra.entity_id | lower }}"
+        class="rounded-lg border border-white/10 bg-white/[0.03] p-3">
+        <div class="flex flex-wrap items-baseline justify-between gap-2">
+          <a href="{{ p.permalink | safe }}" class="font-mono text-xs text-[#f3e5c0] no-underline hover:underline">{{ p.extra.entity_id }}</a>
+          <span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-white/55">{{ p.extra.entity_type }}</span>
+        </div>
+        <a href="{{ p.permalink | safe }}" class="mt-1.5 block text-sm font-semibold text-white no-underline hover:underline">{{ p.title }}</a>
+        <p class="mt-1 text-xs text-white/55">{{ p.extra.dossiers | length }} dossier{% if p.extra.dossiers | length != 1 %}ů{% endif %}</p>
+      </article>
+      {%- endfor %}
+    </div>
+  {{ views::projection_end() }}
+
+  {{ views::close(empty_text="Žádná entita neodpovídá zadanému filtru.") }}
+
+{{ ui::back_link_footer(url=get_url(path="@/_index.md"), label="Zpět na hlavní stránku") }}
 </main>
 {% endblock content %}
