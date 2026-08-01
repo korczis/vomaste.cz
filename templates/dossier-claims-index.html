@@ -63,7 +63,7 @@
         <span class="status-badge {{ p.extra.status }}">{{ p.extra.status_label }}</span>
       </td>
       <td class="p-3 align-top text-white/75">
-        <a href="{{ p.permalink | safe }}" class="text-white/75 no-underline hover:text-white hover:underline">{{ p.extra.summary }}</a>
+        <a href="{{ p.permalink | safe }}" class="line-clamp-3 text-white/75 no-underline hover:text-white hover:underline sm:line-clamp-none">{{ p.extra.summary }}</a>
       </td>
       {#- data-sort-value nese počet, ne vypsané identifikátory: řadit se má
           podle míry doložení, ne podle abecedy prvního zdroje. -#}
