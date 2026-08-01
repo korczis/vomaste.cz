@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/relations/edge-macinka-klubmotoristu",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-macinka-klubmotoristu",
+  "relationId": "edge-macinka-klubmotoristu",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/macinka"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/klubmotoristu"
+  },
+  "relationType": "HOLDS_ROLE",
+  "label": "statutární orgán",
+  "status": "single",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-22"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-24"
+    }
+  ],
+  "subjects": [
+    "macinka"
+  ],
+  "directed": true,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam vztahu edge-macinka-klubmotoristu — typ vztahu, podporující tvrzení a zdroje v tabulce výše jsou úplné. Status 1 ZDROJ znamená, že vztah stojí na jediném citovaném zdroji — stejně jako tvrzení, o které se opírá. Do 2026-07-30 tu byl uveden status FAKT („doloženo nezávisle potvrzenými zdroji\"), což bylo silnější, než zdroje unesou; vztahy tehdy neměly jednozdrojový stav k dispozici a jediná alternativa („kontextové\") by naopak tvrdila méně. Není to zjištění, že by vztah byl sporný — jen že ho zatím potvrzuje jedna redakce. Hlavní stránka dossieru vykresluje interaktivní graf ze stejných dat."
+    }
+  ]
+}

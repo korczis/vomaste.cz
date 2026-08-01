@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-40",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-40",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-40 — PGRLF: PGRLF přistoupil k soudnímu vymáhání podpory u 28 společností z koncernu Agrofert (20. 7. 2026)",
+  "outlet": "Podpůrný a garanční rolnický a lesnický fond (PGRLF)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://www.pgrlf.cz/2026/07/20/pgrlf-pristoupil-k-soudnimu-vymahani-podpory-u-28-spolecnosti-z-koncernu-agrofert/",
+  "published": "2026-07-20",
+  "retrieved": "2026-08-01",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-60"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tisková zpráva PGRLF oznamuje soudní vymáhání „nároku na vrácení\npodpory v souhrnné výši 22 milionů“ korun u „28 podniků, které byly\nv rozhodném období součástí koncernu Agrofert“, jde o podpory\nposkytnuté v letech 2017–2021 a důvodem je „rozpor s pravidly\nupravujícími střet zájmů“. Dotčené subjekty byly předtím vyzvány\nk dobrovolnému vrácení podpory; „k dobrovolnému vrácení podpory\nnedošlo“.\n\n**Poznámka**: primární zdroj **žalující strany** — dokládá fakt podání\nžalob a tvrzený právní důvod, nikoli jejich oprávněnost; tu posoudí až\nsoud. Faktické údaje se z něj přebírají, hodnocení ne.\n\n**Nezávislost**: jiná vydavatelská rodina než agenturní zpráva ČTK\n([SRC-38](@/dossiers/andrej-babis/sources/src-38.md)). Otevřeno a\npřečteno 2026-08-01."
+    }
+  ],
+  "order": 40
+}

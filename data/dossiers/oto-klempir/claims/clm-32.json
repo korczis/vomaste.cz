@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-32",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-32",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
+  },
+  "text": "Rozpočet ministerstva kultury na rok 2026 činí 17,6 miliardy korun, tedy zhruba o 1,17 miliardy méně než návrh předchozí vlády; symfonickým orchestrům a pěveckým sborům bylo škrtnuto 100 milionů korun (asi 25 procent), u kulturních aktivit více než 300 milionů, přičemž ministerstvo dopad na orchestry hájí jako „méně než dvě procenta jejich rozpočtů“.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-24"
+    }
+  ],
+  "subjects": [
+    "klempir"
+  ],
+  "order": 32,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/oto-klempir/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

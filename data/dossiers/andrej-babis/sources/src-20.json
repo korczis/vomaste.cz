@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-20",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-20",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-20 — Transparency International: Evropská komise uzavřela auditní proces (26. 7. 2022)",
+  "outlet": "Transparency International ČR",
+  "sourceType": "stanovisko organizace",
+  "url": "https://www.transparency.cz/evropska-komise-uzavrela-auditni-proces-tykajici-se-stretu-zajmu-andreje-babise-potvrzuje-tak-opet-zavery-transparency/",
+  "published": "2022-07-26",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-46"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Stanovisko nevládní organizace, která auditní proces v roce 2018 podnětem\niniciovala.\n**Co dokládá:** že české úřady obdržely 20. července 2022 dopis, podle\nkterého útvary Komise považují audit číslo REGC414CZ0133 za uzavřený,\nprotože všechna doporučení byla „plně a náležitě provedena“, a že audit\nbyl zahájen počátkem roku 2019 na podnět této organizace z roku 2018.\n\n**Nezávislost a povaha zdroje:** **není to nezávislé zpravodajství ani\núřední dokument Komise.** Je to vyjádření strany, která podnět podala a\nkterá výsledek prezentuje jako potvrzení vlastních závěrů. Citované\nfaktické údaje (datum dopisu, číslo auditu, doslovná formulace) se\npřebírají; hodnocení organizace nikoli.\n\n**Limity:** uzavření auditu znamená, že **doporučení byla provedena** —\nnení to zproštění, osvobození ani zjištění, že ke střetu zájmů nedošlo,\na stejně tak to není rozhodnutí o něčí odpovědnosti."
+    }
+  ],
+  "order": 20
+}

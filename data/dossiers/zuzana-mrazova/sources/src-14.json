@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-14",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-14",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "title": "SRC-14 — e15.cz",
+  "outlet": "e15.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://www.e15.cz/domaci/ministryne-mrazova-za-ano-dostala-pokutu-za-poruseni-zakona-o-stretu-zajmu-1434545",
+  "published": "2026-07-25",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-20"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-21"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-23"
+    }
+  ],
+  "subjects": [
+    "mrazova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Ministryně Mrázová za ANO dostala pokutu za porušení zákona o střetu zájmů**\n\nNepravomocná pokuta od mosteckého magistrátu, hodnoceno jako přestupek z nedbalosti. V majetkovém oznámení za 2024 nepravdivě uvedla, že neměla peněžité příjmy ani majetkový prospěch nad 100 tis. Kč. Půjčku 500 tis. Kč od rodiny přiznala až na květnové tiskové konferenci. Rozhodnutí může nabýt právní moci do tří týdnů, pokud se neodvolá. Uvádí souvislost s dalšími kauzami (černé stavby, obecní byt 130 m² za ~4 500 Kč od 2009) a obhajobu Babiše.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 14
+}

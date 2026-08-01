@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-14",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-14",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "Podle téhož zdroje prokuratura o zahájení stíhání dosud nerozhodla, protože čeká na předání vyšetřovacího spisu; podstatnou roli v dalším postupu hrají promlčecí lhůty, u daňového podvodu a praní peněz podle francouzského práva zpravidla šestileté",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-05"
+    }
+  ],
+  "subjects": [],
+  "order": 14,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

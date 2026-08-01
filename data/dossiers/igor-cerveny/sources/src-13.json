@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-13",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-13",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "title": "SRC-13 — FORUM 24",
+  "outlet": "FORUM 24",
+  "sourceType": "zpravodajství",
+  "url": "https://www.forum24.cz/cerveneho-majetkove-priznani-resi-prestupkovy-urad-hrozi-mu-pokuta-50-tisic",
+  "published": "2026-05-06",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-21"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Červeného majetkové přiznání řeší přestupkový úřad. Hrozí mu pokuta 50 tisíc**\n\nUvádí, že Ministerstvo spravedlnosti postoupilo věc Městskému úřadu Nymburk 22. dubna 2026 a že za přestupek lze uložit pokutu do 50 000 Kč. Obsahuje ministrovu reakci „Jestli jsem se spletl…“. Neuvádí lhůty pro rozhodnutí úřadu.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 13
+}

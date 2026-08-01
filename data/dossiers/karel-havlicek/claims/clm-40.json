@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-40",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-40",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "text": "Havlíček vedl 26. února 2026 českou delegaci na zasedání Rady EU pro konkurenceschopnost (COMPET) v Bruselu, kde se mimo jiné jednalo o nouzových plánech průmyslové odolnosti navazujících na akční plány pro ocelářský, automobilový a chemický průmysl v rámci Dohody o čistém průmyslu.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-26"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "order": 40,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/karel-havlicek/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

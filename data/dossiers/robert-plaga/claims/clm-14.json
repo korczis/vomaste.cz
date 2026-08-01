@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-14",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-14",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "text": "Návrh zákazu mobilů počítá s výjimkami ze zdravotních důvodů a pro speciální vzdělávací potřeby, pro výuku s povolením školy a pro akce mimo školní prostory; zákaz se má vztahovat i na jídelny, družiny a kluby a návrh musí ještě projít parlamentem.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-32"
+    }
+  ],
+  "subjects": [
+    "plaga"
+  ],
+  "order": 14,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/robert-plaga/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

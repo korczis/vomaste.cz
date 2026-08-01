@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-25",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-25",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "title": "SRC-25 — Security magazín",
+  "outlet": "Security magazín",
+  "sourceType": "zpravodajství",
+  "url": "https://www.securitymagazin.cz/defence/vybor-pro-obranu-general-hlavac-1404074345.html",
+  "published": "2026-05-27",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-25"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-26"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-27"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-32"
+    }
+  ],
+  "subjects": [
+    "zuna"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Kontinuita s akcentem na rychlost: ministr Zůna a generál Hlaváč plánují proměnit českou armádu**\n\nJednomyslná podpora sněmovního výboru pro obranu pro jmenování Hlaváče od 1. 7. 2026, Zůnovo doporučující stanovisko navzdory jeho hlasování na vládě 18. 5., tři varianty koncepce podle výše výdajů a modernizační priority.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 25
+}

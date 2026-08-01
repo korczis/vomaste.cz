@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-39",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-39",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-39 — Seznam Zprávy",
+  "outlet": "Seznam Zprávy",
+  "sourceType": "zpravodajství",
+  "url": "https://www.seznamzpravy.cz/clanek/volby-do-poslanecke-snemovny-dum-za-50-milionu-i-vazba-na-babise-kdo-je-nejvetsi-mecenas-letosnich-voleb-279644",
+  "published": "2025-08-14",
+  "retrieved": "2026-07-22",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-35"
+    }
+  ],
+  "subjects": [
+    "macinka",
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Seznam Zprávy (14. 8. 2025) mapují velké dárce napříč stranami před\nvolbami do PS 2025. U Motoristů sobě uvádí dva významné dárce:\n\n- **Boris Šťastný** (pražský lídr kandidátky, lékař, bývalý poslanec\n  ODS) — přes svou firmu Medical Investments daroval kolem 5 milionů Kč\n  (3 miliony zákonné maximum na subjekt plus zhruba 1,8 milionu v roce\n  2024). Provozuje síť domovů Alzheimer Home; jeho širší holding podle\n  článku čerpal v letech 2020–2023 přes 290 milionů Kč státních dotací\n  na sociální služby.\n- **František Fabičovic** (podnikatel) — 1 milion Kč; dlouholetý\n  přítel otce předsedy Motoristů Petra Macinky, kterého zaměstnává na\n  hudební vystoupení.\n\nDossier tyto dary vede jako zdokumentovaný fakt financování kampaně, ne\njako tvrzení o protiprávnosti — darování v mezích zákonných limitů samo\no sobě není pochybením."
+    }
+  ],
+  "order": 39
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-36",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-36",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "title": "SRC-36 — ČeskéNoviny.cz (ČTK): Prezident a ministr Červený jednali i o řešení možného střetu zájmů (19. 2. 2026)",
+  "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceFamily": "ctk",
+  "sourceType": "agenturní zpravodajství",
+  "url": "https://www.ceskenoviny.cz/zpravy/2787863",
+  "published": "2026-02-19",
+  "retrieved": "2026-07-31",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-33"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "ČeskéNoviny.cz dne 19. 2. 2026: „V diskusi se dotkli i řešení možného\nstřetu zájmů Červeného.\" Podle článku ministr přislíbil věc vyřešit v\nsouladu se zákonem s tím, že drží jen menšinový podíl v jedné firmě\nzabývající se výrobou podcastů.\n\n**Nezávislost**: samostatná redakce/agentura od Ekonomický deník\n(SRC-26) — obě nezávisle potvrzují tutéž skutečnost. Proto CLM-33 nese\nstav `CORROBORATED`."
+    }
+  ],
+  "order": 36
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-04",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-04",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "title": "SRC-04 — ČeskéNoviny.cz (ČTK)",
+  "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceType": "zpravodajství",
+  "url": "https://www.ceskenoviny.cz/zpravy/snemovna-schvalila-spornou-novelu-rozpoctovych-zakonu/2825582",
+  "published": "2026-05-15",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-08"
+    }
+  ],
+  "subjects": [
+    "schillerova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Sněmovna schválila spornou novelu rozpočtových zákonů**\n\nZpráva o schválení novely rozpočtových zákonů Poslaneckou sněmovnou 15. 5. 2026 na mimořádné schůzi poměrem 91:68. Popisuje přijaté pozměňovací návrhy (prodloužení obranné výjimky a výjimky pro strategickou infrastrukturu do roku 2036, možnost navýšit výdaje o 10 %), obhajobu ministryně Schillerové jako navrhovatelky a varování opozice, která avizuje podání k Ústavnímu soudu. Novela míří do Senátu.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 4
+}

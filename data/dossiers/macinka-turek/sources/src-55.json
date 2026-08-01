@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-55",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-55",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-55 — ARES (Ministerstvo financí ČR)",
+  "outlet": "ARES — Administrativní registr ekonomických subjektů (Ministerstvo financí ČR)",
+  "sourceType": "primární registr / veřejný rejstřík",
+  "url": "https://ares.gov.cz/ekonomicke-subjekty?ico=28274318",
+  "published": "2023-11-26",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-46"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-48"
+    }
+  ],
+  "subjects": [
+    "macinka"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Primární státní registr, dotázaný programově 2026-07-30 (rozhraní\n`ekonomicke-subjekty-v-be/rest`, včetně větve veřejného rejstříku\n`ekonomicke-subjekty-vr`) — ne rešerší přes žurnalistiku. Datum\n„zveřejněno\" je datum poslední aktualizace samotného rejstříkového\nzáznamu, ne datum dotazu.\n\n**Co dokládá.** Existenci a totožnost české společnosti, kterou\nInvestigace.cz v [SRC-17](@/dossiers/macinka-turek/sources/src-17.md)\npopisuje jen slovně jako „českou společnost vyrábějící regulátory tlaku\nplynu\" s majitelem Petrem Vencálkem: **GMR GAS s.r.o., IČO 28274318**,\nsídlo Mlýnská 326/13, Trnitá, 602 00 Brno, spisová značka C 57941 vedená\nu Krajského soudu v Brně, zapsána 2008-02-25 pod původním jménem\nKADAR s.r.o. a přejmenována 2015-01-07. Základní kapitál 200 000 Kč,\nsplacen ze 100 %. Mezi zapsanými činnostmi je „montáž, opravy, revize a\nzkoušky plynových zařízení a plnění nádob plyny\" (od 2019-05-13),\nobráběčství a výroba a opravy elektrických strojů a přístrojů (obojí od\n2015-01-07). Jediným společníkem s podílem 100 % (vklad 200 000 Kč) a\njednatelem je **Petr Vencálek**, jednatelem od 2014-12-18.\n\n**Nezávislost.** Rejstříkový záznam a SRC-17 jsou dva vzájemně nezávislé\nzdroje různé povahy: státní registr vedený Ministerstvem financí a\ninvestigativní redakce. U CLM-48 se proto počítají jako dvě nezávislá\npotvrzení. Nejde o zdrojovou rodinu s Hlídačem státu (SRC-23 až SRC-27,\nSRC-41) — ten rejstříková data strojově agreguje, tady jde o dotaz na\nprimární registr samotný.\n\n**Limity — co tento zdroj nedokládá.** ARES pokrývá české ekonomické\nsubjekty; k ukrajinské GMR GAS UA LLC neříká nic, a tedy ani nepotvrzuje\nani nevyvrací, že je pobočkou této české firmy nebo že v ní česká firma\ndrží podíl — to zůstává tvrzením SRC-17\n([CLM-47](@/dossiers/macinka-turek/claims/clm-47.md)), a stav ukrajinské\nfirmy zůstává otevřený, viz\n[GAP-07](@/dossiers/macinka-turek/gaps/gap-07.md). Rejstříkový záznam sám\no sobě rovněž není zjištěním jakéhokoli pochybení kohokoli z uvedených —\nje to záznam vazby, nic víc.\n\nZáznam obsahuje i data narození a adresy bydliště zapsaných osob a jména\ndřívějších jednatelů a společníků z let 2008–2019, kteří se citovaného\nzpravodajství nijak netýkají. **Tento dossier je z tohoto zdroje záměrně\nnepřebírá** — pro doložení citovaných tvrzení nejsou potřebné a jejich\nzveřejnění by neprošlo testem veřejného zájmu podle\n[konstituce](@/dokumentace/konstituce.md)."
+    }
+  ],
+  "order": 55
+}

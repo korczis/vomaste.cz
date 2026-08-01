@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-26",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-26",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "title": "SRC-26 — Seznam Zprávy",
+  "outlet": "Seznam Zprávy",
+  "sourceType": "zpravodajství",
+  "url": "https://www.seznamzpravy.cz/clanek/kampus-zakladni-vzdelavani-mohou-diteti-ve-skole-telefon-zabavit-odpovidame-na-otazky-k-zakazu-mobilu-311258",
+  "published": "2026-07-20",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-34"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-35"
+    }
+  ],
+  "subjects": [
+    "plaga"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Zákaz mobilů ve školách: Odpovědi na nejčastější otázky**\n\nZákaz se má vztahovat na mateřské školy, přípravné třídy ZŠ, základní školy a nižší stupně víceletých gymnázií a konzervatoří; střední, vyšší odborné a vysoké školy zahrnuty nejsou. Děti mohou telefon přinést, ale nesmějí ho používat. Zákaz se má týkat i tabletů a chytrých hodinek. Porušení se má řešit podle školního řádu (napomenutí, důtka třídního učitele, důtka ředitele, snížený stupeň z chování). Účinnost od 1. 9. 2027.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 26
+}

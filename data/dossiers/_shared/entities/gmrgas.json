@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/gmrgas",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "gmrgas",
+  "entityId": "gmrgas",
+  "title": "GMR GAS UA LLC (Kyjev)",
+  "entityType": "company",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "macinka-turek",
+    "petr-macinka"
+  ],
+  "routeAliases": [
+    "/dossiers/macinka-turek/entities/gmrgas/"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kyjevská firma, ve které měl Petr Macinka od roku 2017 dvacetiprocentní\npodíl, jejž neuvedl v majetkovém přiznání a po upozornění Investigace.cz\npřiznal dodatečně (CLM-14). Podle citovaného zpravodajství je ukrajinskou\npobočkou české společnosti GMR GAS s.r.o., která v ní rovněž drží podíl\n(CLM-47).\n\n**Co o téhle firmě doložené není.** Její existenci, aktuální stav ani\nvlastnickou strukturu tento přehled z primárního ukrajinského registru\nneověřil — všechno výše se opírá o citovanou českou žurnalistiku. Platí to\ni pro Macinkovo vyjádření, že firma „de facto neexistuje\" kvůli válce a že\nplánoval její likvidaci: je to **jeho citace, ne ověřený rejstříkový stav**\n(CLM-15). Podrobně [GAP-07](@/dossiers/macinka-turek/gaps/gap-07.md)."
+    }
+  ]
+}

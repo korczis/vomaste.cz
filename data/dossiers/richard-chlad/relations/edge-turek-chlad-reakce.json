@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/richard-chlad/relations/edge-turek-chlad-reakce",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-turek-chlad-reakce",
+  "relationId": "edge-turek-chlad-reakce",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/richard-chlad"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/turek"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/chlad"
+  },
+  "relationType": "RESPONDED_TO",
+  "label": "veřejně uvedl, že jeho roli v podpoře strany zpravodajství přeceňuje",
+  "status": "contextual",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-05"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/sources/SRC-03"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextový, strukturální vztah — dossier jej neuvádí jako vlastní doloženou investigaci, jen jako veřejně nesporné pozadí."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-51",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-51",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "text": "V roce 2025 vstoupilo do armády 2396 lidí — nejvíce od roku 2004 — ale zároveň odešlo 1325 osob, takže čistý přírůstek činil 1071 vojáků; aktivní zálohy stagnují pod 5 tisíci osobami.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-22"
+    }
+  ],
+  "subjects": [
+    "zuna"
+  ],
+  "order": 51,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jaromir-zuna/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

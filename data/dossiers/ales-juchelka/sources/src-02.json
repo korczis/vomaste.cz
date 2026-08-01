@@ -1,0 +1,57 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
+  },
+  "title": "SRC-02 — FORUM 24",
+  "outlet": "FORUM 24",
+  "sourceType": "zpravodajství / investigativní",
+  "url": "https://www.forum24.cz/dotacni-kauza-poradkyne-semancove-ministerstvo-resi-ztratu-64-milionu-ministr-juchelka-mlci",
+  "published": "2026-07-22",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-20"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-34"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-35"
+    }
+  ],
+  "subjects": [
+    "juchelka"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "FORUM 24 dne 22. 7. 2026 informoval, že poradkyně, kterou si ministr\npráce a sociálních věcí Aleš Juchelka osobně vybral, dohlížela na\ndotační výzvy v objemu 17 miliard korun, přičemž její soukromá firma\nsoučasně přijímala platby od žadatelů za pomoc s úspěšným získáním\ntěchto státních prostředků.\n\nPodle článku byly na konci dubna čtyři problematické projekty spojené s\nfirmou poradkyně vyřazeny z financování Evropské unie; ministerstvo tak\nnemůže tyto přislíbené prostředky z unijních zdrojů čerpat, což vytváří\nrozpočtovou mezeru **63,8 milionu korun**.\n\nVyjádření ministra podle článku: poradkyni nejprve hájil slovy, že je to\n„normální ženská\" a „člověk na svém místě\", a kritiku odmítal. Na dotaz,\njak bude deficit řešen, odpověděl jediným slovem: „Počkejte.\"\n\nPodle článku ministerstvo **neplánuje** vymáhat po poradkyni náhradu\nškody s odůvodněním, že vyřazení z financování EU nelze automaticky\noznačit za přímou škodu.\n\n**Poznámka k procesnímu stavu — čtěte pozorně**: článek **neuvádí žádné\nvyšetřování, trestní oznámení ani obvinění**. Dossier proto nic takového\nnetvrdí ani nenaznačuje. Popsán je střet zájmů v podobě, v jaké ho\npopisuje citovaný zdroj, a jeho rozpočtový následek — nikoli protiprávní\njednání, o němž by rozhodl jakýkoli orgán.\n\n**Poznámka k třetím osobám**: bývalá poradkyně a její firma vystupují\nvýhradně jako **záznam vazby** v rozsahu, který citované zpravodajství\nsamo zveřejňuje. Nejsou subjekty tohoto dossieru; dossier o nich neuvádí\nnic nad rámec tohoto zdroje a nečiní o nich žádný závěr."
+    }
+  ],
+  "order": 2
+}

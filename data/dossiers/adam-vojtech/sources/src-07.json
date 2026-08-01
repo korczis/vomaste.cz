@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-07",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-07",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "title": "SRC-07 — Praha na dlani (přetisk anotace iROZHLAS.cz)",
+  "outlet": "Praha na dlani (přetisk anotace iROZHLAS.cz)",
+  "sourceType": "zpravodajství",
+  "url": "https://www.prahanadlani.cz/clanek-zprava/1594840-ve-fn-olomouc-byly-nektere-defibrilatory-voperovany-bez-splneni-kriterii-zjistila-komise.html",
+  "published": "2026-07-10",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-11"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Ve FN Olomouc byly některé defibrilátory voperovány bez splnění kritérií, zjistila komise**\n\nZkrácený agregovaný výtah: podle předběžného stanoviska odborné komise byly ve FN Olomouc v roce 2024 některým pacientům implantovány ICD, aniž byla zcela naplněna indikační kritéria. Komise vznikla z iniciativy nemocnice a pracuje pod vedením odborníka pověřeného ministerstvem zdravotnictví. Plný text je na původním zdroji (Aktuálně.cz); Praha na Dlani je agregátor.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 7
+}

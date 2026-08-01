@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/gaps/GAP-02",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "GAP-02 — Dopad nehody na Turkovo poslanecké působení a Macinkovu pozici ve vládě",
+  "description": "Turek dočasně opustil funkci zmocněnce pro Green Deal; trvalejší dopad na mandát nebo na Macinkovu vládní pozici zatím zdokumentován nebyl.",
+  "priority": "vysoká",
+  "checked": "2026-07-23",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-38"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-40"
+    }
+  ],
+  "subjects": [
+    "macinka",
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Po nehodě Turek oznámil, že do uzavření vyšetřování nebude vykonávat\nfunkci vládního zmocněnce pro Green Deal, a přislíbil rezignaci na tuto\nfunkci v případě prokázané viny (CLM-11). Premiér Babiš měl podle\ndostupných zdrojů Macinkovi sdělit, že pokud se záběry potvrdí, měl by\nTurek nést odpovědnost (CLM-12). Opozice žádala jeho úplný odchod ze\nvšech funkcí včetně poslaneckého mandátu — viz [hlavní přehled](@/dossiers/macinka-turek/_index.md#bezprostredni-reakce)\na související tvrzení níže.\n\n**Nově zaznamenané, ale nesouvisející**: server [iROZHLAS informoval](https://www.irozhlas.cz/zpravy-domov/turek-rezignoval-ze-snemovniho-vyboru-kam-prilis-nechodil-nahradila-ho-majerova_2607031431_jgr),\nže Turek 2026-07-03 rezignoval na členství ve Výboru pro evropské\nzáležitosti Poslanecké sněmovny, nahradila ho poslankyně Majerová.\nPodle článku samotného byl důvodem nízký počet účastí (4 z 10 jednání)\n— **ne nehoda**. Dossier tuto rezignaci vede jako samostatný,\nkorroborovaný fakt o Turkově poslaneckém působení, ale nespojuje ji\npříčinně s nehodou, protože to neuvádí ani citovaný zdroj.\n\nKomentátor iROZHLASu ve [sloupku ze 16. 7. 2026](https://www.irozhlas.cz/zpravy-domov/komentator-babisovi-prisla-turkova-nehoda-vhod-ma-slusnou-prilezitost-se-ho_2607160600_med)\nspekuluje, že nehoda dává premiéru Babišovi příležitost se Turka\nzbavit — jde o **autorský názor**, ne o zpravodajskou informaci, a\ndossier ho takto odděleně označuje.\n\nŽádný dohledaný zdroj k 2026-07-23 nepotvrzuje změnu Macinkovy pozice ve\nvládě **v souvislosti s nehodou konkrétně**, ani formální dopad na\nTurkův poslanecký mandát nad rámec výše popsané rezignace z výboru.\n\n**Důležitý kontext (dohledáno 2026-07-23, doplněno do hlavního přehledu\njako [samostatná sekce](@/dossiers/macinka-turek/_index.md#jmenovani-ministrem-zivotniho-prostredi),\nne jako řešení této mezery)**: Macinkovo dočasné pověření vedením\nministerstva životního prostředí (CLM-40) **není** důsledkem nehody —\npředchází jí. Prezident Pavel v lednu 2026 odmítl jmenovat Turka\nministrem životního prostředí (CLM-38), Turek na to reagoval oznámením\nžaloby na ochranu osobnosti proti prezidentovi (CLM-39), a Turek místo\nministerského postu zastával roli vládního zmocněnce pro klima a Green\nDeal (CLM-40) — tu funkci až následně po nehodě dočasně opustil (viz\nvýše). Tato mezera (GAP-02) se tedy nadále týká výhradně toho, zda\nsamotná nehoda z roku 2026 něco změnila navíc k tomuto již dříve\nexistujícímu stavu — a k tomu žádný nový zdroj nalezen nebyl."
+    }
+  ],
+  "order": 2
+}

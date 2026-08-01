@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-25",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-25",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "title": "SRC-25 — Česká justice",
+  "outlet": "Česká justice",
+  "sourceType": "zpravodajství",
+  "url": "https://www.ceska-justice.cz/2026/01/novela-stavebniho-zakona-je-horsi-nez-zpackana-digitaliza-spalek/",
+  "published": "2026-01-31",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-38"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-39"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Horší než zpackaná digitalizace. Šéf inženýrské komory odsuzuje novelu stavebního zákona**\n\nPředseda ČKAIT Robert Špalek varuje, že reforma nepovede k rychlejšímu povolování staveb a že navrhované změny ohrožují kvalitu, bezpečnost a veřejný zájem; podle něj by situace mohla dopadnout ještě hůře než špatně připravená digitalizace. Vytýká novele dvojí standard, který zjednodušuje procesy pro velké investory a znevýhodňuje menší stavebníky, zmírnění požadavků na ochranu před hlukem a emisemi, možnost vyvlastňování u komplexů bytů nad 10 tisíc metrů čtverečních a chybějící analýzu personálního zajištění jednotné stavební správy. Za pozitiva označuje zrušení jednotného environmentálního stanoviska a odklad digitalizace. Mezi předkladateli je zmíněn poslanec Vojtěch Krňanský (Motoristé).\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 25
+}

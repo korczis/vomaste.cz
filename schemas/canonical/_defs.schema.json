@@ -40,7 +40,13 @@
     },
     "updateGlobalId": {
       "type": "string",
-      "pattern": "^https://vomaste\\.cz/id/dossiers/[a-z0-9][a-z0-9-]*/updates/\\d{4}-\\d{2}-\\d{2}$"
+      "pattern": "^https://vomaste\\.cz/id/dossiers/[a-z0-9][a-z0-9-]*/updates/\\d{4}-\\d{2}-\\d{2}(-\\d+)?$",
+      "$comment": "Volitelný pořadový sufix (-2, -3, …) pro druhý a další [[updates]] zápis TÉHOŽ dne — baseline reality fáze D: 11 z 20 updates.toml nese víc append-only zápisů se stejným datem (postupné pracovní seance). Bez sufixu by lossless migrace nebyla možná; pořadí v append-only TOML je stabilní, sufix je deterministický."
+    },
+    "updateIdentifier": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}(-\\d+)?$",
+      "$comment": "Lokální id update záznamu: datum, u vícera zápisů téhož dne datum-N (viz updateGlobalId)."
     },
 
     "clmId": { "type": "string", "pattern": "^CLM-\\d+$" },

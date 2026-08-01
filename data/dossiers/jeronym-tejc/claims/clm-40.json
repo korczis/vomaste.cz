@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-40",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-40",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "text": "Dětský ombudsman Martin Beneš k práci komise uvedl: „Bylo by neodpovědné veřejně hodnotit situaci ve chvíli, kdy práce komise teprve probíhá a její závěry ještě nejsou hotové.“ Podle něj systém dlouhodobě postrádá jednotné metodické vedení a řešení je spíše v metodickém řízení než v legislativních změnách.",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-20"
+    }
+  ],
+  "subjects": [
+    "tejc"
+  ],
+  "order": 40,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jeronym-tejc/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

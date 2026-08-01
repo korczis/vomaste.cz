@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-11",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-11",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "title": "SRC-11 — MŠMT (edu.gov.cz)",
+  "outlet": "MŠMT (edu.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://edu.gov.cz/obdobi-skolniho-vyucovani-ve-skolnim-roce-2025-2026-konci-drive/",
+  "published": "2026-03-31",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-16"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-17"
+    }
+  ],
+  "subjects": [
+    "plaga"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Období školního vyučování ve školním roce 2025/2026 končí dříve**\n\nOficiální sdělení MŠMT: výuka na ZŠ, SŠ a konzervatořích skončí už v pátek 26. 6. 2026. Zdůvodněno organizační náročností a nižší efektivitou posledních dnů školního roku; ministerstvo ujišťuje, že zkrácení nemá dopad na splnění vzdělávacích cílů. Přiloženo sdělení a vysvětlující dopis MŠMT.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 11
+}

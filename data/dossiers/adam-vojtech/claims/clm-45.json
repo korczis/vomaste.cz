@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-45",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-45",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "text": "SPD otevřelo požadavek na revokaci a přepracování celé Národní očkovací strategie na koaliční radě s ANO a Motoristy sobě; kritizuje zejména rozšíření doporučených očkování proti chřipce, covidu a HPV. Za SPD téma vedou Jan Síla a Josef Nerušil. Vojtěch zrušení i přepracování odmítá s tím, že strategie vychází z jasných dat a vědeckých poznatků.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-27"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "order": 45,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/adam-vojtech/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

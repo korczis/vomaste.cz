@@ -1,0 +1,48 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-05",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-05",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "title": "SRC-05 — Blesk.cz",
+  "outlet": "Blesk.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://blesk.cz/clanek/zpravy-politika/842919/tejc-zasahl-v-kauze-viktorky-usmrcene-otcem-krome-karne-zaloby-na-soudkyni-dal-podnet-na-ospod.html",
+  "published": "2026-07-01",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-13"
+    }
+  ],
+  "subjects": [
+    "tejc"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Tejc zasáhl v kauze Viktorky usmrcené otcem: kromě kárné žaloby na soudkyni dal podnět na OSPOD**\n\nMinistr Tejc podal kárnou žalobu na soudkyni benešovského okresního soudu, jejíž rozhodnutí svěřilo tříletou Viktorku z pěstounské péče do péče biologických rodičů; navrhuje roční snížení platu o 30 %. Zaslal i podnět k prověření OSPOD. Soudkyni vytýká nedbalost, formální rozhodnutí a opomenutí řady dostupných důkazů. Soudkyně uvedla, že rozhodla podle tehdy dostupných důkazů a postupuje podle nejlepšího zájmu dítěte.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 5
+}

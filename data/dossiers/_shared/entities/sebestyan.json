@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/sebestyan",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "sebestyan",
+  "entityId": "sebestyan",
+  "title": "Martin Šebestyán",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "full",
+  "dossiers": [
+    "martin-sebestyan"
+  ],
+  "routeAliases": [
+    "/dossiers/martin-sebestyan/entities/sebestyan/"
+  ],
+  "snapshotDate": "2026-07-30",
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Hlavní subjekt autorizovaného dossieru. Viz plné znění a kontext v [hlavním přehledu](@/dossiers/martin-sebestyan/_index.md#kdo)."
+    }
+  ]
+}

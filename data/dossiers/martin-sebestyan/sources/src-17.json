@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-17",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-17",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
+  },
+  "title": "SRC-17 — Transparency International ČR",
+  "outlet": "Transparency International ČR",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://www.transparency.cz/transparency-se-podnetem-obraci-na-instituce-eu-v-souvislosti-se-stretem-zajmu-andreje-babise/",
+  "published": "2026-06-03",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-31"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-32"
+    }
+  ],
+  "subjects": [
+    "sebestyan"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Transparency se podnětem obrací na instituce EU v souvislosti se střetem zájmů Andreje Babiše**\n\nTI ČR informuje, že 25. 5. 2026 odeslala podnět institucím EU — DG AGRI, DG JUST, DG BUDGET, OLAF a Evropskému účetnímu dvoru. Varuje, že svěřenský fond RSVP TRUST nesplňuje parametry pro zamezení střetu zájmů podle čl. 61 nařízení č. 2024/2509. Obsahuje citace výkonného ředitele Davida Kotory, právníka Kryštofa Doležala („spíše o zástěrku umožňující obnovení vyplácení dotačních prostředků“) a vedoucího právníka Jana Dupáka. Uvádí, že Šebestyán vede ministerstvo, jemuž je SZIF podřízen, a dříve byl ředitelem SZIF.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 17
+}

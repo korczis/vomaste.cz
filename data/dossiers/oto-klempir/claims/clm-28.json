@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-28",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-28",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
+  },
+  "text": "Základní odborová organizace Národní galerie Praha odeslala 10. července 2026 ministrovi otevřený dopis, který podepsalo 63 zaměstnanců; podle dopisu „ministerstvo kultury pod Vaším vedením dosud neučinilo žádné oficiální vyjádření, které by tento krok srozumitelně vysvětlilo“.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-08"
+    }
+  ],
+  "subjects": [
+    "klempir"
+  ],
+  "order": 28,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/oto-klempir/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

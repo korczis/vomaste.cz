@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/relations/edge-bednarik-ceske-drahy",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-bednarik-ceske-drahy",
+  "relationId": "edge-bednarik-ceske-drahy",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/bednarik"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/ceske-drahy"
+  },
+  "relationType": "HOLDS_ROLE",
+  "label": "bývalý předseda představenstva a generální ředitel (rezignace 2022)",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-02"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-29"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Status: nezávisle potvrzený fakt."
+    }
+  ]
+}

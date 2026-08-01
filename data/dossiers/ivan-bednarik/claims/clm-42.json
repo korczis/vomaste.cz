@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-42",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-42",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "text": "Newstream uvedl, že Bednárik své pohnutky veřejně nesdělil, a jako pravděpodobné příčiny označil plánované vládní úspory a spor o platby za pozemky ČD užívané Správou železnic, s nimiž dopravce počítal v byznysplánu předloženém dozorčí radě.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-21"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "order": 42,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/ivan-bednarik/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

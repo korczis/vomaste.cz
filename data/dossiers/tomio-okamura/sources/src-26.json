@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-26",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-26",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
+  },
+  "title": "SRC-26 — RESPEKT: Právní zástupce SPD u soudu odmítl vinu za předvolební plakáty, šlo o politický názor (3. 6. 2026)",
+  "outlet": "Respekt",
+  "sourceType": "zpravodajství",
+  "url": "https://www.respekt.cz/informacni-servis/pravni-zastupce-spd-u-soudu-odmitl-vinu-za-predvolebni-plakaty-slo-o-politicky-nazor-2026-06-03-11-21",
+  "published": "2026-06-03",
+  "retrieved": "2026-07-31",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-16"
+    }
+  ],
+  "subjects": [
+    "okamura"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "RESPEKT dne 3. 6. 2026 cituje obhájce Adama Batunu: „Podle něj bylo\nzadání policie návodné, a proto účelově zkreslilo výsledky.\"\n\n**Nezávislost**: samostatná redakce od Česká justice (SRC-06) —\nnezávisle potvrzuje tutéž skutečnost (obhájcovo zpochybnění posudků).\nProto CLM-16 nese stav `CORROBORATED`."
+    }
+  ],
+  "order": 26
+}

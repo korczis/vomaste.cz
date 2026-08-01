@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/gaps/GAP-14",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-14",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "title": "GAP-14 — U tvrzení o přestěhování do jiného městského bytu na tomtéž náměstí nelze vyloučit, že jde",
+  "description": "Detail se objevuje u Romea.cz i Seznam Zpráv ve shodné podobě a ke stejnému datu (30. 4. 2026); nejde tedy nutně o dvě nezávislá zjištění, p",
+  "priority": "střední",
+  "checked": "2026-07-30",
+  "claims": [],
+  "subjects": [
+    "mrazova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "U tvrzení o přestěhování do jiného městského bytu na tomtéž náměstí nelze vyloučit, že jde o převzatou (syndikovanou) reprodukci téhož původního zjištění Seznam Zpráv.\n\n**Proč je to mezera**: Detail se objevuje u Romea.cz i Seznam Zpráv ve shodné podobě a ke stejnému datu (30. 4. 2026); nejde tedy nutně o dvě nezávislá zjištění, proto je tvrzení vedeno jako single. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+    }
+  ],
+  "order": 14
+}

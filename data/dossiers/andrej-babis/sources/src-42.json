@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-42",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-42",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-42 — ČeskéNoviny.cz (ČTK): Soud zamítl žaloby čtyř firem z Agrofertu kvůli dotacím od SZIF (23. 4. 2025)",
+  "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceType": "zpravodajství",
+  "url": "https://www.ceskenoviny.cz/zpravy/soud-zamitl-zaloby-ctyr-firem-z-agrofertu-kvuli-dotacim-od-szif/2664476",
+  "published": "2025-04-23",
+  "retrieved": "2026-08-01",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-63"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Agenturní zpráva ČTK: „Pražský městský soud dnes zamítl žaloby čtyř\nfirem ze skupiny Agrofert na Státní zemědělský intervenční fond.“\nSpolečnosti Penam, Agro Jevišovice, SPV Pelhřimov a Výkrm Tagrea se\ndomáhaly zrušení rozhodnutí, kterými fond zamítl jejich žádosti\no dotace. Fond předtím pozastavil firmám z Agrofertu 28 projektů za\nvíce než půl miliardy korun a u 21 z nich ukončil administraci žádosti;\nvycházel ze sdělení Evropské komise se závěry auditu střetu zájmů.\n„Rozhodnutí jsou pravomocná, lze proti nim podat kasační stížnost\nk Nejvyššímu správnímu soudu.“ Mluvčí Agrofertu uvedl, že holding počká\nna písemné odůvodnění a zváží další kroky.\n\n**Poznámka k procesní přesnosti**: jde o správní spor o nárok na\ndotace; rozsudek nerozhoduje o trestní odpovědnosti kohokoli a kasační\nvětev zůstává otevřená ([GAP-06](@/dossiers/andrej-babis/gaps/gap-06.md)).\n\n**Nezávislost**: agenturní text ČTK, jediný přímo otevřený zdroj\nk tomuto rozsudku — stav `1 ZDROJ`. Otevřeno a přečteno 2026-08-01."
+    }
+  ],
+  "order": 42
+}

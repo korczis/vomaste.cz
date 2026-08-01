@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-06",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-06",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
+  },
+  "title": "SRC-06 — Česká justice",
+  "outlet": "Česká justice",
+  "sourceType": "zpravodajství",
+  "url": "https://www.ceska-justice.cz/2026/06/plakaty-jen-pravdive-pojmenovaly-problemy-spd-u-soudu-odmitla-ze-by-kampan-byla-trestnym-cinem/",
+  "published": "2026-06-03",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-15"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-16"
+    }
+  ],
+  "subjects": [
+    "okamura"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Za „chirurgy z dovozu“ milionová pokuta: SPD odmítá vinu v kauze nenávistných plakátů**\n\nOdborné justiční zpravodajství se zaměřením na argumentaci stran. Detailně cituje obhájce Adama Batunu (hnutí se cítí nevinné, skutky nejsou trestným činem, zpochybnění odborných posudků) i státního zástupce Davida Jachnického. Potvrzuje, že Okamurovo stíhání je přerušené po dobu poslaneckého mandátu a bude vedeno odděleně.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 6
+}

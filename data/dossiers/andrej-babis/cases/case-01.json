@@ -1,0 +1,53 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/case.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/cases/CASE-01",
+  "@type": "vomaste:Case",
+  "recordType": "case",
+  "identifier": "CASE-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "Audity Evropské komise ke střetu zájmů",
+  "summary": "Auditní proces zahájený 2019 na podnět nevládní organizace; závěrečná zpráva z dubna 2021 uzavřela, že Babiš ovládá svěřenské fondy a jejich prostřednictvím Agrofert, a označila dotace firmám skupiny po 9. 2. 2017 za neoprávněné s doporučením stoprocentní finanční opravy. České ministerstvo se závěry nesouhlasilo, žádosti o platbu ale pozastavilo. Komise audit uzavřela 20. 7. 2022 po provedení doporučení — audit je kontrolní nástroj, ne soud, a nerozhoduje o trestní odpovědnosti.",
+  "period": "2019–2022",
+  "status": "status-disputed",
+  "statusLabel": "Uzavřeno 2022 splněním doporučení — ne zproštěním",
+  "anchor": "kauza-audity-ek",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-43"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-44"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-45"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-46"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-18"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-19"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-20"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu\ndossieru](@/dossiers/andrej-babis/_index.md#kauza-synbiol-dividenda)."
+    }
+  ],
+  "order": 1
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-13",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-13",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
+  },
+  "title": "SRC-13 — FORUM 24",
+  "outlet": "FORUM 24",
+  "sourceType": "zpravodajství",
+  "url": "https://www.forum24.cz/je-to-odporna-prace-stydte-se-ze-pracujete-pro-seznam-zpravy-utocil-na-vlade-juchelka",
+  "published": "2026-07-27",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-16"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-21"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-22"
+    }
+  ],
+  "subjects": [
+    "juchelka"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Je to odporná práce, styďte se, že pracujete pro Seznam Zprávy, útočil na vládě Juchelka**\n\nNa tiskové konferenci po jednání vlády Juchelka reagoval na dotazy novinářky Seznam Zpráv slovy 'Je to odporná novinářská práce, styďte se, že pracujete pro Seznam Zprávy', dále 'Je neuvěřitelné, že se dá z ničeho uplést něco, co hýbe mediálním prostorem' a 'Vylučuji, že by ovlivnila přerozdělování dotací.' Premiér Babiš doplnil 'Je to vaše kampaň a lžete.'\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 13
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-12",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-12",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-12 — ČeskéNoviny.cz (ČTK): Evropští žalobci zahájili trestní řízení kvůli vyplácení dotací Agrofertu (15. 7. 2026)",
+  "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceFamily": "ctk",
+  "sourceType": "agenturní zpravodajství",
+  "url": "https://www.ceskenoviny.cz/zpravy/-evropsti-zalobci-zahajili-trestni-rizeni-kvuli-vyplaceni-dotaci-agrofertu/2850717",
+  "published": "2026-07-15",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-27"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-28"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-29"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-30"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Agenturní zpráva ČTK, která sama uvádí jako původní zdroj informace\nserver Seznam Zprávy.\n**Co dokládá:** že evropská pověřená žalobkyně Daniela Bártíková vydala\n24. 5. 2026 rozhodnutí o zahájení trestního řízení ve věci vyplácení\nevropských dotací skupině Agrofert, že prověřováním pověřila Národní\ncentrálu proti organizovanému zločinu, jaká podezření řízení pokrývá,\nže je vedeno **na neznámého pachatele** a nikdo v něm není obviněn, co\nřízení vyvolalo, a vyjádření mluvčí SZIF.\n\n**Nezávislost:** stejná agenturní rodina jako SRC-10 a SRC-11\n(`family = \"ctk\"`), navíc s převzatým původem u Seznam Zpráv. Další\nredakce (Hospodářské noviny, Echo24, Deník.cz, ČT24) publikovaly týž den\ntutéž agenturní/převzatou zprávu — ověřeno otevřením HN, které rovněž\nodkazují na Seznam Zprávy. Jeden původní zdroj, mnoho vydání: stav\ntvrzení proto zůstává `1 ZDROJ`.\n\n**Limity:** zahájení trestního řízení **není obvinění** a už vůbec ne\nrozhodnutí o vině. Řízení pokrývá pouze evropské dotace a k datu zprávy\nv něm není jmenován žádný podezřelý — Andrej Babiš v něm jako podezřelý\nuveden není."
+    }
+  ],
+  "order": 12
+}

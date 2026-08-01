@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-27",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-27",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
+  },
+  "text": "Juchelka podle iROZHLAS.cz sám střet zájmů Semancové nezpochybňuje, zároveň však vylučuje, že by ovlivňovala přerozdělování dotací. (Plný text iROZHLAS byl nedostupný — doloženo z přetištěného úryvku.)",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-28"
+    }
+  ],
+  "subjects": [
+    "juchelka"
+  ],
+  "order": 27,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/ales-juchelka/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

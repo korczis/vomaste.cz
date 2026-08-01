@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-47",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-47",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "text": "Při systemizaci k dubnu 2026 resort zrušil 38 míst (Deník N uváděl 53 pozic — 42 služebních a 11 pracovních) a zanikla oddělení financování Nové zelené úsporám, Národního plánu obnovy, Modernizačního fondu, Sociálně klimatického fondu a oddělení zaměřená na dekarbonizaci.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-29"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-34"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "order": 47,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/igor-cerveny/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-33",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-33",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-33 — ČeskéNoviny.cz (ČTK): Soud opět zprostil Babiše a Nagyovou obžaloby v kauze Čapí hnízdo (14. 2. 2024)",
+  "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceFamily": "ctk",
+  "sourceType": "agenturní zpravodajství",
+  "url": "https://www.ceskenoviny.cz/zpravy/soud-opet-zprostil-babise-a-nagyovou-obzaloby-v-kauze-capi-hnizdo/2476160",
+  "published": "2024-02-14",
+  "retrieved": "2026-07-31",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-51"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "ČeskéNoviny.cz dne 14. 2. 2024: nepřímé důkazy „mohly nasvědčovat\nprotiprávnímu jednání, ale netvořily ucelený řetězec\". „Státní zástupce\nJaroslav Šaroch i advokáti... si ponechali lhůtu na případné odvolání.\"\n\n**Nezávislost**: samostatná redakce/agentura od Aktuálně.cz (SRC-24) —\nobě nezávisle potvrzují totéž rozhodnutí. Proto CLM-51 nese stav\n`CORROBORATED`."
+    }
+  ],
+  "order": 33
+}

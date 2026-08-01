@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-16",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-16",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "title": "SRC-16 — Deník VEKTOR",
+  "outlet": "Deník VEKTOR",
+  "sourceType": "zpravodajství",
+  "url": "https://www.denikvektor.cz/nazory-a-rozhovory/bednarik-mluvil-o-rozpoctovem-soku-tohle-je-darek-ktery-nechcete-3580.html",
+  "published": "2025-12-02",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-16"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-17"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Bednárik mluvil o rozpočtovém šoku: Tohle je dárek, který nechcete**\n\nBednárik komentuje zděděný návrh rozpočtu, označuje naplánování o 37 miliard vyšších výdajů za podivné a přirovnává to k nechtěnému dárku od předchůdce. Rozpočtové provizorium označuje za menší zlo oproti nucenému propouštění u stavebních firem. Upozorňuje, že narušení stability Správy železnic může ohrozit čerpání evropských prostředků.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 16
+}

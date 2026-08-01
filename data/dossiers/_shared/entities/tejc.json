@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/tejc",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "tejc",
+  "entityId": "tejc",
+  "title": "Jeroným Tejc",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "full",
+  "dossiers": [
+    "jeronym-tejc"
+  ],
+  "routeAliases": [
+    "/dossiers/jeronym-tejc/entities/tejc/"
+  ],
+  "snapshotDate": "2026-07-30",
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Hlavní subjekt autorizovaného dossieru. Viz plné znění a kontext v [hlavním přehledu](@/dossiers/jeronym-tejc/_index.md#kdo)."
+    }
+  ]
+}

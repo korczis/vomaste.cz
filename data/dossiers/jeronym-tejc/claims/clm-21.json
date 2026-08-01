@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-21",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-21",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "text": "Dozor nad trestním řízením vykonává Vrchní státní zastupitelství v Olomouci, dozorujícím státním zástupcem je Radim Dragoun. Jde o tentýž úřad, kterému bylo v dubnu 2026 doručeno trestní oznámení ministra Tejce.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-12"
+    }
+  ],
+  "subjects": [
+    "tejc"
+  ],
+  "order": 21,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jeronym-tejc/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

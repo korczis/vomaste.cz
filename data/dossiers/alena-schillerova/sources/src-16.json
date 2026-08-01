@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-16",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-16",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "title": "SRC-16 — Národní rozpočtová rada",
+  "outlet": "Národní rozpočtová rada",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://www.rozpoctovarada.cz/publikace/stanovisko-nrr-c-1-2026-k-vyvoji-hospodareni-sektoru-verejnych-instituci-a-k-nastaveni-fiskalni-a-rozpoctove-politiky/",
+  "published": "2026-03-12",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-26"
+    }
+  ],
+  "subjects": [
+    "schillerova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Stanovisko NRR č. 1/2026: k vývoji hospodaření sektoru veřejných institucí a k nastavení fiskální a rozpočtové politiky**\n\nStanovisko NRR se čtyřmi okruhy kritiky: nesoulad mezi schválenou podporou POZE (41,7 mld.) a rozpočtovanou částkou (31,9 mld.), obranná kapitola ve výši 154,8 mld. Kč (1,73 % HDP) nenaplňující závazek 2 % HDP, optimističtější prognóza MF oproti trhu a ČNB (NRR odhaduje deficit 2,6 % HDP proti 2,2 % HDP MF) a varování před mimořádnou obtížností rozpočtu 2027.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 16
+}

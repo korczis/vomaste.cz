@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-02 — Echo24",
+  "outlet": "Echo24",
+  "sourceType": "zpravodajství",
+  "url": "https://www.echo24.cz/a/HRupy/filip-turek-autonehoda-policie-advokat-terminy-vysetrovani-lhuty-ondrej-horazny-trestny-cin-prestupek",
+  "published": "2026-07-18",
+  "retrieved": "2026-07-21",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-10"
+    }
+  ],
+  "subjects": [
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Nejpodrobnější dostupný popis nehody v citovaném výběru zdrojů. Článek\nrozebírá záznam z místa: Turkovo vozidlo mělo předjíždět frontu aut v pruhu\nurčeném k odbočení a jako jediné z kolony vjet do křižovatky, kde došlo ke\nstřetu se sanitkou. Sanitka byla nárazem vymrštěna do vzduchu; poblíž\npřechodu podle popisu stála skupina chodců.\n\nČlánek zároveň referuje o právní stránce věci — možné kvalifikaci\n(přestupek vs. trestný čin) a lhůtách vyšetřování — a explicitně uvádí, že\nv době psaní nebylo jasno, kdo nehodu zavinil. Dossier proto vede otázku\nviny jako otevřenou (GAP-01), ne jako uzavřený fakt."
+    }
+  ],
+  "order": 2
+}

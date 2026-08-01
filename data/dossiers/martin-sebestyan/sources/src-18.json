@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-18",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-18",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
+  },
+  "title": "SRC-18 — FORUM 24",
+  "outlet": "FORUM 24",
+  "sourceType": "zpravodajství",
+  "url": "https://www.forum24.cz/pouze-symbolicka-ctvrt-miliarda-ministr-sebestyan-nahral-agrofertu-dalsi-dotace",
+  "published": "2026-02-19",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-38"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-39"
+    }
+  ],
+  "subjects": [
+    "sebestyan"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Pouze symbolická čtvrt miliarda. Ministr Šebestyán nahrál Agrofertu další dotace**\n\nText Dana Davida Rafaela o obnovení dotačního programu pro velké podniky v hodnotě 250 mil. Kč, z nějž bude moci čerpat i Agrofert. Program byl dříve ukončen na základě zjištění NKÚ, který kritizoval netransparentnost programu a neefektivní vynakládání financí. Podle článku se ministr Šebestyán snažil obnovení programu prosadit a na zemědělském výboru argumentoval, proč by české podniky měly být vyřazeny; částku 250 mil. označil za „pouze symbolickou“. Zmiňuje také navýšení programu na welfare zvířat z necelé miliardy na 1,3 mld. Kč na úkor rozvoje venkova a zemědělského výzkumu.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 18
+}

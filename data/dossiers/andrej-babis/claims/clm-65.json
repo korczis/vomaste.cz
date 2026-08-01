@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-65",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-65",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "Nejvyšší správní soud v polovině srpna 2025 zamítl kasační stížnost společnosti Sady CZ, která namítala, že v době rozhodování o žádosti už Babiš nebyl členem vlády; podle soudu byl rozhodný už stav v době podání žádosti, kdy žadatel musel být z hlediska neexistence střetu zájmů způsobilý. Citované zpravodajství řadí do série neúspěšných stížností i další firmy skupiny (mj. Penam, Agro Jevišovice, Vodňanská drůbež, Výkrm Tagrea, Cerea, Mlékárna Hlinsko)",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-45"
+    }
+  ],
+  "subjects": [],
+  "order": 65,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

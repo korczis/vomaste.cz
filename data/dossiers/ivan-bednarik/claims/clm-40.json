@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-40",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-40",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "text": "Podle ČT24 nebyl v době rezignace převod pozemků z Českých drah na Správu železnic dosud schválen Evropskou komisí a Bednárik uvedl, že očekávané 3,5 miliardy za pozemky nakonec společnost vůbec nebude mít k dispozici.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-13"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "order": 40,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/ivan-bednarik/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

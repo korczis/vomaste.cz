@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-09",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-09",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
+  },
+  "title": "SRC-09 — Deník Referendum",
+  "outlet": "Deník Referendum",
+  "sourceType": "zpravodajství",
+  "url": "https://denikreferendum.cz/clanek/238962-spd-podnecovalo-nenavist-uznal-soud-hnuti-ma-zaplatit-trimilionovou-pokutu",
+  "published": "2026-06-03",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-09"
+    }
+  ],
+  "subjects": [
+    "okamura"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**SPD podněcovalo nenávist, uznal soud. Hnutí má zaplatit třímilionovou pokutu**\n\nZpravodajství s úplnou citací odůvodnění soudkyně o polarizaci 'oni a my' a jejích důsledcích. Uvádí, že Okamurovo stíhání je pozastavené, protože mu po volbách v říjnu 2025 obnovená imunita nebyla Sněmovnou prolomena.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 9
+}

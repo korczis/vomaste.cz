@@ -1,0 +1,94 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/updates/2026-07-29-2",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-07-29-2",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "date": "2026-07-29",
+  "summary": "Auditní kolo (druhé kolo téhož dne — editorský a zdrojový audit, ověření aktuálnosti proti živým zdrojům). Opravy: (1) rozhodujícím orgánem u odložení trestního oznámení (CLM-27) byla policie, ne státní zastupitelství — opraveno v tvrzení, próze, GAP-06 i SRC-31, doplněn druhý nezávislý zdroj SRC-54 (Echo24, vlastní citace J. Vychyty); (2) karta kauzy CASE-01 nesla nedoložený štítek „Uzavřeno bez trestu\" — nahrazeno doloženým CLM-45 + SRC-53 (ČT24: policie 11/2024 odložila případ fotografie pro promlčení, svícnů se rozhodnutí netýkalo); (3) zaveden poctivý stav „1 ZDROJ\" (status-single) a 15 jednozdrojových tvrzení dosud vedených jako CORROBORATED přeznačeno; validátor nově vynucuje ≥2 zdroje pro CORROBORATED; (4) sjednoceno označení vozidla z nehody (zdravotnický vůz; zdroje se liší mezi „sanitkou\" a vozem Nemocnice Na Homolce — rozpor zdokumentován); (5) doplněna měsíční přesnost data nehody (červenec 2026), promlčecí dovětky do timeline, terminologie stížnost/odvolání, odstraněn údaj o Turkově bydlišti (minimalizace) a doplněn úplný přehled vydavatelských rodin do registru zdrojů. Aktuálnost rolí (Macinka MZV+vicepremiér, Červený MŽP, Turek poslanec) ověřena proti mzv.gov.cz / vlada.gov.cz / živému zpravodajství; výsledek stížnosti u GAP-06 zůstává otevřený (nepotvrzeno inspekcí ověřitelným zdrojem).",
+  "addedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-45"
+    }
+  ],
+  "updatedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-14"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-16"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-18"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-19"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-20"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-21"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-22"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-23"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-24"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-27"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-28"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-30"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-32"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-33"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-34"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-36"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-37"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-40"
+    }
+  ],
+  "addedGaps": [],
+  "closedGaps": [],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-31"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-53"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-54"
+    }
+  ]
+}

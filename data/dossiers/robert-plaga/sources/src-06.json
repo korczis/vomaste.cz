@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-06",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-06",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "title": "SRC-06 — zdravezpravy.cz",
+  "outlet": "zdravezpravy.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://www.zdravezpravy.cz/2026/07/20/ministr-plaga-na-vode-v-breznu-zakaz-mobilu-na-skolach-odsoudil-ted-ho-navrhl/",
+  "published": "2026-07-20",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-15"
+    }
+  ],
+  "subjects": [
+    "plaga"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Ministr Plaga v březnu zákaz mobilů na školách odsoudil, teď ho navrhl**\n\nKonfrontace výroků: 9. 3. 2026 Plaga opoziční návrh zákazu mobilů označil za 'tupý zákaz, který navíc obsahuje řadu legislativních chyb a možná i nepochopení té problematiky jako celku' (vláda tehdy vydala nesouhlasné stanovisko). 20. 7. 2026 vláda jednomyslně podpořila jeho společný poslanecký návrh s Babišem na zákaz mobilů v MŠ, ZŠ a na nižších stupních víceletých gymnázií. Obrat zdůvodnil monitoringem školních řádů (93 % škol pravidla upravilo, polovina prvních stupňů ZŠ zákaz má a funguje).\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 6
+}

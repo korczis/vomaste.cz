@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-04",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-04",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
+  },
+  "text": "Šebestyán se hájí (rozhovor pro iROZHLAS, přepis na webu MZe, 5. 3. 2026): vymáhání dotací po Agrofertu podle něj „nikdo nezastavil“, protože je minulá vláda vůbec nezačala — Nekula je sliboval už v roce 2022, ale do Šebestyánova nástupu v prosinci 2025 se podle něj nic nestalo; nyní čeká na kompletní právní analýzu SZIF s konkrétními částkami.",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-06"
+    }
+  ],
+  "subjects": [
+    "sebestyan"
+  ],
+  "order": 4,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/martin-sebestyan/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

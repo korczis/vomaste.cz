@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-10",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-10",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "title": "SRC-10 — Echo24",
+  "outlet": "Echo24",
+  "sourceType": "zpravodajství",
+  "url": "https://m.echo24.cz/a/HnkLt/zpravy-ekonomika-prezident-ukazal-nazorovy-veletoc-rozpoctova-pravidla-schillerova-statni-rozpocet",
+  "published": "2026-07-22",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-20"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-22"
+    }
+  ],
+  "subjects": [
+    "schillerova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Prezident ukázal názorový veletoč, říká Schillerová k vetu změny rozpočtových pravidel**\n\nZpráva shrnující reakci ministryně financí na veto zveřejněnou na síti X. Obsahuje její obvinění prezidenta z názorového veletoče s odkazem na dřívější kritiku netransparentního rozpočtování Fialovy vlády ze strany prezidentské kanceláře a její tři obhajovací linie (hospodářský růst, obranyschopnost, transparentnost) i tvrzení o schodku 150 miliard s devastačními důsledky.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 10
+}

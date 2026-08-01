@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/relations/edge-turek-kauza2024",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-turek-kauza2024",
+  "relationId": "edge-turek-kauza2024",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/turek"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/kauza2024"
+  },
+  "relationType": "ASSOCIATED_WITH_EVENT",
+  "label": "subjekt",
+  "status": "disputed",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-04"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-14"
+    }
+  ],
+  "subjects": [
+    "turek"
+  ],
+  "directed": true,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam vztahu edge-turek-kauza2024 — typ vztahu, podporující tvrzení a zdroje v tabulce výše jsou úplné. Status SPORNÉ znamená, že vztah je otevřený a neuzavřený — nejde o zjištění viny ani neviny, jen o to, že věc dosud není rozhodnutá. Hlavní stránka dossieru vykresluje interaktivní graf ze stejných dat."
+    }
+  ]
+}

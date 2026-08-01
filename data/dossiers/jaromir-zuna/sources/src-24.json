@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-24",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-24",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "title": "SRC-24 — CNN Prima News",
+  "outlet": "CNN Prima News",
+  "sourceType": "zpravodajství",
+  "url": "https://cnn.iprima.cz/vydaje-na-obranu-brzy-masivne-vzrostou-zuna-pocita-s-80-miliardami-navic-504153",
+  "published": "2026-02-14",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-45"
+    }
+  ],
+  "subjects": [
+    "zuna"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Výdaje na obranu brzy masivně vzrostou. Zůna počítá s 80 miliardami navíc, opozice je skeptická**\n\nZůnův plán růstu rozpočtu MO ze 154 mld. (2026) na 215 mld. (2027) a 238 mld. Kč (2028); reakce Schillerové, Fleka a Černochové ke škrtu 21 mld.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 24
+}

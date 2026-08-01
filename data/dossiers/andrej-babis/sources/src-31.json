@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-31",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-31",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-31 — Tiscali.cz: Rozhodnuto, Agrofert může znovu čerpat dotace, opozice zuří",
+  "outlet": "Tiscali.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://www.tiscali.cz/rozhodnuto-agrofert-muze-znovu-cerpat-dotace-opozice-zuri-639147",
+  "published": "2026-04-24",
+  "retrieved": "2026-07-31",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-11"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tiscali.cz dne 24. 4. 2026: „Státní zemědělský intervenční fond od 20.\núnora 2026 nevidí důvod držet Agrofert mimo zemědělské dotace\",\ns odkazem na externí právní analýzy k RSVP Trust. „Osm dříve ukončených\nprojektů z Programu rozvoje venkova za zhruba 68 milionů korun zůstává\nukončeno i nadále.\" Článek upozorňuje, že Brusel nový model dosud\nveřejně neposvětil.\n\n**Nezávislost**: samostatná redakce od ČT24 (SRC-04) — obě nezávisle\npotvrzují tutéž skutečnost. Proto CLM-10 a CLM-11 nesou stav\n`CORROBORATED`."
+    }
+  ],
+  "order": 31
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/relations/edge-agrofert-sady",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-agrofert-sady",
+  "relationId": "edge-agrofert-sady",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/agrofert"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/sady-cz"
+  },
+  "relationType": "HOLDS_INTEREST_IN",
+  "label": "firma ze skupiny",
+  "status": "contextual",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-65"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-45"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextový, strukturální vztah — dossier jej neuvádí jako vlastní doloženou investigaci, jen jako veřejně nesporné pozadí."
+    }
+  ]
+}

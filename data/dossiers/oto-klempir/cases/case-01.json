@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/case.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/oto-klempir/cases/CASE-01",
+  "@type": "vomaste:Case",
+  "recordType": "case",
+  "identifier": "CASE-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
+  },
+  "title": "Financování ČT a ČRo ze státního rozpočtu",
+  "summary": "Klempíř prosazuje přesun financování České televize a Českého rozhlasu do státního rozpočtu; RESPEKT to popisuje jako postup ke státní kontrole veřejnoprávních médií.",
+  "period": "2026",
+  "status": "status-single",
+  "statusLabel": "Probíhá, jediný ověřený zdroj",
+  "anchor": "kauza-financovani-verejnopravnich-medii",
+  "claims": [],
+  "sources": [],
+  "subjects": [
+    "klempir"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu\ndossieru](@/dossiers/oto-klempir/_index.md#kauza-financovani-verejnopravnich-medii)."
+    }
+  ],
+  "order": 1
+}

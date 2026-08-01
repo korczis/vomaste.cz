@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/gaps/GAP-08",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-08",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
+  },
+  "title": "GAP-08 — Okolnosti vzniku plakátů (role generativní AI, autorství zadání) podle dokazování u soudu.",
+  "description": "Tyto informace figurují pouze v článku iROZHLAS z 10. 7. 2026, který je nepřístupný (HTTP 403); v přístupných zdrojích doloženy nejsou.",
+  "priority": "střední",
+  "checked": "2026-07-30",
+  "claims": [],
+  "subjects": [
+    "okamura"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Okolnosti vzniku plakátů (role generativní AI, autorství zadání) podle dokazování u soudu.\n\n**Proč je to mezera**: Tyto informace figurují pouze v článku iROZHLAS z 10. 7. 2026, který je nepřístupný (HTTP 403); v přístupných zdrojích doloženy nejsou. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+    }
+  ],
+  "order": 8
+}

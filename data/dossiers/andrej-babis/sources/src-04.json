@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-04",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-04",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-04 — ČT24: Agrofert může opět čerpat dotace, rozhodl zemědělský fond (22. 4. 2026)",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/agrofert-muze-opet-cerpat-dotace-rozhodl-zemedelsky-fond-372660",
+  "published": "2026-04-22",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-12"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Článek „Agrofert může opět čerpat dotace, rozhodl zemědělský fond\"\n(22. 4. 2026). Uvádí rozhodnutí Státního zemědělského intervenčního fondu\nobnovit administraci žádostí skupiny Agrofert s účinností od 20. února\n2026, jeho oporu v externí právní analýze, informaci o osmi ukončených\nnenárokových podporách zhruba za 68 milionů korun a vyjádření mluvčího\nAgrofertu."
+    }
+  ],
+  "order": 4
+}

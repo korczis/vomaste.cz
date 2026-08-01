@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-31",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-31",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-31 — ČT24",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "veřejnoprávní zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/oznameni-na-turka-kvuli-udajnemu-domacimu-nasili-policie-odlozila-373328",
+  "published": "2026-05-12",
+  "retrieved": "2026-07-22",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-27"
+    }
+  ],
+  "subjects": [
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "ČT24 dne 12. května 2026 informovala, že policejní orgán odložil trestní\noznámení z SRC-28/29/30 z důvodu promlčení; oznámil to vedoucí Obvodního\nstátního zastupitelství pro Prahu 4 Jan Vychyta (státní zastupitelství\nrozhodnutí oznámilo, neodložilo věc samo — viz přímá citace níže).\nPřímá citace: „Trestní věc byla skončena rozhodnutím\npolicejního orgánu. Toto rozhodnutí není pravomocné a bylo napadeno\nstížností, o níž bude nyní rozhodovat státní zástupkyně zdejšího\nstátního zastupitelství.\"\n\n**Toto je nejdůležitější zdroj v celém dossieru z hlediska přesnosti\nformulace.** Odložení pro promlčení je čistě procesní důsledek uplynutí\nzákonné lhůty (v době skutku 5, resp. 12 let u těžké újmy na zdraví) —\n**není** to zjištění, že k činům nedošlo, ani že k nim došlo. Rozhodnutí\nnavíc není pravomocné: žena proti němu podala stížnost, o níž rozhoduje\nstátní zástupkyně. Dossier tuto dvojici faktů (procesní povaha + nepravomocnost)\nuvádí společně vždy, když se o odložení zmiňuje."
+    }
+  ],
+  "order": 31
+}

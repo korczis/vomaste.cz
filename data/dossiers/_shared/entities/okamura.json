@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/okamura",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "okamura",
+  "entityId": "okamura",
+  "title": "Tomio Okamura",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "full",
+  "dossiers": [
+    "tomio-okamura"
+  ],
+  "routeAliases": [
+    "/dossiers/tomio-okamura/entities/okamura/"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Hlavní subjekt autorizovaného dossieru. Viz plné znění a kontext v [hlavním přehledu](@/dossiers/tomio-okamura/_index.md#kdo)."
+    }
+  ]
+}

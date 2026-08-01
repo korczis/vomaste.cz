@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-46",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-46",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "Podle stanoviska organizace, která audit v roce 2018 podnětem iniciovala, obdržely české úřady 20. července 2022 dopis, podle kterého útvary Evropské komise považují audit číslo REGC414CZ0133 za uzavřený, protože všechna doporučení byla „plně a náležitě provedena“; uzavření auditu znamená provedení doporučení, nikoli zproštění ani zjištění, že ke střetu zájmů nedošlo",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-20"
+    }
+  ],
+  "subjects": [],
+  "order": 46,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-35",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-35",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-35 — FORUM 24",
+  "outlet": "FORUM 24",
+  "sourceType": "zpravodajství (komentářový web)",
+  "url": "https://www.forum24.cz/kandiduje-filip-turek-za-motoristy-nebo-za-sarlatany-spojeni-elitni-policista-a-prodejce-zapperu-prekvapi",
+  "published": "2024-06-02",
+  "retrieved": "2026-07-22",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-31"
+    }
+  ],
+  "subjects": [
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Forum24 (autor Jiří X. Doležal, 2. 6. 2024) — druhý nezávislý zdroj k\ntématu Zapper Club. Potvrzuje, že Turek byl jednatelem Zapper-Club\ns.r.o. od roku 2016 do roku 2022, a shrnuje, že Ministerstvo zdravotnictví\n„důrazně varuje před používáním přístroje zapper\" a že inspekce\nupozornila na „imunitní balíček ANTI-COVID-19\" s „zakázanými léčebnými\ntvrzeními\".\n\nForum24 je komentářově orientovaný web — v registru veden jako\nzpravodajství s komentářovým rámcem, ne jako čistě redakčně neutrální\nzpravodajství typu ČT24. Fakticky se ale shoduje s SRC-34 (Manipulátoři.cz),\nodlišným vydavatelem, což zakládá nezávislé potvrzení."
+    }
+  ],
+  "order": 35
+}

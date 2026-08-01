@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-27",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-27",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
+  },
+  "title": "SRC-27 — Deník N: Fond rozdělující dotace má k dispozici analýzu Babišova střetu zájmů, ta potvrzuje jejich zákaz (15. 1. 2026)",
+  "outlet": "Deník N",
+  "sourceType": "zpravodajství",
+  "url": "https://denikn.cz/1943322/fond-rozdelujici-dotace-ma-k-dispozici-analyzu-babisova-stretu-zajmu-ta-potvrzuje-jejich-zakaz",
+  "published": "2026-01-15",
+  "retrieved": "2026-07-31",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-03"
+    }
+  ],
+  "subjects": [
+    "sebestyan"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Deník N dne 15. 1. 2026: mluvčí fondu uvedl, že „SZIF si nechal\nzpracovat odborná stanoviska externí advokátní kanceláří.\" Podle\nčlánku právníci dospěli mj. k závěru, že se zákon o střetu zájmů na\ndotace vyplácené fondem vztahuje. Ministerstvo zemědělství přitom\ntvrdilo, že analýzu nemá k dispozici — SZIF ji podle Deníku N má.\n\n**Nezávislost**: samostatná redakce od ČT24 (SRC-07) — obě nezávisle\npotvrzují totéž jádro sporu (SZIF vs. ministerstvo o existenci\nanalýzy). Proto CLM-02 a CLM-03 nesou stav `CORROBORATED`."
+    }
+  ],
+  "order": 27
+}

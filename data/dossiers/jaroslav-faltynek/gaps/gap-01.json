@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/gaps/GAP-01",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek"
+  },
+  "title": "GAP-01 — Odůvodnění rozhodnutí státního zástupce",
+  "description": "Proč státní zástupce stížnosti vyhověl a stíhání zrušil, citovaný zdroj neuvádí.",
+  "priority": "vysoká",
+  "checked": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-04"
+    }
+  ],
+  "subjects": [
+    "faltynek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Citovaný zdroj ([SRC-02](@/dossiers/jaroslav-faltynek/sources/src-02.md))\nuvádí, že státní zástupce **stížnostem vyhověl** a stíhání zrušil.\n**Věcné odůvodnění tohoto rozhodnutí z otevřených zdrojů doloženo není.**\n\nBez něj nelze vyvozovat nic o tom, proč stíhání skončilo — ani ve\nprospěch, ani v neprospěch. Otevřenost není zjištění žádným směrem."
+    }
+  ],
+  "order": 1
+}

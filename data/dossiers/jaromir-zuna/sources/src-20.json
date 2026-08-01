@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-20",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-20",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "title": "SRC-20 — Vláda České republiky (vlada.gov.cz)",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vlada.gov.cz/cz/media-centrum/aktualne/premier-babis-na-summitu-nato-v-pristim-roce-navysime-rozpocet-na-obranu-o-36-miliard-kc-a-dosahneme-2--hdp-227921/",
+  "published": "2026-07-08",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-41"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-42"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-52"
+    }
+  ],
+  "subjects": [
+    "zuna"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Premiér Babiš na summitu NATO: V příštím roce navýšíme rozpočet na obranu o 36 miliard Kč a dosáhneme 2 % HDP**\n\nOficiální zpráva Úřadu vlády ze summitu NATO v Ankaře (7.–8. 7. 2026): závazek +36 mld. Kč a 2 % HDP v roce 2027, navýšení počtu vojáků a aktivních záloh, složení delegace včetně ministra obrany Zůny.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 20
+}

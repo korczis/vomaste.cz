@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-14",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-14",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-14 — Úřad vlády ČR: životopis Andreje Babiše (oficiální profil)",
+  "outlet": "Úřad vlády ČR (vlada.gov.cz)",
+  "sourceType": "úřední zdroj",
+  "url": "https://vlada.gov.cz/cz/vlada/clenove-vlady/premier/zivotopis/andrej-babis-223989/",
+  "published": "2026-07-30",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-35"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální životopis na webu Úřadu vlády.\n**Co dokládá:** datum narození (2. 9. 1954, Bratislava), profesní dráhu\n(Chemapol Bratislava 1978–1985, Petrimex 1985–1991, zakladatel a\npředseda představenstva Agrofertu 1993–2014) a dřívější veřejné funkce\n— poslanec od roku 2013, první místopředseda vlády a ministr financí\n2014–2017, předseda vlády 2017–2021 — a členství v hnutí ANO.\n\n**Nezávislost:** jde o **primární úřední zdroj**, tedy sebeprezentaci\ninstituce, ne o nezávislé zpravodajství. Pro ověření faktů o výkonu\nveřejné funkce je to nejsilnější dostupný doklad; pro jakékoli hodnocení\nse nepoužívá.\n\n**Limity, ověřeno otevřením:** stránka ve verzi načtené 30. 7. 2026\npopisuje stav po volbách v říjnu 2025 a **neuvádí** jeho aktuální\njmenování premiérem. Současný výkon úřadu proto tento dossier neopírá\no ni, ale o zpravodajství (SRC-08, SRC-09, SRC-12). Z tohoto zdroje se\npřebírají jen historické, nesporné údaje o dráze a dřívějších funkcích."
+    }
+  ],
+  "order": 14
+}

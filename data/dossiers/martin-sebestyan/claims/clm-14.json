@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-14",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-14",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
+  },
+  "text": "Podle TI měl Šebestyán v čele SZIF k dispozici veřejně známé informace potvrzující střet zájmů tehdejšího premiéra Babiše (podněty TI, rozhodnutí EK), podle TI je však ignoroval a „tlačil SZIF do pozice, která argumentačně nahrávala Babišovi a jeho soukromým společnostem“ — jde o tvrzení TI, které Šebestyánova strana odmítá.",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-05"
+    }
+  ],
+  "subjects": [
+    "sebestyan"
+  ],
+  "order": 14,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/martin-sebestyan/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

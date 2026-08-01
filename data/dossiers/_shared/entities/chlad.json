@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/chlad",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "chlad",
+  "entityId": "chlad",
+  "title": "Richard Chlad",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "full",
+  "dossiers": [
+    "macinka-turek",
+    "petr-macinka",
+    "filip-turek",
+    "richard-chlad"
+  ],
+  "routeAliases": [
+    "/dossiers/macinka-turek/entities/chlad/"
+  ]
+}

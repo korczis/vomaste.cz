@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-12",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-12",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
+  },
+  "title": "SRC-12 — ČT24 (Česká televize)",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/pozastaveni-dotaci-kvuli-babisove-moznemu-stretu-zajmu-se-tyka-i-zemedelstvi-373964",
+  "published": "2026-05-28",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-25"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-26"
+    }
+  ],
+  "subjects": [
+    "sebestyan"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Pozastavení dotací kvůli Babišově možnému střetu zájmů se týká i zemědělství**\n\nNejmenovaný vysoký představitel EU potvrdil, že dopis Evropské komise z 20. května 2026 se vztahuje i na zemědělské fondy. Podle zdrojů ČTK nejsou informace od českých úřadů pro Komisi dostatečné k uzavření posouzení. Ministr Šebestyán trvá na tom, že jeho resort dotace vyplácí dál, a argumentuje, že pozastavit platby je oprávněna pouze Evropská komise oficiálním právním aktem, tedy prováděcím rozhodnutím. SZIF avizoval, že proaktivně oslovil DG Agri. Obsahuje reakci Agrofertu a Víta Rakušana.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 12
+}

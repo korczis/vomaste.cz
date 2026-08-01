@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-10",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-10",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "title": "SRC-10 — Reflex",
+  "outlet": "Reflex",
+  "sourceType": "komentář/názor",
+  "url": "https://www.reflex.cz/clanek/komentare/136410/ministr-vojtech-si-hraje-na-neznalka-netusil-ze-zvyhodnuje-babisovy-kliniky-ve-stretu-zajmu.html",
+  "published": "2026-06-12",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-16"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Ministr Vojtěch si hraje na neználka. Netušil, že zvýhodňuje Babišovy kliniky ve střetu zájmů**\n\nKomentář Jiřího Sezemského. Argumentuje, že ministr nemůže věrohodně tvrdit neznalost činnosti Babišových klinik — buď zvýhodňuje vědomě, nebo je nekompetentní. Uvádí, že zdravotnický holding SynBiol loni získal z veřejného zdravotního pojištění téměř tři miliardy Kč a klinika Iscare má roční příjmy kolem miliardy; soukromé preventivní programy stojí až 20 000 Kč. Názorový text, nutno atribuovat autorovi.\n\nZdroj otevřen a přečten 2026-07-30. **Komentář/názorový text** — dokládá, že autor hodnocení publikoval, ne že hodnocení platí."
+    }
+  ],
+  "order": 10
+}

@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/relations/edge-gmrgascz-gmrgas",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-gmrgascz-gmrgas",
+  "relationId": "edge-gmrgascz-gmrgas",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/gmrgas-cz"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/gmrgas"
+  },
+  "relationType": "HOLDS_INTEREST_IN",
+  "label": "podíl v ukrajinské pobočce",
+  "status": "single",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-47"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-17"
+    }
+  ],
+  "subjects": [
+    "macinka"
+  ],
+  "directed": true,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam vztahu edge-gmrgascz-gmrgas — typ vztahu,\npodporující tvrzení a zdroje v tabulce výše jsou úplné. Stav 1 ZDROJ\nznamená, že vazbu popisuje přesně jeden citovaný zdroj (Investigace.cz);\nprimární registr ji nepotvrzuje ani nevyvrací, protože ARES o zahraničních\núčastech českých firem nic neuvádí — viz\n[GAP-07](@/dossiers/macinka-turek/gaps/gap-07.md). Není to zjištění\npochybení: podíl jedné firmy v druhé je běžná vlastnická vazba, zaznamenaná\ntu jen proto, že vysvětluje kontext Macinkova nepřiznaného podílu. Hlavní\nstránka dossieru vykresluje interaktivní graf ze stejných dat."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-48",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-48",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-48 — ČT24: Kauza reklamy na Čapím hnízdě končí, Stříž do ní nezasáhne (8. 7. 2024)",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/kauza-reklamy-na-capim-hnizde-konci-striz-do-ni-nezasahne-350932",
+  "published": "2024-07-08",
+  "retrieved": "2026-08-01",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-69"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-71"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "ČT24 informuje, že případ reklamy na Čapím hnízdě zůstane definitivně\nodložený. Policie prověřovala platby od firem z Agrofertu na reklamu\n„za více než 270 milionů korun“ z let 2010 až 2013 — mimo jiné zda\npeníze ve skutečnosti nešly na reklamu, ale nepomáhaly splácet úvěr;\nvěc dvakrát odložila (podruhé v březnu 2024), trestný čin nezjistila.\nNejvyšší státní zastupitelství přezkoumalo formální i věcnou správnost\nrozhodnutí a nejvyšší státní zástupce Igor Stříž nevyužil oprávnění\nnařídit mimořádnou kontrolu. Finanční správa podle Deníku N dříve\npravomocně nařídila Agrofertu doplatit daň 1,2 milionu korun.\n\n**Poznámka k procesní přesnosti**: odložení znamená, že orgány\nnezískaly základ pro trestní pokračování — není to potvrzení\nekonomické přiměřenosti plateb ani zjištění podvodu; doměření daně je\nsprávní krok, ne trestní zjištění.\n\n**Nezávislost**: k prověřování a odložení existuje nezávislé starší\nzpravodajství [SRC-49](@/dossiers/andrej-babis/sources/src-49.md)\n(Aktuálně.cz); údaj o doměřené dani přebírá ČT24 z Deníku N (jediný\nzáklad, `1 ZDROJ`). Otevřeno a přečteno 2026-08-01."
+    }
+  ],
+  "order": 48
+}

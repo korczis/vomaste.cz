@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-04",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-04",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar"
+  },
+  "title": "SRC-04 — Respekt",
+  "outlet": "Respekt",
+  "sourceType": "zpravodajství",
+  "url": "https://www.respekt.cz/informacni-servis/ministerstvo-vnitra-navrhuje-zrusit-policejni-ochranu-nku-misto-toho-by-mela-nove-strezit-centralni-banku-2026-07-29-10-46",
+  "published": "2026-07-29",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-14"
+    }
+  ],
+  "subjects": [
+    "metnar"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Ministerstvo vnitra navrhuje zrušit policejní ochranu NKÚ – místo toho by měla nově střežit centrální banku**\n\nKrátká zpráva v rubrice Informační servis, volně přístupná. Potvrzuje termín účinnosti (od příštího roku), náklad cca 20 mil. Kč ročně na soukromou ostrahu, přesun policejní ochrany na sídlo ČNB, citaci Kaly o útoku na nezávislou instituci a Metnarovu citaci o nasazování bezpečnostních kapacit podle odborného posouzení. Uvádí i kontext dřívějších redukcí a nižší obsazenosti úřadu.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 4
+}

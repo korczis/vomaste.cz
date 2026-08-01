@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-74",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-74",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "Do dohody o vrácení dotace Imoba prosadila, že podmínky přidělení dotace neporušila, a zprávu OLAF označila za nepoužitelný důkaz; mluvčí Agrofertu uvedl: „K dobrovolnému vrácení přistupujeme zejména proto, že nelze v dohledné době očekávat nezávislé a spravedlivé posouzení případu soudem.“ Vrácení dotace není přiznání viny — doloženo je, co firma uvedla a prosadila do dohody",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-51"
+    }
+  ],
+  "subjects": [],
+  "order": 74,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

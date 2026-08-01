@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/case.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/oto-klempir/cases/CASE-05",
+  "@type": "vomaste:Case",
+  "recordType": "case",
+  "identifier": "CASE-05",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
+  },
+  "title": "Vstup do politiky a jmenování ministrem",
+  "summary": "Vstup do politiky a jmenování ministrem — viz tvrzení CLM-40, CLM-41, CLM-42, CLM-43.",
+  "period": "2026",
+  "status": "status-single",
+  "statusLabel": "Sledované téma",
+  "anchor": "kauza-jmenovani-politika",
+  "claims": [],
+  "sources": [],
+  "subjects": [
+    "klempir"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu\ndossieru](@/dossiers/oto-klempir/_index.md#kauza-jmenovani-politika)."
+    }
+  ],
+  "order": 5
+}

@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-03",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "title": "SRC-03 — ČT24 (Česká televize)",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/resort-zdravotnictvi-podal-trestni-oznameni-na-fn-olomouc-kvuli-defibrilatorum-371400",
+  "published": "2026-03-17",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-06"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Resort zdravotnictví podal trestní oznámení na FN Olomouc kvůli defibrilátorům**\n\nMinisterstvo zdravotnictví podalo trestní oznámení Vrchnímu státnímu zastupitelství v Olomouci na FN Olomouc (I. interní klinika — kardiologická). Podezření: systémové obcházení indikačních kritérií ICD, účelové úpravy zdravotnické dokumentace, nestandardní postupy při klinických studiích. Policie prověřuje podezření z podvodu a těžkého ublížení na zdraví, jde o stovky pacientů. Vedení FN Olomouc označilo oznámení za logický krok a odmítá, že by pacientům ublížilo.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 3
+}

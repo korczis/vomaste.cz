@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/gaps/GAP-03",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "GAP-03 — Setuza: doložena jen neúspěšná akvizice, nic víc",
+  "description": "Podnikatelská epizoda je doložená jedním zdrojem; žádný otevřený zdroj neuvádí v souvislosti se Setuzou pochybení Andreje Babiše.",
+  "priority": "nízká",
+  "checked": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-53"
+    }
+  ],
+  "subjects": [],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Co se od poslední revize uzavřelo (30. 7. 2026).** Dřívější znění této\nmezery říkalo, že vazbu Setuzy na Andreje Babiše nedokládá žádný otevřený\nzdroj. To už neplatí v jednom, úzkém bodě: analýza z roku 2011 dokládá, že\no firmu dlouhodobě usiloval, **nezískal ji** a postavil místo toho vlastní\nzávod Preol ([CLM-53](@/dossiers/andrej-babis/claims/clm-53.md)).\n\n**Co zůstává otevřené — a co to znamená.** Žádný přímo otevřený,\njmenovaný zdroj neuvádí v souvislosti se Setuzou pochybení Andreje\nBabiše. Dohledané materiály o dalších sporech kolem Setuzy popisují jiné\naktéry a jiná řízení; ti do tohoto dossieru nepatří a nejsou tu vedeni.\n\nTahle mezera se tedy nedrží otevřená proto, že „se něco tají“. Drží se\notevřená proto, aby bylo výslovně řečeno, že autorizace tématu **není**\ndoklad, že o něm je co psát: autorizace určuje, co se **smí** pokrýt,\ndoložení určuje, co se **pokryje**. Jediné, co je doložené, je neúspěšná\nakvizice — a víc tenhle dossier o Setuze netvrdí."
+    }
+  ],
+  "order": 3
+}

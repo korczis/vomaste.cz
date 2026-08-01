@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-34",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-34",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "text": "Adam Vojtěch oznámil návrh na daňové vynětí vybraných preventivních programů 4. května 2026 na tiskové konferenci po jednání vlády; mimo limit 50 tisíc Kč mají spadat nadstandardní preventivní prohlídky, rozšířené onkologické screeningy, vyšetření kardiovaskulárního rizika, screening diabetu u rizikových skupin a vybraná očkování nehrazená z veřejného pojištění.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-26"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "order": 34,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/adam-vojtech/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

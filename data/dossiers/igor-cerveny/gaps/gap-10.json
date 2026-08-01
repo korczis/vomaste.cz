@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/gaps/GAP-10",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-10",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "title": "GAP-10 — Údaj o smlouvě na rekonstrukci ministrovy kanceláře za přibližně 191 479 Kč s DPH a o před",
+  "description": "Figuruje pouze v české Wikipedii s odkazem na paywallované články Deníku N; jako tvrzení jej proto neuvádíme.",
+  "priority": "střední",
+  "checked": "2026-07-30",
+  "claims": [],
+  "subjects": [
+    "cerveny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Údaj o smlouvě na rekonstrukci ministrovy kanceláře za přibližně 191 479 Kč s DPH a o předchozí renovaci za zhruba 150 tisíc Kč nebyl potvrzen přímo ve zpravodajském zdroji.\n\n**Proč je to mezera**: Figuruje pouze v české Wikipedii s odkazem na paywallované články Deníku N; jako tvrzení jej proto neuvádíme. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+    }
+  ],
+  "order": 10
+}

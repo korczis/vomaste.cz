@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-25",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-25",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "title": "SRC-25 — Poslanecká sněmovna Parlamentu ČR",
+  "outlet": "Poslanecká sněmovna Parlamentu ČR",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://www.psp.cz/sqw/text/tiskt.sqw?O=10&CT=232&CT1=0",
+  "published": "2026-06-22",
+  "retrieved": "2026-07-30",
+  "claims": [],
+  "subjects": [
+    "plaga"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Sněmovní tisk 232/0 — Novela z. — školský zákon**\n\nStránka tisku 232/0 s metadaty a odkazy na dokumenty (návrh zákona včetně důvodové zprávy, platné znění s vyznačením změn) v PDF a DOCX. Rozesláno poslancům 22. 6. 2026 v 8:58. Vlastní text novely je pouze v přiložených souborech, které se nepodařilo strojově přečíst.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 25
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-48",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-48",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "text": "Při sněmovních interpelacích 25. června 2026 čelil Červený výtkám kvůli personálním změnám; poté, co uvedl, že z resortu odešli „mladí lidovci, kteří tam pracovali na sociálních sítích“, se za výrok omluvil s tím, že nebyl šťastný a nezakládal se na pravdě.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-32"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "order": 48,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/igor-cerveny/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

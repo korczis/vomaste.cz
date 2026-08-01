@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/boris-stastny/gaps/GAP-07",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-07",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/boris-stastny"
+  },
+  "title": "GAP-07 — Původní zjištění Seznam Zpráv v plném znění (autor, rozsah dokumentace, přesné otázky polo",
+  "description": "Původní článek Seznam Zpráv nebyl v rámci rešerše přímo načten; jeho obsah je znám pouze zprostředkovaně přes přebírající redakce.",
+  "priority": "střední",
+  "checked": "2026-07-30",
+  "claims": [],
+  "subjects": [
+    "stastny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Původní zjištění Seznam Zpráv v plném znění (autor, rozsah dokumentace, přesné otázky položené Úřadu vlády).\n\n**Proč je to mezera**: Původní článek Seznam Zpráv nebyl v rámci rešerše přímo načten; jeho obsah je znám pouze zprostředkovaně přes přebírající redakce. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+    }
+  ],
+  "order": 7
+}

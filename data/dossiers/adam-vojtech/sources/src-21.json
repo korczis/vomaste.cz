@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-21",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-21",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "title": "SRC-21 — Zdravotnický deník",
+  "outlet": "Zdravotnický deník",
+  "sourceType": "zpravodajství",
+  "url": "https://www.zdravotnickydenik.cz/2026/07/vojtechuv-navrh-rozviril-debatu-o-babisovi/",
+  "published": "2026-07-07",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-39"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-40"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Od prevence ke střetu zájmů. Vojtěchův návrh rozvířil debatu o Babišovi**\n\nPopis druhého čtení pozměňovacího návrhu k zákonu o EET, kritiky Michaely Šebelové (STAN) ohledně faktického střetu zájmů premiéra Babiše vlastnícího zdravotnické kliniky, obhajoby ministra Vojtěcha a návrhu na zamítnutí od poslance ODS Vojtěcha Munzara.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 21
+}

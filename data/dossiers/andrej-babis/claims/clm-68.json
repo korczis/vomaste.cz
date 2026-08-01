@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-68",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-68",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "Nejvyšší správní soud 11. prosince 2025 zamítl kasační stížnost Moravskoslezského kraje, kterému Ministerstvo pro místní rozvoj kvůli střetu zájmů odmítlo proplatit dotace za více než 43 milionů korun poté, co kraj zadal zakázku při budování školních dílen v Bruntále firmě Navos Farm Technic ze skupiny Agrofert; podle rozsudku byl „dodavatel (Navos Farm Technic) ovládán Ing. Andrejem Babišem“ a zákaz podle zákona o střetu zájmů proto dopadá i na veřejné zakázky malého rozsahu. Jde o výklad zadávacích a dotačních pravidel, ne o trestní odpovědnost",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-46"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-47"
+    }
+  ],
+  "subjects": [],
+  "order": 68,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-35",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-35",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
+  },
+  "text": "Klempíř v březnu 2026 podepsal stanovisko k zástavbě v pražské památkové zóně Smíchov (Hřebenky, Tichá ulice), v němž konstatoval: „Za tohoto stavu kdy zmíněné lhůty uplynuly marně, nemohu nijak zasáhnout. Takový postup mně ani mnou řízenému ministerstvu právní předpisy neumožňují.“",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-05"
+    }
+  ],
+  "subjects": [
+    "klempir"
+  ],
+  "order": 35,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/oto-klempir/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

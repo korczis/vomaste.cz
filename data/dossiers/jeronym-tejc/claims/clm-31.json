@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-31",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-31",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "text": "Decroix v den ohlášení trestního oznámení ve vysílání CNN Prima NEWS uvedla: „Na koho jiného je dnes možné dělat hon na čarodějnice, než na Decroix?“ a k roli resortu dodala, že „nesluší, když z justice dělá prodlouženou ruku své politiky“.",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-16"
+    }
+  ],
+  "subjects": [
+    "tejc"
+  ],
+  "order": 31,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jeronym-tejc/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

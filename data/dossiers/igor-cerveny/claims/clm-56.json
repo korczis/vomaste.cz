@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-56",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-56",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "text": "Podle Blesku se ministr v USA sešel se zástupci společnosti Meta a jednal o využití umělé inteligence pro ochranu životního prostředí; cesta měla rovněž připravit půdu pro podzimní obchodní misi ČR.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-17"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "order": 56,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/igor-cerveny/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

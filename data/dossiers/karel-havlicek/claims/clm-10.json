@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-10",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-10",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "text": "Havlíček v březnu 2026 sliboval, že novela stavebního zákona bude hotová do července, s odůvodněním „Jsme naprosto v kritické situaci“; vládní zmocněnkyně Hana Landová zároveň připustila, že faktické zrychlení povolování se projeví až po 1. lednu 2028.",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-07"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "order": 10,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/karel-havlicek/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

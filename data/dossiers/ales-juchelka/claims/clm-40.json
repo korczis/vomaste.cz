@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-40",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-40",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
+  },
+  "text": "Pavla Pivoňka Vaňková (STAN) po podání trestního oznámení uvedla, že očekává, že „orgány činné v trestním řízení prošetří a najde se ten, kdo za to bude zodpovídat“. Jde o ohlášené podání oznámení — nikoli o zahájení úkonů trestního řízení, obvinění ani odsouzení kohokoli.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-11"
+    }
+  ],
+  "subjects": [
+    "juchelka"
+  ],
+  "order": 40,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/ales-juchelka/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

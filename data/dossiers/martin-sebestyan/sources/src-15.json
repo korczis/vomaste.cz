@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-15",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-15",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
+  },
+  "title": "SRC-15 — Respekt",
+  "outlet": "Respekt",
+  "sourceType": "zpravodajství",
+  "url": "https://www.respekt.cz/informacni-servis/jednou-posudky-o-tom-proc-dal-dotovat-agrofert-zverejnime-rika-ministr-sebestyan-kdy-to-se-pry-uvidi-2026-04-23-11-56",
+  "published": "2026-04-23",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-18"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-24"
+    }
+  ],
+  "subjects": [
+    "sebestyan"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Jednou posudky o tom, proč dál dotovat Agrofert, zveřejníme, říká ministr Šebestyán. Kdy, to se prý uvidí**\n\nZpráva ČTK v Respektu. Ministr Šebestyán uvedl, že k zveřejnění právních analýz, o něž SZIF opřel rozhodnutí, podle něj jednou dojde, ale nezná smluvní ujednání mezi fondem a advokátními kancelářemi. Uvedl, že se s analýzami zatím sám neseznámil, protože jsou vedeny jako neveřejné, a že do rozhodování SZIF nebude zasahovat.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 15
+}

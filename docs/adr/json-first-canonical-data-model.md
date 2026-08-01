@@ -114,6 +114,6 @@ JS ani ručního seznamu slugů.
 |---|---|---|
 | A — baseline audit | hotovo | cb357a0 (+ refresh f2d9318 po T-034) |
 | B — schémata, context, loader, fixtures | hotovo | viz git log task/T-028 |
-| C — kompilátor + sémantika + JSON-LD validace | v implementaci | — |
-| D — lossless migrátor + parity | čeká | — |
+| C — kompilátor + sémantika + JSON-LD validace | hotovo | viz git log task/T-028 |
+| D — lossless migrátor + parity | hotovo (v pracovním stromu) | scripts/migrations/migrate-content-to-json.mjs; report docs/migrations/json-first-migration-report.md; 1 866 kanonických souborů (835 claims / 514 sources / 81 cases / 187 gaps / 101 relations / 42 updates / 22 dossiers / 84 entit); grandfathered debt v data/dossiers/_shared/semantics-baseline.json (2× S2) |
 | E–J | čeká | — |

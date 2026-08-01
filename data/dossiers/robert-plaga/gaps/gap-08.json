@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/gaps/GAP-08",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-08",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "title": "GAP-08 — Nepodařilo se ověřit doslovné znění navrhované novely (sněmovní tisk 232/0) ani text stano",
+  "description": "Stránky Poslanecké sněmovny obsahují pouze metadata a odkazy na PDF/DOC; přiložené soubory se nepodařilo strojově přečíst. Obsah novely je p",
+  "priority": "střední",
+  "checked": "2026-07-30",
+  "claims": [],
+  "subjects": [
+    "plaga"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Nepodařilo se ověřit doslovné znění navrhované novely (sněmovní tisk 232/0) ani text stanoviska vlády (tisk 232/1).\n\n**Proč je to mezera**: Stránky Poslanecké sněmovny obsahují pouze metadata a odkazy na PDF/DOC; přiložené soubory se nepodařilo strojově přečíst. Obsah novely je proto doložen jen zprostředkovaně přes zpravodajství. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+    }
+  ],
+  "order": 8
+}

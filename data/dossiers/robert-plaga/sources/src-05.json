@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-05",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-05",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "title": "SRC-05 — EDUin",
+  "outlet": "EDUin",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://www.eduin.cz/clanky/eduin-tz-zastaveni-plosneho-testovani/",
+  "published": "2026-05-25",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-10"
+    }
+  ],
+  "subjects": [
+    "plaga"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**EDUin: Souhlasíme se zastavením letošního plošného testování v 5. a 9. třídách. Data z něj jsou však pro cílenou vzdělávací politiku zásadní**\n\nTisková zpráva EDUin: souhlas se zastavením testování kvůli nevhodným otázkám (zejména na sebevražedné sklony) bez konzultace s rodiči a učiteli; zároveň obhajoba významu sbíraných dat pro systémová opatření (indexové financování, asistenti pedagoga) a upřesnění, že data byla anonymizována unikátními kódy.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 5
+}

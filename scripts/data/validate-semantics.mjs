@@ -23,12 +23,23 @@
 //   S6  žádná kontextová entita (publicationRole=context) nesmí být
 //       subjektem dossieru — nesmí mít subjectOf, dossierEnabled=true
 //       ani dossierStatus=authorized (zrcadlí validate-authorization.mjs)
-import { readFileSync } from "node:fs";
+//
+// Baseline (T-028 fáze D, grandfathered debt): porušení zděděná 1:1
+// z migrovaného obsahu se NEopravují změnou dat ani změkčením pravidel —
+// místo toho žijí v explicitním allowlistu
+// data/dossiers/_shared/semantics-baseline.json (generuje ho migrátor
+// scripts/migrations/migrate-content-to-json.mjs): záznam (@id, rule)
+// v allowlistu degraduje chybu na warning; JAKÉKOLI nové porušení mimo
+// allowlist zůstává chybou. Grandfatherovat lze jen evidenční pravidla
+// S1–S4; autorizační pravidla S5/S6 nikdy.
+import { existsSync, readFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 export const AUTHORIZATIONS_TOML = join(ROOT, "data/authorizations.toml");
+export const SEMANTICS_BASELINE_RELPATH = "_shared/semantics-baseline.json";
+export const BASELINEABLE_RULES = new Set(["S1", "S2", "S3", "S4"]);
 
 // Jednoduchý parser [[authorizations]] bloků — čte identická data jako
 // scripts/dossier/validate-authorization.mjs (týž soubor, týž tvar);
@@ -45,13 +56,29 @@ export function loadAuthorizationIds(tomlPath = AUTHORIZATIONS_TOML) {
   return ids;
 }
 
+// Allowlist grandfathered porušení: { entries: [{ "@id", rule, reason? }] }.
+// Chybějící soubor = prázdný allowlist (výchozí stav před migrací).
+export function loadSemanticsBaseline(path) {
+  if (!path || !existsSync(path)) return [];
+  const doc = JSON.parse(readFileSync(path, "utf8"));
+  return Array.isArray(doc?.entries) ? doc.entries : [];
+}
+
 const refIds = (arr) => (Array.isArray(arr) ? arr : []).map((r) => r?.["@id"]).filter((x) => typeof x === "string");
 
-// options.authorizations: Set autorizačních id (testy si injektují
-// syntetickou množinu); default se parsuje z data/authorizations.toml.
-export function validateSemantics(model, options = {}) {
-  const errors = [];
+/*
+ * Nálezy s identitou pravidla a záznamu — nižší vrstva pro
+ * validateSemantics (aplikuje baseline) a pro migrátor fáze D (baseline
+ * generuje). Vrací { findings: [{ rule, id, relPath, message }],
+ * warnings: [string] }. options.authorizations: Set autorizačních id
+ * (testy si injektují syntetickou množinu); default se parsuje
+ * z options.authorizationsPath / data/authorizations.toml.
+ */
+export function collectSemanticsFindings(model, options = {}) {
+  const findings = [];
   const warnings = [];
+  const found = (rule, wrapper, message) =>
+    findings.push({ rule, id: wrapper.record?.["@id"] ?? null, relPath: wrapper.relPath, message });
 
   const byId = new Map();
   for (const wrapper of [...model.records, ...model.entities]) {
@@ -79,14 +106,18 @@ export function validateSemantics(model, options = {}) {
     const { record, relPath } = wrapper;
     const distinct = [...new Set(refIds(record.sources))];
     if (record.status === "status-single" && distinct.length !== 1) {
-      errors.push(
+      found(
+        "S1",
+        wrapper,
         `${relPath}: status-single cituje ${distinct.length} zdrojů — „1 ZDROJ" znamená přesně jeden; u 2+ nezávislých zdrojů patří status-corroborated`,
       );
     }
     if (record.status === "status-corroborated") {
       const families = familiesOf(distinct);
       if (distinct.length < 2 || families.size < 2) {
-        errors.push(
+        found(
+          "S2",
+          wrapper,
           `${relPath}: status-corroborated cituje ${distinct.length} zdroj(e) z ${families.size} source family/families — definice badge vyžaduje ≥2 zdroje z ≥2 nezávislých rodin`,
         );
       }
@@ -102,12 +133,16 @@ export function validateSemantics(model, options = {}) {
     const existing = existingSources(sourceIds);
 
     if (record.status !== "contextual" && (claimIds.length < 1 || existing.length < 1)) {
-      errors.push(
+      found(
+        "S3",
+        wrapper,
         `${relPath}: hrana se statusem "${record.status}" nemá plnou evidenci (${claimIds.length} claim(ů), ${existing.length} zdroj(ů)) — každá ne-kontextová hrana nese ≥1 existující claim i zdroj`,
       );
     }
     if (record.status === "single" && sourceIds.length !== 1) {
-      errors.push(
+      found(
+        "S4",
+        wrapper,
         `${relPath}: hrana se statusem "single" cituje ${sourceIds.length} zdrojů — buď zdroje nejsou nezávislé (zdokumentovat), nebo patří status "corroborated"`,
       );
     }
@@ -133,12 +168,14 @@ export function validateSemantics(model, options = {}) {
     if (record.dossierType !== "entity") continue;
     const authRecords = record.authorization?.records;
     if (!Array.isArray(authRecords) || authRecords.length === 0) {
-      errors.push(`${relPath}: entity dossier bez authorization.records — žádný dossier nesmí existovat bez skutečného autorizačního záznamu`);
+      found("S5", wrapper, `${relPath}: entity dossier bez authorization.records — žádný dossier nesmí existovat bez skutečného autorizačního záznamu`);
       continue;
     }
     for (const authId of authRecords) {
       if (!authorizations.has(authId)) {
-        errors.push(
+        found(
+          "S5",
+          wrapper,
           `${relPath}: authorization.records odkazuje na "${authId}", který v data/authorizations.toml neexistuje — autorizace vzniká jen zápisem do append-only logu v AGENTS.md a jeho transkripce`,
         );
       }
@@ -150,13 +187,60 @@ export function validateSemantics(model, options = {}) {
     const { record, relPath } = wrapper;
     if (record.publicationRole !== "context") continue;
     if (refIds(record.subjectOf).length > 0) {
-      errors.push(`${relPath}: kontextová entita má subjectOf — kontextová entita nesmí být subjektem žádného dossieru`);
+      found("S6", wrapper, `${relPath}: kontextová entita má subjectOf — kontextová entita nesmí být subjektem žádného dossieru`);
     }
     if (record.dossierEnabled === true) {
-      errors.push(`${relPath}: kontextová entita má dossierEnabled=true — kontextová entita se nikdy sama nepovyšuje na dossier-worthy`);
+      found("S6", wrapper, `${relPath}: kontextová entita má dossierEnabled=true — kontextová entita se nikdy sama nepovyšuje na dossier-worthy`);
     }
     if (record.dossierStatus === "authorized") {
-      errors.push(`${relPath}: kontextová entita má dossierStatus "authorized" — automatika nesmí kontextové entitě přiznat autorizaci`);
+      found("S6", wrapper, `${relPath}: kontextová entita má dossierStatus "authorized" — automatika nesmí kontextové entitě přiznat autorizaci`);
+    }
+  }
+
+  return { findings, warnings };
+}
+
+/*
+ * Veřejná brána: nálezy → aplikace baseline allowlistu → { errors,
+ * warnings }. options:
+ *   authorizations / authorizationsPath — viz collectSemanticsFindings
+ *   baseline      — pole záznamů allowlistu (testy); default se čte
+ *                   z options.baselinePath, jinak z
+ *                   <model.root>/_shared/semantics-baseline.json
+ */
+export function validateSemantics(model, options = {}) {
+  const { findings, warnings } = collectSemanticsFindings(model, options);
+  const baselinePath =
+    options.baselinePath ?? (model?.root ? join(model.root, SEMANTICS_BASELINE_RELPATH) : null);
+  const baseline = options.baseline ?? loadSemanticsBaseline(baselinePath);
+
+  const errors = [];
+  const allowed = new Set();
+  for (const entry of baseline) {
+    const rule = entry?.rule;
+    const id = entry?.["@id"];
+    if (!BASELINEABLE_RULES.has(rule) || typeof id !== "string") {
+      errors.push(
+        `semantics-baseline: neplatný záznam ${JSON.stringify(entry)} — allowlist smí obsahovat jen pravidla ${[...BASELINEABLE_RULES].join("/")} s konkrétním @id (S5/S6 grandfatherovat nelze)`,
+      );
+      continue;
+    }
+    allowed.add(`${rule} ${id}`);
+  }
+
+  const used = new Set();
+  for (const f of findings) {
+    const key = `${f.rule} ${f.id}`;
+    if (f.id && allowed.has(key)) {
+      used.add(key);
+      warnings.push(`baseline (grandfathered ${f.rule}): ${f.message}`);
+    } else {
+      errors.push(f.message);
+    }
+  }
+  for (const key of allowed) {
+    if (!used.has(key)) {
+      warnings.push(`semantics-baseline: záznam "${key}" už žádné porušení nekryje — odmazat z allowlistu (dluh splacen)`);
     }
   }
 

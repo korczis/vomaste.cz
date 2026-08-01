@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-43",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-43",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-43 — ČeskéNoviny.cz (ČTK): Fond podle NSS nechyboval, když zamítl dotace pro firmy z Agrofertu (15. 1. 2025)",
+  "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceType": "zpravodajství",
+  "url": "https://www.ceskenoviny.cz/zpravy/2620368",
+  "published": "2025-01-15",
+  "retrieved": "2026-08-01",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-64"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Agenturní zpráva ČTK: SZIF podle Nejvyššího správního soudu nechyboval,\nkdyž zamítl dotace pro společnosti Vodňanská drůbež a Výkrm Tagrea\nz koncernu Agrofert; NSS vyhověl kasačním stížnostem fondu proti\nrozsudkům Městského soudu v Praze. Z odůvodnění: „Jestliže žalobce\npodal žádost o dotaci v době, kdy byl Andrej Babiš předsedou vlády, a\nexistoval zde tedy (ve smyslu závěrů Komise) střet zájmů, pro který\nžalobce nebyl způsobilým žadatelem o dotaci, je zřejmé, že projekt\nnebyl v průběhu celé jeho administrace v souladu s příslušnou právní\núpravou.“ Městský soud musí rozhodovat znovu.\n\n**Poznámka k procesní přesnosti**: kasační rozhodnutí vrací věc nižšímu\nsoudu — definitivní výsledek jednotlivých sporů z něj neplyne. Jde\no správní výklad dotační způsobilosti, ne o trestní odpovědnost.\n\n**Nezávislost**: agenturní text ČTK, jediný přímo otevřený zdroj —\nstav `1 ZDROJ`. Otevřeno a přečteno 2026-08-01."
+    }
+  ],
+  "order": 43
+}

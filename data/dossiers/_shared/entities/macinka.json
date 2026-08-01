@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/macinka",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "macinka",
+  "entityId": "macinka",
+  "title": "Petr Macinka",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "full",
+  "dossiers": [
+    "macinka-turek",
+    "petr-macinka",
+    "richard-chlad"
+  ],
+  "routeAliases": [
+    "/dossiers/macinka-turek/entities/macinka/"
+  ],
+  "snapshotDate": "2026-07-30",
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Hlavní subjekt autorizovaného dossieru. Tato stránka je kanonický záznam\ntéto entity — dossiery, tvrzení, zdroje a vztahy v tabulce a sekcích níže\njsou úplné; nejde o zkrácenou verzi něčeho podrobnějšího jinde."
+    }
+  ]
+}

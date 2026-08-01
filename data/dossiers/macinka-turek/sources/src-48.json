@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-48",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-48",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-48 — Aktuálně.cz",
+  "outlet": "Aktuálně.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://zpravy.aktualne.cz/domaci/policie-odlozila-proverovani-turka-v-kauze-nenavistnych-vyroku/r~aaa29fddbab8d2fc9ab5d275662ace2f/?lp=1",
+  "published": "2026-07-28",
+  "retrieved": "2026-07-29",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-41"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-42"
+    }
+  ],
+  "subjects": [
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Nezávislé potvrzení zprávy Deníku N (SRC-47) od jiného vydavatele:\npolicie odložila prověřování Turkových nenávistných výroků na\nsociálních sítích pro promlčení a nepotvrdila tvrzení Motoristů sobě, že\nzveřejněné materiály byly zfalšované. Trestní oznámení Motoristů na\nDeník N bylo odloženo se stejným odůvodněním — zveřejnění informací\nnebylo trestným činem."
+    }
+  ],
+  "order": 48
+}

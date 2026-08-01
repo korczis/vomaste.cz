@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/oto-klempir/gaps/GAP-02",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
+  },
+  "title": "GAP-02 — Žádné z tvrzení nemá druhý nezávislý zdroj",
+  "description": "Všechna resortní tvrzení stojí k datu kontroly na jediném vydavateli; nezávislé potvrzení nebylo nalezeno ani vyloučeno.",
+  "priority": "vysoká",
+  "checked": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-06"
+    }
+  ],
+  "subjects": [
+    "klempir"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tvrzení CLM-03 až CLM-06 mají k datu kontroly (2026-07-30) jediný\ncitovaný zdroj — [SRC-02](@/dossiers/oto-klempir/sources/src-02.md)\n(RESPEKT). Ve zkontrolovaných zdrojích nebyl nalezen druhý, skutečně\nnezávislý zdroj (jiný vydavatel, ne přebírající zpráva), který by tytéž\nkonkrétní kroky doložil samostatně. Proto všechna tato tvrzení nesou\nstav `1 ZDROJ` a nikoli `CORROBORATED`.\n\nToto **není** zjištění, že by tvrzení byla nepravdivá ani že by je jiné\nredakce vyvrátily. Znamená to jen, že k uvedenému datu dossier žádné\nnezávislé potvrzení nemá — a že si to nedovoluje zamlčet stavem, který by\ntvrdil víc.\n\n**Podmínka uzavření mezery**: nalezení a přímé otevření druhého,\nnezávislého zdroje k jednotlivému tvrzení; tím se dané tvrzení může\npovýšit na `CORROBORATED`. Povýšení stavu vyžaduje nový důkaz, nikdy\npouze přeznačení. Naopak pokud by jiný zdroj konkrétní krok popřel nebo\nopravil, patří to do dossieru jako rozpor, ne jako tiché odstranění."
+    }
+  ],
+  "order": 2
+}

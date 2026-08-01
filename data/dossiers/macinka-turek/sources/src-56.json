@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-56",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-56",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-56 — Romea.cz: Potvrzeno, Filip Turek zveřejňoval rasistické a nenávistné příspěvky (28. 7. 2026)",
+  "outlet": "Romea.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://romea.cz/cz/domaci/potvrzeno-filip-turek-zverejnoval-rasisticke-a-nenavistne-prispevky-cast-byla-trestna-stihani-je-ale-promlcene-policie-nezpochybnila-pravdivost-clanku",
+  "published": "2026-07-28",
+  "retrieved": "2026-07-31",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-49"
+    }
+  ],
+  "subjects": [
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Romea.cz dne 28. 7. 2026 cituje dozorujícího státního zástupce Jana\nVychytu k odložení věci pro promlčení: „Z pohledu práva jsme však\ndospěli k závěru, že k danému skutku došlo a že by byl trestným\nčinem.\" Trestní odpovědnost za něj ale podle něj zanikla promlčením.\nČlánek dále uvádí: „Články Deníku N proto ve svém faktickém jádru\nobstály a policie jejich zjištění nezpochybnila.\" Turek podle článku\nautorství konkrétního komentáře odmítal, za některé jiné své výroky se\nale omluvil.\n\n**Poznámka k procesní přesnosti**: toto je vyjádření dozorujícího\nstátního zástupce v rámci **odloženého, promlčeného** prověřování —\n**ne** rozsudek soudu a ne pravomocné rozhodnutí. Rozhodnutí je nadále\nnapadnutelné stížností. Nejde o zjištění viny ve smyslu trestního\npráva; jde o právní posouzení dozorového orgánu, že by dané jednání\nznaky trestného činu naplňovalo, kdyby nebylo promlčeno.\n\n**Nezávislost**: jediný dosud otevřený a přečtený zdroj s touto\nkonkrétní citací; SRC-47/SRC-48 dokládají odložení věci obecně, ale\nneobsahují tuto konkrétní výpověď dozorujícího zástupce. Stav tvrzení\nproto zůstává `1 ZDROJ`."
+    }
+  ],
+  "order": 56
+}

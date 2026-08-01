@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-36",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-36",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-36 — Aktuálně.cz",
+  "outlet": "Aktuálně.cz",
+  "sourceType": "zpravodajství / reportáž",
+  "url": "https://zpravy.aktualne.cz/domaci/turkovy-hrichy-prehledne-hajlovani-do-ksichtu-domaci-nasili/r~ec25cb48d3a011f0b589ac1f6b220ee8/",
+  "published": "2025-12-08",
+  "retrieved": "2026-07-22",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-32"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-33"
+    }
+  ],
+  "subjects": [
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Souhrnný přehledový článek Vieta Trana (Aktuálně.cz, 8. 12. 2025) mapuje\nvíce Turkových kauz najednou. Pro tento dossier jsou relevantní dvě\nsamostatná zjištění:\n\n**Závodní kariéra**: „Celkem se měl zúčastnit 27 startů, ze kterých si\nodnesl 12 vítězství,\" v nejnižší závodní podkategorii Formula 4 Trophy.\nObsazenost: „čtyřikrát jel úplně sám a šestkrát proti němu stál jeden\njediný protivník\" — jednou 15letý junior, jednou praktický lékař.\nPodrobnější rozbor viz analýza Mahdalové a Škopa (Carbonia Cup 2015–16,\nESET V4 Cup F4 Trophy 2017).\n\n**Diplomaté**: „Turek čelil i kritice za svá setkání s íránským\nvelvyslancem a dalšími diplomaty ze zemí, které někteří označují za\nautoritářské.\" Turek se hájil členstvím v delegaci Evropského parlamentu\npro Írán a zmínil kontakty i se západními politiky. Podrobněji viz\nSRC-37 (Neovlivní.cz).\n\nDossier vede obě zjištění jako zdokumentovaný fakt/kontext, ne jako\ntvrzení o protiprávním jednání — jde o otázku veřejné prezentace a\nposuzování, ne o kauzu s právním rozměrem jako témata A–C."
+    }
+  ],
+  "order": 36
+}

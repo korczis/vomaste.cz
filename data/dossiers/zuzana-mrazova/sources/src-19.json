@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-19",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-19",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "title": "SRC-19 — ČeskéNoviny.cz (ČTK)",
+  "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceType": "zpravodajství",
+  "url": "https://www.ceskenoviny.cz/zpravy/2846411",
+  "published": "2026-07-02",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-51"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-52"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-53"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-56"
+    }
+  ],
+  "subjects": [
+    "mrazova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Pirátští poslanci se ve Sněmovně opět pustili do ministryně Mrázové**\n\nPři sněmovních interpelacích 2. 7. 2026 kritizovali Mrázovou Olga Richterová, Ivan Bartoš a Kateřina Stojanová kvůli užívání obecního bytu a nepovoleným stavbám. Richterová upozornila, že vedoucí příslušného stavebního úřadu je kamarád ministryně. Babiš se z dopolední části omluvil; v písemné odpovědi Richterové Mrázovou hájil, že neporušila zákony ani pravidla Bíliny a nevidí důvod k vyvození odpovědnosti. Mrázová na vystoupení nereagovala.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 19
+}

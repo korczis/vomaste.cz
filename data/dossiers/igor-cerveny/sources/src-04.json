@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-04",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-04",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "title": "SRC-04 — Ekolist.cz (ČTK)",
+  "outlet": "Ekolist.cz (ČTK)",
+  "sourceType": "zpravodajství",
+  "url": "https://ekolist.cz/cz/zpravodajstvi/zpravy/ministr-zivotniho-prostredi-cerveny-opravil-majetkove-priznani-a-zaplatil-pokutu",
+  "published": "2026-06-22",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-07"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Ministr životního prostředí Červený opravil majetkové přiznání a zaplatil pokutu**\n\nČervený podal opravné oznámení do Centrálního registru oznámení a zaplatil pokutu 7 500 Kč za neúplnost vstupního oznámení (neuvedené spoluvlastnictví domu). Citace: 'Chybně jsem vycházel z předpokladu, že rozhodným obdobím je datum nabytí funkce, nikoliv datum podání oznámení.' Článek neuvádí, zda je řízení formálně (pravomocně) ukončeno.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 4
+}

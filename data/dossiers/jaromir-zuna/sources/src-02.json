@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "title": "SRC-02 — e15.cz",
+  "outlet": "e15.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://www.e15.cz/rozhovory/mame-nejvyssi-vydaje-na-obranu-nikdy-jsme-nebyli-v-tak-luxusni-situaci-rika-ministr-obrany-zuna-1431795",
+  "published": "2026-04-02",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-05"
+    }
+  ],
+  "subjects": [
+    "zuna"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Ministr Zůna: Armáda nikdy nebyla v tak luxusní situaci jako teď**\n\nRozhovor s ministrem obrany Jaromírem Zůnou (SPD). Odmítá, že by armáda trpěla nedostatkem peněz; podepsané strategické projekty vyzbrojování podle něj běží. Odvolává se na zákon o financování obrany (min. 2 % HDP). Jako slabiny uvádí personální podstav, zanedbané drony a roztříštěný bezpečnostní systém.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 2
+}

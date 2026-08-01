@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-15",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-15",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "text": "Svůj obrat od březnové kritiky k vlastnímu návrhu zákazu Plaga zdůvodnil dokončeným monitoringem školních řádů — podle něj 93 % škol pravidla pro telefony upravilo — a slovy: 'Pouze polovina prvních stupňů základních škol má zakázané mobilní telefony o přestávkách a je dokázáno, že to dobře funguje.'",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-06"
+    }
+  ],
+  "subjects": [
+    "plaga"
+  ],
+  "order": 15,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/robert-plaga/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

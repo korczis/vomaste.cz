@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-25",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-25",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "title": "SRC-25 — Novinky.cz",
+  "outlet": "Novinky.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://www.novinky.cz/clanek/domaci-stret-zajmu-jsem-vyresil-sdelil-novy-ministr-cerveny-40563744",
+  "published": "2026-02-23",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-31"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Střet zájmů jsem vyřešil, sdělil nový ministr Červený**\n\nCituje Červeného před jednáním vlády: „Já žádný nemám, už je to vyřešené. Nejspíše tento týden se to propíše v rejstříku, už je to pryč.“ Rekapituluje jednatelství v podcastové firmě, lhůtu 30 dnů a roli Lubora Nováka.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 25
+}

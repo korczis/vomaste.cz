@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-03",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "title": "SRC-03 — Hrot24.cz",
+  "outlet": "Hrot24.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://www.hrot24.cz/clanek/obrana-rozpocet-2026-vydaje-hdp-zuna-HCE66",
+  "published": "2026-01-26",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-03"
+    }
+  ],
+  "subjects": [
+    "zuna"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Obrana letos dosáhne pouze na 185 miliard korun. Nové projekty se tak odsouvají**\n\nObranné výdaje 2026 činí cca 185 mld. Kč (2,07 % HDP) místo původně navrhovaných 206 mld. (2,35 %) — škrt 21 mld. Podle Zůny běžící projekty pokračují, nové ambice se posouvají na rok 2027.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 3
+}

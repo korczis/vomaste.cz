@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-19",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-19",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "text": "Součástí ohlášených změn v zadávání zakázek Správy železnic bylo odstranění kvalifikačních bariér pro dodavatele, dělení zakázek na profesní části, větší transparentnost cen a širší využití principu Design & Build.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-14"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "order": 19,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/ivan-bednarik/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-09",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-09",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
+  },
+  "title": "SRC-09 — Aktuálně.cz",
+  "outlet": "Aktuálně.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://zpravy.aktualne.cz/domaci/agrofert-muze-opet-cerpat-dotace-rozhodl-zemedelsky-fond/r~aaa296fc028699cf709e299426cf7ed0/?lp=1",
+  "published": "2026-04",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-20"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-21"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-22"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-23"
+    }
+  ],
+  "subjects": [
+    "sebestyan"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Agrofert může opět čerpat dotace, rozhodl zemědělský fond. Opozici se to nelíbí**\n\nZpráva ČTK o rozhodnutí SZIF z konce dubna 2026, že Agrofert může znovu čerpat dotace po vložení akcií do svěřenského fondu RSVP Trust. Generální ředitel Petr Dlouhý uvedl, že RSVP Trust splňuje podmínky vypořádání majetkových poměrů. SZIF zároveň na základě objednaných externích právních analýz nebude zpětně vymáhat nárokové evropské dotace z let 2017–2021. Obsahuje kritiku Víta Rakušana (STAN) a Ivana Bartoše, který zpochybnil objednané analýzy od kanceláře Portos (dříve Češka a Smutný).\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 9
+}

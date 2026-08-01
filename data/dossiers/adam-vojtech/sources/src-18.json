@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-18",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-18",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "title": "SRC-18 — Olomoucký Report",
+  "outlet": "Olomoucký Report",
+  "sourceType": "zpravodajství",
+  "url": "https://www.report.cz/komise-ve-fn-olomouc-byly-nektere-defibrilatory-voperovany-bez-splneni-kriterii",
+  "published": "2026-07-11",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-23"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-28"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-30"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Komise: Ve FN Olomouc byly některé defibrilátory voperovány bez splnění kritérií**\n\nPopis složení komise (odborník pověřený MZ, lékaři I. interní kliniky FNOL, dva zástupci České asociace pro srdeční rytmus), stanovisko vedení nemocnice, postoj Táborského a stav trestního řízení bez obvinění.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 18
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-06",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-06",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-06 — ČT24",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "veřejnoprávní zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/pokud-zabery-z-nehody-nelzou-turek-by-mel-rezignovat-rekl-babis-375570",
+  "published": "2026-07-14",
+  "retrieved": "2026-07-21",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-12"
+    }
+  ],
+  "subjects": [
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Přímá redakční zpráva ČT24 citující premiéra Andreje Babiše k Turkově\nnehodě — konkrétně jeho podmínečné stanovisko (\"pokud se záběry\npotvrdí...\"), ne definitivní odsudek. Dossier proto formuluje CLM-12 stejně\npodmínečně, ne jako tvrzení, že Babiš už Turka jednoznačně odsoudil.\n\nZdroj společně se SRC-08 (iRozhlas) potvrzuje totéž jádro události ze dvou\nsamostatných redakcí — v poznámce k nezávislosti v hlavním dossieru je\ntato dvojice vedena jako dvě nezávislé redakční potvrzení, ne jedna\nzdrojová rodina."
+    }
+  ],
+  "order": 6
+}

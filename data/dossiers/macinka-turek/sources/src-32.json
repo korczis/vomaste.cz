@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-32",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-32",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-32 — Deník.cz (VLTAVA LABE MEDIA)",
+  "outlet": "Deník.cz (VLTAVA LABE MEDIA)",
+  "sourceType": "zpravodajství",
+  "url": "https://www.denik.cz/z_domova/filip-turek-vyhrozovani-saudskoarabska-ambasada.html",
+  "published": "2025-10-15",
+  "retrieved": "2026-07-22",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-28"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-29"
+    }
+  ],
+  "subjects": [
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Retrospektivní článek (publikován 2025, k události z 2017): Filip Turek\nnakreslil oprátku na papír a nechal ji za stěračem auta patřícího\nzaměstnanci saúdskoarabské ambasády ve sdílených garážových prostorách;\nna střechu vozu navíc položil loveckou nábojnici.\n\nPolicie to nejprve prošetřovala jako vyhrožování s rasovým motivem,\npozději dospěla k závěru, že šlo pravděpodobně o záměnu osob (zaměstnanec\nambasády popřel, že by toho večera k nějaké ženě přistoupil), a věc\nvyřešila jako přestupek na pražském úřadu, ne jako trestný čin.\n\nTurek: „Nakreslil jsem šibenici, aby to pochopil\" — tvrdil, že bránil\ntehdejší přítelkyni před obtěžováním, a odmítl, že by věděl, že jde o\nzaměstnance ambasády, nebo že by měl rasový motiv. Fakt incidentu a jeho\núřední vyřešení jsou vedeny jako CORROBORATED (CLM-28); Turkovo\nvysvětlení motivu jako CITACE (CLM-29)."
+    }
+  ],
+  "order": 32
+}

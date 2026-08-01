@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-29",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-29",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "text": "Pavel Blažek podle Reflexu argumentoval tím, že žádný státní orgán „autoritativně nezkonstatoval, že bitcoiny jsou právně vadné“, a že mu audit nebyl dán ani k nahlédnutí. Po zahájení stíhání pak uvedl, že se cítí naprosto nevinný.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-15"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-13"
+    }
+  ],
+  "subjects": [
+    "tejc"
+  ],
+  "order": 29,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jeronym-tejc/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

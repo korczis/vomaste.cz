@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-27",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-27",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "title": "SRC-27 — Deník N: Ministerstvo spravedlnosti podalo podnět k prověření ministryně Mrázové (21. 5. 2026)",
+  "outlet": "Deník N",
+  "sourceType": "zpravodajství",
+  "url": "https://denikn.cz/minuta/2071174",
+  "published": "2026-05-21",
+  "retrieved": "2026-07-31",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-24"
+    }
+  ],
+  "subjects": [
+    "mrazova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Deník N dne 21. 5. 2026: „Rezort spravedlnosti podal podnět k prověření\nministryně pro místní rozvoj Zuzany Mrázové (ANO). Přestupkový úřad má\npřezkoumat nesrovnalosti v jejím majetkovém přiznání.\"\n\n**Nezávislost**: Deník N je samostatná redakce od České televize\n(SRC-20) — obě nezávisle potvrzují tutéž veřejnou skutečnost (podnět\nministerstva spravedlnosti). Proto CLM-24 nese stav `CORROBORATED`.\n\n**Limity**: jde o procesní krok zahajující prověření, ne o zjištění\npochybení; obě strany (Mrázová, mluvčí MMR) svá vyjádření k věci uvádí,\njak popisuje hlavní přehled dossieru."
+    }
+  ],
+  "order": 27
+}

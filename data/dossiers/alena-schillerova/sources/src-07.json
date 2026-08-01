@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-07",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-07",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "title": "SRC-07 — Echo24",
+  "outlet": "Echo24",
+  "sourceType": "zpravodajství",
+  "url": "https://m.echo24.cz/a/HsiHd/zpravy-ekonomika-prezident-pavel-vetoval-novelu-k-verejnym-rozpoctum",
+  "published": "2026-07-22",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-17"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-18"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-40"
+    }
+  ],
+  "subjects": [
+    "schillerova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Pavel vetoval novelu rozpočtových zákonů. Ohrožuje bezpečnost občanů, reaguje Babiš**\n\nZpráva o vetu prezidenta Petra Pavla oznámeném videem na sociální síti. Uvádí prezidentovy důvody (možnost půjčovat si výrazně více, bez finančního limitu po dobu deseti let; oslabení parlamentní kontroly), reakci premiéra Babiše označující veto za nezodpovědné vůči občanům a informaci, že koalice má potřebnou většinu k přehlasování.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 7
+}

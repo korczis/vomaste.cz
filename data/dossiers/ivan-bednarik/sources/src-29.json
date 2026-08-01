@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-29",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-29",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "title": "SRC-29 — Deník.cz: Bednárik rezignoval na post šéfa Českých drah (15. 2. 2022)",
+  "outlet": "Deník.cz (VLTAVA LABE MEDIA)",
+  "sourceType": "zpravodajství",
+  "url": "https://www.denik.cz/ekonomika/ceske-drahy-ivan-bednarik-20220215.html",
+  "published": "2022-02-15",
+  "retrieved": "2026-07-31",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-02"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Deník.cz dne 15. 2. 2022: „Bednárik byl předsedou představenstva a\ngenerálním ředitelem ČD od prosince 2020, kdy v čele společnosti\nnahradil Václava Nebeského. Nyní končí k 28. únoru.\"\n\n**Nezávislost**: samostatná redakce od Ekonomický deník (SRC-02) —\nobě nezávisle potvrzují tutéž veřejnou skutečnost (rezignace k 28. 2.\n2022). Proto CLM-02 nese stav `CORROBORATED`.\n\n**Limity**: článek — stejně jako SRC-02 — neuvádí konkrétní důvod\nrezignace; dossier proto důvod netvrdí, jen registruje verze uváděné\nv dalších citovaných zdrojích (viz [GAP-01](@/dossiers/ivan-bednarik/gaps/gap-01.md))."
+    }
+  ],
+  "order": 29
+}

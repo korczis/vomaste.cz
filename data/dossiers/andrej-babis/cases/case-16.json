@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/case.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/cases/CASE-16",
+  "@type": "vomaste:Case",
+  "recordType": "case",
+  "identifier": "CASE-16",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "Původní svěřenské fondy a návrat k přímému vlastnictví",
+  "summary": "V únoru 2017 vložil Babiš akcie Agrofertu do svěřenských fondů AB private trust I a II v reakci na zpřísnění úpravy střetu zájmů. V prosinci 2024 převedl zhruba 90 % podílu z prvního fondu zpět na sebe a 15. října 2025 byl ukončen i druhý fond — stal se opět jediným vlastníkem. Jde o doloženou majetkovou posloupnost, která sama o sobě není protiprávní; k jejím účinkům na střet zájmů se v samostatných kauzách tohoto dossieru vyslovují správní soudy a Evropská komise.",
+  "period": "2017–2025",
+  "status": "status-corroborated",
+  "statusLabel": "Majetková posloupnost — sama o sobě legální",
+  "anchor": "kauza-ab-trusty",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-16"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-17"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-28"
+    }
+  ],
+  "subjects": [],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Plné znění, zdroje a kontext tohoto případu jsou v [hlavním přehledu\ndossieru](@/dossiers/andrej-babis/_index.md#kauza-ab-trusty)."
+    }
+  ],
+  "order": 16
+}

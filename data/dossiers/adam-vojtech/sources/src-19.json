@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-19",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-19",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "title": "SRC-19 — Zdravotnický deník",
+  "outlet": "Zdravotnický deník",
+  "sourceType": "zpravodajství",
+  "url": "https://www.zdravotnickydenik.cz/2026/05/vzp-defibrilatory-fn-olomouc-policie-usti-nad-labem/",
+  "published": "2026-05-14",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-31"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-32"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Kauza defibrilátorů se rozrůstá: VZP prověřuje stovky operací, policie zasahovala i v Ústí**\n\nVZP kontroluje stovky implantací z let 2023–2025 (mluvčí Viktorie Plívová), předběžné výsledky očekává na podzim 2026. Kriminalisté zasahovali i v Masarykově nemocnici v Ústí nad Labem, kde kardiologickou kliniku vede prof. Táborský, jenž do února 2025 vedl obdobné pracoviště v Olomouci.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 19
+}

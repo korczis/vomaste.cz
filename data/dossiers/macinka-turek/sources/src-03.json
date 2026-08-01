@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-03",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-03 — Info.cz",
+  "outlet": "Info.cz",
+  "sourceType": "komentář / názor",
+  "url": "https://www.info.cz/zpravodajstvi-a-komentare/macinka-turek-konec-motoriste",
+  "published": "2026-01-08",
+  "retrieved": "2026-07-21",
+  "claims": [],
+  "subjects": [
+    "macinka",
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Jde o autorský komentář, ne o zpravodajský text — samotný název sekce na\nInfo.cz (\"zpravodajství a komentáře\") to nerozlišuje, ale obsahově je text\npublicistickou úvahou o politické budoucnosti Macinky a Turka, ne popisem\nověřených faktů.\n\nV registru tvrzení proto tento zdroj nepodkládá žádné faktické CLM-##\ntvrzení — figuruje jen jako doklad toho, že takový komentář existuje a jaký\nje jeho rámec (viz sekci \"Komentáře a analýzy\" v hlavním dossieru)."
+    }
+  ],
+  "order": 3
+}

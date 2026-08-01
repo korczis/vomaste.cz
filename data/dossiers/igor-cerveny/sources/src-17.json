@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-17",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-17",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "title": "SRC-17 — Blesk.cz",
+  "outlet": "Blesk.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://www.blesk.cz/clanek/zpravy-politika/844424/pracovni-vylet-ministra-cerveneho-krasy-narodnich-parku-v-usa-kritikou-eu-ponizil-evropu.html",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-56"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-57"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Pracovní „výlet“ ministra Červeného: Krásy národních parků v USA! Kritikou EU „ponížil“ Evropu?**\n\nRekapituluje desetidenní cestu: národní parky, jednání se zástupci Meta o využití AI pro ochranu životního prostředí, příprava podzimní obchodní mise ČR, vystoupení na fóru OSN a rozhovor pro Fox News s kritikou Green Dealu. Uvádí, že ministr odmítl zveřejnit složení delegace a financování cesty mluvčího Motoristů.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 17
+}

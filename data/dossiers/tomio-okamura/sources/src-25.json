@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-25",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-25",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
+  },
+  "title": "SRC-25 — Reflex",
+  "outlet": "Reflex",
+  "sourceType": "komentář/názor",
+  "url": "https://www.reflex.cz/clanek/komentare/136291/okamura-kope-na-vsechny-strany-pokuta-pro-spd-ale-svedci-o-kvalite-justice-v-cesku.html",
+  "published": "2026-06-07",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-34"
+    }
+  ],
+  "subjects": [
+    "okamura"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Okamura kope na všechny strany. Pokuta pro SPD ale svědčí o kvalitě justice v Česku**\n\nAutorský komentář Aleše Michala, který rozsudek hodnotí kladně jako doklad kvality právního státu a popisuje, že se Okamura po vyhlášení rozsudku pustil i do samotné soudkyně. Jde o názorový text, nikoli zpravodajství.\n\nZdroj otevřen a přečten 2026-07-30. **Komentář/názorový text** — dokládá, že autor hodnocení publikoval, ne že hodnocení platí."
+    }
+  ],
+  "order": 25
+}

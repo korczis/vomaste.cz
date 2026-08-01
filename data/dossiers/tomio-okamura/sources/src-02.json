@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
+  },
+  "title": "SRC-02 — Česká justice",
+  "outlet": "Česká justice",
+  "sourceType": "odborné právní zpravodajství",
+  "url": "https://www.ceska-justice.cz/2026/06/plakaty-spd-u-soudu-odmitla-kampan-trestnym-cinem/",
+  "published": "2026-06-03",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-06"
+    }
+  ],
+  "subjects": [
+    "okamura"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Česká justice dne 3. 6. 2026 nezávisle potvrzuje jádro věci: Obvodní soud\npro Prahu 1 uznal SPD vinným z podněcování k nenávisti a uložil peněžitý\ntrest 3 miliony korun; **rozsudek není pravomocný**.\n\nObhajoba hnutí podle článku: vinu odmítá a tvrdí, že jednání není\ntrestným činem; advokát argumentoval, že plakáty pravdivě pojmenovávaly\nspolečenské problémy kolem migrační politiky EU a zneužívání dávek;\nkampaň označili za „satiru a alegorii\"; znalecké posudky obžaloby\nzpochybnili s tím, že policejní zadání bylo návodné a výsledky\n„účelově zkreslené\".\n\nČlánek dále uvádí, že SPD dříve **vyhrálo samostatný spor** s\nMinisterstvem vnitra, v němž soud shledal, že její výroky nešířily\nstrach. Ohledně Okamury uvádí, že jeho trestní věc zůstává **přerušena po\ndobu poslaneckého mandátu** a soud ji bude projednávat samostatně;\nobžaloba pro něj původně navrhovala peněžitý trest a podmíněný trest.\n\n**Poznámka k nezávislosti**: Česká justice a Deník.cz\n([SRC-01](@/dossiers/tomio-okamura/sources/src-01.md)) jsou různí\nvydavatelé — tvrzení, která dokládají shodně, proto dossier vede jako\n`CORROBORATED`. Tvrzení opřená jen o jeden z nich zůstávají `1 ZDROJ`.\n\n**Poznámka k jedné citaci, kterou dossier vědomě nereprodukuje**: článek\ncituje výrok obžaloby popisující účinek prvního plakátu, jehož součástí\nje rasově zabarvený popisný termín. Dossier obsah obžaloby zaznamenává\nvěcně (že podle obžaloby plakát záměrně vyvolával strach a pocit ohrožení\nvůči migrantům), ale tento konkrétní termín nereprodukuje — jeho doslovné\nšíření nepřidává čtenáři nic, co by se z věcného popisu nedozvěděl."
+    }
+  ],
+  "order": 2
+}

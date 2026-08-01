@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-05",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-05",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
+  },
+  "title": "SRC-05 — Reflex",
+  "outlet": "Reflex",
+  "sourceType": "zpravodajství",
+  "url": "https://www.reflex.cz/clanek/zpravy/136261/soud-ulozil-spd-trimilionovy-penezity-trest-za-nenavistne-plakaty-okamuru-bude-projednavat-zvlast.html",
+  "published": "2026-06-03",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-10"
+    }
+  ],
+  "subjects": [
+    "okamura"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Soud uložil SPD třímilionový peněžitý trest za nenávistné plakáty. Okamuru bude projednávat zvlášť**\n\nZpravodajský text zdůrazňující procesní oddělení věci Tomia Okamury, jehož stíhání je přerušené a bude projednáváno samostatně. Uvádí soudkyni, nepravomocnost verdiktu a stanovisko obhájce Adama Batuny.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 5
+}

@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/gaps/GAP-04",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-04",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "GAP-04 — Majetkové a podnikatelské zájmy",
+  "description": "Firemní vazby a Turkovy nemovitosti jsou zdokumentované; Macinkovy nemovitosti se veřejně dostupnými zdroji dohledat nepodařilo.",
+  "priority": "nízká",
+  "checked": "2026-07-29",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-14"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-15"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-20"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-22"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-34"
+    }
+  ],
+  "subjects": [
+    "macinka",
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Firemní a spolkové vazby obou politiků i Macinkova nepřiznaná\ndvacetiprocentní účast v ukrajinské firmě GMR GAS UA LLC jsou\nzdokumentovány (CLM-14, CLM-15, CLM-20, CLM-22). U Turka je zdokumentován\ni pozemek v Praze-Dubči (se dvěma dodatečně zlegalizovanými nepovolenými\nstavbami) a byt na Strahově koupený v dubnu 2026 za 18 mil. Kč na\nhypotéku (CLM-34). Viz [hlavní přehled](@/dossiers/macinka-turek/_index.md#majetkove-podnikatelske-a-financni-vazby).\n\n**Doplnění (dohledáno 2026-07-23)**: server [Extra.cz (2025-11-20)](https://www.extra.cz/filip-turek-zverejnil-majetkove-priznani-luxusni-vozy-za-desitky-milionu-drahe-hodinky-a-nemovitost-v-praze-e95a4)\ncituje Turkovo tehdejší majetkové přiznání: „Co se týče nemovitostí,\nTurek vlastní jen jednu: pozemek s chatou v Praze 10\" — tedy k listopadu\n2025 (před dubnovým nákupem bytu na Strahově) jen pozemek v Dubči, což\nodpovídá dossieru a nic nerozporuje; bydlel tehdy podle téhož zdroje\nv nájmu, ne ve vlastní nemovitosti. Žádný dohledaný zdroj neuvádí u\nTurka další nemovitost nad rámec Dubče a Strahova. *(Přesnější údaj o\nmístě bydliště dossier záměrně neuvádí — pro účel této mezery není\npotřebný.)*\n\n**Doplnění (dohledáno 2026-07-29)**: přehled poprvé zkusil onen\n„samostatný sběr z primárního registru\" zmíněný níže — přímým programovým\ndotazem (ne rešerší přes žurnalistiku) na primární rejstřík ARES\n(ares.gov.cz) a na veřejné rozhraní ČÚZK. ARES nezávisle potvrdil přesnost\nuž citovaných rejstříkových údajů o firemních vazbách obou politiků\n(IČO, sídla, stav „v likvidaci\" u MEAS Consulting s.r.o. — SRC-23,\nSRC-24) beze změny; nic nového k firemním vazbám to nepřineslo.\n\nU ČÚZK se zpřesnil samotný důvod nedohledatelnosti: přímý programový\ndotaz na `nahlizenidokn.cuzk.cz` potvrdil, že **veškeré** požadavky na\ntento veřejný web — včetně prostého vstupu na úvodní stránku, bez\njakéhokoli zadaného jména — jsou přesměrovány na ochranu proti botům\n(Radware Bot Manager), nikoli jen jmenné vyhledávání. Přesnější tedy je,\nže přístup blokuje bezpečnostní infrastruktura celého veřejného rozhraní,\nne (jen) že by jmenné vyhledávání bylo cíleně vyřazené kvůli ochraně\nosobních údajů. Věcný závěr se tím nemění.\n\n**Co zůstává otevřené**: nemovitosti Petra Macinky. Veřejné rozhraní\nkatastru nemovitostí (ČÚZK) je pro tento přehled programově\nnedostupné (viz výše) a žádná dohledaná žurnalistika se tématem\nMacinkových nemovitostí konkrétně nezabývala. **To není zjištění, že by\nMacinka nemovitosti neměl** — jde jen o to, že žádnou metodou dostupnou\ntomuto přehledu (rešerše publikované žurnalistiky ani přímý programový\ndotaz na ČÚZK) se je nepodařilo dohledat. Úplné vyřešení by vyžadovalo\nplacený/autorizovaný přístup k datům ČÚZK (ISKN/RÚIAN) mimo veřejné\nwebové rozhraní, viz [Co tento přehled nezkoumal](@/dossiers/macinka-turek/_index.md#co-tento-prehled-nezkoumal)."
+    }
+  ],
+  "order": 4
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-27",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-27",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "title": "SRC-27 — CNN Prima News",
+  "outlet": "CNN Prima News",
+  "sourceType": "zpravodajství",
+  "url": "https://cnn.iprima.cz/tlak-na-vojtecha-kvuli-ockovani-sili-spd-zada-vyrazne-zmeny-511294",
+  "published": "2026-05-06",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-45"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Tlak na Vojtěcha kvůli očkování sílí. SPD žádá výrazné změny, ministr to odmítá**\n\nSPD (Jan Síla, Josef Nerušil) požaduje revokaci a přepracování Národní očkovací strategie, kritizuje zejména rozšíření doporučených očkování proti chřipce, covidu a HPV. Vojtěch odmítá zrušení i přepracování s odkazem na data a podporu odborných společností; věc má řešit koaliční rada.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 27
+}

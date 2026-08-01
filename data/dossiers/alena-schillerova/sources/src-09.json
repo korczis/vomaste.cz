@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-09",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-09",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "title": "SRC-09 — ČeskéNoviny.cz (ČTK)",
+  "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceType": "zpravodajství",
+  "url": "https://www.ceskenoviny.cz/zpravy/snemovna-ma-o-vetovane-novele-rozpoctovych-zakonu-hlasovat-25-srpna/2854058",
+  "published": "2026-07-23",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-23"
+    }
+  ],
+  "subjects": [
+    "schillerova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Sněmovna má o vetované novele rozpočtových zákonů hlasovat 25. srpna**\n\nZpráva o termínu hlasování o prezidentském vetu (25. 8. 2026), o počtu hlasů potřebných k přehlasování (101) a dostupných koalici (108) a o procedurálním detailu, že schůzi musí svolat organizační výbor jako řádnou, což opozici umožní navrhovat úpravy programu.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 9
+}

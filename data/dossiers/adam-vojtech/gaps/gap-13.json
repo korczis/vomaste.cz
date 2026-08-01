@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/gaps/GAP-13",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-13",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "title": "GAP-13 — Není doložena reakce České kardiologické společnosti ani České asociace pro srdeční rytmus",
+  "description": "Vyjádření předsedy ČKS Petra Ošťádala se objevilo pouze ve výsledcích vyhledávání, nikoli v žádném z úspěšně otevřených článků; podle zásady",
+  "priority": "střední",
+  "checked": "2026-07-30",
+  "claims": [],
+  "subjects": [
+    "vojtech"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Není doložena reakce České kardiologické společnosti ani České asociace pro srdeční rytmus na červencové závěry komise jako celku.\n\n**Proč je to mezera**: Vyjádření předsedy ČKS Petra Ošťádala se objevilo pouze ve výsledcích vyhledávání, nikoli v žádném z úspěšně otevřených článků; podle zásady neuvádět tvrzení ze snippetů nebylo použito. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+    }
+  ],
+  "order": 13
+}

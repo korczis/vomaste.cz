@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-30",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-30",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-30 — HN.cz (Hospodářské noviny)",
+  "outlet": "HN.cz (Hospodářské noviny)",
+  "sourceType": "zpravodajství",
+  "url": "https://domaci.hn.cz/c1-67759680-turek-odmita-obvineni-ze-znasilneni-a-nasili-na-byvale-partnerce-trestny-cin-jsem-nespachal-rika",
+  "published": "2025-07-08",
+  "retrieved": "2026-07-22",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-25"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-26"
+    }
+  ],
+  "subjects": [
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Druhá nezávislá redakce (Economia) potvrzuje totéž jádro kauzy jako\nSRC-28/SRC-29, s odstupem asi dvou týdnů od prvních zpráv. Turek zde\nopakuje popření: „Trvám na tom, že jsem žádný trestný čin nespáchal,\"\na dodává, že v záležitosti plně spolupracuje s policií a důvěřuje její\nnestrannosti.\n\nSRC-28, SRC-29 a SRC-30 jsou od tří vzájemně nezávislých vydavatelů\n(VLM/Deník, CPI/Blesk, Economia) — v registru vedeny jako tři nezávislá\nredakční potvrzení téhož jádra faktu (existence a obsah oznámení), ne\njako jedna zdrojová rodina."
+    }
+  ],
+  "order": 30
+}

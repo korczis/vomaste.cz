@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-49",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-49",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "text": "Debatu o očkovací strategii ve sněmovním výboru inicializovali opoziční poslanci Michaela Šebelová (STAN), Eva Šrámková (Piráti), Tom Philipp (KDU-ČSL), Vlastimil Válek (TOP 09) a Zdenka Němečková Crkvenjaš (ODS), zatímco proti ministrovi z koaličních lavic vystoupili Jan Síla a Jindřich Rajchl (SPD/PRO) — spor tedy nekopíruje standardní dělení koalice a opozice.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-29"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "order": 49,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/adam-vojtech/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

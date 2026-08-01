@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-19",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-19",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
+  },
+  "title": "SRC-19 — Česká televize (ČT24)",
+  "outlet": "Česká televize (ČT24)",
+  "sourceType": "zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/cesko-neprijde-o-zadne-finance-tvrdi-juchelka-o-kauze-se-stretem-zajmu-376012",
+  "published": "2026-07-27",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-25"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-28"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-29"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-31"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-32"
+    }
+  ],
+  "subjects": [
+    "juchelka"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Česko nepřijde o žádné finance, tvrdí Juchelka o kauze se střetem zájmů**\n\nRozhovor Juchelky v ČT24 s moderátorem Danielem Takáčem. Ministr doslovně tvrdí, že Česko nepřijde o žádné peníze z EU ani nezatíží státní rozpočet, protože milník u dětských skupin bude podle jeho informací splněn. Uvádí vyjmutí šesti projektů z NPO a OPZ+, objem 6 miliard Kč ze státního rozpočtu a 700 mil. Kč od EU u dětských skupin, a potvrzuje vyžádání externího posudku.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 19
+}

@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
+  },
+  "title": "SRC-01 — Deník.cz",
+  "outlet": "Deník.cz (VLTAVA LABE MEDIA)",
+  "sourceType": "celostátní zpravodajství",
+  "url": "https://www.denik.cz/krimi/spd-predvolebni-plakaty-tomio-okamura.html",
+  "published": "2026-06-03",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-04"
+    }
+  ],
+  "subjects": [
+    "okamura"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Deník.cz dne 3. 6. 2026 informoval, že Obvodní soud pro Prahu 1 uznal\nhnutí SPD vinným z podněcování k nenávisti kvůli dvěma předvolebním\nplakátům a uložil peněžitý trest 3 miliony korun. Soudkyně Ivana Tichá\npodle článku výslovně uvedla, že **rozsudek není pravomocný**; SPD\noznámila odvolání a připravenost jít k Ústavnímu soudu.\n\nObsah plakátů podle článku: první zobrazoval muže tmavé pleti se\nzkrvaveným nožem a v zakrvácené košili s textem o „chirurzích z dovozu\"\na „Stop Migračnímu paktu EU\"; druhý dva romské chlapce s textem\nnaznačujícím zanedbávání školy a pobírání dávek.\n\nReakce hnutí a Okamury podle článku: vinu odmítají, plakáty podle nich\njen pojmenovávaly reálné společenské problémy; Okamura kritizoval\nsoudkyni, že rozsudek měla připravený předem, a že diktuje, jak se mají\nvést politické kampaně.\n\nStav jeho vlastního stíhání podle článku: Okamura čelí obžalobě\nindividuálně, ale **jeho stíhání je přerušené**, protože ho poslanci\nodmítli vydat; jeho jednání bude soud projednávat zvlášť.\n\n**Poznámka k procesní přesnosti a hranicím**: rozsudek je nepravomocný a\nje vynesen nad **hnutím jako právnickou osobou**, ne nad Okamurou\nosobně — dossier tyto dvě věci nikdy neslévá. Nevydání Sněmovnou je\nparlamentní procesní krok, ne zjištění o pravdivosti nebo nepravdivosti\nobvinění. Osoby vyobrazené na plakátech se v dossieru nejmenují a jmenovat\nnebudou; nejsou subjekty a nejsou třetími stranami k identifikaci."
+    }
+  ],
+  "order": 1
+}

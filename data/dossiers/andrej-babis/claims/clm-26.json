@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-26",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-26",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "Podle popisu dopisu Evropské komise z 20. května 2026 v citovaném zpravodajství si Komise vyžádala potvrzení, že u operací vybraných od 9. prosince 2025 nebudou nárokovány k proplacení platby týkající se skupiny Agrofert ani dalších organizací spojených s Andrejem Babišem (jmenovitě SynBiol a Hartenberg Holding), dále právní posouzení struktury fondu RSVP Trust a informace o subjektech mimo ni, s lhůtou k odpovědi kolem 20. června 2026; jde o dotaz a pozastavené proplácení, ne o zjištění o něčí odpovědnosti",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-11"
+    }
+  ],
+  "subjects": [],
+  "order": 26,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

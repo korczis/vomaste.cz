@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-39",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-39",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "text": "Opoziční politici na veto reagovali pochvalně: Martin Kupka (ODS) varoval před oslabením kontrolní role Sněmovny, Vít Rakušan (STAN) uvedl, že si vláda chtěla otevřít cestu k obcházení dluhových pravidel, Zdeněk Hřib (Piráti) mluvil o zaraženém vládním účetním podvodu a Jan Jakob (TOP 09) oznámil přípravu ústavní stížnosti.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-08"
+    }
+  ],
+  "subjects": [
+    "schillerova"
+  ],
+  "order": 39,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/alena-schillerova/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

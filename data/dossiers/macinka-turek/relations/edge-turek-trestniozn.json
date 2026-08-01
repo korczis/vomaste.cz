@@ -1,0 +1,48 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/relations/edge-turek-trestniozn",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-turek-trestniozn",
+  "relationId": "edge-turek-trestniozn",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/turek"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/trestniozn"
+  },
+  "relationType": "SUBJECT_OF_PROCEEDING",
+  "label": "subjekt (oznámení 6/2025, odloženo pro promlčení 5/2026)",
+  "status": "disputed",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-25"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-28"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-29"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-30"
+    }
+  ],
+  "subjects": [
+    "turek"
+  ],
+  "directed": true,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam vztahu edge-turek-trestniozn — typ vztahu, podporující tvrzení a zdroje v tabulce výše jsou úplné. Status SPORNÉ znamená, že vztah je otevřený a neuzavřený — nejde o zjištění viny ani neviny, jen o to, že věc dosud není rozhodnutá. Hlavní stránka dossieru vykresluje interaktivní graf ze stejných dat."
+    }
+  ]
+}

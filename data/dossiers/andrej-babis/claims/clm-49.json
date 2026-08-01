@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-49",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-49",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "Předmětem kauzy Čapí hnízdo je dotace 50 milionů korun na výstavbu areálu z let 2007–2008, kterou čerpala Farma Čapí hnízdo poté, co byla vyvedena ze skupiny Agrofert; sporné bylo, zda šlo o účelové vyvedení kvůli podmínce podpory pro malé a střední podniky",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-23"
+    }
+  ],
+  "subjects": [],
+  "order": 49,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

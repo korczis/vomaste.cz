@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-27",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-27",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "title": "SRC-27 — Deník.cz (VLTAVA LABE MEDIA)",
+  "outlet": "Deník.cz (VLTAVA LABE MEDIA)",
+  "sourceType": "zpravodajství",
+  "url": "https://www.denik.cz/z_domova/nove-jmenovany-ministr-cerveny-svuj-stret-zajmu-mam-vyreseny.html",
+  "published": "2026-02-23",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-31"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Nově jmenovaný ministr Červený: Svůj střet zájmů mám vyřešený**\n\nPotvrzuje ministrovo prohlášení o vyřešeném střetu zájmů a zápisu do rejstříku „nejspíše tento týden“, spoluvlastnictví Extreme BFG Cast s Luborem Novákem a odkup podílu. Neuvádí konkrétního navrhovatele podnětu.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 27
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/updates/2026-07-30",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-07-30",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "date": "2026-07-30",
+  "summary": "Dossier založen dle AUTH-2026-07-30-P. Oficiální web vlada.gov.cz otevřen a přečten, zapsáno foundační tvrzení CLM-01 o zastávané funkci (SRC-01) a kontextová hrana HOLDS_ROLE. Autorizovaná témata zatím nezpracována — čekají na přímé otevření citovaných zdrojů.",
+  "addedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-01"
+    }
+  ],
+  "updatedClaims": [],
+  "addedGaps": [],
+  "closedGaps": [],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-01"
+    }
+  ]
+}

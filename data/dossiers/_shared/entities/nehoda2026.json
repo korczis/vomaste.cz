@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/nehoda2026",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "nehoda2026",
+  "entityId": "nehoda2026",
+  "title": "Nehoda 2026",
+  "entityType": "event",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "contextual",
+  "dossiers": [
+    "macinka-turek",
+    "petr-macinka",
+    "filip-turek"
+  ],
+  "routeAliases": [
+    "/dossiers/macinka-turek/entities/nehoda2026/"
+  ]
+}

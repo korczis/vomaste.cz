@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-26",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-26",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "title": "SRC-26 — Ekonomický deník",
+  "outlet": "Ekonomický deník",
+  "sourceType": "zpravodajství",
+  "url": "https://ekonomickydenik.cz/stret-zajmu-noveho-ministra-cerveny/",
+  "published": "2026-02-23",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-28"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-32"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-33"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Střet zájmů u nového ministra: Červený popsal, jak ho vyřešil**\n\nUvádí, že společnost Extreme BFG Cast zaměřená na natáčení podcastů dosud nebyla aktivní a že Červeného podíl odkoupil Lubor Novák, předseda jihomoravských Motoristů a ministrův poslanecký asistent. Neuvádí žádného konkrétního podatele podnětu; zmiňuje, že věc s ministrem řešil prezident Petr Pavel.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 26
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-42",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-42",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-42 — CNN Prima News",
+  "outlet": "CNN Prima News",
+  "sourceType": "zpravodajství",
+  "url": "https://cnn.iprima.cz/kdo-je-verny-sponzor-motoristu-richard-chlad-podporovatel-turka-i-kontroverzni-podnikatel-488806",
+  "published": "2025-10-16",
+  "retrieved": "2026-07-22",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-36"
+    }
+  ],
+  "subjects": [
+    "macinka",
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "CNN Prima NEWS (16. 10. 2025) profiluje podnikatele Richarda Chlada:\nzačínal v 80. letech dovozem videokazet a hodinek, po revoluci se\nvěnoval hazardu (síť heren Krijcos), dnes investuje do solárních\nelektráren a vodíku (Krijcos Energy, Moravia Green Hydrogen).\n\nČlánek dokládá jeho starší osobní vazbu na Radovana Krejčíře (seznámili\nse na večírku Mercedes-Benz, spolu navštěvovali sportovní areál ve\nVšenorech) — Krejčíř je dnes ve vězení v Jihoafrické republice. Tato\nvazba je historická/osobní, ne finanční či politická, a dossier ji uvádí\njako kontext, ne jako tvrzení o Chladově protiprávním jednání.\n\nChlad podle vlastních slov straně poskytl „necelé dva miliony korun\" na\npropagaci a vozy pro mítinky — číslo výrazně vyšší než oficiálně\nevidovaná částka 638 864 Kč (SRC-41)."
+    }
+  ],
+  "order": 42
+}

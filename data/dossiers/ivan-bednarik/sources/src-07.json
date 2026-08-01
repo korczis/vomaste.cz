@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-07",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-07",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "title": "SRC-07 — Ministerstvo dopravy ČR",
+  "outlet": "Ministerstvo dopravy ČR",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://md.gov.cz/Media/Media-a-tiskove-zpravy/Poslanecke-snemovna-schvalila-rozpocet-na-dopravni",
+  "published": "2026-03-11",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-15"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Poslanecká sněmovna schválila rozpočet na dopravní stavby**\n\nTisková zpráva ministerstva o schválení rozpočtu SFDI na rok 2026 ve výši 169,3 mld. Kč (o 9 mld. více než 2025). Rozpis: 119,5 mld. investiční a 49,8 mld. neinvestiční výdaje; 144 mld. národní zdroje, 25,3 mld. fondy EU. ŘSD 81,1 mld., Správa železnic 72,2 mld. Bednárik děkuje poslancům a avizuje zahájení staveb začátkem dubna, jmenovitě D11 Jaroměř–Trutnov a modernizaci železničního uzlu Hradec Králové.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 7
+}

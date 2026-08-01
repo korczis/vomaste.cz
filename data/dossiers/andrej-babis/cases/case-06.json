@@ -1,0 +1,60 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/case.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/cases/CASE-06",
+  "@type": "vomaste:Case",
+  "recordType": "case",
+  "identifier": "CASE-06",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "Nemovitosti ve Francii: předběžné vyšetřování PNF",
+  "summary": "PNF vede od 24. 2. 2022 předběžné vyšetřování pro podezření z daňového podvodu a praní peněz kolem nákupu nemovitostí na jihu Francie; o stíhání nebylo rozhodnuto a Babiš pochybení odmítá. Majetkovou strukturu nákupů (BLAKEY FINANCE, BOYNE HOLDING, SCP Bigaud) popisuje nezávisle projekt Pandora Papers; offshore struktura sama o sobě není protiprávní a o nezákonnosti nákupů žádný orgán nerozhodl. V květnu 2026 francouzská policie vyšetřování uzavřela a případ převzala Národní finanční prokuratura, která má o dalším postupu rozhodnout do konce roku 2026; Babiš po opětovném nástupu do funkce premiéra koncem roku 2025 získal podle francouzských pravidel imunitu chránící ho po dobu výkonu funkce před případným stíháním — jde o procesní ochranu, ne o rozhodnutí o vině či nevině.",
+  "period": "2022–2026",
+  "status": "status-single",
+  "statusLabel": "Vyšetřování uzavřeno, věc u prokuratury; bez obvinění",
+  "anchor": "kauza-nemovitosti-francie",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-14"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-15"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-31"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-33"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-34"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-54"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-26"
+    }
+  ],
+  "subjects": [],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Plné znění, zdroje a kontext tohoto případu jsou v [hlavním přehledu\ndossieru](@/dossiers/andrej-babis/_index.md#kauza-nemovitosti-francie)."
+    }
+  ],
+  "order": 6
+}

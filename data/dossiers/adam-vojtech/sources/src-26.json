@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-26",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-26",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "title": "SRC-26 — Zdravotnický deník",
+  "outlet": "Zdravotnický deník",
+  "sourceType": "zpravodajství",
+  "url": "https://www.zdravotnickydenik.cz/2026/05/prevence-ministr-vojtech-dane/",
+  "published": "2026-05-04",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-34"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-35"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Prevence bez limitu: Ministr Vojtěch oznámil, které zdravotní výhody už nebudou daněny**\n\nVojtěch na tiskové konferenci po jednání vlády představil výčet benefitů mimo limit 50 tisíc Kč (nadstandardní preventivní prohlídky, rozšířené onkologické screeningy, vyšetření kardiovaskulárního rizika, screening diabetu u rizikových skupin, vybraná nehrazená očkování) s tím, že půjde o poslanecký návrh v rámci novely o EET.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 26
+}

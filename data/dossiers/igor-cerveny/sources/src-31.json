@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-31",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-31",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "title": "SRC-31 — Ekonews",
+  "outlet": "Ekonews",
+  "sourceType": "zpravodajství",
+  "url": "https://www.ekonews.cz/oddeleni-klimaticke-politiky-a-green-dealu-povede-expert-na-auta-a-turkuv-clovek/",
+  "published": "2026-06-15",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-44"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-45"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-46"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Oddělení klimatické politiky a Green Dealu povede expert na auta a Turkův člověk**\n\nAutorka Martina Patočková. Uvádí, že Vaverka od roku 2007 pracoval v Art of Performance, autodílně vlastněné Filipem Turkem, a rozebírá jeho kvalifikaci (bakalářský titul, Evropská studia FSS MUNI) proti požadavku magisterského vzdělání. Konstatuje, že oddělení vzniklo k 1. dubnu a nese název evokující vládního zmocněnce pro Green Deal, který na ministerstvu obsadil ministerskou kancelář.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 31
+}

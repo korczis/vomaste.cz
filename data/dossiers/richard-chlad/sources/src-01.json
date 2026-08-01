@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/richard-chlad/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/richard-chlad"
+  },
+  "title": "SRC-01 — Hlídač státu",
+  "outlet": "Hlídač státu",
+  "sourceType": "veřejný rejstřík / transparentní databáze",
+  "url": "https://www.hlidacstatu.cz/Osoba/Sponzoring/richard-chlad-2",
+  "retrieved": "2026-07-22",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "chlad"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Hlídač státu eviduje u podnikatele Richarda Chlada tyto dary straně\nMotoristé sobě v roce 2025:\n\n- 140 000 Kč — půjčení sportovních automobilů\n- 200 000 Kč — propůjčení vozů Bugatti\n- 59 313 Kč — výroba a instalace billboardu\n- 54 550 Kč — demontáž billboardu\n- 185 001 Kč — uspořádání akce\n\n**Celkem 638 864 Kč** za rok 2025 — a je podstatné, že tato částka\n**už zahrnuje nepeněžní plnění**, ne jen převedené peníze.\n\n**Poznámka k procesní přesnosti a hranicím**: jde o **veřejný rejstřík\ndarů**, tedy o údaj o tom, co bylo vykázáno. Darovat politické straně je\n**legální** a evidence daru není zjištěním o ničem nepřípustném. Tento\núdaj slouží jako referenční, oficiálně vykázaná částka, proti níž stojí\nChladovy vlastní veřejné údaje (SRC-02, SRC-03). Rozdíl mezi čísly je\nsám o sobě zaznamenaným faktem — **není obviněním z protiprávnosti** a\nčísla navíc nejsou přímo porovnatelná (viz GAP-01)."
+    }
+  ],
+  "order": 1
+}

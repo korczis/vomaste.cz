@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-05",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-05",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "title": "SRC-05 — Blesk.cz",
+  "outlet": "Blesk.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://www.blesk.cz/clanek/zpravy-politika/833515/nastupujici-ministr-cerveny-netradicni-diplomka-ekologicke-aktivity-a-trable-se-stretem-zajmu.html",
+  "published": "2026-02-23",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-08"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Nastupující ministr Červený: Netradiční diplomka, ekologické aktivity a trable se střetem zájmů**\n\nProfil nastupujícího ministra. Červený je jednatelem podcastové společnosti Extreme BFG Cast; zákon o střetu zájmů veřejným funkcionářům působení ve vedení firem zakazuje. Červený slíbil střet zájmů vyřešit 'tak, jak to zákon nařizuje' — ukončit angažmá nejpozději do 30 dnů od nástupu do funkce. Článek žádný formálně podaný podnět neuvádí.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 5
+}

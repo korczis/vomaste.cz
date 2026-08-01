@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/vojtech",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "vojtech",
+  "entityId": "vojtech",
+  "title": "Adam Vojtěch",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "full",
+  "dossiers": [
+    "adam-vojtech"
+  ],
+  "routeAliases": [
+    "/dossiers/adam-vojtech/entities/vojtech/"
+  ],
+  "snapshotDate": "2026-07-30",
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Hlavní subjekt autorizovaného dossieru. Viz plné znění a kontext v [hlavním přehledu](@/dossiers/adam-vojtech/_index.md#kdo)."
+    }
+  ]
+}

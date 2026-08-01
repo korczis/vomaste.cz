@@ -1,0 +1,15 @@
+{
+  "$comment": "Grandfathered debt (T-028 fáze D): sémantická porušení zděděná 1:1 z dnešního content/** — migrace data nemění, proto je nemůže opravit. Každý záznam je konkrétní @id + pravidlo; nové porušení mimo tento allowlist je chyba brány (scripts/data/validate-semantics.mjs). Odmazávat průběžně s redakčními opravami.",
+  "entries": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-50",
+      "rule": "S2",
+      "reason": "andrej-babis/claims/clm-50.json: status-corroborated cituje 2 zdroj(e) z 1 source family/families — definice badge vyžaduje ≥2 zdroje z ≥2 nezávislých rodin"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-51",
+      "rule": "S2",
+      "reason": "andrej-babis/claims/clm-51.json: status-corroborated cituje 2 zdroj(e) z 1 source family/families — definice badge vyžaduje ≥2 zdroje z ≥2 nezávislých rodin"
+    }
+  ]
+}

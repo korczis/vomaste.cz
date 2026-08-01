@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-23",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-23",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "title": "SRC-23 — Deník.cz (VLTAVA LABE MEDIA)",
+  "outlet": "Deník.cz (VLTAVA LABE MEDIA)",
+  "sourceType": "zpravodajství",
+  "url": "https://www.denik.cz/cesko/zuzana-mrazova-ano-opozice-odmitla-vyzvy-k-rezignaci/",
+  "published": "2026-04-30",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-27"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-44"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-45"
+    }
+  ],
+  "subjects": [
+    "mrazova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Mrázová odmítla opoziční výzvy k rezignaci. Předpisy jsem neporušila, tvrdí**\n\nZdroj ČTK. Mrázová odmítla výzvy k rezignaci po jednání hospodářského výboru. Nájemní smlouva skončila 31. 3. 2026. Obhajoba k bytu (podmínky z roku 2009) a k pozemku: kupovala jej v době, kdy tam již stály mobilní objekty, jde o bývalou skládku, o změnu ÚP žádá jako jiní vlastníci. K novele: „Na přípravě jsem se nepodílela a nemá to souvislost s objekty na mém pozemku.“\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 23
+}

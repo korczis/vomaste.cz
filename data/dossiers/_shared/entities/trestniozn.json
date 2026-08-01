@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/trestniozn",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "trestniozn",
+  "entityId": "trestniozn",
+  "title": "Trestní oznámení (2025)",
+  "entityType": "legal_or_administrative_process",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "contextual",
+  "dossiers": [
+    "macinka-turek",
+    "filip-turek"
+  ],
+  "routeAliases": [
+    "/dossiers/macinka-turek/entities/trestniozn/"
+  ]
+}

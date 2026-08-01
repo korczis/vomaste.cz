@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/gaps/GAP-10",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-10",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "title": "GAP-10 — Chybí primární dokument koncepce do roku 2040 a jeho tři varianty financování.",
+  "description": "Na webu ministerstva obrany je publikován pouze starší KVAČR 2035; nová koncepce nebyla ve zveřejněné podobě dohledána.",
+  "priority": "střední",
+  "checked": "2026-07-30",
+  "claims": [],
+  "subjects": [
+    "zuna"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Chybí primární dokument koncepce do roku 2040 a jeho tři varianty financování.\n\n**Proč je to mezera**: Na webu ministerstva obrany je publikován pouze starší KVAČR 2035; nová koncepce nebyla ve zveřejněné podobě dohledána. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+    }
+  ],
+  "order": 10
+}

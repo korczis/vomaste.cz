@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "title": "SRC-02 — Ekonomický deník",
+  "outlet": "Ekonomický deník",
+  "sourceType": "odborné ekonomické zpravodajství",
+  "url": "https://ekonomickydenik.cz/generalni-reditel-cd-jozef-bednarik-rezignoval-z-vyberoveho-rizeni-musi-vzejit-silny-manazer-rika-ministr-dopravy-martin-kupka/",
+  "published": "2022-02-15",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-04"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Ekonomický deník dne 15. 2. 2022 informoval, že Ivan Bednárik rezignoval\nna funkci generálního ředitele Českých drah. Citace: „Dnes jsem se\nrozhodl využít práva na rezignaci.\"\n\n**Důvody podle článku veřejně neuvedl**: řekl, že je „podrobně vysvětlil\ndozorčí radě\", a dodal, že „další spekulace o mém odchodu Českým drahám\nškodí\".\n\nZ představenstva podle článku odešli také místopředseda Václav Nebeský a\nčlen představenstva Petr Pavelec. Vedením společnosti byl do výběru\nnového ředitele pověřen Michal Krause; předsedou dozorčí rady se stal\nMiroslav Zámečník, novou členkou představenstva Blanka Havelková.\n\nTehdejší ministr dopravy Martin Kupka podle článku uvedl, že nový\nšéf „musí být silný manažer, který stabilizuje provoz Českých drah\", a\nodcházejícímu řediteli poděkoval: „Děkuji odcházejícímu řediteli, že\npostupná obnova vozového parku dobře pokračuje.\"\n\n**Poznámka k tomu, co tento zdroj nedokládá — čtěte pozorně**: článek\n**neuvádí** konkrétní důvod rezignace. Ve veřejné debatě se objevovaly\nverze o sporu o požadované úspory nebo o platbách za pozemky, ale tento\nzdroj je nedokládá a dossier je proto **netvrdí**. Rezignace sama není\nzjištěním o pochybení; je to personální krok, jehož důvody zůstaly\npodle zdroje nezveřejněné. Jmenované osoby vystupují výhradně jako údaj\nuvedený citovaným zdrojem, ne jako subjekty dossieru."
+    }
+  ],
+  "order": 2
+}

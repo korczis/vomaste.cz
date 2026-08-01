@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/gaps/GAP-03",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
+  },
+  "title": "GAP-03 — Autorizace (AUTH-2026-07-30-B) zmiňuje trestní oznámení ohlášená občanskými organizacemi, ",
+  "description": "Cílené vyhledávání na protikorupční spolky nevrátilo žádný zdroj; tvrzení o 'občanských organizacích' proto nelze doložit a bylo by nutné je",
+  "priority": "střední",
+  "checked": "2026-07-30",
+  "claims": [],
+  "subjects": [
+    "juchelka"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Autorizace (AUTH-2026-07-30-B) zmiňuje trestní oznámení ohlášená občanskými organizacemi, ale dohledané zpravodajství připisuje jediné podané trestní oznámení opozičnímu politickému hnutí STAN (podala poslankyně Pivoňka Vaňková). Žádné trestní oznámení občanské/neziskové organizace (Transparency International, Oživení apod.) nebylo v otevřených zdrojích nalezeno.\n\n**Proč je to mezera**: Cílené vyhledávání na protikorupční spolky nevrátilo žádný zdroj; tvrzení o 'občanských organizacích' proto nelze doložit a bylo by nutné jej v dossieru opravit, nebo doložit jiným zdrojem. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+    }
+  ],
+  "order": 3
+}

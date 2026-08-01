@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-07",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-07",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
+  },
+  "title": "SRC-07 — Médiář",
+  "outlet": "Médiář",
+  "sourceType": "zpravodajství",
+  "url": "https://www.mediar.cz/bude-se-to-platit-z-rozpoctu-ale-ne-z-dani-klempir-vysvetluje-financovani-ct-a-rozhlasu/",
+  "published": "2026-06-01",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-14"
+    }
+  ],
+  "subjects": [
+    "klempir"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**„Bude se to platit z rozpočtu, ale ne z daní.“ Klempíř vysvětluje financování ČT a rozhlasu**\n\nRozbor Klempířových výroků o mechanismu financování, počtu připomínek z mezirezortního řízení a o zúžení původního záměru zákona po politické debatě v koalici.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 7
+}

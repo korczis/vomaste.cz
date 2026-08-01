@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-37",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-37",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-37 — Neovlivní.cz",
+  "outlet": "Neovlivní.cz",
+  "sourceType": "investigativní žurnalistika",
+  "url": "https://neovlivni.cz/pripomente-si-jak-filip-turek-chodil-na-iranskou-ambasadu/",
+  "published": "2026-03-01",
+  "retrieved": "2026-07-22",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-33"
+    }
+  ],
+  "subjects": [
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Investigativní text Sabiny Slonkové (Neovlivní.cz, 1. 3. 2026)\nzmapoval setkání íránského velvyslance Seyeda Majida Ghafeleha Bashiho s\nFilipem Turkem — a se dvěma dalšími českými politiky, Kateřinou Konečnou\na Václavem Klausem (mladším). Citace: „Všichni tři na dotaz redakce\nschůzky potvrdili. Všichni tři ale jejich význam bagatelizovali a\nvšichni tři tvrdili, že šlo výlučně o zdvořilostní návštěvu.\"\n\nFakt setkání je tímto potvrzen samotným Turkem (spolu s dalšími dvěma\npolitiky), ne jen tvrzením novináře — proto je veden jako CORROBORATED;\ncharakterizace schůzky jako „zdvořilostní\" zůstává citací účastníků, ne\nnezávisle ověřeným závěrem o jejím obsahu."
+    }
+  ],
+  "order": 37
+}

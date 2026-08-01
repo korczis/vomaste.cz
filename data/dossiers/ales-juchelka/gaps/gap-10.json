@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/gaps/GAP-10",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-10",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
+  },
+  "title": "GAP-10 — Nedohledáno sněmovní projednávání kauzy Semancové (interpelace, mimořádná schůze, jednání ",
+  "description": "Jediné nalezené sněmovní vystoupení Juchelky (interpelace 13. 3. 2026, poslankyně Gabriela Svárovská) se týkalo jiné osoby — Jana Gregora, v",
+  "priority": "střední",
+  "checked": "2026-07-30",
+  "claims": [],
+  "subjects": [
+    "juchelka"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Nedohledáno sněmovní projednávání kauzy Semancové (interpelace, mimořádná schůze, jednání sociálního výboru).\n\n**Proč je to mezera**: Jediné nalezené sněmovní vystoupení Juchelky (interpelace 13. 3. 2026, poslankyně Gabriela Svárovská) se týkalo jiné osoby — Jana Gregora, vedoucího oddělení poradců — a kauzy dotací se netýkalo. Ověřeno otevřením zdroje. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+    }
+  ],
+  "order": 10
+}

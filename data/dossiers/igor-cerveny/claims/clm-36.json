@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-36",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-36",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "text": "Ministerstvo objednalo do ministrovy nové pracovny nábytek od pražské společnosti Space Plan: dva výškově nastavitelné pracovní stoly s paravánem, dva kontejnery, dvoumístnou pohovku, dvě křesla a akustický panel.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-20"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "order": 36,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/igor-cerveny/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

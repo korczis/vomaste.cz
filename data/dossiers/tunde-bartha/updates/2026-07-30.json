@@ -1,0 +1,70 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/updates/2026-07-30",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-07-30",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tunde-bartha"
+  },
+  "date": "2026-07-30",
+  "summary": "Založen dossier dle AUTH-2026-07-30-U. 4 zdroje otevřeny a přečteny (HN/ČTK, Echo24, Aktuálně.cz, primární rejstřík Úřadu vlády), 8 tvrzení, 2 kauzy, 4 mezery. Zásadní přesnostní nálezy: (1) vlastní právní stanoviska radnice Prahy 3 před výpovědí varovala — bez nich by byl záznam zkreslený, proto jsou vedena jako samostatná tvrzení; (2) úřední rejstřík u let 2018–2021 uvádí „pověřena řízením“, ne funkční období; (3) datum nástupu do současné funkce není doloženo primárním ani jmenovaně ozdrojovaným zdrojem (Echo24 12/2025 se opírá o nejmenované zdroje) → GAP-02; (4) prověřováno propojení s J. Faltýnkem, žádný jmenovaný zdroj nenalezen → GAP-03.",
+  "addedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-08"
+    }
+  ],
+  "updatedClaims": [],
+  "addedGaps": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/gaps/GAP-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/gaps/GAP-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/gaps/GAP-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/gaps/GAP-04"
+    }
+  ],
+  "closedGaps": [],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-04"
+    }
+  ]
+}

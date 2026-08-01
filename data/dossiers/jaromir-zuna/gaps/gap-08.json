@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/gaps/GAP-08",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-08",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "title": "GAP-08 — Rozpor v údajích o aktuálním počtu vojáků: Echo24 v květnu 2026 uvádí 25 750 vojáků, zatím",
+  "description": "Zdroje nespecifikují, zda jde o stejnou kategorii (vojáci z povolání vs. celkový personál), a nelze je bez dalšího podkladu sladit.",
+  "priority": "střední",
+  "checked": "2026-07-30",
+  "claims": [],
+  "subjects": [
+    "zuna"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Rozpor v údajích o aktuálním počtu vojáků: Echo24 v květnu 2026 uvádí 25 750 vojáků, zatímco CZDEFENCE hovoří o více než 28 tisících na začátku roku 2025.\n\n**Proč je to mezera**: Zdroje nespecifikují, zda jde o stejnou kategorii (vojáci z povolání vs. celkový personál), a nelze je bez dalšího podkladu sladit. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+    }
+  ],
+  "order": 8
+}

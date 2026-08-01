@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-09",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-09",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "title": "SRC-09 — Blesk.cz",
+  "outlet": "Blesk.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://www.blesk.cz/clanek/zpravy-politika/836848/ministr-cerveny-pro-blesk-nejsem-zadna-figurka-proc-turkovi-nechal-kancelar.html",
+  "published": "2026-04-08",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-13"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Ministr Červený pro Blesk: Nejsem žádná figurka! Proč Turkovi nechal kancelář?**\n\nRozhovor. Červený tvrdí, že přesun z ministerské kanceláře byl jeho vlastní volbou, ne na příkaz Turka — původní kancelář je 'velice tmavá' s výhledem do vnitrobloku, nová má 'celý den sluníčko' a výhled na stadion Slavie. Na otázku, zda je Turkovou figurkou: 'Kdo mě zná – a já myslím, že mě zná i Filip – tak ví, že žádná figurka nejsem.'\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 9
+}

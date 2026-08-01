@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/boris-stastny/gaps/GAP-08",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-08",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/boris-stastny"
+  },
+  "title": "GAP-08 — Reakce Českého olympijského výboru a jednotlivých sportovních svazů na odvolání Ondřeje Še",
+  "description": "Dostupné zdroje z prosince 2025 reakce sportovních organizací neobsahují; k dispozici je až lednové vyjádření České unie sportu k nástupu no",
+  "priority": "střední",
+  "checked": "2026-07-30",
+  "claims": [],
+  "subjects": [
+    "stastny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Reakce Českého olympijského výboru a jednotlivých sportovních svazů na odvolání Ondřeje Šebka bezprostředně v prosinci 2025.\n\n**Proč je to mezera**: Dostupné zdroje z prosince 2025 reakce sportovních organizací neobsahují; k dispozici je až lednové vyjádření České unie sportu k nástupu nového předsedy. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+    }
+  ],
+  "order": 8
+}

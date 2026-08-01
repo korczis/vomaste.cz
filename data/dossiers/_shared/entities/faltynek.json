@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/faltynek",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "faltynek",
+  "entityId": "faltynek",
+  "title": "Jaroslav Faltýnek",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "full",
+  "dossiers": [
+    "jaroslav-faltynek"
+  ],
+  "routeAliases": [
+    "/dossiers/jaroslav-faltynek/entities/faltynek/"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Hlavní subjekt autorizovaného dossieru. Viz plné znění a kontext v [hlavním přehledu](@/dossiers/jaroslav-faltynek/_index.md#kdo)."
+    }
+  ]
+}

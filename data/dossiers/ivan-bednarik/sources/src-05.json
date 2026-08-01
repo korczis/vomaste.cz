@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-05",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-05",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "title": "SRC-05 — silnice-zeleznice.cz",
+  "outlet": "silnice-zeleznice.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://silnice-zeleznice.cz/lide/moje-priorita-aby-doprava-fungovala-rika-resortni-ministr-ivan-bednarik-1181",
+  "published": "2026-04-22",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-09"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Moje priorita? Aby doprava fungovala, říká resortní ministr Ivan Bednárik**\n\nRozhovor s ministrem: prioritou je stabilní financování bez 'slibů bez krytí', dokončování rozestavěných staveb a zvýšení kapacity a spolehlivosti železnice včetně návratu nákladu na koleje. Rozpočet SFDI na rok 2026 činí 169,3 miliardy Kč (+9 miliard meziročně). Bednárik: 'musíme stavět rychle, kvalitně a levně' a kombinovat národní zdroje s prostředky EU.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 5
+}

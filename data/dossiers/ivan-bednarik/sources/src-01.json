@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "title": "SRC-01 — Vláda ČR (oficiální profil)",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vlada.gov.cz/cz/vlada/clenove-vlady/ivan-bednarik-223975/",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil na webu Úřadu vlády, otevřen a přečten 2026-07-30.\nUvádí funkci **ministr dopravy** a doložený přehled kariéry: narozen 16. 1. 1975 (Starý Tekov, Slovensko); téměř tři dekády v dopravě a logistice; bývalý předseda představenstva a generální ředitel Českých drah; dříve vedení ČD Cargo; poradce slovenského ministra dopravy (12/2023–5/2025); generální ředitel Železníc Slovenskej republiky (od 15. 5. 2025).\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** —\ndokládá existenci a formulaci úředního údaje, ne nezávislé redakční\nposouzení. Potvrzení **současné** funkce v této vládě vychází z ověření\noficiálního seznamu členů vlády k 2026-07-30 (viz\n`data/government.toml`). Sebeprezentační části profilu nejsou nezávisle\nověřeným faktem a dossier je jako fakt nepřebírá."
+    }
+  ],
+  "order": 1
+}

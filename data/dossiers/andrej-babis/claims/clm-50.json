@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-50",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-50",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "Městský soud v Praze dne 9. ledna 2023 zprostil Andreje Babiše i Janu Nagyovou obžaloby s odůvodněním, že skutek popsaný v obžalobě není trestným činem; rozsudek nebyl pravomocný a státní zástupce si ponechal lhůtu k odvolání",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-23"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-32"
+    }
+  ],
+  "subjects": [],
+  "order": 50,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

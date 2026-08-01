@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/gaps/GAP-09",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-09",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
+  },
+  "title": "GAP-09 — Chybí oficiální reakce Evropské komise po březnovém dopise o „závažných obavách“.",
+  "description": "Žádný z otevřených zdrojů neobsahuje pozdější stanovisko EK ani informaci o zapojení OLAF. Cílené hledání nebylo možné dokončit — vyčerpán l",
+  "priority": "střední",
+  "checked": "2026-07-30",
+  "claims": [],
+  "subjects": [
+    "juchelka"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Chybí oficiální reakce Evropské komise po březnovém dopise o „závažných obavách“.\n\n**Proč je to mezera**: Žádný z otevřených zdrojů neobsahuje pozdější stanovisko EK ani informaci o zapojení OLAF. Cílené hledání nebylo možné dokončit — vyčerpán limit webových vyhledávání relace. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+    }
+  ],
+  "order": 9
+}

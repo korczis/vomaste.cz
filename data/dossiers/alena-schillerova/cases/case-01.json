@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/case.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/cases/CASE-01",
+  "@type": "vomaste:Case",
+  "recordType": "case",
+  "identifier": "CASE-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "title": "Rozpočtová pravidla a stanovisko Národní rozpočtové rady",
+  "summary": "Národní rozpočtová rada označila návrh rozpočtu 2026 za rozporný se zákonem o rozpočtové odpovědnosti; ministerstvo výpočet rozporuje. Novela rozpočtových zákonů podle kritiků umožňuje obejít Parlament.",
+  "period": "2026",
+  "status": "status-disputed",
+  "statusLabel": "Otevřené, spor o výpočet",
+  "anchor": "kauza-rozpoctova-pravidla",
+  "claims": [],
+  "sources": [],
+  "subjects": [
+    "schillerova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu\ndossieru](@/dossiers/alena-schillerova/_index.md#kauza-rozpoctova-pravidla)."
+    }
+  ],
+  "order": 1
+}

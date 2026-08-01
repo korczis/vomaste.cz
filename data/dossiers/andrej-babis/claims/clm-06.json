@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-06",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-06",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "Jmenovaní opoziční politici střet zájmů za vyřešený nepovažují: Zdeněk Hřib podle citovaného zpravodajství uvedl, že Babiš „nic nevyřešil“, Vít Rakušan mimo jiné to, že Babiš „veřejnosti lhal“ ohledně vlivu rodiny na Agrofert a odmítá zveřejnit dokumenty fondu, Matěj Ondřej Havel odkázal na zprávu Transparency International a Martin Kupka kritizoval nezveřejněné dokumenty; oslovený expert dodal, že Babiš může správce fondu odvolat",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-02"
+    }
+  ],
+  "subjects": [],
+  "order": 6,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

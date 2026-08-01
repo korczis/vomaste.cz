@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-33",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-33",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "title": "SRC-33 — Report.cz (Olomoucký deník): FN Olomouc, policie a kauza kardiostimulátorů (12. 2. 2026)",
+  "outlet": "Report.cz",
+  "sourceType": "regionální zpravodajství",
+  "url": "https://www.report.cz/olomouc-fnol-policie-kardiostimulator-kauza",
+  "published": "2026-02-12",
+  "retrieved": "2026-07-31",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-08"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Report.cz cituje ministra Vojtěcha: řediteli FN Olomouc Romanu Havlíkovi\n„uložil, aby zprovoznil informační linku, na které pacienti s\nvoperovaným defibrilátorem získají srozumitelné informace.\" Zároveň:\n„Současně jsem si vyžádal komplexní zprávu včetně detailní časové osy,\npřijatých opatření a stavu interní revize.\"\n\n**Nezávislost**: samostatná redakce od Zdravotnický deník (SRC-04) —\nobě nezávisle potvrzují tentýž ministrův pokyn. Proto CLM-08 nese stav\n`CORROBORATED`."
+    }
+  ],
+  "order": 33
+}

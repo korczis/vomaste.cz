@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-20",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-20",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "title": "SRC-20 — e15.cz",
+  "outlet": "e15.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://www.e15.cz/byznys/doprava-a-logistika/sef-ceskych-drah-bednarik-rezignoval-narodniho-dopravce-docasne-povede-michal-kraus-1387729",
+  "published": "2022-02-15",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-41"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-43"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-44"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-45"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-46"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Šéf Českých drah Bednárik rezignoval, národního dopravce dočasně povede Michal Kraus**\n\nBednárik jako důvod uvádí vládní úsporná opatření, která se dotknou i Českých drah a nebude jednoduché se s nimi vypořádat. Zmiňuje se snižování slev pro studenty a seniory a pozastavený spor o nájem pozemků mezi Správou železnic a ČD s výpadkem 3,5 mld. Kč. Uvádí též hospodářský kontext: ztráta 4,1 mld. Kč v roce 2020 a 217 mil. Kč za první pololetí 2021.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 20
+}

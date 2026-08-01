@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-28",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-28",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
+  },
+  "title": "SRC-28 — Praha na dlani (přetisk anotace iROZHLAS.cz)",
+  "outlet": "Praha na dlani (přetisk anotace iROZHLAS.cz)",
+  "sourceType": "zpravodajství",
+  "url": "https://www.prahanadlani.cz/clanek-zprava/1607760-ministerstvo-prace-si-vyzadalo-externi-posudek-kvuli-stretu-zajmu-semancove-juchelka-ho-nezpochybnil.html",
+  "published": "2026-07-27",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-27"
+    }
+  ],
+  "subjects": [
+    "juchelka"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Ministerstvo práce si vyžádalo externí posudek kvůli střetu zájmů Semancové. Juchelka ho nezpochybnil**\n\nDostupný je pouze úryvek přetištěný z iROZHLAS.cz. Z něj vyplývá, že Juchelka vyloučil, že by Semancová ovlivňovala přerozdělování dotací, ale její střet zájmů sám nezpochybňuje. Plný text je pouze na irozhlas.cz, který je pro automatizovaný přístup nedostupný.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 28
+}

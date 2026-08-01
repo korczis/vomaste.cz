@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-33",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-33",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "title": "SRC-33 — ČeskéNoviny.cz (ČTK): Babiš — vláda přidá příští rok 36 mld. Kč na obranu, aby dosáhla 2 % HDP (7. 7. 2026)",
+  "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceFamily": "ctk",
+  "sourceType": "agenturní zpravodajství",
+  "url": "https://www.ceskenoviny.cz/zpravy/zive-vyjadreni-premiera-babise-pred-odletem-na-summit-nato/2847769",
+  "published": "2026-07-07",
+  "retrieved": "2026-07-31",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-42"
+    }
+  ],
+  "subjects": [
+    "zuna"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "ČeskéNoviny.cz dne 7. 7. 2026 cituje premiéra Babiše: „Příští rok\nnavýšíme rozpočet obrany o 36 miliard korun.\" Vláda chce podle článku\npříští rok navýšit rozpočet ministerstva obrany o 36 miliard korun a\npoprvé tak splnit závazek NATO dát 2 % HDP na obranu. Ministr obrany\nJaromír Zůna (SPD) je uveden jako součást delegace na tiskové\nkonferenci před odletem.\n\n**Nezávislost**: samostatná redakce/agentura od vlada.gov.cz (SRC-20,\nvlastní tisková zpráva vlády) — nezávisle potvrzuje tutéž veřejnou\nskutečnost. Proto CLM-42 nese stav `CORROBORATED`.\n\n**Limity**: tento zdroj nepotvrzuje konkrétní údaj o navýšení počtu\nvojáků a aktivních záloh nejméně o čtvrtinu — ten zůstává doložen jen\nSRC-20."
+    }
+  ],
+  "order": 33
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/schillerova",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "schillerova",
+  "entityId": "schillerova",
+  "title": "Alena Schillerová",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "full",
+  "dossiers": [
+    "alena-schillerova"
+  ],
+  "routeAliases": [
+    "/dossiers/alena-schillerova/entities/schillerova/"
+  ],
+  "snapshotDate": "2026-07-30",
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Hlavní subjekt autorizovaného dossieru. Viz plné znění a kontext v [hlavním přehledu](@/dossiers/alena-schillerova/_index.md#kdo)."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-16",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-16",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "title": "SRC-16 — Deník N",
+  "outlet": "Deník N",
+  "sourceType": "zpravodajství",
+  "url": "https://denikn.cz/2132104/utok-na-zajmy-cr-ministra-rozcilily-otazky-na-navstevu-usa-proc-pribral-mluvciho-motoristu-nevysvetlil/",
+  "published": "2026-07-21",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-49"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-57"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**„Útok na zájmy ČR.“ Ministra rozčílily otázky na návštěvu USA. Proč přibral mluvčího Motoristů, nevysvětlil**\n\nAutorky Karolína Blažková a Zdislava Pokorná. Dostupný úvod uvádí: cesta trvala deset dní, oficiálně byla avizovaná jen jako vystoupení v OSN, ministr odmítl upřesnit, s kým jednal, nezveřejnil kompletní program a nevysvětlil, zda resort hradil cestu i mluvčímu Motoristů. Zbytek textu je za paywallem.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 16
+}

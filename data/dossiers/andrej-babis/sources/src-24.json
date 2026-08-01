@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-24",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-24",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-24 — Aktuálně.cz (ČTK): Soud opět zprostil Babiše a Nagyovou obžaloby (14. 2. 2024)",
+  "outlet": "Aktuálně.cz",
+  "sourceFamily": "ctk",
+  "sourceType": "agenturní zpravodajství",
+  "url": "https://zpravy.aktualne.cz/domaci/capi-hnizdo-jsem-vzdy-zamyslel-jako-rodinny-podnik-rekl-babi/r~7f97cda0cb1911eeaf28ac1f6b220ee8/",
+  "published": "2024-02-14",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-51"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-52"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpráva ČTK publikovaná Aktuálně.cz k druhému zprošťujícímu rozsudku.\n**Co dokládá:** že Městský soud v Praze 14. února 2024 oba obžalované\nznovu zprostil, s odůvodněním, že nepřímé důkazy netvořily ucelený\nřetězec vyvracející obhajobu; že rozsudek nebyl pravomocný a státní\nzastupitelství avizovalo odvolání; a údaj, že **dotaci 50 milionů korun\nfirma vrátila už v roce 2018**.\n\n**Nezávislost:** agenturní zpráva ČTK (`family = \"ctk\"`), stejná rodina\njako SRC-23.\n\n**Limity:** i tenhle rozsudek byl později zrušen odvolacím soudem\n(SRC-01), takže z něj neplyne nic o konečném výsledku. Vrácení dotace je\nskutečnost o **osudu peněz**, ne o vině či nevině kohokoli — nepředstavuje\nani přiznání, ani vyvrácení obžaloby."
+    }
+  ],
+  "order": 24
+}

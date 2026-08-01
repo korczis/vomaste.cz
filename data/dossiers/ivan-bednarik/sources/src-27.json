@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-27",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-27",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "title": "SRC-27 — MHD86",
+  "outlet": "MHD86",
+  "sourceType": "zpravodajství",
+  "url": "https://mhd86.cz/2026/04/22/co-zaznelo-na-diskusnim-foru-acri-o-budoucnosti-ceske-zeleznice/",
+  "published": "2026-04-22",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-37"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-38"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Co zaznělo na Diskusním fóru ACRI o budoucnosti české železnice**\n\nReportáž z diskusního fóra ACRI ze 13. dubna 2026. Bednárik potvrdil jako prioritu síť VRT ve tvaru písmene Y spojující Prahu, Brno a Ostravu s napojením na Německo, Polsko, Rakousko a Slovensko, a upozornil na omezení daná závazky vůči evropskému financování a na dlouhodobé provozní závazky, nejen investiční náklady. Generální ředitel Správy železnic Tomáš Tóth popsal plánované trasy o délce zhruba 700 km s rychlostmi cca 200–300 km/h jako velkou příležitost pro český průmysl. Generální ředitel ČD Michal Krapinec upozornil, že pořizovací náklady vozidel pro 230 km/h dosahují stovek milionů na jednotku a že s rostoucí rychlostí výrazně rostou náklady na energie a údržbu. Generální ředitelka ACRI Marie Vopálenská uvedla, že průmysl je připraven uspět a počítá s férovými nediskriminačními podmínkami.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 27
+}

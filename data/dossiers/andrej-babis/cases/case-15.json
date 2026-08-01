@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/case.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/cases/CASE-15",
+  "@type": "vomaste:Case",
+  "recordType": "case",
+  "identifier": "CASE-15",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "Pandora Papers: česká větev",
+  "summary": "NCOZ v únoru 2022 uzavřela, že jednání popsané v Pandora Papers nelze posoudit jako podezření ze spáchání trestného činu na území České republiky, a poznatky předala policejnímu orgánu jiné členské země EU — jde o závěr o místní příslušnosti, ne o meritorní zproštění ani o potvrzení zákonnosti transakcí. Souběžné správní prověřování možného přestupku proti zákonu o střetu zájmů naráželo na nedostupnost zahraničních dokumentů a hrozící zánik odpovědnosti; Babiš jakékoli pochybení odmítá.",
+  "period": "2021–2022",
+  "status": "status-single",
+  "statusLabel": "Předáno do zahraničí; odložení není potvrzení zákonnosti",
+  "anchor": "kauza-pandora-ceska-vetev",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-75"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-76"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-52"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-53"
+    }
+  ],
+  "subjects": [],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Plné znění, zdroje a kontext tohoto případu jsou v [hlavním přehledu\ndossieru](@/dossiers/andrej-babis/_index.md#kauza-pandora-ceska-vetev)."
+    }
+  ],
+  "order": 15
+}

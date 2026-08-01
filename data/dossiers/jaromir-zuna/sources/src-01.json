@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "title": "SRC-01 — Vláda ČR (oficiální web)",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vlada.gov.cz/cz/vlada/clenove-vlady/jaromir-zuna-223972/",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "zuna"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální stránka na webu Úřadu vlády, otevřena a přečtena 2026-07-30.\nUvádí funkci **místopředseda vlády a ministr obrany** a doložený přehled kariéry: narozen 26. 11. 1960; voják z povolání od 1980, generálporučík; 1. zástupce náčelníka Generálního štábu AČR (2019–2022); přidělenec obrany v Číně, Mongolsku a KLDR (2022–2024); National War College (Washington).\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** —\ndokládá existenci a formulaci úředního údaje, ne nezávislé redakční\nposouzení. Potvrzení **současné** funkce v této vládě vychází z ověření\noficiálního seznamu členů vlády k 2026-07-30 (viz\n`data/government.toml`). Sebeprezentační části profilu nejsou nezávisle\nověřeným faktem a dossier je jako fakt nepřebírá."
+    }
+  ],
+  "order": 1
+}

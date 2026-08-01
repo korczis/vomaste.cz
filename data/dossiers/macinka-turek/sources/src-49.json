@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-49",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-49",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-49 — Deník.cz (VLTAVA LABE MEDIA)",
+  "outlet": "Deník.cz (VLTAVA LABE MEDIA)",
+  "sourceFamily": "denik-cz-turek-ministr",
+  "sourceType": "zpravodajství",
+  "url": "https://www.denik.cz/cesko/novy-ministr-zivotniho-prostredi-igor-cerveny-jmenovani-petr-pavel/",
+  "published": "2026-02-23",
+  "retrieved": "2026-07-29",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-43"
+    }
+  ],
+  "subjects": [
+    "macinka"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Prezident Petr Pavel 23. 2. 2026 jmenoval ministrem životního prostředí\nIgora Červeného (Motoristé sobě) — vláda premiéra Babiše je tím po\nzhruba dvou měsících kompletní. Řízením ministerstva byl do té doby\npověřen ministr zahraničí a předseda Motoristů Petr Macinka (viz\nCLM-24, CLM-40)."
+    }
+  ],
+  "order": 49
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-27",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-27",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
+  },
+  "title": "SRC-27 — ČeskéNoviny.cz (ČTK): Výběrové řízení na ředitele Národní galerie Praha Klempíř zrušil, chce nové (2. 7. 2026)",
+  "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceFamily": "ctk",
+  "sourceType": "agenturní zpravodajství",
+  "url": "https://www.ceskenoviny.cz/zpravy/vyberove-rizeni-na-reditele-narodni-galerie-praha-klempir-zrusil-chce-nove/2846745",
+  "published": "2026-07-02",
+  "retrieved": "2026-07-31",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-22"
+    }
+  ],
+  "subjects": [
+    "klempir"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "ČeskéNoviny.cz (ČTK) dne 2. 7. 2026 potvrzuje zrušení výběrového řízení\nna generálního ředitele Národní galerie Praha, jmenuje tři postupující\nuchazeče (Marcel Fišer, Olga Kotková, Aleš Seifert) a uvádí, že Olga\nKotková nadále vede galerii jako pověřená ředitelka.\n\n**Nezávislost**: samostatná redakce/agentura od ČT24 (SRC-04) — obě\nnezávisle potvrzují tutéž veřejnou skutečnost. Proto CLM-22 nese stav\n`CORROBORATED`."
+    }
+  ],
+  "order": 27
+}

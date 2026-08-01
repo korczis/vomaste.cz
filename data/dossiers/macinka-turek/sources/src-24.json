@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-24",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-24",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-24 — Hlídač státu (Macinka, firmy)",
+  "outlet": "Hlídač státu",
+  "sourceFamily": "hlidac-statu",
+  "sourceType": "veřejný rejstřík / transparentní databáze",
+  "url": "https://www.hlidacstatu.cz/Osoba/Vazby/petr-macinka?aktualnost=Libovolny",
+  "retrieved": "2026-07-22",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-22"
+    }
+  ],
+  "subjects": [
+    "macinka"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Stejná databáze jako SRC-23 (Hlídač státu, rejstříková data, ne\nžurnalistika) — pro Petra Macinku eviduje sedm subjektů, žádný se\nsmlouvou se státem:\n\n| Subjekt | IČO | Role | Období |\n|---|---|---|---|\n| DRILL COMPANY, s.r.o. | 04771664 | člen statutárního orgánu | 16. 8. 2017 – 8. 1. 2026 |\n| Kauppias s.r.o. | 05015502 | člen statutárního orgánu, společník s vkladem | od 14. 7. 2017 |\n| Centrum pro výzkum terorismu, z.s. | 11823461 | člen statutárního orgánu | od 24. 9. 2021 |\n| Motoristé Praha s.r.o. | 14076705 | člen statutárního orgánu, společník s vkladem | 31. 5. 2022 – 5. 1. 2026 |\n| PG Contract, spol. s r.o. | 25542125 | člen statutárního orgánu, společník s vkladem | 20. 1. 2005 – 30. 6. 2009 |\n| Klub motoristů, z.s. | 17353882 | člen statutárního orgánu | od 22. 7. 2022 |\n| MEAS Consulting s.r.o. v likvidaci | 04347803 | společník s vkladem | od 26. 8. 2015 |\n\nPozoruhodné je časování: u DRILL COMPANY a Motoristé Praha skončilo\nMacinkovo angažmá začátkem ledna 2026 — v podobném období, kdy podle\nSRC-18 dodatečně opravoval majetkové přiznání. Dossier to vede jako\nzaznamenaný fakt (souběh dat), ne jako tvrzení o příčinné souvislosti,\nkterou tento zdroj sám nedokládá.\n\nKlub motoristů, z.s. je zároveň subjektem, přes který podle SRC-26\nplynuly firemní dary hnutí Motoristé sobě — viz CLM-23."
+    }
+  ],
+  "order": 24
+}

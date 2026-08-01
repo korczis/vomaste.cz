@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-26",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-26",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "title": "SRC-26 — Hospodářské noviny",
+  "outlet": "Hospodářské noviny",
+  "sourceType": "zpravodajství",
+  "url": "https://podcasty.hn.cz/c1-67882980-problem-ceske-zeleznice-byl-ze-s-penezi-nebyl-problem-rika-ministr-bednarik-ted-uz-chce-trh-chladit",
+  "published": "2026-05-28",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-36"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Problém české železnice byl, že s penězi nebyl problém, říká ministr Bednárik. Teď už chce trh chladit**\n\nPodcast Ranní brífink s Bednárikem. Ministr uvádí, že problémem české železnice bylo, že s penězi nebyl problém, a že se to dostalo do její DNA. Zmiňuje se obtížnost krajů udržet současný rozsah železničního provozu při nákladech přesahujících 100 Kč na kilometr a otázka, proč byly nutné tak masivní investice.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 26
+}

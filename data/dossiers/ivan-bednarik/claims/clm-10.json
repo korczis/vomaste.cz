@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-10",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-10",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "text": "V květnu 2026 Bednárik v podcastu Hospodářských novin prohlásil: „Problém české železnice byl, že s penězi nebyl problém. A to se dostalo do její DNA,“ a avizoval záměr železniční trh „chladit“, tedy brzdit další masivní investice; nákupy vlaků za desítky miliard při jednotkových nákladech v řádu stovek korun za kilometr jízdy podle něj nejsou dlouhodobě udržitelné.",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-06"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "order": 10,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/ivan-bednarik/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

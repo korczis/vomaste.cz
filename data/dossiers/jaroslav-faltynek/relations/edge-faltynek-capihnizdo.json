@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/relations/edge-faltynek-capihnizdo",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-faltynek-capihnizdo",
+  "relationId": "edge-faltynek-capihnizdo",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/faltynek"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/capi-hnizdo"
+  },
+  "relationType": "SUBJECT_OF_PROCEEDING",
+  "label": "stíhán 2015–2018; stíhání zrušeno státním zástupcem",
+  "status": "contextual",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-04"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-02"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextový, strukturální vztah — dossier jej neuvádí jako vlastní doloženou investigaci, jen jako veřejně nesporné pozadí."
+    }
+  ]
+}

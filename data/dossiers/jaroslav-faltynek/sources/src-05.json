@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-05",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-05",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek"
+  },
+  "title": "SRC-05 — Novinky.cz: Soud s Andrejem Babišem, den třetí (14. 9. 2022)",
+  "outlet": "Novinky.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://www.novinky.cz/clanek/krimi-soud-s-andrejem-babisem-den-treti-vypovidat-bude-manzelka-40408622",
+  "published": "2022-09-14",
+  "retrieved": "2026-07-31",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-05"
+    }
+  ],
+  "subjects": [
+    "faltynek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Novinky.cz dne 14. 9. 2022 cituje Faltýnkovu svědeckou výpověď na dotaz\nBabišova advokáta Eduarda Bruny, zda se premiér o projekt Čapí hnízdo\nněkdy zvlášť zajímal: „Pane docente, bé je správně, bylo to pod jeho\nrozlišovacími schopnostmi.\"\n\n**Nezávislost**: samostatná redakce od Echo24 (SRC-03) — obě nezávisle\npotvrzují tutéž skutečnost (svědecká výpověď v této podobě). Proto\nCLM-05 nese stav `CORROBORATED`.\n\n**Limity**: jde o výpověď svědka, ne o zjištění soudu; Faltýnkovo vlastní\nstíhání v této kauze skončilo již v roce 2018."
+    }
+  ],
+  "order": 5
+}

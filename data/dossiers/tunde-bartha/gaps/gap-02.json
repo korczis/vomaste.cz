@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/gaps/GAP-02",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tunde-bartha"
+  },
+  "title": "GAP-02 — Přesné datum nástupu do současné funkce",
+  "description": "Datum nástupu Tünde Barthy do funkce vedoucí Úřadu vlády není doloženo primárním ani jmenovaně ozdrojovaným zpravodajstvím.",
+  "priority": "střední",
+  "checked": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-08"
+    }
+  ],
+  "subjects": [
+    "bartha"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Že Tünde Bartha v červnu 2026 Úřad vlády vede, dokládají dvě nezávislá\nmédia ([CLM-07](@/dossiers/tunde-bartha/claims/clm-07.md)). **Přesné\ndatum nástupu doloženo není**:\n\n- Oficiální přehled Úřadu vlády\n  ([SRC-04](@/dossiers/tunde-bartha/sources/src-04.md)) ke dni stažení\n  2026-07-30 neuvádí nástupce po Petře Fojtíkové (do 15. 12. 2025).\n- Zpráva Echo24 z 9. 12. 2025 o jejím návratu se opírá o **nejmenované\n  zdroje** („Podle informací deníku Echo\") a je anticipační — oznamuje\n  očekávaný krok, nikoli potvrzené jmenování. Dossier ji proto necituje\n  jako zdroj tvrzení o datu.\n\nDatum 15. 12. 2025 uvádí encyklopedický souhrn, který tento web jako\nzdroj tvrzení nepoužívá. **Do doplnění primárního záznamu nebo jmenovaně\nozdrojované zprávy zůstává datum nedoložené.**"
+    }
+  ],
+  "order": 2
+}

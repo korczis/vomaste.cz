@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-01 — Echo24",
+  "outlet": "Echo24",
+  "sourceType": "zpravodajství",
+  "url": "https://www.echo24.cz/a/HkCB9/zpravy-domaci-turka-se-nikdy-nevzdam-budu-mu-odrezavat-opratku-rika-macinka-okamura-imunita",
+  "published": "2026-07-15",
+  "retrieved": "2026-07-21",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-13"
+    }
+  ],
+  "subjects": [
+    "macinka",
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Článek zaznamenává veřejné vyjádření Petra Macinky, ve kterém deklaruje\ntrvalou podporu Filipu Turkovi navzdory politickému tlaku. Citovaný výrok\n(„Turka se nikdy nevzdám, budu mu odřezávat oprátku\") je v dossieru veden\njako **citace**, ne jako hodnocení tohoto webu — jde o to, co řekl Macinka,\nne o závěr o tom, zda si podporu Turek zaslouží.\n\nČlánek se dotýká i souvisejícího politického kontextu (vazba na Okamuru,\notázka imunity), který tento dossier nerozebírá nad rámec citovaného výroku."
+    }
+  ],
+  "order": 1
+}

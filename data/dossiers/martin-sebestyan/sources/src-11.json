@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-11",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-11",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
+  },
+  "title": "SRC-11 — Echo24",
+  "outlet": "Echo24",
+  "sourceType": "zpravodajství",
+  "url": "https://m.echo24.cz/a/HaUWx/zpravy-ekonomika-agrofert-muze-dostavat-dotace-i-nadale-fond-postupoval-spravne-uvedl-organ-eu",
+  "published": "2026-06-04",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-21"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-28"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-29"
+    }
+  ],
+  "subjects": [
+    "sebestyan"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Agrofert může dostávat dotace i nadále. Fond postupoval správně, uvedl orgán EU**\n\nEcho24 a ČTK k témuž vyjádření DG Agri. SZIF obdržel potvrzení, že postup domluvený se SZIF zůstává v platnosti. Zmiňuje rozpor s dopisem, o němž informovaly Seznam Zprávy, podle nějž Komise nechce proplácet dotace firmám spojeným s premiérem, dokud nebude vyřešen jeho střet zájmů. Uvádí částku téměř 200 mil. Kč vyplacených Agrofertu za Babišova premiérství a výzvy opozice vůči ministrovi k zastavení výplat.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 11
+}

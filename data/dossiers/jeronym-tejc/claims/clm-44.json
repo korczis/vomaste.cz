@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-44",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-44",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "text": "Tejc při vyjádření ve sněmovně 2. července 2026, kdy zpochybnil oprávnění soudu vydat předběžné opatření, současně uvedl: „Přes tento nesouhlas já i vláda rozhodnutí Ústavního soudu respektujeme a naplníme ho.“",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-08"
+    }
+  ],
+  "subjects": [
+    "tejc"
+  ],
+  "order": 44,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jeronym-tejc/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

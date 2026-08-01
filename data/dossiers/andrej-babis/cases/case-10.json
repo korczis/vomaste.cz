@@ -1,0 +1,57 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/case.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/cases/CASE-10",
+  "@type": "vomaste:Case",
+  "recordType": "case",
+  "identifier": "CASE-10",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "Penam / Pekárna Zelená louka: dotace na toastovou linku",
+  "summary": "Stomilionová dotace z programu Inovace na výrobní linku na toastový chléb: Evropská komise ji odmítla proplatit a peníze šly z českého rozpočtu, ministerstvo průmyslu dotaci v roce 2022 odňalo s odkazem na nedostatečnou inovativnost projektu. Státní zástupce evropské prokuratury podal 22. 6. 2026 obžalobu na společnost Pekárna Zelená louka a dvě fyzické osoby pro dotační podvod a poškození finančních zájmů EU. Obžaloba není rozhodnutí o vině, věc projedná Krajský soud v Praze; Agrofert trvá na tom, že postupoval v souladu s předpisy.",
+  "period": "2018–",
+  "status": "status-disputed",
+  "statusLabel": "Obžaloba podána, o vině soud nerozhodl",
+  "anchor": "kauza-penam",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-55"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-56"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-57"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-58"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-59"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-34"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-35"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-36"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-37"
+    }
+  ],
+  "subjects": [],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Plné znění, zdroje a kontext tohoto případu jsou v [hlavním přehledu\ndossieru](@/dossiers/andrej-babis/_index.md#kauza-penam)."
+    }
+  ],
+  "order": 10
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-41",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-41",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "text": "Havlíček označil revizi emisních cílů navrženou Evropskou komisí za nedostatečnou a před senátory uvedl: „Z našeho pohledu je stále nedostatečná, problém není rok 2035, ale i cíle 2030.“ Upozornil, že ačkoliv byl cíl pro rok 2035 zmírněn na 90procentní snížení emisí, sankce zůstávají nastaveny, jako by dál platil absolutní zákaz spalovacích motorů.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-10"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "order": 41,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/karel-havlicek/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

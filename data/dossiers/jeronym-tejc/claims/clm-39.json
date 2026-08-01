@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-39",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-39",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "text": "Na ministerstvu práce a sociálních věcí poprvé zasedla Komise pro přezkum nepřirozených úmrtí dětí v čele s ministrem Alešem Juchelkou; jejím členem je i dětský ombudsman Martin Beneš. Výstupem prvního jednání byl podnět ke kontrole postupů orgánů sociálně-právní ochrany dětí ve Středočeském kraji a v Praze, který ministerstvo prezentovalo jako standardní kontrolní nástroj, nikoli jako předjímání pochybení.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-20"
+    }
+  ],
+  "subjects": [
+    "tejc"
+  ],
+  "order": 39,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jeronym-tejc/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

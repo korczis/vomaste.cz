@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/gaps/GAP-01",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
+  },
+  "title": "GAP-01 — Výsledek odvolání SPD proti nepravomocnému rozsudku",
+  "description": "Hnutí oznámilo odvolání; výsledek nebyl ve zkontrolovaných zdrojích nalezen.",
+  "priority": "vysoká",
+  "checked": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-03"
+    }
+  ],
+  "subjects": [
+    "okamura"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Rozsudek OS pro Prahu 1 z 3. 6. 2026 není pravomocný a SPD oznámila\nodvolání ([SRC-01](@/dossiers/tomio-okamura/sources/src-01.md)). Ve\nzkontrolovaných zdrojích **nebyl k datu kontroly nalezen** doklad o\nvýsledku odvolacího řízení — zda byl rozsudek potvrzen, zrušen, změněn,\nani zda se hnutí obrátilo na Ústavní soud, jak oznámilo.\n\nOtevřenost této mezery **není** zjištěním v žádném směru. Dokud odvolací\nřízení neskončí, není o vině rozhodnuto.\n\n**Podmínka uzavření**: dohledání a přímé otevření zdroje k rozhodnutí\nodvolacího soudu (případně Ústavního soudu) a doplnění tvrzení s\nodpovídajícím stavem a přesným procesním popisem."
+    }
+  ],
+  "order": 1
+}

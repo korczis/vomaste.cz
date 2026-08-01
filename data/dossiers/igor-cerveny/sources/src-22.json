@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-22",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-22",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "title": "SRC-22 — FORUM 24",
+  "outlet": "FORUM 24",
+  "sourceType": "zpravodajství",
+  "url": "https://www.forum24.cz/motoriste-se-opevnuji-na-ministerstvu-chystaji-dvojite-dvere-pro-turka-a-stavebni-prace-za-miliony",
+  "published": "2026-05-31",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-37"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-38"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-39"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-42"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Motoristé se opevňují na ministerstvu. Chystají dvojité dveře pro Turka a stavební práce za miliony**\n\nPopisuje zakázku v objemu 3 miliony Kč na rekonstrukci kanceláře ministra a sekretariátu: bourání příček, demontáž skříní, vybourání otvoru v ocelové zdi, odstranění dlažby a tapet, malování, nátěry topení, koberce. Cituje Turkovo vyjádření o „jedné bezpečnostní úpravě“ v podobě dvojitých dveří. Uvádí nábytek za cca 250 tisíc (stoly 40 tisíc, kožená pohovka 65 tisíc, křesla 40 tisíc), umístění ministrovy kanceláře v nezabezpečené části budovy a Turkův plán nové kantýny.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 22
+}

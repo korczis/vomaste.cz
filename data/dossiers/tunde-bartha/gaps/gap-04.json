@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/gaps/GAP-04",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-04",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tunde-bartha"
+  },
+  "title": "GAP-04 — Data nástupu a odchodu z Agrofertu",
+  "description": "Citovaný zdroj uvádí jen datum, kdy o působení Tünde Barthy v Agrofertu informoval HlídacíPes; kdy nastoupila a kdy odešla, doloženo není.",
+  "priority": "nízká",
+  "checked": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-06"
+    }
+  ],
+  "subjects": [
+    "bartha"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Citovaný zdroj ([SRC-03](@/dossiers/tunde-bartha/sources/src-03.md))\ndokládá pracovní zařazení v Agrofertu potvrzené mluvčím společnosti,\nuvádí však pouze datum vlastního zveřejnění (14. 8. 2024). **Kdy Tünde\nBartha do holdingu nastoupila a kdy z něj odešla, doloženo není.**\n\nBez těchto dat nelze psát žádné tvrzení o návaznosti mezi jejím\npůsobením v holdingu a výkonem veřejné funkce."
+    }
+  ],
+  "order": 4
+}

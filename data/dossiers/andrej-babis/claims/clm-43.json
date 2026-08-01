@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-43",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-43",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "Podle závěrečné zprávy auditu Evropské komise z dubna 2021 jmenoval Babiš všechny činitele svěřenských fondů a může je odvolat, a proto oba fondy — a jejich prostřednictvím Agrofert — ovládá; dotace ze strukturálních fondů a Evropského sociálního fondu firmám skupiny jsou proto po 9. únoru 2017, kdy nabyla účinnosti novela zákona o střetu zájmů, podle auditorů neoprávněné a zpráva doporučila stoprocentní finanční opravu. Audit je kontrolní nástroj Komise, ne soud, a netýká se trestní odpovědnosti",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-19"
+    }
+  ],
+  "subjects": [],
+  "order": 43,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

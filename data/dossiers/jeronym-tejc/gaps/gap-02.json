@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/gaps/GAP-02",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "title": "GAP-02 — Aktuální procesní stav trestního oznámení (zda státní zastupitelství věc prověřuje, odloži",
+  "description": "Přečtené články zachycují pouze podání oznámení; bez novějšího ověřeného zdroje nelze procesní vývoj tvrdit.",
+  "priority": "střední",
+  "checked": "2026-07-30",
+  "claims": [],
+  "subjects": [
+    "tejc"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Aktuální procesní stav trestního oznámení (zda státní zastupitelství věc prověřuje, odložilo, či zahájilo úkony trestního řízení) po dubnu 2026 se nepodařilo z otevřených přečtených zdrojů zjistit.\n\n**Proč je to mezera**: Přečtené články zachycují pouze podání oznámení; bez novějšího ověřeného zdroje nelze procesní vývoj tvrdit. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+    }
+  ],
+  "order": 2
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-24",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-24",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
+  },
+  "title": "SRC-24 — Společnost pro obranu svobody projevu",
+  "outlet": "Společnost pro obranu svobody projevu",
+  "sourceType": "komentář/názor",
+  "url": "https://www.sosp.cz/2026-06/",
+  "published": "2026-07-11",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-33"
+    }
+  ],
+  "subjects": [
+    "okamura"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Přehled měsíce června 2026**\n\nMěsíční přehled advokační organizace zaměřené na svobodu projevu. Rozsudek nad SPD hodnotí kriticky jako faktické posvěcení cenzury a tlak na autocenzuru; jde o hodnotící text zájmové organizace, nikoli o zpravodajství.\n\nZdroj otevřen a přečten 2026-07-30. **Komentář/názorový text** — dokládá, že autor hodnocení publikoval, ne že hodnocení platí."
+    }
+  ],
+  "order": 24
+}

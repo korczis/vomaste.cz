@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-06",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-06",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar"
+  },
+  "title": "SRC-06 — Blesk.cz",
+  "outlet": "Blesk.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://www.blesk.cz/clanek/zpravy-politika/844445/pavel-vetoval-zakon-o-rozpoctech-boji-se-o-budouci-generace-i-nezavislost-instituci.html",
+  "published": "2026-07-22",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-25"
+    }
+  ],
+  "subjects": [
+    "metnar"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Pavel vetoval zákon o rozpočtech! Bojí se o budoucí generace i nezávislost institucí**\n\nKontextový zdroj k rámci „tlaku na nezávislé instituce“, do něhož prezident NKÚ spor o ochrannou službu zasazuje. Popisuje veto novely rozpočtových zákonů prezidentem Petrem Pavlem z 22. července 2026; mezi důvody uvádí, že by norma umožnila ministerstvu financí zasahovat do hospodaření ústavně nezávislých institucí, jmenovitě Ústavního soudu, ombudsmana, NKÚ a Národní rozpočtové rady.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 6
+}

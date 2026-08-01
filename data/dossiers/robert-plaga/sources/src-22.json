@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-22",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-22",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "title": "SRC-22 — Ministerstvo školství, mládeže a tělovýchovy ČR",
+  "outlet": "Ministerstvo školství, mládeže a tělovýchovy ČR",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://msmt.gov.cz/vyuka-ve-skolach-letos-skonci-drive",
+  "published": "2026-03",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-49"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-50"
+    }
+  ],
+  "subjects": [
+    "plaga"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Výuka ve školách letos skončí dříve**\n\nOficiální informace MŠMT o ukončení výuky v pátek 26. června 2026, o tom, že opatření nemá vliv na kvalitu výuky, o možnosti škol požádat o výjimku a o provozu školní družiny v období prázdnin. Text neuvádí konkrétní paragraf školského zákona ani přímé citace ministra.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 22
+}

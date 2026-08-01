@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/gaps/GAP-06",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-06",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "title": "GAP-06 — Není doloženo, zda pokuta od mosteckého magistrátu nabyla právní moci a zda ji Mrázová sku",
+  "description": "Poslední dohledané zpravodajství je z 25. 7. 2026 a shodně uvádí rozhodnutí jako nepravomocné. Tříletá... přesněji tříTÝDENNÍ odvolací lhůta",
+  "priority": "střední",
+  "checked": "2026-07-30",
+  "claims": [],
+  "subjects": [
+    "mrazova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Není doloženo, zda pokuta od mosteckého magistrátu nabyla právní moci a zda ji Mrázová skutečně zaplatila.\n\n**Proč je to mezera**: Poslední dohledané zpravodajství je z 25. 7. 2026 a shodně uvádí rozhodnutí jako nepravomocné. Tříletá... přesněji tříTÝDENNÍ odvolací lhůta by při doručení koncem července uplynula až v polovině srpna 2026, tedy po datu rešerše (30. 7. 2026). Deklarace, že se neodvolá a zaplatí, pochází od mluvčí resortu, nikoli od správního orgánu. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+    }
+  ],
+  "order": 6
+}

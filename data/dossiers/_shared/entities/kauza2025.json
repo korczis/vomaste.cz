@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/kauza2025",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "kauza2025",
+  "entityId": "kauza2025",
+  "title": "Kauza 2025: smazané příspěvky",
+  "entityType": "controversy",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "contextual",
+  "dossiers": [
+    "macinka-turek",
+    "filip-turek"
+  ],
+  "routeAliases": [
+    "/dossiers/macinka-turek/entities/kauza2025/"
+  ]
+}

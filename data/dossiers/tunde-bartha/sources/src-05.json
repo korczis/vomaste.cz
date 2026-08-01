@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-05",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-05",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tunde-bartha"
+  },
+  "title": "SRC-05 — ČT24: Praha 3 vypoví smlouvu na městský byt šéfce Úřadu vlády (24. 6. 2026)",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "veřejnoprávní zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/regiony/praha-3-vypovi-smlouvu-na-mestsky-byt-sefce-uradu-vlady-374919",
+  "published": "2026-06-24",
+  "retrieved": "2026-07-31",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-03"
+    }
+  ],
+  "subjects": [
+    "bartha"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "ČT24 dne 24. 6. 2026: advokátní kancelář Šenkýř Pánik uvedla, že\n„výpověď [je] problematická v případě, že by se proti ní manželé\nBarthovi bránili u soudu\", a že „radnice nemá dostatečné podklady pro\nto, aby to mohla prokázat u soudu\". Rada Prahy 3 přesto výpověď 24. 6.\n2026 schválila.\n\n**Nezávislost**: samostatná redakce od Echo24 (SRC-02) — obě nezávisle\npotvrzují totéž právní stanovisko advokátní kanceláře. Proto CLM-03\nnese stav `CORROBORATED`.\n\n**Limity**: tento zdroj nejmenuje vedoucího odboru Michala Dobiáše\nkonkrétně — jeho stanovisko (CLM-02) zůstává doloženo jen SRC-02."
+    }
+  ],
+  "order": 5
+}

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-47",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-47",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-47 — Deník N",
+  "outlet": "Deník N",
+  "sourceFamily": "denik-n",
+  "sourceType": "zpravodajství",
+  "url": "https://denikn.cz/2139565/policie-odlozila-kauzu-turkovych-nenavistnych-vyroku-jsou-podle-ni-promlcene",
+  "published": "2026-07-28",
+  "retrieved": "2026-07-29",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-41"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-42"
+    }
+  ],
+  "subjects": [
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Policie 28. 7. 2026 odložila prověřování Turkových výroků na sociálních\nsítích (viz CLM-07) z důvodu promlčení; rozhodnutí není pravomocné.\nPodle článku policie nepotvrdila verzi Motoristů sobě, že zveřejněné\nmateriály byly zfalšované. Zároveň bylo jako nedůvodné odloženo trestní\noznámení, které Motoristé sobě podali na Deník N a autory článku (viz\nCLM-19) — zveřejnění informací podle policie nebylo trestným činem."
+    }
+  ],
+  "order": 47
+}

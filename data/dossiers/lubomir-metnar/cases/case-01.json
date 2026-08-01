@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/case.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/cases/CASE-01",
+  "@type": "vomaste:Case",
+  "recordType": "case",
+  "identifier": "CASE-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar"
+  },
+  "title": "Návrh ukončit policejní ochranu Nejvyššího kontrolního úřadu",
+  "summary": "Ministerstvo vnitra navrhuje ukončit policejní ochranu NKÚ; Metnar to odůvodňuje bezpečnostní analýzou, prezident NKÚ v tom vidí tlak na nezávislou instituci.",
+  "period": "2026",
+  "status": "status-disputed",
+  "statusLabel": "Návrh, bez rozhodnutí",
+  "anchor": "kauza-ochrana-nku",
+  "claims": [],
+  "sources": [],
+  "subjects": [
+    "metnar"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu\ndossieru](@/dossiers/lubomir-metnar/_index.md#kauza-ochrana-nku)."
+    }
+  ],
+  "order": 1
+}

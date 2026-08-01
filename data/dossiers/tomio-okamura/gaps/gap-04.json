@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/gaps/GAP-04",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-04",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
+  },
+  "title": "GAP-04 — Zda a kdy bylo odvolání SPD formálně podáno a kdy je nařízeno odvolací jednání.",
+  "description": "Přístupné zdroje k červenci 2026 dokládají pouze ohlášený záměr odvolat se, nikoli doručení odvolání ani termín u odvolacího soudu; žádné po",
+  "priority": "střední",
+  "checked": "2026-07-30",
+  "claims": [],
+  "subjects": [
+    "okamura"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zda a kdy bylo odvolání SPD formálně podáno a kdy je nařízeno odvolací jednání.\n\n**Proč je to mezera**: Přístupné zdroje k červenci 2026 dokládají pouze ohlášený záměr odvolat se, nikoli doručení odvolání ani termín u odvolacího soudu; žádné pozdější zpravodajství o podání odvolání se nepodařilo dohledat. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+    }
+  ],
+  "order": 4
+}

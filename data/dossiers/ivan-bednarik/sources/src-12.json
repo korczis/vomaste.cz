@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-12",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-12",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "title": "SRC-12 — RAILTARGET",
+  "outlet": "RAILTARGET",
+  "sourceType": "komentář/názor",
+  "url": "https://www.railtarget.cz/byznys/odchod-ivana-bednarika-pripomnel-nedokoncenou-transformaci-ceskych-drah-1929.html",
+  "published": "2022-03-01",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-47"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Odchod Ivana Bednárika připomněl nedokončenou transformaci Českých drah**\n\nAnalytický text spojující Bednárikův odchod s nedokončeným majetkovým vypořádáním mezi ČD a Správou železnic od rozdělení v letech 2002–2003. Uvádí kontext: převod 12 mld. v roce 2008, 3,3 mld. za zhruba 1500 nádražních budov v roce 2016, zvažovaný prodej pozemků za 3,5 mld. a zhruba 3 mld. Kč ročně v nájemném za sporné nemovitosti.\n\nZdroj otevřen a přečten 2026-07-30. **Komentář/názorový text** — dokládá, že autor hodnocení publikoval, ne že hodnocení platí."
+    }
+  ],
+  "order": 12
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-22",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-22",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
+  },
+  "title": "SRC-22 — Romea.cz",
+  "outlet": "Romea.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://romea.cz/cz/domaci/kvuli-rasistickym-a-xenofobnim-plakatum-miri-hnuti-spd-pred-soud-hlavni-liceni-zacne-v-kvetnu-okamuru-zatim-chrani-imunita",
+  "published": "2026-03-20",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-22"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-30"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-31"
+    }
+  ],
+  "subjects": [
+    "okamura"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Kvůli rasistickým a xenofobním plakátům míří hnutí SPD před soud, hlavní líčení začne v květnu. Okamuru zatím chrání imunita**\n\nZpravodajství potvrzující nařízení hlavního líčení s hnutím SPD na 25. května 2026, přerušení Okamurova stíhání k 12. březnu 2026 a návrhy trestů státního zastupitelství pro obě obžalované strany.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 22
+}

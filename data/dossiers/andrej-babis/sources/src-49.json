@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-49",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-49",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-49 — Aktuálně.cz: Daně se nekrátily, reklama na Čapím hnízdě byla reálná, potvrdil konec kauzy žalobce (21. 7. 2022)",
+  "outlet": "Aktuálně.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://zpravy.aktualne.cz/domaci/statni-zastupce-potvrdil-odlozeni-reklamni-vetve-kauzy-capi/r~6dec7d3208ef11eda3c0ac1f6b220ee8/",
+  "published": "2022-07-21",
+  "retrieved": "2026-08-01",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-69"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-70"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Aktuálně.cz informuje, že státní zástupce potvrdil rozhodnutí policie\no odložení tzv. reklamní větve kauzy Čapí hnízdo. Kriminalisté se tři\nroky zabývali podezřením, že suma 272 milionů korun vynaložená\nkoncernem Agrofert v letech 2010 až 2013 ve skutečnosti nešla na\nreklamu; reklamu na Čapím hnízdě zadalo více než deset firem koncernu.\nPodle vyjádření se ani na základě pěti znaleckých posudků nepodařilo\nobjasnit rozsah zadané reklamy ani její obvyklou cenu a prověřování\nnepřineslo poznatky dokládající důvodné podezření. Závěr mohlo v rámci\ndohledu přezkoumat Vrchní státní zastupitelství v Praze.\n\n**Poznámka k procesní přesnosti**: potvrzené odložení je procesní\nvýsledek — neznamená potvrzení přiměřenosti všech plateb ani zjištění\nči vyvrácení daňového podvodu.\n\n**Nezávislost**: vlastní zpravodajství Aktuálně.cz; společně s\n[SRC-48](@/dossiers/andrej-babis/sources/src-48.md) (ČT24, 2024) jde\no dvě vydavatelsky nezávislé redakce. Otevřeno a přečteno 2026-08-01."
+    }
+  ],
+  "order": 49
+}

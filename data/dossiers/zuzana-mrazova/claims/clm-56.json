@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-56",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-56",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "text": "Bývalý ministr pro místní rozvoj Ivan Bartoš (Piráti) prohlásil, že „ministryně Mrázová by mohla být jednotkou pokrytectví“ a že by se měla stydět; podle jeho vyjádření z července 2026 Mrázová zklamala a nevyvodila žádné důsledky.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-19"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-26"
+    }
+  ],
+  "subjects": [
+    "mrazova"
+  ],
+  "order": 56,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/zuzana-mrazova/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

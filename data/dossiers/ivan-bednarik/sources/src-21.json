@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-21",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-21",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "title": "SRC-21 — Newstream",
+  "outlet": "Newstream",
+  "sourceType": "zpravodajství",
+  "url": "https://www.newstream.cz/zpravy-z-firem/personalni-zemetresni-v-ceskych-drahach-skoncil-sef-bednarik",
+  "published": "2022-02-15",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-42"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-45"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-46"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Personální zemětřesení v Českých drahách. Skončil šéf Bednárik**\n\nUvádí, že Bednárik své pohnutky veřejně nesdělil, a jako pravděpodobné příčiny označuje plánované vládní úspory, spor o platby za pozemky ČD užívané Správou železnic, s nimiž dopravce počítal v byznysplánu předloženém dozorčí radě. Bednárik vedl ČD zhruba 15 měsíců od prosince 2020. Zmiňuje také Kupkův výrok o silném manažerovi a hospodářský kontext ztrát skupiny.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 21
+}

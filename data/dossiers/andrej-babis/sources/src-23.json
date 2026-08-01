@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-23",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-23",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-23 — Deník.cz (ČTK): Soud zprostil obžaloby Babiše i Nagyovou (9. 1. 2023)",
+  "outlet": "Deník.cz (VLTAVA LABE MEDIA)",
+  "sourceFamily": "ctk",
+  "sourceType": "agenturní zpravodajství",
+  "url": "https://www.denik.cz/krimi/capi-hnizdo-andrej-babis-rozsudek-20230109.html",
+  "published": "2023-01-09",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-49"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-50"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpráva ČTK publikovaná Deníkem k prvnímu rozsudku v kauze.\n**Co dokládá:** předmět kauzy — padesátimilionovou dotaci na výstavbu\nareálu Čapí hnízdo z let 2007–2008 a vyvedení Farmy Čapí hnízdo ze\nskupiny Agrofert, o jehož účelovosti se vedl spor; a výrok Městského\nsoudu v Praze z 9. ledna 2023, kterým senát soudce Jana Šotta oba\nobžalované zprostil s odůvodněním, že skutek popsaný v obžalobě není\ntrestným činem. Rozsudek nebyl pravomocný a státní zástupce si ponechal\nlhůtu k odvolání.\n\n**Nezávislost:** agenturní zpráva ČTK (`family = \"ctk\"`).\n\n**Limity:** zprošťující rozsudek prvního stupně **není konečné slovo** —\nv této kauze byl později zrušen odvolacím soudem (viz SRC-01). Zařazen je\nproto, že bez něj by procesní historie začínala uprostřed a zrušení\nzproštění by vypadalo jako první rozhodnutí ve věci, což není pravda."
+    }
+  ],
+  "order": 23
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/gaps/GAP-07",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-07",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "title": "GAP-07 — Nebyl dohledán žádný formální podnět (od instituce, poslance či nevládní organizace) kvůli",
+  "description": "Všechny dohledané texty popisují pouze zákonnou třicetidenní povinnost, ministrovo prohlášení o vyřešení a odkup podílu; podatel podnětu nen",
+  "priority": "střední",
+  "checked": "2026-07-30",
+  "claims": [],
+  "subjects": [
+    "cerveny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Nebyl dohledán žádný formální podnět (od instituce, poslance či nevládní organizace) kvůli střetu zájmů ohledně podcastové firmy Extreme BFG Cast.\n\n**Proč je to mezera**: Všechny dohledané texty popisují pouze zákonnou třicetidenní povinnost, ministrovo prohlášení o vyřešení a odkup podílu; podatel podnětu není nikde uveden. Nelze proto tvrdit, že podnět existoval. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+    }
+  ],
+  "order": 7
+}

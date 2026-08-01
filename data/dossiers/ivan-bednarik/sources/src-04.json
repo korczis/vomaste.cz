@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-04",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-04",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "title": "SRC-04 — Echo24",
+  "outlet": "Echo24",
+  "sourceType": "zpravodajství",
+  "url": "https://www.echo24.cz/a/HYedp/zpravy-ekonomika-vysokorychlostni-trate-100-miliard-deficit-navic-zavrit-nemocnice",
+  "published": "2026-02-24",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-08"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Vysokorychlostní tratě = 100 miliard ročně do dluhu. To máme zavřít nemocnice? ptá se Bednárik**\n\nMinistr Bednárik uvedl, že výstavba VRT v plném plánovaném rozsahu by stála 100 miliard Kč ročně z národních zdrojů: 'Já si nemohu dovolit zadlužit, respektive navýšit dluh o 100 miliard korun ročně.' A dále: 'Sto miliard navíc ročně nevím, odkud bychom vzali. Přestaneme platit učitele, nebo zavřeme nemocnice?' Celková vize projektu 1,1 bilionu Kč; vláda chce stavět jen to, na co budou prostředky, s prioritou tras Praha–Brno–Ostrava a mezinárodních návazností; rozhodnutí o kofinancování EU se čekalo v létě 2026.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 4
+}

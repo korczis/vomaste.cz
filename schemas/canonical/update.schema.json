@@ -13,8 +13,8 @@
     "@type": { "const": "vomaste:Update" },
     "recordType": { "const": "update" },
     "identifier": {
-      "$ref": "_defs.schema.json#/$defs/isoDate",
-      "$comment": "Datum je lokální id záznamu (dnešní updates.toml má jeden vstup na datum)."
+      "$ref": "_defs.schema.json#/$defs/updateIdentifier",
+      "$comment": "Datum je lokální id záznamu; druhý a další [[updates]] zápis téhož dne nese pořadový sufix (2026-07-30-2, …) — původní předpoklad fáze B „jeden vstup na datum\" reálná data nesplňují (baseline fáze D: 11 souborů s vícero zápisy téhož dne) a slévání zápisů by nebylo lossless."
     },
     "dossier": { "$ref": "_defs.schema.json#/$defs/dossierRef" },
     "date": { "$ref": "_defs.schema.json#/$defs/isoDate" },

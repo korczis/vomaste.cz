@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-45",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-45",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "text": "Mrázová odmítá souvislost mezi svým pozemkem a novelou: podle svého vyjádření se na přípravě ustanovení o dodatečném povolování nepodílela a nemá to podle ní žádnou souvislost s objekty na jejím pozemku.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-23"
+    }
+  ],
+  "subjects": [
+    "mrazova"
+  ],
+  "order": 45,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/zuzana-mrazova/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

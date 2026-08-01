@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-18",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-18",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "title": "SRC-18 — e15.cz",
+  "outlet": "e15.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://www.e15.cz/byznys/obrana-a-zbrojni-prumysl/nova-armadni-koncepce-do-roku-2040-cesko-chysta-obri-nakupy-za-stovky-miliard-do-hry-vstoupi-i-prezident-pavel-1433160",
+  "published": "2026-05-29",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-37"
+    }
+  ],
+  "subjects": [
+    "zuna"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Nová armádní koncepce do roku 2040. Česko chystá obří nákupy za stovky miliard, do hry vstoupí i prezident Pavel**\n\nObsah připravované koncepce (těžká a střední brigáda, vícevrstvá PVO, nábor až 10 tis. vojáků) a rozpis plánovaných akvizic s cenami; koncepce měla jít na červnovou Bezpečnostní radu státu za účasti prezidenta Pavla.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 18
+}

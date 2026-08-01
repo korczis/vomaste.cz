@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-47",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-47",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "text": "Předseda sněmovního výboru pro obranu Josef Flek (STAN) označil plánované navýšení za nedostatečné — podle něj dvě procenta nebudou stačit kvůli rozjednaným akvizicím a protivzdušné obraně a reálné potřeby přesahují 60 miliard korun.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-16"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-23"
+    }
+  ],
+  "subjects": [
+    "zuna"
+  ],
+  "order": 47,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jaromir-zuna/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-06",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-06",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
+  },
+  "title": "SRC-06 — Ministerstvo zemědělství (MZe)",
+  "outlet": "Ministerstvo zemědělství (MZe)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://mze.gov.cz/public/portal/mze/tiskovy-servis/vystoupeni-v-mediich/ministr-sebestyan-vymahani-dotaci-po-agrofertu-nikdo-nezastavil-minula-vlada-jej-vubec-nezacala",
+  "published": "2026-03-05",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-04"
+    }
+  ],
+  "subjects": [
+    "sebestyan"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Ministr Šebestyán: Vymáhání dotací po Agrofertu nikdo nezastavil, minulá vláda jej vůbec nezačala**\n\nPřepis/shrnutí ministrova rozhovoru pro iROZHLAS.cz na webu MZe (obhajoba). Šebestyán tvrdí, že vymáhání nikdo nezastavil, protože pořádně nikdy nezačalo: exministr Nekula podle něj sliboval vymáhání už v roce 2022, ale do prosince 2025 (nástup Šebestyána) se nic nestalo. Uvádí, že čeká od SZIF kompletní právní analýzu včetně konkrétních částek.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 6
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-08",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-08",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
+  },
+  "title": "SRC-08 — Pražský deník",
+  "outlet": "Pražský deník",
+  "sourceType": "zpravodajství",
+  "url": "https://prazsky.denik.cz/zpravy-region/zamestnanci-narodni-galerie-praha-podepsali-otevreny-dopis-ministr-zatim-mlci/",
+  "published": "2026-07-17",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-25"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-28"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-29"
+    }
+  ],
+  "subjects": [
+    "klempir"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Zaměstnanci Národní galerie Praha podepsali otevřený dopis. Ministr zatím mlčí**\n\nOtevřený dopis základní odborové organizace NGP ze 10. 7. 2026 se 63 podpisy, požadavek na vysvětlení kroků ministra, otázka podfinancování a depozitáře v Jinonicích; reakce ministra.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 8
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-28",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-28",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-28 — Deník.cz (VLTAVA LABE MEDIA)",
+  "outlet": "Deník.cz (VLTAVA LABE MEDIA)",
+  "sourceType": "zpravodajství (krimi)",
+  "url": "https://www.denik.cz/krimi/filip-turek-znasilneni-20250623.html",
+  "published": "2025-06-23",
+  "retrieved": "2026-07-22",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-25"
+    }
+  ],
+  "subjects": [
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Nejstarší dohledané zveřejnění kauzy. Bývalá partnerka poslance Filipa\nTurka (v článku nejmenovaná) podala trestní oznámení, ve kterém ho viní\nz několik let trvajícího domácího násilí, vyhrožování střelnou zbraní a\nz jednoho případu znásilnění. Podle jejího popisu měly incidenty proběhnout\npřed 15 až 20 lety.\n\nTento zdroj je veden jako doklad **existence a obsahu oznámení tak, jak\nho referují nezávislé redakce** — ne jako doklad toho, že se popisované\nčiny skutečně staly. Otázka pravdivosti obvinění je a zůstává otevřená\n(viz CLM-27 a navazující sekce dossieru)."
+    }
+  ],
+  "order": 28
+}

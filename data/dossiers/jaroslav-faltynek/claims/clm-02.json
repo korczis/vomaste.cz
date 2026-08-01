@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-02",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek"
+  },
+  "text": "Státní zástupce Jaroslav Šaroch z Městského státního zastupitelství v Praze podle citovaného zpravodajství zrušil v květnu 2018 trestní stíhání Jaroslava Faltýnka v kauze Čapí hnízdo poté, co vyhověl jeho stížnosti proti obvinění; současně zrušil stíhání tří dalších obviněných",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-04"
+    }
+  ],
+  "subjects": [
+    "faltynek"
+  ],
+  "order": 2,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jaroslav-faltynek/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

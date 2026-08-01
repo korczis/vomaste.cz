@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-20",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-20",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "title": "SRC-20 — Pražský deník",
+  "outlet": "Pražský deník",
+  "sourceType": "zpravodajství",
+  "url": "https://prazsky.denik.cz/zpravy_region/stavebni-zakon-sity-na-miru-velkym-developerum-lez-tvrdi-havlicek-20260604.html",
+  "published": "2026-06-04",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-35"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Stavební zákon šitý na míru velkým developerům? Lež, tvrdí Havlíček**\n\nČlánek popisuje spor o to, zda novela zvýhodňuje velké developery kvůli režimu pro projekty nad 10 000 m² užitné plochy s bydlením. Vicepremiér Karel Havlíček to odmítl: „Vyrojila se informace, že novela stavebního zákona urychlí pouze výstavbu bytových projektů nad 10 tisíc metrů čtverečních. Že je šitá pro velké developery. Je to lež.“ Podle něj jde jen o přechodné období do roku 2028, kdy dostanou stejné podmínky všichni. Premiér Andrej Babiš přiznal, že komunikace stavebního zákona zatím není úplně ideální. Dušan Kunovský z Central Group označil limit 10 000 m² za podměrečný projekt.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 20
+}

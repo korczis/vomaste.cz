@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-34",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-34",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-34 — ČT24: Padla obžaloba za dotace Agrofertu na linku na toastový chléb (22. 6. 2026)",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/statni-zastupce-obzaloval-pekarnu-pod-agrofertem-a-dva-lidi-kvuli-dotacim-na-inovacni-linku-374836",
+  "published": "2026-06-22",
+  "retrieved": "2026-08-01",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-57"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-58"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-59"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "ČT24 informuje, že státní zástupce Adam Bašný z Úřadu evropského\nveřejného žalobce (EPPO) podal 22. 6. 2026 ke Krajskému soudu v Praze\nobžalobu na společnost Pekárna Zelená louka ze skupiny Agrofert a dvě\nfyzické osoby kvůli evropské dotaci 100 milionů korun na „inovační\nlinku na toastový chléb“. Podle EPPO jsou obžalovaní „obviněni\nz předložení nepravdivých údajů a zatajení podstatných informací“;\nfyzickým osobám hrozí v případě uznání viny pět až deset let odnětí\nsvobody, společnosti mimo jiné náhrada škody přibližně 4,1 milionu eur\na patnáctiletý zákaz čerpání dotací. Článek uvádí i vyjádření Agrofertu\n(„Jsme přesvědčeni, že jsme postupovali v souladu s právními předpisy.“)\na Babišovo označení stíhání za účelové.\n\n**Poznámka k procesní přesnosti**: obžaloba je procesní krok — **není**\nto rozhodnutí o vině; o té teprve rozhodne Krajský soud v Praze.\n\n**Nezávislost**: zpravodajství České televize; tutéž událost nezávisle\npopisuje [SRC-35](@/dossiers/andrej-babis/sources/src-35.md) (Blesk.cz).\nOtevřeno a přečteno 2026-08-01."
+    }
+  ],
+  "order": 34
+}

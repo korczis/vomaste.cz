@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-34",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-34",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "title": "SRC-34 — ČT24: MŽP ruší desítky pracovních míst, podle Deníku N zřídí nové oddělení pod Turkem (31. 3. 2026)",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "veřejnoprávní zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/mzp-rusi-desitky-pracovnich-mist-podle-deniku-n-zridi-nove-oddeleni-pod-turkek-371933",
+  "published": "2026-03-31",
+  "retrieved": "2026-07-31",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-47"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "ČT24 dne 31. 3. 2026 cituje ministra Červeného: „Ministerstvo životního\nprostředí (MŽP) k začátku dubna zrušilo na úřadu při systemizaci 38\nmíst.\" Deník N uváděl vyšší počet — 53 pozic (42 služebních a 11\npracovních). Zanikají mimo jiné oddělení financování Nové zelené\núsporám a Národního plánu obnovy, oddělení Modernizačního fondu a\nSociálně klimatického fondu.\n\n**Nezávislost**: samostatná redakce od Seznam Zprávy (SRC-29) — obě\nnezávisle potvrzují tutéž skutečnost (rozdílné počty zrušených míst i\nzaniklá oddělení). Proto CLM-47 nese stav `CORROBORATED`."
+    }
+  ],
+  "order": 34
+}

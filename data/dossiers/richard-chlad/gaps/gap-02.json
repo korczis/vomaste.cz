@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/richard-chlad/gaps/GAP-02",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/richard-chlad"
+  },
+  "title": "GAP-02 — Zda byla plnění řádně vykázána",
+  "description": "Není doloženo, zda a jak byla jednotlivá plnění vykázána ve výroční finanční zprávě strany, ani že by se jimi zabýval dozorový úřad.",
+  "priority": "vysoká",
+  "checked": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-02"
+    }
+  ],
+  "subjects": [
+    "chlad"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Není doloženo**, zda a jak byla jednotlivá plnění vykázána ve výroční\nfinanční zprávě strany, ani že by je přezkoumával dozorový úřad, ani že\nby kdokoli podal podnět.\n\nTato mezera je zaznamenána záměrně a na vysoké prioritě: bez ní by\nčtenář mohl z rozdílu mezi uváděnými čísly\n([GAP-01](@/dossiers/richard-chlad/gaps/gap-01.md)) usoudit, že něco\nnebylo vykázáno správně. **Žádný citovaný zdroj nic takového neuvádí.**\n\nOtevřenost není zjištění žádným směrem."
+    }
+  ],
+  "order": 2
+}

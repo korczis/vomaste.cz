@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-06",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-06",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "title": "SRC-06 — TN.cz (TV Nova)",
+  "outlet": "TN.cz (TV Nova)",
+  "sourceType": "zpravodajství",
+  "url": "https://tn.nova.cz/zpravodajstvi/clanek/645329-ministr-zuna-cenzuruje-prezidenta-musi-skoncit-zuri-opozice",
+  "published": "2026-04-14",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-10"
+    }
+  ],
+  "subjects": [
+    "zuna"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Ministr Zůna cenzuruje prezidenta. Musí skončit, zuří opozice**\n\nRozhovor s prezidentem Pavlem pro armádní podcast Kamufláž měl vyjít 7. dubna, ale nevyšel. Opozice (Flek/STAN, Kupka/ODS) mluví o cenzuře prezidenta, Havel (TOP 09) žádá rezignaci ministra. Ministerstvo obrany obvinění odmítlo: vysílání nezakázalo, šlo o spor o nový komunikační kanál armády.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 6
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-21",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-21",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "title": "SRC-21 — Deník N",
+  "outlet": "Deník N",
+  "sourceType": "zpravodajství",
+  "url": "https://denikn.cz/1986452/cerveny-sedi-ve-spelunce-po-sefce-sekretariatu-ministerskou-kancelar-si-nechal-turek/",
+  "published": "2026-02-26",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-34"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Červený sedí ve „špeluňce“ po šéfce sekretariátu, ministerskou kancelář si nechal Turek**\n\nAutorky Zdislava Pokorná a Petra Procházková. Dostupný úvod: nový ministr neusedl do ministerské kanceláře, pracuje z menšího prostoru po vedoucí sekretariátu; oficiální ministerskou kancelář dál využívá vládní zmocněnec pro Green Deal Filip Turek. Zbytek za paywallem.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 21
+}

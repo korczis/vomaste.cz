@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-08",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-08",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-08 — ČT24: Soud nepravomocně uznal vinu Nagyové v kauze Čapí hnízdo (4. 5. 2026)",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/soud-nepravomocne-uznal-vinu-nagyove-v-kauze-capi-hnizdo-373074",
+  "published": "2026-05-04",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-20"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-21"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-24"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpravodajský článek veřejnoprávní televize k jednacímu dni 4. 5. 2026.\n**Co dokládá:** výrok Městského soudu v Praze o vině spoluobžalované Jany\nNagyové z dotačního podvodu a poškození finančních zájmů EU, uložený\ntříletý podmíněný trest s pětiletou zkušební dobou a peněžitý trest\n500 000 Kč, výslovnou informaci, že rozsudek **není pravomocný** a lze se\nproti němu odvolat k Vrchnímu soudu v Praze, vyjádření předsedy senátu\nJana Šotta a stav řízení proti Andreji Babišovi, které je přerušeno.\n\n**Nezávislost:** Česká televize je vydavatelsky nezávislá na České\njustici (SRC-01, SRC-03) i na deníku Echo24 (SRC-09), proto se pro účely\nstavu `CORROBORATED` počítá jako samostatný zdroj.\n\n**Limity:** článek referuje o rozhodnutí prvního stupně v den jeho\nvyhlášení. Nevypovídá nic o tom, jak dopadne případné odvolací řízení,\na o vině Andreje Babiše soud v tomto řízení nerozhodoval."
+    }
+  ],
+  "order": 8
+}

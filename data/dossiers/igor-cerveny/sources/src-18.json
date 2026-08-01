@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-18",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-18",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "title": "SRC-18 — Ministerstvo životního prostředí ČR",
+  "outlet": "Ministerstvo životního prostředí ČR",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://mzp.gov.cz/cz/pro-media-a-verejnost/aktuality/archiv-tiskovych-zprav/ministr-cerveny-vystoupi-v-osn-na-tema-udrzitelneho-rozvoje-cr-je-v-plneni-cilu-na-10-miste-ze-169",
+  "published": "2026-07-10",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-49"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-51"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-52"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-53"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-54"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Ministr Červený vystoupí v OSN na téma udržitelného rozvoje, ČR je v plnění cílů na 10. místě ze 169**\n\nTisková zpráva resortu: vystoupení na High-Level Political Forum v New Yorku 13. 7. 2026, delegaci tvoří i zástupci Ministerstva pro místní rozvoj a mladí lidé z programu Youth2030. Avizuje účast na akci „Powering Participation: Youth2030 and the Pact in Action“ a v panelu iniciativy „Trade Over Aid“ pořádané USA. Návštěva parků Yosemite a Sequoia je zmíněna až po skončení fóra. Zmiňuje 10. místo ČR ze 169 zemí v hodnocení SDG.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 18
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-41",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-41",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "Evropská komise podle své písemné reakce z 23. června 2026 sleduje otázku možného střetu zájmů i ve vztahu ke společnostem SynBiol a Hartenberg Holding, které byly od 9. prosince 2025 vybrány jako příjemci evropských prostředků, a požádala řídicí orgány, aby žádná žádost o platbu předložená Komisi neobsahovala výdaje spojené s těmito subjekty; jde o monitoring a pokyn, ne o zjištění o porušení pravidel",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-16"
+    }
+  ],
+  "subjects": [],
+  "order": 41,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

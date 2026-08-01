@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-12",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-12",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-12 — iROZHLAS",
+  "outlet": "iROZHLAS.cz (Český rozhlas)",
+  "sourceType": "veřejnoprávní zpravodajství",
+  "url": "https://www.irozhlas.cz/zpravy-domov/ze-sedacek-aut-a-formuli-do-kresla-v-europarlamentu-jmeno-filipa-turka_2412271818_vtk",
+  "published": "2024-12-27",
+  "retrieved": "2026-07-21",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-06"
+    }
+  ],
+  "subjects": [
+    "macinka",
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Profilový text veřejnoprávního Českého rozhlasu mapující Turkovu cestu do\npolitiky (včetně jeho dřívějšího podnikání) a shrnující kauzu z roku 2024\nkolem fotografie se zdviženou pravicí a sbírky svícnů s hákovými kříži,\nvčetně Turkovy a Macinkovy reakce na ni.\n\nNejrozsáhlejší jednotlivý zdroj pro kauzu 2024 v tomto registru — pokrývá\nzároveň fakt, že kauza nastala (CLM-04), i citované reakce obou aktérů\n(CLM-05, CLM-06)."
+    }
+  ],
+  "order": 12
+}

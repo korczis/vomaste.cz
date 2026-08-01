@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-41",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-41",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "text": "Podle E15 Bednárik jako důvod odchodu uvedl vládní úsporná opatření, která se dotknou i Českých drah a nebude jednoduché se s nimi vypořádat, přičemž zmiňováno bylo snižování slev pro studenty a seniory a pozastavený spor o nájem pozemků.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-20"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "order": 41,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/ivan-bednarik/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

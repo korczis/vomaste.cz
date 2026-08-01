@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-57",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-57",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "Státní zástupce Úřadu evropského veřejného žalobce Adam Bašný podal 22. června 2026 ke Krajskému soudu v Praze obžalobu na společnost Pekárna Zelená louka a dvě fyzické osoby pro dotační podvod a poškození finančních zájmů EU; Národní centrála proti organizovanému zločinu předtím zajistila nemovitosti pekárny v hodnotě zhruba 98 milionů korun. Obžaloba není rozhodnutí o vině — o té teprve rozhodne soud",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-34"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-35"
+    }
+  ],
+  "subjects": [],
+  "order": 57,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-10",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-10",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "title": "SRC-10 — Deník.cz (VLTAVA LABE MEDIA)",
+  "outlet": "Deník.cz (VLTAVA LABE MEDIA)",
+  "sourceType": "zpravodajství",
+  "url": "https://www.denik.cz/skolstvi-a-vzdelavani/skolstvi-novy-termin-letni-prazdniny-prodlouzeni-plaga-rodice-jsou-nastvani.html",
+  "published": "2026-04-01",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-16"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-18"
+    }
+  ],
+  "subjects": [
+    "plaga"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Rodiče kritizují posunutí letních prázdnin. Kam dáme děti? ptají se Plagy**\n\nOznámení zkrácení školního roku tři měsíce před jeho koncem zaskočilo část rodičů: neplánované zajištění hlídání mladších dětí, rušené třídní výlety s finančními dopady. Citace kritického rodiče i ředitele, kterému změna nevadí; odborový předák Dobšík míní, že tři měsíce dávají školám dost času. Školy mohou žádat o individuální výjimku.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 10
+}

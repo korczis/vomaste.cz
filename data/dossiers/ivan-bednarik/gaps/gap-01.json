@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/gaps/GAP-01",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "title": "GAP-01 — Skutečný důvod rezignace ve vedení Českých drah",
+  "description": "Bednárik důvody veřejně neuvedl; verze kolující ve veřejné debatě citovaný zdroj nedokládá.",
+  "priority": "vysoká",
+  "checked": "2026-07-31",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-40"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-41"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-42"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-47"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Co se od poslední revize upřesnilo (31. 7. 2026).** Zdroj bezprostředně\nk rezignaci ([SRC-02](@/dossiers/ivan-bednarik/sources/src-02.md))\nkonkrétní důvod nedokládá — Bednárik podle něj uvedl jen, že jej\nvysvětlil dozorčí radě. To ale neznamená, že důvod nezveřejnil nikde:\npodle E15 sám jako důvod odchodu uvedl vládní úsporná opatření\ndotýkající se Českých drah ([CLM-41](@/dossiers/ivan-bednarik/claims/clm-41.md));\nČT24, Newstream a RAILTARGET nezávisle na sobě zasazují odchod do\nkontextu sporu o pozemky mezi Českými drahami a Správou železnic\n([CLM-40](@/dossiers/ivan-bednarik/claims/clm-40.md),\n[CLM-42](@/dossiers/ivan-bednarik/claims/clm-42.md),\n[CLM-47](@/dossiers/ivan-bednarik/claims/clm-47.md)).\n\n**Co zůstává otevřené.** Žádný z těchto zdrojů není totéž jako přímé,\njednoznačné prohlášení Bednárika, dozorčí rady nebo ČD, které by důvod\nrezignace stanovilo jako jedinou, doloženou příčinu — jde o dobovou\nreportáž a jedno vlastní vyjádření (CLM-41), ne o shodu více nezávislých\nzdrojů na jedné jediné verzi. Dossier proto netvrdí, který z uváděných\nfaktorů (úspory, spor o pozemky) byl skutečným či jediným důvodem —\njen registruje, co který zdroj uvádí.\n\n**Podmínka uzavření**: doložené, jednoznačné a nezávisle potvrzené\nvyjádření k tomu, který důvod byl skutečně rozhodující. Do té doby\nzůstává otevřené, který z uváděných faktorů (pokud vůbec jeden) byl\nurčující — ne to, zda byl důvod vůbec veřejně zmíněn."
+    }
+  ],
+  "order": 1
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-45",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-45",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "V tiskové zprávě Evropského parlamentu k plenární rozpravě z 19. května 2021 uvedl komisař Johannes Hahn, že na žádnou z operací dotčených auditem dosud nebyly vykázány žádné výdaje a že rozpočet EU „byl a zůstává plně chráněn“; poslanci požadovali přísnější kontrolní mechanismy. Rozprava a usnesení Parlamentu jsou politickým aktem, ne soudním zjištěním",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-18"
+    }
+  ],
+  "subjects": [],
+  "order": 45,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

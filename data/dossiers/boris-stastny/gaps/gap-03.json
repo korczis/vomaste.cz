@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/boris-stastny/gaps/GAP-03",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/boris-stastny"
+  },
+  "title": "GAP-03 — Znění vládního dokumentu se zdůvodněním odvolání šéfa NSA (údajně obsahuje formulace o obt",
+  "description": "Zdroj iROZHLAS opakovaně vracel HTTP 403 a obsah nebylo možné ověřit čtením; samotný vládní materiál není veřejně dostupný.",
+  "priority": "střední",
+  "checked": "2026-07-30",
+  "claims": [],
+  "subjects": [
+    "stastny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Znění vládního dokumentu se zdůvodněním odvolání šéfa NSA (údajně obsahuje formulace o obtížně obhajitelných cestách, negativní medializaci a střetu zájmů).\n\n**Proč je to mezera**: Zdroj iROZHLAS opakovaně vracel HTTP 403 a obsah nebylo možné ověřit čtením; samotný vládní materiál není veřejně dostupný. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+    }
+  ],
+  "order": 3
+}

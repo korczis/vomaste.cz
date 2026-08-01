@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-03",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "title": "SRC-03 — FORUM 24",
+  "outlet": "FORUM 24",
+  "sourceType": "komentář/názor",
+  "url": "https://www.forum24.cz/havlicek-haji-babise-audit-sice-necetl-ale-premier-neni-ve-stretu-zajmu-a-ty-castky-nesedi/",
+  "published": "2019-12-11",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-04"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Havlíček hájí Babiše. Audit sice nečetl, ale premiér není ve střetu zájmů a ty částky nesedí**\n\nText Jiřího Sezemského cituje Havlíčkova vyjádření z prosince 2019: audit EK nečetl, se závěrem o střetu zájmů Babiše nesouhlasí; autor jeho argumentaci kritizuje jako bagatelizaci kauzy.\n\nZdroj otevřen a přečten 2026-07-30. **Komentář/názorový text** — dokládá, že autor hodnocení publikoval, ne že hodnocení platí."
+    }
+  ],
+  "order": 3
+}

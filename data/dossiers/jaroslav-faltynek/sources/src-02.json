@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek"
+  },
+  "title": "SRC-02 — Hospodářské noviny",
+  "outlet": "Hospodářské noviny",
+  "sourceType": "celostátní zpravodajství",
+  "url": "https://domaci.hn.cz/c1-66128330-statni-zastupce-rozhodl-o-stiznostech-proti-obvineni-v-kauze-capi-hnizdo-babis-rozhodnuti-jeste-neobdrzel",
+  "published": "2018-05-04",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-04"
+    }
+  ],
+  "subjects": [
+    "faltynek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Hospodářské noviny dne 4. 5. 2018 informovaly, že státní zástupce\n**Jaroslav Šaroch** z Městského státního zastupitelství v Praze\nrozhodl o stížnostech proti obvinění v kauze Čapí hnízdo a **zrušil\ntrestní stíhání** čtyř obviněných: Jaroslava Faltýnka a tří tehdejších\nčlenů představenstev zúčastněných společností.\n\nPodle článku státní zástupce jejich **stížnostem vyhověl**. Stížnost\nAndreje Babiše naopak zamítl jako **nedůvodnou** a jeho stíhání\npokračovalo.\n\n**Poznámka k procesní přesnosti a hranicím**: rozhodnutí učinil **státní\nzástupce, ne soud**. Nejde tedy o rozsudek a **není to rozhodnutí o vině\nani o nevině** — je to procesní ukončení stíhání. Dossier tyto tři věci\nnikdy neslévá.\n\nTři další osoby, jejichž stíhání bylo zrušeno, byly členy představenstev\nobchodních společností a nejsou subjekty tohoto dossieru — v textech\ndossieru se **nejmenují**, i když je citovaný zdroj jmenuje."
+    }
+  ],
+  "order": 2
+}

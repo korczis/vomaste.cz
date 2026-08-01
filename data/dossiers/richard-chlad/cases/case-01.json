@@ -1,0 +1,53 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/case.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/richard-chlad/cases/CASE-01",
+  "@type": "vomaste:Case",
+  "recordType": "case",
+  "identifier": "CASE-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/richard-chlad"
+  },
+  "title": "Financování strany Motoristé sobě",
+  "summary": "V rejstříku evidováno 638 864 Kč za rok 2025 včetně nepeněžního plnění; Chlad sám veřejně uváděl „necelé dva miliony“ i zhruba 1,5 milionu, předseda strany 2× 50 000 Kč před eurovolbami 2024. Darovat straně je legální a čísla nejsou přímo porovnatelná — týkají se různých období a různého vymezení podpory.",
+  "period": "2024–2025",
+  "status": "status-single",
+  "statusLabel": "Legální dary, nesourodá čísla",
+  "anchor": "kauza-financovani",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-04"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/sources/SRC-03"
+    }
+  ],
+  "subjects": [
+    "chlad"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a metodické hranice v [hlavním přehledu](@/dossiers/richard-chlad/_index.md#kauza-financovani)."
+    }
+  ],
+  "order": 1
+}

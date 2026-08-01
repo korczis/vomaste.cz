@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "title": "SRC-01 — Vláda ČR (oficiální profil)",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vlada.gov.cz/cz/clenove-vlady/alena-schillerova-167019/",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-02"
+    }
+  ],
+  "subjects": [
+    "schillerova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil na webu Úřadu vlády. Uvádí funkci **místopředsedkyně\nvlády a ministryně financí** a doložený přehled kariéry: narozena 18. 3.\n1964; Ph.D. ze správního práva (1997–2000, Masarykova univerzita v Brně)\na JUDr. (1982–1988, tamtéž); ministryní financí jmenována 17. 12. 2017;\nmístopředsedkyní vlády 30. 4. 2019; náměstkyně ministra financí pro daně\na celní správu (2016–2017); ředitelka odboru právního a daňového procesu\nna Generálním finančním ředitelství (2014–2015); od roku 1991 řada pozic\nna krajských finančních úřadech.\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** —\ndokládá existenci a formulaci úředního údaje, ne nezávislé redakční\nposouzení. Stránka nese i historický údaj o demisi (11. 12. – 17. 12.\n2021), tedy zachycuje i dřívější funkční období; potvrzení **současné**\nfunkce v této vládě vychází z ověření oficiálního seznamu členů vlády k\n2026-07-30 (viz `data/government.toml`). Sebeprezentační části profilu\nnejsou nezávisle ověřeným faktem a dossier je jako fakt nepřebírá."
+    }
+  ],
+  "order": 1
+}

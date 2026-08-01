@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/gaps/GAP-10",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-10",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "title": "GAP-10 — Není ověřeno, jak Havlíček hlasoval nebo vystupoval při formování obecného přístupu Rady E",
+  "description": "Oficiální přehled vlády k 26. týdnu 2026 uvádí u Rady pro životní prostředí pouze zprávu o pokroku a nespecifikuje vedení české delegace ani",
+  "priority": "střední",
+  "checked": "2026-07-30",
+  "claims": [],
+  "subjects": [
+    "havlicek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Není ověřeno, jak Havlíček hlasoval nebo vystupoval při formování obecného přístupu Rady EU k revizi emisních norem CO2 pro osobní automobily.\n\n**Proč je to mezera**: Oficiální přehled vlády k 26. týdnu 2026 uvádí u Rady pro životní prostředí pouze zprávu o pokroku a nespecifikuje vedení české delegace ani konkrétní český požadavek. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+    }
+  ],
+  "order": 10
+}

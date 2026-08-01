@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-47",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-47",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "text": "Odborný web RAILTARGET zasadil Bednárikův odchod do kontextu nedokončeného majetkového vypořádání mezi Českými drahami a Správou železnic od rozdělení v letech 2002 až 2003, s uváděným převodem 12 miliard v roce 2008, 3,3 miliardy za zhruba 1500 nádražních budov v roce 2016 a zhruba 3 miliardami korun ročně v nájemném za sporné nemovitosti.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-12"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "order": 47,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/ivan-bednarik/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

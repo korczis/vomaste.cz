@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/gaps/GAP-09",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-09",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "title": "GAP-09 — Nebylo možné ověřit reportáž iDNES.cz o škole, která zkrácení školního roku pro své žáky z",
+  "description": "Doména www.idnes.cz nebyla v tomto prostředí načitatelná (fetch blokován); obsah nebylo možné otevřít, proto nebyl použit.",
+  "priority": "střední",
+  "checked": "2026-07-30",
+  "claims": [],
+  "subjects": [
+    "plaga"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Nebylo možné ověřit reportáž iDNES.cz o škole, která zkrácení školního roku pro své žáky zrušila a poslala ministrovi jeho vlastní argumenty (16. 4. 2026).\n\n**Proč je to mezera**: Doména www.idnes.cz nebyla v tomto prostředí načitatelná (fetch blokován); obsah nebylo možné otevřít, proto nebyl použit. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+    }
+  ],
+  "order": 9
+}

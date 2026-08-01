@@ -1,0 +1,61 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/updates/2026-07-30",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-07-30",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek"
+  },
+  "date": "2026-07-30",
+  "summary": "Založen dossier dle AUTH-2026-07-30-V. 3 zdroje otevřeny a přečteny (primární profil PSP, HN 2018, Echo24 2022), 8 tvrzení, 2 kauzy, 2 mezery. Rámování: hlavní doložený fakt je ZRUŠENÍ stíhání v květnu 2018 rozhodnutím státního zástupce (ne soudu, ne rozhodnutí o vině ani nevině); původní obvinění 2015 a vydání Sněmovnou 2017 nejsou z otevřeného zdroje doložena a jsou vedena jako GAP-02, ne jako tvrzení. Věcná oprava proti běžnému omylu: Faltýnek nikdy nebyl členem vlády — „pravá ruka Babiše“ je stranická role. Svědecká výpověď 2022 vedena ve stavu CITACE.",
+  "addedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-08"
+    }
+  ],
+  "updatedClaims": [],
+  "addedGaps": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/gaps/GAP-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/gaps/GAP-02"
+    }
+  ],
+  "closedGaps": [],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-03"
+    }
+  ]
+}

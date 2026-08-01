@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-33",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-33",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "title": "SRC-33 — Extra.cz: Rozhazovačný Turek s ministrem Červeným si zvelebují kanceláře, přestavba vyjde na miliony (30. 5. 2026)",
+  "outlet": "Extra.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://www.extra.cz/zpravy-rozhazovacny-turek-s-ministrem-cervenym-si-zvelebuji-kancelare-prestavba-vyjde-na-miliony-8373c",
+  "published": "2026-05-30",
+  "retrieved": "2026-07-31",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-11"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Extra.cz dne 30. 5. 2026 dokládá záznamem ve veřejné zakázkové databázi:\n„Rekonstrukce kanceláří, stavební úpravy a poskytování stavebních,\nelektromontážních, malířských, tapetářských a podlahářských prací\nvčetně dodávky materiálů\" v hodnotě 3 miliony korun.\n\n**Nezávislost**: samostatná redakce od Blesk.cz (SRC-07), navíc doložená\npřímým záznamem ve veřejné zakázkové databázi, ne jen přebíranou\ncitací. Proto CLM-11 nese stav `CORROBORATED`."
+    }
+  ],
+  "order": 33
+}

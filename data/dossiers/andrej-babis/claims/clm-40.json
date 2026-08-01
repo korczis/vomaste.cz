@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-40",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-40",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "K rozsahu vkladu do fondu Babiš podle téhož zdroje uvedl: „Týká se to jen Agrofertu“, a zdravotnické aktivity vysvětlil slovy: „Zdravotnické věci spadající pod SynBiol v rámci Hartenbergu fungují tak, že když si klient, občan České republiky, vybere reprodukční kliniku z této skupiny, tak ta automaticky dostává odpovídající částku ze zdravotního pojištění“",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-17"
+    }
+  ],
+  "subjects": [],
+  "order": 40,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

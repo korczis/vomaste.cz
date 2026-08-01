@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-04",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-04",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "title": "SRC-04 — Zdravotnický deník",
+  "outlet": "Zdravotnický deník",
+  "sourceType": "zpravodajství",
+  "url": "https://www.zdravotnickydenik.cz/2026/02/kauza-defibrilatoru-fn-olomouc-poprve-upresnila-co-policie-proveruje-zasahuje-i-ministr/",
+  "published": "2026-02-11",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-08"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Kauza defibrilátorů: FN Olomouc poprvé upřesnila, co policie prověřuje. Zasahuje i ministr**\n\nFN Olomouc upřesnila, že policie prověřuje možné nesrovnalosti mezi zdravotnickou dokumentací a výsledky hlášenými v mezinárodní studii PROFID EHRA; prověřování pokrývá implantace 2015 až únor 2025 (několik stovek pacientů). Nemocnice studii opustila v únoru 2025. Ministr Vojtěch v únoru 2026 uložil zřídit infolinku pro pacienty a vyžádal si komplexní zprávu; personální odpovědnost odložil na později.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 4
+}

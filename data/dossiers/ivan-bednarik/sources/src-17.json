@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-17",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-17",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "title": "SRC-17 — Seznam Zprávy",
+  "outlet": "Seznam Zprávy",
+  "sourceType": "zpravodajství",
+  "url": "https://www.seznamzpravy.cz/clanek/ekonomika-byznys-doprava-ministr-by-chtel-strop-pro-dalsi-druh-dopravy-a-neni-bez-sance-308778",
+  "published": "2026-06-18",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-34"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-35"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Česko není Praha. Ministr dopravy odmítl požadavky z metropole**\n\nBednárik odmítá investiční požadavky Prahy a Středočeského kraje s argumentem, že nemůže rozhodovat pouze ve prospěch nejbohatší oblasti a že metropole nemůže spotřebovat 90 % rozpočtu resortu na úkor regionů jako Karlovarsko či Jesenicko. Dále prosazuje na úrovni EU zastropování cen elektřiny při výkyvech trhu jako podporu konkurenceschopnosti nákladní železnice a upozorňuje, že dopravci museli zvýšené náklady promítnout do cen.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 17
+}

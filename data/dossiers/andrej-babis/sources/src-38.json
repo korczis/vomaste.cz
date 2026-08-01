@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-38",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-38",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-38 — ČeskéNoviny.cz (ČTK): Rolnický fond podal žaloby na 28 firem Agrofertu, chce vrátit dotace 22 mil. Kč (20. 7. 2026)",
+  "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceType": "zpravodajství",
+  "url": "https://www.ceskenoviny.cz/zpravy/rolnicky-fond-podal-zaloby-na-28-firem-agrofertu-chce-vratit-dotace-22-mil-kc/2751964",
+  "published": "2026-07-20",
+  "retrieved": "2026-08-01",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-60"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-61"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Agenturní zpráva ČTK: „Podpůrný a garanční rolnický a lesnický fond\n(PGRLF) podal žaloby na 28 dceřiných firem z holdingu Agrofert.“ Fond\nchce vrátit podporu v souhrnné výši 22 milionů korun; důvodem je\n„údajné porušení zákona o střetu zájmů v letech 2017 až 2021, kdy byl\nAndrej Babiš (ANO) jako vlastník Agrofertu poprvé premiérem“. Firmy\npeníze dobrovolně nevrátily, fond proto podal žaloby. Mluvčí Agrofertu:\n„Stále platí, že jsme přesvědčeni, že jsme dotace čerpali v souladu se\nzákonem a máme na ně nárok.“\n\n**Poznámka k procesní přesnosti**: podaná civilní žaloba **není**\nrozhodnutí soudu — o nárocích dosud žádný soud nerozhodl.\n\n**Nezávislost**: agenturní text ČTK — [SRC-39](@/dossiers/andrej-babis/sources/src-39.md)\n(ČT24) nese týž agenturní základ (jedna zdrojová rodina); nezávislým\npotvrzením faktu podání žalob je primární tisková zpráva fondu\n[SRC-40](@/dossiers/andrej-babis/sources/src-40.md). Otevřeno a přečteno\n2026-08-01."
+    }
+  ],
+  "order": 38
+}

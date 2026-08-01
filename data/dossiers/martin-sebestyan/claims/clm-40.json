@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-40",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-40",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
+  },
+  "text": "Ministr Šebestyán v únoru 2026 varoval, že potravinová soběstačnost České republiky se začíná blížit 50 procentům, a avizoval, že vláda chystá zavedení předkupního práva na zemědělskou půdu pro aktivní zemědělce; resort podle něj v roce 2026 hospodaří s rozpočtem 63,4 miliardy korun, z toho 46,2 miliardy pro agrární sektor a 4 miliardy na národní dotace.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-19"
+    }
+  ],
+  "subjects": [
+    "sebestyan"
+  ],
+  "order": 40,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/martin-sebestyan/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

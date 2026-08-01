@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/boris-stastny/gaps/GAP-02",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/boris-stastny"
+  },
+  "title": "GAP-02 — Personální nebo procedurální následek věci",
+  "description": "Ve zkontrolovaných zdrojích nebyl nalezen žádný následek; bezpečnostní riziko nebylo zjištěno.",
+  "priority": "nízká",
+  "checked": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-05"
+    }
+  ],
+  "subjects": [
+    "stastny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Ve zkontrolovaných zdrojích nebyl k datu kontroly nalezen doklad o\njakémkoli následku — personálním, procedurálním ani jiném. Podle\ncitovaného zdroje bezpečnostní odbor riziko nenašel\n([CLM-04](@/dossiers/boris-stastny/claims/clm-04.md)), takže absence\nnásledku je s tímto zjištěním konzistentní.\n\nTato mezera je vedena spíš pro úplnost než jako podezření: kdyby následek\nexistoval a nebyl zaznamenán, dossier by byl neúplný; kdyby neexistoval,\nje to v souladu s tím, co orgán zjistil.\n\n**Podmínka uzavření**: doložený následek (změna postupu, personální krok),\nnebo doložené vyjádření, že žádný nebyl přijat."
+    }
+  ],
+  "order": 2
+}

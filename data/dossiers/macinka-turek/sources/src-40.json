@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-40",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-40",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-40 — Motoristé sobě / UDHPSH",
+  "outlet": "Motoristé sobě (motoristesobe.cz/udhpsh)",
+  "sourceType": "primární zdroj / povinné zveřejnění",
+  "url": "https://motoristesobe.cz/udhpsh",
+  "retrieved": "2026-07-22",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-35"
+    }
+  ],
+  "subjects": [
+    "macinka",
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální stránka hnutí Motoristé sobě s dokumenty povinně zveřejňovanými\npodle zákona o financování politických stran (dohled Úřadu pro dohled nad\nhospodařením politických stran a politických hnutí — UDHPSH). Obsahuje\nsamostatné PDF přehledy peněžitých a nepeněžitých darů od fyzických i\nprávnických osob pro volební kampaň do PS 2025 a transparentní účet\nvedený u Fio banky (č. 2803201251/2010).\n\nJde o **primární zdroj** (přímo povinný subjekt, ne nezávislá redakce) —\ndossier ho cituje jako doklad existence a dostupnosti těchto dat, ne jako\nnezávisle ověřenou analýzu; konkrétní čísla u jednotlivých dárců viz\nSRC-39 (Seznam Zprávy) a SRC-41 (Hlídač státu)."
+    }
+  ],
+  "order": 40
+}

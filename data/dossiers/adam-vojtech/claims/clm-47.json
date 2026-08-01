@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-47",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-47",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "text": "Vojtěch 20. března 2026 po jednání s SPD za účasti premiéra Babiše uvedl, že státem placená kampaň na propagaci očkování v hodnotě 50 až 80 milionů korun nebude, protože ministerstvo takovým rozpočtem nedisponuje, a propagace poběží vlastními kanály resortu. Zároveň potvrdil, že strategie zůstává bez zásadních změn a úhrada nepovinného očkování ze zdravotního pojištění je zachována.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-31"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "order": 47,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/adam-vojtech/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

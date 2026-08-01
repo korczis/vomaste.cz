@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-28",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-28",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "title": "SRC-28 — ACRI — Asociace podniků českého železničního průmyslu",
+  "outlet": "ACRI — Asociace podniků českého železničního průmyslu",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://acri.cz/2025/12/15/prioritou-noveho-ministra-dopravy-je-i-rozvoj-zeleznicni-infrastruktury/",
+  "published": "2025-12-15",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-39"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Prioritou nového ministra dopravy je i rozvoj železniční infrastruktury**\n\nACRI shrnuje priority nastupujícího ministra: dobudování páteřní dálniční sítě a rozvoj železniční infrastruktury. Bednárik zdůrazňuje potřebu vyjasnit strategii, do čeho je smysluplné investovat, na základě analýz a exaktních čísel, a stabilní dlouhodobé financování s využitím evropských fondů a partnerství veřejného a soukromého sektoru. Uvádí též potřebu, aby Správa železnic fungovala jako spolehlivý partner klientů, a podporu nákladní železnice vůči silniční konkurenci na evropské úrovni.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 28
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-16",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-16",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-16 — Deník.cz (VLTAVA LABE MEDIA)",
+  "outlet": "Deník.cz (VLTAVA LABE MEDIA)",
+  "sourceType": "zpravodajství",
+  "url": "https://www.denik.cz/z_domova/filip-turek-motoriste-kauza-nevhodne-prispevky-lide-hospoda-obhajoba.html",
+  "published": "2025-10-13",
+  "retrieved": "2026-07-21",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-09"
+    }
+  ],
+  "subjects": [
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Deník.cz (síť regionálních deníků, vydavatel Vltava Labe Media) zaznamenal\nTurkovu přímou reakci na zveřejněné příspěvky — odmítnutí autorství těch\nnejzávažnějších z nich a jeho vysvětlení (cizí lidé s přístupem k\nodemčenému telefonu). Jde o citovaný výrok subjektu dossieru, ne o\nnezávislé ověření jeho pravdivosti — proto je veden jako **CITACE**\n(CLM-08), ne jako `CORROBORATED`.\n\nDeník.cz je od Deníku N (SRC-14/15) redakčně i vlastnicky nezávislý —\nproto tento zdroj do stejné \"zdrojové rodiny\" nespadá."
+    }
+  ],
+  "order": 16
+}

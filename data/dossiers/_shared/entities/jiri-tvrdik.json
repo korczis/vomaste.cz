@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/jiri-tvrdik",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "jiri-tvrdik",
+  "entityId": "jiri-tvrdik",
+  "title": "Jiří Tvrdík",
+  "entityType": "person",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "referenced",
+  "dossiers": [],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Záznam z veřejného rejstříku (ARES), pořízený programově 2026-07-31:\nzapsán jako **člen představenstva** společnosti AGROFERT, a.s. (IČO 26185610).\n\n**Kontextová entita, ne předmět šetření.** Tahle stránka eviduje jednu\nzveřejněnou rejstříkovou vazbu a nic víc — žádný profil, žádné tvrzení,\nžádné naznačené pochybení. Být zapsán ve statutárním orgánu nebo držet\npodíl je běžný, veřejně evidovaný fakt. Dossier o této osobě by vyžadoval\nsamostatné, datované rozhodnutí zapsané v autorizačním logu.\n\nDatum narození ani adresu bydliště tento web z rejstříku nepřebírá,\npřestože je záznam obsahuje — pro evidenci vazby nejsou potřebné."
+    }
+  ]
+}

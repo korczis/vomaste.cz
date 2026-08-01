@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-53",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-53",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-53 — ČT24",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "veřejnoprávní zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/policie-odlozila-pripad-udajneho-hajlovani-europoslance-turka-355149",
+  "published": "2024-11-08",
+  "retrieved": "2026-07-29",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-45"
+    }
+  ],
+  "subjects": [
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "ČT24 dne 8. listopadu 2024 informovala, že policie odložila případ\núdajného hajlování Filipa Turka (fotografie z roku 2013 se zdviženou\npravicí) z důvodu promlčení trestní odpovědnosti. Rozhodnutí oznámil\nstátní zástupce Obvodního státního zastupitelství pro Prahu 4 Jan\nVychyta.\n\nZdroj dokládá **procesní výsledek** kauzy CASE-01: odložení pro\npromlčení je důsledek uplynutí zákonné lhůty, ne rozhodnutí o vině nebo\nnevině — dossier obě informace uvádí vždy společně (CLM-45). Sbírky\nsvícnů se toto rozhodnutí podle článku netýkalo; tato část kauzy žádný\nzdokumentovaný procesní závěr v citovaných zdrojích nemá.\n\nDo 2026-07-29 dossier u této kauzy žádný procesní výsledek neuváděl a\nkarta kauzy nesla nedoložený štítek „Uzavřeno bez trestu\" — tento zdroj\nbyl doplněn právě proto, aby výsledek byl doložený, přesný a citovaný."
+    }
+  ],
+  "order": 53
+}

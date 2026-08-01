@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-31",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-31",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "text": "Při závěrečném projednávání 8. července 2026 Sněmovna schvalování nedokončila po ostrém vystoupení Karla Havlíčka, který opozici vytkl: „Co jste tady napáchali za poslední roky, to vejde do dějin,“ a její postup k digitalizaci stavebního řízení komentoval slovy „Svazácký boj Pirátů, ale i celé pětikoalice za lepší zítřky dopadl jako vždy, když kolektivisté budují lepší budoucnost.“",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-18"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "order": 31,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/karel-havlicek/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

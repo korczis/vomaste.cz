@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-15",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-15",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "title": "SRC-15 — Hanácká Drbna",
+  "outlet": "Hanácká Drbna",
+  "sourceType": "zpravodajství",
+  "url": "https://hanacka.drbna.cz/zpravy/spolecnost/37968-kausa-defibrilatory-vzp-proveruje-stovky-implantaci-ve-fakultni-nemocnici-v-olomouci.html",
+  "published": "2026-07-10",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-29"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Defibrilátory dostali pacienti, kteří je nepotřebovali. Fakultní nemocnice Olomouc přiznala pochybení**\n\nShrnuje prověřování ze strany VZP, policie a Úřadu evropského veřejného žalobce, přiznání FNOL k nenaplněným indikačním kritériím v roce 2024, přisouzení odpovědnosti bývalému přednostovi Táborskému a odhad škody přes 150 mil. Kč.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 15
+}

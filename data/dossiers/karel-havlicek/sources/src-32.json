@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-32",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-32",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "title": "SRC-32 — CNN Prima News: Policie navrhla obžalovat pekárnu patřící pod Agrofert, měla zneužívat stamilionových dotací (8. 6. 2026)",
+  "outlet": "CNN Prima News",
+  "sourceType": "zpravodajství",
+  "url": "https://cnn.iprima.cz/policie-navrhla-obzalovat-pekarnu-patrici-pod-agrofert-mela-zneuzivat-stamilionovych-dotaci-514192",
+  "published": "2026-06-08",
+  "retrieved": "2026-07-31",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-22"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "CNN Prima News dne 8. 6. 2026: „Národní centrála proti organizovanému\nzločinu (NCOZ) otevřela vyšetřování případu v říjnu 2024. Tehdy\npolicisté obvinili Pekárnu Zelená louka, dceřinou společnost Penamu, a\ndva její vysoké představitele. Stíhání zahájili pro dotační podvod a\npoškození finančních zájmů Evropské unie.\"\n\n**Nezávislost**: samostatná redakce od Pražský deník (SRC-13) — obě\nnezávisle potvrzují totéž obvinění. Proto CLM-22 nese stav\n`CORROBORATED`."
+    }
+  ],
+  "order": 32
+}

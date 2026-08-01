@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-32",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-32",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "title": "SRC-32 — ČeskéNoviny.cz (ČTK): Vláda podpořila zákaz používání mobilních telefonů ve školách (20. 7. 2026)",
+  "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceFamily": "ctk",
+  "sourceType": "agenturní zpravodajství",
+  "url": "https://www.ceskenoviny.cz/zpravy/vlada-podporila-zakaz-pouzivani-mobilnich-telefonu-ve-skolach/2852409",
+  "published": "2026-07-20",
+  "retrieved": "2026-07-31",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-14"
+    }
+  ],
+  "subjects": [
+    "plaga"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "ČeskéNoviny.cz dne 20. 7. 2026: vláda podpořila zákaz mobilních\ntelefonů v mateřských, základních školách a nižších ročnících gymnázií.\nVýjimka platí pro zdravotní důvody nebo speciální vzdělávací potřeby;\ntelefon lze použít se svolením učitele pro vzdělávací účely a na\nškolních výletech a exkurzích. Účinnost se navrhuje od 1. 9. 2027.\n\n**Nezávislost**: samostatná redakce/agentura od Lupa.cz (SRC-08) — obě\nnezávisle potvrzují tentýž rozsah, výjimky a účinnost. Proto CLM-14\nnese stav `CORROBORATED`."
+    }
+  ],
+  "order": 32
+}

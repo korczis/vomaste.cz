@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-16",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-16",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
+  },
+  "title": "SRC-16 — Jezdci.cz",
+  "outlet": "Jezdci.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://www.jezdci.cz/clanky/zasadni-obrat-v-napajedlich-klempir-zrusil-vyjmuti-pastvin-z-ochrany/",
+  "published": "2026-06-16",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-39"
+    }
+  ],
+  "subjects": [
+    "klempir"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Zásadní obrat v Napajedlích. Klempíř zrušil vyjmutí pastvin z ochrany**\n\nKlempíř zrušil rozhodnutí předchůdce Martina Baxy o vyjmutí pastvin hřebčína Napajedla z památkové ochrany a nařídil nové posouzení; rozhodnutí je konečné.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 16
+}

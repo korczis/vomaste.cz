@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-36",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-36",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
+  },
+  "text": "Novela stavebního zákona projednávaná v roce 2026 měla zrušit zhruba 450 památkových ochranných pásem, odejmout památkářům v památkových zónách pravomoc vydávat závazná stanoviska a umožnit stavebníkům konzultovat projekt s jiným znalcem místo Národního památkového ústavu.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-15"
+    }
+  ],
+  "subjects": [
+    "klempir"
+  ],
+  "order": 36,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/oto-klempir/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

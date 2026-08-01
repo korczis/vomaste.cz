@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-15",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-15",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-15 — Deník N",
+  "outlet": "Deník N",
+  "sourceFamily": "denik-n",
+  "sourceType": "investigativní žurnalistika (předplatné)",
+  "url": "https://denikn.cz/1864721/popalit-cikane-je-polehcujici-okolnost-obama-je-negr-odhalujeme-smazany-svet-filipa-turka/",
+  "published": "2025-10-10",
+  "retrieved": "2026-07-21",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-09"
+    }
+  ],
+  "subjects": [
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Klíčový zdroj pro kauzu 2025 — investigativní text Deníku N s printscreeny\npříspěvků z let přibližně 2010–2014, které mají obsahovat rasistické,\nsexistické a homofobní výroky. Tento zdroj je jediným primárním\npublikovatelem screenshotů v citovaném výběru — dossier proto vede jejich\npravost a autorství jako **sporné** (CLM-09), dokud nedojde k nezávislé\nforenzní verifikaci mimo tohoto jednoho vydavatele.\n\n**Poznámka k nezávislosti**: viz SRC-14 — stejný vydavatel, jedna zdrojová\nrodina."
+    }
+  ],
+  "order": 15
+}

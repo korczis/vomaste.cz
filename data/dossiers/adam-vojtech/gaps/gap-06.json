@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/gaps/GAP-06",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-06",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "title": "GAP-06 — Není doloženo, zda ministr Vojtěch veřejně reagoval na červencové závěry odborné komise a ",
+  "description": "Žádný z otevřených článků z 10.–11. 7. 2026 (České noviny, ČT24, Olomoucký deník, Olomoucký Report, Hanácká Drbna, Zdravé zprávy) neobsahuje",
+  "priority": "střední",
+  "checked": "2026-07-30",
+  "claims": [],
+  "subjects": [
+    "vojtech"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Není doloženo, zda ministr Vojtěch veřejně reagoval na červencové závěry odborné komise a zda z nich vyvodil personální důsledky.\n\n**Proč je to mezera**: Žádný z otevřených článků z 10.–11. 7. 2026 (České noviny, ČT24, Olomoucký deník, Olomoucký Report, Hanácká Drbna, Zdravé zprávy) neobsahuje aktuální citaci ministra k závěrům komise; citovány jsou pouze jeho starší výroky z března 2026. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+    }
+  ],
+  "order": 6
+}
