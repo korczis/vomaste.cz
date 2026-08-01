@@ -1,0 +1,100 @@
+{
+  "_readme": "Hand-maintained decision ledger, companion to AUTHORIZATION.md. NOT touched by any build script (contrast with data/generated/authorization-candidates.json, which is overwritten every `npm run build`/`npm run dev`). AGENTS.md is the sole legal/editorial authorization record; data/authorizations.toml is its build-checked structured mirror; this file adds decision-state (authorized / declined / pending + tier) on top of the raw candidate feed in reports/authorization-candidates.md. If this file and AGENTS.md ever disagree, AGENTS.md wins. Nothing in this file grants an authorization by itself.",
+  "source_of_truth": "AGENTS.md",
+  "structured_mirror": "data/authorizations.toml",
+  "raw_candidate_feed": "reports/authorization-candidates.md",
+  "raw_candidate_feed_generator": "npm run generate:candidates",
+  "last_triaged_against": "2026-08-01",
+  "last_triaged_against_stats": {
+    "context_entities_in_feed": 56,
+    "dossiers": 22
+  },
+  "authorized": [
+    { "subject": "Petr Macinka", "entity_id": "macinka", "dossier_slug": "petr-macinka", "first_authorized": "2026-07-21", "auth_ids": ["AUTH-2026-07-21-A", "AUTH-2026-07-21-B", "AUTH-2026-07-30-A"] },
+    { "subject": "Filip Turek", "entity_id": "turek", "dossier_slug": "filip-turek", "first_authorized": "2026-07-21", "auth_ids": ["AUTH-2026-07-21-A", "AUTH-2026-07-21-B", "AUTH-2026-07-22-A", "AUTH-2026-07-30-A"] },
+    { "subject": "Oto Klempíř", "entity_id": "klempir", "dossier_slug": "oto-klempir", "first_authorized": "2026-07-30", "auth_ids": ["AUTH-2026-07-30-KLEMPIR"] },
+    { "subject": "Alena Schillerová", "entity_id": "schillerova", "dossier_slug": "alena-schillerova", "first_authorized": "2026-07-30", "auth_ids": ["AUTH-2026-07-30-B"] },
+    { "subject": "Aleš Juchelka", "entity_id": "juchelka", "dossier_slug": "ales-juchelka", "first_authorized": "2026-07-30", "auth_ids": ["AUTH-2026-07-30-B"] },
+    { "subject": "Lubomír Metnar", "entity_id": "metnar", "dossier_slug": "lubomir-metnar", "first_authorized": "2026-07-30", "auth_ids": ["AUTH-2026-07-30-B"] },
+    { "subject": "Ivan Bednárik", "entity_id": "bednarik", "dossier_slug": "ivan-bednarik", "first_authorized": "2026-07-30", "auth_ids": ["AUTH-2026-07-30-B"] },
+    { "subject": "Boris Šťastný", "entity_id": "stastny", "dossier_slug": "boris-stastny", "first_authorized": "2026-07-30", "auth_ids": ["AUTH-2026-07-30-B"] },
+    { "subject": "Andrej Babiš", "entity_id": "babis", "dossier_slug": "andrej-babis", "first_authorized": "2026-07-30", "auth_ids": ["AUTH-2026-07-30-C", "AUTH-2026-07-30-E"] },
+    { "subject": "Tomio Okamura", "entity_id": "okamura", "dossier_slug": "tomio-okamura", "first_authorized": "2026-07-30", "auth_ids": ["AUTH-2026-07-30-D"] },
+    { "subject": "Karel Havlíček", "entity_id": "havlicek", "dossier_slug": "karel-havlicek", "first_authorized": "2026-07-30", "auth_ids": ["AUTH-2026-07-30-M"] },
+    { "subject": "Jaromír Zůna", "entity_id": "zuna", "dossier_slug": "jaromir-zuna", "first_authorized": "2026-07-30", "auth_ids": ["AUTH-2026-07-30-N"] },
+    { "subject": "Jeroným Tejc", "entity_id": "tejc", "dossier_slug": "jeronym-tejc", "first_authorized": "2026-07-30", "auth_ids": ["AUTH-2026-07-30-O"] },
+    { "subject": "Zuzana Mrázová", "entity_id": "mrazova", "dossier_slug": "zuzana-mrazova", "first_authorized": "2026-07-30", "auth_ids": ["AUTH-2026-07-30-P"] },
+    { "subject": "Adam Vojtěch", "entity_id": "vojtech", "dossier_slug": "adam-vojtech", "first_authorized": "2026-07-30", "auth_ids": ["AUTH-2026-07-30-Q"] },
+    { "subject": "Igor Červený", "entity_id": "cerveny", "dossier_slug": "igor-cerveny", "first_authorized": "2026-07-30", "auth_ids": ["AUTH-2026-07-30-R"] },
+    { "subject": "Robert Plaga", "entity_id": "plaga", "dossier_slug": "robert-plaga", "first_authorized": "2026-07-30", "auth_ids": ["AUTH-2026-07-30-S"] },
+    { "subject": "Martin Šebestyán", "entity_id": "sebestyan", "dossier_slug": "martin-sebestyan", "first_authorized": "2026-07-30", "auth_ids": ["AUTH-2026-07-30-T"] },
+    { "subject": "Tünde Bartha", "entity_id": "bartha", "dossier_slug": "tunde-bartha", "first_authorized": "2026-07-30", "auth_ids": ["AUTH-2026-07-30-U"] },
+    { "subject": "Jaroslav Faltýnek", "entity_id": "faltynek", "dossier_slug": "jaroslav-faltynek", "first_authorized": "2026-07-30", "auth_ids": ["AUTH-2026-07-30-V"] },
+    { "subject": "Richard Chlad", "entity_id": "chlad", "dossier_slug": "richard-chlad", "first_authorized": "2026-07-30", "auth_ids": ["AUTH-2026-07-30-W"] }
+  ],
+  "aggregate_views": [
+    { "slug": "macinka-turek", "dossier_type": "aggregate", "note": "Not a subject, not a third dossier — structural rollup over macinka+turek. See AGENTS.md 'Structural change, 2026-07-29'.", "authorized": "2026-07-29" }
+  ],
+  "government_roster_coverage": {
+    "total_members": 16,
+    "authorized_as_dossier_subjects": 16,
+    "note": "Every current cabinet member (data/government.toml) already has an authorized dossier. No 'authorize the rest of the government' backlog item remains."
+  },
+  "declined": [
+    {
+      "subject": "Radovan Krejčíř",
+      "entity_id": "krejcir",
+      "date": "2026-07-30",
+      "reason": "No public office, no institutional angle — a true-crime profile of a private convicted individual fails the constitution's public-interest test (§7). May appear only as a context entity where already-cited reporting documents a relation to an authorized subject.",
+      "agents_md_section": "Not authorized: Radovan Krejčíř (on the record)"
+    }
+  ],
+  "pending": {
+    "tier_a_public_figure_new_research_needed": [
+      {
+        "candidate": "Petr Pavel",
+        "role": "prezident republiky",
+        "entity_id": "pavel",
+        "status": "pending",
+        "note": "Currently context-only, appearing in macinka-turek/filip-turek for one thread already inside authorized scope (refusal to appoint Turek environment minister; threatened, unfiled lawsuit — CLM-38, SRC-44). Head of state, public-interest test satisfied for in-office conduct, but a dossier about him would be new, separate research, not a repackaging of what's already sourced."
+      }
+    ],
+    "tier_b_private_individual_tied_to_authorized_topic": [
+      {
+        "candidate": "Petr Vencálek",
+        "role": "jediný společník a jednatel, GMR GAS s.r.o.",
+        "entity_id": "vencalek",
+        "status": "pending",
+        "note": "Owner of the company at the center of Macinka's already-authorized undisclosed-20%-stake claim (CLM-48). Not a public official — his own dossier needs an independent public-interest justification beyond the already-covered transaction."
+      }
+    ],
+    "tier_c_bare_registry_stub_not_recommended": [
+      { "candidate": "JUDr. Alexej Bílek", "entity_id": "alexej-bilek", "status": "not_recommended", "note": "AGROFERT statutory-board member, zero claims/sources/relations. Discovered via ares-expansion-26185610-2026-07-31." },
+      { "candidate": "Ing. Jaroslav Kurčík", "entity_id": "jaroslav-kurcik", "status": "not_recommended", "note": "AGROFERT statutory-board member, zero claims/sources/relations." },
+      { "candidate": "Jiří Tvrdík", "entity_id": "jiri-tvrdik", "status": "not_recommended", "note": "AGROFERT statutory-board member, zero claims/sources/relations." },
+      { "candidate": "Ing. Josef Mráz", "entity_id": "josef-mraz", "status": "not_recommended", "note": "AGROFERT statutory-board member, zero claims/sources/relations." },
+      { "candidate": "Mgr. Libor Němeček", "entity_id": "libor-nemecek", "status": "not_recommended", "note": "AGROFERT statutory-board member, zero claims/sources/relations." },
+      { "candidate": "Ing. Martin Kubů", "entity_id": "martin-kubu", "status": "not_recommended", "note": "AGROFERT statutory-board member, zero claims/sources/relations." },
+      { "candidate": "Ing. Michal Jedlička", "entity_id": "michal-jedlicka", "status": "not_recommended", "note": "AGROFERT statutory-board member, zero claims/sources/relations." },
+      { "candidate": "Mgr. Pavel Hanus", "entity_id": "pavel-hanus", "status": "not_recommended", "note": "AGROFERT statutory-board member, zero claims/sources/relations." },
+      { "candidate": "Ing. Petr Cingr", "entity_id": "petr-cingr", "status": "not_recommended", "note": "AGROFERT statutory-board member, zero claims/sources/relations." },
+      { "candidate": "Ing. Petra Procházková", "entity_id": "petra-prochazkova", "status": "not_recommended", "note": "AGROFERT statutory-board member, zero claims/sources/relations." },
+      { "candidate": "Ing. Zbyněk Průša", "entity_id": "zbynek-prusa", "status": "not_recommended", "note": "AGROFERT statutory-board member, zero claims/sources/relations." }
+    ]
+  },
+  "not_eligible_context_only": {
+    "note": "Only persons can become dossier subjects under this site's data model. These remain context entities regardless of how much reporting cites them, unless the site ever adds an institutional/company dossier type (not proposed here).",
+    "companies": ["agrofert", "blakey-finance", "boyne-holding", "ceske-drahy", "gmrgas", "gmrgas-cz", "hartenberg", "imoba", "kostelecke-uzeniny", "penam-zelena-louka", "rsvp-trust", "scp-bigaud", "synbiol", "zapper-club"],
+    "public_institutions": ["ep", "eppo", "evropska-komise", "fn-olomouc", "mzdrav", "ncoz", "nrr", "nss", "nemocnice-homolce", "nku", "pnf", "policie", "praha3", "statni-zastupitelstvi", "szif", "szpi", "ustavni-soud", "vlada", "sprava-zeleznic"],
+    "political_organizations": ["motoriste", "klubmotoristu", "spd"],
+    "controversies_events_processes_roles": ["capi-hnizdo", "kauza2024", "kauza2025", "mzp2026", "nehoda2026", "trestniozn", "greendeal"]
+  },
+  "process": [
+    "Owner states scope explicitly, on the record, in conversation — who, which topics, sourced to what was actually opened and read.",
+    "scripts/dossier/authorize-entity.mjs writes the new entry (interactive, human-typed scope text — the only thing allowed to do this).",
+    "A new dated subsection is appended to AGENTS.md's append-only log.",
+    "A matching [[authorizations]] entry is added to data/authorizations.toml.",
+    "This file and AUTHORIZATION.md are updated by hand to move the row from pending to authorized/declined.",
+    "npm run scaffold:dossier only after the AGENTS.md entry exists."
+  ]
+}
