@@ -96,9 +96,10 @@ function validateDossier(slug) {
     if (statusClass === "status-corroborated" && distinctSrcs.size < 2) {
       err(`[${slug}] ${id}: status-corroborated with ${distinctSrcs.size} cited source(s) — the badge's own definition requires 2+ independent sources; use status-single or add a second source`);
     }
-    if (statusClass === "status-single" && distinctSrcs.size > 1) {
-      err(`[${slug}] ${id}: status-single but cites ${distinctSrcs.size} sources — either sources are not independent (document why) or the status should be status-corroborated`);
-    }
+    // POZN.: „status-single s 2+ zdroji" se NEkontroluje tady, ale níž nad
+    // rodinami: dva zdroje téže rodiny (převzatá agenturní zpráva) jsou
+    // jedno doložení, takže status-single je pro ně SPRÁVNÝ. Kontrola
+    // slepá k rodinám by správnou opravu zablokovala.
   }
   if (clmIds.size === 0) err(`[${slug}] No CLM-## rows found in ${p("_index.md")} — table format may have changed.`);
 
@@ -204,6 +205,44 @@ function validateDossier(slug) {
     if (row.srcRefs.length >= 2 && urls.size < 2) {
       err(
         `[${slug}] ${clmId}: status-corroborated cites ${row.srcRefs.length} source(s) (${row.srcRefs.join(", ")}) that resolve to ${urls.size} distinct URL(s) — the same article cited twice is one source, not independent confirmation`,
+      );
+    }
+  }
+
+  /* Nezávislost se počítá přes RODINY, ne přes ID ani URL.
+   *
+   * Odznak CORROBORATED je na stránce definován jako „potvrzeno nezávisle
+   * více médii". Dva zdroje se dvěma různými ID i URL ale mohou být totéž
+   * převzetí jedné agenturní zprávy — a pak je nezávislé doložení jedno,
+   * ne dvě. Přesně to se stalo u dvou tvrzení (ČTK převzaté třemi weby):
+   * kontrola podle ID i podle URL prošla, přestože odznak tvrdil něco,
+   * co data nedokládají.
+   *
+   * Je to zároveň závazek, který web sám vypisuje ve FAQ: „Více článků
+   * stejného vydavatele automaticky nepovažujeme za více nezávislých
+   * potvrzení." Bez téhle kontroly to byl slib bez vynucení.
+   */
+  for (const [clmId, row] of clmTableRows) {
+    const rodiny = new Set(
+      row.srcRefs.map((s) => {
+        const info = srcById.get(s);
+        // Zdroj bez rodiny je vlastní rodina; neznámé ID se hlásí jinde.
+        return info && info.family ? `family:${info.family}` : `self:${s}`;
+      }),
+    );
+
+    if (row.statusClass === "status-corroborated" && rodiny.size < 2) {
+      err(
+        `[${slug}] ${clmId}: status-corroborated cites ${row.srcRefs.length} source(s) (${row.srcRefs.join(", ")}) ` +
+          `that collapse to ${rodiny.size} independent source family — the badge means "potvrzeno nezávisle více médii", ` +
+          `so use status-single, or cite a source from a different family`,
+      );
+    }
+
+    if (row.statusClass === "status-single" && rodiny.size > 1) {
+      err(
+        `[${slug}] ${clmId}: status-single but cites ${rodiny.size} independent source families (${row.srcRefs.join(", ")}) ` +
+          `— that understates the evidence; use status-corroborated`,
       );
     }
   }
