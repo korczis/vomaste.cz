@@ -5,7 +5,7 @@ system. This is provenance, not a publication decision — see
 `data/authorizations.toml` and `scripts/dossier/authorize-entity.mjs`
 for the only thing that actually authorizes a dossier.
 
-199 record(s) logged across 4 day(s). 6 new since last run.
+199 record(s) logged across 4 day(s). 0 new since last run.
 
 ## 2026-07-29
 

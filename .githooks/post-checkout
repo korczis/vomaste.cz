@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Po `git pull` upozorni, že vygenerované vstupy chybí nebo zestárly.
+#
+# data/generated/* a data/dossiers/*/stats.toml jsou v .gitignore — pull je
+# nikdy nepřinese. Bez tohohle upozornění se to projeví až tím, že
+# `zola serve` spadne na load_data hláškou z hloubi base.html, ze které
+# není poznat, že chybí krok pipeline.
+#
+# Hook jen VAROVÁ, nespouští generátory sám: pull nemá bez vyzvání
+# přepisovat pracovní strom ani zabírat minuty CPU.
+set -u
+node scripts/build/require-generated.mjs --quiet 2>/dev/null && exit 0
+echo ""
+echo "⚠  Po pullu chybí vygenerované vstupy (nejsou v gitu)."
+echo "   Spusť:  npm run dev     (generátory + živý server)"
+echo "   Detail: node scripts/build/require-generated.mjs"
+echo ""
+exit 0

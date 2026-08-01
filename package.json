@@ -6,7 +6,7 @@
   "scripts": {
     "postinstall": "node scripts/setup/install-git-hooks.mjs",
     "hooks:install": "node scripts/setup/install-git-hooks.mjs",
-    "test": "node --test scripts/dossier/*.test.mjs scripts/data/*.test.mjs scripts/lint/*.test.mjs scripts/ui/*.test.mjs scripts/ci/*.test.mjs scripts/osint/*.test.mjs",
+    "test": "node --test scripts/build/*.test.mjs scripts/dossier/*.test.mjs scripts/data/*.test.mjs scripts/lint/*.test.mjs scripts/ui/*.test.mjs scripts/ci/*.test.mjs scripts/osint/*.test.mjs",
     "css:build": "tailwindcss -i ./static/css/input.css -o ./static/css/main.css --minify",
     "css:watch": "tailwindcss -i ./static/css/input.css -o ./static/css/main.css --watch",
     "js:build": "esbuild assets/js/app.js assets/js/graph-app.js --bundle --minify --target=es2020 --outdir=static/js",
@@ -51,7 +51,10 @@
     "test:e2e:desktop": "playwright test --project=desktop",
     "test:e2e:benchmark": "RUN_GRAPH_BENCHMARK=1 playwright test tests/e2e/graph-benchmark.spec.mjs --project=desktop",
     "benchmark:graph": "node scripts/dossier/benchmark-graph.mjs",
-    "validate:directory-index": "node scripts/dossier/validate-directory-index.mjs"
+    "validate:directory-index": "node scripts/dossier/validate-directory-index.mjs",
+    "preflight": "node scripts/build/require-generated.mjs",
+    "serve": "node scripts/build/require-generated.mjs --quiet || npm run generate:all ; zola serve",
+    "generate:all": "npm run build:entity-type-sections && npm run build:routes && npm run build:navigation && npm run generate:stats && npm run build:data-exports && npm run build:graph-projections && npm run build:jsonld-exports && npm run data:metrics && npm run build:search-index && npm run generate:candidates && npm run generate:discovery-log && npm run css:build && npm run js:build"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.12.1",
