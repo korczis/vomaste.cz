@@ -98,7 +98,12 @@
     <noscript><p class="text-xs text-white/50">Graf vyžaduje JavaScript. Stav ověřenosti každého tvrzení je vidět přímo u něj v registru tvrzení níže.</p></noscript>
   </section>
 
-  {% set graph = load_data(path="data/dossiers/" ~ dossier_slug ~ "/graph.toml") %}
+  {#- Normalized, already-laid-out projection of this dossier's own
+      graph.toml (scripts/dossier/build-graph-projections.mjs), not the raw
+      TOML — same transport contract the global map uses
+      (schemas/graph-payload.schema.json), so both share one runtime
+      (assets/js/modules/graph-view.js). -#}
+  {% set graph = load_data(path="static/data/graph/dossier/" ~ dossier_slug ~ ".json") %}
   {% set entity_section = get_section(path="entities/_index.md") %}
   {% set relation_section = get_section(path="dossiers/" ~ dossier_slug ~ "/relations/_index.md") %}
   {% set gap_section = get_section(path="dossiers/" ~ dossier_slug ~ "/gaps/_index.md") %}
@@ -115,7 +120,6 @@
       <div id="dossier-graph-view"
            data-graph-view
            data-data-island="dossier-graph-data"
-           data-search-index-url="{{ get_url(path='search-index.json', cachebust=true) | safe }}"
            class="h-[420px] w-full bg-black/40"></div>
     </div>
     <noscript><p class="mb-8 text-xs text-white/50">Interaktivní graf vyžaduje JavaScript. Použijte textový registr níže nebo <a href="{{ get_url(path='@/dossiers/' ~ dossier_slug ~ '/relations/_index.md') | safe }}" class="text-[#f3e5c0] underline">registr vztahů</a>.</p></noscript>
@@ -220,8 +224,8 @@
 </main>
 
 {#- Graph data as an inert JSON island, not an inline JS literal — read by
-    assets/js/modules/relationship-graph.js. Moved verbatim from what used
-    to be a hardcoded JS array here; see data/relationship-graph.toml for
-    the source of truth and its own provenance note. -#}
+    assets/js/modules/graph-view.js. This dossier's own payload is small
+    (a few nodes), so it's still inlined whole; only the global map's much
+    larger full-registry layer is lazy-fetched instead (templates/map.html). -#}
 <script type="application/json" id="dossier-graph-data">{{ graph | json_encode | safe }}</script>
 {% endblock content %}

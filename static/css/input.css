@@ -263,53 +263,12 @@
   .fs-btn:hover { background: rgba(255,255,255,0.12); color: #fff; }
   .fs-box { transition: none; }
   .fs-box.fs-active,
-  #cy-box.fs-active,
   #chart-status-box.fs-active {
     background: #000; display: flex; align-items: center; justify-content: center;
     width: 100vw; height: 100vh; padding: 2rem;
   }
-  #cy-box.fs-active .cy-canvas { width: 100% !important; height: 100% !important; }
   #chart-status-box.fs-active > div { width: min(90vw, 90vh); max-width: none; }
   .fs-box:fullscreen { background: #000; }
-
-  .cy-wrap { position: relative; }
-  .cy-canvas {
-    height: 480px; background: rgba(255,255,255,0.02);
-    border: 1px solid rgba(255,255,255,0.1); border-radius: 0.5rem;
-  }
-  .cy-controls {
-    position: absolute; top: 0.6rem; right: 0.6rem; z-index: 5;
-    display: flex; flex-direction: column; gap: 0.25rem;
-  }
-  .cy-controls button {
-    width: 1.75rem; height: 1.75rem; border-radius: 0.375rem;
-    background: rgba(0,0,0,0.55); border: 1px solid rgba(255,255,255,0.2);
-    color: rgba(255,255,255,0.8); font-size: 0.9rem; line-height: 1; cursor: pointer;
-    backdrop-filter: blur(2px);
-  }
-  .cy-controls button:hover { background: rgba(255,255,255,0.15); color: #fff; }
-  .cy-legend {
-    position: absolute; bottom: 0.6rem; left: 0.6rem; z-index: 5;
-    display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 0.75rem;
-    max-width: calc(100% - 1.2rem); padding: 0.4rem 0.6rem;
-    background: rgba(0,0,0,0.55); border: 1px solid rgba(255,255,255,0.12);
-    border-radius: 0.375rem; font-size: 0.625rem; color: rgba(255,255,255,0.7);
-    backdrop-filter: blur(2px);
-  }
-  .cy-legend span { display: inline-flex; align-items: center; gap: 0.3rem; white-space: nowrap; }
-  .cy-legend-sep { width: 1px; height: 0.75rem; background: rgba(255,255,255,0.15); }
-  .cy-ico { display: inline-block; width: 8px; height: 8px; flex-shrink: 0; }
-  .cy-ico-person { background: #f3e5c0; border-radius: 50%; }
-  .cy-ico-entity { background: #93c5fd; border-radius: 2px; }
-  .cy-ico-role { background: #d8b4fe; transform: rotate(45deg); }
-  .cy-ico-case { background: #facc15; border-radius: 2px; }
-  .cy-line { display: inline-block; width: 14px; height: 2px; flex-shrink: 0; }
-  .cy-tooltip {
-    position: absolute; z-index: 10; transform: translate(-50%, -100%);
-    background: #000; border: 1px solid rgba(255,255,255,0.2); border-radius: 0.375rem;
-    padding: 0.3rem 0.55rem; font-size: 0.6875rem; color: #fff; white-space: nowrap;
-    pointer-events: none; box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-  }
 
   /* registry filter/search UI — shared by any registry index that adds a
      client-side filter toolbar (templates/dossier-sources-index.html,
@@ -347,17 +306,17 @@
      zůstává stejně velký, roste jen klikací plocha. */
   .id-chip { display: inline-flex; align-items: center; min-height: 1.5rem; }
 
-  /* Relationship-graph kind/status filter chips (assets/js/modules/relationship-graph.js).
+  /* Graph layer-switch chips (templates/map.html, assets/js/modules/graph-view.js).
      aria-pressed carries the on/off state for assistive tech; the visual
      state is driven off the same attribute so they can't drift apart. */
-  .cy-chip {
+  .graph-chip {
     border-radius: 9999px; border: 1px solid var(--border-strong);
     background: var(--surface-elevated); color: var(--text-muted);
     padding: 0.2rem 0.65rem; font-size: 0.7rem; cursor: pointer;
     min-height: 2rem; display: inline-flex; align-items: center;
   }
-  .cy-chip[aria-pressed="true"] { background: rgba(243,229,192,0.12); border-color: rgba(243,229,192,0.4); color: var(--accent); }
-  .cy-chip:hover { border-color: var(--border-strong); color: var(--text); }
+  .graph-chip[aria-pressed="true"] { background: rgba(243,229,192,0.12); border-color: rgba(243,229,192,0.4); color: var(--accent); }
+  .graph-chip:hover { border-color: var(--border-strong); color: var(--text); }
 
   .edge-status-dot { display: inline-block; width: 0.55rem; height: 0.55rem; border-radius: 9999px; margin-right: 0.4rem; }
   .edge-status-dot.edge-corroborated { background: #4ade80; }

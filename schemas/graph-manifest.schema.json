@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vomaste.cz/schemas/graph-manifest.schema.json",
+  "title": "Graph workbench manifest (static/data/graph/manifest.json)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "generated_at", "generator_version", "source_hash", "layers", "dossiers"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "generated_at": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?Z$" },
+    "generator_version": { "type": "string", "minLength": 1 },
+    "source_hash": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "layout": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["algorithm", "version", "parameters", "input_hash"],
+      "properties": {
+        "algorithm": { "type": "string", "minLength": 1 },
+        "version": { "type": "string", "minLength": 1 },
+        "parameters": { "type": "object" },
+        "input_hash": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+      }
+    },
+    "layers": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["curated", "registry"],
+      "properties": {
+        "curated": { "$ref": "#/$defs/layerEntry" },
+        "registry": { "$ref": "#/$defs/layerEntry" }
+      }
+    },
+    "facets": { "type": "object" },
+    "dossiers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["slug", "title", "dossier_type", "url", "node_count", "edge_count", "byte_size", "sha256"],
+        "properties": {
+          "slug": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+          "title": { "type": "string", "minLength": 1 },
+          "dossier_type": { "type": "string", "minLength": 1 },
+          "url": { "type": ["string", "null"], "minLength": 1 },
+          "node_count": { "type": "integer", "minimum": 0 },
+          "edge_count": { "type": "integer", "minimum": 0 },
+          "byte_size": { "type": "integer", "minimum": 0 },
+          "sha256": { "type": ["string", "null"], "pattern": "^[a-f0-9]{64}$" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "layerEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["url", "node_count", "edge_count", "byte_size", "sha256"],
+      "properties": {
+        "url": { "type": "string", "minLength": 1 },
+        "node_count": { "type": "integer", "minimum": 0 },
+        "edge_count": { "type": "integer", "minimum": 0 },
+        "byte_size": { "type": "integer", "minimum": 0 },
+        "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+      }
+    }
+  },
+  "$comment": "Shape only, per schemas/README.md division of labor. Manifest counts/hashes vs. the actual payload files are cross-checked by scripts/dossier/validate-graph-projections.mjs, not by this schema."
+}

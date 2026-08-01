@@ -64,16 +64,13 @@ export function readBaseUrl(root) {
   return m[1].replace(/\/$/, "");
 }
 
-// Minimal graph.toml reader — same line-oriented parsing as
-// build-global-graph.mjs's parseBlocks (kept intentionally simple; the
-// files are machine-validated by validate:graph). Reads wherever the
-// file physically exists, regardless of dossier_type: self-canonical
-// entity dossiers (oto-klempir, alena-schillerova, …) own a graph.toml
-// of their own.
-export function readGraphToml(root, slug) {
-  const file = join(root, "data/dossiers", slug, "graph.toml");
-  if (!existsSync(file)) return { nodes: [], edges: [] };
-  const text = readFileSync(file, "utf8");
+// Minimal graph.toml block parser, shared by every reader below (kept
+// intentionally simple; the files are machine-validated by
+// validate:graph). Was duplicated near-verbatim in build-global-graph.mjs
+// until the graph-workbench rebuild (T-027) consolidated it here as the
+// one parser both the JSON-LD pipeline and the graph transport
+// projections (lib/graph-projection.mjs) use.
+function parseGraphTomlBlocks(text) {
   const blocks = { nodes: [], edges: [], clusters: [], source_families: [], updates: [] };
   const re = /^\[\[(nodes|edges|clusters|source_families|updates)\]\]\s*$/gm;
   const matches = [...text.matchAll(re)];
@@ -100,5 +97,24 @@ export function readGraphToml(root, slug) {
     }
     if (blocks[kind]) blocks[kind].push(obj);
   }
+  return blocks;
+}
+
+// Reads wherever the file physically exists, regardless of dossier_type:
+// self-canonical entity dossiers (oto-klempir, alena-schillerova, …) own
+// a graph.toml of their own.
+export function readGraphToml(root, slug) {
+  const file = join(root, "data/dossiers", slug, "graph.toml");
+  if (!existsSync(file)) return { nodes: [], edges: [] };
+  const blocks = parseGraphTomlBlocks(readFileSync(file, "utf8"));
   return { nodes: blocks.nodes, edges: blocks.edges };
+}
+
+// Same file, full block set (adds clusters/source_families) — for
+// consumers that need the whole graph.toml, not just the schema-checked
+// {nodes, edges} shape validate:schemas pins readGraphToml() to.
+export function readGraphTomlBlocks(root, slug) {
+  const file = join(root, "data/dossiers", slug, "graph.toml");
+  if (!existsSync(file)) return { nodes: [], edges: [], clusters: [], source_families: [], updates: [] };
+  return parseGraphTomlBlocks(readFileSync(file, "utf8"));
 }

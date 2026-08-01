@@ -2,39 +2,41 @@
 // (templates/dossier.html) and the global map (templates/map.html).
 //
 // Renderer: Sigma.js (WebGL) over a Graphology model — see
-// docs/adr/duckdb-wasm-and-sigma.md, which supersedes the Cytoscape choice
-// in docs/adr/graph-renderer.md. Both libraries are bundled by esbuild into
-// static/js/app.js, so this removes a third-party CDN dependency rather than
-// adding one, and keeps the graph *model* (Graphology) separate from its
-// *rendering* (Sigma).
+// docs/adr/duckdb-wasm-and-sigma.md, refined for the layered data
+// contract in docs/adr/graph-workbench-and-data-projection.md (T-027).
 //
-// Data flow is unchanged: nodes/edges come from a JSON island generated at
-// build time from graph.toml, and each node/edge resolves its canonical route
-// from the already-published search-index.json (the same id -> route mapping
-// assets/js/modules/global-search.js uses, not a second lookup table).
-// Every node and edge already has its own routable page and appears in the
-// text-alternative registry list next to this graph — this view is a
-// progressive-enhancement visualization of that same data, never the only
-// way to reach a record.
+// Data flow: nodes/edges come from a build-time-generated, ALREADY
+// LAID-OUT projection (scripts/dossier/build-graph-projections.mjs —
+// schemas/graph-payload.schema.json) — every node already carries its
+// x/y (computed once at build time, mission § 4) and its own canonical
+// `route`, resolved at build time from data/generated/routes.json. There
+// is no client-side layout pass and no second route lookup: this fixes
+// the two biggest measured problems in
+// docs/audits/graph-workbench-baseline.md (synchronous ForceAtlas2 on
+// load, and a second search-index.json fetch before first render).
+//
+// The small curated layer ships inline (a JSON island, like before); the
+// much larger full-registry layer is fetched lazily, once, only when its
+// layer button is actually activated — see `fullLayerUrl` below.
 //
 // Resize: Sigma caches its canvas dimensions, so every container resize
 // (sidebar toggle, fullscreen enter/exit, orientation change) needs an
-// explicit refresh — same constraint the Cytoscape implementation had.
+// explicit refresh — same constraint the previous implementation had.
 import Graph from "graphology";
 import Sigma from "sigma";
-import forceAtlas2 from "graphology-layout-forceatlas2";
 import { resizeHandlers } from "./fullscreen.js";
 
 const STATUS_COLOR = { corroborated: "#4ade80", single: "#fdba74", disputed: "#facc15", quote: "#93c5fd", contextual: "rgba(255,255,255,0.35)" };
-// Plná registrová vrstva má vlastní typy uzlů (záznamy, ne entity) — barvy
-// kopírují to, co už používají štítky stavů a registry na stránkách.
-const RECORD_COLOR = {
-  entity: "#f3e5c0",
-  claim: "#93c5fd",
-  source: "#4ade80",
-  case: "#facc15",
-  gap: "#f87171",
+// Full-registry edges have no editorial status (they're mechanical
+// references a record already declares) — color by edge_class instead.
+const EDGE_CLASS_COLOR = {
+  curated_relation: "rgba(255,255,255,0.28)",
+  claim_cites_source: "rgba(147,197,253,0.35)",
+  gap_questions_claim: "rgba(248,113,113,0.35)",
+  entity_mentions_claim: "rgba(243,229,192,0.30)",
+  relation_backed_by_claim: "rgba(74,222,128,0.30)",
 };
+const RECORD_COLOR = { claim: "#93c5fd", source: "#4ade80", case: "#facc15", gap: "#f87171" };
 const TYPE_COLOR = {
   person: "#f3e5c0",
   political_party: "#93c5fd",
@@ -46,6 +48,13 @@ const TYPE_COLOR = {
   event: "#facc15",
   legal_or_administrative_process: "#f87171",
 };
+// Visual role only (mission § 7.4) — never connectivity/importance.
+const SIZE_BY_CLASS = { subject: 9, entity: 7, case: 6, claim: 5, source: 5, gap: 5 };
+
+function nodeColor(n) {
+  if (n.record_type === "entity") return TYPE_COLOR[n.entity_type] || "#f3e5c0";
+  return RECORD_COLOR[n.record_type] || "#666";
+}
 
 function readJsonIsland(id) {
   const el = document.getElementById(id);
@@ -57,140 +66,130 @@ function readJsonIsland(id) {
   }
 }
 
-async function fetchRouteMap(indexUrl) {
-  try {
-    const res = await fetch(indexUrl);
-    const entries = await res.json();
-    const map = {};
-    for (const e of entries) map[e.id] = e.route;
-    return map;
-  } catch (e) {
-    return {};
-  }
+const fullLayerCache = new Map();
+async function fetchLayer(url) {
+  if (fullLayerCache.has(url)) return fullLayerCache.get(url);
+  const promise = fetch(url)
+    .then((res) => res.json())
+    .catch(() => null);
+  fullLayerCache.set(url, promise);
+  return promise;
 }
 
-export async function initGraphView(containerId, dataIslandId, searchIndexUrl) {
+export async function initGraphView(containerId, dataIslandId, fullLayerUrl) {
   const container = document.getElementById(containerId);
   if (!container) return;
   const island = readJsonIsland(dataIslandId);
   if (!island || !island.nodes || !island.edges) return;
 
-  const routeOf = await fetchRouteMap(searchIndexUrl);
   let renderer = null;
 
-  // Layer switch (only the global map ships one): the curated entity graph and
-  // the mechanically derived full-registry graph are two views of the same
-  // data, so switching just rebuilds the Graphology model from a different
-  // node/edge set — no second renderer, no second dataset.
-  const layers = { curated: { nodes: island.nodes, edges: island.edges }, full: island.full || null };
-
   const render = (data) => {
-    if (renderer) { renderer.kill(); renderer = null; }
+    if (renderer) {
+      renderer.kill();
+      renderer = null;
+    }
     const graph = new Graph({ multi: true, type: "directed" });
 
-  // Deterministic seed positions on a circle: ForceAtlas2 needs a starting
-  // layout, and seeding it from the node order (rather than Math.random)
-  // makes the rendered graph identical on every load.
-  data.nodes.forEach((n, i) => {
-    const angle = (2 * Math.PI * i) / data.nodes.length;
-    graph.addNode(n.id, {
-      label: n.label,
-      size: n.subject ? 9 : 7,
-      color: RECORD_COLOR[n.type] || TYPE_COLOR[n.type] || "#666",
-      x: Math.cos(angle),
-      y: Math.sin(angle),
-      route: n.url || routeOf[n.id] || null,
-      kind: "node",
+    for (const n of data.nodes) {
+      if (!Number.isFinite(n.x) || !Number.isFinite(n.y)) continue;
+      graph.addNode(n.id, {
+        label: n.label,
+        size: SIZE_BY_CLASS[n.size_class] || 6,
+        color: nodeColor(n),
+        x: n.x,
+        y: n.y,
+        route: n.route || null,
+        kind: "node",
+      });
+    }
+
+    for (const e of data.edges) {
+      if (!graph.hasNode(e.source) || !graph.hasNode(e.target)) continue;
+      graph.addEdgeWithKey(e.id, e.source, e.target, {
+        label: e.label,
+        size: 1.4,
+        color: STATUS_COLOR[e.status] || EDGE_CLASS_COLOR[e.edge_class] || "rgba(255,255,255,0.28)",
+        type: "arrow",
+        route: e.route || null,
+        kind: "edge",
+      });
+    }
+
+    renderer = new Sigma(graph, container, {
+      renderEdgeLabels: false,
+      labelColor: { color: "#ffffff" },
+      labelSize: 11,
+      labelWeight: "500",
+      labelDensity: 0.7,
+      labelGridCellSize: 70,
+      edgeLabelColor: { color: "rgba(255,255,255,0.7)" },
+      defaultEdgeType: "arrow",
+      minCameraRatio: 0.3,
+      maxCameraRatio: 4,
     });
-  });
 
-  for (const e of data.edges) {
-    if (!graph.hasNode(e.source) || !graph.hasNode(e.target)) continue;
-    graph.addEdgeWithKey(e.id, e.source, e.target, {
-      label: e.label,
-      size: 1.4,
-      color: STATUS_COLOR[e.status] || "rgba(255,255,255,0.28)",
-      type: "arrow",
-      route: e.route || routeOf[e.rel_id || e.id] || null,
-      kind: "edge",
+    const routeOfNode = (id) => graph.getNodeAttribute(id, "route");
+    const routeOfEdge = (id) => graph.getEdgeAttribute(id, "route");
+
+    renderer.on("clickNode", ({ node }) => {
+      const route = routeOfNode(node);
+      if (route) window.location.href = route;
     });
-  }
-
-  forceAtlas2.assign(graph, {
-    iterations: 220,
-    settings: { ...forceAtlas2.inferSettings(graph), gravity: 1.4, scalingRatio: 12, slowDown: 4 },
-  });
-
-  renderer = new Sigma(graph, container, {
-    renderEdgeLabels: false,
-    labelColor: { color: "#ffffff" },
-    labelSize: 11,
-    labelWeight: "500",
-    labelDensity: 0.7,
-    labelGridCellSize: 70,
-    edgeLabelColor: { color: "rgba(255,255,255,0.7)" },
-    defaultEdgeType: "arrow",
-    minCameraRatio: 0.3,
-    maxCameraRatio: 4,
-  });
-
-  const routeOfNode = (id) => graph.getNodeAttribute(id, "route");
-  const routeOfEdge = (id) => graph.getEdgeAttribute(id, "route");
-
-  renderer.on("clickNode", ({ node }) => {
-    const route = routeOfNode(node);
-    if (route) window.location.href = route;
-  });
-  renderer.on("clickEdge", ({ edge }) => {
-    const route = routeOfEdge(edge);
-    if (route) window.location.href = route;
-  });
-  renderer.on("enterNode", ({ node }) => {
-    container.style.cursor = routeOfNode(node) ? "pointer" : "";
-  });
-  renderer.on("enterEdge", ({ edge }) => {
-    container.style.cursor = routeOfEdge(edge) ? "pointer" : "";
-  });
-  renderer.on("leaveNode", () => { container.style.cursor = ""; });
-  renderer.on("leaveEdge", () => { container.style.cursor = ""; });
-
-  // rAF-batched refresh: coalesces bursts of ResizeObserver callbacks (e.g.
-  // during a CSS transition) into one call per frame.
-  let resizePending = false;
-  const scheduleResize = () => {
-    if (resizePending) return;
-    resizePending = true;
-    requestAnimationFrame(() => {
-      resizePending = false;
-      renderer.resize();
-      renderer.refresh();
+    renderer.on("clickEdge", ({ edge }) => {
+      const route = routeOfEdge(edge);
+      if (route) window.location.href = route;
     });
-  };
+    renderer.on("enterNode", ({ node }) => {
+      container.style.cursor = routeOfNode(node) ? "pointer" : "";
+    });
+    renderer.on("enterEdge", ({ edge }) => {
+      container.style.cursor = routeOfEdge(edge) ? "pointer" : "";
+    });
+    renderer.on("leaveNode", () => {
+      container.style.cursor = "";
+    });
+    renderer.on("leaveEdge", () => {
+      container.style.cursor = "";
+    });
 
-  // Covers every resize cause, not just fullscreen: sidebar collapse,
-  // viewport/orientation change, font-loading reflow — anything that changes
-  // this container's box.
-  if (window.ResizeObserver) {
-    new ResizeObserver(scheduleResize).observe(container);
-  } else {
-    window.addEventListener("resize", scheduleResize);
-  }
+    // rAF-batched refresh: coalesces bursts of ResizeObserver callbacks
+    // (e.g. during a CSS transition) into one call per frame.
+    let resizePending = false;
+    const scheduleResize = () => {
+      if (resizePending) return;
+      resizePending = true;
+      requestAnimationFrame(() => {
+        resizePending = false;
+        renderer.resize();
+        renderer.refresh();
+      });
+    };
 
-  const fsBox = container.closest(".fs-box");
-  if (fsBox && fsBox.id) {
-    resizeHandlers[fsBox.id] = scheduleResize;
-  }
+    if (window.ResizeObserver) {
+      new ResizeObserver(scheduleResize).observe(container);
+    } else {
+      window.addEventListener("resize", scheduleResize);
+    }
+
+    const fsBox = container.closest(".fs-box");
+    if (fsBox && fsBox.id) {
+      resizeHandlers[fsBox.id] = scheduleResize;
+    }
 
     return renderer;
   };
 
-  render(layers.curated);
+  render(island);
 
   const buttons = document.querySelectorAll("[data-graph-layer]");
   buttons.forEach((btn) => {
-    btn.addEventListener("click", () => {
+    btn.addEventListener("click", async () => {
       const key = btn.getAttribute("data-graph-layer");
-      const data = layers[key];
+      let data = key === "curated" ? island : null;
+      if (key === "full" && fullLayerUrl) {
+        data = await fetchLayer(fullLayerUrl);
+      }
       if (!data) return;
       buttons.forEach((b) => b.setAttribute("aria-pressed", String(b === btn)));
       render(data);

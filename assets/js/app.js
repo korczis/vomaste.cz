@@ -42,9 +42,10 @@ document.addEventListener("DOMContentLoaded", function () {
   initSidebarAria();
   initSqlConsole();
   // Both checked defensively inside initGraphView (container/data-island
-  // absent on pages without a graph) — the per-dossier local graph and the
-  // global map each carry their own container/data-island/search-index ids.
+  // absent on pages without a graph) — the per-dossier local graph has no
+  // full-layer URL (dataset.fullLayerUrl is undefined), only the global
+  // map does.
   document.querySelectorAll("[data-graph-view]").forEach(function (el) {
-    initGraphView(el.id, el.dataset.dataIsland, el.dataset.searchIndexUrl);
+    initGraphView(el.id, el.dataset.dataIsland, el.dataset.fullLayerUrl);
   });
 });

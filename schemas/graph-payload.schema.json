@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vomaste.cz/schemas/graph-payload.schema.json",
+  "title": "Graph transport projection (static/data/graph/{global-curated,global-registry,dossier/<slug>}.json)",
+  "description": "Normalized Sigma/Graphology transport contract, generated from the canonical registries at build time. Shared shape across the curated layer, the full-registry layer, and per-dossier local payloads (mission § 3.2/3.3). Never a second hand-maintained dataset.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "nodes", "edges"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "nodes": { "type": "array", "items": { "$ref": "#/$defs/node" } },
+    "edges": { "type": "array", "items": { "$ref": "#/$defs/edge" } },
+    "clusters": { "type": "array", "items": { "type": "object" } },
+    "source_families": { "type": "array", "items": { "type": "object" } }
+  },
+  "$defs": {
+    "node": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "canonical_id", "record_type", "label", "x", "y", "size_class", "component_id"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "canonical_id": { "type": "string", "minLength": 1 },
+        "record_type": { "type": "string", "enum": ["entity", "claim", "source", "case", "gap"] },
+        "entity_type": { "type": "string" },
+        "label": { "type": "string", "minLength": 1 },
+        "route": { "type": ["string", "null"] },
+        "dossier": { "type": ["string", "null"] },
+        "dossiers": { "type": "array", "items": { "type": "string" } },
+        "subject": { "type": "boolean" },
+        "status": { "type": "string" },
+        "x": { "type": "number" },
+        "y": { "type": "number" },
+        "size_class": { "type": "string", "enum": ["subject", "entity", "case", "claim", "source", "gap"] },
+        "layout_partition": { "type": ["integer", "null"] },
+        "component_id": { "type": "integer", "minimum": 0 },
+        "neighbor_count": { "type": "integer", "minimum": 0 },
+        "claim_count": { "type": "integer", "minimum": 0 },
+        "source_count": { "type": "integer", "minimum": 0 },
+        "outlet": { "type": "string" },
+        "priority": { "type": "string" },
+        "summary": { "type": "string" },
+        "title": { "type": "string" },
+        "claims": { "type": "array", "items": { "type": "string", "pattern": "^CLM-\\d+$" } },
+        "sources": { "type": "array", "items": { "type": "string", "pattern": "^SRC-\\d+$" } }
+      }
+    },
+    "edge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "source", "target", "edge_class"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "source": { "type": "string", "minLength": 1 },
+        "target": { "type": "string", "minLength": 1 },
+        "edge_class": {
+          "type": "string",
+          "enum": ["curated_relation", "claim_cites_source", "gap_questions_claim", "entity_mentions_claim", "relation_backed_by_claim"]
+        },
+        "label": { "type": "string" },
+        "route": { "type": ["string", "null"] },
+        "status": { "type": "string" },
+        "dossier": { "type": ["string", "null"] },
+        "rel_id": { "type": "string" },
+        "relation": { "type": "string" },
+        "claims": { "type": "array", "items": { "type": "string", "pattern": "^CLM-\\d+$" } },
+        "sources": { "type": "array", "items": { "type": "string", "pattern": "^SRC-\\d+$" } }
+      }
+    }
+  },
+  "$comment": "Shape only, per schemas/README.md division of labor. Referential integrity (edge endpoints exist as nodes, route resolvability, node/edge counts vs. manifest, sha256 vs. file, parity with the canonical registries) is owned by scripts/dossier/validate-graph-projections.mjs."
+}
