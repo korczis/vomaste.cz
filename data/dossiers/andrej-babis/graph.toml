@@ -113,8 +113,8 @@ type = "public_institution"
 label = "Národní centrála proti organizovanému zločinu"
 depth = 1
 subject = false
-claims = ["CLM-27"]
-sources = ["SRC-12"]
+claims = ["CLM-27", "CLM-75"]
+sources = ["SRC-12", "SRC-52"]
 
 [[nodes]]
 id = "blakey-finance"
@@ -167,8 +167,89 @@ type = "public_institution"
 label = "Ústavní soud"
 depth = 1
 subject = false
-claims = ["CLM-47"]
-sources = ["SRC-21"]
+claims = ["CLM-47", "CLM-66"]
+sources = ["SRC-21", "SRC-44"]
+
+[[nodes]]
+id = "ab-private-trusts"
+type = "organization"
+label = "AB private trust I a II"
+depth = 1
+subject = false
+claims = ["CLM-16"]
+sources = ["SRC-06", "SRC-28"]
+
+[[nodes]]
+id = "imoba"
+type = "company"
+label = "IMOBA"
+depth = 1
+subject = false
+claims = ["CLM-73", "CLM-74"]
+sources = ["SRC-51"]
+
+[[nodes]]
+id = "olaf"
+type = "public_institution"
+label = "Evropský úřad pro boj proti podvodům (OLAF)"
+depth = 2
+subject = false
+claims = ["CLM-72"]
+sources = ["SRC-50"]
+
+[[nodes]]
+id = "pekarna-zelena-louka"
+type = "company"
+label = "Pekárna Zelená louka"
+depth = 2
+subject = false
+claims = ["CLM-55", "CLM-57", "CLM-58"]
+sources = ["SRC-34", "SRC-35", "SRC-36", "SRC-37"]
+
+[[nodes]]
+id = "mpo"
+type = "public_institution"
+label = "Ministerstvo průmyslu a obchodu"
+depth = 3
+subject = false
+claims = ["CLM-55"]
+sources = ["SRC-36", "SRC-37"]
+
+[[nodes]]
+id = "pgrlf"
+type = "public_institution"
+label = "Podpůrný a garanční rolnický a lesnický fond (PGRLF)"
+depth = 2
+subject = false
+claims = ["CLM-60"]
+sources = ["SRC-38", "SRC-40"]
+
+[[nodes]]
+id = "vodnanska-drubez"
+type = "company"
+label = "Vodňanská drůbež"
+depth = 2
+subject = false
+claims = ["CLM-64", "CLM-66", "CLM-67"]
+sources = ["SRC-43", "SRC-44"]
+
+[[nodes]]
+id = "sady-cz"
+type = "company"
+label = "Sady CZ"
+depth = 2
+subject = false
+claims = ["CLM-65"]
+sources = ["SRC-45"]
+
+[[nodes]]
+id = "navos-farm-technic"
+type = "company"
+label = "Navos Farm Technic"
+depth = 2
+subject = false
+claims = ["CLM-68"]
+sources = ["SRC-46", "SRC-47"]
 
 [[edges]]
 id = "edge-babis-vlada"
@@ -225,10 +306,10 @@ id = "edge-agrofert-szif"
 source = "agrofert"
 target = "szif"
 relation = "SUBJECT_OF_PROCEEDING"
-label = "SZIF obnovil administraci žádostí o dotace (4/2026)"
+label = "SZIF ukončil administraci 21 předjednaných projektů (2023, spory u soudů) a obnovil administraci nových žádostí (4/2026)"
 status = "contextual"
-claims = ["CLM-10", "CLM-11"]
-sources = ["SRC-04"]
+claims = ["CLM-10", "CLM-11", "CLM-62", "CLM-63"]
+sources = ["SRC-04", "SRC-41", "SRC-42"]
 
 [[edges]]
 id = "edge-babis-pnf"
@@ -369,3 +450,173 @@ label = "dotaci z PRV 2018 schválil SZIF, zrušilo ji Ministerstvo zemědělstv
 status = "contextual"
 claims = ["CLM-48"]
 sources = ["SRC-22"]
+
+[[edges]]
+id = "edge-babis-ab-trusts"
+source = "babis"
+target = "ab-private-trusts"
+relation = "HOLDS_INTEREST_IN"
+label = "akcie Agrofertu ve fondech 2/2017–2024/2025; poté návrat k přímému vlastnictví — majetková posloupnost, sama o sobě legální"
+status = "corroborated"
+claims = ["CLM-16"]
+sources = ["SRC-06", "SRC-28"]
+
+[[edges]]
+id = "edge-ab-trusts-agrofert"
+source = "ab-private-trusts"
+target = "agrofert"
+relation = "HOLDS_INTEREST_IN"
+label = "držely akcie Agrofertu (2017–2025)"
+status = "contextual"
+claims = ["CLM-16"]
+sources = ["SRC-06"]
+
+[[edges]]
+id = "edge-imoba-capihnizdo"
+source = "imoba"
+target = "capi-hnizdo"
+relation = "HOLDS_INTEREST_IN"
+label = "vlastník areálu; 6/2018 vrátila dotaci ~50 mil. Kč — vrácení není přiznání viny, do dohody firma prosadila opak"
+status = "single"
+claims = ["CLM-73", "CLM-74"]
+sources = ["SRC-51"]
+
+[[edges]]
+id = "edge-capihnizdo-olaf"
+source = "capi-hnizdo"
+target = "olaf"
+relation = "INVESTIGATED_BY"
+label = "šetření OLAF; zveřejněné části zprávy hovoří o nesrovnalostech — zjištění kontrolního úřadu, ne rozsudek"
+status = "single"
+claims = ["CLM-72"]
+sources = ["SRC-50"]
+
+[[edges]]
+id = "edge-agrofert-capihnizdo-reklamy"
+source = "agrofert"
+target = "capi-hnizdo"
+relation = "ASSOCIATED_WITH_EVENT"
+label = "platby firem skupiny za reklamu >270 mil. Kč (2010–2013); dvakrát odloženo, trestný čin nezjištěn — odložení není potvrzení přiměřenosti plateb"
+status = "corroborated"
+claims = ["CLM-69"]
+sources = ["SRC-48", "SRC-49"]
+
+[[edges]]
+id = "edge-agrofert-pekarna"
+source = "agrofert"
+target = "pekarna-zelena-louka"
+relation = "HOLDS_INTEREST_IN"
+label = "firma ze skupiny (Penam)"
+status = "contextual"
+claims = ["CLM-55"]
+sources = ["SRC-37"]
+
+[[edges]]
+id = "edge-pekarna-eppo"
+source = "pekarna-zelena-louka"
+target = "eppo"
+relation = "SUBJECT_OF_PROCEEDING"
+label = "obžaloba EPPO z 22. 6. 2026 (společnost + 2 osoby) — obžaloba není rozhodnutí o vině"
+status = "corroborated"
+claims = ["CLM-57", "CLM-58"]
+sources = ["SRC-34", "SRC-35"]
+
+[[edges]]
+id = "edge-pekarna-mpo"
+source = "pekarna-zelena-louka"
+target = "mpo"
+relation = "SUBJECT_OF_PROCEEDING"
+label = "odnětí stomilionové dotace (2022); EK ji odmítla proplatit"
+status = "corroborated"
+claims = ["CLM-55"]
+sources = ["SRC-36", "SRC-37"]
+
+[[edges]]
+id = "edge-agrofert-pgrlf"
+source = "agrofert"
+target = "pgrlf"
+relation = "SUBJECT_OF_PROCEEDING"
+label = "žaloby na 28 firem skupiny o 22 mil. Kč (7/2026) — podaná žaloba není rozhodnutí soudu"
+status = "corroborated"
+claims = ["CLM-60"]
+sources = ["SRC-38", "SRC-40"]
+
+[[edges]]
+id = "edge-agrofert-vodnanska"
+source = "agrofert"
+target = "vodnanska-drubez"
+relation = "HOLDS_INTEREST_IN"
+label = "firma ze skupiny"
+status = "contextual"
+claims = ["CLM-66"]
+sources = ["SRC-44"]
+
+[[edges]]
+id = "edge-vodnanska-ustavnisoud"
+source = "vodnanska-drubez"
+target = "ustavni-soud"
+relation = "SUBJECT_OF_PROCEEDING"
+label = "ústavní stížnost odmítnuta 1/2026 (dotace 75 mil. Kč) — spor o nárok na dotaci, ne o vině"
+status = "single"
+claims = ["CLM-66"]
+sources = ["SRC-44"]
+
+[[edges]]
+id = "edge-agrofert-sady"
+source = "agrofert"
+target = "sady-cz"
+relation = "HOLDS_INTEREST_IN"
+label = "firma ze skupiny"
+status = "contextual"
+claims = ["CLM-65"]
+sources = ["SRC-45"]
+
+[[edges]]
+id = "edge-sady-nss"
+source = "sady-cz"
+target = "nss"
+relation = "SUBJECT_OF_PROCEEDING"
+label = "NSS 8/2025 zamítl kasační stížnost: rozhodný je stav v době podání žádosti"
+status = "single"
+claims = ["CLM-65"]
+sources = ["SRC-45"]
+
+[[edges]]
+id = "edge-agrofert-navos"
+source = "agrofert"
+target = "navos-farm-technic"
+relation = "HOLDS_INTEREST_IN"
+label = "firma ze skupiny"
+status = "contextual"
+claims = ["CLM-68"]
+sources = ["SRC-46"]
+
+[[edges]]
+id = "edge-navos-nss"
+source = "navos-farm-technic"
+target = "nss"
+relation = "SUBJECT_OF_PROCEEDING"
+label = "NSS 12/2025: zákaz kvůli střetu zájmů platí i pro zakázky malého rozsahu — správní výklad, ne trestní odpovědnost"
+status = "corroborated"
+claims = ["CLM-68"]
+sources = ["SRC-46", "SRC-47"]
+
+[[edges]]
+id = "edge-vodnanska-szif"
+source = "vodnanska-drubez"
+target = "szif"
+relation = "SUBJECT_OF_PROCEEDING"
+label = "SZIF ukončil administraci žádosti (2023); NSS 1/2025 vyhověl kasační stížnosti fondu"
+status = "single"
+claims = ["CLM-64"]
+sources = ["SRC-43"]
+
+[[edges]]
+id = "edge-babis-ncoz-pandora"
+source = "babis"
+target = "ncoz"
+relation = "INVESTIGATED_BY"
+label = "Pandora Papers, česká větev: jednání nelze posoudit jako TČ na území ČR, poznatky předány jiné zemi EU — závěr o příslušnosti, ne zproštění"
+status = "single"
+claims = ["CLM-75"]
+sources = ["SRC-52"]

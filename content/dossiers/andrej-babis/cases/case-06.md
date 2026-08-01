@@ -1,6 +1,6 @@
 +++
 title = "Nemovitosti ve Francii: předběžné vyšetřování PNF"
-description = "PNF vede od 24. 2. 2022 předběžné vyšetřování pro podezření z daňového podvodu a praní peněz kolem nákupu nemovitostí na jihu Francie; o stíhání nebylo rozhodnuto a Babiš pochybení odmítá. Majetkovou strukturu nákupů (BLAKEY FINANCE, BOYNE HOLDING, SCP Bigaud) popisuje nezávisle projekt Pandora Papers; offshore struktura sama o sobě není protiprávní a o nezákonnosti nákupů žádný orgán nerozhodl."
+description = "PNF vede od 24. 2. 2022 předběžné vyšetřování pro podezření z daňového podvodu a praní peněz kolem nákupu nemovitostí na jihu Francie; o stíhání nebylo rozhodnuto a Babiš pochybení odmítá. Majetkovou strukturu nákupů (BLAKEY FINANCE, BOYNE HOLDING, SCP Bigaud) popisuje nezávisle projekt Pandora Papers; offshore struktura sama o sobě není protiprávní a o nezákonnosti nákupů žádný orgán nerozhodl. V květnu 2026 francouzská policie vyšetřování uzavřela a případ převzala Národní finanční prokuratura, která má o dalším postupu rozhodnout do konce roku 2026; Babiš po opětovném nástupu do funkce premiéra koncem roku 2025 získal podle francouzských pravidel imunitu chránící ho po dobu výkonu funkce před případným stíháním — jde o procesní ochranu, ne o rozhodnutí o vině či nevině."
 template = "dossier-case.html"
 weight = 6
 
