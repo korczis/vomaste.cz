@@ -38,7 +38,6 @@ Autorizace: viz AGENTS.md, „Structural change, 2026-07-29 (second)".
 
 | ID | Titul | Scope (soubory/sekce) | Branch | Owner | Stav | Závislosti | Akceptace |
 |----|-------|-----------------------|--------|-------|------|------------|-----------|
-| T-011 | Advanced application shell — informační architektura + secondary-provider datový model. Audit + fázový plán hotový: [`docs/adr/application-shell-rebuild.md`](../adr/application-shell-rebuild.md) (mnohé z §5/§14/§41/§47 už dnes platí — ověřeno auditem, ne předpokládáno). Fáze B z vlastníkova master promptu | data/navigation.toml, scripts/dossier/build-navigation.mjs, nové data/generated/navigation-secondary.json + dossier-catalog.json + entity-explorer.json | – | volný | todo | T-028 | secondary provider schema definované a generované, žádný hardcoded slug |
 | T-012 | Advanced application shell — shell primitiva (topbar, primary/secondary sidebar, context panel, mobile drawers/bottom nav). Fáze C | templates/base.html, nové templates/partials/app-shell/** | – | volný | todo | T-011 | 0 horizontální overflow na testovaných viewportech, focus trap/return funkční, no-JS fallback zachován |
 | T-013 | Advanced application shell — route layouts (overview/catalog/explorer/registry s advanced table toolbarem/record-detail). Fáze D | nové templates/layouts/**, dossier registry šablony | – | volný | todo | T-012 | registry mají skutečný sort/filter/pagination toolbar, ne jen statická ikona |
 | T-014 | Advanced application shell — enhanced interakce (command palette, density modes, Flowbite/Alpine inicializace bez duplicitního řízení stejné komponenty). Fáze F | assets/js/modules/**, templates/base.html | – | volný | todo | T-012 | Cmd/Ctrl+K funguje, žádná komponenta není řízená Flowbite i Alpine současně |
@@ -66,6 +65,7 @@ významu); autorizační log v AGENTS.md se nemění. Fáze A (audit,
 
 | ID | Titul | Commit | Owner | Stav |
 |----|-------|--------|-------|------|
+| T-011 | Advanced application shell fáze B — secondary-provider datový model: `navigation-secondary.json` (per-dossier registry subtree), `dossier-catalog.json`, `entity-explorer.json` (server-side facety by type/role/dossier), zapojeno do build pipeline, 7 testů (determinismus, no-hardcoded-slug, facet-sum invariants) | 55f580d | W-9 | merged — data vrstva jen (UI je T-012), plný build 38/38, testy 255/255 |
 | T-003 | Přepis architektonických sekcí AGENTS.md + README | satisfied by T-028 Phase I (5ab3c8c) | – | done — AGENTS.md „Canonical data model: JSON-first" sekce + README obojí popisují nový model, append-only log ověřeně nedotčen (byte-diff před/po) |
 | T-004 | Integrace, merge, deploy pro T-028 | satisfied by T-028 Phase J (ae3e0c5, board 000aa03) | – | done — merge na master, `npm run build` + testy zelené, push = deploy, CI green (269 e2e) |
 | T-001 | Fyzický přesun záznamů + inverze validátorů/šablon | superseded-by-T-028 | – | superseded — cíl (macinka/turek vlastnictví záznamů) dosažen přes JSON `dossier` pole v T-028, ne přesunem Markdown souborů |
