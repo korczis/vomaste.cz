@@ -1,5 +1,5 @@
 +++
-title = "Pekárna Zelená louka — obžaloba EPPO z 22. 6. 2026 (společnost + 2 osoby) — obžaloba není rozhodnutí o vině — Úřad evropského veřejného žalobce (EPPO)"
+title = "Pekárna Zelená louka (skupina Agrofert) — obžaloba EPPO z 22. 6. 2026 (společnost + 2 osoby) — obžaloba není rozhodnutí o vině — Úřad evropského veřejného žalobce (EPPO)"
 template = "dossier-relation.html"
 weight = 27
 
@@ -7,7 +7,7 @@ weight = 27
 dossier = "andrej-babis"
 record_type = "relation"
 rel_id = "edge-pekarna-eppo"
-source = "pekarna-zelena-louka"
+source = "penam-zelena-louka"
 target = "eppo"
 relation_type = "SUBJECT_OF_PROCEEDING"
 label = "obžaloba EPPO z 22. 6. 2026 (společnost + 2 osoby) — obžaloba není rozhodnutí o vině"

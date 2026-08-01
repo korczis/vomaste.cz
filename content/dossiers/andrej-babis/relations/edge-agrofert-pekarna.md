@@ -1,5 +1,5 @@
 +++
-title = "Agrofert — firma ze skupiny (Penam) — Pekárna Zelená louka"
+title = "Agrofert — firma ze skupiny (Penam) — Pekárna Zelená louka (skupina Agrofert)"
 template = "dossier-relation.html"
 weight = 26
 
@@ -8,7 +8,7 @@ dossier = "andrej-babis"
 record_type = "relation"
 rel_id = "edge-agrofert-pekarna"
 source = "agrofert"
-target = "pekarna-zelena-louka"
+target = "penam-zelena-louka"
 relation_type = "HOLDS_INTEREST_IN"
 label = "firma ze skupiny (Penam)"
 status = "contextual"

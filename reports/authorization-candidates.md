@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 64 context entities across 22 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 63 context entities across 22 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -36,7 +36,7 @@ Generated from 64 context entities across 22 dossier(s). Regenerate with `npm ru
   - edge-agrofert-komise (agrofert -> evropska-komise, "Komise k 5. 6. 2026 neproplatila žádnou náhradu a žádá vysvětlení struktury fondu — dotaz, ne zjištění", dossier: andrej-babis)
   - edge-agrofert-kostelecke (agrofert -> kostelecke-uzeniny, "firma ze skupiny Agrofert", dossier: andrej-babis)
   - edge-agrofert-navos (agrofert -> navos-farm-technic, "firma ze skupiny", dossier: andrej-babis)
-  - edge-agrofert-pekarna (agrofert -> pekarna-zelena-louka, "firma ze skupiny (Penam)", dossier: andrej-babis)
+  - edge-agrofert-pekarna (agrofert -> penam-zelena-louka, "firma ze skupiny (Penam)", dossier: andrej-babis)
   - edge-agrofert-pgrlf (agrofert -> pgrlf, "žaloby na 28 firem skupiny o 22 mil. Kč (7/2026) — podaná žaloba není rozhodnutí soudu", dossier: andrej-babis)
   - edge-agrofert-sady (agrofert -> sady-cz, "firma ze skupiny", dossier: andrej-babis)
   - edge-agrofert-szif (agrofert -> szif, "SZIF ukončil administraci 21 předjednaných projektů (2023, spory u soudů) a obnovil administraci nových žádostí (4/2026)", dossier: andrej-babis)
@@ -127,7 +127,7 @@ Generated from 64 context entities across 22 dossier(s). Regenerate with `npm ru
 - Relations: 
   - edge-agrofert-eppo (agrofert -> eppo, "trestní řízení k vyplácení evropských dotací, vedené na neznámého pachatele — nikdo není obviněn", dossier: andrej-babis)
   - edge-eppo-ncoz (eppo -> ncoz, "prověřováním pověřena NCOZ (24. 5. 2026)", dossier: andrej-babis)
-  - edge-pekarna-eppo (pekarna-zelena-louka -> eppo, "obžaloba EPPO z 22. 6. 2026 (společnost + 2 osoby) — obžaloba není rozhodnutí o vině", dossier: andrej-babis)
+  - edge-pekarna-eppo (penam-zelena-louka -> eppo, "obžaloba EPPO z 22. 6. 2026 (společnost + 2 osoby) — obžaloba není rozhodnutí o vině", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Evropská komise (`evropska-komise`)
@@ -347,7 +347,7 @@ Generated from 64 context entities across 22 dossier(s). Regenerate with `npm ru
 - Claims: CLM-55
 - Sources: SRC-36, SRC-37 (2 independent source families)
 - Relations: 
-  - edge-pekarna-mpo (pekarna-zelena-louka -> mpo, "odnětí stomilionové dotace (2022); EK ji odmítla proplatit", dossier: andrej-babis)
+  - edge-pekarna-mpo (penam-zelena-louka -> mpo, "odnětí stomilionové dotace (2022); EK ji odmítla proplatit", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Ministerstvo zdravotnictví (`mzdrav`)
@@ -493,28 +493,18 @@ Generated from 64 context entities across 22 dossier(s). Regenerate with `npm ru
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
-## Pekárna Zelená louka (`pekarna-zelena-louka`)
-
-- Type: company
-- Status: not_authorized
-- Appears in: andrej-babis
-- Claims: CLM-55, CLM-57, CLM-58
-- Sources: SRC-34, SRC-35, SRC-36, SRC-37 (4 independent source families)
-- Relations: 
-  - edge-agrofert-pekarna (agrofert -> pekarna-zelena-louka, "firma ze skupiny (Penam)", dossier: andrej-babis)
-  - edge-pekarna-eppo (pekarna-zelena-louka -> eppo, "obžaloba EPPO z 22. 6. 2026 (společnost + 2 osoby) — obžaloba není rozhodnutí o vině", dossier: andrej-babis)
-  - edge-pekarna-mpo (pekarna-zelena-louka -> mpo, "odnětí stomilionové dotace (2022); EK ji odmítla proplatit", dossier: andrej-babis)
-- Missing: explicit owner authorization to promote this to its own dossier
-
 ## Pekárna Zelená louka (skupina Agrofert) (`penam-zelena-louka`)
 
 - Type: organization
 - Status: not_authorized
-- Appears in: karel-havlicek
-- Claims: CLM-05, CLM-07, CLM-08, CLM-19, CLM-21, CLM-22, CLM-25, CLM-27
-- Sources: SRC-02, SRC-04, SRC-05, SRC-11, SRC-12, SRC-13, SRC-14, SRC-15 (8 independent source families)
+- Appears in: karel-havlicek, andrej-babis
+- Claims: CLM-05, CLM-07, CLM-08, CLM-19, CLM-21, CLM-22, CLM-25, CLM-27, CLM-55, CLM-57, CLM-58
+- Sources: SRC-02, SRC-04, SRC-05, SRC-11, SRC-12, SRC-13, SRC-14, SRC-15, SRC-34, SRC-35, SRC-36, SRC-37 (14 independent source families)
 - Relations: 
   - edge-havlicek-penam-zelena-louka (havlicek -> penam-zelena-louka, "reportovaná nevymáhaná dotace (od 2019 znám audit EU)", dossier: karel-havlicek)
+  - edge-agrofert-pekarna (agrofert -> penam-zelena-louka, "firma ze skupiny (Penam)", dossier: andrej-babis)
+  - edge-pekarna-eppo (penam-zelena-louka -> eppo, "obžaloba EPPO z 22. 6. 2026 (společnost + 2 osoby) — obžaloba není rozhodnutí o vině", dossier: andrej-babis)
+  - edge-pekarna-mpo (penam-zelena-louka -> mpo, "odnětí stomilionové dotace (2022); EK ji odmítla proplatit", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Ing. Petr Cingr (`petr-cingr`)

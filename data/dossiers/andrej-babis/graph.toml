@@ -198,10 +198,10 @@ claims = ["CLM-72"]
 sources = ["SRC-50"]
 
 [[nodes]]
-id = "pekarna-zelena-louka"
-type = "company"
-label = "Pekárna Zelená louka"
-depth = 2
+id = "penam-zelena-louka"
+type = "organization"
+label = "Pekárna Zelená louka (skupina Agrofert)"
+depth = 1
 subject = false
 claims = ["CLM-55", "CLM-57", "CLM-58"]
 sources = ["SRC-34", "SRC-35", "SRC-36", "SRC-37"]
@@ -210,7 +210,7 @@ sources = ["SRC-34", "SRC-35", "SRC-36", "SRC-37"]
 id = "mpo"
 type = "public_institution"
 label = "Ministerstvo průmyslu a obchodu"
-depth = 3
+depth = 2
 subject = false
 claims = ["CLM-55"]
 sources = ["SRC-36", "SRC-37"]
@@ -504,7 +504,7 @@ sources = ["SRC-48", "SRC-49"]
 [[edges]]
 id = "edge-agrofert-pekarna"
 source = "agrofert"
-target = "pekarna-zelena-louka"
+target = "penam-zelena-louka"
 relation = "HOLDS_INTEREST_IN"
 label = "firma ze skupiny (Penam)"
 status = "contextual"
@@ -513,7 +513,7 @@ sources = ["SRC-37"]
 
 [[edges]]
 id = "edge-pekarna-eppo"
-source = "pekarna-zelena-louka"
+source = "penam-zelena-louka"
 target = "eppo"
 relation = "SUBJECT_OF_PROCEEDING"
 label = "obžaloba EPPO z 22. 6. 2026 (společnost + 2 osoby) — obžaloba není rozhodnutí o vině"
@@ -523,7 +523,7 @@ sources = ["SRC-34", "SRC-35"]
 
 [[edges]]
 id = "edge-pekarna-mpo"
-source = "pekarna-zelena-louka"
+source = "penam-zelena-louka"
 target = "mpo"
 relation = "SUBJECT_OF_PROCEEDING"
 label = "odnětí stomilionové dotace (2022); EK ji odmítla proplatit"

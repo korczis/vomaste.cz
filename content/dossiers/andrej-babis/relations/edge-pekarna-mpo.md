@@ -1,5 +1,5 @@
 +++
-title = "Pekárna Zelená louka — odnětí stomilionové dotace (2022); EK ji odmítla proplatit — Ministerstvo průmyslu a obchodu"
+title = "Pekárna Zelená louka (skupina Agrofert) — odnětí stomilionové dotace (2022); EK ji odmítla proplatit — Ministerstvo průmyslu a obchodu"
 template = "dossier-relation.html"
 weight = 28
 
@@ -7,7 +7,7 @@ weight = 28
 dossier = "andrej-babis"
 record_type = "relation"
 rel_id = "edge-pekarna-mpo"
-source = "pekarna-zelena-louka"
+source = "penam-zelena-louka"
 target = "mpo"
 relation_type = "SUBJECT_OF_PROCEEDING"
 label = "odnětí stomilionové dotace (2022); EK ji odmítla proplatit"
