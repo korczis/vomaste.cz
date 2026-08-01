@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 63 context entities across 24 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 66 context entities across 24 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -38,6 +38,7 @@ Generated from 63 context entities across 24 dossier(s). Regenerate with `npm ru
   - edge-agrofert-navos (agrofert -> navos-farm-technic, "firma ze skupiny", dossier: andrej-babis)
   - edge-agrofert-pekarna (agrofert -> penam-zelena-louka, "firma ze skupiny (Penam)", dossier: andrej-babis)
   - edge-agrofert-pgrlf (agrofert -> pgrlf, "žaloby na 28 firem skupiny o 22 mil. Kč (7/2026) — podaná žaloba není rozhodnutí soudu", dossier: andrej-babis)
+  - edge-agrofert-preol (agrofert -> preol, "největší tuzemský producent biopaliv ve skupině (kontext sporu o podporu biopaliv 2015)", dossier: andrej-babis)
   - edge-agrofert-sady (agrofert -> sady-cz, "firma ze skupiny", dossier: andrej-babis)
   - edge-agrofert-szif (agrofert -> szif, "SZIF ukončil administraci 21 předjednaných projektů (2023, spory u soudů) a obnovil administraci nových žádostí (4/2026)", dossier: andrej-babis)
   - edge-agrofert-vodnanska (agrofert -> vodnanska-drubez, "firma ze skupiny", dossier: andrej-babis)
@@ -587,6 +588,17 @@ Generated from 63 context entities across 24 dossier(s). Regenerate with `npm ru
   - edge-bartha-praha3 (bartha -> praha3, "výpověď z nájmu obecního bytu (rozhodnutí rady, ne soudu)", dossier: tunde-bartha)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Preol (`preol`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-84
+- Sources: SRC-60 (1 independent source family)
+- Relations: 
+  - edge-agrofert-preol (agrofert -> preol, "největší tuzemský producent biopaliv ve skupině (kontext sporu o podporu biopaliv 2015)", dossier: andrej-babis)
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## RSVP Trust (`rsvp-trust`)
 
 - Type: organization
@@ -619,6 +631,17 @@ Generated from 63 context entities across 24 dossier(s). Regenerate with `npm ru
 - Sources: SRC-13 (1 independent source family)
 - Relations: 
   - edge-boyne-bigaud (boyne-holding -> scp-bigaud, "financování pořízení pozemku; od 8/2019 SCP Bigaud ze 100 % vlastněna I.M.O.D.I.M.", dossier: andrej-babis)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Seznam.cz (`seznam-cz`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-86, CLM-87
+- Sources: SRC-62, SRC-63 (2 independent source families)
+- Relations: 
+  - edge-seznam-zaloba (seznam-cz -> zaloba-seznam-2026, "žalobce", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## SPD (`spd`)
@@ -755,6 +778,18 @@ Generated from 63 context entities across 24 dossier(s). Regenerate with `npm ru
   - edge-agrofert-vodnanska (agrofert -> vodnanska-drubez, "firma ze skupiny", dossier: andrej-babis)
   - edge-vodnanska-szif (vodnanska-drubez -> szif, "SZIF ukončil administraci žádosti (2023); NSS 1/2025 vyhověl kasační stížnosti fondu", dossier: andrej-babis)
   - edge-vodnanska-ustavnisoud (vodnanska-drubez -> ustavni-soud, "ústavní stížnost odmítnuta 1/2026 (dotace 75 mil. Kč) — spor o nárok na dotaci, ne o vině", dossier: andrej-babis)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Žaloba Seznam.cz na ochranu pověsti (2026) (`zaloba-seznam-2026`)
+
+- Type: legal_or_administrative_process
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-86
+- Sources: SRC-62, SRC-63 (2 independent source families)
+- Relations: 
+  - edge-babis-zaloba-seznam (babis -> zaloba-seznam-2026, "žalovaný v civilním sporu o ochranu pověsti — podaná žaloba není rozhodnutí soudu", dossier: andrej-babis)
+  - edge-seznam-zaloba (seznam-cz -> zaloba-seznam-2026, "žalobce", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Zapper-Club s.r.o. (`zapper-club`)

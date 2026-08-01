@@ -79,12 +79,12 @@ subjects = ["babis"]
 
 [[extra.cases]]
 anchor = "kauza-capi-hnizdo"
-period = "2025–"
+period = "2015–"
 title = "Čapí hnízdo — dotační kauza"
 status = "status-disputed"
 label = "Nepravomocný rozsudek nad spoluobžalovanou, o Babišovi nerozhodnuto"
-summary = "Spor o dotaci 50 mil. Kč na areál Čapí hnízdo z let 2007–2008; dotaci firma vrátila v roce 2018. Městský soud oba obžalované zprostil v lednu 2023 i v únoru 2024, odvolací soud obě zproštění zrušil (naposledy 23. 6. 2025) a vrátil věc se závazným právním názorem; ten 4. 5. 2026 uznal nepravomocně vinnou spoluobžalovanou Janu Nagyovou. Nic z toho není pravomocné, rozsudek nad spoluobžalovanou se netýká Andreje Babiše, jehož stíhání je po nevydání Sněmovnou přerušeno, a oba obžalovaní vinu odmítají."
-claims = ["CLM-01", "CLM-02", "CLM-03", "CLM-07", "CLM-20", "CLM-49", "CLM-50", "CLM-51", "CLM-52"]
+summary = "Spor o dotaci 50 mil. Kč na areál Čapí hnízdo z let 2007–2008; dotaci firma vrátila v roce 2018. Stíhání zahájeno v říjnu 2017 po vydání Sněmovnou, v září 2019 je státní zástupce zastavil a nejvyšší státní zástupce zastavení v prosinci 2019 zrušil jako nezákonné a předčasné; obžaloba podána v březnu 2022. Městský soud oba obžalované zprostil v lednu 2023 i v únoru 2024, odvolací soud obě zproštění zrušil (naposledy 23. 6. 2025) a vrátil věc se závazným právním názorem; ten 4. 5. 2026 uznal nepravomocně vinnou spoluobžalovanou Janu Nagyovou. Nic z toho není pravomocné, rozsudek nad spoluobžalovanou se netýká Andreje Babiše, jehož stíhání je po nevydání Sněmovnou přerušeno, a oba obžalovaní vinu odmítají."
+claims = ["CLM-01", "CLM-02", "CLM-03", "CLM-07", "CLM-20", "CLM-49", "CLM-50", "CLM-51", "CLM-52", "CLM-77", "CLM-78", "CLM-79", "CLM-80", "CLM-81"]
 subjects = ["babis"]
 
 [[extra.cases]]
@@ -185,6 +185,36 @@ status = "status-single"
 label = "Předáno do zahraničí; odložení není potvrzení zákonnosti"
 summary = "NCOZ v únoru 2022 uzavřela, že jednání popsané v Pandora Papers nelze posoudit jako podezření ze spáchání trestného činu na území České republiky, a poznatky předala policejnímu orgánu jiné členské země EU — jde o závěr o místní příslušnosti, ne o meritorní zproštění ani o potvrzení zákonnosti transakcí. Souběžné správní prověřování možného přestupku proti zákonu o střetu zájmů naráželo na nedostupnost zahraničních dokumentů a hrozící zánik odpovědnosti; Babiš jakékoli pochybení odmítá."
 claims = ["CLM-75", "CLM-76"]
+subjects = ["babis"]
+
+[[extra.cases]]
+anchor = "kauza-audit-zemedelsky"
+period = "2019–2022"
+title = "Zemědělská větev auditu Evropské komise"
+status = "status-single"
+label = "Auditní závěr, ne trestní rozsudek"
+summary = "Vedle auditu strukturálních fondů (REGC414CZ0133) vedla Evropská komise samostatný audit zemědělských dotací; v dubnu 2021 podle citovaného zpravodajství ještě nebyl finalizován. Finální zprávu Česko obdrželo 31. března 2022: audit se týkal Programu rozvoje venkova a plateb SZIF, předmětem bylo 29 projektů v různém stadiu administrace a v auditovaném období byla podle fondu vyplacena jen dotace zhruba 30 600 eur; SZIF uvedl, že České republice nehrozí škoda. Auditní závěr je kontrolní nástroj pro správu evropských prostředků — není to trestní rozsudek a o vině nikoho nerozhoduje."
+claims = ["CLM-82", "CLM-83"]
+subjects = ["babis"]
+
+[[extra.cases]]
+anchor = "kauza-biopaliva"
+period = "2015"
+title = "Biopaliva, Preol a přiznaný střet zájmů"
+status = "status-single"
+label = "Deklarovaný střet zájmů; legislativní spor, ne řízení"
+summary = "Babiš jako ministr financí v květnu 2015 veřejně připustil střet zájmů u podpory biopaliv — největší tuzemský producent Preol patří pod Agrofert — a deklaroval, že podporu nepodpoří. Sněmovna 20. května 2015 návrh na ukončení daňové podpory odmítla; z poslanců ANO hlasovali 3 pro, 25 proti a 15 se zdrželo, včetně Babiše. Jde o doložené výroky a hlasování v legislativním sporu — žádné z citovaných zjištění není správním ani trestním řízením."
+claims = ["CLM-84", "CLM-85"]
+subjects = ["babis"]
+
+[[extra.cases]]
+anchor = "kauza-seznam-zaloba"
+period = "2026–"
+title = "Veřejné výroky: žaloba Seznam.cz"
+status = "status-disputed"
+label = "Podaná žaloba — soud nerozhodl"
+summary = "Seznam.cz podal 3. března 2026 na Babiše žalobu na ochranu pověsti kvůli jeho opakovaným výrokům, že firma v souvislosti s výplatou dividend „odrbala“ stát o srážkovou daň; požaduje smazání příspěvků, zákaz dalšího šíření a omluvu. Babiš za výroky stojí a média vydavatele označuje za lživá; Seznam uvádí, že státu žádnou daň nedluží. Výroky obou stran jsou vedeny jako citace — podaná civilní žaloba není rozhodnutí soudu a dossier pravdivost žádného z výroků nerozhoduje."
+claims = ["CLM-86", "CLM-87"]
 subjects = ["babis"]
 
 [[extra.cases]]
@@ -359,6 +389,55 @@ subjects = ["babis"]
 date = "2026-07-20"
 title = "PGRLF podal žaloby na 28 firem skupiny o 22 mil. Kč"
 anchor = "kauza-pgrlf"
+dot = "dot-disputed"
+subjects = ["babis"]
+
+[[extra.timeline]]
+date = "2015-05-20"
+title = "Sněmovna odmítla ukončení daňové podpory biopaliv; Babiš se přes deklarovaný nesouhlas s podporou zdržel"
+anchor = "kauza-biopaliva"
+dot = "dot-fact"
+subjects = ["babis"]
+
+[[extra.timeline]]
+date = "2017-10-09"
+title = "Policie obvinila Babiše a Faltýnka v kauze Čapí hnízdo (po vydání Sněmovnou)"
+anchor = "kauza-capi-hnizdo"
+dot = "dot-disputed"
+subjects = ["babis"]
+
+[[extra.timeline]]
+date = "2019-09-19"
+title = "Státní zástupce Šaroch stíhání zastavil — skutek podle něj není trestným činem"
+anchor = "kauza-capi-hnizdo"
+dot = "dot-fact"
+subjects = ["babis"]
+
+[[extra.timeline]]
+date = "2019-12-04"
+title = "Nejvyšší státní zástupce zrušil zastavení stíhání Babiše a Mayerové jako nezákonné a předčasné"
+anchor = "kauza-capi-hnizdo"
+dot = "dot-disputed"
+subjects = ["babis"]
+
+[[extra.timeline]]
+date = "2022-03-21"
+title = "Podána obžaloba k Městskému soudu v Praze (Babiš: pomoc k dotačnímu podvodu)"
+anchor = "kauza-capi-hnizdo"
+dot = "dot-disputed"
+subjects = ["babis"]
+
+[[extra.timeline]]
+date = "2022-03-31"
+title = "Česko obdrželo finální zprávu zemědělského auditu EK (29 projektů, vyplaceno ~30 600 eur)"
+anchor = "kauza-audit-zemedelsky"
+dot = "dot-fact"
+subjects = ["babis"]
+
+[[extra.timeline]]
+date = "2026-03-03"
+title = "Seznam.cz podal žalobu na ochranu pověsti kvůli výrokům o srážkové dani"
+anchor = "kauza-seznam-zaloba"
 dot = "dot-disputed"
 subjects = ["babis"]
 +++
@@ -550,6 +629,29 @@ znamená, že **doporučení byla provedena**. Není to zproštění, není to
 zjištění, že ke střetu zájmů nedošlo, a není to rozhodnutí o něčí
 odpovědnosti.
 
+| ID | Tvrzení | Stav | Zdroje |
+|---|---|---|---|
+| <a id="clm-82"></a>[CLM-82](@/dossiers/andrej-babis/claims/clm-82.md) | Vedle auditu strukturálních fondů vedla Evropská komise samostatný audit čerpání zemědělských dotací; v době finalizace strukturálního auditu v dubnu 2021 podle citovaného zpravodajství zemědělský audit „zatím ještě neskončil, nebyl finalizován“. Jde o dva samostatné kontrolní procesy, které tento dossier nezaměňuje | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-58](@/dossiers/andrej-babis/sources/src-58.md) |
+| <a id="clm-83"></a>[CLM-83](@/dossiers/andrej-babis/claims/clm-83.md) | Finální zprávu zemědělského auditu ke střetu zájmů obdržela Česká republika 31. března 2022; audit se týkal Programu rozvoje venkova a plateb SZIF, předmětem bylo podle fondu 29 projektů v různém stadiu administrace a v auditovaném období byla vyplacena jen dotace zhruba 30 600 eur (asi 750 tisíc korun). SZIF uvedl, že pozastavil administraci projektů, jednal s péčí řádného hospodáře a České republice „nehrozí žádná škoda“ — auditní závěr není trestní rozsudek | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-59](@/dossiers/andrej-babis/sources/src-59.md) |
+
+## Zemědělská větev auditu Evropské komise {#kauza-audit-zemedelsky}
+
+Audit popsaný výše (REGC414CZ0133) se týkal strukturálních a kohezních
+prostředků. **Zemědělské dotace prověřoval samostatný audit** — v dubnu
+2021, kdy byl strukturální audit finalizován, zemědělský podle
+citovaného zpravodajství „ještě neskončil"
+([CLM-82](@/dossiers/andrej-babis/claims/clm-82.md)).
+
+Finální zprávu Česko obdrželo **31. března 2022**: audit se týkal
+Programu rozvoje venkova a plateb SZIF, předmětem bylo **29 projektů**
+a v auditovaném období byla vyplacena jen dotace zhruba **30 600 eur**;
+SZIF uvedl, že administraci projektů pozastavil a České republice
+nehrozí škoda ([CLM-83](@/dossiers/andrej-babis/claims/clm-83.md)).
+
+**Co audit je a co není** — platí totéž co u strukturální větve: je to
+kontrolní nástroj pro správu evropských prostředků, ne soud. Časové osy
+obou auditů se liší a tento dossier je vede odděleně.
+
 ## Kostelecké uzeniny: dotace zrušena, potvrzeno až Ústavním soudem {#kauza-kostelecke}
 
 Nejdále dotažený jednotlivý spor o konkrétní dotaci prošel celou
@@ -603,6 +705,52 @@ tento dossier žádné netvrdí. Zbytek dohledaných materiálů o Setuze
 popisuje jiné aktéry a jiná řízení — ty do tohoto dossieru nepatří a
 zůstávají v [GAP-03](@/dossiers/andrej-babis/gaps/gap-03.md).
 
+| ID | Tvrzení | Stav | Zdroje |
+|---|---|---|---|
+| <a id="clm-84"></a>[CLM-84](@/dossiers/andrej-babis/claims/clm-84.md) | Babiš jako ministr financí v květnu 2015 k daňové podpoře biopaliv uvedl: „Samozřejmě že jsem ve střetu zájmů. To všichni věděli. Já jsem ve střetu zájmů, už když ráno otevřu oči… Já budu hlasovat proti tomuto zákonu.“ Největší tuzemský producent biopaliv Preol podle téhož zdroje patří pod Agrofert — doloženo je, že to řekl, a vlastnická vazba | <span class="status-badge status-quote">CITACE</span> | [SRC-60](@/dossiers/andrej-babis/sources/src-60.md) |
+| <a id="clm-85"></a>[CLM-85](@/dossiers/andrej-babis/claims/clm-85.md) | Sněmovna 20. května 2015 návrh na ukončení daňové podpory biopaliv odmítla; z poslanců ANO hlasovali 3 pro zrušení, 25 proti a 15 se zdrželo — včetně Babiše, který předtím deklaroval souhlas s ukončením podpory. Jde o doložený průběh hlasování v legislativním sporu, ne o správní či trestní zjištění | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-61](@/dossiers/andrej-babis/sources/src-61.md) |
+
+## Biopaliva, Preol a přiznaný střet zájmů (2015) {#kauza-biopaliva}
+
+Nejstarší doložený moment, kdy Babiš střet zájmů **sám veřejně
+připustil**. Jako ministr financí v květnu 2015 řekl: „Samozřejmě že
+jsem ve střetu zájmů. To všichni věděli. Já jsem ve střetu zájmů, už
+když ráno otevřu oči…“ — a deklaroval, že podporu biopaliv nepodpoří
+([CLM-84](@/dossiers/andrej-babis/claims/clm-84.md)). Kontextem je, že
+největší tuzemský producent biopaliv **Preol** patří pod Agrofert.
+
+Sněmovna 20. května 2015 návrh na ukončení daňové podpory **odmítla**;
+z poslanců ANO hlasovali 3 pro zrušení, 25 proti a 15 se zdrželo —
+včetně Babiše ([CLM-85](@/dossiers/andrej-babis/claims/clm-85.md)).
+
+**Jak to číst.** Přiznaný střet zájmů a průběh hlasování jsou doložené
+skutečnosti legislativního sporu. Žádné z citovaných zjištění není
+správním ani trestním řízením a dossier z něj nevyvozuje protiprávní
+jednání; spor o čísla přínosu podpory (Kalouskových „5 miliard“ vs.
+Babišovo odmítnutí) je veden jako výroky stran, ne jako zjištění.
+
+| ID | Tvrzení | Stav | Zdroje |
+|---|---|---|---|
+| <a id="clm-86"></a>[CLM-86](@/dossiers/andrej-babis/claims/clm-86.md) | Společnost Seznam.cz podala 3. března 2026 na premiéra Babiše žalobu na ochranu pověsti kvůli jeho opakovaným výrokům, že firma v souvislosti s výplatou dividend neodvedla srážkovou daň; požaduje smazání příspěvků na jeho sociálních sítích, zákaz dalšího šíření a omluvu. Podaná civilní žaloba není rozhodnutí soudu | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-62](@/dossiers/andrej-babis/sources/src-62.md), [SRC-63](@/dossiers/andrej-babis/sources/src-63.md) |
+| <a id="clm-87"></a>[CLM-87](@/dossiers/andrej-babis/claims/clm-87.md) | Babiš podle citovaného zpravodajství uvedl: „Pan Lukačovič odrbal český stát na srážkové dani o 900 milionů. Udělal to tím, že šestimiliardovou dividendu nechal protéct přes firmu na Kypru.“ Seznam.cz uvádí, že „státu nedluží daň z vyplacených podílů na zisku, ani žádnou jinou daň“ — doloženo je, že to obě strany řekly; pravdivost žádného z výroků tento dossier nerozhoduje | <span class="status-badge status-quote">CITACE</span> | [SRC-63](@/dossiers/andrej-babis/sources/src-63.md) |
+
+## Veřejné výroky: žaloba Seznam.cz {#kauza-seznam-zaloba}
+
+Autorizace kryje doložené veřejné výroky jako citace — a tady výroky
+přerostly v **civilní spor**. Seznam.cz podal 3. března 2026 žalobu na
+ochranu pověsti kvůli Babišovým opakovaným tvrzením o neodvedené
+srážkové dani; požaduje smazání příspěvků, zákaz dalšího šíření a
+omluvu ([CLM-86](@/dossiers/andrej-babis/claims/clm-86.md)).
+
+Výroky obou stran jsou vedeny **jako citace vedle sebe**: Babišovo
+tvrzení o „odrbání“ státu o 900 milionů i odpověď Seznamu, že státu
+žádnou daň nedluží ([CLM-87](@/dossiers/andrej-babis/claims/clm-87.md)).
+
+**Povinné rámování.** Podaná žaloba není rozhodnutí soudu a tento
+dossier nerozhoduje, čí tvrzení je pravdivé — spor o to právě probíhá.
+Výsledek zůstává otevřený v
+[GAP-06](@/dossiers/andrej-babis/gaps/gap-06.md).
+
 ## Veřejné funkce {#verejne-funkce}
 
 Veřejný zájem na tomto dossieru stojí na úřadu, který subjekt zastává.
@@ -632,21 +780,45 @@ firma podle citovaného zpravodajství **vrátila už v roce 2018**
 ([CLM-52](@/dossiers/andrej-babis/claims/clm-52.md)) — to je skutečnost
 o osudu peněz, ne přiznání viny ani vyvrácení obžaloby.
 
+| ID | Tvrzení | Stav | Zdroje |
+|---|---|---|---|
+| <a id="clm-77"></a>[CLM-77](@/dossiers/andrej-babis/claims/clm-77.md) | Policie 9. října 2017 obvinila Andreje Babiše a Jaroslava Faltýnka v souvislosti s padesátimilionovou dotací na stavbu Farmy Čapí hnízdo; podezření se týkala dotačního podvodu a poškození finančních zájmů EU a oba předtím vydala ke stíhání Poslanecká sněmovna. Babiš proti usnesení ihned podal opravný prostředek a věc označil za „pseudokauzu“ — obvinění je procesní krok, ne rozhodnutí o vině | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-54](@/dossiers/andrej-babis/sources/src-54.md) |
+| <a id="clm-78"></a>[CLM-78](@/dossiers/andrej-babis/claims/clm-78.md) | Státní zástupce Jaroslav Šaroch v září 2019 stíhání zastavil s odůvodněním, že „skutek není trestným činem“ — mimo jiné se podle usnesení nepodařilo prokázat, že Babiš byl skutečným vlastníkem akcií Farmy Čapí hnízdo; totéž usnesení současně konstatovalo „Babišův enormní zájem na výstavbě areálu“ a „zcela nadstandardní vztahy“ mezi farmou a skupinou Agrofert. Zastavení stíhání je procesní rozhodnutí podléhající přezkumu, ne zproštění soudem | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-55](@/dossiers/andrej-babis/sources/src-55.md) |
+| <a id="clm-79"></a>[CLM-79](@/dossiers/andrej-babis/claims/clm-79.md) | Nejvyšší státní zástupce Pavel Zeman 4. prosince 2019 zrušil zastavení stíhání Babiše a Jany Mayerové „jako nezákonné a předčasné“; u dalších čtyř obviněných důvody pro zrušení neshledal a jejich stíhání zůstalo zastaveno. Obnovení stíhání není rozhodnutí o vině — vyšetřování jím pokračovalo | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-56](@/dossiers/andrej-babis/sources/src-56.md) |
+| <a id="clm-80"></a>[CLM-80](@/dossiers/andrej-babis/claims/clm-80.md) | Dne 21. března 2022 byla k Městskému soudu v Praze podána obžaloba: na Babiše pro pomoc ke zločinu dotačního podvodu a na Janu Nagyovou pro dotační podvod a poškození finančních zájmů EU; oběma hrozilo až deset let vězení. Obžaloba je předání věci soudu, ne rozhodnutí o vině | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-57](@/dossiers/andrej-babis/sources/src-57.md) |
+| <a id="clm-81"></a>[CLM-81](@/dossiers/andrej-babis/claims/clm-81.md) | Babiš obžalobu komentoval slovy: „Dneškem se jen potvrdilo, že jde o vykonstruovaný politický proces proti mé osobě.“ a „Nebýt v politice nikdo by se tím nikdy nezabýval, protože se nic nestalo.“ — doloženo je, že to řekl, ne že jeho popis odpovídá skutečnosti | <span class="status-badge status-quote">CITACE</span> | [SRC-57](@/dossiers/andrej-babis/sources/src-57.md) |
+
 ### Procesní historie, celá
 
 Kdo do kauzy vstoupí v roce 2025, snadno si zrušení zprošťujícího
-rozsudku splete s prvním rozhodnutím ve věci. Není. Posloupnost je tahle:
+rozsudku splete s prvním rozhodnutím ve věci. Není. Posloupnost začíná
+už v roce 2017:
 
-1. **9. ledna 2023** Městský soud v Praze oba obžalované zprostil
+1. **9. října 2017** policie obvinila Babiše a Faltýnka poté, co je
+   Sněmovna vydala ke stíhání; Babiš podal stížnost a věc označil za
+   „pseudokauzu“ ([CLM-77](@/dossiers/andrej-babis/claims/clm-77.md)).
+2. **V září 2019** státní zástupce Jaroslav Šaroch stíhání **zastavil**
+   („skutek není trestným činem“); usnesení současně konstatovalo
+   „enormní zájem“ i „zcela nadstandardní vztahy“ — obě polohy patří
+   vedle sebe ([CLM-78](@/dossiers/andrej-babis/claims/clm-78.md)).
+3. **4. prosince 2019** nejvyšší státní zástupce Pavel Zeman zastavení
+   u Babiše a Mayerové **zrušil** „jako nezákonné a předčasné“; u
+   dalších čtyř obviněných zůstalo zastavení v platnosti
+   ([CLM-79](@/dossiers/andrej-babis/claims/clm-79.md)).
+4. **21. března 2022** byla podána **obžaloba** k Městskému soudu
+   v Praze ([CLM-80](@/dossiers/andrej-babis/claims/clm-80.md)); Babiš
+   ji označil za vykonstruovaný politický proces
+   ([CLM-81](@/dossiers/andrej-babis/claims/clm-81.md)).
+5. **9. ledna 2023** Městský soud v Praze oba obžalované zprostil
    s odůvodněním, že skutek popsaný v obžalobě není trestným činem;
    nepravomocně, státní zástupce si ponechal lhůtu k odvolání
    ([CLM-50](@/dossiers/andrej-babis/claims/clm-50.md)).
-2. Odvolací soud tento rozsudek zrušil a věc vrátil.
-3. **14. února 2024** týž soud oba zprostil **znovu** — podle odůvodnění
+6. Odvolací soud tento rozsudek zrušil a věc vrátil.
+7. **14. února 2024** týž soud oba zprostil **znovu** — podle odůvodnění
    netvořily nepřímé důkazy ucelený řetězec vyvracející obhajobu; opět
    nepravomocně ([CLM-51](@/dossiers/andrej-babis/claims/clm-51.md),
    [SRC-24](@/dossiers/andrej-babis/sources/src-24.md)).
-4. **23. června 2025** Vrchní soud v Praze zrušil i tento rozsudek —
+8. **23. června 2025** Vrchní soud v Praze zrušil i tento rozsudek —
    podle citovaného zdroje šlo o druhé zrušení zproštění v této kauze
    ([CLM-01](@/dossiers/andrej-babis/claims/clm-01.md),
    [SRC-01](@/dossiers/andrej-babis/sources/src-01.md)).
