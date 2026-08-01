@@ -218,6 +218,13 @@ Markdownu ani JavaScriptu — navigační konfigurace smí odkazovat jen na
 
 ## Co zbývá
 
+> **Sbalený sidebar zde neexistuje.** Zadání s ním počítalo, ale ani
+> `templates/base.html`, ani `assets/js/app.js` žádný collapse stav nemají —
+> sidebar je vždy rozbalený. Počet je i tak v `title` odkazu, takže kdyby
+> collapse někdy přibyl, zůstane dostupný bez další práce. Stavět sbalování
+> jen kvůli badge by bylo řešení problému, který nikdo nemá.
+
+
 Hotové: registr metrik, generátor, testy, `count_metric` v
 `data/navigation.toml`, vykreslení badge ve sdíleném macru `nav::nav_link`
 (používá ho desktop sidebar i mobilní navigace, takže obě větve resolvují
@@ -238,14 +245,13 @@ ohlásila chybějící badge, které tam byly.
 
 Neimplementované:
 
-- **veřejný endpoint** `/data/navigation-metrics.json`;
-- **sbalený sidebar** — počet je v `title`, takže po sbalení na ikony
-  zůstane dostupný, ale chování badge při sbalení nebylo testováno;
 - **vizuální kontrola** na reálných viewportech (1440×1000, 1024×768,
   390×844), včetně dlouhých labelů a tříciferných hodnot;
-- **`npm run build` end-to-end** — ověřeno bylo renderem do izolovaného
-  výstupního adresáře, protože sdílený `public/` držel souběžný build jiné
-  session.
+- **OG karty** tří nejnovějších dossierů — Playwright na macOS 13 chromium
+  nenainstaluje, takže `scripts/og/build-og-images.mjs` musí proběhnout jinde.
+
+- **vizuální kontrola** na reálných viewportech (1440×1000, 1024×768,
+  390×844), včetně dlouhých labelů a tříciferných hodnot;
 
 Zadání pro tuhle práci předpokládalo jiné informační architektury, než jakou
 web má: sidebar má **sedm** top-level položek (`home`, `dossiers`, `entities`,
