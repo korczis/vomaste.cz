@@ -5,7 +5,6 @@ template = "dossier-claim.html"
 weight = 6
 
 [extra]
-subjects = ["bartha"]
 dossier = "tunde-bartha"
 record_type = "claim"
 lang = "cs"
@@ -14,6 +13,7 @@ status = "status-single"
 status_label = "1 ZDROJ"
 summary = "Tünde Bartha podle citovaného zpravodajství pracovala v holdingu Agrofert jako business development manager pro východní Evropu, Balkán a Blízký východ; její působení potvrdil mluvčí Agrofertu Pavel Heřmanský"
 sources = ["SRC-03"]
+subjects = ["bartha"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/tunde-bartha/_index.md#registr-tvrzeni).

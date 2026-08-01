@@ -1,7 +1,7 @@
 +++
 title = "Tünde Bartha — výpověď z nájmu obecního bytu (rozhodnutí rady, ne soudu) — Městská část Praha 3"
 template = "dossier-relation.html"
-weight = 3
+weight = 7
 
 [extra]
 dossier = "tunde-bartha"
