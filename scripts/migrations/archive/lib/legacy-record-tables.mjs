@@ -15,7 +15,7 @@
 // render from; no status is computed here, no score, no ranking.
 import { readFileSync, readdirSync, existsSync } from "node:fs";
 import { join } from "node:path";
-import { loadDossierRegistry } from "../../dossier/lib/dossier-registry.mjs";
+import { loadDossierRegistry } from "../../../dossier/lib/dossier-registry.mjs";
 
 const fm = (text) => (text.match(/^\+\+\+\r?\n([\s\S]*?)\r?\n\+\+\+/) ?? [])[1] ?? "";
 const str = (b, k) => (b.match(new RegExp(`^${k}\\s*=\\s*"((?:[^"\\\\]|\\\\.)*)"`, "m")) ?? [])[1]?.replace(/\\(.)/g, "$1") ?? null;
