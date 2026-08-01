@@ -1,6 +1,6 @@
 +++
 title = "Obecní byt v Praze 3 a výpověď z nájmu"
-description = "Rada MČ Praha 3 vypověděla 24. 6. 2026 nájem obecního bytu pro přenechání třetím osobám bez souhlasu pronajímatele — přestože dvě vlastní právní stanoviska radnice uváděla, že pro výpověď není právně "
+description = "Rada MČ Praha 3 vypověděla 24. 6. 2026 nájem obecního bytu pro přenechání třetím osobám bez souhlasu pronajímatele — přestože dvě vlastní právní stanoviska radnice uváděla, že pro výpověď není právně relevantní podklad. Žádný citovaný zdroj Barthové nevytýká protiprávní jednání."
 template = "dossier-case.html"
 weight = 1
 

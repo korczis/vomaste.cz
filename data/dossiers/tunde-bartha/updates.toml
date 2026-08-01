@@ -10,3 +10,10 @@ updated_claims = []
 added_gaps = ["GAP-01", "GAP-02", "GAP-03", "GAP-04"]
 closed_gaps = []
 summary = "Založen dossier dle AUTH-2026-07-30-U. 4 zdroje otevřeny a přečteny (HN/ČTK, Echo24, Aktuálně.cz, primární rejstřík Úřadu vlády), 8 tvrzení, 2 kauzy, 4 mezery. Zásadní přesnostní nálezy: (1) vlastní právní stanoviska radnice Prahy 3 před výpovědí varovala — bez nich by byl záznam zkreslený, proto jsou vedena jako samostatná tvrzení; (2) úřední rejstřík u let 2018–2021 uvádí „pověřena řízením“, ne funkční období; (3) datum nástupu do současné funkce není doloženo primárním ani jmenovaně ozdrojovaným zdrojem (Echo24 12/2025 se opírá o nejmenované zdroje) → GAP-02; (4) prověřováno propojení s J. Faltýnkem, žádný jmenovaný zdroj nenalezen → GAP-03."
+
+[[updates]]
+date = "2026-08-01"
+summary = "Rozšíření v rozsahu AUTH-2026-07-30-U: jmenování vedoucí Úřadu vlády 15. 12. 2025 doloženo primárním úředním zdrojem (uzavírá GAP-02), vedení prezidentské kampaně 2022–2023 a bezpečnostní prověrka (Tajné + NATO certifikát) jako nové kauzy-kontexty, maďarská firemní funkce country managerky AGROFERT Hungária jako datovaný employment fact (GAP-04 aktualizována, zůstává otevřená). Nová tvrzení CLM-09 až CLM-13, zdroje SRC-06 až SRC-09 (všechny otevřeny a přečteny 2026-08-01), dva nové uzly grafu a čtyři hrany."
+added_claims = ["CLM-09", "CLM-10", "CLM-11", "CLM-12", "CLM-13"]
+closed_gaps = ["GAP-02"]
+reviewed_sources = ["SRC-06", "SRC-07", "SRC-08", "SRC-09"]

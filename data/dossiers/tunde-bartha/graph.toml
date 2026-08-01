@@ -54,28 +54,86 @@ type = "person"
 label = "Andrej Babiš"
 depth = 1
 subject = false
-claims = ["CLM-05"]
-sources = ["SRC-01", "SRC-02"]
+claims = ["CLM-05", "CLM-10"]
+sources = ["SRC-01", "SRC-02", "SRC-07"]
+
+[[nodes]]
+id = "kampan-babis-2023"
+type = "event"
+label = "Prezidentská kampaň Andreje Babiše (2022–2023)"
+depth = 1
+subject = false
+claims = ["CLM-10", "CLM-11"]
+sources = ["SRC-07"]
+
+[[nodes]]
+id = "agrofert-hungaria"
+type = "company"
+label = "AGROFERT Hungária"
+depth = 1
+subject = false
+claims = ["CLM-13"]
+sources = ["SRC-09"]
 
 [[edges]]
 id = "edge-bartha-vlada"
 source = "bartha"
 target = "vlada"
 relation = "HOLDS_ROLE"
-label = "pověřena řízením 2018–2021; dle zpravodajství vede úřad i v roce 2026"
+label = "pověřena řízením 2018–2021; 15. 12. 2025 jmenována vedoucí Úřadu vlády (primární úřední zdroj)"
 status = "contextual"
-claims = ["CLM-07", "CLM-08"]
-sources = ["SRC-01", "SRC-04"]
+claims = ["CLM-07", "CLM-08", "CLM-09"]
+sources = ["SRC-01", "SRC-04", "SRC-06"]
 
 [[edges]]
 id = "edge-bartha-agrofert"
 source = "bartha"
 target = "agrofert"
 relation = "HOLDS_ROLE"
-label = "business development manager (dle zpravodajství, potvrzeno mluvčím)"
+label = "business development manager (dle zpravodajství, potvrzeno mluvčím); firemní web 9/2024: country managerka AGROFERT Hungária"
 status = "contextual"
-claims = ["CLM-06"]
-sources = ["SRC-03"]
+claims = ["CLM-06", "CLM-13"]
+sources = ["SRC-03", "SRC-09"]
+
+[[edges]]
+id = "edge-bartha-kampan"
+source = "bartha"
+target = "kampan-babis-2023"
+relation = "HOLDS_ROLE"
+label = "šéfka prezidentské kampaně (12/2022); zmínka o kancléřce = zamýšlená budoucí role, ne funkce"
+status = "single"
+claims = ["CLM-10"]
+sources = ["SRC-07"]
+
+[[edges]]
+id = "edge-kampan-babis"
+source = "kampan-babis-2023"
+target = "babis"
+relation = "ASSOCIATED_WITH_EVENT"
+label = "kampaň kandidáta Andreje Babiše"
+status = "contextual"
+claims = ["CLM-10"]
+sources = ["SRC-07"]
+
+[[edges]]
+id = "edge-agrofert-hungaria"
+source = "agrofert"
+target = "agrofert-hungaria"
+relation = "HOLDS_INTEREST_IN"
+label = "maďarská společnost koncernu"
+status = "contextual"
+claims = ["CLM-13"]
+sources = ["SRC-09"]
+
+[[edges]]
+id = "edge-bartha-agrofert-hungaria"
+source = "bartha"
+target = "agrofert-hungaria"
+relation = "HOLDS_ROLE"
+label = "country managerka (dle firemního webu, 9/2024) — popis pracovního zařazení, ne tvrzení o pochybení"
+status = "single"
+claims = ["CLM-13"]
+sources = ["SRC-09"]
 
 [[edges]]
 id = "edge-bartha-praha3"

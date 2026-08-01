@@ -5,7 +5,6 @@ template = "dossier-claim.html"
 weight = 2
 
 [extra]
-subjects = ["bartha"]
 dossier = "tunde-bartha"
 record_type = "claim"
 lang = "cs"
@@ -14,6 +13,7 @@ status = "status-single"
 status_label = "1 ZDROJ"
 summary = "Vedoucí odboru městské části Michal Dobiáš podle citovaného zpravodajství ve svém stanovisku uvedl, že pro výpověď pro hrubé porušení povinností neexistuje žádný právně relevantní podklad a že hrozí vysoké riziko, že soud výpověď shledá neplatnou"
 sources = ["SRC-02"]
+subjects = ["bartha"]
 +++
 
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/tunde-bartha/_index.md#registr-tvrzeni).

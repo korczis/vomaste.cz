@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 63 context entities across 22 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 65 context entities across 22 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -43,7 +43,20 @@ Generated from 63 context entities across 22 dossier(s). Regenerate with `npm ru
   - edge-agrofert-vodnanska (agrofert -> vodnanska-drubez, "firma ze skupiny", dossier: andrej-babis)
   - edge-babis-agrofert (babis -> agrofert, "vlastnické vazby; od 2/2026 akcie ve svěřenském fondu RSVP Trust, míra vlivu sporná; dividenda 4,25 mld. Kč vyplacena před vkladem (legální krok)", dossier: andrej-babis)
   - edge-rsvp-agrofert (rsvp-trust -> agrofert, "drží akcie Agrofertu (vloženy 2/2026)", dossier: andrej-babis)
-  - edge-bartha-agrofert (bartha -> agrofert, "business development manager (dle zpravodajství, potvrzeno mluvčím)", dossier: tunde-bartha)
+  - edge-agrofert-hungaria (agrofert -> agrofert-hungaria, "maďarská společnost koncernu", dossier: tunde-bartha)
+  - edge-bartha-agrofert (bartha -> agrofert, "business development manager (dle zpravodajství, potvrzeno mluvčím); firemní web 9/2024: country managerka AGROFERT Hungária", dossier: tunde-bartha)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## AGROFERT Hungária (`agrofert-hungaria`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: tunde-bartha
+- Claims: CLM-13
+- Sources: SRC-09 (1 independent source family)
+- Relations: 
+  - edge-agrofert-hungaria (agrofert -> agrofert-hungaria, "maďarská společnost koncernu", dossier: tunde-bartha)
+  - edge-bartha-agrofert-hungaria (bartha -> agrofert-hungaria, "country managerka (dle firemního webu, 9/2024) — popis pracovního zařazení, ne tvrzení o pochybení", dossier: tunde-bartha)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## JUDr. Alexej Bílek (`alexej-bilek`)
@@ -241,6 +254,18 @@ Generated from 63 context entities across 22 dossier(s). Regenerate with `npm ru
 - Claims: none
 - Sources: none (0 independent source families)
 - Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Prezidentská kampaň Andreje Babiše (2022–2023) (`kampan-babis-2023`)
+
+- Type: event
+- Status: not_authorized
+- Appears in: tunde-bartha
+- Claims: CLM-10, CLM-11
+- Sources: SRC-07 (1 independent source family)
+- Relations: 
+  - edge-bartha-kampan (bartha -> kampan-babis-2023, "šéfka prezidentské kampaně (12/2022); zmínka o kancléřce = zamýšlená budoucí role, ne funkce", dossier: tunde-bartha)
+  - edge-kampan-babis (kampan-babis-2023 -> babis, "kampaň kandidáta Andreje Babiše", dossier: tunde-bartha)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Kauza 2024: fotografie a svícny (`kauza2024`)
@@ -738,7 +763,7 @@ Generated from 63 context entities across 22 dossier(s). Regenerate with `npm ru
   - edge-cerveny-vlada (cerveny -> vlada, "ministr životního prostředí", dossier: igor-cerveny)
   - edge-plaga-vlada (plaga -> vlada, "ministr školství, mládeže a tělovýchovy", dossier: robert-plaga)
   - edge-sebestyan-vlada (sebestyan -> vlada, "ministr zemědělství", dossier: martin-sebestyan)
-  - edge-bartha-vlada (bartha -> vlada, "pověřena řízením 2018–2021; dle zpravodajství vede úřad i v roce 2026", dossier: tunde-bartha)
+  - edge-bartha-vlada (bartha -> vlada, "pověřena řízením 2018–2021; 15. 12. 2025 jmenována vedoucí Úřadu vlády (primární úřední zdroj)", dossier: tunde-bartha)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Vodňanská drůbež (`vodnanska-drubez`)

@@ -1,7 +1,7 @@
 +++
 title = "Imoba — dle citovaného zpravodajství společnost patří Andreji Babišovi — Andrej Babiš"
 template = "dossier-relation.html"
-weight = 5
+weight = 9
 
 [extra]
 dossier = "tunde-bartha"

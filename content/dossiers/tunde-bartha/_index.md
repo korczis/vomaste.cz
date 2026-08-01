@@ -13,8 +13,8 @@ lang = "cs"
 seo_type = "ProfilePage"
 subject_entities = ["bartha"]
 subjects = ["Tünde Bartha"]
-updated = "2026-07-30"
-reviewed_at = "2026-07-30"
+updated = "2026-08-01"
+reviewed_at = "2026-08-01"
 
 [[extra.timeline]]
 date = "2004"
@@ -43,6 +43,34 @@ title = "Rada MČ Praha 3 schvaluje výpověď z nájmu obecního bytu — přes
 anchor = "kauza-obecni-byt"
 dot = "dot-fact"
 subjects = ["bartha"]
+
+[[extra.timeline]]
+date = "2019"
+title = "Vydáno osvědčení pro stupeň utajení Tajné (dle pozdější odpovědi Úřadu vlády)"
+anchor = "kauza-proverka"
+dot = "dot-fact"
+subjects = ["bartha"]
+
+[[extra.timeline]]
+date = "2022-12"
+title = "Vede prezidentskou kampaň Andreje Babiše; dle zpravodajství spolupracují „už sedmým rokem“"
+anchor = "kauza-kampan"
+dot = "dot-fact"
+subjects = ["bartha"]
+
+[[extra.timeline]]
+date = "2024-09-13"
+title = "Agrofert ji označuje za country managerku AGROFERT Hungária s odpovědností za rozvoj koncernu ve východní Evropě"
+anchor = "kauza-karierni-draha"
+dot = "dot-fact"
+subjects = ["bartha"]
+
+[[extra.timeline]]
+date = "2025-12-15"
+title = "Vláda ji na ustavující schůzi jmenovala vedoucí Úřadu vlády"
+anchor = "kauza-karierni-draha"
+dot = "dot-fact"
+subjects = ["bartha"]
 [[extra.cases]]
 anchor = "kauza-obecni-byt"
 period = "2004–2026"
@@ -59,8 +87,28 @@ period = "2015–2026"
 title = "Kariérní dráha mezi Agrofertem a státním aparátem"
 status = "status-single"
 label = "Doložená posloupnost funkcí"
-summary = "Doložená posloupnost: pověření řízením Úřadu vlády 2018–2021, poté pracovní zařazení v holdingu Agrofert potvrzené mluvčím společnosti, poté opět vedení Úřadu vlády. Posloupnost funkcí sama o sobě není důkazem o ovlivnění jakéhokoli rozhodnutí."
-claims = ["CLM-06", "CLM-07", "CLM-08"]
+summary = "Doložená posloupnost: pověření řízením Úřadu vlády 2018–2021, poté pracovní zařazení v holdingu Agrofert (business development manager potvrzený mluvčím; firemní web ji v září 2024 označil za country managerku AGROFERT Hungária s odpovědností za rozvoj koncernu ve východní Evropě), a 15. prosince 2025 jmenování vedoucí Úřadu vlády na ustavující schůzi vlády. Posloupnost funkcí sama o sobě není důkazem o ovlivnění jakéhokoli rozhodnutí."
+claims = ["CLM-06", "CLM-07", "CLM-08", "CLM-09", "CLM-13"]
+subjects = ["bartha"]
+
+[[extra.cases]]
+anchor = "kauza-kampan"
+period = "2022–2023"
+title = "Vedení prezidentské kampaně Andreje Babiše"
+status = "status-single"
+label = "Doložená politická a organizační role"
+summary = "Bartha podle zpravodajství z prosince 2022 vedla prezidentskou kampaň Andreje Babiše a spolupracovala s ním „už sedmým rokem“; Babiš tehdy uvedl, že v případě volebního vítězství by se stala jeho kancléřkou — šlo o zamýšlenou budoucí roli deklarovanou v průběhu kampaně, nikoli o zastávanou funkci. Jde o doloženou politickou a organizační roli, žádný citovaný zdroj v souvislosti s ní netvrdí protiprávní jednání."
+claims = ["CLM-10", "CLM-11"]
+subjects = ["bartha"]
+
+[[extra.cases]]
+anchor = "kauza-proverka"
+period = "2019–2026"
+title = "Bezpečnostní prověrka"
+status = "status-single"
+label = "Korektiv, ne kauza"
+summary = "Podle odpovědi Úřadu vlády na žádost podle informačního zákona má Bartha od roku 2019 osvědčení fyzické osoby pro stupeň utajení Tajné a osvědčení NATO Personnel Clearance Certificate; úřad uvedl, že splňuje požadavky na výkon funkce. Nejde o kauzu — záznam je veden jako doložený korektiv k případným spekulacím, které žádný citovaný zdroj nedokládá."
+claims = ["CLM-12"]
 subjects = ["bartha"]
 
 [extra.authorization]
@@ -100,6 +148,11 @@ pronajímatele**, ne rozhodnutí soudu.
 | <a id="clm-06"></a>[CLM-06](@/dossiers/tunde-bartha/claims/clm-06.md) | Tünde Bartha podle citovaného zpravodajství pracovala v holdingu Agrofert jako business development manager pro východní Evropu, Balkán a Blízký východ; její působení potvrdil mluvčí Agrofertu Pavel Heřmanský | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-03](@/dossiers/tunde-bartha/sources/src-03.md) |
 | <a id="clm-07"></a>[CLM-07](@/dossiers/tunde-bartha/claims/clm-07.md) | V červnu 2026 označují Tünde Barthu jako šéfku Úřadu vlády ČR dvě na sobě nezávislá celostátní média | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-01](@/dossiers/tunde-bartha/sources/src-01.md), [SRC-02](@/dossiers/tunde-bartha/sources/src-02.md) |
 | <a id="clm-08"></a>[CLM-08](@/dossiers/tunde-bartha/claims/clm-08.md) | Oficiální přehled Úřadu vlády ČR uvádí u Tünde Barthy za období 28. 6. 2018 až 17. 12. 2021 formulaci pověřena řízením, nikoli funkční období jako u ostatních osob v přehledu | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-04](@/dossiers/tunde-bartha/sources/src-04.md) |
+| <a id="clm-09"></a>[CLM-09](@/dossiers/tunde-bartha/claims/clm-09.md) | Vláda na ustavující schůzi 15. prosince 2025 jmenovala Tünde Barthu vedoucí Úřadu vlády; podle tiskového sdělení Úřadu vlády se jí „stala Tünde Bartha, která Úřad vlády řídila již za předchozí vlády Andreje Babiše“ | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-06](@/dossiers/tunde-bartha/sources/src-06.md) |
+| <a id="clm-10"></a>[CLM-10](@/dossiers/tunde-bartha/claims/clm-10.md) | Tünde Bartha vedla prezidentskou kampaň Andreje Babiše; podle zpravodajství z prosince 2022 s ním „úzce spolupracuje už sedmým rokem“, začínala s ním na ministerstvu financí a mezi lety 2017 a 2021 byla pověřena vedením Úřadu vlády | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-07](@/dossiers/tunde-bartha/sources/src-07.md) |
+| <a id="clm-11"></a>[CLM-11](@/dossiers/tunde-bartha/claims/clm-11.md) | Podle téhož zpravodajství by se Bartha v případě Babišova volebního vítězství stala jeho kancléřkou; šlo o zamýšlenou budoucí roli deklarovanou v průběhu kampaně, nikoli o zastávanou funkci | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-07](@/dossiers/tunde-bartha/sources/src-07.md) |
+| <a id="clm-12"></a>[CLM-12](@/dossiers/tunde-bartha/claims/clm-12.md) | Podle odpovědi Úřadu vlády na žádost podle informačního zákona, citované ve zpravodajství, má Bartha od roku 2019 osvědčení fyzické osoby pro stupeň utajení Tajné a osvědčení NATO Personnel Clearance Certificate; úřad uvedl, že „splňuje požadavky na výkon své funkce“ | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-08](@/dossiers/tunde-bartha/sources/src-08.md) |
+| <a id="clm-13"></a>[CLM-13](@/dossiers/tunde-bartha/claims/clm-13.md) | Agrofert v září 2024 na svém webu označil Barthu za country managerku společnosti AGROFERT Hungária, „která má zároveň na starosti řízení rozvoje koncernu ve východní Evropě“ a v dalších regionech, kam koncern dosud neexpandoval (Balkán, Blízký východ); jde o popis pracovního zařazení z firemního zdroje, ne o tvrzení o jakémkoli pochybení | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-09](@/dossiers/tunde-bartha/sources/src-09.md) |
 
 ## Obecní byt v Praze 3 a výpověď z nájmu {#kauza-obecni-byt}
 
@@ -150,7 +203,18 @@ nejsou totéž.
 Podle zpravodajství z 14. 8. 2024 pracovala v holdingu **Agrofert** jako
 business development manager pro východní Evropu, Balkán a Blízký
 východ; její působení **potvrdil mluvčí Agrofertu Pavel Heřmanský**
-([CLM-06](@/dossiers/tunde-bartha/claims/clm-06.md)). V červnu 2026 ji
+([CLM-06](@/dossiers/tunde-bartha/claims/clm-06.md)). Sám Agrofert ji
+v září 2024 na svém webu označil za **country managerku AGROFERT
+Hungária** s odpovědností za „řízení rozvoje koncernu ve východní
+Evropě“ a v dalších regionech, kam koncern dosud neexpandoval
+([CLM-13](@/dossiers/tunde-bartha/claims/clm-13.md)) — jde o popis
+pracovního zařazení z firemního zdroje, ne o tvrzení o pochybení.
+
+Návrat do státního aparátu je doložen primárním úředním zdrojem: vláda
+ji **15. prosince 2025** na ustavující schůzi jmenovala vedoucí Úřadu
+vlády ([CLM-09](@/dossiers/tunde-bartha/claims/clm-09.md)) — tím se
+uzavřela dřívější mezera
+[GAP-02](@/dossiers/tunde-bartha/gaps/gap-02.md). V červnu 2026 ji
 dvě na sobě nezávislá celostátní média označují jako šéfku Úřadu vlády
 ([CLM-07](@/dossiers/tunde-bartha/claims/clm-07.md)).
 
@@ -167,17 +231,48 @@ dobrých důvodů považovat za práci právě pro šéfa hnutí ANO", je v
 dossieru vedeno jako **atribuovaný komentář jmenovaného média**, ne jako
 zjištění tohoto webu.
 
+## Vedení prezidentské kampaně Andreje Babiše {#kauza-kampan}
+
+Třetí autorizované téma jsou její **veřejné role jako takové**. Bartha
+podle zpravodajství z prosince 2022 vedla prezidentskou kampaň Andreje
+Babiše; s kandidátem podle téhož textu „úzce spolupracuje už sedmým
+rokem“, začínala s ním na ministerstvu financí a mezi lety 2017 a 2021
+byla pověřena vedením Úřadu vlády
+([CLM-10](@/dossiers/tunde-bartha/claims/clm-10.md)). Babiš tehdy
+uvedl, že v případě volebního vítězství by se stala jeho **kancléřkou**
+([CLM-11](@/dossiers/tunde-bartha/claims/clm-11.md)).
+
+**Jak to číst.** Vedení kampaně je doložená politická a organizační
+role. Zmínka o kancléřce je **zamýšlená budoucí role deklarovaná
+v průběhu kampaně** — nikdy nešlo o zastávanou funkci a dossier ji tak
+nevede. Žádný citovaný zdroj v souvislosti s kampaní netvrdí
+protiprávní jednání.
+
+## Bezpečnostní prověrka {#kauza-proverka}
+
+Podle odpovědi Úřadu vlády na žádost podle informačního zákona,
+citované ve zpravodajství, má Bartha **od roku 2019** osvědčení fyzické
+osoby pro stupeň utajení **Tajné** a osvědčení **NATO Personnel
+Clearance Certificate**; úřad uvedl, že „splňuje požadavky na výkon své
+funkce“ ([CLM-12](@/dossiers/tunde-bartha/claims/clm-12.md)).
+
+**Proč je to tady.** Není to kauza. Záznam je veden jako doložený
+korektiv: případné spekulace o bezpečnostním riziku jejích zahraničních
+kontaktů žádný citovaný zdroj nedokládá — a tento dossier žádné takové
+tvrzení nenese.
+
 ## Co tento přehled nezkoumal {#mezery}
 
 Otevřené mezery vede [registr mezer](@/dossiers/tunde-bartha/gaps/_index.md):
 osud výpovědi z nájmu
-([GAP-01](@/dossiers/tunde-bartha/gaps/gap-01.md)), přesné datum nástupu
-do současné funkce
-([GAP-02](@/dossiers/tunde-bartha/gaps/gap-02.md)), prověřované a
+([GAP-01](@/dossiers/tunde-bartha/gaps/gap-01.md)), prověřované a
 nedoložené propojení s Jaroslavem Faltýnkem
-([GAP-03](@/dossiers/tunde-bartha/gaps/gap-03.md)) a data nástupu a
-odchodu z Agrofertu
-([GAP-04](@/dossiers/tunde-bartha/gaps/gap-04.md)).
+([GAP-03](@/dossiers/tunde-bartha/gaps/gap-03.md)) a přesná data
+nástupu a odchodu z Agrofertu
+([GAP-04](@/dossiers/tunde-bartha/gaps/gap-04.md)) — firemní zdroj
+z roku 2024 dokládá funkce, ne smluvní interval. Dřívější mezera
+[GAP-02](@/dossiers/tunde-bartha/gaps/gap-02.md) (datum nástupu do
+současné funkce) je uzavřena primárním úředním zdrojem z 15. 12. 2025.
 
 ## Metodické omezení
 
