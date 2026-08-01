@@ -80,3 +80,20 @@ export function computeReducers(graph, state) {
 
   return { nodeReducer, edgeReducer };
 }
+
+// Kolik uzlů filtr a hledání skutečně nechaly viditelných.
+//
+// Používá TYTÉŽ predikáty jako reducery výše. Kdyby si počítání psalo
+// vlastní podmínky, hlášené číslo by se dřív nebo později rozešlo s tím,
+// co uživatel na plátně vidí — a to je horší než číslo nehlásit vůbec.
+export function countMatching(graph, state) {
+  const query = (state.query || "").trim().toLowerCase();
+  const filters = state.filters || {};
+  const active = Boolean(filters.recordType || filters.dossier || query);
+  if (!active) return { matching: graph.order, total: graph.order, active: false };
+  let matching = 0;
+  graph.forEachNode((id, attrs) => {
+    if (matchesQuery(attrs, query) && matchesFilters(attrs, filters)) matching++;
+  });
+  return { matching, total: graph.order, active: true };
+}

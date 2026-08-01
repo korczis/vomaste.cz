@@ -8,7 +8,7 @@
 // (mission § 19.2): a page that omits the filter/path-finder markup just
 // doesn't get that feature, nothing throws.
 import { GraphController } from "./controller.js";
-import { computeReducers } from "./reducers.js";
+import { computeReducers, countMatching } from "./reducers.js";
 import { createGraphState } from "./state.js";
 import { readStateFromUrl, writeStateToUrl } from "./permalink.js";
 import { fetchLayer, readJsonIsland } from "./loader.js";
@@ -74,8 +74,28 @@ export async function initGraphView(containerId, dataIslandId, fullLayerUrl) {
 
   function refreshReducers() {
     if (!controller.graph) return;
-    const { nodeReducer, edgeReducer } = computeReducers(controller.graph, state.get());
+    const snapshot = state.get();
+    const { nodeReducer, edgeReducer } = computeReducers(controller.graph, snapshot);
     controller.setReducers(nodeReducer, edgeReducer);
+    announceFilter(snapshot);
+  }
+
+  // Filtr uzly ZTLUMÍ, ale nesmaže je z plátna, takže po zadání dotazu
+  // uživatel nepozná, jestli našel dva záznamy nebo dvě stě. Bez tohohle
+  // hlášení je hledání v grafu o 1631 uzlech odhad.
+  //
+  // Počítá countMatching TÝMIŽ predikáty jako reducery — jinak by se
+  // hlášené číslo rozešlo s tím, co je vidět.
+  function announceFilter(snapshot) {
+    if (!controller.graph) return;
+    const { matching, total, active } = countMatching(controller.graph, snapshot);
+    if (!active) return;
+    announce(
+      section,
+      matching === 0
+        ? `Filtru neodpovídá žádný z ${total} uzlů.`
+        : `Filtru odpovídá ${matching} z ${total} uzlů.`,
+    );
   }
 
   function refreshInspector() {
@@ -143,6 +163,19 @@ export async function initGraphView(containerId, dataIslandId, fullLayerUrl) {
   if (searchEl) {
     searchEl.addEventListener("input", () => state.setQuery(searchEl.value));
   }
+  // Hloubka procházení: 0 = bez zvýraznění, 1/2 = kroky od vybraného uzlu,
+  // "component" = celá souvislá komponenta. Hodnota jde i do adresy, takže
+  // konkrétní pohled na okolí záznamu je sdílitelný.
+  const depthButtons = section ? section.querySelectorAll("[data-graph-depth]") : [];
+  depthButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const raw = btn.getAttribute("data-graph-depth");
+      const value = raw === "component" ? "component" : Number(raw);
+      state.setFocusDepth(value);
+      depthButtons.forEach((b) => b.setAttribute("aria-pressed", String(b === btn)));
+    });
+  });
+
   filterEls.forEach((select) => {
     select.addEventListener("change", () => {
       const key = select.getAttribute("data-graph-filter") === "record_type" ? "recordType" : "dossier";
