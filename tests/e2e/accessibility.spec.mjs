@@ -18,6 +18,8 @@ const STRANKY = [
   // Graph workbench (T-027) — toolbar, filtry, inspector panel.
   ["globální mapa", "/map/"],
   ["lokální graf dossieru", "/dossiers/macinka-turek/"],
+  // Entity dossier overview (T-018) — view tabs, rozšířený metric strip, gaps preview.
+  ["entity dossier — přehled", "/dossiers/petr-macinka/"],
 ];
 
 for (const [nazev, cesta] of STRANKY) {

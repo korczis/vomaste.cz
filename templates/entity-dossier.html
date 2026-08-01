@@ -43,18 +43,31 @@
   <article class="dossier-prose mb-10">{{ section.content | safe }}</article>
 
   {% set counts = load_data(path="data/dossiers/" ~ dossier_slug ~ "/stats.toml") %}
-  <section class="mb-12 grid grid-cols-2 gap-4 sm:grid-cols-4" aria-label="Souhrnné metriky dossieru">
+  <section class="mb-3 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-6" aria-label="Souhrnné metriky dossieru">
     {{ ui::stat_tile(value=counts.sources_total, label="Citovaných zdrojů", url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/sources/_index.md")) }}
     {{ ui::stat_tile(value=counts.cases_total, label="Sledované kauzy", url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/cases/_index.md")) }}
     {{ ui::stat_tile(value=counts.claims_total, label="Tvrzení v registru", url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/claims/_index.md")) }}
     {{ ui::stat_tile(value=counts.gaps_total, label="Otevřené mezery", url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/gaps/_index.md")) }}
+    {{ ui::stat_tile(value=counts.entities_total, label="Entit v grafu", url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/entities/_index.md")) }}
+    {{ ui::stat_tile(value=counts.relations_total, label="Vztahů v grafu", url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/relations/_index.md")) }}
   </section>
-  <p class="-mt-8 mb-8 text-xs text-white/55">Metriky se počítají automaticky, filtrované z kanonického registru podle toho, koho se záznam týká — viz <code>scripts/dossier/generate-stats.mjs</code>.</p>
+  <p class="mb-8 text-xs text-white/55">Metriky se počítají automaticky, filtrované z kanonického registru podle toho, koho se záznam týká — viz <code>scripts/dossier/generate-stats.mjs</code>.</p>
 
-  <nav aria-label="Registry dossieru" class="mb-12 flex flex-wrap gap-2 text-sm">
-    <a href="{{ get_url(path='@/dossiers/' ~ dossier_slug ~ '/entities/_index.md') | safe }}" class="rounded-full border border-white/15 px-3 py-1 text-white/70 no-underline hover:border-white/30 hover:text-white">Entity</a>
-    <a href="{{ get_url(path='@/dossiers/' ~ dossier_slug ~ '/relations/_index.md') | safe }}" class="rounded-full border border-white/15 px-3 py-1 text-white/70 no-underline hover:border-white/30 hover:text-white">Vztahy</a>
-    <a href="{{ get_url(path='@/dossiers/' ~ dossier_slug ~ '/evidence/_index.md') | safe }}" class="rounded-full border border-white/15 px-3 py-1 text-white/70 no-underline hover:border-white/30 hover:text-white">Evidence</a>
+  {#- View tabs (mission § 6.2): real links to each registry's own
+      canonical route, not in-page anchors or JS-only tabs — an entity
+      dossier's registries are separately-routable generated views, so
+      the "active section" and the URL must be the same thing. -#}
+  <nav aria-label="Sekce dossieru" class="sticky top-0 z-20 -mx-6 mb-12 overflow-x-auto border-b border-white/10 bg-black/90 px-6 py-2 backdrop-blur">
+    <ul class="flex w-max gap-1 text-sm">
+      <li><a href="{{ get_url(path='@/dossiers/' ~ dossier_slug ~ '/_index.md') | safe }}" aria-current="page" class="block whitespace-nowrap rounded-md bg-white/5 px-3 py-1.5 text-white no-underline">Přehled</a></li>
+      <li><a href="{{ get_url(path='@/dossiers/' ~ dossier_slug ~ '/claims/_index.md') | safe }}" class="block whitespace-nowrap rounded-md px-3 py-1.5 text-white/60 no-underline hover:bg-white/5 hover:text-white">Tvrzení</a></li>
+      <li><a href="{{ get_url(path='@/dossiers/' ~ dossier_slug ~ '/sources/_index.md') | safe }}" class="block whitespace-nowrap rounded-md px-3 py-1.5 text-white/60 no-underline hover:bg-white/5 hover:text-white">Zdroje</a></li>
+      <li><a href="{{ get_url(path='@/dossiers/' ~ dossier_slug ~ '/cases/_index.md') | safe }}" class="block whitespace-nowrap rounded-md px-3 py-1.5 text-white/60 no-underline hover:bg-white/5 hover:text-white">Kauzy</a></li>
+      <li><a href="{{ get_url(path='@/dossiers/' ~ dossier_slug ~ '/entities/_index.md') | safe }}" class="block whitespace-nowrap rounded-md px-3 py-1.5 text-white/60 no-underline hover:bg-white/5 hover:text-white">Entity</a></li>
+      <li><a href="{{ get_url(path='@/dossiers/' ~ dossier_slug ~ '/relations/_index.md') | safe }}" class="block whitespace-nowrap rounded-md px-3 py-1.5 text-white/60 no-underline hover:bg-white/5 hover:text-white">Vztahy</a></li>
+      <li><a href="{{ get_url(path='@/dossiers/' ~ dossier_slug ~ '/evidence/_index.md') | safe }}" class="block whitespace-nowrap rounded-md px-3 py-1.5 text-white/60 no-underline hover:bg-white/5 hover:text-white">Evidence</a></li>
+      <li><a href="{{ get_url(path='@/dossiers/' ~ dossier_slug ~ '/gaps/_index.md') | safe }}" class="block whitespace-nowrap rounded-md px-3 py-1.5 text-white/60 no-underline hover:bg-white/5 hover:text-white">Mezery</a></li>
+    </ul>
   </nav>
 
   {% set canonical_section = get_section(path="dossiers/" ~ canonical_slug ~ "/_index.md") %}
@@ -75,6 +88,37 @@
         <span class="font-semibold text-white group-hover:text-[#f3e5c0]">{{ c.title }}</span>
         <span class="text-xs text-white/55">{{ c.period }}</span>
         <span class="mt-2 text-sm text-white/70">{{ c.summary }}</span>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {#- Open-gaps preview (mission § 6.2, "otevřené mezery"): same
+      subjects-filter the full gaps registry (entity-dossier-registry.html)
+      uses, capped to a short list here — an open question is not a
+      finding either way, just what the cited sources haven't settled. -#}
+  {% set gaps_section = get_section(path="dossiers/" ~ canonical_slug ~ "/gaps/_index.md") %}
+  {% set_global filtered_gaps = [] %}
+  {% for g in gaps_section.pages %}
+    {% if g.extra.subjects and g.extra.subjects is containing(subject) %}
+      {% set_global filtered_gaps = filtered_gaps | concat(with=[g]) %}
+    {% endif %}
+  {% endfor %}
+  {% if filtered_gaps | length > 0 %}
+  <section aria-labelledby="gaps-preview-heading" class="mb-12">
+    <div class="mb-3 flex flex-wrap items-baseline justify-between gap-2">
+      <h2 id="gaps-preview-heading" class="text-xs font-semibold uppercase tracking-wide text-white/55">Otevřené mezery ({{ filtered_gaps | length }})</h2>
+      <a href="{{ get_url(path='@/dossiers/' ~ dossier_slug ~ '/gaps/_index.md') | safe }}" class="text-xs text-[#f3e5c0] no-underline hover:underline">Celý registr mezer &rarr;</a>
+    </div>
+    <div class="grid gap-3 sm:grid-cols-2">
+      {% for g in filtered_gaps | slice(end=4) %}
+      <a href="{{ g.permalink | safe }}" class="registry-card group">
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="font-mono text-xs text-[#f3e5c0]">{{ g.extra.gap_id }}</span>
+          <span class="gap-priority-badge {% if g.extra.priority == 'vysoká' %}gap-priority-high{% else %}gap-priority-low{% endif %}">Priorita: {{ g.extra.priority }}</span>
+        </div>
+        <span class="font-semibold text-white group-hover:text-[#f3e5c0]">{{ g.title | split(pat=" — ") | last }}</span>
       </a>
       {% endfor %}
     </div>
