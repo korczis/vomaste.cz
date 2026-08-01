@@ -317,6 +317,53 @@
   }
   .graph-chip[aria-pressed="true"] { background: rgba(243,229,192,0.12); border-color: rgba(243,229,192,0.4); color: var(--accent); }
   .graph-chip:hover { border-color: var(--border-strong); color: var(--text); }
+  .graph-chip:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+
+  /* Graph workbench toolbar/inspector (templates/map.html,
+     templates/dossier.html; assets/js/modules/graph/index.js). Search
+     input and filter selects share the chip's pill sizing so the toolbar
+     reads as one row of controls, not mismatched widget styles. */
+  .graph-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }
+  .graph-search-input, .graph-filter-select {
+    border-radius: 9999px; border: 1px solid var(--border-strong);
+    background: var(--surface-elevated); color: var(--text);
+    padding: 0.3rem 0.75rem; font-size: 0.75rem; min-height: 2rem;
+  }
+  .graph-search-input { min-width: 12rem; }
+  .graph-search-input:focus-visible, .graph-filter-select:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+  .graph-focus-group { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+
+  /* Graph + inspector side by side once there's room; stacked below that
+     (mission § 8.1/8.2) — the canvas keeps most of the width either way. */
+  .graph-workbench-grid { display: grid; grid-template-columns: 1fr; gap: 0.75rem; }
+  @media (min-width: 1024px) { .graph-workbench-grid { grid-template-columns: minmax(0, 1fr) 20rem; } }
+  .graph-canvas-box { min-width: 0; }
+
+  .graph-inspector {
+    border: 1px solid rgba(255,255,255,0.1); border-radius: 0.5rem;
+    background: rgba(255,255,255,0.02); padding: 1rem; font-size: 0.8125rem;
+    max-height: 520px; overflow-y: auto;
+  }
+  .graph-inspector-empty { color: var(--text-faint); font-size: 0.8125rem; }
+  .graph-inspector-heading { font-weight: 600; color: var(--text); margin-bottom: 0.15rem; }
+  .graph-inspector-kind { font-size: 0.6875rem; text-transform: uppercase; letter-spacing: 0.03em; color: var(--text-faint); margin-bottom: 0.75rem; }
+  .graph-inspector-fields { display: grid; gap: 0.5rem; }
+  .graph-inspector-row dt { font-size: 0.6875rem; color: var(--text-faint); }
+  .graph-inspector-row dd { font-size: 0.8125rem; color: var(--text); word-break: break-word; }
+  .graph-inspector-note { margin-top: 0.75rem; font-size: 0.75rem; color: var(--text-faint); font-style: italic; }
+  .graph-inspector-open { display: inline-block; margin-top: 1rem; font-size: 0.8125rem; color: var(--accent); }
+  .graph-inspector-open:hover { text-decoration: underline; }
+
+  .graph-path-note { font-size: 0.75rem; color: var(--text-faint); margin-bottom: 0.5rem; }
+  .graph-path-steps { display: flex; flex-wrap: wrap; align-items: center; gap: 0.15rem; font-size: 0.8125rem; }
+  .graph-path-steps a { color: var(--accent); }
+  .graph-path-edge { color: var(--text-faint); }
+
+  /* WebGL unavailable/blocked fallback (mission § 13) — replaces the
+     canvas container, never a blank box. */
+  .graph-fallback { display: flex; height: 100%; flex-direction: column; align-items: center; justify-content: center; gap: 0.4rem; padding: 2rem; text-align: center; }
+  .graph-fallback-heading { font-weight: 600; color: var(--text); }
+  .graph-fallback p { font-size: 0.8125rem; color: var(--text-faint); max-width: 28rem; }
 
   .edge-status-dot { display: inline-block; width: 0.55rem; height: 0.55rem; border-radius: 9999px; margin-right: 0.4rem; }
   .edge-status-dot.edge-corroborated { background: #4ade80; }

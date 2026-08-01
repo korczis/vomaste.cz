@@ -4,7 +4,7 @@
 // ([data-graph-workbench] pages: templates/map.html, templates/dossier.html
 // via templates/base.html's extra_js block), never to the shared bundle
 // every other page pays for.
-import { initGraphView } from "./modules/graph-view.js";
+import { initGraphView } from "./modules/graph/index.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   // Both checked defensively inside initGraphView (container/data-island

@@ -6,7 +6,7 @@
 {% endblock extra_js %}
 
 {% block content %}
-<main class="mx-auto max-w-6xl px-6 py-12 text-white" data-graph-workbench>
+<main class="mx-auto max-w-[90rem] px-6 py-12 text-white" data-graph-workbench>
   {{ ui::page_header(title=section.title, description=section.description, breadcrumb_items=[
     "Domů::" ~ get_url(path="@/_index.md"),
     "Globální mapa",
@@ -20,7 +20,7 @@
       only); `curated` is the small entity-relationship layer, inlined below
       like before. The much larger full-registry layer is NEVER read here —
       it's fetched client-side, lazily, only once its layer button is
-      activated (assets/js/modules/graph-view.js). -#}
+      activated (assets/js/modules/graph/index.js). -#}
   {% set manifest = load_data(path="static/data/graph/manifest.json") %}
   {% set curated = load_data(path="static/data/graph/global-curated.json") %}
 
@@ -44,9 +44,9 @@
     </div>
   </section>
 
-  <section aria-labelledby="global-graph-heading" class="mb-12">
+  <section aria-labelledby="global-graph-heading" class="mb-12" data-graph-section>
     <h2 id="global-graph-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Globální graf</h2>
-    <p class="mb-4 text-xs text-white/50">Agregovaná projekce lokálních grafů výše uvedených dossierů — ne automaticky rozšiřovaná investigace. Klikněte na uzel nebo hranu pro otevření jeho stránky.</p>
+    <p class="mb-4 text-xs text-white/50">Agregovaná projekce lokálních grafů výše uvedených dossierů — ne automaticky rozšiřovaná investigace. Klikněte na uzel nebo hranu pro výběr a detail; otevření celého záznamu je samostatný odkaz v panelu vpravo.</p>
 
     {#- Dvě vrstvy téhož datasetu, obě generované:
         • kurátorská — ručně psané uzly a hrany z graph.toml (entity a jejich
@@ -54,12 +54,39 @@
         • celý registr — odvozená mechanicky z registrů, každý záznam je uzel
           a každá hrana je odkaz, který ten záznam sám deklaruje.
         Čísla u přepínače jsou spočítaná z dat, ne napsaná do šablony. -#}
-    <div class="mb-4 flex flex-wrap items-center gap-2" role="group" aria-label="Vrstva mapy">
+    <div class="graph-toolbar mb-3" role="group" aria-label="Vrstva mapy">
       <button type="button" data-graph-layer="curated" aria-pressed="true"
         class="graph-chip">Vztahy entit ({{ curated.nodes | length }} uzlů / {{ curated.edges | length }} hran)</button>
       <button type="button" data-graph-layer="full" aria-pressed="false"
         class="graph-chip">Celý registr ({{ manifest.layers.registry.node_count }} uzlů / {{ manifest.layers.registry.edge_count }} hran)</button>
       <button type="button" class="fs-btn ml-auto" data-fs-target="global-map-box" title="Zobrazit na celou obrazovku" aria-label="Zobrazit na celou obrazovku">⛶</button>
+    </div>
+    <div class="graph-toolbar mb-4" role="group" aria-label="Nástroje mapy">
+      <label class="sr-only" for="graph-search-input">Hledat v grafu</label>
+      <input id="graph-search-input" type="search" data-graph-search placeholder="Hledat podle názvu, ID, dossieru…" class="graph-search-input">
+      <label class="sr-only" for="graph-filter-record-type">Filtrovat podle typu záznamu</label>
+      <select id="graph-filter-record-type" data-graph-filter="record_type" class="graph-filter-select">
+        <option value="">Všechny typy záznamu</option>
+        <option value="entity">Entity</option>
+        <option value="claim">Tvrzení</option>
+        <option value="source">Zdroje</option>
+        <option value="case">Kauzy</option>
+        <option value="gap">Mezery</option>
+      </select>
+      <label class="sr-only" for="graph-filter-dossier">Filtrovat podle dossieru</label>
+      <select id="graph-filter-dossier" data-graph-filter="dossier" class="graph-filter-select">
+        <option value="">Všechny dossiery</option>
+        {% for d in manifest.dossiers %}
+        <option value="{{ d.slug }}">{{ d.title }}</option>
+        {% endfor %}
+      </select>
+      <div class="graph-focus-group" role="group" aria-label="Fokus na výběr">
+        <button type="button" data-graph-action="focus-1" class="graph-chip">1 krok</button>
+        <button type="button" data-graph-action="focus-2" class="graph-chip">2 kroky</button>
+        <button type="button" data-graph-action="focus-component" class="graph-chip">Celá komponenta</button>
+        <button type="button" data-graph-action="focus-clear" class="graph-chip">Zrušit fokus</button>
+      </div>
+      <button type="button" data-graph-action="reset-view" class="graph-chip">Reset pohledu</button>
     </div>
     <p class="mb-4 text-xs text-white/55" data-graph-layer-note>
       Kurátorská vrstva ukazuje entity a doložené vazby mezi nimi. „Celý registr"
@@ -69,15 +96,37 @@
       stojí bez hran, protože vazbu na konkrétní tvrzení dnes v datech nemají —
       dokreslit ji odhadem by znamenalo vymyslet si vztah, který nikde není.
       Registrová vrstva se stáhne až při přepnutí na ni — nenačítá se předem.
+      Fokus ukazuje jen dosažitelnost přes deklarované vazby v tomto datasetu,
+      nikdy tvrzení o přímém vztahu mezi krajními uzly.
     </p>
-    <div id="global-map-box" class="fs-box mb-2 overflow-hidden rounded-lg border border-white/10">
-      <div id="global-map-view"
-           data-graph-view
-           data-data-island="global-graph-data"
-           data-full-layer-url="{{ get_url(path='data/graph/global-registry.json', cachebust=true) | safe }}"
-           class="h-[520px] w-full bg-black/40"></div>
+
+    <div class="graph-workbench-grid">
+      <div id="global-map-box" class="fs-box graph-canvas-box overflow-hidden rounded-lg border border-white/10">
+        <div id="global-map-view"
+             data-graph-view
+             data-data-island="global-graph-data"
+             data-full-layer-url="{{ get_url(path='data/graph/global-registry.json', cachebust=true) | safe }}"
+             class="h-[520px] w-full bg-black/40"></div>
+      </div>
+      <aside data-graph-inspector aria-label="Detail vybraného záznamu" class="graph-inspector">
+        <p class="graph-inspector-empty">Nic není vybráno. Klikněte na uzel nebo hranu.</p>
+      </aside>
     </div>
-    <noscript><p class="mb-8 text-xs text-white/50">Interaktivní mapa vyžaduje JavaScript — použijte textový registr níže.</p></noscript>
+    <p class="sr-only" data-graph-status role="status" aria-live="polite"></p>
+    <noscript><p class="mb-8 mt-4 text-xs text-white/50">Interaktivní mapa vyžaduje JavaScript — použijte textový registr níže.</p></noscript>
+
+    <details class="graph-path-finder mt-4">
+      <summary class="graph-chip w-fit cursor-pointer">Najít cestu mezi dvěma uzly</summary>
+      <div class="mt-3 flex flex-wrap items-center gap-2">
+        <label class="sr-only" for="graph-path-from">Výchozí uzel</label>
+        <select id="graph-path-from" data-graph-path-from class="graph-filter-select"></select>
+        <span aria-hidden="true" class="text-white/55">&rarr;</span>
+        <label class="sr-only" for="graph-path-to">Cílový uzel</label>
+        <select id="graph-path-to" data-graph-path-to class="graph-filter-select"></select>
+        <button type="button" data-graph-action="find-path" class="graph-chip">Najít cestu</button>
+      </div>
+      <div data-graph-path-result class="mt-3 text-sm text-white/70"></div>
+    </details>
   </section>
 
   <section aria-labelledby="global-text-heading" class="mb-12">
@@ -107,9 +156,9 @@
 </main>
 
 {#- Same JSON-island pattern as templates/dossier.html's local graph — read
-    by assets/js/modules/graph-view.js. Only the small curated layer is
+    by assets/js/modules/graph/index.js. Only the small curated layer is
     inlined; the full registry layer (static/data/graph/global-registry.json,
     generated by scripts/dossier/build-graph-projections.mjs) is fetched
-    lazily by graph-view.js instead, never embedded here. -#}
+    lazily by assets/js/modules/graph/loader.js instead, never embedded here. -#}
 <script type="application/json" id="global-graph-data">{{ curated | json_encode | safe }}</script>
 {% endblock content %}

@@ -22,7 +22,7 @@ import { initStatusChart } from "./modules/charts.js";
 import { initFullscreenButtons } from "./modules/fullscreen.js";
 import { initSidebarAria } from "./modules/shell.js";
 import { initSqlConsole } from "./modules/sql-console.js";
-// Sigma/Graphology (assets/js/modules/graph-view.js) are NOT imported here —
+// Sigma/Graphology (assets/js/modules/graph/index.js) are NOT imported here —
 // they're a separate entrypoint (assets/js/graph-app.js, built to
 // static/js/graph-app.js) loaded only by pages with a graph
 // (templates/base.html's extra_js block), so every other page's bundle
