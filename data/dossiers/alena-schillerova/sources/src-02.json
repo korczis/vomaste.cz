@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "title": "SRC-02 — Deník.cz",
+  "description": "Národní rozpočtová rada uvedla, že návrh rozpočtu na rok 2026 je v rozporu se zákonem o pravidlech rozpočtové odpovědnosti; reakce ministerstva.",
+  "outlet": "Deník.cz (VLTAVA LABE MEDIA)",
+  "sourceType": "celostátní zpravodajství",
+  "url": "https://www.denik.cz/ekonomika/rozpocet-schodek-narodni-rozpoctova-rada-stanovisko-rozpor-schillerova/",
+  "published": "2026-01-28",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-04"
+    }
+  ],
+  "subjects": [
+    "schillerova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Deník.cz (aktualizováno 28. 1. 2026) informoval, že Národní rozpočtová\nrada ve svém stanovisku označila návrh státního rozpočtu na rok 2026 za\n**nepochybně v rozporu** se zákonem o pravidlech rozpočtové odpovědnosti\na situaci označila za bezprecedentní. Podle rady měl být maximální\npřípustný schodek 247 miliard korun, nikoli navržených 310 miliard;\nz požadovaných dvou procent HDP na obranu podle jejího výpočtu\nodůvodňuje výdaje nad vypočtený limit jen 10 miliard.\n\nČlánek uvádí i reakci ministerstva a ministryně: výdajové limity se podle\nní vztahují jen na rozpočty projednávané v běžném září­ovém termínu, ne\nna přepracované verze po zamítnutí Sněmovnou; ministerstvo zároveň\nrozporuje výpočet rady s tím, že obranné výdaje 55 miliard odůvodňují\nlimit 292 miliard.\n\n**Poznámka k povaze zdroje**: stanovisko Národní rozpočtové rady je\nposouzení nezávislého odborného orgánu, **ne** soudní rozhodnutí — dossier\nje uvádí jako doložené stanovisko orgánu, nikoli jako pravomocně\nrozhodnutou otázku porušení zákona. Spor o výpočet zůstává otevřený a\ndossier vede obě čísla vedle sebe, ne jen jedno."
+    }
+  ],
+  "order": 2
+}

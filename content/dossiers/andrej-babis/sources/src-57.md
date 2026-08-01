@@ -1,23 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-57 — ČeskéNoviny.cz (ČTK): Babiš byl obžalován v kauze Čapí hnízdo, označil to za politický proces (21. 3. 2022)"
 description = "Obžaloba k Městskému soudu v Praze: Babiš pro pomoc k dotačnímu podvodu, Nagyová pro dotační podvod a poškození finančních zájmů EU; hrozí až deset let."
 template = "dossier-source.html"
 weight = 57
 
 [extra]
-subjects = ["babis"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-57"
+view_model = "generated/views/dossiers/andrej-babis/sources/src-57.json"
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-57"
-outlet = "ČeskéNoviny.cz (ČTK)"
-src_type = "zpravodajství"
-url = "https://www.ceskenoviny.cz/zpravy/babis-byl-obzalovan-v-kauze-capi-hnizdo-oznacil-to-za-politicky-proces/2180812"
-published = "2022-03-21"
-retrieved = "2026-08-01"
-claims = ["CLM-80", "CLM-81"]
 +++
-
 Agenturní zpráva ČTK z 21. 3. 2022: v kauze Čapí hnízdo byla podána
 obžaloba k Městskému soudu v Praze — na Andreje Babiše pro pomoc ke
 zločinu dotačního podvodu a na Janu Nagyovou pro dotační podvod a

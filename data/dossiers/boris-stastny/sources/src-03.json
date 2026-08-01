@@ -1,0 +1,52 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-03",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/boris-stastny"
+  },
+  "title": "SRC-03 — ČeskéNoviny.cz (ČTK)",
+  "description": "Na úřadu vlády se našlo nahrávací zařízení, Šťastný uvedl, že patřilo jemu",
+  "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceType": "zpravodajství",
+  "url": "https://www.ceskenoviny.cz/zpravy/na-uradu-vlady-se-naslo-nahravaci-zarizeni-stastny-uvedl-ze-patrilo-jemu/2849515",
+  "published": "2026-07-10",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-16"
+    }
+  ],
+  "subjects": [
+    "stastny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Na úřadu vlády se našlo nahrávací zařízení, Šťastný uvedl, že patřilo jemu**\n\nAgenturní zpráva ČTK o nálezu chytrého nahrávacího zařízení v jednacím sále vlády ve Strakově akademii 22. ledna 2026. Popisuje zařízení firmy Plaud, přiznání ministra Šťastného, postup Úřadu vlády (uschování, prověření IT a bezpečnostním oddělením) a fakt, že bezpečnostní složky nález oficiálně neprověřovaly.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 3
+}

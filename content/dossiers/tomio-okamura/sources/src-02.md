@@ -1,23 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-02 — Česká justice"
 description = "Nezávislé potvrzení rozsudku o plakátech SPD; obhajoba hnutí, dřívější vyhraný spor a procesní stav Okamurova stíhání."
 template = "dossier-source.html"
 weight = 2
 
 [extra]
-subjects = ["okamura"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-02"
+view_model = "generated/views/dossiers/tomio-okamura/sources/src-02.json"
 dossier = "tomio-okamura"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-02"
-outlet = "Česká justice"
-src_type = "odborné právní zpravodajství"
-url = "https://www.ceska-justice.cz/2026/06/plakaty-spd-u-soudu-odmitla-kampan-trestnym-cinem/"
-retrieved = "2026-07-30"
-published = "2026-06-03"
-claims = ["CLM-01", "CLM-02", "CLM-05", "CLM-06"]
 +++
-
 Česká justice dne 3. 6. 2026 nezávisle potvrzuje jádro věci: Obvodní soud
 pro Prahu 1 uznal SPD vinným z podněcování k nenávisti a uložil peněžitý
 trest 3 miliony korun; **rozsudek není pravomocný**.

@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/case.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/cases/CASE-02",
+  "@type": "vomaste:Case",
+  "recordType": "case",
+  "identifier": "CASE-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "title": "Novela stavebního zákona",
+  "summary": "Novela stavebního zákona — viz tvrzení CLM-10, CLM-11, CLM-12, CLM-13, CLM-14.",
+  "period": "2026",
+  "status": "status-single",
+  "statusLabel": "Sledované téma",
+  "anchor": "kauza-stavebni-zakon",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-29"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-30"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-31"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-32"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-33"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-34"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-35"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-36"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-37"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-38"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-39"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-17"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-22"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-18"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-19"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-20"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-21"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-23"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-24"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-25"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu\ndossieru](@/dossiers/karel-havlicek/_index.md#kauza-stavebni-zakon)."
+    }
+  ],
+  "order": 2
+}

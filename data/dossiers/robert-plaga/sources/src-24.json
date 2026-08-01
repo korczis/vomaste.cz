@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-24",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-24",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "title": "SRC-24 — Poslanecká sněmovna Parlamentu ČR",
+  "description": "Sněmovní tisk 232 — Novela z. — školský zákon, historie projednávání",
+  "outlet": "Poslanecká sněmovna Parlamentu ČR",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://www.psp.cz/sqw/historie.sqw?o=10&t=232",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-30"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-31"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-32"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-33"
+    }
+  ],
+  "subjects": [
+    "plaga"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Sněmovní tisk 232 — Novela z. — školský zákon, historie projednávání**\n\nNávrh předložen skupinou poslanců (Andrej Babiš, Robert Plaga) 18. 6. 2026, rozeslán poslancům jako tisk 232/0 dne 22. 6. 2026, zaslán vládě 22. 6. 2026, souhlasné stanovisko vlády rozesláno 22. 7. 2026 jako tisk 232/1. Dne 30. 7. 2026 předseda sněmovny doporučil projednání, určen zpravodaj Bc. Petr Kowanda, přikázáno Výboru pro vědu, vzdělávání, mládež a sport. Další projednávání možné od 1. 8. 2026; první čtení dosud neproběhlo.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 24
+}

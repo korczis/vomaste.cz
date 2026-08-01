@@ -3,7 +3,11 @@
 
 {% block content %}
 <main class="mx-auto max-w-6xl px-6 py-12 text-white">
+  {#- T-028 fáze F: řádky registru pochází z view modelu (hrany z
+      kanonických relation záznamů, resolvované entity), ne z front
+      matter section.pages — content adaptéry jsou generované. -#}
   {% set dossier_slug = section.extra.dossier %}
+  {% set idx = load_data(path="data/" ~ section.extra.view_model) %}
   {{ ui::page_header(title=section.title, description=section.description, breadcrumb_items=[
     "Dossier::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"),
     "Registr vztahů",
@@ -11,40 +15,34 @@
 
   <article class="dossier-prose mb-10">{{ section.content | safe }}</article>
 
-  {% set factual = section.pages | filter(attribute="extra.status", value="corroborated") %}
-  {% set disputed = section.pages | filter(attribute="extra.status", value="disputed") %}
-  {% set quotes = section.pages | filter(attribute="extra.status", value="quote") %}
+  {% set factual = idx.rows | filter(attribute="status", value="corroborated") %}
+  {% set disputed = idx.rows | filter(attribute="status", value="disputed") %}
+  {% set quotes = idx.rows | filter(attribute="status", value="quote") %}
   <div class="mb-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
-    {{ ui::stat_tile(value=section.pages | length, label="Vztahů celkem") }}
+    {{ ui::stat_tile(value=idx.rows | length, label="Vztahů celkem") }}
     {{ ui::stat_tile(value=factual | length, label="Fakt") }}
     {{ ui::stat_tile(value=disputed | length, label="Sporné") }}
     {{ ui::stat_tile(value=quotes | length, label="Citace") }}
   </div>
-
-  {% set entity = get_section(path="entities/_index.md") %}
-  {% set tvrzeni = get_section(path="dossiers/" ~ dossier_slug ~ "/claims/_index.md") %}
 
   {#- Every part of every row is its own <a> — source entity, relation
       label (-> relation detail), target entity, each CLM-##. No single
       row-wide link, since a row has more than one independent navigation
       target (the literal complaint this page exists to fix). -#}
   <div class="divide-y divide-white/10 rounded-lg border border-white/10">
-    {% for r in section.pages %}
-    {% set source_entity = entity.pages | filter(attribute="extra.entity_id", value=r.extra.source) | first %}
-    {% set target_entity = entity.pages | filter(attribute="extra.entity_id", value=r.extra.target) | first %}
-    <article id="{{ r.extra.rel_id }}" class="flex flex-col gap-1 p-3 text-sm sm:flex-row sm:flex-wrap sm:items-center sm:gap-2">
-      <span class="font-mono text-[0.65rem] text-white/55">{{ r.extra.rel_id }}</span>
-      {% if source_entity %}<a href="{{ source_entity.permalink | safe }}" class="inline-flex min-h-6 items-center font-medium text-white no-underline hover:underline">{{ source_entity.title }}</a>{% else %}<span class="text-white/50">{{ r.extra.source }}</span>{% endif %}
+    {% for r in idx.rows %}
+    <article id="{{ r.identifier }}" class="flex flex-col gap-1 p-3 text-sm sm:flex-row sm:flex-wrap sm:items-center sm:gap-2">
+      <span class="font-mono text-[0.65rem] text-white/55">{{ r.identifier }}</span>
+      {% if r.from.title %}<a href="{{ config.base_url }}{{ r.from.route }}" class="inline-flex min-h-6 items-center font-medium text-white no-underline hover:underline">{{ r.from.title }}</a>{% else %}<span class="text-white/50">{{ r.from.entityId }}</span>{% endif %}
       <span aria-hidden="true" class="text-white/55">&rarr;</span>
-      <a href="{{ r.permalink | safe }}" class="id-chip text-[#f3e5c0] no-underline hover:underline">{{ r.extra.label }}</a>
+      <a href="{{ config.base_url }}{{ r.route }}" class="id-chip text-[#f3e5c0] no-underline hover:underline">{{ r.label }}</a>
       <span aria-hidden="true" class="text-white/55">&rarr;</span>
-      {% if target_entity %}<a href="{{ target_entity.permalink | safe }}" class="inline-flex min-h-6 items-center font-medium text-white no-underline hover:underline">{{ target_entity.title }}</a>{% else %}<span class="text-white/50">{{ r.extra.target }}</span>{% endif %}
-      {{ ui::relation_status(status=r.extra.status) }}
-      {% if r.extra.claims %}
+      {% if r.to.title %}<a href="{{ config.base_url }}{{ r.to.route }}" class="inline-flex min-h-6 items-center font-medium text-white no-underline hover:underline">{{ r.to.title }}</a>{% else %}<span class="text-white/50">{{ r.to.entityId }}</span>{% endif %}
+      {{ ui::relation_status(status=r.status) }}
+      {% if r.claims %}
       <span class="flex flex-wrap gap-1">
-        {% for c in r.extra.claims %}
-          {% set clm_page = tvrzeni.pages | filter(attribute="extra.clm_id", value=c) | first %}
-          {% if clm_page %}<a href="{{ clm_page.permalink | safe }}" class="id-chip rounded bg-white/5 px-1.5 py-0.5 font-mono text-[0.65rem] text-[#f3e5c0] no-underline hover:bg-white/10">{{ c }}</a>{% endif %}
+        {% for c in r.claims %}
+          <a href="{{ config.base_url }}{{ c.route }}" class="id-chip rounded bg-white/5 px-1.5 py-0.5 font-mono text-[0.65rem] text-[#f3e5c0] no-underline hover:bg-white/10">{{ c.identifier }}</a>
         {% endfor %}
       </span>
       {% endif %}

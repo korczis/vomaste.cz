@@ -1,23 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-09 — Echo24: Babiš v kauze Čapí hnízdo jde o odsouzení na objednávku a politický proces (4. 5. 2026)"
 description = "Reakce premiéra Andreje Babiše na nepravomocný rozsudek nad spoluobžalovanou, v doslovných citacích."
 template = "dossier-source.html"
 weight = 9
 
 [extra]
-subjects = ["babis"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-09"
+view_model = "generated/views/dossiers/andrej-babis/sources/src-09.json"
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-09"
-outlet = "Echo24"
-src_type = "zpravodajství"
-url = "https://www.echo24.cz/a/HSZGH/zpravy-domov-babis-v-kauze-capi-hnizdo-jde-o-odsouzeni-na-objednavku-a-politicky-proces"
-published = "2026-05-04"
-retrieved = "2026-07-30"
-claims = ["CLM-07", "CLM-20", "CLM-22", "CLM-23"]
 +++
-
 Zpravodajský článek k reakci předsedy vlády na rozsudek ze 4. 5. 2026.
 **Co dokládá:** doslovné výroky Andreje Babiše o rozsudku a o kauze jako
 celku, jeho hodnocení postupu odvolacího senátu a rekapitulaci, že jeho

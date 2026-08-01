@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-44",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-44",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-44 — ČT24: Ústavní soud odmítl stížnost Vodňanské drůbeže kvůli nevyplaceným dotacím (23. 1. 2026)",
+  "description": "ÚS odmítl stížnost Vodňanské drůbeže ve sporu o 75mil. dotaci z PRV (smlouva 2018); podle usnesení si Babiš přes formální roli svěřenských správců ponechal faktický rozhodující vliv.",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/ustavni-soud-odmitl-stiznost-vodnanske-drubeze-kvuli-nevyplacenym-dotacim-369579",
+  "published": "2026-01-23",
+  "retrieved": "2026-08-01",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-66"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-67"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "ČT24 informuje, že Ústavní soud odmítl stížnost společnosti Vodňanská\ndrůbež ze skupiny Agrofert, která nesouhlasila se zamítnutím\n75milionové dotace z Programu rozvoje venkova (smlouva podepsána\nv roce 2018, kdy byl Andrej Babiš předsedou vlády). SZIF administraci\nžádosti v roce 2023 ukončil; správní žalobu zamítl pražský městský\nsoud a kasační stížnost Nejvyšší správní soud. Obě instituce vycházely\nmimo jiné z auditu Evropské komise z roku 2021. Z usnesení ÚS: „Ačkoli\nsvěřenští správci obou fondů formálně naplňují znaky ovládající osoby\npodle zákona o obchodních korporacích, faktický rozhodující vliv\nv zásadních záležitostech si ponechal Andrej Babiš.“\n\n**Poznámka k procesní přesnosti**: odmítnutí ústavní stížnosti uzavírá\nsprávní spor o nárok firmy na dotaci — nerozhoduje o trestní\nodpovědnosti kohokoli a závěr o faktickém vlivu se váže k dotačním\npravidlům a rozhodnému období.\n\n**Nezávislost**: jediný přímo otevřený zdroj k tomuto usnesení — stav\n`1 ZDROJ`. Otevřeno a přečteno 2026-08-01."
+    }
+  ],
+  "order": 44
+}

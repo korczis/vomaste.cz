@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-27",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-27",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "text": "Učitelská platforma k testování uvedla: „Pokud stát využije školní prostředí k získávání velmi citlivých údajů bez otevřené komunikace, důsledky ponese především škola a učitelé.“",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-28"
+    }
+  ],
+  "subjects": [
+    "plaga"
+  ],
+  "order": 27,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/robert-plaga/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

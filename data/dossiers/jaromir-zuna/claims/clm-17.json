@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-17",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-17",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "text": "Babiš v květnu 2026 veřejně kritizoval Zůnovu koncepci armády slovy 'Plánovat do roku 2040 jen 32 tisíc vojáků, s tím určitě nejsem spokojen'; požadoval nábor minimálně 2 000 vojáků ročně a urychlení posilování protivzdušné obrany.",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-12"
+    }
+  ],
+  "subjects": [
+    "zuna"
+  ],
+  "order": 17,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jaromir-zuna/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

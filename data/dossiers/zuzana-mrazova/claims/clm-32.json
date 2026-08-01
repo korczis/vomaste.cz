@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-32",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-32",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "text": "Petr Kulhánek (STAN), předchůdce Mrázové v čele ministerstva pro místní rozvoj, označil situaci za paradoxní — ministryně podle něj čerpá výhody obecního bydlení, zatímco zastavuje programy podpory dostupného nájemního bydlení.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-26"
+    }
+  ],
+  "subjects": [
+    "mrazova"
+  ],
+  "order": 32,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/zuzana-mrazova/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

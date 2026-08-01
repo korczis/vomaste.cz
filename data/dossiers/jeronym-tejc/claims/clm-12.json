@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-12",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-12",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "text": "Tejc na tiskové konferenci ke kauze prohlásil: „Soudci jsou ve svém rozhodování nezávislí, ale nemají být nezávislí na zákonech a neodpovědní.“",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-07"
+    }
+  ],
+  "subjects": [
+    "tejc"
+  ],
+  "order": 12,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jeronym-tejc/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

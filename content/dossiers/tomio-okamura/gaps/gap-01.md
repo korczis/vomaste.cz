@@ -1,20 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "GAP-01 — Výsledek odvolání SPD proti nepravomocnému rozsudku"
 description = "Hnutí oznámilo odvolání; výsledek nebyl ve zkontrolovaných zdrojích nalezen."
 template = "dossier-gap.html"
 weight = 1
 
 [extra]
-subjects = ["okamura"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/tomio-okamura/gaps/GAP-01"
+view_model = "generated/views/dossiers/tomio-okamura/gaps/gap-01.json"
 dossier = "tomio-okamura"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-01"
-priority = "vysoká"
-checked = "2026-07-30"
-claims = ["CLM-01", "CLM-03"]
 +++
-
 Rozsudek OS pro Prahu 1 z 3. 6. 2026 není pravomocný a SPD oznámila
 odvolání ([SRC-01](@/dossiers/tomio-okamura/sources/src-01.md)). Ve
 zkontrolovaných zdrojích **nebyl k datu kontroly nalezen** doklad o

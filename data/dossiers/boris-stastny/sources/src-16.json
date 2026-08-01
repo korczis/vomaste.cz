@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-16",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-16",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/boris-stastny"
+  },
+  "title": "SRC-16 — NašeTéma.cz",
+  "description": "PR tým ministra Šťastného upravil u příspěvku na sítích počty interakcí. Prý šlo o stylizaci",
+  "outlet": "NašeTéma.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://nasetema.cz/domaci/pr-tym-ministra-stastneho-upravil-u-prispevku-na-sitich-pocty-interakci-pry-slo-o-stylizaci/27104/",
+  "published": "2026-06-23",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-33"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-34"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-35"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-36"
+    }
+  ],
+  "subjects": [
+    "stastny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**PR tým ministra Šťastného upravil u příspěvku na sítích počty interakcí. Prý šlo o stylizaci**\n\nPůvodní zjištění o rozporu mezi metrikami na X a grafikou sdílenou na Facebooku a Instagramu. Uvádí konkrétní čísla z grafiky, hodnocení odborníka na sociální sítě Daniela Dočekala a vysvětlení ministrova týmu.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 16
+}

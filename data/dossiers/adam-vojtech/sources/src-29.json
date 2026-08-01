@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-29",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-29",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "title": "SRC-29 — Blesk.cz",
+  "description": "Vojtěch pod palbou okamurovců kvůli očkování: Hájí strategii, od SPD sklízí bídu za „cejchování“",
+  "outlet": "Blesk.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://www.blesk.cz/clanek/zpravy-politika/838510/vojtech-pod-palbou-okamurovcu-kvuli-ockovani-haji-strategii-od-spd-sklizi-bidu-za-cejchovani.html",
+  "published": "2026-05-03",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-48"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-49"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Vojtěch pod palbou okamurovců kvůli očkování: Hájí strategii, od SPD sklízí bídu za „cejchování“**\n\nPopis jednání sněmovního výboru, kde Jan Síla (SPD) tvrdil, že zaznamenávání odmítnutí očkování lidi „cejchuje“. Vojtěch odpověděl, že záznam se týká jen povinného očkování, a odmítl existenci registru odmítačů. Debatu inicializovali opoziční poslanci.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 29
+}

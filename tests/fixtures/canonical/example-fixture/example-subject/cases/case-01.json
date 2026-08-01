@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/case.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/example-subject/cases/CASE-01",
+  "@type": "vomaste:Case",
+  "recordType": "case",
+  "identifier": "CASE-01",
+  "dossier": { "@id": "https://vomaste.cz/id/dossiers/example-subject" },
+  "title": "Syntetická kauza Example",
+  "summary": "Testovací kauza spojující syntetické tvrzení CLM-01 a zdroj SRC-01 — žádná reálná událost.",
+  "period": "2026",
+  "status": "status-single",
+  "statusLabel": "Testovací procesní popisek — žádné rozhodnutí",
+  "anchor": "kauza-example",
+  "claims": [
+    { "@id": "https://vomaste.cz/id/dossiers/example-subject/claims/CLM-01" }
+  ],
+  "sources": [
+    { "@id": "https://vomaste.cz/id/dossiers/example-subject/sources/SRC-01" }
+  ],
+  "subjects": ["example"],
+  "content": [
+    { "type": "markdown", "value": "Syntetický popis kauzy." }
+  ],
+  "order": 1
+}

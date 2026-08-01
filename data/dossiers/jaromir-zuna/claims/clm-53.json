@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-53",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-53",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "text": "Oficiálním cílem je zvýšit počet profesionálních vojáků na 30 tisíc do roku 2030 a aktivních záloh na 10 tisíc, zatímco náčelník generálního štábu Karel Řehka uváděl, že pro naplnění cílů NATO je potřeba 37 500 příslušníků.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-22"
+    }
+  ],
+  "subjects": [
+    "zuna"
+  ],
+  "order": 53,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jaromir-zuna/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

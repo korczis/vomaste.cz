@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-04",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-04",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "title": "SRC-04 — Heroine.cz",
+  "description": "Pomýšlíš na sebevraždu? Chceš si ublížit? Ministr školství zastavil kritizované testování žáků 5. a 9. tříd",
+  "outlet": "Heroine.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://www.heroine.cz/spolecnost/ceska-skolni-inspekce-dotaznik-testovani-deti-psychicke-zdravi-deprese-sebevrazda",
+  "published": "2026-05-25",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-09"
+    }
+  ],
+  "subjects": [
+    "plaga"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Pomýšlíš na sebevraždu? Chceš si ublížit? Ministr školství zastavil kritizované testování žáků 5. a 9. tříd**\n\nDotazník ČŠI v povinném testování obsahoval otázky na psychické zdraví včetně myšlenek, zda by dítěti 'bylo lépe, kdyby nežilo nebo kdyby si ublížilo', a zjišťoval majetek domácnosti a povolání rodičů. Školám ani rodičům nebyl oznámen dopředu; Zatloukal to zdůvodnil obavou z ovlivnění odpovědí. Citace kritiky Učitelské platformy (Petra Mazancová).\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 4
+}

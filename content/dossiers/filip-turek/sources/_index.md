@@ -1,18 +1,16 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Zdroje — Filip Turek"
 description = "Zdroje z kanonického registru dossieru, které podkládají tvrzení o Filipu Turkovi."
 template = "entity-dossier-registry.html"
 
 [extra]
+generated = true
+view_model = "generated/views/dossiers/filip-turek/sources-index.json"
 dossier = "filip-turek"
-dossier_title = "Filip Turek"
-canonical_dossier = "macinka-turek"
-subject = "turek"
-registry = "sources"
 lang = "cs"
 seo_type = "CollectionPage"
 +++
-
 Filtrovaný pohled na [registr zdrojů](@/dossiers/macinka-turek/sources/_index.md) — jen zdroje relevantní k Filipu Turkovi.
 
 ## Co u každého zdroje stojí

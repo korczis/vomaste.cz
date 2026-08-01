@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-34",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-34",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "text": "Schillerová obhajovala novelu tvrzením, že Česko chce jít cestou, kterou se vydalo například Německo, tedy vyjímat obranné a infrastrukturní výdaje z fiskálních pravidel.",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-11"
+    }
+  ],
+  "subjects": [
+    "schillerova"
+  ],
+  "order": 34,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/alena-schillerova/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

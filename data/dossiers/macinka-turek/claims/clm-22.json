@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-22",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-22",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "text": "Macinka je/byl statutárním orgánem nebo společníkem v sedmi firmách/spolcích (DRILL COMPANY, Kauppias, Centrum pro výzkum terorismu, Motoristé Praha, PG Contract, Klub motoristů, MEAS Consulting); u DRILL COMPANY a Motoristé Praha skončil počátkem ledna 2026",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-24"
+    }
+  ],
+  "subjects": [
+    "macinka"
+  ],
+  "order": 22,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam tvrzení CLM-22 — shrnutí, stav a zdroje výše jsou úplné. Hlavní stránka dossieru zobrazuje tentýž text ze stejného zdroje; build proces ověřuje, že se neliší."
+    }
+  ]
+}

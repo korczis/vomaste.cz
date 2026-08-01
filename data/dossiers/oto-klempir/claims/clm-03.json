@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-03",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
+  },
+  "text": "RESPEKT dne 19. července 2026 uvedl, že Klempíř jako ministr prosazuje zákony v rozporu s předvolebními hesly svého hnutí; jde o hodnocení redakce, ne o zjištění kontrolního orgánu",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-02"
+    }
+  ],
+  "subjects": [],
+  "order": 3,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/oto-klempir/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

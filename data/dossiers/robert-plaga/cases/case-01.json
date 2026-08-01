@@ -1,0 +1,77 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/case.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/cases/CASE-01",
+  "@type": "vomaste:Case",
+  "recordType": "case",
+  "identifier": "CASE-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "title": "Zastavené testování žáků 5. a 9. tříd",
+  "summary": "Zastavené testování žáků 5. a 9. tříd — viz tvrzení CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07, CLM-08, CLM-09, CLM-10.",
+  "period": "2026",
+  "status": "status-single",
+  "statusLabel": "Sledované téma",
+  "anchor": "kauza-testovani",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-20"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-21"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-22"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-23"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-24"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-25"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-26"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-27"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-28"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-29"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-14"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-23"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-28"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-13"
+    }
+  ],
+  "subjects": [
+    "plaga"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu\ndossieru](@/dossiers/robert-plaga/_index.md#kauza-testovani)."
+    }
+  ],
+  "order": 1
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-24",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-24",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
+  },
+  "text": "V základní skutkové podstatě hrozil za žalovaný trestný čin trest do dvou let odnětí svobody, přičemž sazba se zvyšuje na šest měsíců až tři roky, je-li čin spáchán tiskem, filmem, rozhlasem, televizí nebo veřejně přístupnou počítačovou sítí.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-16"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-17"
+    }
+  ],
+  "subjects": [
+    "okamura"
+  ],
+  "order": 24,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/tomio-okamura/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

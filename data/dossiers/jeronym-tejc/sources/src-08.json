@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-08",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-08",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "title": "SRC-08 — Česká justice",
+  "description": "Ministr Tejc ostře: Mám velké pochybnosti o postupu Ústavního soudu ve sporu prezidenta",
+  "outlet": "Česká justice",
+  "sourceType": "zpravodajství",
+  "url": "https://www.ceska-justice.cz/2026/07/ministr-tejc-ostre-ustavni-soud-prezident-spor/",
+  "published": "2026-07-02",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-14"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-15"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-44"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-45"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-46"
+    }
+  ],
+  "subjects": [
+    "tejc"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Ministr Tejc ostře: Mám velké pochybnosti o postupu Ústavního soudu ve sporu prezidenta**\n\nTejc zpochybnil oprávnění Ústavního soudu vydat předběžné opatření v kompetenčním sporu prezidenta Pavla (účast na summitu NATO v Ankaře): „Mám velké pochybnosti o oprávněnosti Ústavního soudu vydat předběžné opatření ve věci kompetenčního sporu.“ Rozlišuje mezi zákazem jednání a nařizováním aktivních kroků vládě. Současně uvedl, že vláda rozhodnutí respektuje a naplní.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 8
+}

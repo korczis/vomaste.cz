@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-06",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-06",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "text": "K cenám na vysokorychlostních tratích Bednárik v prosinci 2025 řekl: „Neumím si představit, že by někdo v Čechách platil 1500 korun za lístek mezi Brnem a Prahou.“",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-03"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "order": 6,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/ivan-bednarik/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

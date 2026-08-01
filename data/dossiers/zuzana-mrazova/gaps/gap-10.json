@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/gaps/GAP-10",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-10",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "title": "GAP-10 — Není doloženo, zda přestupkové řízení pokrylo i chybějící DAR (polovina pozemku od tehdejš",
+  "description": "Podnět ministerstva spravedlnosti podle ČT24 zmiňoval půjčku i dar, ale zpravodajství o uložené pokutě z 25. 7. 2026 popisuje výhradně nezan",
+  "priority": "střední",
+  "checked": "2026-07-30",
+  "claims": [],
+  "subjects": [
+    "mrazova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Není doloženo, zda přestupkové řízení pokrylo i chybějící DAR (polovina pozemku od tehdejšího manžela v roce 2021), nebo jen nezanesenou půjčku 500 tisíc korun.\n\n**Proč je to mezera**: Podnět ministerstva spravedlnosti podle ČT24 zmiňoval půjčku i dar, ale zpravodajství o uložené pokutě z 25. 7. 2026 popisuje výhradně nezanesenou půjčku. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+    }
+  ],
+  "order": 10
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-19",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-19",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-19 — Hospodářské noviny (ČTK): Závěrečná zpráva auditu EU ke střetu zájmů (24. 4. 2021)",
+  "description": "Závěry finální auditní zprávy: ovládání svěřenských fondů, neoprávněnost dotací od 9. 2. 2017 a doporučená stoprocentní finanční oprava.",
+  "outlet": "Hospodářské noviny",
+  "sourceFamily": "ctk",
+  "sourceType": "agenturní zpravodajství",
+  "url": "https://domaci.hn.cz/c1-66914840-babis-ve-stretu-zajmu-definitivne-je-potvrdila-zaverecna-zprava-auditu-eu-cesko-bude-muset-vracet-dotace",
+  "published": "2021-04-24",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-43"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-44"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpráva ČTK publikovaná Hospodářskými novinami k závěrečné zprávě auditu\nEvropské komise.\n**Co dokládá:** odůvodnění auditorů, že Babiš jmenoval všechny činitele\nsvěřenských fondů a může je odvolat, a proto oba fondy — a jejich\nprostřednictvím Agrofert — ovládá; závěr, že dotace ze strukturálních\nfondů a ESF firmám skupiny jsou po 9. únoru 2017, kdy nabyla účinnosti\nnovela zákona o střetu zájmů, neoprávněné; doporučení stoprocentní\nfinanční opravy; a reakce Ministerstva pro místní rozvoj a Andreje Babiše.\n\n**Nezávislost:** agenturní zpráva ČTK (`family = \"ctk\"`).\n\n**Limity:** audit je **kontrolní a správní** nástroj Komise, ne soud.\nJeho závěr o střetu zájmů a o neoprávněnosti dotací se týká nároku na\nevropské peníze — nikoli trestní odpovědnosti kohokoli, o níž tento\ndokument nerozhoduje a ani rozhodovat nemůže."
+    }
+  ],
+  "order": 19
+}

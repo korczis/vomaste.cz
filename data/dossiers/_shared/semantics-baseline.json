@@ -1,0 +1,4 @@
+{
+  "$comment": "Grandfathered debt (T-028 fáze D): sémantická porušení zděděná 1:1 z dnešního content/** — migrace data nemění, proto je nemůže opravit. Každý záznam je konkrétní @id + pravidlo; nové porušení mimo tento allowlist je chyba brány (scripts/data/validate-semantics.mjs). Odmazávat průběžně s redakčními opravami.",
+  "entries": []
+}

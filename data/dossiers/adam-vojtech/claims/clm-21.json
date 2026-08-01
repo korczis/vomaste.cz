@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-21",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-21",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "text": "Předseda koaliční SPD Tomio Okamura označil bonusy VZP zaměstnavatelům za proočkovanost zaměstnanců proti chřipce (projekt „Zdravá firma“) za „uplácení zaměstnavatelů“ a nepřímý nátlak na zaměstnance. Jde o atribuovanou pozici koaliční strany.",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-12"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "order": 21,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/adam-vojtech/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

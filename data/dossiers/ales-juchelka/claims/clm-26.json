@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-26",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-26",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
+  },
+  "text": "Podle Juchelky bude o tom, zda České republice skutečně vznikla finanční újma, možné rozhodnout až po dokončení administrace projektů.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-15"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-14"
+    }
+  ],
+  "subjects": [
+    "juchelka"
+  ],
+  "order": 26,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/ales-juchelka/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

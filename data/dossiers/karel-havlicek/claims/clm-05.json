@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-05",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-05",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "text": "Podle FORUM 24 Evropská komise odmítla proplatit stomilionovou dotaci na linku na toustový chléb pekárny Penam (holding Agrofert) s odůvodněním, že projekt nebyl inovativní; auditoři EK uvedli, že velmi podobné tousty vyráběla německá společnost Lieken AG už v roce 2013.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-02"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "order": 5,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/karel-havlicek/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

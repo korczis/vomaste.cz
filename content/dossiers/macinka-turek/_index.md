@@ -1,194 +1,21 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Dossier — Petr Macinka a Filip Turek"
 description = "Neutrální, zdroji podložený přehled politické kariéry a veřejně řešených kauz Petra Macinky a Filipa Turka. Registr tvrzení, registr zdrojů, graf vztahů. Průběžně sledované, nedokončené případy."
 template = "dossier.html"
 aliases = ["/dossier/"]
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/macinka-turek"
+view_model = "generated/views/dossiers/macinka-turek/overview.json"
 dossier = "macinka-turek"
 record_type = "dossier"
-# "aggregate": a generated intersection/rollup over the two entity
-# dossiers content/dossiers/petr-macinka/ and content/dossiers/filip-turek/
-# — NOT a third person and not a third equal dossier. This page owns the
-# canonical claims/sources/cases/gaps/relations content (the entity
-# dossiers are filtered views over it, tagged by scripts/dossier/tag-subjects.mjs);
-# it is intentionally excluded from the primary "Dossiery" navigation —
-# see data/dossiers.toml and AGENTS.md's "Entity dossiers vs. the
-# aggregate view". Kept routable at this URL for old links/anchors.
 dossier_type = "aggregate"
-subjects = ["Petr Macinka", "Filip Turek"]
-subject_entities = ["macinka", "turek"]
 lang = "cs"
 updated = "2026-07-29"
 reviewed_at = "2026-07-29"
-[[extra.cases]]
-anchor = "kauza-z-roku-2024-fotografie-a-sbirka-svicnu"
-period = "2024"
-title = "Fotografie a sbírka svícnů"
-status = "status-disputed"
-label = "Fotografie: odloženo pro promlčení"
-summary = "Fotografie připomínající nacistický pozdrav a sbírka svícnů s hákovými kříži. Turek: „špatný humor.“"
-claims = ["CLM-04", "CLM-05", "CLM-06", "CLM-45"]
-subjects = ["macinka", "turek"]
-
-[[extra.cases]]
-anchor = "trestni-oznameni-obvineni-z-domaciho-nasili-a-znasilneni"
-period = "2025–2026"
-title = "Trestní oznámení (domácí násilí, znásilnění)"
-status = "status-disputed"
-label = "Odloženo pro promlčení, ne rozhodnuto"
-summary = "Bývalá partnerka viní Turka ze znásilnění a let násilí. Turek popírá. Případ odložen pro promlčení — ne pro nevinu."
-claims = ["CLM-25", "CLM-26", "CLM-27"]
-subjects = ["turek"]
-
-[[extra.cases]]
-anchor = "kauza-z-rijna-2025-smazane-prispevky-na-facebooku"
-period = "2025–2026"
-title = "Smazané příspěvky na Facebooku"
-status = "status-disputed"
-label = "Sporné, neuzavřeno"
-summary = "Deník N zveřejnil údajné smazané příspěvky. Turek odmítá autorství těch nejzávažnějších."
-claims = ["CLM-07", "CLM-08", "CLM-09", "CLM-19", "CLM-41", "CLM-42", "CLM-49"]
-subjects = ["turek"]
-
-[[extra.cases]]
-anchor = "dopravni-nehoda-2026"
-period = "červenec 2026"
-title = "Dopravní nehoda"
-status = "status-ongoing"
-label = "Vyšetřování probíhá"
-summary = "Střet se zdravotnickým vozem v Praze. Turek dočasně opustil funkci zmocněnce."
-claims = ["CLM-10", "CLM-11", "CLM-12", "CLM-16", "CLM-17", "CLM-18"]
-subjects = ["turek"]
-
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-21-A", "AUTH-2026-07-21-B", "AUTH-2026-07-22-A", "AUTH-2026-07-30-A"]
-# Overview stat tiles (sources/cases/claims/gaps counts) are no longer
-# hand-typed here — templates/dossier.html computes them at build time from
-# data/dossiers/macinka-turek/stats.toml (see scripts/dossier/generate-stats.mjs),
-# so they can't drift from what's actually in the registries below.
-#
-# `claims` on each [[extra.cases]] entry is the editorial judgment of which
-# CLM-## rows belong to that case (not mechanically derivable from the prose,
-# which cites outlets by name rather than by SRC-##/CLM-## id) — it is the
-# single source of truth for case<->claim linking, carried into the
-# per-record page by scripts/dossier/migrate-cases-to-pages.mjs, which also
-# derives that page's `sources` field as the union of its claims' own
-# sources (see content/dossiers/macinka-turek/claims/*.md).
-[[extra.timeline]]
-date = "2013"
-title = "Fotografie se zdviženou pravicí pořízena"
-anchor = "kauza-z-roku-2024-fotografie-a-sbirka-svicnu"
-dot = "dot-disputed"
-subjects = ["turek"]
-
-[[extra.timeline]]
-date = "2022"
-title = "Založení hnutí Motoristé sobě, Macinka předsedou"
-anchor = "politicka-kariera"
-dot = "dot-fact"
-subjects = ["macinka"]
-
-[[extra.timeline]]
-date = "leden 2024"
-title = "Turek na Xaver Live obhajuje starší nevhodné příspěvky"
-anchor = "kauza-z-rijna-2025-smazane-prispevky-na-facebooku"
-dot = "dot-fact"
-subjects = ["turek"]
-
-[[extra.timeline]]
-date = "červen 2024"
-title = "Zvolen europoslancem; kauza fotografie a svícnů vypuká"
-anchor = "kauza-z-roku-2024-fotografie-a-sbirka-svicnu"
-dot = "dot-disputed"
-subjects = ["turek"]
-
-[[extra.timeline]]
-date = "listopad 2024"
-title = "Policie odkládá případ fotografie (údajné hajlování) pro promlčení — procesní krok, ne rozhodnutí o vině"
-anchor = "kauza-z-roku-2024-fotografie-a-sbirka-svicnu"
-dot = "dot-fact"
-subjects = ["turek"]
-
-[[extra.timeline]]
-date = "30. 5. 2025"
-title = "Turek oznamuje kandidaturu do Poslanecké sněmovny"
-anchor = "politicka-kariera"
-dot = "dot-fact"
-subjects = ["turek"]
-
-[[extra.timeline]]
-date = "červen 2025"
-title = "Bývalá partnerka podává trestní oznámení (domácí násilí, znásilnění)"
-anchor = "trestni-oznameni-obvineni-z-domaciho-nasili-a-znasilneni"
-dot = "dot-disputed"
-subjects = ["turek"]
-
-[[extra.timeline]]
-date = "říjen 2025"
-title = "Deník N zveřejňuje investigaci o smazaných příspěvcích"
-anchor = "kauza-z-rijna-2025-smazane-prispevky-na-facebooku"
-dot = "dot-disputed"
-subjects = ["turek"]
-
-[[extra.timeline]]
-date = "říjen 2025"
-title = "Volby do PS: Motoristé 13 mandátů, Turek a Macinka zvoleni"
-anchor = "politicka-kariera"
-dot = "dot-fact"
-subjects = ["macinka", "turek"]
-
-[[extra.timeline]]
-date = "leden 2026"
-title = "Prezident Pavel odmítá jmenovat Turka ministrem životního prostředí"
-anchor = "jmenovani-ministrem-zivotniho-prostredi"
-dot = "dot-fact"
-subjects = ["turek"]
-
-[[extra.timeline]]
-date = "9. 1. 2026"
-title = "Turek oznamuje žalobu na ochranu osobnosti proti prezidentu Pavlovi"
-anchor = "jmenovani-ministrem-zivotniho-prostredi"
-dot = "dot-disputed"
-subjects = ["turek"]
-
-[[extra.timeline]]
-date = "23. 2. 2026"
-title = "Igor Červený jmenován ministrem životního prostředí — končí Macinkovo dočasné pověření"
-anchor = "jmenovani-ministrem-zivotniho-prostredi"
-dot = "dot-fact"
-subjects = ["macinka"]
-
-[[extra.timeline]]
-date = "květen 2026"
-title = "Policie odkládá trestní oznámení pro promlčení — procesní krok, ne rozhodnutí o vině; žena podává stížnost"
-anchor = "trestni-oznameni-obvineni-z-domaciho-nasili-a-znasilneni"
-dot = "dot-disputed"
-subjects = ["turek"]
-
-[[extra.timeline]]
-date = "červenec 2026"
-title = "Dopravní nehoda a politický tlak na rezignaci"
-anchor = "dopravni-nehoda-2026"
-dot = "dot-ongoing"
-subjects = ["turek"]
-
-[[extra.timeline]]
-date = "27. 7. 2026"
-title = "Turek oznamuje, že žalobu na prezidenta Pavla nakonec nepodá"
-anchor = "jmenovani-ministrem-zivotniho-prostredi"
-dot = "dot-fact"
-subjects = ["turek"]
-
-[[extra.timeline]]
-date = "28. 7. 2026"
-title = "Policie odkládá prověřování Turkových výroků i oznámení na Deník N (promlčení / beztrestnost zveřejnění) — procesní rozhodnutí, ne posouzení pravosti výroků"
-anchor = "kauza-z-rijna-2025-smazane-prispevky-na-facebooku"
-dot = "dot-fact"
-subjects = ["turek"]
 +++
-
 <div class="legend">
   <span><span class="status-badge status-corroborated">Ověřeno více zdroji</span> potvrzeno nezávisle více médii</span>
   <span><span class="status-badge status-single">1 zdroj</span> doloženo jedním citovaným zdrojem, bez nezávislého potvrzení druhou redakcí</span>

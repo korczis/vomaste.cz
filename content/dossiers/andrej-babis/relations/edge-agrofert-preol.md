@@ -1,19 +1,16 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Agrofert — největší tuzemský producent biopaliv ve skupině (kontext sporu o podporu biopaliv 2015) — Preol"
 template = "dossier-relation.html"
 weight = 38
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis/relations/edge-agrofert-preol"
+view_model = "generated/views/dossiers/andrej-babis/relations/edge-agrofert-preol.json"
 dossier = "andrej-babis"
 record_type = "relation"
+lang = "cs"
 rel_id = "edge-agrofert-preol"
-source = "agrofert"
-target = "preol"
-relation_type = "HOLDS_INTEREST_IN"
-label = "největší tuzemský producent biopaliv ve skupině (kontext sporu o podporu biopaliv 2015)"
-status = "contextual"
-claims = ["CLM-84"]
-sources = ["SRC-60"]
 +++
-
 Kontextový, strukturální vztah — dossier jej neuvádí jako vlastní doloženou investigaci, jen jako veřejně nesporné pozadí.

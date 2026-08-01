@@ -1,0 +1,171 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "title": "Kanonický záznam Dossier (data/dossiers/<slug>/dossier.json) — kořen dossier balíčku",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["$schema", "schemaVersion", "@context", "@id", "@type", "recordType", "identifier", "slug", "title", "description", "dossierType", "language", "navigationVisible", "updated"],
+  "properties": {
+    "$schema": { "const": "https://vomaste.cz/schemas/canonical/dossier.schema.json" },
+    "schemaVersion": { "const": 1 },
+    "@context": { "const": "https://vomaste.cz/context/v1.jsonld" },
+    "@id": { "$ref": "_defs.schema.json#/$defs/dossierGlobalId" },
+    "@type": { "const": "vomaste:Dossier" },
+    "recordType": { "const": "dossier" },
+    "identifier": {
+      "$ref": "_defs.schema.json#/$defs/slug",
+      "$comment": "Shodné se slug. Dossier záznam jako jediný NEMÁ pole dossier — jeho @id JE ten dossier (sebereference by nic neříkala)."
+    },
+    "slug": { "$ref": "_defs.schema.json#/$defs/slug" },
+    "title": { "type": "string", "minLength": 1 },
+    "description": { "type": "string", "minLength": 1 },
+    "dossierType": {
+      "type": "string",
+      "enum": ["entity", "aggregate"],
+      "$comment": "Historický model zachován (data/dossiers.toml): macinka-turek je aggregate vlastnící záznamy, petr-macinka/filip-turek jsou entity views. Strukturální invarianty obou typů vlastní sémantický validátor fáze C (dnes validate-dossier-types.mjs)."
+    },
+    "canonicalDossier": {
+      "$ref": "_defs.schema.json#/$defs/slug",
+      "$comment": "Slug dossieru, který fyzicky vlastní záznamy tohoto dossieru (u self-canonical == slug). Povinné pro dossierType=entity."
+    },
+    "subject": {
+      "$ref": "_defs.schema.json#/$defs/slug",
+      "$comment": "Subject id (\"babis\") — stejná hodnota, kterou nesou pole subjects na záznamech. Povinné pro dossierType=entity; aggregate subjekty odvozuje z aggregates."
+    },
+    "language": { "type": "string", "minLength": 2 },
+    "aliases": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^/" },
+      "$comment": "Alias routy (staré odkazy) — absolutní cesty."
+    },
+    "navigationVisible": {
+      "type": "boolean",
+      "$comment": "Dřívější show_in_primary_navigation (registr dossierů byl do fáze H data/dossiers.toml; od fáze H je registrem kanonický dataset sám)."
+    },
+    "order": {
+      "type": "integer",
+      "minimum": 1,
+      "$comment": "Redakční pořadí registru dossierů (fáze H, aditivní): historické autorizační pořadí bloků dřívějšího data/dossiers.toml. Není derivovatelné z ničeho jiného — bez něj by exporty a landing sekce nemohly reprodukovat dnešní pořadí. Stejný term vomaste:order jako u ostatních záznamů."
+    },
+    "coverageState": { "$ref": "_defs.schema.json#/$defs/coverageState" },
+    "updated": { "$ref": "_defs.schema.json#/$defs/isoDate" },
+    "reviewedAt": {
+      "$ref": "_defs.schema.json#/$defs/isoDate",
+      "$comment": "Datum poslední redakční kontroly (dnešní front matter reviewed_at v _index.md). Volitelné — entity view bez vlastního reviewed_at pole nemá. Doplněno ve fázi G, aby adresářový export nemusel číst front matter."
+    },
+    "authorization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["records"],
+      "properties": {
+        "records": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "minItems": 1,
+          "$comment": "Identifikátory autorizačních záznamů (AUTH-…) — ukazatele do append-only autorizačního logu v AGENTS.md, nikdy druhá autorita. Soulad s logem vynucuje validátor fáze C (dnes validate-authorization.mjs)."
+        }
+      }
+    },
+    "seo": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "title": { "type": "string", "minLength": 1 },
+        "description": { "type": "string", "minLength": 1 },
+        "seoType": { "type": "string", "minLength": 1 }
+      }
+    },
+    "contentBlocks": { "$ref": "_defs.schema.json#/$defs/contentBlocks" },
+    "graph": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["nodes", "edges"],
+      "$comment": "Kurátorovaná grafová vrstva dossieru (fáze H — dřívější data/dossiers/<slug>/graph.toml). Hrany jsou kanonické relation záznamy; tady žije jen to, co relation/entity záznamy nenesou: per-dossier popisky uzlů, kurátorské pořadí, clustery a rodiny zdrojů. Hloubka (depth) se NEukládá — počítá se deterministicky BFS od subjektových uzlů (scripts/data/lib/graph-depth.mjs). Typ uzlu se NEukládá — je to entityType globální entity. Referenční integritu vlastní validate-references (R7), redakční pravidla validate-semantics (S7/S8).",
+      "properties": {
+        "nodes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["entity", "label"],
+            "properties": {
+              "entity": { "$ref": "_defs.schema.json#/$defs/entityId" },
+              "label": { "type": "string", "minLength": 1, "$comment": "Per-dossier prezentační popisek uzlu (např. „Andrej Babiš (premiér)“) — globální entita má jeden title, graf dossieru kontextový popisek." },
+              "subject": { "const": true, "$comment": "Jen u subjektových uzlů — soulad s autorizovanými subjekty dossieru vynucuje validate-semantics S7." },
+              "cluster": { "type": "string", "minLength": 1 },
+              "summary": { "type": "string", "minLength": 1 },
+              "claims": { "type": "array", "items": { "$ref": "_defs.schema.json#/$defs/clmId" }, "$comment": "LOKÁLNÍ CLM-## id v namespace tohoto dossieru (kurátorovaná membership uzlu, ne unie vazeb z relations)." },
+              "sources": { "type": "array", "items": { "$ref": "_defs.schema.json#/$defs/srcId" } }
+            }
+          },
+          "$comment": "Pořadí pole = kurátorské pořadí uzlů (stabilita layoutu — dřívější pořadí [[nodes]] bloků)."
+        },
+        "edges": {
+          "type": "array",
+          "items": { "$ref": "_defs.schema.json#/$defs/edgeId" },
+          "$comment": "Kurátorské POŘADÍ hran — identifikátory kanonických relation záznamů tohoto dossieru, 1:1 (úplnost vynucuje validate-references R7). Data hran nesou relations; tohle je jen pořadí (relation.order nese pořadí VÝPISŮ, které se od grafového pořadí historicky liší — macinka-turek)."
+        },
+        "clusters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "label"],
+            "properties": {
+              "id": { "type": "string", "minLength": 1 },
+              "label": { "type": "string", "minLength": 1 },
+              "description": { "type": "string", "minLength": 1 },
+              "claims": { "type": "array", "items": { "$ref": "_defs.schema.json#/$defs/clmId" } },
+              "sources": { "type": "array", "items": { "$ref": "_defs.schema.json#/$defs/srcId" } },
+              "nodes": { "type": "array", "items": { "$ref": "_defs.schema.json#/$defs/entityId" } },
+              "gaps": { "type": "array", "items": { "$ref": "_defs.schema.json#/$defs/gapId" } }
+            }
+          }
+        },
+        "sourceFamilies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "sources"],
+            "properties": {
+              "id": { "type": "string", "minLength": 1 },
+              "label": { "type": "string", "minLength": 1 },
+              "sources": { "type": "array", "items": { "$ref": "_defs.schema.json#/$defs/srcId" } }
+            }
+          }
+        }
+      }
+    },
+    "aggregates": {
+      "type": "array",
+      "items": { "$ref": "_defs.schema.json#/$defs/slug" },
+      "minItems": 2,
+      "$comment": "Jen pro dossierType=aggregate: slugy entity dossierů, které tento agregát sdružuje (dnešní source_dossiers)."
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": { "dossierType": { "const": "entity" } },
+        "required": ["dossierType"]
+      },
+      "then": {
+        "properties": { "canonicalDossier": true, "subject": true, "authorization": true },
+        "required": ["canonicalDossier", "subject", "authorization"],
+        "$comment": "Entity dossier = publikace o osobě → musí nést subjekt, vlastníka záznamů a autorizační ukazatele. Properties tady jsou 'true' jen kvůli Ajv strictRequired — skutečný tvar drží top-level properties."
+      }
+    },
+    {
+      "if": {
+        "properties": { "dossierType": { "const": "aggregate" } },
+        "required": ["dossierType"]
+      },
+      "then": {
+        "properties": { "aggregates": true },
+        "required": ["aggregates"]
+      }
+    }
+  ]
+}

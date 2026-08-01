@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-26",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-26",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
+  },
+  "title": "SRC-26 — ČeskéNoviny.cz (ČTK, s odkazem na Seznam Zprávy): Šebestyán skončil v čele SZIF (23. 8. 2022)",
+  "description": "ČeskéNoviny.cz nezávisle na iROZHLAS (SRC-04) potvrzuje, že Martin Šebestyán skončil ve funkci ředitele SZIF k 31. 8. 2022 po dohodě s ministrem Nekulou.",
+  "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceFamily": "ctk",
+  "sourceType": "agenturní zpravodajství",
+  "url": "https://www.ceskenoviny.cz/zpravy/seznam-zpravy-sebestyan-konci-v-cele-statniho-zemedelskeho-intervencniho-fondu/2246639",
+  "published": "2022-08-23",
+  "retrieved": "2026-07-31",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-08"
+    }
+  ],
+  "subjects": [
+    "sebestyan"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "ČeskéNoviny.cz (ČTK, s odkazem na Seznam Zprávy jako původní zdroj) dne\n23. 8. 2022: „Ve funkci ředitele Státního zemědělského intervenčního\nfondu (SZIF) skončí ke 31. srpnu Martin Šebestyán.\" Odchod proběhl po\ndohodě s ministrem zemědělství Zdeňkem Nekulou.\n\n**Nezávislost**: samostatná redakce/agentura od iROZHLAS (SRC-04) —\nobě nezávisle potvrzují tutéž veřejnou skutečnost (odchod z funkce\nk srpnu 2022 po dohodě s ministrem). Proto CLM-08 nese stav\n`CORROBORATED`.\n\n**Limity**: článek dále popisuje sankci Evropské komise (cca 3,27 mil.\neur) související s auditem ke střetu zájmů — to je jiná, samostatná\nskutečnost, kterou tento zdroj dokládá jen v obecné rovině; případné\nsamostatné tvrzení o výši sankce by potřebovalo vlastní ověření."
+    }
+  ],
+  "order": 26
+}

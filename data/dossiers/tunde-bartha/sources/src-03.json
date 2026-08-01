@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-03",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tunde-bartha"
+  },
+  "title": "SRC-03 — Aktuálně.cz",
+  "description": "Aktuálně.cz, 14. 8. 2024: Tünde Bartha pracuje v holdingu Agrofert jako business development manager pro východní Evropu, Balkán a Blízký východ; potvrdil mluvčí Agrofertu.",
+  "outlet": "Aktuálně.cz",
+  "sourceType": "celostátní zpravodajství",
+  "url": "https://zpravy.aktualne.cz/domaci/tunde-bartha-opet-v-babisovych-sluzbach-stara-se-o-vychodni/r~541224525a2811efb589ac1f6b220ee8/",
+  "published": "2024-08-14",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-06"
+    }
+  ],
+  "subjects": [
+    "bartha"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Aktuálně.cz dne 14. 8. 2024 informovalo — s odkazem na zjištění serveru\nHlídacíPes.org z téhož dne — že Tünde Bartha pracuje v holdingu Agrofert\njako **business development manager**. Podle článku má na starosti řízení\nrozvoje ve východní Evropě a v regionech, kde Agrofert dosud nepůsobí,\nvčetně Balkánu a Blízkého východu.\n\nPůsobení podle článku **potvrdil mluvčí Agrofertu Pavel Heřmanský**.\n\nČlánek uvádí hodnocení HlídacíhoPsa, podle nějž „práci pro Agrofert lze\ntotiž z dobrých důvodů považovat za práci právě pro šéfa hnutí ANO\", s\nodkazem na pokračující diskusi o Babišově vlivu na holding po převodu\nakcií do svěřenských fondů.\n\n**Poznámka k procesní přesnosti a hranicím**: pracovní zařazení je\ndoložený fakt potvrzený mluvčím společnosti. Hodnocení, že práce pro\nAgrofert je fakticky prací pro předsedu hnutí ANO, je **komentář\nHlídacíhoPsa** — dossier je zaznamenává jako atribuovaný názor\njmenovaného média, nikoli jako vlastní zjištění. Z pracovního zařazení\nsamotného nelze psát žádné tvrzení o ovlivnění konkrétního\nrozhodnutí — kariérní dráha není důkazem o jednání."
+    }
+  ],
+  "order": 3
+}

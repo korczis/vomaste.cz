@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-27",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-27",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "text": "Ministerstvo financí ve své reakci z 12. března 2026 uvedlo, že obranné výdaje rozpočtovalo ve výši 184,6 miliardy korun, tedy 2,06 % HDP, protože započítalo i vybrané obranné výdaje mimo kapitolu ministerstva obrany, konkrétně Host Nation Support, příspěvky NATO a evropský obranný fond.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-15"
+    }
+  ],
+  "subjects": [
+    "schillerova"
+  ],
+  "order": 27,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/alena-schillerova/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

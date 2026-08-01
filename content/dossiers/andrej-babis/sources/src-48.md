@@ -1,23 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-48 — ČT24: Kauza reklamy na Čapím hnízdě končí, Stříž do ní nezasáhne (8. 7. 2024)"
 description = "Reklamní větev zůstane definitivně odložená; policie prověřovala platby za více než 270 mil. Kč z let 2010–2013, dvakrát věc odložila, trestný čin nezjistila; finanční správa dle Deníku N doměřila daň 1,2 mil. Kč."
 template = "dossier-source.html"
 weight = 48
 
 [extra]
-subjects = ["babis"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-48"
+view_model = "generated/views/dossiers/andrej-babis/sources/src-48.json"
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-48"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/kauza-reklamy-na-capim-hnizde-konci-striz-do-ni-nezasahne-350932"
-published = "2024-07-08"
-retrieved = "2026-08-01"
-claims = ["CLM-69", "CLM-71"]
 +++
-
 ČT24 informuje, že případ reklamy na Čapím hnízdě zůstane definitivně
 odložený. Policie prověřovala platby od firem z Agrofertu na reklamu
 „za více než 270 milionů korun“ z let 2010 až 2013 — mimo jiné zda

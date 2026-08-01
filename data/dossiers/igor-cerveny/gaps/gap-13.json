@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/gaps/GAP-13",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-13",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "title": "GAP-13 — Nepodařilo se ověřit obsah článků serveru iDNES.cz k tématu (přestupkové řízení, kanceláře",
+  "description": "Doména iDNES.cz je pro použitý nástroj nedostupná (fetch selhal), snippety zásadně nepoužíváme.",
+  "priority": "střední",
+  "checked": "2026-07-30",
+  "claims": [],
+  "subjects": [
+    "cerveny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Nepodařilo se ověřit obsah článků serveru iDNES.cz k tématu (přestupkové řízení, kanceláře).\n\n**Proč je to mezera**: Doména iDNES.cz je pro použitý nástroj nedostupná (fetch selhal), snippety zásadně nepoužíváme. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+    }
+  ],
+  "order": 13
+}

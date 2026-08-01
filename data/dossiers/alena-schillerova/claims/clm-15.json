@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-15",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-15",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "text": "Sněmovna přehlasovala Senát v nočním hlasování v noci na 8. července 2026 a potvrdila svou verzi novely přesně 101 hlasy vládní koalice, tedy minimálním potřebným počtem; všichni přítomní opoziční poslanci hlasovali proti.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-21"
+    }
+  ],
+  "subjects": [
+    "schillerova"
+  ],
+  "order": 15,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/alena-schillerova/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-12",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-12",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
+  },
+  "title": "SRC-12 — Týden.cz",
+  "description": "Soud uložil SPD třímilionový peněžitý trest za nenávistné předvolební plakáty",
+  "outlet": "Týden.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://www.tyden.cz/soud-ulozil-spd-trimilionovy-penezity-trest-za-nenavistne-predvolebni-plakaty",
+  "published": "2026-06-03",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-13"
+    }
+  ],
+  "subjects": [
+    "okamura"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Soud uložil SPD třímilionový peněžitý trest za nenávistné předvolební plakáty**\n\nPřebraná agenturní zpráva ČTK. Obsahuje výši navrhovaného trestu státního zástupce, citaci o nulové sebereflexi hnutí a údaj, že soud vycházel z ročního státního příspěvku SPD ve výši 40 milionů korun.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 12
+}

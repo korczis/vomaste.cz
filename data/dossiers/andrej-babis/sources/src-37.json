@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-37",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-37",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-37 — ČeskéNoviny.cz (ČTK): MPO odebere pekárně Agrofertu dotaci na linku na toustový chléb (21. 3. 2022)",
+  "description": "ČTK: MPO odebere stomilionovou dotaci; Komise již dříve rozhodla, že vyplacených 100 milionů korun státu neproplatí — peníze šly z českého rozpočtu.",
+  "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceType": "zpravodajství",
+  "url": "https://www.ceskenoviny.cz/zpravy/mpo-odebere-pekarne-agrofertu-dotaci-na-linku-na-toustovy-chleb/2180664",
+  "published": "2022-03-21",
+  "retrieved": "2026-08-01",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-55"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-56"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Agenturní zpráva ČTK: Ministerstvo průmyslu a obchodu odebere firmě\nPenam ze skupiny Agrofert stomilionovou dotaci na linku na výrobu\ntoustového chleba poté, co od Evropské komise získalo podklady\no nedostatečné inovativnosti projektu. „Komise již dříve rozhodla, že\nvyplacených 100 milionů korun státu neproplatí,“ peníze tak šly\nz českého rozpočtu; evropští auditoři konstatovali, že se projekt\nzaměřoval na produkt, který se již v rámci holdingu vyrábí. Vyjádření\nAgrofertu: „Jsme přesvědčeni, že i předmětnou dotaci získala společnost\nPekárna Zelená louka, a.s. v souladu s dotačními pravidly EU a ČR.“\n\n**Poznámka**: dokládá správní krok (odnětí dotace) a rozhodnutí Komise\no neproplacení — ne rozhodnutí o vině kohokoli.\n\n**Nezávislost**: agenturní text ČTK; vůči úřední tiskové zprávě\n[SRC-36](@/dossiers/andrej-babis/sources/src-36.md) jde o jinou\nvydavatelskou rodinu. Otevřeno a přečteno 2026-08-01."
+    }
+  ],
+  "order": 37
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-38",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-38",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
+  },
+  "text": "Poslanecká sněmovna schválila novelu stavebního zákona 10. července 2026 hlasy 89 poslanců vládní koalice; opozice hlasovala proti s tím, že novela nahrává developerům.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-17"
+    }
+  ],
+  "subjects": [
+    "klempir"
+  ],
+  "order": 38,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/oto-klempir/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

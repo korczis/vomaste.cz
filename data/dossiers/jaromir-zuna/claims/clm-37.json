@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-37",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-37",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "text": "Podle e15 připravovaná koncepce do roku 2040 staví na těžké a střední brigádě, rozšíření vícevrstvé protivzdušné obrany a náboru až deseti tisíc nových vojáků, s odhadovanými náklady v řádu vyšších stovek miliard korun; plánované akvizice zahrnují 8 systémů SPYDER za 37 miliard, střely Derby za 12 miliard, 246 vozidel CV90 za 59,7 miliardy a 77 tanků Leopard za 52 miliard.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-18"
+    }
+  ],
+  "subjects": [
+    "zuna"
+  ],
+  "order": 37,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jaromir-zuna/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

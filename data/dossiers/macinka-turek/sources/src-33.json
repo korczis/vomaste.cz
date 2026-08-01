@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-33",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-33",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-33 — Blesk.cz",
+  "description": "Pokuty 200 000 Kč za dvě nepovolené stavby na Turkově pozemku v Praze-Dubči.",
+  "outlet": "Blesk.cz",
+  "sourceType": "zpravodajství (tabloid)",
+  "url": "https://www.blesk.cz/clanek/zpravy-politika/844092/turek-a-jeho-cerna-mostarna-dostal-mastnou-pokutu.html",
+  "published": "2026-07-17",
+  "retrieved": "2026-07-22",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-30"
+    }
+  ],
+  "subjects": [
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Stavební úřad Prahy 15 udělil Filipu Turkovi ve dvou samostatných\nřízeních (pravomocných 3. 7. 2026) pokuty za nepovolené stavby na jeho\npozemku v Praze-Dubči, v přírodním parku Říčanka, kde je stavební\nčinnost obvykle omezená:\n\n- sadařský domek — pokuta 80 000 Kč, klasifikováno jako nedbalost;\n  Turek: „jednal v dobré víře\";\n- stavba, kterou Turek během výstavby označoval jako moštárnu, vzhledem\n  odpovídá dvojgaráži — pokuta 120 000 Kč, klasifikováno jako úmysl\n  (úřad usoudil, že „si byl vědom, že realizuje stavbu bez povolení\").\n\nCelkem 200 000 Kč. Turek pro obě stavby dodatečně získal stavební\npovolení. Jde o zaznamenaný správní přestupek, ne o trestní věc."
+    }
+  ],
+  "order": 33
+}

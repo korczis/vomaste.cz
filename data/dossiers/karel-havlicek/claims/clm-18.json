@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-18",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-18",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "text": "Komentátor FORUM 24 Jan Jandourek v červenci 2026 hodnotí Havlíčkovu pozici k elektromobilitě jako dezinterpretaci problému: evropské automobilky podle něj ztrácejí konkurenceschopnost kvůli zaostávání za čínskou konkurencí, nikoli kvůli regulacím EU; jde o hodnocení komentátora.",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-09"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "order": 18,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/karel-havlicek/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

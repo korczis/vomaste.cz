@@ -1,20 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "GAP-08 — Okolnosti vzniku plakátů (role generativní AI, autorství zadání) podle dokazování u soudu."
 description = "Tyto informace figurují pouze v článku iROZHLAS z 10. 7. 2026, který je nepřístupný (HTTP 403); v přístupných zdrojích doloženy nejsou."
 template = "dossier-gap.html"
 weight = 8
 
 [extra]
-subjects = ["okamura"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/tomio-okamura/gaps/GAP-08"
+view_model = "generated/views/dossiers/tomio-okamura/gaps/gap-08.json"
 dossier = "tomio-okamura"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-08"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
-
 Okolnosti vzniku plakátů (role generativní AI, autorství zadání) podle dokazování u soudu.
 
 **Proč je to mezera**: Tyto informace figurují pouze v článku iROZHLAS z 10. 7. 2026, který je nepřístupný (HTTP 403); v přístupných zdrojích doloženy nejsou. Tato mezera **není** zjištěním žádným

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-18",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-18",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-18 — Seznam Zprávy",
+  "description": "Macinka po upozornění Investigace.cz dodatečně přiznal podíl v ukrajinské firmě.",
+  "outlet": "Seznam Zprávy",
+  "sourceType": "zpravodajství",
+  "url": "https://www.seznamzpravy.cz/clanek/domaci-kauzy-macinka-opravil-chybu-v-priznani-ministra-se-prihlasil-k-ukrajinske-firme-297525",
+  "published": "2026-01-28",
+  "retrieved": "2026-07-22",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-14"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-15"
+    }
+  ],
+  "subjects": [
+    "macinka"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Seznam Zprávy potvrzují totéž jádro faktu jako SRC-17 (Investigace.cz),\nale jako samostatná redakce: ministr zahraničí Petr Macinka dodatečně\npřiznal vlastnictví 20 % společnosti GMR GAZ UA LLC se sídlem v Kyjevě,\npoté co na chybějící údaj v jeho přiznání upozornil server Investigace.cz.\n\nMacinka podle článku uvedl: „Před zhruba dvěma roky jsem podepisoval\ndokumenty, podle nichž měla být firma zlikvidována,\" s tím, že proces\nzdržela válka na Ukrajině. K možné sankci dodal: „Je možné, že nějakou\npokutu dostanu.\"\n\nSRC-17 a SRC-18 jsou od dvou nezávislých vydavatelů (Investigace.cz,\nSeznam.cz/Economia) — v registru vedeny jako dvě nezávislá potvrzení\ntéhož jádra faktu, ne jako jedna zdrojová rodina."
+    }
+  ],
+  "order": 18
+}

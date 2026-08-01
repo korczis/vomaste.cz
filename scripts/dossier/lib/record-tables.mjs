@@ -1,48 +1,67 @@
-// Shared front-matter → row-table projection, extracted from
-// build-data-exports.mjs so that the flat /data/*.json exports and the
-// JSON-LD exports (build-jsonld-exports.mjs) are built from ONE parser
-// instead of two drifting copies. Same contract as before: derived,
-// never authored — every row comes from the same front matter the pages
-// render from; no status is computed here, no score, no ranking.
-import { readFileSync, readdirSync, existsSync } from "node:fs";
+// Shared row-table projection over the COMPILED canonical dataset
+// (T-028 fáze G). Historicky tenhle modul byl jediný sdílený front-matter
+// parser (extrahovaný z build-data-exports.mjs); od fáze G je to tenká
+// KOMPATIBILNÍ projekce nad compiled modelem (scripts/data/compile.mjs)
+// — veřejné API i tvar řádků zůstávají beze změny, takže všichni dnešní
+// konzumenti (build-data-exports, build-jsonld-exports, validate-schemas,
+// verify-jsonld, lint-source-outlets, migrační cross-check) fungují dál,
+// ale žádný z nich už neparsuje content/** front matter.
+//
+// Same contract as before: derived, never authored — every row comes from
+// the canonical records the pages render from; no status is computed
+// here, no score, no ranking.
+//
+// Vstupy mimo compiled model (záměrné, ne front matter):
+//   data/dossiers.toml       — registr dossierů (lib/dossier-registry.mjs)
+//   data/government.toml     — vládní roster: government_* pole entit
+//                              (kanonický zdroj, ze kterého
+//                              build-government-roster.mjs tato pole do
+//                              content/entities генeruje; entita mimo
+//                              roster má všechna tři pole null)
+//   data/dossiers/*/stats.toml, data/generated/navigation.json —
+//                              generovaná data pro enrichDossiersForDirectory
+import { readFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import { loadDossierRegistry } from "./dossier-registry.mjs";
-
-const fm = (text) => (text.match(/^\+\+\+\r?\n([\s\S]*?)\r?\n\+\+\+/) ?? [])[1] ?? "";
-const str = (b, k) => (b.match(new RegExp(`^${k}\\s*=\\s*"((?:[^"\\\\]|\\\\.)*)"`, "m")) ?? [])[1]?.replace(/\\(.)/g, "$1") ?? null;
-const arr = (b, k) => {
-  const m = b.match(new RegExp(`^${k}\\s*=\\s*\\[([^\\]]*)\\]`, "m"));
-  return m ? [...m[1].matchAll(/"((?:[^"\\]|\\.)*)"/g)].map((x) => x[1]) : [];
-};
+import { getCompiledModel, localIds, localPart, recordsOf } from "./compiled-model.mjs";
 
 // Adresář dossierů potřebuje vedle identity i počty, popis, data poslední
 // kontroly a routy jednotlivých registrů. Všechno to už v repozitáři je —
 // jen roztroušeně, takže si to dosud každá šablona skládala sama:
 //
 //   počty  — data/dossiers/<slug>/stats.toml (generuje generate-stats.mjs)
-//   popis  — front matter content/dossiers/<slug>/_index.md
+//   popis  — kanonický dossier.json (description/updated/reviewedAt)
 //   routy  — data/generated/navigation.json (generuje build-navigation.mjs)
 //
 // Sesbírá se to sem, aby existoval JEDEN prezentační index a tři projekce
 // adresáře (tabulka/seznam/dlaždice) byly opravdu projekcemi týchž dat.
 // Routy se ČTOU z navigačního manifestu, neskládají se z řetězců: manifest
 // je kanonický a při přejmenování registru se změní na jednom místě.
-const num = (b, k) => {
-  const m = b.match(new RegExp(`^${k}\\s*=\\s*(\\d+)`, "m"));
-  return m ? Number(m[1]) : 0;
-};
+const str = (b, k) => (b.match(new RegExp(`^${k}\\s*=\\s*"((?:[^"\\\\]|\\\\.)*)"`, "m")) ?? [])[1]?.replace(/\\(.)/g, "$1") ?? null;
 
+/*
+ * Viditelné počty dossieru přímo z compiled modelu (T-028 fáze H —
+ * dřívější data/dossiers/<slug>/stats.toml zaniklo): entity VIEW
+ * (canonicalDossier != slug) filtruje záznamy kanonického vlastníka podle
+ * subject taggingu; entities = globální entity s členstvím v dossieru.
+ */
 export function readDossierStats(root, slug) {
-  const file = join(root, "data/dossiers", slug, "stats.toml");
-  if (!existsSync(file)) return null;
-  const b = readFileSync(file, "utf8");
+  const compiled = getCompiledModel(root);
+  const record = compiled.records.find((w) => w.registry === "dossier" && w.dossier === slug)?.record;
+  if (!record) return null;
+  const isView = record.canonicalDossier && record.canonicalDossier !== slug;
+  const owner = isView ? record.canonicalDossier : slug;
+  const visible = (registry) => {
+    const rows = recordsOf(compiled, owner, registry);
+    return isView ? rows.filter((w) => (w.record.subjects ?? []).includes(record.subject)) : rows;
+  };
   return {
-    claims: num(b, "claims_total"),
-    sources: num(b, "sources_total"),
-    cases: num(b, "cases_total"),
-    gaps: num(b, "gaps_total"),
-    entities: num(b, "entities_total"),
-    relations: num(b, "relations_total"),
+    claims: visible("claims").length,
+    sources: visible("sources").length,
+    cases: visible("cases").length,
+    gaps: visible("gaps").length,
+    entities: compiled.entities.filter((w) => (w.record.dossiers ?? []).includes(slug)).length,
+    relations: visible("relations").length,
   };
 }
 
@@ -65,8 +84,27 @@ export function readNavigationRoutes(root) {
   return out;
 }
 
+// Vládní roster z data/government.toml — kanonický zdroj government_*
+// polí (build-government-roster.mjs z něj generuje content stránky;
+// kanonické entity nesou jen snapshotDate). entity_id -> { office,
+// party, snapshot }.
+function readGovernmentRoster(root) {
+  const file = join(root, "data/government.toml");
+  if (!existsSync(file)) return new Map();
+  const text = readFileSync(file, "utf8");
+  const snapshot = str(text.split(/\n\[\[members\]\]/)[0], "snapshot");
+  const out = new Map();
+  for (const block of text.split(/\n\[\[members\]\]/).slice(1)) {
+    const id = str(block, "entity_id");
+    if (!id) continue;
+    out.set(id, { office: str(block, "office"), party: str(block, "party") ?? "", snapshot });
+  }
+  return out;
+}
+
 export function buildRecordTables(root) {
   const registry = loadDossierRegistry();
+  const compiled = getCompiledModel(root);
   const rows = { claims: [], sources: [], cases: [], gaps: [], relations: [], entities: [], dossiers: [] };
 
   for (const d of registry) {
@@ -80,136 +118,126 @@ export function buildRecordTables(root) {
     });
   }
 
-  // Per-record pages of every dossier that physically owns records.
+  // Per-record rows of every dossier that canonically owns records —
+  // iterated in REGISTRY order (data/dossiers.toml), records in the
+  // compiled deterministic order (identifier), which equals the former
+  // filename order.
   for (const d of registry) {
-    const base = join(root, "content/dossiers", d.slug);
-    const read = (sub) => {
-      const dir = join(base, sub);
-      if (!existsSync(dir)) return [];
-      return readdirSync(dir)
-        .filter((f) => f.endsWith(".md") && f !== "_index.md")
-        .map((f) => ({ slug: f.replace(/\.md$/, ""), block: fm(readFileSync(join(dir, f), "utf8")) }));
-    };
-
-    for (const { slug, block } of read("claims")) {
-      const id = str(block, "clm_id");
-      if (!id) continue;
+    for (const w of recordsOf(compiled, d.slug, "claims")) {
+      const r = w.record;
       rows.claims.push({
-        clm_id: id,
+        clm_id: r.identifier,
         dossier: d.slug,
-        status: str(block, "status"),
-        status_label: str(block, "status_label"),
-        summary: str(block, "summary"),
-        sources: arr(block, "sources"),
-        source_count: arr(block, "sources").length,
-        subjects: arr(block, "subjects"),
-        url: `/dossiers/${d.slug}/claims/${slug}/`,
+        status: r.status,
+        status_label: r.statusLabel,
+        summary: r.text,
+        sources: localIds(r.sources),
+        source_count: (r.sources ?? []).length,
+        subjects: r.subjects ?? [],
+        url: w.route,
       });
     }
 
-    for (const { slug, block } of read("sources")) {
-      const id = str(block, "src_id");
-      if (!id) continue;
+    for (const w of recordsOf(compiled, d.slug, "sources")) {
+      const r = w.record;
       rows.sources.push({
-        src_id: id,
+        src_id: r.identifier,
         dossier: d.slug,
-        title: str(block, "title"),
-        outlet: str(block, "outlet"),
-        src_type: str(block, "src_type"),
-        published: str(block, "published"),
-        retrieved: str(block, "retrieved"),
-        claims: arr(block, "claims"),
-        claim_count: arr(block, "claims").length,
-        subjects: arr(block, "subjects"),
-        source_url: str(block, "url"),
+        title: r.title,
+        outlet: r.outlet,
+        src_type: r.sourceType,
+        published: r.published ?? null,
+        retrieved: r.retrieved,
+        claims: localIds(r.claims),
+        claim_count: (r.claims ?? []).length,
+        subjects: r.subjects ?? [],
+        source_url: r.url,
         // Zdrojová rodina: zdroje sdílející jednu pojmenovanou rodinu se
         // počítají jako JEDEN nezávislý zdroj. Prázdná hodnota znamená
         // samostatný zdroj, tedy vlastní rodinu — stejná sémantika jako
         // ve validate-dossier.mjs (familyCount = singletons + namedFamilies).
-        // Pochází z front matter, které je verzované, takže smí být
+        // Pochází z kanonického záznamu (sourceFamily), takže smí být
         // v kanonických řádcích.
-        family: str(block, "family") ?? "",
-        url: `/dossiers/${d.slug}/sources/${slug}/`,
+        family: r.sourceFamily ?? "",
+        url: w.route,
       });
     }
 
-    for (const { slug, block } of read("cases")) {
-      const id = str(block, "case_id");
-      if (!id) continue;
+    for (const w of recordsOf(compiled, d.slug, "cases")) {
+      const r = w.record;
       rows.cases.push({
-        case_id: id,
+        case_id: r.identifier,
         dossier: d.slug,
-        title: str(block, "title"),
-        period: str(block, "period"),
-        status: str(block, "status"),
-        label: str(block, "label"),
-        subjects: arr(block, "subjects"),
-        url: `/dossiers/${d.slug}/cases/${slug}/`,
+        title: r.title,
+        period: r.period,
+        status: r.status,
+        label: r.statusLabel,
+        subjects: r.subjects ?? [],
+        url: w.route,
       });
     }
 
-    for (const { slug, block } of read("gaps")) {
-      const id = str(block, "gap_id");
-      if (!id) continue;
+    for (const w of recordsOf(compiled, d.slug, "gaps")) {
+      const r = w.record;
       rows.gaps.push({
-        gap_id: id,
+        gap_id: r.identifier,
         dossier: d.slug,
-        title: str(block, "title"),
-        priority: str(block, "priority"),
-        checked: str(block, "checked"),
-        claims: arr(block, "claims"),
-        subjects: arr(block, "subjects"),
-        url: `/dossiers/${d.slug}/gaps/${slug}/`,
+        title: r.title,
+        priority: r.priority,
+        checked: r.checked,
+        claims: localIds(r.claims),
+        subjects: r.subjects ?? [],
+        url: w.route,
       });
     }
 
-    for (const { slug, block } of read("relations")) {
+    for (const w of recordsOf(compiled, d.slug, "relations")) {
+      const r = w.record;
       rows.relations.push({
-        relation_id: slug,
+        relation_id: r.identifier,
         dossier: d.slug,
-        relation_type: str(block, "relation_type"),
-        source: str(block, "source"),
-        target: str(block, "target"),
-        label: str(block, "label"),
-        status: str(block, "status"),
-        claims: arr(block, "claims"),
-        sources: arr(block, "sources"),
-        subjects: arr(block, "subjects"),
-        url: `/dossiers/${d.slug}/relations/${slug}/`,
+        relation_type: r.relationType,
+        source: localPart(r.sourceEntity?.["@id"]),
+        target: localPart(r.targetEntity?.["@id"]),
+        label: r.label,
+        status: r.status,
+        claims: localIds(r.claims),
+        sources: localIds(r.sources),
+        subjects: r.subjects ?? [],
+        url: w.route,
       });
     }
   }
 
-  // Global entity registry.
-  const entDir = join(root, "content/entities");
-  if (existsSync(entDir)) {
-    for (const f of readdirSync(entDir).filter((f) => f.endsWith(".md") && f !== "_index.md")) {
-      const block = fm(readFileSync(join(entDir, f), "utf8"));
-      rows.entities.push({
-        entity_id: str(block, "entity_id") ?? f.replace(/\.md$/, ""),
-        title: str(block, "title"),
-        entity_type: str(block, "entity_type"),
-        role: str(block, "role"),
-        dossiers: arr(block, "dossiers"),
-        // Publication-state fields: what the entity actually IS in this
-        // system, so a reader querying the export can tell a context entity
-        // apart from an authorized dossier subject without reading prose.
-        publication_role: str(block, "publication_role"),
-        dossier_status: str(block, "dossier_status"),
-        coverage_state: str(block, "coverage_state"),
-        // Government-roster fields (data/government.toml via
-        // build-government-roster.mjs). Null for every entity that isn't a
-        // roster member — a public office held on the snapshot date, nothing
-        // more. Deliberately NOT emitted as schema.org Person/Role in
-        // JSON-LD: Person markup is restricted to authorized entity-dossier
-        // main pages (verify-jsonld.mjs), and holding an office is not
-        // dossier coverage.
-        government_office: str(block, "government_office"),
-        government_party: str(block, "government_party"),
-        government_snapshot: str(block, "government_snapshot"),
-        url: `/entities/${f.replace(/\.md$/, "")}/`,
-      });
-    }
+  // Global entity registry — compiled.entities jsou seřazené podle
+  // entityId, což je i dřívější pořadí souborů.
+  const roster = readGovernmentRoster(root);
+  for (const w of compiled.entities) {
+    const r = w.record;
+    const gov = roster.get(r.entityId) ?? null;
+    rows.entities.push({
+      entity_id: r.entityId,
+      title: r.title,
+      entity_type: r.entityType,
+      role: r.role ?? null,
+      dossiers: r.dossiers ?? [],
+      // Publication-state fields: what the entity actually IS in this
+      // system, so a reader querying the export can tell a context entity
+      // apart from an authorized dossier subject without reading prose.
+      publication_role: r.publicationRole ?? null,
+      dossier_status: r.dossierStatus ?? null,
+      coverage_state: r.coverageState ?? null,
+      // Government-roster fields (data/government.toml). Null for every
+      // entity that isn't a roster member — a public office held on the
+      // snapshot date, nothing more. Deliberately NOT emitted as
+      // schema.org Person/Role in JSON-LD: Person markup is restricted to
+      // authorized entity-dossier main pages (verify-jsonld.mjs), and
+      // holding an office is not dossier coverage.
+      government_office: gov?.office ?? null,
+      government_party: gov?.party ?? null,
+      government_snapshot: gov?.snapshot ?? null,
+      url: w.route,
+    });
   }
 
   return rows;
@@ -227,6 +255,10 @@ export function buildRecordTables(root) {
 // identitu, která existuje vždy; prezentační index nese odvozené hodnoty,
 // které existují až po generátorech. Kontroluje ho validate-directory-index.mjs.
 export function enrichDossiersForDirectory(root, dossierRows) {
+  const compiled = getCompiledModel(root);
+  const dossierBySlug = new Map(
+    compiled.records.filter((w) => w.registry === "dossier").map((w) => [w.dossier, w.record]),
+  );
   const navRoutes = readNavigationRoutes(root);
   // Abecedně podle zobrazovaného názvu, s českým řazením — tedy Č za C,
   // Ř za R a tak dál. Řadí se TADY, ne až v prohlížeči: vykreslené HTML
@@ -235,14 +267,18 @@ export function enrichDossiersForDirectory(root, dossierRows) {
   const collator = new Intl.Collator("cs", { sensitivity: "base" });
   const sorted = [...dossierRows].sort((a, b) => collator.compare(a.title, b.title));
   return sorted.map((d) => {
-    const indexFile = join(root, "content/dossiers", d.slug, "_index.md");
-    const block = existsSync(indexFile) ? fm(readFileSync(indexFile, "utf8")) : "";
+    const record = dossierBySlug.get(d.slug) ?? null;
     const nav = navRoutes.get(d.slug) ?? { routes: {}, labels: {} };
     return {
       ...d,
-      description: str(block, "description") ?? "",
-      updated: str(block, "updated") ?? "",
-      reviewed_at: str(block, "reviewed_at") ?? "",
+      description: record?.description ?? "",
+      // `updated` entity view (petr-macinka, filip-turek) dědí z
+      // kanonického dossieru (migrace, rozhodnutí #4) — dřívější front
+      // matter hodnotu nemělo, takže tyhle dva řádky nesly "".
+      updated: record?.updated ?? "",
+      // `reviewedAt` se naopak NEdědí — entity view bez vlastní kontroly
+      // nese "" stejně jako dřív.
+      reviewed_at: record?.reviewedAt ?? "",
       counts: readDossierStats(root, d.slug) ?? {
         claims: 0, sources: 0, cases: 0, gaps: 0, entities: 0, relations: 0,
       },

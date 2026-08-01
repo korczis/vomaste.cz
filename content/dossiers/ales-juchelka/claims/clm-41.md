@@ -1,19 +1,17 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-41"
 description = "Předseda STAN Vít Rakušan svůj krok odůvodnil slovy: „Na tenhle střet zájmů doplácí celá naše země.“"
 template = "dossier-claim.html"
 weight = 41
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-41"
+view_model = "generated/views/dossiers/ales-juchelka/claims/clm-41.json"
 dossier = "ales-juchelka"
 record_type = "claim"
 lang = "cs"
 clm_id = "CLM-41"
-status = "status-quote"
-status_label = "CITACE"
-summary = "Předseda STAN Vít Rakušan svůj krok odůvodnil slovy: „Na tenhle střet zájmů doplácí celá naše země.“"
-sources = ["SRC-09"]
-subjects = ["juchelka"]
 +++
-
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/ales-juchelka/_index.md#registr-tvrzeni).

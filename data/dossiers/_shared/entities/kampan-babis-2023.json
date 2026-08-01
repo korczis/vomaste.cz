@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/kampan-babis-2023",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "kampan-babis-2023",
+  "entityId": "kampan-babis-2023",
+  "title": "Prezidentská kampaň Andreje Babiše (2022–2023)",
+  "entityType": "event",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "contextual",
+  "dossiers": [
+    "tunde-bartha"
+  ],
+  "routeAliases": [
+    "/dossiers/tunde-bartha/entities/kampan-babis-2023/"
+  ],
+  "order": 7,
+  "provenance": {
+    "discoveredAt": "2026-08-01",
+    "discoveredVia": [
+      "edge-bartha-kampan",
+      "edge-kampan-babis"
+    ],
+    "claimRefs": [
+      "CLM-10",
+      "CLM-11"
+    ],
+    "sourceRefs": [
+      "SRC-07"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext."
+    }
+  ]
+}

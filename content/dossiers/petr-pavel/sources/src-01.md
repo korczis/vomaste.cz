@@ -1,24 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-01 — Deník.cz (VLTAVA LABE MEDIA)"
 description = "Prezident Pavel zdůvodňuje odmítnutí jmenovat Turka ministrem; Turek oznamuje žalobu na ochranu osobnosti."
 template = "dossier-source.html"
 weight = 1
 
 [extra]
-subjects = ["pavel"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/petr-pavel/sources/SRC-01"
+view_model = "generated/views/dossiers/petr-pavel/sources/src-01.json"
 dossier = "petr-pavel"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-01"
-outlet = "Deník.cz (VLTAVA LABE MEDIA)"
-src_type = "zpravodajství"
-url = "https://www.denik.cz/z_domova/filip-turek-petr-pavel-zaloba.html"
-retrieved = "2026-07-23"
-published = "2026-01-09"
-family = "denik-cz-turek-ministr"
-claims = ["CLM-01", "CLM-02"]
 +++
-
 Prezident Petr Pavel zdůvodnil odmítnutí jmenovat Filipa Turka ministrem
 životního prostředí: uvedl, že Turek opakovaně prokazoval nedostatek
 respektu k českému právnímu řádu, opakovaně glorifikoval nebo přinejmenším

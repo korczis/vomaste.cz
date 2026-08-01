@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/gaps/GAP-04",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-04",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "title": "GAP-04 — Lednová hodnota 2,07 % HDP a dubnová hodnota 1,78 % HDP se liší metodikou (celkové výdaje ",
+  "description": "K dispozici jsou jen mediální interpretace; primární dokument NATO/MO ČR s finální klasifikací výdajů nebyl v otevřených zdrojích nalezen.",
+  "priority": "střední",
+  "checked": "2026-07-30",
+  "claims": [],
+  "subjects": [
+    "zuna"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Lednová hodnota 2,07 % HDP a dubnová hodnota 1,78 % HDP se liší metodikou (celkové výdaje vs. 'tvrdé' výdaje uznávané NATO po summitu v Haagu); přesný oficiální výkaz NATO za rok 2026 nebyl dohledán.\n\n**Proč je to mezera**: K dispozici jsou jen mediální interpretace; primární dokument NATO/MO ČR s finální klasifikací výdajů nebyl v otevřených zdrojích nalezen. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+    }
+  ],
+  "order": 4
+}

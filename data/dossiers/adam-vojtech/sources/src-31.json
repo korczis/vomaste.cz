@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-31",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-31",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "title": "SRC-31 — ČeskéNoviny.cz (ČTK)",
+  "description": "Vojtěch: Národní strategie zůstává, nebudou ale peníze na propagaci očkování",
+  "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceType": "zpravodajství",
+  "url": "https://www.ceskenoviny.cz/zpravy/vojtech-narodni-strategie-zustava-nebudou-ale-penize-na-propagaci-ockovani/2802089",
+  "published": "2026-03-20",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-47"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Vojtěch: Národní strategie zůstává, nebudou ale peníze na propagaci očkování**\n\nVojtěch po jednání s SPD za účasti premiéra Babiše uvedl, že strategie zůstává bez zásadních změn, ale státem placená kampaň za 50 až 80 milionů korun nebude. Povinná očkování proti devíti nemocem zůstávají povinná, dobrovolná (chřipka, HPV, covid-19) dobrovolná.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 31
+}

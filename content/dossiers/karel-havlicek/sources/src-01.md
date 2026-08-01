@@ -1,22 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-01 — Vláda ČR (oficiální web)"
 description = "Oficiální web Úřadu vlády: funkce a údaje, které stránka sama uvádí."
 template = "dossier-source.html"
 weight = 1
 
 [extra]
-subjects = ["havlicek"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-01"
+view_model = "generated/views/dossiers/karel-havlicek/sources/src-01.json"
 dossier = "karel-havlicek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-01"
-outlet = "Vláda České republiky (vlada.gov.cz)"
-src_type = "oficiální primární zdroj"
-url = "https://vlada.gov.cz/cz/vlada/clenove-vlady/karel-havlicek-223969/"
-retrieved = "2026-07-30"
-claims = ["CLM-01"]
 +++
-
 Oficiální stránka na webu Úřadu vlády, otevřena a přečtena 2026-07-30.
 Uvádí funkci **1. místopředseda vlády a ministr průmyslu a obchodu** a doložený přehled kariéry: narozen 16. 8. 1969; ČVUT (1992), Ph.D. VŠE (2004), doc. (2014); předseda AMSP ČR (2010–2019); ředitel a spoluvlastník skupiny Sindat (2001–2019); ministr průmyslu a obchodu (2019–2021), ministr dopravy (2020–2021), místopředseda vlády pro hospodářství (2019–2021); poslanec od 2021.
 

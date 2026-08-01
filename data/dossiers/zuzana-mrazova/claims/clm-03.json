@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-03",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "text": "Důvodem nepravomocné pokuty je, že Mrázová v majetkovém přiznání za rok 2024 neuvedla půjčku 500 000 Kč od rodiny na koupi parcely v Bílině, přestože existenci této půjčky sama potvrdila na tiskové konferenci v květnu 2026.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-08"
+    }
+  ],
+  "subjects": [
+    "mrazova"
+  ],
+  "order": 3,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/zuzana-mrazova/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

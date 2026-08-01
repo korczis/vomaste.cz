@@ -4,8 +4,7 @@
  * system. Unlike data/generated/* (gitignored, fully rebuilt every run),
  * data/discovery-log.jsonl is a COMMITTED file this script only ever
  * appends to — it never rewrites or removes an existing line, the same
- * append-only discipline as AGENTS.md's authorization log and
- * data/dossiers/<slug>/updates.toml.
+ * append-only discipline as AGENTS.md's authorization log.
  *
  * This is a record of *what the system observed and when*, not a
  * publication decision — logging an entity here has no bearing on whether
@@ -15,32 +14,22 @@
  * Each line is one JSON object:
  *   { "logged_at": "YYYY-MM-DD", "record_id": "...", "record_type":
  *     "entity"|"relation", "discovered_from": {...}, "action": "created" }
+ *
+ * T-028 fáze H: čte VÝHRADNĚ compiled kanonický model. `discovered_from`
+ * u entit jde z entity.provenance.claimRefs/sourceRefs (kurátorovaná
+ * stopa objevení, od fáze H kanonická — viz
+ * schemas/canonical/entity.schema.json) + entity.dossiers; u vztahů
+ * z kanonického relation záznamu. Pro už zalogované záznamy se nic
+ * nečte a výstup se nemění (append-only).
  */
-import { readFileSync, readdirSync, appendFileSync, existsSync, statSync, writeFileSync, mkdirSync } from "node:fs";
+import { readFileSync, appendFileSync, existsSync, writeFileSync, mkdirSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { getCompiledModel, localIds, localPart } from "./lib/compiled-model.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
-const ENTITIES_ROOT = join(ROOT, "content/entities");
-const DOSSIERS_ROOT = join(ROOT, "content/dossiers");
 const LOG_FILE = join(ROOT, "data/discovery-log.jsonl");
 const REPORT_FILE = join(ROOT, "reports/discovery-report.md");
-
-function extractField(text, key) {
-  const re = new RegExp(`^${key}\\s*=\\s*"((?:[^"\\\\]|\\\\.)*)"`, "m");
-  const found = text.match(re);
-  return found ? found[1].replace(/\\(.)/g, "$1") : null;
-}
-function extractArrayField(text, key) {
-  const re = new RegExp(`^${key}\\s*=\\s*\\[([^\\]]*)\\]`, "m");
-  const found = text.match(re);
-  if (!found) return [];
-  return [...found[1].matchAll(/"((?:[^"\\]|\\.)*)"/g)].map((x) => x[1].replace(/\\"/g, '"'));
-}
-function frontMatterOf(text) {
-  const fmEnd = text.indexOf("\n+++", 3);
-  return text.slice(0, fmEnd);
-}
 
 const existingIds = new Set();
 const existingLines = [];
@@ -58,11 +47,11 @@ if (existsSync(LOG_FILE)) {
 
 const today = new Date().toISOString().slice(0, 10);
 const newLines = [];
+const compiled = getCompiledModel(ROOT);
 
-for (const file of readdirSync(ENTITIES_ROOT).filter((f) => f !== "_index.md" && f.endsWith(".md"))) {
-  const text = readFileSync(join(ENTITIES_ROOT, file), "utf8");
-  const fm = frontMatterOf(text);
-  const id = extractField(fm, "entity_id");
+for (const w of compiled.entities) {
+  const r = w.record;
+  const id = r.entityId;
   if (!id || existingIds.has(id)) continue;
   newLines.push(
     JSON.stringify({
@@ -70,9 +59,9 @@ for (const file of readdirSync(ENTITIES_ROOT).filter((f) => f !== "_index.md" &&
       record_id: id,
       record_type: "entity",
       discovered_from: {
-        claims: extractArrayField(fm, "claims"),
-        sources: extractArrayField(fm, "sources"),
-        dossiers: extractArrayField(fm, "dossiers"),
+        claims: r.provenance?.claimRefs ?? [],
+        sources: r.provenance?.sourceRefs ?? [],
+        dossiers: r.dossiers ?? [],
       },
       action: "created",
     }),
@@ -80,32 +69,27 @@ for (const file of readdirSync(ENTITIES_ROOT).filter((f) => f !== "_index.md" &&
   existingIds.add(id);
 }
 
-const dossierSlugs = readdirSync(DOSSIERS_ROOT).filter((f) => statSync(join(DOSSIERS_ROOT, f)).isDirectory());
-for (const slug of dossierSlugs) {
-  const relDir = join(DOSSIERS_ROOT, slug, "relations");
-  if (!existsSync(relDir)) continue;
-  for (const file of readdirSync(relDir).filter((f) => f !== "_index.md" && f.endsWith(".md"))) {
-    const text = readFileSync(join(relDir, file), "utf8");
-    const fm = frontMatterOf(text);
-    const id = extractField(fm, "rel_id");
-    if (!id || existingIds.has(id)) continue;
-    newLines.push(
-      JSON.stringify({
-        logged_at: today,
-        record_id: id,
-        record_type: "relation",
-        discovered_from: {
-          source_entity: extractField(fm, "source"),
-          target_entity: extractField(fm, "target"),
-          claims: extractArrayField(fm, "claims"),
-          sources: extractArrayField(fm, "sources"),
-          dossier: slug,
-        },
-        action: "created",
-      }),
-    );
-    existingIds.add(id);
-  }
+for (const w of compiled.records) {
+  if (w.registry !== "relations") continue;
+  const r = w.record;
+  const id = r.identifier;
+  if (!id || existingIds.has(id)) continue;
+  newLines.push(
+    JSON.stringify({
+      logged_at: today,
+      record_id: id,
+      record_type: "relation",
+      discovered_from: {
+        source_entity: localPart(r.sourceEntity?.["@id"]),
+        target_entity: localPart(r.targetEntity?.["@id"]),
+        claims: localIds(r.claims),
+        sources: localIds(r.sources),
+        dossier: w.dossier,
+      },
+      action: "created",
+    }),
+  );
+  existingIds.add(id);
 }
 
 if (newLines.length > 0) {

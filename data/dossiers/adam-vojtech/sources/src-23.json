@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-23",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-23",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "title": "SRC-23 — Zdravé zprávy",
+  "description": "Zdravotní benefity bez limitu odpočtu doporučil Sněmovně rozpočtový výbor",
+  "outlet": "Zdravé zprávy",
+  "sourceType": "zpravodajství",
+  "url": "https://www.zdravezpravy.cz/2026/07/13/zdravotni-benefity-bez-limitu-doporucil-snemovne-rozpoctovy-vybor/",
+  "published": "2026-07-13",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-36"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-37"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Zdravotní benefity bez limitu odpočtu doporučil Sněmovně rozpočtový výbor**\n\nRozpočtový výbor doporučil Sněmovně vynětí vybraných preventivních programů z limitovaného daňového odpočtu s účinností od ledna 2027 a odmítl konkurenční návrh poslanců ODS vedených Štěpánem Slovákem. Zároveň doporučil zvýšit limit zdanitelných příjmů bez povinnosti podat přiznání z 50 na 100 tisíc Kč.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 23
+}

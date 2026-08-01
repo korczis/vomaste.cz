@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-10",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-10",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-10 — Život v Česku",
+  "description": "Macinkova reakce na vyjádření prezidenta Pavla ke kauze Turkovy nehody.",
+  "outlet": "Život v Česku",
+  "sourceType": "zpravodajství",
+  "url": "https://zivotvcesku.cz/macinka-se-pustil-do-pavla-po-jeho-slovech-k-turkove-nehode-jiny-by-pry-mohl-rict-nerespektuje-ustavu-at-abdikuje/",
+  "published": "2026-07-15",
+  "retrieved": "2026-07-21",
+  "claims": [],
+  "subjects": [
+    "macinka",
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zdroj dokládá, že se Macinka veřejně vymezil vůči vyjádření prezidenta\nPetra Pavla ke kauze Turkovy nehody. V hlavním dossieru je to uvedeno v\nsekci \"Bezprostřední reakce\" jako doplňkový kontext k tomu, jak široce se\nkauza v politickém provozu řešila — ne jako samostatné CLM tvrzení, protože\npřesný obsah Pavlova vyjádření (na které Macinka reagoval) tento dossier\nnerozebírá."
+    }
+  ],
+  "order": 10
+}

@@ -1,20 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "GAP-05 — Nemovitosti ve Francii: výsledek rozhodnutí PNF a osud imunity po skončení funkce"
 description = "Francouzská prokuratura má o dalším postupu rozhodnout do konce roku 2026; žádný citovaný zdroj neuvádí výsledek ani co se stane s případem po skončení Babišovy funkce premiéra."
 template = "dossier-gap.html"
 weight = 5
 
 [extra]
-subjects = ["babis"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis/gaps/GAP-05"
+view_model = "generated/views/dossiers/andrej-babis/gaps/gap-05.json"
 dossier = "andrej-babis"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-05"
-priority = "vysoká"
-checked = "2026-07-31"
-claims = ["CLM-13", "CLM-14", "CLM-54"]
 +++
-
 **Co je doložené.** Francouzská policie uzavřela v květnu 2026
 vyšetřování nákupu nemovitostí na jihu Francie a případ převzala
 Národní finanční prokuratura (PNF), která má podle citovaného zdroje

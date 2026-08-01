@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-20",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-20",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "text": "Po sto dnech ve funkci Bednárik uvedl, že opatření ke zefektivnění u Správy železnic přinesla úspory v řádu stovek milionů korun na jednotlivých projektech, což podle něj umožňuje opravit více kilometrů tratí.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-08"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "order": 20,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/ivan-bednarik/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

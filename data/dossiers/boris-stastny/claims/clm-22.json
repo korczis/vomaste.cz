@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-22",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-22",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/boris-stastny"
+  },
+  "text": "Vláda na návrh ministra pro sport, prevenci a zdraví Borise Šťastného odvolala 16. prosince 2025 předsedu Národní sportovní agentury Ondřeje Šebka a člena Rady NSA Františka Horáka; jde o personální rozhodnutí vlády, nikoli o výsledek kontrolního či trestního řízení.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-13"
+    }
+  ],
+  "subjects": [
+    "stastny"
+  ],
+  "order": 22,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/boris-stastny/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

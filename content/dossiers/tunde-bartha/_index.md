@@ -1,121 +1,21 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Tünde Bartha"
 description = "Neutrální, zdroji doložený přehled o Tünde Barthě — vedoucí Úřadu vlády ČR. Autorizovaný rozsah: obecní byt v Praze 3 a doložená kariérní dráha mezi Agrofertem a státním aparátem."
 template = "entity-dossier.html"
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/tunde-bartha"
+view_model = "generated/views/dossiers/tunde-bartha/overview.json"
 dossier = "tunde-bartha"
-dossier_title = "Tünde Bartha"
+record_type = "dossier"
 dossier_type = "entity"
-canonical_dossier = "tunde-bartha"
-subject = "bartha"
 lang = "cs"
 seo_type = "ProfilePage"
-subject_entities = ["bartha"]
-subjects = ["Tünde Bartha"]
 updated = "2026-08-01"
 reviewed_at = "2026-08-01"
-
-[[extra.timeline]]
-date = "2004"
-title = "Manželé Barthovi získávají obecní byt na Žižkově směnou za jiný obecní byt v Praze 8"
-anchor = "kauza-obecni-byt"
-dot = "dot-fact"
-subjects = ["bartha"]
-
-[[extra.timeline]]
-date = "2018-06-28"
-title = "Podle oficiálního přehledu Úřadu vlády je pověřena řízením úřadu (do 17. 12. 2021)"
-anchor = "kauza-karierni-draha"
-dot = "dot-fact"
-subjects = ["bartha"]
-
-[[extra.timeline]]
-date = "2024-08-14"
-title = "Zveřejněno, že pracuje v Agrofertu jako business development manager pro východní Evropu, Balkán a Blízký východ; potvrdil mluvčí holdingu"
-anchor = "kauza-karierni-draha"
-dot = "dot-fact"
-subjects = ["bartha"]
-
-[[extra.timeline]]
-date = "2026-06-24"
-title = "Rada MČ Praha 3 schvaluje výpověď z nájmu obecního bytu — přes dvě vlastní právní stanoviska, která před ní varovala"
-anchor = "kauza-obecni-byt"
-dot = "dot-fact"
-subjects = ["bartha"]
-
-[[extra.timeline]]
-date = "2019"
-title = "Vydáno osvědčení pro stupeň utajení Tajné (dle pozdější odpovědi Úřadu vlády)"
-anchor = "kauza-proverka"
-dot = "dot-fact"
-subjects = ["bartha"]
-
-[[extra.timeline]]
-date = "2022-12"
-title = "Vede prezidentskou kampaň Andreje Babiše; dle zpravodajství spolupracují „už sedmým rokem“"
-anchor = "kauza-kampan"
-dot = "dot-fact"
-subjects = ["bartha"]
-
-[[extra.timeline]]
-date = "2024-09-13"
-title = "Agrofert ji označuje za country managerku AGROFERT Hungária s odpovědností za rozvoj koncernu ve východní Evropě"
-anchor = "kauza-karierni-draha"
-dot = "dot-fact"
-subjects = ["bartha"]
-
-[[extra.timeline]]
-date = "2025-12-15"
-title = "Vláda ji na ustavující schůzi jmenovala vedoucí Úřadu vlády"
-anchor = "kauza-karierni-draha"
-dot = "dot-fact"
-subjects = ["bartha"]
-[[extra.cases]]
-anchor = "kauza-obecni-byt"
-period = "2004–2026"
-title = "Obecní byt v Praze 3 a výpověď z nájmu"
-status = "status-corroborated"
-label = "Rozhodnutí radnice, ne soudu"
-summary = "Rada MČ Praha 3 vypověděla 24. 6. 2026 nájem obecního bytu pro přenechání třetím osobám bez souhlasu pronajímatele — přestože dvě vlastní právní stanoviska radnice uváděla, že pro výpověď není právně relevantní podklad. Žádný citovaný zdroj Barthové nevytýká protiprávní jednání."
-claims = ["CLM-01", "CLM-02", "CLM-03", "CLM-04", "CLM-05"]
-subjects = ["bartha"]
-
-[[extra.cases]]
-anchor = "kauza-karierni-draha"
-period = "2015–2026"
-title = "Kariérní dráha mezi Agrofertem a státním aparátem"
-status = "status-single"
-label = "Doložená posloupnost funkcí"
-summary = "Doložená posloupnost: pověření řízením Úřadu vlády 2018–2021, poté pracovní zařazení v holdingu Agrofert (business development manager potvrzený mluvčím; firemní web ji v září 2024 označil za country managerku AGROFERT Hungária s odpovědností za rozvoj koncernu ve východní Evropě), a 15. prosince 2025 jmenování vedoucí Úřadu vlády na ustavující schůzi vlády. Posloupnost funkcí sama o sobě není důkazem o ovlivnění jakéhokoli rozhodnutí."
-claims = ["CLM-06", "CLM-07", "CLM-08", "CLM-09", "CLM-13"]
-subjects = ["bartha"]
-
-[[extra.cases]]
-anchor = "kauza-kampan"
-period = "2022–2023"
-title = "Vedení prezidentské kampaně Andreje Babiše"
-status = "status-single"
-label = "Doložená politická a organizační role"
-summary = "Bartha podle zpravodajství z prosince 2022 vedla prezidentskou kampaň Andreje Babiše a spolupracovala s ním „už sedmým rokem“; Babiš tehdy uvedl, že v případě volebního vítězství by se stala jeho kancléřkou — šlo o zamýšlenou budoucí roli deklarovanou v průběhu kampaně, nikoli o zastávanou funkci. Jde o doloženou politickou a organizační roli, žádný citovaný zdroj v souvislosti s ní netvrdí protiprávní jednání."
-claims = ["CLM-10", "CLM-11"]
-subjects = ["bartha"]
-
-[[extra.cases]]
-anchor = "kauza-proverka"
-period = "2019–2026"
-title = "Bezpečnostní prověrka"
-status = "status-single"
-label = "Korektiv, ne kauza"
-summary = "Podle odpovědi Úřadu vlády na žádost podle informačního zákona má Bartha od roku 2019 osvědčení fyzické osoby pro stupeň utajení Tajné a osvědčení NATO Personnel Clearance Certificate; úřad uvedl, že splňuje požadavky na výkon funkce. Nejde o kauzu — záznam je veden jako doložený korektiv k případným spekulacím, které žádný citovaný zdroj nedokládá."
-claims = ["CLM-12"]
-subjects = ["bartha"]
-
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-U"]
 +++
-
 ## Kdo je Tünde Bartha {#kdo}
 
 Tünde Bartha je podle citovaného zpravodajství z června 2026 vedoucí

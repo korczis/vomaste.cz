@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-10",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-10",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "title": "SRC-10 — Ekonomický deník",
+  "description": "Zmírnění u spalovacích motorů? Sankce zůstávají a hrozí průšvih, varuje Havlíček",
+  "outlet": "Ekonomický deník",
+  "sourceType": "zpravodajství",
+  "url": "https://ekonomickydenik.cz/zmirneni-zakazu-spalovaci-motory-sankce-havlicek/",
+  "published": "2026-03-25",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-16"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-17"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-41"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-42"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Zmírnění u spalovacích motorů? Sankce zůstávají a hrozí průšvih, varuje Havlíček**\n\nHavlíček kritizuje návrh EK na zmírnění emisních cílů jako nedostatečný: sankce podle něj zůstávají nastavené, jako by platil stoprocentní zákaz, a za problém označuje i cíle pro rok 2030; kabinet požaduje úplné zastavení dalšího snižování emisí.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 10
+}

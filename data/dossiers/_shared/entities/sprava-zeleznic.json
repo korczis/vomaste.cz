@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/sprava-zeleznic",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "sprava-zeleznic",
+  "entityId": "sprava-zeleznic",
+  "title": "Správa železnic",
+  "entityType": "organization",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "ivan-bednarik"
+  ],
+  "routeAliases": [
+    "/dossiers/ivan-bednarik/entities/sprava-zeleznic/"
+  ],
+  "order": 4,
+  "provenance": {
+    "discoveredAt": "2026-07-31",
+    "discoveredVia": [
+      "edge-bednarik-sprava-zeleznic"
+    ],
+    "claimRefs": [
+      "CLM-18",
+      "CLM-19"
+    ],
+    "sourceRefs": [
+      "SRC-14"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext."
+    }
+  ]
+}

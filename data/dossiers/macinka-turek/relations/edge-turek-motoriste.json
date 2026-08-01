@@ -1,0 +1,49 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/relations/edge-turek-motoriste",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-turek-motoriste",
+  "relationId": "edge-turek-motoriste",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/turek"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/motoriste"
+  },
+  "relationType": "MEMBER_OF",
+  "label": "poslanec za",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-01"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-13"
+    }
+  ],
+  "subjects": [
+    "turek"
+  ],
+  "directed": true,
+  "order": 2,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam vztahu edge-turek-motoriste — typ vztahu, podporující tvrzení a zdroje v tabulce výše jsou úplné. Status FAKT znamená, že vztah je doložen nezávisle potvrzenými zdroji, ne jen tvrzením jedné strany. Hlavní stránka dossieru vykresluje interaktivní graf ze stejných dat."
+    }
+  ]
+}

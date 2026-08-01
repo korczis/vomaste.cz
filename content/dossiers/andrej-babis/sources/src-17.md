@@ -1,24 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-17 — Česká justice (ČTK): Jen Agrofert. Babiš popsal, co vloží do svěřenského fondu (31. 12. 2025)"
 description = "Co Babiš do svěřenského fondu vložit chtěl a co ne — SynBiol, Hartenberg a nemovitosti zůstávají mimo; jeho vlastní odůvodnění."
 template = "dossier-source.html"
 weight = 17
 
 [extra]
-subjects = ["babis"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-17"
+view_model = "generated/views/dossiers/andrej-babis/sources/src-17.json"
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-17"
-outlet = "Česká justice"
-src_type = "agenturní zpravodajství"
-family = "ctk"
-url = "https://www.ceska-justice.cz/2025/12/jen-agrofert-babis-popsal-co-vlozi-do-sverenskeho-fondu/"
-published = "2025-12-31"
-retrieved = "2026-07-30"
-claims = ["CLM-39", "CLM-40"]
 +++
-
 Zpráva ČTK publikovaná Českou justicí na konci roku 2025, tedy **před**
 únorovým vložením akcií do fondu.
 **Co dokládá:** že Babiš do svěřenského fondu zamýšlel vložit pouze

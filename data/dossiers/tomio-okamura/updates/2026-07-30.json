@@ -1,0 +1,196 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/updates/2026-07-30",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-07-30",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
+  },
+  "date": "2026-07-30",
+  "summary": "Zpracována autorizovaná témata: rozsudek-plakaty, reakce-obhajoba, odvolani-proces, nevydani-snemovnou. 23 zdrojů otevřeno a přečteno, 29 tvrzení, 6 mezer (nedoložitelné položky, paywally). Statusy dle skutečné síly doložení.",
+  "addedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-14"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-15"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-16"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-17"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-18"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-19"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-20"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-21"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-22"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-23"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-24"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-25"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-26"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-27"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-28"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-29"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-30"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-31"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-32"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-33"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-34"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-35"
+    }
+  ],
+  "updatedClaims": [],
+  "addedGaps": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/gaps/GAP-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/gaps/GAP-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/gaps/GAP-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/gaps/GAP-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/gaps/GAP-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/gaps/GAP-08"
+    }
+  ],
+  "closedGaps": [],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-14"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-15"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-16"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-17"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-18"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-19"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-20"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-21"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-22"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-23"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-24"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-25"
+    }
+  ]
+}

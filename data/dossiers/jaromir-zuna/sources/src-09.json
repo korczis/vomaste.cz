@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-09",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-09",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "title": "SRC-09 — Echo24",
+  "description": "Ministr Zůna je po kauze s náčelníkem štábu na ručník, míní Vondra",
+  "outlet": "Echo24",
+  "sourceType": "zpravodajství",
+  "url": "https://m.echo24.cz/a/HXZVf/zpravy-domaci-zuna-je-na-rucnik-jedine-cestne-reseni-rezignace-nacelnik-generalniho-stabu-vondra",
+  "published": "2026-05-24",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-15"
+    }
+  ],
+  "subjects": [
+    "zuna"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Ministr Zůna je po kauze s náčelníkem štábu na ručník, míní Vondra**\n\nExministr obrany a europoslanec Vondra (ODS): pro Zůnu, který hlasoval proti novému náčelníkovi GŠ, 'neexistuje jiné čestné řešení než okamžitě rezignovat'; jmenování náčelníka označil za nejdůležitější rozhodnutí ministra obrany. Fiala (SPD) oponuje, že situace ponižující není.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 9
+}

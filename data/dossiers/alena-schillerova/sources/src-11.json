@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-11",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-11",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "title": "SRC-11 — Echo24",
+  "description": "Změna pravidel rozpočtu by umožnila náraz na dluhovou brzdu. Schillerová: Jdeme německou cestou",
+  "outlet": "Echo24",
+  "sourceType": "zpravodajství",
+  "url": "https://m.echo24.cz/a/HR9Ua/zpravy-ekonomika-novela-rozpocet-pravidla-naraz-dluhova-brzda-schillerova-vlada-nrr-verejne-finance",
+  "published": "2026-05-02",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-33"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-34"
+    }
+  ],
+  "subjects": [
+    "schillerova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Změna pravidel rozpočtu by umožnila náraz na dluhovou brzdu. Schillerová: Jdeme německou cestou**\n\nAnalytická zpráva o dopadech novely. Cituje Schillerovou k inspiraci Německem při vyjímání obranných a infrastrukturních výdajů z fiskálních pravidel, varování NRR, že podle nových pravidel by byl legální schodek 400 miliard a deficit vládního sektoru přes 3 % HDP, a odhad ekonoma Bělohradského o směřování k překročení dluhové brzdy 55 % HDP v letech 2031–2033.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 11
+}

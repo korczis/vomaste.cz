@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-35",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-35",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "text": "Vojtěch svůj návrh při oznámení charakterizoval slovy: „Nejde o rozšiřování benefitů jako takových, ale o jejich lepší zacílení.“",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-26"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "order": 35,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/adam-vojtech/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

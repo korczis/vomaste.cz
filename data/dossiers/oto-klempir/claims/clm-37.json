@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-37",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-37",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
+  },
+  "text": "Dne 2. června 2026 vyzvalo 13 odborníků z českých univerzit a vědeckých institucí otevřeným dopisem poslance k zamítnutí novely stavebního zákona kvůli oslabení NPÚ, ohrožení ochranných pásem, zkrácení lhůt pro záchranné archeologické výzkumy a přenesení jejich nákladů na veřejné instituce.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-18"
+    }
+  ],
+  "subjects": [
+    "klempir"
+  ],
+  "order": 37,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/oto-klempir/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

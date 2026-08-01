@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-17",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-17",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
+  },
+  "text": "Opoziční politici Klempířův návrh odmítli — Vít Rakušan (STAN) jej označil za „cestu k postupnému zestátnění médií“ a František Talíř (KDU-ČSL) za „frontální útok“ a „zákon o likvidaci“.",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-03"
+    }
+  ],
+  "subjects": [
+    "klempir"
+  ],
+  "order": 17,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/oto-klempir/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

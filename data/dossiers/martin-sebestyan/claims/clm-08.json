@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-08",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-08",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
+  },
+  "text": "Šebestyán vedl Státní zemědělský intervenční fond (SZIF) od roku 2013; v srpnu 2022 po dohodě s ministrem Nekulou ve funkci ředitele skončil a k 15. 10. 2022 mu nebyl prodloužen ani mandát v dozorčí radě Podpůrného a garančního rolnického a lesnického fondu.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-26"
+    }
+  ],
+  "subjects": [
+    "sebestyan"
+  ],
+  "order": 8,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/martin-sebestyan/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

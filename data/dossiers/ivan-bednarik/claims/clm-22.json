@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-22",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-22",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "text": "Podle dubnové aktualizace přechází trať RS 42 Kralupy nad Vltavou–Most do útlumové fáze a osa RS 5 směrem na Hradec Králové se pozastavuje ve prospěch kapacitních úprav konvenční sítě, například zttrojkolejnění a modernizací.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-09"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "order": 22,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/ivan-bednarik/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

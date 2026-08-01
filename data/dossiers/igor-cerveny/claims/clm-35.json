@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-35",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-35",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "text": "Ještě 18. května 2026, tedy téměř tři měsíce po nástupu ministra, uváděl Deník N, že ve skutečné ministerské pracovně dál sedí Filip Turek.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-20"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "order": 35,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/igor-cerveny/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

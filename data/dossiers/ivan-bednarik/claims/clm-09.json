@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-09",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-09",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "text": "V dubnu 2026 Bednárik uvedl, že rozpočet SFDI na rok 2026 činí 169,3 miliardy korun (meziročně o 9 miliard více) a že prioritou je stabilní financování bez „slibů bez krytí“, dokončování rozestavěných staveb a kombinace národních zdrojů s prostředky EU („musíme stavět rychle, kvalitně a levně“).",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-05"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "order": 9,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/ivan-bednarik/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

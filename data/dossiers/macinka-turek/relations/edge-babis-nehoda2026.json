@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/relations/edge-babis-nehoda2026",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-babis-nehoda2026",
+  "relationId": "edge-babis-nehoda2026",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/babis"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/nehoda2026"
+  },
+  "relationType": "RESPONDED_TO",
+  "label": "vyzval k odpovědnosti",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-12"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-08"
+    }
+  ],
+  "subjects": [
+    "turek"
+  ],
+  "directed": true,
+  "order": 12,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam vztahu edge-babis-nehoda2026 — typ vztahu, podporující tvrzení a zdroje v tabulce výše jsou úplné. Status FAKT znamená, že vztah je doložen nezávisle potvrzenými zdroji, ne jen tvrzením jedné strany. Hlavní stránka dossieru vykresluje interaktivní graf ze stejných dat."
+    }
+  ]
+}

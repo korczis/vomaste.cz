@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/boris-stastny"
+  },
+  "title": "SRC-02 — CNN Prima News",
+  "description": "Nahrávací zařízení nalezené v zasedačce Úřadu vlády: Šťastný se k němu přihlásil, IT a bezpečnostní odbor riziko nenašly, formální vyšetřování neproběhlo.",
+  "outlet": "CNN Prima News",
+  "sourceType": "celostátní zpravodajství",
+  "url": "https://cnn.iprima.cz/stastny-pod-palbou-kritiky-v-zasedacce-uradu-vlady-zrejme-zapomnel-nahravaci-zarizeni-516803",
+  "published": "2026-07-10",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-05"
+    }
+  ],
+  "subjects": [
+    "stastny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "CNN Prima NEWS dne 10. 7. 2026 informovala, že 22. ledna 2026 bylo v\nzasedací místnosti Úřadu vlády (Strakova akademie) při běžném úklidu\nnalezeno nahrávací zařízení — AI rekordér Plaud čínské výroby. Několik\ntýdnů zůstalo nevyzvednuté a uložené.\n\nVyjádření ministra podle článku: Boris Šťastný se k zařízení přihlásil na\nsociální síti jako ke svému osobnímu AI zapisovači zakoupenému na Alze —\ncitace: „Je to můj obyčejný AI rekordér, který používám k přepisu svých\npoznámek a vystoupení\" — s žertovnou poznámkou, že o místě, kde\nzařízení je, se dozvěděl až z článku.\n\nKritika podle článku: poslankyně Renáta Zajíčková (ODS) označila jeho\nreakci za nezralou, „vysvětlování a krizovou komunikaci na pubertální\núrovni\", a označila ho za bezpečnostní riziko.\n\nVyhodnocení a následky podle článku: IT pracovníci vlády a bezpečnostní\nodbor zařízení posoudili a **žádné bezpečnostní riziko nenašli**. Formální\nvyšetřování zpravodajskými službami ani ochrannou službou policie\nneproběhlo, protože o nálezu nebyly oficiálně informovány.\n\n**Poznámka k procesnímu stavu a hranicím**: žádné bezpečnostní riziko\nnebylo zjištěno a žádné řízení neproběhlo — dossier proto nic takového\nnetvrdí ani nenaznačuje. Hodnocení „bezpečnostní riziko\" je **politický\nvýrok opoziční poslankyně**, ne zjištění bezpečnostního orgánu; ten\nnaopak riziko nenašel. Obojí je vedeno vedle sebe jako citované výroky.\nJmenovaná poslankyně vystupuje výhradně jako autorka veřejného výroku k\ntéto věci, ne jako subjekt dossieru."
+    }
+  ],
+  "order": 2
+}

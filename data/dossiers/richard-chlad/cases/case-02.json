@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/case.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/richard-chlad/cases/CASE-02",
+  "@type": "vomaste:Case",
+  "recordType": "case",
+  "identifier": "CASE-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/richard-chlad"
+  },
+  "title": "Publikované reakce vedení strany",
+  "summary": "Turek i Macinka veřejně uvedli, že jeho roli zpravodajství přeceňuje. Doloženo je, že tato vyjádření padla — nikoli že jejich obsah platí.",
+  "period": "2026",
+  "status": "status-quote",
+  "statusLabel": "Citace obou stran",
+  "anchor": "kauza-reakce-strany",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-06"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/sources/SRC-03"
+    }
+  ],
+  "subjects": [
+    "chlad"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a metodické hranice v [hlavním přehledu](@/dossiers/richard-chlad/_index.md#kauza-reakce-strany)."
+    }
+  ],
+  "order": 2
+}

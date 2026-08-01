@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-50",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-50",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "text": "Vojtěch 30. dubna 2026 na sněmovním zdravotnickém výboru uvedl: „Národní očkovací strategie, i kdyby chtěla, tak nemůže zavést žádné povinné očkování“ — zavedení povinnosti by podle něj vyžadovalo novelu zákona o ochraně veřejného zdraví.",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-30"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "order": 50,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/adam-vojtech/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

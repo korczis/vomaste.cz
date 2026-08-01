@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-02",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
+  },
+  "text": "Poradkyně, kterou si Juchelka osobně vybral, dohlížela podle citovaného zpravodajství na dotační výzvy v objemu 17 miliard korun, přičemž její soukromá firma současně přijímala platby od žadatelů za pomoc se získáním týchž státních prostředků",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-03"
+    }
+  ],
+  "subjects": [],
+  "order": 2,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/ales-juchelka/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

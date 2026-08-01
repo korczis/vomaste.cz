@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-30",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-30",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "Mluvčí Státního zemědělského intervenčního fondu Eva Češpiva k tomu podle téhož zdroje uvedla: „SZIF od Úřadu evropského veřejného žalobce ani od jiných orgánů činných v trestním řízení neobdržel žádnou oficiální výzvu ke spolupráci.“",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-12"
+    }
+  ],
+  "subjects": [],
+  "order": 30,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

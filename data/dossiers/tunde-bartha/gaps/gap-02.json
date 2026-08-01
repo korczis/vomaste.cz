@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/gaps/GAP-02",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tunde-bartha"
+  },
+  "title": "GAP-02 — Přesné datum nástupu do současné funkce (uzavřeno 2026-08-01)",
+  "description": "Mezera uzavřena: primární úřední zdroj dokládá, že vláda Barthu jmenovala vedoucí Úřadu vlády na ustavující schůzi 15. 12. 2025.",
+  "priority": "nízká",
+  "checked": "2026-08-01",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-09"
+    }
+  ],
+  "subjects": [
+    "bartha"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Co se od poslední revize uzavřelo (1. 8. 2026).** Dřívější znění této\nmezery konstatovalo, že přesné datum nástupu Tünde Barthy do funkce\nvedoucí Úřadu vlády není doloženo primárním ani jmenovaně ozdrojovaným\nzdrojem (oficiální přehled úřadu nástupce neuváděl a zpráva Echo24\nz 9. 12. 2025 stála na nejmenovaných zdrojích). To už neplatí: tisková\nzpráva Úřadu vlády z ustavující schůze vlády dokládá, že ji vláda\njmenovala **15. prosince 2025**\n([CLM-09](@/dossiers/tunde-bartha/claims/clm-09.md),\n[SRC-06](@/dossiers/tunde-bartha/sources/src-06.md)).\n\n**Co zůstává mimo záznam.** Tiskové sdělení není textem usnesení vlády\na neuvádí, na čí návrh byla jmenována; pro faktum a datum jmenování je\nvšak primární úřední zdroj dostačující. Mezera se tímto považuje za\n**uzavřenou** — záznam zůstává v registru jako auditní stopa toho, že\npředchozí stav („datum nedoloženo“) byl skutečný a kdy se změnil."
+    }
+  ],
+  "order": 2
+}

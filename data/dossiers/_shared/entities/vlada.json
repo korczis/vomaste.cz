@@ -1,0 +1,68 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/vlada",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "vlada",
+  "entityId": "vlada",
+  "title": "Vláda ČR",
+  "entityType": "public_institution",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "macinka-turek",
+    "petr-macinka",
+    "filip-turek",
+    "oto-klempir",
+    "alena-schillerova",
+    "ales-juchelka",
+    "ivan-bednarik",
+    "boris-stastny",
+    "andrej-babis",
+    "karel-havlicek",
+    "jaromir-zuna",
+    "jeronym-tejc",
+    "zuzana-mrazova",
+    "adam-vojtech",
+    "igor-cerveny",
+    "robert-plaga",
+    "martin-sebestyan",
+    "tunde-bartha"
+  ],
+  "routeAliases": [
+    "/dossiers/andrej-babis/entities/vlada/"
+  ],
+  "order": 2,
+  "provenance": {
+    "discoveredAt": "2026-07-29",
+    "discoveredVia": [
+      "edge-babis-vlada"
+    ],
+    "claimRefs": [
+      "CLM-03",
+      "CLM-01",
+      "CLM-36",
+      "CLM-07",
+      "CLM-08"
+    ],
+    "sourceRefs": [
+      "SRC-11",
+      "SRC-01",
+      "SRC-08",
+      "SRC-09",
+      "SRC-12",
+      "SRC-04"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext."
+    }
+  ]
+}

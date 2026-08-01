@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-33",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-33",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "text": "Turek se (spolu s Kateřinou Konečnou a Václavem Klausem) setkal s íránským velvyslancem; všichni tři schůzku potvrdili a označili ji za zdvořilostní návštěvu",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-36"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-37"
+    }
+  ],
+  "subjects": [
+    "turek"
+  ],
+  "order": 33,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam tvrzení CLM-33 — shrnutí, stav a zdroje výše jsou úplné. Se zdrojem tohoto tvrzení se překrývá CLM-32. Hlavní stránka dossieru zobrazuje tentýž text ze stejného zdroje; build proces ověřuje, že se neliší."
+    }
+  ]
+}

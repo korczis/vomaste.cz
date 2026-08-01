@@ -7,10 +7,11 @@ zdroji podložené „dossiery“** o veřejně řešených kauzách veřejně �
 osob v ČR. Není to zpravodajský web ani blog s názory — je to strukturovaný,
 auditovatelný registr toho, co bylo o dané osobě ve veřejné funkci nezávisle
 publikováno, s explicitním rozlišením faktu, citace, sporného tvrzení a
-názoru. Které dossiery zrovna existují, tady schválně nestojí — jsou
-záznamem v `data/dossiers.toml` a řídí se jím šablony, validátory i
-navigace; číslo v textu by byla konstanta, kterou nikdo nepřepočítá. Živý
-seznam je na `/dossiers/`, autorizovaný rozsah v append-only logu v
+názoru. Které dossiery zrovna existují, tady schválně nestojí — kanonický
+dataset je `data/dossiers/**/*.json` (adresář s `dossier.json` JE
+registrace) a řídí se jím šablony, validátory i navigace; číslo v textu
+by byla konstanta, kterou nikdo nepřepočítá. Živý seznam je na
+`/dossiers/`, autorizovaný rozsah v append-only logu v
 `AGENTS.md`. Ale
 datový model, šablony i redakční pravidla jsou navržené obecně — pro
 libovolný další případ, pokud ho vlastník webu explicitně a na záznam
@@ -36,10 +37,14 @@ Každý dossier stojí na třech provázaných registrech:
   „otevřené“ není nález žádným směrem — jen že dostupné zdroje k danému
   datu neumožňují závěr.
 
-Registry jsou obousměrně provázané (CLM ↔ SRC, GAP → CLM). Integrita odkazů
-a kotev se ověřuje automaticky při buildu (`scripts/dossier/validate-dossier.mjs`,
-`scripts/dossier/verify-anchors.mjs`) — build padá na první chybějící odkaz,
-duplicitní ID nebo osiřelou kotvu.
+Registry jsou obousměrně provázané (CLM ↔ SRC, GAP → CLM). Každý záznam
+je kanonický JSON soubor (`data/dossiers/<slug>/{claims,sources,gaps,…}/`)
+s globálním `@id`; stránky, tabulky i exporty se z něj generují. Integrita
+odkazů, kotev i parity tabulky tvrzení se ověřuje automaticky při buildu
+(`npm run data:validate` — tvar podle `schemas/canonical/`, reference
+R1–R7, sémantika S1–S8, tabulková parita T1–T8;
+`scripts/dossier/verify-anchors.mjs` po `zola build`) — build padá na
+první chybějící odkaz, duplicitní ID nebo osiřelou kotvu.
 
 ## Redakční principy (závazné pro jakýkoli obsah)
 
@@ -77,8 +82,14 @@ případě pochybnosti se nejdřív zeptej.
 
 ## Technický stack a struktura repozitáře
 
-- [Zola](https://www.getzola.org/) — generátor statického webu; obsah v
-  Markdown + TOML front matter (`content/`), šablony v Tera (`templates/`)
+- Kanonická data: `data/dossiers/**/*.json` — JSON Schema + JSON-LD
+  (lokální context `/context/v1.jsonld`); jediné místo, kde se obsah
+  edituje
+- [Zola](https://www.getzola.org/) — generátor statického webu; adresáře
+  `content/dossiers/**` a `content/entities/` jsou GENEROVANÉ routing
+  adaptéry kanonických dat (regeneruje `npm run data:build`, ruční editace
+  blokuje lint), šablony v Tera (`templates/`) čtou view modely přes
+  `load_data`
 - Tailwind CSS (CLI build z `static/css/input.css`) + Flowbite aplikační
   shell (navbar + Drawer sidebar, `data-drawer-*` atributy) sbalené
   esbuildem (`assets/js/app.js` → `static/js/app.js`)
@@ -100,8 +111,15 @@ případě pochybnosti se nejdřív zeptej.
 
 - `npm run dev` — jednorázový build CSS/JS + `zola serve` (živý reload,
   `http://127.0.0.1:1111`)
-- `npm run build` — plná produkční sekvence: `validate:dossier` → CSS → JS
-  → `zola build` → `verify:anchors`; přesně tuto sekvenci spouští i CI
+- `npm run build` — plná produkční sekvence
+  (`scripts/build/pipeline.mjs`): `data:validate` → view modely +
+  regenerace content adaptérů → testy + validátory → generátory → CSS →
+  JS → `zola build` → `verify:anchors`/`verify:jsonld`; přesně tuto
+  sekvenci spouští i CI
+- Redakční workflow: uprav/založ JSON v `data/dossiers/**`
+  (`npm run dossier:scaffold` pro nový dossier — odmítne neautorizovaný
+  subjekt) → `npm run data:validate` (jednotlivý soubor:
+  `-- --file <cesta>`) → `npm run data:build` → `npm run build`
 - Nasazení: push do `master` → GitHub Actions → `zola check` → `zola
   build` → `actions/deploy-pages` na GitHub Pages. Deploy jede na
   vestavěném OIDC tokenu GitHub Actions, bez osobního přístupového tokenu
@@ -114,10 +132,11 @@ případě pochybnosti se nejdřív zeptej.
 
 - Piš/uprav obsah dossieru striktně podle redakčních principů výše — každé
   nové tvrzení potřebuje zdroj a stav ověřenosti.
-- Při změně datového modelu (nová šablona, nové pole front matter) drž
-  konzistenci mezi `content/`, `templates/` a validačními skripty v
-  `scripts/dossier/` — pole, které nečte žádná šablona, ani pole bez
-  pokrytí ve validátoru, je vada, ne detail.
+- Při změně datového modelu (nové pole záznamu) drž konzistenci mezi
+  kanonickým schématem (`schemas/canonical/`), view modely
+  (`scripts/data/build-view-models.mjs`) a šablonou/exportem, který pole
+  čte — pole bez konzumenta, ani pole bez pokrytí ve schématu, neprojde
+  (`additionalProperties: false`); viz `docs/data-contract.md`.
 - Než cokoli prohlásíš za hotové, over `npm run build` bez chyb — validátor
   a anchor-checker jsou skutečná specifikace, ne formalita.
 - Jazyk obsahu webu je čeština, neutrální publicistický až encyklopedický

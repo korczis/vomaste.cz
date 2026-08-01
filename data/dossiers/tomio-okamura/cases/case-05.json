@@ -1,0 +1,74 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/case.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/cases/CASE-05",
+  "@type": "vomaste:Case",
+  "recordType": "case",
+  "identifier": "CASE-05",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
+  },
+  "title": "Hlasování Sněmovny o vydání ke stíhání",
+  "summary": "Hlasování Sněmovny o vydání ke stíhání — viz tvrzení CLM-25, CLM-26, CLM-27, CLM-28, CLM-29, CLM-30, CLM-32.",
+  "period": "2026",
+  "status": "status-single",
+  "statusLabel": "Sledované téma",
+  "anchor": "kauza-nevydani-snemovnou",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-25"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-26"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-27"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-28"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-29"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-30"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-32"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-18"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-20"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-19"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-21"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-22"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-23"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-27"
+    }
+  ],
+  "subjects": [
+    "okamura"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu\ndossieru](@/dossiers/tomio-okamura/_index.md#kauza-nevydani-snemovnou)."
+    }
+  ],
+  "order": 5
+}

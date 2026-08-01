@@ -1,22 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-01 — Vláda ČR (oficiální profil)"
 description = "Oficiální profil člena vlády: funkce a údaje, které stránka sama uvádí."
 template = "dossier-source.html"
 weight = 1
 
 [extra]
-subjects = ["bednarik"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-01"
+view_model = "generated/views/dossiers/ivan-bednarik/sources/src-01.json"
 dossier = "ivan-bednarik"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-01"
-outlet = "Vláda České republiky (vlada.gov.cz)"
-src_type = "oficiální primární zdroj"
-url = "https://vlada.gov.cz/cz/vlada/clenove-vlady/ivan-bednarik-223975/"
-retrieved = "2026-07-30"
-claims = ["CLM-01"]
 +++
-
 Oficiální profil na webu Úřadu vlády, otevřen a přečten 2026-07-30.
 Uvádí funkci **ministr dopravy** a doložený přehled kariéry: narozen 16. 1. 1975 (Starý Tekov, Slovensko); téměř tři dekády v dopravě a logistice; bývalý předseda představenstva a generální ředitel Českých drah; dříve vedení ČD Cargo; poradce slovenského ministra dopravy (12/2023–5/2025); generální ředitel Železníc Slovenskej republiky (od 15. 5. 2025).
 

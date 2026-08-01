@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "title": "SRC-02 — Seznam Zprávy",
+  "description": "„Závažná zjištění.“ Kvůli defibrilátorům posílá Vojtěch do nemocnice policii",
+  "outlet": "Seznam Zprávy",
+  "sourceType": "zpravodajství",
+  "url": "https://www.seznamzpravy.cz/clanek/domaci-kauzy-zavazna-zjisteni-kvuli-defibrilatorum-poslal-vojtech-do-olomouce-policii-301861",
+  "published": "2026-03-17",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-09"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**„Závažná zjištění.“ Kvůli defibrilátorům posílá Vojtěch do nemocnice policii**\n\nMinisterstvo zdravotnictví podalo 17. 3. 2026 trestní oznámení kvůli implantacím defibrilátorů na I. interní klinice — kardiologické FN Olomouc; podezření na obcházení indikačních kritérií a účelové úpravy dokumentace. Obsahuje citaci ministra Vojtěcha a kontext jeho zdrženlivého postoje z února 2026 (nechtěl odvolávat ředitele Havlíka, Babiš ředitele podporoval). Seznam Zprávy o kauze poprvé informovaly v prosinci 2025.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 2
+}

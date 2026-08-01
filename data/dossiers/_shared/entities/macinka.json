@@ -1,0 +1,56 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/macinka",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "macinka",
+  "entityId": "macinka",
+  "title": "Petr Macinka",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "full",
+  "dossiers": [
+    "macinka-turek",
+    "petr-macinka",
+    "richard-chlad"
+  ],
+  "routeAliases": [
+    "/dossiers/macinka-turek/entities/macinka/"
+  ],
+  "snapshotDate": "2026-07-30",
+  "order": 1,
+  "provenance": {
+    "discoveredAt": "2026-07-29",
+    "discoveredVia": [
+      "edge-macinka-motoriste",
+      "edge-macinka-kauza2024",
+      "edge-macinka-nehoda2026",
+      "edge-macinka-gmrgas",
+      "edge-macinka-klubmotoristu",
+      "edge-macinka-mzp2026",
+      "edge-macinka-cerveny"
+    ],
+    "claimRefs": [
+      "CLM-03",
+      "CLM-24",
+      "CLM-04",
+      "CLM-06"
+    ],
+    "sourceRefs": [
+      "SRC-11",
+      "SRC-27",
+      "SRC-03"
+    ],
+    "depth": 0
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Hlavní subjekt autorizovaného dossieru. Tato stránka je kanonický záznam\ntéto entity — dossiery, tvrzení, zdroje a vztahy v tabulce a sekcích níže\njsou úplné; nejde o zkrácenou verzi něčeho podrobnějšího jinde."
+    }
+  ]
+}

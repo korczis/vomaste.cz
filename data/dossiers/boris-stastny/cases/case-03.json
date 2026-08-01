@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/case.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/boris-stastny/cases/CASE-03",
+  "@type": "vomaste:Case",
+  "recordType": "case",
+  "identifier": "CASE-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/boris-stastny"
+  },
+  "title": "Upravené metriky na sociálních sítích",
+  "summary": "Upravené metriky na sociálních sítích — viz tvrzení CLM-32, CLM-33, CLM-34, CLM-35, CLM-36, CLM-37, CLM-38, CLM-39.",
+  "period": "2026",
+  "status": "status-single",
+  "statusLabel": "Sledované téma",
+  "anchor": "kauza-rozpor-cisla",
+  "claims": [],
+  "sources": [],
+  "subjects": [
+    "stastny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu\ndossieru](@/dossiers/boris-stastny/_index.md#kauza-rozpor-cisla)."
+    }
+  ],
+  "order": 3
+}

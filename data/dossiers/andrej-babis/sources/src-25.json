@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-25",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-25",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-25 — Ekonom: Příběh kolem Setuzy končí bez happy endu (9. 6. 2011)",
+  "description": "Analýza konce sporů o Setuzu; Babišova neúspěšná snaha firmu získat a vybudování vlastního závodu Preol.",
+  "outlet": "Ekonom",
+  "sourceType": "analytické zpravodajství",
+  "url": "https://ekonom.cz/c1-52046900-setuza-story-bez-happy-endu",
+  "published": "2011-06-09",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-53"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Analýza týdeníku Ekonom (autor Martin Mařík) k závěru sporů o ústeckou\nSetuzu.\n**Co dokládá:** že Andrej Babiš o Setuzu dlouhodobě usiloval, **firmu\nnezískal**, a že místo toho vybudoval vlastní závod Preol na výrobu\nsurovin pro biopaliva.\n\n**Nezávislost:** samostatná redakce, nezávislá na všech ostatních\nzdrojích tohoto dossieru.\n\n**Co z tohoto zdroje záměrně nepřebírám.** Text obsahuje i Babišovo\nvlastní vyprávění o vyjednávání s dvěma jmenovanými třetími osobami.\nTuhle citaci dossier nereprodukuje: k autorizovanému tématu nepřidává nic\nnad rámec toho, že akvizice nevyšla, zato by do textu vtáhla jména,\no nichž tento web nic netvrdí a tvrdit nemá. Redakční pravidlo o\nnejmenovaných třetích osobách se tím neobchází — uvádí se, že takový\nodstavec ve zdroji je, aby bylo zřejmé, co se vynechalo a proč.\n\n**Limity:** jde o **podnikatelskou epizodu z roku 2011**, ne o kauzu.\nZdroj neuvádí žádné pochybení Andreje Babiše ve vztahu k Setuze a tento\ndossier žádné netvrdí."
+    }
+  ],
+  "order": 25
+}

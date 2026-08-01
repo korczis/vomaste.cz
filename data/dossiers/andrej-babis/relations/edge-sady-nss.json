@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/relations/edge-sady-nss",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-sady-nss",
+  "relationId": "edge-sady-nss",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/sady-cz"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/nss"
+  },
+  "relationType": "SUBJECT_OF_PROCEEDING",
+  "label": "NSS 8/2025 zamítl kasační stížnost: rozhodný je stav v době podání žádosti",
+  "status": "single",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-65"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-45"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 33,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Status: single."
+    }
+  ]
+}

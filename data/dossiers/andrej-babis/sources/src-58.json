@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-58",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-58",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-58 — ČT24: Česko s výsledkem auditu Evropské komise nesouhlasí, uvedlo ministerstvo (23. 4. 2021)",
+  "description": "Finální audit strukturálních fondů (4/2021): Babiš fondy i Agrofert ovládá, dotace po 9. 2. 2017 neoprávněné; druhý — zemědělský — audit tehdy ještě nebyl finalizován.",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/cesko-s-vysledkem-auditu-evropske-komise-ohledne-babise-a-agrofertu-nesouhlasi-uvedlo-ministerstvo-35411",
+  "published": "2021-04-23",
+  "retrieved": "2026-08-01",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-82"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "ČT24 v dubnu 2021 k finálnímu auditu strukturálních fondů cituje závěr\nauditorů: „Pan Babiš tudíž oba svěřenské fondy ovládá a prostřednictvím\ntěchto svěřenských fondů ovládá také skupinu Agrofert“; dotace firmám\nholdingu od 9. února 2017 jsou podle auditorů neoprávněné. Česká\nstrana s výsledkem nesouhlasila. Pro tento dossier je klíčová i věta:\n„Druhý audit se zabývá čerpáním zemědělských dotací. Ten zatím ještě\nneskončil, nebyl finalizován.“\n\n**Poznámka**: zdroj se zde cituje primárně pro doložení, že zemědělský\naudit je samostatný proces s vlastní časovou osou (finální zpráva až\n2022, viz [SRC-59](@/dossiers/andrej-babis/sources/src-59.md));\nzjištění strukturálního auditu dokládají SRC-18–SRC-20 v kauze auditů.\n\n**Nezávislost**: jediný přímo otevřený zdroj k této dílčí skutečnosti —\nstav `1 ZDROJ`. Otevřeno a přečteno 2026-08-01."
+    }
+  ],
+  "order": 58
+}

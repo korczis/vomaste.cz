@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-46",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-46",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "text": "Novela stavebního zákona, kterou Mrázová spolupředkládala s Andrejem Babišem, podle Seznam Zpráv ruší ustanovení bránící dodatečnému povolení stavby při zmeškání lhůt a umožňuje legalizaci tam, kde stavební úřad uzná důvody zmeškání za omluvitelné.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-15"
+    }
+  ],
+  "subjects": [
+    "mrazova"
+  ],
+  "order": 46,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/zuzana-mrazova/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

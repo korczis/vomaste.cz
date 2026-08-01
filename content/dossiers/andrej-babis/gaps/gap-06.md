@@ -1,19 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "GAP-06 — Probíhající řízení bez rozhodnutí: obžaloba Pekárny Zelená louka, žaloby PGRLF, kasační větve sporů se SZIF"
 description = "Tři otevřené procesní větve, u nichž citované zdroje dokládají jen podání obžaloby či žalob, nikoli výsledek; dossier žádný výsledek nepředjímá."
 template = "dossier-gap.html"
 weight = 6
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis/gaps/GAP-06"
+view_model = "generated/views/dossiers/andrej-babis/gaps/gap-06.json"
 dossier = "andrej-babis"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-06"
-priority = "vysoká"
-checked = "2026-08-01"
-claims = ["CLM-57", "CLM-60", "CLM-63", "CLM-86"]
 +++
-
 **Co je doloženo.** K datu poslední kontroly (1. 8. 2026) citované
 zdroje dokládají tři otevřené procesní větve bez konečného rozhodnutí:
 

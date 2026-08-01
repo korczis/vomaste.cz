@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-20",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-20",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "title": "SRC-20 — Novinky.cz: Sněmovna schválila spornou novelu rozpočtových zákonů (15. 5. 2026)",
+  "description": "Novinky.cz nezávisle na ČeskéNoviny.cz/ČTK (SRC-04) potvrzuje schválení novely rozpočtových zákonů poměrem 91:68.",
+  "outlet": "Novinky.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://www.novinky.cz/clanek/ekonomika-snemovna-schvalila-spornou-novelu-rozpoctovych-zakonu-40578363",
+  "published": "2026-05-15",
+  "retrieved": "2026-07-31",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-08"
+    }
+  ],
+  "subjects": [
+    "schillerova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Novinky.cz dne 15. 5. 2026: „Pro zákon hlasovalo 91 poslanců vládní\nkoalice. Proti bylo 68 opozičních zákonodárců.\"\n\n**Nezávislost**: samostatná redakce od ČeskéNoviny.cz/ČTK (SRC-04) —\nobě nezávisle potvrzují tutéž veřejnou skutečnost (výsledek hlasování).\nProto CLM-08 nese stav `CORROBORATED`."
+    }
+  ],
+  "order": 20
+}

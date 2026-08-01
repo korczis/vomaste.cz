@@ -1,23 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-55 — Echo24 (ČTK): Proč Šaroch zastavil stíhání Babiše. Tady je přehled jeho argumentů (19. 9. 2019)"
 description = "Zastavení stíhání: „skutek není trestným činem“, nepodařilo se prokázat vlastnictví akcií; usnesení současně konstatuje enormní zájem a nadstandardní vztahy."
 template = "dossier-source.html"
 weight = 55
 
 [extra]
-subjects = ["babis"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-55"
+view_model = "generated/views/dossiers/andrej-babis/sources/src-55.json"
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-55"
-outlet = "Echo24"
-src_type = "zpravodajství"
-url = "https://echo24.cz/a/Sjsuc/proc-saroch-zastavil-stihani-babise-tady-je-prehled-jeho-argumentu"
-published = "2019-09-19"
-retrieved = "2026-08-01"
-claims = ["CLM-78"]
 +++
-
 Echo24 (s využitím ČTK) 19. 9. 2019 shrnuje usnesení, jímž státní
 zástupce Jaroslav Šaroch zastavil stíhání Andreje Babiše: „skutek není
 trestným činem“; mimo jiné se nepodařilo prokázat, že Babiš byl

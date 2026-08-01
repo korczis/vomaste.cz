@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-22",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-22",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
+  },
+  "title": "SRC-22 — ČeskéNoviny.cz (ČTK)",
+  "description": "Klempíř po výzvě umělců proti Motoristům požádal, aby lidé počkali na program",
+  "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceType": "zpravodajství",
+  "url": "https://www.ceskenoviny.cz/zpravy/klempir-po-vyzve-umelcu-proti-motoristum-pozadal-aby-lide-pockali-na-program/2735972",
+  "published": "2025-10-18",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-40"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-41"
+    }
+  ],
+  "subjects": [
+    "klempir"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Klempíř po výzvě umělců proti Motoristům požádal, aby lidé počkali na program**\n\nReakce Klempíře jako poslance za Motoristy a pravděpodobného kandidáta na ministra kultury na otevřený dopis zhruba 500 umělců.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 22
+}

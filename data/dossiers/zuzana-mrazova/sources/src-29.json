@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-29",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-29",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "title": "SRC-29 — ČeskéNoviny.cz (ČTK): Ministryně Mrázová (ANO) se vzdala zastupitelského mandátu v Bílině na Teplicku (17. 6. 2026)",
+  "description": "ČeskéNoviny.cz nezávisle potvrzuje rezignaci na mandát, nástupce Kohlschüttera a předchozí místostarostenský/starostenský mandát.",
+  "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceFamily": "ctk",
+  "sourceType": "agenturní zpravodajství",
+  "url": "https://www.ceskenoviny.cz/zpravy/ministryne-mrazova-ano-se-vzdala-zastupitelskeho-mandatu-v-biline-na-teplicku/2839785",
+  "published": "2026-06-17",
+  "retrieved": "2026-07-31",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-33"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-34"
+    }
+  ],
+  "subjects": [
+    "mrazova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "ČeskéNoviny.cz dne 17. 6. 2026: „Ministryně pro místní rozvoj Zuzana\nMrázová (ANO) se vzdala mandátu členky zastupitelstva města Bíliny.\"\n„Dnešním slibem zastupitele ji nahradí Štěpán Kohlschütter.\" „Mrázová\nbyla nejprve v Bílině čtyři roky ve funkci místostarostky a pak sedm\nlet starostkou.\"\n\n**Nezávislost**: samostatná redakce/agentura od Blesk.cz (SRC-21) — obě\nnezávisle potvrzují tytéž skutečnosti. Proto CLM-33 a CLM-34 nesou stav\n`CORROBORATED`."
+    }
+  ],
+  "order": 29
+}

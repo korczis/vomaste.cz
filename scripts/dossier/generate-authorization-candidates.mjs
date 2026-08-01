@@ -17,84 +17,62 @@
  * dossier (its own claims/sources/relations) — it does not speculate about
  * what a hypothetical future dossier might cover. That call is the site
  * owner's alone.
+ *
+ * T-028 fáze H: čte VÝHRADNĚ compiled kanonický model. Provenienční stopa
+ * objevení (claims/sources — ručně kurátorovaná, NENÍ to unie vazeb
+ * z relations) žije od fáze H v entity.provenance.claimRefs/sourceRefs
+ * (lokální id s dossier kontextem entity.dossiers — viz
+ * schemas/canonical/entity.schema.json). Rodiny zdrojů a vztahy jdou
+ * z kanonických source/relation záznamů. Výstupy nejsou build exporty
+ * (data/generated/ + reports/ jsou gitignored).
  */
-import { readFileSync, readdirSync, writeFileSync, mkdirSync, statSync } from "node:fs";
+import { writeFileSync, mkdirSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { getCompiledModel, localPart, recordsOf } from "./lib/compiled-model.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
-const DOSSIERS_ROOT = join(ROOT, "content/dossiers");
-const ENTITIES_ROOT = join(ROOT, "content/entities");
 const JSON_OUT = join(ROOT, "data/generated/authorization-candidates.json");
 const MD_OUT = join(ROOT, "reports/authorization-candidates.md");
 
-function extractField(text, key) {
-  const re = new RegExp(`^${key}\\s*=\\s*"((?:[^"\\\\]|\\\\.)*)"`, "m");
-  const found = text.match(re);
-  return found ? found[1].replace(/\\(.)/g, "$1") : null;
-}
-function extractArrayField(text, key) {
-  const re = new RegExp(`^${key}\\s*=\\s*\\[([^\\]]*)\\]`, "m");
-  const found = text.match(re);
-  if (!found) return [];
-  return [...found[1].matchAll(/"((?:[^"\\]|\\.)*)"/g)].map((x) => x[1].replace(/\\"/g, '"'));
-}
-function frontMatterOf(text) {
-  const fmEnd = text.indexOf("\n+++", 3);
-  return text.slice(0, fmEnd);
-}
+const compiled = getCompiledModel(ROOT);
+const dossierSlugs = compiled.records.filter((w) => w.registry === "dossier").map((w) => w.dossier);
 
 // --- per-dossier source-family lookup, so we can report independent-
-//     confirmation counts, not just raw source counts ---
+//     confirmation counts, not just raw source counts (kanonické
+//     sourceFamily; zdroj bez rodiny je vlastní singleton — stejná
+//     sémantika jako validate-semantics S2) ---
 function loadSourceFamilies(slug) {
-  const srcDir = join(DOSSIERS_ROOT, slug, "sources");
   const familyOf = new Map();
-  for (const file of readdirSync(srcDir).filter((f) => /^src-\d+\.md$/.test(f))) {
-    const text = readFileSync(join(srcDir, file), "utf8");
-    const fm = frontMatterOf(text);
-    const srcId = extractField(fm, "src_id");
-    const family = extractField(fm, "family");
-    if (srcId) familyOf.set(srcId, family || `singleton:${srcId}`);
+  for (const w of recordsOf(compiled, slug, "sources")) {
+    const r = w.record;
+    familyOf.set(r.identifier, r.sourceFamily || `singleton:${r.identifier}`);
   }
   return familyOf;
 }
 
 function loadRelationsFor(slug) {
-  const relDir = join(DOSSIERS_ROOT, slug, "relations");
-  return readdirSync(relDir)
-    .filter((f) => f !== "_index.md" && f.endsWith(".md"))
-    .map((f) => {
-      const text = readFileSync(join(relDir, f), "utf8");
-      const fm = frontMatterOf(text);
-      return {
-        rel_id: extractField(fm, "rel_id"),
-        source: extractField(fm, "source"),
-        target: extractField(fm, "target"),
-        label: extractField(fm, "label"),
-      };
-    });
+  return recordsOf(compiled, slug, "relations").map((w) => ({
+    rel_id: w.record.identifier,
+    source: localPart(w.record.sourceEntity?.["@id"]),
+    target: localPart(w.record.targetEntity?.["@id"]),
+    label: w.record.label,
+  }));
 }
 
-const dossierSlugs = readdirSync(DOSSIERS_ROOT).filter((f) =>
-  statSync(join(DOSSIERS_ROOT, f)).isDirectory(),
-);
 const relationsByDossier = new Map(dossierSlugs.map((s) => [s, loadRelationsFor(s)]));
 const familiesByDossier = new Map(dossierSlugs.map((s) => [s, loadSourceFamilies(s)]));
 
-const entityFiles = readdirSync(ENTITIES_ROOT).filter((f) => f !== "_index.md" && f.endsWith(".md"));
 const candidates = [];
 
-for (const file of entityFiles) {
-  const text = readFileSync(join(ENTITIES_ROOT, file), "utf8");
-  const fm = frontMatterOf(text);
-  const publicationRole = extractField(fm, "publication_role");
-  if (publicationRole !== "context") continue; // only context entities are candidates
+for (const w of compiled.entities) {
+  const r = w.record;
+  if (r.publicationRole !== "context") continue; // only context entities are candidates
 
-  const entityId = extractField(fm, "entity_id");
-  const dossiers = extractArrayField(fm, "dossiers");
-  const claims = extractArrayField(fm, "claims");
-  const sources = extractArrayField(fm, "sources");
-  const titleMatch = text.match(/^title = "(.*)"$/m);
+  const entityId = r.entityId;
+  const dossiers = r.dossiers ?? [];
+  const claims = r.provenance?.claimRefs ?? [];
+  const sources = r.provenance?.sourceRefs ?? [];
 
   const independentFamilies = new Set();
   for (const d of dossiers) {
@@ -105,21 +83,21 @@ for (const file of entityFiles) {
 
   const relations = [];
   for (const d of dossiers) {
-    for (const r of relationsByDossier.get(d) || []) {
-      if (r.source === entityId || r.target === entityId) relations.push({ dossier: d, ...r });
+    for (const rel of relationsByDossier.get(d) || []) {
+      if (rel.source === entityId || rel.target === entityId) relations.push({ dossier: d, ...rel });
     }
   }
 
   candidates.push({
     entity_id: entityId,
-    name: titleMatch ? titleMatch[1] : entityId,
-    entity_type: extractField(fm, "entity_type"),
-    dossier_status: extractField(fm, "dossier_status"),
+    name: r.title,
+    entity_type: r.entityType,
+    dossier_status: r.dossierStatus,
     appears_in_dossiers: dossiers,
     claims,
     sources,
     independent_source_families: independentFamilies.size,
-    relations: relations.map((r) => `${r.rel_id} (${r.source} -> ${r.target}, "${r.label}", dossier: ${r.dossier})`),
+    relations: relations.map((rel) => `${rel.rel_id} (${rel.source} -> ${rel.target}, "${rel.label}", dossier: ${rel.dossier})`),
     missing: ["explicit owner authorization to promote this to its own dossier"],
   });
 }

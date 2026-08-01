@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/relations/edge-babis-vlada",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-babis-vlada",
+  "relationId": "edge-babis-vlada",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/babis"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/vlada"
+  },
+  "relationType": "HOLDS_ROLE",
+  "label": "premiér",
+  "status": "contextual",
+  "claims": [],
+  "sources": [],
+  "subjects": [
+    "macinka",
+    "turek"
+  ],
+  "directed": true,
+  "order": 4,
+  "note": "Nesporné veřejné pozadí (kdo je premiérem), ne tvrzení dokládané vlastním zdrojem tohoto dossieru.",
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextový, strukturální vztah — dossier jej neuvádí jako vlastní doloženou investigaci, jen jako veřejně nesporné pozadí.\n\nNesporné veřejné pozadí (kdo je premiérem), ne tvrzení dokládané vlastním zdrojem tohoto dossieru."
+    }
+  ]
+}

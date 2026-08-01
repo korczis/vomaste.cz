@@ -1,204 +1,20 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Jaromír Zůna"
 description = "Neutrální, zdroji doložený přehled o osobě Jaromír Zůna — místopředseda vlády a ministr obrany. Autorizovaný rozsah dle AUTH-2026-07-30-N; registry se teprve plní."
 template = "entity-dossier.html"
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/jaromir-zuna"
+view_model = "generated/views/dossiers/jaromir-zuna/overview.json"
 dossier = "jaromir-zuna"
-dossier_title = "Jaromír Zůna"
+record_type = "dossier"
 dossier_type = "entity"
-canonical_dossier = "jaromir-zuna"
-subject = "zuna"
 lang = "cs"
 seo_type = "ProfilePage"
-subject_entities = ["zuna"]
-subjects = ["Jaromír Zůna"]
 updated = "2026-07-30"
 reviewed_at = "2026-07-30"
-
-
-[[extra.timeline]]
-date = "2026-01"
-title = "Vláda snižuje obranný rozpočet 2026 o 21 miliard na cca 185 miliard Kč (2,07 % HDP dle predikce)"
-anchor = "kauza-rozpocet-nato"
-dot = "dot-fact"
-subjects = ["zuna"]
-
-[[extra.timeline]]
-date = "2026-04"
-title = "Kauza nezveřejněného rozhovoru prezidenta Pavla pro podcast Kamufláž; opozice mluví o cenzuře, rozhovor později vychází na YouTube"
-anchor = "kauza-rozpocet-nato"
-dot = "dot-fact"
-subjects = ["zuna"]
-
-[[extra.timeline]]
-date = "2026-04"
-title = "Zůna v ČT: NATO neuzná cca 20 miliard na dopravní stavby, ČR podle metodiky NATO na 1,78 % HDP"
-anchor = "kauza-rozpocet-nato"
-dot = "dot-fact"
-subjects = ["zuna"]
-
-[[extra.timeline]]
-date = "2026-05"
-title = "Vláda vybírá Hlaváče náčelníkem generálního štábu; Zůna jako jediný hlasuje proti, Vondra vyzývá k rezignaci, Okamura ministra hájí"
-anchor = "kauza-rozpocet-nato"
-dot = "dot-fact"
-subjects = ["zuna"]
-
-[[extra.timeline]]
-date = "2026-05"
-title = "Babiš veřejně kritizuje Zůnovu koncepci armády kvůli počtům vojáků a tempu náboru"
-anchor = "kauza-rozpocet-nato"
-dot = "dot-fact"
-subjects = ["zuna"]
-
-[[extra.timeline]]
-date = "2026-06"
-title = "Inspekce MO uzavírá spor o rozhovor s prezidentem: cílená cenzura neprokázána, chyby na obou stranách"
-anchor = "kauza-rozpocet-nato"
-dot = "dot-fact"
-subjects = ["zuna"]
-[[extra.timeline]]
-date = "2026-02"
-title = "Zůna ve Sněmovně obhajuje rozpočet 2026 a avizuje Koncepci výstavby AČR 2040 jako realistickou a rozpočtově udržitelnou"
-anchor = "kauza-rozpocet-nato"
-dot = "dot-fact"
-subjects = ["zuna"]
-
-[[extra.timeline]]
-date = "2026-02"
-title = "Zůna představuje plán růstu rozpočtu obrany na 215 mld. (2027) a 238 mld. Kč (2028)"
-anchor = "kauza-rozpocet-nato"
-dot = "dot-fact"
-subjects = ["zuna"]
-
-[[extra.timeline]]
-date = "2026-04"
-title = "Zůna argumentuje demografickou pastí a nutností strukturální změny výstavby armády"
-anchor = "kauza-koncepce-armady"
-dot = "dot-fact"
-subjects = ["zuna"]
-
-[[extra.timeline]]
-date = "2026-05"
-title = "Babiš po jednání se Zůnou kritizuje cíl 32 tisíc vojáků do roku 2040 a žádá minimálně 2000 vojáků ročně"
-anchor = "kauza-koncepce-armady"
-dot = "dot-fact"
-subjects = ["zuna"]
-
-[[extra.timeline]]
-date = "2026-05"
-title = "Vláda navrhuje Hlaváče náčelníkem generálního štábu, Zůna hlasuje proti"
-anchor = "kauza-nacelnik-gs"
-dot = "dot-fact"
-subjects = ["zuna"]
-
-[[extra.timeline]]
-date = "2026-05"
-title = "Sněmovní výbor pro obranu jednomyslně podporuje Hlaváče; Zůna mu přes hlasování na vládě dává doporučující stanovisko"
-anchor = "kauza-nacelnik-gs"
-dot = "dot-fact"
-subjects = ["zuna"]
-
-[[extra.timeline]]
-date = "2026-06"
-title = "Babiš žádá zvýšení náborového cíle z 2600 na zhruba 3000 profesionálů ročně"
-anchor = "kauza-koncepce-armady"
-dot = "dot-fact"
-subjects = ["zuna"]
-
-[[extra.timeline]]
-date = "2026-06"
-title = "Inspekce ministerstva obrany uzavírá spor o neodvysílaný rozhovor s prezidentem: cenzura neprokázána, pochybení na obou stranách"
-anchor = "kauza-rozhovor-pavel"
-dot = "dot-fact"
-subjects = ["zuna"]
-
-[[extra.timeline]]
-date = "2026-06"
-title = "Bezpečnostní rada státu za účasti prezidenta Pavla projednává koncepci do roku 2040, debatu nedokončí"
-anchor = "kauza-koncepce-armady"
-dot = "dot-fact"
-subjects = ["zuna"]
-
-[[extra.timeline]]
-date = "2026-06"
-title = "Zůna v Bruselu k dvouprocentnímu cíli: „My pro to děláme maximum“"
-anchor = "kauza-rozpocet-nato"
-dot = "dot-fact"
-subjects = ["zuna"]
-
-[[extra.timeline]]
-date = "2026-06"
-title = "Prezident Pavel jmenuje Miroslava Hlaváče náčelníkem generálního štábu a kritizuje přístup vlády k armádě"
-anchor = "kauza-nacelnik-gs"
-dot = "dot-fact"
-subjects = ["zuna"]
-
-[[extra.timeline]]
-date = "2026-07"
-title = "Bezpečnostní rada státu se ke koncepci vrací podruhé, diskuse opět nekončí"
-anchor = "kauza-koncepce-armady"
-dot = "dot-fact"
-subjects = ["zuna"]
-
-[[extra.timeline]]
-date = "2026-07"
-title = "Koalice se dohaduje na 2 % HDP pro obranu v roce 2027 a rozpočtu téměř 191 mld. Kč"
-anchor = "kauza-rozpocet-nato"
-dot = "dot-fact"
-subjects = ["zuna"]
-
-[[extra.timeline]]
-date = "2026-07"
-title = "Babiš se Zůnou na summitu NATO v Ankaře deklarují navýšení o 36 mld. Kč a dosažení 2 % HDP"
-anchor = "kauza-rozpocet-nato"
-dot = "dot-fact"
-subjects = ["zuna"]
-
-[[extra.cases]]
-anchor = "kauza-rozpocet-nato"
-period = "2026"
-title = "Obranný rozpočet a závazek 2 % NATO"
-status = "status-single"
-label = "Sledované téma"
-summary = "Obranný rozpočet a závazek 2 % NATO — viz tvrzení CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07."
-claims = ["CLM-41", "CLM-42", "CLM-43", "CLM-44", "CLM-45", "CLM-46", "CLM-47", "CLM-48"]
-subjects = ["zuna"]
-
-[[extra.cases]]
-anchor = "kauza-rozhovor-pavel"
-period = "2026"
-title = "Neodvysílaný rozhovor s prezidentem Pavlem"
-status = "status-single"
-label = "Sledované téma"
-summary = "Neodvysílaný rozhovor s prezidentem Pavlem — viz tvrzení CLM-08, CLM-09, CLM-10, CLM-11, CLM-12."
-claims = ["CLM-29", "CLM-30", "CLM-31"]
-subjects = ["zuna"]
-
-[[extra.cases]]
-anchor = "kauza-nacelnik-gs"
-period = "2026"
-title = "Spor o volbu náčelníka Generálního štábu"
-status = "status-single"
-label = "Sledované téma"
-summary = "Spor o volbu náčelníka Generálního štábu — viz tvrzení CLM-13, CLM-14, CLM-15, CLM-16."
-claims = ["CLM-20", "CLM-21", "CLM-22", "CLM-23", "CLM-24", "CLM-25", "CLM-26", "CLM-27", "CLM-28"]
-subjects = ["zuna"]
-
-[[extra.cases]]
-anchor = "kauza-koncepce-armady"
-period = "2026"
-title = "Spor o koncepci armády"
-status = "status-single"
-label = "Sledované téma"
-summary = "Spor o koncepci armády — viz tvrzení CLM-17, CLM-18, CLM-19."
-claims = ["CLM-32", "CLM-33", "CLM-34", "CLM-35", "CLM-36", "CLM-37", "CLM-38", "CLM-39", "CLM-40", "CLM-49", "CLM-50", "CLM-51", "CLM-52", "CLM-53"]
-subjects = ["zuna"]
-
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-N"]
 +++
 Jaromír Zůna zastává funkci místopředsedy vlády a ministra obrany ve třetí vládě Andreje Babiše (viz
 `data/government.toml`, ověřeno proti oficiálnímu seznamu členů vlády).

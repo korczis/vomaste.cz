@@ -1,0 +1,52 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-05",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-05",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/boris-stastny"
+  },
+  "title": "SRC-05 — Respekt",
+  "description": "Nahrávací zařízení, které se našlo ve vládní zasedačce, byl elektronický zápisník Borise Šťastného",
+  "outlet": "Respekt",
+  "sourceType": "zpravodajství",
+  "url": "https://www.respekt.cz/informacni-servis/nahravaci-zarizeni-ktere-se-naslo-ve-vladni-zasedacce-byl-elektronicky-zapisnik-borise-stastneho-pry-2026-07-10-12-22",
+  "published": "2026-07-10",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-15"
+    }
+  ],
+  "subjects": [
+    "stastny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Nahrávací zařízení, které se našlo ve vládní zasedačce, byl elektronický zápisník Borise Šťastného**\n\nInformační servis Respektu k odhalení Seznam Zpráv. Uvádí, že zařízení bylo vypnuté a nijak neukryté, šlo tedy zjevně o ztrátu, a cituje Barthu, že v den nálezu vláda nezasedala ani se v místnosti nekonalo jednání ve vyhrazeném režimu.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 5
+}

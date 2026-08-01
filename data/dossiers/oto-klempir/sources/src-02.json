@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
+  },
+  "title": "SRC-02 — Respekt",
+  "description": "Investigativní text týdeníku RESPEKT (19. 7. 2026) o působení Oto Klempíře v čele ministerstva kultury.",
+  "outlet": "Respekt",
+  "sourceType": "investigativní zpravodajství",
+  "url": "https://www.respekt.cz/tydenik/2026/30/spatny-oto-na-spatnem-miste",
+  "published": "2026-07-19",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-06"
+    }
+  ],
+  "subjects": [
+    "klempir"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Text v rubrice „Téma\" týdeníku RESPEKT (číslo 30/2026, 19. července\n2026), podepsaný čtyřmi autory: František Trojan, Jan H. Vitvar,\nKristýna Jelínková, Eva Soukeníková. Nejde o komentář ani sloupek —\nrubrika i podpisy odpovídají zpravodajskému/investigativnímu formátu,\nproto tvrzení z něj nejsou v dossieru vedena jako `NÁZOR`, ale jako\nzpravodajská tvrzení s jediným zdrojem.\n\nText popisuje konkrétní resortní kroky (grantová rozhodnutí,\npozice ke stavebnímu zákonu, zrušené výběrové řízení na ředitele\nNárodní galerie Praha, prosazování přesunu financování veřejnoprávních\nmédií) a veřejné přijetí ministra. Podle textu se Klempíř k dotazům\nredakce nevyjádřil.\n\n**Poznámka k nezávislosti a limitům**: RESPEKT je k datu poslední\nkontroly **jediný** otevřený a ověřený zdroj pro tvrzení CLM-03 až\nCLM-06 — všechna proto nesou stav `1 ZDROJ`. Povýšení na `CORROBORATED`\nby vyžadovalo druhý, skutečně nezávislý zdroj (jiný vydavatel, ne\npřebírající zpráva), nikdy jen přeznačení. SRC-01 (úřední profil) takovým\npotvrzením není.\n\n**Limit přístupu, uveden poctivě**: plný text článku je za předplatným.\nOvěřeno bylo přímým otevřením stránky — rubrika, datum, autoři a\ntematický rozsah; jednotlivé formulace uvnitř textu nebyly možné\ndoslovně ověřit v plném rozsahu. Tvrzení opřená o tento zdroj jsou proto\nformulována jako „RESPEKT uvedl, že…\", nikoli jako přímé citace,\na GAP-01 tento limit vede jako otevřenou mezeru."
+    }
+  ],
+  "order": 2
+}

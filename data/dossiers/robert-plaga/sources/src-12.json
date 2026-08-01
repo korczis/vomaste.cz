@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-12",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-12",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "title": "SRC-12 — Deník.cz (VLTAVA LABE MEDIA)",
+  "description": "Sporné testování žáků letos platí. Část dat inspekce smaže, zbytek ale zpracuje",
+  "outlet": "Deník.cz (VLTAVA LABE MEDIA)",
+  "sourceType": "zpravodajství",
+  "url": "https://www.denik.cz/skolstvi-a-vzdelavani/cesko-skolstvi-testovani-zaku-5-a-9-trid-linspekce-data-smaze-nektera-si-necha.html",
+  "published": "2026-05-26",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-20"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-21"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-26"
+    }
+  ],
+  "subjects": [
+    "plaga"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Sporné testování žáků letos platí. Část dat inspekce smaže, zbytek ale zpracuje**\n\nAutorka Kamila Minaříková. Mluvčí MŠMT Ondřej Macura uvádí, že data z češtiny a matematiky budou dále zpracována, zatímco osobní údaje z dotazů na socioekonomický status a duševní zdraví budou vymazány. Letošní ročník testování se přes zastavení započítá jako platný. MŠMT a ČŠI plánují pokračovat v upravené podobě, konkrétní změny až po analýze. Článek neuvádí roli ÚOOÚ ani personální změny.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 12
+}

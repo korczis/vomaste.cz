@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-29",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-29",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "text": "Novelu stavebního zákona (sněmovní tisk 67) předložila 12. prosince 2025 skupina deseti poslanců vedená Andrejem Babišem, mezi nimiž byl i Karel Havlíček; vláda k ní 16. prosince 2025 zaslala souhlasné stanovisko.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-17"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "order": 29,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/karel-havlicek/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/petr-pavel/updates/2026-08-01",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-08-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/petr-pavel"
+  },
+  "date": "2026-08-01",
+  "summary": "Založen dossier dle AUTH-2026-08-01-PAVEL ze čtyř zdrojů dříve otevřených a přečtených pro dossier macinka-turek (Deník.cz SRC-44, HN.cz SRC-45, Blesk.cz SRC-51, Deník N SRC-52 — zde jako SRC-01..04, nový fyzický záznam téhož faktu). Rozsah úzce vymezen: jen odmítnutí jmenovat Turka ministrem ŽP a Turkova oznámená a nakonec nepodaná žaloba. Žádné nové téma o prezidentském úřadu.",
+  "addedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-pavel/claims/CLM-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-pavel/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-pavel/claims/CLM-03"
+    }
+  ],
+  "updatedClaims": [],
+  "addedGaps": [],
+  "closedGaps": [],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-pavel/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-pavel/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-pavel/sources/SRC-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-pavel/sources/SRC-04"
+    }
+  ]
+}

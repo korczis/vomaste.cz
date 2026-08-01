@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-54",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-54",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "text": "Návštěva národních parků Yosemite a Sequoia byla podle oficiálního avíza naplánována až po skončení politického fóra; deklarovaným cílem bylo seznámit se s americkým systémem prevence a zvládání lesních požárů.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-18"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-19"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "order": 54,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/igor-cerveny/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

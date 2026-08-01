@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-28",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-28",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
+  },
+  "text": "V rozhovoru ČT24 dne 27. 7. 2026 s moderátorem Danielem Takáčem Juchelka řekl: „Vůbec nepřijdeme o žádné peníze z EU a vůbec nebude v dluhu státní rozpočet, protože ty peníze jsou alokovány tak, jak alokovány jsou.“",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-19"
+    }
+  ],
+  "subjects": [
+    "juchelka"
+  ],
+  "order": 28,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/ales-juchelka/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

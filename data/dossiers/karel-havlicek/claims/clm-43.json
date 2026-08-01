@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-43",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-43",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "text": "Na tiskové konferenci po jednání vlády 13. července 2026 Havlíček odůvodnil svou pozici tím, že Česko je automobilově orientovaná země — „deset procent HDP, 25 procent exportu, několik set tisíc pracovních míst“ — a uvedl, že „manažeři významných společností nejenom automobilových velmi dobře už dnes vědí, že jsou nenaplnitelné“.",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-27"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "order": 43,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/karel-havlicek/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-07",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-07",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "title": "SRC-07 — Blesk.cz",
+  "description": "Přestavby na ministerstvu za 3 miliony: Turek s Červeným si vylepšují kancly",
+  "outlet": "Blesk.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://www.blesk.cz/clanek/zpravy-politika/840615/prestavby-na-ministerstvu-za-3-miliony-turek-s-cervenym-si-vylepsuji-kancly.html",
+  "published": "2026-05-29",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-15"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Přestavby na ministerstvu za 3 miliony: Turek s Červeným si vylepšují kancly**\n\nMŽP plánuje stavební úpravy (bourání příček, demontáže, nátěry, tapetování, nové koberce) za až 3 mil. Kč; týkají se sekretariátu a nové pracovny ministra Červeného — místnosti po vrchním řediteli v nezabezpečené části budovy. Původní 'ministerskou' kancelář užívá poslanec Filip Turek (Motoristé), podle nějž se ho rekonstrukce netýká: 'V mé kanceláři se řeší pouze nutné technické úpravy.' Červený volbu vysvětlil světlem ('kancelář, která je na jihu... celý den sluníčko'). Exministr Petr Hladík (KDU-ČSL) projekt označil za vyhazování peněz.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 7
+}

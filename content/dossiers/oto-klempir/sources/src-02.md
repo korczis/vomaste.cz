@@ -1,23 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-02 — Respekt"
 description = "Investigativní text týdeníku RESPEKT (19. 7. 2026) o působení Oto Klempíře v čele ministerstva kultury."
 template = "dossier-source.html"
 weight = 2
 
 [extra]
-subjects = ["klempir"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-02"
+view_model = "generated/views/dossiers/oto-klempir/sources/src-02.json"
 dossier = "oto-klempir"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-02"
-outlet = "Respekt"
-src_type = "investigativní zpravodajství"
-url = "https://www.respekt.cz/tydenik/2026/30/spatny-oto-na-spatnem-miste"
-retrieved = "2026-07-30"
-published = "2026-07-19"
-claims = ["CLM-03", "CLM-04", "CLM-05", "CLM-06"]
 +++
-
 Text v rubrice „Téma" týdeníku RESPEKT (číslo 30/2026, 19. července
 2026), podepsaný čtyřmi autory: František Trojan, Jan H. Vitvar,
 Kristýna Jelínková, Eva Soukeníková. Nejde o komentář ani sloupek —

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar"
+  },
+  "title": "SRC-01 — ČT24",
+  "description": "Ministerstvo vnitra navrhuje ukončit policejní ochranu NKÚ; Metnar to odůvodňuje bezpečnostní analýzou, prezident NKÚ Kala mluví o útoku na nezávislou instituci.",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "veřejnoprávní zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/vnitro-chce-zrusit-policejni-ochrannou-sluzbu-nku-dalsi-pokus-o-vyhladoveni-mini-sef-uradu-376057",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-03"
+    }
+  ],
+  "subjects": [
+    "metnar"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "ČT24 informovala, že Ministerstvo vnitra navrhuje od příštího roku\nukončit policejní ochrannou službu u Nejvyššího kontrolního úřadu. Úřad\nby si podle článku musel platit soukromou ostrahu, odhadem přibližně\n20 milionů korun ročně.\n\nOdůvodnění ministra Metnara podle článku: návrh nevychází z politického\nrozhodnutí, ale z bezpečnostní analýzy Policie ČR a posouzení ochrany\nstátních objektů; sídlo NKÚ podle něj dlouhodobě vykazuje nejnižší\nriziko a má vlastní moderní zabezpečení, policejní kapacita má být\npřesměrována k ochraně České národní banky.\n\nReakce prezidenta NKÚ Miloslava Kaly podle článku: označil to za „útok\nna nezávislou instituci\" a za „další pokus o vyhladovění\", aby se úřad\nméně věnoval kontrolám; uvedl, že úřad nebyl předem informován a\ndozvěděl se to z vládních dokumentů, a odkázal na dřívější rozpočtové\ntlaky při současném přidávání nových kontrolních povinností u\nveřejnoprávních médií.\n\n**Poznámka k procesnímu stavu**: podle článku jde k datu jeho vydání o\n**návrh (materiál) ministerstva** — žádné legislativní rozhodnutí ani\nkonečný verdikt nepadl. Dossier proto nikde neuvádí, že by ochrana\nzrušena byla. Jde o **spor o výkon veřejné funkce**, ne o obvinění z\nprotiprávního jednání; obě pozice jsou vedeny jako citované výroky."
+    }
+  ],
+  "order": 1
+}

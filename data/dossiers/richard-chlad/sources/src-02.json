@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/richard-chlad/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/richard-chlad"
+  },
+  "title": "SRC-02 — CNN Prima News",
+  "description": "CNN Prima News, 16. 10. 2025: profil Richarda Chlada — podnikání v hazardu a energetice, starší osobní známost s Radovanem Krejčířem, jeho vlastní údaj o podpoře Motoristů „necelé dva miliony korun“.",
+  "outlet": "CNN Prima News",
+  "sourceType": "celostátní zpravodajství",
+  "url": "https://cnn.iprima.cz/kdo-je-verny-sponzor-motoristu-richard-chlad-podporovatel-turka-i-kontroverzni-podnikatel-488806",
+  "published": "2025-10-16",
+  "retrieved": "2026-07-22",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-08"
+    }
+  ],
+  "subjects": [
+    "chlad"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "CNN Prima News dne 16. 10. 2025 profiluje podnikatele Richarda Chlada:\nzačínal v 80. letech dovozem videokazet a hodinek, po roce 1989 se\nvěnoval hazardu (síť heren Krijcos), dnes podle článku investuje do\nsolárních elektráren a vodíku (Krijcos Energy, Moravia Green Hydrogen).\n\nČlánek uvádí jeho **starší osobní známost s Radovanem Krejčířem** —\nseznámili se podle něj na večírku Mercedes-Benz a navštěvovali sportovní\nareál ve Všenorech; Krejčíř je podle článku ve vězení v Jihoafrické\nrepublice.\n\nChlad podle vlastních slov citovaných v článku poskytl straně **„necelé\ndva miliony korun\"** na propagaci a vozy pro mítinky.\n\n**Poznámka k procesní přesnosti a hranicím**: údaj o dvou milionech je\n**Chladovo vlastní vyjádření**, ne ověřená částka — doloženo je, že to\nřekl. Známost s Radovanem Krejčířem je v tomto dossieru **atribuovaný\npopisný detail z citovaného zpravodajství**, nikoli téma: je osobní a\nhistorická, není finanční ani politická, a **netvrdí se z ní nic o\nChladově jednání**. Radovan Krejčíř není subjektem tohoto ani žádného\njiného dossieru na tomto webu a jeho pokrytí bylo výslovně zamítnuto\n(viz `AGENTS.md`, „Not authorized: Radovan Krejčíř\")."
+    }
+  ],
+  "order": 2
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-03",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "title": "SRC-03 — ČeskéNoviny.cz (ČTK)",
+  "description": "Novela rozpočtových zákonů: co mění, obhajoba ministryně a kritika opozice.",
+  "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceType": "agenturní zpravodajství",
+  "url": "https://www.ceskenoviny.cz/zpravy/schillerova-cr-by-bez-zmeny-pravidel-pro-rozpocty-cekala-paralyza/2824577",
+  "published": "2026-05-13",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-07"
+    }
+  ],
+  "subjects": [
+    "schillerova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpráva z 13. 5. 2026 popisuje obsah novely rozpočtových zákonů: mění\nzpůsob výpočtu výdajových rámců — z pravidla maximálního strukturálního\ndeficitu na střednědobý růst čistých výdajů. Podle článku by\npozměňovací návrhy ministryně umožnily vládě navýšit výdaje na\nstrategickou infrastrukturu nad schválené limity a v některých případech\nobejít schválení Parlamentem, včetně navýšení rozpočtu až o 10 procent\npři bezpečnostních hrozbách.\n\nObhajoba ministryně (citace v článku): „Neexistuje realistický scénář,\njak za rok snížit deficit na 150 miliard korun bez kolapsu investic.\"\nArgumentovala, že rozpočtová pravidla předchozí vlády vytvořila\nneřešitelnou situaci a novela je nutná k sestavení zákonného rozpočtu.\n\nKritika opozice (citace v článku): předseda ODS Martin Kupka novelu\noznačil za „ústavní převrat na splátky\" s tím, že přesouvá moc z\nParlamentu na exekutivu; Olga Richterová (Piráti) uvedla, že zákon může\nvést ke „kolapsu státu\" a odebírá parlamentní kontrolu, pozměňovací\nnávrhy označila za „přílepky\".\n\n**Poznámka k nezávislosti**: agenturní zpráva ČTK. Pokud stejný text\npřebírají další weby, **nejde o další nezávislá potvrzení** — je to jedna\nzdrojová rodina. Jmenovaní politici zde vystupují výhradně jako autoři\nveřejně publikovaného výroku k této novele, nestávají se subjekty\ndossieru."
+    }
+  ],
+  "order": 3
+}

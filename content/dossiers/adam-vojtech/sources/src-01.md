@@ -1,22 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-01 — Vláda ČR (oficiální web)"
 description = "Oficiální web Úřadu vlády: funkce a údaje, které stránka sama uvádí."
 template = "dossier-source.html"
 weight = 1
 
 [extra]
-subjects = ["vojtech"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-01"
+view_model = "generated/views/dossiers/adam-vojtech/sources/src-01.json"
 dossier = "adam-vojtech"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-01"
-outlet = "Vláda České republiky (vlada.gov.cz)"
-src_type = "oficiální primární zdroj"
-url = "https://vlada.gov.cz/cz/vlada/clenove-vlady/"
-retrieved = "2026-07-30"
-claims = ["CLM-01"]
 +++
-
 Oficiální stránka na webu Úřadu vlády, otevřena a přečtena 2026-07-30.
 Oficiální **seznam členů vlády** (otevřen 2026-07-30) uvádí Adama Vojtěcha jako **ministra zdravotnictví**. Jeho samostatná profilová stránka (vlada.gov.cz/cz/vlada/clenove-vlady/adam-vojtech-223978/, rovněž otevřena 2026-07-30) je k datu otevření zastaralá — uvádí mandát poslance (od 10/2025), velvyslance ve Finsku (2022–2025) a dřívější působení ministra zdravotnictví (2017–2020, 2021); aktuální funkci nese seznam, proto je zdrojem tohoto tvrzení seznam, ne profil.
 

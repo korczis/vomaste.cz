@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/ab-private-trusts",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "ab-private-trusts",
+  "entityId": "ab-private-trusts",
+  "title": "AB private trust I a II",
+  "entityType": "organization",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "contextual",
+  "dossiers": [
+    "andrej-babis"
+  ],
+  "routeAliases": [
+    "/dossiers/andrej-babis/entities/ab-private-trusts/"
+  ],
+  "order": 19,
+  "provenance": {
+    "discoveredAt": "2026-08-01",
+    "discoveredVia": [
+      "edge-babis-ab-trusts",
+      "edge-ab-trusts-agrofert"
+    ],
+    "claimRefs": [
+      "CLM-16"
+    ],
+    "sourceRefs": [
+      "SRC-06",
+      "SRC-28"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext."
+    }
+  ]
+}

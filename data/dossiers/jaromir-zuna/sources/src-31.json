@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-31",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-31",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "title": "SRC-31 — ČeskéNoviny.cz (ČTK)",
+  "description": "Babiš se setkal se Zůnou, jednali o summitu NATO i schůzce ministrů obrany",
+  "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceType": "zpravodajství",
+  "url": "https://www.ceskenoviny.cz/zpravy/babis-se-setkal-se-zunou-jednali-o-summitu-nato-i-schuzce-ministru-obrany/2833675",
+  "published": "2026-06-02",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-33"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-52"
+    }
+  ],
+  "subjects": [
+    "zuna"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Babiš se setkal se Zůnou, jednali o summitu NATO i schůzce ministrů obrany**\n\nPříprava mandátu pro summit v Ankaře, zvýšení náborového cíle z 2600 na zhruba 3000 profesionálů ročně na žádost premiéra a plánované projednání dlouhodobého výhledu do 2040 na BRS 17. 6.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 31
+}

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-25",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-25",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "title": "SRC-25 — FORUM 24",
+  "description": "Ministryně Mrázová má na svém pozemku černé stavby",
+  "outlet": "FORUM 24",
+  "sourceType": "zpravodajství",
+  "url": "https://www.forum24.cz/ministryne-mrazova-ma-na-svem-pozemku-cerne-stavby",
+  "published": "2026-04-30",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-42"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-43"
+    }
+  ],
+  "subjects": [
+    "mrazova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Ministryně Mrázová má na svém pozemku černé stavby**\n\nPozemek v Bílině vedený v ÚP jako lesní plocha; objekt s komínem, pergola se sezením, přístřešek. Město v letech 2018–2022 zamítlo žádost tehdejšího manžela Romana Schwarze o překlasifikaci na stavební pozemek s odůvodněním rozšiřování sídla do volné krajiny; v dokumentaci je uvedeno, že na parcele již stojí nepovolené stavby. 2021 dar poloviny parcely od Schwarze, 2022 výlučnou vlastnicí — v té době byla starostkou Bíliny s gescí územního plánování.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 25
+}

@@ -5,7 +5,10 @@
 
 {% block content %}
 <main class="mx-auto max-w-6xl px-6 py-12 text-white">
+  {#- T-028 fáze F: řádky registru pochází z view modelu, ne z front
+      matter section.pages — content adaptéry jsou generované. -#}
   {% set dossier_slug = section.extra.dossier %}
+  {% set idx = load_data(path="data/" ~ section.extra.view_model) %}
   {{ ui::page_header(title=section.title, description=section.description, breadcrumb_items=[
     "Dossier::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"),
     "Registr mezer",
@@ -14,22 +17,22 @@
   <article class="dossier-prose mb-10">{{ section.content | safe }}</article>
 
   {% set_global high_count = 0 %}
-  {% for p in section.pages %}
-    {% if p.extra.priority == "vysoká" %}{% set_global high_count = high_count + 1 %}{% endif %}
+  {% for p in idx.rows %}
+    {% if p.priority == "vysoká" %}{% set_global high_count = high_count + 1 %}{% endif %}
   {% endfor %}
   <div class="mb-8 grid grid-cols-2 gap-3 sm:grid-cols-3">
-    {{ ui::stat_tile(value=section.pages | length, label="Otevřených mezer") }}
+    {{ ui::stat_tile(value=idx.rows | length, label="Otevřených mezer") }}
     {{ ui::stat_tile(value=high_count, label="Vysoká priorita") }}
-    {{ ui::stat_tile(value=section.pages | length - high_count, label="Střední / nízká") }}
+    {{ ui::stat_tile(value=idx.rows | length - high_count, label="Střední / nízká") }}
   </div>
 
-  {% if section.pages | length == 0 %}
+  {% if idx.rows | length == 0 %}
     {{ ui::empty_state(message="V tuto chvíli nejsou v dossieru vedeny žádné otevřené mezery.") }}
   {% else %}
   {{ views::open(
     id="gaps-registry",
     title="Registr mezer",
-    count=section.pages | length,
+    count=idx.rows | length,
     default_view="table",
     search_label="Hledat v mezerách",
     sort_options=["id::ID", "priority::Priorita", "checked::Ověřeno"],
@@ -42,27 +45,27 @@
     id="gaps-registry-table",
     caption="Registr mezer",
     record_type="gap",
-    count=section.pages | length,
+    count=idx.rows | length,
     columns=["ID", "Priorita", "Otevřená otázka", "Ověřeno"],
     sort_keys=["id", "priority", "", "checked"],
     searchable=true,
     url_state=true,
     export_name="mezery") }}
-    {% for p in section.pages %}
-    <tr data-record-key="{{ p.extra.gap_id }}" data-priority="{{ p.extra.priority }}" data-facet="{{ p.extra.priority }}" id="gaps-registry-table-{{ p.extra.gap_id | lower }}">
+    {% for p in idx.rows %}
+    <tr data-record-key="{{ p.identifier }}" data-priority="{{ p.priority }}" data-facet="{{ p.priority }}" id="gaps-registry-table-{{ p.identifier | lower }}">
       <td class="whitespace-nowrap p-3 align-top">
-        <a href="{{ p.permalink | safe }}" class="font-mono text-xs text-[#f3e5c0] hover:underline">{{ p.extra.gap_id }}</a>
+        <a href="{{ config.base_url }}{{ p.route }}" class="font-mono text-xs text-[#f3e5c0] hover:underline">{{ p.identifier }}</a>
       </td>
       {#- Priorita se řadí podle závažnosti, ne abecedně: „nízká" by jinak
           předběhla „vysokou" a nejnaléhavější mezery by skončily dole. -#}
-      <td class="whitespace-nowrap p-3 align-top" data-sort-value="{% if p.extra.priority == 'vysoká' %}1{% elif p.extra.priority == 'střední' %}2{% else %}3{% endif %}">
-        <span class="gap-priority-badge {% if p.extra.priority == 'vysoká' %}gap-priority-high{% else %}gap-priority-low{% endif %}">{{ p.extra.priority }}</span>
+      <td class="whitespace-nowrap p-3 align-top" data-sort-value="{% if p.priority == 'vysoká' %}1{% elif p.priority == 'střední' %}2{% else %}3{% endif %}">
+        <span class="gap-priority-badge {% if p.priority == 'vysoká' %}gap-priority-high{% else %}gap-priority-low{% endif %}">{{ p.priority }}</span>
       </td>
       <td class="p-3 align-top">
-        <a href="{{ p.permalink | safe }}" class="font-semibold text-white no-underline hover:text-[#f3e5c0]">{{ p.title | split(pat=" — ") | last }}</a>
+        <a href="{{ config.base_url }}{{ p.route }}" class="font-semibold text-white no-underline hover:text-[#f3e5c0]">{{ p.title | split(pat=" — ") | last }}</a>
         <span class="mt-0.5 line-clamp-2 text-white/70 sm:line-clamp-none sm:block">{{ p.description }}</span>
       </td>
-      <td class="whitespace-nowrap p-3 align-top text-xs text-white/55">{{ p.extra.checked | default(value="—") }}</td>
+      <td class="whitespace-nowrap p-3 align-top text-xs text-white/55">{{ p.checked | default(value="—") }}</td>
     </tr>
     {% endfor %}
   {{ table::advanced_table_end(
@@ -72,14 +75,14 @@
 
   {{ views::projection(name="list", default_view="table") }}
     <ul class="divide-y divide-white/10 overflow-hidden rounded-lg border border-white/10 bg-white/[0.03]">
-      {%- for p in section.pages %}
-      <li data-record-key="{{ p.extra.gap_id }}" data-facet="{{ p.extra.priority }}" id="gaps-registry-list-{{ p.extra.gap_id | lower }}" class="p-3">
+      {%- for p in idx.rows %}
+      <li data-record-key="{{ p.identifier }}" data-facet="{{ p.priority }}" id="gaps-registry-list-{{ p.identifier | lower }}" class="p-3">
         <div class="flex flex-wrap items-baseline gap-x-2 gap-y-1">
-          <a href="{{ p.permalink | safe }}" class="font-mono text-xs text-[#f3e5c0] no-underline hover:underline">{{ p.extra.gap_id }}</a>
-          <span class="gap-priority-badge {% if p.extra.priority == 'vysoká' %}gap-priority-high{% else %}gap-priority-low{% endif %}">{{ p.extra.priority }}</span>
-          <span class="ml-auto font-mono text-[0.65rem] text-white/55">{{ p.extra.checked | default(value="—") }}</span>
+          <a href="{{ config.base_url }}{{ p.route }}" class="font-mono text-xs text-[#f3e5c0] no-underline hover:underline">{{ p.identifier }}</a>
+          <span class="gap-priority-badge {% if p.priority == 'vysoká' %}gap-priority-high{% else %}gap-priority-low{% endif %}">{{ p.priority }}</span>
+          <span class="ml-auto font-mono text-[0.65rem] text-white/55">{{ p.checked | default(value="—") }}</span>
         </div>
-        <a href="{{ p.permalink | safe }}" class="mt-1 block font-semibold text-white no-underline hover:underline">{{ p.title | split(pat=" — ") | last }}</a>
+        <a href="{{ config.base_url }}{{ p.route }}" class="mt-1 block font-semibold text-white no-underline hover:underline">{{ p.title | split(pat=" — ") | last }}</a>
         <p class="mt-0.5 line-clamp-2 text-xs leading-snug text-white/60">{{ p.description }}</p>
       </li>
       {%- endfor %}
@@ -88,14 +91,14 @@
 
   {{ views::projection(name="grid", default_view="table") }}
     <div class="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
-      {%- for p in section.pages %}
-      <article data-record-key="{{ p.extra.gap_id }}" data-facet="{{ p.extra.priority }}" id="gaps-registry-grid-{{ p.extra.gap_id | lower }}"
+      {%- for p in idx.rows %}
+      <article data-record-key="{{ p.identifier }}" data-facet="{{ p.priority }}" id="gaps-registry-grid-{{ p.identifier | lower }}"
         class="rounded-lg border border-white/10 bg-white/[0.03] p-3">
         <div class="flex flex-wrap items-baseline justify-between gap-2">
-          <a href="{{ p.permalink | safe }}" class="font-mono text-xs text-[#f3e5c0] no-underline hover:underline">{{ p.extra.gap_id }}</a>
-          <span class="gap-priority-badge {% if p.extra.priority == 'vysoká' %}gap-priority-high{% else %}gap-priority-low{% endif %}">{{ p.extra.priority }}</span>
+          <a href="{{ config.base_url }}{{ p.route }}" class="font-mono text-xs text-[#f3e5c0] no-underline hover:underline">{{ p.identifier }}</a>
+          <span class="gap-priority-badge {% if p.priority == 'vysoká' %}gap-priority-high{% else %}gap-priority-low{% endif %}">{{ p.priority }}</span>
         </div>
-        <a href="{{ p.permalink | safe }}" class="mt-1.5 block text-sm font-semibold text-white no-underline hover:underline">{{ p.title | split(pat=" — ") | last }}</a>
+        <a href="{{ config.base_url }}{{ p.route }}" class="mt-1.5 block text-sm font-semibold text-white no-underline hover:underline">{{ p.title | split(pat=" — ") | last }}</a>
         <p class="mt-1 line-clamp-3 text-xs leading-snug text-white/60">{{ p.description }}</p>
       </article>
       {%- endfor %}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-05",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-05",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "text": "Ministr Vojtěch k podání trestního oznámení uvedl: „Zjištění, která máme aktuálně k dispozici, jsou natolik závažná, že odůvodňují neprodlené prověření orgány činnými v trestním řízení.“",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-03"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "order": 5,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/adam-vojtech/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

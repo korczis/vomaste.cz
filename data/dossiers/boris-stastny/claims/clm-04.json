@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-04",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-04",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/boris-stastny"
+  },
+  "text": "IT pracovníci vlády a bezpečnostní odbor zařízení posoudili a žádné bezpečnostní riziko nenašli; formální vyšetřování zpravodajskými službami ani ochrannou službou policie neproběhlo, protože o nálezu nebyly oficiálně informovány",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-02"
+    }
+  ],
+  "subjects": [],
+  "order": 4,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/boris-stastny/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

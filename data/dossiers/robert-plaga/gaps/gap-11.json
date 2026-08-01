@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/gaps/GAP-11",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-11",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "title": "GAP-11 — Rozhovor Deníku N s Tomášem Zatloukalem (24. 5. 2026) nebyl obsahově ověřen.",
+  "description": "Článek je za paywallem; veřejně dostupný je pouze titulek, jména autorů a perex.",
+  "priority": "střední",
+  "checked": "2026-07-30",
+  "claims": [],
+  "subjects": [
+    "plaga"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Rozhovor Deníku N s Tomášem Zatloukalem (24. 5. 2026) nebyl obsahově ověřen.\n\n**Proč je to mezera**: Článek je za paywallem; veřejně dostupný je pouze titulek, jména autorů a perex. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+    }
+  ],
+  "order": 11
+}

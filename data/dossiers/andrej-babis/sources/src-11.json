@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-11",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-11",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-11 — Echo24: Evropská komise — české úřady mohly obnovit dotace firmám z Agrofertu (5. 6. 2026)",
+  "description": "Detaily dopisu Evropské komise z 20. 5. 2026: vyžádané informace ke struktuře fondu, jmenované další subjekty a lhůta k odpovědi.",
+  "outlet": "Echo24",
+  "sourceFamily": "ctk",
+  "sourceType": "agenturní zpravodajství",
+  "url": "https://www.echo24.cz/a/HmrPv/zpravy-domaci-evropska-komise-ceske-urady-mohly-obnovit-dotace-firmam-z-agrofertu-eu-zatim-nic-neproplaci",
+  "published": "2026-06-05",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-26"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Delší verze téže agenturní zprávy z 5. 6. 2026, obsahující navíc obsah\ndopisu Evropské komise z 20. května 2026.\n**Co dokládá:** že Komise si vyžádala potvrzení, že u operací vybraných\nod 9. prosince 2025 nebudou k proplacení nárokovány platby týkající se\nskupiny Agrofert ani dalších organizací spojených s Andrejem Babišem\n(v textu jmenovitě SynBiol a Hartenberg Holding), právní posouzení\nstruktury fondu RSVP Trust a informace o subjektech mimo tuto strukturu,\ns lhůtou k odpovědi kolem 20. června 2026.\n\n**Nezávislost:** stejný agenturní původ jako SRC-10 (`family = \"ctk\"`).\nDvě média, jeden zdroj — pro účely stavu `CORROBORATED` se počítá jako\njeden, proto tvrzení opřená o tuto dvojici nesou `1 ZDROJ`.\n\n**Limity:** obsah dopisu je znám z popisu ve zprávě, ne z primárního\ndokumentu. Že Komise informace požaduje, neznamená, že o něčí\nodpovědnosti rozhodla — v této fázi jde o dotaz a o pozastavené\nproplácení, ne o zjištění."
+    }
+  ],
+  "order": 11
+}

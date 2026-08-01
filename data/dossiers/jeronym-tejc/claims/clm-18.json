@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-18",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-18",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "text": "Tejc podle ČT24 rovněž kritizoval, že vláda před vydáním předběžného opatření nedostala možnost se k prezidentově žalobě vyjádřit.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-10"
+    }
+  ],
+  "subjects": [
+    "tejc"
+  ],
+  "order": 18,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jeronym-tejc/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

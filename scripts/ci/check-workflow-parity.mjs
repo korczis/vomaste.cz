@@ -19,12 +19,13 @@
  * It deliberately does NOT try to diff step lists. Enumerating steps is the
  * bug; the rule is "don't enumerate", and that is what gets checked.
  */
-import { readFileSync } from "node:fs";
+import { readFileSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const WORKFLOW = join(ROOT, ".github/workflows/deploy.yml");
+const PIPELINE = join(ROOT, "scripts/build/pipeline.mjs");
 
 const workflow = readFileSync(WORKFLOW, "utf8");
 const pkg = JSON.parse(readFileSync(join(ROOT, "package.json"), "utf8"));
@@ -42,12 +43,22 @@ if (!/run:\s*npm run build\s*$/m.test(workflow)) {
 // `npm run test` is exempt: it is part of `npm run build` but also worth
 // failing fast on, and running it twice costs seconds.
 const EXEMPT = new Set(["build", "test"]);
-const pipelineScripts = Object.keys(pkg.scripts).filter((s) => !EXEMPT.has(s));
-const relisted = pipelineScripts.filter((s) => {
-  // only count scripts that `npm run build` itself chains
-  if (!pkg.scripts.build.includes(`npm run ${s}`)) return false;
-  return new RegExp(`run:\\s*npm run ${s.replace(/[:.]/g, "\\$&")}\\s*$`, "m").test(workflow);
-});
+// Scripts the build pipeline chains: from the legacy `&&` chain in
+// package.json (historical form) AND from the pipeline orchestrator
+// (T-028 fáze G — `npm run build` deleguje na scripts/build/pipeline.mjs,
+// takže seznam kroků žije tam).
+const chained = new Set(
+  Object.keys(pkg.scripts).filter((s) => !EXEMPT.has(s) && pkg.scripts.build.includes(`npm run ${s}`)),
+);
+if (existsSync(PIPELINE)) {
+  const { MODES } = await import(pathToFileURL(PIPELINE).href);
+  for (const step of MODES?.build ?? []) {
+    if (typeof step === "string" && !EXEMPT.has(step)) chained.add(step);
+  }
+}
+const relisted = [...chained].filter((s) =>
+  new RegExp(`run:\\s*npm run ${s.replace(/[:.]/g, "\\$&")}\\s*$`, "m").test(workflow),
+);
 if (relisted.length) {
   errors.push(
     `deploy.yml re-lists ${relisted.length} script(s) that \`npm run build\` already chains: ${relisted.join(", ")}. ` +
@@ -62,7 +73,7 @@ if (!/path:\s*\.\/public\s*$/m.test(workflow)) {
 
 console.log(
   `check-workflow-parity — deploy.yml checked against ${Object.keys(pkg.scripts).length} npm script(s); ` +
-    `${pipelineScripts.length} of them are chained by \`npm run build\`.`,
+    `${chained.size} of them are chained by \`npm run build\` (via scripts/build/pipeline.mjs).`,
 );
 if (errors.length) {
   console.log(`\n${errors.length} error(s):`);

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-39",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-39",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "text": "Bednárik před nástupem do funkce uvedl, že je potřeba vyjasnit strategii, do čeho je smysluplné investovat, na základě analýz a exaktních čísel, a zdůraznil stabilní dlouhodobé financování s využitím evropských fondů a partnerství veřejného a soukromého sektoru.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-28"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "order": 39,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/ivan-bednarik/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-11",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-11",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
+  },
+  "text": "Podle zpravodajství soud uložil peněžitý trest při dolní hranici zákonné sazby, označil jej za výchovný a při jeho stanovení vycházel z ročního státního příspěvku hnutí SPD ve výši přibližně 40 milionů korun; rozsudek není pravomocný.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-12"
+    }
+  ],
+  "subjects": [
+    "okamura"
+  ],
+  "order": 11,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/tomio-okamura/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

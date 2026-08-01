@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-16",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-16",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "title": "SRC-16 — Blesk.cz",
+  "description": "Kauza dotací na „inovativní“ toastový chleba: Pekárna Agrofertu čelí obžalobě",
+  "outlet": "Blesk.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://www.blesk.cz/clanek/zpravy-politika/842211/kauza-dotaci-na-inovativni-toastovy-chleba-pekarna-agrofertu-celi-obzalobe.html",
+  "published": "2026-06-22",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-24"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-26"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-28"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Kauza dotací na „inovativní“ toastový chleba: Pekárna Agrofertu čelí obžalobě**\n\nObžalobu podal státní zástupce Adam Bašný z Úřadu evropského veřejného žalobce (EPPO) na společnost Pekárna Zelená louka a dvě fyzické osoby pro dotační podvod a poškození finančních zájmů EU. Jde o 100 milionů korun evropské dotace, kterou Brusel odmítl proplatit. Pekárna v projektu uvedla, že bude vyrábět zdravější chleba bez konzervantů pomocí inovačních prvků, ale kontroloři zjistili, že ve skutečnosti použila už existující technologii. Hodnota zaplombovaných nemovitostí činí 98 milionů korun. Věc projedná Krajský soud v Praze. Agrofert dříve uvedl, že firma postupovala v souladu se zákonem a na dotaci měla nárok.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 16
+}

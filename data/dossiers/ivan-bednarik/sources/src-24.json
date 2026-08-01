@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-24",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-24",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "title": "SRC-24 — Ekonomický deník",
+  "description": "Veletoče okolo peněz na dálnice a železnice. Chybí miliardy, vláda…",
+  "outlet": "Ekonomický deník",
+  "sourceType": "zpravodajství",
+  "url": "https://ekonomickydenik.cz/veletoce-okolo-rozpoctu/",
+  "published": "2025-12-22",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-32"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-33"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Veletoče okolo peněz na dálnice a železnice. Chybí miliardy, vláda…**\n\nNávrhu rozpočtu SFDI chybí 37,2 mld. Kč na krytí plánovaných výdajů; příjmy 144,6 mld. (o 15,7 mld. méně než 2025) proti plánovaným výdajům 187 mld. Ohroženy jsou D11 Jaroměř–Trutnov, silnice Mladá Boleslav–Martinovice, výkupy pro Pražský okruh a železniční projekty. Bednárik hovoří o rozpočtovém Waterloo na ministerstvu dopravy a navrhuje větší využití evropských zdrojů (Modernizační fond, SAFE). Ředitel ŘSD Radek Mátl upozorňuje, že nekryté finance brání podpisu smluv. Předseda Národní rozpočtové rady Mojmír Hampl kritizuje nepřiměřenou výdajovou trajektorii a růst navrhovaných výdajů ze 160 mld. na přes 311 mld. Kč do roku 2028.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 24
+}

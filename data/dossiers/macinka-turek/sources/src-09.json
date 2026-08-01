@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-09",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-09",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-09 — HlídacíPes.org",
+  "description": "Autorský komentář Aleše Rozehnala — explicitně veden jako názor, ne zpravodajství.",
+  "outlet": "HlídacíPes.org",
+  "sourceType": "komentář / názor",
+  "url": "https://hlidacipes.org/ales-rozehnal-macinka-a-turek-si-hraji-na-mazaky-ceka-je-navrat-k-bezvyznamnosti/",
+  "published": "2026-04-13",
+  "retrieved": "2026-07-21",
+  "claims": [],
+  "subjects": [
+    "macinka",
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "HlídacíPes.org je nezisková investigativní/komentářová platforma. Tento\nkonkrétní text je podepsaný autorský komentář Aleše Rozehnala, ne\nredakční zpravodajská zpráva — proto je v dossieru systematicky označen\nštítkem **Názor**, oddělený od faktických tvrzení v registru CLM-##.\n\nZařazení tohoto zdroje do dossieru samo o sobě neznamená souhlas ani\nnesouhlas s jeho hodnocením — dokládá jen, že takový veřejně publikovaný\nnázor existuje."
+    }
+  ],
+  "order": 9
+}

@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/relations/edge-nehoda2026-policie",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-nehoda2026-policie",
+  "relationId": "edge-nehoda2026-policie",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/nehoda2026"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/policie"
+  },
+  "relationType": "INVESTIGATED_BY",
+  "label": "vyšetřování (výsledek k datu poslední kontroly neuzavřen)",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-16"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-18"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-19"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-20"
+    }
+  ],
+  "subjects": [
+    "turek"
+  ],
+  "directed": true,
+  "order": 24,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam vztahu edge-nehoda2026-policie — typ vztahu, podporující tvrzení a zdroje v tabulce výše jsou úplné. Status FAKT znamená, že vztah je doložen nezávisle potvrzenými zdroji, ne jen tvrzením jedné strany. Hlavní stránka dossieru vykresluje interaktivní graf ze stejných dat."
+    }
+  ]
+}

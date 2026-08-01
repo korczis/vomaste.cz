@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-10",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-10",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "title": "SRC-10 — Echo24",
+  "description": "Ministr Bednárik chce investovat hlavně do VRT mezi Prahou a Brnem, hraniční úseky odloží",
+  "outlet": "Echo24",
+  "sourceType": "zpravodajství",
+  "url": "https://echo24.cz/a/HgZHN/zpravy-domov-bednarik-chce-investovat-do-vrt-mezi-praha-a-brno-hranicni-useky-odlozi",
+  "published": "2026-04-11",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-25"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Ministr Bednárik chce investovat hlavně do VRT mezi Prahou a Brnem, hraniční úseky odloží**\n\nBednárik upřednostňuje páteřní síť Drážďany–Praha–Brno–Ostrava/Břeclav a odkládá hraniční úseky. V první fázi se má stavět úsek Praha–Světlá nad Sázavou. SFDI vyčlenil zhruba 1,5 mld. Kč na přípravu a výstavbu VRT, z toho 430 mil. na majetkoprávní vypořádání.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 10
+}

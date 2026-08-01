@@ -1,20 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "GAP-01 — Pravomocný výsledek kauzy Čapí hnízdo"
 description = "Nepravomocný rozsudek nad spoluobžalovanou už doložený je; pravomocné rozhodnutí — a jakýkoli výsledek ve věci Andreje Babiše — chybí."
 template = "dossier-gap.html"
 weight = 1
 
 [extra]
-subjects = ["babis"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis/gaps/GAP-01"
+view_model = "generated/views/dossiers/andrej-babis/gaps/gap-01.json"
 dossier = "andrej-babis"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-01"
-priority = "vysoká"
-checked = "2026-07-30"
-claims = ["CLM-02", "CLM-07", "CLM-08", "CLM-20", "CLM-50", "CLM-51", "CLM-52"]
 +++
-
 **Co se od poslední revize uzavřelo (30. 7. 2026).** Procesní vývoj po
 červnu 2025 je nyní doložený otevřenými zdroji: Sněmovna Babiše v březnu
 2026 ke stíhání nevydala

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-25",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-25",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
+  },
+  "title": "SRC-25 — Taneční aktuality",
+  "description": "Peníze nebyly a najednou jsou. Na živou kulturu jde ministerstvo s bičem a cukrem",
+  "outlet": "Taneční aktuality",
+  "sourceType": "komentář/názor",
+  "url": "https://www.tanecniaktuality.cz/uhel-pohledu/penize-nebyly-a-najednou-jsou-na-zivou-kulturu-jde-ministerstvo-s-bicem-a-cukrem",
+  "published": "2026-07-15",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-34"
+    }
+  ],
+  "subjects": [
+    "klempir"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Peníze nebyly a najednou jsou. Na živou kulturu jde ministerstvo s bičem a cukrem**\n\nKomentář Jany Bohutínské ke dvěma mimořádným navýšením podpory živé kultury oznámeným MK na Facebooku (19. 5. – 19 projektů, 2. 7. – 15 projektů) mimo standardní dotační systém.\n\nZdroj otevřen a přečten 2026-07-30. **Komentář/názorový text** — dokládá, že autor hodnocení publikoval, ne že hodnocení platí."
+    }
+  ],
+  "order": 25
+}

@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/relations/edge-macinka-nehoda2026",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-macinka-nehoda2026",
+  "relationId": "edge-macinka-nehoda2026",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/macinka"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/nehoda2026"
+  },
+  "relationType": "DEFENDED",
+  "label": "hájí (\"nikdy se ho nevzdám\")",
+  "status": "quote",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-13"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-04"
+    }
+  ],
+  "subjects": [
+    "macinka",
+    "turek"
+  ],
+  "directed": true,
+  "order": 11,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam vztahu edge-macinka-nehoda2026 — typ vztahu, podporující tvrzení a zdroje v tabulce výše jsou úplné. Status CITACE znamená citovaný výrok některé ze zúčastněných stran, ne hodnocení tohoto webu. Hlavní stránka dossieru vykresluje interaktivní graf ze stejných dat."
+    }
+  ]
+}

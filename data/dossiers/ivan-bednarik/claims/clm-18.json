@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-18",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-18",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "text": "Ministerstvo dopravy pod Bednárikovým vedením oznámilo v únoru 2026 reformu Správy železnic s vyčíslenými ročními úsporami 335,6 milionu korun, zahrnující centralizaci 21 oblastních provozních jednotek pod dispečerská pracoviště v Praze a Přerově a zrušení 121 řídicích pozic bez dopadu na provozní zaměstnance.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-14"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "order": 18,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/ivan-bednarik/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

@@ -1,23 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-58 — ČT24: Česko s výsledkem auditu Evropské komise nesouhlasí, uvedlo ministerstvo (23. 4. 2021)"
 description = "Finální audit strukturálních fondů (4/2021): Babiš fondy i Agrofert ovládá, dotace po 9. 2. 2017 neoprávněné; druhý — zemědělský — audit tehdy ještě nebyl finalizován."
 template = "dossier-source.html"
 weight = 58
 
 [extra]
-subjects = ["babis"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-58"
+view_model = "generated/views/dossiers/andrej-babis/sources/src-58.json"
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-58"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/cesko-s-vysledkem-auditu-evropske-komise-ohledne-babise-a-agrofertu-nesouhlasi-uvedlo-ministerstvo-35411"
-published = "2021-04-23"
-retrieved = "2026-08-01"
-claims = ["CLM-82"]
 +++
-
 ČT24 v dubnu 2021 k finálnímu auditu strukturálních fondů cituje závěr
 auditorů: „Pan Babiš tudíž oba svěřenské fondy ovládá a prostřednictvím
 těchto svěřenských fondů ovládá také skupinu Agrofert“; dotace firmám

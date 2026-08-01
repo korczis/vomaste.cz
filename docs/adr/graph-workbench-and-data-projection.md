@@ -1,3 +1,5 @@
+*Historický dokument — popisuje stav před JSON-first migrací (T-028).*
+
 # ADR: Graph workbench data projection, build-time layout, and lazy loading
 
 **Status**: accepted.

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-09",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-09",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/boris-stastny"
+  },
+  "title": "SRC-09 — FORUM 24",
+  "description": "Jste bezpečnostní riziko. Motorista Šťastný čelí ostré kritice, objevují se výzvy k jeho rezignaci",
+  "outlet": "FORUM 24",
+  "sourceType": "zpravodajství",
+  "url": "https://www.forum24.cz/jste-bezpecnostni-riziko-motorista-stastny-celi-ostre-kritice-objevuji-se-vyzvy-k-jeho-rezignaci",
+  "published": "2026-07-11",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-21"
+    }
+  ],
+  "subjects": [
+    "stastny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Jste bezpečnostní riziko. Motorista Šťastný čelí ostré kritice, objevují se výzvy k jeho rezignaci**\n\nSouhrn politických a veřejných reakcí na kauzu nahrávacího zařízení, včetně výroků poslankyně ODS Renáty Zajíčkové a dalších komentátorů. Zmiňuje, že se na sociálních sítích objevily výzvy k rezignaci ministra.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 9
+}

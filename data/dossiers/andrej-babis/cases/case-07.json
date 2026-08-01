@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/case.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/cases/CASE-07",
+  "@type": "vomaste:Case",
+  "recordType": "case",
+  "identifier": "CASE-07",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "Střet zájmů a svěřenský fond RSVP Trust",
+  "summary": "Akcie Agrofertu vloženy do svěřenského fondu; Babiš považuje střet zájmů za vyřešený, jmenovaní oponenti a podle citovaného zpravodajství i Evropská komise ne.",
+  "period": "2026",
+  "status": "status-disputed",
+  "statusLabel": "Otevřené, spor pokračuje",
+  "anchor": "kauza-stret-zajmu",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-06"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-02"
+    }
+  ],
+  "subjects": [],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Plné znění, zdroje a kontext tohoto případu jsou v [hlavním přehledu\ndossieru](@/dossiers/andrej-babis/_index.md#kauza-stret-zajmu)."
+    }
+  ],
+  "order": 7
+}

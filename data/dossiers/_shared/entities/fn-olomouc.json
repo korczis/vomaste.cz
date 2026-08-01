@@ -1,0 +1,54 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/fn-olomouc",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "fn-olomouc",
+  "entityId": "fn-olomouc",
+  "title": "Fakultní nemocnice Olomouc",
+  "entityType": "public_institution",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "adam-vojtech"
+  ],
+  "routeAliases": [
+    "/dossiers/adam-vojtech/entities/fn-olomouc/"
+  ],
+  "order": 3,
+  "provenance": {
+    "discoveredAt": "2026-07-31",
+    "discoveredVia": [
+      "edge-vojtech-fn-olomouc"
+    ],
+    "claimRefs": [
+      "CLM-07",
+      "CLM-08",
+      "CLM-09",
+      "CLM-11",
+      "CLM-12",
+      "CLM-31",
+      "CLM-32",
+      "CLM-33"
+    ],
+    "sourceRefs": [
+      "SRC-02",
+      "SRC-04",
+      "SRC-06",
+      "SRC-07",
+      "SRC-19",
+      "SRC-20"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext."
+    }
+  ]
+}

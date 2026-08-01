@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-03",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar"
+  },
+  "title": "SRC-03 — Blesk.cz",
+  "description": "„Tlak na nesmyslné úspory.“ NKÚ má přijít o ochranku, její šéf mluví o „vyhladovění“",
+  "outlet": "Blesk.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://www.blesk.cz/clanek/zpravy-politika/844909/tlak-na-nesmyslne-uspory-nku-ma-prijit-o-ochranku-jeji-sef-mluvi-o-vyhladoveni.html",
+  "published": "2026-07-29",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-14"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-18"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-19"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-20"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-21"
+    }
+  ],
+  "subjects": [
+    "metnar"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**„Tlak na nesmyslné úspory.“ NKÚ má přijít o ochranku, její šéf mluví o „vyhladovění“**\n\nAgenturní zpracování kauzy s doslovnými citacemi obou stran. Obsahuje nejúplnější verzi Metnarova zdůvodnění (odkaz na bezpečnostní analýzu Policie ČR a aktuální vyhodnocení ochrany státních objektů) i dvě klíčové citace Miloslava Kaly. Doplňuje kontext: NKÚ jako nezávislá ústavní instituce, dlouhodobě napjatý vztah Kaly a premiéra Babiše, nový úkol kontrolovat ČT a ČRo, převedení policejní ochrany na ČNB.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 3
+}

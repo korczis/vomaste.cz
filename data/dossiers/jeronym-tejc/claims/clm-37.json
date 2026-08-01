@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-37",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-37",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "text": "Tejc po případu ohlásil novelu občanského zákoníku, podle níž by opatrovnické soudy nově a povinně posuzovaly, zda není namístě zbavit rodičovské odpovědnosti rodiče, který se dopustil domácího násilí vůči dítěti nebo druhému rodiči; násilný rodič by dál platil výživné a mohl by být v kontaktu například formou asistovaných setkání či videohovorů. Předložení vládě předpokládal během léta 2026.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-19"
+    }
+  ],
+  "subjects": [
+    "tejc"
+  ],
+  "order": 37,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jeronym-tejc/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

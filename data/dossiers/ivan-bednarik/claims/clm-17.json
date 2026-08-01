@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-17",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-17",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "text": "Bednárik varoval, že každé narušení stability podniku jako Správa železnic může ohrozit čerpání evropských prostředků, a rozpočtové provizorium označil za menší zlo oproti nucenému propouštění u stavebních firem.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-16"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "order": 17,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/ivan-bednarik/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

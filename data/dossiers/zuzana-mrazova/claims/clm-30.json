@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-30",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-30",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "text": "V Bílině s přibližně 14 tisíci obyvateli je podle Romea.cz zhruba pětina obyvatel v exekuci s průměrným dluhem kolem 500 tisíc korun, tržní nájem srovnatelně velkého bytu dosahuje asi 15 tisíc korun měsíčně a na obecní byt se běžně čeká nejméně dva roky.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-26"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-28"
+    }
+  ],
+  "subjects": [
+    "mrazova"
+  ],
+  "order": 30,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/zuzana-mrazova/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

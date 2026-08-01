@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/case.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/cases/CASE-02",
+  "@type": "vomaste:Case",
+  "recordType": "case",
+  "identifier": "CASE-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "Kostelecké uzeniny: zrušená dotace z Programu rozvoje venkova",
+  "summary": "Dotaci z Programu rozvoje venkova z roku 2018 na inovaci technologie výroby masných výrobků schválil SZIF a Ministerstvo zemědělství ji zrušilo pro střet zájmů tehdejšího premiéra. Nejvyšší správní soud kasační stížnost 28. 11. 2025 zamítl s tím, že nepřímý vliv lze vykonávat i přes svěřenské fondy; Ústavní soud stížnost 1. 4. 2026 odmítl jako zjevně neopodstatněnou. Rozhodnuto je o nároku na dotaci, ne o trestní odpovědnosti kohokoli.",
+  "period": "2018–2026",
+  "status": "status-corroborated",
+  "statusLabel": "Pravomocně skončeno; spor o nárok na dotaci, ne o vině",
+  "anchor": "kauza-kostelecke",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-18"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-19"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-47"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-48"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-21"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-22"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-29"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-30"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu\ndossieru](@/dossiers/andrej-babis/_index.md#kauza-evropske-dotace)."
+    }
+  ],
+  "order": 2
+}

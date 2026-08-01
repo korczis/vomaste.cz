@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-78",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-78",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "Státní zástupce Jaroslav Šaroch v září 2019 stíhání zastavil s odůvodněním, že „skutek není trestným činem“ — mimo jiné se podle usnesení nepodařilo prokázat, že Babiš byl skutečným vlastníkem akcií Farmy Čapí hnízdo; totéž usnesení současně konstatovalo „Babišův enormní zájem na výstavbě areálu“ a „zcela nadstandardní vztahy“ mezi farmou a skupinou Agrofert. Zastavení stíhání je procesní rozhodnutí podléhající přezkumu, ne zproštění soudem",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-55"
+    }
+  ],
+  "subjects": [],
+  "order": 78,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

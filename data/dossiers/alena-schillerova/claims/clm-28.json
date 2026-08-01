@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-28",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-28",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "text": "Ministerstvo financí v téže reakci zpochybnilo oprávnění NRR hodnotit makroekonomické prognózy slovy, že mu není známo, na základě čeho se Národní rozpočtová rada pasuje do role arbitra, a tuto roli přisoudilo výhradně Výboru pro rozpočtové prognózy.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-15"
+    }
+  ],
+  "subjects": [
+    "schillerova"
+  ],
+  "order": 28,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/alena-schillerova/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

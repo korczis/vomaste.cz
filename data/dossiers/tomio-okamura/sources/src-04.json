@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-04",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-04",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
+  },
+  "title": "SRC-04 — ČT24 (Česká televize)",
+  "description": "Soud nepravomocně uložil SPD třímilionový peněžitý trest za nenávistné plakáty",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/soud-nepravomocne-ulozil-spd-trimilionovy-penezity-trest-za-nenavistne-plakaty-374182",
+  "published": "2026-06-03",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-11"
+    }
+  ],
+  "subjects": [
+    "okamura"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Soud nepravomocně uložil SPD třímilionový peněžitý trest za nenávistné plakáty**\n\nZpravodajství veřejnoprávní ČT o vyhlášení nepravomocného rozsudku. Obsahuje citaci soudkyně 'Mít názor a způsob, jakým ten názor projevím, jsou dvě odlišné věci', informaci o výchovné povaze trestu při dolní hranici sazby a o tom, že soud vycházel z ročního příjmu SPD kolem 40 milionů korun.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 4
+}

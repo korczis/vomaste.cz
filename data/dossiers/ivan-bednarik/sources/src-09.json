@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-09",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-09",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "title": "SRC-09 — Ministerstvo dopravy ČR",
+  "description": "Příprava páteřní sítě vysokorychlostních tratí pokračuje",
+  "outlet": "Ministerstvo dopravy ČR",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://md.gov.cz/Media/Media-a-tiskove-zpravy/Priprava-paterni-site-vysokorychlostnich-trati-pok",
+  "published": "2026-04-20",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-21"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-22"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-23"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-24"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-25"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Příprava páteřní sítě vysokorychlostních tratí pokračuje**\n\nMinisterstvo předložilo vládě aktualizaci přípravy VRT. Správa železnic letos investuje 1,49 mld. Kč (0,96 mld. národní zdroje, 0,53 mld. dotace EU). Prioritou je osa Drážďany–Praha–Brno–Ostrava–Katovice. Trať RS 42 Kralupy nad Vltavou–Most přechází do útlumu, osa RS 5 na Hradec Králové se pozastavuje ve prospěch kapacitních úprav konvenční sítě. U VRT Moravská brána se zvažuje soukromý kapitál formou PPP. Dokončení páteřní sítě se cílí na rok 2040 v závislosti na rozhodnutí o spolufinancování EU na podzim 2026.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 9
+}

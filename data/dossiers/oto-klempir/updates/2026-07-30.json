@@ -1,0 +1,217 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/oto-klempir/updates/2026-07-30",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-07-30",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
+  },
+  "date": "2026-07-30",
+  "summary": "Zpracována autorizovaná témata: financovani-ct-cro, ngp-vyberove-rizeni, granty-pamatky, jmenovani-politika. 23 zdrojů otevřeno a přečteno, 37 tvrzení, 5 mezer (nedoložitelné položky, paywally). Statusy dle skutečné síly doložení.",
+  "addedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-14"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-15"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-16"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-17"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-18"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-19"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-20"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-21"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-22"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-23"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-24"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-25"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-26"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-27"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-28"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-29"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-30"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-31"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-32"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-33"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-34"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-35"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-36"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-37"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-38"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-39"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-40"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-41"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-42"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-43"
+    }
+  ],
+  "updatedClaims": [],
+  "addedGaps": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/gaps/GAP-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/gaps/GAP-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/gaps/GAP-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/gaps/GAP-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/gaps/GAP-07"
+    }
+  ],
+  "closedGaps": [],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-14"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-15"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-16"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-17"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-18"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-19"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-20"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-21"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-22"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-23"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-24"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-25"
+    }
+  ]
+}

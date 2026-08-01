@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-38",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-38",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "text": "Dětský ombudsman Martin Beneš k návrhu uvedl: „Nadále pochybuji o tom, že je vhodné upravovat zákaz mobilních telefonů ve školách celostátně,“ a obává se, že děti budou školu vnímat negativně.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-16"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-19"
+    }
+  ],
+  "subjects": [
+    "plaga"
+  ],
+  "order": 38,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/robert-plaga/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

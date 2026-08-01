@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-30",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-30",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "title": "SRC-30 — Respekt",
+  "description": "Další podporovatel Filipa Turka dostal práci na ministerstvu životního prostředí",
+  "outlet": "Respekt",
+  "sourceType": "zpravodajství",
+  "url": "https://www.respekt.cz/cesko/dalsi-podporovatel-filipa-turka-dostal-praci-na-ministerstvu-zivotniho-prostredi",
+  "published": "2026-06-15",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-44"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-45"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Další podporovatel Filipa Turka dostal práci na ministerstvu životního prostředí**\n\nUvádí jmenování Lukáše Vaverky vedoucím samostatného oddělení klimatické politiky a Green Dealu, jeho členství v Jaguar klubu a působení jako Turkova poradce v Evropském parlamentu. Konstatuje, že má pouze bakalářský titul, ačkoli pozice vyžaduje magisterský, a resort mu udělil výjimku. Uvádí, že oddělení existuje od 1. dubna a má být nápomocné vládnímu zmocněnci Turkovi; cituje Turkovu obhajobu Vaverkovy praxe.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 30
+}

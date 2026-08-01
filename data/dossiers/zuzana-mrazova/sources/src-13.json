@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-13",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-13",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "title": "SRC-13 — Česká televize (ČT24)",
+  "description": "Mrázová dostala pokutu za porušení zákona o střetu zájmů",
+  "outlet": "Česká televize (ČT24)",
+  "sourceType": "zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/mrazova-dostala-pokutu-za-poruseni-zakona-o-stretu-zajmu-pisi-seznam-zpravy-375947",
+  "published": "2026-07-25",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-20"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-21"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-22"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-23"
+    }
+  ],
+  "subjects": [
+    "mrazova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Mrázová dostala pokutu za porušení zákona o střetu zájmů**\n\nMostecký magistrát uložil Mrázové nepravomocnou pokutu za přestupek podle zákona o střetu zájmů — v oznámení za rok 2024 uvedla nepravdivé údaje, neuvedla rodinnou půjčku 500 tis. Kč na parcelu v Bílině. Výše pokuty nezveřejněna (zákonné maximum 50 tis. Kč). Magistrát uvádí tříTÝDENNÍ lhůtu pro odvolání. Mluvčí MMR Veronika Lukášová: ministryně si chybu uvědomuje, pokutu zaplatí a neodvolá se; v době vyjádření si ještě nevyzvedla na poště dopis s rozhodnutím.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 13
+}

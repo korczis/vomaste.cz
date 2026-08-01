@@ -1,0 +1,56 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/capi-hnizdo",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "capi-hnizdo",
+  "entityId": "capi-hnizdo",
+  "title": "Čapí hnízdo (dotační kauza)",
+  "entityType": "controversy",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "contextual",
+  "dossiers": [
+    "andrej-babis",
+    "jaroslav-faltynek"
+  ],
+  "routeAliases": [
+    "/dossiers/andrej-babis/entities/capi-hnizdo/"
+  ],
+  "order": 9,
+  "provenance": {
+    "discoveredAt": "2026-07-30",
+    "discoveredVia": [
+      "edge-babis-capihnizdo",
+      "edge-imoba-capihnizdo",
+      "edge-capihnizdo-olaf",
+      "edge-agrofert-capihnizdo-reklamy"
+    ],
+    "claimRefs": [
+      "CLM-01",
+      "CLM-02",
+      "CLM-05",
+      "CLM-49",
+      "CLM-50",
+      "CLM-51",
+      "CLM-52"
+    ],
+    "sourceRefs": [
+      "SRC-01",
+      "SRC-02",
+      "SRC-03",
+      "SRC-23",
+      "SRC-24"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext."
+    }
+  ]
+}

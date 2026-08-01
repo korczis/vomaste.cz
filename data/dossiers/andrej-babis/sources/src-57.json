@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-57",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-57",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-57 — ČeskéNoviny.cz (ČTK): Babiš byl obžalován v kauze Čapí hnízdo, označil to za politický proces (21. 3. 2022)",
+  "description": "Obžaloba k Městskému soudu v Praze: Babiš pro pomoc k dotačnímu podvodu, Nagyová pro dotační podvod a poškození finančních zájmů EU; hrozí až deset let.",
+  "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceType": "zpravodajství",
+  "url": "https://www.ceskenoviny.cz/zpravy/babis-byl-obzalovan-v-kauze-capi-hnizdo-oznacil-to-za-politicky-proces/2180812",
+  "published": "2022-03-21",
+  "retrieved": "2026-08-01",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-80"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-81"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Agenturní zpráva ČTK z 21. 3. 2022: v kauze Čapí hnízdo byla podána\nobžaloba k Městskému soudu v Praze — na Andreje Babiše pro pomoc ke\nzločinu dotačního podvodu a na Janu Nagyovou pro dotační podvod a\npoškození finančních zájmů EU; oběma hrozilo až deset let vězení.\nBabiš: „Dneškem se jen potvrdilo, že jde o vykonstruovaný politický\nproces proti mé osobě.“ a „Nebýt v politice nikdo by se tím nikdy\nnezabýval, protože se nic nestalo.“\n\n**Poznámka k procesní přesnosti**: obžaloba je předání věci soudu —\nnení to rozhodnutí o vině; navazující soudní vývoj (dvě zproštění a\njejich zrušení) dokládají SRC-01, SRC-23, SRC-24 a SRC-27.\n\n**Nezávislost**: agenturní text ČTK, jediný přímo otevřený zdroj\nk tomuto kroku — stav `1 ZDROJ`. Otevřeno a přečteno 2026-08-01."
+    }
+  ],
+  "order": 57
+}

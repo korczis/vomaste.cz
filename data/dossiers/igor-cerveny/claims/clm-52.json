@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-52",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-52",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "text": "MŽP avizovalo ministrovu účast v panelu iniciativy „Trade Over Aid“, kterou pořádají Spojené státy, a na akci „Powering Participation: Youth2030 and the Pact in Action“.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-18"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "order": 52,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/igor-cerveny/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

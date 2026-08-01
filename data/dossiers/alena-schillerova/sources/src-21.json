@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-21",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-21",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "title": "SRC-21 — iportal24.cz: Sněmovna přehlasovala Senát, vláda získá širší pravomoci při navyšování výdajů (8. 7. 2026)",
+  "description": "iportal24.cz nezávisle na ČeskéNoviny.cz/ČTK (SRC-06) potvrzuje výsledek přehlasování Senátu (přesně 101 hlasů) a jednotný odpor opozice.",
+  "outlet": "iportal24.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://iportal24.cz/featured/snemovna-prehlasovala-senat-vlada-ziska-sirsi-pravomoci-pri-navysovani-vydaju/",
+  "published": "2026-07-08",
+  "retrieved": "2026-07-31",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-15"
+    }
+  ],
+  "subjects": [
+    "schillerova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "iportal24.cz dne 8. 7. 2026: „Pro vládní návrh hlasovalo přesně 101\nposlanců, tedy nejnižší počet potřebný ke schválení. Opozice byla\njednotně proti.\" Přehlasování Senátu proběhlo po nočním jednání.\n\n**Nezávislost**: samostatná redakce od ČeskéNoviny.cz/ČTK (SRC-06) —\nobě nezávisle potvrzují tutéž skutečnost. Proto CLM-15 nese stav\n`CORROBORATED`."
+    }
+  ],
+  "order": 21
+}

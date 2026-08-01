@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-42",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-42",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "text": "K syntetickým palivům, jimiž má být kompenzováno zbývajících 10 procent emisí, Havlíček řekl: „Podívejte se někdy, co je to syntetické palivo, kolik je ho na světě, jaké jsou šance ho vyrobit, kolik to stojí.“",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-10"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "order": 42,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/karel-havlicek/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

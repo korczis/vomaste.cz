@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-87",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-87",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "Babiš podle citovaného zpravodajství uvedl: „Pan Lukačovič odrbal český stát na srážkové dani o 900 milionů. Udělal to tím, že šestimiliardovou dividendu nechal protéct přes firmu na Kypru.“ Seznam.cz uvádí, že „státu nedluží daň z vyplacených podílů na zisku, ani žádnou jinou daň“ — doloženo je, že to obě strany řekly; pravdivost žádného z výroků tento dossier nerozhoduje",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-63"
+    }
+  ],
+  "subjects": [],
+  "order": 87,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

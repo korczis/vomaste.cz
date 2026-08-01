@@ -1,172 +1,21 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Alena Schillerová"
 description = "Neutrální, zdroji doložený přehled o Aleně Schillerové — místopředsedkyni vlády a ministryni financí ve třetí vládě Andreje Babiše."
 template = "entity-dossier.html"
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/alena-schillerova"
+view_model = "generated/views/dossiers/alena-schillerova/overview.json"
 dossier = "alena-schillerova"
-dossier_title = "Alena Schillerová"
+record_type = "dossier"
 dossier_type = "entity"
-canonical_dossier = "alena-schillerova"
-subject = "schillerova"
 lang = "cs"
 seo_type = "ProfilePage"
-subject_entities = ["schillerova"]
-subjects = ["Alena Schillerová"]
 updated = "2026-07-30"
 reviewed_at = "2026-07-30"
-
-
-[[extra.timeline]]
-date = "2026-01"
-title = "Schillerová v Interview ČT24 avizuje vlastní novelu zákona o rozpočtové odpovědnosti a odmítá verzi dosluhující vlády"
-anchor = "kauza-obhajoba"
-dot = "dot-fact"
-subjects = ["schillerova"]
-
-[[extra.timeline]]
-date = "2026-01"
-title = "Novela rozpočtových zákonů předložena Sněmovně jako sněmovní tisk č. 90"
-anchor = "kauza-novela-rozpoctovych-pravidel"
-dot = "dot-fact"
-subjects = ["schillerova"]
-
-[[extra.timeline]]
-date = "2026-02"
-title = "NRR ve vyjádření konstatuje přímý rozpor návrhu rozpočtu 2026 se zákonem — překročení limitu 246 mld. Kč o 64 miliard"
-anchor = "kauza-stanovisko-nrr"
-dot = "dot-fact"
-subjects = ["schillerova"]
-
-[[extra.timeline]]
-date = "2026-03"
-title = "Stanovisko NRR č. 1/2026 a téhož dne publikovaná polemická reakce ministerstva financí"
-anchor = "kauza-stanovisko-nrr"
-dot = "dot-fact"
-subjects = ["schillerova"]
-
-[[extra.timeline]]
-date = "2026-04"
-title = "Centrum veřejných financí UK zveřejňuje stanovisko k tisku č. 90 s kritikou únikových doložek a korekčního faktoru"
-anchor = "kauza-novela-rozpoctovych-pravidel"
-dot = "dot-fact"
-subjects = ["schillerova"]
-
-[[extra.timeline]]
-date = "2026-05"
-title = "Sněmovna schvaluje novelu poměrem 91:68; Schillerová ji obhajuje jako cestu z pasti rozpočtových triků"
-anchor = "kauza-novela-rozpoctovych-pravidel"
-dot = "dot-fact"
-subjects = ["schillerova"]
-
-[[extra.timeline]]
-date = "2026-06"
-title = "Stanovisko NRR č. 4/2026: národní fiskální omezení v podstatě přestanou existovat"
-anchor = "kauza-stanovisko-nrr"
-dot = "dot-fact"
-subjects = ["schillerova"]
-
-[[extra.timeline]]
-date = "2026-06"
-title = "Senát vrací novelu Sněmovně se zpřísňujícími pozměňovacími návrhy (limit infrastruktury 1 % HDP)"
-anchor = "kauza-novela-rozpoctovych-pravidel"
-dot = "dot-fact"
-subjects = ["schillerova"]
-
-[[extra.timeline]]
-date = "2026-07"
-title = "Sněmovna přehlasovala Senát 101 hlasy a potvrdila svou verzi novely"
-anchor = "kauza-novela-rozpoctovych-pravidel"
-dot = "dot-fact"
-subjects = ["schillerova"]
-
-[[extra.timeline]]
-date = "2026-07"
-title = "Prezident Pavel novelu vetoval; Schillerová jeho rozhodnutí označila za názorový veletoč"
-anchor = "kauza-novela-rozpoctovych-pravidel"
-dot = "dot-fact"
-subjects = ["schillerova"]
-
-[[extra.timeline]]
-date = "2026-08"
-title = "Plánované hlasování Sněmovny o prezidentském vetu (25. srpna 2026)"
-anchor = "kauza-novela-rozpoctovych-pravidel"
-dot = "dot-fact"
-subjects = ["schillerova"]
-
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-B"]
-
-[[extra.timeline]]
-date = "2017-12"
-title = "Jmenována ministryní financí"
-anchor = "verejna-kariera"
-dot = "dot-fact"
-subjects = ["schillerova"]
-
-[[extra.timeline]]
-date = "2019-04"
-title = "Jmenována místopředsedkyní vlády"
-anchor = "verejna-kariera"
-dot = "dot-fact"
-subjects = ["schillerova"]
-
-[[extra.timeline]]
-date = "2026-01"
-title = "Národní rozpočtová rada: návrh rozpočtu v rozporu se zákonem"
-anchor = "kauza-rozpoctova-pravidla"
-dot = "dot-disputed"
-subjects = ["schillerova"]
-
-[[extra.timeline]]
-date = "2026-05"
-title = "Novela rozpočtových zákonů ve Sněmovně, kritika opozice"
-anchor = "kauza-rozpoctova-pravidla"
-dot = "dot-disputed"
-subjects = ["schillerova"]
-[[extra.cases]]
-anchor = "kauza-rozpoctova-pravidla"
-period = "2026"
-title = "Rozpočtová pravidla a stanovisko Národní rozpočtové rady"
-status = "status-disputed"
-label = "Otevřené, spor o výpočet"
-summary = "Národní rozpočtová rada označila návrh rozpočtu 2026 za rozporný se zákonem o rozpočtové odpovědnosti; ministerstvo výpočet rozporuje. Novela rozpočtových zákonů podle kritiků umožňuje obejít Parlament."
-claims = []
-subjects = ["schillerova"]
-
-[[extra.cases]]
-anchor = "kauza-novela-rozpoctovych-pravidel"
-period = "2026"
-title = "Novela rozpočtových pravidel a prezidentské veto"
-status = "status-single"
-label = "Sledované téma"
-summary = "Novela rozpočtových pravidel a prezidentské veto — viz tvrzení CLM-08, CLM-09, CLM-10, CLM-11, CLM-12, CLM-13, CLM-14, CLM-15, CLM-17, CLM-18, CLM-19, CLM-23, CLM-39, CLM-40."
-claims = []
-subjects = ["schillerova"]
-
-[[extra.cases]]
-anchor = "kauza-obhajoba"
-period = "2026"
-title = "Obhajoba ministryně financí"
-status = "status-single"
-label = "Sledované téma"
-summary = "Obhajoba ministryně financí — viz tvrzení CLM-16, CLM-20, CLM-21, CLM-22, CLM-34, CLM-35, CLM-36, CLM-37, CLM-38."
-claims = []
-subjects = ["schillerova"]
-
-[[extra.cases]]
-anchor = "kauza-stanovisko-nrr"
-period = "2026"
-title = "Stanoviska Národní rozpočtové rady"
-status = "status-single"
-label = "Sledované téma"
-summary = "Stanoviska Národní rozpočtové rady — viz tvrzení CLM-24, CLM-25, CLM-26, CLM-27, CLM-28, CLM-29, CLM-30, CLM-31, CLM-32, CLM-33."
-claims = []
-subjects = ["schillerova"]
-
 +++
-
 Alena Schillerová je místopředsedkyní vlády a ministryní financí ve třetí
 vládě Andreje Babiše. Tento dossier shrnuje veřejně doložené skutečnosti
 o její veřejné funkci a kariéře a o rozpočtové kauze roku 2026 — vždy s

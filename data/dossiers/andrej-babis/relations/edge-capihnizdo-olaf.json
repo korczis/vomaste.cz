@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/relations/edge-capihnizdo-olaf",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-capihnizdo-olaf",
+  "relationId": "edge-capihnizdo-olaf",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/capi-hnizdo"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/olaf"
+  },
+  "relationType": "INVESTIGATED_BY",
+  "label": "šetření OLAF; zveřejněné části zprávy hovoří o nesrovnalostech — zjištění kontrolního úřadu, ne rozsudek",
+  "status": "single",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-72"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-50"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 24,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Status: single."
+    }
+  ]
+}

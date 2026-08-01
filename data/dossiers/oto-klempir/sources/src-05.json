@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-05",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-05",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
+  },
+  "title": "SRC-05 — HlídacíPes.org",
+  "description": "„Je to nezákonné, víme to, ale nic dělat nemůžeme, podepsal nový ministr Klempíř“",
+  "outlet": "HlídacíPes.org",
+  "sourceType": "zpravodajství",
+  "url": "https://hlidacipes.org/je-to-nezakonne-vime-to-ale-nic-delat-nemuzeme-podepsal-novy-ministr-klempir/",
+  "published": "2026-03-25",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-35"
+    }
+  ],
+  "subjects": [
+    "klempir"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**„Je to nezákonné, víme to, ale nic dělat nemůžeme, podepsal nový ministr Klempíř“**\n\nInvestigativní text Roberta Břešťana o stanovisku, které Klempíř podepsal ve věci stavby v pražské památkové zóně Smíchov (Hřebenky, Tichá ulice). Ministr konstatuje uplynutí lhůt a nemožnost zásahu.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 5
+}

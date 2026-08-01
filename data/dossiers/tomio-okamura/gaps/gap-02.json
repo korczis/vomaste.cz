@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/gaps/GAP-02",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
+  },
+  "title": "GAP-02 — Osud Okamurova vlastního, přerušeného stíhání",
+  "description": "Sněmovna ho nevydala, stíhání je přerušené; další postup nebyl ve zkontrolovaných zdrojích nalezen.",
+  "priority": "vysoká",
+  "checked": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-02"
+    }
+  ],
+  "subjects": [
+    "okamura"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Okamura čelí obžalobě individuálně, jeho stíhání je však přerušené,\nprotože ho Poslanecká sněmovna odmítla vydat, a jeho jednání má soud\nprojednávat zvlášť\n([SRC-01](@/dossiers/tomio-okamura/sources/src-01.md)). Ve zkontrolovaných\nzdrojích **nebyl nalezen** doklad o dalším postupu: zda a kdy by se\nSněmovna mohla vydáním zabývat znovu, ani jak dlouho přerušení trvá.\n\nJe nutné rozlišit dvě věci, které se v této situaci často slévají:\nnevydání poslance je **procesní rozhodnutí Sněmovny o imunitě**, ne\nposouzení důkazů a ne zjištění, že by obvinění bylo nepravdivé. Stejně\ntak není potvrzením, že pravdivé je.\n\n**Podmínka uzavření**: doložený procesní krok — nové rozhodnutí Sněmovny\no vydání, zahájení či zastavení řízení, nebo jiné doložitelné rozhodnutí,\nověřené přímým otevřením zdroje."
+    }
+  ],
+  "order": 2
+}

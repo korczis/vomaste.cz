@@ -1,23 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-38 — ČeskéNoviny.cz (ČTK): Rolnický fond podal žaloby na 28 firem Agrofertu, chce vrátit dotace 22 mil. Kč (20. 7. 2026)"
 description = "PGRLF podal žaloby na 28 dceřiných firem holdingu o vrácení podpor 22 mil. Kč z let 2017–2021 kvůli údajnému porušení zákona o střetu zájmů; Agrofert nároky odmítá."
 template = "dossier-source.html"
 weight = 38
 
 [extra]
-subjects = ["babis"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-38"
+view_model = "generated/views/dossiers/andrej-babis/sources/src-38.json"
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-38"
-outlet = "ČeskéNoviny.cz (ČTK)"
-src_type = "zpravodajství"
-url = "https://www.ceskenoviny.cz/zpravy/rolnicky-fond-podal-zaloby-na-28-firem-agrofertu-chce-vratit-dotace-22-mil-kc/2751964"
-published = "2026-07-20"
-retrieved = "2026-08-01"
-claims = ["CLM-60", "CLM-61"]
 +++
-
 Agenturní zpráva ČTK: „Podpůrný a garanční rolnický a lesnický fond
 (PGRLF) podal žaloby na 28 dceřiných firem z holdingu Agrofert.“ Fond
 chce vrátit podporu v souhrnné výši 22 milionů korun; důvodem je

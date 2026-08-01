@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-28",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-28",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "text": "Druhým jednatelem Extreme BFG Cast byl Lubor Novák, funkcionář jihomoravských Motoristů a dlouhodobý sponzor strany, kterého si Červený vzal jako poslaneckého asistenta do Sněmovny.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-24"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-26"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "order": 28,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/igor-cerveny/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

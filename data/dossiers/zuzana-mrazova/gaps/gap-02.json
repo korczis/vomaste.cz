@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/gaps/GAP-02",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "title": "GAP-02 — Není ověřeno, zda rozhodnutí o pokutě již nabylo právní moci a zda byla pokuta zaplacena.",
+  "description": "K datu rešerše (30. 7. 2026) zdroje uvádějí pouze deklaraci mluvčí ministerstva, že se Mrázová neodvolá; lhůta pro odvolání běžela. Nutno sl",
+  "priority": "střední",
+  "checked": "2026-07-30",
+  "claims": [],
+  "subjects": [
+    "mrazova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Není ověřeno, zda rozhodnutí o pokutě již nabylo právní moci a zda byla pokuta zaplacena.\n\n**Proč je to mezera**: K datu rešerše (30. 7. 2026) zdroje uvádějí pouze deklaraci mluvčí ministerstva, že se Mrázová neodvolá; lhůta pro odvolání běžela. Nutno sledovat vývoj — do potvrzení právní moci je POVINNÉ rámování „nepravomocná“. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+    }
+  ],
+  "order": 2
+}

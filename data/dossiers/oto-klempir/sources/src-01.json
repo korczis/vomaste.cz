@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
+  },
+  "title": "SRC-01 — Vláda ČR (oficiální profil)",
+  "description": "Oficiální profil člena vlády: Oto Klempíř zastává funkci ministra kultury; životopisné údaje.",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vlada.gov.cz/cz/vlada/clenove-vlady/oto-klempir-223983/",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-02"
+    }
+  ],
+  "subjects": [
+    "klempir"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil člena vlády na webu Úřadu vlády. Uvádí funkci\n**ministr kultury** a životopisné údaje: narozen 20. května 1963 v\nKyjově; přes třicet let praxe v reklamě, marketingu, filmu a literatuře;\nv letech 1990–2011 kreativní ředitel v mezinárodních agenturách (Ogilvy,\nYoung & Rubicam, JWT); autor dvou celovečerních filmů a několika\nbásnických sbírek; spolupráce se skupinou J.A.R.; poslanec od roku 2025.\n\nPoznámka k typu zdroje a jeho limitům: jde o **primární úřední záznam**\n— dokládá existenci a formulaci úředního údaje (kdo zastává jakou\nfunkci), nikoli nezávislé redakční posouzení čehokoli dalšího. Profil\nneuvádí přesné datum nástupu do funkce, dossier proto datum nástupu z\ntohoto zdroje netvrdí. Sebeprezentační části profilu (výčet kariérních\núspěchů) jsou stanoviskem subjektu, ne nezávisle ověřeným faktem, a\ndossier je jako fakt nepřebírá.\n\nZdroj neposkytuje nezávislé potvrzení k žádnému tvrzení opřenému o\nSRC-02 — úřední profil a investigativní text jsou různé typy zdroje o\nrůzných věcech, nikoli dvě nezávislá potvrzení téhož."
+    }
+  ],
+  "order": 1
+}

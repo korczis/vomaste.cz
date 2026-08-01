@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/relations/edge-seznam-zaloba",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-seznam-zaloba",
+  "relationId": "edge-seznam-zaloba",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/seznam-cz"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/zaloba-seznam-2026"
+  },
+  "relationType": "ASSOCIATED_WITH_EVENT",
+  "label": "žalobce",
+  "status": "contextual",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-86"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-62"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 40,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextový, strukturální vztah — dossier jej neuvádí jako vlastní doloženou investigaci, jen jako veřejně nesporné pozadí."
+    }
+  ]
+}

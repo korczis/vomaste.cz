@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/case.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/cases/CASE-02",
+  "@type": "vomaste:Case",
+  "recordType": "case",
+  "identifier": "CASE-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar"
+  },
+  "title": "Návrh zrušit policejní ochranu NKÚ",
+  "summary": "Návrh zrušit policejní ochranu NKÚ — viz tvrzení CLM-04, CLM-05, CLM-06, CLM-07, CLM-08, CLM-09, CLM-10, CLM-12.",
+  "period": "2026",
+  "status": "status-single",
+  "statusLabel": "Sledované téma",
+  "anchor": "kauza-navrh-ochrana-nku",
+  "claims": [],
+  "sources": [],
+  "subjects": [
+    "metnar"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu\ndossieru](@/dossiers/lubomir-metnar/_index.md#kauza-navrh-ochrana-nku)."
+    }
+  ],
+  "order": 2
+}

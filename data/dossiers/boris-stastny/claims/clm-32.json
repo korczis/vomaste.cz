@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-32",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-32",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/boris-stastny"
+  },
+  "text": "Příspěvek, který Šťastný zveřejnil 22. června 2026 v 17:47 na síti X, měl podle Tiscali 177 lajků, 30 repostů, 184 odpovědí a 9 290 zobrazení.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-17"
+    }
+  ],
+  "subjects": [
+    "stastny"
+  ],
+  "order": 32,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/boris-stastny/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

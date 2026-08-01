@@ -3,8 +3,9 @@
  * Public JSON-LD export routes — the implementation of coop task T-010,
  * designed in docs/adr/dossier-jsonld-provenance-extension.md.
  *
- * Emits, entirely derived from the same front matter / registry /
- * graph.toml the pages render from (derived, never authored):
+ * Emits, entirely derived from the compiled canonical dataset (via
+ * lib/record-tables.mjs, T-028 fáze G), the dossier registry and the
+ * curated graph node layer — dossier.json `graph`, dřív graph.toml (derived, never authored):
  *
  *   static/data/dossiers/<slug>.jsonld  — one full-depth @graph per
  *     registry dossier: Dataset + Person (authorized subjects only) +

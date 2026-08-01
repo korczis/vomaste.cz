@@ -1,0 +1,49 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/motoriste",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "motoriste",
+  "entityId": "motoriste",
+  "title": "Motoristé sobě",
+  "entityType": "political_party",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "contextual",
+  "dossiers": [
+    "macinka-turek",
+    "petr-macinka",
+    "filip-turek",
+    "richard-chlad"
+  ],
+  "routeAliases": [
+    "/dossiers/macinka-turek/entities/motoriste/"
+  ],
+  "order": 3,
+  "provenance": {
+    "discoveredAt": "2026-07-29",
+    "discoveredVia": [
+      "edge-macinka-motoriste",
+      "edge-turek-motoriste",
+      "edge-motoriste-vlada",
+      "edge-klubmotoristu-motoriste",
+      "edge-chlad-motoriste"
+    ],
+    "claimRefs": [
+      "CLM-03",
+      "CLM-01",
+      "CLM-02",
+      "CLM-04"
+    ],
+    "sourceRefs": [
+      "SRC-11",
+      "SRC-01",
+      "SRC-02",
+      "SRC-03"
+    ],
+    "depth": 1
+  }
+}

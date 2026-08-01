@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/gaps/GAP-01",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
+  },
+  "title": "GAP-01 — Zda kauzu řeší jakýkoli kontrolní nebo trestní orgán",
+  "description": "Citovaný zdroj neuvádí žádné vyšetřování, trestní oznámení ani obvinění; dossier proto nic takového netvrdí.",
+  "priority": "vysoká",
+  "checked": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-05"
+    }
+  ],
+  "subjects": [
+    "juchelka"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Citovaný zdroj ([SRC-02](@/dossiers/ales-juchelka/sources/src-02.md))\npopisuje střet zájmů a jeho rozpočtový následek, ale **neuvádí žádné\nvyšetřování, trestní oznámení ani obvinění**. Dossier proto o žádném\ntakovém řízení netvrdí nic — ani že probíhá, ani že neprobíhá.\n\nTato mezera je zde právě proto, že u kauzy tohoto typu je nejsnadnější\ndomyslet si trestní rozměr, který doložen není. Ve zkontrolovaných\nzdrojích nebylo nalezeno: rozhodnutí NKÚ, ÚOHS ani jiného kontrolního\norgánu; trestní oznámení; usnesení o zahájení úkonů trestního řízení;\nani vyjádření policie či státního zastupitelství.\n\n**Podmínka uzavření**: přímé otevření zdroje dokládajícího konkrétní\nkrok konkrétního orgánu (kdo, kdy, v jaké fázi) a doplnění tvrzení s\npřesným procesním popisem — nikdy formulací, která by fázi zaměňovala za\nrozhodnutí o vině."
+    }
+  ],
+  "order": 1
+}

@@ -1,20 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "GAP-04 — Původní článek Deníku N přímo k bitcoinové kauze (uvedený v zadání jako dříve nalezený) se"
 description = "Bitcoinové téma je tak korroborováno přes Echo24, ČTK/ČeskéNoviny a Blesk, nikoli přes Deník N."
 template = "dossier-gap.html"
 weight = 4
 
 [extra]
-subjects = ["tejc"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/jeronym-tejc/gaps/GAP-04"
+view_model = "generated/views/dossiers/jeronym-tejc/gaps/gap-04.json"
 dossier = "jeronym-tejc"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-04"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
-
 Původní článek Deníku N přímo k bitcoinové kauze (uvedený v zadání jako dříve nalezený) se nepodařilo dohledat v přístupné podobě; z Deníku N byla ověřena pouze krátká zpráva k Ústavnímu soudu.
 
 **Proč je to mezera**: Bitcoinové téma je tak korroborováno přes Echo24, ČTK/ČeskéNoviny a Blesk, nikoli přes Deník N. Tato mezera **není** zjištěním žádným

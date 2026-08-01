@@ -1,0 +1,56 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/case.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/cases/CASE-04",
+  "@type": "vomaste:Case",
+  "recordType": "case",
+  "identifier": "CASE-04",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "Evropské dotace: pozastavené proplácení a řízení evropské prokuratury",
+  "summary": "Národní fond administraci dotací skupině Agrofert obnovil, Evropská komise k 5. 6. 2026 neproplatila nic a dopisem z 20. 5. 2026 si vyžádala vysvětlení struktury fondu. Evropská prokuratura zahájila 24. 5. 2026 trestní řízení k vyplácení evropských dotací — vedené na neznámého pachatele, bez obviněného; zahájení řízení není obvinění ani rozhodnutí o vině.",
+  "period": "2025–",
+  "status": "status-disputed",
+  "statusLabel": "Otevřené; řízení na neznámého pachatele, nikdo není obviněn",
+  "anchor": "kauza-evropske-dotace",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-25"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-26"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-27"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-28"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-29"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-12"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu\ndossieru](@/dossiers/andrej-babis/_index.md#kauza-nemovitosti-francie)."
+    }
+  ],
+  "order": 4
+}

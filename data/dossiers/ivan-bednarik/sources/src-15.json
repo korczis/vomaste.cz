@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-15",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-15",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "title": "SRC-15 — Transport a logistika",
+  "description": "Bednárik v Bruselu vyjednával budoucnost financování železnice",
+  "outlet": "Transport a logistika",
+  "sourceType": "zpravodajství",
+  "url": "https://transport-logistika.cz/zpravy/zeleznicni-doprava/bednarik-v-bruselu/",
+  "published": "2026-03-25",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-26"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Bednárik v Bruselu vyjednával budoucnost financování železnice**\n\nBednárik jednal v Bruselu s Magdou Kopczyńskou (šéfkou DG MOVE) o spolufinancování infrastruktury z fondů EU, dokončení sítě TEN-T, přeshraničních úsecích a vojenské mobilitě. Zdůraznil, že VRT lze postavit jen s výraznou podporou unijních fondů. Upozornil na krizi nákladní železniční dopravy kvůli drahým energiím a avizoval český non-paper pro červnovou Radu ministrů. Setkal se také s českými europoslanci a šéfem asociace CER Albertem Mazzolou.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 15
+}

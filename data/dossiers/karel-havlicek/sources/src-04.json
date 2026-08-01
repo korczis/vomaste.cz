@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-04",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-04",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "title": "SRC-04 — FORUM 24",
+  "description": "Zlom v kauze toustové linky Penamu. Dotaci zpochybňuje další svědek zevnitř Babišova impéria",
+  "outlet": "FORUM 24",
+  "sourceType": "zpravodajství",
+  "url": "https://www.forum24.cz/zlom-v-kauze-toustove-linky-penamu-dalsi-svedek-zevnitr-babisova-imperia-zpochybnuje-dotaci/",
+  "published": "2021-01-06",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-07"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Zlom v kauze toustové linky Penamu. Dotaci zpochybňuje další svědek zevnitř Babišova impéria**\n\nČlánek uvádí zjištění auditorů EK, že velmi podobné tousty vyráběla německá firma Lieken AG už v roce 2013, projekt tedy nebyl inovativní; kritizuje, že ministerstvo průmyslu 100 milionů iniciativně nevymáhá.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 4
+}

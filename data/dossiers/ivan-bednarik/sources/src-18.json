@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-18",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-18",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "title": "SRC-18 — Transport Minutes",
+  "description": "Český ministr dopravy naléhá na EU, aby přijala opatření v oblasti železniční nákladní dopravy",
+  "outlet": "Transport Minutes",
+  "sourceType": "zpravodajství",
+  "url": "https://www.transportminutes.eu/cesky-ministr-dopravy-naleha-na-eu-aby-prijala-opatreni-v-oblasti-zeleznicni-nakladni-dopravy/",
+  "published": "2025-12-21",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-35"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Český ministr dopravy naléhá na EU, aby přijala opatření v oblasti železniční nákladní dopravy**\n\nBednárik vyzývá k celoevropské koordinaci kvůli životaschopnosti nákladní železnice. Označuje cenu trakční elektřiny za nejkritičtější problém, upozorňuje na nerovné vymáhání pravidel (přísné hmotnostní limity na železnici vs. přetížené kamiony) a na to, že takřka žádný velký evropský nákladní železniční dopravce nehospodaří se ziskem, ačkoli EU cílí na přesun 30 % zboží nad 300 km ze silnice na železnici do roku 2030.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 18
+}

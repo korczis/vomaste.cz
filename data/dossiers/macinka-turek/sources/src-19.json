@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-19",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-19",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-19 — Blesk.cz",
+  "description": "Policie: dopravní značení na místě Turkovy nehody bylo v pořádku a odpovídalo projektové dokumentaci.",
+  "outlet": "Blesk.cz",
+  "sourceType": "zpravodajství (tabloid)",
+  "url": "https://www.blesk.cz/clanek/zpravy-politika/844084/",
+  "published": "2026-07-16",
+  "retrieved": "2026-07-22",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-16"
+    }
+  ],
+  "subjects": [
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Blesk.cz cituje mluvčí pražské policie Evu Kropáčovou: „Dopravní značení\nbylo v pořádku a v souladu s inženýrskými plány.\" Jde o přímé policejní\nstanovisko, ne o hodnocení tohoto webu — je vedeno jako fakt (policejní\nzjištění), ne jako citace názoru účastníka.\n\nVýrok je v dossieru relevantní, protože nepřímo odporuje veřejnému\ntvrzení poslance Filipa Turka (viz CLM-17, SRC-20), že v místě nešlo o\npruh určený k odbočení. Sám o sobě ale toto policejní zjištění stále\nneuzavírá otázku viny (GAP-01 zůstává otevřená).\n\nStejně jako u SRC-04 platí, že tabloidní formát Blesk.cz nesnižuje\ndůkazní hodnotu přímo citovaného úředního vyjádření, jen jej dossier vede\njako „tabloid\", ne jako „veřejnoprávní zpravodajství\"."
+    }
+  ],
+  "order": 19
+}

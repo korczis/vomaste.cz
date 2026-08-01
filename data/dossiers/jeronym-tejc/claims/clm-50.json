@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-50",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-50",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "text": "Tejc svou pozici opřel i o tezi, že „Česká republika má pouze jednu zahraniční politiku, a ta nemůže být vedena souběžně vládou a prezidentem“.",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-10"
+    }
+  ],
+  "subjects": [
+    "tejc"
+  ],
+  "order": 50,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jeronym-tejc/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

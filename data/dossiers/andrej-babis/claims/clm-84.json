@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-84",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-84",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "Babiš jako ministr financí v květnu 2015 k daňové podpoře biopaliv uvedl: „Samozřejmě že jsem ve střetu zájmů. To všichni věděli. Já jsem ve střetu zájmů, už když ráno otevřu oči… Já budu hlasovat proti tomuto zákonu.“ Největší tuzemský producent biopaliv Preol podle téhož zdroje patří pod Agrofert — doloženo je, že to řekl, a vlastnická vazba",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-60"
+    }
+  ],
+  "subjects": [],
+  "order": 84,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

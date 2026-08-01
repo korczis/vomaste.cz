@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/petr-vencalek/claims/CLM-03",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/petr-vencalek"
+  },
+  "text": "Podle Investigace.cz je GMR GAS UA LLC ukrajinskou pobočkou české společnosti vyrábějící regulátory tlaku plynu a vedle Macinky v ní drží podíl i tato česká společnost a podnikatel Tomáš Cabal",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-vencalek/sources/SRC-01"
+    }
+  ],
+  "subjects": [
+    "vencalek"
+  ],
+  "order": 3,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/petr-vencalek/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

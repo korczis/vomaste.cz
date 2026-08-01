@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-17",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-17",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-17 — Investigace.cz",
+  "description": "Ministr Macinka nepřiznal v majetkovém přiznání 20% podíl v ukrajinské firmě GMR GAS UA LLC.",
+  "outlet": "Investigace.cz",
+  "sourceType": "investigativní žurnalistika",
+  "url": "https://www.investigace.cz/ministr-petr-macinka-nepriznal-podil-v-ukrajinske-firme/",
+  "published": "2025-12-19",
+  "retrieved": "2026-07-22",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-14"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-15"
+    }
+  ],
+  "subjects": [
+    "macinka"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Investigativní web Investigace.cz zjistil, že ministr zahraničních věcí\nPetr Macinka neuvedl ve svém majetkovém přiznání dvacetiprocentní podíl\n(od roku 2017) v kyjevské firmě GMR GAS UA LLC, byť to zákon o střetu\nzájmů vyžadoval. Podle textu mu hrozí pokuta až 50 000 Kč.\n\nČlánek cituje Macinkovo vysvětlení, že firma „de facto neexistuje od té\ndoby, kdy Rusové začali ostřelovat\" Kyjev, a že plánoval její likvidaci.\nFirma je ukrajinskou pobočkou české společnosti vyrábějící regulátory\ntlaku plynu; vedle Macinky v ní má podíl i podnikatel Tomáš Cabal a\nspolečnost GMR GAS s majitelem Petrem Vencálkem.\n\nJde o první publikovaný zdroj tohoto zjištění — SRC-18 (Seznam Zprávy) o\nnecelý měsíc později referuje o Macinkově dodatečné opravě přiznání a\ntvoří tak druhé, nezávislé redakční potvrzení téhož jádra faktu."
+    }
+  ],
+  "order": 17
+}

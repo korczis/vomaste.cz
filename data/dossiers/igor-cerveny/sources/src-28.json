@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-28",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-28",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "title": "SRC-28 — Seznam Zprávy",
+  "description": "Méně aut a uhlí. Nový ministr Motoristů školil za dotace děti o ekologii",
+  "outlet": "Seznam Zprávy",
+  "sourceType": "zpravodajství",
+  "url": "https://www.seznamzpravy.cz/clanek/audio-podcast-vlevo-dole-mene-aut-a-uhli-novy-ministr-motoristu-za-dotace-skolil-deti-o-ekologii-299094",
+  "published": "2026-02-17",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-29"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-32"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Méně aut a uhlí. Nový ministr Motoristů školil za dotace děti o ekologii**\n\nUvádí, že Červený firmu Extreme BFG Cast založil rok předtím, že podnikatelské výsledky nejsou známé a že slíbil se podílu zbavit. Ke společníkovi Luboru Novákovi uvádí, že on a jeho firma poskytli Motoristům dar 400 tisíc korun a že od října pracuje jako Červeného poslanecký asistent.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 28
+}

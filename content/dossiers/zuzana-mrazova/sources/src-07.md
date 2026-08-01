@@ -1,23 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-07 — ČT24 (Česká televize)"
 description = "Resort spravedlnosti podal podnět k prověření ministryně Mrázové"
 template = "dossier-source.html"
 weight = 7
 
 [extra]
-subjects = ["mrazova"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-07"
+view_model = "generated/views/dossiers/zuzana-mrazova/sources/src-07.json"
 dossier = "zuzana-mrazova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-07"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/resort-spravedlnosti-podal-podnet-k-provereni-ministryne-mrazove-373716"
-published = "2026-05-21"
-retrieved = "2026-07-30"
-claims = ["CLM-18", "CLM-19"]
 +++
-
 **Resort spravedlnosti podal podnět k prověření ministryně Mrázové**
 
 Resort spravedlnosti podal přestupkovému úřadu podnět k prověření nesrovnalostí v majetkovém přiznání Mrázové — chybějící půjčka a dar použité na nákup pozemku na okraji Bíliny se stavbami v rozporu s územním plánem. Mrázová nesrovnalosti označila za administrativní pochybení a deklarovala spolupráci s úřady. Zmíněna měnící se vysvětlení (dovolené „platila sestra“).

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-11",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-11",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tunde-bartha"
+  },
+  "text": "Podle téhož zpravodajství by se Bartha v případě Babišova volebního vítězství stala jeho kancléřkou; šlo o zamýšlenou budoucí roli deklarovanou v průběhu kampaně, nikoli o zastávanou funkci",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-07"
+    }
+  ],
+  "subjects": [],
+  "order": 11,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/tunde-bartha/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

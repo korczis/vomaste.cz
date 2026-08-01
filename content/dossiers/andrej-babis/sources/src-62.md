@@ -1,23 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-62 — ČeskéNoviny.cz (ČTK): Seznam.cz podal žalobu na premiéra Babiše (3. 3. 2026)"
 description = "Žaloba na ochranu pověsti kvůli výrokům o srážkové dani; Seznam požaduje smazání příspěvků, zákaz šíření a omluvu."
 template = "dossier-source.html"
 weight = 62
 
 [extra]
-subjects = ["babis"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-62"
+view_model = "generated/views/dossiers/andrej-babis/sources/src-62.json"
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-62"
-outlet = "ČeskéNoviny.cz (ČTK)"
-src_type = "zpravodajství"
-url = "https://www.ceskenoviny.cz/zpravy/2793986"
-published = "2026-03-03"
-retrieved = "2026-08-01"
-claims = ["CLM-86"]
 +++
-
 Agenturní zpráva ČTK z 3. 3. 2026: Seznam.cz podal žalobu na premiéra
 Andreje Babiše kvůli útokům na společnost. Požaduje „smazání lživých
 příspěvků na jeho sociálních sítích, uložení zákazu dalšího šíření

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-83",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-83",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "Finální zprávu zemědělského auditu ke střetu zájmů obdržela Česká republika 31. března 2022; audit se týkal Programu rozvoje venkova a plateb SZIF, předmětem bylo podle fondu 29 projektů v různém stadiu administrace a v auditovaném období byla vyplacena jen dotace zhruba 30 600 eur (asi 750 tisíc korun). SZIF uvedl, že pozastavil administraci projektů, jednal s péčí řádného hospodáře a České republice „nehrozí žádná škoda“ — auditní závěr není trestní rozsudek",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-59"
+    }
+  ],
+  "subjects": [],
+  "order": 83,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

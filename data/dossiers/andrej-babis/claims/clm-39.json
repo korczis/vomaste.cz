@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-39",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-39",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "Podle zpravodajství z 31. prosince 2025 Babiš oznámil, že do svěřenského fondu vloží pouze Agrofert; investiční společnost SynBiol s jeho podílem 87,75 %, fond Hartenberg a nemovitosti měly zůstat mimo fond. Prezident Petr Pavel jmenování podmínil vyřešením otázky střetu zájmů, zákonná lhůta byla 30 dnů od jmenování, tedy do 8. ledna 2026",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-17"
+    }
+  ],
+  "subjects": [],
+  "order": 39,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

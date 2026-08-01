@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-17",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-17",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "text": "Návrh daňového zvýhodnění je předkládán jako poslanecký pozměňovací návrh, tedy mimo standardní vládní legislativní proces s meziresortním připomínkovým řízením.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-08"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "order": 17,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/adam-vojtech/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

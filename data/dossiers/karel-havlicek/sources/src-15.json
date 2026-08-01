@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-15",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-15",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "title": "SRC-15 — ČT24 (Česká televize)",
+  "description": "Padla obžaloba za dotace Agrofertu na linku na toastový chléb",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/statni-zastupce-obzaloval-pekarnu-pod-agrofertem-a-dva-lidi-kvuli-dotacim-na-inovacni-linku-374836",
+  "published": "2026-06-22",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-26"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-27"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-28"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Padla obžaloba za dotace Agrofertu na linku na toastový chléb**\n\nStátní zástupce Adam Bašný podal obžalobu na Pekárnu Zelená louka a dvě fyzické osoby ke Krajskému soudu v Praze. Dotace činila 100 milionů korun (4,1 milionu eur), zajištěný majetek pekárny 98 milionů. Fyzickým osobám hrozí 5–10 let odnětí svobody, pokuty ve výši 20 tisíc a 41 tisíc eur a pětiletý zákaz čerpání dotací; společnosti náhrada škody cca 100 milionů korun, pokuta až 50 milionů a patnáctiletý zákaz čerpání dotací. EPPO uvádí, že obžalovaní předložili nepravdivé údaje a zatajili podstatné informace. Článek uvádí i tvrzení premiéra Babiše, že si úřad obvinění z neinovativnosti vymyslel poté, co ministerstvo průmyslu sdělilo EU, že nejde o střet zájmů. Agrofert uvedl, že postupoval v souladu se zákonem.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 15
+}

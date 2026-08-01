@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-56",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-56",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "Agrofert k odnětí dotace uvedl: „Jsme přesvědčeni, že i předmětnou dotaci získala společnost Pekárna Zelená louka, a.s. v souladu s dotačními pravidly EU a ČR.“ — doloženo je, že to firma uvedla",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-37"
+    }
+  ],
+  "subjects": [],
+  "order": 56,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

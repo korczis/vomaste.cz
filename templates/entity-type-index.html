@@ -36,10 +36,12 @@
     {{ section.content | safe }}
   </div>
 
-  {%- set registry = get_section(path="entities/_index.md") -%}
+  {#- T-028 fáze H: filtruje se view model entities-index.json (kanonický
+      dataset), ne front matter section pages. -#}
+  {%- set registry = load_data(path="data/generated/views/entities-index.json") -%}
   {%- set_global matching = [] -%}
-  {%- for p in registry.pages -%}
-    {%- if p.extra.entity_type == section.extra.entity_type -%}
+  {%- for p in registry.rows -%}
+    {%- if p.entityType == section.extra.entity_type -%}
       {%- set_global matching = matching | concat(with=p) -%}
     {%- endif -%}
   {%- endfor -%}
@@ -58,11 +60,11 @@
   {% else %}
   <ul class="mt-6 grid gap-2 sm:grid-cols-2 xl:grid-cols-3">
     {% for p in matching %}
-    <li data-entity-id="{{ p.extra.entity_id }}" data-jsonld-id="{{ p.permalink | safe }}#entity">
-      <a href="{{ p.permalink | safe }}" class="registry-card h-full">
+    <li data-entity-id="{{ p.entityId }}" data-jsonld-id="{{ config.base_url }}{{ p.route }}#entity">
+      <a href="{{ config.base_url }}{{ p.route }}" class="registry-card h-full">
         <span class="flex flex-wrap items-center gap-2">
-          <span class="font-mono text-xs text-[#f3e5c0]">{{ p.extra.entity_id }}</span>
-          {% if p.extra.publication_role == "subject" %}
+          <span class="font-mono text-xs text-[#f3e5c0]">{{ p.entityId }}</span>
+          {% if p.publicationRole == "subject" %}
           <span class="rounded bg-[#f3e5c0]/10 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-[#f3e5c0]">subjekt dossieru</span>
           {% else %}
           <span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-white/55">kontextová</span>
@@ -70,8 +72,8 @@
         </span>
         <span class="mt-1 font-semibold text-white">{{ p.title }}</span>
         <span class="mt-1 text-xs text-white/55">
-          {{ p.extra.dossiers | length }} dossier{% if p.extra.dossiers | length != 1 %}ů{% endif %}
-          {%- if p.extra.government_office %} · {{ p.extra.government_office }}{% endif %}
+          {{ p.dossiers | length }} dossier{% if p.dossiers | length != 1 %}ů{% endif %}
+          {%- if p.government %} · {{ p.government.office }}{% endif %}
         </span>
       </a>
     </li>

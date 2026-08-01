@@ -1,3 +1,5 @@
+*Historický dokument — popisuje stav před JSON-first migrací (T-028).*
+
 # ADR: adresář dossierů — tři projekce jednoho datasetu
 
 **Stav:** přijato, implementováno (coop T-027)

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-33",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-33",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
+  },
+  "text": "MPSV k částce uvedlo: „Teprve po dokončení administrativních procesů bude možné vyhodnotit, zda došlo k porušení podmínek financování, zda vznikla škoda, a případně stanovit její výši.“",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-12"
+    }
+  ],
+  "subjects": [
+    "juchelka"
+  ],
+  "order": 33,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/ales-juchelka/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

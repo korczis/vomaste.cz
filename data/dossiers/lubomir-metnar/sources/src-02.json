@@ -1,0 +1,88 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar"
+  },
+  "title": "SRC-02 — Seznam Zprávy",
+  "description": "Babišova vláda ruší NKÚ ochranku. Chtějí nás vyhladovět, říká šéf úřadu",
+  "outlet": "Seznam Zprávy",
+  "sourceType": "zpravodajství",
+  "url": "https://www.seznamzpravy.cz/clanek/domaci-kauzy-babisova-vlada-rusi-nku-ochranku-chteji-nas-vyhladovet-rika-sef-uradu-311921",
+  "published": "2026-07-29",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-15"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-16"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-17"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-18"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-19"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-20"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-21"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-22"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-23"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-24"
+    }
+  ],
+  "subjects": [
+    "metnar"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Babišova vláda ruší NKÚ ochranku. Chtějí nás vyhladovět, říká šéf úřadu**\n\nPůvodní reportáž Vojtěcha Blažka, která kauzu otevřela; ostatní média z ní přebírají. Popisuje konkrétní podobu návrhu ministra vnitra Metnara (zrušení policejní ochrany sídla NKÚ v Holešovicích od 1. ledna příštího roku), chybějící zdůvodnění v předloženém materiálu, udělenou výjimku z připomínkového řízení, náklady na náhradní soukromou ostrahu cca 20 mil. Kč ročně, převedení policejní ochrany na Českou národní banku, doslovné výroky prezidenta NKÚ Miloslava Kaly, dodatečné rozšířené vysvětlení ministerstva vnitra a historický kontext sporu Babiše a Kaly od roku 2016 kolem financování stavby sídla úřadu.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 2
+}

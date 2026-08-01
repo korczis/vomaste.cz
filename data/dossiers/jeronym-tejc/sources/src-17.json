@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-17",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-17",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "title": "SRC-17 — Ministerstvo spravedlnosti ČR",
+  "description": "Ministr Tejc podal kárnou žalobu na soudkyni, která rozhodovala v případu Viktorka",
+  "outlet": "Ministerstvo spravedlnosti ČR",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://msp.gov.cz/web/msp/rozcestnik/-/clanek/ministr-tejc-podal-k%C3%A1rnou-%C5%BEalobu-na-soudkyni-kter%C3%A1-rozhodovala-v-p%C5%99%C3%ADpadu-viktorka-kop%C3%ADrovat-",
+  "published": "2026-07-01",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-34"
+    }
+  ],
+  "subjects": [
+    "tejc"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Ministr Tejc podal kárnou žalobu na soudkyni, která rozhodovala v případu Viktorka**\n\nTisková zpráva resortu k podání kárné žaloby. Ministr podle ní tvrdí, že se soudkyně dopustila excesu a zanedbala povinnosti tím, že si dostatečně nezjistila skutkový stav. Zpráva uvádí, že šetření Odboru dohledu a kárné agendy ministerstva začalo v dubnu 2026.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 17
+}

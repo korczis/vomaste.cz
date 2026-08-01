@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-28",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-28",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "title": "SRC-28 — Novinky.cz: Ministryně Mrázová žije v problémy zatížené Bílině v levném obecním bytě (29. 4. 2026)",
+  "description": "Novinky.cz nezávisle na Romea.cz (SRC-26) potvrzuje přestěhování k manželovi Pavlu Mrázovi, dřívější nájem cca 4 500 Kč a exekuční statistiku Bíliny.",
+  "outlet": "Novinky.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://www.novinky.cz/clanek/domaci-zpravy-ustecky-kraj-ministryne-mrazova-zije-v-problemy-zatizene-biline-v-levnem-obecnim-byte-rada-obyvatel-mesta-pritom-resi-exekuce-40575732",
+  "published": "2026-04-29",
+  "retrieved": "2026-07-31",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-28"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-29"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-30"
+    }
+  ],
+  "subjects": [
+    "mrazova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Novinky.cz dne 29. 4. 2026: „Přestěhovala se na druhou stranu náměstí ke\nsvému současnému manželovi Pavlu Mrázovi, do bytu, jenž rovněž spadá pod\nbytový fond Bíliny.\" Dřívější nájem: „Až do roku 2024 podle dostupných\núdajů Mrázová platila za 130 metrů čtverečních měsíční nájem zhruba čtyři\na půl tisíce korun.\" Exekuce: „V jejím městě byl loni v exekuci reálně\nkaždý pátý obyvatel a průměrný dluh činí zhruba půl milionu korun.\"\n\n**Nezávislost**: samostatná redakce od Romea.cz (SRC-26) — obě nezávisle\npotvrzují přestěhování, dřívější výši nájmu a exekuční statistiku. Proto\nCLM-28/29/30 nesou stav `CORROBORATED`.\n\n**Limity**: tento zdroj nepotvrzuje konkrétní novou sazbu 42 Kč/m² od\n2024 (CLM-29) ani tržní nájem ~15 000 Kč/dvouletou čekací dobu na obecní\nbyt (CLM-30) — ty zůstávají doloženy jen SRC-26."
+    }
+  ],
+  "order": 28
+}

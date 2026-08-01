@@ -1,23 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-02 — Ekonomický deník"
 description = "Bednárik v únoru 2022 rezignoval na post generálního ředitele Českých drah; konkrétní důvody veřejně neuvedl."
 template = "dossier-source.html"
 weight = 2
 
 [extra]
-subjects = ["bednarik"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-02"
+view_model = "generated/views/dossiers/ivan-bednarik/sources/src-02.json"
 dossier = "ivan-bednarik"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-02"
-outlet = "Ekonomický deník"
-src_type = "odborné ekonomické zpravodajství"
-url = "https://ekonomickydenik.cz/generalni-reditel-cd-jozef-bednarik-rezignoval-z-vyberoveho-rizeni-musi-vzejit-silny-manazer-rika-ministr-dopravy-martin-kupka/"
-retrieved = "2026-07-30"
-published = "2022-02-15"
-claims = ["CLM-02", "CLM-03", "CLM-04"]
 +++
-
 Ekonomický deník dne 15. 2. 2022 informoval, že Ivan Bednárik rezignoval
 na funkci generálního ředitele Českých drah. Citace: „Dnes jsem se
 rozhodl využít práva na rezignaci."

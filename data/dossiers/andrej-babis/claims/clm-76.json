@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-76",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-76",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "Černošický městský úřad prověřoval, zda se Babiš v souvislosti s majetkem popsaným v Pandora Papers nedopustil přestupku proti zákonu o střetu zájmů; Ministerstvo vnitra v lednu 2022 žádosti o součinnost nevyhovělo s tím, že „v současné době neexistuje legální možnost, jak v rámci mezinárodního právního styku dožádat dokumenty potřebné pro prověření došlého oznámení“, a bez dokumentů hrozil zánik odpovědnosti za přestupek k 1. červenci. Babiš přestupek odmítá",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-53"
+    }
+  ],
+  "subjects": [],
+  "order": 76,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

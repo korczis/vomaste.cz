@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-24",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-24",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "title": "SRC-24 — Podnikatel.cz",
+  "description": "Boj o zdravotní benefity nekončí. Vojtěchův návrh přinese jen byrokracii, tvrdí firmy",
+  "outlet": "Podnikatel.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://www.podnikatel.cz/clanky/boj-o-zdravotni-benefity-nekonci-vojtechuv-navrh-prinese-jen-byrokracii-tvrdi-firmy/",
+  "published": "2026-07-08",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-43"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-44"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Boj o zdravotní benefity nekončí. Vojtěchův návrh přinese jen byrokracii, tvrdí firmy**\n\nKritika návrhu od Tomáše Prouzy (SOCR ČR), Josefa Jaroše (AMSP ČR) a Jiřího Nesrovnala (Komora daňových poradců ČR) pro administrativní zátěž a paralelní režimy; podpora od Tomáše Koláře (Svaz průmyslu a dopravy). Popisuje i pozadí: MF původně navrhlo zrušit limit jen pro volnočasové benefity.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 24
+}

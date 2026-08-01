@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-04",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-04",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
+  },
+  "title": "SRC-04 — Seznam Zprávy",
+  "description": "Závažné obavy ze střetu zájmů. EU žádá opatření kvůli Juchelkově poradkyni",
+  "outlet": "Seznam Zprávy",
+  "sourceType": "zpravodajství",
+  "url": "https://www.seznamzpravy.cz/clanek/domaci-kauzy-zavazne-obavy-ze-stretu-zajmu-eu-zada-opatreni-kvuli-juchelkove-poradkyni-302517",
+  "published": "2026-03-25",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-17"
+    }
+  ],
+  "subjects": [
+    "juchelka"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Závažné obavy ze střetu zájmů. EU žádá opatření kvůli Juchelkově poradkyni**\n\nEvropská komise si dopisem vyžádala od Česka vysvětlení možného střetu zájmů ('Obvinění prezentovaná v tisku vzbuzují závažné obavy ze střetu zájmů') a dotazovala se na plánovaná ověřovací a preventivní opatření; podle interního varování úředníků hrozila ztráta až 100 milionů Kč.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 4
+}

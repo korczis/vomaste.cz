@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-14",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-14",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "title": "SRC-14 — EnviWeb (přebírá ČTK)",
+  "description": "Ministerstvo poslalo přestupkovému úřadu majetkové přiznání ministra Červeného",
+  "outlet": "EnviWeb (přebírá ČTK)",
+  "sourceType": "zpravodajství",
+  "url": "https://www.enviweb.cz/133212",
+  "published": "2026-05-07",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-20"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-23"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-24"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-25"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Ministerstvo poslalo přestupkovému úřadu majetkové přiznání ministra Červeného**\n\nKlíčová věta: Ministerstvo spravedlnosti provedlo obsahovou kontrolu oznámení „na základě žádosti o součinnost ze strany Městského úřadu Nymburk“. Uvádí, že vypořádání společného jmění zahrnovalo dům v Bobnicích, bankovní účty a automobil, a že poslancem se Červený stal 4. října předchozího roku.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 14
+}

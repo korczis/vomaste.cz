@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "title": "SRC-01 — Vláda ČR (oficiální web)",
+  "description": "Oficiální web Úřadu vlády: funkce a údaje, které stránka sama uvádí.",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vlada.gov.cz/cz/vlada/clenove-vlady/zuzana-mrazova-223988/",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "mrazova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální stránka na webu Úřadu vlády, otevřena a přečtena 2026-07-30.\nUvádí funkci **ministryně pro místní rozvoj** a doložený přehled kariéry: narozena 24. 2. 1978 v Duchcově; PřF UK geografie (1996–2001); referentka odboru územního plánování MMR (2000–2006); místostarostka (2015–2018) a starostka Bíliny (2018–2025); poslankyně od 2025.\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** —\ndokládá existenci a formulaci úředního údaje, ne nezávislé redakční\nposouzení. Potvrzení **současné** funkce v této vládě vychází z ověření\noficiálního seznamu členů vlády k 2026-07-30 (viz\n`data/government.toml`). Sebeprezentační části profilu nejsou nezávisle\nověřeným faktem a dossier je jako fakt nepřebírá."
+    }
+  ],
+  "order": 1
+}

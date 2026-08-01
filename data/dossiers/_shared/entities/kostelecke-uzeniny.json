@@ -1,0 +1,49 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/kostelecke-uzeniny",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "kostelecke-uzeniny",
+  "entityId": "kostelecke-uzeniny",
+  "title": "Kostelecké uzeniny",
+  "entityType": "company",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "contextual",
+  "dossiers": [
+    "andrej-babis"
+  ],
+  "routeAliases": [
+    "/dossiers/andrej-babis/entities/kostelecke-uzeniny/"
+  ],
+  "order": 5,
+  "provenance": {
+    "discoveredAt": "2026-07-30",
+    "discoveredVia": [
+      "edge-agrofert-kostelecke",
+      "edge-kostelecke-nss",
+      "edge-kostelecke-ustavnisoud",
+      "edge-kostelecke-szif"
+    ],
+    "claimRefs": [
+      "CLM-18",
+      "CLM-47",
+      "CLM-48"
+    ],
+    "sourceRefs": [
+      "SRC-07",
+      "SRC-21",
+      "SRC-22"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext."
+    }
+  ]
+}

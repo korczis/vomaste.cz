@@ -1,22 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-03 — Hlídač státu"
 description = "Veřejný rejstřík sponzoringu: u Petra Vencálka evidován jeden dar 20 000 Kč jiné politické straně; žádný dar Klubu motoristů, z.s. ani Motoristům sobě evidován není."
 template = "dossier-source.html"
 weight = 3
 
 [extra]
-subjects = ["vencalek"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/petr-vencalek/sources/SRC-03"
+view_model = "generated/views/dossiers/petr-vencalek/sources/src-03.json"
 dossier = "petr-vencalek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-03"
-outlet = "Hlídač státu"
-src_type = "veřejný rejstřík / transparentní databáze"
-url = "https://www.hlidacstatu.cz/osoba/petr-vencalek"
-retrieved = "2026-08-01"
-claims = []
 +++
-
 Hlídač státu eviduje u Petra Vencálka **jeden** přímý dar politické
 straně, v hodnotě **20 000 Kč** (detail příjemce a data v podstránce
 sponzoringu tento zdroj sám neuvádí). **Žádný dar Klubu motoristů, z.s.

@@ -1,0 +1,49 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-21",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-21",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "title": "SRC-21 — Seznam Zprávy",
+  "description": "Zkrácení školního roku komplikuje plány některým učitelům",
+  "outlet": "Seznam Zprávy",
+  "sourceType": "zpravodajství",
+  "url": "https://www.seznamzpravy.cz/clanek/kampus-april-o-den-drive-zkraceni-skolniho-roku-komplikuje-plany-nekterym-ucitelum-303150",
+  "published": "2026-04-01",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-49"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-50"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-51"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-52"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-53"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-54"
+    }
+  ],
+  "subjects": [
+    "plaga"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Zkrácení školního roku komplikuje plány některým učitelům**\n\nPedagog Robert Müller (Gymnázium Jana Keplera) souhlasí s podstatou, kritizuje načasování, upozorňuje na vícedenní výlet přesahující nový konec roku. Petra Mazancová (Učitelská platforma) kritizuje dopad na tábory a rodiny. Angelika Gergelová (Unie rodičů) upozorňuje na rodiče bez flexibilní práce. Poslankyně ODS Renáta Zajíčková kritizuje proces žádostí o výjimku. Mluvčí MŠMT Ondřej Macura hájí, že opatření neovlivní kvalitu ani rozsah výuky. Luboš Zajíc (Asociace ředitelů ZŠ) změnu považuje za zvladatelnou.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 21
+}

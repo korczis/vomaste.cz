@@ -1,23 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-19 — ČT24 (Česká televize)"
 description = "Sněmovna nevydala Babiše a Okamuru k trestnímu stíhání"
 template = "dossier-source.html"
 weight = 19
 
 [extra]
-subjects = ["okamura"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-19"
+view_model = "generated/views/dossiers/tomio-okamura/sources/src-19.json"
 dossier = "tomio-okamura"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-19"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/poslanci-projednaji-zadosti-o-babisovo-a-okamurovo-vydani-k-trestnimu-stihani-370974"
-published = "2026-03-05"
-retrieved = "2026-07-30"
-claims = ["CLM-28", "CLM-29"]
 +++
-
 **Sněmovna nevydala Babiše a Okamuru k trestnímu stíhání**
 
 Zpravodajství o hlasování Sněmovny 5. března 2026, kdy poslanci odmítli vydat Okamuru ke stíhání. Uvádí počty hlasů, hlasování koaličních klubů, negativní doporučení mandátového a imunitního výboru a Okamurovu argumentaci.

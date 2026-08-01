@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-07",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-07",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
+  },
+  "text": "Podle zjištění Seznam Zpráv firma Siptrade v době reportáže nárokovala pro své klienty z evropských zdrojů více než 100 milionů korun; řízení firmy bylo formálně přepsáno na devatenáctiletou dceru majitelky, vlastnicky se ale nic nezměnilo.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-03"
+    }
+  ],
+  "subjects": [
+    "juchelka"
+  ],
+  "order": 7,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/ales-juchelka/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-03",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "text": "Zhruba měsíc po zvolení poslancem (do Sněmovny zvolen 4. října 2025) převedl Červený dům dohodou o vypořádání společného jmění na manželku; spoluvlastníkem byl i v den zvolení.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-03"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "order": 3,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/igor-cerveny/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

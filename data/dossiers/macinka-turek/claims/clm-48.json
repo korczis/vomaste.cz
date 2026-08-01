@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-48",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-48",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "text": "Jediným společníkem (podíl 100 %, vklad 200 000 Kč) a jednatelem GMR GAS s.r.o. je Petr Vencálek, jednatelem od prosince 2014",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-17"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-55"
+    }
+  ],
+  "subjects": [
+    "macinka"
+  ],
+  "order": 48,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam tvrzení CLM-48 — shrnutí, stav a zdroje\nvýše jsou úplné. Stav CORROBORATED stojí na dvou vzájemně nezávislých\nzdrojích různé povahy:\n[SRC-17](@/dossiers/macinka-turek/sources/src-17.md) (Investigace.cz)\nuvádí Petra Vencálka jako majitele české společnosti GMR GAS a\n[SRC-55](@/dossiers/macinka-turek/sources/src-55.md) (ARES, primární\nregistr Ministerstva financí) k tomu dokládá konkrétní rejstříkové údaje\n— stoprocentní podíl, výši vkladu a funkci jednatele od 2014-12-18.\nNejde o jednu zdrojovou rodinu.\n\nPetr Vencálek je tu **výhradně jako záznam vazby** ke společnosti z\n[CLM-46](@/dossiers/macinka-turek/claims/clm-46.md), v rozsahu, v jakém\nho jmenuje citované zpravodajství a veřejný rejstřík. **Není subjektem\ntohoto dossieru**, není veřejným funkcionářem a toto tvrzení mu nic\nnevytýká: vlastnit firmu a být jejím jednatelem je běžný, zveřejněný\npodnikatelský fakt. Předmětem kauzy je Macinkova nesplněná povinnost\npřiznat svůj podíl (CLM-14), ne cokoli na straně této společnosti nebo\njejího vlastníka.\n\nRejstříkový záznam obsahuje i datum narození a adresu bydliště — dossier\nje záměrně neuvádí, viz poznámka u SRC-55."
+    }
+  ]
+}

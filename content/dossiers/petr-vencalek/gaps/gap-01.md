@@ -1,20 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "GAP-01 — Dary Klubu motoristů, z.s.: prověřeno, žádný doklad v hlavním veřejném registru"
 description = "AUTH-2026-08-01-VENCALEK autorizuje téma darů Petra Vencálka Klubu motoristů, z.s. Hlídač státu (SRC-03) byl 2026-08-01 aktivně prověřen a dar tomuto subjektu nedokládá."
 template = "dossier-gap.html"
 weight = 1
 
 [extra]
-subjects = ["vencalek"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/petr-vencalek/gaps/GAP-01"
+view_model = "generated/views/dossiers/petr-vencalek/gaps/gap-01.json"
 dossier = "petr-vencalek"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-01"
-priority = "nízká"
-checked = "2026-08-01"
-claims = []
 +++
-
 Autorizační záznam `AUTH-2026-08-01-VENCALEK` v `AGENTS.md` výslovně
 povoluje pokrýt dary Petra Vencálka Klubu motoristů, z.s. jako téma.
 

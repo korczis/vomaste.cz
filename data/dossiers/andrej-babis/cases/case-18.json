@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/case.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/cases/CASE-18",
+  "@type": "vomaste:Case",
+  "recordType": "case",
+  "identifier": "CASE-18",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "Veřejné výroky: žaloba Seznam.cz",
+  "summary": "Seznam.cz podal 3. března 2026 na Babiše žalobu na ochranu pověsti kvůli jeho opakovaným výrokům, že firma v souvislosti s výplatou dividend „odrbala“ stát o srážkovou daň; požaduje smazání příspěvků, zákaz dalšího šíření a omluvu. Babiš za výroky stojí a média vydavatele označuje za lživá; Seznam uvádí, že státu žádnou daň nedluží. Výroky obou stran jsou vedeny jako citace — podaná civilní žaloba není rozhodnutí soudu a dossier pravdivost žádného z výroků nerozhoduje.",
+  "period": "2026–",
+  "status": "status-disputed",
+  "statusLabel": "Podaná žaloba — soud nerozhodl",
+  "anchor": "kauza-seznam-zaloba",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-86"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-87"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-62"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-63"
+    }
+  ],
+  "subjects": [],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Plné znění, zdroje a kontext tohoto případu jsou v [hlavním přehledu\ndossieru](@/dossiers/andrej-babis/_index.md#kauza-seznam-zaloba)."
+    }
+  ],
+  "order": 18
+}

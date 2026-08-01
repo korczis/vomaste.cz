@@ -1,23 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Filip Turek"
 description = "Neutrální, zdroji doložený přehled o Filipu Turkovi — poslanci za Motoristé sobě, bývalém europoslanci a zmocněnci pro Green Deal."
 template = "entity-dossier.html"
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/filip-turek"
+view_model = "generated/views/dossiers/filip-turek/overview.json"
 dossier = "filip-turek"
-dossier_title = "Filip Turek"
+record_type = "dossier"
 dossier_type = "entity"
-canonical_dossier = "macinka-turek"
-subject = "turek"
 lang = "cs"
 seo_type = "ProfilePage"
-subject_entities = ["turek"]
-
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-21-A", "AUTH-2026-07-21-B", "AUTH-2026-07-22-A", "AUTH-2026-07-30-A"]
 +++
-
 Filip Turek je poslanec za hnutí Motoristé sobě, bývalý europoslanec a
 bývalý vládní zmocněnec pro Green Deal. Tento dossier shrnuje veřejně
 doložené skutečnosti o jeho politické kariéře a o sledovaných kauzách —

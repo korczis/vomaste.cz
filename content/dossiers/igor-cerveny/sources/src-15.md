@@ -1,22 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-15 — CNN Prima News"
 description = "Červenému hrozí pokuta v řádu desítek tisíc. Ministr nepřiznal dům za jedenáct milionů"
 template = "dossier-source.html"
 weight = 15
 
 [extra]
-subjects = ["cerveny"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-15"
+view_model = "generated/views/dossiers/igor-cerveny/sources/src-15.json"
 dossier = "igor-cerveny"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-15"
-outlet = "CNN Prima News"
-src_type = "zpravodajství"
-url = "https://cnn.iprima.cz/cervenemu-hrozi-pokuta-v-radu-desitek-tisic-ministr-nepriznal-dum-za-jedenact-milionu-511357"
-retrieved = "2026-07-30"
-claims = ["CLM-25"]
 +++
-
 **Červenému hrozí pokuta v řádu desítek tisíc. Ministr nepřiznal dům za jedenáct milionů**
 
 Shrnuje, že o případné pokutě rozhoduje nymburský městský úřad a hrozí až 50 tisíc Kč. Uvádí datum vzniku poslaneckého mandátu 4. října a uzavření vypořádání společného jmění měsíc po zvolení.

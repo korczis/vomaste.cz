@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-22",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-22",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "title": "SRC-22 — Zdravé zprávy",
+  "description": "Lidovci souhlasí se zrušením limitu zdravotních benefitů. Ale chybí jim zubní péče",
+  "outlet": "Zdravé zprávy",
+  "sourceType": "zpravodajství",
+  "url": "https://www.zdravezpravy.cz/2026/07/07/cast-opozice-souhlasi-se-zrusenim-limitu-zdravotnich-benefitu-chybi-ale-zubni-pece/",
+  "published": "2026-07-07",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-14"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-41"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-42"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Lidovci souhlasí se zrušením limitu zdravotních benefitů. Ale chybí jim zubní péče**\n\nPoslanec Václav Pláteník (KDU-ČSL) podporuje zrušení limitu, postrádá však stomatologickou péči a dentální hygienu. Michaela Šebelová (STAN) kritizuje absenci dat o efektivitě vybraných služeb a legislativní postup mimo standardní připomínkování.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 22
+}

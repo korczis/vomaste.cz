@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/relations/edge-vodnanska-ustavnisoud",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-vodnanska-ustavnisoud",
+  "relationId": "edge-vodnanska-ustavnisoud",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/vodnanska-drubez"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/ustavni-soud"
+  },
+  "relationType": "SUBJECT_OF_PROCEEDING",
+  "label": "ústavní stížnost odmítnuta 1/2026 (dotace 75 mil. Kč) — spor o nárok na dotaci, ne o vině",
+  "status": "single",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-66"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-44"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 31,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Status: single."
+    }
+  ]
+}

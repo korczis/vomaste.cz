@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-60",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-60",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "Podpůrný a garanční rolnický a lesnický fond (PGRLF) podal 20. července 2026 žaloby na 28 firem, které byly v rozhodném období součástí koncernu Agrofert, o vrácení podpor v souhrnné výši 22 milionů korun poskytnutých v letech 2017–2021, s odkazem na rozpor s pravidly upravujícími střet zájmů; výzvě k dobrovolnému vrácení firmy nevyhověly. Podaná žaloba není rozhodnutí soudu",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-38"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-39"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-40"
+    }
+  ],
+  "subjects": [],
+  "order": 60,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

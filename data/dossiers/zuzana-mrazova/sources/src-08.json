@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-08",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-08",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "title": "SRC-08 — FORUM 24",
+  "description": "„S vámi se bavit nebudu,“ desetkrát zopakovala Mrázová. Tají okolnosti pokuty za nepřiznanou půjčku",
+  "outlet": "FORUM 24",
+  "sourceType": "zpravodajství",
+  "url": "https://www.forum24.cz/s-vami-se-bavit-nebudu-desetkrat-zopakovala-mrazova-taji-okolnosti-pokuty-za-nepriznanou-pujcku",
+  "published": "2026-07-25",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-08"
+    }
+  ],
+  "subjects": [
+    "mrazova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**„S vámi se bavit nebudu,“ desetkrát zopakovala Mrázová. Tají okolnosti pokuty za nepřiznanou půjčku**\n\nFORUM 24 k nepravomocné pokutě: v přiznání Mrázová uvedla, že neměla příjmy ani majetkové výhody nad 100 tisíc Kč, ačkoli sama potvrdila rodinnou půjčku půl milionu. U dalšího půl milionu na spořicím účtu se vysvětlení měnilo — nejprve „dar od současného manžela“, později peníze jen „deponované“. Výrok „S vámi se bavit nebudu“ zopakovala desetkrát.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 8
+}

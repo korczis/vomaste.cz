@@ -1,23 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-52 — ČT24: Babiš se v Česku v kauze Pandora Papers trestného činu nedopustil. Kriminalisté případ předali do zahraničí (2. 2. 2022)"
 description = "NCOZ: jednání nelze posoudit jako podezření ze spáchání trestného činu na území ČR; poznatky předány policejnímu orgánu jiné členské země EU."
 template = "dossier-source.html"
 weight = 52
 
 [extra]
-subjects = ["babis"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-52"
+view_model = "generated/views/dossiers/andrej-babis/sources/src-52.json"
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-52"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/babis-se-v-cesku-v-kauze-pandora-papers-trestneho-cinu-nedopustil-kriminaliste-pripad-predali-do-zah-23974"
-published = "2022-02-02"
-retrieved = "2026-08-01"
-claims = ["CLM-75"]
 +++
-
 ČT24 informuje o závěru Národní centrály proti organizovanému zločinu
 z počátku února 2022: jednání expremiéra Andreje Babiše popsané
 v Pandora Papers „nelze posoudit jako podezření ze spáchání trestného

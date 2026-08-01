@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/case.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/cases/CASE-01",
+  "@type": "vomaste:Case",
+  "recordType": "case",
+  "identifier": "CASE-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
+  },
+  "title": "Střet zájmů bývalé poradkyně a rozpočtový dopad",
+  "summary": "Firma poradkyně inkasovala od žadatelů o dotace, na jejichž výzvy poradkyně dohlížela; čtyři projekty vyřazeny z financování EU, mezera 63,8 mil. Kč. Citovaný zdroj neuvádí žádné vyšetřování ani obvinění.",
+  "period": "2026",
+  "status": "status-disputed",
+  "statusLabel": "Bez vyšetřování, spor o následek",
+  "anchor": "kauza-poradkyne",
+  "claims": [],
+  "sources": [],
+  "subjects": [
+    "juchelka"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu\ndossieru](@/dossiers/ales-juchelka/_index.md#kauza-poradkyne)."
+    }
+  ],
+  "order": 1
+}

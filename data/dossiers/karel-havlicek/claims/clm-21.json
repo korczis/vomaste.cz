@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-21",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-21",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "text": "Proces odnětí dotace byl více než rok blokován námitkou podjatosti podanou vedením firmy; ve druhé polovině dubna 2023 ministr opravný prostředek zamítl a napadené rozhodnutí potvrdil, čímž mohlo MPO ve vymáhání pokračovat. Náměstek Piecha to shrnul slovy „Penam vymáháme“.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-12"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "order": 21,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/karel-havlicek/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

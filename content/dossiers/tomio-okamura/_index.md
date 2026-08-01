@@ -1,117 +1,20 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Tomio Okamura"
 description = "Neutrální, zdroji doložený přehled o Tomiu Okamurovi — předsedovi Poslanecké sněmovny a předsedovi SPD."
 template = "entity-dossier.html"
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/tomio-okamura"
+view_model = "generated/views/dossiers/tomio-okamura/overview.json"
 dossier = "tomio-okamura"
-dossier_title = "Tomio Okamura"
+record_type = "dossier"
 dossier_type = "entity"
-canonical_dossier = "tomio-okamura"
-subject = "okamura"
 lang = "cs"
 seo_type = "ProfilePage"
-subject_entities = ["okamura"]
-subjects = ["Tomio Okamura"]
 updated = "2026-07-30"
 reviewed_at = "2026-07-30"
-
-
-[[extra.timeline]]
-date = "2025-02"
-title = "Sněmovna vydala Tomia Okamuru k trestnímu stíhání v kauze předvolebních plakátů SPD"
-anchor = "kauza-nevydani-snemovnou"
-dot = "dot-fact"
-subjects = ["okamura"]
-
-[[extra.timeline]]
-date = "2025-08"
-title = "Obvodní státní zastupitelství pro Prahu 1 podalo obžalobu na Tomia Okamuru a hnutí SPD"
-anchor = "kauza-odvolani-proces"
-dot = "dot-fact"
-subjects = ["okamura"]
-
-[[extra.timeline]]
-date = "2026-03"
-title = "Sněmovna Okamuru nevydala; soud jeho stíhání přerušil a věc vyloučil k samostatnému řízení"
-anchor = "kauza-nevydani-snemovnou"
-dot = "dot-fact"
-subjects = ["okamura"]
-
-[[extra.timeline]]
-date = "2026-05"
-title = "Hlavní líčení s hnutím SPD u Obvodního soudu pro Prahu 1, bez věci Tomia Okamury"
-anchor = "kauza-odvolani-proces"
-dot = "dot-fact"
-subjects = ["okamura"]
-
-[[extra.timeline]]
-date = "2026-06"
-title = "Nepravomocný rozsudek: peněžitý trest pro hnutí SPD, hnutí ohlásilo odvolání"
-anchor = "kauza-rozsudek-plakaty"
-dot = "dot-fact"
-subjects = ["okamura"]
-
-[[extra.cases]]
-anchor = "kauza-plakaty-spd"
-period = "2026"
-title = "Trestní kauza předvolebních plakátů SPD"
-status = "status-disputed"
-label = "Nepravomocné, hnutí se odvolává"
-summary = "OS pro Prahu 1 uznal SPD vinným podněcováním k nenávisti kvůli dvěma plakátům a uložil 3 miliony; rozsudek není pravomocný. Okamurovo vlastní stíhání je přerušené, Sněmovna ho nevydala."
-claims = ["CLM-01", "CLM-02", "CLM-03", "CLM-04", "CLM-05", "CLM-06"]
-subjects = ["okamura"]
-
-[[extra.cases]]
-anchor = "kauza-rozsudek-plakaty"
-period = "2026"
-title = "Nepravomocný rozsudek nad SPD za předvolební plakáty"
-status = "status-single"
-label = "Sledované téma"
-summary = "Nepravomocný rozsudek nad SPD za předvolební plakáty — viz tvrzení CLM-07, CLM-08, CLM-09, CLM-10, CLM-11, CLM-12, CLM-13, CLM-14, CLM-35."
-claims = ["CLM-07", "CLM-08", "CLM-09", "CLM-10", "CLM-11", "CLM-12", "CLM-13", "CLM-14", "CLM-35"]
-subjects = ["okamura"]
-
-[[extra.cases]]
-anchor = "kauza-reakce-obhajoba"
-period = "2026"
-title = "Reakce, obhajoba a hodnocení"
-status = "status-single"
-label = "Sledované téma"
-summary = "Reakce, obhajoba a hodnocení — viz tvrzení CLM-15, CLM-16, CLM-17, CLM-18, CLM-19, CLM-33, CLM-34."
-claims = ["CLM-15", "CLM-16", "CLM-17", "CLM-18", "CLM-19", "CLM-33", "CLM-34"]
-subjects = ["okamura"]
-
-[[extra.cases]]
-anchor = "kauza-odvolani-proces"
-period = "2026"
-title = "Průběh trestního řízení a odvolání"
-status = "status-single"
-label = "Sledované téma"
-summary = "Průběh trestního řízení a odvolání — viz tvrzení CLM-20, CLM-21, CLM-22, CLM-23, CLM-24, CLM-31."
-claims = ["CLM-20", "CLM-21", "CLM-22", "CLM-23", "CLM-24", "CLM-31"]
-subjects = ["okamura"]
-
-[[extra.cases]]
-anchor = "kauza-nevydani-snemovnou"
-period = "2026"
-title = "Hlasování Sněmovny o vydání ke stíhání"
-status = "status-single"
-label = "Sledované téma"
-summary = "Hlasování Sněmovny o vydání ke stíhání — viz tvrzení CLM-25, CLM-26, CLM-27, CLM-28, CLM-29, CLM-30, CLM-32."
-claims = ["CLM-25", "CLM-26", "CLM-27", "CLM-28", "CLM-29", "CLM-30", "CLM-32"]
-subjects = ["okamura"]
-
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-D"]
-
-[[extra.timeline]]
-date = "2026-06-03"
-title = "Nepravomocný rozsudek: SPD vinna, trest 3 miliony"
-anchor = "kauza-plakaty-spd"
-dot = "dot-disputed"
-subjects = ["okamura"]
 +++
 Tomio Okamura je předsedou Poslanecké sněmovny a předsedou hnutí SPD,
 které je součástí vládní koalice. Tento dossier pokrývá **jedno jediné

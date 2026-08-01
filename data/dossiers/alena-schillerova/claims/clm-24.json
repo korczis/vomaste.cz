@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-24",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-24",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "text": "Ve svém vyjádření z 10. února 2026 rozložila NRR zákonný limit schodku na základní rámec 237 miliard korun odpovídající strukturálnímu schodku 1,75 % HDP plus navýšení o obranu ve výši 9 miliard korun, tedy celkem 246 miliard korun, což navrhovaný schodek 310 miliard překračuje o 64 miliard.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-18"
+    }
+  ],
+  "subjects": [
+    "schillerova"
+  ],
+  "order": 24,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/alena-schillerova/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

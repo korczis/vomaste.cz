@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-16",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-16",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "title": "SRC-16 — Zdravé zprávy",
+  "description": "Defibrilátor sem, defibrilátor tam! Kauza FNOL pokračuje",
+  "outlet": "Zdravé zprávy",
+  "sourceType": "zpravodajství",
+  "url": "https://www.zdravezpravy.cz/2026/07/10/defibrilator-sem-defibrilator-tam-kauza-fnol-pokracuje/",
+  "published": "2026-07-10",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-22"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Defibrilátor sem, defibrilátor tam! Kauza FNOL pokračuje**\n\nPřehled aktuálního vývoje kauzy FNOL: závěry komise k roku 2024, odmítavá reakce prof. Táborského, trestní oznámení ministerstva z března 2026, příslib kompenzace škod pacientům.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 16
+}

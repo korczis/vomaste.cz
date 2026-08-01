@@ -1,23 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-55 — ARES (Ministerstvo financí ČR)"
 description = "Rejstříkový záznam GMR GAS s.r.o., IČO 28274318 — české společnosti, jejíž ukrajinskou pobočkou je podle SRC-17 GMR GAS UA LLC."
 template = "dossier-source.html"
 weight = 55
 
 [extra]
-subjects = ["macinka"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-55"
+view_model = "generated/views/dossiers/macinka-turek/sources/src-55.json"
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-55"
-outlet = "ARES — Administrativní registr ekonomických subjektů (Ministerstvo financí ČR)"
-src_type = "primární registr / veřejný rejstřík"
-url = "https://ares.gov.cz/ekonomicke-subjekty?ico=28274318"
-retrieved = "2026-07-30"
-published = "2023-11-26"
-claims = ["CLM-46", "CLM-48"]
 +++
-
 Primární státní registr, dotázaný programově 2026-07-30 (rozhraní
 `ekonomicke-subjekty-v-be/rest`, včetně větve veřejného rejstříku
 `ekonomicke-subjekty-vr`) — ne rešerší přes žurnalistiku. Datum

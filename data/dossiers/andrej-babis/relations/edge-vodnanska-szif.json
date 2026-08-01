@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/relations/edge-vodnanska-szif",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-vodnanska-szif",
+  "relationId": "edge-vodnanska-szif",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/vodnanska-drubez"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/szif"
+  },
+  "relationType": "SUBJECT_OF_PROCEEDING",
+  "label": "SZIF ukončil administraci žádosti (2023); NSS 1/2025 vyhověl kasační stížnosti fondu",
+  "status": "single",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-64"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-43"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 36,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Status: single."
+    }
+  ]
+}

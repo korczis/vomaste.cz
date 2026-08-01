@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-22",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-22",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "text": "Ministr své pochybení vysvětlil tak, že „došlo z mé strany k nesprávnému výkladu jedné procesní skutečnosti“ a že „chybně jsem vycházel z předpokladu, že rozhodným obdobím je datum nabytí funkce, nikoliv datum podání oznámení“.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-12"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "order": 22,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/igor-cerveny/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

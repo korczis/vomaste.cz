@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-18",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-18",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "title": "SRC-18 — Advokátní deník",
+  "description": "Sněmovna schválila stavební novelu se vznikem státních stavebních úřadů",
+  "outlet": "Advokátní deník",
+  "sourceType": "zpravodajství",
+  "url": "https://advokatnidenik.cz/2026/07/13/snemovna-schvalila-stavebni-novelu-se-vznikem-statnich-stavebnich-uradu/",
+  "published": "2026-07-13",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-47"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-48"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-49"
+    }
+  ],
+  "subjects": [
+    "mrazova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Sněmovna schválila stavební novelu se vznikem státních stavebních úřadů**\n\nSněmovna schválila novelu 10. 7. 2026 hlasy 89 koaličních poslanců (minimum 86), opozice proti. Vzniká Úřad pro rozvoj území; 638 stavebních úřadů se do roku 2028 zredukuje na 205 územních pracovišť. Novela umožňuje dodatečné povolení nepovolené stavby, pokud by její odstranění bylo „zjevně nepřiměřené“. Mrázová: novela zkrátí občanům cestu k bydlení. Kritika: Michaela Šebelová (STAN), Piráti („nezodpovědné a prokorupční“).\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 18
+}

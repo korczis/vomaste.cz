@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-18",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-18",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "text": "Podle Blesku (s odkazem na zjištění Deníku N) byl členem delegace v USA šéf komunikace Motoristů Lukáš Koutník; ministr nevysvětlil, proč byl v delegaci, ani zda jeho cestu hradil úřad.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-10"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "order": 18,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/igor-cerveny/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

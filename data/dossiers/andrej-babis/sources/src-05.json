@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-05",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-05",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-05 — Česká justice: Daňové podvody a promlčení, Babiš ve Francii (5. 4. 2026)",
+  "description": "Stav francouzského předběžného vyšetřování kolem nákupu nemovitostí na jihu Francie: co je předmětem podezření, v jaké fázi řízení je, jakou roli hraje promlčení a jak se Babiš vyjadřuje.",
+  "outlet": "Česká justice",
+  "sourceType": "zpravodajství",
+  "url": "https://www.ceska-justice.cz/2026/04/danove-podvody-a-promlceni-babis-francie/",
+  "published": "2026-04-05",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-14"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-15"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Článek „Daňové podvody a promlčení: Unikne Babiš francouzským\nvyšetřovatelům?\" (5. 4. 2026). Popisuje **předběžné** vyšetřování\nfrancouzské Národní finanční prokuratury (PNF) zahájené 24. února 2022,\npředmět podezření (daňový podvod v souvislosti s nákupem nemovitostí od\nzáří 2009 a praní peněz přes offshorové struktury), skutečnost, že\nprokuratura o zahájení stíhání dosud nerozhodla, roli promlčecích lhůt a\nBabišovo odmítnutí jakéhokoli pochybení."
+    }
+  ],
+  "order": 5
+}

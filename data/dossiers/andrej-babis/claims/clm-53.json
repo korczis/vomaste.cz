@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-53",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-53",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "Andrej Babiš podle analýzy z roku 2011 o ústeckou Setuzu dlouhodobě usiloval, firmu ale nezískal a vybudoval místo toho vlastní závod Preol na výrobu surovin pro biopaliva; citovaný zdroj neuvádí v souvislosti se Setuzou žádné jeho pochybení",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-25"
+    }
+  ],
+  "subjects": [],
+  "order": 53,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-12",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-12",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "title": "SRC-12 — Echo24",
+  "description": "Stát chce odměňovat firmy za očkování zaměstnanců, říká Okamura a mluví o uplácení",
+  "outlet": "Echo24",
+  "sourceType": "zpravodajství",
+  "url": "https://www.echo24.cz/a/H6U9N/zpravy-domaci-vzp-proockovanost-proti-chripce-okamura-mluvi-o-uplaceni-vlada-vojtech-ockovani",
+  "published": "2026-05-24",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-19"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-21"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Stát chce odměňovat firmy za očkování zaměstnanců, říká Okamura a mluví o uplácení**\n\nTomio Okamura (SPD) kritizoval projekt VZP „Zdravá firma“ (bonusy zaměstnavatelům za proočkovanost proti chřipce) jako „uplácení zaměstnavatelů“ a nepřímý nátlak na zaměstnance; SPD chtěla ve správní radě VZP hlasovat proti. Vojtěch hájí očkovací strategii schválenou předchozí vládou, zdůrazňuje ekonomické přínosy a opakuje, že registr odmítačů nevzniká. SPD je součástí vládní koalice a žádá revokaci strategie.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 12
+}

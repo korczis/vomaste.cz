@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-30",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-30",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "title": "SRC-30 — Blesk.cz",
+  "description": "Babiš razí zákaz mobilů ve školách, ODS varuje před skanzenem",
+  "outlet": "Blesk.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://www.blesk.cz/clanek/zpravy-politika/844436/babis-razi-zakaz-mobilu-ve-skolach-ods-varuje-pred-skanzenem-odbornici-melo-to-prijit-uz-davno.html",
+  "published": "2026-07-22",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-42"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-43"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-47"
+    }
+  ],
+  "subjects": [
+    "plaga"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Babiš razí zákaz mobilů ve školách, ODS varuje před skanzenem**\n\nPlaga argumentuje lepšími reálnými vazbami mezi dětmi; ODS v čele s Martinem Kupkou považuje opatření za zbytečné a populistické, varuje před proměnou škol ve „skanzen“ a učitelů v kontrolory a navrhuje tablety jen pro výuku; psychiatr Michal Goetz zákaz podporuje; dětský ombudsman Martin Beneš je proti.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 30
+}

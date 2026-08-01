@@ -28,24 +28,19 @@ mkdirSync(OUT_DIR, { recursive: true });
 
 const readToml = (p) => readFileSync(join(ROOT, p), "utf8");
 const field = (text, key) => (text.match(new RegExp(`^${key}\\s*=\\s*"((?:[^"\\\\]|\\\\.)*)"`, "m")) ?? [])[1] ?? null;
-const numField = (text, key) => Number((text.match(new RegExp(`^${key}\\s*=\\s*(\\d+)`, "m")) ?? [])[1] ?? 0);
 
 const config = readToml("config.toml");
 const siteTitle = field(config, "title") ?? "vomaste.cz";
 
-const dossiers = [...readToml("data/dossiers.toml").matchAll(/\[\[dossiers\]\]\n([\s\S]*?)(?=\n\[\[|\n*$)/g)].map((m) => ({
-  slug: field(m[1], "slug"),
-  title: field(m[1], "title"),
-  type: field(m[1], "dossier_type"),
-}));
+// T-028 fáze H: registr i počty jdou z kanonického datasetu (dřívější
+// data/dossiers.toml + stats.toml zanikly).
+const { loadDossierRegistry } = await import("../dossier/lib/dossier-registry.mjs");
+const { readDossierStats } = await import("../dossier/lib/record-tables.mjs");
+const dossiers = loadDossierRegistry().map((d) => ({ slug: d.slug, title: d.title, type: d.dossierType }));
 
 const stats = (slug) => {
-  try {
-    const t = readToml(`data/dossiers/${slug}/stats.toml`);
-    return { claims: numField(t, "claims_total"), sources: numField(t, "sources_total"), cases: numField(t, "cases_total"), gaps: numField(t, "gaps_total") };
-  } catch {
-    return null;
-  }
+  const s = readDossierStats(ROOT, slug);
+  return s ? { claims: s.claims, sources: s.sources, cases: s.cases, gaps: s.gaps } : null;
 };
 
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");

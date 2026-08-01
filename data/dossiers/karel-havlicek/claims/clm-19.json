@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-19",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-19",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "text": "Ministerstvo průmyslu a obchodu oficiálně oznámilo 21. března 2022, že přistoupí k odnětí stomilionové dotace Pekárně Zelená louka ze skupiny Agrofert, protože auditoři Evropské komise zjistili, že projekt nesplňoval kritéria inovativnosti programu INOVACE — zaměřoval se na produkt, jehož výroba již ve skupině probíhala.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-11"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "order": 19,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/karel-havlicek/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

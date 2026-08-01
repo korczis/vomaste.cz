@@ -1,107 +1,21 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Boris Šťastný"
 description = "Neutrální, zdroji doložený přehled o Borisi Šťastném — ministru pro sport a prevenci v oblasti zdraví. Autorizovaný rozsah: nahrávací zařízení v zasedačce, odvolání vedení NSA a rozpor v číslech interakcí; registry se teprve plní."
 template = "entity-dossier.html"
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/boris-stastny"
+view_model = "generated/views/dossiers/boris-stastny/overview.json"
 dossier = "boris-stastny"
-dossier_title = "Boris Šťastný"
+record_type = "dossier"
 dossier_type = "entity"
-canonical_dossier = "boris-stastny"
-subject = "stastny"
 lang = "cs"
 seo_type = "ProfilePage"
-subject_entities = ["stastny"]
-subjects = ["Boris Šťastný"]
 updated = "2026-07-30"
 reviewed_at = "2026-07-30"
-
-
-
-[[extra.timeline]]
-date = "2025-12"
-title = "Vláda na návrh ministra Šťastného odvolala předsedu NSA Ondřeje Šebka a člena rady Františka Horáka; vedením pověřen Ivo Jebousek"
-anchor = "kauza-odvolani-nsa"
-dot = "dot-fact"
-subjects = ["stastny"]
-
-[[extra.timeline]]
-date = "2026-01"
-title = "V jednacím sále vlády ve Strakově akademii bylo 22. ledna při úklidu nalezeno nahrávací zařízení Plaud"
-anchor = "kauza-nahravaci-zarizeni"
-dot = "dot-fact"
-subjects = ["stastny"]
-
-[[extra.timeline]]
-date = "2026-01"
-title = "Vláda jmenovala novým předsedou Národní sportovní agentury Karla Kováře"
-anchor = "kauza-odvolani-nsa"
-dot = "dot-fact"
-subjects = ["stastny"]
-
-[[extra.timeline]]
-date = "2026-06"
-title = "Zveřejněn rozpor mezi metrikami ministrova příspěvku na X a grafikou sdílenou na Facebooku a Instagramu; Šťastný se omluvil"
-anchor = "kauza-rozpor-cisla"
-dot = "dot-fact"
-subjects = ["stastny"]
-
-[[extra.timeline]]
-date = "2026-07"
-title = "Seznam Zprávy zveřejnily nález zařízení; Šťastný se k němu přihlásil, opozice a bezpečnostní experti kritizovali nenahlášení bezpečnostním složkám"
-anchor = "kauza-nahravaci-zarizeni"
-dot = "dot-fact"
-subjects = ["stastny"]
-
-[[extra.timeline]]
-date = "2026-07"
-title = "Zveřejněno, že zařízení Plaud vyrábí čínská firma Shenzhen Smart Connect Technology"
-anchor = "kauza-nahravaci-zarizeni"
-dot = "dot-fact"
-subjects = ["stastny"]
-
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-B"]
-[[extra.timeline]]
-date = "2026-01-22"
-title = "Nahrávací zařízení nalezeno v zasedačce Úřadu vlády"
-anchor = "kauza-nahravaci-zarizeni"
-dot = "dot-fact"
-subjects = ["stastny"]
-
-[[extra.cases]]
-anchor = "kauza-nahravaci-zarizeni"
-period = "2026"
-title = "Nahrávací zařízení v jednacím sále vlády"
-status = "status-single"
-label = "Sledované téma"
-summary = "Nahrávací zařízení v jednacím sále vlády — viz tvrzení CLM-06, CLM-07, CLM-08, CLM-09, CLM-10, CLM-11, CLM-12, CLM-13, CLM-14, CLM-15, CLM-16, CLM-17, CLM-18, CLM-19, CLM-20, CLM-21."
-claims = []
-subjects = ["stastny"]
-
-[[extra.cases]]
-anchor = "kauza-odvolani-nsa"
-period = "2026"
-title = "Odvolání vedení Národní sportovní agentury"
-status = "status-single"
-label = "Sledované téma"
-summary = "Odvolání vedení Národní sportovní agentury — viz tvrzení CLM-22, CLM-23, CLM-24, CLM-25, CLM-26, CLM-27, CLM-28, CLM-29, CLM-30, CLM-31."
-claims = []
-subjects = ["stastny"]
-
-[[extra.cases]]
-anchor = "kauza-rozpor-cisla"
-period = "2026"
-title = "Upravené metriky na sociálních sítích"
-status = "status-single"
-label = "Sledované téma"
-summary = "Upravené metriky na sociálních sítích — viz tvrzení CLM-32, CLM-33, CLM-34, CLM-35, CLM-36, CLM-37, CLM-38, CLM-39."
-claims = []
-subjects = ["stastny"]
-
 +++
-
 Boris Šťastný je ministrem pro sport a prevenci v oblasti zdraví ve
 třetí vládě Andreje Babiše (viz `data/government.toml`, ověřeno proti
 oficiálnímu seznamu členů vlády). Tento dossier je autorizován záznamem

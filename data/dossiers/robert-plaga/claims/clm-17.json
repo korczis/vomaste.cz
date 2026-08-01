@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-17",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-17",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "text": "MŠMT zkrácení zdůvodnilo organizačními a provozními potřebami škol a zohledněním chování značné části rodin a ujistilo, že opatření nemá dopad na kvalitu ani rozsah výuky a splnění vzdělávacích cílů.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-11"
+    }
+  ],
+  "subjects": [
+    "plaga"
+  ],
+  "order": 17,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/robert-plaga/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

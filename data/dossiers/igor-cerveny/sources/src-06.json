@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-06",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-06",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "title": "SRC-06 — Ekolist.cz (ČTK)",
+  "description": "Nově jmenovaný ministr Červený uvedl, že už vyřešil svůj střet zájmů",
+  "outlet": "Ekolist.cz (ČTK)",
+  "sourceType": "zpravodajství",
+  "url": "https://ekolist.cz/cz/zpravodajstvi/zpravy/nove-jmenovany-ministr-cerveny-uvedl-ze-uz-vyresil-svuj-stret-zajmu",
+  "published": "2026-02-23",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-10"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Nově jmenovaný ministr Červený uvedl, že už vyřešil svůj střet zájmů**\n\nČervený po jmenování novinářům řekl, že střet zájmů 'má vyřešený' a že se změna 'nejspíše tento týden' propíše do rejstříku. Podle Hospodářských novin spoluvlastnil firmu Extreme BFG Cast (tvorba podcastů, dosud nerozjetá) s Luborem Novákem, předsedou jihomoravských Motoristů a podnikatelem, který je zároveň Červeného poslaneckým asistentem; Novák Červeného podíl odkoupil.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 6
+}

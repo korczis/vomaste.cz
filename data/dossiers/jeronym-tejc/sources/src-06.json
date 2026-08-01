@@ -1,0 +1,52 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-06",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-06",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "title": "SRC-06 — Česká justice",
+  "description": "Soud svěřil Viktorku rodičům na drogách. Tejc chce trest pro soudkyni",
+  "outlet": "Česká justice",
+  "sourceType": "zpravodajství",
+  "url": "https://www.ceska-justice.cz/2026/07/viktorka-rodice-drogy-tejc-trest-soudkyni/",
+  "published": "2026-07-01",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-33"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-35"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-36"
+    }
+  ],
+  "subjects": [
+    "tejc"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Soud svěřil Viktorku rodičům na drogách. Tejc chce trest pro soudkyni**\n\nTejc podal kárnou žalobu na soudkyni Okresního soudu v Benešově a navrhuje roční snížení platu o 30 %; vytýká jí nedostatečné zjištění skutkového stavu. Soudkyně se hájí tím, že se všichni účastníci vzdali práva na odvolání a znalecký posudek připouštěl, že při abstinenci by otec mohl o dítě pečovat. Tejc poslal i podnět na OSPOD a ohlásil systémové změny.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 6
+}

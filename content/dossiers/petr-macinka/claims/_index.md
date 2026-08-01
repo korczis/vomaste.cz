@@ -1,18 +1,16 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Tvrzení — Petr Macinka"
 description = "Tvrzení z kanonického registru dossieru, která se týkají Petra Macinky."
 template = "entity-dossier-registry.html"
 
 [extra]
+generated = true
+view_model = "generated/views/dossiers/petr-macinka/claims-index.json"
 dossier = "petr-macinka"
-dossier_title = "Petr Macinka"
-canonical_dossier = "macinka-turek"
-subject = "macinka"
-registry = "claims"
 lang = "cs"
 seo_type = "CollectionPage"
 +++
-
 Filtrovaný pohled na [registr tvrzení](@/dossiers/macinka-turek/claims/_index.md) — jen záznamy, které se týkají Petra Macinky (samostatně nebo společně s Filipem Turkem).
 
 ## Co je jedno tvrzení

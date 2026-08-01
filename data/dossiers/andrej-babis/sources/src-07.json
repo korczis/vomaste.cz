@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-07",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-07",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-07 — Česká justice: Soud potvrdil zrušení dotace pro Kostelecké uzeniny (28. 11. 2025)",
+  "description": "Nejvyšší správní soud potvrdil, že Kostelecké uzeniny neměly nárok na dotaci z roku 2018 kvůli střetu zájmů, a vyslovil se k nepřímému vlivu přes svěřenské fondy.",
+  "outlet": "Česká justice",
+  "sourceType": "zpravodajství",
+  "url": "https://www.ceska-justice.cz/2025/11/babisuv-neprimy-vliv-stacil-soud/",
+  "published": "2025-11-28",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-18"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-19"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Nejvyšší správní soud potvrdil, že Kostelecké uzeniny neměly nárok na dotaci z roku 2018 kvůli střetu zájmů, a vyslovil se k nepřímému vlivu přes svěřenské fondy."
+    }
+  ],
+  "order": 7
+}

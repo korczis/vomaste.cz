@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-20",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-20",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
+  },
+  "text": "Klempíř jednal 30. června 2026 s prezidentem Petrem Pavlem o novele financování ČT a ČRo; podle Hradu se prezident ptal, jak vláda po změně financování garantuje nezávislost obou médií, a vyzval k odborné debatě.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-19"
+    }
+  ],
+  "subjects": [
+    "klempir"
+  ],
+  "order": 20,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/oto-klempir/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

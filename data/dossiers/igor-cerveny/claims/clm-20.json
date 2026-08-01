@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-20",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-20",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "text": "Ministerstvo spravedlnosti provedlo obsahovou kontrolu ministrova oznámení „na základě žádosti o součinnost ze strany Městského úřadu Nymburk“ — podnět tedy nevznikl na ministerstvu, ale úřad si k již vedené věci vyžádal odbornou součinnost.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-14"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "order": 20,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/igor-cerveny/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

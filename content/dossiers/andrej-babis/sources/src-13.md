@@ -1,23 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-13 — Investigace.cz: Pandora Papers — Momenty z podnikání Andreje Babiše (3. 10. 2021)"
 description = "Investigativní rekonstrukce offshore struktury, přes kterou byly pořízeny nemovitosti na jihu Francie, na základě uniklých dokumentů Pandora Papers."
 template = "dossier-source.html"
 weight = 13
 
 [extra]
-subjects = ["babis"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-13"
+view_model = "generated/views/dossiers/andrej-babis/sources/src-13.json"
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-13"
-outlet = "Investigace.cz"
-src_type = "investigativní zpravodajství"
-url = "https://www.investigace.cz/pandora-papers-andrej-babis-podnikani/"
-published = "2021-10-03"
-retrieved = "2026-07-30"
-claims = ["CLM-31", "CLM-32", "CLM-33", "CLM-34"]
 +++
-
 Investigativní text (autorka Zuzana Šotová) z projektu Pandora Papers,
 opřený o uniklé dokumenty poskytovatele offshore služeb.
 **Co dokládá:** řetězec společností, přes který byly pořízeny nemovitosti

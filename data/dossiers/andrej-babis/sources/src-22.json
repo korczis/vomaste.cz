@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-22",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-22",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-22 — Novinky.cz (ČTK): Kasační stížnost Kosteleckých uzenin soud smetl (28. 11. 2025)",
+  "description": "Správní historie zrušené dotace: schválil SZIF, zrušilo ministerstvo zemědělství; účel a program podpory.",
+  "outlet": "Novinky.cz",
+  "sourceFamily": "ctk",
+  "sourceType": "agenturní zpravodajství",
+  "url": "https://www.novinky.cz/clanek/domaci-kasacni-stiznost-kosteleckych-uzenin-soud-smetl-na-dotaci-nemely-kvuli-babisove-stretu-zajmu-narok-40550933",
+  "published": "2025-11-28",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-48"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Agenturní zpráva ČTK k rozsudku Nejvyššího správního soudu.\n**Co dokládá:** správní historii sporné podpory — šlo o dotaci z Programu\nrozvoje venkova z roku 2018 na inovaci technologie výroby masných\nvýrobků, kterou nejprve schválil Státní zemědělský intervenční fond a\nnásledně ji zrušilo Ministerstvo zemědělství s odkazem na střet zájmů\ntehdejšího premiéra; a upozornění, že tento případ se liší od jiných\nsporů skupiny, kde se firmy domáhaly zadržených dotací.\n\n**Nezávislost:** agenturní zpráva ČTK (`family = \"ctk\"`); samotný výrok\nsoudu dokládá nezávisle Česká justice (SRC-07). Tento zdroj je zařazen\nkvůli správním okolnostem, které SRC-07 nepopisuje.\n\n**Limity:** popisuje nárok na dotaci a správní kroky, nikoli trestní\nodpovědnost. Zrušení dotace není sankcí uloženou fyzické osobě."
+    }
+  ],
+  "order": 22
+}

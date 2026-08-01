@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-46",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-46",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-46 — Deník.cz (VLTAVA LABE MEDIA)",
+  "description": "Babiš označuje Turkovo jmenování ministrem za uzavřenou kapitolu; Turek zůstává zmocněncem pro klima a Green Deal.",
+  "outlet": "Deník.cz (VLTAVA LABE MEDIA)",
+  "sourceFamily": "denik-cz-turek-ministr",
+  "sourceType": "zpravodajství",
+  "url": "https://www.denik.cz/z_domova/andrej-babis-filip-turek-ministr-zivotniho-prostredi.html",
+  "published": "2026-02-04",
+  "retrieved": "2026-07-23",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-40"
+    }
+  ],
+  "subjects": [
+    "macinka"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Po dalším jednání s prezidentem Pavlem premiér Babiš potvrdil, že Turek\nse ministrem životního prostředí nestane — označil to za „uzavřenou\nkapitolu\" a čeká na nový návrh. Prezident uvedl, že je připraven nového\nministra jmenovat. Turek zůstává ve funkci zmocněnce pro klimatickou\nzměnu a Green Deal, s kanceláří na ministerstvu, a je čestným předsedou\nMotoristů sobě. Žádný konkrétní nový kandidát na ministra v článku\njmenován není."
+    }
+  ],
+  "order": 46
+}

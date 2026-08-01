@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-20",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-20",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
+  },
+  "title": "SRC-20 — ČT24 (Česká televize)",
+  "description": "Potravinový ombudsman Fialka má chránit spotřebitele, zemědělce i výrobce",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/ministr-sebestyan-predstavi-pozici-potravinoveho-ombudsmana-370731",
+  "published": "2026-02-26",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-41"
+    }
+  ],
+  "subjects": [
+    "sebestyan"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Potravinový ombudsman Fialka má chránit spotřebitele, zemědělce i výrobce**\n\nMinistr Šebestyán jmenoval potravinovým ombudsmanem Jindřicha Fialku, dosavadního ředitele sekce potravinářství MZe, který si sekci ponechá. Úkolem je zvýšit transparentnost potravinového řetězce a působit jako mediátor. Agrární komora zřízení ocenila, Asociace soukromého zemědělství je kritická. Kritiku vyjádřili také Petr Bendl (ODS) k debatě o ovlivňování marží a europoslankyně Veronika Vrecionová (ODS), podle níž jde o přípravnou palbu k určování cen státem.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 20
+}

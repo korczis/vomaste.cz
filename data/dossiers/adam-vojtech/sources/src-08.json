@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-08",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-08",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "title": "SRC-08 — Zdravotnický deník",
+  "description": "Od prevence ke střetu zájmů. Vojtěchův návrh rozvířil debatu o Babišovi",
+  "outlet": "Zdravotnický deník",
+  "sourceType": "zpravodajství",
+  "url": "https://www.zdravotnickydenik.cz/2026/07/vojtechuv-navrh-rozviril-debatu-o-babisovi/",
+  "published": "2026-07-07",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-14"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-15"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-17"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Od prevence ke střetu zájmů. Vojtěchův návrh rozvířil debatu o Babišovi**\n\nVojtěch navrhuje daňové zvýhodnění vybraných zdravotních benefitů hrazených zaměstnavateli (screening diabetu, kardiovaskulárních a onkologických onemocnění, dobrovolné očkování), podáno jako pozměňovací návrh. Poslankyně Michaela Šebelová (STAN): premiér Babiš vlastní zdravotnické kliniky a bude z toho profitovat — formálně nejde o střet zájmů, fakticky ano. Vojtěch: impuls přišel od zaměstnavatelských svazů, jde o soukromé peníze firem. Poslanec ODS Munzar navrhl zamítnutí.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 8
+}

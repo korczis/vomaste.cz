@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/gaps/GAP-05",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-05",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "GAP-05 — Nemovitosti ve Francii: výsledek rozhodnutí PNF a osud imunity po skončení funkce",
+  "description": "Francouzská prokuratura má o dalším postupu rozhodnout do konce roku 2026; žádný citovaný zdroj neuvádí výsledek ani co se stane s případem po skončení Babišovy funkce premiéra.",
+  "priority": "vysoká",
+  "checked": "2026-07-31",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-14"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-54"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Co je doložené.** Francouzská policie uzavřela v květnu 2026\nvyšetřování nákupu nemovitostí na jihu Francie a případ převzala\nNárodní finanční prokuratura (PNF), která má podle citovaného zdroje\nrozhodnout o dalším postupu do konce roku 2026\n([CLM-54](@/dossiers/andrej-babis/claims/clm-54.md)). Babiš po\nopětovném jmenování předsedou vlády koncem roku 2025 získal podle\nfrancouzských pravidel imunitu, jež ho po dobu výkonu funkce chrání\npřed případným stíháním.\n\n**Co zůstává otevřené:**\n\n1. **Rozhodnutí PNF.** Zda a koho prokuratura obviní, citovaný zdroj\n   neuvádí — jde o očekávání termínu (konec roku 2026), ne o výsledek.\n2. **Osud imunity po skončení funkce.** Žádný citovaný zdroj neuvádí,\n   zda a jak by stíhání pokračovalo, kdyby Babiš přestal být předsedou\n   vlády dřív, než PNF rozhodne.\n3. **Jediný zdroj.** Vývoj z května 2026 (uzavření vyšetřování, imunita)\n   je zatím doložen jediným otevřeným a přečteným zdrojem (SRC-26); pro\n   `CORROBORATED` chybí druhý, nezávislý zdroj.\n\nOtevřenost této mezery neznamená ani vinu, ani nevinu — znamená, že\nvěc je procesně nedořešená a tento web nemá čím doložit víc."
+    }
+  ],
+  "order": 5
+}

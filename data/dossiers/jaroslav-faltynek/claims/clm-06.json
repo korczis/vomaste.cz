@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-06",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-06",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek"
+  },
+  "text": "Na otázku, zda měl obžalovaný o projekt Čapí hnízdo zvláštní zájem, Faltýnek podle citovaného zpravodajství u soudu odpověděl: „Bylo to pod jeho rozlišovací schopnosti.\"",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-03"
+    }
+  ],
+  "subjects": [
+    "faltynek"
+  ],
+  "order": 6,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jaroslav-faltynek/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

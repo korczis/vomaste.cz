@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-05",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-05",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
+  },
+  "title": "SRC-05 — ČT24 (Česká televize)",
+  "description": "Semancová s možným střetem zájmů už pro resort nepracuje, řekl Juchelka",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/semancova-s-moznym-stretem-zajmu-uz-pro-resort-nepracuje-rekl-juchelka-372467",
+  "published": "2026-04-16",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-18"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-45"
+    }
+  ],
+  "subjects": [
+    "juchelka"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Semancová s možným střetem zájmů už pro resort nepracuje, řekl Juchelka**\n\nJuchelka poslancům oznámil, že Semancová po návratu z nemocenské ukončila působení na MPSV; podle něj odešla dobrovolně, aby neohrožovala evropské fondy. Pronesl výrok 'Není práce ministra hlídat střety zájmů.'\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 5
+}

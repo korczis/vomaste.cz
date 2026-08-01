@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-12",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-12",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
+  },
+  "text": "Podle Forum24 není jasné, z jakých rozpočtových kapitol ministerstvo výpadek 63,8 milionu korun nahradí; MPSV podle Ekonomického deníku uvedlo, že konečnou sumu i případné porušení podmínek financování bude možné vyhodnotit až po dokončení administrativních a kontrolních postupů.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-12"
+    }
+  ],
+  "subjects": [
+    "juchelka"
+  ],
+  "order": 12,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/ales-juchelka/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

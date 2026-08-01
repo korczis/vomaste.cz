@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-04",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-04",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/richard-chlad"
+  },
+  "text": "Předseda strany Petr Macinka podle citovaného zpravodajství uvedl: „Dal nám před eurovolbami dvakrát 50 tisíc korun.\"",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/sources/SRC-03"
+    }
+  ],
+  "subjects": [
+    "chlad"
+  ],
+  "order": 4,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/richard-chlad/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

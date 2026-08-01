@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-14",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-14",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
+  },
+  "text": "Státní zástupce David Jachnický podle zpravodajství argumentoval paralelou s nacistickým Německem, kde podle něj nenávistné projevy nezačaly násilím, ale slovy, a demokratický stát proto nemůže čekat, až se nenávist promění v útok.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-11"
+    }
+  ],
+  "subjects": [
+    "okamura"
+  ],
+  "order": 14,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/tomio-okamura/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

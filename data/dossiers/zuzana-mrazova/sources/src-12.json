@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-12",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-12",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "title": "SRC-12 — Tiscali.cz",
+  "description": "Mrázová bydlela v levném městském bytě a létala do Japonska. Teď po ní jde ministerstvo spravedlnosti",
+  "outlet": "Tiscali.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://www.tiscali.cz/mrazova-bydlela-v-levnem-mestskem-byte-a-letala-do-japonska-ted-po-ni-jde-ministerstvo-spravedlnosti-663378",
+  "published": "2026-05-25",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-18"
+    }
+  ],
+  "subjects": [
+    "mrazova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Mrázová bydlela v levném městském bytě a létala do Japonska. Teď po ní jde ministerstvo spravedlnosti**\n\nShrnutí podnětu ministerstva spravedlnosti k přestupkovému řízení kvůli neuvedeným půjčkám v majetkovém přiznání (hrozí pokuta do 50 tisíc Kč). Rekapituluje měnící se vysvětlení: půlmilionová půjčka od rodiny, dalších 500 tisíc od manžela nejprve jako „dar“, poté „deponované peníze“, později zmínka o 250 tisících od otce. Byt 130 m² za 4 584 Kč měsíčně od 2009; na jaře 2026 se odstěhovala.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 12
+}

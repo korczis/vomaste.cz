@@ -1,4 +1,5 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-31 — ČT24"
 description = "Policie odložila oznámení pro promlčení (oznámilo OSZ pro Prahu 4); rozhodnutí není pravomocné."
 template = "dossier-source.html"
@@ -6,19 +7,14 @@ weight = 31
 aliases = ["/dossier/zdroje/src-31/"]
 
 [extra]
-subjects = ["turek"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-31"
+view_model = "generated/views/dossiers/macinka-turek/sources/src-31.json"
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-31"
-outlet = "ČT24 (Česká televize)"
-src_type = "veřejnoprávní zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/oznameni-na-turka-kvuli-udajnemu-domacimu-nasili-policie-odlozila-373328"
-retrieved = "2026-07-22"
-published = "2026-05-12"
-claims = ["CLM-27"]
 +++
-
 ČT24 dne 12. května 2026 informovala, že policejní orgán odložil trestní
 oznámení z SRC-28/29/30 z důvodu promlčení; oznámil to vedoucí Obvodního
 státního zastupitelství pro Prahu 4 Jan Vychyta (státní zastupitelství

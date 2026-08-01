@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-09",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-09",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "title": "SRC-09 — Deník.cz (VLTAVA LABE MEDIA)",
+  "description": "Školní rok skončí letos v pátek 26. června, ne 30. června, rozhodl Plaga",
+  "outlet": "Deník.cz (VLTAVA LABE MEDIA)",
+  "sourceType": "zpravodajství",
+  "url": "https://www.denik.cz/skolstvi-a-vzdelavani/kdy-konci-skolni-rok-na-skolach-robert-plaga.html",
+  "published": "2026-03-31",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-16"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-17"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-19"
+    }
+  ],
+  "subjects": [
+    "plaga"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Školní rok skončí letos v pátek 26. června, ne 30. června, rozhodl Plaga**\n\nPlaga rozhodl, že školní rok 2025/2026 skončí v pátek 26. 6. místo úterý 30. 6.; týká se ZŠ, SŠ a konzervatoří. MŠMT to zdůvodnilo organizačními a provozními potřebami škol a chováním značné části rodin; kvalita ani rozsah výuky prý dotčeny nebudou. Reakce asociací ředitelů (Schejbalová, Zajíc) převážně smířlivé; školy s vážnými důvody mohou žádat o úpravu.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 9
+}

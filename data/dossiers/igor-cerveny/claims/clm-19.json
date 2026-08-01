@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-19",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-19",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "text": "Během cesty po USA Červený v rozhovoru pro Fox News ostře kritizoval klimatickou politiku EU a Green Deal, varoval před ohrožením průmyslu a pochválil prezidenta Trumpa.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-10"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "order": 19,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/igor-cerveny/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

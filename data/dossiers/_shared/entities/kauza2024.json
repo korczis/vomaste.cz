@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/kauza2024",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "kauza2024",
+  "entityId": "kauza2024",
+  "title": "Kauza 2024: fotografie a svícny",
+  "entityType": "controversy",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "contextual",
+  "dossiers": [
+    "macinka-turek",
+    "petr-macinka",
+    "filip-turek"
+  ],
+  "routeAliases": [
+    "/dossiers/macinka-turek/entities/kauza2024/"
+  ],
+  "order": 9,
+  "provenance": {
+    "discoveredAt": "2026-07-29",
+    "discoveredVia": [
+      "edge-turek-kauza2024",
+      "edge-macinka-kauza2024"
+    ],
+    "claimRefs": [
+      "CLM-04"
+    ],
+    "sourceRefs": [
+      "SRC-12"
+    ],
+    "cluster": "kauza-2024-fotografie",
+    "depth": 1
+  }
+}

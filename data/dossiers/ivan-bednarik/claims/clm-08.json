@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-08",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-08",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "text": "Podle Echo24 Bednárik deklaroval, že vláda bude z programu vysokorychlostních tratí stavět jen to, na co budou prostředky, s prioritou páteřního spojení Praha–Brno–Ostrava a mezinárodních návazností, v závislosti na podmínkách kofinancování EU očekávaných v létě 2026.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-04"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "order": 8,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/ivan-bednarik/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

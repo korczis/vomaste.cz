@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-52",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-52",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-52 — Deník N",
+  "description": "Nezávislé potvrzení: Turek žalobu na prezidenta Pavla nakonec nepodá.",
+  "outlet": "Deník N",
+  "sourceFamily": "denik-n",
+  "sourceType": "zpravodajství",
+  "url": "https://denikn.cz/minuta/2139007/",
+  "published": "2026-07-27",
+  "retrieved": "2026-07-29",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-44"
+    }
+  ],
+  "subjects": [
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Nezávislé potvrzení zprávy Blesk.cz (SRC-51) od jiného vydavatele:\nposlanec Motoristů Filip Turek nakonec nepodal avizovanou žalobu na\nochranu osobnosti proti prezidentu Petru Pavlovi."
+    }
+  ],
+  "order": 52
+}

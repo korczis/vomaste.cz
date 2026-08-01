@@ -1,4 +1,5 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-43 — Aktuálně.cz"
 description = "Turek a Macinka zlehčují roli sponzora Chlada; Macinka uvádí nižší částky než sám Chlad."
 template = "dossier-source.html"
@@ -6,19 +7,14 @@ weight = 43
 aliases = ["/dossier/zdroje/src-43/"]
 
 [extra]
-subjects = ["macinka", "turek"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-43"
+view_model = "generated/views/dossiers/macinka-turek/sources/src-43.json"
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-43"
-outlet = "Aktuálně.cz"
-src_type = "zpravodajství"
-url = "https://zpravy.aktualne.cz/domaci/strejda-ricrd-motoriste-davaji-ruce-pryc-od-ideologa-svazaku-pry-jen-kamarad-filipa/r~aaa290508f28eab4877b7a010ace8f05/"
-retrieved = "2026-07-22"
-published = "2026-03-17"
-claims = ["CLM-37"]
 +++
-
 Aktuálně.cz cituje přímá vyjádření vedení Motoristů k Richardu Chladovi:
 
 Turek: „Je to můj kamarád a s politikou nemá nic společného, i záměrně

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-62",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-62",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-62 — ČeskéNoviny.cz (ČTK): Seznam.cz podal žalobu na premiéra Babiše (3. 3. 2026)",
+  "description": "Žaloba na ochranu pověsti kvůli výrokům o srážkové dani; Seznam požaduje smazání příspěvků, zákaz šíření a omluvu.",
+  "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceType": "zpravodajství",
+  "url": "https://www.ceskenoviny.cz/zpravy/2793986",
+  "published": "2026-03-03",
+  "retrieved": "2026-08-01",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-86"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Agenturní zpráva ČTK z 3. 3. 2026: Seznam.cz podal žalobu na premiéra\nAndreje Babiše kvůli útokům na společnost. Požaduje „smazání lživých\npříspěvků na jeho sociálních sítích, uložení zákazu dalšího šíření\ntěchto nepravd a omluvu“. Jádrem sporu jsou Babišova opakovaná tvrzení\no neodvedené srážkové dani v souvislosti s výplatou dividend; Babiš\nmédia vydavatele označuje za lživá a manipulativní.\n\n**Poznámka k procesní přesnosti**: podaná civilní žaloba na ochranu\npověsti není rozhodnutí soudu; dossier nerozhoduje o pravdivosti\nvýroků žádné strany.\n\n**Nezávislost**: agenturní text ČTK; druhou redakcí k téže události je\n[SRC-63](@/dossiers/andrej-babis/sources/src-63.md) (ČT24) — obě mohou\nsdílet agenturní základ, korroborace je vydavatelská. Otevřeno a\npřečteno 2026-08-01."
+    }
+  ],
+  "order": 62
+}

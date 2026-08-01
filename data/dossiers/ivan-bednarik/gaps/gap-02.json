@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/gaps/GAP-02",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "title": "GAP-02 — Jeho resortní pozice k výdajům na železnici jako ministra",
+  "description": "Autorizovaný rozsah je zahrnuje, ale nebyly ověřeny přímo otevřeným zdrojem.",
+  "priority": "nízká",
+  "checked": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Autorizační záznam (`AUTH-2026-07-30-B`) zahrnuje i jeho publikované\npozice k výdajům na železnici jako současného ministra dopravy. Tato část\n**není v dossieru zpracována**, protože k ní při kontrole 2026-07-30\nnebyl otevřen a ověřen zdroj: kandidátní článek (Hospodářské noviny) i\ndalší nalezené odkazy nebyly přečteny v plném rozsahu, a jeden ze\nzvažovaných zdrojů (iROZHLAS) vrací na automatizované dotazy HTTP 403.\n\nJe to tedy **mezera v pokrytí, ne mezera ve skutečnosti** — dossier\nnezachycuje autorizované téma, které zachytit mohl, a přiznává to místo\ntoho, aby prázdné místo vypadalo jako neexistence tématu.\n\n**Podmínka uzavření**: přímé otevření zdroje k jeho konkrétním resortním\npozicím a doplnění tvrzení se stavem podle síly důkazu."
+    }
+  ],
+  "order": 2
+}

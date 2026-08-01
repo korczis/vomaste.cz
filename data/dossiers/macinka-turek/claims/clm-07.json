@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-07",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-07",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "text": "Deník N v říjnu 2025 zveřejnil údajné smazané příspěvky připisované Turkovi s rasistickým/homofobním obsahem",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-15"
+    }
+  ],
+  "subjects": [
+    "turek"
+  ],
+  "order": 7,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam tvrzení CLM-07 — shrnutí, stav a zdroje výše jsou úplné. Součástí téže kauzy jsou i CLM-08, CLM-09, CLM-19, CLM-41, CLM-42. Hlavní stránka dossieru zobrazuje tentýž text ze stejného zdroje; build proces ověřuje, že se neliší."
+    }
+  ]
+}

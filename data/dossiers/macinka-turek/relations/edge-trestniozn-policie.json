@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/relations/edge-trestniozn-policie",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-trestniozn-policie",
+  "relationId": "edge-trestniozn-policie",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/trestniozn"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/policie"
+  },
+  "relationType": "PROCEDURALLY_CLOSED_BY",
+  "label": "odloženo policií pro promlčení — procesní krok, ne rozhodnutí o vině; nepravomocné",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-27"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-31"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-54"
+    }
+  ],
+  "subjects": [
+    "turek"
+  ],
+  "directed": true,
+  "order": 31,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam vztahu edge-trestniozn-policie — typ vztahu, podporující tvrzení a zdroje v tabulce výše jsou úplné. Status FAKT znamená, že vztah je doložen nezávisle potvrzenými zdroji, ne jen tvrzením jedné strany. Hlavní stránka dossieru vykresluje interaktivní graf ze stejných dat.\n\nOdložení pro promlčení je **čistě procesní** výsledek — důsledek uplynutí zákonné promlčecí doby, ne posouzení, zda k činům došlo, nebo ne. Rozhodnutí není pravomocné: žena proti němu podala stížnost, o níž rozhoduje státní zástupkyně (viz [edge-trestniozn-statnizastupitelstvi](@/dossiers/macinka-turek/relations/edge-trestniozn-statnizastupitelstvi.md) a GAP-06)."
+    }
+  ]
+}

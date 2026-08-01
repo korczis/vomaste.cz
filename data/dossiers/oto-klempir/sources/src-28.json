@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-28",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-28",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
+  },
+  "title": "SRC-28 — Novinky.cz: Ministra kultury Klempíře ve Strážnici hlasitě vypískali (27. 6. 2026)",
+  "description": "Novinky.cz nezávisle na FORUM 24 (SRC-12) potvrzuje vypískání ministra kultury Klempíře na folklorním festivalu ve Strážnici.",
+  "outlet": "Novinky.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://www.novinky.cz/clanek/domaci-zpravy-jihomoravsky-kraj-klempire-ve-straznici-hlasite-vypiskali-40585336",
+  "published": "2026-06-27",
+  "retrieved": "2026-07-31",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-43"
+    }
+  ],
+  "subjects": [
+    "klempir"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Novinky.cz dne 27. 6. 2026: „Návštěvníci Mezinárodního folklorního\nfestivalu ve Strážnici v pátek vypískali ministra kultury Otu\nKlempíře.\" Lidé během jeho vystoupení hlasitě pískali a křičeli „Fuj“.\n\n**Nezávislost**: samostatná redakce od FORUM 24 (SRC-12) — obě\nnezávisle potvrzují jádro skutečnosti (vypískání na festivalu). Proto\nCLM-43 nese stav `CORROBORATED`.\n\n**Limity**: tento zdroj nepotvrzuje počet podpisů petice Milionu\nchvilek (45 000 k 28. 6. 2026) — ten zůstává doložen jen SRC-12."
+    }
+  ],
+  "order": 28
+}

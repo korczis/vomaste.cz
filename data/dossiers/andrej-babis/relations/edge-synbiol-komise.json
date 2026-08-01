@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/relations/edge-synbiol-komise",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-synbiol-komise",
+  "relationId": "edge-synbiol-komise",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/synbiol"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/evropska-komise"
+  },
+  "relationType": "SUBJECT_OF_PROCEEDING",
+  "label": "Komise sleduje střet zájmů i u SynBiolu a Hartenbergu — monitoring a pokyn, ne zjištění o porušení",
+  "status": "disputed",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-41"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-16"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 17,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Status: sporné, neuzavřené tvrzení."
+    }
+  ]
+}

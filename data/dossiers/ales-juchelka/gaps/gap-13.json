@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/gaps/GAP-13",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-13",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
+  },
+  "title": "GAP-13 — Nepodařilo se otevřít iROZHLAS.cz ani Radio Prague International.",
+  "description": "Oba servery vracejí HTTP 403 Forbidden. Obsah iROZHLAS je částečně doložen jen přetištěným úryvkem na sekundárním webu.",
+  "priority": "střední",
+  "checked": "2026-07-30",
+  "claims": [],
+  "subjects": [
+    "juchelka"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Nepodařilo se otevřít iROZHLAS.cz ani Radio Prague International.\n\n**Proč je to mezera**: Oba servery vracejí HTTP 403 Forbidden. Obsah iROZHLAS je částečně doložen jen přetištěným úryvkem na sekundárním webu. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+    }
+  ],
+  "order": 13
+}

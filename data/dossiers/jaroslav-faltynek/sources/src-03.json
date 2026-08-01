@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-03",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek"
+  },
+  "title": "SRC-03 — Echo24",
+  "description": "Echo24, 14. 9. 2022: Faltýnek vypovídal u soudu v kauze Čapí hnízdo jako svědek a k Babišovu zájmu o projekt uvedl, že „bylo to pod jeho rozlišovací schopnosti“.",
+  "outlet": "Echo24",
+  "sourceType": "celostátní zpravodajství",
+  "url": "https://echo24.cz/a/Sbrks/zpravy-domaci-soud-babis-kauza-capi-hnizdo-faltynek-podvod",
+  "published": "2022-09-14",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-08"
+    }
+  ],
+  "subjects": [
+    "faltynek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Echo24 dne 14. 9. 2022 informovalo o výpovědi Jaroslava Faltýnka u soudu\nv kauze Čapí hnízdo. Vypovídal **jako svědek** — jeho vlastní stíhání\nskončilo zrušením v květnu 2018.\n\nNa otázku, zda měl obžalovaný o projekt zvláštní zájem, podle článku\nodpověděl: „**Bylo to pod jeho rozlišovací schopnosti.**\"\n\nK prodeji akcií podle článku uvedl, že u převodu nebyl přítomen a že\n„**byl kupec, který nabídl cenu, která byla vyšší než účetní hodnota**\";\ndetaily podle něj řešili právníci a představenstvo návrh jen schválilo.\n\nK ekonomice projektu podle článku uvedl, že stál přibližně miliardu a\ndotace představovala jen pět procent celkové investice; kauzu označil za\nvykonstruovanou s cílem odstranit Babiše z politiky.\n\n**Poznámka k procesní přesnosti a hranicím**: co tento zdroj dokládá, je\n**že Faltýnek tyto výroky u soudu učinil** — nikoli že jejich obsah\nplatí. Všechna tvrzení odvozená z této výpovědi jsou proto v dossieru\nvedena ve stavu CITACE. Svědecká výpověď ve prospěch obžalovaného není\nani důkazem o jeho nevině, ani nepříznivým zjištěním o svědkovi."
+    }
+  ],
+  "order": 3
+}

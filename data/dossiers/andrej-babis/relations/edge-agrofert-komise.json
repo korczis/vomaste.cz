@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/relations/edge-agrofert-komise",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-agrofert-komise",
+  "relationId": "edge-agrofert-komise",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/agrofert"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/evropska-komise"
+  },
+  "relationType": "SUBJECT_OF_PROCEEDING",
+  "label": "Komise k 5. 6. 2026 neproplatila žádnou náhradu a žádá vysvětlení struktury fondu — dotaz, ne zjištění",
+  "status": "disputed",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-25"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-26"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-11"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 9,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Status: sporné, neuzavřené tvrzení."
+    }
+  ]
+}

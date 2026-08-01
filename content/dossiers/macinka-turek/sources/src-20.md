@@ -1,4 +1,5 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-20 — Česká justice"
 description = "Turek se vzdává imunity a popisuje vlastní verzi nehody; dechová zkouška negativní."
 template = "dossier-source.html"
@@ -6,19 +7,14 @@ weight = 20
 aliases = ["/dossier/zdroje/src-20/"]
 
 [extra]
-subjects = ["turek"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-20"
+view_model = "generated/views/dossiers/macinka-turek/sources/src-20.json"
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-20"
-outlet = "Česká justice"
-src_type = "zpravodajství (odborný právní server)"
-url = "https://www.ceska-justice.cz/2026/07/turek-imunitu-nechce-necha-vydat/"
-retrieved = "2026-07-22"
-published = "2026-07-15"
-claims = ["CLM-17", "CLM-18"]
 +++
-
 Česká justice je specializovaný server zaměřený na justici a trestní
 právo. Podle článku poslanec Filip Turek prohlásil, že by imunitu
 nevyužil a nechal se vydat k případnému trestnímu stíhání.

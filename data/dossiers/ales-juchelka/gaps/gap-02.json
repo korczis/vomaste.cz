@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/gaps/GAP-02",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
+  },
+  "title": "GAP-02 — Jak bude pokryta rozpočtová mezera 63,8 milionu",
+  "description": "Ministr na dotaz k deficitu odpověděl jediným slovem; konkrétní řešení nebylo ve zkontrolovaných zdrojích nalezeno.",
+  "priority": "nízká",
+  "checked": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-04"
+    }
+  ],
+  "subjects": [
+    "juchelka"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Vyřazení čtyř projektů z financování EU podle citovaného zdroje vytváří\nrozpočtovou mezeru 63,8 milionu korun\n([CLM-03](@/dossiers/ales-juchelka/claims/clm-03.md)). Na dotaz, jak bude\ndeficit řešen, ministr odpověděl jediným slovem „Počkejte.\"\n([CLM-04](@/dossiers/ales-juchelka/claims/clm-04.md)).\n\nVe zkontrolovaných zdrojích **nebylo nalezeno**, z jakých prostředků má\nbýt mezera pokryta, zda ji nesou dotčení příjemci, ministerstvo, nebo\nstátní rozpočet.\n\n**Podmínka uzavření**: doložené rozhodnutí o zdroji krytí (rozpočtové\nopatření, vyjádření ministerstva s konkrétními čísly), ověřené přímým\notevřením zdroje."
+    }
+  ],
+  "order": 2
+}

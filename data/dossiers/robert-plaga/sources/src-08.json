@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-08",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-08",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "title": "SRC-08 — Lupa.cz",
+  "description": "Plošný zákaz mobilů ve školách prošel vládou, platit má od příštího září",
+  "outlet": "Lupa.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://www.lupa.cz/aktuality/plosny-zakaz-mobilu-ve-skolach-prosel-vladou-platit-ma-od-pristiho-zari/",
+  "published": "2026-07-20",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-14"
+    }
+  ],
+  "subjects": [
+    "plaga"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Plošný zákaz mobilů ve školách prošel vládou, platit má od příštího září**\n\nVláda podpořila návrh Babiše a Plagy: zákaz mobilů a elektronických komunikačních zařízení 'při vzdělávání a s ním přímo souvisejících činnostech a při poskytování školských služeb' včetně jídelen, družin a klubů, účinnost od 1. 9. 2027. Výjimky: zdravotní důvody a speciální vzdělávací potřeby, výuka s povolením školy, akce mimo školu. Návrh musí ještě projít parlamentem.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 8
+}

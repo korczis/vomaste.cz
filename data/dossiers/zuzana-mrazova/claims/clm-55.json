@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-55",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-55",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "text": "Premiér Babiš ve sněmovně 28. května 2026 Mrázovou hájil argumentem, že si byt o výměře 130 metrů čtverečních platí sama, a srovnával její situaci s politiky pobírajícími vyšší náhrady na bydlení.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-24"
+    }
+  ],
+  "subjects": [
+    "mrazova"
+  ],
+  "order": 55,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/zuzana-mrazova/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

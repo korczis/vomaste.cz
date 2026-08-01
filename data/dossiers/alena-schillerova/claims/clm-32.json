@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-32",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-32",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "text": "NRR ve stanovisku č. 4/2026 odhadla, že schodek státního rozpočtu na rok 2027 může přesáhnout 350 miliard korun a že výnos desetiletého státního dluhopisu se blíží pětiprocentní hranici.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-17"
+    }
+  ],
+  "subjects": [
+    "schillerova"
+  ],
+  "order": 32,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/alena-schillerova/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-16",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-16",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
+  },
+  "text": "Generální ředitel Českého rozhlasu René Zavoral označil vládní rozhodnutí za „nepřátelský krok vlády s cílem média destabilizovat“ a rozhlas odhadl nutnost snížit počet zaměstnanců o 150 až 200 osob.",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-20"
+    }
+  ],
+  "subjects": [
+    "klempir"
+  ],
+  "order": 16,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/oto-klempir/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

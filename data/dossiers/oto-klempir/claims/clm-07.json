@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-07",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-07",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
+  },
+  "text": "Vláda 15. června 2026 schválila zrušení financování České televize a Českého rozhlasu z koncesionářských poplatků a jeho nahrazení přímým financováním ze státního rozpočtu od roku 2027.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-20"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-26"
+    }
+  ],
+  "subjects": [
+    "klempir"
+  ],
+  "order": 7,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/oto-klempir/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

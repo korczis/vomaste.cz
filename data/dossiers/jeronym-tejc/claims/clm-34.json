@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-34",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-34",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "text": "Podle tiskové zprávy ministerstva spravedlnosti ministr tvrdí, že se soudkyně „dopustila excesu“ a „zanedbala své povinnosti“ tím, že si dostatečně nezjistila skutkový stav. Šetření Odboru dohledu a kárné agendy ministerstva podle zprávy začalo v dubnu 2026.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-17"
+    }
+  ],
+  "subjects": [
+    "tejc"
+  ],
+  "order": 34,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jeronym-tejc/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

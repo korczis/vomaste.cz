@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-19",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-19",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "Podle téhož rozhodnutí lze nepřímý vliv vykonávat i prostřednictvím svěřenských fondů, takže vložení podílu do fondu samo o sobě střet zájmů neodstranilo; jde o výklad podmínek pro dotaci ve správním soudnictví, ne o rozhodnutí o trestní odpovědnosti",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-29"
+    }
+  ],
+  "subjects": [],
+  "order": 19,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

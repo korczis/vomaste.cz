@@ -1,0 +1,53 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/case.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/cases/CASE-03",
+  "@type": "vomaste:Case",
+  "recordType": "case",
+  "identifier": "CASE-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "Co zůstalo mimo fond: SynBiol, Hartenberg a dividenda 4,25 mld.",
+  "summary": "Do svěřenského fondu vložil pouze Agrofert — SynBiol (podíl 87,75 %), fond Hartenberg a nemovitosti zůstaly mimo. V roce 2025, tedy před vkladem, mu Agrofert vyplatil dividendu 5 mld. Kč v hrubém (4,25 mld. po zdanění). Evropská komise sleduje střet zájmů i u SynBiolu a Hartenbergu. Výplata dividendy i ponechání aktiv mimo fond jsou samy o sobě legální; sporný je zákonný rozsah povinnosti, o němž žádný orgán podle citovaných zdrojů nerozhodl.",
+  "period": "2025–2026",
+  "status": "status-disputed",
+  "statusLabel": "Otevřené; legální kroky, sporný rozsah povinnosti",
+  "anchor": "kauza-synbiol-dividenda",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-37"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-39"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-41"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-42"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-15"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-16"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-17"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu\ndossieru](@/dossiers/andrej-babis/_index.md#kauza-capi-hnizdo)."
+    }
+  ],
+  "order": 3
+}

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tunde-bartha"
+  },
+  "title": "SRC-02 — Echo24",
+  "description": "Echo24, 24. 6. 2026: radnice Prahy 3 měla před hlasováním nejméně dvě právní stanoviska, která před výpovědí varovala; vedoucí odboru uvedl, že pro ni neexistuje právně relevantní podklad.",
+  "outlet": "Echo24",
+  "sourceType": "celostátní zpravodajství",
+  "url": "https://echo24.cz/a/HWGig/zpravy-tunde-bartha-dostane-vypoved-z-mestskeho-bytu-radnici-pritom-od-vypovedi-pravni-stanoviska-odrazuji",
+  "published": "2026-06-24",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-07"
+    }
+  ],
+  "subjects": [
+    "bartha"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Echo24 dne 24. 6. 2026 informovalo, že vedení městské části Praha 3 si\npřed rozhodnutím opatřilo nejméně dvě právní stanoviska a **obě před\nvýpovědí varovala**.\n\nPrvní stanovisko, zpracované advokátní kanceláří Šenkýř Pánik, podle\nčlánku dospělo k závěru, že pro výpověď je třeba prokázat, že nájemci v\nbytě „fakticky a trvale\" nebydlí, a upozornilo, že „dosavadní důkazy\" k\núspěchu u soudu nestačí.\n\nDruhé stanovisko, zpracované vedoucím odboru Michalem Dobiášem, je podle\nčlánku formulováno přímočařeji: „**neexistuje žádný právně relevantní\npodklad**\", který by umožnil bezpečně dát výpověď pro hrubé porušení\npovinností, a existuje „**vysoké riziko**\", že soud výpověď shledá\nneplatnou, což by pro městskou část znamenalo prohru a náklady řízení.\n\nRada přesto výpověď dne 24. 6. 2026 schválila, s tříměsíční výpovědní\ndobou a s odůvodněním přenechání předmětu nájmu třetím osobám bez\nsouhlasu pronajímatele.\n\nBartha podle článku uvedla, že bydlí v Průhonicích v objektu patřícím\nspolečnosti premiéra Babiše a že její dcera žije v Maďarsku.\n\nPodle článku **není Barthové vytýkáno žádné protiprávní jednání**; byt\nzískala řádným postupem v roce 2004 a nájem platí.\n\n**Poznámka k procesní přesnosti a hranicím**: tento zdroj je pro dossier\nzásadní právě proto, že dokládá **odborná stanoviska svědčící proti\nvýpovědi**. Jakýkoli záznam o této věci, který je vynechá, citované\nzdroje zkresluje. Rozhodnutí rady je smluvní krok pronajímatele, ne\nsoudní rozhodnutí; zda výpověď obstojí, citované zpravodajství neuvádí."
+    }
+  ],
+  "order": 2
+}

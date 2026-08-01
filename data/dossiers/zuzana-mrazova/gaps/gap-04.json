@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/gaps/GAP-04",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-04",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "title": "GAP-04 — Není znám aktuální správní stav staveb na pozemku (zda běží řízení o odstranění stavby či ",
+  "description": "Zdroje popisují stav k květnu 2026 (žádost o změnu funkčního využití); primární dokumenty stavebního úřadu nebyly dohledány.",
+  "priority": "střední",
+  "checked": "2026-07-30",
+  "claims": [],
+  "subjects": [
+    "mrazova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Není znám aktuální správní stav staveb na pozemku (zda běží řízení o odstranění stavby či dodatečné povolení a s jakým výsledkem).\n\n**Proč je to mezera**: Zdroje popisují stav k květnu 2026 (žádost o změnu funkčního využití); primární dokumenty stavebního úřadu nebyly dohledány. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+    }
+  ],
+  "order": 4
+}

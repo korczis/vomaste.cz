@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-44",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-44",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
+  },
+  "text": "Výsledky kontroly NKÚ (zahájené v červenci 2026, s dokončením kolem poloviny roku 2027) mají být podle FORUM 24 zveřejněny přibližně po letních prázdninách roku 2027. Jde o kontrolu správní povahy, nikoli o trestní řízení.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-09"
+    }
+  ],
+  "subjects": [
+    "juchelka"
+  ],
+  "order": 44,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/ales-juchelka/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

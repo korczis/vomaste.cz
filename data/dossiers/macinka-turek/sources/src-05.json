@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-05",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-05",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-05 — ČT24",
+  "description": "„Je, byl a bude to Turek,“ řekl Macinka k nominaci na ministra životního prostředí.",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "veřejnoprávní zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/je-byl-a-bude-to-turek-rekl-macinka-k-nominaci-na-ministra-zivotniho-prostredi-369026",
+  "published": "2026-01-07",
+  "retrieved": "2026-07-21",
+  "claims": [],
+  "subjects": [
+    "macinka",
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "ČT24 je zpravodajský kanál veřejnoprávní České televize — v registru\nzdrojů veden jako nejvyšší dostupná tier nezávislosti (financování ze\nzákona přes koncesionářské poplatky, redakčně oddělený od vlády).\n\nTento konkrétní citát se vztahuje k dřívější fázi Turkovy kariéry\n(nominace na ministra životního prostředí) a slouží v dossieru jako doklad\nkontinuity Macinkovy podpory Turkovi napříč časem — je uveden v sekci\n\"Macinkova obrana Turka\", ale nepodkládá samostatné CLM tvrzení nad rámec\ntoho, co už dokládají SRC-01/04/13."
+    }
+  ],
+  "order": 5
+}

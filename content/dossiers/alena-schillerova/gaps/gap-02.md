@@ -1,20 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "GAP-02 — Rozpor ve výpočtu přípustného schodku nebyl uzavřen"
 description = "Rada uvádí limit 247 miliard, ministerstvo 292 miliard; citované zdroje spor nerozhodly."
 template = "dossier-gap.html"
 weight = 2
 
 [extra]
-subjects = ["schillerova"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/alena-schillerova/gaps/GAP-02"
+view_model = "generated/views/dossiers/alena-schillerova/gaps/gap-02.json"
 dossier = "alena-schillerova"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-02"
-priority = "vysoká"
-checked = "2026-07-30"
-claims = ["CLM-03", "CLM-04"]
 +++
-
 Národní rozpočtová rada vypočítala maximální přípustný schodek na 247
 miliard korun; ministerstvo financí tvrdí, že obranné výdaje 55 miliard
 odůvodňují limit 292 miliard

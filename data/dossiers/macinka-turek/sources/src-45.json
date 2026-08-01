@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-45",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-45",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-45 — HN.cz (Hospodářské noviny)",
+  "description": "Babiš nezvažuje kompetenční žalobu na prezidenta; řízením ministerstva životního prostředí dočasně pověřen Macinka.",
+  "outlet": "HN.cz (Hospodářské noviny)",
+  "sourceType": "zpravodajství",
+  "url": "https://domaci.hn.cz/c1-67831390-pavel-dal-odmita-jmenovat-turka-ministrem-podle-babise-mel-dostat-sanci-kompetencni-zalobu-ale-nezvazuje",
+  "published": "2026-01-07",
+  "retrieved": "2026-07-23",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-38"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-40"
+    }
+  ],
+  "subjects": [
+    "macinka",
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Premiér Andrej Babiš se pokusil prezidenta Pavla během novoročního oběda\npřesvědčit ke jmenování Filipa Turka ministrem životního prostředí,\nneúspěšně — Pavel svůj nesouhlas potvrdil písemně. Babiš podle článku\nkompetenční žalobu na prezidenta kvůli nejmenování Turka nezvažuje.\nŘízením ministerstva životního prostředí byl mezitím dočasně pověřen\npředseda Motoristů a ministr zahraničí Petr Macinka — přímý důsledek\ntoho, že Turek nebyl jmenován."
+    }
+  ],
+  "order": 45
+}

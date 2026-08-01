@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-07",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-07",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "text": "Podle Ekolistu (22. 6. 2026) Červený následně podal opravné oznámení a zaplatil pokutu 7 500 Kč za neúplnost původního přiznání; z článku neplyne, že by řízení bylo formálně pravomocně uzavřeno.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-04"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "order": 7,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/igor-cerveny/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

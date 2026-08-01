@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-42",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-42",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "text": "Premiér Babiš na summitu NATO v Ankaře 7.–8. července 2026, kam ho doprovázel i ministr obrany Zůna, oznámil navýšení obranného rozpočtu o 36 miliard korun a poprvé dosažení 2 % HDP, spolu se zvýšením počtu vojáků a aktivních záloh minimálně o čtvrtinu.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-20"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-33"
+    }
+  ],
+  "subjects": [
+    "zuna"
+  ],
+  "order": 42,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jaromir-zuna/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

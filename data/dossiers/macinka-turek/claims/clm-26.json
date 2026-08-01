@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-26",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-26",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "text": "Turek trestní jednání a násilí kategoricky odmítl, označil oznámení za „mediální lynč\" s politickým motivem; nevěru v tomto kontextu připustil",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-29"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-30"
+    }
+  ],
+  "subjects": [
+    "turek"
+  ],
+  "order": 26,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam tvrzení CLM-26 — shrnutí, stav a zdroje výše jsou úplné. Součástí téže kauzy jsou i CLM-25, CLM-27. Hlavní stránka dossieru zobrazuje tentýž text ze stejného zdroje; build proces ověřuje, že se neliší."
+    }
+  ]
+}

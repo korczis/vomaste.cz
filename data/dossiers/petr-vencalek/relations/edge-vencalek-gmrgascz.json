@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/petr-vencalek/relations/edge-vencalek-gmrgascz",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-vencalek-gmrgascz",
+  "relationId": "edge-vencalek-gmrgascz",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/petr-vencalek"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/vencalek"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/gmrgas-cz"
+  },
+  "relationType": "HOLDS_INTEREST_IN",
+  "label": "jediný společník a jednatel",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-vencalek/claims/CLM-01"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-vencalek/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-vencalek/sources/SRC-02"
+    }
+  ],
+  "subjects": [
+    "vencalek"
+  ],
+  "directed": true,
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam vztahu edge-vencalek-gmrgascz — typ\nvztahu, podporující tvrzení a zdroje v tabulce výše jsou úplné. Status\nCORROBORATED stojí na dvou vzájemně nezávislých zdrojích různé povahy\n(investigativní redakce a primární státní registr). Hlavní stránka\ndossieru vykresluje interaktivní graf ze stejných dat."
+    }
+  ]
+}

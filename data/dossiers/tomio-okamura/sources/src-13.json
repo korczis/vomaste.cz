@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-13",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-13",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
+  },
+  "title": "SRC-13 — FORUM 24",
+  "description": "Černý den pro Okamuru. Soud uložil SPD třímilionový peněžitý trest za nenávistné předvolební plakáty",
+  "outlet": "FORUM 24",
+  "sourceType": "zpravodajství",
+  "url": "https://www.forum24.cz/soud-ulozil-spd-trimilionovy-penezity-trest-za-nenavistne-predvolebni-plakaty",
+  "published": "2026-06-03",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-35"
+    }
+  ],
+  "subjects": [
+    "okamura"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Černý den pro Okamuru. Soud uložil SPD třímilionový peněžitý trest za nenávistné předvolební plakáty**\n\nPřebraná agenturní zpráva ČTK doplněná o informaci, že soudkyně v odůvodnění odkázala na dřívější případ Jaromíra Baldy, a o výši navrhovaného trestu státního zástupce.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 13
+}

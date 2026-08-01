@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/boris-stastny/gaps/GAP-05",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-05",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/boris-stastny"
+  },
+  "title": "GAP-05 — Zda NÚKIB, BIS nebo Policie ČR po zveřejnění kauzy dodatečně zahájily prověřování nalezené",
+  "description": "Žádný z prostudovaných zdrojů neuvádí následné kroky bezpečnostních složek po 10. červenci 2026; zdroje shodně jen konstatují, že v době nál",
+  "priority": "střední",
+  "checked": "2026-07-30",
+  "claims": [],
+  "subjects": [
+    "stastny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zda NÚKIB, BIS nebo Policie ČR po zveřejnění kauzy dodatečně zahájily prověřování nalezeného zařízení.\n\n**Proč je to mezera**: Žádný z prostudovaných zdrojů neuvádí následné kroky bezpečnostních složek po 10. červenci 2026; zdroje shodně jen konstatují, že v době nálezu nález nahlášen nebyl. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+    }
+  ],
+  "order": 5
+}

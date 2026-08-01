@@ -102,11 +102,19 @@ what to check before your first edit.
    like the natural next topic" are never authorization. If in doubt,
    don't write the content — ask.
 
-7. **Before calling anything done**: run the relevant validators (fast
-   subset: `git commit` now runs `.githooks/pre-commit` automatically;
-   full gate before a review-request/merge/push: `npm run build`). A
-   green pre-commit hook is not the same thing as a green `npm run
-   build` — don't conflate them.
+7. **Know where content is edited**: all dossier/entity content is
+   canonical JSON under `data/dossiers/**` (see AGENTS.md "Canonical
+   data model" and `docs/contributing/add-dossier-data.md`).
+   `content/dossiers/**` and `content/entities/*.md` are generated
+   adapters — never edit them; `npm run data:build` regenerates them
+   from the canonical records (there are no migrate scripts anymore).
+
+8. **Before calling anything done**: run the relevant validators (fast
+   subset: `git commit` now runs `.githooks/pre-commit` automatically,
+   which starts with the canonical `data:validate` gate; full gate
+   before a review-request/merge/push: `npm run build`). A green
+   pre-commit hook is not the same thing as a green `npm run build` —
+   don't conflate them.
 
 ## What this skill deliberately does not do
 

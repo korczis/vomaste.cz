@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/case.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/cases/CASE-09",
+  "@type": "vomaste:Case",
+  "recordType": "case",
+  "identifier": "CASE-09",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "Čapí hnízdo: šetření OLAF a vrácení dotace",
+  "summary": "Evropský úřad pro boj proti podvodům (OLAF) ve zveřejněných částech závěrečné zprávy hovořil o nesrovnalostech a doporučil vyjmout 42 497 827 Kč z evropského financování; Ministerstvo financí v lednu 2018 navrhlo doporučení akceptovat. Společnost Imoba v červnu 2018 dotaci téměř 50 milionů korun vrátila, do dohody ale prosadila, že podmínky přidělení dotace neporušila, a zprávu OLAF označila za nepoužitelný důkaz. Vrácení peněz je účetní a smluvní krok — není to rozsudek o vině a nezasahuje do trestního řízení.",
+  "period": "2016–2018",
+  "status": "status-single",
+  "statusLabel": "Dotace vrácena — vrácení není přiznání viny",
+  "anchor": "kauza-ch-olaf",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-52"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-72"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-73"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-74"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-24"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-50"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-51"
+    }
+  ],
+  "subjects": [],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Plné znění, zdroje a kontext tohoto případu jsou v [hlavním přehledu\ndossieru](@/dossiers/andrej-babis/_index.md#kauza-ch-olaf)."
+    }
+  ],
+  "order": 9
+}

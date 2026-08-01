@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-32",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-32",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "text": "Na Havlíčkovo vystoupení reagovala Olga Richterová (Piráti) tvrzením, že ministr „evidentně ztrácí nervy“, Michal Kučera (TOP 09), že „předvedl předvolební projev“, a Marek Výborný (KDU-ČSL) slovy „Vaše arogance a drzost fakt nezná mezí“.",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-18"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "order": 32,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/karel-havlicek/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

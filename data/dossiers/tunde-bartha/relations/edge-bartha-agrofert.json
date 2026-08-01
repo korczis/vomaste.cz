@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/relations/edge-bartha-agrofert",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-bartha-agrofert",
+  "relationId": "edge-bartha-agrofert",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tunde-bartha"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/bartha"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/agrofert"
+  },
+  "relationType": "HOLDS_ROLE",
+  "label": "business development manager (dle zpravodajství, potvrzeno mluvčím); firemní web 9/2024: country managerka AGROFERT Hungária",
+  "status": "contextual",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-13"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-09"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 2,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextový, strukturální vztah — dossier jej neuvádí jako vlastní doloženou investigaci, jen jako veřejně nesporné pozadí."
+    }
+  ]
+}

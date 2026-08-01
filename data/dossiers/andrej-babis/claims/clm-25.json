@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-25",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-25",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "Evropská komise podle citovaného zpravodajství z 5. června 2026 potvrdila, že české úřady mohly obnovit administraci zemědělských dotací firmám ze skupiny Agrofert, ale sama dosud nic neproplatila; mluvčí Komise Louise Bogeyová uvedla: „K dnešnímu dni nebyly českým úřadům vyplaceny žádné náhrady týkající se Agrofertu.“",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-10"
+    }
+  ],
+  "subjects": [],
+  "order": 25,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

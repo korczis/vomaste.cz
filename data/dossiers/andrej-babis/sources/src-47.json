@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-47",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-47",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-47 — Echo24: Firmy z Agrofertu neměly kvůli Babišovu střetu zájmů dostávat zakázky, rozhodl NSS (11. 12. 2025)",
+  "description": "Střet zájmů znemožňoval firmám koncernu nejen přijímat dotace, ale i ucházet se o zakázky malého rozsahu z veřejných zdrojů; NSS zamítl kasační stížnost Moravskoslezského kraje.",
+  "outlet": "Echo24",
+  "sourceType": "zpravodajství",
+  "url": "https://www.echo24.cz/a/HcTLq/zpravy-domov-nss-firmy-z-agrofertu-nemely-kvuli-babisovu-stretu-zajmu-dostavat-zakazky",
+  "published": "2025-12-11",
+  "retrieved": "2026-08-01",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-68"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Echo24 k rozsudku NSS z 11. 12. 2025 uvádí, že střet zájmů Andreje\nBabiše v době jeho prvního premiérského působení „znemožňoval firmám\nz koncernu Agrofert nejenom přijímat dotace, ale také ucházet se\no zakázky malého rozsahu z veřejných zdrojů“. Soud zamítl kasační\nstížnost Moravskoslezského kraje, který zadal zakázku na školní dílny\nv Bruntále firmě Navos Farm Technic; z rozsudku cituje, že dodavatel\nbyl ovládán Andrejem Babišem, který byl v době zadání i splnění zakázky\nveřejným funkcionářem. Babiš měl tehdy koncern vložený ve svěřenském\nfondu, podle auditu Evropské komise jej však dál nepřímo ovládal.\nŽalobu kraje předtím zamítl Městský soud v Praze.\n\n**Poznámka k procesní přesnosti**: správní výklad zákona o střetu\nzájmů a zadávání zakázek; o trestní odpovědnosti nerozhoduje.\n\n**Nezávislost**: článek se obsahově kryje s agenturní zprávou ČTK\n([SRC-46](@/dossiers/andrej-babis/sources/src-46.md)) — může jít o týž\nagenturní základ; korroborace je vydavatelská. Otevřeno a přečteno\n2026-08-01."
+    }
+  ],
+  "order": 47
+}

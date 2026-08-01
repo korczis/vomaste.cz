@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-04",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-04",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek"
+  },
+  "title": "SRC-04 — ČT24: Žalobce zrušil trestní stíhání Jaroslava Faltýnka v kauze Čapí hnízdo, u Babiše trvá (3. 5. 2018)",
+  "description": "ČT24 nezávisle na Hospodářské noviny (SRC-02) potvrzuje zrušení trestního stíhání Jaroslava Faltýnka a tří dalších osob; Babišovy stížnosti byly zamítnuty jako nedůvodné.",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "veřejnoprávní zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/zalobce-zrusil-trestni-stihani-jaroslava-faltynka-v-kauze-capi-hnizdo-u-babise-trva-80778",
+  "published": "2018-05-03",
+  "retrieved": "2026-07-31",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-04"
+    }
+  ],
+  "subjects": [
+    "faltynek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "ČT24 dne 3. 5. 2018: „Vyhověno bylo stížnostem Jaroslava Faltýnka a tří\ndalších osob a usnesení o jejich stíhání bylo zrušeno.\" Naproti tomu\n„ve věci byly jako nedůvodné zamítnuty stížnosti Andreje Babiše\" — jeho\nstíhání pokračovalo. Důvodem zrušení stíhání Faltýnka a dalších bylo\npodle žalobce „neprokázání subjektivní stránky stíhaného jednání\".\n\n**Nezávislost**: samostatná redakce od Hospodářské noviny (SRC-02) —\nobě nezávisle potvrzují tutéž veřejnou skutečnost (zrušení stíhání).\nProto CLM-02 a CLM-04 nesou stav `CORROBORATED`.\n\n**Limity**: zrušení stíhání je rozhodnutím státního zástupce, ne soudu;\ncitovaný zdroj neuvádí žádné rozhodnutí o vině ani nevině."
+    }
+  ],
+  "order": 4
+}

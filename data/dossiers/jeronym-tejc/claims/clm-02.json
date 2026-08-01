@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-02",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "text": "Ministr spravedlnosti Jeroným Tejc (nominovaný hnutím ANO) 17. dubna 2026 oznámil, že kvůli zjištěním interního auditu k přijetí a prodeji bitcoinů darovaných resortu podá trestní oznámení. Jde o ohlášení podezření orgánům činným v trestním řízení — nikoli o obvinění jakékoli konkrétní osoby.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-03"
+    }
+  ],
+  "subjects": [
+    "tejc"
+  ],
+  "order": 2,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jeronym-tejc/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/gaps/GAP-02",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "title": "GAP-02 — Rozpor ve výpočtu přípustného schodku nebyl uzavřen",
+  "description": "Rada uvádí limit 247 miliard, ministerstvo 292 miliard; citované zdroje spor nerozhodly.",
+  "priority": "vysoká",
+  "checked": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-04"
+    }
+  ],
+  "subjects": [
+    "schillerova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Národní rozpočtová rada vypočítala maximální přípustný schodek na 247\nmiliard korun; ministerstvo financí tvrdí, že obranné výdaje 55 miliard\nodůvodňují limit 292 miliard\n([SRC-02](@/dossiers/alena-schillerova/sources/src-02.md)). Citované\nzdroje **spor nerozhodly** a dossier proto vede obě čísla vedle sebe.\n\nNejde o mezeru v tom smyslu, že by některá strana neuvedla důvod — obě\nsvůj výpočet zdůvodnily. Otevřené je, který výklad zákona o pravidlech\nrozpočtové odpovědnosti je správný, a to je otázka, kterou tento web\nnerozhoduje.\n\n**Podmínka uzavření**: autoritativní rozhodnutí nebo výklad (soud,\nÚstavní soud, závazné stanovisko), případně dohoda obou stran doložená\notevřeným zdrojem. Do té doby zůstává rozpor zaznamenaný, ne zamlčený."
+    }
+  ],
+  "order": 2
+}

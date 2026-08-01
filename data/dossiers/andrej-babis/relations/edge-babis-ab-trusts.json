@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/relations/edge-babis-ab-trusts",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-babis-ab-trusts",
+  "relationId": "edge-babis-ab-trusts",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/babis"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/ab-private-trusts"
+  },
+  "relationType": "HOLDS_INTEREST_IN",
+  "label": "akcie Agrofertu ve fondech 2/2017–2024/2025; poté návrat k přímému vlastnictví — majetková posloupnost, sama o sobě legální",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-16"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-28"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 21,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Status: nezávisle potvrzený fakt."
+    }
+  ]
+}

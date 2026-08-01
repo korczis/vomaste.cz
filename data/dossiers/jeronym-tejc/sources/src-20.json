@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-20",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-20",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "title": "SRC-20 — Echo24",
+  "description": "Komise řeší smrt Viktorky, žádá citlivý přístup. Ombudsman dětí promluvil o chybách systému",
+  "outlet": "Echo24",
+  "sourceType": "zpravodajství",
+  "url": "https://m.echo24.cz/a/HbqVH/deti-ochrana-viktorka-ospod-komise-mpsv-juchelka-marvanova-tejc-legislativa-benes-detsky-ombudsman",
+  "published": "2026-05-20",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-39"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-40"
+    }
+  ],
+  "subjects": [
+    "tejc"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Komise řeší smrt Viktorky, žádá citlivý přístup. Ombudsman dětí promluvil o chybách systému**\n\nPrvní zasedání Komise pro přezkum nepřirozených úmrtí dětí na MPSV pod vedením ministra Aleše Juchelky, členem je i dětský ombudsman Martin Beneš. Výstupem prvního jednání byl podnět ke kontrole postupů OSPOD ve Středočeském kraji a v Praze. Beneš varuje před předčasným hodnocením a upozorňuje na chybějící jednotné metodické vedení.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 20
+}

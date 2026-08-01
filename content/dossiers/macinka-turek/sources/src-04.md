@@ -1,4 +1,5 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-04 — Blesk.cz"
 description = "Macinkovo vyjádření bezprostředně po nehodě: „Nikdy se ho nevzdám, budu za něj bojovat!“"
 template = "dossier-source.html"
@@ -6,19 +7,14 @@ weight = 4
 aliases = ["/dossier/zdroje/src-04/"]
 
 [extra]
-subjects = ["macinka", "turek"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-04"
+view_model = "generated/views/dossiers/macinka-turek/sources/src-04.json"
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-04"
-outlet = "Blesk.cz"
-src_type = "zpravodajství (tabloid)"
-url = "https://www.blesk.cz/clanek/zpravy-politika/843922/macinka-brani-turka-po-bouracce-nikdy-se-ho-nevzdam-budu-za-nej-bojovat.html"
-retrieved = "2026-07-21"
-published = "2026-07-15"
-claims = ["CLM-13"]
 +++
-
 Blesk.cz je celostátní tabloidní deník — zpravodajský, ale s bulvárním
 formátem a titulkováním. To neznamená, že citovaný výrok je nepravdivý;
 znamená to jen, že tento zdroj je v registru veden jako "tabloid" (SRC-04),

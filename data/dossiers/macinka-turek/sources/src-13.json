@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-13",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-13",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-13 — Aktuálně.cz",
+  "description": "Výsledky Motoristů sobě ve volbách do Poslanecké sněmovny 2025 a rozdělení mandátů.",
+  "outlet": "Aktuálně.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://zpravy.aktualne.cz/domaci/turek-a-jeho-lid-dojeli-do-snemovny-kdo-z-motoristu-mandat/r~9eb44c0ea14b11f0bf960cc47ab5f122/",
+  "published": "2025-10-05",
+  "retrieved": "2026-07-21",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-03"
+    }
+  ],
+  "subjects": [
+    "macinka",
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Aktuálně.cz (vydavatel Economia) přináší přehled toho, kteří konkrétní\nkandidáti Motoristů sobě získali mandát v Poslanecké sněmovně po volbách\n2025, včetně počtu preferenčních hlasů jednotlivých kandidátů.\n\nSlouží jako druhé nezávislé potvrzení volebních výsledků vedle SRC-11 —\nobě redakce (Seznam Zprávy, Economia/Aktuálně.cz) jsou na sobě redakčně\nnezávislé."
+    }
+  ],
+  "order": 13
+}

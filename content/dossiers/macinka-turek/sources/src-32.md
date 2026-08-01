@@ -1,4 +1,5 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-32 — Deník.cz (VLTAVA LABE MEDIA)"
 description = "Turek v roce 2017 nechal na autě zaměstnance saúdské ambasády kresbu oprátky a nábojnici."
 template = "dossier-source.html"
@@ -6,19 +7,14 @@ weight = 32
 aliases = ["/dossier/zdroje/src-32/"]
 
 [extra]
-subjects = ["turek"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-32"
+view_model = "generated/views/dossiers/macinka-turek/sources/src-32.json"
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-32"
-outlet = "Deník.cz (VLTAVA LABE MEDIA)"
-src_type = "zpravodajství"
-url = "https://www.denik.cz/z_domova/filip-turek-vyhrozovani-saudskoarabska-ambasada.html"
-retrieved = "2026-07-22"
-published = "2025-10-15"
-claims = ["CLM-28", "CLM-29"]
 +++
-
 Retrospektivní článek (publikován 2025, k události z 2017): Filip Turek
 nakreslil oprátku na papír a nechal ji za stěračem auta patřícího
 zaměstnanci saúdskoarabské ambasády ve sdílených garážových prostorách;

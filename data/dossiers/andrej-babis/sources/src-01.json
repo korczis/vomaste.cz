@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-01 — Česká justice",
+  "description": "Vrchní soud v Praze 23. 6. 2025 podruhé zrušil zprošťující rozsudek v kauze Čapí hnízdo a vrátil věc městskému soudu se závazným právním názorem.",
+  "outlet": "Česká justice",
+  "sourceType": "odborné právní zpravodajství",
+  "url": "https://www.ceska-justice.cz/2025/06/babis-je-vinen-trva-na-svem-zalobce-obhajce-varuje-pred-porusenim-ustavy/",
+  "published": "2025-06-23",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-03"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Česká justice dne 23. 6. 2025 informovala, že Vrchní soud v Praze zrušil\nzprošťující rozsudek Městského soudu v Praze z února 2024 nad Andrejem\nBabišem a Janou Nagyovou — podle článku **již podruhé**, kdy odvolací\nsoud zprošťující verdikt v této kauze ruší.\n\nKlíčové procesní rozlišení, které článek výslovně uvádí a které je pro\ncelý tento dossier určující: odvolací soud dospěl k závěru, že\nzjištěné jednání naplňuje znaky dvou trestných činů (dotační podvod a\npoškození finančních zájmů EU), **ale sám vinu vyslovit nemůže** —\ncitace z článku: „Odvolací soud může věc pouze vrátit soudu prvního\nstupně… se svým závazným právním názorem.\" Předsedající soudce označil\nzprošťující rozsudek za nesrozumitelný vzhledem k dokazování. Věc se\nvrací Městskému soudu v Praze. **Oba obžalovaní vinu odmítají.**\n\n**Poznámka k procesní přesnosti (závazná pro celý dossier)**: zrušené\nzproštění **není odsouzení**. Závazný právní názor odvolacího soudu\nzavazuje soud prvního stupně k novému posouzení, nerozhoduje o vině.\nK datu poslední kontroly nebyl v tomto dossieru doložen žádný pravomocný\nvýsledek — viz [GAP-01](@/dossiers/andrej-babis/gaps/gap-01.md), která\nvede aktuální procesní stav jako neuzavřený a otevřeně přiznává, proč ho\nnebylo možné z tohoto zdroje doplnit."
+    }
+  ],
+  "order": 1
+}

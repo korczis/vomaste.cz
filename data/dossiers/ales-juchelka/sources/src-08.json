@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-08",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-08",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
+  },
+  "title": "SRC-08 — ČeskéNoviny.cz (ČTK)",
+  "description": "STAN podalo trestní oznámení kvůli případnému střetu zájmů u dotací z EU na MPSV",
+  "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceType": "zpravodajství",
+  "url": "https://www.ceskenoviny.cz/zpravy/stan-podalo-trestni-oznameni-kvuli-pripadnemu-stretu-zajmu-u-dotaci-z-eu-na-mpsv/2854226",
+  "published": "2026-07-23",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-22"
+    }
+  ],
+  "subjects": [
+    "juchelka"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**STAN podalo trestní oznámení kvůli případnému střetu zájmů u dotací z EU na MPSV**\n\nOpoziční hnutí STAN podalo trestní oznámení kvůli případnému střetu zájmů při vyplácení peněz z NPO na MPSV; oznámil to předseda Vít Rakušan na síti X. Zmíněno, že do konfliktu se zákonem by se kvůli neoznámení a nevymáhání mohli dostat i ministerští úředníci.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 8
+}

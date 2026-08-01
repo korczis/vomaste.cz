@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-09",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-09",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "title": "SRC-09 — Zdravotnický deník",
+  "description": "Vůbec jsem to netušil. Vojtěch odmítl, že by luxusní zdravotní benefity nahrály Babišovi",
+  "outlet": "Zdravotnický deník",
+  "sourceType": "zpravodajství",
+  "url": "https://www.zdravotnickydenik.cz/2026/06/vojtech-pred-poslanci-odrazel-utok-kvuli-zdravotnim-benefitum/",
+  "published": "2026-06-04",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-14"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-15"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Vůbec jsem to netušil. Vojtěch odmítl, že by luxusní zdravotní benefity nahrály Babišovi**\n\nVojtěch ve Sněmovně hájil chystané zrušení limitu 50 000 Kč pro daňové osvobození zdravotních benefitů. Uvedl, že „vůbec netušil“, že by kliniky z holdingu spojeného s Babišem prováděly onkologické prohlídky. Šebelová (STAN) se ptala, zda změna není „šita na míru“ těmto klinikám. Vojtěch slíbil nediskriminační nastavení s volbou poskytovatele.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 9
+}

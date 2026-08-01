@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-08",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-08",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "text": "Červený byl při nástupu do vlády jednatelem a spolumajitelem podcastové společnosti Extreme BFG Cast; zákon o střetu zájmů veřejným funkcionářům působení ve vedení firem zakazuje a ukládá ukončit je nejpozději do 30 dnů od nástupu do funkce.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-06"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "order": 8,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/igor-cerveny/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

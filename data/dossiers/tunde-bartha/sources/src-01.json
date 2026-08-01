@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tunde-bartha"
+  },
+  "title": "SRC-01 — Hospodářské noviny (ČTK)",
+  "description": "Zpráva ČTK z 24. 6. 2026: rada MČ Praha 3 rozhodla o výpovědi z nájmu obecního bytu manželům Barthovým pro přenechání bytu třetím osobám bez souhlasu pronajímatele.",
+  "outlet": "Hospodářské noviny",
+  "sourceType": "celostátní zpravodajství (agenturní)",
+  "url": "https://domaci.hn.cz/c1-67896320-zije-v-pruhonicich-byt-prenechala-pribuznym-praha-3-vypovedela-babisove-sefce-uradu-vlady-smlouvu-na-najem-mestskeho-bytu",
+  "published": "2026-06-24",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-07"
+    }
+  ],
+  "subjects": [
+    "bartha"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Hospodářské noviny dne 24. 6. 2026 přinesly zprávu ČTK, podle níž rada\nměstské části Praha 3 rozhodla o výpovědi z nájmu obecního bytu na\nŽižkově s tříměsíční výpovědní dobou. Jako důvod rada podle článku\nuvedla „přenechání předmětu nájmu třetím osobám bez předchozího souhlasu\npronajímatele\".\n\nÚdaje o bytu podle článku: rozloha přibližně 70 m², nájemné přibližně\n11 000 Kč měsíčně. Nájemci byt získali v roce 2004 směnou za jiný obecní\nbyt v Praze 8.\n\nPodle článku byla Tünde Bartha v bytě vedena jako nájemkyně, fakticky\njej však obývaly dvě studentky ze Slovenska, příbuzné rodiny. Bartha\npodle článku uvedla, že bydlí v Průhonicích v objektu společnosti Imoba,\nkterá patří premiéru Andreji Babišovi.\n\nČlánek uvádí, že vyjádření Barthy ČTK v době vydání teprve zjišťovala.\nČlánek ji označuje jako šéfku Úřadu vlády.\n\n**Poznámka k procesní přesnosti a hranicím**: rozhodnutí rady městské\nčásti je **smluvní krok pronajímatele**, nikoli rozhodnutí soudu a nikoli\nkonstatování protiprávního jednání. Citovaný článek neuvádí, že by\nBarthové bylo vytýkáno porušení zákona, ani že by v její věci probíhalo\ntrestní či správní řízení; dossier proto nic takového netvrdí a tvrdit\nnebude. Osoby, které byt obývaly, jsou soukromé osoby — v dossieru se\nnejmenují, i kdyby je citovaný zdroj jmenoval. Totéž platí pro\nspolunájemce a rodinné příslušníky."
+    }
+  ],
+  "order": 1
+}

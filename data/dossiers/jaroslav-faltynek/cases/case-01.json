@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/case.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/cases/CASE-01",
+  "@type": "vomaste:Case",
+  "recordType": "case",
+  "identifier": "CASE-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek"
+  },
+  "title": "Zrušené trestní stíhání v kauze Čapí hnízdo",
+  "summary": "Státní zástupce v květnu 2018 zrušil trestní stíhání Jaroslava Faltýnka poté, co vyhověl jeho stížnosti proti obvinění. Rozhodl státní zástupce, ne soud — nejde o rozhodnutí o vině ani o nevině. Faltýnek nebyl odsouzen a před soud jako obžalovaný nešel.",
+  "period": "2018",
+  "status": "status-single",
+  "statusLabel": "Stíhání zrušeno 2018",
+  "anchor": "kauza-zrusene-stihani",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-04"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-04"
+    }
+  ],
+  "subjects": [
+    "faltynek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu\ndossieru](@/dossiers/jaroslav-faltynek/_index.md#kauza-zrusene-stihani)."
+    }
+  ],
+  "order": 1
+}

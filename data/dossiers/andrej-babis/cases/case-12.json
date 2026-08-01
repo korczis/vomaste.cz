@@ -1,0 +1,54 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/case.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/cases/CASE-12",
+  "@type": "vomaste:Case",
+  "recordType": "case",
+  "identifier": "CASE-12",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SZIF: 21 ukončených projektů za 357 milionů",
+  "summary": "SZIF v roce 2019 kvůli auditu Evropské komise pozastavil firmám skupiny 28 projektů za více než půl miliardy korun a u 21 z nich za zhruba 357 milionů počátkem roku 2023 ukončil administraci; firmy se bránily žalobami. Městský soud v Praze v dubnu 2025 žaloby čtyř firem zamítl, Nejvyšší správní soud už v lednu 2025 vyhověl kasačním stížnostem SZIF a v srpnu 2025 zamítl stížnost Sady CZ se závěrem, že rozhodný je stav v době podání žádosti. Vše jsou správní spory o nárok na dotaci — o trestní odpovědnosti kohokoli nerozhodují.",
+  "period": "2019–2025",
+  "status": "status-disputed",
+  "statusLabel": "Správní spory o nárok na dotace, ne o vině",
+  "anchor": "kauza-szif-projekty",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-62"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-63"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-64"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-65"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-41"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-42"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-43"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-45"
+    }
+  ],
+  "subjects": [],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Plné znění, zdroje a kontext tohoto případu jsou v [hlavním přehledu\ndossieru](@/dossiers/andrej-babis/_index.md#kauza-szif-projekty)."
+    }
+  ],
+  "order": 12
+}

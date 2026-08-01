@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-12",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-12",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "text": "Poslanec Martin Kupka (ODS) Havlíčkovu novelu kritizoval slovy „Je tam několik nášlapných min, a to velmi vážných“ a „Vytvoříte centrální úřad, ale nebude v něm mít kdo pracovat“; v dubnu 2026 označil týdenní lhůtu pro poslance u úpravy měnící téměř 50 zákonů za „naprosto nereálnou“.",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-08"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "order": 12,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/karel-havlicek/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

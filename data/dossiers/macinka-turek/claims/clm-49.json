@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-49",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-49",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "text": "K odložení věci pro promlčení dozorující státní zástupce Jan Vychyta uvedl, že k danému skutku došlo a že by byl trestným činem, ale trestní odpovědnost zanikla promlčením; policie podle citovaného zdroje zjištění Deníku N nezpochybnila. Turek autorství konkrétního komentáře odmítal, za některé jiné výroky se omluvil",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-56"
+    }
+  ],
+  "subjects": [
+    "turek"
+  ],
+  "order": 49,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#kauza-z-rijna-2025-smazane-prispevky-na-facebooku)."
+    }
+  ]
+}

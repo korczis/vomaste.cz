@@ -1,176 +1,20 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Zuzana Mrázová"
 description = "Neutrální, zdroji doložený přehled o osobě Zuzana Mrázová — ministryně pro místní rozvoj. Autorizovaný rozsah dle AUTH-2026-07-30-P; registry se teprve plní."
 template = "entity-dossier.html"
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+view_model = "generated/views/dossiers/zuzana-mrazova/overview.json"
 dossier = "zuzana-mrazova"
-dossier_title = "Zuzana Mrázová"
+record_type = "dossier"
 dossier_type = "entity"
-canonical_dossier = "zuzana-mrazova"
-subject = "mrazova"
 lang = "cs"
 seo_type = "ProfilePage"
-subject_entities = ["mrazova"]
-subjects = ["Zuzana Mrázová"]
 updated = "2026-07-30"
 reviewed_at = "2026-07-30"
-
-
-[[extra.timeline]]
-date = "2026-05"
-title = "Medializace obecního bytu v Bílině a černých staveb; video Mrázové (kritika „Tady nejste v Severní Koreji“); tisková konference 7. 5. s omluvou za „nedůslednost“; výzvy opozice k rezignaci a podpora premiéra Babiše"
-anchor = "kauza-pokuta-stret-zajmu"
-dot = "dot-fact"
-subjects = ["mrazova"]
-
-[[extra.timeline]]
-date = "2026-05"
-title = "21. 5. resort spravedlnosti podal přestupkovému úřadu podnět k prověření nesrovnalostí v majetkovém přiznání (procesní krok)"
-anchor = "kauza-pokuta-stret-zajmu"
-dot = "dot-fact"
-subjects = ["mrazova"]
-
-[[extra.timeline]]
-date = "2026-06"
-title = "3. 6. Hřib ve sněmovně předal Mrázové klíčenku a vyzval k doplacení cca 2 milionů Kč za zvýhodněný nájem"
-anchor = "kauza-pokuta-stret-zajmu"
-dot = "dot-fact"
-subjects = ["mrazova"]
-
-[[extra.timeline]]
-date = "2026-07"
-title = "25. 7. Seznam Zprávy informovaly, že mostecký magistrát uložil Mrázové NEPRAVOMOCNOU pokutu za porušení zákona o střetu zájmů; ministryně podle mluvčí resortu pokutu zaplatí a neodvolá se"
-anchor = "kauza-pokuta-stret-zajmu"
-dot = "dot-fact"
-subjects = ["mrazova"]
-[[extra.timeline]]
-date = "2021-01"
-title = "Mrázová získává darem polovinu parcely v Bílině od tehdejšího manžela Romana Schwarze"
-anchor = "kauza-cerne-stavby"
-dot = "dot-fact"
-subjects = ["mrazova"]
-
-[[extra.timeline]]
-date = "2022-01"
-title = "Stává se výlučnou vlastnicí parcely; současně je starostkou Bíliny s gescí územního plánování"
-anchor = "kauza-cerne-stavby"
-dot = "dot-fact"
-subjects = ["mrazova"]
-
-[[extra.timeline]]
-date = "2026-03"
-title = "K 31. 3. 2026 končí nájemní smlouva na obecní byt 130 m² na náměstí v Bílině; Mrázová se stěhuje do jiného městského bytu"
-anchor = "kauza-obecni-byt"
-dot = "dot-fact"
-subjects = ["mrazova"]
-
-[[extra.timeline]]
-date = "2026-04"
-title = "Seznam Zprávy zveřejňují nepovolené stavby na pozemku vedeném jako lesní plocha; Hřib vyzývá k rezignaci, Mrázová výzvy odmítá"
-anchor = "kauza-cerne-stavby"
-dot = "dot-fact"
-subjects = ["mrazova"]
-
-[[extra.timeline]]
-date = "2026-05"
-title = "Starosta Matuška potvrzuje, že věc bude řešit stavební úřad; na tiskové konferenci Mrázová přiznává rodinnou půjčku 500 tis. Kč"
-anchor = "kauza-cerne-stavby"
-dot = "dot-fact"
-subjects = ["mrazova"]
-
-[[extra.timeline]]
-date = "2026-05"
-title = "Resort spravedlnosti podává 21. 5. přestupkovému úřadu podnět k prověření nesrovnalostí v majetkovém oznámení (procesní krok)"
-anchor = "kauza-rezignace-podnet"
-dot = "dot-fact"
-subjects = ["mrazova"]
-
-[[extra.timeline]]
-date = "2026-05"
-title = "Richterová interpeluje 28. 5. premiéra k obecnímu bytu a navrhuje tzv. „lex Mrázová“; Babiš ministryni hájí"
-anchor = "kauza-obecni-byt"
-dot = "dot-fact"
-subjects = ["mrazova"]
-
-[[extra.timeline]]
-date = "2026-06"
-title = "Vedoucí bílinského stavebního úřadu Jedlička se vylučuje pro střet zájmů, případ přebírá stavební úřad v Mostě; kraj upozorňuje Bílinu na možnou nečinnost"
-anchor = "kauza-cerne-stavby"
-dot = "dot-fact"
-subjects = ["mrazova"]
-
-[[extra.timeline]]
-date = "2026-06"
-title = "Mrázová 17. 6. rezignuje na mandát zastupitelky Bíliny s odkazem na časové zaneprázdnění"
-anchor = "kauza-obecni-byt"
-dot = "dot-fact"
-subjects = ["mrazova"]
-
-[[extra.timeline]]
-date = "2026-07"
-title = "Sněmovna 10. 7. schvaluje novelu stavebního zákona (89 hlasů) včetně širšího dodatečného povolování nepovolených staveb"
-anchor = "kauza-cerne-stavby"
-dot = "dot-fact"
-subjects = ["mrazova"]
-
-[[extra.timeline]]
-date = "2026-07"
-title = "Při interpelacích 2. 7. útočí na Mrázovou pirátští poslanci; Babiš v písemné odpovědi odmítá důvod k rezignaci"
-anchor = "kauza-rezignace-podnet"
-dot = "dot-fact"
-subjects = ["mrazova"]
-
-[[extra.timeline]]
-date = "2026-07"
-title = "Mostecký magistrát ukládá 25. 7. nepravomocnou pokutu za přestupek podle zákona o střetu zájmů (výše nezveřejněna)"
-anchor = "kauza-pokuta-stret-zajmu"
-dot = "dot-fact"
-subjects = ["mrazova"]
-
-[[extra.cases]]
-anchor = "kauza-pokuta-stret-zajmu"
-period = "2026"
-title = "Nepravomocná pokuta za střet zájmů"
-status = "status-single"
-label = "Sledované téma"
-summary = "Nepravomocná pokuta za střet zájmů — viz tvrzení CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07, CLM-08."
-claims = ["CLM-20", "CLM-21", "CLM-22", "CLM-23"]
-subjects = ["mrazova"]
-
-[[extra.cases]]
-anchor = "kauza-obecni-byt"
-period = "2026"
-title = "Obecní byt v Bílině"
-status = "status-single"
-label = "Sledované téma"
-summary = "Obecní byt v Bílině — viz tvrzení CLM-09, CLM-10, CLM-11."
-claims = ["CLM-27", "CLM-28", "CLM-29", "CLM-30", "CLM-31", "CLM-32", "CLM-33", "CLM-34", "CLM-54", "CLM-55"]
-subjects = ["mrazova"]
-
-[[extra.cases]]
-anchor = "kauza-cerne-stavby"
-period = "2026"
-title = "Stavby v rozporu s územním plánem"
-status = "status-single"
-label = "Sledované téma"
-summary = "Stavby v rozporu s územním plánem — viz tvrzení CLM-12, CLM-13, CLM-14, CLM-15."
-claims = ["CLM-35", "CLM-36", "CLM-37", "CLM-38", "CLM-39", "CLM-40", "CLM-41", "CLM-42", "CLM-43", "CLM-44", "CLM-45", "CLM-46", "CLM-47", "CLM-48", "CLM-49", "CLM-50"]
-subjects = ["mrazova"]
-
-[[extra.cases]]
-anchor = "kauza-rezignace-podnet"
-period = "2026"
-title = "Výzvy k rezignaci a podnět resortu spravedlnosti"
-status = "status-single"
-label = "Sledované téma"
-summary = "Výzvy k rezignaci a podnět resortu spravedlnosti — viz tvrzení CLM-16, CLM-17, CLM-18, CLM-19."
-claims = ["CLM-24", "CLM-25", "CLM-26", "CLM-51", "CLM-52", "CLM-53", "CLM-56"]
-subjects = ["mrazova"]
-
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-P"]
 +++
 Zuzana Mrázová zastává funkci ministryně pro místní rozvoj ve třetí vládě Andreje Babiše (viz
 `data/government.toml`, ověřeno proti oficiálnímu seznamu členů vlády).

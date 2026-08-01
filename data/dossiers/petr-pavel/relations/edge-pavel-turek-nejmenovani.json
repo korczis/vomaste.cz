@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/petr-pavel/relations/edge-pavel-turek-nejmenovani",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-pavel-turek-nejmenovani",
+  "relationId": "edge-pavel-turek-nejmenovani",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/petr-pavel"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/pavel"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/turek"
+  },
+  "relationType": "DENIED",
+  "label": "odmítl jmenovat ministrem životního prostředí (leden 2026)",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-pavel/claims/CLM-01"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-pavel/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-pavel/sources/SRC-02"
+    }
+  ],
+  "subjects": [
+    "pavel"
+  ],
+  "directed": true,
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam vztahu edge-pavel-turek-nejmenovani —\ntyp vztahu, podporující tvrzení a zdroje v tabulce výše jsou úplné. Status\nCORROBORATED znamená, že vztah je doložen dvěma vzájemně nezávislými\nzdroji. Hlavní stránka dossieru vykresluje interaktivní graf ze stejných\ndat."
+    }
+  ]
+}

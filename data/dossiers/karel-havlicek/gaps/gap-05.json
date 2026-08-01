@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/gaps/GAP-05",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-05",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "title": "GAP-05 — Není doloženo, zda a kolik peněz stát z dotace na toustovou linku k roku 2026 reálně vymoh",
+  "description": "Žádný z dostupných a otevřených zdrojů neuvádí aktuální stav peněžního vymáhání za rok 2025–2026; články z roku 2026 se soustředí výhradně n",
+  "priority": "střední",
+  "checked": "2026-07-30",
+  "claims": [],
+  "subjects": [
+    "havlicek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Není doloženo, zda a kolik peněz stát z dotace na toustovou linku k roku 2026 reálně vymohl (exekuce, platba, splátky), ani zda věc řeší finanční úřad.\n\n**Proč je to mezera**: Žádný z dostupných a otevřených zdrojů neuvádí aktuální stav peněžního vymáhání za rok 2025–2026; články z roku 2026 se soustředí výhradně na trestní řízení a zajištěný majetek. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+    }
+  ],
+  "order": 5
+}

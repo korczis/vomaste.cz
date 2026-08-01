@@ -1,4 +1,5 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-21 — Deník.cz (VLTAVA LABE MEDIA)"
 description = "Motoristé sobě podali trestní oznámení na Deník N kvůli článku o Turkových příspěvcích."
 template = "dossier-source.html"
@@ -6,19 +7,14 @@ weight = 21
 aliases = ["/dossier/zdroje/src-21/"]
 
 [extra]
-subjects = ["turek"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-21"
+view_model = "generated/views/dossiers/macinka-turek/sources/src-21.json"
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-21"
-outlet = "Deník.cz (VLTAVA LABE MEDIA)"
-src_type = "zpravodajství"
-url = "https://www.denik.cz/z_domova/motoriste-filip-turek-rasisticke-vyroky-trestni-oznameni.html"
-retrieved = "2026-07-22"
-published = "2025-10-12"
-claims = ["CLM-19"]
 +++
-
 Deník.cz referuje, že hnutí Motoristé sobě (za stranu vystupoval předseda
 Petr Macinka) oznámilo podání trestního oznámení na redakci Deníku N a
 autory článku o kontroverzních výrocích čestného prezidenta strany Filipa

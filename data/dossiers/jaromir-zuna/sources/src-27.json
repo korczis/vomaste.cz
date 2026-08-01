@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-27",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-27",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "title": "SRC-27 — Blesk.cz",
+  "description": "Pavel jmenoval Hlaváče náčelníkem generálního štábu a rypnul si do Babišovy vlády",
+  "outlet": "Blesk.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://www.blesk.cz/clanek/zpravy-politika/842795/pavel-jmenoval-hlavace-nacelnikem-generalniho-stabu-a-rypnul-si-do-babisovy-vlady.html",
+  "published": "2026-06-30",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-20"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-22"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-27"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-28"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-29"
+    }
+  ],
+  "subjects": [
+    "zuna"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Pavel jmenoval Hlaváče náčelníkem generálního štábu a rypnul si do Babišovy vlády**\n\nPrezidentova kritika slabé účasti ústavních činitelů na ceremoniálu a přístupu vlády k obraně, poznámka k problémům v komunikaci mezi MO a armádou; Zůna byl přítomen, ale pro Hlaváče nehlasoval.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 27
+}

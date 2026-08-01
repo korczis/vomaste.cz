@@ -1,4 +1,5 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-27 — Hlídač státu (Macinka, funkce)"
 description = "Macinka byl 2025–2026 zároveň ministrem zahraničí, místopředsedou vlády a dočasně pověřen řízením ŽP."
 template = "dossier-source.html"
@@ -6,19 +7,14 @@ weight = 27
 aliases = ["/dossier/zdroje/src-27/"]
 
 [extra]
-subjects = ["macinka"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-27"
+view_model = "generated/views/dossiers/macinka-turek/sources/src-27.json"
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-27"
-outlet = "Hlídač státu"
-src_type = "veřejný rejstřík / transparentní databáze"
-url = "https://www.hlidacstatu.cz/osoba/funkce/petr-macinka"
-retrieved = "2026-07-22"
-claims = ["CLM-24"]
-family = "hlidac-statu"
 +++
-
 Přehled veřejných a politických funkcí Petra Macinky podle Hlídače
 státu, použitý k upřesnění sekce "Kdo" v hlavním dossieru (dříve jen
 obecné „člen vlády"):

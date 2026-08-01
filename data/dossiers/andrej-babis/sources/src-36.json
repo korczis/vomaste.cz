@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-36",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-36",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-36 — Ministerstvo průmyslu a obchodu: MPO přistoupí k odnětí dotace pro Pekárnu Zelená louka (21. 3. 2022)",
+  "description": "Tisková zpráva MPO: zahájení odnětí stomilionové dotace; podle auditorů EK projekt nesplňoval kritéria inovativnosti programu INOVACE (OP PIK).",
+  "outlet": "Ministerstvo průmyslu a obchodu (MPO)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://mpo.gov.cz/cz/rozcestnik/pro-media/tiskove-zpravy/mpo-pristoupi-k-odneti-dotace-pro-pekarnu-zelena-louka--266490/",
+  "published": "2022-03-21",
+  "retrieved": "2026-08-01",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-55"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tisková zpráva Ministerstva průmyslu a obchodu oznamuje, že resort\npřistoupí k odnětí dotace na projekt „Inovační linka na výrobu\ntoastového chleba“ společnosti Pekárna Zelená louka; výše dotace\ndosahuje sto milionů korun. Evropští auditoři podle zprávy dospěli\nk závěru, že projekt nevyhovuje kritériím programu INOVACE — Inovační\nprojekt OP PIK, protože se zaměřuje na produkt, jehož výroba již\nv rámci skupiny probíhá. Ministr Jozef Síkela uvádí, že posudky\nposkytla Komise v reakci na jeho dopis; náměstek Marian Piecha\nupozorňuje, že proces odnětí bude dlouhý a komplikovaný.\n\n**Poznámka**: primární úřední zdroj — dokládá krok a odůvodnění\nposkytovatele dotace, ne nezávislé novinářské ověření ani rozhodnutí\nsoudu o čemkoli.\n\n**Nezávislost**: vůči [SRC-37](@/dossiers/andrej-babis/sources/src-37.md)\n(ČTK) jde o jinou vydavatelskou rodinu — společně unesou stav\nCORROBORATED. Otevřeno a přečteno 2026-08-01."
+    }
+  ],
+  "order": 36
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-23",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-23",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
+  },
+  "text": "Podle obžaloby měl obsah dvou předvolebních plakátů z kampaně před krajskými a senátními volbami roku 2024 „vzbuzovat či posilovat negativní emoce nenávistného charakteru vůči migrantům negroidní rasy a romskému etniku“; jde o formulaci obžaloby.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-16"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-17"
+    }
+  ],
+  "subjects": [
+    "okamura"
+  ],
+  "order": 23,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/tomio-okamura/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

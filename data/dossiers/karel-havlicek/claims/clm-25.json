@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-25",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-25",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "text": "Dne 8. června 2026 podala NCOZ státnímu zástupci návrh na obžalobu Pekárny Zelená louka a dvou fyzických osob; státní zástupce Adam Bašný potvrdil: „Spisový materiál s návrhem policejního orgánu NCOZ na podání obžaloby mi byl řádně předložen.“",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-14"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "order": 25,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/karel-havlicek/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

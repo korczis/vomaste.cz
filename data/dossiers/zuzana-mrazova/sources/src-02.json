@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "title": "SRC-02 — Seznam Zprávy",
+  "description": "Mrázová utajuje pokutu za nepřiznanou půjčku. „S vámi se bavit nebudu,“ říká",
+  "outlet": "Seznam Zprávy",
+  "sourceType": "zpravodajství",
+  "url": "https://www.seznamzpravy.cz/clanek/domaci-kauzy-mrazova-utajuje-pokutu-za-nepriznanou-pujcku-s-vami-se-bavit-nebudu-rika-311653",
+  "published": "2026-07-25",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-08"
+    }
+  ],
+  "subjects": [
+    "mrazova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Mrázová utajuje pokutu za nepřiznanou půjčku. „S vámi se bavit nebudu,“ říká**\n\nPůvodní zdroj kauzy pokuty: Magistrát města Most uložil ministryni Mrázové nepravomocnou pokutu za porušení zákona o střetu zájmů kvůli neuvedení půlmilionové rodinné půjčky v majetkovém přiznání. Podnět podalo ministerstvo spravedlnosti. Výše pokuty nezveřejněna (zákonné maximum 50 000 Kč). Na dotazy redakce ministryně desetkrát během šesti minut zopakovala „S vámi já se bavit nebudu“. Podle mluvčí ministerstva si chybu uvědomuje, pokutu zaplatí a neodvolá se.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 2
+}

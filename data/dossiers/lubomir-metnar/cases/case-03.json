@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/case.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/cases/CASE-03",
+  "@type": "vomaste:Case",
+  "recordType": "case",
+  "identifier": "CASE-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar"
+  },
+  "title": "Zdůvodnění ministerstva vnitra",
+  "summary": "Zdůvodnění ministerstva vnitra — viz tvrzení CLM-11, CLM-13, CLM-14, CLM-15, CLM-16, CLM-17.",
+  "period": "2026",
+  "status": "status-single",
+  "statusLabel": "Sledované téma",
+  "anchor": "kauza-zduvodneni-metnar",
+  "claims": [],
+  "sources": [],
+  "subjects": [
+    "metnar"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu\ndossieru](@/dossiers/lubomir-metnar/_index.md#kauza-zduvodneni-metnar)."
+    }
+  ],
+  "order": 3
+}

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/relations/edge-cerveny-mzp2026",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-cerveny-mzp2026",
+  "relationId": "edge-cerveny-mzp2026",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/cerveny"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/mzp2026"
+  },
+  "relationType": "APPOINTED_AS",
+  "label": "jmenován ministrem (nahradil Macinku, 23. 2. 2026)",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-43"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-49"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-50"
+    }
+  ],
+  "subjects": [
+    "macinka"
+  ],
+  "directed": true,
+  "order": 22,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam vztahu edge-cerveny-mzp2026 — typ vztahu, podporující tvrzení a zdroje v tabulce výše jsou úplné. Status FAKT znamená, že vztah je doložen nezávisle potvrzenými zdroji, ne jen tvrzením jedné strany. Hlavní stránka dossieru vykresluje interaktivní graf ze stejných dat."
+    }
+  ]
+}

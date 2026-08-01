@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-27",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-27",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-27 — ČTK (Deník.cz): Vrchní soud podruhé zrušil zprošťující rozsudek nad Babišem a Nagyovou (23. 6. 2025)",
+  "description": "Agenturní zpravodajství ČTK nezávisle potvrzuje zrušení zprošťujícího rozsudku Vrchním soudem v Praze 23. 6. 2025 — druhý nezávislý zdroj vedle Česká justice (SRC-01).",
+  "outlet": "ČTK (Deník.cz)",
+  "sourceFamily": "ctk",
+  "sourceType": "agenturní zpravodajství",
+  "url": "https://www.denik.cz/krimi/capi-hnizdo-vrchni-soud-andrej-babis-20250623.html",
+  "published": "2025-06-23",
+  "retrieved": "2026-07-31",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Agenturní zpráva ČTK (převzatá Deník.cz) dne 23. 6. 2025, nezávisle na\nČeská justice (SRC-01): „Odvolací senát zrušil rozsudek, kterým nižší\nsoud loni v únoru osvobodil\" Babiše a Nagyovou v kauze Čapí hnízdo.\n\n**Nezávislost**: ČTK je samostatná zpravodajská organizace, ne stejná\nredakce ani agenturní rodina jako Česká justice (SRC-01) — obě nezávisle\npotvrzují tutéž veřejnou skutečnost (zrušení zprošťujícího rozsudku\nVrchním soudem). Proto CLM-01 nese stav `CORROBORATED`.\n\n**Limity**: jde o totéž jako SRC-01 popisuje procesní krok, ne rozsudek\no vině — zrušené zproštění není odsouzení."
+    }
+  ],
+  "order": 27
+}

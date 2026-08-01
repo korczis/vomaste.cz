@@ -1,23 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-37 — ČeskéNoviny.cz (ČTK): MPO odebere pekárně Agrofertu dotaci na linku na toustový chléb (21. 3. 2022)"
 description = "ČTK: MPO odebere stomilionovou dotaci; Komise již dříve rozhodla, že vyplacených 100 milionů korun státu neproplatí — peníze šly z českého rozpočtu."
 template = "dossier-source.html"
 weight = 37
 
 [extra]
-subjects = ["babis"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-37"
+view_model = "generated/views/dossiers/andrej-babis/sources/src-37.json"
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-37"
-outlet = "ČeskéNoviny.cz (ČTK)"
-src_type = "zpravodajství"
-url = "https://www.ceskenoviny.cz/zpravy/mpo-odebere-pekarne-agrofertu-dotaci-na-linku-na-toustovy-chleb/2180664"
-published = "2022-03-21"
-retrieved = "2026-08-01"
-claims = ["CLM-55", "CLM-56"]
 +++
-
 Agenturní zpráva ČTK: Ministerstvo průmyslu a obchodu odebere firmě
 Penam ze skupiny Agrofert stomilionovou dotaci na linku na výrobu
 toustového chleba poté, co od Evropské komise získalo podklady

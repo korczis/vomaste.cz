@@ -1,22 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-01 — Vláda ČR (oficiální profil)"
 description = "Oficiální profil členky vlády: funkce, vzdělání a přehled předchozích úřadů s daty."
 template = "dossier-source.html"
 weight = 1
 
 [extra]
-subjects = ["schillerova"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-01"
+view_model = "generated/views/dossiers/alena-schillerova/sources/src-01.json"
 dossier = "alena-schillerova"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-01"
-outlet = "Vláda České republiky (vlada.gov.cz)"
-src_type = "oficiální primární zdroj"
-url = "https://vlada.gov.cz/cz/clenove-vlady/alena-schillerova-167019/"
-retrieved = "2026-07-30"
-claims = ["CLM-01", "CLM-02"]
 +++
-
 Oficiální profil na webu Úřadu vlády. Uvádí funkci **místopředsedkyně
 vlády a ministryně financí** a doložený přehled kariéry: narozena 18. 3.
 1964; Ph.D. ze správního práva (1997–2000, Masarykova univerzita v Brně)

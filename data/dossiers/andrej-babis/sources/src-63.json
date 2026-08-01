@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-63",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-63",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-63 — ČT24: Seznam.cz podal žalobu na Babiše. „Dlouhodobě lžou,“ říká premiér (3. 3. 2026)",
+  "description": "Citace obou stran: Babišovo tvrzení o „odrbání“ státu o 900 milionů na srážkové dani přes Kypr; Seznam: státu nedluží žádnou daň.",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/seznamcz-podal-zalobu-na-babise-dlouhodobe-lzou-rika-premier-370902",
+  "published": "2026-03-03",
+  "retrieved": "2026-08-01",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-86"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-87"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "ČT24 3. 3. 2026 k žalobě Seznam.cz cituje obě strany. Seznam: „Pana\nBabiše jsme na konci roku vyzvali, aby svých útoků zanechal,“ a\npožadavky žaloby (smazání příspěvků, zákaz šíření, omluva). Babiš:\n„Pan Lukačovič odrbal český stát na srážkové dani o 900 milionů.\nUdělal to tím, že šestimiliardovou dividendu nechal protéct přes firmu\nna Kypru.“ Seznam odpovídá, že „státu nedluží daň z vyplacených podílů\nna zisku, ani žádnou jinou daň“. Babiš na žalobu reagoval, že média\nvydavatele dlouhodobě lžou a manipulují a že to může dokázat.\n\n**Poznámka k přesnosti**: výroky obou stran jsou vedeny jako citace —\ndoloženo je, že zazněly; jejich pravdivost je předmětem probíhajícího\nsporu, který tento dossier nerozhoduje.\n\n**Nezávislost**: druhá redakce vedle\n[SRC-62](@/dossiers/andrej-babis/sources/src-62.md); možný společný\nagenturní základ — viz poznámka tam. Otevřeno a přečteno 2026-08-01."
+    }
+  ],
+  "order": 63
+}

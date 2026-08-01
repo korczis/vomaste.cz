@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-18",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-18",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "title": "SRC-18 — Národní rozpočtová rada",
+  "description": "Vyjádření NRR k návrhu státního rozpočtu na rok 2026",
+  "outlet": "Národní rozpočtová rada",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://www.rozpoctovarada.cz/publikace/vyjadreni-nrr-k-navrhu-statniho-rozpoctu-na-rok-2026/",
+  "published": "2026-02-10",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-24"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-25"
+    }
+  ],
+  "subjects": [
+    "schillerova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Vyjádření NRR k návrhu státního rozpočtu na rok 2026**\n\nVyjádření konstatující přímý rozpor návrhu rozpočtu s aktuálním zněním zákona o pravidlech rozpočtové odpovědnosti. Rozpadá zákonný limit na základní rámec 237 mld. Kč (odpovídající strukturálnímu schodku 1,75 % HDP) plus navýšení o obranu 9 mld. Kč, tedy 246 mld. Kč, proti navrhovaným 310 mld. Kč. Odmítá argumentaci MF, že se limity nevztahují na rozpočet předkládaný opakovaně po vrácení Sněmovnou.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 18
+}

@@ -1,0 +1,49 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/bartha",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "bartha",
+  "entityId": "bartha",
+  "title": "Tünde Bartha",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "full",
+  "dossiers": [
+    "tunde-bartha"
+  ],
+  "routeAliases": [
+    "/dossiers/tunde-bartha/entities/bartha/"
+  ],
+  "order": 1,
+  "provenance": {
+    "discoveredAt": "2026-07-30",
+    "discoveredVia": [
+      "edge-bartha-vlada",
+      "edge-bartha-agrofert",
+      "edge-bartha-kampan",
+      "edge-bartha-agrofert-hungaria",
+      "edge-bartha-praha3",
+      "edge-bartha-imoba"
+    ],
+    "claimRefs": [
+      "CLM-07",
+      "CLM-08"
+    ],
+    "sourceRefs": [
+      "SRC-01",
+      "SRC-04"
+    ],
+    "depth": 0
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Hlavní subjekt autorizovaného dossieru. Viz plné znění a kontext v [hlavním přehledu](@/dossiers/tunde-bartha/_index.md#kdo)."
+    }
+  ]
+}

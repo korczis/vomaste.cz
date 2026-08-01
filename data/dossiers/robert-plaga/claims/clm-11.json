@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-11",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-11",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "text": "Na tiskové konferenci 9. března 2026 Plaga o opozičním návrhu na zákaz mobilů ve školách prohlásil: 'Je to tupý zákaz, který navíc obsahuje řadu legislativních chyb a možná i nepochopení té problematiky jako celku'; vláda tehdy k návrhu vydala nesouhlasné stanovisko.",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-06"
+    }
+  ],
+  "subjects": [
+    "plaga"
+  ],
+  "order": 11,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/robert-plaga/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

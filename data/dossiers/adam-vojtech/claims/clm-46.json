@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-46",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-46",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "text": "Jan Síla (SPD) kritizoval složení Vojtěchova vakcinačního týmu s tím, že si ministr přizval podle SPD zprofanované experty z doby covidové pandemie, jmenovitě bývalého ministra zdravotnictví Romana Prymulu.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-28"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "order": 46,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/adam-vojtech/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

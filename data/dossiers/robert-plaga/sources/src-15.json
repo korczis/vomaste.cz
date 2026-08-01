@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-15",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-15",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "title": "SRC-15 — ČT24 (Česká televize)",
+  "description": "Zákaz mobilů ve školách je třeba, míní část expertů, ombudsman řeší jen následek",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/zakaz-mobilu-ve-skolach-je-treba-mini-cast-expertu-ombudsman-resi-jen-nasledek-375843",
+  "published": "2026-07-24",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-39"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-41"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-44"
+    }
+  ],
+  "subjects": [
+    "plaga"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Zákaz mobilů ve školách je třeba, míní část expertů, ombudsman řeší jen následek**\n\nDětský ombudsman Martin Beneš zákaz kritizuje jako nadbytečný a odkazuje na data MŠMT o 93 % škol. Plaga mu doporučuje seznámit se s materiálem. Vyjadřují se ředitel ZŠ Dalibor Neckář, psycholožka Radka High, Michaela Mlíčková Jelínková (Digibalanc) a výzkumníci Masarykovy univerzity, podle nichž plošné zákazy nefungují univerzálně.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 15
+}

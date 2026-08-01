@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-26",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-26",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "text": "Ve stanovisku č. 1/2026 z 12. března 2026 NRR uvedla, že kapitola obrany obsahuje jen 154,8 miliardy korun, tedy 1,73 % HDP, což nenaplňuje zákonný závazek 2 % HDP, a že na podporu obnovitelných zdrojů je proti schválené podpoře 41,7 miliardy rozpočtováno jen 31,9 miliardy korun.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-16"
+    }
+  ],
+  "subjects": [
+    "schillerova"
+  ],
+  "order": 26,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/alena-schillerova/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

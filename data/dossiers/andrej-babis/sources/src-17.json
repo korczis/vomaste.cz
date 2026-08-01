@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-17",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-17",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-17 — Česká justice (ČTK): Jen Agrofert. Babiš popsal, co vloží do svěřenského fondu (31. 12. 2025)",
+  "description": "Co Babiš do svěřenského fondu vložit chtěl a co ne — SynBiol, Hartenberg a nemovitosti zůstávají mimo; jeho vlastní odůvodnění.",
+  "outlet": "Česká justice",
+  "sourceFamily": "ctk",
+  "sourceType": "agenturní zpravodajství",
+  "url": "https://www.ceska-justice.cz/2025/12/jen-agrofert-babis-popsal-co-vlozi-do-sverenskeho-fondu/",
+  "published": "2025-12-31",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-39"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-40"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpráva ČTK publikovaná Českou justicí na konci roku 2025, tedy **před**\núnorovým vložením akcií do fondu.\n**Co dokládá:** že Babiš do svěřenského fondu zamýšlel vložit pouze\nAgrofert, že investiční společnost SynBiol (podíl 87,75 %), fond\nHartenberg a nemovitosti měly zůstat mimo, jak to sám odůvodnil, a že\nprezident Petr Pavel jmenování podmínil vyřešením otázky střetu zájmů se\nzákonnou lhůtou 30 dnů od jmenování (do 8. ledna 2026).\n\n**Nezávislost:** autorem je ČTK (`family = \"ctk\"`), Česká justice zprávu\npublikovala.\n\n**Limity:** text zachycuje **oznámený záměr** z konce roku 2025, ne\nvýsledný stav — ten dokládá SRC-02 (vložení akcií v únoru 2026). Že něco\nzůstalo mimo fond, samo o sobě není protiprávní; zákonný rozsah\npovinnosti je právě předmětem sporu, který dossier vede jako otevřený.\nKritické pozice článek neobsahuje."
+    }
+  ],
+  "order": 17
+}

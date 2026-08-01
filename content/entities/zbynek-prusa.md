@@ -1,24 +1,17 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Ing. Zbyněk Průša"
-description = "Ing. Zbyněk Průša — kontextový záznam rejstříkové vazby z ARES, ne dossier."
 template = "entity.html"
 weight = 39
+description = "Ing. Zbyněk Průša — kontextový záznam rejstříkové vazby z ARES, ne dossier."
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/entities/zbynek-prusa"
+view_model = "generated/views/entities/zbynek-prusa.json"
 record_type = "entity"
 entity_id = "zbynek-prusa"
-entity_type = "person"
-depth = 3
-subject = false
-publication_role = "context"
-dossier_enabled = false
-dossier_status = "not_authorized"
-coverage_state = "referenced"
-discovered_at = "2026-07-31"
-discovered_via = ["ares-expansion-26185610-2026-07-31"]
-dossiers = []
 +++
-
 Záznam z veřejného rejstříku (ARES), pořízený programově 2026-07-31:
 zapsán jako **předseda představenstva** společnosti AGROFERT, a.s. (IČO 26185610).
 

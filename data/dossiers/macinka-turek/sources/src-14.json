@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-14",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-14",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-14 — Deník N",
+  "description": "Kauza fotografie se zdviženou pravicí (2024) — investigativní zpracování.",
+  "outlet": "Deník N",
+  "sourceFamily": "denik-n",
+  "sourceType": "investigativní žurnalistika (předplatné)",
+  "url": "https://denikn.cz/1444758",
+  "published": "2024-06-05",
+  "retrieved": "2026-07-21",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-06"
+    }
+  ],
+  "subjects": [
+    "macinka",
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Deník N je předplatitelský investigativní deník. Tento článek dokumentuje\nkauzu fotografie z roku 2013 (zdvižená pravice) a sbírky svícnů s hákovými\nkříži, která se stala tématem před eurovolbami 2024.\n\n**Poznámka k nezávislosti**: SRC-14 a SRC-15 jsou od téhož vydavatele\n(Deník N) — v registru zdrojů jsou vedeny jako jedna zdrojová rodina, ne\njako dvě vzájemně nezávislá potvrzení, i když pokrývají různé kauzy\n(2024 vs. 2025)."
+    }
+  ],
+  "order": 14
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-04",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-04",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tunde-bartha"
+  },
+  "title": "SRC-04 — Úřad vlády ČR, přehled vedoucích",
+  "description": "Primární úřední rejstřík: u Tünde Barthy je uvedeno „pověřena řízením: 28.6.2018 – 17.12.2021“, tedy pověření, nikoli jmenování do funkce.",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "primární úřední záznam",
+  "url": "https://vlada.gov.cz/scripts/detail.php?pgid=1477",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-08"
+    }
+  ],
+  "subjects": [
+    "bartha"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální přehled vedoucích Úřadu vlády ČR uvádí u Tünde Barthy\nformulaci „**pověřena řízením: 28.6.2018 - 17.12.2021**\". Ostatní osoby\nv přehledu mají uvedeno funkční období; u Barthy jde tedy podle úředního\nzáznamu o **pověření řízením úřadu**, ne o jmenování do funkce vedoucí.\n\nPřehled dále uvádí Petru Fojtíkovou (1. 11. 2025 – 15. 12. 2025) a Janu\nKotalíkovou (17. 12. 2021 – 31. 10. 2025). Ke dni stažení (2026-07-30)\n**přehled neuvádí nástupce po Petře Fojtíkové**.\n\n**Poznámka k procesní přesnosti a hranicím**: tento primární záznam je\npřesnější než publicistické zkratky — „vedoucí Úřadu vlády\" a „pověřena\nřízením Úřadu vlády\" nejsou totéž a dossier je nezaměňuje. Zároveň\nplatí, že úřední rejstřík nemusí být aktualizován okamžitě; to, že\nneuvádí současného vedoucího, není důkazem, že funkce není obsazena —\nviz GAP-02. Primární úřední záznam dokládá identitu a funkční údaje,\nnení nezávislým redakčním potvrzením čehokoli, co napsalo zpravodajské\nmédium."
+    }
+  ],
+  "order": 4
+}

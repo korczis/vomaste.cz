@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-12",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-12",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "title": "SRC-12 — Seznam Zprávy",
+  "description": "Ministr Červený opravil majetkové přiznání a zaplatil pokutu",
+  "outlet": "Seznam Zprávy",
+  "sourceType": "zpravodajství",
+  "url": "https://www.seznamzpravy.cz/clanek/domaci-politika-ministr-cerveny-opravil-majetkove-priznani-a-zaplatil-pokutu-309080",
+  "published": "2026-06-22",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-22"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-23"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Ministr Červený opravil majetkové přiznání a zaplatil pokutu**\n\nPopisuje podání opravného oznámení a úhradu pokuty 7 500 Kč. Cituje ministra: chybně vycházel z data nabytí funkce místo data podání oznámení. Cituje Ministerstvo spravedlnosti, že oznamovaný majetek se musí vztahovat ke dni předcházejícímu vstupu do funkce. Nepotvrzuje pravomocnost ani ukončení řízení.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 12
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-23",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-23",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-23 — Hlídač státu (Turek, firmy)",
+  "description": "Rejstříkové vazby Filipa Turka na pět firem/spolků 2016–2023 (Art of Performance, Transgas, autokluby).",
+  "outlet": "Hlídač státu",
+  "sourceFamily": "hlidac-statu",
+  "sourceType": "veřejný rejstřík / transparentní databáze",
+  "url": "https://www.hlidacstatu.cz/Osoba/vazby/filip-turek",
+  "retrieved": "2026-07-22",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-20"
+    }
+  ],
+  "subjects": [
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Hlídač státu je nezisková transparentní databáze provozovaná Aliancí pro\notevřenost, která strojově agreguje data z obchodního rejstříku (justice.cz)\na dalších veřejných registrů. Není žurnalistickým zdrojem v úzkém slova\nsmyslu — jde o strukturovaná rejstříková data, ne o redakčně ověřený a\nkontextualizovaný text.\n\nPodle databáze byl/je Filip Turek v posledních letech zapojen v pěti\nsoukromých subjektech, žádný z nich neměl smlouvu se státem:\n\n| Subjekt | IČO | Role | Období |\n|---|---|---|---|\n| Art of Performance s.r.o. | 05411408 | člen statutárního orgánu | od 21. 9. 2016 |\n| Aston Martin klub ČR, z.s. | 01818899 | člen statutárního orgánu | od 5. 1. 2017 |\n| Transgas s.r.o. | 06230113 | člen statutárního orgánu | od 28. 6. 2017 |\n| Jaguar klub ČR, z.s. | 26557975 | člen statutárního orgánu | od 3. 3. 2023 |\n| Zapper-Club s.r.o. | 05411394 | společník s vkladem | 21. 9. 2016 – 2. 8. 2023 |\n\nZařazení do dossieru samo o sobě nenaznačuje pochybení — jde o standardní\npodnikatelské/spolkové angažmá v oboru spjatém s Turkovým dlouhodobým\nzájmem o automobilismus. Dokládá jen rozsah jeho obchodních vazeb mimo\npolitickou funkci (GAP-04), který dosud v dossieru chyběl."
+    }
+  ],
+  "order": 23
+}

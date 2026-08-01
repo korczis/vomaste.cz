@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/relations/edge-imoba-capihnizdo",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-imoba-capihnizdo",
+  "relationId": "edge-imoba-capihnizdo",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/imoba"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/capi-hnizdo"
+  },
+  "relationType": "HOLDS_INTEREST_IN",
+  "label": "vlastník areálu; 6/2018 vrátila dotaci ~50 mil. Kč — vrácení není přiznání viny, do dohody firma prosadila opak",
+  "status": "single",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-73"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-74"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-51"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 23,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Status: single."
+    }
+  ]
+}

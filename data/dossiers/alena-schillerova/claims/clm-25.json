@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-25",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-25",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "text": "NRR výslovně odmítla argumentaci ministerstva financí, že se zákonná omezení nevztahují na rozpočet předkládaný opakovaně po vrácení Sněmovnou, s tím, že vláda je zákonem vázána předložit návrh rozpočtu v každém okamžiku v jeho mezích a limitech.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-18"
+    }
+  ],
+  "subjects": [
+    "schillerova"
+  ],
+  "order": 25,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/alena-schillerova/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

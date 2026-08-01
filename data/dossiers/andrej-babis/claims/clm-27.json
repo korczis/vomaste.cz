@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-27",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-27",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "Evropská pověřená žalobkyně Daniela Bártíková vydala 24. května 2026 rozhodnutí o zahájení trestního řízení ve věci vyplácení evropských dotací skupině Agrofert a prověřováním pověřila Národní centrálu proti organizovanému zločinu; podezření se týkají poškození finančních zájmů EU, zneužití pravomoci úřední osoby a porušení povinnosti při správě cizího majetku",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-12"
+    }
+  ],
+  "subjects": [],
+  "order": 27,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-16",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-16",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-16 — ČeskéNoviny.cz (ČTK): EK sleduje Babišův střet zájmů i kvůli SynBiolu a Hartenbergu (23. 6. 2026)",
+  "description": "Reakce Evropské komise: SynBiol a Hartenberg Holding jako vybraní příjemci evropských prostředků od 9. 12. 2025 a pokyn řídicím orgánům.",
+  "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceFamily": "ctk",
+  "sourceType": "agenturní zpravodajství",
+  "url": "https://www.ceskenoviny.cz/zpravy/ek-sleduje-babisuv-stret-zajmu-i-kvuli-synbiolu-i-hartenbergu-vyplyva-z-reakce/2842416",
+  "published": "2026-06-23",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-41"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-42"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Agenturní zpráva ČTK k písemné reakci Evropské komise.\n**Co dokládá:** že Komise sleduje otázku možného střetu zájmů i ve\nvztahu ke společnostem SynBiol a Hartenberg Holding, že tyto společnosti\nbyly od 9. prosince 2025 vybrány jako příjemci evropských prostředků, a\nže Komise požádala řídicí orgány, aby žádná žádost o platbu předložená\nKomisi neobsahovala výdaje spojené s firmami skupiny Agrofert ani se\nsubjekty patřícími premiérovi, jím ovládanými nebo s ním spojenými —\njmenovitě včetně SynBiolu a Hartenbergu. Dále obsahuje údaj, že podle\nveřejně dostupných informací, na které upozornil europoslanec Tomáš\nZdechovský, byl v únoru 2026 ověřen notářský zápis, na jehož základě se\nBabiš stal opět přímým vlastníkem SynBiolu.\n\n**Nezávislost:** stejná agenturní rodina jako SRC-10, SRC-11, SRC-12\na SRC-17 (`family = \"ctk\"`).\n\n**Limity:** jde o **monitoring a pokyn** ze strany Komise, ne o zjištění\no porušení pravidel ani o rozhodnutí jakéhokoli orgánu. Údaj o notářském\nzápisu je v textu podán jako výklad veřejných registrů, na který\nupozornil politik — ne jako zjištění Komise. Vyjádření SynBiolu článek\nneobsahuje."
+    }
+  ],
+  "order": 16
+}

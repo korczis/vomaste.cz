@@ -1,23 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-02 — HN.cz (Hospodářské noviny)"
 description = "Babiš nezvažuje kompetenční žalobu na prezidenta; řízením ministerstva životního prostředí dočasně pověřen Macinka."
 template = "dossier-source.html"
 weight = 2
 
 [extra]
-subjects = ["pavel"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/petr-pavel/sources/SRC-02"
+view_model = "generated/views/dossiers/petr-pavel/sources/src-02.json"
 dossier = "petr-pavel"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-02"
-outlet = "HN.cz (Hospodářské noviny)"
-src_type = "zpravodajství"
-url = "https://domaci.hn.cz/c1-67831390-pavel-dal-odmita-jmenovat-turka-ministrem-podle-babise-mel-dostat-sanci-kompetencni-zalobu-ale-nezvazuje"
-retrieved = "2026-07-23"
-published = "2026-01-07"
-claims = ["CLM-01"]
 +++
-
 Premiér Andrej Babiš se pokusil prezidenta Pavla během novoročního oběda
 přesvědčit ke jmenování Filipa Turka ministrem životního prostředí,
 neúspěšně — Pavel svůj nesouhlas potvrdil písemně. Babiš podle článku

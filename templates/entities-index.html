@@ -21,6 +21,16 @@
 
 {% block content %}
 <main class="mx-auto max-w-6xl px-6 py-12 text-white">
+  {#- T-028 fáze H: řádky registru pochází z view modelu
+      (entities-index.json) — včetně government pole (kanonický vlastník
+      data/government.toml, projektované view modelem).
+
+      Tutéž šablonu používají per-dossier aux stránky
+      content/dossiers/<slug>/entities/_index.md (mají extra.dossier);
+      ty vlastní stránky nemají a registr na nich byl vždy prázdný —
+      zůstává prázdný i teď. -#}
+  {% set idx = load_data(path="data/generated/views/entities-index.json") %}
+  {% if section.extra.dossier %}{% set rows = [] %}{% else %}{% set rows = idx.rows %}{% endif %}
   {{ ui::page_header(title=section.title, description=section.description, breadcrumb_items=[
     "Domů::" ~ get_url(path="@/_index.md"),
     "Registr entit",
@@ -28,14 +38,14 @@
 
   <article class="dossier-prose mb-10">{{ section.content | safe }}</article>
 
-  {%- set registry = load_data(path="data/dossiers.toml") -%}
-  {%- set subjects = section.pages | filter(attribute="extra.publication_role", value="subject") -%}
-  {%- set contexts = section.pages | filter(attribute="extra.publication_role", value="context") -%}
+  {%- set dossier_registry = idx.dossierRegistry -%}
+  {%- set subjects = rows | filter(attribute="publicationRole", value="subject") -%}
+  {%- set contexts = rows | filter(attribute="publicationRole", value="context") -%}
   <div class="mb-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
-    {{ ui::stat_tile(value=section.pages | length, label="Entit celkem") }}
+    {{ ui::stat_tile(value=rows | length, label="Entit celkem") }}
     {{ ui::stat_tile(value=subjects | length, label="Subjekty dossierů") }}
     {{ ui::stat_tile(value=contexts | length, label="Kontextové entity") }}
-    {{ ui::stat_tile(value=registry.dossiers | length, label="Dossierů v registru", url=get_url(path="@/dossiers/_index.md")) }}
+    {{ ui::stat_tile(value=dossier_registry | length, label="Dossierů v registru", url=get_url(path="@/dossiers/_index.md")) }}
   </div>
 
   {#- Popisky skupin: dossiery z registru dossierů, typy entit ze slovníku
@@ -50,10 +60,11 @@
     {%- set_global type_labels = type_labels ~ tsep ~ '"' ~ ty.id ~ '":"' ~ ty.label ~ '"' -%}
   {%- endfor -%}
 
-  {#- Popisky dossierů z registru, aby skupina „Dossier" ukazovala jméno,
-      ne slug. Sestavuje se jako JSON string předávaný komponentě. -#}
+  {#- Popisky dossierů z registru (view model idx.dossierRegistry —
+      kanonický dataset v redakčním pořadí, T-028 fáze H), aby skupina
+      „Dossier" ukazovala jméno, ne slug. JSON string pro komponentu. -#}
   {%- set_global dossier_labels = "" -%}
-  {%- for d in registry.dossiers -%}
+  {%- for d in dossier_registry -%}
     {%- set sep = "" -%}
     {%- if not loop.first %}{% set sep = "," %}{% endif -%}
     {%- set_global dossier_labels = dossier_labels ~ sep ~ '"' ~ d.slug ~ '":"' ~ d.title ~ '"' -%}
@@ -72,7 +83,7 @@
   {{ views::open(
     id="entities-registry",
     title="Registr entit",
-    count=section.pages | length,
+    count=rows | length,
     default_view="table",
     search_label="Hledat entitu",
     sort_options=["name::Název", "type::Typ", "role::Role", "dossiers::Počet dossierů"],
@@ -87,25 +98,25 @@
       record_type="entity",
       columns=["ID", "Název", "Typ", "Role", "Dossierů"],
       sort_keys=["id", "name", "type", "role", "dossiers"]) }}
-      {%- for p in section.pages %}
-      <tr data-record-key="{{ p.extra.entity_id }}" data-entitytype="{{ p.extra.entity_type }}" data-role="{{ p.extra.publication_role }}"
-        data-jsonld-id="{{ p.permalink | safe }}#entity" id="entities-registry-table-{{ p.extra.entity_id | lower }}">
-        <td class="whitespace-nowrap p-3 align-top" data-sort-value="{{ p.extra.entity_id }}">
-          <a href="{{ p.permalink | safe }}" class="font-mono text-xs text-[#f3e5c0] no-underline hover:underline">{{ p.extra.entity_id }}</a>
+      {%- for p in rows %}
+      <tr data-record-key="{{ p.entityId }}" data-entitytype="{{ p.entityType }}" data-role="{{ p.publicationRole }}"
+        data-jsonld-id="{{ config.base_url }}{{ p.route }}#entity" id="entities-registry-table-{{ p.entityId | lower }}">
+        <td class="whitespace-nowrap p-3 align-top" data-sort-value="{{ p.entityId }}">
+          <a href="{{ config.base_url }}{{ p.route }}" class="font-mono text-xs text-[#f3e5c0] no-underline hover:underline">{{ p.entityId }}</a>
         </td>
         <td class="p-3 align-top" data-sort-value="{{ p.title }}">
-          <a href="{{ p.permalink | safe }}" class="font-semibold text-white no-underline hover:underline">{{ p.title }}</a>
-          {%- if p.extra.government_office %}<span class="mt-0.5 block text-xs text-white/55">{{ p.extra.government_office }}</span>{% endif %}
+          <a href="{{ config.base_url }}{{ p.route }}" class="font-semibold text-white no-underline hover:underline">{{ p.title }}</a>
+          {%- if p.government %}<span class="mt-0.5 block text-xs text-white/55">{{ p.government.office }}</span>{% endif %}
         </td>
-        <td class="whitespace-nowrap p-3 align-top text-xs text-white/55" data-sort-value="{{ p.extra.entity_type }}">{{ p.extra.entity_type }}</td>
-        <td class="whitespace-nowrap p-3 align-top" data-sort-value="{{ p.extra.publication_role }}">
-          {%- if p.extra.publication_role == "subject" %}
+        <td class="whitespace-nowrap p-3 align-top text-xs text-white/55" data-sort-value="{{ p.entityType }}">{{ p.entityType }}</td>
+        <td class="whitespace-nowrap p-3 align-top" data-sort-value="{{ p.publicationRole }}">
+          {%- if p.publicationRole == "subject" %}
           <span class="rounded bg-[#f3e5c0]/10 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-[#f3e5c0]">subjekt dossieru</span>
           {%- else %}
           <span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-white/55">kontextová</span>
           {%- endif %}
         </td>
-        <td class="p-3 align-top tabular-nums text-white/70" data-sort-value="{{ p.extra.dossiers | length }}">{{ p.extra.dossiers | length }}</td>
+        <td class="p-3 align-top tabular-nums text-white/70" data-sort-value="{{ p.dossiers | length }}">{{ p.dossiers | length }}</td>
       </tr>
       {%- endfor %}
     {{ table::advanced_table_end() }}
@@ -113,15 +124,15 @@
 
   {{ views::projection(name="list", default_view="table") }}
     <ul class="divide-y divide-white/10 overflow-hidden rounded-lg border border-white/10 bg-white/[0.03]">
-      {%- for p in section.pages %}
-      <li data-record-key="{{ p.extra.entity_id }}" data-entitytype="{{ p.extra.entity_type }}" data-role="{{ p.extra.publication_role }}"
-        data-jsonld-id="{{ p.permalink | safe }}#entity" id="entities-registry-list-{{ p.extra.entity_id | lower }}" class="p-3">
+      {%- for p in rows %}
+      <li data-record-key="{{ p.entityId }}" data-entitytype="{{ p.entityType }}" data-role="{{ p.publicationRole }}"
+        data-jsonld-id="{{ config.base_url }}{{ p.route }}#entity" id="entities-registry-list-{{ p.entityId | lower }}" class="p-3">
         <div class="flex flex-wrap items-baseline gap-x-2 gap-y-1">
-          <a href="{{ p.permalink | safe }}" class="font-mono text-xs text-[#f3e5c0] no-underline hover:underline">{{ p.extra.entity_id }}</a>
-          <span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-white/55">{{ p.extra.entity_type }}</span>
-          <span class="ml-auto text-xs text-white/55">{{ p.extra.dossiers | length }} dossier{% if p.extra.dossiers | length != 1 %}ů{% endif %}</span>
+          <a href="{{ config.base_url }}{{ p.route }}" class="font-mono text-xs text-[#f3e5c0] no-underline hover:underline">{{ p.entityId }}</a>
+          <span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-white/55">{{ p.entityType }}</span>
+          <span class="ml-auto text-xs text-white/55">{{ p.dossiers | length }} dossier{% if p.dossiers | length != 1 %}ů{% endif %}</span>
         </div>
-        <a href="{{ p.permalink | safe }}" class="mt-1 block font-semibold text-white no-underline hover:underline">{{ p.title }}</a>
+        <a href="{{ config.base_url }}{{ p.route }}" class="mt-1 block font-semibold text-white no-underline hover:underline">{{ p.title }}</a>
       </li>
       {%- endfor %}
     </ul>
@@ -129,16 +140,16 @@
 
   {{ views::projection(name="grid", default_view="table") }}
     <div class="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
-      {%- for p in section.pages %}
-      <article data-record-key="{{ p.extra.entity_id }}" data-entitytype="{{ p.extra.entity_type }}" data-role="{{ p.extra.publication_role }}"
-        data-jsonld-id="{{ p.permalink | safe }}#entity" id="entities-registry-grid-{{ p.extra.entity_id | lower }}"
+      {%- for p in rows %}
+      <article data-record-key="{{ p.entityId }}" data-entitytype="{{ p.entityType }}" data-role="{{ p.publicationRole }}"
+        data-jsonld-id="{{ config.base_url }}{{ p.route }}#entity" id="entities-registry-grid-{{ p.entityId | lower }}"
         class="rounded-lg border border-white/10 bg-white/[0.03] p-3">
         <div class="flex flex-wrap items-baseline justify-between gap-2">
-          <a href="{{ p.permalink | safe }}" class="font-mono text-xs text-[#f3e5c0] no-underline hover:underline">{{ p.extra.entity_id }}</a>
-          <span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-white/55">{{ p.extra.entity_type }}</span>
+          <a href="{{ config.base_url }}{{ p.route }}" class="font-mono text-xs text-[#f3e5c0] no-underline hover:underline">{{ p.entityId }}</a>
+          <span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-white/55">{{ p.entityType }}</span>
         </div>
-        <a href="{{ p.permalink | safe }}" class="mt-1.5 block text-sm font-semibold text-white no-underline hover:underline">{{ p.title }}</a>
-        <p class="mt-1 text-xs text-white/55">{{ p.extra.dossiers | length }} dossier{% if p.extra.dossiers | length != 1 %}ů{% endif %}</p>
+        <a href="{{ config.base_url }}{{ p.route }}" class="mt-1.5 block text-sm font-semibold text-white no-underline hover:underline">{{ p.title }}</a>
+        <p class="mt-1 text-xs text-white/55">{{ p.dossiers | length }} dossier{% if p.dossiers | length != 1 %}ů{% endif %}</p>
       </article>
       {%- endfor %}
     </div>

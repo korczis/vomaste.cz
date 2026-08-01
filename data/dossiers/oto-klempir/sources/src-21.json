@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-21",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-21",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
+  },
+  "title": "SRC-21 — ČT24 (Česká televize)",
+  "description": "Rozpočet pro ČT a ČRo může oproti návrhu nového financování ještě vzrůst, řekl Klempíř",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/rozpocet-pro-ct-a-cro-muze-oproti-navrhu-noveho-financovani-jeste-vzrust-rekl-klempir-372810",
+  "published": "2026-04-26",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-15"
+    }
+  ],
+  "subjects": [
+    "klempir"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Rozpočet pro ČT a ČRo může oproti návrhu nového financování ještě vzrůst, řekl Klempíř**\n\nKlempíř připouští, že částka v prvním znění zákona není pevná a může se změnit podle koaliční diskuse; vyjadřuje se i k hospodaření médií.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 21
+}

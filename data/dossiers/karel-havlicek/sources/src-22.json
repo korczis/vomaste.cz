@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-22",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-22",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "title": "SRC-22 — Právní prostor",
+  "description": "O obnovení EET nebo stavebním zákonu bude Senát jednat od 19. srpna",
+  "outlet": "Právní prostor",
+  "sourceType": "zpravodajství",
+  "url": "https://www.pravniprostor.cz/aktuality/o-obnoveni-eet-nebo-stavebnim-zakonu-bude-senat-jednat-od-19-srpna",
+  "published": "2026-07-22",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-30"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-37"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**O obnovení EET nebo stavebním zákonu bude Senát jednat od 19. srpna**\n\nSenát se sejde 19. a 20. srpna 2026, na programu jsou obnovení EET, novela stavebního zákona, zákon o státních úřednících a zpřísnění pravidel jednání Sněmovny. Předseda Senátu Miloš Vystrčil uvedl: „Minimálně stavební zákon bude předmětem velmi podrobné debaty,“ a nevyloučil jeho zamítnutí kvůli množství kritických připomínek. Podle koalice má novela zrychlit povolování staveb, kritici tvrdí, že nebyla řádně připravena a obsahuje chyby. Sněmovna měla zákon poslat do Senátu 23. července.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 22
+}

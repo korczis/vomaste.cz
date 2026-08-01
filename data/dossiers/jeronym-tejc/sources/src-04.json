@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-04",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-04",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "title": "SRC-04 — Blesk.cz",
+  "description": "Kauza Blažkovy bitcoiny: Tejc podal trestní oznámení, vedly ho k tomu závěry auditu",
+  "outlet": "Blesk.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://www.blesk.cz/clanek/zpravy-politika/838133/kauza-blazkovy-bitcoiny-tejc-podal-trestni-oznameni-vedly-ho-k-tomu-zavery-auditu.html",
+  "published": "2026-04-24",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-07"
+    }
+  ],
+  "subjects": [
+    "tejc"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Kauza Blažkovy bitcoiny: Tejc podal trestní oznámení, vedly ho k tomu závěry auditu**\n\nTrestní oznámení bylo doručeno Vrchnímu státnímu zastupitelství v Olomouci 23. 4. 2026 večer, potvrdil mluvčí Radek Bartoš. Podezření: porušení povinnosti při správě cizího majetku a zneužití pravomoci úřední osoby. Audit odhalil chyby při přijetí daru i prodeji; ztráta cca 13 mil. Kč, chybějící záznamy o schůzkách s kupci. Decroix chyby odmítla.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 4
+}

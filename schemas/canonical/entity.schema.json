@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "title": "Kanonický záznam Entity (data/dossiers/_shared/entities/<id>.json) — globální, ne dossier-scoped",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["$schema", "schemaVersion", "@context", "@id", "@type", "recordType", "identifier", "entityId", "title", "entityType", "publicationRole", "dossierEnabled", "dossierStatus", "coverageState", "dossiers"],
+  "properties": {
+    "$schema": { "const": "https://vomaste.cz/schemas/canonical/entity.schema.json" },
+    "schemaVersion": { "const": 1 },
+    "@context": { "const": "https://vomaste.cz/context/v1.jsonld" },
+    "@id": { "$ref": "_defs.schema.json#/$defs/entityGlobalId" },
+    "@type": { "const": "vomaste:Entity" },
+    "recordType": { "const": "entity" },
+    "identifier": {
+      "$ref": "_defs.schema.json#/$defs/entityId",
+      "$comment": "Shodné s entityId — identifier je jednotná obálka všech záznamů, entityId explicitní doménové pole."
+    },
+    "entityId": { "$ref": "_defs.schema.json#/$defs/entityId" },
+    "title": { "type": "string", "minLength": 1 },
+    "alternateNames": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "entityType": { "$ref": "_defs.schema.json#/$defs/entityType" },
+    "role": { "type": "string", "minLength": 1 },
+    "publicationRole": {
+      "type": "string",
+      "enum": ["subject", "context"],
+      "$comment": "Skutečně použité hodnoty (21× subject, 63× context k 2026-08-01). Sémantická vazba na dossierStatus/coverageState (context nesmí být authorized/developing/full atd.) patří validátoru fáze C — dnes validate-authorization.mjs."
+    },
+    "dossierEnabled": { "type": "boolean" },
+    "dossierStatus": {
+      "type": "string",
+      "enum": ["authorized", "not_authorized"]
+    },
+    "coverageState": { "$ref": "_defs.schema.json#/$defs/coverageState" },
+    "dossiers": {
+      "type": "array",
+      "items": { "$ref": "_defs.schema.json#/$defs/slug" },
+      "$comment": "Slugy dossierů, ve kterých entita vystupuje — prosté slugy, ne idRef: entita je globální a tohle je členství, ne vlastnictví (zadání fáze B: 'u entity místo dossier pole dossiers'). Kanonický záznam entity NEMÁ pole dossier — žádný dossier ji nevlastní."
+    },
+    "externalIds": {
+      "type": "object",
+      "additionalProperties": { "type": "string", "minLength": 1 },
+      "$comment": "Mapa registr → identifikátor (IČO apod.) — připraveno pro fázi C/D, dnešní front matter je zatím nemá."
+    },
+    "routeAliases": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^/" },
+      "$comment": "Dnešní top-level aliases stránky entity (staré routy /dossiers/<slug>/entities/…)."
+    },
+    "order": {
+      "type": "integer",
+      "minimum": 0,
+      "$comment": "Redakční pořadí v registru entit (fáze F, aditivní): dnešní pořadí je historický artefakt scaffoldu (per-dossier pořadí objevení, front matter weight) a není derivovatelné z ničeho jiného — bez kanonického order by adaptéry/view modely nemohly reprodukovat dnešní pořadí výpisu. Stejný term vomaste:order jako u ostatních záznamů."
+    },
+    "snapshotDate": {
+      "$ref": "_defs.schema.json#/$defs/isoDate",
+      "$comment": "Government-roster snapshot (dnešní government_snapshot) — funkce držená k datu snímku, nikdy pokrytí dossierem."
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "$comment": "Prezentační meta description stránky entity (fáze H: dřív top-level front matter `description` ARES/roster stránek). Nepovinné — nese ho jen entita, jejíž stránka ho dnes má."
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "discoveredAt": { "$ref": "_defs.schema.json#/$defs/isoDate" },
+        "discoveredVia": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "$comment": "Kurátorovaná stopa objevení: id hran/vztahů (edge-*) NEBO syntetické značky procesu (government-roster-<datum>, ares-expansion-<ičo>-<datum>). Lokální id vztahů se interpretují v kontextu dossierů z pole `dossiers` této entity."
+        },
+        "claimRefs": {
+          "type": "array",
+          "items": { "$ref": "_defs.schema.json#/$defs/clmId" },
+          "$comment": "LOKÁLNÍ CLM-## id (composite-key inventář zachovaný věrně z front matter, fáze H): platí v kontextu dossierů z pole `dossiers` této entity — NENÍ to globální reference a NENÍ to unie vazeb z relations (ověřeno migrací: 30/63 kontextových entit se liší), je to ručně kurátorovaná stopa „přes co byla entita objevena“."
+        },
+        "sourceRefs": {
+          "type": "array",
+          "items": { "$ref": "_defs.schema.json#/$defs/srcId" },
+          "$comment": "LOKÁLNÍ SRC-## id — stejný composite-key tvar a stejná sémantika jako claimRefs."
+        },
+        "cluster": {
+          "type": "string",
+          "minLength": 1,
+          "$comment": "Tematický okruh (cluster) grafu dossieru, ve kterém byla entita objevena — dřív front matter `cluster`."
+        },
+        "depth": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3,
+          "$comment": "Kurátorovaná vzdálenost od subjektu při objevení (0 = subjekt, 3 = ARES expanze) — dřív front matter `depth`. Prezentační hloubka grafu se od fáze H počítá deterministicky BFS; tohle je provenience, ne layout."
+        }
+      },
+      "$comment": "Provenience objevení entity (fáze H, aditivní): dřív žila jen ve front matter content/entities/*.md. Government_office/government_party se sem NEduplikují — jejich kanonický vlastník je data/government.toml (viz build-government-roster + record-tables)."
+    },
+    "subjectOf": {
+      "type": "array",
+      "items": { "$ref": "_defs.schema.json#/$defs/dossierRef" },
+      "$comment": "Jen pro publicationRole=subject: dossier(y), jejichž je entita autorizovaným subjektem. Soulad s AGENTS.md autorizačním logem vynucuje validátor fáze C."
+    },
+    "content": { "$ref": "_defs.schema.json#/$defs/contentBlocks" }
+  }
+}

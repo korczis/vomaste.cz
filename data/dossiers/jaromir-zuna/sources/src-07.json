@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-07",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-07",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "title": "SRC-07 — CNN Prima News",
+  "description": "Armáda zveřejnila „tajný“ rozhovor s prezidentem Pavlem. Do vydání zasáhlo ministerstvo",
+  "outlet": "CNN Prima News",
+  "sourceType": "zpravodajství",
+  "url": "https://cnn.iprima.cz/armada-zverejnila-tajny-rozhovor-s-prezidentem-pavlem-vydani-pozdrzelo-ministerstvo-tvrdi-509882",
+  "published": "2026-04-20",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-11"
+    }
+  ],
+  "subjects": [
+    "zuna"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Armáda zveřejnila „tajný“ rozhovor s prezidentem Pavlem. Do vydání zasáhlo ministerstvo**\n\nArmáda rozhovor s Pavlem zveřejnila na svém YouTube kanálu; předtím ho na Facebooku publikoval ministr zahraničí Macinka. Zůna odmítl obvinění z cenzury — podle něj byly porušeny předpisy (paralelní kanál bez dodržení směrnic) a jeho úřad o videu neměl informace.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 7
+}

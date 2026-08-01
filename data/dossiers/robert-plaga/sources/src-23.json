@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-23",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-23",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "title": "SRC-23 — ČeskéNoviny.cz (ČTK)",
+  "description": "Plaga zastavil testování na ZŠ kvůli špatné komunikaci a technickým potížím",
+  "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceType": "zpravodajství",
+  "url": "https://www.ceskenoviny.cz/zpravy/2829428",
+  "published": "2026-05-25",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-22"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-23"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-24"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-25"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-28"
+    }
+  ],
+  "subjects": [
+    "plaga"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Plaga zastavil testování na ZŠ kvůli špatné komunikaci a technickým potížím**\n\nIndividualizovaná data mají být smazána po agregaci na úroveň škol; Zatloukal vylučuje přístup kohokoli k identitě žáka a jeho odpovědím a omlouvá se; ČŠI provede komplexní analýzu procesu včetně souladu s GDPR; není jasné, zda testy budou pokračovat. Kritika Učitelské platformy a Unie rodičů, požadavky asociací ředitelů na kvalitní přípravu a transparentní komunikaci.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 23
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-38",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-38",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "text": "Zůna zdůvodňuje změnu koncepce demografickým propadem: počet obyvatel ve věku 18–25 let klesl z 1,4 milionu v roce 2002 na zhruba 800 tisíc, a nová koncepce se proto má zaměřit i na zálohy a mobilizační potenciál státu, nikoli jen na profesionální jádro.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-30"
+    }
+  ],
+  "subjects": [
+    "zuna"
+  ],
+  "order": 38,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jaromir-zuna/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

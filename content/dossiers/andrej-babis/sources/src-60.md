@@ -1,23 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-60 — ČT24: Babiš, Kalousek a jejich biopaliva: Oba mají i nemají pravdu (22. 5. 2015)"
 description = "Factcheck ČT24: Babišovo „Samozřejmě že jsem ve střetu zájmů…“, Preol pod Agrofertem, spor o čísla podpory, Sněmovna zrušení podpory odmítla."
 template = "dossier-source.html"
 weight = 60
 
 [extra]
-subjects = ["babis"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-60"
+view_model = "generated/views/dossiers/andrej-babis/sources/src-60.json"
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-60"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/ekonomika/babis-kalousek-a-jejich-biopaliva-oba-maji-i-nemaji-pravdu-132901"
-published = "2015-05-22"
-retrieved = "2026-08-01"
-claims = ["CLM-84"]
 +++
-
 Factcheck ČT24 z května 2015 ke sporu o daňovou podporu biopaliv
 cituje ministra financí Babiše: „Samozřejmě že jsem ve střetu zájmů.
 To všichni věděli. Já jsem ve střetu zájmů, už když ráno otevřu oči…

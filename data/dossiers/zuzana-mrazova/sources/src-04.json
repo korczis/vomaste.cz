@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-04",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-04",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "title": "SRC-04 — ČT24 (Česká televize)",
+  "description": "Mrázová dostala pokutu za porušení zákona o střetu zájmů, píší Seznam Zprávy",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/mrazova-dostala-pokutu-za-poruseni-zakona-o-stretu-zajmu-pisi-seznam-zpravy-375947",
+  "published": "2026-07-25",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-06"
+    }
+  ],
+  "subjects": [
+    "mrazova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Mrázová dostala pokutu za porušení zákona o střetu zájmů, píší Seznam Zprávy**\n\nČT24 s odvoláním na Seznam Zprávy: mostecký magistrát uložil Mrázové nepravomocnou pokutu za nepravdivé údaje v majetkovém přiznání za rok 2024 (neohlášená půjčka 500 000 Kč od rodiny na parcelu v Bílině). Jednání vyhodnoceno jako přestupek z nedbalosti, podnět podalo ministerstvo spravedlnosti. Mluvčí magistrátu: do nabytí právní moci nebudou sdělovány bližší informace. Mluvčí ministerstva: Mrázová pokutu zaplatí a neodvolá se.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 4
+}

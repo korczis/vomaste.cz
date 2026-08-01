@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-02 — ČT24",
+  "description": "Babiš v únoru 2026 vložil akcie Agrofertu do svěřenského fondu RSVP Trust; opozice a Evropská komise to nepovažují za vyřešení střetu zájmů.",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "veřejnoprávní zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/babis-oznamil-ze-vlozil-akcie-agrofertu-do-sverenskeho-fondu-rsvp-trust-370561",
+  "published": "2026-02-20",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-06"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "ČT24 dne 20. 2. 2026 informovala, že premiér Andrej Babiš vložil veškeré\nakcie holdingu Agrofert do soukromého svěřenského fondu RSVP Trust poté,\nco získal souhlasy regulatorních orgánů tří členských států EU. Převod\nměl podle článku proběhnout do 30 dnů od jeho jmenování premiérem 9.\nprosince.\n\nJeho vlastní pozice (citace v článku): „Na Agrofert nemám žádný vliv ani\nz něj neprofituji\"; podle článku tvrdí, že tím splnil požadavky českého\ni unijního práva na střet zájmů.\n\nReakce jmenovaných oponentů podle článku: Zdeněk Hřib (Piráti) — „nic se\nnevyřešilo\"; Matěj Ondřej Havel (TOP 09) odkázal na obavy Transparency\nInternational, že fond nemusí odpovídat unijním pravidlům; Vít Rakušan\n(STAN) — „premiér neříká pravdu\"; Martin Kupka (ODS) kritizoval zdržení\na nezveřejněné dokumenty fondu. Článek dále uvádí, že podle analytiků\nmůže Babiš teoreticky odvolat správce fondu a měnit jeho statut, což by\numožňovalo nepřímý vliv; správcem je Wilfried Reinhard Elbs, obmyšlenými\nmají být budoucí potomci, a to až po jeho odchodu z funkce.\n\n**Poznámka k povaze zdroje a hranicím**: jde o zpravodajství o\n**probíhajícím právním a politickém sporu**, ne o rozhodnutí soudu nebo\nregulátora. Jeho pozice i pozice kritiků jsou v dossieru vedeny jako\ncitované výroky, ne jako zjištění tohoto webu. Jmenovaní politici\nvystupují výhradně jako autoři veřejného výroku k této věci, správce\nfondu pouze jako údaj uvedený citovaným zdrojem — nikdo z nich se\nnestává subjektem dossieru. Rodinní příslušníci se nejmenují."
+    }
+  ],
+  "order": 2
+}

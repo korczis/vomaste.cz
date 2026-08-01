@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-11",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-11",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "title": "SRC-11 — Echo24",
+  "description": "Zůna opět v problémech? Šéf SPD Okamura možnost konce ministra obrany odmítl",
+  "outlet": "Echo24",
+  "sourceType": "zpravodajství",
+  "url": "https://m.echo24.cz/a/H9AHW/armada-rehka-hlavac-okamura-babis-zuna-vlada-kabinet-ministr-konec-spekulace-neshoda-hlasovani-proti-pro-obrana",
+  "published": "2026-05-19",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-16"
+    }
+  ],
+  "subjects": [
+    "zuna"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Zůna opět v problémech? Šéf SPD Okamura možnost konce ministra obrany odmítl**\n\nOkamura (SPD) odmítl spekulace o konci ministra Zůny; politickou odpovědnost za výběr Hlaváče podle něj nese premiér Babiš. Hlaváč podle Okamury není z hlediska vojenského kariérního řádu z pohledu SPD ideální kandidát; 'žádná politika v tom není'.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 11
+}

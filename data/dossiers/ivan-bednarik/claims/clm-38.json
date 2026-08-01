@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-38",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-38",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "text": "Generální ředitel Českých drah Michal Krapinec na fóru ACRI upozornil, že pořizovací náklady vozidel pro rychlost 230 km/h dosahují stovek milionů korun na jednotku a že s rostoucí rychlostí výrazně rostou náklady na energie a údržbu.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-27"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "order": 38,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/ivan-bednarik/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

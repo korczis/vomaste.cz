@@ -1,20 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "GAP-04 — Data nástupu a odchodu z Agrofertu"
 description = "Citovaný zdroj uvádí jen datum, kdy o působení Tünde Barthy v Agrofertu informoval HlídacíPes; kdy nastoupila a kdy odešla, doloženo není."
 template = "dossier-gap.html"
 weight = 4
 
 [extra]
-subjects = ["bartha"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/tunde-bartha/gaps/GAP-04"
+view_model = "generated/views/dossiers/tunde-bartha/gaps/gap-04.json"
 dossier = "tunde-bartha"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-04"
-priority = "nízká"
-checked = "2026-08-01"
-claims = ["CLM-06", "CLM-13"]
 +++
-
 **Aktualizace 1. 8. 2026.** Firemní web Agrofertu ze září 2024 dokládá
 další datovaný employment fact — funkci country managerky AGROFERT
 Hungária s odpovědností za rozvoj koncernu ve východní Evropě

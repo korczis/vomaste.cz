@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-14",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-14",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
+  },
+  "title": "SRC-14 — Respekt",
+  "description": "SPD se odvolá proti třímilionovému trestu za plakáty. A je připravená jít až k Ústavnímu soudu",
+  "outlet": "Respekt",
+  "sourceType": "zpravodajství",
+  "url": "https://www.respekt.cz/informacni-servis/spd-se-odvola-proti-trimilionovemu-trestu-za-plakaty-a-je-pripravena-jit-az-k-ustavnimu-soudu-2026-06-03-16-26",
+  "published": "2026-06-03",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-20"
+    }
+  ],
+  "subjects": [
+    "okamura"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**SPD se odvolá proti třímilionovému trestu za plakáty. A je připravená jít až k Ústavnímu soudu**\n\nKrátká zpravodajská noticka informačního servisu o ohlášeném odvolání SPD a připravenosti dovést spor až k Ústavnímu soudu, s citací Okamury a obhájce Batuny.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 14
+}

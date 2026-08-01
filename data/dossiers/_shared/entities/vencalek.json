@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/vencalek",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "vencalek",
+  "entityId": "vencalek",
+  "title": "Petr Vencálek (vlastník GMR GAS s.r.o.)",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "full",
+  "dossiers": [
+    "macinka-turek",
+    "petr-macinka",
+    "petr-vencalek"
+  ],
+  "order": 38,
+  "provenance": {
+    "discoveredAt": "2026-07-30",
+    "discoveredVia": [
+      "edge-vencalek-gmrgascz"
+    ],
+    "claimRefs": [
+      "CLM-48",
+      "CLM-01"
+    ],
+    "sourceRefs": [
+      "SRC-17",
+      "SRC-55",
+      "SRC-01",
+      "SRC-02"
+    ],
+    "cluster": "financni-vazby",
+    "depth": 0
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Jediný společník (podíl 100 %) a jednatel společnosti GMR GAS s.r.o.,\nod 2026-08-01 subjektem vlastního dossieru\n([AUTH-2026-08-01-VENCALEK](@/dossiers/petr-vencalek/_index.md)).\nZáklad veřejného zájmu zůstává úzký a jmenovaný v autorizaci: citované\nzpravodajství (Investigace.cz) ho jmenuje jako majitele české firmy,\nkterá je podle téhož zdroje spoluvlastníkem ukrajinské GMR GAS UA LLC —\ntedy firmy, v níž měl Petr Macinka nepřiznaný podíl.\n\n**Není veřejným funkcionářem** a žádný citovaný zdroj mu nic nevytýká —\nvlastnit firmu a být jejím jednatelem je běžný, veřejně zapsaný\npodnikatelský fakt. Plné znění je v jeho vlastním dossieru; tato stránka\nzůstává jen odkazem do globálního registru entit. Dossier záměrně\nneuvádí ani jeho datum narození, ani adresu, přestože je rejstříkový\nzáznam obsahuje — pro doložení citovaného tvrzení nejsou potřebné."
+    }
+  ]
+}

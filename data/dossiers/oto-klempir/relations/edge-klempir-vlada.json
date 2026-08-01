@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/oto-klempir/relations/edge-klempir-vlada",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-klempir-vlada",
+  "relationId": "edge-klempir-vlada",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/klempir"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/vlada"
+  },
+  "relationType": "HOLDS_ROLE",
+  "label": "ministr kultury",
+  "status": "contextual",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-01"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-01"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextový, strukturální vztah — dossier jej neuvádí jako vlastní doloženou investigaci, jen jako veřejně nesporné pozadí."
+    }
+  ]
+}

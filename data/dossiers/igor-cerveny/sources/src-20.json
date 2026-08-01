@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-20",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-20",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "title": "SRC-20 — Deník N",
+  "description": "Úpravy Červeného pracovny stojí další statisíce. V ministerské kanceláři dál sedí Turek",
+  "outlet": "Deník N",
+  "sourceType": "zpravodajství",
+  "url": "https://denikn.cz/2063739/upravy-cerveneho-pracovny-stoji-dalsi-statisice-v-ministerske-kancelari-dal-sedi-turek/",
+  "published": "2026-05-18",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-35"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-36"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-41"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Úpravy Červeného pracovny stojí další statisíce. V ministerské kanceláři dál sedí Turek**\n\nAutorka Zdislava Pokorná. Dostupná část uvádí objednávku nábytku od pražské společnosti Space Plan (dva výškově nastavitelné stoly s paravánem, dva kontejnery, dvoumístná pohovka, dvě křesla, akustický panel), konstatuje, že ve skutečné ministerské pracovně sedí vládní zmocněnec Filip Turek, a že kancelář prošla rekonstrukcí teprve před dvěma lety. Konkrétní celková částka je za paywallem.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 20
+}

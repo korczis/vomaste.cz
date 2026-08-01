@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-13",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-13",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
+  },
+  "text": "Předseda opozičního hnutí STAN Vít Rakušan 23. července 2026 oznámil na síti X, že hnutí podává trestní oznámení kvůli případnému střetu zájmů při vyplácení unijních peněz z NPO na ministerstvu práce; oznámení podala místopředsedkyně sněmovního sociálního výboru Pavla Pivoňka Vaňková (STAN). Procesní stav: jde o podané trestní oznámení, tedy podnět k prověření — nikoli o zahájené trestní stíhání; nikdo v kauze nebyl obviněn ani odsouzen.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-14"
+    }
+  ],
+  "subjects": [
+    "juchelka"
+  ],
+  "order": 13,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/ales-juchelka/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

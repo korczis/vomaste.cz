@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/petr-macinka",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "petr-macinka",
+  "slug": "petr-macinka",
+  "title": "Petr Macinka",
+  "description": "Neutrální, zdroji doložený přehled o Petru Macinkovi — předsedovi hnutí Motoristé sobě a bývalém dočasném ministru životního prostředí.",
+  "dossierType": "entity",
+  "canonicalDossier": "macinka-turek",
+  "subject": "macinka",
+  "language": "cs",
+  "navigationVisible": true,
+  "order": 1,
+  "updated": "2026-07-29",
+  "authorization": {
+    "records": [
+      "AUTH-2026-07-21-A",
+      "AUTH-2026-07-21-B",
+      "AUTH-2026-07-30-A"
+    ]
+  },
+  "seo": {
+    "seoType": "ProfilePage"
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "Petr Macinka je předseda hnutí Motoristé sobě a člen vlády — v období od\nlednové nominace Filipa Turka do jmenování Igora Červeného dočasně vedl\nMinisterstvo životního prostředí. Tento dossier shrnuje veřejně doložené\nskutečnosti o jeho politické roli, financování hnutí a majetkových vazbách,\na o jeho veřejné obhajobě Filipa Turka v souvisejících kauzách — vždy s\nodkazem na jmenovaný, nezávislý zdroj.\n\nMacinka je jedním ze dvou subjektů politického hnutí Motoristé sobě\nsledovaných na tomto webu; sdílené souvislosti s Filipem Turkem (společné\nzvolení, vztah k hnutí, vzájemné veřejné reakce) jsou uvedeny i ve\n[společném přehledu](@/dossiers/macinka-turek/_index.md), kam se z tohoto\ndossieru odkazuje tam, kde je to relevantní."
+    }
+  ]
+}

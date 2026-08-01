@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-20",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-20",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "text": "Schillerová označila prezidentovo veto na síti X za názorový veletoč s odůvodněním, že to byla právě prezidentská kancelář, kdo netransparentní rozpočtování minulé vlády Petra Fialy dlouhodobě ostře kritizoval.",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-10"
+    }
+  ],
+  "subjects": [
+    "schillerova"
+  ],
+  "order": 20,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/alena-schillerova/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

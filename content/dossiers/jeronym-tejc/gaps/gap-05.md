@@ -1,20 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "GAP-05 — Není doloženo, zda a kdy kárný senát nařídil jednání o kárné žalobě na soudkyni, ani jak r"
 description = "Cílené hledání termínu jednání a rozhodnutí kárného senátu nevrátilo žádný zpravodajský ani soudní zdroj; k datu rešerše (30. 7. 2026) zřejm"
 template = "dossier-gap.html"
 weight = 5
 
 [extra]
-subjects = ["tejc"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/jeronym-tejc/gaps/GAP-05"
+view_model = "generated/views/dossiers/jeronym-tejc/gaps/gap-05.json"
 dossier = "jeronym-tejc"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-05"
-priority = "střední"
-checked = "2026-07-30"
-claims = []
 +++
-
 Není doloženo, zda a kdy kárný senát nařídil jednání o kárné žalobě na soudkyni, ani jak rozhodl.
 
 **Proč je to mezera**: Cílené hledání termínu jednání a rozhodnutí kárného senátu nevrátilo žádný zpravodajský ani soudní zdroj; k datu rešerše (30. 7. 2026) zřejmě rozhodnuto nebylo. Tato mezera **není** zjištěním žádným

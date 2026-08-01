@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/case.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/cases/CASE-14",
+  "@type": "vomaste:Case",
+  "recordType": "case",
+  "identifier": "CASE-14",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "Navos Farm Technic: veřejné zakázky malého rozsahu",
+  "summary": "Moravskoslezský kraj zadal firmě Navos Farm Technic ze skupiny Agrofert zakázku při budování školních dílen v Bruntále; Ministerstvo pro místní rozvoj kvůli střetu zájmů odmítlo proplatit dotace za více než 43 milionů korun. Nejvyšší správní soud 11. 12. 2025 zamítl kasační stížnost kraje: dodavatel byl ovládán veřejným funkcionářem, a zákaz podle zákona o střetu zájmů proto dopadá i na zakázky malého rozsahu. Jde o výklad dotačních a zadávacích pravidel ve správním soudnictví, ne o rozhodnutí o trestní vině.",
+  "period": "2018–2025",
+  "status": "status-corroborated",
+  "statusLabel": "NSS: zákaz platí i pro zakázky malého rozsahu",
+  "anchor": "kauza-navos",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-68"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-46"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-47"
+    }
+  ],
+  "subjects": [],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Plné znění, zdroje a kontext tohoto případu jsou v [hlavním přehledu\ndossieru](@/dossiers/andrej-babis/_index.md#kauza-navos)."
+    }
+  ],
+  "order": 14
+}

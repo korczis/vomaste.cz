@@ -1,23 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-56 — Aktuálně.cz: Nejvyšší žalobce Zeman znovu otevřel kauzu Čapí hnízdo (4. 12. 2019)"
 description = "Zastavení stíhání Babiše a Mayerové zrušeno „jako nezákonné a předčasné“; u dalších čtyř obviněných zastavení potvrzeno."
 template = "dossier-source.html"
 weight = 56
 
 [extra]
-subjects = ["babis"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-56"
+view_model = "generated/views/dossiers/andrej-babis/sources/src-56.json"
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-56"
-outlet = "Aktuálně.cz"
-src_type = "zpravodajství"
-url = "https://zpravy.aktualne.cz/domaci/nejvyssi-zalobce-znovu-otevrel-kauzu-capi-hnizdo-se-zavery-s/r~7c64e9c2167f11eab259ac1f6b220ee8/"
-published = "2019-12-04"
-retrieved = "2026-08-01"
-claims = ["CLM-79"]
 +++
-
 Aktuálně.cz 4. 12. 2019 informuje o rozhodnutí nejvyššího státního
 zástupce Pavla Zemana: „Vůči dvěma obviněným – inženýrovi Babišovi a
 inženýrce Mayerové – bylo usnesení o zastavení trestního stíhání

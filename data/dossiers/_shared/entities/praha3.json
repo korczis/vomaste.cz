@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/praha3",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "praha3",
+  "entityId": "praha3",
+  "title": "Městská část Praha 3",
+  "entityType": "public_institution",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "tunde-bartha"
+  ],
+  "routeAliases": [
+    "/dossiers/tunde-bartha/entities/praha3/"
+  ],
+  "order": 4,
+  "provenance": {
+    "discoveredAt": "2026-07-30",
+    "discoveredVia": [
+      "edge-bartha-praha3"
+    ],
+    "claimRefs": [
+      "CLM-01",
+      "CLM-02",
+      "CLM-03",
+      "CLM-04"
+    ],
+    "sourceRefs": [
+      "SRC-01",
+      "SRC-02"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext."
+    }
+  ]
+}

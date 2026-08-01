@@ -1,23 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-06 — Česká justice"
 description = "Soud svěřil Viktorku rodičům na drogách. Tejc chce trest pro soudkyni"
 template = "dossier-source.html"
 weight = 6
 
 [extra]
-subjects = ["tejc"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-06"
+view_model = "generated/views/dossiers/jeronym-tejc/sources/src-06.json"
 dossier = "jeronym-tejc"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-06"
-outlet = "Česká justice"
-src_type = "zpravodajství"
-url = "https://www.ceska-justice.cz/2026/07/viktorka-rodice-drogy-tejc-trest-soudkyni/"
-published = "2026-07-01"
-retrieved = "2026-07-30"
-claims = ["CLM-08", "CLM-09", "CLM-10", "CLM-13", "CLM-33", "CLM-35", "CLM-36"]
 +++
-
 **Soud svěřil Viktorku rodičům na drogách. Tejc chce trest pro soudkyni**
 
 Tejc podal kárnou žalobu na soudkyni Okresního soudu v Benešově a navrhuje roční snížení platu o 30 %; vytýká jí nedostatečné zjištění skutkového stavu. Soudkyně se hájí tím, že se všichni účastníci vzdali práva na odvolání a znalecký posudek připouštěl, že při abstinenci by otec mohl o dítě pečovat. Tejc poslal i podnět na OSPOD a ohlásil systémové změny.

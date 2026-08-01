@@ -1,4 +1,5 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-17 — Investigace.cz"
 description = "Ministr Macinka nepřiznal v majetkovém přiznání 20% podíl v ukrajinské firmě GMR GAS UA LLC."
 template = "dossier-source.html"
@@ -6,19 +7,14 @@ weight = 17
 aliases = ["/dossier/zdroje/src-17/"]
 
 [extra]
-subjects = ["macinka"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-17"
+view_model = "generated/views/dossiers/macinka-turek/sources/src-17.json"
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-17"
-outlet = "Investigace.cz"
-src_type = "investigativní žurnalistika"
-url = "https://www.investigace.cz/ministr-petr-macinka-nepriznal-podil-v-ukrajinske-firme/"
-retrieved = "2026-07-22"
-published = "2025-12-19"
-claims = ["CLM-14", "CLM-15"]
 +++
-
 Investigativní web Investigace.cz zjistil, že ministr zahraničních věcí
 Petr Macinka neuvedl ve svém majetkovém přiznání dvacetiprocentní podíl
 (od roku 2017) v kyjevské firmě GMR GAS UA LLC, byť to zákon o střetu

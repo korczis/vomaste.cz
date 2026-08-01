@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-20",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-20",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-20 — Česká justice",
+  "description": "Turek se vzdává imunity a popisuje vlastní verzi nehody; dechová zkouška negativní.",
+  "outlet": "Česká justice",
+  "sourceType": "zpravodajství (odborný právní server)",
+  "url": "https://www.ceska-justice.cz/2026/07/turek-imunitu-nechce-necha-vydat/",
+  "published": "2026-07-15",
+  "retrieved": "2026-07-22",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-17"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-18"
+    }
+  ],
+  "subjects": [
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Česká justice je specializovaný server zaměřený na justici a trestní\nprávo. Podle článku poslanec Filip Turek prohlásil, že by imunitu\nnevyužil a nechal se vydat k případnému trestnímu stíhání.\n\nText obsahuje Turkovu vlastní verzi nehody — tvrdí, že křižovatkou ulic\nJečná a Sokolská projížděl na zelenou, zatímco vozidlo Nemocnice Na\nHomolce mělo vjet na červenou se zapnutými výstražnými světly a sirénou.\nTato verze je v dossieru vedena jako **citace/tvrzení účastníka** (CLM-17),\nne jako ověřený fakt — je v přímém rozporu s policejním zjištěním o\nznačení (CLM-16, SRC-19).\n\nČlánek dále uvádí jako fakty: Turkova dechová zkouška na alkohol byla\nnegativní; řidič sanitky utrpěl středně těžké poranění hlavy a zranění\nlokte a je v pracovní neschopnosti. Tyto dvě informace jsou vedeny jako\nCORROBORATED (CLM-18), protože jde o věcná zjištění, ne o spornou\ninterpretaci viny."
+    }
+  ],
+  "order": 20
+}

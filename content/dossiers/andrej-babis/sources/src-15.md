@@ -1,24 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-15 — Echo24: Babiš přiznal, že od Agrofertu inkasoval dividendu 4,25 miliardy korun (1. 7. 2026)"
 description = "Dividenda vyplacená před vložením akcií do svěřenského fondu, jak vyplynula z majetkového přiznání, a jeho vlastní vyjádření."
 template = "dossier-source.html"
 weight = 15
 
 [extra]
-subjects = ["babis"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-15"
+view_model = "generated/views/dossiers/andrej-babis/sources/src-15.json"
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-15"
-outlet = "Echo24"
-src_type = "zpravodajství"
-family = "idnes-dividenda-2026-07"
-url = "https://m.echo24.cz/a/H4mha/zpravy-domov-babis-priznal-ze-od-agrofertu-inkasoval-dividendu-4-25-miliardy-korun"
-published = "2026-07-01"
-retrieved = "2026-07-30"
-claims = ["CLM-37", "CLM-38"]
 +++
-
 Zpravodajský text k údajům z majetkového přiznání podávaného do
 30. června.
 **Co dokládá:** že Babiš dostal v roce 2025 od Agrofertu dividendu

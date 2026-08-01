@@ -1,23 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-02 — Hospodářské noviny"
 description = "HN, 4. 5. 2018: státní zástupce Jaroslav Šaroch zrušil trestní stíhání Jaroslava Faltýnka a tří dalších obviněných v kauze Čapí hnízdo; stížnost Andreje Babiše zamítl jako nedůvodnou."
 template = "dossier-source.html"
 weight = 2
 
 [extra]
-subjects = ["faltynek"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-02"
+view_model = "generated/views/dossiers/jaroslav-faltynek/sources/src-02.json"
 dossier = "jaroslav-faltynek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-02"
-outlet = "Hospodářské noviny"
-src_type = "celostátní zpravodajství"
-url = "https://domaci.hn.cz/c1-66128330-statni-zastupce-rozhodl-o-stiznostech-proti-obvineni-v-kauze-capi-hnizdo-babis-rozhodnuti-jeste-neobdrzel"
-retrieved = "2026-07-30"
-published = "2018-05-04"
-claims = ["CLM-02", "CLM-03", "CLM-04"]
 +++
-
 Hospodářské noviny dne 4. 5. 2018 informovaly, že státní zástupce
 **Jaroslav Šaroch** z Městského státního zastupitelství v Praze
 rozhodl o stížnostech proti obvinění v kauze Čapí hnízdo a **zrušil

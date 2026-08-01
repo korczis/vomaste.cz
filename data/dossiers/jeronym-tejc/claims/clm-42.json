@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-42",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-42",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "text": "Soudcem zpravodajem ve věci je Pavel Šámal; k rozhodnutí uplatnili odlišné stanovisko soudce Jan Wintr a soudkyně Řepková. Rozhodnutí bylo procesní povahy a nepředjímá výsledek sporu.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-21"
+    }
+  ],
+  "subjects": [
+    "tejc"
+  ],
+  "order": 42,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jeronym-tejc/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

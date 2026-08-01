@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-05",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-05",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek"
+  },
+  "text": "Dne 14. září 2022 vypovídal Jaroslav Faltýnek u soudu v kauze Čapí hnízdo jako svědek, nikoli jako obžalovaný — jeho vlastní stíhání skončilo v roce 2018",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-05"
+    }
+  ],
+  "subjects": [
+    "faltynek"
+  ],
+  "order": 5,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jaroslav-faltynek/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

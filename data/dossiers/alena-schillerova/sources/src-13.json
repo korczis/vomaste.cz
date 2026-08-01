@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-13",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-13",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "title": "SRC-13 — Ministerstvo financí ČR",
+  "description": "Ministryně Alena Schillerová v rozhovoru pro Hospodářské noviny",
+  "outlet": "Ministerstvo financí ČR",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://mf.gov.cz/cs/ministerstvo/media/v-mediich/2026/ministryne-alena-schillerova-v-rozhovoru-pro-hospo-64265",
+  "published": "2026-06-15",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-38"
+    }
+  ],
+  "subjects": [
+    "schillerova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Ministryně Alena Schillerová v rozhovoru pro Hospodářské noviny**\n\nPřetisk rozhovoru na webu ministerstva. Schillerová popisuje harmonogram přípravy rozpočtu 2027, závazek udržet deficit bezpečně pod 3 % HDP, plánovaný fiskálně-strukturální plán s deficitem 2,8 % HDP a konsolidací zhruba o půl procentního bodu ročně. Připouští, že nemůže vyloučit vyšší schodek než letos. Dále se věnuje EET, prostředkům obcí na účtech a penzijní reformě.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 13
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-45",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-45",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "text": "Již v březnu 2026 předložili poslanci KDU-ČSL vlastní novelu školského zákona (úplný zákaz pro děti do 10 let, pro děti do 15 let použití jen na pokyn učitele, účinnost od 1. července 2026); MŠMT tehdy prostřednictvím mluvčího Ondřeje Macury uvádělo, že „o případném zákazu mobilních telefonů nebylo dosud rozhodnuto“ a ministr věc řeší s odborníky.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-29"
+    }
+  ],
+  "subjects": [
+    "plaga"
+  ],
+  "order": 45,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/robert-plaga/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

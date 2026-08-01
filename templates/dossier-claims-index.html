@@ -5,7 +5,11 @@
 
 {% block content %}
 <main class="mx-auto max-w-6xl px-6 py-12 text-white">
+  {#- T-028 fáze F: řádky registru pochází z view modelu
+      (data/generated/views/**), ne z front matter section.pages —
+      content adaptéry jsou generované a nesou jen routing + tělo. -#}
   {% set dossier_slug = section.extra.dossier %}
+  {% set idx = load_data(path="data/" ~ section.extra.view_model) %}
   {{ ui::page_header(title=section.title, description=section.description, breadcrumb_items=[
     "Dossier::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"),
     "Registr tvrzení",
@@ -14,14 +18,14 @@
   <article class="dossier-prose mb-10">{{ section.content | safe }}</article>
 
   <div class="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-5">
-    {{ ui::stat_tile(value=section.pages | length, label="Tvrzení celkem") }}
-    {% set corroborated = section.pages | filter(attribute="extra.status", value="status-corroborated") %}
+    {{ ui::stat_tile(value=idx.rows | length, label="Tvrzení celkem") }}
+    {% set corroborated = idx.rows | filter(attribute="status", value="status-corroborated") %}
     {{ ui::stat_tile(value=corroborated | length, label="Corroborated") }}
-    {% set single = section.pages | filter(attribute="extra.status", value="status-single") %}
+    {% set single = idx.rows | filter(attribute="status", value="status-single") %}
     {{ ui::stat_tile(value=single | length, label="1 zdroj") }}
-    {% set disputed = section.pages | filter(attribute="extra.status", value="status-disputed") %}
+    {% set disputed = idx.rows | filter(attribute="status", value="status-disputed") %}
     {{ ui::stat_tile(value=disputed | length, label="Sporné") }}
-    {% set quotes = section.pages | filter(attribute="extra.status", value="status-quote") %}
+    {% set quotes = idx.rows | filter(attribute="status", value="status-quote") %}
     {{ ui::stat_tile(value=quotes | length, label="Citace") }}
   </div>
 
@@ -33,7 +37,7 @@
   {{ views::open(
     id="claims-registry",
     title="Registr tvrzení",
-    count=section.pages | length,
+    count=idx.rows | length,
     default_view="table",
     search_label="Hledat v tvrzeních",
     sort_options=["id::ID", "status::Stav", "sources::Počet zdrojů"],
@@ -54,22 +58,22 @@
       record_type="claim",
       columns=["ID", "Stav", "Tvrzení", "Zdroje"],
       sort_keys=["id", "status", "", "sources"]) }}
-      {%- for p in section.pages %}
-      <tr data-record-key="{{ p.extra.clm_id }}" data-facet="{{ p.extra.status }}" data-inspect-id="{{ p.extra.clm_id }}" id="claims-registry-table-{{ p.extra.clm_id | lower }}">
-        <td class="whitespace-nowrap p-3 align-top" data-sort-value="{{ p.extra.clm_id }}">
-          <a href="{{ p.permalink | safe }}" @click.prevent="openInspector('{{ p.extra.clm_id }}')"
-            :aria-expanded="inspected === '{{ p.extra.clm_id }}' ? 'true' : 'false'"
-            class="font-mono text-xs text-[#f3e5c0] underline decoration-white/30 underline-offset-2 transition-colors hover:text-white">{{ p.extra.clm_id }}</a>
+      {%- for p in idx.rows %}
+      <tr data-record-key="{{ p.identifier }}" data-facet="{{ p.status }}" data-inspect-id="{{ p.identifier }}" id="claims-registry-table-{{ p.identifier | lower }}">
+        <td class="whitespace-nowrap p-3 align-top" data-sort-value="{{ p.identifier }}">
+          <a href="{{ config.base_url }}{{ p.route }}" @click.prevent="openInspector('{{ p.identifier }}')"
+            :aria-expanded="inspected === '{{ p.identifier }}' ? 'true' : 'false'"
+            class="font-mono text-xs text-[#f3e5c0] underline decoration-white/30 underline-offset-2 transition-colors hover:text-white">{{ p.identifier }}</a>
         </td>
-        <td class="whitespace-nowrap p-3 align-top" data-sort-value="{{ p.extra.status_label }}">
-          <span class="status-badge {{ p.extra.status }}">{{ p.extra.status_label }}</span>
+        <td class="whitespace-nowrap p-3 align-top" data-sort-value="{{ p.statusLabel }}">
+          <span class="status-badge {{ p.status }}">{{ p.statusLabel }}</span>
         </td>
         <td class="p-3 align-top text-white/75">
-          <a href="{{ p.permalink | safe }}" class="line-clamp-3 text-white/75 no-underline hover:text-white hover:underline sm:line-clamp-none">{{ p.extra.summary }}</a>
+          <a href="{{ config.base_url }}{{ p.route }}" class="line-clamp-3 text-white/75 no-underline hover:text-white hover:underline sm:line-clamp-none">{{ p.text }}</a>
         </td>
-        <td class="p-3 align-top" data-sort-value="{{ p.extra.sources | length }}">
+        <td class="p-3 align-top" data-sort-value="{{ p.sources | length }}">
           <span class="flex flex-wrap gap-1">
-          {%- for s in p.extra.sources %}<span class="rounded bg-white/5 px-1.5 py-0.5 font-mono text-[0.6rem] text-white/55">{{ s }}</span>{% endfor %}
+          {%- for s in p.sources %}<span class="rounded bg-white/5 px-1.5 py-0.5 font-mono text-[0.6rem] text-white/55">{{ s.identifier }}</span>{% endfor %}
           </span>
         </td>
       </tr>
@@ -79,16 +83,16 @@
 
   {{ views::projection(name="list", default_view="table") }}
     <ul class="divide-y divide-white/10 overflow-hidden rounded-lg border border-white/10 bg-white/[0.03]">
-      {%- for p in section.pages %}
-      <li data-record-key="{{ p.extra.clm_id }}" data-facet="{{ p.extra.status }}" id="claims-registry-list-{{ p.extra.clm_id | lower }}" class="p-3">
+      {%- for p in idx.rows %}
+      <li data-record-key="{{ p.identifier }}" data-facet="{{ p.status }}" id="claims-registry-list-{{ p.identifier | lower }}" class="p-3">
         <div class="flex flex-wrap items-baseline gap-x-2 gap-y-1">
-          <a href="{{ p.permalink | safe }}" class="font-mono text-xs text-[#f3e5c0] no-underline hover:underline">{{ p.extra.clm_id }}</a>
-          <span class="status-badge {{ p.extra.status }}">{{ p.extra.status_label }}</span>
+          <a href="{{ config.base_url }}{{ p.route }}" class="font-mono text-xs text-[#f3e5c0] no-underline hover:underline">{{ p.identifier }}</a>
+          <span class="status-badge {{ p.status }}">{{ p.statusLabel }}</span>
         </div>
-        <a href="{{ p.permalink | safe }}" class="mt-1 line-clamp-3 text-sm leading-snug text-white/75 no-underline hover:text-white">{{ p.extra.summary }}</a>
-        {%- if p.extra.sources %}
+        <a href="{{ config.base_url }}{{ p.route }}" class="mt-1 line-clamp-3 text-sm leading-snug text-white/75 no-underline hover:text-white">{{ p.text }}</a>
+        {%- if p.sources %}
         <p class="mt-1 flex flex-wrap gap-1">
-          {%- for s in p.extra.sources %}<span class="rounded bg-white/5 px-1.5 py-0.5 font-mono text-[0.6rem] text-white/55">{{ s }}</span>{% endfor %}
+          {%- for s in p.sources %}<span class="rounded bg-white/5 px-1.5 py-0.5 font-mono text-[0.6rem] text-white/55">{{ s.identifier }}</span>{% endfor %}
         </p>
         {%- endif %}
       </li>
@@ -98,14 +102,14 @@
 
   {{ views::projection(name="grid", default_view="table") }}
     <div class="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
-      {%- for p in section.pages %}
-      <article data-record-key="{{ p.extra.clm_id }}" data-facet="{{ p.extra.status }}" id="claims-registry-grid-{{ p.extra.clm_id | lower }}"
+      {%- for p in idx.rows %}
+      <article data-record-key="{{ p.identifier }}" data-facet="{{ p.status }}" id="claims-registry-grid-{{ p.identifier | lower }}"
         class="rounded-lg border border-white/10 bg-white/[0.03] p-3">
         <div class="flex flex-wrap items-baseline justify-between gap-2">
-          <a href="{{ p.permalink | safe }}" class="font-mono text-xs text-[#f3e5c0] no-underline hover:underline">{{ p.extra.clm_id }}</a>
-          <span class="status-badge {{ p.extra.status }}">{{ p.extra.status_label }}</span>
+          <a href="{{ config.base_url }}{{ p.route }}" class="font-mono text-xs text-[#f3e5c0] no-underline hover:underline">{{ p.identifier }}</a>
+          <span class="status-badge {{ p.status }}">{{ p.statusLabel }}</span>
         </div>
-        <a href="{{ p.permalink | safe }}" class="mt-1.5 line-clamp-4 block text-sm leading-snug text-white/75 no-underline hover:text-white">{{ p.extra.summary }}</a>
+        <a href="{{ config.base_url }}{{ p.route }}" class="mt-1.5 line-clamp-4 block text-sm leading-snug text-white/75 no-underline hover:text-white">{{ p.text }}</a>
       </article>
       {%- endfor %}
     </div>

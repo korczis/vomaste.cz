@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-07",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-07",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-07 — ČeskéNoviny.cz (ČTK)",
+  "description": "Babiš a Macinka jednali o postu zmocněnce; opozice žádala Turkovu rezignaci.",
+  "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceType": "tisková agentura (ČTK síť)",
+  "url": "https://www.ceskenoviny.cz/zpravy/babis-mluvil-s-macinkou-o-turkove-nehode-ve-hre-je-post-zmocnence/2850518",
+  "published": "2026-07-14",
+  "retrieved": "2026-07-21",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-12"
+    }
+  ],
+  "subjects": [
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "ČeskéNoviny.cz je portál napojený na síť ČTK (Česká tisková kancelář) —\nzpravodajství agenturního typu, obvykle rychlé a věcné, s nižší mírou\nautorské interpretace než komentářové servery.\n\nTento zdroj je jediným v registru, který výslovně dokládá, že o Turkově\npostu zmocněnce jednal přímo premiér s Macinkou, a že opozice (mj. TOP 09)\nžádala Turkův okamžitý odchod ze všech funkcí včetně poslaneckého mandátu.\nTvrzení o žádosti opozice (viz sekce \"Bezprostřední reakce\" v hlavním\ndossieru) je v našem výběru zdrojů podloženo jen tímto jedním zdrojem —\njde tedy o jednozdrojové, ne o `CORROBORATED` ve smyslu dvou nezávislých\nredakcí."
+    }
+  ],
+  "order": 7
+}

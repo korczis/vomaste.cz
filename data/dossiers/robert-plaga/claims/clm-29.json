@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-29",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-29",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "text": "MŠMT ještě před zastavením testování vydalo doporučení, aby školy kvůli výpadkům infrastruktury využívaly instalovanou aplikaci namísto webového rozhraní, a připomnělo, že školy mohou typ testovací aplikace samy změnit ve spolupráci s technickou podporou.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-13"
+    }
+  ],
+  "subjects": [
+    "plaga"
+  ],
+  "order": 29,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/robert-plaga/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

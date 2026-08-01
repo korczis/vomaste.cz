@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-27",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-27",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
+  },
+  "title": "SRC-27 — Reflex",
+  "description": "Vláda jako generátor skandálů. Kdo zaplatí desítky milionů korun po poradkyni ministra Juchelky?",
+  "outlet": "Reflex",
+  "sourceType": "komentář/názor",
+  "url": "https://www.reflex.cz/clanek/komentare/137222/vlada-jako-generator-skandalu-kdo-zaplati-desitky-milionu-korun-po-poradkyni-ministra-juchelky.html",
+  "published": "2026-07-24",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-46"
+    }
+  ],
+  "subjects": [
+    "juchelka"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Vláda jako generátor skandálů. Kdo zaplatí desítky milionů korun po poradkyni ministra Juchelky?**\n\nKomentář Jiřího Sezemského sčítající potenciální dopad na zhruba 82 mil. Kč (64 mil. z Národního plánu obnovy plus dalších 18 mil. z OPZ+) a argumentující, že neproplacené dotace musí být žadatelům uhrazeny z domácího rozpočtu. Autorské hodnocení, nikoli zpravodajské zjištění.\n\nZdroj otevřen a přečten 2026-07-30. **Komentář/názorový text** — dokládá, že autor hodnocení publikoval, ne že hodnocení platí."
+    }
+  ],
+  "order": 27
+}

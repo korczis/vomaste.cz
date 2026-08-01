@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-13",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-13",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "text": "Červený tvrdí, že přesun z ministerské kanceláře byl jeho vlastní volbou (jižní strana, 'celý den sluníčko', výhled na stadion Slavie), a popírá, že by úpravy dělal kvůli Turkovi: 'Kancelář ministra je ta, ve které sedí ministr.'",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-09"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "order": 13,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/igor-cerveny/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

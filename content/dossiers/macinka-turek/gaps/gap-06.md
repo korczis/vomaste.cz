@@ -1,4 +1,5 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "GAP-06 — Výsledek stížnosti proti odložení trestního oznámení"
 description = "O stížnosti proti procesnímu odložení trestního oznámení (znásilnění, domácí násilí) k datu poslední kontroly nebylo rozhodnuto."
 template = "dossier-gap.html"
@@ -6,16 +7,14 @@ weight = 6
 aliases = ["/dossier/mezery/gap-06/"]
 
 [extra]
-subjects = ["turek"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/macinka-turek/gaps/GAP-06"
+view_model = "generated/views/dossiers/macinka-turek/gaps/gap-06.json"
 dossier = "macinka-turek"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-06"
-priority = "vysoká"
-checked = "2026-07-29"
-claims = ["CLM-25", "CLM-26", "CLM-27"]
 +++
-
 *(Nejcitlivější položka tohoto přehledu — viz [plný popis kauzy](@/dossiers/macinka-turek/_index.md#trestni-oznameni-obvineni-z-domaciho-nasili-a-znasilneni)
 pro nutný kontext. Tento přehled neuvádí jméno oznamovatelky, protože ho
 neuvádí ani citované zdroje, a nehodnotí vinu ani nevinu v žádném

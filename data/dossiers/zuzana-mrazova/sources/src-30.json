@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-30",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-30",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "title": "SRC-30 — ČeskéNoviny.cz (ČTK): Sněmovna schválila stavební novelu, podle opozice nahrává developerům (10. 7. 2026)",
+  "description": "ČeskéNoviny.cz nezávisle na Advokátní deník (SRC-18) potvrzuje výsledek hlasování (89:86), nový úřad a snížení počtu stavebních úřadů.",
+  "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceFamily": "ctk",
+  "sourceType": "agenturní zpravodajství",
+  "url": "https://www.ceskenoviny.cz/zpravy/snemovna-schvalila-stavebni-novelu-podle-opozice-nahrava-developerum/2849378",
+  "published": "2026-07-10",
+  "retrieved": "2026-07-31",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-47"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-48"
+    }
+  ],
+  "subjects": [
+    "mrazova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "ČeskéNoviny.cz dne 10. 7. 2026: „Pro schválení novely hlasovalo 89\nposlanců vládní koalice. Pro schválení jich bylo zapotřebí nejméně 86.\"\n„Stavební úřady budou nově fungovat pod státem a vznikne Úřad rozvoje\núzemí.\" Počet stavebních úřadů se sníží z 638 na 205 územních\npracovišť.\n\n**Nezávislost**: samostatná redakce/agentura od Advokátní deník\n(SRC-18) — obě nezávisle potvrzují tytéž skutečnosti. Proto CLM-47 a\nCLM-48 nesou stav `CORROBORATED`."
+    }
+  ],
+  "order": 30
+}

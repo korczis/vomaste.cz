@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-28",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-28",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-28 — ČT24: Babiš je znovu jediným vlastníkem Agrofertu (17. 10. 2025)",
+  "description": "ČT24 nezávisle na Česká justice (SRC-06) potvrzuje mechaniku svěřenských fondů AB private trust I a II a jejich ukončení.",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "veřejnoprávní zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/babis-je-znovu-jedinym-vlastnikem-agrofertu-366177",
+  "published": "2025-10-17",
+  "retrieved": "2026-07-31",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-16"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "ČT24 dne 17. 10. 2025: „Babiš v únoru 2017 vložil akcie Agrofertu do\nsvěřenských fondů AB private trust I a AB private trust II.\" „První\nsvěřenský fond se rozpustil koncem loňska, na Babiše tak tehdy přešlo\nasi devadesát procent akcií.\" „Dne 15. října 2025 došlo k ukončení\nsprávy svěřenského fondu AB private trust II a k vydání spravovaného\nmajetku, tedy zhruba deseti procent akcií.\" „Předseda ANO Andrej Babiš\nje znovu jediným vlastníkem Agrofertu.\"\n\n**Nezávislost**: samostatná redakce od Česká justice (SRC-06) — obě\nnezávisle potvrzují tutéž skutečnost. Proto CLM-16 nese stav\n`CORROBORATED`."
+    }
+  ],
+  "order": 28
+}

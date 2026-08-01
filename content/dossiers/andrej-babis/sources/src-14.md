@@ -1,23 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-14 — Úřad vlády ČR: životopis Andreje Babiše (oficiální profil)"
 description = "Oficiální životopis na webu vlády — dřívější veřejné funkce, mandáty a profesní dráha."
 template = "dossier-source.html"
 weight = 14
 
 [extra]
-subjects = ["babis"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-14"
+view_model = "generated/views/dossiers/andrej-babis/sources/src-14.json"
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-14"
-outlet = "Úřad vlády ČR (vlada.gov.cz)"
-src_type = "úřední zdroj"
-url = "https://vlada.gov.cz/cz/vlada/clenove-vlady/premier/zivotopis/andrej-babis-223989/"
-published = "2026-07-30"
-retrieved = "2026-07-30"
-claims = ["CLM-35"]
 +++
-
 Oficiální životopis na webu Úřadu vlády.
 **Co dokládá:** datum narození (2. 9. 1954, Bratislava), profesní dráhu
 (Chemapol Bratislava 1978–1985, Petrimex 1985–1991, zakladatel a

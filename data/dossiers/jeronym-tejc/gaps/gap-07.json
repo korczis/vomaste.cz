@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/gaps/GAP-07",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-07",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "title": "GAP-07 — Není doloženo, jak Ústavní soud rozhodl o vládním návrhu na vyloučení soudce Šámala.",
+  "description": "Vyjádření vlády bylo podáno 20. 7. 2026 a podle České justice je soud v době publikace ještě neobdržel; k datu rešerše nebylo nalezeno navaz",
+  "priority": "střední",
+  "checked": "2026-07-30",
+  "claims": [],
+  "subjects": [
+    "tejc"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Není doloženo, jak Ústavní soud rozhodl o vládním návrhu na vyloučení soudce Šámala.\n\n**Proč je to mezera**: Vyjádření vlády bylo podáno 20. 7. 2026 a podle České justice je soud v době publikace ještě neobdržel; k datu rešerše nebylo nalezeno navazující rozhodnutí. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+    }
+  ],
+  "order": 7
+}

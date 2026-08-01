@@ -1,168 +1,21 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Oto Klempíř"
 description = "Neutrální, zdroji doložený přehled o Oto Klempířovi — ministru kultury ve třetí vládě Andreje Babiše."
 template = "entity-dossier.html"
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/oto-klempir"
+view_model = "generated/views/dossiers/oto-klempir/overview.json"
 dossier = "oto-klempir"
-dossier_title = "Oto Klempíř"
+record_type = "dossier"
 dossier_type = "entity"
-canonical_dossier = "oto-klempir"
-subject = "klempir"
 lang = "cs"
 seo_type = "ProfilePage"
-subject_entities = ["klempir"]
-subjects = ["Oto Klempíř"]
 updated = "2026-07-30"
 reviewed_at = "2026-07-30"
-
-
-[[extra.timeline]]
-date = "2025-10"
-title = "Zhruba 500 umělců žádá otevřeným dopisem prezidenta Pavla a Andreje Babiše, aby ministerstvo kultury nepřipadlo Motoristům"
-anchor = "kauza-jmenovani-politika"
-dot = "dot-fact"
-subjects = ["klempir"]
-
-[[extra.timeline]]
-date = "2026-02"
-title = "Klempíř hájí škrty v rozpočtu kultury a oznamuje konec rozhodování umělců o rozdělování dotací"
-anchor = "kauza-granty-pamatky"
-dot = "dot-fact"
-subjects = ["klempir"]
-
-[[extra.timeline]]
-date = "2026-03"
-title = "Klempíř odvolává generální ředitelku Národní galerie Praha Alicju Knastovou; Uměleckohistorická společnost posílá kritický otevřený dopis"
-anchor = "kauza-ngp-vyberove-rizeni"
-dot = "dot-fact"
-subjects = ["klempir"]
-
-[[extra.timeline]]
-date = "2026-03"
-title = "Klempíř podepisuje stanovisko ke stavbě v památkové zóně Smíchov s konstatováním, že ministerstvo nemůže zasáhnout"
-anchor = "kauza-granty-pamatky"
-dot = "dot-fact"
-subjects = ["klempir"]
-
-[[extra.timeline]]
-date = "2026-04"
-title = "Klempíř představuje návrh na zrušení koncesionářských poplatků a financování ČT a ČRo ze státního rozpočtu od roku 2027"
-anchor = "kauza-financovani-ct-cro"
-dot = "dot-fact"
-subjects = ["klempir"]
-
-[[extra.timeline]]
-date = "2026-05"
-title = "Demonstrace Milionu chvilek v Praze a předání petice se 184 tisíci podpisy proti zákonu o médiích veřejné služby"
-anchor = "kauza-financovani-ct-cro"
-dot = "dot-fact"
-subjects = ["klempir"]
-
-[[extra.timeline]]
-date = "2026-06"
-title = "Vláda schvaluje zrušení poplatků a přechod ČT a ČRo na financování ze státního rozpočtu (7,8 miliardy korun ročně)"
-anchor = "kauza-financovani-ct-cro"
-dot = "dot-fact"
-subjects = ["klempir"]
-
-[[extra.timeline]]
-date = "2026-06"
-title = "Klempíř ruší rozhodnutí předchůdce o vyjmutí pastvin hřebčína Napajedla z památkové ochrany"
-anchor = "kauza-granty-pamatky"
-dot = "dot-fact"
-subjects = ["klempir"]
-
-[[extra.timeline]]
-date = "2026-06"
-title = "Vypískání ministra na folklorním festivalu ve Strážnici a spuštění petice „Oto, zabal to!“ za jeho odvolání"
-anchor = "kauza-jmenovani-politika"
-dot = "dot-fact"
-subjects = ["klempir"]
-
-[[extra.timeline]]
-date = "2026-07"
-title = "Ministerstvo kultury ruší výběrové řízení na generálního ředitele Národní galerie Praha"
-anchor = "kauza-ngp-vyberove-rizeni"
-dot = "dot-fact"
-subjects = ["klempir"]
-
-[[extra.timeline]]
-date = "2026-07"
-title = "Poslanecká sněmovna schvaluje novelu stavebního zákona oslabující postavení památkářů"
-anchor = "kauza-granty-pamatky"
-dot = "dot-fact"
-subjects = ["klempir"]
-
-[[extra.timeline]]
-date = "2026-07"
-title = "Odboráři Národní galerie Praha posílají ministrovi otevřený dopis s 63 podpisy"
-anchor = "kauza-ngp-vyberove-rizeni"
-dot = "dot-fact"
-subjects = ["klempir"]
-
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-KLEMPIR"]
-
-[[extra.timeline]]
-date = "2025-12"
-title = "Jmenován ministrem kultury"
-anchor = "kauza-financovani-verejnopravnich-medii"
-dot = "dot-fact"
-subjects = ["klempir"]
-[[extra.cases]]
-anchor = "kauza-financovani-verejnopravnich-medii"
-period = "2026"
-title = "Financování ČT a ČRo ze státního rozpočtu"
-status = "status-single"
-label = "Probíhá, jediný ověřený zdroj"
-summary = "Klempíř prosazuje přesun financování České televize a Českého rozhlasu do státního rozpočtu; RESPEKT to popisuje jako postup ke státní kontrole veřejnoprávních médií."
-claims = []
-subjects = ["klempir"]
-
-[[extra.cases]]
-anchor = "kauza-financovani-ct-cro"
-period = "2026"
-title = "Zrušení koncesionářských poplatků a financování ČT/ČRo"
-status = "status-single"
-label = "Sledované téma"
-summary = "Zrušení koncesionářských poplatků a financování ČT/ČRo — viz tvrzení CLM-07, CLM-08, CLM-09, CLM-10, CLM-11, CLM-12, CLM-13, CLM-14, CLM-15, CLM-16, CLM-17, CLM-18, CLM-19, CLM-20, CLM-21."
-claims = []
-subjects = ["klempir"]
-
-[[extra.cases]]
-anchor = "kauza-ngp-vyberove-rizeni"
-period = "2026"
-title = "Národní galerie: odvolání ředitelky a zrušené výběrové řízení"
-status = "status-single"
-label = "Sledované téma"
-summary = "Národní galerie: odvolání ředitelky a zrušené výběrové řízení — viz tvrzení CLM-22, CLM-23, CLM-24, CLM-25, CLM-26, CLM-27, CLM-28, CLM-29."
-claims = []
-subjects = ["klempir"]
-
-[[extra.cases]]
-anchor = "kauza-granty-pamatky"
-period = "2026"
-title = "Granty, rozpočet kultury a ochrana památek"
-status = "status-single"
-label = "Sledované téma"
-summary = "Granty, rozpočet kultury a ochrana památek — viz tvrzení CLM-30, CLM-31, CLM-32, CLM-33, CLM-34, CLM-35, CLM-36, CLM-37, CLM-38, CLM-39."
-claims = []
-subjects = ["klempir"]
-
-[[extra.cases]]
-anchor = "kauza-jmenovani-politika"
-period = "2026"
-title = "Vstup do politiky a jmenování ministrem"
-status = "status-single"
-label = "Sledované téma"
-summary = "Vstup do politiky a jmenování ministrem — viz tvrzení CLM-40, CLM-41, CLM-42, CLM-43."
-claims = []
-subjects = ["klempir"]
-
 +++
-
 Oto Klempíř je ministrem kultury ve třetí vládě Andreje Babiše a
 poslancem za hnutí Motoristé sobě. Tento dossier shrnuje veřejně
 doložené skutečnosti o jeho veřejné funkci a o konkrétních resortních

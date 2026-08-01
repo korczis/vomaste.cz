@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/szpi",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "szpi",
+  "entityId": "szpi",
+  "title": "SZPI",
+  "entityType": "public_institution",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "macinka-turek",
+    "filip-turek"
+  ],
+  "routeAliases": [
+    "/dossiers/macinka-turek/entities/szpi/"
+  ],
+  "order": 21,
+  "provenance": {
+    "discoveredAt": "2026-07-29",
+    "discoveredVia": [
+      "edge-zapperclub-szpi"
+    ],
+    "claimRefs": [
+      "CLM-31"
+    ],
+    "sourceRefs": [
+      "SRC-34",
+      "SRC-35"
+    ],
+    "cluster": "zapper-club",
+    "depth": 2
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext.\n\nStátní zemědělská a potravinářská inspekce odebrala přístroji zapper certifikát kvůli zakázaným léčebným tvrzením."
+    }
+  ]
+}

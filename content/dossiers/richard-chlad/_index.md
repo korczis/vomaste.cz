@@ -1,74 +1,21 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Richard Chlad"
 description = "Neutrální, zdroji doložený přehled o Richardu Chladovi — dárci strany Motoristé sobě. Autorizovaný rozsah: evidované dary, veřejně uváděná čísla a publikované reakce vedení strany."
 template = "entity-dossier.html"
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/richard-chlad"
+view_model = "generated/views/dossiers/richard-chlad/overview.json"
 dossier = "richard-chlad"
-dossier_title = "Richard Chlad"
+record_type = "dossier"
 dossier_type = "entity"
-canonical_dossier = "richard-chlad"
-subject = "chlad"
 lang = "cs"
 seo_type = "ProfilePage"
-subject_entities = ["chlad"]
-subjects = ["Richard Chlad"]
 updated = "2026-07-30"
 reviewed_at = "2026-07-30"
-
-[[extra.timeline]]
-date = "2024"
-title = "Podle předsedy strany poskytl před eurovolbami dvakrát 50 000 Kč; sám jinde mluví o podpoře v řádu 1,5 milionu"
-anchor = "kauza-financovani"
-dot = "dot-fact"
-subjects = ["chlad"]
-
-[[extra.timeline]]
-date = "2025"
-title = "V rejstříku evidováno celkem 638 864 Kč darů straně Motoristé sobě, včetně nepeněžního plnění"
-anchor = "kauza-financovani"
-dot = "dot-fact"
-subjects = ["chlad"]
-
-[[extra.timeline]]
-date = "2025-10-16"
-title = "Ve zveřejněném profilu sám uvádí podporu „necelé dva miliony korun“ na propagaci a vozy pro mítinky"
-anchor = "kauza-financovani"
-dot = "dot-fact"
-subjects = ["chlad"]
-
-[[extra.timeline]]
-date = "2026-03-17"
-title = "Turek a Macinka veřejně zlehčují jeho roli v podpoře strany"
-anchor = "kauza-reakce-strany"
-dot = "dot-fact"
-subjects = ["chlad"]
-
-[[extra.cases]]
-anchor = "kauza-financovani"
-period = "2024–2025"
-title = "Financování strany Motoristé sobě"
-status = "status-single"
-label = "Legální dary, nesourodá čísla"
-summary = "V rejstříku evidováno 638 864 Kč za rok 2025 včetně nepeněžního plnění; Chlad sám veřejně uváděl „necelé dva miliony“ i zhruba 1,5 milionu, předseda strany 2× 50 000 Kč před eurovolbami 2024. Darovat straně je legální a čísla nejsou přímo porovnatelná — týkají se různých období a různého vymezení podpory."
-claims = ["CLM-01", "CLM-02", "CLM-03", "CLM-04"]
-subjects = ["chlad"]
-
-[[extra.cases]]
-anchor = "kauza-reakce-strany"
-period = "2026"
-title = "Publikované reakce vedení strany"
-status = "status-quote"
-label = "Citace obou stran"
-summary = "Turek i Macinka veřejně uvedli, že jeho roli zpravodajství přeceňuje. Doloženo je, že tato vyjádření padla — nikoli že jejich obsah platí."
-claims = ["CLM-05", "CLM-06"]
-subjects = ["chlad"]
-
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-W"]
 +++
-
 ## Kdo je Richard Chlad {#kdo}
 
 Richard Chlad je podnikatel a doložený **dárce strany Motoristé sobě**,

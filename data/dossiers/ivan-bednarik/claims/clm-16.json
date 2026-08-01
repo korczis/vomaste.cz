@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-16",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-16",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "text": "Bednárik označil zděděný návrh rozpočtu za problematický s tím, že naplánovat na straně výdajů o 37 miliard větší rozpočet je podle něj opravdu divné, a přirovnal situaci k dárku, který by od předchůdce nepřivítal.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-16"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "order": 16,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/ivan-bednarik/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

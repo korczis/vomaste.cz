@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-10",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-10",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
+  },
+  "title": "SRC-10 — Blesk.cz",
+  "description": "Plakáty s „chirurgy z dovozu“: SPD je vinna! Podněcovala k nenávisti, rozhodl soud",
+  "outlet": "Blesk.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://www.blesk.cz/clanek/zpravy-politika/840898/plakaty-s-chirurgy-z-dovozu-spd-je-vinna-podnecovala-k-nenavisti-rozhodl-soud.html",
+  "published": "2026-06-03",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-14"
+    }
+  ],
+  "subjects": [
+    "okamura"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Plakáty s „chirurgy z dovozu“: SPD je vinna! Podněcovala k nenávisti, rozhodl soud**\n\nZpravodajství o vyhlášení rozsudku s odůvodněním soudkyně a s informací, že státní zástupce požadoval trest o půl milionu korun vyšší a v závěrečné řeči použil paralelu s nacistickým Německem.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 10
+}

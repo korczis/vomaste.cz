@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-16",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-16",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar"
+  },
+  "text": "Ministerstvo vnitra jako cíl opatření uvedlo „efektivnější rozdělení policejních kapacit tak, aby mohly být využity tam, kde je potřeba nejvyšší“.",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-02"
+    }
+  ],
+  "subjects": [
+    "metnar"
+  ],
+  "order": 16,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/lubomir-metnar/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-27",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-27",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-27 — Hlídač státu (Macinka, funkce)",
+  "description": "Macinka byl 2025–2026 zároveň ministrem zahraničí, místopředsedou vlády a dočasně pověřen řízením ŽP.",
+  "outlet": "Hlídač státu",
+  "sourceFamily": "hlidac-statu",
+  "sourceType": "veřejný rejstřík / transparentní databáze",
+  "url": "https://www.hlidacstatu.cz/osoba/funkce/petr-macinka",
+  "retrieved": "2026-07-22",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-24"
+    }
+  ],
+  "subjects": [
+    "macinka"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Přehled veřejných a politických funkcí Petra Macinky podle Hlídače\nstátu, použitý k upřesnění sekce \"Kdo\" v hlavním dossieru (dříve jen\nobecné „člen vlády\"):\n\n- poslanec (od 2025)\n- ministr zahraničních věcí (od 2025)\n- místopředseda vlády (od 2025)\n- pověřen řízením Ministerstva životního prostředí (2025–2026)\n- předseda hnutí Motoristé sobě (od 2022)\n- manažer Institutu Václava Klause (od 2017)\n\nZajímavá je položka \"pověřen řízením Ministerstva životního prostředí\" —\nnavazuje na dřívější citaci v dossieru (SRC-05, ČT24: „Je, byl a bude to\nTurek,\" řekl Macinka k Turkově nominaci na ministra životního prostředí).\nTento zdroj nedokládá, proč a jak přesně k dočasnému pověření Macinky\nmísto Turka došlo — jde o zaznamenaný fakt funkce, ne o vysvětlení\nkauzality; případná souvislost s kauzami z let 2024/2025 zůstává\nnedohledaná."
+    }
+  ],
+  "order": 27
+}

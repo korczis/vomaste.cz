@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-26",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-26",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
+  },
+  "text": "Zrušení výběrového řízení kritizoval bývalý ministr kultury Martin Baxa (ODS) jako krok „opět nesmyslný“ a rektor Akademie výtvarných umění Tomáš Pospiszyl uvedl, že nové řízení problémy galerie nevyřeší.",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-04"
+    }
+  ],
+  "subjects": [
+    "klempir"
+  ],
+  "order": 26,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/oto-klempir/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

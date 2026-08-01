@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/rsvp-trust",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "rsvp-trust",
+  "entityId": "rsvp-trust",
+  "title": "RSVP Trust",
+  "entityType": "organization",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "andrej-babis"
+  ],
+  "routeAliases": [
+    "/dossiers/andrej-babis/entities/rsvp-trust/"
+  ],
+  "order": 4,
+  "provenance": {
+    "discoveredAt": "2026-07-30",
+    "discoveredVia": [
+      "edge-rsvp-agrofert"
+    ],
+    "claimRefs": [
+      "CLM-04"
+    ],
+    "sourceRefs": [
+      "SRC-02"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext."
+    }
+  ]
+}

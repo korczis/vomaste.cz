@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-14",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-14",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "title": "SRC-14 — ČT24 (Česká televize)",
+  "description": "Ve FN Olomouc implantovali některé defibrilátory bez splnění všech kritérií",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/ve-fn-olomouc-implantovali-nektere-defibrilatory-bez-splneni-vsech-kriterii-375449",
+  "published": "2026-07-10",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-24"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-25"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Ve FN Olomouc implantovali některé defibrilátory bez splnění všech kritérií**\n\nZpráva o závěrech komise za rok 2024, rozsahu policejního šetření 2015–2025, roli Miloše Táborského, odhadu škody přes 150 mil. Kč a o tom, že dosud nebyl nikdo obviněn. Zmiňuje šetření VZP a Úřadu evropského veřejného žalobce.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 14
+}

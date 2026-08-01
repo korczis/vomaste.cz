@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-43",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-43",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-43 — Aktuálně.cz",
+  "description": "Turek a Macinka zlehčují roli sponzora Chlada; Macinka uvádí nižší částky než sám Chlad.",
+  "outlet": "Aktuálně.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://zpravy.aktualne.cz/domaci/strejda-ricrd-motoriste-davaji-ruce-pryc-od-ideologa-svazaku-pry-jen-kamarad-filipa/r~aaa290508f28eab4877b7a010ace8f05/",
+  "published": "2026-03-17",
+  "retrieved": "2026-07-22",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-37"
+    }
+  ],
+  "subjects": [
+    "macinka",
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Aktuálně.cz cituje přímá vyjádření vedení Motoristů k Richardu Chladovi:\n\nTurek: „Je to můj kamarád a s politikou nemá nic společného, i záměrně\npřeceňujete jeho roli v podpoře Motoristů.\"\n\nMacinka: „Richard Chlad je kamarád Filipa Turka, ale rozhodně není\nideologem Motoristů. Tím jsem já. ... Dal nám před eurovolbami dvakrát\n50 tisíc korun. Já žádný svazácký ani normalizační ideolog nejsem.\"\n\nČlánek dává Macinkovo číslo (100 000 Kč před eurovolbami 2024) do\nkontrastu s Chladovým vlastním tvrzením o podpoře v řádu 1,5 milionu Kč\n(pronájmy aut, doprava, pojištění) — další případ rozporu mezi\noficiální/veřejně prezentovanou částkou a Chladovou vlastní verzí, tentokrát\nz úst samotného vedení strany, ne jen z rejstříkových dat."
+    }
+  ],
+  "order": 43
+}

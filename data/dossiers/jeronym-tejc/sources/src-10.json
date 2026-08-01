@@ -1,0 +1,49 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-10",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-10",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "title": "SRC-10 — ČT24 (Česká televize)",
+  "description": "Vláda navrhne Ústavnímu soudu, aby zamítl prezidentovu kompetenční žalobu",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/vlada-navrhne-ustavnimu-soudu-aby-zamitl-prezidentovu-kompetencni-zalobu-375758",
+  "published": "2026-07-20",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-16"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-17"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-18"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-47"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-48"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-50"
+    }
+  ],
+  "subjects": [
+    "tejc"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Vláda navrhne Ústavnímu soudu, aby zamítl prezidentovu kompetenční žalobu**\n\nVláda navrhne ÚS zamítnutí či odmítnutí kompetenční žaloby prezidenta Pavla k účasti na summitu NATO; postoj prezentoval ministr Tejc. Vláda žádá vyloučení soudce Pavla Šámala — podle Tejce „při vydání předběžného opatření bezprecedentně projevil soudní aktivismus a zasáhl do ústavního postavení vlády“. Tejc kritizoval, že vláda nedostala před vydáním opatření možnost se k žalobě vyjádřit.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 10
+}

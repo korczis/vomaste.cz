@@ -1,4 +1,5 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-33 — Blesk.cz"
 description = "Pokuty 200 000 Kč za dvě nepovolené stavby na Turkově pozemku v Praze-Dubči."
 template = "dossier-source.html"
@@ -6,19 +7,14 @@ weight = 33
 aliases = ["/dossier/zdroje/src-33/"]
 
 [extra]
-subjects = ["turek"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-33"
+view_model = "generated/views/dossiers/macinka-turek/sources/src-33.json"
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-33"
-outlet = "Blesk.cz"
-src_type = "zpravodajství (tabloid)"
-url = "https://www.blesk.cz/clanek/zpravy-politika/844092/turek-a-jeho-cerna-mostarna-dostal-mastnou-pokutu.html"
-retrieved = "2026-07-22"
-published = "2026-07-17"
-claims = ["CLM-30"]
 +++
-
 Stavební úřad Prahy 15 udělil Filipu Turkovi ve dvou samostatných
 řízeních (pravomocných 3. 7. 2026) pokuty za nepovolené stavby na jeho
 pozemku v Praze-Dubči, v přírodním parku Říčanka, kde je stavební

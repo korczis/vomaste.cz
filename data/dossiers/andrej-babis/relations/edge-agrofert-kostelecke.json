@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/relations/edge-agrofert-kostelecke",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-agrofert-kostelecke",
+  "relationId": "edge-agrofert-kostelecke",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/agrofert"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/kostelecke-uzeniny"
+  },
+  "relationType": "HOLDS_INTEREST_IN",
+  "label": "firma ze skupiny Agrofert",
+  "status": "contextual",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-18"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-07"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 4,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextový, strukturální vztah — dossier jej neuvádí jako vlastní doloženou investigaci, jen jako veřejně nesporné pozadí."
+    }
+  ]
+}

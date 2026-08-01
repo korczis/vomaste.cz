@@ -1,4 +1,5 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-36 — Aktuálně.cz"
 description = "Turkova závodní kariéra: z 27 startů 12 výher, řada závodů bez soupeře nebo s jediným soupeřem."
 template = "dossier-source.html"
@@ -6,19 +7,14 @@ weight = 36
 aliases = ["/dossier/zdroje/src-36/"]
 
 [extra]
-subjects = ["turek"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-36"
+view_model = "generated/views/dossiers/macinka-turek/sources/src-36.json"
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-36"
-outlet = "Aktuálně.cz"
-src_type = "zpravodajství / reportáž"
-url = "https://zpravy.aktualne.cz/domaci/turkovy-hrichy-prehledne-hajlovani-do-ksichtu-domaci-nasili/r~ec25cb48d3a011f0b589ac1f6b220ee8/"
-retrieved = "2026-07-22"
-published = "2025-12-08"
-claims = ["CLM-32", "CLM-33"]
 +++
-
 Souhrnný přehledový článek Vieta Trana (Aktuálně.cz, 8. 12. 2025) mapuje
 více Turkových kauz najednou. Pro tento dossier jsou relevantní dvě
 samostatná zjištění:

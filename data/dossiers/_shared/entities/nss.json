@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/nss",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "nss",
+  "entityId": "nss",
+  "title": "Nejvyšší správní soud",
+  "entityType": "public_institution",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "contextual",
+  "dossiers": [
+    "andrej-babis"
+  ],
+  "routeAliases": [
+    "/dossiers/andrej-babis/entities/nss/"
+  ],
+  "order": 7,
+  "provenance": {
+    "discoveredAt": "2026-07-30",
+    "discoveredVia": [
+      "edge-kostelecke-nss",
+      "edge-sady-nss",
+      "edge-navos-nss"
+    ],
+    "claimRefs": [
+      "CLM-18"
+    ],
+    "sourceRefs": [
+      "SRC-07"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext."
+    }
+  ]
+}

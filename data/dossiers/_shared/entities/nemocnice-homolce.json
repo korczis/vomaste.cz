@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/nemocnice-homolce",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "nemocnice-homolce",
+  "entityId": "nemocnice-homolce",
+  "title": "Nemocnice Na Homolce",
+  "entityType": "public_institution",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "macinka-turek",
+    "filip-turek"
+  ],
+  "routeAliases": [
+    "/dossiers/macinka-turek/entities/nemocnice-homolce/"
+  ],
+  "order": 23,
+  "provenance": {
+    "discoveredAt": "2026-07-29",
+    "discoveredVia": [
+      "edge-homolce-nehoda2026"
+    ],
+    "claimRefs": [
+      "CLM-18"
+    ],
+    "sourceRefs": [
+      "SRC-20"
+    ],
+    "cluster": "dopravni-nehoda",
+    "depth": 2
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext.\n\nProvozovatel vozidla zdravotnické záchranné služby, které se srazilo s Turkovým autem."
+    }
+  ]
+}

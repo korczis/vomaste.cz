@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/gaps/GAP-03",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tunde-bartha"
+  },
+  "title": "GAP-03 — Prověřované propojení s Jaroslavem Faltýnkem",
+  "description": "Bylo prověřováno, zda existuje publikované propojení mezi Tünde Barthou a Jaroslavem Faltýnkem; žádný jmenovaný nezávislý zdroj takový vztah nedokládá.",
+  "priority": "střední",
+  "checked": "2026-07-30",
+  "claims": [],
+  "subjects": [
+    "bartha"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Při zakládání tohoto dossieru bylo prověřováno, zda existuje publikované\npropojení mezi Tünde Barthou a poslancem Jaroslavem Faltýnkem.\n**V otevřených zdrojích nebylo nalezeno žádné jmenované nezávislé\nzpravodajství, které by takový vztah dokládalo.**\n\nTento záznam existuje proto, že prověřování proběhlo — a jeho výsledek\npatří na stránku stejně jako výsledek kladný. Dossier proto o takovém\nvztahu **neuvádí nic** a autorizační záznam `AUTH-2026-07-30-U` jej\nvýslovně vylučuje z rozsahu.\n\nOtevřenost není zjištění žádným směrem: neznamená, že vztah neexistuje,\nani že existuje. Znamená, že doložen není."
+    }
+  ],
+  "order": 3
+}

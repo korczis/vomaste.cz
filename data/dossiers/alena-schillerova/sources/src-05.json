@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-05",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-05",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "title": "SRC-05 — ČeskéNoviny.cz (ČTK)",
+  "description": "Senát zpřísnil podmínky pro vládní zvyšování výdajů",
+  "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceType": "zpravodajství",
+  "url": "https://www.ceskenoviny.cz/zpravy/senat-zprisnil-podminky-pro-vladni-zvysovani-vydaju/2830447",
+  "published": "2026-06-17",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-13"
+    }
+  ],
+  "subjects": [
+    "schillerova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Senát zpřísnil podmínky pro vládní zvyšování výdajů**\n\nZpráva o projednání novely v Senátu 17. 6. 2026. Po více než tříhodinové debatě Senát novelu vrátil Sněmovně s pozměňovacími návrhy — mimo jiné snížil limit pro vyjmuté infrastrukturní výdaje ze 2 % na 1 % HDP a podmínil navyšování výdajů souhlasem rozpočtového výboru. Schillerová se senátními úpravami nesouhlasila. Článek neobsahuje počty hlasů ani přímé citace.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 5
+}

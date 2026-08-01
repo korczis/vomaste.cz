@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-21",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-21",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "title": "SRC-21 — Ústavní soud ČR",
+  "description": "Ústavní soud vydal procesní rozhodnutí v řízení o kompetenčním sporu mezi prezidentem republiky a vládou",
+  "outlet": "Ústavní soud ČR",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://www.usoud.cz/aktualne/ustavni-soud-vydal-procesni-rozhodnuti-v-rizeni-o-kompetencnim-sporu-mezi-prezidentem-republiky-a-vladou-konecne-rozhodnuti-sporu-lze-ocekavat-v-radech-mesicu",
+  "published": "2026-06-24",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-41"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-42"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-43"
+    }
+  ],
+  "subjects": [
+    "tejc"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Ústavní soud vydal procesní rozhodnutí v řízení o kompetenčním sporu mezi prezidentem republiky a vládou**\n\nSdělení soudu k předběžnému opatření ve věci sp. zn. Pl. ÚS 16/26. Soud nařídil vládě, ministrovi zahraničních věcí a ministerstvu bezodkladně notifikovat NATO a organizátorům summitu, že součástí oficiální delegace je také prezident, a zajistit mu akreditaci. Soudcem zpravodajem je Pavel Šámal, odlišné stanovisko uplatnili soudce Wintr a soudkyně Řepková. Věc je projednávána přednostně, konečné rozhodnutí se očekává v řádu měsíců.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 21
+}

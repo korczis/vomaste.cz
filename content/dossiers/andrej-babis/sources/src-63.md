@@ -1,23 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-63 — ČT24: Seznam.cz podal žalobu na Babiše. „Dlouhodobě lžou,“ říká premiér (3. 3. 2026)"
 description = "Citace obou stran: Babišovo tvrzení o „odrbání“ státu o 900 milionů na srážkové dani přes Kypr; Seznam: státu nedluží žádnou daň."
 template = "dossier-source.html"
 weight = 63
 
 [extra]
-subjects = ["babis"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-63"
+view_model = "generated/views/dossiers/andrej-babis/sources/src-63.json"
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-63"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/seznamcz-podal-zalobu-na-babise-dlouhodobe-lzou-rika-premier-370902"
-published = "2026-03-03"
-retrieved = "2026-08-01"
-claims = ["CLM-86", "CLM-87"]
 +++
-
 ČT24 3. 3. 2026 k žalobě Seznam.cz cituje obě strany. Seznam: „Pana
 Babiše jsme na konci roku vyzvali, aby svých útoků zanechal,“ a
 požadavky žaloby (smazání příspěvků, zákaz šíření, omluva). Babiš:

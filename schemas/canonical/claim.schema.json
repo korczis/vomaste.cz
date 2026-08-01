@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "title": "Kanonický záznam Claim (data/dossiers/<slug>/claims/clm-##.json)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["$schema", "schemaVersion", "@context", "@id", "@type", "recordType", "identifier", "dossier", "text", "status", "statusLabel", "sources", "subjects", "order", "content"],
+  "properties": {
+    "$schema": { "const": "https://vomaste.cz/schemas/canonical/claim.schema.json" },
+    "schemaVersion": { "const": 1 },
+    "@context": { "const": "https://vomaste.cz/context/v1.jsonld" },
+    "@id": { "$ref": "_defs.schema.json#/$defs/claimGlobalId" },
+    "@type": { "const": "vomaste:Claim" },
+    "recordType": { "const": "claim" },
+    "identifier": { "$ref": "_defs.schema.json#/$defs/clmId" },
+    "dossier": { "$ref": "_defs.schema.json#/$defs/dossierRef" },
+    "text": {
+      "type": "string",
+      "minLength": 1,
+      "$comment": "Shrnutí tvrzení (dnešní pole summary ve front matter)."
+    },
+    "status": { "$ref": "_defs.schema.json#/$defs/claimStatus" },
+    "statusLabel": { "type": "string", "minLength": 1 },
+    "sources": {
+      "type": "array",
+      "items": { "$ref": "_defs.schema.json#/$defs/sourceRef" }
+    },
+    "subjects": { "$ref": "_defs.schema.json#/$defs/subjects" },
+    "cases": {
+      "type": "array",
+      "items": { "$ref": "_defs.schema.json#/$defs/caseRef" }
+    },
+    "order": { "type": "integer", "minimum": 0 },
+    "content": { "$ref": "_defs.schema.json#/$defs/contentBlocks" },
+    "createdAt": { "$ref": "_defs.schema.json#/$defs/isoDate" },
+    "checkedAt": { "$ref": "_defs.schema.json#/$defs/isoDate" }
+  },
+  "if": {
+    "properties": { "status": { "not": { "const": "status-opinion" } } },
+    "required": ["status"]
+  },
+  "then": {
+    "properties": { "sources": { "type": "array", "minItems": 1 } },
+    "$comment": "Pravidlo 1 (AGENTS.md): žádné necitované tvrzení — každý claim mimo status-opinion cituje aspoň jeden otevřený zdroj. status-opinion je autorský komentář a jako jediný smí mít prázdné sources."
+  },
+  "$comment": "Jen tvar (schemas/README.md dělba práce). Referenční integrita (sources/cases skutečně existují), pravidlo 'corroborated vyžaduje >=2 nezávislé source families', single-source pravidlo a autorizace subjektů patří sémantickým validátorům fáze C, ne tomuto schématu."
+}

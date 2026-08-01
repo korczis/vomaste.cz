@@ -1,23 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-02 — CNN Prima News"
 description = "CNN Prima News, 16. 10. 2025: profil Richarda Chlada — podnikání v hazardu a energetice, starší osobní známost s Radovanem Krejčířem, jeho vlastní údaj o podpoře Motoristů „necelé dva miliony korun“."
 template = "dossier-source.html"
 weight = 2
 
 [extra]
-subjects = ["chlad"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/richard-chlad/sources/SRC-02"
+view_model = "generated/views/dossiers/richard-chlad/sources/src-02.json"
 dossier = "richard-chlad"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-02"
-outlet = "CNN Prima News"
-src_type = "celostátní zpravodajství"
-url = "https://cnn.iprima.cz/kdo-je-verny-sponzor-motoristu-richard-chlad-podporovatel-turka-i-kontroverzni-podnikatel-488806"
-retrieved = "2026-07-22"
-published = "2025-10-16"
-claims = ["CLM-02", "CLM-07", "CLM-08"]
 +++
-
 CNN Prima News dne 16. 10. 2025 profiluje podnikatele Richarda Chlada:
 začínal v 80. letech dovozem videokazet a hodinek, po roce 1989 se
 věnoval hazardu (síť heren Krijcos), dnes podle článku investuje do

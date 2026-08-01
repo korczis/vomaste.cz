@@ -1,0 +1,61 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/richard-chlad/updates/2026-07-30",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-07-30",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/richard-chlad"
+  },
+  "date": "2026-07-30",
+  "summary": "Založen dossier dle AUTH-2026-07-30-W ze tří zdrojů dříve otevřených a přečtených pro dossier macinka-turek (Hlídač státu, CNN Prima News 2025-10-16, Aktuálně.cz 2026-03-17). Základ veřejného zájmu je financování stran, ne osobní vazby. Klíčové rámování: darovat straně je legální a žádný zdroj Chladovi nevytýká protiprávní jednání; veřejně uváděná čísla (638 864 Kč / „necelé dva miliony“ / ~1,5 mil. / 2× 50 tis.) se LIŠÍ, ale NEJSOU přímo porovnatelná — různá období a různé vymezení podpory → GAP-01; není doloženo, že by cokoli nebylo řádně vykázáno → GAP-02. Radovan Krejčíř zůstává mimo graf i mimo témata (viz „Not authorized“ v AGENTS.md).",
+  "addedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-08"
+    }
+  ],
+  "updatedClaims": [],
+  "addedGaps": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/gaps/GAP-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/gaps/GAP-02"
+    }
+  ],
+  "closedGaps": [],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/sources/SRC-03"
+    }
+  ]
+}

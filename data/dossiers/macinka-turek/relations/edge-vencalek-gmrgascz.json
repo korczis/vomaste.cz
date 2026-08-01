@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/relations/edge-vencalek-gmrgascz",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-vencalek-gmrgascz",
+  "relationId": "edge-vencalek-gmrgascz",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/vencalek"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/gmrgas-cz"
+  },
+  "relationType": "HOLDS_INTEREST_IN",
+  "label": "jediný společník a jednatel",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-48"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-17"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-55"
+    }
+  ],
+  "subjects": [
+    "macinka"
+  ],
+  "directed": true,
+  "order": 33,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam vztahu edge-vencalek-gmrgascz — typ\nvztahu, podporující tvrzení a zdroje v tabulce výše jsou úplné. Stav FAKT\nstojí na dvou nezávislých zdrojích různé povahy: investigativní redakce\n(SRC-17) a primární státní registr (SRC-55).\n\nJde o **záznam zveřejněné vlastnické vazby, ne o obvinění**. Petr Vencálek\nnení subjektem tohoto dossieru ani veřejným funkcionářem; vystupuje tu jen\nproto, že ho citované zpravodajství jmenuje jako majitele firmy, která je\npodle téhož zdroje spoluvlastníkem ukrajinské GMR GAS UA LLC. Hlavní\nstránka dossieru vykresluje interaktivní graf ze stejných dat."
+    }
+  ]
+}

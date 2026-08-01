@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-33",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-33",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
+  },
+  "text": "Společnost pro obranu svobody projevu v přehledu z 11. července 2026 rozsudek kritizovala jako „faktické posvěcení cenzury“ a vytváření tlaku na autocenzuru; jde o hodnotící stanovisko advokační organizace, nikoli o zpravodajské zjištění.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-24"
+    }
+  ],
+  "subjects": [
+    "okamura"
+  ],
+  "order": 33,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/tomio-okamura/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

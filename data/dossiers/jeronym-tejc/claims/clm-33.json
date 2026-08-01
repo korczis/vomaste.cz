@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-33",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-33",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "text": "Kárná žaloba směřuje proti soudkyni Okresního soudu v Benešově Sandře Kimmelové; ministr navrhuje roční snížení platu o 30 procent. O kárné žalobě rozhoduje kárný senát, do jeho rozhodnutí platí presumpce neviny a nejde o zjištění pochybení.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-06"
+    }
+  ],
+  "subjects": [
+    "tejc"
+  ],
+  "order": 33,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jeronym-tejc/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

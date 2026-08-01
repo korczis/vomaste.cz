@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-50",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-50",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-50 — Vláda České republiky (oficiální web)",
+  "description": "Oficiální tisková zpráva o uvedení Igora Červeného do funkce ministra životního prostředí.",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální zdroj",
+  "url": "https://vlada.gov.cz/cz/media-centrum/aktualne/premier-babis-uvedl-do-funkce-noveho-ministra-zivotniho-prostredi-igora-cerveneho-225464/",
+  "published": "2026-02-23",
+  "retrieved": "2026-07-29",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-43"
+    }
+  ],
+  "subjects": [
+    "macinka"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální tisková zpráva Úřadu vlády: premiér Andrej Babiš uvedl do\nfunkce nového ministra životního prostředí Igora Červeného. Jde o\nprimární/oficiální zdroj, nezávislý na redakčních médiích citovaných\nv SRC-49."
+    }
+  ],
+  "order": 50
+}

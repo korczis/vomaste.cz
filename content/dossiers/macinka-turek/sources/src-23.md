@@ -1,4 +1,5 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-23 — Hlídač státu (Turek, firmy)"
 description = "Rejstříkové vazby Filipa Turka na pět firem/spolků 2016–2023 (Art of Performance, Transgas, autokluby)."
 template = "dossier-source.html"
@@ -6,19 +7,14 @@ weight = 23
 aliases = ["/dossier/zdroje/src-23/"]
 
 [extra]
-subjects = ["turek"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-23"
+view_model = "generated/views/dossiers/macinka-turek/sources/src-23.json"
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-23"
-outlet = "Hlídač státu"
-src_type = "veřejný rejstřík / transparentní databáze"
-url = "https://www.hlidacstatu.cz/Osoba/vazby/filip-turek"
-retrieved = "2026-07-22"
-claims = ["CLM-20"]
-family = "hlidac-statu"
 +++
-
 Hlídač státu je nezisková transparentní databáze provozovaná Aliancí pro
 otevřenost, která strojově agreguje data z obchodního rejstříku (justice.cz)
 a dalších veřejných registrů. Není žurnalistickým zdrojem v úzkém slova

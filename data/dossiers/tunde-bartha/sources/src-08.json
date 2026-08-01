@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-08",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-08",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tunde-bartha"
+  },
+  "title": "SRC-08 — HlídacíPes.org: Nová vláda a bezpečnostní prověrky (23. 1. 2026)",
+  "description": "Podle odpovědi Úřadu vlády dle informačního zákona má Bartha od roku 2019 osvědčení pro stupeň Tajné a NATO Personnel Clearance Certificate.",
+  "outlet": "HlídacíPes.org",
+  "sourceType": "zpravodajství",
+  "url": "https://hlidacipes.org/nova-vlada-a-bezpecnostni-proverky-tunde-bartha-ji-ma-namestek-z-spd-zada/",
+  "published": "2026-01-23",
+  "retrieved": "2026-08-01",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-12"
+    }
+  ],
+  "subjects": [
+    "bartha"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "HlídacíPes.org cituje odpověď Úřadu vlády na žádost podle informačního\nzákona: Tünde Bartha má od roku 2019 „osvědčení fyzické osoby na stupeň\nutajení ‚tajné‘“ a osvědčení NATO Personnel Clearance Certificate.\nÚřad uvedl: „Vedoucí Úřadu vlády Mgr. Tünde Bartha tedy splňuje\npožadavky na výkon své funkce.“\n\n**Co zdroj dokládá**: existenci a stupeň prověrky podle vyjádření\núřadu — doložený korektiv k případným spekulacím, které žádný citovaný\nzdroj nedokládá.\n\n**Nezávislost**: jediný přímo otevřený zdroj — stav `1 ZDROJ`.\nOtevřeno a přečteno 2026-08-01."
+    }
+  ],
+  "order": 8
+}

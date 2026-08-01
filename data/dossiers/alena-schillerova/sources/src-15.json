@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-15",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-15",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "title": "SRC-15 — Ministerstvo financí ČR",
+  "description": "Reakce Ministerstva financí na stanovisko Národní rozpočtové rady č. 1/2026 ze dne 12.3.2026",
+  "outlet": "Ministerstvo financí ČR",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://mf.gov.cz/cs/ministerstvo/media/v-mediich/2026/reakce-ministerstva-financi-na-stanovisko-narodni-63276",
+  "published": "2026-03-12",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-27"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-28"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-29"
+    }
+  ],
+  "subjects": [
+    "schillerova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Reakce Ministerstva financí na stanovisko Národní rozpočtové rady č. 1/2026 ze dne 12.3.2026**\n\nOficiální polemika resortu se stanoviskem NRR ve čtyřech bodech: obhajoba vlastních prognóz jako nezávislé analytické práce, zpochybnění role NRR jako arbitra prognóz ve prospěch Výboru pro rozpočtové prognózy, vlastní výpočet obranných výdajů 184,6 mld. Kč (2,06 % HDP) včetně položek mimo kapitolu obrany, připuštění obtížnosti sestavení rozpočtů 2027 a 2028 a čísla k podpoře POZE.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 15
+}

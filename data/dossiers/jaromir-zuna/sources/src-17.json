@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-17",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-17",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "title": "SRC-17 — ČeskéNoviny.cz (ČTK)",
+  "description": "Česko pracuje na splnění závazku ohledně obranných výdajů, uvedl ministr Zůna",
+  "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceType": "zpravodajství",
+  "url": "https://www.ceskenoviny.cz/zpravy/cesko-pracuje-na-splneni-zavazku-ohledne-obrannych-vydaju-uvedl-ministr-zuna/2840435",
+  "published": "2026-06-18",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-46"
+    }
+  ],
+  "subjects": [
+    "zuna"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Česko pracuje na splnění závazku ohledně obranných výdajů, uvedl ministr Zůna**\n\nZůna na jednání ministrů obrany NATO v Bruselu o plnění dvouprocentního cíle a o mandátu vlády pro summit v Ankaře.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 17
+}

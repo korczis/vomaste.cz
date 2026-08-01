@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-54",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-54",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-54 — Aktuálně.cz: Policie obvinila Babiše a Faltýnka kvůli Čapímu hnízdu (9. 10. 2017)",
+  "description": "Zahájení trestního stíhání v souvislosti s 50mil. dotací po vydání Sněmovnou; podezření z dotačního podvodu a poškození finančních zájmů EU; Babiš podal stížnost.",
+  "outlet": "Aktuálně.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://zpravy.aktualne.cz/domaci/policie-obvinila-babise-s-faltynkem-kvuli-dotacim-na-stavbu/r~069b351aacf611e7ad190025900fea04/",
+  "published": "2017-10-09",
+  "retrieved": "2026-08-01",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-77"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Aktuálně.cz 9. 10. 2017 informuje, že policie obvinila Andreje Babiše a\nJaroslava Faltýnka v souvislosti s padesátimilionovou dotací EU na\nstavbu Farmy Čapí hnízdo; podezření se týkala dotačního podvodu a\npoškození finančních zájmů EU. Oba předtím vydala ke stíhání\nSněmovna. Babiš: „Převzal jsem usnesení o zahájení trestního stíhání\nv pseudokauze Čapí hnízdo. Proti tomuto rozhodnutí jsem ihned podal\nopravný prostředek.“ Oba vinu popírali a případ označovali za\npoliticky motivovaný.\n\n**Poznámka k procesní přesnosti**: obvinění (zahájení stíhání) je\nprocesní krok, ne rozhodnutí o vině; obhajoba proti němu podala\nstížnost.\n\n**Nezávislost**: jediný přímo otevřený zdroj k tomuto kroku — stav\n`1 ZDROJ`. Otevřeno a přečteno 2026-08-01."
+    }
+  ],
+  "order": 54
+}

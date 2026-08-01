@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-11",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-11",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-11 — Seznam Zprávy",
+  "description": "Turkova kandidatura do Poslanecké sněmovny 2025 a související politické výroky.",
+  "outlet": "Seznam Zprávy",
+  "sourceType": "zpravodajství",
+  "url": "https://www.seznamzpravy.cz/clanek/volby-do-poslanecke-snemovny-motoriste-se-dockali-turek-chce-vymenit-brusel-za-prahu-277943",
+  "published": "2025-05-30",
+  "retrieved": "2026-07-21",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-03"
+    }
+  ],
+  "subjects": [
+    "macinka",
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Seznam Zprávy je jeden z největších českých online zpravodajských portálů\n(provozovaný Seznam.cz). Článek pokrývá Turkovu kandidaturu do Poslanecké\nsněmovny 2025 a výsledky voleb za hnutí Motoristé sobě.\n\nSpolu se SRC-12 (iROZHLAS) a SRC-13 (Aktuálně.cz) tvoří základ pro\nCLM-01 až CLM-03 — fakta o politické kariéře obou subjektů (zvolení\neuroposlancem, zvolení poslancem, výsledky voleb 2025, vstup do vlády).\nTato tři fakta jsou napříč zdroji vzájemně konzistentní."
+    }
+  ],
+  "order": 11
+}

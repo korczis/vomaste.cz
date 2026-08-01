@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/ncoz",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "ncoz",
+  "entityId": "ncoz",
+  "title": "Národní centrála proti organizovanému zločinu",
+  "entityType": "public_institution",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "contextual",
+  "dossiers": [
+    "andrej-babis"
+  ],
+  "routeAliases": [
+    "/dossiers/andrej-babis/entities/ncoz/"
+  ],
+  "order": 12,
+  "provenance": {
+    "discoveredAt": "2026-07-30",
+    "discoveredVia": [
+      "edge-eppo-ncoz",
+      "edge-babis-ncoz-pandora"
+    ],
+    "claimRefs": [
+      "CLM-27",
+      "CLM-75"
+    ],
+    "sourceRefs": [
+      "SRC-12",
+      "SRC-52"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext."
+    }
+  ]
+}

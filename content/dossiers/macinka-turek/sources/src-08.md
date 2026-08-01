@@ -1,4 +1,5 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-08 — iROZHLAS.cz"
 description = "Babišovo vyjádření k záběrům z nehody — druhá nezávislá redakce potvrzující totéž jádro výroku."
 template = "dossier-source.html"
@@ -6,19 +7,14 @@ weight = 8
 aliases = ["/dossier/zdroje/src-08/"]
 
 [extra]
-subjects = ["turek"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-08"
+view_model = "generated/views/dossiers/macinka-turek/sources/src-08.json"
 dossier = "macinka-turek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-08"
-outlet = "iROZHLAS.cz (Český rozhlas)"
-src_type = "veřejnoprávní zpravodajství"
-url = "https://www.irozhlas.cz/zpravy-domov/pokud-se-zabery-potvrdi-mel-rezignovat-premier-babis-mluvil-s-macinkou-o-turkove_2607141755_jva"
-retrieved = "2026-07-21"
-published = "2026-07-14"
-claims = ["CLM-11", "CLM-12"]
 +++
-
 iROZHLAS.cz je zpravodajský web veřejnoprávního Českého rozhlasu — stejná
 úroveň nezávislosti jako ČT24 (SRC-06), ale odlišná redakce.
 

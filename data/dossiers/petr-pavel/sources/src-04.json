@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/petr-pavel/sources/SRC-04",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-04",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/petr-pavel"
+  },
+  "title": "SRC-04 — Deník N",
+  "description": "Nezávislé potvrzení: Turek žalobu na prezidenta Pavla nakonec nepodá.",
+  "outlet": "Deník N",
+  "sourceFamily": "denik-n",
+  "sourceType": "zpravodajství",
+  "url": "https://denikn.cz/minuta/2139007/",
+  "published": "2026-07-27",
+  "retrieved": "2026-07-29",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-pavel/claims/CLM-03"
+    }
+  ],
+  "subjects": [
+    "pavel"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Nezávislé potvrzení zprávy Blesk.cz (SRC-03) od jiného vydavatele:\nposlanec Motoristů Filip Turek nakonec nepodal avizovanou žalobu na\nochranu osobnosti proti prezidentu Petru Pavlovi.\n\n**Nezávislost.** Jiná redakce než Blesk.cz — u CLM-03 se proto počítají\njako dvě nezávislá potvrzení. Tentýž zdroj dokládá i\n[CLM-44](@/dossiers/macinka-turek/claims/clm-44.md) v dossieru\nFilipa Turka."
+    }
+  ],
+  "order": 4
+}

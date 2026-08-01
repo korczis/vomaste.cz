@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vomaste.cz/schemas/canonical/case.schema.json",
+  "title": "Kanonický záznam Case (data/dossiers/<slug>/cases/case-##.json)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["$schema", "schemaVersion", "@context", "@id", "@type", "recordType", "identifier", "dossier", "title", "summary", "period", "status", "statusLabel", "anchor", "claims", "sources", "subjects", "content", "order"],
+  "properties": {
+    "$schema": { "const": "https://vomaste.cz/schemas/canonical/case.schema.json" },
+    "schemaVersion": { "const": 1 },
+    "@context": { "const": "https://vomaste.cz/context/v1.jsonld" },
+    "@id": { "$ref": "_defs.schema.json#/$defs/caseGlobalId" },
+    "@type": { "const": "vomaste:Case" },
+    "recordType": { "const": "case" },
+    "identifier": { "$ref": "_defs.schema.json#/$defs/caseId" },
+    "dossier": { "$ref": "_defs.schema.json#/$defs/dossierRef" },
+    "title": { "type": "string", "minLength": 1 },
+    "summary": { "type": "string", "minLength": 1 },
+    "period": {
+      "type": ["string", "null"],
+      "$comment": "Zobrazovaný text (\"2019–2022\"), ne strojové rozmezí — stejná sémantika jako dnešní front matter; null tam, kde period neexistuje."
+    },
+    "status": {
+      "type": "string",
+      "minLength": 1,
+      "$comment": "Dnešní [[extra.cases]] používá třídy claim statusů (status-disputed apod.) — drženo jako otevřený string; zavřít množinu case statusů je redakční rozhodnutí, ne tvarové."
+    },
+    "statusLabel": {
+      "type": "string",
+      "minLength": 1,
+      "$comment": "Dnešní pole label — vysvětlující procesní stav (\"Uzavřeno 2022 splněním doporučení — ne zproštěním\")."
+    },
+    "anchor": {
+      "$ref": "_defs.schema.json#/$defs/slug",
+      "$comment": "Kotva/route slug kauzy (dnešní pole anchor v [[extra.cases]], např. kauza-audity-ek) — z ní se odvozuje route case stránky."
+    },
+    "claims": {
+      "type": "array",
+      "items": { "$ref": "_defs.schema.json#/$defs/claimRef" }
+    },
+    "sources": {
+      "type": "array",
+      "items": { "$ref": "_defs.schema.json#/$defs/sourceRef" }
+    },
+    "subjects": { "$ref": "_defs.schema.json#/$defs/subjects" },
+    "content": { "$ref": "_defs.schema.json#/$defs/contentBlocks" },
+    "order": { "type": "integer", "minimum": 0 }
+  },
+  "$comment": "claims/sources smí být prázdná pole: baseline audit (docs/migrations/json-first-baseline.md, addendum 2026-08-01) — vazba case→claims je ve zdrojových datech ([[extra.cases]].claims), vazbu case→sources odvozují generátory jako sjednocení zdrojů claimů; migrátor fáze D přenáší jen to, co v datech opravdu je."
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-19",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-19",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "title": "SRC-19 — Ekolist.cz (ČTK)",
+  "description": "Červený navštíví národní parky v USA, bude tam řešit protipožární ochranu",
+  "outlet": "Ekolist.cz (ČTK)",
+  "sourceType": "zpravodajství",
+  "url": "https://ekolist.cz/cz/zpravodajstvi/zpravy/cerveny-navstivi-narodni-parky-v-usa-bude-tam-resit-protipozarni-ochranu",
+  "published": "2026-07-10",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-50"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-51"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-54"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-55"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Červený navštíví národní parky v USA, bude tam řešit protipožární ochranu**\n\nAvízo cesty: HLPF v New Yorku 7.–16. července, poté návštěva Yosemite a Sequoia kvůli systémům prevence lesních požárů. Cituje ministra o cíli seznámit se s „komplexním systémem prevence a zvládání lesních požárů“. O financování cesty neuvádí nic.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 19
+}

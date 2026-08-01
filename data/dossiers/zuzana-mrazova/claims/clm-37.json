@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-37",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-37",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "text": "Vedoucí bílinského stavebního úřadu Oldřich Jedlička se z případu vyloučil pro možný střet zájmů a předal jej nadřízenému Krajskému úřadu Ústeckého kraje; projednávání následně převzal stavební úřad v Mostě.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-16"
+    }
+  ],
+  "subjects": [
+    "mrazova"
+  ],
+  "order": 37,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/zuzana-mrazova/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

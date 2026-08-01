@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-49",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-49",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "text": "Tejc k důsledkům prezidentova výkladu uvedl: „Přijetí výkladu pana prezidenta by znamenalo zásadní změnu fungování českého ústavního systému. Vzniklo by druhé mocenské centrum, které by na rozdíl od vlády bylo zcela neodpovědné a neodpovídalo by se Poslanecké sněmovně.“",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-23"
+    }
+  ],
+  "subjects": [
+    "tejc"
+  ],
+  "order": 49,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jeronym-tejc/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

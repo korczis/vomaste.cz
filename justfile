@@ -105,21 +105,23 @@ clean:
 
 # --- content work ---------------------------------------------------------
 
-# Regenerate the per-record claim/case pages from the hand-authored overview
-# table and front matter, after editing either by hand. `just build` then
-# verifies the two representations still agree.
-[doc("Přegeneruje stránky tvrzení a kauz z ručně psané tabulky")]
+# T-028 fáze H: dřívější `just regen` (migrate-claims/cases-to-pages)
+# zanikl — content/** je generovaný adaptér kanonických dat. Edituj
+# data/dossiers/**/*.json a spusť `npm run data:build`; paritu tabulky
+# s kanonickými záznamy hlídá validate-registry-table (data:validate).
+[doc("Regeneruje content adaptéry z kanonických dat")]
 regen:
-    node scripts/dossier/migrate-claims-to-pages.mjs
-    node scripts/dossier/migrate-cases-to-pages.mjs
+    npm run data:build
 
-# Scaffold a new entity dossier's placeholder files. Refuses to run for a
-# subject that has no matching entry in the AGENTS.md authorization log, and
-# does not register the dossier in data/dossiers.toml for you.
-#   just scaffold jan-novak "Jan Novák"
-[doc("Skeleton nového entity dossieru (jen pro autorizovaný subjekt)")]
-scaffold slug title:
-    npm run scaffold:dossier -- --slug={{ slug }} --title="{{ title }}"
+# Scaffold nového KANONICKÉHO dossier balíčku (data/dossiers/<slug>/:
+# dossier.json + prázdné registry adresáře). Odmítne subjekt bez
+# odpovídajícího záznamu v data/authorizations.toml — autorizace vzniká
+# jen přes `just authorize` (append-only log v AGENTS.md). Adaptéry
+# content/** pak vygeneruje `npm run data:build`.
+#   just scaffold jana-novakova "Jana Nováková" novakova AUTH-2026-08-01-X
+[doc("Scaffold kanonického dossier balíčku — odmítne neautorizovaný subjekt")]
+scaffold slug title subject auth_record_id:
+    npm run dossier:scaffold -- --slug={{ slug }} --title="{{ title }}" --subject={{ subject }} --authorization-record-id={{ auth_record_id }}
 
 # Record a new authorization for an entity. INTERACTIVE ON PURPOSE: it needs a
 # real terminal and a human typing the scope in their own words, and it is the

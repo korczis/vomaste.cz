@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-09",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-09",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "title": "SRC-09 — FORUM 24",
+  "description": "Havlíček chce nejspíš zničit náš automobilový průmysl. Prý moc nespí, ale elektromobilitu zaspal",
+  "outlet": "FORUM 24",
+  "sourceType": "komentář/názor",
+  "url": "https://www.forum24.cz/havlicek-chce-nejspis-znicit-nas-automobilovy-prumysl-pry-moc-nespi-ale-elektromobilitu-zaspal",
+  "published": "2026-07-15",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-15"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-18"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Havlíček chce nejspíš zničit náš automobilový průmysl. Prý moc nespí, ale elektromobilitu zaspal**\n\nKomentář Jana Jandourka cituje Havlíčkovu výzvu automobilkám postavit se proti cíli EU 2035 jako „naprosto nereálnému“ a oponuje mu daty o podílu elektromobilů v Norsku a Číně; problém autoprůmyslu vidí v čínské konkurenci, ne v regulaci EU.\n\nZdroj otevřen a přečten 2026-07-30. **Komentář/názorový text** — dokládá, že autor hodnocení publikoval, ne že hodnocení platí."
+    }
+  ],
+  "order": 9
+}

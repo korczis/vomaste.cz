@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-03",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-03 — Česká justice: Nagyová stojí v kauze Čapí hnízdo potřetí před soudem (4. 5. 2026)",
+  "description": "Zpravodajství z hlavního líčení u Městského soudu v Praze: návrh trestu pro Janu Nagyovou a informace, že Sněmovna Babiše ke stíhání nevydala.",
+  "outlet": "Česká justice",
+  "sourceType": "zpravodajství",
+  "url": "https://www.ceska-justice.cz/2026/05/tri-roky-podminky-a-pulmilionovy-trest-nagyova-capi-hnizdo/",
+  "published": "2026-05-04",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-09"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Článek „Tři roky podmínky a půlmilionový trest. Nagyová stojí v kauze Čapí\nhnízdo potřetí před soudem\" (4. 5. 2026). Popisuje třetí projednávání věci\nu Městského soudu v Praze, **návrh** trestu předložený státním zástupcem\nJaroslavem Šarochem, postoj obhajoby k závaznému pokynu odvolacího soudu a\nskutečnost, že Poslanecká sněmovna počátkem března 2026 nevydala Andreje\nBabiše k trestnímu stíhání, které je tím přerušeno.\n\nTímto zdrojem se částečně uzavírá dřívější mezera o procesním vývoji po\nčervnu 2025 — pravomocné rozhodnutí ve věci ale nepřinesl žádný z\ncitovaných zdrojů."
+    }
+  ],
+  "order": 3
+}

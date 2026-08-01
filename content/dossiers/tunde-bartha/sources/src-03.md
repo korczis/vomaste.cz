@@ -1,23 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-03 — Aktuálně.cz"
 description = "Aktuálně.cz, 14. 8. 2024: Tünde Bartha pracuje v holdingu Agrofert jako business development manager pro východní Evropu, Balkán a Blízký východ; potvrdil mluvčí Agrofertu."
 template = "dossier-source.html"
 weight = 3
 
 [extra]
-subjects = ["bartha"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-03"
+view_model = "generated/views/dossiers/tunde-bartha/sources/src-03.json"
 dossier = "tunde-bartha"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-03"
-outlet = "Aktuálně.cz"
-src_type = "celostátní zpravodajství"
-url = "https://zpravy.aktualne.cz/domaci/tunde-bartha-opet-v-babisovych-sluzbach-stara-se-o-vychodni/r~541224525a2811efb589ac1f6b220ee8/"
-retrieved = "2026-07-30"
-published = "2024-08-14"
-claims = ["CLM-06"]
 +++
-
 Aktuálně.cz dne 14. 8. 2024 informovalo — s odkazem na zjištění serveru
 HlídacíPes.org z téhož dne — že Tünde Bartha pracuje v holdingu Agrofert
 jako **business development manager**. Podle článku má na starosti řízení

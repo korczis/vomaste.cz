@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-20",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-20",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
+  },
+  "title": "SRC-20 — Romea.cz",
+  "description": "Vládní koalice odmítla vydat Tomia Okamuru k trestnímu stíhání kvůli rasistickým plakátům SPD, nevydala ani Babiše",
+  "outlet": "Romea.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://romea.cz/cz/domaci/vladni-koalice-odmitla-vydat-tomia-okamuru-k-trestnimu-stihani-kvuli-rasistickym-plakatum-spd-nevydala-ani-babise",
+  "published": "2026-03-06",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-27"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-28"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-29"
+    }
+  ],
+  "subjects": [
+    "okamura"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Vládní koalice odmítla vydat Tomia Okamuru k trestnímu stíhání kvůli rasistickým plakátům SPD, nevydala ani Babiše**\n\nZpravodajství o hlasování z 5. března 2026 s počty hlasů a s kontextem, že Okamurovi se po zvolení v říjnových volbách obnovila poslanecká imunita v plném rozsahu. Uvádí, že Babiš i Okamura označili své stíhání za účelové a politicky motivované.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 20
+}

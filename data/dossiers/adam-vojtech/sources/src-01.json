@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "title": "SRC-01 — Vláda ČR (oficiální web)",
+  "description": "Oficiální web Úřadu vlády: funkce a údaje, které stránka sama uvádí.",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vlada.gov.cz/cz/vlada/clenove-vlady/",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální stránka na webu Úřadu vlády, otevřena a přečtena 2026-07-30.\nOficiální **seznam členů vlády** (otevřen 2026-07-30) uvádí Adama Vojtěcha jako **ministra zdravotnictví**. Jeho samostatná profilová stránka (vlada.gov.cz/cz/vlada/clenove-vlady/adam-vojtech-223978/, rovněž otevřena 2026-07-30) je k datu otevření zastaralá — uvádí mandát poslance (od 10/2025), velvyslance ve Finsku (2022–2025) a dřívější působení ministra zdravotnictví (2017–2020, 2021); aktuální funkci nese seznam, proto je zdrojem tohoto tvrzení seznam, ne profil.\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** —\ndokládá existenci a formulaci úředního údaje, ne nezávislé redakční\nposouzení. Potvrzení **současné** funkce v této vládě vychází z ověření\noficiálního seznamu členů vlády k 2026-07-30 (viz\n`data/government.toml`). Sebeprezentační části profilu nejsou nezávisle\nověřeným faktem a dossier je jako fakt nepřebírá."
+    }
+  ],
+  "order": 1
+}

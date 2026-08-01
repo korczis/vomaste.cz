@@ -3,76 +3,69 @@
 
 {% block content %}
 <main class="mx-auto max-w-2xl px-6 py-12 text-white">
-  {% set dossier_slug = page.extra.dossier %}
-  {{ ui::page_header(title=page.extra.clm_id, breadcrumb_items=[
+  {#- T-028 fáze F: fakta pochází z view modelu (data/generated/views/**),
+      ne z front matteru — content/ je jen routing stub. Full-page
+      doktrína platí dál: níže je vše derivováno ze strukturovaných dat,
+      žádná druhá ručně psaná reprezentace. -#}
+  {% set view = load_data(path="data/" ~ page.extra.view_model) %}
+  {% set record = view.record %}
+  {% set dossier_slug = view.dossier %}
+  {{ ui::page_header(title=record.identifier, breadcrumb_items=[
     "Dossier::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"),
     "Registr tvrzení::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/claims/_index.md"),
-    page.extra.clm_id,
+    record.identifier,
   ]) }}
 
-  <p class="mb-6"><span class="status-badge {{ page.extra.status }}">{{ page.extra.status_label }}</span></p>
+  <p class="mb-6"><span class="status-badge {{ record.status }}">{{ record.statusLabel }}</span></p>
 
-  <p class="mb-8 text-lg leading-relaxed text-white/90">{{ page.extra.summary }}</p>
+  <p class="mb-8 text-lg leading-relaxed text-white/90">{{ record.text }}</p>
 
-  {#- Full-page doktrína: stránka tvrzení není stub — všechno níže je
-      derivované z existujících strukturovaných dat (žádná druhá ručně
-      psaná reprezentace, dvě-reprezentace pravidlo platí dál). -#}
-
-  {% if page.extra.sources %}
+  {% if view.resolved.sources %}
   <section class="mb-8" aria-labelledby="clm-sources-h">
-    <h2 id="clm-sources-h" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Citované zdroje ({{ page.extra.sources | length }})</h2>
-    {% set zdroje = get_section(path="dossiers/" ~ dossier_slug ~ "/sources/_index.md") %}
+    <h2 id="clm-sources-h" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Citované zdroje ({{ view.resolved.sources | length }})</h2>
     <ul class="space-y-3">
-      {% for s in page.extra.sources %}
-        {% set src_page = zdroje.pages | filter(attribute="extra.src_id", value=s) | first %}
-        {% if src_page %}
+      {% for s in view.resolved.sources %}
         <li class="rounded-lg border border-white/10 bg-white/[0.03] p-4">
           <div class="flex flex-wrap items-baseline gap-2">
-            <a href="{{ src_page.permalink | safe }}" class="id-chip font-mono text-xs font-bold text-[#f3e5c0] no-underline hover:underline">{{ s }}</a>
-            <span class="text-sm font-semibold text-white">{{ src_page.extra.outlet }}</span>
-            {% if src_page.extra.published %}<span class="text-xs text-white/55">{{ src_page.extra.published }}</span>{% endif %}
+            <a href="{{ config.base_url }}{{ s.route }}" class="id-chip font-mono text-xs font-bold text-[#f3e5c0] no-underline hover:underline">{{ s.identifier }}</a>
+            <span class="text-sm font-semibold text-white">{{ s.outlet }}</span>
+            {% if s.published %}<span class="text-xs text-white/55">{{ s.published }}</span>{% endif %}
           </div>
-          {% if src_page.description %}<p class="mt-1 text-sm leading-relaxed text-white/60">{{ src_page.description }}</p>{% endif %}
+          {% if s.description %}<p class="mt-1 text-sm leading-relaxed text-white/60">{{ s.description }}</p>{% endif %}
           <p class="mt-2 flex flex-wrap gap-3 text-xs">
-            <a href="{{ src_page.permalink | safe }}" class="id-chip text-[#f3e5c0] underline decoration-white/30 underline-offset-2">Detail zdroje</a>
-            <a href="{{ src_page.extra.url }}" rel="external" class="id-chip text-white/60 underline decoration-white/20 underline-offset-2 hover:text-white">Původní článek ↗</a>
+            <a href="{{ config.base_url }}{{ s.route }}" class="id-chip text-[#f3e5c0] underline decoration-white/30 underline-offset-2">Detail zdroje</a>
+            <a href="{{ s.url }}" rel="external" class="id-chip text-white/60 underline decoration-white/20 underline-offset-2 hover:text-white">Původní článek ↗</a>
           </p>
         </li>
-        {% else %}
-        <li class="rounded-lg border border-white/10 p-4 font-mono text-xs text-white/55">{{ s }}</li>
-        {% endif %}
       {% endfor %}
     </ul>
   </section>
   {% endif %}
 
-  {% set kauzy = get_section(path="dossiers/" ~ dossier_slug ~ "/cases/_index.md") %}
-  {% set_global parent_case = "" %}
-  {% for cp in kauzy.pages %}
-    {% if cp.extra.claims and page.extra.clm_id in cp.extra.claims %}
-      {% set_global parent_case = cp %}
-    {% endif %}
-  {% endfor %}
-  {% if parent_case %}
+  {% if view.related.cases %}
+    {#- `last`, ne `first`: původní šablona procházela kauzy v pořadí
+        registru a poslední shoda vyhrála — tvrzení ve dvou kauzách
+        (CLM-52) musí ukázat tutéž kauzu jako dosud. -#}
+    {% set case_short = view.related.cases | last %}
+    {% set case_id_lower = case_short.identifier | lower %}
+    {% set case_view = load_data(path="data/generated/views/dossiers/" ~ dossier_slug ~ "/cases/" ~ case_id_lower ~ ".json") %}
   <section class="mb-8" aria-labelledby="clm-case-h">
     <h2 id="clm-case-h" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Kontext kauzy</h2>
     <div class="rounded-lg border border-white/10 bg-white/[0.03] p-4">
       <p class="flex flex-wrap items-baseline gap-2">
-        <a href="{{ parent_case.permalink | safe }}" class="id-chip font-mono text-xs font-bold text-[#f3e5c0] no-underline hover:underline">{{ parent_case.extra.case_id }}</a>
-        <span class="text-sm font-semibold text-white">{{ parent_case.title }}</span>
-        <span class="text-xs text-white/55">{{ parent_case.extra.period }}</span>
-        <span class="status-badge {{ parent_case.extra.status }}">{{ parent_case.extra.label }}</span>
+        <a href="{{ config.base_url }}{{ case_view.route }}" class="id-chip font-mono text-xs font-bold text-[#f3e5c0] no-underline hover:underline">{{ case_view.identifier }}</a>
+        <span class="text-sm font-semibold text-white">{{ case_view.record.title }}</span>
+        <span class="text-xs text-white/55">{{ case_view.record.period }}</span>
+        <span class="status-badge {{ case_view.record.status }}">{{ case_view.record.statusLabel }}</span>
       </p>
-      {% if parent_case.extra.summary %}<p class="mt-1 text-sm leading-relaxed text-white/60">{{ parent_case.extra.summary }}</p>{% endif %}
+      {% if case_view.record.summary %}<p class="mt-1 text-sm leading-relaxed text-white/60">{{ case_view.record.summary }}</p>{% endif %}
       {% set_global sibling_claims = [] %}
-      {% for cc in parent_case.extra.claims %}{% if cc != page.extra.clm_id %}{% set_global sibling_claims = sibling_claims | concat(with=cc) %}{% endif %}{% endfor %}
+      {% for cc in case_view.resolved.claims %}{% if cc.identifier != record.identifier %}{% set_global sibling_claims = sibling_claims | concat(with=[cc]) %}{% endif %}{% endfor %}
       {% if sibling_claims | length > 0 %}
-      {% set tvrzeni = get_section(path="dossiers/" ~ dossier_slug ~ "/claims/_index.md") %}
       <p class="mt-3 text-xs text-white/50">Další tvrzení této kauzy:</p>
       <p class="mt-1 flex flex-wrap gap-1.5">
         {% for cc in sibling_claims %}
-          {% set cpg = tvrzeni.pages | filter(attribute="extra.clm_id", value=cc) | first %}
-          {% if cpg %}<a href="{{ cpg.permalink | safe }}" title="{{ cpg.extra.summary | truncate(length=120) }}" class="id-chip inline-block rounded bg-white/5 px-2 py-0.5 font-mono text-xs text-[#f3e5c0] no-underline hover:bg-white/10">{{ cc }}</a>{% endif %}
+          <a href="{{ config.base_url }}{{ cc.route }}" title="{{ cc.text | truncate(length=120) }}" class="id-chip inline-block rounded bg-white/5 px-2 py-0.5 font-mono text-xs text-[#f3e5c0] no-underline hover:bg-white/10">{{ cc.identifier }}</a>
         {% endfor %}
       </p>
       {% endif %}
@@ -80,46 +73,52 @@
   </section>
   {% endif %}
 
-  {% set vztahy = get_section(path="dossiers/" ~ dossier_slug ~ "/relations/_index.md") %}
-  {% set_global backing = [] %}
-  {% for rp in vztahy.pages %}
-    {% if rp.extra.claims and page.extra.clm_id in rp.extra.claims %}
-      {% set_global backing = backing | concat(with=[rp]) %}
-    {% endif %}
-  {% endfor %}
-  {% if backing | length > 0 %}
+  {% if view.related.relations %}
   <section class="mb-8" aria-labelledby="clm-rel-h">
-    <h2 id="clm-rel-h" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Vztahy v grafu opřené o toto tvrzení ({{ backing | length }})</h2>
+    <h2 id="clm-rel-h" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Vztahy v grafu opřené o toto tvrzení ({{ view.related.relations | length }})</h2>
     <ul class="space-y-2">
-      {% for rp in backing %}
+      {% for rp in view.related.relations %}
+      {#- Titulek hrany nese per-dossier labely uzlů z graph.toml
+          („Andrej Babiš (premiér)"), které kanonický model v1 nemá —
+          globální entita má jeden title. Do fáze H ho proto čteme
+          z content adaptéru přes get_page (view model by pro ~14 hran
+          ukázal jiný text než dnešní stránky). -#}
+      {% set rel_page = get_page(path="dossiers/" ~ dossier_slug ~ "/relations/" ~ rp.identifier ~ ".md") %}
       <li class="rounded-lg border border-white/10 bg-white/[0.03] p-3 text-sm">
-        <a href="{{ rp.permalink | safe }}" class="text-white/80 no-underline hover:text-white hover:underline">{{ rp.title }}</a>
+        <a href="{{ config.base_url }}{{ rp.route }}" class="text-white/80 no-underline hover:text-white hover:underline">{{ rel_page.title }}</a>
       </li>
       {% endfor %}
     </ul>
   </section>
   {% endif %}
 
-  {% if page.extra.subjects %}
-  {% set registry = load_data(path="data/dossiers.toml") %}
+  {% if record.subjects %}
+  {#- Subjekt → dossier subjektu jde z view modelu
+      (resolved.subjectDossiers ← kanonický registr, T-028 fáze H). -#}
   <section class="mb-8" aria-labelledby="clm-subj-h">
     <h2 id="clm-subj-h" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Subjekty</h2>
     <p class="flex flex-wrap gap-2">
-      {% for subj in page.extra.subjects %}
-        {% for d in registry.dossiers %}
-          {% if d.subject is defined and d.subject == subj %}
-          <a href="{{ get_url(path='@/dossiers/' ~ d.slug ~ '/_index.md') | safe }}" class="inline-block rounded-lg border border-white/15 px-3 py-1.5 text-sm text-white/80 no-underline hover:border-white/40 hover:text-white">{{ d.title }} →</a>
-          {% endif %}
-        {% endfor %}
+      {% for d in view.resolved.subjectDossiers | default(value=[]) %}
+      <a href="{{ get_url(path='@/dossiers/' ~ d.slug ~ '/_index.md') | safe }}" class="inline-block rounded-lg border border-white/15 px-3 py-1.5 text-sm text-white/80 no-underline hover:border-white/40 hover:text-white">{{ d.title }} →</a>
       {% endfor %}
     </p>
   </section>
   {% endif %}
 
+  {#- Tělo NErenderujeme runtime `markdown()` filtrem z view modelu:
+      filtr neresolvuje Zola @/ interní odkazy (těla je obsahují) ani
+      nedrží stejné render options jako stránkový pipeline. Kanonický
+      markdown blok vkládá do content adaptéru generátor
+      (generate-zola-content.mjs) a Zola ho renderuje jako každou
+      stránku — page.content JE kanonické tělo záznamu. -#}
   <article class="dossier-prose">
     {{ page.content | safe }}
   </article>
 
+  {#- Provenance zůstává na content cestě: adaptér nahradil původní
+      soubor na stejné cestě, takže git log nese CELOU redakční historii
+      záznamu (včetně éry před JSON-first). Přesměrování na
+      data/dossiers/**.json je rozhodnutí fáze H. -#}
   <p class="mt-8 text-xs text-white/55">
     Provenance: <a href="https://github.com/korczis/vomaste.cz/commits/master/content/{{ page.relative_path }}" class="underline decoration-white/20 underline-offset-2 hover:text-white/70">historie změn tohoto záznamu v Gitu</a>
     — kdy tvrzení vzniklo, kdy a proč se měnil jeho text či stav.

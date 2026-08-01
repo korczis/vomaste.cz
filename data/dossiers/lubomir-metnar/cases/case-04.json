@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/case.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/cases/CASE-04",
+  "@type": "vomaste:Case",
+  "recordType": "case",
+  "identifier": "CASE-04",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar"
+  },
+  "title": "Reakce NKÚ a kontext sporu",
+  "summary": "Reakce NKÚ a kontext sporu — viz tvrzení CLM-18, CLM-19, CLM-20, CLM-21, CLM-22, CLM-23, CLM-24, CLM-25.",
+  "period": "2026",
+  "status": "status-single",
+  "statusLabel": "Sledované téma",
+  "anchor": "kauza-reakce-nku",
+  "claims": [],
+  "sources": [],
+  "subjects": [
+    "metnar"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu\ndossieru](@/dossiers/lubomir-metnar/_index.md#kauza-reakce-nku)."
+    }
+  ],
+  "order": 4
+}

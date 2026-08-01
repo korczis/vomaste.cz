@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-35",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-35",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "text": "Prezident Pavel na Bezpečnostní radě státu uvedl, že koncepce musí mít dlouhodobý charakter a „není možné, aby se měnila z roku na rok“, a upozornil, že chybí finanční rámec ze strany vlády.",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-19"
+    }
+  ],
+  "subjects": [
+    "zuna"
+  ],
+  "order": 35,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jaromir-zuna/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

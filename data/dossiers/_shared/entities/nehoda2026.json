@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/nehoda2026",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "nehoda2026",
+  "entityId": "nehoda2026",
+  "title": "Nehoda 2026",
+  "entityType": "event",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "contextual",
+  "dossiers": [
+    "macinka-turek",
+    "petr-macinka",
+    "filip-turek"
+  ],
+  "routeAliases": [
+    "/dossiers/macinka-turek/entities/nehoda2026/"
+  ],
+  "order": 11,
+  "provenance": {
+    "discoveredAt": "2026-07-29",
+    "discoveredVia": [
+      "edge-turek-nehoda2026",
+      "edge-macinka-nehoda2026",
+      "edge-babis-nehoda2026",
+      "edge-nehoda2026-policie",
+      "edge-homolce-nehoda2026"
+    ],
+    "claimRefs": [
+      "CLM-10"
+    ],
+    "sourceRefs": [
+      "SRC-02"
+    ],
+    "cluster": "dopravni-nehoda",
+    "depth": 1
+  }
+}

@@ -1,23 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-61 — Novinky.cz (ČTK): Babiš: Naši poslanci měli hlasovat pro zrušení podpory biopaliv (20. 5. 2015)"
 description = "Hlasování 20. 5. 2015: z poslanců ANO 3 pro zrušení, 25 proti, 15 se zdrželo včetně Babiše; jeho deklarace souhlasu s ukončením podpory."
 template = "dossier-source.html"
 weight = 61
 
 [extra]
-subjects = ["babis"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-61"
+view_model = "generated/views/dossiers/andrej-babis/sources/src-61.json"
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-61"
-outlet = "Novinky.cz"
-src_type = "zpravodajství"
-url = "https://www.novinky.cz/domaci/clanek/babis-nasi-poslanci-meli-hlasovat-pro-zruseni-podpory-biopaliv-zmenili-ale-nazor-301084"
-published = "2015-05-20"
-retrieved = "2026-08-01"
-claims = ["CLM-85"]
 +++
-
 Novinky.cz (s využitím ČTK) 20. 5. 2015 popisují hlasování Sněmovny
 o ukončení daňové podpory biopaliv: z poslanců ANO hlasovali 3 pro
 zrušení, 25 proti a 15 se zdrželo — včetně Babiše. Babiš předtím

@@ -1,20 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "GAP-07 — Ukrajinská strana vazby GMR GAS"
 description = "Stav a vlastnickou strukturu GMR GAS UA LLC nešlo ověřit z primárního ukrajinského registru; totožnost druhého jmenovaného spoluvlastníka nelze z citovaného zpravodajství rozlišit."
 template = "dossier-gap.html"
 weight = 7
 
 [extra]
-subjects = ["macinka"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/macinka-turek/gaps/GAP-07"
+view_model = "generated/views/dossiers/macinka-turek/gaps/gap-07.json"
 dossier = "macinka-turek"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-07"
-priority = "vysoká"
-checked = "2026-07-30"
-claims = ["CLM-14", "CLM-15", "CLM-46", "CLM-47", "CLM-48"]
 +++
-
 Česká strana této vazby je od 2026-07-30 doložená z primárního registru:
 ARES potvrdil totožnost společnosti GMR GAS s.r.o. (IČO 28274318) i jejího
 jediného společníka a jednatele (CLM-46, CLM-48, SRC-55). **Ukrajinská

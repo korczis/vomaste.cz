@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/example-subject/gaps/GAP-01",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-01",
+  "dossier": { "@id": "https://vomaste.cz/id/dossiers/example-subject" },
+  "title": "GAP-01 — Otevřená syntetická otázka",
+  "description": "Citovaný syntetický zdroj nedokládá výsledek popsaného procesu; fixture žádný výsledek nepředjímá.",
+  "priority": "střední",
+  "checked": "2026-01-01",
+  "claims": [
+    { "@id": "https://vomaste.cz/id/dossiers/example-subject/claims/CLM-01" }
+  ],
+  "subjects": ["example"],
+  "status": "open",
+  "content": [
+    { "type": "markdown", "value": "Co je doloženo a co chybí — syntetický text." }
+  ],
+  "order": 1
+}

@@ -1,0 +1,49 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-15",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-15",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "title": "SRC-15 — Seznam Zprávy",
+  "description": "Ministryně Mrázová má na pozemku černé stavby. A teď chce měnit pravidla",
+  "outlet": "Seznam Zprávy",
+  "sourceType": "zpravodajství",
+  "url": "https://www.seznamzpravy.cz/clanek/domaci-kauzy-ministryne-mrazova-ma-na-pozemku-cerne-stavby-a-ted-chce-menit-pravidla-305091",
+  "published": "2026-04-30",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-35"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-36"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-39"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-42"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-46"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-50"
+    }
+  ],
+  "subjects": [
+    "mrazova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Ministryně Mrázová má na pozemku černé stavby. A teď chce měnit pravidla**\n\nInvestigativní materiál (Adéla Jelínková, Christine Havranová). Parcela cca 500 m² vedená v ÚP jako lesní plocha; dřevěná pergola se sezením, objekt s komínem, šedý přístřešek přes 40 m² s bílým karavanem. Podklady ÚP 2018–2022: město zamítlo překlasifikaci na stavební pozemek. Mrázová spolu s Babišem předkládá novelu stavebního zákona rušící překážky dodatečného povolení při zmeškání lhůt. Kritika pirátské poslankyně Veroniky Kovářové. Citace vedoucího stavebního úřadu Oldřicha Jedličky a experta Pavla Kopeckého.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 15
+}

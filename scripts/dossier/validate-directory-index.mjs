@@ -11,14 +11,17 @@
  *
  * Co se ověřuje:
  *   1. index nese vše, co adresář potřebuje (žádné prázdné pole navíc),
- *   2. počty se shodují se stats.toml — tedy pocházejí z generátoru,
- *      ne z ručně dopsaného čísla,
+ *   2. počty se shodují s compiled kanonickým modelem (T-028 fáze H —
+ *      dřívější stats.toml zaniklo; sémantiku viditelných počtů vlastní
+ *      readDossierStats v lib/record-tables.mjs) — tedy pocházejí
+ *      z kanonických dat, ne z ručně dopsaného čísla,
  *   3. routy registrů se shodují s navigačním manifestem — tedy se ČTOU,
  *      neskládají z řetězců.
  */
 import { readFileSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { readDossierStats } from "./lib/record-tables.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const read = (p) => readFileSync(join(ROOT, p), "utf8");
@@ -50,19 +53,17 @@ for (const d of rows) {
   if (!d.routes?.dossier) err(`${d.slug}: chybí routa dossieru`);
 }
 
-// 2. počty pocházejí z generovaných stats
-const num = (b, k) => Number((b.match(new RegExp(`^${k}\\s*=\\s*(\\d+)`, "m")) ?? [])[1] ?? 0);
+// 2. počty pocházejí z kanonického modelu
 let checkedCounts = 0;
 for (const d of rows) {
-  const statsFile = join(ROOT, "data/dossiers", d.slug, "stats.toml");
-  if (!existsSync(statsFile)) continue;
-  const b = readFileSync(statsFile, "utf8");
-  for (const [key, tomlKey] of [
-    ["claims", "claims_total"], ["sources", "sources_total"], ["cases", "cases_total"],
-    ["gaps", "gaps_total"], ["entities", "entities_total"], ["relations", "relations_total"],
-  ]) {
-    if (d.counts[key] !== num(b, tomlKey)) {
-      err(`${d.slug}: počet ${key}=${d.counts[key]} nesouhlasí se stats.toml (${num(b, tomlKey)}) — číslo nepochází z generátoru`);
+  const canonical = readDossierStats(ROOT, d.slug);
+  if (!canonical) {
+    err(`${d.slug}: dossier v indexu nemá kanonický záznam — počty nejde ověřit`);
+    continue;
+  }
+  for (const key of ["claims", "sources", "cases", "gaps", "entities", "relations"]) {
+    if (d.counts[key] !== canonical[key]) {
+      err(`${d.slug}: počet ${key}=${d.counts[key]} nesouhlasí s kanonickým modelem (${canonical[key]}) — číslo nepochází z kanonických dat`);
     }
   }
   checkedCounts++;
@@ -90,7 +91,7 @@ for (const d of rows) {
 }
 
 console.log(
-  `validate:directory-index — ${rows.length} dossier(ů); počty ověřeny proti ${checkedCounts} stats.toml, ` +
+  `validate:directory-index — ${rows.length} dossier(ů); počty ověřeny proti ${checkedCounts} kanonickým záznamům, ` +
     `${checkedRoutes} rout proti navigačnímu manifestu.`,
 );
 if (errors.length) {

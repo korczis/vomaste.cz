@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/gaps/GAP-12",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-12",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
+  },
+  "title": "GAP-12 — Rozpor mezi pozicí MPSV z 22. 7. (nevymáhat po Semancové) a Juchelkovým příslibem z 27. 7.",
+  "description": "Žádný z otevřených článků obě vyjádření nestaví vedle sebe ani nežádá o vysvětlení; jde o zjištění z porovnání dvou zdrojů, nikoli o publiko",
+  "priority": "střední",
+  "checked": "2026-07-30",
+  "claims": [],
+  "subjects": [
+    "juchelka"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Rozpor mezi pozicí MPSV z 22. 7. (nevymáhat po Semancové) a Juchelkovým příslibem z 27. 7. (škodu vymáhat) nebyl žádným médiem konfrontován.\n\n**Proč je to mezera**: Žádný z otevřených článků obě vyjádření nestaví vedle sebe ani nežádá o vysvětlení; jde o zjištění z porovnání dvou zdrojů, nikoli o publikované tvrzení. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+    }
+  ],
+  "order": 12
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/nku",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "nku",
+  "entityId": "nku",
+  "title": "Nejvyšší kontrolní úřad",
+  "entityType": "public_institution",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "lubomir-metnar"
+  ],
+  "routeAliases": [
+    "/dossiers/lubomir-metnar/entities/nku/"
+  ],
+  "order": 2,
+  "provenance": {
+    "discoveredAt": "2026-07-30",
+    "discoveredVia": [
+      "edge-metnar-nku"
+    ],
+    "claimRefs": [
+      "CLM-01",
+      "CLM-03"
+    ],
+    "sourceRefs": [
+      "SRC-01"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext."
+    }
+  ]
+}

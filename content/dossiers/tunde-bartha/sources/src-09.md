@@ -1,23 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-09 — Agrofert: Agrofert posiluje partnerství s Univerzitou Istvána Széchenyiho (13. 9. 2024)"
 description = "Firemní web označuje Barthu za country managerku AGROFERT Hungária s odpovědností za řízení rozvoje koncernu ve východní Evropě a v dalších regionech."
 template = "dossier-source.html"
 weight = 9
 
 [extra]
-subjects = ["bartha"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-09"
+view_model = "generated/views/dossiers/tunde-bartha/sources/src-09.json"
 dossier = "tunde-bartha"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-09"
-outlet = "Agrofert (agrofert.cz)"
-src_type = "oficiální primární zdroj"
-url = "https://www.agrofert.cz/akce-a-aktuality/agrofert-posiluje-partnerstvi-s-univerzitou-istvana-szechenyiho-podpori-rozvoj"
-published = "2024-09-13"
-retrieved = "2026-08-01"
-claims = ["CLM-13"]
 +++
-
 Firemní aktualita Agrofertu z 13. 9. 2024 označuje Tünde Barthu za
 „country managerku za AGROFERT Hungária, která má zároveň na starosti
 řízení rozvoje koncernu ve východní Evropě“ a v dalších regionech, kam

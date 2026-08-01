@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-05",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-05",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "title": "SRC-05 — FORUM 24",
+  "description": "„Babiš i Karel Havlíček jsou v tom namočení.“ Hedvábný toustový podvod zatím odnášejí malé ryby",
+  "outlet": "FORUM 24",
+  "sourceType": "komentář/názor",
+  "url": "https://www.forum24.cz/jsou-v-tom-namoceni-babis-i-karel-havlicek-hedvabny-toustovy-podvod-zatim-odnaseji-male-ryby",
+  "published": "2026-06-23",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-09"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**„Babiš i Karel Havlíček jsou v tom namočení.“ Hedvábný toustový podvod zatím odnášejí malé ryby**\n\nKomentář Marka Wollnera tvrdí, že Havlíček o auditu EK označujícím dotaci za neoprávněnou věděl nejpozději od roku 2019, aktivní vymáhání neinicioval a ministerstvo k němu přistoupilo až v roce 2022 za jeho nástupce; cituje europoslance Zdechovského.\n\nZdroj otevřen a přečten 2026-07-30. **Komentář/názorový text** — dokládá, že autor hodnocení publikoval, ne že hodnocení platí."
+    }
+  ],
+  "order": 5
+}

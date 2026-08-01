@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/gaps/GAP-05",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-05",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "title": "GAP-05 — Podrobnosti o rezignaci z pohledu portálu Zdopravy.cz, včetně jeho formulace o nejistotě k",
+  "description": "Zdroj Zdopravy.cz vrátil HTTP 403 Forbidden pro článek i pro vyhledávání.",
+  "priority": "střední",
+  "checked": "2026-07-30",
+  "claims": [],
+  "subjects": [
+    "bednarik"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Podrobnosti o rezignaci z pohledu portálu Zdopravy.cz, včetně jeho formulace o nejistotě kolem převodu pozemků, nebyly ověřeny.\n\n**Proč je to mezera**: Zdroj Zdopravy.cz vrátil HTTP 403 Forbidden pro článek i pro vyhledávání. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+    }
+  ],
+  "order": 5
+}

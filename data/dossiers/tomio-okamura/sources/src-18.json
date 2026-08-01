@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-18",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-18",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
+  },
+  "title": "SRC-18 — ČT24 (Česká televize)",
+  "description": "Sněmovna vydala Tomia Okamuru k trestnímu stíhání",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/snemovna-vydala-tomia-okamuru-k-trestnimu-stihani-358064",
+  "published": "2025-02-12",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-25"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-26"
+    }
+  ],
+  "subjects": [
+    "okamura"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Sněmovna vydala Tomia Okamuru k trestnímu stíhání**\n\nZpravodajství o hlasování Sněmovny 12. února 2025, kdy poslanci vyhověli žádosti policie o vydání Okamury. Uvádí počty hlasů, které kluby hlasovaly pro vydání a proti, i vyjádření Okamury a klubu SPD.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 18
+}

@@ -1,57 +1,21 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Petr Pavel"
 description = "Neutrální, zdroji doložený přehled o Petru Pavlovi — prezidentovi České republiky. Autorizovaný rozsah: odmítnutí jmenovat Filipa Turka ministrem životního prostředí a jeho zdůvodnění, a Turkem oznámená a nakonec nepodaná žaloba."
 template = "entity-dossier.html"
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/petr-pavel"
+view_model = "generated/views/dossiers/petr-pavel/overview.json"
 dossier = "petr-pavel"
-dossier_title = "Petr Pavel"
+record_type = "dossier"
 dossier_type = "entity"
-canonical_dossier = "petr-pavel"
-subject = "pavel"
 lang = "cs"
 seo_type = "ProfilePage"
-subject_entities = ["pavel"]
-subjects = ["Petr Pavel"]
 updated = "2026-08-01"
 reviewed_at = "2026-08-01"
-
-[[extra.timeline]]
-date = "2026-01-09"
-title = "Prezident Petr Pavel odmítl jmenovat Filipa Turka ministrem životního prostředí a své rozhodnutí veřejně zdůvodnil"
-anchor = "kauza-nejmenovani"
-dot = "dot-fact"
-subjects = ["pavel"]
-
-[[extra.timeline]]
-date = "2026-01-09"
-title = "Filip Turek oznámil, že na prezidenta podá žalobu na ochranu osobnosti a bude žádat omluvu"
-anchor = "kauza-nejmenovani"
-dot = "dot-fact"
-subjects = ["pavel"]
-
-[[extra.timeline]]
-date = "2026-07-27"
-title = "Turek oznámil, že žalobu nakonec nepodá"
-anchor = "kauza-nejmenovani"
-dot = "dot-fact"
-subjects = ["pavel"]
-
-[[extra.cases]]
-anchor = "kauza-nejmenovani"
-period = "2026-01–2026-07"
-title = "Nejmenování Filipa Turka ministrem životního prostředí"
-status = "status-corroborated"
-label = "Ústavní pravomoc, veřejně zdůvodněná"
-summary = "Prezident v lednu 2026 odmítl Turka jmenovat a rozhodnutí veřejně zdůvodnil; Turek o půl roku později oznámenou žalobu na ochranu osobnosti nakonec nepodal."
-claims = ["CLM-01", "CLM-02", "CLM-03"]
-subjects = ["pavel"]
-
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-08-01-PAVEL"]
 +++
-
 ## Kdo je Petr Pavel {#kdo}
 
 Petr Pavel je **prezident České republiky**, hlava státu. Tento dossier

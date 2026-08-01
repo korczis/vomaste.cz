@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-16",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-16",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "text": "Vláda podle ČT24 z 20. července 2026 navrhne Ústavnímu soudu, aby kompetenční žalobu prezidenta Pavla zamítl nebo odmítl; postoj vlády prezentoval ministr Tejc s tím, že přijetí prezidentova výkladu by znamenalo zásadní změnu fungování českého ústavního systému.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-10"
+    }
+  ],
+  "subjects": [
+    "tejc"
+  ],
+  "order": 16,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jeronym-tejc/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

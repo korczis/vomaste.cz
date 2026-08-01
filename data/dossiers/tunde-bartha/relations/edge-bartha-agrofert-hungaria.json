@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/relations/edge-bartha-agrofert-hungaria",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-bartha-agrofert-hungaria",
+  "relationId": "edge-bartha-agrofert-hungaria",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tunde-bartha"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/bartha"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/agrofert-hungaria"
+  },
+  "relationType": "HOLDS_ROLE",
+  "label": "country managerka (dle firemního webu, 9/2024) — popis pracovního zařazení, ne tvrzení o pochybení",
+  "status": "single",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-13"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-09"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 6,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Status: single."
+    }
+  ]
+}

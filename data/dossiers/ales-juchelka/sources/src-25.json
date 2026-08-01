@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-25",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-25",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
+  },
+  "title": "SRC-25 — Deník N",
+  "description": "Ministerstvo práce si vyžádalo externí posudek kvůli možnému střetu zájmů bývalé ministrovy poradkyně Semancové",
+  "outlet": "Deník N",
+  "sourceType": "zpravodajství",
+  "url": "https://denikn.cz/minuta/2138837",
+  "published": "2026-07-27",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-24"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-25"
+    }
+  ],
+  "subjects": [
+    "juchelka"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Ministerstvo práce si vyžádalo externí posudek kvůli možnému střetu zájmů bývalé ministrovy poradkyně Semancové**\n\nKrátká zpráva o objednání externího posudku. Cituje Juchelku k vymáhání případné škody a zdůrazňuje, že jednoznačný závěr o vzniku škody chybí a rozhodnutí bude možné až po ukončení projektů. Konstatuje, že konkrétní závěry posudku nejsou k dispozici.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 25
+}

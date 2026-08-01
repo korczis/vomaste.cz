@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-41",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-41",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-41 — Hlídač státu (Richard Chlad, sponzoring)",
+  "description": "Oficiálně evidovaných 638 864 Kč darů Richarda Chlada Motoristům sobě v roce 2025.",
+  "outlet": "Hlídač státu",
+  "sourceFamily": "hlidac-statu",
+  "sourceType": "veřejný rejstřík / transparentní databáze",
+  "url": "https://www.hlidacstatu.cz/Osoba/Sponzoring/richard-chlad-2",
+  "retrieved": "2026-07-22",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-36"
+    }
+  ],
+  "subjects": [
+    "macinka",
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Hlídač státu eviduje u podnikatele Richarda Chlada tyto dary Motoristům\nsobě v roce 2025:\n\n- 140 000 Kč — půjčení sportovních automobilů\n- 200 000 Kč — propůjčení vozů Bugatti\n- 59 313 Kč — výroba a instalace billboardu\n- 54 550 Kč — demontáž billboardu\n- 185 001 Kč — uspořádání akce\n\n**Celkem 638 864 Kč** v roce 2025 (finanční i nefinanční plnění\ndohromady). Tento údaj v dossieru slouží jako **oficiálně evidovaná**\nčástka, proti které je postavena Chladova vlastní veřejná deklarace\npodpory v řádu milionů Kč (viz CLM-36, SRC-42) — rozpor mezi těmito\ndvěma čísly je sám o sobě zaznamenaným faktem, ne obviněním z\nprotiprávnosti."
+    }
+  ],
+  "order": 41
+}

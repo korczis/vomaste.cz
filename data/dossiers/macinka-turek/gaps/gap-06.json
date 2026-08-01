@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/gaps/GAP-06",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-06",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "GAP-06 — Výsledek stížnosti proti odložení trestního oznámení",
+  "description": "O stížnosti proti procesnímu odložení trestního oznámení (znásilnění, domácí násilí) k datu poslední kontroly nebylo rozhodnuto.",
+  "priority": "vysoká",
+  "checked": "2026-07-29",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-25"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-26"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-27"
+    }
+  ],
+  "subjects": [
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "*(Nejcitlivější položka tohoto přehledu — viz [plný popis kauzy](@/dossiers/macinka-turek/_index.md#trestni-oznameni-obvineni-z-domaciho-nasili-a-znasilneni)\npro nutný kontext. Tento přehled neuvádí jméno oznamovatelky, protože ho\nneuvádí ani citované zdroje, a nehodnotí vinu ani nevinu v žádném\nsměru.)*\n\nV červnu 2025 podala bývalá partnerka Filipa Turka trestní oznámení,\nve kterém ho viní z několik let trvajícího domácího násilí, vyhrožování\nstřelnou zbraní a jednoho případu znásilnění, k nimž mělo podle jejího\npopisu dojít před 15–20 lety (CLM-25). Turek jakékoliv trestní jednání\nkategoricky odmítl a označil oznámení za „mediální lynč\" s politickým\nmotivem; nevěru v tomto kontextu připustil, trestní jednání ne (CLM-26).\n\nV květnu 2026 policie trestní oznámení odložila z důvodu promlčení;\noznámil to vedoucí Obvodního státního zastupitelství pro Prahu 4.\n**Toto rozhodnutí je čistě procesní** — vyplývá z uplynutí zákonné\npromlčecí doby, **ne z posouzení, zda k činům došlo, nebo ne.**\nRozhodnutí není pravomocné: žena proti němu podala stížnost, o níž\nrozhoduje státní zástupkyně (CLM-27).\n\n**Co zůstává otevřené**: samotný výsledek této stížnosti. Ověřeno znovu\n2026-07-29 (Echo24, ČeskéNoviny.cz, ČT24, iROZHLAS, Deník N, Česká\njustice — cílené dotazy na rozhodnutí o stížnosti i přehled aktuálního\nzpravodajství k Turkovi) — žádný inspekcí ověřitelný zdroj rozhodnutí o\nstížnosti k tomuto datu nezaznamenává. Otázka\npravdivosti původního obvinění zůstává touto mezerou zcela otevřená a\nnerozhodnutá — dossier ji tak i nadále vede, bez ohledu na to, jak\nstížnost dopadne, dokud se k věci nevyjádří příslušný orgán."
+    }
+  ],
+  "order": 6
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-24",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-24",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "text": "Zjištění komise se vztahuje ke konkrétnímu posuzovanému roku 2024 a týká se implantací ICD u pacientů po infarktu nebo s jiným závažným kardiologickým nálezem, u nichž podle formulace komise „nebyla zcela naplněna indikační kritéria“.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-14"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "order": 24,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/adam-vojtech/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

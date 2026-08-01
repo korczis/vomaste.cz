@@ -1,23 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-39 — ČT24: Rolnický fond podal žaloby na 28 firem Agrofertu, chce vrátit dotace (20. 7. 2026)"
 description = "PGRLF podal žaloby na 28 dceřiných firem holdingu; 22 mil. Kč za období 2017–2021; Evropská komise i tuzemské soudy podle článku došly k závěru, že Babiš v prvním funkčním období střet zájmů nevyřešil."
 template = "dossier-source.html"
 weight = 39
 
 [extra]
-subjects = ["babis"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-39"
+view_model = "generated/views/dossiers/andrej-babis/sources/src-39.json"
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-39"
-outlet = "ČT24 (Česká televize)"
-src_type = "zpravodajství"
-url = "https://ct24.ceskatelevize.cz/clanek/domaci/rolnicky-fond-podal-zaloby-na-28-firem-agrofertu-chce-vratit-dotace-375772"
-published = "2026-07-20"
-retrieved = "2026-08-01"
-claims = ["CLM-60"]
 +++
-
 ČT24 přebírá zprávu o žalobách PGRLF na 28 dceřiných firem holdingu
 Agrofert o vrácení podpor 22 milionů korun z let 2017–2021 kvůli
 údajnému porušení zákona o střetu zájmů. Článek dodává kontext, že

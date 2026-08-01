@@ -1,27 +1,17 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "GMR GAS UA LLC (Kyjev)"
 template = "entity.html"
 weight = 14
 aliases = ["/dossiers/macinka-turek/entities/gmrgas/"]
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/entities/gmrgas"
+view_model = "generated/views/entities/gmrgas.json"
 record_type = "entity"
 entity_id = "gmrgas"
-entity_type = "company"
-depth = 1
-subject = false
-publication_role = "context"
-dossier_enabled = false
-dossier_status = "not_authorized"
-coverage_state = "discovered"
-discovered_at = "2026-07-29"
-discovered_via = ["edge-macinka-gmrgas"]
-dossiers = ["macinka-turek", "petr-macinka"]
-cluster = "financni-vazby"
-claims = ["CLM-14", "CLM-15", "CLM-47"]
-sources = ["SRC-17", "SRC-18"]
 +++
-
 Kyjevská firma, ve které měl Petr Macinka od roku 2017 dvacetiprocentní
 podíl, jejž neuvedl v majetkovém přiznání a po upozornění Investigace.cz
 přiznal dodatečně (CLM-14). Podle citovaného zpravodajství je ukrajinskou

@@ -24,7 +24,9 @@
     {{ section.content | safe }}
   </div>
 
-  {%- set registry = get_section(path="entities/_index.md") -%}
+  {#- T-028 fáze H: počty typů z view modelu (kanonický dataset), ne
+      z front matter entity stránek. -#}
+  {%- set registry = load_data(path="data/generated/views/entities-index.json") -%}
 
   {% if section.subsections | length == 0 %}
   <div class="mt-8">
@@ -35,8 +37,8 @@
     {% for sub in section.subsections | sort %}
     {%- set child = get_section(path=sub) -%}
     {%- set_global n = 0 -%}
-    {%- for p in registry.pages -%}
-      {%- if p.extra.entity_type == child.extra.entity_type -%}{%- set_global n = n + 1 -%}{%- endif -%}
+    {%- for p in registry.rows -%}
+      {%- if p.entityType == child.extra.entity_type -%}{%- set_global n = n + 1 -%}{%- endif -%}
     {%- endfor -%}
     <li>
       <a href="{{ child.permalink | safe }}" class="registry-card h-full">

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-07",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-07",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
+  },
+  "title": "SRC-07 — ČT24 (Česká televize)",
+  "description": "K vymáhání dotací po Agrofertu nám chybí klíčový dokument, tvrdí resort zemědělství",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/ekonomika/zemedelsky-fond-nezacal-vymahat-po-agrofertu-vraceni-dotaci-ministerstvu-chybi-klicovy-dokument-369260",
+  "published": "2026-01-15",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-05"
+    }
+  ],
+  "subjects": [
+    "sebestyan"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**K vymáhání dotací po Agrofertu nám chybí klíčový dokument, tvrdí resort zemědělství**\n\nSZIF nezahájil vymáhání dotací od Agrofertu z doby Babišova premiérství; ministerstvo pod vedením Šebestyána tvrdí, že „chybí klíčový dokument“. Exministr Výborný oponuje, že SZIF má tři právní analýzy potvrzující nezákonnost výplat; podle analýz jde o více než 7 mld. Kč. Piráti (Bartoš) hrozí trestním oznámením, premiér Babiš říká, že Agrofert „nic nedluží“. Připomíná se, že Šebestyán jako exředitel SZIF sám o výplatách Agrofertu rozhodoval.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 7
+}

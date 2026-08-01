@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-10",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-10",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
+  },
+  "text": "Vyplácení eurodotací firmám Agrofertu fond za Šebestyána zastavil podle jeho vlastních slov „preventivně z úcty ke komisi“; národní dotace a nárokové přímé platby jim ale vyplácel dál, za což byl kritizován (u nárokových plateb podle iROZHLAS ke střetu nemohlo docházet i podle názoru Bruselu).",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-04"
+    }
+  ],
+  "subjects": [
+    "sebestyan"
+  ],
+  "order": 10,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/martin-sebestyan/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

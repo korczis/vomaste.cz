@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/relations/edge-chlad-motoriste",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-chlad-motoriste",
+  "relationId": "edge-chlad-motoriste",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/chlad"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/motoriste"
+  },
+  "relationType": "DONATED_TO",
+  "label": "dar 638 864 Kč (2025, oficiálně) vs. tvrzené ~2 mil. Kč",
+  "status": "disputed",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-36"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-41"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-42"
+    }
+  ],
+  "subjects": [
+    "macinka",
+    "turek"
+  ],
+  "directed": true,
+  "order": 17,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam vztahu edge-chlad-motoriste — typ vztahu, podporující tvrzení a zdroje v tabulce výše jsou úplné. Status SPORNÉ znamená, že vztah je otevřený a neuzavřený — nejde o zjištění viny ani neviny, jen o to, že věc dosud není rozhodnutá. Hlavní stránka dossieru vykresluje interaktivní graf ze stejných dat."
+    }
+  ]
+}

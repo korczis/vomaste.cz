@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/relations/edge-juchelka-vlada",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-juchelka-vlada",
+  "relationId": "edge-juchelka-vlada",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/juchelka"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/vlada"
+  },
+  "relationType": "HOLDS_ROLE",
+  "label": "ministr práce a sociálních věcí",
+  "status": "contextual",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-01"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-01"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextový, strukturální vztah — dossier jej neuvádí jako vlastní doloženou investigaci, jen jako veřejně nesporné pozadí."
+    }
+  ]
+}

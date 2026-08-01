@@ -1,20 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "GAP-01 — Skutečný důvod rezignace ve vedení Českých drah"
 description = "Bednárik důvody veřejně neuvedl; verze kolující ve veřejné debatě citovaný zdroj nedokládá."
 template = "dossier-gap.html"
 weight = 1
 
 [extra]
-subjects = ["bednarik"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/ivan-bednarik/gaps/GAP-01"
+view_model = "generated/views/dossiers/ivan-bednarik/gaps/gap-01.json"
 dossier = "ivan-bednarik"
 record_type = "gap"
 lang = "cs"
 gap_id = "GAP-01"
-priority = "vysoká"
-checked = "2026-07-31"
-claims = ["CLM-02", "CLM-03", "CLM-40", "CLM-41", "CLM-42", "CLM-47"]
 +++
-
 **Co se od poslední revize upřesnilo (31. 7. 2026).** Zdroj bezprostředně
 k rezignaci ([SRC-02](@/dossiers/ivan-bednarik/sources/src-02.md))
 konkrétní důvod nedokládá — Bednárik podle něj uvedl jen, že jej

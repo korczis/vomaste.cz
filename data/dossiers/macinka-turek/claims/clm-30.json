@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-30",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-30",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "text": "V roce 2026 dostal Turek pokuty v součtu 200 000 Kč za dvě nepovolené stavby na pozemku v Praze-Dubči (80 000 Kč nedbalost, 120 000 Kč úmysl); obě dodatečně zlegalizoval",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-33"
+    }
+  ],
+  "subjects": [
+    "turek"
+  ],
+  "order": 30,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam tvrzení CLM-30 — shrnutí, stav a zdroje výše jsou úplné. Hlavní stránka dossieru zobrazuje tentýž text ze stejného zdroje; build proces ověřuje, že se neliší."
+    }
+  ]
+}

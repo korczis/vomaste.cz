@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/petr-pavel/sources/SRC-03",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/petr-pavel"
+  },
+  "title": "SRC-03 — Blesk.cz",
+  "description": "Turek oznamuje, že žalobu na ochranu osobnosti proti prezidentu Pavlovi nakonec nepodá.",
+  "outlet": "Blesk.cz",
+  "sourceType": "tabloid",
+  "url": "https://www.blesk.cz/clanek/zpravy-politika/844802/turek-nepoda-zalobu-na-pavla-zmenil-jsem-z-mnoha-duvodu-nazor.html",
+  "published": "2026-07-27",
+  "retrieved": "2026-07-29",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-pavel/claims/CLM-03"
+    }
+  ],
+  "subjects": [
+    "pavel"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Filip Turek oznámil, že žalobu na ochranu osobnosti proti prezidentu\nPetru Pavlovi, kterou avizoval v lednu 2026 (CLM-02), nakonec nepodá.\nJako důvod uvedl, že „změnil jsem z mnoha důvodů na tuto záležitost\nnázor\" — bez bližšího upřesnění důvodů.\n\nTentýž zdroj dokládá i\n[CLM-44](@/dossiers/macinka-turek/claims/clm-44.md) v dossieru\nFilipa Turka."
+    }
+  ],
+  "order": 3
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-43",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-43",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "text": "K 1. dubnu 2026 vzniklo na MŽP samostatné oddělení klimatické politiky a Green Dealu se čtyřmi novými pozicemi včetně vedoucího a asistentky; Červený odmítl, že by šlo o sekretariát vládního zmocněnce: „Nejedná se o sekretariát, ale o odborné oddělení… rozhodně se nepočítá s tím, že by v jeho čele stál vládní zmocněnec.“",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-29"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "order": 43,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/igor-cerveny/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

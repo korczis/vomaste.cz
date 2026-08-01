@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-13",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-13",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "text": "Senát novelu 17. června 2026 po více než tříhodinové debatě vrátil Sněmovně s pozměňovacími návrhy: snížil limit pro vyjmuté infrastrukturní výdaje ze 2 % na 1 % HDP a podmínil navyšování výdajů souhlasem rozpočtového výboru.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-05"
+    }
+  ],
+  "subjects": [
+    "schillerova"
+  ],
+  "order": 13,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/alena-schillerova/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

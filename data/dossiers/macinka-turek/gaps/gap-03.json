@@ -1,0 +1,49 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/gaps/GAP-03",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "GAP-03 — Nezávislé ověření pravosti smazaných příspěvků",
+  "description": "Pravost a autorství screenshotů, které v říjnu 2025 zveřejnil Deník N, nebyly k datu poslední kontroly nezávisle prokázány ani vyvráceny.",
+  "priority": "vysoká",
+  "checked": "2026-07-31",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-19"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-41"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-42"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-49"
+    }
+  ],
+  "subjects": [
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "V říjnu 2025 zveřejnil Deník N printscreeny příspěvků z let přibližně\n2010–2014 připisovaných Filipu Turkovi s rasistickým, sexistickým a\nhomofobním obsahem (CLM-07). Turek autorství nejzávažnějších z nich\nodmítl (CLM-08). Motoristé sobě podali trestní oznámení na redakci a\nautory článku pro pomluvu a křivé obvinění, s argumentem, že materiál\n„lze vytvořit pomocí umělé inteligence a photoshopu\" (CLM-19).\nPodrobnosti viz [hlavní přehled kauzy](@/dossiers/macinka-turek/_index.md#kauza-z-rijna-2025-smazane-prispevky-na-facebooku).\n\n**Co zůstává otevřené**: samotná pravost a autorství screenshotů\n(CLM-09). K tomu nově (dohledáno 2026-07-23,\nžádný z níže uvedených zdrojů dosud nebyl v dossieru citován):\n\n- Soudní znalec Jiří Bernatík pro [Aktuálně.cz (2025-10-17)](https://zpravy.aktualne.cz/domaci/v-kauze-turek-nepujde-o-screenshoty-experti-vysvetluji-co-bu/r~55a06382ab4011f0801c0cc47ab5f122/)\n  uvedl, že samotné screenshoty nemají důkazní hodnotu („jde o grafický\n  obrázek, který lze vytvořit v jakémkoliv programu\") a že forenzně\n  uznatelný důkaz musí stát na IP adresách a datové stopě u poskytovatele\n  služby — ta k datu jeho vyjádření nebyla podle něj získána. *(CITACE —\n  odborný názor, ne rozhodnutí ve věci.)*\n- Právníci Radek Jilg a Aleš Rozehnal pro [Českou justici (2025-10-14)](https://www.ceska-justice.cz/2025/10/dukazy-o-rasismu-musi-predlozit-novinari/)\n  potvrzují, že důkazní břemeno pravosti nese Deník N a vyžadovalo by\n  „baterii důkazů\" (forenzní metadata, svědectví, ideálně data od\n  platformy) — bez potvrzení, že taková verifikace proběhla.\n- Motoristický novinář Vojtěch Dobeš podle [Deníku N (2025-10-21)](https://denikn.cz/1872826/muz-ktery-ofotil-turkuv-facebook-kdyby-se-mi-neco-stalo-stopy-povedou-k-filipovi)\n  tvrdí, že příspěvky sám vyfotil v červnu 2024 a je připraven o tom\n  svědčit policii. Na rozdíl od oznamovatelky v [GAP-06](@/dossiers/macinka-turek/gaps/gap-06.md)\n  jde o osobu, která se sama veřejně a jmenovitě přihlásila v citovaném\n  zdroji — dossier proto jeho jméno uvádí. Jde o jeho vlastní tvrzení,\n  ne o nezávisle forenzně potvrzený fakt.\n- Podle [ČT24 (2025-10-15)](https://ct24.ceskatelevize.cz/clanek/domaci/policie-resi-udajne-vyroky-turka-jako-mozne-schvalovani-trestneho-cinu-ci-hanobeni-naroda-366097)\n  policie k samotným příspěvkům vede prověřování možného schvalování\n  trestného činu a hanobení národa/rasy — jde o časné stadium bez obvinění\n  a bez rozhodnutí o pravosti.\n\n**Aktualizace 2026-07-29**: Policie 28. 7. 2026 odložila jak prověřování\nsamotných výroků (pro promlčení — CLM-41), tak trestní oznámení Motoristů\nsobě proti Deníku N (pro neexistenci trestného činu — CLM-42; viz\n[SRC-47](@/dossiers/macinka-turek/sources/src-47.md), [SRC-48](@/dossiers/macinka-turek/sources/src-48.md)).\nObě rozhodnutí jsou procesní a nejsou pravomocná. Podstatné pro tuto\nmezeru: policie **nepotvrdila** verzi Motoristů, že materiály byly\nzfalšované — ale ani se závazně nevyjádřila k jejich pravosti jako\ntakové, protože to pro odložení pro promlčení nebylo potřeba. Otázka\nnezávislého forenzního ověření pravosti (CLM-09) tak zůstává **stále\notevřená** — uzavření obou řízení mezeru neuzavírá, jen mění jejich\nprávní stav.\n\nDossier tento bod nadále vede jako **neuzavřenou, spornou otázku** — ne\njako potvrzený fakt v žádném směru, ať už ve prospěch, nebo v neprospěch\npravosti příspěvků — dokud se neobjeví ověřitelná zpráva o výsledku\nforenzní verifikace.\n\n**Aktualizace 2026-07-31**: podrobnější zpráva o témže odložení\n(Romea.cz, 28. 7. 2026) cituje dozorujícího státního zástupce Jana\nVychytu konkrétněji, než výše popsané zdroje: „Z pohledu práva jsme\nvšak dospěli k závěru, že k danému skutku došlo a že by byl trestným\nčinem\" — trestní odpovědnost ale zanikla promlčením\n([CLM-49](@/dossiers/macinka-turek/claims/clm-49.md)). Podle téhož\nzdroje policie zjištění Deníku N „ve svém faktickém jádru\"\nnezpochybnila. Turek nadále autorství konkrétního komentáře odmítal a\nza některé jiné výroky se omluvil.\n\nToto je **vyjádření dozorového orgánu v rámci promlčeného, odloženého\nprověřování — ne rozsudek soudu, ne pravomocné rozhodnutí a ne\nzjištění viny** v žádném trestněprávním smyslu; rozhodnutí je nadále\nnapadnutelné stížností. Nemění to, co tato mezera sleduje — nezávislé\n**forenzní** ověření pravosti a autorství screenshotů (CLM-09) — protože\ncitovaný orgán se k forenzní stránce věci nevyjadřoval, jen k tomu, zda\nby popsané jednání (pokud k němu došlo) naplňovalo znaky trestného\nčinu. Mezera proto zůstává otevřená stejným způsobem jako dosud, jen\ns přesnějším popisem toho, co bylo řečeno a co ne."
+    }
+  ],
+  "order": 3
+}

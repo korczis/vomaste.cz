@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-22",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-22",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "title": "SRC-22 — CZDEFENCE",
+  "description": "Nábor roste, odchody přetrvávají: personální výzvy AČR",
+  "outlet": "CZDEFENCE",
+  "sourceType": "zpravodajství",
+  "url": "https://www.czdefence.cz/clanek/nabor-roste-odchody-pretrvavaji-personalni-vyzvy-acr",
+  "published": "2026-04-19",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-51"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-52"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-53"
+    }
+  ],
+  "subjects": [
+    "zuna"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Nábor roste, odchody přetrvávají: personální výzvy AČR**\n\nPersonální bilance AČR: 2396 nováčků v roce 2025, 1325 odchodů, čistý přírůstek 1071; cíl 2250 nováčků pro 2026 splněn na 86 %; cíl 30 tis. profesionálů do 2030 a stagnující aktivní zálohy.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 22
+}

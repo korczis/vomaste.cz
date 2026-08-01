@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/gaps/GAP-08",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-08",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "title": "GAP-08 — Není znám termín ani rozsah finální (nikoli předběžné) zprávy odborné komise a počet konkr",
+  "description": "Všechny otevřené zdroje uvádějí výslovně jen předběžné stanovisko vztažené k roku 2024 a žádný neuvádí počet dotčených implantací.",
+  "priority": "střední",
+  "checked": "2026-07-30",
+  "claims": [],
+  "subjects": [
+    "vojtech"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Není znám termín ani rozsah finální (nikoli předběžné) zprávy odborné komise a počet konkrétních problematických implantací.\n\n**Proč je to mezera**: Všechny otevřené zdroje uvádějí výslovně jen předběžné stanovisko vztažené k roku 2024 a žádný neuvádí počet dotčených implantací. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+    }
+  ],
+  "order": 8
+}

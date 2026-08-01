@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-07",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-07",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/richard-chlad"
+  },
+  "text": "Podle citovaného profilu Chlad začínal v 80. letech dovozem videokazet a hodinek, po roce 1989 podnikal v hazardu (síť heren Krijcos) a dnes investuje do solárních elektráren a vodíku (Krijcos Energy, Moravia Green Hydrogen)",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/sources/SRC-02"
+    }
+  ],
+  "subjects": [
+    "chlad"
+  ],
+  "order": 7,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/richard-chlad/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

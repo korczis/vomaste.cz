@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-44",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-44",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-44 — Deník.cz (VLTAVA LABE MEDIA)",
+  "description": "Prezident Pavel zdůvodňuje odmítnutí jmenovat Turka ministrem; Turek oznamuje žalobu na ochranu osobnosti.",
+  "outlet": "Deník.cz (VLTAVA LABE MEDIA)",
+  "sourceFamily": "denik-cz-turek-ministr",
+  "sourceType": "zpravodajství",
+  "url": "https://www.denik.cz/z_domova/filip-turek-petr-pavel-zaloba.html",
+  "published": "2026-01-09",
+  "retrieved": "2026-07-23",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-38"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-39"
+    }
+  ],
+  "subjects": [
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Prezident Petr Pavel zdůvodnil odmítnutí jmenovat Filipa Turka ministrem\nživotního prostředí: uvedl, že Turek opakovaně prokazoval nedostatek\nrespektu k českému právnímu řádu, opakovaně glorifikoval nebo přinejmenším\nzlehčoval nacistické Německo jako jeden z nejhorších totalitních režimů\n20. století, a vážně zpochybňoval důstojnost a rovnost žen a příslušníků\nrůzných menšin. Turek na to reagoval oznámením, že podá žalobu na ochranu\nosobnosti a bude žádat prezidentovu omluvu."
+    }
+  ],
+  "order": 44
+}

@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/relations/edge-kampan-babis",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-kampan-babis",
+  "relationId": "edge-kampan-babis",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tunde-bartha"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/kampan-babis-2023"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/babis"
+  },
+  "relationType": "ASSOCIATED_WITH_EVENT",
+  "label": "kampaň kandidáta Andreje Babiše",
+  "status": "contextual",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-10"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-07"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 4,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextový, strukturální vztah — dossier jej neuvádí jako vlastní doloženou investigaci, jen jako veřejně nesporné pozadí."
+    }
+  ]
+}

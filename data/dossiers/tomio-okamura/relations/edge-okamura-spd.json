@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/relations/edge-okamura-spd",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-okamura-spd",
+  "relationId": "edge-okamura-spd",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/okamura"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/spd"
+  },
+  "relationType": "MEMBER_OF",
+  "label": "předseda hnutí",
+  "status": "contextual",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-02"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-01"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextový, strukturální vztah — dossier jej neuvádí jako vlastní doloženou investigaci, jen jako veřejně nesporné pozadí."
+    }
+  ]
+}

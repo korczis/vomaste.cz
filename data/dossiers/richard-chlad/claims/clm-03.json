@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-03",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/richard-chlad"
+  },
+  "text": "Podle citovaného zpravodajství Chlad jinde uváděl podporu v řádu zhruba 1,5 milionu Kč, do níž počítal pronájmy aut, dopravu a pojištění",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/sources/SRC-03"
+    }
+  ],
+  "subjects": [
+    "chlad"
+  ],
+  "order": 3,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/richard-chlad/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

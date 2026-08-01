@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-22",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-22",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "title": "SRC-22 — eLogistika.info",
+  "description": "Správa železnic má podle rozpočtu SFDI zpomalit přípravy neprioritních projektů",
+  "outlet": "eLogistika.info",
+  "sourceType": "zpravodajství",
+  "url": "https://www.elogistika.info/sprava-zeleznic-ma-podle-rozpoctu-sfdi-zpomalit-pripravy-neprioritnich-projektu/",
+  "published": "2026-01-29",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-29"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-30"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Správa železnic má podle rozpočtu SFDI zpomalit přípravy neprioritních projektů**\n\nRozpočet SFDI 2026 dává Správě železnic 72,2 mld. Kč, tedy o 9,5 mld. více než v roce 2025. Zpomalit či odložit se má příprava u Kolín–Děčín, Přerov–Ostrava, Plzeň–Domažlice (hraniční úsek), Praha–Mladá Boleslav–Liberec, Ústí nad Labem–Cheb, České Budějovice–Plzeň, vybraných staveb pražského uzlu a rychlého spojení Praha–Vratislav, dále ETCS na vedlejších tratích a část elektrizací. Rušit se mají tendry na modernizaci stanice Rakovník a úseku Nemanice–Ševětín. Na údržbu tratí jde 20 mld. Kč, na zabezpečení přejezdů 750 mil. Kč.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 22
+}

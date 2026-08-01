@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-31",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-31",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
+  },
+  "text": "Rozpočtové škrty zdůvodnil Klempíř tvrzením, že „vláda Petra Fialy rozpočet nafoukla, protože byly volby a protože končilo období, kdy jsme mohli čerpat peníze z Národního plánu obnovy“.",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-11"
+    }
+  ],
+  "subjects": [
+    "klempir"
+  ],
+  "order": 31,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/oto-klempir/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

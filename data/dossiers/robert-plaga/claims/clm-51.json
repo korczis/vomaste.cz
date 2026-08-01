@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-51",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-51",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "text": "Předsedkyně Učitelské platformy a ředitelka Petra Mazancová k načasování uvedla: „Komplikuje to život školám i rodičům. První prázdninový týden se tak nebudou moci konat žádné tábory, protože na ně asi nikdo nebude chtít jezdit od středy.“",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-21"
+    }
+  ],
+  "subjects": [
+    "plaga"
+  ],
+  "order": 51,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/robert-plaga/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

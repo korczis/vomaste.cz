@@ -89,7 +89,9 @@ test("registr zdrojů rodinu zobrazuje, ne jen filtruje", () => {
   // k rodině vidět na řádku.
   const tpl = read("templates/dossier-sources-index.html");
   assert.match(tpl, /Rodina/, "registr zdrojů nemá sloupec rodiny");
-  assert.match(tpl, /p\.extra\.family/, "šablona rodinu nečte z dat");
+  // T-028 fáze F: šablona čte view model (sourceFamily z kanonického
+  // záznamu), ne front matter extra.family.
+  assert.match(tpl, /p\.sourceFamily/, "šablona rodinu nečte z dat");
 });
 
 test("sémantika je popsaná ve schématu, ne jen v kódu", () => {

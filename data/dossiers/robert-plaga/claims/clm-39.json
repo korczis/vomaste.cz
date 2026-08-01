@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-39",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-39",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "text": "Beneš v České televizi doplnil: „Já se nemohu zbavit dojmu, že vlastně řešíme něco, co už je vyřešené,“ a argumentoval pro řešení na úrovni jednotlivých škol.",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-15"
+    }
+  ],
+  "subjects": [
+    "plaga"
+  ],
+  "order": 39,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/robert-plaga/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

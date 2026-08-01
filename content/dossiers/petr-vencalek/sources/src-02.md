@@ -1,23 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-02 — ARES (Ministerstvo financí ČR)"
 description = "Rejstříkový záznam GMR GAS s.r.o., IČO 28274318 — jediným společníkem a jednatelem je Petr Vencálek."
 template = "dossier-source.html"
 weight = 2
 
 [extra]
-subjects = ["vencalek"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/petr-vencalek/sources/SRC-02"
+view_model = "generated/views/dossiers/petr-vencalek/sources/src-02.json"
 dossier = "petr-vencalek"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-02"
-outlet = "ARES — Administrativní registr ekonomických subjektů (Ministerstvo financí ČR)"
-src_type = "primární registr / veřejný rejstřík"
-url = "https://ares.gov.cz/ekonomicke-subjekty?ico=28274318"
-retrieved = "2026-07-30"
-published = "2023-11-26"
-claims = ["CLM-01", "CLM-02"]
 +++
-
 Primární státní registr — ne rešerše přes žurnalistiku. Datum
 „zveřejněno" je datum poslední aktualizace samotného rejstříkového
 záznamu, ne datum dotazu.

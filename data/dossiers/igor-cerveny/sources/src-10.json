@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-10",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-10",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "title": "SRC-10 — Blesk.cz",
+  "description": "Pracovní 'výlet' ministra Červeného: Krásy národních parků v USA! Kritikou EU 'ponížil' Evropu?",
+  "outlet": "Blesk.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://www.blesk.cz/clanek/zpravy-politika/844424/pracovni-vylet-ministra-cerveneho-krasy-narodnich-parku-v-usa-kritikou-eu-ponizil-evropu.html",
+  "published": "2026-07-23",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-16"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-17"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-18"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-19"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Pracovní 'výlet' ministra Červeného: Krásy národních parků v USA! Kritikou EU 'ponížil' Evropu?**\n\nČervený strávil v červenci 2026 deset dní v USA, navštívil národní parky Yosemite a Sequoia; oficiálním cílem byla příprava podzimní obchodní mise a seznámení se systémem prevence lesních požárů. Delegace jednala i s firmou Meta o AI pro ochranu přírody. Ministr odmítl sdělit podrobnosti o jednáních a složení delegace; Deník N upozornil, že v delegaci byl šéf komunikace Motoristů Lukáš Koutník. Dotazy Červený označil za 'útok na zájmy České republiky'. Pro Fox News kritizoval klimatickou politiku EU a Green Deal a pochválil prezidenta Trumpa.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 10
+}

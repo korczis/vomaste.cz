@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/example-subject/relations/edge-example-org",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-example-org",
+  "relationId": "edge-example-org",
+  "dossier": { "@id": "https://vomaste.cz/id/dossiers/example-subject" },
+  "sourceEntity": { "@id": "https://vomaste.cz/id/entities/example-entity" },
+  "targetEntity": { "@id": "https://vomaste.cz/id/entities/example-org" },
+  "relationType": "MEMBER_OF",
+  "label": "syntetické členství (test)",
+  "status": "single",
+  "claims": [
+    { "@id": "https://vomaste.cz/id/dossiers/example-subject/claims/CLM-01" }
+  ],
+  "sources": [
+    { "@id": "https://vomaste.cz/id/dossiers/example-subject/sources/SRC-01" }
+  ],
+  "subjects": ["example"],
+  "directed": true,
+  "content": [
+    { "type": "process-note", "value": "Hrana existuje jen jako testovací fixture." }
+  ]
+}

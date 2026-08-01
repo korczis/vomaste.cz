@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/example-subject/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": { "@id": "https://vomaste.cz/id/dossiers/example-subject" },
+  "text": "Example Subject podle citovaného syntetického zdroje vykonává funkci v Example Organization.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    { "@id": "https://vomaste.cz/id/dossiers/example-subject/sources/SRC-01" }
+  ],
+  "subjects": ["example"],
+  "cases": [
+    { "@id": "https://vomaste.cz/id/dossiers/example-subject/cases/CASE-01" }
+  ],
+  "order": 1,
+  "content": [
+    { "type": "markdown", "value": "Doložený rozsah tvrzení popisuje syntetický zdroj SRC-01." },
+    {
+      "type": "quote",
+      "value": "Toto je syntetický citát z testovacího zdroje.",
+      "attribution": "Example Daily",
+      "source": { "@id": "https://vomaste.cz/id/dossiers/example-subject/sources/SRC-01" }
+    }
+  ],
+  "createdAt": "2026-01-01",
+  "checkedAt": "2026-01-01"
+}

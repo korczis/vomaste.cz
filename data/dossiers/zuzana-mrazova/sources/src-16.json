@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-16",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-16",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "title": "SRC-16 — Deník.cz (VLTAVA LABE MEDIA)",
+  "description": "Bílina údajně roky věděla o černých stavbách Mrázové. Úředníci ale nekonali",
+  "outlet": "Deník.cz (VLTAVA LABE MEDIA)",
+  "sourceType": "zpravodajství",
+  "url": "https://www.denik.cz/regiony/bilina-udajne-roky-vedela-o-cernych-stavbach-mrazove-urednici-ale-nekonali/",
+  "published": "2026-06-23",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-36"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-37"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-38"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-39"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-40"
+    }
+  ],
+  "subjects": [
+    "mrazova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Bílina údajně roky věděla o černých stavbách Mrázové. Úředníci ale nekonali**\n\nAutor Petr Málek. Stavební úřad v Bílině o stavbách věděl nejméně čtyři roky před jarem 2026 a nekonal; prověřování začalo až po dotazech novinářů. Vedoucí úřadu Oldřich Jedlička tvrdí, že o podezřeních dříve nevěděl, věc předal Krajskému úřadu Ústeckého kraje a vyloučil se pro možný střet zájmů; případ převzal stavební úřad v Mostě. Krajský úřad upozornil vedení Bíliny na možné podezření z nečinnosti. Tajemník městského úřadu odmítá nečinnost — bez konkrétního podnětu nelze kontrolovat všechny stavby.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 16
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-21",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-21",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "title": "SRC-21 — TZB-info",
+  "description": "Havlíček: Novelu stavebního zákona dostane Senát až v srpnu",
+  "outlet": "TZB-info",
+  "sourceType": "zpravodajství",
+  "url": "https://stavba.tzb-info.cz/134791-havlicek-novelu-stavebniho-zakona-dostane-senat-az-v-srpnu",
+  "published": "2026-07-14",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-36"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Havlíček: Novelu stavebního zákona dostane Senát až v srpnu**\n\nMinistr Karel Havlíček uvedl, že Senát bude novelu projednávat až v srpnu, protože Sněmovna ji nestihne odeslat do konce července. Řekl: „Teď se dává dohromady velmi náročně textová úprava stavebního zákona se všemi těmi odsouhlasenými pozměňovacími návrhy, které v pátek prošly, a půjde to do Senátu,“ a dodal: „Já jsem hodně tlačil na to, aby to šlo ještě do konce července, ale to se časově zvládnout nedá. Takže věřím, že se nám to podaří do té srpnové senátní schůze.“ Poslanci schválili novelu v pátek ve třetím čtení; cílem je zrychlit povolování staveb, vznikne Úřad rozvoje území s krajskými pobočkami a k povolení bude stačit jedno sloučené stavební řízení s jedním razítkem. Z návrhu byla vyškrtnuta regulace výdejních boxů.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 21
+}

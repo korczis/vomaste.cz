@@ -1,0 +1,99 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/petr-pavel",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "petr-pavel",
+  "slug": "petr-pavel",
+  "title": "Petr Pavel",
+  "description": "Neutrální, zdroji doložený přehled o Petru Pavlovi — prezidentovi České republiky. Autorizovaný rozsah: odmítnutí jmenovat Filipa Turka ministrem životního prostředí a jeho zdůvodnění, a Turkem oznámená a nakonec nepodaná žaloba.",
+  "dossierType": "entity",
+  "canonicalDossier": "petr-pavel",
+  "subject": "pavel",
+  "language": "cs",
+  "navigationVisible": true,
+  "order": 23,
+  "updated": "2026-08-01",
+  "reviewedAt": "2026-08-01",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-01-PAVEL"
+    ]
+  },
+  "seo": {
+    "seoType": "ProfilePage"
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "pavel",
+        "label": "Petr Pavel",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      },
+      {
+        "entity": "turek",
+        "label": "Filip Turek",
+        "claims": [
+          "CLM-02",
+          "CLM-03"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-03",
+          "SRC-04"
+        ]
+      }
+    ],
+    "edges": [
+      "edge-pavel-turek-nejmenovani",
+      "edge-turek-pavel-zaloba"
+    ]
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Kdo je Petr Pavel {#kdo}\n\nPetr Pavel je **prezident České republiky**, hlava státu. Tento dossier\nje autorizován záznamem `AUTH-2026-08-01-PAVEL` v `AGENTS.md`.\n\n**Proč je v tomto přehledu**: výhradně kvůli výkonu své ústavní\npravomoci — jmenovat, nebo odmítnout jmenovat, člena vlády. To je akt ve\nveřejné funkci, veřejně zdůvodněný, a už o něm psala jmenovaná média.\n\n**Rozsah je záměrně úzký.** Tento dossier nepokrývá prezidentský úřad ani\nPetra Pavla obecně — jde o jediné, už dříve zdokumentované vlákno, které\nse dosud vedlo jako kontextová vazba v dossierech\n[Filipa Turka](@/dossiers/filip-turek/_index.md) a\n[Petra Macinky](@/dossiers/petr-macinka/_index.md): odmítnutí jmenovat\nTurka ministrem životního prostředí a to, co po něm následovalo. Širší\ntéma prezidentova výkonu úřadu autorizováno není.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/petr-pavel/claims/clm-01.md) | V lednu 2026 prezident Petr Pavel odmítl jmenovat Filipa Turka ministrem životního prostředí; jako důvod uvedl opakovaný nedostatek respektu k právnímu řádu, zlehčování nacistického Německa a zpochybňování důstojnosti a rovnosti žen a příslušníků menšin | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/petr-pavel/sources/src-01.md), [SRC-02](@/dossiers/petr-pavel/sources/src-02.md) |\n| <a id=\"clm-02\"></a>[CLM-02](@/dossiers/petr-pavel/claims/clm-02.md) | Turek 9. 1. 2026 oznámil, že na prezidenta podá žalobu na ochranu osobnosti a bude žádat omluvu za toto zdůvodnění | <span class=\"status-badge status-quote\">CITACE</span> | [SRC-01](@/dossiers/petr-pavel/sources/src-01.md) |\n| <a id=\"clm-03\"></a>[CLM-03](@/dossiers/petr-pavel/claims/clm-03.md) | Dne 27. 7. 2026 Turek oznámil, že žalobu na ochranu osobnosti proti prezidentu Pavlovi nakonec nepodá; jako důvod uvedl, že „z mnoha důvodů\" svůj postoj přehodnotil, bez bližšího upřesnění | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-03](@/dossiers/petr-pavel/sources/src-03.md), [SRC-04](@/dossiers/petr-pavel/sources/src-04.md) |\n\n## Nejmenování Filipa Turka ministrem životního prostředí {#kauza-nejmenovani}\n\nPrezident Petr Pavel v lednu 2026 odmítl jmenovat Filipa Turka ministrem\nživotního prostředí. Jako důvod uvedl **opakovaný nedostatek respektu k\nprávnímu řádu, zlehčování nacistického Německa jako jednoho z\nnejhorších totalitních režimů 20. století a zpochybňování důstojnosti a\nrovnosti žen a příslušníků různých menšin**\n([CLM-01](@/dossiers/petr-pavel/claims/clm-01.md)). Rozhodnutí potvrdil\npremiérovi Andreji Babišovi písemně poté, co jej Babiš při novoročním\nobědě neúspěšně přesvědčoval ke jmenování; kompetenční žalobu na\nprezidenta kvůli tomu Babiš podle citovaného zdroje nezvažoval.\n\nTurek na odmítnutí reagoval oznámením, že podá žalobu na ochranu\nosobnosti a bude žádat prezidentovu omluvu\n([CLM-02](@/dossiers/petr-pavel/claims/clm-02.md)). O půl roku později,\n27. 7. 2026, oznámil, že žalobu nakonec nepodá — jako důvod uvedl, že\n„z mnoha důvodů\" svůj postoj přehodnotil, bez bližšího upřesnění\n([CLM-03](@/dossiers/petr-pavel/claims/clm-03.md)).\n\n**Co tento dossier nevyvozuje**: odmítnutí jmenovat člena vlády je\nprezidentova ústavní pravomoc, ne spor mimo právní rámec. Tento přehled\nnehodnotí, zda bylo rozhodnutí správné — zaznamenává, co bylo veřejně\nřečeno a co se následně stalo. Širší kontext jmenování (dočasné pověření\nPetra Macinky vedením resortu, pozdější jmenování Igora Červeného) je\nsoučástí dossierů [Filipa Turka](@/dossiers/filip-turek/_index.md) a\n[Petra Macinky](@/dossiers/petr-macinka/_index.md), ne tohoto — sem patří\njen vlákno přímo se týkající prezidenta.\n\n## Co tento přehled nezkoumal {#mezery}\n\nŽádná mezera k tomuto úzce vymezenému tématu evidována není — obě strany\nvlákna (odmítnutí i stažení žaloby) jsou doloženy nezávisle potvrzenými\nzdroji. Širší téma prezidentského úřadu, jeho dalších rozhodnutí nebo\nveřejných výroků mimo toto vlákno **autorizováno není** a tento dossier\nje proto ani neuvádí.\n\n## Metodické omezení\n\nOdmítnutí jmenovat člena vlády je výkon ústavní pravomoci, ne zjištění o\npochybení. Turkovo stažení oznámené žaloby je zaznamenáno jako fakt bez\ndomýšlení důvodu nad rámec toho, co sám uvedl."
+    },
+    {
+      "type": "timeline",
+      "entries": [
+        {
+          "date": "2026-01-09",
+          "title": "Prezident Petr Pavel odmítl jmenovat Filipa Turka ministrem životního prostředí a své rozhodnutí veřejně zdůvodnil",
+          "anchor": "kauza-nejmenovani",
+          "dot": "dot-fact",
+          "subjects": [
+            "pavel"
+          ]
+        },
+        {
+          "date": "2026-01-09",
+          "title": "Filip Turek oznámil, že na prezidenta podá žalobu na ochranu osobnosti a bude žádat omluvu",
+          "anchor": "kauza-nejmenovani",
+          "dot": "dot-fact",
+          "subjects": [
+            "pavel"
+          ]
+        },
+        {
+          "date": "2026-07-27",
+          "title": "Turek oznámil, že žalobu nakonec nepodá",
+          "anchor": "kauza-nejmenovani",
+          "dot": "dot-fact",
+          "subjects": [
+            "pavel"
+          ]
+        }
+      ]
+    }
+  ]
+}

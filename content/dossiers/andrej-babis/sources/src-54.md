@@ -1,23 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-54 — Aktuálně.cz: Policie obvinila Babiše a Faltýnka kvůli Čapímu hnízdu (9. 10. 2017)"
 description = "Zahájení trestního stíhání v souvislosti s 50mil. dotací po vydání Sněmovnou; podezření z dotačního podvodu a poškození finančních zájmů EU; Babiš podal stížnost."
 template = "dossier-source.html"
 weight = 54
 
 [extra]
-subjects = ["babis"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-54"
+view_model = "generated/views/dossiers/andrej-babis/sources/src-54.json"
 dossier = "andrej-babis"
 record_type = "source"
 lang = "cs"
 src_id = "SRC-54"
-outlet = "Aktuálně.cz"
-src_type = "zpravodajství"
-url = "https://zpravy.aktualne.cz/domaci/policie-obvinila-babise-s-faltynkem-kvuli-dotacim-na-stavbu/r~069b351aacf611e7ad190025900fea04/"
-published = "2017-10-09"
-retrieved = "2026-08-01"
-claims = ["CLM-77"]
 +++
-
 Aktuálně.cz 9. 10. 2017 informuje, že policie obvinila Andreje Babiše a
 Jaroslava Faltýnka v souvislosti s padesátimilionovou dotací EU na
 stavbu Farmy Čapí hnízdo; podezření se týkala dotačního podvodu a

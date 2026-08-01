@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-45",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-45",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "text": "Tejc svou kritiku soudu tamtéž zarámoval slovy: „Máme zaručenu svobodu slova a nikdo není nekritizovatelný, tedy ani soudy nebo jejich rozhodnutí.“ Reagoval na interpelaci poslance Karla Dvořáka (STAN), který varoval před znevažováním justice.",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-08"
+    }
+  ],
+  "subjects": [
+    "tejc"
+  ],
+  "order": 45,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jeronym-tejc/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

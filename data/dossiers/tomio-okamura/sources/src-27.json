@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-27",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-27",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
+  },
+  "title": "SRC-27 — Hospodářské noviny: Sněmovna vydala Okamuru k trestnímu stíhání kvůli podezření ze šíření nenávisti v předvolební kampani (13. 2. 2025)",
+  "description": "HN nezávisle na ČT24 (SRC-18) potvrzuje výsledek hlasování (81:62) a stranické rozložení hlasování o vydání Tomia Okamury.",
+  "outlet": "Hospodářské noviny",
+  "sourceType": "zpravodajství",
+  "url": "https://domaci.hn.cz/c1-67608930-bdquo-neodvolam-ldquo-snemovna-vydala-okamuru-k-trestnimu-stihani-kvuli-podezreni-ze-sireni-nenavisti-v-predvolebni-kampani",
+  "published": "2025-02-13",
+  "retrieved": "2026-07-31",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-25"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-26"
+    }
+  ],
+  "subjects": [
+    "okamura"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Hospodářské noviny dne 13. 2. 2025: „Pro vyslovení souhlasu s trestním\nstíháním lídra SPD hlasovalo 81 ze 143 přítomných poslanců. Proti jich\nbylo 62.\" Pro vydání hlasovali zákonodárci vládních ODS, STAN, KDU-ČSL\na TOP 09, opoziční Piráti a nezařazený Ivo Vondrák; proti hlasovali\nposlanci SPD a zástupci ANO.\n\n**Nezávislost**: samostatná redakce od ČT24 (SRC-18) — nezávisle\npotvrzuje tutéž veřejnou skutečnost (výsledek a rozložení hlasování).\nProto CLM-25 a CLM-26 nesou stav `CORROBORATED`."
+    }
+  ],
+  "order": 27
+}

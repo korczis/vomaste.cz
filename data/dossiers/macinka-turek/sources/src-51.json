@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-51",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-51",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-51 — Blesk.cz",
+  "description": "Turek oznamuje, že žalobu na ochranu osobnosti proti prezidentu Pavlovi nakonec nepodá.",
+  "outlet": "Blesk.cz",
+  "sourceType": "tabloid",
+  "url": "https://www.blesk.cz/clanek/zpravy-politika/844802/turek-nepoda-zalobu-na-pavla-zmenil-jsem-z-mnoha-duvodu-nazor.html",
+  "published": "2026-07-27",
+  "retrieved": "2026-07-29",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-44"
+    }
+  ],
+  "subjects": [
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Filip Turek oznámil, že žalobu na ochranu osobnosti proti prezidentu\nPetru Pavlovi, kterou avizoval v lednu 2026 (CLM-39), nakonec nepodá.\nJako důvod uvedl, že „změnil jsem z mnoha důvodů na tuto záležitost\nnázor\" — bez bližšího upřesnění důvodů."
+    }
+  ],
+  "order": 51
+}

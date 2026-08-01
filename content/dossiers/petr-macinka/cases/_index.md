@@ -1,18 +1,16 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Kauzy — Petr Macinka"
 description = "Sledované kauzy z kanonického registru, které se týkají Petra Macinky."
 template = "entity-dossier-registry.html"
 
 [extra]
+generated = true
+view_model = "generated/views/dossiers/petr-macinka/cases-index.json"
 dossier = "petr-macinka"
-dossier_title = "Petr Macinka"
-canonical_dossier = "macinka-turek"
-subject = "macinka"
-registry = "cases"
 lang = "cs"
 seo_type = "CollectionPage"
 +++
-
 Filtrovaný pohled na [registr kauz](@/dossiers/macinka-turek/cases/_index.md) — jen kauzy, ve kterých je Petr Macinka přímo zmíněn.
 
 ## Co drží kauza pohromadě

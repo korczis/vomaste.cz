@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/boris-stastny/gaps/GAP-01",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/boris-stastny"
+  },
+  "title": "GAP-01 — Proč nebyly bezpečnostní orgány o nálezu informovány",
+  "description": "Podle citovaného zdroje formální vyšetřování neproběhlo právě proto, že služby nebyly oficiálně informovány; důvod zdroj neuvádí.",
+  "priority": "vysoká",
+  "checked": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-04"
+    }
+  ],
+  "subjects": [
+    "stastny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Podle citovaného zdroje\n([SRC-02](@/dossiers/boris-stastny/sources/src-02.md)) neproběhlo formální\nvyšetřování zpravodajskými službami ani ochrannou službou policie proto,\nže o nálezu **nebyly oficiálně informovány**. Zdroj neuvádí, kdo o\nneinformování rozhodl, podle jakého postupu, ani zda nějaký předpis\noznámení vyžadoval.\n\nOtevřenost této mezery není zjištěním, že postup byl vadný — ani že byl\nsprávný. Je to konstatování, že doložený zdroj tuto část nevysvětluje.\n\n**Podmínka uzavření**: doložený popis platného postupu při nálezu\nneznámého elektronického zařízení v prostorách Úřadu vlády a doložené\nvyjádření, jak byl v tomto případě uplatněn, ověřené přímým otevřením\nzdroje."
+    }
+  ],
+  "order": 1
+}

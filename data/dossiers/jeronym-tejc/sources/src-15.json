@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-15",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-15",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "title": "SRC-15 — Reflex",
+  "description": "Tejcův audit, trestní oznámení a údajné poškozování Decroix. Jak pokračuje bitcoinová kauza?",
+  "outlet": "Reflex",
+  "sourceType": "zpravodajství",
+  "url": "https://www.reflex.cz/clanek/zpravy/135123/tejcuv-audit-trestni-oznameni-a-udajne-poskozovani-decroix-jak-pokracuje-bitcoinova-kauza.html",
+  "published": "2026-04-23",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-26"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-27"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-28"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-29"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-30"
+    }
+  ],
+  "subjects": [
+    "tejc"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Tejcův audit, trestní oznámení a údajné poškozování Decroix. Jak pokračuje bitcoinová kauza?**\n\nAutorka Barbora Prchalová rekapituluje kauzu: dar 468 bitcoinů od Tomáše Jiřikovského z března předchozího roku, prodej za 956,8 milionu korun. Interní audit Tejce podle textu zjistil chybějící kontrolní mechanismy, podpis smlouvy před ministerským schválením, absenci právního posouzení, připuštění zájemců bez včas složené kauce a snížení nejnižší ceny o deset procent. Obsahuje výroky Tejce, Blažka i reakci Decroix na síti X.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 15
+}

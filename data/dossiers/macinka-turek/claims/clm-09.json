@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-09",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-09",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "text": "Pravost/autorství screenshotů z CLM-07 nebyla nezávisle prokázána ani vyvrácena",
+  "status": "status-disputed",
+  "statusLabel": "SPORNÉ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-15"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-16"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-22"
+    }
+  ],
+  "subjects": [
+    "turek"
+  ],
+  "order": 9,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam tvrzení CLM-09 — shrnutí, stav a zdroje výše jsou úplné. Součástí téže kauzy jsou i CLM-07, CLM-08, CLM-19, CLM-41, CLM-42. Hlavní stránka dossieru zobrazuje tentýž text ze stejného zdroje; build proces ověřuje, že se neliší."
+    }
+  ]
+}

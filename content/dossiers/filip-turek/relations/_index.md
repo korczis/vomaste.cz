@@ -1,17 +1,16 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Vztahy — Filip Turek"
 description = "Vztahy z kanonického grafu, které se týkají Filipa Turka."
 template = "entity-dossier-relations.html"
 
 [extra]
+generated = true
+view_model = "generated/views/dossiers/filip-turek/relations-index.json"
 dossier = "filip-turek"
-dossier_title = "Filip Turek"
-canonical_dossier = "macinka-turek"
-subject = "turek"
 lang = "cs"
 seo_type = "CollectionPage"
 +++
-
 Filtrovaný pohled na [registr vztahů](@/dossiers/macinka-turek/relations/_index.md) — jen vztahy, ve kterých Filip Turek přímo figuruje.
 
 ## Hrana grafu je záznam, ne domněnka

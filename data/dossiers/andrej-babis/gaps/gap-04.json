@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/gaps/GAP-04",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-04",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "GAP-04 — Soudní rozsudky o střetu zájmů z roku 2025 mimo správní soudnictví",
+  "description": "Zpravodajství uvádí další soudní rozhodnutí ke střetu zájmů; zdroj, který je popisuje, nešlo automatizovaně otevřít, takže tvrzení nevzniklo.",
+  "priority": "vysoká",
+  "checked": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-18"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-19"
+    }
+  ],
+  "subjects": [],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Doložen je rozsudek Nejvyššího správního soudu ve věci dotace pro\nKostelecké uzeniny ([CLM-18](@/dossiers/andrej-babis/claims/clm-18.md),\n[CLM-19](@/dossiers/andrej-babis/claims/clm-19.md)). Zpravodajství zmiňuje\ni **další** soudní rozhodnutí ke střetu zájmů z roku 2025, včetně věcí\no veřejné zakázky. Zdroj, který je popisuje (iROZHLAS), odpovídá\nautomatizovanému stažení chybou 403, takže jsem si jeho obsah nemohl\nověřit přímým otevřením.\n\nPodle pravidel tohoto webu se z nedostupného zdroje nepřebírá nic — ani\n„podle médií\". Mezera zůstává otevřená, dokud nebude k dispozici jmenovaný\nzdroj, který jde otevřít a přečíst."
+    }
+  ],
+  "order": 4
+}

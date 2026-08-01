@@ -1,3 +1,5 @@
+*Historický dokument — popisuje stav před JSON-first migrací (T-028).*
+
 # Mise: škálovatelný Sigma.js + Graphology graph workbench
 
 **Datum zadání**: 2026-08-01 · **Zadavatel**: vlastník webu (on the record,

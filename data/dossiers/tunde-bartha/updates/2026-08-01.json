@@ -1,0 +1,50 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/updates/2026-08-01",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-08-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tunde-bartha"
+  },
+  "date": "2026-08-01",
+  "summary": "Rozšíření v rozsahu AUTH-2026-07-30-U: jmenování vedoucí Úřadu vlády 15. 12. 2025 doloženo primárním úředním zdrojem (uzavírá GAP-02), vedení prezidentské kampaně 2022–2023 a bezpečnostní prověrka (Tajné + NATO certifikát) jako nové kauzy-kontexty, maďarská firemní funkce country managerky AGROFERT Hungária jako datovaný employment fact (GAP-04 aktualizována, zůstává otevřená). Nová tvrzení CLM-09 až CLM-13, zdroje SRC-06 až SRC-09 (všechny otevřeny a přečteny 2026-08-01), dva nové uzly grafu a čtyři hrany.",
+  "addedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-13"
+    }
+  ],
+  "closedGaps": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/gaps/GAP-02"
+    }
+  ],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-09"
+    }
+  ]
+}

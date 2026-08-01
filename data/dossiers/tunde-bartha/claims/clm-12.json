@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-12",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-12",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tunde-bartha"
+  },
+  "text": "Podle odpovědi Úřadu vlády na žádost podle informačního zákona, citované ve zpravodajství, má Bartha od roku 2019 osvědčení fyzické osoby pro stupeň utajení Tajné a osvědčení NATO Personnel Clearance Certificate; úřad uvedl, že „splňuje požadavky na výkon své funkce“",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-08"
+    }
+  ],
+  "subjects": [],
+  "order": 12,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/tunde-bartha/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

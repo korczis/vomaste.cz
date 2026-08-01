@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-66",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-66",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "Ústavní soud podle zpravodajství z 23. ledna 2026 odmítl stížnost společnosti Vodňanská drůbež ze skupiny Agrofert ve sporu o dotaci 75 milionů korun z Programu rozvoje venkova, na kterou firma podepsala smlouvu v roce 2018; SZIF administraci žádosti v roce 2023 ukončil, správní žalobu zamítl Městský soud v Praze a kasační stížnost Nejvyšší správní soud. Jde o spor o nárok na dotaci, ne o rozhodnutí o trestní odpovědnosti kohokoli",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-44"
+    }
+  ],
+  "subjects": [],
+  "order": 66,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

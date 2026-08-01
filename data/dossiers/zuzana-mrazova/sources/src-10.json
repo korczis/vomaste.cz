@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-10",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-10",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "title": "SRC-10 — FORUM 24",
+  "description": "„Tady nejste v Severní Koreji.“ Mrázová sklízí kritiku za vyjádření k černým stavbám",
+  "outlet": "FORUM 24",
+  "sourceType": "zpravodajství",
+  "url": "https://www.forum24.cz/tady-nejste-v-severni-koreji-mrazova-sklizi-kritiku-za-vyjadreni-k-cernym-stavbam",
+  "published": "2026-05-01",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-14"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-15"
+    }
+  ],
+  "subjects": [
+    "mrazova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**„Tady nejste v Severní Koreji.“ Mrázová sklízí kritiku za vyjádření k černým stavbám**\n\nReakce na video Mrázové k černým stavbám: pozemek v Bílině je veden jako lesní plocha, stojí na něm domek s komínem a pergola; úřady dříve odmítly změnu územního plánu kvůli ochraně krajiny. Mrázová tvrdí, že parcelu nabyla se stavbami a předpokládala soulad s předpisy; polovinu pozemku získala 2021 darem od manžela Romana Schwarze. Kritika: Valenta („Tady nejste v Severní Koreji“), Kupka, Nerudová, Hřib.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 10
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-23",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-23",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "text": "Ministerstvo spravedlnosti trvá na výkladu, že „veškerý oznamovaný majetek, činnosti a závazky musejí se vztahovat ke dni předcházejícímu tomu, než veřejný funkcionář vstoupil do funkce“ — tedy opačně, než jak postupoval ministr.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-14"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "order": 23,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/igor-cerveny/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

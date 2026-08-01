@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-17",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-17",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "title": "SRC-17 — CNN Prima News",
+  "description": "Zakážu mobily ve školách. Dcery mi řekly, že jsem se zbláznil, říká Plaga",
+  "outlet": "CNN Prima News",
+  "sourceType": "zpravodajství",
+  "url": "https://cnn.iprima.cz/zakazu-mobily-na-skolach-dcery-mi-rekly-ze-jsem-se-zblaznil-rika-plaga-492262",
+  "published": "2025-11-21",
+  "retrieved": "2026-07-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-46"
+    }
+  ],
+  "subjects": [
+    "plaga"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Zakážu mobily ve školách. Dcery mi řekly, že jsem se zbláznil, říká Plaga**\n\nRozhovor s Robertem Plagou o omezení mobilů ve školách; odkazuje na možnost ředitelů omezit mobily ve školním řádu od roku 2021, popisuje reakci vlastních dcer a předpokládanou podporu rodičů.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 17
+}

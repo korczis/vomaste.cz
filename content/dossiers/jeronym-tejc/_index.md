@@ -1,145 +1,20 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Jeroným Tejc"
 description = "Neutrální, zdroji doložený přehled o osobě Jeroným Tejc — ministr spravedlnosti. Autorizovaný rozsah dle AUTH-2026-07-30-O; registry se teprve plní."
 template = "entity-dossier.html"
 
 [extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/jeronym-tejc"
+view_model = "generated/views/dossiers/jeronym-tejc/overview.json"
 dossier = "jeronym-tejc"
-dossier_title = "Jeroným Tejc"
+record_type = "dossier"
 dossier_type = "entity"
-canonical_dossier = "jeronym-tejc"
-subject = "tejc"
 lang = "cs"
 seo_type = "ProfilePage"
-subject_entities = ["tejc"]
-subjects = ["Jeroným Tejc"]
 updated = "2026-07-30"
 reviewed_at = "2026-07-30"
-
-
-[[extra.timeline]]
-date = "2026-04"
-title = "Tejc ohlásil (17. 4.) a následně podal (doručeno 23. 4. VSZ Olomouc) trestní oznámení po interním auditu bitcoinové kauzy resortu"
-anchor = "kauza-bitcoin"
-dot = "dot-fact"
-subjects = ["tejc"]
-
-[[extra.timeline]]
-date = "2026-07"
-title = "Kárná žaloba na soudkyni OS Benešov a podnět k prověření OSPOD v kauze Viktorky (1. 7.)"
-anchor = "kauza-bitcoin"
-dot = "dot-fact"
-subjects = ["tejc"]
-
-[[extra.timeline]]
-date = "2026-07"
-title = "Tejc veřejně zpochybnil předběžné opatření Ústavního soudu ve sporu prezidenta o účast na summitu NATO (2. 7.)"
-anchor = "kauza-bitcoin"
-dot = "dot-fact"
-subjects = ["tejc"]
-
-[[extra.timeline]]
-date = "2026-07"
-title = "Vláda navrhla zamítnutí prezidentovy kompetenční žaloby a vyloučení soudce Šámala; postoj prezentoval Tejc (20. 7.)"
-anchor = "kauza-bitcoin"
-dot = "dot-fact"
-subjects = ["tejc"]
-[[extra.timeline]]
-date = "2026-04"
-title = "Ministerstvo předkládá interní audit a Tejc ohlašuje trestní oznámení; Decroix mluví o honu na čarodějnice"
-anchor = "kauza-bitcoin"
-dot = "dot-fact"
-subjects = ["tejc"]
-
-[[extra.timeline]]
-date = "2026-05"
-title = "NCOZ zahajuje trestní stíhání Blažka, Daňhela a Titze pro legalizaci výnosů a zneužití pravomoci; obvinění podávají stížnosti"
-anchor = "kauza-bitcoin"
-dot = "dot-fact"
-subjects = ["tejc"]
-
-[[extra.timeline]]
-date = "2026-05"
-title = "Na MPSV poprvé zasedá Komise pro přezkum nepřirozených úmrtí dětí, výstupem je podnět ke kontrole OSPOD ve Středočeském kraji a v Praze"
-anchor = "kauza-viktorka"
-dot = "dot-fact"
-subjects = ["tejc"]
-
-[[extra.timeline]]
-date = "2026-06"
-title = "Tejc představuje novelu občanského zákoníku k opatrovnickým soudům, Marvanová ji označuje za nedostatečnou"
-anchor = "kauza-viktorka"
-dot = "dot-fact"
-subjects = ["tejc"]
-
-[[extra.timeline]]
-date = "2026-06"
-title = "Ústavní soud vydává předběžné opatření ve věci Pl. ÚS 16/26 se soudcem zpravodajem Šámalem, dva soudci uplatňují odlišné stanovisko"
-anchor = "kauza-ustavni-soud"
-dot = "dot-fact"
-subjects = ["tejc"]
-
-[[extra.timeline]]
-date = "2026-06"
-title = "Nejvyšší státní zastupitelství zamítá stížnosti obviněných, zahájení trestního stíhání se stává pravomocným"
-anchor = "kauza-bitcoin"
-dot = "dot-fact"
-subjects = ["tejc"]
-
-[[extra.timeline]]
-date = "2026-07"
-title = "Tejc ve sněmovně zpochybňuje pravomoc Ústavního soudu, zároveň deklaruje respektování rozhodnutí"
-anchor = "kauza-ustavni-soud"
-dot = "dot-fact"
-subjects = ["tejc"]
-
-[[extra.timeline]]
-date = "2026-07"
-title = "Ministr podává kárnou žalobu na soudkyni Kimmelovou s návrhem ročního snížení platu o 30 procent"
-anchor = "kauza-viktorka"
-dot = "dot-fact"
-subjects = ["tejc"]
-
-[[extra.timeline]]
-date = "2026-07"
-title = "Vláda navrhuje zamítnutí kompetenční žaloby a vyloučení soudce Šámala; Soudcovská unie se ohrazuje proti výrokům politiků"
-anchor = "kauza-ustavni-soud"
-dot = "dot-fact"
-subjects = ["tejc"]
-
-[[extra.cases]]
-anchor = "kauza-bitcoin"
-period = "2026"
-title = "Bitcoinová kauza resortu spravedlnosti"
-status = "status-single"
-label = "Sledované téma"
-summary = "Bitcoinová kauza resortu spravedlnosti — viz tvrzení CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07."
-claims = ["CLM-19", "CLM-20", "CLM-21", "CLM-22", "CLM-23", "CLM-24", "CLM-25", "CLM-26", "CLM-27", "CLM-28", "CLM-29", "CLM-30", "CLM-31", "CLM-32"]
-subjects = ["tejc"]
-
-[[extra.cases]]
-anchor = "kauza-viktorka"
-period = "2026"
-title = "Kárná žaloba v případu Viktorky"
-status = "status-single"
-label = "Sledované téma"
-summary = "Kárná žaloba v případu Viktorky — viz tvrzení CLM-08, CLM-09, CLM-10, CLM-11, CLM-12, CLM-13."
-claims = ["CLM-33", "CLM-34", "CLM-35", "CLM-36", "CLM-37", "CLM-38", "CLM-39", "CLM-40"]
-subjects = ["tejc"]
-
-[[extra.cases]]
-anchor = "kauza-ustavni-soud"
-period = "2026"
-title = "Spor o předběžné opatření Ústavního soudu"
-status = "status-single"
-label = "Sledované téma"
-summary = "Spor o předběžné opatření Ústavního soudu — viz tvrzení CLM-14, CLM-15, CLM-16, CLM-17, CLM-18."
-claims = ["CLM-41", "CLM-42", "CLM-43", "CLM-44", "CLM-45", "CLM-46", "CLM-47", "CLM-48", "CLM-49", "CLM-50", "CLM-51"]
-subjects = ["tejc"]
-
-[extra.authorization]
-authorized = true
-record_ids = ["AUTH-2026-07-30-O"]
 +++
 Jeroným Tejc zastává funkci ministra spravedlnosti ve třetí vládě Andreje Babiše (viz
 `data/government.toml`, ověřeno proti oficiálnímu seznamu členů vlády).

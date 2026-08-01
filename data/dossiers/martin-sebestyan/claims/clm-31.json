@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-31",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-31",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
+  },
+  "text": "Transparency International ČR odeslala 25. května 2026 podnět institucím EU — DG AGRI, DG JUST, DG BUDGET, úřadu OLAF a Evropskému účetnímu dvoru — s varováním, že svěřenský fond RSVP TRUST nesplňuje parametry pro zamezení střetu zájmů podle čl. 61 nařízení č. 2024/2509. Jde o hodnocení nevládní organizace, nikoli o zjištění orgánu veřejné moci.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-17"
+    }
+  ],
+  "subjects": [
+    "sebestyan"
+  ],
+  "order": 31,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/martin-sebestyan/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-38",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-38",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "text": "V rozhovoru pro Hospodářské noviny z 15. června 2026 Schillerová uvedla, že vláda v připravovaném fiskálně-strukturálním plánu počítá s deficitem 2,8 % HDP a postupnou konsolidací zhruba o půl procentního bodu ročně, a připustila, že nemůže vyloučit vyšší schodek než v roce 2026.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-13"
+    }
+  ],
+  "subjects": [
+    "schillerova"
+  ],
+  "order": 38,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/alena-schillerova/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

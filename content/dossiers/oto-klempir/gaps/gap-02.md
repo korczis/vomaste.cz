@@ -1,20 +1,19 @@
 +++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "GAP-02 — Žádné z tvrzení nemá druhý nezávislý zdroj"
 description = "Všechna resortní tvrzení stojí k datu kontroly na jediném vydavateli; nezávislé potvrzení nebylo nalezeno ani vyloučeno."
 template = "dossier-gap.html"
 weight = 2
 
 [extra]
-subjects = ["klempir"]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/oto-klempir/gaps/GAP-02"
+view_model = "generated/views/dossiers/oto-klempir/gaps/gap-02.json"
 dossier = "oto-klempir"
 record_type = "gap"
-priority = "vysoká"
 lang = "cs"
 gap_id = "GAP-02"
-checked = "2026-07-30"
-claims = ["CLM-03", "CLM-04", "CLM-05", "CLM-06"]
 +++
-
 Tvrzení CLM-03 až CLM-06 mají k datu kontroly (2026-07-30) jediný
 citovaný zdroj — [SRC-02](@/dossiers/oto-klempir/sources/src-02.md)
 (RESPEKT). Ve zkontrolovaných zdrojích nebyl nalezen druhý, skutečně

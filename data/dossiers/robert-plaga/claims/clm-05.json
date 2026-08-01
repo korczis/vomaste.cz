@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-05",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-05",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "text": "Dotazníková část testu obsahovala otázky na pocity a duševní zdraví žáků včetně sebevražedných myšlenek, na vybavení domácnosti a na vzdělání a profesi rodičů; podle Heroine.cz šlo mimo jiné o dotaz, zda dítě mělo myšlenky, že by mu 'bylo lépe, kdyby nežilo nebo kdyby si ublížilo'.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-04"
+    }
+  ],
+  "subjects": [
+    "plaga"
+  ],
+  "order": 5,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/robert-plaga/_index.md#registr-tvrzeni)."
+    }
+  ]
+}
