@@ -137,3 +137,51 @@ test.describe("landing page — šířka, počty, FAQ", () => {
     }
   });
 });
+
+test.describe("celowebová tvrzení odpovídají celému webu", () => {
+  test("datum poslední aktualizace není starší než nejnovější dossier", async ({ page }) => {
+    // Patička hlásila datum jediného dossieru (2026-07-29), přestože jiný
+    // byl aktualizován 2026-08-01. Datum, které se tváří jako stav celého
+    // webu, ale popisuje jeden záznam, je horší než žádné.
+    await page.goto("/");
+    const patka = (await page.locator("text=/Poslední aktualizace obsahu/").first().innerText()).match(/\d{4}-\d{2}-\d{2}/)?.[0];
+    expect(patka, "v patičce není datum").toBeTruthy();
+
+    await page.goto("/dossiers/");
+    const nejnovejsi = (await page.evaluate(() =>
+      [...document.querySelectorAll("[data-dossier-directory] [data-record-key]")]
+        .flatMap((el) => el.textContent.match(/\d{4}-\d{2}-\d{2}/g) || [])
+        .sort()
+        .pop()));
+    expect(nejnovejsi, "adresář neuvádí data").toBeTruthy();
+    expect(patka >= nejnovejsi, `patička ${patka} je starší než nejnovější dossier ${nejnovejsi}`).toBe(true);
+  });
+
+  test("dlaždice s celowebovým počtem nevede do registru jednoho dossieru", async ({ page }) => {
+    // „846 Tvrzení" mířící na registr se 76 záznamy je slib, který cíl
+    // nesplní. Číslo je součet přes celý web, takže i cíl musí být
+    // celowebový.
+    await page.goto("/");
+    const cile = await page.evaluate(() =>
+      // Cílí se na označenou mřížku, ne na celou sekci: ta obsahuje
+      // i seznam posledních aktualizací s odkazy na jednotlivá tvrzení,
+      // takže široký selektor měřil něco úplně jiného.
+      [...document.querySelectorAll("[data-dataset-tiles] a")].map((a) => new URL(a.href).pathname));
+    expect(cile.length).toBe(6);
+    const uzke = cile.filter((c) => /^\/dossiers\/[^/]+\/(claims|sources|cases|gaps|relations)\//.test(c));
+    expect(uzke, `dlaždice míří do registru jednoho dossieru: ${uzke.join(", ")}`).toEqual([]);
+  });
+
+  test("odkazy dlaždic vedou na existující stránky", async ({ page }) => {
+    // Navigace přes page, ne přes request fixture: ta v tomhle projektu
+    // koliduje s přepisem URL a padá na „Request context disposed".
+    await page.goto("/");
+    const cile = [...new Set(await page.evaluate(() =>
+      [...document.querySelectorAll("[data-dataset-tiles] a")].map((a) => new URL(a.href).pathname)))];
+    expect(cile.length).toBeGreaterThan(1);
+    for (const cesta of cile) {
+      const r = await page.goto(cesta);
+      expect(r?.status(), `${cesta} vrací ${r?.status()}`).toBeLessThan(400);
+    }
+  });
+});

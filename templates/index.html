@@ -27,7 +27,13 @@
 {% set registry = load_data(path="data/dossiers.toml") %}
 {% set_global canonical_slugs = [] %}
 {% for d in registry.dossiers %}
-  {% if d.dossier_type == "aggregate" or d.canonical_dossier | default(value="") == "" %}
+  {#- Vlastníci záznamů: canonical_dossier prázdný (samostatný nebo agregovaný
+      pohled) nebo rovný vlastnímu slugu. Předchozí podmínka propustila 1 z 22
+      dossierů, takže „Poslední aktualizace obsahu" v patičce hlásila datum
+      jediného dossieru — starší než skutečnost. Datum, které se tváří jako
+      stav celého webu, ale popisuje jeden záznam, je horší než žádné. -#}
+  {% set c = d.canonical_dossier | default(value="") %}
+  {% if c == "" or c == d.slug %}
     {% set_global canonical_slugs = canonical_slugs | concat(with=d.slug) %}
   {% endif %}
 {% endfor %}
@@ -256,14 +262,19 @@
   {% endfor %}
   <section aria-labelledby="dataset-heading" class="landing-section py-12 sm:py-16 lg:py-20">
     <h2 id="dataset-heading" class="text-center text-2xl font-bold text-white sm:text-3xl">Dataset v číslech</h2>
-    <p class="mx-auto mt-3 max-w-xl text-center text-white/60">Počty se generují při každém buildu z reálných záznamů — každá dlaždice je proklik do registru.</p>
-    <div class="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
-      {{ ui::stat_tile(value=tot_claims, label="Tvrzení", url=get_url(path="@/dossiers/" ~ primary_canon ~ "/claims/_index.md")) }}
-      {{ ui::stat_tile(value=tot_sources, label="Zdrojů", url=get_url(path="@/dossiers/" ~ primary_canon ~ "/sources/_index.md")) }}
-      {{ ui::stat_tile(value=tot_cases, label="Kauz", url=get_url(path="@/dossiers/" ~ primary_canon ~ "/cases/_index.md")) }}
-      {{ ui::stat_tile(value=tot_gaps, label="Otevřených mezer", url=get_url(path="@/dossiers/" ~ primary_canon ~ "/gaps/_index.md")) }}
+    <p class="mx-auto mt-3 max-w-xl text-center text-white/60">Počty se generují při každém buildu ze všech dossierů — dlaždice vede tam, kde ty záznamy procházet.</p>
+    {#- Dlaždice NESMÍ vést do registru jednoho dossieru: číslo je součet přes
+        celý web, takže „846 Tvrzení" mířící na registr se 76 záznamy je slib,
+        který cíl nesplní. Celowebové registry tvrzení/zdrojů/kauz/mezer
+        neexistují, takže se odkazuje na adresář dossierů, odkud se do nich
+        vstupuje; entity a vztahy svůj celowebový pohled mají. -#}
+    <div data-dataset-tiles class="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+      {{ ui::stat_tile(value=tot_claims, label="Tvrzení", url=get_url(path="@/dossiers/_index.md")) }}
+      {{ ui::stat_tile(value=tot_sources, label="Zdrojů", url=get_url(path="@/dossiers/_index.md")) }}
+      {{ ui::stat_tile(value=tot_cases, label="Kauz", url=get_url(path="@/dossiers/_index.md")) }}
+      {{ ui::stat_tile(value=tot_gaps, label="Otevřených mezer", url=get_url(path="@/dossiers/_index.md")) }}
       {{ ui::stat_tile(value=tot_entities, label="Entit", url=get_url(path="@/entities/_index.md")) }}
-      {{ ui::stat_tile(value=tot_relations, label="Vztahů", url=get_url(path="@/dossiers/" ~ primary_canon ~ "/relations/_index.md")) }}
+      {{ ui::stat_tile(value=tot_relations, label="Vztahů", url=get_url(path="@/map/_index.md")) }}
     </div>
 
     <h3 class="mt-14 text-center text-lg font-semibold text-white">Poslední aktualizace</h3>
@@ -426,7 +437,7 @@
       <div class="flex w-full flex-col items-stretch gap-3 sm:w-auto sm:flex-row">
         <a href="https://github.com/korczis/vomaste.cz/fork" class="inline-flex items-center justify-center gap-2 rounded-lg bg-black px-6 py-3.5 text-base font-bold text-[#f3e5c0] no-underline transition-colors hover:bg-black/80 sm:py-3 sm:text-sm">Forknout na GitHubu</a>
         <a href="https://github.com/korczis/vomaste.cz/blob/master/CONTRIBUTING.md" class="inline-flex items-center justify-center rounded-lg border-2 border-black/30 px-6 py-3.5 text-base font-semibold text-black no-underline transition-colors hover:border-black hover:bg-black/5 sm:py-3 sm:text-sm">Jak přispět</a>
-        <a href="{{ get_url(path='@/dossiers/' ~ primary_canon ~ '/gaps/_index.md') | safe }}" class="inline-flex items-center justify-center rounded-lg border-2 border-black/30 px-6 py-3.5 text-base font-semibold text-black no-underline transition-colors hover:border-black hover:bg-black/5 sm:py-3 sm:text-sm">Otevřené otázky ({{ tot_gaps }})</a>
+        <a href="{{ get_url(path='@/dossiers/_index.md') | safe }}" class="inline-flex items-center justify-center rounded-lg border-2 border-black/30 px-6 py-3.5 text-base font-semibold text-black no-underline transition-colors hover:border-black hover:bg-black/5 sm:py-3 sm:text-sm">Otevřené otázky ({{ tot_gaps }})</a>
       </div>
     </div>
   </section>
