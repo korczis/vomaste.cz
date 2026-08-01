@@ -10,11 +10,14 @@
     "@id": "https://vomaste.cz/id/dossiers/richard-chlad"
   },
   "text": "Podle citovaného profilu Chlad začínal v 80. letech dovozem videokazet a hodinek, po roce 1989 podnikal v hazardu (síť heren Krijcos) a dnes investuje do solárních elektráren a vodíku (Krijcos Energy, Moravia Green Hydrogen)",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/richard-chlad/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/sources/SRC-04"
     }
   ],
   "subjects": [
