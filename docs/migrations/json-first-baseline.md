@@ -1,3 +1,5 @@
+*Historický dokument — popisuje stav před JSON-first migrací (T-028).*
+
 # JSON-first migration — baseline audit (Phase A)
 
 **Measured**: 2026-08-01, against `task/T-028` (== `master` at audit time,

@@ -1,3 +1,5 @@
+*Historický dokument — popisuje stav před JSON-first migrací (T-028).*
+
 # Prismatic-platform sourcing TODO (per dossier)
 
 Generated 2026-07-30 by mapping `~/dev/prismatic-platform` (the site owner's

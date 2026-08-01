@@ -107,9 +107,10 @@ out. There isn't one.
 For every claim/source/case/gap/relation the research turns up, run the
 **existing** `dossier-entry` skill in full — it already enforces:
 opened-not-snippeted sources, honest status (`CORROBORATED` needs 2+
-independent, distinct-family sources; default to `1 ZDROJ`), regenerated
-detail pages, and procedural-outcome framing every time it's mentioned.
-This skill doesn't re-implement any of that.
+independent, distinct-family sources; default to `1 ZDROJ`), canonical
+JSON records (`data/dossiers/**`) with regenerated content adapters
+(`npm run data:build`), and procedural-outcome framing every time it's
+mentioned. This skill doesn't re-implement any of that.
 
 Manual OSINT tooling (e.g. `~/dev/prismatic-platform`'s
 `mix investigate.person` / `mix prismatic.osint.*` tasks, see
@@ -130,10 +131,10 @@ tooling coverage that doesn't exist, per
 
 | Condition | Enforced by |
 |---|---|
-| Scope not authorized | `npm run validate:authorization`, `verify:authorization-log` — **and** step 0 above, which is the real gate; the validators only catch a record whose scope tag doesn't resolve, not "should this exist at all" |
-| Claim status doesn't match cited source count | `npm run validate:dossier` |
-| `CORROBORATED` sources are actually the same publisher family | **Now mechanically enforced** (fixed 2026-08-01, `6b0bd4d`): `validate:dossier` is family-aware in both directions — a claim citing two sources from the same `family` no longer passes as `CORROBORATED`. Regression test: `scripts/ui/source-independence.test.mjs`. Still worth a human read on genuinely new outlets, since `family` itself is a human-assigned field. |
-| Table and generated detail page disagree | `npm run validate:dossier` |
+| Scope not authorized | `npm run validate:authorization`, `verify:authorization-log`, canonical rule S5 (`npm run data:validate`) — **and** step 0 above, which is the real gate; the validators only catch a record whose authorization pointer doesn't resolve, not "should this exist at all" |
+| Claim status doesn't match cited source count | `npm run data:validate` — rules S1 (`1 ZDROJ` = exactly one) and S2 (`CORROBORATED` = ≥ 2 sources from ≥ 2 families) |
+| `CORROBORATED` sources are actually the same publisher family | Rule S2 counts **families** (`sourceFamily` > outlet), so two same-family cites fail mechanically (regression test: `scripts/ui/source-independence.test.mjs`) — but the `sourceFamily` labeling is itself an editorial input. Check the labeling yourself, every time; a wrong family label defeats the check. |
+| Claims table and canonical record disagree | `npm run data:validate` — parity rules T1–T8 (byte-exact); detail pages are generated from the records, so page drift is impossible by construction |
 | Anchors/case references don't resolve in built HTML | `npm run verify:anchors` |
 | Generated page missing required sections / JSON-LD node | `npm run verify:full-pages`, `npm run verify:jsonld` |
 | Unauthorized dossier subject slipped into navigation/registry | `npm run validate:dossier-types`, `npm run validate:navigation` |

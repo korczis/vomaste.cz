@@ -69,17 +69,32 @@ nejdřív jako issue s odůvodněním veřejného zájmu.
 git clone git@github.com:<vas-ucet>/vomaste.cz.git
 cd vomaste.cz && npm ci
 git switch -c oprava/<strucny-popis>
-# ...úpravy...
-npm run build        # plná kvalitní brána — MUSÍ projít
+# ...úpravy kanonických dat v data/dossiers/**...
+npm run data:validate   # tvar + reference + sémantika + JSON-LD
+npm run data:build      # kompilace + regenerace content adaptérů
+npm run build           # plná kvalitní brána — MUSÍ projít
 git commit && git push && # otevřít pull request
 ```
 
-`npm run build` spouští všechny validátory (registry, graf, autorizace,
+**Kde žijí data**: veškerý dossierový obsah se edituje výhradně jako
+kanonický JSON v `data/dossiers/**` (záznamy tvrzení/zdrojů/kauz/mezer/
+vztahů/updatů po souborech, `dossier.json` s tabulkou tvrzení a grafovou
+vrstvou, globální entity v `data/dossiers/_shared/entities/`). Markdown
+pod `content/dossiers/**` a `content/entities/` je **generovaný adaptér**
+— ruční úpravu zablokuje lint; regeneruje ji `npm run data:build`. Nový
+dossier (po autorizaci) založí `npm run dossier:scaffold` — bez
+odpovídajícího záznamu v `data/authorizations.toml` odmítne běžet.
+Rychlá validace jednoho souboru:
+`npm run data:validate -- --file data/dossiers/<slug>/claims/clm-01.json`.
+
+`npm run build` spouští všechny validátory (kanonická data, autorizace,
 navigace, kotvy, JSON-LD) — červená brána znamená, že PR není hotový.
-Detailní datový model a postup přidání zdroje/tvrzení/kauzy: README,
-sekce „Přidání obsahu do dossieru". Generované soubory
-(`static/css/main.css`, `static/js/app.js`, `data/generated/*`,
-`data/dossiers/*/stats.toml`) needitujte ručně.
+Detailní postup přidání entity/zdroje/tvrzení/kauzy krok za krokem:
+[`docs/contributing/add-dossier-data.md`](docs/contributing/add-dossier-data.md);
+plný datový kontrakt: [`docs/data-contract.md`](docs/data-contract.md).
+Generované soubory (`static/css/main.css`, `static/js/app.js`,
+`data/generated/*`, `content/dossiers/**`, `content/entities/*.md`)
+needitujte ručně.
 
 `npm ci`/`npm install` navíc samo nastaví git pre-commit hook (rychlá
 podmnožina validátorů, viz `.githooks/pre-commit`) — žádný ruční krok
@@ -126,7 +141,7 @@ o reálných osobách navíc kontrola proti autorizačnímu logu). Vysoce
 rizikové změny — závažná obvinění, povyšování stavů tvrzení, cokoli
 kolem citlivých kauz — se neslučují automaticky nikdy. Zamítnutí
 dostane důvod. Věcné změny publikovaného obsahu se evidují v append-only
-historii (`data/dossiers/<slug>/updates.toml`).
+historii (kanonické záznamy `data/dossiers/<slug>/updates/*.json`).
 
 ## Licence příspěvků
 

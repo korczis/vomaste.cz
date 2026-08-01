@@ -34,7 +34,21 @@ export function baseName(name) {
   return slugify(String(name).replace(LEGAL_FORM, " ").replace(/,/g, " "));
 }
 
-const titleOf = (text) => text.match(/^title = "(.*)"$/m)?.[1] ?? "";
+/* Entity registry lives in canonical JSON (data/dossiers/_shared/entities/
+   *.json) since T-028 phase H; the TOML front-matter form is kept as a
+   fallback so the helper stays usable over legacy fixtures. */
+const titleOf = (text) => {
+  const trimmed = String(text).trimStart();
+  if (trimmed.startsWith("{")) {
+    try {
+      const title = JSON.parse(text)?.title;
+      return typeof title === "string" ? title : "";
+    } catch {
+      return "";
+    }
+  }
+  return text.match(/^title = "(.*)"$/m)?.[1] ?? "";
+};
 const tokens = (s) => slugify(s).split("-").filter(Boolean);
 
 /**

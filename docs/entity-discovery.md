@@ -10,17 +10,19 @@ anything; see `AGENTS.md` for the actual, append-only authorization record.
 ```
 publicly documented mention in a source/claim
   → candidate entity (name, type, provenance)
-  → canonical global entity page (content/entities/<id>.md)
+  → canonical global entity record (data/dossiers/_shared/entities/<id>.json,
+    with structured `provenance`; its /entities/<id>/ page is a generated adapter)
   → sources, relations, claims attached with real provenance
   → listed in the authorization-candidates report (internal, not published)
   → [ human decision by the site owner, recorded in AGENTS.md ]
-  → only then: dossier_status flips to "authorized", a dossier may exist
+  → only then: dossierStatus flips to "authorized", a dossier may exist
 ```
 
 Everything left of the bracketed step can be produced mechanically —
-`scripts/dossier/migrate-graph-to-pages.mjs` already does this for every
-node in a dossier's `graph.toml`. Everything at and after the bracketed
-step requires a human, on the record, every time.
+`scripts/osint/expand-entity.mjs` (ARES registry neighbourhood) and
+`scripts/dossier/build-government-roster.mjs` (public office) already
+write exactly this shape. Everything at and after the bracketed step
+requires a human, on the record, every time.
 
 ## Why the gate exists
 
@@ -35,8 +37,8 @@ mechanical parts of discovery is fine. Automating the *decision* is not.
 
 ## What a context entity is allowed to have
 
-A context entity (`publication_role = "context"`, `dossier_status =
-"not_authorized"`) may have:
+A context entity (`publicationRole: "context"`, `dossierStatus:
+"not_authorized"` in its canonical record) may have:
 
 - a canonical page at `/entities/<id>/`,
 - its real, sourced `claims`/`sources`,
@@ -45,15 +47,17 @@ A context entity (`publication_role = "context"`, `dossier_status =
 
 A context entity must never have:
 
-- `dossier_enabled = true`,
-- `dossier_status = "authorized"`,
+- `dossierEnabled: true`,
+- `dossierStatus: "authorized"`,
 - an invented biography or profile beyond what the citing source actually
   supports,
 - its own case/theme dossier,
 - an entry in `AGENTS.md`'s authorization log.
 
-`scripts/dossier/validate-authorization.mjs` enforces all of the above at
-build time — it is not just a convention, it is a build-failing invariant.
+`scripts/dossier/validate-authorization.mjs` and canonical rule S6
+(`scripts/data/validate-semantics.mjs`, part of `npm run data:validate`)
+enforce all of the above at build time — it is not just a convention, it
+is a build-failing invariant.
 
 ## The authorization-candidates report
 
@@ -89,8 +93,9 @@ the authorized scope in their own words (appended verbatim to `AGENTS.md`
 — there is no default text and nothing is auto-generated), and the literal
 word `AUTHORIZE` as a final confirmation. Only after all three does it
 append the new dated entry to `AGENTS.md`'s log, add a matching record to
-`data/authorizations.toml`, and flip the entity's own
-`publication_role`/`dossier_status`/`dossier_enabled` fields.
+`data/authorizations.toml`, and flip the entity's own canonical
+`publicationRole`/`dossierStatus`/`dossierEnabled` fields
+(`data/dossiers/_shared/entities/<id>.json`).
 
 It deliberately does not write dossier content. Authoring what a new
 dossier actually says — the claims, the sources, the narrative — stays a

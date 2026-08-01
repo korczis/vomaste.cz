@@ -1,3 +1,5 @@
+*Historický dokument — popisuje stav před JSON-first migrací (T-028).*
+
 # ADR: DuckDB-Wasm SQL console and Sigma.js graph renderer
 
 **Status**: accepted. The Sigma.js half was refined for scale — data

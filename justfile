@@ -113,11 +113,15 @@ clean:
 regen:
     npm run data:build
 
-# T-028 fáze H: dřívější scaffold (content/** + TOML registry) zanikl —
-# nový dossier vzniká založením kanonického balíčku data/dossiers/<slug>/
-# (dossier.json + registry) po autorizaci přes authorize-entity; adaptéry
-# vygeneruje `npm run data:build`. Scaffold kanonického balíčku je tooling
-# fáze I.
+# Scaffold nového KANONICKÉHO dossier balíčku (data/dossiers/<slug>/:
+# dossier.json + prázdné registry adresáře). Odmítne subjekt bez
+# odpovídajícího záznamu v data/authorizations.toml — autorizace vzniká
+# jen přes `just authorize` (append-only log v AGENTS.md). Adaptéry
+# content/** pak vygeneruje `npm run data:build`.
+#   just scaffold jana-novakova "Jana Nováková" novakova AUTH-2026-08-01-X
+[doc("Scaffold kanonického dossier balíčku — odmítne neautorizovaný subjekt")]
+scaffold slug title subject auth_record_id:
+    npm run dossier:scaffold -- --slug={{ slug }} --title="{{ title }}" --subject={{ subject }} --authorization-record-id={{ auth_record_id }}
 
 # Record a new authorization for an entity. INTERACTIVE ON PURPOSE: it needs a
 # real terminal and a human typing the scope in their own words, and it is the

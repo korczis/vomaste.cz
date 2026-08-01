@@ -20,7 +20,8 @@ before writing a new one, not just this skill.
 ## The discipline (non-negotiable, matches the existing ADR)
 
 1. **Measure, don't estimate.** Pull real numbers from this repo before
-   arguing anything — record counts (`data/dossiers/*/stats.toml` or
+   arguing anything — record counts (canonical dataset:
+   `npm run data:compile` prints per-type counts; or
    `data/generated/global-graph.json`), bundle sizes (`static/js/app.js`,
    `static/css/main.css` after `npm run build`), actual page counts. An
    ADR that says "could get slow at scale" without a measured current

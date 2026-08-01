@@ -1,3 +1,5 @@
+*Historický dokument — popisuje stav před JSON-first migrací (T-028).*
+
 # Dossier audit — baseline (2026-07-29)
 
 Internal engineering/editorial control document. Not published (lives under

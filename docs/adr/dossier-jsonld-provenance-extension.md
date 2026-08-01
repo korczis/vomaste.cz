@@ -1,3 +1,5 @@
+*Historický dokument — popisuje stav před JSON-first migrací (T-028).*
+
 # ADR: dossier JSON-LD provenance extension — design for T-010
 
 **Status**: accepted & implemented 2026-07-30 (branch `task/T-010` —
