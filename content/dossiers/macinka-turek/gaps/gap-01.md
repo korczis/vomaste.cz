@@ -39,7 +39,9 @@ právní kvalifikaci). Jde o odhad právníků, **ne o rozhodnutí orgánů
 činných v trestním řízení** — dossier to vede jako právní komentář, ne
 jako fakt o výsledku.
 
-Žádný z dohledaných zdrojů k datu poslední kontroly (2026-07-29) neuvádí
-uzavřené vyšetřování, vznesené obvinění nebo rozhodnutí o vině. Tato
-stránka bude aktualizována, jakmile se objeví ověřitelná zpráva o
-výsledku.
+Opakovaná kontrola k 2026-08-02 (Deník.cz, iROZHLAS, ČT24, Aktuálně.cz,
+Echo24, Blesk, FORUM 24 — přehled dostupného zpravodajství, žádný nový
+článek k výsledku od poloviny července) potvrzuje: žádný z dohledaných
+zdrojů k datu poslední kontroly neuvádí uzavřené vyšetřování, vznesené
+obvinění ani rozhodnutí o vině. Tato stránka bude aktualizována, jakmile
+se objeví ověřitelná zpráva o výsledku.
