@@ -12,7 +12,7 @@ import { computeReducers, countMatching } from "./reducers.js";
 import { createGraphState } from "./state.js";
 import { readStateFromUrl, writeStateToUrl } from "./permalink.js";
 import { fetchLayer, readJsonIsland } from "./loader.js";
-import { renderNodeInspector, renderEdgeInspector, clearInspector } from "./inspector.js";
+import { renderNodeInspector, renderEdgeInspector, renderNeighbors, clearInspector } from "./inspector.js";
 import { shortestPath } from "./path-finder.js";
 
 const DEFAULT_LAYER = "curated";
@@ -108,6 +108,12 @@ export async function initGraphView(containerId, dataIslandId, fullLayerUrl) {
     if (selected.kind === "node" && controller.graph.hasNode(selected.id)) {
       const attrs = controller.graph.getNodeAttributes(selected.id);
       renderNodeInspector(inspectorEl, attrs);
+      // Prokliknutí souseda je běžný pohyb v grafu, ne otevření nové
+      // stránky: mění se výběr, takže zůstane zachovaný filtr, vrstva
+      // i hloubka zvýraznění a adresa se udrží sdílitelná.
+      renderNeighbors(inspectorEl, controller.graph, selected.id, (id) => {
+        state.setSelected({ kind: "node", id });
+      });
       const degree = controller.graph.degree(selected.id);
       announce(section, `Vybrán uzel ${attrs.label}, ${attrs.recordType === "entity" ? attrs.entityType || "entita" : attrs.recordType}, ${degree} přímých deklarovaných vazeb.`);
     } else if (selected.kind === "edge" && controller.graph.hasEdge(selected.id)) {

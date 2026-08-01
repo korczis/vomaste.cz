@@ -55,3 +55,59 @@ test.describe("nástroje grafu", () => {
     expect(await stav(page)).toMatch(/žádný z \d+ uzlů/);
   });
 });
+
+test.describe("procházení sousedů", () => {
+  // Uzel se vybírá přes ?node= v adrese, ne klikáním do plátna: klik na
+  // souřadnici uzel netrefí spolehlivě a test by se „přeskočil" —
+  // přeskočený test ale nedokazuje nic a tváří se přitom zeleně.
+  const URL_UZLU = "/map/?node=vlada";
+
+  test("inspektor nabídne propojené záznamy a proklik mění výběr", async ({ page }) => {
+    // Bez seznamu sousedů se k propojenému záznamu dostaneš jen trefou
+    // do tečky na plátně — na dotykovém displeji to nejde vůbec.
+    await page.goto(URL_UZLU);
+    await page.waitForTimeout(2500);
+
+    await expect(page.locator("[data-graph-neighbors]")).toBeVisible();
+    const first = page.locator("[data-neighbor-id]").first();
+    const label = (await first.locator(".graph-inspector-neighbor-label").textContent())?.trim();
+    const before = (await page.locator(".graph-inspector-heading").first().textContent())?.trim();
+
+    await first.click();
+    await page.waitForTimeout(400);
+    const after = (await page.locator(".graph-inspector-heading").first().textContent())?.trim();
+
+    expect(after, "proklik souseda nezměnil vybraný záznam").not.toBe(before);
+    expect(after).toBe(label);
+  });
+
+  test("proklik souseda je sdílitelný — zapíše se do adresy", async ({ page }) => {
+    // Procházení, které nejde poslat odkazem, není v tomhle projektu
+    // procházení: celý graf staví na tom, že nález lze doložit adresou.
+    await page.goto(URL_UZLU);
+    await page.waitForTimeout(2500);
+    await page.locator("[data-neighbor-id]").first().click();
+    await page.waitForTimeout(400);
+    const url = page.url();
+    expect(url).toMatch(/[?&]node=/);
+    expect(url).not.toMatch(/[?&]node=vlada(&|$)/);
+  });
+
+  test("cíl kliknutí souseda je dost velký na dotyk", async ({ page }) => {
+    await page.goto(URL_UZLU);
+    await page.waitForTimeout(2500);
+    const box = await page.locator("[data-neighbor-id]").first().boundingBox();
+    expect(box?.height, `výška cíle ${box?.height}px`).toBeGreaterThanOrEqual(36);
+  });
+
+  test("sousedé se řadí podle počtu vazeb sestupně", async ({ page }) => {
+    // Uzel s mnoha vazbami je zpravidla ten, kudy vede cesta dál;
+    // abecední pořadí by tuhle informaci zahodilo.
+    await page.goto(URL_UZLU);
+    await page.waitForTimeout(2500);
+    const metas = await page.locator(".graph-inspector-neighbor-meta").allTextContents();
+    const stupne = metas.map((m) => Number(m.split("·").pop().trim()));
+    expect(stupne.length).toBeGreaterThan(1);
+    expect(stupne).toEqual([...stupne].sort((a, b) => b - a));
+  });
+});
