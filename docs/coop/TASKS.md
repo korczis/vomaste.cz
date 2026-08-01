@@ -39,15 +39,34 @@ Autorizace: viz AGENTS.md, „Structural change, 2026-07-29 (second)".
 
 | ID | Titul | Scope (soubory/sekce) | Branch | Owner | Stav | Závislosti | Akceptace |
 |----|-------|-----------------------|--------|-------|------|------------|-----------|
-| T-001 | Fyzický přesun záznamů + inverze validátorů/šablon | `[scope-check]` content/dossiers/**, data/dossiers*, scripts/dossier/**, templates/** | task/T-001 | W-8 (staré worktree W-5/89bff0d byl fosilie z bodu před ~2248 soubory pozdější historie — neslučitelné, zahozeno 2026-08-01, obnoveno od nuly nad aktuálním masterem) | in-progress | – | migrační skript; každý záznam vlastněn právě jedním entity dossierem dle `subjects`; aliasy na staré URL; agregát bez fyzických záznamů; `npm run build` zelený |
-| T-003 | Přepis architektonických sekcí AGENTS.md + README | AGENTS.md (mimo append-only log), README.md, docs/ | task/T-003 | ORCH | todo | T-001 | dokumentace popisuje nový model; log nedotčen |
-| T-004 | Integrace, merge, deploy + porting mapa pro rozpracované edity `_index.md` | master | ORCH | ORCH | todo | T-001, T-002 | oba branche mergnuté, `npm run build` + `zola check` zelené na masteru, push (= deploy), porting mapa předána |
-| T-011 | Advanced application shell — informační architektura + secondary-provider datový model. Audit + fázový plán hotový: [`docs/adr/application-shell-rebuild.md`](../adr/application-shell-rebuild.md) (mnohé z §5/§14/§41/§47 už dnes platí — ověřeno auditem, ne předpokládáno). Fáze B z vlastníkova master promptu | data/navigation.toml, scripts/dossier/build-navigation.mjs, nové data/generated/navigation-secondary.json + dossier-catalog.json + entity-explorer.json | – | volný | todo | T-001 | secondary provider schema definované a generované, žádný hardcoded slug |
+| T-001 | Fyzický přesun záznamů + inverze validátorů/šablon | `[scope-check]` content/dossiers/**, data/dossiers*, scripts/dossier/**, templates/** | – | – | superseded-by-T-028 | – | vlastník rozhodl 2026-08-01: cíl (macinka/turek vlastnictví záznamů) se dosáhne přes JSON `dossier` pole v T-028, ne přesunem Markdown souborů. Worktree byl jen auditní (žádný commit), zahozen bez ztráty. Znovuotevřít, pokud T-028 nedopadne. |
+| T-003 | Přepis architektonických sekcí AGENTS.md + README | AGENTS.md (mimo append-only log), README.md, docs/ | task/T-003 | ORCH | todo | T-028 | dokumentace popisuje nový model; log nedotčen |
+| T-004 | Integrace, merge, deploy + porting mapa pro rozpracované edity `_index.md` | master | ORCH | ORCH | todo | T-028 | oba branche mergnuté, `npm run build` + `zola check` zelené na masteru, push (= deploy), porting mapa předána |
+| T-011 | Advanced application shell — informační architektura + secondary-provider datový model. Audit + fázový plán hotový: [`docs/adr/application-shell-rebuild.md`](../adr/application-shell-rebuild.md) (mnohé z §5/§14/§41/§47 už dnes platí — ověřeno auditem, ne předpokládáno). Fáze B z vlastníkova master promptu | data/navigation.toml, scripts/dossier/build-navigation.mjs, nové data/generated/navigation-secondary.json + dossier-catalog.json + entity-explorer.json | – | volný | todo | T-028 | secondary provider schema definované a generované, žádný hardcoded slug |
 | T-012 | Advanced application shell — shell primitiva (topbar, primary/secondary sidebar, context panel, mobile drawers/bottom nav). Fáze C | templates/base.html, nové templates/partials/app-shell/** | – | volný | todo | T-011 | 0 horizontální overflow na testovaných viewportech, focus trap/return funkční, no-JS fallback zachován |
 | T-013 | Advanced application shell — route layouts (overview/catalog/explorer/registry s advanced table toolbarem/record-detail). Fáze D | nové templates/layouts/**, dossier registry šablony | – | volný | todo | T-012 | registry mají skutečný sort/filter/pagination toolbar, ne jen statická ikona |
 | T-014 | Advanced application shell — enhanced interakce (command palette, density modes, Flowbite/Alpine inicializace bez duplicitního řízení stejné komponenty). Fáze F | assets/js/modules/**, templates/base.html | – | volný | todo | T-012 | Cmd/Ctrl+K funguje, žádná komponenta není řízená Flowbite i Alpine současně |
 | T-015 | Advanced application shell — Playwright test suite + syntetický 1000-entity scale test (nepublikovat jako reálná data) + build-time validátory (`scripts/navigation/validate-*`, `scripts/ui/validate-*`). Fáze G | nové tests/, scripts/navigation/**, scripts/ui/** | – | volný | todo | T-011..T-014 | `npm run build` + browser testy zelené, scale test bez zamrznutí exploreru |
-| T-016 | `[scope-check]` Nový entity dossier: Oto Klempíř — vytvoření souborů + registrace. Autorizace: viz AGENTS.md, „Authorized subject: Oto Klempíř" (2026-07-30). Zdroje ověřeny přímým otevřením (ne snippet); jedna kandidátní položka vyřazena jako Reflex.cz fake-news/satira — viz autorizační záznam | content/dossiers/oto-klempir/**, data/dossiers.toml, data/dossiers/oto-klempir/** | – | volný | todo | T-001 | dossier založen, zdroje/tvrzení dle autorizovaného rozsahu, `npm run build` zelený, JSON-LD generováno stejným registry-driven mechanismem jako ostatní dossiery |
+| T-016 | `[scope-check]` Nový entity dossier: Oto Klempíř — vytvoření souborů + registrace. Autorizace: viz AGENTS.md, „Authorized subject: Oto Klempíř" (2026-07-30). Zdroje ověřeny přímým otevřením (ne snippet); jedna kandidátní položka vyřazena jako Reflex.cz fake-news/satira — viz autorizační záznam | content/dossiers/oto-klempir/**, data/dossiers.toml, data/dossiers/oto-klempir/** | – | volný | todo | T-028 | dossier založen, zdroje/tvrzení dle autorizovaného rozsahu, `npm run build` zelený, JSON-LD generováno stejným registry-driven mechanismem jako ostatní dossiery |
+
+## Aktivní zadání: JSON/JSON-LD-first datová platforma (2026-08-01)
+
+Zadání vlastníka: obrátit tok dat — `data/dossiers/**/*.json` (JSON
+Schema + JSON-LD validované) se stává jediným kanonickým zdrojem pravdy
+pro dossiery/entity/tvrzení/zdroje/kauzy/mezery/vztahy/graf/navigaci;
+`content/**/*.md` se stává plně generovaným Zola routing adaptérem.
+Plný master prompt uložen doslovně v
+[`docs/missions/2026-08-01-json-ld-first-data-platform-master-prompt.md`](../missions/2026-08-01-json-ld-first-data-platform-master-prompt.md).
+**Absorbuje T-001** (viz jeho řádek výše, `superseded-by-T-028`) —
+macinka/turek vlastnictví záznamů se řeší JSON `dossier` polem, ne
+přesunem Markdown souborů. Čistě technická migrace (§ 23: žádné nové
+subjekty, žádná nová rešerše, žádná změna tvrzení/statusů beze změny
+významu); autorizační log v AGENTS.md se nemění. Fáze A (audit,
+`docs/migrations/json-first-baseline.md`) povinná před první změnou.
+
+| ID | Titul | Scope (soubory/sekce) | Branch | Owner | Stav | Závislosti | Akceptace |
+|----|-------|-----------------------|--------|-------|------|------------|-----------|
+| T-028 | `[scope-check]` Fáze A–J — JSON/JSON-LD kanonický datový model (schemas + context), jednotný kompilátor (discover/load/validate/normalize/compile), lossless migrátor Markdown→JSON s parity testy, generované Zola content adaptéry, view modely, přepojení všech generátorů (stats/nav/routes/search/graph/exporty/JSON-LD/DuckDB/Sigma), odstranění starých zdrojů pravdy (dossiers.toml, graph.toml, front matter), contributor tooling (scaffold/import), ADR + finální report | `data/dossiers/**`, `content/**` (generováno), `scripts/data/**`, `schemas/**`, `templates/**`, `static/data/**`, `docs/adr/json-first-canonical-data-model.md`, `docs/contributing/add-dossier-data.md` | – | volný | todo | – | akceptační kritéria § 24 promptu (Definition of Done); route/export parity se stávajícím webem; `npm run build` + `npm run test` zelené; determinismus (2× stejný build → stejné SHA-256); autorizační log netknutý |
 
 ## Archiv
 
