@@ -49,6 +49,8 @@
     "build:entity-type-sections": "node scripts/dossier/build-entity-type-sections.mjs",
     "test:e2e": "playwright test",
     "test:e2e:desktop": "playwright test --project=desktop",
+    "test:e2e:benchmark": "RUN_GRAPH_BENCHMARK=1 playwright test tests/e2e/graph-benchmark.spec.mjs --project=desktop",
+    "benchmark:graph": "node scripts/dossier/benchmark-graph.mjs",
     "validate:directory-index": "node scripts/dossier/validate-directory-index.mjs"
   },
   "devDependencies": {
