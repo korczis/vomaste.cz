@@ -59,7 +59,7 @@
         class="graph-chip">Vztahy entit ({{ curated.nodes | length }} uzlů / {{ curated.edges | length }} hran)</button>
       <button type="button" data-graph-layer="full" aria-pressed="false"
         class="graph-chip">Celý registr ({{ manifest.layers.registry.node_count }} uzlů / {{ manifest.layers.registry.edge_count }} hran)</button>
-      <button type="button" class="fs-btn ml-auto" data-fs-target="global-map-box" title="Zobrazit na celou obrazovku" aria-label="Zobrazit na celou obrazovku">⛶</button>
+      <button type="button" class="fs-btn ml-auto" data-fs-target="global-map-workbench" title="Zobrazit na celou obrazovku" aria-label="Zobrazit na celou obrazovku">⛶</button>
     </div>
     <div class="graph-toolbar mb-4" role="group" aria-label="Nástroje mapy">
       <label class="sr-only" for="graph-search-input">Hledat v grafu</label>
@@ -100,8 +100,8 @@
       nikdy tvrzení o přímém vztahu mezi krajními uzly.
     </p>
 
-    <div class="graph-workbench-grid">
-      <div id="global-map-box" class="fs-box graph-canvas-box overflow-hidden rounded-lg border border-white/10">
+    <div id="global-map-workbench" class="graph-workbench-grid fs-box">
+      <div id="global-map-box" class="graph-canvas-box overflow-hidden rounded-lg border border-white/10">
         <div id="global-map-view"
              data-graph-view
              data-data-island="global-graph-data"

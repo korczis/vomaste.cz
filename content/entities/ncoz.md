@@ -13,12 +13,12 @@ subject = false
 publication_role = "context"
 dossier_enabled = false
 dossier_status = "not_authorized"
-coverage_state = "discovered"
+coverage_state = "contextual"
 discovered_at = "2026-07-30"
-discovered_via = ["edge-eppo-ncoz"]
+discovered_via = ["edge-eppo-ncoz", "edge-babis-ncoz-pandora"]
 dossiers = ["andrej-babis"]
-claims = ["CLM-27"]
-sources = ["SRC-12"]
+claims = ["CLM-27", "CLM-75"]
+sources = ["SRC-12", "SRC-52"]
 +++
 
 Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext.

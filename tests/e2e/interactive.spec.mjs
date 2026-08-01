@@ -11,43 +11,50 @@
 
 import { test, expect } from "./fixtures.mjs";
 
-test.describe("průzkumník entit", () => {
-  test("seskupí entity a nabídne přepnutí seskupení", async ({ page }) => {
+test.describe("registr entit", () => {
+  // Nahradilo entityExplorer (T-033): entity se do teď chovaly jinak než
+  // všech pět ostatních kolekcí a uživatel se musel učit dvě ovládání.
+  // Vizuální seskupení podle typu zaniklo; jeho filtrovací hodnota zůstala
+  // jako selektory. URL stav sdílí tutéž komponentu jako registry.
+  test("nabízí tři projekce a právě jedna je viditelná", async ({ page }) => {
     await page.goto("/entities/");
-    const groups = page.locator('[x-ref="groups"] details');
-    await expect(groups.first()).toBeVisible();
-    expect(await groups.count()).toBeGreaterThan(1);
+    await page.waitForTimeout(300);
+    await expect(page.locator("#entities-registry [data-view]")).toHaveCount(3);
+    await expect(page.locator("#entities-registry [data-view]:not([hidden])")).toHaveCount(1);
   });
 
   test("hledání zúží výsledek a promítne se do adresy", async ({ page }) => {
-    // Regrese na můj refaktor: čtení i zápis parametrů převzal sdílený
-    // url-state.js a nikdo to v prohlížeči neviděl.
     await page.goto("/entities/");
-    const before = await page.locator('[x-ref="groups"] li').count();
-    await page.locator('input[x-model="search"]').fill("babis");
     await page.waitForTimeout(300);
-    const after = await page.locator('[x-ref="groups"] li').count();
-    expect(after).toBeGreaterThan(0);
-    expect(after).toBeLessThan(before);
+    const pred = await page.locator("#entities-registry [data-view]:not([hidden]) [data-record-key]:not([hidden])").count();
+    await page.locator('#entities-registry input[type="search"]').fill("babis");
+    await page.waitForTimeout(300);
+    const po = await page.locator("#entities-registry [data-view]:not([hidden]) [data-record-key]:not([hidden])").count();
+    expect(po).toBeGreaterThan(0);
+    expect(po).toBeLessThan(pred);
     expect(page.url()).toContain("q=babis");
   });
 
-  test("sdílený odkaz obnoví hledání i seskupení", async ({ page }) => {
-    await page.goto("/entities/?q=vlada&group=dossier");
+  test("sdílený odkaz obnoví hledání i projekci", async ({ page }) => {
+    await page.goto("/entities/?view=list&q=vlada");
     await page.waitForTimeout(400);
-    await expect(page.locator('input[x-model="search"]')).toHaveValue("vlada");
-    // Výchozí seskupení je "type"; ?group=dossier se musí projevit.
-    const summaries = await page.locator('[x-ref="groups"] summary').allInnerTexts();
-    expect(summaries.length).toBeGreaterThan(0);
+    await expect(page.locator('#entities-registry input[type="search"]')).toHaveValue("vlada");
+    await expect(page.locator('#entities-registry [data-view="list"]')).toBeVisible();
   });
 
   test("výchozí pohled nechává adresu čistou", async ({ page }) => {
-    // stateToSearch vypouští výchozí hodnoty; kdyby to přestalo platit,
-    // každý pohled by v adrese zanechal šum a odkazy by se nedaly
-    // porovnat. Node test to hlídá nad řetězcem, tenhle nad skutečným DOM.
     await page.goto("/entities/");
     await page.waitForTimeout(300);
     expect(new URL(page.url()).search).toBe("");
+  });
+
+  test("každý záznam zůstává dohledatelný v exportu", async ({ page }) => {
+    // data-jsonld-id je pojítko mezi tím, co uživatel vidí, a uzlem
+    // v JSON-LD exportu. Bez něj by UI a strojová data mohla tvrdit
+    // každé něco jiného.
+    await page.goto("/entities/");
+    const bez = await page.locator("#entities-registry [data-view]:not([hidden]) [data-record-key]:not([data-jsonld-id])").count();
+    expect(bez, "záznam bez data-jsonld-id").toBe(0);
   });
 });
 

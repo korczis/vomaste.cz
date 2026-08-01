@@ -14,7 +14,6 @@ import "flowbite";
 import Alpine from "alpinejs";
 import { registerClaimsFilter } from "./modules/claims-filter.js";
 import { registerTableFilter } from "./modules/table-filter.js";
-import { registerEntityExplorer } from "./modules/entity-explorer.js";
 import { registerGlobalSearch, initSearchShortcuts } from "./modules/global-search.js";
 
 import { initSectionNav } from "./modules/section-nav.js";
@@ -31,7 +30,6 @@ import { initSqlConsole } from "./modules/sql-console.js";
 document.addEventListener("alpine:init", function () {
   registerClaimsFilter();
   registerTableFilter();
-  registerEntityExplorer();
   registerGlobalSearch();
 });
 

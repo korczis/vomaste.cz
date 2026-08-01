@@ -1,0 +1,22 @@
++++
+title = "Pandora Papers: česká větev"
+description = "NCOZ v únoru 2022 uzavřela, že jednání popsané v Pandora Papers nelze posoudit jako podezření ze spáchání trestného činu na území České republiky, a poznatky předala policejnímu orgánu jiné členské země EU — jde o závěr o místní příslušnosti, ne o meritorní zproštění ani o potvrzení zákonnosti transakcí. Souběžné správní prověřování možného přestupku proti zákonu o střetu zájmů naráželo na nedostupnost zahraničních dokumentů a hrozící zánik odpovědnosti; Babiš jakékoli pochybení odmítá."
+template = "dossier-case.html"
+weight = 15
+
+[extra]
+dossier = "andrej-babis"
+record_type = "case"
+lang = "cs"
+case_id = "CASE-15"
+anchor = "kauza-pandora-ceska-vetev"
+period = "2021–2022"
+status = "status-single"
+label = "Předáno do zahraničí; odložení není potvrzení zákonnosti"
+summary = "NCOZ v únoru 2022 uzavřela, že jednání popsané v Pandora Papers nelze posoudit jako podezření ze spáchání trestného činu na území České republiky, a poznatky předala policejnímu orgánu jiné členské země EU — jde o závěr o místní příslušnosti, ne o meritorní zproštění ani o potvrzení zákonnosti transakcí. Souběžné správní prověřování možného přestupku proti zákonu o střetu zájmů naráželo na nedostupnost zahraničních dokumentů a hrozící zánik odpovědnosti; Babiš jakékoli pochybení odmítá."
+claims = ["CLM-75", "CLM-76"]
+sources = ["SRC-52", "SRC-53"]
++++
+
+Plné znění, zdroje a kontext tohoto případu jsou v [hlavním přehledu
+dossieru](@/dossiers/andrej-babis/_index.md#kauza-pandora-ceska-vetev).

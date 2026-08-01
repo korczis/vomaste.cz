@@ -5,7 +5,7 @@ system. This is provenance, not a publication decision — see
 `data/authorizations.toml` and `scripts/dossier/authorize-entity.mjs`
 for the only thing that actually authorizes a dossier.
 
-160 record(s) logged across 3 day(s). 0 new since last run.
+185 record(s) logged across 4 day(s). 0 new since last run.
 
 ## 2026-07-29
 
@@ -175,3 +175,31 @@ for the only thing that actually authorizes a dossier.
 - `petr-cingr` (entity, created)
 - `petra-prochazkova` (entity, created)
 - `zbynek-prusa` (entity, created)
+
+## 2026-08-01
+
+- `ab-private-trusts` (entity, created)
+- `mpo` (entity, created)
+- `navos-farm-technic` (entity, created)
+- `olaf` (entity, created)
+- `pekarna-zelena-louka` (entity, created)
+- `pgrlf` (entity, created)
+- `sady-cz` (entity, created)
+- `vodnanska-drubez` (entity, created)
+- `edge-ab-trusts-agrofert` (relation, created)
+- `edge-agrofert-capihnizdo-reklamy` (relation, created)
+- `edge-agrofert-navos` (relation, created)
+- `edge-agrofert-pekarna` (relation, created)
+- `edge-agrofert-pgrlf` (relation, created)
+- `edge-agrofert-sady` (relation, created)
+- `edge-agrofert-vodnanska` (relation, created)
+- `edge-babis-ab-trusts` (relation, created)
+- `edge-babis-ncoz-pandora` (relation, created)
+- `edge-capihnizdo-olaf` (relation, created)
+- `edge-imoba-capihnizdo` (relation, created)
+- `edge-navos-nss` (relation, created)
+- `edge-pekarna-eppo` (relation, created)
+- `edge-pekarna-mpo` (relation, created)
+- `edge-sady-nss` (relation, created)
+- `edge-vodnanska-szif` (relation, created)
+- `edge-vodnanska-ustavnisoud` (relation, created)
