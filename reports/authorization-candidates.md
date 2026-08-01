@@ -8,7 +8,19 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 56 context entities across 22 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 64 context entities across 22 dossier(s). Regenerate with `npm run generate:candidates`.
+
+## AB private trust I a II (`ab-private-trusts`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-16
+- Sources: SRC-06, SRC-28 (2 independent source families)
+- Relations: 
+  - edge-ab-trusts-agrofert (ab-private-trusts -> agrofert, "držely akcie Agrofertu (2017–2025)", dossier: andrej-babis)
+  - edge-babis-ab-trusts (babis -> ab-private-trusts, "akcie Agrofertu ve fondech 2/2017–2024/2025; poté návrat k přímému vlastnictví — majetková posloupnost, sama o sobě legální", dossier: andrej-babis)
+- Missing: explicit owner authorization to promote this to its own dossier
 
 ## Agrofert (`agrofert`)
 
@@ -18,10 +30,17 @@ Generated from 56 context entities across 22 dossier(s). Regenerate with `npm ru
 - Claims: CLM-04, CLM-05, CLM-16, CLM-37, CLM-06
 - Sources: SRC-02, SRC-06, SRC-15, SRC-03 (4 independent source families)
 - Relations: 
+  - edge-ab-trusts-agrofert (ab-private-trusts -> agrofert, "držely akcie Agrofertu (2017–2025)", dossier: andrej-babis)
+  - edge-agrofert-capihnizdo-reklamy (agrofert -> capi-hnizdo, "platby firem skupiny za reklamu >270 mil. Kč (2010–2013); dvakrát odloženo, trestný čin nezjištěn — odložení není potvrzení přiměřenosti plateb", dossier: andrej-babis)
   - edge-agrofert-eppo (agrofert -> eppo, "trestní řízení k vyplácení evropských dotací, vedené na neznámého pachatele — nikdo není obviněn", dossier: andrej-babis)
   - edge-agrofert-komise (agrofert -> evropska-komise, "Komise k 5. 6. 2026 neproplatila žádnou náhradu a žádá vysvětlení struktury fondu — dotaz, ne zjištění", dossier: andrej-babis)
   - edge-agrofert-kostelecke (agrofert -> kostelecke-uzeniny, "firma ze skupiny Agrofert", dossier: andrej-babis)
-  - edge-agrofert-szif (agrofert -> szif, "SZIF obnovil administraci žádostí o dotace (4/2026)", dossier: andrej-babis)
+  - edge-agrofert-navos (agrofert -> navos-farm-technic, "firma ze skupiny", dossier: andrej-babis)
+  - edge-agrofert-pekarna (agrofert -> pekarna-zelena-louka, "firma ze skupiny (Penam)", dossier: andrej-babis)
+  - edge-agrofert-pgrlf (agrofert -> pgrlf, "žaloby na 28 firem skupiny o 22 mil. Kč (7/2026) — podaná žaloba není rozhodnutí soudu", dossier: andrej-babis)
+  - edge-agrofert-sady (agrofert -> sady-cz, "firma ze skupiny", dossier: andrej-babis)
+  - edge-agrofert-szif (agrofert -> szif, "SZIF ukončil administraci 21 předjednaných projektů (2023, spory u soudů) a obnovil administraci nových žádostí (4/2026)", dossier: andrej-babis)
+  - edge-agrofert-vodnanska (agrofert -> vodnanska-drubez, "firma ze skupiny", dossier: andrej-babis)
   - edge-babis-agrofert (babis -> agrofert, "vlastnické vazby; od 2/2026 akcie ve svěřenském fondu RSVP Trust, míra vlivu sporná; dividenda 4,25 mld. Kč vyplacena před vkladem (legální krok)", dossier: andrej-babis)
   - edge-rsvp-agrofert (rsvp-trust -> agrofert, "drží akcie Agrofertu (vloženy 2/2026)", dossier: andrej-babis)
   - edge-bartha-agrofert (bartha -> agrofert, "business development manager (dle zpravodajství, potvrzeno mluvčím)", dossier: tunde-bartha)
@@ -69,7 +88,10 @@ Generated from 56 context entities across 22 dossier(s). Regenerate with `npm ru
 - Claims: CLM-01, CLM-02, CLM-05, CLM-49, CLM-50, CLM-51, CLM-52
 - Sources: SRC-01, SRC-02, SRC-03, SRC-23, SRC-24 (4 independent source families)
 - Relations: 
+  - edge-agrofert-capihnizdo-reklamy (agrofert -> capi-hnizdo, "platby firem skupiny za reklamu >270 mil. Kč (2010–2013); dvakrát odloženo, trestný čin nezjištěn — odložení není potvrzení přiměřenosti plateb", dossier: andrej-babis)
   - edge-babis-capihnizdo (babis -> capi-hnizdo, "obžalovaný; dvakrát nepravomocně zproštěn (2023, 2024), obě zproštění zrušena; stíhání přerušeno po nevydání Sněmovnou — nic z toho není rozhodnutí o vině", dossier: andrej-babis)
+  - edge-capihnizdo-olaf (capi-hnizdo -> olaf, "šetření OLAF; zveřejněné části zprávy hovoří o nesrovnalostech — zjištění kontrolního úřadu, ne rozsudek", dossier: andrej-babis)
+  - edge-imoba-capihnizdo (imoba -> capi-hnizdo, "vlastník areálu; 6/2018 vrátila dotaci ~50 mil. Kč — vrácení není přiznání viny, do dohody firma prosadila opak", dossier: andrej-babis)
   - edge-faltynek-capihnizdo (faltynek -> capi-hnizdo, "stíhán 2015–2018; stíhání zrušeno státním zástupcem", dossier: jaroslav-faltynek)
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -105,6 +127,7 @@ Generated from 56 context entities across 22 dossier(s). Regenerate with `npm ru
 - Relations: 
   - edge-agrofert-eppo (agrofert -> eppo, "trestní řízení k vyplácení evropských dotací, vedené na neznámého pachatele — nikdo není obviněn", dossier: andrej-babis)
   - edge-eppo-ncoz (eppo -> ncoz, "prověřováním pověřena NCOZ (24. 5. 2026)", dossier: andrej-babis)
+  - edge-pekarna-eppo (pekarna-zelena-louka -> eppo, "obžaloba EPPO z 22. 6. 2026 (společnost + 2 osoby) — obžaloba není rozhodnutí o vině", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Evropská komise (`evropska-komise`)
@@ -181,12 +204,13 @@ Generated from 56 context entities across 22 dossier(s). Regenerate with `npm ru
 
 - Type: company
 - Status: not_authorized
-- Appears in: tunde-bartha
-- Claims: CLM-05
-- Sources: SRC-01, SRC-02 (2 independent source families)
+- Appears in: tunde-bartha, andrej-babis
+- Claims: CLM-05, CLM-73, CLM-74
+- Sources: SRC-01, SRC-02, SRC-51 (3 independent source families)
 - Relations: 
   - edge-bartha-imoba (bartha -> imoba, "dle vlastního vyjádření bydlí v objektu společnosti", dossier: tunde-bartha)
   - edge-imoba-babis (imoba -> babis, "dle citovaného zpravodajství společnost patří Andreji Babišovi", dossier: tunde-bartha)
+  - edge-imoba-capihnizdo (imoba -> capi-hnizdo, "vlastník areálu; 6/2018 vrátila dotaci ~50 mil. Kč — vrácení není přiznání viny, do dohody firma prosadila opak", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Ing. Jaroslav Kurčík (`jaroslav-kurcik`)
@@ -315,6 +339,17 @@ Generated from 56 context entities across 22 dossier(s). Regenerate with `npm ru
   - edge-chlad-motoriste-dary (chlad -> motoriste, "evidováno 638 864 Kč za rok 2025 včetně nepeněžního plnění; veřejně uváděná čísla se liší", dossier: richard-chlad)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Ministerstvo průmyslu a obchodu (`mpo`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-55
+- Sources: SRC-36, SRC-37 (2 independent source families)
+- Relations: 
+  - edge-pekarna-mpo (pekarna-zelena-louka -> mpo, "odnětí stomilionové dotace (2022); EK ji odmítla proplatit", dossier: andrej-babis)
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Ministerstvo zdravotnictví (`mzdrav`)
 
 - Type: public_institution
@@ -340,14 +375,27 @@ Generated from 56 context entities across 22 dossier(s). Regenerate with `npm ru
   - edge-turek-mzp2026 (turek -> mzp2026, "navrhován, nejmenován (1/2026)", dossier: macinka-turek)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Navos Farm Technic (`navos-farm-technic`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-68
+- Sources: SRC-46, SRC-47 (2 independent source families)
+- Relations: 
+  - edge-agrofert-navos (agrofert -> navos-farm-technic, "firma ze skupiny", dossier: andrej-babis)
+  - edge-navos-nss (navos-farm-technic -> nss, "NSS 12/2025: zákaz kvůli střetu zájmů platí i pro zakázky malého rozsahu — správní výklad, ne trestní odpovědnost", dossier: andrej-babis)
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Národní centrála proti organizovanému zločinu (`ncoz`)
 
 - Type: public_institution
 - Status: not_authorized
 - Appears in: andrej-babis
-- Claims: CLM-27
-- Sources: SRC-12 (1 independent source family)
+- Claims: CLM-27, CLM-75
+- Sources: SRC-12, SRC-52 (2 independent source families)
 - Relations: 
+  - edge-babis-ncoz-pandora (babis -> ncoz, "Pandora Papers, česká větev: jednání nelze posoudit jako TČ na území ČR, poznatky předány jiné zemi EU — závěr o příslušnosti, ne zproštění", dossier: andrej-babis)
   - edge-eppo-ncoz (eppo -> ncoz, "prověřováním pověřena NCOZ (24. 5. 2026)", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -408,6 +456,19 @@ Generated from 56 context entities across 22 dossier(s). Regenerate with `npm ru
 - Sources: SRC-07 (1 independent source family)
 - Relations: 
   - edge-kostelecke-nss (kostelecke-uzeniny -> nss, "NSS potvrdil zrušení dotace (11/2025); rozhodnutí o dotaci, ne o vině osoby", dossier: andrej-babis)
+  - edge-navos-nss (navos-farm-technic -> nss, "NSS 12/2025: zákaz kvůli střetu zájmů platí i pro zakázky malého rozsahu — správní výklad, ne trestní odpovědnost", dossier: andrej-babis)
+  - edge-sady-nss (sady-cz -> nss, "NSS 8/2025 zamítl kasační stížnost: rozhodný je stav v době podání žádosti", dossier: andrej-babis)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Evropský úřad pro boj proti podvodům (OLAF) (`olaf`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-72
+- Sources: SRC-50 (1 independent source family)
+- Relations: 
+  - edge-capihnizdo-olaf (capi-hnizdo -> olaf, "šetření OLAF; zveřejněné části zprávy hovoří o nesrovnalostech — zjištění kontrolního úřadu, ne rozsudek", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Petr Pavel (prezident) (`pavel`)
@@ -430,6 +491,19 @@ Generated from 56 context entities across 22 dossier(s). Regenerate with `npm ru
 - Claims: none
 - Sources: none (0 independent source families)
 - Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Pekárna Zelená louka (`pekarna-zelena-louka`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-55, CLM-57, CLM-58
+- Sources: SRC-34, SRC-35, SRC-36, SRC-37 (4 independent source families)
+- Relations: 
+  - edge-agrofert-pekarna (agrofert -> pekarna-zelena-louka, "firma ze skupiny (Penam)", dossier: andrej-babis)
+  - edge-pekarna-eppo (pekarna-zelena-louka -> eppo, "obžaloba EPPO z 22. 6. 2026 (společnost + 2 osoby) — obžaloba není rozhodnutí o vině", dossier: andrej-babis)
+  - edge-pekarna-mpo (pekarna-zelena-louka -> mpo, "odnětí stomilionové dotace (2022); EK ji odmítla proplatit", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Pekárna Zelená louka (skupina Agrofert) (`penam-zelena-louka`)
@@ -461,6 +535,17 @@ Generated from 56 context entities across 22 dossier(s). Regenerate with `npm ru
 - Claims: none
 - Sources: none (0 independent source families)
 - Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Podpůrný a garanční rolnický a lesnický fond (PGRLF) (`pgrlf`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-60
+- Sources: SRC-38, SRC-40 (2 independent source families)
+- Relations: 
+  - edge-agrofert-pgrlf (agrofert -> pgrlf, "žaloby na 28 firem skupiny o 22 mil. Kč (7/2026) — podaná žaloba není rozhodnutí soudu", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Národní finanční prokuratura (PNF, Francie) (`pnf`)
@@ -507,6 +592,18 @@ Generated from 56 context entities across 22 dossier(s). Regenerate with `npm ru
 - Sources: SRC-02 (1 independent source family)
 - Relations: 
   - edge-rsvp-agrofert (rsvp-trust -> agrofert, "drží akcie Agrofertu (vloženy 2/2026)", dossier: andrej-babis)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Sady CZ (`sady-cz`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-65
+- Sources: SRC-45 (1 independent source family)
+- Relations: 
+  - edge-agrofert-sady (agrofert -> sady-cz, "firma ze skupiny", dossier: andrej-babis)
+  - edge-sady-nss (sady-cz -> nss, "NSS 8/2025 zamítl kasační stížnost: rozhodný je stav v době podání žádosti", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## SCP Bigaud (Monako) (`scp-bigaud`)
@@ -574,8 +671,9 @@ Generated from 56 context entities across 22 dossier(s). Regenerate with `npm ru
 - Claims: CLM-10, CLM-48, CLM-08, CLM-09, CLM-11
 - Sources: SRC-04, SRC-22, SRC-26 (4 independent source families)
 - Relations: 
-  - edge-agrofert-szif (agrofert -> szif, "SZIF obnovil administraci žádostí o dotace (4/2026)", dossier: andrej-babis)
+  - edge-agrofert-szif (agrofert -> szif, "SZIF ukončil administraci 21 předjednaných projektů (2023, spory u soudů) a obnovil administraci nových žádostí (4/2026)", dossier: andrej-babis)
   - edge-kostelecke-szif (kostelecke-uzeniny -> szif, "dotaci z PRV 2018 schválil SZIF, zrušilo ji Ministerstvo zemědělství", dossier: andrej-babis)
+  - edge-vodnanska-szif (vodnanska-drubez -> szif, "SZIF ukončil administraci žádosti (2023); NSS 1/2025 vyhověl kasační stížnosti fondu", dossier: andrej-babis)
   - edge-sebestyan-szif (sebestyan -> szif, "bývalý ředitel (2013–2022)", dossier: martin-sebestyan)
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -608,10 +706,11 @@ Generated from 56 context entities across 22 dossier(s). Regenerate with `npm ru
 - Type: public_institution
 - Status: not_authorized
 - Appears in: andrej-babis
-- Claims: CLM-47
-- Sources: SRC-21 (1 independent source family)
+- Claims: CLM-47, CLM-66
+- Sources: SRC-21, SRC-44 (2 independent source families)
 - Relations: 
   - edge-kostelecke-ustavnisoud (kostelecke-uzeniny -> ustavni-soud, "ústavní stížnost odmítnuta 1. 4. 2026 jako zjevně neopodstatněná — spor o nárok na dotaci, ne o vině", dossier: andrej-babis)
+  - edge-vodnanska-ustavnisoud (vodnanska-drubez -> ustavni-soud, "ústavní stížnost odmítnuta 1/2026 (dotace 75 mil. Kč) — spor o nárok na dotaci, ne o vině", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Petr Vencálek (vlastník GMR GAS s.r.o.) (`vencalek`)
@@ -650,6 +749,19 @@ Generated from 56 context entities across 22 dossier(s). Regenerate with `npm ru
   - edge-plaga-vlada (plaga -> vlada, "ministr školství, mládeže a tělovýchovy", dossier: robert-plaga)
   - edge-sebestyan-vlada (sebestyan -> vlada, "ministr zemědělství", dossier: martin-sebestyan)
   - edge-bartha-vlada (bartha -> vlada, "pověřena řízením 2018–2021; dle zpravodajství vede úřad i v roce 2026", dossier: tunde-bartha)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Vodňanská drůbež (`vodnanska-drubez`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-64, CLM-66, CLM-67
+- Sources: SRC-43, SRC-44 (2 independent source families)
+- Relations: 
+  - edge-agrofert-vodnanska (agrofert -> vodnanska-drubez, "firma ze skupiny", dossier: andrej-babis)
+  - edge-vodnanska-szif (vodnanska-drubez -> szif, "SZIF ukončil administraci žádosti (2023); NSS 1/2025 vyhověl kasační stížnosti fondu", dossier: andrej-babis)
+  - edge-vodnanska-ustavnisoud (vodnanska-drubez -> ustavni-soud, "ústavní stížnost odmítnuta 1/2026 (dotace 75 mil. Kč) — spor o nárok na dotaci, ne o vině", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Zapper-Club s.r.o. (`zapper-club`)
