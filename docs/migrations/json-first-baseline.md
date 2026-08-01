@@ -140,3 +140,32 @@ against.
    file** — the JSON-first compiler's validate-shape/validate-references/
    validate-semantics split (mission § 7) should map roughly 1:1 onto
    these, not invent a parallel structure.
+
+## Addendum 2026-08-01 (po merge T-034 do task/T-028)
+
+Master se mezi měřením baseline a startem implementace posunul o obsahové
+rozšíření dossieru `andrej-babis` (T-034, merge `7f1af61` + fix
+`ae5e820`). Nové autoritativní počty v pracovním stromu této větve:
+
+| type | count (bylo → je) |
+|---|---|
+| claims | 813 → **835** |
+| sources | 494 → **514** |
+| cases | 72 → **81** |
+| gaps | 186 → **187** |
+| relations | 84 → **101** |
+| entities (global) | 77 → **84** |
+| dossiers | 22 → 22 |
+| Markdown souborů v content/ | 1 947 → **2 023** |
+
+Delta odpovídá přesně T-034 (22 CLM, 20 SRC, 9 CASE, 1 GAP, 17 hran,
+7 entit) — žádný jiný drift.
+
+**Oprava nálezu „case → claim: 0“**: nulová vazba platí pouze pro tvar
+`static/data/cases.json` exportu. Ve **zdrojových datech** je vazba
+strukturovaná: každý `[[extra.cases]]` blok v `_index.md` nese pole
+`claims = [...]` (redakčně kurátorované) a generované case stránky k nim
+odvozují `sources` jako sjednocení zdrojů svých claimů
+(`migrate-cases-to-pages.mjs`). Fáze D tedy má z čeho migrovat —
+mapping se nevymýšlí, jen se přenese z front matter; do exportního tvaru
+ho doplní až přepojení generátorů (fáze G).
