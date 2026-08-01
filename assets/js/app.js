@@ -5,7 +5,7 @@
 // side effects only, nothing to wire up here.
 import "flowbite";
 
-// Alpine.js is used the same way as Chart.js/Cytoscape.js here: a targeted,
+// Alpine.js is used the same way as Chart.js/Sigma.js here: a targeted,
 // per-page dependency for genuinely interactive UI (filter toolbars, the
 // global search box), not a site-wide framework. Components are registered
 // on `alpine:init` (Alpine's own required pattern) and each checks its own

@@ -5,7 +5,11 @@
 adopts Sigma.js and DuckDB-Wasm on the site owner's explicit decision — as
 a capability choice, not because the measurements below changed. The rest
 of this ADR (every other technology it declines, and its revisit
-threshold) still stands.
+threshold) still stands. The renderer choice itself was refined for scale
+— data contract, build-time layout, lazy loading, not a library change —
+by [`graph-workbench-and-data-projection.md`](graph-workbench-and-data-projection.md)
+(2026-08-01), once the dataset actually crossed this ADR's own revisit
+threshold (see that ADR's Context section for the measured numbers).
 **Date**: 2026-07-29.
 
 **Addendum, same date**: a follow-up request proposed an even larger stack

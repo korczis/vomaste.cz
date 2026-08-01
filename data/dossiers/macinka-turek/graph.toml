@@ -1,5 +1,5 @@
-# Relationship graph data model for the dossier's Cytoscape.js
-# visualization (templates/dossier.html, assets/js/modules/relationship-graph.js).
+# Relationship graph data model for the dossier's Sigma.js
+# visualization (templates/dossier.html, assets/js/modules/graph/).
 #
 # This is dossier content, not decoration: every node/edge label is a claim
 # about real people/institutions and follows the same sourcing discipline
