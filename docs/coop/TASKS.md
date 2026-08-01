@@ -47,8 +47,6 @@ Autorizace: viz AGENTS.md, „Structural change, 2026-07-29 (second)".
 | T-013 | Advanced application shell — route layouts (overview/catalog/explorer/registry s advanced table toolbarem/record-detail). Fáze D | nové templates/layouts/**, dossier registry šablony | – | volný | todo | T-012 | registry mají skutečný sort/filter/pagination toolbar, ne jen statická ikona |
 | T-014 | Advanced application shell — enhanced interakce (command palette, density modes, Flowbite/Alpine inicializace bez duplicitního řízení stejné komponenty). Fáze F | assets/js/modules/**, templates/base.html | – | volný | todo | T-012 | Cmd/Ctrl+K funguje, žádná komponenta není řízená Flowbite i Alpine současně |
 | T-015 | Advanced application shell — Playwright test suite + syntetický 1000-entity scale test (nepublikovat jako reálná data) + build-time validátory (`scripts/navigation/validate-*`, `scripts/ui/validate-*`). Fáze G | nové tests/, scripts/navigation/**, scripts/ui/** | – | volný | todo | T-011..T-014 | `npm run build` + browser testy zelené, scale test bez zamrznutí exploreru |
-| T-016 | `[scope-check]` Nový entity dossier: Oto Klempíř — vytvoření souborů + registrace. Autorizace: viz AGENTS.md, „Authorized subject: Oto Klempíř" (2026-07-30). Zdroje ověřeny přímým otevřením (ne snippet); jedna kandidátní položka vyřazena jako Reflex.cz fake-news/satira — viz autorizační záznam | content/dossiers/oto-klempir/**, data/dossiers.toml, data/dossiers/oto-klempir/** | – | volný | todo | T-028 | dossier založen, zdroje/tvrzení dle autorizovaného rozsahu, `npm run build` zelený, JSON-LD generováno stejným registry-driven mechanismem jako ostatní dossiery |
-
 ## Aktivní zadání: JSON/JSON-LD-first datová platforma (2026-08-01)
 
 Zadání vlastníka: obrátit tok dat — `data/dossiers/**/*.json` (JSON
@@ -73,6 +71,7 @@ významu); autorizační log v AGENTS.md se nemění. Fáze A (audit,
 | ID | Titul | Commit | Owner | Stav |
 |----|-------|--------|-------|------|
 | T-027 | Graph workbench fáze B–J — layered data kontrakt + build-time layout, bundle split (graph-app.js), modulární runtime (jedna Sigma instance), interakční model (selection/focus/path finder/URL state), workbench UI, a11y + WebGL fallback, Playwright testy + syntetický 10k-uzlový benchmark, ADR + finální report (`reports/graph-workbench-implementation.md`) | e95368c..ee4b7b0 (5 commitů), merge c296c61 | W-8 | merged |
+| T-016 | `[scope-check]` Nový entity dossier: Oto Klempíř — vytvoření souborů + registrace. Board byl stale — ve skutečnosti hotovo dřív (třetí dossier). Ověřeno 2026-08-01: `content/dossiers/oto-klempir/` + `data/dossiers/oto-klempir/graph.toml` existují na masteru | 41a4eb9 | (dřívější session) | merged |
 | T-026 | Oprava CI driftu — deploy workflow volá `npm run build` (JSON-LD routy v produkci 404 kvůli ručně vypisovaným krokům) + check:workflow-parity; třetí kolo rešerší (+189 tvrzení do 6 dossierů) | 73ff4e7, bdfab28 | W-7 | merged |
 | T-025 | Druhé kolo rešerší (+155 tvrzení do 5 nejméně vytěžených dossierů) + lint:source-outlets (brána proti falešnému CORROBORATED přes alias vydavatele) | b0e63d3 | W-7 | merged |
 | T-024 | Fanout rešerší — +166 tvrzení z 96 otevřených zdrojů napříč 10 dossiery, 42 mezer, oprava 55 stale TODO v registrech | 910046e | W-7 | merged |
