@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-06",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-06",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek"
+  },
+  "title": "SRC-06 — Info.cz",
+  "description": "Info.cz, 3. 5. 2018: žalobce zrušil stíhání Faltýnka a tří dalších obviněných; Babiš a jeho blízcí se stížností proti obvinění neuspěli a zůstali dále stíháni.",
+  "outlet": "Info.cz",
+  "sourceType": "celostátní zpravodajství",
+  "url": "https://www.info.cz/zpravodajstvi/cesko/kauza-capi-hnizdo-zalobce-zrusil-stihani-faltynka-babis-a-jeho-blizci-se-stiznosti-neuspeli",
+  "published": "2018-05-03",
+  "retrieved": "2026-08-02",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-03"
+    }
+  ],
+  "subjects": [
+    "faltynek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Info.cz dne 3. 5. 2018 potvrzuje totéž jádro faktu jako SRC-02\n(Hospodářské noviny), od jiného vydavatele: státní zástupce **Jaroslav\nŠaroch** zrušil trestní stíhání Jaroslava Faltýnka a tří dalších\nobviněných. Stížnost **Andreje Babiše** proti obvinění zamítl jako\n**nedůvodnou** — Babiš a jeho blízcí se stížností neuspěli a zůstali\ndále stíháni.\n\n**Nezávislost.** Jiná redakce a vydavatel než SRC-02 (Hospodářské\nnoviny/Economia) — u CLM-03 se proto počítají jako dvě nezávislá\npotvrzení.\n\n**Poznámka k procesní přesnosti**: rozhodnutí je procesní úkon státního\nzástupce, ne rozsudek soudu — není to rozhodnutí o vině ani o nevině\nnikoho z jmenovaných. Třetí osoby (členové představenstev), které\nčlánek jmenuje, nejsou subjekty tohoto dossieru a v textu dossieru se\nneuvádí."
+    }
+  ],
+  "order": 6
+}
