@@ -156,10 +156,26 @@ export async function initGraphView(containerId, dataIslandId, fullLayerUrl) {
 
   async function activateLayer(key) {
     if (key === "full" && !layers.full && fullLayerUrl) {
+      // Registrová vrstva má 1690 uzlů a stahuje se na vyžádání, takže
+      // mezi kliknutím a překreslením je znatelná prodleva. Bez
+      // viditelného průběhu vypadá pomalé připojení stejně jako
+      // rozbité tlačítko a uživatel klikne znovu.
       announce(section, "Načítám registrovou vrstvu…");
-      layers.full = await fetchLayer(fullLayerUrl);
+      showCount(section, "Načítám registrovou vrstvu…", false);
+      // fetchLayer chybu ZÁMĚRNĚ přehazuje dál (aby se do cache neuložil
+      // neúspěch), takže se musí odchytit tady. Bez toho výjimka
+      // propadla ven z activateLayer jako neošetřené odmítnutí a
+      // v liště zůstalo viset „Načítám…" navždy — chybová větev níž
+      // byla pro výpadek sítě nedosažitelná a řešila jen prázdnou
+      // odpověď. Nejhorší podoba selhání: vypadá jako pomalé připojení.
+      layers.full = await fetchLayer(fullLayerUrl).catch(() => null);
       if (!layers.full) {
+        // Dřív se porucha hlásila jen do sr-only oblasti: vidoucí
+        // uživatel klikl na „celý registr", nic se nestalo a nedozvěděl
+        // se proč. Tichá porucha je k nerozeznání od nefunkčního
+        // ovládání — a svádí k závěru, že data neexistují.
         announce(section, "Registrovou vrstvu se nepodařilo načíst.");
+        showCount(section, "Registrovou vrstvu se nepodařilo načíst — zkuste to znovu.", true);
         return;
       }
     }
@@ -169,6 +185,9 @@ export async function initGraphView(containerId, dataIslandId, fullLayerUrl) {
     state.setLayer(key);
     layerButtons.forEach((b) => b.setAttribute("aria-pressed", String(b.getAttribute("data-graph-layer") === key)));
     announce(section, `Vrstva „${key === "full" ? "celý registr" : "vztahy entit"}" — ${payload.nodes.length} uzlů, ${payload.edges.length} hran.`);
+    // Po úspěšném přepnutí musí počítadlo odpovídat NOVÉ vrstvě, jinak
+    // by tam zůstalo číslo z předchozí (nebo hlášení o načítání).
+    refreshReducers();
   }
 
   // Initial layer: from URL if valid, else the default. Restored in a

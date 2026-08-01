@@ -103,6 +103,35 @@
     </a>
   </section>
 
+  {#- Výchozí pojem celého webu. Blok je rozklikávací schválně: na landingu
+      má stačit jedna věta, ale kdo chce vědět, co přesně „dossier" znamená,
+      nemá být poslán pryč — po rozkliknutí dostane celý výklad na místě.
+
+      Obsah se NEVYPISUJE zde, ale renderuje z content/koncepty/co-je-dossier.md.
+      Kopie textu v šabloně by byla druhý kanonický zdroj: po první úpravě by
+      se rozešly a čtenář by na dvou místech téhož webu našel dvě různá
+      vymezení základního pojmu. Stránka zůstává samostatně dostupná
+      a citovatelná vlastní URL. -#}
+  {% set dossier_concept = get_page(path="koncepty/co-je-dossier.md") %}
+  <section aria-labelledby="co-je-dossier-heading" class="mx-auto max-w-3xl px-6 pt-16 sm:pt-20">
+    <h2 id="co-je-dossier-heading" class="sr-only">Co je dossier?</h2>
+    <details class="group rounded-xl border border-white/10 bg-white/[0.03] open:border-[#f3e5c0]/30">
+      <summary class="flex cursor-pointer items-start justify-between gap-4 p-5 marker:content-none [&::-webkit-details-marker]:hidden">
+        <span>
+          <span class="block text-sm font-semibold text-white">Co je dossier?</span>
+          <span class="mt-1 block text-sm leading-relaxed text-white/60">{{ dossier_concept.extra.tile_summary }}</span>
+        </span>
+        <span class="mt-0.5 shrink-0 text-white/55 transition-transform group-open:rotate-90" aria-hidden="true">&rsaquo;</span>
+      </summary>
+      <div class="dossier-prose border-t border-white/10 px-5 py-5">
+        {{ dossier_concept.content | safe }}
+        <p class="mt-6 text-sm">
+          <a href="{{ dossier_concept.permalink | safe }}" class="text-[#f3e5c0] underline">Otevřít jako samostatnou stránku &rarr;</a>
+        </p>
+      </div>
+    </details>
+  </section>
+
   <section aria-labelledby="what-is-heading" class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
     <h2 id="what-is-heading" class="text-center text-2xl font-bold text-white sm:text-3xl">Co vomaste.cz je — a co není</h2>
     <div class="mt-10 grid gap-6 sm:grid-cols-2">

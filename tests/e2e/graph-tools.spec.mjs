@@ -158,3 +158,37 @@ test.describe("viditelný počet", () => {
     await expect(pocet(page)).toHaveClass(/graph-count-warn/);
   });
 });
+
+test.describe("porucha načtení vrstvy", () => {
+  // Registrová vrstva se stahuje na vyžádání. Selhání se dřív hlásilo
+  // jen do sr-only oblasti — vidoucí uživatel klikl, nic se nestalo
+  // a nedozvěděl se proč. Tichá porucha je k nerozeznání od nefunkčního
+  // tlačítka a svádí k závěru, že data neexistují.
+  test("nenačtená vrstva se hlásí viditelně", async ({ page }) => {
+    await page.route("**/global-registry.json*", (r) => r.abort());
+    await page.goto("/map/");
+    await page.waitForTimeout(2000);
+    await page.locator('[data-graph-layer="full"]').click();
+    await page.waitForTimeout(1500);
+
+    const pocet = page.locator("[data-graph-count]");
+    await expect(pocet).toHaveText(/nepodařilo načíst/i);
+    await expect(pocet).toHaveClass(/graph-count-warn/);
+  });
+
+  test("po úspěšném přepnutí počítadlo ukazuje novou vrstvu", async ({ page }) => {
+    // Jinak by v počítadle zůstalo číslo z předchozí vrstvy nebo text
+    // „Načítám…", tedy údaj, který už neplatí.
+    await page.goto("/map/");
+    await page.waitForTimeout(2000);
+    const pocet = page.locator("[data-graph-count]");
+    const pred = Number((await pocet.textContent()).match(/(\d+)/)?.[1] || 0);
+
+    await page.locator('[data-graph-layer="full"]').click();
+    await page.waitForTimeout(2500);
+    const po = Number((await pocet.textContent()).match(/(\d+)/)?.[1] || 0);
+
+    expect(po, "počítadlo nereflektuje větší registrovou vrstvu").toBeGreaterThan(pred);
+    await expect(pocet).not.toHaveText(/Načítám/);
+  });
+});
