@@ -250,9 +250,6 @@ Neimplementované:
 - **OG karty** tří nejnovějších dossierů — Playwright na macOS 13 chromium
   nenainstaluje, takže `scripts/og/build-og-images.mjs` musí proběhnout jinde.
 
-- **vizuální kontrola** na reálných viewportech (1440×1000, 1024×768,
-  390×844), včetně dlouhých labelů a tříciferných hodnot;
-
 Zadání pro tuhle práci předpokládalo jiné informační architektury, než jakou
 web má: sidebar má **sedm** top-level položek (`home`, `dossiers`, `entities`,
 `map`, `concepts`, `data`, `docs`). Položky jako `claims`, `sources`, `cases`
