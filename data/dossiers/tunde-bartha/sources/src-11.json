@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-11",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-11",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tunde-bartha"
+  },
+  "title": "SRC-11 — Novinky.cz (Právo): Kancléřkou bude poprvé žena (27. 1. 2023)",
+  "description": "Novinky.cz/Právo, původní redakční práce (autorka Kristýna Šopfová), nezávisle na ČT24 (SRC-07) potvrzuje, že Tünde Bartha vedla Babišovu prezidentskou kampaň a že by se v případě jeho vítězství stala jeho kancléřkou.",
+  "outlet": "Novinky.cz (Právo)",
+  "sourceType": "celostátní zpravodajství",
+  "url": "https://www.novinky.cz/clanek/volby-prezidenta-kanclerkou-bude-poprve-zena-40421132",
+  "published": "2023-01-27",
+  "retrieved": "2026-08-02",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-11"
+    }
+  ],
+  "subjects": [
+    "bartha"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Novinky.cz (deník Právo) dne 27. 1. 2023, autorka Kristýna Šopfová —\noriginální redakční práce, ne agenturní přejímka. Článek uvádí, že\nTünde Bartha „nyní dohlíží na jeho prezidentskou kampaň\" a že by se „v\npřípadě Andreje Babiše\" stala jeho kancléřkou jeho „dřívější šéfka\nÚřadu vlády Tünde Bartha\", pokud by volby vyhrál.\n\n**Nezávislost**: samostatná redakce od ČT24 (SRC-07) — obě nezávisle\npotvrzují tutéž veřejnou skutečnost (vedení kampaně, zamýšlená role\nkancléřky v případě vítězství). Proto CLM-10 i CLM-11 nesou stav\n`CORROBORATED`.\n\n**Limity**: článek neuvádí formulaci „úzce spolupracuje už sedmým\nrokem\" ani detail o začátku spolupráce na ministerstvu financí — tyto\ndílčí údaje v CLM-10 zůstávají doloženy jen SRC-07; druhý zdroj zde\nnezávisle potvrzuje jádro (vedení kampaně, zamýšlená role kancléřky),\nne každou dílčí formulaci."
+    }
+  ],
+  "order": 11
+}

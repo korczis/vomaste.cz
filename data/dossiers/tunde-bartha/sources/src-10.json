@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-10",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-10",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tunde-bartha"
+  },
+  "title": "SRC-10 — Echo24: Babišovy rošády na úřadu vlády (15. 12. 2025)",
+  "description": "Echo24, původní redakční práce (ne agenturní přejímka), nezávisle na tiskové zprávě Úřadu vlády (SRC-06) potvrzuje jmenování Tünde Barthy vedoucí Úřadu vlády 15. 12. 2025 a její dřívější řízení úřadu za předchozí Babišovy vlády.",
+  "outlet": "Echo24",
+  "sourceType": "celostátní zpravodajství",
+  "url": "https://www.echo24.cz/a/HPCGZ/zpravy-domaci-urad-vlady-personalni-zmeny-babis-bartha-kmonicek-mrackova-hrdinkova",
+  "published": "2025-12-15",
+  "retrieved": "2026-08-02",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-09"
+    }
+  ],
+  "subjects": [
+    "bartha"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Echo24 dne 15. 12. 2025 (den ustavující schůze vlády) informoval o\npersonálních změnách na Úřadu vlády — původní redakční prací, ne\nagenturní přejímkou (autor „jkr\"). Článek potvrzuje, že Tünde Bartha se\nstala vedoucí Úřadu vlády, a dodává: „Bartha byla pověřená řízením\núřadu už v době předchozí Babišovy vlády.\"\n\n**Nezávislost**: samostatná redakce od primárního úředního zdroje\n(SRC-06, tisková zpráva Úřadu vlády) — nezávisle potvrzuje tutéž\nveřejnou skutečnost (jmenování 15. 12. 2025, dřívější řízení úřadu za\npředchozí Babišovy vlády). Proto CLM-09 nese stav `CORROBORATED`.\n\n**Limity**: článek neuvádí doslovné znění tiskové zprávy Úřadu vlády —\npřesná citace zůstává doložena jen SRC-06."
+    }
+  ],
+  "order": 10
+}
