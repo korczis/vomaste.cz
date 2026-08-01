@@ -436,6 +436,11 @@ export function registerTableFilter() {
         });
         this.total = this.records.size;
         this.visible = this.records.size;
+        // Výchozí pořadí je to, ve kterém dorazilo z buildu — abecední.
+        // Bez jeho zapamatování by „zrušit řazení" nechalo seznam v pořadí
+        // podle naposledy zvoleného sloupce, což vypadá jako že tlačítko
+        // nefunguje.
+        this.baseOrder = [...this.records.keys()];
 
         // Povolené projekce určuje šablona; komponenta si je nevymýšlí.
         const allowed = (this.$root.dataset.allowedViews || "").split(",").map((s) => s.trim()).filter(Boolean);
@@ -555,7 +560,12 @@ export function registerTableFilter() {
       applyDirectorySort() {
         const index = this.sortIndexes[this.sortKey];
         const dir = this.sortDir === "desc" ? -1 : 1;
-        const keys = [...this.records.keys()];
+        const keys = [...(this.baseOrder ?? this.records.keys())];
+        if (!this.sortKey) {
+          // Zpět na výchozí abecední pořadí z buildu.
+          this.reorderProjections(keys);
+          return;
+        }
         if (index !== undefined) {
           const valueOfKey = (k) => {
             const row = this.records.get(k).find((n) => n.tagName === "TR");
@@ -565,10 +575,15 @@ export function registerTableFilter() {
         } else {
           keys.sort((a, b) => a.localeCompare(b, "cs"));
         }
-        // Každou projekci přeskládáme v jejím vlastním kontejneru.
+        this.reorderProjections(keys);
+      },
+
+      // Přeskládá každou projekci v jejím vlastním kontejneru podle
+      // společného pořadí klíčů — jedna pravda o pořadí, tři vykreslení.
+      reorderProjections(keys) {
         const containers = new Map();
         for (const key of keys) {
-          for (const node of this.records.get(key)) {
+          for (const node of this.records.get(key) ?? []) {
             const parent = node.parentElement;
             if (!containers.has(parent)) containers.set(parent, document.createDocumentFragment());
             containers.get(parent).appendChild(node);
@@ -628,7 +643,7 @@ export function registerTableFilter() {
           if (match) shown++;
         }
         this.visible = shown;
-        if (this.sortKey) this.applyDirectorySort();
+        this.applyDirectorySort();
         this.sync();
       },
 

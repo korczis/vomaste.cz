@@ -228,7 +228,13 @@ export function buildRecordTables(root) {
 // které existují až po generátorech. Kontroluje ho validate-directory-index.mjs.
 export function enrichDossiersForDirectory(root, dossierRows) {
   const navRoutes = readNavigationRoutes(root);
-  return dossierRows.map((d) => {
+  // Abecedně podle zobrazovaného názvu, s českým řazením — tedy Č za C,
+  // Ř za R a tak dál. Řadí se TADY, ne až v prohlížeči: vykreslené HTML
+  // pak má správné pořadí i bez JavaScriptu a čtenář nezačíná u toho,
+  // kdo je náhodou první v registru.
+  const collator = new Intl.Collator("cs", { sensitivity: "base" });
+  const sorted = [...dossierRows].sort((a, b) => collator.compare(a.title, b.title));
+  return sorted.map((d) => {
     const indexFile = join(root, "content/dossiers", d.slug, "_index.md");
     const block = existsSync(indexFile) ? fm(readFileSync(indexFile, "utf8")) : "";
     const nav = navRoutes.get(d.slug) ?? { routes: {}, labels: {} };

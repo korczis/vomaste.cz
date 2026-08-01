@@ -194,3 +194,49 @@ test.describe("hash navigace", () => {
     await expect(visible).toHaveCount(1);
   });
 });
+
+test.describe("výchozí řazení", () => {
+  test("adresář je abecedně setříděný bez jakéhokoli zásahu", async ({ page }) => {
+    // Výchozí pohled nesmí začínat tím, kdo je náhodou první v registru.
+    await page.goto("/dossiers/?view=list");
+    await page.waitForTimeout(250);
+    // První odkaz v položce je název dossieru; další jsou metriky, které
+    // by do abecedního porovnání nepatřily.
+    const titles = await page
+      .locator('#dossier-directory [data-view="list"] [data-record-key]')
+      .evaluateAll((els) => els.map((e) => e.querySelector("a")?.textContent.trim() ?? ""));
+    const seřazené = [...titles].sort((a, b) => a.localeCompare(b, "cs"));
+    expect(titles.slice(0, 8)).toEqual(seřazené.slice(0, 8));
+  });
+
+  test("abecední pořadí platí i bez JavaScriptu", async ({ browser }) => {
+    // Řadí se při buildu, ne v prohlížeči — jinak by čtenář bez skriptu
+    // dostal pořadí podle registru.
+    const context = await browser.newContext({ javaScriptEnabled: false });
+    const page = await context.newPage();
+    await page.goto("/dossiers/");
+    const first = await page
+      .locator('#dossier-directory [data-view="table"] tbody tr th a')
+      .allInnerTexts();
+    const seřazené = [...first].sort((a, b) => a.localeCompare(b, "cs"));
+    expect(first.slice(0, 6)).toEqual(seřazené.slice(0, 6));
+    await context.close();
+  });
+
+  test("zrušení řazení vrátí abecední pořadí", async ({ page }) => {
+    // Bez zapamatovaného výchozího pořadí by seznam zůstal seřazený podle
+    // naposledy zvoleného sloupce a tlačítko by vypadalo jako nefunkční.
+    await page.goto("/dossiers/?view=table");
+    await page.waitForTimeout(200);
+    const prvni = () => page.locator('#dossier-directory-table tbody tr:not([hidden]) th a').first().innerText();
+    const abecedne = await prvni();
+
+    await page.locator('#dossier-directory-table thead th[data-sort-key="claims"] button').click();
+    await page.waitForTimeout(200);
+    expect(await prvni()).not.toBe(abecedne);
+
+    await page.getByRole("button", { name: /Zrušit filtr a řazení/i }).click();
+    await page.waitForTimeout(250);
+    expect(await prvni()).toBe(abecedne);
+  });
+});
