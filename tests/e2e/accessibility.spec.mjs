@@ -15,6 +15,9 @@ const STRANKY = [
   ["registr tvrzení", "/dossiers/andrej-babis/claims/"],
   ["registr zdrojů", "/dossiers/andrej-babis/sources/"],
   ["adresář dossierů", "/dossiers/"],
+  // Graph workbench (T-027) — toolbar, filtry, inspector panel.
+  ["globální mapa", "/map/"],
+  ["lokální graf dossieru", "/dossiers/macinka-turek/"],
 ];
 
 for (const [nazev, cesta] of STRANKY) {

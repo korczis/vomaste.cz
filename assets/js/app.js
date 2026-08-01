@@ -5,7 +5,7 @@
 // side effects only, nothing to wire up here.
 import "flowbite";
 
-// Alpine.js is used the same way as Chart.js/Cytoscape.js here: a targeted,
+// Alpine.js is used the same way as Chart.js/Sigma.js here: a targeted,
 // per-page dependency for genuinely interactive UI (filter toolbars, the
 // global search box), not a site-wide framework. Components are registered
 // on `alpine:init` (Alpine's own required pattern) and each checks its own
@@ -21,8 +21,12 @@ import { initSectionNav } from "./modules/section-nav.js";
 import { initStatusChart } from "./modules/charts.js";
 import { initFullscreenButtons } from "./modules/fullscreen.js";
 import { initSidebarAria } from "./modules/shell.js";
-import { initGraphView } from "./modules/graph-view.js";
 import { initSqlConsole } from "./modules/sql-console.js";
+// Sigma/Graphology (assets/js/modules/graph/index.js) are NOT imported here —
+// they're a separate entrypoint (assets/js/graph-app.js, built to
+// static/js/graph-app.js) loaded only by pages with a graph
+// (templates/base.html's extra_js block), so every other page's bundle
+// stays free of a renderer it never uses (mission § 5).
 
 document.addEventListener("alpine:init", function () {
   registerClaimsFilter();
@@ -41,10 +45,4 @@ document.addEventListener("DOMContentLoaded", function () {
   initFullscreenButtons();
   initSidebarAria();
   initSqlConsole();
-  // Both checked defensively inside initGraphView (container/data-island
-  // absent on pages without a graph) — the per-dossier local graph and the
-  // global map each carry their own container/data-island/search-index ids.
-  document.querySelectorAll("[data-graph-view]").forEach(function (el) {
-    initGraphView(el.id, el.dataset.dataIsland, el.dataset.searchIndexUrl);
-  });
 });

@@ -94,6 +94,12 @@
 
   <link rel="stylesheet" href="{{ get_url(path='css/main.css', cachebust=true) | safe }}">
   <script type="module" defer src="{{ get_url(path='js/app.js', cachebust=true) | safe }}"></script>
+  {#- Sigma/Graphology are a real, measured weight (mission
+      docs/missions/2026-08-01-graph-workbench-master-prompt.md § 5) — they
+      must not ship in the shared bundle every page pays for. Only pages
+      that actually render a graph (a [data-graph-workbench] root) override
+      this block to load static/js/graph-app.js. -#}
+  {% block extra_js %}{% endblock extra_js %}
 </head>
 <body class="bg-black text-white font-sans antialiased">
 <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:rounded focus:bg-[#f3e5c0] focus:px-3 focus:py-2 focus:text-black">Přeskočit na obsah</a>

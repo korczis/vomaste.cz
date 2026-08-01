@@ -24,6 +24,11 @@ const PORT = Number(process.env.E2E_PORT ?? 4173);
 
 export default defineConfig({
   testDir: "./tests/e2e",
+  // Synthetický 10k-uzlový benchmark (T-027, mission § 17.4) je záměrně
+  // MIMO výchozí běh — negeneruje CI signál (žádné pevné ms prahy, jen
+  // reportované časy), a jeho příprava dat trvá desítky sekund. Spouští
+  // se výslovně: `npm run test:e2e:benchmark`.
+  testIgnore: process.env.RUN_GRAPH_BENCHMARK ? [] : ["**/graph-benchmark.spec.mjs"],
   // Testy čtou hotový statický web; nic nemutují, takže můžou běžet paralelně.
   fullyParallel: true,
   // V CI nesmí projít test označený .only — jinak by se tiše přeskočil zbytek.

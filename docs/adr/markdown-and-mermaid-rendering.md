@@ -124,8 +124,10 @@ weren't a gap.
   root-level Markdown file gains a real ` ```mermaid ` diagram someone
   wants rendered — at that point, add the Mermaid CDN script scoped to
   only the `docs-viewer` template (the same CDN-only-where-needed
-  pattern already used for Chart.js/Cytoscape.js, per README's Stack
-  section), not a global site-wide bundle addition. That is a
+  pattern already used for Chart.js/DuckDB-Wasm, per README's Stack
+  section — Sigma.js, unlike those two, is bundled rather than
+  CDN-loaded, see `docs/adr/duckdb-wasm-and-sigma.md`), not a global
+  site-wide bundle addition. That is a
   single-line template change once the actual need exists — cheap to
   defer, not cheap to justify speculatively today.
 - **`data/navigation.toml` entry for `/dokumentace/`**: reconsider once

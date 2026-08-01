@@ -1,6 +1,12 @@
 # ADR: DuckDB-Wasm SQL console and Sigma.js graph renderer
 
-**Status**: accepted.
+**Status**: accepted. The Sigma.js half was refined for scale — data
+contract, build-time layout, lazy loading; the renderer choice itself is
+unchanged — by
+[`graph-workbench-and-data-projection.md`](graph-workbench-and-data-projection.md)
+(2026-08-01), once the dataset this ADR sized its reasoning around ("23
+nodes and 31 edges") grew past that document's own revisit threshold. The
+DuckDB-Wasm half is untouched.
 **Date**: 2026-07-30.
 **Supersedes**: the "not adopted" decision in
 [`graph-renderer.md`](graph-renderer.md) for **two** of the technologies it

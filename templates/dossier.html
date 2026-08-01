@@ -1,9 +1,13 @@
 {% extends "base.html" %}
 {% import "macros/ui.html" as ui %}
 
+{% block extra_js %}
+<script type="module" defer src="{{ get_url(path='js/graph-app.js', cachebust=true) | safe }}"></script>
+{% endblock extra_js %}
+
 {% block content %}
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js" integrity="sha384-NrKB+u6Ts6AtkIhwPixiKTzgSKNblyhlk0Sohlgar9UHUBzai/sgnNNWWd291xqt" crossorigin="anonymous"></script>
-<main class="mx-auto max-w-3xl px-6 py-12 text-white">
+<main class="mx-auto max-w-3xl px-6 py-12 text-white" data-graph-workbench>
   {% set dossier_slug = section.extra.dossier %}
   {{ ui::page_header(title=section.title, breadcrumb_items=[
     "Domů::" ~ get_url(path="@/_index.md"),
@@ -98,27 +102,37 @@
     <noscript><p class="text-xs text-white/50">Graf vyžaduje JavaScript. Stav ověřenosti každého tvrzení je vidět přímo u něj v registru tvrzení níže.</p></noscript>
   </section>
 
-  {% set graph = load_data(path="data/dossiers/" ~ dossier_slug ~ "/graph.toml") %}
+  {#- Normalized, already-laid-out projection of this dossier's own
+      graph.toml (scripts/dossier/build-graph-projections.mjs), not the raw
+      TOML — same transport contract the global map uses
+      (schemas/graph-payload.schema.json), so both share one runtime
+      (assets/js/modules/graph/index.js). -#}
+  {% set graph = load_data(path="static/data/graph/dossier/" ~ dossier_slug ~ ".json") %}
   {% set entity_section = get_section(path="entities/_index.md") %}
   {% set relation_section = get_section(path="dossiers/" ~ dossier_slug ~ "/relations/_index.md") %}
   {% set gap_section = get_section(path="dossiers/" ~ dossier_slug ~ "/gaps/_index.md") %}
   {% set claim_section = get_section(path="dossiers/" ~ dossier_slug ~ "/claims/_index.md") %}
-  <section aria-labelledby="graf-vztahu-heading" id="graf-vztahu" class="mb-12">
+  <section aria-labelledby="graf-vztahu-heading" id="graf-vztahu" class="mb-12" data-graph-section>
     <h2 id="graf-vztahu-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Graf vztahů — kanonický registr</h2>
-    <p class="mb-4 text-xs text-white/50">Toto NENÍ zjednodušená legenda ke grafu níže — je to týž kanonický registr, ze kterého se graf vykresluje. Každá entita a každý vztah má vlastní stránku; funguje bez JavaScriptu a při selhání CDN Cytoscape.js beze změny. Plný, filtrovatelný <a href="{{ get_url(path='@/dossiers/' ~ dossier_slug ~ '/relations/_index.md') | safe }}" class="text-[#f3e5c0] underline">registr vztahů</a> tohoto dossieru a globální, dossier-nezávislý <a href="{{ get_url(path='@/entities/_index.md') | safe }}" class="text-[#f3e5c0] underline">registr entit</a> mají vlastní routu.</p>
+    <p class="mb-4 text-xs text-white/50">Toto NENÍ zjednodušená legenda ke grafu níže — je to týž kanonický registr, ze kterého se graf vykresluje. Každá entita a každý vztah má vlastní stránku; funguje bez JavaScriptu. Plný, filtrovatelný <a href="{{ get_url(path='@/dossiers/' ~ dossier_slug ~ '/relations/_index.md') | safe }}" class="text-[#f3e5c0] underline">registr vztahů</a> tohoto dossieru a globální, dossier-nezávislý <a href="{{ get_url(path='@/entities/_index.md') | safe }}" class="text-[#f3e5c0] underline">registr entit</a> mají vlastní routu.</p>
 
     <div class="mb-6 flex items-center justify-between">
-      <span class="text-xs text-white/55">Klikněte na uzel nebo hranu pro otevření jeho stránky.</span>
+      <span class="text-xs text-white/55">Klikněte na uzel nebo hranu pro výběr a detail vpravo; otevření celé stránky je odkaz v panelu.</span>
       <button type="button" class="fs-btn" data-fs-target="graph-view-box" title="Zobrazit na celou obrazovku" aria-label="Zobrazit na celou obrazovku">⛶</button>
     </div>
-    <div id="graph-view-box" class="fs-box mb-8 overflow-hidden rounded-lg border border-white/10">
-      <div id="dossier-graph-view"
-           data-graph-view
-           data-data-island="dossier-graph-data"
-           data-search-index-url="{{ get_url(path='search-index.json', cachebust=true) | safe }}"
-           class="h-[420px] w-full bg-black/40"></div>
+    <div class="graph-workbench-grid">
+      <div id="graph-view-box" class="fs-box graph-canvas-box overflow-hidden rounded-lg border border-white/10">
+        <div id="dossier-graph-view"
+             data-graph-view
+             data-data-island="dossier-graph-data"
+             class="h-[420px] w-full bg-black/40"></div>
+      </div>
+      <aside data-graph-inspector aria-label="Detail vybraného záznamu" class="graph-inspector">
+        <p class="graph-inspector-empty">Nic není vybráno. Klikněte na uzel nebo hranu.</p>
+      </aside>
     </div>
-    <noscript><p class="mb-8 text-xs text-white/50">Interaktivní graf vyžaduje JavaScript. Použijte textový registr níže nebo <a href="{{ get_url(path='@/dossiers/' ~ dossier_slug ~ '/relations/_index.md') | safe }}" class="text-[#f3e5c0] underline">registr vztahů</a>.</p></noscript>
+    <p class="sr-only" data-graph-status role="status" aria-live="polite"></p>
+    <noscript><p class="mb-8 mt-4 text-xs text-white/50">Interaktivní graf vyžaduje JavaScript. Použijte textový registr níže nebo <a href="{{ get_url(path='@/dossiers/' ~ dossier_slug ~ '/relations/_index.md') | safe }}" class="text-[#f3e5c0] underline">registr vztahů</a>.</p></noscript>
 
     <h3 class="mb-2 text-xs font-semibold uppercase tracking-wide text-white/55">Tematické okruhy</h3>
     <div class="mb-6 grid gap-3 sm:grid-cols-2">
@@ -130,7 +144,7 @@
         <p class="mt-2 text-xs text-white/55">Otevřené mezery:
           {% for g in c.gaps %}
             {% set gap_page = gap_section.pages | filter(attribute="extra.gap_id", value=g) | first %}
-            {% if gap_page %}<a href="{{ gap_page.permalink | safe }}" class="text-[#f3e5c0] no-underline hover:underline">{{ g }}</a>{% if not loop.last %}, {% endif %}{% endif %}
+            {% if gap_page %}<a href="{{ gap_page.permalink | safe }}" class="text-[#f3e5c0] underline decoration-white/30 underline-offset-2">{{ g }}</a>{% if not loop.last %}, {% endif %}{% endif %}
           {% endfor %}
         </p>
         {% endif %}
@@ -220,8 +234,8 @@
 </main>
 
 {#- Graph data as an inert JSON island, not an inline JS literal — read by
-    assets/js/modules/relationship-graph.js. Moved verbatim from what used
-    to be a hardcoded JS array here; see data/relationship-graph.toml for
-    the source of truth and its own provenance note. -#}
+    assets/js/modules/graph/index.js. This dossier's own payload is small
+    (a few nodes), so it's still inlined whole; only the global map's much
+    larger full-registry layer is lazy-fetched instead (templates/map.html). -#}
 <script type="application/json" id="dossier-graph-data">{{ graph | json_encode | safe }}</script>
 {% endblock content %}
