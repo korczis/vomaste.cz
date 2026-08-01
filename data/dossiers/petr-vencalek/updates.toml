@@ -1,0 +1,12 @@
+# Auditable update history for "Petr Vencálek" (content/dossiers/petr-vencalek/).
+# Append-only: each entry records what was *actually* checked and changed
+# on that date -- never claim a change that didn't happen.
+
+[[updates]]
+date = "2026-08-01"
+reviewed_sources = ["SRC-01", "SRC-02"]
+added_claims = ["CLM-01", "CLM-02", "CLM-03"]
+updated_claims = []
+added_gaps = ["GAP-01"]
+closed_gaps = []
+summary = "Založen dossier dle AUTH-2026-08-01-VENCALEK ze dvou zdrojů dříve otevřených a přečtených pro dossier petr-macinka (Investigace.cz, ARES — zde jako SRC-01/02, nový fyzický záznam téhož faktu). Rozsah: vlastnictví/jednatelství GMR GAS s.r.o. a vazba na GMR GAS UA LLC. Druhé autorizované téma (dary Klubu motoristů) zůstává bez zdroje — zapsáno jako GAP-01, ne jako tvrzení."

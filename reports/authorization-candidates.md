@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 63 context entities across 22 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 61 context entities across 24 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -170,12 +170,13 @@ Generated from 63 context entities across 22 dossier(s). Regenerate with `npm ru
 
 - Type: company
 - Status: not_authorized
-- Appears in: macinka-turek, petr-macinka
-- Claims: CLM-46, CLM-47, CLM-48
-- Sources: SRC-17, SRC-55 (2 independent source families)
+- Appears in: macinka-turek, petr-macinka, petr-vencalek
+- Claims: CLM-46, CLM-47, CLM-48, CLM-01
+- Sources: SRC-17, SRC-55, SRC-01, SRC-02 (4 independent source families)
 - Relations: 
   - edge-gmrgascz-gmrgas (gmrgas-cz -> gmrgas, "podíl v ukrajinské pobočce", dossier: macinka-turek)
   - edge-vencalek-gmrgascz (vencalek -> gmrgas-cz, "jediný společník a jednatel", dossier: macinka-turek)
+  - edge-vencalek-gmrgascz (vencalek -> gmrgas-cz, "jediný společník a jednatel", dossier: petr-vencalek)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Zmocněnec pro Green Deal (`greendeal`)
@@ -471,18 +472,6 @@ Generated from 63 context entities across 22 dossier(s). Regenerate with `npm ru
   - edge-capihnizdo-olaf (capi-hnizdo -> olaf, "šetření OLAF; zveřejněné části zprávy hovoří o nesrovnalostech — zjištění kontrolního úřadu, ne rozsudek", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
-## Petr Pavel (prezident) (`pavel`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: macinka-turek, filip-turek
-- Claims: CLM-38
-- Sources: SRC-44 (1 independent source family)
-- Relations: 
-  - edge-pavel-mzp2026 (pavel -> mzp2026, "odmítl jmenovat", dossier: macinka-turek)
-  - edge-turek-pavel (turek -> pavel, "hrozil žalobou (1/2026), nakonec nepodal (7/2026)", dossier: macinka-turek)
-- Missing: explicit owner authorization to promote this to its own dossier
-
 ## Mgr. Pavel Hanus (`pavel-hanus`)
 
 - Type: person
@@ -701,17 +690,6 @@ Generated from 63 context entities across 22 dossier(s). Regenerate with `npm ru
 - Relations: 
   - edge-kostelecke-ustavnisoud (kostelecke-uzeniny -> ustavni-soud, "ústavní stížnost odmítnuta 1. 4. 2026 jako zjevně neopodstatněná — spor o nárok na dotaci, ne o vině", dossier: andrej-babis)
   - edge-vodnanska-ustavnisoud (vodnanska-drubez -> ustavni-soud, "ústavní stížnost odmítnuta 1/2026 (dotace 75 mil. Kč) — spor o nárok na dotaci, ne o vině", dossier: andrej-babis)
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Petr Vencálek (vlastník GMR GAS s.r.o.) (`vencalek`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: macinka-turek, petr-macinka
-- Claims: CLM-48
-- Sources: SRC-17, SRC-55 (2 independent source families)
-- Relations: 
-  - edge-vencalek-gmrgascz (vencalek -> gmrgas-cz, "jediný společník a jednatel", dossier: macinka-turek)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Vláda ČR (`vlada`)

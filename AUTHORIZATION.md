@@ -40,12 +40,12 @@ Regenerate the raw candidate feed this file is triaged from with:
 npm run generate:candidates
 ```
 
-Last triaged against that feed: **2026-08-01** (56 context entities, 22
+Last triaged against that feed: **2026-08-01** (61 context entities, 24
 dossiers).
 
 ---
 
-## 1. Already authorized (21 subjects, 22 dossiers incl. the aggregate)
+## 1. Already authorized (23 subjects, 24 dossiers incl. the aggregate)
 
 Source of truth: `AGENTS.md`, mirrored in `data/authorizations.toml`.
 
@@ -72,6 +72,8 @@ Source of truth: `AGENTS.md`, mirrored in `data/authorizations.toml`.
 | Tünde Bartha | `tunde-bartha` | 2026-07-30 | AUTH-2026-07-30-U |
 | Jaroslav Faltýnek | `jaroslav-faltynek` | 2026-07-30 | AUTH-2026-07-30-V |
 | Richard Chlad | `richard-chlad` | 2026-07-30 | AUTH-2026-07-30-W |
+| Petr Pavel | `petr-pavel` | 2026-08-01 | AUTH-2026-08-01-PAVEL |
+| Petr Vencálek | `petr-vencalek` | 2026-08-01 | AUTH-2026-08-01-VENCALEK |
 | *(aggregate, not a subject)* | `macinka-turek` | 2026-07-29 | structural, see AGENTS.md |
 
 Every one of the current 16 government members (`data/government.toml`)
@@ -94,17 +96,20 @@ Companies, institutions, parties, controversies and events are structurally
 matter how much reporting cites them. They're listed in §4 for completeness
 only, not because they're pending decisions.
 
-### Tier A — public figure, existing hook, would need genuinely new research
+### Tier A / Tier B — resolved 2026-08-01
 
-| Candidate | `entity_id` | Why flagged | Status |
-|---|---|---|---|
-| **Petr Pavel** (prezident republiky) | `pavel` | Currently a context entity only, appearing in `macinka-turek`/`filip-turek` for exactly one thread already inside the authorized scope: his refusal to appoint Turek environment minister and the (unfiled) threatened lawsuit (CLM-38, SRC-44). Head of state — public-interest test would clearly be satisfied for conduct *in office*, but a dossier "about him" would be new, separate research, not a repackaging of what's already sourced here. | pending |
+**Petr Pavel** (`pavel`) — authorized with the narrow, already-documented
+scope only (refusal to appoint Turek environment minister + Turek's
+unfiled lawsuit threat). See `AUTH-2026-08-01-PAVEL`, dossier
+`petr-pavel`. Moved to §1.
 
-### Tier B — private individual, tied to an already-authorized topic, weaker public-interest case
-
-| Candidate | `entity_id` | Why flagged | Status |
-|---|---|---|---|
-| **Petr Vencálek** | `vencalek` | Sole owner/jednatel of GMR GAS s.r.o., the company at the center of Macinka's already-authorized undisclosed-20%-stake claim (CLM-48). Not a public official — authorizing him as his own subject would need an independent public-interest justification beyond "he owns the other side of an already-covered transaction." | pending |
+**Petr Vencálek** (`vencalek`) — authorized for two topics:
+(1) ownership/jednatelství of GMR GAS s.r.o. and its tie to GMR GAS UA
+LLC — written, sourced, live; (2) donations to Klub motoristů, z.s. —
+authorized as scope, but **no source has been found**; tracked as
+`GAP-01` in his dossier rather than silently dropped or written without
+a source. See `AUTH-2026-08-01-VENCALEK`, dossier `petr-vencalek`. Moved
+to §1.
 
 ### Tier C — bare ARES registry stubs, zero editorial content: **not recommended** without new sourcing
 

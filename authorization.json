@@ -6,8 +6,8 @@
   "raw_candidate_feed_generator": "npm run generate:candidates",
   "last_triaged_against": "2026-08-01",
   "last_triaged_against_stats": {
-    "context_entities_in_feed": 56,
-    "dossiers": 22
+    "context_entities_in_feed": 61,
+    "dossiers": 24
   },
   "authorized": [
     { "subject": "Petr Macinka", "entity_id": "macinka", "dossier_slug": "petr-macinka", "first_authorized": "2026-07-21", "auth_ids": ["AUTH-2026-07-21-A", "AUTH-2026-07-21-B", "AUTH-2026-07-30-A"] },
@@ -30,7 +30,9 @@
     { "subject": "Martin Šebestyán", "entity_id": "sebestyan", "dossier_slug": "martin-sebestyan", "first_authorized": "2026-07-30", "auth_ids": ["AUTH-2026-07-30-T"] },
     { "subject": "Tünde Bartha", "entity_id": "bartha", "dossier_slug": "tunde-bartha", "first_authorized": "2026-07-30", "auth_ids": ["AUTH-2026-07-30-U"] },
     { "subject": "Jaroslav Faltýnek", "entity_id": "faltynek", "dossier_slug": "jaroslav-faltynek", "first_authorized": "2026-07-30", "auth_ids": ["AUTH-2026-07-30-V"] },
-    { "subject": "Richard Chlad", "entity_id": "chlad", "dossier_slug": "richard-chlad", "first_authorized": "2026-07-30", "auth_ids": ["AUTH-2026-07-30-W"] }
+    { "subject": "Richard Chlad", "entity_id": "chlad", "dossier_slug": "richard-chlad", "first_authorized": "2026-07-30", "auth_ids": ["AUTH-2026-07-30-W"] },
+    { "subject": "Petr Pavel", "entity_id": "pavel", "dossier_slug": "petr-pavel", "first_authorized": "2026-08-01", "auth_ids": ["AUTH-2026-08-01-PAVEL"] },
+    { "subject": "Petr Vencálek", "entity_id": "vencalek", "dossier_slug": "petr-vencalek", "first_authorized": "2026-08-01", "auth_ids": ["AUTH-2026-08-01-VENCALEK"] }
   ],
   "aggregate_views": [
     { "slug": "macinka-turek", "dossier_type": "aggregate", "note": "Not a subject, not a third dossier — structural rollup over macinka+turek. See AGENTS.md 'Structural change, 2026-07-29'.", "authorized": "2026-07-29" }
@@ -49,25 +51,25 @@
       "agents_md_section": "Not authorized: Radovan Krejčíř (on the record)"
     }
   ],
+  "resolved_2026_08_01": [
+    {
+      "candidate": "Petr Pavel",
+      "entity_id": "pavel",
+      "status": "authorized",
+      "auth_id": "AUTH-2026-08-01-PAVEL",
+      "dossier_slug": "petr-pavel",
+      "note": "Authorized with the narrow, already-documented scope only: refusal to appoint Turek environment minister + Turek's unfiled lawsuit threat. Written and live."
+    },
+    {
+      "candidate": "Petr Vencálek",
+      "entity_id": "vencalek",
+      "status": "authorized",
+      "auth_id": "AUTH-2026-08-01-VENCALEK",
+      "dossier_slug": "petr-vencalek",
+      "note": "Authorized for two topics: (1) GMR GAS s.r.o. ownership + tie to GMR GAS UA LLC — written, sourced, live; (2) donations to Klub motoristů, z.s. — authorized scope but no source found, tracked as GAP-01 rather than written unsourced or silently dropped."
+    }
+  ],
   "pending": {
-    "tier_a_public_figure_new_research_needed": [
-      {
-        "candidate": "Petr Pavel",
-        "role": "prezident republiky",
-        "entity_id": "pavel",
-        "status": "pending",
-        "note": "Currently context-only, appearing in macinka-turek/filip-turek for one thread already inside authorized scope (refusal to appoint Turek environment minister; threatened, unfiled lawsuit — CLM-38, SRC-44). Head of state, public-interest test satisfied for in-office conduct, but a dossier about him would be new, separate research, not a repackaging of what's already sourced."
-      }
-    ],
-    "tier_b_private_individual_tied_to_authorized_topic": [
-      {
-        "candidate": "Petr Vencálek",
-        "role": "jediný společník a jednatel, GMR GAS s.r.o.",
-        "entity_id": "vencalek",
-        "status": "pending",
-        "note": "Owner of the company at the center of Macinka's already-authorized undisclosed-20%-stake claim (CLM-48). Not a public official — his own dossier needs an independent public-interest justification beyond the already-covered transaction."
-      }
-    ],
     "tier_c_bare_registry_stub_not_recommended": [
       { "candidate": "JUDr. Alexej Bílek", "entity_id": "alexej-bilek", "status": "not_recommended", "note": "AGROFERT statutory-board member, zero claims/sources/relations. Discovered via ares-expansion-26185610-2026-07-31." },
       { "candidate": "Ing. Jaroslav Kurčík", "entity_id": "jaroslav-kurcik", "status": "not_recommended", "note": "AGROFERT statutory-board member, zero claims/sources/relations." },
