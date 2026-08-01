@@ -44,6 +44,7 @@
     "attribution": "vomaste:attribution",
     "source": { "@id": "vomaste:blockSource", "@type": "@id" },
     "items": { "@id": "vomaste:items", "@container": "@list" },
+    "entries": { "@id": "vomaste:timelineEntries", "@type": "@json" },
     "order": "vomaste:order",
     "period": "vomaste:period",
     "anchor": "vomaste:anchor",

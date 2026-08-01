@@ -153,13 +153,30 @@
       "$comment": "Skutečně použité hodnoty ve front matter gaps (24× vysoká, 155× střední, 8× nízká k 2026-08-01) — zadání fáze B uvádělo jen vysoká|nízká, ale reálná data mají většinově střední; vynechat ji by rozbilo fázi D."
     },
 
+    "timelineEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["date", "title"],
+      "properties": {
+        "date": {
+          "type": "string",
+          "minLength": 1,
+          "$comment": "Preferovaný tvar je redukované ISO datum (YYYY | YYYY-MM | YYYY-MM-DD — zadání fáze E). Reálná data ale nesou i český volný formát (\"23. 2. 2026\", \"květen 2026\", 10 hodnot k 2026-08-01) a lossless migrace je nesmí přepsat — zpřísnění na ISO pattern je redakční rozhodnutí pro fáze F–H, ne pro migrátor."
+        },
+        "title": { "type": "string", "minLength": 1 },
+        "anchor": { "type": "string", "minLength": 1 },
+        "dot": { "type": "string", "minLength": 1 },
+        "subjects": { "$ref": "#/$defs/subjects" }
+      }
+    },
+
     "contentBlock": {
       "type": "object",
       "required": ["type"],
       "properties": {
         "type": {
           "enum": [
-            "markdown", "paragraph", "quote", "process-note", "editorial-note",
+            "markdown", "timeline", "paragraph", "quote", "process-note", "editorial-note",
             "warning", "list", "table", "references", "related-records"
           ]
         }
@@ -177,6 +194,25 @@
               "type": { "const": "markdown" },
               "value": { "type": "string", "minLength": 1 }
             }
+          }
+        },
+        {
+          "if": {
+            "properties": { "type": { "const": "timeline" } },
+            "required": ["type"]
+          },
+          "then": {
+            "additionalProperties": false,
+            "required": ["type", "entries"],
+            "properties": {
+              "type": { "const": "timeline" },
+              "entries": {
+                "type": "array",
+                "minItems": 1,
+                "items": { "$ref": "#/$defs/timelineEntry" }
+              }
+            },
+            "$comment": "Timeline dossieru — lossless přenos [[extra.timeline]] bloků z content/dossiers/<slug>/_index.md (fáze E). Pořadí entries = pořadí bloků ve zdroji, žádná deduplikace; parity počtu entries hlídá migrátor (runParityChecks). V JSON-LD se entries mapují jako @json literál (term \"entries\" v contextu v1)."
           }
         },
         {

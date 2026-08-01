@@ -84,6 +84,42 @@ const refs = (slug, registry, ids) => ids.map((id) => ({ "@id": recordId(slug, r
 const entityRef = (id) => ({ "@id": entityId(id) });
 const mdBlocks = (body) => (body ? [{ type: "markdown", value: body }] : []);
 
+// Klíče, které smí nést jeden [[extra.timeline]] blok — cokoli navíc je
+// tvrdá chyba (lossless: neznámý klíč se nesmí tiše zahodit).
+const TIMELINE_KEYS = Object.freeze(["date", "title", "anchor", "dot", "subjects"]);
+
+/*
+ * [[extra.timeline]] bloky _index.md → kanonické timeline entries
+ * (fáze E prerekvizita). Pořadí vstupu se zachovává, žádná deduplikace;
+ * date zůstává byte-verně (včetně českého volného formátu — viz $comment
+ * timelineEntry v schemas/canonical/_defs.schema.json).
+ */
+function readTimelineEntries(idx, err) {
+  const entries = [];
+  for (const [i, body] of sectionBodies(idx.secs, "extra.timeline").entries()) {
+    for (const key of blockKeys(body)) {
+      if (!TIMELINE_KEYS.includes(key)) {
+        err(`${idx.relPath}: [[extra.timeline]] blok #${i + 1} nese neznámý klíč "${key}" — lossless migrace ho nesmí tiše zahodit`);
+      }
+    }
+    const date = str(body, "date");
+    const title = str(body, "title");
+    if (!date || !title) {
+      err(`${idx.relPath}: [[extra.timeline]] blok #${i + 1} nemá date/title — záznam timeline nelze migrovat`);
+      continue;
+    }
+    const entry = { date, title };
+    const anchor = str(body, "anchor");
+    if (anchor !== null) entry.anchor = anchor;
+    const dot = str(body, "dot");
+    if (dot !== null) entry.dot = dot;
+    const subjects = arr(body, "subjects");
+    if (subjects !== null) entry.subjects = subjects;
+    entries.push(entry);
+  }
+  return entries;
+}
+
 // Přítomné front matter klíče bloku — pro deterministický inventář polí,
 // která kanonické schéma nemá (transparentní „co se nepřenáší" v reportu).
 const blockKeys = (block) => [...block.matchAll(/^([a-z_]+)\s*=/gm)].map((m) => m[1]);
@@ -256,7 +292,12 @@ export async function migrate(options = {}) {
     if (authRecords.length) record.authorization = { records: authRecords };
     const seoType = str(extraB, "seo_type");
     if (seoType) record.seo = { seoType };
-    if (idx.body) record.contentBlocks = mdBlocks(idx.body);
+    const timelineEntries = readTimelineEntries(idx, err);
+    const dossierBlocks = [
+      ...mdBlocks(idx.body),
+      ...(timelineEntries.length ? [{ type: "timeline", entries: timelineEntries }] : []),
+    ];
+    if (dossierBlocks.length) record.contentBlocks = dossierBlocks;
     if (d.dossierType === "aggregate") record.aggregates = d.sourceDossiers;
     emit(`${slug}/dossier.json`, record, [`data/dossiers.toml#${slug}`, idx.relPath]);
 
@@ -709,6 +750,27 @@ export function runParityChecks(root = REPO_ROOT) {
     expectedFiles.add(`${slug}/dossier.json`);
     expect(existsSync(join(outRoot, slug, "dossier.json")), `${slug}/dossier.json chybí`);
 
+    // Timeline parita: počet entries v timeline contentBlocku == počet
+    // [[extra.timeline]] bloků v _index.md, date+title byte-verně.
+    const idx = readIndexPage(root, slug);
+    if (idx && existsSync(join(outRoot, slug, "dossier.json"))) {
+      const srcBlocks = sectionBodies(idx.secs, "extra.timeline");
+      const rec = readJson(`${slug}/dossier.json`);
+      const timelineBlock = (rec.contentBlocks ?? []).find((b) => b.type === "timeline");
+      const written = timelineBlock ? timelineBlock.entries : [];
+      expect(
+        written.length === srcBlocks.length,
+        `${slug}/dossier.json: timeline má ${written.length} entries, zdroj ${srcBlocks.length} [[extra.timeline]] bloků`,
+      );
+      if (written.length === srcBlocks.length) {
+        sameList(
+          written.map((e) => [e.date, e.title]),
+          srcBlocks.map((b) => [str(b, "date"), str(b, "title")]),
+          `${slug}/dossier.json: timeline date/title se liší od [[extra.timeline]] bloků`,
+        );
+      }
+    }
+
     for (const page of readRecordPages(root, "content/dossiers", slug, "claims")) {
       totals.claim++;
       const id = str(page.block, "clm_id");
@@ -938,10 +1000,14 @@ ${perDossierRows}
    \`updateGlobalId\`/\`updateIdentifier\` v schemas/canonical/
    (zdokumentováno přímo v \`$comment\` schémat). Pole \`date\` zůstává
    čisté datum.
-8. **\`[[extra.timeline]]\` bloky \`_index.md\` se nemigrují** — timeline
-   je prezentační projekce kauz (anchor + dot třída) bez vlastního
-   kanonického typu; zůstává v content/ a rozhodne o ní fáze E–G
-   (stejně jako o stránkovém title a statových dlaždicích).
+8. **\`[[extra.timeline]]\` bloky \`_index.md\` se migrují lossless**
+   (fáze E prerekvizita): každý blok = jeden entry
+   \`{ date, title, anchor?, dot?, subjects? }\` v druhém contentBlocku
+   \`{ "type": "timeline", "entries": [...] }\` dossier.json — pořadí
+   vstupu zachováno, žádná deduplikace, \`date\` byte-verně (včetně
+   českého volného formátu, viz \`$comment\` timelineEntry
+   v schemas/canonical/_defs.schema.json). Parita počtu entries i
+   date/title je součást runParityChecks.
 
 ## Known-baseline-violations (grandfathered debt)
 

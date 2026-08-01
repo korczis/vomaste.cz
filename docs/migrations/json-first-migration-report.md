@@ -89,10 +89,14 @@ autoritou až do fáze H.
    `updateGlobalId`/`updateIdentifier` v schemas/canonical/
    (zdokumentováno přímo v `$comment` schémat). Pole `date` zůstává
    čisté datum.
-8. **`[[extra.timeline]]` bloky `_index.md` se nemigrují** — timeline
-   je prezentační projekce kauz (anchor + dot třída) bez vlastního
-   kanonického typu; zůstává v content/ a rozhodne o ní fáze E–G
-   (stejně jako o stránkovém title a statových dlaždicích).
+8. **`[[extra.timeline]]` bloky `_index.md` se migrují lossless**
+   (fáze E prerekvizita): každý blok = jeden entry
+   `{ date, title, anchor?, dot?, subjects? }` v druhém contentBlocku
+   `{ "type": "timeline", "entries": [...] }` dossier.json — pořadí
+   vstupu zachováno, žádná deduplikace, `date` byte-verně (včetně
+   českého volného formátu, viz `$comment` timelineEntry
+   v schemas/canonical/_defs.schema.json). Parita počtu entries i
+   date/title je součást runParityChecks.
 
 ## Known-baseline-violations (grandfathered debt)
 
