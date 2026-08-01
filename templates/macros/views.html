@@ -1,0 +1,166 @@
+{#- Přepínatelné projekce nad jednou kolekcí (coop T-032).
+    =======================================================
+
+    Adresář dossierů dostal tři pohledy v T-027 a ukázalo se, že je to
+    správný tvar i pro registry: tabulka pro analýzu, kompaktní seznam pro
+    mobil, dlaždice pro rychlé procházení. Bez tohohle makra by ale každý
+    registr měl vlastní kopii přepínače a ty by se postupně rozešly —
+    jiné popisky, jiné pořadí, jiná přístupnost.
+
+    Chování (přepínání, filtrování, řazení, URL stav, hash navigace)
+    vlastní JEDNA komponenta: advancedTable() v assets/js/modules/
+    table-filter.js. Tohle makro vypisuje jen obal a ovládání; markup
+    jednotlivých projekcí zůstává u volajícího, protože tvrzení se
+    vykresluje jinak než zdroj a sjednotit to by znamenalo ztratit
+    význam.
+
+    KONTRAKT PRO VOLAJÍCÍHO
+      1. obal:      {{ views::open(id=..., ...) }}
+      2. projekce:  <div data-view="table" …> … </div>  (a list, grid)
+      3. záznamy:   každý nese data-record-key="<id>"
+      4. konec:     {{ views::close() }}
+
+    Bez JavaScriptu zůstane viditelná výchozí projekce; ostatní mají
+    `hidden`, takže do nich nevstupuje ani tabulátor, ani odečítač.
+-#}
+
+{%- macro open(id, title, count="", default_view="table", allowed_views="", url_state=true, search_label="Hledat", sort_options="", facets="", columns="", export_name="", inspector=false, select_facets="") -%}
+{%- set views = allowed_views | default(value=["table", "list", "grid"]) -%}
+{%- if views | length == 0 %}{% set views = ["table", "list", "grid"] %}{% endif -%}
+{%- set facet_attrs = [] -%}
+{%- for sf in select_facets %}{% set_global facet_attrs = facet_attrs | concat(with=sf | split(pat="::") | first) %}{% endfor -%}
+<section id="{{ id }}" aria-labelledby="{{ id }}-heading"
+  x-data="advancedTable()"
+  data-dossier-directory
+  data-default-view="{{ default_view }}"
+  data-allowed-views="{{ views | join(sep=',') }}"
+  {% if url_state %}data-url-state="true"{% endif %}
+  {% if export_name %}data-export-name="{{ export_name }}"{% endif %}
+  {#- data-inspector patří na KOŘEN komponenty, tedy sem: dřív seděl
+      na obalu tabulkového makra, ale v režimu projekcí je kořenem
+      tahle sekce. Komponenta podle něj zapíná Esc, zápis ?inspect=
+      do adresy a obnovení panelu ze sdíleného odkazu. -#}
+  {% if inspector %}data-inspector="true"{% endif %}
+  {#- data-select-facets musí být na KOŘENI komponenty. Když seděl na
+      obalu vnitřní tabulky, komponenta ho nenašla a selektory se
+      vykreslily prázdné — ovládací prvek, který nic nenabízí a nic
+      nefiltruje. -#}
+  {% if facet_attrs | length > 0 %}data-select-facets="{{ facet_attrs | join(sep='|') }}"{% endif %}
+  class="scroll-mt-24">
+
+  <div class="mb-3 flex flex-wrap items-end justify-between gap-3">
+    <h2 id="{{ id }}-heading" class="flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-white/55">
+      {{ title }}
+      {%- if count != "" %}
+      <span class="rounded-full bg-white/5 px-2 py-0.5 font-mono text-[0.65rem] normal-case text-white/55"
+        x-text="visible + ' / ' + total" aria-live="polite">{{ count }}</span>
+      {%- endif %}
+    </h2>
+
+    {#- Přepínač: role="group" s aria-pressed, ne tabs — projekce nejsou
+        panely jednoho obsahu, ale tři podoby téhož seznamu. Popisky jsou
+        textové; ikona by nesla význam jen pro vidoucí. -#}
+    <div class="flex flex-wrap items-center gap-2" x-cloak>
+      <label class="flex items-center gap-2">
+        <span class="sr-only">{{ search_label }}</span>
+        <input type="search" x-model="search" @input="apply()" class="src-filter-input w-40 sm:w-52"
+          placeholder="{{ search_label }}…" autocomplete="off">
+      </label>
+      {%- if sort_options %}
+      <label class="flex items-center gap-1">
+        <span class="sr-only">Řadit podle</span>
+        <select x-model="sortKey" @change="sortBy(sortKey)" class="src-filter-select">
+          <option value="">Výchozí pořadí</option>
+          {%- for o in sort_options %}{% set op = o | split(pat="::") %}
+          <option value="{{ op.0 }}">{{ op.1 }}</option>
+          {%- endfor %}
+        </select>
+      </label>
+      {%- endif %}
+      <div role="group" aria-label="Zobrazení: {{ title }}" class="inline-flex overflow-hidden rounded-lg border border-white/15">
+        {%- for v in ["table::Tabulka", "list::Seznam", "grid::Dlaždice"] %}
+        {%- set vp = v | split(pat="::") %}
+        {%- if vp.0 in views %}
+        <button type="button" @click="setView('{{ vp.0 }}')"
+          :aria-pressed="view === '{{ vp.0 }}' ? 'true' : 'false'"
+          :class="view === '{{ vp.0 }}' ? 'bg-[#f3e5c0]/15 text-[#f3e5c0]' : 'text-white/60 hover:bg-white/5 hover:text-white'"
+          class="min-h-9 px-3 text-xs font-medium transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#f3e5c0]">{{ vp.1 }}</button>
+        {%- endif %}
+        {%- endfor %}
+      </div>
+      {%- for sf in select_facets %}{% set sp = sf | split(pat="::") %}
+      <label class="flex items-center gap-1">
+        <span class="sr-only">{{ sp.1 }}</span>
+        <select x-model="facetValues['{{ sp.0 }}']" @change="apply()" class="src-filter-select">
+          <option value="">{{ sp.1 }}: vše</option>
+          <template x-for="v in facetOptions['{{ sp.0 }}'] || []" :key="v"><option :value="v" x-text="v"></option></template>
+        </select>
+      </label>
+      {%- endfor %}
+      {%- if columns | length > 0 %}
+      {#- Viditelnost sloupců a export patří do společné lišty, ne do
+          hlavičky tabulkového makra: v režimu projekcí je tabulka jen
+          jedním ze tří pohledů, ale ovládání má být na jednom místě.
+          Dropdown obsluhuje Flowbite, ne vlastní otevírací stav. -#}
+      <button type="button" data-dropdown-toggle="{{ id }}-columns"
+        class="inline-flex min-h-9 items-center gap-1.5 rounded-lg border border-white/15 px-2.5 text-xs text-white/60 transition-colors hover:border-white/35 hover:text-white">Sloupce</button>
+      <div id="{{ id }}-columns" class="z-20 hidden w-52 rounded-lg border border-white/10 bg-[#0b0f14] p-2 shadow-lg">
+        <p class="px-2 pb-1 text-[0.65rem] uppercase tracking-wide text-white/55">Zobrazené sloupce</p>
+        <ul class="space-y-0.5 text-sm text-white/70">
+          {%- for col in columns %}
+          <li>
+            <label class="flex cursor-pointer items-center gap-2 rounded px-2 py-1 hover:bg-white/5">
+              <input type="checkbox" checked @change="toggleColumn({{ loop.index0 }})"
+                class="h-3.5 w-3.5 rounded border-white/25 bg-transparent text-[#f3e5c0] focus:ring-[#f3e5c0]/40">
+              {{ col }}
+            </label>
+          </li>
+          {%- endfor %}
+        </ul>
+      </div>
+      {%- endif %}
+      {%- if export_name %}
+      <button type="button" data-dropdown-toggle="{{ id }}-export"
+        class="inline-flex min-h-9 items-center gap-1.5 rounded-lg border border-white/15 px-2.5 text-xs text-white/60 transition-colors hover:border-white/35 hover:text-white">Export</button>
+      <div id="{{ id }}-export" class="z-20 hidden w-56 rounded-lg border border-white/10 bg-[#0b0f14] p-2 text-sm shadow-lg">
+        <button type="button" @click="exportCsv()" class="block w-full rounded px-2 py-1.5 text-left text-white/70 hover:bg-white/5 hover:text-white">CSV (tabulkový procesor)</button>
+        <button type="button" @click="exportJson()" class="block w-full rounded px-2 py-1.5 text-left text-white/70 hover:bg-white/5 hover:text-white">JSON</button>
+        <p class="px-2 pt-1 text-[0.65rem] leading-snug text-white/55">Stáhne jen to, co je právě vidět.</p>
+      </div>
+      {%- endif %}
+      <button type="button" @click="reset()" x-show="filtered" class="src-filter-reset">Zrušit</button>
+    </div>
+  </div>
+
+  {%- if facets | length > 0 %}
+  {#- Rychlé filtry jedním kliknutím. Řádek se pozná podle data-facet a
+      filtruje se napříč VŠEMI projekcemi najednou, takže přepnutí pohledu
+      ukáže tentýž výřez. -#}
+  <div class="mb-3 flex flex-wrap items-center gap-1.5" role="group" aria-label="Filtr: {{ title }}" x-cloak>
+    {%- for f in facets %}{% set fp = f | split(pat="::") %}
+    <button type="button" @click="setFacet('{{ fp.0 }}')"
+      :aria-pressed="facet === '{{ fp.0 }}' ? 'true' : 'false'"
+      :class="facet === '{{ fp.0 }}' ? 'border-[#f3e5c0]/60 bg-[#f3e5c0]/10 text-[#f3e5c0]' : 'border-white/15 text-white/60 hover:border-white/35 hover:text-white'"
+      class="inline-flex min-h-8 items-center rounded-lg border px-2.5 text-xs transition-colors">{{ fp.1 }}</button>
+    {%- endfor %}
+  </div>
+  {%- endif %}
+{%- endmacro open -%}
+
+{%- macro close(empty_text="Žádný záznam neodpovídá zadanému filtru.", footer="") -%}
+  <p x-show="visible === 0" x-cloak class="rounded-lg border border-white/10 px-3 py-6 text-center text-sm text-white/55">{{ empty_text }}</p>
+  {%- if footer %}
+  <p class="mt-2 text-xs text-white/55">{{ footer }}</p>
+  {%- endif %}
+</section>
+{%- endmacro close -%}
+
+{#- Obal jedné projekce. `hidden` řeší Alpine přes :hidden; statické
+    hidden v HTML zajišťuje, že bez JavaScriptu je vidět právě jedna. -#}
+{%- macro projection(name, default_view, extra_class="") -%}
+<div data-view="{{ name }}" :hidden="view !== '{{ name }}'"{% if name != default_view %} hidden{% endif %}{% if extra_class %} class="{{ extra_class }}"{% endif %}>
+{%- endmacro projection -%}
+
+{%- macro projection_end() -%}
+</div>
+{%- endmacro projection_end -%}

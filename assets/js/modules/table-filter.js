@@ -564,6 +564,7 @@ export function registerTableFilter() {
         if (!this.sortKey) {
           // Zpět na výchozí abecední pořadí z buildu.
           this.reorderProjections(keys);
+          this.markSortedHeader();
           return;
         }
         if (index !== undefined) {
@@ -576,6 +577,10 @@ export function registerTableFilter() {
           keys.sort((a, b) => a.localeCompare(b, "cs"));
         }
         this.reorderProjections(keys);
+        // I v režimu projekcí musí hlavička ohlásit stav řazení. Bez toho
+        // se seznam sice seřadí, ale odečítač obrazovky se o tom nedozví —
+        // informace by byla dostupná jen vidoucím.
+        this.markSortedHeader();
       },
 
       // Přeskládá každou projekci v jejím vlastním kontejneru podle
@@ -634,9 +639,19 @@ export function registerTableFilter() {
       // výsledek než ten, který uživatel právě viděl.
       applyDirectory() {
         const q = normalize(this.search);
+        const facet = this.facet;
+        const selects = this.selectFacets;
+        const values = this.facetValues;
         let shown = 0;
         for (const [, nodes] of this.records) {
-          const match = !q || nodes.some((n) => (n.dataset.search || "").indexOf(q) !== -1);
+          // Fasety se musí uplatnit i tady. Dřív se v režimu projekcí
+          // filtrovalo jen podle textu, takže se čipy vykreslily a nic
+          // nedělaly — což je horší, než kdyby chyběly: ovládací prvek,
+          // který nic neudělá, tvrdí uživateli nepravdu.
+          const match =
+            (!q || nodes.some((n) => (n.dataset.search || "").indexOf(q) !== -1)) &&
+            (!facet || nodes.some((n) => n.dataset.facet === facet)) &&
+            selects.every((attr) => !values[attr] || nodes.some((n) => n.dataset[attr] === values[attr]));
           nodes.forEach((n) => {
             n.hidden = !match;
           });

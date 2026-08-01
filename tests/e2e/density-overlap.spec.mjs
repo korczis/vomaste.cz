@@ -33,10 +33,10 @@ const CIL_ZAZNAMU_NA_OBRAZOVKU = 4;
 // původní zeď karet na úvodní stránce. Příčinou nebyla struktura, ale
 // zalamování dlouhého textu v indexu; plný text zůstává na detailu.
 const MINIMUM_REGISTRU = {
-  "/dossiers/andrej-babis/claims/": 6.0,
-  "/dossiers/andrej-babis/sources/": 5.0,
-  "/dossiers/andrej-babis/gaps/": 4.5,
-  "/dossiers/andrej-babis/cases/": 4.0,
+  "/dossiers/andrej-babis/claims/": 4.5,
+  "/dossiers/andrej-babis/sources/": 5.5,
+  "/dossiers/andrej-babis/gaps/": 5.0,
+  "/dossiers/andrej-babis/cases/": 3.5,
 };
 
 test.describe("hustota na mobilu", () => {
@@ -64,9 +64,16 @@ test.describe("hustota na mobilu", () => {
       await page.goto(url);
       await page.waitForTimeout(300);
       const { rozestup, viewport } = await page.evaluate(() => {
-        const rows = [...document.querySelectorAll("tbody tr")].filter((r) => !r.hidden);
-        const a = rows[0]?.getBoundingClientRect();
-        const b = rows[1]?.getBoundingClientRect();
+        // Měří se PRÁVĚ VIDITELNÁ projekce, ne tbody: registry mají nově
+        // tři pohledy a na mobilu je výchozí seznam, takže řádky tabulky
+        // jsou skryté. Měřit je by znamenalo měřit něco, co uživatel
+        // nevidí — a test by hlídal špatnou věc.
+        const root = document.querySelector("[data-dossier-directory]");
+        const items = root
+          ? [...root.querySelectorAll("[data-view]:not([hidden]) [data-record-key]")]
+          : [...document.querySelectorAll("tbody tr")].filter((r) => !r.hidden);
+        const a = items[0]?.getBoundingClientRect();
+        const b = items[1]?.getBoundingClientRect();
         return { rozestup: a && b ? b.y - a.y : 0, viewport: window.innerHeight };
       });
       expect(rozestup).toBeGreaterThan(0);
@@ -119,10 +126,10 @@ test.describe("překrytí", () => {
     // Nejčastější podoba překrytí: lepivá hlavička sedí na prvním řádku,
     // takže uživatel nevidí záznam, ke kterému ho odkaz dovedl.
     test.skip(!isMobile, "překrytí hrozí hlavně na úzkém displeji");
-    await page.goto("/dossiers/andrej-babis/claims/");
+    await page.goto("/dossiers/andrej-babis/claims/?view=table");
     await page.waitForTimeout(300);
     const zakryto = await page.evaluate(() => {
-      const row = document.querySelector("#claims-registry tbody tr");
+      const row = document.querySelector("#claims-registry-table tbody tr");
       if (!row) return false;
       const r = row.getBoundingClientRect();
       if (r.top < 0 || r.top > window.innerHeight) return false;

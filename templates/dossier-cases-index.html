@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% import "macros/ui.html" as ui %}
 {% import "macros/table.html" as table %}
+{% import "macros/views.html" as views %}
 
 {% block content %}
 <main class="mx-auto max-w-6xl px-6 py-12 text-white">
@@ -16,19 +17,29 @@
     {{ ui::stat_tile(value=section.pages | length, label="Kauzy celkem") }}
   </div>
 
-  {{ table::advanced_table(
+  {{ views::open(
     id="cases-registry",
+    title="Registr kauz",
+    count=section.pages | length,
+    default_view="table",
+    search_label="Hledat v kauzách",
+    sort_options=["id::ID", "status::Stav", "period::Období"],
+    columns=["ID", "Stav", "Kauza", "Období"],
+    export_name="kauzy") }}
+
+  {{ views::projection(name="table", default_view="table") }}
+  {{ table::advanced_table(
+    id="cases-registry-table",
     caption="Registr kauz",
     record_type="case",
     count=section.pages | length,
     columns=["ID", "Stav", "Kauza", "Období"],
     sort_keys=["id", "status", "", "period"],
-    select_facets=["status::Stav"],
     searchable=true,
     url_state=true,
     export_name="kauzy") }}
     {% for p in section.pages %}
-    <tr data-status="{{ p.extra.label }}">
+    <tr data-record-key="{{ p.extra.case_id }}" data-status="{{ p.extra.label }}" data-facet="{{ p.extra.label }}" id="cases-registry-table-{{ p.extra.case_id | lower }}">
       <td class="whitespace-nowrap p-3 align-top">
         <a href="{{ p.permalink | safe }}" class="font-mono text-xs text-[#f3e5c0] hover:underline">{{ p.extra.case_id }}</a>
       </td>
@@ -43,6 +54,42 @@
     </tr>
     {% endfor %}
   {{ table::advanced_table_end(empty_text="Žádná kauza neodpovídá zadanému filtru.") }}
+  {{ views::projection_end() }}
+
+  {{ views::projection(name="list", default_view="table") }}
+    <ul class="divide-y divide-white/10 overflow-hidden rounded-lg border border-white/10 bg-white/[0.03]">
+      {%- for p in section.pages %}
+      <li data-record-key="{{ p.extra.case_id }}" data-facet="{{ p.extra.label }}" id="cases-registry-list-{{ p.extra.case_id | lower }}" class="p-3">
+        <div class="flex flex-wrap items-baseline gap-x-2 gap-y-1">
+          <a href="{{ p.permalink | safe }}" class="font-mono text-xs text-[#f3e5c0] no-underline hover:underline">{{ p.extra.case_id }}</a>
+          <span class="status-badge {{ p.extra.status }}">{{ p.extra.label }}</span>
+          <span class="ml-auto font-mono text-[0.65rem] text-white/55">{{ p.extra.period }}</span>
+        </div>
+        <a href="{{ p.permalink | safe }}" class="mt-1 block font-semibold text-white no-underline hover:underline">{{ p.title }}</a>
+        <p class="mt-0.5 line-clamp-2 text-xs leading-snug text-white/60">{{ p.extra.summary }}</p>
+      </li>
+      {%- endfor %}
+    </ul>
+  {{ views::projection_end() }}
+
+  {{ views::projection(name="grid", default_view="table") }}
+    <div class="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+      {%- for p in section.pages %}
+      <article data-record-key="{{ p.extra.case_id }}" data-facet="{{ p.extra.label }}" id="cases-registry-grid-{{ p.extra.case_id | lower }}"
+        class="rounded-lg border border-white/10 bg-white/[0.03] p-3">
+        <div class="flex flex-wrap items-baseline justify-between gap-2">
+          <a href="{{ p.permalink | safe }}" class="font-mono text-xs text-[#f3e5c0] no-underline hover:underline">{{ p.extra.case_id }}</a>
+          <span class="status-badge {{ p.extra.status }}">{{ p.extra.label }}</span>
+        </div>
+        <a href="{{ p.permalink | safe }}" class="mt-1.5 block text-sm font-semibold text-white no-underline hover:underline">{{ p.title }}</a>
+        <p class="mt-1 line-clamp-3 text-xs leading-snug text-white/60">{{ p.extra.summary }}</p>
+      </article>
+      {%- endfor %}
+    </div>
+  {{ views::projection_end() }}
+
+  {{ views::close(empty_text="Žádná kauza neodpovídá zadanému filtru.") }}
+
 
   {{ ui::back_link_footer(url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"), label="Zpět na celý dossier") }}
 </main>

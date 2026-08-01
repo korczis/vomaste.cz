@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% import "macros/ui.html" as ui %}
 {% import "macros/table.html" as table %}
+{% import "macros/views.html" as views %}
 
 {% block content %}
 <main class="mx-auto max-w-6xl px-6 py-12 text-white">
@@ -24,60 +25,95 @@
     {{ ui::stat_tile(value=quotes | length, label="Citace") }}
   </div>
 
-  {#- Hustá tabulka místo karetní mřížky: u dossieru s desítkami tvrzení
-      karty nutily scrollovat a neuměly ani třídit, ani filtrovat. Sloupce,
-      řazení, faseta a URL stav jdou přes sdílené makro, ne přes vlastní
-      komponentu — těží z toho i ostatní tabulky v repozitáři. -#}
-  {{ table::advanced_table(
+  {#- Tři projekce nad jednou kolekcí, stejně jako adresář dossierů.
+      Přepínač, hledání, řazení i URL stav vlastní sdílené makro
+      macros/views.html a komponenta advancedTable(); markup projekcí
+      zůstává tady, protože tvrzení se vykresluje jinak než zdroj a
+      sjednotit to by znamenalo ztratit význam. -#}
+  {{ views::open(
     id="claims-registry",
-    caption="Registr tvrzení",
-    record_type="claim",
+    title="Registr tvrzení",
     count=section.pages | length,
+    default_view="table",
+    search_label="Hledat v tvrzeních",
+    sort_options=["id::ID", "status::Stav", "sources::Počet zdrojů"],
     columns=["ID", "Stav", "Tvrzení", "Zdroje"],
-    sort_keys=["id", "status", "", "sources"],
+    export_name="tvrzeni",
+    inspector=true,
     facets=[
       "status-corroborated::Corroborated",
       "status-single::1 zdroj",
       "status-disputed::Sporné",
       "status-quote::Citace",
-    ],
-    searchable=true,
-    url_state=true,
-    export_name="tvrzeni",
-    inspector=true) }}
-    {% for p in section.pages %}
-    <tr data-facet="{{ p.extra.status }}" data-inspect-id="{{ p.extra.clm_id }}">
-      {#- Zůstává to ODKAZ na kanonickou stránku; JS jen zachytí kliknutí a
-          místo odchodu otevře detail vedle seznamu. Bez skriptu tedy vede
-          normální navigace a nikde neleží ovládací prvek, který nic nedělá —
-          stejný důvod, proč se řadicí hlavičky povyšují na tlačítka až v JS.
-          Prostřední tlačítko myši i Cmd+klik dál otevřou stránku v novém
-          panelu, protože @click.prevent na ně nesahá. -#}
-      <td class="whitespace-nowrap p-3 align-top">
-        <a href="{{ p.permalink | safe }}"
-          @click.prevent="openInspector('{{ p.extra.clm_id }}')"
-          :aria-expanded="inspected === '{{ p.extra.clm_id }}' ? 'true' : 'false'"
-          class="font-mono text-xs text-[#f3e5c0] underline decoration-white/30 underline-offset-2 transition-colors hover:text-white">{{ p.extra.clm_id }}</a>
-      </td>
-      <td class="whitespace-nowrap p-3 align-top">
-        <span class="status-badge {{ p.extra.status }}">{{ p.extra.status_label }}</span>
-      </td>
-      <td class="p-3 align-top text-white/75">
-        <a href="{{ p.permalink | safe }}" class="line-clamp-3 text-white/75 no-underline hover:text-white hover:underline sm:line-clamp-none">{{ p.extra.summary }}</a>
-      </td>
-      {#- data-sort-value nese počet, ne vypsané identifikátory: řadit se má
-          podle míry doložení, ne podle abecedy prvního zdroje. -#}
-      <td class="p-3 align-top" data-sort-value="{{ p.extra.sources | length }}">
-        <span class="flex flex-wrap gap-1">
-        {%- for s in p.extra.sources %}<span class="rounded bg-white/5 px-1.5 py-0.5 font-mono text-[0.6rem] text-white/50">{{ s }}</span>{% endfor %}
-        </span>
-      </td>
-    </tr>
-    {% endfor %}
-  {{ table::advanced_table_end(
-    footer="Řazení, filtr i otevřený detail se promítají do adresy — výřez dat jde poslat odkazem.",
+    ]) }}
+
+  {{ views::projection(name="table", default_view="table") }}
+    {{ table::advanced_table(
+      id="claims-registry-table",
+      caption="Registr tvrzení",
+      record_type="claim",
+      columns=["ID", "Stav", "Tvrzení", "Zdroje"],
+      sort_keys=["id", "status", "", "sources"]) }}
+      {%- for p in section.pages %}
+      <tr data-record-key="{{ p.extra.clm_id }}" data-facet="{{ p.extra.status }}" data-inspect-id="{{ p.extra.clm_id }}" id="claims-registry-table-{{ p.extra.clm_id | lower }}">
+        <td class="whitespace-nowrap p-3 align-top" data-sort-value="{{ p.extra.clm_id }}">
+          <a href="{{ p.permalink | safe }}" @click.prevent="openInspector('{{ p.extra.clm_id }}')"
+            :aria-expanded="inspected === '{{ p.extra.clm_id }}' ? 'true' : 'false'"
+            class="font-mono text-xs text-[#f3e5c0] underline decoration-white/30 underline-offset-2 transition-colors hover:text-white">{{ p.extra.clm_id }}</a>
+        </td>
+        <td class="whitespace-nowrap p-3 align-top" data-sort-value="{{ p.extra.status_label }}">
+          <span class="status-badge {{ p.extra.status }}">{{ p.extra.status_label }}</span>
+        </td>
+        <td class="p-3 align-top text-white/75">
+          <a href="{{ p.permalink | safe }}" class="line-clamp-3 text-white/75 no-underline hover:text-white hover:underline sm:line-clamp-none">{{ p.extra.summary }}</a>
+        </td>
+        <td class="p-3 align-top" data-sort-value="{{ p.extra.sources | length }}">
+          <span class="flex flex-wrap gap-1">
+          {%- for s in p.extra.sources %}<span class="rounded bg-white/5 px-1.5 py-0.5 font-mono text-[0.6rem] text-white/55">{{ s }}</span>{% endfor %}
+          </span>
+        </td>
+      </tr>
+      {%- endfor %}
+    {{ table::advanced_table_end(inspector=true) }}
+  {{ views::projection_end() }}
+
+  {{ views::projection(name="list", default_view="table") }}
+    <ul class="divide-y divide-white/10 overflow-hidden rounded-lg border border-white/10 bg-white/[0.03]">
+      {%- for p in section.pages %}
+      <li data-record-key="{{ p.extra.clm_id }}" data-facet="{{ p.extra.status }}" id="claims-registry-list-{{ p.extra.clm_id | lower }}" class="p-3">
+        <div class="flex flex-wrap items-baseline gap-x-2 gap-y-1">
+          <a href="{{ p.permalink | safe }}" class="font-mono text-xs text-[#f3e5c0] no-underline hover:underline">{{ p.extra.clm_id }}</a>
+          <span class="status-badge {{ p.extra.status }}">{{ p.extra.status_label }}</span>
+        </div>
+        <a href="{{ p.permalink | safe }}" class="mt-1 line-clamp-3 text-sm leading-snug text-white/75 no-underline hover:text-white">{{ p.extra.summary }}</a>
+        {%- if p.extra.sources %}
+        <p class="mt-1 flex flex-wrap gap-1">
+          {%- for s in p.extra.sources %}<span class="rounded bg-white/5 px-1.5 py-0.5 font-mono text-[0.6rem] text-white/55">{{ s }}</span>{% endfor %}
+        </p>
+        {%- endif %}
+      </li>
+      {%- endfor %}
+    </ul>
+  {{ views::projection_end() }}
+
+  {{ views::projection(name="grid", default_view="table") }}
+    <div class="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+      {%- for p in section.pages %}
+      <article data-record-key="{{ p.extra.clm_id }}" data-facet="{{ p.extra.status }}" id="claims-registry-grid-{{ p.extra.clm_id | lower }}"
+        class="rounded-lg border border-white/10 bg-white/[0.03] p-3">
+        <div class="flex flex-wrap items-baseline justify-between gap-2">
+          <a href="{{ p.permalink | safe }}" class="font-mono text-xs text-[#f3e5c0] no-underline hover:underline">{{ p.extra.clm_id }}</a>
+          <span class="status-badge {{ p.extra.status }}">{{ p.extra.status_label }}</span>
+        </div>
+        <a href="{{ p.permalink | safe }}" class="mt-1.5 line-clamp-4 block text-sm leading-snug text-white/75 no-underline hover:text-white">{{ p.extra.summary }}</a>
+      </article>
+      {%- endfor %}
+    </div>
+  {{ views::projection_end() }}
+
+  {{ views::close(
     empty_text="Žádné tvrzení neodpovídá zadanému filtru.",
-    inspector=true) }}
+    footer="Pohled, řazení i filtr se promítají do adresy — výřez dat jde poslat odkazem.") }}
 
   {{ ui::back_link_footer(url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"), label="Zpět na celý dossier") }}
 </main>

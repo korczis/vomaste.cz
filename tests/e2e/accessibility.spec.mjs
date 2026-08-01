@@ -50,8 +50,10 @@ test("řadicí tlačítko hlásí odečítači stav řazení", async ({ page }) 
   // aria-sort je jediné, co odečítač o řazení ohlásí. Když se sloupec
   // řadí vizuálně, ale atribut se nezmění, je informace dostupná jen
   // vidoucím — proto je to test, ne poznámka v kódu.
-  await page.goto("/dossiers/andrej-babis/claims/");
-  const th = page.locator('#claims-registry thead th[data-sort-key="id"]');
+  // ?view=table: registry mají tři projekce a na mobilu je výchozí
+  // seznam, takže tabulka by byla skrytá.
+  await page.goto("/dossiers/andrej-babis/claims/?view=table");
+  const th = page.locator('#claims-registry-table thead th[data-sort-key="id"]');
   await expect(th).toHaveAttribute("aria-sort", "none");
   await th.locator("button").click();
   await expect(th).toHaveAttribute("aria-sort", "ascending");

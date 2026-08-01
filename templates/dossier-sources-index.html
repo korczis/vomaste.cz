@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% import "macros/ui.html" as ui %}
 {% import "macros/table.html" as table %}
+{% import "macros/views.html" as views %}
 
 {% block content %}
 <main class="mx-auto max-w-6xl px-6 py-12 text-white">
@@ -43,19 +44,30 @@
       takže se dvě implementace nemůžou rozejít. Oproti kartám navíc
       přibylo řazení a sdílitelná adresa; počet zobrazených nese badge
       v hlavičce tabulky, ne samostatná dlaždice. -#}
-  {{ table::advanced_table(
+  {{ views::open(
     id="sources-registry",
+    title="Registr zdrojů",
+    count=section.pages | length,
+    default_view="table",
+    search_label="Hledat ve zdrojích",
+    sort_options=["id::ID", "outlet::Vydavatel", "type::Typ", "claims::Podkládá tvrzení"],
+    columns=["ID", "Vydavatel", "Typ", "Rodina", "Popis", "Podkládá"],
+    export_name="zdroje",
+    select_facets=["type::Typ zdroje", "family::Zdrojová rodina"]) }}
+
+  {{ views::projection(name="table", default_view="table") }}
+  {{ table::advanced_table(
+    id="sources-registry-table",
     caption="Registr zdrojů",
     record_type="source",
     count=section.pages | length,
     columns=["ID", "Vydavatel", "Typ", "Rodina", "Popis", "Podkládá"],
     sort_keys=["id", "outlet", "type", "family", "", "claims"],
-    select_facets=["type::Typ zdroje", "family::Zdrojová rodina"],
     searchable=true,
     url_state=true,
     export_name="zdroje") }}
     {% for p in section.pages %}
-    <tr data-type="{{ p.extra.src_type }}" data-family="{{ p.extra.family | default(value='') }}">
+    <tr data-record-key="{{ p.extra.src_id }}" data-type="{{ p.extra.src_type }}" data-family="{{ p.extra.family | default(value='') }}" id="sources-registry-table-{{ p.extra.src_id | lower }}">
       <td class="whitespace-nowrap p-3 align-top">
         <a href="{{ p.permalink | safe }}" class="font-mono text-xs text-[#f3e5c0] hover:underline">{{ p.extra.src_id }}</a>
       </td>
@@ -86,6 +98,42 @@
   {{ table::advanced_table_end(
     footer="Řazení a filtr se promítají do adresy — výřez dat jde poslat odkazem.",
     empty_text="Žádný zdroj neodpovídá zadanému filtru.") }}
+  {{ views::projection_end() }}
+
+  {{ views::projection(name="list", default_view="table") }}
+    <ul class="divide-y divide-white/10 overflow-hidden rounded-lg border border-white/10 bg-white/[0.03]">
+      {%- for p in section.pages %}
+      <li data-record-key="{{ p.extra.src_id }}" data-type="{{ p.extra.src_type }}" data-family="{{ p.extra.family | default(value='') }}" data-facet="{{ p.extra.src_type }}" id="sources-registry-list-{{ p.extra.src_id | lower }}" class="p-3">
+        <div class="flex flex-wrap items-baseline gap-x-2 gap-y-1">
+          <a href="{{ p.permalink | safe }}" class="font-mono text-xs text-[#f3e5c0] no-underline hover:underline">{{ p.extra.src_id }}</a>
+          {% if p.extra.family %}<span class="rounded bg-[#f3e5c0]/10 px-1.5 py-0.5 font-mono text-[0.65rem] text-[#f3e5c0]">{{ p.extra.family }}</span>{% endif %}
+          <span class="ml-auto font-mono text-[0.65rem] text-white/55">{{ p.extra.src_type }}</span>
+        </div>
+        <a href="{{ p.permalink | safe }}" class="mt-1 block font-semibold text-white no-underline hover:underline">{{ p.extra.outlet }}</a>
+        <p class="mt-0.5 line-clamp-2 text-xs leading-snug text-white/60">{{ p.description }}</p>
+      </li>
+      {%- endfor %}
+    </ul>
+  {{ views::projection_end() }}
+
+  {{ views::projection(name="grid", default_view="table") }}
+    <div class="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+      {%- for p in section.pages %}
+      <article data-record-key="{{ p.extra.src_id }}" data-type="{{ p.extra.src_type }}" data-family="{{ p.extra.family | default(value='') }}" data-facet="{{ p.extra.src_type }}" id="sources-registry-grid-{{ p.extra.src_id | lower }}"
+        class="rounded-lg border border-white/10 bg-white/[0.03] p-3">
+        <div class="flex flex-wrap items-baseline justify-between gap-2">
+          <a href="{{ p.permalink | safe }}" class="font-mono text-xs text-[#f3e5c0] no-underline hover:underline">{{ p.extra.src_id }}</a>
+          {% if p.extra.family %}<span class="rounded bg-[#f3e5c0]/10 px-1.5 py-0.5 font-mono text-[0.65rem] text-[#f3e5c0]">{{ p.extra.family }}</span>{% endif %}
+        </div>
+        <a href="{{ p.permalink | safe }}" class="mt-1.5 block text-sm font-semibold text-white no-underline hover:underline">{{ p.extra.outlet }}</a>
+        <p class="mt-1 line-clamp-3 text-xs leading-snug text-white/60">{{ p.description }}</p>
+      </article>
+      {%- endfor %}
+    </div>
+  {{ views::projection_end() }}
+
+  {{ views::close(empty_text="Žádný zdroj neodpovídá zadanému filtru.", footer="Zdroje se stejnou rodinou nejsou dvě nezávislá doložení, ale jedno.") }}
+
 
   {{ ui::back_link_footer(url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"), label="Zpět na celý dossier") }}
 </main>

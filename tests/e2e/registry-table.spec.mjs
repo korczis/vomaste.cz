@@ -10,7 +10,10 @@
 
 import { test, expect } from "./fixtures.mjs";
 
-const REGISTRY = "/dossiers/andrej-babis/claims/";
+// Tabulkové chování se testuje s explicitním ?view=table: registry mají
+// nově tři projekce a na mobilu je výchozí hustý seznam, takže by byla
+// tabulka skrytá a test by čekal na prvek, který uživatel nevidí.
+const REGISTRY = "/dossiers/andrej-babis/claims/?view=table";
 
 test.describe("registr tvrzení", () => {
   test("bez JavaScriptu zůstane čitelná plná tabulka a žádné mrtvé tlačítko", async ({ browser }) => {
@@ -21,30 +24,30 @@ test.describe("registr tvrzení", () => {
     const page = await context.newPage();
     await page.goto(REGISTRY);
 
-    const rows = page.locator("#claims-registry tbody tr");
+    const rows = page.locator("#claims-registry-table tbody tr");
     await expect(rows).toHaveCount(await rows.count());
     expect(await rows.count()).toBeGreaterThan(10);
 
     // Hlavičky jsou bez JS prostý text; tlačítka dodá až komponenta.
-    await expect(page.locator("#claims-registry thead button")).toHaveCount(0);
-    await expect(page.locator("#claims-registry thead th[aria-sort]")).toHaveCount(0);
+    await expect(page.locator("#claims-registry-table thead button")).toHaveCount(0);
+    await expect(page.locator("#claims-registry-table thead th[aria-sort]")).toHaveCount(0);
     await context.close();
   });
 
   test("hlavičky se povýší na tlačítka a řadí", async ({ page }) => {
     await page.goto(REGISTRY);
-    const idHeader = page.locator('#claims-registry thead th[data-sort-key="id"] button');
+    const idHeader = page.locator('#claims-registry-table thead th[data-sort-key="id"] button');
     await expect(idHeader).toBeVisible();
 
-    const firstId = () => page.locator("#claims-registry tbody tr:visible td:first-child").first().innerText();
+    const firstId = () => page.locator("#claims-registry-table tbody tr:visible td:first-child").first().innerText();
     const before = await firstId();
 
     await idHeader.click();
-    await expect(page.locator('#claims-registry thead th[data-sort-key="id"]')).toHaveAttribute("aria-sort", "ascending");
+    await expect(page.locator('#claims-registry-table thead th[data-sort-key="id"]')).toHaveAttribute("aria-sort", "ascending");
     const asc = await firstId();
 
     await idHeader.click();
-    await expect(page.locator('#claims-registry thead th[data-sort-key="id"]')).toHaveAttribute("aria-sort", "descending");
+    await expect(page.locator('#claims-registry-table thead th[data-sort-key="id"]')).toHaveAttribute("aria-sort", "descending");
     const desc = await firstId();
 
     expect(asc).not.toBe(desc);
@@ -55,8 +58,8 @@ test.describe("registr tvrzení", () => {
     // Číselný sloupec má začínat sestupně — u důkazů je zajímavé, co nese
     // největší váhu, ne co má nejmíň zdrojů.
     await page.goto(REGISTRY);
-    await page.locator('#claims-registry thead th[data-sort-key="sources"] button').click();
-    await expect(page.locator('#claims-registry thead th[data-sort-key="sources"]')).toHaveAttribute("aria-sort", "descending");
+    await page.locator('#claims-registry-table thead th[data-sort-key="sources"] button').click();
+    await expect(page.locator('#claims-registry-table thead th[data-sort-key="sources"]')).toHaveAttribute("aria-sort", "descending");
   });
 
   test("hledání ignoruje diakritiku", async ({ page }) => {
@@ -66,17 +69,17 @@ test.describe("registr tvrzení", () => {
     const search = page.locator('#claims-registry, [data-record-type="claim"]').locator('input[type="search"]');
     await search.fill("babis");
     await page.waitForTimeout(200);
-    const visible = page.locator("#claims-registry tbody tr:visible");
+    const visible = page.locator("#claims-registry-table tbody tr:visible");
     expect(await visible.count()).toBeGreaterThan(0);
   });
 
   test("filtr podle stavu skryje ostatní řádky a promítne se do adresy", async ({ page }) => {
     await page.goto(REGISTRY);
-    const total = await page.locator("#claims-registry tbody tr").count();
+    const total = await page.locator("#claims-registry-table tbody tr").count();
     await page.getByRole("button", { name: "Corroborated" }).click();
     await page.waitForTimeout(200);
 
-    const visible = await page.locator("#claims-registry tbody tr:visible").count();
+    const visible = await page.locator("#claims-registry-table tbody tr:visible").count();
     expect(visible).toBeGreaterThan(0);
     expect(visible).toBeLessThan(total);
     expect(page.url()).toContain("f=status-corroborated");
@@ -84,11 +87,11 @@ test.describe("registr tvrzení", () => {
 
   test("sdílený odkaz obnoví stejný výřez", async ({ page }) => {
     // Tohle je celý smysl URL stavu: co jeden najde, druhý uvidí stejně.
-    await page.goto(`${REGISTRY}?f=status-corroborated&sort=sources&dir=desc`);
+    await page.goto(`${REGISTRY}&f=status-corroborated&sort=sources&dir=desc`);
     await page.waitForTimeout(300);
-    await expect(page.locator('#claims-registry thead th[data-sort-key="sources"]')).toHaveAttribute("aria-sort", "descending");
-    const visible = await page.locator("#claims-registry tbody tr:visible").count();
-    const total = await page.locator("#claims-registry tbody tr").count();
+    await expect(page.locator('#claims-registry-table thead th[data-sort-key="sources"]')).toHaveAttribute("aria-sort", "descending");
+    const visible = await page.locator("#claims-registry-table tbody tr:visible").count();
+    const total = await page.locator("#claims-registry-table tbody tr").count();
     expect(visible).toBeGreaterThan(0);
     expect(visible).toBeLessThan(total);
   });
@@ -99,8 +102,8 @@ test.describe("registr tvrzení", () => {
     const checkbox = page.locator("#claims-registry-columns input[type=checkbox]").nth(1);
     await checkbox.uncheck();
     await page.waitForTimeout(150);
-    await expect(page.locator("#claims-registry thead th").nth(1)).toBeHidden();
-    await expect(page.locator("#claims-registry tbody tr").first().locator("td").nth(1)).toBeHidden();
+    await expect(page.locator("#claims-registry-table thead th").nth(1)).toBeHidden();
+    await expect(page.locator("#claims-registry-table tbody tr").first().locator("td").nth(1)).toBeHidden();
   });
 });
 
@@ -123,22 +126,22 @@ test.describe("adresář dossierů", () => {
 });
 
 test.describe("inspektor záznamu", () => {
-  const REG = "/dossiers/andrej-babis/claims/";
+  const REG = "/dossiers/andrej-babis/claims/?view=table";
 
   test("otevře detail vedle seznamu, aniž by seznam zmizel", async ({ page }) => {
     // Celý smysl pohledu master-detail: uživatel neztratí kontext, ve
     // kterém záznam našel. Kdyby se seznam schoval, byla by to jen
     // pomalejší cesta na detailní stránku.
     await page.goto(REG);
-    const rowsBefore = await page.locator("#claims-registry tbody tr:visible").count();
-    await page.locator("#claims-registry tbody a[href*='clm-01']").first().click();
+    const rowsBefore = await page.locator("#claims-registry-table tbody tr:visible").count();
+    await page.locator("#claims-registry-table tbody a[href*='clm-01']").first().click();
     await expect(page.locator('[role="region"]')).toBeVisible();
-    expect(await page.locator("#claims-registry tbody tr:visible").count()).toBe(rowsBefore);
+    expect(await page.locator("#claims-registry-table tbody tr:visible").count()).toBe(rowsBefore);
   });
 
   test("panel ukazuje hodnoty z téhož řádku, ne z druhého zdroje", async ({ page }) => {
     await page.goto(REG);
-    const row = page.locator("#claims-registry tbody tr").first();
+    const row = page.locator("#claims-registry-table tbody tr").first();
     const summary = (await row.locator("td").nth(2).innerText()).trim().replace(/\s+/g, " ");
     await row.locator("a").first().click();
     const panel = page.locator('[role="region"]');
@@ -148,10 +151,10 @@ test.describe("inspektor záznamu", () => {
 
   test("otevřený detail jde poslat odkazem", async ({ page }) => {
     await page.goto(REG);
-    await page.locator("#claims-registry tbody a[href*='clm-02']").first().click();
+    await page.locator("#claims-registry-table tbody a[href*='clm-02']").first().click();
     await expect(page).toHaveURL(/inspect=CLM-02/);
 
-    await page.goto(`${REG}?inspect=CLM-02`);
+    await page.goto(`${REG}&inspect=CLM-02`);
     await expect(page.locator('[role="region"]')).toBeVisible();
     await expect(page.locator('[role="region"] h3')).toHaveText("CLM-02");
   });
@@ -160,7 +163,7 @@ test.describe("inspektor záznamu", () => {
     // Bez vrácení fokusu skončí uživatel na klávesnici na začátku stránky
     // a musí se k místu, kde byl, znovu proklikat.
     await page.goto(REG);
-    await page.locator("#claims-registry tbody a[href*='clm-03']").first().click();
+    await page.locator("#claims-registry-table tbody a[href*='clm-03']").first().click();
     await expect(page.locator('[role="region"]')).toBeVisible();
     await page.keyboard.press("Escape");
     await expect(page.locator('[role="region"]')).toBeHidden();
@@ -174,7 +177,7 @@ test.describe("inspektor záznamu", () => {
     const context = await browser.newContext({ javaScriptEnabled: false });
     const page = await context.newPage();
     await page.goto(REG);
-    await page.locator("#claims-registry tbody a[href*='clm-01']").first().click();
+    await page.locator("#claims-registry-table tbody a[href*='clm-01']").first().click();
     await expect(page).toHaveURL(/\/claims\/clm-01\//);
     await context.close();
   });
