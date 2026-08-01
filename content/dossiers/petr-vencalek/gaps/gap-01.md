@@ -1,6 +1,6 @@
 +++
-title = "GAP-01 — Dary Klubu motoristů, z.s.: autorizované téma, žádný zdroj zatím nedohledán"
-description = "AUTH-2026-08-01-VENCALEK autorizuje i téma darů Petra Vencálka Klubu motoristů, z.s., ale žádný jmenovaný, otevřený zdroj k němu nebyl dohledán."
+title = "GAP-01 — Dary Klubu motoristů, z.s.: prověřeno, žádný doklad v hlavním veřejném registru"
+description = "AUTH-2026-08-01-VENCALEK autorizuje téma darů Petra Vencálka Klubu motoristů, z.s. Hlídač státu (SRC-03) byl 2026-08-01 aktivně prověřen a dar tomuto subjektu nedokládá."
 template = "dossier-gap.html"
 weight = 1
 
@@ -17,14 +17,18 @@ claims = []
 
 Autorizační záznam `AUTH-2026-08-01-VENCALEK` v `AGENTS.md` výslovně
 povoluje pokrýt dary Petra Vencálka Klubu motoristů, z.s. jako téma.
-K datu založení tohoto dossieru ale **žádný jmenovaný, skutečně otevřený
-zdroj** k tomuto tématu nebyl dohledán.
 
-**Proč je to mezera, a ne tvrzení**: bez dohledaného zdroje by jakékoli
-tvrzení o darech bylo domýšlením, ne zaznamenaným faktem — přesně to,
-čemu se tento web vyhýbá. Tato položka existuje, aby autorizovaný, ale
-zatím nedoložený rozsah zůstal viditelně sledovaný, místo aby mlčky
-zmizel.
+**Aktivně prověřeno 2026-08-01**: veřejný rejstřík sponzoringu Hlídač
+státu ([SRC-03](@/dossiers/petr-vencalek/sources/src-03.md)) eviduje u
+Vencálka jeden dar 20 000 Kč, ale **jiné** politické straně — dar Klubu
+motoristů, z.s. ani straně Motoristé sobě v tomto registru evidován
+není.
 
-**Není zjištěním žádným směrem** — ani že dary existují, ani že
-neexistují.
+**Proč to zůstává mezerou, ne tvrzením v žádném směru**: Hlídač státu je
+hlavní, ale ne jediný myslitelný zdroj takového daru (např. nepeněžní
+plnění mimo evidenci, jak už tento web dokládá u jiného dárce —
+[Richard Chlad](@/dossiers/richard-chlad/_index.md#kauza-financovani)).
+Absence záznamu v jednom registru proto **nedokládá, že dar
+neexistuje** — jen že v hlavním veřejném zdroji doložen není. Psát z
+toho tvrzení jedním nebo druhým směrem by bylo přesně to, čemu se tento
+web vyhýbá.

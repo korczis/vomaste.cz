@@ -1,6 +1,6 @@
 +++
 title = "Petr Vencálek"
-description = "Neutrální, zdroji doložený přehled o Petru Vencálkovi — jediném společníkovi a jednateli GMR GAS s.r.o. Autorizovaný rozsah: vlastnictví firmy a její vazba na ukrajinskou GMR GAS UA LLC; dary Klubu motoristů (téma bez dosud dohledaného zdroje)."
+description = "Neutrální, zdroji doložený přehled o Petru Vencálkovi — jediném společníkovi a jednateli GMR GAS s.r.o. Autorizovaný rozsah: vlastnictví firmy a její vazba na ukrajinskou GMR GAS UA LLC; dary Klubu motoristů (prověřeno, bez dokladu v hlavním veřejném registru)."
 template = "entity-dossier.html"
 
 [extra]
@@ -97,17 +97,23 @@ společníků je tu jako záznam vazby, ne jako samostatné téma.
 ## Dary Klubu motoristů, z.s. {#kauza-dary}
 
 Autorizační záznam `AUTH-2026-08-01-VENCALEK` povoluje pokrýt i téma
-darů Vencálka Klubu motoristů, z.s. — **žádný jmenovaný, otevřený zdroj
-k němu ale zatím nebyl dohledán.** Aby se autorizovaný, ale nedoložený
-rozsah neztratil mlčky, eviduje ho
-[GAP-01](@/dossiers/petr-vencalek/gaps/gap-01.md) jako otevřenou položku,
-ne jako tvrzení.
+darů Vencálka Klubu motoristů, z.s. Veřejný rejstřík sponzoringu Hlídač
+státu byl 2026-08-01 aktivně prověřen
+([SRC-03](@/dossiers/petr-vencalek/sources/src-03.md)): eviduje u
+Vencálka jeden dar 20 000 Kč, ale **jiné** politické straně — dar Klubu
+motoristů ani Motoristům sobě v něm doložen není. Absence záznamu v
+jednom registru sama o sobě nedokládá, že dar neexistuje (viz např.
+nepeněžní plnění mimo evidenci u [Richarda
+Chlada](@/dossiers/richard-chlad/_index.md#kauza-financovani)) — proto
+zůstává otevřenou položkou, ne tvrzením v žádném směru, v
+[GAP-01](@/dossiers/petr-vencalek/gaps/gap-01.md).
 
 ## Co tento přehled nezkoumal {#mezery}
 
 Otevřené mezery vede [registr mezer](@/dossiers/petr-vencalek/gaps/_index.md):
-dary Klubu motoristů, z.s. — autorizované téma bez dosud dohledaného
-zdroje ([GAP-01](@/dossiers/petr-vencalek/gaps/gap-01.md)).
+dary Klubu motoristů, z.s. — autorizované téma, prověřené proti Hlídači
+státu bez dokladu, ale absence v jednom registru nedokládá, že dar
+neexistuje ([GAP-01](@/dossiers/petr-vencalek/gaps/gap-01.md)).
 
 ## Metodické omezení
 
