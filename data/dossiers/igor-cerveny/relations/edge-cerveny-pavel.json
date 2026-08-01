@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/relations/edge-cerveny-pavel",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-cerveny-pavel",
+  "relationId": "edge-cerveny-pavel",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/cerveny"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/pavel"
+  },
+  "relationType": "ASSOCIATED_WITH_EVENT",
+  "label": "situaci kolem ministrova střetu zájmů řešil prezident Pavel",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-33"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-26"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-36"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 3,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-038 (provázání grafu) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

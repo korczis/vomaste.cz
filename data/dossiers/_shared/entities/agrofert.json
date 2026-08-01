@@ -15,7 +15,9 @@
   "coverageState": "contextual",
   "dossiers": [
     "andrej-babis",
-    "tunde-bartha"
+    "tunde-bartha",
+    "karel-havlicek",
+    "martin-sebestyan"
   ],
   "routeAliases": [
     "/dossiers/andrej-babis/entities/agrofert/"
@@ -37,7 +39,9 @@
       "edge-agrofert-vodnanska",
       "edge-agrofert-sady",
       "edge-agrofert-navos",
-      "edge-agrofert-preol"
+      "edge-agrofert-preol",
+      "edge-havlicek-agrofert",
+      "edge-sebestyan-agrofert"
     ],
     "claimRefs": [
       "CLM-04",

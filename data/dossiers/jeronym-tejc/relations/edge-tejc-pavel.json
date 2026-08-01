@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/relations/edge-tejc-pavel",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-tejc-pavel",
+  "relationId": "edge-tejc-pavel",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/tejc"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/pavel"
+  },
+  "relationType": "ASSOCIATED_WITH_EVENT",
+  "label": "kompetenční spor o účast prezidenta Pavla na summitu NATO v Ankaře",
+  "status": "single",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-41"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-21"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 4,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-038 (provázání grafu) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

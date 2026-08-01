@@ -14,7 +14,8 @@
   "dossierStatus": "authorized",
   "coverageState": "full",
   "dossiers": [
-    "ales-juchelka"
+    "ales-juchelka",
+    "jeronym-tejc"
   ],
   "routeAliases": [
     "/dossiers/ales-juchelka/entities/juchelka/"
@@ -24,7 +25,11 @@
   "provenance": {
     "discoveredAt": "2026-07-30",
     "discoveredVia": [
-      "edge-juchelka-vlada"
+      "edge-juchelka-vlada",
+      "edge-babis-juchelka",
+      "edge-juchelka-evropska-komise",
+      "edge-juchelka-nku",
+      "edge-tejc-juchelka"
     ],
     "claimRefs": [
       "CLM-01",

@@ -115,11 +115,36 @@
           "SRC-17",
           "SRC-11"
         ]
+      },
+      {
+        "entity": "pavel",
+        "label": "Petr Pavel (prezident)",
+        "claims": [
+          "CLM-17",
+          "CLM-18"
+        ],
+        "sources": [
+          "SRC-07",
+          "SRC-08"
+        ]
+      },
+      {
+        "entity": "babis",
+        "label": "Andrej Babiš",
+        "claims": [
+          "CLM-40"
+        ],
+        "sources": [
+          "SRC-07",
+          "SRC-08"
+        ]
       }
     ],
     "edges": [
       "edge-schillerova-vlada",
-      "edge-schillerova-nrr"
+      "edge-schillerova-nrr",
+      "edge-schillerova-pavel",
+      "edge-babis-schillerova"
     ]
   },
   "contentBlocks": [

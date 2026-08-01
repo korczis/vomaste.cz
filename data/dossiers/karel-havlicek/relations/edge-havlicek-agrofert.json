@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/relations/edge-havlicek-agrofert",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-havlicek-agrofert",
+  "relationId": "edge-havlicek-agrofert",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/havlicek"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/agrofert"
+  },
+  "relationType": "ASSOCIATED_WITH_EVENT",
+  "label": "dotace na toustovou linku Agrofertu — ministrův výrok o povinnosti vrácení, pokud EK rozhodne",
+  "status": "quote",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-06"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-02"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 4,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-038 (provázání grafu) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

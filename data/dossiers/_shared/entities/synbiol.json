@@ -14,7 +14,8 @@
   "dossierStatus": "not_authorized",
   "coverageState": "contextual",
   "dossiers": [
-    "andrej-babis"
+    "andrej-babis",
+    "adam-vojtech"
   ],
   "routeAliases": [
     "/dossiers/andrej-babis/entities/synbiol/"
@@ -25,7 +26,8 @@
     "discoveredVia": [
       "edge-babis-synbiol",
       "edge-synbiol-hartenberg",
-      "edge-synbiol-komise"
+      "edge-synbiol-komise",
+      "edge-vojtech-synbiol"
     ],
     "claimRefs": [
       "CLM-39",

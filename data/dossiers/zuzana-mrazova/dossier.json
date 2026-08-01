@@ -69,7 +69,8 @@
           "CLM-53",
           "CLM-54",
           "CLM-55",
-          "CLM-56"
+          "CLM-56",
+          "CLM-17"
         ],
         "sources": [
           "SRC-01",
@@ -86,7 +87,9 @@
           "SRC-23",
           "SRC-24",
           "SRC-25",
-          "SRC-26"
+          "SRC-26",
+          "SRC-06",
+          "SRC-11"
         ]
       },
       {
@@ -98,10 +101,22 @@
         "sources": [
           "SRC-01"
         ]
+      },
+      {
+        "entity": "babis",
+        "label": "Andrej Babiš",
+        "claims": [
+          "CLM-17"
+        ],
+        "sources": [
+          "SRC-06",
+          "SRC-11"
+        ]
       }
     ],
     "edges": [
-      "edge-mrazova-vlada"
+      "edge-mrazova-vlada",
+      "edge-babis-mrazova"
     ]
   },
   "contentBlocks": [

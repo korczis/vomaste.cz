@@ -25,7 +25,10 @@
     "discoveredAt": "2026-07-30",
     "discoveredVia": [
       "edge-vojtech-vlada",
-      "edge-vojtech-fn-olomouc"
+      "edge-vojtech-fn-olomouc",
+      "edge-vojtech-babis",
+      "edge-vojtech-synbiol",
+      "edge-okamura-vojtech"
     ],
     "claimRefs": [
       "CLM-01",

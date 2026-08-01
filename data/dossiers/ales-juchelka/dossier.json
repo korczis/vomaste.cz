@@ -56,7 +56,10 @@
           "CLM-43",
           "CLM-44",
           "CLM-45",
-          "CLM-46"
+          "CLM-46",
+          "CLM-15",
+          "CLM-08",
+          "CLM-14"
         ],
         "sources": [
           "SRC-01",
@@ -72,7 +75,8 @@
           "SRC-25",
           "SRC-12",
           "SRC-27",
-          "SRC-28"
+          "SRC-28",
+          "SRC-04"
         ]
       },
       {
@@ -84,10 +88,44 @@
         "sources": [
           "SRC-01"
         ]
+      },
+      {
+        "entity": "babis",
+        "label": "Andrej Babiš",
+        "claims": [
+          "CLM-15"
+        ],
+        "sources": [
+          "SRC-15"
+        ]
+      },
+      {
+        "entity": "evropska-komise",
+        "label": "Evropská komise",
+        "claims": [
+          "CLM-08"
+        ],
+        "sources": [
+          "SRC-04"
+        ]
+      },
+      {
+        "entity": "nku",
+        "label": "Nejvyšší kontrolní úřad",
+        "claims": [
+          "CLM-14"
+        ],
+        "sources": [
+          "SRC-09",
+          "SRC-14"
+        ]
       }
     ],
     "edges": [
-      "edge-juchelka-vlada"
+      "edge-juchelka-vlada",
+      "edge-babis-juchelka",
+      "edge-juchelka-evropska-komise",
+      "edge-juchelka-nku"
     ]
   },
   "contentBlocks": [

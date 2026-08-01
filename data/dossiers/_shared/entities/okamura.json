@@ -14,7 +14,10 @@
   "dossierStatus": "authorized",
   "coverageState": "full",
   "dossiers": [
-    "tomio-okamura"
+    "tomio-okamura",
+    "jaromir-zuna",
+    "adam-vojtech",
+    "martin-sebestyan"
   ],
   "routeAliases": [
     "/dossiers/tomio-okamura/entities/okamura/"
@@ -23,7 +26,11 @@
   "provenance": {
     "discoveredAt": "2026-07-30",
     "discoveredVia": [
-      "edge-okamura-spd"
+      "edge-okamura-spd",
+      "edge-okamura-zuna",
+      "edge-okamura-vojtech",
+      "edge-okamura-sebestyan",
+      "edge-okamura-ustavni-soud"
     ],
     "claimRefs": [
       "CLM-02",

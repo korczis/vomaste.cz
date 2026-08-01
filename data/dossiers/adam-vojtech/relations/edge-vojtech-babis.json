@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/relations/edge-vojtech-babis",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-vojtech-babis",
+  "relationId": "edge-vojtech-babis",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/vojtech"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/babis"
+  },
+  "relationType": "ASSOCIATED_WITH_EVENT",
+  "label": "kritika střetu zájmů: premiér Babiš vlastní zdravotnické kliniky profitující z ministrova daňového návrhu",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-14"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-22"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 3,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-038 (provázání grafu) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

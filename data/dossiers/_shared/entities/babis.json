@@ -19,7 +19,16 @@
     "filip-turek",
     "andrej-babis",
     "tunde-bartha",
-    "jaroslav-faltynek"
+    "jaroslav-faltynek",
+    "alena-schillerova",
+    "ales-juchelka",
+    "boris-stastny",
+    "karel-havlicek",
+    "jaromir-zuna",
+    "zuzana-mrazova",
+    "adam-vojtech",
+    "robert-plaga",
+    "martin-sebestyan"
   ],
   "routeAliases": [
     "/dossiers/andrej-babis/entities/babis/"
@@ -34,7 +43,17 @@
       "edge-babis-pnf",
       "edge-babis-capihnizdo",
       "edge-babis-blakey",
-      "edge-babis-synbiol"
+      "edge-babis-synbiol",
+      "edge-babis-schillerova",
+      "edge-babis-juchelka",
+      "edge-babis-stastny",
+      "edge-havlicek-babis",
+      "edge-babis-zuna",
+      "edge-babis-mrazova",
+      "edge-vojtech-babis",
+      "edge-babis-fn-olomouc",
+      "edge-babis-plaga",
+      "edge-sebestyan-babis"
     ],
     "claimRefs": [
       "CLM-12",

@@ -28,7 +28,9 @@
     "discoveredAt": "2026-07-29",
     "discoveredVia": [
       "edge-cerveny-mzp2026",
-      "edge-macinka-cerveny"
+      "edge-macinka-cerveny",
+      "edge-cerveny-turek",
+      "edge-cerveny-pavel"
     ],
     "claimRefs": [
       "CLM-43",

@@ -16,7 +16,12 @@
   "dossiers": [
     "macinka-turek",
     "filip-turek",
-    "petr-pavel"
+    "petr-pavel",
+    "oto-klempir",
+    "alena-schillerova",
+    "jaromir-zuna",
+    "jeronym-tejc",
+    "igor-cerveny"
   ],
   "routeAliases": [
     "/dossiers/macinka-turek/entities/pavel/"
@@ -26,7 +31,12 @@
     "discoveredAt": "2026-07-29",
     "discoveredVia": [
       "edge-pavel-mzp2026",
-      "edge-turek-pavel"
+      "edge-turek-pavel",
+      "edge-klempir-pavel",
+      "edge-schillerova-pavel",
+      "edge-zuna-pavel",
+      "edge-tejc-pavel",
+      "edge-cerveny-pavel"
     ],
     "claimRefs": [
       "CLM-38",

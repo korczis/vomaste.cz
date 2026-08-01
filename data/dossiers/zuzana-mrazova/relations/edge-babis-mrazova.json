@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/relations/edge-babis-mrazova",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-babis-mrazova",
+  "relationId": "edge-babis-mrazova",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/babis"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/mrazova"
+  },
+  "relationType": "DEFENDED",
+  "label": "premiér Babiš veřejně podpořil Mrázovou a vyloučil její odvolání",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-17"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-11"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 2,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-038 (provázání grafu) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

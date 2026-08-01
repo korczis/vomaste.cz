@@ -14,7 +14,10 @@
   "dossierStatus": "not_authorized",
   "coverageState": "contextual",
   "dossiers": [
-    "andrej-babis"
+    "andrej-babis",
+    "ales-juchelka",
+    "karel-havlicek",
+    "martin-sebestyan"
   ],
   "routeAliases": [
     "/dossiers/andrej-babis/entities/evropska-komise/"
@@ -25,7 +28,10 @@
     "discoveredVia": [
       "edge-agrofert-komise",
       "edge-synbiol-komise",
-      "edge-babis-komise-audit"
+      "edge-babis-komise-audit",
+      "edge-juchelka-evropska-komise",
+      "edge-havlicek-evropska-komise",
+      "edge-sebestyan-evropska-komise"
     ],
     "claimRefs": [
       "CLM-25",
