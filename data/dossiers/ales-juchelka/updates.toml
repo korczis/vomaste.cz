@@ -18,7 +18,7 @@ added_claims = ["CLM-06", "CLM-07", "CLM-08", "CLM-09", "CLM-10", "CLM-11", "CLM
 updated_claims = []
 added_gaps = ["GAP-03", "GAP-04", "GAP-05", "GAP-06"]
 closed_gaps = []
-summary = "Zpracována autorizovaná témata: poradkyne-stret, rozpocet, trestni-oznameni, obhajoba. 13 zdrojů otevřeno a přečteno, 17 tvrzení, 4 mezer (nedoložitelné položky, paywally). Statusy dle skutečné síly doložení."
+summary = "Zpracována autorizovaná témata: poradkyne-stret, rozpocet, trestni-oznameni, obhajoba. 13 zdrojů otevřeno a přečteno, 17 tvrzení, 4 mezery (nedoložitelné položky, paywally). Statusy dle skutečné síly doložení."
 
 [[updates]]
 date = "2026-07-30"
