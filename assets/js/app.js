@@ -21,8 +21,12 @@ import { initSectionNav } from "./modules/section-nav.js";
 import { initStatusChart } from "./modules/charts.js";
 import { initFullscreenButtons } from "./modules/fullscreen.js";
 import { initSidebarAria } from "./modules/shell.js";
-import { initGraphView } from "./modules/graph-view.js";
 import { initSqlConsole } from "./modules/sql-console.js";
+// Sigma/Graphology (assets/js/modules/graph-view.js) are NOT imported here —
+// they're a separate entrypoint (assets/js/graph-app.js, built to
+// static/js/graph-app.js) loaded only by pages with a graph
+// (templates/base.html's extra_js block), so every other page's bundle
+// stays free of a renderer it never uses (mission § 5).
 
 document.addEventListener("alpine:init", function () {
   registerClaimsFilter();
@@ -41,11 +45,4 @@ document.addEventListener("DOMContentLoaded", function () {
   initFullscreenButtons();
   initSidebarAria();
   initSqlConsole();
-  // Both checked defensively inside initGraphView (container/data-island
-  // absent on pages without a graph) — the per-dossier local graph has no
-  // full-layer URL (dataset.fullLayerUrl is undefined), only the global
-  // map does.
-  document.querySelectorAll("[data-graph-view]").forEach(function (el) {
-    initGraphView(el.id, el.dataset.dataIsland, el.dataset.fullLayerUrl);
-  });
 });

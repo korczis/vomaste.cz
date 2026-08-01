@@ -1,9 +1,13 @@
 {% extends "base.html" %}
 {% import "macros/ui.html" as ui %}
 
+{% block extra_js %}
+<script type="module" defer src="{{ get_url(path='js/graph-app.js', cachebust=true) | safe }}"></script>
+{% endblock extra_js %}
+
 {% block content %}
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js" integrity="sha384-NrKB+u6Ts6AtkIhwPixiKTzgSKNblyhlk0Sohlgar9UHUBzai/sgnNNWWd291xqt" crossorigin="anonymous"></script>
-<main class="mx-auto max-w-3xl px-6 py-12 text-white">
+<main class="mx-auto max-w-3xl px-6 py-12 text-white" data-graph-workbench>
   {% set dossier_slug = section.extra.dossier %}
   {{ ui::page_header(title=section.title, breadcrumb_items=[
     "Domů::" ~ get_url(path="@/_index.md"),

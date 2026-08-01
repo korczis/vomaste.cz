@@ -1,8 +1,12 @@
 {% extends "base.html" %}
 {% import "macros/ui.html" as ui %}
 
+{% block extra_js %}
+<script type="module" defer src="{{ get_url(path='js/graph-app.js', cachebust=true) | safe }}"></script>
+{% endblock extra_js %}
+
 {% block content %}
-<main class="mx-auto max-w-6xl px-6 py-12 text-white">
+<main class="mx-auto max-w-6xl px-6 py-12 text-white" data-graph-workbench>
   {{ ui::page_header(title=section.title, description=section.description, breadcrumb_items=[
     "Domů::" ~ get_url(path="@/_index.md"),
     "Globální mapa",
