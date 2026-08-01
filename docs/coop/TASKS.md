@@ -69,6 +69,7 @@ významu); autorizační log v AGENTS.md se nemění. Fáze A (audit,
 
 | ID | Titul | Commit | Owner | Stav |
 |----|-------|--------|-------|------|
+| T-034 | Skloňování po číslovce v registrech ("32 zdroje" → "32 zdrojů") — makro `cz::tvar`/`cz::pocet`, oprava projekce seznam i dlaždice, 7 chybných tvarů v `updates.toml`, regex test s unicode hranicí slova | 5b0222c | (worktree T-034-graph) | merged |
 | T-027 | Graph workbench fáze B–J — layered data kontrakt + build-time layout, bundle split (graph-app.js), modulární runtime (jedna Sigma instance), interakční model (selection/focus/path finder/URL state), workbench UI, a11y + WebGL fallback, Playwright testy + syntetický 10k-uzlový benchmark, ADR + finální report (`reports/graph-workbench-implementation.md`) | e95368c..ee4b7b0 (5 commitů), merge c296c61 | W-8 | merged |
 | T-018 | Fáze 4 — entity dossier overview: view tabs (Přehled/Tvrzení/Zdroje/Kauzy/Entity/Vztahy/Evidence/Mezery), rozšířený metric strip (6 dlaždic), preview otevřených mezer. Directory (`/dossiers/`) byl už hotový (dd::directory) — ověřeno před psaním, ne předpokládáno | 59d60ea, merge 47fe59c | W-9 | merged |
 | T-016 | `[scope-check]` Nový entity dossier: Oto Klempíř — vytvoření souborů + registrace. Board byl stale — ve skutečnosti hotovo dřív (třetí dossier). Ověřeno 2026-08-01: `content/dossiers/oto-klempir/` + `data/dossiers/oto-klempir/graph.toml` existují na masteru | 41a4eb9 | (dřívější session) | merged |
