@@ -10,6 +10,7 @@
     "@id": "https://vomaste.cz/id/dossiers/tunde-bartha"
   },
   "title": "SRC-04 — Úřad vlády ČR, přehled vedoucích",
+  "description": "Primární úřední rejstřík: u Tünde Barthy je uvedeno „pověřena řízením: 28.6.2018 – 17.12.2021“, tedy pověření, nikoli jmenování do funkce.",
   "outlet": "Vláda České republiky (vlada.gov.cz)",
   "sourceType": "primární úřední záznam",
   "url": "https://vlada.gov.cz/scripts/detail.php?pgid=1477",

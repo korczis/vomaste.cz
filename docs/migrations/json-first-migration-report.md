@@ -151,9 +151,8 @@ kanonická obálka a umístění souboru.
 | entity | `government_party` | 16 |
 | entity | `sources` | 73 |
 | entity | `subject` | 84 |
-| source | `aliases` | 52 |
-| source | `description` | 514 |
 | claim | `aliases` | 45 |
+| source | `aliases` | 52 |
 | gap | `aliases` | 6 |
 | relation | `note` | 1 |
 

@@ -1,46 +1,42 @@
 #!/usr/bin/env node
 /*
- * Derives each dossier's overview metrics from its own registries instead
- * of letting them be hand-typed (and drift) in front matter. Runs once per
- * subdirectory of content/dossiers/, writing data/dossiers/<slug>/stats.toml,
- * which templates load via load_data(). Deterministic, no network access.
+ * Derives each dossier's overview metrics from the COMPILED canonical
+ * dataset (T-028 fáze G) instead of counting content/** pages — writes
+ * data/dossiers/<slug>/stats.toml, which templates load via load_data().
+ * Deterministic, no network access.
  *
- * Counts are the actual per-record page counts (claims_total/cases_total
- * are NOT re-derived from the overview table/front-matter array here — the
- * full text/status/sources parity between table and pages is enforced by
- * scripts/dossier/validate-dossier.mjs, which runs in `npm run build`).
- * This script still cross-checks the *counts* on every run, including
- * `npm run dev`, which does not run the full validator — so a page ever
- * added/removed without updating the other representation fails loudly
- * here rather than silently rendering a wrong tile.
+ * Zdroj počtů: compiled model (data/dossiers/** JSON → compileDataset).
+ * Do fáze H běží obsah i kanonická data souběžně, proto tenhle skript
+ * dál KŘÍŽOVĚ OVĚŘUJE počty proti content/dossiers/<slug>/ — počet
+ * claim řádků v přehledové tabulce (<a id="clm-##">) a [[extra.cases]]
+ * bloků v _index.md musí sedět na kanonické počty. To není čtení dat
+ * z front matter (data jdou z compiled modelu) — je to dvojitá pojistka
+ * „oba toky musí souhlasit" (mise § fáze G), která zanikne až s fází H.
  *
  * Counts per dossier:
- *   claims_total    — content/dossiers/<slug>/claims/clm-*.md pages
- *   cases_total     — content/dossiers/<slug>/cases/case-*.md pages
- *   sources_total   — content/dossiers/<slug>/sources/src-*.md pages
- *   gaps_total      — content/dossiers/<slug>/gaps/gap-*.md pages
- *   entities_total  — GLOBAL content/entities/*.md pages whose `dossiers`
- *                     array includes this slug (entities are not owned by
- *                     any one dossier, so this is a filtered count, not a
- *                     directory listing)
- *   relations_total — content/dossiers/<slug>/relations/*.md pages
+ *   claims_total    — kanonické claim záznamy dossieru
+ *   cases_total     — kanonické case záznamy
+ *   sources_total   — kanonické source záznamy
+ *   gaps_total      — kanonické gap záznamy
+ *   entities_total  — GLOBÁLNÍ entity, jejichž `dossiers` obsahuje slug
+ *                     (entity nevlastní žádný dossier — filtr, ne výčet)
+ *   relations_total — kanonické relation záznamy
+ *
+ * Entity dossiers (petr-macinka, filip-turek) vlastní žádné záznamy —
+ * jejich počty jsou filtr záznamů kanonického dossieru podle `subjects`
+ * (stejný mechanismus jako view modely fáze E a dnešní šablony). SELF-
+ * canonical entity dossier (canonical_dossier == vlastní slug) vlastní
+ * záznamy přímo a nefiltruje se.
  */
-import { readFileSync, readdirSync, writeFileSync, mkdirSync, statSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { getDossierRecord } from "./lib/dossier-registry.mjs";
+import { getCompiledModel, recordsOf } from "./lib/compiled-model.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const DOSSIERS_ROOT = join(ROOT, "content/dossiers");
-const ENTITIES_ROOT = join(ROOT, "content/entities");
 const DATA_ROOT = join(ROOT, "data/dossiers");
-
-function extractArrayField(text, key) {
-  const re = new RegExp(`^${key}\\s*=\\s*\\[([^\\]]*)\\]`, "m");
-  const found = text.match(re);
-  if (!found) return [];
-  return [...found[1].matchAll(/"((?:[^"\\]|\\.)*)"/g)].map((x) => x[1]);
-}
 
 function writeStats(slug, counts) {
   const OUT_DIR = join(DATA_ROOT, slug);
@@ -61,106 +57,67 @@ relations_total = ${counts.relationsTotal}
   console.log(`[${slug}] Wrote ${OUT_FILE}: ${counts.claimsTotal} claims, ${counts.casesTotal} cases, ${counts.sourcesTotal} sources, ${counts.gapsTotal} gaps, ${counts.entitiesTotal} entities, ${counts.relationsTotal} relations.`);
 }
 
-// Entity dossiers (petr-macinka, filip-turek) own no physical registry
-// content of their own — their counts are derived by filtering the
-// canonical (aggregate) dossier's already-tagged records
-// (scripts/dossier/tag-subjects.mjs) by `subjects` containing this
-// dossier's own `subject`. This is what keeps a claim/source/case/gap/
-// relation a single canonical record instead of a physical duplicate per
-// person — see AGENTS.md's "Entity dossiers vs. the aggregate view".
-function generateStatsForEntity(slug, record) {
-  const CANONICAL_BASE = join(DOSSIERS_ROOT, record.canonicalDossier);
-  const subject = record.subject;
-  // A SELF-canonical entity dossier (canonical_dossier == its own slug —
-  // every dossier authorized after the historical macinka-turek pair)
-  // owns its records outright, so there is nothing to filter: each record
-  // under it belongs to it by definition. Subject-filtering such a
-  // dossier would report 0 for records that simply never needed a
-  // `subjects` tag, since that tag exists only to split ONE canonical
-  // dossier between TWO projected people.
-  const isSelfCanonical = record.canonicalDossier === slug;
+const compiled = getCompiledModel(ROOT);
 
-  function countFiltered(dir, pattern) {
-    const files = readdirSync(join(CANONICAL_BASE, dir)).filter((f) => pattern.test(f));
-    if (isSelfCanonical) return files.length;
-    let n = 0;
-    for (const f of files) {
-      const text = readFileSync(join(CANONICAL_BASE, dir, f), "utf8");
-      const fmEnd = text.indexOf("\n+++", 3);
-      const subjects = extractArrayField(text.slice(0, fmEnd), "subjects");
-      if (subjects.includes(subject)) n++;
-    }
-    return n;
-  }
+const entitiesTotalFor = (slug) =>
+  compiled.entities.filter((w) => (w.record.dossiers ?? []).includes(slug)).length;
 
-  const entitiesTotal = readdirSync(ENTITIES_ROOT).filter((f) => f !== "_index.md" && f.endsWith(".md")).filter((f) => {
-    const text = readFileSync(join(ENTITIES_ROOT, f), "utf8");
-    const fmEnd = text.indexOf("\n+++", 3);
-    return extractArrayField(text.slice(0, fmEnd), "dossiers").includes(slug);
-  }).length;
-
-  writeStats(slug, {
-    claimsTotal: countFiltered("claims", /^clm-\d+\.md$/),
-    casesTotal: countFiltered("cases", /^case-\d+\.md$/),
-    sourcesTotal: countFiltered("sources", /^src-\d+\.md$/),
-    gapsTotal: countFiltered("gaps", /^gap-\d+\.md$/),
-    entitiesTotal,
-    relationsTotal: countFiltered("relations", /^(?!_index\.md$).+\.md$/),
-  });
+// Záznamy viditelné v dossieru: entity VIEW (canonical_dossier != slug)
+// filtruje záznamy kanonického vlastníka podle subject taggingu; všechno
+// ostatní vlastní své záznamy přímo.
+function countsFor(slug, record) {
+  const isView = record && record.dossierType === "entity" && record.canonicalDossier && record.canonicalDossier !== slug;
+  const owner = isView ? record.canonicalDossier : slug;
+  const visible = (registry) => {
+    const rows = recordsOf(compiled, owner, registry);
+    return isView ? rows.filter((w) => (w.record.subjects ?? []).includes(record.subject)) : rows;
+  };
+  return {
+    claimsTotal: visible("claims").length,
+    casesTotal: visible("cases").length,
+    sourcesTotal: visible("sources").length,
+    gapsTotal: visible("gaps").length,
+    entitiesTotal: entitiesTotalFor(slug),
+    relationsTotal: visible("relations").length,
+  };
 }
 
-function generateStatsFor(slug) {
-  const BASE = join(DOSSIERS_ROOT, slug);
-  const DOSSIER_MD = join(BASE, "_index.md");
-  const CLM_DIR = join(BASE, "claims");
-  const CASE_DIR = join(BASE, "cases");
-  const SRC_DIR = join(BASE, "sources");
-  const GAP_DIR = join(BASE, "gaps");
-  const RELATION_DIR = join(BASE, "relations");
-
-  const dossierText = readFileSync(DOSSIER_MD, "utf8");
-
-  const claimsTotal = readdirSync(CLM_DIR).filter((f) => /^clm-\d+\.md$/.test(f)).length;
-  const casesTotal = readdirSync(CASE_DIR).filter((f) => /^case-\d+\.md$/.test(f)).length;
-  const sourcesTotal = readdirSync(SRC_DIR).filter((f) => /^src-\d+\.md$/.test(f)).length;
-  const gapsTotal = readdirSync(GAP_DIR).filter((f) => /^gap-\d+\.md$/.test(f)).length;
-  const entitiesTotal = readdirSync(ENTITIES_ROOT).filter((f) => f !== "_index.md" && f.endsWith(".md")).filter((f) => {
-    const text = readFileSync(join(ENTITIES_ROOT, f), "utf8");
-    const fmEnd = text.indexOf("\n+++", 3);
-    return extractArrayField(text.slice(0, fmEnd), "dossiers").includes(slug);
-  }).length;
-  const relationsTotal = readdirSync(RELATION_DIR).filter((f) => f !== "_index.md" && f.endsWith(".md")).length;
-
+// Dvojitá pojistka do fáze H: kanonické počty musí sedět na to, co
+// skutečně leží v content/ (přehledová tabulka + [[extra.cases]] bloky).
+// Data se odtud NEČTOU — jen se porovnává počet.
+function crossCheckAgainstContent(slug, counts) {
+  const indexFile = join(DOSSIERS_ROOT, slug, "_index.md");
+  if (!existsSync(indexFile)) {
+    throw new Error(`generate-stats: [${slug}] kanonický dossier nemá content/dossiers/${slug}/_index.md — obsahová a kanonická vrstva se rozešly.`);
+  }
+  const dossierText = readFileSync(indexFile, "utf8");
   const tableClaimRows = [...dossierText.matchAll(/<a id="clm-\d+">/g)].length;
   const tableCaseBlocks = [...dossierText.matchAll(/^\[\[extra\.cases\]\]/gm)].length;
 
-  if (claimsTotal === 0) throw new Error(`generate-stats: [${slug}] found 0 claim pages in ${CLM_DIR}.`);
-  if (sourcesTotal === 0) throw new Error(`generate-stats: [${slug}] found 0 source pages in ${SRC_DIR}.`);
-  if (claimsTotal !== tableClaimRows) {
+  if (counts.claimsTotal === 0) throw new Error(`generate-stats: [${slug}] found 0 canonical claim records.`);
+  if (counts.sourcesTotal === 0) throw new Error(`generate-stats: [${slug}] found 0 canonical source records.`);
+  if (counts.claimsTotal !== tableClaimRows) {
     throw new Error(
-      `generate-stats: [${slug}] ${claimsTotal} claim page(s) but ${tableClaimRows} CLM row(s) in the overview table — they must match 1:1. Run scripts/dossier/migrate-claims-to-pages.mjs after editing the table, or fix the drift manually.`,
+      `generate-stats: [${slug}] ${counts.claimsTotal} canonical claim record(s) but ${tableClaimRows} CLM row(s) in the overview table — they must match 1:1. Run scripts/dossier/migrate-claims-to-pages.mjs after editing the table (and re-run npm run data:migrate), or fix the drift manually.`,
     );
   }
-  if (casesTotal !== tableCaseBlocks) {
+  if (counts.casesTotal !== tableCaseBlocks) {
     throw new Error(
-      `generate-stats: [${slug}] ${casesTotal} case page(s) but ${tableCaseBlocks} [[extra.cases]] entr(y/ies) in front matter — they must match 1:1. Run scripts/dossier/migrate-cases-to-pages.mjs after editing the array, or fix the drift manually.`,
+      `generate-stats: [${slug}] ${counts.casesTotal} canonical case record(s) but ${tableCaseBlocks} [[extra.cases]] entr(y/ies) in front matter — they must match 1:1. Run scripts/dossier/migrate-cases-to-pages.mjs after editing the array (and re-run npm run data:migrate), or fix the drift manually.`,
     );
   }
-
-  writeStats(slug, { claimsTotal, casesTotal, sourcesTotal, gapsTotal, entitiesTotal, relationsTotal });
 }
 
-const dossierSlugs = readdirSync(DOSSIERS_ROOT).filter((f) =>
-  statSync(join(DOSSIERS_ROOT, f)).isDirectory(),
-);
-if (dossierSlugs.length === 0) {
-  throw new Error("generate-stats: no dossiers found under content/dossiers/.");
+const dossierWrappers = compiled.records.filter((w) => w.registry === "dossier");
+if (dossierWrappers.length === 0) {
+  throw new Error("generate-stats: no dossiers found in the canonical dataset (data/dossiers/).");
 }
-for (const slug of dossierSlugs) {
+for (const w of dossierWrappers) {
+  const slug = w.dossier;
   const record = getDossierRecord(slug);
-  if (record && record.dossierType === "entity") {
-    generateStatsForEntity(slug, record);
-  } else {
-    generateStatsFor(slug);
+  const counts = countsFor(slug, record);
+  if (!record || record.dossierType !== "entity") {
+    crossCheckAgainstContent(slug, counts);
   }
+  writeStats(slug, counts);
 }

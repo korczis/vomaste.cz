@@ -15,6 +15,17 @@
  * Each line is one JSON object:
  *   { "logged_at": "YYYY-MM-DD", "record_id": "...", "record_type":
  *     "entity"|"relation", "discovered_from": {...}, "action": "created" }
+ *
+ * T-028 fáze G — ZÁMĚRNÁ VÝJIMKA (blokováno inventářem migrace):
+ * `discovered_from` u entit se skládá z provenienčních polí front matter
+ * (`claims`/`sources`/`dossiers` — ručně kurátorovaná stopa objevení),
+ * která kanonický model v1 vědomě nepřenáší (viz inventář v
+ * docs/migrations/json-first-migration-report.md) a která NEJSOU
+ * odvoditelná z compiled modelu. Log je navíc append-only KOMMITOVANÝ
+ * soubor: pro už zalogované záznamy (dnes všechny) se nečte nic a
+ * výstup se nemění; nové řádky vznikají jen pro nové záznamy. Přepnutí
+ * na compiled model proběhne ve fázi H spolu s rozhodnutím o těchto
+ * polích.
  */
 import { readFileSync, readdirSync, appendFileSync, existsSync, statSync, writeFileSync, mkdirSync } from "node:fs";
 import { join, dirname } from "node:path";

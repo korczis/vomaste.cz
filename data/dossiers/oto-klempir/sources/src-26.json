@@ -10,6 +10,7 @@
     "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
   },
   "title": "SRC-26 — ČeskéNoviny.cz (ČTK): Vláda schválila zrušení poplatků pro ČT a ČRo, dá jim o 1,4 miliardy méně (15. 6. 2026)",
+  "description": "ČeskéNoviny.cz nezávisle na Médiář (SRC-20) potvrzuje vládní rozhodnutí o zrušení koncesionářských poplatků a přechodu na rozpočtové financování ČT a ČRo.",
   "outlet": "ČeskéNoviny.cz (ČTK)",
   "sourceFamily": "ctk",
   "sourceType": "agenturní zpravodajství",

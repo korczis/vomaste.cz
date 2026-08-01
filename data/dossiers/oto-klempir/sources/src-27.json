@@ -10,6 +10,7 @@
     "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
   },
   "title": "SRC-27 — ČeskéNoviny.cz (ČTK): Výběrové řízení na ředitele Národní galerie Praha Klempíř zrušil, chce nové (2. 7. 2026)",
+  "description": "ČeskéNoviny.cz nezávisle na ČT24 (SRC-04) potvrzuje zrušení výběrového řízení na ředitele NGP, jména tří postupujících uchazečů a pověřenou ředitelku Kotkovou.",
   "outlet": "ČeskéNoviny.cz (ČTK)",
   "sourceFamily": "ctk",
   "sourceType": "agenturní zpravodajství",

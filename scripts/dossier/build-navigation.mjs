@@ -8,22 +8,30 @@
  *                            registry template ([[registries]]), dossier icons.
  *                            Contains no slug and no person.
  *   data/dossiers.toml     — which dossiers exist and of which type.
- *   content/dossiers/<slug>/<registry>/_index.md — which registries a dossier
- *                            actually has (the tree never links a route that
- *                            isn't on disk).
+ *   compiled canonical dataset (T-028 fáze G) — which dossiers exist as
+ *                            canonical records; every dossier carries all
+ *                            five registry routes (build-route-manifest
+ *                            registers them from the same model).
  *   data/concept-groups.toml + content/koncepty/*.md — the second subtree:
  *                            every concept page hangs under its group, which
- *                            hangs under the "concepts" item.
+ *                            hangs under the "concepts" item. KONCEPTY jsou
+ *                            záměrná výjimka fáze G: nejsou dossierové
+ *                            záznamy, kanonický model je nenese (viz
+ *                            navigation-metrics registry — „Koncepty jsou
+ *                            taxonomická vrstva mimo JSON-LD export"), takže
+ *                            jejich front matter zůstává zdrojem do doby, než
+ *                            dostanou vlastní kanonickou kolekci.
  *
  * Shape: every dossier hangs UNDER the "dossiers" item as its own subtree —
  * a person is never a top-level sidebar entry. Entity dossiers come first
  * (registry order), aggregate views last, flagged `isAggregate` so the
  * template can label them and refuse them an expandable subtree.
  */
-import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, readdirSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadDossierRegistry } from "./lib/dossier-registry.mjs";
+import { getCompiledModel } from "./lib/compiled-model.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const NAV_TOML = join(ROOT, "data/navigation.toml");
@@ -74,14 +82,24 @@ const registry = loadDossierRegistry();
 const rank = (d) => (d.dossierType === "entity" ? 0 : 1);
 const dossiers = [...registry].sort((a, b) => rank(a) - rank(b) || a.slug.localeCompare(b.slug, "cs"));
 
+// T-028 fáze G: existence dossieru se ověřuje proti compiled modelu, ne
+// skenem content/. Každý kanonický dossier nese všech pět registry rout
+// (stejný invariant jako build-route-manifest.mjs) — strom tedy nikdy
+// neodkáže routu, kterou kanonická data nedefinují. Dossier v registru
+// bez kanonického záznamu je tvrdá chyba, ne tiché přeskočení.
+const compiled = getCompiledModel(ROOT);
+const canonicalSlugs = new Set(compiled.records.filter((w) => w.registry === "dossier").map((w) => w.dossier));
+
 let skipped = 0;
 for (const d of dossiers) {
+  if (!canonicalSlugs.has(d.slug)) {
+    console.log(`ERROR data/dossiers.toml: dossier "${d.slug}" nemá kanonický záznam v data/dossiers/ — strom odmítá odkázat neexistující routy.`);
+    process.exit(1);
+  }
   const isAggregate = d.dossierType !== "entity";
   const children = [];
   if (!isAggregate) {
     for (const reg of registries) {
-      const file = join(ROOT, "content/dossiers", d.slug, reg.id, "_index.md");
-      if (!existsSync(file)) { skipped++; continue; }
       children.push({
         id: `${d.slug}-${reg.id}`,
         label: reg.label,

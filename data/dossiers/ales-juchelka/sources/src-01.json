@@ -10,6 +10,7 @@
     "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
   },
   "title": "SRC-01 — Vláda ČR (oficiální profil)",
+  "description": "Oficiální profil člena vlády: funkce a údaje, které stránka sama uvádí.",
   "outlet": "Vláda České republiky (vlada.gov.cz)",
   "sourceType": "oficiální primární zdroj",
   "url": "https://vlada.gov.cz/cz/vlada/clenove-vlady/ales-juchelka-223977/",

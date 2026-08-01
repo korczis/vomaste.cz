@@ -10,6 +10,7 @@
     "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
   },
   "title": "SRC-30 — ČeskéNoviny.cz (ČTK): Sněmovna schválila stavební novelu, podle opozice nahrává developerům (10. 7. 2026)",
+  "description": "ČeskéNoviny.cz nezávisle na Advokátní deník (SRC-18) potvrzuje výsledek hlasování (89:86), nový úřad a snížení počtu stavebních úřadů.",
   "outlet": "ČeskéNoviny.cz (ČTK)",
   "sourceFamily": "ctk",
   "sourceType": "agenturní zpravodajství",

@@ -15,6 +15,11 @@
     "identifier": { "$ref": "_defs.schema.json#/$defs/srcId" },
     "dossier": { "$ref": "_defs.schema.json#/$defs/dossierRef" },
     "title": { "type": "string", "minLength": 1 },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "$comment": "Redakční anotace zdroje (dnešní front matter description zdrojové stránky) — co citovaný zdroj dokládá. Volitelné, doplněno ve fázi G, aby search index a exporty nemusely číst front matter (mapuje se na schema:description v contextu v1)."
+    },
     "outlet": {
       "type": ["string", "null"],
       "$comment": "Vydavatel/médium. Nullable stejně jako dnešní řádkové schéma — oficiální primární zdroje nemají outlet. Nesmí se míchat se sourceFamily (viz komentář family ve schemas/source.schema.json)."

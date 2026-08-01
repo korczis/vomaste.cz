@@ -10,6 +10,7 @@
     "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
   },
   "title": "SRC-01 — Vláda ČR (oficiální web)",
+  "description": "Oficiální web Úřadu vlády: funkce a údaje, které stránka sama uvádí.",
   "outlet": "Vláda České republiky (vlada.gov.cz)",
   "sourceType": "oficiální primární zdroj",
   "url": "https://vlada.gov.cz/cz/vlada/clenove-vlady/karel-havlicek-223969/",

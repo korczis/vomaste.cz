@@ -17,6 +17,20 @@
  * dossier (its own claims/sources/relations) — it does not speculate about
  * what a hypothetical future dossier might cover. That call is the site
  * owner's alone.
+ *
+ * T-028 fáze G — ZÁMĚRNÁ VÝJIMKA (blokováno inventářem migrace): tenhle
+ * report čte provenienční pole entit `claims`/`sources` (a rodiny
+ * zdrojů per dossier), která kanonický model v1 vědomě NEPŘENÁŠÍ — viz
+ * „Inventář polí, která kanonické schéma nepřenáší" v
+ * docs/migrations/json-first-migration-report.md (entity claims 73×,
+ * sources 73×). Nejde je odvodit z compiled modelu: NEJSOU to unie vazeb
+ * z relations (ověřeno — 30/63 kontextových entit se liší), je to ručně
+ * kurátorovaná stopa „přes co byla entita objevena". Přepnout na
+ * compiled model by tedy znamenalo buď data vymyslet, nebo změnit
+ * význam reportu. Zůstává na front matter do fáze H, kde se o těchto
+ * polích rozhodne (schéma v2 / prezentační vrstva / zánik) — pak se
+ * tento skript přepne nebo zruší. Výstupy nejsou build exporty
+ * (data/generated/ + reports/ jsou gitignored).
  */
 import { readFileSync, readdirSync, writeFileSync, mkdirSync, statSync } from "node:fs";
 import { join, dirname } from "node:path";

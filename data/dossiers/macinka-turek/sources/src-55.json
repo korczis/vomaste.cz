@@ -10,6 +10,7 @@
     "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
   },
   "title": "SRC-55 — ARES (Ministerstvo financí ČR)",
+  "description": "Rejstříkový záznam GMR GAS s.r.o., IČO 28274318 — české společnosti, jejíž ukrajinskou pobočkou je podle SRC-17 GMR GAS UA LLC.",
   "outlet": "ARES — Administrativní registr ekonomických subjektů (Ministerstvo financí ČR)",
   "sourceType": "primární registr / veřejný rejstřík",
   "url": "https://ares.gov.cz/ekonomicke-subjekty?ico=28274318",

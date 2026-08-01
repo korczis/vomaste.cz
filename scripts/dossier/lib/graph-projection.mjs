@@ -13,10 +13,11 @@
 // after assembly, because coordinates need the fully merged graph to be
 // deterministic and because keeping "what data exists" separate from
 // "where it's drawn" is what makes each half independently testable.
-import { readFileSync, readdirSync, existsSync, statSync } from "node:fs";
+import { readFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import { readGraphTomlBlocks } from "./jsonld-shared.mjs";
 import { loadDossierRegistry } from "./dossier-registry.mjs";
+import { getCompiledModel, localIds, localPart, recordsOf } from "./compiled-model.mjs";
 
 const EDGE_CLASS_BY_KIND = {
   cites: "claim_cites_source",
@@ -38,9 +39,12 @@ export function loadRouteMap(root) {
 }
 
 export function listDossierSlugs(root) {
-  const dir = join(root, "content/dossiers");
-  return readdirSync(dir)
-    .filter((f) => statSync(join(dir, f)).isDirectory())
+  // T-028 fáze G: seznam dossierů jde z compiled modelu, ne ze skenu
+  // content/dossiers/ — obě množiny jsou totožné (paritu obsahu a
+  // kanonických dat drží validate:dossier + data:validate do fáze H).
+  return getCompiledModel(root)
+    .records.filter((w) => w.registry === "dossier")
+    .map((w) => w.dossier)
     .sort();
 }
 
@@ -88,9 +92,20 @@ function resolveRoute(routeMap, key, errors, label) {
   return entry.route;
 }
 
-// One dossier's OWN graph.toml, normalized with bare (non-namespaced) ids
-// — the shape written to static/data/graph/dossier/<slug>.json, and the
-// raw material buildGlobalCuratedPayload namespaces and merges below.
+// One dossier's OWN curated graph, normalized with bare (non-namespaced)
+// ids — the shape written to static/data/graph/dossier/<slug>.json, and
+// the raw material buildGlobalCuratedPayload namespaces and merges below.
+//
+// T-028 fáze G — dělba zdrojů:
+//   * UZLY, clustery a source_families zůstávají z data/dossiers/<slug>/
+//     graph.toml — kurátorovaná vrstva (popisky, subject flag, mention
+//     membership), kterou kanonický model v1 nenese; graph.toml zůstává
+//     do fáze H jejím kanonickým zdrojem (a zdrojem hran pro
+//     validate:graph).
+//   * DATA HRAN jdou z COMPILED kanonických relation záznamů; graph.toml
+//     určuje jen kurátorované POŘADÍ hran (stabilita layoutu). Oba toky
+//     musí souhlasit 1:1 — každý nesoulad (id množiny, label, status,
+//     typ, vazby, směr) je tvrdá chyba buildu, ne tichá preference.
 export function buildDossierCuratedPayload(root, slug, routeMap, errors) {
   const blocks = readGraphTomlBlocks(root, slug);
   const nodes = blocks.nodes.map((n) => ({
@@ -108,20 +123,53 @@ export function buildDossierCuratedPayload(root, slug, routeMap, errors) {
     ...(n.claims ? { claims: n.claims } : {}),
     ...(n.sources ? { sources: n.sources } : {}),
   }));
-  const edges = blocks.edges.map((e) => ({
-    id: e.id,
-    source: e.source,
-    target: e.target,
-    edge_class: "curated_relation",
-    label: e.label,
-    status: e.status,
-    relation: e.relation,
-    dossier: slug,
-    rel_id: e.id,
-    route: resolveRoute(routeMap, `${slug}:${e.id}`, errors, `relation "${e.id}" (dossier ${slug})`),
-    ...(e.claims ? { claims: e.claims } : {}),
-    ...(e.sources ? { sources: e.sources } : {}),
-  }));
+
+  // Kanonické relation záznamy dossieru, seřazené podle kurátorovaného
+  // pořadí hran v graph.toml.
+  const compiled = getCompiledModel(root);
+  const relationById = new Map(recordsOf(compiled, slug, "relations").map((w) => [w.record.identifier, w]));
+  const tomlIds = blocks.edges.map((e) => e.id);
+  if (tomlIds.length !== relationById.size || tomlIds.some((id) => !relationById.has(id))) {
+    errors.push(
+      `dossier ${slug}: hrany v graph.toml (${tomlIds.length}) a kanonické relations záznamy (${relationById.size}) nejsou 1:1 — oba toky musí do fáze H souhlasit`,
+    );
+  }
+  const sameList = (a, b) => a.length === b.length && a.every((x, i) => x === b[i]);
+  const edges = blocks.edges
+    .filter((e) => relationById.has(e.id))
+    .map((e) => {
+      const w = relationById.get(e.id);
+      const r = w.record;
+      const from = localPart(r.sourceEntity?.["@id"]);
+      const to = localPart(r.targetEntity?.["@id"]);
+      const mismatches = [];
+      if (e.source !== from) mismatches.push(`source ${e.source} ≠ ${from}`);
+      if (e.target !== to) mismatches.push(`target ${e.target} ≠ ${to}`);
+      if (e.label !== r.label) mismatches.push("label");
+      if (e.status !== r.status) mismatches.push("status");
+      if (e.relation !== r.relationType) mismatches.push("relation/relationType");
+      if (!sameList(e.claims ?? [], localIds(r.claims))) mismatches.push("claims");
+      if (!sameList(e.sources ?? [], localIds(r.sources))) mismatches.push("sources");
+      if (mismatches.length) {
+        errors.push(`dossier ${slug}: hrana "${e.id}" se rozchází s kanonickým relation záznamem (${mismatches.join(", ")})`);
+      }
+      const claims = localIds(r.claims);
+      const sources = localIds(r.sources);
+      return {
+        id: r.identifier,
+        source: from,
+        target: to,
+        edge_class: "curated_relation",
+        label: r.label,
+        status: r.status,
+        relation: r.relationType,
+        dossier: slug,
+        rel_id: r.identifier,
+        route: resolveRoute(routeMap, `${slug}:${r.identifier}`, errors, `relation "${r.identifier}" (dossier ${slug})`),
+        ...(claims.length ? { claims } : {}),
+        ...(sources.length ? { sources } : {}),
+      };
+    });
   return { nodes, edges, clusters: blocks.clusters, source_families: blocks.source_families };
 }
 

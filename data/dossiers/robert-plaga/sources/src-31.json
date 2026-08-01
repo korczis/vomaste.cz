@@ -10,6 +10,7 @@
     "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
   },
   "title": "SRC-31 — Poslanecká sněmovna Parlamentu ČR",
+  "description": "Sněmovní tisk 232/1 — Stanovisko vlády k tisku 232/0",
   "outlet": "Poslanecká sněmovna Parlamentu ČR",
   "sourceType": "oficiální primární zdroj",
   "url": "https://www.psp.cz/sqw/text/tiskt.sqw?O=10&CT=232&CT1=1",

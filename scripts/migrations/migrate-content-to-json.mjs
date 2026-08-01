@@ -128,7 +128,7 @@ const blockKeys = (block) => [...block.matchAll(/^([a-z_]+)\s*=/gm)].map((m) => 
 // nepřenesených polí v reportu — nikdy se nezahazuje tiše).
 const CARRIED_KEYS = {
   claim: new Set(["clm_id", "status", "status_label", "summary", "sources", "subjects", "weight", "dossier", "record_type", "lang", "title", "description", "template"]),
-  source: new Set(["src_id", "title", "outlet", "family", "src_type", "url", "published", "retrieved", "claims", "subjects", "weight", "dossier", "record_type", "lang", "template"]),
+  source: new Set(["src_id", "title", "description", "outlet", "family", "src_type", "url", "published", "retrieved", "claims", "subjects", "weight", "dossier", "record_type", "lang", "template"]),
   case: new Set(["case_id", "title", "summary", "period", "status", "label", "anchor", "claims", "sources", "subjects", "weight", "dossier", "record_type", "lang", "description", "template"]),
   gap: new Set(["gap_id", "title", "description", "priority", "checked", "claims", "subjects", "weight", "dossier", "record_type", "lang", "template"]),
   relation: new Set(["rel_id", "source", "target", "relation_type", "label", "status", "claims", "sources", "subjects", "weight", "dossier", "record_type", "lang", "title", "template"]),
@@ -289,6 +289,13 @@ export async function migrate(options = {}) {
     if (dossierAliases) record.aliases = dossierAliases;
     record.navigationVisible = d.showInPrimaryNavigation === true;
     record.updated = updated;
+    // Datum poslední redakční kontroly — fáze G je přenáší kanonicky
+    // (vomaste:reviewedAt), aby adresářový export nemusel číst front
+    // matter. Entity view bez vlastního reviewed_at pole nedostane (na
+    // rozdíl od updated se NEdědí z kanonického dossieru — nedoložená
+    // kontrola se nevymýšlí).
+    const reviewedAt = str(extraB, "reviewed_at");
+    if (reviewedAt !== null) record.reviewedAt = reviewedAt;
     if (authRecords.length) record.authorization = { records: authRecords };
     const seoType = str(extraB, "seo_type");
     if (seoType) record.seo = { seoType };
@@ -350,8 +357,14 @@ export async function migrate(options = {}) {
         identifier: id,
         dossier: dossierRef(slug),
         title: str(page.block, "title"),
-        outlet: str(page.block, "outlet"),
       };
+      // Redakční anotace zdroje — fáze G ji přenáší do kanonického záznamu
+      // (schema:description v contextu v1), aby search index a exporty
+      // nemusely číst front matter. U source NENÍ strukturální duplikát
+      // (na rozdíl od claim/case, kde jen kopíruje summary).
+      const srcDescription = str(page.block, "description");
+      if (srcDescription !== null) record.description = srcDescription;
+      record.outlet = str(page.block, "outlet");
       const family = str(page.block, "family");
       if (family !== null) record.sourceFamily = family;
       record.sourceType = str(page.block, "src_type");
@@ -792,6 +805,7 @@ export function runParityChecks(root = REPO_ROOT) {
       if (!existsSync(join(outRoot, p))) { errors.push(`parita: ${p} chybí`); continue; }
       const rec = readJson(p);
       expect(rec.title === str(page.block, "title"), `${p}: title se změnil`);
+      expect((rec.description ?? null) === str(page.block, "description"), `${p}: description se změnil`);
       expect(rec.url === str(page.block, "url"), `${p}: url se změnila`);
       expect((rec.published ?? null) === str(page.block, "published"), `${p}: published se změnilo`);
       expect(rec.retrieved === str(page.block, "retrieved"), `${p}: retrieved se změnilo`);

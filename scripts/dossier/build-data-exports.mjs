@@ -9,13 +9,14 @@
  *   2. anyone who just wants the data: the files are plain JSON arrays at
  *      stable URLs, readable with curl and jq, no WASM required.
  *
- * Derived, never authored: every row comes from the same front matter the
- * pages render from. No status is computed here, no score, no ranking —
- * the export is a projection, not a second source of truth.
+ * Derived, never authored: every row comes from the COMPILED canonical
+ * dataset (T-028 fáze G — data/dossiers/** JSON, tentýž model, ze
+ * kterého se renderují stránky). No status is computed here, no score,
+ * no ranking — the export is a projection, not a second source of truth.
  *
  * The row building itself lives in lib/record-tables.mjs, shared with
  * build-jsonld-exports.mjs so both export families are projections of ONE
- * parser instead of two drifting copies.
+ * compiled model instead of two drifting readers.
  */
 import { writeFileSync, mkdirSync } from "node:fs";
 import { join, dirname } from "node:path";

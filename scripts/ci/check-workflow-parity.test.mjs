@@ -22,8 +22,12 @@ const SCRIPT = path.join(__dirname, "check-workflow-parity.mjs");
 function fixture(mutateWorkflow) {
   const dir = mkdtempSync(path.join(tmpdir(), "vomaste-parity-test-"));
   mkdirSync(path.join(dir, "scripts", "ci"), { recursive: true });
+  mkdirSync(path.join(dir, "scripts", "build"), { recursive: true });
   mkdirSync(path.join(dir, ".github", "workflows"), { recursive: true });
   cpSync(SCRIPT, path.join(dir, "scripts", "ci", "check-workflow-parity.mjs"));
+  // Fáze G: seznam kroků buildu žije v pipeline orchestrátoru — checker
+  // ho čte, takže fixture ho potřebuje taky.
+  cpSync(path.join(ROOT, "scripts", "build", "pipeline.mjs"), path.join(dir, "scripts", "build", "pipeline.mjs"));
   cpSync(path.join(ROOT, "package.json"), path.join(dir, "package.json"));
   const wf = readFileSync(path.join(ROOT, ".github/workflows/deploy.yml"), "utf8");
   writeFileSync(path.join(dir, ".github/workflows/deploy.yml"), mutateWorkflow(wf));

@@ -10,6 +10,7 @@
     "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
   },
   "title": "SRC-22 — Seznam Zprávy",
+  "description": "Experti: samotné screenshoty nestačí jako důkaz, ale URL adresy originálů mohou pravost ověřit.",
   "outlet": "Seznam Zprávy",
   "sourceType": "zpravodajství",
   "url": "https://www.seznamzpravy.cz/clanek/domaci-politika-kauza-turkovych-prispevku-samotne-screenshoty-nestaci-url-adresy-mohou-289039",

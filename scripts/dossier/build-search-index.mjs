@@ -1,106 +1,123 @@
 #!/usr/bin/env node
 /*
  * Builds a static, client-fetchable search index covering every routable
- * record across every dossier (sources, claims, cases, gaps, and the
- * dossier pages themselves). Written to static/search-index.json so Zola
- * copies it verbatim to public/search-index.json — assets/js/modules/
- * global-search.js fetches it at runtime. Deterministic, no network access.
+ * record across every dossier (sources, claims, cases, gaps, relations,
+ * the dossier pages themselves and the global entity registry). Written
+ * to static/search-index.json so Zola copies it verbatim to
+ * public/search-index.json — assets/js/modules/global-search.js fetches
+ * it at runtime. Deterministic, no network access.
+ *
+ * T-028 fáze G: zdrojem je COMPILED kanonický dataset, ne content/**
+ * front matter. Jediný vstup mimo compiled model jsou popisky uzlů
+ * z data/dossiers/<slug>/graph.toml — prezentanční titulek vztahu se
+ * skládá „<label zdroje> — <label vztahu> — <label cíle>“ ze stejných
+ * kurátorovaných popisků, ze kterých kdysi vznikly titulky relation
+ * stránek (graph.toml zůstává do fáze H kanonickým kurátorovaným
+ * zdrojem grafu).
  */
-import { readFileSync, readdirSync, writeFileSync, statSync } from "node:fs";
+import { writeFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { getCompiledModel, localPart, recordsOf } from "./lib/compiled-model.mjs";
+import { readGraphToml } from "./lib/jsonld-shared.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
-const DOSSIERS_ROOT = join(ROOT, "content/dossiers");
-const ENTITIES_ROOT = join(ROOT, "content/entities");
 const OUT_FILE = join(ROOT, "static/search-index.json");
 
-function extractField(text, key) {
-  const re = new RegExp(`^${key}\\s*=\\s*"((?:[^"\\\\]|\\\\.)*)"`, "m");
-  const found = text.match(re);
-  return found ? found[1].replace(/\\(.)/g, "$1") : null;
-}
-function frontMatterOf(text) {
-  const fmEnd = text.indexOf("\n+++", 3);
-  return text.slice(0, fmEnd);
-}
-
-const REGISTRY = [
-  { dir: "sources", filePattern: /^src-\d+\.md$/, idField: "src_id", type: "source", titleField: "outlet" },
-  { dir: "claims", filePattern: /^clm-\d+\.md$/, idField: "clm_id", type: "claim", titleField: "summary" },
-  { dir: "cases", filePattern: /^case-\d+\.md$/, idField: "case_id", type: "case", titleField: null },
-  { dir: "gaps", filePattern: /^gap-\d+\.md$/, idField: "gap_id", type: "gap", titleField: null },
-  { dir: "relations", filePattern: /^(?!_index\.md$).+\.md$/, idField: "rel_id", type: "relation", titleField: "label" },
-];
-
+const compiled = getCompiledModel(ROOT);
 const entries = [];
 
 // Entities are GLOBAL — indexed once, not once per dossier.
-for (const file of readdirSync(ENTITIES_ROOT).filter((f) => f !== "_index.md" && f.endsWith(".md")).sort()) {
-  const text = readFileSync(join(ENTITIES_ROOT, file), "utf8");
-  const fm = frontMatterOf(text);
-  const id = extractField(fm, "entity_id");
-  if (!id) continue;
-  const titleMatch = text.match(/^title = "(.*)"$/m);
+for (const w of compiled.entities) {
+  const r = w.record;
   entries.push({
-    id,
+    id: r.entityId,
     type: "entity",
     dossier: null,
-    title: titleMatch ? titleMatch[1] : id,
-    summary: extractField(fm, "entity_type") ?? "",
-    extra: extractField(fm, "publication_role") ?? "",
-    route: `/entities/${file.replace(/\.md$/, "")}/`,
+    title: r.title ?? r.entityId,
+    summary: r.entityType ?? "",
+    extra: r.publicationRole ?? "",
+    route: w.route,
   });
 }
 
-const dossierSlugs = readdirSync(DOSSIERS_ROOT)
-  .filter((f) => statSync(join(DOSSIERS_ROOT, f)).isDirectory())
-  .sort();
+const dossierWrappers = compiled.records.filter((w) => w.registry === "dossier");
+const dossierSlugs = dossierWrappers.map((w) => w.dossier).sort();
+const dossierBySlug = new Map(dossierWrappers.map((w) => [w.dossier, w]));
 
 for (const slug of dossierSlugs) {
-  const dossierText = readFileSync(join(DOSSIERS_ROOT, slug, "_index.md"), "utf8");
-  const dossierFm = frontMatterOf(dossierText);
-  const dossierTitleMatch = dossierText.match(/^title = "(.*)"$/m);
+  const d = dossierBySlug.get(slug).record;
   entries.push({
     id: `DOSSIER:${slug}`,
     type: "dossier",
     dossier: slug,
-    title: dossierTitleMatch ? dossierTitleMatch[1] : slug,
-    summary: extractField(dossierFm, "description") ?? "",
+    // Kanonický titul (data/dossiers.toml → dossier.json). U macinka-turek
+    // se liší od stránkového „Dossier — …“ — kanonický je autoritativní
+    // (viz migrace, anomálie titulů), stránkový zůstává prezentační
+    // vrstvou do fáze H.
+    title: d.title ?? slug,
+    summary: d.description ?? "",
     route: `/dossiers/${slug}/`,
   });
 
-  for (const cfg of REGISTRY) {
-    const dir = join(DOSSIERS_ROOT, slug, cfg.dir);
-    const files = readdirSync(dir).filter((f) => cfg.filePattern.test(f)).sort();
-    for (const file of files) {
-      const text = readFileSync(join(dir, file), "utf8");
-      const fm = frontMatterOf(text);
-      const id = extractField(fm, cfg.idField);
-      if (!id) continue;
-      const titleMatch = text.match(/^title = "(.*)"$/m);
-      const title = titleMatch ? titleMatch[1] : id;
-      const summary =
-        extractField(fm, "summary") ??
-        extractField(fm, "description") ??
-        (cfg.titleField ? extractField(fm, cfg.titleField) ?? "" : "");
-      const extraSearchable = [
-        extractField(fm, "outlet"),
-        extractField(fm, "src_type"),
-        extractField(fm, "status_label"),
-        extractField(fm, "label"),
-      ].filter(Boolean).join(" ");
-      entries.push({
-        id,
-        type: cfg.type,
-        dossier: slug,
-        title,
-        summary,
-        extra: extraSearchable,
-        route: `/dossiers/${slug}/${cfg.dir}/${file.replace(/\.md$/, "")}/`,
-      });
-    }
-  }
+  // Popisky kurátorovaných uzlů pro titulky vztahů.
+  const labelOf = new Map(readGraphToml(ROOT, slug).nodes.map((n) => [n.id, n.label]));
+
+  // Stejné pořadí registrů jako dřívější sken: sources, claims, cases,
+  // gaps, relations — na výsledné seřazené podobě nezáleží u unikátních
+  // id, ale drží stabilní pořadí duplicitních id napříč dossiery.
+  const push = (registry, build) => {
+    for (const w of recordsOf(compiled, slug, registry)) entries.push(build(w, w.record));
+  };
+  push("sources", (w, r) => ({
+    id: r.identifier,
+    type: "source",
+    dossier: slug,
+    title: r.title ?? r.identifier,
+    summary: r.description ?? r.outlet ?? "",
+    extra: [r.outlet, r.sourceType].filter(Boolean).join(" "),
+    route: w.route,
+  }));
+  push("claims", (w, r) => ({
+    id: r.identifier,
+    type: "claim",
+    dossier: slug,
+    title: r.identifier,
+    summary: r.text ?? "",
+    extra: [r.statusLabel].filter(Boolean).join(" "),
+    route: w.route,
+  }));
+  push("cases", (w, r) => ({
+    id: r.identifier,
+    type: "case",
+    dossier: slug,
+    title: r.title ?? r.identifier,
+    summary: r.summary ?? "",
+    extra: [r.statusLabel].filter(Boolean).join(" "),
+    route: w.route,
+  }));
+  push("gaps", (w, r) => ({
+    id: r.identifier,
+    type: "gap",
+    dossier: slug,
+    title: r.title ?? r.identifier,
+    summary: r.description ?? "",
+    extra: "",
+    route: w.route,
+  }));
+  push("relations", (w, r) => {
+    const from = localPart(r.sourceEntity?.["@id"]);
+    const to = localPart(r.targetEntity?.["@id"]);
+    return {
+      id: r.identifier,
+      type: "relation",
+      dossier: slug,
+      title: `${labelOf.get(from) ?? from} — ${r.label} — ${labelOf.get(to) ?? to}`,
+      summary: r.label ?? "",
+      extra: [r.label].filter(Boolean).join(" "),
+      route: w.route,
+    };
+  });
 }
 
 entries.sort((a, b) => a.id.localeCompare(b.id));

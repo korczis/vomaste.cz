@@ -25,14 +25,16 @@
  * be a number nobody could justify later.
  *
  * Idempotent and safe to re-run: content is derived entirely from
- * data/entity-types.toml plus the entity pages, and stale sections for types
- * no longer present are removed.
+ * data/entity-types.toml plus the COMPILED canonical entity records
+ * (T-028 fáze G — dřív se entity_type četl z front matter entity
+ * stránek), and stale sections for types no longer present are removed.
  *
  * Usage: node scripts/dossier/build-entity-type-sections.mjs
  */
 import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync, rmSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { getCompiledModel } from "./lib/compiled-model.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..", "..");
@@ -64,15 +66,14 @@ for (const block of typesText.split(/\n\[\[types\]\]/).slice(1)) {
 if (labels.size === 0) fail(`no [[types]] entries parsed from ${path.relative(ROOT, TYPES_TOML)}.`);
 
 // --- which types actually occur -------------------------------------------
+// Z compiled modelu (kanonické entity záznamy), ne z front matter.
 const counts = new Map();
-for (const file of readdirSync(ENTITIES_DIR)) {
-  if (!file.endsWith(".md") || file === "_index.md") continue;
-  const fm = readFileSync(path.join(ENTITIES_DIR, file), "utf8");
-  const type = fm.match(/^entity_type\s*=\s*"([^"]+)"/m)?.[1];
+for (const w of getCompiledModel(ROOT).entities) {
+  const type = w.record.entityType;
   if (!type) continue;
   counts.set(type, (counts.get(type) ?? 0) + 1);
 }
-if (counts.size === 0) fail("no entity pages with an entity_type found — refusing to wipe the sections.");
+if (counts.size === 0) fail("no canonical entity records with an entityType found — refusing to wipe the sections.");
 
 for (const type of counts.keys()) {
   if (!labels.has(type)) {

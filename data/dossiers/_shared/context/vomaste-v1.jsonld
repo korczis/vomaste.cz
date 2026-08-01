@@ -28,6 +28,7 @@
     "createdAt": { "@id": "schema:dateCreated", "@type": "xsd:date" },
     "closedAt": { "@id": "vomaste:closedAt", "@type": "xsd:date" },
     "updated": { "@id": "schema:dateModified", "@type": "xsd:date" },
+    "reviewedAt": { "@id": "vomaste:reviewedAt", "@type": "xsd:date" },
     "snapshotDate": { "@id": "vomaste:snapshotDate", "@type": "xsd:date" },
     "date": { "@id": "vomaste:date", "@type": "xsd:date" },
 

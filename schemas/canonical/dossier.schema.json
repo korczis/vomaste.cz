@@ -44,6 +44,10 @@
     },
     "coverageState": { "$ref": "_defs.schema.json#/$defs/coverageState" },
     "updated": { "$ref": "_defs.schema.json#/$defs/isoDate" },
+    "reviewedAt": {
+      "$ref": "_defs.schema.json#/$defs/isoDate",
+      "$comment": "Datum poslední redakční kontroly (dnešní front matter reviewed_at v _index.md). Volitelné — entity view bez vlastního reviewed_at pole nemá. Doplněno ve fázi G, aby adresářový export nemusel číst front matter."
+    },
     "authorization": {
       "type": "object",
       "additionalProperties": false,
