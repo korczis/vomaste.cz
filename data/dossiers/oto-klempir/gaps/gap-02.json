@@ -9,10 +9,10 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
   },
-  "title": "GAP-02 — Žádné z tvrzení nemá druhý nezávislý zdroj",
-  "description": "Všechna resortní tvrzení stojí k datu kontroly na jediném vydavateli; nezávislé potvrzení nebylo nalezeno ani vyloučeno.",
-  "priority": "vysoká",
-  "checked": "2026-07-30",
+  "title": "GAP-02 — Dvě ze čtyř tvrzení dosud nemají druhý nezávislý zdroj",
+  "description": "CLM-04 a CLM-05 mají od 2026-08-02 nezávislé potvrzení (ČT24); CLM-03 (redakční hodnocení) a CLM-06 (nevyjádření k dotazu RESPEKTU) svou povahou druhý zdroj mít nemohou.",
+  "priority": "nízká",
+  "checked": "2026-08-02",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-03"
@@ -33,7 +33,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Tvrzení CLM-03 až CLM-06 mají k datu kontroly (2026-07-30) jediný\ncitovaný zdroj — [SRC-02](@/dossiers/oto-klempir/sources/src-02.md)\n(RESPEKT). Ve zkontrolovaných zdrojích nebyl nalezen druhý, skutečně\nnezávislý zdroj (jiný vydavatel, ne přebírající zpráva), který by tytéž\nkonkrétní kroky doložil samostatně. Proto všechna tato tvrzení nesou\nstav `1 ZDROJ` a nikoli `CORROBORATED`.\n\nToto **není** zjištění, že by tvrzení byla nepravdivá ani že by je jiné\nredakce vyvrátily. Znamená to jen, že k uvedenému datu dossier žádné\nnezávislé potvrzení nemá — a že si to nedovoluje zamlčet stavem, který by\ntvrdil víc.\n\n**Podmínka uzavření mezery**: nalezení a přímé otevření druhého,\nnezávislého zdroje k jednotlivému tvrzení; tím se dané tvrzení může\npovýšit na `CORROBORATED`. Povýšení stavu vyžaduje nový důkaz, nikdy\npouze přeznačení. Naopak pokud by jiný zdroj konkrétní krok popřel nebo\nopravil, patří to do dossieru jako rozpor, ne jako tiché odstranění."
+      "value": "Tvrzení CLM-03 až CLM-06 měla k 2026-07-30 jediný citovaný zdroj —\n[SRC-02](@/dossiers/oto-klempir/sources/src-02.md) (RESPEKT).\n\n**Aktualizace 2026-08-02**: pro CLM-04 (přesun financování ČT/ČRo) a\nCLM-05 (zrušení výběrového řízení na ředitele Národní galerie) byl\ndohledán druhý, skutečně nezávislý zdroj — ČT24, konkrétně dva\nzdroje, které dossier už měl pro jiná tvrzení\n([SRC-21](@/dossiers/oto-klempir/sources/src-21.md) pro CLM-15,\n[SRC-04](@/dossiers/oto-klempir/sources/src-04.md) pro CLM-22..26) —\njiný vydavatel, s dřívějším datem než RESPEKT, teď rozšířené i na\nCLM-04/CLM-05 místo vytváření duplicitních nových zdrojových záznamů. Obě tvrzení jsou nyní `CORROBORATED`.\n\n**CLM-03 a CLM-06 zůstávají `1 ZDROJ`, a to zůstane pravděpodobně\ntrvale — ne z nedostatku hledání, ale z povahy věci**: CLM-03 je\nredakční hodnocení RESPEKTU (\"prosazuje zákony v rozporu s\npředvolebními hesly\") — jiná redakce může mít vlastní, nezávislé\nhodnocení, ale to by bylo jiné tvrzení, ne potvrzení téhož; CLM-06\npopisuje, že se Klempíř nevyjádřil **konkrétně k dotazu RESPEKTU** — to\nmůže doložit jedině RESPEKT sám, žádná jiná redakce k tomu nemá\npřístup. Toto **není** zjištění o pravdivosti ani nepravdivosti —\npopisuje jen typ tvrzení, u kterého druhý zdroj strukturálně nedává\nsmysl.\n\n**Podmínka uzavření zbytku mezery**: pro CLM-03/CLM-06 fakticky žádná —\nzůstávají trvale 1 ZDROJ podle povahy tvrzení, ne jako otevřená úloha\nk dořešení."
     }
   ],
   "order": 2

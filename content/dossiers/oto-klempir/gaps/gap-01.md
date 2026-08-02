@@ -31,3 +31,13 @@ archiv) a doslovné ověření jednotlivých formulací, případně jejich
 zpřesnění či oprava v dossieru podle skutečného znění. Tato mezera
 neříká nic o pravdivosti či nepravdivosti obsahu článku — pouze
 zaznamenává, co bylo a nebylo možné ověřit.
+
+**Aktualizace 2026-08-02**: CLM-04 a CLM-05 mezitím získaly nezávislé
+potvrzení z jiných, plně otevřených zdrojů, které dossier už měl
+(ČT24 SRC-21/SRC-04, dříve citované pro jiná tvrzení — viz
+[GAP-02](@/dossiers/oto-klempir/gaps/gap-02.md)). To řeší otázku, zda
+jsou tato dvě konkrétní tvrzení pravdivá, ale **neřeší** tuto mezeru —
+ta se týká výhradně toho, zda doslovné formulace uvnitř samotného
+placeného RESPEKT textu odpovídají tomu, jak je dossier parafrázuje.
+Ta otázka zůstává otevřená stejně jako dosud, jen už méně kriticky
+důležitá, protože klíčové věcné body má dossier doložené i odjinud.

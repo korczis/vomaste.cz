@@ -19,6 +19,9 @@
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-15"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-04"
     }
   ],
   "subjects": [

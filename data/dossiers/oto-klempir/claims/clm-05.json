@@ -10,11 +10,14 @@
     "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
   },
   "text": "Podle téhož textu RESPEKTU Klempíř zrušil výběrové řízení na ředitele Národní galerie Praha",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-04"
     }
   ],
   "subjects": [],
@@ -22,7 +25,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/oto-klempir/_index.md#registr-tvrzeni)."
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/oto-klempir/_index.md#registr-tvrzeni).\n\nStav CORROBORATED od 2026-08-02: [SRC-04](@/dossiers/oto-klempir/sources/src-04.md)\n(ČT24, 2. 7. 2026 — již citovaný jinde v dossieru pro CLM-22..26, teď\nznovu využitý místo duplicitního nového zdroje) nezávisle potvrzuje\ntentýž krok — jiný vydavatel než [SRC-02](@/dossiers/oto-klempir/sources/src-02.md) (RESPEKT)."
     }
   ]
 }
