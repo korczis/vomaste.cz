@@ -28,7 +28,10 @@ export function buildIntakeManifest({
   parsedSubmission,
   normalization,
   systemObservations,
-  workflow,
+  matching,
+  duplicateDetection,
+  riskClassification,
+  workflowDecision,
   generatedAt,
   repositoryCommit,
   inputHash,
@@ -70,25 +73,38 @@ export function buildIntakeManifest({
       warnings: systemObservations.warnings,
       errors: systemObservations.errors,
     },
-    // §15.2: Phase 2 has no entity matching and no AI — the proposed scope
-    // is a mechanical, conservative echo of exactly what the submitter
-    // typed, never an inference. decision_class/authorization_effect are
-    // hardcoded constants, matching the schema's `const` on both fields.
+    // §15.2 (Phase 2) / PHASE_003.md §10 (Phase 3): the proposed scope
+    // stays a mechanical echo of the submission plus Phase 3's OWN
+    // matching output (never an AI inference) — entity_id is always null
+    // here regardless of how confident a match was; matching retrieves
+    // candidates, it never asserts identity (§1.1). decision_class/
+    // authorization_effect are hardcoded constants, matching the
+    // schema's `const` on both fields.
     proposed_authorization_scope: {
       decision_class: "machine_draft_only",
       authorization_effect: "none",
-      subject_candidates: parsedSubmission.subject_text.trim()
-        ? [{ label_from_submission: parsedSubmission.subject_text.trim(), entity_id: null, resolution_status: "unresolved" }]
-        : [],
+      subject_candidates: matching.candidate_subjects.map((c) => ({
+        label_from_submission: c.input.raw_label,
+        entity_id: null,
+        resolution_status: c.resolution_status,
+        extracted_identifiers: c.extracted_identifiers ?? {},
+      })),
       topics: [],
       explicit_exclusions: ["nonpublic_material", "private_life_without_public_interest", "unnamed_third_parties_not_publicly_identified"],
       sourcing_limits: ["publicly_available_sources_only", "independent_named_sources_required"],
     },
-    // §1.1 / §15.1: the only two values this processor is capable of
-    // writing. There is no branch anywhere in this module that can
-    // produce "authorized" or "publishable"/"published".
+    matching: { dataset_commit: matching.dataset_commit, index_schema_version: matching.index_schema_version, candidate_subjects: matching.candidate_subjects },
+    duplicate_detection: duplicateDetection,
+    risk_classification: riskClassification,
+    workflow_decision: workflowDecision,
+    // §1.1 / PHASE_002.md §15.1 / PHASE_003.md §14.2: the only values this
+    // processor is capable of writing for authorization/publication —
+    // there is no branch anywhere in this module that can produce
+    // "authorized" or "publishable"/"published". intake_status comes
+    // straight from workflowDecision, itself computed by
+    // scripts/intake/risk/classify-intake-risk.mjs's fixed precedence.
     workflow: {
-      intake_status: workflow.intake_status,
+      intake_status: workflowDecision.intake_status,
       authorization_status: "pending_owner",
       publication_status: "blocked",
     },

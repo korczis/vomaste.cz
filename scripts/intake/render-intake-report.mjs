@@ -13,7 +13,26 @@ const INTAKE_STATUS_LABELS = Object.freeze({
   triage: "čeká na redakční třídění",
   invalid: "neplatné podání",
   needs_information: "vyžaduje doplnění informací",
+  possible_duplicate: "možná duplicita — čeká na posouzení",
+  security_review_required: "vyžaduje bezpečnostní revizi",
 });
+
+const CONFIDENCE_LABELS = Object.freeze({
+  very_high: "velmi vysoká",
+  high: "vysoká",
+  medium: "střední",
+  low: "nízká",
+  conflict: "konflikt",
+});
+
+const RESOLUTION_STATUS_LABELS = Object.freeze({
+  no_match: "žádná shoda",
+  possible_matches: "možné shody",
+  ambiguous: "nejednoznačné",
+  conflicting_identifiers: "konfliktní identifikátory",
+});
+
+const SEVERITY_LABELS = Object.freeze({ info: "info", low: "nízká", medium: "střední", high: "vysoká", critical: "kritická" });
 
 const SUBMISSION_TYPE_LABELS = Object.freeze({
   new_dossier: "Nový dossier (nová osoba/subjekt)",
@@ -51,11 +70,49 @@ function renderSimpleList(items, emptyLabel) {
   return items.map((item) => `- ${item}`).join("\n");
 }
 
+// §17: candidate matches table, one per §10 output, plus the mandatory
+// disclaimer. Never a link, never auto-formats an entity_id as a live
+// reference — a match is a candidate, not a confirmed profile.
+function renderMatchingSection(matching) {
+  if (matching.candidate_subjects.length === 0) {
+    return "_(Podání neobsahuje rozpoznatelný subjekt k porovnání.)_";
+  }
+  const blocks = matching.candidate_subjects.map((candidate, index) => {
+    const header = `### Kandidát ${index + 1}\n\n- Vstup: \`${candidate.input.raw_label.replace(/`/g, "'").replace(/\n/g, " ")}\`\n- Typ: ${candidate.input.candidate_type}\n- Stav rozlišení: ${RESOLUTION_STATUS_LABELS[candidate.resolution_status] ?? candidate.resolution_status}\n- Počet možných shod: ${candidate.matches.length} (z ${candidate.total_candidates_considered} zvážených)`;
+    if (candidate.matches.length === 0) return header;
+    const rows = candidate.matches
+      .map((m) => `| \`${m.entity_id}\` | ${m.match_type} | ${m.score.toFixed(2)} (${CONFIDENCE_LABELS[m.confidence_class] ?? m.confidence_class}) | ${m.reasons.join("; ")} | ${m.conflicting_fields.join(", ") || "—"} |`)
+      .join("\n");
+    return `${header}\n\n| Entita | Typ shody | Skóre | Důvody | Konflikty |\n|---|---|---:|---|---|\n${rows}`;
+  });
+  return `${blocks.join("\n\n")}\n\n> Možná shoda není potvrzení identity.`;
+}
+
+function renderDuplicateSection(duplicateDetection) {
+  if (duplicateDetection.candidates.length === 0) {
+    return "_(Nebyla nalezena žádná pravděpodobně související dřívější podání.)_\n\n> Automat podněty neslučuje ani nezavírá.";
+  }
+  const rows = duplicateDetection.candidates
+    .map((c) => `- \`${c.intake_id}\` — ${c.duplicate_type} (${c.matched_signals.join(", ")})`)
+    .join("\n");
+  return `${rows}\n\n> Automat podněty neslučuje ani nezavírá.`;
+}
+
+function renderRiskSection(riskClassification) {
+  if (riskClassification.flags.length === 0) {
+    return "_(Nebyl detekován žádný rizikový příznak.)_\n\n> Rizikový příznak není skutkový ani právní závěr.";
+  }
+  const rows = riskClassification.flags
+    .map((f) => `| ${SEVERITY_LABELS[f.severity] ?? f.severity} | \`${f.code}\` | ${f.explanation} | ${f.effect} |`)
+    .join("\n");
+  return `| Závažnost | Kód | Vysvětlení | Dopad |\n|---|---|---|---|\n${rows}\n\n> Rizikový příznak není skutkový ani právní závěr.`;
+}
+
 // `manifest` is the already-built, already-schema-valid manifest object
 // (build-intake-manifest.mjs). Same manifest + same rendering logic always
 // produces byte-identical Markdown — no clock or randomness read in here.
 export function renderIntakeReport(manifest) {
-  const { submission, normalization, system_observations, proposed_authorization_scope, workflow, provenance, id } = manifest;
+  const { submission, normalization, system_observations, proposed_authorization_scope, matching, duplicate_detection, risk_classification, workflow, provenance, id } = manifest;
 
   const warningLines = system_observations.warnings.map((w) => `- **${w.code}**${w.field ? ` (\`${w.field}\`)` : ""}: ${w.message}`);
 
@@ -126,6 +183,18 @@ ${renderSimpleList(proposed_authorization_scope.explicit_exclusions, "žádná")
 **Zdrojová omezení**
 
 ${renderSimpleList(proposed_authorization_scope.sourcing_limits, "žádná")}
+
+## Možné shody v datasetu
+
+${renderMatchingSection(matching)}
+
+## Možné duplicitní podněty
+
+${renderDuplicateSection(duplicate_detection)}
+
+## Rizikové příznaky
+
+${renderRiskSection(risk_classification)}
 
 ## Další krok
 

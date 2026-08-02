@@ -1,13 +1,15 @@
-# Intake local processor (Phase 2)
+# Intake local processor (Phase 2/3)
 
 `scripts/intake/process-issue.mjs` turns one local GitHub-issue-event
 fixture into an intake manifest, a Markdown report, and a
-machine-readable processing result — entirely offline. See
-`docs/intake/intake-manifest.md` for the manifest's own field reference,
-and `docs/adr/ADR-public-dossier-intake.md` for the architecture this
-implements. This phase implements only the *local* processor — no
-GitHub Actions, no GitHub API calls, no issue comments, no labels; see
-"What Phase 2 does not do" below.
+machine-readable processing result — entirely offline. Since Phase 3 it
+also runs entity-candidate matching, duplicate-intake detection, and risk
+classification as part of the same pipeline (see
+`docs/intake/entity-matching.md` and `docs/intake/risk-classification.md`).
+See `docs/intake/intake-manifest.md` for the manifest's own field
+reference, and `docs/adr/ADR-public-dossier-intake.md` for the
+architecture this implements. No GitHub Actions, no GitHub API calls, no
+issue comments, no labels; see "What this phase does not do" below.
 
 ## CLI usage
 
@@ -17,10 +19,21 @@ node scripts/intake/process-issue.mjs \
   --output-dir <dir> \
   [--generated-at <ISO8601>] \
   [--repository-commit <sha>] \
-  [--overwrite]
+  [--overwrite] \
+  [--matching-index <path>] \
+  [--prior-manifests-dir <dir>]
 
 node scripts/intake/process-issue.mjs --help
 ```
+
+`--matching-index` overrides the default (build a fresh index from
+`data/dossiers/**` on every run — `scripts/intake/build-matching-index.mjs`,
+~70ms for ~450 entities) with a pre-built or synthetic index file; mainly
+for tests. `--prior-manifests-dir` points duplicate detection at a
+directory of previously-written `manifest.json` files (see
+`docs/intake/entity-matching.md`'s "Duplicate intake detection" — no such
+directory is configured by default, so duplicate detection is always
+`no_duplicate` unless the caller opts in).
 
 - `--event` and `--output-dir` are required. `--event` accepts only a
   filesystem path — never issue body content, never a URL.
@@ -40,7 +53,11 @@ Companion commands:
 npm run intake:process -- --event <path> --output-dir <dir>   # same CLI, via npm
 npm run intake:validate -- <manifest.json>                    # re-validate an existing manifest
 npm run intake:fixture                                        # smoke-test: one fixed fixture, fixed clock/commit, into .tmp/intake/ (gitignored)
-npm run test:intake                                            # node --test scripts/intake/*.test.mjs (121 tests)
+npm run intake:index                                          # regenerate the matching index on demand (npm run intake:fixture always builds it fresh anyway)
+npm run intake:match-fixture                                  # same fixture through the full Phase 3 pipeline, into .tmp/intake/match-fixture/
+npm run test:intake                                            # node --test scripts/intake/*.test.mjs + matching/ + risk/ (244 tests)
+npm run test:intake:matching                                   # matching subsystem only
+npm run test:intake:risk                                       # risk classifier subsystem only
 ```
 
 `test:intake`'s tests are also part of the repo's main `npm test`, so
@@ -161,12 +178,13 @@ anywhere under `scripts/intake/` (excluding test files).
   processor can produce ever has `authorization_status` other than
   `"pending_owner"` or `publication_status` other than `"blocked"`.
 
-## What Phase 2 does not do
+## What this phase does not do
 
 No GitHub API calls, no GitHub Actions workflow, no issue comments, no
 label management, no HTTP requests of any kind, no URL reachability
-checks, no entity matching or fuzzy matching, no source-family
+checks (Phase 3's matching is against LOCAL repo data only — never a
+network lookup), no NER or AI-based entity extraction, no source-family
 verification, no editorial research, no AI classification, no Prismatic
-integration, no authorization, no dossier creation, no PR, no merge, no
-deploy. All of that is later phases (see
-`reports/intake/phase-02-implementation-report.md`'s "Phase 3 contract").
+integration, no authorization, no dossier/entity/claim creation, no PR,
+no merge, no deploy. All of that is later phases (see
+`reports/intake/phase-03-implementation-report.md`'s "Phase 4 contract").

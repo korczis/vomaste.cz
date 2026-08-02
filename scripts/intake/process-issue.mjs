@@ -7,7 +7,7 @@
 //   node scripts/intake/process-issue.mjs \
 //     --event <path> --output-dir <dir> \
 //     [--generated-at <ISO8601>] [--repository-commit <sha>] [--overwrite]
-import { mkdtempSync, mkdirSync, writeFileSync, renameSync, rmSync, existsSync } from "node:fs";
+import { mkdtempSync, mkdirSync, writeFileSync, renameSync, rmSync, existsSync, readFileSync } from "node:fs";
 import { join, resolve, sep } from "node:path";
 import { execFileSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
@@ -19,10 +19,16 @@ import { detectFormVersion } from "./detect-form.mjs";
 import { parseIssueFormV1 } from "./parse-issue-form.mjs";
 import { validateParsedSubmission } from "./validate-submission.mjs";
 import { normalizeText, extractAndNormalizeUrls } from "./normalize-submission.mjs";
-import { buildIntakeManifest } from "./build-intake-manifest.mjs";
+import { buildIntakeManifest, buildIntakeId } from "./build-intake-manifest.mjs";
 import { validateManifestShape } from "./lib/schema-validators.mjs";
 import { renderIntakeReport } from "./render-intake-report.mjs";
 import { hashEventInput } from "./hash.mjs";
+import { buildMatchingIndex } from "./build-matching-index.mjs";
+import { extractCandidates } from "./matching/extract-candidates.mjs";
+import { buildIndexLookups, matchCandidateAgainstIndex, resolveCandidate } from "./matching/match-entities.mjs";
+import { detectDuplicateIntake } from "./matching/detect-duplicate-intake.mjs";
+import { loadPriorManifestsFromDirectory } from "./matching/duplicate-intake-source.mjs";
+import { classifyIntakeRisk } from "./risk/classify-intake-risk.mjs";
 
 const ERROR_CODE_TO_EXIT_CODE = Object.freeze({
   [ERROR_CODES.EVENT_NOT_FOUND]: EXIT_CODES.invalidCliUsage,
@@ -43,7 +49,7 @@ const ERROR_CODE_TO_EXIT_CODE = Object.freeze({
   [ERROR_CODES.INTERNAL_ERROR]: EXIT_CODES.internalError,
 });
 
-const KNOWN_FLAGS = Object.freeze(["--event", "--output-dir", "--generated-at", "--repository-commit", "--overwrite", "--help"]);
+const KNOWN_FLAGS = Object.freeze(["--event", "--output-dir", "--generated-at", "--repository-commit", "--overwrite", "--help", "--matching-index", "--prior-manifests-dir"]);
 
 // §8.1: rejects unknown args, missing values, and duplicate args instead of
 // silently taking the last/first occurrence.
@@ -76,11 +82,13 @@ export function parseCliArgs(argv) {
     else if (flag === "--output-dir") result.outputDir = value;
     else if (flag === "--generated-at") result.generatedAt = value;
     else if (flag === "--repository-commit") result.repositoryCommit = value;
+    else if (flag === "--matching-index") result.matchingIndexPath = value;
+    else if (flag === "--prior-manifests-dir") result.priorManifestsDir = value;
   }
   return result;
 }
 
-const HELP_TEXT = `usage: node scripts/intake/process-issue.mjs --event <path> --output-dir <dir> [--generated-at <ISO8601>] [--repository-commit <sha>] [--overwrite]
+const HELP_TEXT = `usage: node scripts/intake/process-issue.mjs --event <path> --output-dir <dir> [--generated-at <ISO8601>] [--repository-commit <sha>] [--overwrite] [--matching-index <path>] [--prior-manifests-dir <dir>]
 
 Processes one local GitHub-issue event fixture into an intake manifest,
 Markdown report and processing result. Fully offline; never authorizes or
@@ -103,10 +111,20 @@ function resolveSafeOutputPath(outputDirResolved, intakeId) {
   return finalDir;
 }
 
+// Loads the matching index once per call — `matchingIndexPath` lets
+// tests inject a small synthetic index instead of always reading the
+// real ~450-entity dataset (§22: index build cost paid once per run,
+// never per-candidate).
+function loadMatchingIndex(matchingIndexPath) {
+  if (!matchingIndexPath) return buildMatchingIndex({});
+  return JSON.parse(readFileSync(matchingIndexPath, "utf8"));
+}
+
 // The whole pipeline as one pure-ish function (all side effects — event
-// read, temp files — are still real, but there is exactly one call site:
-// runCli below), so tests can call it directly instead of shelling out.
-export function processIssueEvent({ eventPath, outputDir, generatedAt, repositoryCommit, overwrite }) {
+// read, temp files, matching-index build — are still real, but there is
+// exactly one call site: runCli below), so tests can call it directly
+// instead of shelling out.
+export function processIssueEvent({ eventPath, outputDir, generatedAt, repositoryCommit, overwrite, matchingIndexPath, priorManifestsDir }) {
   const eventJson = loadEventFile(eventPath);
   const inputHash = hashEventInput(eventJson);
 
@@ -121,6 +139,47 @@ export function processIssueEvent({ eventPath, outputDir, generatedAt, repositor
     normalization_notes: [],
   };
 
+  // ---- Phase 3: candidate matching (PHASE_003.md §9, §10) ----
+  const matchingIndex = loadMatchingIndex(matchingIndexPath);
+  const lookups = buildIndexLookups(matchingIndex);
+  const { candidates: extractedCandidates, observations: extractionObservations } = extractCandidates(parsed);
+  const candidateSubjects = extractedCandidates.map((candidate) => {
+    const { matches, total_candidates_considered, total_matches_above_floor } = matchCandidateAgainstIndex(candidate, matchingIndex, lookups);
+    const normalizedLabel = candidate.candidate_type === "organization" ? candidate.normalized.organization.comparisonName : candidate.normalized.person.comparisonName;
+    return {
+      candidate_id: candidate.candidate_id,
+      input: { candidate_type: candidate.candidate_type, raw_label: candidate.raw_label, normalized_label: normalizedLabel, source_field: candidate.source_field },
+      extracted_identifiers: candidate.extracted_identifiers,
+      resolution_status: resolveCandidate(matches),
+      matches,
+      total_candidates_considered,
+      total_matches_above_floor,
+    };
+  });
+  const matching = { dataset_commit: matchingIndex.generated_from_commit, index_schema_version: matchingIndex.schema_version, candidate_subjects: candidateSubjects };
+
+  // ---- Phase 3: duplicate intake detection (PHASE_003.md §11) ----
+  const intakeId = buildIntakeId(eventJson.repository.full_name, eventJson.issue.number);
+  const currentForDuplicateCheck = {
+    id: intakeId,
+    source_event: { repository: eventJson.repository.full_name, issue_number: eventJson.issue.number },
+    normalization: { subject_text_normalized: normalization.subject_text_normalized, normalized_source_urls: normalizedUrls },
+    submission: { description_text: parsed.description_text },
+    proposed_authorization_scope: { subject_candidates: [{ extracted_identifiers: candidateSubjects[0]?.extracted_identifiers ?? {} }] },
+  };
+  const priorManifests = priorManifestsDir ? loadPriorManifestsFromDirectory(priorManifestsDir) : [];
+  const duplicateResult = detectDuplicateIntake(currentForDuplicateCheck, priorManifests);
+  const duplicateDetection = { ...duplicateResult, prior_manifest_source: priorManifestsDir ?? null };
+
+  // ---- Phase 3: risk classification (PHASE_003.md §12-§16) ----
+  const riskResult = classifyIntakeRisk({
+    submission: parsed,
+    matchingResult: { candidate_subjects: candidateSubjects, normalizedSourceUrlCount: normalizedUrls.length },
+    duplicateResult,
+  });
+  const riskClassification = { flags: riskResult.flags };
+  const workflowDecision = riskResult.workflow_decision;
+
   const warnings = [];
   for (const section of parsed.unparsed_sections) {
     warnings.push({ code: "unrecognized_section", field: section.heading, message: `unrecognized section retained without interpretation: "${section.heading}"` });
@@ -133,15 +192,19 @@ export function processIssueEvent({ eventPath, outputDir, generatedAt, repositor
       warnings.push({ code: `url_${observation}`, field: "submitted_source_urls_raw", message: `${entry.normalized}: ${observation}` });
     }
   }
+  for (const observation of extractionObservations) {
+    warnings.push({ code: observation, field: "identifiers_text", message: `candidate extraction observation: ${observation}` });
+  }
 
   const manifest = buildIntakeManifest({
     event: eventJson,
     parsedSubmission: parsed,
     normalization,
     systemObservations: { warnings, errors: [] },
-    // §15.3: any warning means a human should look this over before
-    // triage proceeds normally — a mechanical rule, not a judgment call.
-    workflow: { intake_status: warnings.length > 0 ? "needs_information" : "triage" },
+    matching,
+    duplicateDetection,
+    riskClassification,
+    workflowDecision,
     generatedAt,
     repositoryCommit,
     inputHash,
@@ -219,6 +282,8 @@ function runCli(argv) {
       generatedAt,
       repositoryCommit,
       overwrite: args.overwrite,
+      matchingIndexPath: args.matchingIndexPath,
+      priorManifestsDir: args.priorManifestsDir,
     });
     console.log(JSON.stringify(result, null, 2));
     return EXIT_CODES.success;

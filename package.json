@@ -6,7 +6,7 @@
   "scripts": {
     "postinstall": "node scripts/setup/install-git-hooks.mjs",
     "hooks:install": "node scripts/setup/install-git-hooks.mjs",
-    "test": "node --test scripts/build/*.test.mjs scripts/dossier/*.test.mjs scripts/data/*.test.mjs scripts/migrations/*.test.mjs scripts/lint/*.test.mjs scripts/ui/*.test.mjs scripts/ci/*.test.mjs scripts/osint/*.test.mjs scripts/intake/*.test.mjs",
+    "test": "node --test scripts/build/*.test.mjs scripts/dossier/*.test.mjs scripts/data/*.test.mjs scripts/migrations/*.test.mjs scripts/lint/*.test.mjs scripts/ui/*.test.mjs scripts/ci/*.test.mjs scripts/osint/*.test.mjs scripts/intake/*.test.mjs scripts/intake/matching/*.test.mjs scripts/intake/risk/*.test.mjs",
     "css:build": "tailwindcss -i ./static/css/input.css -o ./static/css/main.css --minify",
     "css:watch": "tailwindcss -i ./static/css/input.css -o ./static/css/main.css --watch",
     "js:build": "esbuild assets/js/app.js assets/js/graph-app.js --bundle --minify --target=es2020 --outdir=static/js",
@@ -66,7 +66,11 @@
     "intake:process": "node scripts/intake/process-issue.mjs",
     "intake:validate": "node scripts/intake/validate-manifest.mjs",
     "intake:fixture": "node scripts/intake/run-fixture.mjs",
-    "test:intake": "node --test scripts/intake/*.test.mjs"
+    "test:intake": "node --test scripts/intake/*.test.mjs scripts/intake/matching/*.test.mjs scripts/intake/risk/*.test.mjs",
+    "test:intake:matching": "node --test scripts/intake/matching/*.test.mjs",
+    "test:intake:risk": "node --test scripts/intake/risk/*.test.mjs",
+    "intake:index": "node scripts/intake/build-matching-index.mjs",
+    "intake:match-fixture": "node scripts/intake/process-issue.mjs --event tests/fixtures/intake/valid-new-dossier.json --output-dir .tmp/intake/match-fixture --generated-at 2026-08-02T00:00:00.000Z --repository-commit 0000000000000000000000000000000000000f --overwrite"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.12.1",
