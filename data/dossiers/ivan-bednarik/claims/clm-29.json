@@ -10,11 +10,14 @@
     "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
   },
   "text": "Rozpočet SFDI na rok 2026 podle odborného tisku předpokládal zpomalení nebo odklad přípravy u řady železničních staveb, mimo jiné Kolín–Děčín, Přerov–Ostrava, hraničního úseku Plzeň–Domažlice, Praha–Mladá Boleslav–Liberec, Ústí nad Labem–Cheb a České Budějovice–Plzeň.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-22"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-33"
     }
   ],
   "subjects": [
