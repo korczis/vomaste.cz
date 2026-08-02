@@ -10,11 +10,14 @@
     "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
   },
   "text": "Sněmovna má o prezidentském vetu hlasovat v úterý 25. srpna 2026; k přehlasování je potřeba nejméně 101 hlasů a vládní koalice jich má 108.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-25"
     }
   ],
   "subjects": [

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-26",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-26",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "title": "SRC-26 — Ekonomický deník",
+  "description": "Senátoři proti Schillerové. Chtějí přísnější dohled nad výdaji a omezit pravomoci ministerstva.",
+  "outlet": "Ekonomický deník",
+  "sourceType": "zpravodajství",
+  "url": "https://ekonomickydenik.cz/senatori-proti-schillerove-dohled-pravomoci-ministerstva/",
+  "published": "2026-06-18",
+  "retrieved": "2026-08-02",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-14"
+    }
+  ],
+  "subjects": [
+    "schillerova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Ekonomický deník, publikováno 18. 6. 2026, nezávisle na\nČeskéNoviny.cz/ČTK (SRC-06) potvrzuje totéž jádro faktu: „Senát\nrovněž doporučil omezit pravomoc ministerstva financí upravovat\nrozpočty parlamentních komor, prezidentské kanceláře, Ústavního soudu,\nNejvyššího kontrolního úřadu, ombudsmana a Národní rozpočtové rady,“\ns tím, že úpravy by šlo provádět jen na základě písemné žádosti\npříslušné instituce.\n\n**Nezávislost.** Jiný vydavatel (Ekonomický deník) než ČeskéNoviny.cz/\nČTK — nezávislé potvrzení stejného výčtu chráněných institucí, nikoli\njen převzatá agenturní zpráva."
+    }
+  ],
+  "order": 26
+}
