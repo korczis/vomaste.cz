@@ -28,6 +28,12 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-17"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-39"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-40"
     }
   ],
   "subjects": [
