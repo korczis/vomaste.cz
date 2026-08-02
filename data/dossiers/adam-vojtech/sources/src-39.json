@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-39",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-39",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "title": "SRC-39 — Aktuálně.cz (komentář), 22. 3. 2026",
+  "description": "Komentář kardiologa prof. Josefa Veselky: kauza olomouckých defibrilátorů je testem důvěry v české zdravotnictví.",
+  "outlet": "Aktuálně.cz",
+  "sourceType": "komentář",
+  "url": "https://nazory.aktualne.cz/komentar-kauza-olomouckych-defibrilatoru-je-testem-duvery-v-ceske-zdravotnictvi/r~aaa29df3f81caff68a11a1acd32f19f7/?lp=1",
+  "published": "2026-03-22",
+  "retrieved": "2026-08-03",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-53"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Co dokládá.** Autorský komentář kardiologa prof. Josefa Veselky na Aktuálně.cz, volně dostupný, bez paywallu. Hodnotí kauzu olomouckých defibrilátorů jako „nejzávažnější kauzu českého zdravotnictví po roce 1989, která se přímo dotýká pacientů“, popisuje ji jako možný patnáctiletý strukturální problém, na který nereagovaly pojišťovny, vedení nemocnice ani odborné společnosti, a žádá, aby ministerstvo zdravotnictví transparentně zveřejnilo závěry, na jejichž základě podalo trestní oznámení. Jde o **autorský názor**, ne o zjištění vyšetřování.\n\n**Proč je to tu důležité.** Odpovídá na [GAP-03](@/dossiers/adam-vojtech/gaps/gap-03.md): agregátor Praha na Dlani, přes který se k tomuto tématu původně přistupovalo, vracel jen navigaci webu, ne obsah článku. Tento přímo otevřený a přečtený komentář na Aktuálně.cz pokrývá stejné téma (kauza důvěry ve zdravotnictví po defibrilátorové kauze) — **není jisté**, že jde o byte-identický text s dříve nedostupným článkem \"Důvěra, to je, oč tu běží\" (jiný titulek), proto je veden jako samostatný, nový zdroj, ne jako náhrada za nedohledaný text."
+    }
+  ],
+  "order": 39
+}

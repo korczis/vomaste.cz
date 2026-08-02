@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-53",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-53",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "text": "Kardiolog prof. Josef Veselka v komentáři na Aktuálně.cz (22. 3. 2026) napsal: „Myslím, že se jedná o nejzávažnější kauzu českého zdravotnictví po roce 1989, která se přímo dotýká pacientů,“ a vyzval ministerstvo, aby transparentně zveřejnilo závěry, na jejichž základě podalo trestní oznámení — jde o jeho vlastní hodnocení, ne o zjištění vyšetřování.",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-39"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "order": 53,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam tvrzení CLM-53 — shrnutí, stav a zdroj\nvýše jsou úplné. Odpovídá na [GAP-03](@/dossiers/adam-vojtech/gaps/gap-03.md)\ns novým, přímo ověřeným zdrojem téhož tématu — ne s rekonstrukcí\npůvodně nedostupného textu."
+    }
+  ]
+}
