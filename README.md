@@ -232,7 +232,7 @@ Rozhodnutí a jeho důsledky: [ADR](docs/adr/dossier-directory-multi-view.md).
 ├── scripts/build/          # pipeline.mjs — jediný orchestrační entrypoint buildu
 ├── scripts/dossier/        # build/verify nástroje nad compiled modelem (exporty, navigace…)
 ├── scripts/lint/           # linty (generated content, hardcoded records, komponenty…)
-├── scripts/osint/          # živé rejstříkové nástroje (ARES) — mimo build
+├── scripts/osint/          # živé rejstříkové nástroje (ARES, registr smluv) — mimo build
 ├── scripts/coop/           # koordinace více instancí (bus, worktrees)
 ├── scripts/setup/          # instalace git hooks (postinstall)
 ├── .githooks/              # pre-commit: rychlá podmnožina validátorů
@@ -365,7 +365,67 @@ Instalace `just`: <https://github.com/casey/just#installation>.
 | `npm run lint:component-reuse` | každá šablona (kromě `base.html`/`404.html`) používá `macros/ui.html`, a každá šablona s tabulkou používá `macros/table.html` (`table::advanced_table`) — žádný ručně psaný duplicitní markup místo sdílené komponenty |
 | `npm run build:government-roster` | z `data/government.toml` vygeneruje kontextové entity členů vlády (veřejná funkce z oficiálního zdroje, `publicationRole = "context"`, **nikdy** dossier); existující záznamy nikdy nepřepisuje; součást `npm run build` |
 | `node scripts/osint/ares-lookup.mjs --ico=… \| --name="…"` | dotaz do ARES (jediný spolehlivě funkční primární rejstřík) — **není** součástí `npm run build`, dělá živý síťový dotaz; doloží identitu/sídlo/formu/status, **nedoloží** skutečné majitele ani „od kdy ovládá" |
+| `npm run screening:public-money -- --ico=…` | screening toku veřejných prostředků k IČO z registru smluv (ISRS) — **není** součástí `npm run build`, stahuje měsíční otevřená data; výstup je **interní** (`data/generated/public-money-screening.json` + `reports/public-money-screening.md`), nikdy se neroutuje. Doloží zveřejněné smlouvy, objem a objednatele v pokrytém období; **nedoloží** žádné pochybení ani úplnost. Viz [screening veřejných peněz](#screening-toku-veřejných-prostředků) |
 | `node scripts/osint/expand-entity.mjs --ico=… [--write]` | rozbalí rejstříkové okolí firmy (statutární orgány, společníci) na kontextové entity — kanonické JSON záznamy v `data/dossiers/_shared/entities/` (stránky `/entities/…` přegeneruje `npm run data:build`); na rozdíl od základního endpointu čte větev veřejného rejstříku, která u s.r.o. **vrací** zapsané společníky i velikost podílu. Akcionáři a.s. v rejstříku nejsou, takže prázdný seznam znamená „nezapsáno", ne „firma nemá vlastníky". Data narození a adresy bydliště nepřebírá; existující záznam nikdy nepřepíše |
+
+## Screening toku veřejných prostředků
+
+`npm run screening:public-money` spočítá pro zadaná IČO, kolik smluv s nimi
+uzavřely veřejné instituce, v jakém objemu a kdo byli objednatelé. Data jdou
+z **měsíčních otevřených dat registru smluv** (ISRS,
+`data.smlouvy.gov.cz/dump_<RRRR>_<MM>.xml`) — jediného dokumentovaného
+strojového rozhraní registru. Lidské rozhraní `smlouvy.gov.cz/vyhledavani`
+skript záměrně nescrapuje: jeho HTML není kontrakt.
+
+```bash
+npm run screening:public-money -- --ico=04449461
+npm run screening:public-money -- --ico=04449461,01529820 --from=2024-01 --to=2024-12
+npm run screening:public-money -- --from-external-ids
+```
+
+| Volba | Význam |
+|---|---|
+| `--ico=<IČO>[,<IČO>…]` | ad-hoc screening zadaných IČO |
+| `--from-external-ids` | IČO z kanonických entit (`externalIds.ico`, resp. `ares`); dnes je nemá žádná z 504 entit, takže režim korektně ohlásí nula vstupů a na síť vůbec nesáhne |
+| `--from=RRRR-MM`, `--to=RRRR-MM` | období; výchozí je posledních **12 dokončených** měsíců (běžící měsíc má neúplný dump a tiše by objem podhodnotil) |
+| `--no-cache` | ignoruje staženou cache v `.tmp/public-money/` |
+| `--json` | strojový výstup na stdout |
+
+**Výstupy jsou interní a nikdy se neroutují**: `data/generated/public-money-screening.json`
+(gitignored) a `reports/public-money-screening.md`. Zápis mimo
+`data/generated/`, `reports/` a `.tmp/` skript odmítá v kódu
+(`assertWritablePath`), takže se screening nemůže dostat do `content/`
+ani do kanonického modelu `data/dossiers/` — a statická brána v testech to
+hlídá.
+
+### Co report dokládá a co ne
+
+- **Dokládá**: že v registru existují zveřejněné smlouvy, kde subjekt
+  vystupuje jako smluvní strana, s objednatelem, datem a hodnotou.
+- **Nedokládá pochybení.** Zveřejnění je zákonná povinnost (zákon
+  č. 340/2015 Sb.) a drtivá většina smluv je běžný chod veřejné správy.
+  Objem je objem, ne tvrzení o korupci ani o předražení.
+- **Není autorizační rozhodnutí.** Nezakládá dossier a nikoho nepovyšuje
+  na předmět šetření — to vyžaduje datovaný zápis v `AGENTS.md`
+  (viz [`docs/entity-discovery.md`](docs/entity-discovery.md)).
+- **Není úplný.** Registr pokrývá smlouvy nad 50 000 Kč od 1. 7. 2016 se
+  zákonnými výjimkami a report navíc jen zvolené období. Nula znamená
+  „v pokrytém období nic zveřejněného", nikdy „subjekt nedostal veřejné
+  peníze". Smlouvy bez vyplněné hodnoty se počítají do počtu, ale ne do
+  objemu — report to u každého subjektu vypisuje, takže celkový objem je
+  vždy **spodní odhad**.
+
+Verze téže smlouvy (dodatky, opravy) se **nesčítají** — drží se jen platná,
+resp. nejvyšší verze podle `idSmlouvy`, jinak by dodatky objem několikanásobně
+nafoukly.
+
+> ⚠️ **Mapování XML elementů zatím nebylo ověřeno živým během.** Vzniklo podle
+> dokumentované struktury dumpu ISRS; v prostředí, kde skript vznikl, byl
+> registr nedostupný (TLS handshake reset ze všech klientů). Skript je proti
+> tiché chybě bráněný konstrukčně — dump, ze kterého nevypadne ani jeden
+> `<zaznam>`, je tvrdá chyba, ne prázdný výsledek — ale první běh na
+> funkční síti je potřeba zkontrolovat očima. Mapování žije na jednom místě
+> (konstanta `ISRS_DUMP` v `scripts/osint/screen-public-money.mjs`).
 
 ## Přidání obsahu do dossieru
 
