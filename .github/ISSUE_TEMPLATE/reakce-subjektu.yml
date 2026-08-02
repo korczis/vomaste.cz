@@ -29,3 +29,10 @@ body:
       placeholder: "subjekt / právní zástupce / mluvčí…"
     validations:
       required: true
+  - type: checkboxes
+    id: verejnost
+    attributes:
+      label: Potvrzení veřejnosti podání
+      options:
+        - label: Beru na vědomí, že tato issue (včetně uvedeného vztahu k subjektu) je veřejná a trvalá; neposílám neveřejné dokumenty, osobní kontaktní údaje ani citlivý materiál nad rámec toho, co lze veřejně citovat.
+          required: true

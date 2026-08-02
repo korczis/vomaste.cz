@@ -1,8 +1,14 @@
-blank_issues_enabled: true
+# Blank issues jsou vypnuté záměrně (audit T-042, GitHub CRITICAL nález):
+# prázdná issue obchází labely, varování o veřejnosti i povinné checkboxy
+# formulářů — nejsnazší cesta, jak citlivý podnět skončí trvale veřejně.
+blank_issues_enabled: false
 contact_links:
-  - name: 🔒 Hlášení zranitelnosti (soukromě)
-    url: https://github.com/korczis/vomaste.cz/security/advisories/new
-    about: Bezpečnostní chyby NEHLASTE veřejnou issue — použijte soukromé hlášení.
+  - name: 🔒 Bezpečnostní problém projektu (kód, build, CI, nasazení)
+    url: https://github.com/korczis/vomaste.cz/blob/master/SECURITY.md
+    about: Zranitelnosti hlaste soukromě podle SECURITY.md. Kanál slouží výhradně chybám projektu — NENÍ určen pro citlivé podněty ke kauzám či dossierům a neposkytuje ochranu zdroje.
   - name: ⚠️ Citlivé podklady ke kauzám
     url: https://github.com/korczis/vomaste.cz/blob/master/docs/constitution/OPEN_INTELLIGENCE_COMMONS.md
     about: Projekt zatím NEMÁ důvěrný intake kanál. GitHub je veřejný a trvalý — neposílejte sem nepublikovaný citlivý materiál ani identitu zdrojů.
+  - name: 📖 Jak podat veřejný podnět (pravidla přispívání)
+    url: https://github.com/korczis/vomaste.cz/blob/master/CONTRIBUTING.md
+    about: Veřejný podnět založený na veřejných informacích a veřejných zdrojích — co lze přispět hned, co vyžaduje autorizaci a jak probíhá přezkum.
