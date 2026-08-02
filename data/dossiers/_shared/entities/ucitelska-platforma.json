@@ -1,42 +1,42 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/ucitelska-platforma",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "ucitelska-platforma",
- "entityId": "ucitelska-platforma",
- "title": "Učitelská platforma",
- "entityType": "organization",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "robert-plaga"
- ],
- "order": 418,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/ucitelska-platforma",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "ucitelska-platforma",
+  "entityId": "ucitelska-platforma",
+  "title": "Učitelská platforma",
+  "entityType": "organization",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "robert-plaga"
   ],
-  "claimRefs": [
-   "CLM-27",
-   "CLM-28",
-   "CLM-51"
-  ],
-  "sourceRefs": [
-   "SRC-21",
-   "SRC-23",
-   "SRC-28"
+  "order": 418,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02"
+    ],
+    "claimRefs": [
+      "CLM-27",
+      "CLM-28",
+      "CLM-51"
+    ],
+    "sourceRefs": [
+      "SRC-21",
+      "SRC-23",
+      "SRC-02"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Profesní sdružení učitelů; kritika testování i načasování zkrácení školního roku. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (robert-plaga). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Profesní sdružení učitelů; kritika testování i načasování zkrácení školního roku. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (robert-plaga). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
-  }
- ]
 }

@@ -5,7 +5,7 @@ system. This is provenance, not a publication decision — see
 `data/authorizations.toml` and `scripts/dossier/authorize-entity.mjs`
 for the only thing that actually authorizes a dossier.
 
-680 record(s) logged across 5 day(s). 0 new since last run.
+682 record(s) logged across 5 day(s). 0 new since last run.
 
 ## 2026-07-29
 
@@ -701,3 +701,5 @@ for the only thing that actually authorizes a dossier.
 - `edge-mrazova-lexmrazova` (relation, created)
 - `edge-mrazova-mestobilina` (relation, created)
 - `edge-mrazova-ministerstvospravedlnosti` (relation, created)
+- `vojtech-dobes` (entity, created)
+- `edge-dobes-kauza2025` (relation, created)

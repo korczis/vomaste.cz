@@ -1,47 +1,46 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/kauza-majetkove-priznani-cerveny",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "kauza-majetkove-priznani-cerveny",
- "entityId": "kauza-majetkove-priznani-cerveny",
- "title": "Přestupkové řízení k majetkovému přiznání Igora Červeného",
- "entityType": "legal_or_administrative_process",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "igor-cerveny"
- ],
- "order": 205,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/kauza-majetkove-priznani-cerveny",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "kauza-majetkove-priznani-cerveny",
+  "entityId": "kauza-majetkove-priznani-cerveny",
+  "title": "Přestupkové řízení k majetkovému přiznání Igora Červeného",
+  "entityType": "legal_or_administrative_process",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "igor-cerveny"
   ],
-  "claimRefs": [
-   "CLM-02",
-   "CLM-05",
-   "CLM-07",
-   "CLM-20",
-   "CLM-26"
-  ],
-  "sourceRefs": [
-   "SRC-02",
-   "SRC-03",
-   "SRC-04",
-   "SRC-11",
-   "SRC-13",
-   "SRC-14"
+  "order": 205,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02"
+    ],
+    "claimRefs": [
+      "CLM-02",
+      "CLM-05",
+      "CLM-07",
+      "CLM-20",
+      "CLM-26"
+    ],
+    "sourceRefs": [
+      "SRC-02",
+      "SRC-03",
+      "SRC-04",
+      "SRC-13",
+      "SRC-14"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Nepřiznaný dům v Bobnicích za 11,4 mil. Kč; opravné oznámení a pokuta 7 500 Kč, formální ukončení řízení nedoloženo. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (igor-cerveny). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Nepřiznaný dům v Bobnicích za 11,4 mil. Kč; opravné oznámení a pokuta 7 500 Kč, formální ukončení řízení nedoloženo. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (igor-cerveny). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
-  }
- ]
 }

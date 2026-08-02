@@ -280,3 +280,48 @@ test("cizí @context URL je chyba, žádný network fetch", async () => {
   const errors = await validateRecordJsonLd(record, CLAIM);
   assert.ok(errors.some((e) => e.includes("nejde načíst")), errors.join("\n"));
 });
+
+// --- S9: provenance refs entit ------------------------------------------
+
+test("S9: provenance ref rozlišitelný v dossieru entity projde", () => {
+  const model = clone();
+  find(model, ORG).record.provenance = {
+    discoveredAt: "2026-08-02",
+    discoveredVia: ["test"],
+    claimRefs: ["CLM-01"],
+    sourceRefs: ["SRC-01"],
+  };
+  const { errors } = validateSemantics(model, { authorizations: AUTHS });
+  assert.ok(!errors.some((e) => e.includes("S9") || e.includes("provenance")), errors.join("\n"));
+});
+
+test("S9: provenance ref na neexistující SRC v dossierech entity je chyba", () => {
+  const model = clone();
+  find(model, ORG).record.provenance = {
+    discoveredAt: "2026-08-02",
+    discoveredVia: ["test"],
+    sourceRefs: ["SRC-99"],
+  };
+  const { errors } = validateSemantics(model, { authorizations: AUTHS });
+  assert.ok(
+    errors.some((e) => e.includes('provenance.sourceRefs "SRC-99"')),
+    errors.join("\n"),
+  );
+});
+
+test("S9: ref mimo pole dossiers entity je chyba i když jinde existuje", () => {
+  const model = clone();
+  addSecondPackage(model);
+  const org = find(model, ORG).record;
+  org.dossiers = ["example-b"]; // v example-b existuje jen SRC-01, žádný CLM-01
+  org.provenance = {
+    discoveredAt: "2026-08-02",
+    discoveredVia: ["test"],
+    claimRefs: ["CLM-01"],
+  };
+  const { errors } = validateSemantics(model, { authorizations: AUTHS });
+  assert.ok(
+    errors.some((e) => e.includes('provenance.claimRefs "CLM-01"')),
+    errors.join("\n"),
+  );
+});

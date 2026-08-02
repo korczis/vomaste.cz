@@ -1,45 +1,44 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/jan-sila",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "jan-sila",
- "entityId": "jan-sila",
- "title": "Jan Síla",
- "entityType": "person",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "adam-vojtech"
- ],
- "order": 164,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/jan-sila",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "jan-sila",
+  "entityId": "jan-sila",
+  "title": "Jan Síla",
+  "entityType": "person",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "adam-vojtech"
   ],
-  "claimRefs": [
-   "CLM-18",
-   "CLM-45",
-   "CLM-46",
-   "CLM-48",
-   "CLM-49"
-  ],
-  "sourceRefs": [
-   "SRC-11",
-   "SRC-27",
-   "SRC-28",
-   "SRC-29"
+  "order": 164,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02"
+    ],
+    "claimRefs": [
+      "CLM-18",
+      "CLM-45",
+      "CLM-46",
+      "CLM-48",
+      "CLM-49"
+    ],
+    "sourceRefs": [
+      "SRC-11",
+      "SRC-27",
+      "SRC-29"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Zdravotnický expert SPD; hlavní koaliční kritik Vojtěchovy očkovací strategie. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (adam-vojtech). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Zdravotnický expert SPD; hlavní koaliční kritik Vojtěchovy očkovací strategie. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (adam-vojtech). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
-  }
- ]
 }

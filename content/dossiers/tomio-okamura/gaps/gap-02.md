@@ -29,3 +29,15 @@ tak není potvrzením, že pravdivé je.
 **Podmínka uzavření**: doložený procesní krok — nové rozhodnutí Sněmovny
 o vydání, zahájení či zastavení řízení, nebo jiné doložitelné rozhodnutí,
 ověřené přímým otevřením zdroje.
+
+**Opakovaná kontrola k 2026-08-02**: přímo ověřeno na CNN Prima News
+(5. 3. 2026), že Sněmovna hlasovala o nevydání Okamury ke kauze
+volebních plakátů — potvrzuje stav popsaný výše, žádný novější procesní
+krok nenalezen. **Metodická poznámka pro další rešerši**: hledání podle
+jména bez upřesnění kauzy vrací i starší, věcně **nesouvisející**
+články, kde Sněmovna Okamuru v minulosti k jinému stíhání naopak
+vydala — tyto zdroje nebyly otevřeny (mimo rozsah GAP-02, který se
+týká výhradně kauzy volebních plakátů z roku 2024) a tento dossier je
+nepoužívá. Kdokoliv bude tuto mezeru dál rešeršovat, musí u každého
+nalezeného zdroje ověřit, že jde skutečně o kauzu plakátů, ne o
+záměnu s jiným, časově vzdáleným řízením.
