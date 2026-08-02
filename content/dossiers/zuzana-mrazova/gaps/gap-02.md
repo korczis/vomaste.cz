@@ -19,3 +19,11 @@ Není ověřeno, zda rozhodnutí o pokutě již nabylo právní moci a zda byla 
 **Proč je to mezera**: K datu rešerše (30. 7. 2026) zdroje uvádějí pouze deklaraci mluvčí ministerstva, že se Mrázová neodvolá; lhůta pro odvolání běžela. Nutno sledovat vývoj — do potvrzení právní moci je POVINNÉ rámování „nepravomocná“. Tato mezera **není** zjištěním žádným
 směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
+
+**Aktualizace 2026-08-02**: dohledán konkrétní časový rámec — mluvčí
+mosteckého magistrátu uvedla, že rozhodnutí by mohlo nabýt právní moci
+přibližně do tří týdnů od 25. 7. 2026, pokud se Mrázová neodvolá (e15.cz,
+viz [CLM-57](@/dossiers/zuzana-mrazova/claims/clm-57.md)). Cíleně
+prohledáno i k tomuto pozdějšímu datu — **žádný zdroj k 2026-08-02
+nepotvrzuje ani nabytí právní moci, ani zaplacení pokuty**. Mezera
+zůstává otevřená; POVINNÉ rámování „nepravomocná" platí i nadále.

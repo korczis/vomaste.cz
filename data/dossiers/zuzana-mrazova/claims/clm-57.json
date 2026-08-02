@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-57",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-57",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "text": "Podle mluvčí města Most by rozhodnutí o pokutě mohlo nabýt právní moci přibližně do tří týdnů od 25. 7. 2026, pokud se Mrázová neodvolá; k datu kontroly 2026-08-02 žádný zdroj nabytí právní moci ani zaplacení pokuty nepotvrzuje",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-14"
+    }
+  ],
+  "subjects": [
+    "mrazova"
+  ],
+  "order": 57,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam tvrzení CLM-57 — shrnutí, stav a zdroje\nvýše jsou úplné. Doplňuje\n[GAP-02](@/dossiers/zuzana-mrazova/gaps/gap-02.md) o konkrétní časový\nrámec namísto obecného „lhůta pro odvolání běžela\".\n\n**Co to je a není.** Tříttýdenní odhad je vyjádření mluvčí mosteckého\nmagistrátu, ne závazná lhůta se známým koncovým datem — ani ten\nnejnovější dohledaný zdroj (2026-08-02) nepotvrzuje, že rozhodnutí\nnabylo právní moci nebo že byla pokuta zaplacena. Povinné rámování\n„nepravomocná\" zůstává v platnosti při každé zmínce."
+    }
+  ]
+}
