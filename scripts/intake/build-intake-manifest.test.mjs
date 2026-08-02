@@ -45,7 +45,10 @@ function minimalManifestInput(overrides = {}) {
     },
     normalization: { subject_text_normalized: "Jan Testovací", normalized_source_urls: [], normalization_notes: [] },
     systemObservations: { warnings: [], errors: [] },
-    workflow: { intake_status: "triage" },
+    matching: { dataset_commit: "test-commit", index_schema_version: "1.0.0", candidate_subjects: [] },
+    duplicateDetection: { duplicate_status: "no_duplicate", candidates: [], manual_review_required: false, prior_manifest_source: null },
+    riskClassification: { flags: [] },
+    workflowDecision: { winning_effect: null, intake_status: "triage" },
     generatedAt: "2026-08-02T00:00:00.000Z",
     repositoryCommit: "0000000000000000000000000000000000000f",
     inputHash: "a".repeat(64),
@@ -70,12 +73,12 @@ test("buildIntakeManifest is byte-for-byte deterministic given identical inputs"
 test("buildIntakeManifest can only ever set authorization_status to pending_owner", () => {
   const manifest = buildIntakeManifest(minimalManifestInput());
   assert.equal(manifest.workflow.authorization_status, "pending_owner");
-  // Even if a caller tried to smuggle a wider value through workflow.*,
-  // the builder only reads workflow.intake_status — authorization_status
-  // and publication_status are literal constants in the module, not
-  // pass-through fields.
+  // Even if a caller tried to smuggle a wider value through
+  // workflowDecision.*, the builder only reads workflowDecision.intake_status
+  // — authorization_status and publication_status are literal constants
+  // in the module, not pass-through fields.
   const manifestWithHostileInput = buildIntakeManifest(
-    minimalManifestInput({ workflow: { intake_status: "triage", authorization_status: "authorized", publication_status: "published" } })
+    minimalManifestInput({ workflowDecision: { winning_effect: null, intake_status: "triage", authorization_status: "authorized", publication_status: "published" } })
   );
   assert.equal(manifestWithHostileInput.workflow.authorization_status, "pending_owner");
   assert.equal(manifestWithHostileInput.workflow.publication_status, "blocked");

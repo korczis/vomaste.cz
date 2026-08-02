@@ -1,15 +1,19 @@
-# Intake manifest (Phase 2)
+# Intake manifest (Phase 2/3)
 
 Reference for `schemas/intake/intake-manifest.schema.json` — the artifact
 `scripts/intake/build-intake-manifest.mjs` produces from one validated,
-normalized submission. See `docs/adr/ADR-public-dossier-intake.md` for the
-architecture decision this implements, and
-`docs/missions/intake/PHASE_002.md` for the mission text this phase
-followed.
+normalized submission plus Phase 3's matching/duplicate/risk enrichment.
+See `docs/adr/ADR-public-dossier-intake.md` for the architecture decision
+this implements, `docs/missions/intake/PHASE_002.md` /
+`PHASE_003.md` for the mission text, and
+`docs/intake/entity-matching.md` / `docs/intake/risk-classification.md`
+for the two Phase 3 subsystems this manifest now carries.
 
 ## Schema versions
 
-- `schema_version`: `"0.1.0"` — still experimental (not `1.0.0`), per
+- `schema_version`: `"0.2.0"` (Phase 3 — added `matching`,
+  `duplicate_detection`, `risk_classification`, `workflow_decision`, all
+  required) — still experimental (not `1.0.0`), per
   `docs/adr/ADR-public-dossier-intake.md` §23.1. A future phase may bump
   this once the site owner accepts the model as stable.
 - `form_version` (inside `system_observations`): the version of the
@@ -51,8 +55,27 @@ bugfix release are three different kinds of compatibility break.
   `decision_class` and `authorization_effect` are JSON Schema `const`
   values (`"machine_draft_only"` / `"none"`) — not just convention, the
   schema itself makes any other value invalid. `subject_candidates` is a
-  mechanical echo of what the submitter typed (`resolution_status` is
-  always `"unresolved"` — Phase 2 has no entity matching, that's Phase 3).
+  mechanical echo of what the submitter typed; as of Phase 3,
+  `resolution_status` reflects the REAL matching outcome
+  (`unresolved` when no candidate was extracted at all, otherwise one of
+  `no_match` / `possible_matches` / `ambiguous` / `conflicting_identifiers`
+  — see `docs/intake/entity-matching.md`). `entity_id` stays `null`
+  always — matching retrieves candidates, it never asserts identity.
+- **`matching`** (Phase 3) — the full candidate-match detail: which index
+  commit was used, and per-candidate `matches[]` (capped at 10, §10.2)
+  with the `{match_type, score, score_components, confidence_class,
+  matched_fields, conflicting_fields, reasons, manual_review_required}`
+  shape. See `docs/intake/entity-matching.md`.
+- **`duplicate_detection`** (Phase 3) — `duplicate_status`
+  (`no_duplicate`/`possible_duplicate`) plus per-candidate `duplicate_type`.
+  Never merges or closes anything — report-only.
+- **`risk_classification`** (Phase 3) — `flags[]`, each one a pattern
+  observation (never a factual/legal conclusion — §1.2). See
+  `docs/intake/risk-classification.md` for the full catalog.
+- **`workflow_decision`** (Phase 3) — the single deterministic-precedence
+  computation (`winning_effect` + the `intake_status` it implies) that
+  `workflow.intake_status` is copied from — the one place to look to
+  understand *why* a manifest ended up in a given status.
 - **`workflow`** — see below.
 - **`provenance`** — `input_sha256` (canonical-JSON hash of the raw event,
   `scripts/intake/hash.mjs` `hashEventInput`) and `manifest_sha256` (hash
@@ -76,15 +99,20 @@ acts, which is entirely outside this phase.
 
 ## Workflow states
 
-Phase 2's schema allows only the states the processor can actually
-produce — a strict subset of the full state machine documented in
+The schema allows only the states this processor can actually produce —
+a strict subset of the full state machine documented in
 `docs/adr/ADR-public-dossier-intake.md`'s "State machine detail" section:
 
 ```text
-intake_status:        triage | invalid | needs_information
+intake_status:        triage | invalid | needs_information | possible_duplicate | security_review_required
 authorization_status: pending_owner            (schema const — no other value is valid JSON)
 publication_status:   blocked                  (schema const — no other value is valid JSON)
 ```
+
+(`invalid` is a Phase-2-only value never actually written by the current
+code — a submission that would be "invalid" fails validation before a
+manifest is ever built at all; it stays in the schema as a documented
+placeholder, not a live code path.)
 
 `authorized`, `publishable`, and `published` do not exist anywhere in
 `schemas/intake/intake-manifest.schema.json` — not "unused," structurally
@@ -92,11 +120,15 @@ absent, so no future code change to this schema's consumers could
 accidentally produce them without also changing the schema itself (which
 is a visible, reviewable diff).
 
-`intake_status` is `needs_information` whenever `system_observations.warnings`
-is non-empty (an unrecognized section, an unrecognized acknowledgement
-checkbox label, or a flagged URL syntax observation), `triage` otherwise.
-This is a mechanical rule, not a judgment call — see
-`scripts/intake/process-issue.mjs`.
+As of Phase 3, `intake_status` comes from `workflow_decision.intake_status`
+— itself computed by `scripts/intake/risk/classify-intake-risk.mjs`'s
+fixed precedence over every risk flag (see
+`docs/intake/risk-classification.md`'s "Workflow precedence" section):
+`security_review_required` > `needs_information` > `possible_duplicate` >
+`triage`. This supersedes Phase 2's simpler "any warning →
+needs_information" rule with a strictly more complete one (every Phase 2
+warning source still contributes; Phase 3 adds matching/duplicate/privacy/
+security signals on top).
 
 ## Hash strategy
 

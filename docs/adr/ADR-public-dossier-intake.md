@@ -373,6 +373,43 @@ Prismatic není a nebude tvrdou závislostí.
 
   `npm run build` zelený (109 s, 2360 stránek); `git diff -- AGENTS.md data/authorizations.toml
   .github/workflows` prázdný. Fáze 3 kontrakt: `reports/intake/phase-02-implementation-report.md`.
+- 2026-08-02 — Fáze 3 implementována (stále **PROPOSED**). Manifest schema `0.2.0` (nový required
+  obsah: `matching`, `duplicate_detection`, `risk_classification`, `workflow_decision`;
+  `workflow.intake_status` rozšířen o `possible_duplicate`/`security_review_required`, stále bez
+  `authorized`/`publishable`/`published`). Vytvořeno: `scripts/intake/build-matching-index.mjs`
+  (read-only derived index z `data/dossiers/*/dossier.json` + `_shared/entities/*.json`, 448 záznamů
+  k 2026-08-02), `scripts/intake/matching/*` (normalizace jmen/organizací/IČO, explainable scoring,
+  candidate retrieval s bucketingem, deterministické řazení, duplicate-intake detektor s fixture
+  adaptérem), `scripts/intake/risk/*` (5 detektorů + orchestrátor, 21 flagů dle §13, deterministická
+  §14.1 precedence). 244 testů (`npm run test:intake`), reálný matching proti produkčním datům ověřen
+  ručně (`Andrej Babiš` → `ambiguous` shoda dvou existujících záznamů `andrej-babis`/`babis` — reálný
+  datový nález zaznamenaný v reportu, ne opraven, protože Fáze 3 nesmí měnit produkční data).
+
+  **Zjištění auditu (`reports/intake/phase-03-matching-inventory.md`), s dopadem na interpretaci
+  výsledků**: `alternateNames`/`externalIds` má vyplněných 0 z 503 sdílených entit — identifikátorové
+  a aliasové matchování je plně implementované a testované (syntetický dataset), ale proti reálným
+  datům dnes vrací jen `no_match`, dokud editorial pass tato pole nezačne plnit. Jméno-matching (exact/
+  near) je jediná vrstva s reálným signálem dnes.
+
+  **Odchylky od Fáze 1/2, s důvodem:**
+  1. `duplicate_status` na top-level je binární `no_duplicate|possible_duplicate` (mapuje přímo na
+     §14.2 workflow enum), zatímco jemnější `duplicate_type` (§11.2, šest hodnot) žije per-kandidát v
+     `candidates[]`. §11.2 a §11.3 mise samy nejsou stoprocentně konzistentní (§11.3 příklad používá
+     `possible_duplicate`, které není v §11.2 seznamu) — zvoleno čtení, které dává smysl vzhledem k
+     §14.2 (workflow enum má jen `possible_duplicate`, ne šest jemných hodnot).
+  2. `score_components` u `match_type=conflicting_identifier` je vždy `[]` a `score=0` — konflikt
+     identifikátoru není "slabší shoda", je to varovný signál; přidání "vysvětlujících" komponent by
+     zavádějícím způsobem naznačovalo částečnou shodu. Objeveno a opraveno během implementace (viz
+     report — `evaluatePair`'s dřívější verze omylem přidávala `near_name_similarity` komponentu i k
+     `exact_identifier` shodám kvůli slabě odlišeným jménům; opraveno na komponenty scoped k
+     zvolenému `match_type`).
+  3. Bucket-retrieval pro near-name matching foldne diakritiku jen v klíči bucketu (`match-entities.mjs`
+     `foldForBucketKey`), ne v samotném porovnání — bez toho by "Jan Testovaci" (chybějící diakritika,
+     běžná reálná varianta) vůbec nebyl načten pro near-name scoring. Objeveno a opraveno během
+     implementace (ruční test proti syntetickému indexu).
+
+  `npm run build` zelený; `git diff -- AGENTS.md data/authorizations.toml .github/workflows` prázdný.
+  Fáze 4 kontrakt: `reports/intake/phase-03-implementation-report.md`.
 
 ---
 

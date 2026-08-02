@@ -54,8 +54,8 @@ test("buildIntakeManifest's return value cannot express any authorization_status
   assert.match(source, /publication_status:\s*"blocked"/);
 });
 
-test("no module under scripts/intake/ writes into data/dossiers/, content/, AGENTS.md, or data/authorizations.toml", () => {
-  const forbiddenPathFragments = ["data/dossiers", "content/dossiers", "AGENTS.md", "data/authorizations.toml", "authorize-entity"];
+test("no module under scripts/intake/ references content/dossiers, AGENTS.md, data/authorizations.toml, or the authorize-entity script", () => {
+  const forbiddenPathFragments = ["content/dossiers", "AGENTS.md", "data/authorizations.toml", "authorize-entity"];
   const offenders = [];
   for (const file of listSourceFiles(INTAKE_DIR)) {
     const content = readFileSync(file, "utf8");
@@ -64,6 +64,27 @@ test("no module under scripts/intake/ writes into data/dossiers/, content/, AGEN
     }
   }
   assert.deepEqual(offenders, []);
+});
+
+test("data/dossiers is referenced ONLY by build-matching-index.mjs (Phase 3's sole, documented READ-only reader) — nowhere else, and never with a write call", () => {
+  // Phase 3 legitimately reads data/dossiers/*/dossier.json and
+  // data/dossiers/_shared/entities/*.json to build the matching index
+  // (reports/intake/phase-03-matching-inventory.md) — this is the one
+  // permitted exception to the "no production dossier access" rule, and
+  // this test pins it down precisely: exactly one file may mention the
+  // path, and that file must never pair it with a write primitive.
+  const ALLOWED_READER = join(INTAKE_DIR, "build-matching-index.mjs");
+  const offenders = [];
+  for (const file of listSourceFiles(INTAKE_DIR)) {
+    const content = readFileSync(file, "utf8");
+    if (!content.includes("data/dossiers")) continue;
+    if (file !== ALLOWED_READER) offenders.push(file);
+  }
+  assert.deepEqual(offenders, []);
+
+  const readerContent = readFileSync(ALLOWED_READER, "utf8");
+  assert.doesNotMatch(readerContent, /writeFileSync\([^)]*data\/dossiers/);
+  assert.doesNotMatch(readerContent, /rmSync\([^)]*data\/dossiers/);
 });
 
 test("no module under scripts/intake/ invokes git commit/push, or the authorize-entity script", () => {
