@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/boris-stastny/relations/edge-renata-zajickova-ods",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-renata-zajickova-ods",
+  "relationId": "edge-renata-zajickova-ods",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/boris-stastny"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/renata-zajickova"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/ods"
+  },
+  "relationType": "MEMBER_OF",
+  "label": "poslankyně za ODS",
+  "status": "contextual",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-21"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-09"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 23,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextový, strukturální vztah — dossier jej neuvádí jako vlastní doloženou investigaci, jen jako veřejně nesporné pozadí. Přidáno v rámci T-049 (provázání grafu, čtvrtá dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}
