@@ -1,0 +1,3 @@
+# Mise: veřejný dossier-intake workflow
+
+Tato složka obsahuje zadání vícefázové mise „veřejný intake a human-gated vznik dossieru" ([VOMASTE.md](VOMASTE.md) = master prompt, [PHASE_001.md](PHASE_001.md)–[PHASE_006.md](PHASE_006.md) = fázová zadání). Cílem je tok: veřejný GitHub Issue Form → bezpečné automatické předzpracování → ruční autorizace rozsahu vlastníkem → autorizovaná investigace → draft PR → lidská publikační kontrola. **Fáze 1 = pouze forenzní audit a závazný návrh** (výstupy: `docs/adr/ADR-public-dossier-intake.md` + `reports/intake/phase-01-*.md`), žádná produkční implementace. Stav ostatních fází (2–6: intake schema/procesor, entity matching, URL preflight/SSRF, Issue Form + e2e fixture, GitHub Actions workflow): **neimplementováno**.
