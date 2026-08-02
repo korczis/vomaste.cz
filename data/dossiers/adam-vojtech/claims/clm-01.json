@@ -10,11 +10,14 @@
     "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
   },
   "text": "Adam Vojtěch je podle oficiálního seznamu členů vlády na webu Úřadu vlády ministrem zdravotnictví",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-34"
     }
   ],
   "subjects": [
