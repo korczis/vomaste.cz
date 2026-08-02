@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/relations/edge-wintr-kompetencni-spor",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-wintr-kompetencni-spor",
+  "relationId": "edge-wintr-kompetencni-spor",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/jan-wintr"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/kompetencni-spor-pl-us-16-26"
+  },
+  "relationType": "ASSOCIATED_WITH_EVENT",
+  "label": "uplatnil odlišné stanovisko k rozhodnutí o předběžném opatření v kompetenčním sporu",
+  "status": "single",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-42"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-21"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 18,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-049 (provázání grafu, čtvrtá dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

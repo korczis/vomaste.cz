@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/boris-stastny/relations/edge-petr-fiala-ods",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-petr-fiala-ods",
+  "relationId": "edge-petr-fiala-ods",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/boris-stastny"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/petr-fiala"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/ods"
+  },
+  "relationType": "MEMBER_OF",
+  "label": "bývalý premiér, předseda ODS",
+  "status": "contextual",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-29"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-11"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 24,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextový, strukturální vztah — dossier jej neuvádí jako vlastní doloženou investigaci, jen jako veřejně nesporné pozadí. Přidáno v rámci T-049 (provázání grafu, čtvrtá dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

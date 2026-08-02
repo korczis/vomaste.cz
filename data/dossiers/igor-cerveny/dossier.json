@@ -297,6 +297,42 @@
         "sources": [
           "SRC-20"
         ]
+      },
+      {
+        "entity": "lukas-koutnik",
+        "label": "Lukáš Koutník",
+        "claims": [
+          "CLM-18",
+          "CLM-51",
+          "CLM-57"
+        ],
+        "sources": [
+          "SRC-10",
+          "SRC-16",
+          "SRC-18",
+          "SRC-19"
+        ]
+      },
+      {
+        "entity": "katerina-pacikova",
+        "label": "Kateřina Pacíková",
+        "claims": [
+          "CLM-26"
+        ],
+        "sources": [
+          "SRC-04"
+        ]
+      },
+      {
+        "entity": "narodni-plan-obnovy",
+        "label": "Národní plán obnovy",
+        "claims": [
+          "CLM-47"
+        ],
+        "sources": [
+          "SRC-29",
+          "SRC-34"
+        ]
       }
     ],
     "edges": [
@@ -317,7 +353,10 @@
       "edge-cerveny-ministerstvo-zivotniho-prostredi",
       "edge-petr-hladik-cerveny",
       "edge-cerveny-meta",
-      "edge-cerveny-space-plan"
+      "edge-cerveny-space-plan",
+      "edge-cerveny-koutnik",
+      "edge-cerveny-pacikova",
+      "edge-ministerstvo-zivotniho-prostredi-narodni-plan-obnovy"
     ]
   },
   "contentBlocks": [

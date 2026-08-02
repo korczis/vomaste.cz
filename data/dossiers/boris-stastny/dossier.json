@@ -309,6 +309,78 @@
           "SRC-14",
           "SRC-15"
         ]
+      },
+      {
+        "entity": "kdu-csl",
+        "label": "KDU-ČSL",
+        "claims": [
+          "CLM-34",
+          "CLM-39"
+        ],
+        "sources": [
+          "SRC-16",
+          "SRC-18"
+        ]
+      },
+      {
+        "entity": "ods",
+        "label": "ODS",
+        "claims": [
+          "CLM-05",
+          "CLM-21",
+          "CLM-29"
+        ],
+        "sources": [
+          "SRC-02",
+          "SRC-09",
+          "SRC-11"
+        ]
+      },
+      {
+        "entity": "stan",
+        "label": "STAN",
+        "claims": [
+          "CLM-38"
+        ],
+        "sources": [
+          "SRC-18"
+        ]
+      },
+      {
+        "entity": "top-09",
+        "label": "TOP 09",
+        "claims": [
+          "CLM-39"
+        ],
+        "sources": [
+          "SRC-18"
+        ]
+      },
+      {
+        "entity": "nukib",
+        "label": "NÚKIB",
+        "claims": [
+          "CLM-10"
+        ],
+        "sources": [
+          "SRC-03",
+          "SRC-04",
+          "SRC-05",
+          "SRC-06"
+        ]
+      },
+      {
+        "entity": "bis",
+        "label": "BIS (Bezpečnostní informační služba)",
+        "claims": [
+          "CLM-10"
+        ],
+        "sources": [
+          "SRC-03",
+          "SRC-04",
+          "SRC-05",
+          "SRC-06"
+        ]
       }
     ],
     "edges": [
@@ -332,7 +404,14 @@
       "edge-tomas-zdechovsky-stastny",
       "edge-vit-rakusan-stastny",
       "edge-daniel-docekal-stastny",
-      "edge-stastny-audit-nsa"
+      "edge-stastny-audit-nsa",
+      "edge-tomas-zdechovsky-kdu-csl",
+      "edge-renata-zajickova-ods",
+      "edge-petr-fiala-ods",
+      "edge-vit-rakusan-stan",
+      "edge-top09-stastny",
+      "edge-stastny-nukib",
+      "edge-stastny-bis"
     ]
   },
   "contentBlocks": [
