@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/relations/edge-bednarik-ministerstvo-dopravy",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-bednarik-ministerstvo-dopravy",
+  "relationId": "edge-bednarik-ministerstvo-dopravy",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/bednarik"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/ministerstvo-dopravy"
+  },
+  "relationType": "HOLDS_ROLE",
+  "label": "Bednárik stojí v čele Ministerstva dopravy ČR",
+  "status": "contextual",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-01"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-01"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "directed": true,
+  "order": 20,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextový, strukturální vztah — dossier jej neuvádí jako vlastní doloženou investigaci, jen jako veřejně nesporné pozadí. Přidáno v rámci T-049 (provázání grafu, čtvrtá dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

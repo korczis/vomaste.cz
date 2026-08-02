@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/relations/edge-josef-flek-stan",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-josef-flek-stan",
+  "relationId": "edge-josef-flek-stan",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/josef-flek"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/stan"
+  },
+  "relationType": "MEMBER_OF",
+  "label": "poslanec za STAN",
+  "status": "contextual",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-09"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-06"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 22,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextový, strukturální vztah — dossier jej neuvádí jako vlastní doloženou investigaci, jen jako veřejně nesporné pozadí. Přidáno v rámci T-049 (provázání grafu, čtvrtá dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

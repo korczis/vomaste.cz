@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/relations/edge-cerveny-pacikova",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-cerveny-pacikova",
+  "relationId": "edge-cerveny-pacikova",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/cerveny"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/katerina-pacikova"
+  },
+  "relationType": "ASSOCIATED_WITH_EVENT",
+  "label": "zástupkyně mluvčí MŽP informovala o podání opravného oznámení a úhradě pokuty ministra",
+  "status": "single",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-26"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-04"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 20,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-049 (provázání grafu, čtvrtá dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}
