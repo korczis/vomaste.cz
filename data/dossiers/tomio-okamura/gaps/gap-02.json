@@ -12,7 +12,7 @@
   "title": "GAP-02 — Osud Okamurova vlastního, přerušeného stíhání",
   "description": "Sněmovna ho nevydala, stíhání je přerušené; další postup nebyl ve zkontrolovaných zdrojích nalezen.",
   "priority": "vysoká",
-  "checked": "2026-07-30",
+  "checked": "2026-08-02",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-02"
@@ -24,7 +24,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Okamura čelí obžalobě individuálně, jeho stíhání je však přerušené,\nprotože ho Poslanecká sněmovna odmítla vydat, a jeho jednání má soud\nprojednávat zvlášť\n([SRC-01](@/dossiers/tomio-okamura/sources/src-01.md)). Ve zkontrolovaných\nzdrojích **nebyl nalezen** doklad o dalším postupu: zda a kdy by se\nSněmovna mohla vydáním zabývat znovu, ani jak dlouho přerušení trvá.\n\nJe nutné rozlišit dvě věci, které se v této situaci často slévají:\nnevydání poslance je **procesní rozhodnutí Sněmovny o imunitě**, ne\nposouzení důkazů a ne zjištění, že by obvinění bylo nepravdivé. Stejně\ntak není potvrzením, že pravdivé je.\n\n**Podmínka uzavření**: doložený procesní krok — nové rozhodnutí Sněmovny\no vydání, zahájení či zastavení řízení, nebo jiné doložitelné rozhodnutí,\nověřené přímým otevřením zdroje."
+      "value": "Okamura čelí obžalobě individuálně, jeho stíhání je však přerušené,\nprotože ho Poslanecká sněmovna odmítla vydat, a jeho jednání má soud\nprojednávat zvlášť\n([SRC-01](@/dossiers/tomio-okamura/sources/src-01.md)). Ve zkontrolovaných\nzdrojích **nebyl nalezen** doklad o dalším postupu: zda a kdy by se\nSněmovna mohla vydáním zabývat znovu, ani jak dlouho přerušení trvá.\n\nJe nutné rozlišit dvě věci, které se v této situaci často slévají:\nnevydání poslance je **procesní rozhodnutí Sněmovny o imunitě**, ne\nposouzení důkazů a ne zjištění, že by obvinění bylo nepravdivé. Stejně\ntak není potvrzením, že pravdivé je.\n\n**Podmínka uzavření**: doložený procesní krok — nové rozhodnutí Sněmovny\no vydání, zahájení či zastavení řízení, nebo jiné doložitelné rozhodnutí,\nověřené přímým otevřením zdroje.\n\n**Opakovaná kontrola k 2026-08-02**: přímo ověřeno na CNN Prima News\n(5. 3. 2026), že Sněmovna hlasovala o nevydání Okamury ke kauze\nvolebních plakátů — potvrzuje stav popsaný výše, žádný novější procesní\nkrok nenalezen. **Metodická poznámka pro další rešerši**: hledání podle\njména bez upřesnění kauzy vrací i starší, věcně **nesouvisející**\nčlánky, kde Sněmovna Okamuru v minulosti k jinému stíhání naopak\nvydala — tyto zdroje nebyly otevřeny (mimo rozsah GAP-02, který se\ntýká výhradně kauzy volebních plakátů z roku 2024) a tento dossier je\nnepoužívá. Kdokoliv bude tuto mezeru dál rešeršovat, musí u každého\nnalezeného zdroje ověřit, že jde skutečně o kauzu plakátů, ne o\nzáměnu s jiným, časově vzdáleným řízením."
     }
   ],
   "order": 2

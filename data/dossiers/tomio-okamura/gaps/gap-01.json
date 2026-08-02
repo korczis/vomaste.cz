@@ -12,7 +12,7 @@
   "title": "GAP-01 — Výsledek odvolání SPD proti nepravomocnému rozsudku",
   "description": "Hnutí oznámilo odvolání; výsledek nebyl ve zkontrolovaných zdrojích nalezen.",
   "priority": "vysoká",
-  "checked": "2026-07-30",
+  "checked": "2026-08-02",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-01"
@@ -27,7 +27,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Rozsudek OS pro Prahu 1 z 3. 6. 2026 není pravomocný a SPD oznámila\nodvolání ([SRC-01](@/dossiers/tomio-okamura/sources/src-01.md)). Ve\nzkontrolovaných zdrojích **nebyl k datu kontroly nalezen** doklad o\nvýsledku odvolacího řízení — zda byl rozsudek potvrzen, zrušen, změněn,\nani zda se hnutí obrátilo na Ústavní soud, jak oznámilo.\n\nOtevřenost této mezery **není** zjištěním v žádném směru. Dokud odvolací\nřízení neskončí, není o vině rozhodnuto.\n\n**Podmínka uzavření**: dohledání a přímé otevření zdroje k rozhodnutí\nodvolacího soudu (případně Ústavního soudu) a doplnění tvrzení s\nodpovídajícím stavem a přesným procesním popisem."
+      "value": "Rozsudek OS pro Prahu 1 z 3. 6. 2026 není pravomocný a SPD oznámila\nodvolání ([SRC-01](@/dossiers/tomio-okamura/sources/src-01.md)). Ve\nzkontrolovaných zdrojích **nebyl k datu kontroly nalezen** doklad o\nvýsledku odvolacího řízení — zda byl rozsudek potvrzen, zrušen, změněn,\nani zda se hnutí obrátilo na Ústavní soud, jak oznámilo.\n\nOtevřenost této mezery **není** zjištěním v žádném směru. Dokud odvolací\nřízení neskončí, není o vině rozhodnuto.\n\n**Podmínka uzavření**: dohledání a přímé otevření zdroje k rozhodnutí\nodvolacího soudu (případně Ústavního soudu) a doplnění tvrzení s\nodpovídajícím stavem a přesným procesním popisem.\n\n**Opakovaná kontrola k 2026-08-02** (iROZHLAS, ČT24, Deník N, Echo24,\nČeská justice, Aktuálně.cz, Respekt — cílené dotazy na odvolací řízení):\nvšechny dohledané zprávy zůstávají z června 2026 (oznámení odvolání),\nžádný zdroj k datu kontroly neuvádí rozhodnutí odvolacího soudu. Stav\nbeze změny."
     }
   ],
   "order": 1

@@ -26,3 +26,9 @@ Otevřenost této mezery **není** zjištěním v žádném směru. Dokud odvola
 **Podmínka uzavření**: dohledání a přímé otevření zdroje k rozhodnutí
 odvolacího soudu (případně Ústavního soudu) a doplnění tvrzení s
 odpovídajícím stavem a přesným procesním popisem.
+
+**Opakovaná kontrola k 2026-08-02** (iROZHLAS, ČT24, Deník N, Echo24,
+Česká justice, Aktuálně.cz, Respekt — cílené dotazy na odvolací řízení):
+všechny dohledané zprávy zůstávají z června 2026 (oznámení odvolání),
+žádný zdroj k datu kontroly neuvádí rozhodnutí odvolacího soudu. Stav
+beze změny.
