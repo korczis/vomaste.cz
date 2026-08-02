@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/relations/edge-mf-nrr",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-mf-nrr",
+  "relationId": "edge-mf-nrr",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/ministerstvo-financi"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/nrr"
+  },
+  "relationType": "RESPONDED_TO",
+  "label": "Ministerstvo financí reagovalo na stanovisko NRR rozporováním výpočtu obranných výdajů a role rady",
+  "status": "single",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-27"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-28"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-29"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-15"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 17,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-048 (provázání grafu, třetí dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

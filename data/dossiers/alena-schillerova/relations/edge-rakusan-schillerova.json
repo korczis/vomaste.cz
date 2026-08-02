@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/relations/edge-rakusan-schillerova",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-rakusan-schillerova",
+  "relationId": "edge-rakusan-schillerova",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/vit-rakusan"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/schillerova"
+  },
+  "relationType": "RESPONDED_TO",
+  "label": "Rakušan (STAN) po vetu uvedl, že si vláda chtěla otevřít cestu k obcházení dluhových pravidel",
+  "status": "single",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-39"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-08"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 13,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-048 (provázání grafu, třetí dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

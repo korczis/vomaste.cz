@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/relations/edge-schillerova-senat",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-schillerova-senat",
+  "relationId": "edge-schillerova-senat",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/schillerova"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/senat-pcr"
+  },
+  "relationType": "RESPONDED_TO",
+  "label": "Schillerová odmítla senátní úpravy novely jako zdroj právní nejistoty",
+  "status": "quote",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-16"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-06"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 8,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-048 (provázání grafu, třetí dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

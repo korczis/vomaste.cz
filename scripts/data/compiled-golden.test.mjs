@@ -16,14 +16,14 @@ import { compileDataset } from "./compile.mjs";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const compiled = compileDataset(loadCanonicalTree(join(ROOT, "data/dossiers")));
 
-test("golden: počty záznamů per typ (snapshot 2026-08-02h: + vojtech-dobes kontextová entita a edge-dobes-kauza2025, uzavírá follow-up gap z T-045)", () => {
+test("golden: počty záznamů per typ (snapshot 2026-08-02i: T-048 — provázání grafu, třetí dávka, část B: +50 hran v ales-juchelka/jeronym-tejc/alena-schillerova/karel-havlicek)", () => {
   assert.deepEqual(compiled.counts.perType, {
     case: 89,
     claim: 876,
     dossier: 24,
     entity: 504,
     gap: 189,
-    relation: 180,
+    relation: 230,
     source: 556,
     update: 49,
   });
@@ -33,7 +33,7 @@ test("golden: počty záznamů per typ (snapshot 2026-08-02h: + vojtech-dobes ko
 
 test("golden: graf — uzly z entit, hrany z relations", () => {
   assert.equal(compiled.graph.nodes.length, 504);
-  assert.equal(compiled.graph.edges.length, 180);
+  assert.equal(compiled.graph.edges.length, 230);
 });
 
 test("golden: vzorek claim záznamu (andrej-babis CLM-01)", () => {

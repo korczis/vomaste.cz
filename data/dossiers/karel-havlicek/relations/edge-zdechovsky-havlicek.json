@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/relations/edge-zdechovsky-havlicek",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-zdechovsky-havlicek",
+  "relationId": "edge-zdechovsky-havlicek",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/tomas-zdechovsky"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/havlicek"
+  },
+  "relationType": "RESPONDED_TO",
+  "label": "Europoslanec Zdechovský (KDU-ČSL) uvedl, že Havlíček nechtěl po Agrofertu peníze vrátit",
+  "status": "quote",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-09"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-05"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 16,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-048 (provázání grafu, třetí dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

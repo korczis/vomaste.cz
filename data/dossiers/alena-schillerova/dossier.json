@@ -138,13 +138,155 @@
           "SRC-07",
           "SRC-08"
         ]
+      },
+      {
+        "entity": "ministerstvo-financi",
+        "label": "Ministerstvo financí ČR",
+        "claims": [
+          "CLM-01",
+          "CLM-27",
+          "CLM-28",
+          "CLM-29"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-15"
+        ]
+      },
+      {
+        "entity": "novela-rozpoctovych-pravidel-2026",
+        "label": "Novela rozpočtových zákonů 2026 (sněmovní tisk č. 90)",
+        "claims": [
+          "CLM-05",
+          "CLM-10",
+          "CLM-11",
+          "CLM-12",
+          "CLM-13"
+        ],
+        "sources": [
+          "SRC-03",
+          "SRC-05",
+          "SRC-19",
+          "SRC-22",
+          "SRC-23"
+        ]
+      },
+      {
+        "entity": "senat-pcr",
+        "label": "Senát Parlamentu ČR",
+        "claims": [
+          "CLM-13",
+          "CLM-16"
+        ],
+        "sources": [
+          "SRC-05",
+          "SRC-06",
+          "SRC-23"
+        ]
+      },
+      {
+        "entity": "martin-kupka",
+        "label": "Martin Kupka",
+        "claims": [
+          "CLM-07",
+          "CLM-39"
+        ],
+        "sources": [
+          "SRC-03",
+          "SRC-08"
+        ]
+      },
+      {
+        "entity": "olga-richterova",
+        "label": "Olga Richterová",
+        "claims": [
+          "CLM-07"
+        ],
+        "sources": [
+          "SRC-03"
+        ]
+      },
+      {
+        "entity": "zdenek-hrib",
+        "label": "Zdeněk Hřib",
+        "claims": [
+          "CLM-39"
+        ],
+        "sources": [
+          "SRC-08"
+        ]
+      },
+      {
+        "entity": "jan-jakob",
+        "label": "Jan Jakob",
+        "claims": [
+          "CLM-39"
+        ],
+        "sources": [
+          "SRC-08"
+        ]
+      },
+      {
+        "entity": "vit-rakusan",
+        "label": "Vít Rakušan",
+        "claims": [
+          "CLM-39"
+        ],
+        "sources": [
+          "SRC-08"
+        ]
+      },
+      {
+        "entity": "kancelar-prezidenta-republiky",
+        "label": "Kancelář prezidenta republiky",
+        "claims": [
+          "CLM-20"
+        ],
+        "sources": [
+          "SRC-10"
+        ]
+      },
+      {
+        "entity": "centrum-verejnych-financi",
+        "label": "Centrum veřejných financí (Univerzita Karlova)",
+        "claims": [
+          "CLM-10",
+          "CLM-11",
+          "CLM-12"
+        ],
+        "sources": [
+          "SRC-19"
+        ]
+      },
+      {
+        "entity": "vybor-pro-rozpoctove-prognozy",
+        "label": "Výbor pro rozpočtové prognózy",
+        "claims": [
+          "CLM-28"
+        ],
+        "sources": [
+          "SRC-15"
+        ]
       }
     ],
     "edges": [
       "edge-schillerova-vlada",
       "edge-schillerova-nrr",
       "edge-schillerova-pavel",
-      "edge-babis-schillerova"
+      "edge-babis-schillerova",
+      "edge-schillerova-mf",
+      "edge-schillerova-novela",
+      "edge-senat-novela",
+      "edge-schillerova-senat",
+      "edge-kupka-schillerova",
+      "edge-richterova-schillerova",
+      "edge-hrib-schillerova",
+      "edge-jakob-schillerova",
+      "edge-rakusan-schillerova",
+      "edge-schillerova-kancelar",
+      "edge-cvf-novela",
+      "edge-mf-vybor",
+      "edge-mf-nrr"
     ]
   },
   "contentBlocks": [

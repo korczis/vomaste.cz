@@ -142,6 +142,117 @@
         "sources": [
           "SRC-20"
         ]
+      },
+      {
+        "entity": "bitcoinova-kauza-ministerstva-spravedlnosti",
+        "label": "Bitcoinová kauza resortu spravedlnosti",
+        "claims": [
+          "CLM-02"
+        ],
+        "sources": [
+          "SRC-02",
+          "SRC-03"
+        ]
+      },
+      {
+        "entity": "karna-zaloba-na-soudkyni-os-benesov",
+        "label": "Kárná žaloba na soudkyni Okresního soudu v Benešově",
+        "claims": [
+          "CLM-08"
+        ],
+        "sources": [
+          "SRC-05",
+          "SRC-06",
+          "SRC-07"
+        ]
+      },
+      {
+        "entity": "pavel-blazek",
+        "label": "Pavel Blažek",
+        "claims": [
+          "CLM-29"
+        ],
+        "sources": [
+          "SRC-13",
+          "SRC-15"
+        ]
+      },
+      {
+        "entity": "eva-decroix",
+        "label": "Eva Decroix",
+        "claims": [
+          "CLM-30",
+          "CLM-31",
+          "CLM-32"
+        ],
+        "sources": [
+          "SRC-15",
+          "SRC-16"
+        ]
+      },
+      {
+        "entity": "karel-dvorak",
+        "label": "Karel Dvořák",
+        "claims": [
+          "CLM-45"
+        ],
+        "sources": [
+          "SRC-08"
+        ]
+      },
+      {
+        "entity": "macinka",
+        "label": "Petr Macinka",
+        "claims": [
+          "CLM-46"
+        ],
+        "sources": [
+          "SRC-08"
+        ]
+      },
+      {
+        "entity": "kompetencni-spor-pl-us-16-26",
+        "label": "Kompetenční spor prezident vs. vláda (Pl. ÚS 16/26)",
+        "claims": [
+          "CLM-46",
+          "CLM-47"
+        ],
+        "sources": [
+          "SRC-08",
+          "SRC-10",
+          "SRC-23"
+        ]
+      },
+      {
+        "entity": "hana-kordova-marvanova",
+        "label": "Hana Kordová Marvanová",
+        "claims": [
+          "CLM-38"
+        ],
+        "sources": [
+          "SRC-19"
+        ]
+      },
+      {
+        "entity": "komise-pro-prezkum-neprirozenych-umrti-deti",
+        "label": "Komise pro přezkum nepřirozených úmrtí dětí",
+        "claims": [
+          "CLM-39"
+        ],
+        "sources": [
+          "SRC-20"
+        ]
+      },
+      {
+        "entity": "martin-benes",
+        "label": "Martin Beneš",
+        "claims": [
+          "CLM-39",
+          "CLM-40"
+        ],
+        "sources": [
+          "SRC-20"
+        ]
       }
     ],
     "edges": [
@@ -149,7 +260,17 @@
       "edge-tejc-ncoz",
       "edge-tejc-ustavni-soud",
       "edge-tejc-pavel",
-      "edge-tejc-juchelka"
+      "edge-tejc-juchelka",
+      "edge-tejc-bitcoinova-kauza",
+      "edge-tejc-karna-zaloba",
+      "edge-blazek-tejc",
+      "edge-decroix-tejc",
+      "edge-tejc-dvorak",
+      "edge-macinka-kompetencni-spor",
+      "edge-tejc-kompetencni-spor",
+      "edge-marvanova-tejc",
+      "edge-juchelka-komise",
+      "edge-benes-komise"
     ]
   },
   "contentBlocks": [
