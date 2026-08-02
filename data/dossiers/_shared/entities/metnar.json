@@ -24,7 +24,10 @@
   "provenance": {
     "discoveredAt": "2026-07-30",
     "discoveredVia": [
-      "edge-metnar-nku"
+      "edge-metnar-nku",
+      "edge-metnar-policie",
+      "edge-metnar-cnb",
+      "edge-metnar-miloslavkala"
     ],
     "claimRefs": [
       "CLM-02",

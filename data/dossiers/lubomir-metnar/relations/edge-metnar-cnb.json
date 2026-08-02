@@ -1,0 +1,50 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/relations/edge-metnar-cnb",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-metnar-cnb",
+  "relationId": "edge-metnar-cnb",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/metnar"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/cnb"
+  },
+  "relationType": "ASSOCIATED_WITH_EVENT",
+  "label": "uvolněná policejní kapacita po zrušení ochrany NKÚ má nově chránit ČNB",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-08"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-05"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 3,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-045 (provázání grafu, druhá dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

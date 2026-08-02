@@ -15,7 +15,8 @@
   "coverageState": "discovered",
   "dossiers": [
     "macinka-turek",
-    "petr-macinka"
+    "petr-macinka",
+    "petr-vencalek"
   ],
   "routeAliases": [
     "/dossiers/macinka-turek/entities/gmrgas/"
@@ -24,7 +25,10 @@
   "provenance": {
     "discoveredAt": "2026-07-29",
     "discoveredVia": [
-      "edge-macinka-gmrgas"
+      "edge-macinka-gmrgas",
+      "edge-gmrgascz-gmrgas",
+      "edge-gmrgas-macinka",
+      "edge-gmrgas-tomascabal"
     ],
     "claimRefs": [
       "CLM-14",

@@ -1,40 +1,41 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/narodni-pamatkovy-ustav",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "narodni-pamatkovy-ustav",
- "entityId": "narodni-pamatkovy-ustav",
- "title": "Národní památkový ústav",
- "entityType": "public_institution",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "oto-klempir"
- ],
- "order": 293,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/narodni-pamatkovy-ustav",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "narodni-pamatkovy-ustav",
+  "entityId": "narodni-pamatkovy-ustav",
+  "title": "Národní památkový ústav",
+  "entityType": "public_institution",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "oto-klempir"
   ],
-  "claimRefs": [
-   "CLM-36",
-   "CLM-37"
-  ],
-  "sourceRefs": [
-   "SRC-15",
-   "SRC-18"
+  "order": 293,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02",
+      "edge-klempir-npu"
+    ],
+    "claimRefs": [
+      "CLM-36",
+      "CLM-37"
+    ],
+    "sourceRefs": [
+      "SRC-15",
+      "SRC-18"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Odborná památková instituce, jejíž postavení oslabuje novela stavebního zákona (možnost konzultace s jiným znalcem). Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (oto-klempir). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Odborná památková instituce, jejíž postavení oslabuje novela stavebního zákona (možnost konzultace s jiným znalcem). Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (oto-klempir). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
-  }
- ]
 }

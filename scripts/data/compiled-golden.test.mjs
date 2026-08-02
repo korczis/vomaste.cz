@@ -16,14 +16,14 @@ import { compileDataset } from "./compile.mjs";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const compiled = compileDataset(loadCanonicalTree(join(ROOT, "data/dossiers")));
 
-test("golden: počty záznamů per typ (snapshot 2026-08-02e: richard-chlad CLM-07 odstraněno na pokyn vlastníka — mimo AUTH-2026-07-30-W)", () => {
+test("golden: počty záznamů per typ (snapshot 2026-08-02f: T-045 — 37 nových relation hran, druhá dávka provázání grafu)", () => {
   assert.deepEqual(compiled.counts.perType, {
     case: 88,
     claim: 863,
     dossier: 24,
     entity: 503,
     gap: 188,
-    relation: 142,
+    relation: 179,
     source: 549,
     update: 48,
   });
@@ -33,7 +33,7 @@ test("golden: počty záznamů per typ (snapshot 2026-08-02e: richard-chlad CLM-
 
 test("golden: graf — uzly z entit, hrany z relations", () => {
   assert.equal(compiled.graph.nodes.length, 503);
-  assert.equal(compiled.graph.edges.length, 142);
+  assert.equal(compiled.graph.edges.length, 179);
 });
 
 test("golden: vzorek claim záznamu (andrej-babis CLM-01)", () => {

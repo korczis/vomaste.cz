@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/relations/edge-nku-miloslavkala",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-nku-miloslavkala",
+  "relationId": "edge-nku-miloslavkala",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/miloslav-kala"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/nku"
+  },
+  "relationType": "HOLDS_ROLE",
+  "label": "prezident Nejvyššího kontrolního úřadu",
+  "status": "quote",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-03"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-01"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 4,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-045 (provázání grafu, druhá dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

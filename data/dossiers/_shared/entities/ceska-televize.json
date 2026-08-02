@@ -1,48 +1,49 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/ceska-televize",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "ceska-televize",
- "entityId": "ceska-televize",
- "title": "Česká televize",
- "entityType": "public_institution",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "oto-klempir"
- ],
- "order": 93,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/ceska-televize",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "ceska-televize",
+  "entityId": "ceska-televize",
+  "title": "Česká televize",
+  "entityType": "public_institution",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "oto-klempir"
   ],
-  "claimRefs": [
-   "CLM-04",
-   "CLM-07",
-   "CLM-08",
-   "CLM-09",
-   "CLM-20"
-  ],
-  "sourceRefs": [
-   "SRC-03",
-   "SRC-06",
-   "SRC-07",
-   "SRC-19",
-   "SRC-20",
-   "SRC-21",
-   "SRC-26"
+  "order": 93,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02",
+      "edge-klempir-ceskatelevize"
+    ],
+    "claimRefs": [
+      "CLM-04",
+      "CLM-07",
+      "CLM-08",
+      "CLM-09",
+      "CLM-20"
+    ],
+    "sourceRefs": [
+      "SRC-03",
+      "SRC-06",
+      "SRC-07",
+      "SRC-19",
+      "SRC-20",
+      "SRC-21",
+      "SRC-26"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Veřejnoprávní televize — přímý aktér kauzy zrušení koncesionářských poplatků a přechodu na financování ze státního rozpočtu. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (oto-klempir). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Veřejnoprávní televize — přímý aktér kauzy zrušení koncesionářských poplatků a přechodu na financování ze státního rozpočtu. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (oto-klempir). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
-  }
- ]
 }

@@ -99,7 +99,8 @@
           "CLM-02"
         ],
         "sources": [
-          "SRC-01"
+          "SRC-01",
+          "SRC-02"
         ]
       },
       {
@@ -111,11 +112,64 @@
         "sources": [
           "SRC-01"
         ]
+      },
+      {
+        "entity": "poslanecka-snemovna",
+        "label": "Poslanecká sněmovna",
+        "claims": [
+          "CLM-28"
+        ],
+        "sources": [
+          "SRC-19",
+          "SRC-20"
+        ]
+      },
+      {
+        "entity": "obvodni-soud-praha-1",
+        "label": "Obvodní soud pro Prahu 1",
+        "claims": [
+          "CLM-30",
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-21",
+          "SRC-22",
+          "SRC-01",
+          "SRC-02"
+        ]
+      },
+      {
+        "entity": "obvodni-statni-zastupitelstvi-praha-1",
+        "label": "Obvodní státní zastupitelství pro Prahu 1",
+        "claims": [
+          "CLM-21"
+        ],
+        "sources": [
+          "SRC-16",
+          "SRC-17"
+        ]
+      },
+      {
+        "entity": "ivana-ticha",
+        "label": "Ivana Tichá",
+        "claims": [
+          "CLM-18",
+          "CLM-19"
+        ],
+        "sources": [
+          "SRC-07",
+          "SRC-15"
+        ]
       }
     ],
     "edges": [
       "edge-okamura-spd",
-      "edge-okamura-ustavni-soud"
+      "edge-okamura-ustavni-soud",
+      "edge-okamura-poslaneckasnemovna",
+      "edge-okamura-obvodnisoudpraha1",
+      "edge-okamura-obvodnistatnizastupitelstvipraha1",
+      "edge-okamura-ivanaticha",
+      "edge-spd-obvodnisoudpraha1"
     ]
   },
   "contentBlocks": [

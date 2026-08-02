@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/relations/edge-plaga-benes",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-plaga-benes",
+  "relationId": "edge-plaga-benes",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/plaga"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/martin-benes"
+  },
+  "relationType": "RESPONDED_TO",
+  "label": "spor o plošný zákaz mobilů ve školách — reakce na dětského ombudsmana",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-38"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-40"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-16"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-18"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 6,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-045 (provázání grafu, druhá dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

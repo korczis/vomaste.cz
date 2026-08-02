@@ -1,40 +1,41 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/vrchni-soud-praha",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "vrchni-soud-praha",
- "entityId": "vrchni-soud-praha",
- "title": "Vrchní soud v Praze",
- "entityType": "public_institution",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "andrej-babis"
- ],
- "order": 440,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/vrchni-soud-praha",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "vrchni-soud-praha",
+  "entityId": "vrchni-soud-praha",
+  "title": "Vrchní soud v Praze",
+  "entityType": "public_institution",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "andrej-babis"
   ],
-  "claimRefs": [
-   "CLM-01"
-  ],
-  "sourceRefs": [
-   "SRC-01",
-   "SRC-08",
-   "SRC-27"
+  "order": 440,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02",
+      "edge-babis-vrchnisoudpraha"
+    ],
+    "claimRefs": [
+      "CLM-01"
+    ],
+    "sourceRefs": [
+      "SRC-01",
+      "SRC-08",
+      "SRC-27"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Odvolací soud — 23. 6. 2025 podruhé zrušil zprošťující rozsudek v kauze Čapí hnízdo se závazným právním názorem. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (andrej-babis). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Odvolací soud — 23. 6. 2025 podruhé zrušil zprošťující rozsudek v kauze Čapí hnízdo se závazným právním názorem. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (andrej-babis). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
-  }
- ]
 }

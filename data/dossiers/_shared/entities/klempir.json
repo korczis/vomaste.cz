@@ -23,7 +23,16 @@
     "discoveredAt": "2026-07-30",
     "discoveredVia": [
       "government-roster-2026-07-30",
-      "edge-klempir-pavel"
+      "edge-klempir-pavel",
+      "edge-klempir-ceskatelevize",
+      "edge-klempir-ceskyrozhlas",
+      "edge-zavoral-klempir",
+      "edge-milionchvilek-klempir",
+      "edge-klempir-narodnigalerie",
+      "edge-klempir-alicjaknastova",
+      "edge-martinbaxa-klempir",
+      "edge-klempir-npu",
+      "edge-klempir-peticeozabalto"
     ],
     "claimRefs": [
       "CLM-01",

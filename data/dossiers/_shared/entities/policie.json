@@ -15,7 +15,8 @@
   "coverageState": "contextual",
   "dossiers": [
     "macinka-turek",
-    "filip-turek"
+    "filip-turek",
+    "lubomir-metnar"
   ],
   "routeAliases": [
     "/dossiers/macinka-turek/entities/policie/"
@@ -25,7 +26,8 @@
     "discoveredAt": "2026-07-29",
     "discoveredVia": [
       "edge-nehoda2026-policie",
-      "edge-kauza2025-policie"
+      "edge-kauza2025-policie",
+      "edge-metnar-policie"
     ],
     "claimRefs": [
       "CLM-27",

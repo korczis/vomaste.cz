@@ -95,7 +95,10 @@
           "SRC-22",
           "SRC-23",
           "SRC-24",
-          "SRC-25"
+          "SRC-25",
+          "SRC-26",
+          "SRC-27",
+          "SRC-28"
         ]
       },
       {
@@ -117,11 +120,119 @@
         "sources": [
           "SRC-19"
         ]
+      },
+      {
+        "entity": "ceska-televize",
+        "label": "Česká televize",
+        "claims": [
+          "CLM-07"
+        ],
+        "sources": [
+          "SRC-20",
+          "SRC-26"
+        ]
+      },
+      {
+        "entity": "cesky-rozhlas",
+        "label": "Český rozhlas",
+        "claims": [
+          "CLM-07"
+        ],
+        "sources": [
+          "SRC-20",
+          "SRC-26"
+        ]
+      },
+      {
+        "entity": "rene-zavoral",
+        "label": "René Zavoral",
+        "claims": [
+          "CLM-16"
+        ],
+        "sources": [
+          "SRC-20"
+        ]
+      },
+      {
+        "entity": "milion-chvilek",
+        "label": "Milion chvilek pro demokracii",
+        "claims": [
+          "CLM-18",
+          "CLM-19"
+        ],
+        "sources": [
+          "SRC-13",
+          "SRC-14"
+        ]
+      },
+      {
+        "entity": "narodni-galerie-praha",
+        "label": "Národní galerie Praha",
+        "claims": [
+          "CLM-22",
+          "CLM-25"
+        ],
+        "sources": [
+          "SRC-04",
+          "SRC-08",
+          "SRC-27"
+        ]
+      },
+      {
+        "entity": "alicja-knastova",
+        "label": "Alicja Knastová",
+        "claims": [
+          "CLM-25"
+        ],
+        "sources": [
+          "SRC-04",
+          "SRC-08"
+        ]
+      },
+      {
+        "entity": "martin-baxa",
+        "label": "Martin Baxa",
+        "claims": [
+          "CLM-26"
+        ],
+        "sources": [
+          "SRC-04"
+        ]
+      },
+      {
+        "entity": "narodni-pamatkovy-ustav",
+        "label": "Národní památkový ústav",
+        "claims": [
+          "CLM-36"
+        ],
+        "sources": [
+          "SRC-15"
+        ]
+      },
+      {
+        "entity": "petice-oto-zabal-to",
+        "label": "Petice „Oto, zabal to!“",
+        "claims": [
+          "CLM-43"
+        ],
+        "sources": [
+          "SRC-12",
+          "SRC-28"
+        ]
       }
     ],
     "edges": [
       "edge-klempir-vlada",
-      "edge-klempir-pavel"
+      "edge-klempir-pavel",
+      "edge-klempir-ceskatelevize",
+      "edge-klempir-ceskyrozhlas",
+      "edge-zavoral-klempir",
+      "edge-milionchvilek-klempir",
+      "edge-klempir-narodnigalerie",
+      "edge-klempir-alicjaknastova",
+      "edge-martinbaxa-klempir",
+      "edge-klempir-npu",
+      "edge-klempir-peticeozabalto"
     ]
   },
   "contentBlocks": [

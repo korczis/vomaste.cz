@@ -1,43 +1,45 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/tomas-zatloukal",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "tomas-zatloukal",
- "entityId": "tomas-zatloukal",
- "title": "Tomáš Zatloukal",
- "entityType": "person",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "robert-plaga"
- ],
- "order": 408,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/tomas-zatloukal",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "tomas-zatloukal",
+  "entityId": "tomas-zatloukal",
+  "title": "Tomáš Zatloukal",
+  "entityType": "person",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "robert-plaga"
   ],
-  "claimRefs": [
-   "CLM-08",
-   "CLM-09",
-   "CLM-23"
-  ],
-  "sourceRefs": [
-   "SRC-02",
-   "SRC-04",
-   "SRC-14",
-   "SRC-23"
+  "order": 408,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02",
+      "edge-zatloukal-csi",
+      "edge-plaga-zatloukal"
+    ],
+    "claimRefs": [
+      "CLM-08",
+      "CLM-09",
+      "CLM-23"
+    ],
+    "sourceRefs": [
+      "SRC-02",
+      "SRC-04",
+      "SRC-14",
+      "SRC-23"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Ústřední školní inspektor; omluvil se za komunikaci testování žáků. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (robert-plaga). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Ústřední školní inspektor; omluvil se za komunikaci testování žáků. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (robert-plaga). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
-  }
- ]
 }

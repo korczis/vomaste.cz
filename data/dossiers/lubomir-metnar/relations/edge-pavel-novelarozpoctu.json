@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/relations/edge-pavel-novelarozpoctu",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-pavel-novelarozpoctu",
+  "relationId": "edge-pavel-novelarozpoctu",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/pavel"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/novela-rozpoctovych-pravidel-2026"
+  },
+  "relationType": "ASSOCIATED_WITH_EVENT",
+  "label": "prezident vetoval novelu mj. kvůli obavám o nezávislost NKÚ, Ústavního soudu a ombudsmana",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-25"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-07"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 7,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-045 (provázání grafu, druhá dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

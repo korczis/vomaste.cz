@@ -69,7 +69,9 @@
           "CLM-53",
           "CLM-54",
           "CLM-12",
-          "CLM-13"
+          "CLM-13",
+          "CLM-02",
+          "CLM-08"
         ],
         "sources": [
           "SRC-01",
@@ -93,7 +95,9 @@
           "SRC-30",
           "SRC-07",
           "SRC-06",
-          "SRC-08"
+          "SRC-08",
+          "SRC-03",
+          "SRC-04"
         ]
       },
       {
@@ -118,11 +122,64 @@
           "SRC-06",
           "SRC-08"
         ]
+      },
+      {
+        "entity": "ceska-skolni-inspekce",
+        "label": "Česká školní inspekce",
+        "claims": [
+          "CLM-02",
+          "CLM-08"
+        ],
+        "sources": [
+          "SRC-02",
+          "SRC-03",
+          "SRC-04"
+        ]
+      },
+      {
+        "entity": "tomas-zatloukal",
+        "label": "Tomáš Zatloukal",
+        "claims": [
+          "CLM-08"
+        ],
+        "sources": [
+          "SRC-02",
+          "SRC-04"
+        ]
+      },
+      {
+        "entity": "martin-benes",
+        "label": "Martin Beneš",
+        "claims": [
+          "CLM-38",
+          "CLM-40"
+        ],
+        "sources": [
+          "SRC-16",
+          "SRC-18"
+        ]
+      },
+      {
+        "entity": "martin-kupka",
+        "label": "Martin Kupka",
+        "claims": [
+          "CLM-42"
+        ],
+        "sources": [
+          "SRC-16",
+          "SRC-19",
+          "SRC-30"
+        ]
       }
     ],
     "edges": [
       "edge-plaga-vlada",
-      "edge-babis-plaga"
+      "edge-babis-plaga",
+      "edge-plaga-csi",
+      "edge-zatloukal-csi",
+      "edge-plaga-zatloukal",
+      "edge-plaga-benes",
+      "edge-plaga-kupka"
     ]
   },
   "contentBlocks": [

@@ -1,41 +1,42 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/tomas-cabal",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "tomas-cabal",
- "entityId": "tomas-cabal",
- "title": "Tomáš Cabal",
- "entityType": "person",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "macinka-turek",
-  "petr-vencalek"
- ],
- "order": 402,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/tomas-cabal",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "tomas-cabal",
+  "entityId": "tomas-cabal",
+  "title": "Tomáš Cabal",
+  "entityType": "person",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "macinka-turek",
+    "petr-vencalek"
   ],
-  "claimRefs": [
-   "CLM-03",
-   "CLM-47"
-  ],
-  "sourceRefs": [
-   "SRC-01",
-   "SRC-17"
+  "order": 402,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02",
+      "edge-gmrgas-tomascabal"
+    ],
+    "claimRefs": [
+      "CLM-03",
+      "CLM-47"
+    ],
+    "sourceRefs": [
+      "SRC-01",
+      "SRC-17"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Podnikatel, spoluvlastník ukrajinské GMR GAS UA LLC vedle Macinky a GMR GAS s.r.o.; žádný zdroj mu nevytýká pochybení. Soukromá osoba jmenovaná obsahem. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (macinka-turek, petr-vencalek). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Podnikatel, spoluvlastník ukrajinské GMR GAS UA LLC vedle Macinky a GMR GAS s.r.o.; žádný zdroj mu nevytýká pochybení. Soukromá osoba jmenovaná obsahem. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (macinka-turek, petr-vencalek). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
-  }
- ]
 }

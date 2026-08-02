@@ -1,64 +1,66 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/poslanecka-snemovna",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "poslanecka-snemovna",
- "entityId": "poslanecka-snemovna",
- "title": "Poslanecká sněmovna",
- "entityType": "public_institution",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "andrej-babis",
-  "jaromir-zuna",
-  "jaroslav-faltynek",
-  "jeronym-tejc",
-  "karel-havlicek",
-  "oto-klempir"
- ],
- "order": 349,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/poslanecka-snemovna",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "poslanecka-snemovna",
+  "entityId": "poslanecka-snemovna",
+  "title": "Poslanecká sněmovna",
+  "entityType": "public_institution",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "andrej-babis",
+    "jaromir-zuna",
+    "jaroslav-faltynek",
+    "jeronym-tejc",
+    "karel-havlicek",
+    "oto-klempir",
+    "tomio-okamura"
   ],
-  "claimRefs": [
-   "CLM-01",
-   "CLM-07",
-   "CLM-30",
-   "CLM-31",
-   "CLM-33",
-   "CLM-38",
-   "CLM-44",
-   "CLM-45",
-   "CLM-49",
-   "CLM-50",
-   "CLM-77",
-   "CLM-85"
-  ],
-  "sourceRefs": [
-   "SRC-01",
-   "SRC-03",
-   "SRC-09",
-   "SRC-15",
-   "SRC-17",
-   "SRC-18",
-   "SRC-21",
-   "SRC-22",
-   "SRC-54",
-   "SRC-60",
-   "SRC-61"
+  "order": 349,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02",
+      "edge-okamura-poslaneckasnemovna"
+    ],
+    "claimRefs": [
+      "CLM-01",
+      "CLM-07",
+      "CLM-30",
+      "CLM-31",
+      "CLM-33",
+      "CLM-38",
+      "CLM-44",
+      "CLM-45",
+      "CLM-49",
+      "CLM-50",
+      "CLM-77",
+      "CLM-85"
+    ],
+    "sourceRefs": [
+      "SRC-01",
+      "SRC-03",
+      "SRC-09",
+      "SRC-15",
+      "SRC-17",
+      "SRC-18",
+      "SRC-21",
+      "SRC-22",
+      "SRC-54",
+      "SRC-60",
+      "SRC-61"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Vydala Babiše i Faltýnka ke stíhání (2017), počátkem března 2026 Babiše nevydala; primární zdroj profilu Faltýnka. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (andrej-babis, jaromir-zuna, jaroslav-faltynek, jeronym-tejc, karel-havlicek, oto-klempir). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Vydala Babiše i Faltýnka ke stíhání (2017), počátkem března 2026 Babiše nevydala; primární zdroj profilu Faltýnka. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (andrej-babis, jaromir-zuna, jaroslav-faltynek, jeronym-tejc, karel-havlicek, oto-klempir). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
-  }
- ]
 }
