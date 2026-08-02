@@ -339,6 +339,40 @@ Prismatic není a nebude tvrdou závislostí.
   `npm run build` delegován orchestrátorovi kvůli souběžnému buildu). Vybrána MVP architektura A+B,
   zamítnuty C a D. Zaznamenány governance nálezy B-1…B-16 a GitHub nálezy (CRITICAL:
   `blank_issues_enabled`). Žádný produkční kód, žádná autorizace, žádný commit ve Fázi 1.
+- 2026-08-02 — Fáze 2 implementována (stále **PROPOSED** — tento zápis rozhodnutí vlastníka o
+  `ACCEPTED` nenahrazuje). Schema verze `0.1.0` (§23.1 — model stále experimentální, ne `1.0.0`).
+  Vytvořeno: `schemas/intake/{intake-event,intake-manifest}.schema.json`, `scripts/intake/*` (event
+  loader s file-size/symlink/JSON limity, form detektor pro `vomaste-intake-form:v1`, sekční parser,
+  submission validátor, konzervativní normalizace textu i syntaktická URL extrakce/klasifikace bez
+  síťového přístupu, deterministický ID/hash/manifest builder, Markdown report renderer s
+  fenced-code-block escapingem proti heading/mention/HTML-comment injection, CLI `process-issue.mjs`
+  s atomickým zápisem), 27 syntetických fixtures (§19 seznam + starší/neznámá form-verze navíc), 121
+  testů (`npm run test:intake`, nyní i součást hlavního `npm run test` → `npm run build`).
+
+  **Odchylky od Fáze 1, s důvodem:**
+  1. Enum `workflow.*` ve Fázi-2 schématu je omezen na `intake_status ∈ {triage, invalid,
+     needs_information}`, `authorization_status = pending_owner` (const), `publication_status =
+     blocked` (const) — přesně dle §15.1 zadání Fáze 2. To je **užší** než Osa 2 státového automatu
+     níže, která má i `not_requested` jako počáteční stav před tím, než o autorizaci požádá vlastník.
+     Fáze 2 `not_requested` nepoužívá vůbec — každé platné podání jde rovnou do `pending_owner`, protože
+     Fáze 2 nemá matching/preflight (Fáze 3/4), tedy žádnou mezikrokovou událost, po které by
+     `not_requested → pending_owner` přechod dával smysl. Dopad: neškodné zúžení, ne rozšíření —
+     `authorized`/`publishable`/`published` zůstávají ve schématu strukturálně nevyjádřitelné. Rollback:
+     přidat `not_requested` jako další povolenou konstantu ve Fázi 3, pokud se ukáže potřebná.
+  2. Manifest nese `submission.submitted_source_urls_raw` (string) + `normalization.normalized_source_urls`
+     (pole objektů s `syntax_observations`) místo §5.2 návrhu `submission.submitted_source_urls` (pole).
+     Důvod: §13.2 (raw preservation) a §14 (jen syntaktická extrakce) vyžadují oddělit, co uživatel
+     doslova napsal, od toho, co procesor z toho syntakticky vytěžil — stejné rozlišení už mají
+     ostatní textová pole. Dopad: schema shape, ne workflow.
+  3. Chybějící `acknowledgements` (§12) řeší tato fáze jako **tvrdé selhání** (žádný manifest
+     nevznikne, `SUBMISSION_VALIDATION_FAILED`) — §12 nechávalo na Fázi 2 volbu mezi tím a
+     `intake_status=invalid` artifactem s manifestem. Důvod: bez explicitního rozhodnutí vlastníka v
+     ADR zvolena bezpečnější fail-closed větev (§1.4). Rollback: pokud Fáze 3+ potřebuje i pro tento
+     případ auditovatelný manifest, přepnout na `invalid`-artifact větev je lokální změna
+     `scripts/intake/validate-submission.mjs` + `process-issue.mjs`, ne schema-breaking.
+
+  `npm run build` zelený (109 s, 2360 stránek); `git diff -- AGENTS.md data/authorizations.toml
+  .github/workflows` prázdný. Fáze 3 kontrakt: `reports/intake/phase-02-implementation-report.md`.
 
 ---
 

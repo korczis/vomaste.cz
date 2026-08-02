@@ -1,0 +1,25 @@
+{
+  "event_version": "1.0.0",
+  "repository": {
+    "owner": "korczis",
+    "name": "vomaste.cz",
+    "full_name": "korczis/vomaste.cz"
+  },
+  "issue": {
+    "number": 103,
+    "title": "[Téma] Nové téma k existujícímu dossieru",
+    "body": "<!-- vomaste-intake-form:v1 -->\n\n### Typ podnětu\n\nNové téma pro existující dossier\n\n### Navržený subjekt\n\nJan Testovací — dodatečné téma\n\n### Popis a kontext\n\nPodle zveřejněného zápisu ze zastupitelstva obce Testov ze dne 2026-05-01 schválil starosta Jan Testovací zakázku bez veřejné soutěže.\n\n### Veřejný zájem\n\nJan Testovací je veřejně volený starosta obce Testov, jedná se o nakládání s veřejnými prostředky.\n\n### Zdrojové odkazy\n\nhttps://www.testov.cz/zapisy/2026-05-01.pdf\n\n### Identifikátory (nepovinné)\n\n\n\n### Co zatím nevíme (nepovinné)\n\nNení jasné, zda zakázka podléhala povinnosti veřejné soutěže.\n\n### Souvislost s existujícím dossierem (nepovinné)\n\nNavazuje na již existující dossier Jana Testovacího.\n\n### Potvrzení\n\n- [X] Rozumím, že jde o veřejný GitHub issue a podnět bude veřejně viditelný.\n- [X] Nenahraji sem důvěrný materiál, citlivé důkazy ani údaje identifikující zdroj.\n- [X] Rozumím, že se nejedná o automatickou autorizaci ani publikaci — podnět jen čeká na posouzení vlastníkem.\n",
+    "html_url": "https://github.com/korczis/vomaste.cz/issues/103",
+    "state": "open",
+    "author_login": "example-user",
+    "created_at": "2026-08-01T09:00:00Z",
+    "updated_at": "2026-08-01T09:00:00Z",
+    "labels": [
+      "navrh-rozsahu"
+    ]
+  },
+  "event": {
+    "action": "opened",
+    "delivery_id": "fixture-delivery-103"
+  }
+}

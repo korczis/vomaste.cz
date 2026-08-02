@@ -1,0 +1,189 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vomaste.cz/schemas/intake/intake-manifest.schema.json",
+  "title": "Intake manifest (Phase 2, docs/missions/intake/PHASE_002.md §5.2)",
+  "$comment": "schemaVersion 0.1.0: the intake data model is still experimental (Fáze 1 ADR §35 non-goals — schema is a future public contract, not yet owner-reviewed as stable). Enums for workflow.* are intentionally narrower than the full state machine (ADR §18/state-machine-detail): Phase 2 code can only ever produce the values enumerated here — authorized/publishable/published are not valid values of this schema at all, so the invariant 'intake ≠ authorization' is enforced by the shape layer, not just by convention.",
+  "type": "object",
+  "additionalProperties": false,
+  "$defs": {
+    "isoDateTime": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?(Z|[+-]\\d{2}:\\d{2})$",
+      "$comment": "No `format` keyword — see schemas/intake/intake-event.schema.json's $defs.isoDateTime for why."
+    },
+    "httpUrl": { "type": "string", "pattern": "^https?://\\S+$" }
+  },
+  "required": ["schema_version", "id", "source_event", "submission", "normalization", "system_observations", "proposed_authorization_scope", "workflow", "provenance"],
+  "properties": {
+    "schema_version": { "const": "0.1.0" },
+    "id": {
+      "type": "string",
+      "pattern": "^INTAKE-GH-[a-z0-9-]+-[a-z0-9-]+-\\d{6}$",
+      "$comment": "INTAKE-GH-<owner>-<repo>-<zero-padded issue number>. Deterministic from repository+issue number only — never from title or date, so the same issue always resolves to the same ID and an edit never changes it (§6 of the mission)."
+    },
+    "source_event": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["provider", "repository", "issue_number", "issue_url", "issue_author_login", "event_action", "created_at", "updated_at"],
+      "properties": {
+        "provider": { "const": "github" },
+        "repository": { "type": "string", "pattern": "^[^/]+/[^/]+$" },
+        "issue_number": { "type": "integer", "minimum": 1 },
+        "issue_url": { "$ref": "#/$defs/httpUrl" },
+        "issue_author_login": { "type": "string", "minLength": 1 },
+        "event_action": { "type": "string", "enum": ["opened", "edited", "reopened", "labeled", "unlabeled", "closed"] },
+        "created_at": { "$ref": "#/$defs/isoDateTime" },
+        "updated_at": { "$ref": "#/$defs/isoDateTime" }
+      }
+    },
+    "submission": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["submission_type", "subject_text", "description_text", "public_interest_text", "submitted_source_urls_raw", "acknowledgements"],
+      "properties": {
+        "submission_type": {
+          "type": "string",
+          "enum": ["new_dossier", "new_entity", "new_topic_for_existing_dossier", "link_existing_entities"]
+        },
+        "subject_text": { "type": "string", "maxLength": 500 },
+        "description_text": { "type": "string", "maxLength": 20000 },
+        "public_interest_text": { "type": "string", "maxLength": 10000 },
+        "identifiers_text": { "type": "string", "maxLength": 2000 },
+        "submitted_source_urls_raw": { "type": "string", "maxLength": 204800 },
+        "known_unknowns_text": { "type": "string", "maxLength": 5000 },
+        "existing_references_text": { "type": "string", "maxLength": 5000 },
+        "acknowledgements": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["public_issue_understood", "no_confidential_material", "not_automatic_publication"],
+          "properties": {
+            "public_issue_understood": { "type": "boolean" },
+            "no_confidential_material": { "type": "boolean" },
+            "not_automatic_publication": { "type": "boolean" }
+          }
+        }
+      }
+    },
+    "normalization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["subject_text_normalized", "normalized_source_urls", "normalization_notes"],
+      "properties": {
+        "subject_text_normalized": { "type": "string" },
+        "normalized_source_urls": {
+          "type": "array",
+          "maxItems": 100,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["raw", "normalized", "syntax_observations"],
+            "properties": {
+              "raw": { "type": "string", "maxLength": 2048 },
+              "normalized": { "type": "string", "maxLength": 2048 },
+              "syntax_observations": {
+                "type": "array",
+                "items": { "type": "string", "enum": ["contains_credentials", "has_fragment", "unsupported_protocol", "possible_localhost", "possible_ip_literal", "url_too_long", "non_standard_port"] }
+              }
+            }
+          }
+        },
+        "normalization_notes": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "system_observations": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["parser_version", "form_version", "warnings", "errors"],
+      "properties": {
+        "parser_version": { "type": "string" },
+        "form_version": { "type": "string" },
+        "warnings": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["code", "message"],
+            "properties": {
+              "code": { "type": "string" },
+              "message": { "type": "string" },
+              "field": { "type": "string" }
+            }
+          }
+        },
+        "errors": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["code", "message"],
+            "properties": {
+              "code": { "type": "string" },
+              "message": { "type": "string" },
+              "field": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "proposed_authorization_scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["decision_class", "authorization_effect", "subject_candidates", "topics", "explicit_exclusions", "sourcing_limits"],
+      "$comment": "This object can NEVER cause an authorization or publication side effect — decision_class and authorization_effect are consts, not enums with a wider unused range, so there is no code path that could ever set them to anything else.",
+      "properties": {
+        "decision_class": { "const": "machine_draft_only" },
+        "authorization_effect": { "const": "none" },
+        "subject_candidates": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["label_from_submission", "entity_id", "resolution_status"],
+            "properties": {
+              "label_from_submission": { "type": "string" },
+              "entity_id": { "type": ["string", "null"] },
+              "resolution_status": { "const": "unresolved", "$comment": "Phase 2 has no entity matching (Fáze 3) — every candidate is unresolved by construction." }
+            }
+          }
+        },
+        "topics": { "type": "array", "items": { "type": "string" } },
+        "explicit_exclusions": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["nonpublic_material", "private_life_without_public_interest", "unnamed_third_parties_not_publicly_identified"] }
+        },
+        "sourcing_limits": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["publicly_available_sources_only", "independent_named_sources_required"] }
+        }
+      }
+    },
+    "workflow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["intake_status", "authorization_status", "publication_status"],
+      "$comment": "Phase 2 enums are a strict subset of the full ADR state machine (§18) — values like authorized/publishable/published do not exist in this schema at all, per the mission's own explicit Phase 2 restriction (§15.4/§28).",
+      "properties": {
+        "intake_status": { "type": "string", "enum": ["triage", "invalid", "needs_information"] },
+        "authorization_status": { "const": "pending_owner" },
+        "publication_status": { "const": "blocked" }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["generated_at", "generator_name", "generator_version", "repository_commit", "input_sha256", "manifest_sha256"],
+      "properties": {
+        "generated_at": { "$ref": "#/$defs/isoDateTime" },
+        "generator_name": { "const": "vomaste-intake-processor" },
+        "generator_version": { "type": "string" },
+        "repository_commit": { "type": "string", "pattern": "^[0-9a-f]{7,40}$" },
+        "input_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "manifest_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "$comment": "Hash of the manifest with this field itself excluded (scripts/intake/hash.mjs hashManifest) — resolves the self-referential-hash problem documented in PHASE_002.md §7.2."
+        }
+      }
+    }
+  }
+}

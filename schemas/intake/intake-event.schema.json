@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vomaste.cz/schemas/intake/intake-event.schema.json",
+  "title": "Intake event input (Phase 2, docs/missions/intake/PHASE_002.md §5.1)",
+  "$comment": "Minimal normalized adapter input the local processor needs — NOT a full GitHub webhook payload validator. scripts/intake/adapters/github-event.mjs (Phase 6) reduces the real GitHub payload to this shape; nothing downstream ever reads raw GitHub fields directly. Separate namespace (schemas/intake/) from the production canonical registry (schemas/canonical/) per Fáze 2's own file-scope boundary — this schema has no bearing on dossier data.",
+  "type": "object",
+  "additionalProperties": false,
+  "$defs": {
+    "isoDateTime": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?(Z|[+-]\\d{2}:\\d{2})$",
+      "$comment": "No `format` keyword: ajv-formats is not a repo dependency (schemas/canonical/* validates dates via `pattern` too, see _defs.schema.json#publishedDate) — a linear, non-backtracking regex instead of a library, per PHASE_002.md §5.3's ReDoS-safety requirement."
+    }
+  },
+  "required": ["event_version", "repository", "issue", "event"],
+  "properties": {
+    "event_version": { "const": "1.0.0" },
+    "repository": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["owner", "name", "full_name"],
+      "properties": {
+        "owner": { "type": "string", "minLength": 1, "maxLength": 100 },
+        "name": { "type": "string", "minLength": 1, "maxLength": 100 },
+        "full_name": { "type": "string", "minLength": 1, "maxLength": 201, "pattern": "^[^/]+/[^/]+$" }
+      }
+    },
+    "issue": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["number", "title", "body", "html_url", "state", "author_login", "created_at", "updated_at", "labels"],
+      "properties": {
+        "number": { "type": "integer", "minimum": 1 },
+        "title": { "type": "string", "maxLength": 500 },
+        "body": { "type": "string", "maxLength": 1048576, "$comment": "1 MiB safe max event size, per §8.2 of the mission." },
+        "html_url": { "type": "string", "pattern": "^https?://\\S+$", "maxLength": 2048 },
+        "state": { "type": "string", "enum": ["open", "closed"] },
+        "author_login": { "type": "string", "minLength": 1, "maxLength": 100 },
+        "created_at": { "$ref": "#/$defs/isoDateTime" },
+        "updated_at": { "$ref": "#/$defs/isoDateTime" },
+        "labels": { "type": "array", "items": { "type": "string", "maxLength": 100 }, "maxItems": 50 }
+      }
+    },
+    "event": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["action", "delivery_id"],
+      "properties": {
+        "action": { "type": "string", "enum": ["opened", "edited", "reopened", "labeled", "unlabeled", "closed"] },
+        "delivery_id": { "type": "string", "minLength": 1, "maxLength": 200 }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "event_version": "1.0.0",
+  "repository": {
+    "owner": "korczis",
+    "name": "vomaste.cz",
+    "full_name": "korczis/vomaste.cz"
+  },
+  "issue": {
+    "number": 125,
+    "title": "[Dossier] Testovací podnět",
+    "body": "Tento issue nezačíná platnou form marker značkou.\n\n<!-- vomaste-intake-form:v1 -->\n\n### Typ podnětu\n\nNový dossier (nová osoba/subjekt)",
+    "html_url": "https://github.com/korczis/vomaste.cz/issues/125",
+    "state": "open",
+    "author_login": "example-user",
+    "created_at": "2026-08-01T09:00:00Z",
+    "updated_at": "2026-08-01T09:00:00Z",
+    "labels": [
+      "navrh-rozsahu"
+    ]
+  },
+  "event": {
+    "action": "opened",
+    "delivery_id": "fixture-delivery-125"
+  }
+}

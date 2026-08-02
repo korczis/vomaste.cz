@@ -17,3 +17,8 @@ static/data/
 # Playwright artefakty (T-021) — reporty a trace z padlych behu
 test-results/
 playwright-report/
+
+# Intake processor fixture-run scratch output (npm run intake:fixture,
+# docs/missions/intake/PHASE_002.md §21.2) — never tracked, never
+# produced by a real GitHub event.
+.tmp/intake/
