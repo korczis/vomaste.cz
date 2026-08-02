@@ -41,3 +41,11 @@ neznámého pachatele ([CLM-27](@/dossiers/andrej-babis/claims/clm-27.md),
 **Podmínka uzavření**: buď nezávislá redakce s vlastním, nepřevzatým
 zjištěním (pak lze stav zvednout na `CORROBORATED`), nebo otevřený
 primární dokument (dopis, rozhodnutí, tisková zpráva Komise či EPPO).
+
+**Opakovaná kontrola k 2026-08-02.** Nově je zprostředkovaně doloženo
+(Seznam Zprávy, [CLM-102](@/dossiers/andrej-babis/claims/clm-102.md),
+[CLM-103](@/dossiers/andrej-babis/claims/clm-103.md)), že druhý dopis
+EK z konce května 2026 podepsal Hugo Sobral jménem pěti generálních
+ředitelství a že Česko požadovanou právní analýzu neposlalo. Primární
+dokument Evropské komise ani úřední odpovědi ČR ale nadále nebyly
+pro dossier otevřeny — mezera trvá.

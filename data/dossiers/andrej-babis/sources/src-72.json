@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-72",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-72",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-72 — Seznam Zprávy: EU požadovala důkazy, že Babiš není ve střetu zájmů. Česko je odmítlo poslat (19. 6. 2026)",
+  "description": "Rekonstrukce korespondence: druhý dopis EK z konce května 2026 (Hugo Sobral za pět generálních ředitelství, měsíční lhůta, náležitosti dle čl. 61 finančního nařízení) a odpověď MMR (Stanislav Schneidr), v níž stát právní analýzu neposlal a ke statutu RSVP Trust uvedl, že má jen mediální verzi.",
+  "outlet": "Seznam Zprávy",
+  "sourceType": "investigativní zpravodajství",
+  "url": "https://www.seznamzpravy.cz/clanek/domaci-kauzy-eu-pozadovala-dukazy-ze-babis-neni-ve-stretu-zajmu-cesko-je-odmitlo-poslat-308913",
+  "published": "2026-06-19",
+  "retrieved": "2026-08-02",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-102"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-103"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Seznam Zprávy 19. 6. 2026: druhý dopis Evropské komise dorazil na\nkonci května 2026, podepsán **Hugem Sobralem**, zástupcem generální\nředitelky pro regionální politiku, jménem pěti generálních\nředitelství. Požadoval do jednoho měsíce právní analýzu, která měla\n„zahrnovat veškeré pracovní dokumenty, hodnoticí tabulky a podpůrné\ndůkazy týkající se souladu se článkem 61 finančního nařízení“.\nOdpověď za Česko poslal vrchní ředitel sekce fondů EU MMR **Stanislav\nSchneidr**: právní analýza odeslána nebyla a ke statutu RSVP Trust\nstát uvedl: „K dispozici máme pouze verzi, která se objevila\nv médiích, přičemž u takového dokumentu nemůžeme potvrdit jeho\nsprávnost ani úplnost.“\n\n**Poznámka k přesnosti a limitům**: obsah obou dopisů je doložen\nzprostředkovaně (SZ); primární dokumenty EK ani MMR nebyly pro\ndossier otevřeny — vede [GAP-02](@/dossiers/andrej-babis/gaps/gap-02.md).\nOtevřeno a přečteno 2026-08-02."
+    }
+  ],
+  "order": 72
+}

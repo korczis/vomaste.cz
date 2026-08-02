@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-103",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-103",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "Česko podle Seznam Zpráv požadovanou právní analýzu Evropské komisi neposlalo; vrchní ředitel sekce fondů EU ministerstva pro místní rozvoj Stanislav Schneidr v odpovědi mimo jiné uvedl, že ke statutu fondu RSVP Trust má stát „pouze verzi, která se objevila v médiích, přičemž u takového dokumentu nemůžeme potvrdit jeho správnost ani úplnost“ — jde o popis odpovědi českého úřadu; reakce Komise na ni v citovaném zdroji doložena není",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-72"
+    }
+  ],
+  "subjects": [],
+  "order": 103,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}
