@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/bydlime-v-kralove-poli-z-s",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "bydlime-v-kralove-poli-z-s",
+  "entityId": "bydlime-v-kralove-poli-z-s",
+  "title": "Bydlíme v Králově Poli, z.s.",
+  "entityType": "company",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "referenced",
+  "dossiers": [],
+  "order": 471,
+  "description": "Bydlíme v Králově Poli, z.s. (IČO 02922703) — kontextový záznam rejstříkové vazby z ARES, ne dossier.",
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "ares-expansion-02922703-2026-08-02"
+    ],
+    "depth": 3
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Záznam z veřejného rejstříku (ARES), pořízený programově 2026-08-02. IČO 02922703. Sídlo podle rejstříku: Tučkova 780/9, Veveří, 60200 Brno.\n\n**Kontextová entita, ne předmět šetření.** Tahle stránka eviduje pouze to,\nže subjekt existuje ve veřejném rejstříku a objevil se při rozšiřování\nrejstříkového okolí. Nenese žádné tvrzení, nic nedokládá a neznamená\npodezření ani hodnocení. Dossier o tomto subjektu by vyžadoval samostatné,\ndatované rozhodnutí zapsané v autorizačním logu."
+    }
+  ],
+  "externalIds": {
+    "ares": "02922703"
+  }
+}

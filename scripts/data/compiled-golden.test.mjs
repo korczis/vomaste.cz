@@ -16,23 +16,23 @@ import { compileDataset } from "./compile.mjs";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const compiled = compileDataset(loadCanonicalTree(join(ROOT, "data/dossiers")));
 
-test("golden: počty záznamů per typ (snapshot 2026-08-03: + CLM-51/SRC-37 adam-vojtech GAP-01)", () => {
+test("golden: počty záznamů per typ (snapshot 2026-08-03: + 10 kontextových entit z ARES expanze IČO 01529820/04449461/02922703/26228548, obnoveno na výslovný pokyn vlastníka po revertu 7895b3e8)", () => {
   assert.deepEqual(compiled.counts.perType, {
     case: 89,
     claim: 885,
     dossier: 24,
-    entity: 504,
+    entity: 514,
     gap: 189,
     relation: 317,
     source: 573,
     update: 50,
   });
   assert.equal(compiled.counts.dossiers, 24);
-  assert.equal(compiled.counts.entities, 504);
+  assert.equal(compiled.counts.entities, 514);
 });
 
 test("golden: graf — uzly z entit, hrany z relations", () => {
-  assert.equal(compiled.graph.nodes.length, 504);
+  assert.equal(compiled.graph.nodes.length, 514);
   assert.equal(compiled.graph.edges.length, 317);
 });
 
