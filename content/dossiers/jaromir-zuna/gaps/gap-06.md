@@ -19,3 +19,9 @@ Není doloženo, že vláda ke dni rešerše (30. 7. 2026) Koncepci výstavby A�
 **Proč je to mezera**: Poslední dohledané jednání Bezpečnostní rady státu (17. 6. a 2. 7. 2026) debatu neuzavřelo a žádný nalezený zdroj nereferuje o schválení vládou. Tato mezera **není** zjištěním žádným
 směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
+
+**Opakovaná kontrola k 2026-08-02**: cílené hledání neukázalo žádnou
+novější zprávu o formálním schválení — nejnovější dohledané zdroje
+(květen–červen 2026, včetně existujícího SRC-12 o Babišově kritice
+náboru) popisují koncepci stále jako rozpracovanou/projednávanou.
+Mezera zůstává otevřená.
