@@ -512,7 +512,10 @@ Podrobné vymezení: [LICENSE.md](LICENSE.md).
 Konstituce (`docs/constitution/`), redakční pravidla a datový model
 (`AGENTS.md`), koop protokol (`docs/coop/`), audity obsahu
 (`docs/dossier-audit/`), migrační inventura (`docs/migrations/`),
-architektonická rozhodnutí (`docs/adr/`).
+architektonická rozhodnutí (`docs/adr/`). Návrh veřejného
+dossier-intake workflow (Fáze 1, PROPOSED):
+[`docs/adr/ADR-public-dossier-intake.md`](docs/adr/ADR-public-dossier-intake.md)
++ auditní reporty v `reports/intake/`.
 
 Stejné řídicí dokumenty (AGENTS.md, přispívání, konstituce, licence,
 bezpečnostní politika, koop protokol) jsou navíc čitelné přímo na webu
