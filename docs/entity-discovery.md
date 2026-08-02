@@ -24,6 +24,23 @@ Everything left of the bracketed step can be produced mechanically —
 write exactly this shape. Everything at and after the bracketed step
 requires a human, on the record, every time.
 
+A third discovery channel exists since 2026-08-02: **content
+extraction** — names that the already-published, already-authorized
+dossier content itself mentions (politicians, prosecutors, judges
+acting officially, spokespeople, institutions, parties, companies,
+named proceedings) become context entities with
+`discoveredVia: ["content-extraction-<date>"]` and
+`provenance.claimRefs`/`sourceRefs` pointing at the exact claims and
+sources that mention them. The same editorial gates apply in code, not
+in good intentions: intentionally unnamed persons (accusers, minors,
+relatives) are never created; surname-only mentions wait for a
+re-opened source; private individuals without a public role stay in
+claim texts only and never become graph nodes; an explicit
+"Not authorized" record in `AGENTS.md` is honored exactly as written
+(it may — as with Radovan Krejčíř — expressly permit the context-entity
+role while refusing a dossier). Extraction discovers; it never
+authorizes.
+
 ## Why the gate exists
 
 If discovery could authorize itself — if appearing in enough sources, or
