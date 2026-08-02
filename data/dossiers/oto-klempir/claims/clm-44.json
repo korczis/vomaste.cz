@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-44",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-44",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
+  },
+  "text": "Klempíř 9. 6. 2026 potvrdil, že valorizační mechanismus příspěvku pro ČT a ČRo bude nastaven jinak než v dubnovém návrhu (5% strop), bez upřesnění nových parametrů — o týden později vláda schválila vzorec vázaný na kumulovanou inflaci nad 10 %",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-30"
+    }
+  ],
+  "subjects": [
+    "klempir"
+  ],
+  "order": 44,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam tvrzení CLM-44 — shrnutí, stav a zdroje\nvýše jsou úplné. Vysvětluje\n[GAP-03](@/dossiers/oto-klempir/gaps/gap-03.md) — rozdíl mezi ČT24\n(duben, 5% strop) a Médiářem (červen, 10% vzorec) byl skutečnou změnou\nnávrhu, ne chybou zdroje."
+    }
+  ]
+}

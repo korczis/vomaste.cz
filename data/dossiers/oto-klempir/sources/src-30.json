@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-30",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-30",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
+  },
+  "title": "SRC-30 — Deník N (minuta), 9. 6. 2026",
+  "description": "Klempíř přímo potvrzuje, že valorizační mechanismus příspěvku pro ČT a ČRo bude nastaven jinak než v dubnovém návrhu — bez upřesnění parametrů.",
+  "outlet": "Deník N",
+  "sourceType": "zpravodajství",
+  "url": "https://denikn.cz/minuta/2089864",
+  "published": "2026-06-09",
+  "retrieved": "2026-08-02",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-44"
+    }
+  ],
+  "subjects": [
+    "klempir"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Co dokládá.** Klempíř na dotaz k valorizaci odpověděl: „Mohu jen říci,\nže valorizační mechanismus bude nastaven jinak,\" bez upřesnění\nparametrů — přislíbil detaily po jednání vlády v pondělí.\n\n**Proč je to tu důležité.** Toto přímo vysvětluje zdánlivý rozpor mezi\nČT24 (14. 4. 2026 — strop 5 %) a Médiářem (15. 6. 2026 — vzorec 10 %\npři kumulované inflaci nad 10 %), zaznamenaný v\n[GAP-03](@/dossiers/oto-klempir/gaps/gap-03.md): nešlo o chybu žádného\nze zdrojů, ale o **skutečnou změnu návrhu** mezi dubnem a červnem,\npotvrzenou samotným ministrem 9. 6. 2026 — týden před schválením vládou\n15. 6. 2026 ([SRC-26](@/dossiers/oto-klempir/sources/src-26.md))."
+    }
+  ],
+  "order": 30
+}

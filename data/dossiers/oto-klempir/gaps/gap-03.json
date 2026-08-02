@@ -9,18 +9,22 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
   },
-  "title": "GAP-03 — Rozporné údaje o valorizačním mechanismu příspěvku pro ČT a ČRo",
-  "description": "ČT24 (14. 4. 2026) uvádí valorizaci o inflaci maximálně o pět procent, zatímco Médiář (15. 6. 2026) popisuje vzorec, podle nějž se příspěvek",
-  "priority": "střední",
-  "checked": "2026-07-30",
-  "claims": [],
+  "title": "GAP-03 — Rozporné údaje o valorizačním mechanismu příspěvku pro ČT a ČRo — vysvětleno",
+  "description": "ČT24 (14. 4. 2026) uvádí valorizaci o inflaci maximálně o pět procent, zatímco Médiář (15. 6. 2026) popisuje vzorec, podle nějž se příspěvek zvýší o 10 % při kumulované inflaci nad 10 % — vysvětleno CLM-44.",
+  "priority": "nízká",
+  "checked": "2026-08-02",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-44"
+    }
+  ],
   "subjects": [
     "klempir"
   ],
   "content": [
     {
       "type": "markdown",
-      "value": "Rozporné údaje o valorizačním mechanismu příspěvku pro ČT a ČRo\n\n**Proč je to mezera**: ČT24 (14. 4. 2026) uvádí valorizaci o inflaci maximálně o pět procent, zatímco Médiář (15. 6. 2026) popisuje vzorec, podle nějž se příspěvek zvýší o 10 % při kumulované inflaci nad 10 %. Nebylo možné z otevřených zdrojů určit, zda jde o změnu návrhu mezi dubnem a červnem, nebo o chybu jednoho ze zdrojů. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+      "value": "Rozporné údaje o valorizačním mechanismu příspěvku pro ČT a ČRo\n\n**Proč to byla mezera**: ČT24 (14. 4. 2026) uvádí valorizaci o inflaci maximálně o pět procent, zatímco Médiář (15. 6. 2026) popisuje vzorec, podle nějž se příspěvek zvýší o 10 % při kumulované inflaci nad 10 %. Nebylo možné z otevřených zdrojů určit, zda jde o změnu návrhu mezi dubnem a červnem, nebo o chybu jednoho ze zdrojů.\n\n**Vysvětlení (2026-08-02)**: [CLM-44](@/dossiers/oto-klempir/claims/clm-44.md) dokládá, že šlo o skutečnou změnu návrhu. Klempíř 9. 6. 2026 potvrdil (Deník N, [SRC-30](@/dossiers/oto-klempir/sources/src-30.md)), že mechanismus bude nastaven jinak než v dubnu, bez upřesnění parametrů; o týden později, 15. 6. 2026, vláda schválila vzorec vázaný na kumulovanou inflaci nad 10 % ([SRC-26](@/dossiers/oto-klempir/sources/src-26.md)). Tato mezera je tímto vysvětlena a uzavřena."
     }
   ],
   "order": 3
