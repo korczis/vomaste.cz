@@ -50,7 +50,6 @@ definuje rozsah, necertifikuje reportáže.
 | <a id="clm-04"></a>[CLM-04](@/dossiers/richard-chlad/claims/clm-04.md) | Předseda strany Petr Macinka podle citovaného zpravodajství uvedl: „Dal nám před eurovolbami dvakrát 50 tisíc korun." | <span class="status-badge status-quote">CITACE</span> | [SRC-03](@/dossiers/richard-chlad/sources/src-03.md) |
 | <a id="clm-05"></a>[CLM-05](@/dossiers/richard-chlad/claims/clm-05.md) | Filip Turek podle citovaného zpravodajství uvedl: „Je to můj kamarád a s politikou nemá nic společného, i záměrně přeceňujete jeho roli v podpoře Motoristů." | <span class="status-badge status-quote">CITACE</span> | [SRC-03](@/dossiers/richard-chlad/sources/src-03.md) |
 | <a id="clm-06"></a>[CLM-06](@/dossiers/richard-chlad/claims/clm-06.md) | Petr Macinka podle citovaného zpravodajství uvedl: „Richard Chlad je kamarád Filipa Turka, ale rozhodně není ideologem Motoristů. Tím jsem já." | <span class="status-badge status-quote">CITACE</span> | [SRC-03](@/dossiers/richard-chlad/sources/src-03.md) |
-| <a id="clm-07"></a>[CLM-07](@/dossiers/richard-chlad/claims/clm-07.md) | Podle citovaného profilu Chlad začínal v 80. letech dovozem videokazet a hodinek, po roce 1989 podnikal v hazardu (síť heren Krijcos) a dnes investuje do solárních elektráren a vodíku (Krijcos Energy, Moravia Green Hydrogen) | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-02](@/dossiers/richard-chlad/sources/src-02.md) |
 | <a id="clm-08"></a>[CLM-08](@/dossiers/richard-chlad/claims/clm-08.md) | Citovaný profil uvádí starší osobní známost Richarda Chlada s Radovanem Krejčířem — podle článku se seznámili na večírku Mercedes-Benz a navštěvovali sportovní areál ve Všenorech | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-02](@/dossiers/richard-chlad/sources/src-02.md) |
 
 ## Financování strany Motoristé sobě {#kauza-financovani}
@@ -100,13 +99,10 @@ Chladovy vlastní údaje o výši podpory stejně jako pro tvrzení
 představitelů strany, že jeho roli zpravodajství přeceňuje. Dossier
 nerozhoduje, kdo má pravdu; zaznamenává, co kdo veřejně řekl.
 
-## Podnikání a starší známosti {#kontext}
+## Starší osobní známost {#kontext}
 
-Podle citovaného profilu Chlad začínal v 80. letech dovozem videokazet a
-hodinek, po roce 1989 podnikal v hazardu (síť heren Krijcos) a dnes
-investuje do solárních elektráren a vodíku
-([CLM-07](@/dossiers/richard-chlad/claims/clm-07.md)). Týž profil uvádí
-jeho **starší osobní známost s Radovanem Krejčířem**
+Citovaný profil uvádí Chladovu **starší osobní známost s Radovanem
+Krejčířem**
 ([CLM-08](@/dossiers/richard-chlad/claims/clm-08.md)).
 
 **Hranice, kterou tento dossier nepřekročí**: ta známost je zde
