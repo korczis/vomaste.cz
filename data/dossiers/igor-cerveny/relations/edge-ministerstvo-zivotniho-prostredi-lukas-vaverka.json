@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/relations/edge-ministerstvo-zivotniho-prostredi-lukas-vaverka",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-ministerstvo-zivotniho-prostredi-lukas-vaverka",
+  "relationId": "edge-ministerstvo-zivotniho-prostredi-lukas-vaverka",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/ministerstvo-zivotniho-prostredi"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/lukas-vaverka"
+  },
+  "relationType": "APPOINTED_AS",
+  "label": "vedoucí nového oddělení klimatické politiky a Green Dealu (od 1. 4. 2026)",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-44"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-30"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-31"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 12,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-047 (provázání grafu, třetí dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

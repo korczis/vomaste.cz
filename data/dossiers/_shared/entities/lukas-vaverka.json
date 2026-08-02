@@ -1,41 +1,44 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/lukas-vaverka",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "lukas-vaverka",
- "entityId": "lukas-vaverka",
- "title": "Lukáš Vaverka",
- "entityType": "person",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "igor-cerveny"
- ],
- "order": 237,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/lukas-vaverka",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "lukas-vaverka",
+  "entityId": "lukas-vaverka",
+  "title": "Lukáš Vaverka",
+  "entityType": "person",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "igor-cerveny"
   ],
-  "claimRefs": [
-   "CLM-44",
-   "CLM-45",
-   "CLM-46"
-  ],
-  "sourceRefs": [
-   "SRC-30",
-   "SRC-31"
+  "order": 237,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02",
+      "edge-ministerstvo-zivotniho-prostredi-lukas-vaverka",
+      "edge-lukas-vaverka-turek",
+      "edge-lukas-vaverka-art-of-performance"
+    ],
+    "claimRefs": [
+      "CLM-44",
+      "CLM-45",
+      "CLM-46"
+    ],
+    "sourceRefs": [
+      "SRC-30",
+      "SRC-31"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Vedoucí oddělení klimatické politiky a Green Dealu na MŽP; bývalý poradce Turka v EP, výjimka ze vzdělání. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (igor-cerveny). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Vedoucí oddělení klimatické politiky a Green Dealu na MŽP; bývalý poradce Turka v EP, výjimka ze vzdělání. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (igor-cerveny). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
-  }
- ]
 }

@@ -1,38 +1,39 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/mojmir-hampl",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "mojmir-hampl",
- "entityId": "mojmir-hampl",
- "title": "Mojmír Hampl",
- "entityType": "person",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "ivan-bednarik"
- ],
- "order": 286,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/mojmir-hampl",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "mojmir-hampl",
+  "entityId": "mojmir-hampl",
+  "title": "Mojmír Hampl",
+  "entityType": "person",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "ivan-bednarik"
   ],
-  "claimRefs": [
-   "CLM-32"
-  ],
-  "sourceRefs": [
-   "SRC-24"
+  "order": 286,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02",
+      "edge-mojmir-hampl-bednarik"
+    ],
+    "claimRefs": [
+      "CLM-32"
+    ],
+    "sourceRefs": [
+      "SRC-24"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Předseda Národní rozpočtové rady (entita nrr existuje); kritik výdajové trajektorie dopravní infrastruktury (růst ze 160 na 311+ mld. Kč do 2028). Relevantní i pro dossier Schillerové (NRR), ale jmenován jen zde. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (ivan-bednarik). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Předseda Národní rozpočtové rady (entita nrr existuje); kritik výdajové trajektorie dopravní infrastruktury (růst ze 160 na 311+ mld. Kč do 2028). Relevantní i pro dossier Schillerové (NRR), ale jmenován jen zde. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (ivan-bednarik). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
-  }
- ]
 }

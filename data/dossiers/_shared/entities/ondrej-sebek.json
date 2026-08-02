@@ -1,43 +1,45 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/ondrej-sebek",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "ondrej-sebek",
- "entityId": "ondrej-sebek",
- "title": "Ondřej Šebek",
- "entityType": "person",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "boris-stastny"
- ],
- "order": 319,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/ondrej-sebek",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "ondrej-sebek",
+  "entityId": "ondrej-sebek",
+  "title": "Ondřej Šebek",
+  "entityType": "person",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "boris-stastny"
   ],
-  "claimRefs": [
-   "CLM-22",
-   "CLM-24",
-   "CLM-28",
-   "CLM-29"
-  ],
-  "sourceRefs": [
-   "SRC-11",
-   "SRC-12",
-   "SRC-13"
+  "order": 319,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02",
+      "edge-stastny-ondrej-sebek",
+      "edge-ondrej-sebek-stastny"
+    ],
+    "claimRefs": [
+      "CLM-22",
+      "CLM-24",
+      "CLM-28",
+      "CLM-29"
+    ],
+    "sourceRefs": [
+      "SRC-11",
+      "SRC-12",
+      "SRC-13"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Předseda Národní sportovní agentury odvolaný vládou 16. 12. 2025 na návrh Šťastného; kritiku odmítl jako účelovou. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (boris-stastny). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Předseda Národní sportovní agentury odvolaný vládou 16. 12. 2025 na návrh Šťastného; kritiku odmítl jako účelovou. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (boris-stastny). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
-  }
- ]
 }

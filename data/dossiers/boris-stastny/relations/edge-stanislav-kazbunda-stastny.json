@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/boris-stastny/relations/edge-stanislav-kazbunda-stastny",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-stanislav-kazbunda-stastny",
+  "relationId": "edge-stanislav-kazbunda-stastny",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/boris-stastny"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/stanislav-kazbunda"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/stastny"
+  },
+  "relationType": "RESPONDED_TO",
+  "label": "označil situaci za potenciálně závažný bezpečnostní incident, který se měl hlásit bezpečnostním složkám",
+  "status": "quote",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-19"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-08"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 16,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-047 (provázání grafu, třetí dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

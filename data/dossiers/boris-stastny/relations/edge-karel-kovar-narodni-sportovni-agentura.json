@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/boris-stastny/relations/edge-karel-kovar-narodni-sportovni-agentura",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-karel-kovar-narodni-sportovni-agentura",
+  "relationId": "edge-karel-kovar-narodni-sportovni-agentura",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/boris-stastny"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/karel-kovar"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/narodni-sportovni-agentura"
+  },
+  "relationType": "APPOINTED_AS",
+  "label": "jmenován předsedou Národní sportovní agentury (26. 1. 2026)",
+  "status": "single",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-30"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-15"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 10,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-047 (provázání grafu, třetí dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

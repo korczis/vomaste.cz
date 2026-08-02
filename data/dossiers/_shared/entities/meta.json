@@ -1,44 +1,45 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/meta",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "meta",
- "entityId": "meta",
- "title": "Meta",
- "entityType": "company",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "igor-cerveny",
-  "macinka-turek"
- ],
- "order": 260,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/meta",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "meta",
+  "entityId": "meta",
+  "title": "Meta",
+  "entityType": "company",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "igor-cerveny",
+    "macinka-turek"
   ],
-  "claimRefs": [
-   "CLM-09",
-   "CLM-16",
-   "CLM-56"
-  ],
-  "sourceRefs": [
-   "SRC-10",
-   "SRC-16",
-   "SRC-17",
-   "SRC-22"
+  "order": 260,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02",
+      "edge-cerveny-meta"
+    ],
+    "claimRefs": [
+      "CLM-09",
+      "CLM-16",
+      "CLM-56"
+    ],
+    "sourceRefs": [
+      "SRC-10",
+      "SRC-16",
+      "SRC-17",
+      "SRC-22"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Technologická společnost; delegace MŽP s ní v USA jednala o AI pro ochranu životního prostředí. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (igor-cerveny, macinka-turek). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Technologická společnost; delegace MŽP s ní v USA jednala o AI pro ochranu životního prostředí. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (igor-cerveny, macinka-turek). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
-  }
- ]
 }

@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/relations/edge-martin-kupka-zuna",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-martin-kupka-zuna",
+  "relationId": "edge-martin-kupka-zuna",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/martin-kupka"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/zuna"
+  },
+  "relationType": "RESPONDED_TO",
+  "label": "nezveřejnění rozhovoru prezidenta Pavla označil za cenzuru v nejtvrdší podobě",
+  "status": "single",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-09"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-06"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 12,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-047 (provázání grafu, třetí dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

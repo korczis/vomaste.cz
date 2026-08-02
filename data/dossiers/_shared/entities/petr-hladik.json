@@ -1,38 +1,39 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/petr-hladik",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "petr-hladik",
- "entityId": "petr-hladik",
- "title": "Petr Hladík",
- "entityType": "person",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "igor-cerveny"
- ],
- "order": 339,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/petr-hladik",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "petr-hladik",
+  "entityId": "petr-hladik",
+  "title": "Petr Hladík",
+  "entityType": "person",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "igor-cerveny"
   ],
-  "claimRefs": [
-   "CLM-15"
-  ],
-  "sourceRefs": [
-   "SRC-07"
+  "order": 339,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02",
+      "edge-petr-hladik-cerveny"
+    ],
+    "claimRefs": [
+      "CLM-15"
+    ],
+    "sourceRefs": [
+      "SRC-07"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Exministr životního prostředí (KDU-ČSL); kritik rekonstrukce kanceláří MŽP. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (igor-cerveny). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Exministr životního prostředí (KDU-ČSL); kritik rekonstrukce kanceláří MŽP. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (igor-cerveny). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
-  }
- ]
 }

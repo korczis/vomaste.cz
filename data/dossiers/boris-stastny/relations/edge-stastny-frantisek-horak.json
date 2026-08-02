@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/boris-stastny/relations/edge-stastny-frantisek-horak",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-stastny-frantisek-horak",
+  "relationId": "edge-stastny-frantisek-horak",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/boris-stastny"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/stastny"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/frantisek-horak"
+  },
+  "relationType": "ASSOCIATED_WITH_EVENT",
+  "label": "na jeho návrh vláda odvolala i člena Rady Národní sportovní agentury Františka Horáka",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-22"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-12"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 8,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-047 (provázání grafu, třetí dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

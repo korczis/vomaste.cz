@@ -1,51 +1,53 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/generalni-stab-acr",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "generalni-stab-acr",
- "entityId": "generalni-stab-acr",
- "title": "Generální štáb Armády ČR",
- "entityType": "public_institution",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "jaromir-zuna"
- ],
- "order": 138,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/generalni-stab-acr",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "generalni-stab-acr",
+  "entityId": "generalni-stab-acr",
+  "title": "Generální štáb Armády ČR",
+  "entityType": "public_institution",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "jaromir-zuna"
   ],
-  "claimRefs": [
-   "CLM-12",
-   "CLM-13",
-   "CLM-20",
-   "CLM-25",
-   "CLM-30",
-   "CLM-53"
-  ],
-  "sourceRefs": [
-   "SRC-08",
-   "SRC-09",
-   "SRC-10",
-   "SRC-11",
-   "SRC-14",
-   "SRC-21",
-   "SRC-25",
-   "SRC-27",
-   "SRC-28"
+  "order": 138,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02",
+      "edge-miroslav-hlavac-generalni-stab-acr",
+      "edge-karel-rehka-generalni-stab-acr"
+    ],
+    "claimRefs": [
+      "CLM-12",
+      "CLM-13",
+      "CLM-20",
+      "CLM-25",
+      "CLM-30",
+      "CLM-53"
+    ],
+    "sourceRefs": [
+      "SRC-08",
+      "SRC-09",
+      "SRC-10",
+      "SRC-11",
+      "SRC-14",
+      "SRC-21",
+      "SRC-25",
+      "SRC-27",
+      "SRC-28"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Velitelský orgán armády; spor o volbu náčelníka a komunikační kanál (podcast Kamufláž). Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (jaromir-zuna). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Velitelský orgán armády; spor o volbu náčelníka a komunikační kanál (podcast Kamufláž). Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (jaromir-zuna). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
-  }
- ]
 }

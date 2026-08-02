@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/relations/edge-lukas-vaverka-art-of-performance",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-lukas-vaverka-art-of-performance",
+  "relationId": "edge-lukas-vaverka-art-of-performance",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/lukas-vaverka"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/art-of-performance"
+  },
+  "relationType": "HOLDS_ROLE",
+  "label": "od roku 2007 pracoval v autodílně Art of Performance",
+  "status": "single",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-46"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-31"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 14,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-047 (provázání grafu, třetí dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

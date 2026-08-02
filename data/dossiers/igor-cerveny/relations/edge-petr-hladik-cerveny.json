@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/relations/edge-petr-hladik-cerveny",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-petr-hladik-cerveny",
+  "relationId": "edge-petr-hladik-cerveny",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/petr-hladik"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/cerveny"
+  },
+  "relationType": "RESPONDED_TO",
+  "label": "kritizoval rekonstrukci ministrovy kanceláře jako vyhazování veřejných peněz",
+  "status": "single",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-15"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-07"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 16,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-047 (provázání grafu, třetí dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

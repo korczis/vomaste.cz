@@ -70,7 +70,10 @@
           "CLM-17",
           "CLM-08",
           "CLM-10",
-          "CLM-16"
+          "CLM-16",
+          "CLM-13",
+          "CLM-09",
+          "CLM-15"
         ],
         "sources": [
           "SRC-01",
@@ -96,7 +99,10 @@
           "SRC-06",
           "SRC-07",
           "SRC-08",
-          "SRC-11"
+          "SRC-11",
+          "SRC-10",
+          "SRC-09",
+          "SRC-33"
         ]
       },
       {
@@ -113,10 +119,13 @@
         "entity": "babis",
         "label": "Andrej Babiš",
         "claims": [
-          "CLM-17"
+          "CLM-17",
+          "CLM-42"
         ],
         "sources": [
-          "SRC-12"
+          "SRC-12",
+          "SRC-20",
+          "SRC-33"
         ]
       },
       {
@@ -124,12 +133,18 @@
         "label": "Petr Pavel (prezident)",
         "claims": [
           "CLM-08",
-          "CLM-10"
+          "CLM-10",
+          "CLM-20",
+          "CLM-35",
+          "CLM-11"
         ],
         "sources": [
           "SRC-06",
           "SRC-07",
-          "SRC-08"
+          "SRC-08",
+          "SRC-14",
+          "SRC-21",
+          "SRC-19"
         ]
       },
       {
@@ -141,13 +156,170 @@
         "sources": [
           "SRC-11"
         ]
+      },
+      {
+        "entity": "miroslav-hlavac",
+        "label": "Miroslav Hlaváč",
+        "claims": [
+          "CLM-20",
+          "CLM-13",
+          "CLM-26",
+          "CLM-21"
+        ],
+        "sources": [
+          "SRC-14",
+          "SRC-21",
+          "SRC-10",
+          "SRC-09",
+          "SRC-25"
+        ]
+      },
+      {
+        "entity": "generalni-stab-acr",
+        "label": "Generální štáb Armády ČR",
+        "claims": [
+          "CLM-20",
+          "CLM-21"
+        ],
+        "sources": [
+          "SRC-14",
+          "SRC-21"
+        ]
+      },
+      {
+        "entity": "karel-rehka",
+        "label": "Karel Řehka",
+        "claims": [
+          "CLM-21",
+          "CLM-20",
+          "CLM-24"
+        ],
+        "sources": [
+          "SRC-14",
+          "SRC-21",
+          "SRC-28"
+        ]
+      },
+      {
+        "entity": "josef-flek",
+        "label": "Josef Flek",
+        "claims": [
+          "CLM-09",
+          "CLM-47"
+        ],
+        "sources": [
+          "SRC-06",
+          "SRC-16",
+          "SRC-23"
+        ]
+      },
+      {
+        "entity": "martin-kupka",
+        "label": "Martin Kupka",
+        "claims": [
+          "CLM-09"
+        ],
+        "sources": [
+          "SRC-06"
+        ]
+      },
+      {
+        "entity": "matej-ondrej-havel",
+        "label": "Matěj Ondřej Havel",
+        "claims": [
+          "CLM-09"
+        ],
+        "sources": [
+          "SRC-06"
+        ]
+      },
+      {
+        "entity": "alexandr-vondra",
+        "label": "Alexandr Vondra",
+        "claims": [
+          "CLM-15"
+        ],
+        "sources": [
+          "SRC-09"
+        ]
+      },
+      {
+        "entity": "jana-cernochova",
+        "label": "Jana Černochová",
+        "claims": [
+          "CLM-39"
+        ],
+        "sources": [
+          "SRC-32"
+        ]
+      },
+      {
+        "entity": "summit-nato-ankara-2026",
+        "label": "Summit NATO v Ankaře (7.–8. 7. 2026)",
+        "claims": [
+          "CLM-42"
+        ],
+        "sources": [
+          "SRC-20",
+          "SRC-33"
+        ]
+      },
+      {
+        "entity": "nato",
+        "label": "NATO (Severoatlantická aliance)",
+        "claims": [
+          "CLM-46"
+        ],
+        "sources": [
+          "SRC-17"
+        ]
+      },
+      {
+        "entity": "bezpecnostni-rada-statu",
+        "label": "Bezpečnostní rada státu",
+        "claims": [
+          "CLM-34",
+          "CLM-36",
+          "CLM-35"
+        ],
+        "sources": [
+          "SRC-19",
+          "SRC-29"
+        ]
+      },
+      {
+        "entity": "macinka",
+        "label": "Petr Macinka",
+        "claims": [
+          "CLM-11"
+        ],
+        "sources": [
+          "SRC-07"
+        ]
       }
     ],
     "edges": [
       "edge-zuna-vlada",
       "edge-babis-zuna",
       "edge-zuna-pavel",
-      "edge-okamura-zuna"
+      "edge-okamura-zuna",
+      "edge-pavel-miroslav-hlavac",
+      "edge-zuna-miroslav-hlavac",
+      "edge-miroslav-hlavac-generalni-stab-acr",
+      "edge-karel-rehka-generalni-stab-acr",
+      "edge-miroslav-hlavac-karel-rehka",
+      "edge-zuna-karel-rehka",
+      "edge-josef-flek-zuna",
+      "edge-martin-kupka-zuna",
+      "edge-matej-ondrej-havel-zuna",
+      "edge-alexandr-vondra-zuna",
+      "edge-zuna-jana-cernochova",
+      "edge-babis-summit-nato-ankara-2026",
+      "edge-zuna-summit-nato-ankara-2026",
+      "edge-zuna-nato",
+      "edge-zuna-bezpecnostni-rada-statu",
+      "edge-pavel-bezpecnostni-rada-statu",
+      "edge-macinka-pavel"
     ]
   },
   "contentBlocks": [

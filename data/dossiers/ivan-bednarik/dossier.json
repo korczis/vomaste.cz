@@ -69,7 +69,9 @@
           "CLM-44",
           "CLM-45",
           "CLM-46",
-          "CLM-47"
+          "CLM-47",
+          "CLM-04",
+          "CLM-02"
         ],
         "sources": [
           "SRC-01",
@@ -94,7 +96,9 @@
           "SRC-25",
           "SRC-06",
           "SRC-27",
-          "SRC-28"
+          "SRC-28",
+          "SRC-02",
+          "SRC-29"
         ]
       },
       {
@@ -111,11 +115,13 @@
         "entity": "ceske-drahy",
         "label": "České dráhy",
         "claims": [
-          "CLM-02"
+          "CLM-02",
+          "CLM-38"
         ],
         "sources": [
           "SRC-02",
-          "SRC-29"
+          "SRC-29",
+          "SRC-27"
         ]
       },
       {
@@ -123,17 +129,202 @@
         "label": "Správa železnic",
         "claims": [
           "CLM-18",
-          "CLM-19"
+          "CLM-19",
+          "CLM-30"
         ],
         "sources": [
-          "SRC-14"
+          "SRC-14",
+          "SRC-25",
+          "SRC-22"
+        ]
+      },
+      {
+        "entity": "martin-kupka",
+        "label": "Martin Kupka",
+        "claims": [
+          "CLM-04"
+        ],
+        "sources": [
+          "SRC-02"
+        ]
+      },
+      {
+        "entity": "vaclav-nebesky",
+        "label": "Václav Nebeský",
+        "claims": [
+          "CLM-02",
+          "CLM-43"
+        ],
+        "sources": [
+          "SRC-02",
+          "SRC-29",
+          "SRC-19",
+          "SRC-20"
+        ]
+      },
+      {
+        "entity": "petr-pavelec",
+        "label": "Petr Pavelec",
+        "claims": [
+          "CLM-02",
+          "CLM-43"
+        ],
+        "sources": [
+          "SRC-02",
+          "SRC-29",
+          "SRC-19",
+          "SRC-20"
+        ]
+      },
+      {
+        "entity": "blanka-havelkova",
+        "label": "Blanka Havelková",
+        "claims": [
+          "CLM-43"
+        ],
+        "sources": [
+          "SRC-19",
+          "SRC-20"
+        ]
+      },
+      {
+        "entity": "miroslav-zamecnik",
+        "label": "Miroslav Zámečník",
+        "claims": [
+          "CLM-44"
+        ],
+        "sources": [
+          "SRC-19",
+          "SRC-20"
+        ]
+      },
+      {
+        "entity": "pavel-kysilka",
+        "label": "Pavel Kysilka",
+        "claims": [
+          "CLM-44"
+        ],
+        "sources": [
+          "SRC-19",
+          "SRC-20"
+        ]
+      },
+      {
+        "entity": "michal-krapinec",
+        "label": "Michal Krapinec",
+        "claims": [
+          "CLM-38"
+        ],
+        "sources": [
+          "SRC-27"
+        ]
+      },
+      {
+        "entity": "tomas-toth",
+        "label": "Tomáš Tóth",
+        "claims": [
+          "CLM-30"
+        ],
+        "sources": [
+          "SRC-25",
+          "SRC-22"
+        ]
+      },
+      {
+        "entity": "mojmir-hampl",
+        "label": "Mojmír Hampl",
+        "claims": [
+          "CLM-32"
+        ],
+        "sources": [
+          "SRC-24"
+        ]
+      },
+      {
+        "entity": "magda-kopczynska",
+        "label": "Magda Kopczyńska",
+        "claims": [
+          "CLM-26"
+        ],
+        "sources": [
+          "SRC-15"
+        ]
+      },
+      {
+        "entity": "dg-move",
+        "label": "DG MOVE (Generální ředitelství EK pro mobilitu a dopravu)",
+        "claims": [
+          "CLM-26"
+        ],
+        "sources": [
+          "SRC-15"
+        ]
+      },
+      {
+        "entity": "patrick-schneider",
+        "label": "Patrick Schneider",
+        "claims": [
+          "CLM-27",
+          "CLM-28"
+        ],
+        "sources": [
+          "SRC-11"
+        ]
+      },
+      {
+        "entity": "acri",
+        "label": "ACRI — Asociace podniků českého železničního průmyslu",
+        "claims": [
+          "CLM-37"
+        ],
+        "sources": [
+          "SRC-27"
+        ]
+      },
+      {
+        "entity": "rsd",
+        "label": "Ředitelství silnic a dálnic (ŘSD)",
+        "claims": [
+          "CLM-11"
+        ],
+        "sources": [
+          "SRC-07",
+          "SRC-08"
+        ]
+      },
+      {
+        "entity": "spor-cd-sprava-zeleznic-pozemky",
+        "label": "Spor o pozemky a majetkové vypořádání ČD vs. Správa železnic",
+        "claims": [
+          "CLM-40",
+          "CLM-47"
+        ],
+        "sources": [
+          "SRC-13",
+          "SRC-12"
         ]
       }
     ],
     "edges": [
       "edge-bednarik-vlada",
       "edge-bednarik-ceske-drahy",
-      "edge-bednarik-sprava-zeleznic"
+      "edge-bednarik-sprava-zeleznic",
+      "edge-martin-kupka-bednarik",
+      "edge-bednarik-vaclav-nebesky",
+      "edge-bednarik-petr-pavelec",
+      "edge-bednarik-blanka-havelkova",
+      "edge-bednarik-miroslav-zamecnik",
+      "edge-miroslav-zamecnik-pavel-kysilka",
+      "edge-michal-krapinec-ceske-drahy",
+      "edge-tomas-toth-sprava-zeleznic",
+      "edge-bednarik-tomas-toth",
+      "edge-mojmir-hampl-bednarik",
+      "edge-bednarik-magda-kopczynska",
+      "edge-magda-kopczynska-dg-move",
+      "edge-bednarik-patrick-schneider",
+      "edge-bednarik-acri",
+      "edge-bednarik-rsd",
+      "edge-bednarik-spor-cd-sprava-zeleznic-pozemky"
     ]
   },
   "contentBlocks": [

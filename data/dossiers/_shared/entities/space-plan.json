@@ -1,38 +1,39 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/space-plan",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "space-plan",
- "entityId": "space-plan",
- "title": "Space Plan",
- "entityType": "company",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "igor-cerveny"
- ],
- "order": 383,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/space-plan",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "space-plan",
+  "entityId": "space-plan",
+  "title": "Space Plan",
+  "entityType": "company",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "igor-cerveny"
   ],
-  "claimRefs": [
-   "CLM-36"
-  ],
-  "sourceRefs": [
-   "SRC-20"
+  "order": 383,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02",
+      "edge-cerveny-space-plan"
+    ],
+    "claimRefs": [
+      "CLM-36"
+    ],
+    "sourceRefs": [
+      "SRC-20"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Pražská firma, dodavatel nábytku do nové pracovny ministra Červeného. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (igor-cerveny). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Pražská firma, dodavatel nábytku do nové pracovny ministra Červeného. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (igor-cerveny). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
-  }
- ]
 }

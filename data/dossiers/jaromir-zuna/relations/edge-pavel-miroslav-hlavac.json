@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/relations/edge-pavel-miroslav-hlavac",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-pavel-miroslav-hlavac",
+  "relationId": "edge-pavel-miroslav-hlavac",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/pavel"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/miroslav-hlavac"
+  },
+  "relationType": "APPOINTED_AS",
+  "label": "jmenoval Miroslava Hlaváče náčelníkem Generálního štábu (30. 6. 2026)",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-20"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-14"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-21"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 5,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-047 (provázání grafu, třetí dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}
