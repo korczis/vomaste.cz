@@ -1,0 +1,41 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/moravia-green-hydrogen",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "moravia-green-hydrogen",
+ "entityId": "moravia-green-hydrogen",
+ "title": "Moravia Green Hydrogen",
+ "entityType": "company",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "macinka-turek",
+  "richard-chlad"
+ ],
+ "order": 287,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-07",
+   "CLM-36"
+  ],
+  "sourceRefs": [
+   "SRC-02",
+   "SRC-42"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Chladova investice do vodíku dle citovaného profilu. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (macinka-turek, richard-chlad). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

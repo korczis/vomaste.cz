@@ -1,0 +1,42 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/david-jachnicky",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "david-jachnicky",
+ "entityId": "david-jachnicky",
+ "title": "David Jachnický",
+ "entityType": "person",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "tomio-okamura"
+ ],
+ "order": 103,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-12",
+   "CLM-13",
+   "CLM-14"
+  ],
+  "sourceRefs": [
+   "SRC-10",
+   "SRC-11",
+   "SRC-12"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Státní zástupce v kauze plakátů SPD. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (tomio-okamura). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

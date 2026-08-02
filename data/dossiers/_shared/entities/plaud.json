@@ -1,0 +1,41 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/plaud",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "plaud",
+ "entityId": "plaud",
+ "title": "Plaud",
+ "entityType": "company",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "boris-stastny"
+ ],
+ "order": 348,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-07",
+   "CLM-17"
+  ],
+  "sourceRefs": [
+   "SRC-02",
+   "SRC-03",
+   "SRC-08"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Značka/firma AI nahrávacího zařízení nalezeného v jednacím sále vlády; prezentuje se jako americký startup z Delaware. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (boris-stastny). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

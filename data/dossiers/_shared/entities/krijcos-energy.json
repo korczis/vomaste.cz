@@ -1,0 +1,41 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/krijcos-energy",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "krijcos-energy",
+ "entityId": "krijcos-energy",
+ "title": "Krijcos Energy",
+ "entityType": "company",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "macinka-turek",
+  "richard-chlad"
+ ],
+ "order": 228,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-07",
+   "CLM-36"
+  ],
+  "sourceRefs": [
+   "SRC-02",
+   "SRC-42"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Chladova investice do solárních elektráren dle citovaného profilu. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (macinka-turek, richard-chlad). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

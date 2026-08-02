@@ -1,0 +1,62 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/ministerstvo-prace-a-socialnich-veci",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "ministerstvo-prace-a-socialnich-veci",
+ "entityId": "ministerstvo-prace-a-socialnich-veci",
+ "title": "Ministerstvo práce a sociálních věcí ČR",
+ "entityType": "public_institution",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "ales-juchelka",
+  "jeronym-tejc"
+ ],
+ "order": 276,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-09",
+   "CLM-10",
+   "CLM-11",
+   "CLM-12",
+   "CLM-15",
+   "CLM-16",
+   "CLM-23",
+   "CLM-33",
+   "CLM-34",
+   "CLM-36",
+   "CLM-37",
+   "CLM-39",
+   "CLM-42"
+  ],
+  "sourceRefs": [
+   "SRC-02",
+   "SRC-04",
+   "SRC-05",
+   "SRC-06",
+   "SRC-07",
+   "SRC-10",
+   "SRC-11",
+   "SRC-12",
+   "SRC-14",
+   "SRC-15",
+   "SRC-20",
+   "SRC-24"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Adresát podnětu k prověření OSPOD; zřídilo Komisi pro přezkum nepřirozených úmrtí dětí. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (ales-juchelka, jeronym-tejc). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

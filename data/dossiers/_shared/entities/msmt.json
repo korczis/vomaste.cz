@@ -1,0 +1,46 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/msmt",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "msmt",
+ "entityId": "msmt",
+ "title": "Ministerstvo školství, mládeže a tělovýchovy ČR",
+ "entityType": "public_institution",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "robert-plaga"
+ ],
+ "order": 290,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-16",
+   "CLM-17",
+   "CLM-29",
+   "CLM-45",
+   "CLM-49"
+  ],
+  "sourceRefs": [
+   "SRC-09",
+   "SRC-11",
+   "SRC-13",
+   "SRC-22",
+   "SRC-29"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Resort Roberta Plagy; zkrácení školního roku, doporučení k testování. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (robert-plaga). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

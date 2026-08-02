@@ -1,0 +1,45 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/denik-n",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "denik-n",
+ "entityId": "denik-n",
+ "title": "Deník N",
+ "entityType": "company",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "macinka-turek"
+ ],
+ "order": 107,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-07",
+   "CLM-19",
+   "CLM-41",
+   "CLM-42",
+   "CLM-49"
+  ],
+  "sourceRefs": [
+   "SRC-14",
+   "SRC-15",
+   "SRC-21",
+   "SRC-47"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Výjimka z pravidla o vydavatelích: Deník N je přímým aktérem kauzy 2025 — publikoval investigaci o smazaných příspěvcích a Motoristé na něj a autory podali trestní oznámení (odloženo). Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (macinka-turek). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

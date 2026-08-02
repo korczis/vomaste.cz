@@ -1,0 +1,42 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/marian-piecha",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "marian-piecha",
+ "entityId": "marian-piecha",
+ "title": "Marian Piecha",
+ "entityType": "person",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "andrej-babis",
+  "karel-havlicek"
+ ],
+ "order": 246,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-20",
+   "CLM-21"
+  ],
+  "sourceRefs": [
+   "SRC-11",
+   "SRC-12",
+   "SRC-36"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Náměstek MPO, oznámil odnětí dotace Pekárně Zelená louka a vedl vymáhání („Penam vymáháme“). Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (andrej-babis, karel-havlicek). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

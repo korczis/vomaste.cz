@@ -1,0 +1,65 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/urad-vlady",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "urad-vlady",
+ "entityId": "urad-vlady",
+ "title": "Úřad vlády ČR",
+ "entityType": "public_institution",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "andrej-babis",
+  "boris-stastny",
+  "jaromir-zuna",
+  "jeronym-tejc",
+  "karel-havlicek",
+  "oto-klempir",
+  "tunde-bartha"
+ ],
+ "order": 425,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-01",
+   "CLM-02",
+   "CLM-06",
+   "CLM-07",
+   "CLM-08",
+   "CLM-09",
+   "CLM-10",
+   "CLM-12",
+   "CLM-15",
+   "CLM-16",
+   "CLM-18",
+   "CLM-35"
+  ],
+  "sourceRefs": [
+   "SRC-01",
+   "SRC-02",
+   "SRC-03",
+   "SRC-04",
+   "SRC-05",
+   "SRC-06",
+   "SRC-07",
+   "SRC-08",
+   "SRC-10",
+   "SRC-13",
+   "SRC-14"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Instituce odlišná od existující entity vlada (Vláda ČR), na kterou ji graf dossieru bartha zatím mapuje — nutno rozhodnout o oddělení. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (andrej-babis, boris-stastny, jaromir-zuna, jeronym-tejc, karel-havlicek, oto-klempir, tunde-bartha). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

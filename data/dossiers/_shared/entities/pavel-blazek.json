@@ -1,0 +1,48 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/pavel-blazek",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "pavel-blazek",
+ "entityId": "pavel-blazek",
+ "title": "Pavel Blažek",
+ "entityType": "person",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "jeronym-tejc"
+ ],
+ "order": 327,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-07",
+   "CLM-19",
+   "CLM-24",
+   "CLM-29"
+  ],
+  "sourceRefs": [
+   "SRC-02",
+   "SRC-03",
+   "SRC-04",
+   "SRC-11",
+   "SRC-12",
+   "SRC-13",
+   "SRC-14",
+   "SRC-15"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Exministr spravedlnosti (ODS); v bitcoinové kauze trestně stíhán od 5/2026 (presumpce neviny). Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (jeronym-tejc). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

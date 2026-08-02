@@ -1,0 +1,42 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/asociace-soukromeho-zemedelstvi",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "asociace-soukromeho-zemedelstvi",
+ "entityId": "asociace-soukromeho-zemedelstvi",
+ "title": "Asociace soukromého zemědělství ČR",
+ "entityType": "organization",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "martin-sebestyan"
+ ],
+ "order": 74,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-19",
+   "CLM-41",
+   "CLM-42"
+  ],
+  "sourceRefs": [
+   "SRC-08",
+   "SRC-20",
+   "SRC-21"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Zemědělský svaz menších farmářů; podpora trestního oznámení, kritika Šebestyána. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (martin-sebestyan). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

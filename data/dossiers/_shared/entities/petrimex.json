@@ -1,0 +1,35 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/petrimex",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "petrimex",
+ "entityId": "petrimex",
+ "title": "Petrimex",
+ "entityType": "company",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "andrej-babis"
+ ],
+ "order": 345,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "sourceRefs": [
+   "SRC-14"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Zaměstnavatel Babiše 1985–1991 dle oficiálního životopisu na webu Úřadu vlády. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (andrej-babis). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

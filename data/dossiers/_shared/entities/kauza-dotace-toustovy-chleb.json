@@ -1,0 +1,66 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/kauza-dotace-toustovy-chleb",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "kauza-dotace-toustovy-chleb",
+ "entityId": "kauza-dotace-toustovy-chleb",
+ "title": "Kauza dotace na toustový chléb (Penam / Pekárna Zelená louka)",
+ "entityType": "controversy",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "karel-havlicek"
+ ],
+ "order": 202,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-02",
+   "CLM-03",
+   "CLM-04",
+   "CLM-05",
+   "CLM-06",
+   "CLM-07",
+   "CLM-08",
+   "CLM-09",
+   "CLM-19",
+   "CLM-20",
+   "CLM-21",
+   "CLM-22",
+   "CLM-23",
+   "CLM-24",
+   "CLM-25",
+   "CLM-26",
+   "CLM-27",
+   "CLM-28"
+  ],
+  "sourceRefs": [
+   "SRC-02",
+   "SRC-03",
+   "SRC-04",
+   "SRC-05",
+   "SRC-06",
+   "SRC-11",
+   "SRC-12",
+   "SRC-13",
+   "SRC-14",
+   "SRC-15",
+   "SRC-16",
+   "SRC-32"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Stomilionová dotace na toustovou linku, audit EK, odnětí dotace, obvinění NCOZ (2024) a obžaloba EPPO (2026). Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (karel-havlicek). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

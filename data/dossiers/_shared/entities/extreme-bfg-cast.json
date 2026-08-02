@@ -1,0 +1,46 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/extreme-bfg-cast",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "extreme-bfg-cast",
+ "entityId": "extreme-bfg-cast",
+ "title": "Extreme BFG Cast s.r.o.",
+ "entityType": "company",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "igor-cerveny"
+ ],
+ "order": 125,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-08",
+   "CLM-09",
+   "CLM-27",
+   "CLM-28",
+   "CLM-32"
+  ],
+  "sourceRefs": [
+   "SRC-05",
+   "SRC-06",
+   "SRC-24",
+   "SRC-26",
+   "SRC-28"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Podcastová firma, v níž byl Červený jednatelem a spolumajitelem (střet zájmů); podíl prodal Luboru Novákovi. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (igor-cerveny). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

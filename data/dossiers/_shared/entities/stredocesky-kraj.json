@@ -1,0 +1,38 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/stredocesky-kraj",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "stredocesky-kraj",
+ "entityId": "stredocesky-kraj",
+ "title": "Středočeský kraj",
+ "entityType": "public_institution",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "andrej-babis"
+ ],
+ "order": 397,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-73"
+  ],
+  "sourceRefs": [
+   "SRC-51"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Příjemce části vrácené dotace za Čapí hnízdo (3 747 019,20 Kč); pasivní zmínka. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (andrej-babis). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

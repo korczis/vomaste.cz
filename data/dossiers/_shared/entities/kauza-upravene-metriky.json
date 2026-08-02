@@ -1,0 +1,47 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/kauza-upravene-metriky",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "kauza-upravene-metriky",
+ "entityId": "kauza-upravene-metriky",
+ "title": "Kauza upravených metrik na sociálních sítích ministra Šťastného",
+ "entityType": "controversy",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "boris-stastny"
+ ],
+ "order": 214,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-32",
+   "CLM-33",
+   "CLM-34",
+   "CLM-35",
+   "CLM-36",
+   "CLM-37",
+   "CLM-38",
+   "CLM-39"
+  ],
+  "sourceRefs": [
+   "SRC-16",
+   "SRC-17",
+   "SRC-18"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Rozpor mezi skutečnými interakcemi příspěvku na X a nadsazenými čísly v grafice na Facebooku/Instagramu; omluva ministra a výsměch opozice. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (boris-stastny). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

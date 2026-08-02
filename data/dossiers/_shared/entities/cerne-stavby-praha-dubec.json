@@ -1,0 +1,40 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/cerne-stavby-praha-dubec",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "cerne-stavby-praha-dubec",
+ "entityId": "cerne-stavby-praha-dubec",
+ "title": "Správní řízení o nepovolených stavbách v Praze-Dubči",
+ "entityType": "legal_or_administrative_process",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "macinka-turek"
+ ],
+ "order": 90,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-30",
+   "CLM-34"
+  ],
+  "sourceRefs": [
+   "SRC-33",
+   "SRC-38"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Dvě samostatná pravomocná správní řízení (sadařský domek — nedbalost, „moštárna“/dvojgaráž — úmysl), pokuty celkem 200 000 Kč, stavby dodatečně zlegalizovány; přírodní park Říčanka. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (macinka-turek). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

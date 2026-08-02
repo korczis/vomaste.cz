@@ -1,0 +1,35 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/zakon-248-2005",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "zakon-248-2005",
+ "entityId": "zakon-248-2005",
+ "title": "Zákon č. 248/2005 Sb. o rozhlasových a televizních poplatcích",
+ "entityType": "legal_or_administrative_process",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "oto-klempir"
+ ],
+ "order": 453,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-10"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Zákon o koncesionářských poplatcích, který vláda ruší a nahrazuje zákonem o financování médií veřejné služby. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (oto-klempir). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

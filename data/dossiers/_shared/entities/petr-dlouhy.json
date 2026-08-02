@@ -1,0 +1,42 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/petr-dlouhy",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "petr-dlouhy",
+ "entityId": "petr-dlouhy",
+ "title": "Petr Dlouhý",
+ "entityType": "person",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "martin-sebestyan"
+ ],
+ "order": 337,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-17",
+   "CLM-21"
+  ],
+  "sourceRefs": [
+   "SRC-08",
+   "SRC-09",
+   "SRC-10",
+   "SRC-11"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Generální ředitel SZIF; rozhodl o obnovení čerpání dotací Agrofertu (RSVP Trust). Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (martin-sebestyan). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

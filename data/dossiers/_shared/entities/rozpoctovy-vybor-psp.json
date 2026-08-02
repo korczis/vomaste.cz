@@ -1,0 +1,38 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/rozpoctovy-vybor-psp",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "rozpoctovy-vybor-psp",
+ "entityId": "rozpoctovy-vybor-psp",
+ "title": "Rozpočtový výbor Poslanecké sněmovny",
+ "entityType": "public_institution",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "adam-vojtech"
+ ],
+ "order": 370,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-37"
+  ],
+  "sourceRefs": [
+   "SRC-23"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Doporučil Vojtěchův benefitový návrh ke schválení. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (adam-vojtech). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

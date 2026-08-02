@@ -1,0 +1,40 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/demonstrace-milion-chvilek-2026-05",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "demonstrace-milion-chvilek-2026-05",
+ "entityId": "demonstrace-milion-chvilek-2026-05",
+ "title": "Demonstrace Milionu chvilek proti zákonu o médiích (24. 5. 2026)",
+ "entityType": "event",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "oto-klempir"
+ ],
+ "order": 106,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-18",
+   "CLM-19"
+  ],
+  "sourceRefs": [
+   "SRC-13",
+   "SRC-14"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Demonstrace v centru Prahy (přes 10 tisíc lidí) s předáním petice se 180–184 tisíci podpisy Úřadu vlády. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (oto-klempir). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

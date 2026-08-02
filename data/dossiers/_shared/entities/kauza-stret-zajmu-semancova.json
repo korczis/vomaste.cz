@@ -1,0 +1,49 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/kauza-stret-zajmu-semancova",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "kauza-stret-zajmu-semancova",
+ "entityId": "kauza-stret-zajmu-semancova",
+ "title": "Kauza střetu zájmů poradkyně na MPSV (2026)",
+ "entityType": "controversy",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "ales-juchelka"
+ ],
+ "order": 212,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-02",
+   "CLM-03",
+   "CLM-06",
+   "CLM-08",
+   "CLM-09",
+   "CLM-11",
+   "CLM-35"
+  ],
+  "sourceRefs": [
+   "SRC-02",
+   "SRC-03",
+   "SRC-04",
+   "SRC-10",
+   "SRC-11",
+   "SRC-12"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Souhrnná kauza dossieru: reportovaný střet zájmů, dopis Evropské komise, rozpočtová mezera 63,8 + 17,6 mil. Kč. Dossier nemá vlastní graf-node pro kauzu; kandidát na sdílenou entitu. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (ales-juchelka). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

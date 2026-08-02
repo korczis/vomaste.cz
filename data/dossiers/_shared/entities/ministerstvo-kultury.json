@@ -1,0 +1,48 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/ministerstvo-kultury",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "ministerstvo-kultury",
+ "entityId": "ministerstvo-kultury",
+ "title": "Ministerstvo kultury ČR",
+ "entityType": "public_institution",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "oto-klempir"
+ ],
+ "order": 274,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-13",
+   "CLM-21",
+   "CLM-22",
+   "CLM-28",
+   "CLM-32",
+   "CLM-34",
+   "CLM-40"
+  ],
+  "sourceRefs": [
+   "SRC-04",
+   "SRC-22",
+   "SRC-23",
+   "SRC-24",
+   "SRC-25"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Resort řízený Klempířem — rozpočtové škrty, mimořádné dotace, zrušené výběrové řízení NGP, návrh zákona o financování médií. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (oto-klempir). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

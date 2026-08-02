@@ -1,0 +1,38 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/program-rozvoje-venkova-2014-2020",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "program-rozvoje-venkova-2014-2020",
+ "entityId": "program-rozvoje-venkova-2014-2020",
+ "title": "Program rozvoje venkova 2014–2020",
+ "entityType": "legal_or_administrative_process",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "martin-sebestyan"
+ ],
+ "order": 354,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-35"
+  ],
+  "sourceRefs": [
+   "SRC-24"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Dotační program administrovaný SZIF za Šebestyánova vedení; kontrola NKÚ č. 23/06 nenašla pochybení administrace. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (martin-sebestyan). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

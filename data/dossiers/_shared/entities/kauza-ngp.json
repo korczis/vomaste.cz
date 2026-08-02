@@ -1,0 +1,50 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/kauza-ngp",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "kauza-ngp",
+ "entityId": "kauza-ngp",
+ "title": "Kauza Národní galerie: odvolání ředitelky a zrušené výběrové řízení",
+ "entityType": "controversy",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "oto-klempir"
+ ],
+ "order": 208,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-05",
+   "CLM-22",
+   "CLM-23",
+   "CLM-24",
+   "CLM-25",
+   "CLM-26",
+   "CLM-27",
+   "CLM-28",
+   "CLM-29"
+  ],
+  "sourceRefs": [
+   "SRC-02",
+   "SRC-04",
+   "SRC-08",
+   "SRC-09",
+   "SRC-27"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Odvolání Knastové (březen 2026), zrušení výběrového řízení na GŘ NGP (červenec 2026) a protesty odborné veřejnosti i odborů. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (oto-klempir). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

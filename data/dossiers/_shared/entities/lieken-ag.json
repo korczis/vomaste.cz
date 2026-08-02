@@ -1,0 +1,39 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/lieken-ag",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "lieken-ag",
+ "entityId": "lieken-ag",
+ "title": "Lieken AG",
+ "entityType": "company",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "karel-havlicek"
+ ],
+ "order": 232,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-05"
+  ],
+  "sourceRefs": [
+   "SRC-02",
+   "SRC-04"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Německá pekárenská společnost — podle auditorů EK vyráběla podobné tousty už 2013 (důkaz neinovativnosti projektu Penamu). Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (karel-havlicek). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

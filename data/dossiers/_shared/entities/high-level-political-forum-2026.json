@@ -1,0 +1,41 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/high-level-political-forum-2026",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "high-level-political-forum-2026",
+ "entityId": "high-level-political-forum-2026",
+ "title": "High-Level Political Forum OSN 2026 (New York)",
+ "entityType": "event",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "igor-cerveny"
+ ],
+ "order": 144,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-49",
+   "CLM-50",
+   "CLM-52"
+  ],
+  "sourceRefs": [
+   "SRC-18",
+   "SRC-19"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Fórum OSN k udržitelnému rozvoji (7.–16. 7. 2026); oficiální důvod Červeného cesty do USA. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (igor-cerveny). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

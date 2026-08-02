@@ -1,0 +1,48 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/ministerstvo-vnitra",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "ministerstvo-vnitra",
+ "entityId": "ministerstvo-vnitra",
+ "title": "Ministerstvo vnitra ČR",
+ "entityType": "public_institution",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "lubomir-metnar",
+  "tomio-okamura"
+ ],
+ "order": 279,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-01",
+   "CLM-04",
+   "CLM-06",
+   "CLM-15",
+   "CLM-16",
+   "CLM-17"
+  ],
+  "sourceRefs": [
+   "SRC-01",
+   "SRC-02",
+   "SRC-03",
+   "SRC-04",
+   "SRC-05"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — SPD s ním dříve vyhrálo samostatný spor o šíření strachu. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (lubomir-metnar, tomio-okamura). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

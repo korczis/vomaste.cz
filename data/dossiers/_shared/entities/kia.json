@@ -1,0 +1,35 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/kia",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "kia",
+ "entityId": "kia",
+ "title": "Kia",
+ "entityType": "company",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "karel-havlicek"
+ ],
+ "order": 218,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "sourceRefs": [
+   "SRC-31"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Automobilka; uvedena (jako „Kii“ v genitivu) mezi řečníky konference Forum Elektromobilita 2026. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (karel-havlicek). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

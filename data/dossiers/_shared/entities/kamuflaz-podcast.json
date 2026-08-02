@@ -1,0 +1,38 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/kamuflaz-podcast",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "kamuflaz-podcast",
+ "entityId": "kamuflaz-podcast",
+ "title": "Kamufláž (armádní podcast)",
+ "entityType": "organization",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "jaromir-zuna"
+ ],
+ "order": 185,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-08"
+  ],
+  "sourceRefs": [
+   "SRC-06"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Armádní podcast, pro který vznikl neodvysílaný rozhovor s prezidentem Pavlem — jádro kauzy údajné cenzury; přímý aktér děje. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (jaromir-zuna). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

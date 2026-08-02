@@ -1,0 +1,38 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/orlen",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "orlen",
+ "entityId": "orlen",
+ "title": "Orlen",
+ "entityType": "company",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "karel-havlicek"
+ ],
+ "order": 321,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-46"
+  ],
+  "sourceRefs": [
+   "SRC-31"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Účastník konference Forum Elektromobilita 2026. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (karel-havlicek). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

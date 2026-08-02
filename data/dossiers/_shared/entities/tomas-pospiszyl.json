@@ -1,0 +1,38 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/tomas-pospiszyl",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "tomas-pospiszyl",
+ "entityId": "tomas-pospiszyl",
+ "title": "Tomáš Pospiszyl",
+ "entityType": "person",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "oto-klempir"
+ ],
+ "order": 405,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-26"
+  ],
+  "sourceRefs": [
+   "SRC-04"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Rektor Akademie výtvarných umění; kritik zrušení výběrového řízení na ředitele NGP. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (oto-klempir). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

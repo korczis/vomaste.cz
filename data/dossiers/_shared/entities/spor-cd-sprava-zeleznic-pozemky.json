@@ -1,0 +1,44 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/spor-cd-sprava-zeleznic-pozemky",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "spor-cd-sprava-zeleznic-pozemky",
+ "entityId": "spor-cd-sprava-zeleznic-pozemky",
+ "title": "Spor o pozemky a majetkové vypořádání ČD vs. Správa železnic",
+ "entityType": "controversy",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "ivan-bednarik"
+ ],
+ "order": 385,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-40",
+   "CLM-41",
+   "CLM-42",
+   "CLM-47"
+  ],
+  "sourceRefs": [
+   "SRC-12",
+   "SRC-13",
+   "SRC-20",
+   "SRC-21"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Nedokončené majetkové vypořádání od rozdělení 2002–2003 (převod 12 mld. 2008, 3,3 mld. za nádraží 2016, neuskutečněný prodej pozemků za 3,5 mld., ~3 mld./rok nájemné); reportovaný kontext Bednárikovy rezignace. Edge bednarik–sprava-zeleznic existuje, entita sporu ne. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (ivan-bednarik). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

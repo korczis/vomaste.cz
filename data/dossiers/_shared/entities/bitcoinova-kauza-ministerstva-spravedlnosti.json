@@ -1,0 +1,66 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/bitcoinova-kauza-ministerstva-spravedlnosti",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "bitcoinova-kauza-ministerstva-spravedlnosti",
+ "entityId": "bitcoinova-kauza-ministerstva-spravedlnosti",
+ "title": "Bitcoinová kauza resortu spravedlnosti",
+ "entityType": "controversy",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "jeronym-tejc"
+ ],
+ "order": 81,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-02",
+   "CLM-03",
+   "CLM-04",
+   "CLM-05",
+   "CLM-06",
+   "CLM-07",
+   "CLM-19",
+   "CLM-20",
+   "CLM-21",
+   "CLM-22",
+   "CLM-23",
+   "CLM-24",
+   "CLM-25",
+   "CLM-26",
+   "CLM-27",
+   "CLM-28",
+   "CLM-29",
+   "CLM-30",
+   "CLM-31",
+   "CLM-32"
+  ],
+  "sourceRefs": [
+   "SRC-02",
+   "SRC-03",
+   "SRC-04",
+   "SRC-11",
+   "SRC-12",
+   "SRC-13",
+   "SRC-14",
+   "SRC-15",
+   "SRC-16",
+   "SRC-26"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Dar 468 bitcoinů (prodej za 956,8 mil. Kč), interní audit, Tejcovo trestní oznámení a stíhání Blažka, Daňhela a Titze. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (jeronym-tejc). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

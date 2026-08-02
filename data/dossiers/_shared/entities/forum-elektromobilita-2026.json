@@ -1,0 +1,38 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/forum-elektromobilita-2026",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "forum-elektromobilita-2026",
+ "entityId": "forum-elektromobilita-2026",
+ "title": "Forum Elektromobilita 2026",
+ "entityType": "event",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "karel-havlicek"
+ ],
+ "order": 131,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-46"
+  ],
+  "sourceRefs": [
+   "SRC-31"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Konference k elektromobilitě konaná 11. 6. 2026 na Výstavišti Praha; zahájil ji ministr Havlíček. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (karel-havlicek). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

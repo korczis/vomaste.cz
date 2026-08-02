@@ -1,0 +1,35 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/petra-fojtikova",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "petra-fojtikova",
+ "entityId": "petra-fojtikova",
+ "title": "Petra Fojtíková",
+ "entityType": "person",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "tunde-bartha"
+ ],
+ "order": 343,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "sourceRefs": [
+   "SRC-04"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Vedoucí Úřadu vlády 1. 11. 2025 – 15. 12. 2025 dle úředního přehledu; okrajová kontextová zmínka. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (tunde-bartha). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

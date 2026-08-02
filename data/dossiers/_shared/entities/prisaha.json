@@ -1,0 +1,41 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/prisaha",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "prisaha",
+ "entityId": "prisaha",
+ "title": "Přísaha",
+ "entityType": "political_party",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "macinka-turek"
+ ],
+ "order": 350,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-01",
+   "CLM-03"
+  ],
+  "sourceRefs": [
+   "SRC-11",
+   "SRC-12",
+   "SRC-13"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Společná kandidátka Motoristů a Přísahy v eurovolbách 2024 (Turek zvolen); interní hlasování Motoristů 2025 odmítlo koalici s Přísahou do sněmovních voleb. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (macinka-turek). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

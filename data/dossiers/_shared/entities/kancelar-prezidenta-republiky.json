@@ -1,0 +1,41 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/kancelar-prezidenta-republiky",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "kancelar-prezidenta-republiky",
+ "entityId": "kancelar-prezidenta-republiky",
+ "title": "Kancelář prezidenta republiky",
+ "entityType": "public_institution",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "alena-schillerova",
+  "jaromir-zuna"
+ ],
+ "order": 186,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-14",
+   "CLM-20"
+  ],
+  "sourceRefs": [
+   "SRC-06",
+   "SRC-10"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Vydala prohlášení o připravenosti prezidenta jmenovat Hlaváče. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (alena-schillerova, jaromir-zuna). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/karna-zaloba-na-soudkyni-os-benesov",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "karna-zaloba-na-soudkyni-os-benesov",
+ "entityId": "karna-zaloba-na-soudkyni-os-benesov",
+ "title": "Kárná žaloba na soudkyni Okresního soudu v Benešově (2026)",
+ "entityType": "legal_or_administrative_process",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "jeronym-tejc"
+ ],
+ "order": 194,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-08",
+   "CLM-09",
+   "CLM-10",
+   "CLM-11",
+   "CLM-12",
+   "CLM-13",
+   "CLM-33",
+   "CLM-34",
+   "CLM-35",
+   "CLM-36"
+  ],
+  "sourceRefs": [
+   "SRC-05",
+   "SRC-06",
+   "SRC-07",
+   "SRC-17"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Tejcova kárná žaloba (návrh snížení platu o 30 %); rozhodne kárný senát. Souvisí s případem usmrceného dítěte — dítě nikdy neidentifikovat. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (jeronym-tejc). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

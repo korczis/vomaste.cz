@@ -1,0 +1,38 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/vybor-pro-rozpoctove-prognozy",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "vybor-pro-rozpoctove-prognozy",
+ "entityId": "vybor-pro-rozpoctove-prognozy",
+ "title": "Výbor pro rozpočtové prognózy",
+ "entityType": "public_institution",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "alena-schillerova"
+ ],
+ "order": 446,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-28"
+  ],
+  "sourceRefs": [
+   "SRC-15"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — MF mu přisoudilo výhradní roli arbitra makroekonomických prognóz v polemice s NRR. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (alena-schillerova). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

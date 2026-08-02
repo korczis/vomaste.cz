@@ -1,0 +1,42 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/narodni-ustav-dusevniho-zdravi",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "narodni-ustav-dusevniho-zdravi",
+ "entityId": "narodni-ustav-dusevniho-zdravi",
+ "title": "Národní ústav duševního zdraví",
+ "entityType": "public_institution",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "robert-plaga"
+ ],
+ "order": 296,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-37",
+   "CLM-43"
+  ],
+  "sourceRefs": [
+   "SRC-16",
+   "SRC-19",
+   "SRC-27",
+   "SRC-30"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Jeho doporučení citují předkladatelé zákazu mobilů. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (robert-plaga). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

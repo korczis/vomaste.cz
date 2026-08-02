@@ -1,0 +1,40 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/program-inovace-op-pik",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "program-inovace-op-pik",
+ "entityId": "program-inovace-op-pik",
+ "title": "Program INOVACE",
+ "entityType": "legal_or_administrative_process",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "andrej-babis",
+  "karel-havlicek"
+ ],
+ "order": 352,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-19"
+  ],
+  "sourceRefs": [
+   "SRC-11",
+   "SRC-36"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Dotační program MPO, jehož kritéria inovativnosti projekt Pekárny Zelená louka nesplnil. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (andrej-babis, karel-havlicek). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

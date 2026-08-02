@@ -1,0 +1,38 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/profid-ehra",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "profid-ehra",
+ "entityId": "profid-ehra",
+ "title": "PROFID EHRA (mezinárodní klinická studie)",
+ "entityType": "event",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "adam-vojtech"
+ ],
+ "order": 351,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-07"
+  ],
+  "sourceRefs": [
+   "SRC-04"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Klinická studie, kterou FN Olomouc opustila v únoru 2025; policie prověřuje nesrovnalosti mezi dokumentací a hlášenými výsledky. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (adam-vojtech). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

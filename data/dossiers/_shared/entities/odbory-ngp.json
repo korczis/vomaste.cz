@@ -1,0 +1,39 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/odbory-ngp",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "odbory-ngp",
+ "entityId": "odbory-ngp",
+ "title": "Základní odborová organizace Národní galerie Praha",
+ "entityType": "organization",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "oto-klempir"
+ ],
+ "order": 310,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-28",
+   "CLM-29"
+  ],
+  "sourceRefs": [
+   "SRC-08"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Odborová organizace NGP — otevřený dopis ministrovi (10. 7. 2026, 63 podpisů) žádající vysvětlení kroků a poukazující na podfinancování. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (oto-klempir). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

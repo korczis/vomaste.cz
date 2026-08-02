@@ -1,0 +1,45 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/trestni-oznameni-stan-mpsv",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "trestni-oznameni-stan-mpsv",
+ "entityId": "trestni-oznameni-stan-mpsv",
+ "title": "Trestní oznámení STAN kvůli střetu zájmů na MPSV (2026)",
+ "entityType": "legal_or_administrative_process",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "ales-juchelka"
+ ],
+ "order": 415,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-13",
+   "CLM-15",
+   "CLM-40",
+   "CLM-41"
+  ],
+  "sourceRefs": [
+   "SRC-08",
+   "SRC-09",
+   "SRC-11",
+   "SRC-14",
+   "SRC-15"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Podáno 23. 7. 2026 (Pivoňka Vaňková, oznámil Rakušan); procesní stav: podnět k prověření, nikdo neobviněn ani neodsouzen. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (ales-juchelka). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

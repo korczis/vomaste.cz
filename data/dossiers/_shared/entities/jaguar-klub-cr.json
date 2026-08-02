@@ -1,0 +1,38 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/jaguar-klub-cr",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "jaguar-klub-cr",
+ "entityId": "jaguar-klub-cr",
+ "title": "Jaguar klub ČR, z.s.",
+ "entityType": "organization",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "macinka-turek"
+ ],
+ "order": 158,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-20"
+  ],
+  "sourceRefs": [
+   "SRC-23"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — IČO 26557975; Turek členem statutárního orgánu od 3. 3. 2023 (rejstříková vazba). Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (macinka-turek). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

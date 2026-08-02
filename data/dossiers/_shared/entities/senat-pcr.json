@@ -1,0 +1,60 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/senat-pcr",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "senat-pcr",
+ "entityId": "senat-pcr",
+ "title": "Senát Parlamentu ČR",
+ "entityType": "public_institution",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "adam-vojtech",
+  "alena-schillerova",
+  "jaromir-zuna",
+  "karel-havlicek",
+  "lubomir-metnar"
+ ],
+ "order": 373,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-07",
+   "CLM-13",
+   "CLM-14",
+   "CLM-15",
+   "CLM-16",
+   "CLM-28",
+   "CLM-30",
+   "CLM-36",
+   "CLM-37",
+   "CLM-38"
+  ],
+  "sourceRefs": [
+   "SRC-02",
+   "SRC-05",
+   "SRC-06",
+   "SRC-17",
+   "SRC-21",
+   "SRC-22",
+   "SRC-23",
+   "SRC-25",
+   "SRC-27",
+   "SRC-28"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Horní komora parlamentu; projednává stavební novelu i novelu EET. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (adam-vojtech, alena-schillerova, jaromir-zuna, karel-havlicek, lubomir-metnar). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

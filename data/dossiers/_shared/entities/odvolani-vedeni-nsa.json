@@ -1,0 +1,51 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/odvolani-vedeni-nsa",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "odvolani-vedeni-nsa",
+ "entityId": "odvolani-vedeni-nsa",
+ "title": "Odvolání vedení Národní sportovní agentury (prosinec 2025)",
+ "entityType": "controversy",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "boris-stastny"
+ ],
+ "order": 312,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-22",
+   "CLM-23",
+   "CLM-24",
+   "CLM-25",
+   "CLM-26",
+   "CLM-27",
+   "CLM-28",
+   "CLM-29",
+   "CLM-30",
+   "CLM-31"
+  ],
+  "sourceRefs": [
+   "SRC-11",
+   "SRC-12",
+   "SRC-13",
+   "SRC-14",
+   "SRC-15"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Bleskové odvolání Šebka a Horáka den po jmenování vlády, pověření Jebouska a následné jmenování Kováře novým předsedou NSA. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (boris-stastny). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

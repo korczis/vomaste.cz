@@ -1,0 +1,45 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/adam-batuna",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "adam-batuna",
+ "entityId": "adam-batuna",
+ "title": "Adam Batuna",
+ "entityType": "person",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "tomio-okamura"
+ ],
+ "order": 52,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-15",
+   "CLM-16",
+   "CLM-20"
+  ],
+  "sourceRefs": [
+   "SRC-03",
+   "SRC-06",
+   "SRC-07",
+   "SRC-14",
+   "SRC-15",
+   "SRC-26"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Obhájce hnutí SPD v kauze plakátů; soukromý advokát jmenovaný obsahem. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (tomio-okamura). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

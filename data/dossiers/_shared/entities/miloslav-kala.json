@@ -1,0 +1,47 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/miloslav-kala",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "miloslav-kala",
+ "entityId": "miloslav-kala",
+ "title": "Miloslav Kala",
+ "entityType": "person",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "lubomir-metnar"
+ ],
+ "order": 271,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-03",
+   "CLM-18",
+   "CLM-19",
+   "CLM-20",
+   "CLM-21",
+   "CLM-22",
+   "CLM-23"
+  ],
+  "sourceRefs": [
+   "SRC-01",
+   "SRC-02",
+   "SRC-03",
+   "SRC-05"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Prezident NKÚ; návrh na zrušení policejní ochrany označil za „útok na nezávislou instituci“ a „pokus o vyhladovění“; dlouhodobý spor s Babišem od 2016 (financování stavby sídla NKÚ). Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (lubomir-metnar). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

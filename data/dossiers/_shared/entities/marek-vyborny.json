@@ -1,0 +1,46 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/marek-vyborny",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "marek-vyborny",
+ "entityId": "marek-vyborny",
+ "title": "Marek Výborný",
+ "entityType": "person",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "karel-havlicek",
+  "martin-sebestyan"
+ ],
+ "order": 244,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-03",
+   "CLM-16",
+   "CLM-32",
+   "CLM-44"
+  ],
+  "sourceRefs": [
+   "SRC-05",
+   "SRC-07",
+   "SRC-18",
+   "SRC-25",
+   "SRC-27"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Poslanec KDU-ČSL, exministr zemědělství; tvrdil, že SZIF má analýzy potvrzující nezákonnost dotací Agrofertu. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (karel-havlicek, martin-sebestyan). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

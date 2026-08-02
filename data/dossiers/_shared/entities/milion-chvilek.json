@@ -1,0 +1,43 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/milion-chvilek",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "milion-chvilek",
+ "entityId": "milion-chvilek",
+ "title": "Milion chvilek pro demokracii",
+ "entityType": "organization",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "oto-klempir"
+ ],
+ "order": 268,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-18",
+   "CLM-19",
+   "CLM-43"
+  ],
+  "sourceRefs": [
+   "SRC-12",
+   "SRC-13",
+   "SRC-14",
+   "SRC-28"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Spolek organizující demonstraci proti zákonu o financování médií a petici „Oto, zabal to!“ za odvolání Klempíře. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (oto-klempir). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

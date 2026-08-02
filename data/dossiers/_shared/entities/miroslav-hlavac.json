@@ -1,0 +1,52 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/miroslav-hlavac",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "miroslav-hlavac",
+ "entityId": "miroslav-hlavac",
+ "title": "Miroslav Hlaváč",
+ "entityType": "person",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "jaromir-zuna"
+ ],
+ "order": 282,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-13",
+   "CLM-14",
+   "CLM-16",
+   "CLM-20",
+   "CLM-25",
+   "CLM-26",
+   "CLM-27",
+   "CLM-29"
+  ],
+  "sourceRefs": [
+   "SRC-09",
+   "SRC-10",
+   "SRC-11",
+   "SRC-14",
+   "SRC-21",
+   "SRC-25",
+   "SRC-27",
+   "SRC-28"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Generál; od 1. 7. 2026 náčelník Generálního štábu AČR, Zůna jako jediný člen vlády hlasoval proti jeho výběru. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (jaromir-zuna). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

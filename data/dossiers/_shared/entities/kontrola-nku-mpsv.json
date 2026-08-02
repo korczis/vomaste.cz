@@ -1,0 +1,43 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/kontrola-nku-mpsv",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "kontrola-nku-mpsv",
+ "entityId": "kontrola-nku-mpsv",
+ "title": "Kontrola NKÚ na MPSV (2026–2027)",
+ "entityType": "legal_or_administrative_process",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "ales-juchelka"
+ ],
+ "order": 223,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-14",
+   "CLM-42",
+   "CLM-43",
+   "CLM-44"
+  ],
+  "sourceRefs": [
+   "SRC-09",
+   "SRC-11",
+   "SRC-14"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Správní kontrola NKÚ zahrnující působení bývalé poradkyně (od července 2026, dokončení ~polovina 2027, zveřejnění po prázdninách 2027); výslovně ne trestní řízení. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (ales-juchelka). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}
