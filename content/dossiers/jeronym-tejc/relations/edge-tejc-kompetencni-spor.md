@@ -1,0 +1,16 @@
++++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
+title = "Jeroným Tejc — Tejc argumentoval ve vládním vyjádření ke kompetenčnímu sporu prezident vs. vláda — Kompetenční spor prezident vs. vláda (Pl. ÚS 16/26)"
+template = "dossier-relation.html"
+weight = 12
+
+[extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/jeronym-tejc/relations/edge-tejc-kompetencni-spor"
+view_model = "generated/views/dossiers/jeronym-tejc/relations/edge-tejc-kompetencni-spor.json"
+dossier = "jeronym-tejc"
+record_type = "relation"
+lang = "cs"
+rel_id = "edge-tejc-kompetencni-spor"
++++
+Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-048 (provázání grafu, třetí dávka) z už existujícího, citovaného tvrzení tohoto dossieru.
