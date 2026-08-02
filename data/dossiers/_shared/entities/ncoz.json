@@ -15,7 +15,8 @@
   "coverageState": "contextual",
   "dossiers": [
     "andrej-babis",
-    "jeronym-tejc"
+    "jeronym-tejc",
+    "karel-havlicek"
   ],
   "routeAliases": [
     "/dossiers/andrej-babis/entities/ncoz/"
@@ -26,7 +27,8 @@
     "discoveredVia": [
       "edge-eppo-ncoz",
       "edge-babis-ncoz-pandora",
-      "edge-tejc-ncoz"
+      "edge-tejc-ncoz",
+      "edge-penam-ncoz"
     ],
     "claimRefs": [
       "CLM-27",

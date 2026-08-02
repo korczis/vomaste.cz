@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/relations/edge-vystrcil-novela-sz",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-vystrcil-novela-sz",
+  "relationId": "edge-vystrcil-novela-sz",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/milos-vystrcil"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/novela-stavebniho-zakona-2026"
+  },
+  "relationType": "ASSOCIATED_WITH_EVENT",
+  "label": "Předseda Senátu Vystrčil nevyloučil zamítnutí novely kvůli množství kritických připomínek",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-37"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-22"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-23"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 15,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-048 (provázání grafu, třetí dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

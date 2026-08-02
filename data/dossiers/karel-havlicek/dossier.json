@@ -140,10 +140,13 @@
         "entity": "agrofert",
         "label": "Agrofert",
         "claims": [
-          "CLM-06"
+          "CLM-06",
+          "CLM-28"
         ],
         "sources": [
-          "SRC-02"
+          "SRC-02",
+          "SRC-15",
+          "SRC-16"
         ]
       },
       {
@@ -155,6 +158,185 @@
         "sources": [
           "SRC-02"
         ]
+      },
+      {
+        "entity": "novela-stavebniho-zakona-2026",
+        "label": "Novela stavebního zákona 2026 (sněmovní tisk 67)",
+        "claims": [
+          "CLM-29",
+          "CLM-30",
+          "CLM-37"
+        ],
+        "sources": [
+          "SRC-17",
+          "SRC-22",
+          "SRC-23"
+        ]
+      },
+      {
+        "entity": "martin-kupka",
+        "label": "Martin Kupka",
+        "claims": [
+          "CLM-12"
+        ],
+        "sources": [
+          "SRC-07",
+          "SRC-08"
+        ]
+      },
+      {
+        "entity": "lukas-vlcek",
+        "label": "Lukáš Vlček",
+        "claims": [
+          "CLM-13"
+        ],
+        "sources": [
+          "SRC-07",
+          "SRC-08"
+        ]
+      },
+      {
+        "entity": "vojtech-faltus",
+        "label": "Vojtěch Faltus",
+        "claims": [
+          "CLM-14"
+        ],
+        "sources": [
+          "SRC-07",
+          "SRC-08"
+        ]
+      },
+      {
+        "entity": "olga-richterova",
+        "label": "Olga Richterová",
+        "claims": [
+          "CLM-32"
+        ],
+        "sources": [
+          "SRC-18"
+        ]
+      },
+      {
+        "entity": "veronika-kovarova",
+        "label": "Veronika Kovářová",
+        "claims": [
+          "CLM-34"
+        ],
+        "sources": [
+          "SRC-19"
+        ]
+      },
+      {
+        "entity": "ckait",
+        "label": "Česká komora autorizovaných inženýrů a techniků (ČKAIT)",
+        "claims": [
+          "CLM-38"
+        ],
+        "sources": [
+          "SRC-24",
+          "SRC-25"
+        ]
+      },
+      {
+        "entity": "robert-spalek",
+        "label": "Robert Špalek",
+        "claims": [
+          "CLM-39"
+        ],
+        "sources": [
+          "SRC-25"
+        ]
+      },
+      {
+        "entity": "senat-pcr",
+        "label": "Senát Parlamentu ČR",
+        "claims": [
+          "CLM-30",
+          "CLM-37"
+        ],
+        "sources": [
+          "SRC-17",
+          "SRC-22",
+          "SRC-23"
+        ]
+      },
+      {
+        "entity": "milos-vystrcil",
+        "label": "Miloš Vystrčil",
+        "claims": [
+          "CLM-37"
+        ],
+        "sources": [
+          "SRC-22",
+          "SRC-23"
+        ]
+      },
+      {
+        "entity": "tomas-zdechovsky",
+        "label": "Tomáš Zdechovský",
+        "claims": [
+          "CLM-09"
+        ],
+        "sources": [
+          "SRC-05"
+        ]
+      },
+      {
+        "entity": "marian-piecha",
+        "label": "Marian Piecha",
+        "claims": [
+          "CLM-20",
+          "CLM-21"
+        ],
+        "sources": [
+          "SRC-11",
+          "SRC-12"
+        ]
+      },
+      {
+        "entity": "ncoz",
+        "label": "Národní centrála proti organizovanému zločinu",
+        "claims": [
+          "CLM-22"
+        ],
+        "sources": [
+          "SRC-13",
+          "SRC-32"
+        ]
+      },
+      {
+        "entity": "adam-basny",
+        "label": "Adam Bašný",
+        "claims": [
+          "CLM-25",
+          "CLM-26"
+        ],
+        "sources": [
+          "SRC-14",
+          "SRC-15",
+          "SRC-16"
+        ]
+      },
+      {
+        "entity": "krajsky-soud-praha",
+        "label": "Krajský soud v Praze",
+        "claims": [
+          "CLM-26"
+        ],
+        "sources": [
+          "SRC-15",
+          "SRC-16"
+        ]
+      },
+      {
+        "entity": "dohoda-o-cistem-prumyslu",
+        "label": "Dohoda o čistém průmyslu (EU)",
+        "claims": [
+          "CLM-40"
+        ],
+        "sources": [
+          "SRC-26"
+        ]
       }
     ],
     "edges": [
@@ -162,7 +344,24 @@
       "edge-havlicek-penam-zelena-louka",
       "edge-havlicek-babis",
       "edge-havlicek-agrofert",
-      "edge-havlicek-evropska-komise"
+      "edge-havlicek-evropska-komise",
+      "edge-havlicek-novela-sz",
+      "edge-kupka-havlicek",
+      "edge-vlcek-havlicek",
+      "edge-faltus-novela-sz",
+      "edge-richterova-havlicek",
+      "edge-kovarova-novela-sz",
+      "edge-ckait-novela-sz",
+      "edge-spalek-novela-sz",
+      "edge-senat-novela-sz",
+      "edge-vystrcil-novela-sz",
+      "edge-zdechovsky-havlicek",
+      "edge-piecha-penam",
+      "edge-penam-ncoz",
+      "edge-agrofert-penam",
+      "edge-basny-penam",
+      "edge-penam-krajsky-soud",
+      "edge-havlicek-dohoda"
     ]
   },
   "contentBlocks": [

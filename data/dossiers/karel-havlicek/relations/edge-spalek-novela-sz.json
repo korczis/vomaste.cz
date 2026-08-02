@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/relations/edge-spalek-novela-sz",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-spalek-novela-sz",
+  "relationId": "edge-spalek-novela-sz",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/robert-spalek"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/novela-stavebniho-zakona-2026"
+  },
+  "relationType": "RESPONDED_TO",
+  "label": "Předseda ČKAIT Špalek varoval, že reforma nepovede k rychlejšímu povolování staveb",
+  "status": "single",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-39"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-25"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 13,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-048 (provázání grafu, třetí dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}
