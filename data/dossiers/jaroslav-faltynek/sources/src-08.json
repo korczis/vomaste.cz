@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-08",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-08",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek"
+  },
+  "title": "SRC-08 — ČT24 (Česká televize), 13. 9. 2019",
+  "description": "ČT24 cituje Faltýnkovo vlastní vyjádření k důvodu zastavení jeho trestního stíhání v kauze Čapí hnízdo — jeho vlastní charakteristika, ne oficiální odůvodnění státního zástupce.",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/byla-to-umele-vytvorena-kauza-rika-faltynek-fiala-mluvi-o-pachuti-60253",
+  "published": "2019-09-13",
+  "retrieved": "2026-08-02",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-09"
+    }
+  ],
+  "subjects": [
+    "faltynek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Co dokládá.** Článek primárně referuje o zastavení stíhání Andreje\nBabiše (13. 9. 2019), Faltýnkovo dřívější (2018) zastavení stíhání\nzmiňuje jen v kontextu. Faltýnek v něm uvádí, že podle jeho vlastního\npopisu policie státnímu zástupci nedodala dostatek důkazů.\n\n**Co to je a není.** Toto je **Faltýnkovo vlastní vyjádření**, ne\ncitace oficiálního odůvodnění státního zástupce — ten sám své\nodůvodnění v žádném dohledaném, přímo otevřeném zdroji nezveřejnil.\nDossier to vede jako citaci účastníka řízení, ne jako doložené věcné\nodůvodnění rozhodnutí — viz\n[GAP-01](@/dossiers/jaroslav-faltynek/gaps/gap-01.md), který zůstává\notevřený i po tomto zjištění.\n\n**Limity.** Přesné datum a číslo usnesení, kterým bylo Faltýnkovo\nstíhání v květnu 2018 zastaveno, tento zdroj neuvádí — pro to viz\n[SRC-02](@/dossiers/jaroslav-faltynek/sources/src-02.md),\n[SRC-04](@/dossiers/jaroslav-faltynek/sources/src-04.md)."
+    }
+  ],
+  "order": 8
+}

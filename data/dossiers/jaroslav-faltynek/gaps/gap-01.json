@@ -12,13 +12,16 @@
   "title": "GAP-01 — Odůvodnění rozhodnutí státního zástupce",
   "description": "Proč státní zástupce stížnosti vyhověl a stíhání zrušil, citovaný zdroj neuvádí.",
   "priority": "vysoká",
-  "checked": "2026-07-30",
+  "checked": "2026-08-02",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-02"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-09"
     }
   ],
   "subjects": [
@@ -27,7 +30,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Citovaný zdroj ([SRC-02](@/dossiers/jaroslav-faltynek/sources/src-02.md))\nuvádí, že státní zástupce **stížnostem vyhověl** a stíhání zrušil.\n**Věcné odůvodnění tohoto rozhodnutí z otevřených zdrojů doloženo není.**\n\nBez něj nelze vyvozovat nic o tom, proč stíhání skončilo — ani ve\nprospěch, ani v neprospěch. Otevřenost není zjištění žádným směrem."
+      "value": "Citovaný zdroj ([SRC-02](@/dossiers/jaroslav-faltynek/sources/src-02.md))\nuvádí, že státní zástupce **stížnostem vyhověl** a stíhání zrušil.\n**Věcné odůvodnění tohoto rozhodnutí z otevřených zdrojů doloženo není.**\n\nBez něj nelze vyvozovat nic o tom, proč stíhání skončilo — ani ve\nprospěch, ani v neprospěch. Otevřenost není zjištění žádným směrem.\n\n**Aktualizace 2026-08-02**: dohledáno a otevřeno Faltýnkovo vlastní\nvyjádření (ČT24, 13. 9. 2019,\n[SRC-08](@/dossiers/jaroslav-faltynek/sources/src-08.md),\n[CLM-09](@/dossiers/jaroslav-faltynek/claims/clm-09.md)) — podle něj\npolicie státnímu zástupci nedodala dostatek důkazů. **To mezeru\nneuzavírá**: jde o Faltýnkovu vlastní charakteristiku, ne o citaci\nnebo nález oficiálního odůvodnění státního zástupce, které v žádném\notevřeném zdroji dohledáno nebylo. Mezera zůstává otevřená."
     }
   ],
   "order": 1

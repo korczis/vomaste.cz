@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-09",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-09",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek"
+  },
+  "text": "Faltýnek podle ČT24 sám uvedl, že policie státnímu zástupci nedodala dostatek důkazů — jde o jeho vlastní charakteristiku důvodu zastavení jeho stíhání, ne o citaci oficiálního odůvodnění státního zástupce",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-08"
+    }
+  ],
+  "subjects": [
+    "faltynek"
+  ],
+  "order": 9,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam tvrzení CLM-09 — shrnutí, stav a zdroje\nvýše jsou úplné.\n\n**Proč status CITACE, ne fakt.** Toto je Faltýnkovo vlastní, ničím\nnezávisle nepotvrzené vysvětlení. Státní zástupce Jaroslav Šaroch své\nvlastní odůvodnění v žádném dohledaném zdroji nezveřejnil — dossier ho\nproto neuvádí jako fakt o důvodu rozhodnutí, jen jako to, co o důvodu\nřekl sám Faltýnek. [GAP-01](@/dossiers/jaroslav-faltynek/gaps/gap-01.md)\n(věcné odůvodnění rozhodnutí státního zástupce) zůstává i po tomto\nzjištění otevřený."
+    }
+  ]
+}

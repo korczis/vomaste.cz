@@ -20,3 +20,12 @@ uvádí, že státní zástupce **stížnostem vyhověl** a stíhání zrušil.
 
 Bez něj nelze vyvozovat nic o tom, proč stíhání skončilo — ani ve
 prospěch, ani v neprospěch. Otevřenost není zjištění žádným směrem.
+
+**Aktualizace 2026-08-02**: dohledáno a otevřeno Faltýnkovo vlastní
+vyjádření (ČT24, 13. 9. 2019,
+[SRC-08](@/dossiers/jaroslav-faltynek/sources/src-08.md),
+[CLM-09](@/dossiers/jaroslav-faltynek/claims/clm-09.md)) — podle něj
+policie státnímu zástupci nedodala dostatek důkazů. **To mezeru
+neuzavírá**: jde o Faltýnkovu vlastní charakteristiku, ne o citaci
+nebo nález oficiálního odůvodnění státního zástupce, které v žádném
+otevřeném zdroji dohledáno nebylo. Mezera zůstává otevřená.
