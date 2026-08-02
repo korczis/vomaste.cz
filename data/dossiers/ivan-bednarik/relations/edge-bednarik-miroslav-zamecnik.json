@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/relations/edge-bednarik-miroslav-zamecnik",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-bednarik-miroslav-zamecnik",
+  "relationId": "edge-bednarik-miroslav-zamecnik",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/bednarik"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/miroslav-zamecnik"
+  },
+  "relationType": "ASSOCIATED_WITH_EVENT",
+  "label": "zvolen předsedou dozorčí rady Českých drah na stejném jednání, které přijalo jeho rezignaci (2022)",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-44"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-19"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-20"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 8,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-047 (provázání grafu, třetí dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

@@ -1,41 +1,42 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/acri",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "acri",
- "entityId": "acri",
- "title": "ACRI — Asociace podniků českého železničního průmyslu",
- "entityType": "organization",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "ivan-bednarik"
- ],
- "order": 50,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/acri",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "acri",
+  "entityId": "acri",
+  "title": "ACRI — Asociace podniků českého železničního průmyslu",
+  "entityType": "organization",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "ivan-bednarik"
   ],
-  "claimRefs": [
-   "CLM-37",
-   "CLM-38",
-   "CLM-39"
-  ],
-  "sourceRefs": [
-   "SRC-27",
-   "SRC-28"
+  "order": 50,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02",
+      "edge-bednarik-acri"
+    ],
+    "claimRefs": [
+      "CLM-37",
+      "CLM-38",
+      "CLM-39"
+    ],
+    "sourceRefs": [
+      "SRC-27",
+      "SRC-28"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Oborová asociace; pořadatel diskusního fóra (duben 2026), publikovala priority nastupujícího ministra. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (ivan-bednarik). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Oborová asociace; pořadatel diskusního fóra (duben 2026), publikovala priority nastupujícího ministra. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (ivan-bednarik). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
-  }
- ]
 }

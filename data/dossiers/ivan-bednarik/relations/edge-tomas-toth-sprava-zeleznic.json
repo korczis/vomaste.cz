@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/relations/edge-tomas-toth-sprava-zeleznic",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-tomas-toth-sprava-zeleznic",
+  "relationId": "edge-tomas-toth-sprava-zeleznic",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/tomas-toth"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/sprava-zeleznic"
+  },
+  "relationType": "HOLDS_ROLE",
+  "label": "generální ředitel Správy železnic",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-30"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-25"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-22"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 11,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-047 (provázání grafu, třetí dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

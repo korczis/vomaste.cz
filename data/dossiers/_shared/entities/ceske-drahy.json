@@ -23,7 +23,8 @@
   "provenance": {
     "discoveredAt": "2026-07-31",
     "discoveredVia": [
-      "edge-bednarik-ceske-drahy"
+      "edge-bednarik-ceske-drahy",
+      "edge-michal-krapinec-ceske-drahy"
     ],
     "claimRefs": [
       "CLM-02"
