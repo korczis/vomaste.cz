@@ -25,3 +25,8 @@ vysoké riziko neplatnosti. Dokud není doložen výsledek, **nelze z výpovědi
 vyvozovat nic o tom, zda k porušení nájemní smlouvy skutečně došlo**.
 
 Otevřenost není zjištění žádným směrem.
+
+**Opakovaná kontrola k 2026-08-02** (cílené dotazy na soudní
+napadení výpovědi, její účinnost a případné vystěhování): všechno
+dohledané zpravodajství končí u rozhodnutí rady z 24. 6. 2026; žádný
+pozdější procesní krok nebyl doložen. Stav beze změny.
