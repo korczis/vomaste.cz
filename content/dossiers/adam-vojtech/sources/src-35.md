@@ -1,6 +1,6 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
-title = "SRC-35 — Olomoucký deník (Deník.cz)"
+title = "SRC-35 — Olomoucký deník"
 description = "Babiš v Olomouci ke kauze defibrilátorů: Ředitel FNOL Havlík má důvěru."
 template = "dossier-source.html"
 weight = 35
