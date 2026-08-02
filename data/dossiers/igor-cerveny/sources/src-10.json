@@ -28,6 +28,12 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-19"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-56"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-57"
     }
   ],
   "subjects": [
