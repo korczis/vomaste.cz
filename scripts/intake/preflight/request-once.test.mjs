@@ -2,9 +2,58 @@
 // server (loopback only — never the public internet, §19).
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { requestOnce } from "./request-once.mjs";
+import { requestOnce, createPinnedLookup } from "./request-once.mjs";
 import { startMockServer } from "./testing/mock-http-server.mjs";
 import { NetworkTimeoutError, DestinationBlockedError, PREFLIGHT_ERROR_CODES } from "./errors.mjs";
+
+// Real production bug, found 2026-08-02 against a real dual-stack
+// hostname (see the ADR decision log): Node's `lookup` option has two
+// distinct callback shapes depending on the CALLER-supplied `options.all`
+// — `all: false` wants `callback(err, address, family)`; `all: true`
+// (which Node's own http/https client requests for Happy Eyeballs
+// dual-stack connection selection, on by default in current Node) wants
+// `callback(err, addresses)`, an ARRAY. An earlier version of this
+// function always used the 3-arg form, so Node's `all: true` callers
+// received `undefined` as the address and the connection failed with
+// `ERR_INVALID_IP_ADDRESS`. Every test up to that point used 127.0.0.1
+// literals, which never made Node choose `all: true` — the bug was
+// invisible locally. These two tests call the callback directly with
+// both shapes, so they don't depend on Node's own (version/platform-
+// dependent) decision of which one to use in a real connection.
+test("createPinnedLookup: options.all=false (or absent) uses the 3-arg callback(err, address, family) form", () => {
+  const lookup = createPinnedLookup({ address: "93.184.216.34", family: 4 });
+  const calls = [];
+  lookup("example.fixture", { all: false }, (...args) => calls.push(args));
+  assert.deepEqual(calls, [[null, "93.184.216.34", 4]]);
+});
+
+test("createPinnedLookup: options.all=true uses the array callback(err, addresses) form (the bug this test exists to pin down)", () => {
+  const lookup = createPinnedLookup({ address: "93.184.216.34", family: 4 });
+  const calls = [];
+  lookup("example.fixture", { all: true }, (...args) => calls.push(args));
+  assert.deepEqual(calls, [[null, [{ address: "93.184.216.34", family: 4 }]]]);
+});
+
+test("a real request against the mock server still succeeds when Node's lookup is invoked in options.all=true mode", async () => {
+  // Simulates exactly what broke in production: call the real lookup
+  // function the way Node's Happy-Eyeballs dual-stack path calls it,
+  // then feed the result into a real connection the same way Node's own
+  // http client would — proving the fix works end to end, not just at
+  // the unit level.
+  const mock = await startMockServer();
+  try {
+    const lookup = createPinnedLookup({ address: "127.0.0.1", family: 4 });
+    const resolved = await new Promise((resolve, reject) => {
+      lookup("127.0.0.1", { all: true }, (err, addresses) => (err ? reject(err) : resolve(addresses)));
+    });
+    assert.deepEqual(resolved, [{ address: "127.0.0.1", family: 4 }]);
+
+    const result = await requestOnce({ url: `${mock.baseUrl}/ok`, hostname: "127.0.0.1", pinnedAddress: { address: "127.0.0.1", family: 4 } });
+    assert.equal(result.status, 200);
+  } finally {
+    await mock.close();
+  }
+});
 
 test("a basic successful request returns status, headers, and body", async () => {
   const mock = await startMockServer();

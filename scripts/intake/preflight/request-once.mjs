@@ -22,6 +22,36 @@ function mapNodeError(err) {
   return err;
 }
 
+// §7.3 strategy 2: a custom `lookup` that ALWAYS returns the
+// pre-validated address — no second DNS resolution ever happens for this
+// connection, regardless of what a concurrent/later query against the
+// real resolver might return (DNS rebinding).
+//
+// Node's `lookup` option has two distinct callback shapes depending on
+// `options.all` (Node's own dns.lookup() contract, not something this
+// module chooses): `all: false` wants `callback(err, address, family)`;
+// `all: true` wants `callback(err, addresses)` — an ARRAY of `{address,
+// family}`. Node's http/https client requests `all: true` for "Happy
+// Eyeballs" dual-stack connection selection — default behavior in
+// current Node, not something this code opted into. A real production
+// run against a real dual-stack hostname (found live, 2026-08-02 — see
+// the ADR decision log) hit exactly this: an earlier version of this
+// function always used the 3-arg form regardless of `options.all`, so
+// Node's `all: true` path received `undefined` as the address and failed
+// with `ERR_INVALID_IP_ADDRESS`. Every local/CI test up to that point
+// exercised only 127.0.0.1 literals against a mock server, which never
+// triggers Happy Eyeballs' dual-stack selection — the bug was invisible
+// until a real public hostname was checked in production. Exported (not
+// inlined in requestOnce) specifically so a test can call it directly
+// with both callback shapes without needing Node to actually decide
+// which one to use.
+export function createPinnedLookup(pinnedAddress) {
+  return (_host, options, callback) => {
+    if (options?.all) callback(null, [{ address: pinnedAddress.address, family: pinnedAddress.family }]);
+    else callback(null, pinnedAddress.address, pinnedAddress.family);
+  };
+}
+
 // `url`/`hostname` come from parse-url.mjs (credentials/fragment already
 // stripped). `pinnedAddress`/`family` come from validate-destination.mjs
 // — the exact address this request is allowed to connect to, and no
@@ -33,11 +63,7 @@ export function requestOnce({ url, hostname, pinnedAddress, timeouts = TIMEOUTS_
   return new Promise((resolve, reject) => {
     const isHttps = url.startsWith("https:");
     const transport = isHttps ? https : http;
-    // §7.3 strategy 2: a custom lookup that ALWAYS returns the
-    // pre-validated address — no second DNS resolution ever happens for
-    // this connection, regardless of what a concurrent/later query
-    // against the real resolver might return (DNS rebinding).
-    const lookup = (_host, _options, callback) => callback(null, pinnedAddress.address, pinnedAddress.family);
+    const lookup = createPinnedLookup(pinnedAddress);
 
     let settled = false;
     let bodyBytes = 0;
