@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/relations/edge-cerveny-ministerstvo-spravedlnosti",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-cerveny-ministerstvo-spravedlnosti",
+  "relationId": "edge-cerveny-ministerstvo-spravedlnosti",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/cerveny"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/ministerstvo-spravedlnosti"
+  },
+  "relationType": "INVESTIGATED_BY",
+  "label": "obsahová kontrola majetkového přiznání a postoupení věci přestupkovému orgánu v Nymburce",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-05"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-03"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 4,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-047 (provázání grafu, třetí dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

@@ -1,43 +1,44 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/mestsky-urad-nymburk",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "mestsky-urad-nymburk",
- "entityId": "mestsky-urad-nymburk",
- "title": "Městský úřad Nymburk",
- "entityType": "public_institution",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "igor-cerveny"
- ],
- "order": 259,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/mestsky-urad-nymburk",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "mestsky-urad-nymburk",
+  "entityId": "mestsky-urad-nymburk",
+  "title": "Městský úřad Nymburk",
+  "entityType": "public_institution",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "igor-cerveny"
   ],
-  "claimRefs": [
-   "CLM-05",
-   "CLM-20",
-   "CLM-21"
-  ],
-  "sourceRefs": [
-   "SRC-02",
-   "SRC-03",
-   "SRC-13",
-   "SRC-14"
+  "order": 259,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02",
+      "edge-cerveny-mestsky-urad-nymburk"
+    ],
+    "claimRefs": [
+      "CLM-05",
+      "CLM-20",
+      "CLM-21"
+    ],
+    "sourceRefs": [
+      "SRC-02",
+      "SRC-03",
+      "SRC-13",
+      "SRC-14"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Přestupkový orgán řešící majetkové přiznání ministra Červeného. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (igor-cerveny). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Přestupkový orgán řešící majetkové přiznání ministra Červeného. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (igor-cerveny). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
-  }
- ]
 }

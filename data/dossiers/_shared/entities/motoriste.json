@@ -17,7 +17,8 @@
     "macinka-turek",
     "petr-macinka",
     "filip-turek",
-    "richard-chlad"
+    "richard-chlad",
+    "igor-cerveny"
   ],
   "routeAliases": [
     "/dossiers/macinka-turek/entities/motoriste/"
@@ -30,7 +31,8 @@
       "edge-turek-motoriste",
       "edge-motoriste-vlada",
       "edge-klubmotoristu-motoriste",
-      "edge-chlad-motoriste"
+      "edge-chlad-motoriste",
+      "edge-lubor-novak-motoriste"
     ],
     "claimRefs": [
       "CLM-03",
