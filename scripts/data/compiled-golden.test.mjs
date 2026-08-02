@@ -16,15 +16,15 @@ import { compileDataset } from "./compile.mjs";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const compiled = compileDataset(loadCanonicalTree(join(ROOT, "data/dossiers")));
 
-test("golden: počty záznamů per typ (snapshot 2026-08-02: 414 kontextových entit z extrakce obsahu + provázání grafu 31 relací + T-039 dávka 1 (jaroslav-faltynek/richard-chlad/petr-vencalek/tunde-bartha, +5 zdrojů) + T-041)", () => {
+test("golden: počty záznamů per typ (snapshot 2026-08-02: 414 kontextových entit z extrakce obsahu + provázání grafu 31 relací + T-039 dávka 1 (jaroslav-faltynek/richard-chlad/petr-vencalek/tunde-bartha, +5 zdrojů) + T-041 + macinka-turek GAP-06 pravomocné odložení CLM-52/SRC-58)", () => {
   assert.deepEqual(compiled.counts.perType, {
     case: 88,
-    claim: 859,
+    claim: 860,
     dossier: 24,
     entity: 503,
     gap: 188,
     relation: 142,
-    source: 542,
+    source: 543,
     update: 47,
   });
   assert.equal(compiled.counts.dossiers, 24);

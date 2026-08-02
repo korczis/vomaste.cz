@@ -58,3 +58,7 @@ tomuto přehledu (rešerše publikované žurnalistiky ani přímý programový
 dotaz na ČÚZK) se je nepodařilo dohledat. Úplné vyřešení by vyžadovalo
 placený/autorizovaný přístup k datům ČÚZK (ISKN/RÚIAN) mimo veřejné
 webové rozhraní, viz [Co tento přehled nezkoumal](@/dossiers/macinka-turek/_index.md#co-tento-prehled-nezkoumal).
+
+**Opakovaná kontrola k 2026-08-02** (cílená rešerše aktuální žurnalistiky
+k Macinkovým nemovitostem): žádný nový zdroj nenalezen — stav beze
+změny oproti 2026-07-29.

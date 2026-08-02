@@ -108,6 +108,7 @@ Každé tvrzení má stav ověřenosti a odkaz na zdroj v [registru zdrojů](#re
 | <a id="clm-49"></a>[CLM-49](@/dossiers/macinka-turek/claims/clm-49.md) | K odložení věci pro promlčení dozorující státní zástupce Jan Vychyta uvedl, že k danému skutku došlo a že by byl trestným činem, ale trestní odpovědnost zanikla promlčením; policie podle citovaného zdroje zjištění Deníku N nezpochybnila. Turek autorství konkrétního komentáře odmítal, za některé jiné výroky se omluvil | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-56](@/dossiers/macinka-turek/sources/src-56.md) |
 | <a id="clm-50"></a>[CLM-50](@/dossiers/macinka-turek/claims/clm-50.md) | Podle ukrajinského registrového agregátoru YouControl (USREOU) je GMR GAS UA LLC k 2026-08-01 ve stavu „Registered" (formálně zaregistrována, nikoli v likvidaci ani vymazaná) | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-57](@/dossiers/macinka-turek/sources/src-57.md) |
 | <a id="clm-51"></a>[CLM-51](@/dossiers/macinka-turek/claims/clm-51.md) | Podle YouControlu drží v GMR GAS UA LLC podíly GMR GAS s.r.o. (40 %), Petr Macinka (20 %) a Tomáš Čábal (40 %); Čábal je zapsán jako statutární orgán (s omezením jednat samostatně nad 50 000 EUR) a jako skutečný majitel s přímým rozhodujícím vlivem | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-57](@/dossiers/macinka-turek/sources/src-57.md) |
+| <a id="clm-52"></a>[CLM-52](@/dossiers/macinka-turek/claims/clm-52.md) | Státní zástupkyně Obvodního státního zastupitelství pro Prahu 4 rozhodnutím ze dne 27. 7. 2026 zamítla stížnost bývalé partnerky Filipa Turka proti odložení trestního oznámení pro promlčení; odložení věci je tím pravomocné. Jde i nadále výhradně o procesní rozhodnutí o promlčení, ne o posouzení viny nebo neviny — které už z tohoto důvodu žádný orgán nikdy neučiní | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-58](@/dossiers/macinka-turek/sources/src-58.md) |
 
 ## Politická kariéra
 
@@ -271,10 +272,18 @@ oznámil to vedoucí Obvodního státního zastupitelství pro Prahu 4 Jan
 Vychyta. **Toto rozhodnutí je čistě procesní** — vyplývá z uplynutí
 zákonné promlčecí doby (v době skutku 5, resp. 12 let u těžké újmy na
 zdraví), **ne z posouzení, zda k činům došlo, nebo ne.** Rozhodnutí
-navíc není pravomocné: žena proti němu podala stížnost, o níž k
-29. 7. 2026 rozhoduje státní zástupkyně. Otázka pravdivosti obvinění
-tímto zůstává zcela otevřená a nerozhodnutá — dossier ji tak i vede.
+tehdy nebylo pravomocné: žena proti němu podala stížnost.
 *(Zdroj: Deník.cz, Blesk.cz, HN.cz, ČT24, Echo24)*
+
+**Aktualizace 27.–28. 7. 2026**: státní zástupkyně stížnost zamítla,
+odložení věci je tak pravomocné (single-sourced, ČT24 s odkazem na
+iROZHLAS). **I toto je jen procesní rozhodnutí o promlčení, ne o vině.**
+Protože je věc pravomocně uzavřena právě z důvodu promlčení, otázka,
+zda k obviněnému jednání došlo, už nikdy nebude věcně posouzena žádným
+orgánem činným v trestním řízení — pravomocnost tu neznamená vyřešení
+sporu, jen konec procesní cesty k jeho vyřešení. Dossier to tak i nadále
+vede, viz [GAP-06](@/dossiers/macinka-turek/gaps/gap-06.md).
+*(Zdroj: ČT24)*
 
 ## Kauza z října 2025: smazané příspěvky na Facebooku
 

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-58",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-58",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-58 — ČT24 (Česká televize), 28. 7. 2026",
+  "description": "ČT24 shrnuje dvě samostatné, souběžně odložené kauzy Filipa Turka (nenávistné výroky na sociálních sítích; trestní oznámení bývalé partnerky pro domácí násilí a znásilnění) — s vlastním odkazem na iROZHLAS jako zdroj informace o zamítnutí stížnosti.",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/policie-odlozila-proverovani-turka-v-kauze-nenavistnych-vyroku-pise-irozhlas-376032",
+  "published": "2026-07-28",
+  "retrieved": "2026-08-02",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-52"
+    }
+  ],
+  "subjects": [
+    "turek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Důležité upřesnění zdroje, čestně uvedené.** Vlastní titulek článku\n(„...píše iRozhlas\") i jeho text u obou kauz odkazují na reportáž\niROZHLASu jako na svůj zdroj. iROZHLAS sám k přímému automatizovanému\notevření vrací chybu 403 (blokace robotů) — tento dossier ho proto\nnecituje přímo, ale přes ČT24, které jeho zjištění přebírá a shrnuje.\n**Pro účely nezávislosti to počítáme jako jeden zdrojový řetězec, ne\ndva nezávislé zdroje** — CLM-52 je proto veden jako `1 ZDROJ`, ne\n`CORROBORATED`, dokud se nenajde druhá, skutečně nezávislá redakce,\nkterá totéž zjištění potvrdí vlastním šetřením.\n\n**Co dokládá, přesně pro trestní oznámení domácího násilí/znásilnění**\n(druhá, oddělená kauza v témže článku): státní zástupkyně Obvodního\nstátního zastupitelství pro Prahu 4 v rozhodnutí ze dne 27. 7. 2026\nzamítla stížnost bývalé partnerky Filipa Turka proti policejnímu\nodložení věci pro promlčení. Odložení věci je tím pravomocné.\n\n**Co to neznamená.** Toto je **výhradně procesní rozhodnutí o**\n**promlčení** — potvrzuje jen to, že uplynula zákonná promlčecí doba,\nne že by k jednání nedošlo, ani že by k němu došlo. Protože je věc nyní\npravomocně uzavřena právě z důvodu promlčení, **žádný orgán činný v\ntrestním řízení už nikdy věcně nerozhodne, zda k obviněnému jednání\ndošlo, nebo ne** — otázka pravdivosti původního obvinění tím zůstává\ntrvale, nikoli jen dočasně, nerozhodnutá. Dossier ji tak i nadále vede,\nviz [GAP-06](@/dossiers/macinka-turek/gaps/gap-06.md).\n\n**Druhá kauza v témže článku** (nenávistné výroky na sociálních sítích)\nse týká jiného tvrzení ([CLM-49](@/dossiers/macinka-turek/claims/clm-49.md))\na tento zdrojový záznam ji necituje jako svůj předmět."
+    }
+  ],
+  "order": 58
+}

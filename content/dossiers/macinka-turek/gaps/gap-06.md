@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
-title = "GAP-06 — Výsledek stížnosti proti odložení trestního oznámení"
-description = "O stížnosti proti procesnímu odložení trestního oznámení (znásilnění, domácí násilí) k datu poslední kontroly nebylo rozhodnuto."
+title = "GAP-06 — Otázka pravdivosti obvinění zůstává trvale nerozhodnutá"
+description = "Stížnost proti odložení trestního oznámení (znásilnění, domácí násilí) byla 27. 7. 2026 zamítnuta, odložení je pravomocné — ale právě proto věcnou pravdivost obvinění už žádný orgán nikdy neposoudí."
 template = "dossier-gap.html"
 weight = 6
 aliases = ["/dossier/mezery/gap-06/"]
@@ -31,14 +31,21 @@ V květnu 2026 policie trestní oznámení odložila z důvodu promlčení;
 oznámil to vedoucí Obvodního státního zastupitelství pro Prahu 4.
 **Toto rozhodnutí je čistě procesní** — vyplývá z uplynutí zákonné
 promlčecí doby, **ne z posouzení, zda k činům došlo, nebo ne.**
-Rozhodnutí není pravomocné: žena proti němu podala stížnost, o níž
-rozhoduje státní zástupkyně (CLM-27).
+Rozhodnutí tehdy nebylo pravomocné: žena proti němu podala stížnost, o
+níž rozhodovala státní zástupkyně (CLM-27).
 
-**Co zůstává otevřené**: samotný výsledek této stížnosti. Ověřeno znovu
-2026-07-29 (Echo24, ČeskéNoviny.cz, ČT24, iROZHLAS, Deník N, Česká
-justice — cílené dotazy na rozhodnutí o stížnosti i přehled aktuálního
-zpravodajství k Turkovi) — žádný inspekcí ověřitelný zdroj rozhodnutí o
-stížnosti k tomuto datu nezaznamenává. Otázka
-pravdivosti původního obvinění zůstává touto mezerou zcela otevřená a
-nerozhodnutá — dossier ji tak i nadále vede, bez ohledu na to, jak
-stížnost dopadne, dokud se k věci nevyjádří příslušný orgán.
+**Aktualizace 2026-08-02 — stížnost zamítnuta, odložení je pravomocné**
+(CLM-52, ČT24/iROZHLAS ze dne 27.–28. 7. 2026, single-sourced — viz
+nezávislostní poznámka u [SRC-58](@/dossiers/macinka-turek/sources/src-58.md)).
+Procesní otázka, kterou tato mezera sledovala, je tím uzavřená. **Co ale
+zůstává — a nově trvale, ne jen dočasně — otevřené**: samotná pravdivost
+původního obvinění. Protože je věc pravomocně uzavřena právě z důvodu
+promlčení, žádný orgán činný v trestním řízení už nikdy věcně
+nerozhodne, zda k obviněnému jednání došlo, nebo ne. To není nedostatek
+důkazů, který by mohl v budoucnu doplnit nový zdroj — je to strukturální
+důsledek promlčení, který se retrospektivně netýká jen tohoto rozhodnutí,
+ale platí zpětně pro celou kauzu od května 2026. Tato mezera se tedy od
+2026-08-02 nezavírá, ale mění povahu: z „čekáme na rozhodnutí" na trvalé
+připomenutí, že rozhodnutí o pravdivosti obvinění v tomto případě nikdy
+nepřijde. Dossier to i nadále vede tímto způsobem — bez naznačení viny
+nebo neviny v žádném směru.
