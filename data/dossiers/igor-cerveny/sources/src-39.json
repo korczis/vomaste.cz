@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-39",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-39",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "title": "SRC-39 — NašeTéma.cz",
+  "description": "Zásadní změny na ministerstvu životního prostředí! Červený a Turek mají plány, které budou stát miliony.",
+  "outlet": "NašeTéma.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://nasetema.cz/domaci/turek-kancelar-cerveny-renovace-mzp/26614/",
+  "published": "2026-05-27",
+  "retrieved": "2026-08-02",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-35"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "NašeTéma.cz (vlastní redakční text, autor Milan Polák), publikováno\n27. 5. 2026 — devět dní po datu, k němuž se vztahuje tvrzení Deníku N\n(18. 5. 2026) — nezávisle potvrzuje totéž jádro faktu: „Kancelář, v níž\nTurek nyní na resortu úřaduje, dříve užíval ministr Hladík,“ zatímco\n„ministr Igor Červený, který resort formálně vede, dostal náhradní\nprostory,“ jejichž úprava má stát statisíce korun.\n\n**Nezávislost.** Jiný vydavatel (NašeTéma.cz, vlastní zpravodajství, ne\npřevzatá zpráva) než Deník N (SRC-20/SRC-21) — nezávislé potvrzení, že\nTurek nadále úřaduje v ministerské pracovně i o více než týden později\nnež datum, k němuž se vztahuje původní tvrzení."
+    }
+  ],
+  "order": 39
+}

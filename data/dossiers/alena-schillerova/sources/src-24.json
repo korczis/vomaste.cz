@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-24",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-24",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "title": "SRC-24 — Poslanecká sněmovna Parlamentu ČR (oficiální profil)",
+  "description": "Oficiální profil poslankyně na webu Poslanecké sněmovny Parlamentu ČR: funkce a údaje, které stránka sama uvádí.",
+  "outlet": "Poslanecká sněmovna Parlamentu ČR",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://www.psp.cz/sqw/detail.sqw?id=6545",
+  "retrieved": "2026-08-02",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "schillerova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil na webu Poslanecké sněmovny Parlamentu ČR, otevřen\na přečten 2026-08-02. Uvádí: „ministryně financí od 15. 12. 2025“ a\n„místopředsedkyně od 15. 12. 2025“ — shodně s vládním profilem\n(SRC-01).\n\n**Nezávislost**: samostatný primární záznam jiné státní instituce\n(Poslanecká sněmovna, moc zákonodárná) než Úřad vlády ČR (SRC-01, moc\nvýkonná) — nezávislé potvrzení téhož úředního údaje, ne převzatá\nzpráva."
+    }
+  ],
+  "order": 24
+}

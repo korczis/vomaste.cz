@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-38",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-38",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "title": "SRC-38 — Seznam Zprávy",
+  "description": "Ministerstvo poslalo přestupkovému úřadu majetkové přiznání ministra Červeného.",
+  "outlet": "Seznam Zprávy",
+  "sourceType": "zpravodajství",
+  "url": "https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-ministerstvo-poslalo-prestupkovemu-uradu-majetkove-priznani-ministra-cerveneho-305649",
+  "published": "2026-05-06",
+  "retrieved": "2026-08-02",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-21"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Seznam Zprávy, publikováno 6. 5. 2026, nezávisle na FORUM 24 (SRC-13)\npotvrzuje totéž jádro faktu: „Zjištěné skutečnosti byly předány tomuto\nměstskému úřadu jakožto příslušnému přestupkovému orgánu dne\n22. 4. 2026,“ tedy shodné datum postoupení věci (22. 4. 2026) i shodné\ndatum zveřejnění (6. 5. 2026), tedy dvoutýdenní odstup mezi postoupením\na jeho medializací. Ministr se podle článku vyjádřil, že „to nechá\nprověřit“ a věc „půjde vysvětlit na úřad“.\n\n**Nezávislost.** Jiný vydavatel (Seznam Zprávy) než FORUM 24 —\nnezávislé potvrzení stejného data postoupení i data medializace, ne\njen převzatá zpráva."
+    }
+  ],
+  "order": 38
+}

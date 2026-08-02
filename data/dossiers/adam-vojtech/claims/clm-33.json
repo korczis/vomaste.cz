@@ -10,11 +10,14 @@
     "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
   },
   "text": "Premiér Andrej Babiš 18. února 2026 při otevření nového onkologického pavilonu ve FN Olomouc vyjádřil řediteli Romanu Havlíkovi plnou důvěru slovy „Samozřejmě že má (ředitel) důvěru“ a označil jej za „jednoho z nejlepších, kterého v České republice máme“; uvedl též, že personální změny ve vedení nemocnice nejsou na pořadu dne.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-20"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-35"
     }
   ],
   "subjects": [

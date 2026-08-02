@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-25",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-25",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "title": "SRC-25 — Ekonomický deník",
+  "description": "Babišova vláda mizí na prázdniny. Po návratu ji čeká rozpočet, veto prezidenta i boj o 101 hlasů.",
+  "outlet": "Ekonomický deník",
+  "sourceType": "zpravodajství",
+  "url": "https://ekonomickydenik.cz/babisova-vlada-mizi-na-prazdniny-rozpocet-veto-prezidenta/",
+  "published": "2026-08-01",
+  "retrieved": "2026-08-02",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-23"
+    }
+  ],
+  "subjects": [
+    "schillerova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Ekonomický deník, publikováno 1. 8. 2026, nezávisle na\nČeskéNoviny.cz/ČTK (SRC-09) potvrzuje totéž jádro faktu: „Protože však\nvláda chce přehlasovat prezidentské veto k novele rozpočtových zákonů,\nmimořádně zasednou už v úterý 25. srpna,“ „K tomu potřebují nejméně\n101 hlasů“ a „Vládní koalice má ve Sněmovně 108 poslanců.“\n\n**Nezávislost.** Jiný vydavatel (Ekonomický deník) než ČeskéNoviny.cz/\nČTK — nezávislé potvrzení stejného data hlasování i stejných čísel\n(101 potřebných, 108 koaličních), nikoli jen převzatá agenturní\nzpráva."
+    }
+  ],
+  "order": 25
+}

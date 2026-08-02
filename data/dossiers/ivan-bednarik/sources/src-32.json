@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-32",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-32",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "title": "SRC-32 — Zdopravy.cz",
+  "description": "Bednárik rezignoval na post šéfa ČD. Důvodem je i nejistota kolem peněz za pozemky.",
+  "outlet": "Zdopravy.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://zdopravy.cz/bednarik-rezignoval-na-post-sefa-cd-duvodem-je-i-nejistota-kolem-prevodu-pozemku-104643/",
+  "published": "2022-02-15",
+  "retrieved": "2026-08-02",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-40"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zdopravy.cz (autor Jan Šindelář), publikováno v den rezignace\n15. 2. 2022, cituje samotného Bednárika: „Celá ekonomika bude muset\nšetřit a úspory se výrazně dotknou i Českých drah,“ a dodává, že dráhy\npředložily dozorčí radě podnikatelský plán počítající s částkou\n**3,5 miliardy korun z pozemků**, „což zřejmě šetřící vláda\nnepřipustí“. Článek dále dokládá, že ČD v prosinci poslaly Správě\nželeznic k proplacení fakturu za nájem pozemků ve výši 3,2 miliardy\nkorun a že o prodeji pozemků obě státní firmy jednají.\n\n**Nezávislost.** Jiný vydavatel než ČT24 (SRC-13) — nezávisle\npotvrzuje jádro faktu (3,5 miliardy z pozemků nakonec ČD mít nebudou,\ncož byl faktor rezignace). Detail, že převod pozemků na Správu\nželeznic nebyl v době rezignace schválen/notifikován Evropskou komisí,\ntento článek neuvádí — tu konkrétní skutečnost dokládá jen SRC-13."
+    }
+  ],
+  "order": 32
+}

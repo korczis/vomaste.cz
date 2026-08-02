@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-27",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-27",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "title": "SRC-27 — Blesk.cz",
+  "description": "Pavel vetoval zákon o rozpočtech! Bojí se o budoucí generace i nezávislost institucí.",
+  "outlet": "Blesk.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://www.blesk.cz/clanek/zpravy-politika/844445/pavel-vetoval-zakon-o-rozpoctech-boji-se-o-budouci-generace-i-nezavislost-instituci.html",
+  "published": "2026-07-22",
+  "retrieved": "2026-08-02",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-19"
+    }
+  ],
+  "subjects": [
+    "schillerova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Blesk.cz, publikováno 22. 7. 2026, nezávisle na ČT24 (SRC-08)\npotvrzuje totéž jádro faktu: „Vláda by mohla překročit schválený\nrozpočet až o deset procent jen na základě rozhodnutí vlastního\nporadního orgánu, bez souhlasu parlamentu,“ a dodává, že ministryně\nSchillerová tento poradní orgán později upřesnila jako Bezpečnostní\nradu státu. Přepočet procentní hranice na konkrétní částku (zhruba\n240 miliard korun) tento článek neuvádí — to zůstává doloženo jen ČT24\n(SRC-08).\n\n**Nezávislost.** Jiný vydavatel (Blesk.cz) než Česká televize —\nnezávislé potvrzení téhož jádra prezidentovy veto argumentace, nikoli\njen převzatá zpráva."
+    }
+  ],
+  "order": 27
+}

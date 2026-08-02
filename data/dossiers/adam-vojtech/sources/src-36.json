@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-36",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-36",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "title": "SRC-36 — Ústecký deník (Deník.cz)",
+  "description": "VZP prověřuje stovky implantací defibrilátorů, policie řeší i ústeckou nemocnici.",
+  "outlet": "Ústecký deník (Deník.cz)",
+  "sourceType": "zpravodajství",
+  "url": "https://ustecky.denik.cz/zpravy_region/vzp-proveruje-stovky-implantaci-defibrilatoru-policie-resi-i-usteckou-nemocnici.html",
+  "published": "2026-05-14",
+  "retrieved": "2026-08-02",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-31"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-32"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Ústecký deník (síť Deník.cz/VLM), publikováno 14. 5. 2026, nezávisle\nna Zdravotnickém deníku (SRC-19) potvrzuje totéž jádro faktu: „VZP si\nv souvislosti s medializovanou kauzou týkající se FN Olomouc vyžádala\nzdravotnickou dokumentaci ke stovkám případů operací implantace\nkardioverteru, které byly u jejích klientů provedeny v letech 2023 až\n2025,“ cituje mluvčí VZP Viktorii Plívovou a uvádí, že „předběžné\nzávěry by měly být k dispozici v průběhu podzimu letošního roku.“\nDále nezávisle potvrzuje zásah policie v Masarykově nemocnici Ústí nad\nLabem, kterou „déle než rok vede Miloš Táborský, který do loňského\núnora řídil obdobné pracoviště v olomoucké fakultní nemocnici,“ s\nodkazem na mluvčí olomoucké policie Libora Hejtmana a mluvčí Krajské\nzdravotní Miloslavu Kučerovou.\n\n**Nezávislost.** Jiný vydavatel (Deník.cz/VLM) než Zdravotnický\ndeník — nezávislé potvrzení téhož jádra faktu (rozsah kontroly VZP,\nmluvčí, termín předběžných závěrů, zásah v Ústí nad Labem i propojení\nna profesora Táborského), nikoli jen převzatá zpráva."
+    }
+  ],
+  "order": 36
+}
