@@ -37,6 +37,15 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-22"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-25"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-27"
     }
   ],
   "subjects": [
