@@ -1,0 +1,111 @@
+{
+  "$comment": "Hash-kotva append-only autorizačního logu v AGENTS.md (## Content about real parties). Generuje VÝHRADNĚ interaktivní `npm run authorization:anchor` (TTY-only, lidské potvrzení). verify-authorization-log-append-only.mjs proti ní ověřuje byte-verní integritu každého záznamu; validate-authorization.mjs přes ni váže data/authorizations.toml na log. Needitovat ručně.",
+  "generatedAt": "2026-08-02",
+  "algorithm": "sha256(normalized entry block: LF line endings, trailing whitespace trimmed)",
+  "entries": [
+    {
+      "heading": "### Authorized subject: Petr Macinka and Filip Turek (on the record)",
+      "sha256": "a394aaa8f3472334ec20c4aabc8213a0662b2658da461a33b029978b5446e18b"
+    },
+    {
+      "heading": "### Scope extension, 2026-07-21: broader political profile",
+      "sha256": "8925d5c555a9e9fdb6eac6b74d3ee6f4a59af0ee3e398b2522666a420e9ad91d"
+    },
+    {
+      "heading": "### Scope extension, 2026-07-22: additional controversies",
+      "sha256": "e382cf398233008e7698fec909dce8e906b448084631c41efb76d7b754ad0ccc"
+    },
+    {
+      "heading": "### Structural change, 2026-07-29: entity dossiers plus a generated aggregate",
+      "sha256": "c79c391b460ba2b58fdf80c0b2fb21cfd872512afb097d1952ec9215eac1b482"
+    },
+    {
+      "heading": "### Structural change, 2026-07-29 (second): full physical decoupling of the entity dossiers",
+      "sha256": "756d66bfa203ccb4b27144e060a330837c690bdbf85f1c570c38828977071e28"
+    },
+    {
+      "heading": "### Rozšíření rozsahu, 2026-07-30: finanční a majetková vrstva",
+      "sha256": "a418a82aa4c5dce447bb49d47b87b24b27ded93f529cdfca5425091f701b122d"
+    },
+    {
+      "heading": "### Structural change, 2026-07-30: generated navigation tree, no person at top level",
+      "sha256": "1e80a0aba593e4ce4e38ba75bb7fb951f215e6d4a9c450ec462f6e9c3f5b62be"
+    },
+    {
+      "heading": "### Authorized subject: Oto Klempíř (on the record)",
+      "sha256": "dfad883a14ac346b8e26a3644f92a999b77c7d5bf62cae3adde685d1a7970f01"
+    },
+    {
+      "heading": "### Authorized subjects, 2026-07-30: five further members of the government (on the record)",
+      "sha256": "5a138e727e7a797290b10b8173571700c0db41a7e01b73eb8e6bb1dface43238"
+    },
+    {
+      "heading": "### Authorized subject: Andrej Babiš (on the record)",
+      "sha256": "601510d443d81e2a2fd013ee9b1b60848ed7575b6b63eabdd9e995c2a5ba32d4"
+    },
+    {
+      "heading": "### Authorized subject: Tomio Okamura (on the record)",
+      "sha256": "debef512dd87372bf8c1af60930be48676ddefb192e14a8d154b59008b9a7c46"
+    },
+    {
+      "heading": "### Scope extension, 2026-07-30: Andrej Babiš — full scope of the authorized topics",
+      "sha256": "12b7fd8213c040b77c14ea91199ff612e079a79d0b43ce0d99d1e8ff8c72c25b"
+    },
+    {
+      "heading": "### Authorized subject: Karel Havlíček (on the record)",
+      "sha256": "dce7d6f6cc66bd579563585db990b49b69eae1c9de06bdf848d2e4a5f99e3c85"
+    },
+    {
+      "heading": "### Authorized subject: Jaromír Zůna (on the record)",
+      "sha256": "6f480bfc940037675cb8440064de6b0b0ed85e7e910580158a840817d21ee09c"
+    },
+    {
+      "heading": "### Authorized subject: Jeroným Tejc (on the record)",
+      "sha256": "2a0f70e852cd328a2ac6ca80883e102547611cea2bb52258753cd45741cc6fef"
+    },
+    {
+      "heading": "### Authorized subject: Zuzana Mrázová (on the record)",
+      "sha256": "5d26834028b061f13943964368ca61ef8f7362998e9bd8f4cf2a37ff7e9eee0a"
+    },
+    {
+      "heading": "### Authorized subject: Adam Vojtěch (on the record)",
+      "sha256": "d8280188e3f537eaefc520deeb43251186a9a6748fbb0030775d8fcdc2999e56"
+    },
+    {
+      "heading": "### Authorized subject: Igor Červený (on the record)",
+      "sha256": "64d209f4955b122eda9d8e2c757761e3a733b5bc8111e0c4ed9942702bcf3ca7"
+    },
+    {
+      "heading": "### Authorized subject: Robert Plaga (on the record)",
+      "sha256": "a3d2e4462e0d29600da9433d8f600ae2d722dd49cd063826f076e811d3935795"
+    },
+    {
+      "heading": "### Authorized subject: Martin Šebestyán (on the record)",
+      "sha256": "66bb5ec552912cc45e5101ca9debb0846b6119aeb50f8a415ff789d801786221"
+    },
+    {
+      "heading": "### Authorized subject: Tünde Bartha (on the record)",
+      "sha256": "04b80ac467f3e31a8ea6c7976938f8b9d3ceab4728874cc9ef6391128e548f3c"
+    },
+    {
+      "heading": "### Authorized subject: Jaroslav Faltýnek (on the record)",
+      "sha256": "2f1ef27776e8e2c8b78b37368edf329385dc1520c9a848d7ad0db7c63f5aec43"
+    },
+    {
+      "heading": "### Authorized subject: Richard Chlad (on the record)",
+      "sha256": "764c79626afcb7f3693112c8a57724845b1dfaec22d82a86e37f0d586c9b1856"
+    },
+    {
+      "heading": "### Not authorized: Radovan Krejčíř (on the record)",
+      "sha256": "454d76d4dc8b796e2ab6ef0affdec7fef45f8112597476bc36abbab0b35160e4"
+    },
+    {
+      "heading": "### Authorized subject: Petr Pavel (on the record)",
+      "sha256": "e97c188b0f48af56726f24286a2bcf1908d5025dbd13f61d64bf940aa855a8d8"
+    },
+    {
+      "heading": "### Authorized subject: Petr Vencálek (on the record)",
+      "sha256": "495bd0a57a6dc2a8c9ca813b81b346b1a41e50c97d29d145b20890a1b4fda3b8"
+    }
+  ]
+}
