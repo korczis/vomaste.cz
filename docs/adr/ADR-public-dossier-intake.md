@@ -606,6 +606,36 @@ Prismatic není a nebude tvrdou závislostí.
   vyrenderovaného HTML.
 
   `npm run build` zelený (38/38); `git diff -- AGENTS.md data/authorizations.toml data/dossiers` prázdný.
+- 2026-08-02 — **První živý produkční běh workflow** (na výslovný pokyn vlastníka „otevři testovací issue
+  přes formulář"): GitHub labely z §14 bootstrapovány (`gh label create`, `docs/intake/github-labels.md`)
+  — při té příležitosti zjištěno a doplněno, že runbook nepokrýval i `navrh-rozsahu` (defaultní label
+  samotné šablony formuláře, ne workflow-state label). Testovací issue #1 (výhradně syntetický obsah —
+  „Jan Testovací", fiktivní obec Testov, stejná konvence jako `tests/fixtures/intake/`) odeslána přes
+  `gh issue create`. Workflow proběhl end-to-end poprvé na živém GitHubu: `intake:triage` +
+  `authorization:pending-owner` + `publication:blocked` + `intake:preflight-complete` nastaveny,
+  `navrh-rozsahu` zachován, komentář vytvořen, owner ping (`@korczis`) proveden — přesně jak
+  `run-publish-fixture.mjs`/testy predikovaly. `concurrency: cancel-in-progress` funkční v praxi:
+  `gh issue create --label` vyvolal dvě po sobě jdoucí `issues` události (`opened`, pak `labeled`),
+  starší běh byl automaticky zrušen.
+
+  **Skutečný produkční bug nalezený a opravený** (Fáze 4 kód, nikdy předtím netestovaný proti reálné
+  veřejné doméně): technická kontrola zdrojové URL (`https://example.com/...`) selhala s
+  `ERR_INVALID_IP_ADDRESS` namísto očekávaného výsledku. Příčina: `request-once.mjs`'s pinned `lookup`
+  callback vždy používal třífaktorový tvar `callback(err, address, family)` — ale Node.js `http`/`https`
+  klient volá `lookup` s `options.all: true` (Happy Eyeballs dual-stack výběr, výchozí chování současného
+  Node), kde se očekává tvar `callback(err, addresses)` s POLEM `{address, family}` objektů. Všech 167+
+  testů Fáze 4 běželo výhradně proti `127.0.0.1` literálům přes mock server — literál nikdy nevyvolá
+  Node's dual-stack výběr, takže chyba byla v testech neviditelná; projevila se až proti reálné doméně
+  s A i AAAA záznamem (`example.com`) na skutečném GitHub Actions runneru. Opraveno: `lookup` nyní čte
+  `options.all` a vrací správný tvar pro oba případy; extrahováno do exportované `createPinnedLookup()`
+  právě proto, aby šlo obě volací konvence testovat přímo, bez závislosti na tom, kdy se Node interně
+  rozhodne kterou použít. 3 nové regresní testy (`request-once.test.mjs`) — dva na přímé volání obou
+  tvarů, jeden end-to-end přes reálný mock server s vynuceným `all: true`. `npm run test:intake:preflight`
+  170/170, `npm test` 773/773, `npm run build` zelený.
+
+  Toto je přesně důvod, proč `docs/intake/operations.md` doporučuje reálný test po nasazení — statické
+  testy proti mock serveru, jakkoli rozsáhlé, nemohou nahradit alespoň jeden běh proti skutečné veřejné
+  doméně. Nález a oprava zdokumentovány zde místo tichého patche.
 
 ---
 
