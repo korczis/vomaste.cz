@@ -64,10 +64,11 @@ test("no module calls a redirect-following fetch/http client in \"unrestricted\"
   assert.deepEqual(offenders, []);
 });
 
-test("no module under scripts/intake/ calls bare fetch(url) outside the approved transport (request-once.mjs doesn't use fetch at all — it uses node:http(s) directly for pinning)", () => {
+test("no module under scripts/intake/ calls bare fetch(url) outside the approved transports (request-once.mjs doesn't use fetch at all — it uses node:http(s) directly for pinning; github/production-adapter.mjs is Phase 6's one designated GitHub REST client, see network-guard.test.mjs)", () => {
+  const FETCH_ALLOWED = new Set([join(INTAKE_DIR, "github", "production-adapter.mjs")]);
   const offenders = [];
   for (const file of listSourceFiles(INTAKE_DIR)) {
-    if (file.startsWith(TESTING_DIR)) continue;
+    if (file.startsWith(TESTING_DIR) || FETCH_ALLOWED.has(file)) continue;
     const content = readFileSync(file, "utf8");
     if (/\bfetch\s*\(/.test(content)) offenders.push(relative(INTAKE_DIR, file));
   }

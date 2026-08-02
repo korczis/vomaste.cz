@@ -1,0 +1,108 @@
+name: Public dossier intake
+
+# PHASE_006.md — a narrow, predictable automaton: public input -> bounded
+# local pre-processing -> safe report -> state labels -> human decision.
+# Nothing more. This workflow never authorizes, never publishes, never
+# writes to repository content, and never runs a deploy.
+on:
+  issues:
+    types: [opened, edited, reopened, labeled, unlabeled, closed]
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: dossier-intake-${{ github.repository }}-${{ github.event.issue.number }}
+  cancel-in-progress: true
+
+jobs:
+  intake:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Setup Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Verify checkout is clean before processing
+        run: test -z "$(git status --porcelain)"
+
+      # No GITHUB_TOKEN in this step's environment (privilege separation,
+      # PHASE_006.md §20/§21) — this step can process a hostile issue
+      # body with zero ability to reach the GitHub API. GitHub context
+      # values below (repository, issue number, run id/attempt) are
+      # runner-controlled metadata, never raw issue content — the actual
+      # issue body/title are read only from $GITHUB_EVENT_PATH inside the
+      # Node script, never interpolated into this shell command.
+      - name: Process intake event
+        id: process
+        run: |
+          node scripts/intake/process-github-event.mjs \
+            --event "$GITHUB_EVENT_PATH" \
+            --output-dir "$RUNNER_TEMP/vomaste-intake" \
+            --repository-commit "$GITHUB_SHA" \
+            --delivery-id "${{ github.run_id }}-${{ github.run_attempt }}" \
+            --expected-repository "${{ github.repository }}" \
+            --preflight
+
+      # `if: always()` from here on: process-github-event.mjs always
+      # writes _status.json before it can ever exit non-zero (PHASE_006.md
+      # §15.3), including for a genuine internal error — so the publishing
+      # step below must still run in that case too, to post the safe
+      # "processing failed internally" comment rather than leaving the
+      # issue with no response at all. The job's overall run still shows
+      # as failed (a step failing marks the job failed regardless of
+      # `if: always()` on later steps) — a maintainer sees the red run AND
+      # the submitter sees an honest comment.
+      - name: Ensure the processor made no repository writes
+        if: always()
+        run: test -z "$(git status --porcelain)"
+
+      - name: Validate artifact safety before upload
+        id: safety
+        if: always()
+        run: node scripts/intake/validate-artifact-safety.mjs "$RUNNER_TEMP/vomaste-intake"
+
+      # Gated specifically on the safety-validation step's own outcome
+      # (PHASE_006.md §9.2 — always() is only safe to combine with an
+      # explicit confirmation that the content contains no raw sensitive
+      # input) — never uploaded merely because earlier steps ran.
+      - name: Upload workflow artifact
+        if: always() && steps.safety.outcome == 'success'
+        uses: actions/upload-artifact@v4
+        with:
+          name: dossier-intake-issue-${{ github.event.issue.number }}-run-${{ github.run_id }}
+          path: ${{ runner.temp }}/vomaste-intake
+          retention-days: 14
+
+      # Only this step ever has GITHUB_TOKEN — it reads exclusively the
+      # already-sanitized status/manifest files the processing step wrote
+      # to disk, never the raw event payload again. Runs even after an
+      # earlier failure so an internal-error outcome still gets a comment
+      # (see the `always()` note above) — but not if the event payload
+      # itself couldn't be read at all (no _status.json to publish from,
+      # the script fails fast and honestly in that case).
+      - name: Publish result (comment, labels, owner notification)
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          node scripts/intake/publish-github-result.mjs \
+            --status-dir "$RUNNER_TEMP/vomaste-intake" \
+            --owner "${{ github.repository_owner }}" \
+            --repo "${{ github.event.repository.name }}" \
+            --issue-number "${{ github.event.issue.number }}" \
+            --action "${{ github.event.action }}" \
+            --run-url "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
+            --artifact-name "dossier-intake-issue-${{ github.event.issue.number }}-run-${{ github.run_id }}"

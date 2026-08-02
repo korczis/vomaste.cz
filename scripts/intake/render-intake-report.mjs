@@ -18,6 +18,15 @@ const INTAKE_STATUS_LABELS = Object.freeze({
   security_review_required: "vyžaduje bezpečnostní revizi",
 });
 
+// PHASE_006.md §11.5 — one honest sentence about what happens next, per
+// status. Never a promise about timing or outcome.
+const NEXT_STEP_TEXT = Object.freeze({
+  triage: "Podnět čeká na ruční posouzení vlastníkem projektu.",
+  needs_information: "Podnět potřebuje doplnit veřejné zdroje nebo přesnější vymezení.",
+  possible_duplicate: "Podnět může souviset s existujícím záznamem. Automat nic neslučuje ani nezavírá.",
+  security_review_required: "Automatické zpracování bylo omezeno. Podnět vyžaduje ruční bezpečnostní kontrolu.",
+});
+
 const CONFIDENCE_LABELS = Object.freeze({
   very_high: "velmi vysoká",
   high: "vysoká",
@@ -200,6 +209,7 @@ export function renderIntakeReport(manifest) {
 
 > Tento report není autorizace, redakční závěr ani publikovaný dossier. Tento report není potvrzením správnosti podnětu. Přijaté URL nebyly automaticky uznány jako nezávislé ani důvěryhodné zdroje. Rozsah nebyl autorizován. Publikace zůstává blokována.
 
+${NEXT_STEP_TEXT[workflow.intake_status] ? `**Co bude dál:** ${NEXT_STEP_TEXT[workflow.intake_status]}\n` : ""}
 ## Přijatý podnět
 
 - Typ: ${SUBMISSION_TYPE_LABELS[submission.submission_type] ?? submission.submission_type}
