@@ -14,7 +14,7 @@ data/dossiers/<slug>/{claims,sources,      data/dossiers/_shared/vocabularies/*.
   cases,gaps,relations,updates}/*.json     data/dossiers/_shared/context/vomaste-v1.jsonld
         │                                        │
         ▼                                        ▼
-  npm run data:validate  (tvar → reference R1–R7 → sémantika S1–S8 →
+  npm run data:validate  (tvar → reference R1–R7 → sémantika S1–S9 →
                           parita tabulky T1–T8 → JSON-LD expanze)
         │
         ▼
@@ -150,7 +150,7 @@ Tři místa, jinak je změna nedokončená:
 |---|---|---|
 | Tvar (typy, povinnost, formáty `@id`/ISO, uzavřené enumy) | `schemas/canonical/` + `scripts/data/validate-shape.mjs` (AJV 2020-12, strict) | `CLM-\d+`, `retrieved` ISO datum, claim mimo opinion ≥ 1 zdroj |
 | Referenční integrita R1–R7 | `scripts/data/validate-references.mjs` | unikátní `@id`, cesta ↔ `@id`, same-dossier reference, graf (uzly = existující entity, edges 1:1 s relations) |
-| Redakční sémantika S1–S8 | `scripts/data/validate-semantics.mjs` | S1 single = 1 zdroj; S2 corroborated ≥ 2 rodiny; S5/S6 autorizace; S7 subjektové uzly; S8 souvislost grafu (BFS) |
+| Redakční sémantika S1–S9 | `scripts/data/validate-semantics.mjs` | S1 single = 1 zdroj; S2 corroborated ≥ 2 rodiny; S5/S6 autorizace; S7 subjektové uzly; S8 souvislost grafu (BFS); S9 provenance refs entit rozlišitelné v jejich dossierech |
 | Parita tabulky tvrzení T1–T8 | `scripts/data/validate-registry-table.mjs` | řádka ↔ kanonický claim byte-verně, kotvy, URL dedup, T7 poznámka zdroje |
 | JSON-LD expanze | `scripts/data/validate-jsonld.mjs` | lokální context, safe mode, expandovatelnost každého záznamu |
 | Generovaný content | `lint:generated-content` + `data:check-generated:content` | adaptér = minimální obálka; content == staging |

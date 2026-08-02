@@ -35,6 +35,11 @@
 //   S8  souvislost grafu (dřívější validate-graph.mjs): každý uzel má
 //       cestu k subjektovému uzlu — BFS hloubka
 //       (scripts/data/lib/graph-depth.mjs) nesmí být null
+//   S9  provenance refs entit se rozliší: každé CLM-##/SRC-## v
+//       provenance.claimRefs/sourceRefs sdílené entity musí existovat
+//       aspoň v jednom dossieru z jejího pole `dossiers` (composite-key
+//       sémantika dle entity.schema.json) — jinak jde o zamrzlý odkaz
+//       po smazání/sloučení zdroje nebo o chybný zápis při extrakci
 //
 // Baseline (T-028 fáze D, grandfathered debt): porušení zděděná 1:1
 // z migrovaného obsahu se NEopravují změnou dat ani změkčením pravidel —
@@ -263,6 +268,34 @@ export function collectSemanticsFindings(model, options = {}) {
       for (const [id, depth] of depths) {
         if (depth === null) {
           found("S8", wrapper, `${relPath}: graph uzel "${id}" nemá cestu k žádnému subjektovému uzlu — osiřelý od subjektů dossieru`);
+        }
+      }
+    }
+  }
+
+  // --- S9: provenance refs entit se rozliší v jejich dossierech ----------
+  {
+    const idsByDossier = new Map();
+    for (const w of model.records) {
+      if (w.registry !== "claims" && w.registry !== "sources") continue;
+      if (!idsByDossier.has(w.dossier)) idsByDossier.set(w.dossier, new Set());
+      idsByDossier.get(w.dossier).add(w.record.identifier);
+    }
+    for (const wrapper of model.entities) {
+      const { record, relPath } = wrapper;
+      const prov = record.provenance;
+      if (!prov) continue;
+      const dossiers = Array.isArray(record.dossiers) ? record.dossiers : [];
+      for (const key of ["claimRefs", "sourceRefs"]) {
+        for (const rid of prov[key] ?? []) {
+          const ok = dossiers.some((d) => idsByDossier.get(d)?.has(rid));
+          if (!ok) {
+            found(
+              "S9",
+              wrapper,
+              `${relPath}: provenance.${key} "${rid}" neexistuje v žádném dossieru entity (${dossiers.join(", ") || "žádný dossier"}) — zamrzlý odkaz po smazání/sloučení zdroje, nebo chybný zápis při extrakci`,
+            );
+          }
         }
       }
     }
