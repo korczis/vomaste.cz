@@ -43,7 +43,7 @@ scripts/intake/
   process-issue.mjs              — CLI orchestrator: arg parsing, pipeline, atomic output writer, exit codes
   run-fixture.mjs                — npm run intake:fixture smoke test
   lib/schema-validators.mjs      — shared Ajv2020 setup for both intake schemas
-  *.test.mjs (12 files, 121 tests)
+  *.test.mjs (11 files, 121 tests)
 
 tests/fixtures/intake/           — 27 synthetic GitHub-issue-event fixtures
 docs/intake/
