@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-23",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-23",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "title": "SRC-23 — ČT24 (Česká televize)",
+  "description": "Senátoři upravili novelu o veřejných rozpočtech, vrací se do sněmovny — snížení limitu pro strategické infrastrukturní výdaje na 1 % HDP a podmínění nadlimitních výdajů souhlasem sněmovních výborů.",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/snemovna-pokracuje-v-jednani-o-navratu-eet-375311",
+  "published": "2026-07-08",
+  "retrieved": "2026-08-02",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-13"
+    }
+  ],
+  "subjects": [
+    "schillerova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "ČT24 nezávisle na ČeskéNoviny.cz/ČTK (SRC-05) potvrzuje totéž jádro\nsenátních úprav: „Senátní úpravy patří snížení limitu pro výdaje na\nstrategické infrastrukturní stavby na jedno procento HDP\" a „Pokud by\nvláda kvůli zhoršené bezpečnostní situaci či na dopravní infrastrukturu\nchtěla mít nadlimitní výdaje, musela by získat souhlas sněmovních\nvýborů.\" Článek referuje senátní úpravy v kontextu následného\nsněmovního hlasování v červenci 2026, přesné datum 17. 6. 2026\nneuvádí — to dokládá jen SRC-05.\n\n**Nezávislost.** Jiný vydavatel než ČeskéNoviny.cz/ČTK — Česká televize\nje veřejnoprávní provozovatel s vlastní redakcí. U CLM-13 se proto\npočítají jako dvě nezávislá potvrzení jádra faktu (limit 1 % HDP,\npodmínka souhlasu výboru); přesné datum senátního hlasování zůstává\ndoloženo jen SRC-05."
+    }
+  ],
+  "order": 23
+}
