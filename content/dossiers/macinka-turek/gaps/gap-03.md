@@ -84,3 +84,13 @@ citovaný orgán se k forenzní stránce věci nevyjadřoval, jen k tomu, zda
 by popsané jednání (pokud k němu došlo) naplňovalo znaky trestného
 činu. Mezera proto zůstává otevřená stejným způsobem jako dosud, jen
 s přesnějším popisem toho, co bylo řečeno a co ne.
+
+**Aktualizace 2026-08-02**: Vojtěch Dobeš pro Deník N (30. 7. 2026)
+poprvé podrobněji popsal, co policii kromě screenshotů předal — i URL
+adresy a metadata ([CLM-55](@/dossiers/macinka-turek/claims/clm-55.md))
+— a odložení věci hodnotí jako potvrzení pro sebe, ne pro Turka. Jde
+výslovně o **jeho vlastní hodnocení** procesního odložení, ne o nový
+nezávislý forenzní nález ani o vyjádření orgánu činného v trestním
+řízení k pravosti materiálů — ten se k tomu, jak je výše popsáno,
+závazně nevyjádřil. Mezera (nezávislé forenzní ověření pravosti a
+autorství, CLM-09) tak zůstává otevřená beze změny věcného závěru.

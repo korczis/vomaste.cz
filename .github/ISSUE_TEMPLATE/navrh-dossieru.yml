@@ -6,6 +6,10 @@ body:
   - type: markdown
     attributes:
       value: |
+        > ⚠️ **Tato issue bude veřejná a dlouhodobě dohledatelná.** Neposílejte neveřejné dokumenty, identitu oznamovatele, osobní kontaktní údaje ani citlivý materiál. Projekt nemá důvěrný intake kanál a smazání z GitHubu obsah spolehlivě neodstraní. **Podáním nevzniká dossier ani autorizace** — o rozsahu rozhoduje výhradně vlastník záznamem v autorizačním logu.
+  - type: markdown
+    attributes:
+      value: |
         Rozsah pokrytí reálných osob určuje výhradně [append-only autorizační log v AGENTS.md](https://github.com/korczis/vomaste.cz/blob/master/AGENTS.md). „Je to zajímavé" ani „už to někde vyšlo" nestačí — návrh musí projít testem veřejného zájmu ([konstituce, § 7](https://github.com/korczis/vomaste.cz/blob/master/docs/constitution/OPEN_INTELLIGENCE_COMMONS.md)).
   - type: input
     id: scope
@@ -25,6 +29,13 @@ body:
     id: sources
     attributes:
       label: Výchozí zdroje
-      description: Jmenované, datované, nezávislé veřejné zdroje s URL.
+      description: Jmenované, datované, nezávislé veřejné zdroje s URL. Pouze již publikované veřejné zdroje — žádné neveřejné dokumenty ani interní materiál.
     validations:
       required: true
+  - type: checkboxes
+    id: verejnost
+    attributes:
+      label: Potvrzení veřejnosti podání
+      options:
+        - label: Beru na vědomí, že tato issue je veřejná a trvalá; neposílám neveřejné dokumenty, identitu oznamovatele, osobní kontaktní údaje ani citlivý materiál a rozumím, že podáním nevzniká dossier ani autorizace.
+          required: true

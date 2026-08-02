@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-33",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-33",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "title": "SRC-33 — Poslanecká sněmovna Parlamentu ČR (oficiální profil)",
+  "description": "Primární úřední profil poslance na webu Poslanecké sněmovny, nezávislý na profilu na webu Úřadu vlády (SRC-01): potvrzuje funkci ministra školství, mládeže a tělovýchovy od 15. 12. 2025.",
+  "outlet": "Poslanecká sněmovna Parlamentu ČR",
+  "sourceType": "primární úřední záznam",
+  "url": "https://www.psp.cz/sqw/detail.sqw?id=6549",
+  "retrieved": "2026-08-02",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "plaga"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil na webu Poslanecké sněmovny Parlamentu ČR, otevřen\na přečten 2026-08-02. Uvádí: **ministr školství, mládeže a tělovýchovy\nod 15. 12. 2025**; poslanec od 4. 10. 2025 za Středočeský kraj, zvolen\nna kandidátní listině ANO 2011.\n\n**Nezávislost**: samostatný primární záznam jiné státní instituce\n(Poslanecká sněmovna, moc zákonodárná) než SRC-01 (Úřad vlády, moc\nvýkonná) — obě instituce nezávisle na sobě vedou a zveřejňují vlastní\nevidenci téhož veřejného faktu, totiž že Plaga od 15. 12. 2025 zastává\nfunkci ministra školství, mládeže a tělovýchovy. Proto CLM-01 nese stav\n`CORROBORATED`.\n\n**Poznámka k typu zdroje a jeho limitům**: jde o další **primární\núřední záznam**, ne o nezávislé redakční šetření — dokládá formulaci\núředního údaje, nikoli investigativní ověření. Sebeprezentační části\nprofilu (dosavadní kariéra) dossier jako fakt nepřebírá."
+    }
+  ],
+  "order": 33
+}

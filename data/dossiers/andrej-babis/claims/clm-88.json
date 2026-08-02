@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-88",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-88",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "Vrchní soud v Praze podle ČeskéNoviny.cz (ČTK) projedná odvolání Jany Nagyové proti nepravomocnému květnovému rozsudku (tříletá podmínka a peněžitý trest 500 000 Kč) ve dnech 31. srpna a 1. září 2026; státní zástupce se neodvolal, takže soud nemůže uložit přísnější trest. Babišovo trestní řízení zůstává přerušené, protože ho Sněmovna v březnu 2026 ke stíhání nevydala",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-64"
+    }
+  ],
+  "subjects": [],
+  "order": 88,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

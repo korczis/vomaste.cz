@@ -31,6 +31,12 @@ import { readFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { getCompiledModel } from "./lib/compiled-model.mjs";
+import {
+  AGENTS_FILE,
+  extractLogEntries,
+  loadAnchor,
+  crossCheckTomlRecords,
+} from "./lib/authorization-log.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const AUTHORIZATIONS_TOML = join(ROOT, "data/authorizations.toml");
@@ -66,6 +72,28 @@ while ((m = authRe.exec(authText))) {
   });
 }
 if (authorizations.size === 0) err("data/authorizations.toml: no [[authorizations]] entries found.");
+
+// --- cross-check TOML ↔ append-only log v AGENTS.md (audit T-042, nález B-3) ---
+// Dřív tento skript transkripci v TOML jen VĚŘIL (viz hlavička) — ručně
+// přidaný [[authorizations]] blok bez prozaického záznamu v logu prošel
+// celým buildem. Teď musí každý TOML záznam přes své existující pole
+// agents_md_section odpovídat záznamu logu, který je navíc UKOTVEN
+// v data/authorizations-log-anchor.json (kotvu generuje výhradně
+// interaktivní `npm run authorization:anchor`). Vlastník pravidla je
+// tento skript; parsování logu a kotvy vlastní lib/authorization-log.mjs.
+{
+  const agentsText = readFileSync(join(ROOT, AGENTS_FILE), "utf8");
+  const { entries: logEntries, problems: logProblems } = extractLogEntries(agentsText);
+  for (const p of logProblems) err(`${AGENTS_FILE}: ${p}`);
+  let anchor = null;
+  try {
+    anchor = loadAnchor(ROOT);
+  } catch (e) {
+    err(`authorization-log anchor: ${e.message}`);
+  }
+  const records = [...authorizations].map(([id, a]) => ({ id, agentsMdSection: a.agentsMdSection }));
+  for (const e of crossCheckTomlRecords(records, logEntries, anchor)) err(e);
+}
 
 // --- every global entity (canonical) ---
 const compiled = getCompiledModel(ROOT);

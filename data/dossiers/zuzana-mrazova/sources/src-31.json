@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-31",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-31",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "title": "SRC-31 — Poslanecká sněmovna Parlamentu ČR (oficiální profil)",
+  "description": "Primární úřední profil poslankyně na webu Poslanecké sněmovny, nezávislý na profilu na webu Úřadu vlády (SRC-01): potvrzuje funkci ministryně pro místní rozvoj od 15. 12. 2025.",
+  "outlet": "Poslanecká sněmovna Parlamentu ČR",
+  "sourceType": "primární úřední záznam",
+  "url": "https://www.psp.cz/sqw/detail.sqw?id=7040",
+  "retrieved": "2026-08-02",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "mrazova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil poslankyně na webu Poslanecké sněmovny Parlamentu ČR,\notevřen a přečten 2026-08-02. Uvádí: **ministryně pro místní rozvoj od\n15. 12. 2025**; poslankyně od 4. 10. 2025; členka poslaneckého klubu\nANO 2011.\n\n**Nezávislost**: samostatný primární záznam jiné státní instituce\n(Poslanecká sněmovna, moc zákonodárná) než SRC-01 (Úřad vlády, moc\nvýkonná) — obě instituce nezávisle na sobě vedou a zveřejňují vlastní\nevidenci téhož veřejného faktu, totiž že Mrázová od 15. 12. 2025 zastává\nfunkci ministryně pro místní rozvoj. Proto CLM-01 nese stav\n`CORROBORATED`.\n\n**Poznámka k typu zdroje a jeho limitům**: jde o další **primární\núřední záznam**, ne o nezávislé redakční šetření. Sebeprezentační\nčásti profilu (dosavadní kariéra) dossier jako fakt nepřebírá."
+    }
+  ],
+  "order": 31
+}

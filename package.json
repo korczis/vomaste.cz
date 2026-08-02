@@ -21,6 +21,7 @@
     "data:build": "npm run data:validate && npm run data:compile && npm run data:views && npm run data:generate-content && npm run data:sync-content && npm run data:check-generated:content",
     "validate:authorization": "node scripts/dossier/validate-authorization.mjs",
     "verify:authorization-log": "node scripts/dossier/verify-authorization-log-append-only.mjs",
+    "authorization:anchor": "node scripts/dossier/anchor-authorization-log.mjs",
     "validate:dossier-types": "node scripts/dossier/validate-dossier-types.mjs",
     "build:navigation": "node scripts/dossier/build-navigation.mjs",
     "build:secondary-providers": "node scripts/dossier/build-secondary-providers.mjs",
