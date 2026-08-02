@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/relations/edge-kupka-schillerova",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-kupka-schillerova",
+  "relationId": "edge-kupka-schillerova",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/martin-kupka"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/schillerova"
+  },
+  "relationType": "RESPONDED_TO",
+  "label": "Kupka (ODS) označil novelu za „ústavní převrat na splátky“ a po vetu varoval před oslabením Sněmovny",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-39"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-08"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 9,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-048 (provázání grafu, třetí dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

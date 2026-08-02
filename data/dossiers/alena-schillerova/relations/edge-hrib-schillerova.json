@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/relations/edge-hrib-schillerova",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-hrib-schillerova",
+  "relationId": "edge-hrib-schillerova",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/zdenek-hrib"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/schillerova"
+  },
+  "relationType": "RESPONDED_TO",
+  "label": "Hřib (Piráti) po vetu mluvil o zaraženém vládním účetním podvodu",
+  "status": "single",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-39"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-08"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 11,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-048 (provázání grafu, třetí dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/relations/edge-cvf-novela",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-cvf-novela",
+  "relationId": "edge-cvf-novela",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/centrum-verejnych-financi"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/novela-rozpoctovych-pravidel-2026"
+  },
+  "relationType": "ASSOCIATED_WITH_EVENT",
+  "label": "Centrum veřejných financí UK označilo konkrétní pozměňovací návrhy novely za problematické",
+  "status": "single",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-12"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-19"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 15,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-048 (provázání grafu, třetí dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}
