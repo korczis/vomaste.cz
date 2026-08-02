@@ -10,11 +10,14 @@
     "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
   },
   "text": "Jaromír Zůna zastává podle oficiálního profilu na webu Úřadu vlády funkci místopředsedy vlády a ministra obrany",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-34"
     }
   ],
   "subjects": [

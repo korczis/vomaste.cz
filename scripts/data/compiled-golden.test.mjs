@@ -16,7 +16,7 @@ import { compileDataset } from "./compile.mjs";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const compiled = compileDataset(loadCanonicalTree(join(ROOT, "data/dossiers")));
 
-test("golden: počty záznamů per typ (snapshot 2026-08-02: 414 kontextových entit + graf 31 relací + T-039/T-040/T-041 dávky + macinka-turek GAP-06 SRC-58; chlad CLM-07 na 1 ZDROJ mimo scope; alena-schillerova CLM-13 SRC-23; boris-stastny CLM-01 SRC-19; T-041 dávka 3 juchelka/havlicek/klempir/sebestyan CLM-01 +4 psp.cz zdroje; macinka-turek GAP-05 UDHPSH pokuta CLM-53/54 SRC-59/60)", () => {
+test("golden: počty záznamů per typ (snapshot 2026-08-02: 414 kontextových entit + graf 31 relací + T-039/T-040/T-041 dávky + macinka-turek GAP-06 SRC-58; chlad CLM-07 na 1 ZDROJ mimo scope; alena-schillerova CLM-13 SRC-23; boris-stastny CLM-01 SRC-19; T-041 dávka 3 juchelka/havlicek/klempir/sebestyan CLM-01 +4 psp.cz zdroje; macinka-turek GAP-05 UDHPSH pokuta CLM-53/54 SRC-59/60; T-042 dávka 4 ivan-bednarik CLM-18 +1 zdroj, robert-plaga/jeronym-tejc/jaromir-zuna CLM-01 +3 psp.cz zdroje)", () => {
   assert.deepEqual(compiled.counts.perType, {
     case: 88,
     claim: 862,
@@ -24,7 +24,7 @@ test("golden: počty záznamů per typ (snapshot 2026-08-02: 414 kontextových e
     entity: 503,
     gap: 188,
     relation: 142,
-    source: 551,
+    source: 555,
     update: 47,
   });
   assert.equal(compiled.counts.dossiers, 24);

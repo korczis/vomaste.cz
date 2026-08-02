@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-30",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-30",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "title": "SRC-30 — Ekonomický deník: reforma Správy železnic, 335,6 mil. Kč úspor (24. 2. 2026)",
+  "description": "Ekonomický deník nezávisle na tiskové zprávě Ministerstva dopravy (SRC-14) potvrzuje vyčíslené roční úspory, centralizaci provozních jednotek pod dispečerská pracoviště v Praze a Přerově a zrušení 121 pracovních míst.",
+  "outlet": "Ekonomický deník",
+  "sourceType": "zpravodajství",
+  "url": "https://ekonomickydenik.cz/nove-zeleznice-zlevnit-propoustet/",
+  "published": "2026-02-24",
+  "retrieved": "2026-08-02",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-18"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Ekonomický deník (autorka Tereza Čapková), 24. 2. 2026: „Chystané\nkroky mají Správě železnic ročně ušetřit 335,6 milionu korun.\"\nDále: „Dosavadních 21 provozních obvodů v rámci oblastních ředitelství\nse zároveň nově integruje pod centrální dispečerská pracoviště v Praze\na Přerově\" a „Správa železnic zruší také 121 pracovních míst, podle\norganizace ale nezasáhne do pozic, které zajišťují provoz.\"\n\n**Nezávislost**: samostatná redakce od Ministerstva dopravy ČR\n(SRC-14, primární tisková zpráva resortu) — Ekonomický deník ověřuje\ntytéž číselné údaje redakčně, nikoli přebráním tiskové zprávy beze\nzměny. Proto CLM-18 nese stav `CORROBORATED`.\n\n**Limity**: článek popisuje totéž oznámení reformy, ne nezávisle\nzjištěné dopady po jejím zavedení — jde o dobovou zprávu ze dne\noznámení, ne o následné hodnocení výsledků."
+    }
+  ],
+  "order": 30
+}
