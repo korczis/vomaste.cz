@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/relations/edge-tejc-dragoun",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-tejc-dragoun",
+  "relationId": "edge-tejc-dragoun",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/tejc"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/radim-dragoun"
+  },
+  "relationType": "ASSOCIATED_WITH_EVENT",
+  "label": "Dragoun jako dozorující státní zástupce VSZ Olomouc v bitcoinové kauze, kam bylo doručeno Tejcovo trestní oznámení",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-21"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-12"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 16,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-049 (provázání grafu, čtvrtá dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}
