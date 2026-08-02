@@ -10,11 +10,14 @@
     "@id": "https://vomaste.cz/id/dossiers/boris-stastny"
   },
   "text": "Boris Šťastný zastává podle oficiálního profilu na webu Úřadu vlády funkci ministra pro sport, prevenci a zdraví",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-19"
     }
   ],
   "subjects": [
