@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/relations/edge-mrazova-lexmrazova",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-mrazova-lexmrazova",
+  "relationId": "edge-mrazova-lexmrazova",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/mrazova"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/lex-mrazova"
+  },
+  "relationType": "ASSOCIATED_WITH_EVENT",
+  "label": "kauza obecního bytu vedla k návrhu tzv. lex Mrázová",
+  "status": "single",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-54"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-24"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 6,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-045 (provázání grafu, druhá dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

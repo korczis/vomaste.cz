@@ -28,7 +28,8 @@
     "zuzana-mrazova",
     "adam-vojtech",
     "robert-plaga",
-    "martin-sebestyan"
+    "martin-sebestyan",
+    "lubomir-metnar"
   ],
   "routeAliases": [
     "/dossiers/andrej-babis/entities/babis/"
@@ -53,7 +54,10 @@
       "edge-vojtech-babis",
       "edge-babis-fn-olomouc",
       "edge-babis-plaga",
-      "edge-sebestyan-babis"
+      "edge-sebestyan-babis",
+      "edge-babis-miloslavkala",
+      "edge-babis-vrchnisoudpraha",
+      "edge-babis-jananagyova"
     ],
     "claimRefs": [
       "CLM-12",

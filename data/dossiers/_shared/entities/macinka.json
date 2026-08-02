@@ -16,7 +16,8 @@
   "dossiers": [
     "macinka-turek",
     "petr-macinka",
-    "richard-chlad"
+    "richard-chlad",
+    "petr-vencalek"
   ],
   "routeAliases": [
     "/dossiers/macinka-turek/entities/macinka/"
@@ -32,7 +33,8 @@
       "edge-macinka-gmrgas",
       "edge-macinka-klubmotoristu",
       "edge-macinka-mzp2026",
-      "edge-macinka-cerveny"
+      "edge-macinka-cerveny",
+      "edge-gmrgas-macinka"
     ],
     "claimRefs": [
       "CLM-03",

@@ -43,16 +43,57 @@
         "entity": "gmrgas-cz",
         "label": "GMR GAS s.r.o. (Brno)",
         "claims": [
-          "CLM-01"
+          "CLM-01",
+          "CLM-02",
+          "CLM-03"
         ],
         "sources": [
           "SRC-01",
-          "SRC-02"
+          "SRC-02",
+          "SRC-04"
+        ]
+      },
+      {
+        "entity": "gmrgas",
+        "label": "GMR GAS UA LLC (Kyjev)",
+        "claims": [
+          "CLM-02",
+          "CLM-03"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02",
+          "SRC-04"
+        ]
+      },
+      {
+        "entity": "macinka",
+        "label": "Petr Macinka",
+        "claims": [
+          "CLM-03"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-04"
+        ]
+      },
+      {
+        "entity": "tomas-cabal",
+        "label": "Tomáš Cabal",
+        "claims": [
+          "CLM-03"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-04"
         ]
       }
     ],
     "edges": [
-      "edge-vencalek-gmrgascz"
+      "edge-vencalek-gmrgascz",
+      "edge-gmrgascz-gmrgas",
+      "edge-gmrgas-macinka",
+      "edge-gmrgas-tomascabal"
     ]
   },
   "contentBlocks": [

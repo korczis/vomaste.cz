@@ -25,7 +25,9 @@
     "discoveredAt": "2026-07-30",
     "discoveredVia": [
       "edge-metnar-nku",
-      "edge-juchelka-nku"
+      "edge-juchelka-nku",
+      "edge-nku-miloslavkala",
+      "edge-novela-nku"
     ],
     "claimRefs": [
       "CLM-01",

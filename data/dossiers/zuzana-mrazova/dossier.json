@@ -70,7 +70,9 @@
           "CLM-54",
           "CLM-55",
           "CLM-56",
-          "CLM-17"
+          "CLM-17",
+          "CLM-18",
+          "CLM-11"
         ],
         "sources": [
           "SRC-01",
@@ -89,7 +91,10 @@
           "SRC-25",
           "SRC-26",
           "SRC-06",
-          "SRC-11"
+          "SRC-11",
+          "SRC-12",
+          "SRC-29",
+          "SRC-09"
         ]
       },
       {
@@ -112,11 +117,80 @@
           "SRC-06",
           "SRC-11"
         ]
+      },
+      {
+        "entity": "ministerstvo-spravedlnosti",
+        "label": "Ministerstvo spravedlnosti ČR",
+        "claims": [
+          "CLM-18"
+        ],
+        "sources": [
+          "SRC-07",
+          "SRC-12"
+        ]
+      },
+      {
+        "entity": "mesto-bilina",
+        "label": "Město Bílina (městský úřad a stavební úřad)",
+        "claims": [
+          "CLM-34"
+        ],
+        "sources": [
+          "SRC-21",
+          "SRC-29"
+        ]
+      },
+      {
+        "entity": "zdenek-hrib",
+        "label": "Zdeněk Hřib",
+        "claims": [
+          "CLM-11"
+        ],
+        "sources": [
+          "SRC-09"
+        ]
+      },
+      {
+        "entity": "lex-mrazova",
+        "label": "«Lex Mrázová» (návrh povinnosti přiznávat obecní byt)",
+        "claims": [
+          "CLM-54"
+        ],
+        "sources": [
+          "SRC-24"
+        ]
+      },
+      {
+        "entity": "martin-kupka",
+        "label": "Martin Kupka",
+        "claims": [
+          "CLM-26"
+        ],
+        "sources": [
+          "SRC-07"
+        ]
+      },
+      {
+        "entity": "ivan-bartos",
+        "label": "Ivan Bartoš",
+        "claims": [
+          "CLM-56"
+        ],
+        "sources": [
+          "SRC-19",
+          "SRC-26"
+        ]
       }
     ],
     "edges": [
       "edge-mrazova-vlada",
-      "edge-babis-mrazova"
+      "edge-babis-mrazova",
+      "edge-mrazova-ministerstvospravedlnosti",
+      "edge-mrazova-mestobilina",
+      "edge-mrazova-hrib",
+      "edge-mrazova-lexmrazova",
+      "edge-mrazova-kupka",
+      "edge-mrazova-bartos"
     ]
   },
   "contentBlocks": [

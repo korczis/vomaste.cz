@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/oto-klempir/relations/edge-zavoral-klempir",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-zavoral-klempir",
+  "relationId": "edge-zavoral-klempir",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/rene-zavoral"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/klempir"
+  },
+  "relationType": "RESPONDED_TO",
+  "label": "generální ředitel ČRo označil rozhodnutí vlády za \"nepřátelský krok\"",
+  "status": "quote",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-16"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-20"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 5,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-045 (provázání grafu, druhá dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

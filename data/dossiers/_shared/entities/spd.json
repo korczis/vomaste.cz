@@ -23,7 +23,8 @@
   "provenance": {
     "discoveredAt": "2026-07-30",
     "discoveredVia": [
-      "edge-okamura-spd"
+      "edge-okamura-spd",
+      "edge-spd-obvodnisoudpraha1"
     ],
     "claimRefs": [
       "CLM-01",

@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/oto-klempir/relations/edge-klempir-alicjaknastova",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-klempir-alicjaknastova",
+  "relationId": "edge-klempir-alicjaknastova",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/klempir"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/alicja-knastova"
+  },
+  "relationType": "ASSOCIATED_WITH_EVENT",
+  "label": "v březnu 2026 odvolal generální ředitelku NGP",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-25"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-08"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 8,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-045 (provázání grafu, druhá dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

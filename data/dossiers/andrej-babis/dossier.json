@@ -31,7 +31,16 @@
       {
         "entity": "babis",
         "label": "Andrej Babiš",
-        "subject": true
+        "subject": true,
+        "claims": [
+          "CLM-01",
+          "CLM-88"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-27",
+          "SRC-64"
+        ]
       },
       {
         "entity": "vlada",
@@ -373,6 +382,32 @@
           "SRC-62",
           "SRC-63"
         ]
+      },
+      {
+        "entity": "vrchni-soud-praha",
+        "label": "Vrchní soud v Praze",
+        "claims": [
+          "CLM-01",
+          "CLM-88"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-27",
+          "SRC-64"
+        ]
+      },
+      {
+        "entity": "jana-nagyova",
+        "label": "Jana Nagyová",
+        "claims": [
+          "CLM-01",
+          "CLM-88"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-27",
+          "SRC-64"
+        ]
       }
     ],
     "edges": [
@@ -415,7 +450,9 @@
       "edge-babis-ncoz-pandora",
       "edge-agrofert-preol",
       "edge-babis-zaloba-seznam",
-      "edge-seznam-zaloba"
+      "edge-seznam-zaloba",
+      "edge-babis-vrchnisoudpraha",
+      "edge-babis-jananagyova"
     ]
   },
   "contentBlocks": [

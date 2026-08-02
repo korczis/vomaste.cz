@@ -5,7 +5,7 @@ system. This is provenance, not a publication decision — see
 `data/authorizations.toml` and `scripts/dossier/authorize-entity.mjs`
 for the only thing that actually authorizes a dossier.
 
-644 record(s) logged across 5 day(s). 0 new since last run.
+680 record(s) logged across 5 day(s). 36 new since last run.
 
 ## 2026-07-29
 
@@ -665,3 +665,39 @@ for the only thing that actually authorizes a dossier.
 - `zeleznice-slovenskej-republiky` (entity, created)
 - `zemedelsky-svaz` (entity, created)
 - `zharsky-utok-vitkov-2009` (entity, created)
+- `edge-babis-jananagyova` (relation, created)
+- `edge-babis-vrchnisoudpraha` (relation, created)
+- `edge-babis-miloslavkala` (relation, created)
+- `edge-metnar-cnb` (relation, created)
+- `edge-metnar-miloslavkala` (relation, created)
+- `edge-metnar-policie` (relation, created)
+- `edge-nku-miloslavkala` (relation, created)
+- `edge-novela-nku` (relation, created)
+- `edge-pavel-novelarozpoctu` (relation, created)
+- `edge-klempir-alicjaknastova` (relation, created)
+- `edge-klempir-ceskatelevize` (relation, created)
+- `edge-klempir-ceskyrozhlas` (relation, created)
+- `edge-klempir-narodnigalerie` (relation, created)
+- `edge-klempir-npu` (relation, created)
+- `edge-klempir-peticeozabalto` (relation, created)
+- `edge-martinbaxa-klempir` (relation, created)
+- `edge-milionchvilek-klempir` (relation, created)
+- `edge-zavoral-klempir` (relation, created)
+- `edge-gmrgas-macinka` (relation, created)
+- `edge-gmrgas-tomascabal` (relation, created)
+- `edge-plaga-benes` (relation, created)
+- `edge-plaga-csi` (relation, created)
+- `edge-plaga-kupka` (relation, created)
+- `edge-plaga-zatloukal` (relation, created)
+- `edge-zatloukal-csi` (relation, created)
+- `edge-okamura-ivanaticha` (relation, created)
+- `edge-okamura-obvodnisoudpraha1` (relation, created)
+- `edge-okamura-obvodnistatnizastupitelstvipraha1` (relation, created)
+- `edge-okamura-poslaneckasnemovna` (relation, created)
+- `edge-spd-obvodnisoudpraha1` (relation, created)
+- `edge-mrazova-bartos` (relation, created)
+- `edge-mrazova-hrib` (relation, created)
+- `edge-mrazova-kupka` (relation, created)
+- `edge-mrazova-lexmrazova` (relation, created)
+- `edge-mrazova-mestobilina` (relation, created)
+- `edge-mrazova-ministerstvospravedlnosti` (relation, created)
