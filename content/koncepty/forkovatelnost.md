@@ -8,8 +8,15 @@ weight = 350
 lang = "cs"
 seo_type = "WebPage"
 group = "otevrenost"
+accent = true
 tile_title = "Forkovatelnost a adopce"
 tile_summary = "Tenhle web není produkt, je to <strong class=\"text-white/80\">použitelný vzor</strong>: dossierový datový model, validátory a build gate si můžete forknout a nasadit na vlastní téma. Build nepotřebuje žádné tajemství ani službu mimo repozitář, vstupní bod je jeden příkaz (<code>just</code>). Co fork ještě musí upravit ručně, je vypsané — bez toho by to byl slib, ne vlastnost."
+quickstart = [
+  "git clone git@github.com:<vas-ucet>/vomaste.cz.git",
+  "just doctor   # zkontroluje prerekvizity (Node, Zola, hooky)",
+  "just setup    # npm ci + nastaví git hooks",
+  "just build    # TA brána kvality — stejná sekvence jako CI",
+]
 +++
 
 Forkovatelnost je v [konstituci](@/dokumentace/konstituce.md) vedená jako
@@ -55,9 +62,12 @@ k tomuto datovému modelu — vypnutím kontrol z něj zbyde jen vzhled.
 ## Co fork nastavuje
 
 `base_url` v `config.toml` (a `static/CNAME`, pokud chce vlastní doménu),
-`title` a `description`, registr dossierů v `data/dossiers.toml` a samotný
-obsah `content/`. Autorizační log v `AGENTS.md` si každý fork vede vlastní —
-náš není a nemůže být pro nikoho jiného platný.
+`title` a `description`, a samotný obsah — kanonická data
+`data/dossiers/**` (žádný samostatný registr souborů: přítomnost
+`data/dossiers/<slug>/dossier.json` je sama o sobě registrace daného
+dossieru) plus ručně psané kořenové indexy a koncepty v `content/`.
+Autorizační log v `AGENTS.md` si každý fork vede vlastní — náš není a
+nemůže být pro nikoho jiného platný.
 
 ## Co fork ještě musí upravit ručně
 

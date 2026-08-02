@@ -36,8 +36,14 @@ entry; it does not replace reading and applying the rule.
   manually: `npm run hooks:install`) — a fast, pure-data validator subset.
   This is a convenience, not the real gate: it does **not** replace the
   full `npm run build` requirement below, and does not include
-  `lint:historical-coupling` (still red during the in-progress
-  de-specialization migration, see `docs/coop/TASKS.md` T-001).
+  `lint:historical-coupling` (still red — currently 58 residual
+  occurrences of seed-subject identifiers in structural code, e.g.
+  `templates/entity-dossier.html`, `scripts/data/build-view-models.mjs`
+  — outside the build gate on purpose. The migration that was tracked as
+  `docs/coop/TASKS.md` T-001 is done/superseded — see T-028 there — but
+  this specific cleanup has no open tracking task right now; run
+  `npm run lint:historical-coupling` yourself to see current occurrences
+  before assuming it's clean).
 - Treat the "Content about real parties" log in `AGENTS.md` as append-only
   and load-bearing: never edit or remove an existing entry, even to "clean
   up" wording or fix a typo. A new scope extension is always a brand-new

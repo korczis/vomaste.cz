@@ -252,6 +252,7 @@ git clone git@github.com:korczis/vomaste.cz.git
 cd vomaste.cz
 npm ci
 npm run dev     # validace + generátory + zola serve na http://127.0.0.1:1111
+```
 
 **Nespouštěj `zola serve` přímo.** `data/generated/*` a `data/dossiers/*/stats.toml`
 jsou v `.gitignore` — vznikají buildem, takže je `git clone` ani `git pull` nikdy
@@ -264,7 +265,6 @@ npm run serve       # dogeneruje jen co chybí + zola serve (bez plné validace)
 ```
 
 Po `git pull` na to upozorní hook `.githooks/post-merge`.
-```
 
 Máš-li [`just`](https://github.com/casey/just), totéž jde kratší cestou —
 a `just doctor` navíc řekne, jestli ti nechybí prerekvizita, než začneš
