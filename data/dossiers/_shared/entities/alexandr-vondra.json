@@ -1,38 +1,39 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/alexandr-vondra",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "alexandr-vondra",
- "entityId": "alexandr-vondra",
- "title": "Alexandr Vondra",
- "entityType": "person",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "jaromir-zuna"
- ],
- "order": 61,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/alexandr-vondra",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "alexandr-vondra",
+  "entityId": "alexandr-vondra",
+  "title": "Alexandr Vondra",
+  "entityType": "person",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "jaromir-zuna"
   ],
-  "claimRefs": [
-   "CLM-15"
-  ],
-  "sourceRefs": [
-   "SRC-09"
+  "order": 61,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02",
+      "edge-alexandr-vondra-zuna"
+    ],
+    "claimRefs": [
+      "CLM-15"
+    ],
+    "sourceRefs": [
+      "SRC-09"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Europoslanec ODS, exministr obrany; vyzval Zůnu k rezignaci po hlasování proti Hlaváčovi. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (jaromir-zuna). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Europoslanec ODS, exministr obrany; vyzval Zůnu k rezignaci po hlasování proti Hlaváčovi. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (jaromir-zuna). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
-  }
- ]
 }
