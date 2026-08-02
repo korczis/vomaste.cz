@@ -9,10 +9,11 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/tunde-bartha"
   },
-  "title": "SRC-05 — ČT24: Praha 3 vypoví smlouvu na městský byt šéfce Úřadu vlády (24. 6. 2026)",
-  "description": "ČT24 nezávisle na Echo24 (SRC-02) potvrzuje, že advokátní kancelář Šenkýř Pánik varovala před rizikovostí výpovědi nájmu a že rada přesto výpověď schválila.",
+  "title": "SRC-05 — ČT24 (ČTK): Praha 3 vypoví smlouvu na městský byt šéfce Úřadu vlády (24. 6. 2026)",
+  "description": "Zpráva ČTK převzatá ČT24: advokátní kancelář Šenkýř Pánik varovala před rizikovostí výpovědi nájmu a rada přesto výpověď schválila. Nezávislé na Echo24 (SRC-02), který je původní redakční prací, ne agenturní přejímkou.",
   "outlet": "ČT24 (Česká televize)",
-  "sourceType": "veřejnoprávní zpravodajství",
+  "sourceFamily": "ctk",
+  "sourceType": "veřejnoprávní zpravodajství (agenturní)",
   "url": "https://ct24.ceskatelevize.cz/clanek/regiony/praha-3-vypovi-smlouvu-na-mestsky-byt-sefce-uradu-vlady-374919",
   "published": "2026-06-24",
   "retrieved": "2026-07-31",
@@ -27,7 +28,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "ČT24 dne 24. 6. 2026: advokátní kancelář Šenkýř Pánik uvedla, že\n„výpověď [je] problematická v případě, že by se proti ní manželé\nBarthovi bránili u soudu\", a že „radnice nemá dostatečné podklady pro\nto, aby to mohla prokázat u soudu\". Rada Prahy 3 přesto výpověď 24. 6.\n2026 schválila.\n\n**Nezávislost**: samostatná redakce od Echo24 (SRC-02) — obě nezávisle\npotvrzují totéž právní stanovisko advokátní kanceláře. Proto CLM-03\nnese stav `CORROBORATED`.\n\n**Limity**: tento zdroj nejmenuje vedoucího odboru Michala Dobiáše\nkonkrétně — jeho stanovisko (CLM-02) zůstává doloženo jen SRC-02."
+      "value": "ČT24 dne 24. 6. 2026 přejímá zprávu ČTK: advokátní kancelář Šenkýř Pánik\nuvedla, že „výpověď [je] problematická v případě, že by se proti ní\nmanželé Barthovi bránili u soudu\", a že „radnice nemá dostatečné\npodklady pro to, aby to mohla prokázat u soudu\". Rada Prahy 3 přesto\nvýpověď 24. 6. 2026 schválila.\n\n**Nezávislost**: tento zdroj je agenturní zpráva ČTK (`sourceFamily:\nctk`), ne původní redakční práce ČT24 — pro účely nezávislosti se počítá\njako zdrojová rodina „ctk\", ne jako ČT24. Přesto zůstává nezávislý na\nEcho24 (SRC-02), který je doložená původní redakční práce, ne agenturní\npřejímka — proto CLM-03 i nadále nese stav `CORROBORATED`, opřený o dvě\nskutečně nezávislé rodiny (ctk, Echo24).\n\n**Limity**: tento zdroj nejmenuje vedoucího odboru Michala Dobiáše\nkonkrétně — jeho stanovisko (CLM-02) zůstává doloženo jen SRC-02."
     }
   ],
   "order": 5

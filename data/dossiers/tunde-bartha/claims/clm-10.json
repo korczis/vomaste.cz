@@ -10,11 +10,14 @@
     "@id": "https://vomaste.cz/id/dossiers/tunde-bartha"
   },
   "text": "Tünde Bartha vedla prezidentskou kampaň Andreje Babiše; podle zpravodajství z prosince 2022 s ním „úzce spolupracuje už sedmým rokem“, začínala s ním na ministerstvu financí a mezi lety 2017 a 2021 byla pověřena vedením Úřadu vlády",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/sources/SRC-11"
     }
   ],
   "subjects": [],

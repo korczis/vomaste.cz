@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/petr-vencalek/sources/SRC-04",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-04",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/petr-vencalek"
+  },
+  "title": "SRC-04 — Seznam Zprávy: Macinka nepřiznal svůj podíl v ukrajinské firmě (19. 12. 2025)",
+  "description": "Seznam Zprávy nezávisle na Investigace.cz (SRC-01) potvrzuje, že GMR GAS UA LLC je ukrajinskou pobočkou české firmy vyrábějící regulátory tlaku plynu.",
+  "outlet": "Seznam Zprávy",
+  "sourceType": "celostátní zpravodajství",
+  "url": "https://www.seznamzpravy.cz/clanek/domaci-politika-macinka-nepriznal-svuj-podil-v-ukrajinske-firme-294724",
+  "published": "2025-12-19",
+  "retrieved": "2026-08-02",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-vencalek/claims/CLM-03"
+    }
+  ],
+  "subjects": [
+    "vencalek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Seznam Zprávy dne 19. 12. 2025 nezávisle na Investigace.cz (SRC-01)\ninformovaly o tomtéž zjištění — že ministr Petr Macinka nepřiznal ve\nmajetkovém přiznání dvacetiprocentní podíl v ukrajinské firmě GMR GAS\nUA LLC. Článek popisuje firmu jako „ukrajinskou pobočku české firmy\nGMR GAS\" a uvádí: „Společnost se zaměřuje na výrobu regulátorů tlaku\nplynu.\"\n\n**Nezávislost**: samostatná redakce od Investigace.cz (SRC-01) — obě\nnezávisle potvrzují tutéž veřejnou skutečnost, totiž že GMR GAS UA LLC\nje ukrajinská pobočka české společnosti vyrábějící regulátory tlaku\nplynu. Proto CLM-03 nese stav `CORROBORATED`.\n\n**Limity**: tento zdroj nejmenuje Petra Vencálka ani Tomáše Cabala a\nnepotvrzuje samostatně, kdo přesně vedle Macinky v ukrajinské firmě\ndrží podíl — tato dílčí informace zůstává doložena jen SRC-01. Druhý\nzdroj zde nezávisle potvrzuje strukturální fakt o vazbě obou firem, ne\nkaždé jméno."
+    }
+  ],
+  "order": 4
+}

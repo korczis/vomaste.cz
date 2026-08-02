@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-07",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-07",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek"
+  },
+  "title": "SRC-07 — ČT24: Poslanecký klub ANO povede Taťána Malá (8. 10. 2025)",
+  "description": "ČT24 nezávisle na primárním záznamu Poslanecké sněmovny (SRC-01) potvrzuje, že Jaroslav Faltýnek byl 8. 10. 2025 zvolen jedním z řadových místopředsedů poslaneckého klubu ANO 2011.",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "veřejnoprávní zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/poslanecky-klub-ano-si-zvoli-vedeni-schazi-se-i-ods-365852",
+  "published": "2025-10-08",
+  "retrieved": "2026-08-02",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "faltynek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "ČT24 dne 8. 10. 2025 informovala o ustavující schůzi poslaneckého klubu\nhnutí ANO 2011: předsedkyní klubu byla zvolena **Taťána Malá**, prvním\nmístopředsedou **Robert Králíček**. Článek pokračuje: „Dalšími řadovými\nmístopředsedy frakce poslanci vedle Aleny Schillerové zvolili\n**Jaroslava Faltýnka**, Janu Pastuchovou a Radka Vondráčka.\"\n\n**Nezávislost**: samostatná redakce (Česká televize, veřejnoprávní\nmédium) od primárního úředního záznamu Poslanecké sněmovny (SRC-01) —\nobě nezávisle potvrzují tutéž veřejnou skutečnost, totiž že Faltýnek je\nod 8. 10. 2025 místopředsedou klubu ANO 2011. Proto CLM-01 nese stav\n`CORROBORATED`.\n\n**Limity**: článek nepotvrzuje samostatně datum vzniku poslaneckého\nmandátu (4. 10. 2025) ani členství v zemědělském výboru (11. 11. 2025)\n— tyto dílčí údaje zůstávají doloženy jen primárním záznamem SRC-01;\ndruhý zdroj zde nezávisle potvrzuje klubovou funkci, ne každou dílčí\ndatovou položku profilu."
+    }
+  ],
+  "order": 7
+}
