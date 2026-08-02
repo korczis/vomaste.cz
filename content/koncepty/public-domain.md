@@ -51,11 +51,15 @@ Public domain je licence k **dílu**, ne povolení k čemukoli:
 
 ## Jak fork prakticky vypadá
 
-Naklonovat repozitář, smazat `content/dossiers/*` a `data/dossiers/*`,
-nechat si `templates/`, `scripts/` a `data/navigation.toml`, přidat vlastní
-dossier do `data/dossiers.toml` a spustit `npm run build`. Validátory vám
-řeknou, co chybí, dřív než cokoli publikujete — a autorizační brána
-nepustí subjekt, který není zapsaný na záznam.
+Naklonovat repozitář, smazat `content/dossiers/*` (generovaný adaptér) a
+`data/dossiers/*` (kanonická data), nechat si `templates/`, `scripts/` a
+`data/navigation.toml`, založit vlastní dossier
+(`npm run dossier:scaffold`, viz [Forkovatelnost a
+adopce](@/koncepty/forkovatelnost.md)) a spustit `npm run build`.
+Přítomnost `data/dossiers/<slug>/dossier.json` je sama o sobě registrace
+— žádný samostatný registr se needituje. Validátory vám řeknou, co chybí,
+dřív než cokoli publikujete — a autorizační brána nepustí subjekt, který
+není zapsaný na záznam.
 
 Instance zůstane vaše: nikde není hardcodovaný branding, žádné privátní
 API ani skryté know-how — to je záměr, ne náhoda.

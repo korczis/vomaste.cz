@@ -323,6 +323,10 @@
           <span class="text-white/55 transition-transform group-hover:translate-x-0.5" aria-hidden="true">&rarr;</span>
         </h3>
         <p class="mt-2 text-sm leading-relaxed text-white/60">{{ c.extra.tile_summary | safe }}</p>
+        {%- if c.extra.quickstart %}
+        <pre class="mt-4 overflow-x-auto rounded-lg bg-black/40 p-3 font-mono text-xs leading-relaxed text-white/70" tabindex="0">{%- for line in c.extra.quickstart %}{{ line }}
+{% endfor -%}</pre>
+        {%- endif %}
       </a>
       {%- endfor %}
     </div>
