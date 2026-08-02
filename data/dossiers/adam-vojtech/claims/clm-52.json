@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-52",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-52",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "text": "Podle Deníku N získaly kliniky FutureLife spojené s premiérem Andrejem Babišem (přes holding SynBiol) za uplynulých pět let z veřejného zdravotního pojištění téměř 14 miliard korun — stejné číslo, jaké o měsíc později použil ve svém titulku Neovlivní.cz v souvislosti s Vojtěchovým návrhem daňového zvýhodnění.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-38"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "order": 52,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam tvrzení CLM-52 — shrnutí, stav a zdroj\nvýše jsou úplné. Odpovídá na [GAP-02](@/dossiers/adam-vojtech/gaps/gap-02.md):\ndefinice částky pochází z volně dostupného zdroje (SRC-38); shoda čísla\ns titulkem Neovlivní.cz je zaznamenána jako pravděpodobná, ne jistá\nshoda — Neovlivního vlastní placený rozpis nebylo možné ověřit, proto\nstav 1 ZDROJ, ne CORROBORATED."
+    }
+  ]
+}

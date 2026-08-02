@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-38",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-38",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "title": "SRC-38 — Deník N, newsletter „Ranních 5 minut“, 20. 5. 2026",
+  "description": "Za uplynulých pět let získaly kliniky FutureLife spojené s premiérem Andrejem Babišem z veřejného zdravotního pojištění téměř 14 miliard korun.",
+  "outlet": "Deník N",
+  "sourceType": "zpravodajství",
+  "url": "https://denikn.cz/newsletter/2068672/za-pet-let-ziskaly-babisovy-kliniky-z-verejneho-zdravotniho-pojisteni-miliardy-na-ceste-do-ceska-je-americky-lekar-s-podezrenim-na-nakazu-ebolou-klempiruv-navrh-k-mediim-k/",
+  "published": "2026-05-20",
+  "retrieved": "2026-08-03",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-52"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Co dokládá.** Bezplatný newsletter Deníku N (souhrn jejich vlastní investigativní práce, samotný podrobný článek [2066826] je za paywallem) uvádí: „Za uplynulých pět let získaly kliniky FutureLife spojené s premiérem Andrejem Babišem z veřejného zdravotního pojištění téměř 14 miliard korun.“\n\n**Proč je to tu důležité.** Odpovídá na [GAP-02](@/dossiers/adam-vojtech/gaps/gap-02.md): upřesňuje, co přesně částka „14 miliard“ z titulku investigativního portálu Neovlivní.cz (22. 6. 2026, „14 miliard pro Babišovy kliniky…“, jehož vlastní podrobný rozpis je za paywallem a nebylo možné jej ověřit) měří — kumulativní výplaty z veřejného zdravotního pojištění klinikám FutureLife za posledních pět let, ne fiskální dopad samotného navrhovaného daňového zvýhodnění. FutureLife je majetkově propojen s Babišem přes holding SynBiol (Babišův 100% podíl) a Hartenberg Holding (SynBiol cca 87,75 %). Shoda čísla v obou titulcích je vysoce pravděpodobně stejný, už dříve zavedený údaj — bez přístupu k placenému rozpisu Neovlivní.cz to ale nelze potvrdit s jistotou, proto je tvrzení vedeno jako 1 ZDROJ.\n\n**Nezávislost.** Deník N je vůči Neovlivní.cz odlišný vydavatelský dům s vlastní investigativní prací (datum o měsíc dřívější, 20. 5. vs. 22. 6. 2026)."
+    }
+  ],
+  "order": 38
+}
