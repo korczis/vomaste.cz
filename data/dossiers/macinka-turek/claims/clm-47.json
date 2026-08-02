@@ -10,11 +10,14 @@
     "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
   },
   "text": "Podle Investigace.cz je GMR GAS UA LLC ukrajinskou pobočkou české společnosti vyrábějící regulátory tlaku plynu a vedle Macinky v ní drží podíl i tato česká společnost a podnikatel Tomáš Cabal",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-17"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-57"
     }
   ],
   "subjects": [
@@ -24,7 +27,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Tato stránka je kanonický záznam tvrzení CLM-47 — shrnutí, stav a zdroje\nvýše jsou úplné. Popisuje **strukturu vlastnictví ukrajinské firmy** z\n[CLM-14](@/dossiers/macinka-turek/claims/clm-14.md), tedy kontext, ve\nkterém Macinkův dvacetiprocentní podíl existuje.\n\nStav 1 ZDROJ je tu přesný a nezvýšitelný bez nového zdroje: tuto část\npopisuje jen [SRC-17](@/dossiers/macinka-turek/sources/src-17.md).\n[SRC-18](@/dossiers/macinka-turek/sources/src-18.md) (Seznam Zprávy)\npotvrzuje samostatně Macinkův podíl a jeho dodatečné přiznání, ne\nstrukturu dalších spoluvlastníků. Českou společnost identifikuje\nrejstříkovým záznamem\n[CLM-46](@/dossiers/macinka-turek/claims/clm-46.md); ukrajinskou stranu\nvazby z primárního registru ověřit nešlo, viz\n[GAP-07](@/dossiers/macinka-turek/gaps/gap-07.md).\n\nJmenovaní spoluvlastníci jsou tu **výhradně jako záznam vazby v rozsahu,\nv jakém je uvádí citované zpravodajství** — nejsou subjekty tohoto\ndossieru a tvrzení o nich nijak nenaznačuje pochybení. Držet podíl ve\nfirmě není nic protiprávního; předmětem kauzy je Macinkova nesplněná\npovinnost podíl přiznat, ne existence firmy nebo jejích dalších\nspoluvlastníků."
+      "value": "Tato stránka je kanonický záznam tvrzení CLM-47 — shrnutí, stav a zdroje\nvýše jsou úplné. Popisuje **strukturu vlastnictví ukrajinské firmy** z\n[CLM-14](@/dossiers/macinka-turek/claims/clm-14.md), tedy kontext, ve\nkterém Macinkův dvacetiprocentní podíl existuje.\n\nStav CORROBORATED od 2026-08-02: [SRC-17](@/dossiers/macinka-turek/sources/src-17.md)\n(Investigace.cz) a [SRC-57](@/dossiers/macinka-turek/sources/src-57.md)\n(YouControl, ukrajinský registrový agregátor) potvrzují tutéž vazbu —\nže vedle Macinky drží podíl i česká společnost a Tomáš Čábal — dvěma\nnezávislými zdroji odlišné povahy (žurnalistika vs. registrová data).\nPřesná procenta a role uvádí\n[CLM-51](@/dossiers/macinka-turek/claims/clm-51.md), stav firmy\n[CLM-50](@/dossiers/macinka-turek/claims/clm-50.md).\n[SRC-18](@/dossiers/macinka-turek/sources/src-18.md) (Seznam Zprávy)\npotvrzuje samostatně Macinkův podíl a jeho dodatečné přiznání, ne\nstrukturu dalších spoluvlastníků. Českou společnost identifikuje\nrejstříkovým záznamem\n[CLM-46](@/dossiers/macinka-turek/claims/clm-46.md).\n\nJmenovaní spoluvlastníci jsou tu **výhradně jako záznam vazby v rozsahu,\nv jakém je uvádí citované zpravodajství** — nejsou subjekty tohoto\ndossieru a tvrzení o nich nijak nenaznačuje pochybení. Držet podíl ve\nfirmě není nic protiprávního; předmětem kauzy je Macinkova nesplněná\npovinnost podíl přiznat, ne existence firmy nebo jejích dalších\nspoluvlastníků."
     }
   ]
 }

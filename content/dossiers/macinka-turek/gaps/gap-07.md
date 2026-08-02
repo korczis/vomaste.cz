@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "GAP-07 — Ukrajinská strana vazby GMR GAS"
-description = "Stav a vlastnickou strukturu GMR GAS UA LLC nešlo ověřit z primárního ukrajinského registru; totožnost druhého jmenovaného spoluvlastníka nelze z citovaného zpravodajství rozlišit."
+description = "Ukrajinský registrový agregátor (2026-08-02) doložil stav, procenta a statutární orgán GMR GAS UA LLC; zbývá jen spárovat jmenovaného spoluvlastníka s konkrétním záznamem v ARES."
 template = "dossier-gap.html"
 weight = 7
 
@@ -16,40 +16,37 @@ gap_id = "GAP-07"
 +++
 Česká strana této vazby je od 2026-07-30 doložená z primárního registru:
 ARES potvrdil totožnost společnosti GMR GAS s.r.o. (IČO 28274318) i jejího
-jediného společníka a jednatele (CLM-46, CLM-48, SRC-55). **Ukrajinská
-strana doložená není** a zůstávají otevřené tři věci.
+jediného společníka a jednatele (CLM-46, CLM-48, SRC-55). **Aktualizace
+2026-08-02**: ukrajinská strana je teď také doložená, z registrového
+agregátoru YouControl ([SRC-57](@/dossiers/macinka-turek/sources/src-57.md)) —
+dva ze tří původně otevřených bodů jsou vyřešené, třetí zůstává jako
+ůzká, nízkoprioritní otázka.
 
-**1. Samotná GMR GAS UA LLC.** Existenci, aktuální stav a vlastnickou
-strukturu kyjevské firmy tento přehled z primárního ukrajinského
-obchodního registru neověřil — žádné použitelné veřejné programové
-rozhraní k němu nebylo k dispozici. Vše, co dossier o ukrajinské firmě
-uvádí (CLM-14, CLM-15, CLM-47), se proto opírá výhradně o citovanou
-českou žurnalistiku, ne o registr. **To není zjištění, že by firma
-neexistovala nebo že by údaje byly nepřesné** — jen se nezávisle
-nepotvrdily.
+**1. Samotná GMR GAS UA LLC — vyřešeno.** SRC-57 potvrzuje formální
+rejstříkový stav „Registered" k 2026-08-01
+([CLM-50](@/dossiers/macinka-turek/claims/clm-50.md)). To **nevyvrací
+ani nepotvrzuje** Macinkovo citované vyjádření, že firma „de facto
+neexistuje" (CLM-15) — jde o dva různé druhy tvrzení (formální stav vs.
+jeho popis reálného provozu), dossier je uvádí vedle sebe.
 
-Zvlášť to platí pro Macinkovo vysvětlení, že firma „de facto neexistuje"
-od začátku ruského ostřelování Kyjeva a že plánoval její likvidaci
-(CLM-15). Je to **jeho citované vyjádření, ne ověřený stav** —
-odpovídající rejstříkový záznam by to potvrdil, nebo nepotvrdil, a ten
-tento přehled nemá.
+**2. Vazba mezi českou a ukrajinskou firmou — vyřešeno.** SRC-57
+potvrzuje nezávisle na SRC-17, že GMR GAS s.r.o. drží v ukrajinské firmě
+40% podíl ([CLM-51](@/dossiers/macinka-turek/claims/clm-51.md);
+[CLM-47](@/dossiers/macinka-turek/claims/clm-47.md) je proto od
+2026-08-02 CORROBORATED).
 
-**2. Vazba mezi českou a ukrajinskou firmou.** Že je ukrajinská firma
-pobočkou české a že v ní česká firma drží podíl, uvádí jen SRC-17
-(CLM-47). ARES o zahraničních účastech české společnosti nic neříká, takže
-tuto konkrétní vazbu nepotvrzuje ani nevyvrací.
+**3. Totožnost druhého jmenovaného spoluvlastníka — zúženo, zůstává
+otevřené.** Jméno (Tomáš Čábal) i role (statutární orgán, skutečný
+majitel se 40% přímým vlivem) jsou teď doložené ukrajinským registrem
+(CLM-51). **Nevyřešeno zůstává jen** spárování s konkrétním záznamem
+v ARES — ukrajinský registr nedává český identifikátor (IČO, datum
+narození) a v ARES je pod tímto jménem víc různých osob. **Přiřadit mu
+konkrétní český rejstříkový záznam by proto byla spekulace, ne
+zjištění** — dossier to nedělá. Uzavření tohoto zbytku by vyžadovalo
+zdroj s rozlišujícím údajem.
 
-**3. Totožnost druhého jmenovaného spoluvlastníka.** SRC-17 jmenuje vedle
-Macinky a české společnosti ještě jednoho podnikatele. V ARES je pod tímto
-jménem víc různých ekonomických subjektů a citované zpravodajství neuvádí
-žádný rozlišující údaj (IČO, datum narození, sídlo). **Přiřadit mu
-konkrétní rejstříkový záznam by proto byla spekulace, ne zjištění** —
-dossier to nedělá a nechává vazbu jen v tom rozsahu, v jakém ji uvádí
-zdroj. Uzavření této mezery by vyžadovalo zdroj, který spoluvlastníka
-identifikuje jednoznačně.
-
-Metoda použitá 2026-07-30 je stejná jako u
-[GAP-04](@/dossiers/macinka-turek/gaps/gap-04.md): přímý programový dotaz
-na primární registr, ne rešerše přes žurnalistiku. Rozdíl je, že tady
-narazila na hranici územní působnosti českého registru, ne na ochranu
-proti robotům.
+Metoda použitá 2026-08-02 navazuje na 2026-07-30
+([GAP-04](@/dossiers/macinka-turek/gaps/gap-04.md)): tam, kde přímý
+dotaz na oficiální portál není k dispozici, agregátor primárních
+registrových dat je nejbližší dostupná náhrada, s otevřeně popsanými
+limity (viz SRC-57).

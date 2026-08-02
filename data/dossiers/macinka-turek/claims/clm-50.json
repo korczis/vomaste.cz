@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-50",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-50",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "text": "Podle ukrajinského registrového agregátoru YouControl (USREOU) je GMR GAS UA LLC k 2026-08-01 ve stavu „Registered\" (formálně zaregistrována, nikoli v likvidaci ani vymazaná)",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-57"
+    }
+  ],
+  "subjects": [
+    "macinka"
+  ],
+  "order": 50,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam tvrzení CLM-50 — shrnutí, stav a zdroje\nvýše jsou úplné. Doplňuje\n[GAP-07](@/dossiers/macinka-turek/gaps/gap-07.md), bod 1 (existence a\nstav ukrajinské firmy), který přímý programový dotaz na primární\nukrajinský registr nemohl ověřit.\n\n**Co to znamená a co ne.** Formální rejstříkový status „Registered\"\nznamená, že firma nebyla formálně zlikvidována ani vymazána z registru —\nnic víc a nic míň. **Nevyvrací ani nepotvrzuje** Macinkovo citované\nvyjádření, že firma „de facto neexistuje\" od začátku ruského ostřelování\nKyjeva ([CLM-15](@/dossiers/macinka-turek/claims/clm-15.md)) — to je\njeho popis reálné provozní situace, ne rejstříkového stavu, a dossier\noba údaje uvádí vedle sebe, ne jako protikladné důkazy jeden druhého.\n\nZdroj je registrový agregátor, ne přímý dotaz na oficiální ukrajinský\nstátní portál — viz limity popsané u\n[SRC-57](@/dossiers/macinka-turek/sources/src-57.md)."
+    }
+  ]
+}

@@ -19,15 +19,19 @@ výše jsou úplné. Popisuje **strukturu vlastnictví ukrajinské firmy** z
 [CLM-14](@/dossiers/macinka-turek/claims/clm-14.md), tedy kontext, ve
 kterém Macinkův dvacetiprocentní podíl existuje.
 
-Stav 1 ZDROJ je tu přesný a nezvýšitelný bez nového zdroje: tuto část
-popisuje jen [SRC-17](@/dossiers/macinka-turek/sources/src-17.md).
+Stav CORROBORATED od 2026-08-02: [SRC-17](@/dossiers/macinka-turek/sources/src-17.md)
+(Investigace.cz) a [SRC-57](@/dossiers/macinka-turek/sources/src-57.md)
+(YouControl, ukrajinský registrový agregátor) potvrzují tutéž vazbu —
+že vedle Macinky drží podíl i česká společnost a Tomáš Čábal — dvěma
+nezávislými zdroji odlišné povahy (žurnalistika vs. registrová data).
+Přesná procenta a role uvádí
+[CLM-51](@/dossiers/macinka-turek/claims/clm-51.md), stav firmy
+[CLM-50](@/dossiers/macinka-turek/claims/clm-50.md).
 [SRC-18](@/dossiers/macinka-turek/sources/src-18.md) (Seznam Zprávy)
 potvrzuje samostatně Macinkův podíl a jeho dodatečné přiznání, ne
 strukturu dalších spoluvlastníků. Českou společnost identifikuje
 rejstříkovým záznamem
-[CLM-46](@/dossiers/macinka-turek/claims/clm-46.md); ukrajinskou stranu
-vazby z primárního registru ověřit nešlo, viz
-[GAP-07](@/dossiers/macinka-turek/gaps/gap-07.md).
+[CLM-46](@/dossiers/macinka-turek/claims/clm-46.md).
 
 Jmenovaní spoluvlastníci jsou tu **výhradně jako záznam vazby v rozsahu,
 v jakém je uvádí citované zpravodajství** — nejsou subjekty tohoto

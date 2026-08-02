@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-57",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-57",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-57 — YouControl (výpis z ukrajinského jednotného státního registru, USREOU 41507625)",
+  "description": "Registrový agregátor ukrajinského Jednotného státního registru právnických osob (USREOU) — výpis pro GMR GAS UA LLC, kód 41507625: stav, vlastnická struktura, statutární orgán.",
+  "outlet": "YouControl",
+  "sourceType": "registrový agregátor primárního ukrajinského státního registru (USREOU)",
+  "url": "https://youcontrol.com.ua/en/catalog/company_details/41507625/",
+  "published": "2026-08-01",
+  "retrieved": "2026-08-02",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-47"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-50"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-51"
+    }
+  ],
+  "subjects": [
+    "macinka"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "YouControl je komerční ukrajinský registrový agregátor, obdoba toho, jak\nHlídač státu strojově agreguje ARES — **není** to oficiální portál\nukrajinského státu samotného (na rozdíl od přímého programového dotazu\nna ARES u [SRC-55](@/dossiers/macinka-turek/sources/src-55.md)), proto je\ntu `sourceType` popsán jako agregátor, ne jako přímý primární registr.\nPodle GAP-07 nebylo k oficiálnímu ukrajinskému registru k dispozici\npoužitelné veřejné programové rozhraní; YouControl je nejbližší dostupná\nnáhrada, sestavená z veřejných dat USREOU.\n\n**Co dokládá** (stav záznamu k 2026-08-01, dohledáno 2026-08-02):\n\n- **Stav společnosti**: „Registered\" (zaregistrována, tj. formálně\n  aktivní, nikoli v likvidaci nebo vymazaná).\n- **Vlastnická struktura**: ТОВ „ГМР ГАЗ\" (GMR GAS s.r.o., ČR) — 40 %;\n  Мацінка Петро (Petr Macinka, ČR) — 20 %; Цабал Томаш (Tomáš Čábal,\n  Ukrajina) — 40 %.\n- **Statutární orgán / oprávněná osoba**: Tomáš Čábal, s omezením\n  jednat samostatně u transakcí nad 50 000 EUR podle stanov.\n- **Skutečný majitel (UBO)**: Tomáš Čábal, s přímým rozhodujícím vlivem\n  (40 %).\n\n**Nezávislost.** Vůči [SRC-17](@/dossiers/macinka-turek/sources/src-17.md)\n(Investigace.cz) jde o zcela nezávislý zdroj jiné povahy — ukrajinský\nregistrový agregátor vs. česká investigativní redakce — proto se u\nCLM-47 počítají jako dvě nezávislá potvrzení stejné vazby.\n\n**Limity — co tento zdroj nedokládá.** „Registered\" je formální\nrejstříkový status, ne důkaz o operativní aktivitě firmy — nevyvrací ani\nnepotvrzuje Macinkovo citované vyjádření, že firma „de facto\nneexistuje\" (viz [CLM-15](@/dossiers/macinka-turek/claims/clm-15.md));\njde o dva různé druhy tvrzení (formální stav vs. subjektivní popis\nreálného provozu), dossier je proto uvádí vedle sebe, ne jako vzájemné\nvyvrácení. Záznam dále neobsahuje žádný český identifikátor (IČO, datum\nnarození), který by Tomáše Čábala jednoznačně spároval s konkrétním\nzáznamem v ARES — viz zbývající otevřená otázka v\n[GAP-07](@/dossiers/macinka-turek/gaps/gap-07.md). Adresa sídla v Kyjevě\nje ve výpisu částečně skrytá; dossier ji z tohoto zdroje nepřebírá.\n\nZdroj byl načten automatizovaným nástrojem (ne ručním prohlížením); čísla\na jména výše odpovídají tomu, co nástroj z veřejně zobrazené stránky\nextrahoval. Pokud se při budoucí ruční kontrole zjistí rozpor s tím, co\nstránka skutečně zobrazuje, má přednost ruční kontrola a tento záznam se\nopraví."
+    }
+  ],
+  "order": 57
+}

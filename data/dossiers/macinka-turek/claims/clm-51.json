@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-51",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-51",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "text": "Podle YouControlu drží v GMR GAS UA LLC podíly GMR GAS s.r.o. (40 %), Petr Macinka (20 %) a Tomáš Čábal (40 %); Čábal je zapsán jako statutární orgán (s omezením jednat samostatně nad 50 000 EUR) a jako skutečný majitel s přímým rozhodujícím vlivem",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-57"
+    }
+  ],
+  "subjects": [
+    "macinka"
+  ],
+  "order": 51,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam tvrzení CLM-51 — shrnutí, stav a zdroje\nvýše jsou úplné. Doplňuje přesnými procenty a rolí to, co\n[CLM-47](@/dossiers/macinka-turek/claims/clm-47.md) uvádí jen slovně\n(„drží podíl\") — a doplňuje\n[GAP-07](@/dossiers/macinka-turek/gaps/gap-07.md), bod 2 (vazba mezi\nčeskou a ukrajinskou firmou), kterou ARES ze strany české firmy nemohl\npotvrdit ani vyvrátit.\n\n**Co zůstává otevřené.** Ukrajinský registr nedává žádný český\nidentifikátor (IČO, datum narození) Tomáše Čábala — přiřadit ho\nkonkrétnímu záznamu v ARES by proto zůstalo spekulací; viz zbývající\nbod v [GAP-07](@/dossiers/macinka-turek/gaps/gap-07.md). Jmenovaní\nspoluvlastníci jsou tu výhradně jako záznam vazby v rozsahu, v jakém ji\nuvádí citované zdroje — nejsou subjekty tohoto dossieru a tvrzení o nich\nnijak nenaznačuje pochybení. Držet podíl ve firmě není nic protiprávního."
+    }
+  ]
+}
