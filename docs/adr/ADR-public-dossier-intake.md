@@ -459,6 +459,66 @@ Prismatic není a nebude tvrdou závislostí.
 
   `npm run build` zelený (107 s); `git diff -- AGENTS.md data/authorizations.toml .github/workflows`
   prázdný. Fáze 5 kontrakt: `reports/intake/phase-04-implementation-report.md`.
+- 2026-08-02 — Fáze 5 implementována (stále **PROPOSED**). Audit (`reports/intake/phase-05-issue-form-audit.md`)
+  zjistil, že `.github/ISSUE_TEMPLATE/navrh-dossieru.yml` (zpevněný wordingem misí T-042, GitHub CRITICAL
+  audit) nikdy nebyl propojen s parserem z Fáze 2 — chyběl marker, pole neodpovídala `FORM_V1`
+  headings, jediný souhrnný checkbox místo tří samostatných. Formulář přestavěn (stejný soubor, stejné
+  `labels`, zachovaná bezpečnostní formulace) tak, aby renderoval přesně `FORM_V1` kontrakt; ověřeno
+  proti reálnému GitHub renderování (dokumentace + `issue-ops/parser` referenční implementace), ne jen
+  předpokládáno — `scripts/intake/render-github-form-body.mjs` renderuje tělo issue ze **skutečného**
+  YAML a `scripts/intake/issue-form-compatibility.test.mjs` (9 testů) prochází reálně vyrenderovaným
+  tělem přes reálný parser. `scripts/intake/generate-form-fixture.mjs` z něj vygeneroval 19 golden
+  `tests/fixtures/intake/e2e-*.json` fixtures (§11); `scripts/intake/run-e2e-fixture.mjs`
+  (`npm run intake:e2e-fixture`) je všechny zpracuje plným pipeline offline (mock DNS na privátní
+  adresu — stejný vzor jako `intake:preflight-fixture`); `scripts/intake/run-e2e-fixture.test.mjs`
+  (6 testů) ověřuje §32 test matrix, edit sémantiku (§22: stabilní intake ID napříč editací, odlišný
+  input hash, odebrané potvrzení invaliduje nový běh) a jeden skutečně síťově dosažitelný (mockovaný,
+  jen loopback) HTTP round-trip. `scripts/ci/validate-issue-forms.mjs` (nová `js-yaml` dev-závislost —
+  repo dosud žádný YAML parser nemělo) strukturálně validuje všechny 4 šablony + `config.yml`. Report
+  (`render-intake-report.mjs`) doplněn o §20 povinné formulace ("Zdroj podání: veřejná GitHub issue",
+  "Tento report není potvrzením správnosti podnětu.", "Přijaté URL nebyly automaticky uznány jako
+  nezávislé ani důvěryhodné zdroje.", "Rozsah nebyl autorizován.", "Publikace zůstává blokována.").
+  480 testů celkem (`npm run test:intake` + `test:intake:form` + `test:intake:e2e`).
+
+  **Skutečný bug nalezený a opravený při auditu proti reálnému GitHub renderování** (ne jen kosmetická
+  vada): GitHub renderuje nezodpovězené nepovinné pole jako doslovný text `_No response_` pod jeho
+  nadpisem — nikdy jako prázdnou sekci. `parse-issue-form.mjs` toto vůbec neošetřoval a Fáze 2 vlastní
+  ručně psané fixtures (`tests/fixtures/intake/valid-*.json`) používaly prázdné tělo místo tohoto
+  placeholderu, takže mezera zůstala skrytá až do tohoto auditu. Reálné podání by placeholder text
+  `"_No response_"` propsalo do manifestu jako by šlo o odeslaný obsah. Opraveno normalizací na prázdný
+  řetězec pro každý textový nadpis kromě `acknowledgements` (checkboxes pole, kde se placeholder nikdy
+  legitimně neobjeví). Zjištěno navíc: `sourceUrls` je nadpis-povinné, ale GitHub-nepovinné pole (§6.6
+  — GitHub neumí podmíněnou required validaci), takže oprava se musela vztahovat i na něj, ne jen na
+  tři pole označená "(nepovinné)" v headings — normalizace je tedy univerzální přes všechny textové
+  nadpisy, ne jen `FORM_V1.optionalSections`.
+
+  **Bezpečnostní tvrzení posílena, ne jen zdokumentována**: `detect-form.mjs` nyní odmítá i DRUHÝ
+  marker-podobný řádek kdekoli v těle (`duplicate_form_marker`) — např. vložený do volného textu popisu
+  (§25.1) — dřív byl takový vložený marker neškodně ignorován (parser čte jen první řádek), nově je
+  explicitně odmítnut fail-closed, aby podvržený marker nikdy nezůstal tiše v manifestu jako nerozpoznaná
+  sekce.
+
+  **Odchylky od zadání, s důvodem:**
+  1. `scripts/intake/forms/registry.mjs` + `v1.mjs` (§9's "preferovaná struktura") nevzniklo — `FORM_V1`
+     zůstává v `constants.mjs`, kde už plní roli "jeden versioned kontrakt modul" (`SUPPORTED_FORM_VERSIONS`
+     je už explicitní registr verzí). Přidat plugin-like adresářovou strukturu pro JEDINOU existující
+     verzi by bylo přesně to spekulativní strukturování, které `CLAUDE.md` i mise samotná (§9.1 "žádný
+     obří univerzální parser") odmítají — až vznikne skutečná v2, je to malá, izolovaná refaktorizace.
+  2. `field_provenance` (§21) nevzniklo jako nové schema pole — mise sama povoluje výjimku ("Nemusí
+     hashovat každý text zvlášť, pokud Phase 2 provenance stačí"): existující `provenance.input_sha256`
+     (hash celého syrového eventu) plus tento dokumentovaný, verzovaný field↔heading kontrakt
+     (`docs/intake/issue-form-contract.md`) dohromady poskytují stejnou dohledatelnost bez rozšíření
+     schématu — `schema_version` zůstává `0.3.0`.
+  3. Scénář "possible duplicate" z §32 test matrix nemá vlastní e2e fixture — vyžadoval by stavové
+     nastavení `--prior-manifests-dir` nad rámec jednoho statického JSON souboru; Fáze 3 vlastní
+     `detect-duplicate-intake.test.mjs` tuto logiku už vyčerpávajícím způsobem testuje.
+  4. Golden snapshoty (§31) jsou asserce nad skutečným během (stejná konvence jako
+     `scripts/data/compiled-golden.test.mjs`), ne opaque commitnuté diff soubory — repo pro to nemá (a
+     nezavádí) snapshot-testing knihovnu.
+
+  `npm run build` zelený; `git diff -- AGENTS.md data/authorizations.toml .github/workflows` prázdný —
+  jediná změna v `.github/` je `navrh-dossieru.yml` sám, přesně jak §39 očekává. Fáze 6 kontrakt:
+  `reports/intake/phase-05-implementation-report.md`.
 
 ---
 

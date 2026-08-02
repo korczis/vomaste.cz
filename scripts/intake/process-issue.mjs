@@ -39,6 +39,7 @@ const ERROR_CODE_TO_EXIT_CODE = Object.freeze({
   [ERROR_CODES.EVENT_INVALID_JSON]: EXIT_CODES.invalidEventJson,
   [ERROR_CODES.EVENT_SCHEMA_INVALID]: EXIT_CODES.invalidEventJson,
   [ERROR_CODES.MISSING_FORM_MARKER]: EXIT_CODES.unsupportedForm,
+  [ERROR_CODES.DUPLICATE_FORM_MARKER]: EXIT_CODES.unsupportedForm,
   [ERROR_CODES.UNSUPPORTED_FORM_VERSION]: EXIT_CODES.unsupportedForm,
   [ERROR_CODES.DUPLICATE_SECTION]: EXIT_CODES.unsupportedForm,
   [ERROR_CODES.MISSING_REQUIRED_SECTION]: EXIT_CODES.unsupportedForm,
@@ -133,7 +134,29 @@ function loadMatchingIndex(matchingIndexPath) {
 // read, temp files, matching-index build — are still real, but there is
 // exactly one call site: runCli below), so tests can call it directly
 // instead of shelling out.
-export async function processIssueEvent({ eventPath, outputDir, generatedAt, repositoryCommit, overwrite, matchingIndexPath, priorManifestsDir, preflight = false, preflightDnsAdapter }) {
+export async function processIssueEvent({
+  eventPath,
+  outputDir,
+  generatedAt,
+  repositoryCommit,
+  overwrite,
+  matchingIndexPath,
+  priorManifestsDir,
+  preflight = false,
+  preflightDnsAdapter,
+  // Whole-function override for the `preflightUrls` call below, defaulting
+  // to the real one. This file must stay free of any preflight test-only
+  // bypass vocabulary (see preflight-security-gates.test.mjs's static
+  // assertion that this exact file is clean of it), so a reviewer
+  // scanning only the CLI entrypoint can be confident no bypass is
+  // reachable from it. A script-level caller that legitimately needs one
+  // (the local E2E fixture runner, to exercise a real mock HTTP server
+  // instead of only ever proving the "blocked" path) supplies its own
+  // wrapper closure here instead — that vocabulary then lives only in
+  // that script and in preflight-urls.mjs, which already documents and
+  // permits it.
+  preflightRunner = preflightUrls,
+}) {
   const eventJson = loadEventFile(eventPath);
   const inputHash = hashEventInput(eventJson);
 
@@ -187,7 +210,7 @@ export async function processIssueEvent({ eventPath, outputDir, generatedAt, rep
   // gets offlinePreflightResult and this code path never runs at all,
   // which is what keeps `npm run build`/`npm test` network-free.
   const sourcePreflight = preflight
-    ? await preflightUrls(normalizedUrls, { dnsAdapter: preflightDnsAdapter ?? createProductionDnsAdapter({ now: () => generatedAt }), now: () => generatedAt })
+    ? await preflightRunner(normalizedUrls, { dnsAdapter: preflightDnsAdapter ?? createProductionDnsAdapter({ now: () => generatedAt }), now: () => generatedAt })
     : offlinePreflightResult(normalizedUrls, () => generatedAt);
 
   // ---- Phase 3: risk classification (PHASE_003.md §12-§16) ----

@@ -84,6 +84,41 @@ test("an unrecognized submission-type label resolves to null (validator, not par
   assert.equal(parsed.submission_type_raw, "Jiné (neuvedené)");
 });
 
+test("a real GitHub '_No response_' placeholder under an optional heading normalizes to empty, not the literal placeholder text", () => {
+  // PHASE_005.md §11/§25: GitHub always renders every field's heading,
+  // even an optional one left blank — with this exact placeholder, never
+  // a blank section body. Phase 2's own hand-built fixtures used a blank
+  // body instead, which masked this until Phase 5's audit against real
+  // GitHub rendering behavior.
+  const body = validBody() + section("identifiersText", "_No response_") + section("existingReferencesText", "_No response_");
+  const parsed = parseIssueFormV1(body);
+  assert.equal(parsed.identifiers_text, "");
+  assert.equal(parsed.existing_references_text, "");
+});
+
+test("the placeholder also normalizes on sourceUrls — a heading-required but GitHub-optional field (§6.6)", () => {
+  const body = validBody().replace(section("sourceUrls", "https://example.testov.cz/a"), section("sourceUrls", "_No response_"));
+  const parsed = parseIssueFormV1(body);
+  assert.equal(parsed.submitted_source_urls_raw, "");
+});
+
+test("the placeholder is never normalized inside acknowledgements — a checkboxes field, not text", () => {
+  // If a raw fixture (not real GitHub output) somehow forged this, the
+  // content must be left alone so parseAcknowledgements finds no
+  // recognized checkbox line, rather than something silently treating
+  // an empty string as valid input.
+  const body = validBody().replace(section("acknowledgements", ACK_LABELS.map((label) => `- [X] ${label}`).join("\n")), section("acknowledgements", "_No response_"));
+  const parsed = parseIssueFormV1(body);
+  assert.deepEqual(parsed.acknowledgements, {});
+  assert.deepEqual(parsed.unrecognized_acknowledgement_labels, []);
+});
+
+test("a real, non-empty optional field value is preserved untouched", () => {
+  const body = validBody() + section("identifiersText", "IČO 12345678");
+  const parsed = parseIssueFormV1(body);
+  assert.equal(parsed.identifiers_text, "IČO 12345678");
+});
+
 test("a heading injected inside another section's free text is treated as a real duplicate, fail-closed", () => {
   // Markdown-injection case (§24.2): a submitter pastes a line that looks
   // exactly like one of the form's own headings inside a textarea field.

@@ -85,6 +85,16 @@ export const FORM_V1 = Object.freeze({
   }),
 });
 
+// PHASE_005.md §11/§25: GitHub Issue Forms render an optional field left
+// blank as this exact literal text under its heading (verified against
+// GitHub's documented rendering behavior and third-party parser
+// implementations — GitHub's own schema docs don't spell out the exact
+// string, so this is the single place to update if that ever changes).
+// Only ever stripped for FORM_V1.optionalSections — a required section
+// can never legitimately equal this, since GitHub's own client-side
+// validation blocks submitting a required field empty.
+export const GITHUB_EMPTY_FIELD_PLACEHOLDER = "_No response_";
+
 export const FORM_VERSION_NUMBER = "1.0.0";
 export const PARSER_VERSION = "1.0.0";
 export const GENERATOR_VERSION = "1.0.0";

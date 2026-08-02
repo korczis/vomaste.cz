@@ -50,12 +50,21 @@ async function scheduleWithLimits(items, run) {
 // always caller-injected (§4.3/§4.1) — no adapter is constructed inside
 // this module, so a caller that never passes one gets an immediate,
 // obvious error rather than an accidental real DNS lookup.
-export async function preflightUrls(normalizedUrls, { dnsAdapter, now, testAllowedSuffixes = [] }) {
+//
+// `testAllowedSuffixes`/`testAllowedPrivateAddresses`/`testExtraAllowedPorts`
+// are the same test-only bypass parameters `preflightUrl` already accepts
+// (PHASE_004.md's test-bypass design) — this function only forwards them,
+// it never sets a default that would widen production behavior. Phase 5's
+// E2E fixture runner (scripts/intake/run-e2e-fixture.mjs) is the one
+// script-level (not CLI, not production) caller that supplies them, to
+// exercise a real local mock HTTP server instead of only ever proving the
+// "blocked" path.
+export async function preflightUrls(normalizedUrls, { dnsAdapter, now, testAllowedSuffixes = [], testAllowedPrivateAddresses = [], testExtraAllowedPorts = [] }) {
   const attempted = normalizedUrls.slice(0, MAX_URLS_PREFLIGHTED);
   const skipped = normalizedUrls.slice(MAX_URLS_PREFLIGHTED);
 
   const attemptedResults = await scheduleWithLimits(attempted, (entry) =>
-    preflightUrl({ submittedUrl: entry.raw, normalizedUrl: entry.normalized, dnsAdapter, now, testAllowedSuffixes })
+    preflightUrl({ submittedUrl: entry.raw, normalizedUrl: entry.normalized, dnsAdapter, now, testAllowedSuffixes, testAllowedPrivateAddresses, testExtraAllowedPorts })
   );
 
   const results = attemptedResults.map((result, i) =>

@@ -27,3 +27,13 @@ test("a marker appearing later in the body (not the first line) does not count",
   const body = "Nějaký text bez markeru na začátku.\n\n<!-- vomaste-intake-form:v1 -->\n";
   assert.throws(() => detectFormVersion(body), (err) => err instanceof IntakeError && err.code === ERROR_CODES.MISSING_FORM_MARKER);
 });
+
+test("rejects a second, spoofed marker injected into free-text description content (PHASE_005.md §25.1)", () => {
+  const body = ["<!-- vomaste-intake-form:v1 -->", "", "### Popis a kontext", "", "Nějaký text.", "<!-- vomaste-intake-form:v99 -->", "Další text.", ""].join("\n");
+  assert.throws(() => detectFormVersion(body), (err) => err instanceof IntakeError && err.code === ERROR_CODES.DUPLICATE_FORM_MARKER);
+});
+
+test("rejects an exact repeat of the real marker, not just a different-version spoof", () => {
+  const body = ["<!-- vomaste-intake-form:v1 -->", "", "### x", "", "<!-- vomaste-intake-form:v1 -->", ""].join("\n");
+  assert.throws(() => detectFormVersion(body), (err) => err instanceof IntakeError && err.code === ERROR_CODES.DUPLICATE_FORM_MARKER);
+});

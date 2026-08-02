@@ -1,41 +1,100 @@
-name: Návrh nového dossieru či rozšíření záběru
-description: Návrh nového subjektu, kauzy nebo tématu. Pozor — bez autorizace v append-only logu se obsah nepřidává.
-title: "[návrh] "
+name: Navrhnout dossier nebo entitu
+description: Veřejný podnět založený na veřejných informacích a veřejných zdrojích
+title: "[Podnět] "
 labels: ["navrh-rozsahu"]
 body:
+  # Stabilní verzovaný marker (scripts/intake/constants.mjs FORM_MARKER_PATTERN,
+  # docs/intake/issue-form-contract.md). Musí zůstat úplně první blok — parser
+  # čte jen první neprázdný řádek těla issue, nic dalšího. Nikdy needituj
+  # tento řádek bez souběžné change formuláře i parseru (version bump).
   - type: markdown
     attributes:
       value: |
-        > ⚠️ **Tato issue bude veřejná a dlouhodobě dohledatelná.** Neposílejte neveřejné dokumenty, identitu oznamovatele, osobní kontaktní údaje ani citlivý materiál. Projekt nemá důvěrný intake kanál a smazání z GitHubu obsah spolehlivě neodstraní. **Podáním nevzniká dossier ani autorizace** — o rozsahu rozhoduje výhradně vlastník záznamem v autorizačním logu.
+        <!-- vomaste-intake-form:v1 -->
   - type: markdown
     attributes:
       value: |
-        Rozsah pokrytí reálných osob určuje výhradně [append-only autorizační log v AGENTS.md](https://github.com/korczis/vomaste.cz/blob/master/AGENTS.md). „Je to zajímavé" ani „už to někde vyšlo" nestačí — návrh musí projít testem veřejného zájmu ([konstituce, § 7](https://github.com/korczis/vomaste.cz/blob/master/docs/constitution/OPEN_INTELLIGENCE_COMMONS.md)).
-  - type: input
-    id: scope
+        > ⚠️ **Tato issue bude veřejná a dlouhodobě dohledatelná.** Neposílejte neveřejné dokumenty, identitu oznamovatele, osobní kontaktní údaje ani citlivý materiál. Projekt zatím nemá důvěrný intake kanál a smazání z GitHubu obsah spolehlivě neodstraní — Git nezapomíná.
+        >
+        > **Podáním nevzniká dossier ani autorizace, ani publikované tvrzení.** Rozsah pokrytí reálných osob určuje výhradně vlastník projektu záznamem v [append-only autorizačním logu](https://github.com/korczis/vomaste.cz/blob/master/AGENTS.md). Podnět je vstup k posouzení, ne slib výsledku — a to i v případě, že bude nakonec převzat beze změny.
+  - type: markdown
     attributes:
-      label: Navrhovaný rozsah
-      description: Kdo/co přesně a které konkrétní, už publikované kauzy.
-    validations:
-      required: true
-  - type: textarea
-    id: interest
+      value: |
+        „Je to zajímavé" ani „už to někde vyšlo" samo o sobě nestačí — návrh musí obstát v testu veřejného zájmu ([konstituce, § 7](https://github.com/korczis/vomaste.cz/blob/master/docs/constitution/OPEN_INTELLIGENCE_COMMONS.md)): jaká veřejná funkce, veřejné prostředky nebo institucionální odpovědnost je ve hře.
+  - type: dropdown
+    id: submission_type
     attributes:
-      label: Odůvodnění veřejného zájmu
-      description: Jaká veřejná funkce, veřejné prostředky nebo institucionální odpovědnost je ve hře? Proč je pokrytí přiměřené?
-    validations:
-      required: true
-  - type: textarea
-    id: sources
-    attributes:
-      label: Výchozí zdroje
-      description: Jmenované, datované, nezávislé veřejné zdroje s URL. Pouze již publikované veřejné zdroje — žádné neveřejné dokumenty ani interní materiál.
-    validations:
-      required: true
-  - type: checkboxes
-    id: verejnost
-    attributes:
-      label: Potvrzení veřejnosti podání
+      label: Typ podnětu
+      description: Co přesně navrhujete.
       options:
-        - label: Beru na vědomí, že tato issue je veřejná a trvalá; neposílám neveřejné dokumenty, identitu oznamovatele, osobní kontaktní údaje ani citlivý materiál a rozumím, že podáním nevzniká dossier ani autorizace.
+        - "Nový dossier (nová osoba/subjekt)"
+        - "Nová entita (firma, spolek, vazba)"
+        - "Nové téma pro existující dossier"
+        - "Propojení existujících entit"
+    validations:
+      required: true
+  - type: input
+    id: subject
+    attributes:
+      label: Navržený subjekt
+      description: Koho nebo čeho se podnět týká? Jméno osoby, organizace, instituce nebo existujícího dossieru.
+      placeholder: Například osoba, firma, instituce nebo dossier
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Popis a kontext
+      description: Co by mělo být prověřeno? Popište vlastními slovy konkrétní otázku, událost nebo vztah — ne hotové obvinění.
+      placeholder: Co je potřeba prověřit, co už víte a co naopak nevíte?
+    validations:
+      required: true
+  - type: textarea
+    id: public_interest
+    attributes:
+      label: Veřejný zájem
+      description: Proč je téma ve veřejném zájmu? Vztah k veřejné funkci, veřejným prostředkům, rozhodování nebo jiné veřejně relevantní činnosti.
+    validations:
+      required: true
+  - type: textarea
+    id: source_urls
+    attributes:
+      label: Zdrojové odkazy
+      description: Jedna veřejná URL na řádek. Dostupnost ani důvěryhodnost zdroje nejsou automaticky potvrzeny — jen syntakticky zaznamenány. U návrhu nového dossieru bez alespoň jednoho zdroje počítejte s tím, že podnět skončí ve stavu „chybí informace".
+      placeholder: |
+        https://example.cz/clanek
+        https://example.cz/verejny-registr
+    validations:
+      required: false
+  - type: textarea
+    id: identifiers
+    attributes:
+      label: Identifikátory (nepovinné)
+      description: "Pokud je znáte: IČO, datová schránka nebo odkaz na veřejný rejstřík. Neuvádějte rodná čísla, osobní adresy ani jiné neveřejné identifikátory."
+    validations:
+      required: false
+  - type: textarea
+    id: known_unknowns
+    attributes:
+      label: Co zatím nevíme (nepovinné)
+      description: Oddělte doložené veřejné informace od otázek nebo nejistot.
+    validations:
+      required: false
+  - type: textarea
+    id: existing_references
+    attributes:
+      label: Souvislost s existujícím dossierem (nepovinné)
+      description: Odkazy nebo ID už existujících entit, dossierů či tvrzení na vomaste.cz, pokud jsou relevantní.
+    validations:
+      required: false
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: Potvrzení
+      options:
+        - label: Rozumím, že jde o veřejný GitHub issue a podnět bude veřejně viditelný.
+          required: true
+        - label: Nenahraji sem důvěrný materiál, citlivé důkazy ani údaje identifikující zdroj.
+          required: true
+        - label: Rozumím, že se nejedná o automatickou autorizaci ani publikaci — podnět jen čeká na posouzení vlastníkem.
           required: true

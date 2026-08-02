@@ -57,6 +57,18 @@ test("report always states blocked publication and pending authorization, regard
   assert.match(report, /Tento report není autorizace, redakční závěr ani publikovaný dossier\./);
 });
 
+// PHASE_005.md §20 — mandatory wording once the report reflects a real
+// GitHub Issue Form submission, not just a generic disclaimer.
+test("report states the public GitHub origin, form version, and the §20 mandatory disclaimers", () => {
+  const report = renderIntakeReport(manifestWith());
+  assert.match(report, /Zdroj podání: veřejná GitHub issue/);
+  assert.match(report, /Verze formuláře: `vomaste-intake-form:v1`/);
+  assert.match(report, /Tento report není potvrzením správnosti podnětu\./);
+  assert.match(report, /Přijaté URL nebyly automaticky uznány jako nezávislé ani důvěryhodné zdroje\./);
+  assert.match(report, /Rozsah nebyl autorizován\./);
+  assert.match(report, /Publikace zůstává blokována\./);
+});
+
 // Fence state at a given string offset: true if an odd number of fenced
 // code-block delimiters (lines starting with ``` of any length) occur
 // strictly before that offset — i.e. the offset sits inside an open fence.

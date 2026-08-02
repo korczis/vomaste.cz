@@ -192,11 +192,13 @@ export function renderIntakeReport(manifest) {
 ## Stav podnětu
 
 - Intake ID: \`${id}\`
+- Zdroj podání: veřejná GitHub issue
+- Verze formuláře: \`${system_observations.form_version}\`
 - Intake: ${INTAKE_STATUS_LABELS[workflow.intake_status] ?? workflow.intake_status}
 - Autorizace: čeká na vlastníka
 - Publikace: blokována
 
-> Tento report není autorizace, redakční závěr ani publikovaný dossier.
+> Tento report není autorizace, redakční závěr ani publikovaný dossier. Tento report není potvrzením správnosti podnětu. Přijaté URL nebyly automaticky uznány jako nezávislé ani důvěryhodné zdroje. Rozsah nebyl autorizován. Publikace zůstává blokována.
 
 ## Přijatý podnět
 

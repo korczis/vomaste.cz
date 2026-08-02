@@ -1,4 +1,4 @@
-# Intake local processor (Phase 2/3/4)
+# Intake local processor (Phase 2/3/4/5)
 
 `scripts/intake/process-issue.mjs` turns one local GitHub-issue-event
 fixture into an intake manifest, a Markdown report, and a
@@ -9,7 +9,12 @@ classification as part of the same pipeline (see
 since Phase 4, passing `--preflight` additionally runs a real,
 SSRF-hardened technical check of the submitted source URLs (see
 `docs/intake/url-preflight.md` and `docs/intake/security-boundary.md`).
-See `docs/intake/intake-manifest.md` for the manifest's own field
+Since Phase 5, the event fixture this CLI reads is a real, verified
+rendering of the real public GitHub Issue Form
+(`.github/ISSUE_TEMPLATE/navrh-dossieru.yml`) rather than an imagined
+shape — see `docs/intake/issue-form-contract.md` for the field/heading
+contract and `docs/intake/public-submission.md` for the public-facing
+how-to. See `docs/intake/intake-manifest.md` for the manifest's own field
 reference, and `docs/adr/ADR-public-dossier-intake.md` for the
 architecture this implements. No GitHub Actions, no GitHub API calls, no
 issue comments, no labels; see "What this phase does not do" below.
@@ -59,14 +64,18 @@ Companion commands:
 ```bash
 npm run intake:process -- --event <path> --output-dir <dir>   # same CLI, via npm
 npm run intake:validate -- <manifest.json>                    # re-validate an existing manifest
+npm run intake:validate-form                                  # structural check of .github/ISSUE_TEMPLATE/*.yml + config.yml (Phase 5)
 npm run intake:fixture                                        # smoke-test: one fixed fixture, fixed clock/commit, into .tmp/intake/ (gitignored) — always offline
 npm run intake:preflight-fixture                              # same idea, but --preflight through a MOCK DNS transport (never real network) — into .tmp/intake/preflight-fixture-run/
+npm run intake:e2e-fixture                                    # every tests/fixtures/intake/e2e-*.json through the FULL pipeline (parse→matching→risk→preflight→manifest→report), offline, into .tmp/intake/e2e-run/ (Phase 5)
 npm run intake:index                                          # regenerate the matching index on demand (npm run intake:fixture always builds it fresh anyway)
 npm run intake:match-fixture                                  # same fixture through the full Phase 3 pipeline, into .tmp/intake/match-fixture/
-npm run test:intake                                            # node --test scripts/intake/*.test.mjs + matching/ + risk/ + preflight/ (425 tests)
+npm run test:intake                                            # node --test scripts/intake/*.test.mjs + matching/ + risk/ + preflight/ (447 tests)
 npm run test:intake:matching                                   # matching subsystem only
 npm run test:intake:risk                                       # risk classifier subsystem only
 npm run test:intake:preflight                                  # URL preflight subsystem only
+npm run test:intake:form                                       # Issue Form ↔ parser compatibility + YAML structural validity (Phase 5)
+npm run test:intake:e2e                                        # golden e2e-*.json fixture scenarios + edit semantics + one genuinely-reachable mocked HTTP round trip (Phase 5)
 ```
 
 `test:intake`'s tests are also part of the repo's main `npm test`, so

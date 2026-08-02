@@ -4,7 +4,7 @@
 // parser bez potřeby"). Does no entity matching, no URL fetching, no
 // content classification — it only locates section boundaries and hands
 // back their raw text untouched.
-import { FORM_V1 } from "./constants.mjs";
+import { FORM_V1, GITHUB_EMPTY_FIELD_PLACEHOLDER } from "./constants.mjs";
 import { IntakeError, ERROR_CODES } from "./errors.mjs";
 
 const HEADING_LINE = /^### +(.+?) *\r?$/gm;
@@ -68,8 +68,26 @@ export function parseIssueFormV1(issueBody) {
   const unparsedSections = [];
   for (const { heading, content } of sections) {
     const key = reverseLookup(FORM_V1.headings, heading);
-    if (key) byKey[key] = content;
-    else unparsedSections.push({ heading, content });
+    if (!key) {
+      unparsedSections.push({ heading, content });
+      continue;
+    }
+    // §11/§25: a real GitHub submission renders an unanswered input/
+    // textarea/dropdown field as this literal placeholder, never as an
+    // empty section — applied to every text-valued heading (not just
+    // FORM_V1.optionalSections: "required section" here means the
+    // heading itself always exists in a well-formed body, which is true
+    // regardless of whether the underlying GitHub field is itself
+    // `required: true` — sourceUrls is a heading-required, GitHub-
+    // optional field per PHASE_005.md §6.6). `acknowledgements` is
+    // excluded: it's a checkboxes field, GitHub always lists every
+    // option's checked state, so this placeholder never legitimately
+    // appears there — and if a raw fixture forges it anyway, leaving it
+    // untouched means parseAcknowledgements below correctly finds zero
+    // recognized checkbox lines rather than silently treating it as an
+    // empty-but-valid answer.
+    const normalizedContent = key !== "acknowledgements" && content === GITHUB_EMPTY_FIELD_PLACEHOLDER ? "" : content;
+    byKey[key] = normalizedContent;
   }
 
   for (const requiredKey of FORM_V1.requiredSections) {

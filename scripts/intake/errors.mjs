@@ -25,6 +25,7 @@ export const ERROR_CODES = Object.freeze({
   // form detection / parsing (§9, §10)
   UNSUPPORTED_FORM_VERSION: "unsupported_form_version",
   MISSING_FORM_MARKER: "missing_form_marker",
+  DUPLICATE_FORM_MARKER: "duplicate_form_marker",
   DUPLICATE_SECTION: "duplicate_section",
   MISSING_REQUIRED_SECTION: "missing_required_section",
   // submission validation (§5, §11, §12, §13)
