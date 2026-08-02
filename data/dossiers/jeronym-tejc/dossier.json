@@ -253,6 +253,47 @@
         "sources": [
           "SRC-20"
         ]
+      },
+      {
+        "entity": "radim-dragoun",
+        "label": "Radim Dragoun",
+        "claims": [
+          "CLM-21"
+        ],
+        "sources": [
+          "SRC-11",
+          "SRC-12"
+        ]
+      },
+      {
+        "entity": "zdenek-kasal",
+        "label": "Zdeněk Kasal",
+        "claims": [
+          "CLM-25"
+        ],
+        "sources": [
+          "SRC-14"
+        ]
+      },
+      {
+        "entity": "jan-wintr",
+        "label": "Jan Wintr",
+        "claims": [
+          "CLM-42"
+        ],
+        "sources": [
+          "SRC-21"
+        ]
+      },
+      {
+        "entity": "pavel-samal",
+        "label": "Pavel Šámal",
+        "claims": [
+          "CLM-42"
+        ],
+        "sources": [
+          "SRC-21"
+        ]
       }
     ],
     "edges": [
@@ -270,7 +311,11 @@
       "edge-tejc-kompetencni-spor",
       "edge-marvanova-tejc",
       "edge-juchelka-komise",
-      "edge-benes-komise"
+      "edge-benes-komise",
+      "edge-tejc-dragoun",
+      "edge-tejc-kasal",
+      "edge-wintr-kompetencni-spor",
+      "edge-samal-kompetencni-spor"
     ]
   },
   "contentBlocks": [

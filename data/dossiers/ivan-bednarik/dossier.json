@@ -303,6 +303,28 @@
           "SRC-13",
           "SRC-12"
         ]
+      },
+      {
+        "entity": "ministerstvo-dopravy",
+        "label": "Ministerstvo dopravy ČR",
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01"
+        ]
+      },
+      {
+        "entity": "sfdi",
+        "label": "Státní fond dopravní infrastruktury (SFDI)",
+        "claims": [
+          "CLM-05",
+          "CLM-09"
+        ],
+        "sources": [
+          "SRC-03",
+          "SRC-05"
+        ]
       }
     ],
     "edges": [
@@ -324,7 +346,9 @@
       "edge-bednarik-patrick-schneider",
       "edge-bednarik-acri",
       "edge-bednarik-rsd",
-      "edge-bednarik-spor-cd-sprava-zeleznic-pozemky"
+      "edge-bednarik-spor-cd-sprava-zeleznic-pozemky",
+      "edge-bednarik-ministerstvo-dopravy",
+      "edge-bednarik-sfdi"
     ]
   },
   "contentBlocks": [

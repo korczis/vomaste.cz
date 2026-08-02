@@ -296,6 +296,48 @@
         "sources": [
           "SRC-07"
         ]
+      },
+      {
+        "entity": "stan",
+        "label": "STAN",
+        "claims": [
+          "CLM-09"
+        ],
+        "sources": [
+          "SRC-06"
+        ]
+      },
+      {
+        "entity": "ods",
+        "label": "ODS",
+        "claims": [
+          "CLM-09",
+          "CLM-15"
+        ],
+        "sources": [
+          "SRC-06",
+          "SRC-09"
+        ]
+      },
+      {
+        "entity": "top-09",
+        "label": "TOP 09",
+        "claims": [
+          "CLM-09"
+        ],
+        "sources": [
+          "SRC-06"
+        ]
+      },
+      {
+        "entity": "ministerstvo-obrany",
+        "label": "Ministerstvo obrany ČR",
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01"
+        ]
       }
     ],
     "edges": [
@@ -319,7 +361,12 @@
       "edge-zuna-nato",
       "edge-zuna-bezpecnostni-rada-statu",
       "edge-pavel-bezpecnostni-rada-statu",
-      "edge-macinka-pavel"
+      "edge-macinka-pavel",
+      "edge-josef-flek-stan",
+      "edge-martin-kupka-ods",
+      "edge-matej-ondrej-havel-top09",
+      "edge-alexandr-vondra-ods",
+      "edge-zuna-ministerstvo-obrany"
     ]
   },
   "contentBlocks": [

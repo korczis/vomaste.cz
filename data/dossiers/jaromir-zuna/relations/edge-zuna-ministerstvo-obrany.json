@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/relations/edge-zuna-ministerstvo-obrany",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-zuna-ministerstvo-obrany",
+  "relationId": "edge-zuna-ministerstvo-obrany",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/zuna"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/ministerstvo-obrany"
+  },
+  "relationType": "HOLDS_ROLE",
+  "label": "Zůna stojí v čele Ministerstva obrany ČR",
+  "status": "contextual",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-01"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-01"
+    }
+  ],
+  "subjects": [
+    "zuna"
+  ],
+  "directed": true,
+  "order": 26,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextový, strukturální vztah — dossier jej neuvádí jako vlastní doloženou investigaci, jen jako veřejně nesporné pozadí. Přidáno v rámci T-049 (provázání grafu, čtvrtá dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}
