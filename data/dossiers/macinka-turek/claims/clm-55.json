@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-55",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-55",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "text": "Vojtěch Dobeš (autor screenshotů z CLM-07) podle Deníku N uvedl, že policii kromě screenshotů předal i URL adresy původních příspěvků a metadata, a odložení věci pro promlčení hodnotí slovy: „Policie a státní zastupitelství daly naprosto jasně za pravdu nám, nikoliv Turkovi.“ Jde o jeho vlastní hodnocení procesního odložení, ne o nezávisle potvrzený forenzní nález ani o výrok orgánů činných v trestním řízení k pravosti materiálů",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-61"
+    }
+  ],
+  "subjects": [
+    "turek"
+  ],
+  "order": 55,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

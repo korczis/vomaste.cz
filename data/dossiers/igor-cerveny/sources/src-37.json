@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-37",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-37",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "title": "SRC-37 — Poslanecká sněmovna Parlamentu ČR (oficiální profil)",
+  "description": "Primární úřední profil poslance na webu Poslanecké sněmovny, nezávislý na profilu na webu Úřadu vlády (SRC-01): potvrzuje funkci ministra životního prostředí od 23. 2. 2026.",
+  "outlet": "Poslanecká sněmovna Parlamentu ČR",
+  "sourceType": "primární úřední záznam",
+  "url": "https://www.psp.cz/sqw/detail.sqw?id=6996",
+  "retrieved": "2026-08-02",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil poslance na webu Poslanecké sněmovny Parlamentu ČR,\notevřen a přečten 2026-08-02. Uvádí: **ministr životního prostředí od\n23. 2. 2026**; poslanec od října 2025; člen poslaneckého klubu\nMotoristů sobě; místopředseda výboru pro zdravotnictví a hospodářského\nvýboru; předseda stálé komise pro kontrolu Národního úřadu pro\nkybernetickou a informační bezpečnost.\n\n**Nezávislost**: samostatný primární záznam jiné státní instituce\n(Poslanecká sněmovna, moc zákonodárná) než SRC-01 (Úřad vlády, moc\nvýkonná) — obě instituce nezávisle na sobě vedou a zveřejňují vlastní\nevidenci téhož veřejného faktu, totiž že Červený od 23. 2. 2026 zastává\nfunkci ministra životního prostředí. Proto CLM-01 nese stav\n`CORROBORATED`.\n\n**Poznámka k typu zdroje a jeho limitům**: jde o další **primární\núřední záznam**, ne o nezávislé redakční šetření. Sebeprezentační\nčásti profilu (dosavadní kariéra) dossier jako fakt nepřebírá."
+    }
+  ],
+  "order": 37
+}
