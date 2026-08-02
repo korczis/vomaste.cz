@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-08",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-08",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar"
+  },
+  "title": "SRC-08 — ČeskéNoviny.cz (ČTK), 30. 7. 2026",
+  "description": "ČeskéNoviny.cz dokládá, že vláda usnesením z pondělí 27. 7. 2026 vyřadila NKÚ ze seznamu chráněných objektů Policie ČR a naopak na seznam nově zařadila sídlo ČNB.",
+  "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceType": "zpravodajství",
+  "sourceFamily": "ctk",
+  "url": "https://www.ceskenoviny.cz/zpravy/nku-ztrati-narok-na-policejni-ochranu-nove-ji-ma-dostat-cnb-potvrdilo-usneseni/2856632",
+  "published": "2026-07-30",
+  "retrieved": "2026-08-02",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-26"
+    }
+  ],
+  "subjects": [
+    "metnar"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Co dokládá.** Vláda usnesením z pondělí 27. 7. 2026 (mění dřívější\nusnesení z let 2008 a 2017) vyřadila Nejvyšší kontrolní úřad ze seznamu\nobjektů střežených Policií ČR; nově má být na seznamu chráněných objektů\nsídlo České národní banky. Přesné číslo usnesení článek neuvádí — dohledán\npokus o ověření přes portál ODok (usnesení 377/2026, 15. 6. 2026,\n\"Návrh na zrušení a změnu vybraných usnesení vlády\") nebyl jednoznačný\n(jiné datum, obsah dokumentu samotného nebyl bez stažení DOCX/PDF\nověřitelný) — dossier proto usnesení konkrétním číslem needuje a cituje\njen fakt přijetí podle ČeskéNoviny.cz.\n\n**Co to znamená.** Tohle už **není** návrh (jak ho popisoval\n[SRC-01](@/dossiers/lubomir-metnar/sources/src-01.md)) — je to přijaté\nusnesení vlády. Otázka, kterou GAP-01 sledoval (zda byl návrh přijat),\nje tímto zodpovězena: ano, přijat byl. Nejde o zjištění o účelnosti nebo\nneúčelnosti rozhodnutí — jen o jeho procesní stav.\n\n**Limity.** Nebylo přímo otevřeno vyjádření NKÚ k této konkrétní,\nfinální fázi (starší reakce prezidenta NKÚ Miloslava Kaly na samotný\nnávrh jsou už v dossieru přes SRC-01)."
+    }
+  ],
+  "order": 8
+}

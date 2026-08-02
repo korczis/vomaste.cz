@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-26",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-26",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar"
+  },
+  "text": "Vláda usnesením z 27. 7. 2026 vyřadila NKÚ ze seznamu objektů střežených Policií ČR a na jeho místo zařadila sídlo České národní banky — návrh z CLM-01 byl tímto přijat",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-08"
+    }
+  ],
+  "subjects": [
+    "metnar"
+  ],
+  "order": 26,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam tvrzení CLM-26 — shrnutí, stav a zdroje\nvýše jsou úplné. Zodpovídá otázku sledovanou\n[GAP-01](@/dossiers/lubomir-metnar/gaps/gap-01.md): návrh popsaný v\n[CLM-01](@/dossiers/lubomir-metnar/claims/clm-01.md) byl vládou přijat.\n\n**Co to je a není.** Jde o zaznamenání procesního stavu (usnesení\npřijato), ne o hodnocení, zda je rozhodnutí správné nebo účelné. NKÚ a\njeho vedení rozhodnutí veřejně kritizovali už ve fázi návrhu\n(CLM-02/CLM-03) — dossier tuto kritiku uvádí jako citovaný postoj, ne\njako fakt o vhodnosti rozhodnutí."
+    }
+  ]
+}

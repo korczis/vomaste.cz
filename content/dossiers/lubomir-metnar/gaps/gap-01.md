@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
-title = "GAP-01 — Osud návrhu na ukončení policejní ochrany NKÚ"
-description = "K datu kontroly jde o návrh; rozhodnutí nebylo ve zkontrolovaných zdrojích nalezeno."
+title = "GAP-01 — Osud návrhu na ukončení policejní ochrany NKÚ — uzavřeno"
+description = "Vláda usnesením z 27. 7. 2026 návrh přijala; NKÚ ztrácí policejní ochranu, ochranu nově dostává ČNB."
 template = "dossier-gap.html"
 weight = 1
 
@@ -23,3 +23,12 @@ Otevřenost mezery není zjištěním v žádném směru.
 
 **Podmínka uzavření**: doložené rozhodnutí (usnesení vlády, změna
 předpisu nebo jiný ověřitelný akt), ověřené přímým otevřením zdroje.
+
+**Aktualizace 2026-08-02 — podmínka splněna**: ČeskéNoviny.cz
+(30. 7. 2026, [SRC-08](@/dossiers/lubomir-metnar/sources/src-08.md))
+přímo otevřeno a ověřeno — vláda usnesením z pondělí 27. 7. 2026 návrh
+přijala. NKÚ byl vyřazen ze seznamu chráněných objektů Policie ČR,
+na jeho místo byla zařazena Česká národní banka (viz
+[CLM-26](@/dossiers/lubomir-metnar/claims/clm-26.md)). Mezera je tímto
+uzavřena — otázka, kterou sledovala, má nyní doložený, ověřený procesní
+výsledek.

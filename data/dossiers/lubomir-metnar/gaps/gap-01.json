@@ -9,13 +9,16 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar"
   },
-  "title": "GAP-01 — Osud návrhu na ukončení policejní ochrany NKÚ",
-  "description": "K datu kontroly jde o návrh; rozhodnutí nebylo ve zkontrolovaných zdrojích nalezeno.",
-  "priority": "vysoká",
-  "checked": "2026-07-30",
+  "title": "GAP-01 — Osud návrhu na ukončení policejní ochrany NKÚ — uzavřeno",
+  "description": "Vláda usnesením z 27. 7. 2026 návrh přijala; NKÚ ztrácí policejní ochranu, ochranu nově dostává ČNB.",
+  "priority": "nízká",
+  "checked": "2026-08-02",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-26"
     }
   ],
   "subjects": [
@@ -24,7 +27,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Citovaný zdroj ([SRC-01](@/dossiers/lubomir-metnar/sources/src-01.md))\npopisuje **návrh** ministerstva vnitra. Ve zkontrolovaných zdrojích\nnebyl k datu kontroly nalezen doklad o tom, zda byl návrh přijat,\nodmítnut, změněn, ani zda o něm vláda hlasovala.\n\nOtevřenost mezery není zjištěním v žádném směru.\n\n**Podmínka uzavření**: doložené rozhodnutí (usnesení vlády, změna\npředpisu nebo jiný ověřitelný akt), ověřené přímým otevřením zdroje."
+      "value": "Citovaný zdroj ([SRC-01](@/dossiers/lubomir-metnar/sources/src-01.md))\npopisuje **návrh** ministerstva vnitra. Ve zkontrolovaných zdrojích\nnebyl k datu kontroly nalezen doklad o tom, zda byl návrh přijat,\nodmítnut, změněn, ani zda o něm vláda hlasovala.\n\nOtevřenost mezery není zjištěním v žádném směru.\n\n**Podmínka uzavření**: doložené rozhodnutí (usnesení vlády, změna\npředpisu nebo jiný ověřitelný akt), ověřené přímým otevřením zdroje.\n\n**Aktualizace 2026-08-02 — podmínka splněna**: ČeskéNoviny.cz\n(30. 7. 2026, [SRC-08](@/dossiers/lubomir-metnar/sources/src-08.md))\npřímo otevřeno a ověřeno — vláda usnesením z pondělí 27. 7. 2026 návrh\npřijala. NKÚ byl vyřazen ze seznamu chráněných objektů Policie ČR,\nna jeho místo byla zařazena Česká národní banka (viz\n[CLM-26](@/dossiers/lubomir-metnar/claims/clm-26.md)). Mezera je tímto\nuzavřena — otázka, kterou sledovala, má nyní doložený, ověřený procesní\nvýsledek."
     }
   ],
   "order": 1
