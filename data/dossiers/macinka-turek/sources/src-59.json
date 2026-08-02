@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-59",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-59",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-59 — ČT24 (Česká televize), 7. 11. 2025",
+  "description": "ČT24 shrnuje pokuty Úřadu pro dohled nad hospodařením politických stran a hnutí (ÚDHPSH) za porušení pravidel volební kampaně 2025 — u Motoristů sobě 25 000 Kč za chybějící povinné údaje o zadavateli/zpracovateli a za zneužití komunikačních médií obce Vražné k propagaci.",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/padly-pokuty-za-volebni-kampan-ods-spd-nebo-motoriste-zaplati-tisice-korun-366948",
+  "published": "2025-11-07",
+  "retrieved": "2026-08-02",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-53"
+    }
+  ],
+  "subjects": [
+    "macinka"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Co dokládá.** ÚDHPSH uložil Motoristům sobě pokutu 25 000 Kč za dvě\npochybení v kampani 2025: (1) neuvedení povinných údajů o zadavateli a\nzpracovateli volebního materiálu; (2) využití komunikačních médií obce\nVražné (Instagram, Facebook, obecní rozhlas) ke zveřejnění pozvánky na\npředvolební akci. Samostatně obec Vražné dostala vlastní pokutu\n15 000 Kč.\n\n**Nezávislost.** Nezávisle na [SRC-60](@/dossiers/macinka-turek/sources/src-60.md)\n(Deník N) — jiná redakce, jiný důraz (ČT24 na detaily porušení, Deník N\nna Macinkovu reakci); obě popisují tutéž pokutu.\n\n**Limity.** Tento zdroj nedokládá Macinkovu reakci — tu viz SRC-60."
+    }
+  ],
+  "order": 59
+}

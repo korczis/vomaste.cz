@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-60",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-60",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "title": "SRC-60 — Deník N, 7. 11. 2025",
+  "description": "Deník N dokumentuje Macinkovu veřejnou reakci na pokutu ÚDHPSH za porušení pravidel kampaně 2025 — přímý citát z jeho facebookového příspěvku.",
+  "outlet": "Deník N",
+  "sourceType": "zpravodajství",
+  "url": "https://denikn.cz/1888208/motoriste-a-obec-dostali-pokutu-za-poruseni-pravidel-zacnu-se-o-vas-zajimat-pohrozil-urednikum-macinka/",
+  "published": "2025-11-08",
+  "retrieved": "2026-08-02",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-54"
+    }
+  ],
+  "subjects": [
+    "macinka"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Čestné upřesnění přístupu.** Deník N je za placenou zdí — automatizovaný\nnástroj načetl titulek, perex a úvodní odstavce (kde je i citovaný\nfacebookový výrok), ne celý placený text s podrobným rozborem porušení\npravidel. Pro tu část viz místo toho [SRC-59](@/dossiers/macinka-turek/sources/src-59.md)\n(ČT24, plně veřejně dostupné). Titulek a citát samotné jsou standardně\nmimo placenou zeď (viditelné i nepředplatitelům) — na nich CLM-54 stojí.\n\n**Co dokládá.** Petr Macinka v páteční (7. 11. 2025) facebookové reakci\nna pokutu napsal: „Nevím, jaké drogy berou pracovníci z Úřadu..., ale\nasi se začnu mnohem více zajímat\" [o tom, kolik jich tam vlastně\npracuje a jestli pro lidi vůbec něco dělají — přesné plné znění\ncitátu nebylo tomuto přehledu dostupné mimo placenou zeď]. Titulek\nDeníku N tento výrok shrnuje jako výhrůžku úřadu (\"pohrozil\núředníkům\").\n\n**Co to je a není.** Toto je citát — dokládá, že výrok padl, ne že je\njeho obsah oprávněný nebo neoprávněný vůči úřadu. Dossier ho vede jako\nCITACE, ne jako vlastní hodnocení."
+    }
+  ],
+  "order": 60
+}

@@ -109,6 +109,8 @@ Každé tvrzení má stav ověřenosti a odkaz na zdroj v [registru zdrojů](#re
 | <a id="clm-50"></a>[CLM-50](@/dossiers/macinka-turek/claims/clm-50.md) | Podle ukrajinského registrového agregátoru YouControl (USREOU) je GMR GAS UA LLC k 2026-08-01 ve stavu „Registered" (formálně zaregistrována, nikoli v likvidaci ani vymazaná) | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-57](@/dossiers/macinka-turek/sources/src-57.md) |
 | <a id="clm-51"></a>[CLM-51](@/dossiers/macinka-turek/claims/clm-51.md) | Podle YouControlu drží v GMR GAS UA LLC podíly GMR GAS s.r.o. (40 %), Petr Macinka (20 %) a Tomáš Čábal (40 %); Čábal je zapsán jako statutární orgán (s omezením jednat samostatně nad 50 000 EUR) a jako skutečný majitel s přímým rozhodujícím vlivem | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-57](@/dossiers/macinka-turek/sources/src-57.md) |
 | <a id="clm-52"></a>[CLM-52](@/dossiers/macinka-turek/claims/clm-52.md) | Státní zástupkyně Obvodního státního zastupitelství pro Prahu 4 rozhodnutím ze dne 27. 7. 2026 zamítla stížnost bývalé partnerky Filipa Turka proti odložení trestního oznámení pro promlčení; odložení věci je tím pravomocné. Jde i nadále výhradně o procesní rozhodnutí o promlčení, ne o posouzení viny nebo neviny — které už z tohoto důvodu žádný orgán nikdy neučiní | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-58](@/dossiers/macinka-turek/sources/src-58.md) |
+| <a id="clm-53"></a>[CLM-53](@/dossiers/macinka-turek/claims/clm-53.md) | ÚDHPSH uložil Motoristům sobě v listopadu 2025 pokutu 25 000 Kč za porušení pravidel kampaně 2025 — chybějící povinné údaje o zadavateli/zpracovateli volebního materiálu a využití komunikačních médií obce Vražné (Instagram, Facebook, obecní rozhlas) k propagaci; obec dostala vlastní pokutu 15 000 Kč | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-59](@/dossiers/macinka-turek/sources/src-59.md) |
+| <a id="clm-54"></a>[CLM-54](@/dossiers/macinka-turek/claims/clm-54.md) | Petr Macinka na pokutu ÚDHPSH reagoval 7. 11. 2025 na Facebooku slovy „Nevím, jaké drogy berou pracovníci z Úřadu..., ale asi se začnu mnohem více zajímat" — Deník N tento výrok popsal jako výhrůžku úřadu | <span class="status-badge status-quote">CITACE</span> | [SRC-60](@/dossiers/macinka-turek/sources/src-60.md) |
 
 ## Politická kariéra
 
@@ -234,6 +236,14 @@ významnější roli.
 Zbývá nedohledáno: majetek/nemovitosti Macinky a úplná rekonciliace
 sporných čísel u Chladova sponzoringu (oficiální evidence vs. jeho
 vlastní vyjádření) — viz aktualizovaný stav [GAP-04](@/dossiers/macinka-turek/gaps/gap-04.md) a [GAP-05](@/dossiers/macinka-turek/gaps/gap-05.md).
+
+**Pokuta za vedení kampaně (listopad 2025)**: ÚDHPSH uložil Motoristům
+sobě pokutu 25 000 Kč za chybějící povinné údaje o zadavateli/
+zpracovateli volebního materiálu a za využití komunikačních médií obce
+Vražné k propagaci; obec dostala vlastní pokutu 15 000 Kč. Macinka na
+pokutu reagoval na Facebooku slovy „Nevím, jaké drogy berou pracovníci
+z Úřadu..., ale asi se začnu mnohem více zajímat" — Deník N to popsal
+jako výhrůžku úřadu. *(Zdroj: ČT24, Deník N)*
 
 ## Kauza z roku 2024: fotografie a sbírka svícnů
 

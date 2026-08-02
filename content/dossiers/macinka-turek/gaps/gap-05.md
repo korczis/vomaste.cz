@@ -43,3 +43,14 @@ bez podrobného rozpisu jednotlivých dárců v HTML podobě — podrobná
 rekonciliace by vyžadovala jejich ruční průchod, který tento přehled
 neprovedl. Systematický průchod registru dle zákona č. 159/2006 Sb. jako
 celku rovněž nebyl proveden — viz [Co tento přehled nezkoumal](@/dossiers/macinka-turek/_index.md#co-tento-prehled-nezkoumal).
+
+**Opakovaná kontrola k 2026-08-02**: přímo otevřen výroční report ÚDHPSH
+za rok 2025 (udh.gov.cz) — neobsahuje rozpis jednotlivých dárců, jen
+obecnou metodiku dohledu; k samotné rekonciliaci Chladovy částky žádný
+nový zdroj nenalezen, stav beze změny. Vedlejším nálezem téhož hledání
+je ale nová, samostatná skutečnost o vedení kampaně 2025 — pokuta
+ÚDHPSH Motoristům a Macinkova reakce, viz nově
+[CLM-53](@/dossiers/macinka-turek/claims/clm-53.md) a
+[CLM-54](@/dossiers/macinka-turek/claims/clm-54.md). Nejde o rozklíčování
+původního rozporu 638 864 Kč vs. „necelé dva miliony" — ten zůstává
+otevřený beze změny.

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-54",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-54",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "text": "Petr Macinka na pokutu ÚDHPSH reagoval 7. 11. 2025 na Facebooku slovy „Nevím, jaké drogy berou pracovníci z Úřadu..., ale asi se začnu mnohem více zajímat\" — Deník N tento výrok popsal jako výhrůžku úřadu",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-60"
+    }
+  ],
+  "subjects": [
+    "macinka"
+  ],
+  "order": 54,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam tvrzení CLM-54 — shrnutí, stav a zdroje\nvýše jsou úplné. Verifikuje, že výrok padl, ne že je oprávněný nebo\nneoprávněný. Plné znění citátu nebylo tomuto přehledu dostupné mimo\nplacenou zeď Deníku N — viz limity u\n[SRC-60](@/dossiers/macinka-turek/sources/src-60.md). Kontext (za co byla\npokuta) je v [CLM-53](@/dossiers/macinka-turek/claims/clm-53.md)."
+    }
+  ]
+}
