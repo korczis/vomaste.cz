@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-19",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-19",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/boris-stastny"
+  },
+  "title": "SRC-19 — Zdravotnický deník",
+  "description": "Stěhování v centru Prahy: Ministr pro sport a zdraví odhalil, kam se přesouvá jeho úřad.",
+  "outlet": "Zdravotnický deník",
+  "sourceType": "odborné zpravodajství",
+  "url": "https://www.zdravotnickydenik.cz/2026/07/ministr-boris-stastny-stehovani-urad/",
+  "published": "2026-07-14",
+  "retrieved": "2026-08-02",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "stastny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zdravotnický deník dne 14. 7. 2026 nezávisle na oficiálním profilu na\nvlada.gov.cz (SRC-01) potvrzuje funkci: „Ministr Boris Šťastný\n(Motoristé)\" je označen jako **ministr pro sport, prevenci a zdraví**\nv souvislosti se stěhováním úřadu do budovy v pražské Jindřišské ulici.\n\n**Nezávislost.** Jiný vydavatel než vláda ČR (oficiální web) —\nZdravotnický deník je odborné zpravodajské médium se zaměřením na\nzdravotnictví, redakčně nezávislé na Úřadu vlády. U CLM-01 se proto\npočítají jako dvě nezávislá potvrzení funkce."
+    }
+  ],
+  "order": 19
+}
