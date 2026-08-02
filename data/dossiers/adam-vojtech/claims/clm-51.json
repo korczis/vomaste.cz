@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-51",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-51",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "text": "Podle interního auditu olomouckého kardiocentra z února 2025 měla plnou shodu mezi studijní dokumentací a daty jen 2 z přibližně 70 pacientů zařazených do studie PROFID EHRA; u většiny byla dokumentace dodatečně upravena.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-37"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "order": 51,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam tvrzení CLM-51 — shrnutí, stav a zdroj\nvýše jsou úplné. Upřesňuje obecnější [CLM-04](@/dossiers/adam-vojtech/claims/clm-04.md)\no konkrétní míru zjištěných úprav dokumentace a odpovídá na\n[GAP-01](@/dossiers/adam-vojtech/gaps/gap-01.md)."
+    }
+  ]
+}

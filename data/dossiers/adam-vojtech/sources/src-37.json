@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-37",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-37",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "title": "SRC-37 — Deník.cz, 17. 3. 2026",
+  "description": "Kauza olomouckých defibrilátorů: většina pacientů měla podle interního auditu upravenou zdravotnickou dokumentaci.",
+  "outlet": "Deník.cz (VLTAVA LABE MEDIA)",
+  "sourceType": "zpravodajství",
+  "url": "https://www.denik.cz/regiony/defibrilatory-olomouc-fakultni-nemocnice-kardiologie-taborsky-profid-ehra.html",
+  "published": "2026-03-17",
+  "retrieved": "2026-08-03",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-51"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Co dokládá.** Podle interního auditu olomouckého kardiocentra z února 2025 měla „plná shoda mezi studijní dokumentací, kritérii studie a daty“ pouze 2 pacienti z přibližně 70 zařazených do studie PROFID EHRA; u výrazné většiny byly v chorobopisu větší či menší dodatečné úpravy — příklady zahrnují dopsaný údaj o infarktu u pacienta, který jej nikdy neprodělal, a vymazání informace o akutním infarktu u jiného pacienta. Primárním zdrojem dat je Seznam Zprávy ([SRC-02](@/dossiers/adam-vojtech/sources/src-02.md)); Deník.cz zprávu přebírá a doplňuje vyjádření mluvčího nemocnice.\n\n**Proč je to tu důležité.** Odpovídá na [GAP-01](@/dossiers/adam-vojtech/gaps/gap-01.md): iROZHLAS.cz článek s titulkem obsahujícím totéž tvrzení („Falešná data i vysoký počet operací…“) zůstává technicky nedostupný (HTTP 403), ale stejné věcné zjištění je doloženo tímto přímo otevřeným a nezávisle publikovaným zdrojem.\n\n**Nezávislost.** Deník.cz (VLTAVA LABE MEDIA) je vůči Seznam Zprávy odlišný vydavatelský dům; datum publikace je shodné s SRC-02, jde o dobovou reprodukci téhož zjištění, ne o druhé nezávislé investigativní ověření."
+    }
+  ],
+  "order": 37
+}
