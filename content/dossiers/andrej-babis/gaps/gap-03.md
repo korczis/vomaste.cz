@@ -30,3 +30,7 @@ otevřená proto, aby bylo výslovně řečeno, že autorizace tématu **není**
 doklad, že o něm je co psát: autorizace určuje, co se **smí** pokrýt,
 doložení určuje, co se **pokryje**. Jediné, co je doložené, je neúspěšná
 akvizice — a víc tenhle dossier o Setuze netvrdí.
+
+**Opakovaná kontrola k 2026-08-02** (cílené dotazy na Setuzu
+v aktuálním zpravodajství): žádný nový doložený vývoj ani nové
+otevřené zdroje; stav beze změny.

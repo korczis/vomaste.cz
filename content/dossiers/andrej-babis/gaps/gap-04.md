@@ -25,3 +25,9 @@ ověřit přímým otevřením.
 Podle pravidel tohoto webu se z nedostupného zdroje nepřebírá nic — ani
 „podle médií". Mezera zůstává otevřená, dokud nebude k dispozici jmenovaný
 zdroj, který jde otevřít a přečíst.
+
+**Opakovaná kontrola k 2026-08-02**: kandidátní zpravodajství
+k rozsudkům o střetu zájmů z let 2024–2025 mimo správní soudnictví
+existuje u vydavatele, jehož plnotext nelze automatizovaně otevřít
+(HTTP 403), a proto ho dossier necituje; jiný otevřený plnotext
+nenalezen. Mezera trvá beze změny.

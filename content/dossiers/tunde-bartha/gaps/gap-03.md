@@ -26,3 +26,8 @@ výslovně vylučuje z rozsahu.
 
 Otevřenost není zjištění žádným směrem: neznamená, že vztah neexistuje,
 ani že existuje. Znamená, že doložen není.
+
+**Opakovaná kontrola k 2026-08-02**: nové cílené dotazy nevrátily
+žádné jmenované nezávislé zpravodajství dokládající prověřovaný
+vztah. Výsledek původního prověření platí beze změny — dossier o
+takovém vztahu nadále neuvádí nic.
