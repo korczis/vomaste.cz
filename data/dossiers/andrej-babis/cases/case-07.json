@@ -24,11 +24,38 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-96"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-97"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-98"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-99"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-100"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-101"
     }
   ],
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-69"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-70"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-71"
     }
   ],
   "subjects": [],

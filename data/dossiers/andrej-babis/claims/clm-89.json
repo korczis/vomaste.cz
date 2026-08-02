@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-89",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-89",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "Skupina Agrofert vstoupila do Kosteleckých uzenin v roce 2004 koupí 34 % akcií; od roku 2005 firmu podle citovaného zpravodajství ovládá. Nabytí podílu a pozdější převzetí firmy je samo o sobě legální majetková transakce a citované zdroje netvrdí opak",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-65"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-66"
+    }
+  ],
+  "subjects": [],
+  "order": 89,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

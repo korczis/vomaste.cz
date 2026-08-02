@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-90",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-90",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "Jan Boček, ředitel firmy od roku 1990, k prodeji uvedl: „Andrej Babiš koupil těch svých původních 34 procent akcií za tři sta milionů, za kolik pak koupil ten zbytek? To se ani neptejte!“ a popsal telefonát z financující banky, podle něhož banka zastaví financování, nebude-li mít firma jednoho majitele — doloženo je, že to řekl; jde o líčení jedné strany transakce",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-65"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-66"
+    }
+  ],
+  "subjects": [],
+  "order": 90,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

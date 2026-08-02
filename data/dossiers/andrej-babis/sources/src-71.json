@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-71",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-71",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-71 — ČeskéNoviny.cz: EK zaslala českým úřadům další dotazy k Babišovu střetu zájmů (7. 5. 2026)",
+  "description": "ČTK zpráva přebírající zjištění Seznam Zpráv: EK poslala druhou sadu otázek k Babišovu střetu zájmů; reakce SZIF (zodpovězeno vše; stanovisko EK „právně nezávazné“) a riziko formálního auditu.",
+  "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceType": "zpravodajství",
+  "url": "https://www.ceskenoviny.cz/zpravy/sz-evropska-komise-zaslala-ceskym-uradum-dalsi-dotazy-k-babisovu-stretu-zajmu/2822355",
+  "published": "2026-05-07",
+  "retrieved": "2026-08-02",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-100"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-101"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "ČeskéNoviny.cz (ČTK) 7. 5. 2026, s odvoláním na Seznam Zprávy: EK\n„zaslala do Česka druhou sadu otázek“, protože předchozí odpověď\npodle SZ nestačila. SZIF: „s Evropskou komisí komunikuje a zodpověděl\njí veškeré dotazy“; ředitel SZIF Dlouhý: stanovisko EK „je právně\nnezávazné“. Riziko dle SZ: nebude-li Komise spokojena, „spustí…\nformální audit, který může skončit tím, že EU nařídí peníze vyplacené\nAgrofertu vrátit“.\n\n**Poznámka k přesnosti a limitům**: agenturní text ČTK přebírající\nzjištění Seznam Zpráv — pro korroboraci jde o **jednu zdrojovou\nrodinu**; existence druhé sady otázek není doložena primárním\ndokumentem EK. Otevřeno a přečteno 2026-08-02."
+    }
+  ],
+  "order": 71
+}

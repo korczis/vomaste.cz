@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-67",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-67",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-67 — Jihlavský deník: Zemřel bývalý šéf Kosteleckých uzenin (28. 11. 2017)",
+  "description": "Nekrolog Jana Bočka (zemřel 26. 11. 2017, 69 let): řídil firmu od 1990, s dalšími manažery stanul před soudem pro tunelování, soudy je osvobodily; poslední roky žil v ústraní.",
+  "outlet": "Deník.cz (VLTAVA LABE MEDIA)",
+  "sourceType": "regionální zpravodajství",
+  "url": "https://jihlavsky.denik.cz/zpravy-region/zemrel-byvaly-sef-kosteleckych-uzenin-posledni-roky-zil-v-lesich/",
+  "published": "2017-11-28",
+  "retrieved": "2026-08-02",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-91"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-95"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Jihlavský deník 28. 11. 2017: „V neděli 26. listopadu zemřel Jan\nBoček, bývalý šéf Kosteleckých uzenin.“ Firmu řídil od roku 1990;\n„společně s dalšími manažery tehdy stanuli i před soudem a byli\nobviněni z tunelování firmy… Soudy potom manažery osvobodily, ale\npochybné nálepky už se Boček nezbavil.“ V průběhu stíhání skončil\nv nemocnici s infarktem; poslední roky žil v ústraní na chatě.\nPodle textu (s odkazem na Neovlivní.cz) mu bylo 69 let.\n\n**Poznámka k přesnosti a limitům**: nekrolog; pravomocnost rozsudků\nani jména dalších manažerů neuvádí. Otevřeno a přečteno 2026-08-02."
+    }
+  ],
+  "order": 67
+}
