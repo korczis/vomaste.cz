@@ -9,18 +9,22 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
   },
-  "title": "GAP-04 — Přesné datum a obsah prvních medializovaných informací (prosinec 2025, Seznam Zprávy) a in",
-  "description": "Opírají se o retrospektivní zmínky ve zpravodajství SZ a o komentář; původní prosincové články nebyly v této rešerši otevřeny.",
-  "priority": "střední",
-  "checked": "2026-07-30",
-  "claims": [],
+  "title": "GAP-04 — Přesné datum a obsah prvních medializovaných informací (prosinec 2025, Seznam Zprávy) — doloženo",
+  "description": "Původní prosincový článek (16. 12. 2025, Seznam Zprávy) byl přímo otevřen a přečten; doplňuje i vnitřní časovou osu nemocnice (CLM-54).",
+  "priority": "nízká",
+  "checked": "2026-08-03",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-54"
+    }
+  ],
   "subjects": [
     "vojtech"
   ],
   "content": [
     {
       "type": "markdown",
-      "value": "Přesné datum a obsah prvních medializovaných informací (prosinec 2025, Seznam Zprávy) a interní časová osa v nemocnici (varování primáře, audit) nejsou nezávisle doloženy.\n\n**Proč je to mezera**: Opírají se o retrospektivní zmínky ve zpravodajství SZ a o komentář; původní prosincové články nebyly v této rešerši otevřeny. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+      "value": "Přesné datum a obsah prvních medializovaných informací (prosinec 2025, Seznam Zprávy) — doloženo\n\n**Původní mezera** (30. 7. 2026): tvrzení o prvním zveřejnění se opírala jen o retrospektivní zmínky v pozdějším zpravodajství a komentáři; původní prosincové články nebyly v tehdejší rešerši otevřeny.\n\n**Ověřeno 3. 8. 2026**: přímo otevřen a přečten původní článek Seznam Zpráv „Deset let růstu, pak náhlý zlom. Proč se policie zajímá o implantace v Olomouci“ (Jiří Pšenička, Radek Kedroň, publikováno 16. 12. 2025) — viz [CLM-54](@/dossiers/adam-vojtech/claims/clm-54.md). Doplňuje přesné datum prvního zveřejnění i vnitřní časovou osu nemocnice (zjištění nesrovnalostí a vystoupení ze studie PROFID EHRA na přelomu ledna/února 2025).\n\nTato mezera je tímto doložena a uzavřena."
     }
   ],
   "order": 4

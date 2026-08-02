@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-54",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-54",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "text": "Kauzu poprvé veřejně zveřejnily Seznam Zprávy 16. 12. 2025: FN Olomouc provedla v roce 2024 757 implantací defibrilátorů (přes 16 % všech v ČR) oproti 397 v roce 2015; vedení nemocnice se o údajných formálních nesrovnalostech ve studii PROFID EHRA dozvědělo na přelomu ledna a února 2025 a z projektu vystoupilo.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-40"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "order": 54,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam tvrzení CLM-54 — shrnutí, stav a zdroj\nvýše jsou úplné. Odpovídá na [GAP-04](@/dossiers/adam-vojtech/gaps/gap-04.md)\npřímo otevřeným prvotním zdrojem, ne retrospektivní zmínkou."
+    }
+  ]
+}
