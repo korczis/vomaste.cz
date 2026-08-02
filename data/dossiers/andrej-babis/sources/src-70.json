@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-70",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-70",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-70 — Transparency International ČR: RSVP TRUST těžko obstojí před evropskými předpisy (13. 2. 2026)",
+  "description": "Stanovisko TI ČR k statutu fondu RSVP Trust: jmenovité výhrady Davida Kotory, Anny Jakůbkové a Kryštofa Doležala; citace podmínky zániku fondu do 120 dnů bez převodu akcií.",
+  "outlet": "Transparency International ČR",
+  "sourceType": "stanovisko organizace",
+  "url": "https://www.transparency.cz/sverensky-fond-rsvp-trust-andreje-babise-tezko-obstoji-pred-evropskymi-predpisy-v-kauze-premierova-stretu-zajmu/",
+  "published": "2026-02-13",
+  "retrieved": "2026-08-02",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-98"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-99"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Transparency International ČR 13. 2. 2026: stanovisko k statutu RSVP\nTrust. David Kotora (výkonný ředitel): statut „potvrzuje, že premiér\nBabiš nevyřešil svůj střet zájmů“; fond má „rádoby nezávislou správu,\nkterá po konci Babišova vládního angažmá přejde do rukou jeho\nvybraných potomků“. Anna Jakůbková (právnička): uspořádání „po\nskončení Babišova působení ve vládě umožňuje návrat fondu pod vliv\nrodiny“. Kryštof Doležal (právník): „Není úplně zřejmé, jaké\nveřejnoprávní souhlasy má premiér Babiš na mysli“; „Právě tito úředníci\njsou přitom těmi, kdo reálně rozhoduje v dotačních řízeních.“ Text\ncituje i podmínku zániku fondu, neuskuteční-li se do 120 dnů od\nzaložení (22. 12. 2025) převod akcií Agrofertu.\n\n**Poznámka k přesnosti a limitům**: TI je **zainteresovaný watchdog**\na dlouhodobý kritik Babišova uspořádání — vše z tohoto zdroje je\nvedeno jako atribuované stanovisko organizace, ne jako zjištění\norgánu. Otevřeno a přečteno 2026-08-02."
+    }
+  ],
+  "order": 70
+}

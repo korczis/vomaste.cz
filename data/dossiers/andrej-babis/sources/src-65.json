@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-65",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-65",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-65 — Seznam Zprávy: Jak přišel o Kostelecké uzeniny a skončil v lese (30. 4. 2017)",
+  "description": "Investigativní rekonstrukce převzetí Kosteleckých uzenin Agrofertem (vstup 2004, 34 % akcií) postavená na rozhovoru s bývalým ředitelem Janem Bočkem; autoři Jiří Kubík a Sabina Slonková.",
+  "outlet": "Seznam Zprávy",
+  "sourceType": "investigativní zpravodajství",
+  "url": "https://www.seznamzpravy.cz/clanek/jak-babisova-utopila-kozacky-za-40-tisic-a-zemanuv-pritel-ztratil-cely-zivot-30288",
+  "published": "2017-04-30",
+  "retrieved": "2026-08-02",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-89"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-90"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-91"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-94"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Seznam Zprávy 30. 4. 2017 (Jiří Kubík, Sabina Slonková): rekonstrukce\npřevzetí Kosteleckých uzenin. Článek dokládá: vstup Agrofertu v roce\n2004 koupí **34 % akcií**; Bočkovo tvrzení, že Babiš původní podíl\nkoupil „za tři sta milionů“; Bočkovo líčení telefonátu z financující\nbanky (zastavení financování, nebude-li mít firma jednoho majitele);\nobvinění manažerů z tunelování a „opakované verdikty, že Boček a spol.\nnic trestného neudělali“; Bočkův infarkt v průběhu stíhání. Článek\nvýslovně uvádí, že „Andrej Babiš odmítl reportérům na toto téma\nposkytnout rozhovor“.\n\n**Poznámka k přesnosti a limitům**: jádro textu je **líčení jedné\nstrany** (Bočka); kupní cena a průběh jednání nejsou doloženy\nnezávisle. Pravomocnost zprošťujících rozsudků článek neuvádí\n(vede [GAP-07](@/dossiers/andrej-babis/gaps/gap-07.md)).\nOtevřeno a přečteno 2026-08-02."
+    }
+  ],
+  "order": 65
+}

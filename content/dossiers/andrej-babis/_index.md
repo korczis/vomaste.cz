@@ -13,7 +13,7 @@ record_type = "dossier"
 dossier_type = "entity"
 lang = "cs"
 seo_type = "ProfilePage"
-updated = "2026-08-01"
+updated = "2026-08-02"
 reviewed_at = "2026-08-01"
 +++
 Andrej Babiš je předsedou vlády České republiky. Tento dossier pokrývá
@@ -264,6 +264,47 @@ platí pouze pro tento jeden dotační spor.
 
 | <a id="clm-53"></a>[CLM-53](@/dossiers/andrej-babis/claims/clm-53.md) | Andrej Babiš podle analýzy z roku 2011 o ústeckou Setuzu dlouhodobě usiloval, firmu ale nezískal a vybudoval místo toho vlastní závod Preol na výrobu surovin pro biopaliva; citovaný zdroj neuvádí v souvislosti se Setuzou žádné jeho pochybení | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-25](@/dossiers/andrej-babis/sources/src-25.md) |
 | <a id="clm-54"></a>[CLM-54](@/dossiers/andrej-babis/claims/clm-54.md) | Francouzská policie v květnu 2026 uzavřela vyšetřování nákupu nemovitostí na jihu Francie a případ převzala Národní finanční prokuratura (PNF), která má o dalším postupu rozhodnout do konce roku 2026; poté, co se Babiš koncem roku 2025 znovu stal předsedou vlády, získal podle francouzských pravidel imunitu, jež ho po dobu výkonu funkce chrání před případným stíháním ve Francii | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-26](@/dossiers/andrej-babis/sources/src-26.md) |
+
+| ID | Tvrzení | Stav | Zdroje |
+|---|---|---|---|
+| <a id="clm-89"></a>[CLM-89](@/dossiers/andrej-babis/claims/clm-89.md) | Skupina Agrofert vstoupila do Kosteleckých uzenin v roce 2004 koupí 34 % akcií; od roku 2005 firmu podle citovaného zpravodajství ovládá. Nabytí podílu a pozdější převzetí firmy je samo o sobě legální majetková transakce a citované zdroje netvrdí opak | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-65](@/dossiers/andrej-babis/sources/src-65.md), [SRC-66](@/dossiers/andrej-babis/sources/src-66.md) |
+| <a id="clm-90"></a>[CLM-90](@/dossiers/andrej-babis/claims/clm-90.md) | Jan Boček, ředitel firmy od roku 1990, k prodeji uvedl: „Andrej Babiš koupil těch svých původních 34 procent akcií za tři sta milionů, za kolik pak koupil ten zbytek? To se ani neptejte!“ a popsal telefonát z financující banky, podle něhož banka zastaví financování, nebude-li mít firma jednoho majitele — doloženo je, že to řekl; jde o líčení jedné strany transakce | <span class="status-badge status-quote">CITACE</span> | [SRC-65](@/dossiers/andrej-babis/sources/src-65.md), [SRC-66](@/dossiers/andrej-babis/sources/src-66.md) |
+| <a id="clm-91"></a>[CLM-91](@/dossiers/andrej-babis/claims/clm-91.md) | Jan Boček a další manažeři Kosteleckých uzenin byli obviněni z tunelování firmy; soudy je podle citovaných zdrojů opakovaně osvobodily (FORUM 24 uvádí „dvakrát osvobozen“, Seznam Zprávy „opakované verdikty“). Zda a kdy se zprošťující rozsudky staly pravomocnými, citované texty neuvádějí; jména dalších stíhaných otevřené zdroje přímo nedokládají, dossier je proto neuvádí | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-65](@/dossiers/andrej-babis/sources/src-65.md), [SRC-66](@/dossiers/andrej-babis/sources/src-66.md), [SRC-67](@/dossiers/andrej-babis/sources/src-67.md) |
+| <a id="clm-92"></a>[CLM-92](@/dossiers/andrej-babis/claims/clm-92.md) | Podle Echo24 si Andrej Babiš zbytek akcií Kosteleckých uzenin dokoupil prostřednictvím konsolidační agentury poté, co byl ředitel obviněn z tunelování firmy; časovou návaznost obou kroků uvádí citovaný zdroj, příčinnou souvislost žádný orgán nekonstatoval | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-68](@/dossiers/andrej-babis/sources/src-68.md) |
+| <a id="clm-93"></a>[CLM-93](@/dossiers/andrej-babis/claims/clm-93.md) | Jan Boček podle Echo24 své trestní stíhání považoval za „pečlivě naplánovanou akci, vykonstruovaný proces“ — jde o názor jedné strany sporu; žádný citovaný zdroj neuvádí, že by vykonstruovanost řízení konstatoval soud či jiný orgán | <span class="status-badge status-quote">CITACE</span> | [SRC-68](@/dossiers/andrej-babis/sources/src-68.md) |
+| <a id="clm-94"></a>[CLM-94](@/dossiers/andrej-babis/claims/clm-94.md) | Andrej Babiš podle Seznam Zpráv odmítl reportérům k tématu převzetí Kosteleckých uzenin poskytnout rozhovor; jeho stanovisko k Bočkovu líčení proto v citovaných zdrojích chybí a tento dossier je nemůže doplnit | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-65](@/dossiers/andrej-babis/sources/src-65.md) |
+| <a id="clm-95"></a>[CLM-95](@/dossiers/andrej-babis/claims/clm-95.md) | Jan Boček zemřel 26. listopadu 2017 ve věku 69 let; podle citovaných nekrologů se po trestním stíhání stáhl do ústraní | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-67](@/dossiers/andrej-babis/sources/src-67.md), [SRC-68](@/dossiers/andrej-babis/sources/src-68.md) |
+
+## Kostelecké uzeniny: převzetí firmy (2004–2005) {#kauza-kostelecke-prevzeti}
+
+Vedle pravomocně skončeného dotačního sporu (výše) má vztah Babiše a
+Kosteleckých uzenin i starší kapitolu: **jak firmu získal**. Agrofert
+do ní vstoupil v roce 2004 koupí 34 % akcií a od roku 2005 ji ovládá
+([CLM-89](@/dossiers/andrej-babis/claims/clm-89.md)).
+
+Dlouholetý ředitel Jan Boček, který firmu vedl od roku 1990, průběh
+popsal v rozhovoru pro Seznam Zprávy: původní podíl podle něj Babiš
+koupil „za tři sta milionů“ a financující banka mu telefonicky sdělila,
+že zastaví financování, nebude-li mít firma jednoho majitele
+([CLM-90](@/dossiers/andrej-babis/claims/clm-90.md)). Boček a další
+manažeři byli mezitím **obviněni z tunelování firmy**; soudy je
+opakovaně osvobodily
+([CLM-91](@/dossiers/andrej-babis/claims/clm-91.md)). Podle Echo24 si
+Babiš zbytek akcií dokoupil prostřednictvím konsolidační agentury
+([CLM-92](@/dossiers/andrej-babis/claims/clm-92.md)); Boček stíhání
+považoval za „vykonstruovaný proces“
+([CLM-93](@/dossiers/andrej-babis/claims/clm-93.md)). Zemřel
+26. listopadu 2017 ([CLM-95](@/dossiers/andrej-babis/claims/clm-95.md)).
+
+**Jak to číst.** Nabytí a převzetí firmy je legální majetková
+transakce a citované zdroje netvrdí opak. Jádrem kauzy je **líčení
+jedné strany**: Bočkova verze není nezávisle doložena, Babiš rozhovor
+k tématu odmítl ([CLM-94](@/dossiers/andrej-babis/claims/clm-94.md)),
+takže jeho stanovisko chybí. Dossier nespojuje trestní stíhání
+manažerů s převzetím firmy příčinně — časovou souslednost uvádějí
+zdroje, příčinnost žádný orgán nekonstatoval. Pravomocnost
+zprošťujících rozsudků a okruh stíhaných zůstávají otevřené
+v [GAP-07](@/dossiers/andrej-babis/gaps/gap-07.md).
 
 ## Setuza: neúspěšná akvizice, ne kauza {#setuza}
 
@@ -586,6 +627,50 @@ neodstranilo ([CLM-19](@/dossiers/andrej-babis/claims/clm-19.md)).
 **Co to není.** Je to rozhodnutí o **nároku na dotaci** ve správním
 soudnictví, ne o trestní odpovědnosti kohokoli.
 
+| ID | Tvrzení | Stav | Zdroje |
+|---|---|---|---|
+| <a id="clm-96"></a>[CLM-96](@/dossiers/andrej-babis/claims/clm-96.md) | Statut svěřenského fondu RSVP Trust je od prosince 2025 dostupný ve sbírce listin; správcem fondu je seniorní komerční bankéř Wilfried Reinhard Elbs, protektorkou auditorka Věra Výtvarová a elektorem právník Patrik Bureš. Účelem fondu je podle statutu správa a zachování majetku a zajištění nezávislé správy po dobu, kdy zakladatel vykonává funkci člena vlády | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-69](@/dossiers/andrej-babis/sources/src-69.md) |
+| <a id="clm-97"></a>[CLM-97](@/dossiers/andrej-babis/claims/clm-97.md) | Experti citovaní ČT24 uvedli, že český svěřenský fond „není a ani nemůže být slepým fondem v anglosaském smyslu“ a že statut se může v průběhu let měnit, takže jeho současné znění „není příliš směrodatné“ — jde o odborný komentář, ne o zjištění soudu či regulátora | <span class="status-badge status-quote">CITACE</span> | [SRC-69](@/dossiers/andrej-babis/sources/src-69.md) |
+| <a id="clm-98"></a>[CLM-98](@/dossiers/andrej-babis/claims/clm-98.md) | Transparency International ČR na základě vlastní analýzy statutu tvrdí, že fond střet zájmů neřeší: výkonný ředitel David Kotora mluví o fondu s „rádoby nezávislou správou“, která po konci Babišova vládního angažmá „přejde do rukou jeho vybraných potomků“, právnička Anna Jakůbková o tom, že uspořádání „po skončení Babišova působení ve vládě umožňuje návrat fondu pod vliv rodiny“, a právník Kryštof Doležal zpochybňuje odkaz statutu na veřejnoprávní souhlasy — jde o stanovisko nevládní organizace, ne o rozhodnutí soudu či správního orgánu | <span class="status-badge status-quote">CITACE</span> | [SRC-70](@/dossiers/andrej-babis/sources/src-70.md) |
+| <a id="clm-99"></a>[CLM-99](@/dossiers/andrej-babis/claims/clm-99.md) | Statut podle Transparency International obsahuje podmínku, že fond zanikne, pokud se do 120 dnů od jeho založení 22. prosince 2025 neuskuteční převod akcií Agrofertu do fondu | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-70](@/dossiers/andrej-babis/sources/src-70.md) |
+| <a id="clm-100"></a>[CLM-100](@/dossiers/andrej-babis/claims/clm-100.md) | Evropská komise podle Seznam Zpráv, z nichž cituje ČTK, nepovažovala odpověď českých úřadů za dostatečnou a zaslala do Česka druhou sadu otázek k Babišovu střetu zájmů; nebude-li spokojena, může podle téhož zdroje spustit formální audit, který může skončit povinností vrátit peníze vyplacené Agrofertu — jde o popis možného postupu, zahájení auditu citovaný zdroj nedokládá | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-71](@/dossiers/andrej-babis/sources/src-71.md) |
+| <a id="clm-101"></a>[CLM-101](@/dossiers/andrej-babis/claims/clm-101.md) | Státní zemědělský intervenční fond uvedl, že s Evropskou komisí „komunikuje a zodpověděl jí veškeré dotazy“; jeho ředitel Dlouhý k argumentaci opozice dodal, že stanovisko Evropské komise „je právně nezávazné“ — doloženo je, že to úřad a jeho ředitel řekli, ne že je ten výklad správný | <span class="status-badge status-quote">CITACE</span> | [SRC-71](@/dossiers/andrej-babis/sources/src-71.md) |
+
+### Statut fondu ve sbírce listin
+
+Od prosince 2025 je statut fondu dohledatelný ve sbírce listin.
+Správcem je bankéř Wilfried Reinhard Elbs, protektorkou auditorka Věra
+Výtvarová a elektorem právník Patrik Bureš; účelem fondu je podle
+statutu správa a zachování majetku po dobu výkonu vládní funkce
+zakladatele ([CLM-96](@/dossiers/andrej-babis/claims/clm-96.md)).
+Experti citovaní ČT24 upozorňují, že český svěřenský fond nemůže být
+slepým fondem v anglosaském smyslu a že statut se může měnit
+([CLM-97](@/dossiers/andrej-babis/claims/clm-97.md)) — je to odborný
+komentář, ne zjištění orgánu.
+
+### Výhrady Transparency International
+
+Transparency International ČR po vlastní analýze statutu tvrdí, že
+fond střet zájmů neřeší; jmenovité výhrady Davida Kotory, Anny
+Jakůbkové a Kryštofa Doležala jsou vedeny jako **stanovisko
+zainteresované nevládní organizace**, ne jako rozhodnutí orgánu
+([CLM-98](@/dossiers/andrej-babis/claims/clm-98.md)). Ze statutu TI
+cituje podmínku zániku fondu, neuskuteční-li se do 120 dnů od založení
+převod akcií Agrofertu
+([CLM-99](@/dossiers/andrej-babis/claims/clm-99.md)).
+
+### Druhá sada dotazů Evropské komise
+
+Podle Seznam Zpráv, z nichž cituje ČTK, nepovažovala Evropská komise
+odpověď českých úřadů za dostatečnou a poslala v květnu 2026 **druhou
+sadu otázek**; krajní popsaný scénář je formální audit s možností
+vracení vyplacených peněz — jeho zahájení ale doloženo není
+([CLM-100](@/dossiers/andrej-babis/claims/clm-100.md)). SZIF uvádí, že
+Komisi zodpověděl veškeré dotazy, a jeho ředitel označil stanovisko
+Komise za právně nezávazné
+([CLM-101](@/dossiers/andrej-babis/claims/clm-101.md)) — obě pozice
+jsou vedeny jako výroky vedle sebe; dossier spor nerozhoduje.
+
 ## Původní svěřenské fondy a návrat k přímému vlastnictví {#kauza-ab-trusty}
 
 Majetková posloupnost kolem akcií Agrofertu si zaslouží vlastní záznam,
@@ -889,7 +974,10 @@ doložen primárním zdrojem
 ([GAP-02](@/dossiers/andrej-babis/gaps/gap-02.md)), a výsledky
 probíhajících řízení bez rozhodnutí — obžaloby ve věci Pekárny Zelená
 louka, žalob PGRLF a kasačních větví sporů se SZIF
-([GAP-06](@/dossiers/andrej-babis/gaps/gap-06.md)).
+([GAP-06](@/dossiers/andrej-babis/gaps/gap-06.md)). Otevřená je
+také pravomocnost zprošťujících rozsudků a okruh stíhaných v trestní
+větvi převzetí Kosteleckých uzenin
+([GAP-07](@/dossiers/andrej-babis/gaps/gap-07.md)).
 
 Dossier nepokrývá jeho podnikatelskou historii nad rámec výše uvedeného,
 majetkové poměry nad rámec výše uvedeného, rodinu, zdraví ani žádné

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-66",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-66",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-66 — FORUM 24: Babišovo ovládnutí Kosteleckých uzenin (26. 4. 2017)",
+  "description": "Shrnutí převzetí Kosteleckých uzenin: Boček řídil firmu od 1990, Babiš měl v roce 2004 třetinový podíl a od 2005 firmu ovládá; obvinění ředitele z tunelování a dvojí osvobození; autorka Johana Šafrová.",
+  "outlet": "FORUM 24",
+  "sourceType": "zpravodajství",
+  "url": "https://www.forum24.cz/babisovo-ovladnuti-kosteleckych-uzenin-kdyz-mu-je-reditel-odmital-dat-byl-obvinen/",
+  "published": "2017-04-26",
+  "retrieved": "2026-08-02",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-89"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-90"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-91"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "FORUM 24 26. 4. 2017 (Johana Šafrová): „Ministr financí Andrej Babiš\nod roku 2005 ovládá Kostelecké uzeniny.“ Boček firmu řídil od roku\n1990; při otevírání nového závodu v roce 2004 měl Babiš třetinový\npodíl. Boček „byl obviněn z tunelování firmy“ a „byl u soudu dvakrát\nosvobozen“; článek cituje i telefonát z banky o zastavení financování\nbez jednoho majitele.\n\n**Poznámka k přesnosti a limitům**: článek výslovně neuvádí, zda byla\nosvobození pravomocná, a neobsahuje vyjádření Babiše ani Agrofertu.\nOtevřeno a přečteno 2026-08-02."
+    }
+  ],
+  "order": 66
+}

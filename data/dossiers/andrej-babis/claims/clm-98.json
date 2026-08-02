@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-98",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-98",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "Transparency International ČR na základě vlastní analýzy statutu tvrdí, že fond střet zájmů neřeší: výkonný ředitel David Kotora mluví o fondu s „rádoby nezávislou správou“, která po konci Babišova vládního angažmá „přejde do rukou jeho vybraných potomků“, právnička Anna Jakůbková o tom, že uspořádání „po skončení Babišova působení ve vládě umožňuje návrat fondu pod vliv rodiny“, a právník Kryštof Doležal zpochybňuje odkaz statutu na veřejnoprávní souhlasy — jde o stanovisko nevládní organizace, ne o rozhodnutí soudu či správního orgánu",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-70"
+    }
+  ],
+  "subjects": [],
+  "order": 98,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

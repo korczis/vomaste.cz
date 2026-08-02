@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-69",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-69",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-69 — ČT24: Statut fondu RSVP Trust je ve sbírce listin (23. 12. 2025)",
+  "description": "ČT24 o statutu svěřenského fondu RSVP Trust dostupném ve sbírce listin: správce Wilfried Reinhard Elbs, protektorka Věra Výtvarová, elektor Patrik Bureš; účel fondu; expertní komentáře ke slepým fondům.",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "veřejnoprávní zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/sverensky-fond-rsvp-trust-kam-babis-vlozi-agrofert-je-ve-sbirce-listin-368580",
+  "published": "2025-12-23",
+  "retrieved": "2026-08-02",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-96"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-97"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "ČT24 23. 12. 2025: statut fondu RSVP Trust je ve sbírce listin.\n„Správcem fondu… je seniorní komerční bankéř Wilfried Reinhard Elbs.“\n„Protektorem, tedy tím, kdo na správce dohlíží, je auditorka Věra\nVýtvarová.“ „Elektorem, tedy tím, kdo může jmenovat náhradního\nprotektora, je právník Patrik Bureš.“ Účelem fondu je dle statutu\nsprávа a zachování majetku a „zajištění nezávislé správy po dobu, kdy\nbude zadavatel vykonávat funkci člena vlády“. Citovaní experti: český\nsvěřenský fond „není a ani nemůže být slepým fondem v anglosaském\nsmyslu“; statut se může měnit, současné znění „není příliš směrodatné“.\n\n**Poznámka k přesnosti a limitům**: popis obsahu statutu\nzprostředkovává médium; samotná listina nebyla pro dossier otevřena\npřímo. Otevřeno a přečteno 2026-08-02."
+    }
+  ],
+  "order": 69
+}
