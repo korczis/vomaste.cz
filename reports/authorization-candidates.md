@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 491 context entities across 24 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 481 context entities across 24 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -440,16 +440,6 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
   - edge-boyne-bigaud (boyne-holding -> scp-bigaud, "financování pořízení pozemku; od 8/2019 SCP Bigaud ze 100 % vlastněna I.M.O.D.I.M.", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
-## Bronislav Houdek (`bronislav-houdek`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: —
-- Claims: none
-- Sources: none (0 independent source families)
-- Relations: none
-- Missing: explicit owner authorization to promote this to its own dossier
-
 ## BYD Automotive (`byd-automotive`)
 
 - Type: company
@@ -457,16 +447,6 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Appears in: karel-havlicek
 - Claims: CLM-46
 - Sources: SRC-31 (1 independent source family)
-- Relations: none
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Bydlíme v Králově Poli, z.s. (`bydlime-v-kralove-poli-z-s`)
-
-- Type: company
-- Status: not_authorized
-- Appears in: —
-- Claims: none
-- Sources: none (0 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -1247,16 +1227,6 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Appears in: oto-klempir
 - Claims: CLM-39
 - Sources: SRC-16 (1 independent source family)
-- Relations: none
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## HYDROPROGRESS, s.r.o. (`hydroprogress-s-r-o`)
-
-- Type: company
-- Status: not_authorized
-- Appears in: —
-- Claims: none
-- Sources: none (0 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -2389,16 +2359,6 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
-## Ing. Marek Viskot (`marek-viskot`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: —
-- Claims: none
-- Sources: none (0 independent source families)
-- Relations: none
-- Missing: explicit owner authorization to promote this to its own dossier
-
 ## Marek Výborný (`marek-vyborny`)
 
 - Type: person
@@ -2464,16 +2424,6 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
   - edge-plaga-benes (plaga -> martin-benes, "spor o plošný zákaz mobilů ve školách — reakce na dětského ombudsmana", dossier: robert-plaga)
 - Missing: explicit owner authorization to promote this to its own dossier
 
-## Martin Korec (`martin-korec`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: —
-- Claims: none
-- Sources: none (0 independent source families)
-- Relations: none
-- Missing: explicit owner authorization to promote this to its own dossier
-
 ## Ing. Martin Kubů (`martin-kubu`)
 
 - Type: person
@@ -2499,16 +2449,6 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
   - edge-kupka-havlicek (martin-kupka -> havlicek, "Kupka (ODS) kritizoval Havlíčkovu novelu stavebního zákona jako plnou „nášlapných min“", dossier: karel-havlicek)
   - edge-plaga-kupka (plaga -> martin-kupka, "kritika ODS (Martin Kupka) k plošnému zákazu mobilů ve školách", dossier: robert-plaga)
   - edge-mrazova-kupka (mrazova -> martin-kupka, "předseda ODS označil vyjádření Mrázové k jejím kauzám za pokrytectví", dossier: zuzana-mrazova)
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Martin Pavlík (`martin-pavlik`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: —
-- Claims: none
-- Sources: none (0 independent source families)
-- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Masarykova nemocnice v Ústí nad Labem (`masarykova-nemocnice-usti`)
@@ -2550,16 +2490,6 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Appears in: macinka-turek
 - Claims: CLM-22
 - Sources: SRC-24 (1 independent source family)
-- Relations: none
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## MEDIA PROJECT CZ s.r.o. (`media-project-cz-s-r-o`)
-
-- Type: company
-- Status: not_authorized
-- Appears in: —
-- Claims: none
-- Sources: none (0 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -2694,26 +2624,6 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Appears in: karel-havlicek
 - Claims: CLM-32
 - Sources: SRC-18 (1 independent source family)
-- Relations: none
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Michal Maixner (`michal-maixner`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: —
-- Claims: none
-- Sources: none (0 independent source families)
-- Relations: none
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Michal Vít (`michal-vit`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: —
-- Claims: none
-- Sources: none (0 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -3031,16 +2941,6 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
   - edge-macinka-mzp2026 (macinka -> mzp2026, "dočasně vede resort (do 2/2026)", dossier: macinka-turek)
   - edge-pavel-mzp2026 (pavel -> mzp2026, "odmítl jmenovat", dossier: macinka-turek)
   - edge-turek-mzp2026 (turek -> mzp2026, "navrhován, nejmenován (1/2026)", dossier: macinka-turek)
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## "Nadační fond FIDUCIA" (`nadacni-fond-fiducia`)
-
-- Type: company
-- Status: not_authorized
-- Appears in: —
-- Claims: none
-- Sources: none (0 independent source families)
-- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Národní galerie Praha (`narodni-galerie-praha`)

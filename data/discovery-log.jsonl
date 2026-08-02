@@ -817,13 +817,3 @@
 {"logged_at":"2026-08-02","record_id":"edge-tejc-dragoun","record_type":"relation","discovered_from":{"source_entity":"tejc","target_entity":"radim-dragoun","claims":["CLM-21"],"sources":["SRC-11","SRC-12"],"dossier":"jeronym-tejc"},"action":"created"}
 {"logged_at":"2026-08-02","record_id":"edge-tejc-kasal","record_type":"relation","discovered_from":{"source_entity":"tejc","target_entity":"zdenek-kasal","claims":["CLM-25"],"sources":["SRC-14"],"dossier":"jeronym-tejc"},"action":"created"}
 {"logged_at":"2026-08-02","record_id":"edge-wintr-kompetencni-spor","record_type":"relation","discovered_from":{"source_entity":"jan-wintr","target_entity":"kompetencni-spor-pl-us-16-26","claims":["CLM-42"],"sources":["SRC-21"],"dossier":"jeronym-tejc"},"action":"created"}
-{"logged_at":"2026-08-02","record_id":"bronislav-houdek","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
-{"logged_at":"2026-08-02","record_id":"bydlime-v-kralove-poli-z-s","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
-{"logged_at":"2026-08-02","record_id":"hydroprogress-s-r-o","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
-{"logged_at":"2026-08-02","record_id":"marek-viskot","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
-{"logged_at":"2026-08-02","record_id":"martin-korec","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
-{"logged_at":"2026-08-02","record_id":"martin-pavlik","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
-{"logged_at":"2026-08-02","record_id":"media-project-cz-s-r-o","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
-{"logged_at":"2026-08-02","record_id":"michal-maixner","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
-{"logged_at":"2026-08-02","record_id":"michal-vit","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
-{"logged_at":"2026-08-02","record_id":"nadacni-fond-fiducia","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
