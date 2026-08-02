@@ -2,7 +2,7 @@
 title = "Bezpečnostní politika"
 description = "Jak nahlásit zranitelnost — soukromě, ne veřejnou issue — a co projekt o bezpečném hlášení poctivě slibuje a neslibuje."
 template = "docs-viewer.html"
-weight = 4
+weight = 5
 
 [extra]
 lang = "cs"

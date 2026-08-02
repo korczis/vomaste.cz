@@ -101,6 +101,37 @@
 <p class="rounded-lg border border-dashed border-white/15 p-6 text-center text-sm text-white/50">{{ message }}</p>
 {%- endmacro empty_state -%}
 
+{#- Public-intake CTA (PHASE_006.md §42 Phase 7 contract). One shared
+    macro so the landing page and the dossier index render byte-identical
+    markup and copy — never two hand-typed near-duplicates that could
+    drift on the one thing that matters most here: the public/no-secure-
+    channel warning. The target URL is the single canonical
+    `config.extra.intake_issue_form_url` (config.toml) — never a second
+    hardcoded copy of the template query string. `heading`/`lead` let each
+    call site frame the same action for its own context (e.g. "Chybí tu
+    dossier?" on the directory vs. a broader framing on the landing page)
+    without re-authoring the URL or the warning. -#}
+{%- macro intake_cta(heading, lead) -%}
+<div class="rounded-xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
+  <h3 class="text-lg font-semibold text-white sm:text-xl">{{ heading }}</h3>
+  <p class="mt-2 text-sm leading-relaxed text-white/70 sm:text-base">{{ lead }}</p>
+  <a
+    href="{{ config.extra.intake_issue_form_url }}"
+    rel="external"
+    class="mt-5 inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-[#f3e5c0] px-5 py-3 text-sm font-bold text-black no-underline transition-colors hover:bg-[#e9d6a0] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#d4af37]"
+  >
+    Navrhnout dossier nebo entitu
+    <span aria-hidden="true">&#8599;</span>
+  </a>
+  <p class="mt-3 max-w-md text-xs leading-relaxed text-white/55">
+    Otevře veřejnou GitHub issue — dlouhodobě dohledatelnou, ne důvěrný kanál.
+    Neposílejte tam neveřejné dokumenty ani citlivé podklady. Podáním
+    nevzniká dossier ani autorizace —
+    <a href="{{ get_url(path='@/dokumentace/verejny-podnet.md') | safe }}" class="underline decoration-white/30 underline-offset-2 hover:text-white">jak podání funguje</a>.
+  </p>
+</div>
+{%- endmacro intake_cta -%}
+
 {#- Site-wide footer, rendered once by base.html.
 
     Structure follows the Flowbite footer pattern (divider, then a

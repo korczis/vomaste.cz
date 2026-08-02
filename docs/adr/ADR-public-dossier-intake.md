@@ -583,6 +583,29 @@ Prismatic není a nebude tvrdou závislostí.
   `npm run build` zelený; `git diff -- AGENTS.md data/authorizations.toml data/dossiers` prázdný;
   jediná změna v `.github/` je nový `dossier-intake.yml` samotný. Fáze 7 kontrakt:
   `reports/intake/phase-06-implementation-report.md`.
+- 2026-08-02 — Fáze 7 implementována (stále **PROPOSED**). Žádný `PHASE_007.md` neexistoval — Fáze 7
+  byla definovaná jen jako uzavírací kontrakt v `PHASE_006.md` §42, report proto proti tomuto kontraktu:
+  `reports/intake/phase-07-implementation-report.md`. CTA na landing page i adresáři dossierů sdílí
+  jednu Tera makro (`ui::intake_cta` v `macros/ui.html`) — URL i bezpečnostní varování existují v kódu
+  přesně jednou, ne opsané na dvou místech. Cílová URL je nová `config.toml` `extra.intake_issue_form_url`
+  (jediný kanonický zdroj). Nová stránka `content/dokumentace/verejny-podnet.md` vykresluje už existující
+  `docs/intake/public-submission.md` (Fáze 5) přes zavedený `docs-viewer.html` mechanismus — nulová
+  duplicita obsahu, stejný vzor jako `CONTRIBUTING.md`/`SECURITY.md`. `tests/e2e/intake-cta.spec.mjs`
+  (19 testů přes desktop+mobile Playwright projekty) ověřuje přesnou URL, `rel="external"`, přítomnost
+  varování, nepřítomnost jakéhokoli slibu anonymity/bezpečného kanálu a bajtovou shodu textu varování
+  mezi oběma výskyty. `a11y-sweep.spec.mjs` (axe-core, WCAG 2.1 AA) 27/27 beze změny.
+
+  **Záměrná odchylka od zadání**: "tracking bez osobních dat" (§42) NEIMPLEMENTOVÁN. Web už má vlastní,
+  přímo návštěvníkům dané tvrzení ve FAQ ("Sledujete návštěvníky? Ne. Web je statický, bez analytiky,
+  bez cookies a bez přihlašování.") — přidání jakéhokoli trackingu, byť bez osobních dat, by tenhle
+  slib porušilo. Fáze 7 kontrakt tento konflikt nemohl znát; řešením je respektovat už daný slib, ne
+  tiše přidat funkci, která ho poruší.
+
+  Interaktivní vizuální ověření přes claude-in-chrome nebylo možné (extension nebyl v tomto prostředí
+  připojen) — ověřeno přes skutečný Playwright/Chrome běh (rendering, layout, axe scan) a inspekci
+  vyrenderovaného HTML.
+
+  `npm run build` zelený (38/38); `git diff -- AGENTS.md data/authorizations.toml data/dossiers` prázdný.
 
 ---
 

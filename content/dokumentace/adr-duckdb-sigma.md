@@ -2,7 +2,7 @@
 title = "ADR: DuckDB-Wasm a Sigma.js"
 description = "Proč byl dřívější zamítavý záznam přebit — a za jakou cenu: měřená velikost payloadu, opt-in načítání a hranice, které to nesmí porušit."
 template = "docs-viewer.html"
-weight = 10
+weight = 11
 
 [extra]
 lang = "cs"

@@ -2,7 +2,7 @@
 title = "Licence"
 description = "The Unlicense (public domain) pro kód, tooling a původní obsah; rozsah a výjimky pro obsah třetích stran."
 template = "docs-viewer.html"
-weight = 5
+weight = 6
 
 [extra]
 lang = "cs"

@@ -46,3 +46,9 @@ og_type = "website"
 publisher = "vomaste.cz"
 
 index = true
+
+# Canonical GitHub Issue Form URL (PHASE_006.md §18, PHASE_006.md §42
+# Phase 7 contract "data-driven URL, žádný hardcoded duplicate text") —
+# every on-site CTA reads this one value via config.extra, never a
+# second hardcoded copy of the template query string.
+intake_issue_form_url = "https://github.com/korczis/vomaste.cz/issues/new?template=navrh-dossieru.yml"
