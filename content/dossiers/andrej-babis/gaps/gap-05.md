@@ -36,3 +36,8 @@ před případným stíháním.
 
 Otevřenost této mezery neznamená ani vinu, ani nevinu — znamená, že
 věc je procesně nedořešená a tento web nemá čím doložit víc.
+
+**Opakovaná kontrola k 2026-08-02** (cílené dotazy na rozhodnutí PNF):
+všechny dohledané zprávy opakují stav z května 2026 — spis předán
+prokuratuře, rozhodnutí o případném stíhání se očekává do konce roku
+2026. Žádný nový procesní krok nenalezen; stav beze změny.

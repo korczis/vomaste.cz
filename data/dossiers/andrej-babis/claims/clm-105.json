@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-105",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-105",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "Státní zástupce EPPO podle ČT24 navrhuje v kauze Pekárny Zelená louka pro dvě obžalované fyzické osoby tresty v rozmezí pěti až deseti let a peněžité tresty, pro firmu náhradu škody zhruba 100 milionů korun, pokutu až 50 milionů korun a zákaz čerpání dotací; Agrofert uvedl, že je „přesvědčen, že postupoval v souladu s právními předpisy“, a Babiš stíhání označil za účelové. Návrh trestu není uložený trest a obžaloba není odsouzení",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-34"
+    }
+  ],
+  "subjects": [],
+  "order": 105,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

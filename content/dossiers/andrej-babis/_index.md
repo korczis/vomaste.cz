@@ -362,9 +362,13 @@ Výroky obou stran jsou vedeny **jako citace vedle sebe**: Babišovo
 tvrzení o „odrbání“ státu o 900 milionů i odpověď Seznamu, že státu
 žádnou daň nedluží ([CLM-87](@/dossiers/andrej-babis/claims/clm-87.md)).
 
+Krajský soud v Praze nařídil jednání na **24. září 2026**; mluvčí
+Seznamu termín potvrdila
+([CLM-104](@/dossiers/andrej-babis/claims/clm-104.md)).
+
 **Povinné rámování.** Podaná žaloba není rozhodnutí soudu a tento
 dossier nerozhoduje, čí tvrzení je pravdivé — spor o to právě probíhá.
-Výsledek zůstává otevřený v
+Nařízený termín je procesní krok; výsledek zůstává otevřený v
 [GAP-06](@/dossiers/andrej-babis/gaps/gap-06.md).
 
 ## Veřejné funkce {#verejne-funkce}
@@ -671,6 +675,26 @@ Komise za právně nezávazné
 ([CLM-101](@/dossiers/andrej-babis/claims/clm-101.md)) — obě pozice
 jsou vedeny jako výroky vedle sebe; dossier spor nerozhoduje.
 
+| ID | Tvrzení | Stav | Zdroje |
+|---|---|---|---|
+| <a id="clm-102"></a>[CLM-102](@/dossiers/andrej-babis/claims/clm-102.md) | Druhý dopis Evropské komise dorazil podle Seznam Zpráv na konci května 2026, podepsán Hugem Sobralem, zástupcem generální ředitelky pro regionální politiku, jménem pěti generálních ředitelství; žádal, aby Česko do jednoho měsíce dodalo právní analýzu souladu s článkem 61 finančního nařízení včetně „veškerých pracovních dokumentů, hodnoticích tabulek a podpůrných důkazů“ | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-72](@/dossiers/andrej-babis/sources/src-72.md) |
+| <a id="clm-103"></a>[CLM-103](@/dossiers/andrej-babis/claims/clm-103.md) | Česko podle Seznam Zpráv požadovanou právní analýzu Evropské komisi neposlalo; vrchní ředitel sekce fondů EU ministerstva pro místní rozvoj Stanislav Schneidr v odpovědi mimo jiné uvedl, že ke statutu fondu RSVP Trust má stát „pouze verzi, která se objevila v médiích, přičemž u takového dokumentu nemůžeme potvrdit jeho správnost ani úplnost“ — jde o popis odpovědi českého úřadu; reakce Komise na ni v citovaném zdroji doložena není | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-72](@/dossiers/andrej-babis/sources/src-72.md) |
+| <a id="clm-104"></a>[CLM-104](@/dossiers/andrej-babis/claims/clm-104.md) | Krajský soud v Praze nařídil jednání o žalobě Seznam.cz na ochranu pověsti na 24. září 2026; mluvčí Seznamu Aneta Kapucianová termín potvrdila se slovy, že „jinak v žalobě žádné novinky nejsou“. Nařízení termínu je procesní krok, ne rozhodnutí ve věci | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-73](@/dossiers/andrej-babis/sources/src-73.md) |
+| <a id="clm-105"></a>[CLM-105](@/dossiers/andrej-babis/claims/clm-105.md) | Státní zástupce EPPO podle ČT24 navrhuje v kauze Pekárny Zelená louka pro dvě obžalované fyzické osoby tresty v rozmezí pěti až deseti let a peněžité tresty, pro firmu náhradu škody zhruba 100 milionů korun, pokutu až 50 milionů korun a zákaz čerpání dotací; Agrofert uvedl, že je „přesvědčen, že postupoval v souladu s právními předpisy“, a Babiš stíhání označil za účelové. Návrh trestu není uložený trest a obžaloba není odsouzení | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-34](@/dossiers/andrej-babis/sources/src-34.md) |
+
+### Kdo dopisy podepsal a co Česko (ne)poslalo
+
+Podle Seznam Zpráv podepsal druhý dopis z konce května 2026 Hugo
+Sobral, zástupce generální ředitelky pro regionální politiku, jménem
+pěti generálních ředitelství; žádal do měsíce právní analýzu souladu
+s článkem 61 finančního nařízení včetně pracovních dokumentů a důkazů
+([CLM-102](@/dossiers/andrej-babis/claims/clm-102.md)). Česko podle
+téhož zdroje analýzu neposlalo a ke statutu fondu úřad uvedl, že má
+jen verzi „z médií“
+([CLM-103](@/dossiers/andrej-babis/claims/clm-103.md)) — reakce Komise
+na tuto odpověď doložena není a primární dokumenty dál chybí
+([GAP-02](@/dossiers/andrej-babis/gaps/gap-02.md)).
+
 ## Původní svěřenské fondy a návrat k přímému vlastnictví {#kauza-ab-trusty}
 
 Majetková posloupnost kolem akcií Agrofertu si zaslouží vlastní záznam,
@@ -817,6 +841,14 @@ jsou citovaná stanoviska stran, ne zjištění tohoto dossieru.
 |---|---|---|---|
 | <a id="clm-60"></a>[CLM-60](@/dossiers/andrej-babis/claims/clm-60.md) | Podpůrný a garanční rolnický a lesnický fond (PGRLF) podal 20. července 2026 žaloby na 28 firem, které byly v rozhodném období součástí koncernu Agrofert, o vrácení podpor v souhrnné výši 22 milionů korun poskytnutých v letech 2017–2021, s odkazem na rozpor s pravidly upravujícími střet zájmů; výzvě k dobrovolnému vrácení firmy nevyhověly. Podaná žaloba není rozhodnutí soudu | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-38](@/dossiers/andrej-babis/sources/src-38.md), [SRC-39](@/dossiers/andrej-babis/sources/src-39.md), [SRC-40](@/dossiers/andrej-babis/sources/src-40.md) |
 | <a id="clm-61"></a>[CLM-61](@/dossiers/andrej-babis/claims/clm-61.md) | Mluvčí Agrofertu k žalobám PGRLF uvedl: „Stále platí, že jsme přesvědčeni, že jsme dotace čerpali v souladu se zákonem a máme na ně nárok.“ — doloženo je, že to řekl | <span class="status-badge status-quote">CITACE</span> | [SRC-38](@/dossiers/andrej-babis/sources/src-38.md) |
+
+Obžaloba z 22. června 2026 podle ČT24 navrhuje pro dvě fyzické osoby
+tresty pět až deset let a peněžité tresty, pro firmu náhradu škody
+zhruba 100 milionů, pokutu až 50 milionů a zákaz čerpání dotací;
+Agrofert i Babiš obvinění odmítají
+([CLM-105](@/dossiers/andrej-babis/claims/clm-105.md)). **Návrh trestu
+není uložený trest** — hlavní líčení nebylo k datu poslední kontroly
+doloženo ([GAP-06](@/dossiers/andrej-babis/gaps/gap-06.md)).
 
 ## PGRLF: žaloby na 28 společností skupiny {#kauza-pgrlf}
 

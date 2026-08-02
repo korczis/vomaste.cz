@@ -40,3 +40,12 @@ obžaloba není odsouzení, žaloba není rozhodnutí a pravomocný rozsudek
 prvního stupně může být kasační stížností ještě zvrácen. Mezera se
 uzavře, až o věcech rozhodnou soudy a rozhodnutí bude doloženo přímo
 otevřeným zdrojem.
+
+**Opakovaná kontrola k 2026-08-02.** Větev 1 (Pekárna Zelená louka):
+hlavní líčení nadále nedoloženo, nově jsou ale doloženy navrhované
+tresty obžaloby ([CLM-105](@/dossiers/andrej-babis/claims/clm-105.md))
+— návrh není uložený trest. Větev 4 (žaloba Seznam.cz): Krajský soud
+v Praze nařídil jednání na 24. září 2026
+([CLM-104](@/dossiers/andrej-babis/claims/clm-104.md)) — termín je
+procesní krok, výsledek zůstává otevřený. Větve 2 a 3 (PGRLF, kasace
+SZIF): žádný nový doložený vývoj.
