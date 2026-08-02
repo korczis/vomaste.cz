@@ -16,7 +16,7 @@ import { compileDataset } from "./compile.mjs";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const compiled = compileDataset(loadCanonicalTree(join(ROOT, "data/dossiers")));
 
-test("golden: počty záznamů per typ (snapshot 2026-08-02: 414 kontextových entit + provázání grafu 31 relací + T-039 dávka 1 (jaroslav-faltynek/petr-vencalek/tunde-bartha, +4 zdroje; richard-chlad CLM-07 vrácen na 1 ZDROJ, mimo autorizovaný scope) + T-041)", () => {
+test("golden: počty záznamů per typ (snapshot 2026-08-02: 414 kontextových entit + provázání grafu 31 relací + T-039 dávka 1 (jaroslav-faltynek/petr-vencalek/tunde-bartha, +4 zdroje; richard-chlad CLM-07 vrácen na 1 ZDROJ, mimo autorizovaný scope) + T-040 dávka 2 (lubomir-metnar SRC-07) + T-041)", () => {
   assert.deepEqual(compiled.counts.perType, {
     case: 88,
     claim: 859,
@@ -24,7 +24,7 @@ test("golden: počty záznamů per typ (snapshot 2026-08-02: 414 kontextových e
     entity: 503,
     gap: 188,
     relation: 142,
-    source: 541,
+    source: 542,
     update: 47,
   });
   assert.equal(compiled.counts.dossiers, 24);

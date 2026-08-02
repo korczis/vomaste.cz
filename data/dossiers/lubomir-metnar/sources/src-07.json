@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-07",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-07",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar"
+  },
+  "title": "SRC-07 — Hospodářské noviny",
+  "description": "Prezident vetoval novelu rozpočtových zákonů. Podle Babiše tím ohrožuje zdravotnictví či obranyschopnost.",
+  "outlet": "Hospodářské noviny",
+  "sourceType": "zpravodajství",
+  "url": "https://domaci.hn.cz/c1-67907900-pavel-vetoval-novelu-rozpoctovych-zakonu-ohrozuje-podle-nej-udrzitelnost-verejnych-financi",
+  "published": "2026-07-23",
+  "retrieved": "2026-08-02",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-25"
+    }
+  ],
+  "subjects": [
+    "metnar"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Hospodářské noviny (Economia) dne 23. 7. 2026 nezávisle na Blesk.cz\n(SRC-06) potvrzují totéž jádro faktu, včetně přesného výčtu institucí:\ncituje prezidenta Pavla, že vládu nepodezírá ze snahy o další zásah do\npůsobení **Ústavního soudu, veřejného ochránce práv, Kanceláře\nprezidenta republiky, Nejvyššího kontrolního úřadu nebo Národní\nrozpočtové rady** — přesně shodný výčet čtyř nezávislých institucí\n(Ústavní soud, ombudsman, NKÚ, Národní rozpočtová rada), jaký uvádí\nCLM-25.\n\n**Nezávislost.** Jiný vydavatel než Blesk.cz (CNC/Czech News Center) —\nu CLM-25 se proto počítají jako dvě nezávislá potvrzení."
+    }
+  ],
+  "order": 7
+}
