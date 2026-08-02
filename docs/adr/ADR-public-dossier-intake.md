@@ -410,6 +410,55 @@ Prismatic není a nebude tvrdou závislostí.
 
   `npm run build` zelený; `git diff -- AGENTS.md data/authorizations.toml .github/workflows` prázdný.
   Fáze 4 kontrakt: `reports/intake/phase-03-implementation-report.md`.
+- 2026-08-02 — Fáze 4 implementována (stále **PROPOSED**). Manifest schema `0.3.0` (nový required
+  `source_preflight`; §14.3 `editorial_verification` je schema `const: "not_performed"` — strukturálně
+  nevyjádřitelná žádná jiná hodnota). Vytvořeno: `scripts/intake/preflight/*` — čisté funkce
+  (`classify-ip.mjs` — IPv4/IPv6 rozsahy z §6.1/§6.2 vč. alternativních zápisů 127.1/2130706433/
+  0x7f000001/oktalového zápisu a IPv4-mapped IPv6, `parse-url.mjs`, `classify-hostname.mjs`,
+  `validate-destination.mjs`), DNS/HTTP adaptéry (`resolve-hostname.mjs` — produkční `node:dns`;
+  `request-once.mjs` — pinned `node:http`/`node:https` transport s custom `lookup`, remote-address
+  re-verifikací po connectu, per-fázovými timeouty, stream-based body limitem nedůvěřujícím
+  `Content-Length`), `follow-redirects.mjs` (každý hop reviduje celou pipeline od nuly), bounded HTML
+  metadata extraktor, orchestrace (`preflight-url.mjs`, `preflight-urls.mjs` — cap 20 URL, concurrency
+  3, per-host 1), lokální mock HTTP server + mock DNS adaptér pro testy, `detect-preflight-risk.mjs`
+  (mapuje §14 výsledky na §15 risk-flag vokabulář). `--preflight` je explicitní opt-in na
+  `process-issue.mjs` (výchozí běh zůstává offline — `offlinePreflightResult`). 143 nových testů (SSRF
+  matice §20 v plném rozsahu — IPv4/IPv6 literály vč. alternativních zápisů, DNS-based private/mixed/
+  metadata, hostname suffixy, redirecty na private/localhost/metadata/credentials — vše přes lokální
+  mock server a mock DNS, nikdy veřejný internet) + statické bezpečnostní brány (§28: žádné
+  `rejectUnauthorized: false`, žádné proxy env dědění, žádný `fetch()` mimo schválený transport, žádný
+  env bypass private-IP politiky, test-only bypass parametry nikdy nedosažitelné z `process-issue.mjs`).
+  425/425 testů celkem (`npm run test:intake`).
+
+  **Dva reálné bugy nalezené a opravené testy během implementace** (obojí by v produkci znamenalo
+  bezpečnostní chybu, ne kosmetickou vadu):
+  1. `validate-destination.mjs` používalo `result?.category ?? "unclassifiable"` — `??` operátor
+     ošetřuje i legitimní `null` (veřejná adresa nemá kategorii), takže KAŽDÁ veřejná adresa byla
+     mylně klasifikována jako neklasifikovatelná a tedy blokovaná. Bez testu `validate-destination.test.mjs`
+     by preflight nikdy nepustil žádnou veřejnou URL. Opraveno explicitním `result === null` testem.
+  2. `classify-ip.mjs` procházelo IPv4 rozsahy v pořadí ze zadání, ne podle specifičnosti prefixu —
+     `255.255.255.255/32` (broadcast) spadalo i do `240.0.0.0/4` (reserved) a širší rozsah vyhrával
+     první shodou, takže broadcast adresa dostala nesprávnou (byť pořád blokující) kategorii. Opraveno
+     seřazením rozsahů podle délky prefixu sestupně před kontrolou.
+
+  **Odchylky od Fáze 1/2/3, s důvodem:**
+  1. `limit-response.mjs` ze zadání §3 nevzniklo jako samostatný modul — bounded stream reading je
+     zaintegrované přímo v `request-once.mjs` (§21's "oversized"/"chunked-endless" testy ho pokrývají
+     integračně přes mock server). Důvod: odděleny by byl umělý řez přes jedinou stavovou proměnnou
+     (`bodyBytes`) sdílenou s zbytkem response-handling logiky bez skutečného zisku testovatelnosti.
+  2. Test-only bypass pro destination validation (`testAllowedPrivateAddresses`) povoluje jen PŘESNOU
+     adresu mock serveru, nikdy celý private rozsah — jinak by "redirect na private IP" test byl
+     prázdný (redirect na `10.0.0.1` by prošel stejným blanket bypassem jako loopback mock server).
+     Zadání §19.3 samo tuto přesnost nevyžadovalo explicitně, ale bez ní by test negaroval sám sebe.
+  3. `npm run intake:preflight-fixture` (§23.2 "s mock transportem") demonstruje `--preflight` cestu
+     přes mock DNS adaptér vracející privátní adresu — tedy SSRF politiku, která korektně zablokuje
+     všechny URL fixture, ne šťastnou cestu k reálnému serveru. Důvod: happy-path přes produkční
+     `validate-destination.mjs` by vyžadoval buď skutečný veřejný cíl (nedeterministické, síťové), nebo
+     produkční test-only bypass (zakázáno §19.3) — blokovaný výsledek je deterministický, offline a
+     dokazuje totéž (pipeline běží end-to-end a manifest se obohatí).
+
+  `npm run build` zelený (107 s); `git diff -- AGENTS.md data/authorizations.toml .github/workflows`
+  prázdný. Fáze 5 kontrakt: `reports/intake/phase-04-implementation-report.md`.
 
 ---
 

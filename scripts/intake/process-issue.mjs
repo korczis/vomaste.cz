@@ -29,6 +29,8 @@ import { buildIndexLookups, matchCandidateAgainstIndex, resolveCandidate } from 
 import { detectDuplicateIntake } from "./matching/detect-duplicate-intake.mjs";
 import { loadPriorManifestsFromDirectory } from "./matching/duplicate-intake-source.mjs";
 import { classifyIntakeRisk } from "./risk/classify-intake-risk.mjs";
+import { preflightUrls, offlinePreflightResult } from "./preflight/preflight-urls.mjs";
+import { createProductionDnsAdapter } from "./preflight/resolve-hostname.mjs";
 
 const ERROR_CODE_TO_EXIT_CODE = Object.freeze({
   [ERROR_CODES.EVENT_NOT_FOUND]: EXIT_CODES.invalidCliUsage,
@@ -49,12 +51,12 @@ const ERROR_CODE_TO_EXIT_CODE = Object.freeze({
   [ERROR_CODES.INTERNAL_ERROR]: EXIT_CODES.internalError,
 });
 
-const KNOWN_FLAGS = Object.freeze(["--event", "--output-dir", "--generated-at", "--repository-commit", "--overwrite", "--help", "--matching-index", "--prior-manifests-dir"]);
+const KNOWN_FLAGS = Object.freeze(["--event", "--output-dir", "--generated-at", "--repository-commit", "--overwrite", "--help", "--matching-index", "--prior-manifests-dir", "--preflight"]);
 
 // §8.1: rejects unknown args, missing values, and duplicate args instead of
 // silently taking the last/first occurrence.
 export function parseCliArgs(argv) {
-  const result = { overwrite: false, help: false };
+  const result = { overwrite: false, help: false, preflight: false };
   const seen = new Set();
   for (let i = 0; i < argv.length; i += 1) {
     const flag = argv[i];
@@ -73,6 +75,10 @@ export function parseCliArgs(argv) {
       result.overwrite = true;
       continue;
     }
+    if (flag === "--preflight") {
+      result.preflight = true;
+      continue;
+    }
     const value = argv[i + 1];
     if (value === undefined || value.startsWith("--")) {
       throw new IntakeError(ERROR_CODES.CLI_USAGE, `missing value for argument: ${flag}`);
@@ -88,11 +94,14 @@ export function parseCliArgs(argv) {
   return result;
 }
 
-const HELP_TEXT = `usage: node scripts/intake/process-issue.mjs --event <path> --output-dir <dir> [--generated-at <ISO8601>] [--repository-commit <sha>] [--overwrite] [--matching-index <path>] [--prior-manifests-dir <dir>]
+const HELP_TEXT = `usage: node scripts/intake/process-issue.mjs --event <path> --output-dir <dir> [--generated-at <ISO8601>] [--repository-commit <sha>] [--overwrite] [--matching-index <path>] [--prior-manifests-dir <dir>] [--preflight]
 
 Processes one local GitHub-issue event fixture into an intake manifest,
-Markdown report and processing result. Fully offline; never authorizes or
-publishes anything. See docs/intake/local-processor.md.`;
+Markdown report and processing result. Offline by default; never
+authorizes or publishes anything. --preflight opts in to a real,
+SSRF-hardened technical check of the submitted source URLs (still no
+authorization, no publication — see docs/intake/url-preflight.md).
+See docs/intake/local-processor.md.`;
 
 function currentRepositoryCommit() {
   try {
@@ -124,7 +133,7 @@ function loadMatchingIndex(matchingIndexPath) {
 // read, temp files, matching-index build — are still real, but there is
 // exactly one call site: runCli below), so tests can call it directly
 // instead of shelling out.
-export function processIssueEvent({ eventPath, outputDir, generatedAt, repositoryCommit, overwrite, matchingIndexPath, priorManifestsDir }) {
+export async function processIssueEvent({ eventPath, outputDir, generatedAt, repositoryCommit, overwrite, matchingIndexPath, priorManifestsDir, preflight = false, preflightDnsAdapter }) {
   const eventJson = loadEventFile(eventPath);
   const inputHash = hashEventInput(eventJson);
 
@@ -171,11 +180,22 @@ export function processIssueEvent({ eventPath, outputDir, generatedAt, repositor
   const duplicateResult = detectDuplicateIntake(currentForDuplicateCheck, priorManifests);
   const duplicateDetection = { ...duplicateResult, prior_manifest_source: priorManifestsDir ?? null };
 
+  // ---- Phase 4: URL preflight (PHASE_004.md §0, §23.1: offline by
+  // default, --preflight explicitly opts in to real network access). The
+  // production DNS adapter is only ever constructed HERE, inside the
+  // `preflight` branch — a caller that never passes `preflight: true`
+  // gets offlinePreflightResult and this code path never runs at all,
+  // which is what keeps `npm run build`/`npm test` network-free.
+  const sourcePreflight = preflight
+    ? await preflightUrls(normalizedUrls, { dnsAdapter: preflightDnsAdapter ?? createProductionDnsAdapter({ now: () => generatedAt }), now: () => generatedAt })
+    : offlinePreflightResult(normalizedUrls, () => generatedAt);
+
   // ---- Phase 3: risk classification (PHASE_003.md §12-§16) ----
   const riskResult = classifyIntakeRisk({
     submission: parsed,
     matchingResult: { candidate_subjects: candidateSubjects, normalizedSourceUrlCount: normalizedUrls.length },
     duplicateResult,
+    sourcePreflight,
   });
   const riskClassification = { flags: riskResult.flags };
   const workflowDecision = riskResult.workflow_decision;
@@ -204,6 +224,7 @@ export function processIssueEvent({ eventPath, outputDir, generatedAt, repositor
     matching,
     duplicateDetection,
     riskClassification,
+    sourcePreflight,
     workflowDecision,
     generatedAt,
     repositoryCommit,
@@ -253,7 +274,7 @@ export function processIssueEvent({ eventPath, outputDir, generatedAt, repositor
   }
 }
 
-function runCli(argv) {
+async function runCli(argv) {
   let args;
   try {
     args = parseCliArgs(argv);
@@ -276,7 +297,7 @@ function runCli(argv) {
   const repositoryCommit = args.repositoryCommit ?? currentRepositoryCommit();
 
   try {
-    const result = processIssueEvent({
+    const result = await processIssueEvent({
       eventPath: args.eventPath,
       outputDir: args.outputDir,
       generatedAt,
@@ -284,6 +305,7 @@ function runCli(argv) {
       overwrite: args.overwrite,
       matchingIndexPath: args.matchingIndexPath,
       priorManifestsDir: args.priorManifestsDir,
+      preflight: args.preflight,
     });
     console.log(JSON.stringify(result, null, 2));
     return EXIT_CODES.success;
@@ -299,5 +321,5 @@ function runCli(argv) {
 
 const isMain = process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1];
 if (isMain) {
-  process.exit(runCli(process.argv.slice(2)));
+  process.exit(await runCli(process.argv.slice(2)));
 }

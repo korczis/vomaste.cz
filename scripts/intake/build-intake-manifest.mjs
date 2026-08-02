@@ -31,6 +31,7 @@ export function buildIntakeManifest({
   matching,
   duplicateDetection,
   riskClassification,
+  sourcePreflight,
   workflowDecision,
   generatedAt,
   repositoryCommit,
@@ -96,6 +97,7 @@ export function buildIntakeManifest({
     matching: { dataset_commit: matching.dataset_commit, index_schema_version: matching.index_schema_version, candidate_subjects: matching.candidate_subjects },
     duplicate_detection: duplicateDetection,
     risk_classification: riskClassification,
+    source_preflight: sourcePreflight,
     workflow_decision: workflowDecision,
     // §1.1 / PHASE_002.md §15.1 / PHASE_003.md §14.2: the only values this
     // processor is capable of writing for authorization/publication —

@@ -13,9 +13,12 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const FIXTURE_PATH = join(ROOT, "tests/fixtures/intake/valid-new-dossier.json");
 const OUTPUT_DIR = join(ROOT, ".tmp/intake/fixture-run");
 
-function main() {
+async function main() {
   try {
-    const result = processIssueEvent({
+    // Deliberately offline (no --preflight) — this is the fast smoke
+    // check `npm run build` can safely run; see run-preflight-fixture.mjs
+    // for the network-opt-in equivalent.
+    const result = await processIssueEvent({
       eventPath: FIXTURE_PATH,
       outputDir: OUTPUT_DIR,
       generatedAt: "2026-08-02T00:00:00.000Z",
@@ -33,4 +36,4 @@ function main() {
   }
 }
 
-main();
+await main();

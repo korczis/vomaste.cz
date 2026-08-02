@@ -1,11 +1,14 @@
-# Intake local processor (Phase 2/3)
+# Intake local processor (Phase 2/3/4)
 
 `scripts/intake/process-issue.mjs` turns one local GitHub-issue-event
 fixture into an intake manifest, a Markdown report, and a
-machine-readable processing result — entirely offline. Since Phase 3 it
+machine-readable processing result. Offline by default. Since Phase 3 it
 also runs entity-candidate matching, duplicate-intake detection, and risk
 classification as part of the same pipeline (see
-`docs/intake/entity-matching.md` and `docs/intake/risk-classification.md`).
+`docs/intake/entity-matching.md` and `docs/intake/risk-classification.md`);
+since Phase 4, passing `--preflight` additionally runs a real,
+SSRF-hardened technical check of the submitted source URLs (see
+`docs/intake/url-preflight.md` and `docs/intake/security-boundary.md`).
 See `docs/intake/intake-manifest.md` for the manifest's own field
 reference, and `docs/adr/ADR-public-dossier-intake.md` for the
 architecture this implements. No GitHub Actions, no GitHub API calls, no
@@ -21,7 +24,8 @@ node scripts/intake/process-issue.mjs \
   [--repository-commit <sha>] \
   [--overwrite] \
   [--matching-index <path>] \
-  [--prior-manifests-dir <dir>]
+  [--prior-manifests-dir <dir>] \
+  [--preflight]
 
 node scripts/intake/process-issue.mjs --help
 ```
@@ -33,7 +37,10 @@ for tests. `--prior-manifests-dir` points duplicate detection at a
 directory of previously-written `manifest.json` files (see
 `docs/intake/entity-matching.md`'s "Duplicate intake detection" — no such
 directory is configured by default, so duplicate detection is always
-`no_duplicate` unless the caller opts in).
+`no_duplicate` unless the caller opts in). `--preflight` opts in to real
+network access for the submitted source URLs — offline by default
+(§23.1); without it, every URL's `source_preflight` result is
+`not_attempted`/`not_attempted`.
 
 - `--event` and `--output-dir` are required. `--event` accepts only a
   filesystem path — never issue body content, never a URL.
@@ -52,12 +59,14 @@ Companion commands:
 ```bash
 npm run intake:process -- --event <path> --output-dir <dir>   # same CLI, via npm
 npm run intake:validate -- <manifest.json>                    # re-validate an existing manifest
-npm run intake:fixture                                        # smoke-test: one fixed fixture, fixed clock/commit, into .tmp/intake/ (gitignored)
+npm run intake:fixture                                        # smoke-test: one fixed fixture, fixed clock/commit, into .tmp/intake/ (gitignored) — always offline
+npm run intake:preflight-fixture                              # same idea, but --preflight through a MOCK DNS transport (never real network) — into .tmp/intake/preflight-fixture-run/
 npm run intake:index                                          # regenerate the matching index on demand (npm run intake:fixture always builds it fresh anyway)
 npm run intake:match-fixture                                  # same fixture through the full Phase 3 pipeline, into .tmp/intake/match-fixture/
-npm run test:intake                                            # node --test scripts/intake/*.test.mjs + matching/ + risk/ (244 tests)
+npm run test:intake                                            # node --test scripts/intake/*.test.mjs + matching/ + risk/ + preflight/ (425 tests)
 npm run test:intake:matching                                   # matching subsystem only
 npm run test:intake:risk                                       # risk classifier subsystem only
+npm run test:intake:preflight                                  # URL preflight subsystem only
 ```
 
 `test:intake`'s tests are also part of the repo's main `npm test`, so
@@ -120,13 +129,20 @@ clock/commit into `.tmp/intake/fixture-run/` (gitignored, never tracked).
 
 ## Offline boundary
 
-Phase 2 makes zero network requests. URL handling is syntax-only
-(extraction + classification via `new URL()`, never `fetch`/`http(s)`
-client/DNS) — see `scripts/intake/normalize-submission.mjs` and the
-static gate `scripts/intake/network-guard.test.mjs`, which fails the
-build if `fetch(`, `http.request`, `https.request`, a `node:dns`/
-`node:http(s)` import, or a shell-out to `curl`/`wget`/`gh` ever appears
-anywhere under `scripts/intake/` (excluding test files).
+Phase 2/3 make zero network requests — URL handling there is
+syntax-only (extraction + classification via `new URL()`, never
+`fetch`/`http(s)` client/DNS; see `scripts/intake/normalize-submission.mjs`).
+Phase 4's `scripts/intake/preflight/` is the one deliberate exception,
+and only when `--preflight` is explicitly passed — see
+`docs/intake/url-preflight.md` and `docs/intake/security-boundary.md`
+for the full SSRF-hardening design. `scripts/intake/network-guard.test.mjs`
+enforces the boundary precisely: no network primitive
+(`fetch(`, `http.request`, `https.request`, a `node:dns`/`node:http(s)`
+import) may appear anywhere under `scripts/intake/` **except** inside
+`scripts/intake/preflight/request-once.mjs` and
+`scripts/intake/preflight/resolve-hostname.mjs` — the two designated
+transport-adapter modules — and a shell-out to `curl`/`wget`/`gh` is
+never permitted anywhere, including there.
 
 ## Failure modes (by pipeline stage)
 
@@ -150,7 +166,8 @@ anywhere under `scripts/intake/` (excluding test files).
 
 ## Security constraints
 
-- **No network, ever** (see "Offline boundary").
+- **No network unless `--preflight` is explicit** (see "Offline boundary"
+  and `docs/intake/security-boundary.md`).
 - **Fail-closed**: any unrecognized shape stops the pipeline before a
   manifest is written — never a best-effort guess, never a default that
   widens scope (PHASE_002.md §1.4).
@@ -178,13 +195,16 @@ anywhere under `scripts/intake/` (excluding test files).
   processor can produce ever has `authorization_status` other than
   `"pending_owner"` or `publication_status` other than `"blocked"`.
 
-## What this phase does not do
+## What this whole processor does not do
 
 No GitHub API calls, no GitHub Actions workflow, no issue comments, no
-label management, no HTTP requests of any kind, no URL reachability
-checks (Phase 3's matching is against LOCAL repo data only — never a
-network lookup), no NER or AI-based entity extraction, no source-family
-verification, no editorial research, no AI classification, no Prismatic
-integration, no authorization, no dossier/entity/claim creation, no PR,
-no merge, no deploy. All of that is later phases (see
-`reports/intake/phase-03-implementation-report.md`'s "Phase 4 contract").
+label management, no NER or AI-based entity extraction, no
+source-family verification, no editorial research, no AI classification,
+no Prismatic integration, no authorization, no dossier/entity/claim
+creation, no PR, no merge, no deploy. Even with `--preflight`: no source
+trust scoring, no article body extraction/archiving, no screenshots, no
+PDF parsing/OCR, no browser automation or JavaScript rendering, no
+paywall bypass, no `robots.txt` crawling, no recursive link discovery
+(see `docs/intake/url-preflight.md`'s "Non-goals"). All of that is later
+phases (see `reports/intake/phase-04-implementation-report.md`'s "Phase 5
+contract").

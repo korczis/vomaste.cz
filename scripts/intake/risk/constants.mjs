@@ -31,6 +31,32 @@ export const FLAG_CATALOG = Object.freeze({
   possible_duplicate_intake: { severity: "medium", category: "workflow", effect: "possible_duplicate" },
   conflicting_entity_identifiers: { severity: "high", category: "data_quality", effect: "manual_review" },
   manual_security_review_required: { severity: "high", category: "security", effect: "security_review_required" },
+
+  // PHASE_004.md §15 — derived from scripts/intake/preflight/* results
+  // by detect-preflight-risk.mjs. A "safety block" (private destination,
+  // mixed DNS, credentials, redirect-to-private, TLS error) is a real
+  // security signal worth a human security look; an ordinary "article
+  // temporarily unreachable" (timeout, DNS failure, unsupported content
+  // type) is not — it stays a low-severity/needs_information-or-audit
+  // observation, per §15.1's explicit "rozliš unsafe URL a safe
+  // destination, but server unavailable".
+  url_invalid: { severity: "low", category: "data_quality", effect: "manual_review" },
+  url_unsupported_protocol: { severity: "low", category: "data_quality", effect: "manual_review" },
+  url_contains_credentials: { severity: "high", category: "security", effect: "security_review_required" },
+  url_nonstandard_port: { severity: "low", category: "data_quality", effect: "manual_review" },
+  url_private_destination: { severity: "high", category: "security", effect: "security_review_required" },
+  url_mixed_public_private_dns: { severity: "high", category: "security", effect: "security_review_required" },
+  url_dns_failure: { severity: "info", category: "data_quality", effect: "needs_information" },
+  url_redirect_private_destination: { severity: "high", category: "security", effect: "security_review_required" },
+  url_redirect_loop: { severity: "low", category: "data_quality", effect: "manual_review" },
+  url_redirect_transport_downgrade: { severity: "medium", category: "security", effect: "manual_review" },
+  url_tls_error: { severity: "medium", category: "data_quality", effect: "manual_review" },
+  url_timeout: { severity: "info", category: "data_quality", effect: "needs_information" },
+  url_response_too_large: { severity: "info", category: "data_quality", effect: "audit_only" },
+  url_unsupported_content_type: { severity: "info", category: "data_quality", effect: "audit_only" },
+  url_metadata_extraction_failed: { severity: "info", category: "data_quality", effect: "audit_only" },
+  url_preflight_partial: { severity: "info", category: "workflow", effect: "audit_only" },
+  url_preflight_failed: { severity: "low", category: "data_quality", effect: "needs_information" },
 });
 
 // §14.1 deterministic precedence — highest wins when deciding the

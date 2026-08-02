@@ -1,19 +1,20 @@
-# Intake manifest (Phase 2/3)
+# Intake manifest (Phase 2/3/4)
 
 Reference for `schemas/intake/intake-manifest.schema.json` — the artifact
 `scripts/intake/build-intake-manifest.mjs` produces from one validated,
-normalized submission plus Phase 3's matching/duplicate/risk enrichment.
-See `docs/adr/ADR-public-dossier-intake.md` for the architecture decision
-this implements, `docs/missions/intake/PHASE_002.md` /
-`PHASE_003.md` for the mission text, and
-`docs/intake/entity-matching.md` / `docs/intake/risk-classification.md`
-for the two Phase 3 subsystems this manifest now carries.
+normalized submission plus Phase 3's matching/duplicate/risk enrichment
+and Phase 4's URL preflight. See `docs/adr/ADR-public-dossier-intake.md`
+for the architecture decision this implements, `docs/missions/intake/PHASE_002.md`
+/ `PHASE_003.md` / `PHASE_004.md` for the mission text, and
+`docs/intake/entity-matching.md` / `docs/intake/risk-classification.md` /
+`docs/intake/url-preflight.md` for the three subsystems this manifest
+carries beyond Phase 2's own base shape.
 
 ## Schema versions
 
-- `schema_version`: `"0.2.0"` (Phase 3 — added `matching`,
-  `duplicate_detection`, `risk_classification`, `workflow_decision`, all
-  required) — still experimental (not `1.0.0`), per
+- `schema_version`: `"0.3.0"` (Phase 4 — added required `source_preflight`;
+  Phase 3 added `matching`, `duplicate_detection`, `risk_classification`,
+  `workflow_decision`) — still experimental (not `1.0.0`), per
   `docs/adr/ADR-public-dossier-intake.md` §23.1. A future phase may bump
   this once the site owner accepts the model as stable.
 - `form_version` (inside `system_observations`): the version of the

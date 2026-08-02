@@ -97,12 +97,12 @@ test("no module under scripts/intake/ invokes git commit/push, or the authorize-
   assert.deepEqual(offenders, []);
 });
 
-test("running the full pipeline over every fixture never produces a manifest outside {pending_owner, blocked}", () => {
-  withTmpDir((dir) => {
+test("running the full pipeline over every fixture never produces a manifest outside {pending_owner, blocked}", async () => {
+  await withTmpDir(async (dir) => {
     for (const fixtureName of readdirSync(FIXTURES_DIR)) {
       if (!fixtureName.endsWith(".json")) continue;
       try {
-        const result = processIssueEvent({
+        const result = await processIssueEvent({
           eventPath: join(FIXTURES_DIR, fixtureName),
           outputDir: dir,
           generatedAt: "2026-08-02T00:00:00.000Z",
@@ -126,10 +126,10 @@ test("this repository's AGENTS.md and data/authorizations.toml are untouched by 
   assert.ok(statSync(join(REPO_ROOT, "AGENTS.md")).size > 1000);
 });
 
-function withTmpDir(fn) {
+async function withTmpDir(fn) {
   const dir = mkdtempSync(join(tmpdir(), "intake-negauth-test-"));
   try {
-    return fn(dir);
+    return await fn(dir);
   } finally {
     rmSync(dir, { recursive: true, force: true });
   }

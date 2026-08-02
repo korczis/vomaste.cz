@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://vomaste.cz/schemas/intake/intake-manifest.schema.json",
-  "title": "Intake manifest (Phase 2/3, docs/missions/intake/PHASE_002.md §5.2, PHASE_003.md §18)",
-  "$comment": "schemaVersion 0.2.0 (Phase 3 — added matching/duplicate_detection/risk_classification/workflow_decision, all now required since process-issue.mjs always runs these subsystems; still experimental, not yet owner-reviewed as stable, hence not 1.0.0). Enums for workflow.* are intentionally narrower than the full state machine (ADR §18/state-machine-detail): this processor can only ever produce the values enumerated here — authorized/publishable/published are not valid values of this schema at all, so the invariant 'intake ≠ authorization' is enforced by the shape layer, not just by convention. Phase 3 adds possible_duplicate/security_review_required to workflow.intake_status — still no authorization/publication value anywhere.",
+  "title": "Intake manifest (Phase 2/3/4, docs/missions/intake/PHASE_002.md §5.2, PHASE_003.md §18, PHASE_004.md §14/§25)",
+  "$comment": "schemaVersion 0.3.0 (Phase 4 — added required source_preflight; Phase 3 added matching/duplicate_detection/risk_classification/workflow_decision. Still experimental, not yet owner-reviewed as stable, hence not 1.0.0). Enums for workflow.* are intentionally narrower than the full state machine (ADR §18/state-machine-detail): this processor can only ever produce the values enumerated here — authorized/publishable/published are not valid values of this schema at all, so the invariant 'intake ≠ authorization' is enforced by the shape layer, not just by convention.",
   "type": "object",
   "additionalProperties": false,
   "$defs": {
@@ -13,9 +13,9 @@
     },
     "httpUrl": { "type": "string", "pattern": "^https?://\\S+$" }
   },
-  "required": ["schema_version", "id", "source_event", "submission", "normalization", "system_observations", "proposed_authorization_scope", "matching", "duplicate_detection", "risk_classification", "workflow_decision", "workflow", "provenance"],
+  "required": ["schema_version", "id", "source_event", "submission", "normalization", "system_observations", "proposed_authorization_scope", "matching", "duplicate_detection", "risk_classification", "source_preflight", "workflow_decision", "workflow", "provenance"],
   "properties": {
-    "schema_version": { "const": "0.2.0" },
+    "schema_version": { "const": "0.3.0" },
     "id": {
       "type": "string",
       "pattern": "^INTAKE-GH-[a-z0-9-]+-[a-z0-9-]+-\\d{6}$",
@@ -288,6 +288,96 @@
               "effect": { "type": "string", "enum": ["needs_information", "security_review_required", "possible_duplicate", "manual_review", "audit_only"] },
               "explanation": { "type": "string", "maxLength": 500 },
               "detector_version": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "source_preflight": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["version", "checked_at", "results"],
+      "$comment": "PHASE_004.md §14. HTTP 200 ≠ trusted source; reachable ≠ independent; metadata extracted ≠ article read; URL submitted ≠ claim verified (§1.1) — editorial_verification is always the literal string \"not_performed\", never anything else, anywhere in this object.",
+      "properties": {
+        "version": { "type": "string" },
+        "checked_at": { "$ref": "#/$defs/isoDateTime" },
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["submitted_url", "normalized_url", "checked_at", "status", "policy_decision", "http", "network", "redirects", "metadata", "editorial_verification", "warnings", "errors"],
+            "properties": {
+              "submitted_url": { "type": "string", "maxLength": 2048 },
+              "normalized_url": { "type": "string", "maxLength": 2048 },
+              "checked_at": { "$ref": "#/$defs/isoDateTime" },
+              "status": { "type": "string", "enum": ["reachable", "unreachable", "blocked", "timeout", "invalid", "unsupported", "partial", "not_attempted"] },
+              "policy_decision": { "type": "string", "enum": ["allowed", "blocked", "not_attempted"] },
+              "http": {
+                "type": ["object", "null"],
+                "additionalProperties": false,
+                "required": ["status", "content_type", "content_length_declared", "body_bytes_read", "body_truncated"],
+                "properties": {
+                  "status": { "type": "integer", "minimum": 100, "maximum": 599 },
+                  "content_type": { "type": ["string", "null"], "maxLength": 200 },
+                  "content_length_declared": { "type": ["integer", "null"], "minimum": 0 },
+                  "body_bytes_read": { "type": "integer", "minimum": 0 },
+                  "body_truncated": { "type": "boolean" }
+                }
+              },
+              "network": {
+                "type": ["object", "null"],
+                "additionalProperties": false,
+                "required": ["resolved_addresses", "remote_address"],
+                "properties": {
+                  "resolved_addresses": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": ["address", "family", "classification", "category"],
+                      "properties": {
+                        "address": { "type": "string", "maxLength": 64 },
+                        "family": { "type": "integer", "enum": [4, 6] },
+                        "classification": { "type": "string", "enum": ["public", "non_public"] },
+                        "category": { "type": ["string", "null"] }
+                      }
+                    }
+                  },
+                  "remote_address": { "type": ["string", "null"], "maxLength": 64 }
+                }
+              },
+              "redirects": {
+                "type": "array",
+                "maxItems": 10,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": ["from", "to", "status"],
+                  "properties": {
+                    "from": { "type": "string", "maxLength": 2048 },
+                    "to": { "type": "string", "maxLength": 2048 },
+                    "status": { "type": "integer", "minimum": 100, "maximum": 599 }
+                  }
+                }
+              },
+              "metadata": {
+                "type": ["object", "null"],
+                "additionalProperties": false,
+                "properties": {
+                  "title": { "type": "string", "maxLength": 500 },
+                  "canonical_url": { "type": "string", "maxLength": 2048 },
+                  "og_title": { "type": "string", "maxLength": 2000 },
+                  "og_site_name": { "type": "string", "maxLength": 2000 },
+                  "og_type": { "type": "string", "maxLength": 2000 },
+                  "description": { "type": "string", "maxLength": 2000 },
+                  "article_published_time": { "type": "string", "maxLength": 2000 },
+                  "article_modified_time": { "type": "string", "maxLength": 2000 }
+                }
+              },
+              "editorial_verification": { "const": "not_performed", "$comment": "PHASE_004.md §14.3 — Phase 4 cannot express any other value; this is structural, not a convention." },
+              "warnings": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["code", "message"], "properties": { "code": { "type": "string" }, "message": { "type": "string", "maxLength": 500 } } } },
+              "errors": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["code", "message"], "properties": { "code": { "type": "string" }, "message": { "type": "string", "maxLength": 500 } } } }
             }
           }
         }

@@ -42,6 +42,7 @@ function manifestWith(submissionOverrides = {}) {
     },
     duplicateDetection: { duplicate_status: "no_duplicate", candidates: [], manual_review_required: false, prior_manifest_source: null },
     riskClassification: { flags: [] },
+    sourcePreflight: { version: "1.0.0", checked_at: "2026-08-02T00:00:00.000Z", results: [] },
     workflowDecision: { winning_effect: null, intake_status: "triage" },
     generatedAt: "2026-08-02T00:00:00.000Z",
     repositoryCommit: "0000000000000000000000000000000000000f",

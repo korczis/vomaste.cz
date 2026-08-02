@@ -12,10 +12,10 @@ const FIXTURES_DIR = join(dirname(fileURLToPath(import.meta.url)), "..", "..", "
 const FIXED_CLOCK = "2026-08-02T00:00:00.000Z";
 const FIXED_COMMIT = "0000000000000000000000000000000000000f";
 
-function withTmpDir(fn) {
+async function withTmpDir(fn) {
   const dir = mkdtempSync(join(tmpdir(), "intake-test-"));
   try {
-    return fn(dir);
+    return await fn(dir);
   } finally {
     rmSync(dir, { recursive: true, force: true });
   }
@@ -47,11 +47,16 @@ test("parseCliArgs rejects a duplicate flag", () => {
 });
 
 test("parseCliArgs accepts --help with no other arguments", () => {
-  assert.deepEqual(parseCliArgs(["--help"]), { overwrite: false, help: true });
+  assert.deepEqual(parseCliArgs(["--help"]), { overwrite: false, help: true, preflight: false });
 });
 
 test("parseCliArgs never accepts issue body as a positional/flag argument (no such flag exists)", () => {
   assert.throws(() => parseCliArgs(["--issue-body", "hello"]), (err) => err instanceof IntakeError && err.code === ERROR_CODES.CLI_USAGE);
+});
+
+test("parseCliArgs accepts --preflight as a bare flag", () => {
+  assert.equal(parseCliArgs(["--preflight"]).preflight, true);
+  assert.equal(parseCliArgs([]).preflight, false);
 });
 
 // ---- end-to-end fixture processing ----
@@ -90,9 +95,9 @@ const EXPECT_FAILURE_CODE = {
 };
 
 for (const fixtureName of EXPECT_SUCCESS) {
-  test(`processes ${fixtureName} into a schema-valid, workflow-blocked manifest`, () => {
-    withTmpDir((dir) => {
-      const result = process(fixtureName, dir);
+  test(`processes ${fixtureName} into a schema-valid, workflow-blocked manifest`, async () => {
+    await withTmpDir(async (dir) => {
+      const result = await process(fixtureName, dir);
       assert.equal(result.status, "success");
       const manifest = JSON.parse(readFileSync(join(dir, result.intake_id, "manifest.json"), "utf8"));
       assert.equal(manifest.workflow.authorization_status, "pending_owner");
@@ -103,9 +108,9 @@ for (const fixtureName of EXPECT_SUCCESS) {
 }
 
 for (const [fixtureName, expectedCode] of Object.entries(EXPECT_FAILURE_CODE)) {
-  test(`fails ${fixtureName} with ${expectedCode} and writes no output directory`, () => {
-    withTmpDir((dir) => {
-      assert.throws(() => process(fixtureName, dir), (err) => err instanceof IntakeError && err.code === expectedCode);
+  test(`fails ${fixtureName} with ${expectedCode} and writes no output directory`, async () => {
+    await withTmpDir(async (dir) => {
+      await assert.rejects(process(fixtureName, dir), (err) => err instanceof IntakeError && err.code === expectedCode);
       assert.deepEqual(readdirSync(dir), [], "a failed run must leave no output directory behind");
     });
   });
@@ -113,79 +118,101 @@ for (const [fixtureName, expectedCode] of Object.entries(EXPECT_FAILURE_CODE)) {
 
 // ---- determinism (§7, §16.3) ----
 
-test("the same event, clock and commit produce a byte-identical manifest and report across two independent runs", () => {
-  withTmpDir((dirA) => {
-    withTmpDir((dirB) => {
-      const a = process("valid-new-dossier.json", dirA);
-      const b = process("valid-new-dossier.json", dirB);
+test("the same event, clock and commit produce a byte-identical manifest and report across two independent runs", async () => {
+  await withTmpDir(async (dirA) => {
+    await withTmpDir(async (dirB) => {
+      const a = await process("valid-new-dossier.json", dirA);
+      const b = await process("valid-new-dossier.json", dirB);
       assert.equal(readFileSync(join(dirA, a.intake_id, "manifest.json"), "utf8"), readFileSync(join(dirB, b.intake_id, "manifest.json"), "utf8"));
       assert.equal(readFileSync(join(dirA, a.intake_id, "report.md"), "utf8"), readFileSync(join(dirB, b.intake_id, "report.md"), "utf8"));
     });
   });
 });
 
-test("editing the issue (an 'edited' action on the same issue number) does not change the intake ID", () => {
-  withTmpDir((dir) => {
-    const opened = process("valid-new-dossier.json", dir);
+test("editing the issue (an 'edited' action on the same issue number) does not change the intake ID", async () => {
+  await withTmpDir(async (dir) => {
+    const opened = await process("valid-new-dossier.json", dir);
     const eventPath = join(FIXTURES_DIR, "valid-new-dossier.json");
     const edited = JSON.parse(readFileSync(eventPath, "utf8"));
     edited.event.action = "edited";
     edited.issue.updated_at = "2026-08-02T12:00:00Z";
     const editedPath = join(dir, "edited-event.json");
     writeFileSync(editedPath, JSON.stringify(edited), "utf8");
-    const editedResult = process("edited-event.json", dir, { eventPath: editedPath, overwrite: true });
+    const editedResult = await process("edited-event.json", dir, { eventPath: editedPath, overwrite: true });
     assert.equal(opened.intake_id, editedResult.intake_id);
   });
 });
 
 // ---- output safety (§17, §24.3) ----
 
-test("refuses to overwrite an existing intake output directory without --overwrite", () => {
-  withTmpDir((dir) => {
-    process("valid-new-dossier.json", dir);
-    assert.throws(() => process("valid-new-dossier.json", dir), (err) => err instanceof IntakeError && err.code === ERROR_CODES.OUTPUT_EXISTS);
+test("refuses to overwrite an existing intake output directory without --overwrite", async () => {
+  await withTmpDir(async (dir) => {
+    await process("valid-new-dossier.json", dir);
+    await assert.rejects(process("valid-new-dossier.json", dir), (err) => err instanceof IntakeError && err.code === ERROR_CODES.OUTPUT_EXISTS);
   });
 });
 
-test("--overwrite replaces a prior run's output for the same intake ID", () => {
-  withTmpDir((dir) => {
-    const first = process("valid-new-dossier.json", dir);
-    const second = process("valid-new-dossier.json", dir, { overwrite: true });
+test("--overwrite replaces a prior run's output for the same intake ID", async () => {
+  await withTmpDir(async (dir) => {
+    const first = await process("valid-new-dossier.json", dir);
+    const second = await process("valid-new-dossier.json", dir, { overwrite: true });
     assert.equal(first.intake_id, second.intake_id);
   });
 });
 
-test("leaves no partial output when validation fails before any output directory would have been created", () => {
-  withTmpDir((dir) => {
+test("leaves no partial output when validation fails before any output directory would have been created", async () => {
+  await withTmpDir(async (dir) => {
     const before = readdirSync(dir);
-    assert.throws(() => process("invalid-duplicate-section.json", dir));
+    await assert.rejects(process("invalid-duplicate-section.json", dir));
     const after = readdirSync(dir);
     assert.deepEqual(before, after);
   });
 });
 
-test("refuses a symlinked event file (§8.2 symlink policy: refuse)", () => {
-  withTmpDir((dir) => {
+test("refuses a symlinked event file (§8.2 symlink policy: refuse)", async () => {
+  await withTmpDir(async (dir) => {
     const realTarget = join(dir, "real.json");
     writeFileSync(realTarget, readFileSync(join(FIXTURES_DIR, "valid-new-dossier.json")));
     const linkPath = join(dir, "link.json");
     symlinkSync(realTarget, linkPath);
-    assert.throws(() => process("link.json", dir, { eventPath: linkPath }), (err) => err instanceof IntakeError && err.code === ERROR_CODES.EVENT_NOT_REGULAR_FILE);
+    await assert.rejects(process("link.json", dir, { eventPath: linkPath }), (err) => err instanceof IntakeError && err.code === ERROR_CODES.EVENT_NOT_REGULAR_FILE);
   });
 });
 
-test("refuses an event path that is a directory", () => {
-  withTmpDir((dir) => {
+test("refuses an event path that is a directory", async () => {
+  await withTmpDir(async (dir) => {
     const subdir = join(dir, "adir");
     mkdirSync(subdir);
-    assert.throws(() => process("adir", dir, { eventPath: subdir }), (err) => err instanceof IntakeError && err.code === ERROR_CODES.EVENT_NOT_REGULAR_FILE);
+    await assert.rejects(process("adir", dir, { eventPath: subdir }), (err) => err instanceof IntakeError && err.code === ERROR_CODES.EVENT_NOT_REGULAR_FILE);
   });
 });
 
-test("refuses an event file exceeding the size limit", () => {
-  withTmpDir((dir) => {
+test("refuses an event file exceeding the size limit", async () => {
+  await withTmpDir(async (dir) => {
     const bigPath = join(dir, "big.json");
     writeFileSync(bigPath, `{"padding":"${"x".repeat(1024 * 1024 + 100)}"}`);
-    assert.throws(() => process("big.json", dir, { eventPath: bigPath }), (err) => err instanceof IntakeError && err.code === ERROR_CODES.EVENT_TOO_LARGE);
+    await assert.rejects(process("big.json", dir, { eventPath: bigPath }), (err) => err instanceof IntakeError && err.code === ERROR_CODES.EVENT_TOO_LARGE);
+  });
+});
+
+// ---- Phase 4: --preflight stays opt-in; default run is offline (§23.1) ----
+
+test("without --preflight, the manifest's source_preflight is entirely not_attempted — no network module is ever touched", async () => {
+  await withTmpDir(async (dir) => {
+    const result = await process("valid-markdown-links.json", dir);
+    const manifest = JSON.parse(readFileSync(join(dir, result.intake_id, "manifest.json"), "utf8"));
+    assert.ok(manifest.source_preflight.results.length > 0);
+    assert.ok(manifest.source_preflight.results.every((r) => r.policy_decision === "not_attempted" && r.status === "not_attempted"));
+  });
+});
+
+test("with preflight:true and an injected mock DNS adapter, source_preflight is populated with a real (mocked) outcome", async () => {
+  await withTmpDir(async (dir) => {
+    const result = await process("valid-markdown-links.json", dir, {
+      preflight: true,
+      preflightDnsAdapter: async () => ({ addresses: [{ address: "10.0.0.5", family: 4 }], resolvedAt: FIXED_CLOCK }),
+    });
+    const manifest = JSON.parse(readFileSync(join(dir, result.intake_id, "manifest.json"), "utf8"));
+    assert.ok(manifest.source_preflight.results.some((r) => r.policy_decision === "blocked"), "a private-address mock DNS answer must be blocked, proving the SSRF policy actually ran");
   });
 });

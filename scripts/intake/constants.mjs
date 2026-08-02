@@ -88,7 +88,7 @@ export const FORM_V1 = Object.freeze({
 export const FORM_VERSION_NUMBER = "1.0.0";
 export const PARSER_VERSION = "1.0.0";
 export const GENERATOR_VERSION = "1.0.0";
-export const SCHEMA_VERSION = "0.2.0"; // still experimental — see schemas/intake/intake-manifest.schema.json $comment
+export const SCHEMA_VERSION = "0.3.0"; // still experimental — see schemas/intake/intake-manifest.schema.json $comment
 export const MATCHING_INDEX_SCHEMA_VERSION = "1.0.0"; // build-matching-index.mjs's own output schema_version
 
 // §16 — the hidden HTML-comment marker the report renderer emits, and the

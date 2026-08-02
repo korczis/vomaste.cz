@@ -12,6 +12,7 @@ import { detectSensitiveMaterialClaims } from "./detect-sensitive-material-claim
 import { detectAdverseAllegationLanguage } from "./detect-adverse-allegation-language.mjs";
 import { detectAnonymousSourceLanguage } from "./detect-anonymous-source-language.mjs";
 import { detectInjectionMarkers } from "./detect-injection-markers.mjs";
+import { detectPreflightRisk } from "./detect-preflight-risk.mjs";
 
 const SCANNED_TEXT_FIELDS = ["subject_text", "description_text", "public_interest_text", "identifiers_text", "known_unknowns_text", "existing_references_text"];
 
@@ -72,7 +73,7 @@ function detectFromDuplicates(duplicateResult) {
 // order from SCANNED_TEXT_FIELDS), then derived flags — so the same
 // manifest + matching + duplicate result always produces the same flag
 // array order (§21 determinism).
-export function classifyIntakeRisk({ submission, matchingResult, duplicateResult }) {
+export function classifyIntakeRisk({ submission, matchingResult, duplicateResult, sourcePreflight }) {
   const fields = textFieldsOf(submission);
   const normalizedUrlCount = matchingResult?.normalizedSourceUrlCount ?? 0;
 
@@ -85,6 +86,7 @@ export function classifyIntakeRisk({ submission, matchingResult, duplicateResult
     ...detectInjectionMarkers(fields),
     ...detectFromMatching(matchingResult),
     ...detectFromDuplicates(duplicateResult),
+    ...(sourcePreflight ? detectPreflightRisk(sourcePreflight) : []),
   ];
 
   // §14: a roll-up flag whenever ANY other flag already implies

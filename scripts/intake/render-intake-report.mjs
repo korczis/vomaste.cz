@@ -8,6 +8,7 @@
 // a pile of ad hoc escaping rules that could each be wrong in a different
 // way.
 import { REPORT_MARKER } from "./constants.mjs";
+import { SENSITIVE_QUERY_PARAM_NAMES } from "./preflight/constants.mjs";
 
 const INTAKE_STATUS_LABELS = Object.freeze({
   triage: "čeká na redakční třídění",
@@ -98,6 +99,76 @@ function renderDuplicateSection(duplicateDetection) {
   return `${rows}\n\n> Automat podněty neslučuje ani nezavírá.`;
 }
 
+const PREFLIGHT_STATUS_LABELS = Object.freeze({
+  reachable: "dostupná",
+  unreachable: "nedostupná",
+  blocked: "blokována",
+  timeout: "časový limit",
+  invalid: "neplatná",
+  unsupported: "nepodporovaná",
+  partial: "částečná",
+  not_attempted: "neprovedeno",
+});
+
+const MAX_DISPLAY_URL_LENGTH = 200;
+
+// §26.1/§26.2: shorten extreme URLs, neutralize embedded credentials (a
+// defensive display-only measure — policy already blocks these before
+// any request; this is about what a human reading the COMMENT sees, not
+// what got requested), and redact known-sensitive query parameters.
+// Displayed as an inert code span, never a live link (§26.1: "blocked
+// URL nemusí být aktivní clickable link" — this report never makes any
+// submitter-controlled URL clickable, blocked or not, matching the same
+// discipline the rest of this renderer already applies).
+function redactUrlForDisplay(rawUrl) {
+  let display;
+  try {
+    const parsed = new URL(rawUrl);
+    if (parsed.username || parsed.password) {
+      parsed.username = "";
+      parsed.password = "";
+    }
+    for (const param of SENSITIVE_QUERY_PARAM_NAMES) {
+      if (parsed.searchParams.has(param)) parsed.searchParams.set(param, "[redacted]");
+    }
+    display = parsed.toString();
+  } catch {
+    display = String(rawUrl);
+  }
+  display = display.length > MAX_DISPLAY_URL_LENGTH ? `${display.slice(0, MAX_DISPLAY_URL_LENGTH)}…` : display;
+  return display.replace(/`/g, "'");
+}
+
+function renderPreflightSection(sourcePreflight) {
+  if (!sourcePreflight || sourcePreflight.results.length === 0) {
+    return "_(Podání neobsahuje žádnou URL k technické kontrole.)_";
+  }
+
+  const rows = sourcePreflight.results
+    .map((r) => {
+      const note = r.errors[0]?.code ?? r.warnings[0]?.code ?? "—";
+      return `| \`${redactUrlForDisplay(r.normalized_url)}\` | ${PREFLIGHT_STATUS_LABELS[r.status] ?? r.status} | ${r.http?.status ?? "—"} | ${r.http?.content_type ?? "—"} | ${r.redirects.length} | ${note} |`;
+    })
+    .join("\n");
+  const table = `| URL | Výsledek | HTTP | Typ obsahu | Redirecty | Poznámka |\n|---|---|---:|---|---:|---|\n${rows}`;
+
+  const blocked = sourcePreflight.results.filter((r) => r.policy_decision === "blocked");
+  const blockedSection = blocked.length === 0 ? "_(žádné)_" : blocked.map((r) => `- \`${redactUrlForDisplay(r.normalized_url)}\` — ${r.errors[0]?.code ?? "blocked"}`).join("\n");
+
+  const withMetadata = sourcePreflight.results.filter((r) => r.metadata);
+  const metadataSection =
+    withMetadata.length === 0
+      ? "_(žádná metadata nebyla extrahována)_"
+      : withMetadata
+          .map(
+            (r) =>
+              `**\`${redactUrlForDisplay(r.normalized_url)}\`**\n\n- Deklarovaný název stránky: ${r.metadata.title ? fencedBlock(r.metadata.title) : "_(neuvedeno)_"}\n- Deklarovaný web: ${r.metadata.og_site_name ?? "_(neuvedeno)_"}\n- Canonical URL: \`${r.metadata.canonical_url ? redactUrlForDisplay(r.metadata.canonical_url) : "neuvedeno"}\`\n- Editorial verification: neprovedeno`
+          )
+          .join("\n\n");
+
+  return `> Tato kontrola ověřuje pouze technickou dostupnost a bezpečnost cíle.\n> Neověřuje pravdivost, nezávislost ani redakční kvalitu zdroje.\n\n${table}\n\n### Blokované adresy\n\n${blockedSection}\n\n### Technická metadata\n\n${metadataSection}`;
+}
+
 function renderRiskSection(riskClassification) {
   if (riskClassification.flags.length === 0) {
     return "_(Nebyl detekován žádný rizikový příznak.)_\n\n> Rizikový příznak není skutkový ani právní závěr.";
@@ -112,7 +183,7 @@ function renderRiskSection(riskClassification) {
 // (build-intake-manifest.mjs). Same manifest + same rendering logic always
 // produces byte-identical Markdown — no clock or randomness read in here.
 export function renderIntakeReport(manifest) {
-  const { submission, normalization, system_observations, proposed_authorization_scope, matching, duplicate_detection, risk_classification, workflow, provenance, id } = manifest;
+  const { submission, normalization, system_observations, proposed_authorization_scope, matching, duplicate_detection, risk_classification, source_preflight, workflow, provenance, id } = manifest;
 
   const warningLines = system_observations.warnings.map((w) => `- **${w.code}**${w.field ? ` (\`${w.field}\`)` : ""}: ${w.message}`);
 
@@ -191,6 +262,10 @@ ${renderMatchingSection(matching)}
 ## Možné duplicitní podněty
 
 ${renderDuplicateSection(duplicate_detection)}
+
+## Technická kontrola uvedených URL
+
+${renderPreflightSection(source_preflight)}
 
 ## Rizikové příznaky
 
