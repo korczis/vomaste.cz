@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-29",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-29",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
+  },
+  "title": "SRC-29 — Poslanecká sněmovna Parlamentu ČR (oficiální profil)",
+  "description": "Primární úřední profil poslance na webu Poslanecké sněmovny, nezávislý na profilu na webu Úřadu vlády (SRC-01): potvrzuje funkci ministra kultury od 15. 12. 2025 a přesné datum nástupu, které SRC-01 neuvádí.",
+  "outlet": "Poslanecká sněmovna Parlamentu ČR",
+  "sourceType": "primární úřední záznam",
+  "url": "https://www.psp.cz/sqw/detail.sqw?id=7010",
+  "retrieved": "2026-08-01",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "klempir"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil poslance na webu Poslanecké sněmovny Parlamentu ČR,\notevřen a přečten 2026-08-01. Uvádí: **ministr kultury od 15. 12.\n2025**; poslanec od 4. 10. 2025; člen poslaneckého klubu Motoristé\nsobě od 7. 10. 2025.\n\n**Nezávislost**: samostatný primární záznam jiné státní instituce\n(Poslanecká sněmovna, moc zákonodárná) než SRC-01 (Úřad vlády, moc\nvýkonná) — obě instituce nezávisle na sobě vedou a zveřejňují vlastní\nevidenci téhož veřejného faktu, totiž že Klempíř od 15. 12. 2025\nzastává funkci ministra kultury. Tento záznam navíc doplňuje přesné\ndatum nástupu do funkce, které SRC-01 neuvádělo. Proto CLM-01 nese\nstav `CORROBORATED`.\n\n**Poznámka k typu zdroje a jeho limitům**: jde o další **primární\núřední záznam**, ne o nezávislé redakční šetření. Nepotvrzuje ani\nnevyvrací žádné z tvrzení opřených o RESPEKT (SRC-02) — jde o odlišný\ntyp zdroje o odlišné otázce."
+    }
+  ],
+  "order": 29
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-28",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-28",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
+  },
+  "title": "SRC-28 — Poslanecká sněmovna Parlamentu ČR (oficiální profil)",
+  "description": "Primární úřední profil na webu Poslanecké sněmovny, nezávislý na profilu na webu Úřadu vlády (SRC-01): potvrzuje funkci ministra zemědělství od 15. 12. 2025.",
+  "outlet": "Poslanecká sněmovna Parlamentu ČR",
+  "sourceType": "primární úřední záznam",
+  "url": "https://www.psp.cz/sqw/detail.sqw?id=7072",
+  "retrieved": "2026-08-01",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "sebestyan"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální záznam na webu Poslanecké sněmovny Parlamentu ČR, otevřen a\npřečten 2026-08-01. Uvádí: **ministr zemědělství od 15. 12. 2025**,\nvedený v sekci „Vláda\" webu Sněmovny. Šebestyán sám není poslancem —\nzáznam dokládá výlučně jeho vládní funkci.\n\n**Nezávislost**: samostatný primární záznam jiné státní instituce\n(Poslanecká sněmovna, moc zákonodárná) než SRC-01 (Úřad vlády, moc\nvýkonná) — obě instituce nezávisle na sobě vedou a zveřejňují vlastní\nevidenci téhož veřejného faktu, totiž že Šebestyán od 15. 12. 2025\nzastává funkci ministra zemědělství. Proto CLM-01 nese stav\n`CORROBORATED`.\n\n**Poznámka k typu zdroje a jeho limitům**: jde o další **primární\núřední záznam**, ne o nezávislé redakční šetření."
+    }
+  ],
+  "order": 28
+}
