@@ -25,6 +25,9 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-42"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-55"
     }
   ],
   "sources": [
@@ -33,6 +36,9 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-48"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-61"
     }
   ],
   "subjects": [

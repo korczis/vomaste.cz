@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/relations/edge-okamura-poslaneckasnemovna",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-okamura-poslaneckasnemovna",
+  "relationId": "edge-okamura-poslaneckasnemovna",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/okamura"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/poslanecka-snemovna"
+  },
+  "relationType": "ASSOCIATED_WITH_EVENT",
+  "label": "Sněmovna 5. 3. 2026 nevydala Okamuru k trestnímu stíhání (parlamentní procesní krok)",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-28"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-19"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-20"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 3,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-045 (provázání grafu, druhá dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

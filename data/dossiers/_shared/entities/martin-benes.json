@@ -1,46 +1,47 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/martin-benes",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "martin-benes",
- "entityId": "martin-benes",
- "title": "Martin Beneš",
- "entityType": "person",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "jeronym-tejc",
-  "robert-plaga"
- ],
- "order": 249,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/martin-benes",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "martin-benes",
+  "entityId": "martin-benes",
+  "title": "Martin Beneš",
+  "entityType": "person",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "jeronym-tejc",
+    "robert-plaga"
   ],
-  "claimRefs": [
-   "CLM-38",
-   "CLM-39",
-   "CLM-40",
-   "CLM-41"
-  ],
-  "sourceRefs": [
-   "SRC-15",
-   "SRC-16",
-   "SRC-18",
-   "SRC-19",
-   "SRC-20"
+  "order": 249,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02",
+      "edge-plaga-benes"
+    ],
+    "claimRefs": [
+      "CLM-38",
+      "CLM-39",
+      "CLM-40",
+      "CLM-41"
+    ],
+    "sourceRefs": [
+      "SRC-15",
+      "SRC-16",
+      "SRC-18",
+      "SRC-19",
+      "SRC-20"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Dětský ombudsman; člen komise k úmrtím dětí, kritik plošného zákazu mobilů. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (jeronym-tejc, robert-plaga). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Dětský ombudsman; člen komise k úmrtím dětí, kritik plošného zákazu mobilů. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (jeronym-tejc, robert-plaga). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
-  }
- ]
 }

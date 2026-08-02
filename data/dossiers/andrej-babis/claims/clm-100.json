@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-100",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-100",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "Evropská komise podle Seznam Zpráv, z nichž cituje ČTK, nepovažovala odpověď českých úřadů za dostatečnou a zaslala do Česka druhou sadu otázek k Babišovu střetu zájmů; nebude-li spokojena, může podle téhož zdroje spustit formální audit, který může skončit povinností vrátit peníze vyplacené Agrofertu — jde o popis možného postupu, zahájení auditu citovaný zdroj nedokládá",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-71"
+    }
+  ],
+  "subjects": [],
+  "order": 100,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

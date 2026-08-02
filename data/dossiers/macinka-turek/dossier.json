@@ -130,10 +130,12 @@
         "label": "Kauza 2025: smazané příspěvky",
         "cluster": "smazane-prispevky",
         "claims": [
-          "CLM-07"
+          "CLM-07",
+          "CLM-55"
         ],
         "sources": [
-          "SRC-15"
+          "SRC-15",
+          "SRC-61"
         ]
       },
       {
@@ -257,14 +259,16 @@
         "claims": [
           "CLM-27",
           "CLM-41",
-          "CLM-52"
+          "CLM-52",
+          "CLM-55"
         ],
         "sources": [
           "SRC-31",
           "SRC-47",
           "SRC-48",
           "SRC-54",
-          "SRC-58"
+          "SRC-58",
+          "SRC-61"
         ]
       },
       {

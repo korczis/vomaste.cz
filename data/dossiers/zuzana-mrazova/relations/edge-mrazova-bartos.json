@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/relations/edge-mrazova-bartos",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-mrazova-bartos",
+  "relationId": "edge-mrazova-bartos",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/mrazova"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/ivan-bartos"
+  },
+  "relationType": "RESPONDED_TO",
+  "label": "bývalý ministr pro místní rozvoj (Piráti) veřejně kritizoval Mrázovou",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-56"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-19"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-26"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 8,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-045 (provázání grafu, druhá dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

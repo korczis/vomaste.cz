@@ -54,7 +54,8 @@
           "CLM-22",
           "CLM-23",
           "CLM-24",
-          "CLM-25"
+          "CLM-25",
+          "CLM-02"
         ],
         "sources": [
           "SRC-01",
@@ -70,15 +71,96 @@
         "label": "Nejvyšší kontrolní úřad",
         "claims": [
           "CLM-01",
-          "CLM-03"
+          "CLM-03",
+          "CLM-25"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-06",
+          "SRC-07"
+        ]
+      },
+      {
+        "entity": "policie",
+        "label": "Policie ČR",
+        "claims": [
+          "CLM-02"
         ],
         "sources": [
           "SRC-01"
         ]
+      },
+      {
+        "entity": "cnb",
+        "label": "Česká národní banka",
+        "claims": [
+          "CLM-08"
+        ],
+        "sources": [
+          "SRC-02",
+          "SRC-03",
+          "SRC-04",
+          "SRC-05"
+        ]
+      },
+      {
+        "entity": "miloslav-kala",
+        "label": "Miloslav Kala",
+        "claims": [
+          "CLM-03",
+          "CLM-18",
+          "CLM-19",
+          "CLM-23"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02",
+          "SRC-03",
+          "SRC-05"
+        ]
+      },
+      {
+        "entity": "babis",
+        "label": "Andrej Babiš",
+        "claims": [
+          "CLM-23"
+        ],
+        "sources": [
+          "SRC-02"
+        ]
+      },
+      {
+        "entity": "pavel",
+        "label": "Petr Pavel (prezident)",
+        "claims": [
+          "CLM-25"
+        ],
+        "sources": [
+          "SRC-06",
+          "SRC-07"
+        ]
+      },
+      {
+        "entity": "novela-rozpoctovych-pravidel-2026",
+        "label": "Novela rozpočtových zákonů 2026 (sněmovní tisk č. 90) a prezidentské veto",
+        "claims": [
+          "CLM-25"
+        ],
+        "sources": [
+          "SRC-06",
+          "SRC-07"
+        ]
       }
     ],
     "edges": [
-      "edge-metnar-nku"
+      "edge-metnar-nku",
+      "edge-metnar-policie",
+      "edge-metnar-cnb",
+      "edge-nku-miloslavkala",
+      "edge-metnar-miloslavkala",
+      "edge-babis-miloslavkala",
+      "edge-pavel-novelarozpoctu",
+      "edge-novela-nku"
     ]
   },
   "contentBlocks": [

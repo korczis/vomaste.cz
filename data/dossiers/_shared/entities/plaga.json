@@ -26,7 +26,11 @@
     "discoveredAt": "2026-07-30",
     "discoveredVia": [
       "government-roster-2026-07-30",
-      "edge-babis-plaga"
+      "edge-babis-plaga",
+      "edge-plaga-csi",
+      "edge-plaga-zatloukal",
+      "edge-plaga-benes",
+      "edge-plaga-kupka"
     ],
     "claimRefs": [
       "CLM-01",

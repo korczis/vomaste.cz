@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-96",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-96",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "Statut svěřenského fondu RSVP Trust je od prosince 2025 dostupný ve sbírce listin; správcem fondu je seniorní komerční bankéř Wilfried Reinhard Elbs, protektorkou auditorka Věra Výtvarová a elektorem právník Patrik Bureš. Účelem fondu je podle statutu správa a zachování majetku a zajištění nezávislé správy po dobu, kdy zakladatel vykonává funkci člena vlády",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-69"
+    }
+  ],
+  "subjects": [],
+  "order": 96,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

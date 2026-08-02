@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/oto-klempir/relations/edge-klempir-npu",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-klempir-npu",
+  "relationId": "edge-klempir-npu",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/klempir"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/narodni-pamatkovy-ustav"
+  },
+  "relationType": "ASSOCIATED_WITH_EVENT",
+  "label": "novela stavebního zákona oslabuje pravomoci NPÚ v památkových zónách",
+  "status": "single",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-36"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-15"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 10,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-045 (provázání grafu, druhá dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

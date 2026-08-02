@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-68",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-68",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-68 — Echo24: Zemřel bývalý šéf Kosteleckých uzenin Jan Boček (28. 11. 2017)",
+  "description": "Nekrolog s rekapitulací převzetí: ředitel obviněn z tunelování a Babiš zbytek firmy dokoupil prostřednictvím konsolidační agentury; Bočkův názor, že šlo o vykonstruovaný proces.",
+  "outlet": "Echo24",
+  "sourceType": "zpravodajství",
+  "url": "https://www.echo24.cz/a/SPijh/zemrel-byvaly-sef-kosteleckych-uzenin-jan-bocek",
+  "published": "2017-11-28",
+  "retrieved": "2026-08-02",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-92"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-93"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-95"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Echo24 28. 11. 2017: nekrolog Jana Bočka s rekapitulací převzetí\nKosteleckých uzenin: „Ředitel byl obviněn z tunelování firmy a Andrej\nBabiš si zbytek firmy dokoupil prostřednictvím konsolidační agentury.“\nDále: „Podle Bočkova názoru šlo o pečlivě naplánovanou akci,\nvykonstruovaný proces.“\n\n**Poznámka k přesnosti a limitům**: tvrzení o dokupu přes konsolidační\nagenturu nese v tomto dossieru jen tento zdroj (1 ZDROJ);\n„vykonstruovaný proces“ je názor zemřelého, který žádný soud\nnekonstatoval. Otevřeno a přečteno 2026-08-02."
+    }
+  ],
+  "order": 68
+}

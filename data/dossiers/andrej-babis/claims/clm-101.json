@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-101",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-101",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "Státní zemědělský intervenční fond uvedl, že s Evropskou komisí „komunikuje a zodpověděl jí veškeré dotazy“; jeho ředitel Dlouhý k argumentaci opozice dodal, že stanovisko Evropské komise „je právně nezávazné“ — doloženo je, že to úřad a jeho ředitel řekli, ne že je ten výklad správný",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-71"
+    }
+  ],
+  "subjects": [],
+  "order": 101,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

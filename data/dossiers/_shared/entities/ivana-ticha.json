@@ -1,47 +1,48 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/ivana-ticha",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "ivana-ticha",
- "entityId": "ivana-ticha",
- "title": "Ivana Tichá",
- "entityType": "person",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "tomio-okamura"
- ],
- "order": 155,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/ivana-ticha",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "ivana-ticha",
+  "entityId": "ivana-ticha",
+  "title": "Ivana Tichá",
+  "entityType": "person",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "tomio-okamura"
   ],
-  "claimRefs": [
-   "CLM-07",
-   "CLM-08",
-   "CLM-09",
-   "CLM-19"
-  ],
-  "sourceRefs": [
-   "SRC-03",
-   "SRC-04",
-   "SRC-06",
-   "SRC-07",
-   "SRC-09",
-   "SRC-10",
-   "SRC-15"
+  "order": 155,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02",
+      "edge-okamura-ivanaticha"
+    ],
+    "claimRefs": [
+      "CLM-07",
+      "CLM-08",
+      "CLM-09",
+      "CLM-19"
+    ],
+    "sourceRefs": [
+      "SRC-03",
+      "SRC-04",
+      "SRC-06",
+      "SRC-07",
+      "SRC-09",
+      "SRC-10",
+      "SRC-15"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Samosoudkyně Obvodního soudu pro Prahu 1; vydala nepravomocný rozsudek nad SPD, terč Okamurovy kritiky. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (tomio-okamura). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Samosoudkyně Obvodního soudu pro Prahu 1; vydala nepravomocný rozsudek nad SPD, terč Okamurovy kritiky. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (tomio-okamura). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
-  }
- ]
 }

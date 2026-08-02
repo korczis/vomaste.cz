@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-93",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-93",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "text": "Jan Boček podle Echo24 své trestní stíhání považoval za „pečlivě naplánovanou akci, vykonstruovaný proces“ — jde o názor jedné strany sporu; žádný citovaný zdroj neuvádí, že by vykonstruovanost řízení konstatoval soud či jiný orgán",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-68"
+    }
+  ],
+  "subjects": [],
+  "order": 93,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

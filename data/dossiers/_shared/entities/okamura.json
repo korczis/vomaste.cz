@@ -30,7 +30,11 @@
       "edge-okamura-zuna",
       "edge-okamura-vojtech",
       "edge-okamura-sebestyan",
-      "edge-okamura-ustavni-soud"
+      "edge-okamura-ustavni-soud",
+      "edge-okamura-poslaneckasnemovna",
+      "edge-okamura-obvodnisoudpraha1",
+      "edge-okamura-obvodnistatnizastupitelstvipraha1",
+      "edge-okamura-ivanaticha"
     ],
     "claimRefs": [
       "CLM-02",
