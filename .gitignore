@@ -22,3 +22,8 @@ playwright-report/
 # docs/missions/intake/PHASE_002.md §21.2) — never tracked, never
 # produced by a real GitHub event.
 .tmp/intake/
+
+# Cache měsíčních dumpů registru smluv (npm run screening:public-money).
+# Stovky MB stažených otevřených dat — cache, ne zdroj pravdy; kdykoli
+# smazatelná, skript si je stáhne znovu.
+.tmp/public-money/
