@@ -1,0 +1,44 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/operacni-program-zamestnanost-plus",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "operacni-program-zamestnanost-plus",
+ "entityId": "operacni-program-zamestnanost-plus",
+ "title": "Operační program Zaměstnanost plus (OPZ+)",
+ "entityType": "legal_or_administrative_process",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "ales-juchelka"
+ ],
+ "order": 320,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-11",
+   "CLM-31",
+   "CLM-46"
+  ],
+  "sourceRefs": [
+   "SRC-10",
+   "SRC-11",
+   "SRC-12",
+   "SRC-19",
+   "SRC-27"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Druhý dotčený program (dalších 17,6 mil. Kč hrazených ze státního rozpočtu místo EU). Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (ales-juchelka). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

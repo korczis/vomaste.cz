@@ -1,0 +1,40 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/centrum-verejnych-financi",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "centrum-verejnych-financi",
+ "entityId": "centrum-verejnych-financi",
+ "title": "Centrum veřejných financí (Univerzita Karlova)",
+ "entityType": "organization",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "alena-schillerova"
+ ],
+ "order": 87,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-10",
+   "CLM-11",
+   "CLM-12"
+  ],
+  "sourceRefs": [
+   "SRC-19"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Akademické pracoviště, jehož stanovisko identifikovalo tři problémová místa novely rozpočtových pravidel (návrhy č. 825 a 826, korekční faktor). Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (alena-schillerova). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

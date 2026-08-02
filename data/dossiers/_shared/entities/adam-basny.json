@@ -1,0 +1,45 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/adam-basny",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "adam-basny",
+ "entityId": "adam-basny",
+ "title": "Adam Bašný",
+ "entityType": "person",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "andrej-babis",
+  "karel-havlicek"
+ ],
+ "order": 51,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-25",
+   "CLM-26",
+   "CLM-57"
+  ],
+  "sourceRefs": [
+   "SRC-14",
+   "SRC-15",
+   "SRC-16",
+   "SRC-34",
+   "SRC-35"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Státní zástupce a evropský pověřený žalobce EPPO; podal obžalobu na Pekárnu Zelená louka ke Krajskému soudu v Praze. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (andrej-babis, karel-havlicek). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

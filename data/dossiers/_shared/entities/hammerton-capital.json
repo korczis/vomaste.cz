@@ -1,0 +1,39 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/hammerton-capital",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "hammerton-capital",
+ "entityId": "hammerton-capital",
+ "title": "Hammerton Capital Co. Limited",
+ "entityType": "company",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "igor-cerveny"
+ ],
+ "order": 140,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-30"
+  ],
+  "sourceRefs": [
+   "SRC-24",
+   "SRC-35"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Čínská společnost se sídlem v Hongkongu, vlastník Hemmont. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (igor-cerveny). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

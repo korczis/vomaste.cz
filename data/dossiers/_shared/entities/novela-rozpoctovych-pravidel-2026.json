@@ -1,0 +1,58 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/novela-rozpoctovych-pravidel-2026",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "novela-rozpoctovych-pravidel-2026",
+ "entityId": "novela-rozpoctovych-pravidel-2026",
+ "title": "Novela rozpočtových zákonů 2026 (sněmovní tisk č. 90) a prezidentské veto",
+ "entityType": "legal_or_administrative_process",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "alena-schillerova",
+  "lubomir-metnar"
+ ],
+ "order": 304,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-05",
+   "CLM-08",
+   "CLM-09",
+   "CLM-13",
+   "CLM-15",
+   "CLM-17",
+   "CLM-18",
+   "CLM-23",
+   "CLM-25",
+   "CLM-30"
+  ],
+  "sourceRefs": [
+   "SRC-03",
+   "SRC-04",
+   "SRC-05",
+   "SRC-06",
+   "SRC-07",
+   "SRC-08",
+   "SRC-09",
+   "SRC-19",
+   "SRC-20",
+   "SRC-21",
+   "SRC-22"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Centrální legislativní proces dossieru Schillerové: tisk č. 90 (novela zákona 23/2017 Sb.), schválení 91:68, přehlasování Senátu 101 hlasy, veto prezidenta Pavla 22. 7. 2026, hlasování o vetu 25. 8. 2026. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (alena-schillerova, lubomir-metnar). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

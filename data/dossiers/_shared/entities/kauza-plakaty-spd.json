@@ -1,0 +1,56 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/kauza-plakaty-spd",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "kauza-plakaty-spd",
+ "entityId": "kauza-plakaty-spd",
+ "title": "Trestní kauza předvolebních plakátů SPD",
+ "entityType": "legal_or_administrative_process",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "tomio-okamura"
+ ],
+ "order": 210,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-01",
+   "CLM-02",
+   "CLM-10",
+   "CLM-21",
+   "CLM-23",
+   "CLM-25",
+   "CLM-28",
+   "CLM-30"
+  ],
+  "sourceRefs": [
+   "SRC-01",
+   "SRC-02",
+   "SRC-03",
+   "SRC-04",
+   "SRC-16",
+   "SRC-17",
+   "SRC-18",
+   "SRC-19",
+   "SRC-20",
+   "SRC-21",
+   "SRC-22",
+   "SRC-27"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Nepravomocný rozsudek nad SPD (3 mil. Kč) za plakáty z kampaně 2024; Okamurovo stíhání přerušeno po nevydání Sněmovnou. Osoby z plakátů nikdy neidentifikovat. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (tomio-okamura). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

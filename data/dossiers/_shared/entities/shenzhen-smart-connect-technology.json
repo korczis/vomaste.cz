@@ -1,0 +1,38 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/shenzhen-smart-connect-technology",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "shenzhen-smart-connect-technology",
+ "entityId": "shenzhen-smart-connect-technology",
+ "title": "Shenzhen Smart Connect Technology",
+ "entityType": "company",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "boris-stastny"
+ ],
+ "order": 378,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-17"
+  ],
+  "sourceRefs": [
+   "SRC-08"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Čínská společnost — skutečný výrobce zařízení Plaud podle zjištění Seznam Zpráv citovaných Bleskem. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (boris-stastny). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

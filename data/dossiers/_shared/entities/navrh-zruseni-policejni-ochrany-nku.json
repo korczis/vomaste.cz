@@ -1,0 +1,50 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/navrh-zruseni-policejni-ochrany-nku",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "navrh-zruseni-policejni-ochrany-nku",
+ "entityId": "navrh-zruseni-policejni-ochrany-nku",
+ "title": "Návrh na zrušení policejní ochrany NKÚ (2026)",
+ "entityType": "legal_or_administrative_process",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "lubomir-metnar"
+ ],
+ "order": 299,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-01",
+   "CLM-04",
+   "CLM-05",
+   "CLM-06",
+   "CLM-08",
+   "CLM-09",
+   "CLM-10",
+   "CLM-11",
+   "CLM-12"
+  ],
+  "sourceRefs": [
+   "SRC-01",
+   "SRC-02",
+   "SRC-03",
+   "SRC-04",
+   "SRC-05"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Vládní materiál MV (účinnost od 1. 1. následujícího roku, náhradní soukromá ostraha ~20 mil. Kč/rok, přesun ochrany na ČNB); k datu rešerše nerozhodnuto. Jediná kauza dossieru, edge-metnar-nku existuje, samostatná entita procesu ne. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (lubomir-metnar). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 66 context entities across 24 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 480 context entities across 24 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -20,6 +20,56 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
 - Relations: 
   - edge-ab-trusts-agrofert (ab-private-trusts -> agrofert, "držely akcie Agrofertu (2017–2025)", dossier: andrej-babis)
   - edge-babis-ab-trusts (babis -> ab-private-trusts, "akcie Agrofertu ve fondech 2/2017–2024/2025; poté návrat k přímému vlastnictví — majetková posloupnost, sama o sobě legální", dossier: andrej-babis)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## ACRI — Asociace podniků českého železničního průmyslu (`acri`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: ivan-bednarik
+- Claims: CLM-37, CLM-38, CLM-39
+- Sources: SRC-27, SRC-28 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Adam Bašný (`adam-basny`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: andrej-babis, karel-havlicek
+- Claims: CLM-25, CLM-26, CLM-57
+- Sources: SRC-14, SRC-15, SRC-16, SRC-34, SRC-35 (7 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Adam Batuna (`adam-batuna`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: tomio-okamura
+- Claims: CLM-15, CLM-16, CLM-20
+- Sources: SRC-03, SRC-06, SRC-07, SRC-14, SRC-15, SRC-26 (6 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Agrární komora ČR (`agrarni-komora`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: martin-sebestyan
+- Claims: CLM-41, CLM-42, CLM-43
+- Sources: SRC-20, SRC-21, SRC-22 (3 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Agro Jevišovice (`agro-jevisovice`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-63, CLM-65
+- Sources: SRC-42, SRC-45 (2 independent source families)
+- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Agrofert (`agrofert`)
@@ -62,6 +112,76 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
   - edge-bartha-agrofert-hungaria (bartha -> agrofert-hungaria, "country managerka (dle firemního webu, 9/2024) — popis pracovního zařazení, ne tvrzení o pochybení", dossier: tunde-bartha)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Advokátní kancelář Portos (dříve Češka a Smutný) (`ak-portos`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: martin-sebestyan
+- Claims: CLM-23
+- Sources: SRC-09 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Akademie výtvarných umění v Praze (`akademie-vytvarnych-umeni`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: oto-klempir
+- Claims: CLM-26
+- Sources: none (0 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Alberto Mazzola (`alberto-mazzola`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: ivan-bednarik
+- Claims: CLM-26
+- Sources: SRC-15 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## ALCOGAL (`alcogal`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-34
+- Sources: none (0 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Aleš Bělohradský (`ales-belohradsky`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: alena-schillerova
+- Claims: CLM-10, CLM-11, CLM-12
+- Sources: SRC-11, SRC-19 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Aleš Seifert (`ales-seifert`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: oto-klempir
+- Claims: CLM-24
+- Sources: SRC-27 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Alexandr Vondra (`alexandr-vondra`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: jaromir-zuna
+- Claims: CLM-15
+- Sources: SRC-09 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## JUDr. Alexej Bílek (`alexej-bilek`)
 
 - Type: person
@@ -69,6 +189,206 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
 - Appears in: —
 - Claims: none
 - Sources: none (0 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Alicja Knastová (`alicja-knastova`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: oto-klempir
+- Claims: CLM-25
+- Sources: none (0 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Alza.cz (`alza`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: boris-stastny
+- Claims: CLM-12
+- Sources: SRC-02, SRC-10 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Alzheimer Home (`alzheimer-home`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: macinka-turek
+- Claims: CLM-35
+- Sources: SRC-39 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Asociace malých a středních podniků a živnostníků ČR (`amsp-cr`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: adam-vojtech, karel-havlicek
+- Claims: CLM-43
+- Sources: SRC-01, SRC-24 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Andor Šándor (`andor-sandor`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: boris-stastny
+- Claims: CLM-18
+- Sources: SRC-07 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Angelika Gergelová (`angelika-gergelova`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: robert-plaga
+- Claims: CLM-53
+- Sources: SRC-21 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## ANO 2011 (`ano`)
+
+- Type: political_party
+- Status: not_authorized
+- Appears in: adam-vojtech, andrej-babis, jaromir-zuna, jaroslav-faltynek, jeronym-tejc, karel-havlicek, macinka-turek, robert-plaga, tomio-okamura, tunde-bartha, zuzana-mrazova
+- Claims: CLM-01, CLM-02, CLM-03, CLM-17, CLM-19, CLM-26, CLM-29, CLM-35, CLM-38, CLM-41, CLM-85
+- Sources: SRC-01, SRC-02, SRC-03, SRC-04, SRC-06, SRC-11, SRC-13, SRC-14, SRC-17, SRC-18, SRC-19, SRC-20, SRC-25, SRC-27, SRC-28, SRC-61 (19 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Antonín Staněk (`antonin-stanek`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: macinka-turek
+- Claims: CLM-02
+- Sources: SRC-11, SRC-13 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Armáda České republiky (`armada-cr`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: jaromir-zuna
+- Claims: CLM-04, CLM-11, CLM-20, CLM-21, CLM-26, CLM-51
+- Sources: SRC-02, SRC-07, SRC-14, SRC-15, SRC-21, SRC-22, SRC-30 (7 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Art of Performance (`art-of-performance`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: igor-cerveny, macinka-turek
+- Claims: CLM-20, CLM-46
+- Sources: SRC-23, SRC-31 (3 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Asociace orchestrů (`asociace-orchestru`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: oto-klempir
+- Claims: none
+- Sources: SRC-24 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Asociace ředitelů základních škol (`asociace-reditelu-zs`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: robert-plaga
+- Claims: CLM-19, CLM-28
+- Sources: SRC-09, SRC-23 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Asociace soukromého zemědělství ČR (`asociace-soukromeho-zemedelstvi`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: martin-sebestyan
+- Claims: CLM-19, CLM-41, CLM-42
+- Sources: SRC-08, SRC-20, SRC-21 (3 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Aston Martin klub ČR, z.s. (`aston-martin-klub-cr`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: macinka-turek
+- Claims: CLM-20
+- Sources: SRC-23 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Interní audit Národní sportovní agentury (`audit-nsa`)
+
+- Type: legal_or_administrative_process
+- Status: not_authorized
+- Appears in: boris-stastny
+- Claims: CLM-27
+- Sources: SRC-14 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Audit REGC414CZ0133 (`audit-regc414cz0133`)
+
+- Type: legal_or_administrative_process
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-46
+- Sources: SRC-20 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Sdružení automobilového průmyslu (AutoSAP) (`autosap`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: karel-havlicek
+- Claims: CLM-45
+- Sources: SRC-29 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Bezpečnostní rada státu (`bezpecnostni-rada-statu`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: jaromir-zuna
+- Claims: CLM-34, CLM-35, CLM-36
+- Sources: SRC-18, SRC-19, SRC-29, SRC-31 (4 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## BIS (Bezpečnostní informační služba) (`bis`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: boris-stastny
+- Claims: CLM-10
+- Sources: SRC-06 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Bitcoinová kauza resortu spravedlnosti (`bitcoinova-kauza-ministerstva-spravedlnosti`)
+
+- Type: controversy
+- Status: not_authorized
+- Appears in: jeronym-tejc
+- Claims: CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07, CLM-19, CLM-20, CLM-21, CLM-22, CLM-23, CLM-24, CLM-25, CLM-26, CLM-27, CLM-28, CLM-29, CLM-30, CLM-31, CLM-32
+- Sources: SRC-02, SRC-03, SRC-04, SRC-11, SRC-12, SRC-13, SRC-14, SRC-15, SRC-16, SRC-26 (10 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -84,6 +404,16 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
   - edge-blakey-boyne (blakey-finance -> boyne-holding, "úvěr na nákupy nemovitostí ve Francii", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Blanka Havelková (`blanka-havelkova`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: ivan-bednarik
+- Claims: CLM-43
+- Sources: SRC-02, SRC-19 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## BOYNE HOLDING LLC (Washington, D.C.) (`boyne-holding`)
 
 - Type: company
@@ -94,6 +424,16 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
 - Relations: 
   - edge-blakey-boyne (blakey-finance -> boyne-holding, "úvěr na nákupy nemovitostí ve Francii", dossier: andrej-babis)
   - edge-boyne-bigaud (boyne-holding -> scp-bigaud, "financování pořízení pozemku; od 8/2019 SCP Bigaud ze 100 % vlastněna I.M.O.D.I.M.", dossier: andrej-babis)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## BYD Automotive (`byd-automotive`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: karel-havlicek
+- Claims: CLM-46
+- Sources: SRC-31 (1 independent source family)
+- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Čapí hnízdo (dotační kauza) (`capi-hnizdo`)
@@ -111,6 +451,116 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
   - edge-faltynek-capihnizdo (faltynek -> capi-hnizdo, "stíhán 2015–2018; stíhání zrušeno státním zástupcem", dossier: jaroslav-faltynek)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## ČD Cargo (`cd-cargo`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: ivan-bednarik
+- Claims: CLM-01
+- Sources: SRC-01 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Central Group (`central-group`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: karel-havlicek
+- Claims: none
+- Sources: SRC-20 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Centrum pro výzkum terorismu, z.s. (`centrum-pro-vyzkum-terorismu`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: macinka-turek
+- Claims: CLM-22
+- Sources: SRC-24 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Centrum veřejných financí (Univerzita Karlova) (`centrum-verejnych-financi`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: alena-schillerova
+- Claims: CLM-10, CLM-11, CLM-12
+- Sources: SRC-19 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## CER (Community of European Railway and Infrastructure Companies) (`cer-asociace`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: ivan-bednarik
+- Claims: CLM-26
+- Sources: SRC-15 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Cerea (`cerea`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-65
+- Sources: none (0 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Správní řízení o nepovolených stavbách v Praze-Dubči (`cerne-stavby-praha-dubec`)
+
+- Type: legal_or_administrative_process
+- Status: not_authorized
+- Appears in: macinka-turek
+- Claims: CLM-30, CLM-34
+- Sources: SRC-33, SRC-38 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Česká asociace pro srdeční rytmus (`ceska-asociace-pro-srdecni-rytmus`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: adam-vojtech
+- Claims: CLM-23
+- Sources: SRC-13, SRC-18 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Česká školní inspekce (`ceska-skolni-inspekce`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: boris-stastny, robert-plaga
+- Claims: CLM-02, CLM-04, CLM-21, CLM-24
+- Sources: SRC-02, SRC-03, SRC-12, SRC-14, SRC-15, SRC-23 (6 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Česká televize (`ceska-televize`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: oto-klempir
+- Claims: CLM-04, CLM-07, CLM-08, CLM-09, CLM-20
+- Sources: SRC-03, SRC-06, SRC-07, SRC-19, SRC-20, SRC-21, SRC-26 (7 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Česká unie sportu (`ceska-unie-sportu`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: boris-stastny
+- Claims: CLM-31
+- Sources: SRC-15 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## České dráhy (`ceske-drahy`)
 
 - Type: organization
@@ -120,6 +570,226 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
 - Sources: SRC-02, SRC-29 (2 independent source families)
 - Relations: 
   - edge-bednarik-ceske-drahy (bednarik -> ceske-drahy, "bývalý předseda představenstva a generální ředitel (rezignace 2022)", dossier: ivan-bednarik)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Český rozhlas (`cesky-rozhlas`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: oto-klempir
+- Claims: CLM-04, CLM-07, CLM-08, CLM-09, CLM-16, CLM-20
+- Sources: SRC-03, SRC-06, SRC-07, SRC-19, SRC-20, SRC-21, SRC-26 (7 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Chemapol Bratislava (`chemapol-bratislava`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: none
+- Sources: SRC-14 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Česká komora autorizovaných inženýrů a techniků (ČKAIT) (`ckait`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: karel-havlicek
+- Claims: CLM-38, CLM-39
+- Sources: SRC-24, SRC-25 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Česká národní banka (`cnb`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: alena-schillerova, lubomir-metnar
+- Claims: CLM-02, CLM-08, CLM-26
+- Sources: SRC-01, SRC-02, SRC-03, SRC-04, SRC-05, SRC-16 (6 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## ČSSD (`cssd`)
+
+- Type: political_party
+- Status: not_authorized
+- Appears in: jeronym-tejc
+- Claims: none
+- Sources: SRC-01 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## České vysoké učení technické v Praze (ČVUT) (`cvut`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: karel-havlicek
+- Claims: none
+- Sources: SRC-01 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Daniel Dočekal (`daniel-docekal`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: boris-stastny
+- Claims: CLM-35
+- Sources: SRC-16 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Daniela Bártíková (`daniela-bartikova`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-27
+- Sources: SRC-12 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## David Jachnický (`david-jachnicky`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: tomio-okamura
+- Claims: CLM-12, CLM-13, CLM-14
+- Sources: SRC-10, SRC-11, SRC-12 (3 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## David Kotora (`david-kotora`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: martin-sebestyan
+- Claims: CLM-13
+- Sources: SRC-03, SRC-05 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Demagog.cz (`demagog-cz`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: martin-sebestyan
+- Claims: CLM-33, CLM-34
+- Sources: SRC-16 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Demonstrace Milionu chvilek proti zákonu o médiích (24. 5. 2026) (`demonstrace-milion-chvilek-2026-05`)
+
+- Type: event
+- Status: not_authorized
+- Appears in: oto-klempir
+- Claims: CLM-18, CLM-19
+- Sources: SRC-13, SRC-14 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Deník N (`denik-n`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: macinka-turek
+- Claims: CLM-07, CLM-19, CLM-41, CLM-42, CLM-49
+- Sources: SRC-14, SRC-15, SRC-21, SRC-47 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Generální ředitelství Evropské komise pro zemědělství (DG AGRI) (`dg-agri`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: martin-sebestyan
+- Claims: CLM-28, CLM-31
+- Sources: SRC-10, SRC-11, SRC-17 (3 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Generální ředitelství Evropské komise pro rozpočet (DG BUDGET) (`dg-budget`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: martin-sebestyan
+- Claims: CLM-31
+- Sources: SRC-17 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Generální ředitelství Evropské komise pro spravedlnost (DG JUST) (`dg-just`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: martin-sebestyan
+- Claims: CLM-31
+- Sources: SRC-17 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## DG MOVE (Generální ředitelství EK pro mobilitu a dopravu) (`dg-move`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: ivan-bednarik
+- Claims: CLM-26
+- Sources: SRC-15 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Dohoda o čistém průmyslu (Clean Industrial Deal) (`dohoda-o-cistem-prumyslu`)
+
+- Type: legal_or_administrative_process
+- Status: not_authorized
+- Appears in: karel-havlicek
+- Claims: CLM-40
+- Sources: SRC-26 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Donald Trump (`donald-trump`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: igor-cerveny
+- Claims: CLM-19
+- Sources: SRC-10 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## DRILL COMPANY, s.r.o. (`drill-company`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: macinka-turek
+- Claims: CLM-22
+- Sources: SRC-24 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Dušan Kunovský (`dusan-kunovsky`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: karel-havlicek
+- Claims: none
+- Sources: SRC-20 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## EDUin (`eduin`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: robert-plaga
+- Claims: CLM-10
+- Sources: SRC-05 (1 independent source family)
+- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Evropský parlament (`ep`)
@@ -146,6 +816,56 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
   - edge-pekarna-eppo (penam-zelena-louka -> eppo, "obžaloba EPPO z 22. 6. 2026 (společnost + 2 osoby) — obžaloba není rozhodnutí o vině", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Eva Češpiva (`eva-cespiva`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: andrej-babis, martin-sebestyan
+- Claims: CLM-30, CLM-44
+- Sources: SRC-25 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Eva Decroix (`eva-decroix`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: jeronym-tejc
+- Claims: CLM-07, CLM-30, CLM-31, CLM-32
+- Sources: SRC-02, SRC-03, SRC-04, SRC-15, SRC-16 (5 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Eva Kropáčová (`eva-kropacova`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: macinka-turek
+- Claims: CLM-16
+- Sources: SRC-19 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Eva Šrámková (`eva-sramkova`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: adam-vojtech
+- Claims: CLM-49
+- Sources: SRC-29 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Eva Švíglerová (`eva-sviglerova`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: tomio-okamura
+- Claims: CLM-30
+- Sources: SRC-21, SRC-22 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Evropská komise (`evropska-komise`)
 
 - Type: public_institution
@@ -162,6 +882,96 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
   - edge-sebestyan-evropska-komise (sebestyan -> evropska-komise, "spor o rozsah dopisu Evropské komise — zda se vztahuje i na zemědělské fondy", dossier: martin-sebestyan)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Evropská unie (`evropska-unie`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: karel-havlicek
+- Claims: CLM-08, CLM-18, CLM-22, CLM-44, CLM-46
+- Sources: SRC-05, SRC-09, SRC-13, SRC-30, SRC-31 (5 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Evropský fond pro konkurenceschopnost (`evropsky-fond-pro-konkurenceschopnost`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: karel-havlicek
+- Claims: none
+- Sources: SRC-26 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Evropský účetní dvůr (`evropsky-ucetni-dvur`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: martin-sebestyan
+- Claims: CLM-31
+- Sources: SRC-17 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Extreme BFG Cast s.r.o. (`extreme-bfg-cast`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: igor-cerveny
+- Claims: CLM-08, CLM-09, CLM-27, CLM-28, CLM-32
+- Sources: SRC-05, SRC-06, SRC-24, SRC-26, SRC-28 (5 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Farma Čapí hnízdo (`farma-capi-hnizdo`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-49, CLM-77, CLM-78
+- Sources: SRC-23, SRC-54, SRC-55 (3 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Fastned (`fastned`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: karel-havlicek
+- Claims: CLM-46
+- Sources: SRC-31 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Mezinárodní folklorní festival Strážnice (`festival-straznice`)
+
+- Type: event
+- Status: not_authorized
+- Appears in: oto-klempir
+- Claims: CLM-43
+- Sources: SRC-12, SRC-28 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Finanční správa ČR (`financni-sprava`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: alena-schillerova
+- Claims: CLM-02
+- Sources: SRC-01 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Fio banka (`fio-banka`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: macinka-turek
+- Claims: CLM-35
+- Sources: SRC-40 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Fakultní nemocnice Olomouc (`fn-olomouc`)
 
 - Type: public_institution
@@ -172,6 +982,86 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
 - Relations: 
   - edge-babis-fn-olomouc (babis -> fn-olomouc, "premiér Babiš vyjádřil řediteli FN Olomouc plnou důvěru (18. 2. 2026)", dossier: adam-vojtech)
   - edge-vojtech-fn-olomouc (vojtech -> fn-olomouc, "kauza studie PROFID EHRA a trestní oznámení resortu (2025–2026)", dossier: adam-vojtech)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Forum Elektromobilita 2026 (`forum-elektromobilita-2026`)
+
+- Type: event
+- Status: not_authorized
+- Appears in: karel-havlicek
+- Claims: CLM-46
+- Sources: SRC-31 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## František Fabičovic (`frantisek-fabicovic`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: macinka-turek
+- Claims: CLM-35
+- Sources: SRC-39 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## František Horák (`frantisek-horak`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: boris-stastny
+- Claims: CLM-22
+- Sources: SRC-11, SRC-13 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## František Talíř (`frantisek-talir`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: oto-klempir
+- Claims: CLM-17
+- Sources: none (0 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## FTVS UK (Fakulta tělesné výchovy a sportu Univerzity Karlovy) (`ftvs-uk`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: boris-stastny
+- Claims: none
+- Sources: SRC-15 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Gen Digital (`gen-digital`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: macinka-turek
+- Claims: CLM-09
+- Sources: SRC-22 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Generální finanční ředitelství (`generalni-financni-reditelstvi`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: alena-schillerova
+- Claims: CLM-02
+- Sources: SRC-01 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Generální štáb Armády ČR (`generalni-stab-acr`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: jaromir-zuna
+- Claims: CLM-12, CLM-13, CLM-20, CLM-25, CLM-30, CLM-53
+- Sources: SRC-08, SRC-09, SRC-10, SRC-11, SRC-14, SRC-21, SRC-25, SRC-27, SRC-28 (9 independent source families)
+- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## GMR GAS UA LLC (Kyjev) (`gmrgas`)
@@ -210,6 +1100,46 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
   - edge-turek-greendeal (turek -> greendeal, "zmocněnec (do nehody)", dossier: macinka-turek)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Gymnázium Jana Keplera (`gymnazium-jana-keplera`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: robert-plaga
+- Claims: CLM-52
+- Sources: SRC-21 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Hammerton Capital Co. Limited (`hammerton-capital`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: igor-cerveny
+- Claims: CLM-30
+- Sources: SRC-24, SRC-35 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Hana Kordová Marvanová (`hana-kordova-marvanova`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: jeronym-tejc
+- Claims: CLM-38
+- Sources: SRC-19 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Hana Landová (`hana-landova`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: karel-havlicek
+- Claims: CLM-10
+- Sources: SRC-07 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Hartenberg Holding (`hartenberg`)
 
 - Type: company
@@ -219,6 +1149,76 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
 - Sources: SRC-16, SRC-17 (1 independent source family)
 - Relations: 
   - edge-synbiol-hartenberg (synbiol -> hartenberg, "zdravotnické aktivity ve skupině Hartenberg, mimo svěřenský fond", dossier: andrej-babis)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Hemmont (`hemmont`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: igor-cerveny
+- Claims: CLM-30
+- Sources: SRC-24, SRC-35 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## High-Level Political Forum OSN 2026 (New York) (`high-level-political-forum-2026`)
+
+- Type: event
+- Status: not_authorized
+- Appears in: igor-cerveny
+- Claims: CLM-49, CLM-50, CLM-52
+- Sources: SRC-18, SRC-19 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Hlídač státu (`hlidac-statu`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: richard-chlad
+- Claims: CLM-01
+- Sources: SRC-01 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Hřebčín Napajedla (`hrebcin-napajedla`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: oto-klempir
+- Claims: CLM-39
+- Sources: SRC-16 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Hyundai (`hyundai`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: karel-havlicek
+- Claims: CLM-46
+- Sources: SRC-31 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## ICOMOS (`icomos`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: oto-klempir
+- Claims: none
+- Sources: SRC-15 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Igor Stříž (`igor-striz`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-71
+- Sources: SRC-48 (1 independent source family)
+- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Imoba (`imoba`)
@@ -234,6 +1234,216 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
   - edge-imoba-capihnizdo (imoba -> capi-hnizdo, "vlastník areálu; 6/2018 vrátila dotaci ~50 mil. Kč — vrácení není přiznání viny, do dohody firma prosadila opak", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## I.M.O.D.I.M. (`imodim`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-33
+- Sources: none (0 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Incident u saúdskoarabské ambasády (2017) (`incident-saudska-ambasada-2017`)
+
+- Type: controversy
+- Status: not_authorized
+- Appears in: macinka-turek
+- Claims: CLM-28, CLM-29
+- Sources: SRC-32 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Institut Václava Klause (`institut-vaclava-klause`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: macinka-turek
+- Claims: CLM-24
+- Sources: SRC-27 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Investigace.cz (`investigace-cz`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: macinka-turek
+- Claims: CLM-14, CLM-47
+- Sources: SRC-17, SRC-18 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Ivan Bartoš (`ivan-bartos`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: martin-sebestyan, zuzana-mrazova
+- Claims: CLM-05, CLM-23, CLM-51, CLM-56
+- Sources: SRC-07, SRC-09, SRC-19, SRC-26 (5 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Ivana Tichá (`ivana-ticha`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: tomio-okamura
+- Claims: CLM-07, CLM-08, CLM-09, CLM-19
+- Sources: SRC-03, SRC-04, SRC-06, SRC-07, SRC-09, SRC-10, SRC-15 (7 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Ivo Jebousek (`ivo-jebousek`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: boris-stastny
+- Claims: CLM-24
+- Sources: SRC-13 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Ivo Vondrák (`ivo-vondrak`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: tomio-okamura
+- Claims: CLM-26
+- Sources: SRC-18, SRC-27 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Jaguar klub ČR, z.s. (`jaguar-klub-cr`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: macinka-turek
+- Claims: CLM-20
+- Sources: SRC-23 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Jan Boháč (`jan-bohac`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: boris-stastny
+- Claims: CLM-31
+- Sources: SRC-15 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Jan Doležal (`jan-dolezal`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: martin-sebestyan
+- Claims: CLM-43
+- Sources: SRC-22 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Jan Grolich (`jan-grolich`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: zuzana-mrazova
+- Claims: CLM-16
+- Sources: SRC-06, SRC-11 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Jan Jakob (`jan-jakob`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: alena-schillerova
+- Claims: CLM-39
+- Sources: SRC-08 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Jan Lelek (`jan-lelek`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: tomio-okamura
+- Claims: CLM-21
+- Sources: SRC-16, SRC-17 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Jan Síla (`jan-sila`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: adam-vojtech
+- Claims: CLM-18, CLM-45, CLM-46, CLM-48, CLM-49
+- Sources: SRC-11, SRC-27, SRC-28, SRC-29 (4 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Jan Vychyta (`jan-vychyta`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: macinka-turek
+- Claims: CLM-27, CLM-45, CLM-49
+- Sources: SRC-31, SRC-53, SRC-54, SRC-56 (4 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Jan Wintr (`jan-wintr`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: jeronym-tejc
+- Claims: CLM-42
+- Sources: SRC-21 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Jana Černochová (`jana-cernochova`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: jaromir-zuna
+- Claims: CLM-39
+- Sources: SRC-19, SRC-24, SRC-32 (3 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Jana Kotalíková (`jana-kotalikova`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: tunde-bartha
+- Claims: none
+- Sources: SRC-04 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Jana Nagyová (`jana-nagyova`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-01, CLM-08, CLM-09, CLM-20, CLM-21, CLM-23, CLM-24, CLM-50, CLM-79, CLM-80
+- Sources: SRC-01, SRC-03, SRC-08, SRC-23, SRC-24, SRC-27, SRC-32, SRC-33, SRC-56, SRC-57 (6 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## J.A.R. (`jar-kapela`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: oto-klempir
+- Claims: CLM-42
+- Sources: SRC-01 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Ing. Jaroslav Kurčík (`jaroslav-kurcik`)
 
 - Type: person
@@ -241,6 +1451,76 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
 - Appears in: —
 - Claims: none
 - Sources: none (0 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Jaroslav Šaroch (`jaroslav-saroch`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: andrej-babis, jaroslav-faltynek
+- Claims: CLM-02, CLM-08, CLM-78
+- Sources: SRC-02, SRC-03, SRC-06, SRC-33, SRC-55 (5 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Jaroslav Šebek (`jaroslav-sebek`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: martin-sebestyan
+- Claims: CLM-42
+- Sources: SRC-21 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Jindřich Fialka (`jindrich-fialka`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: martin-sebestyan
+- Claims: CLM-41
+- Sources: SRC-20 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Jindřich Rajchl (`jindrich-rajchl`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: adam-vojtech
+- Claims: CLM-49
+- Sources: SRC-29 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Jiří Havránek (`jiri-havranek`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: ales-juchelka
+- Claims: CLM-38
+- Sources: SRC-10, SRC-11 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Jiří Horáček (`jiri-horacek`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: robert-plaga
+- Claims: CLM-43
+- Sources: SRC-27, SRC-30 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Jiří Nesrovnal (`jiri-nesrovnal`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: adam-vojtech
+- Claims: CLM-43
+- Sources: SRC-24 (1 independent source family)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -254,6 +1534,36 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Johannes Hahn (`johannes-hahn`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-45
+- Sources: SRC-18 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Josef Flek (`josef-flek`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: jaromir-zuna
+- Claims: CLM-09, CLM-47
+- Sources: SRC-06, SRC-16, SRC-23, SRC-24 (4 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Josef Jaroš (`josef-jaros`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: adam-vojtech
+- Claims: CLM-43
+- Sources: SRC-24 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Ing. Josef Mráz (`josef-mraz`)
 
 - Type: person
@@ -261,6 +1571,46 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
 - Appears in: —
 - Claims: none
 - Sources: none (0 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Josef Nerušil (`josef-nerusil`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: adam-vojtech
+- Claims: CLM-45
+- Sources: SRC-27 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Jozef Síkela (`jozef-sikela`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: andrej-babis, karel-havlicek
+- Claims: none
+- Sources: SRC-11, SRC-36 (3 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## JWT (J. Walter Thompson) (`jwt`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: oto-klempir
+- Claims: none
+- Sources: SRC-01 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Kamil Kopecký (`kamil-kopecky`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: robert-plaga
+- Claims: CLM-44
+- Sources: SRC-15, SRC-27 (2 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -274,6 +1624,326 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
 - Relations: 
   - edge-bartha-kampan (bartha -> kampan-babis-2023, "šéfka prezidentské kampaně (12/2022); zmínka o kancléřce = zamýšlená budoucí role, ne funkce", dossier: tunde-bartha)
   - edge-kampan-babis (kampan-babis-2023 -> babis, "kampaň kandidáta Andreje Babiše", dossier: tunde-bartha)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Kamufláž (armádní podcast) (`kamuflaz-podcast`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: jaromir-zuna
+- Claims: CLM-08
+- Sources: SRC-06 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Kancelář prezidenta republiky (`kancelar-prezidenta-republiky`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: alena-schillerova, jaromir-zuna
+- Claims: CLM-14, CLM-20
+- Sources: SRC-06, SRC-10 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Karel Dvořák (`karel-dvorak`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: jeronym-tejc
+- Claims: CLM-45
+- Sources: SRC-08 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Karel Haas (`karel-haas`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: karel-havlicek
+- Claims: none
+- Sources: SRC-19 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Karel Kovář (`karel-kovar`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: boris-stastny
+- Claims: CLM-30, CLM-31
+- Sources: SRC-15 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Karel Matuška (`karel-matuska`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: zuzana-mrazova
+- Claims: CLM-41
+- Sources: SRC-17 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Karel Řehka (`karel-rehka`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: jaromir-zuna
+- Claims: CLM-13, CLM-20, CLM-21, CLM-28, CLM-53
+- Sources: SRC-09, SRC-10, SRC-14, SRC-21, SRC-22, SRC-27, SRC-28 (7 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Kárim Titz (`karim-titz`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: jeronym-tejc
+- Claims: CLM-19, CLM-24
+- Sources: SRC-11, SRC-12, SRC-13 (3 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Karla Mráčková (`karla-mrackova`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: boris-stastny
+- Claims: CLM-16
+- Sources: SRC-06 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Kárná žaloba na soudkyni Okresního soudu v Benešově (2026) (`karna-zaloba-na-soudkyni-os-benesov`)
+
+- Type: legal_or_administrative_process
+- Status: not_authorized
+- Appears in: jeronym-tejc
+- Claims: CLM-08, CLM-09, CLM-10, CLM-11, CLM-12, CLM-13, CLM-33, CLM-34, CLM-35, CLM-36
+- Sources: SRC-05, SRC-06, SRC-07, SRC-17 (4 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Kateřina Konečná (`katerina-konecna`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: macinka-turek
+- Claims: CLM-33
+- Sources: SRC-36, SRC-37 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Kateřina Pacíková (`katerina-pacikova`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: igor-cerveny
+- Claims: CLM-26
+- Sources: SRC-11 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Kateřina Stojanová (`katerina-stojanova`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: zuzana-mrazova
+- Claims: CLM-51
+- Sources: SRC-19 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Kauppias s.r.o. (`kauppias`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: macinka-turek
+- Claims: CLM-22
+- Sources: SRC-24 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Kauza staveb v rozporu s územním plánem (pozemek Mrázové) (`kauza-cerne-stavby-mrazova`)
+
+- Type: controversy
+- Status: not_authorized
+- Appears in: zuzana-mrazova
+- Claims: CLM-12, CLM-13, CLM-35, CLM-36, CLM-42, CLM-43, CLM-46
+- Sources: SRC-06, SRC-10, SRC-11, SRC-15, SRC-16, SRC-25 (6 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Cesta ministra Červeného do USA (červenec 2026) (`kauza-cesta-cerveneho-usa`)
+
+- Type: controversy
+- Status: not_authorized
+- Appears in: igor-cerveny
+- Claims: CLM-16, CLM-17, CLM-18, CLM-49, CLM-56, CLM-57
+- Sources: SRC-10, SRC-16, SRC-17, SRC-18, SRC-19 (5 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Kauza implantací defibrilátorů ve FN Olomouc (`kauza-defibrilatory-fn-olomouc`)
+
+- Type: controversy
+- Status: not_authorized
+- Appears in: adam-vojtech
+- Claims: CLM-02, CLM-04, CLM-06, CLM-11, CLM-22, CLM-29, CLM-30, CLM-31
+- Sources: SRC-02, SRC-03, SRC-04, SRC-06, SRC-07, SRC-13, SRC-15, SRC-19, SRC-33 (9 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Kauza dotace na toustový chléb (Penam / Pekárna Zelená louka) (`kauza-dotace-toustovy-chleb`)
+
+- Type: controversy
+- Status: not_authorized
+- Appears in: karel-havlicek
+- Claims: CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07, CLM-08, CLM-09, CLM-19, CLM-20, CLM-21, CLM-22, CLM-23, CLM-24, CLM-25, CLM-26, CLM-27, CLM-28
+- Sources: SRC-02, SRC-03, SRC-04, SRC-05, SRC-06, SRC-11, SRC-12, SRC-13, SRC-14, SRC-15, SRC-16, SRC-32 (12 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Kauza zrušení koncesionářských poplatků a financování ČT/ČRo ze státního rozpočtu (`kauza-financovani-ct-cro`)
+
+- Type: controversy
+- Status: not_authorized
+- Appears in: oto-klempir
+- Claims: CLM-03, CLM-04, CLM-06, CLM-07, CLM-08, CLM-09, CLM-10, CLM-11, CLM-12, CLM-13, CLM-14, CLM-15, CLM-16, CLM-17, CLM-18, CLM-19, CLM-20, CLM-21
+- Sources: SRC-02, SRC-03, SRC-06, SRC-07, SRC-13, SRC-14, SRC-19, SRC-20, SRC-21, SRC-26 (10 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Kauza grantů, rozpočtu kultury a ochrany památek (`kauza-granty-pamatky`)
+
+- Type: controversy
+- Status: not_authorized
+- Appears in: oto-klempir
+- Claims: CLM-30, CLM-31, CLM-32, CLM-33, CLM-34, CLM-35, CLM-36, CLM-37, CLM-38, CLM-39
+- Sources: SRC-05, SRC-10, SRC-11, SRC-15, SRC-16, SRC-17, SRC-18, SRC-24, SRC-25 (9 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Přestupkové řízení k majetkovému přiznání Igora Červeného (`kauza-majetkove-priznani-cerveny`)
+
+- Type: legal_or_administrative_process
+- Status: not_authorized
+- Appears in: igor-cerveny
+- Claims: CLM-02, CLM-05, CLM-07, CLM-20, CLM-26
+- Sources: SRC-02, SRC-03, SRC-04, SRC-11, SRC-13, SRC-14 (6 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Kauza nahrávacího zařízení v jednacím sále vlády (`kauza-nahravaci-zarizeni-vlada`)
+
+- Type: controversy
+- Status: not_authorized
+- Appears in: boris-stastny
+- Claims: CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07, CLM-08, CLM-09, CLM-10, CLM-11, CLM-12, CLM-13, CLM-14, CLM-15, CLM-16, CLM-17, CLM-18, CLM-19, CLM-20, CLM-21
+- Sources: SRC-02, SRC-03, SRC-04, SRC-05, SRC-06, SRC-07, SRC-08, SRC-09, SRC-10 (9 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Kauza neodvysílaného rozhovoru prezidenta Pavla (podcast Kamufláž) (`kauza-neodvysilany-rozhovor-pavel`)
+
+- Type: controversy
+- Status: not_authorized
+- Appears in: jaromir-zuna
+- Claims: CLM-08, CLM-09, CLM-10, CLM-11, CLM-12, CLM-29, CLM-30, CLM-31
+- Sources: SRC-06, SRC-07, SRC-08, SRC-21, SRC-27 (5 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Kauza Národní galerie: odvolání ředitelky a zrušené výběrové řízení (`kauza-ngp`)
+
+- Type: controversy
+- Status: not_authorized
+- Appears in: oto-klempir
+- Claims: CLM-05, CLM-22, CLM-23, CLM-24, CLM-25, CLM-26, CLM-27, CLM-28, CLM-29
+- Sources: SRC-02, SRC-04, SRC-08, SRC-09, SRC-27 (5 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Kauza obecního bytu Mrázové v Bílině (`kauza-obecni-byt-bilina`)
+
+- Type: controversy
+- Status: not_authorized
+- Appears in: zuzana-mrazova
+- Claims: CLM-09, CLM-10, CLM-11, CLM-27, CLM-28, CLM-29, CLM-30
+- Sources: SRC-05, SRC-06, SRC-09, SRC-11, SRC-12, SRC-22, SRC-23, SRC-26, SRC-28 (9 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Trestní kauza předvolebních plakátů SPD (`kauza-plakaty-spd`)
+
+- Type: legal_or_administrative_process
+- Status: not_authorized
+- Appears in: tomio-okamura
+- Claims: CLM-01, CLM-02, CLM-10, CLM-21, CLM-23, CLM-25, CLM-28, CLM-30
+- Sources: SRC-01, SRC-02, SRC-03, SRC-04, SRC-16, SRC-17, SRC-18, SRC-19, SRC-20, SRC-21, SRC-22, SRC-27 (12 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Nepravomocná pokuta Mrázové za střet zájmů (`kauza-pokuta-stret-zajmu-mrazova`)
+
+- Type: legal_or_administrative_process
+- Status: not_authorized
+- Appears in: zuzana-mrazova
+- Claims: CLM-02, CLM-03, CLM-18, CLM-20, CLM-21, CLM-24
+- Sources: SRC-02, SRC-04, SRC-05, SRC-07, SRC-13, SRC-14, SRC-20, SRC-27 (8 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Kauza střetu zájmů poradkyně na MPSV (2026) (`kauza-stret-zajmu-semancova`)
+
+- Type: controversy
+- Status: not_authorized
+- Appears in: ales-juchelka
+- Claims: CLM-02, CLM-03, CLM-06, CLM-08, CLM-09, CLM-11, CLM-35
+- Sources: SRC-02, SRC-03, SRC-04, SRC-10, SRC-11, SRC-12 (6 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Kauza plošného testování žáků 5. a 9. tříd (2026) (`kauza-testovani-zaku-2026`)
+
+- Type: controversy
+- Status: not_authorized
+- Appears in: robert-plaga
+- Claims: CLM-02, CLM-05, CLM-06, CLM-20, CLM-24, CLM-26
+- Sources: SRC-02, SRC-03, SRC-04, SRC-12, SRC-13, SRC-14, SRC-23, SRC-28 (8 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Kauza upravených metrik na sociálních sítích ministra Šťastného (`kauza-upravene-metriky`)
+
+- Type: controversy
+- Status: not_authorized
+- Appears in: boris-stastny
+- Claims: CLM-32, CLM-33, CLM-34, CLM-35, CLM-36, CLM-37, CLM-38, CLM-39
+- Sources: SRC-16, SRC-17, SRC-18 (3 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Kauza vymáhání dotací po skupině Agrofert (`kauza-vymahani-dotaci-agrofert`)
+
+- Type: controversy
+- Status: not_authorized
+- Appears in: martin-sebestyan
+- Claims: CLM-02, CLM-03, CLM-17, CLM-21, CLM-22, CLM-25, CLM-26, CLM-30
+- Sources: SRC-02, SRC-06, SRC-07, SRC-08, SRC-09, SRC-12, SRC-13, SRC-14, SRC-27 (9 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Kauza Zapper-Club: „Imunitní balíček ANTI-COVID-19“ (`kauza-zapper-anti-covid`)
+
+- Type: controversy
+- Status: not_authorized
+- Appears in: macinka-turek
+- Claims: CLM-31
+- Sources: SRC-34, SRC-35 (2 independent source families)
+- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Kauza 2024: fotografie a svícny (`kauza2024`)
@@ -300,6 +1970,26 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
   - edge-turek-kauza2025 (turek -> kauza2025, "subjekt", dossier: macinka-turek)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## KDU-ČSL (`kdu-csl`)
+
+- Type: political_party
+- Status: not_authorized
+- Appears in: boris-stastny, jaromir-zuna, karel-havlicek, oto-klempir
+- Claims: CLM-09, CLM-17, CLM-32, CLM-34, CLM-39
+- Sources: SRC-18, SRC-23 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Kia (`kia`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: karel-havlicek
+- Claims: none
+- Sources: SRC-31 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Klub motoristů, z.s. (`klubmotoristu`)
 
 - Type: organization
@@ -310,6 +2000,56 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
 - Relations: 
   - edge-klubmotoristu-motoriste (klubmotoristu -> motoriste, "dar 800 000 Kč (2024)", dossier: macinka-turek)
   - edge-macinka-klubmotoristu (macinka -> klubmotoristu, "statutární orgán", dossier: macinka-turek)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Komise pro přezkum nepřirozených úmrtí dětí (`komise-pro-prezkum-neprirozenych-umrti-deti`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: jeronym-tejc
+- Claims: CLM-39, CLM-40
+- Sources: SRC-20 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Komora daňových poradců ČR (`komora-danovych-poradcu`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: adam-vojtech
+- Claims: CLM-43
+- Sources: SRC-24 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Kompetenční spor prezident vs. vláda (Pl. ÚS 16/26) (`kompetencni-spor-pl-us-16-26`)
+
+- Type: legal_or_administrative_process
+- Status: not_authorized
+- Appears in: jeronym-tejc
+- Claims: CLM-14, CLM-15, CLM-16, CLM-17, CLM-18, CLM-41, CLM-42, CLM-43, CLM-44, CLM-45, CLM-46, CLM-47, CLM-48, CLM-49, CLM-50, CLM-51
+- Sources: SRC-08, SRC-09, SRC-10, SRC-21, SRC-23, SRC-25 (6 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Koncepce výstavby Armády ČR do roku 2040 (`koncepce-vystavby-acr-2040`)
+
+- Type: legal_or_administrative_process
+- Status: not_authorized
+- Appears in: jaromir-zuna
+- Claims: CLM-17, CLM-18, CLM-32, CLM-34, CLM-37, CLM-38
+- Sources: SRC-12, SRC-15, SRC-18, SRC-19, SRC-25, SRC-30, SRC-32 (7 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Kontrola NKÚ na MPSV (2026–2027) (`kontrola-nku-mpsv`)
+
+- Type: legal_or_administrative_process
+- Status: not_authorized
+- Appears in: ales-juchelka
+- Claims: CLM-14, CLM-42, CLM-43, CLM-44
+- Sources: SRC-09, SRC-11, SRC-14 (3 independent source families)
+- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Kostelecké uzeniny (`kostelecke-uzeniny`)
@@ -326,6 +2066,86 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
   - edge-kostelecke-ustavnisoud (kostelecke-uzeniny -> ustavni-soud, "ústavní stížnost odmítnuta 1. 4. 2026 jako zjevně neopodstatněná — spor o nárok na dotaci, ne o vině", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Krajský soud v Brně (`krajsky-soud-brno`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: macinka-turek
+- Claims: CLM-46
+- Sources: SRC-55 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Krajský soud v Praze (`krajsky-soud-praha`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: andrej-babis, karel-havlicek
+- Claims: CLM-26, CLM-57
+- Sources: SRC-15, SRC-16, SRC-34, SRC-35 (6 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Krajský úřad Ústeckého kraje (`krajsky-urad-usteckeho-kraje`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: zuzana-mrazova
+- Claims: CLM-37, CLM-38
+- Sources: SRC-16 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Krijcos (`krijcos`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: macinka-turek, richard-chlad
+- Claims: CLM-07, CLM-36
+- Sources: SRC-02, SRC-42 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Krijcos Energy (`krijcos-energy`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: macinka-turek, richard-chlad
+- Claims: CLM-07, CLM-36
+- Sources: SRC-02, SRC-42 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Kryštof Doležal (`krystof-dolezal`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: martin-sebestyan
+- Claims: CLM-32
+- Sources: SRC-17 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Lenka Němcová (`lenka-nemcova`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: karel-havlicek
+- Claims: CLM-14
+- Sources: SRC-07, SRC-08 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## «Lex Mrázová» (návrh povinnosti přiznávat obecní byt) (`lex-mrazova`)
+
+- Type: legal_or_administrative_process
+- Status: not_authorized
+- Appears in: zuzana-mrazova
+- Claims: CLM-54
+- Sources: SRC-24 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Mgr. Libor Němeček (`libor-nemecek`)
 
 - Type: person
@@ -333,6 +2153,186 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
 - Appears in: —
 - Claims: none
 - Sources: none (0 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Lieken AG (`lieken-ag`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: karel-havlicek
+- Claims: CLM-05
+- Sources: SRC-02, SRC-04 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Louise Bogeyová (`louise-bogeyova`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-25
+- Sources: SRC-10 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Lubor Novák (`lubor-novak`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: igor-cerveny
+- Claims: CLM-09, CLM-28, CLM-29, CLM-30
+- Sources: SRC-06, SRC-24, SRC-26, SRC-28, SRC-35 (5 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Luboš Zajíc (`lubos-zajic`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: robert-plaga
+- Claims: CLM-19
+- Sources: SRC-09 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Lukáš Koutník (`lukas-koutnik`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: igor-cerveny
+- Claims: CLM-18, CLM-51, CLM-57
+- Sources: SRC-10, SRC-16, SRC-17, SRC-18, SRC-19 (5 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Lukáš Vaverka (`lukas-vaverka`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: igor-cerveny
+- Claims: CLM-44, CLM-45, CLM-46
+- Sources: SRC-30, SRC-31 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Lukáš Vlček (`lukas-vlcek`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: karel-havlicek, zuzana-mrazova
+- Claims: CLM-13, CLM-16
+- Sources: SRC-06, SRC-07, SRC-08, SRC-11 (4 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Magda Kopczyńska (`magda-kopczynska`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: ivan-bednarik
+- Claims: CLM-26
+- Sources: SRC-15 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Magistrát města Most (`magistrat-mesta-most`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: zuzana-mrazova
+- Claims: CLM-02, CLM-04, CLM-20, CLM-21, CLM-37
+- Sources: SRC-02, SRC-04, SRC-05, SRC-13, SRC-14, SRC-16 (6 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Mandátový a imunitní výbor Poslanecké sněmovny (`mandatovy-a-imunitni-vybor-psp`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: tomio-okamura
+- Claims: CLM-29
+- Sources: SRC-19, SRC-20 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Marcel Fišer (`marcel-fiser`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: oto-klempir
+- Claims: CLM-24
+- Sources: SRC-27 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Marco Boggian (`marco-boggian`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: karel-havlicek
+- Claims: none
+- Sources: SRC-29 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Marek Výborný (`marek-vyborny`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: karel-havlicek, martin-sebestyan
+- Claims: CLM-03, CLM-16, CLM-32, CLM-44
+- Sources: SRC-05, SRC-07, SRC-18, SRC-25, SRC-27 (5 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Marian Jurečka (`marian-jurecka`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: ales-juchelka
+- Claims: CLM-22
+- Sources: SRC-14 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Marian Piecha (`marian-piecha`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: andrej-babis, karel-havlicek
+- Claims: CLM-20, CLM-21
+- Sources: SRC-11, SRC-12, SRC-36 (4 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Marie Vopálenská (`marie-vopalenska`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: ivan-bednarik
+- Claims: CLM-37
+- Sources: SRC-27 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Martin Baxa (`martin-baxa`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: oto-klempir
+- Claims: CLM-26, CLM-39
+- Sources: SRC-04, SRC-16 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Martin Beneš (`martin-benes`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: jeronym-tejc, robert-plaga
+- Claims: CLM-38, CLM-39, CLM-40, CLM-41
+- Sources: SRC-15, SRC-16, SRC-18, SRC-19, SRC-20 (5 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -346,6 +2346,146 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Martin Kupka (`martin-kupka`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: alena-schillerova, andrej-babis, ivan-bednarik, jaromir-zuna, karel-havlicek, robert-plaga, zuzana-mrazova
+- Claims: CLM-04, CLM-06, CLM-07, CLM-09, CLM-12, CLM-16, CLM-26, CLM-39, CLM-42
+- Sources: SRC-02, SRC-03, SRC-06, SRC-07, SRC-08, SRC-11, SRC-16, SRC-19, SRC-20, SRC-21, SRC-30 (12 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Masarykova nemocnice v Ústí nad Labem (`masarykova-nemocnice-usti`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: adam-vojtech
+- Claims: CLM-32
+- Sources: SRC-19 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Masarykova univerzita (`masarykova-univerzita`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: alena-schillerova, jeronym-tejc, robert-plaga
+- Claims: CLM-02, CLM-44
+- Sources: SRC-01, SRC-15, SRC-27 (3 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Matěj Ondřej Havel (`matej-ondrej-havel`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: andrej-babis, jaromir-zuna, zuzana-mrazova
+- Claims: CLM-06, CLM-09, CLM-16
+- Sources: SRC-02, SRC-06, SRC-11 (4 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## MEAS Consulting s.r.o. v likvidaci (`meas-consulting`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: macinka-turek
+- Claims: CLM-22
+- Sources: SRC-24 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Medical Investments (`medical-investments`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: macinka-turek
+- Claims: CLM-35
+- Sources: SRC-39 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Město Bílina (městský úřad a stavební úřad) (`mesto-bilina`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: zuzana-mrazova
+- Claims: CLM-09, CLM-27, CLM-30, CLM-33, CLM-36, CLM-40, CLM-42
+- Sources: SRC-05, SRC-06, SRC-11, SRC-15, SRC-16, SRC-21, SRC-22, SRC-25, SRC-26, SRC-28, SRC-29 (11 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Městské státní zastupitelství v Praze (`mestske-statni-zastupitelstvi-praha`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: jaroslav-faltynek
+- Claims: CLM-02
+- Sources: SRC-02 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Městský soud v Praze (`mestsky-soud-praha`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: andrej-babis, karel-havlicek
+- Claims: CLM-01, CLM-08, CLM-20, CLM-50, CLM-62, CLM-63, CLM-64, CLM-66, CLM-80
+- Sources: SRC-01, SRC-03, SRC-08, SRC-12, SRC-23, SRC-24, SRC-41, SRC-42, SRC-43, SRC-47, SRC-57 (12 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Městský úřad Nymburk (`mestsky-urad-nymburk`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: igor-cerveny
+- Claims: CLM-05, CLM-20, CLM-21
+- Sources: SRC-02, SRC-03, SRC-13, SRC-14 (4 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Meta (`meta`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: igor-cerveny, macinka-turek
+- Claims: CLM-09, CLM-16, CLM-56
+- Sources: SRC-10, SRC-16, SRC-17, SRC-22 (4 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Michaela Šebelová (`michaela-sebelova`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: adam-vojtech, zuzana-mrazova
+- Claims: CLM-14, CLM-41, CLM-49
+- Sources: SRC-08, SRC-18, SRC-22, SRC-29 (5 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Michal Dobiáš (`michal-dobias`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: tunde-bartha
+- Claims: CLM-02
+- Sources: SRC-02, SRC-05 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Michal Goetz (`michal-goetz`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: robert-plaga
+- Claims: CLM-43
+- Sources: SRC-27, SRC-30 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Ing. Michal Jedlička (`michal-jedlicka`)
 
 - Type: person
@@ -353,6 +2493,256 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
 - Appears in: —
 - Claims: none
 - Sources: none (0 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Michal Krapinec (`michal-krapinec`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: ivan-bednarik
+- Claims: CLM-38
+- Sources: SRC-27 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Michal Kraus (`michal-kraus-cd`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: ivan-bednarik
+- Claims: CLM-02
+- Sources: SRC-02, SRC-13, SRC-20 (3 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Michal Kučera (`michal-kucera`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: karel-havlicek
+- Claims: CLM-32
+- Sources: SRC-18 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Mikuláš Minář (`mikulas-minar`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: oto-klempir
+- Claims: CLM-19
+- Sources: none (0 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Milion chvilek pro demokracii (`milion-chvilek`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: oto-klempir
+- Claims: CLM-18, CLM-19, CLM-43
+- Sources: SRC-12, SRC-13, SRC-14, SRC-28 (4 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Miloš Táborský (`milos-taborsky`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: adam-vojtech
+- Claims: CLM-27, CLM-28, CLM-32
+- Sources: SRC-13, SRC-17, SRC-18, SRC-19 (4 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Miloš Vystrčil (`milos-vystrcil`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: karel-havlicek
+- Claims: CLM-37
+- Sources: SRC-22, SRC-23 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Miloslav Kala (`miloslav-kala`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: lubomir-metnar
+- Claims: CLM-03, CLM-18, CLM-19, CLM-20, CLM-21, CLM-22, CLM-23
+- Sources: SRC-01, SRC-02, SRC-03, SRC-05 (4 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Ministerstvo dopravy ČR (`ministerstvo-dopravy`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: ivan-bednarik
+- Claims: CLM-18, CLM-19, CLM-23, CLM-33
+- Sources: SRC-07, SRC-09, SRC-11, SRC-14, SRC-23 (5 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Ministerstvo financí ČR (`ministerstvo-financi`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: adam-vojtech, alena-schillerova, andrej-babis, lubomir-metnar, macinka-turek, tunde-bartha
+- Claims: CLM-04, CLM-10, CLM-23, CLM-25, CLM-27, CLM-28, CLM-29, CLM-44, CLM-46, CLM-72
+- Sources: SRC-02, SRC-06, SRC-07, SRC-13, SRC-14, SRC-15, SRC-18, SRC-24, SRC-50, SRC-55 (14 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Ministerstvo kultury ČR (`ministerstvo-kultury`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: oto-klempir
+- Claims: CLM-13, CLM-21, CLM-22, CLM-28, CLM-32, CLM-34, CLM-40
+- Sources: SRC-04, SRC-22, SRC-23, SRC-24, SRC-25 (5 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Ministerstvo obrany ČR (`ministerstvo-obrany`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: alena-schillerova, jaromir-zuna
+- Claims: CLM-08, CLM-10, CLM-12, CLM-26, CLM-27, CLM-30, CLM-31, CLM-41, CLM-44, CLM-45
+- Sources: SRC-06, SRC-07, SRC-08, SRC-15, SRC-16, SRC-23, SRC-24, SRC-27 (8 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Ministerstvo práce a sociálních věcí ČR (`ministerstvo-prace-a-socialnich-veci`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: ales-juchelka, jeronym-tejc
+- Claims: CLM-09, CLM-10, CLM-11, CLM-12, CLM-15, CLM-16, CLM-23, CLM-33, CLM-34, CLM-36, CLM-37, CLM-39, CLM-42
+- Sources: SRC-02, SRC-04, SRC-05, SRC-06, SRC-07, SRC-10, SRC-11, SRC-12, SRC-14, SRC-15, SRC-20, SRC-24 (12 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Ministerstvo pro místní rozvoj ČR (`ministerstvo-pro-mistni-rozvoj`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: andrej-babis, igor-cerveny, martin-sebestyan, zuzana-mrazova
+- Claims: CLM-06, CLM-22, CLM-25, CLM-44, CLM-51, CLM-68
+- Sources: SRC-02, SRC-04, SRC-05, SRC-13, SRC-18, SRC-19, SRC-20 (8 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Ministerstvo spravedlnosti ČR (`ministerstvo-spravedlnosti`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: igor-cerveny, jeronym-tejc, zuzana-mrazova
+- Claims: CLM-02, CLM-05, CLM-18, CLM-20, CLM-21, CLM-23, CLM-24, CLM-27, CLM-34
+- Sources: SRC-02, SRC-03, SRC-07, SRC-12, SRC-13, SRC-14, SRC-15, SRC-17, SRC-20, SRC-26, SRC-27 (11 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Ministerstvo vnitra ČR (`ministerstvo-vnitra`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: lubomir-metnar, tomio-okamura
+- Claims: CLM-01, CLM-04, CLM-06, CLM-15, CLM-16, CLM-17
+- Sources: SRC-01, SRC-02, SRC-03, SRC-04, SRC-05 (5 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Ministerstvo zemědělství ČR (`ministerstvo-zemedelstvi`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: andrej-babis, martin-sebestyan
+- Claims: CLM-02, CLM-35, CLM-36, CLM-37, CLM-48
+- Sources: SRC-07, SRC-22, SRC-23, SRC-24, SRC-27 (6 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Ministerstvo životního prostředí ČR (`ministerstvo-zivotniho-prostredi`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: igor-cerveny, macinka-turek
+- Claims: CLM-11, CLM-24, CLM-36, CLM-38, CLM-40, CLM-43, CLM-47, CLM-49, CLM-52
+- Sources: SRC-07, SRC-18, SRC-20, SRC-27, SRC-29, SRC-30, SRC-31, SRC-33, SRC-34, SRC-44, SRC-45, SRC-49, SRC-50 (13 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Miroslav Hlaváč (`miroslav-hlavac`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: jaromir-zuna
+- Claims: CLM-13, CLM-14, CLM-16, CLM-20, CLM-25, CLM-26, CLM-27, CLM-29
+- Sources: SRC-09, SRC-10, SRC-11, SRC-14, SRC-21, SRC-25, SRC-27, SRC-28 (8 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Miroslav Zámečník (`miroslav-zamecnik`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: ivan-bednarik
+- Claims: CLM-44
+- Sources: SRC-02, SRC-19, SRC-20 (3 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Mlékárna Hlinsko (`mlekarna-hlinsko`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-65
+- Sources: SRC-45 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Modernizační fond (`modernizacni-fond`)
+
+- Type: legal_or_administrative_process
+- Status: not_authorized
+- Appears in: igor-cerveny
+- Claims: CLM-47
+- Sources: SRC-29, SRC-34 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Mojmír Hampl (`mojmir-hampl`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: ivan-bednarik
+- Claims: CLM-32
+- Sources: SRC-24 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Moravia Green Hydrogen (`moravia-green-hydrogen`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: macinka-turek, richard-chlad
+- Claims: CLM-07, CLM-36
+- Sources: SRC-02, SRC-42 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Moravskoslezský kraj (`moravskoslezsky-kraj`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-68
+- Sources: SRC-46, SRC-47 (2 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -372,6 +2762,16 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
   - edge-chlad-motoriste-dary (chlad -> motoriste, "evidováno 638 864 Kč za rok 2025 včetně nepeněžního plnění; veřejně uváděná čísla se liší", dossier: richard-chlad)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Motoristé Praha s.r.o. (`motoriste-praha`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: macinka-turek
+- Claims: CLM-22
+- Sources: SRC-24 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Ministerstvo průmyslu a obchodu (`mpo`)
 
 - Type: public_institution
@@ -381,6 +2781,16 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
 - Sources: SRC-36, SRC-37 (2 independent source families)
 - Relations: 
   - edge-pekarna-mpo (penam-zelena-louka -> mpo, "odnětí stomilionové dotace (2022); EK ji odmítla proplatit", dossier: andrej-babis)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Ministerstvo školství, mládeže a tělovýchovy ČR (`msmt`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: robert-plaga
+- Claims: CLM-16, CLM-17, CLM-29, CLM-45, CLM-49
+- Sources: SRC-09, SRC-11, SRC-13, SRC-22, SRC-29 (5 independent source families)
+- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Ministerstvo zdravotnictví (`mzdrav`)
@@ -408,6 +2818,86 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
   - edge-turek-mzp2026 (turek -> mzp2026, "navrhován, nejmenován (1/2026)", dossier: macinka-turek)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Národní galerie Praha (`narodni-galerie-praha`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: oto-klempir
+- Claims: CLM-05, CLM-22, CLM-23, CLM-25, CLM-27, CLM-28, CLM-29
+- Sources: SRC-02, SRC-04, SRC-08, SRC-09, SRC-27 (5 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Národní očkovací strategie (`narodni-ockovaci-strategie`)
+
+- Type: legal_or_administrative_process
+- Status: not_authorized
+- Appears in: adam-vojtech
+- Claims: CLM-19, CLM-20, CLM-45, CLM-47, CLM-50
+- Sources: SRC-11, SRC-27, SRC-30, SRC-31 (4 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Národní památkový ústav (`narodni-pamatkovy-ustav`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: oto-klempir
+- Claims: CLM-36, CLM-37
+- Sources: SRC-15, SRC-18 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Národní plán obnovy (`narodni-plan-obnovy`)
+
+- Type: legal_or_administrative_process
+- Status: not_authorized
+- Appears in: ales-juchelka, igor-cerveny, oto-klempir
+- Claims: CLM-06, CLM-11, CLM-13, CLM-29, CLM-31, CLM-46, CLM-47
+- Sources: SRC-03, SRC-08, SRC-10, SRC-11, SRC-27, SRC-29, SRC-34 (8 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Národní sportovní agentura (NSA) (`narodni-sportovni-agentura`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: boris-stastny
+- Claims: CLM-22, CLM-24, CLM-27, CLM-30
+- Sources: SRC-11, SRC-12, SRC-13, SRC-14, SRC-15 (5 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Národní ústav duševního zdraví (`narodni-ustav-dusevniho-zdravi`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: robert-plaga
+- Claims: CLM-37, CLM-43
+- Sources: SRC-16, SRC-19, SRC-27, SRC-30 (4 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## National War College (Washington) (`national-war-college`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: jaromir-zuna
+- Claims: none
+- Sources: SRC-01 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## NATO (Severoatlantická aliance) (`nato`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: alena-schillerova, jaromir-zuna, jeronym-tejc
+- Claims: CLM-06, CLM-14, CLM-23, CLM-27, CLM-39, CLM-41, CLM-42, CLM-46, CLM-53
+- Sources: SRC-05, SRC-08, SRC-09, SRC-10, SRC-15, SRC-17, SRC-20, SRC-21, SRC-31, SRC-33 (10 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Navos Farm Technic (`navos-farm-technic`)
 
 - Type: company
@@ -418,6 +2908,16 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
 - Relations: 
   - edge-agrofert-navos (agrofert -> navos-farm-technic, "firma ze skupiny", dossier: andrej-babis)
   - edge-navos-nss (navos-farm-technic -> nss, "NSS 12/2025: zákaz kvůli střetu zájmů platí i pro zakázky malého rozsahu — správní výklad, ne trestní odpovědnost", dossier: andrej-babis)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Návrh na zrušení policejní ochrany NKÚ (2026) (`navrh-zruseni-policejni-ochrany-nku`)
+
+- Type: legal_or_administrative_process
+- Status: not_authorized
+- Appears in: lubomir-metnar
+- Claims: CLM-01, CLM-04, CLM-05, CLM-06, CLM-08, CLM-09, CLM-10, CLM-11, CLM-12
+- Sources: SRC-01, SRC-02, SRC-03, SRC-04, SRC-05 (5 independent source families)
+- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Národní centrála proti organizovanému zločinu (`ncoz`)
@@ -448,6 +2948,16 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
   - edge-turek-nehoda2026 (turek -> nehoda2026, "subjekt", dossier: macinka-turek)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Nejvyšší státní zastupitelství (`nejvyssi-statni-zastupitelstvi`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: andrej-babis, jeronym-tejc
+- Claims: CLM-24, CLM-25, CLM-71
+- Sources: SRC-13, SRC-14, SRC-48, SRC-55 (4 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Nemocnice Na Homolce (`nemocnice-homolce`)
 
 - Type: public_institution
@@ -469,6 +2979,66 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
 - Relations: 
   - edge-metnar-nku (metnar -> nku, "návrh ukončit policejní ochranu úřadu (2026)", dossier: lubomir-metnar)
   - edge-juchelka-nku (juchelka -> nku, "NKÚ zahrnul kauzu bývalé poradkyně do probíhající kontroly MPSV", dossier: ales-juchelka)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Nová zelená úsporám (`nova-zelena-usporam`)
+
+- Type: legal_or_administrative_process
+- Status: not_authorized
+- Appears in: igor-cerveny
+- Claims: CLM-47
+- Sources: SRC-29, SRC-34 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Novela o elektronické evidenci tržeb (2026, vč. zdravotních benefitů) (`novela-eet-2026`)
+
+- Type: legal_or_administrative_process
+- Status: not_authorized
+- Appears in: adam-vojtech
+- Claims: CLM-38, CLM-39
+- Sources: SRC-21, SRC-25 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Novela občanského zákoníku o rodičovské odpovědnosti (Tejc, 2026) (`novela-obcanskeho-zakoniku-rodicovska-odpovednost`)
+
+- Type: legal_or_administrative_process
+- Status: not_authorized
+- Appears in: jeronym-tejc
+- Claims: CLM-37, CLM-38
+- Sources: SRC-19 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Novela rozpočtových zákonů 2026 (sněmovní tisk č. 90) a prezidentské veto (`novela-rozpoctovych-pravidel-2026`)
+
+- Type: legal_or_administrative_process
+- Status: not_authorized
+- Appears in: alena-schillerova, lubomir-metnar
+- Claims: CLM-05, CLM-08, CLM-09, CLM-13, CLM-15, CLM-17, CLM-18, CLM-23, CLM-25, CLM-30
+- Sources: SRC-03, SRC-04, SRC-05, SRC-06, SRC-07, SRC-08, SRC-09, SRC-19, SRC-20, SRC-21, SRC-22 (11 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Novela školského zákona — zákaz mobilů ve školách (tisk 232) (`novela-skolskeho-zakona-zakaz-mobilu`)
+
+- Type: legal_or_administrative_process
+- Status: not_authorized
+- Appears in: robert-plaga
+- Claims: CLM-12, CLM-13, CLM-14, CLM-30, CLM-31, CLM-32, CLM-33
+- Sources: SRC-06, SRC-07, SRC-08, SRC-16, SRC-24, SRC-25, SRC-31, SRC-32 (8 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Novela stavebního zákona (sněmovní tisk 67) (`novela-stavebniho-zakona-2026`)
+
+- Type: legal_or_administrative_process
+- Status: not_authorized
+- Appears in: karel-havlicek, oto-klempir, zuzana-mrazova
+- Claims: CLM-10, CLM-11, CLM-12, CLM-13, CLM-14, CLM-15, CLM-29, CLM-30, CLM-31, CLM-32, CLM-33, CLM-34, CLM-35, CLM-36, CLM-37, CLM-38, CLM-39, CLM-46, CLM-47, CLM-48
+- Sources: SRC-07, SRC-08, SRC-10, SRC-15, SRC-17, SRC-18, SRC-19, SRC-20, SRC-21, SRC-22, SRC-23, SRC-24, SRC-25, SRC-30 (15 independent source families)
+- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Národní rozpočtová rada (`nrr`)
@@ -495,6 +3065,86 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
   - edge-sady-nss (sady-cz -> nss, "NSS 8/2025 zamítl kasační stížnost: rozhodný je stav v době podání žádosti", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## NÚKIB (`nukib`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: boris-stastny
+- Claims: CLM-10
+- Sources: SRC-06 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Obvodní soud pro Prahu 1 (`obvodni-soud-praha-1`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: tomio-okamura
+- Claims: CLM-01, CLM-07, CLM-21, CLM-30, CLM-31
+- Sources: SRC-01, SRC-02, SRC-03, SRC-04, SRC-16, SRC-17, SRC-21, SRC-22 (8 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Obvodní státní zastupitelství pro Prahu 1 (`obvodni-statni-zastupitelstvi-praha-1`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: tomio-okamura
+- Claims: CLM-21
+- Sources: SRC-16, SRC-17 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Základní odborová organizace Národní galerie Praha (`odbory-ngp`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: oto-klempir
+- Claims: CLM-28, CLM-29
+- Sources: SRC-08 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## ODS (`ods`)
+
+- Type: political_party
+- Status: not_authorized
+- Appears in: andrej-babis, boris-stastny, jaromir-zuna, jeronym-tejc, karel-havlicek, oto-klempir
+- Claims: CLM-05, CLM-07, CLM-09, CLM-12, CLM-15, CLM-21, CLM-26, CLM-29
+- Sources: SRC-02, SRC-06, SRC-07, SRC-09, SRC-19 (6 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Odvolání vedení Národní sportovní agentury (prosinec 2025) (`odvolani-vedeni-nsa`)
+
+- Type: controversy
+- Status: not_authorized
+- Appears in: boris-stastny
+- Claims: CLM-22, CLM-23, CLM-24, CLM-25, CLM-26, CLM-27, CLM-28, CLM-29, CLM-30, CLM-31
+- Sources: SRC-11, SRC-12, SRC-13, SRC-14, SRC-15 (5 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Ogilvy (`ogilvy`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: oto-klempir
+- Claims: none
+- Sources: SRC-01 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Okresní soud v Benešově (`okresni-soud-benesov`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: jeronym-tejc
+- Claims: CLM-08, CLM-33
+- Sources: SRC-05, SRC-06, SRC-07 (3 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Evropský úřad pro boj proti podvodům (OLAF) (`olaf`)
 
 - Type: public_institution
@@ -506,6 +3156,136 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
   - edge-capihnizdo-olaf (capi-hnizdo -> olaf, "šetření OLAF; zveřejněné části zprávy hovoří o nesrovnalostech — zjištění kontrolního úřadu, ne rozsudek", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Oldřich Jedlička (`oldrich-jedlicka`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: zuzana-mrazova
+- Claims: CLM-37, CLM-39
+- Sources: SRC-15, SRC-16 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Olga Kotková (`olga-kotkova`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: oto-klempir
+- Claims: CLM-24, CLM-25
+- Sources: SRC-04, SRC-27 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Olga Richterová (`olga-richterova`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: alena-schillerova, karel-havlicek, zuzana-mrazova
+- Claims: CLM-07, CLM-32, CLM-51, CLM-52, CLM-53, CLM-54
+- Sources: SRC-03, SRC-18, SRC-19, SRC-24 (4 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Ondřej Macura (`ondrej-macura`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: robert-plaga
+- Claims: CLM-20, CLM-45, CLM-50
+- Sources: SRC-12, SRC-21, SRC-22, SRC-29 (4 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Ondřej Šebek (`ondrej-sebek`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: boris-stastny
+- Claims: CLM-22, CLM-24, CLM-28, CLM-29
+- Sources: SRC-11, SRC-12, SRC-13 (3 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Operační program Zaměstnanost plus (OPZ+) (`operacni-program-zamestnanost-plus`)
+
+- Type: legal_or_administrative_process
+- Status: not_authorized
+- Appears in: ales-juchelka
+- Claims: CLM-11, CLM-31, CLM-46
+- Sources: SRC-10, SRC-11, SRC-12, SRC-19, SRC-27 (5 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Orlen (`orlen`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: karel-havlicek
+- Claims: CLM-46
+- Sources: SRC-31 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Organizace spojených národů (OSN) (`osn`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: igor-cerveny
+- Claims: CLM-49, CLM-50, CLM-53
+- Sources: SRC-18, SRC-19 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Obvodní státní zastupitelství pro Prahu 4 (`osz-praha-4`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: macinka-turek
+- Claims: CLM-27, CLM-45
+- Sources: SRC-31, SRC-53, SRC-54 (3 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Otevřený dopis 500 umělců proti obsazení ministerstva kultury Motoristy (říjen 2025) (`otevreny-dopis-umelcu-2025`)
+
+- Type: event
+- Status: not_authorized
+- Appears in: oto-klempir
+- Claims: CLM-40, CLM-41, CLM-42
+- Sources: SRC-22, SRC-23 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Pandora Papers (`pandora-papers`)
+
+- Type: event
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-31, CLM-75, CLM-76
+- Sources: SRC-13, SRC-52, SRC-53 (3 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Patrick Schneider (`patrick-schneider`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: ivan-bednarik
+- Claims: CLM-27, CLM-28
+- Sources: SRC-11 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Pavel Blažek (`pavel-blazek`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: jeronym-tejc
+- Claims: CLM-07, CLM-19, CLM-24, CLM-29
+- Sources: SRC-02, SRC-03, SRC-04, SRC-11, SRC-12, SRC-13, SRC-14, SRC-15 (8 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Mgr. Pavel Hanus (`pavel-hanus`)
 
 - Type: person
@@ -513,6 +3293,76 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
 - Appears in: —
 - Claims: none
 - Sources: none (0 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Pavel Heřmanský (`pavel-hermansky`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: andrej-babis, tunde-bartha
+- Claims: CLM-06, CLM-12, CLM-17
+- Sources: SRC-03 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Pavel Kysilka (`pavel-kysilka`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: ivan-bednarik
+- Claims: CLM-44
+- Sources: SRC-19, SRC-20 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Pavel Šámal (`pavel-samal`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: jeronym-tejc
+- Claims: CLM-17, CLM-42
+- Sources: SRC-10, SRC-21, SRC-23, SRC-25 (4 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Pavel Tomášek (`pavel-tomasek`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: macinka-turek
+- Claims: CLM-19
+- Sources: SRC-21 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Pavel Zeman (`pavel-zeman`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-79
+- Sources: SRC-56 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Pavla Pivoňka Vaňková (`pavla-pivonka-vankova`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: ales-juchelka
+- Claims: CLM-13, CLM-40
+- Sources: SRC-08, SRC-09, SRC-11, SRC-14 (4 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Penam (`penam`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: karel-havlicek
+- Claims: CLM-05, CLM-06, CLM-07, CLM-21
+- Sources: SRC-02, SRC-04, SRC-12 (3 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -530,6 +3380,26 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
   - edge-pekarna-mpo (penam-zelena-louka -> mpo, "odnětí stomilionové dotace (2022); EK ji odmítla proplatit", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Petice „Oto, zabal to!“ (`petice-oto-zabal-to`)
+
+- Type: event
+- Status: not_authorized
+- Appears in: oto-klempir
+- Claims: CLM-43
+- Sources: SRC-12, SRC-28 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Petr Bendl (`petr-bendl`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: martin-sebestyan
+- Claims: CLM-41
+- Sources: SRC-20 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Ing. Petr Cingr (`petr-cingr`)
 
 - Type: person
@@ -537,6 +3407,86 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
 - Appears in: —
 - Claims: none
 - Sources: none (0 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Petr Dlouhý (`petr-dlouhy`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: martin-sebestyan
+- Claims: CLM-17, CLM-21
+- Sources: SRC-08, SRC-09, SRC-10, SRC-11 (4 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Petr Fiala (`petr-fiala`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: boris-stastny, karel-havlicek, oto-klempir
+- Claims: CLM-29, CLM-31
+- Sources: SRC-11, SRC-14 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Petr Hladík (`petr-hladik`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: igor-cerveny
+- Claims: CLM-15
+- Sources: SRC-07 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Petr Kowanda (`petr-kowanda`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: robert-plaga
+- Claims: CLM-32
+- Sources: SRC-24 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Petr Kulhánek (`petr-kulhanek`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: zuzana-mrazova
+- Claims: CLM-32
+- Sources: SRC-26 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Petr Pavelec (`petr-pavelec`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: ivan-bednarik
+- Claims: CLM-02, CLM-43
+- Sources: SRC-02, SRC-19, SRC-20 (3 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Petra Fojtíková (`petra-fojtikova`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: tunde-bartha
+- Claims: none
+- Sources: SRC-04 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Petra Mazancová (`petra-mazancova`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: robert-plaga
+- Claims: CLM-51
+- Sources: SRC-21 (1 independent source family)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -550,6 +3500,26 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Petrimex (`petrimex`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: none
+- Sources: SRC-14 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## PG Contract, spol. s r.o. (`pg-contract`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: macinka-turek
+- Claims: CLM-22
+- Sources: SRC-24 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Podpůrný a garanční rolnický a lesnický fond (PGRLF) (`pgrlf`)
 
 - Type: public_institution
@@ -559,6 +3529,26 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
 - Sources: SRC-38, SRC-40 (2 independent source families)
 - Relations: 
   - edge-agrofert-pgrlf (agrofert -> pgrlf, "žaloby na 28 firem skupiny o 22 mil. Kč (7/2026) — podaná žaloba není rozhodnutí soudu", dossier: andrej-babis)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Piráti (Česká pirátská strana) (`pirati`)
+
+- Type: political_party
+- Status: not_authorized
+- Appears in: alena-schillerova, andrej-babis, karel-havlicek, martin-sebestyan, tomio-okamura, zuzana-mrazova
+- Claims: CLM-05, CLM-07, CLM-11, CLM-19, CLM-23, CLM-26, CLM-29, CLM-31, CLM-32, CLM-34, CLM-39, CLM-49, CLM-51, CLM-56
+- Sources: SRC-02, SRC-03, SRC-07, SRC-08, SRC-09, SRC-18, SRC-19, SRC-26, SRC-27 (10 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Plaud (`plaud`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: boris-stastny
+- Claims: CLM-07, CLM-17
+- Sources: SRC-02, SRC-03, SRC-08 (3 independent source families)
+- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Národní finanční prokuratura (PNF, Francie) (`pnf`)
@@ -585,6 +3575,16 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
   - edge-trestniozn-policie (trestniozn -> policie, "odloženo policií pro promlčení — procesní krok, ne rozhodnutí o vině; nepravomocné", dossier: macinka-turek)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Poslanecká sněmovna (`poslanecka-snemovna`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: andrej-babis, jaromir-zuna, jaroslav-faltynek, jeronym-tejc, karel-havlicek, oto-klempir
+- Claims: CLM-01, CLM-07, CLM-30, CLM-31, CLM-33, CLM-38, CLM-44, CLM-45, CLM-49, CLM-50, CLM-77, CLM-85
+- Sources: SRC-01, SRC-03, SRC-09, SRC-15, SRC-17, SRC-18, SRC-21, SRC-22, SRC-54, SRC-60, SRC-61 (13 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Městská část Praha 3 (`praha3`)
 
 - Type: public_institution
@@ -605,6 +3605,226 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
 - Sources: SRC-60 (1 independent source family)
 - Relations: 
   - edge-agrofert-preol (agrofert -> preol, "největší tuzemský producent biopaliv ve skupině (kontext sporu o podporu biopaliv 2015)", dossier: andrej-babis)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Přísaha (`prisaha`)
+
+- Type: political_party
+- Status: not_authorized
+- Appears in: macinka-turek
+- Claims: CLM-01, CLM-03
+- Sources: SRC-11, SRC-12, SRC-13 (3 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## PROFID EHRA (mezinárodní klinická studie) (`profid-ehra`)
+
+- Type: event
+- Status: not_authorized
+- Appears in: adam-vojtech
+- Claims: CLM-07
+- Sources: SRC-04 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Program INOVACE (`program-inovace-op-pik`)
+
+- Type: legal_or_administrative_process
+- Status: not_authorized
+- Appears in: andrej-babis, karel-havlicek
+- Claims: CLM-19
+- Sources: SRC-11, SRC-36 (3 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Program rozvoje venkova (PRV) (`program-rozvoje-venkova`)
+
+- Type: legal_or_administrative_process
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-18, CLM-48, CLM-66, CLM-83
+- Sources: SRC-31, SRC-44, SRC-59 (3 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Program rozvoje venkova 2014–2020 (`program-rozvoje-venkova-2014-2020`)
+
+- Type: legal_or_administrative_process
+- Status: not_authorized
+- Appears in: martin-sebestyan
+- Claims: CLM-35
+- Sources: SRC-24 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Program «Zlepšení životních podmínek hospodářských zvířat» (`program-zlepseni-podminek-hospodarskych-zvirat`)
+
+- Type: legal_or_administrative_process
+- Status: not_authorized
+- Appears in: martin-sebestyan
+- Claims: CLM-39
+- Sources: SRC-18 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Rada EU pro konkurenceschopnost (COMPET) (`rada-eu-pro-konkurenceschopnost`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: karel-havlicek
+- Claims: CLM-40
+- Sources: SRC-26 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Radek Bartoš (`radek-bartos`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: jeronym-tejc
+- Claims: CLM-03
+- Sources: SRC-02, SRC-04 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Radek Mátl (`radek-matl`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: ivan-bednarik
+- Claims: CLM-31
+- Sources: SRC-24, SRC-25 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Radim Dragoun (`radim-dragoun`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: jeronym-tejc
+- Claims: CLM-21
+- Sources: SRC-11, SRC-12 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Radim Ivan (`radim-ivan`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: zuzana-mrazova
+- Claims: CLM-16
+- Sources: SRC-06, SRC-11 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Radomír Daňhel (`radomir-danhel`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: jeronym-tejc
+- Claims: CLM-19, CLM-24
+- Sources: SRC-11, SRC-12, SRC-13 (3 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Radovan Krejčíř (`radovan-krejcir`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: macinka-turek, richard-chlad
+- Claims: CLM-08, CLM-36
+- Sources: SRC-02, SRC-42 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Ředitelství vodních cest (`reditelstvi-vodnich-cest`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: ivan-bednarik
+- Claims: CLM-11
+- Sources: SRC-08 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Renáta Zajíčková (`renata-zajickova`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: boris-stastny, robert-plaga
+- Claims: CLM-05, CLM-21, CLM-54
+- Sources: SRC-02, SRC-09, SRC-21 (3 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## René Zavoral (`rene-zavoral`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: oto-klempir
+- Claims: CLM-16
+- Sources: none (0 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Rezignace ve vedení Českých drah (únor 2022) (`rezignace-vedeni-cd-2022`)
+
+- Type: event
+- Status: not_authorized
+- Appears in: ivan-bednarik
+- Claims: CLM-02, CLM-03, CLM-41, CLM-42, CLM-43, CLM-44, CLM-45, CLM-46
+- Sources: SRC-02, SRC-13, SRC-19, SRC-20, SRC-21, SRC-29 (6 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Robert Špalek (`robert-spalek`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: karel-havlicek
+- Claims: CLM-39
+- Sources: SRC-25 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Roman Havlík (`roman-havlik`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: adam-vojtech
+- Claims: CLM-09, CLM-33
+- Sources: SRC-02, SRC-20 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Roman Prymula (`roman-prymula`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: adam-vojtech
+- Claims: CLM-46
+- Sources: SRC-28 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Rozpočtový výbor Poslanecké sněmovny (`rozpoctovy-vybor-psp`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: adam-vojtech
+- Claims: CLM-37
+- Sources: SRC-23 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Ředitelství silnic a dálnic (ŘSD) (`rsd`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: ivan-bednarik
+- Claims: CLM-11, CLM-31
+- Sources: SRC-07, SRC-08, SRC-24, SRC-25 (4 independent source families)
+- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## RSVP Trust (`rsvp-trust`)
@@ -630,6 +3850,16 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
   - edge-sady-nss (sady-cz -> nss, "NSS 8/2025 zamítl kasační stížnost: rozhodný je stav v době podání žádosti", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Schrom Farms (`schrom-farms`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: martin-sebestyan
+- Claims: CLM-34
+- Sources: SRC-16 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## SCP Bigaud (Monako) (`scp-bigaud`)
 
 - Type: company
@@ -639,6 +3869,46 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
 - Sources: SRC-13 (1 independent source family)
 - Relations: 
   - edge-boyne-bigaud (boyne-holding -> scp-bigaud, "financování pořízení pozemku; od 8/2019 SCP Bigaud ze 100 % vlastněna I.M.O.D.I.M.", dossier: andrej-babis)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Senát Parlamentu ČR (`senat-pcr`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: adam-vojtech, alena-schillerova, jaromir-zuna, karel-havlicek, lubomir-metnar
+- Claims: CLM-07, CLM-13, CLM-14, CLM-15, CLM-16, CLM-28, CLM-30, CLM-36, CLM-37, CLM-38
+- Sources: SRC-02, SRC-05, SRC-06, SRC-17, SRC-21, SRC-22, SRC-23, SRC-25, SRC-27, SRC-28 (10 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Advokátní kancelář Šenkýř Pánik (`senkyr-panik`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: tunde-bartha
+- Claims: CLM-03
+- Sources: SRC-02, SRC-05 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Setuza (`setuza`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-53
+- Sources: SRC-25 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Seyed Majid Ghafeleh Bashi (`seyed-majid-ghafeleh-bashi`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: macinka-turek
+- Claims: CLM-33
+- Sources: SRC-36, SRC-37 (2 independent source families)
+- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Seznam.cz (`seznam-cz`)
@@ -652,6 +3922,76 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
   - edge-seznam-zaloba (seznam-cz -> zaloba-seznam-2026, "žalobce", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Státní fond dopravní infrastruktury (SFDI) (`sfdi`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: ivan-bednarik
+- Claims: CLM-05, CLM-09, CLM-11, CLM-12, CLM-13, CLM-29, CLM-31
+- Sources: SRC-03, SRC-05, SRC-07, SRC-08, SRC-10, SRC-22, SRC-23, SRC-24, SRC-25 (9 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Shenzhen Smart Connect Technology (`shenzhen-smart-connect-technology`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: boris-stastny
+- Claims: CLM-17
+- Sources: SRC-08 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Skupina Sindat (`sindat`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: karel-havlicek
+- Claims: none
+- Sources: SRC-01 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Škoda Auto (`skoda-auto`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: karel-havlicek
+- Claims: CLM-46
+- Sources: SRC-31 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Sociálně klimatický fond (`socialne-klimaticky-fond`)
+
+- Type: legal_or_administrative_process
+- Status: not_authorized
+- Appears in: igor-cerveny
+- Claims: CLM-47
+- Sources: SRC-29, SRC-34 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Soudcovská unie ČR (`soudcovska-unie`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: jeronym-tejc
+- Claims: CLM-51
+- Sources: SRC-25 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Space Plan (`space-plan`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: igor-cerveny
+- Claims: CLM-36
+- Sources: SRC-20 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## SPD (`spd`)
 
 - Type: political_party
@@ -661,6 +4001,66 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
 - Sources: SRC-01 (1 independent source family)
 - Relations: 
   - edge-okamura-spd (okamura -> spd, "předseda hnutí", dossier: tomio-okamura)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Společnost pro obranu svobody projevu (`spolecnost-pro-obranu-svobody-projevu`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: tomio-okamura
+- Claims: CLM-33
+- Sources: SRC-24 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Spor o pozemky a majetkové vypořádání ČD vs. Správa železnic (`spor-cd-sprava-zeleznic-pozemky`)
+
+- Type: controversy
+- Status: not_authorized
+- Appears in: ivan-bednarik
+- Claims: CLM-40, CLM-41, CLM-42, CLM-47
+- Sources: SRC-12, SRC-13, SRC-20, SRC-21 (4 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Spor o koncepci armády (2026) (`spor-o-koncepci-armady-2026`)
+
+- Type: controversy
+- Status: not_authorized
+- Appears in: jaromir-zuna
+- Claims: CLM-17, CLM-18, CLM-19, CLM-32, CLM-33, CLM-34, CLM-35, CLM-36, CLM-37, CLM-38, CLM-39, CLM-40
+- Sources: SRC-12, SRC-13, SRC-18, SRC-19, SRC-29, SRC-30, SRC-31, SRC-32 (8 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Spor o volbu náčelníka Generálního štábu (2026) (`spor-o-nacelnika-gs-2026`)
+
+- Type: controversy
+- Status: not_authorized
+- Appears in: jaromir-zuna
+- Claims: CLM-13, CLM-14, CLM-15, CLM-16, CLM-20, CLM-25, CLM-26
+- Sources: SRC-09, SRC-10, SRC-11, SRC-14, SRC-21, SRC-25, SRC-27, SRC-28 (8 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Spor o soulad státního rozpočtu 2026 se zákonem o rozpočtové odpovědnosti (`spor-o-statni-rozpocet-2026`)
+
+- Type: controversy
+- Status: not_authorized
+- Appears in: alena-schillerova
+- Claims: CLM-03, CLM-04, CLM-24, CLM-25
+- Sources: SRC-02, SRC-18 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Škrt obranného rozpočtu 2026 a spor o 2 % NATO (`spor-obranny-rozpocet-2026`)
+
+- Type: controversy
+- Status: not_authorized
+- Appears in: jaromir-zuna
+- Claims: CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07, CLM-41, CLM-42, CLM-43, CLM-44, CLM-45, CLM-46, CLM-47, CLM-48
+- Sources: SRC-02, SRC-03, SRC-04, SRC-05, SRC-15, SRC-16, SRC-17, SRC-20, SRC-23, SRC-24, SRC-33 (11 independent source families)
+- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Správa železnic (`sprava-zeleznic`)
@@ -674,6 +4074,36 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
   - edge-bednarik-sprava-zeleznic (bednarik -> sprava-zeleznic, "spor o pozemky a reforma úspor (2026)", dossier: ivan-bednarik)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## SPV Pelhřimov (`spv-pelhrimov`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-63
+- Sources: SRC-42 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## STAN (`stan`)
+
+- Type: political_party
+- Status: not_authorized
+- Appears in: andrej-babis, boris-stastny, jaromir-zuna, jeronym-tejc, karel-havlicek, oto-klempir
+- Claims: CLM-09, CLM-13, CLM-17, CLM-38, CLM-45, CLM-47
+- Sources: SRC-02, SRC-06, SRC-07, SRC-16, SRC-17, SRC-18, SRC-23 (8 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Stanislav Kazbunda (`stanislav-kazbunda`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: boris-stastny
+- Claims: CLM-19
+- Sources: SRC-07 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Státní zastupitelství (`statni-zastupitelstvi`)
 
 - Type: public_institution
@@ -683,6 +4113,86 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
 - Sources: SRC-31, SRC-54 (2 independent source families)
 - Relations: 
   - edge-trestniozn-statnizastupitelstvi (trestniozn -> statni-zastupitelstvi, "OSZ pro Prahu 4 odložení oznámilo; o stížnosti ženy rozhoduje státní zástupkyně", dossier: macinka-turek)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Stavební úřad Prahy 15 (`stavebni-urad-praha-15`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: macinka-turek
+- Claims: CLM-30
+- Sources: SRC-33 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Štěpán Kohlschütter (`stepan-kohlschutter`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: zuzana-mrazova
+- Claims: CLM-33
+- Sources: SRC-21, SRC-29 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Štěpán Slovák (`stepan-slovak`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: adam-vojtech
+- Claims: CLM-37
+- Sources: SRC-23 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## PRO (Právo Respekt Odbornost) (`strana-pro`)
+
+- Type: political_party
+- Status: not_authorized
+- Appears in: adam-vojtech
+- Claims: CLM-49
+- Sources: SRC-29 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Středočeský kraj (`stredocesky-kraj`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-73
+- Sources: SRC-51 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Summit NATO v Ankaře (7.–8. 7. 2026) (`summit-nato-ankara-2026`)
+
+- Type: event
+- Status: not_authorized
+- Appears in: jaromir-zuna, jeronym-tejc
+- Claims: CLM-14, CLM-41, CLM-42
+- Sources: SRC-08, SRC-09, SRC-17, SRC-20, SRC-21, SRC-31, SRC-33 (7 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Svaz obchodu a cestovního ruchu ČR (`svaz-obchodu-a-cestovniho-ruchu`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: adam-vojtech
+- Claims: CLM-43
+- Sources: SRC-24 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Svaz průmyslu a dopravy ČR (`svaz-prumyslu-a-dopravy`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: adam-vojtech
+- Claims: CLM-43
+- Sources: SRC-24 (1 independent source family)
+- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## SynBiol (`synbiol`)
@@ -724,6 +4234,176 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
   - edge-zapperclub-szpi (zapper-club -> szpi, "odebrání certifikátu", dossier: macinka-turek)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Tom Philipp (`tom-philipp`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: adam-vojtech
+- Claims: CLM-49
+- Sources: SRC-29 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Tomáš Cabal (`tomas-cabal`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: macinka-turek, petr-vencalek
+- Claims: CLM-03, CLM-47
+- Sources: SRC-01, SRC-17 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Tomáš Dubský (`tomas-dubsky`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: martin-sebestyan
+- Claims: CLM-17
+- Sources: SRC-08 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Tomáš Kolář (`tomas-kolar`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: adam-vojtech
+- Claims: CLM-43
+- Sources: SRC-24 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Tomáš Pospiszyl (`tomas-pospiszyl`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: oto-klempir
+- Claims: CLM-26
+- Sources: SRC-04 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Tomáš Prouza (`tomas-prouza`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: adam-vojtech
+- Claims: CLM-43
+- Sources: SRC-24 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Tomáš Tóth (`tomas-toth`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: ivan-bednarik
+- Claims: CLM-30
+- Sources: SRC-22, SRC-25, SRC-27 (3 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Tomáš Zatloukal (`tomas-zatloukal`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: robert-plaga
+- Claims: CLM-08, CLM-09, CLM-23
+- Sources: SRC-02, SRC-04, SRC-14, SRC-23 (4 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Tomáš Zdechovský (`tomas-zdechovsky`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: andrej-babis, boris-stastny, karel-havlicek
+- Claims: CLM-09, CLM-34, CLM-39, CLM-42
+- Sources: SRC-05, SRC-16, SRC-18 (4 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## TOP 09 (`top-09`)
+
+- Type: political_party
+- Status: not_authorized
+- Appears in: andrej-babis, boris-stastny, jaromir-zuna, karel-havlicek
+- Claims: CLM-09, CLM-32, CLM-39
+- Sources: SRC-02, SRC-06, SRC-18 (3 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Transgas s.r.o. (`transgas-sro`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: macinka-turek
+- Claims: CLM-20
+- Sources: SRC-23 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Transparency International ČR (`transparency-international`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: andrej-babis, martin-sebestyan, tomio-okamura
+- Claims: CLM-06, CLM-12, CLM-13, CLM-14, CLM-31, CLM-32
+- Sources: SRC-02, SRC-03, SRC-05, SRC-17, SRC-20, SRC-23 (7 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Transport & Environment (`transport-environment`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: karel-havlicek
+- Claims: none
+- Sources: SRC-30 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Trestní oznámení Motoristů sobě na Deník N (2025–2026) (`trestni-oznameni-motoriste-denik-n`)
+
+- Type: legal_or_administrative_process
+- Status: not_authorized
+- Appears in: macinka-turek
+- Claims: CLM-19, CLM-42
+- Sources: SRC-21, SRC-47, SRC-48 (3 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Trestní oznámení STAN kvůli střetu zájmů na MPSV (2026) (`trestni-oznameni-stan-mpsv`)
+
+- Type: legal_or_administrative_process
+- Status: not_authorized
+- Appears in: ales-juchelka
+- Claims: CLM-13, CLM-15, CLM-40, CLM-41
+- Sources: SRC-08, SRC-09, SRC-11, SRC-14, SRC-15 (5 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Trestní oznámení ministra Tejce v bitcoinové kauze (2026) (`trestni-oznameni-tejce-2026`)
+
+- Type: legal_or_administrative_process
+- Status: not_authorized
+- Appears in: jeronym-tejc
+- Claims: CLM-02, CLM-03, CLM-04, CLM-23
+- Sources: SRC-02, SRC-03, SRC-04, SRC-11 (4 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Trestní stíhání v bitcoinové kauze (Blažek, Daňhel, Titz) (`trestni-stihani-bitcoinova-kauza-2026`)
+
+- Type: legal_or_administrative_process
+- Status: not_authorized
+- Appears in: jeronym-tejc
+- Claims: CLM-19, CLM-20, CLM-21, CLM-22, CLM-24, CLM-25, CLM-29
+- Sources: SRC-11, SRC-12, SRC-13, SRC-14 (4 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Trestní oznámení (2025) (`trestniozn`)
 
 - Type: legal_or_administrative_process
@@ -735,6 +4415,86 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
   - edge-trestniozn-policie (trestniozn -> policie, "odloženo policií pro promlčení — procesní krok, ne rozhodnutí o vině; nepravomocné", dossier: macinka-turek)
   - edge-trestniozn-statnizastupitelstvi (trestniozn -> statni-zastupitelstvi, "OSZ pro Prahu 4 odložení oznámilo; o stížnosti ženy rozhoduje státní zástupkyně", dossier: macinka-turek)
   - edge-turek-trestniozn (turek -> trestniozn, "subjekt (oznámení 6/2025, odloženo pro promlčení 5/2026)", dossier: macinka-turek)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Učitelská platforma (`ucitelska-platforma`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: robert-plaga
+- Claims: CLM-27, CLM-28, CLM-51
+- Sources: SRC-21, SRC-23, SRC-28 (3 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Úřad pro dohled nad hospodařením politických stran a politických hnutí (ÚDHPSH) (`udhpsh`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: macinka-turek
+- Claims: CLM-35
+- Sources: SRC-40 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Uměleckohistorická společnost (UHS) (`umeleckohistoricka-spolecnost`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: oto-klempir
+- Claims: CLM-27
+- Sources: SRC-09 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Unie rodičů (`unie-rodicu`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: robert-plaga
+- Claims: CLM-28, CLM-53
+- Sources: SRC-21, SRC-23 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Unie státních zástupců (`unie-statnich-zastupcu`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: tomio-okamura
+- Claims: CLM-32
+- Sources: SRC-23 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Univerzita Karlova (`univerzita-karlova`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: alena-schillerova
+- Claims: CLM-10
+- Sources: SRC-19 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Úřad pro rozvoj území (`urad-pro-rozvoj-uzemi`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: karel-havlicek, zuzana-mrazova
+- Claims: CLM-47
+- Sources: SRC-18, SRC-21, SRC-23, SRC-30 (5 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Úřad vlády ČR (`urad-vlady`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: andrej-babis, boris-stastny, jaromir-zuna, jeronym-tejc, karel-havlicek, oto-klempir, tunde-bartha
+- Claims: CLM-01, CLM-02, CLM-06, CLM-07, CLM-08, CLM-09, CLM-10, CLM-12, CLM-15, CLM-16, CLM-18, CLM-35
+- Sources: SRC-01, SRC-02, SRC-03, SRC-04, SRC-05, SRC-06, SRC-07, SRC-08, SRC-10, SRC-13, SRC-14 (12 independent source families)
+- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Ústavní soud (`ustavni-soud`)
@@ -749,6 +4509,96 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
   - edge-vodnanska-ustavnisoud (vodnanska-drubez -> ustavni-soud, "ústavní stížnost odmítnuta 1/2026 (dotace 75 mil. Kč) — spor o nárok na dotaci, ne o vině", dossier: andrej-babis)
   - edge-tejc-ustavni-soud (tejc -> ustavni-soud, "spor o předběžné opatření Ústavního soudu v kompetenční žalobě prezidenta", dossier: jeronym-tejc)
   - edge-okamura-ustavni-soud (okamura -> ustavni-soud, "SPD ohlásilo připravenost obrátit se na Ústavní soud (odvolání, k datu rešerše nepodáno)", dossier: tomio-okamura)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Václav Klaus (mladší) (`vaclav-klaus-ml`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: macinka-turek
+- Claims: CLM-33
+- Sources: SRC-37 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Václav Nebeský (`vaclav-nebesky`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: ivan-bednarik
+- Claims: CLM-02, CLM-43
+- Sources: SRC-02, SRC-19, SRC-20, SRC-29 (4 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Václav Pláteník (`vaclav-platenik`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: adam-vojtech
+- Claims: CLM-42
+- Sources: SRC-22 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Veronika Kovářová (`veronika-kovarova`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: karel-havlicek, zuzana-mrazova
+- Claims: CLM-34, CLM-50
+- Sources: SRC-15, SRC-19 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Veronika Lukášová (`veronika-lukasova`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: zuzana-mrazova
+- Claims: CLM-06, CLM-22, CLM-25
+- Sources: SRC-02, SRC-04, SRC-05, SRC-13, SRC-20 (5 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Veronika Vrecionová (`veronika-vrecionova`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: martin-sebestyan
+- Claims: CLM-41
+- Sources: SRC-20 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Vězeňská služba ČR (`vezenska-sluzba`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: jeronym-tejc
+- Claims: none
+- Sources: SRC-01 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Viktorie Plívová (`viktorie-plivova`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: adam-vojtech
+- Claims: CLM-31
+- Sources: SRC-19 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Vít Rakušan (`vit-rakusan`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: andrej-babis, boris-stastny, martin-sebestyan, oto-klempir
+- Claims: CLM-06, CLM-17, CLM-23, CLM-38
+- Sources: SRC-02, SRC-09, SRC-17, SRC-18 (5 independent source families)
+- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Vláda ČR (`vlada`)
@@ -778,6 +4628,16 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
   - edge-bartha-vlada (bartha -> vlada, "pověřena řízením 2018–2021; 15. 12. 2025 jmenována vedoucí Úřadu vlády (primární úřední zdroj)", dossier: tunde-bartha)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Vlastimil Válek (`vlastimil-valek`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: adam-vojtech
+- Claims: CLM-49
+- Sources: SRC-29 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Vodňanská drůbež (`vodnanska-drubez`)
 
 - Type: company
@@ -789,6 +4649,196 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
   - edge-agrofert-vodnanska (agrofert -> vodnanska-drubez, "firma ze skupiny", dossier: andrej-babis)
   - edge-vodnanska-szif (vodnanska-drubez -> szif, "SZIF ukončil administraci žádosti (2023); NSS 1/2025 vyhověl kasační stížnosti fondu", dossier: andrej-babis)
   - edge-vodnanska-ustavnisoud (vodnanska-drubez -> ustavni-soud, "ústavní stížnost odmítnuta 1/2026 (dotace 75 mil. Kč) — spor o nárok na dotaci, ne o vině", dossier: andrej-babis)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Vojtěch Faltus (`vojtech-faltus`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: karel-havlicek
+- Claims: CLM-14
+- Sources: SRC-07, SRC-08 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Vojtěch Krňanský (`vojtech-krnansky`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: karel-havlicek
+- Claims: none
+- Sources: SRC-25 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Vojtěch Munzar (`vojtech-munzar`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: adam-vojtech
+- Claims: CLM-39
+- Sources: SRC-21 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Volkswagen (`volkswagen`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: karel-havlicek
+- Claims: none
+- Sources: SRC-27 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Vrchní soud v Praze (`vrchni-soud-praha`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-01
+- Sources: SRC-01, SRC-08, SRC-27 (3 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Vrchní státní zastupitelství v Olomouci (`vrchni-statni-zastupitelstvi-olomouc`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: adam-vojtech, jeronym-tejc
+- Claims: CLM-02, CLM-03, CLM-21, CLM-23, CLM-29
+- Sources: SRC-02, SRC-03, SRC-04, SRC-11, SRC-12, SRC-13, SRC-15 (7 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Vrchní státní zastupitelství v Praze (`vrchni-statni-zastupitelstvi-praha`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: martin-sebestyan
+- Claims: CLM-19
+- Sources: SRC-08 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## VŠB — Technická univerzita Ostrava (`vsb-tu-ostrava`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: ales-juchelka
+- Claims: CLM-01
+- Sources: SRC-01 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Vysoká škola ekonomická v Praze (VŠE) (`vse-praha`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: karel-havlicek
+- Claims: none
+- Sources: SRC-01 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Výbor pro obranu Poslanecké sněmovny (`vybor-pro-obranu-psp`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: jaromir-zuna
+- Claims: CLM-25, CLM-26, CLM-47
+- Sources: SRC-16, SRC-23, SRC-25 (3 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Výbor pro rozpočtové prognózy (`vybor-pro-rozpoctove-prognozy`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: alena-schillerova
+- Claims: CLM-28
+- Sources: SRC-15 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Výbor pro vědu, vzdělávání, mládež a sport Poslanecké sněmovny (`vybor-pro-vedu-vzdelavani-psp`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: robert-plaga
+- Claims: CLM-32
+- Sources: SRC-24 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Výbor pro zdravotnictví Poslanecké sněmovny (`vybor-pro-zdravotnictvi-psp`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: adam-vojtech
+- Claims: CLM-48, CLM-49, CLM-50
+- Sources: SRC-29, SRC-30 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Výkrm Tagrea (`vykrm-tagrea`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: andrej-babis
+- Claims: CLM-63, CLM-64, CLM-65
+- Sources: SRC-42, SRC-43, SRC-45 (3 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Všeobecná zdravotní pojišťovna (VZP) (`vzp`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: adam-vojtech
+- Claims: CLM-21, CLM-31
+- Sources: SRC-12, SRC-19 (2 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## William Todts (`william-todts`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: karel-havlicek
+- Claims: none
+- Sources: SRC-30 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Young & Rubicam (`young-rubicam`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: oto-klempir
+- Claims: none
+- Sources: SRC-01 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Zákon č. 248/2005 Sb. o rozhlasových a televizních poplatcích (`zakon-248-2005`)
+
+- Type: legal_or_administrative_process
+- Status: not_authorized
+- Appears in: oto-klempir
+- Claims: CLM-10
+- Sources: none (0 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Zákon o financování médií veřejné služby (`zakon-o-financovani-medii-verejne-sluzby`)
+
+- Type: legal_or_administrative_process
+- Status: not_authorized
+- Appears in: oto-klempir
+- Claims: CLM-10, CLM-18
+- Sources: SRC-13 (1 independent source family)
+- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Žaloba Seznam.cz na ochranu pověsti (2026) (`zaloba-seznam-2026`)
@@ -823,5 +4873,95 @@ Generated from 66 context entities across 24 dossier(s). Regenerate with `npm ru
 - Appears in: —
 - Claims: none
 - Sources: none (0 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Zdeněk Hřib (`zdenek-hrib`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: alena-schillerova, andrej-babis, karel-havlicek, zuzana-mrazova
+- Claims: CLM-06, CLM-11, CLM-16, CLM-39
+- Sources: SRC-02, SRC-06, SRC-08, SRC-09, SRC-11, SRC-19 (7 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Zdeněk Kasal (`zdenek-kasal`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: jeronym-tejc
+- Claims: CLM-25
+- Sources: SRC-14 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Zdeněk Nekula (`zdenek-nekula`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: martin-sebestyan
+- Claims: CLM-04, CLM-08
+- Sources: SRC-04, SRC-06, SRC-26 (3 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Zdeněk Petzl (`zdenek-petzl`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: karel-havlicek
+- Claims: CLM-45
+- Sources: SRC-29 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Zdenka Němečková Crkvenjaš (`zdenka-nemeckova-crkvenjas`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: adam-vojtech
+- Claims: CLM-49
+- Sources: SRC-29 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Zdravá firma (program VZP) (`zdrava-firma`)
+
+- Type: legal_or_administrative_process
+- Status: not_authorized
+- Appears in: adam-vojtech
+- Claims: CLM-21
+- Sources: SRC-12 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Železnice Slovenskej republiky (ŽSR) (`zeleznice-slovenskej-republiky`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: ivan-bednarik
+- Claims: CLM-01
+- Sources: SRC-01 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Zemědělský svaz ČR (`zemedelsky-svaz`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: martin-sebestyan
+- Claims: CLM-42
+- Sources: SRC-21 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Žhářský útok ve Vítkově (2009) (`zharsky-utok-vitkov-2009`)
+
+- Type: event
+- Status: not_authorized
+- Appears in: macinka-turek
+- Claims: CLM-07
+- Sources: SRC-15 (1 independent source family)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier

@@ -1,0 +1,42 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/farma-capi-hnizdo",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "farma-capi-hnizdo",
+ "entityId": "farma-capi-hnizdo",
+ "title": "Farma Čapí hnízdo",
+ "entityType": "company",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "andrej-babis"
+ ],
+ "order": 126,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-49",
+   "CLM-77",
+   "CLM-78"
+  ],
+  "sourceRefs": [
+   "SRC-23",
+   "SRC-54",
+   "SRC-55"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Společnost čerpající 50mil. dotaci po vyvedení ze skupiny Agrofert; odlišná od existující entity capi-hnizdo (kauza). Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (andrej-babis). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

@@ -1,0 +1,38 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/zeleznice-slovenskej-republiky",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "zeleznice-slovenskej-republiky",
+ "entityId": "zeleznice-slovenskej-republiky",
+ "title": "Železnice Slovenskej republiky (ŽSR)",
+ "entityType": "company",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "ivan-bednarik"
+ ],
+ "order": 461,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-01"
+  ],
+  "sourceRefs": [
+   "SRC-01"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Bednárik generálním ředitelem ŽSR od 15. 5. 2025 před nástupem do vlády; předtím poradce slovenského ministra dopravy (ministr nejmenován). Biografický údaj. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (ivan-bednarik). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

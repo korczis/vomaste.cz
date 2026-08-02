@@ -1,0 +1,57 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/nato",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "nato",
+ "entityId": "nato",
+ "title": "NATO (Severoatlantická aliance)",
+ "entityType": "organization",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "alena-schillerova",
+  "jaromir-zuna",
+  "jeronym-tejc"
+ ],
+ "order": 298,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-06",
+   "CLM-14",
+   "CLM-23",
+   "CLM-27",
+   "CLM-39",
+   "CLM-41",
+   "CLM-42",
+   "CLM-46",
+   "CLM-53"
+  ],
+  "sourceRefs": [
+   "SRC-05",
+   "SRC-08",
+   "SRC-09",
+   "SRC-10",
+   "SRC-15",
+   "SRC-17",
+   "SRC-20",
+   "SRC-21",
+   "SRC-31",
+   "SRC-33"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Alianční závazek 2 % HDP, summit v Ankaře 2026, kompetenční spor o účast prezidenta. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (alena-schillerova, jaromir-zuna, jeronym-tejc). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

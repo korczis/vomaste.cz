@@ -1,0 +1,44 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/trestni-oznameni-tejce-2026",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "trestni-oznameni-tejce-2026",
+ "entityId": "trestni-oznameni-tejce-2026",
+ "title": "Trestní oznámení ministra Tejce v bitcoinové kauze (2026)",
+ "entityType": "legal_or_administrative_process",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "jeronym-tejc"
+ ],
+ "order": 416,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-02",
+   "CLM-03",
+   "CLM-04",
+   "CLM-23"
+  ],
+  "sourceRefs": [
+   "SRC-02",
+   "SRC-03",
+   "SRC-04",
+   "SRC-11"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Trestní oznámení podané po interním auditu (doručeno VSZ Olomouc 23. 4. 2026) pro podezření z porušení povinnosti při správě cizího majetku a zneužití pravomoci; není to obvinění konkrétní osoby. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (jeronym-tejc). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

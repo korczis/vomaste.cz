@@ -1,0 +1,42 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/josef-flek",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "josef-flek",
+ "entityId": "josef-flek",
+ "title": "Josef Flek",
+ "entityType": "person",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "jaromir-zuna"
+ ],
+ "order": 179,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-09",
+   "CLM-47"
+  ],
+  "sourceRefs": [
+   "SRC-06",
+   "SRC-16",
+   "SRC-23",
+   "SRC-24"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Poslanec STAN, předseda sněmovního výboru pro obranu; kritik „cenzury“ rozhovoru s prezidentem i výše obranného rozpočtu. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (jaromir-zuna). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

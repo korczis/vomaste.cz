@@ -1,0 +1,41 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/osz-praha-4",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "osz-praha-4",
+ "entityId": "osz-praha-4",
+ "title": "Obvodní státní zastupitelství pro Prahu 4",
+ "entityType": "public_institution",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "macinka-turek"
+ ],
+ "order": 323,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-27",
+   "CLM-45"
+  ],
+  "sourceRefs": [
+   "SRC-31",
+   "SRC-53",
+   "SRC-54"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Konkrétní OSZ (vedoucí Jan Vychyta), které oznámilo odložení trestního oznámení na Turka; obecná entita statni-zastupitelstvi existuje, tato je specifická. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (macinka-turek). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

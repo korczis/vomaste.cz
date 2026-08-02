@@ -1,0 +1,40 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/amsp-cr",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "amsp-cr",
+ "entityId": "amsp-cr",
+ "title": "Asociace malých a středních podniků a živnostníků ČR",
+ "entityType": "organization",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "adam-vojtech",
+  "karel-havlicek"
+ ],
+ "order": 65,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-43"
+  ],
+  "sourceRefs": [
+   "SRC-01",
+   "SRC-24"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Proti Vojtěchovu benefitovému návrhu (byrokracie). Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (adam-vojtech, karel-havlicek). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

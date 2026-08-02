@@ -1,0 +1,45 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/narodni-sportovni-agentura",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "narodni-sportovni-agentura",
+ "entityId": "narodni-sportovni-agentura",
+ "title": "Národní sportovní agentura (NSA)",
+ "entityType": "public_institution",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "boris-stastny"
+ ],
+ "order": 295,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-22",
+   "CLM-24",
+   "CLM-27",
+   "CLM-30"
+  ],
+  "sourceRefs": [
+   "SRC-11",
+   "SRC-12",
+   "SRC-13",
+   "SRC-14",
+   "SRC-15"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Státní agentura pro sport — kauza odvolání vedení (Šebek, Horák), pověření Jebouska, jmenování Kováře a ohlášený interní audit. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (boris-stastny). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

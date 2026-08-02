@@ -1,0 +1,51 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/spor-o-nacelnika-gs-2026",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "spor-o-nacelnika-gs-2026",
+ "entityId": "spor-o-nacelnika-gs-2026",
+ "title": "Spor o volbu náčelníka Generálního štábu (2026)",
+ "entityType": "controversy",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "jaromir-zuna"
+ ],
+ "order": 387,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-13",
+   "CLM-14",
+   "CLM-15",
+   "CLM-16",
+   "CLM-20",
+   "CLM-25",
+   "CLM-26"
+  ],
+  "sourceRefs": [
+   "SRC-09",
+   "SRC-10",
+   "SRC-11",
+   "SRC-14",
+   "SRC-21",
+   "SRC-25",
+   "SRC-27",
+   "SRC-28"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Zůna jako jediný člen vlády hlasoval proti Hlaváčovi; Vondra vyzval k rezignaci, Okamura ministra hájil; Pavel Hlaváče jmenoval. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (jaromir-zuna). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

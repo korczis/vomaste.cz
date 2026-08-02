@@ -1,0 +1,39 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/mandatovy-a-imunitni-vybor-psp",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "mandatovy-a-imunitni-vybor-psp",
+ "entityId": "mandatovy-a-imunitni-vybor-psp",
+ "title": "Mandátový a imunitní výbor Poslanecké sněmovny",
+ "entityType": "public_institution",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "tomio-okamura"
+ ],
+ "order": 241,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-29"
+  ],
+  "sourceRefs": [
+   "SRC-19",
+   "SRC-20"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Nedoporučil vydání Okamury k trestnímu stíhání (2026). Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (tomio-okamura). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

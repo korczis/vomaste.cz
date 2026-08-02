@@ -1,0 +1,42 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/pavel-samal",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "pavel-samal",
+ "entityId": "pavel-samal",
+ "title": "Pavel Šámal",
+ "entityType": "person",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "jeronym-tejc"
+ ],
+ "order": 330,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-17",
+   "CLM-42"
+  ],
+  "sourceRefs": [
+   "SRC-10",
+   "SRC-21",
+   "SRC-23",
+   "SRC-25"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Ústavní soudce, zpravodaj kompetenčního sporu Pl. ÚS 16/26; vláda žádá jeho vyloučení. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (jeronym-tejc). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

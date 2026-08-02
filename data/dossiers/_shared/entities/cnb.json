@@ -1,0 +1,46 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/cnb",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "cnb",
+ "entityId": "cnb",
+ "title": "Česká národní banka",
+ "entityType": "public_institution",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "alena-schillerova",
+  "lubomir-metnar"
+ ],
+ "order": 98,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-02",
+   "CLM-08",
+   "CLM-26"
+  ],
+  "sourceRefs": [
+   "SRC-01",
+   "SRC-02",
+   "SRC-03",
+   "SRC-04",
+   "SRC-05",
+   "SRC-16"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Policejní ochrana má být podle Metnarova návrhu přesměrována z NKÚ na sídlo ČNB; v schillerové dossieru srovnání prognóz NRR vs. trh a ČNB. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (alena-schillerova, lubomir-metnar). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

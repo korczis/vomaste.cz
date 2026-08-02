@@ -1,0 +1,49 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/vrchni-statni-zastupitelstvi-olomouc",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "vrchni-statni-zastupitelstvi-olomouc",
+ "entityId": "vrchni-statni-zastupitelstvi-olomouc",
+ "title": "Vrchní státní zastupitelství v Olomouci",
+ "entityType": "public_institution",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "adam-vojtech",
+  "jeronym-tejc"
+ ],
+ "order": 441,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-02",
+   "CLM-03",
+   "CLM-21",
+   "CLM-23",
+   "CLM-29"
+  ],
+  "sourceRefs": [
+   "SRC-02",
+   "SRC-03",
+   "SRC-04",
+   "SRC-11",
+   "SRC-12",
+   "SRC-13",
+   "SRC-15"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Přijalo Tejcovo trestní oznámení (bitcoiny), dozoruje bitcoinovou kauzu i kauzu defibrilátorů FN Olomouc. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (adam-vojtech, jeronym-tejc). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

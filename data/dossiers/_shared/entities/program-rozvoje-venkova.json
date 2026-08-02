@@ -1,0 +1,43 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/program-rozvoje-venkova",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "program-rozvoje-venkova",
+ "entityId": "program-rozvoje-venkova",
+ "title": "Program rozvoje venkova (PRV)",
+ "entityType": "legal_or_administrative_process",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "andrej-babis"
+ ],
+ "order": 353,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-18",
+   "CLM-48",
+   "CLM-66",
+   "CLM-83"
+  ],
+  "sourceRefs": [
+   "SRC-31",
+   "SRC-44",
+   "SRC-59"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Dotační program — zdroj zrušené dotace Kosteleckých uzenin a 75mil. dotace Vodňanské drůbeže; zvážit typ (program vs. proces). Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (andrej-babis). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

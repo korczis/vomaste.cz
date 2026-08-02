@@ -1,0 +1,61 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/ministerstvo-financi",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "ministerstvo-financi",
+ "entityId": "ministerstvo-financi",
+ "title": "Ministerstvo financí ČR",
+ "entityType": "public_institution",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "adam-vojtech",
+  "alena-schillerova",
+  "andrej-babis",
+  "lubomir-metnar",
+  "macinka-turek",
+  "tunde-bartha"
+ ],
+ "order": 273,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-04",
+   "CLM-10",
+   "CLM-23",
+   "CLM-25",
+   "CLM-27",
+   "CLM-28",
+   "CLM-29",
+   "CLM-44",
+   "CLM-46",
+   "CLM-72"
+  ],
+  "sourceRefs": [
+   "SRC-02",
+   "SRC-06",
+   "SRC-07",
+   "SRC-13",
+   "SRC-14",
+   "SRC-15",
+   "SRC-18",
+   "SRC-24",
+   "SRC-50",
+   "SRC-55"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Původně navrhovalo zrušit limit jen pro volnočasové benefity. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (adam-vojtech, alena-schillerova, andrej-babis, lubomir-metnar, macinka-turek, tunde-bartha). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

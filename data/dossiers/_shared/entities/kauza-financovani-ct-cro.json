@@ -1,0 +1,64 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/kauza-financovani-ct-cro",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "kauza-financovani-ct-cro",
+ "entityId": "kauza-financovani-ct-cro",
+ "title": "Kauza zrušení koncesionářských poplatků a financování ČT/ČRo ze státního rozpočtu",
+ "entityType": "controversy",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "oto-klempir"
+ ],
+ "order": 203,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-03",
+   "CLM-04",
+   "CLM-06",
+   "CLM-07",
+   "CLM-08",
+   "CLM-09",
+   "CLM-10",
+   "CLM-11",
+   "CLM-12",
+   "CLM-13",
+   "CLM-14",
+   "CLM-15",
+   "CLM-16",
+   "CLM-17",
+   "CLM-18",
+   "CLM-19",
+   "CLM-20",
+   "CLM-21"
+  ],
+  "sourceRefs": [
+   "SRC-02",
+   "SRC-03",
+   "SRC-06",
+   "SRC-07",
+   "SRC-13",
+   "SRC-14",
+   "SRC-19",
+   "SRC-20",
+   "SRC-21",
+   "SRC-26"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Hlavní kauza dossieru — Klempířem prosazovaný přechod ČT a ČRo na rozpočtové financování od 2027, protesty a kritika opozice. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (oto-klempir). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

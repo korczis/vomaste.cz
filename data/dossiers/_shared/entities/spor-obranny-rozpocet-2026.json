@@ -1,0 +1,61 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/spor-obranny-rozpocet-2026",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "spor-obranny-rozpocet-2026",
+ "entityId": "spor-obranny-rozpocet-2026",
+ "title": "Škrt obranného rozpočtu 2026 a spor o 2 % NATO",
+ "entityType": "controversy",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "jaromir-zuna"
+ ],
+ "order": 389,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-02",
+   "CLM-03",
+   "CLM-04",
+   "CLM-05",
+   "CLM-06",
+   "CLM-07",
+   "CLM-41",
+   "CLM-42",
+   "CLM-43",
+   "CLM-44",
+   "CLM-45",
+   "CLM-46",
+   "CLM-47",
+   "CLM-48"
+  ],
+  "sourceRefs": [
+   "SRC-02",
+   "SRC-03",
+   "SRC-04",
+   "SRC-05",
+   "SRC-15",
+   "SRC-16",
+   "SRC-17",
+   "SRC-20",
+   "SRC-23",
+   "SRC-24",
+   "SRC-33"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Snížení plánovaných obranných výdajů 2026 o 21 miliard a spor o plnění závazku 2 % HDP vůči NATO; klíčová kauza Zůnova působení. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (jaromir-zuna). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

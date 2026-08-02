@@ -1,0 +1,39 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/obvodni-statni-zastupitelstvi-praha-1",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "obvodni-statni-zastupitelstvi-praha-1",
+ "entityId": "obvodni-statni-zastupitelstvi-praha-1",
+ "title": "Obvodní státní zastupitelství pro Prahu 1",
+ "entityType": "public_institution",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "tomio-okamura"
+ ],
+ "order": 309,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-21"
+  ],
+  "sourceRefs": [
+   "SRC-16",
+   "SRC-17"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Podalo obžalobu na Okamuru a SPD (8/2025). Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (tomio-okamura). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

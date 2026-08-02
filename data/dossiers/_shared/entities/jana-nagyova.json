@@ -1,0 +1,56 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/jana-nagyova",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "jana-nagyova",
+ "entityId": "jana-nagyova",
+ "title": "Jana Nagyová",
+ "entityType": "person",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "andrej-babis"
+ ],
+ "order": 169,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-01",
+   "CLM-08",
+   "CLM-09",
+   "CLM-20",
+   "CLM-21",
+   "CLM-23",
+   "CLM-24",
+   "CLM-50",
+   "CLM-79",
+   "CLM-80"
+  ],
+  "sourceRefs": [
+   "SRC-01",
+   "SRC-03",
+   "SRC-08",
+   "SRC-23",
+   "SRC-24",
+   "SRC-27",
+   "SRC-32",
+   "SRC-33",
+   "SRC-56",
+   "SRC-57"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Spoluobžalovaná v kauze Čapí hnízdo, 4. 5. 2026 nepravomocně uznána vinnou; v obsahu též pod dřívějším jménem Jana Mayerová (CLM-79). Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (andrej-babis). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

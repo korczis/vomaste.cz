@@ -1,0 +1,50 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/transparency-international",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "transparency-international",
+ "entityId": "transparency-international",
+ "title": "Transparency International ČR",
+ "entityType": "organization",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "andrej-babis",
+  "martin-sebestyan",
+  "tomio-okamura"
+ ],
+ "order": 412,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-06",
+   "CLM-12",
+   "CLM-13",
+   "CLM-14",
+   "CLM-31",
+   "CLM-32"
+  ],
+  "sourceRefs": [
+   "SRC-02",
+   "SRC-03",
+   "SRC-05",
+   "SRC-17",
+   "SRC-20",
+   "SRC-23"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Protikorupční NGO; varování před nominací Šebestyána, podnět institucím EU, obrana justice. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (andrej-babis, martin-sebestyan, tomio-okamura). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

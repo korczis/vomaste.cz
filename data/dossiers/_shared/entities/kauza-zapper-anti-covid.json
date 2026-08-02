@@ -1,0 +1,39 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/kauza-zapper-anti-covid",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "kauza-zapper-anti-covid",
+ "entityId": "kauza-zapper-anti-covid",
+ "title": "Kauza Zapper-Club: „Imunitní balíček ANTI-COVID-19“",
+ "entityType": "controversy",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "macinka-turek"
+ ],
+ "order": 216,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-31"
+  ],
+  "sourceRefs": [
+   "SRC-34",
+   "SRC-35"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Prodej přístroje zapper přes e-shop parazitivnas.cz za pandemie; varování Ministerstva zdravotnictví, SZPI odebrala certifikát (zakázaná léčebná tvrzení). Entity zapper-club, mzdrav a szpi existují, kauza sama ne. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (macinka-turek). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/otevreny-dopis-umelcu-2025",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "otevreny-dopis-umelcu-2025",
+ "entityId": "otevreny-dopis-umelcu-2025",
+ "title": "Otevřený dopis 500 umělců proti obsazení ministerstva kultury Motoristy (říjen 2025)",
+ "entityType": "event",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "oto-klempir"
+ ],
+ "order": 324,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-40",
+   "CLM-41",
+   "CLM-42"
+  ],
+  "sourceRefs": [
+   "SRC-22",
+   "SRC-23"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Výzva zhruba 500 umělců prezidentu Pavlovi a Babišovi, aby resort kultury nepřipadl Motoristům; Klempíř na ni veřejně reagoval. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (oto-klempir). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

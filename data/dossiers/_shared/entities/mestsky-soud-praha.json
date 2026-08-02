@@ -1,0 +1,57 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/mestsky-soud-praha",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "mestsky-soud-praha",
+ "entityId": "mestsky-soud-praha",
+ "title": "Městský soud v Praze",
+ "entityType": "public_institution",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "andrej-babis",
+  "karel-havlicek"
+ ],
+ "order": 258,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-01",
+   "CLM-08",
+   "CLM-20",
+   "CLM-50",
+   "CLM-62",
+   "CLM-63",
+   "CLM-64",
+   "CLM-66",
+   "CLM-80"
+  ],
+  "sourceRefs": [
+   "SRC-01",
+   "SRC-03",
+   "SRC-08",
+   "SRC-12",
+   "SRC-23",
+   "SRC-24",
+   "SRC-41",
+   "SRC-42",
+   "SRC-43",
+   "SRC-47",
+   "SRC-57"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Soud první instance v kauze Čapí hnízdo i ve správních sporech o dotace SZIF; v obsahu též jako „Pražský městský soud“. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (andrej-babis, karel-havlicek). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

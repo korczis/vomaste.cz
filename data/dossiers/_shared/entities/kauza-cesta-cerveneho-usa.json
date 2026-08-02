@@ -1,0 +1,47 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/kauza-cesta-cerveneho-usa",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "kauza-cesta-cerveneho-usa",
+ "entityId": "kauza-cesta-cerveneho-usa",
+ "title": "Cesta ministra Červeného do USA (červenec 2026)",
+ "entityType": "controversy",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "igor-cerveny"
+ ],
+ "order": 200,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-16",
+   "CLM-17",
+   "CLM-18",
+   "CLM-49",
+   "CLM-56",
+   "CLM-57"
+  ],
+  "sourceRefs": [
+   "SRC-10",
+   "SRC-16",
+   "SRC-17",
+   "SRC-18",
+   "SRC-19"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Desetidenní cesta s návštěvou národních parků; nevyjasněné složení delegace, účast mluvčího Motoristů a hrazení nákladů. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (igor-cerveny). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

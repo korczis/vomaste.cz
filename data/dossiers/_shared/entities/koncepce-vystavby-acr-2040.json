@@ -1,0 +1,49 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/koncepce-vystavby-acr-2040",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "koncepce-vystavby-acr-2040",
+ "entityId": "koncepce-vystavby-acr-2040",
+ "title": "Koncepce výstavby Armády ČR do roku 2040",
+ "entityType": "legal_or_administrative_process",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "jaromir-zuna"
+ ],
+ "order": 222,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-17",
+   "CLM-18",
+   "CLM-32",
+   "CLM-34",
+   "CLM-37",
+   "CLM-38"
+  ],
+  "sourceRefs": [
+   "SRC-12",
+   "SRC-15",
+   "SRC-18",
+   "SRC-19",
+   "SRC-25",
+   "SRC-30",
+   "SRC-32"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Zůnova armádní koncepce (varianty 2 % / 3,5 % HDP); předmět sporu s premiérem Babišem a jednání BRS. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (jaromir-zuna). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/ales-belohradsky",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "ales-belohradsky",
+ "entityId": "ales-belohradsky",
+ "title": "Aleš Bělohradský",
+ "entityType": "person",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "alena-schillerova"
+ ],
+ "order": 59,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-10",
+   "CLM-11",
+   "CLM-12"
+  ],
+  "sourceRefs": [
+   "SRC-11",
+   "SRC-19"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Ekonom, autor stanoviska Centra veřejných financí UK k novele (pozměňovací návrhy 825/826); citován i k překročení dluhové brzdy 55 % HDP v letech 2031–2033. Odborný aktér debaty, ne novinář. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (alena-schillerova). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

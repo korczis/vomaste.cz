@@ -1,0 +1,49 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/kauza-neodvysilany-rozhovor-pavel",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "kauza-neodvysilany-rozhovor-pavel",
+ "entityId": "kauza-neodvysilany-rozhovor-pavel",
+ "title": "Kauza neodvysílaného rozhovoru prezidenta Pavla (podcast Kamufláž)",
+ "entityType": "controversy",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "jaromir-zuna"
+ ],
+ "order": 207,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-08",
+   "CLM-09",
+   "CLM-10",
+   "CLM-11",
+   "CLM-12",
+   "CLM-29",
+   "CLM-30",
+   "CLM-31"
+  ],
+  "sourceRefs": [
+   "SRC-06",
+   "SRC-07",
+   "SRC-08",
+   "SRC-21",
+   "SRC-27"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Rozhovor pro armádní podcast Kamufláž nevyšel 7. 4. 2026; opozice mluvila o cenzuře, inspekce MO cílenou cenzuru neprokázala. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (jaromir-zuna). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/lukas-vlcek",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "lukas-vlcek",
+ "entityId": "lukas-vlcek",
+ "title": "Lukáš Vlček",
+ "entityType": "person",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "karel-havlicek",
+  "zuzana-mrazova"
+ ],
+ "order": 238,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-13",
+   "CLM-16"
+  ],
+  "sourceRefs": [
+   "SRC-06",
+   "SRC-07",
+   "SRC-08",
+   "SRC-11"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Poslanec STAN; novelu stavebního zákona označil za „legislativní paskvil“, vyzýval Mrázovou k rezignaci. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (karel-havlicek, zuzana-mrazova). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

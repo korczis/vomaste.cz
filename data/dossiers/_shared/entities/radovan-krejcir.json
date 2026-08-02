@@ -1,0 +1,41 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/radovan-krejcir",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "radovan-krejcir",
+ "entityId": "radovan-krejcir",
+ "title": "Radovan Krejčíř",
+ "entityType": "person",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "macinka-turek",
+  "richard-chlad"
+ ],
+ "order": 362,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-08",
+   "CLM-36"
+  ],
+  "sourceRefs": [
+   "SRC-02",
+   "SRC-42"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Jmenován obsahem (starší osobní známost Chlada), ale AGENTS.md obsahuje výslovný záznam „Not authorized: Radovan Krejčíř“ — entitu nezakládat bez lidského rozhodnutí. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (macinka-turek, richard-chlad). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

@@ -1,0 +1,42 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/pandora-papers",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "pandora-papers",
+ "entityId": "pandora-papers",
+ "title": "Pandora Papers",
+ "entityType": "event",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "andrej-babis"
+ ],
+ "order": 325,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-31",
+   "CLM-75",
+   "CLM-76"
+  ],
+  "sourceRefs": [
+   "SRC-13",
+   "SRC-52",
+   "SRC-53"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Mezinárodní investigativní projekt popisující majetkovou strukturu nákupů nemovitostí ve Francii; navazuje česká větev (NCOZ). Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (andrej-babis). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

@@ -1,0 +1,56 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/spor-o-koncepci-armady-2026",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "spor-o-koncepci-armady-2026",
+ "entityId": "spor-o-koncepci-armady-2026",
+ "title": "Spor o koncepci armády (2026)",
+ "entityType": "controversy",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "jaromir-zuna"
+ ],
+ "order": 386,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-17",
+   "CLM-18",
+   "CLM-19",
+   "CLM-32",
+   "CLM-33",
+   "CLM-34",
+   "CLM-35",
+   "CLM-36",
+   "CLM-37",
+   "CLM-38",
+   "CLM-39",
+   "CLM-40"
+  ],
+  "sourceRefs": [
+   "SRC-12",
+   "SRC-13",
+   "SRC-18",
+   "SRC-19",
+   "SRC-29",
+   "SRC-30",
+   "SRC-31",
+   "SRC-32"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Premiérova veřejná nespokojenost se Zůnovou koncepcí armády (počty vojáků, nábor) a opakovaná neuzavřená jednání Bezpečnostní rady státu. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (jaromir-zuna). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

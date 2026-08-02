@@ -1,0 +1,41 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/trestni-oznameni-motoriste-denik-n",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "trestni-oznameni-motoriste-denik-n",
+ "entityId": "trestni-oznameni-motoriste-denik-n",
+ "title": "Trestní oznámení Motoristů sobě na Deník N (2025–2026)",
+ "entityType": "legal_or_administrative_process",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "macinka-turek"
+ ],
+ "order": 414,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-19",
+   "CLM-42"
+  ],
+  "sourceRefs": [
+   "SRC-21",
+   "SRC-47",
+   "SRC-48"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Podáno 12. 10. 2025 pro pomluvu a křivé obvinění (argument o AI/photoshopu); policie 28. 7. 2026 odložila jako nedůvodné — zveřejnění informací nebylo trestným činem. Odlišné od existující entity trestniozn (oznámení bývalé partnerky). Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (macinka-turek). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

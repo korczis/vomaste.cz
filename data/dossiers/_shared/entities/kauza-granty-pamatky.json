@@ -1,0 +1,55 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/kauza-granty-pamatky",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "kauza-granty-pamatky",
+ "entityId": "kauza-granty-pamatky",
+ "title": "Kauza grantů, rozpočtu kultury a ochrany památek",
+ "entityType": "controversy",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "oto-klempir"
+ ],
+ "order": 204,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-30",
+   "CLM-31",
+   "CLM-32",
+   "CLM-33",
+   "CLM-34",
+   "CLM-35",
+   "CLM-36",
+   "CLM-37",
+   "CLM-38",
+   "CLM-39"
+  ],
+  "sourceRefs": [
+   "SRC-05",
+   "SRC-10",
+   "SRC-11",
+   "SRC-15",
+   "SRC-16",
+   "SRC-17",
+   "SRC-18",
+   "SRC-24",
+   "SRC-25"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Škrty v rozpočtu MK, mimořádné dotace mimo komise, avizované veto grantových komisí a oslabení památkové péče novelou stavebního zákona. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (oto-klempir). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

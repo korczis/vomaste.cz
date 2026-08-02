@@ -1,0 +1,39 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/michal-dobias",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "michal-dobias",
+ "entityId": "michal-dobias",
+ "title": "Michal Dobiáš",
+ "entityType": "person",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "tunde-bartha"
+ ],
+ "order": 262,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-02"
+  ],
+  "sourceRefs": [
+   "SRC-02",
+   "SRC-05"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Vedoucí odboru MČ Praha 3 — jeho stanovisko varovalo, že pro výpověď z nájmu neexistuje právně relevantní podklad. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (tunde-bartha). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

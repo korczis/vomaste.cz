@@ -1,0 +1,44 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/nejvyssi-statni-zastupitelstvi",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "nejvyssi-statni-zastupitelstvi",
+ "entityId": "nejvyssi-statni-zastupitelstvi",
+ "title": "Nejvyšší státní zastupitelství",
+ "entityType": "public_institution",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "andrej-babis",
+  "jeronym-tejc"
+ ],
+ "order": 300,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-24",
+   "CLM-25",
+   "CLM-71"
+  ],
+  "sourceRefs": [
+   "SRC-13",
+   "SRC-14",
+   "SRC-48",
+   "SRC-55"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Zamítlo stížnosti obviněných v bitcoinové kauze. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (andrej-babis, jeronym-tejc). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

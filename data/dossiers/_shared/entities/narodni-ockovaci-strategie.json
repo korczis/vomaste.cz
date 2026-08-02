@@ -1,0 +1,45 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/narodni-ockovaci-strategie",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "narodni-ockovaci-strategie",
+ "entityId": "narodni-ockovaci-strategie",
+ "title": "Národní očkovací strategie",
+ "entityType": "legal_or_administrative_process",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "adam-vojtech"
+ ],
+ "order": 292,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-19",
+   "CLM-20",
+   "CLM-45",
+   "CLM-47",
+   "CLM-50"
+  ],
+  "sourceRefs": [
+   "SRC-11",
+   "SRC-27",
+   "SRC-30",
+   "SRC-31"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Strategie doporučených dobrovolných očkování (covid, HPV, chřipka); koaliční SPD žádá revokaci. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (adam-vojtech). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}

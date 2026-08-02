@@ -1,0 +1,47 @@
+{
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/summit-nato-ankara-2026",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "summit-nato-ankara-2026",
+ "entityId": "summit-nato-ankara-2026",
+ "title": "Summit NATO v Ankaře (7.–8. 7. 2026)",
+ "entityType": "event",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "jaromir-zuna",
+  "jeronym-tejc"
+ ],
+ "order": 398,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
+  ],
+  "claimRefs": [
+   "CLM-14",
+   "CLM-41",
+   "CLM-42"
+  ],
+  "sourceRefs": [
+   "SRC-08",
+   "SRC-09",
+   "SRC-17",
+   "SRC-20",
+   "SRC-21",
+   "SRC-31",
+   "SRC-33"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Babiš zde oznámil navýšení obranného rozpočtu; účast prezidenta vynutilo předběžné opatření ÚS. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (jaromir-zuna, jeronym-tejc). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  }
+ ]
+}
