@@ -1,44 +1,43 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/veronika-lukasova",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "veronika-lukasova",
- "entityId": "veronika-lukasova",
- "title": "Veronika Lukášová",
- "entityType": "person",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "zuzana-mrazova"
- ],
- "order": 430,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/veronika-lukasova",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "veronika-lukasova",
+  "entityId": "veronika-lukasova",
+  "title": "Veronika Lukášová",
+  "entityType": "person",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "zuzana-mrazova"
   ],
-  "claimRefs": [
-   "CLM-06",
-   "CLM-22",
-   "CLM-25"
-  ],
-  "sourceRefs": [
-   "SRC-02",
-   "SRC-04",
-   "SRC-05",
-   "SRC-13",
-   "SRC-20"
+  "order": 430,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02"
+    ],
+    "claimRefs": [
+      "CLM-06",
+      "CLM-22",
+      "CLM-25"
+    ],
+    "sourceRefs": [
+      "SRC-02",
+      "SRC-04",
+      "SRC-05",
+      "SRC-07"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Mluvčí Ministerstva pro místní rozvoj; komunikovala pokutu a obhajobu ministryně. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (zuzana-mrazova). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Mluvčí Ministerstva pro místní rozvoj; komunikovala pokutu a obhajobu ministryně. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (zuzana-mrazova). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
-  }
- ]
 }

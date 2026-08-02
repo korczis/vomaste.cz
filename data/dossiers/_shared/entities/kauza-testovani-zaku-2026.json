@@ -1,50 +1,49 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/kauza-testovani-zaku-2026",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "kauza-testovani-zaku-2026",
- "entityId": "kauza-testovani-zaku-2026",
- "title": "Kauza plošného testování žáků 5. a 9. tříd (2026)",
- "entityType": "controversy",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "robert-plaga"
- ],
- "order": 213,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/kauza-testovani-zaku-2026",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "kauza-testovani-zaku-2026",
+  "entityId": "kauza-testovani-zaku-2026",
+  "title": "Kauza plošného testování žáků 5. a 9. tříd (2026)",
+  "entityType": "controversy",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "robert-plaga"
   ],
-  "claimRefs": [
-   "CLM-02",
-   "CLM-05",
-   "CLM-06",
-   "CLM-20",
-   "CLM-24",
-   "CLM-26"
-  ],
-  "sourceRefs": [
-   "SRC-02",
-   "SRC-03",
-   "SRC-04",
-   "SRC-12",
-   "SRC-13",
-   "SRC-14",
-   "SRC-23",
-   "SRC-28"
+  "order": 213,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02"
+    ],
+    "claimRefs": [
+      "CLM-02",
+      "CLM-05",
+      "CLM-06",
+      "CLM-20",
+      "CLM-24",
+      "CLM-26"
+    ],
+    "sourceRefs": [
+      "SRC-02",
+      "SRC-03",
+      "SRC-04",
+      "SRC-12",
+      "SRC-13",
+      "SRC-14",
+      "SRC-23"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Testování ČŠI s citlivými dotazy na duševní zdraví a socioekonomický status; Plaga je 25. 5. 2026 zastavil. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (robert-plaga). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Testování ČŠI s citlivými dotazy na duševní zdraví a socioekonomický status; Plaga je 25. 5. 2026 zastavil. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (robert-plaga). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
-  }
- ]
 }
