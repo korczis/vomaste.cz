@@ -10,11 +10,14 @@
     "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
   },
   "text": "Martin Šebestyán zastává podle oficiálního profilu na webu Úřadu vlády funkci ministra zemědělství",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-28"
     }
   ],
   "subjects": [
