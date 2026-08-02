@@ -71,7 +71,13 @@
           "CLM-55",
           "CLM-56",
           "CLM-57",
-          "CLM-12"
+          "CLM-12",
+          "CLM-05",
+          "CLM-07",
+          "CLM-08",
+          "CLM-09",
+          "CLM-15",
+          "CLM-16"
         ],
         "sources": [
           "SRC-01",
@@ -97,7 +103,12 @@
           "SRC-31",
           "SRC-32",
           "SRC-07",
-          "SRC-36"
+          "SRC-36",
+          "SRC-02",
+          "SRC-03",
+          "SRC-05",
+          "SRC-06",
+          "SRC-34"
         ]
       },
       {
@@ -114,10 +125,14 @@
         "entity": "turek",
         "label": "Filip Turek",
         "claims": [
-          "CLM-12"
+          "CLM-12",
+          "CLM-44",
+          "CLM-46"
         ],
         "sources": [
-          "SRC-07"
+          "SRC-07",
+          "SRC-30",
+          "SRC-31"
         ]
       },
       {
@@ -130,12 +145,179 @@
           "SRC-26",
           "SRC-36"
         ]
+      },
+      {
+        "entity": "ministerstvo-spravedlnosti",
+        "label": "Ministerstvo spravedlnosti ČR",
+        "claims": [
+          "CLM-05"
+        ],
+        "sources": [
+          "SRC-02",
+          "SRC-03"
+        ]
+      },
+      {
+        "entity": "mestsky-urad-nymburk",
+        "label": "Městský úřad Nymburk",
+        "claims": [
+          "CLM-07"
+        ],
+        "sources": [
+          "SRC-04"
+        ]
+      },
+      {
+        "entity": "extreme-bfg-cast",
+        "label": "Extreme BFG Cast s.r.o.",
+        "claims": [
+          "CLM-08",
+          "CLM-28"
+        ],
+        "sources": [
+          "SRC-05",
+          "SRC-06",
+          "SRC-24",
+          "SRC-26"
+        ]
+      },
+      {
+        "entity": "lubor-novak",
+        "label": "Lubor Novák",
+        "claims": [
+          "CLM-28",
+          "CLM-09",
+          "CLM-29",
+          "CLM-30"
+        ],
+        "sources": [
+          "SRC-24",
+          "SRC-26",
+          "SRC-06",
+          "SRC-28",
+          "SRC-25",
+          "SRC-27"
+        ]
+      },
+      {
+        "entity": "motoriste",
+        "label": "Motoristé sobě",
+        "claims": [
+          "CLM-29"
+        ],
+        "sources": [
+          "SRC-28"
+        ]
+      },
+      {
+        "entity": "hemmont",
+        "label": "Hemmont",
+        "claims": [
+          "CLM-30"
+        ],
+        "sources": [
+          "SRC-25",
+          "SRC-27"
+        ]
+      },
+      {
+        "entity": "hammerton-capital",
+        "label": "Hammerton Capital Co. Limited",
+        "claims": [
+          "CLM-30"
+        ],
+        "sources": [
+          "SRC-25",
+          "SRC-27"
+        ]
+      },
+      {
+        "entity": "ministerstvo-zivotniho-prostredi",
+        "label": "Ministerstvo životního prostředí ČR",
+        "claims": [
+          "CLM-44",
+          "CLM-47"
+        ],
+        "sources": [
+          "SRC-30",
+          "SRC-31",
+          "SRC-29",
+          "SRC-34"
+        ]
+      },
+      {
+        "entity": "lukas-vaverka",
+        "label": "Lukáš Vaverka",
+        "claims": [
+          "CLM-44",
+          "CLM-46"
+        ],
+        "sources": [
+          "SRC-30",
+          "SRC-31"
+        ]
+      },
+      {
+        "entity": "art-of-performance",
+        "label": "Art of Performance",
+        "claims": [
+          "CLM-46"
+        ],
+        "sources": [
+          "SRC-31"
+        ]
+      },
+      {
+        "entity": "petr-hladik",
+        "label": "Petr Hladík",
+        "claims": [
+          "CLM-15"
+        ],
+        "sources": [
+          "SRC-07"
+        ]
+      },
+      {
+        "entity": "meta",
+        "label": "Meta",
+        "claims": [
+          "CLM-16"
+        ],
+        "sources": [
+          "SRC-10",
+          "SRC-16"
+        ]
+      },
+      {
+        "entity": "space-plan",
+        "label": "Space Plan",
+        "claims": [
+          "CLM-36"
+        ],
+        "sources": [
+          "SRC-20"
+        ]
       }
     ],
     "edges": [
       "edge-cerveny-vlada",
       "edge-cerveny-turek",
-      "edge-cerveny-pavel"
+      "edge-cerveny-pavel",
+      "edge-cerveny-ministerstvo-spravedlnosti",
+      "edge-cerveny-mestsky-urad-nymburk",
+      "edge-cerveny-extreme-bfg-cast",
+      "edge-lubor-novak-extreme-bfg-cast",
+      "edge-cerveny-lubor-novak",
+      "edge-lubor-novak-motoriste",
+      "edge-lubor-novak-hemmont",
+      "edge-hammerton-capital-hemmont",
+      "edge-ministerstvo-zivotniho-prostredi-lukas-vaverka",
+      "edge-lukas-vaverka-turek",
+      "edge-lukas-vaverka-art-of-performance",
+      "edge-cerveny-ministerstvo-zivotniho-prostredi",
+      "edge-petr-hladik-cerveny",
+      "edge-cerveny-meta",
+      "edge-cerveny-space-plan"
     ]
   },
   "contentBlocks": [

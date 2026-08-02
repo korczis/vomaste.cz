@@ -1,38 +1,39 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/audit-nsa",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "audit-nsa",
- "entityId": "audit-nsa",
- "title": "Interní audit Národní sportovní agentury",
- "entityType": "legal_or_administrative_process",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "boris-stastny"
- ],
- "order": 76,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/audit-nsa",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "audit-nsa",
+  "entityId": "audit-nsa",
+  "title": "Interní audit Národní sportovní agentury",
+  "entityType": "legal_or_administrative_process",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "boris-stastny"
   ],
-  "claimRefs": [
-   "CLM-27"
-  ],
-  "sourceRefs": [
-   "SRC-14"
+  "order": 76,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02",
+      "edge-stastny-audit-nsa"
+    ],
+    "claimRefs": [
+      "CLM-27"
+    ],
+    "sourceRefs": [
+      "SRC-14"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Audit ohlášený ministrem Šťastným v souvislosti s odvoláním vedení NSA a řešením střetu zájmů poradního orgánu. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (boris-stastny). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Audit ohlášený ministrem Šťastným v souvislosti s odvoláním vedení NSA a řešením střetu zájmů poradního orgánu. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (boris-stastny). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
-  }
- ]
 }

@@ -17,7 +17,9 @@
     "macinka-turek",
     "petr-macinka",
     "richard-chlad",
-    "petr-vencalek"
+    "petr-vencalek",
+    "jeronym-tejc",
+    "jaromir-zuna"
   ],
   "routeAliases": [
     "/dossiers/macinka-turek/entities/macinka/"
@@ -34,7 +36,9 @@
       "edge-macinka-klubmotoristu",
       "edge-macinka-mzp2026",
       "edge-macinka-cerveny",
-      "edge-gmrgas-macinka"
+      "edge-gmrgas-macinka",
+      "edge-macinka-kompetencni-spor",
+      "edge-macinka-pavel"
     ],
     "claimRefs": [
       "CLM-03",

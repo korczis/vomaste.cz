@@ -1,40 +1,41 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/jana-cernochova",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "jana-cernochova",
- "entityId": "jana-cernochova",
- "title": "Jana Černochová",
- "entityType": "person",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "jaromir-zuna"
- ],
- "order": 167,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/jana-cernochova",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "jana-cernochova",
+  "entityId": "jana-cernochova",
+  "title": "Jana Černochová",
+  "entityType": "person",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "jaromir-zuna"
   ],
-  "claimRefs": [
-   "CLM-39"
-  ],
-  "sourceRefs": [
-   "SRC-19",
-   "SRC-24",
-   "SRC-32"
+  "order": 167,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02",
+      "edge-zuna-jana-cernochova"
+    ],
+    "claimRefs": [
+      "CLM-39"
+    ],
+    "sourceRefs": [
+      "SRC-19",
+      "SRC-24",
+      "SRC-32"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Bývalá ministryně obrany; terč Zůnovy kritiky obranného plánování. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (jaromir-zuna). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Bývalá ministryně obrany; terč Zůnovy kritiky obranného plánování. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (jaromir-zuna). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
-  }
- ]
 }

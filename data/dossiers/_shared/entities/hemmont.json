@@ -1,39 +1,41 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/hemmont",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "hemmont",
- "entityId": "hemmont",
- "title": "Hemmont",
- "entityType": "company",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "igor-cerveny"
- ],
- "order": 143,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/hemmont",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "hemmont",
+  "entityId": "hemmont",
+  "title": "Hemmont",
+  "entityType": "company",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "igor-cerveny"
   ],
-  "claimRefs": [
-   "CLM-30"
-  ],
-  "sourceRefs": [
-   "SRC-24",
-   "SRC-35"
+  "order": 143,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02",
+      "edge-lubor-novak-hemmont",
+      "edge-hammerton-capital-hemmont"
+    ],
+    "claimRefs": [
+      "CLM-30"
+    ],
+    "sourceRefs": [
+      "SRC-24",
+      "SRC-35"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Společnost, v jejímž představenstvu je Lubor Novák; vlastněná hongkongskou Hammerton Capital. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (igor-cerveny). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Společnost, v jejímž představenstvu je Lubor Novák; vlastněná hongkongskou Hammerton Capital. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (igor-cerveny). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
-  }
- ]
 }

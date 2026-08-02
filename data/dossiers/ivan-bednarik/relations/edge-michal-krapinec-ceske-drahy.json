@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/relations/edge-michal-krapinec-ceske-drahy",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-michal-krapinec-ceske-drahy",
+  "relationId": "edge-michal-krapinec-ceske-drahy",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/michal-krapinec"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/ceske-drahy"
+  },
+  "relationType": "HOLDS_ROLE",
+  "label": "generální ředitel Českých drah",
+  "status": "single",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-38"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-27"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 10,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-047 (provázání grafu, třetí dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

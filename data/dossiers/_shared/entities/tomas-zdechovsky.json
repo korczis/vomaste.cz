@@ -1,45 +1,46 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/tomas-zdechovsky",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "tomas-zdechovsky",
- "entityId": "tomas-zdechovsky",
- "title": "Tomáš Zdechovský",
- "entityType": "person",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "andrej-babis",
-  "boris-stastny",
-  "karel-havlicek"
- ],
- "order": 409,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/tomas-zdechovsky",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "tomas-zdechovsky",
+  "entityId": "tomas-zdechovsky",
+  "title": "Tomáš Zdechovský",
+  "entityType": "person",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "andrej-babis",
+    "boris-stastny",
+    "karel-havlicek"
   ],
-  "claimRefs": [
-   "CLM-09",
-   "CLM-34",
-   "CLM-39",
-   "CLM-42"
-  ],
-  "sourceRefs": [
-   "SRC-05",
-   "SRC-16",
-   "SRC-18"
+  "order": 409,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02",
+      "edge-tomas-zdechovsky-stastny"
+    ],
+    "claimRefs": [
+      "CLM-09",
+      "CLM-34",
+      "CLM-39",
+      "CLM-42"
+    ],
+    "sourceRefs": [
+      "SRC-05",
+      "SRC-16",
+      "SRC-18"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Europoslanec — upozornil na notářský zápis z února 2026, jímž se Babiš stal opět přímým vlastníkem. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (andrej-babis, boris-stastny, karel-havlicek). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Europoslanec — upozornil na notářský zápis z února 2026, jímž se Babiš stal opět přímým vlastníkem. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (andrej-babis, boris-stastny, karel-havlicek). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
-  }
- ]
 }

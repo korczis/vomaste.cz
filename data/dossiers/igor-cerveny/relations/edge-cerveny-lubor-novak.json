@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/relations/edge-cerveny-lubor-novak",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-cerveny-lubor-novak",
+  "relationId": "edge-cerveny-lubor-novak",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/cerveny"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/lubor-novak"
+  },
+  "relationType": "ASSOCIATED_WITH_EVENT",
+  "label": "odkoupil jeho podíl v Extreme BFG Cast a od října 2025 pracuje jako jeho poslanecký asistent",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-29"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-28"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 8,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-047 (provázání grafu, třetí dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

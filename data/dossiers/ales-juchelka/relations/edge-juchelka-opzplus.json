@@ -1,0 +1,50 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/relations/edge-juchelka-opzplus",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-juchelka-opzplus",
+  "relationId": "edge-juchelka-opzplus",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/juchelka"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/operacni-program-zamestnanost-plus"
+  },
+  "relationType": "ASSOCIATED_WITH_EVENT",
+  "label": "dalších 17,6 mil. Kč nevykázaných z Operačního programu Zaměstnanost plus",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-11"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-12"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 8,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-048 (provázání grafu, třetí dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/relations/edge-lukas-vaverka-turek",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-lukas-vaverka-turek",
+  "relationId": "edge-lukas-vaverka-turek",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/lukas-vaverka"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/turek"
+  },
+  "relationType": "ASSOCIATED_WITH_EVENT",
+  "label": "bývalý poradce Turka v Evropském parlamentu, člen jeho Jaguar klubu, dříve zaměstnanec jeho autodílny Art of Performance",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-44"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-46"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-30"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-31"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 13,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-047 (provázání grafu, třetí dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

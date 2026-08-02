@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/relations/edge-havranek-juchelka",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-havranek-juchelka",
+  "relationId": "edge-havranek-juchelka",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/jiri-havranek"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/juchelka"
+  },
+  "relationType": "RESPONDED_TO",
+  "label": "poslanec Havránek (ODS) postavil Juchelku před alternativu trestního oznámení nebo rezignace",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-38"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-11"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 13,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-048 (provázání grafu, třetí dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

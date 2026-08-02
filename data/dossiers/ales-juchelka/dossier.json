@@ -119,13 +119,148 @@
           "SRC-09",
           "SRC-14"
         ]
+      },
+      {
+        "entity": "ministerstvo-prace-a-socialnich-veci",
+        "label": "Ministerstvo práce a sociálních věcí ČR",
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-29"
+        ]
+      },
+      {
+        "entity": "kauza-stret-zajmu-semancova",
+        "label": "Kauza střetu zájmů poradkyně na MPSV",
+        "claims": [
+          "CLM-02",
+          "CLM-06"
+        ],
+        "sources": [
+          "SRC-02",
+          "SRC-03",
+          "SRC-08",
+          "SRC-10",
+          "SRC-11"
+        ]
+      },
+      {
+        "entity": "narodni-plan-obnovy",
+        "label": "Národní plán obnovy",
+        "claims": [
+          "CLM-11"
+        ],
+        "sources": [
+          "SRC-02",
+          "SRC-10",
+          "SRC-11",
+          "SRC-12"
+        ]
+      },
+      {
+        "entity": "operacni-program-zamestnanost-plus",
+        "label": "Operační program Zaměstnanost plus (OPZ+)",
+        "claims": [
+          "CLM-11"
+        ],
+        "sources": [
+          "SRC-02",
+          "SRC-10",
+          "SRC-11",
+          "SRC-12"
+        ]
+      },
+      {
+        "entity": "vit-rakusan",
+        "label": "Vít Rakušan",
+        "claims": [
+          "CLM-13",
+          "CLM-41"
+        ],
+        "sources": [
+          "SRC-08",
+          "SRC-09",
+          "SRC-11",
+          "SRC-14"
+        ]
+      },
+      {
+        "entity": "pavla-pivonka-vankova",
+        "label": "Pavla Pivoňka Vaňková",
+        "claims": [
+          "CLM-13",
+          "CLM-40"
+        ],
+        "sources": [
+          "SRC-08",
+          "SRC-09",
+          "SRC-11",
+          "SRC-14"
+        ]
+      },
+      {
+        "entity": "trestni-oznameni-stan-mpsv",
+        "label": "Trestní oznámení STAN kvůli střetu zájmů na MPSV",
+        "claims": [
+          "CLM-13"
+        ],
+        "sources": [
+          "SRC-08",
+          "SRC-09",
+          "SRC-11",
+          "SRC-14"
+        ]
+      },
+      {
+        "entity": "kontrola-nku-mpsv",
+        "label": "Kontrola NKÚ na MPSV",
+        "claims": [
+          "CLM-42"
+        ],
+        "sources": [
+          "SRC-09",
+          "SRC-11"
+        ]
+      },
+      {
+        "entity": "jiri-havranek",
+        "label": "Jiří Havránek",
+        "claims": [
+          "CLM-38"
+        ],
+        "sources": [
+          "SRC-10",
+          "SRC-11"
+        ]
+      },
+      {
+        "entity": "marian-jurecka",
+        "label": "Marian Jurečka",
+        "claims": [
+          "CLM-22"
+        ],
+        "sources": [
+          "SRC-14"
+        ]
       }
     ],
     "edges": [
       "edge-juchelka-vlada",
       "edge-babis-juchelka",
       "edge-juchelka-evropska-komise",
-      "edge-juchelka-nku"
+      "edge-juchelka-nku",
+      "edge-juchelka-mpsv",
+      "edge-juchelka-kauza-semancova",
+      "edge-juchelka-npo",
+      "edge-juchelka-opzplus",
+      "edge-rakusan-trestnioznameni",
+      "edge-vankova-trestnioznameni",
+      "edge-juchelka-trestnioznameni",
+      "edge-juchelka-kontrolanku",
+      "edge-havranek-juchelka",
+      "edge-jurecka-juchelka"
     ]
   },
   "contentBlocks": [

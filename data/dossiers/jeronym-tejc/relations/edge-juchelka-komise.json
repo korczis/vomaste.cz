@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/relations/edge-juchelka-komise",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-juchelka-komise",
+  "relationId": "edge-juchelka-komise",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/juchelka"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/komise-pro-prezkum-neprirozenych-umrti-deti"
+  },
+  "relationType": "HOLDS_ROLE",
+  "label": "Juchelka vede Komisi pro přezkum nepřirozených úmrtí dětí, ustavenou po kauze Viktorky",
+  "status": "single",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-39"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-20"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 14,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-048 (provázání grafu, třetí dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

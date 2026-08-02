@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/relations/edge-bednarik-magda-kopczynska",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-bednarik-magda-kopczynska",
+  "relationId": "edge-bednarik-magda-kopczynska",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/bednarik"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/magda-kopczynska"
+  },
+  "relationType": "ASSOCIATED_WITH_EVENT",
+  "label": "jednal v Bruselu o financování vysokorychlostních tratí z unijních fondů",
+  "status": "single",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-26"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-15"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 14,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-047 (provázání grafu, třetí dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/boris-stastny/relations/edge-daniel-docekal-stastny",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-daniel-docekal-stastny",
+  "relationId": "edge-daniel-docekal-stastny",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/boris-stastny"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/daniel-docekal"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/stastny"
+  },
+  "relationType": "RESPONDED_TO",
+  "label": "konstatoval, že jeho příspěvek na sítích vykazuje znaky manipulace",
+  "status": "quote",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-35"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-16"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 20,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-047 (provázání grafu, třetí dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

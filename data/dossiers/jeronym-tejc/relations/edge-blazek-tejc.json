@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/relations/edge-blazek-tejc",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-blazek-tejc",
+  "relationId": "edge-blazek-tejc",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/pavel-blazek"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/tejc"
+  },
+  "relationType": "DENIED",
+  "label": "Blažek se v bitcoinové kauze, kterou otevřelo Tejcovo trestní oznámení, cítí nevinný",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-29"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-15"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 8,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-048 (provázání grafu, třetí dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/relations/edge-martin-kupka-bednarik",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-martin-kupka-bednarik",
+  "relationId": "edge-martin-kupka-bednarik",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/martin-kupka"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/bednarik"
+  },
+  "relationType": "RESPONDED_TO",
+  "label": "jako tehdejší ministr dopravy reagoval na jeho rezignaci v Českých drahách a poděkoval mu za obnovu vozového parku (2022)",
+  "status": "single",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-04"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-02"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 4,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-047 (provázání grafu, třetí dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

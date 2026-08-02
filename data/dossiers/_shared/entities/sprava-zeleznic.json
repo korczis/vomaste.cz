@@ -23,7 +23,8 @@
   "provenance": {
     "discoveredAt": "2026-07-31",
     "discoveredVia": [
-      "edge-bednarik-sprava-zeleznic"
+      "edge-bednarik-sprava-zeleznic",
+      "edge-tomas-toth-sprava-zeleznic"
     ],
     "claimRefs": [
       "CLM-18",

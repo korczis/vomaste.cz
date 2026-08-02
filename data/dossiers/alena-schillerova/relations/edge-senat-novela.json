@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/relations/edge-senat-novela",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-senat-novela",
+  "relationId": "edge-senat-novela",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/senat-pcr"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/novela-rozpoctovych-pravidel-2026"
+  },
+  "relationType": "ASSOCIATED_WITH_EVENT",
+  "label": "Senát vrátil novelu Sněmovně s pozměňovacími návrhy",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-13"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-23"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 7,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-048 (provázání grafu, třetí dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

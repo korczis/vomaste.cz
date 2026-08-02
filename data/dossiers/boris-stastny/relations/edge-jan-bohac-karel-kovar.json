@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/boris-stastny/relations/edge-jan-bohac-karel-kovar",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-jan-bohac-karel-kovar",
+  "relationId": "edge-jan-bohac-karel-kovar",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/boris-stastny"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/jan-bohac"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/karel-kovar"
+  },
+  "relationType": "RESPONDED_TO",
+  "label": "uvítal jeho jmenování předsedou Národní sportovní agentury",
+  "status": "quote",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-31"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-15"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 11,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-047 (provázání grafu, třetí dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

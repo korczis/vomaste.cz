@@ -1,42 +1,43 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/vaclav-nebesky",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "vaclav-nebesky",
- "entityId": "vaclav-nebesky",
- "title": "Václav Nebeský",
- "entityType": "person",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "ivan-bednarik"
- ],
- "order": 427,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/vaclav-nebesky",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "vaclav-nebesky",
+  "entityId": "vaclav-nebesky",
+  "title": "Václav Nebeský",
+  "entityType": "person",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "ivan-bednarik"
   ],
-  "claimRefs": [
-   "CLM-02",
-   "CLM-43"
-  ],
-  "sourceRefs": [
-   "SRC-02",
-   "SRC-19",
-   "SRC-20",
-   "SRC-29"
+  "order": 427,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02",
+      "edge-bednarik-vaclav-nebesky"
+    ],
+    "claimRefs": [
+      "CLM-02",
+      "CLM-43"
+    ],
+    "sourceRefs": [
+      "SRC-02",
+      "SRC-19",
+      "SRC-20",
+      "SRC-29"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Místopředseda představenstva ČD, odešel souběžně s Bednárikem (2022); Bednárikův předchůdce v čele ČD. Uveden jen jako záznam personální změny. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (ivan-bednarik). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Místopředseda představenstva ČD, odešel souběžně s Bednárikem (2022); Bednárikův předchůdce v čele ČD. Uveden jen jako záznam personální změny. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (ivan-bednarik). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
-  }
- ]
 }

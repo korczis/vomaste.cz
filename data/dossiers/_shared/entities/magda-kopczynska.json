@@ -1,38 +1,40 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/magda-kopczynska",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "magda-kopczynska",
- "entityId": "magda-kopczynska",
- "title": "Magda Kopczyńska",
- "entityType": "person",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "ivan-bednarik"
- ],
- "order": 239,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/magda-kopczynska",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "magda-kopczynska",
+  "entityId": "magda-kopczynska",
+  "title": "Magda Kopczyńska",
+  "entityType": "person",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "ivan-bednarik"
   ],
-  "claimRefs": [
-   "CLM-26"
-  ],
-  "sourceRefs": [
-   "SRC-15"
+  "order": 239,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02",
+      "edge-bednarik-magda-kopczynska",
+      "edge-magda-kopczynska-dg-move"
+    ],
+    "claimRefs": [
+      "CLM-26"
+    ],
+    "sourceRefs": [
+      "SRC-15"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Šéfka generálního ředitelství Evropské komise DG MOVE; jednala s Bednárikem v Bruselu o spolufinancování VRT a sítě TEN-T. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (ivan-bednarik). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Šéfka generálního ředitelství Evropské komise DG MOVE; jednala s Bednárikem v Bruselu o spolufinancování VRT a sítě TEN-T. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (ivan-bednarik). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
-  }
- ]
 }

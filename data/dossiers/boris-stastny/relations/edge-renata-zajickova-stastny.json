@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/boris-stastny/relations/edge-renata-zajickova-stastny",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-renata-zajickova-stastny",
+  "relationId": "edge-renata-zajickova-stastny",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/boris-stastny"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/renata-zajickova"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/stastny"
+  },
+  "relationType": "RESPONDED_TO",
+  "label": "označila jeho reakci na nález nahrávacího zařízení za bezpečnostní riziko a jeho krizovou komunikaci za pubertální",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-21"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-09"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 4,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-047 (provázání grafu, třetí dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

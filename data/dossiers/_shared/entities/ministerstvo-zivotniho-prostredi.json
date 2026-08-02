@@ -1,59 +1,61 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/ministerstvo-zivotniho-prostredi",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "ministerstvo-zivotniho-prostredi",
- "entityId": "ministerstvo-zivotniho-prostredi",
- "title": "Ministerstvo životního prostředí ČR",
- "entityType": "public_institution",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "igor-cerveny",
-  "macinka-turek"
- ],
- "order": 281,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/ministerstvo-zivotniho-prostredi",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "ministerstvo-zivotniho-prostredi",
+  "entityId": "ministerstvo-zivotniho-prostredi",
+  "title": "Ministerstvo životního prostředí ČR",
+  "entityType": "public_institution",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "igor-cerveny",
+    "macinka-turek"
   ],
-  "claimRefs": [
-   "CLM-11",
-   "CLM-24",
-   "CLM-36",
-   "CLM-38",
-   "CLM-40",
-   "CLM-43",
-   "CLM-47",
-   "CLM-49",
-   "CLM-52"
-  ],
-  "sourceRefs": [
-   "SRC-07",
-   "SRC-18",
-   "SRC-20",
-   "SRC-27",
-   "SRC-29",
-   "SRC-30",
-   "SRC-31",
-   "SRC-33",
-   "SRC-34",
-   "SRC-44",
-   "SRC-45",
-   "SRC-49",
-   "SRC-50"
+  "order": 281,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02",
+      "edge-ministerstvo-zivotniho-prostredi-lukas-vaverka",
+      "edge-cerveny-ministerstvo-zivotniho-prostredi"
+    ],
+    "claimRefs": [
+      "CLM-11",
+      "CLM-24",
+      "CLM-36",
+      "CLM-38",
+      "CLM-40",
+      "CLM-43",
+      "CLM-47",
+      "CLM-49",
+      "CLM-52"
+    ],
+    "sourceRefs": [
+      "SRC-07",
+      "SRC-18",
+      "SRC-20",
+      "SRC-27",
+      "SRC-29",
+      "SRC-30",
+      "SRC-31",
+      "SRC-33",
+      "SRC-34",
+      "SRC-44",
+      "SRC-45",
+      "SRC-49",
+      "SRC-50"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Resort Igora Červeného; rekonstrukce kanceláří, nové oddělení pod Turkem, rušení míst. Odlišné od existující entity mzp2026 (událost jmenování). Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (igor-cerveny, macinka-turek). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Resort Igora Červeného; rekonstrukce kanceláří, nové oddělení pod Turkem, rušení míst. Odlišné od existující entity mzp2026 (událost jmenování). Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (igor-cerveny, macinka-turek). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
-  }
- ]
 }

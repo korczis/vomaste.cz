@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/relations/edge-tejc-karna-zaloba",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-tejc-karna-zaloba",
+  "relationId": "edge-tejc-karna-zaloba",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/tejc"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/karna-zaloba-na-soudkyni-os-benesov"
+  },
+  "relationType": "ASSOCIATED_WITH_EVENT",
+  "label": "Tejc podal kárnou žalobu na soudkyni v kauze Viktorky",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-08"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-07"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 7,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-048 (provázání grafu, třetí dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

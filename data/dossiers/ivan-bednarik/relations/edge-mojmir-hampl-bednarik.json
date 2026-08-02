@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/relations/edge-mojmir-hampl-bednarik",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-mojmir-hampl-bednarik",
+  "relationId": "edge-mojmir-hampl-bednarik",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/mojmir-hampl"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/bednarik"
+  },
+  "relationType": "RESPONDED_TO",
+  "label": "kritizoval výdajovou trajektorii dopravní infrastruktury jako neúměrnou ekonomice",
+  "status": "single",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-32"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-24"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 13,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-047 (provázání grafu, třetí dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

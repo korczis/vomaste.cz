@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/relations/edge-juchelka-kontrolanku",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-juchelka-kontrolanku",
+  "relationId": "edge-juchelka-kontrolanku",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/juchelka"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/kontrola-nku-mpsv"
+  },
+  "relationType": "SUBJECT_OF_PROCEEDING",
+  "label": "ministerstvo pod jeho vedením je předmětem správní kontroly NKÚ",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-42"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-11"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 12,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-048 (provázání grafu, třetí dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}
