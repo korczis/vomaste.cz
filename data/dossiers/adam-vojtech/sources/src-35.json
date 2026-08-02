@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-35",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-35",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "title": "SRC-35 — Olomoucký deník (Deník.cz)",
+  "description": "Babiš v Olomouci ke kauze defibrilátorů: Ředitel FNOL Havlík má důvěru.",
+  "outlet": "Olomoucký deník (Deník.cz)",
+  "sourceType": "zpravodajství",
+  "url": "https://olomoucky.denik.cz/zpravy_region/defibrilatory-kardio-olomouc-fakultni-nemocnice-babis-vojtech-reditel-havlik.html",
+  "published": "2026-02-18",
+  "retrieved": "2026-08-02",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-33"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Olomoucký deník (síť Deník.cz/VLM), publikováno v den akce\n18. 2. 2026, nezávisle na ČeskéNoviny.cz/ČTK (SRC-20) cituje premiéra\nBabiše totožnými slovy: „Samozřejmě, že má důvěru,“ a „Já považuji\npana ředitele z hlediska mých zkušeností za jednoho z nejlepších,\nkteré tady v České republice máme.“ Dodává, že „případné personální\nzměny se v této souvislosti zatím nechystají“ a že vláda čeká na\nvýsledky policejního šetření.\n\n**Nezávislost.** Jiný vydavatel (Deník.cz/VLM) než ČeskéNoviny.cz/ČTK —\nnezávislé potvrzení téhož výroku, nikoli převzatá agenturní zpráva."
+    }
+  ],
+  "order": 35
+}
