@@ -69,6 +69,13 @@ test("report states the public GitHub origin, form version, and the §20 mandato
   assert.match(report, /Publikace zůstává blokována\./);
 });
 
+// PHASE_006.md §11.5 — a status-specific next-step sentence, never a
+// promise about timing or outcome.
+test("report includes the §11.5 next-step sentence for the manifest's actual intake status", () => {
+  const report = renderIntakeReport(manifestWith());
+  assert.match(report, /Co bude dál:.*čeká na ruční posouzení vlastníkem projektu\./);
+});
+
 // Fence state at a given string offset: true if an odd number of fenced
 // code-block delimiters (lines starting with ``` of any length) occur
 // strictly before that offset — i.e. the offset sits inside an open fence.

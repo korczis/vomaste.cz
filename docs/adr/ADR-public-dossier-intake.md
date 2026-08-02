@@ -519,6 +519,70 @@ Prismatic není a nebude tvrdou závislostí.
   `npm run build` zelený; `git diff -- AGENTS.md data/authorizations.toml .github/workflows` prázdný —
   jediná změna v `.github/` je `navrh-dossieru.yml` sám, přesně jak §39 očekává. Fáze 6 kontrakt:
   `reports/intake/phase-05-implementation-report.md`.
+- 2026-08-02 — Fáze 6 implementována (stále **PROPOSED**). Nový `.github/workflows/dossier-intake.yml`
+  — první produkční GitHub orchestrace nad lokálním pipeline z Fáze 2-5. Trigger `issues` (opened/
+  edited/reopened/labeled/unlabeled/closed), `permissions: {contents: read, issues: write}` a nic
+  víc, `timeout-minutes: 10`, issue-scoped `concurrency` s `cancel-in-progress: true`, checkout
+  `persist-credentials: false`. Privilege separation vynucená architekturou, ne konvencí: zpracovací
+  krok (`scripts/intake/process-github-event.mjs`) nikdy nemá `GITHUB_TOKEN` v prostředí — čte jen
+  `$GITHUB_EVENT_PATH`, nikdy shell-interpoluje `issue.body`/`issue.title`; publikační krok
+  (`scripts/intake/publish-github-result.mjs`) je jediné místo s tokenem a čte výhradně už
+  sanitizovaný `_status.json`/`manifest.json`, ne syrový event znovu.
+
+  Nové moduly: `scripts/intake/adapters/github-event.mjs` (allowlist adaptér syrového GitHub payloadu
+  na interní event schema z Fáze 2 — nikdy passthrough), `scripts/intake/github/` — `production-adapter.mjs`
+  (jediný soubor s reálným `fetch()` proti GitHub REST, plain `fetch`, žádná nová závislost jako
+  Octokit), `mock-github-adapter.mjs` (in-memory fake, stejný interface), `find-managed-comment.mjs` +
+  `upsert-report-comment.mjs` (create-or-update jednoho komentáře; marker + trusted bot author
+  vyžadovány OBOJÍ; duplicitní managed komentáře: nejstarší se aktualizuje, ostatní se nikdy nemažou
+  automaticky), `sync-labels.mjs` (label je projekce stavu, nikdy zdroj pravdy; chybějící repo label
+  degraduje na `partial` s diagnostikou, nikdy neshodí celý běh — Varianta A, ne automatický bootstrap),
+  `determine-notification.mjs` (ping stav se čte z AKTUÁLNÍCH labelů issue před syncem — žádná nová
+  perzistentní vrstva; ping jen na skutečný přechod DO `triage`/`security_review_required` z jiného
+  předchozího stavu), `handle-closed-issue.mjs` (uzavření ≠ zamítnutí ani schválení; report se
+  aktualizuje, nikdy nemaže; `publication:blocked` přežívá), `build-safe-reports.mjs` (bezpečné reporty
+  pro invalid/internal-error/security-review — nikdy stack trace, nikdy syrový text podání u security
+  review), `publish-intake-result.mjs` (orchestrátor: stale-event guard přes znovu-načtené
+  `issue.updated_at`, pak ping-rozhodnutí, pak upsert komentáře, pak label sync).
+
+  `scripts/intake/validate-artifact-safety.mjs` brání upload artefaktu s tokenem/Authorization
+  hlavičkou/URL credentials/private key patternem/neočekávaným souborem — workflow YAML upload artefaktu
+  NENÍ `if: always()` bezpodmínečně, ale podmíněný přímo úspěchem tohoto kroku
+  (`steps.safety.outcome == 'success'`) — bezpečnostní bug nalezený a opravený během implementace, viz
+  níže. `scripts/ci/validate-intake-workflow.mjs` (+ 17 testů vč. 15 adversarial mutací reálného
+  workflow YAML) staticky ověřuje celý §24 seznam (trigger, permissions, persist-credentials, timeout,
+  concurrency, žádná interpolace issue.body/title, žádný secret mimo GITHUB_TOKEN, žádný deploy/git
+  push/gh pr create). 128 nových testů v `scripts/intake/{adapters,github}/*.test.mjs` +
+  `process-github-event.test.mjs` + `publish-github-result.test.mjs` (`npm run test:intake:github`).
+
+  **Skutečný bug nalezený a opravený při psaní samotného workflow YAML** (ne jen testů): první návrh
+  uploadu artefaktu měl `if: always()` bez podmínky — to by uploadlo artefakt, i kdyby krok "Validate
+  artifact safety" bezprostředně před ním SELHAL (tedy detekoval nebezpečný obsah). `if: always()`
+  na GitHub Actions kroku znamená "spusť i po selhání předchozích kroků", ne "spusť jen když předchozí
+  uspěly" — tyto dva významy jsou snadno zaměnitelné a přesně tahle záměna by byla reálná bezpečnostní
+  díra v produkci. Opraveno na `if: always() && steps.safety.outcome == 'success'` — artefakt se
+  uploadne jen když bezpečnostní validace explicitně uspěla, bez ohledu na to, jestli něco dřívějšího
+  selhalo. Publikační krok (post komentáře) si ponechává obyčejné `if: always()`, protože §15.3
+  vyžaduje, aby i skutečná interní chyba dostala bezpečný komentář — to je záměrná, jiná kategorie
+  než artefakt (report text je vždy syntetizovaný z bezpečných šablon, nikdy syrový výstup).
+
+  **Odchylky od zadání, s důvodem:**
+  1. Žádný `CODEOWNERS` soubor (§37) — repo dosud governance přes CODEOWNERS nepoužívá a mise sama
+     zakazuje ho zavést bez samostatného ADR rozhodnutí. Doporučení branch protection zdokumentována
+     v `docs/intake/operations.md` jako doporučení, nikdy netvrzená jako vynucená.
+  2. Produkční GitHub API adaptér používá nativní `fetch()` (Node 24), ne Octokit z `actions/
+     github-script` ani jako nová závislost — mise obojí výslovně povoluje (§19); `fetch()` zapadá do
+     existujícího vzoru "malý Node entrypoint s GITHUB_TOKEN" z Fáze 4 a nepřidává závislost.
+  3. Label bootstrap (§14 Varianta B) nevznikl jako automatizovaný script — jen dokumentace
+     (`docs/intake/github-labels.md`) s ručními `gh label create` příkazy pro maintainera, přesně jak
+     §14 preferuje ("Preferuj ruční bootstrap nebo samostatný trusted script").
+  4. `npm run intake:publish-fixture` demonstruje dva běhy (create → update) nad JEDNÍM mock adaptérem
+     místo dvou nezávislých ukázek — přesněji odpovídá skutečnému idempotentnímu chování (§16.1), které
+     má dokazovat.
+
+  `npm run build` zelený; `git diff -- AGENTS.md data/authorizations.toml data/dossiers` prázdný;
+  jediná změna v `.github/` je nový `dossier-intake.yml` samotný. Fáze 7 kontrakt:
+  `reports/intake/phase-06-implementation-report.md`.
 
 ---
 

@@ -1,0 +1,13 @@
+# Canonical maintainer/owner configuration (PHASE_006.md §12.1) — the ONE
+# place a GitHub login used for owner notification is written. Nothing
+# under scripts/intake/ hardcodes a login string; every module that needs
+# one reads this file. Adding a second maintainer or splitting per-area
+# ownership later is a data change here, not a source change.
+
+[intake]
+# GitHub login pinged when a public dossier-intake submission needs the
+# owner's decision (PHASE_006.md §12.2: intake_status=triage or
+# security_review_required). Not an e-mail address — see AGENTS.md and
+# the constitution on why this project doesn't collect or publish
+# personal contact details beyond what's already public (the repo owner).
+review_owner_github = "korczis"

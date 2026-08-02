@@ -1,4 +1,12 @@
-# Intake local processor (Phase 2/3/4/5)
+# Intake local processor (Phase 2/3/4/5/6)
+
+Since Phase 6, this same local pipeline also runs automatically from a
+real GitHub Issue Form submission via
+`.github/workflows/dossier-intake.yml` — see
+`docs/intake/github-actions-workflow.md`. `process-github-event.mjs` is
+the adapter entrypoint the workflow calls; everything below this line
+still describes the local, offline, `--event <fixture-path>` CLI this
+repository's tests and fixtures use directly.
 
 `scripts/intake/process-issue.mjs` turns one local GitHub-issue-event
 fixture into an intake manifest, a Markdown report, and a

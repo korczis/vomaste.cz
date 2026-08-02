@@ -1,4 +1,4 @@
-# Intake security boundary (Phase 4)
+# Intake security boundary (Phase 4/6)
 
 What actually enforces the network-safety guarantees this whole intake
 mission depends on, and why. See `docs/intake/url-preflight.md` for the
@@ -50,18 +50,47 @@ that would construct it, so there is no code path from `npm run
 intake:fixture` (which never passes it) to any network primitive.
 `preflight-security-gates.test.mjs` pins this down statically.
 
-## GitHub Actions will need its own threat model
+## GitHub Actions' own threat model (Phase 6)
 
-This phase's preflight runs from a developer's or CI's own machine
-against a fixture or, with `--preflight`, real URLs a human explicitly
-asked it to check. A **future** GitHub Actions workflow (Phase 6, not yet
-implemented) that runs preflight automatically against attacker-influenced
-issue content is a materially different threat model: it would need its
-own review of egress restrictions, secrets exposure, log redaction, and
-resource limits appropriate to an automated, internet-facing trigger —
-this phase's SSRF hardening is necessary for that future work but not by
-itself sufficient to declare it safe. That review is explicitly out of
-scope here (§30) and must happen before any such workflow ships.
+Phase 4's preflight ran from a developer's or CI's own machine against a
+fixture or, with `--preflight`, real URLs a human explicitly asked it to
+check — a materially different threat model from an automated workflow
+that runs preflight against attacker-influenced issue content on every
+public submission. Phase 6 is the review this section originally
+deferred; see `docs/intake/github-actions-workflow.md` for the full
+architecture and `docs/adr/ADR-public-dossier-intake.md`'s decision log
+for the implementation record. The concrete answers:
+
+- **Egress restrictions**: none beyond what Phase 4 already enforces
+  (the same SSRF-hardened transport, unmodified) — the workflow adds no
+  new egress path. `--preflight` in Actions caps at
+  `WORKFLOW_MAX_URLS_PREFLIGHTED = 10` (`scripts/intake/github/constants.mjs`),
+  smaller than Phase 4's own default, and the whole job has a
+  `timeout-minutes: 10` ceiling on top.
+- **Secrets exposure**: `GITHUB_TOKEN` never reaches the step that runs
+  preflight (`process-github-event.mjs`, which has no token in its
+  environment at all — see "Token isolation" in
+  `github-actions-workflow.md`) — a hostile submission processed by that
+  step has literally nothing to exfiltrate even if it could somehow
+  escape the preflight sandbox, which it can't (URLs are only ever
+  syntax-extracted and network-checked, never executed).
+- **Log/artifact redaction**: `scripts/intake/validate-artifact-safety.mjs`
+  gates every artifact upload — no token pattern, `Authorization`
+  header, URL credential, private-key block, or unexpected file is ever
+  uploaded, and the artifact upload step is wired so a failed safety
+  check blocks the upload entirely (never `if: always()` on the upload
+  step itself — see the workflow doc's step-by-step notes).
+- **Resource limits appropriate to an automated, internet-facing
+  trigger**: issue-scoped `concurrency` with `cancel-in-progress: true`
+  means an edit storm cancels its own predecessors rather than queuing
+  unboundedly; the job-level `timeout-minutes: 10` bounds worst-case
+  runtime regardless of how many slow URLs a submission lists.
+
+None of this weakens Phase 4's own guarantees — it's the same pinned
+DNS/HTTP transport, unmodified. What Phase 6 adds is the operational
+envelope (permissions, concurrency, timeout, token isolation, artifact
+sanitization) that makes running it automatically, on untrusted public
+input, actually safe.
 
 ## How URL secrets are redacted
 
