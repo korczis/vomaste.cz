@@ -288,7 +288,7 @@ Generated from 480 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: igor-cerveny, macinka-turek
 - Claims: CLM-20, CLM-46
-- Sources: SRC-23, SRC-31 (3 independent source families)
+- Sources: SRC-23, SRC-31 (2 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -1380,7 +1380,7 @@ Generated from 480 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: adam-vojtech
 - Claims: CLM-18, CLM-45, CLM-46, CLM-48, CLM-49
-- Sources: SRC-11, SRC-27, SRC-28, SRC-29 (4 independent source families)
+- Sources: SRC-11, SRC-27, SRC-28, SRC-29 (3 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -1742,7 +1742,7 @@ Generated from 480 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: igor-cerveny
 - Claims: CLM-26
-- Sources: SRC-11 (1 independent source family)
+- Sources: SRC-11 (0 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -1782,7 +1782,7 @@ Generated from 480 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: igor-cerveny
 - Claims: CLM-16, CLM-17, CLM-18, CLM-49, CLM-56, CLM-57
-- Sources: SRC-10, SRC-16, SRC-17, SRC-18, SRC-19 (5 independent source families)
+- Sources: SRC-10, SRC-16, SRC-17, SRC-18, SRC-19 (4 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -1832,7 +1832,7 @@ Generated from 480 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: igor-cerveny
 - Claims: CLM-02, CLM-05, CLM-07, CLM-20, CLM-26
-- Sources: SRC-02, SRC-03, SRC-04, SRC-11, SRC-13, SRC-14 (6 independent source families)
+- Sources: SRC-02, SRC-03, SRC-04, SRC-11, SRC-13, SRC-14 (5 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -1892,7 +1892,7 @@ Generated from 480 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: zuzana-mrazova
 - Claims: CLM-02, CLM-03, CLM-18, CLM-20, CLM-21, CLM-24
-- Sources: SRC-02, SRC-04, SRC-05, SRC-07, SRC-13, SRC-14, SRC-20, SRC-27 (8 independent source families)
+- Sources: SRC-02, SRC-04, SRC-05, SRC-07, SRC-13, SRC-14, SRC-20, SRC-27 (6 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -1912,7 +1912,7 @@ Generated from 480 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: robert-plaga
 - Claims: CLM-02, CLM-05, CLM-06, CLM-20, CLM-24, CLM-26
-- Sources: SRC-02, SRC-03, SRC-04, SRC-12, SRC-13, SRC-14, SRC-23, SRC-28 (8 independent source families)
+- Sources: SRC-02, SRC-03, SRC-04, SRC-12, SRC-13, SRC-14, SRC-23, SRC-28 (7 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -2202,7 +2202,7 @@ Generated from 480 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: igor-cerveny
 - Claims: CLM-18, CLM-51, CLM-57
-- Sources: SRC-10, SRC-16, SRC-17, SRC-18, SRC-19 (5 independent source families)
+- Sources: SRC-10, SRC-16, SRC-17, SRC-18, SRC-19 (4 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -2242,7 +2242,7 @@ Generated from 480 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: zuzana-mrazova
 - Claims: CLM-02, CLM-04, CLM-20, CLM-21, CLM-37
-- Sources: SRC-02, SRC-04, SRC-05, SRC-13, SRC-14, SRC-16 (6 independent source families)
+- Sources: SRC-02, SRC-04, SRC-05, SRC-13, SRC-14, SRC-16 (5 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -2997,7 +2997,7 @@ Generated from 480 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: adam-vojtech
 - Claims: CLM-38, CLM-39
-- Sources: SRC-21, SRC-25 (2 independent source families)
+- Sources: SRC-21, SRC-25 (1 independent source family)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -3027,7 +3027,7 @@ Generated from 480 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: robert-plaga
 - Claims: CLM-12, CLM-13, CLM-14, CLM-30, CLM-31, CLM-32, CLM-33
-- Sources: SRC-06, SRC-07, SRC-08, SRC-16, SRC-24, SRC-25, SRC-31, SRC-32 (8 independent source families)
+- Sources: SRC-06, SRC-07, SRC-08, SRC-16, SRC-24, SRC-25, SRC-31, SRC-32 (6 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -3803,7 +3803,7 @@ Generated from 480 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: adam-vojtech
 - Claims: CLM-46
-- Sources: SRC-28 (1 independent source family)
+- Sources: SRC-28 (0 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -4423,7 +4423,7 @@ Generated from 480 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: robert-plaga
 - Claims: CLM-27, CLM-28, CLM-51
-- Sources: SRC-21, SRC-23, SRC-28 (3 independent source families)
+- Sources: SRC-21, SRC-23, SRC-28 (2 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -4557,7 +4557,7 @@ Generated from 480 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: zuzana-mrazova
 - Claims: CLM-06, CLM-22, CLM-25
-- Sources: SRC-02, SRC-04, SRC-05, SRC-13, SRC-20 (5 independent source families)
+- Sources: SRC-02, SRC-04, SRC-05, SRC-13, SRC-20 (3 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -4677,7 +4677,7 @@ Generated from 480 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: adam-vojtech
 - Claims: CLM-39
-- Sources: SRC-21 (1 independent source family)
+- Sources: SRC-21 (0 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
