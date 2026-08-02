@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/boris-stastny/relations/edge-plaud-shenzhen-smart-connect-technology",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-plaud-shenzhen-smart-connect-technology",
+  "relationId": "edge-plaud-shenzhen-smart-connect-technology",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/boris-stastny"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/plaud"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/shenzhen-smart-connect-technology"
+  },
+  "relationType": "ASSOCIATED_WITH_EVENT",
+  "label": "prezentuje se jako americký startup se sídlem v Delaware, ale výrobcem je čínská Shenzhen Smart Connect Technology",
+  "status": "single",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-17"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-08"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 14,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-047 (provázání grafu, třetí dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}

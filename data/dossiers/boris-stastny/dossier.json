@@ -66,7 +66,8 @@
           "CLM-36",
           "CLM-37",
           "CLM-38",
-          "CLM-39"
+          "CLM-39",
+          "CLM-05"
         ],
         "sources": [
           "SRC-01",
@@ -85,7 +86,8 @@
           "SRC-15",
           "SRC-16",
           "SRC-17",
-          "SRC-18"
+          "SRC-18",
+          "SRC-02"
         ]
       },
       {
@@ -117,12 +119,220 @@
         "sources": [
           "SRC-05"
         ]
+      },
+      {
+        "entity": "renata-zajickova",
+        "label": "Renáta Zajíčková",
+        "claims": [
+          "CLM-05",
+          "CLM-21"
+        ],
+        "sources": [
+          "SRC-02",
+          "SRC-09"
+        ]
+      },
+      {
+        "entity": "narodni-sportovni-agentura",
+        "label": "Národní sportovní agentura (NSA)",
+        "claims": [
+          "CLM-22",
+          "CLM-24",
+          "CLM-30"
+        ],
+        "sources": [
+          "SRC-11",
+          "SRC-12",
+          "SRC-15"
+        ]
+      },
+      {
+        "entity": "ondrej-sebek",
+        "label": "Ondřej Šebek",
+        "claims": [
+          "CLM-22",
+          "CLM-28"
+        ],
+        "sources": [
+          "SRC-11",
+          "SRC-12"
+        ]
+      },
+      {
+        "entity": "frantisek-horak",
+        "label": "František Horák",
+        "claims": [
+          "CLM-22"
+        ],
+        "sources": [
+          "SRC-11",
+          "SRC-12"
+        ]
+      },
+      {
+        "entity": "ivo-jebousek",
+        "label": "Ivo Jebousek",
+        "claims": [
+          "CLM-24"
+        ],
+        "sources": [
+          "SRC-11",
+          "SRC-12"
+        ]
+      },
+      {
+        "entity": "karel-kovar",
+        "label": "Karel Kovář",
+        "claims": [
+          "CLM-30",
+          "CLM-31"
+        ],
+        "sources": [
+          "SRC-15"
+        ]
+      },
+      {
+        "entity": "jan-bohac",
+        "label": "Jan Boháč",
+        "claims": [
+          "CLM-31"
+        ],
+        "sources": [
+          "SRC-15"
+        ]
+      },
+      {
+        "entity": "petr-fiala",
+        "label": "Petr Fiala",
+        "claims": [
+          "CLM-29"
+        ],
+        "sources": [
+          "SRC-11"
+        ]
+      },
+      {
+        "entity": "plaud",
+        "label": "Plaud",
+        "claims": [
+          "CLM-07",
+          "CLM-12",
+          "CLM-17"
+        ],
+        "sources": [
+          "SRC-03",
+          "SRC-05",
+          "SRC-08"
+        ]
+      },
+      {
+        "entity": "shenzhen-smart-connect-technology",
+        "label": "Shenzhen Smart Connect Technology",
+        "claims": [
+          "CLM-17"
+        ],
+        "sources": [
+          "SRC-08"
+        ]
+      },
+      {
+        "entity": "andor-sandor",
+        "label": "Andor Šándor",
+        "claims": [
+          "CLM-18"
+        ],
+        "sources": [
+          "SRC-07",
+          "SRC-08"
+        ]
+      },
+      {
+        "entity": "stanislav-kazbunda",
+        "label": "Stanislav Kazbunda",
+        "claims": [
+          "CLM-19"
+        ],
+        "sources": [
+          "SRC-07",
+          "SRC-08"
+        ]
+      },
+      {
+        "entity": "karla-mrackova",
+        "label": "Karla Mráčková",
+        "claims": [
+          "CLM-16"
+        ],
+        "sources": [
+          "SRC-03"
+        ]
+      },
+      {
+        "entity": "tomas-zdechovsky",
+        "label": "Tomáš Zdechovský",
+        "claims": [
+          "CLM-34",
+          "CLM-39"
+        ],
+        "sources": [
+          "SRC-16",
+          "SRC-18"
+        ]
+      },
+      {
+        "entity": "vit-rakusan",
+        "label": "Vít Rakušan",
+        "claims": [
+          "CLM-38"
+        ],
+        "sources": [
+          "SRC-18"
+        ]
+      },
+      {
+        "entity": "daniel-docekal",
+        "label": "Daniel Dočekal",
+        "claims": [
+          "CLM-35"
+        ],
+        "sources": [
+          "SRC-16"
+        ]
+      },
+      {
+        "entity": "audit-nsa",
+        "label": "Interní audit Národní sportovní agentury",
+        "claims": [
+          "CLM-27"
+        ],
+        "sources": [
+          "SRC-14",
+          "SRC-15"
+        ]
       }
     ],
     "edges": [
       "edge-stastny-vlada",
       "edge-babis-stastny",
-      "edge-bartha-stastny"
+      "edge-bartha-stastny",
+      "edge-renata-zajickova-stastny",
+      "edge-stastny-narodni-sportovni-agentura",
+      "edge-stastny-ondrej-sebek",
+      "edge-ondrej-sebek-stastny",
+      "edge-stastny-frantisek-horak",
+      "edge-ivo-jebousek-narodni-sportovni-agentura",
+      "edge-karel-kovar-narodni-sportovni-agentura",
+      "edge-jan-bohac-karel-kovar",
+      "edge-petr-fiala-stastny",
+      "edge-stastny-plaud",
+      "edge-plaud-shenzhen-smart-connect-technology",
+      "edge-andor-sandor-stastny",
+      "edge-stanislav-kazbunda-stastny",
+      "edge-karla-mrackova-stastny",
+      "edge-tomas-zdechovsky-stastny",
+      "edge-vit-rakusan-stastny",
+      "edge-daniel-docekal-stastny",
+      "edge-stastny-audit-nsa"
     ]
   },
   "contentBlocks": [

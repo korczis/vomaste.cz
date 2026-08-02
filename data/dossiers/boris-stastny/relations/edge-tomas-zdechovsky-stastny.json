@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/boris-stastny/relations/edge-tomas-zdechovsky-stastny",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-tomas-zdechovsky-stastny",
+  "relationId": "edge-tomas-zdechovsky-stastny",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/boris-stastny"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/tomas-zdechovsky"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/stastny"
+  },
+  "relationType": "RESPONDED_TO",
+  "label": "šířil kauzu rozporu v číslech u příspěvku na sítích a označil ji za neuvěřitelnou ostudu ministra",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-34"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-39"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-16"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-18"
+    }
+  ],
+  "subjects": [],
+  "directed": true,
+  "order": 18,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-047 (provázání grafu, třetí dávka) z už existujícího, citovaného tvrzení tohoto dossieru."
+    }
+  ]
+}
