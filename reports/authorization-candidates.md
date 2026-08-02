@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 480 context entities across 24 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 481 context entities across 24 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -1979,6 +1979,7 @@ Generated from 480 context entities across 24 dossier(s). Regenerate with `npm r
 - Claims: CLM-07
 - Sources: SRC-15 (1 independent source family)
 - Relations: 
+  - edge-dobes-kauza2025 (vojtech-dobes -> kauza2025, "autor screenshotů, na nichž je založena kauza (2025), a komentátor jejího odložení (2026)", dossier: macinka-turek)
   - edge-kauza2025-policie (kauza2025 -> policie, "prověřování výroků i oznámení na Deník N odloženo (28. 7. 2026)", dossier: macinka-turek)
   - edge-turek-kauza2025 (turek -> kauza2025, "subjekt", dossier: macinka-turek)
 - Missing: explicit owner authorization to promote this to its own dossier
@@ -4690,6 +4691,17 @@ Generated from 480 context entities across 24 dossier(s). Regenerate with `npm r
   - edge-agrofert-vodnanska (agrofert -> vodnanska-drubez, "firma ze skupiny", dossier: andrej-babis)
   - edge-vodnanska-szif (vodnanska-drubez -> szif, "SZIF ukončil administraci žádosti (2023); NSS 1/2025 vyhověl kasační stížnosti fondu", dossier: andrej-babis)
   - edge-vodnanska-ustavnisoud (vodnanska-drubez -> ustavni-soud, "ústavní stížnost odmítnuta 1/2026 (dotace 75 mil. Kč) — spor o nárok na dotaci, ne o vině", dossier: andrej-babis)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Vojtěch Dobeš (`vojtech-dobes`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: macinka-turek
+- Claims: CLM-07, CLM-55
+- Sources: SRC-61 (1 independent source family)
+- Relations: 
+  - edge-dobes-kauza2025 (vojtech-dobes -> kauza2025, "autor screenshotů, na nichž je založena kauza (2025), a komentátor jejího odložení (2026)", dossier: macinka-turek)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Vojtěch Faltus (`vojtech-faltus`)

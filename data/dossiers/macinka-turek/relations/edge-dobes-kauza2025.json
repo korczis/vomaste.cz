@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/macinka-turek/relations/edge-dobes-kauza2025",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-dobes-kauza2025",
+  "relationId": "edge-dobes-kauza2025",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/vojtech-dobes"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/kauza2025"
+  },
+  "relationType": "ASSOCIATED_WITH_EVENT",
+  "label": "autor screenshotů, na nichž je založena kauza (2025), a komentátor jejího odložení (2026)",
+  "status": "quote",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-55"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-61"
+    }
+  ],
+  "subjects": [
+    "turek"
+  ],
+  "directed": true,
+  "order": 34,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam vztahu edge-dobes-kauza2025 — typ vztahu, podporující tvrzení a zdroje v tabulce výše jsou úplné. Status CITACE znamená, že jde o Dobešovo vlastní hodnocení (CLM-55), ne o nezávisle potvrzený forenzní nález. Hlavní stránka dossieru vykresluje interaktivní graf ze stejných dat."
+    }
+  ]
+}

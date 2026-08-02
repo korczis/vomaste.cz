@@ -333,6 +333,16 @@
         "sources": [
           "SRC-20"
         ]
+      },
+      {
+        "entity": "vojtech-dobes",
+        "label": "Vojtěch Dobeš",
+        "claims": [
+          "CLM-55"
+        ],
+        "sources": [
+          "SRC-61"
+        ]
       }
     ],
     "edges": [
@@ -368,7 +378,8 @@
       "edge-kauza2025-policie",
       "edge-turek-zapperclub",
       "edge-zapperclub-mzdrav",
-      "edge-zapperclub-szpi"
+      "edge-zapperclub-szpi",
+      "edge-dobes-kauza2025"
     ],
     "clusters": [
       {

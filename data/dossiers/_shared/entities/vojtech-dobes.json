@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/vojtech-dobes",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "vojtech-dobes",
+  "entityId": "vojtech-dobes",
+  "title": "Vojtěch Dobeš",
+  "entityType": "person",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "macinka-turek"
+  ],
+  "order": 464,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "graph-linking-review-2026-08-02"
+    ],
+    "claimRefs": [
+      "CLM-07",
+      "CLM-55"
+    ],
+    "sourceRefs": [
+      "SRC-61"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — podle citovaného zpravodajství (Deník N) autor screenshotů, na nichž je založena říjnová 2025 investigace o údajně smazaných příspěvcích připisovaných Filipu Turkovi (CLM-07); k odložení věci pro promlčení uvedl vlastní hodnocení (CLM-55). Uveden, protože se jmenovitě objevuje v citovaném obsahu autorizovaného dossieru macinka-turek. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o Dobešovi samotném."
+    }
+  ]
+}
