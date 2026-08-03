@@ -16,6 +16,6 @@ gap_id = "GAP-14"
 +++
 Nebylo zjištěno žádné soudní rozhodnutí, které by konstatovalo osobní pochybení Martina Šebestyána.
 
-**Proč je to mezera**: Žádný z ověřených zdrojů neuvádí soudní ani správní rozhodnutí proti jeho osobě. Všechna kritická tvrzení v tomto materiálu jsou hodnocením politiků, nevládních organizací, zájmových svazů nebo novinářů a jako taková musí být atribuována. Tato mezera **není** zjištěním žádným
-směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
-otevřeným zdrojem.
+**Proč je to mezera**: Žádný z ověřených zdrojů neuvádí soudní ani správní rozhodnutí proti jeho osobě. Všechna kritická tvrzení v tomto materiálu jsou hodnocením politiků, nevládních organizací, zájmových svazů nebo novinářů a jako taková musí být atribuována. Tato mezera **není** zjištěním žádným směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit otevřeným zdrojem.
+
+**Opakovaná kontrola k 2026-08-03**: přímo otevřen přehledový článek CEDMO (SRC-37, 30. 4. 2026 — již citovaný v CLM-51), který shrnuje všechny dohledatelné soudní kauzy v tomto tématu. Žádná z nich nesměřuje proti Šebestyánovi osobně — spory vedou dceřiné firmy Agrofertu proti SZIF/ministerstvu jako instituci (Městský soud v Praze, NSS), samostatně probíhá znovuotevřený spor Schrom Farms v. ministerstvo (NSS, duben 2026) a rozhodnutí týkající se Andreje Babiše a jeho střetu zájmů. Šebestyán v žádném z nich nefiguruje jako žalovaná osoba. Odpověď zůstává „žádné takové rozhodnutí nebylo nalezeno“ — nyní ověřeno šířeji, ne jen absencí nálezu. Mezera zůstává otevřená (jde o metodicky nezjistitelnou negativní skutečnost, ne o dosud neobjevený fakt).
