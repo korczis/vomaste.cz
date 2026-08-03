@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-34",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-34",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
+  },
+  "title": "SRC-34 — ČeskéNoviny.cz (ČTK), 15. 7. 2026",
+  "description": "Evropští žalobci zahájili trestní řízení kvůli vyplácení dotací Agrofertu.",
+  "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceType": "zpravodajství",
+  "url": "https://www.ceskenoviny.cz/zpravy/-evropsti-zalobci-zahajili-trestni-rizeni-kvuli-vyplaceni-dotaci-agrofertu/2850717",
+  "published": "2026-07-15",
+  "retrieved": "2026-08-03",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-49"
+    }
+  ],
+  "subjects": [
+    "sebestyan"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Co dokládá.** Nezávisle potvrzuje ČT24 (SRC-33): evropská žalobkyně Daniela Bártíková citovaná doslovně: „Po řádném ověření informací jsem dne 24. 5. 2026 vydala rozhodnutí o zahájení trestního řízení.“ Řízení navazuje na únorové trestní oznámení Pirátů kvůli podezření na poškození finančních zájmů EU, zneužití pravomoci a porušení povinnosti při správě cizího majetku. Martin Šebestyán v článku jmenován není.\n\n**Proč je to tu důležité.** Druhý, nezávislý zdroj (jiná vydavatelská rodina než ČT24) pro [CLM-49](@/dossiers/martin-sebestyan/claims/clm-49.md), umožňující status CORROBORATED namísto 1 ZDROJ."
+    }
+  ],
+  "order": 34
+}
