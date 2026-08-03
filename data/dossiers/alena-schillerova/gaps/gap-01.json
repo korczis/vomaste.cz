@@ -9,10 +9,10 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
   },
-  "title": "GAP-01 — Osud novely rozpočtových zákonů po květnovém projednávání",
-  "description": "Citované zdroje končí u projednávání ve Sněmovně; výsledek nebyl ve zkontrolovaných zdrojích nalezen.",
-  "priority": "vysoká",
-  "checked": "2026-07-30",
+  "title": "GAP-01 — Osud novely rozpočtových zákonů po květnovém projednávání — zodpovězeno",
+  "description": "Dossier už dokumentuje celý další průběh (CLM-14 až CLM-40): přehlasování Senátu, prezidentské veto — jen to nebylo promítnuto zpět do této mezery.",
+  "priority": "nízká",
+  "checked": "2026-08-03",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-05"
@@ -22,6 +22,12 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-15"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-17"
     }
   ],
   "subjects": [
@@ -30,7 +36,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Citovaná zpráva ([SRC-03](@/dossiers/alena-schillerova/sources/src-03.md),\n13. 5. 2026) zachycuje projednávání novely rozpočtových zákonů ve\nSněmovně a kritiku opozice. Ve zkontrolovaných zdrojích **nebyl k datu\nkontroly nalezen** doklad o dalším osudu novely: zda byla schválena, v\njaké podobě, zda prošla Senátem, zda ji podepsal prezident, ani zda byly\nsporné pozměňovací návrhy přijaty či vypuštěny.\n\nTato mezera **není** zjištěním, že by novela byla nebo nebyla schválena —\njen že dossier k tomu nemá doklad.\n\n**Podmínka uzavření**: dohledání a přímé otevření zdroje k výsledku\nlegislativního procesu (sněmovní tisk, usnesení, Sbírka zákonů nebo\nzpravodajství o výsledku) a doplnění tvrzení s odpovídajícím stavem."
+      "value": "Osud novely rozpočtových zákonů po květnovém projednávání — zodpovězeno\n\n**Původní mezera** (30. 7. 2026): citovaná zpráva ([SRC-03](@/dossiers/alena-schillerova/sources/src-03.md), 13. 5. 2026) zachycovala jen projednávání ve Sněmovně a kritiku opozice; další osud novely nebyl ve zkontrolovaných zdrojích tehdy nalezen.\n\n**Odpověď (ověřeno 3. 8. 2026, dossier už mezitím doplněn dalšími sessions)**: novelu Sněmovna poprvé schválila 15. 5. 2026. Senát ji vrátil s omezujícími podmínkami (posílení sněmovní kontroly, omezení pravomoci ministerstva financí měnit rozpočty nezávislých institucí) — Sněmovna je odmítla a v noci na 8. 7. 2026 svou verzi potvrdila přesně 101 hlasy vládní koalice, minimem potřebným ke schválení ([CLM-15](@/dossiers/alena-schillerova/claims/clm-15.md)). Prezident Petr Pavel ji 22. 7. 2026 vetoval s odůvodněním rizika nekontrolovaného zadlužení ([CLM-17](@/dossiers/alena-schillerova/claims/clm-17.md) a násl.). Sporné senátní pozměňovací podmínky byly tedy Sněmovnou vypuštěny/odmítnuty, ne přijaty.\n\nTato mezera je tímto zodpovězena a uzavřena. Zda Sněmovna prezidentovo veto přehlasuje, je nová, samostatná otevřená otázka — viz [GAP-09](@/dossiers/alena-schillerova/gaps/gap-09.md)."
     }
   ],
   "order": 1

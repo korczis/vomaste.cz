@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/gaps/GAP-09",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-09",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "title": "GAP-09 — Nerozhodnuto, zda Sněmovna přehlasuje prezidentovo veto novely rozpočtových zákonů",
+  "description": "Přehlasování veta bylo k datu kontroly (3. 8. 2026) plánováno na týden od 24. 8. 2026, ale ještě neproběhlo.",
+  "priority": "vysoká",
+  "checked": "2026-08-03",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-17"
+    }
+  ],
+  "subjects": [
+    "schillerova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Nerozhodnuto, zda Sněmovna přehlasuje prezidentovo veto novely rozpočtových zákonů.\n\n**Proč je to mezera**: prezident Petr Pavel novelu 22. 7. 2026 vetoval ([CLM-17](@/dossiers/alena-schillerova/claims/clm-17.md)); koalice ohlásila záměr veto přehlasovat, hlasování bylo k datu kontroly plánováno na týden od 24. 8. 2026 (ČT24, 22. 7. 2026), ale k 3. 8. 2026 ještě neproběhlo. Tato mezera **není** zjištěním žádným směrem — zaznamenává jen, co ke dni kontroly ještě není rozhodnuto.\n\n**Podmínka uzavření**: přímé otevření zdroje k výsledku hlasování o přehlasování veta (Sněmovna ho buď potvrdí, nebo veto zůstane v platnosti a novela nevejde v účinnost v podobě schválené Sněmovnou)."
+    }
+  ],
+  "order": 9
+}
