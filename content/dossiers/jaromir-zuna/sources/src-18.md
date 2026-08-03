@@ -19,3 +19,5 @@ src_id = "SRC-18"
 Obsah připravované koncepce (těžká a střední brigáda, vícevrstvá PVO, nábor až 10 tis. vojáků) a rozpis plánovaných akvizic s cenami; koncepce měla jít na červnovou Bezpečnostní radu státu za účasti prezidenta Pavla.
 
 Zdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji.
+
+**Doplnění (GAP-10, 2026-08-03).** Článek výslovně uvádí, že materiál je utajovaný a informace unikly jen částečně; exministryně Černochová k variantám financování — viz [CLM-57](@/dossiers/jaromir-zuna/claims/clm-57.md).

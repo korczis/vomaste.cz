@@ -19,6 +19,9 @@
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-37"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-57"
     }
   ],
   "subjects": [
@@ -27,7 +30,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "**Nová armádní koncepce do roku 2040. Česko chystá obří nákupy za stovky miliard, do hry vstoupí i prezident Pavel**\n\nObsah připravované koncepce (těžká a střední brigáda, vícevrstvá PVO, nábor až 10 tis. vojáků) a rozpis plánovaných akvizic s cenami; koncepce měla jít na červnovou Bezpečnostní radu státu za účasti prezidenta Pavla.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+      "value": "**Nová armádní koncepce do roku 2040. Česko chystá obří nákupy za stovky miliard, do hry vstoupí i prezident Pavel**\n\nObsah připravované koncepce (těžká a střední brigáda, vícevrstvá PVO, nábor až 10 tis. vojáků) a rozpis plánovaných akvizic s cenami; koncepce měla jít na červnovou Bezpečnostní radu státu za účasti prezidenta Pavla.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji.\n\n**Doplnění (GAP-10, 2026-08-03).** Článek výslovně uvádí, že materiál je utajovaný a informace unikly jen částečně; exministryně Černochová k variantám financování — viz [CLM-57](@/dossiers/jaromir-zuna/claims/clm-57.md)."
     }
   ],
   "order": 18

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-57",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-57",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "text": "Koncepce výstavby AČR do roku 2040 je utajovaný materiál, proto není zveřejněna na webu ministerstva obrany. Exministryně Černochová k variantám financování uvedla, že armáda navrhuje několik variant, každá v řádu vyšších stovek miliard korun. Dokument měl být v červnu 2026 předložen Bezpečnostní radě státu za účasti prezidenta Pavla.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-18"
+    }
+  ],
+  "subjects": [
+    "zuna"
+  ],
+  "order": 57,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam tvrzení CLM-57 — shrnutí, stav a\nzdroj výše jsou úplné. Odpovídá na [GAP-10](@/dossiers/jaromir-zuna/gaps/gap-10.md):\nprimární dokument chybí, protože je záměrně utajovaný, ne kvůli\nneúplné rešerši. Zdroj (SRC-18) je stejný, jaký už v dossieru\ndokládá CLM-37 — jde o doplňkovou informaci ze stejného, už\nověřeného článku."
+    }
+  ]
+}
