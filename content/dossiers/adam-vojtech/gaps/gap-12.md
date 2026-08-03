@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
-title = "GAP-12 — Chybí oficiální primární zdroj (tisková zpráva ministerstva zdravotnictví nebo stanovisko "
-description = "Vyhledávání na mzd.gov.cz a fnol.cz nevrátilo přímý odkaz na příslušnou tiskovou zprávu; všechna tvrzení proto stojí na zpravodajských zdroj"
+title = "GAP-12 — Chybí oficiální primární zdroj k závěrům komise — dohledán a doplněn"
+description = "Dohledána a přímo otevřena oficiální tisková zpráva FN Olomouc z 9. 7. 2026 (SRC-42), doplněna k CLM-25/26/27."
 template = "dossier-gap.html"
 weight = 12
 
@@ -14,8 +14,10 @@ record_type = "gap"
 lang = "cs"
 gap_id = "GAP-12"
 +++
-Chybí oficiální primární zdroj (tisková zpráva ministerstva zdravotnictví nebo stanovisko FN Olomouc na vlastním webu) k závěrům komise z července 2026.
+Chybí oficiální primární zdroj k závěrům komise — dohledán a doplněn
 
-**Proč je to mezera**: Vyhledávání na mzd.gov.cz a fnol.cz nevrátilo přímý odkaz na příslušnou tiskovou zprávu; všechna tvrzení proto stojí na zpravodajských zdrojích. Tato mezera **není** zjištěním žádným
-směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
-otevřeným zdrojem.
+**Původní mezera** (30. 7. 2026): vyhledávání na mzd.gov.cz a fnol.cz tehdy nevrátilo přímý odkaz na příslušnou tiskovou zprávu; všechna tvrzení proto stála jen na zpravodajských zdrojích.
+
+**Ověřeno 3. 8. 2026**: dohledána a přímo otevřena oficiální tisková zpráva FN Olomouc „Vedení FN Olomouc informuje o vývoji ve věci implantací kardioverterů na kardiologické klinice“ (fnol.cz, 9. 7. 2026 — den před rozsáhlým zpravodajským pokrytím) — [SRC-42](@/dossiers/adam-vojtech/sources/src-42.md). Doplněna jako další zdroj k již dříve CORROBORATED tvrzením [CLM-25](@/dossiers/adam-vojtech/claims/clm-25.md), [CLM-26](@/dossiers/adam-vojtech/claims/clm-26.md) a [CLM-27](@/dossiers/adam-vojtech/claims/clm-27.md), jejichž věcný obsah přímo potvrzuje.
+
+Tato mezera je tímto vyřešena a uzavřena.

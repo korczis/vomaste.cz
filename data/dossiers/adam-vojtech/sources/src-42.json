@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-42",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-42",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "title": "SRC-42 — Fakultní nemocnice Olomouc, oficiální tisková zpráva, 9. 7. 2026",
+  "description": "Vedení FN Olomouc informuje o vývoji ve věci implantací kardioverterů na kardiologické klinice — přímé, oficiální vyjádření nemocnice ke zjištěním komise.",
+  "outlet": "Fakultní nemocnice Olomouc (oficiální web)",
+  "sourceType": "institucionální zdroj — tisková zpráva",
+  "url": "https://www.fnol.cz/aktuality/vedeni-fn-olomouc-informuje-o-vyvoji-ve-veci-implantaci-kardioverteru-na-kardiologicke-klinice",
+  "published": "2026-07-09",
+  "retrieved": "2026-08-03",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-25"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-26"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-27"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Co dokládá.** Oficiální tisková zpráva zveřejněná na webu FN Olomouc den před rozsáhlým zpravodajským pokrytím (10.–11. 7. 2026): odborná komise zjistila, že v roce 2024 došlo k případům implantací ICD, aniž byla zcela naplněna indikační kritéria. Vedení nemocnice zjištění považuje za vážná, stanovisko předalo Policii ČR a aktivně s ní spolupracuje, vylučuje jakýkoliv ekonomický zájem FNOL v této věci, kontaktuje dotčené pacienty a hlavní odpovědnost za sporné postupy přisuzuje bývalému přednostovi kardiologické kliniky prof. Miloši Táborskému. Nemocnice čeká na výsledky trestního řízení a v případě prokázané újmy je připravena škody kompenzovat.\n\n**Proč je to tu důležité.** Odpovídá na [GAP-12](@/dossiers/adam-vojtech/gaps/gap-12.md): jde o přímý, oficiální primární zdroj (ne zpravodajský přepis) k závěrům komise — dosud všechna tvrzení stála jen na novinářském zpravodajství. Doplněn jako další zdroj k již dříve CORROBORATED tvrzením CLM-25/26/27, jejichž věcný obsah přímo potvrzuje."
+    }
+  ],
+  "order": 42
+}
