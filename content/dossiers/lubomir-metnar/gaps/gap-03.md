@@ -19,3 +19,5 @@ Nepodařilo se ověřit počet policistů ochranné služby, kteří sídlo NKÚ
 **Proč je to mezera**: Původní reportáž Seznam Zpráv údaj o počtu policistů výslovně neuvádí a žádný z ověřených zdrojů neuvádí, kolik by opatření ušetřilo státnímu rozpočtu — uvádí se pouze náklad 20 mil. Kč ročně na straně NKÚ. Tato mezera **není** zjištěním žádným
 směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
+
+**Opakovaná kontrola k 2026-08-03**: cílené hledání zopakováno včetně dotazů přímo na policejní statistiky a Ochrannou službu Policie ČR. Ani přesný počet policistů přidělených k ochraně NKÚ, ani vyčíslení úspory na straně policie/státu nebyly v žádném přímo otevřeném zdroji nalezeny. Mezera zůstává otevřená.
