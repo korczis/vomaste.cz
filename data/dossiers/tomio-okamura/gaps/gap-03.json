@@ -12,7 +12,7 @@
   "title": "GAP-03 — Přesná právní věta výroku rozsudku a citovaný paragraf trestního zákoníku.",
   "description": "Žádný z přístupných zdrojů necituje doslovné znění výroku ani konkrétní ustanovení; justiční zpravodajství výslovně uvádí, že paragraf ani ú",
   "priority": "střední",
-  "checked": "2026-07-30",
+  "checked": "2026-08-03",
   "claims": [],
   "subjects": [
     "okamura"
@@ -20,7 +20,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Přesná právní věta výroku rozsudku a citovaný paragraf trestního zákoníku.\n\n**Proč je to mezera**: Žádný z přístupných zdrojů necituje doslovné znění výroku ani konkrétní ustanovení; justiční zpravodajství výslovně uvádí, že paragraf ani úplné odůvodnění neuvádí. Detailní rozbor písemného vyhotovení rozsudku publikoval iROZHLAS 10. 7. 2026, ale server opakovaně vrátil HTTP 403 a obsah nebylo možné ověřit. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+      "value": "Přesná právní věta výroku rozsudku a citovaný paragraf trestního zákoníku.\n\n**Proč je to mezera**: Žádný z přístupných zdrojů necituje doslovné znění výroku ani konkrétní ustanovení; justiční zpravodajství výslovně uvádí, že paragraf ani úplné odůvodnění neuvádí. Detailní rozbor písemného vyhotovení rozsudku publikoval iROZHLAS 10. 7. 2026, ale server opakovaně vrátil HTTP 403 a obsah nebylo možné ověřit. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem.\n\n**Opakovaná kontrola k 2026-08-03**: iROZHLAS.cz zůstává trvale nedostupný (HTTP 403, potvrzeno opakovaně). Cílené hledání přesného znění výroku a paragrafu jinde nevrátilo výsledek. Mezera zůstává otevřená."
     }
   ],
   "order": 3

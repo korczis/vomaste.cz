@@ -19,3 +19,5 @@ Aktuální stav samostatně vedené trestní věci Tomia Okamury po vyloučení 
 **Proč je to mezera**: Zdroje uvádějí pouze, že stíhání je přerušeno po dobu poslaneckého mandátu; žádné zpravodajství o dalším procesním vývoji této oddělené věci se nepodařilo ověřit. Tato mezera **není** zjištěním žádným
 směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
+
+**Opakovaná kontrola k 2026-08-03**: cílené hledání zopakováno, žádný novější zdroj k procesnímu vývoji této oddělené věci nedohledán. Mezera zůstává otevřená.

@@ -19,3 +19,5 @@ Lhůta splatnosti peněžitého trestu a případný náhradní trest.
 **Proč je to mezera**: Ani jeden z přístupných článků tento údaj neuvádí. Tato mezera **není** zjištěním žádným
 směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
+
+**Opakovaná kontrola k 2026-08-03**: cílené hledání zopakováno, žádný zdroj lhůtu splatnosti ani náhradní trest neuvádí. Mezera zůstává otevřená.

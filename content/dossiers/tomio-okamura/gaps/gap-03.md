@@ -19,3 +19,5 @@ Přesná právní věta výroku rozsudku a citovaný paragraf trestního zákon�
 **Proč je to mezera**: Žádný z přístupných zdrojů necituje doslovné znění výroku ani konkrétní ustanovení; justiční zpravodajství výslovně uvádí, že paragraf ani úplné odůvodnění neuvádí. Detailní rozbor písemného vyhotovení rozsudku publikoval iROZHLAS 10. 7. 2026, ale server opakovaně vrátil HTTP 403 a obsah nebylo možné ověřit. Tato mezera **není** zjištěním žádným
 směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
+
+**Opakovaná kontrola k 2026-08-03**: iROZHLAS.cz zůstává trvale nedostupný (HTTP 403, potvrzeno opakovaně). Cílené hledání přesného znění výroku a paragrafu jinde nevrátilo výsledek. Mezera zůstává otevřená.

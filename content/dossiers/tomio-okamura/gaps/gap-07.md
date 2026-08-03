@@ -19,3 +19,5 @@ Doložené reakce dalších politických stran a ústavních činitelů přímo 
 **Proč je to mezera**: Ve vyhledávání se objevovaly zmínky o reakcích politiků, ale v otevřených a načtených článcích nebyly doloženy; snippet nebyl uznán jako důkaz a bez otevření zdroje tvrzení nevzniklo. Tato mezera **není** zjištěním žádným
 směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
+
+**Opakovaná kontrola k 2026-08-03**: hledání zopakováno, opět jen vyjádření SPD samotné a soudkyně Tiché (procesní role, ne politická reakce), žádná citace jiné strany či ústavního činitele nedohledána. Mezera zůstává otevřená.

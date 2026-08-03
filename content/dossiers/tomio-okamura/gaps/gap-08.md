@@ -19,3 +19,5 @@ Okolnosti vzniku plakátů (role generativní AI, autorství zadání) podle dok
 **Proč je to mezera**: Tyto informace figurují pouze v článku iROZHLAS z 10. 7. 2026, který je nepřístupný (HTTP 403); v přístupných zdrojích doloženy nejsou. Tato mezera **není** zjištěním žádným
 směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
+
+**Opakovaná kontrola k 2026-08-03**: iROZHLAS.cz zůstává trvale nedostupný (HTTP 403, potvrzeno opakovaně). Mezera zůstává otevřená.
