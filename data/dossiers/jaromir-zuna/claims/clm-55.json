@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-55",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-55",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "text": "Ministr Zůna své hlasování proti Hlaváčově kandidatuře na náčelníka generálního štábu zdůvodnil slovy: „Osobně jsem hlasoval proti, jelikož jsem si dokázal na zmíněném místě představit vzhledem k dlouholeté znalosti armádního prostředí z mého pohledu vhodnějšího kandidáta.“",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-36"
+    }
+  ],
+  "subjects": [
+    "zuna"
+  ],
+  "order": 55,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam tvrzení CLM-55 — shrnutí, stav a\nzdroj výše jsou úplné. Odpovídá na [GAP-02](@/dossiers/jaromir-zuna/gaps/gap-02.md)\npřímo otevřeným zdrojem místo dřívějšího neotevřeného Deníku N. Jde o\ndoslovnou citaci ministra, ne o zjištění webu."
+    }
+  ]
+}

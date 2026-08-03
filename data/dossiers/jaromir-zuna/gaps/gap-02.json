@@ -11,16 +11,20 @@
   },
   "title": "GAP-02 — Zůnovo vlastní veřejné zdůvodnění hlasování proti Hlaváčovi ('uměl si představit vhodnější",
   "description": "Formulace se objevuje pouze v neotevřeném zdroji (Deník N — minuta); žádný z otevřených článků ji necituje přímo.",
-  "priority": "střední",
-  "checked": "2026-07-30",
-  "claims": [],
+  "priority": "nízká",
+  "checked": "2026-08-03",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-55"
+    }
+  ],
   "subjects": [
     "zuna"
   ],
   "content": [
     {
       "type": "markdown",
-      "value": "Zůnovo vlastní veřejné zdůvodnění hlasování proti Hlaváčovi ('uměl si představit vhodnějšího kandidáta') není zahrnuto mezi tvrzení.\n\n**Proč je to mezera**: Formulace se objevuje pouze v neotevřeném zdroji (Deník N — minuta); žádný z otevřených článků ji necituje přímo. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+      "value": "Zůnovo vlastní veřejné zdůvodnění hlasování proti Hlaváčovi ('uměl si představit vhodnějšího kandidáta') není zahrnuto mezi tvrzení.\n\n**Proč je to mezera**: Formulace se objevuje pouze v neotevřeném zdroji (Deník N — minuta); žádný z otevřených článků ji necituje přímo. Tato mezera **není** zjištěním žádným směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit otevřeným zdrojem.\n\n**Ověřeno 3. 8. 2026**: dohledán a přímo otevřen jiný zdroj s celou doslovnou citací (CNN Prima News, 18. 5. 2026) — viz [CLM-55](@/dossiers/jaromir-zuna/claims/clm-55.md). Tato mezera je tímto obsahově vyřešena."
     }
   ],
   "order": 2

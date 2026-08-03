@@ -16,6 +16,6 @@ gap_id = "GAP-02"
 +++
 Zůnovo vlastní veřejné zdůvodnění hlasování proti Hlaváčovi ('uměl si představit vhodnějšího kandidáta') není zahrnuto mezi tvrzení.
 
-**Proč je to mezera**: Formulace se objevuje pouze v neotevřeném zdroji (Deník N — minuta); žádný z otevřených článků ji necituje přímo. Tato mezera **není** zjištěním žádným
-směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
-otevřeným zdrojem.
+**Proč je to mezera**: Formulace se objevuje pouze v neotevřeném zdroji (Deník N — minuta); žádný z otevřených článků ji necituje přímo. Tato mezera **není** zjištěním žádným směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit otevřeným zdrojem.
+
+**Ověřeno 3. 8. 2026**: dohledán a přímo otevřen jiný zdroj s celou doslovnou citací (CNN Prima News, 18. 5. 2026) — viz [CLM-55](@/dossiers/jaromir-zuna/claims/clm-55.md). Tato mezera je tímto obsahově vyřešena.

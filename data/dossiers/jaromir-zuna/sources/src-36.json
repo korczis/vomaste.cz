@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-36",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-36",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "title": "SRC-36 — CNN Prima News, 18. 5. 2026",
+  "description": "Do čela armády zamíří Hlaváč, ministr obrany byl proti. Prezident je připraven ho jmenovat.",
+  "outlet": "CNN Prima News",
+  "sourceType": "zpravodajství",
+  "sourceFamily": "ctk",
+  "url": "https://cnn.iprima.cz/vlada-rozhodla-o-novem-nacelnikovi-generalniho-stabu-stane-se-jim-rehkuv-prvni-zastupce-512372",
+  "published": "2026-05-18",
+  "retrieved": "2026-08-03",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-55"
+    }
+  ],
+  "subjects": [
+    "zuna"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Co dokládá.** Přímá citace ministra Zůny k jeho hlasování proti Hlaváčově kandidatuře na náčelníka generálního štábu: „Osobně jsem hlasoval proti, jelikož jsem si dokázal na zmíněném místě představit vzhledem k dlouholeté znalosti armádního prostředí z mého pohledu vhodnějšího kandidáta.“ Byline článku (ČTK a Michael Cardal) cituje jako původní zdroj výroku Novinky.cz.\n\n**Proč je to tu důležité.** Odpovídá na [GAP-02](@/dossiers/jaromir-zuna/gaps/gap-02.md): formulace „vhodnějšího kandidáta“ se dřív dala doložit jen v neotevřeném Deníku N (minuta), ale tento přímo otevřený zdroj obsahuje totéž znění celé, doslovné citace."
+    }
+  ],
+  "order": 36
+}
