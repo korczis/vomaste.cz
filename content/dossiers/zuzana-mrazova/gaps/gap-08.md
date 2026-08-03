@@ -19,3 +19,5 @@ Není doloženo, jak dopadlo řízení stavebního úřadu v Mostě o stavbách 
 **Proč je to mezera**: Dohledané zdroje končí u zjištění z 23. 6. 2026, že případ převzal mostecký stavební úřad. Žádný nalezený zdroj neuvádí výsledek. Tato mezera **není** zjištěním žádným
 směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
+
+**Opakovaná kontrola k 2026-08-03**: věcně totožné s [GAP-04](@/dossiers/zuzana-mrazova/gaps/gap-04.md) (ověřeno téhož dne) — cílené hledání výsledku řízení stavebního úřadu v Mostě (červenec–srpen 2026) nenašlo žádné rozhodnutí. Mezera zůstává otevřená.
