@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-30",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-30",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
+  },
+  "title": "SRC-30 — Seznam Zprávy, 19. 6. 2026",
+  "description": "EU požadovala důkazy, že Babiš není ve střetu zájmů. Česko je odmítlo poslat.",
+  "outlet": "Seznam Zprávy",
+  "sourceType": "zpravodajství",
+  "url": "https://www.seznamzpravy.cz/clanek/domaci-kauzy-eu-pozadovala-dukazy-ze-babis-neni-ve-stretu-zajmu-cesko-je-odmitlo-poslat-308913",
+  "published": "2026-06-19",
+  "retrieved": "2026-08-03",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-46"
+    }
+  ],
+  "subjects": [
+    "sebestyan"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Co dokládá.** Evropská komise požadovala, aby ČR do měsíce poslala „úplné právní posouzení“ s „jasným a konečným závěrem“ o souladu majetkového uspořádání (RSVP Trust) s právem EU proti střetu zájmů. Ministerstvo pro místní rozvoj takové stanovisko odmítlo vypracovat s odůvodněním, že mu k tomu chybí zákonné zmocnění. Nejnovější posudek advokátní kanceláře Portos, kterou si najal SZIF, sám připouští, že „Komise na základě analýzy statutu... dospěje k závěru, že zvolené řešení není dostačující“ — přestože SZIF navenek tvrdí, že svěřenský fond evropská pravidla proti střetu zájmů splňuje.\n\n**Proč je to tu důležité.** Odpovídá na [GAP-03](@/dossiers/martin-sebestyan/gaps/gap-03.md): oba dřívější zdroje Deníku N k závěrům právní analýzy SZIF a k detailu sporu o dopis EK zůstávají za paywallem, ale tento přímo otevřený, volně dostupný a nezávislý zdroj (jiný vydavatel, o měsíc pozdější vývoj) dokládá totéž téma podrobněji — včetně nuance, že i SZIF najatá advokátní kancelář ve svém nejnovějším posudku připouští riziko, že Komise řešení neuzná za dostatečné."
+    }
+  ],
+  "order": 30
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-46",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-46",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
+  },
+  "text": "Evropská komise v červnu 2026 požadovala od ČR do měsíce „úplné právní posouzení“ s „jasným a konečným závěrem“ o souladu RSVP Trustu s právem EU proti střetu zájmů; Ministerstvo pro místní rozvoj takové stanovisko odmítlo vypracovat pro chybějící zákonné zmocnění. Nejnovější posudek advokátní kanceláře Portos, kterou najal SZIF, sám připouští, že Komise může dospět k závěru, že zvolené řešení není dostačující.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-30"
+    }
+  ],
+  "subjects": [
+    "sebestyan"
+  ],
+  "order": 46,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam tvrzení CLM-46 — shrnutí, stav a zdroj\nvýše jsou úplné. Odpovídá na [GAP-03](@/dossiers/martin-sebestyan/gaps/gap-03.md)\nvěcným obsahem ze samostatně dohledaného, přímo otevřeného zdroje, ne\nrekonstrukcí paywallovaných textů Deníku N."
+    }
+  ]
+}
