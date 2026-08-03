@@ -31,3 +31,5 @@ ani že existuje. Znamená, že doložen není.
 žádné jmenované nezávislé zpravodajství dokládající prověřovaný
 vztah. Výsledek původního prověření platí beze změny — dossier o
 takovém vztahu nadále neuvádí nic.
+
+**Opakovaná kontrola k 2026-08-03**: téma je výslovně vyloučeno z rozsahu autorizačním záznamem `AUTH-2026-07-30-U`, scope se nezměnil. Dále nedohledáváno. Stav beze změny.

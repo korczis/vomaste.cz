@@ -12,7 +12,7 @@
   "title": "GAP-02 — Přesné datum nástupu do současné funkce (uzavřeno 2026-08-01)",
   "description": "Mezera uzavřena: primární úřední zdroj dokládá, že vláda Barthu jmenovala vedoucí Úřadu vlády na ustavující schůzi 15. 12. 2025.",
   "priority": "nízká",
-  "checked": "2026-08-01",
+  "checked": "2026-08-03",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-07"

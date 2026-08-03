@@ -29,3 +29,5 @@ Bartha do holdingu nastoupila a kdy z něj odešla, doloženo není.**
 
 Bez těchto dat nelze psát žádné tvrzení o návaznosti mezi jejím
 působením v holdingu a výkonem veřejné funkce.
+
+**Opakovaná kontrola k 2026-08-03**: cílené hledání zopakováno, dohledán jen obecný odkaz „od roku 2024“ bez přesného data, žádný zdroj přesné datum nástupu ani odchodu neuvádí. Mezera zůstává otevřená.

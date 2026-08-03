@@ -12,7 +12,7 @@
   "title": "GAP-04 — Data nástupu a odchodu z Agrofertu",
   "description": "Citovaný zdroj uvádí jen datum, kdy o působení Tünde Barthy v Agrofertu informoval HlídacíPes; kdy nastoupila a kdy odešla, doloženo není.",
   "priority": "nízká",
-  "checked": "2026-08-01",
+  "checked": "2026-08-03",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-06"
@@ -27,7 +27,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "**Aktualizace 1. 8. 2026.** Firemní web Agrofertu ze září 2024 dokládá\ndalší datovaný employment fact — funkci country managerky AGROFERT\nHungária s odpovědností za rozvoj koncernu ve východní Evropě\n([CLM-13](@/dossiers/tunde-bartha/claims/clm-13.md),\n[SRC-09](@/dossiers/tunde-bartha/sources/src-09.md)). Přesná data\nnástupu do holdingu a odchodu z něj tím ale doložena nejsou — mezera\nzůstává otevřená.\n\nCitovaný zdroj ([SRC-03](@/dossiers/tunde-bartha/sources/src-03.md))\ndokládá pracovní zařazení v Agrofertu potvrzené mluvčím společnosti,\nuvádí však pouze datum vlastního zveřejnění (14. 8. 2024). **Kdy Tünde\nBartha do holdingu nastoupila a kdy z něj odešla, doloženo není.**\n\nBez těchto dat nelze psát žádné tvrzení o návaznosti mezi jejím\npůsobením v holdingu a výkonem veřejné funkce."
+      "value": "**Aktualizace 1. 8. 2026.** Firemní web Agrofertu ze září 2024 dokládá\ndalší datovaný employment fact — funkci country managerky AGROFERT\nHungária s odpovědností za rozvoj koncernu ve východní Evropě\n([CLM-13](@/dossiers/tunde-bartha/claims/clm-13.md),\n[SRC-09](@/dossiers/tunde-bartha/sources/src-09.md)). Přesná data\nnástupu do holdingu a odchodu z něj tím ale doložena nejsou — mezera\nzůstává otevřená.\n\nCitovaný zdroj ([SRC-03](@/dossiers/tunde-bartha/sources/src-03.md))\ndokládá pracovní zařazení v Agrofertu potvrzené mluvčím společnosti,\nuvádí však pouze datum vlastního zveřejnění (14. 8. 2024). **Kdy Tünde\nBartha do holdingu nastoupila a kdy z něj odešla, doloženo není.**\n\nBez těchto dat nelze psát žádné tvrzení o návaznosti mezi jejím\npůsobením v holdingu a výkonem veřejné funkce.\n\n**Opakovaná kontrola k 2026-08-03**: cílené hledání zopakováno, dohledán jen obecný odkaz „od roku 2024“ bez přesného data, žádný zdroj přesné datum nástupu ani odchodu neuvádí. Mezera zůstává otevřená."
     }
   ],
   "order": 4

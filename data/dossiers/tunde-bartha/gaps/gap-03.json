@@ -12,7 +12,7 @@
   "title": "GAP-03 — Prověřované propojení s Jaroslavem Faltýnkem",
   "description": "Bylo prověřováno, zda existuje publikované propojení mezi Tünde Barthou a Jaroslavem Faltýnkem; žádný jmenovaný nezávislý zdroj takový vztah nedokládá.",
   "priority": "střední",
-  "checked": "2026-08-02",
+  "checked": "2026-08-03",
   "claims": [],
   "subjects": [
     "bartha"
@@ -20,7 +20,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Při zakládání tohoto dossieru bylo prověřováno, zda existuje publikované\npropojení mezi Tünde Barthou a poslancem Jaroslavem Faltýnkem.\n**V otevřených zdrojích nebylo nalezeno žádné jmenované nezávislé\nzpravodajství, které by takový vztah dokládalo.**\n\nTento záznam existuje proto, že prověřování proběhlo — a jeho výsledek\npatří na stránku stejně jako výsledek kladný. Dossier proto o takovém\nvztahu **neuvádí nic** a autorizační záznam `AUTH-2026-07-30-U` jej\nvýslovně vylučuje z rozsahu.\n\nOtevřenost není zjištění žádným směrem: neznamená, že vztah neexistuje,\nani že existuje. Znamená, že doložen není.\n\n**Opakovaná kontrola k 2026-08-02**: nové cílené dotazy nevrátily\nžádné jmenované nezávislé zpravodajství dokládající prověřovaný\nvztah. Výsledek původního prověření platí beze změny — dossier o\ntakovém vztahu nadále neuvádí nic."
+      "value": "Při zakládání tohoto dossieru bylo prověřováno, zda existuje publikované\npropojení mezi Tünde Barthou a poslancem Jaroslavem Faltýnkem.\n**V otevřených zdrojích nebylo nalezeno žádné jmenované nezávislé\nzpravodajství, které by takový vztah dokládalo.**\n\nTento záznam existuje proto, že prověřování proběhlo — a jeho výsledek\npatří na stránku stejně jako výsledek kladný. Dossier proto o takovém\nvztahu **neuvádí nic** a autorizační záznam `AUTH-2026-07-30-U` jej\nvýslovně vylučuje z rozsahu.\n\nOtevřenost není zjištění žádným směrem: neznamená, že vztah neexistuje,\nani že existuje. Znamená, že doložen není.\n\n**Opakovaná kontrola k 2026-08-02**: nové cílené dotazy nevrátily\nžádné jmenované nezávislé zpravodajství dokládající prověřovaný\nvztah. Výsledek původního prověření platí beze změny — dossier o\ntakovém vztahu nadále neuvádí nic.\n\n**Opakovaná kontrola k 2026-08-03**: téma je výslovně vyloučeno z rozsahu autorizačním záznamem `AUTH-2026-07-30-U`, scope se nezměnil. Dále nedohledáváno. Stav beze změny."
     }
   ],
   "order": 3

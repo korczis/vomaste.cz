@@ -12,7 +12,7 @@
   "title": "GAP-01 — Osud výpovědi z nájmu",
   "description": "Citované zpravodajství končí rozhodnutím rady z 24. 6. 2026; zda výpověď nabyla účinnosti, zda ji nájemci napadli a jak dopadla, doloženo není.",
   "priority": "vysoká",
-  "checked": "2026-08-02",
+  "checked": "2026-08-03",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-01"
@@ -30,7 +30,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Otevřené a ověřené zdroje končí u rozhodnutí rady městské části z\n24. 6. 2026. **Nedoloženo zůstává**, zda výpověď nabyla účinnosti, zda ji\nnájemci napadli u soudu a s jakým výsledkem.\n\nTato mezera je podstatná právě proto, že vlastní právní stanoviska\nradnice ([CLM-02](@/dossiers/tunde-bartha/claims/clm-02.md),\n[CLM-03](@/dossiers/tunde-bartha/claims/clm-03.md)) upozorňovala na\nvysoké riziko neplatnosti. Dokud není doložen výsledek, **nelze z výpovědi\nvyvozovat nic o tom, zda k porušení nájemní smlouvy skutečně došlo**.\n\nOtevřenost není zjištění žádným směrem.\n\n**Opakovaná kontrola k 2026-08-02** (cílené dotazy na soudní\nnapadení výpovědi, její účinnost a případné vystěhování): všechno\ndohledané zpravodajství končí u rozhodnutí rady z 24. 6. 2026; žádný\npozdější procesní krok nebyl doložen. Stav beze změny."
+      "value": "Otevřené a ověřené zdroje končí u rozhodnutí rady městské části z\n24. 6. 2026. **Nedoloženo zůstává**, zda výpověď nabyla účinnosti, zda ji\nnájemci napadli u soudu a s jakým výsledkem.\n\nTato mezera je podstatná právě proto, že vlastní právní stanoviska\nradnice ([CLM-02](@/dossiers/tunde-bartha/claims/clm-02.md),\n[CLM-03](@/dossiers/tunde-bartha/claims/clm-03.md)) upozorňovala na\nvysoké riziko neplatnosti. Dokud není doložen výsledek, **nelze z výpovědi\nvyvozovat nic o tom, zda k porušení nájemní smlouvy skutečně došlo**.\n\nOtevřenost není zjištění žádným směrem.\n\n**Opakovaná kontrola k 2026-08-02** (cílené dotazy na soudní\nnapadení výpovědi, její účinnost a případné vystěhování): všechno\ndohledané zpravodajství končí u rozhodnutí rady z 24. 6. 2026; žádný\npozdější procesní krok nebyl doložen. Stav beze změny.\n\n**Opakovaná kontrola k 2026-08-03**: hledání zopakováno, žádný novější zdroj nedohledán. Stav beze změny, mezera zůstává otevřená."
     }
   ],
   "order": 1

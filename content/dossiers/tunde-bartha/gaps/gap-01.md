@@ -30,3 +30,5 @@ Otevřenost není zjištění žádným směrem.
 napadení výpovědi, její účinnost a případné vystěhování): všechno
 dohledané zpravodajství končí u rozhodnutí rady z 24. 6. 2026; žádný
 pozdější procesní krok nebyl doložen. Stav beze změny.
+
+**Opakovaná kontrola k 2026-08-03**: hledání zopakováno, žádný novější zdroj nedohledán. Stav beze změny, mezera zůstává otevřená.
