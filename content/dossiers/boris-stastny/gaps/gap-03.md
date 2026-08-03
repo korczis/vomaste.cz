@@ -19,3 +19,5 @@ Znění vládního dokumentu se zdůvodněním odvolání šéfa NSA (údajně o
 **Proč je to mezera**: Zdroj iROZHLAS opakovaně vracel HTTP 403 a obsah nebylo možné ověřit čtením; samotný vládní materiál není veřejně dostupný. Tato mezera **není** zjištěním žádným
 směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
+
+**Odpověď (ověřeno 2026-08-03)**: iROZHLAS zůstává nedostupný (HTTP 403, potvrzeno opakovaně), ale samotné usnesení vlády č. 1029/2025 (16. 12. 2025) bylo dohledáno a přímo staženo přes portál odok.gov.cz jako primární dokument. Zjištění je opačné, než premisa mezery předpokládala: usnesení je **čistě operativní** a neobsahuje žádné zdůvodnění — žádnou zmínku o zahraničních cestách, mediální kritice ani střetu zájmů. Zveřejněné důvody pocházejí výhradně z veřejných vyjádření ministra Šťastného ([CLM-26](@/dossiers/boris-stastny/claims/clm-26.md)), ne z textu vládního dokumentu. Zapsáno jako nové [CLM-40](@/dossiers/boris-stastny/claims/clm-40.md), nový [SRC-20](@/dossiers/boris-stastny/sources/src-20.md). Mezera je tímto zodpovězena.
