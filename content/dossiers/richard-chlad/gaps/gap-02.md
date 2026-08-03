@@ -24,3 +24,5 @@ Tato mezera je zaznamenána záměrně a na vysoké prioritě: bez ní by
 nebylo vykázáno správně. **Žádný citovaný zdroj nic takového neuvádí.**
 
 Otevřenost není zjištění žádným směrem.
+
+**Opakovaná kontrola k 2026-08-03**: pokus o přímé ověření na portálu Úřadu pro dohled nad hospodařením politických stran a hnutí (udh.gov.cz), sekce výročních finančních zpráv za rok 2025 (zpravy.udh.gov.cz/zpravy/vfz2025). Seznam stran je řazený abecedně a nástroj pro čtení stránky se zastavil u písmene „Č“ — položku „Motoristé sobě“ (za „M“) se z dostupného výřezu nepodařilo ověřit. Žádné výsledky dohledové/kontrolní činnosti k Motoristé sobě jinde nedohledány. Mezera zůstává otevřená.

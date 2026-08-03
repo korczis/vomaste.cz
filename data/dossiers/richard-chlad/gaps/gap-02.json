@@ -12,7 +12,7 @@
   "title": "GAP-02 — Zda byla plnění řádně vykázána",
   "description": "Není doloženo, zda a jak byla jednotlivá plnění vykázána ve výroční finanční zprávě strany, ani že by se jimi zabýval dozorový úřad.",
   "priority": "vysoká",
-  "checked": "2026-07-30",
+  "checked": "2026-08-03",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-01"
@@ -27,7 +27,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "**Není doloženo**, zda a jak byla jednotlivá plnění vykázána ve výroční\nfinanční zprávě strany, ani že by je přezkoumával dozorový úřad, ani že\nby kdokoli podal podnět.\n\nTato mezera je zaznamenána záměrně a na vysoké prioritě: bez ní by\nčtenář mohl z rozdílu mezi uváděnými čísly\n([GAP-01](@/dossiers/richard-chlad/gaps/gap-01.md)) usoudit, že něco\nnebylo vykázáno správně. **Žádný citovaný zdroj nic takového neuvádí.**\n\nOtevřenost není zjištění žádným směrem."
+      "value": "**Není doloženo**, zda a jak byla jednotlivá plnění vykázána ve výroční\nfinanční zprávě strany, ani že by je přezkoumával dozorový úřad, ani že\nby kdokoli podal podnět.\n\nTato mezera je zaznamenána záměrně a na vysoké prioritě: bez ní by\nčtenář mohl z rozdílu mezi uváděnými čísly\n([GAP-01](@/dossiers/richard-chlad/gaps/gap-01.md)) usoudit, že něco\nnebylo vykázáno správně. **Žádný citovaný zdroj nic takového neuvádí.**\n\nOtevřenost není zjištění žádným směrem.\n\n**Opakovaná kontrola k 2026-08-03**: pokus o přímé ověření na portálu Úřadu pro dohled nad hospodařením politických stran a hnutí (udh.gov.cz), sekce výročních finančních zpráv za rok 2025 (zpravy.udh.gov.cz/zpravy/vfz2025). Seznam stran je řazený abecedně a nástroj pro čtení stránky se zastavil u písmene „Č“ — položku „Motoristé sobě“ (za „M“) se z dostupného výřezu nepodařilo ověřit. Žádné výsledky dohledové/kontrolní činnosti k Motoristé sobě jinde nedohledány. Mezera zůstává otevřená."
     }
   ],
   "order": 2

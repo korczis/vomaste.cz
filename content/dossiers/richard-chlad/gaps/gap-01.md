@@ -34,3 +34,5 @@ Postavit tato čísla vedle sebe jako doložený rozpor by bylo přesně to,
 čemu se tento web vyhýbá: vyrobit tvrzení, které zdroje nepodporují.
 Zaznamenává se tedy to, co doloženo je — že se veřejně uváděná čísla
 liší — a zároveň to, co doloženo není: proč.
+
+**Opakovaná kontrola k 2026-08-03**: přímo znovu otevřen SRC-03. Dohledán jeden doplňkový detail — Chlad ke svým zhruba 1,5 milionu Kč dodal ještě samostatných 150 tisíc Kč za propagační soutěž na sociálních sítích, doplněno do [CLM-03](@/dossiers/richard-chlad/claims/clm-03.md). Přesné období ani vzájemný vztah jednotlivých čísel to ale nadále neobjasňuje. Mezera zůstává v podstatě otevřená.

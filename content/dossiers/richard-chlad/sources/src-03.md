@@ -28,6 +28,12 @@ dvakrát 50 tisíc korun."
 Chladovu vlastnímu tvrzení o podpoře v řádu **zhruba 1,5 milionu Kč**
 (pronájmy aut, doprava, pojištění).
 
+**Doplněno 2026-08-03**: článek uvádí i samostatnou položku navíc —
+Chlad doslova: „Pronájmy aut, doprava a transporty aut, pojištění a
+další, ač to ještě nemám sečtené, tak to bude zhruba kolem 1,5 milionu
+korun, k tomu soutěž 150 tisíc“ (propagační soutěž na sociálních sítích,
+kterou Chlad sám organizoval).
+
 **Poznámka k procesní přesnosti a hranicím**: všechna vyjádření zde jsou
 **citace** — doloženo je, že padla, nikoli že jejich obsah platí. To
 platí pro obě strany: pro Chladovy údaje i pro tvrzení představitelů

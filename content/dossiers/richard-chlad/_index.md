@@ -46,7 +46,7 @@ definuje rozsah, necertifikuje reportáže.
 |---|---|---|---|
 | <a id="clm-01"></a>[CLM-01](@/dossiers/richard-chlad/claims/clm-01.md) | Veřejný rejstřík Hlídač státu eviduje u Richarda Chlada za rok 2025 dary straně Motoristé sobě v celkové výši 638 864 Kč, položkově: 140 000 Kč půjčení sportovních automobilů, 200 000 Kč propůjčení vozů Bugatti, 59 313 Kč výroba a instalace billboardu, 54 550 Kč demontáž billboardu a 185 001 Kč uspořádání akce; částka již zahrnuje nepeněžní plnění | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-01](@/dossiers/richard-chlad/sources/src-01.md) |
 | <a id="clm-02"></a>[CLM-02](@/dossiers/richard-chlad/claims/clm-02.md) | Richard Chlad podle citovaného zpravodajství uvedl, že straně poskytl „necelé dva miliony korun" na propagaci a vozy pro mítinky | <span class="status-badge status-quote">CITACE</span> | [SRC-02](@/dossiers/richard-chlad/sources/src-02.md) |
-| <a id="clm-03"></a>[CLM-03](@/dossiers/richard-chlad/claims/clm-03.md) | Podle citovaného zpravodajství Chlad jinde uváděl podporu v řádu zhruba 1,5 milionu Kč, do níž počítal pronájmy aut, dopravu a pojištění | <span class="status-badge status-quote">CITACE</span> | [SRC-03](@/dossiers/richard-chlad/sources/src-03.md) |
+| <a id="clm-03"></a>[CLM-03](@/dossiers/richard-chlad/claims/clm-03.md) | Podle citovaného zpravodajství Chlad jinde uváděl podporu v řádu zhruba 1,5 milionu Kč, do níž počítal pronájmy aut, dopravu a pojištění, k čemuž dodal ještě samostatných 150 tisíc Kč za propagační soutěž na sociálních sítích | <span class="status-badge status-quote">CITACE</span> | [SRC-03](@/dossiers/richard-chlad/sources/src-03.md) |
 | <a id="clm-04"></a>[CLM-04](@/dossiers/richard-chlad/claims/clm-04.md) | Předseda strany Petr Macinka podle citovaného zpravodajství uvedl: „Dal nám před eurovolbami dvakrát 50 tisíc korun." | <span class="status-badge status-quote">CITACE</span> | [SRC-03](@/dossiers/richard-chlad/sources/src-03.md) |
 | <a id="clm-05"></a>[CLM-05](@/dossiers/richard-chlad/claims/clm-05.md) | Filip Turek podle citovaného zpravodajství uvedl: „Je to můj kamarád a s politikou nemá nic společného, i záměrně přeceňujete jeho roli v podpoře Motoristů." | <span class="status-badge status-quote">CITACE</span> | [SRC-03](@/dossiers/richard-chlad/sources/src-03.md) |
 | <a id="clm-06"></a>[CLM-06](@/dossiers/richard-chlad/claims/clm-06.md) | Petr Macinka podle citovaného zpravodajství uvedl: „Richard Chlad je kamarád Filipa Turka, ale rozhodně není ideologem Motoristů. Tím jsem já." | <span class="status-badge status-quote">CITACE</span> | [SRC-03](@/dossiers/richard-chlad/sources/src-03.md) |
@@ -66,7 +66,9 @@ peníze.
 Vedle toho stojí tři další veřejně uváděná čísla: Chladovo vlastní
 „necelé dva miliony korun"
 ([CLM-02](@/dossiers/richard-chlad/claims/clm-02.md)), jinde jím uváděných
-zhruba 1,5 milionu zahrnujících pronájmy aut, dopravu a pojištění
+zhruba 1,5 milionu zahrnujících pronájmy aut, dopravu a pojištění, k
+čemuž Chlad dodal ještě samostatných 150 tisíc Kč za propagační soutěž
+na sociálních sítích
 ([CLM-03](@/dossiers/richard-chlad/claims/clm-03.md)), a údaj předsedy
 strany o dvakrát 50 000 Kč **před eurovolbami**
 ([CLM-04](@/dossiers/richard-chlad/claims/clm-04.md)).
