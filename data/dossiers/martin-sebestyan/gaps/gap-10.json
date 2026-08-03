@@ -11,16 +11,20 @@
   },
   "title": "GAP-10 — Nepodařilo se získat obsah právních analýz, o něž SZIF opřel rozhodnutí nevymáhat nárokové",
   "description": "Analýzy jsou vedeny jako neveřejné; článek iROZHLAS rozebírající jejich obsah vrací HTTP 403. Jméno kanceláře Portos pochází z tvrzení opozi",
-  "priority": "střední",
-  "checked": "2026-07-30",
-  "claims": [],
+  "priority": "nízká",
+  "checked": "2026-08-03",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-51"
+    }
+  ],
   "subjects": [
     "sebestyan"
   ],
   "content": [
     {
       "type": "markdown",
-      "value": "Nepodařilo se získat obsah právních analýz, o něž SZIF opřel rozhodnutí nevymáhat nárokové dotace, ani jména všech zpracovávajících advokátních kanceláří.\n\n**Proč je to mezera**: Analýzy jsou vedeny jako neveřejné; článek iROZHLAS rozebírající jejich obsah vrací HTTP 403. Jméno kanceláře Portos pochází z tvrzení opozičního politika, nikoli z primárního dokumentu. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+      "value": "Nepodařilo se získat obsah právních analýz, o něž SZIF opřel rozhodnutí nevymáhat nárokové dotace, ani jména všech zpracovávajících advokátních kanceláří.\n\n**Původní mezera** (30. 7. 2026): Analýzy jsou vedeny jako neveřejné; článek iROZHLAS rozebírající jejich obsah vrací HTTP 403. Jméno kanceláře Portos pochází z tvrzení opozičního politika, nikoli z primárního dokumentu. Tato mezera **není** zjištěním žádným směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit otevřeným zdrojem.\n\n**Ověřeno 3. 8. 2026**: mezera vyřešena zásadně — analýzy už nejsou neveřejné. SZIF je 23. 4. 2026 sám zveřejnil na svém webu (dohledatelné přímo na szif.gov.cz) — viz [CLM-51](@/dossiers/martin-sebestyan/claims/clm-51.md). Šlo o čtyři analýzy od dvou kanceláří (PORTOS, Pelikán Krofta Kohoutek), přičemž dvě analýzy PORTOS s odstupem osmi měsíců dospěly ke vzájemně odlišným závěrům — PORTOS sama tvrdí, že nejde o rozpor, jen o metodicky širší posouzení. Tato mezera je tímto obsahově vyřešena."
     }
   ],
   "order": 10

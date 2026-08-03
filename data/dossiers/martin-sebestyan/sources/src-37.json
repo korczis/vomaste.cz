@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-37",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-37",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
+  },
+  "title": "SRC-37 — Česká justice, 30. 4. 2026",
+  "description": "Dva posudky k dotacím Agrofertu. Proč právníci došli k odlišným závěrům?",
+  "outlet": "Česká justice",
+  "sourceType": "zpravodajství",
+  "url": "https://www.ceska-justice.cz/2026/04/dva-posudky-k-dotacim-agrofertu-proc-pravnici-dosli-k-odlisnym-zaverum/",
+  "published": "2026-04-30",
+  "retrieved": "2026-08-03",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-51"
+    }
+  ],
+  "subjects": [
+    "sebestyan"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Co dokládá.** Dvě z veřejněných analýz PORTOS s rozestupem cca osmi měsíců dospěly ke vzájemně odlišným závěrům o téže věci: starší (2025, jen jazykový výklad § 4c zákona o střetu zájmů) uzavřela, že zákaz dopadá i na nárokové dotace; novější (2026, širší výklad — jazykový, logický, systematický, historický, teleologický, komparativní) uzavřela, že zákaz dopadá jen na nenárokové dotace — a umožnila SZIF nevymáhat cca miliardu korun. PORTOS sama tvrdí, že závěry „nejsou v rozporu“, protože jde o metodicky širší, nikoli protichůdné posouzení.\n\n**Proč je to tu důležité.** Doplňuje [CLM-51](@/dossiers/martin-sebestyan/claims/clm-51.md)/[GAP-10](@/dossiers/martin-sebestyan/gaps/gap-10.md) o obsah a kontext zveřejněných analýz — obě strany sporu (kritika „otočeného posudku“ i PORTOS vlastní vysvětlení) jsou citovány, žádná není přebírána jako zjištění webu."
+    }
+  ],
+  "order": 37
+}
