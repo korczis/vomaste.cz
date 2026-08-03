@@ -12,7 +12,7 @@
   "title": "GAP-03 — Článek iROZHLAS k pokutě se nepodařilo otevřít (HTTP 403), nebyl proto použit jako důkaz.",
   "description": "Server vrátil chybu přístupu; obsah nebylo možné ověřit jinak než ze snippetu, což metodika zakazuje.",
   "priority": "střední",
-  "checked": "2026-07-30",
+  "checked": "2026-08-03",
   "claims": [],
   "subjects": [
     "mrazova"
@@ -20,7 +20,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Článek iROZHLAS k pokutě se nepodařilo otevřít (HTTP 403), nebyl proto použit jako důkaz.\n\n**Proč je to mezera**: Server vrátil chybu přístupu; obsah nebylo možné ověřit jinak než ze snippetu, což metodika zakazuje. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+      "value": "Článek iROZHLAS k pokutě se nepodařilo otevřít (HTTP 403), nebyl proto použit jako důkaz.\n\n**Proč je to mezera**: Server vrátil chybu přístupu; obsah nebylo možné ověřit jinak než ze snippetu, což metodika zakazuje. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem.\n\n**Opakovaná kontrola k 2026-08-03**: iROZHLAS.cz zůstává 403 i po opakovaném pokusu o přímé otevření téhož článku. Hledána i případná náhrada přetiskem (jako u jiných dossierů) — nalezené agregátory (Praha na dlani) k tomuto tématu se ukázaly být přetiskem Blesk.cz, ne iROZHLAS.cz, takže nejde o platnou substituci. Věcný obsah kauzy je ale už doložen nezávisle přes ČT24/Seznam Zprávy ([SRC-04](@/dossiers/zuzana-mrazova/sources/src-04.md)) a další zdroje mimo iROZHLAS. Mezera zůstává formálně otevřená (přímý přístup k iROZHLAS chybí), bez zjištěného dopadu na úplnost pokrytí."
     }
   ],
   "order": 3

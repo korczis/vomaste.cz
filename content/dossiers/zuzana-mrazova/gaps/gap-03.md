@@ -19,3 +19,5 @@ gap_id = "GAP-03"
 **Proč je to mezera**: Server vrátil chybu přístupu; obsah nebylo možné ověřit jinak než ze snippetu, což metodika zakazuje. Tato mezera **není** zjištěním žádným
 směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
+
+**Opakovaná kontrola k 2026-08-03**: iROZHLAS.cz zůstává 403 i po opakovaném pokusu o přímé otevření téhož článku. Hledána i případná náhrada přetiskem (jako u jiných dossierů) — nalezené agregátory (Praha na dlani) k tomuto tématu se ukázaly být přetiskem Blesk.cz, ne iROZHLAS.cz, takže nejde o platnou substituci. Věcný obsah kauzy je ale už doložen nezávisle přes ČT24/Seznam Zprávy ([SRC-04](@/dossiers/zuzana-mrazova/sources/src-04.md)) a další zdroje mimo iROZHLAS. Mezera zůstává formálně otevřená (přímý přístup k iROZHLAS chybí), bez zjištěného dopadu na úplnost pokrytí.
