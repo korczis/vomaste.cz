@@ -19,3 +19,5 @@ src_id = "SRC-05"
 Komentář Marka Wollnera tvrdí, že Havlíček o auditu EK označujícím dotaci za neoprávněnou věděl nejpozději od roku 2019, aktivní vymáhání neinicioval a ministerstvo k němu přistoupilo až v roce 2022 za jeho nástupce; cituje europoslance Zdechovského.
 
 Zdroj otevřen a přečten 2026-07-30. **Komentář/názorový text** — dokládá, že autor hodnocení publikoval, ne že hodnocení platí.
+
+**Doplnění (GAP-01, 2026-08-03).** Text rovněž cituje Havlíčkův výrok z 29. 11. 2020 v obdobném znění jako SRC-02: „Pokud se potvrdí, že evropská dotace sto milionů korun na stavbu linky... vláda bude požadovat vrácení peněz do státního rozpočtu.“ Jde o autorský komentář (ne převzatou ČTK zprávu jako SRC-02), a poskytuje tak nezávislé, byť parafrázované potvrzení téhož výroku — viz [CLM-06](@/dossiers/karel-havlicek/claims/clm-06.md).

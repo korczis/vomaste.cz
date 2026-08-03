@@ -15,6 +15,9 @@
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-05"
     }
   ],
   "subjects": [
