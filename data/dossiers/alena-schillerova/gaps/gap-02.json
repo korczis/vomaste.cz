@@ -10,9 +10,9 @@
     "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
   },
   "title": "GAP-02 — Rozpor ve výpočtu přípustného schodku nebyl uzavřen",
-  "description": "Rada uvádí limit 247 miliard, ministerstvo 292 miliard; citované zdroje spor nerozhodly.",
+  "description": "Rada uvádí limit 247 miliard, ministerstvo 292 miliard; citované zdroje spor nerozhodly. Ověřeno znovu 3. 8. 2026 — spor stále bez autoritativního rozhodnutí.",
   "priority": "vysoká",
-  "checked": "2026-07-30",
+  "checked": "2026-08-03",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-03"
@@ -27,7 +27,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Národní rozpočtová rada vypočítala maximální přípustný schodek na 247\nmiliard korun; ministerstvo financí tvrdí, že obranné výdaje 55 miliard\nodůvodňují limit 292 miliard\n([SRC-02](@/dossiers/alena-schillerova/sources/src-02.md)). Citované\nzdroje **spor nerozhodly** a dossier proto vede obě čísla vedle sebe.\n\nNejde o mezeru v tom smyslu, že by některá strana neuvedla důvod — obě\nsvůj výpočet zdůvodnily. Otevřené je, který výklad zákona o pravidlech\nrozpočtové odpovědnosti je správný, a to je otázka, kterou tento web\nnerozhoduje.\n\n**Podmínka uzavření**: autoritativní rozhodnutí nebo výklad (soud,\nÚstavní soud, závazné stanovisko), případně dohoda obou stran doložená\notevřeným zdrojem. Do té doby zůstává rozpor zaznamenaný, ne zamlčený."
+      "value": "Národní rozpočtová rada vypočítala maximální přípustný schodek na 247\nmiliard korun; ministerstvo financí tvrdí, že obranné výdaje 55 miliard\nodůvodňují limit 292 miliard\n([SRC-02](@/dossiers/alena-schillerova/sources/src-02.md)). Citované\nzdroje **spor nerozhodly** a dossier proto vede obě čísla vedle sebe.\n\nNejde o mezeru v tom smyslu, že by některá strana neuvedla důvod — obě\nsvůj výpočet zdůvodnily. Otevřené je, který výklad zákona o pravidlech\nrozpočtové odpovědnosti je správný, a to je otázka, kterou tento web\nnerozhoduje.\n\n**Podmínka uzavření**: autoritativní rozhodnutí nebo výklad (soud,\nÚstavní soud, závazné stanovisko), případně dohoda obou stran doložená\notevřeným zdrojem. Do té doby zůstává rozpor zaznamenaný, ne zamlčený.\n\n**Opakovaná kontrola k 2026-08-03**: nalezena jen pokračující vzájemná kritika ze stejného období (leden 2026, Echo24 — premiér Babiš zpochybnil nezávislost předsedy rady, ten kontroval poznámkou o politické selektivitě), žádné autoritativní rozhodnutí. **Metodická poznámka proti záměně**: nalezen i novější (11. 6. 2026, ČT24) odhad rady o možném schodku přes 350 miliard — ten se ale týká **rozpočtu na rok 2027**, jiného čísla a jiného roku, ne řešení tohoto sporu o rozpočet 2026. Vědomě nepoužito jako odpověď. Mezera zůstává otevřená."
     }
   ],
   "order": 2
