@@ -12,7 +12,7 @@
   "title": "GAP-09 — Chybí oficiální reakce Evropské komise po březnovém dopise o „závažných obavách“.",
   "description": "Žádný z otevřených zdrojů neobsahuje pozdější stanovisko EK ani informaci o zapojení OLAF. Cílené hledání nebylo možné dokončit — vyčerpán l",
   "priority": "střední",
-  "checked": "2026-07-30",
+  "checked": "2026-08-03",
   "claims": [],
   "subjects": [
     "juchelka"
@@ -20,7 +20,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Chybí oficiální reakce Evropské komise po březnovém dopise o „závažných obavách“.\n\n**Proč je to mezera**: Žádný z otevřených zdrojů neobsahuje pozdější stanovisko EK ani informaci o zapojení OLAF. Cílené hledání nebylo možné dokončit — vyčerpán limit webových vyhledávání relace. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+      "value": "Chybí oficiální reakce Evropské komise po březnovém dopise o „závažných obavách“.\n\n**Proč je to mezera**: Žádný z otevřených zdrojů neobsahuje pozdější stanovisko EK ani informaci o zapojení OLAF. Cílené hledání nebylo možné dokončit — vyčerpán limit webových vyhledávání relace. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem.\n\n**Opakovaná kontrola k 2026-08-03**: cílené hledání dokončeno (limit už nevyčerpán). Žádné pozdější oficiální stanovisko Evropské komise ani informace o zapojení OLAF nebyly nalezeny v žádném přímo otevřeném zdroji. Doplňkově dohledán zdroj (Seznam Zprávy, 16. 4. 2026) potvrzující jméno autorky březnového dopisu EK (Isabel Grilo, ředitelka pro hospodářskou politiku) a to, že dopis nežádal přímo odvolání Semancové — tento detail už ale věcně nerozšiřuje odpověď na otázku gapu (pozdější reakce EK/OLAF), pouze upřesňuje již zdokumentovaný počáteční dopis (CLM-08). Mezera zůstává otevřená."
     }
   ],
   "order": 9
