@@ -19,3 +19,5 @@ Primární dokument České školní inspekce s přesným zněním všech dotazn
 **Proč je to mezera**: Chybí oficiální primární zdroj pro doslovné znění dotazníku. Tato mezera **není** zjištěním žádným
 směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
+
+**Opakovaná kontrola k 2026-08-03**: dohledány dva kandidátní primární dokumenty přímo na csicr.cz — „Posouzení vlivu na ochranu osobních údajů" a „Analýza testování v 5. a 9. ročnících" — oba ale vrátily HTTP 403 Forbidden při přímém otevření. Zkontrolován i článek EDUin.cz o komunikaci ČŠI k plošným testům — ukázal se být z roku 2012 a týkal se věcně jiného, staršího testovacího programu (NIQES), vědomě vyloučen jako case-conflation riziko. Doslovné znění otázek zůstává doloženo jen mediálními reprodukcemi. Mezera zůstává otevřená.
