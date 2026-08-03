@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-45",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-45",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
+  },
+  "text": "Na otevřený dopis odborů NGP Klempíř reagoval slovy: „Setkání se zástupci zaměstnanců a odborů bylo dlouhodobě plánované a díky jejich iniciativě pouze urychlíme jeho konání“; k transparentnosti výběru nového ředitele dodal, že ministerstvo kromě tiskové zprávy důvody rozhodnutí „detailně vysvětlilo na tiskovém briefingu“.",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-08"
+    }
+  ],
+  "subjects": [
+    "klempir"
+  ],
+  "order": 45,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/oto-klempir/_index.md#registr-tvrzeni)."
+    }
+  ]
+}
