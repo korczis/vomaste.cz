@@ -19,3 +19,5 @@ Chybí reakce dalších aktérů — poslanců, sněmovního výboru pro bezpeč
 **Proč je to mezera**: Kauza byla v době rešerše stará přibližně jeden den (zveřejněna 29. 7. 2026) a cílené vyhledávání žádné takové reakce nenašlo; pravděpodobně dosud nevznikly. Tato mezera **není** zjištěním žádným
 směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
+
+**Opakovaná kontrola k 2026-08-03**: cílené hledání zopakováno, včetně komentáře INFO.CZ (31. 7. 2026) a ČeskéNoviny.cz (30. 7. 2026). Žádný z nalezených zdrojů nedokumentuje reakci poslanců, sněmovního výboru pro bezpečnost, opozice, vedení policie ani policejních odborů — jediné doložené hlasy zůstávají Metnar (MV) a Kala/Kadečková (NKÚ). Mezera zůstává otevřená.
