@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
-title = "GAP-06 — Není známo, kdy přesně vláda návrh projedná a zda byl schválen."
-description = "Zdroje uvádějí pouze, že se návrh připravuje k projednání a na poslední jednání vlády se nedostal; výsledky jednání vlády k tomuto bodu neby"
+title = "GAP-06 — Kdy a zda vláda návrh schválila — zodpovězeno (viz GAP-01)"
+description = "Vláda usnesením z 27. 7. 2026 návrh přijala; stejný nález jako u GAP-01, nyní propojen i s touto mezerou."
 template = "dossier-gap.html"
 weight = 6
 
@@ -14,8 +14,10 @@ record_type = "gap"
 lang = "cs"
 gap_id = "GAP-06"
 +++
-Není známo, kdy přesně vláda návrh projedná a zda byl schválen.
+Kdy a zda vláda návrh schválila — zodpovězeno (viz GAP-01)
 
-**Proč je to mezera**: Zdroje uvádějí pouze, že se návrh připravuje k projednání a na poslední jednání vlády se nedostal; výsledky jednání vlády k tomuto bodu nebyly dohledány. Tato mezera **není** zjištěním žádným
-směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
-otevřeným zdrojem.
+**Původní mezera** (30. 7. 2026): Zdroje uváděly pouze, že se návrh připravuje k projednání a na poslední jednání vlády se nedostal; výsledky jednání vlády k tomuto bodu nebyly dohledány.
+
+**Odpověď (ověřeno 3. 8. 2026)**: dossier tuto otázku mezitím zodpověděl u [GAP-01](@/dossiers/lubomir-metnar/gaps/gap-01.md) (uzavřeno 2026-08-02), jen nebyla propojena s touto mezerou. Vláda usnesením z pondělí 27. 7. 2026 návrh přijala — NKÚ byl vyřazen ze seznamu chráněných objektů Policie ČR, na jeho místo byla zařazena Česká národní banka ([CLM-26](@/dossiers/lubomir-metnar/claims/clm-26.md), zdroj ČeskéNoviny.cz 30. 7. 2026).
+
+Tato mezera je tímto zodpovězena a uzavřena — relinkem na existující nález, ne novým výzkumem.
