@@ -57,6 +57,7 @@ Autorizace definuje rozsah, necertifikuje reportáže.
 | <a id="clm-07"></a>[CLM-07](@/dossiers/jaroslav-faltynek/claims/clm-07.md) | Faltýnek podle citovaného zpravodajství u soudu uvedl, že projekt stál přibližně miliardu korun a dotace představovala pouze pět procent celkové investice, a označil kauzu za vykonstruovanou s cílem odstranit Andreje Babiše z politiky | <span class="status-badge status-quote">CITACE</span> | [SRC-03](@/dossiers/jaroslav-faltynek/sources/src-03.md) |
 | <a id="clm-08"></a>[CLM-08](@/dossiers/jaroslav-faltynek/claims/clm-08.md) | K převodu akcií Faltýnek podle citovaného zpravodajství uvedl, že u něj nebyl přítomen a že „byl kupec, který nabídl cenu, která byla vyšší než účetní hodnota"; detaily podle něj řešili právníci a představenstvo návrh jen schválilo | <span class="status-badge status-quote">CITACE</span> | [SRC-03](@/dossiers/jaroslav-faltynek/sources/src-03.md) |
 | <a id="clm-09"></a>[CLM-09](@/dossiers/jaroslav-faltynek/claims/clm-09.md) | Faltýnek podle ČT24 sám uvedl, že policie státnímu zástupci nedodala dostatek důkazů — jde o jeho vlastní charakteristiku důvodu zastavení jeho stíhání, ne o citaci oficiálního odůvodnění státního zástupce | <span class="status-badge status-quote">CITACE</span> | [SRC-08](@/dossiers/jaroslav-faltynek/sources/src-08.md) |
+| <a id="clm-10"></a>[CLM-10](@/dossiers/jaroslav-faltynek/claims/clm-10.md) | Poslanecká sněmovna 6. 9. 2017 hlasováním zbavila imunity a vydala k trestnímu stíhání v kauze Čapí hnízdo Andreje Babiše (123 pro, 4 proti) a Jaroslava Faltýnka (120 pro, 5 proti); oba tehdy hlasovali pro vlastní vydání s vyjádřením, že očekávají očištění u soudu. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-09](@/dossiers/jaroslav-faltynek/sources/src-09.md) |
 
 ## Zrušené trestní stíhání v kauze Čapí hnízdo {#kauza-zrusene-stihani}
 
@@ -85,8 +86,11 @@ otevřených zdrojů doloženo není
 ([GAP-01](@/dossiers/jaroslav-faltynek/gaps/gap-01.md)) — Faltýnek sám
 později uvedl, že policie státnímu zástupci nedodala dostatek důkazů
 ([CLM-09](@/dossiers/jaroslav-faltynek/claims/clm-09.md)), ale jde o
-jeho vlastní charakteristiku, ne o doložené oficiální odůvodnění —
-stejně jako původní obvinění z roku 2015 a vydání Sněmovnou v roce 2017
+jeho vlastní charakteristiku, ne o doložené oficiální odůvodnění.
+Sněmovna Faltýnka 6. 9. 2017 vydala k trestnímu stíhání hlasováním
+120 pro a 5 proti, spolu s Babišem
+([CLM-10](@/dossiers/jaroslav-faltynek/claims/clm-10.md)) — přesné
+datum a okolnosti původního obvinění z roku 2015 zůstávají nedoloženy
 ([GAP-02](@/dossiers/jaroslav-faltynek/gaps/gap-02.md)).
 
 ## Svědecká výpověď u soudu s Andrejem Babišem {#kauza-svedecka-vypoved}

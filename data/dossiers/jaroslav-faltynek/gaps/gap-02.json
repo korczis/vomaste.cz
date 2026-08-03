@@ -12,10 +12,13 @@
   "title": "GAP-02 — Původní obvinění 2015 a vydání Sněmovnou 2017",
   "description": "Dossier neeviduje původní obvinění z roku 2015 ani vydání k trestnímu stíhání v roce 2017 — nebyly doloženy z otevřeného a přečteného zdroje.",
   "priority": "střední",
-  "checked": "2026-07-30",
+  "checked": "2026-08-03",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-10"
     }
   ],
   "subjects": [
@@ -24,7 +27,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Kauza podle veřejné debaty začala obviněním v roce 2015 a Sněmovna\nFaltýnka v roce 2017 vydala k trestnímu stíhání. **Tento dossier ani\njedno z toho netvrdí** — nebylo to doloženo ze zdroje, který by byl\nskutečně otevřen a přečten.\n\nUvádí se to zde záměrně: dossier začíná u **zrušení stíhání v roce\n2018**, tedy u toho, co doloženo je. Ponechat v textu obvinění bez\ndoloženého zdroje a zároveň bez jeho ukončení by čtenáře uvedlo v omyl\ntím nejhorším možným směrem."
+      "value": "Kauza podle veřejné debaty začala obviněním v roce 2015 a Sněmovna\nFaltýnka v roce 2017 vydala k trestnímu stíhání. **Tento dossier ani\njedno z toho netvrdí** — nebylo to doloženo ze zdroje, který by byl\nskutečně otevřen a přečten.\n\nUvádí se to zde záměrně: dossier začíná u **zrušení stíhání v roce\n2018**, tedy u toho, co doloženo je. Ponechat v textu obvinění bez\ndoloženého zdroje a zároveň bez jeho ukončení by čtenáře uvedlo v omyl\ntím nejhorším možným směrem.\n\n**Odpověď (ověřeno 2026-08-03), částečně**: přímo dohledán a otevřen Deník.cz — Poslanecká sněmovna 6. 9. 2017 hlasováním (120 pro, 5 proti) vydala Faltýnka k trestnímu stíhání spolu s Andrejem Babišem (123 pro, 4 proti). Zapsáno jako nové [CLM-10](@/dossiers/jaroslav-faltynek/claims/clm-10.md), nový [SRC-09](@/dossiers/jaroslav-faltynek/sources/src-09.md). Přesné datum a okolnosti původního obvinění z roku 2015 se ale ani v tomto zdroji nepodařilo dohledat — ta část mezery zůstává otevřená."
     }
   ],
   "order": 2

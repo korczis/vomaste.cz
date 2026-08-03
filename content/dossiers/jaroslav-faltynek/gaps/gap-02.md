@@ -23,3 +23,5 @@ Uvádí se to zde záměrně: dossier začíná u **zrušení stíhání v roce
 2018**, tedy u toho, co doloženo je. Ponechat v textu obvinění bez
 doloženého zdroje a zároveň bez jeho ukončení by čtenáře uvedlo v omyl
 tím nejhorším možným směrem.
+
+**Odpověď (ověřeno 2026-08-03), částečně**: přímo dohledán a otevřen Deník.cz — Poslanecká sněmovna 6. 9. 2017 hlasováním (120 pro, 5 proti) vydala Faltýnka k trestnímu stíhání spolu s Andrejem Babišem (123 pro, 4 proti). Zapsáno jako nové [CLM-10](@/dossiers/jaroslav-faltynek/claims/clm-10.md), nový [SRC-09](@/dossiers/jaroslav-faltynek/sources/src-09.md). Přesné datum a okolnosti původního obvinění z roku 2015 se ale ani v tomto zdroji nepodařilo dohledat — ta část mezery zůstává otevřená.
