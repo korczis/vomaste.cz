@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-34",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-34",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "title": "SRC-34 — Seznam Zprávy, 8. 8. 2019",
+  "description": "Exkluzivně: Jak Babišova pekárna získala 100 milionů na toastový chléb.",
+  "outlet": "Seznam Zprávy",
+  "sourceType": "zpravodajství",
+  "url": "https://www.seznamzpravy.cz/clanek/exkluzivne-jak-babisova-pekarna-ziskala-100-milionu-na-toastovy-chleb-bude-jako-hedvabi-na-rtech-tvrdila-76961",
+  "published": "2019-08-08",
+  "retrieved": "2026-08-03",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-49"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Co dokládá.** Předběžná verze auditu Evropské komise k toustové lince Penamu dorazila českým úřadům v květnu 2019; k srpnu 2019 (datum článku) na ni české úřady připravovaly vyjádření, které mělo být Evropské komisi odesláno začátkem září 2019. Přesné datum, kdy se s auditem seznámilo přímo ministerstvo průmyslu (na rozdíl od jiných zapojených úřadů), článek neuvádí.\n\n**Proč je to tu důležité.** Odpovídá na [GAP-04](@/dossiers/karel-havlicek/gaps/gap-04.md): posouvá známou časovou linku o čtyři měsíce před Havlíčkovo první veřejné vyjádření (prosinec 2019) — české úřady o auditu prokazatelně věděly a reagovaly na něj už od května/srpna 2019, i když přesné datum seznámení konkrétně MPO zůstává nedoloženo."
+    }
+  ],
+  "order": 34
+}

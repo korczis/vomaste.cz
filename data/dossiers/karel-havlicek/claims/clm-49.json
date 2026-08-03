@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-49",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-49",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "text": "Předběžná verze auditu Evropské komise k toustové lince Penamu dorazila českým úřadům v květnu 2019; k srpnu 2019 na ni české úřady připravovaly vyjádření, které mělo být Komisi odesláno začátkem září 2019 — tedy čtyři měsíce před Havlíčkovým prvním veřejným komentářem k auditu v prosinci 2019. Přesné datum, kdy se s auditem seznámilo konkrétně ministerstvo průmyslu, zdroj neuvádí.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-34"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "order": 49,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam tvrzení CLM-49 — shrnutí, stav a\nzdroj výše jsou úplné. Odpovídá na [GAP-04](@/dossiers/karel-havlicek/gaps/gap-04.md)\nčástečně — posouvá doloženou časovou linku před Havlíčkův prosincový\nkomentář, přesné datum seznámení MPO ale i tento zdroj nechává\notevřené."
+    }
+  ]
+}

@@ -16,6 +16,6 @@ gap_id = "GAP-04"
 +++
 Přesné datum, kdy se ministerstvo průmyslu poprvé oficiálně seznámilo s auditem EK k toustové lince (v průběhu roku 2019).
 
-**Proč je to mezera**: Načtené články dokládají jen to, že Havlíček audit veřejně komentoval v prosinci 2019; dřívější interní znalost ministerstva zmiňují pouze nenačtené či nedostupné zdroje. Tato mezera **není** zjištěním žádným
-směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
-otevřeným zdrojem.
+**Proč je to mezera**: Načtené články dokládají jen to, že Havlíček audit veřejně komentoval v prosinci 2019; dřívější interní znalost ministerstva zmiňují pouze nenačtené či nedostupné zdroje. Tato mezera **není** zjištěním žádným směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit otevřeným zdrojem.
+
+**Částečně vyřešeno 3. 8. 2026**: dohledán a přímo otevřen zdroj (Seznam Zprávy, 8. 8. 2019) — viz [CLM-49](@/dossiers/karel-havlicek/claims/clm-49.md). Posouvá doloženou časovou linku o čtyři měsíce před Havlíčkovo prosincové vyjádření: předběžná verze auditu dorazila českým úřadům v květnu 2019, vyjádření se připravovalo k odeslání začátkem září 2019. Přesné datum seznámení konkrétně ministerstva průmyslu (na rozdíl od zapojených úřadů obecně) ale ani tento zdroj neuvádí. Mezera zůstává v tomto užším smyslu otevřená, obecná časová linka je ale nyní podstatně přesnější.
