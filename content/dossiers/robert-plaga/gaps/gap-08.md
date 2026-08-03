@@ -19,3 +19,5 @@ Nepodařilo se ověřit doslovné znění navrhované novely (sněmovní tisk 23
 **Proč je to mezera**: Stránky Poslanecké sněmovny obsahují pouze metadata a odkazy na PDF/DOC; přiložené soubory se nepodařilo strojově přečíst. Obsah novely je proto doložen jen zprostředkovaně přes zpravodajství. Tato mezera **není** zjištěním žádným
 směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
+
+**Opakovaná kontrola k 2026-08-03**: znovu ověřeno na psp.cz (tisk 232, 10. volební období, potvrzeno správné tisk/období) — stránka nadále obsahuje jen metadata a odkazy na PDF/DOCX, obsah zůstává strojově nečitelný. Nalezen jeden další zdroj (ČeskéNoviny.cz „tiskové zprávy", 23. 7. 2026) s konkrétnějším popisem obsahu novely (účinnost od září 2027, výjimka pro chytré hodinky) — ukázal se ale být komerční PR sdělení (autor „Komerční sdělení", zdroj „Konektor PR"), citující zástupce prodejce dětských chytrých hodinek se zjevným střetem zájmů. Vědomě NEpoužito jako zdroj faktu o obsahu zákona. Mezera zůstává otevřená.
