@@ -10,9 +10,9 @@
     "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
   },
   "title": "GAP-05 — Chybí přesné počty hlasů z jednání Senátu 17. června 2026.",
-  "description": "Zpravodajský článek ČTK počty hlasů neuvádí a stenozáznam Senátu nebyl v rámci autorizovaného rozsahu dohledán.",
+  "description": "Zpravodajský článek ČTK počty hlasů neuvádí; ověřeno znovu 3. 8. 2026, přesné počty stále nedohledány, ani na oficiálním webu Senátu.",
   "priority": "střední",
-  "checked": "2026-07-30",
+  "checked": "2026-08-03",
   "claims": [],
   "subjects": [
     "schillerova"
@@ -20,7 +20,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Chybí přesné počty hlasů z jednání Senátu 17. června 2026.\n\n**Proč je to mezera**: Zpravodajský článek ČTK počty hlasů neuvádí a stenozáznam Senátu nebyl v rámci autorizovaného rozsahu dohledán. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+      "value": "Chybí přesné počty hlasů z jednání Senátu 17. června 2026.\n\n**Proč je to mezera**: Zpravodajský článek ČTK počty hlasů neuvádí a stenozáznam Senátu nebyl v rámci autorizovaného rozsahu dohledán. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem.\n\n**Opakovaná kontrola k 2026-08-03**: opakovaně zkoušeno dohledat přesné počty hlasů — ani jeden ze zpravodajských zdrojů (Echo24, ČeskéNoviny.cz) je neuvádí, jen že Senát „po více než tříhodinové debatě odmítl“ návrhy na schválení beze změn i na zamítnutí. Oficiální stránky Senátu (senat.cz) s hlasovacími protokoly a stenozáznamy nebylo možné přímo strojově otevřít (dynamický obsah); přímé odkazy na konkrétní hlasovací záznam k této schůzi se nepodařilo dohledat. Mezera zůstává otevřená."
     }
   ],
   "order": 5
