@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-47",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-47",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "text": "Ministerstvo průmyslu a obchodu oznámilo odnětí stomilionové dotace pekárně Zelená louka (Penam/Agrofert) v březnu 2022 — tedy až pod vedením Havlíčkova nástupce Jozefa Síkely (STAN), ne během Havlíčkova působení v čele resortu.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-13"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "order": 47,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam tvrzení CLM-47 — shrnutí, stav a\nzdroj výše jsou úplné. Odpovídá na [GAP-02](@/dossiers/karel-havlicek/gaps/gap-02.md)\nnezávislým, přímo otevřeným zpravodajským zdrojem (jmenovaný reportér,\nne ČTK) namísto pouhého komentáře — relink na již citovaný SRC-13."
+    }
+  ]
+}
