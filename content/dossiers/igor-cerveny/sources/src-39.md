@@ -25,3 +25,6 @@ prostory,“ jejichž úprava má stát statisíce korun.
 převzatá zpráva) než Deník N (SRC-20/SRC-21) — nezávislé potvrzení, že
 Turek nadále úřaduje v ministerské pracovně i o více než týden později
 než datum, k němuž se vztahuje původní tvrzení.
+
+**Doplnění (GAP-10, 2026-08-03).** Článek obsahuje i konkrétní rozpis
+dvou smluv na náhradní prostory ministra Červeného — viz [CLM-58](@/dossiers/igor-cerveny/claims/clm-58.md).

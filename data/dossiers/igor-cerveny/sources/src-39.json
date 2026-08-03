@@ -19,6 +19,9 @@
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-35"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-58"
     }
   ],
   "subjects": [
@@ -27,7 +30,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "NašeTéma.cz (vlastní redakční text, autor Milan Polák), publikováno\n27. 5. 2026 — devět dní po datu, k němuž se vztahuje tvrzení Deníku N\n(18. 5. 2026) — nezávisle potvrzuje totéž jádro faktu: „Kancelář, v níž\nTurek nyní na resortu úřaduje, dříve užíval ministr Hladík,“ zatímco\n„ministr Igor Červený, který resort formálně vede, dostal náhradní\nprostory,“ jejichž úprava má stát statisíce korun.\n\n**Nezávislost.** Jiný vydavatel (NašeTéma.cz, vlastní zpravodajství, ne\npřevzatá zpráva) než Deník N (SRC-20/SRC-21) — nezávislé potvrzení, že\nTurek nadále úřaduje v ministerské pracovně i o více než týden později\nnež datum, k němuž se vztahuje původní tvrzení."
+      "value": "NašeTéma.cz (vlastní redakční text, autor Milan Polák), publikováno\n27. 5. 2026 — devět dní po datu, k němuž se vztahuje tvrzení Deníku N\n(18. 5. 2026) — nezávisle potvrzuje totéž jádro faktu: „Kancelář, v níž\nTurek nyní na resortu úřaduje, dříve užíval ministr Hladík,“ zatímco\n„ministr Igor Červený, který resort formálně vede, dostal náhradní\nprostory,“ jejichž úprava má stát statisíce korun.\n\n**Nezávislost.** Jiný vydavatel (NašeTéma.cz, vlastní zpravodajství, ne\npřevzatá zpráva) než Deník N (SRC-20/SRC-21) — nezávislé potvrzení, že\nTurek nadále úřaduje v ministerské pracovně i o více než týden později\nnež datum, k němuž se vztahuje původní tvrzení.\n\n**Doplnění (GAP-10, 2026-08-03).** Článek obsahuje i konkrétní rozpis\ndvou smluv na náhradní prostory ministra Červeného — viz [CLM-58](@/dossiers/igor-cerveny/claims/clm-58.md)."
     }
   ],
   "order": 39
