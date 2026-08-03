@@ -1,46 +1,49 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/kdu-csl",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "kdu-csl",
- "entityId": "kdu-csl",
- "title": "KDU-ČSL",
- "entityType": "political_party",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "boris-stastny",
-  "jaromir-zuna",
-  "karel-havlicek",
-  "oto-klempir"
- ],
- "order": 217,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/kdu-csl",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "kdu-csl",
+  "entityId": "kdu-csl",
+  "title": "KDU-ČSL",
+  "entityType": "political_party",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "boris-stastny",
+    "jaromir-zuna",
+    "karel-havlicek",
+    "oto-klempir"
   ],
-  "claimRefs": [
-   "CLM-09",
-   "CLM-17",
-   "CLM-32",
-   "CLM-34",
-   "CLM-39"
+  "order": 217,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02"
+    ],
+    "claimRefs": [
+      "CLM-09",
+      "CLM-17",
+      "CLM-32",
+      "CLM-34",
+      "CLM-39"
+    ],
+    "sourceRefs": [
+      "SRC-18",
+      "SRC-23"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Opoziční strana; její politici (Zdechovský, Výborný, Bartošek) vystupují v kauzách dotace, stavebního zákona a obranného rozpočtu. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (boris-stastny, jaromir-zuna, karel-havlicek, oto-klempir). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ],
-  "sourceRefs": [
-   "SRC-18",
-   "SRC-23"
-  ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Opoziční strana; její politici (Zdechovský, Výborný, Bartošek) vystupují v kauzách dotace, stavebního zákona a obranného rozpočtu. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (boris-stastny, jaromir-zuna, karel-havlicek, oto-klempir). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  "externalIds": {
+    "ico": "00442704"
   }
- ]
 }

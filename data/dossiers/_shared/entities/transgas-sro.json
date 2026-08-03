@@ -1,38 +1,41 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/transgas-sro",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "transgas-sro",
- "entityId": "transgas-sro",
- "title": "Transgas s.r.o.",
- "entityType": "company",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "macinka-turek"
- ],
- "order": 411,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/transgas-sro",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "transgas-sro",
+  "entityId": "transgas-sro",
+  "title": "Transgas s.r.o.",
+  "entityType": "company",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "macinka-turek"
   ],
-  "claimRefs": [
-   "CLM-20"
+  "order": 411,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02"
+    ],
+    "claimRefs": [
+      "CLM-20"
+    ],
+    "sourceRefs": [
+      "SRC-23"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — IČO 06230113; Turek členem statutárního orgánu od 28. 6. 2017. Pozor na záměnu s historickým státním podnikem Transgas — proto entityId transgas-sro. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (macinka-turek). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ],
-  "sourceRefs": [
-   "SRC-23"
-  ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — IČO 06230113; Turek členem statutárního orgánu od 28. 6. 2017. Pozor na záměnu s historickým státním podnikem Transgas — proto entityId transgas-sro. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (macinka-turek). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  "externalIds": {
+    "ico": "06230113"
   }
- ]
 }

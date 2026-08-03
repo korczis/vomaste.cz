@@ -1,38 +1,41 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/cd-cargo",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "cd-cargo",
- "entityId": "cd-cargo",
- "title": "ČD Cargo",
- "entityType": "company",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "ivan-bednarik"
- ],
- "order": 84,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/cd-cargo",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "cd-cargo",
+  "entityId": "cd-cargo",
+  "title": "ČD Cargo",
+  "entityType": "company",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "ivan-bednarik"
   ],
-  "claimRefs": [
-   "CLM-01"
+  "order": 84,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02"
+    ],
+    "claimRefs": [
+      "CLM-01"
+    ],
+    "sourceRefs": [
+      "SRC-01"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Bednárik dříve ve vedení ČD Cargo (biografický údaj z oficiálního profilu). Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (ivan-bednarik). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ],
-  "sourceRefs": [
-   "SRC-01"
-  ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Bednárik dříve ve vedení ČD Cargo (biografický údaj z oficiálního profilu). Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (ivan-bednarik). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  "externalIds": {
+    "ico": "28196678"
   }
- ]
 }

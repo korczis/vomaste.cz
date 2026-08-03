@@ -1,54 +1,57 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/stan",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "stan",
- "entityId": "stan",
- "title": "STAN",
- "entityType": "political_party",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "andrej-babis",
-  "boris-stastny",
-  "jaromir-zuna",
-  "jeronym-tejc",
-  "karel-havlicek",
-  "oto-klempir"
- ],
- "order": 391,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/stan",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "stan",
+  "entityId": "stan",
+  "title": "STAN",
+  "entityType": "political_party",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "andrej-babis",
+    "boris-stastny",
+    "jaromir-zuna",
+    "jeronym-tejc",
+    "karel-havlicek",
+    "oto-klempir"
   ],
-  "claimRefs": [
-   "CLM-09",
-   "CLM-13",
-   "CLM-17",
-   "CLM-38",
-   "CLM-45",
-   "CLM-47"
+  "order": 391,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02"
+    ],
+    "claimRefs": [
+      "CLM-09",
+      "CLM-13",
+      "CLM-17",
+      "CLM-38",
+      "CLM-45",
+      "CLM-47"
+    ],
+    "sourceRefs": [
+      "SRC-02",
+      "SRC-06",
+      "SRC-07",
+      "SRC-16",
+      "SRC-17",
+      "SRC-18",
+      "SRC-23"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Zmíněna jen jako stranická afiliace citovaného Víta Rakušana. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (andrej-babis, boris-stastny, jaromir-zuna, jeronym-tejc, karel-havlicek, oto-klempir). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ],
-  "sourceRefs": [
-   "SRC-02",
-   "SRC-06",
-   "SRC-07",
-   "SRC-16",
-   "SRC-17",
-   "SRC-18",
-   "SRC-23"
-  ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Zmíněna jen jako stranická afiliace citovaného Víta Rakušana. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (andrej-babis, boris-stastny, jaromir-zuna, jeronym-tejc, karel-havlicek, oto-klempir). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  "externalIds": {
+    "ico": "26673908"
   }
- ]
 }

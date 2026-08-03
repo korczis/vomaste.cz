@@ -1,38 +1,41 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/motoriste-praha",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "motoriste-praha",
- "entityId": "motoriste-praha",
- "title": "Motoristé Praha s.r.o.",
- "entityType": "company",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "macinka-turek"
- ],
- "order": 289,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/motoriste-praha",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "motoriste-praha",
+  "entityId": "motoriste-praha",
+  "title": "Motoristé Praha s.r.o.",
+  "entityType": "company",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "macinka-turek"
   ],
-  "claimRefs": [
-   "CLM-22"
+  "order": 289,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02"
+    ],
+    "claimRefs": [
+      "CLM-22"
+    ],
+    "sourceRefs": [
+      "SRC-24"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — IČO 14076705; Macinka členem statutárního orgánu a společníkem 31. 5. 2022 – 5. 1. 2026. Odlišné od hnutí Motoristé sobě (entita motoriste existuje). Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (macinka-turek). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ],
-  "sourceRefs": [
-   "SRC-24"
-  ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — IČO 14076705; Macinka členem statutárního orgánu a společníkem 31. 5. 2022 – 5. 1. 2026. Odlišné od hnutí Motoristé sobě (entita motoriste existuje). Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (macinka-turek). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  "externalIds": {
+    "ico": "14076705"
   }
- ]
 }

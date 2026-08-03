@@ -1,42 +1,45 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/vykrm-tagrea",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "vykrm-tagrea",
- "entityId": "vykrm-tagrea",
- "title": "Výkrm Tagrea",
- "entityType": "company",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "andrej-babis"
- ],
- "order": 449,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/vykrm-tagrea",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "vykrm-tagrea",
+  "entityId": "vykrm-tagrea",
+  "title": "Výkrm Tagrea",
+  "entityType": "company",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "andrej-babis"
   ],
-  "claimRefs": [
-   "CLM-63",
-   "CLM-64",
-   "CLM-65"
+  "order": 449,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02"
+    ],
+    "claimRefs": [
+      "CLM-63",
+      "CLM-64",
+      "CLM-65"
+    ],
+    "sourceRefs": [
+      "SRC-42",
+      "SRC-43",
+      "SRC-45"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Firma skupiny Agrofert — žalobkyně ve správních sporech o ukončené dotace SZIF. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (andrej-babis). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ],
-  "sourceRefs": [
-   "SRC-42",
-   "SRC-43",
-   "SRC-45"
-  ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Firma skupiny Agrofert — žalobkyně ve správních sporech o ukončené dotace SZIF. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (andrej-babis). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  "externalIds": {
+    "ico": "26102463"
   }
- ]
 }

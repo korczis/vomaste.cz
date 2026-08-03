@@ -1,40 +1,43 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/investigace-cz",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "investigace-cz",
- "entityId": "investigace-cz",
- "title": "Investigace.cz",
- "entityType": "organization",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "macinka-turek"
- ],
- "order": 153,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/investigace-cz",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "investigace-cz",
+  "entityId": "investigace-cz",
+  "title": "Investigace.cz",
+  "entityType": "organization",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "macinka-turek"
   ],
-  "claimRefs": [
-   "CLM-14",
-   "CLM-47"
+  "order": 153,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02"
+    ],
+    "claimRefs": [
+      "CLM-14",
+      "CLM-47"
+    ],
+    "sourceRefs": [
+      "SRC-17",
+      "SRC-18"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Investigativní server; aktér kauzy majetkového přiznání — jeho upozornění vedlo k Macinkovu dodatečnému přiznání podílu v GMR GAS UA LLC (jmenován přímo v textu tvrzení CLM-14). Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (macinka-turek). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ],
-  "sourceRefs": [
-   "SRC-17",
-   "SRC-18"
-  ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Investigativní server; aktér kauzy majetkového přiznání — jeho upozornění vedlo k Macinkovu dodatečnému přiznání podílu v GMR GAS UA LLC (jmenován přímo v textu tvrzení CLM-14). Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (macinka-turek). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  "externalIds": {
+    "ico": "01680081"
   }
- ]
 }

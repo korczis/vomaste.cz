@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 481 context entities across 24 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 491 context entities across 24 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -80,7 +80,7 @@ Generated from 481 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: andrej-babis, tunde-bartha, karel-havlicek, martin-sebestyan
 - Claims: CLM-04, CLM-05, CLM-16, CLM-37, CLM-06
-- Sources: SRC-02, SRC-06, SRC-15, SRC-03 (5 independent source families)
+- Sources: SRC-02, SRC-06, SRC-15, SRC-03 (6 independent source families)
 - Relations: 
   - edge-ab-trusts-agrofert (ab-private-trusts -> agrofert, "držely akcie Agrofertu (2017–2025)", dossier: andrej-babis)
   - edge-agrofert-capihnizdo-reklamy (agrofert -> capi-hnizdo, "platby firem skupiny za reklamu >270 mil. Kč (2010–2013); dvakrát odloženo, trestný čin nezjištěn — odložení není potvrzení přiměřenosti plateb", dossier: andrej-babis)
@@ -326,7 +326,7 @@ Generated from 481 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: martin-sebestyan
 - Claims: CLM-19, CLM-41, CLM-42
-- Sources: SRC-08, SRC-20, SRC-21 (3 independent source families)
+- Sources: SRC-08, SRC-20, SRC-21 (2 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -440,6 +440,16 @@ Generated from 481 context entities across 24 dossier(s). Regenerate with `npm r
   - edge-boyne-bigaud (boyne-holding -> scp-bigaud, "financování pořízení pozemku; od 8/2019 SCP Bigaud ze 100 % vlastněna I.M.O.D.I.M.", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Bronislav Houdek (`bronislav-houdek`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## BYD Automotive (`byd-automotive`)
 
 - Type: company
@@ -447,6 +457,16 @@ Generated from 481 context entities across 24 dossier(s). Regenerate with `npm r
 - Appears in: karel-havlicek
 - Claims: CLM-46
 - Sources: SRC-31 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Bydlíme v Králově Poli, z.s. (`bydlime-v-kralove-poli-z-s`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -731,7 +751,7 @@ Generated from 481 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: martin-sebestyan
 - Claims: CLM-28, CLM-31
-- Sources: SRC-10, SRC-11, SRC-17 (3 independent source families)
+- Sources: SRC-10, SRC-11, SRC-17 (2 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -847,7 +867,7 @@ Generated from 481 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: andrej-babis, martin-sebestyan
 - Claims: CLM-30, CLM-44
-- Sources: SRC-25 (1 independent source family)
+- Sources: SRC-25 (2 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -1227,6 +1247,16 @@ Generated from 481 context entities across 24 dossier(s). Regenerate with `npm r
 - Appears in: oto-klempir
 - Claims: CLM-39
 - Sources: SRC-16 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## HYDROPROGRESS, s.r.o. (`hydroprogress-s-r-o`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -1993,7 +2023,7 @@ Generated from 481 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: martin-sebestyan
 - Claims: CLM-02, CLM-03, CLM-17, CLM-21, CLM-22, CLM-25, CLM-26, CLM-30
-- Sources: SRC-02, SRC-06, SRC-07, SRC-08, SRC-09, SRC-12, SRC-13, SRC-14, SRC-27 (9 independent source families)
+- Sources: SRC-02, SRC-06, SRC-07, SRC-08, SRC-09, SRC-12, SRC-13, SRC-14, SRC-27 (7 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -2359,13 +2389,23 @@ Generated from 481 context entities across 24 dossier(s). Regenerate with `npm r
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Ing. Marek Viskot (`marek-viskot`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Marek Výborný (`marek-vyborny`)
 
 - Type: person
 - Status: not_authorized
 - Appears in: karel-havlicek, martin-sebestyan
 - Claims: CLM-03, CLM-16, CLM-32, CLM-44
-- Sources: SRC-05, SRC-07, SRC-18, SRC-25, SRC-27 (5 independent source families)
+- Sources: SRC-05, SRC-07, SRC-18, SRC-25, SRC-27 (6 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -2424,6 +2464,16 @@ Generated from 481 context entities across 24 dossier(s). Regenerate with `npm r
   - edge-plaga-benes (plaga -> martin-benes, "spor o plošný zákaz mobilů ve školách — reakce na dětského ombudsmana", dossier: robert-plaga)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Martin Korec (`martin-korec`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Ing. Martin Kubů (`martin-kubu`)
 
 - Type: person
@@ -2449,6 +2499,16 @@ Generated from 481 context entities across 24 dossier(s). Regenerate with `npm r
   - edge-kupka-havlicek (martin-kupka -> havlicek, "Kupka (ODS) kritizoval Havlíčkovu novelu stavebního zákona jako plnou „nášlapných min“", dossier: karel-havlicek)
   - edge-plaga-kupka (plaga -> martin-kupka, "kritika ODS (Martin Kupka) k plošnému zákazu mobilů ve školách", dossier: robert-plaga)
   - edge-mrazova-kupka (mrazova -> martin-kupka, "předseda ODS označil vyjádření Mrázové k jejím kauzám za pokrytectví", dossier: zuzana-mrazova)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Martin Pavlík (`martin-pavlik`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Masarykova nemocnice v Ústí nad Labem (`masarykova-nemocnice-usti`)
@@ -2490,6 +2550,16 @@ Generated from 481 context entities across 24 dossier(s). Regenerate with `npm r
 - Appears in: macinka-turek
 - Claims: CLM-22
 - Sources: SRC-24 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## MEDIA PROJECT CZ s.r.o. (`media-project-cz-s-r-o`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -2624,6 +2694,26 @@ Generated from 481 context entities across 24 dossier(s). Regenerate with `npm r
 - Appears in: karel-havlicek
 - Claims: CLM-32
 - Sources: SRC-18 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Michal Maixner (`michal-maixner`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Michal Vít (`michal-vit`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -2941,6 +3031,16 @@ Generated from 481 context entities across 24 dossier(s). Regenerate with `npm r
   - edge-macinka-mzp2026 (macinka -> mzp2026, "dočasně vede resort (do 2/2026)", dossier: macinka-turek)
   - edge-pavel-mzp2026 (pavel -> mzp2026, "odmítl jmenovat", dossier: macinka-turek)
   - edge-turek-mzp2026 (turek -> mzp2026, "navrhován, nejmenován (1/2026)", dossier: macinka-turek)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## "Nadační fond FIDUCIA" (`nadacni-fond-fiducia`)
+
+- Type: company
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Národní galerie Praha (`narodni-galerie-praha`)
@@ -3589,7 +3689,7 @@ Generated from 481 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: martin-sebestyan
 - Claims: CLM-17, CLM-21
-- Sources: SRC-08, SRC-09, SRC-10, SRC-11 (4 independent source families)
+- Sources: SRC-08, SRC-09, SRC-10, SRC-11 (1 independent source family)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -4254,7 +4354,7 @@ Generated from 481 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: jaromir-zuna
 - Claims: CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07, CLM-41, CLM-42, CLM-43, CLM-44, CLM-45, CLM-46, CLM-47, CLM-48
-- Sources: SRC-02, SRC-03, SRC-04, SRC-05, SRC-15, SRC-16, SRC-17, SRC-20, SRC-23, SRC-24, SRC-33 (11 independent source families)
+- Sources: SRC-02, SRC-03, SRC-04, SRC-05, SRC-15, SRC-16, SRC-17, SRC-20, SRC-23, SRC-24, SRC-33 (9 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
