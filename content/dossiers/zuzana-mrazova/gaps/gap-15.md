@@ -19,3 +19,5 @@ Kritika resortní agendy Mrázové mimo čtyři autorizovaná témata (odklad ú
 **Proč je to mezera**: Leží mimo autorizovaný rozsah AUTH-2026-07-30-P a mimo povolený výčet témat. Zaznamenáno pouze tam, kde kritik (Kulhánek) přímo propojil agendu s kauzou obecního bytu. Tato mezera **není** zjištěním žádným
 směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
+
+**Opakovaná kontrola k 2026-08-03**: hranice ověřena proti aktuálnímu znění AGENTS.md — autorizace `AUTH-2026-07-30-P` zůstává omezena na (1) nepravomocnou pokutu za střet zájmů, (2) obecní byt v Bílině, (3) stavby v rozporu s územním plánem, (4) rezignační výzvy opozice a podnět resortu spravedlnosti; beze změny od poslední kontroly. V souladu s hranicí nebyl proveden žádný další výzkum mimo tyto čtyři témata. Mezera zůstává záměrně otevřená jako hranice rozsahu, ne jako chybějící pokrytí.
