@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-55",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-55",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "text": "K 3. 8. 2026 zůstává prof. MUDr. Roman Havlík, Ph.D. podle oficiální stránky vedení nemocnice ředitelem FN Olomouc; žádný nezávislý zpravodajský zdroj k tomuto datu neinformoval o jeho odvolání ani rezignaci po zveřejnění závěrů komise z 10.–11. 7. 2026.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-41"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "order": 55,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam tvrzení CLM-55 — shrnutí, stav a zdroj\nvýše jsou úplné. Odpovídá na [GAP-07](@/dossiers/adam-vojtech/gaps/gap-07.md);\nzdroj je institucionální (web nemocnice, kterou Havlík sám řídí), ne\nnezávislé zpravodajství, proto zůstává 1 ZDROJ."
+    }
+  ]
+}
