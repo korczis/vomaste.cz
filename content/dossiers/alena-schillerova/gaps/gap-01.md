@@ -20,4 +20,4 @@ Osud novely rozpočtových zákonů po květnovém projednávání — zodpověz
 
 **Odpověď (ověřeno 3. 8. 2026, dossier už mezitím doplněn dalšími sessions)**: novelu Sněmovna poprvé schválila 15. 5. 2026. Senát ji vrátil s omezujícími podmínkami (posílení sněmovní kontroly, omezení pravomoci ministerstva financí měnit rozpočty nezávislých institucí) — Sněmovna je odmítla a v noci na 8. 7. 2026 svou verzi potvrdila přesně 101 hlasy vládní koalice, minimem potřebným ke schválení ([CLM-15](@/dossiers/alena-schillerova/claims/clm-15.md)). Prezident Petr Pavel ji 22. 7. 2026 vetoval s odůvodněním rizika nekontrolovaného zadlužení ([CLM-17](@/dossiers/alena-schillerova/claims/clm-17.md) a násl.). Sporné senátní pozměňovací podmínky byly tedy Sněmovnou vypuštěny/odmítnuty, ne přijaty.
 
-Tato mezera je tímto zodpovězena a uzavřena. Zda Sněmovna prezidentovo veto přehlasuje, je nová, samostatná otevřená otázka — viz [GAP-09](@/dossiers/alena-schillerova/gaps/gap-09.md).
+Tato mezera je tímto zodpovězena a uzavřena. Zda Sněmovna prezidentovo veto přehlasuje, je samostatná otevřená otázka, kterou dossier už sleduje — viz [GAP-03](@/dossiers/alena-schillerova/gaps/gap-03.md).
