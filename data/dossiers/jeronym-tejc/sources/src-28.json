@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-28",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-28",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "title": "SRC-28 — Česká justice",
+  "description": "6,5 roku pro exministra Blažka. Bitcoiny, obžaloba",
+  "outlet": "Česká justice",
+  "sourceType": "právnická/odborná žurnalistika",
+  "url": "https://www.ceska-justice.cz/2026/08/6-a-pul-roku-pro-exministra-blazka-bitcoiny-obzaloba/",
+  "published": "2026-08",
+  "retrieved": "2026-08-03",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-52"
+    }
+  ],
+  "subjects": [
+    "tejc"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**6,5 roku pro exministra Blažka. Bitcoiny, obžaloba**\n\nVrchní státní zastupitelství v Olomouci podalo 31. 7. 2026 obžalobu na čtyři osoby v bitcoinové kauze: exministra spravedlnosti Pavla Blažka a jeho bývalého náměstka Radomíra Daňhela (oba obžalováni z pomoci k praní špinavých peněz a úmyslného porušení povinnosti při správě cizího majetku, navrhovaný trest 6,5 roku odnětí svobody a peněžité tresty), brněnského advokáta Kárima Titze (organizace celého schématu praní peněz, navrhovaný trest 8 let, zákaz činnosti 8 let) a Tomáše Jiřikovského (provozovatel darknetového tržiště Nucleus Market, praní výnosů z trestné činnosti vč. 468,468 bitcoinů darovaných ministerstvu v březnu 2025, navrhovaný souhrnný trest 20 let). O vině rozhodne Krajský soud v Brně.\n\n**Povinné rámování**: obžaloba je procesní krok, ne rozsudek — navrhovaný trest je požadavek žalobce, ne rozhodnutí soudu. Platí presumpce neviny, dokud soud nerozhodne.\n\nZdroj otevřen a přečten 2026-08-03, volně přístupný."
+    }
+  ],
+  "order": 28
+}

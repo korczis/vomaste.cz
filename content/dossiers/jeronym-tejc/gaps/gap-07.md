@@ -19,3 +19,5 @@ Není doloženo, jak Ústavní soud rozhodl o vládním návrhu na vyloučení s
 **Proč je to mezera**: Vyjádření vlády bylo podáno 20. 7. 2026 a podle České justice je soud v době publikace ještě neobdržel; k datu rešerše nebylo nalezeno navazující rozhodnutí. Tato mezera **není** zjištěním žádným
 směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
+
+**Opakovaná kontrola k 2026-08-03**: cílené hledání zopakováno vč. databáze NALUS Ústavního soudu, žádné navazující rozhodnutí o vyloučení soudce Šámala nedohledáno. Mezera zůstává otevřená.

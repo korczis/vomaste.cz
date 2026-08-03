@@ -12,7 +12,7 @@
   "title": "GAP-07 — Není doloženo, jak Ústavní soud rozhodl o vládním návrhu na vyloučení soudce Šámala.",
   "description": "Vyjádření vlády bylo podáno 20. 7. 2026 a podle České justice je soud v době publikace ještě neobdržel; k datu rešerše nebylo nalezeno navaz",
   "priority": "střední",
-  "checked": "2026-07-30",
+  "checked": "2026-08-03",
   "claims": [],
   "subjects": [
     "tejc"
@@ -20,7 +20,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Není doloženo, jak Ústavní soud rozhodl o vládním návrhu na vyloučení soudce Šámala.\n\n**Proč je to mezera**: Vyjádření vlády bylo podáno 20. 7. 2026 a podle České justice je soud v době publikace ještě neobdržel; k datu rešerše nebylo nalezeno navazující rozhodnutí. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+      "value": "Není doloženo, jak Ústavní soud rozhodl o vládním návrhu na vyloučení soudce Šámala.\n\n**Proč je to mezera**: Vyjádření vlády bylo podáno 20. 7. 2026 a podle České justice je soud v době publikace ještě neobdržel; k datu rešerše nebylo nalezeno navazující rozhodnutí. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem.\n\n**Opakovaná kontrola k 2026-08-03**: cílené hledání zopakováno vč. databáze NALUS Ústavního soudu, žádné navazující rozhodnutí o vyloučení soudce Šámala nedohledáno. Mezera zůstává otevřená."
     }
   ],
   "order": 7

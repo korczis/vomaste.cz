@@ -19,3 +19,5 @@ Původní článek Deníku N přímo k bitcoinové kauze (uvedený v zadání ja
 **Proč je to mezera**: Bitcoinové téma je tak korroborováno přes Echo24, ČTK/ČeskéNoviny a Blesk, nikoli přes Deník N. Tato mezera **není** zjištěním žádným
 směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
+
+**Opakovaná kontrola k 2026-08-03**: téma je nyní doloženo i novým přímým zdrojem [SRC-28](@/dossiers/jeronym-tejc/sources/src-28.md) (Česká justice, obžaloba). Konkrétní původní článek Deníku N k bitcoinové kauze samotné se znovu nepodařilo dohledat. Mezera zůstává formálně otevřená, i když riziko z chybějícího zdroje je nízké — téma je jinak dostatečně korroborováno.

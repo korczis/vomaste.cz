@@ -12,7 +12,7 @@
   "title": "GAP-03 — Výsledek kárného řízení se soudkyní (rozhodnutí kárného senátu) není znám.",
   "description": "Kárná žaloba byla podána 1. 7. 2026; k datu rešerše (30. 7. 2026) žádný přečtený zdroj rozhodnutí neuvádí.",
   "priority": "střední",
-  "checked": "2026-08-02",
+  "checked": "2026-08-03",
   "claims": [],
   "subjects": [
     "tejc"
@@ -20,7 +20,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Výsledek kárného řízení se soudkyní (rozhodnutí kárného senátu) není znám.\n\n**Proč je to mezera**: Kárná žaloba byla podána 1. 7. 2026; k datu rešerše (30. 7. 2026) žádný přečtený zdroj rozhodnutí neuvádí. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem.\n\n**Opakovaná kontrola k 2026-08-02**: cílené hledání (Aktuálně.cz, ČT24,\nČeskéNoviny.cz, ParlamentníListy.cz, Echo24, Blesk, Česká justice,\nmsp.gov.cz) rozhodnutí kárného senátu nenašlo — všechny dohledané\nzdroje zůstávají u stavu podání žaloby z července 2026. **Metodická\npoznámka**: hledání vrátilo i tiskovou zprávu NSS o odvolání jiné\nsoudkyně z funkce kárným senátem — jde o zcela jinou kauzu (Obvodní\nsoud pro Prahu 8, ne Benešov/Viktorka), nebyla použita. Mezera\nzůstává otevřená."
+      "value": "Výsledek kárného řízení se soudkyní (rozhodnutí kárného senátu) není znám.\n\n**Proč je to mezera**: Kárná žaloba byla podána 1. 7. 2026; k datu rešerše (30. 7. 2026) žádný přečtený zdroj rozhodnutí neuvádí. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem.\n\n**Opakovaná kontrola k 2026-08-02**: cílené hledání (Aktuálně.cz, ČT24,\nČeskéNoviny.cz, ParlamentníListy.cz, Echo24, Blesk, Česká justice,\nmsp.gov.cz) rozhodnutí kárného senátu nenašlo — všechny dohledané\nzdroje zůstávají u stavu podání žaloby z července 2026. **Metodická\npoznámka**: hledání vrátilo i tiskovou zprávu NSS o odvolání jiné\nsoudkyně z funkce kárným senátem — jde o zcela jinou kauzu (Obvodní\nsoud pro Prahu 8, ne Benešov/Viktorka), nebyla použita. Mezera\nzůstává otevřená.\n\n**Opakovaná kontrola k 2026-08-03**: hledání zopakováno, žádné nové rozhodnutí nedohledáno. Mezera zůstává otevřená."
     }
   ],
   "order": 3

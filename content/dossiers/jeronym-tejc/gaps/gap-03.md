@@ -28,3 +28,5 @@ poznámka**: hledání vrátilo i tiskovou zprávu NSS o odvolání jiné
 soudkyně z funkce kárným senátem — jde o zcela jinou kauzu (Obvodní
 soud pro Prahu 8, ne Benešov/Viktorka), nebyla použita. Mezera
 zůstává otevřená.
+
+**Opakovaná kontrola k 2026-08-03**: hledání zopakováno, žádné nové rozhodnutí nedohledáno. Mezera zůstává otevřená.

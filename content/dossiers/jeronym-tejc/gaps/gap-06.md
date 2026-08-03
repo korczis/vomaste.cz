@@ -19,3 +19,5 @@ Není doložen výsledek kontroly postupů OSPOD ve Středočeském kraji a v Pr
 **Proč je to mezera**: Dostupné zdroje potvrzují pouze podání podnětu a první zasedání komise; dětský ombudsman výslovně uvedl, že závěry ještě nejsou hotové. Tato mezera **není** zjištěním žádným
 směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
+
+**Opakovaná kontrola k 2026-08-03**: cílené hledání zopakováno, žádné nové závěry komise ani kontroly OSPOD nedohledány. Mezera zůstává otevřená.

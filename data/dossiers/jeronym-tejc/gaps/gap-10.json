@@ -12,7 +12,7 @@
   "title": "GAP-10 — Nebylo možné ověřit obsah článku iROZHLAS.cz k zamítnutí stížností NSZ.",
   "description": "Server vrátil HTTP 403 Forbidden; tvrzení o rozhodnutí NSZ proto stojí pouze na jednom ověřeném vydavateli (Česká justice).",
   "priority": "střední",
-  "checked": "2026-07-30",
+  "checked": "2026-08-03",
   "claims": [],
   "subjects": [
     "tejc"
@@ -20,7 +20,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Nebylo možné ověřit obsah článku iROZHLAS.cz k zamítnutí stížností NSZ.\n\n**Proč je to mezera**: Server vrátil HTTP 403 Forbidden; tvrzení o rozhodnutí NSZ proto stojí pouze na jednom ověřeném vydavateli (Česká justice). Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+      "value": "Nebylo možné ověřit obsah článku iROZHLAS.cz k zamítnutí stížností NSZ.\n\n**Proč je to mezera**: Server vrátil HTTP 403 Forbidden; tvrzení o rozhodnutí NSZ proto stojí pouze na jednom ověřeném vydavateli (Česká justice). Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem.\n\n**Opakovaná kontrola k 2026-08-03**: iROZHLAS.cz zůstává trvale nedostupný (HTTP 403, potvrzeno opakovaně). Mezera zůstává otevřená."
     }
   ],
   "order": 10

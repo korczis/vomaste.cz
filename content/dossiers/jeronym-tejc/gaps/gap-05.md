@@ -24,3 +24,5 @@ otevřeným zdrojem.
 stejná metodická poznámka u
 [GAP-03](@/dossiers/jeronym-tejc/gaps/gap-03.md). Mezera zůstává
 otevřená.
+
+**Opakovaná kontrola k 2026-08-03**: beze změny, viz stejné hledání u GAP-03. Mezera zůstává otevřená.

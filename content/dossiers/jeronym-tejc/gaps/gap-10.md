@@ -19,3 +19,5 @@ Nebylo možné ověřit obsah článku iROZHLAS.cz k zamítnutí stížností NS
 **Proč je to mezera**: Server vrátil HTTP 403 Forbidden; tvrzení o rozhodnutí NSZ proto stojí pouze na jednom ověřeném vydavateli (Česká justice). Tato mezera **není** zjištěním žádným
 směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
+
+**Opakovaná kontrola k 2026-08-03**: iROZHLAS.cz zůstává trvale nedostupný (HTTP 403, potvrzeno opakovaně). Mezera zůstává otevřená.

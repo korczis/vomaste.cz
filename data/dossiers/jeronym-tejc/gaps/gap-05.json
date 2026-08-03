@@ -12,7 +12,7 @@
   "title": "GAP-05 — Není doloženo, zda a kdy kárný senát nařídil jednání o kárné žalobě na soudkyni, ani jak r",
   "description": "Cílené hledání termínu jednání a rozhodnutí kárného senátu nevrátilo žádný zpravodajský ani soudní zdroj; k datu rešerše (30. 7. 2026) zřejm",
   "priority": "střední",
-  "checked": "2026-08-02",
+  "checked": "2026-08-03",
   "claims": [],
   "subjects": [
     "tejc"
@@ -20,7 +20,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Není doloženo, zda a kdy kárný senát nařídil jednání o kárné žalobě na soudkyni, ani jak rozhodl.\n\n**Proč je to mezera**: Cílené hledání termínu jednání a rozhodnutí kárného senátu nevrátilo žádný zpravodajský ani soudní zdroj; k datu rešerše (30. 7. 2026) zřejmě rozhodnuto nebylo. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem.\n\n**Opakovaná kontrola k 2026-08-02**: beze změny — viz stejné hledání a\nstejná metodická poznámka u\n[GAP-03](@/dossiers/jeronym-tejc/gaps/gap-03.md). Mezera zůstává\notevřená."
+      "value": "Není doloženo, zda a kdy kárný senát nařídil jednání o kárné žalobě na soudkyni, ani jak rozhodl.\n\n**Proč je to mezera**: Cílené hledání termínu jednání a rozhodnutí kárného senátu nevrátilo žádný zpravodajský ani soudní zdroj; k datu rešerše (30. 7. 2026) zřejmě rozhodnuto nebylo. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem.\n\n**Opakovaná kontrola k 2026-08-02**: beze změny — viz stejné hledání a\nstejná metodická poznámka u\n[GAP-03](@/dossiers/jeronym-tejc/gaps/gap-03.md). Mezera zůstává\notevřená.\n\n**Opakovaná kontrola k 2026-08-03**: beze změny, viz stejné hledání u GAP-03. Mezera zůstává otevřená."
     }
   ],
   "order": 5
