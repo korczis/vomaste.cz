@@ -16,6 +16,6 @@ gap_id = "GAP-09"
 +++
 Nepodařilo se ověřit, zda Evropská komise vydala prováděcí rozhodnutí o pozastavení plateb nebo uplatnila finanční korekci vůči České republice.
 
-**Proč je to mezera**: Přístupné zdroje k 4. 6. 2026 uvádějí pouze korespondenci DG Agri a DG Regio, nikoli formální právní akt. Novější zdroj (iROZHLAS, 3. 7. 2026) nebyl přístupný. Tato mezera **není** zjištěním žádným
-směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
-otevřeným zdrojem.
+**Původní mezera** (30. 7. 2026): Přístupné zdroje k 4. 6. 2026 uvádějí pouze korespondenci DG Agri a DG Regio, nikoli formální právní akt. Novější zdroj (iROZHLAS, 3. 7. 2026) nebyl přístupný. Tato mezera **není** zjištěním žádným směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit otevřeným zdrojem.
+
+**Ověřeno 3. 8. 2026**: klíčový iROZHLAS článek z 3. 7. 2026 zůstává za HTTP 403, ale dohledán a přímo otevřen nezávislý zdroj se stejným zjištěním ke stejnému datu (Respekt, 3. 7. 2026) — viz [CLM-50](@/dossiers/martin-sebestyan/claims/clm-50.md). SZIF citován doslovně: „Žádné závazné rozhodnutí EK v této věci momentálně nevydala.“ Tato mezera je tímto obsahově vyřešena — odpověď zůstává „ne, žádné prováděcí rozhodnutí nebylo vydáno“, nyní doložená nezávislým zdrojem k 3. 7. 2026.

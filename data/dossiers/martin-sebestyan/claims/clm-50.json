@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-50",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-50",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
+  },
+  "text": "K 3. 7. 2026 nevydala Evropská komise podle SZIF žádné závazné rozhodnutí ve věci dotací pro Agrofert; Komise sama potvrdila, že posuzuje uspořádání svěřenského fondu RSVP Trust a že další standardní kroky budou následovat až po případném verdiktu. Žádný zdroj k tomuto datu nedokládá vydání formálního prováděcího rozhodnutí o pozastavení plateb ani uplatnění finanční korekce vůči České republice.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-35"
+    }
+  ],
+  "subjects": [
+    "sebestyan"
+  ],
+  "order": 50,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam tvrzení CLM-50 — shrnutí, stav a zdroj\nvýše jsou úplné. Odpovídá na [GAP-09](@/dossiers/martin-sebestyan/gaps/gap-09.md)\nnezávisle otevřeným zdrojem ze stejného data jako blokovaný iROZHLAS\nčlánek (HTTP 403)."
+    }
+  ]
+}

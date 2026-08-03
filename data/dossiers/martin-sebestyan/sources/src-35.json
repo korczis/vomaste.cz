@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-35",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-35",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
+  },
+  "title": "SRC-35 — Respekt, 3. 7. 2026",
+  "description": "Evropská komise dále posuzuje dotace Agrofertu kvůli střetu zájmů, uvedl zemědělský fond.",
+  "outlet": "Respekt",
+  "sourceType": "zpravodajství",
+  "url": "https://www.respekt.cz/informacni-servis/evropska-komise-dale-posuzuje-dotace-agrofertu-kvuli-stretu-zajmu-uvedl-zemedelsky-fond-2026-07-03-16-31",
+  "published": "2026-07-03",
+  "retrieved": "2026-08-03",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-50"
+    }
+  ],
+  "subjects": [
+    "sebestyan"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Co dokládá.** SZIF k 3. 7. 2026 uvedl: „Žádné závazné rozhodnutí EK v této věci momentálně nevydala.“ Evropská komise sama potvrdila, že v současné době posuzuje relevantní skutečnosti týkající se uspořádání svěřenského fondu (RSVP Trust) a že „v případě jakéhokoli verdiktu budou následovat další standardní kroky“. Jde jen o pokračující korespondenci a posouzení (DG Agri, DG Regio), ne o formální prováděcí rozhodnutí o pozastavení plateb ani o finanční korekci.\n\n**Proč je to tu důležité.** Odpovídá na [GAP-09](@/dossiers/martin-sebestyan/gaps/gap-09.md): klíčový iROZHLAS článek ze stejného dne (3. 7. 2026) vrací HTTP 403, ale toto je nezávisle otevřený zdroj se stejným zjištěním k témuž datu — žádné prováděcí rozhodnutí EK nebylo vydáno."
+    }
+  ],
+  "order": 35
+}
