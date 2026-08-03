@@ -19,3 +19,5 @@ Celková škoda není oficiálně vyčíslena.
 **Proč je to mezera**: MPSV opakovaně uvádí, že výši škody půjde stanovit až po dokončení administrativních procesů. Jediné souhrnné číslo (~82 mil. Kč) pochází z komentáře Reflexu, nikoli z úředního zdroje. Tato mezera **není** zjištěním žádným
 směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
+
+**Opakovaná kontrola k 2026-08-03**: cílené hledání zopakováno. Věcně stejný stav jako [GAP-05](@/dossiers/ales-juchelka/gaps/gap-05.md) a [GAP-06](@/dossiers/ales-juchelka/gaps/gap-06.md) — žádný oficiální zdroj s vyčíslenou celkovou škodou nebyl nalezen, MPSV opakovaně odkazuje na dokončení administrativních procesů. Mezera zůstává otevřená.
