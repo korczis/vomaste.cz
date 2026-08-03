@@ -34,3 +34,5 @@ FORUM 24 uvádí „dvakrát osvobozen“.
 **Jak se mezera uzavře.** Dohledáním pravomocného rozhodnutí
 (např. přes justiční databáze) nebo dobového zpravodajství
 s plnotextem dokládajícím pravomocnost a okruh obžalovaných.
+
+**Opakovaná kontrola k 2026-08-03**: pokus o přímé ověření na rozhodnuti.justice.cz — dynamické vyhledávací rozhraní portálu nelze staticky ověřit. Jiný plnotextový zdroj k pravomocnosti ani okruhu obžalovaných nedohledán. Mezera zůstává otevřená.

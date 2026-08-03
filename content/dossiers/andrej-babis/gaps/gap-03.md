@@ -34,3 +34,5 @@ akvizice — a víc tenhle dossier o Setuze netvrdí.
 **Opakovaná kontrola k 2026-08-02** (cílené dotazy na Setuzu
 v aktuálním zpravodajství): žádný nový doložený vývoj ani nové
 otevřené zdroje; stav beze změny.
+
+**Opakovaná kontrola k 2026-08-03**: hledání zopakováno, žádný nový vývoj nedohledán. Stav beze změny.

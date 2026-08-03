@@ -12,7 +12,7 @@
   "title": "GAP-03 — Setuza: doložena jen neúspěšná akvizice, nic víc",
   "description": "Podnikatelská epizoda je doložená jedním zdrojem; žádný otevřený zdroj neuvádí v souvislosti se Setuzou pochybení Andreje Babiše.",
   "priority": "nízká",
-  "checked": "2026-08-02",
+  "checked": "2026-08-03",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-53"
@@ -22,7 +22,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "**Co se od poslední revize uzavřelo (30. 7. 2026).** Dřívější znění této\nmezery říkalo, že vazbu Setuzy na Andreje Babiše nedokládá žádný otevřený\nzdroj. To už neplatí v jednom, úzkém bodě: analýza z roku 2011 dokládá, že\no firmu dlouhodobě usiloval, **nezískal ji** a postavil místo toho vlastní\nzávod Preol ([CLM-53](@/dossiers/andrej-babis/claims/clm-53.md)).\n\n**Co zůstává otevřené — a co to znamená.** Žádný přímo otevřený,\njmenovaný zdroj neuvádí v souvislosti se Setuzou pochybení Andreje\nBabiše. Dohledané materiály o dalších sporech kolem Setuzy popisují jiné\naktéry a jiná řízení; ti do tohoto dossieru nepatří a nejsou tu vedeni.\n\nTahle mezera se tedy nedrží otevřená proto, že „se něco tají“. Drží se\notevřená proto, aby bylo výslovně řečeno, že autorizace tématu **není**\ndoklad, že o něm je co psát: autorizace určuje, co se **smí** pokrýt,\ndoložení určuje, co se **pokryje**. Jediné, co je doložené, je neúspěšná\nakvizice — a víc tenhle dossier o Setuze netvrdí.\n\n**Opakovaná kontrola k 2026-08-02** (cílené dotazy na Setuzu\nv aktuálním zpravodajství): žádný nový doložený vývoj ani nové\notevřené zdroje; stav beze změny."
+      "value": "**Co se od poslední revize uzavřelo (30. 7. 2026).** Dřívější znění této\nmezery říkalo, že vazbu Setuzy na Andreje Babiše nedokládá žádný otevřený\nzdroj. To už neplatí v jednom, úzkém bodě: analýza z roku 2011 dokládá, že\no firmu dlouhodobě usiloval, **nezískal ji** a postavil místo toho vlastní\nzávod Preol ([CLM-53](@/dossiers/andrej-babis/claims/clm-53.md)).\n\n**Co zůstává otevřené — a co to znamená.** Žádný přímo otevřený,\njmenovaný zdroj neuvádí v souvislosti se Setuzou pochybení Andreje\nBabiše. Dohledané materiály o dalších sporech kolem Setuzy popisují jiné\naktéry a jiná řízení; ti do tohoto dossieru nepatří a nejsou tu vedeni.\n\nTahle mezera se tedy nedrží otevřená proto, že „se něco tají“. Drží se\notevřená proto, aby bylo výslovně řečeno, že autorizace tématu **není**\ndoklad, že o něm je co psát: autorizace určuje, co se **smí** pokrýt,\ndoložení určuje, co se **pokryje**. Jediné, co je doložené, je neúspěšná\nakvizice — a víc tenhle dossier o Setuze netvrdí.\n\n**Opakovaná kontrola k 2026-08-02** (cílené dotazy na Setuzu\nv aktuálním zpravodajství): žádný nový doložený vývoj ani nové\notevřené zdroje; stav beze změny.\n\n**Opakovaná kontrola k 2026-08-03**: hledání zopakováno, žádný nový vývoj nedohledán. Stav beze změny."
     }
   ],
   "order": 3

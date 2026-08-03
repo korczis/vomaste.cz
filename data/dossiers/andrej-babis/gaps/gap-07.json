@@ -12,7 +12,7 @@
   "title": "GAP-07 — Kostelecké uzeniny: pravomocnost zprošťujících rozsudků a okruh stíhaných manažerů",
   "description": "Citované zdroje dokládají obvinění manažerů z tunelování a opakovaná osvobození, ale ne pravomocnost či rok zprošťujících rozsudků; jména dalších stíhaných otevřené plnotexty nedokládají.",
   "priority": "střední",
-  "checked": "2026-08-02",
+  "checked": "2026-08-03",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-91"
@@ -22,7 +22,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "**Co je doloženo.** Tři nezávislé zdrojové rodiny (Seznam Zprávy,\nFORUM 24, Deník.cz) shodně dokládají, že Jan Boček a další manažeři\nKosteleckých uzenin byli obviněni z tunelování firmy a že je soudy\nopakovaně osvobodily ([CLM-91](@/dossiers/andrej-babis/claims/clm-91.md));\nFORUM 24 uvádí „dvakrát osvobozen“.\n\n**Co doloženo není.**\n\n1. **Pravomocnost a rok zproštění** — žádný z otevřených plnotextů\n   neuvádí, zda a kdy se zprošťující rozsudky staly pravomocnými.\n   Údaj „pravomocně zproštěni v roce 2010“ se objevuje pouze\n   v útržcích výsledků vyhledávání, které dossier jako doklad nepoužívá.\n2. **Okruh stíhaných** — jména dalších manažerů kolují v agregátorech\n   a v článku, který již není dostupný (HTTP 404); dossier je proto\n   neuvádí a vede pouze Jana Bočka, který své stíhání sám veřejně\n   popsal.\n\n**Jak se mezera uzavře.** Dohledáním pravomocného rozhodnutí\n(např. přes justiční databáze) nebo dobového zpravodajství\ns plnotextem dokládajícím pravomocnost a okruh obžalovaných."
+      "value": "**Co je doloženo.** Tři nezávislé zdrojové rodiny (Seznam Zprávy,\nFORUM 24, Deník.cz) shodně dokládají, že Jan Boček a další manažeři\nKosteleckých uzenin byli obviněni z tunelování firmy a že je soudy\nopakovaně osvobodily ([CLM-91](@/dossiers/andrej-babis/claims/clm-91.md));\nFORUM 24 uvádí „dvakrát osvobozen“.\n\n**Co doloženo není.**\n\n1. **Pravomocnost a rok zproštění** — žádný z otevřených plnotextů\n   neuvádí, zda a kdy se zprošťující rozsudky staly pravomocnými.\n   Údaj „pravomocně zproštěni v roce 2010“ se objevuje pouze\n   v útržcích výsledků vyhledávání, které dossier jako doklad nepoužívá.\n2. **Okruh stíhaných** — jména dalších manažerů kolují v agregátorech\n   a v článku, který již není dostupný (HTTP 404); dossier je proto\n   neuvádí a vede pouze Jana Bočka, který své stíhání sám veřejně\n   popsal.\n\n**Jak se mezera uzavře.** Dohledáním pravomocného rozhodnutí\n(např. přes justiční databáze) nebo dobového zpravodajství\ns plnotextem dokládajícím pravomocnost a okruh obžalovaných.\n\n**Opakovaná kontrola k 2026-08-03**: pokus o přímé ověření na rozhodnuti.justice.cz — dynamické vyhledávací rozhraní portálu nelze staticky ověřit. Jiný plnotextový zdroj k pravomocnosti ani okruhu obžalovaných nedohledán. Mezera zůstává otevřená."
     }
   ],
   "order": 7

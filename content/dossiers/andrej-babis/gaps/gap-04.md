@@ -31,3 +31,5 @@ k rozsudkům o střetu zájmů z let 2024–2025 mimo správní soudnictví
 existuje u vydavatele, jehož plnotext nelze automatizovaně otevřít
 (HTTP 403), a proto ho dossier necituje; jiný otevřený plnotext
 nenalezen. Mezera trvá beze změny.
+
+**Opakovaná kontrola k 2026-08-03**: iROZHLAS.cz zůstává trvale nedostupný (HTTP 403, potvrzeno opakovaně). Jiný otevřený plnotext k rozsudkům o střetu zájmů z let 2024-2025 mimo správní soudnictví nedohledán. Mezera zůstává otevřená.

@@ -41,3 +41,5 @@ věc je procesně nedořešená a tento web nemá čím doložit víc.
 všechny dohledané zprávy opakují stav z května 2026 — spis předán
 prokuratuře, rozhodnutí o případném stíhání se očekává do konce roku
 2026. Žádný nový procesní krok nenalezen; stav beze změny.
+
+**Opakovaná kontrola k 2026-08-03**: hledání zopakováno, žádné rozhodnutí PNF ani jiný procesní vývoj nedohledán. Stav beze změny.

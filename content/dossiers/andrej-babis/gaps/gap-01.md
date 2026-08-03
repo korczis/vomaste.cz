@@ -47,3 +47,5 @@ Vrchní soud v Praze projedná Nagyové odvolání proti květnovému rozsudku
 
 Otevřenost téhle mezery neznamená ani vinu, ani nevinu, ani že se něco
 zamlčuje. Znamená, že to tenhle web nemá čím doložit.
+
+**Opakovaná kontrola k 2026-08-03**: termín odvolacího jednání (31. 8.–1. 9. 2026) je stále v budoucnosti, k datu kontroly se ještě nekonalo. Metodická poznámka: první volný dotaz vrátil zavádějící shrnutí naznačující, že odvolací soud už v srpnu 2026 rozhodl — po přísném doplňujícím ověření (přesná fráze) se toto tvrzení vůbec nenašlo a bylo zamítnuto jako nepodložené. Mezera zůstává otevřená.

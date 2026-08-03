@@ -49,3 +49,5 @@ EK z konce května 2026 podepsal Hugo Sobral jménem pěti generálních
 ředitelství a že Česko požadovanou právní analýzu neposlalo. Primární
 dokument Evropské komise ani úřední odpovědi ČR ale nadále nebyly
 pro dossier otevřeny — mezera trvá.
+
+**Opakovaná kontrola k 2026-08-03**: přímo zkontrolována sekce tiskových zpráv EPPO (eppo.europa.eu/media/news_en) — žádná zpráva k Agrofertu, Babišovi ani tomuto řízení tam není, konzistentní s tím, že jde o řízení proti neznámému pachateli. Primární dokument nadále nedohledán. Mezera zůstává otevřená.

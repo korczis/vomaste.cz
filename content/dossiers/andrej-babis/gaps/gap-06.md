@@ -49,3 +49,5 @@ v Praze nařídil jednání na 24. září 2026
 ([CLM-104](@/dossiers/andrej-babis/claims/clm-104.md)) — termín je
 procesní krok, výsledek zůstává otevřený. Větve 2 a 3 (PGRLF, kasace
 SZIF): žádný nový doložený vývoj.
+
+**Opakovaná kontrola k 2026-08-03**: hledání zopakováno u všech čtyř větví (hlavní líčení Pekárna Zelená louka, PGRLF, kasace SZIF, jednání Seznam.cz 24. 9. 2026), žádný nový procesní vývoj nedohledán. Stav beze změny.
