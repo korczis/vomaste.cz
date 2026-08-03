@@ -1,38 +1,41 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/schrom-farms",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "schrom-farms",
- "entityId": "schrom-farms",
- "title": "Schrom Farms",
- "entityType": "company",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "martin-sebestyan"
- ],
- "order": 372,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/schrom-farms",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "schrom-farms",
+  "entityId": "schrom-farms",
+  "title": "Schrom Farms",
+  "entityType": "company",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "martin-sebestyan"
   ],
-  "claimRefs": [
-   "CLM-34"
+  "order": 372,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02"
+    ],
+    "claimRefs": [
+      "CLM-34"
+    ],
+    "sourceRefs": [
+      "SRC-16"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Jediná firma z auditované skupiny, které byla dotace (1,6 mil. Kč) vyplacena; následně ji vracela. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (martin-sebestyan). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ],
-  "sourceRefs": [
-   "SRC-16"
-  ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Jediná firma z auditované skupiny, které byla dotace (1,6 mil. Kč) vyplacena; následně ji vracela. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (martin-sebestyan). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  "externalIds": {
+    "ico": "62301659"
   }
- ]
 }

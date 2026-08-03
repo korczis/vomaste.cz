@@ -1,38 +1,41 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/fio-banka",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "fio-banka",
- "entityId": "fio-banka",
- "title": "Fio banka",
- "entityType": "company",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "macinka-turek"
- ],
- "order": 130,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/fio-banka",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "fio-banka",
+  "entityId": "fio-banka",
+  "title": "Fio banka",
+  "entityType": "company",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "macinka-turek"
   ],
-  "claimRefs": [
-   "CLM-35"
+  "order": 130,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02"
+    ],
+    "claimRefs": [
+      "CLM-35"
+    ],
+    "sourceRefs": [
+      "SRC-40"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Vede transparentní účet volební kampaně Motoristů sobě (č. 2803201251/2010). Okrajová zmínka. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (macinka-turek). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ],
-  "sourceRefs": [
-   "SRC-40"
-  ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Vede transparentní účet volební kampaně Motoristů sobě (č. 2803201251/2010). Okrajová zmínka. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (macinka-turek). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  "externalIds": {
+    "ico": "61858374"
   }
- ]
 }

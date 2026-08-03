@@ -1,35 +1,38 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/cssd",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "cssd",
- "entityId": "cssd",
- "title": "ČSSD",
- "entityType": "political_party",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "jeronym-tejc"
- ],
- "order": 99,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/cssd",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "cssd",
+  "entityId": "cssd",
+  "title": "ČSSD",
+  "entityType": "political_party",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "jeronym-tejc"
   ],
-  "sourceRefs": [
-   "SRC-01"
-  ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Strana, jejímž členem byl Tejc dle oficiálního profilu v letech 1997–2017; nyní bez politické příslušnosti. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (jeronym-tejc). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  "order": 99,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02"
+    ],
+    "sourceRefs": [
+      "SRC-01"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Strana, jejímž členem byl Tejc dle oficiálního profilu v letech 1997–2017; nyní bez politické příslušnosti. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (jeronym-tejc). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
+  ],
+  "externalIds": {
+    "ico": "00409171"
   }
- ]
 }

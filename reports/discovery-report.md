@@ -5,7 +5,7 @@ system. This is provenance, not a publication decision — see
 `data/authorizations.toml` and `scripts/dossier/authorize-entity.mjs`
 for the only thing that actually authorizes a dossier.
 
-819 record(s) logged across 5 day(s). 0 new since last run.
+829 record(s) logged across 6 day(s). 10 new since last run.
 
 ## 2026-07-29
 
@@ -840,3 +840,16 @@ for the only thing that actually authorizes a dossier.
 - `edge-tejc-dragoun` (relation, created)
 - `edge-tejc-kasal` (relation, created)
 - `edge-wintr-kompetencni-spor` (relation, created)
+
+## 2026-08-03
+
+- `bronislav-houdek` (entity, created)
+- `bydlime-v-kralove-poli-z-s` (entity, created)
+- `hydroprogress-s-r-o` (entity, created)
+- `marek-viskot` (entity, created)
+- `martin-korec` (entity, created)
+- `martin-pavlik` (entity, created)
+- `media-project-cz-s-r-o` (entity, created)
+- `michal-maixner` (entity, created)
+- `michal-vit` (entity, created)
+- `nadacni-fond-fiducia` (entity, created)
