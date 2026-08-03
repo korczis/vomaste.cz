@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-60",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-60",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "text": "Opozice ve výboru k novele stavebního zákona kvůli kauzám Mrázové (mj. Hřibova výzva k rezignaci, Niemiecovo varování před legalizací černých staveb) předložila přes 30 pozměňovacích návrhů, které koalice zamítla; nešlo o formální obstrukci, výbor novelu schválil 1. 5. 2026.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-34"
+    }
+  ],
+  "subjects": [
+    "mrazova"
+  ],
+  "order": 60,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/zuzana-mrazova/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

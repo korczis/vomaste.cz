@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-34",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-34",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "title": "SRC-34 — Česká justice",
+  "description": "Opozice se stavěla proti novele stavebního zákona i kvůli kauze černých staveb Mrázové, ale namísto formální obstrukce prosazovala pozměňovací návrhy, které koalice ve výboru zamítla; výbor novelu schválil 1. 5. 2026.",
+  "outlet": "Česká justice",
+  "sourceType": "zpravodajství / komentář",
+  "url": "https://www.ceska-justice.cz/2026/05/kdo-to-mohl-cele-precist-stavebni-zakon/",
+  "published": "2026-05-01",
+  "retrieved": "2026-08-03",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-60"
+    }
+  ],
+  "subjects": [
+    "mrazova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Česká justice dne 1. 5. 2026 popisuje projednávání novely stavebního zákona ve výboru: poslanec Lukáš Vlček (STAN) kritizoval nemožné lhůty na přečtení („kdo to mohl celé přečíst?“), předseda Pirátů Zdeněk Hřib kvůli kauzám Mrázové vyzval k její rezignaci a označil postup za \"uspěchaný horkou jehlou\", poslanec Bohuslav Niemiec (KDU-ČSL) varoval, že ustanovení o dodatečném povolování fakticky umožňuje legalizaci černých staveb a navrhl pozměňovací návrhy. Opozice předložila přes 30 pozměňovacích návrhů, koalice je ve výboru zamítla; výbor novelu schválil 1. 5. 2026. Nešlo o formální obstrukci (blokádu jednání), ale o věcné pozměňovací návrhy v rámci výborového projednávání.\n\nZdroj otevřen a přečten 2026-08-03. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+    }
+  ],
+  "order": 34
+}
