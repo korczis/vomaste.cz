@@ -19,3 +19,5 @@ Zda se kauzou nahrávacího zařízení zabýval bezpečnostní výbor Poslaneck
 **Proč je to mezera**: V dostupných zdrojích se objevují pouze mediální a stranické reakce, nikoli formální parlamentní kroky. Tato mezera **není** zjištěním žádným
 směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
+
+**Opakovaná kontrola k 2026-08-03**: pokus o přímé ověření na portálu psp.cz (databáze ústních interpelací). Portál poskytuje jen popis stahovatelných datových sad, samotné vyhledávání běží na interaktivním/dynamickém rozhraní, které se otevřeným zdrojem tímto způsobem nedá ověřit. Žádný zpravodajský zdroj formální parlamentní krok nezmiňuje. Mezera zůstává otevřená.

@@ -19,3 +19,5 @@ Reakce Českého olympijského výboru a jednotlivých sportovních svazů na od
 **Proč je to mezera**: Dostupné zdroje z prosince 2025 reakce sportovních organizací neobsahují; k dispozici je až lednové vyjádření České unie sportu k nástupu nového předsedy. Tato mezera **není** zjištěním žádným
 směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
+
+**Opakovaná kontrola k 2026-08-03**: cílené hledání zopakováno. Žádná bezprostřední prosincová reakce Českého olympijského výboru ani jednotlivých sportovních svazů k odvolání Šebka nedohledána; jediné nalezené vyjádření sportovního prostředí k celé kauze zůstává lednové stanovisko České unie sportu k nástupu Karla Kováře ([CLM-31](@/dossiers/boris-stastny/claims/clm-31.md)) a prosincová obhajoba senátora Třetiny za dozorčí radu NSA ([CLM-41](@/dossiers/boris-stastny/claims/clm-41.md)). Mezera zůstává otevřená.

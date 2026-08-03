@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-42",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-42",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/boris-stastny"
+  },
+  "text": "Vedoucí Úřadu vlády Tünde Bartha na dotaz Seznam Zpráv, proč úřad nepátral po majiteli zařízení mezi členy vlády, odpověděla v SMS: „Vláda v ten den nezasedala. Tato zasedací místnost je využívána i pro jiné účely a nebyl proto důvod ptát se členů vlády,“ a označila zařízení za „běžně používaný diktafon“.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-22"
+    }
+  ],
+  "subjects": [
+    "stastny"
+  ],
+  "order": 42,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/boris-stastny/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

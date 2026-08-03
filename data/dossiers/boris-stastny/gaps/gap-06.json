@@ -12,7 +12,7 @@
   "title": "GAP-06 — Zda se kauzou nahrávacího zařízení zabýval bezpečnostní výbor Poslanecké sněmovny nebo zda",
   "description": "V dostupných zdrojích se objevují pouze mediální a stranické reakce, nikoli formální parlamentní kroky.",
   "priority": "střední",
-  "checked": "2026-07-30",
+  "checked": "2026-08-03",
   "claims": [],
   "subjects": [
     "stastny"
@@ -20,7 +20,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Zda se kauzou nahrávacího zařízení zabýval bezpečnostní výbor Poslanecké sněmovny nebo zda byla podána interpelace.\n\n**Proč je to mezera**: V dostupných zdrojích se objevují pouze mediální a stranické reakce, nikoli formální parlamentní kroky. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+      "value": "Zda se kauzou nahrávacího zařízení zabýval bezpečnostní výbor Poslanecké sněmovny nebo zda byla podána interpelace.\n\n**Proč je to mezera**: V dostupných zdrojích se objevují pouze mediální a stranické reakce, nikoli formální parlamentní kroky. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem.\n\n**Opakovaná kontrola k 2026-08-03**: pokus o přímé ověření na portálu psp.cz (databáze ústních interpelací). Portál poskytuje jen popis stahovatelných datových sad, samotné vyhledávání běží na interaktivním/dynamickém rozhraní, které se otevřeným zdrojem tímto způsobem nedá ověřit. Žádný zpravodajský zdroj formální parlamentní krok nezmiňuje. Mezera zůstává otevřená."
     }
   ],
   "order": 6

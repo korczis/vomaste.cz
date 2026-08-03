@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-22",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-22",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/boris-stastny"
+  },
+  "title": "SRC-22 — Seznam Zprávy",
+  "description": "Úřad vlády nevypátral, že majitelem nahrávacího zařízení je ministr Šťastný",
+  "outlet": "Seznam Zprávy",
+  "sourceType": "zpravodajství",
+  "url": "https://www.seznamzpravy.cz/clanek/domaci-kauzy-urad-vlady-nevypatral-ze-majitelem-nahravaciho-zarizeni-je-ministr-stastny-310641",
+  "published": "2026-07-10",
+  "retrieved": "2026-08-03",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-42"
+    }
+  ],
+  "subjects": [
+    "stastny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Úřad vlády nevypátral, že majitelem nahrávacího zařízení je ministr Šťastný**\n\nPůvodní reportáž Kristiny Cirokové a Lukáše Valáška, která kauzu poprvé zveřejnila 10. 7. 2026 a z níž vycházely všechny ostatní zdroje citované v tomto dossieru — dosud přímo neotevřená (viz [GAP-07](@/dossiers/boris-stastny/gaps/gap-07.md)). Vedoucí Úřadu vlády Tünde Bartha redakci v SMS odpověděla: „Vláda v ten den nezasedala. Tato zasedací místnost je využívána i pro jiné účely a nebyl proto důvod ptát se členů vlády,“ a úřad podle ní po ničem nepátral, protože jde jen o „běžně používaný diktafon“.\n\nZdroj otevřen a přečten 2026-08-03. Dokládá znění citovaného zpravodajství k datu otevření."
+    }
+  ],
+  "order": 22
+}

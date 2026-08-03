@@ -19,3 +19,5 @@ Zda NÚKIB, BIS nebo Policie ČR po zveřejnění kauzy dodatečně zahájily pr
 **Proč je to mezera**: Žádný z prostudovaných zdrojů neuvádí následné kroky bezpečnostních složek po 10. červenci 2026; zdroje shodně jen konstatují, že v době nálezu nález nahlášen nebyl. Tato mezera **není** zjištěním žádným
 směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
+
+**Opakovaná kontrola k 2026-08-03**: přímo znovu otevřen SRC-08 (Blesk.cz, čínský výrobce zařízení). Zdroj potvrzuje jen to, že po zveřejnění si ministr zařízení vyzvedl zpět a forenzní analýza neproběhla — o dodatečném zahájení prověřování bezpečnostními složkami se nezmiňuje. Konzistentní se zjištěním [GAP-01](@/dossiers/boris-stastny/gaps/gap-01.md)/[GAP-02](@/dossiers/boris-stastny/gaps/gap-02.md) (žádný formální následek doložen). Mezera zůstává otevřená.

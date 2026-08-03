@@ -19,3 +19,5 @@ Kdo konkrétně grafiku s upravenými metrikami vytvořil a schválil.
 **Proč je to mezera**: Ministr podle Tiscali konkrétního autora ani interní schvalovací proces nespecifikoval. Tato mezera **není** zjištěním žádným
 směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
+
+**Opakovaná kontrola k 2026-08-03**: přímo znovu otevřen SRC-16 (NašeTéma.cz). Ministr mluví jen obecně o „týmu, který se mi stará o sítě“, žádné jméno ani konkrétní schvalovací proces zdroj neuvádí. Mezera zůstává otevřená.
