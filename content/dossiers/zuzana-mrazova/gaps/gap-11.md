@@ -19,3 +19,5 @@ Není doloženo, zda Krajský úřad Ústeckého kraje zahájil vůči Bílině 
 **Proč je to mezera**: Deník uvádí pouze to, že kraj vedení města na možné podezření z nečinnosti upozornil; o navazujícím kroku žádný dohledaný zdroj neinformuje. Tato mezera **není** zjištěním žádným
 směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
+
+**Opakovaná kontrola k 2026-08-03**: cílené hledání zopakováno. Dohledané zdroje potvrzují jen již zdokumentované — upozornění kraje na podezření z nečinnosti ([CLM-38](@/dossiers/zuzana-mrazova/claims/clm-38.md)) a tajemníkovo odmítnutí dlouhodobé nečinnosti ([CLM-40](@/dossiers/zuzana-mrazova/claims/clm-40.md)). Žádné formální opatření kraje proti Bílině nebylo v žádném přímo otevřeném zdroji potvrzeno. Mezera zůstává otevřená.
