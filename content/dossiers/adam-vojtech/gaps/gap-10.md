@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "GAP-10 — Nebylo možné ověřit tvrzení o skluzu akčního plánu Národní očkovací strategie a o tom, že "
-description = "Jediný nalezený zdroj (iROZHLAS, 12. 6. 2026) vrací HTTP 403 Forbidden; snippet nebyl použit jako podklad tvrzení."
+description = "Jediný nalezený zdroj (iROZHLAS, 12. 6. 2026) vrací HTTP 403 Forbidden; ověřeno znovu 3. 8. 2026, stále nedostupný, žádná nezávislá náhrada nenalezena."
 template = "dossier-gap.html"
 weight = 10
 
@@ -19,3 +19,5 @@ Nebylo možné ověřit tvrzení o skluzu akčního plánu Národní očkovací 
 **Proč je to mezera**: Jediný nalezený zdroj (iROZHLAS, 12. 6. 2026) vrací HTTP 403 Forbidden; snippet nebyl použit jako podklad tvrzení. Tato mezera **není** zjištěním žádným
 směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
+
+**Opakovaná kontrola k 2026-08-03**: iROZHLAS.cz zůstává nedostupný (znovu ověřeno, stejná chyba 403). **Metodická poznámka proti záměně**: nalezen povrchně podobný článek (extra.cz, 30. 3. 2026, „Babiš vrazil kudlu do zad Vojtěchovi“), ten ale popisuje jinou, dřívější a konkrétnější epizodu (Babišův odpor ke konkrétní položce 100 mil. Kč na propagaci očkování na jednom jednání) — ne totéž tvrzení o skluzu akčního plánu z 12. 6. Vědomě nepoužito jako náhrada, aby nedošlo k záměně dvou různých epizod. Mezera zůstává otevřená.
