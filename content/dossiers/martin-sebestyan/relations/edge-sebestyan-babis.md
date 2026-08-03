@@ -13,4 +13,4 @@ record_type = "relation"
 lang = "cs"
 rel_id = "edge-sebestyan-babis"
 +++
-Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-038 (provázání grafu) z už existujícího, citovaného tvrzení tohoto dossieru.
+Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-038 (provázání grafu) z už existujícího, citovaného tvrzení tohoto dossieru. **Oprava 2026-08-03 ([GAP-13](@/dossiers/martin-sebestyan/gaps/gap-13.md))**: čtyři citované zdroje se ukázaly být stejné zpravodajství ČTK — status vrácen z corroborated na single, zdrojový seznam zúžen na jeden reprezentativní.

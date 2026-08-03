@@ -10,17 +10,11 @@
     "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
   },
   "text": "SZIF na konci dubna 2026 rozhodl, že Agrofert může znovu čerpat dotace, protože podle generálního ředitele Petra Dlouhého svěřenský fond RSVP Trust splňuje podmínky vypořádání majetkových poměrů.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
-      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-09"
-    },
-    {
       "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-10"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-11"
     }
   ],
   "subjects": [

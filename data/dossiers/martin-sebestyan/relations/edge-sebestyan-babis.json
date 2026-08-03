@@ -18,7 +18,7 @@
   },
   "relationType": "ASSOCIATED_WITH_EVENT",
   "label": "obnovené čerpání dotací Agrofertem po vložení firmy do Babišova RSVP Trust",
-  "status": "corroborated",
+  "status": "single",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-20"
@@ -30,15 +30,6 @@
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-08"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-09"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-10"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-11"
     }
   ],
   "subjects": [],
@@ -47,7 +38,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-038 (provázání grafu) z už existujícího, citovaného tvrzení tohoto dossieru."
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Přidáno v rámci T-038 (provázání grafu) z už existujícího, citovaného tvrzení tohoto dossieru. **Oprava 2026-08-03 ([GAP-13](@/dossiers/martin-sebestyan/gaps/gap-13.md))**: čtyři citované zdroje se ukázaly být stejné zpravodajství ČTK — status vrácen z corroborated na single, zdrojový seznam zúžen na jeden reprezentativní."
     }
   ]
 }

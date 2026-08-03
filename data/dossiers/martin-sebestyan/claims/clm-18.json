@@ -10,14 +10,11 @@
     "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
   },
   "text": "Ministr Šebestyán se jednání dozorčí rady SZIF 24. února 2026 nezúčastnil a uvedl, že do činnosti fondu nebude nijak zasahovat; totéž stanovisko zopakoval v dubnu 2026 k otázce zveřejnění právních analýz.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-08"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-15"
     }
   ],
   "subjects": [

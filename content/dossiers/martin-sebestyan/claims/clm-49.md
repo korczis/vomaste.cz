@@ -14,9 +14,11 @@ record_type = "claim"
 lang = "cs"
 clm_id = "CLM-49"
 +++
-Tato stránka je kanonický záznam tvrzení CLM-49 — shrnutí, stav a zdroje
+Tato stránka je kanonický záznam tvrzení CLM-49 — shrnutí, stav a zdroj
 výše jsou úplné. Odpovídá na [GAP-08](@/dossiers/martin-sebestyan/gaps/gap-08.md)
-dvěma nezávisle otevřenými zdroji (ČT24, ČeskéNoviny.cz/ČTK) namísto
-původně nedostupného Forbes titulku. **Procesní rámování**: zahájení
-trestního řízení není obvinění ani odsouzení nikoho konkrétního — cílí
-na neurčené osoby, ne na Martina Šebestyána osobně.
+otevřeným zdrojem (ČT24) namísto původně nedostupného Forbes titulku.
+**Procesní rámování**: zahájení trestního řízení není obvinění ani
+odsouzení nikoho konkrétního — cílí na neurčené osoby, ne na Martina
+Šebestyána osobně. **Oprava 2026-08-03 ([GAP-13](@/dossiers/martin-sebestyan/gaps/gap-13.md))**:
+původně CORROBORATED dvěma zdroji (ČT24 + ČeskéNoviny.cz), ale oba se
+ukázaly být stejné zpravodajství ČTK — vráceno na 1 ZDROJ.
