@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-50",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-50",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "text": "Opoziční senátoři podle Hospodářských novin (24. 7. 2026) zvažovali podání stížnosti k Ústavnímu soudu proti novele stavebního zákona kvůli porušení legislativních pravidel, vedle možnosti novelu jen vrátit Sněmovně. Podle oficiálního seznamu projednávaných plenárních věcí Ústavního soudu (ověřeno 3. 8. 2026) mezi 17 aktuálně vedenými věcmi žádná novelu stavebního zákona nenapadá — k datu ověření tedy k faktickému podání nedošlo.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-35"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-36"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "order": 50,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam tvrzení CLM-50 — shrnutí, stav a\nzdroje výše jsou úplné. Odpovídá na [GAP-08](@/dossiers/karel-havlicek/gaps/gap-08.md)\nkombinací mediální zprávy o zvažovaném kroku (SRC-35) a přímého\nověření u primárního, úředního zdroje (SRC-36, ÚS ČR), že k podání\nzatím nedošlo."
+    }
+  ]
+}

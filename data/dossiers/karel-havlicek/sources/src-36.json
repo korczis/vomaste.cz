@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-36",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-36",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "title": "SRC-36 — Ústavní soud ČR, projednávané plenární věci",
+  "description": "Oficiální seznam projednávaných plenárních věcí Ústavního soudu.",
+  "outlet": "Ústavní soud ČR",
+  "sourceType": "úřední dokument",
+  "url": "https://www.usoud.cz/projednavane-plenarni-veci",
+  "published": "2026-08-03",
+  "retrieved": "2026-08-03",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-50"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Co dokládá.** Oficiální, průběžně aktualizovaný seznam projednávaných plenárních věcí Ústavního soudu k 3. 8. 2026 obsahuje 17 věcí (Pl. ÚS 1/25 až Pl. ÚS 17/26) — mj. návrhy senátorů týkající se ochrany před hlukem, opatření souvisejících s Ukrajinou, dávek pro osoby se zdravotním postižením, postupu v záplavových územích a přerozdělení daňových výnosů. Žádná z uvedených věcí se netýká novely stavebního zákona.\n\n**Proč je to tu důležité.** Odpovídá na [GAP-08](@/dossiers/karel-havlicek/gaps/gap-08.md) přímo z primárního, úředního zdroje: k datu ověření nebyl návrh na zrušení novely stavebního zákona u Ústavního soudu skutečně podán (nebo alespoň ještě nefiguruje na veřejném seznamu) — potvrzuje, že šlo (zatím) jen o úvahu popsanou v SRC-35, ne o skutečné podání."
+    }
+  ],
+  "order": 36
+}

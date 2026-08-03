@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-35",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-35",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "title": "SRC-35 — Hospodářské noviny (HN.cz), 24. 7. 2026",
+  "description": "Bitva o stavební zákon je zpět. Senátoři zvažují, zda ho jen vrátit, nebo podat také stížnost k Ústavnímu soudu.",
+  "outlet": "Hospodářské noviny",
+  "sourceType": "zpravodajství",
+  "url": "https://byznys.hn.cz/c1-67908390-bitva-o-stavebni-zakon-je-zpet-senatori-zvazuji-zda-ho-jen-vratit-nebo-podat-take-stiznost-k-ustavnimu-soudu",
+  "published": "2026-07-24",
+  "retrieved": "2026-08-03",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-50"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Co dokládá (jen volně dostupný úvod, cca 20 % textu — zbytek za paywallem).** Opoziční senátoři podle titulku zvažují buď vrácení novely stavebního zákona Sněmovně, nebo i podání stížnosti k Ústavnímu soudu s odůvodněním porušení legislativních pravidel; „pokud uspějí, stavební zákon by mohl dopadnout podobně jako zákon o EET z roku 2017.“ Konkrétní jména senátorů ani časový rámec podání článek (v přístupné části) neuvádí.\n\n**Proč je to tu důležité.** Odpovídá na [GAP-08](@/dossiers/karel-havlicek/gaps/gap-08.md) jako dokumentace úvahy, ne podání — viz [SRC-36](@/dossiers/karel-havlicek/sources/src-36.md) pro ověření, zda k podání skutečně došlo."
+    }
+  ],
+  "order": 35
+}
