@@ -12,7 +12,7 @@
   "title": "GAP-02 — Dvě ze čtyř tvrzení dosud nemají druhý nezávislý zdroj",
   "description": "CLM-04 a CLM-05 mají od 2026-08-02 nezávislé potvrzení (ČT24); CLM-03 (redakční hodnocení) a CLM-06 (nevyjádření k dotazu RESPEKTU) svou povahou druhý zdroj mít nemohou.",
   "priority": "nízká",
-  "checked": "2026-08-02",
+  "checked": "2026-08-03",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-03"

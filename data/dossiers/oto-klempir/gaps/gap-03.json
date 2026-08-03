@@ -12,7 +12,7 @@
   "title": "GAP-03 — Rozporné údaje o valorizačním mechanismu příspěvku pro ČT a ČRo — vysvětleno",
   "description": "ČT24 (14. 4. 2026) uvádí valorizaci o inflaci maximálně o pět procent, zatímco Médiář (15. 6. 2026) popisuje vzorec, podle nějž se příspěvek zvýší o 10 % při kumulované inflaci nad 10 % — vysvětleno CLM-44.",
   "priority": "nízká",
-  "checked": "2026-08-02",
+  "checked": "2026-08-03",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-44"

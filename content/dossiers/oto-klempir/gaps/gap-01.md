@@ -41,3 +41,5 @@ ta se týká výhradně toho, zda doslovné formulace uvnitř samotného
 placeného RESPEKT textu odpovídají tomu, jak je dossier parafrázuje.
 Ta otázka zůstává otevřená stejně jako dosud, jen už méně kriticky
 důležitá, protože klíčové věcné body má dossier doložené i odjinud.
+
+**Opakovaná kontrola k 2026-08-03**: SRC-02 znovu přímo otevřen. Volně dostupný obsah se nezměnil (úvodní odstavec o pískotu na festivalu a stručné návštěvě KVIFF, oboje už doloženo); sekce „Jsem vykonavatel“ a zbytek textu zůstávají za předplatným. Mezera zůstává otevřená.
