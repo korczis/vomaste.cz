@@ -25,3 +25,5 @@ novější zprávu o formálním schválení — nejnovější dohledané zdroje
 (květen–červen 2026, včetně existujícího SRC-12 o Babišově kritice
 náboru) popisují koncepci stále jako rozpracovanou/projednávanou.
 Mezera zůstává otevřená.
+
+**Opakovaná kontrola k 2026-08-03**: hledání zopakováno, žádná zpráva o formálním schválení vládou nedohledána. Mezera zůstává otevřená.
