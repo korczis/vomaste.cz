@@ -19,3 +19,5 @@ Nebylo dohledáno oficiální stanovisko školských odborů (ČMOS pracovníků
 **Proč je to mezera**: Cílené dotazy vracely pouze domovskou stránku odborů bez relevantních tiskových zpráv; reakce jsou doloženy jen za Učitelskou platformu, Unii rodičů a asociace ředitelů. Tato mezera **není** zjištěním žádným
 směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
+
+**Opakovaná kontrola k 2026-08-03**: přímo otevřeny domovské stránky obou organizací (skolskeodbory.cz i pedagogicka-komora.cz). ČMOS PŠ zveřejnil v květnu a červnu 2026 dva články o ministrových prioritách (Strategie 2030+), ale žádný k testování, mobilům nebo zkrácení školního roku. Pedagogická komora na své hlavní stránce k žádnému ze tří témat nic neuvádí. Žádné oficiální stanovisko ani jedné organizace k těmto tématům nebylo nalezeno. Mezera zůstává otevřená.
