@@ -19,3 +19,5 @@ Nebylo možné ověřit reportáž iDNES.cz o škole, která zkrácení školní
 **Proč je to mezera**: Doména www.idnes.cz nebyla v tomto prostředí načitatelná (fetch blokován); obsah nebylo možné otevřít, proto nebyl použit. Tato mezera **není** zjištěním žádným
 směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
+
+**Opakovaná kontrola k 2026-08-03**: iDNES.cz zůstává nedostupné i po opakovaném pokusu (nástroj hlásí přímou nemožnost načtení domény, ne jen HTTP chybu). Cíleně dohledán a otevřen jeden kandidátní alternativní zdroj (TN.cz, 14. 4. 2026) — ukázal se být o věcně jiné škole (SOŠ Říčany, žádající o PRODLOUŽENÍ výuky do 30. 6., ne o odmítnutí zkrácení a zaslání argumentů ministrovi zpět) — vědomě vyloučen jako case-conflation. Žádná srovnatelná náhrada za konkrétní iDNES reportáž nebyla nalezena. Mezera zůstává otevřená.
