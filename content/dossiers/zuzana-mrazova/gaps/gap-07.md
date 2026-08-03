@@ -19,3 +19,5 @@ Konkrétní výše pokuty zůstává nezveřejněna.
 **Proč je to mezera**: Mostecký magistrát ji odmítl sdělit s odkazem na to, že řízení nenabylo právní moci; ověřitelné je pouze zákonné maximum 50 tisíc korun. Tato mezera **není** zjištěním žádným
 směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
+
+**Opakovaná kontrola k 2026-08-03**: věcně totožné s [GAP-01](@/dossiers/zuzana-mrazova/gaps/gap-01.md) (ověřeno téhož dne, stejný výsledek — cílené hledání nenašlo žádný zdroj s konkrétní částkou). Mezera zůstává otevřená.
