@@ -94,3 +94,5 @@ nezávislý forenzní nález ani o vyjádření orgánu činného v trestním
 řízení k pravosti materiálů — ten se k tomu, jak je výše popsáno,
 závazně nevyjádřil. Mezera (nezávislé forenzní ověření pravosti a
 autorství, CLM-09) tak zůstává otevřená beze změny věcného závěru.
+
+**Opakovaná kontrola k 2026-08-03**: hledání zopakováno, žádná nová nezávislá forenzní verifikace nedohledána. Mezera zůstává otevřená.

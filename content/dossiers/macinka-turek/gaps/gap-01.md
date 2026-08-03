@@ -45,3 +45,5 @@ Echo24, Blesk, FORUM 24 — přehled dostupného zpravodajství, žádný nový
 zdrojů k datu poslední kontroly neuvádí uzavřené vyšetřování, vznesené
 obvinění ani rozhodnutí o vině. Tato stránka bude aktualizována, jakmile
 se objeví ověřitelná zpráva o výsledku.
+
+**Opakovaná kontrola k 2026-08-03**: hledání zopakováno, dostupné zdroje potvrzují jen pokračující šetření (analýza kamerových záznamů), žádné rozhodnutí, obvinění ani klasifikace skutku k datu kontroly nedohledány. Mezera zůstává otevřená.

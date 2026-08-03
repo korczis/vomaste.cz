@@ -57,3 +57,5 @@ Opakovaná kontrola k 2026-08-02: žádný dohledaný zdroj neuvádí, že by
 Turek na funkci zmocněnce formálně rezignoval nebo že by byl jmenován
 nástupce — stav zůstává „dočasně pozastaveno do uzavření vyšetřování
 nehody", stejně jako k 2026-07-23.
+
+**Opakovaná kontrola k 2026-08-03**: hledání zopakováno, žádná formální rezignace ani jmenování nástupce nedohledány. Stav beze změny.

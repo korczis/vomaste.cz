@@ -54,3 +54,5 @@ je ale nová, samostatná skutečnost o vedení kampaně 2025 — pokuta
 [CLM-54](@/dossiers/macinka-turek/claims/clm-54.md). Nejde o rozklíčování
 původního rozporu 638 864 Kč vs. „necelé dva miliony" — ten zůstává
 otevřený beze změny.
+
+**Opakovaná kontrola k 2026-08-03**: hledání zopakováno, žádný zdroj rozpor nerozklíčoval. Stav beze změny.

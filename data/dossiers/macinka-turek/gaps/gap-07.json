@@ -12,7 +12,7 @@
   "title": "GAP-07 — Ukrajinská strana vazby GMR GAS",
   "description": "Ukrajinský registrový agregátor (2026-08-02) doložil stav, procenta a statutární orgán GMR GAS UA LLC; zbývá jen spárovat jmenovaného spoluvlastníka s konkrétním záznamem v ARES.",
   "priority": "nízká",
-  "checked": "2026-08-02",
+  "checked": "2026-08-03",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-14"

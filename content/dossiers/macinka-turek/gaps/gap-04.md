@@ -62,3 +62,5 @@ webové rozhraní, viz [Co tento přehled nezkoumal](@/dossiers/macinka-turek/_i
 **Opakovaná kontrola k 2026-08-02** (cílená rešerše aktuální žurnalistiky
 k Macinkovým nemovitostem): žádný nový zdroj nenalezen — stav beze
 změny oproti 2026-07-29.
+
+**Opakovaná kontrola k 2026-08-03**: hledání zopakováno, žádný nový zdroj k Macinkovým nemovitostem nenalezen. Stav beze změny.
