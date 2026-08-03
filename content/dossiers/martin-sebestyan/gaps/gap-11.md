@@ -16,6 +16,6 @@ gap_id = "GAP-11"
 +++
 Nepodařilo se ověřit, zda proběhla nebo byla zahájena samostatná kontrola NKÚ zaměřená na postup SZIF nebo ministerstva ve věci dotací Agrofertu za působení Martina Šebestyána jako ministra.
 
-**Proč je to mezera**: Vyhledávání nenašlo žádnou takovou kontrolní akci; dohledaná kontrola NKÚ č. 23/06 se týká Programu rozvoje venkova 2014–2020 a byla uzavřena v roce 2024. Tato mezera **není** zjištěním žádným
-směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
-otevřeným zdrojem.
+**Proč je to mezera**: Vyhledávání nenašlo žádnou takovou kontrolní akci; dohledaná kontrola NKÚ č. 23/06 se týká Programu rozvoje venkova 2014–2020 a byla uzavřena v roce 2024. Tato mezera **není** zjištěním žádným směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit otevřeným zdrojem.
+
+**Opakovaná kontrola k 2026-08-03**: nalezena a přímo otevřena další kontrolní akce NKÚ č. 21/33 („Podpora zpracování zemědělských produktů“) zmiňující i firmy z koncernu Agrofert — ale je z 9. 1. 2023, týká se let 2018–2021 a jiného dotačního programu, tedy období dávno před Šebestyánovým nástupem do funkce ministra (15. 12. 2025); Šebestyán v ní není jmenován. Vědomě nepoužito jako náhrada — jde o jinou kontrolu, jiné období, jiný program. Žádná NKÚ kontrola cílená na jeho ministerské působení dohledána nebyla. Mezera zůstává otevřená.
