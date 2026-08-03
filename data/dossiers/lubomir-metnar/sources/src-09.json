@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-09",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-09",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar"
+  },
+  "title": "SRC-09 — NKÚ (oficiální tisková zpráva)",
+  "description": "NKÚ nesouhlasí s vyřazením svého sídla ze seznamu chráněných objektů — oficiální tisková zpráva úřadu.",
+  "outlet": "Nejvyšší kontrolní úřad (nku.cz)",
+  "sourceType": "primární / oficiální tisková zpráva",
+  "url": "https://www.nku.cz/cz/pro-media/tiskove-zpravy/nku-nesouhlasi-s-vyrazenim-sveho-sidla-ze-seznamu-chranenych-objektu-id15794",
+  "published": "2026-07-29",
+  "retrieved": "2026-08-03",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-27"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-28"
+    }
+  ],
+  "subjects": [
+    "metnar"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální tisková zpráva NKÚ (29. 7. 2026) k rozhodnutí vlády z 27. 7. 2026 vyřadit sídlo NKÚ ze seznamu chráněných objektů. Úřad uvádí důvody nesouhlasu: v budově se nacházejí utajované dokumenty různého stupně utajení a sídlí zde i Parlamentní knihovna a Archiv Poslanecké sněmovny, které uchovávají cenné historické sbírky — nahrazení policejní ochrany soukromou bezpečnostní službou podle NKÚ představuje pro tyto materiály významné riziko. Prezident Kala uvedl: „Zajištění bezpečnosti jedné důležité státní instituce by nemělo probíhat na úkor jiné,\" a označil krok za „útok na nezávislou instituci\". Úřad dále namítá, že rozhodnutí padlo bez předchozí konzultace či připomínkového řízení, a žádá vládu o přehodnocení a nové jednání.\n\nZdroj otevřen a přečten 2026-08-03 — primární zdroj (oficiální tisková zpráva NKÚ)."
+    }
+  ],
+  "order": 9
+}

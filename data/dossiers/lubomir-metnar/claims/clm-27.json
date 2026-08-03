@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-27",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-27",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar"
+  },
+  "text": "NKÚ v oficiální tiskové zprávě (29. 7. 2026) uvedl, že v jeho budově se nacházejí utajované dokumenty různého stupně utajení a sídlí zde i Parlamentní knihovna a Archiv Poslanecké sněmovny s cennými historickými sbírkami, a že nahrazení policejní ochrany soukromou bezpečnostní službou pro tyto materiály představuje významné riziko.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-09"
+    }
+  ],
+  "subjects": [
+    "metnar"
+  ],
+  "order": 27,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/lubomir-metnar/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

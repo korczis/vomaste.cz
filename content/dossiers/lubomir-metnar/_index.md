@@ -61,6 +61,8 @@ námitku dotčeného úřadu.
 | <a id="clm-02"></a>[CLM-02](@/dossiers/lubomir-metnar/claims/clm-02.md) | Metnar na sociální síti X návrh odůvodnil bezpečnostní analýzou Policie ČR, nikoli politickým rozhodnutím; sídlo NKÚ podle něj dlouhodobě vykazuje nejnižší riziko a má vlastní moderní zabezpečení, policejní kapacita má být přesměrována k ochraně České národní banky | <span class="status-badge status-quote">CITACE</span> | [SRC-01](@/dossiers/lubomir-metnar/sources/src-01.md) [SRC-03](@/dossiers/lubomir-metnar/sources/src-03.md) |
 | <a id="clm-03"></a>[CLM-03](@/dossiers/lubomir-metnar/claims/clm-03.md) | Prezident NKÚ Miloslav Kala označil návrh za „útok na nezávislou instituci" a „další pokus o vyhladovění" a uvedl, že úřad nebyl předem informován a dozvěděl se o návrhu z vládních dokumentů | <span class="status-badge status-quote">CITACE</span> | [SRC-01](@/dossiers/lubomir-metnar/sources/src-01.md) |
 | <a id="clm-26"></a>[CLM-26](@/dossiers/lubomir-metnar/claims/clm-26.md) | Vláda usnesením z 27. 7. 2026 vyřadila NKÚ ze seznamu objektů střežených Policií ČR a na jeho místo zařadila sídlo České národní banky — návrh z CLM-01 byl tímto přijat | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-08](@/dossiers/lubomir-metnar/sources/src-08.md) |
+| <a id="clm-27"></a>[CLM-27](@/dossiers/lubomir-metnar/claims/clm-27.md) | NKÚ v oficiální tiskové zprávě (29. 7. 2026) uvedl, že v jeho budově se nacházejí utajované dokumenty různého stupně utajení a sídlí zde i Parlamentní knihovna a Archiv Poslanecké sněmovny s cennými historickými sbírkami, a že nahrazení policejní ochrany soukromou bezpečnostní službou pro tyto materiály představuje významné riziko. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-09](@/dossiers/lubomir-metnar/sources/src-09.md) |
+| <a id="clm-28"></a>[CLM-28](@/dossiers/lubomir-metnar/claims/clm-28.md) | Prezident NKÚ Miloslav Kala v oficiální tiskové zprávě úřadu uvedl: „Zajištění bezpečnosti jedné důležité státní instituce by nemělo probíhat na úkor jiné,“ a NKÚ v ní žádá vládu o přehodnocení rozhodnutí a nové jednání, protože podle úřadu padlo bez předchozí konzultace či připomínkového řízení. | <span class="status-badge status-quote">CITACE</span> | [SRC-09](@/dossiers/lubomir-metnar/sources/src-09.md) |
 
 ## Návrh ukončit policejní ochranu NKÚ {#kauza-ochrana-nku}
 
@@ -89,6 +91,17 @@ zařazena Česká národní banka
 ([CLM-26](@/dossiers/lubomir-metnar/claims/clm-26.md)). Jde o zaznamenání
 procesního stavu (usnesení přijato), ne o hodnocení, zda je rozhodnutí
 správné. *(Zdroj: ČeskéNoviny.cz)*
+
+**Doplněno 3. 8. 2026**: dohledána a přímo otevřena oficiální tisková
+zpráva NKÚ (29. 7. 2026) — úřad v ní nesouhlas zdůvodňuje mj. tím, že v
+budově se nacházejí utajované dokumenty a sídlí zde i Parlamentní
+knihovna a Archiv Poslanecké sněmovny s cennými historickými sbírkami,
+pro něž nahrazení policejní ochrany soukromou službou představuje podle
+úřadu významné riziko
+([CLM-27](@/dossiers/lubomir-metnar/claims/clm-27.md)). Prezident Kala
+v téže zprávě žádá vládu o přehodnocení a nové jednání
+([CLM-28](@/dossiers/lubomir-metnar/claims/clm-28.md)). *(Zdroj: NKÚ,
+oficiální tisková zpráva)*
 
 ## Co tento přehled nezkoumal {#mezery}
 

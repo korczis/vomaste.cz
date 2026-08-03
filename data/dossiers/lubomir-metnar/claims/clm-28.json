@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-28",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-28",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar"
+  },
+  "text": "Prezident NKÚ Miloslav Kala v oficiální tiskové zprávě úřadu uvedl: „Zajištění bezpečnosti jedné důležité státní instituce by nemělo probíhat na úkor jiné,“ a NKÚ v ní žádá vládu o přehodnocení rozhodnutí a nové jednání, protože podle úřadu padlo bez předchozí konzultace či připomínkového řízení.",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-09"
+    }
+  ],
+  "subjects": [
+    "metnar"
+  ],
+  "order": 28,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/lubomir-metnar/_index.md#registr-tvrzeni)."
+    }
+  ]
+}
