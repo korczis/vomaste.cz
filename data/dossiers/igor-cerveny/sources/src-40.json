@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-40",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-40",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "title": "SRC-40 — Ministerstvo životního prostředí ČR, 1. 6. 2026",
+  "description": "Reakce MŽP: Informace k veřejné zakázce na stavební úpravy v budově MŽP.",
+  "outlet": "Ministerstvo životního prostředí ČR",
+  "sourceType": "tisková zpráva",
+  "url": "https://www.mzp.gov.cz/cz/pro-media-a-verejnost/aktuality/archiv-tiskovych-zprav/reakce-mzp-informace-k-verejne-zakazce-na-stavebni-upravy-v-budove-mzp",
+  "published": "2026-06-01",
+  "retrieved": "2026-08-03",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-59"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Co dokládá.** MŽP oficiálně reagovalo na dřívější mediální zprávy s tím, že jde o „nepřesné informace“: rámcová smlouva na stavební úpravy v objemu do 3 mil. Kč se týká celé budovy MŽP po celý rok, ne jen jednoho patra pro ministra. Náklady na úpravy 5. patra (nábytek, koberce, dveře, osvětlení, malování) ministerstvo odhaduje na cca 350 tisíc Kč.\n\n**Proč je to tu důležité.** Jde o primární zdroj (přímá reakce úřadu, ne zprostředkované zpravodajství) — odpovídá na [GAP-09](@/dossiers/igor-cerveny/gaps/gap-09.md) oficiálním odhadem částky a na [GAP-11](@/dossiers/igor-cerveny/gaps/gap-11.md) tím, že ani tento přímý zdroj nezmiňuje žádnou kontrolu NKÚ, ÚOHS ani podaný podnět."
+    }
+  ],
+  "order": 40
+}

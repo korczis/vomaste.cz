@@ -11,16 +11,23 @@
   },
   "title": "GAP-09 — Není doložena celková vysoutěžená či skutečně proplacená částka za úpravy ministrovy praco",
   "description": "Deník N mluví jen o „dalších statisících“ a klíčové pasáže obou článků (18. 4. a 18. 5. 2026) jsou za paywallem; článek z 18. 4. je nepřístu",
-  "priority": "střední",
+  "priority": "nízká",
   "checked": "2026-08-03",
-  "claims": [],
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-58"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-59"
+    }
+  ],
   "subjects": [
     "cerveny"
   ],
   "content": [
     {
       "type": "markdown",
-      "value": "Není doložena celková vysoutěžená či skutečně proplacená částka za úpravy ministrovy pracovny.\n\n**Proč je to mezera**: Deník N mluví jen o „dalších statisících“ a klíčové pasáže obou článků (18. 4. a 18. 5. 2026) jsou za paywallem; článek z 18. 4. je nepřístupný zcela. Tato mezera **není** zjištěním žádným směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit otevřeným zdrojem.\n\n**Opakovaná kontrola k 2026-08-03**: nalezen a přímo otevřen doplňkový zdroj (nasdum.eu, 5. 6. 2026), který uvádí, že ministerstvo dřívější zprávy o „3 milionech za kancelář“ vyvrátilo — částka 3 mil. Kč se týká celkové rekonstrukce budovy MŽP, ne jen inkriminované kanceláře. Konkrétní vysoutěženou/proplacenou částku za samotné úpravy pracovny ale ani tento zdroj neuvádí. Deník N (18. 4., 18. 5.) zůstává za paywallem. Mezera zůstává otevřená."
+      "value": "Není doložena celková vysoutěžená či skutečně proplacená částka za úpravy ministrovy pracovny.\n\n**Proč je to mezera**: Deník N mluví jen o „dalších statisících“ a klíčové pasáže obou článků (18. 4. a 18. 5. 2026) jsou za paywallem; článek z 18. 4. je nepřístupný zcela. Tato mezera **není** zjištěním žádným směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit otevřeným zdrojem.\n\n**Opakovaná kontrola k 2026-08-03**: nalezen a přímo otevřen doplňkový zdroj (nasdum.eu, 5. 6. 2026), který uvádí, že ministerstvo dřívější zprávy o „3 milionech za kancelář“ vyvrátilo — částka 3 mil. Kč se týká celkové rekonstrukce budovy MŽP, ne jen inkriminované kanceláře. Následně dohledány dva konkrétní zdroje s reálnými čísly: [CLM-58](@/dossiers/igor-cerveny/claims/clm-58.md) (NašeTéma.cz — přesný rozpis dvou smluv, 241 482 Kč nábytek + 191 479 Kč stavební úpravy) a [CLM-59](@/dossiers/igor-cerveny/claims/clm-59.md) (přímo oficiální reakce MŽP z 1. 6. 2026 — odhad cca 350 tisíc Kč za úpravy 5. patra). Přesná čísla se mezi zdroji mírně liší (cca 433 tisíc vs. odhad 350 tisíc) — patrně jde o různá stadia zakázky (smluvní vs. odhadovaná částka) nebo mírně odlišný rozsah prací; žádný zdroj rozdíl nevysvětluje. Deník N (18. 4., 18. 5.) zůstává za paywallem. Mezera je tímto z podstatné části vyřešena — konkrétní čísla nyní existují, i když si drobně neodpovídají."
     }
   ],
   "order": 9

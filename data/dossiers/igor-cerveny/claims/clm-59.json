@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-59",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-59",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "text": "MŽP ve své oficiální reakci z 1. 6. 2026 odmítlo jako nepřesné dřívější mediální zprávy o „3 milionech za kancelář“: rámcová smlouva do 3 mil. Kč se týká celoroční údržby celé budovy, ne jen ministrova patra. Samotné úpravy 5. patra (nábytek, koberce, dveře, osvětlení, malování) MŽP odhadlo na cca 350 tisíc Kč.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-40"
+    }
+  ],
+  "subjects": [
+    "cerveny"
+  ],
+  "order": 59,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam tvrzení CLM-59 — shrnutí, stav a\nzdroj výše jsou úplné. Doplňuje [GAP-09](@/dossiers/igor-cerveny/gaps/gap-09.md)\no oficiální odhad ministerstva, nezávislý na mediálních odhadech."
+    }
+  ]
+}
