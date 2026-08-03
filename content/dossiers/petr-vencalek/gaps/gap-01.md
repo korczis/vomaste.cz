@@ -31,3 +31,5 @@ Absence záznamu v jednom registru proto **nedokládá, že dar
 neexistuje** — jen že v hlavním veřejném zdroji doložen není. Psát z
 toho tvrzení jedním nebo druhým směrem by bylo přesně to, čemu se tento
 web vyhýbá.
+
+**Opakovaná kontrola k 2026-08-03**: SRC-03 (Hlídač státu) znovu přímo otevřen — nadále eviduje jediný dar (20 000 Kč straně ANO 2011, 2020), nic pro Klub motoristů ani Motoristé sobě. Cílené hledání jinde nic nenašlo. Mezera zůstává otevřená.
