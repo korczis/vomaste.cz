@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-41",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-41",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "text": "Předseda poslaneckého klubu ODS Martin Kupka 30. 7. 2026 uvedl, že ústavní stížnost proti novele je „ve finální fázi příprav“ (dosud nepodaná) a napadala by možnost zvýšení výdajů až o deset procent bez jasných podmínek, vágní bezpečnostní podmínky a rozšíření únikových doložek mimo obranu.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-28"
+    }
+  ],
+  "subjects": [
+    "schillerova"
+  ],
+  "order": 41,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam tvrzení CLM-41 — shrnutí, stav a zdroj\nvýše jsou úplné. Odpovídá na [GAP-04](@/dossiers/alena-schillerova/gaps/gap-04.md)\ns podrobnostmi o připravovaných, dosud nepodaných napadaných\nustanoveních."
+    }
+  ]
+}

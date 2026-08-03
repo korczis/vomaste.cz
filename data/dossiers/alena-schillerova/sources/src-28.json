@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-28",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-28",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "title": "SRC-28 — ČT24 (Česká televize), 30. 7. 2026",
+  "description": "Je to narušení rozdělení moci, hodnotí změnu rozpočtových pravidel Kupka.",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/je-to-naruseni-rozdeleni-moci-hodnoti-zmenu-rozpoctovych-pravidel-kupka-376085",
+  "published": "2026-07-30",
+  "retrieved": "2026-08-03",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-41"
+    }
+  ],
+  "subjects": [
+    "schillerova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Co dokládá.** Předseda poslaneckého klubu ODS Martin Kupka uvedl, že ústavní stížnost proti novele je „ve finální fázi příprav“ — dosud tedy nebyla podána. Konkrétně by měla napadat: možnost zvýšení výdajů státu až o deset procent bez jasně definovaných podmínek, vágní bezpečnostní podmínky pro uvolnění pravidel a rozšíření tzv. únikových doložek mimo obranu (např. na dopravu). Kupka vnímá změny jako narušení rozdělení moci mezi vládou a Poslaneckou sněmovnou.\n\n**Proč je to tu důležité.** Odpovídá na [GAP-04](@/dossiers/alena-schillerova/gaps/gap-04.md): potvrzuje, že k 30. 7. 2026 šlo stále jen o připravovaný, nikoli podaný návrh, a poprvé upřesňuje, která konkrétní ustanovení by napadal. Podání navíc dává smysl až po vyhlášení zákona ve Sbírce — k tomu k datu tohoto zdroje nedošlo (prezident zákon vetoval 22. 7. 2026, přehlasování se ještě neuskutečnilo)."
+    }
+  ],
+  "order": 28
+}
