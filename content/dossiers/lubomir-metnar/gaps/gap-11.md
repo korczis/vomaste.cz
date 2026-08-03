@@ -19,3 +19,5 @@ gap_id = "GAP-11"
 **Proč je to mezera**: Blesk (ČTK), Respekt i Deník N přebírají původní reportáž Seznam Zpráv z 29. 7. 2026. Opakované převzetí jednoho zjištění není nezávislé ověření — do doby, než téma otevře redakce s vlastním zjišťováním, zůstávají tvrzení na 1 ZDROJ. Tato mezera **není** zjištěním žádným
 směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
+
+**Opakovaná kontrola k 2026-08-03**: tato mezera popisuje přesně stejný jev jako [GAP-10](@/dossiers/lubomir-metnar/gaps/gap-10.md), u kterého byla mezitím ve stejný den opravena reálná datová chyba — [CLM-05](@/dossiers/lubomir-metnar/claims/clm-05.md), [CLM-08](@/dossiers/lubomir-metnar/claims/clm-08.md), [CLM-12](@/dossiers/lubomir-metnar/claims/clm-12.md) a [CLM-18](@/dossiers/lubomir-metnar/claims/clm-18.md) byly chybně CORROBORATED a nyní správně nesou 1 ZDROJ. Popis v této mezeře je tedy nyní přesný, ne jen predikce. Hledání nezávislé redakce s vlastním zjišťováním k tomuto tématu nebylo v rámci této kontroly provedeno — vyčerpán rozpočet WebSearch pro tuto session. Mezera zůstává otevřená pro dohledání skutečně nezávislého druhého zdroje.
