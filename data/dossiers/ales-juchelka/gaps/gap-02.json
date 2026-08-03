@@ -9,16 +9,19 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
   },
-  "title": "GAP-02 — Jak bude pokryta rozpočtová mezera 63,8 milionu",
-  "description": "Ministr na dotaz k deficitu odpověděl jediným slovem; konkrétní řešení nebylo ve zkontrolovaných zdrojích nalezeno.",
+  "title": "GAP-02 — Jak bude pokryta rozpočtová mezera 63,8 milionu — zodpovězeno",
+  "description": "Ze státního rozpočtu, nikoli žádostí o proplacení z EU — už dříve doloženo CLM-37 (SRC-11, SRC-12), jen nepropojeno s touto mezerou.",
   "priority": "nízká",
-  "checked": "2026-07-30",
+  "checked": "2026-08-03",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-03"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-37"
     }
   ],
   "subjects": [
@@ -27,7 +30,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Vyřazení čtyř projektů z financování EU podle citovaného zdroje vytváří\nrozpočtovou mezeru 63,8 milionu korun\n([CLM-03](@/dossiers/ales-juchelka/claims/clm-03.md)). Na dotaz, jak bude\ndeficit řešen, ministr odpověděl jediným slovem „Počkejte.\"\n([CLM-04](@/dossiers/ales-juchelka/claims/clm-04.md)).\n\nVe zkontrolovaných zdrojích **nebylo nalezeno**, z jakých prostředků má\nbýt mezera pokryta, zda ji nesou dotčení příjemci, ministerstvo, nebo\nstátní rozpočet.\n\n**Podmínka uzavření**: doložené rozhodnutí o zdroji krytí (rozpočtové\nopatření, vyjádření ministerstva s konkrétními čísly), ověřené přímým\notevřením zdroje."
+      "value": "Jak bude pokryta rozpočtová mezera 63,8 milionu — zodpovězeno\n\n**Původní mezera** (30. 7. 2026): Vyřazení čtyř projektů z financování EU podle tehdy citovaného zdroje vytváří\nrozpočtovou mezeru 63,8 milionu korun\n([CLM-03](@/dossiers/ales-juchelka/claims/clm-03.md)). Na dotaz, jak bude\ndeficit řešen, ministr odpověděl jediným slovem „Počkejte.\"\n([CLM-04](@/dossiers/ales-juchelka/claims/clm-04.md)). Ve zkontrolovaných zdrojích tehdy **nebylo nalezeno**, z jakých prostředků má\nbýt mezera pokryta.\n\n**Odpověď (ověřeno 3. 8. 2026)**: odpověď byla v dossieru mezitím už\ndoložena, jen nebyla propojena s touto mezerou —\n[CLM-37](@/dossiers/ales-juchelka/claims/clm-37.md) (CORROBORATED,\n[SRC-11](@/dossiers/ales-juchelka/sources/src-11.md) ČT24 +\n[SRC-12](@/dossiers/ales-juchelka/sources/src-12.md)) už uvádí, že\nministerstvo počítá s úhradou vyřazených projektů ze státního rozpočtu,\nkonkrétní suma ani rozpočtová kapitola však upřesněny nebyly. Opětovným\notevřením SRC-11 (ČT24, 24. 7. 2026) k tomu ověřeno navíc: ministr\nJuchelka uvedl, že resort „neztratí vůbec žádné prostředky z Evropské\nunie“, a ministerstvo přesnou výši ztráty určí až po dokončení\nadministrativních kontrol — tento detail zatím není v žádném canonical\nzáznamu, ale nezakládá samostatnou mezeru ani nové tvrzení (jde jen o\nupřesnění už zodpovězené otázky, ne o nový fakt).\n\nTato mezera je tímto zodpovězena a uzavřena — relinkem na existující\nCLM-37, ne novým tvrzením. Konkrétní výše krytí po dokončení kontrol a\npřípadné rozpočtové opatření patří do nové, samostatné mezery, ne do\ndodatečného rozšiřování této."
     }
   ],
   "order": 2
