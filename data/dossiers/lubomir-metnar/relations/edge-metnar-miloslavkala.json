@@ -18,7 +18,7 @@
   },
   "relationType": "RESPONDED_TO",
   "label": "spor o zrušení policejní ochrany NKÚ — vzájemná veřejná stanoviska",
-  "status": "corroborated",
+  "status": "single",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-18"
@@ -30,12 +30,6 @@
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-02"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-03"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-05"
     }
   ],
   "subjects": [],

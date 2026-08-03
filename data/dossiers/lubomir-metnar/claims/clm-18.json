@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar"
   },
   "text": "Prezident NKÚ Miloslav Kala uvedl, že o plánu na zrušení policejní ochrany jeho úřad nikdo neinformoval a dozvěděl se o něm až z elektronického systému vládních dokumentů. Doloženo více tituly, které ale přebírají tutéž původní reportáž Seznam Zpráv — nejde o nezávislé potvrzení.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-02"

@@ -20,4 +20,6 @@ Agenturní zpracování kauzy s doslovnými citacemi obou stran. Obsahuje nejúp
 
 **Doplněno 2026-08-03**: článek výslovně uvádí kanál Metnarova zdůvodnění: „Ministr vnitra Lubomír Metnar na síti X uvedl, že návrh nevychází z politického rozhodnutí, ale z bezpečnostní analýzy policie.“
 
+**Nezávislost (oprava 2026-08-03)**: článek výslovně uvádí, že o kauze „dnes informoval server Seznam Zprávy“ — jde o převzetí téže původní reportáže ([SRC-02](@/dossiers/lubomir-metnar/sources/src-02.md)), ne o nezávislé potvrzení. Proto stejná `sourceFamily` jako SRC-02.
+
 Zdroj otevřen a přečten 2026-07-30, doplňkově znovu 2026-08-03. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji.

@@ -13,6 +13,7 @@
   "description": "Ministerstvo vnitra navrhuje zrušení policejní ochranné služby NKÚ",
   "outlet": "Deník N",
   "sourceType": "zpravodajství",
+  "sourceFamily": "seznam-zpravy-syndication",
   "url": "https://denikn.cz/minuta/2140312",
   "published": "2026-07-29",
   "retrieved": "2026-07-30",
@@ -36,7 +37,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "**Ministerstvo vnitra navrhuje zrušení policejní ochranné služby NKÚ**\n\nKrátký zpravodajský záznam (formát „minuta“), volně čitelný v části textu. Potvrzuje jádro návrhu, termín od příštího roku, částku cca 20 mil. Kč ročně za soukromou ochranu, nový úkol policie střežit sídlo ČNB a Metnarovo zdůvodnění bezpečnostní analýzou policie. Explicitně uvádí, že informaci přinesl server Seznam Zprávy. Neobsahuje citace Kaly ani popis stavu vládního procesu.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+      "value": "**Ministerstvo vnitra navrhuje zrušení policejní ochranné služby NKÚ**\n\nKrátký zpravodajský záznam (formát „minuta“), volně čitelný v části textu. Potvrzuje jádro návrhu, termín od příštího roku, částku cca 20 mil. Kč ročně za soukromou ochranu, nový úkol policie střežit sídlo ČNB a Metnarovo zdůvodnění bezpečnostní analýzou policie. Explicitně uvádí, že informaci přinesl server Seznam Zprávy. Neobsahuje citace Kaly ani popis stavu vládního procesu.\n\n**Nezávislost (oprava 2026-08-03)**: výslovná citace zdroje je přímé přebírkové označení ([SRC-02](@/dossiers/lubomir-metnar/sources/src-02.md)), ne nezávislé potvrzení. Proto stejná `sourceFamily` jako SRC-02.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
     }
   ],
   "order": 5

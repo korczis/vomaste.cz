@@ -18,4 +18,6 @@ src_id = "SRC-04"
 
 Krátká zpráva v rubrice Informační servis, volně přístupná. Potvrzuje termín účinnosti (od příštího roku), náklad cca 20 mil. Kč ročně na soukromou ostrahu, přesun policejní ochrany na sídlo ČNB, citaci Kaly o útoku na nezávislou instituci a Metnarovu citaci o nasazování bezpečnostních kapacit podle odborného posouzení. Uvádí i kontext dřívějších redukcí a nižší obsazenosti úřadu.
 
+**Nezávislost (oprava 2026-08-03)**: rubrika „Informační servis“ je agenturní/ČTK přebírka (byline „čtk, tb“); text sám výslovně cituje „server Seznam Zprávy“ jako zdroj informace. Jde o dvojité převzetí téže původní reportáže ([SRC-02](@/dossiers/lubomir-metnar/sources/src-02.md)), ne o nezávislé potvrzení. Proto stejná `sourceFamily` jako SRC-02.
+
 Zdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji.

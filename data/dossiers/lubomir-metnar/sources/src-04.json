@@ -13,6 +13,7 @@
   "description": "Ministerstvo vnitra navrhuje zrušit policejní ochranu NKÚ – místo toho by měla nově střežit centrální banku",
   "outlet": "Respekt",
   "sourceType": "zpravodajství",
+  "sourceFamily": "seznam-zpravy-syndication",
   "url": "https://www.respekt.cz/informacni-servis/ministerstvo-vnitra-navrhuje-zrusit-policejni-ochranu-nku-misto-toho-by-mela-nove-strezit-centralni-banku-2026-07-29-10-46",
   "published": "2026-07-29",
   "retrieved": "2026-07-30",
@@ -33,7 +34,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "**Ministerstvo vnitra navrhuje zrušit policejní ochranu NKÚ – místo toho by měla nově střežit centrální banku**\n\nKrátká zpráva v rubrice Informační servis, volně přístupná. Potvrzuje termín účinnosti (od příštího roku), náklad cca 20 mil. Kč ročně na soukromou ostrahu, přesun policejní ochrany na sídlo ČNB, citaci Kaly o útoku na nezávislou instituci a Metnarovu citaci o nasazování bezpečnostních kapacit podle odborného posouzení. Uvádí i kontext dřívějších redukcí a nižší obsazenosti úřadu.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+      "value": "**Ministerstvo vnitra navrhuje zrušit policejní ochranu NKÚ – místo toho by měla nově střežit centrální banku**\n\nKrátká zpráva v rubrice Informační servis, volně přístupná. Potvrzuje termín účinnosti (od příštího roku), náklad cca 20 mil. Kč ročně na soukromou ostrahu, přesun policejní ochrany na sídlo ČNB, citaci Kaly o útoku na nezávislou instituci a Metnarovu citaci o nasazování bezpečnostních kapacit podle odborného posouzení. Uvádí i kontext dřívějších redukcí a nižší obsazenosti úřadu.\n\n**Nezávislost (oprava 2026-08-03)**: rubrika „Informační servis“ je agenturní/ČTK přebírka (byline „čtk, tb“); text sám výslovně cituje „server Seznam Zprávy“ jako zdroj informace. Jde o dvojité převzetí téže původní reportáže ([SRC-02](@/dossiers/lubomir-metnar/sources/src-02.md)), ne o nezávislé potvrzení. Proto stejná `sourceFamily` jako SRC-02.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
     }
   ],
   "order": 4

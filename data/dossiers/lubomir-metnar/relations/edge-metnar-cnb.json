@@ -18,7 +18,7 @@
   },
   "relationType": "ASSOCIATED_WITH_EVENT",
   "label": "uvolněná policejní kapacita po zrušení ochrany NKÚ má nově chránit ČNB",
-  "status": "corroborated",
+  "status": "single",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-08"
@@ -27,15 +27,6 @@
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-02"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-03"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-04"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-05"
     }
   ],
   "subjects": [],
