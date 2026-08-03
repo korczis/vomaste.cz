@@ -32,3 +32,5 @@ odpovídajícím stavem a přesným procesním popisem.
 všechny dohledané zprávy zůstávají z června 2026 (oznámení odvolání),
 žádný zdroj k datu kontroly neuvádí rozhodnutí odvolacího soudu. Stav
 beze změny.
+
+**Opakovaná kontrola k 2026-08-03**: hledání zopakováno, žádné rozhodnutí odvolacího soudu nedohledáno. Stav beze změny.

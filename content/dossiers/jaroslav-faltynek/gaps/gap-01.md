@@ -29,3 +29,5 @@ policie státnímu zástupci nedodala dostatek důkazů. **To mezeru
 neuzavírá**: jde o Faltýnkovu vlastní charakteristiku, ne o citaci
 nebo nález oficiálního odůvodnění státního zástupce, které v žádném
 otevřeném zdroji dohledáno nebylo. Mezera zůstává otevřená.
+
+**Opakovaná kontrola k 2026-08-03**: hledání zopakováno, oficiální odůvodnění státního zástupce nadále nedohledáno. Mezera zůstává otevřená.

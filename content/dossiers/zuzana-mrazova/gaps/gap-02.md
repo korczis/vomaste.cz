@@ -27,3 +27,5 @@ viz [CLM-57](@/dossiers/zuzana-mrazova/claims/clm-57.md)). Cíleně
 prohledáno i k tomuto pozdějšímu datu — **žádný zdroj k 2026-08-02
 nepotvrzuje ani nabytí právní moci, ani zaplacení pokuty**. Mezera
 zůstává otevřená; POVINNÉ rámování „nepravomocná" platí i nadále.
+
+**Opakovaná kontrola k 2026-08-03**: očekávané okno nabytí právní moci (do cca tří týdnů od 25. 7. 2026) k datu kontroly ještě neuplynulo. Žádný zdroj potvrzení nabytí právní moci ani zaplacení pokuty neuvádí. Mezera zůstává otevřená, POVINNÉ rámování „nepravomocná“ platí i nadále.

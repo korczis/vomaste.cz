@@ -41,3 +41,5 @@ týká výhradně kauzy volebních plakátů z roku 2024) a tento dossier je
 nepoužívá. Kdokoliv bude tuto mezeru dál rešeršovat, musí u každého
 nalezeného zdroje ověřit, že jde skutečně o kauzu plakátů, ne o
 záměnu s jiným, časově vzdáleným řízením.
+
+**Opakovaná kontrola k 2026-08-03**: metodická poznámka výše se znovu potvrdila v praxi — první volný dotaz vrátil zprávu o hlasování Sněmovny 81 ze 143 hlasů pro vydání z února 2026, což je přesně ten typ nesouvisejícího, staršího řízení, před kterým tato mezera varuje, ne kauza plakátů. Nepoužito. Žádný nový procesní krok ke kauze plakátů nedohledán. Mezera zůstává otevřená.
