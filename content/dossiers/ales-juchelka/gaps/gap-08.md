@@ -19,3 +19,5 @@ Chybí jakékoli potvrzení, jak policie s podanými trestními oznámeními nal
 **Proč je to mezera**: Nedohledáno žádné vyjádření policie ani státního zastupitelství o přijetí oznámení, zahájení úkonů trestního řízení či odložení. Stav zůstává u ohlášeného/podaného oznámení — nikoli obvinění. Tato mezera **není** zjištěním žádným
 směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
+
+**Opakovaná kontrola k 2026-08-03**: cílené hledání zopakováno (policejní vyjádření, odložení, zahájení úkonů). Žádné oficiální vyjádření policie ani státního zastupitelství nebylo nalezeno — dostupné zdroje jen opakují, že NKÚ v rámci své kontroly samo zjišťuje, zda se ministerstvo na policii obrátilo, což je jiná otázka než stav samotného trestního oznámení. Věcně stejný stav jako [GAP-06](@/dossiers/ales-juchelka/gaps/gap-06.md). Stav zůstává u podaného oznámení, žádné obvinění. Mezera zůstává otevřená.
