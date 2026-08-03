@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "GAP-11 — Nebyly zpracovány resortní kroky mimo tři autorizovaná témata (úhradová vyhláška 2027, doh"
-description = "Leží mimo autorizovaný rozsah AUTH-2026-07-30-Q a mimo povolené hodnoty pole topic; při rešerši byly narazeny relevantní zdroje, ale tvrzení"
+description = "Leží mimo autorizovaný rozsah AUTH-2026-07-30-Q a mimo povolené hodnoty pole topic; ověřeno znovu 3. 8. 2026, autorizace beze změny, hranice zůstává v platnosti."
 template = "dossier-gap.html"
 weight = 11
 
@@ -19,3 +19,5 @@ Nebyly zpracovány resortní kroky mimo tři autorizovaná témata (úhradová v
 **Proč je to mezera**: Leží mimo autorizovaný rozsah AUTH-2026-07-30-Q a mimo povolené hodnoty pole topic; při rešerši byly narazeny relevantní zdroje, ale tvrzení nebyla vytvořena. Tato mezera **není** zjištěním žádným
 směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
+
+**Opakovaná kontrola k 2026-08-03**: znovu ověřeno proti aktuálnímu znění `AGENTS.md` — AUTH-2026-07-30-Q nebyla rozšířena žádnou novou datovanou subsekcí, hranice tří autorizovaných témat zůstává v platnosti beze změny. Vědomě nedohledáván žádný nový obsah k tématům mimo hranici — to by samo o sobě bylo rozšíření rozsahu bez autorizace, ne re-verifikace. Mezera zůstává záměrně otevřená jako trvalá hraniční poznámka, ne jako úkol k doplnění.
