@@ -12,7 +12,7 @@
   "title": "GAP-02 — Články iROZHLAS a Radio Prague International o vládní podpoře zákazu mobilů nebylo možné o",
   "description": "Technická nedostupnost zdrojů při rešerši.",
   "priority": "střední",
-  "checked": "2026-07-30",
+  "checked": "2026-08-03",
   "claims": [],
   "subjects": [
     "plaga"
@@ -20,7 +20,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Články iROZHLAS a Radio Prague International o vládní podpoře zákazu mobilů nebylo možné otevřít (HTTP 403), korroborace detailů vládního projednání tak stojí jen na zdravezpravy.cz a Lupa.cz.\n\n**Proč je to mezera**: Technická nedostupnost zdrojů při rešerši. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+      "value": "Články iROZHLAS a Radio Prague International o vládní podpoře zákazu mobilů nebylo možné otevřít (HTTP 403), korroborace detailů vládního projednání tak stojí jen na zdravezpravy.cz a Lupa.cz.\n\n**Proč je to mezera**: Technická nedostupnost zdrojů při rešerši. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem.\n\n**Opakovaná kontrola k 2026-08-03**: oba servery znovu přímo otestovány (iROZHLAS.cz i anglická verze Radio Prague International) — oba zůstávají 403 Forbidden. Věcný obsah, který měly dokládat (výjimky pro zdravotní důvody, kritika dětského ombudsmana), je už v dossieru zdokumentován jinými zdroji. Mezera zůstává formálně otevřená, bez zjištěného dopadu na úplnost pokrytí."
     }
   ],
   "order": 2

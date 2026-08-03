@@ -19,3 +19,5 @@ gap_id = "GAP-02"
 **Proč je to mezera**: Technická nedostupnost zdrojů při rešerši. Tato mezera **není** zjištěním žádným
 směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
+
+**Opakovaná kontrola k 2026-08-03**: oba servery znovu přímo otestovány (iROZHLAS.cz i anglická verze Radio Prague International) — oba zůstávají 403 Forbidden. Věcný obsah, který měly dokládat (výjimky pro zdravotní důvody, kritika dětského ombudsmana), je už v dossieru zdokumentován jinými zdroji. Mezera zůstává formálně otevřená, bez zjištěného dopadu na úplnost pokrytí.
