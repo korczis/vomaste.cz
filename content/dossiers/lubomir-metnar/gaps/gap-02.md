@@ -25,3 +25,5 @@ Z toho neplyne, že analýza neexistuje ani že je vadná. Plyne z toho jen,
 
 **Podmínka uzavření**: zveřejnění analýzy nebo jejího relevantního
 výtahu, případně doložený popis jejích závěrů z otevřeného zdroje.
+
+**Opakovaná kontrola k 2026-08-03**: cílené hledání zopakováno. Nalezené zdroje (ČT24, Respekt, Deník N, Blesk) opakují jen totéž shrnutí závěru analýzy, které už dossier dokládá (CLM-02, CLM-15) — nejnižší dlouhodobé riziko sídla NKÚ, vlastní moderní zabezpečení. Samotný text analýzy ani její podrobnější výtah nebyl zveřejněn v žádném přímo otevřeném zdroji. Mezera zůstává otevřená.
