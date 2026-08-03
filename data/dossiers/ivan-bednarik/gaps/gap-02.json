@@ -12,10 +12,16 @@
   "title": "GAP-02 — Jeho resortní pozice k výdajům na železnici jako ministra",
   "description": "Autorizovaný rozsah je zahrnuje, ale nebyly ověřeny přímo otevřeným zdrojem.",
   "priority": "nízká",
-  "checked": "2026-07-30",
+  "checked": "2026-08-03",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-36"
     }
   ],
   "subjects": [
@@ -24,7 +30,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Autorizační záznam (`AUTH-2026-07-30-B`) zahrnuje i jeho publikované\npozice k výdajům na železnici jako současného ministra dopravy. Tato část\n**není v dossieru zpracována**, protože k ní při kontrole 2026-07-30\nnebyl otevřen a ověřen zdroj: kandidátní článek (Hospodářské noviny) i\ndalší nalezené odkazy nebyly přečteny v plném rozsahu, a jeden ze\nzvažovaných zdrojů (iROZHLAS) vrací na automatizované dotazy HTTP 403.\n\nJe to tedy **mezera v pokrytí, ne mezera ve skutečnosti** — dossier\nnezachycuje autorizované téma, které zachytit mohl, a přiznává to místo\ntoho, aby prázdné místo vypadalo jako neexistence tématu.\n\n**Podmínka uzavření**: přímé otevření zdroje k jeho konkrétním resortním\npozicím a doplnění tvrzení se stavem podle síly důkazu."
+      "value": "Autorizační záznam (`AUTH-2026-07-30-B`) zahrnuje i jeho publikované\npozice k výdajům na železnici jako současného ministra dopravy. Tato část\n**není v dossieru zpracována**, protože k ní při kontrole 2026-07-30\nnebyl otevřen a ověřen zdroj: kandidátní článek (Hospodářské noviny) i\ndalší nalezené odkazy nebyly přečteny v plném rozsahu, a jeden ze\nzvažovaných zdrojů (iROZHLAS) vrací na automatizované dotazy HTTP 403.\n\nJe to tedy **mezera v pokrytí, ne mezera ve skutečnosti** — dossier\nnezachycuje autorizované téma, které zachytit mohl, a přiznává to místo\ntoho, aby prázdné místo vypadalo jako neexistence tématu.\n\n**Podmínka uzavření**: přímé otevření zdroje k jeho konkrétním resortním\npozicím a doplnění tvrzení se stavem podle síly důkazu.\n\n**Odpověď (ověřeno 2026-08-03)**: téma je mezitím pokryto — pozdější kolo rešerší přidalo [CLM-10](@/dossiers/ivan-bednarik/claims/clm-10.md) (přímá citace: „Problém české železnice byl, že s penězi nebyl problém... A to se dostalo do její DNA,“ a záměr trh „chladit“, brzdit další masivní investice) a [CLM-36](@/dossiers/ivan-bednarik/claims/clm-36.md), oba ze [SRC-06](@/dossiers/ivan-bednarik/sources/src-06.md) (Hospodářské noviny, přímo otevřeno), jen dosud nebyly propojeny s touto mezerou. **Vedlejší zjištění**: CLM-10 a CLM-36 pokrývají prakticky tutéž citaci téhož zdroje téměř identicky — možná redundance k prověření samostatně, mimo scope této mezery. Mezera je tímto zodpovězena."
     }
   ],
   "order": 2

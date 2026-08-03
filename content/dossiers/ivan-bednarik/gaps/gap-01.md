@@ -38,3 +38,5 @@ jen registruje, co který zdroj uvádí.
 vyjádření k tomu, který důvod byl skutečně rozhodující. Do té doby
 zůstává otevřené, který z uváděných faktorů (pokud vůbec jeden) byl
 určující — ne to, zda byl důvod vůbec veřejně zmíněn.
+
+**Opakovaná kontrola k 2026-08-03**: přímo znovu otevřen SRC-13 (ČT24). Bednárik v článku není přímo citován k důvodu odchodu — jediná jeho přímá citace se týká vyrovnání se s chybějícími penězi za pozemky, ne důvodu rezignace samotné. Rámování „vážné výhrady k pozemkům“ je novinářská parafráze, ne Bednárikův přímý výrok. Konzistentní s tím, co už dokládá [CLM-40](@/dossiers/ivan-bednarik/claims/clm-40.md). Mezera zůstává otevřená.

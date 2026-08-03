@@ -19,3 +19,5 @@ Plný obsah podcastu Hospodářských novin z 28. 5. 2026 je za paywallem; citac
 **Proč je to mezera**: Bez plného přepisu nelze ověřit širší kontext výroků o „chlazení“ železničního trhu a konkrétních opatřeních. Tato mezera **není** zjištěním žádným
 směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
+
+**Opakovaná kontrola k 2026-08-03**: SRC-06 znovu otevřen. Volně dostupný úvod se nezměnil, plný přepis zůstává za paywallem. Mezera zůstává otevřená.

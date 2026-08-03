@@ -19,3 +19,5 @@ Explicitní reakce opozičních politiků na Bednárikovy pozice k železniční
 **Proč je to mezera**: Vyhledávání vracelo převážně vyjádření ministra a institucí (ŘSD, Národní rozpočtová rada, oborové asociace), nikoli stranické reakce. Tato mezera **není** zjištěním žádným
 směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
+
+**Opakovaná kontrola k 2026-08-03**: cílené hledání zopakováno, opět jen vyjádření ministra a institucí, žádná přímá citace opozičního politika k tomuto tématu nedohledána. Mezera zůstává otevřená.

@@ -16,15 +16,15 @@ import { compileDataset } from "./compile.mjs";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const compiled = compileDataset(loadCanonicalTree(join(ROOT, "data/dossiers")));
 
-test("golden: počty záznamů per typ (snapshot 2026-08-03: + CLM-42/SRC-22 boris-stastny GAP-07)", () => {
+test("golden: počty záznamů per typ (snapshot 2026-08-03: + CLM-48/SRC-34 ivan-bednarik GAP-04)", () => {
   assert.deepEqual(compiled.counts.perType, {
     case: 89,
-    claim: 918,
+    claim: 919,
     dossier: 24,
     entity: 514,
     gap: 189,
     relation: 317,
-    source: 602,
+    source: 603,
     update: 50,
   });
   assert.equal(compiled.counts.dossiers, 24);

@@ -12,7 +12,7 @@
   "title": "GAP-03 — Plný obsah podcastu Hospodářských novin z 28. 5. 2026 je za paywallem; citace pochází pouz",
   "description": "Bez plného přepisu nelze ověřit širší kontext výroků o „chlazení“ železničního trhu a konkrétních opatřeních.",
   "priority": "střední",
-  "checked": "2026-07-30",
+  "checked": "2026-08-03",
   "claims": [],
   "subjects": [
     "bednarik"
@@ -20,7 +20,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Plný obsah podcastu Hospodářských novin z 28. 5. 2026 je za paywallem; citace pochází pouze z volně dostupného úvodu.\n\n**Proč je to mezera**: Bez plného přepisu nelze ověřit širší kontext výroků o „chlazení“ železničního trhu a konkrétních opatřeních. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+      "value": "Plný obsah podcastu Hospodářských novin z 28. 5. 2026 je za paywallem; citace pochází pouze z volně dostupného úvodu.\n\n**Proč je to mezera**: Bez plného přepisu nelze ověřit širší kontext výroků o „chlazení“ železničního trhu a konkrétních opatřeních. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem.\n\n**Opakovaná kontrola k 2026-08-03**: SRC-06 znovu otevřen. Volně dostupný úvod se nezměnil, plný přepis zůstává za paywallem. Mezera zůstává otevřená."
     }
   ],
   "order": 3

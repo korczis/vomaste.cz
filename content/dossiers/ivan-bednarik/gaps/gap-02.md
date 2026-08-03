@@ -27,3 +27,5 @@ toho, aby prázdné místo vypadalo jako neexistence tématu.
 
 **Podmínka uzavření**: přímé otevření zdroje k jeho konkrétním resortním
 pozicím a doplnění tvrzení se stavem podle síly důkazu.
+
+**Odpověď (ověřeno 2026-08-03)**: téma je mezitím pokryto — pozdější kolo rešerší přidalo [CLM-10](@/dossiers/ivan-bednarik/claims/clm-10.md) (přímá citace: „Problém české železnice byl, že s penězi nebyl problém... A to se dostalo do její DNA,“ a záměr trh „chladit“, brzdit další masivní investice) a [CLM-36](@/dossiers/ivan-bednarik/claims/clm-36.md), oba ze [SRC-06](@/dossiers/ivan-bednarik/sources/src-06.md) (Hospodářské noviny, přímo otevřeno), jen dosud nebyly propojeny s touto mezerou. **Vedlejší zjištění**: CLM-10 a CLM-36 pokrývají prakticky tutéž citaci téhož zdroje téměř identicky — možná redundance k prověření samostatně, mimo scope této mezery. Mezera je tímto zodpovězena.

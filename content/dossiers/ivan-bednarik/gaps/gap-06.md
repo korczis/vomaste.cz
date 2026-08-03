@@ -19,3 +19,5 @@ Konkrétní kroky ministra k objednávce regionální železniční dopravy a k 
 **Proč je to mezera**: Cílené vyhledávání k tématu kraje/dopravní obslužnost/objednávka vlaků nevrátilo relevantní články; rozhovory na iDNES.cz nebyly načitatelné. Tato mezera **není** zjištěním žádným
 směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
+
+**Opakovaná kontrola k 2026-08-03**: cílené hledání zopakováno, iDNES.cz zůstává trvale nenačitatelný. Žádný jiný zdroj k tomuto konkrétnímu tématu nedohledán. Mezera zůstává otevřená.
