@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-56",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-56",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "text": "Ministr Zůna v rozhovoru pro ČT (28. 4. 2026) potvrdil, že na post náčelníka generálního štábu má čtyři kandidáty, ale jejich konkrétní jména neuvedl; dodal, že jména již dříve předal premiérovi. Jména kandidátů tak nejsou veřejná záměrně, ne jen kvůli nedostupnosti zdroje.",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-37"
+    }
+  ],
+  "subjects": [
+    "zuna"
+  ],
+  "order": 56,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam tvrzení CLM-56 — shrnutí, stav a\nzdroj výše jsou úplné. Odpovídá na [GAP-07](@/dossiers/jaromir-zuna/gaps/gap-07.md)\npřímo otevřeným zdrojem (ČT24) namísto blokovaného iROZHLAS."
+    }
+  ]
+}
