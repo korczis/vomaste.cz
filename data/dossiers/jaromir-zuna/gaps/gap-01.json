@@ -11,16 +11,20 @@
   },
   "title": "GAP-01 — Tvrzení náčelníka Řehky, že resort považoval rozhovor s prezidentem za 'politicky citlivý'",
   "description": "Článek iROZHLAS vrátil HTTP 403; obsah nebylo možné otevřít a ověřit, snippet nelze použít jako důkaz.",
-  "priority": "střední",
-  "checked": "2026-07-30",
-  "claims": [],
+  "priority": "nízká",
+  "checked": "2026-08-03",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-54"
+    }
+  ],
   "subjects": [
     "zuna"
   ],
   "content": [
     {
       "type": "markdown",
-      "value": "Tvrzení náčelníka Řehky, že resort považoval rozhovor s prezidentem za 'politicky citlivý', a Zůnova replika nejsou doložitelné.\n\n**Proč je to mezera**: Článek iROZHLAS vrátil HTTP 403; obsah nebylo možné otevřít a ověřit, snippet nelze použít jako důkaz. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+      "value": "Tvrzení náčelníka Řehky, že resort považoval rozhovor s prezidentem za 'politicky citlivý', a Zůnova replika nejsou doložitelné.\n\n**Proč je to mezera**: Článek iROZHLAS vrátil HTTP 403; obsah nebylo možné otevřít a ověřit, snippet nelze použít jako důkaz. Tato mezera **není** zjištěním žádným směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit otevřeným zdrojem.\n\n**Ověřeno 3. 8. 2026**: iROZHLAS zůstává za HTTP 403, ale dohledán a přímo otevřen nezávislý zdroj se stejnou citací (Aktuálně.cz, vlastní zpravodajství Ondřeje Stratilíka) — viz [CLM-54](@/dossiers/jaromir-zuna/claims/clm-54.md). Obsahuje jak přesnou citaci Řehky, tak Zůnovu repliku. Tato mezera je tímto obsahově vyřešena."
     }
   ],
   "order": 1

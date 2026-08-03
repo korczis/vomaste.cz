@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-54",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-54",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "text": "Náčelník generálního štábu Karel Řehka citoval, co mu bylo na ministerstvu řečeno o rozhovoru s prezidentem Pavlem pro armádní podcast Kamufláž: „Teďka to nevydávejte, je to politicky citlivé.“ Ministr Zůna na Řehkovu otevřenost reagoval slovy „Tomu jsem se přesně chtěl vyhnout“ a situaci přerámoval jako otázku zřízení sdíleného YouTube kanálu, ne jako cenzuru videa.",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-35"
+    }
+  ],
+  "subjects": [
+    "zuna"
+  ],
+  "order": 54,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam tvrzení CLM-54 — shrnutí, stav a\nzdroj výše jsou úplné. Odpovídá na [GAP-01](@/dossiers/jaromir-zuna/gaps/gap-01.md)\nnezávisle otevřeným zdrojem (Aktuálně.cz, vlastní zpravodajství)\nnamísto blokovaného iROZHLAS. Jde o citace obou aktérů, ne o zjištění\nwebu."
+    }
+  ]
+}

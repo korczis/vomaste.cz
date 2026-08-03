@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-35",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-35",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "title": "SRC-35 — Aktuálně.cz",
+  "description": "„Teď to nevydávejte, je to politicky citlivé.“ Řehka otevřeně o „zakázaném“ podcastu.",
+  "outlet": "Aktuálně.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://zpravy.aktualne.cz/domaci/ted-to-nevydavejte-je-to-politicky-citlive-rehka-otevrene-o-zakazanem-podcastu-s-prezidentem/r~aaa29d3c081f92588abb3708d0a1ec68/",
+  "published": "2026-04-28",
+  "retrieved": "2026-08-03",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-54"
+    }
+  ],
+  "subjects": [
+    "zuna"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Co dokládá.** Náčelník generálního štábu Karel Řehka doslovně citoval, co mu bylo na ministerstvu řečeno o rozhovoru s prezidentem Pavlem pro armádní podcast Kamufláž: „Teďka to nevydávejte, je to politicky citlivé.“ Ministr Zůna na to reagoval slovy „Tomu jsem se přesně chtěl vyhnout“ a snažil se situaci přerámovat jako otázku sdíleného YouTube kanálu, ne cenzury videa.\n\n**Proč je to tu důležité.** Odpovídá na [GAP-01](@/dossiers/jaromir-zuna/gaps/gap-01.md): klíčový iROZHLAS článek vrací HTTP 403, ale toto je nezávisle otevřený a přečtený zdroj — vlastní zpravodajství Aktuálně.cz (autor Ondřej Stratilík), ne převzatá zpráva — se stejnou citací i Zůnovou replikou."
+    }
+  ],
+  "order": 35
+}

@@ -86,6 +86,7 @@ stanoviska, ne jako vlastní zjištění tohoto webu.
 | <a id="clm-51"></a>[CLM-51](@/dossiers/jaromir-zuna/claims/clm-51.md) | V roce 2025 vstoupilo do armády 2396 lidí — nejvíce od roku 2004 — ale zároveň odešlo 1325 osob, takže čistý přírůstek činil 1071 vojáků; aktivní zálohy stagnují pod 5 tisíci osobami. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-22](@/dossiers/jaromir-zuna/sources/src-22.md) |
 | <a id="clm-52"></a>[CLM-52](@/dossiers/jaromir-zuna/claims/clm-52.md) | Náborový cíl 2250 nových profesionálních vojáků pro rok 2026 byl v dubnu splněn na 86 procent a na začátku června na 98 procent; podle premiéra Babiše nastoupilo za prvních šest měsíců roku 2010 nových vojáků. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-22](@/dossiers/jaromir-zuna/sources/src-22.md) [SRC-31](@/dossiers/jaromir-zuna/sources/src-31.md) [SRC-20](@/dossiers/jaromir-zuna/sources/src-20.md) |
 | <a id="clm-53"></a>[CLM-53](@/dossiers/jaromir-zuna/claims/clm-53.md) | Oficiálním cílem je zvýšit počet profesionálních vojáků na 30 tisíc do roku 2030 a aktivních záloh na 10 tisíc, zatímco náčelník generálního štábu Karel Řehka uváděl, že pro naplnění cílů NATO je potřeba 37 500 příslušníků. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-22](@/dossiers/jaromir-zuna/sources/src-22.md) |
+| <a id="clm-54"></a>[CLM-54](@/dossiers/jaromir-zuna/claims/clm-54.md) | Náčelník generálního štábu Karel Řehka citoval, co mu bylo na ministerstvu řečeno o rozhovoru s prezidentem Pavlem pro armádní podcast Kamufláž: „Teďka to nevydávejte, je to politicky citlivé.“ Ministr Zůna na Řehkovu otevřenost reagoval slovy „Tomu jsem se přesně chtěl vyhnout“ a situaci přerámoval jako otázku zřízení sdíleného YouTube kanálu, ne jako cenzuru videa. | <span class="status-badge status-quote">CITACE</span> | [SRC-35](@/dossiers/jaromir-zuna/sources/src-35.md) |
 ## Obranný rozpočet a závazek 2 % NATO {#kauza-rozpocet-nato}
 
 Téma v autorizovaném rozsahu — viz tvrzení [CLM-02](@/dossiers/jaromir-zuna/claims/clm-02.md), [CLM-03](@/dossiers/jaromir-zuna/claims/clm-03.md), [CLM-04](@/dossiers/jaromir-zuna/claims/clm-04.md), [CLM-05](@/dossiers/jaromir-zuna/claims/clm-05.md), [CLM-06](@/dossiers/jaromir-zuna/claims/clm-06.md), [CLM-07](@/dossiers/jaromir-zuna/claims/clm-07.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
@@ -108,7 +109,7 @@ Téma v autorizovaném rozsahu — viz tvrzení [CLM-20](@/dossiers/jaromir-zuna
 
 ## Neodvysílaný rozhovor s prezidentem Pavlem {#kauza-rozhovor-pavel}
 
-Téma v autorizovaném rozsahu — viz tvrzení [CLM-29](@/dossiers/jaromir-zuna/claims/clm-29.md), [CLM-30](@/dossiers/jaromir-zuna/claims/clm-30.md), [CLM-31](@/dossiers/jaromir-zuna/claims/clm-31.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
+Téma v autorizovaném rozsahu — viz tvrzení [CLM-29](@/dossiers/jaromir-zuna/claims/clm-29.md), [CLM-30](@/dossiers/jaromir-zuna/claims/clm-30.md), [CLM-31](@/dossiers/jaromir-zuna/claims/clm-31.md), [CLM-54](@/dossiers/jaromir-zuna/claims/clm-54.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
 
 ## Spor o koncepci armády {#kauza-koncepce-armady}
 
