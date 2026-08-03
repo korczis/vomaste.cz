@@ -18,6 +18,9 @@
   "retrieved": "2026-07-30",
   "claims": [
     {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-02"
+    },
+    {
       "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-05"
     },
     {
@@ -48,7 +51,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "**„Tlak na nesmyslné úspory.“ NKÚ má přijít o ochranku, její šéf mluví o „vyhladovění“**\n\nAgenturní zpracování kauzy s doslovnými citacemi obou stran. Obsahuje nejúplnější verzi Metnarova zdůvodnění (odkaz na bezpečnostní analýzu Policie ČR a aktuální vyhodnocení ochrany státních objektů) i dvě klíčové citace Miloslava Kaly. Doplňuje kontext: NKÚ jako nezávislá ústavní instituce, dlouhodobě napjatý vztah Kaly a premiéra Babiše, nový úkol kontrolovat ČT a ČRo, převedení policejní ochrany na ČNB.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+      "value": "**„Tlak na nesmyslné úspory.“ NKÚ má přijít o ochranku, její šéf mluví o „vyhladovění“**\n\nAgenturní zpracování kauzy s doslovnými citacemi obou stran. Obsahuje nejúplnější verzi Metnarova zdůvodnění (odkaz na bezpečnostní analýzu Policie ČR a aktuální vyhodnocení ochrany státních objektů) i dvě klíčové citace Miloslava Kaly. Doplňuje kontext: NKÚ jako nezávislá ústavní instituce, dlouhodobě napjatý vztah Kaly a premiéra Babiše, nový úkol kontrolovat ČT a ČRo, převedení policejní ochrany na ČNB.\n\n**Doplněno 2026-08-03**: článek výslovně uvádí kanál Metnarova zdůvodnění: „Ministr vnitra Lubomír Metnar na síti X uvedl, že návrh nevychází z politického rozhodnutí, ale z bezpečnostní analýzy policie.“\n\nZdroj otevřen a přečten 2026-07-30, doplňkově znovu 2026-08-03. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
     }
   ],
   "order": 3

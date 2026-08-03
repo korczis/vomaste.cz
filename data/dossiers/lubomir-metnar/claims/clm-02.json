@@ -9,12 +9,15 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar"
   },
-  "text": "Metnar návrh odůvodnil bezpečnostní analýzou Policie ČR, nikoli politickým rozhodnutím; sídlo NKÚ podle něj dlouhodobě vykazuje nejnižší riziko a má vlastní moderní zabezpečení, policejní kapacita má být přesměrována k ochraně České národní banky",
+  "text": "Metnar na sociální síti X návrh odůvodnil bezpečnostní analýzou Policie ČR, nikoli politickým rozhodnutím; sídlo NKÚ podle něj dlouhodobě vykazuje nejnižší riziko a má vlastní moderní zabezpečení, policejní kapacita má být přesměrována k ochraně České národní banky",
   "status": "status-quote",
   "statusLabel": "CITACE",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-03"
     }
   ],
   "subjects": [],
