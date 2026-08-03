@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-41",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-41",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/boris-stastny"
+  },
+  "text": "Senátor Tomáš Třetina (TOP 09), člen dozorčí rady NSA, se zastal odvolaného Šebka: zahraniční cesty podle něj byly založené na pozvání či žádosti a přinášely výsledky, například získání mistrovství světa žen ve florbalu pro ČR; skutečné rozpočtové problémy českého sportu vidí spíš v údržbě sportovišť a výstavbě tělocvičen.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-21"
+    }
+  ],
+  "subjects": [
+    "stastny"
+  ],
+  "order": 41,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/boris-stastny/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

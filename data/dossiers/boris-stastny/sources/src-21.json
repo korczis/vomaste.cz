@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-21",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-21",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/boris-stastny"
+  },
+  "title": "SRC-21 — iROZHLAS.cz (Český rozhlas)",
+  "description": "Peníze na sport chybí, pozornost se přitom odvrací jinam. Šebek reprezentoval, hájí ho senátor Třetina",
+  "outlet": "iROZHLAS.cz (Český rozhlas)",
+  "sourceType": "zpravodajství",
+  "url": "https://radiozurnal.rozhlas.cz/penize-na-sport-chybi-pozornost-se-pritom-odvraci-jinam-sebek-reprezentoval-9583903",
+  "published": "2025-12-18",
+  "retrieved": "2026-08-03",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-41"
+    }
+  ],
+  "subjects": [
+    "stastny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Peníze na sport chybí, pozornost se přitom odvrací jinam. Šebek reprezentoval, hájí ho senátor Třetina**\n\nČlánek dohledán na podadréně radiozurnal.rozhlas.cz, která na rozdíl od hlavní domény www.irozhlas.cz nevrací HTTP 403 (viz [GAP-04](@/dossiers/boris-stastny/gaps/gap-04.md)). Senátor Tomáš Třetina (TOP 09), člen dozorčí rady NSA, hájí odvolaného Šebka proti Babišovu označení agentury za „cestovní kancelář“: zahraniční cesty byly podle něj založené na pozvání či žádosti a přinášely výsledky, například získání mistrovství světa žen ve florbalu pro ČR. Skutečné rozpočtové problémy českého sportu vidí spíš v údržbě sportovišť a výstavbě tělocvičen než ve výdajích na cesty vedení.\n\nZdroj otevřen a přečten 2026-08-03. Dokládá vyjádření třetí strany (dozorčí rada NSA) na obhajobu Šebka, ne Šebkovu vlastní rozšířenou reakci, která zůstává nedoložena (viz GAP-04)."
+    }
+  ],
+  "order": 21
+}

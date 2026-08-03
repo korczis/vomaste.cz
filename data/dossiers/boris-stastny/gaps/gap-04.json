@@ -12,15 +12,19 @@
   "title": "GAP-04 — Rozšířená reakce Ondřeje Šebka na okolnosti a rychlost jeho odvolání.",
   "description": "Článek iROZHLAS s touto reakcí vracel HTTP 403; dostupné zůstaly jen kratší citace přes ČTK a Deník.",
   "priority": "střední",
-  "checked": "2026-07-30",
-  "claims": [],
+  "checked": "2026-08-03",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-41"
+    }
+  ],
   "subjects": [
     "stastny"
   ],
   "content": [
     {
       "type": "markdown",
-      "value": "Rozšířená reakce Ondřeje Šebka na okolnosti a rychlost jeho odvolání.\n\n**Proč je to mezera**: Článek iROZHLAS s touto reakcí vracel HTTP 403; dostupné zůstaly jen kratší citace přes ČTK a Deník. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+      "value": "Rozšířená reakce Ondřeje Šebka na okolnosti a rychlost jeho odvolání.\n\n**Proč je to mezera**: Článek iROZHLAS s touto reakcí vracel HTTP 403; dostupné zůstaly jen kratší citace přes ČTK a Deník. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem.\n\n**Opakovaná kontrola k 2026-08-03**: přímý článek na www.irozhlas.cz s hlavičkou „Překvapil mě způsob a rychlost, reagoval Šebek na odvolání“ zůstává nedostupný (HTTP 403, potvrzeno opakovaně). Dohledán ale jiný, přímo otevřený článek na podadréně radiozurnal.rozhlas.cz (téže domény), s vyjádřením senátora Tomáše Třetiny (TOP 09, dozorčí rada NSA) na obhajobu Šebkových zahraničních cest — zapsáno jako nové [CLM-41](@/dossiers/boris-stastny/claims/clm-41.md), nový [SRC-21](@/dossiers/boris-stastny/sources/src-21.md). Jde ale o vyjádření třetí strany, ne o Šebkovu vlastní rozšířenou reakci — ta zůstává nedoložena. Mezera zůstává částečně otevřená."
     }
   ],
   "order": 4
