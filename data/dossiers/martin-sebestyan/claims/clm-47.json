@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-47",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-47",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
+  },
+  "text": "Podle veřejného spolkového rejstříku byl Šebestyán k 15. 1. 2026 stále zapsán jako předseda Iniciativy zemědělských a potravinářských podniků (IZPP), jejímž členem je i Agrofert; Městský soud v Praze potvrdil, že žádost o změnu zápisu nebyla podána. Ministerstvo uvedlo, že rezignační dopis podal s účinností od svého jmenování ministrem, ale že opravu zápisu neovlivní. Za funkci předsedy IZPP pobíral 100 000 Kč měsíčně, schválených jednomyslně velkými zemědělskými firmami v listopadu 2024.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-31"
+    }
+  ],
+  "subjects": [
+    "sebestyan"
+  ],
+  "order": 47,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam tvrzení CLM-47 — shrnutí, stav a zdroj\nvýše jsou úplné. Odpovídá na [GAP-04](@/dossiers/martin-sebestyan/gaps/gap-04.md)\nověřením ve veřejném spolkovém rejstříku (přes citaci Městského soudu\nv Praze), ne jen z paywallovaného úvodu Deníku N."
+    }
+  ]
+}
