@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
   },
   "text": "Nájemné za byt, které do roku 2024 činilo přibližně 4 500 korun měsíčně, bylo od roku 2024 navýšeno na sazbu 42 korun za metr čtvereční.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-26"

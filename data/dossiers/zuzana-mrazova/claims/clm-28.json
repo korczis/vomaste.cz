@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
   },
   "text": "Podle Romea.cz se Mrázová po vyklizení bytu přestěhovala přibližně 130 metrů dál — do jiného městského bytu na tomtéž náměstí, blíže k radnici, spolu s manželem Pavlem Mrázem.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-26"

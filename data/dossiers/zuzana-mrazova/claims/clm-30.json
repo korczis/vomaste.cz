@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
   },
   "text": "V Bílině s přibližně 14 tisíci obyvateli je podle Romea.cz zhruba pětina obyvatel v exekuci s průměrným dluhem kolem 500 tisíc korun, tržní nájem srovnatelně velkého bytu dosahuje asi 15 tisíc korun měsíčně a na obecní byt se běžně čeká nejméně dva roky.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-26"

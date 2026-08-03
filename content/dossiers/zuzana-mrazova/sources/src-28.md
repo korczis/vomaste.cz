@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-28 — Novinky.cz: Ministryně Mrázová žije v problémy zatížené Bílině v levném obecním bytě (29. 4. 2026)"
-description = "Novinky.cz nezávisle na Romea.cz (SRC-26) potvrzuje přestěhování k manželovi Pavlu Mrázovi, dřívější nájem cca 4 500 Kč a exekuční statistiku Bíliny."
+description = "Novinky.cz přejímá zjištění Seznam Zpráv o přestěhování k manželovi Pavlu Mrázovi, dřívějším nájmu cca 4 500 Kč a exekuční statistice Bíliny."
 template = "dossier-source.html"
 weight = 28
 
@@ -21,9 +21,12 @@ bytový fond Bíliny." Dřívější nájem: „Až do roku 2024 podle dostupný
 a půl tisíce korun." Exekuce: „V jejím městě byl loni v exekuci reálně
 každý pátý obyvatel a průměrný dluh činí zhruba půl milionu korun."
 
-**Nezávislost**: samostatná redakce od Romea.cz (SRC-26) — obě nezávisle
-potvrzují přestěhování, dřívější výši nájmu a exekuční statistiku. Proto
-CLM-28/29/30 nesou stav `CORROBORATED`.
+**Nezávislost — opraveno 2026-08-03**: článek výslovně cituje jako zdroj
+„zjištění serveru Seznam Zprávy" — jde o převzatou reprodukci téže
+původní investigace jako u Romea.cz (SRC-26), ne o nezávislé zjištění
+Novinky.cz. Dřívější poznámka zde tvrdící nezávislost byla nesprávná a je
+tímto opravena — CLM-28/29/30 proto nesou stav `1 ZDROJ`, ne
+`CORROBORATED` (viz [GAP-14](@/dossiers/zuzana-mrazova/gaps/gap-14.md)).
 
 **Limity**: tento zdroj nepotvrzuje konkrétní novou sazbu 42 Kč/m² od
 2024 (CLM-29) ani tržní nájem ~15 000 Kč/dvouletou čekací dobu na obecní
