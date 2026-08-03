@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-35",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-35",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "title": "SRC-35 — Deník N (rozhovor s Tomášem Zatloukalem)",
+  "description": "Ústřední školní inspektor Tomáš Zatloukal hájí sporný dotazník srovnáním s dřívějším použitím a mezinárodními výzkumy OECD PISA a IEA TIMSS.",
+  "outlet": "Deník N",
+  "sourceType": "zpravodajství / rozhovor",
+  "url": "https://denikn.cz/2073478/cilem-bylo-zjistit-kam-smerovat-pomoc-detem-ne-jim-ublizit-haji-sporne-testovani-sef-skolni-inspekce/",
+  "published": "2026-05-24",
+  "retrieved": "2026-08-03",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-55"
+    }
+  ],
+  "subjects": [
+    "plaga"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Deník N (autoři Markéta Boubínová a Štěpán Vojtěch) publikoval 24. 5. 2026 rozhovor s ústředním školním inspektorem Tomášem Zatloukalem. Ve volně přístupné části (perex a úvod) Zatloukal hájí sporný dotazník slovy: „Toto je naprosto stejné dotazníkové šetření, které už jsme použili třikrát,\" a dodává: „Navíc takovéto testování je standardní, je běžnou součástí mezinárodních výzkumů OECD PISA nebo IEA TIMSS.\"\n\n**Poznámka k dostupnosti**: zbytek rozhovoru (odpovědi na otázky, proč dotazník následuje po testu z matematiky, zda musely odpovědět všechny děti, jak inspekce s daty naloží, co se stane při zjištění sebevražedných myšlenek) zůstává za placeným přístupem.\n\nZdroj otevřen a přečten 2026-08-03 — volně dostupná část."
+    }
+  ],
+  "order": 35
+}

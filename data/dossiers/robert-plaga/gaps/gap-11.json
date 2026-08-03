@@ -9,18 +9,22 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
   },
-  "title": "GAP-11 — Rozhovor Deníku N s Tomášem Zatloukalem (24. 5. 2026) nebyl obsahově ověřen.",
-  "description": "Článek je za paywallem; veřejně dostupný je pouze titulek, jména autorů a perex.",
+  "title": "GAP-11 — Perex rozhovoru s Zatloukalem obsahuje Zatloukalovu obhajobu — zčásti zodpovězeno",
+  "description": "Volně dostupná část (perex/úvod) obsahuje přímé citace obhajující dotazník; zbytek rozhovoru zůstává za paywallem.",
   "priority": "střední",
-  "checked": "2026-07-30",
-  "claims": [],
+  "checked": "2026-08-03",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-55"
+    }
+  ],
   "subjects": [
     "plaga"
   ],
   "content": [
     {
       "type": "markdown",
-      "value": "Rozhovor Deníku N s Tomášem Zatloukalem (24. 5. 2026) nebyl obsahově ověřen.\n\n**Proč je to mezera**: Článek je za paywallem; veřejně dostupný je pouze titulek, jména autorů a perex. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+      "value": "Perex rozhovoru s Zatloukalem obsahuje Zatloukalovu obhajobu — zčásti zodpovězeno\n\n**Původní mezera** (30. 7. 2026): Rozhovor Deníku N s Tomášem Zatloukalem (24. 5. 2026) nebyl obsahově ověřen. Článek je za paywallem; veřejně dostupný byl pouze titulek, jména autorů a perex.\n\n**Odpověď (ověřeno 3. 8. 2026)**: opětovné otevření ukázalo, že volně dostupná část (perex a úvod) obsahuje víc než jen titulek — dvě přímé citace, jimiž ústřední školní inspektor Tomáš Zatloukal dotazník hájí: „Toto je naprosto stejné dotazníkové šetření, které už jsme použili třikrát,\" a že jde o „standardní\" postup, „běžnou součást mezinárodních výzkumů OECD PISA nebo IEA TIMSS.\" Zapsáno jako nový [CLM-55](@/dossiers/robert-plaga/claims/clm-55.md) (CITACE, nový [SRC-35](@/dossiers/robert-plaga/sources/src-35.md)).\n\nZbytek rozhovoru (odpovědi na konkrétní otázky — proč dotazník následuje test z matematiky, zda musely odpovědět všechny děti, jak inspekce naloží s daty, co se stane při zjištění sebevražedných myšlenek) zůstává za paywallem. Mezera je tímto zčásti zodpovězena — perex sám poskytl ověřitelný obsah — ale zůstává částečně otevřená pro placenou část rozhovoru."
     }
   ],
   "order": 11

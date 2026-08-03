@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-55",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-55",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "text": "Ústřední školní inspektor Tomáš Zatloukal v rozhovoru pro Deník N (24. 5. 2026) sporný dotazník hájil slovy: „Toto je naprosto stejné dotazníkové šetření, které už jsme použili třikrát,\" a dodal, že „takovéto testování je standardní, je běžnou součástí mezinárodních výzkumů OECD PISA nebo IEA TIMSS.\"",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-35"
+    }
+  ],
+  "subjects": [
+    "plaga"
+  ],
+  "order": 55,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/robert-plaga/_index.md#registr-tvrzeni)."
+    }
+  ]
+}
