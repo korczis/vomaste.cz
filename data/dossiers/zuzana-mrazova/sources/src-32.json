@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-32",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-32",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "title": "SRC-32 — Ekonomický deník",
+  "description": "Mrázová podle vlastního vyjádření tvrdí, že zastupitelstvo Bíliny už schválilo změnu územního plánu jejího pozemku.",
+  "outlet": "Ekonomický deník",
+  "sourceType": "zpravodajství",
+  "url": "https://ekonomickydenik.cz/ma-cernou-stavbu-a-meni-zakon/",
+  "published": "2026-04-30",
+  "retrieved": "2026-08-03",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-58"
+    }
+  ],
+  "subjects": [
+    "mrazova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Ekonomický deník dne 30. 4. 2026 cituje Mrázovou: „Zastupitelstvo Bíliny už podle ní schválilo změnu územního plánu, která pozemek překlasifikuje na zahradu.“ Ministryně dodala, že územní plán vedl pozemek jako lesní plochu chybně, přestože dlouhodobě sloužil jako zahrada.\n\n**Poznámka k ověření**: jde o vyjádření ministryně samotné, ne o nezávisle ověřené zjištění redakce. Téhož dne (30. 4. 2026) Seznam Zprávy nezávisle uvedly opačně: „Změna z lesní plochy na zahradu se dosud neodehrála, město ji neschválilo“ ([SRC-15](@/dossiers/zuzana-mrazova/sources/src-15.md)). Rozpor mezi oběma zdroji nebyl dalším přímo otevřeným zdrojem vyřešen — viz [GAP-09](@/dossiers/zuzana-mrazova/gaps/gap-09.md)."
+    }
+  ],
+  "order": 32
+}
