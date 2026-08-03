@@ -11,8 +11,8 @@
   },
   "title": "GAP-06 — Není doložena přesná právní kvalifikace přestupku ani konkrétní ustanovení zákona o střetu",
   "description": "Dohledané zpravodajství uvádí jen horní sazbu 50 000 Kč a výslednou částku, nikoli výrok rozhodnutí.",
-  "priority": "střední",
-  "checked": "2026-07-30",
+  "priority": "nízká",
+  "checked": "2026-08-03",
   "claims": [],
   "subjects": [
     "cerveny"
@@ -20,7 +20,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Není doložena přesná právní kvalifikace přestupku ani konkrétní ustanovení zákona o střetu zájmů, podle nějž byla pokuta 7 500 Kč uložena.\n\n**Proč je to mezera**: Dohledané zpravodajství uvádí jen horní sazbu 50 000 Kč a výslednou částku, nikoli výrok rozhodnutí. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+      "value": "Není doložena přesná právní kvalifikace přestupku ani konkrétní ustanovení zákona o střetu zájmů, podle nějž byla pokuta 7 500 Kč uložena.\n\n**Proč je to mezera**: Dohledané zpravodajství uvádí jen horní sazbu 50 000 Kč a výslednou částku, nikoli výrok rozhodnutí. Tato mezera **není** zjištěním žádným směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit otevřeným zdrojem.\n\n**Opakovaná kontrola k 2026-08-03**: nová rešerše cíleně na konkrétní paragraf/ustanovení nic nenašla — dohledané zpravodajství (CNN Prima News, Forum24, Ekolist.cz) i nadále uvádí jen obecný rámec (možná pokuta do 50 000 Kč za nepřesné/neúplné/nepravdivé údaje) bez citace konkrétního paragrafu ani znění výroku rozhodnutí. Mezera zůstává otevřená."
     }
   ],
   "order": 6

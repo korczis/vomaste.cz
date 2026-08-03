@@ -16,6 +16,6 @@ gap_id = "GAP-06"
 +++
 Není doložena přesná právní kvalifikace přestupku ani konkrétní ustanovení zákona o střetu zájmů, podle nějž byla pokuta 7 500 Kč uložena.
 
-**Proč je to mezera**: Dohledané zpravodajství uvádí jen horní sazbu 50 000 Kč a výslednou částku, nikoli výrok rozhodnutí. Tato mezera **není** zjištěním žádným
-směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
-otevřeným zdrojem.
+**Proč je to mezera**: Dohledané zpravodajství uvádí jen horní sazbu 50 000 Kč a výslednou částku, nikoli výrok rozhodnutí. Tato mezera **není** zjištěním žádným směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit otevřeným zdrojem.
+
+**Opakovaná kontrola k 2026-08-03**: nová rešerše cíleně na konkrétní paragraf/ustanovení nic nenašla — dohledané zpravodajství (CNN Prima News, Forum24, Ekolist.cz) i nadále uvádí jen obecný rámec (možná pokuta do 50 000 Kč za nepřesné/neúplné/nepravdivé údaje) bez citace konkrétního paragrafu ani znění výroku rozhodnutí. Mezera zůstává otevřená.
