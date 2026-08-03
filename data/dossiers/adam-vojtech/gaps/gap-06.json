@@ -10,9 +10,9 @@
     "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
   },
   "title": "GAP-06 — Není doloženo, zda ministr Vojtěch veřejně reagoval na červencové závěry odborné komise a ",
-  "description": "Žádný z otevřených článků z 10.–11. 7. 2026 (České noviny, ČT24, Olomoucký deník, Olomoucký Report, Hanácká Drbna, Zdravé zprávy) neobsahuje",
+  "description": "Žádný z otevřených článků z 10.–11. 7. 2026 (České noviny, ČT24, Olomoucký deník, Olomoucký Report, Hanácká Drbna, Zdravé zprávy) neobsahuje aktuální citaci ministra k závěrům komise; ověřeno znovu 3. 8. 2026, stále beze změny.",
   "priority": "střední",
-  "checked": "2026-07-30",
+  "checked": "2026-08-03",
   "claims": [],
   "subjects": [
     "vojtech"
@@ -20,7 +20,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Není doloženo, zda ministr Vojtěch veřejně reagoval na červencové závěry odborné komise a zda z nich vyvodil personální důsledky.\n\n**Proč je to mezera**: Žádný z otevřených článků z 10.–11. 7. 2026 (České noviny, ČT24, Olomoucký deník, Olomoucký Report, Hanácká Drbna, Zdravé zprávy) neobsahuje aktuální citaci ministra k závěrům komise; citovány jsou pouze jeho starší výroky z března 2026. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem."
+      "value": "Není doloženo, zda ministr Vojtěch veřejně reagoval na červencové závěry odborné komise a zda z nich vyvodil personální důsledky.\n\n**Proč je to mezera**: Žádný z otevřených článků z 10.–11. 7. 2026 (České noviny, ČT24, Olomoucký deník, Olomoucký Report, Hanácká Drbna, Zdravé zprávy) neobsahuje aktuální citaci ministra k závěrům komise; citovány jsou pouze jeho starší výroky z března 2026. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem.\n\n**Opakovaná kontrola k 2026-08-03**: cílené hledání nenašlo žádnou novější reakci. Nalezen a vyloučen falešný kandidát — Vojtěchův výrok „Personální odpovědnost budu řešit, až budu mít úplné informace“ (Seznam Zprávy, ověřeno přímým otevřením) pochází z 11. 2. 2026, tedy pět měsíců **před** zveřejněním komise, ne z reakce na ni. Přímo ověřena i tisková konference po jednání vlády 13. 7. 2026 (vlada.gov.cz) — žádný novinář se ministra na kauzu ani na závěry komise nezeptal. Mezera zůstává otevřená."
     }
   ],
   "order": 6
