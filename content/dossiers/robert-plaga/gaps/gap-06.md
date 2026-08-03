@@ -19,3 +19,5 @@ Nebyly dohledány žádné personální důsledky v České školní inspekci (o
 **Proč je to mezera**: Deník.cz, Učitelské noviny, ČTK i ČT24 shodně uvádějí, že personální kroky nebyly oznámeny; k 30. 7. 2026 nebyla nalezena novější zpráva. Tato mezera **není** zjištěním žádným
 směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
+
+**Opakovaná kontrola k 2026-08-03**: zkontrolována tematická stránka ČT24 k České školní inspekci — nejnovější dohledaný článek zůstává z 29. 5. 2026, žádná zpráva o personálních důsledcích. Cílené hledání nenašlo žádnou zprávu o odvolání, rezignaci nebo kázeňském opatření vůči vedení ČŠI. Mezera zůstává otevřená.
