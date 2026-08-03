@@ -12,7 +12,7 @@
   "title": "GAP-01 — Proč nebyly bezpečnostní orgány o nálezu informovány",
   "description": "Podle citovaného zdroje formální vyšetřování neproběhlo právě proto, že služby nebyly oficiálně informovány; důvod zdroj neuvádí.",
   "priority": "vysoká",
-  "checked": "2026-07-30",
+  "checked": "2026-08-03",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-02"
@@ -27,7 +27,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Podle citovaného zdroje\n([SRC-02](@/dossiers/boris-stastny/sources/src-02.md)) neproběhlo formální\nvyšetřování zpravodajskými službami ani ochrannou službou policie proto,\nže o nálezu **nebyly oficiálně informovány**. Zdroj neuvádí, kdo o\nneinformování rozhodl, podle jakého postupu, ani zda nějaký předpis\noznámení vyžadoval.\n\nOtevřenost této mezery není zjištěním, že postup byl vadný — ani že byl\nsprávný. Je to konstatování, že doložený zdroj tuto část nevysvětluje.\n\n**Podmínka uzavření**: doložený popis platného postupu při nálezu\nneznámého elektronického zařízení v prostorách Úřadu vlády a doložené\nvyjádření, jak byl v tomto případě uplatněn, ověřené přímým otevřením\nzdroje."
+      "value": "Podle citovaného zdroje\n([SRC-02](@/dossiers/boris-stastny/sources/src-02.md)) neproběhlo formální\nvyšetřování zpravodajskými službami ani ochrannou službou policie proto,\nže o nálezu **nebyly oficiálně informovány**. Zdroj neuvádí, kdo o\nneinformování rozhodl, podle jakého postupu, ani zda nějaký předpis\noznámení vyžadoval.\n\nOtevřenost této mezery není zjištěním, že postup byl vadný — ani že byl\nsprávný. Je to konstatování, že doložený zdroj tuto část nevysvětluje.\n\n**Podmínka uzavření**: doložený popis platného postupu při nálezu\nneznámého elektronického zařízení v prostorách Úřadu vlády a doložené\nvyjádření, jak byl v tomto případě uplatněn, ověřené přímým otevřením\nzdroje.\n\n**Opakovaná kontrola k 2026-08-03**: přímo znovu otevřeny SRC-02 (CNN Prima News), SRC-06 (Aktuálně.cz) a SRC-07 (Blesk.cz, vyjádření expertů). Aktuálně.cz doplňuje detail: podle vedoucí Úřadu vlády Tündy Barthy zařízení posoudili společně IT pracovníci úřadu a bezpečnostní odbor a vyhodnotili je jako neproblematické — to už dokládá [CLM-04](@/dossiers/boris-stastny/claims/clm-04.md). Blesk.cz cituje experta Stanislava Kazbundu, že šlo o potenciálně závažný incident, který měl být nahlášen bezpečnostním složkám — už doloženo [CLM-19](@/dossiers/boris-stastny/claims/clm-19.md). Žádný z přímo otevřených zdrojů ale nevysvětluje, kdo o nenahlášení rozhodl ani podle jakého předpisu. Mezera zůstává otevřená."
     }
   ],
   "order": 1

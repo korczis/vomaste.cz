@@ -28,3 +28,5 @@ správný. Je to konstatování, že doložený zdroj tuto část nevysvětluje.
 neznámého elektronického zařízení v prostorách Úřadu vlády a doložené
 vyjádření, jak byl v tomto případě uplatněn, ověřené přímým otevřením
 zdroje.
+
+**Opakovaná kontrola k 2026-08-03**: přímo znovu otevřeny SRC-02 (CNN Prima News), SRC-06 (Aktuálně.cz) a SRC-07 (Blesk.cz, vyjádření expertů). Aktuálně.cz doplňuje detail: podle vedoucí Úřadu vlády Tündy Barthy zařízení posoudili společně IT pracovníci úřadu a bezpečnostní odbor a vyhodnotili je jako neproblematické — to už dokládá [CLM-04](@/dossiers/boris-stastny/claims/clm-04.md). Blesk.cz cituje experta Stanislava Kazbundu, že šlo o potenciálně závažný incident, který měl být nahlášen bezpečnostním složkám — už doloženo [CLM-19](@/dossiers/boris-stastny/claims/clm-19.md). Žádný z přímo otevřených zdrojů ale nevysvětluje, kdo o nenahlášení rozhodl ani podle jakého předpisu. Mezera zůstává otevřená.

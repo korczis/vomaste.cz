@@ -26,3 +26,5 @@ je to v souladu s tím, co orgán zjistil.
 
 **Podmínka uzavření**: doložený následek (změna postupu, personální krok),
 nebo doložené vyjádření, že žádný nebyl přijat.
+
+**Opakovaná kontrola k 2026-08-03**: přímo znovu otevřen SRC-09 (FORUM 24, výzvy k rezignaci). Zdroj potvrzuje jen veřejnou kritiku a výzvy k rezignaci ([CLM-21](@/dossiers/boris-stastny/claims/clm-21.md)), žádné formální vyšetřování, změnu postupu ani personální krok nezaznamenává. Šťastný na kauzu reagoval ironickou poznámkou, nikoli rezignací ([CLM-13](@/dossiers/boris-stastny/claims/clm-13.md)). Mezera zůstává otevřená — žádný následek k datu kontroly doložen.
