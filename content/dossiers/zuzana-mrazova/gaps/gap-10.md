@@ -19,3 +19,5 @@ Není doloženo, zda přestupkové řízení pokrylo i chybějící DAR (polovin
 **Proč je to mezera**: Podnět ministerstva spravedlnosti podle ČT24 zmiňoval půjčku i dar, ale zpravodajství o uložené pokutě z 25. 7. 2026 popisuje výhradně nezanesenou půjčku. Tato mezera **není** zjištěním žádným
 směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
+
+**Opakovaná kontrola k 2026-08-03**: opětovně otevřen SRC-08 (FORUM 24) a další zdroje o pokutě — všechny nadále popisují výhradně nezanesenou půjčku ([CLM-03](@/dossiers/zuzana-mrazova/claims/clm-03.md)) jako důvod pokuty; žádný zdroj nezmiňuje dar (polovinu pozemku z roku 2021) jako součást přestupkového řízení. Cílené hledání nenašlo žádné potvrzení ani vyvrácení. Mezera zůstává otevřená.
