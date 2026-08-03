@@ -16,6 +16,6 @@ gap_id = "GAP-03"
 +++
 Kritika novely stavebního zákona je doložena pouze z jednoho vydavatele (Česká justice, více článků).
 
-**Proč je to mezera**: Druhý nezávislý vydavatel pokrývající tytéž výroky nebyl v rámci rešerše načten, proto žádné tvrzení k tomuto tématu nemá status corroborated. Tato mezera **není** zjištěním žádným
-směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
-otevřeným zdrojem.
+**Proč je to mezera**: Druhý nezávislý vydavatel pokrývající tytéž výroky nebyl v rámci rešerše načten, proto žádné tvrzení k tomuto tématu nemá status corroborated. Tato mezera **není** zjištěním žádným směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit otevřeným zdrojem.
+
+**Ověřeno 3. 8. 2026**: cíleně hledán druhý nezávislý vydavatel pro přesně tytéž citace (Kupka, Vlček, Faltus) — nalezené alternativy (ČeskéNoviny.cz, TZB-info) byly ověřeny a vyloučeny jako ČTK. Nalezen ale jiný, skutečně nezávislý vydavatel (Pražský deník, jmenovaná reportérka Denisa Novotná, SRC-20, už dříve citovaný pro CLM-35), který téma kritiky/výhrad k novele dokládá z jiného úhlu (Babišova výtka ke komunikaci zákona, Kunovského výhrada developerů) — viz [CLM-48](@/dossiers/karel-havlicek/claims/clm-48.md). Přesně tytéž konkrétní citace poslanců zůstávají jednozdrojové (Česká justice), ale téma jako celek už není pokryto jen jedním vydavatelem. Mezera je tímto v podstatné části vyřešena.

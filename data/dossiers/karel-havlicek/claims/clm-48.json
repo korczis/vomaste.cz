@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-48",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-48",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "text": "Premiér Babiš k novele stavebního zákona uvedl: „Očekávám, že Karel Havlíček... veřejnosti vysvětlí, jaké jsou výhody. Protože z mého pohledu komunikace stavebního zákona doposud nebyla úplně ideální.“ Developer Dušan Kunovský (Central Group) zpochybnil limit 10 000 m² užitné plochy s tím, že jde jen o „sto až sto padesát bytů, je to podlimitní projekt“.",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-20"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "order": 48,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tato stránka je kanonický záznam tvrzení CLM-48 — shrnutí, stav a\nzdroj výše jsou úplné. Odpovídá na [GAP-03](@/dossiers/karel-havlicek/gaps/gap-03.md):\nrelink na už citovaný nezávislý zdroj (SRC-20, Pražský deník,\njmenovaná reportérka, ne Česká justice ani ČTK), dokládající kritiku\nz jiného úhlu než dosavadní zdroje."
+    }
+  ]
+}
