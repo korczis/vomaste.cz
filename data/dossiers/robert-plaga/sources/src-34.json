@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-34",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-34",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "title": "SRC-34 — Vláda České republiky (vlada.gov.cz)",
+  "description": "Oficiální přepis tiskové konference po jednání vlády 9. 3. 2026 potvrzuje doslovné znění Plagova výroku „tupý zákaz“.",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "primární / oficiální přepis",
+  "url": "https://vlada.gov.cz/cz/media-centrum/tiskove-konference/tiskova-konference-po-jednani-vlady--9--brezna-2026-225675/",
+  "published": "2026-03-09",
+  "retrieved": "2026-08-03",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-11"
+    }
+  ],
+  "subjects": [
+    "plaga"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální přepis tiskové konference po jednání vlády ze dne 9. 3. 2026 obsahuje Plagův výrok v plném znění: „Tento návrh opravdu měl za cíl pouze opanovat mediální prostor, protože je zpracován nekvalitně a je to tupý zákaz, který navíc obsahuje řadu legislativních chyb...“ — doslova potvrzuje formulaci „tupý zákaz“ (ne „hloupý zákaz“) a doplňuje kontext, že podle Plagy návrh cílil především na mediální pozornost.\n\n**Nezávislost**: primární oficiální zdroj vlády, nezávislý na redakčním zpracování zdravezpravy.cz ([SRC-06](@/dossiers/robert-plaga/sources/src-06.md)) — obě dokládají tutéž veřejnou skutečnost (přesné znění výroku). Proto CLM-11 nese stav `CORROBORATED`.\n\nZdroj otevřen a přečten 2026-08-03."
+    }
+  ],
+  "order": 34
+}

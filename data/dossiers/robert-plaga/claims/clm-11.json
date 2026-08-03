@@ -15,6 +15,9 @@
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-34"
     }
   ],
   "subjects": [
