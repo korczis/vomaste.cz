@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/updates/2026-08-04",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-08-04",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "date": "2026-08-04",
+  "summary": "Korroborační kolo k 2026-08-04 nad dvanácti tvrzeními se stavem 1 ZDROJ (CLM-02, CLM-03, CLM-08, CLM-13, CLM-14, CLM-24, CLM-25, CLM-26, CLM-27, CLM-28, CLM-29, CLM-104). Povýšena tři tvrzení: CLM-02 druhým zdrojem SRC-75 (tisková zpráva Vrchního soudu v Praze k rozhodnutí sp. zn. 3 To 34/2024, primární dokument soudu), CLM-03 a CLM-08 druhým zdrojem SRC-76 (vlastní online report Seznam Zpráv z jednání 4. 5. 2026). Devět tvrzení zůstává na 1 ZDROJ, protože druhý NEZÁVISLÝ zdroj se nepodařilo doložit: CLM-13, CLM-14, CLM-24, CLM-25, CLM-26, CLM-27, CLM-28, CLM-29 a CLM-104 stojí na jedné zdrojové rodině (agenturní zpráva ČTK, respektive její původní zdroj), plnotexty Deníku N a Hospodářských novin jsou za paywallem a weby Českého rozhlasu (iROZHLAS, radio.cz) i Nice-Matin odmítají automatizované čtení. Zaznamenaný rozpor: u CLM-27–CLM-29 uvádí agenturní zpracování měsíc podání trestního oznámení Pirátů odlišně od původní zprávy Seznam Zpráv (květen vs. únor 2026); text tvrzení zůstal beze změny. Metodická poznámka pro další kolo: SRC-01, SRC-03 a SRC-05 nesou podpis „ČTK a redakce“, ačkoli pole sourceFamily mají prázdné — nezávislost jejich tvrzení je proto užší, než by naznačoval počet záznamů; oprava rodin se nechává jako samostatná redakční revize, protože zasahuje i do již korroborovaných tvrzení.",
+  "updatedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-08"
+    }
+  ],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-75"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-76"
+    }
+  ]
+}

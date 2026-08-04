@@ -10,11 +10,14 @@
     "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
   },
   "text": "Dne 4. května 2026 projednával Městský soud v Praze kauzu Čapí hnízdo potřetí, tentokrát ve věci Jany Nagyové; státní zástupce Jaroslav Šaroch pro ni navrhl tříletý podmíněný trest s pětiletou zkušební dobou a peněžitý trest 500 000 Kč — jde o návrh státního zástupce, ne o uložený trest",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-76"
     }
   ],
   "subjects": [],
