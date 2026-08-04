@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-76",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-76",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-76 — Seznam Zprávy: Online: Soud vynesl trest za Čapí hnízdo (4. 5. 2026)",
+  "description": "Vlastní online report Seznam Zpráv (Radek Nohl) z jednání Městského soudu v Praze 4. 5. 2026 — návrh trestu státního zástupce Šarocha pro Janu Nagyovou, závěrečné řeči a postoj obou obžalovaných k vině.",
+  "outlet": "Seznam Zprávy",
+  "sourceType": "zpravodajství / reportáž",
+  "url": "https://www.seznamzpravy.cz/clanek/domaci-kauzy-online-zacina-soud-kde-bude-chybet-babis-305254",
+  "published": "2026-05-04",
+  "retrieved": "2026-08-04",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-08"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Průběžný online report Seznam Zpráv z jednacího dne 4. 5. 2026, autor\nRadek Nohl. Volně přístupný, bez paywallu.\n\nCo report dokládá:\n\n- Státní zástupce **Jaroslav Šaroch** navrhl pro Janu Nagyovou „tříletý\n  trest podmíněně odložený na zkušební dobu pěti let“ a zaplacení\n  „peněžitého trestu ve výši 500 tisíc korun“; Městský soud v Praze\n  projednával věc **potřetí**.\n- Postoj obžalovaných: Andrej Babiš — „Já i paní Nagyová jsme nevinní.“\n  Jana Nagyová v závěrečné řeči vinu odmítla („to rozhodnutí odvolacího\n  soudu je plné nesmyslů a lží“).\n\n**Poznámka k přesnosti a limitům**: report je vlastním zpravodajstvím\nSeznam Zpráv z jednací síně, tedy **jiná redakční rodina** než agenturní\n(ČTK) zpracování téhož dne, které přebrala většina českých médií\n(a od nějž se odvíjí i SRC-03). Doložen je **návrh** státního zástupce,\nne uložený trest — ten soud vyhlásil týž den a je **nepravomocný**\n(obhajoba podala odvolání). Zaznamenává se, že obžalovaní vinu odmítají,\nnikoli že jejich stanovisko je správné. Report **neuvádí**, zda byla\nJana Nagyová osobně přítomna vyhlášení rozsudku — tuto okolnost tedy\nnedokládá. Otevřeno a přečteno 2026-08-04."
+    }
+  ],
+  "order": 76
+}

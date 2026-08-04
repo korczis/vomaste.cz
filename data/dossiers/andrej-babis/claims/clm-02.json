@@ -10,11 +10,14 @@
     "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
   },
   "text": "Odvolací soud dospěl k závěru, že zjištěné jednání naplňuje znaky dvou trestných činů, ale podle citovaného zdroje výslovně uvedl, že sám vinu vyslovit nemůže a věc pouze vrací soudu prvního stupně se závazným právním názorem. Zrušené zproštění není odsouzení",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-75"
     }
   ],
   "subjects": [],

@@ -265,7 +265,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: adam-vojtech, andrej-babis, jaromir-zuna, jaroslav-faltynek, jeronym-tejc, karel-havlicek, macinka-turek, robert-plaga, tomio-okamura, tunde-bartha, zuzana-mrazova
 - Claims: CLM-01, CLM-02, CLM-03, CLM-17, CLM-19, CLM-26, CLM-29, CLM-35, CLM-38, CLM-41, CLM-85
-- Sources: SRC-01, SRC-02, SRC-03, SRC-04, SRC-06, SRC-11, SRC-13, SRC-14, SRC-17, SRC-18, SRC-19, SRC-20, SRC-25, SRC-27, SRC-28, SRC-61 (19 independent source families)
+- Sources: SRC-01, SRC-02, SRC-03, SRC-04, SRC-06, SRC-11, SRC-13, SRC-14, SRC-17, SRC-18, SRC-19, SRC-20, SRC-25, SRC-27, SRC-28, SRC-61 (20 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -649,7 +649,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: alena-schillerova, lubomir-metnar
 - Claims: CLM-02, CLM-08, CLM-26
-- Sources: SRC-01, SRC-02, SRC-03, SRC-04, SRC-05, SRC-16 (6 independent source families)
+- Sources: SRC-01, SRC-02, SRC-03, SRC-04, SRC-05, SRC-16 (7 independent source families)
 - Relations: 
   - edge-metnar-cnb (metnar -> cnb, "uvolněná policejní kapacita po zrušení ochrany NKÚ má nově chránit ČNB", dossier: lubomir-metnar)
 - Missing: explicit owner authorization to promote this to its own dossier
@@ -1962,7 +1962,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: zuzana-mrazova
 - Claims: CLM-09, CLM-10, CLM-11, CLM-27, CLM-28, CLM-29, CLM-30
-- Sources: SRC-05, SRC-06, SRC-09, SRC-11, SRC-12, SRC-22, SRC-23, SRC-26, SRC-28 (9 independent source families)
+- Sources: SRC-05, SRC-06, SRC-09, SRC-11, SRC-12, SRC-22, SRC-23, SRC-26, SRC-28 (8 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -2579,7 +2579,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: zuzana-mrazova
 - Claims: CLM-09, CLM-27, CLM-30, CLM-33, CLM-36, CLM-40, CLM-42
-- Sources: SRC-05, SRC-06, SRC-11, SRC-15, SRC-16, SRC-21, SRC-22, SRC-25, SRC-26, SRC-28, SRC-29 (11 independent source families)
+- Sources: SRC-05, SRC-06, SRC-11, SRC-15, SRC-16, SRC-21, SRC-22, SRC-25, SRC-26, SRC-28, SRC-29 (10 independent source families)
 - Relations: 
   - edge-mrazova-mestobilina (mrazova -> mesto-bilina, "před nástupem do vlády místostarostka a starostka Bíliny", dossier: zuzana-mrazova)
 - Missing: explicit owner authorization to promote this to its own dossier
@@ -2765,7 +2765,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: lubomir-metnar
 - Claims: CLM-03, CLM-18, CLM-19, CLM-20, CLM-21, CLM-22, CLM-23
-- Sources: SRC-01, SRC-02, SRC-03, SRC-05 (4 independent source families)
+- Sources: SRC-01, SRC-02, SRC-03, SRC-05 (2 independent source families)
 - Relations: 
   - edge-babis-miloslavkala (babis -> miloslav-kala, "dlouhodobý spor o financování a stavbu sídla NKÚ (od 2016)", dossier: lubomir-metnar)
   - edge-metnar-miloslavkala (metnar -> miloslav-kala, "spor o zrušení policejní ochrany NKÚ — vzájemná veřejná stanoviska", dossier: lubomir-metnar)
@@ -2789,7 +2789,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: adam-vojtech, alena-schillerova, andrej-babis, lubomir-metnar, macinka-turek, tunde-bartha
 - Claims: CLM-04, CLM-10, CLM-23, CLM-25, CLM-27, CLM-28, CLM-29, CLM-44, CLM-46, CLM-72
-- Sources: SRC-02, SRC-06, SRC-07, SRC-13, SRC-14, SRC-15, SRC-18, SRC-24, SRC-50, SRC-55 (14 independent source families)
+- Sources: SRC-02, SRC-06, SRC-07, SRC-13, SRC-14, SRC-15, SRC-18, SRC-24, SRC-50, SRC-55 (15 independent source families)
 - Relations: 
   - edge-mf-nrr (ministerstvo-financi -> nrr, "Ministerstvo financí reagovalo na stanovisko NRR rozporováním výpočtu obranných výdajů a role rady", dossier: alena-schillerova)
   - edge-mf-vybor (ministerstvo-financi -> vybor-pro-rozpoctove-prognozy, "Ministerstvo financí přisoudilo roli arbitra makroekonomických prognóz výhradně Výboru pro rozpočtové prognózy", dossier: alena-schillerova)
@@ -2844,7 +2844,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: igor-cerveny, jeronym-tejc, zuzana-mrazova
 - Claims: CLM-02, CLM-05, CLM-18, CLM-20, CLM-21, CLM-23, CLM-24, CLM-27, CLM-34
-- Sources: SRC-02, SRC-03, SRC-07, SRC-12, SRC-13, SRC-14, SRC-15, SRC-17, SRC-20, SRC-26, SRC-27 (11 independent source families)
+- Sources: SRC-02, SRC-03, SRC-07, SRC-12, SRC-13, SRC-14, SRC-15, SRC-17, SRC-20, SRC-26, SRC-27 (12 independent source families)
 - Relations: 
   - edge-cerveny-ministerstvo-spravedlnosti (cerveny -> ministerstvo-spravedlnosti, "obsahová kontrola majetkového přiznání a postoupení věci přestupkovému orgánu v Nymburce", dossier: igor-cerveny)
   - edge-mrazova-ministerstvospravedlnosti (mrazova -> ministerstvo-spravedlnosti, "resort spravedlnosti podal přestupkovému úřadu podnět k prověření majetkového přiznání", dossier: zuzana-mrazova)
@@ -2856,7 +2856,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: lubomir-metnar, tomio-okamura
 - Claims: CLM-01, CLM-04, CLM-06, CLM-15, CLM-16, CLM-17
-- Sources: SRC-01, SRC-02, SRC-03, SRC-04, SRC-05 (5 independent source families)
+- Sources: SRC-01, SRC-02, SRC-03, SRC-04, SRC-05 (6 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -3149,7 +3149,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: lubomir-metnar
 - Claims: CLM-01, CLM-04, CLM-05, CLM-06, CLM-08, CLM-09, CLM-10, CLM-11, CLM-12
-- Sources: SRC-01, SRC-02, SRC-03, SRC-04, SRC-05 (5 independent source families)
+- Sources: SRC-01, SRC-02, SRC-03, SRC-04, SRC-05 (2 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -3253,7 +3253,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: alena-schillerova, lubomir-metnar
 - Claims: CLM-05, CLM-08, CLM-09, CLM-13, CLM-15, CLM-17, CLM-18, CLM-23, CLM-25, CLM-30
-- Sources: SRC-03, SRC-04, SRC-05, SRC-06, SRC-07, SRC-08, SRC-09, SRC-19, SRC-20, SRC-21, SRC-22 (12 independent source families)
+- Sources: SRC-03, SRC-04, SRC-05, SRC-06, SRC-07, SRC-08, SRC-09, SRC-19, SRC-20, SRC-21, SRC-22 (13 independent source families)
 - Relations: 
   - edge-cvf-novela (centrum-verejnych-financi -> novela-rozpoctovych-pravidel-2026, "Centrum veřejných financí UK označilo konkrétní pozměňovací návrhy novely za problematické", dossier: alena-schillerova)
   - edge-schillerova-novela (schillerova -> novela-rozpoctovych-pravidel-2026, "Schillerová prosadila novelu rozpočtových zákonů, kterou obhajovala jako řešení rozpočtové pasti", dossier: alena-schillerova)
@@ -3814,7 +3814,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: alena-schillerova, andrej-babis, karel-havlicek, martin-sebestyan, tomio-okamura, zuzana-mrazova
 - Claims: CLM-05, CLM-07, CLM-11, CLM-19, CLM-23, CLM-26, CLM-29, CLM-31, CLM-32, CLM-34, CLM-39, CLM-49, CLM-51, CLM-56
-- Sources: SRC-02, SRC-03, SRC-07, SRC-08, SRC-09, SRC-18, SRC-19, SRC-26, SRC-27 (10 independent source families)
+- Sources: SRC-02, SRC-03, SRC-07, SRC-08, SRC-09, SRC-18, SRC-19, SRC-26, SRC-27 (11 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -4164,7 +4164,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: adam-vojtech, alena-schillerova, jaromir-zuna, karel-havlicek, lubomir-metnar
 - Claims: CLM-07, CLM-13, CLM-14, CLM-15, CLM-16, CLM-28, CLM-30, CLM-36, CLM-37, CLM-38
-- Sources: SRC-02, SRC-05, SRC-06, SRC-17, SRC-21, SRC-22, SRC-23, SRC-25, SRC-27, SRC-28 (10 independent source families)
+- Sources: SRC-02, SRC-05, SRC-06, SRC-17, SRC-21, SRC-22, SRC-23, SRC-25, SRC-27, SRC-28 (11 independent source families)
 - Relations: 
   - edge-schillerova-senat (schillerova -> senat-pcr, "Schillerová odmítla senátní úpravy novely jako zdroj právní nejistoty", dossier: alena-schillerova)
   - edge-senat-novela (senat-pcr -> novela-rozpoctovych-pravidel-2026, "Senát vrátil novelu Sněmovně s pozměňovacími návrhy", dossier: alena-schillerova)
