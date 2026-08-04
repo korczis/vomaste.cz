@@ -12,7 +12,7 @@
   "title": "GAP-02 — Zda byla plnění řádně vykázána",
   "description": "Není doloženo, zda a jak byla jednotlivá plnění vykázána ve výroční finanční zprávě strany, ani že by se jimi zabýval dozorový úřad.",
   "priority": "vysoká",
-  "checked": "2026-08-03",
+  "checked": "2026-08-04",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-01"

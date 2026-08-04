@@ -12,7 +12,7 @@
   "title": "GAP-06 — Otázka pravdivosti obvinění zůstává trvale nerozhodnutá",
   "description": "Stížnost proti odložení trestního oznámení (znásilnění, domácí násilí) byla 27. 7. 2026 zamítnuta, odložení je pravomocné — ale právě proto věcnou pravdivost obvinění už žádný orgán nikdy neposoudí.",
   "priority": "vysoká",
-  "checked": "2026-08-03",
+  "checked": "2026-08-04",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-25"

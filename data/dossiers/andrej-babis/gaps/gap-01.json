@@ -12,7 +12,7 @@
   "title": "GAP-01 — Pravomocný výsledek kauzy Čapí hnízdo",
   "description": "Nepravomocný rozsudek nad spoluobžalovanou už doložený je; pravomocné rozhodnutí — a jakýkoli výsledek ve věci Andreje Babiše — chybí.",
   "priority": "vysoká",
-  "checked": "2026-08-03",
+  "checked": "2026-08-04",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-02"

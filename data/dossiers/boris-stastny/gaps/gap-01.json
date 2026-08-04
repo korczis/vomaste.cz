@@ -12,7 +12,7 @@
   "title": "GAP-01 — Proč nebyly bezpečnostní orgány o nálezu informovány",
   "description": "Podle citovaného zdroje formální vyšetřování neproběhlo právě proto, že služby nebyly oficiálně informovány; důvod zdroj neuvádí.",
   "priority": "vysoká",
-  "checked": "2026-08-03",
+  "checked": "2026-08-04",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-02"

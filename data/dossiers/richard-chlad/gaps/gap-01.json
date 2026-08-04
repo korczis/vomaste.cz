@@ -12,7 +12,7 @@
   "title": "GAP-01 — Uváděná čísla nejsou přímo porovnatelná",
   "description": "Evidovaná částka, Chladovy vlastní údaje a číslo uvedené předsedou strany se týkají různých období a různého vymezení „podpory“; co přesně které číslo pokrývá, doloženo není.",
   "priority": "vysoká",
-  "checked": "2026-08-03",
+  "checked": "2026-08-04",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-01"

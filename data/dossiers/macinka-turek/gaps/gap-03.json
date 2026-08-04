@@ -12,7 +12,7 @@
   "title": "GAP-03 — Nezávislé ověření pravosti smazaných příspěvků",
   "description": "Pravost a autorství screenshotů, které v říjnu 2025 zveřejnil Deník N, nebyly k datu poslední kontroly nezávisle prokázány ani vyvráceny.",
   "priority": "vysoká",
-  "checked": "2026-08-03",
+  "checked": "2026-08-04",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-07"

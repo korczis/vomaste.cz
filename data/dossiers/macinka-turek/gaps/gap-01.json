@@ -12,7 +12,7 @@
   "title": "GAP-01 — Výsledek policejního vyšetřování dopravní nehody",
   "description": "Zůstává otevřené, zda jde o přestupek nebo trestný čin a kdo nese vinu — vyšetřování k datu poslední kontroly neskončilo.",
   "priority": "vysoká",
-  "checked": "2026-08-03",
+  "checked": "2026-08-04",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-10"

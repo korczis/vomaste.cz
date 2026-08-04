@@ -12,7 +12,7 @@
   "title": "GAP-01 — Osud výpovědi z nájmu",
   "description": "Citované zpravodajství končí rozhodnutím rady z 24. 6. 2026; zda výpověď nabyla účinnosti, zda ji nájemci napadli a jak dopadla, doloženo není.",
   "priority": "vysoká",
-  "checked": "2026-08-03",
+  "checked": "2026-08-04",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/tunde-bartha/claims/CLM-01"
