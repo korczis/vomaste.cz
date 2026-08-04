@@ -30,3 +30,5 @@ nerozhoduje.
 otevřeným zdrojem. Do té doby zůstává rozpor zaznamenaný, ne zamlčený.
 
 **Opakovaná kontrola k 2026-08-03**: nalezena jen pokračující vzájemná kritika ze stejného období (leden 2026, Echo24 — premiér Babiš zpochybnil nezávislost předsedy rady, ten kontroval poznámkou o politické selektivitě), žádné autoritativní rozhodnutí. **Metodická poznámka proti záměně**: nalezen i novější (11. 6. 2026, ČT24) odhad rady o možném schodku přes 350 miliard — ten se ale týká **rozpočtu na rok 2027**, jiného čísla a jiného roku, ne řešení tohoto sporu o rozpočet 2026. Vědomě nepoužito jako odpověď. Mezera zůstává otevřená.
+
+**Opakovaná kontrola k 2026-08-04**: hledání zopakováno, žádné autoritativní rozhodnutí ani dohoda stran nedohledány. Mezera zůstává otevřená.

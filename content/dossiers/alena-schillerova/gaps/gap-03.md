@@ -22,4 +22,6 @@ otevřeným zdrojem.
 
 **Opakovaná kontrola k 2026-08-03**: prezident Petr Pavel novelu 22. 7. 2026 vetoval ([CLM-17](@/dossiers/alena-schillerova/claims/clm-17.md)); koalice ohlásila záměr veto přehlasovat, hlasování bylo k datu kontroly plánováno na týden od 24. 8. 2026 (ČT24, 22. 7. 2026), ale k 3. 8. 2026 ještě neproběhlo. Mezera zůstává otevřená.
 
+**Opakovaná kontrola k 2026-08-04**: hlasování (plánováno na týden od 24. 8. 2026) k datu kontroly stále neproběhlo. Mezera zůstává otevřená.
+
 **Podmínka uzavření**: přímé otevření zdroje k výsledku hlasování o přehlasování veta (Sněmovna ho buď potvrdí, nebo veto zůstane v platnosti).

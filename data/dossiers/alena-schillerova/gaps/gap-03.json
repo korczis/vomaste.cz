@@ -12,7 +12,7 @@
   "title": "GAP-03 — Není známo, jak dopadlo hlasování Sněmovny o prezidentském vetu.",
   "description": "Hlasování je naplánováno na týden od 24. 8. 2026; ověřeno znovu 3. 8. 2026, stále neproběhlo.",
   "priority": "vysoká",
-  "checked": "2026-08-03",
+  "checked": "2026-08-04",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-17"
@@ -24,7 +24,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Není známo, jak dopadlo hlasování Sněmovny o prezidentském vetu.\n\n**Proč je to mezera**: Hlasování je naplánováno až na 25. srpna 2026, tedy po datu rešerše (30. července 2026). Zdroje uvádějí pouze očekávání koalice, že veto přehlasuje. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem.\n\n**Opakovaná kontrola k 2026-08-03**: prezident Petr Pavel novelu 22. 7. 2026 vetoval ([CLM-17](@/dossiers/alena-schillerova/claims/clm-17.md)); koalice ohlásila záměr veto přehlasovat, hlasování bylo k datu kontroly plánováno na týden od 24. 8. 2026 (ČT24, 22. 7. 2026), ale k 3. 8. 2026 ještě neproběhlo. Mezera zůstává otevřená.\n\n**Podmínka uzavření**: přímé otevření zdroje k výsledku hlasování o přehlasování veta (Sněmovna ho buď potvrdí, nebo veto zůstane v platnosti)."
+      "value": "Není známo, jak dopadlo hlasování Sněmovny o prezidentském vetu.\n\n**Proč je to mezera**: Hlasování je naplánováno až na 25. srpna 2026, tedy po datu rešerše (30. července 2026). Zdroje uvádějí pouze očekávání koalice, že veto přehlasuje. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem.\n\n**Opakovaná kontrola k 2026-08-03**: prezident Petr Pavel novelu 22. 7. 2026 vetoval ([CLM-17](@/dossiers/alena-schillerova/claims/clm-17.md)); koalice ohlásila záměr veto přehlasovat, hlasování bylo k datu kontroly plánováno na týden od 24. 8. 2026 (ČT24, 22. 7. 2026), ale k 3. 8. 2026 ještě neproběhlo. Mezera zůstává otevřená.\n\n**Opakovaná kontrola k 2026-08-04**: hlasování (plánováno na týden od 24. 8. 2026) k datu kontroly stále neproběhlo. Mezera zůstává otevřená.\n\n**Podmínka uzavření**: přímé otevření zdroje k výsledku hlasování o přehlasování veta (Sněmovna ho buď potvrdí, nebo veto zůstane v platnosti)."
     }
   ],
   "order": 3
