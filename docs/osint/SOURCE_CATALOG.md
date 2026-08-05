@@ -47,6 +47,7 @@ Odpovídá na otázku „kam se podívat a čemu z toho věřit". Publikovaná p
 - **Hlídač státu — Webové API vyžaduje token**: Neautentizované volání vrací 404, ne 401 — vypadá to jako neexistující endpoint, ne jako chybějící oprávnění.
 - **Hlídač státu — Shoda jména není shoda osoby**: Agregované profily spojují záznamy podle jména. U běžných jmen slučují víc osob dohromady; použij je jako stopu, ne jako doklad.
 - **Podnikatel.cz — rejstříkové profily — Profil může mísit jmenovce**: Jediná stránka může nést role několika různých lidí téhož jména. Před převzetím role ji ověř v ARES podle IČO subjektu.
+- **Podnikatel.cz — rejstříkové profily — Sdílí rodinu s ARES, takže ho nepotvrzuje**: V datasetu je tento agregátor i ARES veden pod touž rodinou `cz-verejny-rejstrik`, protože obojí čerpá z týchž veřejných rejstříků. Citace obou tedy NEJSOU dvě nezávislá doložení a tvrzení opřené o ně zůstává 1 ZDROJ, i když jde o dva různé vydavatele a dvě různé domény.
 - **Informační systém datových schránek (ISDS) — Zpětné vyhledání neexistuje**: Veřejná služba, která by k IČO vrátila ID schránky, není k dispozici. Údaj o schránce se získává jako součást rejstříkového výpisu (ARES ROS), ne samostatným dotazem.
 - **Informační systém datových schránek (ISDS) — Osmimístné ID schránky se plete s IČO**: Obojí je osmiznakový řetězec. Kdo rozlišuje regulárním výrazem podle délky, pošle IČO do větve pro ID schránky a zpět dostane nesmysl.
 - **ČTK — Česká tisková kancelář — Přebírání vypadá jako shoda**: Právě kvůli tomuhle existuje pole `sourceFamily`. Bez něj se pět vydání téže zprávy počítá jako pět nezávislých redakcí a tvrzení dostane CORROBORATED, které si nezaslouží. Revize T-056 takto musela srazit 55 tvrzení zpět na 1 ZDROJ.
@@ -64,7 +65,7 @@ Odpovídá na otázku „kam se podívat a čemu z toho věřit". Publikovaná p
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 628 záznamů v 97 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 635 záznamů v 101 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
@@ -74,8 +75,8 @@ Dopočítáno z `data/dossiers/**/sources/**`, 628 záznamů v 97 rodinách/outl
 | FORUM 24 | 19 | 9 | — |
 | Poslanecká sněmovna Parlamentu ČR | 18 | 14 | [ano](/zdroje/psp-cz/) |
 | denik-n | 16 | 9 | [ano](/zdroje/denik-n/) |
+| ČT24 (Česká televize) | 15 | 7 | [ano](/zdroje/ceska-televize/) |
 | Echo24 | 13 | 9 | — |
-| ČT24 (Česká televize) | 12 | 7 | [ano](/zdroje/ceska-televize/) |
 | denik-cz | 11 | 6 | — |
 | Aktuálně.cz | 11 | 6 | — |
 | Česká justice | 11 | 6 | — |
@@ -100,8 +101,8 @@ Dopočítáno z `data/dossiers/**/sources/**`, 628 záznamů v 97 rodinách/outl
 | Tiscali.cz | 3 | 3 | — |
 | Transparency International ČR | 3 | 2 | — |
 | Úřad pro ochranu osobních údajů | 3 | 1 | — |
-| cz-verejny-rejstrik | 2 | 1 | — |
-| ARES — Administrativní registr ekonomických subjektů (Ministerstvo financí ČR) | 2 | 2 | — |
+| cz-verejny-rejstrik | 2 | 1 | [ano](/zdroje/ares/) |
+| ARES — Administrativní registr ekonomických subjektů (Ministerstvo financí ČR) | 2 | 2 | [ano](/zdroje/ares/) |
 | CZDEFENCE | 2 | 1 | — |
 | Fakultní nemocnice Olomouc (oficiální web) | 2 | 1 | — |
 | Médiář | 2 | 1 | — |
@@ -117,8 +118,10 @@ Dopočítáno z `data/dossiers/**/sources/**`, 628 záznamů v 97 rodinách/outl
 | AutoRevue.cz | 1 | 1 | — |
 | Centrum veřejných financí (Univerzita Karlova) | 1 | 1 | — |
 | Česká infrastruktura | 1 | 1 | — |
+| Česká obchodní inspekce | 1 | 1 | — |
 | Česká školní inspekce | 1 | 1 | — |
 | ČKAIT (Česká komora autorizovaných inženýrů a techniků) | 1 | 1 | — |
+| CNCB / BRKI a NRKI | 1 | 1 | — |
 | Demagog.cz | 1 | 1 | — |
 | Deník Alarm | 1 | 1 | — |
 | Deník Referendum | 1 | 1 | — |
@@ -130,6 +133,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 628 záznamů v 97 rodinách/outl
 | EV Magazín | 1 | 1 | — |
 | Evropský parlament | 1 | 1 | — |
 | Extra.cz | 1 | 1 | — |
+| Finmag.cz — přepis obchodního rejstříku | 1 | 1 | — |
 | Hanácká Drbna | 1 | 1 | — |
 | Heroine.cz | 1 | 1 | — |
 | Info.cz | 1 | 1 | — |
@@ -144,8 +148,9 @@ Dopočítáno z `data/dossiers/**/sources/**`, 628 záznamů v 97 rodinách/outl
 | Nejvyšší kontrolní úřad (nku.cz) | 1 | 1 | — |
 | Nejvyšší správní soud | 1 | 1 | — |
 | Neovlivní.cz | 1 | 1 | — |
+| Novinky.cz / Právo | 1 | 1 | — |
 | ParlamentníListy.cz | 1 | 1 | — |
-| Podnikatel.cz | 1 | 1 | — |
+| Podnikatel.cz | 1 | 1 | [ano](/zdroje/podnikatel-cz-rejstrik/) |
 | Podpůrný a garanční rolnický a lesnický fond (PGRLF) | 1 | 1 | — |
 | Průmyslová automatizace | 1 | 1 | — |
 | RAILTARGET | 1 | 1 | — |
@@ -164,7 +169,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 628 záznamů v 97 rodinách/outl
 | YouControl | 1 | 1 | — |
 | Zdopravy.cz | 1 | 1 | — |
 | Život v Česku | 1 | 1 | — |
-| smlouvy-gov-cz | 1 | 1 | — |
+| smlouvy-gov-cz | 1 | 1 | [ano](/zdroje/registr-smluv/) |
 
 ## Chybí popis
 

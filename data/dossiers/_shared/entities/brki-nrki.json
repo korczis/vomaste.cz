@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/brki-nrki",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "brki-nrki",
+  "entityId": "brki-nrki",
+  "title": "BRKI a NRKI",
+  "entityType": "organization",
+  "role": "bankovní a nebankovní registr klientských informací",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "contextual",
+  "dossiers": [
+    "james-quick"
+  ],
+  "order": 522,
+  "provenance": {
+    "discoveredAt": "2026-08-05",
+    "discoveredVia": [
+      "edge-james-quick-brki-nrki"
+    ],
+    "claimRefs": [
+      "CLM-11"
+    ],
+    "sourceRefs": [
+      "SRC-12"
+    ],
+    "cluster": "cerd",
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextový institucionální uzel společného stanoviska BRKI a NRKI vůči CERD. Registry uvedly, že CERD nepředávaly klientská data a jeho potvrzení nebylo pro finanční instituce relevantní."
+    }
+  ]
+}

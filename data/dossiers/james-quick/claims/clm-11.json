@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-11",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-11",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/james-quick"
+  },
+  "text": "Provozovatelé Bankovního a Nebankovního registru klientských informací v srpnu 2012 uvedli, že CERD od nich ani od jejich členů nedostával žádné klientské údaje, neměl přístup k údajům o jejich dlužnících a jeho placené potvrzení o bezdlužnosti nebylo pro finanční instituce relevantní.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-12"
+    }
+  ],
+  "subjects": [
+    "james-quick"
+  ],
+  "order": 11,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Jde o společné oficiální prohlášení provozovatelů BRKI a NRKI. Dokládá absenci předávání dat a význam potvrzení pro tyto registry; samo o sobě nepopisuje všechny možné datové zdroje CERD."
+    }
+  ]
+}

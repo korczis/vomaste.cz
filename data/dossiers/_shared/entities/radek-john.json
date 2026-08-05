@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/radek-john",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "radek-john",
+  "entityId": "radek-john",
+  "title": "Radek John",
+  "entityType": "person",
+  "role": "tehdejší ministr vnitra a předseda Věcí veřejných",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "contextual",
+  "dossiers": [
+    "james-quick"
+  ],
+  "order": 523,
+  "provenance": {
+    "discoveredAt": "2026-08-05",
+    "discoveredVia": [
+      "edge-james-quick-radek-john"
+    ],
+    "claimRefs": [
+      "CLM-15"
+    ],
+    "sourceRefs": [
+      "SRC-16"
+    ],
+    "cluster": "verejna-oznameni",
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová veřejná osoba: ČT24 popsala oznámení CERD zastoupeného Jiřím Jehličkou ve věci zakázek spojovaných s Radkem Johnem. Záznam nevyjadřuje vinu ani osobní, obchodní či lobbistický vztah."
+    }
+  ]
+}
