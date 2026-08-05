@@ -57,12 +57,12 @@ veškeré nedodělané zdrojovací práce.
 |---|---|
 | Dossierů | 26 |
 | Tvrzení | 944 |
-| — z toho `E0` / `E1` / `E1+` / `E2` | 0 / 570 / 144 / 230 |
+| — z toho `E0` / `E1` / `E1+` / `E2` | 0 / 570 / 143 / 231 |
 | Zdrojů (z toho s vyplněnou `sourceFamily`) | 634 (370) |
 | Kauz | 93 |
 | Mezer celkem / otevřených / zastaralých | 193 / 193 / 0 |
 | Vztahů | 331 |
-| Bodů rizika celkem | 1500 |
+| Bodů rizika celkem | 1499 |
 
 ## Pořadí dossierů
 
@@ -72,19 +72,19 @@ veškeré nedodělané zdrojovací práce.
 | 2 | [Jaromír Zůna](../data/dossiers/jaromir-zuna/) `jaromir-zuna` | **vysoká** | 95 | 6.3 % | 18.0 % | 57 | 0/39/6/12 | 11 | 15 | 2026-07-30 |
 | 3 | [Martin Šebestyán](../data/dossiers/martin-sebestyan/) `martin-sebestyan` | **vysoká** | 94 | 6.3 % | 24.3 % | 51 | 0/40/0/11 | 14 | 13 | 2026-07-30 |
 | 4 | [Adam Vojtěch](../data/dossiers/adam-vojtech/) `adam-vojtech` | **vysoká** | 87 | 5.8 % | 30.1 % | 55 | 0/31/12/12 | 13 | 16 | 2026-07-30 |
-| 5 | [Zuzana Mrázová](../data/dossiers/zuzana-mrazova/) `zuzana-mrazova` | **vysoká** | 85 | 5.7 % | 35.7 % | 60 | 0/28/14/18 | 15 | 12 | 2026-07-30 |
-| 6 | [Jeroným Tejc](../data/dossiers/jeronym-tejc/) `jeronym-tejc` | **vysoká** | 84 | 5.6 % | 41.3 % | 52 | 0/29/16/7 | 10 | 10 | 2026-07-30 |
+| 5 | [Zuzana Mrázová](../data/dossiers/zuzana-mrazova/) `zuzana-mrazova` | **vysoká** | 85 | 5.7 % | 35.8 % | 60 | 0/28/14/18 | 15 | 12 | 2026-07-30 |
+| 6 | [Jeroným Tejc](../data/dossiers/jeronym-tejc/) `jeronym-tejc` | **vysoká** | 84 | 5.6 % | 41.4 % | 52 | 0/29/16/7 | 10 | 10 | 2026-07-30 |
 | 7 | [Karel Havlíček](../data/dossiers/karel-havlicek/) `karel-havlicek` | **vysoká** | 83 | 5.5 % | 46.9 % | 50 | 0/32/8/10 | 11 | 23 | 2026-07-30 |
 | 8 | [Oto Klempíř](../data/dossiers/oto-klempir/) `oto-klempir` | **vysoká** | 80 | 5.3 % | 52.2 % | 45 | 0/34/5/6 | 7 | 12 | 2026-07-30 |
 | 9 | [Ivan Bednárik](../data/dossiers/ivan-bednarik/) `ivan-bednarik` | **střední** | 79 | 5.3 % | 57.5 % | 48 | 0/34/1/13 | 9 | 26 | 2026-07-30 |
-| 10 | [Robert Plaga](../data/dossiers/robert-plaga/) `robert-plaga` | **střední** | 79 | 5.3 % | 62.7 % | 55 | 0/29/9/17 | 12 | 14 | 2026-07-30 |
-| 11 | [Aleš Juchelka](../data/dossiers/ales-juchelka/) `ales-juchelka` | **střední** | 75 | 5.0 % | 67.7 % | 47 | 0/27/8/12 | 13 | 6 | 2026-07-30 |
-| 12 | [Igor Červený](../data/dossiers/igor-cerveny/) `igor-cerveny` | **střední** | 75 | 5.0 % | 72.7 % | 59 | 0/26/9/24 | 14 | 14 | 2026-07-30 |
-| 13 | [Alena Schillerová](../data/dossiers/alena-schillerova/) `alena-schillerova` | **střední** | 70 | 4.7 % | 77.4 % | 41 | 0/28/4/9 | 8 | 15 | 2026-08-05 |
-| 14 | [Petr Macinka a Filip Turek](../data/dossiers/macinka-turek/) `macinka-turek` | **střední** | 69 | 4.6 % | 82.0 % | 55 | 0/28/2/25 | 7 | 20 | 2026-07-29 |
+| 10 | [Robert Plaga](../data/dossiers/robert-plaga/) `robert-plaga` | **střední** | 79 | 5.3 % | 62.8 % | 55 | 0/29/9/17 | 12 | 14 | 2026-07-30 |
+| 11 | [Aleš Juchelka](../data/dossiers/ales-juchelka/) `ales-juchelka` | **střední** | 75 | 5.0 % | 67.8 % | 47 | 0/27/8/12 | 13 | 6 | 2026-07-30 |
+| 12 | [Igor Červený](../data/dossiers/igor-cerveny/) `igor-cerveny` | **střední** | 75 | 5.0 % | 72.8 % | 59 | 0/26/9/24 | 14 | 14 | 2026-07-30 |
+| 13 | [Alena Schillerová](../data/dossiers/alena-schillerova/) `alena-schillerova` | **střední** | 70 | 4.7 % | 77.5 % | 41 | 0/28/4/9 | 8 | 15 | 2026-08-05 |
+| 14 | [Petr Macinka a Filip Turek](../data/dossiers/macinka-turek/) `macinka-turek` | **střední** | 69 | 4.6 % | 82.1 % | 55 | 0/28/2/25 | 7 | 20 | 2026-07-29 |
 | 15 | [Boris Šťastný](../data/dossiers/boris-stastny/) `boris-stastny` | **nízká** | 64 | 4.3 % | 86.3 % | 42 | 0/21/11/10 | 10 | 8 | 2026-07-30 |
-| 16 | [Lubomír Metnar](../data/dossiers/lubomir-metnar/) `lubomir-metnar` | **nízká** | 55 | 3.7 % | 89.9 % | 29 | 0/18/8/3 | 11 | 3 | 2026-08-05 |
-| 17 | [Tomio Okamura](../data/dossiers/tomio-okamura/) `tomio-okamura` | **nízká** | 47 | 3.1 % | 93.1 % | 35 | 0/9/19/7 | 8 | 7 | 2026-08-05 |
+| 16 | [Lubomír Metnar](../data/dossiers/lubomir-metnar/) `lubomir-metnar` | **nízká** | 55 | 3.7 % | 90.0 % | 29 | 0/18/8/3 | 11 | 3 | 2026-08-05 |
+| 17 | [Tomio Okamura](../data/dossiers/tomio-okamura/) `tomio-okamura` | **nízká** | 46 | 3.1 % | 93.1 % | 35 | 0/9/18/8 | 8 | 7 | 2026-08-05 |
 | 18 | [James Quick](../data/dossiers/james-quick/) `james-quick` | **nízká** | 37 | 2.5 % | 95.5 % | 16 | 0/15/1/0 | 3 | 16 | 2026-08-05 |
 | 19 | [Richard Chlad](../data/dossiers/richard-chlad/) `richard-chlad` | **nízká** | 18 | 1.2 % | 96.7 % | 7 | 0/7/0/0 | 2 | 1 | 2026-07-30 |
 | 20 | [Tünde Bartha](../data/dossiers/tunde-bartha/) `tunde-bartha` | **nízká** | 17 | 1.1 % | 97.9 % | 13 | 0/6/0/7 | 4 | 8 | 2026-08-01 |
@@ -375,18 +375,18 @@ Další krok:
 
 ### 17. Tomio Okamura — `tomio-okamura`
 
-**Priorita nízká** · 47 bodů (3.1 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-05`, revidováno `2026-08-05`
+**Priorita nízká** · 46 bodů (3.1 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-05`, revidováno `2026-08-05`
 
 | Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
 |---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 35 | 0 | 9 | 19 | 7 | 29 | 22 | 5 | 8 (8) | 7 |
+| 35 | 0 | 9 | 18 | 8 | 29 | 22 | 5 | 8 (8) | 7 |
 
-Deklarované stavy: CORROBORATED 7 · 1 ZDROJ 25 · CITACE 3
+Deklarované stavy: CORROBORATED 8 · 1 ZDROJ 24 · CITACE 3
 
 Další krok:
 
-- 19 tvrzení má ≥2 zdroje, ale všechny z jedné rodiny / od jednoho vydavatele (např. CLM-01, CLM-02, CLM-08) → dohledat jeden nezávislý doklad; tím se dostanou na CORROBORATED
 - 9 tvrzení stojí na jediném zdroji (např. CLM-03, CLM-04, CLM-05) → dohledat druhého, nezávislého vydavatele
+- 18 tvrzení má ≥2 zdroje, ale všechny z jedné rodiny / od jednoho vydavatele (např. CLM-01, CLM-02, CLM-08) → dohledat jeden nezávislý doklad; tím se dostanou na CORROBORATED
 - 6 dalších otevřených mezer → ověřit, jestli je nový zdroj neuzavírá
 - 2 otevřených mezer s prioritou „vysoká" → projít je jako první, u každé zaznamenat výsledek kontroly
 - 7 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
