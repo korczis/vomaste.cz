@@ -1,0 +1,7 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json", "schemaVersion": 1, "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/jan-morava", "@type": "vomaste:Entity", "recordType": "entity", "identifier": "jan-morava", "entityId": "jan-morava",
+  "title": "Jan Morava", "entityType": "person", "role": "bývalý poslanec", "publicationRole": "context", "dossierEnabled": false, "dossierStatus": "not_authorized", "coverageState": "contextual", "dossiers": ["james-quick"], "order": 518,
+  "provenance": { "discoveredAt": "2026-08-05", "discoveredVia": ["edge-james-quick-jan-morava"], "claimRefs": ["CLM-07"], "sourceRefs": ["SRC-07"], "cluster": "verejna-oznameni", "depth": 1 },
+  "content": [{ "type": "markdown", "value": "Kontextová veřejná osoba: ČT24 popsala trestní oznámení Jiřího Jehličky v souvislosti s jeho kauzou a následné odložení věci. Nejde o záznam obchodního, osobního ani lobbistického vztahu." }]
+}

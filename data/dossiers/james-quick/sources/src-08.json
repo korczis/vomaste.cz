@@ -3,7 +3,7 @@
   "@context": "https://vomaste.cz/context/v1.jsonld", "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-08", "@type": "vomaste:Source", "recordType": "source", "identifier": "SRC-08",
   "dossier": { "@id": "https://vomaste.cz/id/dossiers/james-quick" },
   "title": "SRC-08 — iROZHLAS: Trenéra Vladimíra Růžičku prověřuje policie", "description": "Zpráva Českého rozhlasu o podání trestního oznámení Jiřím Jehličkou v souvislosti s Vladimírem Růžičkou.",
-  "outlet": "iROZHLAS", "sourceFamily": "cesky-rozhlas", "sourceType": "veřejnoprávní zpravodajství",
+  "outlet": "iROZHLAS.cz (Český rozhlas)", "sourceFamily": "cesky-rozhlas", "sourceType": "veřejnoprávní zpravodajství",
   "url": "https://www.irozhlas.cz/zpravy-domov/trenera-hokejove-reprezentace-vladimira-ruzicku-proveruje-policie_201504141230_vman", "published": "2015-04-14", "retrieved": "2026-08-05",
   "claims": [{ "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-08" }], "subjects": ["james-quick"],
   "content": [{ "type": "markdown", "value": "Veřejnoprávní zpravodajský zdroj dokládá, kdo oznámení podal a v jaké veřejné roli vystupoval. Neřeší konečný výsledek celé Růžičkovy věci a není podkladem pro tvrzení o vině. Pro účely tohoto dossieru slouží pouze jako důkaz veřejně doloženého zásahu do dané kauzy." }], "order": 8

@@ -1,0 +1,7 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json", "schemaVersion": 1, "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/relations/edge-james-quick-stanislav-gross", "@type": "vomaste:Relation", "recordType": "relation", "identifier": "edge-james-quick-stanislav-gross", "relationId": "edge-james-quick-stanislav-gross",
+  "dossier": { "@id": "https://vomaste.cz/id/dossiers/james-quick" }, "sourceEntity": { "@id": "https://vomaste.cz/id/entities/james-quick" }, "targetEntity": { "@id": "https://vomaste.cz/id/entities/stanislav-gross" },
+  "relationType": "RESPONDED_TO", "label": "podal trestní oznámení v souvislosti s veřejnou kauzou; věc byla odložena", "status": "single", "claims": [{ "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-07" }], "sources": [{ "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-07" }], "subjects": ["james-quick"], "directed": true, "order": 4,
+  "content": [{ "type": "markdown", "value": "Veřejně doložená procesní reakce na politickou kauzu včetně zveřejněného odložení věci. Hrana není dokladem spolupráce ani osobního kontaktu." }]
+}

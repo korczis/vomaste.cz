@@ -3,7 +3,7 @@
   "@context": "https://vomaste.cz/context/v1.jsonld", "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-05", "@type": "vomaste:Source", "recordType": "source", "identifier": "SRC-05",
   "dossier": { "@id": "https://vomaste.cz/id/dossiers/james-quick" },
   "title": "SRC-05 — ČT24: Pozor na falešné weby státních orgánů", "description": "Článek ČT24 o doménách podobných názvům veřejných institucí a jejich přesměrování na CERD.",
-  "outlet": "Česká televize", "sourceFamily": "ceska-televize", "sourceType": "veřejnoprávní zpravodajství",
+  "outlet": "Česká televize (ČT24)", "sourceFamily": "ceska-televize", "sourceType": "veřejnoprávní zpravodajství",
   "url": "https://ct24.ceskatelevize.cz/clanek/domaci/pozor-na-falesne-weby-statnich-organu-228833", "published": "2011-06-06", "retrieved": "2026-08-05",
   "claims": [{ "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-05" }], "subjects": ["james-quick"],
   "content": [{ "type": "markdown", "value": "Zdroj dokumentuje podobu a přesměrování domén v době vydání a obsahuje přímé vyjádření Jiřího Jehličky za provozovatele. Titulek je redakční formulace České televize, nikoli právní kvalifikace dossieru. Bez archivních DNS a vlastnických záznamů dossier nepřidává další závěry o dnešním držení domén." }], "order": 5

@@ -21,19 +21,19 @@ test("golden: počty záznamů per typ (snapshot 2026-08-05: + autorizovaný dos
     case: 89,
     claim: 929,
     dossier: 25,
-    entity: 515,
+    entity: 521,
     gap: 191,
-    relation: 317,
+    relation: 323,
     source: 615,
     update: 52,
   });
   assert.equal(compiled.counts.dossiers, 25);
-  assert.equal(compiled.counts.entities, 515);
+  assert.equal(compiled.counts.entities, 521);
 });
 
 test("golden: graf — uzly z entit, hrany z relations", () => {
-  assert.equal(compiled.graph.nodes.length, 515);
-  assert.equal(compiled.graph.edges.length, 317);
+  assert.equal(compiled.graph.nodes.length, 521);
+  assert.equal(compiled.graph.edges.length, 323);
 });
 
 test("golden: vzorek claim záznamu (andrej-babis CLM-01)", () => {

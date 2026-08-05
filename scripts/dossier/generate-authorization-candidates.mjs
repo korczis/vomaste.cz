@@ -128,7 +128,7 @@ const md = [
     `- Appears in: ${c.appears_in_dossiers.join(", ") || "—"}`,
     `- Claims: ${c.claims.join(", ") || "none"}`,
     `- Sources: ${c.sources.join(", ") || "none"} (${c.independent_source_families} independent source famil${c.independent_source_families === 1 ? "y" : "ies"})`,
-    `- Relations: ${c.relations.length === 0 ? "none" : ""}`,
+    c.relations.length === 0 ? "- Relations: none" : "- Relations:",
     ...c.relations.map((r) => `  - ${r}`),
     `- Missing: ${c.missing.join("; ")}`,
     "",

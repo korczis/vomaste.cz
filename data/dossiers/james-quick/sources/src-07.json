@@ -3,7 +3,7 @@
   "@context": "https://vomaste.cz/context/v1.jsonld", "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-07", "@type": "vomaste:Source", "recordType": "source", "identifier": "SRC-07",
   "dossier": { "@id": "https://vomaste.cz/id/dossiers/james-quick" },
   "title": "SRC-07 — ČT24: Policie se nebude zabývat případem exposlance Moravy", "description": "Zpráva o odložení podnětu vůči Janu Moravovi a přehledu dřívějších oznámení Jiřího Jehličky.",
-  "outlet": "Česká televize", "sourceFamily": "ceska-televize", "sourceType": "veřejnoprávní zpravodajství",
+  "outlet": "Česká televize (ČT24)", "sourceFamily": "ceska-televize", "sourceType": "veřejnoprávní zpravodajství",
   "url": "https://ct24.ceskatelevize.cz/clanek/domaci/policie-se-nebude-zabyvat-pripadem-exposlance-moravy-171768", "published": "2009-01-06", "retrieved": "2026-08-05",
   "claims": [{ "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-07" }], "subjects": ["james-quick"],
   "content": [{ "type": "markdown", "value": "Článek dokládá veřejnou aktivitu prostřednictvím trestních oznámení a současně procesní výsledek u dvou uvedených věcí. Nezakládá osobní, obchodní ani lobbistický vztah mezi oznamovatelem a dotčenými politiky. Vztahy v datovém grafu proto musejí být popsány jako reakce na veřejnou kauzu, nikoli jako spolupráce." }], "order": 7

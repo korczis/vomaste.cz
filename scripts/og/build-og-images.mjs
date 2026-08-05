@@ -36,7 +36,16 @@ const siteTitle = field(config, "title") ?? "vomaste.cz";
 // data/dossiers.toml + stats.toml zanikly).
 const { loadDossierRegistry } = await import("../dossier/lib/dossier-registry.mjs");
 const { readDossierStats } = await import("../dossier/lib/record-tables.mjs");
-const dossiers = loadDossierRegistry().map((d) => ({ slug: d.slug, title: d.title, type: d.dossierType }));
+const requestedSlugs = new Set(process.argv.slice(2));
+const dossiers = loadDossierRegistry()
+  .map((d) => ({ slug: d.slug, title: d.title, type: d.dossierType }))
+  .filter((d) => requestedSlugs.size === 0 || requestedSlugs.has(d.slug));
+
+if (requestedSlugs.size > 0 && dossiers.length !== requestedSlugs.size) {
+  const found = new Set(dossiers.map((d) => d.slug));
+  const missing = [...requestedSlugs].filter((slug) => !found.has(slug));
+  throw new Error(`Unknown dossier slug(s): ${missing.join(", ")}`);
+}
 
 const stats = (slug) => {
   const s = readDossierStats(ROOT, slug);
@@ -99,15 +108,17 @@ async function render(html, file) {
 }
 
 console.log("Rendering OG cards:");
-await render(
-  cardHtml({
-    kicker: "Open Intelligence Commons",
-    title: siteTitle,
-    subtitle: "Otevřený, Git-native systém dohledatelných dossierů ve veřejném zájmu. Nevěřte autorovi — zkontrolujte data, zdroje a historii změn.",
-    footer: "public domain · zdrojováno · verzováno v Gitu",
-  }),
-  "site.jpg",
-);
+if (requestedSlugs.size === 0) {
+  await render(
+    cardHtml({
+      kicker: "Open Intelligence Commons",
+      title: siteTitle,
+      subtitle: "Otevřený, Git-native systém dohledatelných dossierů ve veřejném zájmu. Nevěřte autorovi — zkontrolujte data, zdroje a historii změn.",
+      footer: "public domain · zdrojováno · verzováno v Gitu",
+    }),
+    "site.jpg",
+  );
+}
 
 for (const d of dossiers) {
   const s = stats(d.slug);
@@ -134,4 +145,4 @@ for (const d of dossiers) {
 }
 
 await browser.close();
-console.log(`Done — ${1 + dossiers.length} card(s) in static/images/og/.`);
+console.log(`Done — ${dossiers.length + (requestedSlugs.size === 0 ? 1 : 0)} card(s) in static/images/og/.`);

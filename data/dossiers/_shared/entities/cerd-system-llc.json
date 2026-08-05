@@ -1,0 +1,7 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json", "schemaVersion": 1, "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/cerd-system-llc", "@type": "vomaste:Entity", "recordType": "entity", "identifier": "cerd-system-llc", "entityId": "cerd-system-llc",
+  "title": "CERD SYSTEM LLC", "entityType": "company", "publicationRole": "context", "dossierEnabled": false, "dossierStatus": "not_authorized", "coverageState": "contextual", "dossiers": ["james-quick"], "order": 517,
+  "provenance": { "discoveredAt": "2026-08-05", "discoveredVia": ["edge-james-quick-cerd-system"], "claimRefs": ["CLM-02", "CLM-04"], "sourceRefs": ["SRC-02", "SRC-04"], "cluster": "cerd", "depth": 1 },
+  "content": [{ "type": "markdown", "value": "Kontextová americká společnost uvedená v závěru kontroly ÚOOÚ mezi právnickými osobami zapojenými do systému CERD. Přesný historický korporátní stav vyžaduje ověření v příslušném americkém registru." }]
+}
