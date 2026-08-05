@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/richard-chlad"
   },
   "title": "Financování strany Motoristé sobě",
-  "summary": "V rejstříku evidováno 638 864 Kč za rok 2025 včetně nepeněžního plnění; Chlad sám veřejně uváděl „necelé dva miliony“ i zhruba 1,5 milionu, předseda strany 2× 50 000 Kč před eurovolbami 2024. Darovat straně je legální a čísla nejsou přímo porovnatelná — týkají se různých období a různého vymezení podpory.",
-  "period": "2024–2025",
+  "summary": "Úřední zprávy hnutí evidují za rok 2025 pětici plnění v souhrnu 638 864 Kč, a to výhradně jako bezúplatná (nepeněžitá) plnění volební kampani, poskytnutá v srpnu a září 2025; Chlad sám veřejně uváděl „necelé dva miliony“ i zhruba 1,5 milionu, předseda strany 2× 50 000 Kč před eurovolbami 2024. Poskytnout straně plnění je legální a čísla nejsou přímo porovnatelná — týkají se různých období, různého vymezení podpory a u roku 2024 i evidenčně odlišného dárce.",
+  "period": "2024–2026",
   "status": "status-single",
   "statusLabel": "Legální dary, nesourodá čísla",
   "anchor": "kauza-financovani",
@@ -27,9 +27,36 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-12"
     }
   ],
   "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/sources/SRC-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/sources/SRC-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/sources/SRC-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/sources/SRC-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/sources/SRC-08"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/richard-chlad/sources/SRC-01"
     },

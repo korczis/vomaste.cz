@@ -65,14 +65,14 @@ Odpovídá na otázku „kam se podívat a čemu z toho věřit". Publikovaná p
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 640 záznamů v 102 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 658 záznamů v 107 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
 | ctk | 290 | 21 | [ano](/zdroje/ctk/) |
 | seznam-zpravy | 34 | 13 | [ano](/zdroje/seznam-zpravy/) |
+| Poslanecká sněmovna Parlamentu ČR | 30 | 15 | [ano](/zdroje/psp-cz/) |
 | Vláda České republiky (vlada.gov.cz) | 23 | 17 | [ano](/zdroje/vlada-cz/) |
-| Poslanecká sněmovna Parlamentu ČR | 21 | 15 | [ano](/zdroje/psp-cz/) |
 | FORUM 24 | 19 | 9 | — |
 | denik-n | 16 | 9 | [ano](/zdroje/denik-n/) |
 | ČT24 (Česká televize) | 15 | 7 | [ano](/zdroje/ceska-televize/) |
@@ -82,8 +82,9 @@ Dopočítáno z `data/dossiers/**/sources/**`, 640 záznamů v 102 rodinách/out
 | Česká justice | 11 | 6 | — |
 | Ekonomický deník | 9 | 5 | — |
 | Novinky.cz | 9 | 8 | — |
-| hlidac-statu | 8 | 3 | [ano](/zdroje/hlidac-statu/) |
 | irozhlas | 8 | 6 | [ano](/zdroje/irozhlas/) |
+| hlidac-statu | 7 | 2 | [ano](/zdroje/hlidac-statu/) |
+| udhpsh | 6 | 1 | — |
 | Blesk.cz | 5 | 3 | — |
 | e15.cz | 4 | 2 | — |
 | HlídacíPes.org | 4 | 4 | — |
@@ -144,8 +145,10 @@ Dopočítáno z `data/dossiers/**/sources/**`, 640 záznamů v 102 rodinách/out
 | Kurzy.cz | 1 | 1 | — |
 | Lupa.cz | 1 | 1 | — |
 | Manipulátoři.cz | 1 | 1 | — |
+| Město Bílina (oficiální web) | 1 | 1 | — |
 | MHD86 | 1 | 1 | — |
 | Ministerstvo spravedlnosti ČR | 1 | 1 | — |
+| Ministerstvo zdravotnictví ČR | 1 | 1 | — |
 | Motoristé sobě (motoristesobe.cz/udhpsh) | 1 | 1 | — |
 | Nejvyšší správní soud | 1 | 1 | — |
 | Neovlivní.cz | 1 | 1 | — |
@@ -158,6 +161,8 @@ Dopočítáno z `data/dossiers/**/sources/**`, 640 záznamů v 102 rodinách/out
 | Refresher.cz | 1 | 1 | — |
 | Romea.cz | 1 | 1 | — |
 | Security magazín | 1 | 1 | — |
+| Senát Parlamentu České republiky | 1 | 1 | — |
+| Seznam Zprávy | 1 | 1 | [ano](/zdroje/seznam-zpravy/) |
 | silnice-zeleznice.cz | 1 | 1 | — |
 | Společnost pro obranu svobody projevu | 1 | 1 | — |
 | Taneční aktuality | 1 | 1 | — |
@@ -183,5 +188,6 @@ Tyhle zdroje dataset používá aspoň pětkrát, ale katalog k nim nemá zázna
 - Česká justice (11×)
 - Ekonomický deník (9×)
 - Novinky.cz (9×)
+- udhpsh (6×)
 - Blesk.cz (5×)
 

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-10",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-10",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek"
+  },
+  "title": "SRC-10 — Seznam Zprávy",
+  "description": "Seznam Zprávy, 3. 5. 2018, Radek Nohl: vlastní zpravodajství o zrušení stíhání Jaroslava Faltýnka, včetně vyjádření náměstkyně pražského městského státního zástupce přímo pro Seznam.",
+  "outlet": "Seznam Zprávy",
+  "sourceType": "celostátní zpravodajství",
+  "url": "https://www.seznamzpravy.cz/clanek/zvrat-v-kauze-capi-hnizdo-zalobce-zastavil-stihani-faltynka-babis-pokracuje-46458",
+  "published": "2018-05-03",
+  "retrieved": "2026-08-05",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-04"
+    }
+  ],
+  "subjects": [
+    "faltynek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Průběžně aktualizovaný text Seznam Zpráv z **3. 5. 2018** (17:51,\naktualizováno 21:50), autor **Radek Nohl**. Uvádí, že „státní zástupce\nJaroslav Šaroch zrušil trestní stíhání místopředsedy hnutí ANO Jaroslava\nFaltýnka a dalších tří lidí figurujících v kauze kolem padesátimilionové\ndotace EU na stavbu farmy Čapí hnízdo\".\n\nKlíčová je **procesní formulace, kterou redakci potvrdila přímo\nnáměstkyně pražského městského státního zástupce Daniela Smetanová**:\n\n> „U čtyř osob bylo zrušeno **usnesení o zahájení trestního stíhání**, u\n> dalších sedmi obviněných byly stížnosti proti obvinění zamítnuty.\"\n\nA dále: „Ve věci byly jako nedůvodné zamítnuty stížnosti Andreje Babiše a\ndalších šesti osob a rozhodnutí o zahájení trestního stíhání zůstává v\ntéto části v platnosti. Vyhověno bylo stížnostem Jaroslava Faltýnka a tří\ndalších osob a usnesení o jejich stíhání bylo zrušeno.\"\n\n**Poznámka k přesnosti a limitům**: tento zdroj je v dossieru proto, že\nnese **vlastní ověření redakce** — potvrzení od zástupkyně dozorujícího\nstátního zastupitelství získal Seznam přímo, nejde o převzatou agenturní\nzprávu. Text sice cituje na jiných místech i ČTK, ale doložení, kvůli\nkterému je zde citován, je Seznamovo vlastní; proto zdroj **nemá\nvyplněnou rodinu** a s ČTK-rodinou ostatních zdrojů\n([SRC-02](@/dossiers/jaroslav-faltynek/sources/src-02.md),\n[SRC-04](@/dossiers/jaroslav-faltynek/sources/src-04.md),\n[SRC-06](@/dossiers/jaroslav-faltynek/sources/src-06.md)) tvoří **dvojici\ndvou nezávislých vydavatelů**.\n\n**Terminologicky**: co bylo zrušeno, je **usnesení o zahájení trestního\nstíhání** — tedy rozhodnutí, jímž stíhání začalo. Není to zproštění, není\nto rozsudek a **není to rozhodnutí o vině ani o nevině**. Zdroj rovněž\nneuvádí věcné odůvodnění, proč státní zástupce stížnostem vyhověl (viz\n[GAP-01](@/dossiers/jaroslav-faltynek/gaps/gap-01.md)). Tři další osoby,\njejichž stíhání bylo zrušeno současně, nejsou subjekty tohoto přehledu a\nnejmenují se zde."
+    }
+  ],
+  "order": 10
+}

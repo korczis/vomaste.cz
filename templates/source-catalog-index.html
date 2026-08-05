@@ -49,10 +49,7 @@
         <p class="mt-3 text-sm leading-relaxed text-white/70">{{ e.proves | first }}</p>
         {%- endif %}
         {%- if e.doesNotProve | length > 0 %}
-        {#- Táž oprava jako na úvodní stránce: /45 na tmavém pozadí dává 4,0:1,
-            pod AA. „Co zdroj nedokládá" je nejdůležitější věta katalogu a
-            zrovna ta byla nejhůř čitelná. -#}
-        <p class="mt-2 text-sm leading-relaxed text-white/55"><span class="text-white/70">Nedokládá:</span> {{ e.doesNotProve | first }}</p>
+        <p class="mt-2 text-sm leading-relaxed text-white/60"><span class="text-white/70">Nedokládá:</span> {{ e.doesNotProve | first }}</p>
         {%- endif %}
       </li>
       {%- endfor %}
@@ -82,9 +79,9 @@
         <td class="p-3 text-right tabular-nums">{{ u.dossierCount }}</td>
         <td class="p-3">
           {%- if u.catalogEntry %}
-          <a href="{{ get_url(path='@/zdroje/' ~ u.catalogEntry ~ '.md') | safe }}" class="text-[#f3e5c0] no-underline hover:underline">ano</a>
+          <a href="{{ get_url(path='@/zdroje/' ~ u.catalogEntry ~ '.md') | safe }}" class="text-[#f3e5c0] underline decoration-white/30 underline-offset-2">ano</a>
           {%- else %}
-          <span class="text-white/35">—</span>
+          <span class="text-white/60">—</span>
           {%- endif %}
         </td>
       </tr>

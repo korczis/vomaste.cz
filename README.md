@@ -45,16 +45,28 @@ nepodložená obvinění, centrální autorita s nárokem na konečnou pravdu,
 ani důvěrná schránka provozovaná ve veřejném Gitu.
 
 **Poctivý aktuální stav (k 2026-08-05)**: repozitář hostí dossiery
-autorizovaných veřejně činných osob (přesný, datovaný, append-only rozsah
-autorizace viz `AGENTS.md`; živý seznam na `/dossiers/`). Dossiery a
-entity jsou čistá, kanonická JSON/JSON-LD data (`data/dossiers/**`,
-mise T-028) — Markdown pod `content/` je generovaný routing adaptér a
-žádný hardcodovaný subjekt ve strukturálním kódu není; regresní brána
+veřejně činných osob v rozsahu popsaném v `AGENTS.md`, sekce "Standing
+scope authorization and publication gates" — od 2026-08-05 nahrazuje
+dřívější per-subject autorizační proceduru standing scope (veřejní
+činitelé, PEP, subjekty materiálně napojené na veřejnou moc/peníze) plus
+devět povinných publikačních bran (zdroj, provenience, procesní rámování,
+žádná vina podle grafu, nezávislost zdrojových rodin, minimalizace dat,
+proporcionalita třetích stran, revidovatelná změna, deterministický
+build); živý seznam na `/dossiers/`. Dossiery a entity jsou čistá,
+kanonická JSON/JSON-LD data (`data/dossiers/**`, mise T-028) — Markdown
+pod `content/` je generovaný routing adaptér a žádný hardcodovaný subjekt
+ve strukturálním kódu není; regresní brána
 `npm run lint:historical-coupling` hlídá, aby se historická vazba
 nevracela (inventura:
 [`docs/migrations/remove-macinka-turek-coupling-audit.md`](docs/migrations/remove-macinka-turek-coupling-audit.md)).
-Příspěvkové balíčky, sémantický diff ani fork starter kit **zatím
-neexistují** — nic z toho tento README neinzeruje jako hotové.
+Volitelná lokální integrace `~/dev/prismatic-platform` jako upstream
+výzkumný nástroj je autorizována architektonicky
+([ADR](docs/adr/prismatic-platform-integration.md)), ale **implementačně
+je to zatím jen scaffolding** — čtyři `prismatic-*` skilly a jedenáct
+`prismatic:*` npm skriptů existují jako stuby, žádný reálně nefunguje;
+veřejný build na tom nezávisí a nikdy záviset nebude. Příspěvkové
+balíčky, sémantický diff ani fork starter kit **zatím neexistují** — nic
+z toho tento README neinzeruje jako hotové.
 
 ## Jak systém funguje
 
@@ -314,8 +326,8 @@ build` před review-requestem/mergem/pushem.
 
 **Přispíváš přes Claude Code (nebo jiného AI agenta)?** Podrobný postup
 je v [`CONTRIBUTING.md`, sekce „Přispívání s Claude Code“](CONTRIBUTING.md#přispívání-s-claude-code-nebo-jiným-ai-agentem).
-Zkráceně — 5 skillů v `.claude/skills/`, spouštěj v tomto pořadí podle
-toho, co děláš:
+Zkráceně — 5 plně funkčních core skillů v `.claude/skills/`, spouštěj
+v tomto pořadí podle toho, co děláš:
 
 | Skill | Kdy ho spustit |
 |---|---|
@@ -324,6 +336,11 @@ toho, co děláš:
 | `investigate` | celé autorizované šetření end-to-end (scope check → větev → manifest → zdrojovaný výzkum → PR) |
 | `adr` | řešíš netriviální technické rozhodnutí (nová závislost, výměna komponenty) — měřený stav, ne odhad |
 | `commit` | commit samotný — formát zprávy, který gate skutečně platí, co nahlásit na co-op sběrnici |
+
+Plus 4 **scaffoldované, zatím nefunkční** `prismatic-*` skilly pro
+volitelnou lokální integraci s `~/dev/prismatic-platform`
+([ADR](docs/adr/prismatic-platform-integration.md)) — každý sám hlásí,
+že pipeline za ním ještě neexistuje, viz jeho `SKILL.md`.
 
 Plná kvalitní brána (stejná jako CI):
 
@@ -725,7 +742,12 @@ provozně [`docs/intake/`](docs/intake/) (podání, kontrakt formuláře,
 matching, riziková klasifikace, bezpečnostní hranice), návrhový ADR
 Fáze 1 + stav implementace
 [`docs/adr/ADR-public-dossier-intake.md`](docs/adr/ADR-public-dossier-intake.md),
-auditní reporty v `reports/intake/`.
+auditní reporty v `reports/intake/`. Volitelná integrace s
+`~/dev/prismatic-platform` jako lokální upstream výzkumný nástroj:
+[`docs/adr/prismatic-platform-integration.md`](docs/adr/prismatic-platform-integration.md)
+(architektura přijata 2026-08-05, pipeline zatím scaffolding — viz
+implementation status v ADR) + build plán
+[`docs/missions/2026-08-05-prismatic-platform-integration-master-prompt.md`](docs/missions/2026-08-05-prismatic-platform-integration-master-prompt.md).
 
 Stejné řídicí dokumenty (AGENTS.md, přispívání, konstituce, licence,
 bezpečnostní politika, koop protokol) jsou navíc čitelné přímo na webu

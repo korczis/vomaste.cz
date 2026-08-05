@@ -313,18 +313,14 @@
         <p class="mt-2 text-sm leading-relaxed text-white/60">{{ e.proves | first }}</p>
         {%- endif %}
         {%- if e.doesNotProve | length > 0 %}
-        {#- „Nedokládá" je ta polovina dvojice, kterou si čtenář má odnést,
-            takže nesmí být nejhůř čitelný text na stránce. text-white/40 na
-            #080808 dává 3,75:1, pod AA — hierarchie vůči „Dokládá" se drží
-            posunem obou úrovní, ne ztlumením pod práh. -#}
-        <p class="mt-2 text-sm leading-relaxed text-white/55"><span class="text-white/70">Nedokládá:</span> {{ e.doesNotProve | first }}</p>
+        <p class="mt-2 text-sm leading-relaxed text-white/60"><span class="text-white/70">Nedokládá:</span> {{ e.doesNotProve | first }}</p>
         {%- endif %}
       </a>
       {%- endfor %}
     </div>
 
-    <p class="mx-auto mt-8 max-w-2xl text-center text-sm text-white/50">
-      <a href="{{ get_url(path='@/zdroje/_index.md') | safe }}" class="text-[#f3e5c0] underline">Celý katalog zdrojů</a> — včetně pastí, na které se v každém z nich najíždí, a přehledu, co dataset skutečně cituje.
+    <p class="mx-auto mt-8 max-w-2xl text-center text-sm text-white/60">
+      <a href="{{ get_url(path='@/zdroje/_index.md') | safe }}" class="text-[#f3e5c0] underline decoration-white/30 underline-offset-2">Celý katalog zdrojů</a> — včetně pastí, na které se v každém z nich najíždí, a přehledu, co dataset skutečně cituje.
     </p>
   </section>
   {%- endif %}
@@ -435,11 +431,12 @@
           <span class="mt-1 block text-sm font-semibold text-white">Citované zdroje →</span>
           <ul class="mt-2 space-y-1 text-xs text-white/50">
             {%- for s in demo.sources %}
-            {#- Odkaz stojí uvnitř věty („SRC-01 — ČT24, 2026-…"), takže ho
-                od okolního textu nesmí odlišovat jen barva: rozdíl je 1,88:1,
-                zdaleka pod 3:1, a bez podtržení je pro barvoslepého čtenáře
-                neviditelný. Podtržení proto drží trvale, hover jen zesiluje. -#}
-            <li><a href="{{ config.base_url }}{{ s.route }}" class="text-white/70 underline decoration-white/30 underline-offset-2 hover:text-[#f3e5c0] hover:decoration-[#f3e5c0]">{{ s.identifier }}</a> — {{ s.outlet }}{% if s.published %}, {{ s.published }}{% endif %}</li>
+            {#- Podtržení je trvalé, ne jen na hover: odkaz stojí uvnitř věty a
+                axe (link-in-text-block) ho jinak označí za nerozlišitelný —
+                kontrast proti okolnímu textu vychází 1,88:1 proti požadovaným
+                3:1. Stejný zápis jako u ostatních odkazů v textu na této
+                stránce. -#}
+            <li><a href="{{ config.base_url }}{{ s.route }}" class="text-white/70 underline decoration-white/30 underline-offset-2 hover:text-[#f3e5c0]">{{ s.identifier }}</a> — {{ s.outlet }}{% if s.published %}, {{ s.published }}{% endif %}</li>
             {%- endfor %}
           </ul>
           <span class="mt-2 block text-xs text-white/50">Každý s přímým odkazem na originál. Kolik z nich je nezávislých hlasů, řeší <a href="{{ get_url(path='@/koncepty/nezavisle-dolozeni.md') | safe }}" class="underline decoration-white/30 underline-offset-2 hover:text-white">důkazní standard</a>.</span>

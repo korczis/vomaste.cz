@@ -9,10 +9,10 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek"
   },
-  "title": "Zrušené trestní stíhání v kauze Čapí hnízdo",
-  "summary": "Státní zástupce v květnu 2018 zrušil trestní stíhání Jaroslava Faltýnka poté, co vyhověl jeho stížnosti proti obvinění. Rozhodl státní zástupce, ne soud — nejde o rozhodnutí o vině ani o nevině. Faltýnek nebyl odsouzen a před soud jako obžalovaný nešel.",
-  "period": "2018",
-  "status": "status-single",
+  "title": "Vydání Sněmovnou 2017 a zrušené trestní stíhání 2018",
+  "summary": "Poslanecká sněmovna vyslovila 6. 9. 2017 souhlas s trestním stíháním; státní zástupce pak 3. 5. 2018 vyhověl stížnosti proti obvinění a zrušil usnesení o zahájení trestního stíhání. Rozhodl státní zástupce, ne soud — nejde o rozhodnutí o vině ani o nevině. Faltýnek nebyl odsouzen a před soud jako obžalovaný nešel.",
+  "period": "2017–2018",
+  "status": "status-corroborated",
   "statusLabel": "Stíhání zrušeno 2018",
   "anchor": "kauza-zrusene-stihani",
   "claims": [
@@ -24,6 +24,15 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-12"
     }
   ],
   "sources": [
@@ -32,6 +41,21 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-13"
     }
   ],
   "subjects": [

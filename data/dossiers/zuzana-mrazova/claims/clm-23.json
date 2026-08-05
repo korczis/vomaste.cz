@@ -10,14 +10,17 @@
     "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
   },
   "text": "Existenci rodinné půjčky 500 tisíc korun Mrázová podle médií přiznala až na květnové tiskové konferenci na dotaz novinářů, tedy poté, co ji neuvedla v majetkovém oznámení za rok 2024.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-04"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-14"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-08"
     }
   ],
   "subjects": [

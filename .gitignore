@@ -39,3 +39,10 @@ playwright-report/
 # opakovaně vtahoval do stagingu. Pravidlo je tu proto, aby se mrtvý
 # artefakt nevrátil do gitu omylem.
 data/dossiers/*/stats.toml
+
+# Prismatic Platform integration (docs/adr/prismatic-platform-integration.md,
+# AUTH-2026-08-05-PLATFORM-SCOPE in AGENTS.md). Only var/prismatic-runs/ is
+# raw/ignored — data/staging, data/review and data/imports are sanitized,
+# reviewable Git-tracked zones by design and must NOT be added here.
+var/prismatic-runs/
+.prismatic-local.toml

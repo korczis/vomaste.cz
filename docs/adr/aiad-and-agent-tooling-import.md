@@ -2,6 +2,16 @@
 
 **Date**: 2026-07-30.
 **Status**: decided — not adopted, with a scoped alternative below.
+**Superseded in part, 2026-08-05**, by
+[`docs/adr/prismatic-platform-integration.md`](prismatic-platform-integration.md):
+the site owner explicitly lifted the governance-level ban on invoking
+`~/dev/prismatic-platform` directly as a local upstream capability
+provider (see `AUTH-2026-08-05-PLATFORM-SCOPE` in `AGENTS.md`). The
+measured conclusion below — that copying Prismatic's `.aiad/`/`.claude/`
+tree wholesale into this small repository is bad architecture — is
+**not** superseded and remains this repo's position; the new ADR reuses
+the platform's capabilities through a thin, versioned export contract
+instead, and explicitly re-adopts that conclusion.
 
 ## Question asked
 
