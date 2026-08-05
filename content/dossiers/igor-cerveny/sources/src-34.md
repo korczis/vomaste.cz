@@ -21,6 +21,9 @@ pracovních). Zanikají mimo jiné oddělení financování Nové zelené
 úsporám a Národního plánu obnovy, oddělení Modernizačního fondu a
 Sociálně klimatického fondu.
 
-**Nezávislost**: samostatná redakce od Seznam Zprávy (SRC-29) — obě
-nezávisle potvrzují tutéž skutečnost (rozdílné počty zrušených míst i
-zaniklá oddělení). Proto CLM-47 nese stav `CORROBORATED`.
+**Nezávislost — opraveno 2026-08-05**: detekce zdrojových rodin ověřila
+podpis obou textů — ČT24 nese `<meta name="author" content="ČTK">`
+a Seznam Zprávy (SRC-29) uvádí jako autora ČTK v JSON-LD. Jde o dvě
+vydání téže agenturní zprávy; dřívější poznámka tvrdící samostatnou
+redakci byla nesprávná a je tímto opravena. Oba zdroje patří do rodiny
+`ctk`, CLM-47 proto nese stav `1 ZDROJ`.

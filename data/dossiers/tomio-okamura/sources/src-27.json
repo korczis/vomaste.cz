@@ -12,6 +12,7 @@
   "title": "SRC-27 — Hospodářské noviny: Sněmovna vydala Okamuru k trestnímu stíhání kvůli podezření ze šíření nenávisti v předvolební kampani (13. 2. 2025)",
   "description": "HN nezávisle na ČT24 (SRC-18) potvrzuje výsledek hlasování (81:62) a stranické rozložení hlasování o vydání Tomia Okamury.",
   "outlet": "Hospodářské noviny",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://domaci.hn.cz/c1-67608930-bdquo-neodvolam-ldquo-snemovna-vydala-okamuru-k-trestnimu-stihani-kvuli-podezreni-ze-sireni-nenavisti-v-predvolebni-kampani",
   "published": "2025-02-13",
@@ -30,7 +31,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Hospodářské noviny dne 13. 2. 2025: „Pro vyslovení souhlasu s trestním\nstíháním lídra SPD hlasovalo 81 ze 143 přítomných poslanců. Proti jich\nbylo 62.\" Pro vydání hlasovali zákonodárci vládních ODS, STAN, KDU-ČSL\na TOP 09, opoziční Piráti a nezařazený Ivo Vondrák; proti hlasovali\nposlanci SPD a zástupci ANO.\n\n**Nezávislost**: samostatná redakce od ČT24 (SRC-18) — nezávisle\npotvrzuje tutéž veřejnou skutečnost (výsledek a rozložení hlasování).\nProto CLM-25 a CLM-26 nesou stav `CORROBORATED`."
+      "value": "Hospodářské noviny dne 13. 2. 2025: „Pro vyslovení souhlasu s trestním\nstíháním lídra SPD hlasovalo 81 ze 143 přítomných poslanců. Proti jich\nbylo 62.\" Pro vydání hlasovali zákonodárci vládních ODS, STAN, KDU-ČSL\na TOP 09, opoziční Piráti a nezařazený Ivo Vondrák; proti hlasovali\nposlanci SPD a zástupci ANO.\n\n**Nezávislost — opraveno 2026-08-05**: detekce zdrojových rodin našla\nv Hospodářských novinách `<meta name=\"author\" content=\"ČTK\">` a na ČT24\n(SRC-18) „ČTK, ČT24\" — obojí je vydání téže agenturní zprávy. Dřívější\npoznámka tvrdící samostatnou redakci byla nesprávná a je tímto opravena.\nOba zdroje patří do rodiny `ctk`, CLM-25 i CLM-26 proto nesou stav\n`1 ZDROJ`."
     }
   ],
   "order": 27

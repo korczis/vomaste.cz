@@ -20,9 +20,12 @@ dalších osob a usnesení o jejich stíhání bylo zrušeno." Naproti tomu
 stíhání pokračovalo. Důvodem zrušení stíhání Faltýnka a dalších bylo
 podle žalobce „neprokázání subjektivní stránky stíhaného jednání".
 
-**Nezávislost**: samostatná redakce od Hospodářské noviny (SRC-02) —
-obě nezávisle potvrzují tutéž veřejnou skutečnost (zrušení stíhání).
-Proto CLM-02 a CLM-04 nesou stav `CORROBORATED`.
+**Nezávislost — opraveno 2026-08-05**: detekce zdrojových rodin našla
+u tohoto textu patičku „Zdroj: ČT24, ČTK, Právo" a u Hospodářských novin
+(SRC-02) `<meta name="author" content="ČTK">` — obojí stojí na téže
+agenturní zprávě. Dřívější poznámka tvrdící samostatnou redakci byla
+nesprávná a je tímto opravena. Oba zdroje patří do rodiny `ctk`, CLM-02
+i CLM-04 proto nesou stav `1 ZDROJ`.
 
 **Limity**: zrušení stíhání je rozhodnutím státního zástupce, ne soudu;
 citovaný zdroj neuvádí žádné rozhodnutí o vině ani nevině.

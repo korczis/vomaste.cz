@@ -12,6 +12,7 @@
   "title": "SRC-31 — ČT24",
   "description": "Policie odložila oznámení pro promlčení (oznámilo OSZ pro Prahu 4); rozhodnutí není pravomocné.",
   "outlet": "ČT24 (Česká televize)",
+  "sourceFamily": "ctk",
   "sourceType": "veřejnoprávní zpravodajství",
   "url": "https://ct24.ceskatelevize.cz/clanek/domaci/oznameni-na-turka-kvuli-udajnemu-domacimu-nasili-policie-odlozila-373328",
   "published": "2026-05-12",

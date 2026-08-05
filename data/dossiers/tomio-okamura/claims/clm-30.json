@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
   },
   "text": "Obvodní soud pro Prahu 1 rozhodl 12. března 2026 o přerušení trestního stíhání Tomia Okamury s odůvodněním, že stíhání je „pro nedostatek souhlasu oprávněného orgánu dočasně nepřípustné“, a jeho věc vyloučil k samostatnému projednání a rozhodnutí. O kroku informovala místopředsedkyně soudu Eva Švíglerová.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-21"

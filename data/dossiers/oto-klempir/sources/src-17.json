@@ -12,6 +12,7 @@
   "title": "SRC-17 — ČeskéNoviny.cz (ČTK)",
   "description": "Sněmovna schválila stavební novelu, podle opozice nahrává developerům",
   "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://www.ceskenoviny.cz/zpravy/snemovna-schvalila-stavebni-novelu-podle-opozice-nahrava-developerum/2849378",
   "published": "2026-07-10",

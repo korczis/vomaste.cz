@@ -12,6 +12,7 @@
   "title": "SRC-18 — ČeskéNoviny.cz (ČTK)",
   "description": "Sněmovna po sporu po vystoupení Havlíčka nedokončila schvalování stavební novely",
   "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://www.ceskenoviny.cz/zpravy/-snemovna-po-sporu-po-vystoupeni-havlicka-nedokoncila-schvalovani-stavebni-novely/2848496",
   "published": "2026-07-08",

@@ -12,6 +12,7 @@
   "title": "SRC-21 — Newstream",
   "description": "Personální zemětřesení v Českých drahách. Skončil šéf Bednárik",
   "outlet": "Newstream",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://www.newstream.cz/zpravy-z-firem/personalni-zemetresni-v-ceskych-drahach-skoncil-sef-bednarik",
   "published": "2022-02-15",

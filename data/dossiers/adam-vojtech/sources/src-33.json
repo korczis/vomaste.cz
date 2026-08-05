@@ -12,6 +12,7 @@
   "title": "SRC-33 — Report.cz (Olomoucký deník): FN Olomouc, policie a kauza kardiostimulátorů (12. 2. 2026)",
   "description": "Report.cz nezávisle na Zdravotnický deník (SRC-04) potvrzuje ministrův pokyn zřídit informační linku a vyžádat si komplexní zprávu.",
   "outlet": "Report.cz",
+  "sourceFamily": "ctk",
   "sourceType": "regionální zpravodajství",
   "url": "https://www.report.cz/olomouc-fnol-policie-kardiostimulator-kauza",
   "published": "2026-02-12",
@@ -27,7 +28,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Report.cz cituje ministra Vojtěcha: řediteli FN Olomouc Romanu Havlíkovi\n„uložil, aby zprovoznil informační linku, na které pacienti s\nvoperovaným defibrilátorem získají srozumitelné informace.\" Zároveň:\n„Současně jsem si vyžádal komplexní zprávu včetně detailní časové osy,\npřijatých opatření a stavu interní revize.\"\n\n**Nezávislost**: samostatná redakce od Zdravotnický deník (SRC-04) —\nobě nezávisle potvrzují tentýž ministrův pokyn. Proto CLM-08 nese stav\n`CORROBORATED`."
+      "value": "Report.cz cituje ministra Vojtěcha: řediteli FN Olomouc Romanu Havlíkovi\n„uložil, aby zprovoznil informační linku, na které pacienti s\nvoperovaným defibrilátorem získají srozumitelné informace.\" Zároveň:\n„Současně jsem si vyžádal komplexní zprávu včetně detailní časové osy,\npřijatých opatření a stavu interní revize.\"\n\n**Nezávislost — opraveno 2026-08-05**: detekce zdrojových rodin ověřila\npodpis obou textů — tenhle nese v JSON-LD autora „- ČTK -\" a Zdravotnický\ndeník (SRC-04) `<meta name=\"author\" content=\"ČTK\">`. Jde tedy o dvě vydání\ntéže agenturní zprávy, ne o dvě redakce; dřívější poznámka tvrdící\nsamostatnou redakci byla nesprávná a je tímto opravena. Oba zdroje patří\ndo rodiny `ctk`, CLM-08 proto nese stav `1 ZDROJ`."
     }
   ],
   "order": 33

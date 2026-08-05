@@ -12,6 +12,7 @@
   "title": "SRC-12 — Echo24",
   "description": "Policie obvinila v kauze Bitcoin i exministra Pavla Blažka",
   "outlet": "Echo24",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://m.echo24.cz/a/Hx33D/zpravy-domov-v-kauze-bitcoin-byli-obvineni-dalsi-tri-lide-vcetne-ministra-blazka",
   "published": "2026-05-04",

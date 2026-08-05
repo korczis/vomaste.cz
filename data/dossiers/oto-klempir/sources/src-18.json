@@ -12,6 +12,7 @@
   "title": "SRC-18 — ČeskéNoviny.cz (ČTK)",
   "description": "Zamítněte novelu stavebního zákona kvůli památkám, vyzvali poslance odborníci",
   "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://www.ceskenoviny.cz/zpravy/zamitnete-novelu-stavebniho-zakona-kvuli-pamatkam-vyzvali-poslance-odbornici/2833652",
   "published": "2026-06-02",

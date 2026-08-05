@@ -12,6 +12,7 @@
   "title": "SRC-34 — ČT24: MŽP ruší desítky pracovních míst, podle Deníku N zřídí nové oddělení pod Turkem (31. 3. 2026)",
   "description": "ČT24 nezávisle na Seznam Zprávy (SRC-29) potvrzuje počet zrušených míst (38 vs. 53 dle Deníku N) i zaniklá oddělení.",
   "outlet": "ČT24 (Česká televize)",
+  "sourceFamily": "ctk",
   "sourceType": "veřejnoprávní zpravodajství",
   "url": "https://ct24.ceskatelevize.cz/clanek/domaci/mzp-rusi-desitky-pracovnich-mist-podle-deniku-n-zridi-nove-oddeleni-pod-turkek-371933",
   "published": "2026-03-31",
@@ -27,7 +28,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "ČT24 dne 31. 3. 2026 cituje ministra Červeného: „Ministerstvo životního\nprostředí (MŽP) k začátku dubna zrušilo na úřadu při systemizaci 38\nmíst.\" Deník N uváděl vyšší počet — 53 pozic (42 služebních a 11\npracovních). Zanikají mimo jiné oddělení financování Nové zelené\núsporám a Národního plánu obnovy, oddělení Modernizačního fondu a\nSociálně klimatického fondu.\n\n**Nezávislost**: samostatná redakce od Seznam Zprávy (SRC-29) — obě\nnezávisle potvrzují tutéž skutečnost (rozdílné počty zrušených míst i\nzaniklá oddělení). Proto CLM-47 nese stav `CORROBORATED`."
+      "value": "ČT24 dne 31. 3. 2026 cituje ministra Červeného: „Ministerstvo životního\nprostředí (MŽP) k začátku dubna zrušilo na úřadu při systemizaci 38\nmíst.\" Deník N uváděl vyšší počet — 53 pozic (42 služebních a 11\npracovních). Zanikají mimo jiné oddělení financování Nové zelené\núsporám a Národního plánu obnovy, oddělení Modernizačního fondu a\nSociálně klimatického fondu.\n\n**Nezávislost — opraveno 2026-08-05**: detekce zdrojových rodin ověřila\npodpis obou textů — ČT24 nese `<meta name=\"author\" content=\"ČTK\">`\na Seznam Zprávy (SRC-29) uvádí jako autora ČTK v JSON-LD. Jde o dvě\nvydání téže agenturní zprávy; dřívější poznámka tvrdící samostatnou\nredakci byla nesprávná a je tímto opravena. Oba zdroje patří do rodiny\n`ctk`, CLM-47 proto nese stav `1 ZDROJ`."
     }
   ],
   "order": 34

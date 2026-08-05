@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
   },
   "text": "Obžalovanou v řízení, které skončilo nepravomocným rozsudkem ze 3. června 2026, bylo hnutí SPD jako právnická osoba; nešlo o rozsudek nad Tomiem Okamurou osobně, jehož trestní věc byla vyloučena k samostatnému projednání a jeho stíhání je přerušené.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-05"

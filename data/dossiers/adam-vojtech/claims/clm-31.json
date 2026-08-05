@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
   },
   "text": "Všeobecná zdravotní pojišťovna zařadila kontrolu FN Olomouc do plánu kontrol a prověřuje stovky implantací defibrilátorů provedených u svých klientů v letech 2023–2025; mluvčí Viktorie Plívová uvedla, že předmětem kontroly je posouzení, zda k implantaci došlo na základě indikačních pravidel oprávněně. Předběžné výsledky pojišťovna očekávala na podzim 2026.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-19"

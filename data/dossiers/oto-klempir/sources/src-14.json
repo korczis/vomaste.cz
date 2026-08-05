@@ -12,6 +12,7 @@
   "title": "SRC-14 — Aktuálně.cz",
   "description": "V centru Prahy protestovaly tisíce lidí na podporu nezávislosti veřejnoprávních médií",
   "outlet": "Aktuálně.cz",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://zpravy.aktualne.cz/domaci/v-centru-prahy-protestuji-tisice-lidi-na-podporu-nezavislosti-verejnopravnich-medii/r~aaa295e07a8f3e7d06aa9c8e981d514e/",
   "published": "2026-05-24",

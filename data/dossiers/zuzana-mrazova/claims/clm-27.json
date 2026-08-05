@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
   },
   "text": "Nájemní smlouva Mrázové na obecní byt v Bílině skončila 31. března 2026.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-22"

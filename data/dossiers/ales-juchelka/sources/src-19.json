@@ -12,6 +12,7 @@
   "title": "SRC-19 — Česká televize (ČT24)",
   "description": "Česko nepřijde o žádné finance, tvrdí Juchelka o kauze se střetem zájmů",
   "outlet": "Česká televize (ČT24)",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://ct24.ceskatelevize.cz/clanek/domaci/cesko-neprijde-o-zadne-finance-tvrdi-juchelka-o-kauze-se-stretem-zajmu-376012",
   "published": "2026-07-27",

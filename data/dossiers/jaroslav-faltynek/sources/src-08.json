@@ -12,6 +12,7 @@
   "title": "SRC-08 — ČT24 (Česká televize), 13. 9. 2019",
   "description": "ČT24 cituje Faltýnkovo vlastní vyjádření k důvodu zastavení jeho trestního stíhání v kauze Čapí hnízdo — jeho vlastní charakteristika, ne oficiální odůvodnění státního zástupce.",
   "outlet": "ČT24 (Česká televize)",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://ct24.ceskatelevize.cz/clanek/domaci/byla-to-umele-vytvorena-kauza-rika-faltynek-fiala-mluvi-o-pachuti-60253",
   "published": "2019-09-13",

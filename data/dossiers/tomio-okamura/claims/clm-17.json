@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
   },
   "text": "Tomio Okamura po vyhlášení nepravomocného rozsudku uvedl: „Cílem našich plakátů nebylo vyvolat nenávist, ale pojmenovat problémy, které reálně jsou“, a dodal: „V žádném případě jsme necílili na rasové pohnutky.“",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-07"

@@ -12,6 +12,7 @@
   "title": "SRC-37 — ČT24 (Česká televize), 28. 4. 2026",
   "description": "Na post náčelníka generálního štábu jsou čtyři kandidáti, uvedl Zůna pro ČT.",
   "outlet": "ČT24 (Česká televize)",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://ct24.ceskatelevize.cz/clanek/domaci/na-post-nacelnika-generalniho-stabu-jsou-ctyri-kandidati-uvedl-zuna-pro-ct-372912",
   "published": "2026-04-28",
