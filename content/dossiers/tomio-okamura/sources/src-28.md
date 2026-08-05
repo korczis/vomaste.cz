@@ -40,3 +40,11 @@ a nevypovídá nic o pozdějším osudu věci; ten dokládají jiné záznamy do
 (mimo jiné pozdější nevydání téhož poslance dne 5. 3. 2026). Pro úplnost:
 následující hlasování č. 91 téže schůze se týkalo vyřazení zbývajících bodů
 pořadu, nikoli osoby poslance.
+
+**Doplněno 2026-08-05 (kolo „připoj, co už v datech leží"):** zdroj je nově
+připojen i k [CLM-26](@/dossiers/tomio-okamura/claims/clm-26.md). Klubové rozpisy
+téhož výpisu dokládají jeho obsah doslova — pro vydání ODS 26, STAN 25, TOP 09 13,
+KDU-ČSL 12, Piráti 4 a nezařazený Ivo Vondrák 1 (celkem 81); proti ANO 43 a SPD 19
+(celkem 62). Dosavadní zdroje CLM-26 —
+[SRC-18](@/dossiers/tomio-okamura/sources/src-18.md) a
+[SRC-27](@/dossiers/tomio-okamura/sources/src-27.md) — patří oba do rodiny `ctk`.
