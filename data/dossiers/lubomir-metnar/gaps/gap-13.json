@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/gaps/GAP-13",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-13",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar"
+  },
+  "title": "GAP-13 — Nevyřešený rozpor v nákladech na stavbu sídla NKÚ",
+  "description": "Vlastní stránka NKÚ uvádí 914 mil. Kč včetně DPH při předpokládané ceně 940 mil. Kč; reportáž Seznam Zpráv mluví o „třetině z celkových 690 milionů korun“. K čemu se nižší údaj vztahuje, doloženo není.",
+  "priority": "střední",
+  "checked": "2026-08-05",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-24"
+    }
+  ],
+  "subjects": [
+    "metnar"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "[CLM-24](@/dossiers/lubomir-metnar/claims/clm-24.md) je vedeno jako **sporné**, protože se dvě doložení rozcházejí:\n\n- [SRC-13](@/dossiers/lubomir-metnar/sources/src-13.md) — vlastní stránka NKÚ „Za kolik?“: náklady na stavbu dosáhly **914 milionů korun** včetně 21% DPH, předpokládaná cena byla **940 milionů korun**.\n- [SRC-02](@/dossiers/lubomir-metnar/sources/src-02.md) — Seznam Zprávy: NKÚ si našetřil **třetinu z celkových 690 milionů korun**.\n\n**Co se nepodařilo doložit.** K jaké veličině se údaj 690 mil. Kč vztahuje — zda ke staršímu odhadu, k vysoutěžené ceně zhotovitele bez DPH, k samotné stavební části bez vybavení, nebo k něčemu jinému. Stránka NKÚ **neuvádí** rozdělení financování mezi státní rozpočet a vlastní úspory úřadu, takže ani podíl „třetiny“ z ní ověřit nelze. Reportáž Seznam Zpráv zdroj svého čísla neuvádí.\n\n**Co z toho neplyne.** Neplyne z toho, že by kterýkoli z údajů byl nepravdivý, ani cokoli o hospodárnosti stavby. Plyne z toho jen, že se dvě čísla o téže věci liší a smířit je otevřenými zdroji nešlo.\n\n**Podmínka uzavření**: doložený rozpis financování stavby (státní rozpočet vs. nároky z nespotřebovaných výdajů) z primárního dokumentu — například z materiálu pro vládu čj. 676/16 nebo z usnesení vlády č. 497/2016, na která stránka NKÚ odkazuje."
+    }
+  ],
+  "order": 13
+}

@@ -21,3 +21,5 @@ směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
 
 **Opakovaná kontrola k 2026-08-03**: cílené hledání zopakováno, žádný novější zdroj k procesnímu vývoji této oddělené věci nedohledán. Mezera zůstává otevřená.
+
+**Opakovaná kontrola k 2026-08-05 (primární dokumenty)**: nově je doložena spisová značka samostatně vedené věci — **1 T 95/2025** u Obvodního soudu pro Prahu 1 — což příští kontrolu zpřesňuje. **Co konkrétně chybí**: úřední záznam o úkonech v této věci po 12. březnu 2026. Přerušené stíhání se podle citovaných zdrojů odvíjí od trvání poslaneckého mandátu; zda a kdy bude obnoveno, z dostupných dokumentů doložit nelze. Mezera zůstává otevřená.

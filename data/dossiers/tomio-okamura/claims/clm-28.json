@@ -9,7 +9,7 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
   },
-  "text": "Sněmovna 5. března 2026 Tomia Okamuru k trestnímu stíhání nevydala; pro nevydání hlasovalo 104 ze 186 přítomných poslanců, pro vydání 82. Jde o parlamentní procesní rozhodnutí, nikoli o posouzení pravdivosti obvinění.",
+  "text": "Sněmovna 5. března 2026 Tomia Okamuru k trestnímu stíhání nevydala: v 9. hlasování 11. schůze přijala usnesení, jímž „vyslovuje nesouhlas k žádosti o udělení souhlasu k trestnímu stíhání Tomia Okamury“, a to 104 hlasy ze 186 přihlášených poslanců, proti tomuto usnesení hlasovalo 82. Návrh, aby se hlasovalo tajně, Sněmovna předtím zamítla. Jde o parlamentní procesní rozhodnutí, nikoli o posouzení pravdivosti obvinění.",
   "status": "status-corroborated",
   "statusLabel": "CORROBORATED",
   "sources": [
@@ -21,6 +21,9 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-29"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-31"
     }
   ],
   "subjects": [
@@ -32,5 +35,6 @@
       "type": "markdown",
       "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/tomio-okamura/_index.md#registr-tvrzeni)."
     }
-  ]
+  ],
+  "checkedAt": "2026-08-05"
 }

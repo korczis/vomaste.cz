@@ -9,15 +9,18 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar"
   },
-  "text": "O návrhu jako první informoval server Seznam Zprávy ve středu 29. července 2026; ostatní česká média zprávu následně přebírala. Doloženo více tituly, které ale přebírají tutéž původní reportáž Seznam Zpráv — nejde o nezávislé potvrzení.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "text": "O návrhu jako první informoval server Seznam Zprávy ve středu 29. července 2026; ostatní česká média zprávu následně přebírala.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-02"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-08"
     }
   ],
   "subjects": [
@@ -27,7 +30,8 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/lubomir-metnar/_index.md#registr-tvrzeni)."
+      "value": "**Povýšeno 2026-08-05.** ČTK ve zprávě z 30. 7. 2026 sama uvádí: „O návrhu ministerstva vnitra informoval ve středu server Seznam Zprávy“ ([SRC-08](@/dossiers/lubomir-metnar/sources/src-08.md)). To je doložení prvenství od vydavatele mimo seznamovou linii, nikoli další převzetí téhož textu. Věta o nesamostatnosti přebírek byla z textu tvrzení odstraněna, protože pro toto konkrétní tvrzení už neplatí.\n\n**Co to není.** Tvrzení se týká pouze pořadí publikace, ne obsahu ani správnosti reportáže."
     }
-  ]
+  ],
+  "checkedAt": "2026-08-05"
 }

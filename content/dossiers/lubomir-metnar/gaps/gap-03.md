@@ -21,3 +21,5 @@ směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
 
 **Opakovaná kontrola k 2026-08-03**: cílené hledání zopakováno včetně dotazů přímo na policejní statistiky a Ochrannou službu Policie ČR. Ani přesný počet policistů přidělených k ochraně NKÚ, ani vyčíslení úspory na straně policie/státu nebyly v žádném přímo otevřeném zdroji nalezeny. Mezera zůstává otevřená.
+
+**Opakovaná kontrola k 2026-08-05**: přibyl primární údaj z opačné strany — NKÚ ve své tiskové zprávě varuje před dodatečnými náklady „v řádu desítek milionů korun“ ([CLM-31](@/dossiers/lubomir-metnar/claims/clm-31.md), [SRC-09](@/dossiers/lubomir-metnar/sources/src-09.md)). To je ale **odhad dotčeného úřadu o svých vlastních nákladech**, ne vyčíslení úspory na straně státu nebo policie a ne počet policistů. Původní otázka tedy zůstává otevřená v obou svých částech.
