@@ -1,0 +1,17 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-09",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-09",
+  "dossier": { "@id": "https://vomaste.cz/id/dossiers/james-quick" },
+  "text": "Česká justice 14. srpna 2020 s odkazem na prohlášení ÚOOÚ uvedla, že správce osobních údajů systému CERD neprovedl uložená opatření k nápravě, že úřad následně přes poskytovatele služeb dosáhl znepřístupnění webových stránek registru a že poté zahájil řízení o sankci za nepřijetí opatření k nápravě; provozovatel si podle textu zajistil nového poskytovatele, indickou společnost hostující IP adresy systému na území Ruska.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [{ "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-10" }],
+  "subjects": ["james-quick"],
+  "order": 9,
+  "content": [{ "type": "markdown", "value": "Tvrzení doplnila revize 2026-08-05: dossier dosud uváděl kontrolní zjištění ÚOOÚ z roku 2018, ale mlčel o tom, jak věc procesně pokračovala, což čtenáři nechávalo otevřený a zavádějící konec. Celý obsah je připsán zdroji a přes něj úřadu — web sám nekonstatuje, že k porušení došlo. Zahájení řízení o sankci není totéž co uložená sankce: zdroj z roku 2020 výslovně píše, že úřad rozhodnutí teprve připravoval, a jak řízení dopadlo, dossier neví (GAP-03). Tvrzení také nejmenuje fyzickou osobu — zdroj mluví o správci a provozovateli, identitu nese odděleně CLM-01 — a nelze je číst jako doklad trestní odpovědnosti kohokoli." }]
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/updates/2026-08-05",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-08-05",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar"
+  },
+  "date": "2026-08-05",
+  "summary": "Korroborační kolo po revizi zdrojových rodin (T-056/T-057), po níž tento dossier neměl ani jedno tvrzení ve stavu CORROBORATED — všech 9 zdrojů spadalo do tří rodin (ctk, seznam-zpravy-syndication, tisková zpráva NKÚ). CLM-25 povýšeno na CORROBORATED: dosavadní SRC-06 (Blesk.cz) i SRC-07 (Hospodářské noviny) patří oba do rodiny ctk, přibylo vlastní zpravodajství Echo24 (SRC-10, podepsáno Janem Křovákem, v celém HTML ani jedna zmínka ČTK) s doslovnou citací prezidenta jmenující NKÚ. CLM-26 povýšeno na CORROBORATED bez nového výzkumu: tisková zpráva NKÚ (SRC-09), už v datasetu, doslovně popisuje rozhodnutí vlády z 27. 7. 2026 o vyřazení sídla NKÚ a zařazení ČNB, ale byla připojena jen k CLM-27/28. Nově CLM-29 s primárním úředním záznamem vlády (SRC-11): bod 28, čj. 591/26, předkladatel ministr vnitra, výsledek schváleno — záznam sám ale neuvádí, kterých objektů se změna týká, což je v jeho redakční poznámce výslovně uvedeno. Zamítnuto jako nezávislé doložení: Advokátní deník (23. 7. 2026) uvádí u téže věci zdroj ČTK, e15.cz je podepsán ČTK — obojí by jen zopakovalo už započtenou rodinu; tisková zpráva NKÚ nedokládá částku ~20 milionů korun z CLM-05 (mluví o „desítkách milionů“) a neobsahuje citaci z CLM-03 v doslovném znění.",
+  "addedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-29"
+    }
+  ],
+  "updatedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-25"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-26"
+    }
+  ],
+  "addedGaps": [],
+  "closedGaps": [],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-11"
+    }
+  ]
+}

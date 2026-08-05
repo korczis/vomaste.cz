@@ -68,6 +68,73 @@ if (errors) {
 }
 console.log(`OK — full-page doktrína: ${claims} stránek tvrzení a ${sources} stránek zdrojů má zdroje/tvrzení, metadata i Git provenance.`);
 
+// ---- Přehledové řádky tvrzení se skutečně renderují jako tabulka.
+// Parita řádek se záznamy je datové pravidlo (T1–T3 ve
+// validate-registry-table.mjs), jenže to čte kanonický model, kde je
+// tabulka jen řetězec markdownu — nevidí, KAM v něm řádka padla. Když
+// se řádka ocitne mimo tělo tabulky (nad hlavičkou `| ID | Tvrzení | …`,
+// nebo v sekci, která žádnou hlavičku nemá), markdown ji vysází jako
+// odstavec s rourami: parita dál platí, čtenář místo tabulky vidí
+// slepenec textu. Přesně to se stalo 14 z 22 dossierů a žádná brána to
+// nezachytila, protože zdrojová data byla v pořádku. Tahle kontrola se
+// proto dívá na HOTOVÉ HTML — na to, co čtenář opravdu dostane.
+//
+// Dossier smí mít tabulek víc (andrej-babis rozpadá registr na tabulku
+// per kauzu), takže se nekontroluje jedna konkrétní sekce, ale celá
+// stránka: každá kotva `clm-##` musí ležet uvnitř nějakého <table> a
+// dohromady jich musí být tolik, kolik má dossier vygenerovaných
+// stránek tvrzení.
+const DOS = join(PUB, "dossiers");
+let tableErrors = 0;
+let checkedTables = 0;
+for (const slug of readdirSync(DOS)) {
+  if (!statSync(join(DOS, slug)).isDirectory()) continue;
+  let h;
+  try {
+    h = readFileSync(join(DOS, slug, "index.html"), "utf8");
+  } catch {
+    continue;
+  }
+
+  let pageCount = 0;
+  try {
+    pageCount = readdirSync(join(DOS, slug, "claims")).filter((n) => /^clm-\d+$/.test(n)).length;
+  } catch {
+    pageCount = 0;
+  }
+  if (pageCount === 0) continue; // entitní projekce bez vlastních záznamů
+
+  const anchor = /id=["']?(clm-\d+)["']?/g;
+  const inTable = new Set();
+  const outside = new Set();
+  // Tabulkové oblasti hotového HTML; kotva mimo ně = řádka, kterou
+  // markdown nevysázel do tabulky.
+  const ranges = [...h.matchAll(/<table\b[\s\S]*?<\/table>/gi)].map((m) => [m.index, m.index + m[0].length]);
+  for (const m of h.matchAll(anchor)) {
+    const at = m.index;
+    (ranges.some(([s, e]) => at >= s && at < e) ? inTable : outside).add(m[1]);
+  }
+
+  checkedTables++;
+  if (outside.size) {
+    tableErrors++;
+    const list = [...outside].sort().slice(0, 8).join(", ");
+    console.error(
+      `  ERROR dossiers/${slug}/: ${outside.size} řádek tvrzení se nerenderuje uvnitř tabulky (${list}${outside.size > 8 ? ", …" : ""}) — řádka v dossier.json nejspíš stojí nad hlavičkou tabulky nebo v sekci bez hlavičky.`,
+    );
+  } else if (inTable.size !== pageCount) {
+    tableErrors++;
+    console.error(
+      `  ERROR dossiers/${slug}/: přehledové tabulky mají ${inTable.size} řádek, ale dossier má ${pageCount} stránek tvrzení.`,
+    );
+  }
+}
+if (tableErrors) {
+  console.error(`\n✗ Přehledové tabulky tvrzení (${tableErrors} nálezů) — viz AGENTS.md „Two representations, one source of truth".`);
+  process.exit(1);
+}
+console.log(`OK — přehledové tabulky tvrzení: ${checkedTables} dossierů sází každou řádku uvnitř tabulky, v úplném počtu.`);
+
 // ---- Flowbite doktrína (AGENTS.md): utility-first šablony bez inline
 // stylů. Jediná povolená výjimka by musela mít odůvodnění v allowlistu
 // níže (dnes prázdný). Kontroluje ZDROJOVÉ šablony, ne výstup.

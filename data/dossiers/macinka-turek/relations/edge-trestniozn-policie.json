@@ -18,7 +18,7 @@
   },
   "relationType": "PROCEDURALLY_CLOSED_BY",
   "label": "odloženo policií pro promlčení — procesní krok, ne rozhodnutí o vině; nepravomocné",
-  "status": "corroborated",
+  "status": "single",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-27"

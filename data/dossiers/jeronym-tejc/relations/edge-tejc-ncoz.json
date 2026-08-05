@@ -18,7 +18,7 @@
   },
   "relationType": "ASSOCIATED_WITH_EVENT",
   "label": "NCOZ zahájila trestní stíhání v bitcoinové kauze, kterou ministr oznámil",
-  "status": "corroborated",
+  "status": "single",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-19"

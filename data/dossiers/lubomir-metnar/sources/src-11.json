@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-11",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-11",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar"
+  },
+  "title": "SRC-11 — Vláda ČR: Výsledky jednání vlády 27. července 2026 (bod 28, čj. 591/26)",
+  "description": "Oficiální záznam výsledků jednání vlády z 27. 7. 2026: bod 28 „Návrh na změnu usnesení vlády ze dne 16. prosince 2008 č. 1604 k zajišťování bezpečnosti chráněných objektů a prostorů“, předkladatel ministr vnitra, výsledek „schváleno“.",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "primární úřední záznam",
+  "url": "https://vlada.gov.cz/cz/vysledky-jednani-vlady-27--cervence-2026-228161/",
+  "published": "2026-07-27",
+  "retrieved": "2026-08-05",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-29"
+    }
+  ],
+  "subjects": [
+    "metnar"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Primární úřední záznam vlády**, otevřen a přečten 2026-08-05.\n\n**Co dokládá doslovně:** v seznamu projednaných bodů jednání vlády\n27. července 2026 stojí pod pořadovým číslem 28: „Návrh na změnu\nusnesení vlády ze dne 16. prosince 2008 č.1604 k zajišťování bezpečnosti\nchráněných objektů a prostorů, ve znění usnesení vlády ze dne 13.\nčervence 2011 č. 518 a usnesení vlády ze dne 24. července 2017 č. 544“,\nčj. 591/26, „Předkládá: ministr vnitra“, „Výsledek jednání vlády:\nschváleno“. To je doložení\n[CLM-29](@/dossiers/lubomir-metnar/claims/clm-29.md).\n\n**Co NEdokládá — a proto to tenhle dossier netvrdí:** stránka neuvádí\nobsah schválené změny. Nejmenuje ani Nejvyšší kontrolní úřad, ani Českou\nnárodní banku a neříká, který objekt byl ze seznamu vyřazen a který\npřidán. Věcný obsah rozhodnutí stojí na jiných zdrojích —\n[SRC-08](@/dossiers/lubomir-metnar/sources/src-08.md) (agenturní\nzpravodajství) a [SRC-09](@/dossiers/lubomir-metnar/sources/src-09.md)\n(tisková zpráva NKÚ) — a je zaznamenán v\n[CLM-26](@/dossiers/lubomir-metnar/claims/clm-26.md). Tento záznam k němu\ndoplňuje procesní ukotvení: pod jakým bodem, s jakým číslem jednacím a od\nkoho návrh přišel.\n\n**Nezávislost:** vlastní evidence vlády, tedy orgánu, který rozhodl —\nne zpravodajský text a ne rodina `ctk`. Jde o procesní záznam, ne\no zjištění o správnosti či nesprávnosti přijaté změny."
+    }
+  ],
+  "order": 11
+}

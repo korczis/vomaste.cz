@@ -13,7 +13,9 @@
   "dossierEnabled": false,
   "dossierStatus": "not_authorized",
   "coverageState": "referenced",
-  "dossiers": [],
+  "dossiers": [
+    "martin-pavlik"
+  ],
   "order": 470,
   "description": "Lesy České republiky, s.p. (IČO 42196451) — kontextový záznam zveřejňujícího subjektu z registru smluv, ne dossier.",
   "provenance": {

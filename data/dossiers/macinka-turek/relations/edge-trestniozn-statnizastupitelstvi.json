@@ -18,7 +18,7 @@
   },
   "relationType": "SUBJECT_OF_PROCEEDING",
   "label": "OSZ pro Prahu 4 odložení oznámilo; o stížnosti ženy rozhoduje státní zástupkyně",
-  "status": "corroborated",
+  "status": "single",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-27"

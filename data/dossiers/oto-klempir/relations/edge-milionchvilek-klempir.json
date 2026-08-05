@@ -18,7 +18,7 @@
   },
   "relationType": "RESPONDED_TO",
   "label": "demonstrace a petice proti návrhu financování veřejnoprávních médií",
-  "status": "corroborated",
+  "status": "single",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-18"

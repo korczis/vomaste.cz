@@ -13,7 +13,9 @@
   "dossierEnabled": false,
   "dossierStatus": "not_authorized",
   "coverageState": "referenced",
-  "dossiers": [],
+  "dossiers": [
+    "martin-pavlik"
+  ],
   "order": 469,
   "description": "HYDROPROGRESS, s.r.o. (IČO 04449461) — kontextový záznam rejstříkové vazby z ARES, ne dossier.",
   "provenance": {

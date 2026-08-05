@@ -18,7 +18,7 @@
   },
   "relationType": "SUBJECT_OF_PROCEEDING",
   "label": "obžaloba EPPO z 22. 6. 2026 (společnost + 2 osoby) — obžaloba není rozhodnutí o vině",
-  "status": "corroborated",
+  "status": "single",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-57"

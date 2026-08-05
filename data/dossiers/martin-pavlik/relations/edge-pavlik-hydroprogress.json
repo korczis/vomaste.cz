@@ -2,14 +2,14 @@
   "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
   "schemaVersion": 1,
   "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/relations/edge-pavlik-hydroprogress",
   "@type": "vomaste:Relation",
   "recordType": "relation",
-  "identifier": "edge-pavlik-hydroprogress-podil",
-  "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/relations/edge-pavlik-hydroprogress-podil",
-  "relationId": "edge-pavlik-hydroprogress-podil",
+  "identifier": "edge-pavlik-hydroprogress",
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/martin-pavlik"
   },
+  "relationId": "edge-pavlik-hydroprogress",
   "sourceEntity": {
     "@id": "https://vomaste.cz/id/entities/martin-pavlik"
   },
@@ -17,15 +17,20 @@
     "@id": "https://vomaste.cz/id/entities/hydroprogress-s-r-o"
   },
   "relationType": "HOLDS_INTEREST_IN",
-  "label": "Martin Pavlík drží podle veřejného rejstříku 80% podíl v HYDROPROGRESS, s.r.o.",
+  "label": "jednatel a společník s podílem 80 %",
   "status": "single",
-  "directed": true,
   "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/claims/CLM-03"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/claims/CLM-05"
     }
   ],
   "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/sources/SRC-01"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/sources/SRC-02"
     }
@@ -33,11 +38,12 @@
   "subjects": [
     "martin-pavlik"
   ],
-  "order": 2,
+  "directed": true,
+  "order": 1,
   "content": [
     {
       "type": "markdown",
-      "value": "Držba podílu je veřejně evidovaný fakt. Hrana nevyjadřuje hodnocení ani podezření."
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Rejstříkový zápis, ne tvrzení o pochybení."
     }
   ]
 }

@@ -2,36 +2,49 @@
   "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
   "schemaVersion": 1,
   "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/sources/SRC-02",
   "@type": "vomaste:Source",
   "recordType": "source",
   "identifier": "SRC-02",
-  "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/sources/SRC-02",
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/martin-pavlik"
   },
-  "title": "SRC-02 — ARES: veřejný rejstřík, výpis HYDROPROGRESS, s.r.o. (IČO 04449461)",
-  "description": "Primární rejstříkový výpis ze sub-registru VR: obsazení statutárního orgánu, podíly společníků a základní kapitál, včetně dat zápisu.",
-  "outlet": "ARES (Ministerstvo financí ČR)",
-  "sourceFamily": "ares-gov-cz",
-  "sourceType": "primární veřejný rejstřík",
+  "title": "SRC-02 — ARES, rejstříkový (VR) výpis: IČO 04449461, 01529820, 26228548, 02922703",
+  "description": "Primární výpis z veřejného rejstříku (ARES, větev VR) pro čtyři subjekty, v nichž je Martin Pavlík zapsán: HYDROPROGRESS, s.r.o., MEDIA PROJECT CZ s.r.o., Nadační fond FIDUCIA a Bydlíme v Králově Poli, z.s. Doloženy zapsané funkce i velikosti obchodních podílů.",
+  "outlet": "ARES — Administrativní registr ekonomických subjektů (Ministerstvo financí ČR)",
+  "sourceType": "primární úřední záznam",
   "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/04449461",
+  "published": "2026-08-05",
   "retrieved": "2026-08-05",
   "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/claims/CLM-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/claims/CLM-03"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/claims/CLM-04"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/claims/CLM-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/claims/CLM-06"
     }
   ],
   "subjects": [
     "martin-pavlik"
   ],
-  "order": 2,
   "content": [
     {
       "type": "markdown",
-      "value": "Strojově čitelný výpis z veřejného rejstříku, pořízený 5. 8. 2026. Čtou se z něj pouze záznamy **v platnosti**, tedy bez `datumVymazu`; historické verze zápisu se nezaměňují za souběžná funkční období.\n\n**Metodická poznámka k nezávislosti**: SRC-01 (Podnikatel.cz) přebírá tytéž veřejné rejstříky. Ačkoli jde o jiného vydavatele i doménu, **nejsou to dvě nezávislá doložení** — obojí vychází z téhož zápisu. Tvrzení opřená o rejstřík proto zůstávají ve stavu 1 ZDROJ i tam, kde je uvádí obě stránky.\n\nDatum narození ani adresa bydliště se z výpisu nepřebírají, přestože je obsahuje."
+      "value": "**Primární rejstříkový zdroj**, otevřen přímo 2026-08-05 nástrojem\ntohoto projektu (`scripts/osint/expand-entity.mjs`, režim dry run) proti\nrejstříkové (VR) větvi ARES. Uvedená URL je záznam HYDROPROGRESSu;\ntotožným dotazem byly otevřeny i výpisy IČO 01529820, 26228548\na 02922703.\n\n**Co dokládá:** zapsané funkce Martina Pavlíka ve všech čtyřech\nsubjektech a — u obou společností s ručením omezeným — velikost jeho\nobchodního podílu: HYDROPROGRESS, s.r.o. „jednatel; společník (podíl\n80,00)\", MEDIA PROJECT CZ s.r.o. „jednatel; společník (podíl 50,00)\",\nNadační fond FIDUCIA „člen orgánu\", Bydlíme v Králově Poli, z.s.\n„1. místopředseda\".\n\n**Nezávislost — žádná tu není.** Rejstříkový agregátor\n[SRC-01](@/dossiers/martin-pavlik/sources/src-01.md) (Podnikatel.cz) je\nodvozeným přehledem právě těchto rejstříkových dat. Odvozený přehled\nnemůže svému zdroji odporovat: kdyby byl zápis chybný, agregátor by\ntutéž chybu přetiskl. Že registr vede stát a agregátor soukromá firma,\nnezakládá nezávislost, když je datový podklad tentýž — nezávislost\nznamená, že druhý zdroj mohl dojít k jinému výsledku.\n\nOba proto sdílejí source family `cz-verejny-rejstrik` a tvrzení opřená pouze o ně\nnesou stav 1 ZDROJ. Nezávislé potvrzení by musel přinést zdroj jiné\npovahy — sbírka listin, smluvní dokument nebo redakční zjištění.\n\n**Co tento záznam vědomě NEpřebírá:** datum narození ani adresu\nbydliště. Rejstřík obojí obsahuje; nástroj to odstraňuje v kódu\n(`stripPersonalData()`), ne konvencí, a tento dossier to nepřebírá ani\nnepřímo. Veřejnost rejstříku nedělá ze zveřejnění bydliště přiměřený\nkrok.\n\n**Co NEdokládá:** nic o kvalitě podnikání, o plnění veřejných zakázek\nani o jakémkoli pochybení. Zápis funkce nebo podílu je evidenční fakt,\nne podezření. Rejstřík také nedokládá totožnost napříč subjekty nad\nrámec shody zapsaného jména — proto\n[GAP-01](@/dossiers/martin-pavlik/gaps/gap-01.md) zůstává otevřená."
     }
-  ]
+  ],
+  "order": 2,
+  "sourceFamily": "cz-verejny-rejstrik"
 }

@@ -18,7 +18,7 @@
   },
   "relationType": "ASSOCIATED_WITH_EVENT",
   "label": "projednávání nové koncepce armády do roku 2040 na Bezpečnostní radě státu (červen–červenec 2026)",
-  "status": "corroborated",
+  "status": "single",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-34"

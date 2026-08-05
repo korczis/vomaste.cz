@@ -18,7 +18,7 @@
   },
   "relationType": "SUBJECT_OF_PROCEEDING",
   "label": "trestní stíhání přerušeno pro nevydání Sněmovnou, věc vyloučena k samostatnému projednání",
-  "status": "corroborated",
+  "status": "single",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-30"

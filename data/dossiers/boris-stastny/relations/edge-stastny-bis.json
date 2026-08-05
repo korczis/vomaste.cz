@@ -18,7 +18,7 @@
   },
   "relationType": "ASSOCIATED_WITH_EVENT",
   "label": "BIS nález nahrávacího zařízení oficiálně neprověřovala, protože jí nebyl nahlášen",
-  "status": "corroborated",
+  "status": "single",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-10"

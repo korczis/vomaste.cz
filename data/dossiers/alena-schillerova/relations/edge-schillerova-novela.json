@@ -18,7 +18,7 @@
   },
   "relationType": "ASSOCIATED_WITH_EVENT",
   "label": "Schillerová prosadila novelu rozpočtových zákonů, kterou obhajovala jako řešení rozpočtové pasti",
-  "status": "corroborated",
+  "status": "single",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-05"

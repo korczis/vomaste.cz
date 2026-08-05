@@ -14,4 +14,4 @@ record_type = "claim"
 lang = "cs"
 clm_id = "CLM-02"
 +++
-Jde o přesné shrnutí závěru úřední kontroly. Toto tvrzení je odděleno od identity fyzické osoby: propojení tehdejšího Jiřího Jehličky, nyní Jamese Quicka, s kontrolou dokládá samostatně SRC-01. Závěr kontroly není trestním rozsudkem a dossier jej tak nepředstavuje.
+Jde o přesné shrnutí závěru úřední kontroly. Toto tvrzení je odděleno od identity fyzické osoby: propojení tehdejšího Jiřího Jehličky, nyní Jamese Quicka, s kontrolou dokládá samostatně SRC-01. Závěr kontroly není trestním rozsudkem a dossier jej tak nepředstavuje. Revizí 2026-08-05 byl doplněn druhý primární doklad — datovaná tisková zpráva ÚOOÚ z 20. 9. 2018 (SRC-09) — aby tvrzení nestálo na jediné nedatované podstránce. Oba doklady vydal týž úřad, takže podle pravidla S10 nejde o nezávislé potvrzení a stav zůstává 1 ZDROJ; nezávislé redakční doložení této kontroly dossier zatím nemá.

@@ -13,7 +13,9 @@
   "dossierEnabled": false,
   "dossierStatus": "not_authorized",
   "coverageState": "referenced",
-  "dossiers": [],
+  "dossiers": [
+    "martin-pavlik"
+  ],
   "order": 473,
   "description": "\"Nadační fond FIDUCIA\" (IČO 26228548) — kontextový záznam rejstříkové vazby z ARES, ne dossier.",
   "provenance": {

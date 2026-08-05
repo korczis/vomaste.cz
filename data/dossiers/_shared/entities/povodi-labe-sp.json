@@ -13,7 +13,9 @@
   "dossierEnabled": false,
   "dossierStatus": "not_authorized",
   "coverageState": "referenced",
-  "dossiers": [],
+  "dossiers": [
+    "martin-pavlik"
+  ],
   "order": 470,
   "description": "Povodí Labe, státní podnik (IČO 70890005) — kontextový záznam zveřejňujícího subjektu z registru smluv, ne dossier.",
   "provenance": {

@@ -44,35 +44,34 @@ Odpovídá na otázku „kam se podívat a čemu z toho věřit". Publikovaná p
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 623 záznamů v 101 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 628 záznamů v 97 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
 | ctk | 290 | 21 | — |
 | seznam-zpravy | 34 | 13 | — |
-| Vláda České republiky (vlada.gov.cz) | 22 | 16 | — |
+| Vláda České republiky (vlada.gov.cz) | 23 | 17 | — |
 | FORUM 24 | 19 | 9 | — |
-| Poslanecká sněmovna Parlamentu ČR | 17 | 14 | — |
+| Poslanecká sněmovna Parlamentu ČR | 18 | 14 | — |
 | denik-n | 16 | 9 | — |
-| Echo24 | 12 | 8 | — |
+| Echo24 | 13 | 9 | — |
+| ČT24 (Česká televize) | 12 | 7 | — |
 | denik-cz | 11 | 6 | — |
 | Aktuálně.cz | 11 | 6 | — |
-| Česká justice | 10 | 5 | — |
+| Česká justice | 11 | 6 | — |
 | Ekonomický deník | 9 | 5 | — |
 | Novinky.cz | 9 | 8 | — |
 | hlidac-statu | 8 | 3 | [ano](/zdroje/hlidac-statu/) |
-| ČT24 (Česká televize) | 8 | 6 | — |
-| irozhlas | 7 | 5 | — |
+| irozhlas | 8 | 6 | — |
 | Blesk.cz | 5 | 3 | — |
-| ceska-televize | 4 | 1 | — |
 | e15.cz | 4 | 2 | — |
 | HlídacíPes.org | 4 | 4 | — |
+| Hospodářské noviny | 4 | 3 | — |
 | Ministerstvo dopravy ČR | 4 | 1 | — |
 | Reflex | 4 | 4 | — |
 | Respekt | 4 | 3 | — |
 | Zdravé zprávy | 4 | 2 | — |
 | CNN Prima News | 3 | 3 | — |
-| Hospodářské noviny | 3 | 2 | — |
 | Investigace.cz | 3 | 3 | — |
 | Ministerstvo financí ČR | 3 | 1 | — |
 | Ministerstvo školství, mládeže a tělovýchovy ČR | 3 | 1 | — |
@@ -80,6 +79,8 @@ Dopočítáno z `data/dossiers/**/sources/**`, 623 záznamů v 101 rodinách/out
 | Národní rozpočtová rada | 3 | 1 | — |
 | Tiscali.cz | 3 | 3 | — |
 | Transparency International ČR | 3 | 2 | — |
+| Úřad pro ochranu osobních údajů | 3 | 1 | — |
+| cz-verejny-rejstrik | 2 | 1 | — |
 | ARES — Administrativní registr ekonomických subjektů (Ministerstvo financí ČR) | 2 | 2 | — |
 | CZDEFENCE | 2 | 1 | — |
 | Fakultní nemocnice Olomouc (oficiální web) | 2 | 1 | — |
@@ -90,10 +91,6 @@ Dopočítáno z `data/dossiers/**/sources/**`, 623 záznamů v 101 rodinách/out
 | Olomoucký deník | 2 | 1 | — |
 | Pražský deník | 2 | 1 | — |
 | Ústavní soud ČR | 2 | 2 | — |
-| uoou | 2 | 1 | — |
-| ares-gov-cz | 1 | 1 | — |
-| cesky-rozhlas | 1 | 1 | — |
-| economia | 1 | 1 | — |
 | idnes-dividenda-2026-07 | 1 | 1 | — |
 | ACRI — Asociace podniků českého železničního průmyslu | 1 | 1 | — |
 | Agrofert (agrofert.cz) | 1 | 1 | — |
@@ -147,7 +144,6 @@ Dopočítáno z `data/dossiers/**/sources/**`, 623 záznamů v 101 rodinách/out
 | YouControl | 1 | 1 | — |
 | Zdopravy.cz | 1 | 1 | — |
 | Život v Česku | 1 | 1 | — |
-| podnikatel-cz-rejstrik | 1 | 1 | [ano](/zdroje/podnikatel-cz-rejstrik/) |
 | smlouvy-gov-cz | 1 | 1 | — |
 
 ## Chybí popis
@@ -156,17 +152,17 @@ Tyhle zdroje dataset používá aspoň pětkrát, ale katalog k nim nemá zázna
 
 - ctk (290×)
 - seznam-zpravy (34×)
-- Vláda České republiky (vlada.gov.cz) (22×)
+- Vláda České republiky (vlada.gov.cz) (23×)
 - FORUM 24 (19×)
-- Poslanecká sněmovna Parlamentu ČR (17×)
+- Poslanecká sněmovna Parlamentu ČR (18×)
 - denik-n (16×)
-- Echo24 (12×)
+- Echo24 (13×)
+- ČT24 (Česká televize) (12×)
 - denik-cz (11×)
 - Aktuálně.cz (11×)
-- Česká justice (10×)
+- Česká justice (11×)
 - Ekonomický deník (9×)
 - Novinky.cz (9×)
-- ČT24 (Česká televize) (8×)
-- irozhlas (7×)
+- irozhlas (8×)
 - Blesk.cz (5×)
 

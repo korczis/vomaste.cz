@@ -18,7 +18,7 @@
   },
   "relationType": "ASSOCIATED_WITH_EVENT",
   "label": "vedení resortu při systemizaci, která zrušila 38 míst a zanikající oddělení (2026)",
-  "status": "corroborated",
+  "status": "single",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-47"

@@ -18,7 +18,7 @@
   },
   "relationType": "HOLDS_ROLE",
   "label": "vedl armádu od července 2022 do 31. srpna 2026",
-  "status": "corroborated",
+  "status": "single",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-21"
