@@ -16,7 +16,7 @@
   "sourceType": "zpravodajství",
   "url": "https://ct24.ceskatelevize.cz/clanek/domaci/mrazova-citi-babisovu-podporu-opozice-dale-zada-rezignaci-373216",
   "published": "2026-05-07",
-  "retrieved": "2026-07-30",
+  "retrieved": "2026-08-05",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-09"
@@ -32,6 +32,9 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-17"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-13"
     }
   ],
   "subjects": [
@@ -40,7 +43,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "**Mrázová cítí Babišovu podporu. Opozice dále žádá rezignaci**\n\nSouhrn tiskové konference 7. 5. 2026: obhajoba obecního bytu (130 m², ~4 500 Kč, od 2009; podle Mrázové s energiemi 14–18 tisíc Kč a splnění tehdejších podmínek města), černé stavby na parcele vedené jako lesní plocha (dům s komínem, pergola, přístřešek), výzvy k rezignaci od Pirátů, STAN, ODS, KDU-ČSL a TOP 09, podpora premiéra Babiše, který odvolání vyloučil.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+      "value": "**Mrázová cítí Babišovu podporu. Opozice dále žádá rezignaci**\n\nSouhrn tiskové konference 7. 5. 2026: obhajoba obecního bytu (130 m², ~4 500 Kč, od 2009; podle Mrázové s energiemi 14–18 tisíc Kč a splnění tehdejších podmínek města), černé stavby na parcele vedené jako lesní plocha (dům s komínem, pergola, přístřešek), výzvy k rezignaci od Pirátů, STAN, ODS, KDU-ČSL a TOP 09, podpora premiéra Babiše, který odvolání vyloučil.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji.\n\n**Doplněno 2026-08-05 (T-070).** Zdroj znovu otevřen a přečten; přiřazen i k [CLM-13](@/dossiers/zuzana-mrazova/claims/clm-13.md), které dosud stálo jen na dvou textech FORUM 24 (týž vydavatel — S10). ČT24 z téže tiskové konference 7. 5. 2026 nezávisle dokládá tytéž tři prvky: že podle Mrázové „pozemky získala už se stavbami a nevěděla, že jsou tam načerno“, že se „omluvila naopak za nedůslednost v případě pozemku“ a že „podala žádost o změnu funkčního využití pozemku“. **Limit:** doslovná formulace „vycházela z předpokladu, že jsou v souladu s právními předpisy“ pochází z FORUM 24; ČT24 tutéž věc reprodukuje jinými slovy, doslovnou citaci tedy nese jediný vydavatel."
     }
   ],
   "order": 6

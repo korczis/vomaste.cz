@@ -1,0 +1,64 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/updates/2026-08-05",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-08-05",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "date": "2026-08-05",
+  "summary": "T-070 — posílení evidence u tvrzení třídy „≥2 citace, jedna rodina“. Prověřeno 12 takových tvrzení; 6 povýšeno na CORROBORATED nezávislým dokladem (sněmovní tisk 189/3 se zněním pozměňovacího návrhu SD 1546, stenoprotokol ústní interpelace ze 4. 6. 2026, tisková zpráva Ministerstva zdravotnictví ze 17. 3. 2026, oficiální sdělení FN Olomouc z 9. 7. 2026, CNN Prima News). Proti primárním dokumentům opraveno CLM-13 (návrh neruší limit 50 000 Kč, jen vyjímá vybraná plnění z předmětu daně) a upřesněno CLM-15 (výrok padl při ústní interpelaci 4. 6. 2026). CLM-32 opraveno z přítomného na minulý čas. Šest tvrzení povýšeno nebylo — důvody v GAP-14 a GAP-15.",
+  "addedClaims": [],
+  "updatedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-15"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-19"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-22"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-23"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-24"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-32"
+    }
+  ],
+  "addedGaps": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/gaps/GAP-14"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/gaps/GAP-15"
+    }
+  ],
+  "closedGaps": [],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-43"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-44"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-45"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-42"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-27"
+    }
+  ]
+}

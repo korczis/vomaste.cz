@@ -9,15 +9,18 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
   },
-  "text": "Ministr Vojtěch navrhuje daňové zvýhodnění vybraných zdravotních benefitů hrazených zaměstnavateli — zrušení ročního limitu 50 000 Kč pro daňové osvobození u vybraných preventivních programů (screening onkologických, kardiovaskulárních onemocnění a diabetu, dobrovolné očkování).",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "text": "Adam Vojtěch předložil společně s ministryní financí Alenou Schillerovou pozměňovací návrh (sněmovní dokument 1546) k vládnímu návrhu zákona o evidenci tržeb (sněmovní tisk 189), podle nějž vybraná plnění zaměstnavatele v rámci péče o zdraví zaměstnanců — nadstandardní preventivní prohlídky, screening diabetu, kardiovaskulárního rizika a onkologický screening a očkování na žádost — nebudou vůbec předmětem daně z příjmů podle nového § 6 odst. 7 písm. f) zákona o daních z příjmů; obecný roční limit 50 000 Kč pro osvobození zaměstnaneckých benefitů přitom zůstává zachován.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-08"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-43"
     }
   ],
   "subjects": [
