@@ -9,12 +9,15 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
   },
-  "text": "Podle usnesení Ústavního soudu citovaného ve zpravodajství: „Ačkoli svěřenští správci obou fondů formálně naplňují znaky ovládající osoby podle zákona o obchodních korporacích, faktický rozhodující vliv v zásadních záležitostech si ponechal Andrej Babiš.“ Závěr se vztahuje k rozhodnému období a k nároku na dotaci, ne k trestní odpovědnosti",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "text": "Usnesení Ústavního soudu sp. zn. IV. ÚS 3359/25 v bodě [5] rekapituluje odůvodnění Nejvyššího správního soudu: „Ačkoli svěřenští správci obou fondů formálně naplňují znaky ovládající osoby podle zákona o obchodních korporacích, faktický rozhodující vliv v zásadních záležitostech si ponechal Andrej Babiš, zároveň měl i nadále přímý hospodářský zájem na prospěchu skupiny Agrofert.“ Citované zpravodajství větu uvedlo jako závěr Ústavního soudu a bez její druhé poloviny; vlastním hodnocením Ústavního soudu je až bod [19], podle nějž Andrej Babiš „naplňoval znaky ovládající osoby“. Závěr se vztahuje k rozhodnému období a k nároku na dotaci, ne k trestní odpovědnosti",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-44"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-81"
     }
   ],
   "subjects": [],

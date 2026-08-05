@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-74",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-74",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-74 — Úřad evropského veřejného žalobce (EPPO): tisková zpráva k obžalobě v kauze inovační linky na toustový chléb",
+  "description": "Oficiální tisková zpráva EPPO z 22. 6. 2026: úřad podal ke Krajskému soudu v Praze obžalobu na dvě fyzické osoby a jednu společnost pro dotační podvod za 4,1 milionu eur (100 milionů Kč) u projektu inovační linky na nové druhy toustového chleba.",
+  "outlet": "Úřad evropského veřejného žalobce (EPPO)",
+  "sourceFamily": "eppo",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://www.eppo.europa.eu/media/news/czechia-three-indicted-over-eu41-million-fraud-involving-project-innovative-toast-bread-2026-06-22_en",
+  "published": "2026-06-22",
+  "retrieved": "2026-08-05",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-57"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-58"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-105"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Primární dokument — tisková zpráva žalující instituce.** Úřad evropského\nveřejného žalobce (EPPO) zveřejnil 22. 6. 2026 zprávu „Czechia: Three indicted over\n€4.1 million fraud involving project for innovative toast bread\". Stránka otevřena\na přečtena celá 2026-08-05 (anglická jazyková verze; česká mutace téhož článku na\nwebu EPPO neexistuje, přepínač jazyka vrací tentýž anglický text).\n\n**Co dokládá doslovně.** „(Luxembourg, 22 June 2026) – The European Public\nProsecutor's Office (EPPO) in Prague (Czechia) **filed an indictment today with the\nRegional Court in Prague against two individuals and a company for a €4.1 million\nsubsidy fraud**, following an investigation into a project involving an innovative\nproduction line for new types of toast bread.\" Dále: obžalovaní jsou „accused of\n**submitting false data and concealing substantial information**, in order to obtain\n€4.1 million (CZK 100 million) in EU funds from Czechia's Ministry of Industry and\nTrade, under the Programme Enterprise and Innovation for Competitiveness\".\nK sazbám: „If found guilty, the two individuals **could face between five and ten\nyears in prison**. Under the indictment, they may also face fines up to €20 000\n(CZK 500 000) and €41 000 (CZK 1 million) and be **banned from receiving subsidies\nfor five years**.\" A ke společnosti: „If convicted, the company could be ordered to\npay compensation of approximately €4.1 million (CZK 100 million). It could also face\na fine of up to €2 million (CZK 50 million) and a **15-year ban on receiving\nsubsidies**.\" K zajištění majetku: „Earlier in this investigation, **the EPPO seized\nassets, including real estate owned by the company**, to compensate the damage.\"\nZávěrem: „All persons concerned are presumed to be innocent until proven guilty in\nthe competent Czech courts of law.\"\n\n**Nezávislost:** rozhodnutí a sdělení samotného žalobce, ne převzatá agenturní\nzpráva. Dosavadní zdroje CLM-57 —\n[SRC-34](@/dossiers/andrej-babis/sources/src-34.md) a\n[SRC-35](@/dossiers/andrej-babis/sources/src-35.md) — nesou oba rodinu `ctk`;\ntímto záznamem přibývá druhá nezávislá rodina i druhý vydavatel.\n\n**Poznámka k přesnosti a limitům.** Tisková zpráva je **sdělení obžaloby, ne\nrozhodnutí soudu**; sama to říká větou o presumpci neviny. Sazby v ní uvedené jsou\n**hrozící následky obžaloby**, nikoli návrh trestu ani uložený trest — citované\nzpravodajství je popsalo jako to, co státní zástupce „navrhuje\", což tisková zpráva\nneuvádí; rozdíl je od 2026-08-05 zapsán přímo v textu\n[CLM-105](@/dossiers/andrej-babis/claims/clm-105.md). Zpráva dále **nejmenuje**\nobžalované osoby ani společnost (jméno evropského pověřeného žalobce Adama Bašného\na název Pekárna Zelená louka nese jen zpravodajství), **neuvádí** hodnotu\nzajištěných nemovitostí (údaj „zhruba 98 milionů korun\" pochází ze zpravodajství)\na zajištění majetku **připisuje sama sobě**, zatímco zpravodajství je připsalo\nNárodní centrále proti organizovanému zločinu. Zpráva naopak přidává údaj, který\nzpravodajství nenese: dotaci vyplatilo Ministerstvo průmyslu a obchodu v plné výši\n**z národního rozpočtu** a po auditu Evropské komise ji EU nerefundovala, takže\nškoda 4,1 milionu eur (100 000 000 Kč) vznikla **českému státnímu rozpočtu**. Český\npřeklad citace o „předložení nepravdivých údajů a zatajení podstatných informací\"\npochází z citovaného zpravodajství; anglický originál zní „submitting false data and\nconcealing substantial information\"."
+    }
+  ],
+  "order": 74
+}

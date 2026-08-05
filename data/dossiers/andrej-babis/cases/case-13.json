@@ -10,7 +10,7 @@
     "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
   },
   "title": "Vodňanská drůbež: 75milionová dotace",
-  "summary": "Smlouvu o dotaci 75 milionů korun z Programu rozvoje venkova firma podepsala v roce 2018, SZIF administraci žádosti v roce 2023 ukončil. Správní žalobu zamítl Městský soud v Praze, kasační stížnost Nejvyšší správní soud a Ústavní soud stížnost v lednu 2026 odmítl; podle citovaného usnesení si Andrej Babiš přes formální roli svěřenských správců ponechal faktický rozhodující vliv. Rozhodnuto je o nároku firmy na dotaci, ne o trestní odpovědnosti kohokoli.",
+  "summary": "Smlouvu o dotaci 75 milionů korun z Programu rozvoje venkova firma podepsala v květnu 2018, SZIF administraci žádosti v roce 2023 ukončil a Ministerstvo zemědělství smlouvu v roce 2024 zrušilo. Správní žalobu zamítl Městský soud v Praze, kasační stížnost Nejvyšší správní soud a Ústavní soud stížnost usnesením sp. zn. IV. ÚS 3359/25 ze 17. 12. 2025 odmítl pro zjevnou neopodstatněnost; zpravodajství o něm informovalo 23. 1. 2026. Věta o faktickém rozhodujícím vlivu Andreje Babiše přes formální roli svěřenských správců je v usnesení rekapitulací závěru Nejvyššího správního soudu. Rozhodnuto je o nároku firmy na dotaci, ne o trestní odpovědnosti kohokoli.",
   "period": "2018–2026",
   "status": "status-single",
   "statusLabel": "Ústavní stížnost odmítnuta — spor o dotaci, ne o vině",
@@ -26,6 +26,9 @@
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-44"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-81"
     }
   ],
   "subjects": [],

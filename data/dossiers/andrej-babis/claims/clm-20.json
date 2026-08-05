@@ -10,14 +10,17 @@
     "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
   },
   "text": "Městský soud v Praze dne 4. května 2026 uznal spoluobžalovanou Janu Nagyovou nepravomocně vinnou z dotačního podvodu a poškození finančních zájmů EU a uložil jí tříletý podmíněný trest s pětiletou zkušební dobou a peněžitý trest 500 000 Kč; rozsudek není pravomocný, lze se proti němu odvolat a o vině Andreje Babiše soud v tomto řízení nerozhodoval",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-08"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-76"
     }
   ],
   "subjects": [],

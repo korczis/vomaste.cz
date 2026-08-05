@@ -9,12 +9,15 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
   },
-  "text": "Ústavní soud podle zpravodajství z 23. ledna 2026 odmítl stížnost společnosti Vodňanská drůbež ze skupiny Agrofert ve sporu o dotaci 75 milionů korun z Programu rozvoje venkova, na kterou firma podepsala smlouvu v roce 2018; SZIF administraci žádosti v roce 2023 ukončil, správní žalobu zamítl Městský soud v Praze a kasační stížnost Nejvyšší správní soud. Jde o spor o nárok na dotaci, ne o rozhodnutí o trestní odpovědnosti kohokoli",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "text": "Ústavní soud usnesením sp. zn. IV. ÚS 3359/25 ze 17. prosince 2025 odmítl pro zjevnou neopodstatněnost stížnost společnosti Vodňanská drůbež ze skupiny Agrofert ve sporu o dotaci 75 milionů korun z Programu rozvoje venkova, na kterou firma podepsala veřejnoprávní smlouvu v květnu 2018; Státní zemědělský intervenční fond administraci žádosti v roce 2023 ukončil, Ministerstvo zemědělství smlouvu v roce 2024 zrušilo, správní žalobu zamítl Městský soud v Praze a kasační stížnost Nejvyšší správní soud. Zpravodajství o rozhodnutí informovalo až 23. ledna 2026, den po jeho zpřístupnění v databázi NALUS. Jde o spor o nárok na dotaci, ne o rozhodnutí o trestní odpovědnosti kohokoli",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-44"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-81"
     }
   ],
   "subjects": [],
