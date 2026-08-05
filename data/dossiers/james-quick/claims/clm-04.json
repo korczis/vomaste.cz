@@ -1,0 +1,17 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-04",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-04",
+  "dossier": { "@id": "https://vomaste.cz/id/dossiers/james-quick" },
+  "text": "Hospodářské noviny v srpnu 2015 napsaly, že výpisy soukromého CERD české banky neuznávají a že služby byly spojovány s firmou registrovanou ve Spojených státech; Jiřího Jehličku článek označil za hlavního hybatele projektu pouze jako závěr reportáže, nikoli jako tehdy úředně prokázanou skutečnost.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [{ "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-04" }],
+  "subjects": ["james-quick"],
+  "order": 4,
+  "content": [{ "type": "markdown", "value": "Záznam zachovává podstatnou výhradu původního článku: redakce popisovala Jiřího Jehličku jako hlavního hybatele, ale současně uvedla, že se to tehdy úředně nepodařilo prokázat. Pozdější úřední dokumenty jsou evidovány samostatně a nejsou zpětně vydávány za součást zdroje z roku 2015." }]
+}

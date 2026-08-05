@@ -19,12 +19,12 @@ const compiled = compileDataset(loadCanonicalTree(join(ROOT, "data/dossiers")));
 test("golden: počty záznamů per typ (snapshot 2026-08-05: + autorizovaný dossier james-quick)", () => {
   assert.deepEqual(compiled.counts.perType, {
     case: 89,
-    claim: 922,
+    claim: 929,
     dossier: 25,
     entity: 515,
     gap: 191,
     relation: 317,
-    source: 608,
+    source: 615,
     update: 52,
   });
   assert.equal(compiled.counts.dossiers, 25);

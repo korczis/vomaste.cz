@@ -1,0 +1,17 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-02",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-02",
+  "dossier": { "@id": "https://vomaste.cz/id/dossiers/james-quick" },
+  "text": "ÚOOÚ ve zveřejněném závěru kontroly systému CERD z roku 2018 uvedl, že fyzická osoba ovládající zapojené společnosti určovala účel a prostředky zpracování, a konstatoval zpracování části osobních údajů bez právního titulu i další systematická porušení tehdejšího zákona o ochraně osobních údajů.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [{ "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-02" }],
+  "subjects": ["james-quick"],
+  "order": 2,
+  "content": [{ "type": "markdown", "value": "Jde o přesné shrnutí závěru úřední kontroly. Toto tvrzení je odděleno od identity fyzické osoby: propojení tehdejšího Jiřího Jehličky, nyní Jamese Quicka, s kontrolou dokládá samostatně SRC-01. Závěr kontroly není trestním rozsudkem a dossier jej tak nepředstavuje." }]
+}
