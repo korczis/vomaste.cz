@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-57",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-57",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "text": "K datu kontroly 5. 8. 2026 byl Karel Havlíček z 2 496 osob zapsaných v registru jako lobbované osobou s nejvyšším počtem vykázaných kontaktů — 90 z celkových 986 kontaktů evidovaných v registru. Registr sčítá záznamy kontaktů: se stejnou vahou se do součtu započítá záznam uvádějící jedinou lobbovanou osobu i záznam uvádějící stovky osob najednou.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-39"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "order": 57,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Pořadí je odvozeno z veřejného vyhledávání kontaktů nad všemi\nvykazovacími obdobími registru k 5. 8. 2026 a je popisem stavu\nregistru, ne měřítkem čehokoli dalšího. Vysoký počet záznamů může\nodrážet mimo jiné to, že je táž osoba v registru vedena ve dvou\nveřejných funkcích současně\n([CLM-51](@/dossiers/karel-havlicek/claims/clm-51.md)) a že velká část\nzáznamů vykazuje kontakt vůči stovkám osob najednou\n([CLM-58](@/dossiers/karel-havlicek/claims/clm-58.md)).\n\nJména dalších lobbovaných osob a jejich počty tento přehled neuvádí —\nautorizovaný rozsah se týká údajů vykázaných vůči Karlu Havlíčkovi."
+    }
+  ]
+}

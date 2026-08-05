@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-53",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-53",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "text": "Oněch 90 kontaktů vykázalo 43 různých lobbistů, všichni zapsaní v registru jako právnické osoby. Nejvíce kontaktů vykázala Hospodářská komora České republiky (13), následují Lobbio, z.s. (9), Svoboda zvířat, z.s. (7), Svaz průmyslu a dopravy České republiky (6), Svaz energetiky České republiky (5) a Hnutí DUHA – Friends of the Earth Czech Republic (4).",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-39"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "order": 53,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Počty jsou prostým součtem záznamů, které si daný lobbista v registru\nsám vykázal, a týkají se výhradně kontaktů, u nichž je mezi lobbovanými\nuveden Karel Havlíček. Neříkají nic o obsahu, průběhu ani výsledku\njednání a nejsou tvrzením, že kterýkoli z uvedených lobbistů něčeho\ndosáhl — registr takový údaj neobsahuje.\n\nMezi 43 lobbisty jsou zastoupeny spolky (25), obchodní společnosti (8),\norganizace zaměstnavatelů (3), hospodářská a agrární komora (2) a dále\njednotlivě ústav, obecně prospěšná společnost, profesní komora a\nzájmové sdružení právnických osob."
+    }
+  ]
+}

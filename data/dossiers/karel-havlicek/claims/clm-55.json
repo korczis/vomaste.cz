@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-55",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-55",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "text": "Předmětem 76 z 90 kontaktů byl podle registru právní předpis, u 9 koncepční dokument a u 5 opatření obecné povahy. Mezi konkrétními předměty jsou například zákon zajišťující rovné podmínky v oblasti e-commerce (vykázalo ALLEGRO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ), startupový zákon a zaměstnanecké opční programy (ESOP) (Czech Tech Association, z. s.) nebo novela vyhlášky č. 157/2024 Sb., o územně analytických podkladech, územně plánovací dokumentaci a jednotném standardu (Asociace pro urbanismus a územní plánování České republiky).",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-39"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "order": 55,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Předmět i deklarovaný cíl kontaktu vyplňuje do registru sám lobbista.\nJde tedy o jeho vlastní popis toho, o čem kontakt byl a čeho jím chtěl\ndosáhnout — ne o zjištění registru, ministerstva ani tohoto přehledu, a\ntím spíš ne o tvrzení, že popsaného cíle bylo dosaženo.\n\nUvedené tři příklady jsou vybrány jako ilustrace šíře předmětů (obchod,\ninovace a zdanění práce, územní plánování), ne jako nejvýznamnější\npoložky — registr žádné pořadí důležitosti neobsahuje."
+    }
+  ]
+}

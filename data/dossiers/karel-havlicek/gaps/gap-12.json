@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/gaps/GAP-12",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-12",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "title": "GAP-12 — Registr lobbování zachycuje jen ohlášené kontakty za necelý rok účinnosti zákona",
+  "description": "Registr obsahuje výhradně kontakty, které lobbista sám ohlásil; k datu kontroly vykázala nějaký kontakt jen zhruba třetina zapsaných lobbistů a zákon platí od 1. 7. 2025. Z chybějícího záznamu proto nelze usuzovat na nepřítomnost lobbování.",
+  "priority": "vysoká",
+  "checked": "2026-08-05",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-52"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-53"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-54"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-56"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-57"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-58"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Údaje Registru lobbování shrnuté v tvrzeních\n[CLM-51](@/dossiers/karel-havlicek/claims/clm-51.md) až\n[CLM-58](@/dossiers/karel-havlicek/claims/clm-58.md) mají čtyři\nomezení, bez kterých se dají snadno přečíst jako něco, čím nejsou.\nTato mezera **není** zjištěním žádným směrem — zaznamenává jen, co\nveřejný registr k datu kontroly (5. 8. 2026) neobsahuje.\n\n**1. Registr obsahuje jen ohlášené kontakty, a ohlašuje menšina.**\nK datu kontroly bylo v registru 688 zapsaných lobbistů, ale jen 230\nz nich (33 %) mělo vykázaný aspoň jeden kontakt. Registr tedy\nnezachycuje lobbování jako jev, ale to, co o sobě lobbisté sami\nnahlásili. **Absence záznamu není důkazem absence lobbování** — a to\nplatí jak pro jednotlivé lobbisty, tak pro jednotlivá témata.\n\n**2. Data pokrývají krátké a neuzavřené období.** Zákon č. 168/2025\nSb. je účinný od 1. 7. 2025, registr se plní od konce července 2025.\nK datu kontroly existují jen dvě vykazovací období s daty (2025-2 a\n2026-1) a ani jedno z nich není v registru vedeno jako uzavřené;\nkontakty lze doplňovat a upravovat zpětně. Že jde o pohyblivý stav, se\nprojevilo přímo při ověřování: dvě veřejná rozhraní registru vrátila\n5. 8. 2026 pro tutéž osobu 90 a 89 kontaktů (viz\n[SRC-38](@/dossiers/karel-havlicek/sources/src-38.md)). Jakékoli číslo\nodsud platí „k datu kontroly“, ne trvale.\n\n**3. „V čí zájem“ registr eviduje především na úrovni lobbisty, ne\nkontaktu.** U jednotlivého kontaktu je klient uveden jen v 15 z 90\npřípadů; jinak se dá zájem dohledat nanejvýš u lobbisty jako celku, a\nani to ne vždy — 32 ze 43 lobbistů, kteří vykázali kontakt s Karlem\nHavlíčkem, nemá v registru zapsaného žádného klienta. U konkrétního\nkontaktu proto zpravidla **není dohledatelné, čí zájem stál za\njednáním**.\n\n**4. Registr nezachycuje obsah, průběh ani následek.** Eviduje, že byl\nkontakt ohlášen, kdo ho ohlásil, přes koho, k jakému předmětu a\ns jakým deklarovaným cílem — přičemž předmět i cíl vyplňuje sám\nlobbista. Neobsahuje záznam o tom, co bylo řečeno, jak lobbovaný\nreagoval, ani zda kontakt cokoli ovlivnil. Z údajů registru proto\n**nelze vyvozovat vliv na rozhodování, střet zájmů ani protiprávnost**\n— tento přehled to nedělá a ani k tomu nemá podklad.\n\n**Co by mezeru zúžilo**: uzavření vykazovacích období a opakovaný odečet\nregistru s odstupem, který ukáže, jak se čísla vyvíjejí a nakolik jsou\nstabilní."
+    }
+  ],
+  "order": 12
+}
