@@ -19,6 +19,9 @@
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-54"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-36"
     }
   ],
   "subjects": [
@@ -27,7 +30,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "FORUM 24 dne 12. 5. 2026 informoval, že francouzská policie uzavřela\nvyšetřování kauzy kolem jihofrancouzského panství premiéra Andreje\nBabiše. Citace: „Případ nyní převzala Národní finanční prokuratura,\nkterá rozhodne o dalším postupu.\" Prokuratura má podle článku\nrozhodnout do konce roku 2026.\n\n**Co článek dále dokládá**: poté, co se Babiš na konci roku 2025 znovu\nstal předsedou vlády, získal podle francouzských pravidel imunitu, která\nho během výkonu premiérské funkce chrání před případným stíháním ve\nFrancii.\n\n**Poznámka k procesní přesnosti**: uzavření policejního vyšetřování\n**není** rozhodnutí o vině ani nevině — věc nyní posuzuje prokuratura,\nkterá teprve rozhodne, zda bude stíhání zahájeno. Imunita je procesní\nochrana vázaná na výkon funkce, ne zproštění odpovědnosti; co se stane\npo skončení jeho mandátu, článek neuvádí — viz\n[GAP-05](@/dossiers/andrej-babis/gaps/gap-05.md).\n\n**Nezávislost**: jediný dosud otevřený a přečtený zdroj k tomuto\nkonkrétnímu vývoji; stav tvrzení proto zůstává `1 ZDROJ`."
+      "value": "FORUM 24 dne 12. 5. 2026 informoval, že francouzská policie uzavřela\nvyšetřování kauzy kolem jihofrancouzského panství premiéra Andreje\nBabiše. Citace: „Případ nyní převzala Národní finanční prokuratura,\nkterá rozhodne o dalším postupu.\" Prokuratura má podle článku\nrozhodnout do konce roku 2026.\n\n**Co článek dále dokládá**: poté, co se Babiš na konci roku 2025 znovu\nstal předsedou vlády, získal podle francouzských pravidel imunitu, která\nho během výkonu premiérské funkce chrání před případným stíháním ve\nFrancii.\n\n**Poznámka k procesní přesnosti**: uzavření policejního vyšetřování\n**není** rozhodnutí o vině ani nevině — věc nyní posuzuje prokuratura,\nkterá teprve rozhodne, zda bude stíhání zahájeno. Imunita je procesní\nochrana vázaná na výkon funkce, ne zproštění odpovědnosti; co se stane\npo skončení jeho mandátu, článek neuvádí — viz\n[GAP-05](@/dossiers/andrej-babis/gaps/gap-05.md).\n\n**Nezávislost**: k **francouzskému vývoji**\n([CLM-54](@/dossiers/andrej-babis/claims/clm-54.md)) je to jediný dosud\notevřený a přečtený zdroj, to tvrzení proto zůstává `1 ZDROJ`. Článek\nvšak zároveň doslova označuje Babiše za **premiéra** a uvádí, že se jím\nna konci roku 2025 znovu stal — tím dokládá i\n[CLM-36](@/dossiers/andrej-babis/claims/clm-36.md), které tak má vedle\nrodiny `ctk` druhou, nezávislou rodinu a je `CORROBORATED`\n(doplněno 2026-08-05)."
     }
   ],
   "order": 26

@@ -20,4 +20,11 @@ Oficiální primární dokument dohledán přímo na portálu odok.gov.cz (agend
 
 **Klíčové zjištění**: samotné usnesení neobsahuje žádné zdůvodnění ani odůvodnění odvolání — žádnou zmínku o zahraničních cestách, střetu zájmů ani hospodaření. Je to čistě operativní text (kdo se odvolává, kdo přebírá řízení, kdo má koho informovat). Zdůvodnění, které zveřejnila média ([CLM-26](@/dossiers/boris-stastny/claims/clm-26.md)), pochází výhradně z Šťastného veřejných vyjádření, ne z textu samotného vládního usnesení.
 
+**Doplněno 2026-08-05**: usnesení dokládá i
+[CLM-24](@/dossiers/boris-stastny/claims/clm-24.md) — pověření
+místopředsedy Ing. Iva Jebouska řízením NSA je součástí téhož aktu,
+kterým je Šebek odvoláván. Vůči dosavadním zdrojům CLM-24 (rodina `ctk`)
+jde o samostatnou rodinu (vládní primární dokument), tvrzení je proto
+`CORROBORATED`.
+
 Zdroj otevřen a přečten 2026-08-03.

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/boris-stastny/updates/2026-08-05-2",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-08-05-2",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/boris-stastny"
+  },
+  "date": "2026-08-05",
+  "summary": "Korroborace bez nového hledání (T-059): CLM-24 povýšeno na CORROBORATED připojením SRC-20 — usnesení vlády ČR ze 16. 12. 2025 č. 1029, které týmž aktem odvolává Ondřeje Šebka a pověřuje místopředsedu Ing. Iva Jebouska řízením Národní sportovní agentury. Dosavadní tři zdroje tvrzení patřily všechny do rodiny ctk; vládní primární dokument je vůči nim samostatná rodina. Usnesení bylo v datech od 2026-08-03, ale připojeno jen k CLM-40.",
+  "addedClaims": [],
+  "updatedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-24"
+    }
+  ],
+  "addedGaps": [],
+  "closedGaps": [],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-20"
+    }
+  ]
+}

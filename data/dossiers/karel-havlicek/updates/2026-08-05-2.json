@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/updates/2026-08-05-2",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-08-05-2",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "date": "2026-08-05",
+  "summary": "Korroborace bez nového hledání (T-059): CLM-47 povýšeno na CORROBORATED připojením SRC-11 — vlastní tisková zpráva Ministerstva průmyslu a obchodu z 21. 3. 2022, která odnětí stomilionové dotace pekárně Zelená louka oznamuje a cituje ministra Jozefa Síkelu. Primární dokument tedy dokládá i to, co bylo dosud vedeno jen přes zpravodajství Pražského deníku (SRC-13): akt spadá do března 2022, tedy pod Havlíčkova nástupce. Zdroj v datech ležel od dřívějšího kola, připojen byl ale jen k CLM-19 a CLM-20.",
+  "addedClaims": [],
+  "updatedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-47"
+    }
+  ],
+  "addedGaps": [],
+  "closedGaps": [],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-13"
+    }
+  ]
+}
