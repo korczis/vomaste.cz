@@ -1,0 +1,103 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/updates/2026-08-06",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-08-06",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
+  },
+  "date": "2026-08-06",
+  "summary": "Kolo dokládání primárními úředními dokumenty (T-073). Otevřeno a v plném rozsahu přečteno sedm nových primárních zdrojů: kontrolní závěr NKÚ 23/06 (SRC-38), stanovisko SZIF k otázce střetu zájmů z 22. 4. 2026 (SRC-39), sekce SZIF s šesti zveřejněnými právními analýzami (SRC-40), tisková zpráva SZIF z 23. 4. 2026 (SRC-41), sedm dokumentů SZIF k auditnímu šetření EK UMB/2019/003/CZ (SRC-42), rozsudek NSS 1 Afs 59/2025-98 (SRC-43) a stenografický zápis 22. schůze Sněmovny z 11. 6. 2026 (SRC-44). Deset tvrzení získalo druhý, nezávislý doklad (CLM-06, CLM-09, CLM-10, CLM-11, CLM-21, CLM-22, CLM-26, CLM-27, CLM-28, CLM-30); čtyři tvrzení přešla na SPORNÉ, protože se primární dokument rozchází se zpravodajstvím (CLM-33, CLM-34, CLM-35, CLM-51). Opravy proti dokumentům: CLM-35 — tisková reakce MZe uváděla, že kontrola NKÚ nenašla pochybení a nedostatky se týkaly jen žadatelů; kontrolní závěr 23/06 konstatuje nedostatky v nastavení, řízení a realizaci programu, vytýká SZIF nekontrolování správnosti monitorovacích zpráv a neoznámení skutečností nasvědčujících spáchání trestného činu ve třech případech. CLM-51 — zpravodajství uvádělo čtyři analýzy (2 + 2), na webu SZIF jich je šest (4 PORTOS + 2 Pelikán Krofta Kohoutek). CLM-33 — údaj „za více než půl miliardy korun“ se v citovaném ověření Demagog.cz nenachází a byl odstraněn; dokumenty se navíc rozcházejí v počtu zastavených projektů (28 vs. 29). CLM-34 — částka u projektu Schrom Farms má tři různé hodnoty: 1,6 mil. Kč (Demagog.cz), 1,7 mil. Kč (stanovisko MZe) a 30 606,96 € / cca 766 tis. Kč jako výdaj vyloučený z financování EU (SZIF); rozdíl definic žádný dokument nevysvětluje. CLM-36 — formulace „jediným členským státem EU vymáhajícím nárokové dotace“ opravena podle stanoviska MZe na „neposkytoval“. CLM-09 — formulace, že se „střet zájmů premiéra Babiše nepotvrdil“, se ve vlastní dokumentaci SZIF nenachází; tvrzení upraveno na doloženou právní pozici fondu. CLM-30 — stenozáznam uvádí svolání podle § 51 odst. 4 jednacího řádu na žádost 90 poslanců a doslovné „postupuje řádně a transparentně“. Nová tvrzení z primárních dokumentů: CLM-52 (rozsudek NSS k působnosti § 4c a ovládání přes svěřenské fondy — bez jakéhokoli zjištění o osobě Martina Šebestyána), CLM-53 (zjištění kontrolního závěru NKÚ 23/06), CLM-54 (dopady stanoviska SZIF z 22. 4. 2026: 8 projektů za cca 68 mil. Kč, prekluze u národních dotací nejdříve v prosinci 2027), CLM-55 (milníky auditu EK a částka 30 606,96 € vyloučená z financování EU). CLM-37 upřesněno podle stanoviska MZe o přesná data odložení trestní věci (evropský pověřený žalobce 10. 11. 2022, NCOZ 19. 4. 2023) s výslovným procesním rámováním. Všech 14 mezer prověřeno proti primárním dokladům, u deseti doplněn výsledek kontroly k 6. 8. 2026. GAP-06 přesněji vymezena: ani jeden z pěti prověřených úředních dokumentů částku 5,1 ani 7 mld. Kč neuvádí — rozpětí pochází výhradně ze zpravodajství a politických vystoupení. GAP-14 opravena chybná identifikace SRC-37 (Česká justice, nikoli CEDMO). Žádné nové téma ani subjekt; rozsah autorizace AUTH-2026-07-30-T nebyl překročen a žádné hodnocení NGO ani komentáře nebylo převzato jako zjištění.",
+  "addedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-52"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-53"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-54"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-55"
+    }
+  ],
+  "updatedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-21"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-22"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-26"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-27"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-28"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-30"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-33"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-34"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-35"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-36"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-37"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-51"
+    }
+  ],
+  "addedGaps": [],
+  "closedGaps": [],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-38"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-39"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-40"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-41"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-42"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-43"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-44"
+    }
+  ]
+}

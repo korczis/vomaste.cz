@@ -72,6 +72,12 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-44"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-52"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-54"
     }
   ],
   "sources": [
@@ -110,6 +116,15 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-25"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-39"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-43"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-44"
     }
   ],
   "subjects": [

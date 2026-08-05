@@ -100,13 +100,13 @@ Odpovídá na otázku „kam se podívat a čemu z toho věřit". Publikovaná p
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 664 záznamů v 112 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 671 záznamů v 113 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
 | ctk | 290 | 21 | [ano](/zdroje/ctk/) |
 | seznam-zpravy | 35 | 13 | [ano](/zdroje/seznam-zpravy/) |
-| Poslanecká sněmovna Parlamentu ČR | 30 | 15 | [ano](/zdroje/psp-cz/) |
+| Poslanecká sněmovna Parlamentu ČR | 31 | 15 | [ano](/zdroje/psp-cz/) |
 | Vláda České republiky (vlada.gov.cz) | 23 | 17 | [ano](/zdroje/vlada-cz/) |
 | FORUM 24 | 19 | 9 | [ano](/zdroje/forum24/) |
 | denik-n | 16 | 9 | [ano](/zdroje/denik-n/) |
@@ -127,6 +127,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 664 záznamů v 112 rodinách/out
 | Ministerstvo dopravy ČR | 4 | 1 | — |
 | Reflex | 4 | 4 | — |
 | Respekt | 4 | 3 | — |
+| Státní zemědělský intervenční fond | 4 | 1 | — |
 | Zdravé zprávy | 4 | 2 | — |
 | CNN Prima News | 3 | 3 | — |
 | Investigace.cz | 3 | 3 | — |
@@ -134,6 +135,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 664 záznamů v 112 rodinách/out
 | Ministerstvo školství, mládeže a tělovýchovy ČR | 3 | 1 | — |
 | Ministerstvo zemědělství ČR | 3 | 1 | — |
 | Národní rozpočtová rada | 3 | 1 | — |
+| Nejvyšší kontrolní úřad (nku.cz) | 3 | 2 | — |
 | Tiscali.cz | 3 | 3 | — |
 | Transparency International ČR | 3 | 2 | — |
 | Úřad pro ochranu osobních údajů | 3 | 1 | — |
@@ -145,7 +147,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 664 záznamů v 112 rodinách/out
 | Ministerstvo průmyslu a obchodu (MPO) | 2 | 2 | — |
 | Ministerstvo životního prostředí ČR | 2 | 1 | — |
 | NašeTéma.cz | 2 | 2 | — |
-| Nejvyšší kontrolní úřad (nku.cz) | 2 | 1 | — |
+| Nejvyšší správní soud | 2 | 2 | — |
 | Olomoucký deník | 2 | 1 | — |
 | Pražský deník | 2 | 1 | — |
 | Registr lobbování (RELOB) | 2 | 1 | — |
@@ -189,7 +191,6 @@ Dopočítáno z `data/dossiers/**/sources/**`, 664 záznamů v 112 rodinách/out
 | Ministerstvo spravedlnosti ČR | 1 | 1 | — |
 | Ministerstvo zdravotnictví ČR | 1 | 1 | — |
 | Motoristé sobě (motoristesobe.cz/udhpsh) | 1 | 1 | — |
-| Nejvyšší správní soud | 1 | 1 | — |
 | Neovlivní.cz | 1 | 1 | — |
 | Novinky.cz / Právo | 1 | 1 | [ano](/zdroje/novinky-cz/) |
 | ParlamentníListy.cz | 1 | 1 | — |

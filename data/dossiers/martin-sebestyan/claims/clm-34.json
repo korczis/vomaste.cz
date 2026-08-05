@@ -9,12 +9,21 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
   },
-  "text": "Podle ověření Demagog.cz byla jedinou dotací z auditované skupiny, která byla Agrofertu skutečně vyplacena, částka 1,6 milionu korun pro Schrom Farms, poskytnutá ještě před auditním procesem; firma ji následně vracela.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "text": "Výše jediné dotace z auditované skupiny, která byla Agrofertu skutečně vyplacena — projekt dceřiné společnosti Schrom Farms, proplacený ještě před zahájením auditu — se mezi dokumenty liší. Demagog.cz ji uvádí jako „dotaci v hodnotě 1,6 milionů korun“, stanovisko Ministerstva zemědělství z 16. 12. 2025 jako „jeden projekt v objemu 1,7 milionu Kč“ a vlastní materiály SZIF k auditnímu šetření uvádějí částku vyloučenou z financování EU s přímou vazbou na střet zájmů ve výši 30 606,96 € (podle fondu cca 766 tis. Kč). Jde zjevně o různě definované veličiny — vyplacenou dotaci oproti výdaji vyloučenému z financování EU — žádný z dokumentů však rozdíl nevysvětluje ani částky navzájem nespojuje. Firma dotaci následně vracela; ve Sněmovně 11. 6. 2026 zaznělo, že Městský soud v Praze rozhodl, že ji vrátila neoprávněně, protože SZIF o vrácení požádal až po uplynutí čtyřleté lhůty, a že ministerstvo verdikt napadlo u Nejvyššího správního soudu.",
+  "status": "status-disputed",
+  "statusLabel": "SPORNÉ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-16"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-23"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-42"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-44"
     }
   ],
   "subjects": [

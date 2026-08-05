@@ -9,15 +9,21 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
   },
-  "text": "SZIF 23. 4. 2026 zveřejnil čtyři právní analýzy k dotacím Agrofertu (dvě od PORTOS, dvě od Pelikán Krofta Kohoutek). Dvě analýzy PORTOS s odstupem cca osmi měsíců dospěly ke vzájemně odlišným závěrům: starší (2025, úžeji pojatá) uzavřela, že zákaz vymáhání se týká i nárokových dotací; novější (2026, širší metodicky) uzavřela opak a umožnila SZIF nevymáhat cca miliardu korun od Agrofertu. PORTOS sama tvrdí, že závěry nejsou v rozporu, protože jde o metodicky širší, nikoli protichůdné posouzení.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "text": "SZIF 23. 4. 2026 zveřejnil právní analýzy k dotacím Agrofertu. Zpravodajství jich uvádělo čtyři (dvě od PORTOS, dvě od Pelikán Krofta Kohoutek); na vlastní stránce fondu je jich k 6. 8. 2026 šest — čtyři od PORTOS (dvě z 27. 2. 2026, dále z 10. 4. a 13. 4. 2026) a dvě od Pelikán Krofta Kohoutek (25. 3. a 10. 4. 2026). Tisková zpráva z 23. 4. 2026 přitom mluví o analýzách „zpracovaných nezávislou externí advokátní kanceláří“ v jednotném čísle a uvádí výslovný souhlas se zveřejněním pouze od PORTOS, zatímco postoj kanceláře Pelikán Krofta Kohoutek fond teprve zjišťoval; současné znění stránky už uvádí souhlas obou kanceláří. Dvě analýzy PORTOS s odstupem cca osmi měsíců dospěly podle České justice ke vzájemně odlišným závěrům: starší (2025, úžeji pojatá) uzavřela, že zákaz vymáhání se týká i nárokových dotací, novější (2026, širší metodicky) uzavřela opak. PORTOS sama tvrdí, že závěry nejsou v rozporu, protože jde o metodicky širší, nikoli protichůdné posouzení. Analýza z roku 2025 mezi šesti zveřejněnými dokumenty není.",
+  "status": "status-disputed",
+  "statusLabel": "SPORNÉ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-36"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-37"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-40"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-41"
     }
   ],
   "subjects": [
@@ -28,6 +34,10 @@
     {
       "type": "markdown",
       "value": "Tato stránka je kanonický záznam tvrzení CLM-51 — shrnutí, stav a zdroje\nvýše jsou úplné. Odpovídá na [GAP-10](@/dossiers/martin-sebestyan/gaps/gap-10.md):\nanalýzy nejsou neveřejné — SZIF je sám zveřejnil (dohledatelné přímo\nna szif.gov.cz), včetně jména druhé zpracovávající advokátní kanceláře."
+    },
+    {
+      "type": "markdown",
+      "value": "**Oprava proti primárnímu dokumentu (6. 8. 2026)**: dřívější znění převzalo ze zpravodajství, že šlo o čtyři analýzy v poměru dvě a dvě. Sekce webu SZIF ([SRC-40](@/dossiers/martin-sebestyan/sources/src-40.md)) jich nabízí šest a z hlaviček jednotlivých PDF vyplývá poměr čtyři PORTOS ku dvěma Pelikán Krofta Kohoutek. Dokument má přednost; údaj ze zpravodajství je v tvrzení ponechán, aby byl rozdíl dohledatelný."
     }
   ]
 }
