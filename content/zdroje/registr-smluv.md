@@ -32,9 +32,9 @@ Metodická poznámka: součet hodnot smluv **není** totéž co příjem subjekt
 
 ## Pasti {#pasti}
 
-### Parametr `format=json` se tiše ignoruje
+### Služba ignoruje tiše, a ne jednou
 
-Dotaz s `&format=json` vrátí HTTP 200 a HTML. Kdo výstup nezkontroluje, parsuje stránku jako data a dostane nulu výsledků bez jediné chybové hlášky.
+Ověřeno 5. 8. 2026 na živé službě, čtyři různé případy: `format=json` vrátí HTTP 200 a HTML; vlastní parametr `page` vrátí znovu první stránku; `export=xml` i `export=csv` vrátí tutéž HTML stránku o 38 125 bajtech jako dotaz bez nich; a Nette signál `do=exportCsv` skončí 403. Ani jeden z nich nevrátí chybu. Klient, který výstup nekontroluje, dostane nulu výsledků nebo N-krát tentýž vzorek a nepozná to.
 
 ### Stránkování nepřežije holý GET
 
@@ -44,7 +44,11 @@ Vyhledávání je formulářová aplikace na Nette. Stránkování jede přes si
 
 `party_idnum` hledá IČO protistrany (typicky dodavatele), `subject_idnum` IČO zveřejňujícího subjektu (typicky úřadu). Záměna vrátí prázdný výsledek u firmy, která ve skutečnosti stovky smluv má.
 
+### Per-subjektový export neexistuje
+
+Výsledek dotazu nelze stáhnout jako data. Souhrn za jeden subjekt proto vyžaduje průchod hromadnými dávkami registru, ne vyhledávací formulář — a dokud neproběhne, je poctivější uvést počet, který registr sám hlásí, než dopočítanou částku.
+
 ## Jak v něm hledat {#jak-hledat}
 
-Pro spolehlivý a opakovatelný odečet používej otevřená data — měsíční dávky v XML — ne scraping vyhledávacího formuláře. Formulář je dobrý na ověření jednotlivosti a na zjištění počtu záznamů, který stránka uvádí přímo („Počet nalezených záznamů"). Ten počet je citovatelný i tehdy, když se agregace hodnot nepodařila spočítat.
+Formulář používej k ověření jednotlivosti a k odečtu počtu záznamů, který stránka sama uvádí („Počet nalezených záznamů") — ten je citovatelný. Na agregaci hodnot ho nepoužívej vůbec: nemá export a stránkování se tiše ignoruje, takže každý pokus o součet přes stránky vrací N-krát tutéž stránku. Pokaždé si ověř, že se stažené stránky mezi sebou liší; bez té kontroly chyba není vidět.
 
