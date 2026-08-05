@@ -188,6 +188,21 @@ je pro každý typ jiný, ale vždy mechanický — žádná ruční aritmetika:
   routa v něm chybí). Fix: `npm run build:routes` (a `build:navigation`)
   před dalším krokem, ne ladění obsahu — soubor je jen zastaralý, ne
   rozbitý.
+- **Past, druhá a horší varianta**: dva plné `npm run build` běhy ve
+  **stejném checkoutu** (ne dva různé worktrees — to je bezpečné, každý
+  má vlastní `data/generated/`) se dřív mohly přetahovat o
+  `data/generated/views/**` už v krocích `data:views`/
+  `data:generate-content`/`data:sync-content`, dřív než došly na `zola
+  build`, kde je chránil `with-build-lock.mjs`. Příznak: `zola build`
+  spadne na `load_data: .../clm-NN.json doesn't exist`, přestože ten
+  soubor existuje — vypadá to jako datová chyba, není. Reprodukováno
+  živě 2026-08-05/06: dvě souběžné session ve stejném checkoutu, každá
+  narazila na jiný chybějící view model, a soubor pak vždy existoval.
+  Od 2026-08-06 `pipeline.mjs` zamyká **celý** `build` režim (od
+  `data:views` po `verify:export`), ne jen zola krok — viz komentář v
+  `with-build-lock.mjs`. `.githooks/post-commit` (auto push po commitu,
+  viz níž) tenhle risk zvyšuje, protože teď plný build spouští
+  automaticky každý commit na masteru, ne jen člověk, když si vzpomene.
 
 ## ID kolize u souběžně rozšiřovaného dossieru
 
