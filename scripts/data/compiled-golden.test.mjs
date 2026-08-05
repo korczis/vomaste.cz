@@ -6,34 +6,36 @@
 // snapshot počtů a vzorky konkrétních záznamů. Když se golden hodnoty
 // změní NEČEKANĚ (bez redakční změny dat), něco rozbilo loader/kompilátor;
 // když se změní ČEKANĚ (nový záznam), commit aktualizuje čísla vědomě.
+//
+// Počty (perType/graph) žijí v compiled-golden.snapshot.json, NE natvrdo
+// v tomto souboru — při souběžné práci víc agentů na stejných dossierech
+// mění tahle čísla skoro každý commit, a hardcoded literál kolidoval na
+// KAŽDÉM rebase (session 2026-08-05). Po konfliktu ve snapshotu: vezmi
+// libovolnou stranu (`git checkout --ours/--theirs`) a spusť
+// `npm run test:update-golden` — přepočítá se z aktuálních dat, žádná
+// ruční aritmetika. Vzorkové testy níž (konkrétní claim/entity/dossier)
+// jsou naopak stabilní strukturální kontroly a hardcoded zůstávají —
+// mění se jen při skutečné redakční změně toho konkrétního záznamu.
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadCanonicalTree } from "./load.mjs";
 import { compileDataset } from "./compile.mjs";
+import golden from "./compiled-golden.snapshot.json" with { type: "json" };
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const compiled = compileDataset(loadCanonicalTree(join(ROOT, "data/dossiers")));
 
-test("golden: počty záznamů per typ (snapshot 2026-08-06: T-072 tejc+zuna primární doklady — 9 nových zdrojů, 2 update záznamy)", () => {
-  assert.deepEqual(compiled.counts.perType, {
-    case: 93,
-    claim: 955,
-    dossier: 26,
-    entity: 527,
-    gap: 202,
-    relation: 334,
-    source: 667,
-    update: 78,
-  });
-  assert.equal(compiled.counts.dossiers, 26);
-  assert.equal(compiled.counts.entities, 527);
+test("golden: počty záznamů per typ (viz compiled-golden.snapshot.json — npm run test:update-golden)", () => {
+  assert.deepEqual(compiled.counts.perType, golden.countsPerType);
+  assert.equal(compiled.counts.dossiers, golden.countsDossiers);
+  assert.equal(compiled.counts.entities, golden.countsEntities);
 });
 
 test("golden: graf — uzly z entit, hrany z relations", () => {
-  assert.equal(compiled.graph.nodes.length, 527);
-  assert.equal(compiled.graph.edges.length, 334);
+  assert.equal(compiled.graph.nodes.length, golden.graphNodes);
+  assert.equal(compiled.graph.edges.length, golden.graphEdges);
 });
 
 test("golden: vzorek claim záznamu (andrej-babis CLM-01; snapshot 2026-08-05, T-058: 1 ZDROJ → CORROBORATED, k oběma zdrojům rodiny ctk přibyla tisková zpráva Vrchního soudu v Praze SRC-75)", () => {
