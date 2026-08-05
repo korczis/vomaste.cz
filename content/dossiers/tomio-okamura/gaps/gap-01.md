@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "GAP-01 — Výsledek odvolání SPD proti nepravomocnému rozsudku"
-description = "Hnutí oznámilo odvolání; výsledek nebyl ve zkontrolovaných zdrojích nalezen."
+description = "Hnutí oznámilo odvolání; výsledek nebyl ve zkontrolovaných zdrojích ani v primárních rejstřících nalezen."
 template = "dossier-gap.html"
 weight = 1
 
@@ -34,3 +34,5 @@ všechny dohledané zprávy zůstávají z června 2026 (oznámení odvolání),
 beze změny.
 
 **Opakovaná kontrola k 2026-08-03**: hledání zopakováno, žádné rozhodnutí odvolacího soudu nedohledáno. Stav beze změny.
+
+**Opakovaná kontrola k 2026-08-05 (primární dokumenty)**: hledáno cíleně u primárních zdrojů, ne jen ve zpravodajství. Odvolacím soudem by byl Městský soud v Praze; jeho rozhodnutí ve věci nebylo nalezeno. InfoSoud (`infosoud.gov.cz`) je nově jednostránková javascriptová aplikace bez serverem vykresleného detailu řízení a bez veřejného API, takže stav věci z něj nelze doložit strojově ani citovat trvalou URL. **Co konkrétně chybí**: rozhodnutí odvolacího soudu o odvolání hnutí SPD proti rozsudku Obvodního soudu pro Prahu 1 ze 3. června 2026, případně úřední doklad, že o odvolání dosud rozhodnuto nebylo. Mezera zůstává otevřená.

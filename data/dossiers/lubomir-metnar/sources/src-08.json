@@ -19,7 +19,25 @@
   "retrieved": "2026-08-02",
   "claims": [
     {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-12"
+    },
+    {
       "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-26"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-27"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-29"
     }
   ],
   "subjects": [

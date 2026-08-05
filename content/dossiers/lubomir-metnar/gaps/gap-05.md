@@ -21,3 +21,5 @@ směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
 
 **Opakovaná kontrola k 2026-08-03**: cílené hledání zopakováno, včetně komentáře INFO.CZ (31. 7. 2026) a ČeskéNoviny.cz (30. 7. 2026). Žádný z nalezených zdrojů nedokumentuje reakci poslanců, sněmovního výboru pro bezpečnost, opozice, vedení policie ani policejních odborů — jediné doložené hlasy zůstávají Metnar (MV) a Kala/Kadečková (NKÚ). Mezera zůstává otevřená.
+
+**Opakovaná kontrola k 2026-08-05**: hledání zopakováno po přijetí usnesení vládou. Ani [SRC-08](@/dossiers/lubomir-metnar/sources/src-08.md) (ČTK, 30. 7. 2026), ani [SRC-11](@/dossiers/lubomir-metnar/sources/src-11.md) (Úřad vlády) nedokumentují reakci poslanců, sněmovního výboru pro bezpečnost, opozice, vedení policie ani policejních odborů. Sněmovna měla od poloviny července parlamentní prázdniny, což absenci reakcí vysvětluje, ale nedokládá. Mezera zůstává otevřená.

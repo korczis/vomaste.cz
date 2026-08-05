@@ -16,3 +16,5 @@ case_id = "CASE-01"
 +++
 Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu
 dossieru](@/dossiers/lubomir-metnar/_index.md#kauza-ochrana-nku).
+
+**Procesní stav k 2026-08-05**: usnesení vlády přijato 27. 7. 2026 ([CLM-26](@/dossiers/lubomir-metnar/claims/clm-26.md), [CLM-29](@/dossiers/lubomir-metnar/claims/clm-29.md)); NKÚ požádal vládu o přehodnocení ([CLM-28](@/dossiers/lubomir-metnar/claims/clm-28.md)). O žádosti nebylo k datu poslední kontroly rozhodnuto. Přijetí usnesení není zjištěním, že je rozhodnutí správné, a nesouhlas dotčeného úřadu není zjištěním, že je chybné.
