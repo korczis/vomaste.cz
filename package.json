@@ -85,7 +85,18 @@
     "test:intake:e2e": "node --test scripts/intake/run-e2e-fixture.test.mjs",
     "test:intake:github": "node --test scripts/intake/adapters/*.test.mjs scripts/intake/process-github-event.test.mjs scripts/intake/publish-github-result.test.mjs scripts/intake/github/*.test.mjs scripts/intake/validate-artifact-safety.test.mjs",
     "intake:index": "node scripts/intake/build-matching-index.mjs",
-    "intake:match-fixture": "node scripts/intake/process-issue.mjs --event tests/fixtures/intake/valid-new-dossier.json --output-dir .tmp/intake/match-fixture --generated-at 2026-08-02T00:00:00.000Z --repository-commit 0000000000000000000000000000000000000f --overwrite"
+    "intake:match-fixture": "node scripts/intake/process-issue.mjs --event tests/fixtures/intake/valid-new-dossier.json --output-dir .tmp/intake/match-fixture --generated-at 2026-08-02T00:00:00.000Z --repository-commit 0000000000000000000000000000000000000f --overwrite",
+    "prismatic:status": "node scripts/prismatic/status.mjs",
+    "prismatic:probe": "node scripts/prismatic/probe.mjs",
+    "prismatic:plan": "node scripts/prismatic/plan.mjs",
+    "prismatic:run": "node scripts/prismatic/run.mjs",
+    "prismatic:import": "node scripts/prismatic/import.mjs",
+    "prismatic:diff": "node scripts/prismatic/diff.mjs",
+    "prismatic:review": "node scripts/prismatic/review-report.mjs",
+    "prismatic:promote": "node scripts/prismatic/promote.mjs",
+    "prismatic:verify": "node scripts/prismatic/verify.mjs",
+    "prismatic:drift": "node scripts/prismatic/drift.mjs",
+    "prismatic:enrich-all": "node scripts/prismatic/enrich-all.mjs"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.12.1",

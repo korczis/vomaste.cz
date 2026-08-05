@@ -38,6 +38,7 @@ export const ENTRY_HEADING_PATTERNS = [
   /^### Rozšíření rozsahu, /, // česká varianta scope extension
   /^### Structural change, /, // „### Structural change, 2026-07-29: …"
   /^### Not authorized: /, // explicitní zamítnutí — také záznam, také append-only
+  /^### Governance and scope supersession, /, // „### Governance and scope supersession, 2026-08-05: …" — mění proceduru samu, ne jednoho subjektu
 ];
 
 export function isEntryHeading(line) {
