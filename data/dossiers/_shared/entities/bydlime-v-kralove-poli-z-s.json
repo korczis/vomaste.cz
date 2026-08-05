@@ -13,7 +13,9 @@
   "dossierEnabled": false,
   "dossierStatus": "not_authorized",
   "coverageState": "referenced",
-  "dossiers": [],
+  "dossiers": [
+    "martin-pavlik"
+  ],
   "order": 471,
   "description": "Bydlíme v Králově Poli, z.s. (IČO 02922703) — kontextový záznam rejstříkové vazby z ARES, ne dossier.",
   "provenance": {

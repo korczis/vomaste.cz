@@ -18,7 +18,7 @@
   },
   "relationType": "RESPONDED_TO",
   "label": "kritika ODS (Martin Kupka) k plošnému zákazu mobilů ve školách",
-  "status": "corroborated",
+  "status": "single",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-42"

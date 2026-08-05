@@ -18,7 +18,7 @@
   },
   "relationType": "DENIED",
   "label": "Agrofert k obžalobě opakovaně uvedl, že jeho dceřiná společnost postupovala v souladu se zákonem",
-  "status": "corroborated",
+  "status": "single",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-28"

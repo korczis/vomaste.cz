@@ -18,7 +18,7 @@
   },
   "relationType": "HOLDS_ROLE",
   "label": "před nástupem do vlády místostarostka a starostka Bíliny",
-  "status": "corroborated",
+  "status": "single",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-34"

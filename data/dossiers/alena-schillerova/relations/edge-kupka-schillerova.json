@@ -18,7 +18,7 @@
   },
   "relationType": "RESPONDED_TO",
   "label": "Kupka (ODS) označil novelu za „ústavní převrat na splátky“ a po vetu varoval před oslabením Sněmovny",
-  "status": "corroborated",
+  "status": "single",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-07"

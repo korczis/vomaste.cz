@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/relations/edge-pavlik-bydlime",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-pavlik-bydlime",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-pavlik"
+  },
+  "relationId": "edge-pavlik-bydlime",
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/martin-pavlik"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/bydlime-v-kralove-poli-z-s"
+  },
+  "relationType": "MEMBER_OF",
+  "label": "1. místopředseda spolku",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/claims/CLM-02"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/sources/SRC-02"
+    }
+  ],
+  "subjects": [
+    "martin-pavlik"
+  ],
+  "directed": true,
+  "order": 4,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](../../#graf-vztahu). Rejstříkový zápis, ne tvrzení o pochybení."
+    }
+  ]
+}

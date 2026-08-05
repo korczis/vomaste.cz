@@ -18,7 +18,7 @@
   },
   "relationType": "ASSOCIATED_WITH_EVENT",
   "label": "Tejcovo oznámení interního auditu otevřelo bitcoinovou kauzu resortu spravedlnosti",
-  "status": "corroborated",
+  "status": "single",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-02"

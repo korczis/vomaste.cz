@@ -16,16 +16,16 @@ import { compileDataset } from "./compile.mjs";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const compiled = compileDataset(loadCanonicalTree(join(ROOT, "data/dossiers")));
 
-test("golden: počty záznamů per typ (snapshot 2026-08-05: první doložené rejstříkové role martin-pavlik)", () => {
+test("golden: počty záznamů per typ (snapshot 2026-08-05, rozvinutí martin-pavlik v mezích jeho autorizace: claim 933 → 936 o člena orgánu FIDUCIA a dva obchodní podíly, source 624 → 625 o primární rejstříkový výpis ARES, relation 323 → 327 o čtyři rejstříkové hrany, update 70 → 71)", () => {
   assert.deepEqual(compiled.counts.perType, {
     case: 89,
-    claim: 932,
+    claim: 936,
     dossier: 26,
     entity: 521,
     gap: 192,
-    relation: 323,
-    source: 621,
-    update: 68,
+    relation: 327,
+    source: 625,
+    update: 71,
   });
   assert.equal(compiled.counts.dossiers, 26);
   assert.equal(compiled.counts.entities, 521);
@@ -33,7 +33,7 @@ test("golden: počty záznamů per typ (snapshot 2026-08-05: první doložené r
 
 test("golden: graf — uzly z entit, hrany z relations", () => {
   assert.equal(compiled.graph.nodes.length, 521);
-  assert.equal(compiled.graph.edges.length, 323);
+  assert.equal(compiled.graph.edges.length, 327);
 });
 
 test("golden: vzorek claim záznamu (andrej-babis CLM-01; snapshot 2026-08-05, T-058: 1 ZDROJ → CORROBORATED, k oběma zdrojům rodiny ctk přibyla tisková zpráva Vrchního soudu v Praze SRC-75)", () => {

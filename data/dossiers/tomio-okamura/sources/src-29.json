@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-29",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-29",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
+  },
+  "title": "SRC-29 — Poslanecká sněmovna Parlamentu ČR: 11. schůze, 9. hlasování, 5. 3. 2026 (žádost o souhlas s trestním stíháním poslance Tomia Okamury)",
+  "description": "Oficiální výpis jmenovitého hlasování Poslanecké sněmovny: 11. schůze, 9. hlasování z 5. 3. 2026, 19:13, o usnesení mandátového a imunitního výboru k žádosti o souhlas s trestním stíháním Tomia Okamury ve věci sp. zn. 1 T 95/2025.",
+  "outlet": "Poslanecká sněmovna Parlamentu ČR",
+  "sourceType": "primární úřední záznam",
+  "url": "https://www.psp.cz/sqw/hlasy.sqw?G=86781",
+  "published": "2026-03-05",
+  "retrieved": "2026-08-05",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-28"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-29"
+    }
+  ],
+  "subjects": [
+    "okamura"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Primární parlamentní záznam**, otevřen a přečten 2026-08-05.\n\n**Co dokládá doslovně:** „11. schůze, 9. hlasování, 5. března 2026, 19:13:00 —\nŽádost o udělení souhlasu s trestním stíháním poslance Tomia Okamury.\n**NÁVRH BYL PŘIJAT.** Přítomno: 186 | Je třeba: 94 | Ano: 104 | Ne: 82 |\nZdržel se: 0.\" Klubové rozpisy téhož výpisu ukazují, že pro hlasovaly\n**všechny přítomné** kluby vládní většiny a nikdo z nich se nezdržel:\nANO 2011 Ano 77 (3 omluveni), SPD Ano 14 (1 omluven), Motoristé sobě\nAno 13. Proti byly kluby opoziční: ODS 24, STAN 20, Piráti 16,\nKDU-ČSL 15, TOP 09 7. Součty sedí (77 + 14 + 13 = 104; 24 + 20 + 16 +\n15 + 7 = 82).\n\n**Co se hlasovalo:** podle stenoprotokolu téže schůze\n([část 62](https://www.psp.cz/eknih/2025ps/stenprot/011schuz/s011062.htm))\nnačetl zpravodaj Tomáš Kohoutek usnesení **mandátového a imunitního\nvýboru č. 21 ze dne 17. února 2026** v tomto znění: „Poslanecká sněmovna\npodle čl. 27 odst. 4 zákona (č.) 1/1993 Sb., Ústava České republiky (…)\n**vyslovuje nesouhlas** k žádosti o udělení souhlasu k trestnímu stíhání\nTomia Okamury.\" Přijetím tohoto usnesení 104 hlasy tedy Sněmovna\nOkamuru **nevydala**; věc je ve stenoprotokolu identifikována spisovou\nznačkou **1 T 95/2025**. Předcházející hlasování č. 8 bylo procedurálním\nnávrhem na tajné hlasování (zamítnut 18 : 136).\n\n**Nezávislost:** vlastní evidence zákonodárného sboru, který hlasoval —\nne zpravodajský text. Dosavadní zdroje CLM-28 i CLM-29 —\n[SRC-19](@/dossiers/tomio-okamura/sources/src-19.md) (ČT24) a\n[SRC-20](@/dossiers/tomio-okamura/sources/src-20.md) (Romea.cz) — patří\noba do rodiny `ctk`, takže dohromady tvořily jediné doložení. Tímto\nzáznamem přibývá druhá nezávislá rodina.\n\n**Poznámka k přesnosti a limitům:** záznam dokládá **parlamentní\nprocesní úkon**, nic víc. Nevydání poslance není zproštění obžaloby,\nnení rozhodnutí soudu a neříká nic o pravdivosti obvinění. Číselná\nshoda s hlasováním o vydání Andreje Babiše téhož večera (7. hlasování,\nrovněž 186 přítomných a 104 pro) je náhodná, ne táž věc: Babišovo\nhlasování je vedeno pod G=86779 a skončilo 104 : 81, Okamurovo pod\nG=86781 a skončilo 104 : 82."
+    }
+  ],
+  "order": 29
+}

@@ -18,7 +18,7 @@
   },
   "relationType": "FOLLOWED_BY",
   "label": "nahradil Řehku ve funkci náčelníka Generálního štábu",
-  "status": "corroborated",
+  "status": "single",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-20"

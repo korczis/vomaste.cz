@@ -18,7 +18,7 @@
   },
   "relationType": "SUBJECT_OF_PROCEEDING",
   "label": "NSS 12/2025: zákaz kvůli střetu zájmů platí i pro zakázky malého rozsahu — správní výklad, ne trestní odpovědnost",
-  "status": "corroborated",
+  "status": "single",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-68"

@@ -18,7 +18,7 @@
   },
   "relationType": "RESPONDED_TO",
   "label": "veřejná kritika samosoudkyně, která rozsudek nad SPD vynesla a odůvodnila",
-  "status": "corroborated",
+  "status": "single",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-18"

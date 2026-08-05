@@ -18,7 +18,7 @@
   },
   "relationType": "INVESTIGATED_BY",
   "label": "obžalobu na Okamuru a SPD podal šéf Obvodního státního zastupitelství pro Prahu 1",
-  "status": "corroborated",
+  "status": "single",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-21"

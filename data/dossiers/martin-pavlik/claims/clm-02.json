@@ -6,12 +6,28 @@
   "@type": "vomaste:Claim",
   "recordType": "claim",
   "identifier": "CLM-02",
-  "dossier": { "@id": "https://vomaste.cz/id/dossiers/martin-pavlik" },
-  "text": "Veřejný rejstříkový profil Podnikatel.cz uvádí Martina Pavlíka jako 1. místopředsedu spolku Bydlíme v Králově Poli, z.s.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
-  "sources": [{ "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/sources/SRC-01" }],
-  "subjects": ["martin-pavlik"],
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-pavlik"
+  },
+  "text": "Veřejný rejstřík (ARES) i rejstříkový profil Podnikatel.cz uvádějí Martina Pavlíka jako 1. místopředsedu spolku Bydlíme v Králově Poli, z.s. (IČO 02922703)",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/sources/SRC-02"
+    }
+  ],
+  "subjects": [
+    "martin-pavlik"
+  ],
   "order": 2,
-  "content": [{ "type": "markdown", "value": "Tvrzení reprodukuje pouze roli zobrazenou na určeném veřejném rejstříkovém profilu. Nevyjadřuje závěr o skutečném rozsahu činnosti spolku, o rozhodování Martina Pavlíka ani o jakémkoli pochybení. Protože je zatím doloženo jediným rejstříkovým agregátorem, zůstává ve stavu 1 ZDROJ." }]
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tvrzení reprodukuje pouze roli zobrazenou na určeném veřejném rejstříkovém profilu. Nevyjadřuje závěr o skutečném rozsahu činnosti spolku, o rozhodování Martina Pavlíka ani o jakémkoli pochybení. Protože je zatím doloženo jediným rejstříkovým agregátorem, zůstává ve stavu 1 ZDROJ."
+    }
+  ]
 }

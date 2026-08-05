@@ -18,7 +18,7 @@
   },
   "relationType": "ASSOCIATED_WITH_EVENT",
   "label": "Senát vrátil novelu Sněmovně s pozměňovacími návrhy",
-  "status": "corroborated",
+  "status": "single",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-13"

@@ -18,7 +18,7 @@
   },
   "relationType": "INVESTIGATED_BY",
   "label": "vyšetřování (výsledek k datu poslední kontroly neuzavřen)",
-  "status": "corroborated",
+  "status": "single",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-10"

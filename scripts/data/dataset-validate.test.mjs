@@ -211,18 +211,36 @@ test("ne-kontextová hrana bez evidence je chyba; kontextová smí být bez ní"
   assert.deepEqual(errors, []);
 });
 
-test("hrana single se 2 zdroji je chyba; corroborated s 1 rodinou je warning (zrcadlí validate-graph)", () => {
+test("hrana single se 2 zdroji TÉŽE rodiny je správně (nezávislost přes rodiny, stejně jako S1)", () => {
   const model = clone();
+  // stejný outlet jako SRC-01 ⇒ jedna rodina ⇒ jedno nezávislé doložení
   addSource(model, { outlet: "Example Daily" });
+  find(model, RELATION).record.sources.push({ "@id": "https://vomaste.cz/id/dossiers/example-subject/sources/SRC-02" });
+  const { errors } = validateSemantics(model, { authorizations: AUTHS });
+  assert.deepEqual(errors, []);
+});
+
+test("hrana single se 2 rodinami je chyba; corroborated s 1 rodinou je warning (zrcadlí validate-graph)", () => {
+  const model = clone();
+  addSource(model, { outlet: "Jiný deník" });
   const rel = find(model, RELATION).record;
   rel.sources.push({ "@id": "https://vomaste.cz/id/dossiers/example-subject/sources/SRC-02" });
   const single = validateSemantics(model, { authorizations: AUTHS });
-  assert.ok(single.errors.some((e) => e.includes('statusem "single" cituje 2')), single.errors.join("\n"));
+  assert.ok(
+    single.errors.some((e) => e.includes('statusem "single" cituje 2 zdroj(ů) z 2 nezávislých source families')),
+    single.errors.join("\n"),
+  );
 
   rel.status = "corroborated";
   const corr = validateSemantics(model, { authorizations: AUTHS });
   assert.deepEqual(corr.errors, []);
-  assert.ok(corr.warnings.some((w) => w.includes("jedné source family")), corr.warnings.join("\n"));
+  assert.deepEqual(corr.warnings, []);
+
+  // corroborated, ale obě citace z téže rodiny ⇒ warning, ne chyba
+  find(model, "example-subject/sources/src-02.json").record.outlet = "Example Daily";
+  const sameFamily = validateSemantics(model, { authorizations: AUTHS });
+  assert.deepEqual(sameFamily.errors, []);
+  assert.ok(sameFamily.warnings.some((w) => w.includes("jedné source family")), sameFamily.warnings.join("\n"));
 });
 
 test("neexistující autorizační záznam je chyba; prázdné authorization.records také", () => {
