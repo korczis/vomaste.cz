@@ -39,20 +39,21 @@ someone already covered. Do not write any dossier content. Instead:
 1. Research candidate topics using named, dated, independent sources —
    **open and read each one directly**, never cite from a search
    snippet (same rule as `dossier-entry` step 1 for sources).
-2. Present the sourced candidates to the site owner and get their
-   **explicit, on-the-record decision in the current conversation** —
-   silence, "it's already public", or "seems like the natural next
-   topic" are never authorization.
+2. A clear owner request in the current conversation to create, add,
+   investigate, deepen or cover this named subject is the on-the-record
+   decision. Do not demand a magic phrase, restate the same question, or
+   wait for another "proceed". If the owner has not requested work on the
+   named subject, present sourced candidates and ask once.
 3. Once explicitly authorized, the write path depends on which kind of
    authorization it is — these are not interchangeable:
-   - **Brand-new subject** (no existing authorized entry at all): the
-     site owner must run `npm run authorize:entity <entity-id>`
-     themselves, interactively, in their own terminal. That script
-     (`scripts/dossier/authorize-entity.mjs`) is deliberately
-     TTY-only and human-typed — it refuses non-interactive invocation
-     by design, and that includes this skill. You may draft suggested
-     scope wording for them to review and adapt, but you do not run the
-     script and you do not write the AGENTS.md entry yourself.
+   - **Brand-new subject** (no existing authorized entry at all): use
+     `npm run authorize:entity <entity-id>` after the owner has made the
+     decision. The owner may confirm interactively, or this skill may draft
+     a concrete scope from the request and opened public sources, then record
+     it with `--owner-authorized-in-conversation` and `--scope-file=<path>`.
+     A clear request naming the subject is enough; the skill proceeds without
+     a second authorization round. CI and background automation may not use
+     this mode without a current owner instruction.
    - **Scope extension to an already-authorized subject**: append a new
      dated subsection to AGENTS.md's log yourself (never edit or remove
      an existing entry), stating exactly who, which specific topic, and

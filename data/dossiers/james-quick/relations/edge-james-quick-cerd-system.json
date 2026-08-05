@@ -1,0 +1,7 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json", "schemaVersion": 1, "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/relations/edge-james-quick-cerd-system", "@type": "vomaste:Relation", "recordType": "relation", "identifier": "edge-james-quick-cerd-system", "relationId": "edge-james-quick-cerd-system",
+  "dossier": { "@id": "https://vomaste.cz/id/dossiers/james-quick" }, "sourceEntity": { "@id": "https://vomaste.cz/id/entities/james-quick" }, "targetEntity": { "@id": "https://vomaste.cz/id/entities/cerd-system-llc" },
+  "relationType": "ASSOCIATED_WITH_EVENT", "label": "spojen se sítí právnických osob kolem systému CERD", "status": "single", "claims": [{ "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-02" }], "sources": [{ "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-02" }], "subjects": ["james-quick"], "directed": false, "order": 2,
+  "content": [{ "type": "markdown", "value": "Kontextová vazba odvozená z úředního popisu sítě právnických osob zapojených do systému CERD. Nejde o tvrzení o aktuálním vlastnictví nebo statutární funkci." }]
+}

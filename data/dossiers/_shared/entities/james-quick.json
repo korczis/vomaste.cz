@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/james-quick",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "james-quick",
+  "entityId": "james-quick",
+  "title": "James Quick",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "developing",
+  "dossiers": [
+    "james-quick"
+  ],
+  "order": 475,
+  "provenance": {
+    "discoveredAt": "2026-08-05",
+    "discoveredVia": [
+      "owner-request-2026-08-05"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Hlavní subjekt autorizovaného dossieru. Záznam vznikl na základě výslovného pokynu vlastníka k veřejné, zdrojově doložené rešerši; samotná existence entity ani dossieru neobsahuje tvrzení o pochybení."
+    }
+  ]
+}

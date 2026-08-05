@@ -1,0 +1,8 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json", "schemaVersion": 1, "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/csr-protikorupcnilinka", "@type": "vomaste:Entity", "recordType": "entity", "identifier": "csr-protikorupcnilinka", "entityId": "csr-protikorupcnilinka",
+  "title": "CSR & Protikorupcnilinka.cz s.r.o.", "entityType": "company", "publicationRole": "context", "dossierEnabled": false, "dossierStatus": "not_authorized", "coverageState": "contextual", "dossiers": ["james-quick"],
+  "externalIds": { "ico": "03877248" }, "order": 516,
+  "provenance": { "discoveredAt": "2026-08-05", "discoveredVia": ["edge-james-quick-csr-protikorupcnilinka"], "claimRefs": ["CLM-01", "CLM-02"], "sourceRefs": ["SRC-01", "SRC-02"], "cluster": "cerd", "depth": 1 },
+  "content": [{ "type": "markdown", "value": "Kontextová společnost spojená s provozem systému CERD v úředních dokumentech ÚOOÚ. Záznam neznamená samostatný autorizovaný dossier ani automatické připsání všech činností společnosti Jamesi Quickovi." }]
+}

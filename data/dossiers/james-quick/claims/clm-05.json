@@ -1,0 +1,17 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-05",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-05",
+  "dossier": { "@id": "https://vomaste.cz/id/dossiers/james-quick" },
+  "text": "ČT24 v červnu 2011 popsala domény připomínající názvy státních orgánů, které přesměrovávaly na CERD; Jiří Jehlička jako zástupce provozovatele uvedl, že domény byly řádně zakoupeny a provozovatel pro ně zatím nenašel jiné využití.",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [{ "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-05" }],
+  "subjects": ["james-quick"],
+  "order": 5,
+  "content": [{ "type": "markdown", "value": "Záznam spojuje popis redakce s jasně připsaným veřejným vyjádřením Jiřího Jehličky. Neříká, že weby provozoval stát, ani že samotná registrace domény byla protiprávní. Právní hodnocení by vyžadovalo samostatný úřední nebo soudní zdroj." }]
+}

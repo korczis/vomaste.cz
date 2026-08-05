@@ -1,0 +1,7 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json", "schemaVersion": 1, "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/relations/edge-james-quick-csr-protikorupcnilinka", "@type": "vomaste:Relation", "recordType": "relation", "identifier": "edge-james-quick-csr-protikorupcnilinka", "relationId": "edge-james-quick-csr-protikorupcnilinka",
+  "dossier": { "@id": "https://vomaste.cz/id/dossiers/james-quick" }, "sourceEntity": { "@id": "https://vomaste.cz/id/entities/james-quick" }, "targetEntity": { "@id": "https://vomaste.cz/id/entities/csr-protikorupcnilinka" },
+  "relationType": "HOLDS_ROLE", "label": "podle ÚOOÚ byl v době kontroly jednatelem", "status": "single", "claims": [{ "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-01" }], "sources": [{ "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-01" }], "subjects": ["james-quick"], "directed": true, "order": 1,
+  "content": [{ "type": "markdown", "value": "Úředně doložená historická korporátní funkce. Hrana neříká nic o dnešním stavu společnosti ani o odpovědnosti za každý její jednotlivý úkon." }]
+}

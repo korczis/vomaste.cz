@@ -5,7 +5,7 @@ system. This is provenance, not a publication decision — see
 `data/authorizations.toml` and `scripts/dossier/authorize-entity.mjs`
 for the only thing that actually authorizes a dossier.
 
-829 record(s) logged across 6 day(s). 0 new since last run.
+842 record(s) logged across 7 day(s). 12 new since last run.
 
 ## 2026-07-29
 
@@ -853,3 +853,19 @@ for the only thing that actually authorizes a dossier.
 - `michal-maixner` (entity, created)
 - `michal-vit` (entity, created)
 - `nadacni-fond-fiducia` (entity, created)
+
+## 2026-08-05
+
+- `james-quick` (entity, created)
+- `cerd-system-llc` (entity, created)
+- `csr-protikorupcnilinka` (entity, created)
+- `jan-morava` (entity, created)
+- `jiri-cunek` (entity, created)
+- `stanislav-gross` (entity, created)
+- `vladimir-ruzicka` (entity, created)
+- `edge-james-quick-cerd-system` (relation, created)
+- `edge-james-quick-csr-protikorupcnilinka` (relation, created)
+- `edge-james-quick-jan-morava` (relation, created)
+- `edge-james-quick-jiri-cunek` (relation, created)
+- `edge-james-quick-stanislav-gross` (relation, created)
+- `edge-james-quick-vladimir-ruzicka` (relation, created)

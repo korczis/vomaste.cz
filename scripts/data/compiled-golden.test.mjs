@@ -16,24 +16,24 @@ import { compileDataset } from "./compile.mjs";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const compiled = compileDataset(loadCanonicalTree(join(ROOT, "data/dossiers")));
 
-test("golden: počty záznamů per typ (snapshot 2026-08-05, T-061: kolo „srovnej tvrzení s primárními dokumenty, které už v datech leží“ nepřidalo ANI JEDEN zdroj ani tvrzení — 5 tvrzení opraveno nebo upřesněno podle primárního dokumentu a 7 povýšeno či doplněno připojením existujícího zdroje, takže roste jen update: 60 → 67 o 7 nových update logů)", () => {
+test("golden: počty záznamů per typ (snapshot 2026-08-05: T-061 + autorizovaný dossier james-quick)", () => {
   assert.deepEqual(compiled.counts.perType, {
     case: 89,
-    claim: 921,
-    dossier: 24,
-    entity: 514,
-    gap: 189,
-    relation: 317,
-    source: 612,
-    update: 67,
+    claim: 929,
+    dossier: 25,
+    entity: 521,
+    gap: 191,
+    relation: 323,
+    source: 620,
+    update: 68,
   });
-  assert.equal(compiled.counts.dossiers, 24);
-  assert.equal(compiled.counts.entities, 514);
+  assert.equal(compiled.counts.dossiers, 25);
+  assert.equal(compiled.counts.entities, 521);
 });
 
 test("golden: graf — uzly z entit, hrany z relations", () => {
-  assert.equal(compiled.graph.nodes.length, 514);
-  assert.equal(compiled.graph.edges.length, 317);
+  assert.equal(compiled.graph.nodes.length, 521);
+  assert.equal(compiled.graph.edges.length, 323);
 });
 
 test("golden: vzorek claim záznamu (andrej-babis CLM-01; snapshot 2026-08-05, T-058: 1 ZDROJ → CORROBORATED, k oběma zdrojům rodiny ctk přibyla tisková zpráva Vrchního soudu v Praze SRC-75)", () => {

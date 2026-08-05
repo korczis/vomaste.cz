@@ -1,0 +1,17 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-08",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-08",
+  "dossier": { "@id": "https://vomaste.cz/id/dossiers/james-quick" },
+  "text": "iROZHLAS v dubnu 2015 uvedl, že Jiří Jehlička jako provozovatel CERD a Protikorupčnílinka.cz podal trestní oznámení v souvislosti s tehdejším hokejovým reprezentačním trenérem Vladimírem Růžičkou.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [{ "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-08" }],
+  "subjects": ["james-quick"],
+  "order": 8,
+  "content": [{ "type": "markdown", "value": "Tvrzení dokládá pouze podání oznámení a veřejnou institucionální roli, v níž byl Jiří Jehlička citován. Neříká, že se Vladimír Růžička dopustil trestného činu, a není dokladem obchodního ani osobního vztahu mezi oběma muži." }]
+}

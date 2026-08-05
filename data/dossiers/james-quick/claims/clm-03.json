@@ -1,0 +1,17 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-03",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-03",
+  "dossier": { "@id": "https://vomaste.cz/id/dossiers/james-quick" },
+  "text": "Reportéři ČT v prosinci 2010 uvedli, že za webem CERD stál Jiří Jehlička, že banky nepřikládaly jeho certifikátu bezdlužnosti hodnotu a že seznam zobrazoval také osoby, které podle reportáže nikomu nic nedlužily.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [{ "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-03" }],
+  "subjects": ["james-quick"],
+  "order": 3,
+  "content": [{ "type": "markdown", "value": "Tvrzení je výslovně připsáno dobové reportáži České televize. Nepřenáší její formulace do hlasu webu a netvrdí nic o dnešní podobě nebo provozovateli služby. Pro dobový kontext je vedené jako jediný redakční zdroj." }]
+}

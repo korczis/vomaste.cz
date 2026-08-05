@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/james-quick"
+  },
+  "text": "Úřad pro ochranu osobních údajů v odpovědi zveřejněné 19. prosince 2024 uvedl, že při dřívější kontrole považoval Jiřího Jehličku, nyní Jamese Quicka, za správce a zpracovatele osobních údajů ve vztahu k systému CERD; v době kontroly byl podle úřadu také jednatelem CSR & Protikorupcnilinka.cz s.r.o.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-01"
+    }
+  ],
+  "subjects": [
+    "james-quick"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tvrzení přesně reprodukuje veřejnou odpověď ÚOOÚ a nepřidává závěr o porušení zákona. Úřad popisuje, koho při starší kontrole považoval za správce a zpracovatele ve vztahu k CERD a jakou korporátní funkci tato osoba v té době zastávala. Jeden oficiální dokument znamená stav 1 ZDROJ; další weby přebírající nebo sebepopisující stejnou informaci nejsou nezávislou koroborací."
+    }
+  ]
+}

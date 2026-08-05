@@ -1,6 +1,6 @@
 {
-  "$comment": "Hash-kotva append-only autorizačního logu v AGENTS.md (## Content about real parties). Generuje VÝHRADNĚ interaktivní `npm run authorization:anchor` (TTY-only, lidské potvrzení). verify-authorization-log-append-only.mjs proti ní ověřuje byte-verní integritu každého záznamu; validate-authorization.mjs přes ni váže data/authorizations.toml na log. Needitovat ručně.",
-  "generatedAt": "2026-08-02",
+  "$comment": "Hash-kotva append-only autorizačního logu v AGENTS.md (## Content about real parties). Generuje `npm run authorization:anchor`: interaktivně, nebo pro čistě nový záznam po výslovné autorizaci vlastníka v aktuální konverzaci. verify-authorization-log-append-only.mjs proti ní ověřuje byte-verní integritu každého záznamu; validate-authorization.mjs přes ni váže data/authorizations.toml na log. Needitovat ručně.",
+  "generatedAt": "2026-08-05",
   "algorithm": "sha256(normalized entry block: LF line endings, trailing whitespace trimmed)",
   "entries": [
     {
@@ -106,6 +106,10 @@
     {
       "heading": "### Authorized subject: Petr Vencálek (on the record)",
       "sha256": "495bd0a57a6dc2a8c9ca813b81b346b1a41e50c97d29d145b20890a1b4fda3b8"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-05: James Quick",
+      "sha256": "cd77348f477eb5231101dfc359519148e5121943a434007b86d5854cb4792d51"
     }
   ]
 }

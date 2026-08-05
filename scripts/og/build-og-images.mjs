@@ -17,7 +17,7 @@
  * cards from data/dossiers.toml + each dossier's generated stats.toml, so a
  * new dossier gets a card without editing this script.
  */
-import { readFileSync, mkdirSync } from "node:fs";
+import { existsSync, readFileSync, mkdirSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { chromium } from "playwright";
@@ -36,7 +36,16 @@ const siteTitle = field(config, "title") ?? "vomaste.cz";
 // data/dossiers.toml + stats.toml zanikly).
 const { loadDossierRegistry } = await import("../dossier/lib/dossier-registry.mjs");
 const { readDossierStats } = await import("../dossier/lib/record-tables.mjs");
-const dossiers = loadDossierRegistry().map((d) => ({ slug: d.slug, title: d.title, type: d.dossierType }));
+const requestedSlugs = new Set(process.argv.slice(2));
+const dossiers = loadDossierRegistry()
+  .map((d) => ({ slug: d.slug, title: d.title, type: d.dossierType }))
+  .filter((d) => requestedSlugs.size === 0 || requestedSlugs.has(d.slug));
+
+if (requestedSlugs.size > 0 && dossiers.length !== requestedSlugs.size) {
+  const found = new Set(dossiers.map((d) => d.slug));
+  const missing = [...requestedSlugs].filter((slug) => !found.has(slug));
+  throw new Error(`Unknown dossier slug(s): ${missing.join(", ")}`);
+}
 
 const stats = (slug) => {
   const s = readDossierStats(ROOT, slug);
@@ -88,7 +97,8 @@ function cardHtml({ kicker, title, subtitle, chips = [], footer }) {
   </body></html>`;
 }
 
-const browser = await chromium.launch();
+const systemChrome = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
+const browser = await chromium.launch(existsSync(systemChrome) ? { executablePath: systemChrome } : {});
 const page = await browser.newPage({ viewport: { width: 1200, height: 630 }, deviceScaleFactor: 1 });
 
 async function render(html, file) {
@@ -98,15 +108,17 @@ async function render(html, file) {
 }
 
 console.log("Rendering OG cards:");
-await render(
-  cardHtml({
-    kicker: "Open Intelligence Commons",
-    title: siteTitle,
-    subtitle: "Otevřený, Git-native systém dohledatelných dossierů ve veřejném zájmu. Nevěřte autorovi — zkontrolujte data, zdroje a historii změn.",
-    footer: "public domain · zdrojováno · verzováno v Gitu",
-  }),
-  "site.jpg",
-);
+if (requestedSlugs.size === 0) {
+  await render(
+    cardHtml({
+      kicker: "Open Intelligence Commons",
+      title: siteTitle,
+      subtitle: "Otevřený, Git-native systém dohledatelných dossierů ve veřejném zájmu. Nevěřte autorovi — zkontrolujte data, zdroje a historii změn.",
+      footer: "public domain · zdrojováno · verzováno v Gitu",
+    }),
+    "site.jpg",
+  );
+}
 
 for (const d of dossiers) {
   const s = stats(d.slug);
@@ -133,4 +145,4 @@ for (const d of dossiers) {
 }
 
 await browser.close();
-console.log(`Done — ${1 + dossiers.length} card(s) in static/images/og/.`);
+console.log(`Done — ${dossiers.length + (requestedSlugs.size === 0 ? 1 : 0)} card(s) in static/images/og/.`);
