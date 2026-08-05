@@ -6,12 +6,28 @@
   "@type": "vomaste:Claim",
   "recordType": "claim",
   "identifier": "CLM-01",
-  "dossier": { "@id": "https://vomaste.cz/id/dossiers/martin-pavlik" },
-  "text": "Veřejný rejstříkový profil Podnikatel.cz uvádí Martina Pavlíka jako jednatele společnosti MEDIA PROJECT CZ s.r.o.",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-pavlik"
+  },
+  "text": "Veřejný rejstřík (ARES) i rejstříkový profil Podnikatel.cz uvádějí Martina Pavlíka jako jednatele společnosti MEDIA PROJECT CZ s.r.o. (IČO 01529820)",
   "status": "status-single",
   "statusLabel": "1 ZDROJ",
-  "sources": [{ "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/sources/SRC-01" }],
-  "subjects": ["martin-pavlik"],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/sources/SRC-02"
+    }
+  ],
+  "subjects": [
+    "martin-pavlik"
+  ],
   "order": 1,
-  "content": [{ "type": "markdown", "value": "Tvrzení reprodukuje pouze roli zobrazenou na určeném veřejném rejstříkovém profilu. Nevyjadřuje závěr o skutečném rozsahu činnosti společnosti, o rozhodování Martina Pavlíka ani o jakémkoli pochybení. Protože je zatím doloženo jediným rejstříkovým agregátorem, zůstává ve stavu 1 ZDROJ." }]
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tvrzení reprodukuje pouze roli zobrazenou na určeném veřejném rejstříkovém profilu. Nevyjadřuje závěr o skutečném rozsahu činnosti společnosti, o rozhodování Martina Pavlíka ani o jakémkoli pochybení. Protože je zatím doloženo jediným rejstříkovým agregátorem, zůstává ve stavu 1 ZDROJ.\n\nRoli shodně uvádí primární registr ARES i agregátor Podnikatel.cz, ale nejde o nezávislé potvrzení: agregátor tato data z registru přebírá, takže mu nemůže odporovat. Je to jedno doložení citované dvakrát — proto 1 ZDROJ, byť opřený o primární registr, ne pouze o agregátor."
+    }
+  ]
 }

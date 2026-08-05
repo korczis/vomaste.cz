@@ -6,20 +6,35 @@
   "@type": "vomaste:Source",
   "recordType": "source",
   "identifier": "SRC-01",
-  "dossier": { "@id": "https://vomaste.cz/id/dossiers/martin-pavlik" },
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-pavlik"
+  },
   "title": "SRC-01 — Podnikatel.cz: Martin Pavlík",
   "description": "Veřejný rejstříkový profil použitý jako identitní kotva a jako jediný zdroj tří výslovně uvedených korporátních a spolkových rolí.",
   "outlet": "Podnikatel.cz",
-  "sourceFamily": "podnikatel-cz-rejstrik",
+  "sourceFamily": "cz-verejny-rejstrik",
   "sourceType": "sekundární rejstříkový agregátor",
   "url": "https://www.podnikatel.cz/rejstrik/osoby/martin-pavlik-1902710/",
   "retrieved": "2026-08-05",
   "claims": [
-    { "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/claims/CLM-01" },
-    { "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/claims/CLM-02" },
-    { "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/claims/CLM-03" }
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/claims/CLM-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/claims/CLM-03"
+    }
   ],
-  "subjects": ["martin-pavlik"],
-  "content": [{ "type": "markdown", "value": "Zdroj je veřejně dostupný profil agregující údaje z českých veřejných rejstříků. V tomto dossieru slouží jako uživatelem určená identitní kotva a dokládá pouze tři role, které na stránce výslovně zobrazuje. Nejde o nezávislou redakční investigaci ani o důkaz skutečného rozsahu činnosti či pochybení. Adresu, datum narození ani údaje připisované jmenovcům dossier ze stránky nepřebírá. Pro silnější doložení rolí budou hledány odpovídající primární listiny ve veřejném rejstříku." }],
+  "subjects": [
+    "martin-pavlik"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zdroj je veřejně dostupný profil agregující údaje z českých veřejných rejstříků. V tomto dossieru slouží jako uživatelem určená identitní kotva a dokládá pouze tři role, které na stránce výslovně zobrazuje. Nejde o nezávislou redakční investigaci ani o důkaz skutečného rozsahu činnosti či pochybení. Adresu, datum narození ani údaje připisované jmenovcům dossier ze stránky nepřebírá. Pro silnější doložení rolí budou hledány odpovídající primární listiny ve veřejném rejstříku."
+    }
+  ],
   "order": 1
 }

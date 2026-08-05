@@ -16,16 +16,16 @@ import { compileDataset } from "./compile.mjs";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const compiled = compileDataset(loadCanonicalTree(join(ROOT, "data/dossiers")));
 
-test("golden: počty záznamů per typ (snapshot 2026-08-05, T-062: revize zdrojů james-quick — nedoložený uzel i hrana Jiřího Čunka odstraněny, přibyl procesní claim CLM-09 se dvěma primárními zdroji a dvě mezery)", () => {
+test("golden: počty záznamů per typ (snapshot 2026-08-05, union: revize james-quick (odstraněn nedoložený uzel i hrana Jiřího Čunka, +CLM-09, +2 mezery) a souběžné rozvinutí martin-pavlik)", () => {
   assert.deepEqual(compiled.counts.perType, {
     case: 89,
-    claim: 933,
+    claim: 937,
     dossier: 26,
     entity: 520,
     gap: 194,
-    relation: 322,
-    source: 623,
-    update: 69,
+    relation: 326,
+    source: 627,
+    update: 72,
   });
   assert.equal(compiled.counts.dossiers, 26);
   assert.equal(compiled.counts.entities, 520);
@@ -33,7 +33,7 @@ test("golden: počty záznamů per typ (snapshot 2026-08-05, T-062: revize zdroj
 
 test("golden: graf — uzly z entit, hrany z relations", () => {
   assert.equal(compiled.graph.nodes.length, 520);
-  assert.equal(compiled.graph.edges.length, 322);
+  assert.equal(compiled.graph.edges.length, 326);
 });
 
 test("golden: vzorek claim záznamu (andrej-babis CLM-01; snapshot 2026-08-05, T-058: 1 ZDROJ → CORROBORATED, k oběma zdrojům rodiny ctk přibyla tisková zpráva Vrchního soudu v Praze SRC-75)", () => {

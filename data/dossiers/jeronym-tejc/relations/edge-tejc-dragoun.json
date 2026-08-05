@@ -18,7 +18,7 @@
   },
   "relationType": "ASSOCIATED_WITH_EVENT",
   "label": "Dragoun jako dozorující státní zástupce VSZ Olomouc v bitcoinové kauze, kam bylo doručeno Tejcovo trestní oznámení",
-  "status": "corroborated",
+  "status": "single",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-21"

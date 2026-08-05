@@ -17,9 +17,13 @@
 //       i ≥1 existující zdroj (tvarové minItems na polích vlastní
 //       relation.schema.json; tady se vlastní sémantika „hrana má
 //       skutečnou evidenci", tedy počítají se jen rozložitelné cíle)
-//   S4  relation status single ⇒ přesně 1 zdroj (ERROR, zrcadlí
-//       validate-graph.mjs); status corroborated ⇒ ≥2 source families
-//       (WARNING, zrcadlí validate-graph.mjs, který to také jen hlásí)
+//   S4  relation status single ⇒ ≥1 zdroj z právě 1 source family
+//       (ERROR); status corroborated ⇒ ≥2 source families (WARNING,
+//       zrcadlí validate-graph.mjs, který to také jen hlásí). Dřív S4
+//       vyžadovalo přesně jeden ZDROJ — počítalo tedy citace, ne
+//       nezávislost, a hraně doložené třemi převzetími téže agenturní
+//       zprávy nedovolilo přiznat, že jde o jedno doložení, aniž by
+//       zahodila dvě citace. Sjednoceno s S1 na úrovni tvrzení.
 //   S5  autorizace: každý dossier s dossierType=entity má neprázdné
 //       authorization.records a každý záznam existuje
 //       v data/authorizations.toml (transkripce append-only logu
@@ -274,12 +278,24 @@ export function collectSemanticsFindings(model, options = {}) {
         `${relPath}: hrana se statusem "${record.status}" nemá plnou evidenci (${claimIds.length} claim(ů), ${existing.length} zdroj(ů)) — každá ne-kontextová hrana nese ≥1 existující claim i zdroj`,
       );
     }
-    if (record.status === "single" && sourceIds.length !== 1) {
-      found(
-        "S4",
-        wrapper,
-        `${relPath}: hrana se statusem "single" cituje ${sourceIds.length} zdrojů — buď zdroje nejsou nezávislé (zdokumentovat), nebo patří status "corroborated"`,
-      );
+    if (record.status === "single") {
+      // Nezávislost přes RODINY a vydavatele, ne přes počet zdrojů —
+      // táž definice jako S1 na úrovni tvrzení (6b0bd4d + S10), jen na
+      // hraně. Hrana doložená třemi převzetími téže agenturní zprávy má
+      // JEDNO nezávislé doložení a „single" je pro ni správný stav;
+      // nutit ji zahodit dvě citace, aby prošla počtem, by ubralo
+      // dohledatelnost, ne přidalo přesnost. Chybou zůstává hrana bez
+      // zdroje a hrana, která se jako „single" tváří, přestože mezi
+      // jejími zdroji nezávislá dvojice existuje.
+      const families = familiesOf(sourceIds);
+      const pair = independentPair(sourceIds);
+      if (sourceIds.length === 0 || pair) {
+        found(
+          "S4",
+          wrapper,
+          `${relPath}: hrana se statusem "single" cituje ${sourceIds.length} zdroj(ů) z ${families.size} nezávislých source families${pair ? ` (nezávislá dvojice ${pair.join(" + ")})` : ""} — „single" znamená jedno nezávislé doložení; u nezávislé dvojice patří status "corroborated"`,
+        );
+      }
     }
     if (record.status === "corroborated") {
       // Táž definice nezávislosti jako u claims (S2 + S10), jen v

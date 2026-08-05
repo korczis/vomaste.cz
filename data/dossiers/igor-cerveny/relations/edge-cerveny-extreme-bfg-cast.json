@@ -18,7 +18,7 @@
   },
   "relationType": "HOLDS_INTEREST_IN",
   "label": "byl jednatelem a spolumajitelem podcastové společnosti do vyřešení střetu zájmů (2026)",
-  "status": "corroborated",
+  "status": "single",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-08"

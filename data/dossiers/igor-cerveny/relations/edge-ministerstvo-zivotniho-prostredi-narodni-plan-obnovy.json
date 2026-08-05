@@ -18,7 +18,7 @@
   },
   "relationType": "ASSOCIATED_WITH_EVENT",
   "label": "při systemizaci k dubnu 2026 zaniklo oddělení financování Národního plánu obnovy",
-  "status": "corroborated",
+  "status": "single",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-47"

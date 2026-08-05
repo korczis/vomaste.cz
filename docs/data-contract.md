@@ -150,8 +150,9 @@ Tři místa, jinak je změna nedokončená:
 |---|---|---|
 | Tvar (typy, povinnost, formáty `@id`/ISO, uzavřené enumy) | `schemas/canonical/` + `scripts/data/validate-shape.mjs` (AJV 2020-12, strict) | `CLM-\d+`, `retrieved` ISO datum, claim mimo opinion ≥ 1 zdroj |
 | Referenční integrita R1–R7 | `scripts/data/validate-references.mjs` | unikátní `@id`, cesta ↔ `@id`, same-dossier reference, graf (uzly = existující entity, edges 1:1 s relations) |
-| Redakční sémantika S1–S10 | `scripts/data/validate-semantics.mjs` | S1 single = 1 zdroj; S2 corroborated ≥ 2 rodiny; S5/S6 autorizace; S7 subjektové uzly; S8 souvislost grafu (BFS); S9 provenance refs entit rozlišitelné v jejich dossierech; S10 týž vydavatel (outlet / registrovaná doména) nezakládá nezávislé doložení |
+| Redakční sémantika S1–S10 | `scripts/data/validate-semantics.mjs` | S1 single = žádná nezávislá dvojice; S2 corroborated ≥ 2 rodiny; S4 hrana single = žádná nezávislá dvojice (ne „1 zdroj"); S5/S6 autorizace; S7 subjektové uzly; S8 souvislost grafu (BFS); S9 provenance refs entit rozlišitelné v jejich dossierech; S10 týž vydavatel (outlet / registrovaná doména) nezakládá nezávislé doložení |
 | Parita tabulky tvrzení T1–T8 | `scripts/data/validate-registry-table.mjs` | řádka ↔ kanonický claim byte-verně, kotvy, URL dedup, T7 poznámka zdroje |
+| Renderovaná tabulka tvrzení | `verify:full-pages` (post-build, nad `public/`) | každá kotva `clm-##` leží uvnitř `<table>`, v počtu rovném počtu stránek tvrzení dossieru |
 | JSON-LD expanze | `scripts/data/validate-jsonld.mjs` | lokální context, safe mode, expandovatelnost každého záznamu |
 | Generovaný content | `lint:generated-content` + `data:check-generated:content` | adaptér = minimální obálka; content == staging |
 | Tvar exportů | schema brána v `build:data-exports` (`scripts/dossier/lib/export-schemas.mjs`) | `schemas/*.schema.json` nad plochými exporty |

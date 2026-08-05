@@ -10,11 +10,17 @@
     "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
   },
   "date": "2026-08-05",
-  "summary": "Opravné korroborační kolo (T-058): CLM-25 povýšeno zpět na CORROBORATED na základě oficiálního záznamu 90. hlasování 128. schůze Poslanecké sněmovny z 12. 2. 2025 (SRC-28), primárního zdroje nezávislého na rodině ctk. CLM-01 a CLM-02 zůstávají na 1 ZDROJ — veškeré volně čitelné zpravodajství o rozsudku Obvodního soudu pro Prahu 1 z 3. 6. 2026 se ukázalo být vydáním téže zprávy ČTK a jediné doložitelně vlastní zpravodajství (Deník N) je za paywallem.",
+  "summary": "Opravné korroborační kolo (T-058): CLM-25 povýšeno zpět na CORROBORATED na základě oficiálního záznamu 90. hlasování 128. schůze Poslanecké sněmovny z 12. 2. 2025 (SRC-28), primárního zdroje nezávislého na rodině ctk. CLM-01 a CLM-02 zůstávají na 1 ZDROJ — veškeré volně čitelné zpravodajství o rozsudku Obvodního soudu pro Prahu 1 z 3. 6. 2026 se ukázalo být vydáním téže zprávy ČTK a jediné doložitelně vlastní zpravodajství (Deník N) je za paywallem. — Druhé kolo téhož dne: CLM-28 a CLM-29 povýšeny na CORROBORATED primárním parlamentním záznamem (SRC-29): 11. schůze, 9. hlasování z 5. 3. 2026, přítomno 186, pro 104, proti 82, zdrželo se 0. Dosavadní zdroje obou tvrzení — ČT24 (SRC-19) a Romea.cz (SRC-20) — patří oba do rodiny ctk, šlo tedy o jediné doložení. Klubové rozpisy výpisu dokládají i druhou půlku CLM-29: pro hlasovaly všechny přítomné kluby vládní většiny bez jediného zdržení (ANO 77, SPD 14, Motoristé sobě 13 = 104), a stenoprotokol 11. schůze doslovně nese usnesení mandátového a imunitního výboru č. 21 ze 17. 2. 2026, jímž výbor navrhl vyslovit s vydáním nesouhlas. Ověřena i číselná shoda s hlasováním o vydání Andreje Babiše téhož večera (rovněž 186 přítomných, 104 pro): jde o dvě různá hlasování — Babiš G=86779 (104 : 81), Okamura G=86781 (104 : 82) —, nikoli o záměnu v datech.",
   "addedClaims": [],
   "updatedClaims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-25"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-28"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-29"
     }
   ],
   "addedGaps": [],
@@ -22,6 +28,9 @@
   "reviewedSources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-28"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-29"
     }
   ]
 }

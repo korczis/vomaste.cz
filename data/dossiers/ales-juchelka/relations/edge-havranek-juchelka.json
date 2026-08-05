@@ -18,7 +18,7 @@
   },
   "relationType": "RESPONDED_TO",
   "label": "poslanec Havránek (ODS) postavil Juchelku před alternativu trestního oznámení nebo rezignace",
-  "status": "corroborated",
+  "status": "single",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-38"

@@ -18,7 +18,7 @@
   },
   "relationType": "APPOINTED_AS",
   "label": "jmenoval Miroslava Hlaváče náčelníkem Generálního štábu (30. 6. 2026)",
-  "status": "corroborated",
+  "status": "single",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-20"

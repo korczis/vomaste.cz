@@ -18,7 +18,7 @@
   },
   "relationType": "RESPONDED_TO",
   "label": "spor o plošný zákaz mobilů ve školách — reakce na dětského ombudsmana",
-  "status": "corroborated",
+  "status": "single",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-38"
