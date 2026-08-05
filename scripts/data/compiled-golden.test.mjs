@@ -16,16 +16,16 @@ import { compileDataset } from "./compile.mjs";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const compiled = compileDataset(loadCanonicalTree(join(ROOT, "data/dossiers")));
 
-test("golden: počty záznamů per typ (snapshot 2026-08-05, T-059: kolo „připoj, co už v datech leží“ nepřidalo ANI JEDEN zdroj ani tvrzení — 6 tvrzení povýšeno pouhým připojením existujícího zdroje z jiné rodiny, takže roste jen update: 55 → 60 o 5 nových update logů)", () => {
+test("golden: počty záznamů per typ (snapshot 2026-08-05, korroborační kolo lubomir-metnar: dossier neměl po revizi rodin ani jedno CORROBORATED — claim 921 → 922 o CLM-29 k primárnímu záznamu jednání vlády, source 612 → 614 o vlastní zpravodajství Echo24 a záznam vlada.gov.cz, update 60 → 61)", () => {
   assert.deepEqual(compiled.counts.perType, {
     case: 89,
-    claim: 921,
+    claim: 922,
     dossier: 24,
     entity: 514,
     gap: 189,
     relation: 317,
-    source: 612,
-    update: 60,
+    source: 614,
+    update: 61,
   });
   assert.equal(compiled.counts.dossiers, 24);
   assert.equal(compiled.counts.entities, 514);

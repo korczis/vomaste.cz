@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-29",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-29",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar"
+  },
+  "text": "Podle oficiálního záznamu výsledků jednání vlády projednala vláda 27. července 2026 pod bodem 28 (čj. 591/26) návrh ministra vnitra na změnu usnesení vlády č. 1604/2008 k zajišťování bezpečnosti chráněných objektů a prostorů a schválila jej; samotný záznam neuvádí, kterých objektů se změna týká",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-11"
+    }
+  ],
+  "subjects": [
+    "metnar"
+  ],
+  "order": 29,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/lubomir-metnar/_index.md#registr-tvrzeni)."
+    }
+  ]
+}
