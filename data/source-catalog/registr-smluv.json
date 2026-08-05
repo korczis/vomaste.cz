@@ -48,5 +48,11 @@
       "type": "markdown",
       "value": "Registr smluv je primární doklad peněžního vztahu mezi soukromým subjektem a veřejným rozpočtem, a proto zdroj s nejvyšší důkazní hodnotou pro otázku „kdo bere veřejné peníze\".\n\nMetodická poznámka: součet hodnot smluv **není** totéž co příjem subjektu. Smlouvy se mění dodatky, každý dodatek je samostatný záznam, a část záznamů uvádí hodnotu bez DPH, část s DPH, část v cizí měně. Agregovanou částku publikuj jen tehdy, když je jasně řečeno, co se sčítalo."
     }
+  ],
+  "families": [
+    "smlouvy-gov-cz"
+  ],
+  "outlets": [
+    "Registr smluv (Ministerstvo vnitra ČR)"
   ]
 }

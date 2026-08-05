@@ -104,11 +104,21 @@ for (const slug of existsSync(DOSSIERS_DIR) ? readdirSync(DOSSIERS_DIR).sort() :
       count: 0,
       dossiers: new Set(),
       sourceTypes: new Set(),
+      // Konkrétní citace, ne jen číslo: bez nich je katalog seznam jmen a
+      // čtenář nemá jak ověřit, co se o zdroj vlastně opírá.
+      citations: [],
     };
     row.count += 1;
     row.dossiers.add(slug);
     if (src.sourceType) row.sourceTypes.add(src.sourceType);
     if (!row.outlet && outlet) row.outlet = outlet;
+    row.citations.push({
+      dossier: slug,
+      identifier: src.identifier,
+      title: src.title ?? src.identifier,
+      route: `/dossiers/${slug}/sources/${String(src.identifier).toLowerCase()}/`,
+      claims: (src.claims ?? []).length,
+    });
     usage.set(key, row);
   }
 }
@@ -121,6 +131,7 @@ const used = [...usage.values()]
     count: r.count,
     dossierCount: r.dossiers.size,
     sourceTypes: [...r.sourceTypes].sort(),
+    citations: r.citations,
     // Propojení na ručně psaný záznam, existuje-li: katalog tak ukazuje,
     // které skutečně použité zdroje už mají popsané meze a které ne.
     //
@@ -132,6 +143,7 @@ const used = [...usage.values()]
       entries.find(
         (e) =>
           e.identifier === r.family ||
+          (r.family && (e.families ?? []).includes(r.family)) ||
           (r.outlet && (e.outlets ?? []).includes(r.outlet)),
       )?.identifier ?? null,
   }))
@@ -173,9 +185,17 @@ const view = {
     usage: (() => {
       const rows = used.filter((u) => u.catalogEntry === e.identifier);
       if (rows.length === 0) return null;
+      const citations = rows.flatMap((r) => r.citations);
       return {
         count: rows.reduce((n, r) => n + r.count, 0),
         keys: rows.map((r) => r.key),
+        dossierCount: new Set(citations.map((c) => c.dossier)).size,
+        // Seřazeno podle toho, kolik tvrzení citace nese: co nese víc, je
+        // pro čtenáře zajímavější než abecední pořadí.
+        citations: citations
+          .sort((a, b) => b.claims - a.claims || a.dossier.localeCompare(b.dossier))
+          .slice(0, 25),
+        citationsTruncated: Math.max(0, citations.length - 25),
       };
     })(),
   })),

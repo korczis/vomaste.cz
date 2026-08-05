@@ -26,16 +26,46 @@
     "Aktuálnost k dnešku u záznamů, které rejstřík zveřejňuje se zpožděním po zápisu soudem."
   ],
   "subRegisters": [
-    { "code": "ros", "label": "Registr osob" },
-    { "code": "vr", "label": "Veřejný rejstřík (obchodní, spolkový, nadační)" },
-    { "code": "rzp", "label": "Registr živnostenského podnikání" },
-    { "code": "res", "label": "Registr ekonomických subjektů (ČSÚ)" },
-    { "code": "rpsh", "label": "Registr politických stran a hnutí" },
-    { "code": "rcns", "label": "Registr církví a náboženských společností" },
-    { "code": "nrpzs", "label": "Národní registr poskytovatelů zdravotních služeb" },
-    { "code": "szr", "label": "Společný zemědělský registr" },
-    { "code": "ceu", "label": "Centrální evidence úpadců" },
-    { "code": "rs", "label": "Registr škol" }
+    {
+      "code": "ros",
+      "label": "Registr osob"
+    },
+    {
+      "code": "vr",
+      "label": "Veřejný rejstřík (obchodní, spolkový, nadační)"
+    },
+    {
+      "code": "rzp",
+      "label": "Registr živnostenského podnikání"
+    },
+    {
+      "code": "res",
+      "label": "Registr ekonomických subjektů (ČSÚ)"
+    },
+    {
+      "code": "rpsh",
+      "label": "Registr politických stran a hnutí"
+    },
+    {
+      "code": "rcns",
+      "label": "Registr církví a náboženských společností"
+    },
+    {
+      "code": "nrpzs",
+      "label": "Národní registr poskytovatelů zdravotních služeb"
+    },
+    {
+      "code": "szr",
+      "label": "Společný zemědělský registr"
+    },
+    {
+      "code": "ceu",
+      "label": "Centrální evidence úpadců"
+    },
+    {
+      "code": "rs",
+      "label": "Registr škol"
+    }
   ],
   "traps": [
     {
@@ -65,5 +95,13 @@
       "type": "markdown",
       "value": "ARES je pro tenhle projekt výchozí primární zdroj rejstříkových vazeb. Je zdarma, bez autentizace a bez captchy, a jako jediný veřejný přístupový bod nabízí deset sub-registrů pod jedním IČO.\n\nCo z něj tento web nepřebírá: **datum narození a adresu bydliště fyzických osob**, přestože je odpovědi obsahují. Pro evidenci rejstříkové vazby nejsou potřebné a jejich publikace by z administrativního faktu udělala zásah do soukromí."
     }
+  ],
+  "families": [
+    "ares-gov-cz",
+    "cz-verejny-rejstrik"
+  ],
+  "outlets": [
+    "ARES (Ministerstvo financí ČR)",
+    "ARES — Administrativní registr ekonomických subjektů (Ministerstvo financí ČR)"
   ]
 }

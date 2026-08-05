@@ -47,6 +47,7 @@ Odpovídá na otázku „kam se podívat a čemu z toho věřit". Publikovaná p
 - **Hlídač státu — Webové API vyžaduje token**: Neautentizované volání vrací 404, ne 401 — vypadá to jako neexistující endpoint, ne jako chybějící oprávnění.
 - **Hlídač státu — Shoda jména není shoda osoby**: Agregované profily spojují záznamy podle jména. U běžných jmen slučují víc osob dohromady; použij je jako stopu, ne jako doklad.
 - **Podnikatel.cz — rejstříkové profily — Profil může mísit jmenovce**: Jediná stránka může nést role několika různých lidí téhož jména. Před převzetím role ji ověř v ARES podle IČO subjektu.
+- **Podnikatel.cz — rejstříkové profily — Sdílí rodinu s ARES, takže ho nepotvrzuje**: V datasetu je tento agregátor i ARES veden pod touž rodinou `cz-verejny-rejstrik`, protože obojí čerpá z týchž veřejných rejstříků. Citace obou tedy NEJSOU dvě nezávislá doložení a tvrzení opřené o ně zůstává 1 ZDROJ, i když jde o dva různé vydavatele a dvě různé domény.
 - **Informační systém datových schránek (ISDS) — Zpětné vyhledání neexistuje**: Veřejná služba, která by k IČO vrátila ID schránky, není k dispozici. Údaj o schránce se získává jako součást rejstříkového výpisu (ARES ROS), ne samostatným dotazem.
 - **Informační systém datových schránek (ISDS) — Osmimístné ID schránky se plete s IČO**: Obojí je osmiznakový řetězec. Kdo rozlišuje regulárním výrazem podle délky, pošle IČO do větve pro ID schránky a zpět dostane nesmysl.
 - **ČTK — Česká tisková kancelář — Přebírání vypadá jako shoda**: Právě kvůli tomuhle existuje pole `sourceFamily`. Bez něj se pět vydání téže zprávy počítá jako pět nezávislých redakcí a tvrzení dostane CORROBORATED, které si nezaslouží. Revize T-056 takto musela srazit 55 tvrzení zpět na 1 ZDROJ.
@@ -100,8 +101,8 @@ Dopočítáno z `data/dossiers/**/sources/**`, 628 záznamů v 97 rodinách/outl
 | Tiscali.cz | 3 | 3 | — |
 | Transparency International ČR | 3 | 2 | — |
 | Úřad pro ochranu osobních údajů | 3 | 1 | — |
-| cz-verejny-rejstrik | 2 | 1 | — |
-| ARES — Administrativní registr ekonomických subjektů (Ministerstvo financí ČR) | 2 | 2 | — |
+| cz-verejny-rejstrik | 2 | 1 | [ano](/zdroje/ares/) |
+| ARES — Administrativní registr ekonomických subjektů (Ministerstvo financí ČR) | 2 | 2 | [ano](/zdroje/ares/) |
 | CZDEFENCE | 2 | 1 | — |
 | Fakultní nemocnice Olomouc (oficiální web) | 2 | 1 | — |
 | Médiář | 2 | 1 | — |
@@ -145,7 +146,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 628 záznamů v 97 rodinách/outl
 | Nejvyšší správní soud | 1 | 1 | — |
 | Neovlivní.cz | 1 | 1 | — |
 | ParlamentníListy.cz | 1 | 1 | — |
-| Podnikatel.cz | 1 | 1 | — |
+| Podnikatel.cz | 1 | 1 | [ano](/zdroje/podnikatel-cz-rejstrik/) |
 | Podpůrný a garanční rolnický a lesnický fond (PGRLF) | 1 | 1 | — |
 | Průmyslová automatizace | 1 | 1 | — |
 | RAILTARGET | 1 | 1 | — |
@@ -164,7 +165,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 628 záznamů v 97 rodinách/outl
 | YouControl | 1 | 1 | — |
 | Zdopravy.cz | 1 | 1 | — |
 | Život v Česku | 1 | 1 | — |
-| smlouvy-gov-cz | 1 | 1 | — |
+| smlouvy-gov-cz | 1 | 1 | [ano](/zdroje/registr-smluv/) |
 
 ## Chybí popis
 

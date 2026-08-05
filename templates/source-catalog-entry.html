@@ -60,6 +60,31 @@
   </section>
   {%- endif %}
 
+  {#- Co se o zdroj skutečně opírá. Bez tohohle je katalog seznam jmen:
+      čtenář se dozví, co zdroj umí, ale ne co z něj na tomhle webu stojí.
+      Seznam se dopočítává z data/dossiers/**/sources/**, takže nemůže
+      tvrdit citaci, která v datech není. -#}
+  {%- if entry and entry.usage and entry.usage.citations | length > 0 %}
+  <section aria-labelledby="citace-heading" class="mt-12 border-t border-white/10 pt-6">
+    <h2 id="citace-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Co se o tento zdroj opírá</h2>
+    <p class="mb-4 text-sm leading-relaxed text-white/55">
+      {{ entry.usage.count }} citac{% if entry.usage.count == 1 %}e{% elif entry.usage.count < 5 %}e{% else %}í{% endif %}
+      v {{ entry.usage.dossierCount }} dossier{% if entry.usage.dossierCount == 1 %}u{% elif entry.usage.dossierCount < 5 %}ech{% else %}ech{% endif %}.
+    </p>
+    <ul class="space-y-2 text-sm">
+      {%- for c in entry.usage.citations %}
+      <li class="rounded-lg border border-white/10 bg-white/[0.03] px-3 py-2">
+        <a href="{{ config.base_url }}{{ c.route }}" class="text-white/80 no-underline hover:text-[#f3e5c0]">{{ c.title }}</a>
+        <span class="ml-2 text-xs text-white/45">{{ c.dossier }}{% if c.claims > 0 %} · dokládá {{ c.claims }} tvrzení{% endif %}</span>
+      </li>
+      {%- endfor %}
+    </ul>
+    {%- if entry.usage.citationsTruncated > 0 %}
+    <p class="mt-3 text-xs text-white/45">…a dalších {{ entry.usage.citationsTruncated }} citací. Úplný přehled nese <a href="{{ get_url(path='@/zdroje/_index.md') | safe }}" class="text-[#f3e5c0] no-underline hover:underline">index zdrojů</a>.</p>
+    {%- endif %}
+  </section>
+  {%- endif %}
+
   {{ ui::back_link_footer(url=get_url(path="@/zdroje/_index.md"), label="Zpět na zdroje") }}
 </main>
 {% endblock content %}

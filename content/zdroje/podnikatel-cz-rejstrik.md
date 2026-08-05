@@ -25,12 +25,17 @@ Sekundární rejstříkový agregátor. V tomto projektu se objevuje jako **výc
 
 - Skutečný rozsah rolí. Agregátor přebírá data z rejstříků se zpožděním a bez záruky úplnosti.
 - Totožnost osoby. Profil slučuje záznamy podle jména; jmenovci splývají.
+- Nezávislé potvrzení rejstříkového údaje. Pro tvrzení opřené o rejstřík je ARES silnější pramen a agregátor k němu nic nepřidává.
 
 ## Pasti {#pasti}
 
 ### Profil může mísit jmenovce
 
 Jediná stránka může nést role několika různých lidí téhož jména. Před převzetím role ji ověř v ARES podle IČO subjektu.
+
+### Sdílí rodinu s ARES, takže ho nepotvrzuje
+
+V datasetu je tento agregátor i ARES veden pod touž rodinou `cz-verejny-rejstrik`, protože obojí čerpá z týchž veřejných rejstříků. Citace obou tedy NEJSOU dvě nezávislá doložení a tvrzení opřené o ně zůstává 1 ZDROJ, i když jde o dva různé vydavatele a dvě různé domény.
 
 ## Jak v něm hledat {#jak-hledat}
 
