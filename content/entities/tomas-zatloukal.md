@@ -3,6 +3,7 @@
 title = "Tomáš Zatloukal"
 template = "entity.html"
 weight = 408
+description = "Kontextová entita — Ústřední školní inspektor; omluvil se za komunikaci testování žáků. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů…"
 
 [extra]
 generated = true

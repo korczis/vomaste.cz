@@ -3,6 +3,7 @@
 title = "Úřad vlády ČR"
 template = "entity.html"
 weight = 425
+description = "Kontextová entita — Instituce odlišná od existující entity vlada (Vláda ČR), na kterou ji graf dossieru bartha zatím mapuje — nutno rozhodnout o oddělení. Uvedena, protože se jmenovitě…"
 
 [extra]
 generated = true

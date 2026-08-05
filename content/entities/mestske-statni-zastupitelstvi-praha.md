@@ -3,6 +3,7 @@
 title = "Městské státní zastupitelství v Praze"
 template = "entity.html"
 weight = 257
+description = "Kontextová entita — Působiště státního zástupce Šarocha; specifičtější než existující obecná entita statni-zastupitelstvi. Uvedena, protože se jmenovitě objevuje v citovaném obsahu…"
 
 [extra]
 generated = true

@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Andrej Babiš — premiér Babiš veřejně podpořil Mrázovou a vyloučil její odvolání — Zuzana Mrázová"
+description = "Andrej Babiš — premiér Babiš veřejně podpořil Mrázovou a vyloučil její odvolání — Zuzana Mrázová. Vztah v grafu dossieru Zuzana Mrázová, doložený tvrzeními CLM-17. Záznam vazby, nikoli…"
 template = "dossier-relation.html"
 weight = 2
 

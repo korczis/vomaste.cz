@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Ivan Bednárik — jednal s německým spolkovým ministrem dopravy o Krušnohorském tunelu (2026) — Patrick Schneider"
+description = "Ivan Bednárik — jednal s německým spolkovým ministrem dopravy o Krušnohorském tunelu (2026) — Patrick Schneider. Vztah v grafu dossieru Ivan Bednárik, doložený tvrzeními CLM-27…"
 template = "dossier-relation.html"
 weight = 16
 

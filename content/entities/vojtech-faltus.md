@@ -3,6 +3,7 @@
 title = "Vojtěch Faltus"
 template = "entity.html"
 weight = 436
+description = "Kontextová entita — Právník citovaný Českou justicí jako kritik novely stavebního zákona; soukromá osoba jmenovaná obsahem. Uvedena, protože se jmenovitě objevuje v citovaném obsahu…"
 
 [extra]
 generated = true

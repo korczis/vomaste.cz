@@ -3,6 +3,7 @@
 title = "Kancelář prezidenta republiky"
 template = "entity.html"
 weight = 186
+description = "Kontextová entita — Vydala prohlášení o připravenosti prezidenta jmenovat Hlaváče. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (alena-schillerova…"
 
 [extra]
 generated = true

@@ -4,6 +4,7 @@ title = "Petr Macinka"
 template = "entity.html"
 weight = 1
 aliases = ["/dossiers/macinka-turek/entities/macinka/"]
+description = "Hlavní subjekt autorizovaného dossieru. Tato stránka je kanonický záznam této entity — dossiery, tvrzení, zdroje a vztahy v tabulce a sekcích níže jsou úplné; nejde o zkrácenou verzi…"
 
 [extra]
 generated = true

@@ -3,6 +3,7 @@
 title = "Vojtěch Dobeš"
 template = "entity.html"
 weight = 464
+description = "Kontextová entita — podle citovaného zpravodajství (Deník N) autor screenshotů, na nichž je založena říjnová 2025 investigace o údajně smazaných příspěvcích připisovaných Filipu…"
 
 [extra]
 generated = true

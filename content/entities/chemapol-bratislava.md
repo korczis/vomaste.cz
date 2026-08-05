@@ -3,6 +3,7 @@
 title = "Chemapol Bratislava"
 template = "entity.html"
 weight = 96
+description = "Kontextová entita — Zaměstnavatel Babiše 1978–1985 dle oficiálního životopisu na webu Úřadu vlády. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů…"
 
 [extra]
 generated = true

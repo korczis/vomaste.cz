@@ -3,6 +3,7 @@
 title = "Vrchní státní zastupitelství v Praze"
 template = "entity.html"
 weight = 442
+description = "Kontextová entita — Adresát trestního oznámení Pirátů a ASZ k „deagrofertizaci“. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (martin-sebestyan)…"
 
 [extra]
 generated = true

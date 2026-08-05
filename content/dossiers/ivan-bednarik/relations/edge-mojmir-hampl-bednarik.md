@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Mojmír Hampl — kritizoval výdajovou trajektorii dopravní infrastruktury jako neúměrnou ekonomice — Ivan Bednárik"
+description = "Mojmír Hampl — kritizoval výdajovou trajektorii dopravní infrastruktury jako neúměrnou ekonomice — Ivan Bednárik. Vztah v grafu dossieru Ivan Bednárik, doložený tvrzeními CLM-32…"
 template = "dossier-relation.html"
 weight = 13
 

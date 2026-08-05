@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Centrum veřejných financí (Univerzita Karlova) — Centrum veřejných financí UK označilo konkrétní pozměňovací návrhy novely za problematické — Novela rozpočtových zákonů 2026 (sněmovní tisk č. 90)"
+description = "Centrum veřejných financí (Univerzita Karlova) — Centrum veřejných financí UK označilo konkrétní pozměňovací návrhy novely za problematické — Novela rozpočtových zákonů 2026 (sněmovní…"
 template = "dossier-relation.html"
 weight = 15
 

@@ -3,6 +3,7 @@
 title = "Modernizační fond"
 template = "entity.html"
 weight = 285
+description = "Kontextová entita — Fond, jehož oddělení na MŽP zaniklo při systemizaci 2026. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (igor-cerveny). Tato…"
 
 [extra]
 generated = true

@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Jan Jakob — Jakob (TOP 09) po vetu oznámil přípravu ústavní stížnosti na novelu — Alena Schillerová"
+description = "Jan Jakob — Jakob (TOP 09) po vetu oznámil přípravu ústavní stížnosti na novelu — Alena Schillerová. Vztah v grafu dossieru Alena Schillerová, doložený tvrzeními CLM-39. Záznam vazby…"
 template = "dossier-relation.html"
 weight = 12
 

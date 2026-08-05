@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "IMOBA — vlastník areálu; 6/2018 vrátila dotaci ~50 mil. Kč — vrácení není přiznání viny, do dohody firma prosadila opak — Čapí hnízdo (dotační kauza)"
+description = "IMOBA — vlastník areálu; 6/2018 vrátila dotaci ~50 mil. Kč — vrácení není přiznání viny, do dohody firma prosadila opak — Čapí hnízdo (dotační kauza). Vztah v grafu dossieru Andrej…"
 template = "dossier-relation.html"
 weight = 23
 

@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Aleš Juchelka — reportovaný střet zájmů poradkyně, kterou si Juchelka vybral, na jeho ministerstvu — Kauza střetu zájmů poradkyně na MPSV"
+description = "Aleš Juchelka — reportovaný střet zájmů poradkyně, kterou si Juchelka vybral, na jeho ministerstvu — Kauza střetu zájmů poradkyně na MPSV. Vztah v grafu dossieru Aleš Juchelka…"
 template = "dossier-relation.html"
 weight = 6
 

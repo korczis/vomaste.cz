@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Vodňanská drůbež — SZIF ukončil administraci žádosti (2023); NSS 1/2025 vyhověl kasační stížnosti fondu — Státní zemědělský intervenční fond"
+description = "Vodňanská drůbež — SZIF ukončil administraci žádosti (2023); NSS 1/2025 vyhověl kasační stížnosti fondu — Státní zemědělský intervenční fond. Vztah v grafu dossieru Andrej Babiš…"
 template = "dossier-relation.html"
 weight = 36
 

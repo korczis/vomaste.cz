@@ -3,6 +3,7 @@
 title = "Návrh na zrušení policejní ochrany NKÚ (2026)"
 template = "entity.html"
 weight = 299
+description = "Kontextová entita — Vládní materiál MV (účinnost od 1. 1. následujícího roku, náhradní soukromá ostraha ~20 mil. Kč/rok, přesun ochrany na ČNB); k datu rešerše nerozhodnuto. Jediná…"
 
 [extra]
 generated = true

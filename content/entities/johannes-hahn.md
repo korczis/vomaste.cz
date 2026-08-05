@@ -3,6 +3,7 @@
 title = "Johannes Hahn"
 template = "entity.html"
 weight = 178
+description = "Kontextová entita — Komisař EU — v plenární rozpravě EP 19. 5. 2021 uvedl, že na operace dotčené auditem nebyly vykázány žádné výdaje. Uvedena, protože se jmenovitě objevuje v…"
 
 [extra]
 generated = true

@@ -3,6 +3,7 @@
 title = "František Fabičovic"
 template = "entity.html"
 weight = 132
+description = "Kontextová entita — Podnikatel, dárce 1 mil. Kč Motoristům sobě před volbami 2025; dlouholetý přítel otce Petra Macinky, kterého zaměstnává na hudební vystoupení. Uvedena, protože se…"
 
 [extra]
 generated = true

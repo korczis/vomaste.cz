@@ -3,6 +3,7 @@
 title = "Tomáš Tóth"
 template = "entity.html"
 weight = 407
+description = "Kontextová entita — Generální ředitel Správy železnic; potvrdil, že některé velké projekty nelze v 2026 financovat (např. Nemanice–Ševětín); na fóru ACRI popsal plán VRT ~700 km…"
 
 [extra]
 generated = true

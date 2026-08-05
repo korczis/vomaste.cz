@@ -3,6 +3,7 @@
 title = "Roman Prymula"
 template = "entity.html"
 weight = 369
+description = "Kontextová entita — Bývalý ministr zdravotnictví; člen Vojtěchova vakcinačního týmu kritizovaný SPD. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů…"
 
 [extra]
 generated = true

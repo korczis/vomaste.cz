@@ -3,6 +3,7 @@
 title = "Moravskoslezský kraj"
 template = "entity.html"
 weight = 288
+description = "Kontextová entita — Zadavatel zakázek Navos Farm Technic; jeho kasační stížnost NSS 11. 12. 2025 zamítl. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných…"
 
 [extra]
 generated = true

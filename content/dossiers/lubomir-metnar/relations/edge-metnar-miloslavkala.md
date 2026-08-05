@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Lubomír Metnar — spor o zrušení policejní ochrany NKÚ — vzájemná veřejná stanoviska — Miloslav Kala"
+description = "Lubomír Metnar — spor o zrušení policejní ochrany NKÚ — vzájemná veřejná stanoviska — Miloslav Kala. Vztah v grafu dossieru Lubomír Metnar, doložený tvrzeními CLM-18, CLM-19. Záznam…"
 template = "dossier-relation.html"
 weight = 5
 

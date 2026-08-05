@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Tomáš Zdechovský — šířil kauzu rozporu v číslech u příspěvku na sítích a označil ji za neuvěřitelnou ostudu ministra — Boris Šťastný"
+description = "Tomáš Zdechovský — šířil kauzu rozporu v číslech u příspěvku na sítích a označil ji za neuvěřitelnou ostudu ministra — Boris Šťastný. Vztah v grafu dossieru Boris Šťastný, doložený…"
 template = "dossier-relation.html"
 weight = 18
 

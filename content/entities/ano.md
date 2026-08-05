@@ -3,6 +3,7 @@
 title = "ANO 2011"
 template = "entity.html"
 weight = 68
+description = "Kontextová entita — Vládní hnutí Andreje Babiše; nominovalo řadu subjektů dossierů. Překvapivě chybí mezi globálními entitami. Uvedena, protože se jmenovitě objevuje v citovaném obsahu…"
 
 [extra]
 generated = true

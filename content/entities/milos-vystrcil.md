@@ -3,6 +3,7 @@
 title = "Miloš Vystrčil"
 template = "entity.html"
 weight = 270
+description = "Kontextová entita — Předseda Senátu; avizoval podrobnou debatu a možné zamítnutí stavební novely. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů…"
 
 [extra]
 generated = true

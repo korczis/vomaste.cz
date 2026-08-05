@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Jeroným Tejc — NCOZ zahájila trestní stíhání v bitcoinové kauze, kterou ministr oznámil — Národní centrála proti organizovanému zločinu"
+description = "Jeroným Tejc — NCOZ zahájila trestní stíhání v bitcoinové kauze, kterou ministr oznámil — Národní centrála proti organizovanému zločinu. Vztah v grafu dossieru Jeroným Tejc, doložený…"
 template = "dossier-relation.html"
 weight = 2
 

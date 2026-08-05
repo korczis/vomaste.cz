@@ -3,6 +3,7 @@
 title = "Státní fond dopravní infrastruktury (SFDI)"
 template = "entity.html"
 weight = 377
+description = "Kontextová entita — Klíčová instituce dossieru: rozpočet 169,3 mld. Kč (2026), chybějících 37,2 mld. na krytí výdajů, střednědobý výhled 2027–2028 jen ~77 mld. Uvedena, protože se…"
 
 [extra]
 generated = true

@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Andrej Babiš (premiér) — vyzval k odpovědnosti — Nehoda 2026"
+description = "Andrej Babiš (premiér) — vyzval k odpovědnosti — Nehoda 2026. Vztah v grafu dossieru Petr Macinka a Filip Turek, doložený tvrzeními CLM-12. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 12
 

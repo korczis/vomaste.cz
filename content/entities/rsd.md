@@ -3,6 +3,7 @@
 title = "Ředitelství silnic a dálnic (ŘSD)"
 template = "entity.html"
 weight = 371
+description = "Kontextová entita — Příjemce 81,1 mld. Kč z rozpočtu SFDI 2026; varovalo před zastavením rozestavěných staveb při výhledu 2027–2028. Uvedena, protože se jmenovitě objevuje v citovaném…"
 
 [extra]
 generated = true

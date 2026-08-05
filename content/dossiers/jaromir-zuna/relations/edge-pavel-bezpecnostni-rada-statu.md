@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Petr Pavel (prezident) — účastnil se projednávání koncepce armády, žádal její dlouhodobý charakter a finanční rámec ze strany vlády — Bezpečnostní rada státu"
+description = "Petr Pavel (prezident) — účastnil se projednávání koncepce armády, žádal její dlouhodobý charakter a finanční rámec ze strany vlády — Bezpečnostní rada státu. Vztah v grafu dossieru…"
 template = "dossier-relation.html"
 weight = 20
 

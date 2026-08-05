@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Alena Schillerová — místopředsedkyně vlády a ministryně financí — Vláda ČR"
+description = "Alena Schillerová — místopředsedkyně vlády a ministryně financí — Vláda ČR. Vztah v grafu dossieru Alena Schillerová, doložený tvrzeními CLM-01. Záznam vazby, nikoli tvrzení o…"
 template = "dossier-relation.html"
 weight = 1
 

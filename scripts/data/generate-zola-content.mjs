@@ -98,6 +98,25 @@ const mdBody = (blocks) =>
     .map((b) => b.value)
     .join("\n\n");
 
+// Meta description z redakčního těla záznamu. Bez ní spadne stránka
+// v base.html na popis celého webu — a ten byl doslova týž na 820
+// stránkách (326 vztahů + ~494 entit), takže je vyhledávač ani náhled
+// odkazu nerozlišily. Nic se tu nevymýšlí: bere se začátek už napsaného
+// kanonického textu, jen zkrácený a zbavený markdown syntaxe, aby se
+// v atributu <meta> neobjevily odkazy a hvězdičky.
+const summarize = (text, limit = 185) => {
+  const flat = String(text ?? "")
+    .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
+    .replace(/[*_`#>]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+  if (!flat) return null;
+  if (flat.length <= limit) return flat;
+  const cut = flat.slice(0, limit);
+  const at = cut.lastIndexOf(" ");
+  return `${(at > limit * 0.6 ? cut.slice(0, at) : cut).replace(/[,;:.\s]+$/, "")}…`;
+};
+
 /*
  * Passthrough čtení existujícího content souboru: RAW řádky klíčů po
  * sekcích (top / extra / ostatní sekce verbatim) + tělo. RAW řádky (ne
@@ -308,6 +327,7 @@ export function buildStubs(compiled, { contentRoot = REPO_ROOT } = {}) {
 
   // --- záznamy -----------------------------------------------------------
   const entityTitle = (iri) => byId[iri]?.record.title ?? localPart(iri);
+  const dossierTitles = new Map(dossierWrappers.map((w) => [w.dossier, w.record.title]));
   const graphLabelMaps = new Map(
     dossierWrappers
       .filter((w) => w.record.graph)
@@ -355,6 +375,20 @@ export function buildStubs(compiled, { contentRoot = REPO_ROOT } = {}) {
       const tgt = localPart(r.targetEntity["@id"]);
       const derived = `${labels.get(src) ?? entityTitle(r.sourceEntity["@id"])} — ${r.label} — ${labels.get(tgt) ?? entityTitle(r.targetEntity["@id"])}`;
       title = tomlString(rawTitle(contentRoot, relPath) ?? derived);
+      // Tělo stránky vztahu je generický rozcestník („Viz plné znění…"),
+      // takže popis se skládá z toho, co záznam skutečně nese: koho s kým
+      // spojuje, v čím grafu a o která tvrzení se opírá. Poslední věta není
+      // ozdoba — hrana v grafu je záznam vazby, ne obvinění, a v náhledu
+      // odkazu je to jediné místo, kde to je vidět (viz AGENTS.md).
+      const relClaims = localIds(r.claims);
+      const inDossier = dossierTitles.get(slug) ?? slug;
+      description = tomlString(
+        summarize(
+          `${derived}. Vztah v grafu dossieru ${inDossier}` +
+            (relClaims.length ? `, doložený tvrzeními ${relClaims.join(", ")}` : "") +
+            ". Záznam vazby, nikoli tvrzení o pochybení.",
+        ),
+      );
     }
 
     put(relPath, {
@@ -392,7 +426,16 @@ export function buildStubs(compiled, { contentRoot = REPO_ROOT } = {}) {
         ["template", tomlString(templateOf(relPath, DEFAULT_TEMPLATES.entity))],
         ["weight", String(r.order ?? i + 1)],
         ["aliases", mergedAliases(relPath, r.routeAliases)],
-        ["description", r.description !== undefined ? tomlString(r.description) : null],
+        // Kanonický `description` vyhrává; entita bez něj má ale pořád svůj
+        // ručně psaný kontextový odstavec („Kontextová entita — … nezakládá
+        // žádné tvrzení o pochybení."), a ten je pro popis stránky přesnější
+        // než cokoli odvozeného z typu a rolí.
+        [
+          "description",
+          r.description !== undefined
+            ? tomlString(r.description)
+            : (summarize(mdBody(r.content)) ? tomlString(summarize(mdBody(r.content))) : null),
+        ],
       ],
       extraDerived: [
         ["generated", "true"],

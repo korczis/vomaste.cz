@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Martin Šebestyán — obnovené čerpání dotací Agrofertem po vložení firmy do Babišova RSVP Trust — Andrej Babiš"
+description = "Martin Šebestyán — obnovené čerpání dotací Agrofertem po vložení firmy do Babišova RSVP Trust — Andrej Babiš. Vztah v grafu dossieru Martin Šebestyán, doložený tvrzeními CLM-20…"
 template = "dossier-relation.html"
 weight = 4
 

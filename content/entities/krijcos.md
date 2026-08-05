@@ -3,6 +3,7 @@
 title = "Krijcos"
 template = "entity.html"
 weight = 227
+description = "Kontextová entita — Síť heren — Chladovo podnikání v hazardu po roce 1989. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (macinka-turek…"
 
 [extra]
 generated = true

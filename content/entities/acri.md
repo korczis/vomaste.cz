@@ -3,6 +3,7 @@
 title = "ACRI — Asociace podniků českého železničního průmyslu"
 template = "entity.html"
 weight = 50
+description = "Kontextová entita — Oborová asociace; pořadatel diskusního fóra (duben 2026), publikovala priority nastupujícího ministra. Uvedena, protože se jmenovitě objevuje v citovaném obsahu…"
 
 [extra]
 generated = true

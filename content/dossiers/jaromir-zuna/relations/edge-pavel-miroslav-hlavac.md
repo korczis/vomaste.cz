@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Petr Pavel (prezident) — jmenoval Miroslava Hlaváče náčelníkem Generálního štábu (30. 6. 2026) — Miroslav Hlaváč"
+description = "Petr Pavel (prezident) — jmenoval Miroslava Hlaváče náčelníkem Generálního štábu (30. 6. 2026) — Miroslav Hlaváč. Vztah v grafu dossieru Jaromír Zůna, doložený tvrzeními CLM-20. Záznam…"
 template = "dossier-relation.html"
 weight = 5
 

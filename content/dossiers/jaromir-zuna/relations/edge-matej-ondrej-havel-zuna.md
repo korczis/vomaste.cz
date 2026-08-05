@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Matěj Ondřej Havel — po nezveřejnění rozhovoru prezidenta Pavla žádal Zůnovu rezignaci — Jaromír Zůna"
+description = "Matěj Ondřej Havel — po nezveřejnění rozhovoru prezidenta Pavla žádal Zůnovu rezignaci — Jaromír Zůna. Vztah v grafu dossieru Jaromír Zůna, doložený tvrzeními CLM-09. Záznam vazby…"
 template = "dossier-relation.html"
 weight = 13
 

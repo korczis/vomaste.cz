@@ -3,6 +3,7 @@
 title = "Asociace malých a středních podniků a živnostníků ČR"
 template = "entity.html"
 weight = 65
+description = "Kontextová entita — Proti Vojtěchovu benefitovému návrhu (byrokracie). Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (adam-vojtech, karel-havlicek)…"
 
 [extra]
 generated = true

@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Imoba — dle citovaného zpravodajství společnost patří Andreji Babišovi — Andrej Babiš"
+description = "Imoba — dle citovaného zpravodajství společnost patří Andreji Babišovi — Andrej Babiš. Vztah v grafu dossieru Tünde Bartha, doložený tvrzeními CLM-05. Záznam vazby, nikoli tvrzení o…"
 template = "dossier-relation.html"
 weight = 9
 

@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Olga Richterová — Richterová (Piráti) uvedla, že novela může vést ke „kolapsu státu“ — Alena Schillerová"
+description = "Olga Richterová — Richterová (Piráti) uvedla, že novela může vést ke „kolapsu státu“ — Alena Schillerová. Vztah v grafu dossieru Alena Schillerová, doložený tvrzeními CLM-07. Záznam…"
 template = "dossier-relation.html"
 weight = 10
 

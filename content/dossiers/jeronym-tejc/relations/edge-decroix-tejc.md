@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Eva Decroix — Decroix veřejně reagovala na Tejcovo trestní oznámení v bitcoinové kauze — Jeroným Tejc"
+description = "Eva Decroix — Decroix veřejně reagovala na Tejcovo trestní oznámení v bitcoinové kauze — Jeroným Tejc. Vztah v grafu dossieru Jeroným Tejc, doložený tvrzeními CLM-30, CLM-31, CLM-32…"
 template = "dossier-relation.html"
 weight = 9
 

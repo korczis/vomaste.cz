@@ -4,6 +4,7 @@ title = "Andrej Babiš"
 template = "entity.html"
 weight = 1
 aliases = ["/dossiers/andrej-babis/entities/babis/"]
+description = "Hlavní subjekt autorizovaného dossieru. Viz plné znění a kontext v hlavním přehledu."
 
 [extra]
 generated = true

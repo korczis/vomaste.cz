@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Trestní oznámení (2025) — odloženo policií pro promlčení — procesní krok, ne rozhodnutí o vině; nepravomocné — Policie ČR"
+description = "Trestní oznámení (2025) — odloženo policií pro promlčení — procesní krok, ne rozhodnutí o vině; nepravomocné — Policie ČR. Vztah v grafu dossieru Petr Macinka a Filip Turek, doložený…"
 template = "dossier-relation.html"
 weight = 31
 

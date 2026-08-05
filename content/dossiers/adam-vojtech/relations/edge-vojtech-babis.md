@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Adam Vojtěch — kritika střetu zájmů: premiér Babiš vlastní zdravotnické kliniky profitující z ministrova daňového návrhu — Andrej Babiš"
+description = "Adam Vojtěch — kritika střetu zájmů: premiér Babiš vlastní zdravotnické kliniky profitující z ministrova daňového návrhu — Andrej Babiš. Vztah v grafu dossieru Adam Vojtěch, doložený…"
 template = "dossier-relation.html"
 weight = 3
 

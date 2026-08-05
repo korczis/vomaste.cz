@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Alena Schillerová — Schillerová odmítla senátní úpravy novely jako zdroj právní nejistoty — Senát Parlamentu ČR"
+description = "Alena Schillerová — Schillerová odmítla senátní úpravy novely jako zdroj právní nejistoty — Senát Parlamentu ČR. Vztah v grafu dossieru Alena Schillerová, doložený tvrzeními CLM-16…"
 template = "dossier-relation.html"
 weight = 8
 

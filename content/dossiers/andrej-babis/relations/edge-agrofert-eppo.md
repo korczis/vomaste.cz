@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Agrofert — trestní řízení k vyplácení evropských dotací, vedené na neznámého pachatele — nikdo není obviněn — Úřad evropského veřejného žalobce (EPPO)"
+description = "Agrofert — trestní řízení k vyplácení evropských dotací, vedené na neznámého pachatele — nikdo není obviněn — Úřad evropského veřejného žalobce (EPPO). Vztah v grafu dossieru Andrej…"
 template = "dossier-relation.html"
 weight = 10
 

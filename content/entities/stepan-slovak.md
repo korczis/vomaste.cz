@@ -3,6 +3,7 @@
 title = "Štěpán Slovák"
 template = "entity.html"
 weight = 395
+description = "Kontextová entita — Poslanec ODS; vedl konkurenční návrh k daňovým benefitům, výbor jej odmítl. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů…"
 
 [extra]
 generated = true

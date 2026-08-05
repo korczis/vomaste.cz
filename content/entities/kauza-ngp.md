@@ -3,6 +3,7 @@
 title = "Kauza Národní galerie: odvolání ředitelky a zrušené výběrové řízení"
 template = "entity.html"
 weight = 208
+description = "Kontextová entita — Odvolání Knastové (březen 2026), zrušení výběrového řízení na GŘ NGP (červenec 2026) a protesty odborné veřejnosti i odborů. Uvedena, protože se jmenovitě objevuje…"
 
 [extra]
 generated = true

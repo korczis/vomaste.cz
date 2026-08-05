@@ -3,6 +3,7 @@
 title = "Rozpočtový výbor Poslanecké sněmovny"
 template = "entity.html"
 weight = 370
+description = "Kontextová entita — Doporučil Vojtěchův benefitový návrh ke schválení. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (adam-vojtech). Tato stránka…"
 
 [extra]
 generated = true

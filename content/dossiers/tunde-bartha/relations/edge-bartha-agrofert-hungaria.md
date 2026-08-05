@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Tünde Bartha — country managerka (dle firemního webu, 9/2024) — popis pracovního zařazení, ne tvrzení o pochybení — AGROFERT Hungária"
+description = "Tünde Bartha — country managerka (dle firemního webu, 9/2024) — popis pracovního zařazení, ne tvrzení o pochybení — AGROFERT Hungária. Vztah v grafu dossieru Tünde Bartha, doložený…"
 template = "dossier-relation.html"
 weight = 6
 

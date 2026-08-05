@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Ondřej Šebek — odvolání označil za překvapivé a účelové, své zahraniční cesty i střet zájmů poradního orgánu hájil — Boris Šťastný"
+description = "Ondřej Šebek — odvolání označil za překvapivé a účelové, své zahraniční cesty i střet zájmů poradního orgánu hájil — Boris Šťastný. Vztah v grafu dossieru Boris Šťastný, doložený…"
 template = "dossier-relation.html"
 weight = 7
 

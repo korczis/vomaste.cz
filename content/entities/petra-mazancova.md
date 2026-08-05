@@ -3,6 +3,7 @@
 title = "Petra Mazancová"
 template = "entity.html"
 weight = 344
+description = "Kontextová entita — Předsedkyně Učitelské platformy, ředitelka školy; kritika načasování zkrácení školního roku. Uvedena, protože se jmenovitě objevuje v citovaném obsahu…"
 
 [extra]
 generated = true

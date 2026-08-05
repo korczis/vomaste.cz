@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Zuzana Mrázová — resort spravedlnosti podal přestupkovému úřadu podnět k prověření majetkového přiznání — Ministerstvo spravedlnosti ČR"
+description = "Zuzana Mrázová — resort spravedlnosti podal přestupkovému úřadu podnět k prověření majetkového přiznání — Ministerstvo spravedlnosti ČR. Vztah v grafu dossieru Zuzana Mrázová, doložený…"
 template = "dossier-relation.html"
 weight = 3
 

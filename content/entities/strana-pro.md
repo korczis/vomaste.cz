@@ -3,6 +3,7 @@
 title = "PRO (Právo Respekt Odbornost)"
 template = "entity.html"
 weight = 396
+description = "Kontextová entita — Strana Jindřicha Rajchla, kandidoval za SPD. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (adam-vojtech). Tato stránka…"
 
 [extra]
 generated = true

@@ -3,6 +3,7 @@
 title = "Unie státních zástupců"
 template = "entity.html"
 weight = 422
+description = "Kontextová entita — Varovala, že prohlášení představitelů státu mohou podrýt důvěru v nezávislost justice. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných…"
 
 [extra]
 generated = true

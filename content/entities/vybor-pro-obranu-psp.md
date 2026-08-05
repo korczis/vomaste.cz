@@ -3,6 +3,7 @@
 title = "Výbor pro obranu Poslanecké sněmovny"
 template = "entity.html"
 weight = 445
+description = "Kontextová entita — Jednomyslně podpořil jmenování Hlaváče; předsedou Josef Flek. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (jaromir-zuna). Tato…"
 
 [extra]
 generated = true

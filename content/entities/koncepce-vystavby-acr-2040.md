@@ -3,6 +3,7 @@
 title = "Koncepce výstavby Armády ČR do roku 2040"
 template = "entity.html"
 weight = 222
+description = "Kontextová entita — Zůnova armádní koncepce (varianty 2 % / 3,5 % HDP); předmět sporu s premiérem Babišem a jednání BRS. Uvedena, protože se jmenovitě objevuje v citovaném obsahu…"
 
 [extra]
 generated = true

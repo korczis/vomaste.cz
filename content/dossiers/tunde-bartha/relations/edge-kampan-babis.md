@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Prezidentská kampaň Andreje Babiše (2022–2023) — kampaň kandidáta Andreje Babiše — Andrej Babiš"
+description = "Prezidentská kampaň Andreje Babiše (2022–2023) — kampaň kandidáta Andreje Babiše — Andrej Babiš. Vztah v grafu dossieru Tünde Bartha, doložený tvrzeními CLM-10. Záznam vazby, nikoli…"
 template = "dossier-relation.html"
 weight = 4
 

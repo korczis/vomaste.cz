@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Čapí hnízdo (dotační kauza) — šetření OLAF; zveřejněné části zprávy hovoří o nesrovnalostech — zjištění kontrolního úřadu, ne rozsudek — Evropský úřad pro boj proti podvodům (OLAF)"
+description = "Čapí hnízdo (dotační kauza) — šetření OLAF; zveřejněné části zprávy hovoří o nesrovnalostech — zjištění kontrolního úřadu, ne rozsudek — Evropský úřad pro boj proti podvodům (OLAF)…"
 template = "dossier-relation.html"
 weight = 24
 

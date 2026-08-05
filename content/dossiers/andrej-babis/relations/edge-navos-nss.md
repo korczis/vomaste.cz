@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Navos Farm Technic — NSS 12/2025: zákaz kvůli střetu zájmů platí i pro zakázky malého rozsahu — správní výklad, ne trestní odpovědnost — Nejvyšší správní soud"
+description = "Navos Farm Technic — NSS 12/2025: zákaz kvůli střetu zájmů platí i pro zakázky malého rozsahu — správní výklad, ne trestní odpovědnost — Nejvyšší správní soud. Vztah v grafu dossieru…"
 template = "dossier-relation.html"
 weight = 35
 

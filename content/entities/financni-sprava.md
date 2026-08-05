@@ -3,6 +3,7 @@
 title = "Finanční správa ČR"
 template = "entity.html"
 weight = 129
+description = "Kontextová entita — Kariérní působiště Schillerové od 1991; biografická zmínka. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (alena-schillerova)…"
 
 [extra]
 generated = true

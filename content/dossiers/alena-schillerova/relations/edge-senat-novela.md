@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Senát Parlamentu ČR — Senát vrátil novelu Sněmovně s pozměňovacími návrhy — Novela rozpočtových zákonů 2026 (sněmovní tisk č. 90)"
+description = "Senát Parlamentu ČR — Senát vrátil novelu Sněmovně s pozměňovacími návrhy — Novela rozpočtových zákonů 2026 (sněmovní tisk č. 90). Vztah v grafu dossieru Alena Schillerová, doložený…"
 template = "dossier-relation.html"
 weight = 7
 

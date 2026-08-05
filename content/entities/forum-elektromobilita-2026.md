@@ -3,6 +3,7 @@
 title = "Forum Elektromobilita 2026"
 template = "entity.html"
 weight = 131
+description = "Kontextová entita — Konference k elektromobilitě konaná 11. 6. 2026 na Výstavišti Praha; zahájil ji ministr Havlíček. Uvedena, protože se jmenovitě objevuje v citovaném obsahu…"
 
 [extra]
 generated = true

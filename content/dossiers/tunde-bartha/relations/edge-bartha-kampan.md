@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Tünde Bartha — šéfka prezidentské kampaně (12/2022); zmínka o kancléřce = zamýšlená budoucí role, ne funkce — Prezidentská kampaň Andreje Babiše (2022–2023)"
+description = "Tünde Bartha — šéfka prezidentské kampaně (12/2022); zmínka o kancléřce = zamýšlená budoucí role, ne funkce — Prezidentská kampaň Andreje Babiše (2022–2023). Vztah v grafu dossieru…"
 template = "dossier-relation.html"
 weight = 3
 

@@ -3,6 +3,7 @@
 title = "Antonín Staněk"
 template = "entity.html"
 weight = 69
+description = "Kontextová entita — Nahradil Turka na mandátu europoslance po jeho zvolení do Sněmovny 2025; jmenován v sekci Politická kariéra hlavního přehledu. Uvedena, protože se jmenovitě…"
 
 [extra]
 generated = true

@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Karel Havlíček — odmítnutí proplacení dotace na toustovou linku Agrofertu Evropskou komisí — Evropská komise"
+description = "Karel Havlíček — odmítnutí proplacení dotace na toustovou linku Agrofertu Evropskou komisí — Evropská komise. Vztah v grafu dossieru Karel Havlíček, doložený tvrzeními CLM-05. Záznam…"
 template = "dossier-relation.html"
 weight = 5
 

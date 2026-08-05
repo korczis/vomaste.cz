@@ -3,6 +3,7 @@
 title = "Kryštof Doležal"
 template = "entity.html"
 weight = 229
+description = "Kontextová entita — Právník Transparency International ČR; statut RSVP Trust označil za zástěrku. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů…"
 
 [extra]
 generated = true

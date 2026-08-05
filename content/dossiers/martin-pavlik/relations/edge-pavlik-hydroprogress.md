@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Martin Pavlík — jednatel a společník s podílem 80 % — HYDROPROGRESS, s.r.o."
+description = "Martin Pavlík — jednatel a společník s podílem 80 % — HYDROPROGRESS, s.r.o.. Vztah v grafu dossieru Martin Pavlík, doložený tvrzeními CLM-03, CLM-05. Záznam vazby, nikoli tvrzení o…"
 template = "dossier-relation.html"
 weight = 1
 

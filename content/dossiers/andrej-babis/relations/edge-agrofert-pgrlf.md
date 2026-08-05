@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Agrofert — žaloby na 28 firem skupiny o 22 mil. Kč (7/2026) — podaná žaloba není rozhodnutí soudu — Podpůrný a garanční rolnický a lesnický fond (PGRLF)"
+description = "Agrofert — žaloby na 28 firem skupiny o 22 mil. Kč (7/2026) — podaná žaloba není rozhodnutí soudu — Podpůrný a garanční rolnický a lesnický fond (PGRLF). Vztah v grafu dossieru Andrej…"
 template = "dossier-relation.html"
 weight = 29
 

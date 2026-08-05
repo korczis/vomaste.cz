@@ -3,6 +3,7 @@
 title = "Jan Doležal"
 template = "entity.html"
 weight = 160
+description = "Kontextová entita — Prezident Agrární komory; vyzval ke svolání mimořádné vlády kvůli krizi zemědělství. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných…"
 
 [extra]
 generated = true

@@ -3,6 +3,7 @@
 title = "Karel Kovář"
 template = "entity.html"
 weight = 189
+description = "Kontextová entita — Nový předseda Národní sportovní agentury (od 26. 1. 2026), dříve náměstek ústředního školního inspektora; úkolem kontrola dotací. Uvedena, protože se jmenovitě…"
 
 [extra]
 generated = true

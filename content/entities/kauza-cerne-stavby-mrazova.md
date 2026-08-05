@@ -3,6 +3,7 @@
 title = "Kauza staveb v rozporu s územním plánem (pozemek Mrázové)"
 template = "entity.html"
 weight = 199
+description = "Kontextová entita — Nepovolené stavby na lesní parcele v Bílině; kritici je spojují s novelou usnadňující dodatečné povolování. Uvedena, protože se jmenovitě objevuje v citovaném…"
 
 [extra]
 generated = true

@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Andrej Babiš — dlouhodobý spor o financování a stavbu sídla NKÚ (od 2016) — Miloslav Kala"
+description = "Andrej Babiš — dlouhodobý spor o financování a stavbu sídla NKÚ (od 2016) — Miloslav Kala. Vztah v grafu dossieru Lubomír Metnar, doložený tvrzeními CLM-23. Záznam vazby, nikoli…"
 template = "dossier-relation.html"
 weight = 6
 

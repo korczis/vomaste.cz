@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Kauza 2025: smazané příspěvky — prověřování výroků i oznámení na Deník N odloženo (28. 7. 2026) — Policie ČR"
+description = "Kauza 2025: smazané příspěvky — prověřování výroků i oznámení na Deník N odloženo (28. 7. 2026) — Policie ČR. Vztah v grafu dossieru Petr Macinka a Filip Turek, doložený tvrzeními…"
 template = "dossier-relation.html"
 weight = 27
 

@@ -3,6 +3,7 @@
 title = "Jiří Horáček"
 template = "entity.html"
 weight = 176
+description = "Kontextová entita — Ředitel Národního ústavu duševního zdraví; podporuje zákaz mobilů ve školách. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů…"
 
 [extra]
 generated = true

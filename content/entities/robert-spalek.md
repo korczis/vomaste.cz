@@ -3,6 +3,7 @@
 title = "Robert Špalek"
 template = "entity.html"
 weight = 367
+description = "Kontextová entita — Předseda ČKAIT; varoval před dopady stavební reformy. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (karel-havlicek). Tato…"
 
 [extra]
 generated = true

@@ -3,6 +3,7 @@
 title = "Schrom Farms"
 template = "entity.html"
 weight = 372
+description = "Kontextová entita — Jediná firma z auditované skupiny, které byla dotace (1,6 mil. Kč) vyplacena; následně ji vracela. Uvedena, protože se jmenovitě objevuje v citovaném obsahu…"
 
 [extra]
 generated = true

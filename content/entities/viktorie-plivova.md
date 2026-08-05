@@ -3,6 +3,7 @@
 title = "Viktorie Plívová"
 template = "entity.html"
 weight = 433
+description = "Kontextová entita — Mluvčí VZP; potvrdila kontrolu implantací ve FN Olomouc. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (adam-vojtech). Tato…"
 
 [extra]
 generated = true

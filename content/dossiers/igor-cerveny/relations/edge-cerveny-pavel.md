@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Igor Červený — situaci kolem ministrova střetu zájmů řešil prezident Pavel — Petr Pavel (prezident)"
+description = "Igor Červený — situaci kolem ministrova střetu zájmů řešil prezident Pavel — Petr Pavel (prezident). Vztah v grafu dossieru Igor Červený, doložený tvrzeními CLM-33. Záznam vazby…"
 template = "dossier-relation.html"
 weight = 3
 

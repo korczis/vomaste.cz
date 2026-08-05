@@ -3,6 +3,7 @@
 title = "Národní sportovní agentura (NSA)"
 template = "entity.html"
 weight = 295
+description = "Kontextová entita — Státní agentura pro sport — kauza odvolání vedení (Šebek, Horák), pověření Jebouska, jmenování Kováře a ohlášený interní audit. Uvedena, protože se jmenovitě…"
 
 [extra]
 generated = true

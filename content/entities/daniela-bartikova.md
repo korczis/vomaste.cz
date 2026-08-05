@@ -3,6 +3,7 @@
 title = "Daniela Bártíková"
 template = "entity.html"
 weight = 102
+description = "Kontextová entita — Evropská pověřená žalobkyně (EPPO) — 24. 5. 2026 vydala rozhodnutí o zahájení trestního řízení k vyplácení evropských dotací. Uvedena, protože se jmenovitě objevuje…"
 
 [extra]
 generated = true

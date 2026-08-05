@@ -3,6 +3,7 @@
 title = "Kateřina Pacíková"
 template = "entity.html"
 weight = 196
+description = "Kontextová entita — Zástupkyně mluvčí MŽP; informovala o opravném oznámení a pokutě ministra. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů…"
 
 [extra]
 generated = true

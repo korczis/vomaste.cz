@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Oto Klempíř — zrušil výběrové řízení na ředitele a odvolal generální ředitelku NGP — Národní galerie Praha"
+description = "Oto Klempíř — zrušil výběrové řízení na ředitele a odvolal generální ředitelku NGP — Národní galerie Praha. Vztah v grafu dossieru Oto Klempíř, doložený tvrzeními CLM-22, CLM-25…"
 template = "dossier-relation.html"
 weight = 7
 

@@ -3,6 +3,7 @@
 title = "Vojtěch Krňanský"
 template = "entity.html"
 weight = 437
+description = "Kontextová entita — Poslanec Motoristů; zmíněn mezi předkladateli novely stavebního zákona. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů…"
 
 [extra]
 generated = true

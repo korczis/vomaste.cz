@@ -3,6 +3,7 @@
 title = "Olga Richterová"
 template = "entity.html"
 weight = 317
+description = "Kontextová entita — Poslankyně Pirátů; interpelace na Mrázovou, autorka návrhu „lex Mrázová“. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů…"
 
 [extra]
 generated = true

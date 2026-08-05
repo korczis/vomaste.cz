@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Andrej Babiš — předseda vlády (k datu citovaného zpravodajství 2026) — Vláda ČR"
+description = "Andrej Babiš — předseda vlády (k datu citovaného zpravodajství 2026) — Vláda ČR. Vztah v grafu dossieru Andrej Babiš, doložený tvrzeními CLM-36. Záznam vazby, nikoli tvrzení o…"
 template = "dossier-relation.html"
 weight = 1
 

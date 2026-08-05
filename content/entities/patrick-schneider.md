@@ -3,6 +3,7 @@
 title = "Patrick Schneider"
 template = "entity.html"
 weight = 326
+description = "Kontextová entita — Německý spolkový ministr dopravy; jednání s Bednárikem o Krušnohorském tunelu a ose Praha–Drážďany–Berlín (březen 2026). Uvedena, protože se jmenovitě objevuje v…"
 
 [extra]
 generated = true

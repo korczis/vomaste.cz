@@ -3,6 +3,7 @@
 title = "Hana Landová"
 template = "entity.html"
 weight = 142
+description = "Kontextová entita — Vládní zmocněnkyně; připustila, že zrychlení stavebního povolování se projeví až po 1. 1. 2028. Uvedena, protože se jmenovitě objevuje v citovaném obsahu…"
 
 [extra]
 generated = true

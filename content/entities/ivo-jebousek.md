@@ -3,6 +3,7 @@
 title = "Ivo Jebousek"
 template = "entity.html"
 weight = 156
+description = "Kontextová entita — Místopředseda Rady NSA pověřený vedením agentury po odvolání Šebka. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů…"
 
 [extra]
 generated = true

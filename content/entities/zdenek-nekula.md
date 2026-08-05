@@ -3,6 +3,7 @@
 title = "Zdeněk Nekula"
 template = "entity.html"
 weight = 457
+description = "Kontextová entita — Exministr zemědělství; po dohodě s ním Šebestyán skončil v čele SZIF (2022). Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů…"
 
 [extra]
 generated = true

@@ -3,6 +3,7 @@
 title = "Operační program Zaměstnanost plus (OPZ+)"
 template = "entity.html"
 weight = 320
+description = "Kontextová entita — Druhý dotčený program (dalších 17,6 mil. Kč hrazených ze státního rozpočtu místo EU). Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných…"
 
 [extra]
 generated = true

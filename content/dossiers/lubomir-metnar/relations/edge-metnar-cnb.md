@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Lubomír Metnar — uvolněná policejní kapacita po zrušení ochrany NKÚ má nově chránit ČNB — Česká národní banka"
+description = "Lubomír Metnar — uvolněná policejní kapacita po zrušení ochrany NKÚ má nově chránit ČNB — Česká národní banka. Vztah v grafu dossieru Lubomír Metnar, doložený tvrzeními CLM-08. Záznam…"
 template = "dossier-relation.html"
 weight = 3
 

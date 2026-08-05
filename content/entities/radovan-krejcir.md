@@ -3,6 +3,7 @@
 title = "Radovan Krejčíř"
 template = "entity.html"
 weight = 362
+description = "Kontextová entita — Jmenován obsahem (starší osobní známost Chlada), ale AGENTS.md obsahuje výslovný záznam „Not authorized: Radovan Krejčíř“ — entitu nezakládat bez lidského…"
 
 [extra]
 generated = true

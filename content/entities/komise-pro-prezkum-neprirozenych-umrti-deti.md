@@ -3,6 +3,7 @@
 title = "Komise pro přezkum nepřirozených úmrtí dětí"
 template = "entity.html"
 weight = 219
+description = "Kontextová entita — Komise MPSV vedená ministrem Juchelkou; podnět ke kontrole OSPOD ve Středočeském kraji a Praze. Uvedena, protože se jmenovitě objevuje v citovaném obsahu…"
 
 [extra]
 generated = true

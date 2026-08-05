@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Karel Havlíček — reportovaná nevymáhaná dotace (od 2019 znám audit EU) — Pekárna Zelená louka (skupina Agrofert)"
+description = "Karel Havlíček — reportovaná nevymáhaná dotace (od 2019 znám audit EU) — Pekárna Zelená louka (skupina Agrofert). Vztah v grafu dossieru Karel Havlíček, doložený tvrzeními CLM-05…"
 template = "dossier-relation.html"
 weight = 2
 

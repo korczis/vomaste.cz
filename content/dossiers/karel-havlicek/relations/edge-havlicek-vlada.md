@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Karel Havlíček — 1. místopředseda vlády a ministr průmyslu a obchodu — Vláda ČR"
+description = "Karel Havlíček — 1. místopředseda vlády a ministr průmyslu a obchodu — Vláda ČR. Vztah v grafu dossieru Karel Havlíček, doložený tvrzeními CLM-01. Záznam vazby, nikoli tvrzení o…"
 template = "dossier-relation.html"
 weight = 1
 

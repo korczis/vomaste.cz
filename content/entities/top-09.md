@@ -3,6 +3,7 @@
 title = "TOP 09"
 template = "entity.html"
 weight = 410
+description = "Kontextová entita — Zmíněna jen jako stranická afiliace citovaného Matěje Ondřeje Havla. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů…"
 
 [extra]
 generated = true

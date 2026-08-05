@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Jaromír Zůna — kritizoval nedostatečné povědomí předchůdkyně o obranném plánování a její souhlas s navýšením závazků vůči NATO o 200 procent — Jana Černochová"
+description = "Jaromír Zůna — kritizoval nedostatečné povědomí předchůdkyně o obranném plánování a její souhlas s navýšením závazků vůči NATO o 200 procent — Jana Černochová. Vztah v grafu dossieru…"
 template = "dossier-relation.html"
 weight = 15
 

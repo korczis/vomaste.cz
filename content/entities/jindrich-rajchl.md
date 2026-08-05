@@ -3,6 +3,7 @@
 title = "Jindřich Rajchl"
 template = "entity.html"
 weight = 174
+description = "Kontextová entita — Poslanec zvolený za SPD (strana PRO); vystoupil proti ministru Vojtěchovi z koaličních lavic. Uvedena, protože se jmenovitě objevuje v citovaném obsahu…"
 
 [extra]
 generated = true

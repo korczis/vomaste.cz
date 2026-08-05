@@ -3,6 +3,7 @@
 title = "Nová zelená úsporám"
 template = "entity.html"
 weight = 301
+description = "Kontextová entita — Dotační program; jeho oddělení financování na MŽP zaniklo při systemizaci 2026. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů…"
 
 [extra]
 generated = true

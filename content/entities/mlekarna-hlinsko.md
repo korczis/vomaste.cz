@@ -3,6 +3,7 @@
 title = "Mlékárna Hlinsko"
 template = "entity.html"
 weight = 284
+description = "Kontextová entita — Firma skupiny Agrofert uvedená mezi společnostmi s ukončenou administrací projektů SZIF. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných…"
 
 [extra]
 generated = true

@@ -3,6 +3,7 @@
 title = "Lieken AG"
 template = "entity.html"
 weight = 232
+description = "Kontextová entita — Německá pekárenská společnost — podle auditorů EK vyráběla podobné tousty už 2013 (důkaz neinovativnosti projektu Penamu). Uvedena, protože se jmenovitě objevuje v…"
 
 [extra]
 generated = true

@@ -3,6 +3,7 @@
 title = "Transgas s.r.o."
 template = "entity.html"
 weight = 411
+description = "Kontextová entita — IČO 06230113; Turek členem statutárního orgánu od 28. 6. 2017. Pozor na záměnu s historickým státním podnikem Transgas — proto entityId transgas-sro. Uvedena…"
 
 [extra]
 generated = true

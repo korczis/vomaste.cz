@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Jaromír Zůna — místopředseda vlády a ministr obrany — Vláda ČR"
+description = "Jaromír Zůna — místopředseda vlády a ministr obrany — Vláda ČR. Vztah v grafu dossieru Jaromír Zůna, doložený tvrzeními CLM-01. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 1
 

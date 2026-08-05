@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Zuzana Mrázová — předseda ODS označil vyjádření Mrázové k jejím kauzám za pokrytectví — Martin Kupka"
+description = "Zuzana Mrázová — předseda ODS označil vyjádření Mrázové k jejím kauzám za pokrytectví — Martin Kupka. Vztah v grafu dossieru Zuzana Mrázová, doložený tvrzeními CLM-26. Záznam vazby…"
 template = "dossier-relation.html"
 weight = 7
 

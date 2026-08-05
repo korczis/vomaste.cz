@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Aleš Juchelka — vyřazené projekty za 63,8 mil. Kč z Národního plánu obnovy pod jeho resortem — Národní plán obnovy"
+description = "Aleš Juchelka — vyřazené projekty za 63,8 mil. Kč z Národního plánu obnovy pod jeho resortem — Národní plán obnovy. Vztah v grafu dossieru Aleš Juchelka, doložený tvrzeními CLM-11…"
 template = "dossier-relation.html"
 weight = 7
 

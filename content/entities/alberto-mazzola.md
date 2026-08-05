@@ -3,6 +3,7 @@
 title = "Alberto Mazzola"
 template = "entity.html"
 weight = 57
+description = "Kontextová entita — Šéf evropské železniční asociace CER; setkání s Bednárikem v Bruselu. Okrajová zmínka. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných…"
 
 [extra]
 generated = true

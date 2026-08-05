@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Tomio Okamura — trestní stíhání přerušeno pro nevydání Sněmovnou, věc vyloučena k samostatnému projednání — Obvodní soud pro Prahu 1"
+description = "Tomio Okamura — trestní stíhání přerušeno pro nevydání Sněmovnou, věc vyloučena k samostatnému projednání — Obvodní soud pro Prahu 1. Vztah v grafu dossieru Tomio Okamura, doložený…"
 template = "dossier-relation.html"
 weight = 4
 

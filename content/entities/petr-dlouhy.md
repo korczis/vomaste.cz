@@ -3,6 +3,7 @@
 title = "Petr Dlouhý"
 template = "entity.html"
 weight = 337
+description = "Kontextová entita — Generální ředitel SZIF; rozhodl o obnovení čerpání dotací Agrofertu (RSVP Trust). Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů…"
 
 [extra]
 generated = true

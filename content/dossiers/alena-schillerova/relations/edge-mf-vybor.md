@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Ministerstvo financí ČR — Ministerstvo financí přisoudilo roli arbitra makroekonomických prognóz výhradně Výboru pro rozpočtové prognózy — Výbor pro rozpočtové prognózy"
+description = "Ministerstvo financí ČR — Ministerstvo financí přisoudilo roli arbitra makroekonomických prognóz výhradně Výboru pro rozpočtové prognózy — Výbor pro rozpočtové prognózy. Vztah v grafu…"
 template = "dossier-relation.html"
 weight = 16
 

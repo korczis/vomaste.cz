@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SynBiol — zdravotnické aktivity ve skupině Hartenberg, mimo svěřenský fond — Hartenberg Holding"
+description = "SynBiol — zdravotnické aktivity ve skupině Hartenberg, mimo svěřenský fond — Hartenberg Holding. Vztah v grafu dossieru Andrej Babiš, doložený tvrzeními CLM-39. Záznam vazby, nikoli…"
 template = "dossier-relation.html"
 weight = 16
 

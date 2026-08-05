@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Oto Klempíř — vypískán na festivalu ve Strážnici; Milion chvilek spustil petici za jeho odvolání — Petice „Oto, zabal to!“"
+description = "Oto Klempíř — vypískán na festivalu ve Strážnici; Milion chvilek spustil petici za jeho odvolání — Petice „Oto, zabal to!“. Vztah v grafu dossieru Oto Klempíř, doložený tvrzeními…"
 template = "dossier-relation.html"
 weight = 11
 

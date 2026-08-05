@@ -3,6 +3,7 @@
 title = "Výbor pro zdravotnictví Poslanecké sněmovny"
 template = "entity.html"
 weight = 448
+description = "Kontextová entita — Dějiště sporů o Národní očkovací strategii. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (adam-vojtech). Tato stránka…"
 
 [extra]
 generated = true

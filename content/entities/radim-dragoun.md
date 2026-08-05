@@ -3,6 +3,7 @@
 title = "Radim Dragoun"
 template = "entity.html"
 weight = 359
+description = "Kontextová entita — Dozorující státní zástupce VSZ Olomouc v bitcoinové kauze. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (jeronym-tejc). Tato…"
 
 [extra]
 generated = true

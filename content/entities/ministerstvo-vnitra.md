@@ -3,6 +3,7 @@
 title = "Ministerstvo vnitra ČR"
 template = "entity.html"
 weight = 279
+description = "Kontextová entita — SPD s ním dříve vyhrálo samostatný spor o šíření strachu. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (lubomir-metnar…"
 
 [extra]
 generated = true

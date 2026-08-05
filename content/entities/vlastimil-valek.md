@@ -3,6 +3,7 @@
 title = "Vlastimil Válek"
 template = "entity.html"
 weight = 435
+description = "Kontextová entita — Poslanec TOP 09, exministr zdravotnictví; iniciátor debaty o očkovací strategii. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů…"
 
 [extra]
 generated = true

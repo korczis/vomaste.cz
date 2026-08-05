@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Tomio Okamura — SPD ohlásilo připravenost obrátit se na Ústavní soud (odvolání, k datu rešerše nepodáno) — Ústavní soud"
+description = "Tomio Okamura — SPD ohlásilo připravenost obrátit se na Ústavní soud (odvolání, k datu rešerše nepodáno) — Ústavní soud. Vztah v grafu dossieru Tomio Okamura, doložený tvrzeními…"
 template = "dossier-relation.html"
 weight = 2
 

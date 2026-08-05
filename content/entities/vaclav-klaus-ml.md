@@ -3,6 +3,7 @@
 title = "Václav Klaus (mladší)"
 template = "entity.html"
 weight = 426
+description = "Kontextová entita — Třetí účastník setkání s íránským velvyslancem podle investigace Neovlivní.cz; schůzku potvrdil. Nezaměňovat s Institutem Václava Klause (otec). Uvedena, protože se…"
 
 [extra]
 generated = true

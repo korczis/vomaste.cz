@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Josef Flek — opakovaně kritizoval ministra — nezveřejnění rozhovoru prezidenta označil za bezprecedentní pokus o umlčení hlavy státu, plánované navýšení obranného rozpočtu za nedostatečné — Jaromír Zůna"
+description = "Josef Flek — opakovaně kritizoval ministra — nezveřejnění rozhovoru prezidenta označil za bezprecedentní pokus o umlčení hlavy státu, plánované navýšení obranného rozpočtu za…"
 template = "dossier-relation.html"
 weight = 11
 

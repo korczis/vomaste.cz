@@ -3,6 +3,7 @@
 title = "Centrum pro výzkum terorismu, z.s."
 template = "entity.html"
 weight = 86
+description = "Kontextová entita — IČO 11823461; Macinka členem statutárního orgánu od 24. 9. 2021 (rejstříková vazba). Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných…"
 
 [extra]
 generated = true

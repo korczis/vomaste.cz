@@ -3,6 +3,7 @@
 title = "Karel Řehka"
 template = "entity.html"
 weight = 191
+description = "Kontextová entita — Náčelník Generálního štábu 2022–2026; zvažuje kandidaturu do Senátu. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů…"
 
 [extra]
 generated = true

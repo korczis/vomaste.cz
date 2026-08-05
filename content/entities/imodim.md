@@ -3,6 +3,7 @@
 title = "I.M.O.D.I.M."
 template = "entity.html"
 weight = 150
+description = "Kontextová entita — Od srpna 2019 stoprocentní vlastník SCP Bigaud (majetková struktura nemovitostí ve Francii, Pandora Papers). Uvedena, protože se jmenovitě objevuje v citovaném…"
 
 [extra]
 generated = true

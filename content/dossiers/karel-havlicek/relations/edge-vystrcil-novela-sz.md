@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Miloš Vystrčil — Předseda Senátu Vystrčil nevyloučil zamítnutí novely kvůli množství kritických připomínek — Novela stavebního zákona 2026 (sněmovní tisk 67)"
+description = "Miloš Vystrčil — Předseda Senátu Vystrčil nevyloučil zamítnutí novely kvůli množství kritických připomínek — Novela stavebního zákona 2026 (sněmovní tisk 67). Vztah v grafu dossieru…"
 template = "dossier-relation.html"
 weight = 15
 

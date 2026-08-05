@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Tomio Okamura — předseda SPD Okamura kritizoval bonusy VZP za proočkovanost jako „uplácení zaměstnavatelů“ — Adam Vojtěch"
+description = "Tomio Okamura — předseda SPD Okamura kritizoval bonusy VZP za proočkovanost jako „uplácení zaměstnavatelů“ — Adam Vojtěch. Vztah v grafu dossieru Adam Vojtěch, doložený tvrzeními…"
 template = "dossier-relation.html"
 weight = 6
 

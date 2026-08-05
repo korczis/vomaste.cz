@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Petr Pavel (prezident) — odmítl jmenovat — Jmenování ministrem ŽP (2026)"
+description = "Petr Pavel (prezident) — odmítl jmenovat — Jmenování ministrem ŽP (2026). Vztah v grafu dossieru Petr Macinka a Filip Turek, doložený tvrzeními CLM-38. Záznam vazby, nikoli tvrzení o…"
 template = "dossier-relation.html"
 weight = 19
 

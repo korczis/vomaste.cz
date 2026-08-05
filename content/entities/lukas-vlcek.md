@@ -3,6 +3,7 @@
 title = "Lukáš Vlček"
 template = "entity.html"
 weight = 238
+description = "Kontextová entita — Poslanec STAN; novelu stavebního zákona označil za „legislativní paskvil“, vyzýval Mrázovou k rezignaci. Uvedena, protože se jmenovitě objevuje v citovaném obsahu…"
 
 [extra]
 generated = true

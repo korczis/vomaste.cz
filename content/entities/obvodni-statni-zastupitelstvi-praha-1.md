@@ -3,6 +3,7 @@
 title = "Obvodní státní zastupitelství pro Prahu 1"
 template = "entity.html"
 weight = 309
+description = "Kontextová entita — Podalo obžalobu na Okamuru a SPD (8/2025). Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (tomio-okamura). Tato stránka…"
 
 [extra]
 generated = true

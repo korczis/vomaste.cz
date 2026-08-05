@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Jaroslav Faltýnek — stíhán 2015–2018; stíhání zrušeno státním zástupcem — Kauza Čapí hnízdo"
+description = "Jaroslav Faltýnek — stíhán 2015–2018; stíhání zrušeno státním zástupcem — Kauza Čapí hnízdo. Vztah v grafu dossieru Jaroslav Faltýnek, doložený tvrzeními CLM-02, CLM-04. Záznam vazby…"
 template = "dossier-relation.html"
 weight = 1
 

@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Petr Pavel — odmítl jmenovat ministrem životního prostředí (leden 2026) — Filip Turek"
+description = "Petr Pavel — odmítl jmenovat ministrem životního prostředí (leden 2026) — Filip Turek. Vztah v grafu dossieru Petr Pavel, doložený tvrzeními CLM-01. Záznam vazby, nikoli tvrzení o…"
 template = "dossier-relation.html"
 weight = 1
 

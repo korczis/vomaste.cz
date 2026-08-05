@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Pavel Blažek — Blažek se v bitcoinové kauze, kterou otevřelo Tejcovo trestní oznámení, cítí nevinný — Jeroným Tejc"
+description = "Pavel Blažek — Blažek se v bitcoinové kauze, kterou otevřelo Tejcovo trestní oznámení, cítí nevinný — Jeroným Tejc. Vztah v grafu dossieru Jeroným Tejc, doložený tvrzeními CLM-29…"
 template = "dossier-relation.html"
 weight = 8
 

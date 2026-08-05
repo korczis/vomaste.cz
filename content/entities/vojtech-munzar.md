@@ -3,6 +3,7 @@
 title = "Vojtěch Munzar"
 template = "entity.html"
 weight = 438
+description = "Kontextová entita — Poslanec ODS; navrhl zamítnutí novely EET se zdravotními benefity. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (adam-vojtech)…"
 
 [extra]
 generated = true

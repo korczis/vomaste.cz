@@ -4,6 +4,7 @@ title = "GMR GAS UA LLC (Kyjev)"
 template = "entity.html"
 weight = 14
 aliases = ["/dossiers/macinka-turek/entities/gmrgas/"]
+description = "Kyjevská firma, ve které měl Petr Macinka od roku 2017 dvacetiprocentní podíl, jejž neuvedl v majetkovém přiznání a po upozornění Investigace.cz přiznal dodatečně (CLM-14). Podle…"
 
 [extra]
 generated = true

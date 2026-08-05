@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Vojtěch Dobeš — autor screenshotů, na nichž je založena kauza (2025), a komentátor jejího odložení (2026) — Kauza 2025: smazané příspěvky"
+description = "Vojtěch Dobeš — autor screenshotů, na nichž je založena kauza (2025), a komentátor jejího odložení (2026) — Kauza 2025: smazané příspěvky. Vztah v grafu dossieru Petr Macinka a Filip…"
 template = "dossier-relation.html"
 weight = 34
 

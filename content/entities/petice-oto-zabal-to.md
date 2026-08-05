@@ -3,6 +3,7 @@
 title = "Petice „Oto, zabal to!“"
 template = "entity.html"
 weight = 335
+description = "Kontextová entita — Petice Milionu chvilek za odvolání ministra Klempíře; k 28. 6. 2026 podepsalo 45 000 lidí. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných…"
 
 [extra]
 generated = true

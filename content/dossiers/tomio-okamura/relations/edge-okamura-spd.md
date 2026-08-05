@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Tomio Okamura — předseda hnutí — SPD"
+description = "Tomio Okamura — předseda hnutí — SPD. Vztah v grafu dossieru Tomio Okamura, doložený tvrzeními CLM-02. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 1
 

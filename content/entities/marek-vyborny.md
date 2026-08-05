@@ -3,6 +3,7 @@
 title = "Marek Výborný"
 template = "entity.html"
 weight = 244
+description = "Kontextová entita — Poslanec KDU-ČSL, exministr zemědělství; tvrdil, že SZIF má analýzy potvrzující nezákonnost dotací Agrofertu. Uvedena, protože se jmenovitě objevuje v citovaném…"
 
 [extra]
 generated = true

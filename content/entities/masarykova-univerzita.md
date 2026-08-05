@@ -3,6 +3,7 @@
 title = "Masarykova univerzita"
 template = "entity.html"
 weight = 252
+description = "Kontextová entita — Její výzkumníci uvádějí, že plošné zákazy mobilů nefungují univerzálně. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů…"
 
 [extra]
 generated = true

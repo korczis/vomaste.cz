@@ -3,6 +3,7 @@
 title = "Space Plan"
 template = "entity.html"
 weight = 383
+description = "Kontextová entita — Pražská firma, dodavatel nábytku do nové pracovny ministra Červeného. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů…"
 
 [extra]
 generated = true

@@ -3,6 +3,7 @@
 title = "Generální ředitelství Evropské komise pro zemědělství (DG AGRI)"
 template = "entity.html"
 weight = 108
+description = "Kontextová entita — Potvrdilo SZIF platnost dohodnutého postupu vykazování plateb Agrofertu. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů…"
 
 [extra]
 generated = true

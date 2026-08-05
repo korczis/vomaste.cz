@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Jeroným Tejc — kompetenční spor o účast prezidenta Pavla na summitu NATO v Ankaře — Petr Pavel (prezident)"
+description = "Jeroným Tejc — kompetenční spor o účast prezidenta Pavla na summitu NATO v Ankaře — Petr Pavel (prezident). Vztah v grafu dossieru Jeroným Tejc, doložený tvrzeními CLM-41. Záznam…"
 template = "dossier-relation.html"
 weight = 4
 

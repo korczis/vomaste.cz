@@ -3,6 +3,7 @@
 title = "Generální štáb Armády ČR"
 template = "entity.html"
 weight = 138
+description = "Kontextová entita — Velitelský orgán armády; spor o volbu náčelníka a komunikační kanál (podcast Kamufláž). Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných…"
 
 [extra]
 generated = true

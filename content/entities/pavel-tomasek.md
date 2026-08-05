@@ -3,6 +3,7 @@
 title = "Pavel Tomášek"
 template = "entity.html"
 weight = 331
+description = "Kontextová entita — Šéfredaktor Deníku N; aktér kauzy trestního oznámení Motoristů na Deník N (veřejně hájil redakci: „nemá žádný důvod cokoli měnit“). Novinář, ale v roli aktéra…"
 
 [extra]
 generated = true

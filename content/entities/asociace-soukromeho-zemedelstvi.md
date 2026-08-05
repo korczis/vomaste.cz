@@ -3,6 +3,7 @@
 title = "Asociace soukromého zemědělství ČR"
 template = "entity.html"
 weight = 74
+description = "Kontextová entita — Zemědělský svaz menších farmářů; podpora trestního oznámení, kritika Šebestyána. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů…"
 
 [extra]
 generated = true

@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Vít Rakušan — předseda STAN — STAN"
+description = "Vít Rakušan — předseda STAN — STAN. Vztah v grafu dossieru Boris Šťastný, doložený tvrzeními CLM-38. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 25
 

@@ -3,6 +3,7 @@
 title = "Středočeský kraj"
 template = "entity.html"
 weight = 397
+description = "Kontextová entita — Příjemce části vrácené dotace za Čapí hnízdo (3 747 019,20 Kč); pasivní zmínka. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů…"
 
 [extra]
 generated = true

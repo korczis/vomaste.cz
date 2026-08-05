@@ -3,6 +3,7 @@
 title = "Alzheimer Home"
 template = "entity.html"
 weight = 64
+description = "Kontextová entita — Síť domovů provozovaná Borisem Šťastným; jeho širší holding podle Seznam Zpráv čerpal 2020–2023 přes 290 mil. Kč státních dotací na sociální služby. Kontextová…"
 
 [extra]
 generated = true

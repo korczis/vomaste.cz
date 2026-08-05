@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Ivan Bednárik — generální ředitel Správy železnic potvrdil, že některé velké železniční projekty nelze v roce 2026 financovat — Tomáš Tóth"
+description = "Ivan Bednárik — generální ředitel Správy železnic potvrdil, že některé velké železniční projekty nelze v roce 2026 financovat — Tomáš Tóth. Vztah v grafu dossieru Ivan Bednárik…"
 template = "dossier-relation.html"
 weight = 12
 

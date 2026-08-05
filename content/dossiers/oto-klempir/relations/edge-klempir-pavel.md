@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Oto Klempíř — jednání s prezidentem Petrem Pavlem o novele financování ČT a ČRo (30. 6. 2026) — Petr Pavel (prezident)"
+description = "Oto Klempíř — jednání s prezidentem Petrem Pavlem o novele financování ČT a ČRo (30. 6. 2026) — Petr Pavel (prezident). Vztah v grafu dossieru Oto Klempíř, doložený tvrzeními CLM-20…"
 template = "dossier-relation.html"
 weight = 2
 

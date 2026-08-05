@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Martin Pavlík — člen orgánu nadačního fondu — Nadační fond FIDUCIA"
+description = "Martin Pavlík — člen orgánu nadačního fondu — Nadační fond FIDUCIA. Vztah v grafu dossieru Martin Pavlík, doložený tvrzeními CLM-04. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 3
 

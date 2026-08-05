@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Petr Macinka — hájí (\"nikdy se ho nevzdám\") — Nehoda 2026"
+description = "Petr Macinka — hájí (\"nikdy se ho nevzdám\") — Nehoda 2026. Vztah v grafu dossieru Petr Macinka a Filip Turek, doložený tvrzeními CLM-13. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 11
 

@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Andrej Babiš — předběžné vyšetřování ve Francii; k datu kontroly bez obvinění — Národní finanční prokuratura (PNF, Francie)"
+description = "Andrej Babiš — předběžné vyšetřování ve Francii; k datu kontroly bez obvinění — Národní finanční prokuratura (PNF, Francie). Vztah v grafu dossieru Andrej Babiš, doložený tvrzeními…"
 template = "dossier-relation.html"
 weight = 7
 

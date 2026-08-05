@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Kostelecké uzeniny — ústavní stížnost odmítnuta 1. 4. 2026 jako zjevně neopodstatněná — spor o nárok na dotaci, ne o vině — Ústavní soud"
+description = "Kostelecké uzeniny — ústavní stížnost odmítnuta 1. 4. 2026 jako zjevně neopodstatněná — spor o nárok na dotaci, ne o vině — Ústavní soud. Vztah v grafu dossieru Andrej Babiš, doložený…"
 template = "dossier-relation.html"
 weight = 19
 

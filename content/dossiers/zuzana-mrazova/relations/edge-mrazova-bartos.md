@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Zuzana Mrázová — bývalý ministr pro místní rozvoj (Piráti) veřejně kritizoval Mrázovou — Ivan Bartoš"
+description = "Zuzana Mrázová — bývalý ministr pro místní rozvoj (Piráti) veřejně kritizoval Mrázovou — Ivan Bartoš. Vztah v grafu dossieru Zuzana Mrázová, doložený tvrzeními CLM-56. Záznam vazby…"
 template = "dossier-relation.html"
 weight = 8
 

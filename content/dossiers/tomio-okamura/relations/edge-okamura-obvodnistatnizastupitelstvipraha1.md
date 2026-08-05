@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Tomio Okamura — obžalobu na Okamuru a SPD podal šéf Obvodního státního zastupitelství pro Prahu 1 — Obvodní státní zastupitelství pro Prahu 1"
+description = "Tomio Okamura — obžalobu na Okamuru a SPD podal šéf Obvodního státního zastupitelství pro Prahu 1 — Obvodní státní zastupitelství pro Prahu 1. Vztah v grafu dossieru Tomio Okamura…"
 template = "dossier-relation.html"
 weight = 5
 

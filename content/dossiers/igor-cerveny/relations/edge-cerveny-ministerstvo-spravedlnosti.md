@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Igor Červený — obsahová kontrola majetkového přiznání a postoupení věci přestupkovému orgánu v Nymburce — Ministerstvo spravedlnosti ČR"
+description = "Igor Červený — obsahová kontrola majetkového přiznání a postoupení věci přestupkovému orgánu v Nymburce — Ministerstvo spravedlnosti ČR. Vztah v grafu dossieru Igor Červený, doložený…"
 template = "dossier-relation.html"
 weight = 4
 

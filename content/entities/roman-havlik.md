@@ -3,6 +3,7 @@
 title = "Roman Havlík"
 template = "entity.html"
 weight = 368
+description = "Kontextová entita — Ředitel FN Olomouc; v kauze defibrilátorů jej Babiš i Vojtěch zprvu podpořeli. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů…"
 
 [extra]
 generated = true

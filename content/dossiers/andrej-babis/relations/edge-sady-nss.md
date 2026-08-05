@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Sady CZ — NSS 8/2025 zamítl kasační stížnost: rozhodný je stav v době podání žádosti — Nejvyšší správní soud"
+description = "Sady CZ — NSS 8/2025 zamítl kasační stížnost: rozhodný je stav v době podání žádosti — Nejvyšší správní soud. Vztah v grafu dossieru Andrej Babiš, doložený tvrzeními CLM-65. Záznam…"
 template = "dossier-relation.html"
 weight = 33
 

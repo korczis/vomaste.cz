@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Pavla Pivoňka Vaňková — Pivoňka Vaňková (STAN) podala trestní oznámení kvůli střetu zájmů na MPSV — Trestní oznámení STAN kvůli střetu zájmů na MPSV"
+description = "Pavla Pivoňka Vaňková — Pivoňka Vaňková (STAN) podala trestní oznámení kvůli střetu zájmů na MPSV — Trestní oznámení STAN kvůli střetu zájmů na MPSV. Vztah v grafu dossieru Aleš…"
 template = "dossier-relation.html"
 weight = 10
 

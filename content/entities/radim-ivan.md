@@ -3,6 +3,7 @@
 title = "Radim Ivan"
 template = "entity.html"
 weight = 360
+description = "Kontextová entita — Poslanec ODS; vyzval Mrázovou k rezignaci. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (zuzana-mrazova). Tato stránka…"
 
 [extra]
 generated = true

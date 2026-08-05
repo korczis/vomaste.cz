@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Oto Klempíř — v březnu 2026 odvolal generální ředitelku NGP — Alicja Knastová"
+description = "Oto Klempíř — v březnu 2026 odvolal generální ředitelku NGP — Alicja Knastová. Vztah v grafu dossieru Oto Klempíř, doložený tvrzeními CLM-25. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 8
 

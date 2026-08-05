@@ -3,6 +3,7 @@
 title = "Zdeněk Petzl"
 template = "entity.html"
 weight = 458
+description = "Kontextová entita — Výkonný ředitel AutoSAP; kritika návrhu EK k emisním limitům. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (karel-havlicek)…"
 
 [extra]
 generated = true

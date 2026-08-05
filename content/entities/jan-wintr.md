@@ -3,6 +3,7 @@
 title = "Jan Wintr"
 template = "entity.html"
 weight = 166
+description = "Kontextová entita — Ústavní soudce; odlišné stanovisko k předběžnému opatření. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (jeronym-tejc). Tato…"
 
 [extra]
 generated = true

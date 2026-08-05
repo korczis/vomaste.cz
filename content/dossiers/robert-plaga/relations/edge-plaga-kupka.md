@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Robert Plaga — kritika ODS (Martin Kupka) k plošnému zákazu mobilů ve školách — Martin Kupka"
+description = "Robert Plaga — kritika ODS (Martin Kupka) k plošnému zákazu mobilů ve školách — Martin Kupka. Vztah v grafu dossieru Robert Plaga, doložený tvrzeními CLM-42. Záznam vazby, nikoli…"
 template = "dossier-relation.html"
 weight = 7
 

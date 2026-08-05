@@ -3,6 +3,7 @@
 title = "Central Group"
 template = "entity.html"
 weight = 85
+description = "Kontextová entita — Developerská společnost; její šéf Kunovský komentoval limit 10 000 m² v novele stavebního zákona. Uvedena, protože se jmenovitě objevuje v citovaném obsahu…"
 
 [extra]
 generated = true

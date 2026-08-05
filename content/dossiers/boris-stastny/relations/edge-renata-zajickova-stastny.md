@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Renáta Zajíčková — označila jeho reakci na nález nahrávacího zařízení za bezpečnostní riziko a jeho krizovou komunikaci za pubertální — Boris Šťastný"
+description = "Renáta Zajíčková — označila jeho reakci na nález nahrávacího zařízení za bezpečnostní riziko a jeho krizovou komunikaci za pubertální — Boris Šťastný. Vztah v grafu dossieru Boris…"
 template = "dossier-relation.html"
 weight = 4
 

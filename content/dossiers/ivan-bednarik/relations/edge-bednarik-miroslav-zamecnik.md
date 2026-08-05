@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Ivan Bednárik — zvolen předsedou dozorčí rady Českých drah na stejném jednání, které přijalo jeho rezignaci (2022) — Miroslav Zámečník"
+description = "Ivan Bednárik — zvolen předsedou dozorčí rady Českých drah na stejném jednání, které přijalo jeho rezignaci (2022) — Miroslav Zámečník. Vztah v grafu dossieru Ivan Bednárik, doložený…"
 template = "dossier-relation.html"
 weight = 8
 

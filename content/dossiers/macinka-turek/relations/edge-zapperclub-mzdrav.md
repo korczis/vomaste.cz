@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Zapper-Club s.r.o. — varování před přístrojem zapper — Ministerstvo zdravotnictví"
+description = "Zapper-Club s.r.o. — varování před přístrojem zapper — Ministerstvo zdravotnictví. Vztah v grafu dossieru Petr Macinka a Filip Turek, doložený tvrzeními CLM-31. Záznam vazby, nikoli…"
 template = "dossier-relation.html"
 weight = 29
 

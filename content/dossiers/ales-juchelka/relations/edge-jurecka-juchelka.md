@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Marian Jurečka — poradkyně nastoupila na ministerstvo ještě za předchozího ministra Jurečky, Juchelku vystřídal na resortu — Aleš Juchelka"
+description = "Marian Jurečka — poradkyně nastoupila na ministerstvo ještě za předchozího ministra Jurečky, Juchelku vystřídal na resortu — Aleš Juchelka. Vztah v grafu dossieru Aleš Juchelka…"
 template = "dossier-relation.html"
 weight = 14
 

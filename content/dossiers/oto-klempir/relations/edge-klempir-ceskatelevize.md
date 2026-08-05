@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Oto Klempíř — prosadil přesun financování ČT ze státního rozpočtu (2027) — Česká televize"
+description = "Oto Klempíř — prosadil přesun financování ČT ze státního rozpočtu (2027) — Česká televize. Vztah v grafu dossieru Oto Klempíř, doložený tvrzeními CLM-07. Záznam vazby, nikoli tvrzení o…"
 template = "dossier-relation.html"
 weight = 3
 

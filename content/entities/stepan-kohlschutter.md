@@ -3,6 +3,7 @@
 title = "Štěpán Kohlschütter"
 template = "entity.html"
 weight = 394
+description = "Kontextová entita — Nahradil Mrázovou v zastupitelstvu Bíliny. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (zuzana-mrazova). Tato stránka…"
 
 [extra]
 generated = true

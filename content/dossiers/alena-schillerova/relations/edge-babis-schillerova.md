@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Andrej Babiš — premiér Babiš označil prezidentovo veto novely za nezodpovědné a hájil ji — Alena Schillerová"
+description = "Andrej Babiš — premiér Babiš označil prezidentovo veto novely za nezodpovědné a hájil ji — Alena Schillerová. Vztah v grafu dossieru Alena Schillerová, doložený tvrzeními CLM-40…"
 template = "dossier-relation.html"
 weight = 4
 

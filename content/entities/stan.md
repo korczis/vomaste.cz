@@ -3,6 +3,7 @@
 title = "STAN"
 template = "entity.html"
 weight = 391
+description = "Kontextová entita — Zmíněna jen jako stranická afiliace citovaného Víta Rakušana. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (andrej-babis…"
 
 [extra]
 generated = true

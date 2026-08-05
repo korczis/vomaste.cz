@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Ivan Bednárik — spor o pozemky a reforma úspor (2026) — Správa železnic"
+description = "Ivan Bednárik — spor o pozemky a reforma úspor (2026) — Správa železnic. Vztah v grafu dossieru Ivan Bednárik, doložený tvrzeními CLM-18, CLM-19. Záznam vazby, nikoli tvrzení o…"
 template = "dossier-relation.html"
 weight = 3
 

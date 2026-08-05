@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Igor Červený — šéf komunikace Motoristů jako člen ministrovy delegace v USA, nevyjasněné hrazení cesty — Lukáš Koutník"
+description = "Igor Červený — šéf komunikace Motoristů jako člen ministrovy delegace v USA, nevyjasněné hrazení cesty — Lukáš Koutník. Vztah v grafu dossieru Igor Červený, doložený tvrzeními CLM-18…"
 template = "dossier-relation.html"
 weight = 19
 

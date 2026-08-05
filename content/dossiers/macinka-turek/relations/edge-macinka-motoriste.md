@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Petr Macinka — předseda — Motoristé sobě"
+description = "Petr Macinka — předseda — Motoristé sobě. Vztah v grafu dossieru Petr Macinka a Filip Turek, doložený tvrzeními CLM-03. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 1
 

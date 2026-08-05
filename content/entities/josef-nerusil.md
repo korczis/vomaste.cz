@@ -3,6 +3,7 @@
 title = "Josef Nerušil"
 template = "entity.html"
 weight = 181
+description = "Kontextová entita — Politik SPD; spolu se Sílou vede téma revokace očkovací strategie. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (adam-vojtech)…"
 
 [extra]
 generated = true

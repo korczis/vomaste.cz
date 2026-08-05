@@ -3,6 +3,7 @@
 title = "David Jachnický"
 template = "entity.html"
 weight = 103
+description = "Kontextová entita — Státní zástupce v kauze plakátů SPD. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (tomio-okamura). Tato stránka neobsahuje…"
 
 [extra]
 generated = true

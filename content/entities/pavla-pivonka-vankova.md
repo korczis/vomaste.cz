@@ -3,6 +3,7 @@
 title = "Pavla Pivoňka Vaňková"
 template = "entity.html"
 weight = 333
+description = "Kontextová entita — Místopředsedkyně sněmovního sociálního výboru; podala za STAN trestní oznámení kvůli možnému střetu zájmů na MPSV. Uvedena, protože se jmenovitě objevuje v…"
 
 [extra]
 generated = true

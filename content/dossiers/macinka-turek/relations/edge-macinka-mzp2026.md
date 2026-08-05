@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Petr Macinka — dočasně vede resort (do 2/2026) — Jmenování ministrem ŽP (2026)"
+description = "Petr Macinka — dočasně vede resort (do 2/2026) — Jmenování ministrem ŽP (2026). Vztah v grafu dossieru Petr Macinka a Filip Turek, doložený tvrzeními CLM-24, CLM-40. Záznam vazby…"
 template = "dossier-relation.html"
 weight = 21
 

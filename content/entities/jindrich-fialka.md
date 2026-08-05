@@ -3,6 +3,7 @@
 title = "Jindřich Fialka"
 template = "entity.html"
 weight = 173
+description = "Kontextová entita — Jmenován potravinovým ombudsmanem; ponechal si funkci ředitele sekce potravinářství MZe. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných…"
 
 [extra]
 generated = true

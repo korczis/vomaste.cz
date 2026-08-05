@@ -3,6 +3,7 @@
 title = "Evropský fond pro konkurenceschopnost"
 template = "entity.html"
 weight = 123
+description = "Kontextová entita — Navrhovaný fond EU (návrh nařízení) projednávaný na zasedání Rady COMPET, jehož se Havlíček účastnil. Uvedena, protože se jmenovitě objevuje v citovaném obsahu…"
 
 [extra]
 generated = true

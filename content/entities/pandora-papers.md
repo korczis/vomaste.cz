@@ -3,6 +3,7 @@
 title = "Pandora Papers"
 template = "entity.html"
 weight = 325
+description = "Kontextová entita — Mezinárodní investigativní projekt popisující majetkovou strukturu nákupů nemovitostí ve Francii; navazuje česká větev (NCOZ). Uvedena, protože se jmenovitě…"
 
 [extra]
 generated = true

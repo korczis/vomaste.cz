@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Pekárna Zelená louka (skupina Agrofert) — odnětí stomilionové dotace (2022); EK ji odmítla proplatit — Ministerstvo průmyslu a obchodu"
+description = "Pekárna Zelená louka (skupina Agrofert) — odnětí stomilionové dotace (2022); EK ji odmítla proplatit — Ministerstvo průmyslu a obchodu. Vztah v grafu dossieru Andrej Babiš, doložený…"
 template = "dossier-relation.html"
 weight = 28
 

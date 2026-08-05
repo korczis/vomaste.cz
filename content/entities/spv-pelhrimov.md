@@ -3,6 +3,7 @@
 title = "SPV Pelhřimov"
 template = "entity.html"
 weight = 390
+description = "Kontextová entita — Firma skupiny Agrofert — žalobkyně ve sporu proti rozhodnutím SZIF zamítnutém Městským soudem v Praze 23. 4. 2025. Uvedena, protože se jmenovitě objevuje v…"
 
 [extra]
 generated = true

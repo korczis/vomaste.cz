@@ -3,6 +3,7 @@
 title = "Tomáš Cabal"
 template = "entity.html"
 weight = 402
+description = "Kontextová entita — Podnikatel, spoluvlastník ukrajinské GMR GAS UA LLC vedle Macinky a GMR GAS s.r.o.; žádný zdroj mu nevytýká pochybení. Soukromá osoba jmenovaná obsahem. Uvedena…"
 
 [extra]
 generated = true

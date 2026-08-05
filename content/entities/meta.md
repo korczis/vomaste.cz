@@ -3,6 +3,7 @@
 title = "Meta"
 template = "entity.html"
 weight = 260
+description = "Kontextová entita — Technologická společnost; delegace MŽP s ní v USA jednala o AI pro ochranu životního prostředí. Uvedena, protože se jmenovitě objevuje v citovaném obsahu…"
 
 [extra]
 generated = true

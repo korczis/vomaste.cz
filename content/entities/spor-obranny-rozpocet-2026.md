@@ -3,6 +3,7 @@
 title = "Škrt obranného rozpočtu 2026 a spor o 2 % NATO"
 template = "entity.html"
 weight = 389
+description = "Kontextová entita — Snížení plánovaných obranných výdajů 2026 o 21 miliard a spor o plnění závazku 2 % HDP vůči NATO; klíčová kauza Zůnova působení. Uvedena, protože se jmenovitě…"
 
 [extra]
 generated = true

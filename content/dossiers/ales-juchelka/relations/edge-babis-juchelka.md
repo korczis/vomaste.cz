@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Andrej Babiš — premiér Babiš k případné škodě: „určitě pan ministr podá trestní oznámení“ — Aleš Juchelka"
+description = "Andrej Babiš — premiér Babiš k případné škodě: „určitě pan ministr podá trestní oznámení“ — Aleš Juchelka. Vztah v grafu dossieru Aleš Juchelka, doložený tvrzeními CLM-15. Záznam…"
 template = "dossier-relation.html"
 weight = 2
 

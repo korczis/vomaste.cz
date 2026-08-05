@@ -3,6 +3,7 @@
 title = "Kárim Titz"
 template = "entity.html"
 weight = 192
+description = "Kontextová entita — Brněnský advokát obviněný v bitcoinové kauze (presumpce neviny); soukromá osoba jmenovaná obsahem. Uvedena, protože se jmenovitě objevuje v citovaném obsahu…"
 
 [extra]
 generated = true

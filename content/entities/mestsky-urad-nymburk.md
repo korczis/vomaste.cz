@@ -3,6 +3,7 @@
 title = "Městský úřad Nymburk"
 template = "entity.html"
 weight = 259
+description = "Kontextová entita — Přestupkový orgán řešící majetkové přiznání ministra Červeného. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (igor-cerveny)…"
 
 [extra]
 generated = true

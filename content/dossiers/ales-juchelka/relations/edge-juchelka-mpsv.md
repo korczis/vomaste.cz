@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Aleš Juchelka — Juchelka stojí v čele Ministerstva práce a sociálních věcí — Ministerstvo práce a sociálních věcí ČR"
+description = "Aleš Juchelka — Juchelka stojí v čele Ministerstva práce a sociálních věcí — Ministerstvo práce a sociálních věcí ČR. Vztah v grafu dossieru Aleš Juchelka, doložený tvrzeními CLM-01…"
 template = "dossier-relation.html"
 weight = 5
 

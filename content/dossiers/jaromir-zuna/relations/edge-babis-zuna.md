@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Andrej Babiš — Babiš veřejně kritizoval Zůnovu koncepci armády (32 tisíc vojáků do roku 2040) — Jaromír Zůna"
+description = "Andrej Babiš — Babiš veřejně kritizoval Zůnovu koncepci armády (32 tisíc vojáků do roku 2040) — Jaromír Zůna. Vztah v grafu dossieru Jaromír Zůna, doložený tvrzeními CLM-17. Záznam…"
 template = "dossier-relation.html"
 weight = 2
 

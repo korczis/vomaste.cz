@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Karel Havlíček — Havlíček vedl českou delegaci na jednání Rady EU pro konkurenceschopnost o Dohodě o čistém průmyslu — Dohoda o čistém průmyslu (EU)"
+description = "Karel Havlíček — Havlíček vedl českou delegaci na jednání Rady EU pro konkurenceschopnost o Dohodě o čistém průmyslu — Dohoda o čistém průmyslu (EU). Vztah v grafu dossieru Karel…"
 template = "dossier-relation.html"
 weight = 22
 

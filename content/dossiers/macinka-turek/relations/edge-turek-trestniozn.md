@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Filip Turek — subjekt (oznámení 6/2025, odloženo pro promlčení 5/2026) — Trestní oznámení (2025)"
+description = "Filip Turek — subjekt (oznámení 6/2025, odloženo pro promlčení 5/2026) — Trestní oznámení (2025). Vztah v grafu dossieru Petr Macinka a Filip Turek, doložený tvrzeními CLM-25. Záznam…"
 template = "dossier-relation.html"
 weight = 16
 

@@ -3,6 +3,7 @@
 title = "Gen Digital"
 template = "entity.html"
 weight = 136
+description = "Kontextová entita — Experti společnosti citovaní k důkazní hodnotě screenshotů v kauze smazaných příspěvků (screenshoty nestačí, URL by mohla ověřit Meta). Uvedena, protože se…"
 
 [extra]
 generated = true

@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Ivo Jebousek — pověřen vedením Národní sportovní agentury po odvolání Šebka — Národní sportovní agentura (NSA)"
+description = "Ivo Jebousek — pověřen vedením Národní sportovní agentury po odvolání Šebka — Národní sportovní agentura (NSA). Vztah v grafu dossieru Boris Šťastný, doložený tvrzeními CLM-24. Záznam…"
 template = "dossier-relation.html"
 weight = 9
 

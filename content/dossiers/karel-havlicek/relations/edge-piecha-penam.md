@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Marian Piecha — Náměstek MPO Piecha oznámil odnětí dotace Pekárně Zelená louka a později potvrdil pokračování vymáhání — Pekárna Zelená louka (skupina Agrofert)"
+description = "Marian Piecha — Náměstek MPO Piecha oznámil odnětí dotace Pekárně Zelená louka a později potvrdil pokračování vymáhání — Pekárna Zelená louka (skupina Agrofert). Vztah v grafu dossieru…"
 template = "dossier-relation.html"
 weight = 17
 

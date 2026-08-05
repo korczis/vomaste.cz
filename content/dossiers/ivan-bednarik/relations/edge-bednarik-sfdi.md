@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Ivan Bednárik — prohlášení o rozpočtu a financování SFDI na roky 2026–2029 — Státní fond dopravní infrastruktury (SFDI)"
+description = "Ivan Bednárik — prohlášení o rozpočtu a financování SFDI na roky 2026–2029 — Státní fond dopravní infrastruktury (SFDI). Vztah v grafu dossieru Ivan Bednárik, doložený tvrzeními…"
 template = "dossier-relation.html"
 weight = 21
 

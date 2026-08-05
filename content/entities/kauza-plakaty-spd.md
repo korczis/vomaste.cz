@@ -3,6 +3,7 @@
 title = "Trestní kauza předvolebních plakátů SPD"
 template = "entity.html"
 weight = 210
+description = "Kontextová entita — Nepravomocný rozsudek nad SPD (3 mil. Kč) za plakáty z kampaně 2024; Okamurovo stíhání přerušeno po nevydání Sněmovnou. Osoby z plakátů nikdy neidentifikovat…"
 
 [extra]
 generated = true

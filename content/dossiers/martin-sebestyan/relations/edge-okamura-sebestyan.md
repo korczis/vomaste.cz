@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Tomio Okamura — předseda SPD Okamura hájil Šebestyána proti kritice Transparency International — Martin Šebestyán"
+description = "Tomio Okamura — předseda SPD Okamura hájil Šebestyána proti kritice Transparency International — Martin Šebestyán. Vztah v grafu dossieru Martin Šebestyán, doložený tvrzeními CLM-15…"
 template = "dossier-relation.html"
 weight = 5
 

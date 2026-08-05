@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "James Quick — spojen se sítí právnických osob kolem systému CERD — CERD SYSTEM LLC"
+description = "James Quick — spojen se sítí právnických osob kolem systému CERD — CERD SYSTEM LLC. Vztah v grafu dossieru James Quick, doložený tvrzeními CLM-02. Záznam vazby, nikoli tvrzení o…"
 template = "dossier-relation.html"
 weight = 2
 

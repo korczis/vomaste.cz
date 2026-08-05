@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Nemocnice Na Homolce — provozovatel vozidla záchranné služby — Nehoda 2026"
+description = "Nemocnice Na Homolce — provozovatel vozidla záchranné služby — Nehoda 2026. Vztah v grafu dossieru Petr Macinka a Filip Turek, doložený tvrzeními CLM-18. Záznam vazby, nikoli tvrzení o…"
 template = "dossier-relation.html"
 weight = 25
 

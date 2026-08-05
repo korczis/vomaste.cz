@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Ivan Bednárik — stala se novou členkou představenstva Českých drah po jeho odchodu (2022) — Blanka Havelková"
+description = "Ivan Bednárik — stala se novou členkou představenstva Českých drah po jeho odchodu (2022) — Blanka Havelková. Vztah v grafu dossieru Ivan Bednárik, doložený tvrzeními CLM-43. Záznam…"
 template = "dossier-relation.html"
 weight = 7
 

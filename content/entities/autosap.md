@@ -3,6 +3,7 @@
 title = "Sdružení automobilového průmyslu (AutoSAP)"
 template = "entity.html"
 weight = 78
+description = "Kontextová entita — Oborové sdružení; poziční dokument proti návrhu EK k emisním cílům. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů…"
 
 [extra]
 generated = true
