@@ -77,6 +77,12 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-20"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-42"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-45"
     }
   ],
   "subjects": [

@@ -9,15 +9,18 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
   },
-  "text": "Vojtěch ve Sněmovně uvedl, že „vůbec netušil“, že by kliniky z holdingu spojeného s Babišem prováděly onkologické prohlídky; návrh hájí tím, že impuls přišel od zaměstnavatelských svazů, jde o soukromé peníze firem a nastavení má být nediskriminační s volbou poskytovatele.",
-  "status": "status-quote",
-  "statusLabel": "CITACE",
+  "text": "Vojtěch při ústní interpelaci ve Sněmovně 4. června 2026 na dotaz předsedkyně poslaneckého klubu STAN Michaely Šebelové uvedl: „Věřte nebo ne, já jsem vůbec netušil, že něco takového tyto kliniky dělají“ — reagoval na zjištění, že preventivní prohlídky nabízejí i kliniky FutureLife a ISCARE z holdingu spojeného s Andrejem Babišem; návrh hájil tím, že impuls přišel od zaměstnavatelských svazů, jde o soukromé peníze firem a nastavení má být nediskriminační se svobodnou volbou poskytovatele.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-08"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-44"
     }
   ],
   "subjects": [
