@@ -50,3 +50,18 @@ zmiňuje a který zpravodajství zpravidla nerozlišuje: obžaloba u Ing.
 Babiše vycházela z pomoci ke zločinu dotačního podvodu, odvolací soud
 dospěl k závěru o **spolupachatelství**. Otevřeno a přečteno 2026-08-04
 (PDF).
+
+**Doplněno 2026-08-05 (opravné korroborační kolo):** zdroj byl znovu otevřen
+a přečten a je nově připojen i k **CLM-01**. Dokládá k němu doslovně tři ze čtyř
+jeho složek: že šlo o věc sp. zn. 3 To 34/2024 (obžalovaní Ing. J. Nagyová, Ph.D.
+a Ing. A. Babiš), že napadeným rozhodnutím byl **rozsudek Městského soudu v Praze
+ze dne 14. 2. 2024**, jímž byli obžalovaní zproštěni obžaloby, a že Vrchní soud
+v Praze **dne 23. 6. 2025** tento rozsudek zrušil a věc vrátil soudu I. stupně.
+Oba dosavadní zdroje CLM-01 — [SRC-01](@/dossiers/andrej-babis/sources/src-01.md)
+a [SRC-27](@/dossiers/andrej-babis/sources/src-27.md) — nesou rodinu `ctk`,
+tedy dvě vydání téže agenturní zprávy; tímto primárním dokumentem soudu přibývá
+druhá nezávislá rodina a CLM-01 přechází na stav `CORROBORATED`.
+**Limit, který tím nezaniká:** tisková zpráva **nikde neuvádí, že šlo o druhé
+zrušení** zprošťujícího verdiktu v této kauze — tuto část tvrzení dokládají dál
+jen citované zpravodajské zdroje, což CLM-01 samo přiznává formulací „podle
+citovaného zdroje".

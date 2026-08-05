@@ -10,14 +10,20 @@
     "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
   },
   "text": "Testování mělo probíhat od 11. května do 5. června 2026 a kombinovalo vědomostní testy z českého jazyka a matematiky s dotazníkem zjišťujícím socioekonomický status a duševní pohodu žáků.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-02"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-36"
     }
   ],
   "subjects": [

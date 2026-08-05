@@ -3639,7 +3639,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: karel-havlicek, andrej-babis
 - Claims: CLM-05, CLM-07, CLM-08, CLM-19, CLM-21, CLM-22, CLM-25, CLM-27, CLM-55, CLM-57, CLM-58
-- Sources: SRC-02, SRC-04, SRC-05, SRC-11, SRC-12, SRC-13, SRC-14, SRC-15, SRC-34, SRC-35, SRC-36, SRC-37 (11 independent source families)
+- Sources: SRC-02, SRC-04, SRC-05, SRC-11, SRC-12, SRC-13, SRC-14, SRC-15, SRC-34, SRC-35, SRC-36, SRC-37 (12 independent source families)
 - Relations: 
   - edge-agrofert-penam (agrofert -> penam-zelena-louka, "Agrofert k obžalobě opakovaně uvedl, že jeho dceřiná společnost postupovala v souladu se zákonem", dossier: karel-havlicek)
   - edge-basny-penam (adam-basny -> penam-zelena-louka, "Evropský pověřený žalobce Bašný (EPPO) podal obžalobu na Pekárnu Zelená louka a dvě fyzické osoby", dossier: karel-havlicek)
