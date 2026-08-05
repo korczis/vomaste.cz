@@ -3,8 +3,8 @@
   "@context": "https://vomaste.cz/context/v1.jsonld", "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-04", "@type": "vomaste:Source", "recordType": "source", "identifier": "SRC-04",
   "dossier": { "@id": "https://vomaste.cz/id/dossiers/james-quick" },
   "title": "SRC-04 — HN: Centrální registr dlužníků klame lidi", "description": "Článek Hospodářských novin z roku 2015 o uznávání výpisů CERD a korporátním uspořádání služby.",
-  "outlet": "Hospodářské noviny", "sourceFamily": "economia", "sourceType": "redakční reportáž",
+  "outlet": "Hospodářské noviny", "sourceType": "redakční reportáž",
   "url": "https://archiv.hn.cz/c1-64468360-centralni-registr-dluzniku-klame-lidi-jeho-dokumenty-banky-neuznavaji-urady-na-nej-ale-nemuzou", "published": "2015-08-18", "retrieved": "2026-08-05",
   "claims": [{ "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-04" }], "subjects": ["james-quick"],
-  "content": [{ "type": "markdown", "value": "Nezávislá redakční reportáž popisuje dobový stav soukromého registru, pohled bank a zahraniční korporátní vazbu. Článek sám upozorňuje, že roli Jiřího Jehličky považuje redakce za zřejmou, ale tehdy nebyla úředně prokázána. Tuto hranici dossier zachovává a netvrdí více, než zdroj skutečně doložil." }], "order": 4
+  "content": [{ "type": "markdown", "value": "Nezávislá redakční reportáž popisuje dobový stav soukromého registru, pohled bank a zahraniční korporátní vazbu. Článek sám upozorňuje, že roli Jiřího Jehličky považuje redakce za zřejmou, ale tehdy nebyla úředně prokázána. Tuto hranici dossier zachovává a netvrdí více, než zdroj skutečně doložil. Pozor na ověřitelnost: archivní verze je za paywallem a anonymnímu čtenáři se zobrazí jen část textu — ověřená byla úvodní, veřejně přístupná pasáž (neuznávání výpisů finančními institucemi a registrace provozující firmy v USA); zbytek článku nebyl přímo otevřen a nesmí být podkladem dalších tvrzení." }], "order": 4
 }

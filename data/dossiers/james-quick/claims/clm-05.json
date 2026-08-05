@@ -7,7 +7,7 @@
   "recordType": "claim",
   "identifier": "CLM-05",
   "dossier": { "@id": "https://vomaste.cz/id/dossiers/james-quick" },
-  "text": "ČT24 v červnu 2011 popsala domény připomínající názvy státních orgánů, které přesměrovávaly na CERD; Jiří Jehlička jako zástupce provozovatele uvedl, že domény byly řádně zakoupeny a provozovatel pro ně zatím nenašel jiné využití.",
+  "text": "ČT24 v dubnu 2011 popsala domény připomínající názvy státních orgánů, které přesměrovávaly na CERD; Jiří Jehlička jako zástupce provozovatele uvedl, že domény byly řádně zakoupeny a provozovatel pro ně zatím nenašel jiné využití.",
   "status": "status-quote",
   "statusLabel": "CITACE",
   "sources": [{ "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-05" }],

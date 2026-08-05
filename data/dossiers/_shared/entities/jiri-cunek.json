@@ -1,7 +1,0 @@
-{
-  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json", "schemaVersion": 1, "@context": "https://vomaste.cz/context/v1.jsonld",
-  "@id": "https://vomaste.cz/id/entities/jiri-cunek", "@type": "vomaste:Entity", "recordType": "entity", "identifier": "jiri-cunek", "entityId": "jiri-cunek",
-  "title": "Jiří Čunek", "entityType": "person", "role": "senátor a bývalý vicepremiér", "publicationRole": "context", "dossierEnabled": false, "dossierStatus": "not_authorized", "coverageState": "contextual", "dossiers": ["james-quick"], "order": 520,
-  "provenance": { "discoveredAt": "2026-08-05", "discoveredVia": ["edge-james-quick-jiri-cunek"], "claimRefs": ["CLM-07"], "sourceRefs": ["SRC-07"], "cluster": "verejna-oznameni", "depth": 1 },
-  "content": [{ "type": "markdown", "value": "Kontextová veřejná osoba uvedená ve zprávě ČT24 mezi politiky, vůči jejichž kauzám Jiří Jehlička podal trestní oznámení. Záznam sám nepopisuje výsledek Čunkovy věci ani osobní či obchodní vazbu." }]
-}
