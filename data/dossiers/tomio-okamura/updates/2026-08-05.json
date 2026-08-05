@@ -10,20 +10,36 @@
     "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
   },
   "date": "2026-08-05",
-  "summary": "Opravné korroborační kolo (T-058): CLM-25 povýšeno zpět na CORROBORATED na základě oficiálního záznamu 90. hlasování 128. schůze Poslanecké sněmovny z 12. 2. 2025 (SRC-28), primárního zdroje nezávislého na rodině ctk. CLM-01 a CLM-02 zůstávají na 1 ZDROJ — veškeré volně čitelné zpravodajství o rozsudku Obvodního soudu pro Prahu 1 z 3. 6. 2026 se ukázalo být vydáním téže zprávy ČTK a jediné doložitelně vlastní zpravodajství (Deník N) je za paywallem. — Druhé kolo téhož dne: CLM-28 a CLM-29 povýšeny na CORROBORATED primárním parlamentním záznamem (SRC-29): 11. schůze, 9. hlasování z 5. 3. 2026, přítomno 186, pro 104, proti 82, zdrželo se 0. Dosavadní zdroje obou tvrzení — ČT24 (SRC-19) a Romea.cz (SRC-20) — patří oba do rodiny ctk, šlo tedy o jediné doložení. Klubové rozpisy výpisu dokládají i druhou půlku CLM-29: pro hlasovaly všechny přítomné kluby vládní většiny bez jediného zdržení (ANO 77, SPD 14, Motoristé sobě 13 = 104), a stenoprotokol 11. schůze doslovně nese usnesení mandátového a imunitního výboru č. 21 ze 17. 2. 2026, jímž výbor navrhl vyslovit s vydáním nesouhlas. Ověřena i číselná shoda s hlasováním o vydání Andreje Babiše téhož večera (rovněž 186 přítomných, 104 pro): jde o dvě různá hlasování — Babiš G=86779 (104 : 81), Okamura G=86781 (104 : 82) —, nikoli o záměnu v datech. — Třetí kolo téhož dne: CLM-26 (klubové rozložení hlasování z 12. 2. 2025) povýšeno na CORROBORATED bez nového výzkumu; primární výpis SRC-28 byl v datasetu už od T-058, ale visel jen u CLM-25. Klubové rozpisy dokládají tvrzení doslova: pro ODS 26, STAN 25, TOP 09 13, KDU-ČSL 12, Piráti 4, nezařazený Ivo Vondrák 1 = 81; proti ANO 43 a SPD 19 = 62.",
-  "addedClaims": [],
+  "summary": "Dvě kola korroborace téhož dne, sloučená do jednoho záznamu. (1) Opravné kolo T-058: CLM-25 povýšeno na CORROBORATED oficiálním záznamem 90. hlasování 128. schůze Sněmovny z 12. 2. 2025 (SRC-28); CLM-01 a CLM-02 zůstávají na 1 ZDROJ — veškeré volně čitelné zpravodajství o rozsudku Obvodního soudu pro Prahu 1 z 3. 6. 2026 se ukázalo být vydáním téže zprávy ČTK a jediné doložitelně vlastní zpravodajství (Deník N) je za paywallem. (2) Kolo primárních dokumentů T-066: dohledány parlamentní a legislativní prameny, které zpravodajství rodiny ctk doplňují o druhého nezávislého vydavatele — oficiální záznam 9. hlasování 11. schůze z 5. 3. 2026 (SRC-29), stenozáznam téže schůze s doslovným zněním usnesení mandátového a imunitního výboru č. 21 ze 17. 2. 2026 (SRC-30), stenozáznam průběhu obou hlasování (SRC-31) a znění § 356 trestního zákoníku účinné v době skutku z e-Sbírky (SRC-32). Obě kola nezávisle na sobě otevřela týž hlasovací záznam (psp.cz/sqw/hlasy.sqw?G=86781) — vede se jako jeden zdroj SRC-29, táž URL není druhý hlas. Na CORROBORATED povýšeno CLM-21, CLM-23, CLM-24, CLM-26, CLM-27, CLM-28 a CLM-29; přibylo CLM-36 (spisová značka 1 T 95/2025 a právní kvalifikace obžaloby). Proti primárním dokumentům opraveno: CLM-28 (hlasovalo se o usnesení vyslovujícím NESOUHLAS, 82 hlasů bylo proti tomuto usnesení, ne „pro vydání“), CLM-23 (obžaloba klade za vinu účel prezentace plakátů Okamurou, ne vlastnost obsahu plakátů), CLM-24 (sazba se zvyšuje i při spáchání „jiným obdobně účinným způsobem“; sazby jsou shodné ve znění z roku 2024 i ve znění od 1. 1. 2026, ač se skutková podstata mezitím změnila), CLM-21 a CLM-27 (rozliší se, co dokládá primární dokument a co jen zpravodajství), CLM-26 a CLM-29 (doplněny přesné klubové počty z hlasovacích záznamů). Ověřena i číselná shoda s hlasováním o vydání Andreje Babiše téhož večera (rovněž 186 přítomných, 104 pro): jde o dvě různá hlasování — Babiš G=86779 (104 : 81), Okamura G=86781 (104 : 82) —, nikoli o záměnu v datech. GAP-03 z části uzavřena — citovaný paragraf doložen, doslovné znění výroku rozsudku dál chybí. Ostatních sedm mezer zůstává otevřených s datem opakované kontroly 2026-08-05 a s upřesněním, co konkrétně chybí. CLM-01, CLM-02, CLM-30, CLM-31 a CLM-32 zůstávají na 1 ZDROJ — primární doklad k rozsudku ze 3. 6. 2026 ani k přerušení stíhání se dohledat nepodařilo (InfoSoud je javascriptová aplikace bez veřejného detailu řízení, Deník N je za paywallem, iROZHLAS vrací 403).",
+  "addedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-36"
+    }
+  ],
   "updatedClaims": [
     {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-21"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-23"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-24"
+    },
+    {
       "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-25"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-26"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-27"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-28"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-29"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-26"
     }
   ],
   "addedGaps": [],
@@ -34,6 +50,15 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-29"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-30"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-31"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-32"
     }
   ]
 }

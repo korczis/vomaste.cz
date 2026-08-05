@@ -9,15 +9,18 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
   },
-  "text": "Podle obžaloby měl obsah dvou předvolebních plakátů z kampaně před krajskými a senátními volbami roku 2024 „vzbuzovat či posilovat negativní emoce nenávistného charakteru vůči migrantům negroidní rasy a romskému etniku“; jde o formulaci obžaloby.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "text": "Podle skutkové věty obžaloby, jak ji doslovně cituje usnesení sněmovního mandátového a imunitního výboru, měl Tomio Okamura v průběhu roku 2024 v rámci předvolební kampaně SPD do zastupitelstev krajů a senátních voleb osobně prezentovat dva plakáty „prostřednictvím vzbuzení nebo posílení negativních emocí nenávistného charakteru vůči migrantům negroidní rasy a romskému etniku na území České republiky“; jde o formulaci obžaloby, nikoli o zjištění soudu.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-16"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-17"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-30"
     }
   ],
   "subjects": [
@@ -29,5 +32,6 @@
       "type": "markdown",
       "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/tomio-okamura/_index.md#registr-tvrzeni)."
     }
-  ]
+  ],
+  "checkedAt": "2026-08-05"
 }

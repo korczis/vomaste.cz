@@ -9,7 +9,7 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar"
   },
-  "text": "Prezident NKÚ Miloslav Kala v oficiální tiskové zprávě úřadu uvedl: „Zajištění bezpečnosti jedné důležité státní instituce by nemělo probíhat na úkor jiné,“ a NKÚ v ní žádá vládu o přehodnocení rozhodnutí a nové jednání, protože podle úřadu padlo bez předchozí konzultace či připomínkového řízení.",
+  "text": "Prezident NKÚ Miloslav Kala v oficiální tiskové zprávě úřadu uvedl: „Posílení ochrany jedné významné státní instituce by nemělo probíhat na úkor jiné. Bezpečnostní rizika se mohou měnit a nelze je posuzovat pouze podle aktuální situace. Rozhodnutí vlády považujeme za útok na nezávislou instituci, která svými kontrolami znepříjemňuje život úředníkům státu,“ a NKÚ v téže zprávě uvedl, že požádá vládu o přehodnocení přijatého rozhodnutí a o zahájení jednání o řešení, které zajistí ochranu sídla ČNB, aniž by oslabilo bezpečnost a fungování NKÚ",
   "status": "status-quote",
   "statusLabel": "CITACE",
   "sources": [
@@ -24,7 +24,8 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/lubomir-metnar/_index.md#registr-tvrzeni)."
+      "value": "**Opraveno 2026-08-05 proti primárnímu dokumentu.** Původní znění citovalo Kalu takto: „Zajištění bezpečnosti jedné důležité státní instituce by nemělo probíhat na úkor jiné.“ V oficiální tiskové zprávě NKÚ ([SRC-09](@/dossiers/lubomir-metnar/sources/src-09.md)) ale citovaná věta zní: „**Posílení ochrany** jedné **významné** státní instituce by nemělo probíhat na úkor jiné.“ Šlo o nepřesně reprodukovaný přímý citát; opraveno na doslovné znění a doplněn zbytek výroku, který za ním v tiskové zprávě následuje.\n\nOpravena i časová rovina: tisková zpráva uvádí, že úřad vládu o přehodnocení **požádá** (budoucí čas), ne že už žádá.\n\n**Co to je.** Přímý, atribuovaný výrok jedné strany sporu — hodnocení, ne zjištění tohoto webu ani zjištěné pochybení kohokoli."
     }
-  ]
+  ],
+  "checkedAt": "2026-08-05"
 }

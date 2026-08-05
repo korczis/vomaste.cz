@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-13",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-13",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar"
+  },
+  "title": "SRC-13 — NKÚ, Sídlo NKÚ: „Za kolik?“",
+  "description": "Vlastní údaje NKÚ o nákladech na stavbu nového sídla v pražských Holešovicích — 914 mil. Kč včetně DPH při předpokládané ceně 940 mil. Kč.",
+  "outlet": "Nejvyšší kontrolní úřad (nku.cz)",
+  "sourceType": "primární / oficiální údaje úřadu",
+  "url": "https://www.nku.cz/cz/pro-media/sidlo-nku/za-kolik-stavime/",
+  "retrieved": "2026-08-05",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-24"
+    }
+  ],
+  "subjects": [
+    "metnar"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Vlastní informační stránka NKÚ k financování stavby nového sídla. Doslovně uvádí: „Náklady na stavbu nového sídla Nejvyššího kontrolního úřadu dosáhly částky 914 milionů korun. Uvedená částka zahrnuje daň z přidané hodnoty ve výši 21 %, což znamená, že ve vztahu k bilanci státního rozpočtu je reálný dopad výdajů o hodnotu DPH nižší. Předpokládaná cena stavby byla stanovena na 940 milionů korun. Tato částka vycházela z odborného posudku, který zpracovali experti z Českého vysokého učení technického.“ Stránka dále uvádí, že plánované výdaje schválil svými usneseními rozpočtový výbor Poslanecké sněmovny a ministerstvo financí je zařadilo do střednědobého výhledu, a odkazuje ke stažení mj. usnesení vlády č. 497/2016 k použití nároků z nespotřebovaných výdajů na zabezpečení sídla NKÚ.\n\n**Poznámka k přesnosti a limitům.** Zdroj je primární, ale je to **vyjádření dotčeného úřadu o sobě samém** — ne nezávislé ověření. Dokládá celkovou částku a předpokládanou cenu; **neuvádí** rozdělení financování mezi státní rozpočet a vlastní úspory úřadu, a tedy ani žádnou „třetinu“. Údaj „třetina z celkových 690 milionů korun“ z reportáže Seznam Zpráv ([SRC-02](@/dossiers/lubomir-metnar/sources/src-02.md)) se s touto stránkou nesrovnává ani v celkové částce; rozpor je zaznamenán, ne vyřešen — viz [CLM-24](@/dossiers/lubomir-metnar/claims/clm-24.md) a [GAP-13](@/dossiers/lubomir-metnar/gaps/gap-13.md). Stránka neuvádí datum publikace ani poslední aktualizace, proto zde není vyplněno pole `published`.\n\nZdroj otevřen a přečten v celém rozsahu 2026-08-05."
+    }
+  ],
+  "order": 13
+}

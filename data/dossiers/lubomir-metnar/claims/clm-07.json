@@ -9,12 +9,12 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar"
   },
-  "text": "Stejnou policejní ochrannou službu, jakou má dosud NKÚ, využívají také Úřad vlády, ministerstva, Poslanecká sněmovna a Senát.",
+  "text": "Usnesení vlády č. 1604/2008 zařadilo mezi objekty s nárokem na policejní ochrannou službu sídelní objekty prezidenta republiky, Parlamentu, Ústavního soudu, ministerstev zahraničních věcí a vnitra, Úřadu vlády, Nejvyššího kontrolního úřadu, Bezpečnostní informační služby v Praze, Národního bezpečnostního úřadu, Úřadu pro zahraniční styky a informace a Policejního prezidia ČR; policejní ochranu čerpají i některé objekty letiště v pražské Ruzyni a v roce 2017 vláda seznam rozšířila o sídla NÚKIB",
   "status": "status-single",
   "statusLabel": "1 ZDROJ",
   "sources": [
     {
-      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-02"
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-08"
     }
   ],
   "subjects": [
@@ -24,7 +24,8 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/lubomir-metnar/_index.md#registr-tvrzeni)."
+      "value": "**Opraveno 2026-08-05 proti primárnímu dokumentu.** Původní znění tohoto tvrzení bylo: „Stejnou policejní ochrannou službu, jakou má dosud NKÚ, využívají také Úřad vlády, ministerstva, Poslanecká sněmovna a Senát.“ Vycházelo z volné formulace v reportáži Seznam Zpráv ([SRC-02](@/dossiers/lubomir-metnar/sources/src-02.md)).\n\nČTK po zveřejnění usnesení Úřadem vlády ([SRC-08](@/dossiers/lubomir-metnar/sources/src-08.md), 30. 7. 2026) vyjmenovala obsah seznamu konkrétně. Rozdíl je věcný, ne stylistický: chráněna jsou sídla **ministerstev zahraničních věcí a vnitra**, nikoli ministerstev obecně, a seznam mluví o **sídelních objektech Parlamentu**, ne zvlášť o Poslanecké sněmovně a Senátu. Zároveň obsahuje instituce, které původní formulace vůbec nezmiňovala (Ústavní soud, BIS, NBÚ, ÚZSI, Policejní prezidium, letiště Ruzyně).\n\n**Proč zůstává 1 ZDROJ.** [SRC-02](@/dossiers/lubomir-metnar/sources/src-02.md) byl z tohoto tvrzení odebrán — nedokládá opravené znění, dokládá to nepřesné. Zbývá tedy jediné doložení. Samotné úplné znění usnesení č. 1604/2008 ve znění pozdějších změn není veřejné — viz [GAP-14](@/dossiers/lubomir-metnar/gaps/gap-14.md)."
     }
-  ]
+  ],
+  "checkedAt": "2026-08-05"
 }

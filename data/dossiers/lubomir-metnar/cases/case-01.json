@@ -10,10 +10,10 @@
     "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar"
   },
   "title": "Návrh ukončit policejní ochranu Nejvyššího kontrolního úřadu",
-  "summary": "Ministerstvo vnitra navrhuje ukončit policejní ochranu NKÚ; Metnar to odůvodňuje bezpečnostní analýzou, prezident NKÚ v tom vidí tlak na nezávislou instituci.",
+  "summary": "Ministerstvo vnitra navrhlo ukončit policejní ochranu NKÚ a vláda návrh 27. 7. 2026 usnesením schválila; Metnar krok odůvodňuje bezpečnostní analýzou policie, NKÚ v něm vidí tlak na nezávislou instituci a žádá vládu o přehodnocení.",
   "period": "2026",
-  "status": "status-disputed",
-  "statusLabel": "Návrh, bez rozhodnutí",
+  "status": "status-single",
+  "statusLabel": "Vláda rozhodla 27. 7. 2026, NKÚ žádá přehodnocení",
   "anchor": "kauza-ochrana-nku",
   "claims": [],
   "sources": [],
@@ -23,7 +23,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu\ndossieru](@/dossiers/lubomir-metnar/_index.md#kauza-ochrana-nku)."
+      "value": "Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu\ndossieru](@/dossiers/lubomir-metnar/_index.md#kauza-ochrana-nku).\n\n**Procesní stav k 2026-08-05**: usnesení vlády přijato 27. 7. 2026 ([CLM-26](@/dossiers/lubomir-metnar/claims/clm-26.md), [CLM-29](@/dossiers/lubomir-metnar/claims/clm-29.md)); NKÚ požádal vládu o přehodnocení ([CLM-28](@/dossiers/lubomir-metnar/claims/clm-28.md)). O žádosti nebylo k datu poslední kontroly rozhodnuto. Přijetí usnesení není zjištěním, že je rozhodnutí správné, a nesouhlas dotčeného úřadu není zjištěním, že je chybné."
     }
   ],
   "order": 1

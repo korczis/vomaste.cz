@@ -14,4 +14,6 @@ record_type = "claim"
 lang = "cs"
 clm_id = "CLM-12"
 +++
-Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/lubomir-metnar/_index.md#registr-tvrzeni).
+**Povýšeno 2026-08-05.** ČTK ve zprávě z 30. 7. 2026 sama uvádí: „O návrhu ministerstva vnitra informoval ve středu server Seznam Zprávy“ ([SRC-08](@/dossiers/lubomir-metnar/sources/src-08.md)). To je doložení prvenství od vydavatele mimo seznamovou linii, nikoli další převzetí téhož textu. Věta o nesamostatnosti přebírek byla z textu tvrzení odstraněna, protože pro toto konkrétní tvrzení už neplatí.
+
+**Co to není.** Tvrzení se týká pouze pořadí publikace, ne obsahu ani správnosti reportáže.
