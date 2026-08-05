@@ -3,7 +3,7 @@
 title = "Jana Kotalíková"
 template = "entity.html"
 weight = 168
-description = "Kontextová entita — Vedoucí Úřadu vlády 17. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+description = "Kontextová entita — Vedoucí Úřadu vlády 17. 12. 2021 – 31. 10. 2025 dle úředního přehledu; okrajová kontextová zmínka."
 
 [extra]
 generated = true
