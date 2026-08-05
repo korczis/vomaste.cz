@@ -9,15 +9,18 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
   },
-  "text": "Státní zástupce Úřadu evropského veřejného žalobce Adam Bašný podal 22. června 2026 ke Krajskému soudu v Praze obžalobu na společnost Pekárna Zelená louka a dvě fyzické osoby pro dotační podvod a poškození finančních zájmů EU; Národní centrála proti organizovanému zločinu předtím zajistila nemovitosti pekárny v hodnotě zhruba 98 milionů korun. Obžaloba není rozhodnutí o vině — o té teprve rozhodne soud",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "text": "Úřad evropského veřejného žalobce (EPPO) podal 22. června 2026 ke Krajskému soudu v Praze obžalobu na dvě fyzické osoby a jednu společnost pro dotační podvod za 4,1 milionu eur (100 milionů Kč) u projektu inovační linky na nové druhy toustového chleba; podle tiskové zprávy EPPO zajistil majetek včetně nemovitostí této společnosti již dříve sám úřad. Citované zpravodajství navíc jmenuje evropského pověřeného žalobce Adama Bašného i společnost Pekárna Zelená louka, uvádí hodnotu zajištěných nemovitostí zhruba 98 milionů korun a zajištění připisuje Národní centrále proti organizovanému zločinu — tisková zpráva EPPO nic z toho neuvádí. Obžaloba není rozhodnutí o vině — o té teprve rozhodne soud",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-34"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-35"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-74"
     }
   ],
   "subjects": [],

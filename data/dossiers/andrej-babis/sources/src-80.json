@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-80",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-80",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-80 — Nejvyšší správní soud: rozsudek č. j. 8 Afs 215/2024-74 (Moravskoslezský kraj proti Ministerstvu pro místní rozvoj)",
+  "description": "Plné znění rozsudku NSS č. j. 8 Afs 215/2024-74 z 11. 12. 2025 ve vyhledávači rozhodnutí NSS: kasační stížnost Moravskoslezského kraje zamítnuta; spornou částkou byla neproplacená část dotace 440 698,14 Kč, nikoli 43 milionů korun uváděných ve zpravodajství.",
+  "outlet": "Nejvyšší správní soud",
+  "sourceFamily": "nssoud",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vyhledavac.nssoud.cz/DokumentOriginal/Index/747815",
+  "published": "2025-12-11",
+  "retrieved": "2026-08-05",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-68"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Primární dokument soudu — plné znění rozsudku** Nejvyššího správního soudu\nč. j. **8 Afs 215/2024-74**, vydaného „V Brně 11. prosince 2025\", senát ve složení\nJitka Zavřelová (předsedkyně), Jan Kratochvíl a Petr Mikeš. Žalobce: Moravskoslezský\nkraj; žalovaný: Ministerstvo pro místní rozvoj. Dokument dohledán v úředním\nvyhledávači rozhodnutí NSS (jediný záznam k datu 11. 12. 2025 obsahující slovo\n„AGROFERT\" i „NAVOS FARM TECHNIC\") a přečten celý 2026-08-05.\n\n**Co dokládá doslovně.** Výrok: „**I. Kasační stížnost se zamítá.**\" Skutkový základ\n(bod [2]): žalovaný poskytl kraji v roce 2017 dotaci na projekt „Budova dílen pro\nobor Opravář zemědělských strojů ve Střední odborné škole Bruntál\"; předmětem\nveřejné zakázky malého rozsahu „bylo dodání traktoru a vlečky pro výcvik autoškoly\"\na kraj 21. 8. 2018 uzavřel se společností **NAVOS FARM TECHNIC s. r. o.** kupní\nsmlouvu „ve výši 1 703 075 Kč vč. DPH\". Bod [3]: žalovaný informoval kraj\n„o identifikaci nezpůsobilých výdajů v celkové výši **489 664,60 Kč**, resp. o tom,\nže mu nebude proplacena část dotace ve výši **440 698,14 Kč**\". Klíčový závěr\n(bod [56]): „**správní orgány i městský soud dospěly ke správnému závěru, že\ndodavatel byl ovládán Ing. Andrejem Babišem, který byl v době zadání i splnění\nzakázky veřejným funkcionářem. To pro stěžovatele znamená, že nemohl dodavateli\nzadat zakázku malého rozsahu. Jelikož tak učinil, porušil § 4b zákona o střetu\nzájmů.**\"\n\n**Nezávislost:** rozhodnutí samotného soudu, ne převzatá agenturní zpráva. Dosavadní\nzdroje CLM-68 — [SRC-46](@/dossiers/andrej-babis/sources/src-46.md) (ČeskéNoviny.cz)\na [SRC-47](@/dossiers/andrej-babis/sources/src-47.md) (Echo24) — nesou oba rodinu\n`ctk`; tímto dokumentem přibývá druhá nezávislá rodina i druhý vydavatel a CLM-68\npřechází na `CORROBORATED`.\n\n**Poznámka k přesnosti a limitům.** Rozsudek je rozhodnutí ve **správním soudnictví**\no proplacení dotace a o zákazu zadat zakázku malého rozsahu — **není rozhodnutím\no trestní odpovědnosti** kohokoli a nevyslovuje se k ní. Dvě opravy proti dosavadnímu\nznění tvrzení, provedené 2026-08-05 ve prospěch dokumentu:\n\n1. **Částka.** Tvrzení uvádělo, že ministerstvo odmítlo proplatit „dotace za více než\n   43 milionů korun\". V rozsudku se žádná taková částka nevyskytuje; spornou sumou je\n   **440 698,14 Kč** neproplacené části dotace (nezpůsobilé výdaje 489 664,60 Kč).\n   Údaj 43 milionů pochází z téhož článku ČTK, kde se ovšem vztahuje k jinému faktu —\n   k **souhrnu** dotací firmám z Agrofertu, které Ministerstvo pro místní rozvoj\n   v roce 2023 ohlásilo jako neproplácené či vymáhané zpět. Ověřeno i tím, že\n   vyhledávač NSS nezná k 11. 12. 2025 žádné jiné rozhodnutí zmiňující AGROFERT.\n2. **Citace.** Zpravodajství větu z bodu [56] uvedlo s vloženými závorkami\n   „dodavatel **(Navos Farm Technic)** byl ovládán…\" a „pro stěžovatele\n   **(Moravskoslezský kraj)**\". Rozsudek závorky neobsahuje — jsou redakčním\n   doplňkem ČTK. Tvrzení nyní cituje větu tak, jak stojí v rozsudku, včetně\n   pokračování o veřejném funkcionáři.\n\n**Co dokument nedokládá:** obchodní firmu píše velkými písmeny („NAVOS FARM TECHNIC\ns. r. o.\"), nikoli v podobě „Navos Farm Technic\" užívané zpravodajstvím; příslušnost\ndodavatele ke skupině Agrofert konstatuje jen převzatě z rozhodnutí správních orgánů\n(bod [3]). Rozsudek rovněž uvádí, že proti němu nejsou opravné prostředky přípustné."
+    }
+  ],
+  "order": 80
+}

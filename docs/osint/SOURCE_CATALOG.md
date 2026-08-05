@@ -65,17 +65,17 @@ Odpovídá na otázku „kam se podívat a čemu z toho věřit". Publikovaná p
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 660 záznamů v 108 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 664 záznamů v 112 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
 | ctk | 290 | 21 | [ano](/zdroje/ctk/) |
-| seznam-zpravy | 34 | 13 | [ano](/zdroje/seznam-zpravy/) |
+| seznam-zpravy | 35 | 13 | [ano](/zdroje/seznam-zpravy/) |
 | Poslanecká sněmovna Parlamentu ČR | 30 | 15 | [ano](/zdroje/psp-cz/) |
 | Vláda České republiky (vlada.gov.cz) | 23 | 17 | [ano](/zdroje/vlada-cz/) |
 | FORUM 24 | 19 | 9 | — |
 | denik-n | 16 | 9 | [ano](/zdroje/denik-n/) |
-| ČT24 (Česká televize) | 15 | 7 | [ano](/zdroje/ceska-televize/) |
+| ČT24 (Česká televize) | 14 | 7 | [ano](/zdroje/ceska-televize/) |
 | Echo24 | 13 | 9 | — |
 | denik-cz | 11 | 6 | — |
 | Aktuálně.cz | 11 | 6 | — |
@@ -115,7 +115,10 @@ Dopočítáno z `data/dossiers/**/sources/**`, 660 záznamů v 108 rodinách/out
 | Pražský deník | 2 | 1 | — |
 | Registr lobbování (RELOB) | 2 | 1 | — |
 | Ústavní soud ČR | 2 | 2 | — |
+| ct24 | 1 | 1 | [ano](/zdroje/ceska-televize/) |
+| eppo | 1 | 1 | — |
 | idnes-dividenda-2026-07 | 1 | 1 | — |
+| nssoud | 1 | 1 | — |
 | ACRI — Asociace podniků českého železničního průmyslu | 1 | 1 | — |
 | Agrofert (agrofert.cz) | 1 | 1 | — |
 | AutoRevue.cz | 1 | 1 | — |
@@ -177,6 +180,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 660 záznamů v 108 rodinách/out
 | Zdopravy.cz | 1 | 1 | — |
 | Život v Česku | 1 | 1 | — |
 | smlouvy-gov-cz | 1 | 1 | [ano](/zdroje/registr-smluv/) |
+| usoud | 1 | 1 | — |
 
 ## Chybí popis
 
