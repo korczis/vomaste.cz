@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /*
  * Post-build check for the JSON-LD emitted by templates/partials/jsonld.html.
- * Must run after `zola build`. Three jobs:
+ * Must run after `zola build`. Five jobs:
  *
  * 1. Every `application/ld+json` block in public/ parses as valid JSON.
  * 2. No block anywhere contains truth-adjudicating markup — no ClaimReview,
@@ -15,6 +15,18 @@
  *    emits none; required fields per @type are present.
  * 4. Citation identity: a Claim's `appearance` is exactly the sources that
  *    claim declares, resolved inside its own dossier — no foreign records.
+ * 5. Page coverage: every built page carries at least one JSON-LD block.
+ *    Zola alias redirects (documents whose whole job is an http-equiv
+ *    refresh) are the only exemption — see REDIRECT_RE below.
+ *
+ *    NOTE on what job 5 does and does not promise: it guarantees every page
+ *    is machine-readable AS A PAGE (WebPage/CollectionPage/ProfilePage +
+ *    breadcrumbs + nav). It does NOT mean every record type has a node
+ *    describing the RECORD. Today only claims (Claim), sources (citation
+ *    node) and entity dossier mains (Person) do; case, gap, relation and
+ *    entity pages carry page scaffolding only. Their machine-readable form
+ *    lives in the /data/*.jsonld exports (build-jsonld-exports.mjs), not in
+ *    the page. Closing that is a modelling decision, not a lint fix.
  *
  * Job 4 exists because job 3 was not enough. It required `appearance` to be
  * non-empty and stopped there, so a claim could cite twenty documents about
@@ -127,7 +139,21 @@ function checkNode(node, tag) {
   }
 }
 
-let files = 0, blocks = 0, nodeCount = 0, claimNodes = 0;
+// Page coverage (job 5): every published page must carry structured data.
+// Until this check existed, coverage was enforced only per record type
+// (Claim on claim pages, a citation node on source pages, Person on entity
+// dossier mains) — so a page type nobody had written a rule for could ship
+// with no JSON-LD at all and the build would stay green. base.html includes
+// partials/jsonld.html for every template, so the property held by
+// construction; this makes it hold by enforcement instead of by accident.
+//
+// Zola's alias stubs are the one legitimate exception: they are not pages,
+// they are redirects (a <title>Redirect</title> document whose whole job is
+// to bounce the browser), and giving them structured data would publish a
+// second machine-readable copy of a record under a stale URL.
+const REDIRECT_RE = /http-equiv=["']?refresh/i;
+
+let files = 0, blocks = 0, nodeCount = 0, claimNodes = 0, redirectStubs = 0;
 const personPages = new Map(); // rel html path -> count of Person nodes
 // Full-page doctrine: source pages must emit a citation node (the cited
 // record itself), not only page/nav scaffolding.
@@ -142,8 +168,10 @@ for (const file of htmlFiles(PUBLIC_ROOT)) {
   const rel = relative(PUBLIC_ROOT, file);
   const html = readFileSync(file, "utf8");
   files++;
+  let blocksInFile = 0;
   for (const m of html.matchAll(BLOCK_RE)) {
     blocks++;
+    blocksInFile++;
     let parsed;
     try {
       parsed = JSON.parse(m[1]);
@@ -165,6 +193,10 @@ for (const file of htmlFiles(PUBLIC_ROOT)) {
       }
     }
     if (/\/sources\/src-\d+\/index\.html$/.test(rel)) sourcePages.add(rel);
+  }
+  if (blocksInFile === 0) {
+    if (REDIRECT_RE.test(html)) redirectStubs++;
+    else err(`${rel}: built page carries no JSON-LD block — every published page must be machine-readable (only Zola alias redirects are exempt).`);
   }
 }
 
@@ -202,7 +234,11 @@ for (const slug of aggregateSlugs) {
   if (personPages.has(page)) err(`${page}: the aggregate view must never carry Person markup.`);
 }
 
-console.log(`Checked ${blocks} JSON-LD block(s) / ${nodeCount} node(s) across ${files} built HTML file(s); ${claimNodes} Claim, ${entitySlugs.length} entity Person page(s).`);
+console.log(
+  `Checked ${blocks} JSON-LD block(s) / ${nodeCount} node(s) across ${files} built HTML file(s); ` +
+    `${claimNodes} Claim, ${entitySlugs.length} entity Person page(s); ` +
+    `${files - redirectStubs} page(s) carry structured data, ${redirectStubs} alias redirect(s) exempt.`,
+);
 if (errors.length) {
   console.log(`\n${errors.length} error(s):`);
   for (const e of errors) console.log(`  ERROR ${e}`);

@@ -47,6 +47,11 @@ const BUILD_STEPS = [
   "data:views",
   "data:generate-content",
   "data:sync-content",
+  // Evidenční plán práce (reports/evidence-plan.md + data/generated/
+  // evidence-plan.json) — čistá projekce kanonického modelu, žádný vstup
+  // pro Zolu. Běží hned po kanonické bráně, aby report nemohl být starší
+  // než data; kdyby žil mimo pipeline, zastaral by první změnou dossieru.
+  "report:evidence-plan",
   "test",
   "build:government-roster",
   "validate:authorization",

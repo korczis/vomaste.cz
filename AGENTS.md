@@ -39,12 +39,57 @@ cross-dossier collisions mechanically impossible.
 **`content/dossiers/**` and `content/entities/*.md` are GENERATED
 adapters**, not sources: Zola needs a content file to create a route, so
 `npm run data:build` regenerates minimal stubs (`generated = true`, a
-pointer to the record's view model, the canonical markdown body) and the
-`lint:generated-content` gate blocks any hand edit. Templates read view
-models (`data/generated/views/**`, gitignored) via
-`load_data("data/" ~ extra.view_model)`. The only hand-written pages left
-under those trees are the root indexes `content/dossiers/_index.md` and
-`content/entities/_index.md`.
+pointer to the record's view model, the canonical markdown body).
+Templates read view models (`data/generated/views/**`, gitignored) via
+`load_data("data/" ~ extra.view_model)`. **Hand-editing a generated page
+is a build error, not a shortcut** — the canonical fix is always: edit
+`data/dossiers/**`, run `npm run data:build`. Two gates own that rule:
+
+- `npm run data:check-generated:content`
+  (`scripts/data/check-generated.mjs --content`) — fails when a synced
+  path differs byte-for-byte from the staging tree, or when `content/`
+  holds a page in the generated scope with no canonical record;
+- `npm run lint:generated-content` — fails when such a page loses
+  `generated = true` / `view_model`, or grows a front-matter key outside
+  the minimal envelope (domain fields belong in the canonical record).
+
+Know the ordering, because it decides what a hand edit costs you: inside
+`npm run build` the sync step runs *before* the parity gate, so a body
+edit is silently **overwritten** rather than reported — the build stays
+green and the edit is simply gone. It is reported as an error when the
+parity gate runs on an unsynced tree, i.e. `npm run
+data:check-generated:content` on its own — that is how to check a
+suspicious `content/` diff.
+
+The generated scope is defined by `isSyncedPath`
+(`scripts/data/sync-content.mjs`): `dossiers/<slug>/_index.md`,
+`dossiers/<slug>/{claims,sources,cases,gaps,relations}/*.md`,
+`entities/*.md`. Everything else under `content/` publishes but is **not**
+covered by those gates, and there is no pretending otherwise: the root
+indexes (`content/dossiers/_index.md`, `content/entities/_index.md`), the
+per-dossier aux indexes `dossiers/<slug>/evidence/_index.md` and
+`dossiers/<slug>/entities/_index.md` (thin hand-written routing shells —
+their data still comes from view models), `content/koncepty/**`,
+`content/dokumentace/**`, `content/map/`, `content/data/` and
+`content/_index.md`. `content/entities/typ/**` is generated too, but by
+`scripts/dossier/build-entity-type-sections.mjs`, outside the staging
+parity gate.
+
+**Every published page carries JSON-LD.** `templates/base.html` includes
+`templates/partials/jsonld.html` exactly once per page and
+`npm run verify:jsonld` (`scripts/dossier/verify-jsonld.mjs`, post-build)
+enforces it: every built page emits at least one parsable
+`application/ld+json` block — only Zola's alias redirect stubs are exempt.
+The same gate owns the shape: a `Claim` node carrying exactly the sources
+that claim declares on every claim page, a citation node on every source
+page, exactly one `Person` on an entity dossier main page and none on the
+aggregate, recomputable citation fingerprints, and no truth-rating markup
+(`ClaimReview`, `reviewRating`, …) anywhere. What it does **not** yet
+cover: case, gap, relation and entity pages carry page scaffolding only
+(`WebPage`/`CollectionPage` + breadcrumbs + nav). Their record-level nodes
+(`vomaste:Case`, `vomaste:Gap`, `vomaste:Relation`, entity `Thing`) exist
+in the `/data/*.jsonld` exports (`build:jsonld-exports`, guarded by
+`verify:export`), not in the page.
 
 One rule, one owner — the validators that guard the dataset (all run by
 `npm run data:validate`, the first step of every pipeline mode):
@@ -58,6 +103,8 @@ One rule, one owner — the validators that guard the dataset (all run by
 | JSON-LD expansion (local context only, no network) | `scripts/data/validate-jsonld.mjs` |
 | Export shape gate | schema check inside `build:data-exports` (`scripts/dossier/lib/export-schemas.mjs`) |
 | content == generated staging | `npm run data:check-generated:content` + `lint:generated-content` |
+| JSON-LD on every published page (+ node shape, no truth ratings) | `scripts/dossier/verify-jsonld.mjs` (post-build, `npm run verify:jsonld`) |
+| Evidence work plan per dossier (generated, never hand-written) | `scripts/data/report-evidence-plan.mjs` (`npm run report:evidence-plan`) |
 
 The build has a single orchestration entrypoint,
 `scripts/build/pipeline.mjs` (`npm run build` / `dev` / `check`). Graph

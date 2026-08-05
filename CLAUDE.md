@@ -91,6 +91,31 @@ entry; it does not replace reading and applying the rule.
   consumes it. A field no consumer reads, or a template field with no
   schema coverage, is a half-finished change — see
   `docs/data-contract.md` for the full contract.
+- **`data/` is canonical, `content/` is a generated adapter, and every
+  published page carries JSON-LD.** Never hand-edit a page in the
+  generated scope (`isSyncedPath` in `scripts/data/sync-content.mjs`:
+  `content/dossiers/<slug>/_index.md`,
+  `content/dossiers/<slug>/{claims,sources,cases,gaps,relations}/*.md`,
+  `content/entities/*.md`) — edit `data/dossiers/**` and run
+  `npm run data:build`. Enforced by `npm run data:check-generated:content`
+  (byte parity with the staging tree) and `npm run lint:generated-content`
+  (envelope). One trap worth knowing: inside `npm run build` the sync step
+  runs *before* the parity gate, so a hand edit is silently overwritten
+  instead of reported — run `npm run data:check-generated:content` on its
+  own when a `content/` diff looks suspicious. `npm run verify:jsonld`
+  (post-build) requires at least one `application/ld+json` block on every
+  built page (only Zola alias redirects are exempt) plus the per-type node
+  shape; case/gap/relation/entity pages are machine-readable only as
+  pages — their record nodes live in the `/data/*.jsonld` exports. Full
+  rule with the list of legitimately hand-written pages: `AGENTS.md`,
+  "Canonical data model: JSON-first (T-028)".
+- **Where the evidence work stands is generated, not remembered.**
+  `npm run report:evidence-plan` (in `data:build` and `build`) writes
+  `reports/evidence-plan.md` + `data/generated/evidence-plan.json` — per
+  dossier: claim counts by status and by evidence class, corroboration
+  potential, gaps, a data-derived priority and a concrete next step. Read
+  it instead of asking "what should I work on"; never hand-maintain a
+  parallel todo list, it would be stale before the next commit.
 - **Discovery is unblocked; publishing findings is not.** Since 2026-07-30
   these are two different acts and only the second is gated:
   - **Recording that a registry relation exists** — a context entity
