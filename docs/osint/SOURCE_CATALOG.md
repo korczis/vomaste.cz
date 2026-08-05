@@ -21,6 +21,10 @@ Odpovídá na otázku „kam se podívat a čemu z toho věřit". Publikovaná p
 | [ČTK — Česká tisková kancelář](/zdroje/ctk/) | média | omezený přístup | https://www.ctk.cz/ |
 | [Poslanecká sněmovna Parlamentu ČR](/zdroje/psp-cz/) | primární listina | veřejně dostupný | https://www.psp.cz/ |
 | [Vláda České republiky](/zdroje/vlada-cz/) | primární listina | veřejně dostupný | https://vlada.gov.cz/ |
+| [Seznam Zprávy](/zdroje/seznam-zpravy/) | média | veřejně dostupný | https://www.seznamzpravy.cz/ |
+| [Deník N](/zdroje/denik-n/) | média | veřejně dostupný | https://denikn.cz/ |
+| [iROZHLAS / Český rozhlas](/zdroje/irozhlas/) | média | veřejně dostupný | https://www.irozhlas.cz/ |
+| [Česká televize / ČT24](/zdroje/ceska-televize/) | média | veřejně dostupný | https://ct24.ceskatelevize.cz/ |
 
 ## Pasti, na které se už najelo
 
@@ -50,6 +54,12 @@ Odpovídá na otázku „kam se podívat a čemu z toho věřit". Publikovaná p
 - **Poslanecká sněmovna Parlamentu ČR — Stenozáznam je autorizovaný přepis, ne přepis doslovný do písmene**: Řečník má právo úpravy. Pro citaci je použitelný, ale rozdíl proti audiu není chyba webu.
 - **Vláda České republiky — Doména se změnila**: Starší odkazy míří na `vlada.cz`; kanonická doména je dnes `vlada.gov.cz`. Odkaz je nutné ověřit, ne mechanicky přepsat.
 - **Vláda České republiky — Tisková zpráva není usnesení**: Usnesení má číslo a datum a je dohledatelné v databázi; tisková zpráva je jeho výklad. Tvrzení má citovat usnesení.
+- **Seznam Zprávy — Byline rozhoduje o nezávislosti, ne logo**: Tentýž web vydává vlastní zpravodajství i přebrané agenturní zprávy. O tom, zda jde o nezávislé doložení, rozhoduje kredit u konkrétního článku, ne vydavatel. Bez ověřeného kreditu je verdikt `unknown` a rodina se nevyplní — `unknown` NENÍ „vlastní zpravodajství".
+- **Deník N — Byline rozhoduje o nezávislosti, ne logo**: Tentýž web vydává vlastní zpravodajství i přebrané agenturní zprávy. O tom, zda jde o nezávislé doložení, rozhoduje kredit u konkrétního článku, ne vydavatel. Bez ověřeného kreditu je verdikt `unknown` a rodina se nevyplní — `unknown` NENÍ „vlastní zpravodajství".
+- **Deník N — Paywall brání ověření kreditu**: Detektor rodin skončí na uzavřeném textu verdiktem `unknown`. To není důvod rodinu odhadnout; je to důvod ji nevyplnit a tvrzení nepovyšovat.
+- **iROZHLAS / Český rozhlas — Byline rozhoduje o nezávislosti, ne logo**: Tentýž web vydává vlastní zpravodajství i přebrané agenturní zprávy. O tom, zda jde o nezávislé doložení, rozhoduje kredit u konkrétního článku, ne vydavatel. Bez ověřeného kreditu je verdikt `unknown` a rodina se nevyplní — `unknown` NENÍ „vlastní zpravodajství".
+- **Česká televize / ČT24 — Byline rozhoduje o nezávislosti, ne logo**: Tentýž web vydává vlastní zpravodajství i přebrané agenturní zprávy. O tom, zda jde o nezávislé doložení, rozhoduje kredit u konkrétního článku, ne vydavatel. Bez ověřeného kreditu je verdikt `unknown` a rodina se nevyplní — `unknown` NENÍ „vlastní zpravodajství".
+- **Česká televize / ČT24 — Text k reportáži není reportáž**: Doprovodný článek bývá zkrácením odvysílaného. Cituje-li se výrok, musí být zřejmé, zda pochází z textu, nebo z vysílání.
 
 ## Skutečně použité zdroje v datasetu
 
@@ -58,20 +68,20 @@ Dopočítáno z `data/dossiers/**/sources/**`, 628 záznamů v 97 rodinách/outl
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
 | ctk | 290 | 21 | [ano](/zdroje/ctk/) |
-| seznam-zpravy | 34 | 13 | — |
+| seznam-zpravy | 34 | 13 | [ano](/zdroje/seznam-zpravy/) |
 | Vláda České republiky (vlada.gov.cz) | 23 | 17 | [ano](/zdroje/vlada-cz/) |
 | FORUM 24 | 19 | 9 | — |
 | Poslanecká sněmovna Parlamentu ČR | 18 | 14 | [ano](/zdroje/psp-cz/) |
-| denik-n | 16 | 9 | — |
+| denik-n | 16 | 9 | [ano](/zdroje/denik-n/) |
 | Echo24 | 13 | 9 | — |
-| ČT24 (Česká televize) | 12 | 7 | — |
+| ČT24 (Česká televize) | 12 | 7 | [ano](/zdroje/ceska-televize/) |
 | denik-cz | 11 | 6 | — |
 | Aktuálně.cz | 11 | 6 | — |
 | Česká justice | 11 | 6 | — |
 | Ekonomický deník | 9 | 5 | — |
 | Novinky.cz | 9 | 8 | — |
 | hlidac-statu | 8 | 3 | [ano](/zdroje/hlidac-statu/) |
-| irozhlas | 8 | 6 | — |
+| irozhlas | 8 | 6 | [ano](/zdroje/irozhlas/) |
 | Blesk.cz | 5 | 3 | — |
 | e15.cz | 4 | 2 | — |
 | HlídacíPes.org | 4 | 4 | — |
@@ -159,16 +169,12 @@ Dopočítáno z `data/dossiers/**/sources/**`, 628 záznamů v 97 rodinách/outl
 
 Tyhle zdroje dataset používá aspoň pětkrát, ale katalog k nim nemá záznam s mezemi a pastmi:
 
-- seznam-zpravy (34×)
 - FORUM 24 (19×)
-- denik-n (16×)
 - Echo24 (13×)
-- ČT24 (Česká televize) (12×)
 - denik-cz (11×)
 - Aktuálně.cz (11×)
 - Česká justice (11×)
 - Ekonomický deník (9×)
 - Novinky.cz (9×)
-- irozhlas (8×)
 - Blesk.cz (5×)
 

@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source-catalog-entry.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/zdroje/irozhlas",
+  "@type": "vomaste:SourceCatalogEntry",
+  "recordType": "sourceCatalogEntry",
+  "identifier": "irozhlas",
+  "kind": "media",
+  "jurisdiction": "CZ",
+  "access": "open",
+  "title": "iROZHLAS / Český rozhlas",
+  "operator": "Český rozhlas",
+  "authentication": "none",
+  "url": "https://www.irozhlas.cz/",
+  "order": 220,
+  "outlets": [
+    "iROZHLAS",
+    "Český rozhlas"
+  ],
+  "proves": [
+    "Že veřejnoprávní rozhlas k danému datu zveřejnil text nebo reportáž daného znění."
+  ],
+  "doesNotProve": [
+    "Že popsaný děj nastal. Článek dokládá, co redakce k danému datu zveřejnila, a je-li v něm citováno prohlášení strany sporu, dokládá to prohlášení, ne jeho obsah.",
+    "Nezávislost na jiném zdroji, dokud není ověřen kredit u konkrétního článku."
+  ],
+  "traps": [
+    {
+      "title": "Byline rozhoduje o nezávislosti, ne logo",
+      "detail": "Tentýž web vydává vlastní zpravodajství i přebrané agenturní zprávy. O tom, zda jde o nezávislé doložení, rozhoduje kredit u konkrétního článku, ne vydavatel. Bez ověřeného kreditu je verdikt `unknown` a rodina se nevyplní — `unknown` NENÍ „vlastní zpravodajství\"."
+    }
+  ],
+  "howToSearch": "Veřejnoprávní médium bez paywallu, takže kredit u článku je zpravidla strojově ověřitelný. Použitelné jako doplněk k ČTK, ale jen po ověření, že článek není jejím převzetím.",
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Veřejnoprávní médium. Jeho výhodou pro rešerši je otevřenost — text i kredit jsou dostupné bez předplatného, takže rodinu lze ověřit strojově, ne odhadem."
+    }
+  ]
+}
