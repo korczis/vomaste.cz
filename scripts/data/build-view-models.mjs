@@ -27,6 +27,10 @@ import { fileURLToPath } from "node:url";
 import { loadCanonicalDataset, compileDataset } from "./lib/dataset.mjs";
 import { readGovernmentRoster } from "./lib/government.mjs";
 import { dossierGraphDepths } from "./lib/graph-depth.mjs";
+// Identita vydavatele se nepočítá podruhé: registeredDomain je týž
+// primitiv, kterým pravidlo S10 rozhoduje, jestli jsou dva zdroje od
+// dvou různých vydavatelů (scripts/data/validate-semantics.mjs).
+import { registeredDomain } from "./validate-semantics.mjs";
 
 const REPO_ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 export const VIEWS_REL = "data/generated/views";
@@ -44,6 +48,122 @@ export const VIEW_REGISTRIES = Object.freeze(["claims", "sources", "cases", "gap
 
 const cmp = (a, b) => (a < b ? -1 : a > b ? 1 : 0);
 const localPart = (iri) => (typeof iri === "string" ? iri.split("/").pop() : null);
+
+// Uzavřená množina stavů tvrzení — zrcadlí claimStatus ve
+// schemas/canonical/_defs.schema.json a _shared/vocabularies/
+// claim-statuses.json. Drží POŘADÍ klíčů v landing.evidence
+// (deterministická serializace); neznámý stav se do rozpadu doplní
+// dynamicky, aby se počty nikdy tiše nerozešly s počtem tvrzení.
+export const CLAIM_STATUS_KEYS = Object.freeze([
+  "status-corroborated",
+  "status-single",
+  "status-quote",
+  "status-disputed",
+  "status-opinion",
+]);
+const CORROBORATED_STATUS = "status-corroborated";
+// Klíč pro šablony: `status-corroborated` → `corroborated`. Tera indexuje
+// spolehlivě jen tečkovou notací, a `evidence.claimsByStatus.corroborated`
+// je čitelnější než uvozovkovaný klíč s pomlčkou.
+const statusKey = (status) => String(status).replace(/^status-/, "");
+
+/*
+ * Primární dokument = záznam, který instituce vydala sama (rozhodnutí
+ * soudu, hlasování Sněmovny, tisková zpráva úřadu), na rozdíl od článku,
+ * který o něm informuje.
+ *
+ * Test je na DOMÉNĚ, ne na názvu vydavatele ani na `sourceType`: obojí je
+ * volný text a v datasetu nese „oficiální primární zdroj" i pár
+ * neinstitucionálních webů. `gov.cz` a `europa.eu` jsou veřejné sufixy
+ * (MULTI_LABEL_PUBLIC_SUFFIXES ve validate-semantics.mjs), pod nimiž
+ * publikují výhradně orgány veřejné moci. České ústavní orgány a
+ * nezávislé úřady pod gov.cz nesedí, proto je vedle sufixů krátký
+ * jmenovitý seznam jejich vlastních domén — vědomě konzervativní: co
+ * v něm není, se jen nepovažuje za primární dokument, nic se tím
+ * nerozbije.
+ */
+export const INSTITUTIONAL_PUBLIC_SUFFIXES = Object.freeze(["gov.cz", "europa.eu"]);
+export const INSTITUTIONAL_DOMAINS = Object.freeze([
+  "psp.cz",
+  "senat.cz",
+  "hrad.cz",
+  "usoud.cz",
+  "nssoud.cz",
+  "nsoud.cz",
+  "justice.cz",
+  "nku.cz",
+  "csicr.cz",
+  "rozpoctovarada.cz",
+  "cnb.cz",
+]);
+export function isInstitutionalSourceUrl(url) {
+  const domain = registeredDomain(url);
+  if (!domain) return false;
+  if (INSTITUTIONAL_DOMAINS.includes(domain)) return true;
+  return INSTITUTIONAL_PUBLIC_SUFFIXES.some((suffix) => domain === suffix || domain.endsWith(`.${suffix}`));
+}
+
+/*
+ * Druh primárního dokumentu — slouží JEN k tomu, aby ukázky na titulní
+ * straně pokryly tři různé typy záznamu, ne jen tři tiskové zprávy téhož
+ * ministerstva. Pořadí = pořadí ukázek.
+ *
+ * Rozhoduje název instituce, ne doména: tiskovou zprávu Vrchního soudu
+ * hostuje msp.gov.cz a podle domény by spadla mezi úřady. Poslední
+ * pravidlo bere zbytek, takže funkce vždy vrátí druh.
+ */
+export const PRIMARY_DOCUMENT_KINDS = Object.freeze([
+  { id: "court", label: "Soud", match: /soud/i },
+  { id: "parliament", label: "Parlament", match: /sněmovn|senát/i },
+  { id: "authority", label: "Vláda a úřady", match: /.*/ },
+]);
+export function primaryDocumentKind(outlet) {
+  const name = typeof outlet === "string" ? outlet : "";
+  return (PRIMARY_DOCUMENT_KINDS.find((k) => k.match.test(name)) ?? PRIMARY_DOCUMENT_KINDS.at(-1)).id;
+}
+
+/*
+ * Ukázkový dossier titulní strany (`primaryCanonical`).
+ *
+ * Není to „první, který se hodí": je to vizitka projektu — titulní strana
+ * z něj bere ukázku řetězu tvrzení → zdroj → historie. Dřív se bral první
+ * kanonický vlastník s neprázdným registrem tvrzení i zdrojů, jenže
+ * registr se řadí podle `order ?? 0`, takže každý nově založený dossier
+ * BEZ `order` skončil na začátku — a tím na titulní straně. Tři tvrzení
+ * z jednoho rejstříkového zdroje se tak staly ukázkou důkazního standardu
+ * celého webu.
+ *
+ * Výběr je proto záměrný a deterministický:
+ *   1. kandidátem je kanonický vlastník viditelný v navigaci, který má
+ *      neprázdný registr tvrzení i zdrojů (bez obojího ukázka neexistuje);
+ *   2. dossier BEZ explicitního `order` nikdy nepředběhne dossier
+ *      s pořadím — redakční pořadí registru je vědomé rozhodnutí,
+ *      jeho absence není;
+ *   3. mezi zbylými vyhrává nejsilnější evidence: nejvíc korroborovaných
+ *      tvrzení, pak vyšší PODÍL korroborace (porovnává se křížovým
+ *      součinem, ne dělením — žádné floaty v deterministickém výstupu),
+ *      pak víc zdrojů;
+ *   4. dorovnává `order` vzestupně a nakonec slug, takže dva běhy nad
+ *      týmiž daty dají tentýž bajt.
+ */
+export function pickPrimaryCanonical(canonicalOrdered, evidenceBySlug) {
+  const hasOrder = (record) => Number.isInteger(record.order);
+  const ranked = canonicalOrdered
+    .filter((w) => w.record.navigationVisible !== false)
+    .map((w) => ({ w, ev: evidenceBySlug.get(w.dossier) ?? { claims: 0, sources: 0, corroborated: 0 } }))
+    .filter(({ ev }) => ev.claims > 0 && ev.sources > 0)
+    .sort(
+      (a, b) =>
+        Number(hasOrder(b.w.record)) - Number(hasOrder(a.w.record)) ||
+        b.ev.corroborated - a.ev.corroborated ||
+        b.ev.corroborated * a.ev.claims - a.ev.corroborated * b.ev.claims ||
+        b.ev.sources - a.ev.sources ||
+        (hasOrder(a.w.record) ? a.w.record.order : Number.MAX_SAFE_INTEGER) -
+          (hasOrder(b.w.record) ? b.w.record.order : Number.MAX_SAFE_INTEGER) ||
+        cmp(a.w.dossier, b.w.dossier),
+    );
+  return ranked[0]?.w.dossier ?? null;
+}
 
 // JSON-LD fragment záznamu: kompaktní forma record JSON bez $schema
 // (deliberately ne-sémantický klíč, viz validate-jsonld.mjs).
@@ -609,18 +729,155 @@ export function buildViewModels(compiled, { governmentRoster = new Map() } = {})
     canonicalTotals.entities += c.entities;
     canonicalTotals.relations += c.relations;
   }
+  // Důkazní profil celého webu + per dossier. Jeden průchod: titulní
+  // strana potřebuje rozpad tvrzení podle stavu (kolik je skutečně
+  // korroborovaných, kolik stojí na jediném hlase), počet vydavatelů
+  // a zdrojových rodin, otevřené mezery a inventář primárních dokumentů.
+  // Bez toho by čísla na landingu musela vzniknout v šabloně — a tam se
+  // nedají ověřit ani otestovat.
+  const claimsByStatus = Object.fromEntries(CLAIM_STATUS_KEYS.map((s) => [statusKey(s), 0]));
+  const evidenceBySlug = new Map();
+  const sourceFamilies = new Set();
+  const outlets = new Set();
+  const primaryDocumentCandidates = [];
+  let institutionalSources = 0;
+  let openGaps = 0;
+  for (const w of canonicalOrdered) {
+    const claims = visibleRecords(w.dossier, "claims");
+    let corroborated = 0;
+    for (const cw of claims) {
+      const key = statusKey(cw.record.status ?? "");
+      // Neznámý stav se nezahazuje — jinak by součet dlaždic tiše
+      // nesouhlasil s počtem tvrzení a nikdo by si toho nevšiml.
+      claimsByStatus[key] = (claimsByStatus[key] ?? 0) + 1;
+      if (cw.record.status === CORROBORATED_STATUS) corroborated += 1;
+    }
+    for (const gw of visibleRecords(w.dossier, "gaps")) {
+      if (gw.record.status !== "closed") openGaps += 1;
+    }
+    const sources = visibleRecords(w.dossier, "sources");
+    for (const sw of sources) {
+      const family = (sw.record.sourceFamily ?? "").trim();
+      if (family) sourceFamilies.add(family);
+      const outlet = (sw.record.outlet ?? "").trim();
+      if (outlet) outlets.add(outlet);
+      if (!isInstitutionalSourceUrl(sw.record.url)) continue;
+      institutionalSources += 1;
+      // Ukázky primárních dokumentů na titulní straně: jen záznam, který
+      // opravdu něco dokládá (nese datum vydání a podpírá aspoň jedno
+      // tvrzení) a jehož dossier je v navigaci.
+      if (w.record.navigationVisible === false) continue;
+      if (!sw.record.published || (sw.record.claims ?? []).length === 0) continue;
+      primaryDocumentCandidates.push({
+        kind: primaryDocumentKind(outlet),
+        outlet: outlet || null,
+        sourceType: sw.record.sourceType ?? null,
+        published: sw.record.published,
+        claims: sw.record.claims.length,
+        identifier: sw.record.identifier,
+        route: sw.route,
+        dossier: w.dossier,
+        order: Number.isInteger(w.record.order) ? w.record.order : Number.MAX_SAFE_INTEGER,
+      });
+    }
+    evidenceBySlug.set(w.dossier, { claims: claims.length, sources: sources.length, corroborated });
+  }
+  // Jedna ukázka na druh instituce v deklarovaném pořadí (soud →
+  // Parlament → úřad), uvnitř druhu vyhrává dokument, který dokládá
+  // nejvíc tvrzení. Vydavatelem je instituce, ne osoba: ukázka nese
+  // název instituce, typ a datum, nikdy titul záznamu (v něm bývá jméno
+  // subjektu, a titulní strana nikoho nejmenuje).
+  const primaryDocuments = PRIMARY_DOCUMENT_KINDS.map(({ id, label }) => {
+    const best = primaryDocumentCandidates
+      .filter((c) => c.kind === id)
+      .sort(
+        (a, b) =>
+          b.claims - a.claims || a.order - b.order || cmp(a.dossier, b.dossier) || cmp(a.identifier, b.identifier),
+      )[0];
+    if (!best) return null;
+    return {
+      kind: id,
+      kindLabel: label,
+      outlet: best.outlet,
+      sourceType: best.sourceType,
+      published: best.published,
+      claims: best.claims,
+      identifier: best.identifier,
+      route: best.route,
+    };
+  }).filter(Boolean);
+  const visibleCards = cards.filter((c) => c.navigationVisible);
+  const percent = (part, whole) => (whole > 0 ? Math.round((part * 100) / whole) : 0);
+  const primaryCanonical = pickPrimaryCanonical(canonicalOrdered, evidenceBySlug);
+  /*
+   * Ukázka řetězu tvrzení → zdroj → historie na titulní straně.
+   *
+   * Vybírá se tady, ne v šabloně. Šablona brala „poslední podle
+   * identifikátoru", což je TEXTOVÉ řazení (CLM-9 je po CLM-59) a u
+   * tvrzení bez citovaného zdroje by celou sekci shodila. Přednost má
+   * korroborované tvrzení: ukázkou důkazního standardu má být případ,
+   * kde totéž doložili dva nezávislí vydavatelé, ne případ s jedním.
+   */
+  const demoClaim = (() => {
+    if (!primaryCanonical) return null;
+    const best = visibleRecords(primaryCanonical, "claims")
+      .filter((w) => (w.record.sources ?? []).length > 0)
+      .sort(
+        (a, b) =>
+          Number(b.record.status === CORROBORATED_STATUS) - Number(a.record.status === CORROBORATED_STATUS) ||
+          (b.record.sources ?? []).length - (a.record.sources ?? []).length ||
+          (a.record.order ?? 0) - (b.record.order ?? 0) ||
+          cmp(a.record.identifier, b.record.identifier),
+      )[0];
+    if (!best) return null;
+    return {
+      dossier: primaryCanonical,
+      identifier: best.record.identifier,
+      route: best.route,
+      text: best.record.text,
+      status: best.record.status,
+      statusLabel: best.record.statusLabel,
+      // Cesta ke content adaptéru = to, co nese git historii záznamu
+      // (stejná sémantika jako page.relative_path v dossier-claim.html).
+      contentPath: `dossiers/${primaryCanonical}/claims/${best.record.identifier.toLowerCase()}.md`,
+      sources: (best.record.sources ?? []).map((ref) => {
+        const sw = byId[ref["@id"]];
+        return {
+          identifier: sw?.record.identifier ?? localPart(ref["@id"]),
+          route: sw?.route ?? null,
+          outlet: sw?.record.outlet ?? null,
+          published: sw?.record.published ?? null,
+          sourceType: sw?.record.sourceType ?? null,
+        };
+      }),
+    };
+  })();
   views.set("landing.json", {
     totals,
-    dossiers: cards.filter((c) => c.navigationVisible),
+    dossiers: visibleCards,
     canonicalTotals,
-    // Homepage ukazuje skutečný řetěz tvrzení → zdroj. Nově založený
-    // čistý dossier může legitimně vlastnit jen GAP, proto ukázku vybíráme
-    // z prvního vlastníka, který má obě potřebné registry neprázdné.
-    primaryCanonical:
-      canonicalOrdered.find((w) => {
-        const c = countsOf(w.dossier);
-        return c.claims > 0 && c.sources > 0;
-      })?.dossier ?? null,
+    // Živá čísla titulní strany. Sémantika: počítá se přes kanonické
+    // vlastníky (projekce entity view se nesčítají dvakrát), `entities`
+    // je naopak počet UNIKÁTNÍCH entit z globálního registru.
+    evidence: {
+      dossiers: visibleCards.length,
+      entities: totals.entities,
+      claims: canonicalTotals.claims,
+      claimsByStatus,
+      corroboratedPercent: percent(claimsByStatus.corroborated ?? 0, canonicalTotals.claims),
+      singlePercent: percent(claimsByStatus.single ?? 0, canonicalTotals.claims),
+      sources: canonicalTotals.sources,
+      sourceFamilies: sourceFamilies.size,
+      outlets: outlets.size,
+      institutionalSources,
+      cases: canonicalTotals.cases,
+      gaps: canonicalTotals.gaps,
+      openGaps,
+      relations: canonicalTotals.relations,
+    },
+    primaryDocuments,
+    primaryCanonical,
+    demoClaim,
     canonicalDossiers: canonicalOrdered.map((w) => ({
       slug: w.dossier,
       title: w.record.title,

@@ -16,24 +16,24 @@ import { compileDataset } from "./compile.mjs";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const compiled = compileDataset(loadCanonicalTree(join(ROOT, "data/dossiers")));
 
-test("golden: počty záznamů per typ (snapshot 2026-08-05b: GAP-04 v james-quick zrušena — nedoložené jméno se nemá opakovat ani jako mezera)", () => {
+test("golden: počty záznamů per typ (snapshot 2026-08-05b: GAP-04 v james-quick zrušena — nedoložené jméno se nemá opakovat ani jako mezera; + registr smluv u martin-pavlik: CLM-07, SRC-03, GAP-02, 3 hrany na zveřejňující státní podniky)", () => {
   assert.deepEqual(compiled.counts.perType, {
     case: 89,
-    claim: 937,
+    claim: 938,
     dossier: 26,
-    entity: 520,
-    gap: 193,
-    relation: 326,
-    source: 627,
+    entity: 523,
+    gap: 194,
+    relation: 329,
+    source: 628,
     update: 72,
   });
   assert.equal(compiled.counts.dossiers, 26);
-  assert.equal(compiled.counts.entities, 520);
+  assert.equal(compiled.counts.entities, 523);
 });
 
 test("golden: graf — uzly z entit, hrany z relations", () => {
-  assert.equal(compiled.graph.nodes.length, 520);
-  assert.equal(compiled.graph.edges.length, 326);
+  assert.equal(compiled.graph.nodes.length, 523);
+  assert.equal(compiled.graph.edges.length, 329);
 });
 
 test("golden: vzorek claim záznamu (andrej-babis CLM-01; snapshot 2026-08-05, T-058: 1 ZDROJ → CORROBORATED, k oběma zdrojům rodiny ctk přibyla tisková zpráva Vrchního soudu v Praze SRC-75)", () => {

@@ -26,7 +26,14 @@
     jediný zdroj, dřívější data/dossiers.toml zanikl. -#}
 {% set landing = load_data(path="data/generated/views/landing.json") %}
 {% set canonical_dossiers = landing.canonicalDossiers %}
-{% set primary_canon = landing.primaryCanonical %}
+{#- Ukázkové tvrzení (řetěz tvrzení → zdroj → historie) vybírá VIEW MODEL,
+    ne šablona: výběr má vlastní pravidlo (kanonický vlastník s nejsilnější
+    evidencí, dossier bez redakčního pořadí nikdy nepředbíhá) a vlastní
+    testy ve scripts/data/landing-view-model.test.mjs. Dřív si ho šablona
+    brala jako „poslední podle identifikátoru", což je textové řazení
+    (CLM-9 je po CLM-59) a u tvrzení bez citovaného zdroje sekci shodilo. -#}
+{% set demo = landing.demoClaim %}
+{% set ev = landing.evidence %}
 {% set concepts = concepts_section.pages %}
 <main>
   <section class="hero-bg relative flex min-h-[90svh] w-full items-center justify-center overflow-hidden bg-black" aria-labelledby="hero-heading">
@@ -165,24 +172,19 @@
     </div>
     <p class="mx-auto mt-6 max-w-2xl text-center text-sm text-white/50">K tomu graf entit a vztahů: každá hrana musí být krytá tvrzením a zdrojem — žádné dekorativní spojnice.</p>
 
-    {#- Ukázka vazby CLM → SRC se bere z view modelu registru, ne z natvrdo
-        napsaných ID: první tvrzení kanonického dossieru, které nějaký
-        zdroj cituje. Když se záznam přečísluje nebo zmizí, ukázka se
-        posune sama. (T-028 fáze F: data z data/generated/views/**.) -#}
-    {% set demo_claims_idx = load_data(path="data/generated/views/dossiers/" ~ primary_canon ~ "/claims-index.json") %}
-    {% set_global pair_claim = false %}
-    {% for c in demo_claims_idx.rows | sort(attribute="identifier") %}
-      {% if not pair_claim and c.sources | length > 0 %}{% set_global pair_claim = c %}{% endif %}
-    {% endfor %}
-    {%- if pair_claim %}
-    {% set pair_src = pair_claim.sources | first %}
-    <div class="mt-8 flex flex-wrap items-center justify-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] p-6 text-center text-sm text-white/60" aria-label="Ukázka dohledatelnosti tvrzení ke zdroji">
-      <a href="{{ config.base_url }}{{ pair_claim.route }}" class="id-chip rounded bg-white/5 px-2 py-1 font-mono text-xs text-[#f3e5c0] no-underline hover:bg-white/10">{{ pair_claim.identifier }}</a>
+    {#- Ukázka vazby tvrzení → zdroj. Záznamy jdou z view modelu (žádná ID
+        v šabloně), takže když se přečíslují nebo zmizí, ukázka se posune
+        sama. Vypisují se VŠECHNY citované zdroje, ne jen první: kolik jich
+        tvrzení nese, je součást toho, co se má na ukázce dát zkontrolovat
+        (vydavatele k nim vypisuje sekce „Vyzkoušejte to" níž). -#}
+    {%- if demo %}
+    <div class="mt-8 flex flex-wrap items-center justify-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] p-6 text-center text-sm text-white/60" aria-label="Ukázka dohledatelnosti tvrzení ke zdrojům">
+      <a href="{{ config.base_url }}{{ demo.route }}" class="id-chip rounded bg-white/5 px-2 py-1 font-mono text-xs text-[#f3e5c0] no-underline hover:bg-white/10">{{ demo.identifier }}</a>
       <span aria-hidden="true">→</span>
-      {%- if pair_src %}
-      <a href="{{ config.base_url }}{{ pair_src.route }}" class="id-chip rounded bg-white/5 px-2 py-1 font-mono text-xs text-[#93c5fd] no-underline hover:bg-white/10">{{ pair_src.identifier }}</a>
-      {%- endif %}
-      <span class="text-white/55">každé tvrzení je jedno kliknutí od zdroje, ze kterého vychází</span>
+      {%- for s in demo.sources %}
+      <a href="{{ config.base_url }}{{ s.route }}" class="id-chip rounded bg-white/5 px-2 py-1 font-mono text-xs text-[#93c5fd] no-underline hover:bg-white/10">{{ s.identifier }}</a>
+      {%- endfor %}
+      <span class="text-white/55">každé tvrzení je jedno kliknutí od zdrojů, ze kterých vychází</span>
     </div>
     {%- endif %}
 
@@ -197,6 +199,131 @@
     </div>
   </section>
 
+  {#- Důkazní standard — sekce, kvůli které tenhle web existuje.
+      Rozdíl mezi „dvě redakce to otiskly" a „dva nezávislé zdroje to
+      potvrzují" je jediná věc, kterou tenhle přehled dělá jinak než seznam
+      odkazů, a do 2026-08 na titulní straně nebyla vůbec.
+
+      Čísla NEJSOU psaná tady: jdou z landing.evidence (view model staví
+      scripts/data/build-view-models.mjs a testuje landing-view-model.test.mjs),
+      takže po každém rešeršním kole odpovídají registrům. Dlaždice vedou na
+      stránku toho stavu, ne do registru jednoho dossieru — číslo je součet
+      přes celý web. -#}
+  {% set evidence_group = concepts | filter(attribute="extra.group", value="evidence") %}
+  <section id="dukazni-standard" aria-labelledby="evidence-heading" class="landing-section py-12 sm:py-16 lg:py-20">
+    <h2 id="evidence-heading" class="text-center text-2xl font-bold text-white sm:text-3xl">Důkazní standard</h2>
+    <p class="mx-auto mt-3 max-w-2xl text-center text-white/60">„Psaly o tom tři weby" a „potvrdily to tři nezávislé redakce" vypadají skoro stejně a znamenají něco jiného. Když tři redakce přetisknou tutéž agenturní zprávu, je to jedno doložení na třech adresách — a tenhle web to musí umět odlišit, jinak jeho odznaky nic neslibují.</p>
+
+    <div class="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-4">
+      {{ ui::stat_tile(value=ev.claimsByStatus.corroborated, label="Ověřeno více zdroji", url=get_url(path="@/koncepty/stav-overeno-vice-zdroji.md")) }}
+      {{ ui::stat_tile(value=ev.claimsByStatus.single, label="1 zdroj", url=get_url(path="@/koncepty/stav-jeden-zdroj.md")) }}
+      {{ ui::stat_tile(value=ev.claimsByStatus.quote, label="Citace", url=get_url(path="@/koncepty/stav-citace.md")) }}
+      {{ ui::stat_tile(value=ev.claimsByStatus.disputed, label="Sporné", url=get_url(path="@/koncepty/stav-sporne.md")) }}
+    </div>
+    <p class="mx-auto mt-4 max-w-2xl text-center text-sm text-white/50">
+      Z {{ ev.claims }} tvrzení jich {{ ev.corroboratedPercent }} % nese nezávislé potvrzení a {{ ev.singlePercent }} % stojí přiznaně na jediném hlase. Podíl se nedá vylepšit přeznačením — jen dohledáním dalšího zdroje. Zdrojů je {{ ev.sources }} od {{ ev.outlets }} vydavatelů, {{ ev.sourceFamilies }} zdrojových rodin je deklarovaných jako převzetí téhož materiálu.
+    </p>
+
+    <div class="mt-10 grid gap-6 sm:grid-cols-2">
+      {%- for c in evidence_group %}
+      <a href="{{ c.permalink | safe }}" class="group block rounded-xl border border-white/10 bg-white/[0.03] p-6 no-underline transition-colors hover:border-white/25 hover:bg-white/[0.05]">
+        <h3 class="flex items-center gap-2 font-semibold text-[#f3e5c0]">
+          {{ c.extra.tile_title | default(value=c.title) }}
+          <span class="text-white/55 transition-transform group-hover:translate-x-0.5" aria-hidden="true">&rarr;</span>
+        </h3>
+        <p class="mt-2 text-sm leading-relaxed text-white/60">{{ c.extra.tile_summary | safe }}</p>
+        {%- if c.extra.bullets %}
+        <ul class="mt-3 space-y-2 text-sm leading-relaxed text-white/70">
+          {%- for b in c.extra.bullets %}
+          <li>{{ b | safe }}</li>
+          {%- endfor %}
+        </ul>
+        {%- endif %}
+        <span class="mt-4 block text-xs text-white/55">{{ c.title }} &middot; celá stránka</span>
+      </a>
+      {%- endfor %}
+    </div>
+
+    {#- Revize 5. 8. 2026 patří na titulní stranu, ne do poznámky pod čarou:
+        standard, podle kterého se neopravuje už publikovaný obsah, není
+        standard. Čísla jsou historická (událost s datem), takže nezastarají
+        — aktuální stav je v dlaždicích výš a v datech. -#}
+    <div class="mx-auto mt-10 max-w-2xl rounded-xl border border-[#d4af37]/30 bg-[#d4af37]/[0.05] p-6">
+      <h3 class="font-semibold text-[#f3e5c0]">Revize 5. srpna 2026: 119 tvrzení dolů</h3>
+      <p class="mt-2 text-sm leading-relaxed text-white/70">Většina zdrojů neměla zaznamenaný původ, takže validátor nedokázal odlišit druhého vydavatele od druhého otisku téže agenturní zprávy. Po doplnění původu kleslo <strong class="text-white">119 tvrzení</strong> z „ověřeno více zdroji" na „1 zdroj" a celkový počet nezávisle potvrzených tvrzení spadl z 300 na 181. Opravilo se i 27 komentářů, které nezávislost výslovně tvrdily.</p>
+      <p class="mt-3 text-sm leading-relaxed text-white/70">Žádný zdroj se nesmazal — dokládá dál totéž co předtím, jen už nepotvrzuje sám sebe. Je to doklad, že pravidlo platí i zpětně, ne ostuda.</p>
+      <p class="mt-4 text-sm">
+        <a href="{{ get_url(path='@/koncepty/nezavisle-dolozeni.md') | safe }}" class="text-[#f3e5c0] underline decoration-white/30 underline-offset-2">Jak se nezávislost počítá &rarr;</a>
+      </p>
+    </div>
+
+    {#- Primární dokumenty: ukázky vybírá view model (jeden záznam za druh
+        instituce, uvnitř druhu vyhrává ten, který dokládá nejvíc tvrzení).
+        Vypisuje se INSTITUCE, typ a datum — nikdy titul záznamu: v něm bývá
+        jméno subjektu a titulní strana nikoho nejmenuje. -#}
+    {%- if landing.primaryDocuments | length > 0 %}
+    <h3 class="mt-14 text-center text-lg font-semibold text-white">Nejsilnější doklad není článek, ale samotný záznam</h3>
+    <p class="mx-auto mt-2 max-w-2xl text-center text-sm text-white/50">Hlasování Sněmovny, plné znění rozsudku, tisková zpráva soudu nebo úřadu. Článek o rozhodnutí zaokrouhluje datum, částku i rozsah; záznam ne. Dataset cituje {{ ev.institutionalSources }} takových dokumentů přímo — tady je jeden za každý druh instituce.</p>
+    <div class="mt-6 grid gap-4 sm:grid-cols-3">
+      {%- for d in landing.primaryDocuments %}
+      <a href="{{ config.base_url }}{{ d.route }}" class="group block rounded-xl border border-white/10 bg-white/[0.03] p-5 no-underline transition-colors hover:border-white/25 hover:bg-white/[0.05]">
+        <span class="font-mono text-[0.65rem] uppercase tracking-widest text-white/55">{{ d.kindLabel }}</span>
+        <span class="mt-1 block font-semibold text-white group-hover:text-[#f3e5c0]">{{ d.outlet }}</span>
+        <span class="mt-1 block text-xs text-white/50">{{ d.sourceType }}{% if d.published %}, {{ d.published }}{% endif %}</span>
+        <span class="mt-3 block text-xs text-white/55">Dokládá {{ d.claims }} tvrzení &rarr;</span>
+      </a>
+      {%- endfor %}
+    </div>
+    <p class="mt-4 text-center text-sm">
+      <a href="{{ get_url(path='@/koncepty/primarni-dokumenty.md') | safe }}" class="text-[#f3e5c0] underline decoration-white/30 underline-offset-2">Proč záznam bije článek o záznamu &mdash; a co neumí &rarr;</a>
+    </p>
+    {%- endif %}
+  </section>
+
+  {#- Odkud to víme. Web stojí a padá s tím, že každé tvrzení má zdroj — ale
+      landing page to dosud tvrdila, aniž by ukázala, o jaký zdrojový základ
+      se opírá. Čísla i vyzdvižené zdroje jdou z data/generated/source-catalog.json
+      (staví build-source-catalog.mjs z ručně psaných záznamů plus dopočtu ze
+      skutečných citací), takže nemůžou zastarat proti datům a v šabloně není
+      napsaný ani jeden název zdroje.
+
+      Záměrně se ukazuje i to, co zdroj NEdokládá: bez toho by výčet registrů
+      působil jako nárok na vševědoucnost, což je přesně opačné sdělení. -#}
+  {%- set catalog = load_data(path="data/generated/source-catalog.json") -%}
+  {%- if catalog.counts.entries > 0 %}
+  <section aria-labelledby="zdroje-heading" class="landing-section py-12 sm:py-16 lg:py-20">
+    <h2 id="zdroje-heading" class="text-center text-2xl font-bold text-white sm:text-3xl">Odkud to víme</h2>
+    <p class="mx-auto mt-3 max-w-xl text-center text-white/60">Doklad je vždy primární registr. Agregátor ukáže, kde hledat — cituje se ale to, na co ukazuje.</p>
+
+    <div class="mt-8 flex flex-wrap items-center justify-center gap-3 text-xs">
+      <span class="rounded bg-white/5 px-3 py-1.5 font-mono text-[#f3e5c0]">{{ catalog.counts.sourceRecords }} citací</span>
+      <span class="rounded border border-white/15 px-3 py-1.5 text-white/55">{{ catalog.counts.usedFamiliesOrOutlets }} rodin a outletů</span>
+      <span class="rounded border border-white/15 px-3 py-1.5 text-white/55">{{ catalog.counts.entries }} zdrojů s popsanými mezemi</span>
+    </div>
+
+    <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {%- for e in catalog.entries | filter(attribute="kind", value="primary-registry") %}
+      <a href="{{ config.base_url }}{{ e.route }}" class="group block rounded-xl border border-white/10 bg-white/[0.03] p-6 no-underline transition-colors hover:border-white/25 hover:bg-white/[0.05]">
+        <span class="font-mono text-xs text-[#f3e5c0]">primární registr</span>
+        <h3 class="mt-1 flex items-center gap-2 font-semibold text-white">
+          {{ e.title }}
+          <span class="text-white/55 transition-transform group-hover:translate-x-0.5" aria-hidden="true">&rarr;</span>
+        </h3>
+        {%- if e.proves | length > 0 %}
+        <p class="mt-2 text-sm leading-relaxed text-white/60">{{ e.proves | first }}</p>
+        {%- endif %}
+        {%- if e.doesNotProve | length > 0 %}
+        <p class="mt-2 text-sm leading-relaxed text-white/40"><span class="text-white/55">Nedokládá:</span> {{ e.doesNotProve | first }}</p>
+        {%- endif %}
+      </a>
+      {%- endfor %}
+    </div>
+
+    <p class="mx-auto mt-8 max-w-2xl text-center text-sm text-white/50">
+      <a href="{{ get_url(path='@/zdroje/_index.md') | safe }}" class="text-[#f3e5c0] underline">Celý katalog zdrojů</a> — včetně pastí, na které se v každém z nich najíždí, a přehledu, co dataset skutečně cituje.
+    </p>
+  </section>
+  {%- endif %}
   {#- Adresář místo zdi karet. Původně tu byla na každý dossier karta přes
       celou šířku se čtyřmi statistickými dlaždicemi a čtyřmi velkými
       tlačítky — při dvou dossierech vitrína, při dvaadvaceti stěna, kterou
@@ -228,12 +355,11 @@
   {% set tot_claims = landing.canonicalTotals.claims %}
   {% set tot_sources = landing.canonicalTotals.sources %}
   {% set tot_cases = landing.canonicalTotals.cases %}
-  {% set tot_gaps = landing.canonicalTotals.gaps %}
   {% set tot_entities = landing.canonicalTotals.entities %}
   {% set tot_relations = landing.canonicalTotals.relations %}
   <section aria-labelledby="dataset-heading" class="landing-section py-12 sm:py-16 lg:py-20">
     <h2 id="dataset-heading" class="text-center text-2xl font-bold text-white sm:text-3xl">Dataset v číslech</h2>
-    <p class="mx-auto mt-3 max-w-xl text-center text-white/60">Počty se generují při každém buildu ze všech dossierů — dlaždice vede tam, kde ty záznamy procházet.</p>
+    <p class="mx-auto mt-3 max-w-xl text-center text-white/60">Počty se generují při každém buildu ze všech {{ ev.dossiers }} dossierů — dlaždice vede tam, kde ty záznamy procházet.</p>
     {#- Dlaždice NESMÍ vést do registru jednoho dossieru: číslo je součet přes
         celý web, takže „846 Tvrzení" mířící na registr se 76 záznamy je slib,
         který cíl nesplní. Celowebové registry tvrzení/zdrojů/kauz/mezer
@@ -243,10 +369,16 @@
       {{ ui::stat_tile(value=tot_claims, label="Tvrzení", url=get_url(path="@/dossiers/_index.md")) }}
       {{ ui::stat_tile(value=tot_sources, label="Zdrojů", url=get_url(path="@/dossiers/_index.md")) }}
       {{ ui::stat_tile(value=tot_cases, label="Kauz", url=get_url(path="@/dossiers/_index.md")) }}
-      {{ ui::stat_tile(value=tot_gaps, label="Otevřených mezer", url=get_url(path="@/dossiers/_index.md")) }}
+      {#- „Otevřených" doslova: evidence.openGaps počítá jen neuzavřené
+          mezery, zatímco canonicalTotals.gaps je celý registr. -#}
+      {{ ui::stat_tile(value=ev.openGaps, label="Otevřených mezer", url=get_url(path="@/dossiers/_index.md")) }}
       {{ ui::stat_tile(value=tot_entities, label="Entit", url=get_url(path="@/entities/_index.md")) }}
       {{ ui::stat_tile(value=tot_relations, label="Vztahů", url=get_url(path="@/map/_index.md")) }}
     </div>
+    {#- Dlaždice „Entit" má sémantiku členství (entita ve víc dossierech se
+        počítá vícekrát) — bez téhle věty by nesouhlasila s počtem řádků
+        v registru entit a vypadalo by to jako chyba. -#}
+    <p class="mx-auto mt-4 max-w-2xl text-center text-sm text-white/50">Entity se počítají po dossierech: jedna entita vystupující ve víc dossierech se počítá vícekrát. Unikátních entit vede <a href="{{ get_url(path='@/entities/_index.md') | safe }}" class="underline decoration-white/30 underline-offset-2 hover:text-white">registr</a> {{ ev.entities }}, propojených <a href="{{ get_url(path='@/map/_index.md') | safe }}" class="underline decoration-white/30 underline-offset-2 hover:text-white">mapou vztahů</a>. Celý dataset se dá stáhnout nebo dotázat v <a href="{{ get_url(path='@/data/_index.md') | safe }}" class="underline decoration-white/30 underline-offset-2 hover:text-white">datové konzoli</a>.</p>
 
     <h3 class="mt-14 text-center text-lg font-semibold text-white">Poslední aktualizace</h3>
     <p class="mx-auto mt-2 max-w-xl text-center text-sm text-white/50">Append-only historie: co bylo kdy skutečně ověřeno a změněno.</p>
@@ -275,16 +407,13 @@
   <section aria-labelledby="verify-heading" class="landing-section py-12 sm:py-16 lg:py-20">
     <h2 id="verify-heading" class="text-center text-2xl font-bold text-white sm:text-3xl">Vyzkoušejte to: ověřte si tvrzení</h2>
     <p class="mx-auto mt-3 max-w-xl text-center text-white/60">Skutečný záznam z registru — projděte celý řetěz od výroku ke zdroji a historii.</p>
-    {#- Ukázka se nevybírá ručně: bere se nejnovější tvrzení kanonického
-        registru a jeho první citovaný zdroj, takže nikdy neukazuje na záznam,
-        který mezitím zmizel nebo zastaral. Žádné ID ani text tu nejsou
-        napevno. (T-028 fáze F: view modely místo section front matter;
-        provenance odkaz míří na content adaptér — jeho git historie nese
-        celou redakční historii záznamu, viz dossier-claim.html.) -#}
-    {% set demo = demo_claims_idx.rows | sort(attribute="identifier") | last %}
-    {% set demo_sources_idx = load_data(path="data/generated/views/dossiers/" ~ primary_canon ~ "/sources-index.json") %}
-    {% set demo_src_ref = demo.sources | first %}
-    {% set demo_src = demo_sources_idx.rows | filter(attribute="identifier", value=demo_src_ref.identifier) | first %}
+    {#- Ukázku vybírá view model (landing.demoClaim): kanonický vlastník
+        s nejsilnější evidencí a v něm přednostně korroborované tvrzení —
+        ukázkou důkazního standardu má být případ, kde totéž doložili dva
+        nezávislí vydavatelé. Žádné ID ani text tu nejsou napevno; provenance
+        odkaz míří na content adaptér, jehož git historie nese celou redakční
+        historii záznamu (viz dossier-claim.html). -#}
+    {%- if demo %}
     <div class="mt-8 overflow-hidden rounded-xl border border-white/10 bg-white/[0.03]">
       <div class="flex flex-wrap items-center gap-2 border-b border-white/10 p-4">
         <a href="{{ config.base_url }}{{ demo.route }}" class="id-chip font-mono text-xs font-bold text-[#f3e5c0] no-underline hover:underline">{{ demo.identifier }}</a>
@@ -297,20 +426,49 @@
           <span class="mt-1 block text-sm font-semibold text-white group-hover:text-[#f3e5c0]">Tvrzení a jeho stav →</span>
           <span class="mt-1 block text-xs text-white/50">Proč nese „{{ demo.statusLabel }}" a co k tomu bylo potřeba doložit.</span>
         </a>
-        {%- if demo_src %}
-        <a href="{{ config.base_url }}{{ demo_src.route }}" class="group bg-black p-4 no-underline transition-colors hover:bg-white/[0.04]">
+        <div class="bg-black p-4">
           <span class="font-mono text-[0.65rem] uppercase tracking-widest text-white/55">Krok 2</span>
-          <span class="mt-1 block text-sm font-semibold text-white group-hover:text-[#f3e5c0]">Zdroj {{ demo_src.identifier }} →</span>
-          <span class="mt-1 block text-xs text-white/50">{{ demo_src.outlet }}{% if demo_src.published %}, {{ demo_src.published }}{% endif %} — s přímým odkazem na článek.</span>
-        </a>
-        {%- endif %}
-        <a href="https://github.com/korczis/vomaste.cz/commits/master/content/dossiers/{{ primary_canon }}/claims/{{ demo.identifier | lower }}.md" class="group bg-black p-4 no-underline transition-colors hover:bg-white/[0.04]">
+          <span class="mt-1 block text-sm font-semibold text-white">Citované zdroje →</span>
+          <ul class="mt-2 space-y-1 text-xs text-white/50">
+            {%- for s in demo.sources %}
+            <li><a href="{{ config.base_url }}{{ s.route }}" class="text-white/70 no-underline hover:text-[#f3e5c0] hover:underline">{{ s.identifier }}</a> — {{ s.outlet }}{% if s.published %}, {{ s.published }}{% endif %}</li>
+            {%- endfor %}
+          </ul>
+          <span class="mt-2 block text-xs text-white/50">Každý s přímým odkazem na originál. Kolik z nich je nezávislých hlasů, řeší <a href="{{ get_url(path='@/koncepty/nezavisle-dolozeni.md') | safe }}" class="underline decoration-white/30 underline-offset-2 hover:text-white">důkazní standard</a>.</span>
+        </div>
+        <a href="https://github.com/korczis/vomaste.cz/commits/master/content/{{ demo.contentPath }}" class="group bg-black p-4 no-underline transition-colors hover:bg-white/[0.04]">
           <span class="font-mono text-[0.65rem] uppercase tracking-widest text-white/55">Krok 3</span>
           <span class="mt-1 block text-sm font-semibold text-white group-hover:text-[#f3e5c0]">Historie změn v Gitu →</span>
           <span class="mt-1 block text-xs text-white/50">Kdy záznam vznikl a co se v něm kdy změnilo.</span>
         </a>
       </div>
     </div>
+    {%- endif %}
+  </section>
+
+  {#- Mezery jako plnohodnotný obsah. Přehled, který ukazuje jen doložené,
+      vypadá úplněji, než je — a to je taky tvrzení, jen nevyslovené. Číslo
+      jde z landing.evidence.openGaps (otevřené mezery napříč kanonickými
+      dossiery), text konceptu z content/koncepty/registr-mezer.md. -#}
+  {% set gap_concept = get_page(path="koncepty/registr-mezer.md") %}
+  <section aria-labelledby="gaps-heading" class="landing-section py-12 sm:py-16 lg:py-20">
+    <h2 id="gaps-heading" class="text-center text-2xl font-bold text-white sm:text-3xl">Co tu doložené není</h2>
+    <p class="mx-auto mt-3 max-w-2xl text-center text-white/60">Co se nepodařilo doložit, se nezamlčí ani nedomyslí: vede se jako otevřená otázka s prioritou a datem poslední kontroly. Právě teď jich je otevřených <strong class="text-white">{{ ev.openGaps }}</strong> — vedle {{ ev.claims }} tvrzení a {{ ev.cases }} kauz.</p>
+    <div class="mx-auto mt-8 grid max-w-3xl gap-6 sm:grid-cols-2">
+      <div class="rounded-xl border border-white/10 bg-white/[0.03] p-6">
+        <h3 class="font-semibold text-white">Otevřenost není zjištění</h3>
+        <p class="mt-2 text-sm leading-relaxed text-white/60">Otevřená mezera neznamená „tady se něco skrývá" ani „tohle se neděje". Znamená přesně jedno: k tomuhle bodu zatím neexistuje citovatelný veřejný zdroj, který by umožnil závěr. Priorita popisuje hodnotu odpovědi pro pochopení, ne závažnost obvinění.</p>
+      </div>
+      <div class="rounded-xl border border-white/10 bg-white/[0.03] p-6">
+        <h3 class="font-semibold text-white">Mezeru zavře jen doklad</h3>
+        <p class="mt-2 text-sm leading-relaxed text-white/60">Neuzavírá ji čas, mlčení dotčené strany ani to, že se o věci přestalo psát. Když se odpověď nenajde, přepíše se datum kontroly a otázka zůstává otevřená — i po letech. Negativní výsledek je zjištění, ne selhání.</p>
+      </div>
+    </div>
+    <p class="mt-6 text-center text-sm">
+      <a href="{{ gap_concept.permalink | safe }}" class="text-[#f3e5c0] underline decoration-white/30 underline-offset-2">Jak registr mezer funguje →</a>
+      <span class="px-2 text-white/30" aria-hidden="true">·</span>
+      <a href="{{ get_url(path='@/dossiers/_index.md') | safe }}" class="text-[#f3e5c0] underline decoration-white/30 underline-offset-2">Projít mezery po dossierech →</a>
+    </p>
   </section>
 
   <section aria-labelledby="open-heading" class="landing-section py-12 sm:py-16 lg:py-20">
@@ -385,15 +543,15 @@
       </details>
       <details class="group rounded-xl border border-white/10 bg-white/[0.03] open:border-[#f3e5c0]/30">
         <summary class="flex cursor-pointer items-center justify-between gap-3 p-5 text-sm font-semibold text-white marker:content-none [&::-webkit-details-marker]:hidden">Jak poznám, že je tvrzení skutečně ověřené?<span class="text-white/55 transition-transform group-open:rotate-90" aria-hidden="true">&rsaquo;</span></summary>
-        <p class="border-t border-white/10 p-5 text-sm leading-relaxed text-white/70">Podle stavu u záznamu, ne podle tónu textu. <strong class="text-white">Ověřeno více zdroji</strong> znamená nezávislé potvrzení od více vydavatelů — a validátor to vynucuje počtem citovaných zdrojů, není to redakční dojem. <strong class="text-white">1 zdroj</strong>, <strong class="text-white">Citace</strong>, <strong class="text-white">Sporné</strong> a <strong class="text-white">Názor</strong> tvrdí výslovně méně. Co který stav znamená: <a href="/koncepty/" class="underline decoration-white/30 underline-offset-2 hover:text-white">přehled stavů</a>.</p>
+        <p class="border-t border-white/10 p-5 text-sm leading-relaxed text-white/70">Podle stavu u záznamu, ne podle tónu textu. <strong class="text-white">Ověřeno více zdroji</strong> znamená nezávislé potvrzení od dvou různých vydavatelů — a validátor to vynucuje, není to redakční dojem: hledá dvojici zdrojů, která se liší původem materiálu i vydavatelem. <strong class="text-white">1 zdroj</strong>, <strong class="text-white">Citace</strong>, <strong class="text-white">Sporné</strong> a <strong class="text-white">Názor</strong> tvrdí výslovně méně. Jak přesně se to počítá: <a href="{{ get_url(path='@/koncepty/nezavisle-dolozeni.md') | safe }}" class="underline decoration-white/30 underline-offset-2 hover:text-white">nezávislé doložení</a>; přehled všech stavů je v <a href="{{ get_url(path='@/koncepty/_index.md') | safe }}" class="underline decoration-white/30 underline-offset-2 hover:text-white">konceptech</a>.</p>
       </details>
       <details class="group rounded-xl border border-white/10 bg-white/[0.03] open:border-[#f3e5c0]/30">
         <summary class="flex cursor-pointer items-center justify-between gap-3 p-5 text-sm font-semibold text-white marker:content-none [&::-webkit-details-marker]:hidden">Počítá se pět článků o téže věci jako pět potvrzení?<span class="text-white/55 transition-transform group-open:rotate-90" aria-hidden="true">&rsaquo;</span></summary>
-        <p class="border-t border-white/10 p-5 text-sm leading-relaxed text-white/70">Ne. Zdroje, které přebírají tutéž agenturní zprávu nebo tentýž článek, patří do jedné <strong class="text-white">rodiny</strong> a počítají se jako <strong class="text-white">jedno</strong> nezávislé doložení. Bez toho by stačilo, aby jednu zprávu převzalo pět webů, a tvrzení by vypadalo pětinásobně doložené. Rodina je editorské určení, ne funkce vydavatele — dva různí vydavatelé mohou sdílet rodinu a jeden vydavatel může vydat dvě nezávislé reportáže.</p>
+        <p class="border-t border-white/10 p-5 text-sm leading-relaxed text-white/70">Ne. Zdroje, které přebírají tutéž agenturní zprávu nebo tentýž článek, patří do jedné <strong class="text-white">rodiny</strong> a počítají se jako <strong class="text-white">jedno</strong> nezávislé doložení. Bez toho by stačilo, aby jednu zprávu převzalo pět webů, a tvrzení by vypadalo pětinásobně doložené. Rodina je editorské určení, ne funkce vydavatele — dva různí vydavatelé mohou sdílet rodinu a jeden vydavatel může vydat dvě nezávislé reportáže. Celé pravidlo i to, co se stalo, když se podle něj revidoval už publikovaný obsah: <a href="{{ get_url(path='@/koncepty/nezavisle-dolozeni.md') | safe }}" class="underline decoration-white/30 underline-offset-2 hover:text-white">nezávislé doložení</a>.</p>
       </details>
       <details class="group rounded-xl border border-white/10 bg-white/[0.03] open:border-[#f3e5c0]/30">
         <summary class="flex cursor-pointer items-center justify-between gap-3 p-5 text-sm font-semibold text-white marker:content-none [&::-webkit-details-marker]:hidden">Proč má u některých dossierů skoro každý registr jen pár záznamů?<span class="text-white/55 transition-transform group-open:rotate-90" aria-hidden="true">&rsaquo;</span></summary>
-        <p class="border-t border-white/10 p-5 text-sm leading-relaxed text-white/70">Protože rozsah je omezený <strong class="text-white">autorizací</strong>, ne rozsahem toho, co se o někom dá najít. Každý subjekt má v <a href="https://github.com/korczis/vomaste.cz/blob/master/AGENTS.md" {A}>append-only logu</a> zapsáno, co přesně smí dossier pokrývat. Prázdný registr znamená „sem jsme ještě nedošli", ne „nic tam není" — a rozdíl mezi tím je celý smysl <a href="/koncepty/registr-mezer/" {A}>registru mezer</a>.</p>
+        <p class="border-t border-white/10 p-5 text-sm leading-relaxed text-white/70">Protože rozsah je omezený <strong class="text-white">autorizací</strong>, ne rozsahem toho, co se o někom dá najít. Každý subjekt má v <a href="https://github.com/korczis/vomaste.cz/blob/master/AGENTS.md" class="underline decoration-white/30 underline-offset-2 hover:text-white">append-only logu</a> zapsáno, co přesně smí dossier pokrývat. Prázdný registr znamená „sem jsme ještě nedošli", ne „nic tam není" — a rozdíl mezi tím je celý smysl <a href="{{ get_url(path='@/koncepty/registr-mezer.md') | safe }}" class="underline decoration-white/30 underline-offset-2 hover:text-white">registru mezer</a>.</p>
       </details>
       <details class="group rounded-xl border border-white/10 bg-white/[0.03] open:border-[#f3e5c0]/30">
         <summary class="flex cursor-pointer items-center justify-between gap-3 p-5 text-sm font-semibold text-white marker:content-none [&::-webkit-details-marker]:hidden">Kdo rozhoduje, kdo se na web dostane?<span class="text-white/55 transition-transform group-open:rotate-90" aria-hidden="true">&rsaquo;</span></summary>
@@ -421,7 +579,7 @@
       <div class="flex w-full flex-col items-stretch gap-3 sm:w-auto sm:flex-row">
         <a href="https://github.com/korczis/vomaste.cz/fork" class="inline-flex items-center justify-center gap-2 rounded-lg bg-black px-6 py-3.5 text-base font-bold text-[#f3e5c0] no-underline transition-colors hover:bg-black/80 sm:py-3 sm:text-sm">Forknout na GitHubu</a>
         <a href="https://github.com/korczis/vomaste.cz/blob/master/CONTRIBUTING.md" class="inline-flex items-center justify-center rounded-lg border-2 border-black/30 px-6 py-3.5 text-base font-semibold text-black no-underline transition-colors hover:border-black hover:bg-black/5 sm:py-3 sm:text-sm">Jak přispět</a>
-        <a href="{{ get_url(path='@/dossiers/_index.md') | safe }}" class="inline-flex items-center justify-center rounded-lg border-2 border-black/30 px-6 py-3.5 text-base font-semibold text-black no-underline transition-colors hover:border-black hover:bg-black/5 sm:py-3 sm:text-sm">Otevřené otázky ({{ tot_gaps }})</a>
+        <a href="{{ get_url(path='@/dossiers/_index.md') | safe }}" class="inline-flex items-center justify-center rounded-lg border-2 border-black/30 px-6 py-3.5 text-base font-semibold text-black no-underline transition-colors hover:border-black hover:bg-black/5 sm:py-3 sm:text-sm">Otevřené otázky ({{ ev.openGaps }})</a>
       </div>
     </div>
   </section>
@@ -456,6 +614,8 @@
             <li><a href="{{ get_url(path='@/entities/_index.md') | safe }}" class="text-white/70 no-underline hover:text-white hover:underline">Entity</a></li>
             <li><a href="{{ get_url(path='@/map/_index.md') | safe }}" class="text-white/70 no-underline hover:text-white hover:underline">Globální mapa vztahů</a></li>
             <li><a href="{{ get_url(path='@/koncepty/_index.md') | safe }}" class="text-white/70 no-underline hover:text-white hover:underline">Koncepty a metodika</a></li>
+            <li><a href="{{ get_url(path='@/data/_index.md') | safe }}" class="text-white/70 no-underline hover:text-white hover:underline">Data a SQL konzole</a></li>
+            <li><a href="{{ get_url(path='@/dokumentace/_index.md') | safe }}" class="text-white/70 no-underline hover:text-white hover:underline">Dokumentace projektu</a></li>
             <li><a href="{{ get_url(path='sitemap.xml') | safe }}" class="text-white/50 no-underline hover:text-white hover:underline">Sitemap</a></li>
           </ul>
         </nav>

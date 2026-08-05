@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source-catalog-entry.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/zdroje/vestnik-verejnych-zakazek",
+  "@type": "vomaste:SourceCatalogEntry",
+  "recordType": "sourceCatalogEntry",
+  "identifier": "vestnik-verejnych-zakazek",
+  "title": "Věstník veřejných zakázek (VVZ)",
+  "operator": "Ministerstvo pro místní rozvoj ČR",
+  "kind": "primary-registry",
+  "jurisdiction": "CZ",
+  "access": "open",
+  "authentication": "none",
+  "url": "https://vvz.nipez.cz/verejne-zakazky",
+  "apiUrl": "https://api.vvz.nipez.cz/api/submissions/search",
+  "order": 30,
+  "proves": [
+    "Že byla zakázka zadavatelem oznámena, opravena, zadána nebo zrušena — každý úkon jako samostatný formulář s datem.",
+    "Průběh zadávacího řízení v čase, protože jedna zakázka kumuluje více formulářů (oznámení, opravy, výsledek, zrušení)."
+  ],
+  "doesNotProve": [
+    "Že zakázka byla plněna nebo zaplacena. K tomu slouží registr smluv.",
+    "Že v řízení bylo cokoli závadného. Opravný formulář (F14) je běžná součást zadávacího procesu, ne indicie."
+  ],
+  "traps": [
+    {
+      "title": "Vyhledávací endpoint TIŠE IGNORUJE nepodporované filtry",
+      "detail": "Dotaz na zakázky jednoho zadavatele vrátí tutéž nefiltrovanou stránku jako dotaz bez filtru — a ta míchá zadavatele dohromady. Ověřeno proti živé službě. Filtr na dodavatele, zadavatele, CPV kód ani název tedy **nelze použít**: výsledek vypadá jako nález, ale je to náhodný výřez všeho. Fungují jen `data.evCisloZakazkyVvz`, `variableId`, `publicId` a `page`."
+    },
+    {
+      "title": "Jedna zakázka není jeden záznam",
+      "detail": "Číslo zakázky (`Z2022-009997`) pojmenovává několik formulářů, číslo formuláře (`F2022-015377`) jeden. Kdo z čísla zakázky vezme první formulář, zahodí zbytek historie, aniž by to bylo vidět."
+    },
+    {
+      "title": "Starý věstník už neexistuje",
+      "detail": "Doména `vestnikverejnychzakazek.cz` se nepřekládá. Kód, který na ni míří, hlásí poruchu navždy — a pokud má náhradní data, vydává za výsledek smyšlenku."
+    }
+  ],
+  "howToSearch": "Vyhledávej podle čísla zakázky nebo formuláře. Chceš-li zakázky konkrétního dodavatele, jdi oklikou přes registr smluv a odtud na čísla zakázek; přímý filtr na dodavatele věstník neumí a bude tvářit, že ano.",
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Věstník je primární evidence zadávacích řízení. Jeho jednostránková aplikace stojí na veřejném, neautentizovaném JSON API, které lze číst přímo.\n\nTiché ignorování filtrů je nejnebezpečnější vlastnost tohoto zdroje: nevrací chybu, vrací data. Odpověď na otázku, kterou služba neumí zodpovědět, je proto nutné **odmítnout**, ne aproximovat — jinak se z nefiltrovaného výpisu stane „zjištění\"."
+    }
+  ]
+}

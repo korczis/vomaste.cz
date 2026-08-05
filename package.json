@@ -33,6 +33,8 @@
     "build:search-index": "node scripts/dossier/build-search-index.mjs",
     "build:data-exports": "node scripts/dossier/build-data-exports.mjs",
     "build:jsonld-exports": "node scripts/dossier/build-jsonld-exports.mjs",
+    "build:source-catalog": "node scripts/dossier/build-source-catalog.mjs",
+    "verify:source-catalog": "node scripts/dossier/build-source-catalog.mjs --check",
     "verify:export": "node scripts/dossier/verify-export.mjs",
     "build:graph-projections": "node scripts/dossier/build-graph-projections.mjs",
     "validate:graph-projections": "node scripts/dossier/validate-graph-projections.mjs",

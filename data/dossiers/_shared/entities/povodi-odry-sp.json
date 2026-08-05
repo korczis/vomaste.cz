@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "povodi-odry-sp",
+  "@id": "https://vomaste.cz/id/entities/povodi-odry-sp",
+  "entityId": "povodi-odry-sp",
+  "title": "Povodí Odry, státní podnik",
+  "entityType": "organization",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "referenced",
+  "dossiers": [
+    "martin-pavlik"
+  ],
+  "order": 470,
+  "description": "Povodí Odry, státní podnik (IČO 70890021) — kontextový záznam zveřejňujícího subjektu z registru smluv, ne dossier.",
+  "provenance": {
+    "discoveredAt": "2026-08-05",
+    "discoveredVia": [
+      "registr-smluv-party-04449461-2026-08-05"
+    ],
+    "depth": 3
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Státní podnik zapsaný ve veřejném rejstříku pod IČO 70890021, sídlo Ostrava. V datasetu se objevuje jako **zveřejňující smluvní strana** v registru smluv.\n\n**Kontextová entita, ne předmět šetření.** Záznam eviduje jen to, že subjekt v registru smluv vystupuje. Nenese tvrzení o jeho hospodaření ani o čemkoli závadném; zveřejňování smluv je zákonná povinnost, ne indicie."
+    }
+  ],
+  "externalIds": {
+    "ares": "70890021"
+  }
+}

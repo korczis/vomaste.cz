@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% import "macros/ui.html" as ui %}
+
+{#- Full page for ONE catalogue source: what it proves, what it does not, and
+    the traps someone already hit in it.
+
+    Everything except the prose body comes from data/generated/source-catalog.json,
+    matched by the page's own extra.catalog_entry — no source name, URL or trap
+    is written in this template, so adding a source needs no change here. The
+    view model is loaded once per build by Zola, so the lookup below costs one
+    parse for the whole site rather than one per page. -#}
+
+{% block content %}
+{%- set catalog = load_data(path="data/generated/source-catalog.json") -%}
+{%- set entry = catalog.entries | filter(attribute="identifier", value=page.extra.catalog_entry) | first -%}
+
+<main class="mx-auto max-w-2xl px-6 py-12 text-white">
+  {{ ui::page_header(title=page.title, breadcrumb_items=[
+    "Domů::" ~ get_url(path="@/_index.md"),
+    "Zdroje::" ~ get_url(path="@/zdroje/_index.md"),
+    page.title,
+  ], description=page.description) }}
+
+  {%- if entry %}
+  <p class="mb-8 flex flex-wrap items-center gap-2 text-xs">
+    <span class="rounded bg-white/5 px-2 py-1 font-mono text-[#f3e5c0]">{{ entry.kind }}</span>
+    <span class="rounded border border-white/15 px-2 py-1 text-white/50">{{ entry.access }}</span>
+    {%- if entry.operator %}
+    <span class="rounded border border-white/15 px-2 py-1 text-white/50">{{ entry.operator }}</span>
+    {%- endif %}
+    {%- if entry.usage %}
+    <span class="rounded border border-white/15 px-2 py-1 text-white/50">{{ entry.usage.count }}× v datasetu</span>
+    {%- endif %}
+  </p>
+
+  <p class="mb-8 flex flex-wrap gap-3 text-sm">
+    <a href="{{ entry.url }}" rel="nofollow noopener" class="rounded-lg border border-white/15 px-3 py-1.5 text-white/70 no-underline hover:border-white/30 hover:text-white">Otevřít zdroj</a>
+    {%- if entry.apiUrl %}
+    <a href="{{ entry.apiUrl }}" rel="nofollow noopener" class="rounded-lg border border-white/15 px-3 py-1.5 text-white/70 no-underline hover:border-white/30 hover:text-white">Strojové rozhraní</a>
+    {%- endif %}
+  </p>
+  {%- endif %}
+
+  <article class="dossier-prose">
+    {{ page.content | safe }}
+  </article>
+
+  {#- Sub-registers are data, not prose: rendering them from the view model
+      keeps the list identical to what the adapters actually query. -#}
+  {%- if entry and entry.subRegisters | length > 0 %}
+  <section aria-labelledby="subregistry-heading" class="mt-12 border-t border-white/10 pt-6">
+    <h2 id="subregistry-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Sub-registry</h2>
+    <ul class="grid gap-2 text-sm text-white/70 sm:grid-cols-2">
+      {%- for sr in entry.subRegisters %}
+      <li class="rounded-lg border border-white/10 bg-white/[0.03] px-3 py-2">
+        <span class="font-mono text-[#f3e5c0]">{{ sr.code }}</span> — {{ sr.label }}
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- endif %}
+
+  {{ ui::back_link_footer(url=get_url(path="@/zdroje/_index.md"), label="Zpět na zdroje") }}
+</main>
+{% endblock content %}

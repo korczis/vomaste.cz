@@ -40,6 +40,12 @@ FAST_CHECKS=(
   build:navigation
   validate:navigation
   lint:component-reuse
+  # Katalog zdrojů má tři generované výstupy (stránky /zdroje/, markdown pro
+  # agenty, view model pro UI a JSON-LD). Kdo změní data/source-catalog/ nebo
+  # přidá citaci a nepřegeneruje, zacommituje výstup, který o datech lhal.
+  # V build pipeline by kontrola stát nemohla — tam běží hned po generátoru a
+  # nikdy by neselhala; smysl má jen tady, před commitem.
+  verify:source-catalog
 )
 
 for check in "${FAST_CHECKS[@]}"; do

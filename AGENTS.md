@@ -462,6 +462,40 @@ only the routing envelope.
 8. No speculation or hedged guessing where sources are silent — that
    belongs in the gaps registry, not the claims registry.
 
+### Where to search: the source catalogue
+
+Editorial rule 1 says every claim cites a named source. The catalogue answers
+the question that comes before it — **which source, and what can it actually
+carry**.
+
+- Canonical records: `data/source-catalog/*.json`, one per registry, tool or
+  aggregator. Each carries `proves`, `doesNotProve`, `traps` and
+  `howToSearch` — the part that cannot be derived from data and that someone
+  had to learn, usually the hard way.
+- Generated from them: `docs/osint/SOURCE_CATALOG.md` (read this in the
+  repository), `/zdroje/` on the site (one page per source), and
+  `data/generated/source-catalog.json` (the view model both render from, and
+  the JSON-LD `Dataset` node each page emits).
+- `npm run build:source-catalog` regenerates; `npm run verify:source-catalog`
+  fails if the committed output has drifted from the data.
+
+Two rules follow from it and bind any research pass:
+
+1. **The doclad is always the primary registry.** An aggregator is a
+   signpost — it shows where to look, and then you cite what it points at.
+   A claim sourced only to an aggregator stays at `1 ZDROJ`.
+2. **A source that cannot answer must be refused, not approximated.** Some
+   services return data for questions they do not actually support — the VVZ
+   search endpoint silently ignores filters it cannot apply and hands back an
+   unfiltered page. Presenting that as a finding is worse than saying the
+   question cannot be answered from this source.
+
+The "what the dataset actually cites" table is computed from
+`data/dossiers/**/sources/**` at every build, never hand-maintained, so it
+cannot claim coverage the data does not have. A row without a catalogue entry
+is not an error: it is the honest statement that a source is in use and its
+limits are not written down yet.
+
 ## Authorizing a new dossier subject or expanding scope
 
 The default is to cover no one. Adding a new subject, or expanding an

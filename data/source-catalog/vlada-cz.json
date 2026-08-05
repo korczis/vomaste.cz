@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source-catalog-entry.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/zdroje/vlada-cz",
+  "@type": "vomaste:SourceCatalogEntry",
+  "recordType": "sourceCatalogEntry",
+  "identifier": "vlada-cz",
+  "title": "Vláda České republiky",
+  "operator": "Úřad vlády ČR",
+  "kind": "primary-document",
+  "jurisdiction": "CZ",
+  "access": "open",
+  "authentication": "none",
+  "url": "https://vlada.gov.cz/",
+  "order": 120,
+  "outlets": [
+    "Vláda České republiky (vlada.gov.cz)",
+    "Vláda České republiky",
+    "Úřad vlády ČR"
+  ],
+  "proves": [
+    "Znění usnesení vlády, jeho číslo a datum; složení vlády a personální změny; oficiální tiskové zprávy."
+  ],
+  "doesNotProve": [
+    "Že usnesení bylo naplněno.",
+    "Nestrannost. Tiskové zprávy vlády jsou stanovisko strany, která je vydala, a jako takové se citují."
+  ],
+  "traps": [
+    {
+      "title": "Doména se změnila",
+      "detail": "Starší odkazy míří na `vlada.cz`; kanonická doména je dnes `vlada.gov.cz`. Odkaz je nutné ověřit, ne mechanicky přepsat."
+    },
+    {
+      "title": "Tisková zpráva není usnesení",
+      "detail": "Usnesení má číslo a datum a je dohledatelné v databázi; tisková zpráva je jeho výklad. Tvrzení má citovat usnesení."
+    }
+  ],
+  "howToSearch": "Pro rozhodnutí použij databázi usnesení a cituj číslo a datum. Tiskovou zprávu použij jen jako doklad toho, že vláda něco veřejně sdělila — a v tvrzení uveď, že jde o její vlastní stanovisko.",
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Primární pramen pro exekutivní rozhodnutí. Hodí se dvojí opatrnost: dokládá autenticky, co vláda rozhodla a řekla, ale u sporných témat je zároveň stranou sporu."
+    }
+  ]
+}

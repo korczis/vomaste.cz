@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source-catalog-entry.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/zdroje/hlidac-statu",
+  "@type": "vomaste:SourceCatalogEntry",
+  "recordType": "sourceCatalogEntry",
+  "identifier": "hlidac-statu",
+  "title": "Hlídač státu",
+  "operator": "Hlídač státu, z. ú.",
+  "kind": "aggregator",
+  "jurisdiction": "CZ",
+  "access": "open",
+  "authentication": "token-for-api",
+  "url": "https://www.hlidacstatu.cz/",
+  "apiUrl": "https://api.hlidacstatu.cz/",
+  "order": 60,
+  "proves": [
+    "Že v jím indexovaných veřejných databázích existuje záznam odpovídající dotazu, a v jaké souhrnné podobě."
+  ],
+  "doesNotProve": [
+    "Nic sám o sobě. Je to agregátor primárních registrů; doklad je vždy až ten primární záznam, na který odkazuje.",
+    "Úplnost ani aktuálnost svých indexů."
+  ],
+  "traps": [
+    {
+      "title": "Webové API vyžaduje token",
+      "detail": "Neautentizované volání vrací 404, ne 401 — vypadá to jako neexistující endpoint, ne jako chybějící oprávnění."
+    },
+    {
+      "title": "Shoda jména není shoda osoby",
+      "detail": "Agregované profily spojují záznamy podle jména. U běžných jmen slučují víc osob dohromady; použij je jako stopu, ne jako doklad."
+    }
+  ],
+  "howToSearch": "Dobrý vstupní bod pro orientaci, kde vůbec hledat. Každé zjištění pak dohledej v primárním registru a cituj ten.",
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Hlídač státu je v tomto katalogu veden jako **rozcestník, ne jako doklad**. Jeho hodnota je v tom, že rychle ukáže, ve kterých veřejných databázích má subjekt stopu; hodnota důkazní patří vždy až primárnímu registru."
+    }
+  ]
+}

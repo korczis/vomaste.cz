@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source-catalog-entry.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/zdroje/katastr-nemovitosti",
+  "@type": "vomaste:SourceCatalogEntry",
+  "recordType": "sourceCatalogEntry",
+  "identifier": "katastr-nemovitosti",
+  "title": "Katastr nemovitostí (ČÚZK)",
+  "operator": "Český úřad zeměměřický a katastrální",
+  "kind": "primary-registry",
+  "jurisdiction": "CZ",
+  "access": "restricted",
+  "authentication": "captcha-or-paid",
+  "url": "https://nahlizenidokn.cuzk.cz/",
+  "order": 50,
+  "proves": [
+    "Vlastnictví konkrétní nemovitosti, zástavní práva a věcná břemena — pokud se k výpisu vůbec dostaneš."
+  ],
+  "doesNotProve": [
+    "Nic, dokud výpis nemáš. Dohady o vlastnictví z adresy sídla nebo bydliště jsou spekulace, ne zjištění."
+  ],
+  "traps": [
+    {
+      "title": "Dálkový přístup k vlastníkům je placený a chráněný captchou",
+      "detail": "Bezplatné nahlížení ukazuje parcelu, ne úplný list vlastnictví s osobními údaji. Neexistuje veřejné strojové rozhraní, které by vrátilo vlastníka podle jména."
+    },
+    {
+      "title": "Vyhledávání podle osoby veřejně neexistuje",
+      "detail": "Katastr neumožňuje veřejně zjistit „co všechno vlastní osoba X\". Kdo takový výstup nabízí, čerpá z jiného, obvykle komerčního zdroje — a ten je nutné uvést místo katastru."
+    }
+  ],
+  "howToSearch": "Použij jen tehdy, když máš konkrétní parcelu nebo číslo listu vlastnictví z jiného zdroje. Jako nástroj objevování je pro tenhle projekt nedostupný a je poctivější to přiznat než obcházet.",
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Katastr je v tomto katalogu veden **jako doložený strop dosažitelnosti**. Vlastnictví nemovitostí je pro majetkové rešerše klíčové, ale veřejná bezplatná cesta k němu podle osoby neexistuje.\n\nZáznam tu je proto, aby se otázka „proč tam nejsou nemovitosti\" nemusela pokládat znovu při každém dossieru."
+    }
+  ]
+}

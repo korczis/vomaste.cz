@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/claims/CLM-07",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-07",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-pavlik"
+  },
+  "text": "Registr smluv eviduje k 5. 8. 2026 celkem 119 záznamů, v nichž je HYDROPROGRESS, s.r.o. (IČO 04449461) smluvní protistranou; mezi zveřejňujícími subjekty jsou Povodí Odry, s.p., Lesy České republiky, s.p. a Povodí Labe, s.p.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/sources/SRC-03"
+    }
+  ],
+  "subjects": [
+    "martin-pavlik"
+  ],
+  "order": 7,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Počet přebírá údaj, který registr sám uvádí u výsledku dotazu na IČO protistrany. Jmenované zveřejňující subjekty jsou odečteny přímo z výsledků; výčet **není úplný** a netvrdí, že jiní zadavatelé neexistují.\n\nPředmětem smluv je podle jejich názvů zpracování projektové dokumentace ve vodním hospodářství, což odpovídá zapsanému předmětu podnikání. Dodávat státním podnikům je legální a běžná činnost; tvrzení nevyjadřuje podezření. Souhrnná hodnota smluv se neuvádí — viz GAP-02."
+    }
+  ]
+}
