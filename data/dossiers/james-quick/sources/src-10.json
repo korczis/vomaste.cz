@@ -1,0 +1,10 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json", "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld", "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-10", "@type": "vomaste:Source", "recordType": "source", "identifier": "SRC-10",
+  "dossier": { "@id": "https://vomaste.cz/id/dossiers/james-quick" },
+  "title": "SRC-10 — Česká justice: ÚOOÚ znepřístupnil Centrální registr dlužníků, ten se přesunul do Ruska", "description": "Zpravodajský text z 14. srpna 2020 popisující, že uložená opatření k nápravě nebyla provedena a jak na to Úřad pro ochranu osobních údajů reagoval.",
+  "outlet": "Česká justice", "sourceType": "odborné právní zpravodajství",
+  "url": "https://www.ceska-justice.cz/2020/08/uoou-znepristupnil-centralni-registr-dluzniku-ten-se-presunul-do-ruska/", "published": "2020-08-14", "retrieved": "2026-08-05",
+  "claims": [{ "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-09" }], "subjects": ["james-quick"],
+  "content": [{ "type": "markdown", "value": "Doplněno revizí 2026-08-05, protože dossier do té doby končil u kontrolních zjištění z roku 2018 a neuváděl, co se s věcí dělo dál. Text je vlastní zpravodajství autorky Ireny Válové, nikoli agenturní přebírka, a doslova cituje prohlášení ÚOOÚ k dalšímu postupu ve věci systému CERD. Zdroj nejmenuje žádnou fyzickou osobu — mluví o provozovateli a o správci osobních údajů — takže sám o sobě nespojuje popsaný procesní vývoj s Jamesem Quickem; toto propojení nese odděleně SRC-01. Zdroj rovněž nedokládá, jak sankční řízení skončilo, protože v době vydání rozhodnutí teprve vznikalo." }], "order": 10
+}

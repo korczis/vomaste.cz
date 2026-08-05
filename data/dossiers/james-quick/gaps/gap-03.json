@@ -1,0 +1,18 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/gaps/GAP-03",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-03",
+  "dossier": { "@id": "https://vomaste.cz/id/dossiers/james-quick" },
+  "title": "GAP-03 — Jak skončilo sankční řízení ÚOOÚ ve věci CERD",
+  "description": "Dohledat rozhodnutí, kterým Úřad pro ochranu osobních údajů uzavřel řízení o sankci za nepřijetí opatření k nápravě u systému CERD, včetně toho, komu byla sankce uložena a zda je pravomocná.",
+  "priority": "vysoká",
+  "checked": "2026-08-05",
+  "claims": [{ "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-09" }],
+  "subjects": ["james-quick"],
+  "content": [{ "type": "markdown", "value": "Zdroj z roku 2020 (SRC-10) končí ve chvíli, kdy úřad rozhodnutí ve věci teprve připravoval. K 5. srpnu 2026 nebyl přímo otevřen žádný veřejný dokument — rozhodnutí ÚOOÚ, výroční zpráva ani soudní přezkum — který by uváděl, jak sankční řízení dopadlo, jaká sankce byla případně uložena a vůči komu. Bez toho zůstává procesní linka nedokončená a dossier ji nesmí uzavírat žádným domnělým výsledkem. Zvlášť platí, že ze zahájení řízení nelze dovozovat uloženou pokutu ani její pravomocnost. Otevřená je i navazující otázka, zda se případný výrok vztahoval na fyzickou osobu, kterou kontrola z roku 2018 označila za správce." }],
+  "order": 3
+}

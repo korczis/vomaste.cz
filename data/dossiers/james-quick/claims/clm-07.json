@@ -7,11 +7,11 @@
   "recordType": "claim",
   "identifier": "CLM-07",
   "dossier": { "@id": "https://vomaste.cz/id/dossiers/james-quick" },
-  "text": "ČT24 v listopadu 2008 uvedla, že Jiří Jehlička podal trestní oznámení na bývalého poslance Jana Moravu a dříve také na Stanislava Grosse a Jiřího Čunka; policie Moravovu věc následně odložila a Grossův případ už byl podle článku odložen dříve.",
+  "text": "ČT24 23. ledna 2009 uvedla, že Jiří Jehlička podal trestní oznámení na bývalého poslance Jana Moravu a že v minulosti podal několik trestních oznámení na politiky, například na Stanislava Grosse; u Moravovy věci podle článku státní zastupitelství uzavřelo, že nejsou dány důvody pro zahájení úkonů trestního řízení, a Grossův případ policie odložila.",
   "status": "status-single",
   "statusLabel": "1 ZDROJ",
   "sources": [{ "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-07" }],
   "subjects": ["james-quick"],
   "order": 7,
-  "content": [{ "type": "markdown", "value": "Podání trestního oznámení je veřejně doložený kontakt s kauzami tří politiků, nikoli důkaz osobního nebo obchodního vztahu. U Moravy a Grosse záznam vždy nese současně i zveřejněný procesní výsledek, aby samotné oznámení nevytvářelo dojem prokázaného jednání." }]
+  "content": [{ "type": "markdown", "value": "Podání trestního oznámení je veřejně doložený kontakt s kauzami dvou politiků, nikoli důkaz osobního nebo obchodního vztahu. U obou záznam nese současně i zveřejněný procesní výsledek, aby samotné oznámení nevytvářelo dojem prokázaného jednání. Formulace přesně odlišuje dvě různé procesní situace: u Jana Moravy státní zastupitelství vůbec nezahájilo úkony trestního řízení, u Stanislava Grosse policie věc odložila — tvrzení proto neslučuje obojí pod jediné slovo „odloženo“. Revize 2026-08-05: z tvrzení bylo odstraněno jméno Jiřího Čunka, protože citovaný článek ČT24 ho neuvádí; dokud pro ně nebude přímo otevřený zdroj, patří tato otázka do GAP-04, nikoli do tvrzení. Opraveno také datum vydání (23. 1. 2009 místo dřívějšího „v listopadu 2008“)." }]
 }

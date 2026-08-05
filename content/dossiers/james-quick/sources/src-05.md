@@ -14,4 +14,4 @@ record_type = "source"
 lang = "cs"
 src_id = "SRC-05"
 +++
-Zdroj dokumentuje podobu a přesměrování domén v době vydání a obsahuje přímé vyjádření Jiřího Jehličky za provozovatele. Titulek je redakční formulace České televize, nikoli právní kvalifikace dossieru. Bez archivních DNS a vlastnických záznamů dossier nepřidává další závěry o dnešním držení domén.
+Zdroj dokumentuje podobu a přesměrování domén v době vydání a obsahuje přímé vyjádření Jiřího Jehličky za provozovatele. Titulek je redakční formulace České televize, nikoli právní kvalifikace dossieru. Bez archivních DNS a vlastnických záznamů dossier nepřidává další závěry o dnešním držení domén. Datum vydání ověřeno přímo v hlavičce článku: 10. 4. 2011; dřívější údaj 2011-06-06 a formulace „v červnu 2011“ byly chybné a byly opraveny (revize 2026-08-05).

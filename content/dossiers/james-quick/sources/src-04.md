@@ -14,4 +14,4 @@ record_type = "source"
 lang = "cs"
 src_id = "SRC-04"
 +++
-Nezávislá redakční reportáž popisuje dobový stav soukromého registru, pohled bank a zahraniční korporátní vazbu. Článek sám upozorňuje, že roli Jiřího Jehličky považuje redakce za zřejmou, ale tehdy nebyla úředně prokázána. Tuto hranici dossier zachovává a netvrdí více, než zdroj skutečně doložil.
+Nezávislá redakční reportáž popisuje dobový stav soukromého registru, pohled bank a zahraniční korporátní vazbu. Článek sám upozorňuje, že roli Jiřího Jehličky považuje redakce za zřejmou, ale tehdy nebyla úředně prokázána. Tuto hranici dossier zachovává a netvrdí více, než zdroj skutečně doložil. Pozor na ověřitelnost: archivní verze je za paywallem a anonymnímu čtenáři se zobrazí jen část textu — ověřená byla úvodní, veřejně přístupná pasáž (neuznávání výpisů finančními institucemi a registrace provozující firmy v USA); zbytek článku nebyl přímo otevřen a nesmí být podkladem dalších tvrzení.

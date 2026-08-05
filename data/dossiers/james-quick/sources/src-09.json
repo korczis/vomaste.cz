@@ -1,0 +1,10 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json", "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld", "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-09", "@type": "vomaste:Source", "recordType": "source", "identifier": "SRC-09",
+  "dossier": { "@id": "https://vomaste.cz/id/dossiers/james-quick" },
+  "title": "SRC-09 — ÚOOÚ: Úřad odhalil u CERD nezákonné nakládání s osobními údaji", "description": "Tisková zpráva Úřadu pro ochranu osobních údajů z 20. září 2018 shrnující závěry kontroly systému CERD a ohlašující uložení opatření k nápravě.",
+  "outlet": "Úřad pro ochranu osobních údajů", "sourceType": "primární úřední záznam",
+  "url": "https://uoou.gov.cz/urad-odhalil-u-cerd-nezakonne-nakladani-s-osobnimi-udaji", "published": "2018-09-20", "retrieved": "2026-08-05",
+  "claims": [{ "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-02" }], "subjects": ["james-quick"],
+  "content": [{ "type": "markdown", "value": "Primární doklad k témuž kontrolnímu závěru, který popisuje SRC-02 — doplněn revizí 2026-08-05, aby tvrzení o kontrole nestálo jen na jedné podstránce webu úřadu. Tisková zpráva je datovaná (20. 9. 2018), takže na rozdíl od nedatované stránky s výsledkem kontroly ukotvuje kontrolu v čase, a výslovně uvádí, že závěry kontrolujících potvrdila předsedkyně Úřadu Ivana Janů při vypořádání námitek kontrolované společnosti a že Úřad uloží opatření k nápravě. Zpráva nejmenuje žádnou fyzickou osobu a mluví jen o správci osobních údajů; identitu proto ani zde dossier nepřebírá z tohoto zdroje, ale odděleně z pozdější odpovědi ÚOOÚ SRC-01. Protože jde o téhož vydavatele jako SRC-02, nezakládá tento zdroj nezávislé doložení a stav tvrzení zůstává 1 ZDROJ." }], "order": 9
+}
