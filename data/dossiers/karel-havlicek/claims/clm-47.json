@@ -10,11 +10,14 @@
     "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
   },
   "text": "Ministerstvo průmyslu a obchodu oznámilo odnětí stomilionové dotace pekárně Zelená louka (Penam/Agrofert) v březnu 2022 — tedy až pod vedením Havlíčkova nástupce Jozefa Síkely (STAN), ne během Havlíčkova působení v čele resortu.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-11"
     }
   ],
   "subjects": [

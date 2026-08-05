@@ -19,6 +19,9 @@
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-40"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-24"
     }
   ],
   "subjects": [
@@ -27,7 +30,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "**Usnesení vlády České republiky ze dne 16. prosince 2025 č. 1029 — o personálních změnách ve vedení Národní sportovní agentury**\n\nOficiální primární dokument dohledán přímo na portálu odok.gov.cz (agenda jednání vlády 16. 12. 2025) a stažen jako PDF. Usnesení v souladu s § 3b odst. 2 zákona č. 115/2001 Sb. o podpoře sportu odvolává Mgr. Ondřeje Šebka z funkce předsedy Národní sportovní agentury a Mgr. Františka Horáka z funkce člena rady NSA, pověřuje místopředsedu Ing. Iva Jebouska řízením NSA a ukládá ministrovi pro sport, prevenci a zdraví seznámit dotčené osoby s rozhodnutím. Podepsán předsedou vlády Andrejem Babišem.\n\n**Klíčové zjištění**: samotné usnesení neobsahuje žádné zdůvodnění ani odůvodnění odvolání — žádnou zmínku o zahraničních cestách, střetu zájmů ani hospodaření. Je to čistě operativní text (kdo se odvolává, kdo přebírá řízení, kdo má koho informovat). Zdůvodnění, které zveřejnila média ([CLM-26](@/dossiers/boris-stastny/claims/clm-26.md)), pochází výhradně z Šťastného veřejných vyjádření, ne z textu samotného vládního usnesení.\n\nZdroj otevřen a přečten 2026-08-03."
+      "value": "**Usnesení vlády České republiky ze dne 16. prosince 2025 č. 1029 — o personálních změnách ve vedení Národní sportovní agentury**\n\nOficiální primární dokument dohledán přímo na portálu odok.gov.cz (agenda jednání vlády 16. 12. 2025) a stažen jako PDF. Usnesení v souladu s § 3b odst. 2 zákona č. 115/2001 Sb. o podpoře sportu odvolává Mgr. Ondřeje Šebka z funkce předsedy Národní sportovní agentury a Mgr. Františka Horáka z funkce člena rady NSA, pověřuje místopředsedu Ing. Iva Jebouska řízením NSA a ukládá ministrovi pro sport, prevenci a zdraví seznámit dotčené osoby s rozhodnutím. Podepsán předsedou vlády Andrejem Babišem.\n\n**Klíčové zjištění**: samotné usnesení neobsahuje žádné zdůvodnění ani odůvodnění odvolání — žádnou zmínku o zahraničních cestách, střetu zájmů ani hospodaření. Je to čistě operativní text (kdo se odvolává, kdo přebírá řízení, kdo má koho informovat). Zdůvodnění, které zveřejnila média ([CLM-26](@/dossiers/boris-stastny/claims/clm-26.md)), pochází výhradně z Šťastného veřejných vyjádření, ne z textu samotného vládního usnesení.\n\n**Doplněno 2026-08-05**: usnesení dokládá i\n[CLM-24](@/dossiers/boris-stastny/claims/clm-24.md) — pověření\nmístopředsedy Ing. Iva Jebouska řízením NSA je součástí téhož aktu,\nkterým je Šebek odvoláván. Vůči dosavadním zdrojům CLM-24 (rodina `ctk`)\njde o samostatnou rodinu (vládní primární dokument), tvrzení je proto\n`CORROBORATED`.\n\nZdroj otevřen a přečten 2026-08-03."
     }
   ],
   "order": 20

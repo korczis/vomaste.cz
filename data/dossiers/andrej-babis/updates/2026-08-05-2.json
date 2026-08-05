@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/updates/2026-08-05-2",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-08-05-2",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "date": "2026-08-05",
+  "summary": "Korroborace bez nového hledání (T-059): revize všech 65 tvrzení se stavem 1 ZDROJ proti všem 77 zdrojům dossieru odhalila dva zdroje, které v datech dávno leží, ale visely u jiných tvrzení. CLM-52 (vrácení padesátimilionové dotace v roce 2018) povýšeno na CORROBORATED připojením SRC-51 — původní reportáž Seznam Zpráv z 29. 6. 2018, která vrácení popisuje položkově a sama uvádí, že nejde o přiznání viny; dosud byla vedena jen u CLM-73 a CLM-74. CLM-36 (výkon úřadu předsedy vlády) povýšeno připojením SRC-26 (FORUM 24, 12. 5. 2026), který Babiše výslovně označuje za premiéra a datuje jeho návrat do funkce na konec roku 2025; obě tvrzení stála dosud výhradně na rodině ctk.",
+  "addedClaims": [],
+  "updatedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-52"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-36"
+    }
+  ],
+  "addedGaps": [],
+  "closedGaps": [],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-51"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-26"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-24"
+    }
+  ]
+}

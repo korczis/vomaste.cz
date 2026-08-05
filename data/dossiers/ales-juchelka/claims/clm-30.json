@@ -10,11 +10,14 @@
     "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
   },
   "text": "Jádrem Juchelkovy rozpočtové obhajoby je argument, že Evropská komise vyplácí peníze za splnění konkrétního milníku, a stát proto o prostředky nepřijde.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-19"
     }
   ],
   "subjects": [
