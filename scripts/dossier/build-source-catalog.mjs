@@ -123,7 +123,17 @@ const used = [...usage.values()]
     sourceTypes: [...r.sourceTypes].sort(),
     // Propojení na ručně psaný záznam, existuje-li: katalog tak ukazuje,
     // které skutečně použité zdroje už mají popsané meze a které ne.
-    catalogEntry: entries.find((e) => e.identifier === r.family)?.identifier ?? null,
+    //
+    // Párovat jen přes rodinu nestačí. Zdroj bez `sourceFamily` se v datasetu
+    // vede pod outletem, takže institucionální prameny (sněmovna, vláda) by
+    // zůstaly navždy „nepopsané“, i kdyby záznam v katalogu měly. Záznam smí
+    // proto vyjmenovat outlety, které pokrývá.
+    catalogEntry:
+      entries.find(
+        (e) =>
+          e.identifier === r.family ||
+          (r.outlet && (e.outlets ?? []).includes(r.outlet)),
+      )?.identifier ?? null,
   }))
   .sort((a, b) => b.count - a.count || a.key.localeCompare(b.key));
 
@@ -157,7 +167,17 @@ const view = {
     subRegisters: e.subRegisters ?? [],
     howToSearch: e.howToSearch ?? null,
     route: `/zdroje/${e.identifier}/`,
-    usage: used.find((u) => u.catalogEntry === e.identifier) ?? null,
+    // Jeden záznam může pokrývat víc outletů (ČTK i její přebírající, sněmovna
+    // pod dvěma názvy). Sečíst je nutné, jinak stránka hlásí užití jen toho
+    // prvního a číslo je tiše nižší než skutečnost.
+    usage: (() => {
+      const rows = used.filter((u) => u.catalogEntry === e.identifier);
+      if (rows.length === 0) return null;
+      return {
+        count: rows.reduce((n, r) => n + r.count, 0),
+        keys: rows.map((r) => r.key),
+      };
+    })(),
   })),
   used,
 };

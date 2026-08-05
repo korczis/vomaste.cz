@@ -18,6 +18,9 @@ Odpovídá na otázku „kam se podívat a čemu z toho věřit". Publikovaná p
 | [Hlídač státu](/zdroje/hlidac-statu/) | agregátor | veřejně dostupný | https://www.hlidacstatu.cz/ |
 | [Podnikatel.cz — rejstříkové profily](/zdroje/podnikatel-cz-rejstrik/) | agregátor | veřejně dostupný | https://www.podnikatel.cz/rejstrik/ |
 | [Informační systém datových schránek (ISDS)](/zdroje/datove-schranky/) | primární registr | omezený přístup | https://www.mojedatovaschranka.cz/ |
+| [ČTK — Česká tisková kancelář](/zdroje/ctk/) | média | omezený přístup | https://www.ctk.cz/ |
+| [Poslanecká sněmovna Parlamentu ČR](/zdroje/psp-cz/) | primární listina | veřejně dostupný | https://www.psp.cz/ |
+| [Vláda České republiky](/zdroje/vlada-cz/) | primární listina | veřejně dostupný | https://vlada.gov.cz/ |
 
 ## Pasti, na které se už najelo
 
@@ -41,6 +44,12 @@ Odpovídá na otázku „kam se podívat a čemu z toho věřit". Publikovaná p
 - **Podnikatel.cz — rejstříkové profily — Profil může mísit jmenovce**: Jediná stránka může nést role několika různých lidí téhož jména. Před převzetím role ji ověř v ARES podle IČO subjektu.
 - **Informační systém datových schránek (ISDS) — Zpětné vyhledání neexistuje**: Veřejná služba, která by k IČO vrátila ID schránky, není k dispozici. Údaj o schránce se získává jako součást rejstříkového výpisu (ARES ROS), ne samostatným dotazem.
 - **Informační systém datových schránek (ISDS) — Osmimístné ID schránky se plete s IČO**: Obojí je osmiznakový řetězec. Kdo rozlišuje regulárním výrazem podle délky, pošle IČO do větve pro ID schránky a zpět dostane nesmysl.
+- **ČTK — Česká tisková kancelář — Přebírání vypadá jako shoda**: Právě kvůli tomuhle existuje pole `sourceFamily`. Bez něj se pět vydání téže zprávy počítá jako pět nezávislých redakcí a tvrzení dostane CORROBORATED, které si nezaslouží. Revize T-056 takto musela srazit 55 tvrzení zpět na 1 ZDROJ.
+- **ČTK — Česká tisková kancelář — Kredit je jen v metadatech a patičce**: Zmínka „řekl ČTK" uprostřed textu je běžná i ve vlastním zpravodajství a původ nedokládá. Rozhoduje `<meta name="author">`, podpisový blok nebo patička „Zdroj: …".
+- **Poslanecká sněmovna Parlamentu ČR — Volební období mění čísla**: Tisky a hlasování jsou číslovány v rámci volebního období. URL bez období vede po volbách na jiný dokument.
+- **Poslanecká sněmovna Parlamentu ČR — Stenozáznam je autorizovaný přepis, ne přepis doslovný do písmene**: Řečník má právo úpravy. Pro citaci je použitelný, ale rozdíl proti audiu není chyba webu.
+- **Vláda České republiky — Doména se změnila**: Starší odkazy míří na `vlada.cz`; kanonická doména je dnes `vlada.gov.cz`. Odkaz je nutné ověřit, ne mechanicky přepsat.
+- **Vláda České republiky — Tisková zpráva není usnesení**: Usnesení má číslo a datum a je dohledatelné v databázi; tisková zpráva je jeho výklad. Tvrzení má citovat usnesení.
 
 ## Skutečně použité zdroje v datasetu
 
@@ -48,11 +57,11 @@ Dopočítáno z `data/dossiers/**/sources/**`, 628 záznamů v 97 rodinách/outl
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
-| ctk | 290 | 21 | — |
+| ctk | 290 | 21 | [ano](/zdroje/ctk/) |
 | seznam-zpravy | 34 | 13 | — |
-| Vláda České republiky (vlada.gov.cz) | 23 | 17 | — |
+| Vláda České republiky (vlada.gov.cz) | 23 | 17 | [ano](/zdroje/vlada-cz/) |
 | FORUM 24 | 19 | 9 | — |
-| Poslanecká sněmovna Parlamentu ČR | 18 | 14 | — |
+| Poslanecká sněmovna Parlamentu ČR | 18 | 14 | [ano](/zdroje/psp-cz/) |
 | denik-n | 16 | 9 | — |
 | Echo24 | 13 | 9 | — |
 | ČT24 (Česká televize) | 12 | 7 | — |
@@ -150,11 +159,8 @@ Dopočítáno z `data/dossiers/**/sources/**`, 628 záznamů v 97 rodinách/outl
 
 Tyhle zdroje dataset používá aspoň pětkrát, ale katalog k nim nemá záznam s mezemi a pastmi:
 
-- ctk (290×)
 - seznam-zpravy (34×)
-- Vláda České republiky (vlada.gov.cz) (23×)
 - FORUM 24 (19×)
-- Poslanecká sněmovna Parlamentu ČR (18×)
 - denik-n (16×)
 - Echo24 (13×)
 - ČT24 (Česká televize) (12×)

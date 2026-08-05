@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source-catalog-entry.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/zdroje/psp-cz",
+  "@type": "vomaste:SourceCatalogEntry",
+  "recordType": "sourceCatalogEntry",
+  "identifier": "psp-cz",
+  "title": "Poslanecká sněmovna Parlamentu ČR",
+  "operator": "Parlament České republiky",
+  "kind": "primary-document",
+  "jurisdiction": "CZ",
+  "access": "open",
+  "authentication": "none",
+  "url": "https://www.psp.cz/",
+  "order": 110,
+  "outlets": [
+    "Poslanecká sněmovna Parlamentu ČR",
+    "Poslanecká sněmovna PČR"
+  ],
+  "proves": [
+    "Jak konkrétní poslanec hlasoval, doslovné znění vystoupení ve stenozáznamu, sněmovní tisky a jejich průběh.",
+    "Členství ve výborech a orgánech komory k danému datu."
+  ],
+  "doesNotProve": [
+    "Motiv hlasování. Stenozáznam dokládá, co bylo řečeno, ne proč.",
+    "Že poslanec byl přítomen — nehlasování může znamenat omluvu, nepřihlášení i zdržení se."
+  ],
+  "traps": [
+    {
+      "title": "Volební období mění čísla",
+      "detail": "Tisky a hlasování jsou číslovány v rámci volebního období. URL bez období vede po volbách na jiný dokument."
+    },
+    {
+      "title": "Stenozáznam je autorizovaný přepis, ne přepis doslovný do písmene",
+      "detail": "Řečník má právo úpravy. Pro citaci je použitelný, ale rozdíl proti audiu není chyba webu."
+    }
+  ],
+  "howToSearch": "Jdi po číslu sněmovního tisku nebo po jmenném hlasování; jméno v plnotextu vrací i cizí zmínky. Pro citaci vždy stenozáznam, ne novinovou parafrázi.",
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Primární pramen tam, kde média citují politika. Kde je k dispozici stenozáznam nebo hlasování, cituje se on — ne článek, který ho převyprávěl."
+    }
+  ]
+}
