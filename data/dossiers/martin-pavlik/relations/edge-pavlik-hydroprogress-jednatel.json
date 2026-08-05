@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-pavlik-hydroprogress-jednatel",
+  "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/relations/edge-pavlik-hydroprogress-jednatel",
+  "relationId": "edge-pavlik-hydroprogress-jednatel",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-pavlik"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/martin-pavlik"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/hydroprogress-s-r-o"
+  },
+  "relationType": "HOLDS_ROLE",
+  "label": "Martin Pavlík je podle veřejného rejstříku jednatelem HYDROPROGRESS, s.r.o. (zápis od 2015)",
+  "status": "single",
+  "directed": true,
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/claims/CLM-04"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/sources/SRC-02"
+    }
+  ],
+  "subjects": [
+    "martin-pavlik"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Hrana je krytá jedním tvrzením a jedním primárním rejstříkovým výpisem. Neříká nic o faktickém řízení společnosti."
+    }
+  ]
+}

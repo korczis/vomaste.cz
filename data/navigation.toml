@@ -84,6 +84,14 @@ order = 18.5
 icon = "M12 3c4.4 0 8 1.3 8 3s-3.6 3-8 3-8-1.3-8-3 3.6-3 8-3Z M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6 M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"
 
 [[items]]
+id = "sources"
+label = "Zdroje"
+path = "@/zdroje/_index.md"
+match_prefix = "/zdroje/"
+order = 18.7
+icon = "M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Z M12 7v5l3 2 M3.5 9h17"
+
+[[items]]
 id = "docs"
 label = "Dokumentace"
 path = "@/dokumentace/_index.md"

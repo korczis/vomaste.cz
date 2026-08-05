@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-hydroprogress-povodi-labe-sp",
+  "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/relations/edge-hydroprogress-povodi-labe-sp",
+  "relationId": "edge-hydroprogress-povodi-labe-sp",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-pavlik"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/hydroprogress-s-r-o"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/povodi-labe-sp"
+  },
+  "relationType": "CONTRACTED_BY",
+  "label": "Povodí Labe, s.p. zveřejnil v registru smluv smlouvy, jejichž protistranou je HYDROPROGRESS, s.r.o.",
+  "status": "single",
+  "directed": true,
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/claims/CLM-06"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/sources/SRC-03"
+    }
+  ],
+  "subjects": [
+    "martin-pavlik"
+  ],
+  "order": 5,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Hrana říká, že zveřejňující subjekt a protistrana spolu mají v registru evidovanou smlouvu. Neříká nic o objemu, o průběhu plnění ani o čemkoli závadném."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-02",
+  "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/gaps/GAP-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-pavlik"
+  },
+  "title": "GAP-02 — Souhrnný objem smluv nespočten",
+  "description": "Počet smluv je doložen, jejich celková hodnota nikoli. Agregace vyžaduje otevřená data registru, ne vyhledávací formulář.",
+  "priority": "střední",
+  "checked": "2026-08-05",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/claims/CLM-06"
+    }
+  ],
+  "subjects": [
+    "martin-pavlik"
+  ],
+  "order": 2,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Vyhledávací formulář registru smluv tiše ignoruje vlastní stránkovací parametr a na jakoukoli stránku vrací první. Pokus o součet přes stránky proto vrátil patnáctkrát tutéž desítku záznamů — 150 „smluv\" místo 119, a součet o řád jinde. Chyba se projevila jen díky kontrole, že se stránky mezi sebou liší.\n\nDokud objem nespočte průchod otevřenými daty registru, zůstává neuvedený. Číslo, které se nedá zopakovat, sem nepatří ani jako odhad."
+    }
+  ]
+}

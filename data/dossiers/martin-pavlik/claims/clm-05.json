@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-05",
+  "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/claims/CLM-05",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-pavlik"
+  },
+  "text": "Veřejný rejstřík uvádí Martina Pavlíka jako společníka HYDROPROGRESS, s.r.o. s podílem 80 % (vklad 400 000 Kč) zapsaným od 22. 5. 2022; základní kapitál společnosti činí 500 000 Kč.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/sources/SRC-02"
+    }
+  ],
+  "subjects": [
+    "martin-pavlik"
+  ],
+  "order": 5,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Odečteno z platných záznamů o podílech; dřívější stav (jediný společník se 100 %) je v rejstříku veden jako vymazaný a neuvádí se zde jako souběžný.\n\nDruhý společník je soukromá třetí osoba mimo rozsah tohoto dossieru a nejmenuje se. Držba obchodního podílu je běžný, veřejně evidovaný fakt a sama o sobě nic nedokládá."
+    }
+  ]
+}

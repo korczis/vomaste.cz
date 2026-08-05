@@ -116,6 +116,19 @@ entry; it does not replace reading and applying the rule.
   When in doubt about which of the two you are doing, you are writing a
   claim — stop and ask. Personal data (dates of birth, home addresses) is
   never copied out of a registry in either case.
+- **Než začneš hledat, přečti si katalog zdrojů** —
+  `docs/osint/SOURCE_CATALOG.md` (publikovaná podoba `/zdroje/`). Odpovídá
+  na otázku, kterou si rešerše klade jako první: který registr vůbec
+  odpoví, co z jeho odpovědi lze citovat a na jaké pasti se v něm už
+  najelo. Ušetří to opakované placení téhož poznatku — že ARES rozlišuje
+  dva různé významy odpovědi 404, že registr smluv tiše ignoruje
+  `format=json` i vlastní stránkování, že věstník veřejných zakázek vrací
+  nefiltrovaná data na filtr, který neumí. Záznamy jsou
+  `data/source-catalog/*.json`, stránky i markdown jsou generované
+  (`npm run build:source-catalog`, kontrola driftu
+  `npm run verify:source-catalog`) — neupravuj je ručně. Narazíš-li na
+  nový zdroj nebo novou past, patří to jako záznam do katalogu, ne do
+  commit zprávy, kde to najde jen ten, kdo ví, že to má hledat.
 - Projekt je Open Intelligence Commons — přečti si a řiď se
   `docs/constitution/OPEN_INTELLIGENCE_COMMONS.md` (závazné invarianty
   shrnuty v AGENTS.md). Nad všemi kompromisy pohodlí dominují dvě

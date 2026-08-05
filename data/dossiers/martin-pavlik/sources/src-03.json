@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-03",
+  "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/sources/SRC-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-pavlik"
+  },
+  "title": "SRC-03 — Registr smluv: záznamy s protistranou IČO 04449461",
+  "description": "Primární evidence smluv uzavřených s veřejnými zadavateli, dotaz na IČO protistrany.",
+  "outlet": "Registr smluv (Ministerstvo vnitra ČR)",
+  "sourceFamily": "smlouvy-gov-cz",
+  "sourceType": "primární veřejný registr",
+  "url": "https://smlouvy.gov.cz/vyhledavani?party_idnum=04449461",
+  "retrieved": "2026-08-05",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/claims/CLM-06"
+    }
+  ],
+  "subjects": [
+    "martin-pavlik"
+  ],
+  "order": 3,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Dotaz na `party_idnum` (IČO protistrany) k 5. 8. 2026. Přebírá se **počet záznamů, který registr sám uvádí**, a názvy zveřejňujících subjektů odečtené přímo z výsledků.\n\n**Co se nepřebírá a proč**: souhrnná hodnota smluv. Stránkování výsledků jede přes signály formuláře a vlastní parametr `page` se tiše ignoruje — první pokus o agregaci proto patnáctkrát stáhl tutéž stránku a vydal by 150 „smluv\" a 352 mil. Kč tam, kde jich registr hlásí 119. Chyba byla zachycena kontrolou duplicity stránek. Dokud agregace neproběhne přes otevřená data, zůstává objem evidovaný jako mezera, ne jako číslo."
+    }
+  ]
+}

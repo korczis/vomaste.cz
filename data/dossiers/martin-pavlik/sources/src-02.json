@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/sources/SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-pavlik"
+  },
+  "title": "SRC-02 — ARES: veřejný rejstřík, výpis HYDROPROGRESS, s.r.o. (IČO 04449461)",
+  "description": "Primární rejstříkový výpis ze sub-registru VR: obsazení statutárního orgánu, podíly společníků a základní kapitál, včetně dat zápisu.",
+  "outlet": "ARES (Ministerstvo financí ČR)",
+  "sourceFamily": "ares-gov-cz",
+  "sourceType": "primární veřejný rejstřík",
+  "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/04449461",
+  "retrieved": "2026-08-05",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/claims/CLM-05"
+    }
+  ],
+  "subjects": [
+    "martin-pavlik"
+  ],
+  "order": 2,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Strojově čitelný výpis z veřejného rejstříku, pořízený 5. 8. 2026. Čtou se z něj pouze záznamy **v platnosti**, tedy bez `datumVymazu`; historické verze zápisu se nezaměňují za souběžná funkční období.\n\n**Metodická poznámka k nezávislosti**: SRC-01 (Podnikatel.cz) přebírá tytéž veřejné rejstříky. Ačkoli jde o jiného vydavatele i doménu, **nejsou to dvě nezávislá doložení** — obojí vychází z téhož zápisu. Tvrzení opřená o rejstřík proto zůstávají ve stavu 1 ZDROJ i tam, kde je uvádí obě stránky.\n\nDatum narození ani adresa bydliště se z výpisu nepřebírají, přestože je obsahuje."
+    }
+  ]
+}

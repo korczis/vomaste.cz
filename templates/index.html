@@ -197,6 +197,51 @@
     </div>
   </section>
 
+  {#- Odkud to víme. Web stojí a padá s tím, že každé tvrzení má zdroj — ale
+      landing page to dosud tvrdila, aniž by ukázala, o jaký zdrojový základ
+      se opírá. Čísla i vyzdvižené zdroje jdou z data/generated/source-catalog.json
+      (staví build-source-catalog.mjs z ručně psaných záznamů plus dopočtu ze
+      skutečných citací), takže nemůžou zastarat proti datům a v šabloně není
+      napsaný ani jeden název zdroje.
+
+      Záměrně se ukazuje i to, co zdroj NEdokládá: bez toho by výčet registrů
+      působil jako nárok na vševědoucnost, což je přesně opačné sdělení. -#}
+  {%- set catalog = load_data(path="data/generated/source-catalog.json") -%}
+  {%- if catalog.counts.entries > 0 %}
+  <section aria-labelledby="zdroje-heading" class="landing-section py-12 sm:py-16 lg:py-20">
+    <h2 id="zdroje-heading" class="text-center text-2xl font-bold text-white sm:text-3xl">Odkud to víme</h2>
+    <p class="mx-auto mt-3 max-w-xl text-center text-white/60">Doklad je vždy primární registr. Agregátor ukáže, kde hledat — cituje se ale to, na co ukazuje.</p>
+
+    <div class="mt-8 flex flex-wrap items-center justify-center gap-3 text-xs">
+      <span class="rounded bg-white/5 px-3 py-1.5 font-mono text-[#f3e5c0]">{{ catalog.counts.sourceRecords }} citací</span>
+      <span class="rounded border border-white/15 px-3 py-1.5 text-white/55">{{ catalog.counts.usedFamiliesOrOutlets }} rodin a outletů</span>
+      <span class="rounded border border-white/15 px-3 py-1.5 text-white/55">{{ catalog.counts.entries }} zdrojů s popsanými mezemi</span>
+    </div>
+
+    <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {%- for e in catalog.entries | filter(attribute="kind", value="primary-registry") %}
+      <a href="{{ config.base_url }}{{ e.route }}" class="group block rounded-xl border border-white/10 bg-white/[0.03] p-6 no-underline transition-colors hover:border-white/25 hover:bg-white/[0.05]">
+        <span class="font-mono text-xs text-[#f3e5c0]">primární registr</span>
+        <h3 class="mt-1 flex items-center gap-2 font-semibold text-white">
+          {{ e.title }}
+          <span class="text-white/55 transition-transform group-hover:translate-x-0.5" aria-hidden="true">&rarr;</span>
+        </h3>
+        {%- if e.proves | length > 0 %}
+        <p class="mt-2 text-sm leading-relaxed text-white/60">{{ e.proves | first }}</p>
+        {%- endif %}
+        {%- if e.doesNotProve | length > 0 %}
+        <p class="mt-2 text-sm leading-relaxed text-white/40"><span class="text-white/55">Nedokládá:</span> {{ e.doesNotProve | first }}</p>
+        {%- endif %}
+      </a>
+      {%- endfor %}
+    </div>
+
+    <p class="mx-auto mt-8 max-w-2xl text-center text-sm text-white/50">
+      <a href="{{ get_url(path='@/zdroje/_index.md') | safe }}" class="text-[#f3e5c0] underline">Celý katalog zdrojů</a> — včetně pastí, na které se v každém z nich najíždí, a přehledu, co dataset skutečně cituje.
+    </p>
+  </section>
+  {%- endif %}
+
   {#- Adresář místo zdi karet. Původně tu byla na každý dossier karta přes
       celou šířku se čtyřmi statistickými dlaždicemi a čtyřmi velkými
       tlačítky — při dvou dossierech vitrína, při dvaadvaceti stěna, kterou

@@ -121,6 +121,26 @@
 {%- endif -%}
 ,{{ jsonld::ld_source_canonical(record=ld_view.record, name=ld_title, fp=ld_fp) }}
 {%- endif -%}
+{#- Source catalogue. A registry is a Dataset with a provider and, where one
+    exists, a machine-readable distribution — which is exactly what an agent
+    reading this page needs in order to pick a tool. `usageInfo` carries the
+    how-to-search note, `disambiguatingDescription` the limits, so what the
+    page tells a human and what it tells a machine cannot drift apart. Loaded
+    from the same generated view model the visible page renders from. -#}
+{%- if ld_record_type == "sourceCatalogEntry" and page.extra.catalog_entry -%}
+{%- set ld_cat = load_data(path="data/generated/source-catalog.json") -%}
+{%- set ld_e = ld_cat.entries | filter(attribute="identifier", value=page.extra.catalog_entry) | first -%}
+{%- if ld_e -%}
+,{"@type":"Dataset","@id":{{ ld_e["@id"] | json_encode | safe }},"name":{{ ld_e.title | json_encode | safe }},"description":{{ ld_description | json_encode | safe }},"inLanguage":{{ ld_lang | json_encode | safe }},"url":{{ ld_e.url | json_encode | safe }},"isAccessibleForFree":{% if ld_e.access == "open" %}true{% else %}false{% endif %}{% if ld_e.operator %},"provider":{"@type":"Organization","name":{{ ld_e.operator | json_encode | safe }}}{% endif %}{% if ld_e.jurisdiction %},"spatialCoverage":{{ ld_e.jurisdiction | json_encode | safe }}{% endif %}{% if ld_e.apiUrl %},"distribution":{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":{{ ld_e.apiUrl | json_encode | safe }}}{% endif %}{% if ld_e.howToSearch %},"usageInfo":{{ ld_e.howToSearch | json_encode | safe }}{% endif %}{% if ld_e.doesNotProve | length > 0 %},"disambiguatingDescription":{{ ld_e.doesNotProve | join(sep=" ") | json_encode | safe }}{% endif %}}
+{%- endif -%}
+{%- endif -%}
+{%- if ld_record_type == "sourceCatalogIndex" -%}
+{%- set ld_cat = load_data(path="data/generated/source-catalog.json") -%}
+,{"@type":"ItemList","name":{{ ld_title | json_encode | safe }},"numberOfItems":{{ ld_cat.counts.entries }},"itemListElement":[
+{%- for ld_e in ld_cat.entries -%}
+{"@type":"ListItem","position":{{ loop.index }},"name":{{ ld_e.title | json_encode | safe }},"item":{{ ld_e["@id"] | json_encode | safe }}}{% if not loop.last %},{% endif %}
+{%- endfor -%}]}
+{%- endif -%}
 {%- for ld_item in ld_nav_items -%}
 {#- `anchor` je pro uzly bez vlastní routy (skupina konceptů je sekce
     /koncepty/, ne stránka) — bez něj by pět skupin vydalo pětkrát tutéž URL. -#}
