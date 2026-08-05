@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
   },
   "text": "V únoru 2026 ministr Vojtěch uložil FN Olomouc zřídit informační linku pro pacienty s implantovanými defibrilátory a vyžádal si komplexní zprávu s časovou osou a stavem interní revize; řešení personální odpovědnosti odložil na později.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-04"

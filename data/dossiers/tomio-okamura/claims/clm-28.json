@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
   },
   "text": "Sněmovna 5. března 2026 Tomia Okamuru k trestnímu stíhání nevydala; pro nevydání hlasovalo 104 ze 186 přítomných poslanců, pro vydání 82. Jde o parlamentní procesní rozhodnutí, nikoli o posouzení pravdivosti obvinění.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-19"

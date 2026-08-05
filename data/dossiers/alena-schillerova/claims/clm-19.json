@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
   },
   "text": "Podle prezidenta Pavla by novela umožnila vládě překročit vlastní schválený rozpočet až o deset procent na základě rozhodnutí pouze jejího vlastního poradního bezpečnostního orgánu, což podle ČT24 odpovídá zhruba 240 miliardám korun.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-08"

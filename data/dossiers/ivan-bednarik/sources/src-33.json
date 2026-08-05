@@ -12,6 +12,7 @@
   "title": "SRC-33 — Kolínský deník (Deník.cz)",
   "description": "Správa železnic zpomalí přípravy neprioritních projektů. Včetně trati z Kolína.",
   "outlet": "Kolínský deník (Deník.cz)",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://kolinsky.denik.cz/zpravy_region/kolin-sprava-zeleznic-trat-neprioritni-projekt-finance-investice.html",
   "published": "2026-01-29",
@@ -27,7 +28,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Kolínský deník (síť Deník.cz/VLM) nezávisle na odborném webu\neLogistika.info (SRC-22) uvádí prakticky totožný výčet odkládaných\nstaveb: „Mezi stavby, jejichž příprava nebo zahájení se má odložit,\npatří tratě Kolín – Děčín, Přerov – Ostrava, Plzeň – Domažlice v části\npříhraničního úseku, Praha – Mladá Boleslav – Liberec, Ústí nad Labem –\nCheb a České Budějovice – Plzeň.“ Článek vyšel 29. 1. 2026 v kontextu\nrozpočtu SFDI na rok 2026.\n\n**Nezávislost.** Jiný vydavatel (Deník.cz/VLM) než eLogistika.info —\nnezávislé potvrzení stejného seznamu odkládaných tratí, nikoli jen\npřevzatá zpráva."
+      "value": "Kolínský deník (síť Deník.cz/VLM) uvádí prakticky totožný výčet\nodkládaných staveb jako odborný web eLogistika.info (SRC-22) — shoda má\nprostý důvod: detekce zdrojových rodin (2026-08-05) našla u tohoto textu\njako autora ČTK a u SRC-22 patičku „Zdroj: ČTK\", jde tedy o dvě vydání\ntéže agenturní zprávy a oba zdroje patří do rodiny `ctk`:\n„Mezi stavby, jejichž příprava nebo zahájení se má odložit,\npatří tratě Kolín – Děčín, Přerov – Ostrava, Plzeň – Domažlice v části\npříhraničního úseku, Praha – Mladá Boleslav – Liberec, Ústí nad Labem –\nCheb a České Budějovice – Plzeň.“ Článek vyšel 29. 1. 2026 v kontextu\nrozpočtu SFDI na rok 2026.\n\n**Nezávislost.** Jiný vydavatel (Deník.cz/VLM) než eLogistika.info —\nnezávislé potvrzení stejného seznamu odkládaných tratí, nikoli jen\npřevzatá zpráva."
     }
   ],
   "order": 33

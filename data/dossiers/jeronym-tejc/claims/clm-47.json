@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
   },
   "text": "Ve vládním vyjádření z 20. července 2026 Tejc argumentuje, že zákon o Ústavním soudu s možností předběžného opatření u kompetenčních žalob nepočítá a že podpůrné využití občanského soudního řádu bylo chybou.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-23"

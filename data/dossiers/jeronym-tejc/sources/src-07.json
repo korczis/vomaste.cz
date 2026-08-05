@@ -12,6 +12,7 @@
   "title": "SRC-07 — ČT24 (Česká televize)",
   "description": "V kauze otcem usmrcené dívky podal Tejc vedle kárné žaloby i podnět vůči OSPOD",
   "outlet": "ČT24 (Česká televize)",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://ct24.ceskatelevize.cz/clanek/domaci/v-kauze-otcem-usmrcene-divky-podal-tejc-vedle-karne-zaloby-i-podnet-vuci-ospod-375130",
   "published": "2026-07-01",

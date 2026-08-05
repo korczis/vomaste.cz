@@ -12,6 +12,7 @@
   "title": "SRC-27 — Blesk.cz",
   "description": "Pavel vetoval zákon o rozpočtech! Bojí se o budoucí generace i nezávislost institucí.",
   "outlet": "Blesk.cz",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://www.blesk.cz/clanek/zpravy-politika/844445/pavel-vetoval-zakon-o-rozpoctech-boji-se-o-budouci-generace-i-nezavislost-instituci.html",
   "published": "2026-07-22",
@@ -27,7 +28,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Blesk.cz, publikováno 22. 7. 2026, nezávisle na ČT24 (SRC-08)\npotvrzuje totéž jádro faktu: „Vláda by mohla překročit schválený\nrozpočet až o deset procent jen na základě rozhodnutí vlastního\nporadního orgánu, bez souhlasu parlamentu,“ a dodává, že ministryně\nSchillerová tento poradní orgán později upřesnila jako Bezpečnostní\nradu státu. Přepočet procentní hranice na konkrétní částku (zhruba\n240 miliard korun) tento článek neuvádí — to zůstává doloženo jen ČT24\n(SRC-08).\n\n**Nezávislost.** Jiný vydavatel (Blesk.cz) než Česká televize —\nnezávislé potvrzení téhož jádra prezidentovy veto argumentace, nikoli\njen převzatá zpráva."
+      "value": "Blesk.cz, publikováno 22. 7. 2026, uvádí totéž jádro faktu jako ČT24\n(SRC-08) — **nikoli ale nezávisle** (viz poznámka o rodině níže):\n„Vláda by mohla překročit schválený\nrozpočet až o deset procent jen na základě rozhodnutí vlastního\nporadního orgánu, bez souhlasu parlamentu,“ a dodává, že ministryně\nSchillerová tento poradní orgán později upřesnila jako Bezpečnostní\nradu státu. Přepočet procentní hranice na konkrétní částku (zhruba\n240 miliard korun) tento článek neuvádí — to zůstává doloženo jen ČT24\n(SRC-08).\n\n**Nezávislost — opraveno 2026-08-05**: detekce zdrojových rodin našla na\nBlesk.cz podpis „Magdalena Škapová, ČTK\" a na ČT24 (SRC-08) „ČTK, ČT24\" —\noba texty stojí na téže agenturní zprávě. Jiný vydavatel není jiný zdroj;\ndřívější poznámka tvrdící nezávislé potvrzení byla nesprávná a je tímto\nopravena. Oba zdroje patří do rodiny `ctk`, CLM-19 proto nese stav\n`1 ZDROJ`."
     }
   ],
   "order": 27

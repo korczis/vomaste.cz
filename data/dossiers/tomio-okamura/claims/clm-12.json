@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
   },
   "text": "Státní zástupce David Jachnický navrhoval podle zpravodajství peněžitý trest o půl milionu korun vyšší, než jaký soud nepravomocně uložil, tedy zhruba 3,5 milionu korun.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-10"

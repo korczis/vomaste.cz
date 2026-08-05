@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
   },
   "text": "Tejc soudkyni v kárné žalobě vytýká, že se věci věnovala nedbale, rozhodla formálně a opomenula provést řadu dostupných důkazů. Jde o tvrzení ministra jako kárného žalobce; jeho oprávněnost posoudí kárný senát.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-05"

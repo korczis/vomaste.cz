@@ -20,6 +20,9 @@ voperovaným defibrilátorem získají srozumitelné informace." Zároveň:
 „Současně jsem si vyžádal komplexní zprávu včetně detailní časové osy,
 přijatých opatření a stavu interní revize."
 
-**Nezávislost**: samostatná redakce od Zdravotnický deník (SRC-04) —
-obě nezávisle potvrzují tentýž ministrův pokyn. Proto CLM-08 nese stav
-`CORROBORATED`.
+**Nezávislost — opraveno 2026-08-05**: detekce zdrojových rodin ověřila
+podpis obou textů — tenhle nese v JSON-LD autora „- ČTK -" a Zdravotnický
+deník (SRC-04) `<meta name="author" content="ČTK">`. Jde tedy o dvě vydání
+téže agenturní zprávy, ne o dvě redakce; dřívější poznámka tvrdící
+samostatnou redakci byla nesprávná a je tímto opravena. Oba zdroje patří
+do rodiny `ctk`, CLM-08 proto nese stav `1 ZDROJ`.

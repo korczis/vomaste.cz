@@ -12,6 +12,7 @@
   "title": "SRC-07 — Hospodářské noviny",
   "description": "Prezident vetoval novelu rozpočtových zákonů. Podle Babiše tím ohrožuje zdravotnictví či obranyschopnost.",
   "outlet": "Hospodářské noviny",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://domaci.hn.cz/c1-67907900-pavel-vetoval-novelu-rozpoctovych-zakonu-ohrozuje-podle-nej-udrzitelnost-verejnych-financi",
   "published": "2026-07-23",
@@ -27,7 +28,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Hospodářské noviny (Economia) dne 23. 7. 2026 nezávisle na Blesk.cz\n(SRC-06) potvrzují totéž jádro faktu, včetně přesného výčtu institucí:\ncituje prezidenta Pavla, že vládu nepodezírá ze snahy o další zásah do\npůsobení **Ústavního soudu, veřejného ochránce práv, Kanceláře\nprezidenta republiky, Nejvyššího kontrolního úřadu nebo Národní\nrozpočtové rady** — přesně shodný výčet čtyř nezávislých institucí\n(Ústavní soud, ombudsman, NKÚ, Národní rozpočtová rada), jaký uvádí\nCLM-25.\n\n**Nezávislost.** Jiný vydavatel než Blesk.cz (CNC/Czech News Center) —\nu CLM-25 se proto počítají jako dvě nezávislá potvrzení."
+      "value": "Hospodářské noviny (Economia) dne 23. 7. 2026 uvádějí totéž jádro faktu\njako Blesk.cz (SRC-06), včetně přesného výčtu institucí — **nikoli ale\nnezávisle**: detekce zdrojových rodin (2026-08-05) našla v HN\n`<meta name=\"author\" content=\"ČTK\">` a na Blesk.cz podpis „Magdalena\nŠkapová, ČTK\", oba zdroje tedy patří do rodiny `ctk`:\ncituje prezidenta Pavla, že vládu nepodezírá ze snahy o další zásah do\npůsobení **Ústavního soudu, veřejného ochránce práv, Kanceláře\nprezidenta republiky, Nejvyššího kontrolního úřadu nebo Národní\nrozpočtové rady** — přesně shodný výčet čtyř nezávislých institucí\n(Ústavní soud, ombudsman, NKÚ, Národní rozpočtová rada), jaký uvádí\nCLM-25.\n\n**Nezávislost.** Jiný vydavatel než Blesk.cz (CNC/Czech News Center) —\nu CLM-25 se proto počítají jako dvě nezávislá potvrzení."
     }
   ],
   "order": 7

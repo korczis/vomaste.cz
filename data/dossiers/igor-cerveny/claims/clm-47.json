@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
   },
   "text": "Při systemizaci k dubnu 2026 resort zrušil 38 míst (Deník N uváděl 53 pozic — 42 služebních a 11 pracovních) a zanikla oddělení financování Nové zelené úsporám, Národního plánu obnovy, Modernizačního fondu, Sociálně klimatického fondu a oddělení zaměřená na dekarbonizaci.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-29"

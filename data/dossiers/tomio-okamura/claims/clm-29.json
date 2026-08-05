@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
   },
   "text": "Nevydání Tomia Okamury ke stíhání podpořili 5. března 2026 podle zpravodajství všichni přítomní poslanci vládních klubů ANO, SPD a Motoristů; sněmovní mandátový a imunitní výbor předtím vydání nedoporučil.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-19"

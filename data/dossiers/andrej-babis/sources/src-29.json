@@ -12,6 +12,7 @@
   "title": "SRC-29 — Seznam Zprávy: Kostelecké uzeniny u soudu neuspěly na dotaci kvůli střetu zájmů, nárok neměly (28. 11. 2025)",
   "description": "Seznam Zprávy nezávisle na Česká justice (SRC-07) potvrzuje zamítnutí kasační stížnosti NSS a výklad o nepřímém vlivu přes svěřenské fondy.",
   "outlet": "Seznam Zprávy",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-kostelecke-uzeniny-u-soudu-neuspely-na-dotaci-kvuli-stretu-zajmu-narok-nemely-292738",
   "published": "2025-11-28",
@@ -30,7 +31,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Seznam Zprávy dne 28. 11. 2025 potvrzuje zamítnutí kasační stížnosti\nNejvyšším správním soudem a cituje odůvodnění: „Nepřímý vliv lze přitom\nvykonávat rovněž prostřednictvím svěřenských fondů, do nichž veřejný\nfunkcionář vložil svou majetkovou účast,\" a to za předpokladu, že si\n„zachová možnost tyto svěřenské fondy přímo či nepřímo řídit.\"\n\n**Nezávislost**: samostatná redakce od Česká justice (SRC-07) — obě\nnezávisle potvrzují totéž rozhodnutí a jeho odůvodnění. Proto CLM-18 a\nCLM-19 nesou stav `CORROBORATED`."
+      "value": "Seznam Zprávy dne 28. 11. 2025 potvrzuje zamítnutí kasační stížnosti\nNejvyšším správním soudem a cituje odůvodnění: „Nepřímý vliv lze přitom\nvykonávat rovněž prostřednictvím svěřenských fondů, do nichž veřejný\nfunkcionář vložil svou majetkovou účast,\" a to za předpokladu, že si\n„zachová možnost tyto svěřenské fondy přímo či nepřímo řídit.\"\n\n**Nezávislost — opraveno 2026-08-05**: detekce zdrojových rodin našla\nu obou textů agenturní podpis — tenhle má v JSON-LD autora „ČTK\", Česká\njustice (SRC-07) `<meta name=\"author\" content=\"ČTK\">`. Dvě redakce, jedna\nzpráva; dřívější poznámka tvrdící samostatnou redakci byla nesprávná a je\ntímto opravena. Oba zdroje patří do rodiny `ctk`, CLM-18 i CLM-19 proto\nnesou stav `1 ZDROJ`."
     }
   ],
   "order": 29

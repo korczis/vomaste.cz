@@ -20,6 +20,9 @@ vykonávat rovněž prostřednictvím svěřenských fondů, do nichž veřejný
 funkcionář vložil svou majetkovou účast," a to za předpokladu, že si
 „zachová možnost tyto svěřenské fondy přímo či nepřímo řídit."
 
-**Nezávislost**: samostatná redakce od Česká justice (SRC-07) — obě
-nezávisle potvrzují totéž rozhodnutí a jeho odůvodnění. Proto CLM-18 a
-CLM-19 nesou stav `CORROBORATED`.
+**Nezávislost — opraveno 2026-08-05**: detekce zdrojových rodin našla
+u obou textů agenturní podpis — tenhle má v JSON-LD autora „ČTK", Česká
+justice (SRC-07) `<meta name="author" content="ČTK">`. Dvě redakce, jedna
+zpráva; dřívější poznámka tvrdící samostatnou redakci byla nesprávná a je
+tímto opravena. Oba zdroje patří do rodiny `ctk`, CLM-18 i CLM-19 proto
+nesou stav `1 ZDROJ`.

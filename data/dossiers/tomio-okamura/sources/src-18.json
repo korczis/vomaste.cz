@@ -12,6 +12,7 @@
   "title": "SRC-18 — ČT24 (Česká televize)",
   "description": "Sněmovna vydala Tomia Okamuru k trestnímu stíhání",
   "outlet": "ČT24 (Česká televize)",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://ct24.ceskatelevize.cz/clanek/domaci/snemovna-vydala-tomia-okamuru-k-trestnimu-stihani-358064",
   "published": "2025-02-12",

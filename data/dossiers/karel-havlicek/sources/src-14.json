@@ -12,6 +12,7 @@
   "title": "SRC-14 — ČT24 (Česká televize)",
   "description": "Policie navrhla obžalovat pekárnu z Agrofertu kvůli dotacím na linku na toastový chléb",
   "outlet": "ČT24 (Česká televize)",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://ct24.ceskatelevize.cz/clanek/domaci/policie-navrhla-obzalovat-pekarnu-kvuli-dotacim-na-linku-na-toastovy-chleb-374357",
   "published": "2026-06-08",

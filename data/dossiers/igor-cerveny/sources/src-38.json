@@ -12,6 +12,7 @@
   "title": "SRC-38 — Seznam Zprávy",
   "description": "Ministerstvo poslalo přestupkovému úřadu majetkové přiznání ministra Červeného.",
   "outlet": "Seznam Zprávy",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-ministerstvo-poslalo-prestupkovemu-uradu-majetkove-priznani-ministra-cerveneho-305649",
   "published": "2026-05-06",
@@ -27,7 +28,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Seznam Zprávy, publikováno 6. 5. 2026, nezávisle na FORUM 24 (SRC-13)\npotvrzuje totéž jádro faktu: „Zjištěné skutečnosti byly předány tomuto\nměstskému úřadu jakožto příslušnému přestupkovému orgánu dne\n22. 4. 2026,“ tedy shodné datum postoupení věci (22. 4. 2026) i shodné\ndatum zveřejnění (6. 5. 2026), tedy dvoutýdenní odstup mezi postoupením\na jeho medializací. Ministr se podle článku vyjádřil, že „to nechá\nprověřit“ a věc „půjde vysvětlit na úřad“.\n\n**Nezávislost.** Jiný vydavatel (Seznam Zprávy) než FORUM 24 —\nnezávislé potvrzení stejného data postoupení i data medializace, ne\njen převzatá zpráva."
+      "value": "Seznam Zprávy, publikováno 6. 5. 2026, uvádí totéž jádro faktu jako\nFORUM 24 (SRC-13) — **nikoli ale nezávisle**: detekce zdrojových rodin\n(2026-08-05) našla u obou textů jako autora ČTK, jde tedy o dvě vydání\ntéže agenturní zprávy a oba zdroje patří do rodiny `ctk`:\n„Zjištěné skutečnosti byly předány tomuto\nměstskému úřadu jakožto příslušnému přestupkovému orgánu dne\n22. 4. 2026,“ tedy shodné datum postoupení věci (22. 4. 2026) i shodné\ndatum zveřejnění (6. 5. 2026), tedy dvoutýdenní odstup mezi postoupením\na jeho medializací. Ministr se podle článku vyjádřil, že „to nechá\nprověřit“ a věc „půjde vysvětlit na úřad“.\n\n**Nezávislost.** Jiný vydavatel (Seznam Zprávy) než FORUM 24 —\nnezávislé potvrzení stejného data postoupení i data medializace, ne\njen převzatá zpráva."
     }
   ],
   "order": 38

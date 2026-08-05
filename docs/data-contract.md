@@ -170,6 +170,19 @@ agenturní zprávy, týž vydavatel) se počítají jako jeden nezávislý zdroj
 — S2 proto pro `CORROBORATED` vyžaduje ≥ 2 zdroje z ≥ 2 rodin a T5 navíc
 ≥ 2 různé URL.
 
+Rodina se pojmenovává podle **původu**, ne podle vydavatele: přetisk
+zprávy ČTK v Blesku patří do rodiny `ctk`, ne `blesk`. Přesně proto
+rodina existuje — bez ní vypadá pět vydání jedné agenturní zprávy jako
+pět nezávislých redakcí a badge `CORROBORATED` lže.
+
+Rodinu lze doplnit opakovatelně: `npm run sources:detect-family` stáhne
+stránky zdrojů s prázdnou rodinou a čte kredit původu ze strojových
+metadat, podpisu a patičky. Detekce **nic nezapisuje** — vyrábí návrhy
+(`data/generated/source-family-proposals.json` + `reports/source-family-proposals.md`),
+které do dat vloží až samostatný, vědomý krok `--apply`, a to jen
+u verdiktu `ctk` a jen do prázdného pole. Podrobnosti a hranice
+nástroje: [README, Detekce zdrojových rodin](../README.md#detekce-zdrojových-rodin).
+
 ## Generované artefakty a manifest
 
 - `static/data/*.json` — ploché exporty (dossiers, claims, sources, …)

@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
   },
   "text": "Poslanecká sněmovna počátkem března 2026 nevydala Andreje Babiše k trestnímu stíhání v kauze Čapí hnízdo, jeho stíhání je proto přerušeno; nevydání je parlamentní procesní krok, ne zproštění obžaloby ani rozhodnutí o vině",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-03"

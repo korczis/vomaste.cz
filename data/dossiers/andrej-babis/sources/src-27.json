@@ -28,7 +28,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Agenturní zpráva ČTK (převzatá Deník.cz) dne 23. 6. 2025, nezávisle na\nČeská justice (SRC-01): „Odvolací senát zrušil rozsudek, kterým nižší\nsoud loni v únoru osvobodil\" Babiše a Nagyovou v kauze Čapí hnízdo.\n\n**Nezávislost**: ČTK je samostatná zpravodajská organizace, ne stejná\nredakce ani agenturní rodina jako Česká justice (SRC-01) — obě nezávisle\npotvrzují tutéž veřejnou skutečnost (zrušení zprošťujícího rozsudku\nVrchním soudem). Proto CLM-01 nese stav `CORROBORATED`.\n\n**Limity**: jde o totéž jako SRC-01 popisuje procesní krok, ne rozsudek\no vině — zrušené zproštění není odsouzení."
+      "value": "Agenturní zpráva ČTK (převzatá Deník.cz) dne 23. 6. 2025 — týž agenturní\nzáklad jako Česká justice (SRC-01), viz poznámka o rodině níže:\n„Odvolací senát zrušil rozsudek, kterým nižší\nsoud loni v únoru osvobodil\" Babiše a Nagyovou v kauze Čapí hnízdo.\n\n**Nezávislost — opraveno 2026-08-05**: detekce zdrojových rodin ověřila,\nže i článek České justice (SRC-01) nese `<meta name=\"author\" content=\"ČTK\">`\n— není to samostatné zjištění redakce, ale vydání téže agenturní zprávy.\nDřívější poznámka tvrdící odlišnou rodinu byla nesprávná a je tímto\nopravena. Oba zdroje patří do rodiny `ctk`, CLM-01 proto nese stav\n`1 ZDROJ`.\n\n**Limity**: jde o totéž jako SRC-01 popisuje procesní krok, ne rozsudek\no vině — zrušené zproštění není odsouzení."
     }
   ],
   "order": 27

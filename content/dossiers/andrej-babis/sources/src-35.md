@@ -26,7 +26,9 @@ na dotaci měla nárok.
 
 **Poznámka k procesní přesnosti**: obžaloba není rozhodnutí o vině.
 
-**Nezávislost**: druhá redakce k téže události vedle
-[SRC-34](@/dossiers/andrej-babis/sources/src-34.md) (ČT24); obě mohou
-vycházet z téhož agenturního základu ČTK — korroborace je proto
-vydavatelská, ne nutně zdrojová. Otevřeno a přečteno 2026-08-01.
+**Nezávislost — ověřeno 2026-08-05**: dřívější podezření se potvrdilo.
+Detekce zdrojových rodin našla `<meta name="author" content="ČTK">` na
+Blesk.cz i na ČT24 ([SRC-34](@/dossiers/andrej-babis/sources/src-34.md)) —
+oba texty jsou vydání téže agenturní zprávy. Korroborace byla jen
+vydavatelská; oba zdroje patří do rodiny `ctk` a CLM-57 nese stav
+`1 ZDROJ`. Otevřeno a přečteno 2026-08-01.

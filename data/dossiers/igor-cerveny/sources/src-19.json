@@ -12,6 +12,7 @@
   "title": "SRC-19 — Ekolist.cz (ČTK)",
   "description": "Červený navštíví národní parky v USA, bude tam řešit protipožární ochranu",
   "outlet": "Ekolist.cz (ČTK)",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://ekolist.cz/cz/zpravodajstvi/zpravy/cerveny-navstivi-narodni-parky-v-usa-bude-tam-resit-protipozarni-ochranu",
   "published": "2026-07-10",

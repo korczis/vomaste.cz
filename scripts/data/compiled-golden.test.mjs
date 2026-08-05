@@ -36,11 +36,11 @@ test("golden: graf — uzly z entit, hrany z relations", () => {
   assert.equal(compiled.graph.edges.length, 317);
 });
 
-test("golden: vzorek claim záznamu (andrej-babis CLM-01)", () => {
+test("golden: vzorek claim záznamu (andrej-babis CLM-01; snapshot 2026-08-05: CORROBORATED → 1 ZDROJ, oba citované zdroje jsou vydání téže zprávy ČTK)", () => {
   const w = compiled.indexes.byDossierIdentifier["andrej-babis:CLM-01"];
   assert.equal(w.registry, "claims");
-  assert.equal(w.record.status, "status-corroborated");
-  assert.equal(w.record.statusLabel, "CORROBORATED");
+  assert.equal(w.record.status, "status-single");
+  assert.equal(w.record.statusLabel, "1 ZDROJ");
   assert.equal(w.route, "/dossiers/andrej-babis/claims/clm-01/");
   assert.match(w.record.text, /Čapí hnízdo/);
 });

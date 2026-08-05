@@ -14,8 +14,11 @@ record_type = "source"
 lang = "cs"
 src_id = "SRC-38"
 +++
-Seznam Zprávy, publikováno 6. 5. 2026, nezávisle na FORUM 24 (SRC-13)
-potvrzuje totéž jádro faktu: „Zjištěné skutečnosti byly předány tomuto
+Seznam Zprávy, publikováno 6. 5. 2026, uvádí totéž jádro faktu jako
+FORUM 24 (SRC-13) — **nikoli ale nezávisle**: detekce zdrojových rodin
+(2026-08-05) našla u obou textů jako autora ČTK, jde tedy o dvě vydání
+téže agenturní zprávy a oba zdroje patří do rodiny `ctk`:
+„Zjištěné skutečnosti byly předány tomuto
 městskému úřadu jakožto příslušnému přestupkovému orgánu dne
 22. 4. 2026,“ tedy shodné datum postoupení věci (22. 4. 2026) i shodné
 datum zveřejnění (6. 5. 2026), tedy dvoutýdenní odstup mezi postoupením

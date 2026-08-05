@@ -12,6 +12,7 @@
   "title": "SRC-12 — Seznam Zprávy",
   "description": "Ministr Červený opravil majetkové přiznání a zaplatil pokutu",
   "outlet": "Seznam Zprávy",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://www.seznamzpravy.cz/clanek/domaci-politika-ministr-cerveny-opravil-majetkove-priznani-a-zaplatil-pokutu-309080",
   "published": "2026-06-22",

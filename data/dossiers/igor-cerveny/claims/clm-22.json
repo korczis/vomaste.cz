@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
   },
   "text": "Ministr své pochybení vysvětlil tak, že „došlo z mé strany k nesprávnému výkladu jedné procesní skutečnosti“ a že „chybně jsem vycházel z předpokladu, že rozhodným obdobím je datum nabytí funkce, nikoliv datum podání oznámení“.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-04"

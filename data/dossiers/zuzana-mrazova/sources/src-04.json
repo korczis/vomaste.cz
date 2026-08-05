@@ -12,6 +12,7 @@
   "title": "SRC-04 — ČT24 (Česká televize)",
   "description": "Mrázová dostala pokutu za porušení zákona o střetu zájmů, píší Seznam Zprávy",
   "outlet": "ČT24 (Česká televize)",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://ct24.ceskatelevize.cz/clanek/domaci/mrazova-dostala-pokutu-za-poruseni-zakona-o-stretu-zajmu-pisi-seznam-zpravy-375947",
   "published": "2026-07-25",

@@ -12,6 +12,7 @@
   "title": "SRC-45 — ČeskéNoviny.cz (ČTK): Firmy z Agrofertu kvůli odepřeným dotacím podaly sérii neúspěšných stížností (19. 8. 2025)",
   "description": "NSS v polovině srpna 2025 zamítl stížnost Sady CZ: rozhodný byl stav v době podání žádosti; série neúspěšných stížností dalších firem skupiny.",
   "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://www.ceskenoviny.cz/zpravy/firmy-z-agrofertu-kvuli-odeprenym-dotacim-podaly-serii-neuspesnych-stiznosti/2710356",
   "published": "2025-08-19",

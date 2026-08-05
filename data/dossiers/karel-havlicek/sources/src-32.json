@@ -12,6 +12,7 @@
   "title": "SRC-32 — CNN Prima News: Policie navrhla obžalovat pekárnu patřící pod Agrofert, měla zneužívat stamilionových dotací (8. 6. 2026)",
   "description": "CNN Prima News nezávisle na Pražský deník (SRC-13) potvrzuje říjnové 2024 obvinění NCOZ vůči Pekárně Zelená louka a dvěma jejím představitelům.",
   "outlet": "CNN Prima News",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://cnn.iprima.cz/policie-navrhla-obzalovat-pekarnu-patrici-pod-agrofert-mela-zneuzivat-stamilionovych-dotaci-514192",
   "published": "2026-06-08",

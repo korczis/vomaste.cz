@@ -14,8 +14,11 @@ record_type = "source"
 lang = "cs"
 src_id = "SRC-07"
 +++
-Hospodářské noviny (Economia) dne 23. 7. 2026 nezávisle na Blesk.cz
-(SRC-06) potvrzují totéž jádro faktu, včetně přesného výčtu institucí:
+Hospodářské noviny (Economia) dne 23. 7. 2026 uvádějí totéž jádro faktu
+jako Blesk.cz (SRC-06), včetně přesného výčtu institucí — **nikoli ale
+nezávisle**: detekce zdrojových rodin (2026-08-05) našla v HN
+`<meta name="author" content="ČTK">` a na Blesk.cz podpis „Magdalena
+Škapová, ČTK", oba zdroje tedy patří do rodiny `ctk`:
 cituje prezidenta Pavla, že vládu nepodezírá ze snahy o další zásah do
 působení **Ústavního soudu, veřejného ochránce práv, Kanceláře
 prezidenta republiky, Nejvyššího kontrolního úřadu nebo Národní

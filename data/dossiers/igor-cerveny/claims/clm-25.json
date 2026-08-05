@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
   },
   "text": "Poslanecký mandát získal Červený 4. října 2025; vypořádání společného jmění s manželkou uzavřel měsíc poté.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-14"

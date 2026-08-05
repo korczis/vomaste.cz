@@ -12,6 +12,7 @@
   "title": "SRC-19 — Echo24",
   "description": "Ujistil jsem prezidenta, že vláda veřejnoprávní média neohrozí, říká ministr Klempíř",
   "outlet": "Echo24",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://m.echo24.cz/a/HRbg7/zpravy-domov-klempir-ujistil-pavla-ze-vlada-verejnopravni-media-neohrozi",
   "published": "2026-07-01",

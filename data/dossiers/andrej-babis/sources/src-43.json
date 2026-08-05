@@ -12,6 +12,7 @@
   "title": "SRC-43 — ČeskéNoviny.cz (ČTK): Fond podle NSS nechyboval, když zamítl dotace pro firmy z Agrofertu (15. 1. 2025)",
   "description": "NSS vyhověl kasačním stížnostem SZIF ve věcech Vodňanská drůbež a Výkrm Tagrea; rozhodná byla existence střetu zájmů v době podání žádosti, městský soud musí rozhodovat znovu.",
   "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://www.ceskenoviny.cz/zpravy/2620368",
   "published": "2025-01-15",
