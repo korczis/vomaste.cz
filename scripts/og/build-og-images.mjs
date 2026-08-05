@@ -17,7 +17,7 @@
  * cards from data/dossiers.toml + each dossier's generated stats.toml, so a
  * new dossier gets a card without editing this script.
  */
-import { readFileSync, mkdirSync } from "node:fs";
+import { existsSync, readFileSync, mkdirSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { chromium } from "playwright";
@@ -88,7 +88,8 @@ function cardHtml({ kicker, title, subtitle, chips = [], footer }) {
   </body></html>`;
 }
 
-const browser = await chromium.launch();
+const systemChrome = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
+const browser = await chromium.launch(existsSync(systemChrome) ? { executablePath: systemChrome } : {});
 const page = await browser.newPage({ viewport: { width: 1200, height: 630 }, deviceScaleFactor: 1 });
 
 async function render(html, file) {

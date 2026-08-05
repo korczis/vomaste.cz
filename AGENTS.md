@@ -421,11 +421,20 @@ The default is to cover no one. Adding a new subject, or expanding an
 existing subject's scope to a new controversy, requires an explicit,
 dated authorization from the site owner, recorded in this file — never
 assumed silently, and never inferred just because a topic is "publicly
-interesting." An authorization must state exactly: who, which specific
-controversies/topics, and that coverage is limited to what named,
-reputable, independent sources have already published. It never
-automatically extends to further named third parties beyond what the
-cited reporting itself discloses.
+interesting." A clear owner instruction to create, add, investigate or
+expand a dossier for a named subject is itself authorization; no magic
+phrase, repeated confirmation or separate "proceed" is required. The owner
+may type a detailed scope in the interactive CLI, or an agent may derive a
+concrete working scope from the owner's request and the public sources it
+opens, then record it through `authorize-entity.mjs` using
+`--owner-authorized-in-conversation` and `--scope-file`. CI, scheduled
+automation and inferred consent may not use that mode. An authorization
+record must identify the subject and describe the working topics; the agent
+may refine that description during research without returning for approval,
+provided every published claim remains limited to named, reputable sources
+and the owner's stated exclusions are respected. A newly encountered person
+does not become a dossier subject merely by appearing in reporting, but the
+owner may authorize broad or multiple-subject coverage in one instruction.
 
 ### Context entities are not coverage (2026-07-30)
 
@@ -440,9 +449,10 @@ office) and `scripts/osint/expand-entity.mjs` (ARES registry
 neighbourhood).
 
 The line this preserves is the one that matters: **a claim about a person,
-or a dossier on them, still needs an explicit dated authorization written
-by a human**. `validate-authorization.mjs` enforces the split — it accepts
-context entities freely and fails the build if one acquires
+or a dossier on them, still needs an explicit dated authorization from the
+site owner**. It may be typed directly or recorded verbatim by an agent from
+the owner's explicit current-conversation decision. `validate-authorization.mjs`
+enforces the split — it accepts context entities freely and fails the build if one acquires
 `dossier_enabled` or `dossier_status = "authorized"` without a matching
 record in `data/authorizations.toml`.
 
@@ -453,10 +463,17 @@ generator — a slug collision with a namesake is reported for human review,
 never resolved automatically.
 
 **Process for the next authorization**: when the site owner authorizes a
-new subject or scope extension on the record, append a new dated
-subsection to the "Content about real parties" log below — do not edit or
-remove prior entries. Each entry is a permanent, auditable record of what
-was actually approved and when.
+new subject or scope extension on the record, use
+`scripts/dossier/authorize-entity.mjs` to append a new dated subsection to
+the "Content about real parties" log below — do not edit or remove prior
+entries. A human may confirm interactively; an agent may use conversation
+mode whenever the owner's current message clearly requests work on a named
+subject. The agent drafts the concrete scope from that instruction and the
+sources it opens; it does not pause for a second authorization ceremony.
+Each entry is a permanent, auditable record of what was actually approved
+and when. Non-interactive anchoring accepts only newly
+appended entries; modifying or removing an existing entry still requires
+direct human review and the stronger override confirmation.
 
 ## Content about real parties
 
@@ -1387,3 +1404,11 @@ Coverage limited to two topics:
 This authorization does not extend to Vencálek's business activities
 generally, nor to any new topic about Petr Macinka, who has his own
 dossier and authorization.
+
+### Scope extension, 2026-08-05: James Quick
+
+Authorized by the site owner, explicitly and on the record, 2026-08-05:
+
+Autorizuji Jamese Quicka jako subjekt samostatného dossieru. Rozsah zahrnuje jeho veřejně doložené působení spojené s webem jamesquick.cz, CERD/CERD News, Centrálním registrem dlužníků, Protikorupční linkou, veřejnými politickými a občanskými aktivitami a případnými doloženými kontakty s veřejnými institucemi nebo jednáním vůči novinářům. Agent smí rozsah během rešerše konkretizovat podle přímo otevřených veřejných zdrojů bez dalšího autorizačního kola.
+
+Publikovat lze pouze tvrzení podložená pojmenovaným, datovaným a přímo otevřeným veřejným zdrojem; vlastní weby a autorské profily dokládají jen vlastní výroky nebo sebeprezentaci, nikoli nezávislé potvrzení. Závažná tvrzení o nátlaku, výhrůžkách, protiprávním jednání nebo lobbingu musí být přesně připsána zdroji a nesmějí být přijata jako vlastní závěr webu. Co zdrojově doložit nelze, zůstane rešeršní mezerou, nikoli tvrzením. Soukromé zprávy, neveřejné screenshoty, adresy bydliště, data narození a údaje o soukromých osobách jsou mimo rozsah.

@@ -827,3 +827,4 @@
 {"logged_at":"2026-08-03","record_id":"michal-maixner","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
 {"logged_at":"2026-08-03","record_id":"michal-vit","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
 {"logged_at":"2026-08-03","record_id":"nadacni-fond-fiducia","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
+{"logged_at":"2026-08-05","record_id":"james-quick","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["james-quick"]},"action":"created"}

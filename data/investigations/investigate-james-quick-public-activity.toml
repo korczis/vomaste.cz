@@ -1,0 +1,9 @@
+id = "investigate-james-quick-public-activity"
+title = "James Quick — veřejné působení a projekty"
+subject_entity_id = "james-quick"
+auth_record_id = "AUTH-2026-08-05-JAMES-QUICK"
+status = "sourcing"
+branch = "codex/investigate-james-quick"
+opened = "2026-08-05"
+allowed_source_classes = ["independent_media", "public_registry", "official_primary_source"]
+notes = "První průchod našel oficiální odpověď ÚOOÚ k CERD. Sebeprezentační weby nejsou nezávislou koroborací; parlamentní kontakty a tvrzení o jednání vůči novinářům zůstávají otevřené GAP."

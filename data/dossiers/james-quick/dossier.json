@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "james-quick",
+  "slug": "james-quick",
+  "title": "James Quick",
+  "description": "Neutrální, zdroji doložený přehled veřejného působení Jamese Quicka a projektů, s nimiž je veřejně spojován.",
+  "dossierType": "entity",
+  "canonicalDossier": "james-quick",
+  "subject": "james-quick",
+  "language": "cs",
+  "navigationVisible": true,
+  "order": 25,
+  "updated": "2026-08-05",
+  "reviewedAt": "2026-08-05",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-05-JAMES-QUICK"
+    ]
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Kdo je James Quick {#kdo}\n\nJames Quick je osoba veřejně spojená se systémem CERD a společností CSR & Protikorupcnilinka.cz s.r.o. Jediný zatím publikovaný faktický záznam tohoto dossieru stojí na oficiální odpovědi Úřadu pro ochranu osobních údajů; nejde o tvrzení, že se dopustil pochybení.\n\nDossier je ve stavu **rozpracované rešerše**. Vlastní weby, CERD a autorské profily se používají pouze jako primární doklad toho, co jejich autoři sami publikují, nikoli jako nezávislé potvrzení sebeprezentace. Tvrzení o lobbingu, kontaktech s Parlamentem nebo jednání vůči novinářům zatím nebyla doložena nezávislým otevřeným zdrojem a zůstávají v registru mezer.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/james-quick/claims/clm-01.md) | Úřad pro ochranu osobních údajů v odpovědi zveřejněné 19. prosince 2024 uvedl, že při dřívější kontrole považoval Jiřího Jehličku, nyní Jamese Quicka, za správce a zpracovatele osobních údajů ve vztahu k systému CERD; v době kontroly byl podle úřadu také jednatelem CSR & Protikorupcnilinka.cz s.r.o. | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-01](@/dossiers/james-quick/sources/src-01.md) |\n\n## Doložená vazba k systému CERD {#cerd}\n\nOficiální odpověď ÚOOÚ z 19. prosince 2024 odkazuje na starší kontrolu vedenou pod spisovou značkou UOOU-09488/14-74. Úřad v ní podle zveřejněné odpovědi považoval Jiřího Jehličku, nyní Jamese Quicka, za správce a zpracovatele osobních údajů ve vztahu k systému CERD a uvedl, že byl v době kontroly jednatelem kontrolované společnosti CSR & Protikorupcnilinka.cz s.r.o. ([CLM-01](@/dossiers/james-quick/claims/clm-01.md)).\n\nTento záznam popisuje identitu a institucionální vazbu uvedenou úřadem. Sám o sobě neříká, že kontrola zjistila protiprávní jednání, ani nepřenáší na Jamese Quicka odpovědnost za jakékoli jiné tvrzení publikované na webech CERD.\n\n## Co tento přehled zatím neověřil {#mezery}\n\nRešerše zatím nenalezla nezávislý redakční nebo institucionální zdroj, který by dostatečně doložil širší sebepopis veřejných aktivit, kontakty s Parlamentem nebo tvrzení o jednání vůči novinářům. Tyto otázky jsou vedeny jako [GAP-01](@/dossiers/james-quick/gaps/gap-01.md) a [GAP-02](@/dossiers/james-quick/gaps/gap-02.md), nikoli jako skutková tvrzení.\n\n## Metodické omezení\n\nOficiální web subjektu, CERD a otevřené blogovací platformy mohou doložit autorství nebo existenci veřejného výroku. Bez dalšího nezávislého zdroje ale nedokládají pravdivost tvrzení, která o sobě nebo jiných osobách publikují."
+    }
+  ]
+}

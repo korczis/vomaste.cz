@@ -48,14 +48,17 @@ entry; it does not replace reading and applying the rule.
   and load-bearing: never edit or remove an existing entry, even to "clean
   up" wording or fix a typo. A new scope extension is always a brand-new
   dated subsection, added only after the site owner has explicitly
-  authorized it on the record in the current conversation — not inferred
-  from a request to "add more detail" or "cover X too." This applies at
-  any scale: a request to authorize many subjects at once (e.g. "the
-  whole cabinet", "everyone in party X") is the same rule, not a bulk
-  exception — every one of them needs their own named, dated, topic-
-  specific entry, never a blanket one. `scripts/dossier/authorize-entity.mjs`
-  (interactive-only, human-typed scope text, no non-interactive/CI path)
-  is the only thing that writes a new authorization entry;
+  authorized it on the record in the current conversation. A clear request
+  to create, add, investigate, deepen or cover a named subject counts; do
+  not demand a magic phrase or a second confirmation. The agent may draft
+  the concrete scope from the request and directly opened public sources.
+  Bulk authorization is also valid when the owner clearly requests it, but
+  each resulting subject still gets a named, dated audit record.
+  `scripts/dossier/authorize-entity.mjs`
+  is the canonical writer. It supports either human-typed interactive
+  confirmation or an agent recording the site owner's explicit decision in
+  the current conversation via `--owner-authorized-in-conversation` and a
+  verbatim `--scope-file`; CI and inferred authorization remain forbidden.
   `scripts/data/scaffold-dossier.mjs` (`npm run dossier:scaffold`)
   generates a new dossier's canonical package (`data/dossiers/<slug>/`)
   afterward, and itself refuses to run for any subject without a matching
@@ -104,9 +107,12 @@ entry; it does not replace reading and applying the rule.
     the promotion of such an entity to a dossier subject.
   - **Writing claims about someone, or opening a dossier on them**, still
     requires an explicit, dated authorization from the site owner in
-    `AGENTS.md`, written by a human through `authorize-entity.mjs`. No
-    automation may create one, and "the registry is public" is not a
-    substitute for it.
+    `AGENTS.md`, recorded through `authorize-entity.mjs`. The owner may type
+    it interactively or clearly request the dossier/investigation in the
+    current conversation. The agent records a concrete scope and proceeds
+    without another approval round. CI and background automation still
+    cannot invent owner intent, and "the registry is public" alone is not
+    an instruction to publish.
   When in doubt about which of the two you are doing, you are writing a
   claim — stop and ask. Personal data (dates of birth, home addresses) is
   never copied out of a registry in either case.

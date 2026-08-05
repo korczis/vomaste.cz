@@ -258,22 +258,53 @@ test("catches an edit committed to the branch via merge-base with origin/master 
   });
 });
 
-test("anchor tool refuses to run without a TTY", () => {
+test("anchor tool is a no-op without a TTY when the anchor is already current", () => {
   withFixture((dir) => {
     let status = 0;
     let output = "";
     try {
-      execFileSync("node", [`scripts/dossier/${ANCHOR_TOOL}`], { cwd: dir, stdio: "pipe" });
+      output = String(execFileSync("node", [`scripts/dossier/${ANCHOR_TOOL}`], { cwd: dir, stdio: "pipe" }));
     } catch (err) {
       status = err.status;
       output = `${err.stdout}${err.stderr}`;
     }
-    assert.equal(status, 1);
-    assert.match(output, /interactive terminal/);
-    // a hlavně: bez TTY se kotvy ani logu nesmí dotknout
+    assert.equal(status, 0, output);
+    assert.match(output, /nic k ukotvení/);
+    // a hlavně: no-op se logu nesmí dotknout
     assert.equal(
       readFileSync(path.join(dir, "AGENTS.md"), "utf8"),
       FIXTURE_AGENTS_MD,
+    );
+  });
+});
+
+test("anchor tool accepts only a newly added entry in explicit conversation mode", () => {
+  withFixture((dir) => {
+    appendFileSync(
+      path.join(dir, "AGENTS.md"),
+      "\n### Authorized subject: Bob (on the record)\n\nExplicit owner decision.\n",
+    );
+    execFileSync(
+      "node",
+      [`scripts/dossier/${ANCHOR_TOOL}`, "--owner-authorized-in-conversation"],
+      { cwd: dir, stdio: "pipe" },
+    );
+    const res = runValidator(dir);
+    assert.equal(res.status, 0, res.output);
+  });
+});
+
+test("conversation mode cannot re-anchor a modified existing entry", () => {
+  withFixture((dir) => {
+    const p = path.join(dir, "AGENTS.md");
+    writeFileSync(p, readFileSync(p, "utf8").replace("Original text, must never change.", "Modified."));
+    assert.throws(
+      () => execFileSync(
+        "node",
+        [`scripts/dossier/${ANCHOR_TOOL}`, "--owner-authorized-in-conversation"],
+        { cwd: dir, stdio: "pipe" },
+      ),
+      (error) => error.status === 1 && /cannot be changed or removed/.test(`${error.stdout}${error.stderr}`),
     );
   });
 });

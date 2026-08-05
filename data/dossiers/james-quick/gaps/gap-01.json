@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/gaps/GAP-01",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/james-quick"
+  },
+  "title": "GAP-01 — Nezávislé doložení širšího veřejného působení",
+  "description": "Najít datované nezávislé zdroje k veřejně uváděným aktivitám Jamese Quicka mimo jeho vlastní weby, CERD a autorské profily.",
+  "priority": "vysoká",
+  "checked": "2026-08-05",
+  "claims": [],
+  "subjects": [
+    "james-quick"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Cílené vyhledávání 5. srpna 2026 nalezlo opakované životopisné údaje na jamesquick.cz, CERD, Centrálním registru dlužníků, autorském profilu Médium.cz a agregátorech osobností. Tyto stránky mohou doložit, že určitá sebeprezentace byla zveřejněna, ale zatím neposkytují dostatečně nezávislé potvrzení demonstrací, protikorupčních aktivit, charitativních projektů ani deklarované profesní role. Do nalezení přímo otevřeného nezávislého zdroje se z těchto údajů nevytváří faktické tvrzení."
+    }
+  ],
+  "order": 1
+}

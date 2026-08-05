@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/gaps/GAP-02",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/james-quick"
+  },
+  "title": "GAP-02 — Kontakty s Parlamentem a jednání vůči novinářům",
+  "description": "Ověřit z institucionálních dokumentů nebo nezávislého zpravodajství tvrzení o kontaktech s Poslaneckou sněmovnou či Senátem a o případném nátlaku nebo výhrůžkách vůči novinářům.",
+  "priority": "vysoká",
+  "checked": "2026-08-05",
+  "claims": [],
+  "subjects": [
+    "james-quick"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "K 5. srpnu 2026 nebyl při cíleném hledání přímo otevřen žádný parlamentní registr, stenozáznam, úřední dokument ani nezávislý redakční text, který by Jamese Quicka spojoval s konkrétní lobbistickou činností v Poslanecké sněmovně nebo Senátu. Stejně tak nebyl nalezen dostatečný veřejný zdroj k tvrzení o výhrůžkách či nátlaku vůči novinářům. Absence nalezeného zdroje není závěrem, že se nic nestalo; znamená pouze, že dossier tato tvrzení zatím nesmí publikovat jako fakta."
+    }
+  ],
+  "order": 2
+}

@@ -1,14 +1,12 @@
 #!/usr/bin/env node
 /*
  * The ONLY path by which a context entity's dossier_status may become
- * "authorized". Deliberately interactive-only: refuses to run unless
- * attached to a real TTY, and requires a human to type the entity id,
- * the authorized scope in their own words, and an exact confirmation
- * phrase. It cannot be invoked non-interactively — not from CI, not from
- * a script, not from another agent's tool call with a --yes flag — because
- * there is no flag that skips the prompts. The scope text you type is
- * appended verbatim to AGENTS.md; there is no default and no
- * auto-generated wording.
+ * "authorized". The normal path is interactive and requires a human to
+ * type the entity id, scope, and confirmation phrase. An agent may instead
+ * record the site owner's clear request from the current conversation with
+ * --owner-authorized-in-conversation plus --scope-file. The agent may draft
+ * that concrete scope from the request and opened public sources. The file
+ * is appended verbatim; there is no generic CI/background --yes mode.
  *
  * What it does, only after that confirmation:
  *   1. Appends a new dated, append-only entry to AGENTS.md's authorization
@@ -24,7 +22,7 @@
  * fails the build if a dossier exists whose subject isn't authorized this
  * way, and content still needs real sources and claims written for it.
  */
-import { readFileSync, writeFileSync, readdirSync } from "node:fs";
+import { readFileSync, writeFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import readline from "node:readline";
@@ -36,26 +34,30 @@ const ENTITIES_ROOT = join(ROOT, "data/dossiers/_shared/entities");
 const AGENTS_MD = join(ROOT, "AGENTS.md");
 const AUTHORIZATIONS_TOML = join(ROOT, "data/authorizations.toml");
 
-function extractField(text, key) {
-  const re = new RegExp(`^${key}\\s*=\\s*"((?:[^"\\\\]|\\\\.)*)"`, "m");
-  const found = text.match(re);
-  return found ? found[1].replace(/\\(.)/g, "$1") : null;
-}
+const argv = process.argv.slice(2);
+const entityId = argv.find((arg) => !arg.startsWith("--"));
+const scopeFileArg = argv.find((arg) => arg.startsWith("--scope-file="));
+const scopeFile = scopeFileArg?.slice("--scope-file=".length) ?? null;
+const conversationAuthorization = argv.includes("--owner-authorized-in-conversation");
+const nonInteractive = !process.stdin.isTTY || !process.stdout.isTTY;
 
-if (!process.stdin.isTTY || !process.stdout.isTTY) {
+if (nonInteractive && (!conversationAuthorization || !scopeFile)) {
   console.error(
     "authorize-entity: refuses to run without an interactive terminal.\n" +
-      "This is deliberate — authorizing a new dossier subject must be a human\n" +
-      "action taken at a keyboard, not something a script, CI job, or agent\n" +
-      "can trigger non-interactively. Run this yourself, locally, in a real shell.",
+      "After an explicit owner decision in the current conversation, use\n" +
+      "--owner-authorized-in-conversation and --scope-file=<path>.\n" +
+      "There is no generic --yes mode.",
   );
   process.exit(1);
 }
 
-const entityId = process.argv[2];
 if (!entityId) {
-  console.error("Usage: node scripts/dossier/authorize-entity.mjs <entity-id>");
-  console.error("Example: node scripts/dossier/authorize-entity.mjs babis");
+  console.error("Usage: node scripts/dossier/authorize-entity.mjs <entity-id> [--owner-authorized-in-conversation --scope-file=<path>]");
+  process.exit(1);
+}
+
+if (conversationAuthorization !== Boolean(scopeFile)) {
+  console.error("Conversation mode requires both --owner-authorized-in-conversation and --scope-file=<path>.");
   process.exit(1);
 }
 
@@ -77,43 +79,57 @@ if (currentRole === "subject" && currentStatus === "authorized") {
   process.exit(0);
 }
 
-const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
-const ask = (q) => new Promise((resolve) => rl.question(q, resolve));
+let scope;
+if (conversationAuthorization) {
+  try {
+    scope = readFileSync(scopeFile, "utf8").trim();
+  } catch (e) {
+    console.error(`Cannot read scope file ${scopeFile}: ${e.message}`);
+    process.exit(1);
+  }
+  if (scope.length < 20) {
+    console.error("Scope description is empty or too short. Aborted, nothing changed.");
+    process.exit(1);
+  }
+} else {
+  const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
+  const ask = (q) => new Promise((resolve) => rl.question(q, resolve));
 
-console.log(`\nEntity: ${entityName} (${entityId})`);
-console.log(`Current publication_role: ${currentRole}, dossier_status: ${currentStatus}\n`);
-console.log("This will:");
-console.log(`  - append a new dated authorization entry to AGENTS.md, in your own words`);
-console.log(`  - add a matching record to data/authorizations.toml`);
-console.log(`  - flip this entity's canonical publicationRole to "subject" and dossierStatus to "authorized"\n`);
+  console.log(`\nEntity: ${entityName} (${entityId})`);
+  console.log(`Current publication_role: ${currentRole}, dossier_status: ${currentStatus}\n`);
+  console.log("This will:");
+  console.log(`  - append a new dated authorization entry to AGENTS.md, in your own words`);
+  console.log(`  - add a matching record to data/authorizations.toml`);
+  console.log(`  - flip this entity's canonical publicationRole to "subject" and dossierStatus to "authorized"\n`);
 
-const typedId = await ask(`Type the exact entity id to confirm you mean "${entityId}": `);
-if (typedId.trim() !== entityId) {
-  console.error("Entity id did not match. Aborted, nothing changed.");
+  const typedId = await ask(`Type the exact entity id to confirm you mean "${entityId}": `);
+  if (typedId.trim() !== entityId) {
+    console.error("Entity id did not match. Aborted, nothing changed.");
+    rl.close();
+    process.exit(1);
+  }
+
+  scope = await ask(
+    "\nDescribe, in your own words, exactly what this authorization covers\n" +
+      "(who, which topics/controversies, and any sourcing limits — this text\n" +
+      "is appended verbatim to AGENTS.md's authorization log):\n> ",
+  );
+  if (!scope.trim() || scope.trim().length < 20) {
+    console.error("Scope description is empty or too short. Aborted, nothing changed.");
+    rl.close();
+    process.exit(1);
+  }
+
+  const confirm = await ask(`\nType AUTHORIZE (all caps) to confirm this is your explicit, on-the-record decision: `);
   rl.close();
-  process.exit(1);
+  if (confirm.trim() !== "AUTHORIZE") {
+    console.error("Confirmation phrase did not match. Aborted, nothing changed.");
+    process.exit(1);
+  }
 }
 
-const scope = await ask(
-  "\nDescribe, in your own words, exactly what this authorization covers\n" +
-    "(who, which topics/controversies, and any sourcing limits — this text\n" +
-    "is appended verbatim to AGENTS.md's authorization log):\n> ",
-);
-if (!scope.trim() || scope.trim().length < 20) {
-  console.error("Scope description is empty or too short. Aborted, nothing changed.");
-  rl.close();
-  process.exit(1);
-}
-
-const confirm = await ask(`\nType AUTHORIZE (all caps) to confirm this is your explicit, on-the-record decision: `);
-rl.close();
-if (confirm.trim() !== "AUTHORIZE") {
-  console.error("Confirmation phrase did not match. Aborted, nothing changed.");
-  process.exit(1);
-}
-
-// --- from here on, every step is a mechanical consequence of the human's
-//     own typed confirmation above, not an independent decision ---
+// --- from here on, every step is a mechanical consequence of the owner's
+//     interactive confirmation or explicit current-conversation decision ---
 const today = new Date().toISOString().slice(0, 10);
 const recordId = `AUTH-${today}-${entityId.toUpperCase()}`;
 

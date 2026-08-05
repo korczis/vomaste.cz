@@ -332,7 +332,7 @@ justfile je chyba.
 | `just clean` | `rm -rf public` | build output není zdroj pravdy |
 | `just regen` | `npm run data:build` | přegeneruje view modely a content adaptéry po editaci kanonického JSON |
 | `just scaffold <slug> "<Jméno>" <subjekt> <AUTH-id>` | `npm run dossier:scaffold` | založí kanonický balíček; odmítne subjekt bez záznamu v `data/authorizations.toml` |
-| `just authorize <entity>` | `npm run authorize:entity` | **interaktivní z principu** — vyžaduje TTY a rozsah napsaný člověkem |
+| `just authorize <entity>` | `npm run authorize:entity` | interaktivní potvrzení vlastníka; agent po jeho explicitním rozhodnutí používá auditovaný `--scope-file` režim |
 | `just ares --ico=… \| --name="…"` | `scripts/osint/ares-lookup.mjs` | živý síťový dotaz, **není** součástí buildu |
 | `just expand <ičo> [--write]` | `scripts/osint/expand-entity.mjs` | rozbalí rejstříkové okolí firmy na **kontextové** entity (kanonické JSON záznamy); výchozí je dry run, existující záznam nikdy nepřepíše |
 | `just coop` / `just inbox` | `scripts/coop/coop.sh` | stav co-op boardu a sběrnice |
@@ -475,8 +475,12 @@ jsou veřejné (viz bezpečnostní hranice nahoře).
 Nový dossier je datová operace, ne zásah do jádra:
 
 1. autorizace subjektu vlastníkem — nový datovaný záznam v append-only
-   logu `AGENTS.md` (`npm run authorize:entity`, interaktivně; bez něj
-   stop);
+   logu `AGENTS.md`; buď interaktivně přes `npm run authorize:entity`, nebo
+   mechanicky agentem po jasném pokynu vlastníka v aktuální konverzaci
+   (`--owner-authorized-in-conversation` + auditovaný `--scope-file`). Pokyn
+   „založ/přidej/prozkoumej dossier X“ stačí; agent sepíše pracovní rozsah z
+   pokynu a otevřených veřejných zdrojů a nečeká na další potvrzení. CI ani
+   plánovaná automatizace nesmějí záměr vlastníka samy dovozovat;
 2. `npm run dossier:scaffold -- --slug=<slug> --title="<Jméno>"
    --subject=<subjekt> --authorization-record-id=<AUTH-id>` — založí
    kanonický balíček `data/dossiers/<slug>/` (dossier.json + prázdné

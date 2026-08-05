@@ -160,3 +160,10 @@ authorized_at = "2026-08-01"
 subjects = ["vencalek"]
 agents_md_section = "Authorized subject: Petr Vencálek (on the record)"
 scope_summary = "Jediný společník (100 %) a jednatel GMR GAS s.r.o. (Brno) od 2014-12; není veřejný funkcionář, veřejný zájem stojí na vazbě k Macinkově již autorizované kauze GMR GAS UA LLC. Rozsah: (1) vlastnictví/jednatelství GMR GAS s.r.o. a vazba firmy na GMR GAS UA LLC (Kyjev), kde měl Macinka nepřiznaný 20% podíl — již zdokumentováno CLM-46/47/48, SRC-17 Investigace.cz, SRC-55 ARES; (2) dary Klubu motoristů, z.s. — autorizováno jako téma, ale ŽÁDNÝ zdroj zatím nebyl otevřen ani citován; bez dohledaného jmenovaného zdroje zůstává GAP, ne tvrzení. Mimo rozsah: podnikání obecně, nová témata o Macinkovi."
+
+[[authorizations]]
+id = "AUTH-2026-08-05-JAMES-QUICK"
+authorized_at = "2026-08-05"
+subjects = ["james-quick"]
+agents_md_section = "Scope extension, 2026-08-05: James Quick"
+scope_summary = "Autorizuji Jamese Quicka jako subjekt samostatného dossieru. Rozsah zahrnuje jeho veřejně doložené působení spojené s webem jamesquick.cz, CERD/CERD News, Centrálním registrem dlužníků, Protikorupční linkou, veřejnými politickými a občanskými aktivitami a případnými doloženými kontakty s veřejnými institucemi nebo jednáním vůči novinářům. Agent smí rozsah během rešerše konkretizovat podle přímo otevřených veřejných zdrojů bez dalšího autorizačního kola.  Publikovat lze pouze tvrzení podložená pojmenovaným, datovaným a přímo otevřeným veřejným zdrojem; vlastní weby a autorské profily dokládají jen vlastní výroky nebo sebeprezentaci, nikoli nezávislé potvrzení. Závažná tvrzení o nátlaku, výhrůžkách, protiprávním jednání nebo lobbingu musí být přesně připsána zdroji a nesmějí být přijata jako vlastní závěr webu. Co zdrojově doložit nelze, zůstane rešeršní mezerou, nikoli tvrzením. Soukromé zprávy, neveřejné screenshoty, adresy bydliště, data narození a údaje o soukromých osobách jsou mimo rozsah."
