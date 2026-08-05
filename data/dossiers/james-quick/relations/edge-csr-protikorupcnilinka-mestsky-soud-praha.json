@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/relations/edge-csr-protikorupcnilinka-mestsky-soud-praha",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-csr-protikorupcnilinka-mestsky-soud-praha",
+  "relationId": "edge-csr-protikorupcnilinka-mestsky-soud-praha",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/james-quick"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/csr-protikorupcnilinka"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/mestsky-soud-praha"
+  },
+  "relationType": "SUBJECT_OF_PROCEEDING",
+  "label": "společnost zrušena bez likvidace a vymazána na základě usnesení soudu",
+  "status": "single",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-14"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-15"
+    }
+  ],
+  "subjects": [
+    "james-quick"
+  ],
+  "directed": true,
+  "order": 9,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Rejstříková procesní vazba s přesnou spisovou značkou. Bez úplného usnesení nevykládáme konkrétní skutkové důvody nad rámec zapsaného právního titulu."
+    }
+  ]
+}

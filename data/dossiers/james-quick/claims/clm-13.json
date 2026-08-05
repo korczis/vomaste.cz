@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-13",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-13",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/james-quick"
+  },
+  "text": "ČT24 v listopadu 2010 oznámila, že firma od plánovaného registru upustila; podle zprávy měly být zdrojem také mediální články a seznam by zahrnoval i podezřelé osoby, zatímco ÚOOÚ vzniku veřejné i neveřejné varianty bránil.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-14"
+    }
+  ],
+  "subjects": [
+    "james-quick"
+  ],
+  "order": 13,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Toto je procesní konec veřejně oznámeného projektu podle dobové zprávy, nikoli důkaz, že byl registr před stažením spuštěn. Kritiku a důvody uvádíme jako obsah citované reportáže."
+    }
+  ]
+}

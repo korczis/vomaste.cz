@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/relations/edge-james-quick-radek-john",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-james-quick-radek-john",
+  "relationId": "edge-james-quick-radek-john",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/james-quick"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/james-quick"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/radek-john"
+  },
+  "relationType": "RESPONDED_TO",
+  "label": "CERD zastoupený Jehličkou podal oznámení ve veřejné kauze",
+  "status": "single",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-15"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-16"
+    }
+  ],
+  "subjects": [
+    "james-quick"
+  ],
+  "directed": true,
+  "order": 10,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Procesní reakce ve veřejné kauze; neprokazuje vinu ani osobní, obchodní nebo lobbistický vztah."
+    }
+  ]
+}

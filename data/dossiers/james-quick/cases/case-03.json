@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/case.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/cases/CASE-03",
+  "@type": "vomaste:Case",
+  "recordType": "case",
+  "identifier": "CASE-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/james-quick"
+  },
+  "title": "Leasingová trestní věc",
+  "summary": "Vrchní soud v Praze Jiřího Jehličku v říjnu 2009 pravomocně zprostil obžaloby, protože nebylo prokázáno, že skutky spáchal právě on. Procesní výsledek je v dossieru uváděn vždy společně s důvodem zproštění.",
+  "period": "1998–2009",
+  "status": "status-single",
+  "statusLabel": "Pravomocně zproštěn",
+  "anchor": "kauza-leasingove-rizeni",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-06"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-06"
+    }
+  ],
+  "subjects": [
+    "james-quick"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Plný kontext a odkaz jsou v [hlavním přehledu dossieru](@/dossiers/james-quick/_index.md#kauza-leasingove-rizeni)."
+    }
+  ],
+  "order": 3
+}

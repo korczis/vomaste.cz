@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-13",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-13",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/james-quick"
+  },
+  "title": "SRC-13 — ČT24: Chystá se registr pachatelů sexuálního násilí na dětech",
+  "description": "Dobová zpráva o projektu CERD, zamýšleném rozsahu databáze a vyjádření Jiřího Jehličky.",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "veřejnoprávní zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/chysta-se-registr-pedofilu-bude-viset-na-internetu-216581",
+  "published": "2010-10-26",
+  "retrieved": "2026-08-05",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-12"
+    }
+  ],
+  "subjects": [
+    "james-quick"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Dobová veřejnoprávní zpráva dokládá oznámený záměr, zamýšlené zahrnutí nepravomocně odsouzených či podezřelých osob a vlastní vyjádření Jiřího Jehličky. Titulek zdroje používá dobovou zkratku; dossier volí přesnější právní popis."
+    }
+  ],
+  "order": 13
+}

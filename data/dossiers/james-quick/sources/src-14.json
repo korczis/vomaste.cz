@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-14",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-14",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/james-quick"
+  },
+  "title": "SRC-14 — ČT24: Veřejný seznam nakonec zřejmě nebude",
+  "description": "Dobová zpráva o upuštění od projektu a výhradách ÚOOÚ a policejního odborníka.",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "veřejnoprávní zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/verejny-seznam-deviantu-nakonec-zrejme-nebude-217975",
+  "published": "2010-11-18",
+  "retrieved": "2026-08-05",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-13"
+    }
+  ],
+  "subjects": [
+    "james-quick"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zdroj dokládá, že oznámený projekt nebyl spuštěn a firma od záměru ustoupila. Současně zachycuje dobové výhrady k zahrnutí podezřelých osob. Nepoužíváme jej jako důkaz existence databáze ani jako hodnocení konkrétních osob."
+    }
+  ],
+  "order": 14
+}

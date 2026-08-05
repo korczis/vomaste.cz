@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/relations/edge-james-quick-jiri-paroubek",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-james-quick-jiri-paroubek",
+  "relationId": "edge-james-quick-jiri-paroubek",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/james-quick"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/james-quick"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/jiri-paroubek"
+  },
+  "relationType": "RESPONDED_TO",
+  "label": "organizoval demonstrace požadující Paroubkův odchod z politiky",
+  "status": "single",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-16"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-17"
+    }
+  ],
+  "subjects": [
+    "james-quick"
+  ],
+  "directed": true,
+  "order": 11,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Veřejný politický protest. Hrana nevyjadřuje soukromý vztah, stranické zadání ani financování demonstrací."
+    }
+  ]
+}
