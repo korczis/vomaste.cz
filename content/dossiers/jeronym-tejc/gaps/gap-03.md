@@ -30,3 +30,5 @@ soud pro Prahu 8, ne Benešov/Viktorka), nebyla použita. Mezera
 zůstává otevřená.
 
 **Opakovaná kontrola k 2026-08-03**: hledání zopakováno, žádné nové rozhodnutí nedohledáno. Mezera zůstává otevřená.
+
+**Opakovaná kontrola k 2026-08-06**: rozhodnutí kárného senátu nadále nedoloženo. Po novele je kárné řízení se soudci dvoustupňové — v prvním stupni rozhodují kárné senáty u Krajského soudu v Praze a v Olomouci, odvolací agenda je rozdělena mezi Nejvyšší soud a Nejvyšší správní soud. Veřejně prohledávatelnou databázi rozhodnutí prvostupňových kárných senátů se k datu kontroly nepodařilo najít; ve vyhledávači NSS ani v tiskových zprávách msp.gov.cz do 27. 7. 2026 rozhodnutí ve věci není. Konkrétně chybí: spisová značka kárného řízení a rozhodnutí kárného senátu.

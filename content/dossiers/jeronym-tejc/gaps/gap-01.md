@@ -21,3 +21,5 @@ směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
 
 **Opakovaná kontrola k 2026-08-03**: toto téma (Schillerová, kabinet ministra Stanjury, Filip Benda) neodpovídá žádnému ze tří autorizovaných témat tohoto dossieru (`AUTH-2026-07-30-O`: bitcoinová kauza, kárná žaloba v kauze Viktorky, spor o předběžné opatření Ústavního soudu) a v datech dossieru není napojeno na žádné tvrzení. Scope v `AGENTS.md` se nezměnil. Dále nedohledáváno jako hraniční poznámka mimo rozsah — mezera zůstává otevřená beze změny.
+
+**Opakovaná kontrola k 2026-08-06**: téma (Schillerová, kabinet ministra Stanjury, Filip Benda) je i nadále mimo tři autorizovaná témata `AUTH-2026-07-30-O`; scope v `AGENTS.md` se nezměnil a iROZHLAS.cz stále vrací HTTP 403. Beze změny, dále nedohledáváno.

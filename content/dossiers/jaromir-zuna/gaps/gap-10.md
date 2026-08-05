@@ -19,3 +19,5 @@ Chybí primární dokument koncepce do roku 2040 a jeho tři varianty financová
 **Proč je to mezera**: Na webu ministerstva obrany je publikován pouze starší KVAČR 2035; nová koncepce nebyla ve zveřejněné podobě dohledána. Tato mezera **není** zjištěním žádným směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit otevřeným zdrojem.
 
 **Vyřešeno 3. 8. 2026**: dohledán a přímo otevřen zdroj (e15.cz, 29. 5. 2026) — viz [CLM-57](@/dossiers/jaromir-zuna/claims/clm-57.md). Dokument je záměrně utajovaný, proto ho na webu MO nelze najít — to je samo o sobě zjištění, ne mezera v rešerši. K financování jsou k dispozici jen obecné informace z uniklých částí (řádově vyšší stovky miliard Kč za variantu), ne přesný přehled tří variant. Mezera je tímto v podstatné části vyřešena — status dokumentu je jasný, přesný obsah variant zůstává nedostupný z podstaty věci (utajení).
+
+**Opakovaná kontrola k 2026-08-06**: beze změny. Koncepce do roku 2040 je podle [SRC-18](@/dossiers/jaromir-zuna/sources/src-18.md) utajovaný materiál; na webu ministerstva zůstává publikován pouze starší KVAČR 2035.
