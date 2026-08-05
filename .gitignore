@@ -31,3 +31,11 @@ playwright-report/
 # Stovky MB stažených otevřených dat — cache, ne zdroj pravdy; kdykoli
 # smazatelná, skript si je stáhne znovu.
 .tmp/public-money/
+
+# Zbytky po migraci na kanonický JSON model (T-028): per-dossier stats.toml
+# generoval dřívější generate-stats.mjs, dnes je počty vlastní view modely
+# (scripts/data/build-view-models.mjs). Nikdo je už negeneruje ani nečte —
+# jen se v pracovních kopiích válely od doby před migrací a `git add -A` je
+# opakovaně vtahoval do stagingu. Pravidlo je tu proto, aby se mrtvý
+# artefakt nevrátil do gitu omylem.
+data/dossiers/*/stats.toml
