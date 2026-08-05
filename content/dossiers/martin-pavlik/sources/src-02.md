@@ -27,11 +27,17 @@ obchodního podílu: HYDROPROGRESS, s.r.o. „jednatel; společník (podíl
 Nadační fond FIDUCIA „člen orgánu", Bydlíme v Králově Poli, z.s.
 „1. místopředseda".
 
-**Nezávislost:** jde o veřejný rejstřík vedený státem, tedy zcela jinou
-rodinu než rejstříkový agregátor
-[SRC-01](@/dossiers/martin-pavlik/sources/src-01.md) (Podnikatel.cz),
-který je odvozeným přehledem. Primární zápis a agregátor jsou dvě
-nezávislá doložení téhož rejstříkového faktu.
+**Nezávislost — žádná tu není.** Rejstříkový agregátor
+[SRC-01](@/dossiers/martin-pavlik/sources/src-01.md) (Podnikatel.cz) je
+odvozeným přehledem právě těchto rejstříkových dat. Odvozený přehled
+nemůže svému zdroji odporovat: kdyby byl zápis chybný, agregátor by
+tutéž chybu přetiskl. Že registr vede stát a agregátor soukromá firma,
+nezakládá nezávislost, když je datový podklad tentýž — nezávislost
+znamená, že druhý zdroj mohl dojít k jinému výsledku.
+
+Oba proto sdílejí source family `cz-verejny-rejstrik` a tvrzení opřená pouze o ně
+nesou stav 1 ZDROJ. Nezávislé potvrzení by musel přinést zdroj jiné
+povahy — sbírka listin, smluvní dokument nebo redakční zjištění.
 
 **Co tento záznam vědomě NEpřebírá:** datum narození ani adresu
 bydliště. Rejstřík obojí obsahuje; nástroj to odstraňuje v kódu

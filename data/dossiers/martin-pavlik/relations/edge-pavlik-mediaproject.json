@@ -18,7 +18,7 @@
   },
   "relationType": "HOLDS_INTEREST_IN",
   "label": "jednatel a společník s podílem 50 %",
-  "status": "corroborated",
+  "status": "single",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/claims/CLM-01"

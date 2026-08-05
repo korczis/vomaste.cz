@@ -15,3 +15,5 @@ lang = "cs"
 clm_id = "CLM-03"
 +++
 Tvrzení reprodukuje pouze roli zobrazenou na určeném veřejném rejstříkovém profilu. Nevyjadřuje závěr o skutečném rozsahu činnosti společnosti, o rozhodování Martina Pavlíka ani o jakémkoli pochybení. Protože je zatím doloženo jediným rejstříkovým agregátorem, zůstává ve stavu 1 ZDROJ.
+
+Roli shodně uvádí primární registr ARES i agregátor Podnikatel.cz, ale nejde o nezávislé potvrzení: agregátor tato data z registru přebírá, takže mu nemůže odporovat. Je to jedno doložení citované dvakrát — proto 1 ZDROJ, byť opřený o primární registr, ne pouze o agregátor.
