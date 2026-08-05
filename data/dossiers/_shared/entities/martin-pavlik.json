@@ -15,18 +15,21 @@
   "coverageState": "referenced",
   "dossiers": [],
   "order": 467,
-  "description": "Martin Pavlík — kontextový záznam rejstříkové vazby z ARES, ne dossier.",
+  "description": "Martin Pavlík — kontextový přehled čtyř veřejně evidovaných rejstříkových vazeb v ARES, ne dossier.",
   "provenance": {
     "discoveredAt": "2026-08-02",
     "discoveredVia": [
-      "ares-expansion-01529820-2026-08-02"
+      "ares-expansion-01529820-2026-08-02",
+      "ares-expansion-02922703-2026-08-05",
+      "ares-expansion-04449461-2026-08-05",
+      "ares-expansion-26228548-2026-08-05"
     ],
     "depth": 3
   },
   "content": [
     {
       "type": "markdown",
-      "value": "Záznam z veřejného rejstříku (ARES), pořízený programově 2026-08-02:\nzapsán jako **jednatel** společnosti MEDIA PROJECT CZ s.r.o. (IČO 01529820).\n\n**Kontextová entita, ne předmět šetření.** Tahle stránka eviduje jednu\nzveřejněnou rejstříkovou vazbu a nic víc — žádný profil, žádné tvrzení,\nžádné naznačené pochybení. Být zapsán ve statutárním orgánu nebo držet\npodíl je běžný, veřejně evidovaný fakt. Dossier o této osobě by vyžadoval\nsamostatné, datované rozhodnutí zapsané v autorizačním logu.\n\nDatum narození ani adresu bydliště tento web z rejstříku nepřebírá,\npřestože je záznam obsahuje — pro evidenci vazby nejsou potřebné."
+      "value": "Veřejné rejstříkové vazby byly ověřeny přímo v ARES dne 2026-08-05. Rejstřík u Martina Pavlíka eviduje:\n\n- [MEDIA PROJECT CZ s.r.o. (IČO 01529820)](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/01529820): **jednatel** od 9. 8. 2016 a **společník s podílem 50 %**; současný podíl je v rejstříku zapsán od 21. 10. 2020.\n- [Bydlíme v Králově Poli, z.s. (IČO 02922703)](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02922703): **1. místopředseda** od 13. 5. 2014.\n- [HYDROPROGRESS, s.r.o. (IČO 04449461)](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/04449461): **jednatel** od 1. 10. 2015 a **společník s podílem 80 %**; současný podíl je v rejstříku zapsán od 21. 10. 2020.\n- [\"Nadační fond FIDUCIA\" (IČO 26228548)](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/26228548): **člen statutárního orgánu** a **zakladatel**, v obou případech podle současných zápisů od 21. 10. 2020.\n\nJde o stav veřejného rejstříku při uvedeném ověření, nikoli o úplný životopis nebo tvrzení o skutečném řízení či vlivu mimo zapsané role. Samotná funkce nebo podíl jsou běžné rejstříkové skutečnosti a nenaznačují pochybení.\n\n**Kontextová entita, ne předmět šetření.** Stránka zpřesňuje veřejně evidované vazby; Martin Pavlík nemá na tomto webu autorizovaný dossier. Jeho založení by vyžadovalo samostatné, datované rozhodnutí v autorizačním logu.\n\nDatum narození ani adresu bydliště web z rejstříku nepřebírá, protože pro doložení těchto vazeb nejsou potřebné."
     }
   ]
 }
