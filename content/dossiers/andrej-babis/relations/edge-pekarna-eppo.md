@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Pekárna Zelená louka (skupina Agrofert) — obžaloba EPPO z 22. 6. 2026 (společnost + 2 osoby) — obžaloba není rozhodnutí o vině — Úřad evropského veřejného žalobce (EPPO)"
+description = "Pekárna Zelená louka (skupina Agrofert) — obžaloba EPPO z 22. 6. 2026 (společnost + 2…. Vztah v grafu dossieru Andrej Babiš. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 27
 

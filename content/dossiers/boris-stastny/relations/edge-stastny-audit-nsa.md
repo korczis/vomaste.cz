@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Boris Šťastný — v souvislosti s odvoláním vedení ohlásil interní audit Národní sportovní agentury a řešení střetu zájmů jejího poradního orgánu — Interní audit Národní sportovní agentury"
+description = "Boris Šťastný — v souvislosti s odvoláním vedení ohlásil interní audit Národní sportovní…. Vztah v grafu dossieru Boris Šťastný. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 21
 

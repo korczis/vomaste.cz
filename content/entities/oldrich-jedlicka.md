@@ -3,6 +3,7 @@
 title = "Oldřich Jedlička"
 template = "entity.html"
 weight = 315
+description = "Kontextová entita — Vedoucí stavebního úřadu v Bílině; vyloučil se z případu černých staveb pro možný střet zájmů."
 
 [extra]
 generated = true

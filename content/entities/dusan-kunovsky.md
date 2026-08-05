@@ -3,6 +3,7 @@
 title = "Dušan Kunovský"
 template = "entity.html"
 weight = 115
+description = "Kontextová entita — Šéf developerské společnosti Central Group; v debatě o stavebním zákoně označil limit 10 000 m² za podměrečný projekt."
 
 [extra]
 generated = true

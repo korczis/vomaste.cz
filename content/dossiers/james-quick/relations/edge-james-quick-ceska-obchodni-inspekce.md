@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "James Quick — ČOI zveřejnila spotřebitelské varování k CERD — Česká obchodní inspekce"
+description = "James Quick — ČOI zveřejnila spotřebitelské varování k CERD — Česká obchodní inspekce. Vztah v grafu dossieru James Quick. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 7
 

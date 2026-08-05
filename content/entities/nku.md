@@ -4,6 +4,7 @@ title = "Nejvyšší kontrolní úřad"
 template = "entity.html"
 weight = 2
 aliases = ["/dossiers/lubomir-metnar/entities/nku/"]
+description = "Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext."
 
 [extra]
 generated = true

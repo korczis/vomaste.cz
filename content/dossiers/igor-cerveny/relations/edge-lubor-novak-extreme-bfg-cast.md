@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Lubor Novák — druhý jednatel podcastové společnosti Extreme BFG Cast — Extreme BFG Cast s.r.o."
+description = "Lubor Novák — druhý jednatel podcastové společnosti Extreme BFG Cast — Extreme BFG Cast…. Vztah v grafu dossieru Igor Červený. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 7
 

@@ -4,6 +4,7 @@ title = "Martin Šebestyán"
 template = "entity.html"
 weight = 1
 aliases = ["/dossiers/martin-sebestyan/entities/sebestyan/"]
+description = "Hlavní subjekt autorizovaného dossieru. Viz plné znění a kontext v hlavním přehledu."
 
 [extra]
 generated = true

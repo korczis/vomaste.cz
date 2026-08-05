@@ -3,6 +3,7 @@
 title = "ODS"
 template = "entity.html"
 weight = 311
+description = "Kontextová entita — Zmíněna jen jako stranická afiliace citovaného Martina Kupky. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

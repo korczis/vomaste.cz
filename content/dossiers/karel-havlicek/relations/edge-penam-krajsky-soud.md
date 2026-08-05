@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Pekárna Zelená louka (skupina Agrofert) — obžaloba na Pekárnu Zelená louka směřuje ke Krajskému soudu v Praze — Krajský soud v Praze"
+description = "Pekárna Zelená louka (skupina Agrofert) — obžaloba na Pekárnu Zelená louka směřuje ke…. Vztah v grafu dossieru Karel Havlíček. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 21
 

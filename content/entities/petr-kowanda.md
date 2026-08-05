@@ -3,6 +3,7 @@
 title = "Petr Kowanda"
 template = "entity.html"
 weight = 340
+description = "Kontextová entita — Poslanec, zpravodaj sněmovního tisku 232 (zákaz mobilů). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

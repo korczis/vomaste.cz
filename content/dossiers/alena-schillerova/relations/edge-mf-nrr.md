@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Ministerstvo financí ČR — Ministerstvo financí reagovalo na stanovisko NRR rozporováním výpočtu obranných výdajů a role rady — Národní rozpočtová rada"
+description = "Ministerstvo financí ČR — Ministerstvo financí reagovalo na stanovisko NRR rozporováním…. Vztah v grafu dossieru Alena Schillerová. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 17
 

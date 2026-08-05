@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Karel Havlíček — Havlíček patřil mezi předkladatele novely stavebního zákona vedené Babišem — Novela stavebního zákona 2026 (sněmovní tisk 67)"
+description = "Karel Havlíček — Havlíček patřil mezi předkladatele novely stavebního zákona vedené…. Vztah v grafu dossieru Karel Havlíček. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 6
 

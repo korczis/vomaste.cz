@@ -3,6 +3,7 @@
 title = "William Todts"
 template = "entity.html"
 weight = 451
+description = "Kontextová entita — Zástupce organizace Transport & Environment; kritik zmírnění emisního cíle EU 2035 (investice do hybridů místo elektromobilů)."
 
 [extra]
 generated = true

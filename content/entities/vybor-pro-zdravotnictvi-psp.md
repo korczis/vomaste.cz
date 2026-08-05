@@ -3,6 +3,7 @@
 title = "Výbor pro zdravotnictví Poslanecké sněmovny"
 template = "entity.html"
 weight = 448
+description = "Kontextová entita — Dějiště sporů o Národní očkovací strategii. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

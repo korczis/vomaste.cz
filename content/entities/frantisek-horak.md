@@ -3,6 +3,7 @@
 title = "František Horák"
 template = "entity.html"
 weight = 133
+description = "Kontextová entita — Člen Rady NSA odvolaný vládou 16. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

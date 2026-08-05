@@ -3,6 +3,7 @@
 title = "J.A.R."
 template = "entity.html"
 weight = 170
+description = "Kontextová entita — Hudební skupina, jejímž frontmanem/spolupracovníkem byl Klempíř — součást jeho veřejné identity před vstupem do politiky."
 
 [extra]
 generated = true

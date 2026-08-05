@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Vít Rakušan — na ministrovo vysvětlení reagoval, že lžím a podvodům se teď bude říkat stylizace — Boris Šťastný"
+description = "Vít Rakušan — na ministrovo vysvětlení reagoval, že lžím a podvodům se teď bude říkat…. Vztah v grafu dossieru Boris Šťastný. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 19
 

@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Jaromír Zůna — spor o nezveřejněný rozhovor prezidenta Pavla pro armádní podcast Kamufláž — Petr Pavel (prezident)"
+description = "Jaromír Zůna — spor o nezveřejněný rozhovor prezidenta Pavla pro armádní podcast Kamufláž…. Vztah v grafu dossieru Jaromír Zůna. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 3
 

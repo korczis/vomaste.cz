@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CSR & Protikorupcnilinka.cz s.r.o. — společnost zrušena bez likvidace a vymazána na základě usnesení soudu — Městský soud v Praze"
+description = "CSR & Protikorupcnilinka.cz s.r.o. — společnost zrušena bez likvidace a vymazána na…. Vztah v grafu dossieru James Quick. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 9
 

@@ -3,6 +3,7 @@
 title = "Novela stavebního zákona (sněmovní tisk 67)"
 template = "entity.html"
 weight = 306
+description = "Kontextová entita — Poslanecký návrh Babiše, Havlíčka a Mrázové (12/2025), schválen Sněmovnou 10."
 
 [extra]
 generated = true

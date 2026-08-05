@@ -3,6 +3,7 @@
 title = "Program «Zlepšení životních podmínek hospodářských zvířat»"
 template = "entity.html"
 weight = 355
+description = "Kontextová entita — Navýšen na 1,3 mld. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Ivan Bednárik — Bednárik stojí v čele Ministerstva dopravy ČR — Ministerstvo dopravy ČR"
+description = "Ivan Bednárik — Bednárik stojí v čele Ministerstva dopravy ČR — Ministerstvo dopravy ČR. Vztah v grafu dossieru Ivan Bednárik. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 20
 

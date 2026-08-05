@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Igor Červený — byl jednatelem a spolumajitelem podcastové společnosti do vyřešení střetu zájmů (2026) — Extreme BFG Cast s.r.o."
+description = "Igor Červený — byl jednatelem a spolumajitelem podcastové společnosti do vyřešení střetu…. Vztah v grafu dossieru Igor Červený. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 6
 

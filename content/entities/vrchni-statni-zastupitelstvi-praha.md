@@ -3,6 +3,7 @@
 title = "Vrchní státní zastupitelství v Praze"
 template = "entity.html"
 weight = 442
+description = "Kontextová entita — Adresát trestního oznámení Pirátů a ASZ k „deagrofertizaci“. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

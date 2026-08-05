@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Igor Červený — zástupkyně mluvčí MŽP informovala o podání opravného oznámení a úhradě pokuty ministra — Kateřina Pacíková"
+description = "Igor Červený — zástupkyně mluvčí MŽP informovala o podání opravného oznámení a úhradě…. Vztah v grafu dossieru Igor Červený. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 20
 

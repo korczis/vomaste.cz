@@ -3,6 +3,7 @@
 title = "Česká unie sportu"
 template = "entity.html"
 weight = 94
+description = "Kontextová entita — Střešní sportovní organizace; její předseda Boháč uvítal jmenování Kováře do čela NSA."
 
 [extra]
 generated = true

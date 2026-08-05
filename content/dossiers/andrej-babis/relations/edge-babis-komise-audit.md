@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Andrej Babiš — audit REGC414CZ0133: závěr o ovládání fondů (4/2021), uzavřen 20. 7. 2022 splněním doporučení — kontrolní nástroj, ne soud — Evropská komise"
+description = "Andrej Babiš — audit REGC414CZ0133: závěr o ovládání fondů (4/2021), uzavřen 20. 7. 2022…. Vztah v grafu dossieru Andrej Babiš. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 18
 

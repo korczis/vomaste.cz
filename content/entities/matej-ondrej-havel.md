@@ -3,6 +3,7 @@
 title = "Matěj Ondřej Havel"
 template = "entity.html"
 weight = 253
+description = "Kontextová entita — Poslanec TOP 09; žádal rezignaci Zůny, vyzýval Mrázovou k rezignaci. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

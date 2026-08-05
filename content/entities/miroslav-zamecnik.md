@@ -3,6 +3,7 @@
 title = "Miroslav Zámečník"
 template = "entity.html"
 weight = 283
+description = "Kontextová entita — Ekonom zvolený předsedou dozorčí rady ČD na jednání, kde Bednárik rezignoval; nahradil Pavla Kysilku."
 
 [extra]
 generated = true

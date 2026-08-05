@@ -3,6 +3,7 @@
 title = "Mandátový a imunitní výbor Poslanecké sněmovny"
 template = "entity.html"
 weight = 241
+description = "Kontextová entita — Nedoporučil vydání Okamury k trestnímu stíhání (2026). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

@@ -3,6 +3,7 @@
 title = "Kauza neodvysílaného rozhovoru prezidenta Pavla (podcast Kamufláž)"
 template = "entity.html"
 weight = 207
+description = "Kontextová entita — Rozhovor pro armádní podcast Kamufláž nevyšel 7. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

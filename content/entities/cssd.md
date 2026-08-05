@@ -3,6 +3,7 @@
 title = "ČSSD"
 template = "entity.html"
 weight = 99
+description = "Kontextová entita — Strana, jejímž členem byl Tejc dle oficiálního profilu v letech 1997–2017; nyní bez politické příslušnosti."
 
 [extra]
 generated = true

@@ -3,6 +3,7 @@
 title = "Art of Performance"
 template = "entity.html"
 weight = 71
+description = "Kontextová entita — Autodílna vlastněná Filipem Turkem; bývalé působiště Lukáše Vaverky. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

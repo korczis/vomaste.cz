@@ -3,6 +3,7 @@
 title = "David Kotora"
 template = "entity.html"
 weight = 104
+description = "Kontextová entita — Ředitel Transparency International ČR; kritika Šebestyánovy nominace. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

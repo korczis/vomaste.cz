@@ -98,6 +98,45 @@ const mdBody = (blocks) =>
     .map((b) => b.value)
     .join("\n\n");
 
+// Meta description z redakčního těla záznamu. Bez ní spadne stránka
+// v base.html na popis celého webu — a ten byl doslova týž na 820
+// stránkách (326 vztahů + ~494 entit), takže je vyhledávač ani náhled
+// odkazu nerozlišily. Nic se tu nevymýšlí: bere se začátek už napsaného
+// kanonického textu, jen zkrácený a zbavený markdown syntaxe, aby se
+// v atributu <meta> neobjevily odkazy a hvězdičky.
+const summarize = (text, limit = 185) => {
+  const flat = String(text ?? "")
+    .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
+    .replace(/[*_`#>]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+  if (!flat) return null;
+  if (flat.length <= limit) return flat;
+  const cut = flat.slice(0, limit);
+  const at = cut.lastIndexOf(" ");
+  return `${(at > limit * 0.6 ? cut.slice(0, at) : cut).replace(/[,;:.\s]+$/, "")}…`;
+};
+
+// Doložka typu „Záznam nevyjadřuje vinu ani osobní, obchodní či lobbistický
+// vztah." stojí v kanonickém textu poslední, takže ji obyčejné zkrácení
+// uřízne první — a zrovna na stránce o jmenované třetí osobě je popis
+// končící uprostřed slova „ani osobní, obchodní či…" ta nejhorší možná
+// věta, na které skončit. Proto se u záznamů s vlastním redakčním textem
+// řeže po větách a závěrečná doložka se drží celá; když se nevejde,
+// zůstane radši jen úvodní věta celá než doložka na půl.
+const CAVEAT = /\b(nikoli|nezakládá|nevyjadřuje|neobsahuje|nezná)\b/i;
+const summarizeRecord = (text, limit = 195) => {
+  const flat = summarize(text, Number.MAX_SAFE_INTEGER);
+  if (!flat || flat.length <= limit) return flat;
+  const sentences = flat.split(/(?<=\.)\s+/).filter(Boolean);
+  const first = sentences[0] ?? flat;
+  const last = sentences.at(-1);
+  if (sentences.length > 1 && CAVEAT.test(last) && first.length + 1 + last.length <= limit) {
+    return `${first} ${last}`;
+  }
+  return summarize(first, limit);
+};
+
 /*
  * Passthrough čtení existujícího content souboru: RAW řádky klíčů po
  * sekcích (top / extra / ostatní sekce verbatim) + tělo. RAW řádky (ne
@@ -308,6 +347,7 @@ export function buildStubs(compiled, { contentRoot = REPO_ROOT } = {}) {
 
   // --- záznamy -----------------------------------------------------------
   const entityTitle = (iri) => byId[iri]?.record.title ?? localPart(iri);
+  const dossierTitles = new Map(dossierWrappers.map((w) => [w.dossier, w.record.title]));
   const graphLabelMaps = new Map(
     dossierWrappers
       .filter((w) => w.record.graph)
@@ -355,6 +395,23 @@ export function buildStubs(compiled, { contentRoot = REPO_ROOT } = {}) {
       const tgt = localPart(r.targetEntity["@id"]);
       const derived = `${labels.get(src) ?? entityTitle(r.sourceEntity["@id"])} — ${r.label} — ${labels.get(tgt) ?? entityTitle(r.targetEntity["@id"])}`;
       title = tomlString(rawTitle(contentRoot, relPath) ?? derived);
+      // Tělo stránky vztahu je generický rozcestník („Viz plné znění…"),
+      // takže popis se skládá z toho, co záznam skutečně nese: koho s kým
+      // spojuje, v čím grafu a o která tvrzení se opírá. Poslední věta není
+      // ozdoba — hrana v grafu je záznam vazby, ne obvinění, a v náhledu
+      // odkazu je to jediné místo, kde to je vidět (viz AGENTS.md).
+      // Délkový rozpočet se rozdává předem, ne oříznutím celku: popisky hran
+      // bývají celé věty (nejdelší přes 130 znaků) a při zkrácení až nakonec
+      // zmizí právě ta doložka na konci, kvůli které tam je. Rozpočet musí
+      // sedět pod 200 znaků, kde description ořezává base.html — jinak by
+      // doložku uřízla ta. Seznam CLM se do popisu nedává schválně: v náhledu
+      // odkazu ani ve výsledku vyhledávání identifikátor nikomu nic neřekne
+      // a na stránce samotné je stejně vidět.
+      const inDossier = dossierTitles.get(slug) ?? slug;
+      description = tomlString(
+        `${summarize(derived, 90)}. Vztah v grafu dossieru ${summarize(inDossier, 35)}.` +
+          " Záznam vazby, nikoli tvrzení o pochybení.",
+      );
     }
 
     put(relPath, {
@@ -392,7 +449,16 @@ export function buildStubs(compiled, { contentRoot = REPO_ROOT } = {}) {
         ["template", tomlString(templateOf(relPath, DEFAULT_TEMPLATES.entity))],
         ["weight", String(r.order ?? i + 1)],
         ["aliases", mergedAliases(relPath, r.routeAliases)],
-        ["description", r.description !== undefined ? tomlString(r.description) : null],
+        // Kanonický `description` vyhrává; entita bez něj má ale pořád svůj
+        // ručně psaný kontextový odstavec („Kontextová entita — … nezakládá
+        // žádné tvrzení o pochybení."), a ten je pro popis stránky přesnější
+        // než cokoli odvozeného z typu a rolí.
+        [
+          "description",
+          r.description !== undefined
+            ? tomlString(r.description)
+            : (summarizeRecord(mdBody(r.content)) ? tomlString(summarizeRecord(mdBody(r.content))) : null),
+        ],
       ],
       extraDerived: [
         ["generated", "true"],

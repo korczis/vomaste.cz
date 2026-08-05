@@ -3,6 +3,7 @@
 title = "Josef Flek"
 template = "entity.html"
 weight = 179
+description = "Kontextová entita — Poslanec STAN, předseda sněmovního výboru pro obranu; kritik „cenzury“ rozhovoru s prezidentem i výše obranného rozpočtu."
 
 [extra]
 generated = true

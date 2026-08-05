@@ -3,6 +3,7 @@
 title = "Eva Češpiva"
 template = "entity.html"
 weight = 117
+description = "Kontextová entita — Mluvčí SZIF; potvrdila existenci právní analýzy k vymáhání dotací. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

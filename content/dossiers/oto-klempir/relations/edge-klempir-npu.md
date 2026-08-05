@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Oto Klempíř — novela stavebního zákona oslabuje pravomoci NPÚ v památkových zónách — Národní památkový ústav"
+description = "Oto Klempíř — novela stavebního zákona oslabuje pravomoci NPÚ v památkových zónách —…. Vztah v grafu dossieru Oto Klempíř. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 10
 

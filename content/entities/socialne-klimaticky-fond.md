@@ -3,6 +3,7 @@
 title = "Sociálně klimatický fond"
 template = "entity.html"
 weight = 381
+description = "Kontextová entita — Fond, jehož oddělení na MŽP zaniklo při systemizaci 2026. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

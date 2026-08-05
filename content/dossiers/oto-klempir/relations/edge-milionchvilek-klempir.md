@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Milion chvilek pro demokracii — demonstrace a petice proti návrhu financování veřejnoprávních médií — Oto Klempíř"
+description = "Milion chvilek pro demokracii — demonstrace a petice proti návrhu financování…. Vztah v grafu dossieru Oto Klempíř. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 6
 

@@ -3,6 +3,7 @@
 title = "Martin Kupka"
 template = "entity.html"
 weight = 250
+description = "Kontextová entita — Předseda ODS; opakovaný kritik vládních návrhů (stavební zákon, kauza Kamufláž, Mrázová, zákaz mobilů)."
 
 [extra]
 generated = true

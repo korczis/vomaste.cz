@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Karla Mráčková — jako mluvčí Úřadu vlády uvedla, že v souvislosti s nálezem nevzniklo žádné bezpečnostní riziko — Boris Šťastný"
+description = "Karla Mráčková — jako mluvčí Úřadu vlády uvedla, že v souvislosti s nálezem nevzniklo…. Vztah v grafu dossieru Boris Šťastný. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 17
 

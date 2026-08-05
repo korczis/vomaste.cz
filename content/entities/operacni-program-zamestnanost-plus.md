@@ -3,6 +3,7 @@
 title = "Operační program Zaměstnanost plus (OPZ+)"
 template = "entity.html"
 weight = 320
+description = "Kontextová entita — Druhý dotčený program (dalších 17,6 mil. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

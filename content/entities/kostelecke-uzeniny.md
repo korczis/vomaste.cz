@@ -4,6 +4,7 @@ title = "Kostelecké uzeniny"
 template = "entity.html"
 weight = 5
 aliases = ["/dossiers/andrej-babis/entities/kostelecke-uzeniny/"]
+description = "Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext."
 
 [extra]
 generated = true

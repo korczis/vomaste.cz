@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Tomio Okamura — veřejná kritika samosoudkyně, která rozsudek nad SPD vynesla a odůvodnila — Ivana Tichá"
+description = "Tomio Okamura — veřejná kritika samosoudkyně, která rozsudek nad SPD vynesla a odůvodnila…. Vztah v grafu dossieru Tomio Okamura. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 6
 

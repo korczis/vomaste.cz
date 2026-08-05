@@ -3,6 +3,7 @@
 title = "NATO (Severoatlantická aliance)"
 template = "entity.html"
 weight = 298
+description = "Kontextová entita — Alianční závazek 2 % HDP, summit v Ankaře 2026, kompetenční spor o účast prezidenta."
 
 [extra]
 generated = true

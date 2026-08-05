@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Jaromír Zůna — na jednání ministrů obrany NATO v Bruselu se vyjádřil k plnění dvouprocentního závazku — NATO (Severoatlantická aliance)"
+description = "Jaromír Zůna — na jednání ministrů obrany NATO v Bruselu se vyjádřil k plnění…. Vztah v grafu dossieru Jaromír Zůna. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 18
 

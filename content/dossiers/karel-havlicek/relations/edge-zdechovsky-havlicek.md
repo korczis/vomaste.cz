@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Tomáš Zdechovský — Europoslanec Zdechovský (KDU-ČSL) uvedl, že Havlíček nechtěl po Agrofertu peníze vrátit — Karel Havlíček"
+description = "Tomáš Zdechovský — Europoslanec Zdechovský (KDU-ČSL) uvedl, že Havlíček nechtěl po…. Vztah v grafu dossieru Karel Havlíček. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 16
 

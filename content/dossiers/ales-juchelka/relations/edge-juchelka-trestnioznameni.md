@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Aleš Juchelka — trestní oznámení STAN směřuje ke střetu zájmů na Juchelkově ministerstvu — Trestní oznámení STAN kvůli střetu zájmů na MPSV"
+description = "Aleš Juchelka — trestní oznámení STAN směřuje ke střetu zájmů na Juchelkově ministerstvu…. Vztah v grafu dossieru Aleš Juchelka. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 11
 

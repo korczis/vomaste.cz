@@ -3,6 +3,7 @@
 title = "Rada EU pro konkurenceschopnost (COMPET)"
 template = "entity.html"
 weight = 356
+description = "Kontextová entita — Formace Rady EU; Havlíček vedl českou delegaci na zasedání 26. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true
