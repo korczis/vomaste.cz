@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/updates/2026-08-05-3",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-08-05-3",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "date": "2026-08-05",
+  "summary": "Srovnání s primárními dokumenty v datasetu (T-061). CLM-18 opraveno podle rozsudku NSS č. j. 6 Afs 82/2025-75 (SRC-78): datum rozhodnutí je 27. 11. 2025, nikoli 28. 11. 2025, jak neslo tvrzení podle citovaného zpravodajství, které o věci informovalo až následující den; obě hodnoty zůstávají v textu tvrzení viditelné a tvrzení přechází na CORROBORATED. CLM-51 povýšeno připojením tiskové zprávy Vrchního soudu v Praze (SRC-75), která doslovně dokládá zprošťující rozsudek Městského soudu v Praze ze 14. 2. 2024 i jeho nepravomocnost; odůvodnění o nepřímých důkazech a opakovanost zproštění dokument nedokládá. Bez připojení zůstávají dva nálezy: SRC-75 k CLM-80 (dokládá jen kvalifikaci obžaloby u A. Babiše, ne datum, kvalifikaci u J. Nagyové ani trestní sazbu) a SRC-77 k CLM-88 (dokládá jen závěrečnou klauzuli o nevydání ke stíhání).",
+  "addedClaims": [],
+  "updatedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-18"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-51"
+    }
+  ],
+  "addedGaps": [],
+  "closedGaps": [],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-78"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-75"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-77"
+    }
+  ]
+}

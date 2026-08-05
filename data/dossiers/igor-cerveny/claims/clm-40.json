@@ -9,12 +9,15 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
   },
-  "text": "Resort se hájil tím, že limit tří milionů korun se vztahuje k úpravám celého objektu včetně záchodů, sprch a oprav kanalizace, nikoli jen ministrovy pracovny.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "text": "Resort se hájil tím, že limit tří milionů korun se vztahuje k úpravám celého objektu, nikoli jen ministrovy pracovny — podle citovaného zpravodajství včetně záchodů, sprch a oprav kanalizace; podle vlastní tiskové zprávy MŽP jde o rámcovou smlouvu na stavební úpravy celé budovy po celý rok, ne jen na ministrovo patro.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-40"
     }
   ],
   "subjects": [
@@ -24,7 +27,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/igor-cerveny/_index.md#registr-tvrzeni)."
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/igor-cerveny/_index.md#registr-tvrzeni).\n\n**Upřesnění podle primárního dokumentu (2026-08-05).** Tisková zpráva MŽP\n([SRC-40](@/dossiers/igor-cerveny/sources/src-40.md)) popisuje tutéž obhajobu\nvlastními slovy úřadu: jde o **rámcovou smlouvu na stavební úpravy celé budovy\nMŽP po celý rok** v objemu do 3 mil. Kč a kontrast klade vůči **jednomu patru**,\nne vůči ministrově pracovně. Tvrzení dosud neslo jen zpravodajskou verzi\n([SRC-07](@/dossiers/igor-cerveny/sources/src-07.md)) s výčtem záchodů, sprch a\noprav kanalizace, který primární dokument neuvádí — proto je nově výslovně\noznačen jako zpravodajský. Vlastní odhad ministerstva na úpravy 5. patra (cca\n350 tisíc Kč) nese [CLM-59](@/dossiers/igor-cerveny/claims/clm-59.md)."
     }
   ]
 }

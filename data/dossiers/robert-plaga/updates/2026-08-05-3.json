@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/updates/2026-08-05-3",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-08-05-3",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "date": "2026-08-05",
+  "summary": "Srovnání s primárními dokumenty v datasetu (T-061). CLM-02 doplněno o vlastní sdělení České školní inspekce (SRC-36), které doslovně dokládá autora rozhodnutí, datum 25. 5. 2026 i rozsah zastaveného testování; stav CORROBORATED se nemění, přibývá primární doklad úřadu, který testování prováděl. CLM-20 ponecháno beze změny: SRC-36 sice dokládá jeho věcné jádro a je přesnější v čase (výmaz dat dotazníkového šetření k 26. 5. 2026 jako dokonaný fakt, ne budoucí záměr), ale tvrzení je atribuováno mluvčímu MŠMT Ondřeji Macurovi, kterého ČŠI necituje — primární dokument atribuci nahradit nemůže. Bez připojení zůstávají i dílčí shody SRC-36 s CLM-04, SRC-24 s CLM-12/13/14 a SRC-22 s CLM-16/17; všechny jsou zaznamenány v redakčních poznámkách zdrojů.",
+  "addedClaims": [],
+  "updatedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-02"
+    }
+  ],
+  "addedGaps": [],
+  "closedGaps": [],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-36"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-24"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-22"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/updates/2026-08-05-3",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-08-05-3",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
+  },
+  "date": "2026-08-05",
+  "summary": "Srovnání s primárními dokumenty v datasetu (T-061). CLM-22 upřesněno podle stanoviska Ministerstva zemědělství k problematice střetu zájmů (SRC-23): posuzované historické výplaty jsou v dokumentu vymezeny daty 6. 12. 2017 – 17. 12. 2021, zatímco tvrzení převzalo ze zpravodajství (SRC-09) jen zaokrouhlené „léta 2017–2021“. Obě podoby zůstávají v textu viditelné a tvrzení přechází na CORROBORATED. Samotné rozhodnutí SZIF nevymáhat a objednání externích právních analýz stanovisko z prosince 2025 nedokládá — ta část stojí dál na SRC-09.",
+  "addedClaims": [],
+  "updatedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-22"
+    }
+  ],
+  "addedGaps": [],
+  "closedGaps": [],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-23"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-09"
+    }
+  ]
+}

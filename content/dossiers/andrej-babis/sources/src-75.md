@@ -65,3 +65,22 @@ druhá nezávislá rodina a CLM-01 přechází na stav `CORROBORATED`.
 zrušení** zprošťujícího verdiktu v této kauze — tuto část tvrzení dokládají dál
 jen citované zpravodajské zdroje, což CLM-01 samo přiznává formulací „podle
 citovaného zdroje".
+
+**Doplněno 2026-08-05 (kolo srovnání s primárními dokumenty, T-061):** zdroj je nově připojen
+i k **CLM-51**. Dokládá k němu doslovně, že napadeným rozhodnutím byl **rozsudek
+Městského soudu v Praze ze dne 14. 2. 2024, jímž byli obžalovaní zproštěni
+obžaloby**, a že tento rozsudek nebyl pravomocný — Vrchní soud v Praze jej
+23. 6. 2025 zrušil a věc vrátil soudu I. stupně. Dosavadní zdroje CLM-51 —
+[SRC-24](@/dossiers/andrej-babis/sources/src-24.md) a
+[SRC-33](@/dossiers/andrej-babis/sources/src-33.md) — nesou oba rodinu `ctk`;
+tímto dokumentem přibývá druhá nezávislá rodina a CLM-51 přechází na stav
+`CORROBORATED`. **Limit:** zpráva neuvádí odůvodnění zprošťujícího rozsudku
+(že nepřímé důkazy netvořily ucelený řetězec) ani to, že šlo o opakované
+zproštění; tyto části stojí dál jen na zpravodajství.
+
+**Nález bez připojení — CLM-80:** dokument zaznamenává, že **obžaloba u Ing.
+Babiše vycházela z pomoci ke zločinu dotačního podvodu**, ale neuvádí datum
+podání obžaloby (21. 3. 2022), právní kvalifikaci u Jany Nagyové ani trestní
+sazbu. Doložil by tedy jediný ze čtyř prvků tvrzení; k
+[CLM-80](@/dossiers/andrej-babis/claims/clm-80.md) proto připojen není a
+tvrzení zůstává `1 ZDROJ`.

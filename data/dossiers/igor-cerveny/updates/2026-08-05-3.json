@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/updates/2026-08-05-3",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-08-05-3",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
+  },
+  "date": "2026-08-05",
+  "summary": "Srovnání s primárními dokumenty v datasetu (T-061). CLM-40 upřesněno podle tiskové zprávy MŽP z 1. 6. 2026 (SRC-40): ministerstvo svou obhajobu formuluje jako rámcovou smlouvu na stavební úpravy celé budovy po celý rok a staví ji proti „jednomu patru“, zatímco tvrzení převzalo ze zpravodajství (SRC-07) užší kontrast vůči ministrově pracovně a výčet záchodů, sprch a oprav kanalizace, který primární dokument neuvádí. Výčet je nově výslovně označen jako zpravodajský, vlastní formulace ministerstva doplněna a tvrzení přechází na CORROBORATED. Zdroj přidán i do CASE-03 (rekonstrukce kanceláří ministerstva).",
+  "addedClaims": [],
+  "updatedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-40"
+    }
+  ],
+  "addedGaps": [],
+  "closedGaps": [],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-40"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-07"
+    }
+  ]
+}
