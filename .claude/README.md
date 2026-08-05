@@ -39,15 +39,19 @@ prismatic-promote
 commit
 ```
 
-**Current status: governance and architecture accepted
-(`AUTH-2026-08-05-PLATFORM-SCOPE` in `AGENTS.md`,
-[`docs/adr/prismatic-platform-integration.md`](../docs/adr/prismatic-platform-integration.md)),
-pipeline not implemented.** Every `prismatic:*` npm script and every
-skill above is a stub that says so and exits non-zero — none of them can
-research, stage, review or promote anything today. Read each skill's own
-`SKILL.md` before invoking it; each says the same thing in more detail
-and points at
-[the build plan](../docs/missions/2026-08-05-prismatic-platform-integration-master-prompt.md).
+**Current status (2026-08-06): governance/architecture accepted, config +
+export contract + status/probe/plan real and tested, run/import/promote
+still stubs.** `npm run prismatic:{status,probe,plan}` actually work —
+`status`/`probe` report on the local `prismatic-platform` checkout
+(file-existence only, no network), `plan` builds a real, deterministic
+job list against vomaste's compiled model, narrowly scoped to the one
+capability the Fáze 0 audit verified safe (ARES lookups for
+company/organization entities). Everything past planning — actually
+invoking a capability, staging, reviewing, promoting — is still a stub,
+because Prismatic itself has no matching exporter yet. Read each skill's
+own `SKILL.md` before invoking it, and point at
+[the build plan](../docs/missions/2026-08-05-prismatic-platform-integration-master-prompt.md) +
+its companion checklist for exactly what's done vs. open.
 
 ## Portable settings
 

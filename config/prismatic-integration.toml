@@ -1,0 +1,25 @@
+# Prismatic Platform integration — versioned, non-secret configuration.
+#
+# docs/adr/prismatic-platform-integration.md / AUTH-2026-08-05-PLATFORM-SCOPE
+# in AGENTS.md. Never put a local filesystem path, credential, or token
+# here — that belongs in the gitignored .prismatic-local.toml (see
+# scripts/prismatic/lib/config.mjs for the resolution order) or the
+# PRISMATIC_PLATFORM_PATH environment variable.
+
+# Major.minor of the export contract this checkout of vomaste.cz can
+# consume. A provider advertising a different MAJOR is rejected outright
+# (scripts/prismatic/lib/contract.mjs); a higher MINOR from the provider
+# is accepted (additive fields only, per the contract's own versioning
+# rule) and a lower MINOR is accepted (older provider, fewer optional
+# fields — never a compatibility break).
+contract_version_supported = "1.0"
+
+# Default sibling path used only when neither PRISMATIC_PLATFORM_PATH nor
+# .prismatic-local.toml's platform_path is set. Relative to this repo's
+# root.
+default_sibling_relative_path = "../prismatic-platform"
+
+# Safe default for any future bounded-concurrency run (Fáze 2.5). Kept
+# low deliberately — this is a local research tool hitting public
+# registries, not a crawler.
+default_concurrency = 2
