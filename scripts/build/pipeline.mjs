@@ -28,7 +28,7 @@
 import { spawnSync } from "node:child_process";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import { acquireLock, releaseLock } from "./with-build-lock.mjs";
+import { acquireLock, releaseLock, LockTimeoutError } from "./with-build-lock.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 
@@ -175,7 +175,12 @@ const startedAt = Date.now();
 // by na tu dobu blokovalo každý jiný build ve stejném checkoutu, proto se
 // nezamyká. `check` nic negeneruje, zamykání nepotřebuje.
 if (mode === "build") {
-  acquireLock([`node scripts/build/pipeline.mjs ${mode}`]);
+  try {
+    acquireLock([`node scripts/build/pipeline.mjs ${mode}`]);
+  } catch (err) {
+    if (err instanceof LockTimeoutError) process.exit(1);
+    throw err;
+  }
 }
 
 for (const [i, step] of steps.entries()) {
