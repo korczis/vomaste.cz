@@ -613,7 +613,14 @@ export function buildViewModels(compiled, { governmentRoster = new Map() } = {})
     totals,
     dossiers: cards.filter((c) => c.navigationVisible),
     canonicalTotals,
-    primaryCanonical: canonicalOrdered[0]?.dossier ?? null,
+    // Homepage ukazuje skutečný řetěz tvrzení → zdroj. Nově založený
+    // čistý dossier může legitimně vlastnit jen GAP, proto ukázku vybíráme
+    // z prvního vlastníka, který má obě potřebné registry neprázdné.
+    primaryCanonical:
+      canonicalOrdered.find((w) => {
+        const c = countsOf(w.dossier);
+        return c.claims > 0 && c.sources > 0;
+      })?.dossier ?? null,
     canonicalDossiers: canonicalOrdered.map((w) => ({
       slug: w.dossier,
       title: w.record.title,

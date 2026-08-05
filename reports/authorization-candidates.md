@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 497 context entities across 25 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 496 context entities across 26 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -2543,16 +2543,6 @@ Generated from 497 context entities across 25 dossier(s). Regenerate with `npm r
   - edge-kupka-havlicek (martin-kupka -> havlicek, "Kupka (ODS) kritizoval Havlíčkovu novelu stavebního zákona jako plnou „nášlapných min“", dossier: karel-havlicek)
   - edge-plaga-kupka (plaga -> martin-kupka, "kritika ODS (Martin Kupka) k plošnému zákazu mobilů ve školách", dossier: robert-plaga)
   - edge-mrazova-kupka (mrazova -> martin-kupka, "předseda ODS označil vyjádření Mrázové k jejím kauzám za pokrytectví", dossier: zuzana-mrazova)
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Martin Pavlík (`martin-pavlik`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: —
-- Claims: none
-- Sources: none (0 independent source families)
-- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Masarykova nemocnice v Ústí nad Labem (`masarykova-nemocnice-usti`)

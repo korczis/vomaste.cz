@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-pavlik",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "martin-pavlik",
+  "slug": "martin-pavlik",
+  "title": "Martin Pavlík",
+  "description": "Neutrální, zdroji doložený přehled veřejných rejstříkových vazeb Martina Pavlíka; bez směšování osob stejného jména.",
+  "dossierType": "entity",
+  "canonicalDossier": "martin-pavlik",
+  "subject": "martin-pavlik",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-05",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-05-MARTIN-PAVLIK"
+    ]
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nTento dossier je záměrně založen jako čistý, minimální záznam. Je vyhrazen výhradně pro veřejné rejstříkové vazby Martina Pavlíka jednoznačně rozlišeného profilem uvedeným v autorizačním záznamu `AUTH-2026-08-05-MARTIN-PAVLIK`.\n\nDossier zatím nepublikuje žádná vlastní tvrzení. Každé budoucí tvrzení musí mít samostatný kanonický záznam a přímo otevřený, pojmenovaný zdroj. Profesní profil v IT, schopnosti, zaměstnání, věk, datum narození, bydliště a údaje o jmenovcích jsou mimo autorizovaný rozsah. Nejasnost identity se eviduje jako mezera, nikdy se nedoplňuje odhadem."
+    }
+  ]
+}

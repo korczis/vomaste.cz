@@ -3,7 +3,7 @@
 title = "Martin Pavlík"
 template = "entity.html"
 weight = 467
-description = "Martin Pavlík — kontextový přehled čtyř veřejně evidovaných rejstříkových vazeb v ARES, ne dossier."
+description = "Martin Pavlík — subjekt samostatného, úzce vymezeného dossieru veřejných rejstříkových vazeb."
 
 [extra]
 generated = true
@@ -21,6 +21,6 @@ Veřejné rejstříkové vazby byly ověřeny přímo v ARES dne 2026-08-05. Rej
 
 Jde o stav veřejného rejstříku při uvedeném ověření, nikoli o úplný životopis nebo tvrzení o skutečném řízení či vlivu mimo zapsané role. Samotná funkce nebo podíl jsou běžné rejstříkové skutečnosti a nenaznačují pochybení.
 
-**Kontextová entita, ne předmět šetření.** Stránka zpřesňuje veřejně evidované vazby; Martin Pavlík nemá na tomto webu autorizovaný dossier. Jeho založení by vyžadovalo samostatné, datované rozhodnutí v autorizačním logu.
+**Subjekt autorizovaného dossieru.** Samostatný dossier je úzce omezen na přímo doložené veřejné rejstříkové vazby. Profesní profil v IT, schopnosti, zaměstnání, věk, datum narození, bydliště a údaje o jmenovcích jsou mimo rozsah.
 
 Datum narození ani adresu bydliště web z rejstříku nepřebírá, protože pro doložení těchto vazeb nejsou potřebné.

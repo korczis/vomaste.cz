@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/gaps/GAP-01",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-pavlik"
+  },
+  "title": "GAP-01 — Průběžné rozlišení jmenovců",
+  "description": "Před každým rozšířením znovu ověřit, že zdroj pojednává o Martinu Pavlíkovi vymezeném autorizačním záznamem, nikoli o jiné osobě stejného jména.",
+  "priority": "vysoká",
+  "checked": "2026-08-05",
+  "claims": [],
+  "subjects": [
+    "martin-pavlik"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Shoda jména sama o sobě nestačí k propojení záznamu s tímto dossierem. Každý budoucí údaj musí být před zveřejněním přímo svázán s osobou vymezenou veřejným rejstříkovým profilem uvedeným v autorizaci a s navazujícími záznamy ARES. Dokud takové propojení není doložené, údaj zůstává mimo dossier; zejména se sem nesmí přenášet IT profesní profil, schopnosti, zaměstnání, věk, datum narození ani bydliště jmenovce. Tato mezera není tvrzením o subjektu, ale trvalou redakční pojistkou proti záměně osob."
+    }
+  ],
+  "order": 1
+}
