@@ -12,6 +12,7 @@
   "title": "SRC-22 — Seznam Zprávy",
   "description": "Úřad vlády nevypátral, že majitelem nahrávacího zařízení je ministr Šťastný",
   "outlet": "Seznam Zprávy",
+  "sourceFamily": "seznam-zpravy",
   "sourceType": "zpravodajství",
   "url": "https://www.seznamzpravy.cz/clanek/domaci-kauzy-urad-vlady-nevypatral-ze-majitelem-nahravaciho-zarizeni-je-ministr-stastny-310641",
   "published": "2026-07-10",

@@ -12,6 +12,7 @@
   "title": "SRC-15 — Seznam Zprávy",
   "description": "Ministryně Mrázová má na pozemku černé stavby. A teď chce měnit pravidla",
   "outlet": "Seznam Zprávy",
+  "sourceFamily": "seznam-zpravy",
   "sourceType": "zpravodajství",
   "url": "https://www.seznamzpravy.cz/clanek/domaci-kauzy-ministryne-mrazova-ma-na-pozemku-cerne-stavby-a-ted-chce-menit-pravidla-305091",
   "published": "2026-04-30",

@@ -12,6 +12,7 @@
   "title": "SRC-11 — Echo24",
   "description": "Agrofert může dostávat dotace i nadále. Fond postupoval správně, uvedl orgán EU",
   "outlet": "Echo24",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://m.echo24.cz/a/HaUWx/zpravy-ekonomika-agrofert-muze-dostavat-dotace-i-nadale-fond-postupoval-spravne-uvedl-organ-eu",
   "published": "2026-06-04",
@@ -30,6 +31,5 @@
       "value": "**Agrofert může dostávat dotace i nadále. Fond postupoval správně, uvedl orgán EU**\n\nEcho24 a ČTK k témuž vyjádření DG Agri. SZIF obdržel potvrzení, že postup domluvený se SZIF zůstává v platnosti. Zmiňuje rozpor s dopisem, o němž informovaly Seznam Zprávy, podle nějž Komise nechce proplácet dotace firmám spojeným s premiérem, dokud nebude vyřešen jeho střet zájmů. Uvádí částku téměř 200 mil. Kč vyplacených Agrofertu za Babišova premiérství a výzvy opozice vůči ministrovi k zastavení výplat.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
     }
   ],
-  "order": 11,
-  "sourceFamily": "ctk"
+  "order": 11
 }

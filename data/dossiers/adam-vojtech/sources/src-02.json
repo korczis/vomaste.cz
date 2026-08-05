@@ -12,6 +12,7 @@
   "title": "SRC-02 — Seznam Zprávy",
   "description": "„Závažná zjištění.“ Kvůli defibrilátorům posílá Vojtěch do nemocnice policii",
   "outlet": "Seznam Zprávy",
+  "sourceFamily": "seznam-zpravy",
   "sourceType": "zpravodajství",
   "url": "https://www.seznamzpravy.cz/clanek/domaci-kauzy-zavazna-zjisteni-kvuli-defibrilatorum-poslal-vojtech-do-olomouce-policii-301861",
   "published": "2026-03-17",

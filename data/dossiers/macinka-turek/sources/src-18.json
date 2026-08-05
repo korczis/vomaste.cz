@@ -12,6 +12,7 @@
   "title": "SRC-18 — Seznam Zprávy",
   "description": "Macinka po upozornění Investigace.cz dodatečně přiznal podíl v ukrajinské firmě.",
   "outlet": "Seznam Zprávy",
+  "sourceFamily": "seznam-zpravy",
   "sourceType": "zpravodajství",
   "url": "https://www.seznamzpravy.cz/clanek/domaci-kauzy-macinka-opravil-chybu-v-priznani-ministra-se-prihlasil-k-ukrajinske-firme-297525",
   "published": "2026-01-28",

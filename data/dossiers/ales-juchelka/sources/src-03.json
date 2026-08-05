@@ -12,6 +12,7 @@
   "title": "SRC-03 — Seznam Zprávy",
   "description": "Juchelkova poradkyně má vliv na 17 miliard dotací. A podniká v jejich získávání",
   "outlet": "Seznam Zprávy",
+  "sourceFamily": "seznam-zpravy",
   "sourceType": "zpravodajství",
   "url": "https://www.seznamzpravy.cz/clanek/domaci-kauzy-juchelka-dal-vliv-na-dotace-poradkyni-firmu-prepsala-na-dceru-z-gymnazia-299592",
   "published": "2026-03-19",

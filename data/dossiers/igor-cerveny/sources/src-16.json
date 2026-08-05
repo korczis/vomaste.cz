@@ -12,11 +12,18 @@
   "title": "SRC-16 — Deník N",
   "description": "„Útok na zájmy ČR.“ Ministra rozčílily otázky na návštěvu USA. Proč přibral mluvčího Motoristů, nevysvětlil",
   "outlet": "Deník N",
+  "sourceFamily": "denik-n",
   "sourceType": "zpravodajství",
   "url": "https://denikn.cz/2132104/utok-na-zajmy-cr-ministra-rozcilily-otazky-na-navstevu-usa-proc-pribral-mluvciho-motoristu-nevysvetlil/",
   "published": "2026-07-21",
   "retrieved": "2026-07-30",
   "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-16"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-17"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-49"
     },

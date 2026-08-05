@@ -8,7 +8,7 @@ import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadCanonicalTree } from "./load.mjs";
 import { validateReferences } from "./validate-references.mjs";
-import { validateSemantics, loadAuthorizationIds } from "./validate-semantics.mjs";
+import { validateSemantics, loadAuthorizationIds, registeredDomain } from "./validate-semantics.mjs";
 import { validateJsonLd, validateRecordJsonLd } from "./validate-jsonld.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
@@ -126,14 +126,21 @@ test("fixture model projde sémantikou (s injektovanou autorizací) bez chyb i v
   assert.deepEqual(warnings, []);
 });
 
-// Přidá druhý zdroj SRC-02 do example-subject; family/outlet podle parametrů.
-function addSource(model, { sourceFamily = "", outlet = "Jiný deník" } = {}) {
+// Přidá druhý zdroj SRC-02 do example-subject; family/outlet/url podle
+// parametrů. Výchozí URL je jiná doména než SRC-01 — od pravidla S10 je
+// shodná registrovaná doména sama o sobě důvodem nenezávislosti, takže
+// klon se stejnou URL by testoval něco jiného, než co jeho název tvrdí.
+function addSource(
+  model,
+  { sourceFamily = "", outlet = "Jiný deník", url = "https://jiny-denik.invalid/clanek/example-subject" } = {},
+) {
   const src = structuredClone(find(model, SOURCE));
   src.relPath = "example-subject/sources/src-02.json";
   src.record["@id"] = "https://vomaste.cz/id/dossiers/example-subject/sources/SRC-02";
   src.record.identifier = "SRC-02";
   src.record.sourceFamily = sourceFamily;
   src.record.outlet = outlet;
+  src.record.url = url;
   src.record.claims = [];
   model.records.push(src);
   return src;
@@ -245,6 +252,117 @@ test("kontextová entita nesmí být subjektem dossieru (subjectOf/dossierEnable
   assert.ok(errors.some((e) => e.includes("subjectOf")), errors.join("\n"));
   assert.ok(errors.some((e) => e.includes("dossierEnabled=true")), errors.join("\n"));
   assert.ok(errors.some((e) => e.includes('"authorized"')), errors.join("\n"));
+});
+
+// --- S10: týž vydavatel nezakládá korroboraci ----------------------------
+//
+// Díra, kterou S10 zavírá: `familyOf` sahá po outletu jen u prázdné
+// `sourceFamily`, takže dva články TÉHOŽ vydavatele — jeden s rodinou,
+// druhý bez — dostaly různé klíče a S2 je brala jako dvě nezávislé
+// redakce. Fixtury mutují jediné pole, aby bylo vidět, co přesně nález
+// spouští.
+
+const SRC02 = "https://vomaste.cz/id/dossiers/example-subject/sources/SRC-02";
+
+// status-corroborated se dvěma zdroji, jejichž identitu vydavatele
+// nastaví volající.
+function corroboratedOn(model, sourceOptions) {
+  addSource(model, sourceOptions);
+  const claim = find(model, CLAIM).record;
+  claim.status = "status-corroborated";
+  claim.statusLabel = "POTVRZENO VÍCE ZDROJI";
+  claim.sources.push({ "@id": SRC02 });
+  return claim;
+}
+
+test("S10: týž outlet s rozdílnou sourceFamily NEZAKLÁDÁ korroboraci", () => {
+  const model = clone();
+  // SRC-01 zůstává bez rodiny (klíč `outlet:Example Daily`), SRC-02 má
+  // rodinu `ctk` (klíč `family:ctk`) — pro S2 dvě rodiny, fakticky ale
+  // jeden vydavatel. Přesně případ FORUM 24 SRC-10 + SRC-25.
+  corroboratedOn(model, { sourceFamily: "ctk", outlet: "Example Daily", url: "https://jina-domena.invalid/x" });
+  const { errors } = validateSemantics(model, { authorizations: AUTHS });
+  assert.ok(
+    errors.some((e) => e.includes("žádná dvojice nepochází od dvou různých vydavatelů")),
+    errors.join("\n"),
+  );
+  assert.ok(errors.some((e) => e.includes('týž outlet "Example Daily"')), errors.join("\n"));
+});
+
+test("S10: táž registrovaná doména NEZAKLÁDÁ korroboraci ani při jiném outletu", () => {
+  const model = clone();
+  // Regionální mutace téhož vydavatele: jiný název, jiná rodina, jedna
+  // doména (`prazsky.denik.cz` i `denik.cz` → `denik.cz`).
+  find(model, SOURCE).record.url = "https://www.denik.cz/clanek/a";
+  corroboratedOn(model, {
+    sourceFamily: "ctk",
+    outlet: "Pražský deník",
+    url: "https://prazsky.denik.cz/clanek/b",
+  });
+  const { errors } = validateSemantics(model, { authorizations: AUTHS });
+  assert.ok(
+    errors.some((e) => e.includes("táž registrovaná doména denik.cz")),
+    errors.join("\n"),
+  );
+});
+
+test("S10: dva různí vydavatelé zůstávají korroborací (pravidlo nepřestřeluje)", () => {
+  const model = clone();
+  corroboratedOn(model, { sourceFamily: "ctk", outlet: "Jiný deník" });
+  const { errors } = validateSemantics(model, { authorizations: AUTHS });
+  assert.deepEqual(errors, []);
+});
+
+test("S10 nespojuje instituce pod sdíleným veřejným sufixem (edu.gov.cz vs mze.gov.cz)", () => {
+  const model = clone();
+  find(model, SOURCE).record.url = "https://edu.gov.cz/zprava";
+  corroboratedOn(model, {
+    sourceFamily: "",
+    outlet: "Ministerstvo zemědělství ČR",
+    url: "https://mze.gov.cz/zprava",
+  });
+  const { errors } = validateSemantics(model, { authorizations: AUTHS });
+  assert.deepEqual(errors, []);
+  assert.equal(registeredDomain("https://edu.gov.cz/x"), "edu.gov.cz");
+  assert.equal(registeredDomain("https://domaci.hn.cz/c1-1"), "hn.cz");
+  assert.equal(registeredDomain("https://www.forum24.cz/a"), "forum24.cz");
+});
+
+test("S10: status-single se dvěma články téhož outletu je SPRÁVNĚ, i když se rodiny liší", () => {
+  // Zrcadlo prvního testu: co nezakládá korroboraci, nesmí ani nutit
+  // k povýšení statusu. Bez tohohle by S1 hlásila „2 rodiny".
+  const model = clone();
+  addSource(model, { sourceFamily: "ctk", outlet: "Example Daily", url: "https://jina-domena.invalid/x" });
+  find(model, CLAIM).record.sources.push({ "@id": SRC02 });
+  const { errors } = validateSemantics(model, { authorizations: AUTHS });
+  assert.deepEqual(errors, []);
+});
+
+test("S10 platí i pro hrany (S4) — v severitě hostitelského pravidla, tedy warning", () => {
+  const model = clone();
+  addSource(model, { sourceFamily: "ctk", outlet: "Example Daily", url: "https://jina-domena.invalid/x" });
+  const rel = find(model, RELATION).record;
+  rel.status = "corroborated";
+  rel.sources.push({ "@id": SRC02 });
+  const { errors, warnings } = validateSemantics(model, { authorizations: AUTHS });
+  assert.deepEqual(errors, []);
+  assert.ok(
+    warnings.some((w) => w.includes("(S10)") && w.includes('týž outlet "Example Daily"')),
+    warnings.join("\n"),
+  );
+});
+
+test("S10 je grandfatherovatelné pravidlo (evidenční řada, na rozdíl od S5/S6)", () => {
+  const model = clone();
+  const claim = corroboratedOn(model, {
+    sourceFamily: "ctk",
+    outlet: "Example Daily",
+    url: "https://jina-domena.invalid/x",
+  });
+  const baseline = [{ "@id": claim["@id"], rule: "S10", reason: "test" }];
+  const { errors, warnings } = validateSemantics(model, { authorizations: AUTHS, baseline });
+  assert.deepEqual(errors, []);
+  assert.ok(warnings.some((w) => w.startsWith("baseline (grandfathered S10)")), warnings.join("\n"));
 });
 
 // --- validate-jsonld -----------------------------------------------------

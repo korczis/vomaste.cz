@@ -12,6 +12,7 @@
   "title": "SRC-31 — Seznam Zprávy, 15. 1. 2026",
   "description": "Ministr je podle rejstříku pořád lobbistou Agrofertu.",
   "outlet": "Seznam Zprávy",
+  "sourceFamily": "seznam-zpravy",
   "sourceType": "zpravodajství",
   "url": "https://www.seznamzpravy.cz/clanek/domaci-kauzy-ministr-je-podle-rejstriku-porad-lobbistou-agrofertu-296119?noredirect=1",
   "published": "2026-01-15",

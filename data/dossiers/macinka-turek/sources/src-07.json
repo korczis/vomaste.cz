@@ -20,9 +20,6 @@
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-11"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/claims/CLM-12"
     }
   ],
   "subjects": [

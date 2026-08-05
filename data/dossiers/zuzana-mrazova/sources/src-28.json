@@ -12,11 +12,11 @@
   "title": "SRC-28 — Novinky.cz: Ministryně Mrázová žije v problémy zatížené Bílině v levném obecním bytě (29. 4. 2026)",
   "description": "Novinky.cz přejímá zjištění Seznam Zpráv o přestěhování k manželovi Pavlu Mrázovi, dřívějším nájmu cca 4 500 Kč a exekuční statistice Bíliny.",
   "outlet": "Novinky.cz",
+  "sourceFamily": "seznam-zpravy",
   "sourceType": "zpravodajství",
   "url": "https://www.novinky.cz/clanek/domaci-zpravy-ustecky-kraj-ministryne-mrazova-zije-v-problemy-zatizene-biline-v-levnem-obecnim-byte-rada-obyvatel-mesta-pritom-resi-exekuce-40575732",
   "published": "2026-04-29",
   "retrieved": "2026-07-31",
-  "sourceFamily": "seznam-zpravy-syndication",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-28"

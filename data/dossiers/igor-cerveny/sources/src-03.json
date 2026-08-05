@@ -12,6 +12,7 @@
   "title": "SRC-03 — Seznam Zprávy",
   "description": "Ministr Červený po zvolení převedl rodinný dům na svou manželku, ten nepřiznal",
   "outlet": "Seznam Zprávy",
+  "sourceFamily": "seznam-zpravy",
   "sourceType": "zpravodajství",
   "url": "https://www.seznamzpravy.cz/clanek/domaci-politika-ministr-cerveny-po-zvoleni-prevedl-rodinny-dum-na-svou-manzelku-ten-nepriznal-303118",
   "retrieved": "2026-07-30",

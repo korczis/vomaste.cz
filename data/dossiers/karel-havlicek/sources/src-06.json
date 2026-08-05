@@ -12,6 +12,7 @@
   "title": "SRC-06 — Seznam Zprávy",
   "description": "Havlíček: Audit jsem nečetl, podobně problémových dotací máme stovky",
   "outlet": "Seznam Zprávy",
+  "sourceFamily": "seznam-zpravy",
   "sourceType": "zpravodajství",
   "url": "https://www.seznamzpravy.cz/clanek/havlicek-audit-jsem-necetl-podobne-problemovych-dotaci-mame-stovky-84488",
   "published": "2019-12-10",

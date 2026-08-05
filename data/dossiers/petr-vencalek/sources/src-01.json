@@ -18,6 +18,9 @@
   "retrieved": "2026-07-22",
   "claims": [
     {
+      "@id": "https://vomaste.cz/id/dossiers/petr-vencalek/claims/CLM-01"
+    },
+    {
       "@id": "https://vomaste.cz/id/dossiers/petr-vencalek/claims/CLM-03"
     }
   ],

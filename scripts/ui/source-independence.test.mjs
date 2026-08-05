@@ -17,15 +17,18 @@
 
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { readFileSync, readdirSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { loadCanonicalTree } from "../data/load.mjs";
+import { collectSemanticsFindings, registeredDomain } from "../data/validate-semantics.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 
 // Táž sémantika, jakou používá brána scripts/data/validate-semantics.mjs
 // (S1/S2). Kdyby se rozešly, hlásila by brána jinou nezávislost než
-// dokumentace.
+// dokumentace — proto celodatasetová kontrola níž volá PŘÍMO bránu a
+// nekopíruje si její pravidla. Tenhle čítač zůstává jen jako čitelná
+// specifikace rodinového primitivu.
 function countIndependent(srcIds, familyOf) {
   const rodiny = new Set();
   for (const id of srcIds) {
@@ -49,42 +52,33 @@ test("smíšený případ: převzetí + samostatná reportáž = dvě doložení
   assert.equal(countIndependent(["SRC-01", "SRC-02", "SRC-03"], fam), 2);
 });
 
+// S10 (T-060): rodina není jediná osa nezávislosti. Dva články TÉHOŽ
+// vydavatele — jeden s vyplněnou rodinou, druhý bez — dostanou dva různé
+// rodinové klíče, ale jsou jedna redakce. Odznak CORROBORATED znamená dva
+// nezávislé VYDAVATELE, ne dvě různé hodnoty jednoho pole.
+test("S10: registrovaná doména sjednocuje redakční subdomény, ne instituce pod veřejným sufixem", () => {
+  assert.equal(registeredDomain("https://domaci.hn.cz/c1-1"), registeredDomain("https://archiv.hn.cz/c1-2"));
+  assert.equal(registeredDomain("https://prazsky.denik.cz/a"), registeredDomain("https://www.denik.cz/b"));
+  // gov.cz je veřejný sufix — MŠMT a Ministerstvo zemědělství nesmí splynout.
+  assert.notEqual(registeredDomain("https://edu.gov.cz/x"), registeredDomain("https://mze.gov.cz/y"));
+});
+
 test("žádné tvrzení netvrdí nezávislé potvrzení, které data nedokládají", () => {
   // T-028 fáze H: čte se KANONICKÝ model (data/dossiers/**/*.json) —
-  // content/** je generovaný adaptér bez doménových polí. Rodina zdroje
-  // následuje sémantiku brány: sourceFamily > outlet > zdroj sám za sebe.
-  const readJson = (file) => JSON.parse(readFileSync(file, "utf8"));
-  const localId = (ref) => (typeof ref?.["@id"] === "string" ? ref["@id"].split("/").pop() : "");
+  // content/** je generovaný adaptér bez doménových polí.
+  //
+  // Kontrola volá PŘÍMO bránu (collectSemanticsFindings), místo aby si
+  // pravidla S1/S2/S10 kopírovala: dvě implementace téhož pravidla se už
+  // jednou rozešly a tenhle test hlídal minulost brány, ne data.
+  const model = loadCanonicalTree(join(ROOT, "data/dossiers"));
+  const { findings } = collectSemanticsFindings(model);
 
-  const base = join(ROOT, "data/dossiers");
-  const problemy = [];
-  let kontrolovano = 0;
-
-  for (const slug of readdirSync(base)) {
-    const cd = join(base, slug, "claims"), sd = join(base, slug, "sources");
-    if (!existsSync(cd) || !existsSync(sd)) continue;
-
-    const fam = new Map();
-    for (const f of readdirSync(sd).filter((x) => /^src-\d+\.json$/.test(x))) {
-      const r = readJson(join(sd, f));
-      const family = (typeof r.sourceFamily === "string" && r.sourceFamily.trim()) || (typeof r.outlet === "string" && r.outlet.trim()) || "";
-      fam.set(r.identifier, family);
-    }
-
-    for (const f of readdirSync(cd).filter((x) => /^clm-\d+\.json$/.test(x))) {
-      const r = readJson(join(cd, f));
-      const status = r.status;
-      const ids = [...new Set((r.sources ?? []).map(localId))];
-      if (status === "status-corroborated") {
-        kontrolovano++;
-        const n = countIndependent(ids, fam);
-        if (n < 2) problemy.push(`${slug}/${r.identifier}: ${ids.length} zdrojů → ${n} nezávislá rodina [${ids.join(", ")}]`);
-      }
-      if (status === "status-single" && countIndependent(ids, fam) > 1) {
-        problemy.push(`${slug}/${r.identifier}: status-single, ale ${countIndependent(ids, fam)} nezávislé rodiny — podceňuje doložení`);
-      }
-    }
-  }
+  const kontrolovano = model.records.filter(
+    (w) => w.registry === "claims" && w.record.status === "status-corroborated",
+  ).length;
+  const problemy = findings
+    .filter((f) => f.rule === "S1" || f.rule === "S2" || f.rule === "S10")
+    .map((f) => `${f.rule}: ${f.message}`);
 
   // Bez tohohle by test prošel i tehdy, kdyby čtečka přestala cokoli najít.
   assert.ok(kontrolovano > 50, `zkontrolováno jen ${kontrolovano} tvrzení — čtečka nejspíš nic nenašla`);

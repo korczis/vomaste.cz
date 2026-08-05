@@ -12,6 +12,7 @@
   "title": "SRC-05 — Seznam Zprávy",
   "description": "Kauza, kterou česká medicína nepamatuje. Co všechno přehlédl ministr Vojtěch?",
   "outlet": "Seznam Zprávy",
+  "sourceFamily": "seznam-zpravy",
   "sourceType": "komentář/názor",
   "url": "https://www.seznamzpravy.cz/clanek/nazory-komentare-kauza-defibrilatory-stacilo-cist-noviny-pane-ministre-302267",
   "published": "2026-03-22",

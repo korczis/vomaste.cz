@@ -12,6 +12,7 @@
   "title": "SRC-21 — Ekolist.cz (ČTK)",
   "description": "Šebestyán: Budu spolupracovat se všemi nevládními zemědělskými organizacemi",
   "outlet": "Ekolist.cz (ČTK)",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://ekolist.cz/cz/zpravodajstvi/zpravy/sebestyan-budu-spolupracovat-se-vsemi-nevladnimi-zemedelskymi-organizacemi",
   "published": "2026-01-14",
@@ -30,6 +31,5 @@
       "value": "**Šebestyán: Budu spolupracovat se všemi nevládními zemědělskými organizacemi**\n\nZpráva ČTK. Předseda Asociace soukromého zemědělství Jaroslav Šebek označil nominaci Šebestyána za popření oprávněných zájmů zemědělců a označil ho za přiznaného lobbistu za zájmy zhruba dvacítky zemědělských a potravinářských gigantů, s odkazem na jeho vazby na Iniciativu zemědělských a potravinářských podniků. Agrární komora a Zemědělský svaz nominaci naopak podpořily. Šebestyán reagoval, že pozice ASZ není založena na rozumných argumentech, že má podporu většiny sektoru a bude podporovat všechny právní formy a velikosti podniků.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
     }
   ],
-  "order": 21,
-  "sourceFamily": "ctk"
+  "order": 21
 }
