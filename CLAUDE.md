@@ -64,6 +64,24 @@ entry; it does not replace reading and applying the rule.
   this specific cleanup has no open tracking task right now; run
   `npm run lint:historical-coupling` yourself to see current occurrences
   before assuming it's clean).
+- **On `master`, a commit auto-pushes.** `.githooks/post-commit`
+  (installed the same way as pre-commit, since 2026-08-05) runs fetch →
+  rebase onto `origin/master` → the **full** `npm run build` → `git push
+  origin master` automatically after every commit made directly on
+  `master` — push to `master` is the live GitHub Pages deploy, so this
+  means committing on `master` now typically deploys within seconds,
+  not "commit now, push later after a review pause." It aborts cleanly
+  (commit stays local, nothing pushed) on a rebase conflict or a red
+  full build; see `docs/coop/PROTOCOL.md`, "Automatický push po
+  commitu" for the exact bail-out conditions and the recipe for the
+  generated-file conflicts (golden test snapshot, discovery log,
+  reports) that commonly cause the rebase step to need manual
+  resolution when several instances are active. Consequence for your
+  own workflow: get confirmation *before* committing directly on
+  `master` for anything that should be reviewed first — there is no
+  longer a safe pause between `git commit` and the push actually going
+  out. `COOP_NO_AUTOPUSH=1 git commit …` opts a single commit out (the
+  hook is a no-op in worker worktrees on `task/T-###` branches anyway).
 - Treat the "Content about real parties" log in `AGENTS.md` as append-only
   and load-bearing: never edit or remove an existing entry, even to "clean
   up" wording or fix a typo. A new scope extension is always a brand-new

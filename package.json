@@ -7,6 +7,7 @@
     "postinstall": "node scripts/setup/install-git-hooks.mjs",
     "hooks:install": "node scripts/setup/install-git-hooks.mjs",
     "test": "node --test scripts/build/*.test.mjs scripts/dossier/*.test.mjs scripts/data/*.test.mjs scripts/migrations/*.test.mjs scripts/lint/*.test.mjs scripts/ui/*.test.mjs scripts/ci/*.test.mjs scripts/osint/*.test.mjs scripts/intake/*.test.mjs scripts/intake/matching/*.test.mjs scripts/intake/risk/*.test.mjs scripts/intake/preflight/*.test.mjs",
+    "test:update-golden": "node scripts/data/update-golden-snapshot.mjs",
     "css:build": "tailwindcss -i ./static/css/input.css -o ./static/css/main.css --minify",
     "css:watch": "tailwindcss -i ./static/css/input.css -o ./static/css/main.css --watch",
     "js:build": "esbuild assets/js/app.js assets/js/graph-app.js --bundle --minify --target=es2020 --outdir=static/js",

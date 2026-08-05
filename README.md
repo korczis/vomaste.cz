@@ -269,7 +269,8 @@ Rozhodnutí a jeho důsledky: [ADR](docs/adr/dossier-directory-multi-view.md).
 ├── scripts/intake/         # veřejný intake: parser podnětu, matching, preflight (nikdy nezapisuje do dat)
 ├── scripts/coop/           # koordinace více instancí (bus, worktrees)
 ├── scripts/setup/          # instalace git hooks (postinstall)
-├── .githooks/              # pre-commit: rychlá podmnožina validátorů
+├── .githooks/              # pre-commit: rychlá podmnožina validátorů;
+                            # post-commit: na masteru auto push+deploy
 ├── .claude/skills/         # bootstrap, dossier-entry, investigate, adr, commit
 ├── docs/                   # konstituce, datový kontrakt, audity, migrace, koop, ADR
 ├── reports/                # generované interní reporty (nepublikují se)
@@ -323,6 +324,16 @@ instalaci) — od té chvíle `git commit` sám spustí rychlou podmnožinu
 validátorů (`.githooks/pre-commit`); ruční přeinstalace: `npm run
 hooks:install`. Je to jen rychlá předběžná brána, ne náhrada za `npm run
 build` před review-requestem/mergem/pushem.
+
+**Na branchi `master` navíc commit = push = deploy.** `.githooks/post-commit`
+po každém commitu na `master` sám spustí fetch → rebase → **celý**
+`npm run build` → `git push origin master` (GitHub Pages CI se spustí
+automaticky) — bez ručního "a teď to pushnu". Nikdy nepushne rozbitý
+build ani rozpracovaný rebase; na konfliktu se vzdá a nechá commit
+lokální. Detaily a únik (`COOP_NO_AUTOPUSH=1`) v
+[`docs/coop/PROTOCOL.md`](docs/coop/PROTOCOL.md#automatický-push-po-commitu-post-commit-hook).
+Ve worker worktree (`task/T-###`) je hook no-op — to platí jen pro
+přímé commity na `master`.
 
 **Přispíváš přes Claude Code (nebo jiného AI agenta)?** Podrobný postup
 je v [`CONTRIBUTING.md`, sekce „Přispívání s Claude Code“](CONTRIBUTING.md#přispívání-s-claude-code-nebo-jiným-ai-agentem).
@@ -388,6 +399,7 @@ Instalace `just`: <https://github.com/casey/just#installation>.
 | `npm run check` | validace bez generování (`pipeline.mjs check`) |
 | `npm run hooks:install` | nastaví `core.hooksPath` na `.githooks/` (jinak se spustí automaticky přes `npm ci`/`npm install`) |
 | `npm test` | regresní testy tooling skriptů (Node built-in test runner, žádná nová závislost) — součást `npm run build` |
+| `npm run test:update-golden` | přegeneruje `scripts/data/compiled-golden.snapshot.json` (počty záznamů/graf pro golden test) z aktuálního compiled modelu — jediný podporovaný způsob, jak ta čísla měnit; taky jediné, co potřebuješ po konfliktu v tomhle souboru |
 | `npm run data:validate` | kanonická brána: tvar (`schemas/canonical/`, AJV strict) → reference R1–R7 → sémantika S1–S10 → parita tabulky T1–T8 → JSON-LD expanze |
 | `npm run data:validate -- --file <cesta>` | rychlá tvarová validace jediného kanonického souboru; chybové hlášky nesou cestu |
 | `npm run data:build` | kompilace datasetu + view modely + regenerace content adaptérů + parity brána content == staging |
@@ -604,7 +616,11 @@ průvodce krok za krokem (včetně běžných chybových hlášek):
 ## Příspěvky (pull requesty)
 
 Standardní GitHub flow: fork → větev → změna → zelený `npm run build` →
-pull request. Každý příspěvek prochází lidským review proti redakčním
+pull request. Práce na vlastní feature branchi `.githooks/post-commit`
+nijak neovlivní — auto-push se týká jen přímých commitů na `master`
+(ve tvém forku by to pushlo na tvůj vlastní `origin master`, ne na
+tento repo; `COOP_NO_AUTOPUSH=1` to i tak úplně vypne, pokud ho
+nechceš). Každý příspěvek prochází lidským review proti redakčním
 pravidlům a konstituci; **obsah o reálných osobách navíc vyžaduje
 předchozí autorizaci vlastníka v append-only logu `AGENTS.md`** — PR
 rozšiřující pokrytí bez ní nebude přijat, jakkoli je téma „veřejně
@@ -684,6 +700,12 @@ validace (stejné příkazy jako lokálně) → `zola check` → `zola build` �
 `verify:anchors` → upload artefaktu → `actions/deploy-pages`. Ruční
 spuštění: workflow_dispatch. Ověření produkce: porovnat nasazený obsah
 s očekávaným commitem (`gh run list`, pak kontrola klíčových rout).
+
+Ten push typicky nespouští nikdo ručně — `.githooks/post-commit` ho
+udělá sám po každém commitu na `master` (viz „Rychlý start" a
+[`docs/coop/PROTOCOL.md`](docs/coop/PROTOCOL.md#automatický-push-po-commitu-post-commit-hook)),
+včetně vlastního `npm run build` běhu předtím, takže commit, který se
+tam vůbec nedostane, byl na plné bráně červený.
 
 ## Známá omezení (k 2026-08-05)
 
