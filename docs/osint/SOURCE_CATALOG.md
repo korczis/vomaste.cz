@@ -64,7 +64,7 @@ Odpovídá na otázku „kam se podívat a čemu z toho věřit". Publikovaná p
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 628 záznamů v 97 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 635 záznamů v 101 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
@@ -74,8 +74,8 @@ Dopočítáno z `data/dossiers/**/sources/**`, 628 záznamů v 97 rodinách/outl
 | FORUM 24 | 19 | 9 | — |
 | Poslanecká sněmovna Parlamentu ČR | 18 | 14 | [ano](/zdroje/psp-cz/) |
 | denik-n | 16 | 9 | [ano](/zdroje/denik-n/) |
+| ČT24 (Česká televize) | 15 | 7 | [ano](/zdroje/ceska-televize/) |
 | Echo24 | 13 | 9 | — |
-| ČT24 (Česká televize) | 12 | 7 | [ano](/zdroje/ceska-televize/) |
 | denik-cz | 11 | 6 | — |
 | Aktuálně.cz | 11 | 6 | — |
 | Česká justice | 11 | 6 | — |
@@ -117,8 +117,10 @@ Dopočítáno z `data/dossiers/**/sources/**`, 628 záznamů v 97 rodinách/outl
 | AutoRevue.cz | 1 | 1 | — |
 | Centrum veřejných financí (Univerzita Karlova) | 1 | 1 | — |
 | Česká infrastruktura | 1 | 1 | — |
+| Česká obchodní inspekce | 1 | 1 | — |
 | Česká školní inspekce | 1 | 1 | — |
 | ČKAIT (Česká komora autorizovaných inženýrů a techniků) | 1 | 1 | — |
+| CNCB / BRKI a NRKI | 1 | 1 | — |
 | Demagog.cz | 1 | 1 | — |
 | Deník Alarm | 1 | 1 | — |
 | Deník Referendum | 1 | 1 | — |
@@ -130,6 +132,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 628 záznamů v 97 rodinách/outl
 | EV Magazín | 1 | 1 | — |
 | Evropský parlament | 1 | 1 | — |
 | Extra.cz | 1 | 1 | — |
+| Finmag.cz — přepis obchodního rejstříku | 1 | 1 | — |
 | Hanácká Drbna | 1 | 1 | — |
 | Heroine.cz | 1 | 1 | — |
 | Info.cz | 1 | 1 | — |
@@ -144,6 +147,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 628 záznamů v 97 rodinách/outl
 | Nejvyšší kontrolní úřad (nku.cz) | 1 | 1 | — |
 | Nejvyšší správní soud | 1 | 1 | — |
 | Neovlivní.cz | 1 | 1 | — |
+| Novinky.cz / Právo | 1 | 1 | — |
 | ParlamentníListy.cz | 1 | 1 | — |
 | Podnikatel.cz | 1 | 1 | — |
 | Podpůrný a garanční rolnický a lesnický fond (PGRLF) | 1 | 1 | — |

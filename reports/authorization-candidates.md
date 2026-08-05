@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 499 context entities across 26 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 502 context entities across 26 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -1304,6 +1304,9 @@ Generated from 499 context entities across 26 dossier(s). Regenerate with `npm r
 - Claims: none
 - Sources: none (0 independent source families)
 - Relations:
+  - edge-hydroprogress-lesy-ceske-republiky-sp (hydroprogress-s-r-o -> lesy-ceske-republiky-sp, "Lesy České republiky, s.p. zveřejnil v registru smluv smlouvy, jejichž protistranou je HYDROPROGRESS, s.r.o.", dossier: martin-pavlik)
+  - edge-hydroprogress-povodi-labe-sp (hydroprogress-s-r-o -> povodi-labe-sp, "Povodí Labe, s.p. zveřejnil v registru smluv smlouvy, jejichž protistranou je HYDROPROGRESS, s.r.o.", dossier: martin-pavlik)
+  - edge-hydroprogress-povodi-odry-sp (hydroprogress-s-r-o -> povodi-odry-sp, "Povodí Odry, s.p. zveřejnil v registru smluv smlouvy, jejichž protistranou je HYDROPROGRESS, s.r.o.", dossier: martin-pavlik)
   - edge-pavlik-hydroprogress (martin-pavlik -> hydroprogress-s-r-o, "jednatel a společník s podílem 80 %", dossier: martin-pavlik)
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -2304,6 +2307,17 @@ Generated from 499 context entities across 26 dossier(s). Regenerate with `npm r
 - Claims: CLM-14
 - Sources: SRC-07, SRC-08 (1 independent source family)
 - Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Lesy České republiky, s.p. (`lesy-ceske-republiky-sp`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: martin-pavlik
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations:
+  - edge-hydroprogress-lesy-ceske-republiky-sp (hydroprogress-s-r-o -> lesy-ceske-republiky-sp, "Lesy České republiky, s.p. zveřejnil v registru smluv smlouvy, jejichž protistranou je HYDROPROGRESS, s.r.o.", dossier: martin-pavlik)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## «Lex Mrázová» (návrh povinnosti přiznávat obecní byt) (`lex-mrazova`)
@@ -3926,6 +3940,28 @@ Generated from 499 context entities across 26 dossier(s). Regenerate with `npm r
 - Sources: SRC-01, SRC-03, SRC-09, SRC-15, SRC-17, SRC-18, SRC-21, SRC-22, SRC-54, SRC-60, SRC-61 (17 independent source families)
 - Relations:
   - edge-okamura-poslaneckasnemovna (okamura -> poslanecka-snemovna, "Sněmovna 5. 3. 2026 nevydala Okamuru k trestnímu stíhání (parlamentní procesní krok)", dossier: tomio-okamura)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Povodí Labe, státní podnik (`povodi-labe-sp`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: martin-pavlik
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations:
+  - edge-hydroprogress-povodi-labe-sp (hydroprogress-s-r-o -> povodi-labe-sp, "Povodí Labe, s.p. zveřejnil v registru smluv smlouvy, jejichž protistranou je HYDROPROGRESS, s.r.o.", dossier: martin-pavlik)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Povodí Odry, státní podnik (`povodi-odry-sp`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: martin-pavlik
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations:
+  - edge-hydroprogress-povodi-odry-sp (hydroprogress-s-r-o -> povodi-odry-sp, "Povodí Odry, s.p. zveřejnil v registru smluv smlouvy, jejichž protistranou je HYDROPROGRESS, s.r.o.", dossier: martin-pavlik)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Městská část Praha 3 (`praha3`)
