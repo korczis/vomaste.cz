@@ -32,13 +32,24 @@ text, jen bez nutnosti chodit na GitHub.
   Podání samo dataset nemění; projde přezkumem. Subjekty nemají redakční
   veto.
 
-## Co přispět NELZE bez předchozí autorizace
+## Co přispět NELZE bez pokrytí publikačními branami
 
 Jakýkoli **nový subjekt, nová kauza nebo nová jmenovaná třetí osoba**.
-Rozsah pokrytí reálných osob určuje výhradně append-only autorizační
-log v AGENTS.md — pull request rozšiřující pokrytí bez záznamu v logu
-bude zamítnut bez ohledu na kvalitu zdrojů. „Je to veřejně zajímavé"
-ani „už to někde vyšlo" není důvod. Návrh nového dossieru otevřete
+Rozsah pokrytí reálných osob určuje append-only autorizační log
+v AGENTS.md. Od 2026-08-05 (`AUTH-2026-08-05-PLATFORM-SCOPE`, sekce
+„Standing scope authorization and publication gates") pro veřejné
+činitele, PEP a subjekty materiálně napojené na veřejnou moc/peníze
+odpadá dřívější požadavek na samostatné datované schválení jménem po
+jménu — ale devět povinných publikačních bran v té sekci platí bez
+výjimky (jmenovaný zdroj, provenience, procesní rámování, žádná vina
+podle grafu, nezávislost zdrojových rodin, minimalizace dat,
+proporcionalita třetích stran, revidovatelná změna, deterministický
+build) a **mechanická brána buildu je nezměněná**: `npm run
+dossier:scaffold` a `validate:authorization` stále vyžadují odpovídající
+záznam v `data/authorizations.toml` — pull request rozšiřující pokrytí
+bez něj bude zamítnut bez ohledu na kvalitu zdrojů. „Je to veřejně
+zajímavé" ani „už to někde vyšlo" není samo o sobě důvod. Návrh nového
+dossieru mimo standing scope (soukromá osoba bez veřejné funkce) otevřete
 nejdřív jako issue s odůvodněním veřejného zájmu.
 
 ## Pravidla pro obsahové příspěvky (závazná)

@@ -462,26 +462,121 @@ only the routing envelope.
 8. No speculation or hedged guessing where sources are silent — that
    belongs in the gaps registry, not the claims registry.
 
-## Authorizing a new dossier subject or expanding scope
+## Standing scope authorization and publication gates
 
-The default is to cover no one. Adding a new subject, or expanding an
-existing subject's scope to a new controversy, requires an explicit,
-dated authorization from the site owner, recorded in this file — never
-assumed silently, and never inferred just because a topic is "publicly
-interesting." A clear owner instruction to create, add, investigate or
-expand a dossier for a named subject is itself authorization; no magic
-phrase, repeated confirmation or separate "proceed" is required. The owner
-may type a detailed scope in the interactive CLI, or an agent may derive a
-concrete working scope from the owner's request and the public sources it
-opens, then record it through `authorize-entity.mjs` using
-`--owner-authorized-in-conversation` and `--scope-file`. CI, scheduled
-automation and inferred consent may not use that mode. An authorization
-record must identify the subject and describe the working topics; the agent
-may refine that description during research without returning for approval,
-provided every published claim remains limited to named, reputable sources
-and the owner's stated exclusions are respected. A newly encountered person
-does not become a dossier subject merely by appearing in reporting, but the
-owner may authorize broad or multiple-subject coverage in one instruction.
+As of **2026-08-05** (`AUTH-2026-08-05-PLATFORM-SCOPE`, see the log
+below), the site owner has replaced the per-subject, per-topic
+authorization procedure that governed every entry above with a standing
+scope authorization for public-interest research and publication. The
+authorization entries above remain permanent historical records of what
+was approved under the earlier governance model — they are not edited or
+removed — but a new subject or topic occurring on or after this date no
+longer needs its own separate dated owner approval before research or
+dossier scaffolding may begin.
+
+The standing scope covers:
+
+- public officials and politically exposed persons acting in or connected
+  to their public role;
+- candidates for public office and senior officials whose decisions,
+  appointments, public funding, regulatory authority or institutional
+  responsibilities create a demonstrable public-interest basis;
+- companies, foundations, associations, political parties, public bodies
+  and other legal entities materially connected to public money, public
+  procurement, public power, regulated activity or an already covered
+  public-interest case;
+- other persons or organizations only where reputable public reporting,
+  an official record or a primary public document establishes a concrete
+  and proportionate public-interest reason for including them.
+
+This wider scope changes **who may be researched**; it does not lower
+**what may be published**. Every one of the editorial rules elsewhere in
+this file — sourcing, quote handling, procedural-vs-substantive framing,
+unnamed third parties, gap-not-speculation — applies exactly as before,
+in full, to every subject covered by the standing scope.
+
+### Mandatory publication gates
+
+A record may enter the public canonical dataset only when all applicable
+conditions below are met:
+
+1. **Named evidence.** A factual claim has a directly identifiable,
+   retrievable source or a directly referenceable public registry/official
+   document, actually opened and read. Search snippets, internal notes and
+   model output are not sources.
+2. **Provenance.** The repository records where the information came from,
+   when it was retrieved, which transformation produced it and which
+   canonical record it supports.
+3. **Faithful status.** Quotes remain quotes; allegations remain attributed
+   allegations; disputed matters remain visibly disputed; procedural
+   outcomes are never rewritten as substantive findings.
+4. **No guilt by graph.** A relation, common employer, common address,
+   company link, event attendance or co-occurrence does not by itself
+   establish influence, coordination, responsibility or wrongdoing.
+5. **Source-family independence.** Syndicated or commonly owned outlets do
+   not count as independent corroboration merely because they have
+   different URLs (rule S2).
+6. **Data minimization.** Home addresses, personal contact details,
+   unnecessary dates of birth, private family details, source-identifying
+   information and other disproportionate personal data are not published.
+7. **Third-party proportionality.** A third party named by a source may be
+   represented as context where necessary to understand the public-interest
+   matter, but is not automatically promoted into a dossier subject and is
+   not described beyond what the evidence and public-interest basis justify.
+8. **Reviewable change.** Every canonical promotion is a reviewable diff.
+   Batch review is allowed; silent direct publication from a discovery run
+   is not.
+9. **Deterministic public build.** The public site must build from
+   repository data without requiring an external research platform, private
+   database, credentials or live network access.
+
+### Review model
+
+The former per-subject authorization gate is replaced by a run-level or
+batch-level review gate: a human reviewer may approve a coherent batch of
+candidate records after inspecting its diff, provided each promoted record
+still individually satisfies the nine gates above. Automation may discover,
+normalize, deduplicate, create gaps and prepare candidate records without a
+per-entity approval round. Automation may not silently merge candidates
+into canonical public data, commit, push or deploy them.
+
+### Implementation status — mechanical gate not yet rewritten
+
+This section changes editorial **policy**. It does not, by itself, change
+the mechanical enforcement in `scripts/dossier/validate-authorization.mjs`
+or `npm run dossier:scaffold`, which as of this writing still hard-require
+a matching per-dossier record in `data/authorizations.toml` cross-checked
+against a specific `agents_md_section` in the log below (see that script's
+own header comment for the exact invariants it enforces). Per this repo's
+own constitution §8, a policy nothing enforces doesn't count as
+implemented — so until that validator is rewritten to recognize the
+standing-scope entry as sufficient authorization on its own, **a new
+dossier still needs a corresponding record in `data/authorizations.toml`
+for the build to pass**, even though it no longer needs a separate,
+individually negotiated owner conversation to justify one. Writing that
+record for a standing-scope subject is a mechanical/audit step, not a new
+approval ceremony. Rewriting the validator itself is tracked as follow-up
+work, not done as part of this entry.
+
+### Prismatic Platform as an upstream capability provider
+
+`~/dev/prismatic-platform` is authorized as a local upstream research and
+enrichment engine for this repository, for discovery, public-register
+lookup, source discovery, extraction, normalization, identity resolution,
+relationship discovery, timeline construction, provenance capture,
+deduplication and gap analysis across all subjects within the standing
+scope. It is never a citable public source: its internal database, agent
+output, confidence value, embedding similarity, heuristic score or
+inference may generate a candidate or point to evidence, but may not be
+published as a factual finding unless the canonical record cites the
+underlying public evidence. A direct public-registry record transported by
+Prismatic may be cited as that registry record; the citation is to the
+registry, not to Prismatic.
+
+The public Zola build must never depend on Prismatic being present — see
+`docs/adr/prismatic-platform-integration.md` for the full integration
+architecture (data zones, export contract, review flow) and its current
+implementation status.
 
 ### Context entities are not coverage (2026-07-30)
 
@@ -1465,3 +1560,54 @@ Publikovat lze pouze tvrzení podložená pojmenovaným, datovaným a přímo ot
 Authorized by the site owner, explicitly and on the record, 2026-08-05:
 
 Samostatný entity dossier pro Martina Pavlíka, jednoznačně vymezeného veřejným rejstříkovým profilem https://www.podnikatel.cz/rejstrik/osoby/martin-pavlik-1902710/ a navázanými záznamy ARES. Rozsah zahrnuje pouze přímo doložené veřejné rejstříkové role a podíly u MEDIA PROJECT CZ s.r.o. (IČO 01529820), Bydlíme v Králově Poli, z.s. (IČO 02922703), HYDROPROGRESS, s.r.o. (IČO 04449461) a Nadačního fondu FIDUCIA (IČO 26228548). Dossier nesmí obsahovat ani odvozovat IT profesní profil, schopnosti, zaměstnání, přibližný věk, datum narození, adresu bydliště ani jiné osoby stejného jména. Každé publikované tvrzení musí být doloženo přímo otevřeným veřejným zdrojem; vlastní či profilové zdroje dokládají jen vlastní sebeprezentaci. Při jakékoli nejasnosti identity se údaj nezveřejní a zůstane jako mezera, nikoli jako domněnka. Samotná rejstříková funkce nebo podíl nesmějí být prezentovány jako podezření či pochybení.
+
+### Governance and scope supersession, 2026-08-05: standing public-interest scope and Prismatic integration
+
+Authorized by the site owner, explicitly and on the record, 2026-08-05:
+`AUTH-2026-08-05-PLATFORM-SCOPE`.
+
+The owner decided that the previous requirement for a separate,
+name-by-name and topic-by-topic authorization before research or dossier
+creation imposed unnecessary operational friction. For work performed on
+or after this date, that procedure is superseded by the standing scope
+and publication gates recorded in "Standing scope authorization and
+publication gates" above.
+
+The repository may research, scaffold, enrich and publish dossiers about
+public officials, politically exposed persons, public-interest legal
+entities and materially connected context entities without a new
+per-subject authorization entry, provided every published record
+satisfies the repository's source, provenance, status, proportionality,
+privacy and review requirements — the nine mandatory publication gates
+above apply without exception.
+
+The owner further authorizes direct local use of
+`~/dev/prismatic-platform` as an upstream capability provider for all
+existing and future entities and dossiers within that standing scope, for
+discovery, registry lookups, extraction, normalization, identity
+resolution, relationship discovery, source and provenance capture,
+timeline construction, deduplication and gap analysis. This authorization
+does not turn Prismatic output into a source, does not authorize
+publication of unsupported inference, does not permit private or
+disproportionate personal data, and does not permit an automated
+discovery run to silently publish, commit, push or deploy canonical
+content. Canonical promotion remains evidence-backed, diff-based and
+reviewable, with batch-level approval allowed.
+
+All authorization entries preceding this one remain untouched as
+permanent historical records. Their subject-specific limits describe the
+governance then in force; they do not restrict the standing scope adopted
+by this entry for future work.
+
+**Implementation note (operational, not a scope limit)**: as recorded in
+"Standing scope authorization and publication gates" above, this entry
+changes editorial policy; it does not by itself rewrite
+`scripts/dossier/validate-authorization.mjs` or `npm run dossier:scaffold`,
+which still mechanically require a per-dossier record in
+`data/authorizations.toml`. Until that validator work lands, a concrete
+`data/authorizations.toml` record is still the mechanical step that lets
+`npm run build` pass for a new dossier — it is no longer gated on a
+separate owner negotiation per subject, but it still has to exist. See
+`docs/adr/prismatic-platform-integration.md` for the integration
+architecture this entry authorizes, and its current implementation
+status (governance adopted; CLI pipeline scaffolded, not yet functional).
