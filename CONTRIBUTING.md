@@ -81,6 +81,19 @@ nejdřív jako issue z formuláře **Navrhnout dossier nebo entitu**
 
 ## Technický postup
 
+**Chcete si to jen spustit a podívat se, bez forku a bez commitu?**
+
+```bash
+git clone git@github.com:korczis/vomaste.cz.git
+cd vomaste.cz && npm ci
+npm run dev   # generátory + živý server na http://127.0.0.1:1111
+```
+
+To je celý bootstrap — `npm run dev` spustí všechny generátory (routes,
+navigace, search index, JSON-LD exporty) a pak `zola serve` s
+automatickým reloadem. Zbytek téhle sekce je až pro skutečný příspěvek
+(fork, vlastní branch, validace, pull request):
+
 ```bash
 # fork na GitHubu, potom:
 git clone git@github.com:<vas-ucet>/vomaste.cz.git

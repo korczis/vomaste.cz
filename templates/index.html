@@ -605,7 +605,7 @@
       <p class="max-w-2xl text-balance text-sm font-medium leading-relaxed text-black/70 sm:text-base">Public domain od prvního commitu. Přidej druhý nezávislý zdroj k jednozdrojovému tvrzení, oprav mrtvý odkaz, nebo si celý systém odnes a postav na něm vlastní výzkum.</p>
       <div class="flex w-full flex-col items-stretch gap-3 sm:w-auto sm:flex-row">
         <a href="https://github.com/korczis/vomaste.cz/fork" class="inline-flex items-center justify-center gap-2 rounded-lg bg-black px-6 py-3.5 text-base font-bold text-[#f3e5c0] no-underline transition-colors hover:bg-black/80 sm:py-3 sm:text-sm">Forknout na GitHubu</a>
-        <a href="https://github.com/korczis/vomaste.cz/blob/master/CONTRIBUTING.md" class="inline-flex items-center justify-center rounded-lg border-2 border-black/30 px-6 py-3.5 text-base font-semibold text-black no-underline transition-colors hover:border-black hover:bg-black/5 sm:py-3 sm:text-sm">Jak přispět</a>
+        <a href="{{ get_url(path='@/dokumentace/prispivani.md') | safe }}" class="inline-flex items-center justify-center rounded-lg border-2 border-black/30 px-6 py-3.5 text-base font-semibold text-black no-underline transition-colors hover:border-black hover:bg-black/5 sm:py-3 sm:text-sm">Jak přispět</a>
         <a href="{{ get_url(path='@/dossiers/_index.md') | safe }}" class="inline-flex items-center justify-center rounded-lg border-2 border-black/30 px-6 py-3.5 text-base font-semibold text-black no-underline transition-colors hover:border-black hover:bg-black/5 sm:py-3 sm:text-sm">Otevřené otázky ({{ ev.openGaps }})</a>
       </div>
     </div>
