@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-51",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-51",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "text": "Registr lobbování (RELOB), veřejný registr zřízený zákonem č. 168/2025 Sb., o regulaci lobbování, vede Karla Havlíčka jako lobbovaného pod evidenčním číslem RL5830385158 se zápisem od 3. 7. 2025. Registr u něj eviduje dvě veřejné funkce současně — poslanec (Kancelář Poslanecké sněmovny) a ministr průmyslu a obchodu (Ministerstvo průmyslu a obchodu) — a kontakty vykázané vůči kterékoli z nich vede pod jedním záznamem osoby; u jednotlivého kontaktu registr neuvádí, ke které z obou rolí se vztahoval.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-38"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "order": 51,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zápis do registru je evidenční údaj o veřejné funkci. Sám o sobě není\nzjištěním o jednání této osoby ani tvrzením o čemkoli nepatřičném.\n\nOvěřeno přímo na veřejné stránce osoby v registru 5. 8. 2026: obě role\n(poslanec, ministr průmyslu a obchodu) jsou vedeny u téhož záznamu a\nu každého z vykázaných kontaktů se u jména objevují obě zároveň —\nregistr tedy neumožňuje kontakt přiřadit jedné z nich."
+    }
+  ]
+}

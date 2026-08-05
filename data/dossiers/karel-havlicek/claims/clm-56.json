@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-56",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-56",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "text": "U 15 z 90 kontaktů registr uvádí i to, v čí zájem kontakt proběhl; jde o devět různých označení, nejčastěji „členská základna“ (6 kontaktů, vykázal Svaz průmyslu a dopravy České republiky) a Solární asociace, spolek (2). Dále se u jednotlivých kontaktů objevují Škoda Auto a.s., ALLEGRO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ, Asociace penzijních společností ČR, z.s., Asociace pro elektronickou komerci, z. s., Zelený kruh, České fórum pro rozvojovou spolupráci (FoRS) a označení „Sektor zemědělství, potravinářství a lesnictví“. U zbývajících 75 kontaktů klient u kontaktu uveden není.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-39"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "order": 56,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Údaj „v čí zájem“ je v registru nepovinný na úrovni jednotlivého\nkontaktu — proto je vyplněn jen u šestiny kontaktů a proto se mezi\noznačeními vyskytují i souhrnné popisy typu „členská základna“ nebo\n„Sektor zemědělství, potravinářství a lesnictví“ místo konkrétního\nzadavatele. Co z toho plyne pro dohledatelnost zájmu za kontaktem,\npopisuje [GAP-12](@/dossiers/karel-havlicek/gaps/gap-12.md).\n\nUvedení klienta u kontaktu není tvrzením, že klient něčeho dosáhl, ani\nže o kontaktu věděl kdokoli další — je to údaj, který o sobě vykázal\nsám lobbista."
+    }
+  ]
+}

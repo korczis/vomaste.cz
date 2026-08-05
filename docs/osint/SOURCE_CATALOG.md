@@ -65,7 +65,7 @@ Odpovídá na otázku „kam se podívat a čemu z toho věřit". Publikovaná p
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 658 záznamů v 107 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 660 záznamů v 108 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
@@ -113,6 +113,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 658 záznamů v 107 rodinách/out
 | Nejvyšší kontrolní úřad (nku.cz) | 2 | 1 | — |
 | Olomoucký deník | 2 | 1 | — |
 | Pražský deník | 2 | 1 | — |
+| Registr lobbování (RELOB) | 2 | 1 | — |
 | Ústavní soud ČR | 2 | 2 | — |
 | idnes-dividenda-2026-07 | 1 | 1 | — |
 | ACRI — Asociace podniků českého železničního průmyslu | 1 | 1 | — |

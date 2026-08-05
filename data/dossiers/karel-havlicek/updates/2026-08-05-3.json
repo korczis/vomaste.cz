@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/updates/2026-08-05-3",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-08-05-3",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "date": "2026-08-05",
+  "summary": "Nová kauza CASE-04 z primárního veřejného registru (T-067): Registr lobbování (RELOB, zákon č. 168/2025 Sb.) dotázán 5. 8. 2026 přes obě veřejná rozhraní — stránku lobbovaného (SRC-38) a rozšířené vyhledávání kontaktů (SRC-39). CLM-51 až CLM-58 popisují, co registr k této osobě obsahuje: dvojí evidovanou roli (poslanec i ministr průmyslu a obchodu), 90 vykázaných kontaktů za období 2025-2 a 2026-1, 43 vykazujících lobbistů v čele s Hospodářskou komorou ČR (13), 81 zprostředkovatelů, rozdělení předmětů a údaj „v čí zájem“. Všechna tvrzení nesou stav 1 ZDROJ — obě citace jsou týž registr, ne dva nezávislé hlasy. GAP-12 drží meze čtení: registr obsahuje jen ohlášené kontakty, vykázala je jen třetina zapsaných lobbistů, data pokrývají necelý rok od účinnosti zákona a z absence záznamu nelze usuzovat na absenci lobbování. Žádná nová hrana grafu — slovník vztahů nemá typ, který by ohlášený lobbistický kontakt vyjádřil bez tvrzení o vlivu.",
+  "addedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-51"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-52"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-53"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-54"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-55"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-56"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-57"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-58"
+    }
+  ],
+  "updatedClaims": [],
+  "addedGaps": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/gaps/GAP-12"
+    }
+  ],
+  "closedGaps": [],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-38"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-39"
+    }
+  ]
+}

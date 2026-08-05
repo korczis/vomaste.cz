@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-52",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-52",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "text": "Podle veřejného vyhledávání kontaktů v Registru lobbování k 5. 8. 2026 bylo vůči Karlu Havlíčkovi vykázáno 90 lobbistických kontaktů — 36 za vykazovací období 2025-2 (druhé pololetí 2025) a 54 za období 2026-1 (první pololetí 2026); za probíhající období 2026-2 nebyl k témuž datu vykázán žádný. Registr je živý: jeho veřejná stránka osoby uváděla později téhož dne 89 kontaktů (36 a 53), protože jeden dříve dohledatelný záznam už u této osoby nefiguroval.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-38"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-39"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "order": 52,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Obě čísla jsou stav k okamžiku dotazu, ne trvalá hodnota. Rozdíl mezi\nnimi vznikl v průběhu jediného dne (5. 8. 2026) a týká se jediného\nzáznamu; všechny ostatní údaje této kauzy — nejčastější lobbisté,\nzprostředkovatelé i rozdělení podle typu předmětu — vycházejí v obou\nstavech shodně. Proč se čísla registru vůbec mohou měnit a co z nich\nnelze vyvozovat, popisuje [GAP-12](@/dossiers/karel-havlicek/gaps/gap-12.md).\n\nVykazovací období registru jsou pololetní; kontakty se do nich hlásí\nzpětně, takže prázdné probíhající období 2026-2 neznamená nic víc než\nto, že lhůta pro jeho vykázání ještě neuplynula."
+    }
+  ]
+}
