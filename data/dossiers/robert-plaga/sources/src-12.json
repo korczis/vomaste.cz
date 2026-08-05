@@ -12,6 +12,7 @@
   "title": "SRC-12 — Deník.cz (VLTAVA LABE MEDIA)",
   "description": "Sporné testování žáků letos platí. Část dat inspekce smaže, zbytek ale zpracuje",
   "outlet": "Deník.cz (VLTAVA LABE MEDIA)",
+  "sourceFamily": "denik-cz",
   "sourceType": "zpravodajství",
   "url": "https://www.denik.cz/skolstvi-a-vzdelavani/cesko-skolstvi-testovani-zaku-5-a-9-trid-linspekce-data-smaze-nektera-si-necha.html",
   "published": "2026-05-26",

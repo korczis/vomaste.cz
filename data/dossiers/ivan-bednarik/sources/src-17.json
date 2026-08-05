@@ -12,6 +12,7 @@
   "title": "SRC-17 — Seznam Zprávy",
   "description": "Česko není Praha. Ministr dopravy odmítl požadavky z metropole",
   "outlet": "Seznam Zprávy",
+  "sourceFamily": "seznam-zpravy",
   "sourceType": "zpravodajství",
   "url": "https://www.seznamzpravy.cz/clanek/ekonomika-byznys-doprava-ministr-by-chtel-strop-pro-dalsi-druh-dopravy-a-neni-bez-sance-308778",
   "published": "2026-06-18",

@@ -12,6 +12,7 @@
   "title": "SRC-03 — Hlídač státu",
   "description": "Veřejný rejstřík sponzoringu: u Petra Vencálka evidován jeden dar 20 000 Kč jiné politické straně; žádný dar Klubu motoristů, z.s. ani Motoristům sobě evidován není.",
   "outlet": "Hlídač státu",
+  "sourceFamily": "hlidac-statu",
   "sourceType": "veřejný rejstřík / transparentní databáze",
   "url": "https://www.hlidacstatu.cz/osoba/petr-vencalek",
   "retrieved": "2026-08-01",

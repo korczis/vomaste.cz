@@ -12,6 +12,7 @@
   "title": "SRC-15 — Respekt",
   "description": "Jednou posudky o tom, proč dál dotovat Agrofert, zveřejníme, říká ministr Šebestyán. Kdy, to se prý uvidí",
   "outlet": "Respekt",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://www.respekt.cz/informacni-servis/jednou-posudky-o-tom-proc-dal-dotovat-agrofert-zverejnime-rika-ministr-sebestyan-kdy-to-se-pry-uvidi-2026-04-23-11-56",
   "published": "2026-04-23",
@@ -30,6 +31,5 @@
       "value": "**Jednou posudky o tom, proč dál dotovat Agrofert, zveřejníme, říká ministr Šebestyán. Kdy, to se prý uvidí**\n\nZpráva ČTK v Respektu. Ministr Šebestyán uvedl, že k zveřejnění právních analýz, o něž SZIF opřel rozhodnutí, podle něj jednou dojde, ale nezná smluvní ujednání mezi fondem a advokátními kancelářemi. Uvedl, že se s analýzami zatím sám neseznámil, protože jsou vedeny jako neveřejné, a že do rozhodování SZIF nebude zasahovat.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
     }
   ],
-  "order": 15,
-  "sourceFamily": "ctk"
+  "order": 15
 }

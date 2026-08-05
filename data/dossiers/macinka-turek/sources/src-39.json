@@ -12,6 +12,7 @@
   "title": "SRC-39 — Seznam Zprávy",
   "description": "Přehled velkých dárců voleb 2025 včetně dvou významných sponzorů Motoristů sobě.",
   "outlet": "Seznam Zprávy",
+  "sourceFamily": "seznam-zpravy",
   "sourceType": "zpravodajství",
   "url": "https://www.seznamzpravy.cz/clanek/volby-do-poslanecke-snemovny-dum-za-50-milionu-i-vazba-na-babise-kdo-je-nejvetsi-mecenas-letosnich-voleb-279644",
   "published": "2025-08-14",

@@ -12,6 +12,7 @@
   "title": "SRC-21 — Seznam Zprávy",
   "description": "Zkrácení školního roku komplikuje plány některým učitelům",
   "outlet": "Seznam Zprávy",
+  "sourceFamily": "seznam-zpravy",
   "sourceType": "zpravodajství",
   "url": "https://www.seznamzpravy.cz/clanek/kampus-april-o-den-drive-zkraceni-skolniho-roku-komplikuje-plany-nekterym-ucitelum-303150",
   "published": "2026-04-01",

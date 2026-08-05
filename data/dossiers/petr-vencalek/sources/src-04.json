@@ -12,6 +12,7 @@
   "title": "SRC-04 — Seznam Zprávy: Macinka nepřiznal svůj podíl v ukrajinské firmě (19. 12. 2025)",
   "description": "Seznam Zprávy nezávisle na Investigace.cz (SRC-01) potvrzuje, že GMR GAS UA LLC je ukrajinskou pobočkou české firmy vyrábějící regulátory tlaku plynu.",
   "outlet": "Seznam Zprávy",
+  "sourceFamily": "seznam-zpravy",
   "sourceType": "celostátní zpravodajství",
   "url": "https://www.seznamzpravy.cz/clanek/domaci-politika-macinka-nepriznal-svuj-podil-v-ukrajinske-firme-294724",
   "published": "2025-12-19",

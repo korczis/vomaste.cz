@@ -12,6 +12,7 @@
   "title": "SRC-02 — Seznam Zprávy",
   "description": "Mrázová utajuje pokutu za nepřiznanou půjčku. „S vámi se bavit nebudu,“ říká",
   "outlet": "Seznam Zprávy",
+  "sourceFamily": "seznam-zpravy",
   "sourceType": "zpravodajství",
   "url": "https://www.seznamzpravy.cz/clanek/domaci-kauzy-mrazova-utajuje-pokutu-za-nepriznanou-pujcku-s-vami-se-bavit-nebudu-rika-311653",
   "published": "2026-07-25",

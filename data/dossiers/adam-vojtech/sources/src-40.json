@@ -12,6 +12,7 @@
   "title": "SRC-40 — Seznam Zprávy, 16. 12. 2025",
   "description": "Deset let růstu, pak náhlý zlom. Proč se policie zajímá o implantace v Olomouci — první veřejné zveřejnění kauzy.",
   "outlet": "Seznam Zprávy",
+  "sourceFamily": "seznam-zpravy",
   "sourceType": "zpravodajství",
   "url": "https://www.seznamzpravy.cz/clanek/domaci-kauzy-deset-let-rustu-pak-nahly-zlom-proc-se-policie-zajima-o-implantace-v-olomouci-294133?noredirect=1",
   "published": "2025-12-16",

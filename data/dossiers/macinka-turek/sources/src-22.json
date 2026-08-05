@@ -12,6 +12,7 @@
   "title": "SRC-22 — Seznam Zprávy",
   "description": "Experti: samotné screenshoty nestačí jako důkaz, ale URL adresy originálů mohou pravost ověřit.",
   "outlet": "Seznam Zprávy",
+  "sourceFamily": "seznam-zpravy",
   "sourceType": "zpravodajství",
   "url": "https://www.seznamzpravy.cz/clanek/domaci-politika-kauza-turkovych-prispevku-samotne-screenshoty-nestaci-url-adresy-mohou-289039",
   "published": "2025-10-14",

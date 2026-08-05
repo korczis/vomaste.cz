@@ -14,7 +14,7 @@ data/dossiers/<slug>/{claims,sources,      data/dossiers/_shared/vocabularies/*.
   cases,gaps,relations,updates}/*.json     data/dossiers/_shared/context/vomaste-v1.jsonld
         │                                        │
         ▼                                        ▼
-  npm run data:validate  (tvar → reference R1–R7 → sémantika S1–S9 →
+  npm run data:validate  (tvar → reference R1–R7 → sémantika S1–S10 →
                           parita tabulky T1–T8 → JSON-LD expanze)
         │
         ▼
@@ -150,7 +150,7 @@ Tři místa, jinak je změna nedokončená:
 |---|---|---|
 | Tvar (typy, povinnost, formáty `@id`/ISO, uzavřené enumy) | `schemas/canonical/` + `scripts/data/validate-shape.mjs` (AJV 2020-12, strict) | `CLM-\d+`, `retrieved` ISO datum, claim mimo opinion ≥ 1 zdroj |
 | Referenční integrita R1–R7 | `scripts/data/validate-references.mjs` | unikátní `@id`, cesta ↔ `@id`, same-dossier reference, graf (uzly = existující entity, edges 1:1 s relations) |
-| Redakční sémantika S1–S9 | `scripts/data/validate-semantics.mjs` | S1 single = 1 zdroj; S2 corroborated ≥ 2 rodiny; S5/S6 autorizace; S7 subjektové uzly; S8 souvislost grafu (BFS); S9 provenance refs entit rozlišitelné v jejich dossierech |
+| Redakční sémantika S1–S10 | `scripts/data/validate-semantics.mjs` | S1 single = 1 zdroj; S2 corroborated ≥ 2 rodiny; S5/S6 autorizace; S7 subjektové uzly; S8 souvislost grafu (BFS); S9 provenance refs entit rozlišitelné v jejich dossierech; S10 týž vydavatel (outlet / registrovaná doména) nezakládá nezávislé doložení |
 | Parita tabulky tvrzení T1–T8 | `scripts/data/validate-registry-table.mjs` | řádka ↔ kanonický claim byte-verně, kotvy, URL dedup, T7 poznámka zdroje |
 | JSON-LD expanze | `scripts/data/validate-jsonld.mjs` | lokální context, safe mode, expandovatelnost každého záznamu |
 | Generovaný content | `lint:generated-content` + `data:check-generated:content` | adaptér = minimální obálka; content == staging |
@@ -158,7 +158,8 @@ Tři místa, jinak je změna nedokončená:
 | Autorizace subjektů (obsahová vrstva) | `validate:authorization` + `verify:authorization-log` | žádný dossier bez záznamu v AGENTS.md; log append-only |
 | JSON-LD poctivost + integrita výstupu | `verify:jsonld`, `verify:export`, `verify:full-pages`, `verify:anchors` | zákaz ClaimReview/ratingů, manifest sha256, citační otisky, kotvy |
 
-Grandfathered dluh: porušení S1–S4 zděděná 1:1 migrací žijí v allowlistu
+Grandfathered dluh: porušení evidenčních pravidel S1–S4 a S10 zděděná 1:1
+migrací žijí v allowlistu
 `data/dossiers/_shared/semantics-baseline.json` (degradace na warning);
 nové porušení mimo allowlist je chyba, S5/S6 grandfatherovat nelze.
 
@@ -174,6 +175,39 @@ Rodina se pojmenovává podle **původu**, ne podle vydavatele: přetisk
 zprávy ČTK v Blesku patří do rodiny `ctk`, ne `blesk`. Přesně proto
 rodina existuje — bez ní vypadá pět vydání jedné agenturní zprávy jako
 pět nezávislých redakcí a badge `CORROBORATED` lže.
+
+### S10: týž vydavatel nikdy nezakládá nezávislé doložení
+
+Rodina sama o sobě nestačí. `sourceFamily` je **volitelné** pole, takže
+dva články TÉHOŽ vydavatele mohly mít různé klíče — jeden vyplněnou
+rodinu (`family:ctk`), druhý jen fallback na outlet
+(`outlet:FORUM 24`) — a S2 je počítala jako dvě nezávislé redakce. Jedna
+redakce ale nepotvrzuje sama sebe.
+
+Pravidlo **S10** proto říká: dva zdroje se shodným `outlet`em **nebo**
+shodnou **registrovanou doménou** `url` jsou jeden nezávislý hlas **bez
+ohledu na `sourceFamily`**. Nezávislé doložení je až DVOJICE zdrojů,
+která se liší rodinou i vydavatelem. Primitiv sdílí S1, S2 i S4, takže
+totéž platí pro grafové hrany; severita se řídí hostitelským pravidlem
+(chyba u tvrzení, warning u hran) a S10 lze grandfatherovat baselinou
+jako ostatní evidenční pravidla.
+
+Dvě hranice, které pravidlo záměrně drží:
+
+- **Registrovaná doména** sjednocuje redakční subdomény jednoho
+  vydavatele (`domaci.hn.cz` i `archiv.hn.cz` → `hn.cz`,
+  `prazsky.denik.cz` → `denik.cz`), ale **ne** instituce pod sdíleným
+  veřejným sufixem — `edu.gov.cz` (MŠMT) a `mze.gov.cz` (MZe) zůstávají
+  dva vydavatelé (`MULTI_LABEL_PUBLIC_SUFFIXES`).
+- **Párově, ne tranzitivně.** Slučovat zdroje do skupin přes „sdílí
+  rodinu NEBO outlet" by přes rodinu `ctk` zřetězilo celý trh: vlastní
+  reportáž Blesku by splynula s ČT24 jen proto, že oba jinde přetiskují
+  ČTK — a pravdivá korroborace by zmizela. Otázka „existují dva
+  skutečně nezávislí vydavatelé?" je párová.
+
+Důsledek pro `status-single`: dva články jednoho vydavatele s rozdílně
+vyplněnou rodinou **jsou** správně `1 ZDROJ`. S1 proto nehlásí „2
+rodiny", ale ptá se na existenci nezávislé dvojice — stejně jako S2.
 
 Rodinu lze doplnit opakovatelně: `npm run sources:detect-family` stáhne
 stránky zdrojů s prázdnou rodinou a čte kredit původu ze strojových
