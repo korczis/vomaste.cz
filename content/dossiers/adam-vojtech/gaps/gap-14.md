@@ -1,0 +1,27 @@
++++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
+title = "GAP-14 — Kauza FNOL: pět tvrzení, u nichž se nezávislý doklad mimo agenturní rodinu ČTK nepodařilo najít"
+description = "CLM-06, CLM-08, CLM-28, CLM-30 a CLM-31 stojí na dvou a více citacích, které ale patří téže zdrojové rodině (ctk). Cílené hledání primárního dokladu k 2026-08-05 nic nepřineslo."
+template = "dossier-gap.html"
+weight = 14
+
+[extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/adam-vojtech/gaps/GAP-14"
+view_model = "generated/views/dossiers/adam-vojtech/gaps/gap-14.json"
+dossier = "adam-vojtech"
+record_type = "gap"
+lang = "cs"
+gap_id = "GAP-14"
++++
+Tato tvrzení jsou v evidenční třídě „≥2 citace, ale žádná nezávislá dvojice“: všechny citované zdroje jsou vydání téže agenturní zprávy ČTK. Mise T-070 pro ně hledala jeden nezávislý doklad z jiné rodiny i jiného vydavatele, přednostně primární dokument. **Nepodařilo se** — proto zůstávají na stavu `1 ZDROJ` a korroborace se nedopočítává.
+
+**Co bylo zkoušeno a s jakým výsledkem** (vše k 2026-08-05):
+
+- **[CLM-06](@/dossiers/adam-vojtech/claims/clm-06.md)** (právní kvalifikace prověřování, stovky pacientů, období 2015 – únor 2025): Vrchní státní zastupitelství v Olomouci ani Policie ČR k věci nezveřejnily vlastní sdělení; tisková zpráva Ministerstva zdravotnictví ze 17. 3. 2026 ([SRC-45](@/dossiers/adam-vojtech/sources/src-45.md)) kvalifikaci ani rozsah neuvádí a výslovně avizuje, že další podrobnosti ministerstvo poskytovat nebude. Nalezený text Týden.cz ze 14. 5. 2026, který kvalifikaci nese, je podepsaný ČTK — táž rodina, tedy žádný nový hlas.
+- **[CLM-08](@/dossiers/adam-vojtech/claims/clm-08.md)** (ministrův pokyn zřídit informační linku a vyžádaná komplexní zpráva): stránka „Informace pro pacienty s ICD“ na `kardiologie.fnol.cz` existenci linky +420 703 472 577 potvrzuje, ale **neuvádí**, že vznikla na pokyn ministra, ani nic o vyžádané zprávě s časovou osou; jádro tvrzení tedy nedokládá a přiřazovat ji by byla mechanická korroborace. Tisková zpráva ministerstva k únoru 2026 na `mzd.gov.cz` dohledána nebyla.
+- **[CLM-28](@/dossiers/adam-vojtech/claims/clm-28.md)** (Táborský si za indikacemi nadále stojí): oficiální sdělení FN Olomouc z 9. 7. 2026 ([SRC-42](@/dossiers/adam-vojtech/sources/src-42.md)) formuluje jen „podle názoru některých kolegů byl zastáncem velmi včasné a s nižším prahem prováděné implantace ICD“ — to není totéž co postoj samotného lékaře.
+- **[CLM-30](@/dossiers/adam-vojtech/claims/clm-30.md)** (k 10.–11. 7. 2026 nikdo obviněn): sdělení nemocnice mluví jen o „trestním řízení, které je v dané věci vedeno“; negativní skutečnost („nikdo nebyl obviněn“) navíc nelze primárním dokumentem doložit přímo — orgány činné v trestním řízení neexistenci obvinění nezveřejňují.
+- **[CLM-31](@/dossiers/adam-vojtech/claims/clm-31.md)** (kontrola VZP, implantace 2023–2025, předběžné výsledky na podzim 2026): tiskové centrum VZP na `vzp.cz` k věci žádnou tiskovou zprávu nepublikuje (výpis tiskových zpráv se generuje skriptem a k datu kontroly neobsahoval žádnou položku ke kauze); vyjádření mluvčí Viktorie Plívové existuje jen jako citace v agenturním zpravodajství, a atribuovaná citace primární dokument nenahrazuje.
+
+Tato mezera **není zjištěním žádným směrem** — zaznamenává jen, co se k datu kontroly nepodařilo doložit otevřeným zdrojem.

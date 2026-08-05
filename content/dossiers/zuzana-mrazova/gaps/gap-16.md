@@ -1,0 +1,25 @@
++++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
+title = "GAP-16 — Tři tvrzení, u nichž se nezávislý doklad nepodařilo najít"
+description = "CLM-20, CLM-27 a CLM-44 stojí na dvou a více citacích téže zdrojové rodiny; cílené hledání nezávislého, přednostně primárního dokladu k 2026-08-05 nic nepřineslo."
+template = "dossier-gap.html"
+weight = 16
+
+[extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/zuzana-mrazova/gaps/GAP-16"
+view_model = "generated/views/dossiers/zuzana-mrazova/gaps/gap-16.json"
+dossier = "zuzana-mrazova"
+record_type = "gap"
+lang = "cs"
+gap_id = "GAP-16"
++++
+Mise T-070 hledala u těchto tvrzení jeden doklad z jiné zdrojové rodiny **i** jiného vydavatele, přednostně primární dokument. **Nepodařilo se** — proto zůstávají na stavu `1 ZDROJ`.
+
+- **[CLM-20](@/dossiers/zuzana-mrazova/claims/clm-20.md)** (rozhodnutí nepravomocné, právní moc může nastat do tří týdnů od doručení): rozhodnutí Magistrátu města Mostu není veřejný dokument a magistrát k věci nevydal vlastní sdělení; ověřitelná je jen citace mluvčí Kláry Vydrové v agenturním zpravodajství. FORUM 24 ([SRC-08](@/dossiers/zuzana-mrazova/sources/src-08.md)) sice nepravomocnost potvrzuje nezávisle, ale **třítýdenní lhůtu neuvádí** — píše jen „Rozhodnutí navíc zatím není pravomocné“; korroborovat celé tvrzení tedy nemůže. Nepravomocnost samotnou nese i [CLM-04](@/dossiers/zuzana-mrazova/claims/clm-04.md), které díky FORUM 24 na `CORROBORATED` posunuto bylo.
+- **[CLM-27](@/dossiers/zuzana-mrazova/claims/clm-27.md)** (nájemní smlouva skončila 31. 3. 2026): nájemní smlouva je soukromoprávní dokument a město Bílina její konec nikde nezveřejňuje; usnesení zastupitelstva ani rady města se jí netýkají. Jediný další zdroj s tímtéž datem (Romea.cz, [SRC-26](@/dossiers/zuzana-mrazova/sources/src-26.md)) výslovně cituje jako svůj zdroj Seznam Zprávy — jde tedy o převzatou reprodukci téže investigace, ne o nezávislé zjištění (viz [GAP-14](@/dossiers/zuzana-mrazova/gaps/gap-14.md)). Tiscali.cz ([SRC-12](@/dossiers/zuzana-mrazova/sources/src-12.md)) uvádí jen obecné „na jaře 2026 se odstěhovala“, konkrétní datum nedokládá.
+- **[CLM-44](@/dossiers/zuzana-mrazova/claims/clm-44.md)** (citace k pozemku z 30. 4. 2026): výrok „Zahradu jsem kupovala, když tam už stály mobilní objekty“ nese Seznam Zprávy i Deník.cz z téhož dne, oba ale jako společný materiál ČTK a Seznam Zpráv (rodina `ctk`). Vlastní investigativní text Seznam Zpráv z 30. 4. 2026 ([SRC-15](@/dossiers/zuzana-mrazova/sources/src-15.md)) tuto citaci neobsahuje; jde navíc o téhož vydavatele, takže nezávislou dvojici s ním tvořit nelze (S10). Atribuovaná citace navíc primárním dokumentem doložitelná není — doložit lze jen to, že výrok padl.
+
+**Co je už pokryto jinde:** [CLM-28](@/dossiers/zuzana-mrazova/claims/clm-28.md), [CLM-29](@/dossiers/zuzana-mrazova/claims/clm-29.md) a [CLM-30](@/dossiers/zuzana-mrazova/claims/clm-30.md) (byt v Bílině, nájemné 42 Kč/m², exekuční statistika města) drží už dříve otevřená [GAP-14](@/dossiers/zuzana-mrazova/gaps/gap-14.md) — Romea.cz i Novinky.cz jsou potvrzené přebírky Seznam Zpráv. T-070 pro ně hledala statistický primární zdroj: projekt Mapa exekucí byl ukončen a nástupnická Mapa zadlužení (Institut prevence a řešení předlužení) publikuje data za obce jen přes klientskou aplikaci bez stabilní adresy detailu obce, takže citovatelný dokument k Bílině se získat nepodařilo.
+
+Tato mezera **není zjištěním žádným směrem** — zaznamenává jen, co se k datu kontroly nepodařilo doložit otevřeným zdrojem.
