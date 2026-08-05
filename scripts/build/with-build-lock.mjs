@@ -80,17 +80,23 @@ function processAlive(pid) {
   }
 }
 
-function readOwner() {
+function readOwner(pidFile) {
   try {
-    return JSON.parse(readFileSync(PID_FILE, "utf8"));
+    return JSON.parse(readFileSync(pidFile, "utf8"));
   } catch {
     return null;
   }
 }
 
-export function releaseLock() {
+// `lockDir` defaults to the real repo lock so every production call site
+// (pipeline.mjs, the CLI branch below) keeps working unchanged. Tests pass
+// an explicit temp `lockDir` instead — this module always resolves ROOT to
+// the actual checkout, so without this override a test would acquire and
+// release the SAME `.build-lock` a concurrent real build might be holding,
+// which is exactly the kind of collision this module exists to prevent.
+export function releaseLock({ lockDir = LOCK_DIR } = {}) {
   try {
-    rmSync(LOCK_DIR, { recursive: true, force: true });
+    rmSync(lockDir, { recursive: true, force: true });
   } catch {
     /* best effort — a leftover dir is reclaimable as stale */
   }
@@ -103,25 +109,26 @@ export function releaseLock() {
 // never explicitly calls releaseLock() (process.exit() mid-pipeline, Ctrl-C,
 // a supervisor's SIGTERM) — an unreleased lock is how this stops being a fix
 // and starts being a bug.
-export function acquireLock(label) {
+export function acquireLock(label, { lockDir = LOCK_DIR, timeoutMs = TIMEOUT_MS } = {}) {
   if (process.env.BUILD_LOCK_SKIP === "1") return;
 
-  const deadline = Date.now() + TIMEOUT_MS;
+  const pidFile = path.join(lockDir, "owner.json");
+  const deadline = Date.now() + timeoutMs;
   let announced = false;
 
   for (;;) {
     try {
-      mkdirSync(LOCK_DIR); // atomic: throws EEXIST if another build holds it
+      mkdirSync(lockDir); // atomic: throws EEXIST if another build holds it
       // NOTE: startedAt is written for staleness math only. It is not build
       // output and never reaches a generated artifact, so it cannot introduce
       // the kind of per-build churn the metrics manifest deliberately avoids.
-      writeFileSync(PID_FILE, JSON.stringify({ pid: process.pid, startedAt: Date.now(), command: label }));
+      writeFileSync(pidFile, JSON.stringify({ pid: process.pid, startedAt: Date.now(), command: label }));
       break;
     } catch (err) {
       if (err.code !== "EEXIST") throw err;
     }
 
-    const owner = readOwner();
+    const owner = readOwner(pidFile);
     const ownerGone = owner?.pid ? !processAlive(owner.pid) : true;
     const ageMs = owner?.startedAt ? Date.now() - owner.startedAt : Infinity;
 
@@ -130,7 +137,7 @@ export function acquireLock(label) {
         `with-build-lock: reclaiming stale lock (owner pid ${owner?.pid ?? "unknown"} ` +
           `${ownerGone ? "is gone" : `has held it for ${Math.round(ageMs / 60000)}m`}).`,
       );
-      releaseLock();
+      releaseLock({ lockDir });
       continue;
     }
 
@@ -145,10 +152,10 @@ export function acquireLock(label) {
 
     if (Date.now() > deadline) {
       console.error(
-        `with-build-lock: timed out after ${Math.round(TIMEOUT_MS / 1000)}s waiting for pid ${owner.pid}.\n` +
-          `If that process is dead, remove ${path.relative(ROOT, LOCK_DIR)} and retry.`,
+        `with-build-lock: timed out after ${Math.round(timeoutMs / 1000)}s waiting for pid ${owner.pid}.\n` +
+          `If that process is dead, remove ${path.relative(ROOT, lockDir)} and retry.`,
       );
-      process.exit(1);
+      throw new LockTimeoutError(`timed out waiting for lock held by pid ${owner.pid}`);
     }
 
     Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, POLL_MS);
@@ -158,7 +165,7 @@ export function acquireLock(label) {
   const release = () => {
     if (!released) {
       released = true;
-      releaseLock();
+      releaseLock({ lockDir });
     }
   };
   process.on("exit", release);
@@ -169,6 +176,8 @@ export function acquireLock(label) {
     });
   }
 }
+
+export class LockTimeoutError extends Error {}
 
 // --- CLI: wrap a single command's lifetime --------------------------------
 
@@ -197,7 +206,12 @@ if (isMain) {
   if (process.env.BUILD_LOCK_SKIP === "1") {
     process.exit(run());
   } else {
-    acquireLock(command);
+    try {
+      acquireLock(command);
+    } catch (err) {
+      if (err instanceof LockTimeoutError) process.exit(1);
+      throw err;
+    }
     process.exit(run());
   }
 }
