@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% import "macros/ui.html" as ui %}
+
+{#- Manifest projektu: jediná dlouhá, ručně psaná stránka mimo /koncepty/
+    a /dokumentace/.
+
+    Proč vlastní šablona a ne concept.html nebo docs-viewer.html:
+    concept.html vyžaduje zařazení do skupiny konceptů (data/concept-groups.toml)
+    a vykresluje drobečky přes /koncepty/; docs-viewer.html vykresluje řídicí
+    dokument z repozitáře (page.extra.source_file) a vede drobečky přes
+    /dokumentace/. Manifest není ani jedno: je to samostatný text vlastníka
+    projektu na vlastní routě /manifest/.
+
+    Text je kanonicky v content/manifest.md a NIKDE jinde — karta na titulní
+    straně čte svůj (odlišný) text z front matter téže stránky, takže landing
+    a manifest nemohou tvrdit dvě různé věci.
+
+    Obsah stránky (ToC) se NEVYPISUJE ručně: skládá se z page.toc, tedy ze
+    skutečných nadpisů se skutečnými kotvami. Ručně psaný seznam by po první
+    úpravě manifestu odkazoval na kotvy, které v textu nejsou — přesně ta vada,
+    kterou tenhle web u dossierů zakazuje. -#}
+
+{% block content %}
+<main class="mx-auto max-w-3xl px-6 py-12 text-white">
+  {{ ui::page_header(title=page.title, description=page.description, breadcrumb_items=[
+    "Domů::" ~ get_url(path="@/_index.md"),
+    page.title,
+  ]) }}
+
+  {%- if page.toc | length > 0 %}
+  <nav aria-labelledby="manifest-toc-heading" class="mb-10 rounded-xl border border-white/10 bg-white/[0.03] p-6">
+    <h2 id="manifest-toc-heading" class="font-mono text-xs font-bold uppercase tracking-widest text-white/55">Obsah manifestu</h2>
+    <ol class="mt-4 space-y-2 text-sm">
+      {%- for h in page.toc %}
+      <li><a href="#{{ h.id }}" class="text-white/70 underline decoration-white/20 underline-offset-2 hover:text-white hover:decoration-white/60">{{ h.title }}</a></li>
+      {%- endfor %}
+    </ol>
+    <p class="mt-4 text-xs leading-relaxed text-white/50">
+      Každý bod má vlastní kotvu, takže se dá citovat samostatně —
+      například <code class="rounded bg-white/5 px-1.5 py-0.5">/manifest/#bod-9</code>.
+    </p>
+  </nav>
+  {%- endif %}
+
+  <article class="dossier-prose">
+    {{ page.content | safe }}
+  </article>
+
+  {#- Manifest slibuje vlastnosti systému; odkazy vedou tam, kde jsou ty
+      vlastnosti popsané konkrétně (a kde je napsané, co zatím tooling
+      nevynucuje). Bez toho by manifest byl jen prohlášení o sobě samém. -#}
+  <nav aria-labelledby="manifest-related-heading" class="mt-12 border-t border-white/10 pt-6">
+    <h2 id="manifest-related-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Jak se to dá zkontrolovat</h2>
+    <ul class="flex flex-wrap gap-2 text-sm">
+      <li><a href="{{ get_url(path='@/koncepty/_index.md') | safe }}" class="rounded-lg border border-white/15 px-3 py-1.5 text-white/70 no-underline hover:border-white/30 hover:text-white">Koncepty a metodika</a></li>
+      <li><a href="{{ get_url(path='@/koncepty/registr-mezer.md') | safe }}" class="rounded-lg border border-white/15 px-3 py-1.5 text-white/70 no-underline hover:border-white/30 hover:text-white">Registr mezer</a></li>
+      <li><a href="{{ get_url(path='@/koncepty/nezavisle-dolozeni.md') | safe }}" class="rounded-lg border border-white/15 px-3 py-1.5 text-white/70 no-underline hover:border-white/30 hover:text-white">Nezávislé doložení</a></li>
+      <li><a href="{{ get_url(path='@/koncepty/forkovatelnost.md') | safe }}" class="rounded-lg border border-white/15 px-3 py-1.5 text-white/70 no-underline hover:border-white/30 hover:text-white">Forkovatelnost</a></li>
+      <li><a href="{{ get_url(path='@/dokumentace/konstituce.md') | safe }}" class="rounded-lg border border-white/15 px-3 py-1.5 text-white/70 no-underline hover:border-white/30 hover:text-white">Konstituce projektu</a></li>
+      <li><a href="{{ get_url(path='@/dokumentace/agents.md') | safe }}" class="rounded-lg border border-white/15 px-3 py-1.5 text-white/70 no-underline hover:border-white/30 hover:text-white">Autorizační log</a></li>
+    </ul>
+  </nav>
+
+  {{ ui::back_link_footer(url=get_url(path="@/_index.md"), label="Zpět na úvod") }}
+</main>
+{% endblock content %}

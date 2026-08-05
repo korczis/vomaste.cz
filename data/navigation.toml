@@ -99,6 +99,17 @@ match_prefix = "/dokumentace/"
 order = 19
 icon = "M4 4a2 2 0 0 1 2-2h9l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4Z M15 2v5h5 M8 13h8 M8 17h5"
 
+# Manifest projektu (content/manifest.md). Vlastní top-level položka, ne
+# podstránka dokumentace: je to text vlastníka o tom, proč projekt existuje,
+# ne řídicí dokument vykreslovaný ze souboru v repozitáři.
+[[items]]
+id = "manifest"
+label = "Manifest"
+path = "@/manifest.md"
+match_prefix = "/manifest/"
+order = 20
+icon = "M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1Z M4 22v-7"
+
 # --- Per-dossier registry template -----------------------------------------
 # Applied to EVERY dossier by the generator, in this order, but only for the
 # registries that actually exist under content/dossiers/<slug>/. Label and icon
