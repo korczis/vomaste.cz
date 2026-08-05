@@ -1,0 +1,17 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": { "@id": "https://vomaste.cz/id/dossiers/martin-pavlik" },
+  "text": "Veřejný rejstříkový profil Podnikatel.cz uvádí Martina Pavlíka jako jednatele společnosti MEDIA PROJECT CZ s.r.o.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [{ "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/sources/SRC-01" }],
+  "subjects": ["martin-pavlik"],
+  "order": 1,
+  "content": [{ "type": "markdown", "value": "Tvrzení reprodukuje pouze roli zobrazenou na určeném veřejném rejstříkovém profilu. Nevyjadřuje závěr o skutečném rozsahu činnosti společnosti, o rozhodování Martina Pavlíka ani o jakémkoli pochybení. Protože je zatím doloženo jediným rejstříkovým agregátorem, zůstává ve stavu 1 ZDROJ." }]
+}
