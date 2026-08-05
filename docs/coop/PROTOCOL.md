@@ -57,6 +57,40 @@ COOP_AGENT_ID=W-1 claude             # nová instance Claude Code v worktree
 Po mergnutí: `scripts/coop/coop.sh wt-done T-001` (odstraní worktree i
 větev). Worktree se nikdy nerecykluje na jiný task.
 
+### Riziko hlavního checkoutu: rozdělaná práce může beze stopy zmizet
+
+Pozorováno živě 2026-08-06: rozdělané (ne ještě commitnuté) úpravy dvou
+souborů v hlavním checkoutu (`/Users/korczis/dev/vomaste.cz`) během
+několika minut úplně zmizely — `git status` najednou hlásil čistý strom
+přesně odpovídající `HEAD`, ve chvíli, kdy se tam objevil nový, nesouvisející
+commit z jiné souběžné session. Přesný příkaz, který k tomu vedl, nebyl
+zjištěn (žádost o `git reflog`/historii shellu jiné instance není k
+dispozici) — ale výsledek odpovídá tomu, co udělá `git checkout -- <soubor>`,
+`git reset --hard` nebo `git stash` bez následného `pop` spuštěný přímo
+v tomhle checkoutu, zatímco v něm leží něčí neuncommitnutá práce. Na
+rozdíl od konfliktů popsaných výš (rebase/merge/build) tohle **není
+konflikt, který by cokoliv nahlásilo** — žádná chybová hláška, žádný
+build fail, jen tichá ztráta.
+
+Zmírnění, dokud hlavní checkout sdílí víc než jedna instance zároveň:
+
+- Necommitnutou práci tu nenechávej ležet dlouho. Malý, rychle
+  commitnutý krok přežije; hodina rozpracovaných úprav ve working tree
+  je vystavená riziko celou tu hodinu.
+- Před jakýmkoliv `git checkout`/`reset`/`stash`/`clean` v hlavním
+  checkoutu zkontroluj `git status` a zvaž, jestli by ses tou operací
+  nepřehnal přes cizí rozdělanou práci — stejné pravidlo, jaké tenhle
+  agent (Claude Code) dostává jako obecnou instrukci, platí tu
+  zdvojnásobeně, protože „cizí" tu může být jiná souběžná instance, ne
+  jen historie z minula.
+- Pokud potřebuješ delší rozpracovanou úpravu, zvaž dočasný worktree i
+  pro práci, která by jinak šla přímo do hlavního checkoutu jako ORCH
+  (viz sekce výš) — je to jediná záruka, kterou git nabízí proti přesně
+  tomuhle.
+- Ztracenou práci lze často rekonstruovat z konverzačního kontextu
+  agenta, který ji psal (přesně tak se to řešilo 2026-08-06) — ale to je
+  záchranná síť, ne omluva to riskovat znovu.
+
 ## Sběrnice zpráv (serializace)
 
 Instance spolu mluví přes **append-only NDJSON log** ve sdíleném git
