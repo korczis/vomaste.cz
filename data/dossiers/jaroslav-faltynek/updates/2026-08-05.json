@@ -1,0 +1,64 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/updates/2026-08-05",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-08-05",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek"
+  },
+  "date": "2026-08-05",
+  "summary": "Dohledány a přečteny primární parlamentní záznamy a jedno nezávislé redakční ověření. Nové zdroje: SRC-10 (Seznam Zprávy 3. 5. 2018, vlastní zpravodajství s vyjádřením náměstkyně pražského městského státního zástupce přímo pro redakci), SRC-11 a SRC-12 (stenografický zápis 60. schůze PS z 6. 9. 2017 — zpráva mandátového a imunitního výboru a vyhlášení hlasování č. 28 a 29), SRC-13 (úřední záznam individuálních hlasů poslance) a SRC-14 až SRC-16 (úřední profily poslance za období 2013–2017, 2017–2021 a 2021–2025). ČTYŘI TVRZENÍ POVÝŠENA NA CORROBORATED: CLM-02, CLM-03 a CLM-04 (dosud tři zdroje jedné rodiny ČTK; Seznam Zprávy je nezávislý vydavatel s vlastním ověřením) a CLM-10 (Deník.cz + primární stenozáznam PS). VĚCNÉ OPRAVY PROTI PRIMÁRNÍM DOKUMENTŮM: (1) CLM-10 uvádělo, že Sněmovna „zbavila imunity a vydala k trestnímu stíhání“ — úřední znění usnesení zní „vyslovuje souhlas s trestním stíháním“; imunita se neruší, odstraňuje se procesní překážka. Doplněny počty přihlášených (134, resp. 133), které dosud chyběly. (2) CLM-02 a CLM-04 mluvily o zrušení „trestního stíhání“ — podle vyjádření státního zastupitelství bylo zrušeno USNESENÍ O ZAHÁJENÍ trestního stíhání poté, co státní zástupce vyhověl stížnosti proti obvinění; doplněno přesné datum 3. 5. 2018. (3) CLM-03 doplněno o rozsah: zamítnuty byly stížnosti Babiše a dalších šesti obviněných. (4) Hrana edge-faltynek-capihnizdo nesla popisek „stíhán 2015–2018“ — pro rok 2015 neexistuje doklad a popisek byl nahrazen doloženými daty (souhlas Sněmovny 6. 9. 2017, zrušení usnesení 3. 5. 2018). Nová tvrzení: CLM-11 (žádost policie doručena 10. 8. 2017, jednomyslná usnesení MIV č. 214 a 215 z 30. 8. 2017), CLM-12 (Faltýnek hlasoval pro vlastní vydání, u Babiše se zdržel), CLM-13 (přesná data mandátů a funkcí napříč třemi předchozími volebními obdobími — doklad k tomu, že nikdy nebyl členem vlády, a k rozdílu mezi předsedou a místopředsedou klubu i výboru). GAP-01 zpřesněna, ale zůstává otevřená — věcné odůvodnění rozhodnutí státního zástupce se nepodařilo dohledat ani nyní. GAP-02 přejmenována a z poloviny uzavřena: vydání Sněmovnou 2017 je doloženo primárně, obvinění z roku 2015 doloženo NENÍ a přehled je netvrdí; stenozáznam zmiňuje jen „první úkony v trestním řízení“ bez uvedení roku, což je procesně něco jiného než obvinění osoby. Rámování beze změny: Faltýnek nebyl odsouzen, před soud jako obžalovaný nešel a zrušení není rozhodnutím o vině ani o nevině.",
+  "addedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-13"
+    }
+  ],
+  "updatedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-10"
+    }
+  ],
+  "addedGaps": [],
+  "closedGaps": [],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-14"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-15"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-16"
+    }
+  ]
+}

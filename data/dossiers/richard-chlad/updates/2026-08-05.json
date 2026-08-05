@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/richard-chlad/updates/2026-08-05",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-08-05",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/richard-chlad"
+  },
+  "date": "2026-08-05",
+  "summary": "Dohledány a přečteny primární dokumenty Úřadu pro dohled nad hospodařením politických stran a politických hnutí, které dosud v dossieru chyběly: výroční finanční zpráva hnutí Motoristé sobě za rok 2025 (SRC-04), zpráva o financování volební kampaně pro sněmovní volby 2025 (SRC-05), výroční finanční zpráva za rok 2024 (SRC-06), přehled VFZ 2025 se stavem zpracování (SRC-07) a registr uložených sankcí (SRC-08). TŘI VĚCNÉ OPRAVY PROTI PRIMÁRNÍMU DOKUMENTU: (1) CLM-01 mluvilo o „darech“ v celkové výši 638 864 Kč, jejichž částka „již zahrnuje nepeněžní plnění“ — úřední zpráva všech pět položek označuje jako BEZÚPLATNÁ (nepeněžitá) PLNĚNÍ a žádný peněžitý dar od této osoby za rok 2025 neuvádí; jde tedy o nepeněžitá plnění v celé výši, claim přeformulován podle dokumentu. (2) Doplněny doslovné popisy položek podle dokumentu („půjčení sportovních automobilů NA AKCE“, „propůjčení vozů Bugatti NA AKCI“, „výroba a instalace billboardu, PRONÁJEM REKLAMNÍ PLOCHY“). (3) SRC-01 (Hlídač státu) přeznačen ze sourceFamily „hlidac-statu“ na „udhpsh“ — rejstřík přebírá úřední evidenci včetně doslovných popisů položek, rodina se pojmenovává podle původu, ne podle vydavatele; CLM-01 proto zůstává 1 ZDROJ i po přidání primárního dokumentu, protože dva odkazy na tutéž evidenci nejsou dvě nezávislé redakce. Nová tvrzení: CLM-09 (plnění vykázána volební kampani, data 1. 8. a 1. 9. 2025), CLM-10 (dva dary po 50 000 Kč za rok 2024 jsou vedeny u jmenovce s jiným ročníkem narození), CLM-11 („zpráva je úplná“ ≠ kontrola správnosti), CLM-12 (žádná sankce ani kontrolní protokol k VFZ 2025). GAP-01 zúžena (evidovaná částka je nově přesně vymezena, Chladovy vlastní údaje protějšek nemají), GAP-02 z velké části zodpovězena (vykázáno bylo dvakrát a včas; přezkum věcné správnosti doložen není), nově GAP-03 (komu patří dary z roku 2024). Rámování beze změny: poskytnout straně dar nebo bezúplatné plnění je legální a žádný citovaný zdroj Chladovi nevytýká protiprávní jednání. Osoba s ročníkem 1992 se nestává subjektem ničeho; Radovan Krejčíř zůstává mimo témata i mimo graf.",
+  "addedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-12"
+    }
+  ],
+  "updatedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-01"
+    }
+  ],
+  "addedGaps": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/gaps/GAP-03"
+    }
+  ],
+  "closedGaps": [],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/sources/SRC-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/sources/SRC-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/sources/SRC-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/sources/SRC-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/sources/SRC-08"
+    }
+  ]
+}

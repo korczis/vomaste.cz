@@ -9,15 +9,18 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek"
   },
-  "text": "Státní zástupce Jaroslav Šaroch z Městského státního zastupitelství v Praze podle citovaného zpravodajství zrušil v květnu 2018 trestní stíhání Jaroslava Faltýnka v kauze Čapí hnízdo poté, co vyhověl jeho stížnosti proti obvinění; současně zrušil stíhání tří dalších obviněných",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "text": "Státní zástupce Jaroslav Šaroch z Městského státního zastupitelství v Praze vyhověl 3. května 2018 stížnosti Jaroslava Faltýnka proti obvinění a zrušil usnesení o zahájení jeho trestního stíhání v kauze Čapí hnízdo; současně bylo zrušeno usnesení o zahájení trestního stíhání tří dalších obviněných",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-02"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-10"
     }
   ],
   "subjects": [

@@ -17,7 +17,7 @@
     "@id": "https://vomaste.cz/id/entities/capi-hnizdo"
   },
   "relationType": "SUBJECT_OF_PROCEEDING",
-  "label": "stíhán 2015–2018; stíhání zrušeno státním zástupcem",
+  "label": "Sněmovna vyslovila souhlas se stíháním 6. 9. 2017; usnesení o zahájení stíhání zrušil státní zástupce 3. 5. 2018",
   "status": "contextual",
   "claims": [
     {
@@ -25,11 +25,26 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-11"
     }
   ],
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-12"
     }
   ],
   "subjects": [],
