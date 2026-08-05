@@ -3,7 +3,7 @@
 title = "Miloš Táborský"
 template = "entity.html"
 weight = 269
-description = "Kontextová entita — Bývalý přednosta kardiologické kliniky FN Olomouc, nyní vede kardiologii v Ústí n. L.; nemocnice mu připsala odpovědnost za sporné implantace ICD, on za indikacemi…"
+description = "Kontextová entita — Bývalý přednosta kardiologické kliniky FN Olomouc, nyní vede kardiologii v Ústí n."
 
 [extra]
 generated = true

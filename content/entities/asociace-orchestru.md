@@ -3,7 +3,7 @@
 title = "Asociace orchestrů"
 template = "entity.html"
 weight = 72
-description = "Kontextová entita — Profesní asociace reagující na škrt 100 mil. Kč symfonickým orchestrům a sborům v rozpočtu MK 2026. Uvedena, protože se jmenovitě objevuje v citovaném obsahu…"
+description = "Kontextová entita — Profesní asociace reagující na škrt 100 mil. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

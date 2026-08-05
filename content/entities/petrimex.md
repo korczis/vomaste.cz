@@ -3,7 +3,7 @@
 title = "Petrimex"
 template = "entity.html"
 weight = 345
-description = "Kontextová entita — Zaměstnavatel Babiše 1985–1991 dle oficiálního životopisu na webu Úřadu vlády. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů…"
+description = "Kontextová entita — Zaměstnavatel Babiše 1985–1991 dle oficiálního životopisu na webu Úřadu vlády."
 
 [extra]
 generated = true

@@ -3,7 +3,7 @@
 title = "Zdeněk Kasal"
 template = "entity.html"
 weight = 456
-description = "Kontextová entita — První náměstek nejvyššího státního zástupce; oznámil zamítnutí stížností v bitcoinové kauze. Uvedena, protože se jmenovitě objevuje v citovaném obsahu…"
+description = "Kontextová entita — První náměstek nejvyššího státního zástupce; oznámil zamítnutí stížností v bitcoinové kauze."
 
 [extra]
 generated = true

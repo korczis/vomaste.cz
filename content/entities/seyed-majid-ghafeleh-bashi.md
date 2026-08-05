@@ -3,7 +3,7 @@
 title = "Seyed Majid Ghafeleh Bashi"
 template = "entity.html"
 weight = 376
-description = "Kontextová entita — Íránský velvyslanec v ČR; setkání s Turkem, Konečnou a Klausem ml. dokumentované Neovlivní.cz. Uvedena, protože se jmenovitě objevuje v citovaném obsahu…"
+description = "Kontextová entita — Íránský velvyslanec v ČR; setkání s Turkem, Konečnou a Klausem ml. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

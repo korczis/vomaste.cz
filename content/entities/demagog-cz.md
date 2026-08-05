@@ -3,7 +3,7 @@
 title = "Demagog.cz"
 template = "entity.html"
 weight = 105
-description = "Kontextová entita — Fact-checkingový projekt; ověřil Šebestyánův výrok o zastavení investičních dotací jako pravdivý. Uvedena, protože se jmenovitě objevuje v citovaném obsahu…"
+description = "Kontextová entita — Fact-checkingový projekt; ověřil Šebestyánův výrok o zastavení investičních dotací jako pravdivý."
 
 [extra]
 generated = true

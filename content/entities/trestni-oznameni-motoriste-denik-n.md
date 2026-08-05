@@ -3,7 +3,7 @@
 title = "Trestní oznámení Motoristů sobě na Deník N (2025–2026)"
 template = "entity.html"
 weight = 414
-description = "Kontextová entita — Podáno 12. 10. 2025 pro pomluvu a křivé obvinění (argument o AI/photoshopu); policie 28. 7. 2026 odložila jako nedůvodné — zveřejnění informací nebylo trestným…"
+description = "Kontextová entita — Podáno 12. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

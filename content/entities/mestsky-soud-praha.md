@@ -3,7 +3,7 @@
 title = "Městský soud v Praze"
 template = "entity.html"
 weight = 258
-description = "Kontextová entita — Soud první instance v kauze Čapí hnízdo i ve správních sporech o dotace SZIF; v obsahu též jako „Pražský městský soud“. Uvedena, protože se jmenovitě objevuje v…"
+description = "Kontextová entita — Soud první instance v kauze Čapí hnízdo i ve správních sporech o dotace SZIF; v obsahu též jako „Pražský městský soud“."
 
 [extra]
 generated = true

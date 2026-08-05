@@ -3,7 +3,7 @@
 title = "Ředitelství vodních cest"
 template = "entity.html"
 weight = 363
-description = "Kontextová entita — Příjemce 1,3 mld. Kč z rozpočtu SFDI 2026; okrajová zmínka. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (ivan-bednarik). Tato…"
+description = "Kontextová entita — Příjemce 1,3 mld. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

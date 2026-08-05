@@ -3,7 +3,7 @@
 title = "National War College (Washington)"
 template = "entity.html"
 weight = 297
-description = "Kontextová entita — Americká vojenská vysoká škola; uvedena v oficiálním kariérním profilu Jaromíra Zůny. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných…"
+description = "Kontextová entita — Americká vojenská vysoká škola; uvedena v oficiálním kariérním profilu Jaromíra Zůny."
 
 [extra]
 generated = true

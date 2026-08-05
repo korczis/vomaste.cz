@@ -3,7 +3,7 @@
 title = "Medical Investments"
 template = "entity.html"
 weight = 255
-description = "Kontextová entita — Firma Borise Šťastného (entita stastny existuje), přes kterou daroval Motoristům sobě cca 5 mil. Kč na kampaň 2025. Uvedena, protože se jmenovitě objevuje v…"
+description = "Kontextová entita — Firma Borise Šťastného (entita stastny existuje), přes kterou daroval Motoristům sobě cca 5 mil."
 
 [extra]
 generated = true

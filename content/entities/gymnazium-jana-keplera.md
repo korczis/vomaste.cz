@@ -3,7 +3,7 @@
 title = "Gymnázium Jana Keplera"
 template = "entity.html"
 weight = 139
-description = "Kontextová entita — Škola pedagoga Roberta Müllera citovaného ke zkrácení školního roku. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů…"
+description = "Kontextová entita — Škola pedagoga Roberta Müllera citovaného ke zkrácení školního roku. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

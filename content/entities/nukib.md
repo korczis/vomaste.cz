@@ -3,7 +3,7 @@
 title = "NÚKIB"
 template = "entity.html"
 weight = 307
-description = "Kontextová entita — Národní úřad pro kybernetickou a informační bezpečnost — o nálezu zařízení nevěděl, nebyl mu nahlášen. Uvedena, protože se jmenovitě objevuje v citovaném obsahu…"
+description = "Kontextová entita — Národní úřad pro kybernetickou a informační bezpečnost — o nálezu zařízení nevěděl, nebyl mu nahlášen."
 
 [extra]
 generated = true

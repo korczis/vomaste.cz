@@ -3,7 +3,7 @@
 title = "Tomáš Pospiszyl"
 template = "entity.html"
 weight = 405
-description = "Kontextová entita — Rektor Akademie výtvarných umění; kritik zrušení výběrového řízení na ředitele NGP. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných…"
+description = "Kontextová entita — Rektor Akademie výtvarných umění; kritik zrušení výběrového řízení na ředitele NGP."
 
 [extra]
 generated = true

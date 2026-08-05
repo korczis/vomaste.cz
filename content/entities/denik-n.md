@@ -3,7 +3,7 @@
 title = "Deník N"
 template = "entity.html"
 weight = 107
-description = "Kontextová entita — Výjimka z pravidla o vydavatelích: Deník N je přímým aktérem kauzy 2025 — publikoval investigaci o smazaných příspěvcích a Motoristé na něj a autory podali trestní…"
+description = "Kontextová entita — Výjimka z pravidla o vydavatelích: Deník N je přímým aktérem kauzy 2025 — publikoval investigaci o smazaných příspěvcích a Motoristé na něj a autory podali trestní oznámení…"
 
 [extra]
 generated = true

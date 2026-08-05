@@ -3,7 +3,7 @@
 title = "Lenka Němcová"
 template = "entity.html"
 weight = 230
-description = "Kontextová entita — Právnička citovaná Českou justicí ke stavebnímu zákonu; soukromá osoba jmenovaná obsahem. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných…"
+description = "Kontextová entita — Právnička citovaná Českou justicí ke stavebnímu zákonu; soukromá osoba jmenovaná obsahem."
 
 [extra]
 generated = true

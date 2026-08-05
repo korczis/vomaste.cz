@@ -3,7 +3,7 @@
 title = "Agro Jevišovice"
 template = "entity.html"
 weight = 54
-description = "Kontextová entita — Firma skupiny Agrofert — žalobkyně ve správních sporech o ukončené dotace SZIF (v SRC-42 psáno i „SVP“/variantně). Uvedena, protože se jmenovitě objevuje v…"
+description = "Kontextová entita — Firma skupiny Agrofert — žalobkyně ve správních sporech o ukončené dotace SZIF (v SRC-42 psáno i „SVP“/variantně)."
 
 [extra]
 generated = true

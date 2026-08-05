@@ -3,7 +3,7 @@
 title = "Ministerstvo práce a sociálních věcí ČR"
 template = "entity.html"
 weight = 276
-description = "Kontextová entita — Adresát podnětu k prověření OSPOD; zřídilo Komisi pro přezkum nepřirozených úmrtí dětí. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných…"
+description = "Kontextová entita — Adresát podnětu k prověření OSPOD; zřídilo Komisi pro přezkum nepřirozených úmrtí dětí."
 
 [extra]
 generated = true

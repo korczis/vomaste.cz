@@ -3,7 +3,7 @@
 title = "Veronika Vrecionová"
 template = "entity.html"
 weight = 431
-description = "Kontextová entita — Europoslankyně ODS; kritička jmenování potravinového ombudsmana. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů…"
+description = "Kontextová entita — Europoslankyně ODS; kritička jmenování potravinového ombudsmana. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

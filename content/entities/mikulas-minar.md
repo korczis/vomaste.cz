@@ -3,7 +3,7 @@
 title = "Mikuláš Minář"
 template = "entity.html"
 weight = 267
-description = "Kontextová entita — Předseda spolku Milion chvilek pro demokracii; řečník demonstrace proti Klempířovu zákonu (24. 5. 2026). Uvedena, protože se jmenovitě objevuje v citovaném obsahu…"
+description = "Kontextová entita — Předseda spolku Milion chvilek pro demokracii; řečník demonstrace proti Klempířovu zákonu (24."
 
 [extra]
 generated = true

@@ -3,7 +3,7 @@
 title = "Radek Mátl"
 template = "entity.html"
 weight = 358
-description = "Kontextová entita — Generální ředitel ŘSD; varoval, že nekryté finance brání podpisu smluv a ohrožují rozestavěné stavby. Uvedena, protože se jmenovitě objevuje v citovaném obsahu…"
+description = "Kontextová entita — Generální ředitel ŘSD; varoval, že nekryté finance brání podpisu smluv a ohrožují rozestavěné stavby."
 
 [extra]
 generated = true

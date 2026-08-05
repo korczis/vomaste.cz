@@ -3,7 +3,7 @@
 title = "Kateřina Konečná"
 template = "entity.html"
 weight = 195
-description = "Kontextová entita — Setkala se spolu s Turkem a Václavem Klausem ml. s íránským velvyslancem; schůzku potvrdila a bagatelizovala. Uvedena, protože se jmenovitě objevuje v citovaném…"
+description = "Kontextová entita — Setkala se spolu s Turkem a Václavem Klausem ml. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

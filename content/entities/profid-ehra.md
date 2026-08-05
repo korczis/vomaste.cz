@@ -3,7 +3,7 @@
 title = "PROFID EHRA (mezinárodní klinická studie)"
 template = "entity.html"
 weight = 351
-description = "Kontextová entita — Klinická studie, kterou FN Olomouc opustila v únoru 2025; policie prověřuje nesrovnalosti mezi dokumentací a hlášenými výsledky. Uvedena, protože se jmenovitě…"
+description = "Kontextová entita — Klinická studie, kterou FN Olomouc opustila v únoru 2025; policie prověřuje nesrovnalosti mezi dokumentací a hlášenými výsledky."
 
 [extra]
 generated = true

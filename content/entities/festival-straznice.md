@@ -3,7 +3,7 @@
 title = "Mezinárodní folklorní festival Strážnice"
 template = "entity.html"
 weight = 128
-description = "Kontextová entita — Festival, na němž byl Klempíř v červnu 2026 vypískán publikem. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (oto-klempir). Tato…"
+description = "Kontextová entita — Festival, na němž byl Klempíř v červnu 2026 vypískán publikem. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

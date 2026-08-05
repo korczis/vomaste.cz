@@ -3,7 +3,7 @@
 title = "Václav Pláteník"
 template = "entity.html"
 weight = 428
-description = "Kontextová entita — Poslanec KDU-ČSL; podpořil zrušení limitu benefitů, vytkl absenci stomatologie. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů…"
+description = "Kontextová entita — Poslanec KDU-ČSL; podpořil zrušení limitu benefitů, vytkl absenci stomatologie."
 
 [extra]
 generated = true

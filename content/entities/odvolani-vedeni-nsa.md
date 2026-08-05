@@ -3,7 +3,7 @@
 title = "Odvolání vedení Národní sportovní agentury (prosinec 2025)"
 template = "entity.html"
 weight = 312
-description = "Kontextová entita — Bleskové odvolání Šebka a Horáka den po jmenování vlády, pověření Jebouska a následné jmenování Kováře novým předsedou NSA. Uvedena, protože se jmenovitě objevuje v…"
+description = "Kontextová entita — Bleskové odvolání Šebka a Horáka den po jmenování vlády, pověření Jebouska a následné jmenování Kováře novým předsedou NSA."
 
 [extra]
 generated = true

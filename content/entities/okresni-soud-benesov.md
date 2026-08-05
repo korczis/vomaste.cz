@@ -3,7 +3,7 @@
 title = "Okresní soud v Benešově"
 template = "entity.html"
 weight = 314
-description = "Kontextová entita — Soud, jehož soudkyně čelí kárné žalobě ministra Tejce. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (jeronym-tejc). Tato…"
+description = "Kontextová entita — Soud, jehož soudkyně čelí kárné žalobě ministra Tejce. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

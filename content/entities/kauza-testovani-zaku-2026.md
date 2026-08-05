@@ -3,7 +3,7 @@
 title = "Kauza plošného testování žáků 5. a 9. tříd (2026)"
 template = "entity.html"
 weight = 213
-description = "Kontextová entita — Testování ČŠI s citlivými dotazy na duševní zdraví a socioekonomický status; Plaga je 25. 5. 2026 zastavil. Uvedena, protože se jmenovitě objevuje v citovaném…"
+description = "Kontextová entita — Testování ČŠI s citlivými dotazy na duševní zdraví a socioekonomický status; Plaga je 25."
 
 [extra]
 generated = true

@@ -3,7 +3,7 @@
 title = "Hemmont"
 template = "entity.html"
 weight = 143
-description = "Kontextová entita — Společnost, v jejímž představenstvu je Lubor Novák; vlastněná hongkongskou Hammerton Capital. Uvedena, protože se jmenovitě objevuje v citovaném obsahu…"
+description = "Kontextová entita — Společnost, v jejímž představenstvu je Lubor Novák; vlastněná hongkongskou Hammerton Capital."
 
 [extra]
 generated = true

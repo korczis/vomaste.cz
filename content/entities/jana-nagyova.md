@@ -3,7 +3,7 @@
 title = "Jana Nagyová"
 template = "entity.html"
 weight = 169
-description = "Kontextová entita — Spoluobžalovaná v kauze Čapí hnízdo, 4. 5. 2026 nepravomocně uznána vinnou; v obsahu též pod dřívějším jménem Jana Mayerová (CLM-79). Uvedena, protože se jmenovitě…"
+description = "Kontextová entita — Spoluobžalovaná v kauze Čapí hnízdo, 4. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

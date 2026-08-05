@@ -3,7 +3,7 @@
 title = "Všeobecná zdravotní pojišťovna (VZP)"
 template = "entity.html"
 weight = 450
-description = "Kontextová entita — Prověřuje stovky implantací ICD ve FN Olomouc; projekt Zdravá firma kritizovaný Okamurou. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných…"
+description = "Kontextová entita — Prověřuje stovky implantací ICD ve FN Olomouc; projekt Zdravá firma kritizovaný Okamurou."
 
 [extra]
 generated = true

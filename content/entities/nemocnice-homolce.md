@@ -4,7 +4,7 @@ title = "Nemocnice Na Homolce"
 template = "entity.html"
 weight = 23
 aliases = ["/dossiers/macinka-turek/entities/nemocnice-homolce/"]
-description = "Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext. Provozovatel…"
+description = "Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu."
 
 [extra]
 generated = true

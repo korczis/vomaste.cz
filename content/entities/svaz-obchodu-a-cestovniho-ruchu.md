@@ -3,7 +3,7 @@
 title = "Svaz obchodu a cestovního ruchu ČR"
 template = "entity.html"
 weight = 399
-description = "Kontextová entita — Zaměstnavatelský svaz; proti Vojtěchovu benefitovému návrhu. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (adam-vojtech). Tato…"
+description = "Kontextová entita — Zaměstnavatelský svaz; proti Vojtěchovu benefitovému návrhu. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

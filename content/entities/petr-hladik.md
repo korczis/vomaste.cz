@@ -3,7 +3,7 @@
 title = "Petr Hladík"
 template = "entity.html"
 weight = 339
-description = "Kontextová entita — Exministr životního prostředí (KDU-ČSL); kritik rekonstrukce kanceláří MŽP. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů…"
+description = "Kontextová entita — Exministr životního prostředí (KDU-ČSL); kritik rekonstrukce kanceláří MŽP. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

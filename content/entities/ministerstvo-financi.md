@@ -3,7 +3,7 @@
 title = "Ministerstvo financí ČR"
 template = "entity.html"
 weight = 273
-description = "Kontextová entita — Původně navrhovalo zrušit limit jen pro volnočasové benefity. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (adam-vojtech…"
+description = "Kontextová entita — Původně navrhovalo zrušit limit jen pro volnočasové benefity. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

@@ -3,7 +3,7 @@
 title = "Škoda Auto"
 template = "entity.html"
 weight = 380
-description = "Kontextová entita — Účastník konference Forum Elektromobilita 2026. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (karel-havlicek). Tato stránka…"
+description = "Kontextová entita — Účastník konference Forum Elektromobilita 2026. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

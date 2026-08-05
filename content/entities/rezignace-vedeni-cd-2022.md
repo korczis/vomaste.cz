@@ -3,7 +3,7 @@
 title = "Rezignace ve vedení Českých drah (únor 2022)"
 template = "entity.html"
 weight = 366
-description = "Kontextová entita — CASE-01 dossieru: odchod Bednárika, Nebeského a Pavelce z vedení ČD; oficiální důvod nezveřejněn, reportované verze (úspory, pozemky) dossier vede odděleně…"
+description = "Kontextová entita — CASE-01 dossieru: odchod Bednárika, Nebeského a Pavelce z vedení ČD; oficiální důvod nezveřejněn, reportované verze (úspory, pozemky) dossier vede odděleně."
 
 [extra]
 generated = true

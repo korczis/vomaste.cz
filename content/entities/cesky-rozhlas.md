@@ -3,7 +3,7 @@
 title = "Český rozhlas"
 template = "entity.html"
 weight = 95
-description = "Kontextová entita — Veřejnoprávní rozhlas — aktér kauzy financování; podle GŘ Zavorala hrozí propouštění 150–200 zaměstnanců. Uvedena, protože se jmenovitě objevuje v citovaném obsahu…"
+description = "Kontextová entita — Veřejnoprávní rozhlas — aktér kauzy financování; podle GŘ Zavorala hrozí propouštění 150–200 zaměstnanců."
 
 [extra]
 generated = true

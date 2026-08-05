@@ -3,7 +3,7 @@
 title = "Trestní oznámení STAN kvůli střetu zájmů na MPSV (2026)"
 template = "entity.html"
 weight = 415
-description = "Kontextová entita — Podáno 23. 7. 2026 (Pivoňka Vaňková, oznámil Rakušan); procesní stav: podnět k prověření, nikdo neobviněn ani neodsouzen. Uvedena, protože se jmenovitě objevuje v…"
+description = "Kontextová entita — Podáno 23. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

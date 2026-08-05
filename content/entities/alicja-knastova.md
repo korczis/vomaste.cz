@@ -3,7 +3,7 @@
 title = "Alicja Knastová"
 template = "entity.html"
 weight = 62
-description = "Kontextová entita — Generální ředitelka Národní galerie Praha odvolaná Klempířem v březnu 2026; způsob odvolání kritizovala UHS. Uvedena, protože se jmenovitě objevuje v citovaném…"
+description = "Kontextová entita — Generální ředitelka Národní galerie Praha odvolaná Klempířem v březnu 2026; způsob odvolání kritizovala UHS."
 
 [extra]
 generated = true

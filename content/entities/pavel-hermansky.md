@@ -3,7 +3,7 @@
 title = "Pavel Heřmanský"
 template = "entity.html"
 weight = 328
-description = "Kontextová entita — Mluvčí Agrofertu — potvrdil působení Tünde Barthy v holdingu a vystupuje v obou dossierech jako citovaný mluvčí. Uvedena, protože se jmenovitě objevuje v citovaném…"
+description = "Kontextová entita — Mluvčí Agrofertu — potvrdil působení Tünde Barthy v holdingu a vystupuje v obou dossierech jako citovaný mluvčí."
 
 [extra]
 generated = true

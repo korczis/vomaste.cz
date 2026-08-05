@@ -3,7 +3,7 @@
 title = "Marian Jurečka"
 template = "entity.html"
 weight = 245
-description = "Kontextová entita — Předchozí ministr práce a sociálních věcí; jádro Juchelkovy obhajoby — Semancová podle něj nastoupila už za Jurečky a střet zájmů neošetřilo minulé vedení resortu…"
+description = "Kontextová entita — Předchozí ministr práce a sociálních věcí; jádro Juchelkovy obhajoby — Semancová podle něj nastoupila už za Jurečky a střet zájmů neošetřilo minulé vedení resortu."
 
 [extra]
 generated = true

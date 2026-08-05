@@ -3,7 +3,7 @@
 title = "Marcel Fišer"
 template = "entity.html"
 weight = 242
-description = "Kontextová entita — Jeden ze tří uchazečů postupujících do druhého kola zrušeného výběrového řízení na generálního ředitele NGP. Uvedena, protože se jmenovitě objevuje v citovaném…"
+description = "Kontextová entita — Jeden ze tří uchazečů postupujících do druhého kola zrušeného výběrového řízení na generálního ředitele NGP."
 
 [extra]
 generated = true

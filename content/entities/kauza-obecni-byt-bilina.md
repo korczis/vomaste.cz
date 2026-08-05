@@ -3,7 +3,7 @@
 title = "Kauza obecního bytu Mrázové v Bílině"
 template = "entity.html"
 weight = 209
-description = "Kontextová entita — Levný obecní byt 130 m² od 2009; kritika pokrytectví ministryně pro bydlení. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů…"
+description = "Kontextová entita — Levný obecní byt 130 m² od 2009; kritika pokrytectví ministryně pro bydlení."
 
 [extra]
 generated = true

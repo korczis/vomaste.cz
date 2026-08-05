@@ -3,7 +3,7 @@
 title = "Ministerstvo dopravy ČR"
 template = "entity.html"
 weight = 272
-description = "Kontextová entita — Resort pod Bednárikovým vedením: reforma Správy železnic (úspory 335,6 mil. Kč/rok), aktualizace přípravy VRT, „rozpočtové Waterloo“. Uvedena, protože se jmenovitě…"
+description = "Kontextová entita — Resort pod Bednárikovým vedením: reforma Správy železnic (úspory 335,6 mil. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

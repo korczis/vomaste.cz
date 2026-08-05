@@ -3,7 +3,7 @@
 title = "ICOMOS"
 template = "entity.html"
 weight = 148
-description = "Kontextová entita — Mezinárodní rada pro památky a sídla — mezi institucemi varujícími před novelou stavebního zákona. Uvedena, protože se jmenovitě objevuje v citovaném obsahu…"
+description = "Kontextová entita — Mezinárodní rada pro památky a sídla — mezi institucemi varujícími před novelou stavebního zákona."
 
 [extra]
 generated = true

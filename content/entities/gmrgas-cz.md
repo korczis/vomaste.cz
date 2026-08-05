@@ -3,7 +3,7 @@
 title = "GMR GAS s.r.o. (Brno)"
 template = "entity.html"
 weight = 37
-description = "Česká společnost (IČO 28274318, Brno), kterou Investigace.cz v citovaném článku popisuje jen slovně jako „českou společnost vyrábějící regulátory tlaku plynu\" — tedy matku firmy, v níž…"
+description = "Česká společnost (IČO 28274318, Brno), kterou Investigace.cz v citovaném článku popisuje jen slovně jako „českou společnost vyrábějící regulátory tlaku plynu\" — tedy matku firmy, v níž měl Petr…"
 
 [extra]
 generated = true

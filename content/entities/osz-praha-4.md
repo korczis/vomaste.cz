@@ -3,7 +3,7 @@
 title = "Obvodní státní zastupitelství pro Prahu 4"
 template = "entity.html"
 weight = 323
-description = "Kontextová entita — Konkrétní OSZ (vedoucí Jan Vychyta), které oznámilo odložení trestního oznámení na Turka; obecná entita statni-zastupitelstvi existuje, tato je specifická. Uvedena…"
+description = "Kontextová entita — Konkrétní OSZ (vedoucí Jan Vychyta), které oznámilo odložení trestního oznámení na Turka; obecná entita statni-zastupitelstvi existuje, tato je specifická."
 
 [extra]
 generated = true

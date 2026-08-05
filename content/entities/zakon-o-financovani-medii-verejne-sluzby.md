@@ -3,7 +3,7 @@
 title = "Zákon o financování médií veřejné služby"
 template = "entity.html"
 weight = 454
-description = "Kontextová entita — Klempířův legislativní návrh nahrazující koncesionářské poplatky rozpočtovým financováním; cíl petice za stažení. Uvedena, protože se jmenovitě objevuje v citovaném…"
+description = "Kontextová entita — Klempířův legislativní návrh nahrazující koncesionářské poplatky rozpočtovým financováním; cíl petice za stažení."
 
 [extra]
 generated = true

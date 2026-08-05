@@ -3,7 +3,7 @@
 title = "Josef Jaroš"
 template = "entity.html"
 weight = 180
-description = "Kontextová entita — Představitel Asociace malých a středních podniků a živnostníků ČR; kritik benefitového návrhu. Uvedena, protože se jmenovitě objevuje v citovaném obsahu…"
+description = "Kontextová entita — Představitel Asociace malých a středních podniků a živnostníků ČR; kritik benefitového návrhu."
 
 [extra]
 generated = true

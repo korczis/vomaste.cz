@@ -3,7 +3,7 @@
 title = "René Zavoral"
 template = "entity.html"
 weight = 365
-description = "Kontextová entita — Generální ředitel Českého rozhlasu; kritik vládního zrušení koncesionářských poplatků (výrok o „nepřátelském kroku vlády“). Uvedena, protože se jmenovitě objevuje v…"
+description = "Kontextová entita — Generální ředitel Českého rozhlasu; kritik vládního zrušení koncesionářských poplatků (výrok o „nepřátelském kroku vlády“)."
 
 [extra]
 generated = true

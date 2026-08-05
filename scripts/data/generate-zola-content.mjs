@@ -117,6 +117,26 @@ const summarize = (text, limit = 185) => {
   return `${(at > limit * 0.6 ? cut.slice(0, at) : cut).replace(/[,;:.\s]+$/, "")}…`;
 };
 
+// Doložka typu „Záznam nevyjadřuje vinu ani osobní, obchodní či lobbistický
+// vztah." stojí v kanonickém textu poslední, takže ji obyčejné zkrácení
+// uřízne první — a zrovna na stránce o jmenované třetí osobě je popis
+// končící uprostřed slova „ani osobní, obchodní či…" ta nejhorší možná
+// věta, na které skončit. Proto se u záznamů s vlastním redakčním textem
+// řeže po větách a závěrečná doložka se drží celá; když se nevejde,
+// zůstane radši jen úvodní věta celá než doložka na půl.
+const CAVEAT = /\b(nikoli|nezakládá|nevyjadřuje|neobsahuje|nezná)\b/i;
+const summarizeRecord = (text, limit = 195) => {
+  const flat = summarize(text, Number.MAX_SAFE_INTEGER);
+  if (!flat || flat.length <= limit) return flat;
+  const sentences = flat.split(/(?<=\.)\s+/).filter(Boolean);
+  const first = sentences[0] ?? flat;
+  const last = sentences.at(-1);
+  if (sentences.length > 1 && CAVEAT.test(last) && first.length + 1 + last.length <= limit) {
+    return `${first} ${last}`;
+  }
+  return summarize(first, limit);
+};
+
 /*
  * Passthrough čtení existujícího content souboru: RAW řádky klíčů po
  * sekcích (top / extra / ostatní sekce verbatim) + tělo. RAW řádky (ne
@@ -437,7 +457,7 @@ export function buildStubs(compiled, { contentRoot = REPO_ROOT } = {}) {
           "description",
           r.description !== undefined
             ? tomlString(r.description)
-            : (summarize(mdBody(r.content)) ? tomlString(summarize(mdBody(r.content))) : null),
+            : (summarizeRecord(mdBody(r.content)) ? tomlString(summarizeRecord(mdBody(r.content))) : null),
         ],
       ],
       extraDerived: [

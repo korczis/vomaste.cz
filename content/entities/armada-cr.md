@@ -3,7 +3,7 @@
 title = "Armáda České republiky"
 template = "entity.html"
 weight = 70
-description = "Kontextová entita — Ozbrojené síly; personální cíle, nábor, zveřejnění rozhovoru s prezidentem. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů…"
+description = "Kontextová entita — Ozbrojené síly; personální cíle, nábor, zveřejnění rozhovoru s prezidentem. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

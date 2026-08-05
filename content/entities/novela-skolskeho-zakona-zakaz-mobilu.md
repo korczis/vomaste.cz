@@ -3,7 +3,7 @@
 title = "Novela školského zákona — zákaz mobilů ve školách (tisk 232)"
 template = "entity.html"
 weight = 305
-description = "Kontextová entita — Poslanecký návrh Babiše a Plagy (18. 6. 2026), plošný zákaz od 9/2027; první čtení k 30. 7. 2026 neproběhlo. Uvedena, protože se jmenovitě objevuje v citovaném…"
+description = "Kontextová entita — Poslanecký návrh Babiše a Plagy (18. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

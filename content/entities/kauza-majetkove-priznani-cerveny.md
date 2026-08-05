@@ -3,7 +3,7 @@
 title = "Přestupkové řízení k majetkovému přiznání Igora Červeného"
 template = "entity.html"
 weight = 205
-description = "Kontextová entita — Nepřiznaný dům v Bobnicích za 11,4 mil. Kč; opravné oznámení a pokuta 7 500 Kč, formální ukončení řízení nedoloženo. Uvedena, protože se jmenovitě objevuje v…"
+description = "Kontextová entita — Nepřiznaný dům v Bobnicích za 11,4 mil. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

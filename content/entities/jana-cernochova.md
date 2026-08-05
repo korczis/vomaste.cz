@@ -3,7 +3,7 @@
 title = "Jana Černochová"
 template = "entity.html"
 weight = 167
-description = "Kontextová entita — Bývalá ministryně obrany; terč Zůnovy kritiky obranného plánování. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (jaromir-zuna)…"
+description = "Kontextová entita — Bývalá ministryně obrany; terč Zůnovy kritiky obranného plánování. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

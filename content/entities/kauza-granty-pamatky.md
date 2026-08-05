@@ -3,7 +3,7 @@
 title = "Kauza grantů, rozpočtu kultury a ochrany památek"
 template = "entity.html"
 weight = 204
-description = "Kontextová entita — Škrty v rozpočtu MK, mimořádné dotace mimo komise, avizované veto grantových komisí a oslabení památkové péče novelou stavebního zákona. Uvedena, protože se…"
+description = "Kontextová entita — Škrty v rozpočtu MK, mimořádné dotace mimo komise, avizované veto grantových komisí a oslabení památkové péče novelou stavebního zákona."
 
 [extra]
 generated = true

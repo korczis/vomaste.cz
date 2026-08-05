@@ -3,7 +3,7 @@
 title = "ALCOGAL"
 template = "entity.html"
 weight = 58
-description = "Kontextová entita — Poskytovatel offshore služeb — dle Pandora Papers označil Babiše za vysoce rizikového klienta a 2016 podal hlášení. Uvedena, protože se jmenovitě objevuje v…"
+description = "Kontextová entita — Poskytovatel offshore služeb — dle Pandora Papers označil Babiše za vysoce rizikového klienta a 2016 podal hlášení."
 
 [extra]
 generated = true

@@ -3,7 +3,7 @@
 title = "Česká národní banka"
 template = "entity.html"
 weight = 98
-description = "Kontextová entita — Policejní ochrana má být podle Metnarova návrhu přesměrována z NKÚ na sídlo ČNB; v schillerové dossieru srovnání prognóz NRR vs. trh a ČNB. Uvedena, protože se…"
+description = "Kontextová entita — Policejní ochrana má být podle Metnarova návrhu přesměrována z NKÚ na sídlo ČNB; v schillerové dossieru srovnání prognóz NRR vs."
 
 [extra]
 generated = true

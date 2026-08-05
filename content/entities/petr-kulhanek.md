@@ -3,7 +3,7 @@
 title = "Petr Kulhánek"
 template = "entity.html"
 weight = 341
-description = "Kontextová entita — Předchůdce Mrázové v čele MMR (STAN); kritika paradoxu obecního bydlení ministryně. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných…"
+description = "Kontextová entita — Předchůdce Mrázové v čele MMR (STAN); kritika paradoxu obecního bydlení ministryně."
 
 [extra]
 generated = true

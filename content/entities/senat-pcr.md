@@ -3,7 +3,7 @@
 title = "Senát Parlamentu ČR"
 template = "entity.html"
 weight = 373
-description = "Kontextová entita — Horní komora parlamentu; projednává stavební novelu i novelu EET. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (adam-vojtech…"
+description = "Kontextová entita — Horní komora parlamentu; projednává stavební novelu i novelu EET. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

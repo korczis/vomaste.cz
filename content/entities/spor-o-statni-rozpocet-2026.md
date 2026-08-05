@@ -3,7 +3,7 @@
 title = "Spor o soulad státního rozpočtu 2026 se zákonem o rozpočtové odpovědnosti"
 template = "entity.html"
 weight = 388
-description = "Kontextová entita — NRR označila návrh rozpočtu (schodek 310 mld.) za rozporný se zákonem (limit 246–247 mld.); MF a ministryně výpočet rozporují (292 mld.). Neuzavřený spor, předchází…"
+description = "Kontextová entita — NRR označila návrh rozpočtu (schodek 310 mld.) za rozporný se zákonem (limit 246–247 mld.); MF a ministryně výpočet rozporují (292 mld.)."
 
 [extra]
 generated = true

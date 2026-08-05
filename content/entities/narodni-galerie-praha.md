@@ -3,7 +3,7 @@
 title = "Národní galerie Praha"
 template = "entity.html"
 weight = 291
-description = "Kontextová entita — Instituce v centru kauzy odvolání ředitelky Knastové a zrušeného výběrového řízení na generálního ředitele. Uvedena, protože se jmenovitě objevuje v citovaném…"
+description = "Kontextová entita — Instituce v centru kauzy odvolání ředitelky Knastové a zrušeného výběrového řízení na generálního ředitele."
 
 [extra]
 generated = true

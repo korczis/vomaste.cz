@@ -3,7 +3,7 @@
 title = "James Quick"
 template = "entity.html"
 weight = 475
-description = "Hlavní subjekt autorizovaného dossieru. Záznam vznikl na základě výslovného pokynu vlastníka k veřejné, zdrojově doložené rešerši; samotná existence entity ani dossieru neobsahuje…"
+description = "Hlavní subjekt autorizovaného dossieru."
 
 [extra]
 generated = true

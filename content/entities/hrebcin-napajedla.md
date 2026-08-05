@@ -3,7 +3,7 @@
 title = "Hřebčín Napajedla"
 template = "entity.html"
 weight = 146
-description = "Kontextová entita — Areál hřebčína, jehož pastviny Baxa vyňal z památkové ochrany; Klempíř rozhodnutí zrušil a nařídil nové posouzení. Uvedena, protože se jmenovitě objevuje v…"
+description = "Kontextová entita — Areál hřebčína, jehož pastviny Baxa vyňal z památkové ochrany; Klempíř rozhodnutí zrušil a nařídil nové posouzení."
 
 [extra]
 generated = true

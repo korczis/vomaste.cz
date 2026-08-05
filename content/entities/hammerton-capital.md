@@ -3,7 +3,7 @@
 title = "Hammerton Capital Co. Limited"
 template = "entity.html"
 weight = 140
-description = "Kontextová entita — Čínská společnost se sídlem v Hongkongu, vlastník Hemmont. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (igor-cerveny). Tato…"
+description = "Kontextová entita — Čínská společnost se sídlem v Hongkongu, vlastník Hemmont. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

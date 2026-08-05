@@ -3,7 +3,7 @@
 title = "Ministerstvo zemědělství ČR"
 template = "entity.html"
 weight = 280
-description = "Kontextová entita — Resort Martina Šebestyána; spor o vymáhání dotací po Agrofertu. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (andrej-babis…"
+description = "Kontextová entita — Resort Martina Šebestyána; spor o vymáhání dotací po Agrofertu. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

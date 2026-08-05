@@ -3,7 +3,7 @@
 title = "Veronika Lukášová"
 template = "entity.html"
 weight = 430
-description = "Kontextová entita — Mluvčí Ministerstva pro místní rozvoj; komunikovala pokutu a obhajobu ministryně. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů…"
+description = "Kontextová entita — Mluvčí Ministerstva pro místní rozvoj; komunikovala pokutu a obhajobu ministryně."
 
 [extra]
 generated = true

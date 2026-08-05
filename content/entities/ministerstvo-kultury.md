@@ -3,7 +3,7 @@
 title = "Ministerstvo kultury ČR"
 template = "entity.html"
 weight = 274
-description = "Kontextová entita — Resort řízený Klempířem — rozpočtové škrty, mimořádné dotace, zrušené výběrové řízení NGP, návrh zákona o financování médií. Uvedena, protože se jmenovitě objevuje…"
+description = "Kontextová entita — Resort řízený Klempířem — rozpočtové škrty, mimořádné dotace, zrušené výběrové řízení NGP, návrh zákona o financování médií."
 
 [extra]
 generated = true

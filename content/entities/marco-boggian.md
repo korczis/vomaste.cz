@@ -3,7 +3,7 @@
 title = "Marco Boggian"
 template = "entity.html"
 weight = 243
-description = "Kontextová entita — Vedoucí regulatorních záležitostí AutoSAP; komentoval rozpad výroby alternativních pohonů pod ekonomicky smysluplnou hranici. Uvedena, protože se jmenovitě objevuje…"
+description = "Kontextová entita — Vedoucí regulatorních záležitostí AutoSAP; komentoval rozpad výroby alternativních pohonů pod ekonomicky smysluplnou hranici."
 
 [extra]
 generated = true

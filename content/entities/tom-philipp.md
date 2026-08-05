@@ -3,7 +3,7 @@
 title = "Tom Philipp"
 template = "entity.html"
 weight = 401
-description = "Kontextová entita — Poslanec KDU-ČSL; iniciátor debaty o očkovací strategii. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (adam-vojtech). Tato…"
+description = "Kontextová entita — Poslanec KDU-ČSL; iniciátor debaty o očkovací strategii. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

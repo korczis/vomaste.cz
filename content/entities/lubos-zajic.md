@@ -3,7 +3,7 @@
 title = "Luboš Zajíc"
 template = "entity.html"
 weight = 235
-description = "Kontextová entita — Prezident Asociace ředitelů základních škol; smířlivá reakce na zkrácení školního roku. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných…"
+description = "Kontextová entita — Prezident Asociace ředitelů základních škol; smířlivá reakce na zkrácení školního roku."
 
 [extra]
 generated = true

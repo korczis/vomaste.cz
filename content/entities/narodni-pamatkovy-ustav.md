@@ -3,7 +3,7 @@
 title = "Národní památkový ústav"
 template = "entity.html"
 weight = 293
-description = "Kontextová entita — Odborná památková instituce, jejíž postavení oslabuje novela stavebního zákona (možnost konzultace s jiným znalcem). Uvedena, protože se jmenovitě objevuje v…"
+description = "Kontextová entita — Odborná památková instituce, jejíž postavení oslabuje novela stavebního zákona (možnost konzultace s jiným znalcem)."
 
 [extra]
 generated = true

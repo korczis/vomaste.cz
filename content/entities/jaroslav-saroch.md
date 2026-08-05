@@ -3,7 +3,7 @@
 title = "Jaroslav Šaroch"
 template = "entity.html"
 weight = 171
-description = "Kontextová entita — Státní zástupce Městského státního zastupitelství v Praze — dozoroval kauzu Čapí hnízdo, 2018 zrušil stíhání Faltýnka, 2019 zastavil stíhání Babiše, 2026 navrhl…"
+description = "Kontextová entita — Státní zástupce Městského státního zastupitelství v Praze — dozoroval kauzu Čapí hnízdo, 2018 zrušil stíhání Faltýnka, 2019 zastavil stíhání Babiše, 2026 navrhl trest pro…"
 
 [extra]
 generated = true

@@ -3,7 +3,7 @@
 title = "Petr Bendl"
 template = "entity.html"
 weight = 336
-description = "Kontextová entita — Poslanec ODS; kritik jmenování potravinového ombudsmana. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (martin-sebestyan). Tato…"
+description = "Kontextová entita — Poslanec ODS; kritik jmenování potravinového ombudsmana. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

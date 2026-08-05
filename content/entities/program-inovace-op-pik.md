@@ -3,7 +3,7 @@
 title = "Program INOVACE"
 template = "entity.html"
 weight = 352
-description = "Kontextová entita — Dotační program MPO, jehož kritéria inovativnosti projekt Pekárny Zelená louka nesplnil. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných…"
+description = "Kontextová entita — Dotační program MPO, jehož kritéria inovativnosti projekt Pekárny Zelená louka nesplnil."
 
 [extra]
 generated = true

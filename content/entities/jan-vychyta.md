@@ -3,7 +3,7 @@
 title = "Jan Vychyta"
 template = "entity.html"
 weight = 165
-description = "Kontextová entita — Vedoucí Obvodního státního zastupitelství pro Prahu 4; oznámil odložení trestního oznámení na Turka pro promlčení (2026) i odložení kauzy hajlování (2024); jako…"
+description = "Kontextová entita — Vedoucí Obvodního státního zastupitelství pro Prahu 4; oznámil odložení trestního oznámení na Turka pro promlčení (2026) i odložení kauzy hajlování (2024); jako dozorující…"
 
 [extra]
 generated = true

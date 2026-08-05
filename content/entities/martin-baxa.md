@@ -3,7 +3,7 @@
 title = "Martin Baxa"
 template = "entity.html"
 weight = 248
-description = "Kontextová entita — Bývalý ministr kultury (ODS); kritik zrušení výběrového řízení NGP; Klempíř zrušil jeho rozhodnutí o pastvinách hřebčína Napajedla. Uvedena, protože se jmenovitě…"
+description = "Kontextová entita — Bývalý ministr kultury (ODS); kritik zrušení výběrového řízení NGP; Klempíř zrušil jeho rozhodnutí o pastvinách hřebčína Napajedla."
 
 [extra]
 generated = true

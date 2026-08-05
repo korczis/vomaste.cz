@@ -3,7 +3,7 @@
 title = "Nepravomocná pokuta Mrázové za střet zájmů"
 template = "entity.html"
 weight = 211
-description = "Kontextová entita — Přestupkové řízení Magistrátu Most za nepřiznanou půjčku 500 tis. Kč; rozhodnutí NEPRAVOMOCNÉ — uvádět při každé zmínce. Uvedena, protože se jmenovitě objevuje v…"
+description = "Kontextová entita — Přestupkové řízení Magistrátu Most za nepřiznanou půjčku 500 tis. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

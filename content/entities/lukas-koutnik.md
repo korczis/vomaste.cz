@@ -3,7 +3,7 @@
 title = "Lukáš Koutník"
 template = "entity.html"
 weight = 236
-description = "Kontextová entita — Šéf komunikace / mluvčí Motoristů; člen delegace v USA, nevyjasněné hrazení cesty. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů…"
+description = "Kontextová entita — Šéf komunikace / mluvčí Motoristů; člen delegace v USA, nevyjasněné hrazení cesty."
 
 [extra]
 generated = true

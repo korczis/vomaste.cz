@@ -3,7 +3,7 @@
 title = "Program «Zlepšení životních podmínek hospodářských zvířat»"
 template = "entity.html"
 weight = 355
-description = "Kontextová entita — Navýšen na 1,3 mld. Kč na úkor rozvoje venkova a výzkumu (dle FORUM 24). Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů…"
+description = "Kontextová entita — Navýšen na 1,3 mld. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

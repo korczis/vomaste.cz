@@ -3,7 +3,7 @@
 title = "Tomáš Zdechovský"
 template = "entity.html"
 weight = 409
-description = "Kontextová entita — Europoslanec — upozornil na notářský zápis z února 2026, jímž se Babiš stal opět přímým vlastníkem. Uvedena, protože se jmenovitě objevuje v citovaném obsahu…"
+description = "Kontextová entita — Europoslanec — upozornil na notářský zápis z února 2026, jímž se Babiš stal opět přímým vlastníkem."
 
 [extra]
 generated = true

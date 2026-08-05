@@ -3,7 +3,7 @@
 title = "Kauza zrušení koncesionářských poplatků a financování ČT/ČRo ze státního rozpočtu"
 template = "entity.html"
 weight = 203
-description = "Kontextová entita — Hlavní kauza dossieru — Klempířem prosazovaný přechod ČT a ČRo na rozpočtové financování od 2027, protesty a kritika opozice. Uvedena, protože se jmenovitě objevuje…"
+description = "Kontextová entita — Hlavní kauza dossieru — Klempířem prosazovaný přechod ČT a ČRo na rozpočtové financování od 2027, protesty a kritika opozice."
 
 [extra]
 generated = true

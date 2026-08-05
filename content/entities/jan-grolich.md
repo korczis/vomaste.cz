@@ -3,7 +3,7 @@
 title = "Jan Grolich"
 template = "entity.html"
 weight = 161
-description = "Kontextová entita — Politik KDU-ČSL; vyzval Mrázovou k rezignaci. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (zuzana-mrazova). Tato stránka…"
+description = "Kontextová entita — Politik KDU-ČSL; vyzval Mrázovou k rezignaci. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

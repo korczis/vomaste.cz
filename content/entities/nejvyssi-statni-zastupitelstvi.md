@@ -3,7 +3,7 @@
 title = "Nejvyšší státní zastupitelství"
 template = "entity.html"
 weight = 300
-description = "Kontextová entita — Zamítlo stížnosti obviněných v bitcoinové kauze. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (andrej-babis, jeronym-tejc)…"
+description = "Kontextová entita — Zamítlo stížnosti obviněných v bitcoinové kauze. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true
