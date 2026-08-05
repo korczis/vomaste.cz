@@ -84,7 +84,7 @@
       <td class="whitespace-nowrap p-3 align-top" data-sort-value="{{ p.sourceFamily | default(value='') }}">
         {%- if p.sourceFamily %}
         <span class="rounded bg-[#f3e5c0]/10 px-1.5 py-0.5 font-mono text-[0.65rem] text-[#f3e5c0]">{{ p.sourceFamily }}</span>
-        {%- else %}<span class="text-xs text-white/40" title="samostatný zdroj">—</span>{% endif -%}
+        {%- else %}<span class="text-xs text-white/55" title="samostatný zdroj">—</span>{% endif -%}
       </td>
       <td class="p-3 align-top text-white/70">
         <a href="{{ config.base_url }}{{ p.route }}" class="line-clamp-2 text-white/70 no-underline hover:text-white hover:underline sm:line-clamp-none">{{ p.description }}</a>
