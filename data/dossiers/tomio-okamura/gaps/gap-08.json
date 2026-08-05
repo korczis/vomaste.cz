@@ -12,7 +12,7 @@
   "title": "GAP-08 — Okolnosti vzniku plakátů (role generativní AI, autorství zadání) podle dokazování u soudu.",
   "description": "Tyto informace figurují pouze v článku iROZHLAS z 10. 7. 2026, který je nepřístupný (HTTP 403); v přístupných zdrojích doloženy nejsou.",
   "priority": "střední",
-  "checked": "2026-08-03",
+  "checked": "2026-08-05",
   "claims": [],
   "subjects": [
     "okamura"
@@ -20,7 +20,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Okolnosti vzniku plakátů (role generativní AI, autorství zadání) podle dokazování u soudu.\n\n**Proč je to mezera**: Tyto informace figurují pouze v článku iROZHLAS z 10. 7. 2026, který je nepřístupný (HTTP 403); v přístupných zdrojích doloženy nejsou. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem.\n\n**Opakovaná kontrola k 2026-08-03**: iROZHLAS.cz zůstává trvale nedostupný (HTTP 403, potvrzeno opakovaně). Mezera zůstává otevřená."
+      "value": "Okolnosti vzniku plakátů (role generativní AI, autorství zadání) podle dokazování u soudu.\n\n**Proč je to mezera**: Tyto informace figurují pouze v článku iROZHLAS z 10. 7. 2026, který je nepřístupný (HTTP 403); v přístupných zdrojích doloženy nejsou. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem.\n\n**Opakovaná kontrola k 2026-08-03**: iROZHLAS.cz zůstává trvale nedostupný (HTTP 403, potvrzeno opakovaně). Mezera zůstává otevřená.\n\n**Opakovaná kontrola k 2026-08-05 (primární dokumenty)**: skutková věta obžaloby, doslovně citovaná v usnesení mandátového a imunitního výboru ([SRC-30](@/dossiers/tomio-okamura/sources/src-30.md)), popisuje **oba plakáty podrobně** — jejich vyobrazení, texty i data a místa prezentace — a o generativní umělé inteligenci ani o autorství zadání **nehovoří vůbec**. Otázka tím tedy není zodpovězena, jen ohraničena: nejde o údaj, který by obžaloba tvrdila. **Co konkrétně chybí**: doklad z dokazování u soudu (protokol o hlavním líčení nebo písemné vyhotovení rozsudku) o tom, jak plakáty vznikly a kdo zadání formuloval. Mezera zůstává otevřená."
     }
   ],
   "order": 8

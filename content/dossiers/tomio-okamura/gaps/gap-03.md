@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
-title = "GAP-03 — Přesná právní věta výroku rozsudku a citovaný paragraf trestního zákoníku."
-description = "Žádný z přístupných zdrojů necituje doslovné znění výroku ani konkrétní ustanovení; justiční zpravodajství výslovně uvádí, že paragraf ani ú"
+title = "GAP-03 — Doslovné znění výroku rozsudku ze 3. června 2026 (právní kvalifikace obžaloby je nově doložena)."
+description = "Právní kvalifikaci obžaloby doložil primární parlamentní dokument; doslovné znění výroku rozsudku doloženo není."
 template = "dossier-gap.html"
 weight = 3
 
@@ -21,3 +21,7 @@ směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
 
 **Opakovaná kontrola k 2026-08-03**: iROZHLAS.cz zůstává trvale nedostupný (HTTP 403, potvrzeno opakovaně). Cílené hledání přesného znění výroku a paragrafu jinde nevrátilo výsledek. Mezera zůstává otevřená.
+
+**Opakovaná kontrola k 2026-08-05 — mezera z části uzavřena.** Primární parlamentní dokument (stenozáznam 11. schůze Poslanecké sněmovny z 5. března 2026, [SRC-30](@/dossiers/tomio-okamura/sources/src-30.md)) obsahuje doslovně přečtené usnesení mandátového a imunitního výboru č. 21 ze 17. února 2026, které **cituje právní kvalifikaci obžaloby**: „přečin podněcování nenávisti vůči skupině osob nebo k omezování jejich práv a svobod podle § 356 odst. 1, odst. 3 písm. a) trestního zákoníku“, ve věci vedené pod sp. zn. 1 T 95/2025. Zákonný text téhož ustanovení ve znění účinném v době skutku doložen z e-Sbírky ([SRC-32](@/dossiers/tomio-okamura/sources/src-32.md)). Tím je uzavřena otázka **citovaného paragrafu**; nově ji nese [CLM-36](@/dossiers/tomio-okamura/claims/clm-36.md).
+
+**Co konkrétně chybí**: doslovné znění výroku rozsudku Obvodního soudu pro Prahu 1 ze 3. června 2026 nad hnutím SPD — tedy právní věta a ustanovení, podle nichž rozhodl **soud**, nikoli podle nichž žaloval státní zástupce. Kvalifikace obžaloby se s výrokem rozsudku shodovat nemusí. Písemné vyhotovení rozsudku není veřejně dostupné a iROZHLAS, který o něm psal 10. 7. 2026, vrací trvale HTTP 403. Mezera v této části zůstává otevřená.

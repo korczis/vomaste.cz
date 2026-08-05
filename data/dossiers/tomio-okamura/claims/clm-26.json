@@ -9,15 +9,18 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
   },
-  "text": "Vydání Tomia Okamury v únoru 2025 podpořili podle zpravodajství poslanci tehdejších vládních ODS, STAN, KDU-ČSL a TOP 09, opoziční Piráti a nezařazený Ivo Vondrák; proti hlasovali poslanci SPD a ANO.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "text": "Vydání Tomia Okamury v únoru 2025 podpořili podle oficiálního hlasovacího záznamu poslanci tehdejších vládních ODS (26 hlasů), STAN (25), TOP 09 (13) a KDU-ČSL (12), opoziční Piráti (4) a jediný nezařazený poslanec, podle zpravodajství Ivo Vondrák; proti hlasovali poslanci ANO (43) a SPD (19). Nikdo se nezdržel.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-18"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-27"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-28"
     }
   ],
   "subjects": [
@@ -29,5 +32,6 @@
       "type": "markdown",
       "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/tomio-okamura/_index.md#registr-tvrzeni)."
     }
-  ]
+  ],
+  "checkedAt": "2026-08-05"
 }

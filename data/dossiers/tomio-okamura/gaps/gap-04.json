@@ -12,7 +12,7 @@
   "title": "GAP-04 — Zda a kdy bylo odvolání SPD formálně podáno a kdy je nařízeno odvolací jednání.",
   "description": "Přístupné zdroje k červenci 2026 dokládají pouze ohlášený záměr odvolat se, nikoli doručení odvolání ani termín u odvolacího soudu; žádné po",
   "priority": "střední",
-  "checked": "2026-08-03",
+  "checked": "2026-08-05",
   "claims": [],
   "subjects": [
     "okamura"
@@ -20,7 +20,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Zda a kdy bylo odvolání SPD formálně podáno a kdy je nařízeno odvolací jednání.\n\n**Proč je to mezera**: Přístupné zdroje k červenci 2026 dokládají pouze ohlášený záměr odvolat se, nikoli doručení odvolání ani termín u odvolacího soudu; žádné pozdější zpravodajství o podání odvolání se nepodařilo dohledat. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem.\n\n**Opakovaná kontrola k 2026-08-03**: cílené hledání zopakováno, žádná zpráva o formálním podání odvolání ani o termínu odvolacího jednání nedohledána. Mezera zůstává otevřená."
+      "value": "Zda a kdy bylo odvolání SPD formálně podáno a kdy je nařízeno odvolací jednání.\n\n**Proč je to mezera**: Přístupné zdroje k červenci 2026 dokládají pouze ohlášený záměr odvolat se, nikoli doručení odvolání ani termín u odvolacího soudu; žádné pozdější zpravodajství o podání odvolání se nepodařilo dohledat. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem.\n\n**Opakovaná kontrola k 2026-08-03**: cílené hledání zopakováno, žádná zpráva o formálním podání odvolání ani o termínu odvolacího jednání nedohledána. Mezera zůstává otevřená.\n\n**Opakovaná kontrola k 2026-08-05 (primární dokumenty)**: hledán úřední doklad o podání odvolání i o nařízeném odvolacím jednání. **Co konkrétně chybí**: záznam o doručení odvolání Obvodnímu soudu pro Prahu 1 a termín jednání u Městského soudu v Praze. Ani jedno není v otevřených rejstřících dostupné — InfoSoud nemá serverem vykreslený detail řízení a přehled nařízených jednání ve věci nic nevrací. Mezera zůstává otevřená."
     }
   ],
   "order": 4

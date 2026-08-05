@@ -16,15 +16,15 @@ import { compileDataset } from "./compile.mjs";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const compiled = compileDataset(loadCanonicalTree(join(ROOT, "data/dossiers")));
 
-test("golden: počty záznamů per typ (snapshot 2026-08-05b: GAP-04 v james-quick zrušena — nedoložené jméno se nemá opakovat ani jako mezera)", () => {
+test("golden: počty záznamů per typ (snapshot 2026-08-05c: sloučení T-064 lubomir-metnar a T-066 tomio-okamura — +3 claim, +4 gap, +5 source; dva zdroje se nezapočítaly, protože obě sady otevřely TÝŽ dokument: vlada.gov.cz u metnara a psp.cz/sqw/hlasy.sqw?G=86781 u okamury)", () => {
   assert.deepEqual(compiled.counts.perType, {
     case: 89,
-    claim: 937,
+    claim: 940,
     dossier: 26,
     entity: 520,
-    gap: 193,
+    gap: 197,
     relation: 326,
-    source: 627,
+    source: 632,
     update: 72,
   });
   assert.equal(compiled.counts.dossiers, 26);

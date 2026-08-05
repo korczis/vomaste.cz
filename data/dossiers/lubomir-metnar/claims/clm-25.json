@@ -9,7 +9,7 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar"
   },
-  "text": "Prezident Petr Pavel 22. července 2026 vetoval novelu rozpočtových zákonů mimo jiné s odůvodněním obav o nezávislost institucí; norma by podle něj umožnila ministerstvu financí zasahovat do hospodaření Ústavního soudu, ombudsmana, NKÚ a Národní rozpočtové rady.",
+  "text": "Prezident Petr Pavel 22. července 2026 vetoval novelu zákonů v oblasti veřejných rozpočtů; v odůvodnění mimo jiné uvedl, že novela umožňuje, aby ministerstvo financí měnilo hospodaření některých nezávislých institucí „na základě takzvané dohody“, a jmenovitě zmínil Ústavní soud, Veřejného ochránce práv, Kancelář prezidenta republiky, Nejvyšší kontrolní úřad a Národní rozpočtovou radu, přičemž výslovně dodal, že vládu z úmyslu zasáhnout do jejich působení nepodezírá, ale že si obě strany nejsou rovné",
   "status": "status-corroborated",
   "statusLabel": "CORROBORATED",
   "sources": [
@@ -30,7 +30,8 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/lubomir-metnar/_index.md#registr-tvrzeni)."
+      "value": "**Opraveno 2026-08-05 proti doslovnému znění prezidentova odůvodnění.**\nPůvodní znění tvrzení bylo: „…norma by podle něj umožnila ministerstvu\nfinancí zasahovat do hospodaření Ústavního soudu, ombudsmana, NKÚ\na Národní rozpočtové rady.“ Dvě nepřesnosti:\n\n1. **Chyběla Kancelář prezidenta republiky** — prezident ji ve výčtu\n   jmenoval.\n2. **Zesílená formulace.** Prezident neřekl, že norma umožní\n   „zasahovat“; řekl, že umožňuje ministerstvu financí měnit hospodaření\n   těchto institucí „na základě takzvané dohody“, a doslova dodal:\n   „Nepodezírám vládu, že jí jde o další zásah do působení Ústavního\n   soudu, Veřejného ochránce práv, Kanceláře prezidenta republiky,\n   Nejvyššího kontrolního úřadu nebo Národní rozpočtové rady. Ve\n   skutečnosti si tu ale nejsou obě strany rovné a zákon nově vytváří\n   prostor pro to, aby ministerstvo financí o těchto změnách rozhodovalo\n   z výrazně silnější pozice.“ Opravený text drží tuto strukturu.\n\n**Proč CORROBORATED.** [SRC-06](@/dossiers/lubomir-metnar/sources/src-06.md)\ni [SRC-07](@/dossiers/lubomir-metnar/sources/src-07.md) patří do téže\nagenturní rodiny (ČTK) — dva tituly, jedno doložení. Druhého nezávislého\nvydavatele přináší [SRC-10](@/dossiers/lubomir-metnar/sources/src-10.md)\n(vlastní zpravodajství Echo24, podepsané autorem, bez agenturní stopy),\nkterý prezidentův výrok cituje ve stejném doslovném znění včetně\nKanceláře prezidenta republiky — kryje tedy i opravenou podobu tvrzení.\n\n**Co doloženo není.** Prezidentovo vlastní vyjádření na webu Hradu se\nnepodařilo otevřít (Cloudflare challenge, HTTP 403) a stanovisko\nprezidenta ve sněmovním tisku 90/8 je zveřejněno jako naskenovaný obrázek\nbez textové vrstvy — viz\n[GAP-12](@/dossiers/lubomir-metnar/gaps/gap-12.md). Procesní stránka veta\nje doložena primárně sněmovní evidencí — viz\n[CLM-30](@/dossiers/lubomir-metnar/claims/clm-30.md).\n\n**Co to není.** Veto není zjištění o obsahu zákona ani o úmyslech vlády.\nJe to ústavní krok podle čl. 50 Ústavy; Sněmovna je může přehlasovat."
     }
-  ]
+  ],
+  "checkedAt": "2026-08-05"
 }

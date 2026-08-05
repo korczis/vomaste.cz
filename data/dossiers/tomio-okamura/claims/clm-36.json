@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-36",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-36",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
+  },
+  "text": "Trestní věc Tomia Okamury je u Obvodního soudu pro Prahu 1 vedena pod sp. zn. 1 T 95/2025 a obžaloba ji kvalifikuje jako přečin podněcování k nenávisti vůči skupině osob nebo k omezování jejich práv a svobod podle § 356 odst. 1, odst. 3 písm. a) trestního zákoníku.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-30"
+    }
+  ],
+  "subjects": [
+    "okamura"
+  ],
+  "order": 36,
+  "createdAt": "2026-08-05",
+  "checkedAt": "2026-08-05",
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/tomio-okamura/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

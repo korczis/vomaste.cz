@@ -9,12 +9,15 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar"
   },
-  "text": "Návrh se připravuje k projednání ve vládě a na poslední jednání vlády se nedostal.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "text": "Seznam Zprávy 29. 7. 2026 uvedly, že se návrh teprve připravuje k projednání ve vládě a na poslední jednání vlády se nedostal; oficiální výsledky jednání vlády to nepotvrzují — materiál ministra vnitra vláda schválila již 27. 7. 2026 jako bod 28 projednávaný bez rozpravy (čj. 591/26), tedy dva dny před vydáním reportáže",
+  "status": "status-disputed",
+  "statusLabel": "SPORNÉ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-11"
     }
   ],
   "subjects": [
@@ -24,7 +27,8 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/lubomir-metnar/_index.md#registr-tvrzeni)."
+      "value": "**Opraveno 2026-08-05 proti primárnímu dokumentu; stav změněn na SPORNÉ.**\n\nPůvodní znění tvrzení bylo: „Návrh se připravuje k projednání ve vládě a na poslední jednání vlády se nedostal.“ Tak to 29. 7. 2026 uvedly Seznam Zprávy ([SRC-02](@/dossiers/lubomir-metnar/sources/src-02.md)).\n\nÚřad vlády ale už 27. 7. 2026 ve 14:55 zveřejnil výsledky jednání vlády ([SRC-11](@/dossiers/lubomir-metnar/sources/src-11.md)), kde je pod bodem 28 v části „C. K projednání bez rozpravy“ uveden materiál ministra vnitra „Návrh na změnu usnesení vlády ze dne 16. prosince 2008 č.1604 k zajišťování bezpečnosti chráněných objektů a prostorů…“ (čj. 591/26) s výsledkem **schváleno**.\n\n**Jak je rozpor veden.** Primární dokument má přednost, proto je v textu tvrzení uveden jako první a reportáž je uvedena jako to, co uvedla ona. Dossier ale **nerozhoduje**, čím rozpor vznikl — možností je víc (bod doplněný na program dodatečně, opožděná publikace usnesení, chyba v reportáži) a žádná z nich není doložena. Otevřená otázka je vedena jako [GAP-15](@/dossiers/lubomir-metnar/gaps/gap-15.md). Z rozporu neplyne nic o věrohodnosti ostatních zjištění téže reportáže."
     }
-  ]
+  ],
+  "checkedAt": "2026-08-05"
 }
