@@ -11,6 +11,18 @@
 > bez číslování; struktura dle `.claude/skills/adr/SKILL.md` je zde rozšířena o 40 sekcí požadovaných
 > misí (§19), protože jde o bezpečnostně citlivý governance návrh, ne běžné technické rozhodnutí.
 
+> **Stav implementace (doplněno 2026-08-05, text ADR níže se nemění).**
+> Fáze 2–6 návrhu jsou od 2026-08-02 implementované a v repozitáři:
+> deterministický procesor (`scripts/intake/process-issue.mjs`), entity
+> matching a riziková klasifikace, SSRF-hardened URL preflight,
+> 4 issue formuláře (`.github/ISSUE_TEMPLATE/`) a workflow
+> `.github/workflows/dossier-intake.yml` (`on: issues`). Fáze 7+
+> (draft PR, runbooky) implementované **nejsou**. Human gate popsaný
+> níže platí beze změny: žádná strojová transice nekončí v
+> `authorization_status: authorized` ani `publication_status: published`
+> a workflow do repozitáře nezapisuje. Provozní popis pro odesílatele:
+> [`docs/intake/public-submission.md`](../intake/public-submission.md).
+
 ---
 
 ## 1. Název

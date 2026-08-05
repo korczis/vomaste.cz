@@ -41,11 +41,15 @@ npm run generate:candidates
 ```
 
 Last triaged against that feed: **2026-08-01** (61 context entities, 24
-dossiers).
+dossiers). The feed has grown since — as of 2026-08-05 it reports **495
+context entities across 26 dossiers** — and the two subjects authorized
+on 2026-08-05 (§1) came from the owner directly, not from a triage round.
+The backlog below is therefore stale-but-not-wrong: nothing in it was
+decided since, and a fresh triage is an open task.
 
 ---
 
-## 1. Already authorized (23 subjects, 24 dossiers incl. the aggregate)
+## 1. Already authorized (25 subjects, 26 dossiers incl. the aggregate)
 
 Source of truth: `AGENTS.md`, mirrored in `data/authorizations.toml`.
 
@@ -74,7 +78,20 @@ Source of truth: `AGENTS.md`, mirrored in `data/authorizations.toml`.
 | Richard Chlad | `richard-chlad` | 2026-07-30 | AUTH-2026-07-30-W |
 | Petr Pavel | `petr-pavel` | 2026-08-01 | AUTH-2026-08-01-PAVEL |
 | Petr Vencálek | `petr-vencalek` | 2026-08-01 | AUTH-2026-08-01-VENCALEK |
+| James Quick | `james-quick` | 2026-08-05 | AUTH-2026-08-05-JAMES-QUICK |
+| Martin Pavlík | `martin-pavlik` | 2026-08-05 | AUTH-2026-08-05-MARTIN-PAVLIK |
 | *(aggregate, not a subject)* | `macinka-turek` | 2026-07-29 | structural, see AGENTS.md |
+
+The two 2026-08-05 subjects are the first authorized subjects who hold no
+public office — the public-interest basis is stated per subject in
+`AGENTS.md`, and both scopes are unusually narrow on purpose. Martin
+Pavlík is limited to directly-evidenced public-register roles and shares
+at four named legal entities, with an explicit ban on inferring anything
+else (profession, age, address, namesakes); James Quick is limited to
+publicly documented activity around his own named projects, with serious
+allegations (pressure, threats, unlawful conduct, lobbying) publishable
+only as precisely attributed source statements, never as this site's own
+conclusion. A registry role is never presented as suspicion.
 
 Every one of the current 16 government members (`data/government.toml`)
 already has an authorized dossier — **the cabinet roster is fully

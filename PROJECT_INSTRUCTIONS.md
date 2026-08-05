@@ -42,7 +42,7 @@ je kanonický JSON soubor (`data/dossiers/<slug>/{claims,sources,gaps,…}/`)
 s globálním `@id`; stránky, tabulky i exporty se z něj generují. Integrita
 odkazů, kotev i parity tabulky tvrzení se ověřuje automaticky při buildu
 (`npm run data:validate` — tvar podle `schemas/canonical/`, reference
-R1–R7, sémantika S1–S8, tabulková parita T1–T8;
+R1–R7, sémantika S1–S10, tabulková parita T1–T8;
 `scripts/dossier/verify-anchors.mjs` po `zola build`) — build padá na
 první chybějící odkaz, duplicitní ID nebo osiřelou kotvu.
 

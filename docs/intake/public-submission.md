@@ -33,12 +33,17 @@ Formulář: **[Navrhnout dossier nebo entitu](https://github.com/korczis/vomaste
 
 ## Co se stane po odeslání
 
-Podnět se zpracuje **lokálně a offline** (Fáze 6 zatím tento krok
-neautomatizuje na GitHubu — viz níže): forma se zparsuje, zdroje se
-syntakticky zaznamenají (ne síťově ověří, pokud nikdo výslovně nespustí
-`--preflight`), podnět se porovná s existujícím datasetem entit a projde
-rizikovou klasifikací. Výsledkem je strukturovaný manifest a čitelný
-report — nikdy sám o sobě dossier, tvrzení ani autorizace.
+Podnět zpracuje workflow `.github/workflows/dossier-intake.yml`
+(`on: issues`, `contents: read` + `issues: write`): forma se zparsuje,
+zdroje projdou technickou kontrolou dostupnosti (`--preflight`), podnět
+se porovná s existujícím datasetem entit a projde rizikovou klasifikací.
+Výsledkem je strukturovaný manifest a čitelný report — nikdy sám o sobě
+dossier, tvrzení ani autorizace. Zpracování běží bez `GITHUB_TOKEN`
+(krok, který čte tělo issue, nemá jak sáhnout na GitHub API), workflow
+do repozitáře **nikdy nezapisuje** (kontrolováno `git status
+--porcelain` před i po) a komentář zpět do issue posílá až samostatný
+krok nad už sanitizovaným statusem. Totéž jde spustit lokálně a offline
+(`npm run intake:process`).
 
 ## Co se nestane automaticky
 

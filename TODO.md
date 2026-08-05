@@ -217,4 +217,14 @@
         `content/dossiers/**` front matter, `scripts/dossier/*.mjs`,
         vše v aktivní scope-check zóně T-001. T-010 na boardu doplněn
         o odkaz na hotový design.
-  - [ ] Implementace zůstává T-010, čeká na merge T-001.
+  - [x] Implementace hotová (stav k 2026-08-05): content-hash citace
+        (`vomaste:citationFingerprint`), exportní routy
+        `/data/dossiers/<slug>.jsonld` + `/data/graph.jsonld`,
+        `/data/jsonld-manifest.json` s checksumy a offline
+        `npm run verify:export`. Numerické confidence skóre zůstává
+        vědomě neimplementované (konstituce § 8).
+
+> **Poznámka ke stavu tohoto souboru (2026-08-05):** TODO.md je
+> historický záznam misí z 2026-07, ne živý board. Aktuální rozpracované
+> úkoly jsou v [`docs/coop/TASKS.md`](docs/coop/TASKS.md); autorizační
+> fronta v [`AUTHORIZATION.md`](AUTHORIZATION.md).

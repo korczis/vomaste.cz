@@ -44,7 +44,7 @@ zreprodukuj build a zpochybni výsledek.*
 nepodložená obvinění, centrální autorita s nárokem na konečnou pravdu,
 ani důvěrná schránka provozovaná ve veřejném Gitu.
 
-**Poctivý aktuální stav (k 2026-08-01)**: repozitář hostí dossiery
+**Poctivý aktuální stav (k 2026-08-05)**: repozitář hostí dossiery
 autorizovaných veřejně činných osob (přesný, datovaný, append-only rozsah
 autorizace viz `AGENTS.md`; živý seznam na `/dossiers/`). Dossiery a
 entity jsou čistá, kanonická JSON/JSON-LD data (`data/dossiers/**`,
@@ -60,7 +60,7 @@ neexistují** — nic z toho tento README neinzeruje jako hotové.
 
 ```text
 kanonická data (data/dossiers/**/*.json — JSON Schema + JSON-LD context)
-→ data:validate (tvar · reference R1–R7 · sémantika S1–S8 · parita tabulky T1–T8 · JSON-LD expanze)
+→ data:validate (tvar · reference R1–R7 · sémantika S1–S10 · parita tabulky T1–T8 · JSON-LD expanze)
 → jednotný kompilátor (scripts/data/) → compiled model
 → view modely (data/generated/views/**) + generované content adaptéry (content/**)
 → validátory a generátory (autorizace, navigace, route manifest, exporty, search index, graf)
@@ -102,9 +102,12 @@ rozhodnutí: [ADR](docs/adr/json-first-canonical-data-model.md).
   v `dossier.json` a kanonický záznam; parita T1–T8 build shodí, pokud
   se liší byť o bajt. Detailní stránka se generuje.
 - **Zdroj (SRC-##)** — `sources/src-NN.json`: outlet, typ, URL, datum
-  vydání i stažení, podporovaná tvrzení, `sourceFamily` („vydavatelské
-  rodiny" — zdroje téhož vydavatele se nepočítají jako nezávislá
-  potvrzení) a povinná redakční poznámka (≥ 150 znaků).
+  vydání i stažení, podporovaná tvrzení, `sourceFamily` („zdrojová
+  rodina" pojmenovaná podle **původu**, ne podle vydavatele — přetisk
+  zprávy ČTK v Blesku patří do rodiny `ctk`) a povinná redakční poznámka
+  (≥ 150 znaků). Rodina je volitelná a sama nestačí: pravidlo S10 navíc
+  bere dva zdroje se shodným `outlet`em nebo shodnou registrovanou
+  doménou jako **jeden** hlas, ať mají rodinu vyplněnou jakkoli.
 - **Kauza (CASE-##)** — `cases/case-NN.json`: tematický celek; detailní
   stránka odkazuje na kanonickou prózu kotvou, nikdy ji nekopíruje.
 - **Mezera (GAP-##)** — `gaps/gap-NN.json`: otevřená otázka s prioritou,
@@ -121,17 +124,24 @@ rozhodnutí: [ADR](docs/adr/json-first-canonical-data-model.md).
 
 | Stav | Význam | Vynucení |
 |---|---|---|
-| `CORROBORATED` | potvrzeno nezávisle více redakcemi | pravidlo S2 vyžaduje ≥ 2 zdroje z ≥ 2 nezávislých rodin |
-| `1 ZDROJ` | doloženo jediným citovaným zdrojem, bez nezávislého potvrzení | pravidlo S1 vyžaduje právě 1 zdroj |
+| `CORROBORATED` | potvrzeno nezávisle více redakcemi | pravidlo S2 vyžaduje dvojici zdrojů lišící se rodinou **i** vydavatelem (S10) |
+| `1 ZDROJ` | doloženo jediným citovaným zdrojem, bez nezávislého potvrzení | pravidlo S1 vyžaduje, aby mezi citovanými zdroji žádná taková nezávislá dvojice nebyla |
 | `CITACE` | přímý výrok subjektu — ověřuje, že výrok padl, **ne** že platí jeho obsah | — |
 | `SPORNÉ` | neuzavřené, nepotvrzené či rozporované tvrzení | — |
 | `NÁZOR` | autorský komentář, strukturálně oddělený od zpravodajství | — |
 
 Trvalá pravidla: procesní výsledek (odložení, promlčení, nepravomocné
 rozhodnutí) se **pokaždé** odlišuje od meritorního rozhodnutí o
-vině/pravdě; derivativní články jednoho původu nejsou korroborace;
-povýšení stavu vyžaduje nový důkaz, nikdy jen přeznačení. Ověření, že
-výrok padl, není ověřením jeho obsahu.
+vině/pravdě; derivativní články jednoho původu nejsou korroborace; **ani
+dva články téže redakce nejsou dvě nezávislá doložení** (S10); povýšení
+stavu vyžaduje nový důkaz, nikdy jen přeznačení. Ověření, že výrok padl,
+není ověřením jeho obsahu.
+
+Evidenční pravidla S1–S4 a S10 se dají grandfatherovat jen výslovným
+záznamem v `data/dossiers/_shared/semantics-baseline.json` (konkrétní
+`@id` + pravidlo, degradace na warning); autorizační S5/S6 nikdy.
+Baseline je dnes prázdná — celá dnešní evidenční vrstva prochází bez
+výjimky. Plné znění pravidel: [`docs/data-contract.md`](docs/data-contract.md).
 
 ## Strukturovaná data (JSON-LD)
 
@@ -233,13 +243,15 @@ Rozhodnutí a jeho důsledky: [ADR](docs/adr/dossier-directory-multi-view.md).
 ├── scripts/dossier/        # build/verify nástroje nad compiled modelem (exporty, navigace…)
 ├── scripts/lint/           # linty (generated content, hardcoded records, komponenty…)
 ├── scripts/osint/          # živé rejstříkové nástroje (ARES, registr smluv) — mimo build
+├── scripts/intake/         # veřejný intake: parser podnětu, matching, preflight (nikdy nezapisuje do dat)
 ├── scripts/coop/           # koordinace více instancí (bus, worktrees)
 ├── scripts/setup/          # instalace git hooks (postinstall)
 ├── .githooks/              # pre-commit: rychlá podmnožina validátorů
 ├── .claude/skills/         # bootstrap, dossier-entry, investigate, adr, commit
 ├── docs/                   # konstituce, datový kontrakt, audity, migrace, koop, ADR
 ├── reports/                # generované interní reporty (nepublikují se)
-└── .github/workflows/      # deploy.yml — validace + build + GitHub Pages
+└── .github/                # workflows/deploy.yml (validace + build + Pages),
+                            # workflows/dossier-intake.yml + ISSUE_TEMPLATE/ (veřejný intake)
 ```
 
 ## Rychlý start
@@ -254,10 +266,10 @@ npm ci
 npm run dev     # validace + generátory + zola serve na http://127.0.0.1:1111
 ```
 
-**Nespouštěj `zola serve` přímo.** `data/generated/*` a `data/dossiers/*/stats.toml`
-jsou v `.gitignore` — vznikají buildem, takže je `git clone` ani `git pull` nikdy
-nepřinese. Samotná zola je neumí vytvořit a skončí hláškou `load_data: … does not
-exist` z hloubi `base.html`, ze které není poznat, že chybí krok pipeline.
+**Nespouštěj `zola serve` přímo.** `data/generated/*` je v `.gitignore` —
+vzniká buildem, takže ho `git clone` ani `git pull` nikdy nepřinese. Samotná
+zola ho neumí vytvořit a skončí hláškou `load_data: … does not exist`
+z hloubi `base.html`, ze které není poznat, že chybí krok pipeline.
 
 ```bash
 npm run preflight   # zkontroluje, co chybí, a vypíše co spustit
@@ -348,7 +360,7 @@ Instalace `just`: <https://github.com/casey/just#installation>.
 | `npm run check` | validace bez generování (`pipeline.mjs check`) |
 | `npm run hooks:install` | nastaví `core.hooksPath` na `.githooks/` (jinak se spustí automaticky přes `npm ci`/`npm install`) |
 | `npm test` | regresní testy tooling skriptů (Node built-in test runner, žádná nová závislost) — součást `npm run build` |
-| `npm run data:validate` | kanonická brána: tvar (`schemas/canonical/`, AJV strict) → reference R1–R7 → sémantika S1–S8 → parita tabulky T1–T8 → JSON-LD expanze |
+| `npm run data:validate` | kanonická brána: tvar (`schemas/canonical/`, AJV strict) → reference R1–R7 → sémantika S1–S10 → parita tabulky T1–T8 → JSON-LD expanze |
 | `npm run data:validate -- --file <cesta>` | rychlá tvarová validace jediného kanonického souboru; chybové hlášky nesou cestu |
 | `npm run data:build` | kompilace datasetu + view modely + regenerace content adaptérů + parity brána content == staging |
 | `npm run dossier:scaffold -- --slug=… --title="…" --subject=… --authorization-record-id=AUTH-…` | založí minimální validní kanonický balíček nového dossieru; **odmítne** subjekt bez odpovídajícího záznamu v `data/authorizations.toml` |
@@ -592,8 +604,18 @@ kterou nesmí vypnout, kdo se chce k tomuto datovému modelu hlásit. Veřejné,
 
 ## Opravy a právo na odpověď
 
-Návrhy oprav a reakce subjektů přijímá veřejný kanál uvedený na webu
-(sekce Metodika). Každá věcná změna publikovaného obsahu je dohledatelná:
+Návrhy oprav a reakce subjektů přijímají **veřejné GitHub issue
+formuláře** (`.github/ISSUE_TEMPLATE/`: návrh dossieru/entity, oprava
+faktu, reakce subjektu, mrtvý zdroj). Odeslaný podnět zpracuje
+deterministický automat (parsování, porovnání s datasetem entit, riziková
+klasifikace, technická kontrola URL) a vrátí do issue čitelný report —
+**nikdy** dossier, tvrzení ani autorizaci; ta zůstává výhradně ruční
+zápis vlastníka do append-only logu v `AGENTS.md`. Podrobně:
+[`docs/intake/public-submission.md`](docs/intake/public-submission.md).
+Podání je veřejné a trvalé (viz bezpečnostní hranice nahoře) — důvěrný
+kanál projekt nemá a netvrdí opak.
+
+Každá věcná změna publikovaného obsahu je dohledatelná:
 commit + kanonický záznam v `data/dossiers/<slug>/updates/` (append-only).
 Subjekty dossierů mohou žádat opravu, dodat reakci nebo protidůkazy;
 nemají redakční veto. Podání samo o sobě dataset nemění — projde
@@ -607,7 +629,7 @@ validace (stejné příkazy jako lokálně) → `zola check` → `zola build` �
 spuštění: workflow_dispatch. Ověření produkce: porovnat nasazený obsah
 s očekávaným commitem (`gh run list`, pak kontrola klíčových rout).
 
-## Známá omezení (k 2026-08-01)
+## Známá omezení (k 2026-08-05)
 
 - Do 2026-07-30 se JSON-LD exportní routy (`/data/*.jsonld`) v produkci
   vůbec negenerovaly, přestože lokální `npm run build` je vytvářel:
@@ -619,8 +641,15 @@ s očekávaným commitem (`gh run list`, pak kontrola klíčových rout).
   zatím fetchnuté stránky nearchivuje; manifest exportů je hashovaný,
   ne podepsaný (ADR práh: podpis až bude reálná potřeba prokazovat
   autorství exportu, ne jen integritu).
-- Žádný důvěrný intake kanál; žádný sémantický diff ani fork starter
-  kit — viz roadmapa v konstituci, § 11.
+- **Žádný důvěrný intake kanál.** Veřejný intake (níže) je veřejná
+  GitHub issue — okamžitě viditelná, trvale dohledatelná, bez záruky
+  anonymity odesílatele. Nic v tomto repozitáři nenabízí chráněné ani
+  anonymní podání a nic to tvrdit nesmí.
+- Žádný sémantický diff ani fork starter kit — viz roadmapa
+  v konstituci, § 11.
+- Z intake návrhu jsou hotové fáze 2–6 (procesor, matching, preflight,
+  formuláře, workflow); fáze 7+ (draft PR, provozní runbooky)
+  implementované nejsou.
 - `lint:historical-coupling` zůstává mimo build gate (spouští se ručně);
   zapojení do gate je otevřený úkol.
 - Vyhledávací index a `data/generated/*` jsou interní artefakty buildu,
@@ -652,10 +681,12 @@ Podrobné vymezení: [LICENSE.md](LICENSE.md).
 Konstituce (`docs/constitution/`), redakční pravidla a datový model
 (`AGENTS.md`), koop protokol (`docs/coop/`), audity obsahu
 (`docs/dossier-audit/`), migrační inventura (`docs/migrations/`),
-architektonická rozhodnutí (`docs/adr/`). Návrh veřejného
-dossier-intake workflow (Fáze 1, PROPOSED):
-[`docs/adr/ADR-public-dossier-intake.md`](docs/adr/ADR-public-dossier-intake.md)
-+ auditní reporty v `reports/intake/`.
+architektonická rozhodnutí (`docs/adr/`). Veřejný dossier-intake:
+provozně [`docs/intake/`](docs/intake/) (podání, kontrakt formuláře,
+matching, riziková klasifikace, bezpečnostní hranice), návrhový ADR
+Fáze 1 + stav implementace
+[`docs/adr/ADR-public-dossier-intake.md`](docs/adr/ADR-public-dossier-intake.md),
+auditní reporty v `reports/intake/`.
 
 Stejné řídicí dokumenty (AGENTS.md, přispívání, konstituce, licence,
 bezpečnostní politika, koop protokol) jsou navíc čitelné přímo na webu
