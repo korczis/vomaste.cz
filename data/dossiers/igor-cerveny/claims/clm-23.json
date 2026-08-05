@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
   },
   "text": "Ministerstvo spravedlnosti trvá na výkladu, že „veškerý oznamovaný majetek, činnosti a závazky musejí se vztahovat ke dni předcházejícímu tomu, než veřejný funkcionář vstoupil do funkce“ — tedy opačně, než jak postupoval ministr.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-12"

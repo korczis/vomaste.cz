@@ -12,6 +12,7 @@
   "title": "SRC-57 — ČeskéNoviny.cz (ČTK): Babiš byl obžalován v kauze Čapí hnízdo, označil to za politický proces (21. 3. 2022)",
   "description": "Obžaloba k Městskému soudu v Praze: Babiš pro pomoc k dotačnímu podvodu, Nagyová pro dotační podvod a poškození finančních zájmů EU; hrozí až deset let.",
   "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://www.ceskenoviny.cz/zpravy/babis-byl-obzalovan-v-kauze-capi-hnizdo-oznacil-to-za-politicky-proces/2180812",
   "published": "2022-03-21",

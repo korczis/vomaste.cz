@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/updates/2026-08-05-3",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-08-05-3",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "date": "2026-08-05",
+  "summary": "Srovnání s primárními dokumenty v datasetu (T-061). CLM-08 povýšeno na CORROBORATED připojením tiskové zprávy Ministerstva spravedlnosti z 1. 7. 2026 (SRC-17), která dokládá skutek, aktéra i datum podání kárné žaloby na soudkyni rozhodující v případu Viktorka; dosavadní tři zdroje tvrzení nesly všechny rodinu ctk. Soud, u něhož soudkyně působí, obsah napadeného rozhodnutí ani smrt dítěte zpráva neuvádí — ty části stojí dál na zpravodajství. Bez připojení zůstávají CLM-09, CLM-11 a CLM-33 (jméno soudkyně, navrhovaný trest a výčet neprovedených důkazů zpráva neobsahuje). Kontrola SRC-21 (Ústavní soud) nenašla tvrzení, k němuž by zdroj patřil a dosud připojen nebyl.",
+  "addedClaims": [],
+  "updatedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-08"
+    }
+  ],
+  "addedGaps": [],
+  "closedGaps": [],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-17"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-21"
+    }
+  ]
+}

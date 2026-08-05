@@ -40,6 +40,28 @@
 //       aspoň v jednom dossieru z jejího pole `dossiers` (composite-key
 //       sémantika dle entity.schema.json) — jinak jde o zamrzlý odkaz
 //       po smazání/sloučení zdroje nebo o chybný zápis při extrakci
+//  S10  týž vydavatel nikdy nezakládá nezávislé doložení: dva zdroje se
+//       shodným `outlet`em (nebo shodnou registrovanou doménou `url`) se
+//       počítají jako JEDEN nezávislý hlas BEZ OHLEDU na `sourceFamily`
+//       (ERROR u claims, WARNING u hran — zrcadlí severitu hostitelského
+//       pravidla S2/S4).
+//
+//       Díra, kterou S10 zavírá: `familyOf` sahá po `outlet`u teprve
+//       tehdy, když je `sourceFamily` prázdná. Dva články TÉHOŽ vydavatele,
+//       z nichž jeden má rodinu vyplněnou a druhý ne, tak dostaly dva
+//       různé klíče (`family:ctk` vs `outlet:FORUM 24`) a S2 je považovala
+//       za dvě nezávislé redakce. Jedna redakce ale nepotvrzuje sama sebe:
+//       badge `CORROBORATED` znamená dva NEZÁVISLÉ vydavatele, ne dvě
+//       různé hodnoty jednoho pole.
+//
+//       Implementačně je S10 vlastnost společného primitivu
+//       `independentPair()`: nezávislé doložení je DVOJICE zdrojů, které
+//       se liší rodinou (S1/S2) A ZÁROVEŇ vydavatelem i registrovanou
+//       doménou (S10). Primitiv používají S1, S2 i S4 — pravidlo tedy
+//       platí i pro grafové hrany. Párová (ne tranzitivní) formulace je
+//       záměrná: kdyby se zdroje slučovaly tranzitivně přes rodinu,
+//       vlastní reportáž Blesku by splynula s ČTK jen proto, že Blesk
+//       jinde ČTK přetiskuje — a pravdivá korroborace by zmizela.
 //
 // Baseline (T-028 fáze D, grandfathered debt): porušení zděděná 1:1
 // z migrovaného obsahu se NEopravují změnou dat ani změkčením pravidel —
@@ -48,7 +70,7 @@
 // scripts/migrations/migrate-content-to-json.mjs): záznam (@id, rule)
 // v allowlistu degraduje chybu na warning; JAKÉKOLI nové porušení mimo
 // allowlist zůstává chybou. Grandfatherovat lze jen evidenční pravidla
-// S1–S4; autorizační pravidla S5/S6 nikdy.
+// S1–S4 a S10; autorizační pravidla S5/S6 nikdy.
 import { existsSync, readFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -57,7 +79,34 @@ import { computeGraphDepths } from "./lib/graph-depth.mjs";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 export const AUTHORIZATIONS_TOML = join(ROOT, "data/authorizations.toml");
 export const SEMANTICS_BASELINE_RELPATH = "_shared/semantics-baseline.json";
-export const BASELINEABLE_RULES = new Set(["S1", "S2", "S3", "S4"]);
+export const BASELINEABLE_RULES = new Set(["S1", "S2", "S3", "S4", "S10"]);
+
+// Víceúrovňové veřejné sufixy: u nich je registrovaná doména až TŘETÍ
+// label od konce. Bez téhle výjimky by `edu.gov.cz` (MŠMT) a
+// `vlada.gov.cz` (Úřad vlády) splynuly na `gov.cz` a S10 by ze dvou
+// různých institucí udělala jednoho vydavatele.
+export const MULTI_LABEL_PUBLIC_SUFFIXES = new Set(["gov.cz", "com.ua", "co.uk", "europa.eu"]);
+
+/*
+ * Registrovaná doména URL — identita vydavatele pro S10. Sjednocuje
+ * redakční subdomény téhož vydavatele (`domaci.hn.cz` i `archiv.hn.cz`
+ * → `hn.cz`, `prazsky.denik.cz` → `denik.cz`), ale nespojuje instituce
+ * pod sdíleným veřejným sufixem (viz MULTI_LABEL_PUBLIC_SUFFIXES).
+ * Vrací null pro neparsovatelnou URL (tvar vlastní schéma).
+ */
+export function registeredDomain(url) {
+  let host;
+  try {
+    host = new URL(url).hostname;
+  } catch {
+    return null;
+  }
+  host = host.toLowerCase().replace(/^www\./, "");
+  const parts = host.split(".");
+  if (parts.length <= 2) return host;
+  const lastTwo = parts.slice(-2).join(".");
+  return MULTI_LABEL_PUBLIC_SUFFIXES.has(lastTwo) ? parts.slice(-3).join(".") : lastTwo;
+}
 
 // Jednoduchý parser [[authorizations]] bloků — čte identická data jako
 // scripts/dossier/validate-authorization.mjs (týž soubor, týž tvar);
@@ -117,6 +166,57 @@ export function collectSemanticsFindings(model, options = {}) {
   };
   const existingSources = (ids) => ids.filter((id) => byId.get(id)?.record.recordType === "source");
   const familiesOf = (ids) => new Set(existingSources(ids).map(familyOf));
+  const sourceRecordsOf = (ids) => existingSources(ids).map((id) => byId.get(id).record);
+  const outletOf = (source) => (typeof source.outlet === "string" ? source.outlet.trim() : "");
+
+  // S10: proč dvojice zdrojů NENÍ nezávislá. Vrací null, když nezávislá
+  // je. Pořadí testů = pořadí pravidel: rodina (S1/S2) → outlet → doména.
+  const collisionReason = (a, b) => {
+    if (familyOf(a["@id"]) === familyOf(b["@id"])) return null; // řeší S1/S2, ne S10
+    const outletA = outletOf(a);
+    if (outletA && outletA === outletOf(b)) return `týž outlet "${outletA}"`;
+    const domainA = registeredDomain(a.url);
+    if (domainA && domainA === registeredDomain(b.url)) return `táž registrovaná doména ${domainA}`;
+    return null;
+  };
+
+  /*
+   * Nezávislé doložení = DVOJICE zdrojů lišících se rodinou (S1/S2)
+   * i vydavatelem (S10: outlet a registrovaná doména). Vrací
+   * [identifierA, identifierB] první takové dvojice, jinak null.
+   *
+   * Párově, ne tranzitivně: sloučit zdroje do skupin přes „sdílí rodinu
+   * NEBO outlet" by řetězilo přes rodinu ctk celý trh (vlastní reportáž
+   * Blesku by splynula s ČT24 jen proto, že oba jinde přetiskují ČTK).
+   * Otázka „existují dva skutečně nezávislí vydavatelé?" je párová.
+   */
+  const independentPair = (ids) => {
+    const records = sourceRecordsOf(ids);
+    for (let i = 0; i < records.length; i++) {
+      for (let j = i + 1; j < records.length; j++) {
+        const a = records[i];
+        const b = records[j];
+        if (familyOf(a["@id"]) === familyOf(b["@id"])) continue;
+        if (collisionReason(a, b)) continue;
+        return [a.identifier, b.identifier];
+      }
+    }
+    return null;
+  };
+
+  // Výčet dvojic, které vypadají jako různé rodiny, ale mají téhož
+  // vydavatele — text hlášky S10 (bez něj by nález nešel ověřit).
+  const publisherCollisions = (ids) => {
+    const records = sourceRecordsOf(ids);
+    const out = [];
+    for (let i = 0; i < records.length; i++) {
+      for (let j = i + 1; j < records.length; j++) {
+        const reason = collisionReason(records[i], records[j]);
+        if (reason) out.push(`${records[i].identifier}+${records[j].identifier} (${reason})`);
+      }
+    }
+    return out;
+  };
 
   // --- S1 + S2: claims ---------------------------------------------------
   for (const wrapper of model.records) {
@@ -127,12 +227,15 @@ export function collectSemanticsFindings(model, options = {}) {
       // Nezávislost přes RODINY, ne přes ID/URL (oprava 6b0bd4d): dva
       // zdroje téže rodiny jsou jedno doložení — status-single je pro ně
       // správný. Kontrola slepá k rodinám by správnou opravu zablokovala.
+      // Od S10 totéž platí pro dva články TÉHOŽ vydavatele s rozdílně
+      // vyplněnou rodinou: jedna redakce = jedno doložení.
       const families = familiesOf(distinct);
-      if (distinct.length === 0 || families.size > 1) {
+      const pair = independentPair(distinct);
+      if (distinct.length === 0 || pair) {
         found(
           "S1",
           wrapper,
-          `${relPath}: status-single cituje ${distinct.length} zdroj(ů) z ${families.size} nezávislých source families — „1 ZDROJ" znamená jedno nezávislé doložení; u 2+ rodin patří status-corroborated`,
+          `${relPath}: status-single cituje ${distinct.length} zdroj(ů) z ${families.size} nezávislých source families${pair ? ` (nezávislá dvojice ${pair.join(" + ")})` : ""} — „1 ZDROJ" znamená jedno nezávislé doložení; u 2+ rodin patří status-corroborated`,
         );
       }
     }
@@ -143,6 +246,14 @@ export function collectSemanticsFindings(model, options = {}) {
           "S2",
           wrapper,
           `${relPath}: status-corroborated cituje ${distinct.length} zdroj(e) z ${families.size} source family/families — definice badge vyžaduje ≥2 zdroje z ≥2 nezávislých rodin`,
+        );
+      } else if (!independentPair(distinct)) {
+        // S10: rodin je formálně dost, ale každá „nezávislá" dvojice
+        // stojí na TÉMŽE vydavateli (jeden článek s rodinou, druhý bez).
+        found(
+          "S10",
+          wrapper,
+          `${relPath}: status-corroborated cituje ${distinct.length} zdroje z ${families.size} source families, ale žádná dvojice nepochází od dvou různých vydavatelů — ${publisherCollisions(distinct).join("; ")}; týž outlet ani táž registrovaná doména nezakládají nezávislé potvrzení bez ohledu na sourceFamily`,
         );
       }
     }
@@ -171,10 +282,14 @@ export function collectSemanticsFindings(model, options = {}) {
       );
     }
     if (record.status === "corroborated") {
+      // Táž definice nezávislosti jako u claims (S2 + S10), jen v
+      // severitě hostitelského pravidla: hrany hlásí S4 jako warning.
       const families = familiesOf(sourceIds);
-      if (families.size < 2) {
+      if (!independentPair(sourceIds)) {
         warnings.push(
-          `${relPath}: hrana se statusem "corroborated", ale všechny zdroje patří do jedné source family — podle vlastního standardu není nezávisle potvrzená`,
+          families.size < 2
+            ? `${relPath}: hrana se statusem "corroborated", ale všechny zdroje patří do jedné source family — podle vlastního standardu není nezávisle potvrzená`
+            : `${relPath}: hrana se statusem "corroborated" a ${families.size} source families, ale žádná dvojice zdrojů nepochází od dvou různých vydavatelů (S10) — ${publisherCollisions(sourceIds).join("; ")}`,
         );
       }
     }

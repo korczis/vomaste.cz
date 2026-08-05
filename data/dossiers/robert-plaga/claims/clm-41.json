@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
   },
   "text": "Plaga Benešovi doporučil seznámit se s materiálem a navštívit školy, které telefony o přestávkách omezily, s tím, že poté „změní názor a bude tento návrh podporovat“.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-15"

@@ -32,5 +32,11 @@ ochrana vázaná na výkon funkce, ne zproštění odpovědnosti; co se stane
 po skončení jeho mandátu, článek neuvádí — viz
 [GAP-05](@/dossiers/andrej-babis/gaps/gap-05.md).
 
-**Nezávislost**: jediný dosud otevřený a přečtený zdroj k tomuto
-konkrétnímu vývoji; stav tvrzení proto zůstává `1 ZDROJ`.
+**Nezávislost**: k **francouzskému vývoji**
+([CLM-54](@/dossiers/andrej-babis/claims/clm-54.md)) je to jediný dosud
+otevřený a přečtený zdroj, to tvrzení proto zůstává `1 ZDROJ`. Článek
+však zároveň doslova označuje Babiše za **premiéra** a uvádí, že se jím
+na konci roku 2025 znovu stal — tím dokládá i
+[CLM-36](@/dossiers/andrej-babis/claims/clm-36.md), které tak má vedle
+rodiny `ctk` druhou, nezávislou rodinu a je `CORROBORATED`
+(doplněno 2026-08-05).

@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/boris-stastny"
   },
   "text": "Vláda na návrh ministra pro sport, prevenci a zdraví Borise Šťastného odvolala 16. prosince 2025 předsedu Národní sportovní agentury Ondřeje Šebka a člena Rady NSA Františka Horáka; jde o personální rozhodnutí vlády, nikoli o výsledek kontrolního či trestního řízení.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-11"
@@ -21,6 +21,9 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-20"
     }
   ],
   "subjects": [
@@ -30,7 +33,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/boris-stastny/_index.md#registr-tvrzeni)."
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/boris-stastny/_index.md#registr-tvrzeni).\n\n**Doplněno 2026-08-05.** Připojeno usnesení vlády č. 1029/2025\n([SRC-20](@/dossiers/boris-stastny/sources/src-20.md)), které doslovně dokládá,\nže vláda **16. 12. 2025** odvolala Mgr. Ondřeje Šebka z funkce předsedy Národní\nsportovní agentury a Mgr. Františka Horáka z funkce člena rady NSA. Čistě\noperativní obsah usnesení podpírá i závěr tvrzení, že jde o **personální\nrozhodnutí vlády, ne o výsledek kontrolního či trestního řízení** — dokument\nneobsahuje žádné odůvodnění. **Limit:** usnesení neuvádí, že se tak stalo na\nnávrh ministra pro sport, prevenci a zdraví; tuto část dokládá dál jen\nzpravodajství."
     }
   ]
 }

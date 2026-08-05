@@ -39,14 +39,25 @@ const compiled = getCompiledModel(ROOT);
 const dossierSlugs = compiled.records.filter((w) => w.registry === "dossier").map((w) => w.dossier);
 
 // --- per-dossier source-family lookup, so we can report independent-
-//     confirmation counts, not just raw source counts (kanonické
-//     sourceFamily; zdroj bez rodiny je vlastní singleton — stejná
-//     sémantika jako validate-semantics S2) ---
+//     confirmation counts, not just raw source counts.
+//
+// Klíč rodiny je týž fallback jako `familyOf` v validate-semantics
+// (sourceFamily > outlet > zdroj sám za sebe) — bez outletu by dva
+// články jednoho vydavatele bez vyplněné rodiny počítaly jako dvě
+// nezávislá doložení.
+//
+// Číslo je ale HORNÍ ODHAD nezávislosti: pravidlo S10 (týž vydavatel
+// nezakládá nezávislé doložení bez ohledu na sourceFamily) je párové,
+// ne klíčové, a jedním seskupovacím klíčem ho vyjádřit nelze. Pro triáž
+// autorizačních kandidátů to stačí; závaznou kontrolu vlastní brána
+// validate-semantics (S1/S2/S10), ne tenhle report. ---
 function loadSourceFamilies(slug) {
   const familyOf = new Map();
   for (const w of recordsOf(compiled, slug, "sources")) {
     const r = w.record;
-    familyOf.set(r.identifier, r.sourceFamily || `singleton:${r.identifier}`);
+    const family = (typeof r.sourceFamily === "string" && r.sourceFamily.trim()) || "";
+    const outlet = (typeof r.outlet === "string" && r.outlet.trim()) || "";
+    familyOf.set(r.identifier, family || (outlet && `outlet:${outlet}`) || `singleton:${r.identifier}`);
   }
   return familyOf;
 }

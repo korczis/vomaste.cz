@@ -24,7 +24,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/robert-plaga/_index.md#registr-tvrzeni)."
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/robert-plaga/_index.md#registr-tvrzeni).\n\n**Nález ze srovnání s primárním dokumentem (2026-08-05).** Vlastní sdělení\nČeské školní inspekce ([SRC-36](@/dossiers/robert-plaga/sources/src-36.md))\ndokládá věcné jádro tohoto tvrzení — že „data z již realizované části testování\nz českého jazyka a matematiky budou vyhodnocena a analyzována“ a že data\ndotazníkového šetření o socioekonomických podmínkách a duševní pohodě žáků byla\n**vymazána 26. 5. 2026**. Proti zpravodajské verzi je tedy přesnější i v čase:\npopisuje dokonaný výmaz, ne budoucí záměr. ČŠI ale **necituje mluvčího MŠMT\nOndřeje Macuru**, a protože toto tvrzení je atribuované („podle mluvčího“),\nprimární dokument atribuci nahradit nemůže — ta se týká toho, kdo co řekl.\nZdroj proto k tomuto tvrzení připojen není a stav zůstává `1 ZDROJ`."
     }
   ]
 }

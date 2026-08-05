@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
   },
   "text": "V květnu 2026 policie trestní oznámení odložila z důvodu promlčení (oznámilo Obvodní státní zastupitelství pro Prahu 4); rozhodnutí není pravomocné, žena proti němu podala stížnost. Jde o procesní důsledek uplynutí promlčecí doby, ne o rozhodnutí o vině nebo nevině",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-31"

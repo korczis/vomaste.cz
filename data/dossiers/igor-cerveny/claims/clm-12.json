@@ -15,6 +15,12 @@
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-09"
     }
   ],
   "subjects": [

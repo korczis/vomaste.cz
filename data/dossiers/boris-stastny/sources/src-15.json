@@ -12,6 +12,7 @@
   "title": "SRC-15 — Deník.cz (VLTAVA LABE MEDIA)",
   "description": "Předsedou NSA bude Kovář, oznámil ministr Šťastný. Úkolem kontrola dotací",
   "outlet": "Deník.cz (VLTAVA LABE MEDIA)",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://www.denik.cz/ostatni_sport/narodni-sportovni-agentura-predseda-karel-kovar-ministr-boris-stastny-motoriste.html",
   "published": "2026-01-26",

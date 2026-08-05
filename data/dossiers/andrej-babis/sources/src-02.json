@@ -12,6 +12,7 @@
   "title": "SRC-02 — ČT24",
   "description": "Babiš v únoru 2026 vložil akcie Agrofertu do svěřenského fondu RSVP Trust; opozice a Evropská komise to nepovažují za vyřešení střetu zájmů.",
   "outlet": "ČT24 (Česká televize)",
+  "sourceFamily": "ctk",
   "sourceType": "veřejnoprávní zpravodajství",
   "url": "https://ct24.ceskatelevize.cz/clanek/domaci/babis-oznamil-ze-vlozil-akcie-agrofertu-do-sverenskeho-fondu-rsvp-trust-370561",
   "published": "2026-02-20",

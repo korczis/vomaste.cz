@@ -9,12 +9,15 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
   },
-  "text": "SZIF se na základě objednaných externích právních analýz rozhodl nevymáhat zpětně nárokové evropské dotace vyplacené Agrofertu v letech 2017–2021; podle výkladu se zákaz vztahuje výlučně na nenárokové dotace.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "text": "SZIF se na základě objednaných externích právních analýz rozhodl nevymáhat zpětně nárokové evropské dotace vyplacené Agrofertu v období, které stanovisko Ministerstva zemědělství vymezuje daty 6. 12. 2017 – 17. 12. 2021 (citované zpravodajství je uvádělo zaokrouhleně jako „léta 2017–2021“); podle výkladu se zákaz vztahuje výlučně na nenárokové dotace.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-23"
     }
   ],
   "subjects": [
@@ -24,7 +27,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/martin-sebestyan/_index.md#registr-tvrzeni)."
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/martin-sebestyan/_index.md#registr-tvrzeni).\n\n**Upřesnění období podle primárního dokumentu (2026-08-05).** Stanovisko\nMinisterstva zemědělství k problematice střetu zájmů\n([SRC-23](@/dossiers/martin-sebestyan/sources/src-23.md)) vymezuje posuzované\nhistorické výplaty daty **6. 12. 2017 – 17. 12. 2021**; citované zpravodajství\n([SRC-09](@/dossiers/martin-sebestyan/sources/src-09.md)) je uvádělo zaokrouhleně\njako „léta 2017–2021“. **Limit:** stanovisko je z 16. 12. 2025, tedy starší než\nrozhodnutí SZIF z dubna 2026 — samotné rozhodnutí nevymáhat ani objednání\nexterních právních analýz nedokládá; ty stojí dál na SRC-09."
     }
   ]
 }

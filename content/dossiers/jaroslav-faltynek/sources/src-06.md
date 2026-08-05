@@ -21,9 +21,12 @@ obviněných. Stížnost **Andreje Babiše** proti obvinění zamítl jako
 **nedůvodnou** — Babiš a jeho blízcí se stížností neuspěli a zůstali
 dále stíháni.
 
-**Nezávislost.** Jiná redakce a vydavatel než SRC-02 (Hospodářské
-noviny/Economia) — u CLM-03 se proto počítají jako dvě nezávislá
-potvrzení.
+**Nezávislost — opraveno 2026-08-05**: detekce zdrojových rodin ověřila,
+že Info.cz i Hospodářské noviny (SRC-02) uvádějí jako autora ČTK. Jiný
+vydavatel není jiný zdroj — jde o dvě vydání téže agenturní zprávy.
+Dřívější poznámka tvrdící dvě nezávislá potvrzení byla nesprávná a je
+tímto opravena. Oba zdroje patří do rodiny `ctk`, CLM-03 proto nese stav
+`1 ZDROJ`.
 
 **Poznámka k procesní přesnosti**: rozhodnutí je procesní úkon státního
 zástupce, ne rozsudek soudu — není to rozhodnutí o vině ani o nevině

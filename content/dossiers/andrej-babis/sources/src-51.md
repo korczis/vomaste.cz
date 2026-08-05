@@ -28,5 +28,12 @@ konstatující podvodné získání dotace označila za nepoužitelný důkaz.
 krok — **není** to přiznání viny (firma do dohody prosadila opak) ani
 rozhodnutí o vině; nezasahuje do trestního řízení.
 
-**Nezávislost**: jediný přímo otevřený zdroj k detailům dohody — stav
-`1 ZDROJ`. Otevřeno a přečteno 2026-08-01.
+**Nezávislost**: k **detailům dohody** (přesné částky, znění ujednání,
+vyjádření mluvčího — [CLM-73](@/dossiers/andrej-babis/claims/clm-73.md),
+[CLM-74](@/dossiers/andrej-babis/claims/clm-74.md)) je to jediný přímo
+otevřený zdroj, ty proto zůstávají `1 ZDROJ`. Samotný **fakt vrácení
+dotace v roce 2018** ale doloženo i agenturní zprávou
+[SRC-24](@/dossiers/andrej-babis/sources/src-24.md) (rodina `ctk`) —
+dvě nezávislé rodiny, a
+[CLM-52](@/dossiers/andrej-babis/claims/clm-52.md) je proto
+`CORROBORATED` (doplněno 2026-08-05). Otevřeno a přečteno 2026-08-01.

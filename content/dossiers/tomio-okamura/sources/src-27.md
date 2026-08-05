@@ -20,6 +20,9 @@ bylo 62." Pro vydání hlasovali zákonodárci vládních ODS, STAN, KDU-ČSL
 a TOP 09, opoziční Piráti a nezařazený Ivo Vondrák; proti hlasovali
 poslanci SPD a zástupci ANO.
 
-**Nezávislost**: samostatná redakce od ČT24 (SRC-18) — nezávisle
-potvrzuje tutéž veřejnou skutečnost (výsledek a rozložení hlasování).
-Proto CLM-25 a CLM-26 nesou stav `CORROBORATED`.
+**Nezávislost — opraveno 2026-08-05**: detekce zdrojových rodin našla
+v Hospodářských novinách `<meta name="author" content="ČTK">` a na ČT24
+(SRC-18) „ČTK, ČT24" — obojí je vydání téže agenturní zprávy. Dřívější
+poznámka tvrdící samostatnou redakci byla nesprávná a je tímto opravena.
+Oba zdroje patří do rodiny `ctk`, CLM-25 i CLM-26 proto nesou stav
+`1 ZDROJ`.

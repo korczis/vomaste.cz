@@ -12,6 +12,7 @@
   "title": "SRC-07 — ČT24: Poslanecký klub ANO povede Taťána Malá (8. 10. 2025)",
   "description": "ČT24 nezávisle na primárním záznamu Poslanecké sněmovny (SRC-01) potvrzuje, že Jaroslav Faltýnek byl 8. 10. 2025 zvolen jedním z řadových místopředsedů poslaneckého klubu ANO 2011.",
   "outlet": "ČT24 (Česká televize)",
+  "sourceFamily": "ctk",
   "sourceType": "veřejnoprávní zpravodajství",
   "url": "https://ct24.ceskatelevize.cz/clanek/domaci/poslanecky-klub-ano-si-zvoli-vedeni-schazi-se-i-ods-365852",
   "published": "2025-10-08",

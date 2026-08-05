@@ -12,6 +12,7 @@
   "title": "SRC-26 — Seznam Zprávy",
   "description": "Zákaz mobilů ve školách: Odpovědi na nejčastější otázky",
   "outlet": "Seznam Zprávy",
+  "sourceFamily": "seznam-zpravy",
   "sourceType": "zpravodajství",
   "url": "https://www.seznamzpravy.cz/clanek/kampus-zakladni-vzdelavani-mohou-diteti-ve-skole-telefon-zabavit-odpovidame-na-otazky-k-zakazu-mobilu-311258",
   "published": "2026-07-20",

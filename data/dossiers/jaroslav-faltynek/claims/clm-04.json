@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek"
   },
   "text": "Zrušení stíhání bylo rozhodnutím státního zástupce, nikoli soudu; citovaný zdroj neuvádí žádné rozhodnutí o vině ani o nevině",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-02"

@@ -12,6 +12,7 @@
   "title": "SRC-24 — Opera PLUS",
   "description": "Méně peněz pro živou kulturu. Ministerstvo kultury hájí rozpočtové škrty",
   "outlet": "Opera PLUS",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://operaplus.cz/mene-penez-pro-zivou-kulturu-ministerstvo-kultury-haji-rozpoctove-skrty/",
   "published": "2026-02-18",

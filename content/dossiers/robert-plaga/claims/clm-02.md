@@ -15,3 +15,10 @@ lang = "cs"
 clm_id = "CLM-02"
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/robert-plaga/_index.md#registr-tvrzeni).
+
+**Doplněno 2026-08-05.** Připojeno vlastní sdělení České školní inspekce
+([SRC-36](@/dossiers/robert-plaga/sources/src-36.md)), tedy primární dokument
+úřadu, který testování prováděl: „na základě rozhodnutí ministra školství,
+mládeže a tělovýchovy bylo ke dni 25. května 2026 zastaveno letošní zjišťování
+výsledků vzdělávání žáků 5. a 9. ročníků základních škol“. **Limit:** sdělení
+neuvádí stranickou příslušnost ministra ani slovo „povinné“.

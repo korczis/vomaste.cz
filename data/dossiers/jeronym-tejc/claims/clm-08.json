@@ -21,6 +21,9 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-17"
     }
   ],
   "subjects": [
@@ -30,7 +33,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jeronym-tejc/_index.md#registr-tvrzeni)."
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jeronym-tejc/_index.md#registr-tvrzeni).\n\n**Doplněno 2026-08-05.** Připojena tisková zpráva Ministerstva spravedlnosti\n([SRC-17](@/dossiers/jeronym-tejc/sources/src-17.md)) datovaná 1. 7. 2026, která\ndokládá skutek, aktéra i datum: ministr Tejc podal kárnou žalobu na soudkyni,\nkterá rozhodovala v případu Viktorka. **Limit:** zpráva neuvádí soud, u něhož\nsoudkyně působí, obsah napadeného rozhodnutí ani smrt dítěte — tyto části\ndokládá dál jen citované zpravodajství, jak si tvrzení samo hlídá formulací\n„podle citovaného zpravodajství“."
     }
   ]
 }

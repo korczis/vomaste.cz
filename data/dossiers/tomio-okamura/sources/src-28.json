@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-28",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-28",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
+  },
+  "title": "SRC-28 — Poslanecká sněmovna Parlamentu ČR: 128. schůze, 90. hlasování, 12. 2. 2025 (žádost o souhlas s trestním stíháním poslance T. Okamury)",
+  "description": "Oficiální záznam jmenovitého hlasování Poslanecké sněmovny: 128. schůze, 90. hlasování z 12. 2. 2025, 21:49 — přítomno 143, pro 81, proti 62, návrh přijat.",
+  "outlet": "Poslanecká sněmovna Parlamentu ČR",
+  "sourceType": "primární úřední záznam",
+  "url": "https://www.psp.cz/sqw/hlasy.sqw?G=84925",
+  "published": "2025-02-12",
+  "retrieved": "2026-08-05",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-25"
+    }
+  ],
+  "subjects": [
+    "okamura"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Primární parlamentní záznam** — oficiální výpis jmenovitého hlasování na webu\nPoslanecké sněmovny. Otevřen a přečten 2026-08-05.\n\n**Co dokládá doslovně:** „128. schůze, 90. hlasování, 12. února 2025, 21:49:00 —\nŽádost o vyslovení souhlasu PS k trestnímu stíhání poslance T. Okamury. **NÁVRH BYL\nPŘIJAT.** Přítomno: 143 | Je třeba: 72 | Ano: 81 | Ne: 62 | Zdržel se: 0.\" Tytéž\npočty potvrzuje stenoprotokol téže schůze\n([část 104](https://www.psp.cz/eknih/2021ps/stenprot/128schuz/s128104.htm)):\n„Hlasování číslo 90, přihlášeno bylo 143 poslanců a poslankyň, pro 81, proti 62.\nKonstatuji, že návrh usnesení byl schválen.\" Hlasovalo se o usnesení, jímž\n„Poslanecká sněmovna podle čl. 27 odst. 4 (…) Ústavy České republiky (…) vyslovuje\nsouhlas k trestnímu stíhání poslance Tomia Okamury\".\n\n**Nezávislost:** vlastní evidence zákonodárného sboru, ne zpravodajský text. Oba\ndosavadní zdroje CLM-25 — [SRC-18](@/dossiers/tomio-okamura/sources/src-18.md)\na [SRC-27](@/dossiers/tomio-okamura/sources/src-27.md) — nesou rodinu `ctk`;\ntímto záznamem přibývá druhá nezávislá rodina a CLM-25 přechází na stav\n`CORROBORATED`.\n\n**Poznámka k přesnosti a limitům**: vydání poslance je **parlamentní procesní\núkon**, ne zjištění o vině či nevině a ne obžaloba — o té rozhoduje státní\nzástupce a o vině soud. Záznam dokládá jen výsledek hlasování ze dne 12. 2. 2025\na nevypovídá nic o pozdějším osudu věci; ten dokládají jiné záznamy dossieru\n(mimo jiné pozdější nevydání téhož poslance dne 5. 3. 2026). Pro úplnost:\nnásledující hlasování č. 91 téže schůze se týkalo vyřazení zbývajících bodů\npořadu, nikoli osoby poslance."
+    }
+  ],
+  "order": 28
+}

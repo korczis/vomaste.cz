@@ -12,11 +12,11 @@
   "title": "SRC-26 — Romea.cz",
   "description": "Ministryně Mrázová využívá levné obecní bydlení v Bílině. Řada místních přitom řeší exekuce a bytovou nouzi, opozice mluví o pokrytectví",
   "outlet": "Romea.cz",
+  "sourceFamily": "seznam-zpravy",
   "sourceType": "zpravodajství",
   "url": "https://romea.cz/cz/domaci/ministryne-mrazova-vyuziva-levne-obecni-bydleni-v-biline-rada-mistnich-pritom-resi-exekuce-a-bytovou-nouzi-opozice-mluvi-o-pokrytectvi",
   "published": "2026-04-30",
   "retrieved": "2026-07-30",
-  "sourceFamily": "seznam-zpravy-syndication",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-28"

@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
   },
   "text": "Obvodní soud pro Prahu 1 dne 3. června 2026 uznal hnutí SPD vinným z podněcování k nenávisti kvůli dvěma předvolebním plakátům a uložil peněžitý trest 3 miliony korun; soudkyně podle citovaného zpravodajství výslovně uvedla, že rozsudek není pravomocný",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-01"

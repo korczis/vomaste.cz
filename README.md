@@ -366,6 +366,7 @@ Instalace `just`: <https://github.com/casey/just#installation>.
 | `npm run build:government-roster` | z `data/government.toml` vygeneruje kontextové entity členů vlády (veřejná funkce z oficiálního zdroje, `publicationRole = "context"`, **nikdy** dossier); existující záznamy nikdy nepřepisuje; součást `npm run build` |
 | `node scripts/osint/ares-lookup.mjs --ico=… \| --name="…"` | dotaz do ARES (jediný spolehlivě funkční primární rejstřík) — **není** součástí `npm run build`, dělá živý síťový dotaz; doloží identitu/sídlo/formu/status, **nedoloží** skutečné majitele ani „od kdy ovládá" |
 | `npm run screening:public-money -- --ico=…` | screening toku veřejných prostředků k IČO z registru smluv (ISRS) — **není** součástí `npm run build`, stahuje měsíční otevřená data; výstup je **interní** (`data/generated/public-money-screening.json` + `reports/public-money-screening.md`), nikdy se neroutuje. Doloží zveřejněné smlouvy, objem a objednatele v pokrytém období; **nedoloží** žádné pochybení ani úplnost. Viz [screening veřejných peněz](#screening-toku-veřejných-prostředků) |
+| `npm run sources:detect-family` | detekce zdrojové rodiny u zdrojů s prázdným `sourceFamily` — **není** součástí `npm run build`, stahuje živě stránky zdrojů. Výstup je **návrh** (`data/generated/source-family-proposals.json` + `reports/source-family-proposals.md`), do kanonických dat sám nezapisuje; zápis dělá samostatný krok `--apply`, a to jen u verdiktu `ctk` a jen do prázdného pole. Doloží kredit původu v metadatech/podpisu/patičce; **nedoloží** obsahovou totožnost článků ani úplnost. Viz [detekce zdrojových rodin](#detekce-zdrojových-rodin) |
 | `node scripts/osint/expand-entity.mjs --ico=… [--write]` | rozbalí rejstříkové okolí firmy (statutární orgány, společníci) na kontextové entity — kanonické JSON záznamy v `data/dossiers/_shared/entities/` (stránky `/entities/…` přegeneruje `npm run data:build`); na rozdíl od základního endpointu čte větev veřejného rejstříku, která u s.r.o. **vrací** zapsané společníky i velikost podílu. Akcionáři a.s. v rejstříku nejsou, takže prázdný seznam znamená „nezapsáno", ne „firma nemá vlastníky". Data narození a adresy bydliště nepřebírá; existující záznam nikdy nepřepíše |
 
 ## Screening toku veřejných prostředků
@@ -426,6 +427,81 @@ nafoukly.
 > `<zaznam>`, je tvrdá chyba, ne prázdný výsledek — ale první běh na
 > funkční síti je potřeba zkontrolovat očima. Mapování žije na jednom místě
 > (konstanta `ISRS_DUMP` v `scripts/osint/screen-public-money.mjs`).
+
+## Detekce zdrojových rodin
+
+Badge `CORROBORATED` slibuje **dvě nezávislá doložení**. Zdroj bez
+`sourceFamily` se ale v pravidlech S1/S2/S4 počítá sám za sebe přes
+`outlet` — pět vydání téže agenturní zprávy v pěti médiích pak vypadá
+jako pět nezávislých redakcí. `npm run sources:detect-family` tuhle
+kontrolu dělá strojově a opakovatelně, místo ručního čtení bylines.
+
+```bash
+npm run sources:detect-family                          # všechny zdroje s prázdnou rodinou
+npm run sources:detect-family -- --dossier=andrej-babis --limit=20
+node scripts/osint/detect-source-family.mjs --apply data/generated/source-family-proposals.json
+node scripts/osint/detect-source-family.mjs --apply … --dry-run
+```
+
+| Volba | Význam |
+|---|---|
+| `--dossier=<slug>`, `--limit=<n>` | zúžení dávky |
+| `--rate=<ms>`, `--timeout=<ms>` | rate limit (výchozí 600 ms) a timeout požadavku |
+| `--no-cache` | ignoruje staženou cache v `.tmp/source-family/` |
+| `--apply <proposals.json>` | **samostatný, vědomý krok**: zapíše rodinu do kanonických dat |
+| `--dry-run` | s `--apply`: vypíše plán, ale nic nezapíše |
+
+### Dva kroky, oddělené záměrně
+
+Detekce **nikdy nezapisuje do `data/dossiers/**` ani do `content/`** —
+odmítá to `assertWritablePath` v kódu, ne dobrý úmysl. Píše jen návrhy
+do `data/generated/source-family-proposals.json` (gitignored) a report
+`reports/source-family-proposals.md`. Chybný detektor tak nemůže tiše
+změnit dossier.
+
+Zápis dělá až `--apply`, a to s trojím zámkem: jen verdikt `ctk`, jen do
+**prázdného** pole a nikdy přepisem existující hodnoty. Kolize se hlásí,
+netiší.
+
+### Jak se rozhoduje
+
+Rozhoduje **doslovný kredit původu** ve třech ankotvených oblastech,
+nikdy doména, outlet ani podobnost titulků:
+
+1. strojová metadata — `<meta name="author">`, `article:author`,
+   JSON-LD `author`;
+2. podpisový element (class/id/rel pojmenované jako autor či podpis) a
+   sigla-podpis typu `čtk, tb` v samostatném odstavci;
+3. patička `Zdroj: ČTK`, agenturní značka `(čtk)` / `–ČTK/RED–` a odkaz
+   na autorský rozcestník `/author/ctk/`.
+
+Agenturní značka **má přednost před jménem redaktora**: byline
+„Martin Kézr, ČTK" je převzatá agenturní zpráva, ne vlastní text. Tělo
+článku se záměrně neprohledává — zmínka „řekl ČTK" je běžná i ve
+vlastním zpravodajství a rodinu vyrobit nesmí.
+
+| Verdikt | Význam | Zapíše `--apply`? |
+|---|---|---|
+| `ctk` | doložený kredit ČTK | ano, do prázdného pole |
+| jiná rodina | doložený jiný původ (přetisk cizí redakce/agentury) — navrhuje se podle **původu**, ne podle vydavatele | ne, rozhoduje člověk |
+| `own` | jmenovitý autor bez agenturní značky ⇒ rodina se **nevyplňuje** (fallback na outlet je správný) | ne |
+| `unknown` | nezjištěno (paywall, 403, chybějící podpis) ⇒ rodina se **nevyplňuje** | ne |
+
+`unknown` **není** „vlastní zpravodajství" — je to přiznané „nezjištěno".
+Každý návrh nese doslovný úryvek, který rozhodl; návrh bez evidence
+nevznikne.
+
+### Co detekce nedokládá
+
+- **Obsahovou totožnost článků.** Rodina `ctk` říká „původ je agenturní
+  zpráva ČTK", ne „tyhle dva texty jsou identické". To je přesně ta
+  vlastnost, kterou S2 potřebuje.
+- **Úplnost.** Stránka za paywallem nebo s HTTP 403 končí jako `unknown`
+  a rodina zůstává prázdná.
+- **Kurátorské rozhodnutí o užší rodině.** Tam, kde člověk pojmenoval
+  rodinu podle konkrétní reportáže (`seznam-zpravy-syndication`,
+  `denik-n`), detektor vidí jen agenturní kredit stránky. Proto `--apply`
+  nikdy nepřepisuje existující hodnotu.
 
 ## Přidání obsahu do dossieru
 

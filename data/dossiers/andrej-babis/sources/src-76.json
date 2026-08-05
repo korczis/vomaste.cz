@@ -12,6 +12,7 @@
   "title": "SRC-76 — Seznam Zprávy: Online: Soud vynesl trest za Čapí hnízdo (4. 5. 2026)",
   "description": "Vlastní online report Seznam Zpráv (Radek Nohl) z jednání Městského soudu v Praze 4. 5. 2026 — návrh trestu státního zástupce Šarocha pro Janu Nagyovou, závěrečné řeči a postoj obou obžalovaných k vině.",
   "outlet": "Seznam Zprávy",
+  "sourceFamily": "seznam-zpravy",
   "sourceType": "zpravodajství / reportáž",
   "url": "https://www.seznamzpravy.cz/clanek/domaci-kauzy-online-zacina-soud-kde-bude-chybet-babis-305254",
   "published": "2026-05-04",

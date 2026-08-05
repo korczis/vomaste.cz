@@ -19,3 +19,12 @@ src_id = "SRC-22"
 Oficiální informace MŠMT o ukončení výuky v pátek 26. června 2026, o tom, že opatření nemá vliv na kvalitu výuky, o možnosti škol požádat o výjimku a o provozu školní družiny v období prázdnin. Text neuvádí konkrétní paragraf školského zákona ani přímé citace ministra.
 
 Zdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji.
+
+**Nálezy bez připojení (2026-08-05, T-061):** oficiální informace MŠMT dokládá
+i části [CLM-16](@/dossiers/robert-plaga/claims/clm-16.md) (konec výuky v pátek
+26. června 2026 — nikoli původní termín 30. června, autorství rozhodnutí ani
+datum oznámení 31. 3. 2026) a
+[CLM-17](@/dossiers/robert-plaga/claims/clm-17.md) (ujištění, že opatření nemá
+vliv na kvalitu výuky — nikoli zdůvodnění organizačními a provozními potřebami
+škol a chováním části rodin). Obě tvrzení už mají stav `CORROBORATED` z jiných
+zdrojů a doložení by u obou bylo jen dílčí, takže zdroj k nim připojen není.

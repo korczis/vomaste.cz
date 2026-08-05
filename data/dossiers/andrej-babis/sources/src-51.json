@@ -12,6 +12,7 @@
   "title": "SRC-51 — Seznam Zprávy: Společnost Imoba vrátila 50milionovou dotaci na Čapí hnízdo (29. 6. 2018)",
   "description": "Imoba vrátila dotaci (46 213 236,80 Kč do státního rozpočtu, 3 747 019,20 Kč Středočeskému kraji); do dohody prosadila, že podmínky neporušila, a zprávu OLAF označila za nepoužitelný důkaz.",
   "outlet": "Seznam Zprávy",
+  "sourceFamily": "seznam-zpravy",
   "sourceType": "zpravodajství",
   "url": "https://www.seznamzpravy.cz/clanek/spolecnost-imoba-vratila-50-milionovou-dotaci-na-capi-hnizdo-50507",
   "published": "2018-06-29",
@@ -22,6 +23,9 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-74"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-52"
     }
   ],
   "subjects": [
@@ -30,7 +34,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Seznam Zprávy informují, že společnost Imoba z holdingu Agrofert\nvrátila středočeskému dotačnímu úřadu téměř padesátimilionovou dotaci\nna farmu Čapí hnízdo — den poté, co úřad schválil dohodu o vrácení.\nČástka 46 213 236,80 koruny mířila do státního rozpočtu, 3 747 019,20\nkoruny Středočeskému kraji. Mluvčí Agrofertu uvedl: „K dobrovolnému\nvrácení přistupujeme zejména proto, že nelze v dohledné době očekávat\nnezávislé a spravedlivé posouzení případu soudem.“ Do dohody Imoba\nprosadila, že podmínky přidělení dotace neporušila, a zprávu OLAF\nkonstatující podvodné získání dotace označila za nepoužitelný důkaz.\n\n**Poznámka k procesní přesnosti**: vrácení dotace je účetní a smluvní\nkrok — **není** to přiznání viny (firma do dohody prosadila opak) ani\nrozhodnutí o vině; nezasahuje do trestního řízení.\n\n**Nezávislost**: jediný přímo otevřený zdroj k detailům dohody — stav\n`1 ZDROJ`. Otevřeno a přečteno 2026-08-01."
+      "value": "Seznam Zprávy informují, že společnost Imoba z holdingu Agrofert\nvrátila středočeskému dotačnímu úřadu téměř padesátimilionovou dotaci\nna farmu Čapí hnízdo — den poté, co úřad schválil dohodu o vrácení.\nČástka 46 213 236,80 koruny mířila do státního rozpočtu, 3 747 019,20\nkoruny Středočeskému kraji. Mluvčí Agrofertu uvedl: „K dobrovolnému\nvrácení přistupujeme zejména proto, že nelze v dohledné době očekávat\nnezávislé a spravedlivé posouzení případu soudem.“ Do dohody Imoba\nprosadila, že podmínky přidělení dotace neporušila, a zprávu OLAF\nkonstatující podvodné získání dotace označila za nepoužitelný důkaz.\n\n**Poznámka k procesní přesnosti**: vrácení dotace je účetní a smluvní\nkrok — **není** to přiznání viny (firma do dohody prosadila opak) ani\nrozhodnutí o vině; nezasahuje do trestního řízení.\n\n**Nezávislost**: k **detailům dohody** (přesné částky, znění ujednání,\nvyjádření mluvčího — [CLM-73](@/dossiers/andrej-babis/claims/clm-73.md),\n[CLM-74](@/dossiers/andrej-babis/claims/clm-74.md)) je to jediný přímo\notevřený zdroj, ty proto zůstávají `1 ZDROJ`. Samotný **fakt vrácení\ndotace v roce 2018** ale doloženo i agenturní zprávou\n[SRC-24](@/dossiers/andrej-babis/sources/src-24.md) (rodina `ctk`) —\ndvě nezávislé rodiny, a\n[CLM-52](@/dossiers/andrej-babis/claims/clm-52.md) je proto\n`CORROBORATED` (doplněno 2026-08-05). Otevřeno a přečteno 2026-08-01."
     }
   ],
   "order": 51

@@ -12,6 +12,7 @@
   "title": "SRC-15 — ČT24 (Česká televize)",
   "description": "Zákaz mobilů ve školách je třeba, míní část expertů, ombudsman řeší jen následek",
   "outlet": "ČT24 (Česká televize)",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://ct24.ceskatelevize.cz/clanek/domaci/zakaz-mobilu-ve-skolach-je-treba-mini-cast-expertu-ombudsman-resi-jen-nasledek-375843",
   "published": "2026-07-24",

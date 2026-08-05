@@ -12,6 +12,7 @@
   "title": "SRC-08 — ČT24 (Česká televize)",
   "description": "Inspekce našla chyby u obou stran sporu o rozhovor armády s prezidentem",
   "outlet": "ČT24 (Česká televize)",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://ct24.ceskatelevize.cz/clanek/domaci/inspekce-nasla-chyby-v-armadnim-sporu-o-rozhovor-s-prezidentem-374516",
   "published": "2026-06-12",

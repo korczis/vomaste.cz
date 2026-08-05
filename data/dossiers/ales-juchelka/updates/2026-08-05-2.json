@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/updates/2026-08-05-2",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-08-05-2",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
+  },
+  "date": "2026-08-05",
+  "summary": "Korroborace bez nového hledání (T-059): CLM-30 povýšeno na CORROBORATED připojením SRC-19 — rozhovor ministra v ČT24 (Daniel Takáč, 27. 7. 2026), v němž Juchelka argument formuluje sám: Evropská komise podle něj zaplatí dalších sedm set milionů korun, pokud Česko splní slíbený milník u dětských skupin, a proto o prostředky nepřijde. Zdroj byl v datech veden u CLM-25, CLM-28, CLM-29, CLM-31 a CLM-32; tvrzení dosud stálo jen na FORUM 24 (SRC-09). Obsah ověřen otevřením zdrojové stránky.",
+  "addedClaims": [],
+  "updatedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-30"
+    }
+  ],
+  "addedGaps": [],
+  "closedGaps": [],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-19"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-09"
+    }
+  ]
+}

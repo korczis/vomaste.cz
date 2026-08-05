@@ -9,7 +9,7 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
   },
-  "text": "Nejvyšší správní soud dne 28. listopadu 2025 zamítl kasační stížnost Kosteleckých uzenin ze skupiny Agrofert a potvrdil, že firma neměla nárok na dotaci z Programu rozvoje venkova, o kterou žádala v roce 2018, kvůli střetu zájmů tehdejšího premiéra Andreje Babiše",
+  "text": "Nejvyšší správní soud rozsudkem č. j. 6 Afs 82/2025-75 ze dne 27. listopadu 2025 zamítl kasační stížnost Kosteleckých uzenin ze skupiny Agrofert a potvrdil, že firma neměla nárok na dotaci z Programu rozvoje venkova, o kterou žádala v roce 2018, kvůli střetu zájmů tehdejšího premiéra Andreje Babiše; citované zpravodajství uvádělo datum 28. listopadu 2025",
   "status": "status-corroborated",
   "statusLabel": "CORROBORATED",
   "sources": [
@@ -18,6 +18,9 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-29"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-78"
     }
   ],
   "subjects": [],
@@ -25,7 +28,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni).\n\n**Oprava data podle primárního dokumentu (2026-08-05).** Rozsudek Nejvyššího\nsprávního soudu č. j. 6 Afs 82/2025-75 je vydán „V Brně dne 27. listopadu 2025“\n([SRC-78](@/dossiers/andrej-babis/sources/src-78.md)). Tvrzení dosud uvádělo\n**28. listopadu 2025** podle citovaného zpravodajství\n([SRC-07](@/dossiers/andrej-babis/sources/src-07.md),\n[SRC-29](@/dossiers/andrej-babis/sources/src-29.md)), které o rozhodnutí\ninformovalo až následující den. Datum je opraveno podle dokumentu soudu a\nzpravodajská hodnota zůstává v textu uvedena — rozdíl mezi úředním a\nzpravodajským datováním téhož rozhodnutí je informace sama o sobě."
     }
   ]
 }

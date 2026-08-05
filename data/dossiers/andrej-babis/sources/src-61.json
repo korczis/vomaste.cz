@@ -12,6 +12,7 @@
   "title": "SRC-61 — Novinky.cz (ČTK): Babiš: Naši poslanci měli hlasovat pro zrušení podpory biopaliv (20. 5. 2015)",
   "description": "Hlasování 20. 5. 2015: z poslanců ANO 3 pro zrušení, 25 proti, 15 se zdrželo včetně Babiše; jeho deklarace souhlasu s ukončením podpory.",
   "outlet": "Novinky.cz",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://www.novinky.cz/domaci/clanek/babis-nasi-poslanci-meli-hlasovat-pro-zruseni-podpory-biopaliv-zmenili-ale-nazor-301084",
   "published": "2015-05-20",

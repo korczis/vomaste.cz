@@ -12,6 +12,7 @@
   "title": "SRC-21 — iROZHLAS.cz (Český rozhlas)",
   "description": "Peníze na sport chybí, pozornost se přitom odvrací jinam. Šebek reprezentoval, hájí ho senátor Třetina",
   "outlet": "iROZHLAS.cz (Český rozhlas)",
+  "sourceFamily": "irozhlas",
   "sourceType": "zpravodajství",
   "url": "https://radiozurnal.rozhlas.cz/penize-na-sport-chybi-pozornost-se-pritom-odvraci-jinam-sebek-reprezentoval-9583903",
   "published": "2025-12-18",

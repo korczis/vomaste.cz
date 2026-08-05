@@ -16,7 +16,7 @@ import { compileDataset } from "./compile.mjs";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const compiled = compileDataset(loadCanonicalTree(join(ROOT, "data/dossiers")));
 
-test("golden: počty záznamů per typ (snapshot 2026-08-05: + autorizovaný dossier james-quick)", () => {
+test("golden: počty záznamů per typ (snapshot 2026-08-05: T-061 + autorizovaný dossier james-quick)", () => {
   assert.deepEqual(compiled.counts.perType, {
     case: 89,
     claim: 929,
@@ -24,8 +24,8 @@ test("golden: počty záznamů per typ (snapshot 2026-08-05: + autorizovaný dos
     entity: 521,
     gap: 191,
     relation: 323,
-    source: 615,
-    update: 52,
+    source: 620,
+    update: 68,
   });
   assert.equal(compiled.counts.dossiers, 25);
   assert.equal(compiled.counts.entities, 521);
@@ -36,7 +36,7 @@ test("golden: graf — uzly z entit, hrany z relations", () => {
   assert.equal(compiled.graph.edges.length, 323);
 });
 
-test("golden: vzorek claim záznamu (andrej-babis CLM-01)", () => {
+test("golden: vzorek claim záznamu (andrej-babis CLM-01; snapshot 2026-08-05, T-058: 1 ZDROJ → CORROBORATED, k oběma zdrojům rodiny ctk přibyla tisková zpráva Vrchního soudu v Praze SRC-75)", () => {
   const w = compiled.indexes.byDossierIdentifier["andrej-babis:CLM-01"];
   assert.equal(w.registry, "claims");
   assert.equal(w.record.status, "status-corroborated");

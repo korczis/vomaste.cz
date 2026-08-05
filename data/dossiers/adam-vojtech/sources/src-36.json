@@ -12,6 +12,7 @@
   "title": "SRC-36 — Ústecký deník (Deník.cz)",
   "description": "VZP prověřuje stovky implantací defibrilátorů, policie řeší i ústeckou nemocnici.",
   "outlet": "Ústecký deník (Deník.cz)",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://ustecky.denik.cz/zpravy_region/vzp-proveruje-stovky-implantaci-defibrilatoru-policie-resi-i-usteckou-nemocnici.html",
   "published": "2026-05-14",

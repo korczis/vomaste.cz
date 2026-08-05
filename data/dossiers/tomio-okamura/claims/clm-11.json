@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
   },
   "text": "Podle zpravodajství soud uložil peněžitý trest při dolní hranici zákonné sazby, označil jej za výchovný a při jeho stanovení vycházel z ročního státního příspěvku hnutí SPD ve výši přibližně 40 milionů korun; rozsudek není pravomocný.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-04"

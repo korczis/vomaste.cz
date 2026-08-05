@@ -23,6 +23,10 @@ playwright-report/
 # produced by a real GitHub event.
 .tmp/intake/
 
+# Cache stažených stránek zdrojů (npm run sources:detect-family). Cizí
+# HTML, ne zdroj pravdy — kdykoli smazatelná, detektor si ho stáhne znovu.
+.tmp/source-family/
+
 # Cache měsíčních dumpů registru smluv (npm run screening:public-money).
 # Stovky MB stažených otevřených dat — cache, ne zdroj pravdy; kdykoli
 # smazatelná, skript si je stáhne znovu.
