@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 496 context entities across 26 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 495 context entities across 26 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -1602,17 +1602,6 @@ Generated from 496 context entities across 26 dossier(s). Regenerate with `npm r
 - Claims: CLM-49
 - Sources: SRC-29 (1 independent source family)
 - Relations: none
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Jiří Čunek (`jiri-cunek`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: james-quick
-- Claims: CLM-07
-- Sources: SRC-07 (1 independent source family)
-- Relations:
-  - edge-james-quick-jiri-cunek (james-quick -> jiri-cunek, "podal trestní oznámení v souvislosti s veřejnou kauzou", dossier: james-quick)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Jiří Havránek (`jiri-havranek`)

@@ -3,7 +3,7 @@
   "@context": "https://vomaste.cz/context/v1.jsonld", "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-03", "@type": "vomaste:Source", "recordType": "source", "identifier": "SRC-03",
   "dossier": { "@id": "https://vomaste.cz/id/dossiers/james-quick" },
   "title": "SRC-03 — Reportéři ČT: Že nic nedlužíte? Nebuďte si tím tak jisti", "description": "Reportáž České televize z roku 2010 o fungování Centrálního registru dlužníků.",
-  "outlet": "Česká televize (ČT24)", "sourceFamily": "ceska-televize", "sourceType": "veřejnoprávní reportáž",
+  "outlet": "ČT24 (Česká televize)", "sourceType": "veřejnoprávní reportáž",
   "url": "https://ct24.ceskatelevize.cz/clanek/ekonomika/reporteri-ct-ze-nic-nedluzite-nebudte-si-tim-tak-jisti-220181", "published": "2010-12-14", "retrieved": "2026-08-05",
   "claims": [{ "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-03" }], "subjects": ["james-quick"],
   "content": [{ "type": "markdown", "value": "Dobová televizní investigace obsahuje vlastní redakční závěry, vyjádření dotčených lidí i reakci Jiřího Jehličky. Dossier z ní přebírá jen jasně připsaná zjištění relevantní k CERD. Protože jde o jedinou redakční rodinu a starší stav služby, tvrzení zůstává označené 1 ZDROJ a časově ukotvené v roce 2010." }], "order": 3

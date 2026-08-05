@@ -10,8 +10,11 @@
   "text": "ÚOOÚ ve zveřejněném závěru kontroly systému CERD z roku 2018 uvedl, že fyzická osoba ovládající zapojené společnosti určovala účel a prostředky zpracování, a konstatoval zpracování části osobních údajů bez právního titulu i další systematická porušení tehdejšího zákona o ochraně osobních údajů.",
   "status": "status-single",
   "statusLabel": "1 ZDROJ",
-  "sources": [{ "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-02" }],
+  "sources": [
+    { "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-02" },
+    { "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-09" }
+  ],
   "subjects": ["james-quick"],
   "order": 2,
-  "content": [{ "type": "markdown", "value": "Jde o přesné shrnutí závěru úřední kontroly. Toto tvrzení je odděleno od identity fyzické osoby: propojení tehdejšího Jiřího Jehličky, nyní Jamese Quicka, s kontrolou dokládá samostatně SRC-01. Závěr kontroly není trestním rozsudkem a dossier jej tak nepředstavuje." }]
+  "content": [{ "type": "markdown", "value": "Jde o přesné shrnutí závěru úřední kontroly. Toto tvrzení je odděleno od identity fyzické osoby: propojení tehdejšího Jiřího Jehličky, nyní Jamese Quicka, s kontrolou dokládá samostatně SRC-01. Závěr kontroly není trestním rozsudkem a dossier jej tak nepředstavuje. Revizí 2026-08-05 byl doplněn druhý primární doklad — datovaná tisková zpráva ÚOOÚ z 20. 9. 2018 (SRC-09) — aby tvrzení nestálo na jediné nedatované podstránce. Oba doklady vydal týž úřad, takže podle pravidla S10 nejde o nezávislé potvrzení a stav zůstává 1 ZDROJ; nezávislé redakční doložení této kontroly dossier zatím nemá." }]
 }

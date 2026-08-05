@@ -3,7 +3,7 @@
   "@context": "https://vomaste.cz/context/v1.jsonld", "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-06", "@type": "vomaste:Source", "recordType": "source", "identifier": "SRC-06",
   "dossier": { "@id": "https://vomaste.cz/id/dossiers/james-quick" },
   "title": "SRC-06 — ČT24: Soud zprostil Jehličku obžaloby", "description": "Zpráva o pravomocném zproštění Jiřího Jehličky Vrchním soudem v Praze v říjnu 2009.",
-  "outlet": "Česká televize (ČT24)", "sourceFamily": "ceska-televize", "sourceType": "veřejnoprávní soudní zpravodajství",
+  "outlet": "ČT24 (Česká televize)", "sourceType": "veřejnoprávní soudní zpravodajství",
   "url": "https://ct24.ceskatelevize.cz/clanek/domaci/soud-zprostil-jehlicku-obzaloby-z-leasingovych-podvodu-s-auty-190798", "published": "2009-10-20", "retrieved": "2026-08-05",
   "claims": [{ "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-06" }], "subjects": ["james-quick"],
   "content": [{ "type": "markdown", "value": "Dobové soudní zpravodajství výslovně označuje rozhodnutí za pravomocné a uvádí jeho důvod. Je zařazeno proto, aby jakákoli zmínka o dlouhém trestním řízení vždy nesla i konečný výsledek. Dossier nevyvozuje vinu z obvinění ani z komentáře soudu o míře dřívějšího podezření." }], "order": 6

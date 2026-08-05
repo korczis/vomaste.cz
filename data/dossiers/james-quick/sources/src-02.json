@@ -3,8 +3,8 @@
   "@context": "https://vomaste.cz/context/v1.jsonld", "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-02", "@type": "vomaste:Source", "recordType": "source", "identifier": "SRC-02",
   "dossier": { "@id": "https://vomaste.cz/id/dossiers/james-quick" },
   "title": "SRC-02 — ÚOOÚ: kontrola zpracování osobních údajů v systému CERD", "description": "Oficiální závěr kontroly systému CERD zveřejněný Úřadem pro ochranu osobních údajů.",
-  "outlet": "Úřad pro ochranu osobních údajů", "sourceFamily": "uoou", "sourceType": "primární úřední záznam",
-  "url": "https://uoou.gov.cz/cinnost/ochrana-osobnich-udaju/ukoncene-kontroly/kontroly-za-rok-2018/kontrolni-cinnost-podle-zakona-o-ochrane-osobnich-udaju-2018/csr-protikorupcnilinkacz-sro", "published": "2018-01-01", "retrieved": "2026-08-05",
+  "outlet": "Úřad pro ochranu osobních údajů", "sourceType": "primární úřední záznam",
+  "url": "https://uoou.gov.cz/cinnost/ochrana-osobnich-udaju/ukoncene-kontroly/kontroly-za-rok-2018/kontrolni-cinnost-podle-zakona-o-ochrane-osobnich-udaju-2018/csr-protikorupcnilinkacz-sro", "retrieved": "2026-08-05",
   "claims": [{ "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-02" }], "subjects": ["james-quick"],
-  "content": [{ "type": "markdown", "value": "Primární úřední zdroj shrnuje kontrolu zahájenou na základě desítek podnětů. Identitu fyzické osoby v textu této stránky nejmenuje; proto je propojení s Jamesem Quickem vedeno odděleně přes pozdější odpověď ÚOOÚ SRC-01. Závěry kontroly jsou správní zjištění podle tehdy účinného práva, nikoli trestní rozsudek." }], "order": 2
+  "content": [{ "type": "markdown", "value": "Primární úřední zdroj shrnuje kontrolu zahájenou na základě 53 podnětů. Stránka jmenuje kontrolovanou společnost CSR & Protikorupcnilinka.cz s.r.o. i americkou CERD SYSTEM LLC, ale fyzickou osobu, kterou označila za správce, nejmenuje; propojení s Jamesem Quickem proto vede odděleně pozdější odpověď ÚOOÚ SRC-01. Stránka nenese datum zveřejnění — je zařazena pod rubriku Kontroly za rok 2018 — proto se pole published nevyplňuje a rok zůstává jen v textu tvrzení; dřívější hodnota 2018-01-01 byla nedoloženou přesností a byla odstraněna (revize 2026-08-05). Závěry kontroly jsou správní zjištění podle tehdy účinného práva, nikoli trestní rozsudek." }], "order": 2
 }
