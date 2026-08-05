@@ -64,6 +64,17 @@ diff).
   full `npm run build` yourself before a `review-request`, and ORCH
   still explicitly merges into `master` (where the hook then takes over
   and pushes that merge commit).
+- **If you're running `git commit` on `master` via the Bash tool**: the
+  hook's full build takes ~2–4 minutes, run synchronously inside
+  `git commit` itself — a default ~2-minute Bash-tool timeout can kill
+  it mid-build before the push happens (seen firsthand: 2026-08-05,
+  build was still green, just never got to push). The commit itself is
+  never lost when this happens (`git log`/`git status` will show it sitting
+  locally, ahead of `origin/master`) — but check `git status` after any
+  `master` commit that might have hit a timeout, and if it's still
+  unpushed, finish the job yourself: `npm run build && git push origin
+  master` (with a generous timeout or `run_in_background`), same as the
+  hook would have done.
 - **`--no-verify`**: a real git escape hatch, not forbidden outright, but
   never use it silently — if you ever need it, say so explicitly (to the
   user, and on the coop bus if you're in a worktree). `--no-verify`
