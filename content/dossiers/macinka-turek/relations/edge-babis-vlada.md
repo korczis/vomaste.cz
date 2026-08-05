@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Andrej Babiš (premiér) — premiér — Vláda (ANO + SPD + Motoristé)"
+description = "Andrej Babiš (premiér) — premiér — Vláda (ANO + SPD + Motoristé). Vztah v grafu dossieru Petr Macinka a Filip Turek. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 4
 

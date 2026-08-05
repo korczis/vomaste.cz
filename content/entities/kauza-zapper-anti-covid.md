@@ -3,6 +3,7 @@
 title = "Kauza Zapper-Club: „Imunitní balíček ANTI-COVID-19“"
 template = "entity.html"
 weight = 216
+description = "Kontextová entita — Prodej přístroje zapper přes e-shop parazitivnas.cz za pandemie; varování Ministerstva zdravotnictví, SZPI odebrala certifikát (zakázaná léčebná tvrzení)."
 
 [extra]
 generated = true

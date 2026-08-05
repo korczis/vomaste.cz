@@ -4,6 +4,7 @@ title = "Státní zemědělský intervenční fond"
 template = "entity.html"
 weight = 6
 aliases = ["/dossiers/andrej-babis/entities/szif/"]
+description = "Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext."
 
 [extra]
 generated = true

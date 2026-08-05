@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Martin Šebestyán — spor o rozsah dopisu Evropské komise — zda se vztahuje i na zemědělské fondy — Evropská komise"
+description = "Martin Šebestyán — spor o rozsah dopisu Evropské komise — zda se vztahuje i na zemědělské…. Vztah v grafu dossieru Martin Šebestyán. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 6
 

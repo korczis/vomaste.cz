@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Lubomír Metnar — návrh ukončit policejní ochranu úřadu (2026) — Nejvyšší kontrolní úřad"
+description = "Lubomír Metnar — návrh ukončit policejní ochranu úřadu (2026) — Nejvyšší kontrolní úřad. Vztah v grafu dossieru Lubomír Metnar. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 1
 

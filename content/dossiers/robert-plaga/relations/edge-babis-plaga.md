@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Andrej Babiš — společný poslanecký návrh Babiše a Plagy na zákaz mobilů ve školách — Robert Plaga"
+description = "Andrej Babiš — společný poslanecký návrh Babiše a Plagy na zákaz mobilů ve školách —…. Vztah v grafu dossieru Robert Plaga. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 2
 

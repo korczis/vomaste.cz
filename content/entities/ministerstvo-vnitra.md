@@ -3,6 +3,7 @@
 title = "Ministerstvo vnitra ČR"
 template = "entity.html"
 weight = 279
+description = "Kontextová entita — SPD s ním dříve vyhrálo samostatný spor o šíření strachu. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

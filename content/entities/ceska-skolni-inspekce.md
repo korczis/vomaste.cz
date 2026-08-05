@@ -3,6 +3,7 @@
 title = "Česká školní inspekce"
 template = "entity.html"
 weight = 92
+description = "Kontextová entita — Organizátor zastaveného plošného testování žáků 5. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

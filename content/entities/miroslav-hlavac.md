@@ -3,6 +3,7 @@
 title = "Miroslav Hlaváč"
 template = "entity.html"
 weight = 282
+description = "Kontextová entita — Generál; od 1. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Igor Červený — Červený neobsadil ministerskou kancelář, kterou dál užívá Filip Turek — Filip Turek"
+description = "Igor Červený — Červený neobsadil ministerskou kancelář, kterou dál užívá Filip Turek —…. Vztah v grafu dossieru Igor Červený. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 2
 

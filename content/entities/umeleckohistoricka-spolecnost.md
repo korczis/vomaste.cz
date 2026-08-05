@@ -3,6 +3,7 @@
 title = "Uměleckohistorická společnost (UHS)"
 template = "entity.html"
 weight = 420
+description = "Kontextová entita — Odborná společnost, jejíž výbor poslal Klempířovi otevřený dopis kritizující odvolání ředitelky NGP a rozpuštění garanční rady."
 
 [extra]
 generated = true

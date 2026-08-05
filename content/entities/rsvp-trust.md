@@ -4,6 +4,7 @@ title = "RSVP Trust"
 template = "entity.html"
 weight = 4
 aliases = ["/dossiers/andrej-babis/entities/rsvp-trust/"]
+description = "Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext."
 
 [extra]
 generated = true

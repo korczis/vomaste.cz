@@ -3,6 +3,7 @@
 title = "Trestní oznámení ministra Tejce v bitcoinové kauze (2026)"
 template = "entity.html"
 weight = 416
+description = "Kontextová entita — Trestní oznámení podané po interním auditu (doručeno VSZ Olomouc 23. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

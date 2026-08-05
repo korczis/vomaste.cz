@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Andrej Babiš — premiér Babiš odůvodnil odvolání vedení Národní sportovní agentury na návrh ministra Šťastného — Boris Šťastný"
+description = "Andrej Babiš — premiér Babiš odůvodnil odvolání vedení Národní sportovní agentury na…. Vztah v grafu dossieru Boris Šťastný. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 2
 

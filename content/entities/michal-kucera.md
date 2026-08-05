@@ -3,6 +3,7 @@
 title = "Michal Kučera"
 template = "entity.html"
 weight = 266
+description = "Kontextová entita — Poslanec TOP 09; reagoval na Havlíčkovo vystoupení ke stavební novele. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

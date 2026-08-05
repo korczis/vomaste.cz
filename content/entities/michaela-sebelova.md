@@ -3,6 +3,7 @@
 title = "Michaela Šebelová"
 template = "entity.html"
 weight = 261
+description = "Kontextová entita — Předsedkyně poslaneckého klubu STAN; kritika stavební novely a Vojtěchova benefitového návrhu (střet zájmů Babišových klinik)."
 
 [extra]
 generated = true

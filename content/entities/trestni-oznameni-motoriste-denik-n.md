@@ -3,6 +3,7 @@
 title = "Trestní oznámení Motoristů sobě na Deník N (2025–2026)"
 template = "entity.html"
 weight = 414
+description = "Kontextová entita — Podáno 12. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

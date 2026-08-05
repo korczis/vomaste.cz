@@ -3,6 +3,7 @@
 title = "MEAS Consulting s.r.o. v likvidaci"
 template = "entity.html"
 weight = 254
+description = "Kontextová entita — IČO 04347803; Macinka společníkem s vkladem od 26. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

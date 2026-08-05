@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Jeroným Tejc — Kasal jako první náměstek nejvyššího státního zástupce zamítl stížnosti proti zahájení trestního stíhání v bitcoinové kauze resortu spravedlnosti — Zdeněk Kasal"
+description = "Jeroným Tejc — Kasal jako první náměstek nejvyššího státního zástupce zamítl stížnosti…. Vztah v grafu dossieru Jeroným Tejc. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 17
 

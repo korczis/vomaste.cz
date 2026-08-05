@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Jan Wintr — uplatnil odlišné stanovisko k rozhodnutí o předběžném opatření v kompetenčním sporu — Kompetenční spor prezident vs. vláda (Pl. ÚS 16/26)"
+description = "Jan Wintr — uplatnil odlišné stanovisko k rozhodnutí o předběžném opatření v kompetenčním…. Vztah v grafu dossieru Jeroným Tejc. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 18
 

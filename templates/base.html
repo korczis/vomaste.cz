@@ -18,19 +18,59 @@
   <script>document.documentElement.classList.replace("no-js","js")</script>
 
   {%- set page_title = page.title | default(value=section.title | default(value=config.title)) -%}
+  {%- set og_dossier = section.extra.dossier | default(value=page.extra.dossier | default(value="")) -%}
+  {#- Lidský název dossieru, do kterého stránka patří. Bere se z generovaného
+      navigačního stromu (data/generated/navigation.json → items[].children[]
+      .label), tedy z téhož kanonického datasetu jako všechno ostatní — žádný
+      slug ani jméno tu není napevno. Načítá se už tady, protože ho potřebuje
+      <title> i description; sidebar níže sahá po témž `nav_data`. -#}
+  {%- set nav_data = load_data(path="data/generated/navigation.json") -%}
+  {%- set_global dossier_label = "" -%}
+  {%- if og_dossier -%}
+    {%- for nav_item in nav_data.items -%}
+      {%- for nav_child in nav_item.children -%}
+        {%- if nav_child.id == og_dossier -%}{%- set_global dossier_label = nav_child.label -%}{%- endif -%}
+      {%- endfor -%}
+    {%- endfor -%}
+  {%- endif -%}
+  {#- `dossier_label not in page_title` není kosmetika: registrové sekce
+      entity dossieru se jmenují už samy „Tvrzení — Filip Turek", takže bez
+      téhle podmínky vznikne „Tvrzení — Filip Turek — Filip Turek — …".
+      Registry kanonického (agregátního) dossieru se naopak jmenují jen
+      „Registr tvrzení" a doplnění potřebují. -#}
+  {%- set in_dossier_subpage = dossier_label != "" and page_title != dossier_label and dossier_label not in page_title -%}
+  {#- Disambiguace titulků. Bez ní má /dossiers/<A>/claims/ i /dossiers/<B>/claims/
+      doslova týž <title> („Registr tvrzení") a týž description, a stránka
+      tvrzení „CLM-01" existuje v každém dossieru — napříč webem tedy stovky
+      stránek se shodným titulkem. Generované adaptéry to samy rozlišit
+      nemůžou (title JE identifikátor záznamu), takže to skládá tahle jediná
+      vrstva: záznam → dossier → web. -#}
+  {%- if in_dossier_subpage -%}
+    {%- set document_title = page_title ~ " — " ~ dossier_label ~ " — " ~ config.title -%}
+  {%- elif page_title == config.title -%}
+    {%- set document_title = config.title ~ " — " ~ config.extra.title_tagline -%}
+  {%- else -%}
+    {%- set document_title = page_title ~ " — " ~ config.title -%}
+  {%- endif -%}
   {#- Meta description se ořezává na ~200 znaků: delší text vyhledávače i
       sociální sítě stejně useknou, a u záznamů registru je `description`
-      plné znění tvrzení. Na stránce samotné zůstává text úplný. -#}
-  {%- set page_description = page.description | default(value=section.description | default(value=config.description)) | truncate(length=200) -%}
+      plné znění tvrzení. Na stránce samotné zůstává text úplný. Registrové
+      indexy mají generický popis sdílený všemi dossiery („Registr tvrzení
+      dossieru — …"), proto se u nich doplňuje, o čí dossier jde; u záznamu
+      je description jeho vlastní text a doplňovat není co. -#}
+  {%- set raw_description = page.description | default(value=section.description | default(value=config.description)) -%}
+  {%- if in_dossier_subpage and not page.description and section.description -%}
+    {%- set raw_description = raw_description ~ " Dossier: " ~ dossier_label ~ "." -%}
+  {%- endif -%}
+  {%- set page_description = raw_description | truncate(length=200) -%}
   {#- Preview card: front matter wins; jinak dostane každá stránka uvnitř
       dossieru kartu svého dossieru (static/images/og/<slug>.jpg, generuje
       scripts/og/build-og-images.mjs, existenci hlídá validate-dossier-types),
       zbytek webu dostane kartu webu z config.toml. -#}
-  {%- set og_dossier = section.extra.dossier | default(value=page.extra.dossier | default(value="")) -%}
   {%- set og_image = page.extra.og_image | default(value=section.extra.og_image | default(value=false)) -%}
   {%- if not og_image and og_dossier -%}{%- set og_image = "images/og/" ~ og_dossier ~ ".jpg" -%}{%- endif -%}
   {%- if not og_image -%}{%- set og_image = config.extra.og_image -%}{%- endif -%}
-  <title>{{ page_title }}</title>
+  <title>{{ document_title }}</title>
   <meta name="description" content="{{ page_description }}">
   {%- set page_keywords = page.extra.keywords | default(value=section.extra.keywords | default(value=config.extra.keywords | default(value=""))) %}
   {% if page_keywords %}<meta name="keywords" content="{{ page_keywords }}">{% endif %}
@@ -47,7 +87,14 @@
   <link rel="manifest" href="{{ get_url(path='site.webmanifest') | safe }}">
 
   <meta property="og:site_name" content="{{ config.title }}">
-  <meta property="og:title" content="{{ page_title }}">
+  {#- Social title nese dossier, ale ne název webu — ten scrapery berou
+      z og:site_name a vypisují zvlášť. Samotné „CLM-01" v náhledu neřekne nic. -#}
+  {%- if in_dossier_subpage -%}
+    {%- set social_title = page_title ~ " — " ~ dossier_label -%}
+  {%- else -%}
+    {%- set social_title = page_title -%}
+  {%- endif %}
+  <meta property="og:title" content="{{ social_title }}">
   <meta property="og:description" content="{{ page_description }}">
   {#- og:type podle typu stránky, ne jedna hodnota pro celý web: dossier o
       osobě je `profile`, jednotlivý záznam registru (tvrzení/zdroj/kauza/
@@ -63,7 +110,10 @@
   {%- endif %}
   <meta property="og:type" content="{{ og_type }}">
   {%- set page_updated = page.extra.updated | default(value=section.extra.updated | default(value="")) %}
-  {% if page_updated %}<meta property="article:modified_time" content="{{ page_updated }}T00:00:00+02:00">{% endif %}
+  {#- Datum revize je kalendářní den, ne okamžik — pevná zóna +02:00 byla
+      polovinu roku prostě špatně (SEČ je +01:00). Půlnoc UTC nepřeklápí den
+      v žádné evropské zóně, takže Z je jediný zápis, který nelže. -#}
+  {% if page_updated %}<meta property="article:modified_time" content="{{ page_updated }}T00:00:00Z">{% endif %}
   {#- og:locale musí být language_TERRITORY (cs_CZ), ne holý jazykový kód —
       Facebook i LinkedIn holé "cs" ignorují. `lang` (cs) zůstává pro <html>. -#}
   <meta property="og:locale" content="{{ page.extra.locale | default(value=section.extra.locale | default(value=config.extra.locale | default(value="en_US"))) }}">
@@ -76,14 +126,28 @@
   {% if config.extra.og_image_width %}<meta property="og:image:width" content="{{ config.extra.og_image_width }}">{% endif %}
   {% if config.extra.og_image_height %}<meta property="og:image:height" content="{{ config.extra.og_image_height }}">{% endif %}
   {% if config.extra.og_image_type %}<meta property="og:image:type" content="{{ config.extra.og_image_type }}">{% endif %}
-  <meta property="og:image:alt" content="{{ config.extra.og_image_alt | default(value=page_title) }}">
+  {#- Alt musí popisovat OBRÁZEK, který stránka opravdu posílá. Dosud šel na
+      každou stránku alt karty webu, i když og:image byla karta dossieru —
+      čtečka obrazovky tedy v náhledu dostala popis něčeho jiného, než co je
+      vidět. Karty vyrábí scripts/og/build-og-images.mjs: kicker, jméno
+      subjektu a čtyři čipy s počty. -#}
+  {%- if page.extra.og_image_alt or section.extra.og_image_alt -%}
+    {%- set og_alt = page.extra.og_image_alt | default(value=section.extra.og_image_alt) -%}
+  {%- elif og_dossier and dossier_label -%}
+    {%- set og_alt = "Náhledová karta dossieru " ~ dossier_label ~ " na vomaste.cz: jméno subjektu a počty tvrzení, zdrojů, kauz a otevřených mezer." -%}
+  {%- elif og_dossier -%}
+    {%- set og_alt = "Náhledová karta dossieru na vomaste.cz: jméno subjektu a počty tvrzení, zdrojů, kauz a otevřených mezer." -%}
+  {%- else -%}
+    {%- set og_alt = config.extra.og_image_alt | default(value=page_title) -%}
+  {%- endif %}
+  <meta property="og:image:alt" content="{{ og_alt }}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="{{ get_url(path=og_image) | safe }}">
-  <meta name="twitter:image:alt" content="{{ config.extra.og_image_alt | default(value=page_title) }}">
+  <meta name="twitter:image:alt" content="{{ og_alt }}">
   {% else %}
   <meta name="twitter:card" content="summary">
   {% endif %}
-  <meta name="twitter:title" content="{{ page_title }}">
+  <meta name="twitter:title" content="{{ social_title }}">
   <meta name="twitter:description" content="{{ page_description }}">
 
   {#- All JSON-LD (page node from `extra.seo_type`, breadcrumbs, Person on

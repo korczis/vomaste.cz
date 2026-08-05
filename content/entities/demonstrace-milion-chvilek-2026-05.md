@@ -3,6 +3,7 @@
 title = "Demonstrace Milionu chvilek proti zákonu o médiích (24. 5. 2026)"
 template = "entity.html"
 weight = 106
+description = "Kontextová entita — Demonstrace v centru Prahy (přes 10 tisíc lidí) s předáním petice se 180–184 tisíci podpisy Úřadu vlády."
 
 [extra]
 generated = true

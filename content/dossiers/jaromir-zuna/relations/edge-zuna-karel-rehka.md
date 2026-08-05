@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Jaromír Zůna — slavnostní předání funkce náčelníka Generálního štábu na Vítkově (srpen 2026) — Karel Řehka"
+description = "Jaromír Zůna — slavnostní předání funkce náčelníka Generálního štábu na Vítkově (srpen…. Vztah v grafu dossieru Jaromír Zůna. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 10
 

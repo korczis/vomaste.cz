@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Miroslav Zámečník — nahradil Kysilku ve funkci předsedy dozorčí rady Českých drah (2021) — Pavel Kysilka"
+description = "Miroslav Zámečník — nahradil Kysilku ve funkci předsedy dozorčí rady Českých drah (2021)…. Vztah v grafu dossieru Ivan Bednárik. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 9
 

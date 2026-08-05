@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Andrej Babiš — vlastnické vazby; od 2/2026 akcie ve svěřenském fondu RSVP Trust, míra vlivu sporná; dividenda 4,25 mld. Kč vyplacena před vkladem (legální krok) — Agrofert"
+description = "Andrej Babiš — vlastnické vazby; od 2/2026 akcie ve svěřenském fondu RSVP Trust, míra…. Vztah v grafu dossieru Andrej Babiš. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 2
 

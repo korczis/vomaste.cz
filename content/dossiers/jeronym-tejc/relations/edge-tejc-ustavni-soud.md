@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Jeroným Tejc — spor o předběžné opatření Ústavního soudu v kompetenční žalobě prezidenta — Ústavní soud"
+description = "Jeroným Tejc — spor o předběžné opatření Ústavního soudu v kompetenční žalobě prezidenta…. Vztah v grafu dossieru Jeroným Tejc. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 3
 

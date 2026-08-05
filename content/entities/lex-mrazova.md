@@ -3,6 +3,7 @@
 title = "«Lex Mrázová» (návrh povinnosti přiznávat obecní byt)"
 template = "entity.html"
 weight = 231
+description = "Kontextová entita — Návrh Olgy Richterové, aby politici uváděli užívání obecního bytu v majetkovém přiznání."
 
 [extra]
 generated = true

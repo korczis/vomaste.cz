@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Alexandr Vondra — po jeho hlasování proti jmenování nového náčelníka generálního štábu vyzval k okamžité rezignaci — Jaromír Zůna"
+description = "Alexandr Vondra — po jeho hlasování proti jmenování nového náčelníka generálního štábu…. Vztah v grafu dossieru Jaromír Zůna. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 14
 

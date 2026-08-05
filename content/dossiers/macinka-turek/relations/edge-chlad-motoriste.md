@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Richard Chlad (sponzor) — dar 638 864 Kč (2025, oficiálně) vs. tvrzené ~2 mil. Kč — Motoristé sobě"
+description = "Richard Chlad (sponzor) — dar 638 864 Kč (2025, oficiálně) vs. tvrzené ~2 mil. Kč —…. Vztah v grafu dossieru Petr Macinka a Filip Turek. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 17
 

@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Jiří Havránek — poslanec Havránek (ODS) postavil Juchelku před alternativu trestního oznámení nebo rezignace — Aleš Juchelka"
+description = "Jiří Havránek — poslanec Havránek (ODS) postavil Juchelku před alternativu trestního…. Vztah v grafu dossieru Aleš Juchelka. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 13
 

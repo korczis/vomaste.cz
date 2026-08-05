@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Ministerstvo životního prostředí ČR — vedoucí nového oddělení klimatické politiky a Green Dealu (od 1. 4. 2026) — Lukáš Vaverka"
+description = "Ministerstvo životního prostředí ČR — vedoucí nového oddělení klimatické politiky a Green…. Vztah v grafu dossieru Igor Červený. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 12
 

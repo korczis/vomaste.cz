@@ -3,6 +3,7 @@
 title = "Petr Pavelec"
 template = "entity.html"
 weight = 342
+description = "Kontextová entita — Člen představenstva ČD, odešel souběžně s Bednárikovou rezignací (únor 2022)."
 
 [extra]
 generated = true

@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Senát Parlamentu ČR — Sněmovna postoupila novelu Senátu; Senát ji zařadil na schůzi s hrozbou zamítnutí — Novela stavebního zákona 2026 (sněmovní tisk 67)"
+description = "Senát Parlamentu ČR — Sněmovna postoupila novelu Senátu; Senát ji zařadil na schůzi s…. Vztah v grafu dossieru Karel Havlíček. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 14
 

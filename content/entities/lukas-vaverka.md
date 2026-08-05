@@ -3,6 +3,7 @@
 title = "Lukáš Vaverka"
 template = "entity.html"
 weight = 237
+description = "Kontextová entita — Vedoucí oddělení klimatické politiky a Green Dealu na MŽP; bývalý poradce Turka v EP, výjimka ze vzdělání."
 
 [extra]
 generated = true

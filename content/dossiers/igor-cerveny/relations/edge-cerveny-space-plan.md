@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Igor Červený — objednávka nábytku od pražské firmy Space Plan do nové pracovny — Space Plan"
+description = "Igor Červený — objednávka nábytku od pražské firmy Space Plan do nové pracovny — Space…. Vztah v grafu dossieru Igor Červený. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 18
 

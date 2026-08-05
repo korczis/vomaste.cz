@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Josef Flek — poslanec za STAN — STAN"
+description = "Josef Flek — poslanec za STAN — STAN. Vztah v grafu dossieru Jaromír Zůna. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 22
 

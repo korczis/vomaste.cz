@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Zuzana Mrázová — předseda Pirátů předal Mrázové klíčenku a vyzval k doplacení ušetřeného nájmu — Zdeněk Hřib"
+description = "Zuzana Mrázová — předseda Pirátů předal Mrázové klíčenku a vyzval k doplacení ušetřeného…. Vztah v grafu dossieru Zuzana Mrázová. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 5
 

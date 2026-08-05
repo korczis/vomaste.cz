@@ -3,6 +3,7 @@
 title = "BIS (Bezpečnostní informační služba)"
 template = "entity.html"
 weight = 80
+description = "Kontextová entita — Zpravodajská služba, která nález nahrávacího zařízení neprověřovala, protože jí nebyl nahlášen."
 
 [extra]
 generated = true

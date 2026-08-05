@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Martin Kupka — nezveřejnění rozhovoru prezidenta Pavla označil za cenzuru v nejtvrdší podobě — Jaromír Zůna"
+description = "Martin Kupka — nezveřejnění rozhovoru prezidenta Pavla označil za cenzuru v nejtvrdší…. Vztah v grafu dossieru Jaromír Zůna. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 12
 

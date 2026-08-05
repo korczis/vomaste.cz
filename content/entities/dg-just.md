@@ -3,6 +3,7 @@
 title = "Generální ředitelství Evropské komise pro spravedlnost (DG JUST)"
 template = "entity.html"
 weight = 110
+description = "Kontextová entita — Adresát podnětu Transparency International k RSVP Trust. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

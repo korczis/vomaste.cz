@@ -3,6 +3,7 @@
 title = "Setuza"
 template = "entity.html"
 weight = 375
+description = "Kontextová entita — Ústecká firma, o niž Babiš dle analýzy z 2011 dlouhodobě usiloval; místo ní vybudoval Preol."
 
 [extra]
 generated = true

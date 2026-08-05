@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Martin Kupka — Kupka (ODS) kritizoval Havlíčkovu novelu stavebního zákona jako plnou „nášlapných min“ — Karel Havlíček"
+description = "Martin Kupka — Kupka (ODS) kritizoval Havlíčkovu novelu stavebního zákona jako plnou…. Vztah v grafu dossieru Karel Havlíček. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 7
 

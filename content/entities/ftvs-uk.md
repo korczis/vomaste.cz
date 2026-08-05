@@ -3,6 +3,7 @@
 title = "FTVS UK (Fakulta tělesné výchovy a sportu Univerzity Karlovy)"
 template = "entity.html"
 weight = 135
+description = "Kontextová entita — Profesní zázemí Karla Kováře uvedené ve zprávě o jeho jmenování; jen biografický kontext."
 
 [extra]
 generated = true

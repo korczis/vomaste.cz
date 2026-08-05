@@ -3,6 +3,7 @@
 title = "Donald Trump"
 template = "entity.html"
 weight = 113
+description = "Kontextová entita — Prezident USA; Červený jej pochválil v rozhovoru pro Fox News. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

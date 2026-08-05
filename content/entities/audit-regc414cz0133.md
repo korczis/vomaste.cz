@@ -3,6 +3,7 @@
 title = "Audit REGC414CZ0133"
 template = "entity.html"
 weight = 77
+description = "Kontextová entita — Audit strukturálních fondů Evropské komise ke střetu zájmů (CASE-01), vedle něj samostatná zemědělská větev (CASE-16)."
 
 [extra]
 generated = true

@@ -3,6 +3,7 @@
 title = "Krajský soud v Praze"
 template = "entity.html"
 weight = 225
+description = "Kontextová entita — Soud, k němuž EPPO podalo obžalobu na Pekárnu Zelená louka. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

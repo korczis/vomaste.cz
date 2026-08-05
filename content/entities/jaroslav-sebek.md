@@ -3,6 +3,7 @@
 title = "Jaroslav Šebek"
 template = "entity.html"
 weight = 172
+description = "Kontextová entita — Předseda Asociace soukromého zemědělství; Šebestyána označil za „přiznaného lobbistu“."
 
 [extra]
 generated = true

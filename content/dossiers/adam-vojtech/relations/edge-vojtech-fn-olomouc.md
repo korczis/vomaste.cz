@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Adam Vojtěch — kauza studie PROFID EHRA a trestní oznámení resortu (2025–2026) — Fakultní nemocnice Olomouc"
+description = "Adam Vojtěch — kauza studie PROFID EHRA a trestní oznámení resortu (2025–2026) — Fakultní…. Vztah v grafu dossieru Adam Vojtěch. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 2
 

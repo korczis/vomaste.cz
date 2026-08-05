@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Karel Havlíček — Havlíček jako ministr odmítl závěr auditu Evropské komise o střetu zájmů premiéra Babiše (2019) — Andrej Babiš"
+description = "Karel Havlíček — Havlíček jako ministr odmítl závěr auditu Evropské komise o střetu zájmů…. Vztah v grafu dossieru Karel Havlíček. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 3
 

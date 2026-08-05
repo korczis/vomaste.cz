@@ -3,6 +3,7 @@
 title = "Adam Bašný"
 template = "entity.html"
 weight = 51
+description = "Kontextová entita — Státní zástupce a evropský pověřený žalobce EPPO; podal obžalobu na Pekárnu Zelená louka ke Krajskému soudu v Praze."
 
 [extra]
 generated = true

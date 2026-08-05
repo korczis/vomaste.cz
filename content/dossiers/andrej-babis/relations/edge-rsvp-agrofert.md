@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "RSVP Trust — drží akcie Agrofertu (vloženy 2/2026) — Agrofert"
+description = "RSVP Trust — drží akcie Agrofertu (vloženy 2/2026) — Agrofert. Vztah v grafu dossieru Andrej Babiš. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 3
 

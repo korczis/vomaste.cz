@@ -3,6 +3,7 @@
 title = "Kauza upravených metrik na sociálních sítích ministra Šťastného"
 template = "entity.html"
 weight = 214
+description = "Kontextová entita — Rozpor mezi skutečnými interakcemi příspěvku na X a nadsazenými čísly v grafice na Facebooku/Instagramu; omluva ministra a výsměch opozice."
 
 [extra]
 generated = true

@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Matěj Ondřej Havel — poslanec za TOP 09 — TOP 09"
+description = "Matěj Ondřej Havel — poslanec za TOP 09 — TOP 09. Vztah v grafu dossieru Jaromír Zůna. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 24
 

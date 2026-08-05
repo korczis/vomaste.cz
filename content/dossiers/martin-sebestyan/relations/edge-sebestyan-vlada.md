@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Martin Šebestyán — ministr zemědělství — Vláda ČR"
+description = "Martin Šebestyán — ministr zemědělství — Vláda ČR. Vztah v grafu dossieru Martin Šebestyán. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 1
 

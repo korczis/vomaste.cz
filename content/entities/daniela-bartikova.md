@@ -3,6 +3,7 @@
 title = "Daniela Bártíková"
 template = "entity.html"
 weight = 102
+description = "Kontextová entita — Evropská pověřená žalobkyně (EPPO) — 24. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

@@ -3,6 +3,7 @@
 title = "Ministerstvo školství, mládeže a tělovýchovy ČR"
 template = "entity.html"
 weight = 290
+description = "Kontextová entita — Resort Roberta Plagy; zkrácení školního roku, doporučení k testování. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

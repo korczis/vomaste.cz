@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Jeroným Tejc — Dragoun jako dozorující státní zástupce VSZ Olomouc v bitcoinové kauze, kam bylo doručeno Tejcovo trestní oznámení — Radim Dragoun"
+description = "Jeroným Tejc — Dragoun jako dozorující státní zástupce VSZ Olomouc v bitcoinové kauze…. Vztah v grafu dossieru Jeroným Tejc. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 16
 

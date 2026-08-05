@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Veronika Kovářová — Kovářová (Piráti) novele vytkla chybějící připomínkové řízení a že „legalizuje vznik černých staveb“ — Novela stavebního zákona 2026 (sněmovní tisk 67)"
+description = "Veronika Kovářová — Kovářová (Piráti) novele vytkla chybějící připomínkové řízení a že…. Vztah v grafu dossieru Karel Havlíček. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 11
 

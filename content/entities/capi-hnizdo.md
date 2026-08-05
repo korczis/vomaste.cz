@@ -4,6 +4,7 @@ title = "Čapí hnízdo (dotační kauza)"
 template = "entity.html"
 weight = 9
 aliases = ["/dossiers/andrej-babis/entities/capi-hnizdo/"]
+description = "Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext."
 
 [extra]
 generated = true
