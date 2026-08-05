@@ -162,8 +162,18 @@ Záměrné omezení: strukturovaná data **nenesou žádné hodnocení
 pravdivosti** (`ClaimReview`, `reviewRating` apod.) — stavy popisují
 zdrojování, ne rozhodnutí o pravdě. `npm run verify:jsonld` (součást
 build gate) po každém buildu parsuje všechny bloky, kontroluje povinná
-pole, pokrytí (každé tvrzení na disku = jeden `Claim` uzel) a build
-shodí, kdyby se hodnoticí typ kdekoli objevil.
+pole, pokrytí (každé tvrzení na disku = jeden `Claim` uzel, citační uzel
+na každé stránce zdroje, právě jedna `Person` na hlavní stránce entity
+dossieru) a build shodí, kdyby se hodnoticí typ kdekoli objevil.
+Od T-065 navíc vynucuje, že **každá vydaná stránka nese aspoň jeden blok**
+`application/ld+json` — jedinou výjimkou jsou přesměrovací stuby aliasů
+Zoly.
+
+Co zatím vynucené **není**, aby to nikdo nemusel odhadovat: stránky kauz,
+mezer, vztahů a entit nesou jen stránkové scaffolding uzly
+(`WebPage`/`CollectionPage` + drobečky + navigace). Jejich záznamové uzly
+(`vomaste:Case`, `vomaste:Gap`, `vomaste:Relation`, entita jako `Thing`)
+existují v exportech `/data/*.jsonld` níže, ne ve stránce samotné.
 
 Vedle vložených dat existují **samostatné JSON-LD exportní routy**
 (`build:jsonld-exports`, návrh v
@@ -233,7 +243,8 @@ Rozhodnutí a jeho důsledky: [ADR](docs/adr/dossier-directory-multi-view.md).
 │                           # _shared/ (entity, slovníky, JSON-LD context)
 ├── schemas/canonical/      # JSON Schema kontrakt kanonických záznamů (AJV strict)
 ├── content/                # Zola routing: GENEROVANÉ adaptéry kanonických dat
-│                           # (ručně psané zůstávají jen kořenové indexy a koncepty)
+│                           # (ručně psané: kořenové indexy, koncepty, dokumentace,
+│                           #  mapa, /data/ a per-dossier evidence//entities/ indexy)
 ├── templates/              # Tera šablony (čtou view modely přes load_data)
 ├── data/                   # navigační skeleton, government roster, generovaná data
 ├── assets/js/              # zdrojové JS moduly (bundluje esbuild)
@@ -514,6 +525,34 @@ nevznikne.
   rodinu podle konkrétní reportáže (`seznam-zpravy-syndication`,
   `denik-n`), detektor vidí jen agenturní kredit stránky. Proto `--apply`
   nikdy nepřepisuje existující hodnotu.
+
+## Evidenční plán práce
+
+`npm run report:evidence-plan` (`scripts/data/report-evidence-plan.mjs`,
+běží i v `npm run data:build` a `npm run build`) spočítá z kanonického
+modelu, kde je zdrojování nejslabší, a vypíše pro **každý** dossier
+konkrétní další krok odvozený z jeho čísel. Výstup:
+[`reports/evidence-plan.md`](reports/evidence-plan.md) +
+`data/generated/evidence-plan.json`.
+
+Ruční „todo seznam" by zastaral první změnou dat, proto tenhle přehled nic
+nepamatuje — je to čistá projekce `data/dossiers/**`. Každé tvrzení spadne
+do právě jedné evidenční třídy podle toho, co skutečně cituje: `E0` bez
+zdroje, `E1` jediný zdroj, `E1+` ≥ 2 zdroje bez nezávislé dvojice
+(= potenciál na korroboraci, stačí jeden nezávislý doklad), `E2` hotovo.
+Nezávislost počítá `scripts/data/lib/source-independence.mjs` — tentýž
+primitiv, kterým `validate-semantics.mjs` vynucuje S1/S2/S4/S10, takže
+plán a brána nemůžou ukazovat na jinou realitu. Skóre je
+`3·E0 + 2·E1 + 1·E1+ + 2·otevřené mezery „vysoká" + 1·ostatní otevřené
+mezery + 1·mezery bez kontroly > 30 dní`; pásmo priority je Pareto podíl
+na celkovém objemu práce, ne pevný práh. Vzorec je v hlavičce skriptu
+i v reportu samotném.
+
+Report **neobsahuje čas běhu** — stáří mezer se měří proti nejnovějšímu
+datu v datech, takže dva běhy nad stejným stromem dají bajt po bajtu
+stejný soubor. **Nehodnotí osoby**: vysoké skóre vypovídá o tom, kolik
+zdrojovací práce má nedodělané tenhle web, ne o subjektu dossieru.
+Neroutuje se, Zola ho nevidí.
 
 ## Přidání obsahu do dossieru
 
