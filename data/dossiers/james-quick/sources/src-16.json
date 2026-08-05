@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-16",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-16",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/james-quick"
+  },
+  "title": "SRC-16 — ČT24: Policie prověřuje oznámení ke smlouvám VZP a Lesů ČR",
+  "description": "Dobová zpráva o oznámení CERD zastoupeného Jiřím Jehličkou v souvislosti s Radkem Johnem a Ora Print.",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "veřejnoprávní zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/policie-vysetruje-johna-kvuli-smlouvam-s-vzp-a-lesy-cr-209215",
+  "published": "2010-07-21",
+  "retrieved": "2026-08-05",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-15"
+    }
+  ],
+  "subjects": [
+    "james-quick"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Veřejnoprávní zdroj dokládá podání oznámení, vystupování CERD a Jiřího Jehličky a veřejně popsaný předmět věci. Nedokládá konečné rozhodnutí o trestní odpovědnosti ani soukromý vztah mezi Jehličkou a Johnem."
+    }
+  ],
+  "order": 16
+}

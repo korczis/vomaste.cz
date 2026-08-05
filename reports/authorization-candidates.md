@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 498 context entities across 26 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 499 context entities across 26 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -440,6 +440,17 @@ Generated from 498 context entities across 26 dossier(s). Regenerate with `npm r
   - edge-boyne-bigaud (boyne-holding -> scp-bigaud, "financování pořízení pozemku; od 8/2019 SCP Bigaud ze 100 % vlastněna I.M.O.D.I.M.", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## BRKI a NRKI (`brki-nrki`)
+
+- Type: organization
+- Status: not_authorized
+- Appears in: james-quick
+- Claims: CLM-11
+- Sources: SRC-12 (1 independent source family)
+- Relations:
+  - edge-james-quick-brki-nrki (james-quick -> brki-nrki, "BRKI a NRKI se od aktivit CERD veřejně distancovaly", dossier: james-quick)
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Bronislav Houdek (`bronislav-houdek`)
 
 - Type: person
@@ -578,6 +589,17 @@ Generated from 498 context entities across 26 dossier(s). Regenerate with `npm r
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Česká obchodní inspekce (`ceska-obchodni-inspekce`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: james-quick
+- Claims: CLM-10
+- Sources: SRC-11 (1 independent source family)
+- Relations:
+  - edge-james-quick-ceska-obchodni-inspekce (james-quick -> ceska-obchodni-inspekce, "ČOI zveřejnila spotřebitelské varování k CERD", dossier: james-quick)
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Česká školní inspekce (`ceska-skolni-inspekce`)
 
 - Type: public_institution
@@ -674,6 +696,7 @@ Generated from 498 context entities across 26 dossier(s). Regenerate with `npm r
 - Claims: CLM-01, CLM-02
 - Sources: SRC-01, SRC-02 (1 independent source family)
 - Relations:
+  - edge-csr-protikorupcnilinka-mestsky-soud-praha (csr-protikorupcnilinka -> mestsky-soud-praha, "společnost zrušena bez likvidace a vymazána na základě usnesení soudu", dossier: james-quick)
   - edge-james-quick-csr-protikorupcnilinka (james-quick -> csr-protikorupcnilinka, "podle ÚOOÚ byl v době kontroly jednatelem", dossier: james-quick)
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -1281,9 +1304,6 @@ Generated from 498 context entities across 26 dossier(s). Regenerate with `npm r
 - Claims: none
 - Sources: none (0 independent source families)
 - Relations:
-  - edge-hydroprogress-lesy-ceske-republiky-sp (hydroprogress-s-r-o -> lesy-ceske-republiky-sp, "Lesy České republiky, s.p. zveřejnil v registru smluv smlouvy, jejichž protistranou je HYDROPROGRESS, s.r.o.", dossier: martin-pavlik)
-  - edge-hydroprogress-povodi-labe-sp (hydroprogress-s-r-o -> povodi-labe-sp, "Povodí Labe, s.p. zveřejnil v registru smluv smlouvy, jejichž protistranou je HYDROPROGRESS, s.r.o.", dossier: martin-pavlik)
-  - edge-hydroprogress-povodi-odry-sp (hydroprogress-s-r-o -> povodi-odry-sp, "Povodí Odry, s.p. zveřejnil v registru smluv smlouvy, jejichž protistranou je HYDROPROGRESS, s.r.o.", dossier: martin-pavlik)
   - edge-pavlik-hydroprogress (martin-pavlik -> hydroprogress-s-r-o, "jednatel a společník s podílem 80 %", dossier: martin-pavlik)
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -1638,6 +1658,17 @@ Generated from 498 context entities across 26 dossier(s). Regenerate with `npm r
 - Claims: CLM-43
 - Sources: SRC-24 (1 independent source family)
 - Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Jiří Paroubek (`jiri-paroubek`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: james-quick
+- Claims: CLM-16
+- Sources: SRC-17 (1 independent source family)
+- Relations:
+  - edge-james-quick-jiri-paroubek (james-quick -> jiri-paroubek, "organizoval demonstrace požadující Paroubkův odchod z politiky", dossier: james-quick)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Jiří Tvrdík (`jiri-tvrdik`)
@@ -2275,17 +2306,6 @@ Generated from 498 context entities across 26 dossier(s). Regenerate with `npm r
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
-## Lesy České republiky, s.p. (`lesy-ceske-republiky-sp`)
-
-- Type: organization
-- Status: not_authorized
-- Appears in: martin-pavlik
-- Claims: none
-- Sources: none (0 independent source families)
-- Relations:
-  - edge-hydroprogress-lesy-ceske-republiky-sp (hydroprogress-s-r-o -> lesy-ceske-republiky-sp, "Lesy České republiky, s.p. zveřejnil v registru smluv smlouvy, jejichž protistranou je HYDROPROGRESS, s.r.o.", dossier: martin-pavlik)
-- Missing: explicit owner authorization to promote this to its own dossier
-
 ## «Lex Mrázová» (návrh povinnosti přiznávat obecní byt) (`lex-mrazova`)
 
 - Type: legal_or_administrative_process
@@ -2638,10 +2658,11 @@ Generated from 498 context entities across 26 dossier(s). Regenerate with `npm r
 
 - Type: public_institution
 - Status: not_authorized
-- Appears in: andrej-babis, karel-havlicek
-- Claims: CLM-01, CLM-08, CLM-20, CLM-50, CLM-62, CLM-63, CLM-64, CLM-66, CLM-80
-- Sources: SRC-01, SRC-03, SRC-08, SRC-12, SRC-23, SRC-24, SRC-41, SRC-42, SRC-43, SRC-47, SRC-57 (6 independent source families)
-- Relations: none
+- Appears in: andrej-babis, karel-havlicek, james-quick
+- Claims: CLM-01, CLM-08, CLM-20, CLM-50, CLM-62, CLM-63, CLM-64, CLM-66, CLM-80, CLM-14
+- Sources: SRC-01, SRC-03, SRC-08, SRC-12, SRC-23, SRC-24, SRC-41, SRC-42, SRC-43, SRC-47, SRC-57, SRC-15 (12 independent source families)
+- Relations:
+  - edge-csr-protikorupcnilinka-mestsky-soud-praha (csr-protikorupcnilinka -> mestsky-soud-praha, "společnost zrušena bez likvidace a vymazána na základě usnesení soudu", dossier: james-quick)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Městský úřad Nymburk (`mestsky-urad-nymburk`)
@@ -3907,28 +3928,6 @@ Generated from 498 context entities across 26 dossier(s). Regenerate with `npm r
   - edge-okamura-poslaneckasnemovna (okamura -> poslanecka-snemovna, "Sněmovna 5. 3. 2026 nevydala Okamuru k trestnímu stíhání (parlamentní procesní krok)", dossier: tomio-okamura)
 - Missing: explicit owner authorization to promote this to its own dossier
 
-## Povodí Labe, státní podnik (`povodi-labe-sp`)
-
-- Type: organization
-- Status: not_authorized
-- Appears in: martin-pavlik
-- Claims: none
-- Sources: none (0 independent source families)
-- Relations:
-  - edge-hydroprogress-povodi-labe-sp (hydroprogress-s-r-o -> povodi-labe-sp, "Povodí Labe, s.p. zveřejnil v registru smluv smlouvy, jejichž protistranou je HYDROPROGRESS, s.r.o.", dossier: martin-pavlik)
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Povodí Odry, státní podnik (`povodi-odry-sp`)
-
-- Type: organization
-- Status: not_authorized
-- Appears in: martin-pavlik
-- Claims: none
-- Sources: none (0 independent source families)
-- Relations:
-  - edge-hydroprogress-povodi-odry-sp (hydroprogress-s-r-o -> povodi-odry-sp, "Povodí Odry, s.p. zveřejnil v registru smluv smlouvy, jejichž protistranou je HYDROPROGRESS, s.r.o.", dossier: martin-pavlik)
-- Missing: explicit owner authorization to promote this to its own dossier
-
 ## Městská část Praha 3 (`praha3`)
 
 - Type: public_institution
@@ -4029,6 +4028,17 @@ Generated from 498 context entities across 26 dossier(s). Regenerate with `npm r
 - Claims: CLM-03
 - Sources: SRC-02, SRC-04 (1 independent source family)
 - Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Radek John (`radek-john`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: james-quick
+- Claims: CLM-15
+- Sources: SRC-16 (1 independent source family)
+- Relations:
+  - edge-james-quick-radek-john (james-quick -> radek-john, "CERD zastoupený Jehličkou podal oznámení ve veřejné kauze", dossier: james-quick)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Radek Mátl (`radek-matl`)

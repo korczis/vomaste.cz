@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/case.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/cases/CASE-02",
+  "@type": "vomaste:Case",
+  "recordType": "case",
+  "identifier": "CASE-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/james-quick"
+  },
+  "title": "Plánovaný veřejný registr sexuálních pachatelů a podezřelých",
+  "summary": "CERD v říjnu 2010 oznámil plán zveřejnit databázi, která mohla zahrnovat i nepravomocně odsouzené nebo podezřelé osoby. V listopadu 2010 od projektu ustoupil; dostupné zdroje nedokládají jeho spuštění.",
+  "period": "říjen–listopad 2010",
+  "status": "status-single",
+  "statusLabel": "Oznámený a následně stažený projekt",
+  "anchor": "kauza-registr-sexualnich-pachatelu",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-13"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-14"
+    }
+  ],
+  "subjects": [
+    "james-quick"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Plný kontext a odkazy jsou v [hlavním přehledu dossieru](@/dossiers/james-quick/_index.md#kauza-registr-sexualnich-pachatelu)."
+    }
+  ],
+  "order": 2
+}

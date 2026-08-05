@@ -15,7 +15,8 @@
  "coverageState": "discovered",
  "dossiers": [
   "andrej-babis",
-  "karel-havlicek"
+  "karel-havlicek",
+  "james-quick"
  ],
  "order": 258,
  "provenance": {
@@ -32,7 +33,8 @@
    "CLM-63",
    "CLM-64",
    "CLM-66",
-   "CLM-80"
+   "CLM-80",
+   "CLM-14"
   ],
   "sourceRefs": [
    "SRC-01",
@@ -45,7 +47,8 @@
    "SRC-42",
    "SRC-43",
    "SRC-47",
-   "SRC-57"
+   "SRC-57",
+   "SRC-15"
   ]
  },
  "content": [

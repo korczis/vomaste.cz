@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-10",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-10",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/james-quick"
+  },
+  "text": "Česká obchodní inspekce v srpnu 2018 varovala před využíváním služeb CERD; podle podnětů spotřebitelů bylo po registraci problematické provozovatele kontaktovat a ukončit předplatné a banky ani úvěrové společnosti nepovažovaly nabízené potvrzení o bezdlužnosti za relevantní.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-11"
+    }
+  ],
+  "subjects": [
+    "james-quick"
+  ],
+  "order": 10,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tvrzení přesně reprodukuje rozsah veřejného varování ČOI. Podněty spotřebitelů nejsou vydávány za individuální pravomocná rozhodnutí a varování samo neurčuje trestní odpovědnost konkrétní osoby."
+    }
+  ]
+}

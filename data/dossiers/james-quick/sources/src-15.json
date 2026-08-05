@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-15",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-15",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/james-quick"
+  },
+  "title": "SRC-15 — Veřejný přepis obchodního rejstříku: CSR & Protikorupcnilinka.cz",
+  "description": "Rejstříkový přepis výmazu společnosti, přesné spisové značky, data právní moci a právního titulu zrušení bez likvidace.",
+  "outlet": "Finmag.cz — přepis obchodního rejstříku",
+  "sourceType": "veřejný rejstříkový agregátor",
+  "url": "https://www.finmag.cz/obchodni-rejstrik/03877248-csr-protikorupcnilinka-cz-s-r-o",
+  "published": "2024-07-04",
+  "retrieved": "2026-08-05",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-14"
+    }
+  ],
+  "subjects": [
+    "james-quick"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zdroj reprodukuje veřejný zápis obchodního rejstříku včetně soudu, č. j., data právní moci a § 105a odst. 5. Protože nejde o samotné usnesení, dossier z něj nevyvozuje konkrétní skutkové důvody a ponechává získání listiny jako otevřený úkol."
+    }
+  ],
+  "order": 15
+}
