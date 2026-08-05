@@ -9,12 +9,15 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek"
   },
-  "text": "Poslanecká sněmovna 6. 9. 2017 hlasováním zbavila imunity a vydala k trestnímu stíhání v kauze Čapí hnízdo Andreje Babiše (123 pro, 4 proti) a Jaroslava Faltýnka (120 pro, 5 proti); oba tehdy hlasovali pro vlastní vydání s vyjádřením, že očekávají očištění u soudu.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "text": "Poslanecká sněmovna 6. září 2017 vyslovila souhlas s trestním stíháním Andreje Babiše (přihlášeno 134, pro 123, proti 4) a Jaroslava Faltýnka (přihlášeno 133, pro 120, proti 5); podle citovaného zpravodajství oba tehdy uvedli, že očekávají očištění u soudu",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-12"
     }
   ],
   "subjects": [

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-16",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-16",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek"
+  },
+  "title": "SRC-16 — Poslanecká sněmovna Parlamentu ČR: profil poslance, IX. volební období (2021–2025)",
+  "description": "Primární úřední profil za období 2021–2025: poslanec od 9. 10. 2021 do 8. 10. 2025, místopředseda poslaneckého klubu ANO 2011 od 12. 10. 2021 a místopředseda zemědělského výboru od 24. 11. 2021.",
+  "outlet": "Poslanecká sněmovna Parlamentu ČR",
+  "sourceType": "primární úřední záznam",
+  "url": "https://www.psp.cz/sqw/detail.sqw?id=6190&o=9",
+  "retrieved": "2026-08-05",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-13"
+    }
+  ],
+  "subjects": [
+    "faltynek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil poslance za **IX. volební období (2021–2025)**, volební kraj Olomoucký. Uvádí:\n\n- **poslanec od 9. 10. 2021 do 8. 10. 2025**\n- **Poslanecký klub ANO 2011 — člen a místopředseda od 12. 10. 2021 do 8. 10. 2025**\n- Zemědělský výbor — člen od 23. 11. 2021, **místopředseda od 24. 11. 2021** do 8. 10. 2025\n- Organizační výbor — člen od 23. 11. 2021 do 8. 10. 2025\n\n**Poznámka k přesnosti a limitům**: tento záznam je důvod, proč se v dossieru důsledně rozlišuje **předseda** a **místopředseda** poslaneckého klubu. Podle úředních profilů byl Faltýnek předsedou klubu ANO 2011 v obdobích 2013–2017 a 2017–2021 a od roku 2021 je jeho **místopředsedou** — zaměnit tyto funkce by znamenalo popsat jinou pozici, než jakou úřední evidence uvádí. Záznam opět nedokládá žádnou vládní funkci a tento přehled žádnou netvrdí."
+    }
+  ],
+  "order": 16
+}

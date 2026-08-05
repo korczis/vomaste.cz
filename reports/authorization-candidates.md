@@ -494,7 +494,7 @@ Generated from 502 context entities across 26 dossier(s). Regenerate with `npm r
   - edge-babis-capihnizdo (babis -> capi-hnizdo, "obžalovaný; dvakrát nepravomocně zproštěn (2023, 2024), obě zproštění zrušena; stíhání přerušeno po nevydání Sněmovnou — nic z toho není rozhodnutí o vině", dossier: andrej-babis)
   - edge-capihnizdo-olaf (capi-hnizdo -> olaf, "šetření OLAF; zveřejněné části zprávy hovoří o nesrovnalostech — zjištění kontrolního úřadu, ne rozsudek", dossier: andrej-babis)
   - edge-imoba-capihnizdo (imoba -> capi-hnizdo, "vlastník areálu; 6/2018 vrátila dotaci ~50 mil. Kč — vrácení není přiznání viny, do dohody firma prosadila opak", dossier: andrej-babis)
-  - edge-faltynek-capihnizdo (faltynek -> capi-hnizdo, "stíhán 2015–2018; stíhání zrušeno státním zástupcem", dossier: jaroslav-faltynek)
+  - edge-faltynek-capihnizdo (faltynek -> capi-hnizdo, "Sněmovna vyslovila souhlas se stíháním 6. 9. 2017; usnesení o zahájení stíhání zrušil státní zástupce 3. 5. 2018", dossier: jaroslav-faltynek)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## ČD Cargo (`cd-cargo`)
@@ -3048,7 +3048,7 @@ Generated from 502 context entities across 26 dossier(s). Regenerate with `npm r
   - edge-macinka-motoriste (macinka -> motoriste, "předseda", dossier: macinka-turek)
   - edge-motoriste-vlada (motoriste -> vlada, "člen koalice", dossier: macinka-turek)
   - edge-turek-motoriste (turek -> motoriste, "poslanec za", dossier: macinka-turek)
-  - edge-chlad-motoriste-dary (chlad -> motoriste, "evidováno 638 864 Kč za rok 2025 včetně nepeněžního plnění; veřejně uváděná čísla se liší", dossier: richard-chlad)
+  - edge-chlad-motoriste-dary (chlad -> motoriste, "úředně vykázáno 638 864 Kč za rok 2025, celou částkou jako bezúplatná plnění volební kampani; veřejně uváděná čísla se liší", dossier: richard-chlad)
   - edge-lubor-novak-motoriste (lubor-novak -> motoriste, "on a jeho firma darovali Motoristům 400 tisíc korun", dossier: igor-cerveny)
 - Missing: explicit owner authorization to promote this to its own dossier
 

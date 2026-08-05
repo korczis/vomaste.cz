@@ -36,3 +36,10 @@ Zaznamenává se tedy to, co doloženo je — že se veřejně uváděná čísl
 liší — a zároveň to, co doloženo není: proč.
 
 **Opakovaná kontrola k 2026-08-03**: přímo znovu otevřen SRC-03. Dohledán jeden doplňkový detail — Chlad ke svým zhruba 1,5 milionu Kč dodal ještě samostatných 150 tisíc Kč za propagační soutěž na sociálních sítích, doplněno do [CLM-03](@/dossiers/richard-chlad/claims/clm-03.md). Přesné období ani vzájemný vztah jednotlivých čísel to ale nadále neobjasňuje. Mezera zůstává v podstatě otevřená.
+
+**Kontrola proti primárním dokumentům k 2026-08-05 — mezera se zúžila, ale nezavírá se.** Otevřeny a přečteny tři dokumenty Úřadu pro dohled nad hospodařením politických stran a politických hnutí. Co se doložit podařilo:
+
+- **Číslo 638 864 Kč je vymezené přesně**: podle výroční finanční zprávy za rok 2025 ([SRC-04](@/dossiers/richard-chlad/sources/src-04.md)) jde o **pět nepeněžitých plnění za rok 2025**, ne o peněžité dary — a podle zprávy o financování kampaně ([SRC-05](@/dossiers/richard-chlad/sources/src-05.md), [CLM-09](@/dossiers/richard-chlad/claims/clm-09.md)) o plnění **volební kampani** pro sněmovní volby, poskytnutá **1. 8. a 1. 9. 2025**. Tolik tedy k jednomu ze čtyř čísel: víme, co pokrývá.
+- **Číslo „2× 50 tisíc před eurovolbami" se v evidenci roku 2024 nachází** ([SRC-06](@/dossiers/richard-chlad/sources/src-06.md)) — ovšem u dárce téhož jména s **jiným ročníkem narození**, což otevírá samostatnou otázku totožnosti ([GAP-03](@/dossiers/richard-chlad/gaps/gap-03.md)).
+
+Co doložit nešlo: **Chladovy vlastní údaje** — „necelé dva miliony" ([CLM-02](@/dossiers/richard-chlad/claims/clm-02.md)) a zhruba 1,5 milionu plus 150 tisíc ([CLM-03](@/dossiers/richard-chlad/claims/clm-03.md)) — **nemají v žádném z otevřených úředních dokumentů protějšek** a citované zdroje k nim neuvádějí ani období, ani co přesně se do nich počítá. Rozdíl mezi nimi a evidovanou částkou proto **nadále není doloženým rozporem**: jde o čísla vymezená různě a částečně vůbec nevymezená. Mezera zůstává otevřená přesně v tomto bodě.

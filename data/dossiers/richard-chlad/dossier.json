@@ -8,15 +8,15 @@
   "identifier": "richard-chlad",
   "slug": "richard-chlad",
   "title": "Richard Chlad",
-  "description": "Neutrální, zdroji doložený přehled o Richardu Chladovi — dárci strany Motoristé sobě. Autorizovaný rozsah: evidované dary, veřejně uváděná čísla a publikované reakce vedení strany.",
+  "description": "Neutrální, zdroji doložený přehled o Richardu Chladovi — poskytovateli bezúplatných plnění hnutí Motoristé sobě. Autorizovaný rozsah: úředně vykázaná plnění, veřejně uváděná čísla a publikované reakce vedení strany.",
   "dossierType": "entity",
   "canonicalDossier": "richard-chlad",
   "subject": "chlad",
   "language": "cs",
   "navigationVisible": true,
   "order": 22,
-  "updated": "2026-07-30",
-  "reviewedAt": "2026-07-30",
+  "updated": "2026-08-05",
+  "reviewedAt": "2026-08-05",
   "authorization": {
     "records": [
       "AUTH-2026-07-30-W"
@@ -32,11 +32,16 @@
         "label": "Richard Chlad",
         "subject": true,
         "claims": [
-          "CLM-01"
+          "CLM-01",
+          "CLM-09",
+          "CLM-10"
         ],
         "sources": [
           "SRC-01",
-          "SRC-02"
+          "SRC-02",
+          "SRC-04",
+          "SRC-05",
+          "SRC-06"
         ]
       },
       {
@@ -46,12 +51,21 @@
           "CLM-01",
           "CLM-02",
           "CLM-03",
-          "CLM-04"
+          "CLM-04",
+          "CLM-09",
+          "CLM-10",
+          "CLM-11",
+          "CLM-12"
         ],
         "sources": [
           "SRC-01",
           "SRC-02",
-          "SRC-03"
+          "SRC-03",
+          "SRC-04",
+          "SRC-05",
+          "SRC-06",
+          "SRC-07",
+          "SRC-08"
         ]
       },
       {
@@ -85,14 +99,14 @@
   "contentBlocks": [
     {
       "type": "markdown",
-      "value": "## Kdo je Richard Chlad {#kdo}\n\nRichard Chlad je podnikatel a doložený **dárce strany Motoristé sobě**,\nkterá je součástí současné vlády. Tento dossier je autorizován záznamem\n`AUTH-2026-07-30-W` v `AGENTS.md`.\n\n**Proč je v tomto přehledu**, uvedeno hned na začátku, protože na tom\nvšechno ostatní stojí: **ne kvůli tomu, koho zná.** Kvůli tomu, že\nposkytl peníze a plnění politické straně, která je dnes ve vládě.\nFinancování stran je veřejný akt, vede se k němu veřejný rejstřík a už\no něm psala jmenovaná média. To je celý základ veřejného zájmu zde —\nsoukromé podnikání ani osobní známosti jím nejsou.\n\n**Co tento dossier výslovně netvrdí**: **darovat politické straně je\nlegální.** Žádný citovaný zdroj Chladovi nevytýká protiprávní jednání,\nžádný neuvádí, že by proti němu cokoli běželo, a nic takového se z\ntohoto přehledu vyvozovat nedá. Tématem je **transparentnost financování\nstrany**, ne obvinění dárce.\n\n**Aktuální stav dossieru**: autorizovaná témata rozpracována — tvrzení\nvycházejí výhradně ze zdrojů otevřených a přečtených (viz registr\nzdrojů); co se doložit nepodařilo, eviduje registr mezer. Autorizace\ndefinuje rozsah, necertifikuje reportáže.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/richard-chlad/claims/clm-01.md) | Veřejný rejstřík Hlídač státu eviduje u Richarda Chlada za rok 2025 dary straně Motoristé sobě v celkové výši 638 864 Kč, položkově: 140 000 Kč půjčení sportovních automobilů, 200 000 Kč propůjčení vozů Bugatti, 59 313 Kč výroba a instalace billboardu, 54 550 Kč demontáž billboardu a 185 001 Kč uspořádání akce; částka již zahrnuje nepeněžní plnění | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-01](@/dossiers/richard-chlad/sources/src-01.md) |\n| <a id=\"clm-02\"></a>[CLM-02](@/dossiers/richard-chlad/claims/clm-02.md) | Richard Chlad podle citovaného zpravodajství uvedl, že straně poskytl „necelé dva miliony korun\" na propagaci a vozy pro mítinky | <span class=\"status-badge status-quote\">CITACE</span> | [SRC-02](@/dossiers/richard-chlad/sources/src-02.md) |\n| <a id=\"clm-03\"></a>[CLM-03](@/dossiers/richard-chlad/claims/clm-03.md) | Podle citovaného zpravodajství Chlad jinde uváděl podporu v řádu zhruba 1,5 milionu Kč, do níž počítal pronájmy aut, dopravu a pojištění, k čemuž dodal ještě samostatných 150 tisíc Kč za propagační soutěž na sociálních sítích | <span class=\"status-badge status-quote\">CITACE</span> | [SRC-03](@/dossiers/richard-chlad/sources/src-03.md) |\n| <a id=\"clm-04\"></a>[CLM-04](@/dossiers/richard-chlad/claims/clm-04.md) | Předseda strany Petr Macinka podle citovaného zpravodajství uvedl: „Dal nám před eurovolbami dvakrát 50 tisíc korun.\" | <span class=\"status-badge status-quote\">CITACE</span> | [SRC-03](@/dossiers/richard-chlad/sources/src-03.md) |\n| <a id=\"clm-05\"></a>[CLM-05](@/dossiers/richard-chlad/claims/clm-05.md) | Filip Turek podle citovaného zpravodajství uvedl: „Je to můj kamarád a s politikou nemá nic společného, i záměrně přeceňujete jeho roli v podpoře Motoristů.\" | <span class=\"status-badge status-quote\">CITACE</span> | [SRC-03](@/dossiers/richard-chlad/sources/src-03.md) |\n| <a id=\"clm-06\"></a>[CLM-06](@/dossiers/richard-chlad/claims/clm-06.md) | Petr Macinka podle citovaného zpravodajství uvedl: „Richard Chlad je kamarád Filipa Turka, ale rozhodně není ideologem Motoristů. Tím jsem já.\" | <span class=\"status-badge status-quote\">CITACE</span> | [SRC-03](@/dossiers/richard-chlad/sources/src-03.md) |\n| <a id=\"clm-08\"></a>[CLM-08](@/dossiers/richard-chlad/claims/clm-08.md) | Citovaný profil uvádí starší osobní známost Richarda Chlada s Radovanem Krejčířem — podle článku se seznámili na večírku Mercedes-Benz a navštěvovali sportovní areál ve Všenorech | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-02](@/dossiers/richard-chlad/sources/src-02.md) |\n\n## Financování strany Motoristé sobě {#kauza-financovani}\n\nVeřejný rejstřík eviduje u Richarda Chlada za **rok 2025** dary straně\nMotoristé sobě v celkové výši **638 864 Kč**, položkově rozepsané:\n140 000 Kč za půjčení sportovních automobilů, 200 000 Kč za propůjčení\nvozů Bugatti, 59 313 Kč za výrobu a instalaci billboardu, 54 550 Kč za\njeho demontáž a 185 001 Kč za uspořádání akce\n([CLM-01](@/dossiers/richard-chlad/claims/clm-01.md)). Je podstatné, že\ntato částka **už zahrnuje nepeněžní plnění** — nejde jen o převedené\npeníze.\n\nVedle toho stojí tři další veřejně uváděná čísla: Chladovo vlastní\n„necelé dva miliony korun\"\n([CLM-02](@/dossiers/richard-chlad/claims/clm-02.md)), jinde jím uváděných\nzhruba 1,5 milionu zahrnujících pronájmy aut, dopravu a pojištění, k\nčemuž Chlad dodal ještě samostatných 150 tisíc Kč za propagační soutěž\nna sociálních sítích\n([CLM-03](@/dossiers/richard-chlad/claims/clm-03.md)), a údaj předsedy\nstrany o dvakrát 50 000 Kč **před eurovolbami**\n([CLM-04](@/dossiers/richard-chlad/claims/clm-04.md)).\n\n**Co z toho tento dossier vyvozuje a co ne**: doloženo je, že se veřejně\nuváděná čísla **liší**. Doloženo **není**, proč — a to je zásadní rozdíl.\nČísla se týkají **různých období** (eurovolby 2024 vs. rok 2025) a\n**různého vymezení toho, co se do „podpory\" počítá**, takže **nejsou\npřímo porovnatelná** ([GAP-01](@/dossiers/richard-chlad/gaps/gap-01.md)).\nPostavit je vedle sebe jako doložený rozpor by znamenalo vyrobit tvrzení,\nkteré zdroje nepodporují.\n\nA především: **žádný citovaný zdroj neuvádí, že by cokoli nebylo řádně\nvykázáno**, že by se věcí zabýval dozorový úřad nebo že by kdokoli podal\npodnět ([GAP-02](@/dossiers/richard-chlad/gaps/gap-02.md)). Darovat\npolitické straně je legální.\n\n## Publikované reakce vedení strany {#kauza-reakce-strany}\n\nFilip Turek uvedl: „Je to můj kamarád a s politikou nemá nic společného,\ni záměrně přeceňujete jeho roli v podpoře Motoristů.\"\n([CLM-05](@/dossiers/richard-chlad/claims/clm-05.md)). Petr Macinka\nuvedl: „Richard Chlad je kamarád Filipa Turka, ale rozhodně není\nideologem Motoristů. Tím jsem já.\"\n([CLM-06](@/dossiers/richard-chlad/claims/clm-06.md)).\n\nObě vyjádření jsou vedena ve stavu **CITACE** — doloženo je, že padla,\nnikoli že jejich obsah platí. **Totéž měřítko platí pro obě strany**: pro\nChladovy vlastní údaje o výši podpory stejně jako pro tvrzení\npředstavitelů strany, že jeho roli zpravodajství přeceňuje. Dossier\nnerozhoduje, kdo má pravdu; zaznamenává, co kdo veřejně řekl.\n\n## Starší osobní známost {#kontext}\n\nCitovaný profil uvádí Chladovu **starší osobní známost s Radovanem\nKrejčířem**\n([CLM-08](@/dossiers/richard-chlad/claims/clm-08.md)).\n\n**Hranice, kterou tento dossier nepřekročí**: ta známost je zde\n**atribuovaný popisný detail z citovaného zpravodajství**, ne téma. Je\nosobní a historická, není finanční ani politická, a **neplyne z ní nic o\nChladově jednání**. Radovan Krejčíř není subjektem tohoto ani žádného\njiného přehledu na tomto webu a jeho pokrytí bylo výslovně **zamítnuto**\ni s odůvodněním (viz záznam „Not authorized: Radovan Krejčíř\" v\n`AGENTS.md`). Vyvozovat z toho, že se dva lidé kdysi znali, cokoli o\nsoučasném financování strany, by bylo přesně to, co tento web odmítá.\n\n## Co tento přehled nezkoumal {#mezery}\n\nOtevřené mezery vede [registr mezer](@/dossiers/richard-chlad/gaps/_index.md):\nproč se veřejně uváděná čísla liší a co přesně které pokrývá\n([GAP-01](@/dossiers/richard-chlad/gaps/gap-01.md)), a zda a jak byla\njednotlivá plnění vykázána ve výroční finanční zprávě strany\n([GAP-02](@/dossiers/richard-chlad/gaps/gap-02.md)).\n\n## Metodické omezení\n\nDar politické straně **není podezřením**. Je to legální, evidovaný\nveřejný akt, a jeho zaznamenání není zjištěním o ničem nepřípustném.\n\nRozdíl mezi čísly uváděnými na veřejnosti je **zaznamenaný fakt**, ne\ndoložený rozpor — dokud není doloženo, jaké období a jaká plnění které\nčíslo pokrývá, nelze z rozdílu vyvozovat, že by některé bylo nesprávné.\nTento dossier proto uvádí obojí: co doloženo je, i co doloženo není."
+      "value": "## Kdo je Richard Chlad {#kdo}\n\nRichard Chlad je podnikatel a doložený **dárce strany Motoristé sobě**,\nkterá je součástí současné vlády. Tento dossier je autorizován záznamem\n`AUTH-2026-07-30-W` v `AGENTS.md`.\n\n**Proč je v tomto přehledu**, uvedeno hned na začátku, protože na tom\nvšechno ostatní stojí: **ne kvůli tomu, koho zná.** Kvůli tomu, že\nposkytl plnění politické straně, která je dnes ve vládě, a strana to\nvykázala úřadu. Financování stran je veřejný akt, vede se k němu veřejná\nevidence a už o něm psala jmenovaná média. To je celý základ veřejného\nzájmu zde — soukromé podnikání ani osobní známosti jím nejsou.\n\n**Co tento dossier výslovně netvrdí**: **poskytnout politické straně dar\nnebo bezúplatné plnění je legální.** Žádný citovaný zdroj Chladovi nevytýká protiprávní jednání,\nžádný neuvádí, že by proti němu cokoli běželo, a nic takového se z\ntohoto přehledu vyvozovat nedá. Tématem je **transparentnost financování\nstrany**, ne obvinění dárce.\n\n**Aktuální stav dossieru**: autorizovaná témata rozpracována — tvrzení\nvycházejí výhradně ze zdrojů otevřených a přečtených (viz registr\nzdrojů); co se doložit nepodařilo, eviduje registr mezer. Autorizace\ndefinuje rozsah, necertifikuje reportáže.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/richard-chlad/claims/clm-01.md) | Výroční finanční zpráva hnutí Motoristé sobě za rok 2025, předložená Úřadu pro dohled nad hospodařením politických stran a politických hnutí 1. 4. 2026, eviduje u Richarda Chlada pět položek v souhrnu 638 864 Kč, a to výhradně jako bezúplatná plnění, nikoli jako peněžité dary: 200 000 Kč propůjčení vozů Bugatti na akci, 185 001 Kč uspořádání akce, 140 000 Kč půjčení sportovních automobilů na akce, 59 313 Kč výroba a instalace billboardu a pronájem reklamní plochy a 54 550 Kč demontáž billboardu; tytéž položky uvádí zpráva v části V. (Dary) i v části VI. (Ostatní bezúplatná plnění nad 50 000 Kč) | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-04](@/dossiers/richard-chlad/sources/src-04.md), [SRC-01](@/dossiers/richard-chlad/sources/src-01.md) |\n| <a id=\"clm-02\"></a>[CLM-02](@/dossiers/richard-chlad/claims/clm-02.md) | Richard Chlad podle citovaného zpravodajství uvedl, že straně poskytl „necelé dva miliony korun\" na propagaci a vozy pro mítinky | <span class=\"status-badge status-quote\">CITACE</span> | [SRC-02](@/dossiers/richard-chlad/sources/src-02.md) |\n| <a id=\"clm-03\"></a>[CLM-03](@/dossiers/richard-chlad/claims/clm-03.md) | Podle citovaného zpravodajství Chlad jinde uváděl podporu v řádu zhruba 1,5 milionu Kč, do níž počítal pronájmy aut, dopravu a pojištění, k čemuž dodal ještě samostatných 150 tisíc Kč za propagační soutěž na sociálních sítích | <span class=\"status-badge status-quote\">CITACE</span> | [SRC-03](@/dossiers/richard-chlad/sources/src-03.md) |\n| <a id=\"clm-04\"></a>[CLM-04](@/dossiers/richard-chlad/claims/clm-04.md) | Předseda strany Petr Macinka podle citovaného zpravodajství uvedl: „Dal nám před eurovolbami dvakrát 50 tisíc korun.\" | <span class=\"status-badge status-quote\">CITACE</span> | [SRC-03](@/dossiers/richard-chlad/sources/src-03.md) |\n| <a id=\"clm-05\"></a>[CLM-05](@/dossiers/richard-chlad/claims/clm-05.md) | Filip Turek podle citovaného zpravodajství uvedl: „Je to můj kamarád a s politikou nemá nic společného, i záměrně přeceňujete jeho roli v podpoře Motoristů.\" | <span class=\"status-badge status-quote\">CITACE</span> | [SRC-03](@/dossiers/richard-chlad/sources/src-03.md) |\n| <a id=\"clm-06\"></a>[CLM-06](@/dossiers/richard-chlad/claims/clm-06.md) | Petr Macinka podle citovaného zpravodajství uvedl: „Richard Chlad je kamarád Filipa Turka, ale rozhodně není ideologem Motoristů. Tím jsem já.\" | <span class=\"status-badge status-quote\">CITACE</span> | [SRC-03](@/dossiers/richard-chlad/sources/src-03.md) |\n| <a id=\"clm-08\"></a>[CLM-08](@/dossiers/richard-chlad/claims/clm-08.md) | Citovaný profil uvádí starší osobní známost Richarda Chlada s Radovanem Krejčířem — podle článku se seznámili na večírku Mercedes-Benz a navštěvovali sportovní areál ve Všenorech | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-02](@/dossiers/richard-chlad/sources/src-02.md) |\n| <a id=\"clm-09\"></a>[CLM-09](@/dossiers/richard-chlad/claims/clm-09.md) | Zpráva o financování volební kampaně hnutí Motoristé sobě pro volby do Poslanecké sněmovny 2025, předložená Úřadu pro dohled 5. 1. 2026, eviduje týchž pět bezúplatných plnění od Richarda Chlada jako plnění poskytnutá volební kampani hnutí, s daty plnění 1. 8. 2025 (59 313 Kč) a 1. 9. 2025 (zbývající čtyři položky) | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-05](@/dossiers/richard-chlad/sources/src-05.md) |\n| <a id=\"clm-10\"></a>[CLM-10](@/dossiers/richard-chlad/claims/clm-10.md) | Výroční finanční zpráva hnutí Motoristé sobě za rok 2024 neeviduje u dárce jménem Richard Chlad s ročníkem narození 1962 žádnou položku; dva peněžité dary po 50 000 Kč jsou v ní vedeny u dárce téhož jména s ročníkem narození 1992 | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-06](@/dossiers/richard-chlad/sources/src-06.md) |\n| <a id=\"clm-11\"></a>[CLM-11](@/dossiers/richard-chlad/claims/clm-11.md) | Přehled Úřadu pro dohled uvádí u výroční finanční zprávy hnutí Motoristé sobě za rok 2025 výsledek zpracování „zpráva je úplná“; úřad k tomu výslovně dodává, že úplnost znamená předepsané náležitosti a formulář s přílohami a že se nejedná o výsledek kontroly správnosti údajů | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-07](@/dossiers/richard-chlad/sources/src-07.md) |\n| <a id=\"clm-12\"></a>[CLM-12](@/dossiers/richard-chlad/claims/clm-12.md) | Registr uložených sankcí Úřadu pro dohled k 5. 8. 2026 neeviduje u hnutí Motoristé sobě žádnou sankci vztahující se k výroční finanční zprávě za rok 2025 ani k plněním evidovaným u Richarda Chlada; přehled protokolů o vykonaných kontrolách k témuž datu u tohoto hnutí žádný protokol neuvádí | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-08](@/dossiers/richard-chlad/sources/src-08.md) |\n\n## Financování strany Motoristé sobě {#kauza-financovani}\n\n**Primární doklad**: výroční finanční zpráva hnutí Motoristé sobě **za\nrok 2025**, kterou hnutí předložilo Úřadu pro dohled nad hospodařením\npolitických stran a politických hnutí **1. 4. 2026**, eviduje u Richarda\nChlada pět položek v souhrnu **638 864 Kč**: 200 000 Kč za propůjčení\nvozů Bugatti na akci, 185 001 Kč za uspořádání akce, 140 000 Kč za\npůjčení sportovních automobilů na akce, 59 313 Kč za výrobu a instalaci\nbillboardu a pronájem reklamní plochy a 54 550 Kč za jeho demontáž\n([CLM-01](@/dossiers/richard-chlad/claims/clm-01.md),\n[SRC-04](@/dossiers/richard-chlad/sources/src-04.md)).\n\n**Terminologicky přesně, protože na tom v tomto tématu záleží**: zpráva\nvšech pět položek označuje jako **bezúplatná plnění** — tedy plnění\nnepeněžitá — a **žádný peněžitý dar** od této osoby za rok 2025 neuvádí.\nNejde tedy o částku, která nepeněžní plnění „také zahrnuje\"; jde o\nnepeněžitá plnění **v celé výši**. Druhý úřední dokument, **zpráva o\nfinancování volební kampaně** pro sněmovní volby 2025 předložená\n5. 1. 2026, tytéž položky eviduje jako plnění poskytnutá **volební\nkampani**, a to **1. 8. 2025** (59 313 Kč) a **1. 9. 2025** (zbývající\nčtyři) ([CLM-09](@/dossiers/richard-chlad/claims/clm-09.md),\n[SRC-05](@/dossiers/richard-chlad/sources/src-05.md)).\n\nVeřejný rejstřík Hlídač státu\n([SRC-01](@/dossiers/richard-chlad/sources/src-01.md)) tatáž data\n**přebírá**, včetně doslovných popisů položek — proto se s úřední\nevidencí počítá jako **jedno nezávislé doložení**, ne jako dvě, a tvrzení\nzůstává ve stavu **1 ZDROJ**, přestože stojí na třech dokumentech.\n\nVedle toho stojí tři další veřejně uváděná čísla: Chladovo vlastní\n„necelé dva miliony korun\"\n([CLM-02](@/dossiers/richard-chlad/claims/clm-02.md)), jinde jím uváděných\nzhruba 1,5 milionu zahrnujících pronájmy aut, dopravu a pojištění, k\nčemuž Chlad dodal ještě samostatných 150 tisíc Kč za propagační soutěž\nna sociálních sítích\n([CLM-03](@/dossiers/richard-chlad/claims/clm-03.md)), a údaj předsedy\nstrany o dvakrát 50 000 Kč **před eurovolbami**\n([CLM-04](@/dossiers/richard-chlad/claims/clm-04.md)).\n\n**Co k tomu říká primární evidence**: dva peněžité dary po 50 000 Kč ve\nvýroční finanční zprávě hnutí **za rok 2024 skutečně jsou** — jsou v ní\nale vedeny u dárce téhož jména s **jiným ročníkem narození** než pětice\nplnění za rok 2025, a zda se týkají subjektu tohoto přehledu, dokument\nneuvádí ([CLM-10](@/dossiers/richard-chlad/claims/clm-10.md),\n[SRC-06](@/dossiers/richard-chlad/sources/src-06.md),\n[GAP-03](@/dossiers/richard-chlad/gaps/gap-03.md)).\n\n**Co z toho tento dossier vyvozuje a co ne**: doloženo je, že se veřejně\nuváděná čísla **liší**. Doloženo **není**, proč — a to je zásadní rozdíl.\nU evidované částky dnes víme přesně, co pokrývá (nepeněžitá plnění\nvolební kampani, srpen a září 2025); **Chladovy vlastní údaje ale nemají\nv žádném otevřeném úředním dokumentu protějšek** a citované zdroje k nim\nneuvádějí ani období, ani co přesně se do nich počítá. Čísla proto\n**nejsou přímo porovnatelná**\n([GAP-01](@/dossiers/richard-chlad/gaps/gap-01.md)) a postavit je vedle\nsebe jako doložený rozpor by znamenalo vyrobit tvrzení, které zdroje\nnepodporují.\n\nA především: **žádný citovaný zdroj neuvádí, že by cokoli nebylo řádně\nvykázáno.** Vykázáno naopak bylo, a to dvakrát — ve výroční finanční\nzprávě i ve zprávě o financování kampaně. Úřad u zprávy za rok 2025\nuvádí „zpráva je úplná\", ale **sám výslovně dodává, že nejde o výsledek\nkontroly správnosti údajů**\n([CLM-11](@/dossiers/richard-chlad/claims/clm-11.md),\n[SRC-07](@/dossiers/richard-chlad/sources/src-07.md)), a registr sankcí\nani přehled kontrolních protokolů k této zprávě nic neeviduje\n([CLM-12](@/dossiers/richard-chlad/claims/clm-12.md),\n[SRC-08](@/dossiers/richard-chlad/sources/src-08.md)). Otevřenou tak\nzůstává jediná otázka: zda věcnou správnost někdo přezkoumal\n([GAP-02](@/dossiers/richard-chlad/gaps/gap-02.md)). Poskytnout politické\nstraně dar nebo bezúplatné plnění je legální.\n\n## Publikované reakce vedení strany {#kauza-reakce-strany}\n\nFilip Turek uvedl: „Je to můj kamarád a s politikou nemá nic společného,\ni záměrně přeceňujete jeho roli v podpoře Motoristů.\"\n([CLM-05](@/dossiers/richard-chlad/claims/clm-05.md)). Petr Macinka\nuvedl: „Richard Chlad je kamarád Filipa Turka, ale rozhodně není\nideologem Motoristů. Tím jsem já.\"\n([CLM-06](@/dossiers/richard-chlad/claims/clm-06.md)).\n\nObě vyjádření jsou vedena ve stavu **CITACE** — doloženo je, že padla,\nnikoli že jejich obsah platí. **Totéž měřítko platí pro obě strany**: pro\nChladovy vlastní údaje o výši podpory stejně jako pro tvrzení\npředstavitelů strany, že jeho roli zpravodajství přeceňuje. Dossier\nnerozhoduje, kdo má pravdu; zaznamenává, co kdo veřejně řekl.\n\n## Starší osobní známost {#kontext}\n\nCitovaný profil uvádí Chladovu **starší osobní známost s Radovanem\nKrejčířem**\n([CLM-08](@/dossiers/richard-chlad/claims/clm-08.md)).\n\n**Hranice, kterou tento dossier nepřekročí**: ta známost je zde\n**atribuovaný popisný detail z citovaného zpravodajství**, ne téma. Je\nosobní a historická, není finanční ani politická, a **neplyne z ní nic o\nChladově jednání**. Radovan Krejčíř není subjektem tohoto ani žádného\njiného přehledu na tomto webu a jeho pokrytí bylo výslovně **zamítnuto**\ni s odůvodněním (viz záznam „Not authorized: Radovan Krejčíř\" v\n`AGENTS.md`). Vyvozovat z toho, že se dva lidé kdysi znali, cokoli o\nsoučasném financování strany, by bylo přesně to, co tento web odmítá.\n\n## Co tento přehled nezkoumal {#mezery}\n\nOtevřené mezery vede [registr mezer](@/dossiers/richard-chlad/gaps/_index.md):\nproč se veřejně uváděná čísla liší a co přesně které pokrývá\n([GAP-01](@/dossiers/richard-chlad/gaps/gap-01.md) — zúženo, evidovaná\nčástka je dnes vymezena, Chladovy vlastní údaje ne), zda věcnou správnost\nvykázaných plnění někdo přezkoumal\n([GAP-02](@/dossiers/richard-chlad/gaps/gap-02.md) — z velké části\nzodpovězeno: vykázáno bylo, správnost přezkoumána doložena není) a komu\npatří dva dary po 50 000 Kč evidované za rok 2024\n([GAP-03](@/dossiers/richard-chlad/gaps/gap-03.md)).\n\n## Metodické omezení\n\nDar ani bezúplatné plnění politické straně **není podezřením**. Je to\nlegální, evidovaný veřejný akt, a jeho zaznamenání není zjištěním o ničem\nnepřípustném. Tento přehled navíc rozlišuje, co primární dokument\nrozlišuje: **peněžitý dar, nepeněžité (bezúplatné) plnění a plnění\nposkytnuté volební kampani nejsou totéž** a nesmějí se slévat do jednoho\nslova.\n\nRozdíl mezi čísly uváděnými na veřejnosti je **zaznamenaný fakt**, ne\ndoložený rozpor — dokud není doloženo, jaké období a jaká plnění které\nčíslo pokrývá, nelze z rozdílu vyvozovat, že by některé bylo nesprávné.\nTento dossier proto uvádí obojí: co doloženo je, i co doloženo není."
     },
     {
       "type": "timeline",
       "entries": [
         {
           "date": "2024",
-          "title": "Podle předsedy strany poskytl před eurovolbami dvakrát 50 000 Kč; sám jinde mluví o podpoře v řádu 1,5 milionu",
+          "title": "Podle předsedy strany poskytl před eurovolbami dvakrát 50 000 Kč; v úřední evidenci za rok 2024 jsou dva dary po 50 000 Kč vedeny u jmenovce s jiným ročníkem narození",
           "anchor": "kauza-financovani",
           "dot": "dot-fact",
           "subjects": [
@@ -100,8 +114,17 @@
           ]
         },
         {
-          "date": "2025",
-          "title": "V rejstříku evidováno celkem 638 864 Kč darů straně Motoristé sobě, včetně nepeněžního plnění",
+          "date": "2025-08-01",
+          "title": "Podle zprávy o financování kampaně poskytl volební kampani plnění za 59 313 Kč (výroba a instalace billboardu, pronájem reklamní plochy)",
+          "anchor": "kauza-financovani",
+          "dot": "dot-fact",
+          "subjects": [
+            "chlad"
+          ]
+        },
+        {
+          "date": "2025-09-01",
+          "title": "Podle téže zprávy poskytl kampani další čtyři plnění v souhrnu 579 551 Kč (vozy Bugatti, uspořádání akce, sportovní automobily, demontáž billboardu)",
           "anchor": "kauza-financovani",
           "dot": "dot-fact",
           "subjects": [
@@ -118,9 +141,27 @@
           ]
         },
         {
+          "date": "2026-01-05",
+          "title": "Hnutí předložilo Úřadu pro dohled zprávu o financování volební kampaně pro sněmovní volby 2025 se všemi pěti plněními",
+          "anchor": "kauza-financovani",
+          "dot": "dot-fact",
+          "subjects": [
+            "chlad"
+          ]
+        },
+        {
           "date": "2026-03-17",
           "title": "Turek a Macinka veřejně zlehčují jeho roli v podpoře strany",
           "anchor": "kauza-reakce-strany",
+          "dot": "dot-fact",
+          "subjects": [
+            "chlad"
+          ]
+        },
+        {
+          "date": "2026-04-01",
+          "title": "Hnutí předložilo Úřadu pro dohled výroční finanční zprávu za rok 2025; eviduje pětici bezúplatných plnění v souhrnu 638 864 Kč",
+          "anchor": "kauza-financovani",
           "dot": "dot-fact",
           "subjects": [
             "chlad"

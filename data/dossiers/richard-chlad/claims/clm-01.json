@@ -9,10 +9,13 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/richard-chlad"
   },
-  "text": "Veřejný rejstřík Hlídač státu eviduje u Richarda Chlada za rok 2025 dary straně Motoristé sobě v celkové výši 638 864 Kč, položkově: 140 000 Kč půjčení sportovních automobilů, 200 000 Kč propůjčení vozů Bugatti, 59 313 Kč výroba a instalace billboardu, 54 550 Kč demontáž billboardu a 185 001 Kč uspořádání akce; částka již zahrnuje nepeněžní plnění",
+  "text": "Výroční finanční zpráva hnutí Motoristé sobě za rok 2025, předložená Úřadu pro dohled nad hospodařením politických stran a politických hnutí 1. 4. 2026, eviduje u Richarda Chlada pět položek v souhrnu 638 864 Kč, a to výhradně jako bezúplatná plnění, nikoli jako peněžité dary: 200 000 Kč propůjčení vozů Bugatti na akci, 185 001 Kč uspořádání akce, 140 000 Kč půjčení sportovních automobilů na akce, 59 313 Kč výroba a instalace billboardu a pronájem reklamní plochy a 54 550 Kč demontáž billboardu; tytéž položky uvádí zpráva v části V. (Dary) i v části VI. (Ostatní bezúplatná plnění nad 50 000 Kč)",
   "status": "status-single",
   "statusLabel": "1 ZDROJ",
   "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/sources/SRC-04"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/richard-chlad/sources/SRC-01"
     }

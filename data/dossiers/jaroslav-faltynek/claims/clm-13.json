@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-13",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-13",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek"
+  },
+  "text": "Podle úředních profilů Poslanecké sněmovny byl Jaroslav Faltýnek poslancem od 26. 10. 2013 do 26. 10. 2017, od 21. 10. 2017 do 20. 10. 2021 a od 9. 10. 2021 do 8. 10. 2025; předsedou poslaneckého klubu ANO 2011 byl od 30. 10. 2013 do 26. 10. 2017 a od 24. 10. 2017 do 20. 10. 2021, od 12. 10. 2021 je jeho místopředsedou; předsedou zemědělského výboru byl od 6. 12. 2013 do 20. 10. 2021, poté jeho místopředsedou",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-14"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-15"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-16"
+    }
+  ],
+  "subjects": [
+    "faltynek"
+  ],
+  "order": 13,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jaroslav-faltynek/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

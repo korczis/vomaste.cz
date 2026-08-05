@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-15",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-15",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek"
+  },
+  "title": "SRC-15 — Poslanecká sněmovna Parlamentu ČR: profil poslance, VIII. volební období (2017–2021)",
+  "description": "Primární úřední profil za období 2017–2021: poslanec od 21. 10. 2017 do 20. 10. 2021 za Vysočinu, předseda poslaneckého klubu ANO 2011 od 24. 10. 2017 a předseda zemědělského výboru od 29. 11. 2017.",
+  "outlet": "Poslanecká sněmovna Parlamentu ČR",
+  "sourceType": "primární úřední záznam",
+  "url": "https://www.psp.cz/sqw/detail.sqw?id=6190&o=8",
+  "retrieved": "2026-08-05",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-13"
+    }
+  ],
+  "subjects": [
+    "faltynek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil poslance za **VIII. volební období (2017–2021)**. Uvádí:\n\n- **poslanec od 21. 10. 2017 do 20. 10. 2021**, volební kraj **Vysočina** (na rozdíl od ostatních období, kdy jde o kraj Olomoucký)\n- **Poslanecký klub ANO 2011 — člen a předseda od 24. 10. 2017 do 20. 10. 2021**\n- Zemědělský výbor — člen od 28. 11. 2017, **předseda od 29. 11. 2017** do 20. 10. 2021\n- Organizační výbor — člen od 28. 11. 2017 do 20. 10. 2021\n\n**Poznámka k přesnosti a limitům**: záznam je zde především kvůli **období, do něhož spadá zrušení stíhání v květnu 2018** — dokládá, že šlo o dobu, kdy byl poslancem a předsedou poslaneckého klubu, a **nikoli členem vlády**. Změna volebního kraje mezi obdobími je evidenční údaj bez jakéhokoli hodnotícího obsahu a tento přehled z něj nic nevyvozuje. Stejně jako u ostatních úředních profilů platí, že primární záznam **není nezávislým redakčním potvrzením** čehokoli, co napsalo zpravodajské médium."
+    }
+  ],
+  "order": 15
+}

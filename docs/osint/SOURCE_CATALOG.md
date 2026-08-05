@@ -65,15 +65,15 @@ Odpovídá na otázku „kam se podívat a čemu z toho věřit". Publikovaná p
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 635 záznamů v 101 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 652 záznamů v 104 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
 | ctk | 290 | 21 | [ano](/zdroje/ctk/) |
 | seznam-zpravy | 34 | 13 | [ano](/zdroje/seznam-zpravy/) |
+| Poslanecká sněmovna Parlamentu ČR | 27 | 15 | [ano](/zdroje/psp-cz/) |
 | Vláda České republiky (vlada.gov.cz) | 23 | 17 | [ano](/zdroje/vlada-cz/) |
 | FORUM 24 | 19 | 9 | — |
-| Poslanecká sněmovna Parlamentu ČR | 18 | 14 | [ano](/zdroje/psp-cz/) |
 | denik-n | 16 | 9 | [ano](/zdroje/denik-n/) |
 | ČT24 (Česká televize) | 15 | 7 | [ano](/zdroje/ceska-televize/) |
 | Echo24 | 13 | 9 | — |
@@ -82,8 +82,9 @@ Dopočítáno z `data/dossiers/**/sources/**`, 635 záznamů v 101 rodinách/out
 | Česká justice | 11 | 6 | — |
 | Ekonomický deník | 9 | 5 | — |
 | Novinky.cz | 9 | 8 | — |
-| hlidac-statu | 8 | 3 | [ano](/zdroje/hlidac-statu/) |
 | irozhlas | 8 | 6 | [ano](/zdroje/irozhlas/) |
+| hlidac-statu | 7 | 2 | [ano](/zdroje/hlidac-statu/) |
+| udhpsh | 6 | 1 | — |
 | Blesk.cz | 5 | 3 | — |
 | e15.cz | 4 | 2 | — |
 | HlídacíPes.org | 4 | 4 | — |
@@ -109,6 +110,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 635 záznamů v 101 rodinách/out
 | Ministerstvo průmyslu a obchodu (MPO) | 2 | 2 | — |
 | Ministerstvo životního prostředí ČR | 2 | 1 | — |
 | NašeTéma.cz | 2 | 2 | — |
+| Nejvyšší kontrolní úřad (nku.cz) | 2 | 1 | — |
 | Olomoucký deník | 2 | 1 | — |
 | Pražský deník | 2 | 1 | — |
 | Ústavní soud ČR | 2 | 2 | — |
@@ -127,6 +129,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 635 záznamů v 101 rodinách/out
 | Deník Referendum | 1 | 1 | — |
 | Deník VEKTOR | 1 | 1 | — |
 | Dopravní noviny | 1 | 1 | — |
+| e-Sbírka (Ministerstvo vnitra ČR) | 1 | 1 | — |
 | EDUin | 1 | 1 | — |
 | Ekonews | 1 | 1 | — |
 | Ekonom | 1 | 1 | — |
@@ -145,7 +148,6 @@ Dopočítáno z `data/dossiers/**/sources/**`, 635 záznamů v 101 rodinách/out
 | MHD86 | 1 | 1 | — |
 | Ministerstvo spravedlnosti ČR | 1 | 1 | — |
 | Motoristé sobě (motoristesobe.cz/udhpsh) | 1 | 1 | — |
-| Nejvyšší kontrolní úřad (nku.cz) | 1 | 1 | — |
 | Nejvyšší správní soud | 1 | 1 | — |
 | Neovlivní.cz | 1 | 1 | — |
 | Novinky.cz / Právo | 1 | 1 | — |
@@ -157,6 +159,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 635 záznamů v 101 rodinách/out
 | Refresher.cz | 1 | 1 | — |
 | Romea.cz | 1 | 1 | — |
 | Security magazín | 1 | 1 | — |
+| Seznam Zprávy | 1 | 1 | [ano](/zdroje/seznam-zpravy/) |
 | silnice-zeleznice.cz | 1 | 1 | — |
 | Společnost pro obranu svobody projevu | 1 | 1 | — |
 | Taneční aktuality | 1 | 1 | — |
@@ -182,5 +185,6 @@ Tyhle zdroje dataset používá aspoň pětkrát, ale katalog k nim nemá zázna
 - Česká justice (11×)
 - Ekonomický deník (9×)
 - Novinky.cz (9×)
+- udhpsh (6×)
 - Blesk.cz (5×)
 

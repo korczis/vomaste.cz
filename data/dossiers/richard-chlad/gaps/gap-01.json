@@ -12,7 +12,7 @@
   "title": "GAP-01 — Uváděná čísla nejsou přímo porovnatelná",
   "description": "Evidovaná částka, Chladovy vlastní údaje a číslo uvedené předsedou strany se týkají různých období a různého vymezení „podpory“; co přesně které číslo pokrývá, doloženo není.",
   "priority": "vysoká",
-  "checked": "2026-08-04",
+  "checked": "2026-08-05",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-01"
@@ -25,6 +25,12 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-10"
     }
   ],
   "subjects": [
@@ -33,7 +39,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "V citovaných zdrojích figurují čtyři různá čísla:\n\n- **638 864 Kč** — evidováno v rejstříku **za rok 2025**, včetně\n  nepeněžního plnění ([CLM-01](@/dossiers/richard-chlad/claims/clm-01.md))\n- **„necelé dva miliony\"** — Chladův vlastní údaj, období neuvedeno\n  ([CLM-02](@/dossiers/richard-chlad/claims/clm-02.md))\n- **zhruba 1,5 milionu** — Chladův údaj zahrnující pronájmy aut, dopravu\n  a pojištění ([CLM-03](@/dossiers/richard-chlad/claims/clm-03.md))\n- **2× 50 000 Kč** — údaj předsedy strany, výslovně **před eurovolbami**\n  (2024) ([CLM-04](@/dossiers/richard-chlad/claims/clm-04.md))\n\n**Tato čísla nejsou přímo porovnatelná.** Týkají se různých období a\nrůzného vymezení toho, co se do „podpory\" počítá. **Co přesně které\nčíslo pokrývá, citované zdroje neuvádějí** — a bez toho nelze z rozdílu\nmezi nimi vyvozovat, že by některé bylo nesprávné.\n\nPostavit tato čísla vedle sebe jako doložený rozpor by bylo přesně to,\nčemu se tento web vyhýbá: vyrobit tvrzení, které zdroje nepodporují.\nZaznamenává se tedy to, co doloženo je — že se veřejně uváděná čísla\nliší — a zároveň to, co doloženo není: proč.\n\n**Opakovaná kontrola k 2026-08-03**: přímo znovu otevřen SRC-03. Dohledán jeden doplňkový detail — Chlad ke svým zhruba 1,5 milionu Kč dodal ještě samostatných 150 tisíc Kč za propagační soutěž na sociálních sítích, doplněno do [CLM-03](@/dossiers/richard-chlad/claims/clm-03.md). Přesné období ani vzájemný vztah jednotlivých čísel to ale nadále neobjasňuje. Mezera zůstává v podstatě otevřená."
+      "value": "V citovaných zdrojích figurují čtyři různá čísla:\n\n- **638 864 Kč** — evidováno v rejstříku **za rok 2025**, včetně\n  nepeněžního plnění ([CLM-01](@/dossiers/richard-chlad/claims/clm-01.md))\n- **„necelé dva miliony\"** — Chladův vlastní údaj, období neuvedeno\n  ([CLM-02](@/dossiers/richard-chlad/claims/clm-02.md))\n- **zhruba 1,5 milionu** — Chladův údaj zahrnující pronájmy aut, dopravu\n  a pojištění ([CLM-03](@/dossiers/richard-chlad/claims/clm-03.md))\n- **2× 50 000 Kč** — údaj předsedy strany, výslovně **před eurovolbami**\n  (2024) ([CLM-04](@/dossiers/richard-chlad/claims/clm-04.md))\n\n**Tato čísla nejsou přímo porovnatelná.** Týkají se různých období a\nrůzného vymezení toho, co se do „podpory\" počítá. **Co přesně které\nčíslo pokrývá, citované zdroje neuvádějí** — a bez toho nelze z rozdílu\nmezi nimi vyvozovat, že by některé bylo nesprávné.\n\nPostavit tato čísla vedle sebe jako doložený rozpor by bylo přesně to,\nčemu se tento web vyhýbá: vyrobit tvrzení, které zdroje nepodporují.\nZaznamenává se tedy to, co doloženo je — že se veřejně uváděná čísla\nliší — a zároveň to, co doloženo není: proč.\n\n**Opakovaná kontrola k 2026-08-03**: přímo znovu otevřen SRC-03. Dohledán jeden doplňkový detail — Chlad ke svým zhruba 1,5 milionu Kč dodal ještě samostatných 150 tisíc Kč za propagační soutěž na sociálních sítích, doplněno do [CLM-03](@/dossiers/richard-chlad/claims/clm-03.md). Přesné období ani vzájemný vztah jednotlivých čísel to ale nadále neobjasňuje. Mezera zůstává v podstatě otevřená.\n\n**Kontrola proti primárním dokumentům k 2026-08-05 — mezera se zúžila, ale nezavírá se.** Otevřeny a přečteny tři dokumenty Úřadu pro dohled nad hospodařením politických stran a politických hnutí. Co se doložit podařilo:\n\n- **Číslo 638 864 Kč je vymezené přesně**: podle výroční finanční zprávy za rok 2025 ([SRC-04](@/dossiers/richard-chlad/sources/src-04.md)) jde o **pět nepeněžitých plnění za rok 2025**, ne o peněžité dary — a podle zprávy o financování kampaně ([SRC-05](@/dossiers/richard-chlad/sources/src-05.md), [CLM-09](@/dossiers/richard-chlad/claims/clm-09.md)) o plnění **volební kampani** pro sněmovní volby, poskytnutá **1. 8. a 1. 9. 2025**. Tolik tedy k jednomu ze čtyř čísel: víme, co pokrývá.\n- **Číslo „2× 50 tisíc před eurovolbami\" se v evidenci roku 2024 nachází** ([SRC-06](@/dossiers/richard-chlad/sources/src-06.md)) — ovšem u dárce téhož jména s **jiným ročníkem narození**, což otevírá samostatnou otázku totožnosti ([GAP-03](@/dossiers/richard-chlad/gaps/gap-03.md)).\n\nCo doložit nešlo: **Chladovy vlastní údaje** — „necelé dva miliony\" ([CLM-02](@/dossiers/richard-chlad/claims/clm-02.md)) a zhruba 1,5 milionu plus 150 tisíc ([CLM-03](@/dossiers/richard-chlad/claims/clm-03.md)) — **nemají v žádném z otevřených úředních dokumentů protějšek** a citované zdroje k nim neuvádějí ani období, ani co přesně se do nich počítá. Rozdíl mezi nimi a evidovanou částkou proto **nadále není doloženým rozporem**: jde o čísla vymezená různě a částečně vůbec nevymezená. Mezera zůstává otevřená přesně v tomto bodě."
     }
   ],
   "order": 1
