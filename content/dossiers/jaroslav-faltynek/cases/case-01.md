@@ -1,6 +1,6 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
-title = "Zrušené trestní stíhání v kauze Čapí hnízdo"
+title = "Vydání Sněmovnou 2017 a zrušené trestní stíhání 2018"
 description = "Státní zástupce v květnu 2018 zrušil trestní stíhání Jaroslava Faltýnka poté, co vyhověl jeho stížnosti proti obvinění. Rozhodl státní zástupce, ne soud — nejde o rozhodnutí o vině ani o nevině. Faltý"
 template = "dossier-case.html"
 weight = 1

@@ -16,16 +16,16 @@ import { compileDataset } from "./compile.mjs";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const compiled = compileDataset(loadCanonicalTree(join(ROOT, "data/dossiers")));
 
-test("golden: počty záznamů per typ (snapshot 2026-08-05b: GAP-04 v james-quick zrušena — nedoložené jméno se nemá opakovat ani jako mezera)", () => {
+test("golden: počty záznamů per typ (snapshot 2026-08-05c, T-069: primární doklady k richard-chlad a jaroslav-faltynek — +12 zdrojů (5× ÚDHPSH, 6× Poslanecká sněmovna, 1× Seznam Zprávy), +7 tvrzení, +1 mezera GAP-03, +2 update záznamy)", () => {
   assert.deepEqual(compiled.counts.perType, {
     case: 89,
-    claim: 937,
+    claim: 944,
     dossier: 26,
     entity: 520,
-    gap: 193,
+    gap: 194,
     relation: 326,
-    source: 627,
-    update: 72,
+    source: 639,
+    update: 74,
   });
   assert.equal(compiled.counts.dossiers, 26);
   assert.equal(compiled.counts.entities, 520);
