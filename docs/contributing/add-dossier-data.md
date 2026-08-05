@@ -156,7 +156,7 @@ nikdy zpětně neupravuj.
 
 ```bash
 npm run data:validate -- --file data/dossiers/<slug>/claims/clm-07.json
-npm run data:validate     # celý dataset: tvar → R1–R7 → S1–S8 → T1–T8 → JSON-LD
+npm run data:validate     # celý dataset: tvar → R1–R7 → S1–S10 → T1–T8 → JSON-LD
 npm run data:build        # + view modely, content adaptéry, parity brána
 npm run build             # plná brána (testy, autorizace, navigace, zola, verify:*)
 ```

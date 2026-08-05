@@ -98,7 +98,7 @@ One rule, one owner — the validators that guard the dataset (all run by
 |---|---|
 | Shape (types, required fields, `@id`/ISO formats, closed enums) | `schemas/canonical/*.schema.json` via `scripts/data/validate-shape.mjs` |
 | Referential integrity R1–R7 (unique `@id`s, path ↔ `@id` consistency, same-dossier references, graph layer integrity) | `scripts/data/validate-references.mjs` |
-| Editorial semantics S1–S8 (single/corroborated source rules, authorization S5/S6, graph subject nodes S7, connectivity S8) | `scripts/data/validate-semantics.mjs` |
+| Editorial semantics S1–S10 (single/corroborated source rules, authorization S5/S6, graph subject nodes S7, connectivity S8, entity provenance refs S9, one-publisher-is-one-voice S10) | `scripts/data/validate-semantics.mjs` |
 | Claims-table parity T1–T8 (table row ↔ canonical claim, byte-exact) | `scripts/data/validate-registry-table.mjs` |
 | JSON-LD expansion (local context only, no network) | `scripts/data/validate-jsonld.mjs` |
 | Export shape gate | schema check inside `build:data-exports` (`scripts/dossier/lib/export-schemas.mjs`) |

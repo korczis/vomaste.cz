@@ -9,6 +9,12 @@
     "context_entities_in_feed": 61,
     "dossiers": 24
   },
+  "current_feed_stats": {
+    "as_of": "2026-08-05",
+    "context_entities_in_feed": 495,
+    "dossiers": 26,
+    "note": "Feed size only — NOT a triage. The two 2026-08-05 subjects were authorized by the owner directly, not from a triage round; a fresh triage of the grown feed is an open task."
+  },
   "authorized": [
     { "subject": "Petr Macinka", "entity_id": "macinka", "dossier_slug": "petr-macinka", "first_authorized": "2026-07-21", "auth_ids": ["AUTH-2026-07-21-A", "AUTH-2026-07-21-B", "AUTH-2026-07-30-A"] },
     { "subject": "Filip Turek", "entity_id": "turek", "dossier_slug": "filip-turek", "first_authorized": "2026-07-21", "auth_ids": ["AUTH-2026-07-21-A", "AUTH-2026-07-21-B", "AUTH-2026-07-22-A", "AUTH-2026-07-30-A"] },
@@ -32,7 +38,9 @@
     { "subject": "Jaroslav Faltýnek", "entity_id": "faltynek", "dossier_slug": "jaroslav-faltynek", "first_authorized": "2026-07-30", "auth_ids": ["AUTH-2026-07-30-V"] },
     { "subject": "Richard Chlad", "entity_id": "chlad", "dossier_slug": "richard-chlad", "first_authorized": "2026-07-30", "auth_ids": ["AUTH-2026-07-30-W"] },
     { "subject": "Petr Pavel", "entity_id": "pavel", "dossier_slug": "petr-pavel", "first_authorized": "2026-08-01", "auth_ids": ["AUTH-2026-08-01-PAVEL"] },
-    { "subject": "Petr Vencálek", "entity_id": "vencalek", "dossier_slug": "petr-vencalek", "first_authorized": "2026-08-01", "auth_ids": ["AUTH-2026-08-01-VENCALEK"] }
+    { "subject": "Petr Vencálek", "entity_id": "vencalek", "dossier_slug": "petr-vencalek", "first_authorized": "2026-08-01", "auth_ids": ["AUTH-2026-08-01-VENCALEK"] },
+    { "subject": "James Quick", "entity_id": "james-quick", "dossier_slug": "james-quick", "first_authorized": "2026-08-05", "auth_ids": ["AUTH-2026-08-05-JAMES-QUICK"], "note": "No public office. Scope is publicly documented activity around his own named projects; serious allegations publishable only as precisely attributed source statements, never as this site's conclusion." },
+    { "subject": "Martin Pavlík", "entity_id": "martin-pavlik", "dossier_slug": "martin-pavlik", "first_authorized": "2026-08-05", "auth_ids": ["AUTH-2026-08-05-MARTIN-PAVLIK"], "note": "No public office. Scope is strictly directly-evidenced public-register roles/shares at four named legal entities; inferring profession, age, address or namesakes is explicitly banned, and a registry role is never presented as suspicion." }
   ],
   "aggregate_views": [
     { "slug": "macinka-turek", "dossier_type": "aggregate", "note": "Not a subject, not a third dossier — structural rollup over macinka+turek. See AGENTS.md 'Structural change, 2026-07-29'.", "authorized": "2026-07-29" }

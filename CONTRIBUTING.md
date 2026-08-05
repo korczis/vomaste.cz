@@ -39,15 +39,21 @@ Rozsah pokrytí reálných osob určuje výhradně append-only autorizační
 log v AGENTS.md — pull request rozšiřující pokrytí bez záznamu v logu
 bude zamítnut bez ohledu na kvalitu zdrojů. „Je to veřejně zajímavé"
 ani „už to někde vyšlo" není důvod. Návrh nového dossieru otevřete
-nejdřív jako issue s odůvodněním veřejného zájmu.
+nejdřív jako issue z formuláře **Navrhnout dossier nebo entitu**
+(`.github/ISSUE_TEMPLATE/navrh-dossieru.yml`) a odůvodněte veřejný zájem
+— systém ho nepředpokládá. Co se s podnětem stane a co se nestane:
+[`docs/intake/public-submission.md`](docs/intake/public-submission.md).
 
 ## Pravidla pro obsahové příspěvky (závazná)
 
 1. Cituj jen zdroj, který jsi skutečně otevřel/a — nikdy snippet
    z vyhledávače. Každé tvrzení = jmenovaný, datovaný zdroj s URL.
 2. Jedno tvrzení = jeden ověřitelný výrok; stav podle skutečné síly
-   důkazu (CORROBORATED vyžaduje ≥ 2 nezávislé redakce; tentýž vydavatel
-   se nepočítá dvakrát — viz „vydavatelské rodiny" v registru zdrojů).
+   důkazu. CORROBORATED vyžaduje dvojici zdrojů, která se liší
+   **zdrojovou rodinou i vydavatelem** — přetisk téže agenturní zprávy
+   ani druhý článek téže redakce (shodný `outlet` nebo registrovaná
+   doména) druhé doložení nezakládá; vynucují to pravidla S2 a S10
+   (`docs/data-contract.md`).
 3. Procesní výsledek (odložení, promlčení, nepravomocné rozhodnutí) se
    pokaždé odlišuje od rozhodnutí o vině; citace ověřuje, že výrok padl,
    ne že platí.
