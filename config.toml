@@ -26,6 +26,11 @@ skip_prefixes = ["https://www.irozhlas.cz/"]
 locale = "cs_CZ"
 lang = "cs"
 
+# Doplněk k <title> na úvodní stránce: samotné „vomaste.cz" ve výsledku
+# vyhledávání neřekne, co web je. Podstránky ho nepoužívají — ty mají vlastní
+# titulek a název webu jako příponu (templates/base.html, document_title).
+title_tagline = "dohledatelné dossiery ve veřejném zájmu"
+
 # Navržená preview karta 1200×630 JPEG (ne screenshot): generuje ji
 # scripts/og/build-og-images.mjs, které vyrábí i kartu pro každý dossier
 # (images/og/<slug>.jpg — templates/base.html je přiřazuje automaticky).
