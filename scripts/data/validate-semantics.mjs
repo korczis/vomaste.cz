@@ -75,38 +75,18 @@ import { existsSync, readFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { computeGraphDepths } from "./lib/graph-depth.mjs";
+import { createSourceIndependence, MULTI_LABEL_PUBLIC_SUFFIXES, registeredDomain } from "./lib/source-independence.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 export const AUTHORIZATIONS_TOML = join(ROOT, "data/authorizations.toml");
 export const SEMANTICS_BASELINE_RELPATH = "_shared/semantics-baseline.json";
 export const BASELINEABLE_RULES = new Set(["S1", "S2", "S3", "S4", "S10"]);
 
-// Víceúrovňové veřejné sufixy: u nich je registrovaná doména až TŘETÍ
-// label od konce. Bez téhle výjimky by `edu.gov.cz` (MŠMT) a
-// `vlada.gov.cz` (Úřad vlády) splynuly na `gov.cz` a S10 by ze dvou
-// různých institucí udělala jednoho vydavatele.
-export const MULTI_LABEL_PUBLIC_SUFFIXES = new Set(["gov.cz", "com.ua", "co.uk", "europa.eu"]);
-
-/*
- * Registrovaná doména URL — identita vydavatele pro S10. Sjednocuje
- * redakční subdomény téhož vydavatele (`domaci.hn.cz` i `archiv.hn.cz`
- * → `hn.cz`, `prazsky.denik.cz` → `denik.cz`), ale nespojuje instituce
- * pod sdíleným veřejným sufixem (viz MULTI_LABEL_PUBLIC_SUFFIXES).
- * Vrací null pro neparsovatelnou URL (tvar vlastní schéma).
- */
-export function registeredDomain(url) {
-  let host;
-  try {
-    host = new URL(url).hostname;
-  } catch {
-    return null;
-  }
-  host = host.toLowerCase().replace(/^www\./, "");
-  const parts = host.split(".");
-  if (parts.length <= 2) return host;
-  const lastTwo = parts.slice(-2).join(".");
-  return MULTI_LABEL_PUBLIC_SUFFIXES.has(lastTwo) ? parts.slice(-3).join(".") : lastTwo;
-}
+// Výpočet nezávislosti zdrojů (rodina + vydavatel + registrovaná doména)
+// vlastní lib/source-independence.mjs — tenhle modul vlastní PRAVIDLA
+// S1/S2/S4/S10, ne aritmetiku, kterou z něj čte i evidenční report
+// (report-evidence-plan.mjs). Re-export drží dosavadní import povrch.
+export { MULTI_LABEL_PUBLIC_SUFFIXES, registeredDomain };
 
 // Jednoduchý parser [[authorizations]] bloků — čte identická data jako
 // scripts/dossier/validate-authorization.mjs (týž soubor, týž tvar);
@@ -152,71 +132,13 @@ export function collectSemanticsFindings(model, options = {}) {
     if (typeof wrapper.record?.["@id"] === "string") byId.set(wrapper.record["@id"], wrapper);
   }
 
-  // Rodina zdroje: sourceFamily > outlet > zdroj sám za sebe. Zdroje se
-  // stejnou rodinou se počítají jako JEDEN nezávislý zdroj (převzetí téže
-  // agenturní zprávy) — definice z schemas/canonical/source.schema.json.
-  const familyOf = (sourceId) => {
-    const source = byId.get(sourceId)?.record;
-    if (!source) return sourceId; // neexistenci hlásí validate-references
-    const family = typeof source.sourceFamily === "string" ? source.sourceFamily.trim() : "";
-    if (family) return `family:${family}`;
-    const outlet = typeof source.outlet === "string" ? source.outlet.trim() : "";
-    if (outlet) return `outlet:${outlet}`;
-    return sourceId;
-  };
-  const existingSources = (ids) => ids.filter((id) => byId.get(id)?.record.recordType === "source");
-  const familiesOf = (ids) => new Set(existingSources(ids).map(familyOf));
-  const sourceRecordsOf = (ids) => existingSources(ids).map((id) => byId.get(id).record);
-  const outletOf = (source) => (typeof source.outlet === "string" ? source.outlet.trim() : "");
-
-  // S10: proč dvojice zdrojů NENÍ nezávislá. Vrací null, když nezávislá
-  // je. Pořadí testů = pořadí pravidel: rodina (S1/S2) → outlet → doména.
-  const collisionReason = (a, b) => {
-    if (familyOf(a["@id"]) === familyOf(b["@id"])) return null; // řeší S1/S2, ne S10
-    const outletA = outletOf(a);
-    if (outletA && outletA === outletOf(b)) return `týž outlet "${outletA}"`;
-    const domainA = registeredDomain(a.url);
-    if (domainA && domainA === registeredDomain(b.url)) return `táž registrovaná doména ${domainA}`;
-    return null;
-  };
-
-  /*
-   * Nezávislé doložení = DVOJICE zdrojů lišících se rodinou (S1/S2)
-   * i vydavatelem (S10: outlet a registrovaná doména). Vrací
-   * [identifierA, identifierB] první takové dvojice, jinak null.
-   *
-   * Párově, ne tranzitivně: sloučit zdroje do skupin přes „sdílí rodinu
-   * NEBO outlet" by řetězilo přes rodinu ctk celý trh (vlastní reportáž
-   * Blesku by splynula s ČT24 jen proto, že oba jinde přetiskují ČTK).
-   * Otázka „existují dva skutečně nezávislí vydavatelé?" je párová.
-   */
-  const independentPair = (ids) => {
-    const records = sourceRecordsOf(ids);
-    for (let i = 0; i < records.length; i++) {
-      for (let j = i + 1; j < records.length; j++) {
-        const a = records[i];
-        const b = records[j];
-        if (familyOf(a["@id"]) === familyOf(b["@id"])) continue;
-        if (collisionReason(a, b)) continue;
-        return [a.identifier, b.identifier];
-      }
-    }
-    return null;
-  };
-
-  // Výčet dvojic, které vypadají jako různé rodiny, ale mají téhož
-  // vydavatele — text hlášky S10 (bez něj by nález nešel ověřit).
-  const publisherCollisions = (ids) => {
-    const records = sourceRecordsOf(ids);
-    const out = [];
-    for (let i = 0; i < records.length; i++) {
-      for (let j = i + 1; j < records.length; j++) {
-        const reason = collisionReason(records[i], records[j]);
-        if (reason) out.push(`${records[i].identifier}+${records[j].identifier} (${reason})`);
-      }
-    }
-    return out;
-  };
+  // Rodina zdroje, nezávislá dvojice a kolize vydavatelů — jeden
+  // vlastník výpočtu (lib/source-independence.mjs), viz komentář u
+  // re-exportu nahoře. `familyOf`, `independentPair` a
+  // `publisherCollisions` mají tutéž sémantiku jako před extrakcí.
+  const { existingSources, familiesOf, independentPair, publisherCollisions } = createSourceIndependence(
+    (id) => byId.get(id)?.record,
+  );
 
   // --- S1 + S2: claims ---------------------------------------------------
   for (const wrapper of model.records) {
