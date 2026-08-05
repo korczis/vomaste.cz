@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/updates/2026-08-05",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-08-05",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "date": "2026-08-05",
+  "summary": "Opravné korroborační kolo (T-058): CLM-03 a CLM-04 povýšeny zpět na CORROBORATED na základě dvou primárních úředních dokumentů nezávislých na rodině ctk — sdělení České školní inspekce o zastavení testování z 26. 5. 2026 (SRC-36) a doporučení MŠMT k plošnému testování (SRC-37), které doslovně dokládá výpadek u škol s webovou aplikací i doporučení přejít na aplikaci instalovanou.",
+  "addedClaims": [],
+  "updatedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-04"
+    }
+  ],
+  "addedGaps": [],
+  "closedGaps": [],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-36"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-13"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/updates/2026-08-05",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-08-05",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
+  },
+  "date": "2026-08-05",
+  "summary": "Opravné korroborační kolo (T-058): CLM-25 povýšeno zpět na CORROBORATED na základě oficiálního záznamu 90. hlasování 128. schůze Poslanecké sněmovny z 12. 2. 2025 (SRC-28), primárního zdroje nezávislého na rodině ctk. CLM-01 a CLM-02 zůstávají na 1 ZDROJ — veškeré volně čitelné zpravodajství o rozsudku Obvodního soudu pro Prahu 1 z 3. 6. 2026 se ukázalo být vydáním téže zprávy ČTK a jediné doložitelně vlastní zpravodajství (Deník N) je za paywallem.",
+  "addedClaims": [],
+  "updatedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-25"
+    }
+  ],
+  "addedGaps": [],
+  "closedGaps": [],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-28"
+    }
+  ]
+}

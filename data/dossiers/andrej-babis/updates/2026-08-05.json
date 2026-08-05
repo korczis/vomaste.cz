@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/updates/2026-08-05",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-08-05",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "date": "2026-08-05",
+  "summary": "Opravné korroborační kolo (T-058): CLM-01, CLM-07 a CLM-19 povýšeny zpět na CORROBORATED poté, co k nim byly dohledány primární dokumenty nezávislé na rodině ctk — tisková zpráva Vrchního soudu v Praze k rozhodnutí 3 To 34/2024 (SRC-77), oficiální záznam 7. hlasování 11. schůze PS z 5. 3. 2026 (SRC-78) a plné znění rozsudku NSS 6 Afs 82/2025-75 (SRC-79). Nález: rozsudek NSS je datován 27. 11. 2025, zatímco CLM-18 uvádí 28. 11. 2025 — CLM-18 proto zůstává na 1 ZDROJ do samostatného redakčního rozhodnutí. CLM-57 zůstává na 1 ZDROJ: tisková zpráva EPPO dokládá obžalobu, ale ne zajištění nemovitostí NCOZ za ~98 milionů korun.",
+  "addedClaims": [],
+  "updatedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-19"
+    }
+  ],
+  "addedGaps": [],
+  "closedGaps": [],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-75"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-77"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-78"
+    }
+  ]
+}

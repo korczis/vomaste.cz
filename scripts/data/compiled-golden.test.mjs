@@ -16,7 +16,7 @@ import { compileDataset } from "./compile.mjs";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const compiled = compileDataset(loadCanonicalTree(join(ROOT, "data/dossiers")));
 
-test("golden: počty záznamů per typ (snapshot 2026-08-04: + andrej-babis SRC-75/SRC-76 a update 2026-08-04 z korroboračního kola CLM-02/03/08)", () => {
+test("golden: počty záznamů per typ (snapshot 2026-08-05: opravné korroborační kolo T-058 přidalo 5 primárních zdrojů — psp.cz hlasování ×2, rozsudek NSS, sdělení ČŠI, tisková zpráva EPPO — a 4 update logy)", () => {
   assert.deepEqual(compiled.counts.perType, {
     case: 89,
     claim: 921,
@@ -24,8 +24,8 @@ test("golden: počty záznamů per typ (snapshot 2026-08-04: + andrej-babis SRC-
     entity: 514,
     gap: 189,
     relation: 317,
-    source: 607,
-    update: 51,
+    source: 612,
+    update: 55,
   });
   assert.equal(compiled.counts.dossiers, 24);
   assert.equal(compiled.counts.entities, 514);
@@ -36,11 +36,11 @@ test("golden: graf — uzly z entit, hrany z relations", () => {
   assert.equal(compiled.graph.edges.length, 317);
 });
 
-test("golden: vzorek claim záznamu (andrej-babis CLM-01; snapshot 2026-08-05: CORROBORATED → 1 ZDROJ, oba citované zdroje jsou vydání téže zprávy ČTK)", () => {
+test("golden: vzorek claim záznamu (andrej-babis CLM-01; snapshot 2026-08-05, T-058: 1 ZDROJ → CORROBORATED, k oběma zdrojům rodiny ctk přibyla tisková zpráva Vrchního soudu v Praze SRC-75)", () => {
   const w = compiled.indexes.byDossierIdentifier["andrej-babis:CLM-01"];
   assert.equal(w.registry, "claims");
-  assert.equal(w.record.status, "status-single");
-  assert.equal(w.record.statusLabel, "1 ZDROJ");
+  assert.equal(w.record.status, "status-corroborated");
+  assert.equal(w.record.statusLabel, "CORROBORATED");
   assert.equal(w.route, "/dossiers/andrej-babis/claims/clm-01/");
   assert.match(w.record.text, /Čapí hnízdo/);
 });
