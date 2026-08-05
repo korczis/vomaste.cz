@@ -37,6 +37,13 @@ order = 30
 icon = "M12 2 4 6v6c0 5 3.5 8.9 8 10 4.5-1.1 8-5 8-10V6l-8-4Z M12 8v4 M12 16h.01"
 
 [[groups]]
+id = "evidence"
+label = "Důkazní standard"
+lead = "Jak se počítá doložení: kdy jsou dva zdroje dva nezávislé hlasy a kdy jeden — a proč nejsilnějším dokladem bývá samotný záznam, ne článek o něm."
+order = 35
+icon = "M12 3 4 6v6c0 5 3.4 8.9 8 10 4.6-1.1 8-5 8-10V6l-8-3Z M9 12h6 M12 9v6"
+
+[[groups]]
 id = "metodika"
 label = "Metodika"
 lead = "Pravidla platná pro každé publikované tvrzení, bez výjimky pro atraktivnější příběh."
