@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
   },
   "text": "K datu zveřejnění závěrů komise (10.–11. července 2026) policie v kauze nikoho neobvinila; případ je nadále veden pro podezření z podvodu a těžkého ublížení na zdraví.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-13"

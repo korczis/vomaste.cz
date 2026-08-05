@@ -12,6 +12,7 @@
   "title": "SRC-06 — ČeskéNoviny.cz (ČTK)",
   "description": "Klempíř bude chtít zvýšit rozpočet kultury k 21 mld., k tomu peníze pro ČT a ČRo",
   "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://www.ceskenoviny.cz/zpravy/klempir-bude-chtit-zvysit-rozpocet-kultury-k-21-mld-k-tomu-penize-pro-ct-a-cro/2840980",
   "published": "2026-06-19",

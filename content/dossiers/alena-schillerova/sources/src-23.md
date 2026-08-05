@@ -14,8 +14,7 @@ record_type = "source"
 lang = "cs"
 src_id = "SRC-23"
 +++
-ČT24 nezávisle na ČeskéNoviny.cz/ČTK (SRC-05) potvrzuje totéž jádro
-senátních úprav: „Senátní úpravy patří snížení limitu pro výdaje na
+ČT24 uvádí totéž jádro senátních úprav jako ČeskéNoviny.cz/ČTK (SRC-05): „Senátní úpravy patří snížení limitu pro výdaje na
 strategické infrastrukturní stavby na jedno procento HDP" a „Pokud by
 vláda kvůli zhoršené bezpečnostní situaci či na dopravní infrastrukturu
 chtěla mít nadlimitní výdaje, musela by získat souhlas sněmovních
@@ -23,8 +22,8 @@ výborů." Článek referuje senátní úpravy v kontextu následného
 sněmovního hlasování v červenci 2026, přesné datum 17. 6. 2026
 neuvádí — to dokládá jen SRC-05.
 
-**Nezávislost.** Jiný vydavatel než ČeskéNoviny.cz/ČTK — Česká televize
-je veřejnoprávní provozovatel s vlastní redakcí. U CLM-13 se proto
-počítají jako dvě nezávislá potvrzení jádra faktu (limit 1 % HDP,
-podmínka souhlasu výboru); přesné datum senátního hlasování zůstává
-doloženo jen SRC-05.
+**Nezávislost.** Revize zdrojových rodin (2026-08-05): článek je na ČT24
+podepsán „ČTK, Lukáš Prokop" — nese tedy týž agenturní základ jako
+SRC-05 a patří do rodiny `ctk`. Nejde o druhé nezávislé potvrzení,
+CLM-13 proto nese stav `1 ZDROJ`; přesné datum senátního hlasování
+zůstává doloženo jen SRC-05.

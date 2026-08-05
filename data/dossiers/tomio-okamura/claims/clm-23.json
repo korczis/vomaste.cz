@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
   },
   "text": "Podle obžaloby měl obsah dvou předvolebních plakátů z kampaně před krajskými a senátními volbami roku 2024 „vzbuzovat či posilovat negativní emoce nenávistného charakteru vůči migrantům negroidní rasy a romskému etniku“; jde o formulaci obžaloby.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-16"

@@ -27,6 +27,8 @@ vydavatele dlouhodobě lžou a manipulují a že to může dokázat.
 doloženo je, že zazněly; jejich pravdivost je předmětem probíhajícího
 sporu, který tento dossier nerozhoduje.
 
-**Nezávislost**: druhá redakce vedle
-[SRC-62](@/dossiers/andrej-babis/sources/src-62.md); možný společný
-agenturní základ — viz poznámka tam. Otevřeno a přečteno 2026-08-01.
+**Nezávislost**: Revize zdrojových rodin (2026-08-05): článek je na ČT24
+podepsán ČTK — sdílí agenturní základ se
+[SRC-62](@/dossiers/andrej-babis/sources/src-62.md) (rodina `ctk`)
+a není nezávislým potvrzením. CLM-86 proto nese stav `1 ZDROJ`.
+Otevřeno a přečteno 2026-08-01.

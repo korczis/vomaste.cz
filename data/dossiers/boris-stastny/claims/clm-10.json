@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/boris-stastny"
   },
   "text": "Ochranná služba policie ani zpravodajské služby (BIS, NÚKIB) nález oficiálně neprověřovaly, protože jim nebyl nahlášen — žádné formální bezpečnostní šetření tedy podle zveřejněných informací zahájeno nebylo.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-03"

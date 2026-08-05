@@ -30,5 +30,7 @@ firma; jde o výklad zadávacích a dotačních pravidel ve správním
 soudnictví, ne o rozhodnutí o trestní odpovědnosti.
 
 **Nezávislost**: druhým otevřeným zdrojem k téže události je
-[SRC-47](@/dossiers/andrej-babis/sources/src-47.md) (Echo24). Otevřeno
-a přečteno 2026-08-01.
+[SRC-47](@/dossiers/andrej-babis/sources/src-47.md) (Echo24); Revize zdrojových rodin (2026-08-05)
+ale ověřila, že i tam je článek podepsán „Echo24, čtk" — jde o týž
+agenturní text (rodina `ctk`), tedy o jedno nezávislé doložení. CLM-68
+proto nese stav `1 ZDROJ`. Otevřeno a přečteno 2026-08-01.

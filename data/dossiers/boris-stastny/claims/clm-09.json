@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/boris-stastny"
   },
   "text": "Úřad vlády přístroj několik týdnů uschoval pro případ, že se o něj někdo přihlásí; teprve poté jej prověřili pracovníci IT spolu s bezpečnostním oddělením úřadu.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-03"

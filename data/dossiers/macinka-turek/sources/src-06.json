@@ -12,6 +12,7 @@
   "title": "SRC-06 — ČT24",
   "description": "Babišovo stanovisko: pokud se záběry z nehody potvrdí, Turek by měl rezignovat z postu zmocněnce.",
   "outlet": "ČT24 (Česká televize)",
+  "sourceFamily": "ctk",
   "sourceType": "veřejnoprávní zpravodajství",
   "url": "https://ct24.ceskatelevize.cz/clanek/domaci/pokud-zabery-z-nehody-nelzou-turek-by-mel-rezignovat-rekl-babis-375570",
   "published": "2026-07-14",
@@ -30,7 +31,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Přímá redakční zpráva ČT24 citující premiéra Andreje Babiše k Turkově\nnehodě — konkrétně jeho podmínečné stanovisko (\"pokud se záběry\npotvrdí...\"), ne definitivní odsudek. Dossier proto formuluje CLM-12 stejně\npodmínečně, ne jako tvrzení, že Babiš už Turka jednoznačně odsoudil.\n\nZdroj společně se SRC-08 (iRozhlas) potvrzuje totéž jádro události ze dvou\nsamostatných redakcí — v poznámce k nezávislosti v hlavním dossieru je\ntato dvojice vedena jako dvě nezávislé redakční potvrzení, ne jedna\nzdrojová rodina."
+      "value": "Zpráva ČT24 podepsaná „ČTK, ČT24\" citující premiéra Andreje Babiše k Turkově\nnehodě — konkrétně jeho podmínečné stanovisko (\"pokud se záběry\npotvrdí...\"), ne definitivní odsudek. Dossier proto formuluje CLM-12 stejně\npodmínečně, ne jako tvrzení, že Babiš už Turka jednoznačně odsoudil.\n\nZdroj společně se SRC-08 (iRozhlas) potvrzuje totéž jádro události ze dvou\nsamostatných vydavatelů. Revize zdrojových rodin (2026-08-05) ale zjistila, že\ntento článek je podepsán i ČTK — patří proto do rodiny `ctk` a se\nSRC-07 (ČeskéNoviny.cz) tvoří jedno nezávislé doložení, ne dvě. CLM-11\nproto nese stav `1 ZDROJ`."
     }
   ],
   "order": 6

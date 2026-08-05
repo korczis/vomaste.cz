@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
   },
   "text": "Ministr spravedlnosti Jeroným Tejc (nominovaný hnutím ANO) 17. dubna 2026 oznámil, že kvůli zjištěním interního auditu k přijetí a prodeji bitcoinů darovaných resortu podá trestní oznámení. Jde o ohlášení podezření orgánům činným v trestním řízení — nikoli o obvinění jakékoli konkrétní osoby.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-02"

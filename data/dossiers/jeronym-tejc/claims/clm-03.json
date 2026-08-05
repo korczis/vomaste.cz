@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
   },
   "text": "Trestní oznámení bylo podle citovaného zpravodajství doručeno Vrchnímu státnímu zastupitelství v Olomouci večer 23. dubna 2026; doručení potvrdil mluvčí zastupitelství Radek Bartoš.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-02"

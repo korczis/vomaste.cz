@@ -12,6 +12,7 @@
   "title": "SRC-09 — Echo24: Babiš v kauze Čapí hnízdo jde o odsouzení na objednávku a politický proces (4. 5. 2026)",
   "description": "Reakce premiéra Andreje Babiše na nepravomocný rozsudek nad spoluobžalovanou, v doslovných citacích.",
   "outlet": "Echo24",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://www.echo24.cz/a/HSZGH/zpravy-domov-babis-v-kauze-capi-hnizdo-jde-o-odsouzeni-na-objednavku-a-politicky-proces",
   "published": "2026-05-04",
@@ -36,7 +37,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Zpravodajský článek k reakci předsedy vlády na rozsudek ze 4. 5. 2026.\n**Co dokládá:** doslovné výroky Andreje Babiše o rozsudku a o kauze jako\ncelku, jeho hodnocení postupu odvolacího senátu a rekapitulaci, že jeho\nvlastní stíhání je po nevydání Sněmovnou přerušeno; článek zároveň uvádí\nuložený trest, takže slouží i jako druhý, nezávislý zdroj k samotnému\nvýroku o vině.\n\n**Nezávislost:** Echo24 je samostatný vydavatel, nezávislý na České\ntelevizi (SRC-08) i na České justici (SRC-01, SRC-03).\n\n**Limity:** obsahem zdroje jsou **výroky politika**, ne zjištění soudu\nnebo kontrolního orgánu. Doloženo je, že Babiš tyto věty pronesl —\nnikoli že popis, který v nich podává, odpovídá skutečnosti. Tvrzení z\ntohoto zdroje proto nesou stav `CITACE`."
+      "value": "Zpravodajský článek k reakci předsedy vlády na rozsudek ze 4. 5. 2026.\n**Co dokládá:** doslovné výroky Andreje Babiše o rozsudku a o kauze jako\ncelku, jeho hodnocení postupu odvolacího senátu a rekapitulaci, že jeho\nvlastní stíhání je po nevydání Sněmovnou přerušeno; článek zároveň uvádí\nuložený trest.\n\n**Nezávislost:** Revize zdrojových rodin (2026-08-05): článek je na Echo24\npodepsán „Echo24, čtk\" — sdílí agenturní základ s ČT24 (SRC-08), oba\npatří do rodiny `ctk`. Vztah k České justici (SRC-01, SRC-03) zůstává\nzatím neprověřen.\n\n**Limity:** obsahem zdroje jsou **výroky politika**, ne zjištění soudu\nnebo kontrolního orgánu. Doloženo je, že Babiš tyto věty pronesl —\nnikoli že popis, který v nich podává, odpovídá skutečnosti. Tvrzení z\ntohoto zdroje proto nesou stav `CITACE`."
     }
   ],
   "order": 9

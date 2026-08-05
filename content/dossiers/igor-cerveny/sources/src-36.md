@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-36 — ČeskéNoviny.cz (ČTK): Prezident a ministr Červený jednali i o řešení možného střetu zájmů (19. 2. 2026)"
-description = "ČeskéNoviny.cz nezávisle na Ekonomický deník (SRC-26) potvrzuje, že prezident Pavel a ministr Červený na schůzce probrali řešení jeho možného střetu zájmů."
+description = "ČeskéNoviny.cz uvádějí, že prezident Pavel a ministr Červený na schůzce probrali řešení jeho možného střetu zájmů; Ekonomický deník (SRC-26) nese tentýž agenturní text ČTK."
 template = "dossier-source.html"
 weight = 36
 
@@ -19,6 +19,7 @@ střetu zájmů Červeného." Podle článku ministr přislíbil věc vyřešit 
 souladu se zákonem s tím, že drží jen menšinový podíl v jedné firmě
 zabývající se výrobou podcastů.
 
-**Nezávislost**: samostatná redakce/agentura od Ekonomický deník
-(SRC-26) — obě nezávisle potvrzují tutéž skutečnost. Proto CLM-33 nese
-stav `CORROBORATED`.
+**Nezávislost**: Revize zdrojových rodin (2026-08-05): text v Ekonomickém
+deníku (SRC-26) je podepsán ČTK — jde o tutéž agenturní zprávu, ne
+o nezávislé potvrzení. Oba zdroje patří do rodiny `ctk`, CLM-33 proto
+nese stav `1 ZDROJ`.

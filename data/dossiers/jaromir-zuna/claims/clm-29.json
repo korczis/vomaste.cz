@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
   },
   "text": "Prezident Pavel v souvislosti s jmenováním Hlaváče poukázal na problémy v komunikaci mezi ministerstvem obrany a armádou a uvedl, že podřízení mají nadřízeným dávat „informace, které jsou nezkreslené, objektivní, i když se jim občas nemusí líbit“.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-21"

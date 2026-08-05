@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
   },
   "text": "Tomio Okamura podle zpravodajství kritizoval soudkyni Ivanu Tichou s tím, že podle něj kázala, jak má vypadat volební kampaň, a chtěla tím stanovit způsob jejího vedení.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-07"

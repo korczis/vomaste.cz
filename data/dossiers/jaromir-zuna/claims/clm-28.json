@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
   },
   "text": "Odcházející náčelník Karel Řehka podle médií zvažuje kandidaturu do Senátu jako nezávislý kandidát.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-21"

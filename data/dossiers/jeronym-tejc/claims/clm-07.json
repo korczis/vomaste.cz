@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
   },
   "text": "Přijetí bitcoinového daru spadá podle citovaného zpravodajství do funkčního období exministra spravedlnosti Pavla Blažka (ODS) a dohody s kupci kryptoměny do období exministryně Evy Decroix (ODS); Decroix jakékoli pochybení odmítla a dohody obhajovala. Oba vystupují pouze jako záznam vztahu k auditované agendě — z trestního oznámení vůči nim neplyne žádné obvinění.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-02"

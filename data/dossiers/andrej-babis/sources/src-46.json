@@ -12,6 +12,7 @@
   "title": "SRC-46 — ČeskéNoviny.cz (ČTK): NSS: Firmy z Agrofertu neměly kvůli střetu zájmů Babiše dostávat zakázky (11. 12. 2025)",
   "description": "NSS zamítl kasační stížnost Moravskoslezského kraje (Navos Farm Technic, školní dílny Bruntál); MMR odmítlo proplatit dotace za více než 43 mil. Kč.",
   "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://www.ceskenoviny.cz/zpravy/nss-firmy-z-agrofertu-nemely-kvuli-stretu-zajmu-babise-dostavat-zakazky/2759349",
   "published": "2025-12-11",
@@ -27,7 +28,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Agenturní zpráva ČTK o rozsudku Nejvyššího správního soudu z 11. 12.\n2025: Moravskoslezský kraj zadal zakázku při budování školních dílen\nv Bruntále firmě Navos Farm Technic ze skupiny Agrofert a Ministerstvo\npro místní rozvoj mu následně kvůli Babišovu střetu zájmů odmítlo\nproplatit evropské dotace „za více než 43 milionů korun“. Z rozsudku:\n„Správní orgány i městský soud dospěly ke správnému závěru, že\ndodavatel (Navos Farm Technic) byl ovládán Ing. Andrejem Babišem.“\nPojem „ovládání“ se podle NSS musí vykládat stejně pro zakázky jako pro\ndotace; Babiš měl koncern vložený ve svěřenském fondu, podle auditu\nEvropské komise jej ale dál nepřímo ovládal.\n\n**Poznámka k procesní přesnosti**: kasační stížnost podal kraj, ne\nfirma; jde o výklad zadávacích a dotačních pravidel ve správním\nsoudnictví, ne o rozhodnutí o trestní odpovědnosti.\n\n**Nezávislost**: druhým otevřeným zdrojem k téže události je\n[SRC-47](@/dossiers/andrej-babis/sources/src-47.md) (Echo24). Otevřeno\na přečteno 2026-08-01."
+      "value": "Agenturní zpráva ČTK o rozsudku Nejvyššího správního soudu z 11. 12.\n2025: Moravskoslezský kraj zadal zakázku při budování školních dílen\nv Bruntále firmě Navos Farm Technic ze skupiny Agrofert a Ministerstvo\npro místní rozvoj mu následně kvůli Babišovu střetu zájmů odmítlo\nproplatit evropské dotace „za více než 43 milionů korun“. Z rozsudku:\n„Správní orgány i městský soud dospěly ke správnému závěru, že\ndodavatel (Navos Farm Technic) byl ovládán Ing. Andrejem Babišem.“\nPojem „ovládání“ se podle NSS musí vykládat stejně pro zakázky jako pro\ndotace; Babiš měl koncern vložený ve svěřenském fondu, podle auditu\nEvropské komise jej ale dál nepřímo ovládal.\n\n**Poznámka k procesní přesnosti**: kasační stížnost podal kraj, ne\nfirma; jde o výklad zadávacích a dotačních pravidel ve správním\nsoudnictví, ne o rozhodnutí o trestní odpovědnosti.\n\n**Nezávislost**: druhým otevřeným zdrojem k téže události je\n[SRC-47](@/dossiers/andrej-babis/sources/src-47.md) (Echo24); Revize zdrojových rodin (2026-08-05)\nale ověřila, že i tam je článek podepsán „Echo24, čtk\" — jde o týž\nagenturní text (rodina `ctk`), tedy o jedno nezávislé doložení. CLM-68\nproto nese stav `1 ZDROJ`. Otevřeno a přečteno 2026-08-01."
     }
   ],
   "order": 46

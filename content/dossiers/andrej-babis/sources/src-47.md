@@ -28,7 +28,8 @@ fondu, podle auditu Evropské komise jej však dál nepřímo ovládal.
 **Poznámka k procesní přesnosti**: správní výklad zákona o střetu
 zájmů a zadávání zakázek; o trestní odpovědnosti nerozhoduje.
 
-**Nezávislost**: článek se obsahově kryje s agenturní zprávou ČTK
-([SRC-46](@/dossiers/andrej-babis/sources/src-46.md)) — může jít o týž
-agenturní základ; korroborace je vydavatelská. Otevřeno a přečteno
-2026-08-01.
+**Nezávislost**: Revize zdrojových rodin (2026-08-05) ověřila podpis —
+článek je na Echo24 podepsán „Echo24, čtk", jde tedy o týž agenturní
+text jako [SRC-46](@/dossiers/andrej-babis/sources/src-46.md). Oba
+zdroje patří do rodiny `ctk`, CLM-68 proto nese stav `1 ZDROJ`.
+Otevřeno a přečteno 2026-08-01.

@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
   },
   "text": "Prezident Petr Pavel jmenoval 30. června 2026 Miroslava Hlaváče náčelníkem Generálního štábu Armády ČR; do funkce nastoupil 1. července 2026 a nahradil Karla Řehku.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-14"

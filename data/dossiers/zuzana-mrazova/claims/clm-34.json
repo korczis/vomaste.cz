@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
   },
   "text": "Před nástupem do vlády byla Mrázová čtyři roky místostarostkou a sedm let starostkou Bíliny.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-21"

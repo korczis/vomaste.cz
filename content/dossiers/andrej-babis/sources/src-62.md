@@ -26,6 +26,7 @@ pověsti není rozhodnutí soudu; dossier nerozhoduje o pravdivosti
 výroků žádné strany.
 
 **Nezávislost**: agenturní text ČTK; druhou redakcí k téže události je
-[SRC-63](@/dossiers/andrej-babis/sources/src-63.md) (ČT24) — obě mohou
-sdílet agenturní základ, korroborace je vydavatelská. Otevřeno a
-přečteno 2026-08-01.
+[SRC-63](@/dossiers/andrej-babis/sources/src-63.md) (ČT24), Revize zdrojových rodin (2026-08-05)
+ale potvrdila i tam podpis ČTK — obě citace stojí na jednom agenturním
+základu (rodina `ctk`). CLM-86 proto nese stav `1 ZDROJ`. Otevřeno
+a přečteno 2026-08-01.

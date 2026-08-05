@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
   },
   "text": "Odborná komise, jejíž předběžné stanovisko bylo zveřejněno v červenci 2026, pracovala pod vedením odborníka pověřeného ministerstvem zdravotnictví a zasedali v ní lékaři I. interní kliniky – kardiologické FN Olomouc a dva zástupci České asociace pro srdeční rytmus.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-13"

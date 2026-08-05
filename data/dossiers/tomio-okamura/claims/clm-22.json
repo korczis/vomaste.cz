@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
   },
   "text": "Obžaloba navrhovala pro Tomia Okamuru podmíněný a peněžitý trest a pro hnutí SPD peněžitý trest; jde o návrh obžaloby, nikoli o rozhodnutí soudu.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-16"

@@ -14,14 +14,15 @@ record_type = "source"
 lang = "cs"
 src_id = "SRC-26"
 +++
-Ekonomický deník, publikováno 18. 6. 2026, nezávisle na
-ČeskéNoviny.cz/ČTK (SRC-06) potvrzuje totéž jádro faktu: „Senát
+Ekonomický deník, publikováno 18. 6. 2026, uvádí totéž jádro faktu jako
+ČeskéNoviny.cz/ČTK (SRC-06): „Senát
 rovněž doporučil omezit pravomoc ministerstva financí upravovat
 rozpočty parlamentních komor, prezidentské kanceláře, Ústavního soudu,
 Nejvyššího kontrolního úřadu, ombudsmana a Národní rozpočtové rady,“
 s tím, že úpravy by šlo provádět jen na základě písemné žádosti
 příslušné instituce.
 
-**Nezávislost.** Jiný vydavatel (Ekonomický deník) než ČeskéNoviny.cz/
-ČTK — nezávislé potvrzení stejného výčtu chráněných institucí, nikoli
-jen převzatá agenturní zpráva.
+**Nezávislost.** Revize zdrojových rodin (2026-08-05): článek nese
+v Ekonomickém deníku v podpisu vedle redakce i ČTK — jde o agenturní
+základ, ne o samostatné zjištění. Se SRC-06 sdílí rodinu `ctk`, CLM-14
+proto nese stav `1 ZDROJ`.

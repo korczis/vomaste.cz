@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
   },
   "text": "Dětský ombudsman Martin Beneš k návrhu uvedl: „Nadále pochybuji o tom, že je vhodné upravovat zákaz mobilních telefonů ve školách celostátně,“ a obává se, že děti budou školu vnímat negativně.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-16"

@@ -12,6 +12,7 @@
   "title": "SRC-03 — ČT24 (Česká televize)",
   "description": "ČT a ČRo mají od příštího roku místo poplatků dostávat peníze ze státního rozpočtu, řekl Klempíř",
   "outlet": "ČT24 (Česká televize)",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://ct24.ceskatelevize.cz/clanek/domaci/klempir-predstavuje-zakony-ke-zmenam-rozhlasovych-a-televiznich-poplatku-372365",
   "published": "2026-04-14",

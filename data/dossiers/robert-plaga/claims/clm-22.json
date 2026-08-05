@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
   },
   "text": "Robert Plaga uvedl, že individualizovaná data z testování budou smazána poté, co budou agregována na úroveň jednotlivých škol.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-14"

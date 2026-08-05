@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
   },
   "text": "Obžalobu na Tomia Okamuru i na hnutí SPD podal 7. srpna 2025 šéf Obvodního státního zastupitelství pro Prahu 1 Jan Lelek, a to k Obvodnímu soudu pro Prahu 1.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-16"

@@ -12,6 +12,7 @@
   "title": "SRC-18 — Advokátní deník",
   "description": "Sněmovna schválila stavební novelu se vznikem státních stavebních úřadů",
   "outlet": "Advokátní deník",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://advokatnidenik.cz/2026/07/13/snemovna-schvalila-stavebni-novelu-se-vznikem-statnich-stavebnich-uradu/",
   "published": "2026-07-13",

@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
   },
   "text": "Podle Juchelky bude o tom, zda České republice skutečně vznikla finanční újma, možné rozhodnout až po dokončení administrace projektů.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-15"

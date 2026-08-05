@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
   },
   "text": "Andrej Babiš zastává k datu citovaného zpravodajství (květen až červenec 2026) úřad předsedy vlády České republiky",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-08"

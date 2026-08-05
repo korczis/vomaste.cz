@@ -12,6 +12,7 @@
   "title": "SRC-23 — ČT24 (Česká televize)",
   "description": "Senátoři upravili novelu o veřejných rozpočtech, vrací se do sněmovny — snížení limitu pro strategické infrastrukturní výdaje na 1 % HDP a podmínění nadlimitních výdajů souhlasem sněmovních výborů.",
   "outlet": "ČT24 (Česká televize)",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://ct24.ceskatelevize.cz/clanek/domaci/snemovna-pokracuje-v-jednani-o-navratu-eet-375311",
   "published": "2026-07-08",
@@ -27,7 +28,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "ČT24 nezávisle na ČeskéNoviny.cz/ČTK (SRC-05) potvrzuje totéž jádro\nsenátních úprav: „Senátní úpravy patří snížení limitu pro výdaje na\nstrategické infrastrukturní stavby na jedno procento HDP\" a „Pokud by\nvláda kvůli zhoršené bezpečnostní situaci či na dopravní infrastrukturu\nchtěla mít nadlimitní výdaje, musela by získat souhlas sněmovních\nvýborů.\" Článek referuje senátní úpravy v kontextu následného\nsněmovního hlasování v červenci 2026, přesné datum 17. 6. 2026\nneuvádí — to dokládá jen SRC-05.\n\n**Nezávislost.** Jiný vydavatel než ČeskéNoviny.cz/ČTK — Česká televize\nje veřejnoprávní provozovatel s vlastní redakcí. U CLM-13 se proto\npočítají jako dvě nezávislá potvrzení jádra faktu (limit 1 % HDP,\npodmínka souhlasu výboru); přesné datum senátního hlasování zůstává\ndoloženo jen SRC-05."
+      "value": "ČT24 uvádí totéž jádro senátních úprav jako ČeskéNoviny.cz/ČTK (SRC-05): „Senátní úpravy patří snížení limitu pro výdaje na\nstrategické infrastrukturní stavby na jedno procento HDP\" a „Pokud by\nvláda kvůli zhoršené bezpečnostní situaci či na dopravní infrastrukturu\nchtěla mít nadlimitní výdaje, musela by získat souhlas sněmovních\nvýborů.\" Článek referuje senátní úpravy v kontextu následného\nsněmovního hlasování v červenci 2026, přesné datum 17. 6. 2026\nneuvádí — to dokládá jen SRC-05.\n\n**Nezávislost.** Revize zdrojových rodin (2026-08-05): článek je na ČT24\npodepsán „ČTK, Lukáš Prokop\" — nese tedy týž agenturní základ jako\nSRC-05 a patří do rodiny `ctk`. Nejde o druhé nezávislé potvrzení,\nCLM-13 proto nese stav `1 ZDROJ`; přesné datum senátního hlasování\nzůstává doloženo jen SRC-05."
     }
   ],
   "order": 23

@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
   },
   "text": "Ministerstvo kultury zrušilo výběrové řízení na generálního ředitele Národní galerie Praha; informace byla zveřejněna 2. července 2026 s tím, že řízení bude vypsáno znovu.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-04"

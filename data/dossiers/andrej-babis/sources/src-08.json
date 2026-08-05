@@ -12,6 +12,7 @@
   "title": "SRC-08 — ČT24: Soud nepravomocně uznal vinu Nagyové v kauze Čapí hnízdo (4. 5. 2026)",
   "description": "Zpravodajství o nepravomocném rozsudku Městského soudu v Praze nad spoluobžalovanou Janou Nagyovou, o uloženém trestu a o přerušeném stíhání Andreje Babiše.",
   "outlet": "ČT24 (Česká televize)",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://ct24.ceskatelevize.cz/clanek/domaci/soud-nepravomocne-uznal-vinu-nagyove-v-kauze-capi-hnizdo-373074",
   "published": "2026-05-04",
@@ -36,7 +37,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Zpravodajský článek veřejnoprávní televize k jednacímu dni 4. 5. 2026.\n**Co dokládá:** výrok Městského soudu v Praze o vině spoluobžalované Jany\nNagyové z dotačního podvodu a poškození finančních zájmů EU, uložený\ntříletý podmíněný trest s pětiletou zkušební dobou a peněžitý trest\n500 000 Kč, výslovnou informaci, že rozsudek **není pravomocný** a lze se\nproti němu odvolat k Vrchnímu soudu v Praze, vyjádření předsedy senátu\nJana Šotta a stav řízení proti Andreji Babišovi, které je přerušeno.\n\n**Nezávislost:** Česká televize je vydavatelsky nezávislá na České\njustici (SRC-01, SRC-03) i na deníku Echo24 (SRC-09), proto se pro účely\nstavu `CORROBORATED` počítá jako samostatný zdroj.\n\n**Limity:** článek referuje o rozhodnutí prvního stupně v den jeho\nvyhlášení. Nevypovídá nic o tom, jak dopadne případné odvolací řízení,\na o vině Andreje Babiše soud v tomto řízení nerozhodoval."
+      "value": "Zpravodajský článek veřejnoprávní televize k jednacímu dni 4. 5. 2026.\n**Co dokládá:** výrok Městského soudu v Praze o vině spoluobžalované Jany\nNagyové z dotačního podvodu a poškození finančních zájmů EU, uložený\ntříletý podmíněný trest s pětiletou zkušební dobou a peněžitý trest\n500 000 Kč, výslovnou informaci, že rozsudek **není pravomocný** a lze se\nproti němu odvolat k Vrchnímu soudu v Praze, vyjádření předsedy senátu\nJana Šotta a stav řízení proti Andreji Babišovi, které je přerušeno.\n\n**Nezávislost:** Revize zdrojových rodin (2026-08-05): článek je na ČT24\npodepsán ČTK, stejně jako text na Echo24 (SRC-09) — oba patří do rodiny\n`ctk` a dohromady tvoří jedno nezávislé doložení. CLM-20 a CLM-36 proto\nnesou stav `1 ZDROJ`. Vztah k České justici (SRC-01, SRC-03) zůstává\nzatím neprověřen.\n\n**Limity:** článek referuje o rozhodnutí prvního stupně v den jeho\nvyhlášení. Nevypovídá nic o tom, jak dopadne případné odvolací řízení,\na o vině Andreje Babiše soud v tomto řízení nerozhodoval."
     }
   ],
   "order": 8

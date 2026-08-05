@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
   },
   "text": "Novela rozpočtových zákonů mění výpočet výdajových rámců z pravidla maximálního strukturálního deficitu na střednědobý růst čistých výdajů; podle citovaného zpravodajství by pozměňovací návrhy ministryně umožnily navýšit výdaje na strategickou infrastrukturu nad schválené limity a v některých případech obejít schválení Parlamentem, včetně navýšení až o 10 procent při bezpečnostních hrozbách",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-03"
