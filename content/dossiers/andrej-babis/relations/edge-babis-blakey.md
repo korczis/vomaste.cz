@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Andrej Babiš — vklad 15 mil. EUR (17. 9. 2009) — offshore struktura sama o sobě není protiprávní — BLAKEY FINANCE LIMITED (BVI)"
-description = "Andrej Babiš — vklad 15 mil. EUR (17. 9. 2009) — offshore struktura sama o sobě není protiprávní — BLAKEY FINANCE LIMITED (BVI). Vztah v grafu dossieru Andrej Babiš, doložený tvrzeními…"
+description = "Andrej Babiš — vklad 15 mil. EUR (17. 9. 2009) — offshore struktura sama o sobě není…. Vztah v grafu dossieru Andrej Babiš. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 12
 

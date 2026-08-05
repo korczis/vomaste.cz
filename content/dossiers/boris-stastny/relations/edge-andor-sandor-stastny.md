@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Andor Šándor — k nálezu uvedl, že takové zařízení tam nemá co dělat a nepřijde mu to rozumné — Boris Šťastný"
-description = "Andor Šándor — k nálezu uvedl, že takové zařízení tam nemá co dělat a nepřijde mu to rozumné — Boris Šťastný. Vztah v grafu dossieru Boris Šťastný, doložený tvrzeními CLM-18. Záznam…"
+description = "Andor Šándor — k nálezu uvedl, že takové zařízení tam nemá co dělat a nepřijde mu to…. Vztah v grafu dossieru Boris Šťastný. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 15
 

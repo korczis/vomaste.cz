@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Filip Turek — společník 2016–2023 — Zapper-Club s.r.o."
-description = "Filip Turek — společník 2016–2023 — Zapper-Club s.r.o.. Vztah v grafu dossieru Petr Macinka a Filip Turek, doložený tvrzeními CLM-20. Záznam vazby, nikoli tvrzení o pochybení."
+description = "Filip Turek — společník 2016–2023 — Zapper-Club s.r.o.. Vztah v grafu dossieru Petr Macinka a Filip Turek. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 28
 

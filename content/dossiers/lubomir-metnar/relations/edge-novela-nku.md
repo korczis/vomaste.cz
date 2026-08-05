@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Novela rozpočtových zákonů 2026 (sněmovní tisk č. 90) a prezidentské veto — novela by podle prezidenta umožnila ministerstvu financí zasahovat do hospodaření NKÚ, Ústavního soudu a ombudsmana — Nejvyšší kontrolní úřad"
-description = "Novela rozpočtových zákonů 2026 (sněmovní tisk č. 90) a prezidentské veto — novela by podle prezidenta umožnila ministerstvu financí zasahovat do hospodaření NKÚ, Ústavního soudu a…"
+description = "Novela rozpočtových zákonů 2026 (sněmovní tisk č. 90) a prezidentské veto — novela by…. Vztah v grafu dossieru Lubomír Metnar. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 8
 

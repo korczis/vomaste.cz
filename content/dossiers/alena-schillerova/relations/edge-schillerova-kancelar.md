@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Alena Schillerová — Schillerová označila veto za názorový veletoč Kanceláře prezidenta republiky — Kancelář prezidenta republiky"
-description = "Alena Schillerová — Schillerová označila veto za názorový veletoč Kanceláře prezidenta republiky — Kancelář prezidenta republiky. Vztah v grafu dossieru Alena Schillerová, doložený…"
+description = "Alena Schillerová — Schillerová označila veto za názorový veletoč Kanceláře prezidenta…. Vztah v grafu dossieru Alena Schillerová. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 14
 

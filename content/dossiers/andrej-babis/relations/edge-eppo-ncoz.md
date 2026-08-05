@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Úřad evropského veřejného žalobce (EPPO) — prověřováním pověřena NCOZ (24. 5. 2026) — Národní centrála proti organizovanému zločinu"
-description = "Úřad evropského veřejného žalobce (EPPO) — prověřováním pověřena NCOZ (24. 5. 2026) — Národní centrála proti organizovanému zločinu. Vztah v grafu dossieru Andrej Babiš, doložený…"
+description = "Úřad evropského veřejného žalobce (EPPO) — prověřováním pověřena NCOZ (24. 5. 2026) —…. Vztah v grafu dossieru Andrej Babiš. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 11
 

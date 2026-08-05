@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Tomáš Zdechovský — europoslanec za KDU-ČSL — KDU-ČSL"
-description = "Tomáš Zdechovský — europoslanec za KDU-ČSL — KDU-ČSL. Vztah v grafu dossieru Boris Šťastný, doložený tvrzeními CLM-34, CLM-39. Záznam vazby, nikoli tvrzení o pochybení."
+description = "Tomáš Zdechovský — europoslanec za KDU-ČSL — KDU-ČSL. Vztah v grafu dossieru Boris Šťastný. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 22
 

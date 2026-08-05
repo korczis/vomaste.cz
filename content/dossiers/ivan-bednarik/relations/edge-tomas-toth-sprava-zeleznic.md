@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Tomáš Tóth — generální ředitel Správy železnic — Správa železnic"
-description = "Tomáš Tóth — generální ředitel Správy železnic — Správa železnic. Vztah v grafu dossieru Ivan Bednárik, doložený tvrzeními CLM-30. Záznam vazby, nikoli tvrzení o pochybení."
+description = "Tomáš Tóth — generální ředitel Správy železnic — Správa železnic. Vztah v grafu dossieru Ivan Bednárik. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 11
 

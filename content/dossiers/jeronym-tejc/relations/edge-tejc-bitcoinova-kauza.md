@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Jeroným Tejc — Tejcovo oznámení interního auditu otevřelo bitcoinovou kauzu resortu spravedlnosti — Bitcoinová kauza resortu spravedlnosti"
-description = "Jeroným Tejc — Tejcovo oznámení interního auditu otevřelo bitcoinovou kauzu resortu spravedlnosti — Bitcoinová kauza resortu spravedlnosti. Vztah v grafu dossieru Jeroným Tejc…"
+description = "Jeroným Tejc — Tejcovo oznámení interního auditu otevřelo bitcoinovou kauzu resortu…. Vztah v grafu dossieru Jeroným Tejc. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 6
 

@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Daniel Dočekal — konstatoval, že jeho příspěvek na sítích vykazuje znaky manipulace — Boris Šťastný"
-description = "Daniel Dočekal — konstatoval, že jeho příspěvek na sítích vykazuje znaky manipulace — Boris Šťastný. Vztah v grafu dossieru Boris Šťastný, doložený tvrzeními CLM-35. Záznam vazby…"
+description = "Daniel Dočekal — konstatoval, že jeho příspěvek na sítích vykazuje znaky manipulace —…. Vztah v grafu dossieru Boris Šťastný. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 20
 

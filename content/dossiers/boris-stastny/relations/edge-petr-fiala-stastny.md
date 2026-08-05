@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Petr Fiala — po odvolání Šebka označil jeho práci v čele Národní sportovní agentury za skvělou a profesionální — Boris Šťastný"
-description = "Petr Fiala — po odvolání Šebka označil jeho práci v čele Národní sportovní agentury za skvělou a profesionální — Boris Šťastný. Vztah v grafu dossieru Boris Šťastný, doložený tvrzeními…"
+description = "Petr Fiala — po odvolání Šebka označil jeho práci v čele Národní sportovní agentury za…. Vztah v grafu dossieru Boris Šťastný. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 12
 

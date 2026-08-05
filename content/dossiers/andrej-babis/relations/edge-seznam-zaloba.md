@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Seznam.cz — žalobce — Žaloba Seznam.cz na ochranu pověsti (2026)"
-description = "Seznam.cz — žalobce — Žaloba Seznam.cz na ochranu pověsti (2026). Vztah v grafu dossieru Andrej Babiš, doložený tvrzeními CLM-86. Záznam vazby, nikoli tvrzení o pochybení."
+description = "Seznam.cz — žalobce — Žaloba Seznam.cz na ochranu pověsti (2026). Vztah v grafu dossieru Andrej Babiš. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 40
 

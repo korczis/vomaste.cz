@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "James Quick — podal trestní oznámení v souvislosti s veřejnou kauzou — Jan Morava"
-description = "James Quick — podal trestní oznámení v souvislosti s veřejnou kauzou — Jan Morava. Vztah v grafu dossieru James Quick, doložený tvrzeními CLM-07. Záznam vazby, nikoli tvrzení o…"
+description = "James Quick — podal trestní oznámení v souvislosti s veřejnou kauzou — Jan Morava. Vztah v grafu dossieru James Quick. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 3
 

@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Igor Červený — ministr životního prostředí — Vláda ČR"
-description = "Igor Červený — ministr životního prostředí — Vláda ČR. Vztah v grafu dossieru Igor Červený, doložený tvrzeními CLM-01. Záznam vazby, nikoli tvrzení o pochybení."
+description = "Igor Červený — ministr životního prostředí — Vláda ČR. Vztah v grafu dossieru Igor Červený. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 1
 

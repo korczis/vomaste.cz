@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Miroslav Hlaváč — náčelník Generálního štábu Armády ČR (od 1. 7. 2026) — Generální štáb Armády ČR"
-description = "Miroslav Hlaváč — náčelník Generálního štábu Armády ČR (od 1. 7. 2026) — Generální štáb Armády ČR. Vztah v grafu dossieru Jaromír Zůna, doložený tvrzeními CLM-20. Záznam vazby, nikoli…"
+description = "Miroslav Hlaváč — náčelník Generálního štábu Armády ČR (od 1. 7. 2026) — Generální štáb…. Vztah v grafu dossieru Jaromír Zůna. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 7
 

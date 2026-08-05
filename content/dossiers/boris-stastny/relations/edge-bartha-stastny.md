@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Tünde Bartha — vedoucí Úřadu vlády Tünde Bartha se vyjádřila k nálezu nahrávacího zařízení v jednací místnosti — Boris Šťastný"
-description = "Tünde Bartha — vedoucí Úřadu vlády Tünde Bartha se vyjádřila k nálezu nahrávacího zařízení v jednací místnosti — Boris Šťastný. Vztah v grafu dossieru Boris Šťastný, doložený tvrzeními…"
+description = "Tünde Bartha — vedoucí Úřadu vlády Tünde Bartha se vyjádřila k nálezu nahrávacího…. Vztah v grafu dossieru Boris Šťastný. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 3
 

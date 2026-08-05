@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Robert Plaga — ministr školství, mládeže a tělovýchovy — Vláda ČR"
-description = "Robert Plaga — ministr školství, mládeže a tělovýchovy — Vláda ČR. Vztah v grafu dossieru Robert Plaga, doložený tvrzeními CLM-01. Záznam vazby, nikoli tvrzení o pochybení."
+description = "Robert Plaga — ministr školství, mládeže a tělovýchovy — Vláda ČR. Vztah v grafu dossieru Robert Plaga. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 1
 

@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Agrofert — Agrofert k obžalobě opakovaně uvedl, že jeho dceřiná společnost postupovala v souladu se zákonem — Pekárna Zelená louka (skupina Agrofert)"
-description = "Agrofert — Agrofert k obžalobě opakovaně uvedl, že jeho dceřiná společnost postupovala v souladu se zákonem — Pekárna Zelená louka (skupina Agrofert). Vztah v grafu dossieru Karel…"
+description = "Agrofert — Agrofert k obžalobě opakovaně uvedl, že jeho dceřiná společnost postupovala v…. Vztah v grafu dossieru Karel Havlíček. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 19
 

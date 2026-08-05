@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Trestní oznámení (2025) — OSZ pro Prahu 4 odložení oznámilo; o stížnosti ženy rozhoduje státní zástupkyně — Státní zastupitelství"
-description = "Trestní oznámení (2025) — OSZ pro Prahu 4 odložení oznámilo; o stížnosti ženy rozhoduje státní zástupkyně — Státní zastupitelství. Vztah v grafu dossieru Petr Macinka a Filip Turek…"
+description = "Trestní oznámení (2025) — OSZ pro Prahu 4 odložení oznámilo; o stížnosti ženy rozhoduje…. Vztah v grafu dossieru Petr Macinka a Filip Turek. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 26
 

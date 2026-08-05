@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Tomio Okamura — Sněmovna 5. 3. 2026 nevydala Okamuru k trestnímu stíhání (parlamentní procesní krok) — Poslanecká sněmovna"
-description = "Tomio Okamura — Sněmovna 5. 3. 2026 nevydala Okamuru k trestnímu stíhání (parlamentní procesní krok) — Poslanecká sněmovna. Vztah v grafu dossieru Tomio Okamura, doložený tvrzeními…"
+description = "Tomio Okamura — Sněmovna 5. 3. 2026 nevydala Okamuru k trestnímu stíhání (parlamentní…. Vztah v grafu dossieru Tomio Okamura. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 3
 

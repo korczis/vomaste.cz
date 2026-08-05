@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "James Quick — podle ÚOOÚ byl v době kontroly jednatelem — CSR & Protikorupcnilinka.cz s.r.o."
-description = "James Quick — podle ÚOOÚ byl v době kontroly jednatelem — CSR & Protikorupcnilinka.cz s.r.o.. Vztah v grafu dossieru James Quick, doložený tvrzeními CLM-01. Záznam vazby, nikoli…"
+description = "James Quick — podle ÚOOÚ byl v době kontroly jednatelem — CSR & Protikorupcnilinka.cz…. Vztah v grafu dossieru James Quick. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 1
 

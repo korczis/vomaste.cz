@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Petr Fiala — bývalý premiér, předseda ODS — ODS"
-description = "Petr Fiala — bývalý premiér, předseda ODS — ODS. Vztah v grafu dossieru Boris Šťastný, doložený tvrzeními CLM-29. Záznam vazby, nikoli tvrzení o pochybení."
+description = "Petr Fiala — bývalý premiér, předseda ODS — ODS. Vztah v grafu dossieru Boris Šťastný. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 24
 

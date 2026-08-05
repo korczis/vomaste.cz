@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "GMR GAS s.r.o. (Brno) — GMR GAS s.r.o. je českou společností za ukrajinskou pobočkou GMR GAS UA LLC — GMR GAS UA LLC (Kyjev)"
-description = "GMR GAS s.r.o. (Brno) — GMR GAS s.r.o. je českou společností za ukrajinskou pobočkou GMR GAS UA LLC — GMR GAS UA LLC (Kyjev). Vztah v grafu dossieru Petr Vencálek, doložený tvrzeními…"
+description = "GMR GAS s.r.o. (Brno) — GMR GAS s.r.o. je českou společností za ukrajinskou pobočkou GMR…. Vztah v grafu dossieru Petr Vencálek. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 2
 

@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Martin Kupka — Kupka (ODS) označil novelu za „ústavní převrat na splátky“ a po vetu varoval před oslabením Sněmovny — Alena Schillerová"
-description = "Martin Kupka — Kupka (ODS) označil novelu za „ústavní převrat na splátky“ a po vetu varoval před oslabením Sněmovny — Alena Schillerová. Vztah v grafu dossieru Alena Schillerová…"
+description = "Martin Kupka — Kupka (ODS) označil novelu za „ústavní převrat na splátky“ a po vetu…. Vztah v grafu dossieru Alena Schillerová. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 9
 

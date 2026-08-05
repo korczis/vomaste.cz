@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Zuzana Mrázová — ministryně pro místní rozvoj — Vláda ČR"
-description = "Zuzana Mrázová — ministryně pro místní rozvoj — Vláda ČR. Vztah v grafu dossieru Zuzana Mrázová, doložený tvrzeními CLM-01. Záznam vazby, nikoli tvrzení o pochybení."
+description = "Zuzana Mrázová — ministryně pro místní rozvoj — Vláda ČR. Vztah v grafu dossieru Zuzana Mrázová. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 1
 

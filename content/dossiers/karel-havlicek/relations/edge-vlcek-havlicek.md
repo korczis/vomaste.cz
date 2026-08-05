@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Lukáš Vlček — Vlček (STAN) označil Havlíčkův návrh stavebního zákona za „legislativní paskvil“ — Karel Havlíček"
-description = "Lukáš Vlček — Vlček (STAN) označil Havlíčkův návrh stavebního zákona za „legislativní paskvil“ — Karel Havlíček. Vztah v grafu dossieru Karel Havlíček, doložený tvrzeními CLM-13…"
+description = "Lukáš Vlček — Vlček (STAN) označil Havlíčkův návrh stavebního zákona za „legislativní…. Vztah v grafu dossieru Karel Havlíček. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 8
 

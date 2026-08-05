@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Jaroslav Faltýnek — svědecká výpověď u soudu ve prospěch obžalovaného (2022) — doloženo, že výroky padly — Andrej Babiš"
-description = "Jaroslav Faltýnek — svědecká výpověď u soudu ve prospěch obžalovaného (2022) — doloženo, že výroky padly — Andrej Babiš. Vztah v grafu dossieru Jaroslav Faltýnek, doložený tvrzeními…"
+description = "Jaroslav Faltýnek — svědecká výpověď u soudu ve prospěch obžalovaného (2022) — doloženo…. Vztah v grafu dossieru Jaroslav Faltýnek. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 2
 

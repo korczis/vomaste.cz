@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Ministerstvo životního prostředí ČR — při systemizaci k dubnu 2026 zaniklo oddělení financování Národního plánu obnovy — Národní plán obnovy"
-description = "Ministerstvo životního prostředí ČR — při systemizaci k dubnu 2026 zaniklo oddělení financování Národního plánu obnovy — Národní plán obnovy. Vztah v grafu dossieru Igor Červený…"
+description = "Ministerstvo životního prostředí ČR — při systemizaci k dubnu 2026 zaniklo oddělení…. Vztah v grafu dossieru Igor Červený. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 21
 

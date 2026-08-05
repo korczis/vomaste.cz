@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Martin Beneš — Dětský ombudsman Martin Beneš je členem Komise pro přezkum nepřirozených úmrtí dětí — Komise pro přezkum nepřirozených úmrtí dětí"
-description = "Martin Beneš — Dětský ombudsman Martin Beneš je členem Komise pro přezkum nepřirozených úmrtí dětí — Komise pro přezkum nepřirozených úmrtí dětí. Vztah v grafu dossieru Jeroným Tejc…"
+description = "Martin Beneš — Dětský ombudsman Martin Beneš je členem Komise pro přezkum nepřirozených…. Vztah v grafu dossieru Jeroným Tejc. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 15
 

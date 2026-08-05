@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Tomáš Zatloukal — ústřední školní inspektor — Česká školní inspekce"
-description = "Tomáš Zatloukal — ústřední školní inspektor — Česká školní inspekce. Vztah v grafu dossieru Robert Plaga, doložený tvrzeními CLM-08. Záznam vazby, nikoli tvrzení o pochybení."
+description = "Tomáš Zatloukal — ústřední školní inspektor — Česká školní inspekce. Vztah v grafu dossieru Robert Plaga. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 4
 

@@ -380,14 +380,17 @@ export function buildStubs(compiled, { contentRoot = REPO_ROOT } = {}) {
       // spojuje, v čím grafu a o která tvrzení se opírá. Poslední věta není
       // ozdoba — hrana v grafu je záznam vazby, ne obvinění, a v náhledu
       // odkazu je to jediné místo, kde to je vidět (viz AGENTS.md).
-      const relClaims = localIds(r.claims);
+      // Délkový rozpočet se rozdává předem, ne oříznutím celku: popisky hran
+      // bývají celé věty (nejdelší přes 130 znaků) a při zkrácení až nakonec
+      // zmizí právě ta doložka na konci, kvůli které tam je. Rozpočet musí
+      // sedět pod 200 znaků, kde description ořezává base.html — jinak by
+      // doložku uřízla ta. Seznam CLM se do popisu nedává schválně: v náhledu
+      // odkazu ani ve výsledku vyhledávání identifikátor nikomu nic neřekne
+      // a na stránce samotné je stejně vidět.
       const inDossier = dossierTitles.get(slug) ?? slug;
       description = tomlString(
-        summarize(
-          `${derived}. Vztah v grafu dossieru ${inDossier}` +
-            (relClaims.length ? `, doložený tvrzeními ${relClaims.join(", ")}` : "") +
-            ". Záznam vazby, nikoli tvrzení o pochybení.",
-        ),
+        `${summarize(derived, 90)}. Vztah v grafu dossieru ${summarize(inDossier, 35)}.` +
+          " Záznam vazby, nikoli tvrzení o pochybení.",
       );
     }
 

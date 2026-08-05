@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Petr Macinka — veřejně uvedl nižší částku a odmítl, že by byl ideologem strany — Richard Chlad"
-description = "Petr Macinka — veřejně uvedl nižší částku a odmítl, že by byl ideologem strany — Richard Chlad. Vztah v grafu dossieru Richard Chlad, doložený tvrzeními CLM-04, CLM-06. Záznam vazby…"
+description = "Petr Macinka — veřejně uvedl nižší částku a odmítl, že by byl ideologem strany — Richard…. Vztah v grafu dossieru Richard Chlad. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 3
 

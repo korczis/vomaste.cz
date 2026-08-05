@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Petr Hladík — kritizoval rekonstrukci ministrovy kanceláře jako vyhazování veřejných peněz — Igor Červený"
-description = "Petr Hladík — kritizoval rekonstrukci ministrovy kanceláře jako vyhazování veřejných peněz — Igor Červený. Vztah v grafu dossieru Igor Červený, doložený tvrzeními CLM-15. Záznam vazby…"
+description = "Petr Hladík — kritizoval rekonstrukci ministrovy kanceláře jako vyhazování veřejných…. Vztah v grafu dossieru Igor Červený. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 16
 

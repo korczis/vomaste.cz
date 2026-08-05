@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Zdeněk Hřib — Hřib (Piráti) po vetu mluvil o zaraženém vládním účetním podvodu — Alena Schillerová"
-description = "Zdeněk Hřib — Hřib (Piráti) po vetu mluvil o zaraženém vládním účetním podvodu — Alena Schillerová. Vztah v grafu dossieru Alena Schillerová, doložený tvrzeními CLM-39. Záznam vazby…"
+description = "Zdeněk Hřib — Hřib (Piráti) po vetu mluvil o zaraženém vládním účetním podvodu — Alena…. Vztah v grafu dossieru Alena Schillerová. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 11
 

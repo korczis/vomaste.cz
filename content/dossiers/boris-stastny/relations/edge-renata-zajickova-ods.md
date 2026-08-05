@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Renáta Zajíčková — poslankyně za ODS — ODS"
-description = "Renáta Zajíčková — poslankyně za ODS — ODS. Vztah v grafu dossieru Boris Šťastný, doložený tvrzeními CLM-05, CLM-21. Záznam vazby, nikoli tvrzení o pochybení."
+description = "Renáta Zajíčková — poslankyně za ODS — ODS. Vztah v grafu dossieru Boris Šťastný. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 23
 

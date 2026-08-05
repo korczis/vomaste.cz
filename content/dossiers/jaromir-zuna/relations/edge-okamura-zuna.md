@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Tomio Okamura — předseda SPD Okamura odmítl spekulace o konci ministra Zůny — Jaromír Zůna"
-description = "Tomio Okamura — předseda SPD Okamura odmítl spekulace o konci ministra Zůny — Jaromír Zůna. Vztah v grafu dossieru Jaromír Zůna, doložený tvrzeními CLM-16. Záznam vazby, nikoli tvrzení…"
+description = "Tomio Okamura — předseda SPD Okamura odmítl spekulace o konci ministra Zůny — Jaromír Zůna. Vztah v grafu dossieru Jaromír Zůna. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 4
 

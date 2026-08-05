@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Miroslav Hlaváč — nahradil Řehku ve funkci náčelníka Generálního štábu — Karel Řehka"
-description = "Miroslav Hlaváč — nahradil Řehku ve funkci náčelníka Generálního štábu — Karel Řehka. Vztah v grafu dossieru Jaromír Zůna, doložený tvrzeními CLM-20, CLM-21. Záznam vazby, nikoli…"
+description = "Miroslav Hlaváč — nahradil Řehku ve funkci náčelníka Generálního štábu — Karel Řehka. Vztah v grafu dossieru Jaromír Zůna. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 9
 

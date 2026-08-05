@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Robert Špalek — Předseda ČKAIT Špalek varoval, že reforma nepovede k rychlejšímu povolování staveb — Novela stavebního zákona 2026 (sněmovní tisk 67)"
-description = "Robert Špalek — Předseda ČKAIT Špalek varoval, že reforma nepovede k rychlejšímu povolování staveb — Novela stavebního zákona 2026 (sněmovní tisk 67). Vztah v grafu dossieru Karel…"
+description = "Robert Špalek — Předseda ČKAIT Špalek varoval, že reforma nepovede k rychlejšímu…. Vztah v grafu dossieru Karel Havlíček. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 13
 

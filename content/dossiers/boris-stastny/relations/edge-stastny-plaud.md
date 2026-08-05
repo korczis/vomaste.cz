@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Boris Šťastný — nalezené nahrávací zařízení značky Plaud, ke kterému se přihlásil jako ke svému — Plaud"
-description = "Boris Šťastný — nalezené nahrávací zařízení značky Plaud, ke kterému se přihlásil jako ke svému — Plaud. Vztah v grafu dossieru Boris Šťastný, doložený tvrzeními CLM-07, CLM-12. Záznam…"
+description = "Boris Šťastný — nalezené nahrávací zařízení značky Plaud, ke kterému se přihlásil jako ke…. Vztah v grafu dossieru Boris Šťastný. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 13
 

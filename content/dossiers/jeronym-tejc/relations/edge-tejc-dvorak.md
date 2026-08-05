@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Jeroným Tejc — Tejc reagoval na interpelaci poslance Karla Dvořáka (STAN) k výrokům o Ústavním soudu — Karel Dvořák"
-description = "Jeroným Tejc — Tejc reagoval na interpelaci poslance Karla Dvořáka (STAN) k výrokům o Ústavním soudu — Karel Dvořák. Vztah v grafu dossieru Jeroným Tejc, doložený tvrzeními CLM-45…"
+description = "Jeroným Tejc — Tejc reagoval na interpelaci poslance Karla Dvořáka (STAN) k výrokům o…. Vztah v grafu dossieru Jeroným Tejc. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 10
 

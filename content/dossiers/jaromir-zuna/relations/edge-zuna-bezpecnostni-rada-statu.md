@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Jaromír Zůna — projednávání nové koncepce armády do roku 2040 na Bezpečnostní radě státu (červen–červenec 2026) — Bezpečnostní rada státu"
-description = "Jaromír Zůna — projednávání nové koncepce armády do roku 2040 na Bezpečnostní radě státu (červen–červenec 2026) — Bezpečnostní rada státu. Vztah v grafu dossieru Jaromír Zůna, doložený…"
+description = "Jaromír Zůna — projednávání nové koncepce armády do roku 2040 na Bezpečnostní radě státu…. Vztah v grafu dossieru Jaromír Zůna. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 19
 

@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Olga Richterová — Richterová (Piráti) reagovala na Havlíčkovo vystoupení tvrzením, že „evidentně ztrácí nervy“ — Karel Havlíček"
-description = "Olga Richterová — Richterová (Piráti) reagovala na Havlíčkovo vystoupení tvrzením, že „evidentně ztrácí nervy“ — Karel Havlíček. Vztah v grafu dossieru Karel Havlíček, doložený…"
+description = "Olga Richterová — Richterová (Piráti) reagovala na Havlíčkovo vystoupení tvrzením, že…. Vztah v grafu dossieru Karel Havlíček. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 10
 

@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Filip Turek — poslanec za — Motoristé sobě"
-description = "Filip Turek — poslanec za — Motoristé sobě. Vztah v grafu dossieru Petr Macinka a Filip Turek, doložený tvrzeními CLM-01. Záznam vazby, nikoli tvrzení o pochybení."
+description = "Filip Turek — poslanec za — Motoristé sobě. Vztah v grafu dossieru Petr Macinka a Filip Turek. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 2
 

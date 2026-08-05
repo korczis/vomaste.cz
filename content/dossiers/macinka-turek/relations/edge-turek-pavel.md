@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Filip Turek — hrozil žalobou (1/2026), nakonec nepodal (7/2026) — Petr Pavel (prezident)"
-description = "Filip Turek — hrozil žalobou (1/2026), nakonec nepodal (7/2026) — Petr Pavel (prezident). Vztah v grafu dossieru Petr Macinka a Filip Turek, doložený tvrzeními CLM-39, CLM-44. Záznam…"
+description = "Filip Turek — hrozil žalobou (1/2026), nakonec nepodal (7/2026) — Petr Pavel (prezident). Vztah v grafu dossieru Petr Macinka a Filip Turek. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 20
 

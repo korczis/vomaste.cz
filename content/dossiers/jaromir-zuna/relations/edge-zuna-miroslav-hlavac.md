@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Jaromír Zůna — jako jediný člen vlády hlasoval proti jeho jmenování, později ho na sněmovním výboru pro obranu podpořil — Miroslav Hlaváč"
-description = "Jaromír Zůna — jako jediný člen vlády hlasoval proti jeho jmenování, později ho na sněmovním výboru pro obranu podpořil — Miroslav Hlaváč. Vztah v grafu dossieru Jaromír Zůna, doložený…"
+description = "Jaromír Zůna — jako jediný člen vlády hlasoval proti jeho jmenování, později ho na…. Vztah v grafu dossieru Jaromír Zůna. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 6
 

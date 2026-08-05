@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Zuzana Mrázová — před nástupem do vlády místostarostka a starostka Bíliny — Město Bílina (městský úřad a stavební úřad)"
-description = "Zuzana Mrázová — před nástupem do vlády místostarostka a starostka Bíliny — Město Bílina (městský úřad a stavební úřad). Vztah v grafu dossieru Zuzana Mrázová, doložený tvrzeními…"
+description = "Zuzana Mrázová — před nástupem do vlády místostarostka a starostka Bíliny — Město Bílina…. Vztah v grafu dossieru Zuzana Mrázová. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 4
 

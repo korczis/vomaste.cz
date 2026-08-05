@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Boris Šťastný — na jeho návrh vláda odvolala vedení Národní sportovní agentury (16. 12. 2025) — Národní sportovní agentura (NSA)"
-description = "Boris Šťastný — na jeho návrh vláda odvolala vedení Národní sportovní agentury (16. 12. 2025) — Národní sportovní agentura (NSA). Vztah v grafu dossieru Boris Šťastný, doložený…"
+description = "Boris Šťastný — na jeho návrh vláda odvolala vedení Národní sportovní agentury (16. 12…. Vztah v grafu dossieru Boris Šťastný. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 5
 

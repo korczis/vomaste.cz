@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Vít Rakušan — Rakušan (STAN) po vetu uvedl, že si vláda chtěla otevřít cestu k obcházení dluhových pravidel — Alena Schillerová"
-description = "Vít Rakušan — Rakušan (STAN) po vetu uvedl, že si vláda chtěla otevřít cestu k obcházení dluhových pravidel — Alena Schillerová. Vztah v grafu dossieru Alena Schillerová, doložený…"
+description = "Vít Rakušan — Rakušan (STAN) po vetu uvedl, že si vláda chtěla otevřít cestu k obcházení…. Vztah v grafu dossieru Alena Schillerová. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 13
 

@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "BLAKEY FINANCE LIMITED (BVI) — úvěr na nákupy nemovitostí ve Francii — BOYNE HOLDING LLC (Washington, D.C.)"
-description = "BLAKEY FINANCE LIMITED (BVI) — úvěr na nákupy nemovitostí ve Francii — BOYNE HOLDING LLC (Washington, D.C.). Vztah v grafu dossieru Andrej Babiš, doložený tvrzeními CLM-31. Záznam…"
+description = "BLAKEY FINANCE LIMITED (BVI) — úvěr na nákupy nemovitostí ve Francii — BOYNE HOLDING LLC…. Vztah v grafu dossieru Andrej Babiš. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 13
 

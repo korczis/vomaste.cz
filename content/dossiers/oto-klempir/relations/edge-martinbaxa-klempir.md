@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Martin Baxa — bývalý ministr kultury (ODS) kritizoval zrušení výběrového řízení na ředitele NGP — Oto Klempíř"
-description = "Martin Baxa — bývalý ministr kultury (ODS) kritizoval zrušení výběrového řízení na ředitele NGP — Oto Klempíř. Vztah v grafu dossieru Oto Klempíř, doložený tvrzeními CLM-26. Záznam…"
+description = "Martin Baxa — bývalý ministr kultury (ODS) kritizoval zrušení výběrového řízení na…. Vztah v grafu dossieru Oto Klempíř. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 9
 

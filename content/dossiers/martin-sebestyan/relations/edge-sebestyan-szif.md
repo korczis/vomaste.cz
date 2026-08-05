@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Martin Šebestyán — bývalý ředitel (2013–2022) — Státní zemědělský intervenční fond (SZIF)"
-description = "Martin Šebestyán — bývalý ředitel (2013–2022) — Státní zemědělský intervenční fond (SZIF). Vztah v grafu dossieru Martin Šebestyán, doložený tvrzeními CLM-08, CLM-09, CLM-11. Záznam…"
+description = "Martin Šebestyán — bývalý ředitel (2013–2022) — Státní zemědělský intervenční fond (SZIF). Vztah v grafu dossieru Martin Šebestyán. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 2
 

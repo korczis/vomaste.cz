@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "AB private trust I a II — držely akcie Agrofertu (2017–2025) — Agrofert"
-description = "AB private trust I a II — držely akcie Agrofertu (2017–2025) — Agrofert. Vztah v grafu dossieru Andrej Babiš, doložený tvrzeními CLM-16. Záznam vazby, nikoli tvrzení o pochybení."
+description = "AB private trust I a II — držely akcie Agrofertu (2017–2025) — Agrofert. Vztah v grafu dossieru Andrej Babiš. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 22
 

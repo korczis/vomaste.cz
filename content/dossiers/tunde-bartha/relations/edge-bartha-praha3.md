@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Tünde Bartha — výpověď z nájmu obecního bytu (rozhodnutí rady, ne soudu) — Městská část Praha 3"
-description = "Tünde Bartha — výpověď z nájmu obecního bytu (rozhodnutí rady, ne soudu) — Městská část Praha 3. Vztah v grafu dossieru Tünde Bartha, doložený tvrzeními CLM-01, CLM-04. Záznam vazby…"
+description = "Tünde Bartha — výpověď z nájmu obecního bytu (rozhodnutí rady, ne soudu) — Městská část…. Vztah v grafu dossieru Tünde Bartha. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 7
 

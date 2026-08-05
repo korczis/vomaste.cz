@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Alena Schillerová — kritika souladu rozpočtu se zákonem o rozpočtové odpovědnosti — Národní rozpočtová rada"
-description = "Alena Schillerová — kritika souladu rozpočtu se zákonem o rozpočtové odpovědnosti — Národní rozpočtová rada. Vztah v grafu dossieru Alena Schillerová, doložený tvrzeními CLM-24…"
+description = "Alena Schillerová — kritika souladu rozpočtu se zákonem o rozpočtové odpovědnosti —…. Vztah v grafu dossieru Alena Schillerová. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 2
 

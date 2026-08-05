@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Filip Turek — veřejně uvedl, že jeho roli v podpoře strany zpravodajství přeceňuje — Richard Chlad"
-description = "Filip Turek — veřejně uvedl, že jeho roli v podpoře strany zpravodajství přeceňuje — Richard Chlad. Vztah v grafu dossieru Richard Chlad, doložený tvrzeními CLM-05. Záznam vazby…"
+description = "Filip Turek — veřejně uvedl, že jeho roli v podpoře strany zpravodajství přeceňuje —…. Vztah v grafu dossieru Richard Chlad. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 2
 

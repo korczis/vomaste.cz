@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Jeroným Tejc — Komise pro přezkum nepřirozených úmrtí dětí (návaznost na kauzu Viktorka) — Aleš Juchelka"
-description = "Jeroným Tejc — Komise pro přezkum nepřirozených úmrtí dětí (návaznost na kauzu Viktorka) — Aleš Juchelka. Vztah v grafu dossieru Jeroným Tejc, doložený tvrzeními CLM-39. Záznam vazby…"
+description = "Jeroným Tejc — Komise pro přezkum nepřirozených úmrtí dětí (návaznost na kauzu Viktorka)…. Vztah v grafu dossieru Jeroným Tejc. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 5
 

@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Hana Kordová Marvanová — Kordová Marvanová kritizovala Tejcem ohlášenou novelu po kauze Viktorky — Jeroným Tejc"
-description = "Hana Kordová Marvanová — Kordová Marvanová kritizovala Tejcem ohlášenou novelu po kauze Viktorky — Jeroným Tejc. Vztah v grafu dossieru Jeroným Tejc, doložený tvrzeními CLM-38. Záznam…"
+description = "Hana Kordová Marvanová — Kordová Marvanová kritizovala Tejcem ohlášenou novelu po kauze…. Vztah v grafu dossieru Jeroným Tejc. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 13
 

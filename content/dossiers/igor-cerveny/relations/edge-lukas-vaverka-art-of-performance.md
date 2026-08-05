@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Lukáš Vaverka — od roku 2007 pracoval v autodílně Art of Performance — Art of Performance"
-description = "Lukáš Vaverka — od roku 2007 pracoval v autodílně Art of Performance — Art of Performance. Vztah v grafu dossieru Igor Červený, doložený tvrzeními CLM-46. Záznam vazby, nikoli tvrzení…"
+description = "Lukáš Vaverka — od roku 2007 pracoval v autodílně Art of Performance — Art of Performance. Vztah v grafu dossieru Igor Červený. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 14
 

@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Jeroným Tejc — Tejc podal kárnou žalobu na soudkyni v kauze Viktorky — Kárná žaloba na soudkyni Okresního soudu v Benešově"
-description = "Jeroným Tejc — Tejc podal kárnou žalobu na soudkyni v kauze Viktorky — Kárná žaloba na soudkyni Okresního soudu v Benešově. Vztah v grafu dossieru Jeroným Tejc, doložený tvrzeními…"
+description = "Jeroným Tejc — Tejc podal kárnou žalobu na soudkyni v kauze Viktorky — Kárná žaloba na…. Vztah v grafu dossieru Jeroným Tejc. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 7
 

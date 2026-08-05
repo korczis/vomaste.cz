@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Petr Vencálek — jediný společník a jednatel — GMR GAS s.r.o. (Brno)"
-description = "Petr Vencálek (vlastník GMR GAS s.r.o.) — jediný společník a jednatel — GMR GAS s.r.o. (Brno). Vztah v grafu dossieru Petr Macinka a Filip Turek, doložený tvrzeními CLM-48. Záznam…"
+description = "Petr Vencálek (vlastník GMR GAS s.r.o.) — jediný společník a jednatel — GMR GAS s.r.o…. Vztah v grafu dossieru Petr Macinka a Filip Turek. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 33
 

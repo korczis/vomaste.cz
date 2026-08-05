@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Andrej Babiš — na summitu NATO v Ankaře oznámil navýšení obranného rozpočtu o 36 miliard korun a poprvé dosažení 2 % HDP — Summit NATO v Ankaře (7.–8. 7. 2026)"
-description = "Andrej Babiš — na summitu NATO v Ankaře oznámil navýšení obranného rozpočtu o 36 miliard korun a poprvé dosažení 2 % HDP — Summit NATO v Ankaře (7.–8. 7. 2026). Vztah v grafu dossieru…"
+description = "Andrej Babiš — na summitu NATO v Ankaře oznámil navýšení obranného rozpočtu o 36 miliard…. Vztah v grafu dossieru Jaromír Zůna. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 16
 

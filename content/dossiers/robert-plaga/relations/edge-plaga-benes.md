@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Robert Plaga — spor o plošný zákaz mobilů ve školách — reakce na dětského ombudsmana — Martin Beneš"
-description = "Robert Plaga — spor o plošný zákaz mobilů ve školách — reakce na dětského ombudsmana — Martin Beneš. Vztah v grafu dossieru Robert Plaga, doložený tvrzeními CLM-38, CLM-40. Záznam…"
+description = "Robert Plaga — spor o plošný zákaz mobilů ve školách — reakce na dětského ombudsmana —…. Vztah v grafu dossieru Robert Plaga. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 6
 

@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Agrofert — firma ze skupiny — Sady CZ"
-description = "Agrofert — firma ze skupiny — Sady CZ. Vztah v grafu dossieru Andrej Babiš, doložený tvrzeními CLM-65. Záznam vazby, nikoli tvrzení o pochybení."
+description = "Agrofert — firma ze skupiny — Sady CZ. Vztah v grafu dossieru Andrej Babiš. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 32
 

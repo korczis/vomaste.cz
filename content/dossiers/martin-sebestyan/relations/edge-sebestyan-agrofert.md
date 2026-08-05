@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Martin Šebestyán — ministerstvo zemědělství pod Šebestyánem nezahájilo vymáhání dotací od firem Agrofertu — Agrofert"
-description = "Martin Šebestyán — ministerstvo zemědělství pod Šebestyánem nezahájilo vymáhání dotací od firem Agrofertu — Agrofert. Vztah v grafu dossieru Martin Šebestyán, doložený tvrzeními…"
+description = "Martin Šebestyán — ministerstvo zemědělství pod Šebestyánem nezahájilo vymáhání dotací od…. Vztah v grafu dossieru Martin Šebestyán. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 3
 

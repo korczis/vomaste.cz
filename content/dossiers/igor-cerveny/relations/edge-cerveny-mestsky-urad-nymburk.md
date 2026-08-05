@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Igor Červený — přestupkové řízení kvůli neúplnému majetkovému přiznání; opravné oznámení a zaplacená pokuta 7 500 Kč (dosud nepotvrzeno jako pravomocně uzavřené) — Městský úřad Nymburk"
-description = "Igor Červený — přestupkové řízení kvůli neúplnému majetkovému přiznání; opravné oznámení a zaplacená pokuta 7 500 Kč (dosud nepotvrzeno jako pravomocně uzavřené) — Městský úřad…"
+description = "Igor Červený — přestupkové řízení kvůli neúplnému majetkovému přiznání; opravné oznámení…. Vztah v grafu dossieru Igor Červený. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 5
 

@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SynBiol — Komise sleduje střet zájmů i u SynBiolu a Hartenbergu — monitoring a pokyn, ne zjištění o porušení — Evropská komise"
-description = "SynBiol — Komise sleduje střet zájmů i u SynBiolu a Hartenbergu — monitoring a pokyn, ne zjištění o porušení — Evropská komise. Vztah v grafu dossieru Andrej Babiš, doložený tvrzeními…"
+description = "SynBiol — Komise sleduje střet zájmů i u SynBiolu a Hartenbergu — monitoring a pokyn, ne…. Vztah v grafu dossieru Andrej Babiš. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 17
 

@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Pekárna Zelená louka (skupina Agrofert) — NCOZ obvinila Pekárnu Zelená louka a dvě fyzické osoby z dotačního podvodu — Národní centrála proti organizovanému zločinu"
-description = "Pekárna Zelená louka (skupina Agrofert) — NCOZ obvinila Pekárnu Zelená louka a dvě fyzické osoby z dotačního podvodu — Národní centrála proti organizovanému zločinu. Vztah v grafu…"
+description = "Pekárna Zelená louka (skupina Agrofert) — NCOZ obvinila Pekárnu Zelená louka a dvě…. Vztah v grafu dossieru Karel Havlíček. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 18
 

@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Nehoda 2026 — vyšetřování (výsledek k datu poslední kontroly neuzavřen) — Policie ČR"
-description = "Nehoda 2026 — vyšetřování (výsledek k datu poslední kontroly neuzavřen) — Policie ČR. Vztah v grafu dossieru Petr Macinka a Filip Turek, doložený tvrzeními CLM-10, CLM-16, CLM-18…"
+description = "Nehoda 2026 — vyšetřování (výsledek k datu poslední kontroly neuzavřen) — Policie ČR. Vztah v grafu dossieru Petr Macinka a Filip Turek. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 24
 

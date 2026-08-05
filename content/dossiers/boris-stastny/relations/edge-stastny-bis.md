@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Boris Šťastný — BIS nález nahrávacího zařízení oficiálně neprověřovala, protože jí nebyl nahlášen — BIS (Bezpečnostní informační služba)"
-description = "Boris Šťastný — BIS nález nahrávacího zařízení oficiálně neprověřovala, protože jí nebyl nahlášen — BIS (Bezpečnostní informační služba). Vztah v grafu dossieru Boris Šťastný, doložený…"
+description = "Boris Šťastný — BIS nález nahrávacího zařízení oficiálně neprověřovala, protože jí nebyl…. Vztah v grafu dossieru Boris Šťastný. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 28
 

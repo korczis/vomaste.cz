@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SPD — Obvodní soud pro Prahu 1 shledal SPD vinným, uložil nepravomocný trest 3 mil. Kč — Obvodní soud pro Prahu 1"
-description = "SPD — Obvodní soud pro Prahu 1 shledal SPD vinným, uložil nepravomocný trest 3 mil. Kč — Obvodní soud pro Prahu 1. Vztah v grafu dossieru Tomio Okamura, doložený tvrzeními CLM-01…"
+description = "SPD — Obvodní soud pro Prahu 1 shledal SPD vinným, uložil nepravomocný trest 3 mil. Kč —…. Vztah v grafu dossieru Tomio Okamura. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 7
 

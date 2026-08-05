@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Zuzana Mrázová — kauza obecního bytu vedla k návrhu tzv. lex Mrázová — «Lex Mrázová» (návrh povinnosti přiznávat obecní byt)"
-description = "Zuzana Mrázová — kauza obecního bytu vedla k návrhu tzv. lex Mrázová — «Lex Mrázová» (návrh povinnosti přiznávat obecní byt). Vztah v grafu dossieru Zuzana Mrázová, doložený tvrzeními…"
+description = "Zuzana Mrázová — kauza obecního bytu vedla k návrhu tzv. lex Mrázová — «Lex Mrázová»…. Vztah v grafu dossieru Zuzana Mrázová. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 6
 

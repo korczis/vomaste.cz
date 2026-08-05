@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Plaud — prezentuje se jako americký startup se sídlem v Delaware, ale výrobcem je čínská Shenzhen Smart Connect Technology — Shenzhen Smart Connect Technology"
-description = "Plaud — prezentuje se jako americký startup se sídlem v Delaware, ale výrobcem je čínská Shenzhen Smart Connect Technology — Shenzhen Smart Connect Technology. Vztah v grafu dossieru…"
+description = "Plaud — prezentuje se jako americký startup se sídlem v Delaware, ale výrobcem je čínská…. Vztah v grafu dossieru Boris Šťastný. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 14
 

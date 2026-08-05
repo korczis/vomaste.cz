@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Adam Vojtěch — komentář: holding SynBiol získal z veřejného zdravotního pojištění téměř 3 miliardy Kč — SynBiol"
-description = "Adam Vojtěch — komentář: holding SynBiol získal z veřejného zdravotního pojištění téměř 3 miliardy Kč — SynBiol. Vztah v grafu dossieru Adam Vojtěch, doložený tvrzeními CLM-16. Záznam…"
+description = "Adam Vojtěch — komentář: holding SynBiol získal z veřejného zdravotního pojištění téměř 3…. Vztah v grafu dossieru Adam Vojtěch. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 5
 

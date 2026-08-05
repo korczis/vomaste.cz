@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Alena Schillerová — prezidentské veto novely rozpočtových zákonů (22. 7. 2026) — Petr Pavel (prezident)"
-description = "Alena Schillerová — prezidentské veto novely rozpočtových zákonů (22. 7. 2026) — Petr Pavel (prezident). Vztah v grafu dossieru Alena Schillerová, doložený tvrzeními CLM-17, CLM-18…"
+description = "Alena Schillerová — prezidentské veto novely rozpočtových zákonů (22. 7. 2026) — Petr…. Vztah v grafu dossieru Alena Schillerová. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 3
 

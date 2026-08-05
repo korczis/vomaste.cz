@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Aleš Juchelka — dalších 17,6 mil. Kč nevykázaných z Operačního programu Zaměstnanost plus — Operační program Zaměstnanost plus (OPZ+)"
-description = "Aleš Juchelka — dalších 17,6 mil. Kč nevykázaných z Operačního programu Zaměstnanost plus — Operační program Zaměstnanost plus (OPZ+). Vztah v grafu dossieru Aleš Juchelka, doložený…"
+description = "Aleš Juchelka — dalších 17,6 mil. Kč nevykázaných z Operačního programu Zaměstnanost plus…. Vztah v grafu dossieru Aleš Juchelka. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 8
 

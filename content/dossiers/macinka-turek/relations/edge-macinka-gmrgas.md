@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Petr Macinka — nepřiznaný 20% podíl — GMR GAS UA LLC (Kyjev)"
-description = "Petr Macinka — nepřiznaný 20% podíl — GMR GAS UA LLC (Kyjev). Vztah v grafu dossieru Petr Macinka a Filip Turek, doložený tvrzeními CLM-14. Záznam vazby, nikoli tvrzení o pochybení."
+description = "Petr Macinka — nepřiznaný 20% podíl — GMR GAS UA LLC (Kyjev). Vztah v grafu dossieru Petr Macinka a Filip Turek. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 13
 

@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Ivan Bednárik — rozpočet SFDI na rok 2026, který obhajoval, přidělil Ředitelství silnic a dálnic 81,1 miliardy korun — Ředitelství silnic a dálnic (ŘSD)"
-description = "Ivan Bednárik — rozpočet SFDI na rok 2026, který obhajoval, přidělil Ředitelství silnic a dálnic 81,1 miliardy korun — Ředitelství silnic a dálnic (ŘSD). Vztah v grafu dossieru Ivan…"
+description = "Ivan Bednárik — rozpočet SFDI na rok 2026, který obhajoval, přidělil Ředitelství silnic a…. Vztah v grafu dossieru Ivan Bednárik. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 18
 

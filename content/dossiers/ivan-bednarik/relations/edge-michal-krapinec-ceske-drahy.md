@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Michal Krapinec — generální ředitel Českých drah — České dráhy"
-description = "Michal Krapinec — generální ředitel Českých drah — České dráhy. Vztah v grafu dossieru Ivan Bednárik, doložený tvrzeními CLM-38. Záznam vazby, nikoli tvrzení o pochybení."
+description = "Michal Krapinec — generální ředitel Českých drah — České dráhy. Vztah v grafu dossieru Ivan Bednárik. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 10
 

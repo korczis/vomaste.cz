@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Martin Pavlík — 1. místopředseda spolku — Bydlíme v Králově Poli, z.s."
-description = "Martin Pavlík — 1. místopředseda spolku — Bydlíme v Králově Poli, z.s.. Vztah v grafu dossieru Martin Pavlík, doložený tvrzeními CLM-02. Záznam vazby, nikoli tvrzení o pochybení."
+description = "Martin Pavlík — 1. místopředseda spolku — Bydlíme v Králově Poli, z.s.. Vztah v grafu dossieru Martin Pavlík. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 4
 

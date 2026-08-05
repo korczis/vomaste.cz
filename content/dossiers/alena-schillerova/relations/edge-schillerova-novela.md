@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Alena Schillerová — Schillerová prosadila novelu rozpočtových zákonů, kterou obhajovala jako řešení rozpočtové pasti — Novela rozpočtových zákonů 2026 (sněmovní tisk č. 90)"
-description = "Alena Schillerová — Schillerová prosadila novelu rozpočtových zákonů, kterou obhajovala jako řešení rozpočtové pasti — Novela rozpočtových zákonů 2026 (sněmovní tisk č. 90). Vztah v…"
+description = "Alena Schillerová — Schillerová prosadila novelu rozpočtových zákonů, kterou obhajovala…. Vztah v grafu dossieru Alena Schillerová. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 6
 
