@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
   },
   "text": "Ministerstvo počítá s úhradou vyřazených projektů ze státního rozpočtu, konkrétní suma ani rozpočtová kapitola však upřesněny nebyly.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-12"

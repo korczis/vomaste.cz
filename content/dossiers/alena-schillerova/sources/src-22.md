@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-22 — Hospodářské noviny: Koaliční poslanci schválili kontroverzní rozpočtovou novelu, opozice se chce obrátit na Ústavní soud (15. 5. 2026)"
-description = "HN nezávisle na ČeskéNoviny.cz/ČTK (SRC-03) potvrzuje výjimku pro strategickou infrastrukturu, 10% bezpečnostní klauzuli a obcházení souhlasu Sněmovny."
+description = "HN otiskly text podepsaný ČTK k výjimce pro strategickou infrastrukturu, 10% bezpečnostní klauzuli a obcházení souhlasu Sněmovny — táž agenturní rodina jako SRC-03."
 template = "dossier-source.html"
 weight = 22
 
@@ -21,6 +21,7 @@ při zhoršení bezpečnostní situace; při změnách v rozpočtu kapitol můž
 ministerstvo financí novelu upravit po dohodě se správcem kapitoly bez
 nutného souhlasu Sněmovny.
 
-**Nezávislost**: samostatná redakce od ČeskéNoviny.cz/ČTK (SRC-03) —
-obě nezávisle potvrzují tytéž skutečnosti. Proto CLM-05 nese stav
-`CORROBORATED`.
+**Nezávislost**: Revize zdrojových rodin (2026-08-05) zjistila, že článek je
+v Hospodářských novinách podepsán ČTK — jde o tentýž agenturní text jako
+SRC-03, ne o samostatné redakční zjištění. Oba zdroje patří do rodiny
+`ctk`, CLM-05 proto nese stav `1 ZDROJ`.

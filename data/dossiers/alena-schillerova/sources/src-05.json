@@ -12,6 +12,7 @@
   "title": "SRC-05 — ČeskéNoviny.cz (ČTK)",
   "description": "Senát zpřísnil podmínky pro vládní zvyšování výdajů",
   "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://www.ceskenoviny.cz/zpravy/senat-zprisnil-podminky-pro-vladni-zvysovani-vydaju/2830447",
   "published": "2026-06-17",

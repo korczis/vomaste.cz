@@ -18,11 +18,12 @@ Zpravodajský článek k reakci předsedy vlády na rozsudek ze 4. 5. 2026.
 **Co dokládá:** doslovné výroky Andreje Babiše o rozsudku a o kauze jako
 celku, jeho hodnocení postupu odvolacího senátu a rekapitulaci, že jeho
 vlastní stíhání je po nevydání Sněmovnou přerušeno; článek zároveň uvádí
-uložený trest, takže slouží i jako druhý, nezávislý zdroj k samotnému
-výroku o vině.
+uložený trest.
 
-**Nezávislost:** Echo24 je samostatný vydavatel, nezávislý na České
-televizi (SRC-08) i na České justici (SRC-01, SRC-03).
+**Nezávislost:** Revize zdrojových rodin (2026-08-05): článek je na Echo24
+podepsán „Echo24, čtk" — sdílí agenturní základ s ČT24 (SRC-08), oba
+patří do rodiny `ctk`. Vztah k České justici (SRC-01, SRC-03) zůstává
+zatím neprověřen.
 
 **Limity:** obsahem zdroje jsou **výroky politika**, ne zjištění soudu
 nebo kontrolního orgánu. Doloženo je, že Babiš tyto věty pronesl —

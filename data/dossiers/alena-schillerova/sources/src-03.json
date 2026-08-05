@@ -12,6 +12,7 @@
   "title": "SRC-03 — ČeskéNoviny.cz (ČTK)",
   "description": "Novela rozpočtových zákonů: co mění, obhajoba ministryně a kritika opozice.",
   "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceFamily": "ctk",
   "sourceType": "agenturní zpravodajství",
   "url": "https://www.ceskenoviny.cz/zpravy/schillerova-cr-by-bez-zmeny-pravidel-pro-rozpocty-cekala-paralyza/2824577",
   "published": "2026-05-13",

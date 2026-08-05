@@ -12,6 +12,7 @@
   "title": "SRC-03 — ČeskéNoviny.cz (ČTK)",
   "description": "Audit podle Tejce odhalil chyby v bitcoinové kauze, podá trestní oznámení",
   "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://www.ceskenoviny.cz/zpravy/audit-podle-tejce-odhalil-chyby-v-bitcoinove-kauze-poda-trestni-oznameni/2813783",
   "published": "2026-04-17",

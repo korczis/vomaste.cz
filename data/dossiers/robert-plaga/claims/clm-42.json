@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
   },
   "text": "Předseda ODS Martin Kupka označil opatření za populistické a uvedl, že „plošné zákazy nevedou k tomu, aby děti byly odolnější“; ODS varovala před proměnou učitelů v kontrolory a navrhovala místo toho tablety s aplikacemi jen pro výuku.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-16"

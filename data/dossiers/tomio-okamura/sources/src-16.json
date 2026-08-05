@@ -12,6 +12,7 @@
   "title": "SRC-16 — ČT24 (Česká televize)",
   "description": "Státní zástupce podal obžalobu na Okamuru a SPD za podněcování k nenávisti",
   "outlet": "ČT24 (Česká televize)",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://ct24.ceskatelevize.cz/clanek/domaci/statni-zastupce-podal-obzalobu-na-okamuru-a-spd-za-podnecovani-k-nenavisti-363800",
   "published": "2025-08-07",

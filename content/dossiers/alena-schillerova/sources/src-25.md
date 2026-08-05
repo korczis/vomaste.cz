@@ -14,13 +14,13 @@ record_type = "source"
 lang = "cs"
 src_id = "SRC-25"
 +++
-Ekonomický deník, publikováno 1. 8. 2026, nezávisle na
-ČeskéNoviny.cz/ČTK (SRC-09) potvrzuje totéž jádro faktu: „Protože však
+Ekonomický deník, publikováno 1. 8. 2026, uvádí totéž jádro faktu jako
+ČeskéNoviny.cz/ČTK (SRC-09): „Protože však
 vláda chce přehlasovat prezidentské veto k novele rozpočtových zákonů,
 mimořádně zasednou už v úterý 25. srpna,“ „K tomu potřebují nejméně
 101 hlasů“ a „Vládní koalice má ve Sněmovně 108 poslanců.“
 
-**Nezávislost.** Jiný vydavatel (Ekonomický deník) než ČeskéNoviny.cz/
-ČTK — nezávislé potvrzení stejného data hlasování i stejných čísel
-(101 potřebných, 108 koaličních), nikoli jen převzatá agenturní
-zpráva.
+**Nezávislost.** Revize zdrojových rodin (2026-08-05): článek je
+v Ekonomickém deníku podepsán ČTK — jde o převzatou agenturní zprávu,
+ne o samostatné zjištění redakce. Se SRC-09 sdílí rodinu `ctk`, CLM-23
+proto nese stav `1 ZDROJ`.

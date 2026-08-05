@@ -12,6 +12,7 @@
   "title": "SRC-17 — ČeskéNoviny.cz (ČTK)",
   "description": "Státní zástupce žaluje Okamuru a SPD za podněcování k nenávisti",
   "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://www.ceskenoviny.cz/zpravy/statni-zastupce-zaluje-okamuru-a-spd-za-podnecovani-k-nenavisti/2701742",
   "published": "2025-08-07",

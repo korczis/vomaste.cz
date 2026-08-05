@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
   },
   "text": "V základní skutkové podstatě hrozil za žalovaný trestný čin trest do dvou let odnětí svobody, přičemž sazba se zvyšuje na šest měsíců až tři roky, je-li čin spáchán tiskem, filmem, rozhlasem, televizí nebo veřejně přístupnou počítačovou sítí.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-16"

@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
   },
   "text": "Ústřední školní inspektor Tomáš Zatloukal vyloučil, „že by měl kdokoliv přístup k tomu, aby znal identitu žáka a jeho odpovědi“.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-14"

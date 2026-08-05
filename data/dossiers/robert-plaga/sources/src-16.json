@@ -12,6 +12,7 @@
   "title": "SRC-16 — ČeskéNoviny.cz (ČTK)",
   "description": "Vláda podpořila zákaz používání mobilních telefonů ve školách",
   "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://www.ceskenoviny.cz/zpravy/2852409",
   "published": "2026-07-20",

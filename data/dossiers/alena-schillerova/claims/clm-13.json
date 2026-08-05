@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
   },
   "text": "Senát novelu 17. června 2026 po více než tříhodinové debatě vrátil Sněmovně s pozměňovacími návrhy: snížil limit pro vyjmuté infrastrukturní výdaje ze 2 % na 1 % HDP a podmínil navyšování výdajů souhlasem rozpočtového výboru.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-05"

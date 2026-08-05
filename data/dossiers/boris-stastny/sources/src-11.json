@@ -12,6 +12,7 @@
   "title": "SRC-11 — Deník.cz (VLTAVA LABE MEDIA)",
   "description": "Vláda odvolala předsedu NSA Šebka. Babiš: Udělal si z agentury cestovní kancelář",
   "outlet": "Deník.cz (VLTAVA LABE MEDIA)",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://www.denik.cz/ostatni_sport/predseda-nsa-ondrej-sebek-odvolan-vlada-ministr-boris-stastny-andrej-babis.html",
   "published": "2025-12-16",

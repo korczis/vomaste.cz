@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-27 — ČeskéNoviny.cz (ČTK): Výběrové řízení na ředitele Národní galerie Praha Klempíř zrušil, chce nové (2. 7. 2026)"
-description = "ČeskéNoviny.cz nezávisle na ČT24 (SRC-04) potvrzuje zrušení výběrového řízení na ředitele NGP, jména tří postupujících uchazečů a pověřenou ředitelku Kotkovou."
+description = "ČeskéNoviny.cz dokládají zrušení výběrového řízení na ředitele NGP, jména tří postupujících uchazečů a pověřenou ředitelku Kotkovou; ČT24 (SRC-04) nese tentýž agenturní text ČTK."
 template = "dossier-source.html"
 weight = 27
 
@@ -19,6 +19,6 @@ na generálního ředitele Národní galerie Praha, jmenuje tři postupující
 uchazeče (Marcel Fišer, Olga Kotková, Aleš Seifert) a uvádí, že Olga
 Kotková nadále vede galerii jako pověřená ředitelka.
 
-**Nezávislost**: samostatná redakce/agentura od ČT24 (SRC-04) — obě
-nezávisle potvrzují tutéž veřejnou skutečnost. Proto CLM-22 nese stav
-`CORROBORATED`.
+**Nezávislost**: Revize zdrojových rodin (2026-08-05): článek na ČT24
+(SRC-04) je podepsán ČTK — obě citace stojí na jednom agenturním základu
+(rodina `ctk`). CLM-22 proto nese stav `1 ZDROJ`.

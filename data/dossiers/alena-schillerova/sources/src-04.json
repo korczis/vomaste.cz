@@ -12,6 +12,7 @@
   "title": "SRC-04 — ČeskéNoviny.cz (ČTK)",
   "description": "Sněmovna schválila spornou novelu rozpočtových zákonů",
   "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://www.ceskenoviny.cz/zpravy/snemovna-schvalila-spornou-novelu-rozpoctovych-zakonu/2825582",
   "published": "2026-05-15",

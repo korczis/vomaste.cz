@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
   },
   "text": "Senát chtěl novelou omezit pravomoc ministerstva financí upravovat rozpočty nezávislých institucí, mezi něž patří Kancelář prezidenta republiky, Ústavní soud a veřejný ochránce práv.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-06"

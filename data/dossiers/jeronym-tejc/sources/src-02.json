@@ -12,6 +12,7 @@
   "title": "SRC-02 — Echo24",
   "description": "Ministr Tejc podal trestní oznámení kvůli auditu v bitcoinové kauze",
   "outlet": "Echo24",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://www.echo24.cz/a/HPFNG/zpravy-domov-tejc-podal-trestni-oznameni-kvuli-auditu-v-bitcoinove-kauze",
   "published": "2026-04-24",

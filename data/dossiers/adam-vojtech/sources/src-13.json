@@ -12,6 +12,7 @@
   "title": "SRC-13 — ČeskéNoviny.cz (ČTK)",
   "description": "Komise: Ve FN Olomouc byly některé defibrilátory voperovány bez splnění kritérií",
   "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://www.ceskenoviny.cz/zpravy/komise-ve-fn-olomouc-byly-nektere-defibrilatory-voperovany-bez-splneni-kriterii/2849657",
   "published": "2026-07-10",

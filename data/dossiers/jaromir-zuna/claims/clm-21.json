@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
   },
   "text": "Karel Řehka vedl armádu od července 2022 a jeho služba v armádě končí k 31. srpnu 2026; oficiální předání funkce proběhlo při slavnostním nástupu na Vítkově u příležitosti Dne ozbrojených sil.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-14"

@@ -15,12 +15,13 @@ record_type = "source"
 lang = "cs"
 src_id = "SRC-06"
 +++
-Přímá redakční zpráva ČT24 citující premiéra Andreje Babiše k Turkově
+Zpráva ČT24 podepsaná „ČTK, ČT24" citující premiéra Andreje Babiše k Turkově
 nehodě — konkrétně jeho podmínečné stanovisko ("pokud se záběry
 potvrdí..."), ne definitivní odsudek. Dossier proto formuluje CLM-12 stejně
 podmínečně, ne jako tvrzení, že Babiš už Turka jednoznačně odsoudil.
 
 Zdroj společně se SRC-08 (iRozhlas) potvrzuje totéž jádro události ze dvou
-samostatných redakcí — v poznámce k nezávislosti v hlavním dossieru je
-tato dvojice vedena jako dvě nezávislé redakční potvrzení, ne jedna
-zdrojová rodina.
+samostatných vydavatelů. Revize zdrojových rodin (2026-08-05) ale zjistila, že
+tento článek je podepsán i ČTK — patří proto do rodiny `ctk` a se
+SRC-07 (ČeskéNoviny.cz) tvoří jedno nezávislé doložení, ne dvě. CLM-11
+proto nese stav `1 ZDROJ`.

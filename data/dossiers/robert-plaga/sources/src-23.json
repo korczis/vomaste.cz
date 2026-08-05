@@ -12,6 +12,7 @@
   "title": "SRC-23 — ČeskéNoviny.cz (ČTK)",
   "description": "Plaga zastavil testování na ZŠ kvůli špatné komunikaci a technickým potížím",
   "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceFamily": "ctk",
   "sourceType": "zpravodajství",
   "url": "https://www.ceskenoviny.cz/zpravy/2829428",
   "published": "2026-05-25",

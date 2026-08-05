@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
   },
   "text": "Podle Tejcem prezentovaných závěrů interního auditu došlo k chybám jak před přijetím bitcoinového daru ministerstvem, tak při prodeji kryptoměny; snížením nejnižší možné ceny v aukcích stát podle ministra přišel přibližně o 13 milionů korun. Jde o tvrzení ministra opřené o interní audit, nikoli o zjištění orgánů činných v trestním řízení.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-02"

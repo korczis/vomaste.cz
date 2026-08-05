@@ -50,7 +50,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: tomio-okamura
 - Claims: CLM-15, CLM-16, CLM-20
-- Sources: SRC-03, SRC-06, SRC-07, SRC-14, SRC-15, SRC-26 (6 independent source families)
+- Sources: SRC-03, SRC-06, SRC-07, SRC-14, SRC-15, SRC-26 (3 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -285,7 +285,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: jaromir-zuna
 - Claims: CLM-04, CLM-11, CLM-20, CLM-21, CLM-26, CLM-51
-- Sources: SRC-02, SRC-07, SRC-14, SRC-15, SRC-21, SRC-22, SRC-30 (7 independent source families)
+- Sources: SRC-02, SRC-07, SRC-14, SRC-15, SRC-21, SRC-22, SRC-30 (6 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -400,7 +400,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: jeronym-tejc
 - Claims: CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07, CLM-19, CLM-20, CLM-21, CLM-22, CLM-23, CLM-24, CLM-25, CLM-26, CLM-27, CLM-28, CLM-29, CLM-30, CLM-31, CLM-32
-- Sources: SRC-02, SRC-03, SRC-04, SRC-11, SRC-12, SRC-13, SRC-14, SRC-15, SRC-16, SRC-26 (10 independent source families)
+- Sources: SRC-02, SRC-03, SRC-04, SRC-11, SRC-12, SRC-13, SRC-14, SRC-15, SRC-16, SRC-26 (8 independent source families)
 - Relations: 
   - edge-tejc-bitcoinova-kauza (tejc -> bitcoinova-kauza-ministerstva-spravedlnosti, "Tejcovo oznámení interního auditu otevřelo bitcoinovou kauzu resortu spravedlnosti", dossier: jeronym-tejc)
 - Missing: explicit owner authorization to promote this to its own dossier
@@ -562,7 +562,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: adam-vojtech
 - Claims: CLM-23
-- Sources: SRC-13, SRC-18 (2 independent source families)
+- Sources: SRC-13, SRC-18 (1 independent source family)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -572,7 +572,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: boris-stastny, robert-plaga
 - Claims: CLM-02, CLM-04, CLM-21, CLM-24
-- Sources: SRC-02, SRC-03, SRC-12, SRC-14, SRC-15, SRC-23 (6 independent source families)
+- Sources: SRC-02, SRC-03, SRC-12, SRC-14, SRC-15, SRC-23 (5 independent source families)
 - Relations: 
   - edge-plaga-csi (plaga -> ceska-skolni-inspekce, "nařídil zastavení testování 5./9. tříd organizovaného ČŠI (2026)", dossier: robert-plaga)
   - edge-zatloukal-csi (tomas-zatloukal -> ceska-skolni-inspekce, "ústřední školní inspektor", dossier: robert-plaga)
@@ -584,7 +584,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: oto-klempir
 - Claims: CLM-04, CLM-07, CLM-08, CLM-09, CLM-20
-- Sources: SRC-03, SRC-06, SRC-07, SRC-19, SRC-20, SRC-21, SRC-26 (7 independent source families)
+- Sources: SRC-03, SRC-06, SRC-07, SRC-19, SRC-20, SRC-21, SRC-26 (5 independent source families)
 - Relations: 
   - edge-klempir-ceskatelevize (klempir -> ceska-televize, "prosadil přesun financování ČT ze státního rozpočtu (2027)", dossier: oto-klempir)
 - Missing: explicit owner authorization to promote this to its own dossier
@@ -617,7 +617,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: oto-klempir
 - Claims: CLM-04, CLM-07, CLM-08, CLM-09, CLM-16, CLM-20
-- Sources: SRC-03, SRC-06, SRC-07, SRC-19, SRC-20, SRC-21, SRC-26 (7 independent source families)
+- Sources: SRC-03, SRC-06, SRC-07, SRC-19, SRC-20, SRC-21, SRC-26 (5 independent source families)
 - Relations: 
   - edge-klempir-ceskyrozhlas (klempir -> cesky-rozhlas, "prosadil přesun financování Českého rozhlasu ze státního rozpočtu (2027)", dossier: oto-klempir)
 - Missing: explicit owner authorization to promote this to its own dossier
@@ -649,7 +649,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: alena-schillerova, lubomir-metnar
 - Claims: CLM-02, CLM-08, CLM-26
-- Sources: SRC-01, SRC-02, SRC-03, SRC-04, SRC-05, SRC-16 (7 independent source families)
+- Sources: SRC-01, SRC-02, SRC-03, SRC-04, SRC-05, SRC-16 (5 independent source families)
 - Relations: 
   - edge-metnar-cnb (metnar -> cnb, "uvolněná policejní kapacita po zrušení ochrany NKÚ má nově chránit ČNB", dossier: lubomir-metnar)
 - Missing: explicit owner authorization to promote this to its own dossier
@@ -877,7 +877,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: jeronym-tejc
 - Claims: CLM-07, CLM-30, CLM-31, CLM-32
-- Sources: SRC-02, SRC-03, SRC-04, SRC-15, SRC-16 (5 independent source families)
+- Sources: SRC-02, SRC-03, SRC-04, SRC-15, SRC-16 (3 independent source families)
 - Relations: 
   - edge-decroix-tejc (eva-decroix -> tejc, "Decroix veřejně reagovala na Tejcovo trestní oznámení v bitcoinové kauze", dossier: jeronym-tejc)
 - Missing: explicit owner authorization to promote this to its own dossier
@@ -1058,7 +1058,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: boris-stastny
 - Claims: CLM-22
-- Sources: SRC-11, SRC-13 (2 independent source families)
+- Sources: SRC-11, SRC-13 (1 independent source family)
 - Relations: 
   - edge-stastny-frantisek-horak (stastny -> frantisek-horak, "na jeho návrh vláda odvolala i člena Rady Národní sportovní agentury Františka Horáka", dossier: boris-stastny)
 - Missing: explicit owner authorization to promote this to its own dossier
@@ -1109,7 +1109,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: jaromir-zuna
 - Claims: CLM-12, CLM-13, CLM-20, CLM-25, CLM-30, CLM-53
-- Sources: SRC-08, SRC-09, SRC-10, SRC-11, SRC-14, SRC-21, SRC-25, SRC-27, SRC-28 (9 independent source families)
+- Sources: SRC-08, SRC-09, SRC-10, SRC-11, SRC-14, SRC-21, SRC-25, SRC-27, SRC-28 (6 independent source families)
 - Relations: 
   - edge-karel-rehka-generalni-stab-acr (karel-rehka -> generalni-stab-acr, "vedl armádu od července 2022 do 31. srpna 2026", dossier: jaromir-zuna)
   - edge-miroslav-hlavac-generalni-stab-acr (miroslav-hlavac -> generalni-stab-acr, "náčelník Generálního štábu Armády ČR (od 1. 7. 2026)", dossier: jaromir-zuna)
@@ -1360,7 +1360,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: tomio-okamura
 - Claims: CLM-07, CLM-08, CLM-09, CLM-19
-- Sources: SRC-03, SRC-04, SRC-06, SRC-07, SRC-09, SRC-10, SRC-15 (7 independent source families)
+- Sources: SRC-03, SRC-04, SRC-06, SRC-07, SRC-09, SRC-10, SRC-15 (3 independent source families)
 - Relations: 
   - edge-okamura-ivanaticha (okamura -> ivana-ticha, "veřejná kritika samosoudkyně, která rozsudek nad SPD vynesla a odůvodnila", dossier: tomio-okamura)
 - Missing: explicit owner authorization to promote this to its own dossier
@@ -1444,7 +1444,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: tomio-okamura
 - Claims: CLM-21
-- Sources: SRC-16, SRC-17 (2 independent source families)
+- Sources: SRC-16, SRC-17 (1 independent source family)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -1506,7 +1506,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: andrej-babis
 - Claims: CLM-01, CLM-08, CLM-09, CLM-20, CLM-21, CLM-23, CLM-24, CLM-50, CLM-79, CLM-80
-- Sources: SRC-01, SRC-03, SRC-08, SRC-23, SRC-24, SRC-27, SRC-32, SRC-33, SRC-56, SRC-57 (6 independent source families)
+- Sources: SRC-01, SRC-03, SRC-08, SRC-23, SRC-24, SRC-27, SRC-32, SRC-33, SRC-56, SRC-57 (5 independent source families)
 - Relations: 
   - edge-babis-jananagyova (babis -> jana-nagyova, "spoluobžalovaná v kauze Čapí hnízdo; jeho stíhání je přerušené, její odvolání projednává Vrchní soud v Praze", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
@@ -1577,7 +1577,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: ales-juchelka
 - Claims: CLM-38
-- Sources: SRC-10, SRC-11 (2 independent source families)
+- Sources: SRC-10, SRC-11 (1 independent source family)
 - Relations: 
   - edge-havranek-juchelka (jiri-havranek -> juchelka, "poslanec Havránek (ODS) postavil Juchelku před alternativu trestního oznámení nebo rezignace", dossier: ales-juchelka)
 - Missing: explicit owner authorization to promote this to its own dossier
@@ -1722,7 +1722,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: alena-schillerova, jaromir-zuna
 - Claims: CLM-14, CLM-20
-- Sources: SRC-06, SRC-10 (2 independent source families)
+- Sources: SRC-06, SRC-10 (3 independent source families)
 - Relations: 
   - edge-schillerova-kancelar (schillerova -> kancelar-prezidenta-republiky, "Schillerová označila veto za názorový veletoč Kanceláře prezidenta republiky", dossier: alena-schillerova)
 - Missing: explicit owner authorization to promote this to its own dossier
@@ -1776,7 +1776,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: jaromir-zuna
 - Claims: CLM-13, CLM-20, CLM-21, CLM-28, CLM-53
-- Sources: SRC-09, SRC-10, SRC-14, SRC-21, SRC-22, SRC-27, SRC-28 (7 independent source families)
+- Sources: SRC-09, SRC-10, SRC-14, SRC-21, SRC-22, SRC-27, SRC-28 (4 independent source families)
 - Relations: 
   - edge-karel-rehka-generalni-stab-acr (karel-rehka -> generalni-stab-acr, "vedl armádu od července 2022 do 31. srpna 2026", dossier: jaromir-zuna)
   - edge-miroslav-hlavac-karel-rehka (miroslav-hlavac -> karel-rehka, "nahradil Řehku ve funkci náčelníka Generálního štábu", dossier: jaromir-zuna)
@@ -1902,7 +1902,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: oto-klempir
 - Claims: CLM-03, CLM-04, CLM-06, CLM-07, CLM-08, CLM-09, CLM-10, CLM-11, CLM-12, CLM-13, CLM-14, CLM-15, CLM-16, CLM-17, CLM-18, CLM-19, CLM-20, CLM-21
-- Sources: SRC-02, SRC-03, SRC-06, SRC-07, SRC-13, SRC-14, SRC-19, SRC-20, SRC-21, SRC-26 (10 independent source families)
+- Sources: SRC-02, SRC-03, SRC-06, SRC-07, SRC-13, SRC-14, SRC-19, SRC-20, SRC-21, SRC-26 (8 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -1932,7 +1932,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: boris-stastny
 - Claims: CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07, CLM-08, CLM-09, CLM-10, CLM-11, CLM-12, CLM-13, CLM-14, CLM-15, CLM-16, CLM-17, CLM-18, CLM-19, CLM-20, CLM-21
-- Sources: SRC-02, SRC-03, SRC-04, SRC-05, SRC-06, SRC-07, SRC-08, SRC-09, SRC-10 (9 independent source families)
+- Sources: SRC-02, SRC-03, SRC-04, SRC-05, SRC-06, SRC-07, SRC-08, SRC-09, SRC-10 (5 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -1942,7 +1942,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: jaromir-zuna
 - Claims: CLM-08, CLM-09, CLM-10, CLM-11, CLM-12, CLM-29, CLM-30, CLM-31
-- Sources: SRC-06, SRC-07, SRC-08, SRC-21, SRC-27 (5 independent source families)
+- Sources: SRC-06, SRC-07, SRC-08, SRC-21, SRC-27 (4 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -1952,7 +1952,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: oto-klempir
 - Claims: CLM-05, CLM-22, CLM-23, CLM-24, CLM-25, CLM-26, CLM-27, CLM-28, CLM-29
-- Sources: SRC-02, SRC-04, SRC-08, SRC-09, SRC-27 (5 independent source families)
+- Sources: SRC-02, SRC-04, SRC-08, SRC-09, SRC-27 (4 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -1972,7 +1972,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: tomio-okamura
 - Claims: CLM-01, CLM-02, CLM-10, CLM-21, CLM-23, CLM-25, CLM-28, CLM-30
-- Sources: SRC-01, SRC-02, SRC-03, SRC-04, SRC-16, SRC-17, SRC-18, SRC-19, SRC-20, SRC-21, SRC-22, SRC-27 (12 independent source families)
+- Sources: SRC-01, SRC-02, SRC-03, SRC-04, SRC-16, SRC-17, SRC-18, SRC-19, SRC-20, SRC-21, SRC-22, SRC-27 (8 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -1992,7 +1992,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: ales-juchelka
 - Claims: CLM-02, CLM-03, CLM-06, CLM-08, CLM-09, CLM-11, CLM-35
-- Sources: SRC-02, SRC-03, SRC-04, SRC-10, SRC-11, SRC-12 (6 independent source families)
+- Sources: SRC-02, SRC-03, SRC-04, SRC-10, SRC-11, SRC-12 (4 independent source families)
 - Relations: 
   - edge-juchelka-kauza-semancova (juchelka -> kauza-stret-zajmu-semancova, "reportovaný střet zájmů poradkyně, kterou si Juchelka vybral, na jeho ministerstvu", dossier: ales-juchelka)
 - Missing: explicit owner authorization to promote this to its own dossier
@@ -2003,7 +2003,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: robert-plaga
 - Claims: CLM-02, CLM-05, CLM-06, CLM-20, CLM-24, CLM-26
-- Sources: SRC-02, SRC-03, SRC-04, SRC-12, SRC-13, SRC-14, SRC-23 (7 independent source families)
+- Sources: SRC-02, SRC-03, SRC-04, SRC-12, SRC-13, SRC-14, SRC-23 (5 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -2068,7 +2068,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: boris-stastny, jaromir-zuna, karel-havlicek, oto-klempir
 - Claims: CLM-09, CLM-17, CLM-32, CLM-34, CLM-39
-- Sources: SRC-18, SRC-23 (2 independent source families)
+- Sources: SRC-18, SRC-23 (3 independent source families)
 - Relations: 
   - edge-tomas-zdechovsky-kdu-csl (tomas-zdechovsky -> kdu-csl, "europoslanec za KDU-ČSL", dossier: boris-stastny)
 - Missing: explicit owner authorization to promote this to its own dossier
@@ -2147,7 +2147,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: ales-juchelka
 - Claims: CLM-14, CLM-42, CLM-43, CLM-44
-- Sources: SRC-09, SRC-11, SRC-14 (3 independent source families)
+- Sources: SRC-09, SRC-11, SRC-14 (2 independent source families)
 - Relations: 
   - edge-juchelka-kontrolanku (juchelka -> kontrola-nku-mpsv, "ministerstvo pod jeho vedením je předmětem správní kontroly NKÚ", dossier: ales-juchelka)
 - Missing: explicit owner authorization to promote this to its own dossier
@@ -2458,7 +2458,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: jeronym-tejc, robert-plaga
 - Claims: CLM-38, CLM-39, CLM-40, CLM-41
-- Sources: SRC-15, SRC-16, SRC-18, SRC-19, SRC-20 (5 independent source families)
+- Sources: SRC-15, SRC-16, SRC-18, SRC-19, SRC-20 (6 independent source families)
 - Relations: 
   - edge-benes-komise (martin-benes -> komise-pro-prezkum-neprirozenych-umrti-deti, "Dětský ombudsman Martin Beneš je členem Komise pro přezkum nepřirozených úmrtí dětí", dossier: jeronym-tejc)
   - edge-plaga-benes (plaga -> martin-benes, "spor o plošný zákaz mobilů ve školách — reakce na dětského ombudsmana", dossier: robert-plaga)
@@ -2579,7 +2579,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: zuzana-mrazova
 - Claims: CLM-09, CLM-27, CLM-30, CLM-33, CLM-36, CLM-40, CLM-42
-- Sources: SRC-05, SRC-06, SRC-11, SRC-15, SRC-16, SRC-21, SRC-22, SRC-25, SRC-26, SRC-28, SRC-29 (10 independent source families)
+- Sources: SRC-05, SRC-06, SRC-11, SRC-15, SRC-16, SRC-21, SRC-22, SRC-25, SRC-26, SRC-28, SRC-29 (9 independent source families)
 - Relations: 
   - edge-mrazova-mestobilina (mrazova -> mesto-bilina, "před nástupem do vlády místostarostka a starostka Bíliny", dossier: zuzana-mrazova)
 - Missing: explicit owner authorization to promote this to its own dossier
@@ -2600,7 +2600,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: andrej-babis, karel-havlicek
 - Claims: CLM-01, CLM-08, CLM-20, CLM-50, CLM-62, CLM-63, CLM-64, CLM-66, CLM-80
-- Sources: SRC-01, SRC-03, SRC-08, SRC-12, SRC-23, SRC-24, SRC-41, SRC-42, SRC-43, SRC-47, SRC-57 (12 independent source families)
+- Sources: SRC-01, SRC-03, SRC-08, SRC-12, SRC-23, SRC-24, SRC-41, SRC-42, SRC-43, SRC-47, SRC-57 (11 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -2632,7 +2632,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: adam-vojtech, zuzana-mrazova
 - Claims: CLM-14, CLM-41, CLM-49
-- Sources: SRC-08, SRC-18, SRC-22, SRC-29 (5 independent source families)
+- Sources: SRC-08, SRC-18, SRC-22, SRC-29 (4 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -2744,7 +2744,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: adam-vojtech
 - Claims: CLM-27, CLM-28, CLM-32
-- Sources: SRC-13, SRC-17, SRC-18, SRC-19 (4 independent source families)
+- Sources: SRC-13, SRC-17, SRC-18, SRC-19 (3 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -2802,7 +2802,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: oto-klempir
 - Claims: CLM-13, CLM-21, CLM-22, CLM-28, CLM-32, CLM-34, CLM-40
-- Sources: SRC-04, SRC-22, SRC-23, SRC-24, SRC-25 (5 independent source families)
+- Sources: SRC-04, SRC-22, SRC-23, SRC-24, SRC-25 (3 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -2812,7 +2812,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: alena-schillerova, jaromir-zuna
 - Claims: CLM-08, CLM-10, CLM-12, CLM-26, CLM-27, CLM-30, CLM-31, CLM-41, CLM-44, CLM-45
-- Sources: SRC-06, SRC-07, SRC-08, SRC-15, SRC-16, SRC-23, SRC-24, SRC-27 (8 independent source families)
+- Sources: SRC-06, SRC-07, SRC-08, SRC-15, SRC-16, SRC-23, SRC-24, SRC-27 (9 independent source families)
 - Relations: 
   - edge-zuna-ministerstvo-obrany (zuna -> ministerstvo-obrany, "Zůna stojí v čele Ministerstva obrany ČR", dossier: jaromir-zuna)
 - Missing: explicit owner authorization to promote this to its own dossier
@@ -2823,7 +2823,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: ales-juchelka, jeronym-tejc
 - Claims: CLM-09, CLM-10, CLM-11, CLM-12, CLM-15, CLM-16, CLM-23, CLM-33, CLM-34, CLM-36, CLM-37, CLM-39, CLM-42
-- Sources: SRC-02, SRC-04, SRC-05, SRC-06, SRC-07, SRC-10, SRC-11, SRC-12, SRC-14, SRC-15, SRC-20, SRC-24 (12 independent source families)
+- Sources: SRC-02, SRC-04, SRC-05, SRC-06, SRC-07, SRC-10, SRC-11, SRC-12, SRC-14, SRC-15, SRC-20, SRC-24 (13 independent source families)
 - Relations: 
   - edge-juchelka-mpsv (juchelka -> ministerstvo-prace-a-socialnich-veci, "Juchelka stojí v čele Ministerstva práce a sociálních věcí", dossier: ales-juchelka)
 - Missing: explicit owner authorization to promote this to its own dossier
@@ -2844,7 +2844,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: igor-cerveny, jeronym-tejc, zuzana-mrazova
 - Claims: CLM-02, CLM-05, CLM-18, CLM-20, CLM-21, CLM-23, CLM-24, CLM-27, CLM-34
-- Sources: SRC-02, SRC-03, SRC-07, SRC-12, SRC-13, SRC-14, SRC-15, SRC-17, SRC-20, SRC-26, SRC-27 (12 independent source families)
+- Sources: SRC-02, SRC-03, SRC-07, SRC-12, SRC-13, SRC-14, SRC-15, SRC-17, SRC-20, SRC-26, SRC-27 (13 independent source families)
 - Relations: 
   - edge-cerveny-ministerstvo-spravedlnosti (cerveny -> ministerstvo-spravedlnosti, "obsahová kontrola majetkového přiznání a postoupení věci přestupkovému orgánu v Nymburce", dossier: igor-cerveny)
   - edge-mrazova-ministerstvospravedlnosti (mrazova -> ministerstvo-spravedlnosti, "resort spravedlnosti podal přestupkovému úřadu podnět k prověření majetkového přiznání", dossier: zuzana-mrazova)
@@ -2856,7 +2856,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: lubomir-metnar, tomio-okamura
 - Claims: CLM-01, CLM-04, CLM-06, CLM-15, CLM-16, CLM-17
-- Sources: SRC-01, SRC-02, SRC-03, SRC-04, SRC-05 (6 independent source families)
+- Sources: SRC-01, SRC-02, SRC-03, SRC-04, SRC-05 (5 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -2876,7 +2876,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: igor-cerveny, macinka-turek
 - Claims: CLM-11, CLM-24, CLM-36, CLM-38, CLM-40, CLM-43, CLM-47, CLM-49, CLM-52
-- Sources: SRC-07, SRC-18, SRC-20, SRC-27, SRC-29, SRC-30, SRC-31, SRC-33, SRC-34, SRC-44, SRC-45, SRC-49, SRC-50 (13 independent source families)
+- Sources: SRC-07, SRC-18, SRC-20, SRC-27, SRC-29, SRC-30, SRC-31, SRC-33, SRC-34, SRC-44, SRC-45, SRC-49, SRC-50 (14 independent source families)
 - Relations: 
   - edge-cerveny-ministerstvo-zivotniho-prostredi (cerveny -> ministerstvo-zivotniho-prostredi, "vedení resortu při systemizaci, která zrušila 38 míst a zanikající oddělení (2026)", dossier: igor-cerveny)
   - edge-ministerstvo-zivotniho-prostredi-lukas-vaverka (ministerstvo-zivotniho-prostredi -> lukas-vaverka, "vedoucí nového oddělení klimatické politiky a Green Dealu (od 1. 4. 2026)", dossier: igor-cerveny)
@@ -2889,7 +2889,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: jaromir-zuna
 - Claims: CLM-13, CLM-14, CLM-16, CLM-20, CLM-25, CLM-26, CLM-27, CLM-29
-- Sources: SRC-09, SRC-10, SRC-11, SRC-14, SRC-21, SRC-25, SRC-27, SRC-28 (8 independent source families)
+- Sources: SRC-09, SRC-10, SRC-11, SRC-14, SRC-21, SRC-25, SRC-27, SRC-28 (5 independent source families)
 - Relations: 
   - edge-miroslav-hlavac-generalni-stab-acr (miroslav-hlavac -> generalni-stab-acr, "náčelník Generálního štábu Armády ČR (od 1. 7. 2026)", dossier: jaromir-zuna)
   - edge-miroslav-hlavac-karel-rehka (miroslav-hlavac -> karel-rehka, "nahradil Řehku ve funkci náčelníka Generálního štábu", dossier: jaromir-zuna)
@@ -2956,7 +2956,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: andrej-babis
 - Claims: CLM-68
-- Sources: SRC-46, SRC-47 (2 independent source families)
+- Sources: SRC-46, SRC-47 (1 independent source family)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -3049,7 +3049,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: oto-klempir
 - Claims: CLM-05, CLM-22, CLM-23, CLM-25, CLM-27, CLM-28, CLM-29
-- Sources: SRC-02, SRC-04, SRC-08, SRC-09, SRC-27 (5 independent source families)
+- Sources: SRC-02, SRC-04, SRC-08, SRC-09, SRC-27 (4 independent source families)
 - Relations: 
   - edge-klempir-narodnigalerie (klempir -> narodni-galerie-praha, "zrušil výběrové řízení na ředitele a odvolal generální ředitelku NGP", dossier: oto-klempir)
 - Missing: explicit owner authorization to promote this to its own dossier
@@ -3093,7 +3093,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: boris-stastny
 - Claims: CLM-22, CLM-24, CLM-27, CLM-30
-- Sources: SRC-11, SRC-12, SRC-13, SRC-14, SRC-15 (5 independent source families)
+- Sources: SRC-11, SRC-12, SRC-13, SRC-14, SRC-15 (3 independent source families)
 - Relations: 
   - edge-ivo-jebousek-narodni-sportovni-agentura (ivo-jebousek -> narodni-sportovni-agentura, "pověřen vedením Národní sportovní agentury po odvolání Šebka", dossier: boris-stastny)
   - edge-karel-kovar-narodni-sportovni-agentura (karel-kovar -> narodni-sportovni-agentura, "jmenován předsedou Národní sportovní agentury (26. 1. 2026)", dossier: boris-stastny)
@@ -3106,7 +3106,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: robert-plaga
 - Claims: CLM-37, CLM-43
-- Sources: SRC-16, SRC-19, SRC-27, SRC-30 (4 independent source families)
+- Sources: SRC-16, SRC-19, SRC-27, SRC-30 (2 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -3126,7 +3126,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: alena-schillerova, jaromir-zuna, jeronym-tejc
 - Claims: CLM-06, CLM-14, CLM-23, CLM-27, CLM-39, CLM-41, CLM-42, CLM-46, CLM-53
-- Sources: SRC-05, SRC-08, SRC-09, SRC-10, SRC-15, SRC-17, SRC-20, SRC-21, SRC-31, SRC-33 (10 independent source families)
+- Sources: SRC-05, SRC-08, SRC-09, SRC-10, SRC-15, SRC-17, SRC-20, SRC-21, SRC-31, SRC-33 (9 independent source families)
 - Relations: 
   - edge-zuna-nato (zuna -> nato, "na jednání ministrů obrany NATO v Bruselu se vyjádřil k plnění dvouprocentního závazku", dossier: jaromir-zuna)
 - Missing: explicit owner authorization to promote this to its own dossier
@@ -3137,7 +3137,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: andrej-babis
 - Claims: CLM-68
-- Sources: SRC-46, SRC-47 (2 independent source families)
+- Sources: SRC-46, SRC-47 (1 independent source family)
 - Relations: 
   - edge-agrofert-navos (agrofert -> navos-farm-technic, "firma ze skupiny", dossier: andrej-babis)
   - edge-navos-nss (navos-farm-technic -> nss, "NSS 12/2025: zákaz kvůli střetu zájmů platí i pro zakázky malého rozsahu — správní výklad, ne trestní odpovědnost", dossier: andrej-babis)
@@ -3253,7 +3253,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: alena-schillerova, lubomir-metnar
 - Claims: CLM-05, CLM-08, CLM-09, CLM-13, CLM-15, CLM-17, CLM-18, CLM-23, CLM-25, CLM-30
-- Sources: SRC-03, SRC-04, SRC-05, SRC-06, SRC-07, SRC-08, SRC-09, SRC-19, SRC-20, SRC-21, SRC-22 (13 independent source families)
+- Sources: SRC-03, SRC-04, SRC-05, SRC-06, SRC-07, SRC-08, SRC-09, SRC-19, SRC-20, SRC-21, SRC-22 (9 independent source families)
 - Relations: 
   - edge-cvf-novela (centrum-verejnych-financi -> novela-rozpoctovych-pravidel-2026, "Centrum veřejných financí UK označilo konkrétní pozměňovací návrhy novely za problematické", dossier: alena-schillerova)
   - edge-schillerova-novela (schillerova -> novela-rozpoctovych-pravidel-2026, "Schillerová prosadila novelu rozpočtových zákonů, kterou obhajovala jako řešení rozpočtové pasti", dossier: alena-schillerova)
@@ -3268,7 +3268,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: robert-plaga
 - Claims: CLM-12, CLM-13, CLM-14, CLM-30, CLM-31, CLM-32, CLM-33
-- Sources: SRC-06, SRC-07, SRC-08, SRC-16, SRC-24, SRC-32 (6 independent source families)
+- Sources: SRC-06, SRC-07, SRC-08, SRC-16, SRC-24, SRC-32 (5 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -3331,7 +3331,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: tomio-okamura
 - Claims: CLM-01, CLM-07, CLM-21, CLM-30, CLM-31
-- Sources: SRC-01, SRC-02, SRC-03, SRC-04, SRC-16, SRC-17, SRC-21, SRC-22 (8 independent source families)
+- Sources: SRC-01, SRC-02, SRC-03, SRC-04, SRC-16, SRC-17, SRC-21, SRC-22 (4 independent source families)
 - Relations: 
   - edge-okamura-obvodnisoudpraha1 (okamura -> obvodni-soud-praha-1, "trestní stíhání přerušeno pro nevydání Sněmovnou, věc vyloučena k samostatnému projednání", dossier: tomio-okamura)
   - edge-spd-obvodnisoudpraha1 (spd -> obvodni-soud-praha-1, "Obvodní soud pro Prahu 1 shledal SPD vinným, uložil nepravomocný trest 3 mil. Kč", dossier: tomio-okamura)
@@ -3343,7 +3343,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: tomio-okamura
 - Claims: CLM-21
-- Sources: SRC-16, SRC-17 (2 independent source families)
+- Sources: SRC-16, SRC-17 (1 independent source family)
 - Relations: 
   - edge-okamura-obvodnistatnizastupitelstvipraha1 (okamura -> obvodni-statni-zastupitelstvi-praha-1, "obžalobu na Okamuru a SPD podal šéf Obvodního státního zastupitelství pro Prahu 1", dossier: tomio-okamura)
 - Missing: explicit owner authorization to promote this to its own dossier
@@ -3378,7 +3378,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: boris-stastny
 - Claims: CLM-22, CLM-23, CLM-24, CLM-25, CLM-26, CLM-27, CLM-28, CLM-29, CLM-30, CLM-31
-- Sources: SRC-11, SRC-12, SRC-13, SRC-14, SRC-15 (5 independent source families)
+- Sources: SRC-11, SRC-12, SRC-13, SRC-14, SRC-15 (3 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -3429,7 +3429,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: oto-klempir
 - Claims: CLM-24, CLM-25
-- Sources: SRC-04, SRC-27 (2 independent source families)
+- Sources: SRC-04, SRC-27 (1 independent source family)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -3439,7 +3439,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: alena-schillerova, karel-havlicek, zuzana-mrazova
 - Claims: CLM-07, CLM-32, CLM-51, CLM-52, CLM-53, CLM-54
-- Sources: SRC-03, SRC-18, SRC-19, SRC-24 (4 independent source families)
+- Sources: SRC-03, SRC-18, SRC-19, SRC-24 (5 independent source families)
 - Relations: 
   - edge-richterova-schillerova (olga-richterova -> schillerova, "Richterová (Piráti) uvedla, že novela může vést ke „kolapsu státu“", dossier: alena-schillerova)
   - edge-richterova-havlicek (olga-richterova -> havlicek, "Richterová (Piráti) reagovala na Havlíčkovo vystoupení tvrzením, že „evidentně ztrácí nervy“", dossier: karel-havlicek)
@@ -3461,7 +3461,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: boris-stastny
 - Claims: CLM-22, CLM-24, CLM-28, CLM-29
-- Sources: SRC-11, SRC-12, SRC-13 (3 independent source families)
+- Sources: SRC-11, SRC-12, SRC-13 (1 independent source family)
 - Relations: 
   - edge-ondrej-sebek-stastny (ondrej-sebek -> stastny, "odvolání označil za překvapivé a účelové, své zahraniční cesty i střet zájmů poradního orgánu hájil", dossier: boris-stastny)
   - edge-stastny-ondrej-sebek (stastny -> ondrej-sebek, "na jeho návrh vláda odvolala předsedu Národní sportovní agentury Ondřeje Šebka", dossier: boris-stastny)
@@ -3473,7 +3473,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: ales-juchelka
 - Claims: CLM-11, CLM-31, CLM-46
-- Sources: SRC-10, SRC-11, SRC-12, SRC-19, SRC-27 (5 independent source families)
+- Sources: SRC-10, SRC-11, SRC-12, SRC-19, SRC-27 (3 independent source families)
 - Relations: 
   - edge-juchelka-opzplus (juchelka -> operacni-program-zamestnanost-plus, "dalších 17,6 mil. Kč nevykázaných z Operačního programu Zaměstnanost plus", dossier: ales-juchelka)
 - Missing: explicit owner authorization to promote this to its own dossier
@@ -3514,7 +3514,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: oto-klempir
 - Claims: CLM-40, CLM-41, CLM-42
-- Sources: SRC-22, SRC-23 (2 independent source families)
+- Sources: SRC-22, SRC-23 (1 independent source family)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -3545,7 +3545,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: jeronym-tejc
 - Claims: CLM-07, CLM-19, CLM-24, CLM-29
-- Sources: SRC-02, SRC-03, SRC-04, SRC-11, SRC-12, SRC-13, SRC-14, SRC-15 (8 independent source families)
+- Sources: SRC-02, SRC-03, SRC-04, SRC-11, SRC-12, SRC-13, SRC-14, SRC-15 (6 independent source families)
 - Relations: 
   - edge-blazek-tejc (pavel-blazek -> tejc, "Blažek se v bitcoinové kauze, kterou otevřelo Tejcovo trestní oznámení, cítí nevinný", dossier: jeronym-tejc)
 - Missing: explicit owner authorization to promote this to its own dossier
@@ -3618,7 +3618,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: ales-juchelka
 - Claims: CLM-13, CLM-40
-- Sources: SRC-08, SRC-09, SRC-11, SRC-14 (4 independent source families)
+- Sources: SRC-08, SRC-09, SRC-11, SRC-14 (2 independent source families)
 - Relations: 
   - edge-vankova-trestnioznameni (pavla-pivonka-vankova -> trestni-oznameni-stan-mpsv, "Pivoňka Vaňková (STAN) podala trestní oznámení kvůli střetu zájmů na MPSV", dossier: ales-juchelka)
 - Missing: explicit owner authorization to promote this to its own dossier
@@ -3639,7 +3639,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: karel-havlicek, andrej-babis
 - Claims: CLM-05, CLM-07, CLM-08, CLM-19, CLM-21, CLM-22, CLM-25, CLM-27, CLM-55, CLM-57, CLM-58
-- Sources: SRC-02, SRC-04, SRC-05, SRC-11, SRC-12, SRC-13, SRC-14, SRC-15, SRC-34, SRC-35, SRC-36, SRC-37 (14 independent source families)
+- Sources: SRC-02, SRC-04, SRC-05, SRC-11, SRC-12, SRC-13, SRC-14, SRC-15, SRC-34, SRC-35, SRC-36, SRC-37 (13 independent source families)
 - Relations: 
   - edge-agrofert-penam (agrofert -> penam-zelena-louka, "Agrofert k obžalobě opakovaně uvedl, že jeho dceřiná společnost postupovala v souladu se zákonem", dossier: karel-havlicek)
   - edge-basny-penam (adam-basny -> penam-zelena-louka, "Evropský pověřený žalobce Bašný (EPPO) podal obžalobu na Pekárnu Zelená louka a dvě fyzické osoby", dossier: karel-havlicek)
@@ -3699,7 +3699,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: boris-stastny, karel-havlicek, oto-klempir
 - Claims: CLM-29, CLM-31
-- Sources: SRC-11, SRC-14 (2 independent source families)
+- Sources: SRC-11, SRC-14 (3 independent source families)
 - Relations: 
   - edge-petr-fiala-ods (petr-fiala -> ods, "bývalý premiér, předseda ODS", dossier: boris-stastny)
   - edge-petr-fiala-stastny (petr-fiala -> stastny, "po odvolání Šebka označil jeho práci v čele Národní sportovní agentury za skvělou a profesionální", dossier: boris-stastny)
@@ -3824,7 +3824,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: boris-stastny
 - Claims: CLM-07, CLM-17
-- Sources: SRC-02, SRC-03, SRC-08 (3 independent source families)
+- Sources: SRC-02, SRC-03, SRC-08 (2 independent source families)
 - Relations: 
   - edge-plaud-shenzhen-smart-connect-technology (plaud -> shenzhen-smart-connect-technology, "prezentuje se jako americký startup se sídlem v Delaware, ale výrobcem je čínská Shenzhen Smart Connect Technology", dossier: boris-stastny)
   - edge-stastny-plaud (stastny -> plaud, "nalezené nahrávací zařízení značky Plaud, ke kterému se přihlásil jako ke svému", dossier: boris-stastny)
@@ -3964,7 +3964,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: jeronym-tejc
 - Claims: CLM-03
-- Sources: SRC-02, SRC-04 (2 independent source families)
+- Sources: SRC-02, SRC-04 (1 independent source family)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -4164,7 +4164,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: adam-vojtech, alena-schillerova, jaromir-zuna, karel-havlicek, lubomir-metnar
 - Claims: CLM-07, CLM-13, CLM-14, CLM-15, CLM-16, CLM-28, CLM-30, CLM-36, CLM-37, CLM-38
-- Sources: SRC-02, SRC-05, SRC-06, SRC-17, SRC-21, SRC-22, SRC-23, SRC-25, SRC-27, SRC-28 (11 independent source families)
+- Sources: SRC-02, SRC-05, SRC-06, SRC-17, SRC-21, SRC-22, SRC-23, SRC-25, SRC-27, SRC-28 (12 independent source families)
 - Relations: 
   - edge-schillerova-senat (schillerova -> senat-pcr, "Schillerová odmítla senátní úpravy novely jako zdroj právní nejistoty", dossier: alena-schillerova)
   - edge-senat-novela (senat-pcr -> novela-rozpoctovych-pravidel-2026, "Senát vrátil novelu Sněmovně s pozměňovacími návrhy", dossier: alena-schillerova)
@@ -4207,7 +4207,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: andrej-babis
 - Claims: CLM-86, CLM-87
-- Sources: SRC-62, SRC-63 (2 independent source families)
+- Sources: SRC-62, SRC-63 (1 independent source family)
 - Relations: 
   - edge-seznam-zaloba (seznam-cz -> zaloba-seznam-2026, "žalobce", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
@@ -4334,7 +4334,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: jaromir-zuna
 - Claims: CLM-13, CLM-14, CLM-15, CLM-16, CLM-20, CLM-25, CLM-26
-- Sources: SRC-09, SRC-10, SRC-11, SRC-14, SRC-21, SRC-25, SRC-27, SRC-28 (8 independent source families)
+- Sources: SRC-09, SRC-10, SRC-11, SRC-14, SRC-21, SRC-25, SRC-27, SRC-28 (5 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -4430,7 +4430,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: zuzana-mrazova
 - Claims: CLM-33
-- Sources: SRC-21, SRC-29 (2 independent source families)
+- Sources: SRC-21, SRC-29 (1 independent source family)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -4470,7 +4470,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: jaromir-zuna, jeronym-tejc
 - Claims: CLM-14, CLM-41, CLM-42
-- Sources: SRC-08, SRC-09, SRC-17, SRC-20, SRC-21, SRC-31, SRC-33 (7 independent source families)
+- Sources: SRC-08, SRC-09, SRC-17, SRC-20, SRC-21, SRC-31, SRC-33 (6 independent source families)
 - Relations: 
   - edge-babis-summit-nato-ankara-2026 (babis -> summit-nato-ankara-2026, "na summitu NATO v Ankaře oznámil navýšení obranného rozpočtu o 36 miliard korun a poprvé dosažení 2 % HDP", dossier: jaromir-zuna)
   - edge-zuna-summit-nato-ankara-2026 (zuna -> summit-nato-ankara-2026, "doprovázel premiéra Babiše na summitu NATO v Ankaře (2026)", dossier: jaromir-zuna)
@@ -4502,7 +4502,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: andrej-babis, adam-vojtech
 - Claims: CLM-39, CLM-41, CLM-42
-- Sources: SRC-16, SRC-17 (3 independent source families)
+- Sources: SRC-16, SRC-17 (2 independent source families)
 - Relations: 
   - edge-babis-synbiol (babis -> synbiol, "podíl 87,75 %, ponechán mimo svěřenský fond; 2/2026 podle výkladu veřejných registrů opět přímé vlastnictví", dossier: andrej-babis)
   - edge-synbiol-hartenberg (synbiol -> hartenberg, "zdravotnické aktivity ve skupině Hartenberg, mimo svěřenský fond", dossier: andrej-babis)
@@ -4614,7 +4614,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: robert-plaga
 - Claims: CLM-08, CLM-09, CLM-23
-- Sources: SRC-02, SRC-04, SRC-14, SRC-23 (4 independent source families)
+- Sources: SRC-02, SRC-04, SRC-14, SRC-23 (2 independent source families)
 - Relations: 
   - edge-plaga-zatloukal (plaga -> tomas-zatloukal, "předvolal si ústředního školního inspektora po zastavení testování", dossier: robert-plaga)
   - edge-zatloukal-csi (tomas-zatloukal -> ceska-skolni-inspekce, "ústřední školní inspektor", dossier: robert-plaga)
@@ -4639,7 +4639,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: andrej-babis, boris-stastny, jaromir-zuna, karel-havlicek
 - Claims: CLM-09, CLM-32, CLM-39
-- Sources: SRC-02, SRC-06, SRC-18 (3 independent source families)
+- Sources: SRC-02, SRC-06, SRC-18 (4 independent source families)
 - Relations: 
   - edge-top09-stastny (top-09 -> stastny, "kauzu rozporu v číslech na sociálních sítích komentovala ironickou poznámkou o fejkování kroků", dossier: boris-stastny)
   - edge-matej-ondrej-havel-top09 (matej-ondrej-havel -> top-09, "poslanec za TOP 09", dossier: jaromir-zuna)
@@ -4691,7 +4691,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: ales-juchelka
 - Claims: CLM-13, CLM-15, CLM-40, CLM-41
-- Sources: SRC-08, SRC-09, SRC-11, SRC-14, SRC-15 (5 independent source families)
+- Sources: SRC-08, SRC-09, SRC-11, SRC-14, SRC-15 (2 independent source families)
 - Relations: 
   - edge-juchelka-trestnioznameni (juchelka -> trestni-oznameni-stan-mpsv, "trestní oznámení STAN směřuje ke střetu zájmů na Juchelkově ministerstvu", dossier: ales-juchelka)
   - edge-rakusan-trestnioznameni (vit-rakusan -> trestni-oznameni-stan-mpsv, "Rakušan (STAN) oznámil podání trestního oznámení kvůli střetu zájmů na MPSV", dossier: ales-juchelka)
@@ -4704,7 +4704,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: jeronym-tejc
 - Claims: CLM-02, CLM-03, CLM-04, CLM-23
-- Sources: SRC-02, SRC-03, SRC-04, SRC-11 (4 independent source families)
+- Sources: SRC-02, SRC-03, SRC-04, SRC-11 (2 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -4737,7 +4737,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: robert-plaga
 - Claims: CLM-27, CLM-28, CLM-51
-- Sources: SRC-21, SRC-23, SRC-02 (3 independent source families)
+- Sources: SRC-21, SRC-23, SRC-02 (2 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -4862,7 +4862,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: karel-havlicek, zuzana-mrazova
 - Claims: CLM-34, CLM-50
-- Sources: SRC-15, SRC-19 (2 independent source families)
+- Sources: SRC-15, SRC-19 (3 independent source families)
 - Relations: 
   - edge-kovarova-novela-sz (veronika-kovarova -> novela-stavebniho-zakona-2026, "Kovářová (Piráti) novele vytkla chybějící připomínkové řízení a že „legalizuje vznik černých staveb“", dossier: karel-havlicek)
 - Missing: explicit owner authorization to promote this to its own dossier
@@ -5029,7 +5029,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: andrej-babis
 - Claims: CLM-01
-- Sources: SRC-01, SRC-08, SRC-27 (3 independent source families)
+- Sources: SRC-01, SRC-08, SRC-27 (2 independent source families)
 - Relations: 
   - edge-babis-vrchnisoudpraha (babis -> vrchni-soud-praha, "Vrchní soud v Praze dvakrát zrušil zprošťující rozsudek; odvolání Nagyové projednává 31. 8.–1. 9. 2026", dossier: andrej-babis)
 - Missing: explicit owner authorization to promote this to its own dossier
@@ -5040,7 +5040,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: adam-vojtech, jeronym-tejc
 - Claims: CLM-02, CLM-03, CLM-21, CLM-23, CLM-29
-- Sources: SRC-02, SRC-03, SRC-04, SRC-11, SRC-12, SRC-13, SRC-15 (7 independent source families)
+- Sources: SRC-02, SRC-03, SRC-04, SRC-11, SRC-12, SRC-13, SRC-15 (8 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -5181,7 +5181,7 @@ Generated from 491 context entities across 24 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: andrej-babis
 - Claims: CLM-86
-- Sources: SRC-62, SRC-63 (2 independent source families)
+- Sources: SRC-62, SRC-63 (1 independent source family)
 - Relations: 
   - edge-babis-zaloba-seznam (babis -> zaloba-seznam-2026, "žalovaný v civilním sporu o ochranu pověsti — podaná žaloba není rozhodnutí soudu", dossier: andrej-babis)
   - edge-seznam-zaloba (seznam-cz -> zaloba-seznam-2026, "žalobce", dossier: andrej-babis)

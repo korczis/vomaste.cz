@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
   },
   "text": "Zjištění komise se vztahuje ke konkrétnímu posuzovanému roku 2024 a týká se implantací ICD u pacientů po infarktu nebo s jiným závažným kardiologickým nálezem, u nichž podle formulace komise „nebyla zcela naplněna indikační kritéria“.",
-  "status": "status-corroborated",
-  "statusLabel": "CORROBORATED",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-13"

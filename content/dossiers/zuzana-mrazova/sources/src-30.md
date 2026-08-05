@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-30 — ČeskéNoviny.cz (ČTK): Sněmovna schválila stavební novelu, podle opozice nahrává developerům (10. 7. 2026)"
-description = "ČeskéNoviny.cz nezávisle na Advokátní deník (SRC-18) potvrzuje výsledek hlasování (89:86), nový úřad a snížení počtu stavebních úřadů."
+description = "ČeskéNoviny.cz dokládají výsledek hlasování (89:86), nový úřad a snížení počtu stavebních úřadů; Advokátní deník (SRC-18) přebírá tentýž agenturní text ČTK."
 template = "dossier-source.html"
 weight = 30
 
@@ -20,6 +20,7 @@ poslanců vládní koalice. Pro schválení jich bylo zapotřebí nejméně 86."
 území." Počet stavebních úřadů se sníží z 638 na 205 územních
 pracovišť.
 
-**Nezávislost**: samostatná redakce/agentura od Advokátní deník
-(SRC-18) — obě nezávisle potvrzují tytéž skutečnosti. Proto CLM-47 a
-CLM-48 nesou stav `CORROBORATED`.
+**Nezávislost**: Revize zdrojových rodin (2026-08-05): text v Advokátním
+deníku (SRC-18) je uzavřen údajem „Zdroj: ČTK" — jde o převzatou
+agenturní zprávu. Oba zdroje patří do rodiny `ctk`, CLM-47 a CLM-48
+proto nesou stav `1 ZDROJ`.

@@ -22,9 +22,11 @@ tříletý podmíněný trest s pětiletou zkušební dobou a peněžitý trest
 proti němu odvolat k Vrchnímu soudu v Praze, vyjádření předsedy senátu
 Jana Šotta a stav řízení proti Andreji Babišovi, které je přerušeno.
 
-**Nezávislost:** Česká televize je vydavatelsky nezávislá na České
-justici (SRC-01, SRC-03) i na deníku Echo24 (SRC-09), proto se pro účely
-stavu `CORROBORATED` počítá jako samostatný zdroj.
+**Nezávislost:** Revize zdrojových rodin (2026-08-05): článek je na ČT24
+podepsán ČTK, stejně jako text na Echo24 (SRC-09) — oba patří do rodiny
+`ctk` a dohromady tvoří jedno nezávislé doložení. CLM-20 a CLM-36 proto
+nesou stav `1 ZDROJ`. Vztah k České justici (SRC-01, SRC-03) zůstává
+zatím neprověřen.
 
 **Limity:** článek referuje o rozhodnutí prvního stupně v den jeho
 vyhlášení. Nevypovídá nic o tom, jak dopadne případné odvolací řízení,
