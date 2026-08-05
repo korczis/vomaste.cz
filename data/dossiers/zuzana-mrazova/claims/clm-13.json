@@ -10,14 +10,17 @@
     "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
   },
   "text": "Mrázová ke stavbám uvedla, že parcelu nabyla již s existujícími objekty a „vycházela z předpokladu, že jsou v souladu s právními předpisy“; na tiskové konferenci se omluvila za „nedůslednost“ a uvedla, že žádá o změnu funkčního využití pozemku (obhajoba citována s atribucí).",
-  "status": "status-quote",
-  "statusLabel": "CITACE",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-10"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-06"
     }
   ],
   "subjects": [

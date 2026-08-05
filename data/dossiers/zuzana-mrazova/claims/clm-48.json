@@ -9,15 +9,18 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
   },
-  "text": "Schválená novela umožňuje dodatečné povolení nepovolené stavby v případech, kdy by její odstranění bylo „zjevně nepřiměřené“ ve vztahu k dotčeným osobám a veřejným zájmům, i při nesplnění standardních požadavků.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "text": "Novela ve znění schváleném Sněmovnou (postoupena Senátu 23. července 2026 jako senátní tisk 272) vkládá do § 256 stavebního zákona nový odstavec 3: stavební úřad nenařídí odstranění stavby a dodatečně ji povolí i bez splnění podmínek podle odstavce 1, pokud by nařízení odstranění „představovalo pro povinného nebo pro jiné osoby nebo pro veřejný zájem zcela zjevně zásah nepřiměřený přínosům a zároveň ponecháním stavby nejsou dotčeny veřejné zájmy ani práva třetích osob“; odpovědnost povinného za přestupek tím není dotčena.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-18"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-30"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-37"
     }
   ],
   "subjects": [

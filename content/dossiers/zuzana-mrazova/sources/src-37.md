@@ -1,0 +1,21 @@
++++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
+title = "SRC-37 — Senát PČR, senátní tisk 272: novela stavebního zákona ve znění postoupeném Poslaneckou sněmovnou"
+description = "Úplné znění novely stavebního zákona tak, jak je Poslanecká sněmovna 10. 7. 2026 schválila a 23. 7. 2026 postoupila Senátu; novelizační bod 552 vkládá nový § 256 odst. 3."
+template = "dossier-source.html"
+weight = 37
+
+[extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-37"
+view_model = "generated/views/dossiers/zuzana-mrazova/sources/src-37.json"
+dossier = "zuzana-mrazova"
+record_type = "source"
+lang = "cs"
+src_id = "SRC-37"
++++
+**Co dokládá.** Senátní tisk č. 272 (15. funkční období) — „Návrh zákona, kterým se mění zákon č. 283/2021 Sb., stavební zákon, ve znění pozdějších předpisů, a některé další související zákony“, navazující na sněmovní tisk č. 67, se lhůtou pro projednání Senátem do 22. srpna 2026. Jde o **schválené znění**, ne o návrh před hlasováním. Novelizační bod 552 (str. 72) zní doslovně: „V § 256 se za odstavec 2 vkládá nový odstavec 3, který zní: „(3) Stavební úřad nenařídí odstranění stavby a stavbu, která vyžaduje povolení, dodatečně povolí i bez splnění podmínek podle odstavce 1, pokud by nařízení odstranění stavby představovalo pro povinného nebo pro jiné osoby nebo pro veřejný zájem zcela zjevně zásah nepřiměřený přínosům a zároveň ponecháním stavby nejsou dotčeny veřejné zájmy ani práva třetích osob. Odpovědnost povinného za přestupek tím není dotčena.“.“ Detail tisku na webu Senátu současně uvádí, že navrhovatelem je zástupce skupiny poslanců Zuzana Mrázová.
+
+**Proč je to tu důležité.** [CLM-48](@/dossiers/zuzana-mrazova/claims/clm-48.md) stálo na agenturní zprávě ČTK a jejím přetisku v Advokátním deníku — jedna rodina. Senát je nezávislý vydavatel i rodina a jako jediný ze zdrojů nese **doslovné znění** přijaté úpravy, kterou tvrzení popisuje.
+
+**Poznámka k přesnosti a limitům.** Dokument opravil dvě nepřesnosti dřívějšího znění tvrzení: (1) zákonná formulace nezní „zjevně nepřiměřené“, ale „zcela zjevně zásah nepřiměřený přínosům“; (2) tvrzení vynechávalo **druhou kumulativní podmínku** — dodatečné povolení je možné jen tehdy, když zároveň „ponecháním stavby nejsou dotčeny veřejné zájmy ani práva třetích osob“ — a nezmiňovalo, že odpovědnost za přestupek zůstává nedotčena. Procesně: k datu otevření zdroje **nejde o platný zákon**, ale o návrh schválený Sněmovnou a projednávaný Senátem; návrh není rozhodnutí. Tisk nevypovídá o tom, jak se ustanovení vztahuje ke konkrétním objektům na pozemku ministryně — to je otázka správního řízení, ne textu předlohy. Dokument otevřen a přečten 2026-08-05.
