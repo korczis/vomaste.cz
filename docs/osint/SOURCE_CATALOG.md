@@ -18,6 +18,7 @@ Odpovídá na otázku „kam se podívat a čemu z toho věřit". Publikovaná p
 | [Hlídač státu](/zdroje/hlidac-statu/) | agregátor | veřejně dostupný | https://www.hlidacstatu.cz/ |
 | [Podnikatel.cz — rejstříkové profily](/zdroje/podnikatel-cz-rejstrik/) | agregátor | veřejně dostupný | https://www.podnikatel.cz/rejstrik/ |
 | [Informační systém datových schránek (ISDS)](/zdroje/datove-schranky/) | primární registr | omezený přístup | https://www.mojedatovaschranka.cz/ |
+| [ÚDHPSH — Úřad pro dohled nad hospodařením politických stran a politických hnutí](/zdroje/udhpsh/) | primární registr | veřejně dostupný | https://zpravy.udh.gov.cz/ |
 | [ČTK — Česká tisková kancelář](/zdroje/ctk/) | média | omezený přístup | https://www.ctk.cz/ |
 | [Poslanecká sněmovna Parlamentu ČR](/zdroje/psp-cz/) | primární listina | veřejně dostupný | https://www.psp.cz/ |
 | [Vláda České republiky](/zdroje/vlada-cz/) | primární listina | veřejně dostupný | https://vlada.gov.cz/ |
@@ -25,6 +26,14 @@ Odpovídá na otázku „kam se podívat a čemu z toho věřit". Publikovaná p
 | [Deník N](/zdroje/denik-n/) | média | veřejně dostupný | https://denikn.cz/ |
 | [iROZHLAS / Český rozhlas](/zdroje/irozhlas/) | média | veřejně dostupný | https://www.irozhlas.cz/ |
 | [Česká televize / ČT24](/zdroje/ceska-televize/) | média | veřejně dostupný | https://ct24.ceskatelevize.cz/ |
+| [Novinky.cz](/zdroje/novinky-cz/) | média | veřejně dostupný | https://www.novinky.cz/ |
+| [Aktuálně.cz](/zdroje/aktualne-cz/) | média | veřejně dostupný | https://www.aktualne.cz/ |
+| [FORUM 24](/zdroje/forum24/) | média | veřejně dostupný | https://www.forum24.cz/ |
+| [Echo24](/zdroje/echo24/) | média | veřejně dostupný | https://www.echo24.cz/ |
+| [Deník.cz](/zdroje/denik-cz/) | média | veřejně dostupný | https://www.denik.cz/ |
+| [Česká justice](/zdroje/ceska-justice/) | média | veřejně dostupný | https://www.ceska-justice.cz/ |
+| [Ekonomický deník](/zdroje/ekonomicky-denik/) | média | veřejně dostupný | https://ekonomickydenik.cz/ |
+| [Blesk.cz](/zdroje/blesk-cz/) | média | veřejně dostupný | https://www.blesk.cz/ |
 
 ## Pasti, na které se už najelo
 
@@ -50,6 +59,9 @@ Odpovídá na otázku „kam se podívat a čemu z toho věřit". Publikovaná p
 - **Podnikatel.cz — rejstříkové profily — Sdílí rodinu s ARES, takže ho nepotvrzuje**: V datasetu je tento agregátor i ARES veden pod touž rodinou `cz-verejny-rejstrik`, protože obojí čerpá z týchž veřejných rejstříků. Citace obou tedy NEJSOU dvě nezávislá doložení a tvrzení opřené o ně zůstává 1 ZDROJ, i když jde o dva různé vydavatele a dvě různé domény.
 - **Informační systém datových schránek (ISDS) — Zpětné vyhledání neexistuje**: Veřejná služba, která by k IČO vrátila ID schránky, není k dispozici. Údaj o schránce se získává jako součást rejstříkového výpisu (ARES ROS), ne samostatným dotazem.
 - **Informační systém datových schránek (ISDS) — Osmimístné ID schránky se plete s IČO**: Obojí je osmiznakový řetězec. Kdo rozlišuje regulárním výrazem podle délky, pošle IČO do větve pro ID schránky a zpět dostane nesmysl.
+- **ÚDHPSH — Úřad pro dohled nad hospodařením politických stran a politických hnutí — „Úplná" není „zkontrolovaná"**: Přehled zpráv uvádí u každého subjektu řádek „výsledek kontroly: zpráva je úplná *". Slovo „kontrola" je v označení řádku, ale hvězdička odkazuje na vysvětlivku Úřadu na téže stránce: „Výroční finanční zpráva je dle zákona úplná, obsahuje-li všechny požadované náležitosti a je-li předložena na předepsaném formuláři s přílohami. **Nejedná se o výsledek kontroly správnosti údajů.**" Přečteno obráceně by z formální kompletnosti vzniklo doložení věcné správnosti, které úřad výslovně odmítá. Doloženo v `richard-chlad/SRC-07`.
+- **ÚDHPSH — Úřad pro dohled nad hospodařením politických stran a politických hnutí — Hlídač státu registr reprodukuje, nepotvrzuje ho**: Profil sponzoringu na Hlídači státu přebírá položky z výroční finanční zprávy včetně jejich vlastního znění („propůjčení vozů Bugatti na akci", „výroba a instalace Billboardu, pronájem rekl.plochy"). Registr a jeho zrcadlo proto nejsou dva nezávislé hlasy — právě proto nese `richard-chlad/SRC-01` rodinu `udhpsh`, přestože jeho outlet je Hlídač státu. Navíc agregátor zobrazuje obě kategorie pod nadpisem „Přehled jednotlivých darů", zatímco zpráva tytéž položky vede jako bezúplatná plnění. Citovat se má registr, ne zrcadlo.
+- **ÚDHPSH — Úřad pro dohled nad hospodařením politických stran a politických hnutí — Jmenovci se liší jen ročníkem narození**: Ve zprávě za rok 2024 jsou u hnutí Motoristé sobě vedeny dva peněžité dary po 50 000 Kč od dárce „Chlad, Richard 27.05.1992", zatímco pětice bezúplatných plnění ve zprávě za rok 2025 patří Ing. Richardu Chladovi s ročníkem 1962. Bez porovnání data narození by se dvě různé osoby slily do jedné a součet by vznikl napříč nimi. Doloženo v `richard-chlad/SRC-06`.
 - **ČTK — Česká tisková kancelář — Přebírání vypadá jako shoda**: Právě kvůli tomuhle existuje pole `sourceFamily`. Bez něj se pět vydání téže zprávy počítá jako pět nezávislých redakcí a tvrzení dostane CORROBORATED, které si nezaslouží. Revize T-056 takto musela srazit 55 tvrzení zpět na 1 ZDROJ.
 - **ČTK — Česká tisková kancelář — Kredit je jen v metadatech a patičce**: Zmínka „řekl ČTK" uprostřed textu je běžná i ve vlastním zpravodajství a původ nedokládá. Rozhoduje `<meta name="author">`, podpisový blok nebo patička „Zdroj: …".
 - **Poslanecká sněmovna Parlamentu ČR — Volební období mění čísla**: Tisky a hlasování jsou číslovány v rámci volebního období. URL bez období vede po volbách na jiný dokument.
@@ -62,6 +74,29 @@ Odpovídá na otázku „kam se podívat a čemu z toho věřit". Publikovaná p
 - **iROZHLAS / Český rozhlas — Byline rozhoduje o nezávislosti, ne logo**: Tentýž web vydává vlastní zpravodajství i přebrané agenturní zprávy. O tom, zda jde o nezávislé doložení, rozhoduje kredit u konkrétního článku, ne vydavatel. Bez ověřeného kreditu je verdikt `unknown` a rodina se nevyplní — `unknown` NENÍ „vlastní zpravodajství".
 - **Česká televize / ČT24 — Byline rozhoduje o nezávislosti, ne logo**: Tentýž web vydává vlastní zpravodajství i přebrané agenturní zprávy. O tom, zda jde o nezávislé doložení, rozhoduje kredit u konkrétního článku, ne vydavatel. Bez ověřeného kreditu je verdikt `unknown` a rodina se nevyplní — `unknown` NENÍ „vlastní zpravodajství".
 - **Česká televize / ČT24 — Text k reportáži není reportáž**: Doprovodný článek bývá zkrácením odvysílaného. Cituje-li se výrok, musí být zřejmé, zda pochází z textu, nebo z vysílání.
+- **Novinky.cz — V podpisu stojí instituce vedle lidí**: JSON-LD pole `author` nese jak jmenovité redaktory (`Karolina Brodníčková` u `igor-cerveny/SRC-24`), tak institucionální „autory" s vlastním rozcestníkem: `Novinky` (`/autor/novinky-302`), `Právo` (`/autor/pravo-303`, tedy přetisk tištěného deníku vydavatele Borgis — `james-quick/SRC-17`) a `ČTK` (`/autor/ctk-304`, u `andrej-babis/SRC-61` uvedená hned vedle „autora" `Novinky`). Podpis tedy sám o sobě neříká, že text je vlastní práce Novinek — říká jen, ke které značce je připsán.
+- **Novinky.cz — Přebírka bývá přiznaná až v těle textu**: U `zuzana-mrazova/SRC-28` je v podpisu jmenovaný redaktor, ale článek uvnitř výslovně uvádí, že reprodukuje „zjištění serveru Seznam Zprávy". Rodina `seznam-zpravy` sem proto byla doplněna ručně (oprava z 3. 8. 2026); `detect-source-family.mjs` ji najít nemohl, protože tělo článku záměrně nečte — zmínka uprostřed textu je běžná i ve vlastním zpravodajství. U textu, který se opírá o cizí investigaci, tedy nestačí přečíst podpis.
+- **Novinky.cz — Fotokredity vypadají jako autoři**: Stránka nese desítky dalších výskytů klíče `author` pocházejících z fotografických kreditů (`Petr Horník`, `Michal Šula`, `archiv autora`). Strojové čtení, které bere první nebo libovolnou shodu, dostane fotografa místo autora textu. Rozhoduje `author` v JSON-LD uzlu článku, ne kdekoli na stránce.
+- **Aktuálně.cz — Rubrika je zapsaná jako autor**: JSON-LD u `andrej-babis/SRC-50` uvádí `"author":[{"@type":"Person","name":"Domácí"},{"@type":"Person","name":"ČTK"}]` — název rubriky je označen jako osoba a stojí v podpisu **před** agenturním kreditem. Čtení, které vezme první autora, dostane „Domácí" a text vyhodnotí jako vlastní zpravodajství. Rozhoduje celý seznam autorů, ne jeho první položka; pro srovnání `macinka-turek/SRC-36` nese jediného autora `Viet Tran`.
+- **Aktuálně.cz — Názorová subdoména je týž vydavatel**: Komentáře vycházejí na `nazory.aktualne.cz` a zpravodajství na `zpravy.aktualne.cz` (viz `adam-vojtech/SRC-39` proti `adam-vojtech/SRC-06`). Registrovaná doména je v obou případech `aktualne.cz`, takže pravidlo S10 je správně spojí do jednoho hlasu — ale odlišná adresa i odlišný žánr svádí k tomu vést je jako dva zdroje. Komentář navíc není zjištění, i kdyby vydavatel byl jiný.
+- **FORUM 24 — ČTK je v podpisu vedena jako osoba**: U přebraných zpráv obsahuje JSON-LD `"author":[{"@type":"Person","name":"ČTK","url":"https://www.forum24.cz/autor/ctk"}]` — agentura má vlastní autorský rozcestník a v podpisu vypadá přesně jako jmenovaný redaktor (`karel-havlicek/SRC-02`). Vedle toho stojí texty s běžným autorem (`Jiří Sezemský` u `karel-havlicek/SRC-04`, `Adam Opatrný` u `zuzana-mrazova/SRC-10`) ve zcela stejném tvaru. Rozdíl je jen ve jméně, ne ve struktuře — kdo kontroluje jen přítomnost autora, přebírku nepozná.
+- **FORUM 24 — Týž vydavatel dvakrát vypadal jako dvě potvrzení**: U `karel-havlicek/CLM-05` stojí vedle sebe `SRC-02` (rodina `ctk`) a `SRC-04` (bez rodiny) — oba FORUM 24. Než platilo pravidlo S10, počítaly se jako dvě nezávislé redakce právě proto, že jeden z nich měl vyplněnou rodinu a druhý spadl na fallback přes outlet. Jedna redakce ale nepotvrzuje sama sebe; tvrzení proto zůstává na stavu „1 ZDROJ". Totéž je vidět u `zuzana-mrazova/CLM-12` a `ales-juchelka/CLM-22`, kde druhý nezávislý hlas přinášejí až jiní vydavatelé.
+- **Echo24 — Agenturní kredit není ve strojových metadatech**: U `adam-vojtech/SRC-11` obsahuje podpisový blok dva odkazy vedle sebe — `<a rel="author" href="/author/dominik-stein">Dominik Stein</a>` a `<a rel="author" href="/author/ctk">čtk</a>` — ale `<meta name="author">` nese jen prvního z nich, tedy `Dominik Stein`. Kdo se opře o strojová metadata, dostane text jako vlastní zpravodajství; společné autorství s agenturou je vidět jen v podpisovém bloku. Proto je verdikt u takových textů opřený o odkaz na rozcestník `/author/ctk` a nese nižší jistotu.
+- **Echo24 — Redakční zkratka není jmenovitý autor**: `adam-vojtech/SRC-12` je podepsán `jkr` — redakční zkratkou, ne jménem ani agenturní značkou. Takový podpis nedokládá vlastní zpravodajství o nic víc než chybějící podpis; je to `unknown`, ne `own`. Zkratky (`jkr`, `red`, `jas`) proto nesmí sloužit jako důkaz samostatného hlasu.
+- **Echo24 — Patička webu odkazuje na ČTK vždy**: V patičce každé stránky stojí „Copyright © Echo Media, a.s. © ČTK". To je licenční doložka celého webu, ne kredit článku — pro určení původu je bezcenná a nesmí se zaměnit s patičkou „Zdroj: …" pod konkrétním textem.
+- **Echo24 — Přebírá se i mimo agenturu**: `andrej-babis/SRC-15` nese rodinu `idnes-dividenda-2026-07`, tedy převzetí zjištění jiné redakce. Kontrola zaměřená jen na ČTK by ho vyhodnotila jako vlastní zpravodajství a tvrzení by dostalo nezávislé doložení, které nemá.
+- **Deník.cz — Agentura je podepsaná jako redaktor**: U přebraných zpráv nese JSON-LD `"author": [{"@type":"Person","name":"ČTK","url":"https://www.denik.cz/autori/ctk/"}]` — agentura má vlastní autorský profil ve stejném tvaru jako lidé. Vlastní text má navíc `jobTitle: "Redaktor"` (`Jiří Janda` u `robert-plaga/SRC-10`), agenturní zápis ne. Rozdíl mezi `robert-plaga/SRC-09` a `SRC-10` je jen ve jméně v podpisu; podle vzhledu stránky se nepozná.
+- **Deník.cz — Krajské mutace vypadají jako různí vydavatelé**: V datech se týž vydavatel vyskytuje pod třemi názvy — „Deník.cz (VLTAVA LABE MEDIA)", „Kolínský deník (Deník.cz)" a „Ústecký deník (Deník.cz)". Pravidlo S10 je spojí přes registrovanou doménu `denik.cz` (subdomény typu `prazsky.denik.cz` se skládají do ní), takže dvě mutace nikdy nedají korroboraci. Bez toho by regionální přetisk téže agenturní zprávy vypadal jako druhá redakce.
+- **Deník.cz — Dva zdejší texty vedle sebe nestačí**: `robert-plaga/CLM-16` cituje `SRC-09` (rodina `ctk`) i `SRC-10` (rodina `denik-cz`) — dva různé texty, dvě různé rodiny, jeden vydavatel. Stav CORROBORATED tomu tvrzení náleží až díky třetímu zdroji, kterým je oznámení Ministerstva školství (`SRC-11`). Bez něj by šlo o jeden hlas se dvěma URL.
+- **Česká justice — První `<meta name="author">` je vydavatel, ne autor**: Stránka nese dvě značky `<meta name="author">` v tomto pořadí: `Media Networks` (vydavatelský systém) a teprve pak skutečného autora — `ČTK` u `andrej-babis/SRC-01`, `Alžběta Vejvodová` u `karel-havlicek/SRC-07`. Čtení, které vezme první shodu, dostane u každého článku totéž jméno a původ nikdy nerozliší. Rozhoduje druhá značka, respektive JSON-LD uzel `author`.
+- **Česká justice — Tři domény, jeden vydavatel**: Patička webu uvádí doslova: „Vydavatelem zpravodajských portálů Ekonomický deník, Zdravotnický deník a Česká justice je Media Network s.r.o." Pravidlo S10 porovnává outlet a registrovanou doménu, takže `ceska-justice.cz`, `ekonomickydenik.cz` a `zdravotnickydenik.cz` mu projdou jako tři nezávislí vydavatelé, přestože jsou jeden. Tvrzení opřené o dva z těchto portálů proto není potvrzené dvěma redakcemi a musí se posoudit ručně.
+- **Česká justice — Odborný web nese agenturní texty**: Patička uvádí, že „Portál Česká justice využívá zpravodajství ČTK". V datasetu má většina záznamů z tohoto vydavatele rodinu `ctk` — u `andrej-babis/SRC-01` je kredit `<meta name="author" content="ČTK" />`, u dalších jen odkaz na autorský rozcestník `/author/ctk/`. Odbornost webu tedy neznamená, že text vznikl v jeho redakci.
+- **Ekonomický deník — První `<meta name="author">` je vydavatel, ne autor**: Stránka nese dvě značky `<meta name="author">`: nejprve `Media Networks` (vydavatelský systém), teprve pak skutečného autora — `Jana Bartošová` u `ivan-bednarik/SRC-02`, `Tereza Čapková` u `karel-havlicek/SRC-10`. Čtení první shody dostane u každého článku totéž jméno. Rozhoduje druhá značka nebo JSON-LD uzel `author`. Web sdílí tuto vlastnost s Českou justicí, protože jde o tentýž redakční systém.
+- **Ekonomický deník — Tři domény, jeden vydavatel**: Patička webu uvádí doslova: „Vydavatelem zpravodajských portálů Ekonomický deník, Zdravotnický deník a Česká justice je Media Network s.r.o." Pravidlo S10 porovnává outlet a registrovanou doménu, takže tyto tři portály mu projdou jako tři nezávislí vydavatelé. Tvrzení opřené o dva z nich není potvrzené dvěma redakcemi.
+- **Ekonomický deník — Odborný web nese agenturní texty**: Patička uvádí, že „Portál Ekonomický deník využívá zpravodajství ČTK", a část záznamů z tohoto vydavatele má v datasetu rodinu `ctk`. Zaměření na hospodářství tedy nedokládá, že text vznikl v jeho redakci.
+- **Blesk.cz — První `<meta name="author">` je vydavatel**: Stránka nese dvě značky `<meta name="author">`: nejprve `CZECH NEWS CENTER a. s.`, teprve pak skutečný podpis — `ČTK` u `igor-cerveny/SRC-02`, `Tomáš Belica,Magdalena Škapová` u `boris-stastny/SRC-08`. Rozhoduje druhá značka, respektive `article:author`. Kredit bývá i smíšený (`ČTK,Jaroslav Šimáček`, `Magdalena Škapová,ČTK`) — jedno jméno v podpisu tedy nevylučuje agenturní původ.
+- **Blesk.cz — JSON-LD označuje za autora sám web**: I u textu, jehož metadata uvádějí autora `ČTK`, obsahuje JSON-LD uzel `"author":{"@type":"NewsMediaOrganization","name":"BLESK.cz"}`. Kdo čte jen JSON-LD, dostane vydavatele a agenturní původ mu unikne. Patička článku přitom rozdíl přiznává: „Zdroj: ČTK / Blesk Zprávy" u přebírky proti „Zdroj: Vera Renovica/Blesk" u vlastního textu.
+- **Blesk.cz — Formát není důvod zdroj vyřadit ani povýšit**: Dossiery vedou tento zdroj jako **tabloid** — je to typ zdroje, ne hodnocení. Doslovná citace úředního vyjádření z něj má tutéž důkazní hodnotu jako odjinud (`macinka-turek/SRC-19`, stanovisko policejní mluvčí). Zároveň se ale nepočítá jako další redakční potvrzení téže kvality jako vlastní zpravodajství jiné redakce (`macinka-turek/SRC-04`). Past je v obou směrech: vyřadit ho kvůli formátu, nebo ho započítat jako plnohodnotné druhé ověření.
 
 ## Skutečně použité zdroje v datasetu
 
@@ -73,19 +108,19 @@ Dopočítáno z `data/dossiers/**/sources/**`, 664 záznamů v 112 rodinách/out
 | seznam-zpravy | 35 | 13 | [ano](/zdroje/seznam-zpravy/) |
 | Poslanecká sněmovna Parlamentu ČR | 30 | 15 | [ano](/zdroje/psp-cz/) |
 | Vláda České republiky (vlada.gov.cz) | 23 | 17 | [ano](/zdroje/vlada-cz/) |
-| FORUM 24 | 19 | 9 | — |
+| FORUM 24 | 19 | 9 | [ano](/zdroje/forum24/) |
 | denik-n | 16 | 9 | [ano](/zdroje/denik-n/) |
 | ČT24 (Česká televize) | 14 | 7 | [ano](/zdroje/ceska-televize/) |
-| Echo24 | 13 | 9 | — |
-| denik-cz | 11 | 6 | — |
-| Aktuálně.cz | 11 | 6 | — |
-| Česká justice | 11 | 6 | — |
-| Ekonomický deník | 9 | 5 | — |
-| Novinky.cz | 9 | 8 | — |
+| Echo24 | 13 | 9 | [ano](/zdroje/echo24/) |
+| denik-cz | 11 | 6 | [ano](/zdroje/denik-cz/) |
+| Aktuálně.cz | 11 | 6 | [ano](/zdroje/aktualne-cz/) |
+| Česká justice | 11 | 6 | [ano](/zdroje/ceska-justice/) |
+| Ekonomický deník | 9 | 5 | [ano](/zdroje/ekonomicky-denik/) |
+| Novinky.cz | 9 | 8 | [ano](/zdroje/novinky-cz/) |
 | irozhlas | 8 | 6 | [ano](/zdroje/irozhlas/) |
 | hlidac-statu | 7 | 2 | [ano](/zdroje/hlidac-statu/) |
-| udhpsh | 6 | 1 | — |
-| Blesk.cz | 5 | 3 | — |
+| udhpsh | 6 | 1 | [ano](/zdroje/udhpsh/) |
+| Blesk.cz | 5 | 3 | [ano](/zdroje/blesk-cz/) |
 | e15.cz | 4 | 2 | — |
 | HlídacíPes.org | 4 | 4 | — |
 | Hospodářské noviny | 4 | 3 | — |
@@ -117,7 +152,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 664 záznamů v 112 rodinách/out
 | Ústavní soud ČR | 2 | 2 | — |
 | ct24 | 1 | 1 | [ano](/zdroje/ceska-televize/) |
 | eppo | 1 | 1 | — |
-| idnes-dividenda-2026-07 | 1 | 1 | — |
+| idnes-dividenda-2026-07 | 1 | 1 | [ano](/zdroje/echo24/) |
 | nssoud | 1 | 1 | — |
 | ACRI — Asociace podniků českého železničního průmyslu | 1 | 1 | — |
 | Agrofert (agrofert.cz) | 1 | 1 | — |
@@ -156,7 +191,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 664 záznamů v 112 rodinách/out
 | Motoristé sobě (motoristesobe.cz/udhpsh) | 1 | 1 | — |
 | Nejvyšší správní soud | 1 | 1 | — |
 | Neovlivní.cz | 1 | 1 | — |
-| Novinky.cz / Právo | 1 | 1 | — |
+| Novinky.cz / Právo | 1 | 1 | [ano](/zdroje/novinky-cz/) |
 | ParlamentníListy.cz | 1 | 1 | — |
 | Podnikatel.cz | 1 | 1 | [ano](/zdroje/podnikatel-cz-rejstrik/) |
 | Podpůrný a garanční rolnický a lesnický fond (PGRLF) | 1 | 1 | — |
@@ -181,18 +216,4 @@ Dopočítáno z `data/dossiers/**/sources/**`, 664 záznamů v 112 rodinách/out
 | Život v Česku | 1 | 1 | — |
 | smlouvy-gov-cz | 1 | 1 | [ano](/zdroje/registr-smluv/) |
 | usoud | 1 | 1 | — |
-
-## Chybí popis
-
-Tyhle zdroje dataset používá aspoň pětkrát, ale katalog k nim nemá záznam s mezemi a pastmi:
-
-- FORUM 24 (19×)
-- Echo24 (13×)
-- denik-cz (11×)
-- Aktuálně.cz (11×)
-- Česká justice (11×)
-- Ekonomický deník (9×)
-- Novinky.cz (9×)
-- udhpsh (6×)
-- Blesk.cz (5×)
 
