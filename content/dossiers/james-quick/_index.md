@@ -51,8 +51,6 @@ Jiří Jehlička byl v roce 2009 pravomocně zproštěn obžaloby v leasingové 
 
 ## Co tento přehled zatím neověřil {#mezery}
 
-Přímé parlamentní schůzky, lobbistické mandáty, konkrétní obchodní protistrany a tvrzení o jednání vůči novinářům vyžadují další primární dokumenty ([GAP-01](@/dossiers/james-quick/gaps/gap-01.md), [GAP-02](@/dossiers/james-quick/gaps/gap-02.md)). Nedořešený zůstává také výsledek sankčního řízení ÚOOÚ ([GAP-03](@/dossiers/james-quick/gaps/gap-03.md)) a nedoložená zmínka o trestním oznámení v souvislosti s Jiřím Čunkem, kterou revize odstranila z tvrzení ([GAP-04](@/dossiers/james-quick/gaps/gap-04.md)).
-
 ## Metodické omezení
 
 Oficiální web subjektu, CERD a otevřené blogovací platformy mohou doložit autorství nebo existenci veřejného výroku. Bez dalšího nezávislého zdroje ale nedokládají pravdivost tvrzení, která o sobě nebo jiných osobách publikují.

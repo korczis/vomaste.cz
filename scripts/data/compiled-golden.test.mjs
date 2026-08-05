@@ -16,13 +16,13 @@ import { compileDataset } from "./compile.mjs";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const compiled = compileDataset(loadCanonicalTree(join(ROOT, "data/dossiers")));
 
-test("golden: počty záznamů per typ (snapshot 2026-08-05, union: revize james-quick (odstraněn nedoložený uzel i hrana Jiřího Čunka, +CLM-09, +2 mezery) a souběžné rozvinutí martin-pavlik)", () => {
+test("golden: počty záznamů per typ (snapshot 2026-08-05b: GAP-04 v james-quick zrušena — nedoložené jméno se nemá opakovat ani jako mezera)", () => {
   assert.deepEqual(compiled.counts.perType, {
     case: 89,
     claim: 937,
     dossier: 26,
     entity: 520,
-    gap: 194,
+    gap: 193,
     relation: 326,
     source: 627,
     update: 72,

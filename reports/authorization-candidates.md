@@ -464,10 +464,11 @@ Generated from 495 context entities across 26 dossier(s). Regenerate with `npm r
 
 - Type: company
 - Status: not_authorized
-- Appears in: —
+- Appears in: martin-pavlik
 - Claims: none
 - Sources: none (0 independent source families)
-- Relations: none
+- Relations:
+  - edge-pavlik-bydlime (martin-pavlik -> bydlime-v-kralove-poli-z-s, "1. místopředseda spolku", dossier: martin-pavlik)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Čapí hnízdo (dotační kauza) (`capi-hnizdo`)
@@ -1276,10 +1277,11 @@ Generated from 495 context entities across 26 dossier(s). Regenerate with `npm r
 
 - Type: company
 - Status: not_authorized
-- Appears in: —
+- Appears in: martin-pavlik
 - Claims: none
 - Sources: none (0 independent source families)
-- Relations: none
+- Relations:
+  - edge-pavlik-hydroprogress (martin-pavlik -> hydroprogress-s-r-o, "jednatel a společník s podílem 80 %", dossier: martin-pavlik)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Hyundai (`hyundai`)
@@ -2580,10 +2582,11 @@ Generated from 495 context entities across 26 dossier(s). Regenerate with `npm r
 
 - Type: company
 - Status: not_authorized
-- Appears in: —
+- Appears in: martin-pavlik
 - Claims: none
 - Sources: none (0 independent source families)
-- Relations: none
+- Relations:
+  - edge-pavlik-mediaproject (martin-pavlik -> media-project-cz-s-r-o, "jednatel a společník s podílem 50 %", dossier: martin-pavlik)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Medical Investments (`medical-investments`)
@@ -3060,10 +3063,11 @@ Generated from 495 context entities across 26 dossier(s). Regenerate with `npm r
 
 - Type: company
 - Status: not_authorized
-- Appears in: —
+- Appears in: martin-pavlik
 - Claims: none
 - Sources: none (0 independent source families)
-- Relations: none
+- Relations:
+  - edge-pavlik-fiducia (martin-pavlik -> nadacni-fond-fiducia, "člen orgánu nadačního fondu", dossier: martin-pavlik)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Národní galerie Praha (`narodni-galerie-praha`)

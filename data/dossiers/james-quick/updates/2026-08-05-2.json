@@ -6,32 +6,63 @@
   "@type": "vomaste:Update",
   "recordType": "update",
   "identifier": "2026-08-05-2",
-  "dossier": { "@id": "https://vomaste.cz/id/dossiers/james-quick" },
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/james-quick"
+  },
   "date": "2026-08-05",
-  "summary": "Redakční a evidenční revize: přímo otevřeno a ověřeno všech osm původních zdrojů proti tvrzením. Z CLM-07 odstraněno jméno Jiřího Čunka, které citovaný článek ČT24 vůbec neuvádí (spolu s uzlem a hranou v grafu), a upřesněn procesní výsledek — u Jana Moravy nebyly zahájeny úkony trestního řízení, odložen byl Grossův případ. Opravena dvě chybná data vydání (SRC-05 na 2011-04-10, SRC-07 na 2009-01-23) a odstraněna nedoložená hodnota published u SRC-02. Zdrojové rodiny srovnány se standardem webu: vymyšlené klíče uoou, ceska-televize a economia zrušeny (jde o vlastní zpravodajství a primární úřední dokumenty, ne o agenturní přebírky), cesky-rozhlas sjednocen na zavedené irozhlas; outlet ČT sjednocen na tvar ČT24 (Česká televize). Doplněny dva primární doklady — datovaná tisková zpráva ÚOOÚ z 2018 a text České justice z 2020 — a s nimi chybějící procesní pokračování věci. Statusy přepočítány podle S1/S2/S10; žádné tvrzení nesplňuje podmínky pro CORROBORATED, protože dossier zatím nemá dvojici zdrojů lišící se rodinou i vydavatelem.",
+  "summary": "Redakční a evidenční revize: přímo otevřeno a ověřeno všech osm původních zdrojů proti tvrzením. Z CLM-07 odstraněno jméno, které citovaný článek ČT24 vůbec neuvádí (spolu s uzlem a hranou v grafu), a upřesněn procesní výsledek — u Jana Moravy nebyly zahájeny úkony trestního řízení, odložen byl Grossův případ. Opravena dvě chybná data vydání (SRC-05 na 2011-04-10, SRC-07 na 2009-01-23) a odstraněna nedoložená hodnota published u SRC-02. Zdrojové rodiny srovnány se standardem webu: vymyšlené klíče uoou, ceska-televize a economia zrušeny (jde o vlastní zpravodajství a primární úřední dokumenty, ne o agenturní přebírky), cesky-rozhlas sjednocen na zavedené irozhlas; outlet ČT sjednocen na tvar ČT24 (Česká televize). Doplněny dva primární doklady — datovaná tisková zpráva ÚOOÚ z 2018 a text České justice z 2020 — a s nimi chybějící procesní pokračování věci. Statusy přepočítány podle S1/S2/S10; žádné tvrzení nesplňuje podmínky pro CORROBORATED, protože dossier zatím nemá dvojici zdrojů lišící se rodinou i vydavatelem.",
   "addedClaims": [
-    { "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-09" }
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-09"
+    }
   ],
   "updatedClaims": [
-    { "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-02" },
-    { "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-05" },
-    { "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-07" }
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-07"
+    }
   ],
   "addedGaps": [
-    { "@id": "https://vomaste.cz/id/dossiers/james-quick/gaps/GAP-03" },
-    { "@id": "https://vomaste.cz/id/dossiers/james-quick/gaps/GAP-04" }
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/gaps/GAP-03"
+    }
   ],
   "closedGaps": [],
   "reviewedSources": [
-    { "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-01" },
-    { "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-02" },
-    { "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-03" },
-    { "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-04" },
-    { "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-05" },
-    { "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-06" },
-    { "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-07" },
-    { "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-08" },
-    { "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-09" },
-    { "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-10" }
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-10"
+    }
   ]
 }

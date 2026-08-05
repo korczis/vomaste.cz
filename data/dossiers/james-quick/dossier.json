@@ -24,12 +24,96 @@
   },
   "graph": {
     "nodes": [
-      { "entity": "james-quick", "label": "James Quick", "subject": true, "cluster": "subjekt", "claims": ["CLM-01", "CLM-02", "CLM-03", "CLM-04", "CLM-05", "CLM-06", "CLM-07", "CLM-08", "CLM-09"], "sources": ["SRC-01", "SRC-02", "SRC-03", "SRC-04", "SRC-05", "SRC-06", "SRC-07", "SRC-08", "SRC-09", "SRC-10"] },
-      { "entity": "csr-protikorupcnilinka", "label": "CSR & Protikorupcnilinka.cz s.r.o.", "cluster": "cerd", "claims": ["CLM-01", "CLM-02"], "sources": ["SRC-01", "SRC-02", "SRC-09"] },
-      { "entity": "cerd-system-llc", "label": "CERD SYSTEM LLC", "cluster": "cerd", "claims": ["CLM-02", "CLM-04"], "sources": ["SRC-02", "SRC-04", "SRC-09"] },
-      { "entity": "jan-morava", "label": "Jan Morava", "cluster": "verejna-oznameni", "claims": ["CLM-07"], "sources": ["SRC-07"] },
-      { "entity": "stanislav-gross", "label": "Stanislav Gross", "cluster": "verejna-oznameni", "claims": ["CLM-07"], "sources": ["SRC-07"] },
-      { "entity": "vladimir-ruzicka", "label": "Vladimír Růžička", "cluster": "verejna-oznameni", "claims": ["CLM-08"], "sources": ["SRC-08"] }
+      {
+        "entity": "james-quick",
+        "label": "James Quick",
+        "subject": true,
+        "cluster": "subjekt",
+        "claims": [
+          "CLM-01",
+          "CLM-02",
+          "CLM-03",
+          "CLM-04",
+          "CLM-05",
+          "CLM-06",
+          "CLM-07",
+          "CLM-08",
+          "CLM-09"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02",
+          "SRC-03",
+          "SRC-04",
+          "SRC-05",
+          "SRC-06",
+          "SRC-07",
+          "SRC-08",
+          "SRC-09",
+          "SRC-10"
+        ]
+      },
+      {
+        "entity": "csr-protikorupcnilinka",
+        "label": "CSR & Protikorupcnilinka.cz s.r.o.",
+        "cluster": "cerd",
+        "claims": [
+          "CLM-01",
+          "CLM-02"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02",
+          "SRC-09"
+        ]
+      },
+      {
+        "entity": "cerd-system-llc",
+        "label": "CERD SYSTEM LLC",
+        "cluster": "cerd",
+        "claims": [
+          "CLM-02",
+          "CLM-04"
+        ],
+        "sources": [
+          "SRC-02",
+          "SRC-04",
+          "SRC-09"
+        ]
+      },
+      {
+        "entity": "jan-morava",
+        "label": "Jan Morava",
+        "cluster": "verejna-oznameni",
+        "claims": [
+          "CLM-07"
+        ],
+        "sources": [
+          "SRC-07"
+        ]
+      },
+      {
+        "entity": "stanislav-gross",
+        "label": "Stanislav Gross",
+        "cluster": "verejna-oznameni",
+        "claims": [
+          "CLM-07"
+        ],
+        "sources": [
+          "SRC-07"
+        ]
+      },
+      {
+        "entity": "vladimir-ruzicka",
+        "label": "Vladimír Růžička",
+        "cluster": "verejna-oznameni",
+        "claims": [
+          "CLM-08"
+        ],
+        "sources": [
+          "SRC-08"
+        ]
+      }
     ],
     "edges": [
       "edge-james-quick-csr-protikorupcnilinka",
@@ -39,22 +123,99 @@
       "edge-james-quick-vladimir-ruzicka"
     ],
     "clusters": [
-      { "id": "subjekt", "label": "Subjekt", "nodes": ["james-quick"] },
-      { "id": "cerd", "label": "Systém CERD", "nodes": ["csr-protikorupcnilinka", "cerd-system-llc"], "claims": ["CLM-01", "CLM-02", "CLM-04", "CLM-09"], "sources": ["SRC-01", "SRC-02", "SRC-04", "SRC-09", "SRC-10"] },
-      { "id": "verejna-oznameni", "label": "Veřejná trestní oznámení", "nodes": ["jan-morava", "stanislav-gross", "vladimir-ruzicka"], "claims": ["CLM-07", "CLM-08"], "sources": ["SRC-07", "SRC-08"] }
+      {
+        "id": "subjekt",
+        "label": "Subjekt",
+        "nodes": [
+          "james-quick"
+        ]
+      },
+      {
+        "id": "cerd",
+        "label": "Systém CERD",
+        "nodes": [
+          "csr-protikorupcnilinka",
+          "cerd-system-llc"
+        ],
+        "claims": [
+          "CLM-01",
+          "CLM-02",
+          "CLM-04",
+          "CLM-09"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02",
+          "SRC-04",
+          "SRC-09",
+          "SRC-10"
+        ]
+      },
+      {
+        "id": "verejna-oznameni",
+        "label": "Veřejná trestní oznámení",
+        "nodes": [
+          "jan-morava",
+          "stanislav-gross",
+          "vladimir-ruzicka"
+        ],
+        "claims": [
+          "CLM-07",
+          "CLM-08"
+        ],
+        "sources": [
+          "SRC-07",
+          "SRC-08"
+        ]
+      }
     ],
     "sourceFamilies": [
-      { "id": "vydavatel-uoou", "label": "Úřad pro ochranu osobních údajů (primární úřední dokumenty)", "sources": ["SRC-01", "SRC-02", "SRC-09"] },
-      { "id": "vydavatel-ct24", "label": "ČT24 (Česká televize)", "sources": ["SRC-03", "SRC-05", "SRC-06", "SRC-07"] },
-      { "id": "vydavatel-hn", "label": "Hospodářské noviny", "sources": ["SRC-04"] },
-      { "id": "vydavatel-irozhlas", "label": "iROZHLAS.cz (Český rozhlas)", "sources": ["SRC-08"] },
-      { "id": "vydavatel-ceska-justice", "label": "Česká justice", "sources": ["SRC-10"] }
+      {
+        "id": "vydavatel-uoou",
+        "label": "Úřad pro ochranu osobních údajů (primární úřední dokumenty)",
+        "sources": [
+          "SRC-01",
+          "SRC-02",
+          "SRC-09"
+        ]
+      },
+      {
+        "id": "vydavatel-ct24",
+        "label": "ČT24 (Česká televize)",
+        "sources": [
+          "SRC-03",
+          "SRC-05",
+          "SRC-06",
+          "SRC-07"
+        ]
+      },
+      {
+        "id": "vydavatel-hn",
+        "label": "Hospodářské noviny",
+        "sources": [
+          "SRC-04"
+        ]
+      },
+      {
+        "id": "vydavatel-irozhlas",
+        "label": "iROZHLAS.cz (Český rozhlas)",
+        "sources": [
+          "SRC-08"
+        ]
+      },
+      {
+        "id": "vydavatel-ceska-justice",
+        "label": "Česká justice",
+        "sources": [
+          "SRC-10"
+        ]
+      }
     ]
   },
   "contentBlocks": [
     {
       "type": "markdown",
-      "value": "## Kdo je James Quick {#kdo}\n\nJames Quick je jméno, které podle oficiální odpovědi ÚOOÚ nyní používá dřívější Jiří Jehlička, veřejně spojovaný se systémem CERD a společností CSR & Protikorupcnilinka.cz s.r.o. Dossier rozlišuje úřední zjištění, redakční reportáže, vlastní vyjádření a procesní výsledky.\n\nDossier je ve stavu **rozpracované rešerše**. Vlastní weby, CERD a autorské profily se používají pouze jako primární doklad toho, co jejich autoři sami publikují, nikoli jako nezávislé potvrzení sebeprezentace.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/james-quick/claims/clm-01.md) | Úřad pro ochranu osobních údajů v odpovědi zveřejněné 19. prosince 2024 uvedl, že při dřívější kontrole považoval Jiřího Jehličku, nyní Jamese Quicka, za správce a zpracovatele osobních údajů ve vztahu k systému CERD; v době kontroly byl podle úřadu také jednatelem CSR & Protikorupcnilinka.cz s.r.o. | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-01](@/dossiers/james-quick/sources/src-01.md) |\n| <a id=\"clm-02\"></a>[CLM-02](@/dossiers/james-quick/claims/clm-02.md) | ÚOOÚ ve zveřejněném závěru kontroly systému CERD z roku 2018 uvedl, že fyzická osoba ovládající zapojené společnosti určovala účel a prostředky zpracování, a konstatoval zpracování části osobních údajů bez právního titulu i další systematická porušení tehdejšího zákona o ochraně osobních údajů. | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-02](@/dossiers/james-quick/sources/src-02.md), [SRC-09](@/dossiers/james-quick/sources/src-09.md) |\n| <a id=\"clm-03\"></a>[CLM-03](@/dossiers/james-quick/claims/clm-03.md) | Reportéři ČT v prosinci 2010 uvedli, že za webem CERD stál Jiří Jehlička, že banky nepřikládaly jeho certifikátu bezdlužnosti hodnotu a že seznam zobrazoval také osoby, které podle reportáže nikomu nic nedlužily. | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-03](@/dossiers/james-quick/sources/src-03.md) |\n| <a id=\"clm-04\"></a>[CLM-04](@/dossiers/james-quick/claims/clm-04.md) | Hospodářské noviny v srpnu 2015 napsaly, že výpisy soukromého CERD české banky neuznávají a že služby byly spojovány s firmou registrovanou ve Spojených státech; Jiřího Jehličku článek označil za hlavního hybatele projektu pouze jako závěr reportáže, nikoli jako tehdy úředně prokázanou skutečnost. | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-04](@/dossiers/james-quick/sources/src-04.md) |\n| <a id=\"clm-05\"></a>[CLM-05](@/dossiers/james-quick/claims/clm-05.md) | ČT24 v dubnu 2011 popsala domény připomínající názvy státních orgánů, které přesměrovávaly na CERD; Jiří Jehlička jako zástupce provozovatele uvedl, že domény byly řádně zakoupeny a provozovatel pro ně zatím nenašel jiné využití. | <span class=\"status-badge status-quote\">CITACE</span> | [SRC-05](@/dossiers/james-quick/sources/src-05.md) |\n| <a id=\"clm-06\"></a>[CLM-06](@/dossiers/james-quick/claims/clm-06.md) | Vrchní soud v Praze podle ČT24 v říjnu 2009 pravomocně zprostil Jiřího Jehličku obžaloby v kauze leasingových podvodů, protože nebylo prokázáno, že skutky spáchal právě on. | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-06](@/dossiers/james-quick/sources/src-06.md) |\n| <a id=\"clm-07\"></a>[CLM-07](@/dossiers/james-quick/claims/clm-07.md) | ČT24 23. ledna 2009 uvedla, že Jiří Jehlička podal trestní oznámení na bývalého poslance Jana Moravu a že v minulosti podal několik trestních oznámení na politiky, například na Stanislava Grosse; u Moravovy věci podle článku státní zastupitelství uzavřelo, že nejsou dány důvody pro zahájení úkonů trestního řízení, a Grossův případ policie odložila. | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-07](@/dossiers/james-quick/sources/src-07.md) |\n| <a id=\"clm-08\"></a>[CLM-08](@/dossiers/james-quick/claims/clm-08.md) | iROZHLAS v dubnu 2015 uvedl, že Jiří Jehlička jako provozovatel CERD a Protikorupčnílinka.cz podal trestní oznámení v souvislosti s tehdejším hokejovým reprezentačním trenérem Vladimírem Růžičkou. | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-08](@/dossiers/james-quick/sources/src-08.md) |\n| <a id=\"clm-09\"></a>[CLM-09](@/dossiers/james-quick/claims/clm-09.md) | Česká justice 14. srpna 2020 s odkazem na prohlášení ÚOOÚ uvedla, že správce osobních údajů systému CERD neprovedl uložená opatření k nápravě, že úřad následně přes poskytovatele služeb dosáhl znepřístupnění webových stránek registru a že poté zahájil řízení o sankci za nepřijetí opatření k nápravě; provozovatel si podle textu zajistil nového poskytovatele, indickou společnost hostující IP adresy systému na území Ruska. | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-10](@/dossiers/james-quick/sources/src-10.md) |\n\n## CERD a ochrana osobních údajů {#cerd}\n\nÚOOÚ veřejně popsal jak identitu a institucionální vazbu osoby spojené s CERD ([CLM-01](@/dossiers/james-quick/claims/clm-01.md)), tak závěry kontroly zpracování osobních údajů ([CLM-02](@/dossiers/james-quick/claims/clm-02.md)). Jde o správní zjištění, nikoli trestní rozsudek.\n\nProcesní pokračování popisuje [CLM-09](@/dossiers/james-quick/claims/clm-09.md): uložená opatření k nápravě podle zveřejněného stanoviska úřadu nebyla provedena, úřad dosáhl znepřístupnění webu registru a zahájil řízení o sankci. Zahájení takového řízení není uloženou sankcí — jak dopadlo, dossier doložené nemá a otázka zůstává v [GAP-03](@/dossiers/james-quick/gaps/gap-03.md).\n\n## Veřejné reportáže o službě {#reportaze}\n\nReportáže ČT a Hospodářských novin v letech 2010–2015 řešily uznávání certifikátů CERD bankami, zobrazování osob a korporátní uspořádání služby ([CLM-03](@/dossiers/james-quick/claims/clm-03.md), [CLM-04](@/dossiers/james-quick/claims/clm-04.md)). Samostatná zpráva ČT popsala domény připomínající státní instituce a zveřejnila reakci provozovatele ([CLM-05](@/dossiers/james-quick/claims/clm-05.md)).\n\n## Soudní a politické stopy {#soudy-a-politika}\n\nJiří Jehlička byl v roce 2009 pravomocně zproštěn obžaloby v leasingové věci ([CLM-06](@/dossiers/james-quick/claims/clm-06.md)). Ve veřejném prostoru také podával trestní oznámení související s kauzami Jana Moravy, Stanislava Grosse a Vladimíra Růžičky ([CLM-07](@/dossiers/james-quick/claims/clm-07.md), [CLM-08](@/dossiers/james-quick/claims/clm-08.md)). Podání oznámení samo o sobě není důkazem viny dotčené osoby ani důkazem osobního, obchodního či lobbistického vztahu. U každé z těchto věcí dossier uvádí i to, jak dopadla, aby oznámení nezůstalo viset jako nevyřčené obvinění.\n\n## Co tento přehled zatím neověřil {#mezery}\n\nPřímé parlamentní schůzky, lobbistické mandáty, konkrétní obchodní protistrany a tvrzení o jednání vůči novinářům vyžadují další primární dokumenty ([GAP-01](@/dossiers/james-quick/gaps/gap-01.md), [GAP-02](@/dossiers/james-quick/gaps/gap-02.md)). Nedořešený zůstává také výsledek sankčního řízení ÚOOÚ ([GAP-03](@/dossiers/james-quick/gaps/gap-03.md)) a nedoložená zmínka o trestním oznámení v souvislosti s Jiřím Čunkem, kterou revize odstranila z tvrzení ([GAP-04](@/dossiers/james-quick/gaps/gap-04.md)).\n\n## Metodické omezení\n\nOficiální web subjektu, CERD a otevřené blogovací platformy mohou doložit autorství nebo existenci veřejného výroku. Bez dalšího nezávislého zdroje ale nedokládají pravdivost tvrzení, která o sobě nebo jiných osobách publikují."
+      "value": "## Kdo je James Quick {#kdo}\n\nJames Quick je jméno, které podle oficiální odpovědi ÚOOÚ nyní používá dřívější Jiří Jehlička, veřejně spojovaný se systémem CERD a společností CSR & Protikorupcnilinka.cz s.r.o. Dossier rozlišuje úřední zjištění, redakční reportáže, vlastní vyjádření a procesní výsledky.\n\nDossier je ve stavu **rozpracované rešerše**. Vlastní weby, CERD a autorské profily se používají pouze jako primární doklad toho, co jejich autoři sami publikují, nikoli jako nezávislé potvrzení sebeprezentace.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/james-quick/claims/clm-01.md) | Úřad pro ochranu osobních údajů v odpovědi zveřejněné 19. prosince 2024 uvedl, že při dřívější kontrole považoval Jiřího Jehličku, nyní Jamese Quicka, za správce a zpracovatele osobních údajů ve vztahu k systému CERD; v době kontroly byl podle úřadu také jednatelem CSR & Protikorupcnilinka.cz s.r.o. | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-01](@/dossiers/james-quick/sources/src-01.md) |\n| <a id=\"clm-02\"></a>[CLM-02](@/dossiers/james-quick/claims/clm-02.md) | ÚOOÚ ve zveřejněném závěru kontroly systému CERD z roku 2018 uvedl, že fyzická osoba ovládající zapojené společnosti určovala účel a prostředky zpracování, a konstatoval zpracování části osobních údajů bez právního titulu i další systematická porušení tehdejšího zákona o ochraně osobních údajů. | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-02](@/dossiers/james-quick/sources/src-02.md), [SRC-09](@/dossiers/james-quick/sources/src-09.md) |\n| <a id=\"clm-03\"></a>[CLM-03](@/dossiers/james-quick/claims/clm-03.md) | Reportéři ČT v prosinci 2010 uvedli, že za webem CERD stál Jiří Jehlička, že banky nepřikládaly jeho certifikátu bezdlužnosti hodnotu a že seznam zobrazoval také osoby, které podle reportáže nikomu nic nedlužily. | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-03](@/dossiers/james-quick/sources/src-03.md) |\n| <a id=\"clm-04\"></a>[CLM-04](@/dossiers/james-quick/claims/clm-04.md) | Hospodářské noviny v srpnu 2015 napsaly, že výpisy soukromého CERD české banky neuznávají a že služby byly spojovány s firmou registrovanou ve Spojených státech; Jiřího Jehličku článek označil za hlavního hybatele projektu pouze jako závěr reportáže, nikoli jako tehdy úředně prokázanou skutečnost. | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-04](@/dossiers/james-quick/sources/src-04.md) |\n| <a id=\"clm-05\"></a>[CLM-05](@/dossiers/james-quick/claims/clm-05.md) | ČT24 v dubnu 2011 popsala domény připomínající názvy státních orgánů, které přesměrovávaly na CERD; Jiří Jehlička jako zástupce provozovatele uvedl, že domény byly řádně zakoupeny a provozovatel pro ně zatím nenašel jiné využití. | <span class=\"status-badge status-quote\">CITACE</span> | [SRC-05](@/dossiers/james-quick/sources/src-05.md) |\n| <a id=\"clm-06\"></a>[CLM-06](@/dossiers/james-quick/claims/clm-06.md) | Vrchní soud v Praze podle ČT24 v říjnu 2009 pravomocně zprostil Jiřího Jehličku obžaloby v kauze leasingových podvodů, protože nebylo prokázáno, že skutky spáchal právě on. | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-06](@/dossiers/james-quick/sources/src-06.md) |\n| <a id=\"clm-07\"></a>[CLM-07](@/dossiers/james-quick/claims/clm-07.md) | ČT24 23. ledna 2009 uvedla, že Jiří Jehlička podal trestní oznámení na bývalého poslance Jana Moravu a že v minulosti podal několik trestních oznámení na politiky, například na Stanislava Grosse; u Moravovy věci podle článku státní zastupitelství uzavřelo, že nejsou dány důvody pro zahájení úkonů trestního řízení, a Grossův případ policie odložila. | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-07](@/dossiers/james-quick/sources/src-07.md) |\n| <a id=\"clm-08\"></a>[CLM-08](@/dossiers/james-quick/claims/clm-08.md) | iROZHLAS v dubnu 2015 uvedl, že Jiří Jehlička jako provozovatel CERD a Protikorupčnílinka.cz podal trestní oznámení v souvislosti s tehdejším hokejovým reprezentačním trenérem Vladimírem Růžičkou. | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-08](@/dossiers/james-quick/sources/src-08.md) |\n| <a id=\"clm-09\"></a>[CLM-09](@/dossiers/james-quick/claims/clm-09.md) | Česká justice 14. srpna 2020 s odkazem na prohlášení ÚOOÚ uvedla, že správce osobních údajů systému CERD neprovedl uložená opatření k nápravě, že úřad následně přes poskytovatele služeb dosáhl znepřístupnění webových stránek registru a že poté zahájil řízení o sankci za nepřijetí opatření k nápravě; provozovatel si podle textu zajistil nového poskytovatele, indickou společnost hostující IP adresy systému na území Ruska. | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-10](@/dossiers/james-quick/sources/src-10.md) |\n\n## CERD a ochrana osobních údajů {#cerd}\n\nÚOOÚ veřejně popsal jak identitu a institucionální vazbu osoby spojené s CERD ([CLM-01](@/dossiers/james-quick/claims/clm-01.md)), tak závěry kontroly zpracování osobních údajů ([CLM-02](@/dossiers/james-quick/claims/clm-02.md)). Jde o správní zjištění, nikoli trestní rozsudek.\n\nProcesní pokračování popisuje [CLM-09](@/dossiers/james-quick/claims/clm-09.md): uložená opatření k nápravě podle zveřejněného stanoviska úřadu nebyla provedena, úřad dosáhl znepřístupnění webu registru a zahájil řízení o sankci. Zahájení takového řízení není uloženou sankcí — jak dopadlo, dossier doložené nemá a otázka zůstává v [GAP-03](@/dossiers/james-quick/gaps/gap-03.md).\n\n## Veřejné reportáže o službě {#reportaze}\n\nReportáže ČT a Hospodářských novin v letech 2010–2015 řešily uznávání certifikátů CERD bankami, zobrazování osob a korporátní uspořádání služby ([CLM-03](@/dossiers/james-quick/claims/clm-03.md), [CLM-04](@/dossiers/james-quick/claims/clm-04.md)). Samostatná zpráva ČT popsala domény připomínající státní instituce a zveřejnila reakci provozovatele ([CLM-05](@/dossiers/james-quick/claims/clm-05.md)).\n\n## Soudní a politické stopy {#soudy-a-politika}\n\nJiří Jehlička byl v roce 2009 pravomocně zproštěn obžaloby v leasingové věci ([CLM-06](@/dossiers/james-quick/claims/clm-06.md)). Ve veřejném prostoru také podával trestní oznámení související s kauzami Jana Moravy, Stanislava Grosse a Vladimíra Růžičky ([CLM-07](@/dossiers/james-quick/claims/clm-07.md), [CLM-08](@/dossiers/james-quick/claims/clm-08.md)). Podání oznámení samo o sobě není důkazem viny dotčené osoby ani důkazem osobního, obchodního či lobbistického vztahu. U každé z těchto věcí dossier uvádí i to, jak dopadla, aby oznámení nezůstalo viset jako nevyřčené obvinění.\n\n## Co tento přehled zatím neověřil {#mezery}\n\n## Metodické omezení\n\nOficiální web subjektu, CERD a otevřené blogovací platformy mohou doložit autorství nebo existenci veřejného výroku. Bez dalšího nezávislého zdroje ale nedokládají pravdivost tvrzení, která o sobě nebo jiných osobách publikují."
     }
   ]
 }
