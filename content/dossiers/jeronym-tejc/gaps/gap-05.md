@@ -26,3 +26,5 @@ stejná metodická poznámka u
 otevřená.
 
 **Opakovaná kontrola k 2026-08-03**: beze změny, viz stejné hledání u GAP-03. Mezera zůstává otevřená.
+
+**Opakovaná kontrola k 2026-08-06**: beze změny. Termín jednání kárného senátu nebyl dohledán ani v tiskových zprávách Ministerstva spravedlnosti (archiv tiskových zpráv msp.gov.cz, projito do 27. 7. 2026), ani ve vyhledávači Nejvyššího správního soudu. Konkrétně chybí: úřední oznámení termínu jednání a spisová značka věci.

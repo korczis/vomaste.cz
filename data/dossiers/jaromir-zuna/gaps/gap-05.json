@@ -12,7 +12,7 @@
   "title": "GAP-05 — Články Hrot24 a Ekonomického deníku o škrtu vyšly týž den s totožnými čísly — nelze vylouč",
   "description": "Status 'corroborated' u rozpočtového tvrzení se opírá o dva vydavatele, ale jejich redakční nezávislost u této konkrétní zprávy není prokaza",
   "priority": "nízká",
-  "checked": "2026-08-03",
+  "checked": "2026-08-06",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-02"
@@ -24,8 +24,10 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Články Hrot24 a Ekonomického deníku o škrtu vyšly týž den s totožnými čísly — nelze vyloučit společný agenturní zdroj (ČTK).\n\n**Proč je to mezera**: Status 'corroborated' u rozpočtového tvrzení se opírá o dva vydavatele, ale jejich redakční nezávislost u této konkrétní zprávy není prokazatelná. Tato mezera **není** zjištěním žádným směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit otevřeným zdrojem.\n\n**Vyřešeno 2026-08-03**: podezření se potvrdilo jako oprávněné. Přímo ověřeny bylinky obou článků: SRC-03 (Hrot24.cz) i SRC-04 (Ekonomický deník) jsou shodně přebíráno zpravodajství ČTK (nyní `sourceFamily: \"ctk\"` u obou). [CLM-02](@/dossiers/jaromir-zuna/claims/clm-02.md) proto vráceno z CORROBORATED na 1 ZDROJ — oba zdroje zůstávají uvedeny (S1 povoluje víc zdrojů stejné rodiny u status-single), jen status odpovídá skutečné nezávislosti dokládání. Mezera je tímto vyřešena."
+      "value": "Články Hrot24 a Ekonomického deníku o škrtu vyšly týž den s totožnými čísly — nelze vyloučit společný agenturní zdroj (ČTK).\n\n**Proč je to mezera**: Status 'corroborated' u rozpočtového tvrzení se opírá o dva vydavatele, ale jejich redakční nezávislost u této konkrétní zprávy není prokazatelná. Tato mezera **není** zjištěním žádným směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit otevřeným zdrojem.\n\n**Vyřešeno 2026-08-03**: podezření se potvrdilo jako oprávněné. Přímo ověřeny bylinky obou článků: SRC-03 (Hrot24.cz) i SRC-04 (Ekonomický deník) jsou shodně přebíráno zpravodajství ČTK (nyní `sourceFamily: \"ctk\"` u obou). [CLM-02](@/dossiers/jaromir-zuna/claims/clm-02.md) proto vráceno z CORROBORATED na 1 ZDROJ — oba zdroje zůstávají uvedeny (S1 povoluje víc zdrojů stejné rodiny u status-single), jen status odpovídá skutečné nezávislosti dokládání. Mezera je tímto vyřešena.\n\n**Uzavřeno 2026-08-06.** Otázka redakční nezávislosti dvojice Hrot24 / Ekonomický deník u rozpočtového tvrzení pozbyla váhy: čísla jsou nyní doložena přímo z jednání vlády — přepis tiskové konference z 26. 1. 2026 ([SRC-26](@/dossiers/jaromir-zuna/sources/src-26.md)) obsahuje jak snížení o 21 miliard v kapitole Ministerstva obrany a 0,8 miliardy v ostatních kapitolách, tak celkovou částku 185,693 miliardy a obě predikční hodnoty HDP. [CLM-02](@/dossiers/jaromir-zuna/claims/clm-02.md) tedy stojí na nezávislé dvojici (Úřad vlády + zpravodajství rodiny ČTK) a nezávisí na tom, zda byly Hrot24 a Ekonomický deník u této konkrétní zprávy na sobě nezávislé."
     }
   ],
-  "order": 5
+  "order": 5,
+  "status": "closed",
+  "closedAt": "2026-08-06"
 }

@@ -2541,7 +2541,7 @@ Generated from 502 context entities across 26 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: jeronym-tejc, robert-plaga
 - Claims: CLM-38, CLM-39, CLM-40, CLM-41
-- Sources: SRC-15, SRC-16, SRC-18, SRC-19, SRC-20 (4 independent source families)
+- Sources: SRC-15, SRC-16, SRC-18, SRC-19, SRC-20 (5 independent source families)
 - Relations:
   - edge-benes-komise (martin-benes -> komise-pro-prezkum-neprirozenych-umrti-deti, "Dětský ombudsman Martin Beneš je členem Komise pro přezkum nepřirozených úmrtí dětí", dossier: jeronym-tejc)
   - edge-plaga-benes (plaga -> martin-benes, "spor o plošný zákaz mobilů ve školách — reakce na dětského ombudsmana", dossier: robert-plaga)
@@ -2898,7 +2898,7 @@ Generated from 502 context entities across 26 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: ales-juchelka, jeronym-tejc
 - Claims: CLM-09, CLM-10, CLM-11, CLM-12, CLM-15, CLM-16, CLM-23, CLM-33, CLM-34, CLM-36, CLM-37, CLM-39, CLM-42
-- Sources: SRC-02, SRC-04, SRC-05, SRC-06, SRC-07, SRC-10, SRC-11, SRC-12, SRC-14, SRC-15, SRC-20, SRC-24 (5 independent source families)
+- Sources: SRC-02, SRC-04, SRC-05, SRC-06, SRC-07, SRC-10, SRC-11, SRC-12, SRC-14, SRC-15, SRC-20, SRC-24 (6 independent source families)
 - Relations:
   - edge-juchelka-mpsv (juchelka -> ministerstvo-prace-a-socialnich-veci, "Juchelka stojí v čele Ministerstva práce a sociálních věcí", dossier: ales-juchelka)
 - Missing: explicit owner authorization to promote this to its own dossier
@@ -3202,7 +3202,7 @@ Generated from 502 context entities across 26 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: alena-schillerova, jaromir-zuna, jeronym-tejc
 - Claims: CLM-06, CLM-14, CLM-23, CLM-27, CLM-39, CLM-41, CLM-42, CLM-46, CLM-53
-- Sources: SRC-05, SRC-08, SRC-09, SRC-10, SRC-15, SRC-17, SRC-20, SRC-21, SRC-31, SRC-33 (13 independent source families)
+- Sources: SRC-05, SRC-08, SRC-09, SRC-10, SRC-15, SRC-17, SRC-20, SRC-21, SRC-31, SRC-33 (14 independent source families)
 - Relations:
   - edge-zuna-nato (zuna -> nato, "na jednání ministrů obrany NATO v Bruselu se vyjádřil k plnění dvouprocentního závazku", dossier: jaromir-zuna)
 - Missing: explicit owner authorization to promote this to its own dossier
@@ -4590,7 +4590,7 @@ Generated from 502 context entities across 26 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: jaromir-zuna, jeronym-tejc
 - Claims: CLM-14, CLM-41, CLM-42
-- Sources: SRC-08, SRC-09, SRC-17, SRC-20, SRC-21, SRC-31, SRC-33 (7 independent source families)
+- Sources: SRC-08, SRC-09, SRC-17, SRC-20, SRC-21, SRC-31, SRC-33 (8 independent source families)
 - Relations:
   - edge-babis-summit-nato-ankara-2026 (babis -> summit-nato-ankara-2026, "na summitu NATO v Ankaře oznámil navýšení obranného rozpočtu o 36 miliard korun a poprvé dosažení 2 % HDP", dossier: jaromir-zuna)
   - edge-zuna-summit-nato-ankara-2026 (zuna -> summit-nato-ankara-2026, "doprovázel premiéra Babiše na summitu NATO v Ankaře (2026)", dossier: jaromir-zuna)

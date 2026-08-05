@@ -65,14 +65,14 @@ Odpovídá na otázku „kam se podívat a čemu z toho věřit". Publikovaná p
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 658 záznamů v 107 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 667 záznamů v 108 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
 | ctk | 290 | 21 | [ano](/zdroje/ctk/) |
 | seznam-zpravy | 34 | 13 | [ano](/zdroje/seznam-zpravy/) |
-| Poslanecká sněmovna Parlamentu ČR | 30 | 15 | [ano](/zdroje/psp-cz/) |
-| Vláda České republiky (vlada.gov.cz) | 23 | 17 | [ano](/zdroje/vlada-cz/) |
+| Poslanecká sněmovna Parlamentu ČR | 31 | 15 | [ano](/zdroje/psp-cz/) |
+| Vláda České republiky (vlada.gov.cz) | 28 | 17 | [ano](/zdroje/vlada-cz/) |
 | FORUM 24 | 19 | 9 | — |
 | denik-n | 16 | 9 | [ano](/zdroje/denik-n/) |
 | ČT24 (Česká televize) | 15 | 7 | [ano](/zdroje/ceska-televize/) |
@@ -108,12 +108,14 @@ Dopočítáno z `data/dossiers/**/sources/**`, 658 záznamů v 107 rodinách/out
 | Fakultní nemocnice Olomouc (oficiální web) | 2 | 1 | — |
 | Médiář | 2 | 1 | — |
 | Ministerstvo průmyslu a obchodu (MPO) | 2 | 2 | — |
+| Ministerstvo spravedlnosti ČR | 2 | 1 | — |
 | Ministerstvo životního prostředí ČR | 2 | 1 | — |
 | NašeTéma.cz | 2 | 2 | — |
 | Nejvyšší kontrolní úřad (nku.cz) | 2 | 1 | — |
 | Olomoucký deník | 2 | 1 | — |
 | Pražský deník | 2 | 1 | — |
 | Ústavní soud ČR | 2 | 2 | — |
+| Vrchní státní zastupitelství v Olomouci | 2 | 1 | — |
 | idnes-dividenda-2026-07 | 1 | 1 | — |
 | ACRI — Asociace podniků českého železničního průmyslu | 1 | 1 | — |
 | Agrofert (agrofert.cz) | 1 | 1 | — |
@@ -147,7 +149,6 @@ Dopočítáno z `data/dossiers/**/sources/**`, 658 záznamů v 107 rodinách/out
 | Manipulátoři.cz | 1 | 1 | — |
 | Město Bílina (oficiální web) | 1 | 1 | — |
 | MHD86 | 1 | 1 | — |
-| Ministerstvo spravedlnosti ČR | 1 | 1 | — |
 | Ministerstvo zdravotnictví ČR | 1 | 1 | — |
 | Motoristé sobě (motoristesobe.cz/udhpsh) | 1 | 1 | — |
 | Nejvyšší správní soud | 1 | 1 | — |

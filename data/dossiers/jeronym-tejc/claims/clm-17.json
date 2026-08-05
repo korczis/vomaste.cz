@@ -9,12 +9,15 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
   },
-  "text": "Vláda podle ČT24 žádá vyloučení soudce Pavla Šámala z dalšího rozhodování o kompetenční žalobě; Tejc uvedl, že Šámal „při vydání předběžného opatření bezprecedentně projevil soudní aktivismus a zasáhl do ústavního postavení vlády“. Jde o procesní návrh a připsaný výrok ministra, o vyloučení rozhoduje Ústavní soud.",
+  "text": "Vláda podala Ústavnímu soudu návrh na vyloučení soudce zpravodaje Pavla Šámala z dalšího řízení o meritu kompetenční žaloby. Podle přepisu tiskové konference Úřadu vlády Tejc výrok se soudcem jmenovitě nespojil — řekl, že „došlo k zásahu do ústavního postavení vlády“ a že „došlo k bezprecedentnímu projevu soudního aktivismu“; ČT24 tentýž den citovala ministra ve tvaru, podle nějž Šámal „při vydání předběžného opatření bezprecedentně projevil soudní aktivismus a zasáhl do ústavního postavení vlády“. Jde o procesní návrh, o vyloučení rozhoduje Ústavní soud.",
   "status": "status-quote",
   "statusLabel": "CITACE",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-22"
     }
   ],
   "subjects": [

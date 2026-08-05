@@ -19,3 +19,5 @@ Není zjištěno, zda z inspekčních závěrů ke sporu o rozhovor s prezidente
 **Proč je to mezera**: Dostupné zdroje uvádějí pouze příslib metodické úpravy rozkazů ke komunikaci, nikoli kázeňská či personální opatření. Tato mezera **není** zjištěním žádným směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit otevřeným zdrojem.
 
 **Ověřeno 3. 8. 2026**: mezera je věcně vyřešena už existujícími tvrzeními [CLM-12](@/dossiers/jaromir-zuna/claims/clm-12.md) (chyby konstatovány u vedoucího komunikace generálního štábu i ministrova kabinetu, žádný důkaz zákazu/cenzury) a [CLM-31](@/dossiers/jaromir-zuna/claims/clm-31.md) (příslib jen metodické aktualizace rozkazů). Doplňkovým hledáním (Aktuálně.cz) potvrzeno, že žádná konkrétní kázeňská ani personální opatření vůči označeným osobám nebyla oznámena — jen procesní reforma rozkazů. Odpověď zůstává „žádné zjištěné personální důsledky“, nyní doložena dvěma existujícími tvrzeními.
+
+**Opakovaná kontrola k 2026-08-06**: beze změny. Konkrétní kázeňská či personální opatření z inspekčních závěrů nejsou doložena žádným otevřeným zdrojem.
