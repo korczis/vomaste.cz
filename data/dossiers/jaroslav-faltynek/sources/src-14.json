@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-14",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-14",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek"
+  },
+  "title": "SRC-14 — Poslanecká sněmovna Parlamentu ČR: profil poslance, VII. volební období (2013–2017)",
+  "description": "Primární úřední profil za období 2013–2017: poslanec od 26. 10. 2013 do 26. 10. 2017, předseda poslaneckého klubu ANO 2011 od 30. 10. 2013 a předseda zemědělského výboru od 6. 12. 2013.",
+  "outlet": "Poslanecká sněmovna Parlamentu ČR",
+  "sourceType": "primární úřední záznam",
+  "url": "https://www.psp.cz/sqw/detail.sqw?id=6190&o=7",
+  "retrieved": "2026-08-05",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/claims/CLM-13"
+    }
+  ],
+  "subjects": [
+    "faltynek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil poslance za **VII. volební období (2013–2017)**, volební kraj Olomoucký, zvolen na kandidátce ANO 2011. Uvádí:\n\n- **poslanec od 26. 10. 2013 do 26. 10. 2017**\n- **Poslanecký klub ANO 2011 — člen a předseda od 30. 10. 2013 do 26. 10. 2017**\n- Zemědělský výbor — člen od 4. 12. 2013, **předseda od 6. 12. 2013** do 26. 10. 2017\n- Organizační výbor — člen od 4. 12. 2013 do 26. 10. 2017\n- Dozorčí rada Státního zemědělského intervenčního fondu — člen od 14. 5. 2014 do 13. 7. 2016\n\n**Poznámka k přesnosti a limitům**: úřední záznam vypočítává výhradně **mandát a funkce ve Sněmovně a v jejích orgánech**. Neuvádí — a tento přehled proto netvrdí — **žádnou vládní funkci**; předsednictví poslaneckého klubu je funkce uvnitř Sněmovny, členství ve vedení hnutí ANO je stranická role a **ani jedno není veřejný úřad ve smyslu členství ve vládě**. Záznam nic nevypovídá o kvalitě výkonu těchto funkcí ani o čemkoli jiném — je to evidence, ne hodnocení."
+    }
+  ],
+  "order": 14
+}

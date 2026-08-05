@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/richard-chlad/sources/SRC-04",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-04",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/richard-chlad"
+  },
+  "title": "SRC-04 — Úřad pro dohled nad hospodařením politických stran a politických hnutí: výroční finanční zpráva hnutí Motoristé sobě za rok 2025",
+  "description": "Primární úřední dokument: výroční finanční zpráva hnutí Motoristé sobě (IČ 05989175) za rok 2025, předložená Úřadu 1. 4. 2026. Část V. (Dary) i část VI. (Ostatní bezúplatná plnění nad 50 000 Kč) evidují u Richarda Chlada pětici položek v souhrnu 638 864 Kč, a to výhradně jako bezúplatná plnění, nikoli jako peněžité dary.",
+  "outlet": "Úřad pro dohled nad hospodařením politických stran a politických hnutí",
+  "sourceFamily": "udhpsh",
+  "sourceType": "primární úřední záznam / veřejný rejstřík",
+  "url": "https://zpravy.udh.gov.cz/zprava/vfz2025/referendumeu",
+  "retrieved": "2026-08-05",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "chlad"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Výroční finanční zpráva politického hnutí **Motoristé sobě**, IČ 05989175,\nse sídlem Thunovská 183/18, Praha, **za rok 2025**. Identifikátor zprávy\n`Z24607-20260401140544`, **datum předložení 1. 4. 2026**. Zprávu podává\nhnutí Úřadu podle zákona č. 424/1991 Sb.; jde tedy o **primární úřední\ndokument**, ne o zpravodajství o něm.\n\n**Část V. „Dary\"** (sloupec „Výše peněžitého daru nebo obvyklé ceny\nnepeněžitého daru v Kč\", úhrn části 30 503 156,41 Kč) uvádí u dárce\n**Chlad, Richard Ing.** pět položek, každou výslovně označenou jako\n**bezúplatné plnění**:\n\n- **200 000,00 Kč** — propůjčení vozů Bugatti na akci\n- **185 001,00 Kč** — uspořádání akce\n- **140 000,00 Kč** — půjčení sportovních automobilů na akce\n- **59 313,00 Kč** — výroba a instalace Billboardu, pronájem rekl. plochy\n- **54 550,00 Kč** — demontáž billboardu\n\nSoučet je **638 864 Kč**. **Část VI. „Ostatní bezúplatná plnění, jejichž\nobvyklá cena převyšuje částku 50 000 Kč\"** (úhrn části 2 642 441,60 Kč)\nuvádí **tytéž** položky ve stejné výši. Úhrn části V. se přitom\npřesně rovná řádku 5 přehledu příjmů („Dary, dědictví a bezúplatná\nplnění\", 30 503 156,41 Kč) — část VI. je tedy samostatný zákonný přehled\ntýchž plnění, ne další, k nim přičítaná částka.\n\n**Poznámka k přesnosti a limitům**: dokument dokládá, **co bylo vykázáno**,\nnikoli že to bylo vykázáno správně nebo úplně — o tom viz\n[SRC-07](@/dossiers/richard-chlad/sources/src-07.md) a\n[GAP-02](@/dossiers/richard-chlad/gaps/gap-02.md). **Poskytnout straně\nbezúplatné plnění je legální** a jeho evidence není zjištěním o ničem\nnepřípustném. Terminologicky je podstatné, že zpráva u této osoby\nneuvádí **žádný peněžitý dar** za rok 2025: jde celou částkou o\n**nepeněžitá plnění** (zapůjčení vozů, uspořádání akce, billboardové\npráce). Označovat souhrn paušálně za „dary\" je proti znění dokumentu\nnepřesné — proto je\n[CLM-01](@/dossiers/richard-chlad/claims/clm-01.md) formulován podle něj.\nVeřejný rejstřík Hlídač státu\n([SRC-01](@/dossiers/richard-chlad/sources/src-01.md)) přebírá tatáž\ndata včetně doslovných popisů položek — proto se oba zdroje počítají\njako **jedno nezávislé doložení** (rodina `udhpsh`), ne jako dvě."
+    }
+  ],
+  "order": 4
+}

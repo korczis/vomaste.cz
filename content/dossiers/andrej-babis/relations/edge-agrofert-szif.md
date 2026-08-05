@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Agrofert — SZIF ukončil administraci 21 předjednaných projektů (2023, spory u soudů) a obnovil administraci nových žádostí (4/2026) — Státní zemědělský intervenční fond"
+description = "Agrofert — SZIF ukončil administraci 21 předjednaných projektů (2023, spory u soudů) a…. Vztah v grafu dossieru Andrej Babiš. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 6
 

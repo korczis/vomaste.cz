@@ -3,6 +3,7 @@
 title = "ČD Cargo"
 template = "entity.html"
 weight = 84
+description = "Kontextová entita — Bednárik dříve ve vedení ČD Cargo (biografický údaj z oficiálního profilu). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

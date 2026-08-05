@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Vojtěch Faltus — Právník Faltus varoval, že rychlejší povolování může přesunout spory k soudům — Novela stavebního zákona 2026 (sněmovní tisk 67)"
+description = "Vojtěch Faltus — Právník Faltus varoval, že rychlejší povolování může přesunout spory k…. Vztah v grafu dossieru Karel Havlíček. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 9
 

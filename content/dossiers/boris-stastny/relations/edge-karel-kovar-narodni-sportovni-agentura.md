@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Karel Kovář — jmenován předsedou Národní sportovní agentury (26. 1. 2026) — Národní sportovní agentura (NSA)"
+description = "Karel Kovář — jmenován předsedou Národní sportovní agentury (26. 1. 2026) — Národní…. Vztah v grafu dossieru Boris Šťastný. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 10
 

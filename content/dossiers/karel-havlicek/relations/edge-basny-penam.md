@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Adam Bašný — Evropský pověřený žalobce Bašný (EPPO) podal obžalobu na Pekárnu Zelená louka a dvě fyzické osoby — Pekárna Zelená louka (skupina Agrofert)"
+description = "Adam Bašný — Evropský pověřený žalobce Bašný (EPPO) podal obžalobu na Pekárnu Zelená…. Vztah v grafu dossieru Karel Havlíček. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 20
 

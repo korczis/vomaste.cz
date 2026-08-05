@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Jaromír Zůna — doprovázel premiéra Babiše na summitu NATO v Ankaře (2026) — Summit NATO v Ankaře (7.–8. 7. 2026)"
+description = "Jaromír Zůna — doprovázel premiéra Babiše na summitu NATO v Ankaře (2026) — Summit NATO v…. Vztah v grafu dossieru Jaromír Zůna. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 17
 

@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "James Quick — BRKI a NRKI se od aktivit CERD veřejně distancovaly — BRKI a NRKI"
+description = "James Quick — BRKI a NRKI se od aktivit CERD veřejně distancovaly — BRKI a NRKI. Vztah v grafu dossieru James Quick. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 8
 

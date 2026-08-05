@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Miloslav Kala — prezident Nejvyššího kontrolního úřadu — Nejvyšší kontrolní úřad"
+description = "Miloslav Kala — prezident Nejvyššího kontrolního úřadu — Nejvyšší kontrolní úřad. Vztah v grafu dossieru Lubomír Metnar. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 4
 

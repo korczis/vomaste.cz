@@ -3,6 +3,7 @@
 title = "Žhářský útok ve Vítkově (2009)"
 template = "entity.html"
 weight = 463
+description = "Kontextová entita — Historická událost zmíněná jen jako objekt údajného zlehčujícího komentáře v kauze smazaných příspěvků; okrajová zmínka."
 
 [extra]
 generated = true

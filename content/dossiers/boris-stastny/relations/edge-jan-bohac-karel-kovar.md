@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Jan Boháč — uvítal jeho jmenování předsedou Národní sportovní agentury — Karel Kovář"
+description = "Jan Boháč — uvítal jeho jmenování předsedou Národní sportovní agentury — Karel Kovář. Vztah v grafu dossieru Boris Šťastný. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 11
 

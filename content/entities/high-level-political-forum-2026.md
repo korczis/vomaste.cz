@@ -3,6 +3,7 @@
 title = "High-Level Political Forum OSN 2026 (New York)"
 template = "entity.html"
 weight = 144
+description = "Kontextová entita — Fórum OSN k udržitelnému rozvoji (7.–16. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "TOP 09 — kauzu rozporu v číslech na sociálních sítích komentovala ironickou poznámkou o fejkování kroků — Boris Šťastný"
+description = "TOP 09 — kauzu rozporu v číslech na sociálních sítích komentovala ironickou poznámkou o…. Vztah v grafu dossieru Boris Šťastný. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 26
 

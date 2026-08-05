@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Agrofert — největší tuzemský producent biopaliv ve skupině (kontext sporu o podporu biopaliv 2015) — Preol"
+description = "Agrofert — největší tuzemský producent biopaliv ve skupině (kontext sporu o podporu…. Vztah v grafu dossieru Andrej Babiš. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 38
 

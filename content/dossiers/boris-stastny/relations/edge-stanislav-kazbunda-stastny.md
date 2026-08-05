@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Stanislav Kazbunda — označil situaci za potenciálně závažný bezpečnostní incident, který se měl hlásit bezpečnostním složkám — Boris Šťastný"
+description = "Stanislav Kazbunda — označil situaci za potenciálně závažný bezpečnostní incident, který…. Vztah v grafu dossieru Boris Šťastný. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 16
 

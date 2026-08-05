@@ -3,6 +3,7 @@
 title = "Unie rodičů"
 template = "entity.html"
 weight = 421
+description = "Kontextová entita — Rodičovská organizace; kritika sběru citlivých dat a posunu prázdnin. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

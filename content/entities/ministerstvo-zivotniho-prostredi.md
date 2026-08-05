@@ -3,6 +3,7 @@
 title = "Ministerstvo životního prostředí ČR"
 template = "entity.html"
 weight = 281
+description = "Kontextová entita — Resort Igora Červeného; rekonstrukce kanceláří, nové oddělení pod Turkem, rušení míst."
 
 [extra]
 generated = true

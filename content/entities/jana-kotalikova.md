@@ -3,6 +3,7 @@
 title = "Jana Kotalíková"
 template = "entity.html"
 weight = 168
+description = "Kontextová entita — Vedoucí Úřadu vlády 17. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

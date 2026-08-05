@@ -9,10 +9,13 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar"
   },
-  "text": "Podle oficiálního záznamu výsledků jednání vlády projednala vláda 27. července 2026 pod bodem 28 (čj. 591/26) návrh ministra vnitra na změnu usnesení vlády č. 1604/2008 k zajišťování bezpečnosti chráněných objektů a prostorů a schválila jej; samotný záznam neuvádí, kterých objektů se změna týká",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "text": "Vláda na jednání 27. července 2026 schválila jako bod 28 v části projednávané bez rozpravy materiál ministra vnitra „Návrh na změnu usnesení vlády ze dne 16. prosince 2008 č.1604 k zajišťování bezpečnosti chráněných objektů a prostorů…“ (čj. 591/26); přijaté usnesení zveřejnil Úřad vlády 30. července 2026",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-08"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-11"
     }
@@ -24,7 +27,9 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/lubomir-metnar/_index.md#registr-tvrzeni)."
+      "value": "**Nové tvrzení, 2026-08-05 — procesní kostra kauzy doložená primárním\ndokumentem.**\n\n- [SRC-11](@/dossiers/lubomir-metnar/sources/src-11.md) — Úřad vlády,\n  Výsledky jednání vlády 27. července 2026 (publikováno 27. 7. 2026\n  ve 14:55): bod 28, čj. 591/26, předkládá ministr vnitra, výsledek\n  **schváleno**, zařazeno v části „C. K projednání bez rozpravy“.\n- [SRC-08](@/dossiers/lubomir-metnar/sources/src-08.md) — ČTK, 30. 7.\n  2026: „Úřad vlády dnes zveřejnil pondělní usnesení kabinetu…“ a „Vláda\n  v pondělí informovala, že v bodě 28 pozměnila předchozí usnesení, která\n  vyjmenovávají instituce s nárokem na policejní ochrannou službu ve svých\n  sídlech.“\n\nDvě rodiny, dva vydavatelé, dvě různá zjišťování.\n\n**Proč je to vedeno zvlášť.** Toto tvrzení říká jen **co vláda formálně\nschválila a kdy**. Co konkrétně se změnilo (NKÚ ven, ČNB dovnitř) je\n[CLM-26](@/dossiers/lubomir-metnar/claims/clm-26.md) a stojí na jiných\nzdrojích — stránka Úřadu vlády žádnou z obou institucí nejmenuje. „Bez\nrozpravy“ je běžná procesní kategorie pro nesporné body, ne zjištění\no utajování; s připomínkovým řízením ji nelze zaměňovat\n([CLM-10](@/dossiers/lubomir-metnar/claims/clm-10.md))."
     }
-  ]
+  ],
+  "createdAt": "2026-08-05",
+  "checkedAt": "2026-08-05"
 }

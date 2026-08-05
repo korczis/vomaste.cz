@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Lukáš Vaverka — bývalý poradce Turka v Evropském parlamentu, člen jeho Jaguar klubu, dříve zaměstnanec jeho autodílny Art of Performance — Filip Turek"
+description = "Lukáš Vaverka — bývalý poradce Turka v Evropském parlamentu, člen jeho Jaguar klubu…. Vztah v grafu dossieru Igor Červený. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 13
 

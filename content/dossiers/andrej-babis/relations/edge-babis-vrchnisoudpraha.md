@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Andrej Babiš — Vrchní soud v Praze dvakrát zrušil zprošťující rozsudek; odvolání Nagyové projednává 31. 8.–1. 9. 2026 — Vrchní soud v Praze"
+description = "Andrej Babiš — Vrchní soud v Praze dvakrát zrušil zprošťující rozsudek; odvolání Nagyové…. Vztah v grafu dossieru Andrej Babiš. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 41
 

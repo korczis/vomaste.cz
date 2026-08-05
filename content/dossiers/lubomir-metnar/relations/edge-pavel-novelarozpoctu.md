@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Petr Pavel (prezident) — prezident vetoval novelu mj. kvůli obavám o nezávislost NKÚ, Ústavního soudu a ombudsmana — Novela rozpočtových zákonů 2026 (sněmovní tisk č. 90) a prezidentské veto"
+description = "Petr Pavel (prezident) — prezident vetoval novelu mj. kvůli obavám o nezávislost NKÚ…. Vztah v grafu dossieru Lubomír Metnar. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 7
 

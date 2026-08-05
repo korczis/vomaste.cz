@@ -3,6 +3,7 @@
 title = "Tomáš Kolář"
 template = "entity.html"
 weight = 404
+description = "Kontextová entita — Zástupce Svazu průmyslu a dopravy; benefitový návrh podpořil. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

@@ -3,6 +3,7 @@
 title = "Jan Morava"
 template = "entity.html"
 weight = 518
+description = "Kontextová veřejná osoba: ČT24 popsala trestní oznámení Jiřího Jehličky v souvislosti s jeho kauzou a následné odložení věci. Nejde o záznam obchodního, osobního ani lobbistického vztahu."
 
 [extra]
 generated = true

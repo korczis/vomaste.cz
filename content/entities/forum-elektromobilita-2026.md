@@ -3,6 +3,7 @@
 title = "Forum Elektromobilita 2026"
 template = "entity.html"
 weight = 131
+description = "Kontextová entita — Konference k elektromobilitě konaná 11. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

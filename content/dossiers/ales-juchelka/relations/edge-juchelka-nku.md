@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Aleš Juchelka — NKÚ zahrnul kauzu bývalé poradkyně do probíhající kontroly MPSV — Nejvyšší kontrolní úřad"
+description = "Aleš Juchelka — NKÚ zahrnul kauzu bývalé poradkyně do probíhající kontroly MPSV —…. Vztah v grafu dossieru Aleš Juchelka. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 4
 

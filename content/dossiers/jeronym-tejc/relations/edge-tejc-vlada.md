@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Jeroným Tejc — ministr spravedlnosti — Vláda ČR"
+description = "Jeroným Tejc — ministr spravedlnosti — Vláda ČR. Vztah v grafu dossieru Jeroným Tejc. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 1
 

@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Ivan Bednárik — bývalý předseda představenstva a generální ředitel (rezignace 2022) — České dráhy"
+description = "Ivan Bednárik — bývalý předseda představenstva a generální ředitel (rezignace 2022) —…. Vztah v grafu dossieru Ivan Bednárik. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 2
 

@@ -12,7 +12,7 @@
   "title": "GAP-07 — Doložené reakce dalších politických stran a ústavních činitelů přímo na rozsudek ze 3. 6. ",
   "description": "Ve vyhledávání se objevovaly zmínky o reakcích politiků, ale v otevřených a načtených článcích nebyly doloženy; snippet nebyl uznán jako důk",
   "priority": "střední",
-  "checked": "2026-08-03",
+  "checked": "2026-08-05",
   "claims": [],
   "subjects": [
     "okamura"
@@ -20,7 +20,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Doložené reakce dalších politických stran a ústavních činitelů přímo na rozsudek ze 3. 6. 2026.\n\n**Proč je to mezera**: Ve vyhledávání se objevovaly zmínky o reakcích politiků, ale v otevřených a načtených článcích nebyly doloženy; snippet nebyl uznán jako důkaz a bez otevření zdroje tvrzení nevzniklo. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem.\n\n**Opakovaná kontrola k 2026-08-03**: hledání zopakováno, opět jen vyjádření SPD samotné a soudkyně Tiché (procesní role, ne politická reakce), žádná citace jiné strany či ústavního činitele nedohledána. Mezera zůstává otevřená."
+      "value": "Doložené reakce dalších politických stran a ústavních činitelů přímo na rozsudek ze 3. 6. 2026.\n\n**Proč je to mezera**: Ve vyhledávání se objevovaly zmínky o reakcích politiků, ale v otevřených a načtených článcích nebyly doloženy; snippet nebyl uznán jako důkaz a bez otevření zdroje tvrzení nevzniklo. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem.\n\n**Opakovaná kontrola k 2026-08-03**: hledání zopakováno, opět jen vyjádření SPD samotné a soudkyně Tiché (procesní role, ne politická reakce), žádná citace jiné strany či ústavního činitele nedohledána. Mezera zůstává otevřená.\n\n**Opakovaná kontrola k 2026-08-05 (primární dokumenty)**: prošel stenozáznam 11. schůze Poslanecké sněmovny z 5. března 2026, kde reakce politiků na trestní věc zazněly. Ty se ale vztahují k **hlasování o vydání**, ne k rozsudku ze 3. června 2026, a mezeru proto neuzavírají. **Co konkrétně chybí**: doložené, přímo k rozsudku ze 3. června 2026 vztažené reakce dalších politických stran a ústavních činitelů v otevřeném, celém přečteném zdroji. Mezera zůstává otevřená."
     }
   ],
   "order": 7

@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Tünde Bartha — pověřena řízením 2018–2021; 15. 12. 2025 jmenována vedoucí Úřadu vlády (primární úřední zdroj) — Úřad vlády ČR"
+description = "Tünde Bartha — pověřena řízením 2018–2021; 15. 12. 2025 jmenována vedoucí Úřadu vlády…. Vztah v grafu dossieru Tünde Bartha. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 1
 

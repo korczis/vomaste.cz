@@ -10,11 +10,14 @@
     "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar"
   },
   "text": "Podle návrhu ministerstva vnitra by zrušení policejní ochranné služby NKÚ mělo platit od 1. ledna následujícího roku.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-08"
     }
   ],
   "subjects": [
@@ -24,7 +27,8 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/lubomir-metnar/_index.md#registr-tvrzeni)."
+      "value": "Původní doložení stálo výhradně na reportáži Seznam Zpráv ([SRC-02](@/dossiers/lubomir-metnar/sources/src-02.md)) a na titulech, které ji přebíraly.\n\n**Povýšeno 2026-08-05.** ČTK po zveřejnění přijatého usnesení Úřadem vlády uvedla nezávisle na seznamové linii, že NKÚ o policejní ochrannou službu přijde „od příštího roku“ ([SRC-08](@/dossiers/lubomir-metnar/sources/src-08.md), 30. 7. 2026) — tedy k témuž datu účinnosti, které popisoval návrh. Jde o dvě různé vydavatelské rodiny (Seznam Zprávy vs. ČTK) a o dvě různá zjišťování: Seznam četl materiál v systému vládních dokumentů, ČTK zveřejněné usnesení.\n\n**Co to není.** Formulace „podle návrhu“ zůstává, protože takto zní původní zjištění; že vláda návrh 27. 7. 2026 schválila, vede samostatně [CLM-26](@/dossiers/lubomir-metnar/claims/clm-26.md)."
     }
-  ]
+  ],
+  "checkedAt": "2026-08-05"
 }

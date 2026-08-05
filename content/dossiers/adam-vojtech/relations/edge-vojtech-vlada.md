@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Adam Vojtěch — ministr zdravotnictví — Vláda ČR"
+description = "Adam Vojtěch — ministr zdravotnictví — Vláda ČR. Vztah v grafu dossieru Adam Vojtěch. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 1
 

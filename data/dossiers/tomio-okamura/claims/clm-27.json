@@ -9,12 +9,15 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
   },
-  "text": "Po sněmovních volbách v říjnu 2025 se Tomiu Okamurovi obnovila poslanecká imunita v plném rozsahu, takže bylo nutné o vydání k trestnímu stíhání rozhodovat znovu.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "text": "Po sněmovních volbách v říjnu 2025 bylo nutné o vydání Tomia Okamury k trestnímu stíhání rozhodovat znovu: Obvodní soud pro Prahu 1 doručil Poslanecké sněmovně novou žádost 10. listopadu 2025, přestože předchozí Sněmovna vyslovila souhlas už 12. února 2025. Že se Okamurovi po volbách obnovila poslanecká imunita v plném rozsahu, uvádí citované zpravodajství.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-20"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-30"
     }
   ],
   "subjects": [
@@ -26,5 +29,6 @@
       "type": "markdown",
       "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/tomio-okamura/_index.md#registr-tvrzeni)."
     }
-  ]
+  ],
+  "checkedAt": "2026-08-05"
 }

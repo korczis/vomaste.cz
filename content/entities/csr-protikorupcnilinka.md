@@ -3,6 +3,7 @@
 title = "CSR & Protikorupcnilinka.cz s.r.o."
 template = "entity.html"
 weight = 516
+description = "Kontextová společnost spojená s provozem systému CERD v úředních dokumentech ÚOOÚ."
 
 [extra]
 generated = true

@@ -3,6 +3,7 @@
 title = "Spor o koncepci armády (2026)"
 template = "entity.html"
 weight = 386
+description = "Kontextová entita — Premiérova veřejná nespokojenost se Zůnovou koncepcí armády (počty vojáků, nábor) a opakovaná neuzavřená jednání Bezpečnostní rady státu."
 
 [extra]
 generated = true

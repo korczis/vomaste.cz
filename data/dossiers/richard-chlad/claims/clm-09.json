@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-09",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-09",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/richard-chlad"
+  },
+  "text": "Zpráva o financování volební kampaně hnutí Motoristé sobě pro volby do Poslanecké sněmovny 2025, předložená Úřadu pro dohled 5. 1. 2026, eviduje týchž pět bezúplatných plnění od Richarda Chlada jako plnění poskytnutá volební kampani hnutí, s daty plnění 1. 8. 2025 (59 313 Kč) a 1. 9. 2025 (zbývající čtyři položky)",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/sources/SRC-05"
+    }
+  ],
+  "subjects": [
+    "chlad"
+  ],
+  "order": 9,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/richard-chlad/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

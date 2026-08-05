@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Igor Červený — vedení resortu při systemizaci, která zrušila 38 míst a zanikající oddělení (2026) — Ministerstvo životního prostředí ČR"
+description = "Igor Červený — vedení resortu při systemizaci, která zrušila 38 míst a zanikající…. Vztah v grafu dossieru Igor Červený. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 15
 

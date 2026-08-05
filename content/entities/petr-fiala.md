@@ -3,6 +3,7 @@
 title = "Petr Fiala"
 template = "entity.html"
 weight = 338
+description = "Kontextová entita — Expremiér (ODS); po nástupu jeho vlády v lednu 2022 MPO oznámilo vymáhání dotace na toustovou linku."
 
 [extra]
 generated = true

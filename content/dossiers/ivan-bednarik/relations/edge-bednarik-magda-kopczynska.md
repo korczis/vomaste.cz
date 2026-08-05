@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Ivan Bednárik — jednal v Bruselu o financování vysokorychlostních tratí z unijních fondů — Magda Kopczyńska"
+description = "Ivan Bednárik — jednal v Bruselu o financování vysokorychlostních tratí z unijních fondů…. Vztah v grafu dossieru Ivan Bednárik. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 14
 

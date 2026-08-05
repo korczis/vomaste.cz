@@ -3,6 +3,7 @@
 title = "Igor Stříž"
 template = "entity.html"
 weight = 149
+description = "Kontextová entita — Nejvyšší státní zástupce — v červenci 2024 nevyužil oprávnění nařídit mimořádnou kontrolu odložení reklamní větve Čapího hnízda."
 
 [extra]
 generated = true

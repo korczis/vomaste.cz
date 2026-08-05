@@ -3,6 +3,7 @@
 title = "Ivana Tichá"
 template = "entity.html"
 weight = 155
+description = "Kontextová entita — Samosoudkyně Obvodního soudu pro Prahu 1; vydala nepravomocný rozsudek nad SPD, terč Okamurovy kritiky."
 
 [extra]
 generated = true

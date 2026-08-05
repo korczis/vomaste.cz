@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Agrofert — firma ze skupiny (Penam) — Pekárna Zelená louka (skupina Agrofert)"
+description = "Agrofert — firma ze skupiny (Penam) — Pekárna Zelená louka (skupina Agrofert). Vztah v grafu dossieru Andrej Babiš. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 26
 

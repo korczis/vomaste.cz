@@ -10,7 +10,7 @@
     "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
   },
   "title": "Průběh trestního řízení a odvolání",
-  "summary": "Průběh trestního řízení a odvolání — viz tvrzení CLM-20, CLM-21, CLM-22, CLM-23, CLM-24, CLM-31.",
+  "summary": "Průběh trestního řízení a odvolání — viz tvrzení CLM-20, CLM-21, CLM-22, CLM-23, CLM-24, CLM-31, CLM-36.",
   "period": "2026",
   "status": "status-single",
   "statusLabel": "Sledované téma",
@@ -33,6 +33,9 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-31"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-36"
     }
   ],
   "sources": [
@@ -56,6 +59,12 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-21"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-30"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-32"
     }
   ],
   "subjects": [

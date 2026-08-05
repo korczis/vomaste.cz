@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "HYDROPROGRESS, s.r.o. — Lesy České republiky, s.p. zveřejnil v registru smluv smlouvy, jejichž protistranou je HYDROPROGRESS, s.r.o. — Lesy České republiky, s.p."
+description = "HYDROPROGRESS, s.r.o. — Lesy České republiky, s.p. zveřejnil v registru smluv smlouvy…. Vztah v grafu dossieru Martin Pavlík. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 4
 

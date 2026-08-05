@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-12",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-12",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/richard-chlad"
+  },
+  "text": "Registr uložených sankcí Úřadu pro dohled k 5. 8. 2026 neeviduje u hnutí Motoristé sobě žádnou sankci vztahující se k výroční finanční zprávě za rok 2025 ani k plněním evidovaným u Richarda Chlada; přehled protokolů o vykonaných kontrolách k témuž datu u tohoto hnutí žádný protokol neuvádí",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/sources/SRC-08"
+    }
+  ],
+  "subjects": [
+    "chlad"
+  ],
+  "order": 12,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/richard-chlad/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

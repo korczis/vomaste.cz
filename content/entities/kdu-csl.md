@@ -3,6 +3,7 @@
 title = "KDU-ČSL"
 template = "entity.html"
 weight = 217
+description = "Kontextová entita — Opoziční strana; její politici (Zdechovský, Výborný, Bartošek) vystupují v kauzách dotace, stavebního zákona a obranného rozpočtu."
 
 [extra]
 generated = true

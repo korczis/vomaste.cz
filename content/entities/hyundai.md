@@ -3,6 +3,7 @@
 title = "Hyundai"
 template = "entity.html"
 weight = 147
+description = "Kontextová entita — Účastník konference Forum Elektromobilita 2026. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

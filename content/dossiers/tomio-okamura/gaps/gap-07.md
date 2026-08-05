@@ -21,3 +21,5 @@ směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
 
 **Opakovaná kontrola k 2026-08-03**: hledání zopakováno, opět jen vyjádření SPD samotné a soudkyně Tiché (procesní role, ne politická reakce), žádná citace jiné strany či ústavního činitele nedohledána. Mezera zůstává otevřená.
+
+**Opakovaná kontrola k 2026-08-05 (primární dokumenty)**: prošel stenozáznam 11. schůze Poslanecké sněmovny z 5. března 2026, kde reakce politiků na trestní věc zazněly. Ty se ale vztahují k **hlasování o vydání**, ne k rozsudku ze 3. června 2026, a mezeru proto neuzavírají. **Co konkrétně chybí**: doložené, přímo k rozsudku ze 3. června 2026 vztažené reakce dalších politických stran a ústavních činitelů v otevřeném, celém přečteném zdroji. Mezera zůstává otevřená.

@@ -3,6 +3,7 @@
 title = "Pavel Šámal"
 template = "entity.html"
 weight = 330
+description = "Kontextová entita — Ústavní soudce, zpravodaj kompetenčního sporu Pl. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

@@ -3,6 +3,7 @@
 title = "Stanislav Kazbunda"
 template = "entity.html"
 weight = 392
+description = "Kontextová entita — Bezpečnostní expert; nález označil za potenciálně závažný incident, který měl být hlášen bezpečnostním složkám."
 
 [extra]
 generated = true

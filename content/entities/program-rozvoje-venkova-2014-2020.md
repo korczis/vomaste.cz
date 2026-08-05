@@ -3,6 +3,7 @@
 title = "Program rozvoje venkova 2014–2020"
 template = "entity.html"
 weight = 354
+description = "Kontextová entita — Dotační program administrovaný SZIF za Šebestyánova vedení; kontrola NKÚ č. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

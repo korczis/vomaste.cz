@@ -9,15 +9,18 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek"
   },
-  "text": "Zrušení stíhání bylo rozhodnutím státního zástupce, nikoli soudu; citovaný zdroj neuvádí žádné rozhodnutí o vině ani o nevině",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "text": "Zrušení bylo rozhodnutím státního zástupce o stížnosti proti obvinění, nikoli rozhodnutím soudu; citované zdroje neuvádějí žádné rozhodnutí o vině ani o nevině",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-02"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-faltynek/sources/SRC-10"
     }
   ],
   "subjects": [

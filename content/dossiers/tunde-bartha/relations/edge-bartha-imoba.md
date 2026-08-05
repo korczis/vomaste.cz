@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Tünde Bartha — dle vlastního vyjádření bydlí v objektu společnosti — Imoba"
+description = "Tünde Bartha — dle vlastního vyjádření bydlí v objektu společnosti — Imoba. Vztah v grafu dossieru Tünde Bartha. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 8
 

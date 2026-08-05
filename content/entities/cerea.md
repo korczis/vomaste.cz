@@ -3,6 +3,7 @@
 title = "Cerea"
 template = "entity.html"
 weight = 89
+description = "Kontextová entita — Firma skupiny Agrofert uvedená mezi společnostmi s ukončenou administrací projektů SZIF."
 
 [extra]
 generated = true

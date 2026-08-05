@@ -3,6 +3,7 @@
 title = "Kamufláž (armádní podcast)"
 template = "entity.html"
 weight = 185
+description = "Kontextová entita — Armádní podcast, pro který vznikl neodvysílaný rozhovor s prezidentem Pavlem — jádro kauzy údajné cenzury; přímý aktér děje."
 
 [extra]
 generated = true

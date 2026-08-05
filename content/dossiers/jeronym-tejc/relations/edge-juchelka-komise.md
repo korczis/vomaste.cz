@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Aleš Juchelka — Juchelka vede Komisi pro přezkum nepřirozených úmrtí dětí, ustavenou po kauze Viktorky — Komise pro přezkum nepřirozených úmrtí dětí"
+description = "Aleš Juchelka — Juchelka vede Komisi pro přezkum nepřirozených úmrtí dětí, ustavenou po…. Vztah v grafu dossieru Jeroným Tejc. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 14
 

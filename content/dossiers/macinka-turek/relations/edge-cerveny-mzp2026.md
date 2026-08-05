@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Igor Červený — jmenován ministrem (nahradil Macinku, 23. 2. 2026) — Jmenování ministrem ŽP (2026)"
+description = "Igor Červený — jmenován ministrem (nahradil Macinku, 23. 2. 2026) — Jmenování ministrem…. Vztah v grafu dossieru Petr Macinka a Filip Turek. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 22
 

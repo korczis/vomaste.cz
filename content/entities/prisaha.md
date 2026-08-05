@@ -3,6 +3,7 @@
 title = "Přísaha"
 template = "entity.html"
 weight = 350
+description = "Kontextová entita — Společná kandidátka Motoristů a Přísahy v eurovolbách 2024 (Turek zvolen); interní hlasování Motoristů 2025 odmítlo koalici s Přísahou do sněmovních voleb."
 
 [extra]
 generated = true

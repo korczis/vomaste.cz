@@ -14,4 +14,6 @@ record_type = "claim"
 lang = "cs"
 clm_id = "CLM-27"
 +++
-Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/lubomir-metnar/_index.md#registr-tvrzeni).
+**Povýšeno 2026-08-05.** Obsah tiskové zprávy NKÚ nezávisle referovala i ČTK ([SRC-08](@/dossiers/lubomir-metnar/sources/src-08.md), 30. 7. 2026): „NKÚ v tiskové zprávě uvedl, že pracuje s dokumenty v různých stupních utajení. Poukázal i na to, že jeho budovu využívají také Parlamentní knihovna a Archiv Poslanecké sněmovny ČR, které uchovávají historické fondy. Nahrazení policejní ochrany soukromou bezpečnostní službou proto považuje za rizikové, uvedla mluvčí NKÚ Hana Kadečková.“
+
+Jde o dvě různé rodiny a dva různé vydavatele (NKÚ, ČTK). **Co je tím doloženo:** že NKÚ toto uvedl a s jakým odůvodněním. **Co doloženo není:** zda je bezpečnostní riziko, které úřad popisuje, reálné — to je posouzení, které dossier nedělá a k němuž nemá podklad.

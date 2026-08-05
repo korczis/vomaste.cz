@@ -3,6 +3,7 @@
 title = "Jan Boháč"
 template = "entity.html"
 weight = 159
+description = "Kontextová entita — Předseda České unie sportu; jmenování Kováře do čela NSA uvítal. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

@@ -4,6 +4,7 @@ title = "Tünde Bartha"
 template = "entity.html"
 weight = 1
 aliases = ["/dossiers/tunde-bartha/entities/bartha/"]
+description = "Hlavní subjekt autorizovaného dossieru. Viz plné znění a kontext v hlavním přehledu."
 
 [extra]
 generated = true

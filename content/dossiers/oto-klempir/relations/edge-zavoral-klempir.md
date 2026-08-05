@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "René Zavoral — generální ředitel ČRo označil rozhodnutí vlády za \"nepřátelský krok\" — Oto Klempíř"
+description = "René Zavoral — generální ředitel ČRo označil rozhodnutí vlády za \"nepřátelský krok\" — Oto…. Vztah v grafu dossieru Oto Klempíř. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 5
 

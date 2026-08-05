@@ -33,3 +33,26 @@ darů**, tedy o údaj o tom, co bylo vykázáno. Darovat politické straně je
 Chladovy vlastní veřejné údaje (SRC-02, SRC-03). Rozdíl mezi čísly je
 sám o sobě zaznamenaným faktem — **není obviněním z protiprávnosti** a
 čísla navíc nejsou přímo porovnatelná (viz GAP-01).
+
+**Doplněno 2026-08-05 — dohledán primární dokument a opravena rodina
+zdroje**: dohledána a otevřena **výroční finanční zpráva hnutí Motoristé
+sobě za rok 2025** podaná Úřadu pro dohled
+([SRC-04](@/dossiers/richard-chlad/sources/src-04.md)). Obsahuje tytéž
+položky, tytéž částky a **doslovně tytéž popisy** („půjčení sportovních
+automobilů na akce", „propůjčení vozů Bugatti na akci", „výroba a
+instalace Billboardu, pronájem rekl.plochy") — tento rejstřík tedy úřední
+evidenci **přebírá**, nikoli nezávisle zjišťuje. Pole `sourceFamily` bylo
+proto opraveno z `hlidac-statu` na `udhpsh`: rodina se pojmenovává podle
+**původu**, ne podle vydavatele, a Hlídač státu s Úřadem se počítají jako
+**jedno nezávislé doložení**. Tvrzení
+[CLM-01](@/dossiers/richard-chlad/claims/clm-01.md) je nově formulováno
+podle primárního dokumentu a zůstává ve stavu **1 ZDROJ** — přesně proto,
+že dva odkazy na tutéž evidenci nejsou dvě redakce.
+
+**Terminologický rozdíl, který primární dokument ukázal**: tento rejstřík
+vede položky pod nadpisem „Přehled jednotlivých darů politickým stranám";
+úřední zpráva je u všech pěti položek označuje jako **bezúplatná plnění**
+(nepeněžitá) a **žádný peněžitý dar** od této osoby za rok 2025 neuvádí.
+Dřívější znění CLM-01 mluvilo o „darech", jejichž součet „již zahrnuje
+nepeněžní plnění" — podle dokumentu jde o nepeněžitá plnění **v celé
+výši**.

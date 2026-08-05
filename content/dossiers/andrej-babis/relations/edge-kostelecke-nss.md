@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Kostelecké uzeniny — NSS potvrdil zrušení dotace (11/2025); rozhodnutí o dotaci, ne o vině osoby — Nejvyšší správní soud"
+description = "Kostelecké uzeniny — NSS potvrdil zrušení dotace (11/2025); rozhodnutí o dotaci, ne o…. Vztah v grafu dossieru Andrej Babiš. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 5
 

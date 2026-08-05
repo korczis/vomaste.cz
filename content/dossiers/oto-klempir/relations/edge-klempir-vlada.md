@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Oto Klempíř — ministr kultury — Vláda ČR"
+description = "Oto Klempíř — ministr kultury — Vláda ČR. Vztah v grafu dossieru Oto Klempíř. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 1
 
