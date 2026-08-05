@@ -44,4 +44,17 @@ proto nikdy nesmí reprodukovat jako bezpodmínečné pravidlo. Rozsudek dále u
 že proti němu nejsou opravné prostředky přípustné, a eviduje navazující ústavní
 stížnost sp. zn. IV. ÚS 3740/25, o níž tento zdroj nic neříká. **Datum rozsudku je
 27. 11. 2025**, zatímco zpravodajské zdroje o něm informovaly 28. 11. 2025 — rozpor
-je zaznamenán jako nález u CLM-18, kde je datum součástí textu tvrzení.
+byl 2026-08-05 vyřešen ve prospěch primárního dokumentu, viz doplněk níže.
+
+**Doplněno 2026-08-05 (kolo srovnání s primárními dokumenty, T-061):** zdroj je nově připojen
+i k **CLM-18**, jehož datum bylo podle tohoto rozsudku opraveno z 28. na
+**27. listopadu 2025**; zpravodajská hodnota zůstává v textu tvrzení uvedena, aby
+rozdíl nezmizel. Dokument k témuž tvrzení dokládá i výrok „I. Kasační stížnost
+žalobkyně se zamítá.“, označení žalobkyně (Kostelecké uzeniny a.s.) i žalovaného
+(Ministerstvo zemědělství). Dosavadní zdroje CLM-18 —
+[SRC-07](@/dossiers/andrej-babis/sources/src-07.md) a
+[SRC-29](@/dossiers/andrej-babis/sources/src-29.md) — nesou oba rodinu `ctk`;
+tímto dokumentem přibývá druhá nezávislá rodina i druhý vydavatel a CLM-18
+přechází na stav `CORROBORATED`. **Limit:** z přečtených částí rozsudku neplyne
+rok podání žádosti o dotaci (2018) ani zařazení firmy do skupiny Agrofert — tyto
+části dokládá dál jen citované zpravodajství.

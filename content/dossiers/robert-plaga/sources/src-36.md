@@ -40,3 +40,24 @@ jde o parafrázi, ne o citaci, a dossier ji jako citaci nikdy nepoužívá. Jde
 o **vlastní vyjádření kontrolovaného úřadu k vlastnímu postupu**, tedy o doklad
 toho, co ČŠI sama uvedla, ne o nezávislé prošetření třetí stranou; hodnocení
 oprávněnosti postupu z něj dossier nevyvozuje.
+
+**Doplněno 2026-08-05 (kolo srovnání s primárními dokumenty, T-061):** zdroj je nově připojen
+i k **CLM-02** — dokládá doslovně autora rozhodnutí, datum i rozsah zastavení
+(„na základě rozhodnutí ministra školství, mládeže a tělovýchovy bylo ke dni
+25. května 2026 zastaveno letošní zjišťování výsledků vzdělávání žáků 5. a 9.
+ročníků“). CLM-02 už stav `CORROBORATED` mělo; přibývá k němu primární doklad
+úřadu, který testování prováděl. **Limit:** sdělení neuvádí stranickou
+příslušnost ministra ani slovo „povinné“.
+
+**Nálezy bez připojení:**
+
+- **CLM-20** — sdělení dokládá věcné jádro (data z českého jazyka a matematiky
+  se vyhodnotí, data dotazníkového šetření byla **vymazána 26. 5. 2026**), ale
+  necituje mluvčího MŠMT Ondřeje Macuru. Tvrzení je atribuované a atribuci
+  („kdo to řekl“) primární dokument nahradit nemůže — zdroj proto k
+  [CLM-20](@/dossiers/robert-plaga/claims/clm-20.md) připojen není.
+- **CLM-04** — sdělení potvrzuje jen, že testování provázely „technické
+  komplikace“; nedokládá, že šlo o výpadky aplikace ČŠI hlášené částí škol, ani
+  doporučení ministerstva přejít z webového rozhraní na instalovanou aplikaci.
+  [CLM-04](@/dossiers/robert-plaga/claims/clm-04.md) zůstává na dosavadních
+  třech zdrojích.

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/updates/2026-08-05-3",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-08-05-3",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "date": "2026-08-05",
+  "summary": "Srovnání s primárními dokumenty v datasetu (T-061). CLM-03 opraveno podle vlastního vyjádření Národní rozpočtové rady k návrhu státního rozpočtu na rok 2026 (SRC-18): maximální přípustný schodek podle rady je 246 miliard korun (237 mld. základního rámce plus 9 mld. na obranu), nikoli 247 miliard, jak uvádělo citované zpravodajství (SRC-02), které obranné navýšení popsalo jako 10 miliard. Obě hodnoty zůstávají v textu tvrzení viditelné a tvrzení přechází na CORROBORATED; totéž číslo už neslo CLM-24. Sjednoceno i v GAP-02, který spor o výpočet vede dál jako otevřený — oprava čísla mezeru neuzavírá. Lednové datování a slovo „bezprecedentní“ primární dokument nedokládá, ty části stojí dál na SRC-02.",
+  "addedClaims": [],
+  "updatedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-03"
+    }
+  ],
+  "addedGaps": [],
+  "closedGaps": [],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-18"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-17"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-02"
+    }
+  ]
+}

@@ -45,3 +45,12 @@ trvání mandátu je trestní stíhání vyloučeno) a je převzat z citovaného
 Pro úplnost: hlasování č. 5 téže schůze bylo procedurálním návrhem na tajné
 hlasování (zamítnut 20 : 135) a hlasování č. 6 předsedající prohlásil za zmatečné —
 meritorní je až hlasování č. 7 zaznamenané zde.
+
+**Nález bez připojení — CLM-88 (2026-08-05, T-061):** tento záznam dokládá
+závěrečnou klauzuli tvrzení
+[CLM-88](@/dossiers/andrej-babis/claims/clm-88.md) — že Sněmovna 5. 3. 2026
+Andreje Babiše ke stíhání nevydala. Nedokládá ale nic z jeho hlavní části
+(termíny odvolacího jednání Vrchního soudu 31. 8. a 1. 9. 2026, nepravomocný
+trest Jany Nagyové, nepodání odvolání státním zástupcem) a sám o sobě neříká,
+že je řízení „přerušené“. K CLM-88 proto připojen není a tvrzení zůstává
+`1 ZDROJ`.

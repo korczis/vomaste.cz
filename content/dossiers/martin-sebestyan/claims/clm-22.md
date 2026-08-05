@@ -15,3 +15,12 @@ lang = "cs"
 clm_id = "CLM-22"
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/martin-sebestyan/_index.md#registr-tvrzeni).
+
+**Upřesnění období podle primárního dokumentu (2026-08-05).** Stanovisko
+Ministerstva zemědělství k problematice střetu zájmů
+([SRC-23](@/dossiers/martin-sebestyan/sources/src-23.md)) vymezuje posuzované
+historické výplaty daty **6. 12. 2017 – 17. 12. 2021**; citované zpravodajství
+([SRC-09](@/dossiers/martin-sebestyan/sources/src-09.md)) je uvádělo zaokrouhleně
+jako „léta 2017–2021“. **Limit:** stanovisko je z 16. 12. 2025, tedy starší než
+rozhodnutí SZIF z dubna 2026 — samotné rozhodnutí nevymáhat ani objednání
+externích právních analýz nedokládá; ty stojí dál na SRC-09.

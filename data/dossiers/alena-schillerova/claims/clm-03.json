@@ -9,12 +9,15 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
   },
-  "text": "Národní rozpočtová rada v lednu 2026 uvedla, že návrh státního rozpočtu na rok 2026 je v rozporu se zákonem o pravidlech rozpočtové odpovědnosti, a označila situaci za bezprecedentní; podle rady měl být maximální schodek 247 miliard korun místo navržených 310 miliard. Jde o stanovisko nezávislého odborného orgánu, ne o soudní rozhodnutí",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "text": "Národní rozpočtová rada v lednu 2026 uvedla, že návrh státního rozpočtu na rok 2026 je v rozporu se zákonem o pravidlech rozpočtové odpovědnosti, a označila situaci za bezprecedentní; podle vlastního vyjádření rady měl být maximální přípustný schodek 246 miliard korun (základní rámec 237 miliard plus 9 miliard na obranu) místo navržených 310 miliard, zatímco citované zpravodajství uvádělo 247 miliard. Jde o stanovisko nezávislého odborného orgánu, ne o soudní rozhodnutí",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/sources/SRC-18"
     }
   ],
   "subjects": [],
@@ -22,7 +25,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/alena-schillerova/_index.md#registr-tvrzeni)."
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/alena-schillerova/_index.md#registr-tvrzeni).\n\n**Oprava čísla podle primárního dokumentu (2026-08-05).** Vyjádření Národní\nrozpočtové rady k návrhu státního rozpočtu na rok 2026\n([SRC-18](@/dossiers/alena-schillerova/sources/src-18.md)) rozkládá zákonný limit\nna **237 miliard základního rámce plus 9 miliard na obranu, tedy 246 miliard**\nproti navrhovaným 310. Tvrzení dosud uvádělo **247 miliard** podle citovaného\nzpravodajství ([SRC-02](@/dossiers/alena-schillerova/sources/src-02.md)), které\nobranné navýšení popsalo jako 10 miliard. Číslo je opraveno podle dokumentu rady\na zpravodajská hodnota zůstává v textu uvedena, aby byl rozdíl dohledatelný.\nTotéž číslo nese i [CLM-24](@/dossiers/alena-schillerova/claims/clm-24.md).\n**Limit:** vyjádření je datované 10. 2. 2026 a neobsahuje lednové datování ani\nslovo „bezprecedentní“ — tyto části dokládá dál jen SRC-02."
     }
   ]
 }

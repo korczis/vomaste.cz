@@ -15,3 +15,11 @@ lang = "cs"
 clm_id = "CLM-08"
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jeronym-tejc/_index.md#registr-tvrzeni).
+
+**Doplněno 2026-08-05.** Připojena tisková zpráva Ministerstva spravedlnosti
+([SRC-17](@/dossiers/jeronym-tejc/sources/src-17.md)) datovaná 1. 7. 2026, která
+dokládá skutek, aktéra i datum: ministr Tejc podal kárnou žalobu na soudkyni,
+která rozhodovala v případu Viktorka. **Limit:** zpráva neuvádí soud, u něhož
+soudkyně působí, obsah napadeného rozhodnutí ani smrt dítěte — tyto části
+dokládá dál jen citované zpravodajství, jak si tvrzení samo hlídá formulací
+„podle citovaného zpravodajství“.
