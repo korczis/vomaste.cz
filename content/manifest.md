@@ -144,6 +144,9 @@ Neanonymizované třetí osoby nebudeme pojmenovávat, pokud je samy důvěryhod
 
 Projekt nemá být stroj na výrobu vedlejších obětí.
 
+Kde přesně vede hranice mezi subjektem a jeho okolím a jak funguje
+kontextová entita: [Třetí osoby a proporcionalita](@/koncepty/tretiosoby.md).
+
 ---
 
 ## 8. Rozsah musí být autorizovaný a dohledatelný {#bod-8}
