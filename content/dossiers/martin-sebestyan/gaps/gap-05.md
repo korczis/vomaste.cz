@@ -21,3 +21,5 @@ směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
 
 **Opakovaná kontrola k 2026-08-03**: znovu prohledáno cíleně na přímou Šebestyánovu osobní reakci na TI varování. Nalezen povrchně podobný titulek ParlamentníListy.cz „Ministr Šebestyán: Nebylo možné zveřejňovat neověřené informace“ — ten je ale ze 4. 6. 2026 a týká se úplně jiné věci (kontaminace kojenecké výživy cereulidem ve Sněmovně), vědomě nepoužito jako náhrada. Jinak zůstávají dohledatelné jen již citované zdroje (Okamurova obhajoba, SRC-05; Šebestyánova obhajoba k vymáhání, SRC-06). Mezera zůstává otevřená.
+
+**Opakovaná kontrola k 2026-08-06 (primární doklady)**: přečten v plném rozsahu stenografický zápis 22. schůze Poslanecké sněmovny z 11. 6. 2026 ([SRC-44](@/dossiers/martin-sebestyan/sources/src-44.md)), kde Šebestyán jako první řečník obšírně vystoupil k celé problematice střetu zájmů. Varování Transparency International z listopadu 2025 v jeho projevu ani jinde v zápisu nezaznělo a nikdo se ho na ně nedotázal. Přímá osobní reakce ministra na varování TI tedy nadále není doložena — ani v primárním parlamentním záznamu. Mezera zůstává otevřená.

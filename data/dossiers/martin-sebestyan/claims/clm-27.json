@@ -9,12 +9,15 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
   },
-  "text": "Ministr Šebestyán ve Sněmovně 11. června 2026 uvedl, že předmětem historického auditního šetření Evropské komise nikdy nebyly nárokové dotace, tedy přímé platby, a že ty Evropská komise po celou dobu proplácela.",
+  "text": "Ministr Šebestyán ve Sněmovně 11. června 2026 uvedl, že předmětem historického auditního šetření Evropské komise nikdy nebyly nárokové dotace, tedy přímé platby, a že ty Evropská komise po celou dobu proplácela. Stenografický zápis 22. schůze jeho slova zaznamenává doslova: „předmětem tohoto historického auditního šetření nikdy nebyly nárokové dotace, tedy přímé platby. Tyto platby byly a jsou po celou dobu ze strany Evropské komise propláceny.“",
   "status": "status-quote",
   "statusLabel": "CITACE",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-44"
     }
   ],
   "subjects": [

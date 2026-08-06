@@ -3,7 +3,7 @@
 title = "Centrum veřejných financí (Univerzita Karlova)"
 template = "entity.html"
 weight = 87
-description = "Kontextová entita — Akademické pracoviště, jehož stanovisko identifikovalo tři problémová místa novely rozpočtových pravidel (návrhy č."
+description = "Kontextová entita — Akademické pracoviště, jehož stanovisko identifikovalo tři problémová místa novely rozpočtových pravidel (návrhy č. 825 a 826, korekční faktor)."
 
 [extra]
 generated = true

@@ -27,3 +27,5 @@ náboru) popisují koncepci stále jako rozpracovanou/projednávanou.
 Mezera zůstává otevřená.
 
 **Opakovaná kontrola k 2026-08-03**: hledání zopakováno, žádná zpráva o formálním schválení vládou nedohledána. Mezera zůstává otevřená.
+
+**Opakovaná kontrola k 2026-08-06**: beze změny. V přehledech výsledků jednání vlády na vlada.gov.cz (projity dny 18. 5., 26. 1., 13. 7., 20. 7. a 27. 7. 2026) není bod o schválení Koncepce výstavby AČR 2040 a žádný otevřený zdroj o jejím schválení nereferuje.

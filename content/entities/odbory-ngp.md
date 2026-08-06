@@ -3,7 +3,7 @@
 title = "Základní odborová organizace Národní galerie Praha"
 template = "entity.html"
 weight = 310
-description = "Kontextová entita — Odborová organizace NGP — otevřený dopis ministrovi (10. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+description = "Kontextová entita — Odborová organizace NGP — otevřený dopis ministrovi (10. 7. 2026, 63 podpisů) žádající vysvětlení kroků a poukazující na podfinancování."
 
 [extra]
 generated = true

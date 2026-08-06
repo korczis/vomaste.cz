@@ -28,6 +28,7 @@
 import { spawnSync } from "node:child_process";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { acquireLock, releaseLock, LockTimeoutError } from "./with-build-lock.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 
@@ -84,7 +85,11 @@ const BUILD_STEPS = [
   "generate:discovery-log",
   "css:build",
   "js:build",
-  { raw: ["node", "scripts/build/with-build-lock.mjs", "zola", "build"] },
+  // Lock coverage for this step (and everything that writes to
+  // data/generated/ before it) comes from acquireLock() in main() below,
+  // not from wrapping this one step — see with-build-lock.mjs's 2026-08-06
+  // note for why a zola-build-only lock wasn't enough.
+  { raw: ["zola", "build"] },
   "verify:navigation-counts",
   "verify:anchors",
   "verify:jsonld",
@@ -160,6 +165,24 @@ const steps = MODES[mode];
 console.log(`pipeline: režim ${mode} — ${steps.length} krok(ů).`);
 const startedAt = Date.now();
 
+// `build` je jediný režim, který od data:views dál PÍŠE do data/generated/
+// a nakonec do public/ (zola build) — přesně to, co with-build-lock.mjs
+// chrání. Zamykáme na celý běh, ne jen na zola krok (viz komentář 2026-08-06
+// ve with-build-lock.mjs): dva souběžné `npm run build` ve stejném
+// checkoutu se dřív přetahovaly už o data/generated/views/**, dřív než
+// jeden z nich vůbec došel na zola build, kde by je zamykání zachytilo.
+// `dev` končí interaktivním `zola serve`, který může běžet hodiny — zamykat
+// by na tu dobu blokovalo každý jiný build ve stejném checkoutu, proto se
+// nezamyká. `check` nic negeneruje, zamykání nepotřebuje.
+if (mode === "build") {
+  try {
+    acquireLock([`node scripts/build/pipeline.mjs ${mode}`]);
+  } catch (err) {
+    if (err instanceof LockTimeoutError) process.exit(1);
+    throw err;
+  }
+}
+
 for (const [i, step] of steps.entries()) {
   const [cmd, ...args] = typeof step === "string" ? ["npm", "run", step] : step.raw;
   const label = typeof step === "string" ? step : step.raw.join(" ");
@@ -173,6 +196,10 @@ for (const [i, step] of steps.entries()) {
     console.error(`pipeline: krok "${label}" skončil s kódem ${res.status} — zastavuji.`);
     process.exit(res.status ?? 1);
   }
+}
+
+if (mode === "build") {
+  releaseLock();
 }
 
 console.log(`\npipeline: režim ${mode} OK (${((Date.now() - startedAt) / 1000).toFixed(1)} s).`);

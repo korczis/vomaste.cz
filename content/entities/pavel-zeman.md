@@ -3,7 +3,7 @@
 title = "Pavel Zeman"
 template = "entity.html"
 weight = 332
-description = "Kontextová entita — Nejvyšší státní zástupce — 4. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+description = "Kontextová entita — Nejvyšší státní zástupce — 4. 12. 2019 zrušil zastavení stíhání Babiše a Jany Mayerové jako nezákonné a předčasné."
 
 [extra]
 generated = true

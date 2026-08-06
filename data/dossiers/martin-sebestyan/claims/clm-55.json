@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-55",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-55",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
+  },
+  "text": "Vlastní dokumentace SZIF k auditnímu šetření Evropské komise (aktualizace k 1. 8. 2022) uvádí spisovou značku auditu UMB/2019/003/CZ, auditní misi v lednu 2019, oznámení o předběžných zjištěních 5. 6. 2019, doručení závěrečné auditní zprávy 4. 4. 2022 a zveřejnění prováděcího rozhodnutí Komise (EU) 2022/908 dne 10. 6. 2022. Částku vyloučenou z financování EU „s přímou vazbou na střet zájmů z důvodu veřejné funkce“ vyčísluje fond na 30 606,96 € (cca 766 tis. Kč) a váže ji k jedinému projektu — společnosti SCHROM FARMS z holdingu Agrofert. Auditní šetření se podle fondu vztahovalo pouze na investiční (nenárokové) dotace; přímé platby Komise podle téhož materiálu proplácela bez omezení.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-42"
+    }
+  ],
+  "subjects": [
+    "sebestyan"
+  ],
+  "order": 55,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/martin-sebestyan/_index.md#registr-tvrzeni)."
+    }
+  ]
+}

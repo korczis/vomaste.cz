@@ -125,10 +125,34 @@ const summarize = (text, limit = 185) => {
 // řeže po větách a závěrečná doložka se drží celá; když se nevejde,
 // zůstane radši jen úvodní věta celá než doložka na půl.
 const CAVEAT = /\b(nikoli|nezakládá|nevyjadřuje|neobsahuje|nezná)\b/i;
+
+// Čeština píše řadové číslovky s tečkou, takže naivní dělení na „. " rozřízne
+// „žáků 5. a 9. tříd" po „5." a popis pak tvrdí něco jiného než zdrojový text.
+// Hranice věty se proto uzná jen tehdy, když za tečkou začíná velké písmeno
+// A ZÁROVEŇ tečce nepředchází jedno- či dvouciferné číslo. Rok („…v roce
+// 2006. Záznam…") tím projde, řadová číslovka ne.
+const splitSentences = (text) => {
+  const out = [];
+  let start = 0;
+  const re = /[.!?]\s+/g;
+  for (let m = re.exec(text); m; m = re.exec(text)) {
+    const end = m.index + 1;
+    const next = text[m.index + m[0].length];
+    const ordinal = /\b\d{1,2}$/.test(text.slice(start, m.index));
+    if (next && next === next.toLocaleUpperCase("cs") && next !== next.toLocaleLowerCase("cs") && !ordinal) {
+      out.push(text.slice(start, end).trim());
+      start = m.index + m[0].length;
+    }
+  }
+  const tail = text.slice(start).trim();
+  if (tail) out.push(tail);
+  return out;
+};
+
 const summarizeRecord = (text, limit = 195) => {
   const flat = summarize(text, Number.MAX_SAFE_INTEGER);
   if (!flat || flat.length <= limit) return flat;
-  const sentences = flat.split(/(?<=\.)\s+/).filter(Boolean);
+  const sentences = splitSentences(flat);
   const first = sentences[0] ?? flat;
   const last = sentences.at(-1);
   if (sentences.length > 1 && CAVEAT.test(last) && first.length + 1 + last.length <= limit) {

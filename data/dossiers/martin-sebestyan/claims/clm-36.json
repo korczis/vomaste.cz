@@ -9,7 +9,7 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
   },
-  "text": "Ministerstvo zemědělství ve stanovisku z 16. prosince 2025 argumentuje, že § 4c zákona o střetu zájmů je napsán nepřesně, že dosud nebylo vydáno žádné soudní rozhodnutí ke způsobilosti Agrofertu na nárokové dotace a že by Česká republika byla jediným členským státem EU vymáhajícím nárokové dotace kvůli střetu zájmů.",
+  "text": "Ministerstvo zemědělství ve stanovisku z 16. prosince 2025 argumentuje, že § 4c zákona o střetu zájmů je napsán nepřesně, že soudy sice vyložily jeho dopad na poskytování dotací SZIF, ale otázkou nárokových dotací se nezabývaly, že dosud nebylo vydáno žádné soudní rozhodnutí o nezpůsobilosti společností z koncernu Agrofert k nárokovým dotacím a že by Česká republika byla jediným členským státem EU, který by kvůli střetu zájmů nárokové dotace neposkytoval. Stanovisko rovněž připomíná, že novela účinná od 1. 1. 2024, která nárokové dotace ze zákazu výslovně vyloučila, byla zrušena nálezem Ústavního soudu ze 4. 12. 2024, sp. zn. Pl. ÚS 41/23, a to z důvodu procesního (přílepek), nikoli věcného.",
   "status": "status-single",
   "statusLabel": "1 ZDROJ",
   "sources": [
@@ -25,6 +25,10 @@
     {
       "type": "markdown",
       "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/martin-sebestyan/_index.md#registr-tvrzeni)."
+    },
+    {
+      "type": "markdown",
+      "value": "**Oprava proti dokumentu (6. 8. 2026)**: dřívější znění uvádělo, že by ČR byla „jediným členským státem EU vymáhajícím nárokové dotace kvůli střetu zájmů“. Stanovisko ([SRC-23](@/dossiers/martin-sebestyan/sources/src-23.md)) mluví o státu, který by nárokové dotace *neposkytoval*, nikoli vymáhal — formulace byla opravena podle dokumentu. Doplněno bylo i to, co stanovisko samo připouští: že soudy dopad § 4c na dotace SZIF již vyložily."
     }
   ]
 }

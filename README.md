@@ -45,16 +45,28 @@ nepodložená obvinění, centrální autorita s nárokem na konečnou pravdu,
 ani důvěrná schránka provozovaná ve veřejném Gitu.
 
 **Poctivý aktuální stav (k 2026-08-05)**: repozitář hostí dossiery
-autorizovaných veřejně činných osob (přesný, datovaný, append-only rozsah
-autorizace viz `AGENTS.md`; živý seznam na `/dossiers/`). Dossiery a
-entity jsou čistá, kanonická JSON/JSON-LD data (`data/dossiers/**`,
-mise T-028) — Markdown pod `content/` je generovaný routing adaptér a
-žádný hardcodovaný subjekt ve strukturálním kódu není; regresní brána
+veřejně činných osob v rozsahu popsaném v `AGENTS.md`, sekce "Standing
+scope authorization and publication gates" — od 2026-08-05 nahrazuje
+dřívější per-subject autorizační proceduru standing scope (veřejní
+činitelé, PEP, subjekty materiálně napojené na veřejnou moc/peníze) plus
+devět povinných publikačních bran (zdroj, provenience, procesní rámování,
+žádná vina podle grafu, nezávislost zdrojových rodin, minimalizace dat,
+proporcionalita třetích stran, revidovatelná změna, deterministický
+build); živý seznam na `/dossiers/`. Dossiery a entity jsou čistá,
+kanonická JSON/JSON-LD data (`data/dossiers/**`, mise T-028) — Markdown
+pod `content/` je generovaný routing adaptér a žádný hardcodovaný subjekt
+ve strukturálním kódu není; regresní brána
 `npm run lint:historical-coupling` hlídá, aby se historická vazba
 nevracela (inventura:
 [`docs/migrations/remove-macinka-turek-coupling-audit.md`](docs/migrations/remove-macinka-turek-coupling-audit.md)).
-Příspěvkové balíčky, sémantický diff ani fork starter kit **zatím
-neexistují** — nic z toho tento README neinzeruje jako hotové.
+Volitelná lokální integrace `~/dev/prismatic-platform` jako upstream
+výzkumný nástroj je autorizována architektonicky
+([ADR](docs/adr/prismatic-platform-integration.md)), ale **implementačně
+je to zatím jen scaffolding** — čtyři `prismatic-*` skilly a jedenáct
+`prismatic:*` npm skriptů existují jako stuby, žádný reálně nefunguje;
+veřejný build na tom nezávisí a nikdy záviset nebude. Příspěvkové
+balíčky, sémantický diff ani fork starter kit **zatím neexistují** — nic
+z toho tento README neinzeruje jako hotové.
 
 ## Jak systém funguje
 
@@ -257,7 +269,8 @@ Rozhodnutí a jeho důsledky: [ADR](docs/adr/dossier-directory-multi-view.md).
 ├── scripts/intake/         # veřejný intake: parser podnětu, matching, preflight (nikdy nezapisuje do dat)
 ├── scripts/coop/           # koordinace více instancí (bus, worktrees)
 ├── scripts/setup/          # instalace git hooks (postinstall)
-├── .githooks/              # pre-commit: rychlá podmnožina validátorů
+├── .githooks/              # pre-commit: rychlá podmnožina validátorů;
+                            # post-commit: na masteru auto push+deploy
 ├── .claude/skills/         # bootstrap, dossier-entry, investigate, adr, commit
 ├── docs/                   # konstituce, datový kontrakt, audity, migrace, koop, ADR
 ├── reports/                # generované interní reporty (nepublikují se)
@@ -312,10 +325,20 @@ validátorů (`.githooks/pre-commit`); ruční přeinstalace: `npm run
 hooks:install`. Je to jen rychlá předběžná brána, ne náhrada za `npm run
 build` před review-requestem/mergem/pushem.
 
+**Na branchi `master` navíc commit = push = deploy.** `.githooks/post-commit`
+po každém commitu na `master` sám spustí fetch → rebase → **celý**
+`npm run build` → `git push origin master` (GitHub Pages CI se spustí
+automaticky) — bez ručního "a teď to pushnu". Nikdy nepushne rozbitý
+build ani rozpracovaný rebase; na konfliktu se vzdá a nechá commit
+lokální. Detaily a únik (`COOP_NO_AUTOPUSH=1`) v
+[`docs/coop/PROTOCOL.md`](docs/coop/PROTOCOL.md#automatický-push-po-commitu-post-commit-hook).
+Ve worker worktree (`task/T-###`) je hook no-op — to platí jen pro
+přímé commity na `master`.
+
 **Přispíváš přes Claude Code (nebo jiného AI agenta)?** Podrobný postup
 je v [`CONTRIBUTING.md`, sekce „Přispívání s Claude Code“](CONTRIBUTING.md#přispívání-s-claude-code-nebo-jiným-ai-agentem).
-Zkráceně — 5 skillů v `.claude/skills/`, spouštěj v tomto pořadí podle
-toho, co děláš:
+Zkráceně — 5 plně funkčních core skillů v `.claude/skills/`, spouštěj
+v tomto pořadí podle toho, co děláš:
 
 | Skill | Kdy ho spustit |
 |---|---|
@@ -324,6 +347,11 @@ toho, co děláš:
 | `investigate` | celé autorizované šetření end-to-end (scope check → větev → manifest → zdrojovaný výzkum → PR) |
 | `adr` | řešíš netriviální technické rozhodnutí (nová závislost, výměna komponenty) — měřený stav, ne odhad |
 | `commit` | commit samotný — formát zprávy, který gate skutečně platí, co nahlásit na co-op sběrnici |
+
+Plus 4 **scaffoldované, zatím nefunkční** `prismatic-*` skilly pro
+volitelnou lokální integraci s `~/dev/prismatic-platform`
+([ADR](docs/adr/prismatic-platform-integration.md)) — každý sám hlásí,
+že pipeline za ním ještě neexistuje, viz jeho `SKILL.md`.
 
 Plná kvalitní brána (stejná jako CI):
 
@@ -371,6 +399,7 @@ Instalace `just`: <https://github.com/casey/just#installation>.
 | `npm run check` | validace bez generování (`pipeline.mjs check`) |
 | `npm run hooks:install` | nastaví `core.hooksPath` na `.githooks/` (jinak se spustí automaticky přes `npm ci`/`npm install`) |
 | `npm test` | regresní testy tooling skriptů (Node built-in test runner, žádná nová závislost) — součást `npm run build` |
+| `npm run test:update-golden` | přegeneruje `scripts/data/compiled-golden.snapshot.json` (počty záznamů/graf pro golden test) z aktuálního compiled modelu — jediný podporovaný způsob, jak ta čísla měnit; taky jediné, co potřebuješ po konfliktu v tomhle souboru |
 | `npm run data:validate` | kanonická brána: tvar (`schemas/canonical/`, AJV strict) → reference R1–R7 → sémantika S1–S10 → parita tabulky T1–T8 → JSON-LD expanze |
 | `npm run data:validate -- --file <cesta>` | rychlá tvarová validace jediného kanonického souboru; chybové hlášky nesou cestu |
 | `npm run data:build` | kompilace datasetu + view modely + regenerace content adaptérů + parity brána content == staging |
@@ -587,7 +616,11 @@ průvodce krok za krokem (včetně běžných chybových hlášek):
 ## Příspěvky (pull requesty)
 
 Standardní GitHub flow: fork → větev → změna → zelený `npm run build` →
-pull request. Každý příspěvek prochází lidským review proti redakčním
+pull request. Práce na vlastní feature branchi `.githooks/post-commit`
+nijak neovlivní — auto-push se týká jen přímých commitů na `master`
+(ve tvém forku by to pushlo na tvůj vlastní `origin master`, ne na
+tento repo; `COOP_NO_AUTOPUSH=1` to i tak úplně vypne, pokud ho
+nechceš). Každý příspěvek prochází lidským review proti redakčním
 pravidlům a konstituci; **obsah o reálných osobách navíc vyžaduje
 předchozí autorizaci vlastníka v append-only logu `AGENTS.md`** — PR
 rozšiřující pokrytí bez ní nebude přijat, jakkoli je téma „veřejně
@@ -668,6 +701,12 @@ validace (stejné příkazy jako lokálně) → `zola check` → `zola build` �
 spuštění: workflow_dispatch. Ověření produkce: porovnat nasazený obsah
 s očekávaným commitem (`gh run list`, pak kontrola klíčových rout).
 
+Ten push typicky nespouští nikdo ručně — `.githooks/post-commit` ho
+udělá sám po každém commitu na `master` (viz „Rychlý start" a
+[`docs/coop/PROTOCOL.md`](docs/coop/PROTOCOL.md#automatický-push-po-commitu-post-commit-hook)),
+včetně vlastního `npm run build` běhu předtím, takže commit, který se
+tam vůbec nedostane, byl na plné bráně červený.
+
 ## Známá omezení (k 2026-08-05)
 
 - Do 2026-07-30 se JSON-LD exportní routy (`/data/*.jsonld`) v produkci
@@ -725,7 +764,12 @@ provozně [`docs/intake/`](docs/intake/) (podání, kontrakt formuláře,
 matching, riziková klasifikace, bezpečnostní hranice), návrhový ADR
 Fáze 1 + stav implementace
 [`docs/adr/ADR-public-dossier-intake.md`](docs/adr/ADR-public-dossier-intake.md),
-auditní reporty v `reports/intake/`.
+auditní reporty v `reports/intake/`. Volitelná integrace s
+`~/dev/prismatic-platform` jako lokální upstream výzkumný nástroj:
+[`docs/adr/prismatic-platform-integration.md`](docs/adr/prismatic-platform-integration.md)
+(architektura přijata 2026-08-05, pipeline zatím scaffolding — viz
+implementation status v ADR) + build plán
+[`docs/missions/2026-08-05-prismatic-platform-integration-master-prompt.md`](docs/missions/2026-08-05-prismatic-platform-integration-master-prompt.md).
 
 Stejné řídicí dokumenty (AGENTS.md, přispívání, konstituce, licence,
 bezpečnostní politika, koop protokol) jsou navíc čitelné přímo na webu

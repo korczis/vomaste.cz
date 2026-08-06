@@ -3,7 +3,7 @@
 title = "Trestní stíhání v bitcoinové kauze (Blažek, Daňhel, Titz)"
 template = "entity.html"
 weight = 417
-description = "Kontextová entita — Trestní stíhání tří osob zahájené NCOZ 4. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+description = "Kontextová entita — Trestní stíhání tří osob zahájené NCOZ 4. 5. 2026 (legalizace výnosů z trestné činnosti, zneužití pravomoci); NSZ stížnosti zamítlo, jde o přípravné řízení, platí presumpce…"
 
 [extra]
 generated = true

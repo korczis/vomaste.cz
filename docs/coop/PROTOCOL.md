@@ -57,6 +57,40 @@ COOP_AGENT_ID=W-1 claude             # nová instance Claude Code v worktree
 Po mergnutí: `scripts/coop/coop.sh wt-done T-001` (odstraní worktree i
 větev). Worktree se nikdy nerecykluje na jiný task.
 
+### Riziko hlavního checkoutu: rozdělaná práce může beze stopy zmizet
+
+Pozorováno živě 2026-08-06: rozdělané (ne ještě commitnuté) úpravy dvou
+souborů v hlavním checkoutu (`/Users/korczis/dev/vomaste.cz`) během
+několika minut úplně zmizely — `git status` najednou hlásil čistý strom
+přesně odpovídající `HEAD`, ve chvíli, kdy se tam objevil nový, nesouvisející
+commit z jiné souběžné session. Přesný příkaz, který k tomu vedl, nebyl
+zjištěn (žádost o `git reflog`/historii shellu jiné instance není k
+dispozici) — ale výsledek odpovídá tomu, co udělá `git checkout -- <soubor>`,
+`git reset --hard` nebo `git stash` bez následného `pop` spuštěný přímo
+v tomhle checkoutu, zatímco v něm leží něčí neuncommitnutá práce. Na
+rozdíl od konfliktů popsaných výš (rebase/merge/build) tohle **není
+konflikt, který by cokoliv nahlásilo** — žádná chybová hláška, žádný
+build fail, jen tichá ztráta.
+
+Zmírnění, dokud hlavní checkout sdílí víc než jedna instance zároveň:
+
+- Necommitnutou práci tu nenechávej ležet dlouho. Malý, rychle
+  commitnutý krok přežije; hodina rozpracovaných úprav ve working tree
+  je vystavená riziko celou tu hodinu.
+- Před jakýmkoliv `git checkout`/`reset`/`stash`/`clean` v hlavním
+  checkoutu zkontroluj `git status` a zvaž, jestli by ses tou operací
+  nepřehnal přes cizí rozdělanou práci — stejné pravidlo, jaké tenhle
+  agent (Claude Code) dostává jako obecnou instrukci, platí tu
+  zdvojnásobeně, protože „cizí" tu může být jiná souběžná instance, ne
+  jen historie z minula.
+- Pokud potřebuješ delší rozpracovanou úpravu, zvaž dočasný worktree i
+  pro práci, která by jinak šla přímo do hlavního checkoutu jako ORCH
+  (viz sekce výš) — je to jediná záruka, kterou git nabízí proti přesně
+  tomuhle.
+- Ztracenou práci lze často rekonstruovat z konverzačního kontextu
+  agenta, který ji psal (přesně tak se to řešilo 2026-08-06) — ale to je
+  záchranná síť, ne omluva to riskovat znovu.
+
 ## Sběrnice zpráv (serializace)
 
 Instance spolu mluví přes **append-only NDJSON log** ve sdíleném git
@@ -105,14 +139,128 @@ je to poll.
    (`git merge --no-ff task/T-###`), pustí `npm run build` ještě jednou
    na masteru, propíše `merged` do boardu.
 6. Deploy = `git push` masteru (GitHub Pages CI v
-   `.github/workflows/deploy.yml` staví a nasazuje). ORCH pošle
-   `deploy` zprávu. Průběžně: deploy po každém mergnutém tasku, ne až
-   nakonec.
+   `.github/workflows/deploy.yml` staví a nasazuje). Od 2026-08-05 se
+   tohle po commitu na `master` děje **automaticky** — viz
+   „Automatický push po commitu" níž — ORCH ho tedy typicky nespouští
+   ručně, jen sleduje, že se `deploy` zpráva objevila na sběrnici.
+   Průběžně: deploy po každém mergnutém tasku, ne až nakonec.
 7. `wt-done T-###` uklidí worktree a větev.
 
 Konflikty řeší vždy worker rebasem své větve na aktuální `master`
 (`git fetch && git rebase master`) — ORCH nikdy neřeší konflikt za něj
 při mergi.
+
+## Automatický push po commitu (post-commit hook)
+
+`.githooks/post-commit` (stejný instalační mechanismus jako
+`.githooks/pre-commit` — `core.hooksPath`, viz README „Rychlý start")
+od 2026-08-05 dělá na `master` po každém commitu automaticky přesně tu
+sekvenci, kterou by jinak ORCH spouštěl ručně:
+
+```
+fetch origin master → rebase → npm run build (CELÝ, ne jen pre-commit
+podmnožina) → push origin master → coop.sh send "*" deploy …
+```
+
+Vzniklo ze session 2026-08-05, kde tenhle postup ORCH opakovaně
+spouštěl ručně po každém commitu (viz git historie kolem
+`AUTH-2026-08-05` rozšíření james-quick dossieru).
+
+Bezpečnostní chování, které z toho dělá něco jiného než „vždy pushni":
+
+- Spustí se **jen na `master`** — workeři v task worktreech (`task/T-###`)
+  jím nejsou dotčeni, single-writer pravidlo výše platí beze změny.
+- Nikdy se nespustí uprostřed rebase/merge/cherry-picku (jinak by se
+  spouštěl na každém mezikroku `git rebase --continue` a pushoval
+  rozpracovaný stav).
+- Rebase na konflikt se **vzdá** (`rebase --abort`) a nechá commit
+  lokální — žádné automatické řešení konfliktů. Recept na typicky
+  konfliktní generované soubory je v sekci níž.
+- Před pushem musí projít **celý** `npm run build`, ne jen rychlá
+  pre-commit podmnožina — červený build se nikdy nepushuje, protože
+  push na `master` je live deploy. Commit zůstává lokálně, jen nejde
+  ven automaticky; oprav a commitni znovu.
+- Až 3 pokusy fetch+rebase+build+push (řeší prohraný závod se
+  souběžným pushem odjinud), pak se vzdá se srozumitelnou hláškou.
+- Únik: `COOP_NO_AUTOPUSH=1 git commit …` (např. vědomě rozpracovaný
+  stav, který se ještě nemá dostat ven) — pak platí stará ruční
+  sekvence z kroku 6 výše.
+
+Tohle **nenahrazuje** krok 4/5 (worker → `review-request` →
+ORCH merguje `--no-ff` do masteru) — ten merge commit na masteru je to,
+co hook následně automaticky pushne. Automatizuje se jen „a teď to
+dostaň ven", ne rozhodnutí, jestli se má mergnout.
+
+## Konflikty na generovaných/derivovaných souborech
+
+Session 2026-08-05 (souběžné rozšiřování james-quick dossieru ve dvou
+instancích) ukázala, že nejčastější rebase konflikt při aktivním koop
+provozu není v ručně psaných kanonických datech, ale v souborech, které
+si dvě instance nezávisle přegenerovaly ze stejné výchozí verze. Recept
+je pro každý typ jiný, ale vždy mechanický — žádná ruční aritmetika:
+
+- **`scripts/data/compiled-golden.snapshot.json`** (počty záznamů pro
+  golden test) — vezmi libovolnou stranu konfliktu
+  (`git checkout --ours` nebo `--theirs`), pak `npm run test:update-golden`.
+  Nikdy needituj `compiled-golden.test.mjs` ani JSON ručně — proto byl
+  po téhle session refaktorovaný z hardcoded literálu právě do
+  přegenerovatelného JSON souboru.
+- **`data/discovery-log.jsonl`** (append-only NDJSON) — konflikt řeš
+  jako sloučení obou stran (ponech obě sekvence řádků, žádnou
+  nezahazuj), nikdy needituj počty ručně. Po dořešení ostatních
+  konfliktů `npm run data:build` ověří, že log dál sedí s daty.
+- **`reports/*.md`, `data/generated/routes.json`,
+  `data/generated/navigation.json`** — čistě generované, nikdy je
+  needituj ručně. Na konfliktu vezmi libovolnou stranu
+  (`git checkout --theirs <soubor>`) a spusť `npm run build` (routes a
+  navigation) nebo aspoň `npm run data:build` (reports) — přegenerují
+  se z aktuálních dat, cokoliv jsi vzal jako výchozí obsah je jedno.
+- **Past**: `data/generated/**` je v `.gitignore`, ale po
+  `git reset --hard`/rebase přežívá na disku ze staré verze a
+  `data:check-generated:content` pak hlásí zdánlivě nesmyslné route
+  parity chyby (routa pro smazaný záznam pořád v `routes.json`, nová
+  routa v něm chybí). Fix: `npm run build:routes` (a `build:navigation`)
+  před dalším krokem, ne ladění obsahu — soubor je jen zastaralý, ne
+  rozbitý.
+- **Past, druhá a horší varianta**: dva plné `npm run build` běhy ve
+  **stejném checkoutu** (ne dva různé worktrees — to je bezpečné, každý
+  má vlastní `data/generated/`) se dřív mohly přetahovat o
+  `data/generated/views/**` už v krocích `data:views`/
+  `data:generate-content`/`data:sync-content`, dřív než došly na `zola
+  build`, kde je chránil `with-build-lock.mjs`. Příznak: `zola build`
+  spadne na `load_data: .../clm-NN.json doesn't exist`, přestože ten
+  soubor existuje — vypadá to jako datová chyba, není. Reprodukováno
+  živě 2026-08-05/06: dvě souběžné session ve stejném checkoutu, každá
+  narazila na jiný chybějící view model, a soubor pak vždy existoval.
+  Od 2026-08-06 `pipeline.mjs` zamyká **celý** `build` režim (od
+  `data:views` po `verify:export`), ne jen zola krok — viz komentář v
+  `with-build-lock.mjs`. `.githooks/post-commit` (auto push po commitu,
+  viz níž) tenhle risk zvyšuje, protože teď plný build spouští
+  automaticky každý commit na masteru, ne jen člověk, když si vzpomene.
+
+## ID kolize u souběžně rozšiřovaného dossieru
+
+Když dvě instance nezávisle přidávají nové `CLM-##`/`SRC-##`/…
+záznamy do **téhož** dossieru, obě si typicky spočítají stejné „další
+volné" číslo z toho, co vidí lokálně — a dorazí ke stejnému ID s jiným
+obsahem (`add/add` konflikt, který git nedokáže automaticky sloučit).
+Před přidáním nového záznamu do dossieru, na kterém může souběžně
+pracovat i jiná instance:
+
+1. `git fetch origin master` a zkontroluj aktuální nejvyšší
+   `CLM-##`/`SRC-##`/… v cílovém dossieru **na originu**, ne jen
+   lokálně — lokální stav může být starší.
+2. Pokud i tak dojde ke kolizi (viděno 2026-08-05: dvě session obě
+   sáhly po `CLM-09`/`SRC-09`/`SRC-10` ve stejném dossieru), neřeš to
+   přepisem cizích záznamů. Přečísluj **svoje** nové záznamy tak, aby
+   navazovaly za tím, co je skutečně na originu (ne co bylo v tvé
+   poslední lokální kopii), včetně všech míst, která ID nesou:
+   `identifier`, `@id`, `title`, cross-reference pole (`sources`/
+   `claims` v obou směrech), `order`, hand-authored tabulka a graf v
+   `dossier.json`, `content/` markdown (ten se ale nikdy needituje
+   ručně — po přečíslování kanonických JSON stačí `npm run data:build`).
+   `npm run data:validate` po přečíslování potvrdí, že nezůstal
+   viset žádný neplatný odkaz.
 
 ## Paralelismus uvnitř jedné instance
 

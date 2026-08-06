@@ -9,9 +9,9 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
   },
-  "text": "Podle Tejcem prezentovaných závěrů interního auditu došlo k chybám jak před přijetím bitcoinového daru ministerstvem, tak při prodeji kryptoměny; snížením nejnižší možné ceny v aukcích stát podle ministra přišel přibližně o 13 milionů korun. Jde o tvrzení ministra opřené o interní audit, nikoli o zjištění orgánů činných v trestním řízení.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "text": "Podle Tejcem prezentovaných závěrů interního auditu došlo k chybám jak před přijetím bitcoinového daru ministerstvem, tak při prodeji kryptoměny; ve všech 78 aukcích byla hodnota nejnižšího podání snížena o 10 procent oproti vyhlášeným podmínkám a státu tím podle ministra mohla vzniknout škoda nejméně 13 milionů korun, v krajním případě až 95 milionů korun. Jde o tvrzení ministra opřené o interní audit, nikoli o zjištění orgánů činných v trestním řízení.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-02"
@@ -21,6 +21,9 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-18"
     }
   ],
   "subjects": [

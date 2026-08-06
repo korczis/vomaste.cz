@@ -21,3 +21,5 @@ směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
 
 **Opakovaná kontrola k 2026-08-03**: cílené hledání zopakováno, žádné nové závěry komise ani kontroly OSPOD nedohledány. Mezera zůstává otevřená.
+
+**Opakovaná kontrola k 2026-08-06**: beze změny. V archivu tiskových zpráv Ministerstva spravedlnosti (projito do 27. 7. 2026) ani v rubrice Aktuálně Ústavního soudu není nic k výsledku kontroly OSPOD ani k závěrům Komise pro přezkum nepřirozených úmrtí dětí. Konkrétně chybí: úřední výstup Ministerstva práce a sociálních věcí nebo komise.

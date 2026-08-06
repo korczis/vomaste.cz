@@ -3,7 +3,7 @@
 title = "Miroslav Hlaváč"
 template = "entity.html"
 weight = 282
-description = "Kontextová entita — Generál; od 1. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+description = "Kontextová entita — Generál; od 1. 7. 2026 náčelník Generálního štábu AČR, Zůna jako jediný člen vlády hlasoval proti jeho výběru."
 
 [extra]
 generated = true

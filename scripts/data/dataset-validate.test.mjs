@@ -110,12 +110,34 @@ test("claim mimo status-opinion musí mít aspoň jeden existující zdroj; stat
   const model = clone();
   const claim = find(model, CLAIM);
   claim.record.sources = [];
+  // Protistrana se uvolňuje spolu s referencí: kdyby zdroj tvrzení dál
+  // uváděl, byla by to nekonzistentní vazba a ohlásilo by ji R8 — jiné
+  // pravidlo, než které tenhle test zkouší.
+  find(model, SOURCE).record.claims = [];
   let errors = validateReferences(model);
   assert.ok(errors.some((e) => e.includes("nemá žádný existující citovaný zdroj")), errors.join("\n"));
 
   claim.record.status = "status-opinion";
   errors = validateReferences(model);
   assert.deepEqual(errors, []);
+});
+
+test("R8: vazba claim↔source musí platit oběma směry", () => {
+  // Zdroj přestane uvádět tvrzení, které ho dál cituje.
+  const a = clone();
+  find(a, SOURCE).record.claims = [];
+  const aErrors = validateReferences(a);
+  assert.ok(aErrors.some((e) => e.includes("neuvádí ve svém poli claims")), aErrors.join("\n"));
+
+  // Opačný směr: tvrzení přestane citovat zdroj, který ho dál uvádí.
+  // Fixture nemá druhý zdroj, takže se claim přepne na status-opinion,
+  // jediný stav, který smí mít prázdné sources (jinak by se trefil do R6).
+  const b = clone();
+  const claimB = find(b, CLAIM);
+  claimB.record.sources = [];
+  claimB.record.status = "status-opinion";
+  const bErrors = validateReferences(b);
+  assert.ok(bErrors.some((e) => e.includes("necituje ve svém poli sources")), bErrors.join("\n"));
 });
 
 // --- validate-semantics --------------------------------------------------

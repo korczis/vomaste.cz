@@ -1,0 +1,25 @@
++++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
+title = "SRC-26 — Vláda České republiky (vlada.gov.cz)"
+description = "Přepis tiskové konference po jednání vlády 26. ledna 2026 — vystoupení ministra obrany k rozpočtu obrany na rok 2026"
+template = "dossier-source.html"
+weight = 26
+
+[extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-26"
+view_model = "generated/views/dossiers/jaromir-zuna/sources/src-26.json"
+dossier = "jaromir-zuna"
+record_type = "source"
+lang = "cs"
+src_id = "SRC-26"
++++
+**Tisková konference po jednání vlády, 26. ledna 2026**
+
+Doslovný přepis pořízený a publikovaný Úřadem vlády. Obsahuje vystoupení ministryně financí Aleny Schillerové k úpravám rozpočtu a souvislé vystoupení místopředsedy vlády a ministra obrany Jaromíra Zůny k obranným výdajům na rok 2026.
+
+Zdroj otevřen a přečten v plném znění 2026-08-06.
+
+**Co dokládá.** Rozsah škrtu — „snížení výdajů na obranu v kapitole Ministerstva obrany o 21 miliard korun a v ostatních kapitolách 0,8 miliardy korun“; kapitolu Ministerstva obrany ve výši 155 miliard 790 milionů korun; celkové obranné výdaje 185 miliard 693 milionů korun; a poměr k HDP — 2,11 % podle predikce z dubna 2025 a 2,07 % podle lednové predikce ([CLM-02](@/dossiers/jaromir-zuna/claims/clm-02.md)). Dále ministrovu obhajobu škrtu: „všechny stávající projekty, které jsou z hlediska modernizace armády, tak budou pokračovat včetně těch, které jsou vyhlášeny. Ta restrikce se bude týkat některých nových projektů, ty nebudou vyhlášeny… s tím, že se neruší, ale pouze se posouvají na rok 2027“ ([CLM-03](@/dossiers/jaromir-zuna/claims/clm-03.md)).
+
+**Poznámka k přesnosti a limitům.** Přepis pořizuje Úřad vlády, tedy sama vláda — dokládá, co ministři řekli, nikoli správnost jejich čísel. Rozdíly proti dosavadnímu znění tvrzení, opravené podle dokumentu: (1) [CLM-02](@/dossiers/jaromir-zuna/claims/clm-02.md) uvádělo pouze „snížila plánované obranné výdaje… o 21 miliard“; dokument rozlišuje 21 miliard v kapitole Ministerstva obrany a dalších 0,8 miliardy v ostatních kapitolách, dává celkovou částku 185,693 miliardy a obě predikční hodnoty (2,11 % / 2,07 %). Výchozí hodnotu 206 miliard a 2,35 % HDP dokument **neobsahuje** — zůstává na citovaném zpravodajství a tvrzení to nově říká výslovně. (2) [CLM-03](@/dossiers/jaromir-zuna/claims/clm-03.md) uvádělo, že se škrt dotkne „pouze nových, dosud nevyhlášených projektů“; ministr mluví o „**některých** nových projektech“. **Nález bez připojení:** dokument uvádí kapitolu Ministerstva obrany ve výši 155,790 miliardy, zatímco [CLM-44](@/dossiers/jaromir-zuna/claims/clm-44.md) uvádí podle zpravodajství zhruba 154,8 miliardy. Obě čísla mohou odpovídat jiné fázi téhož rozpočtu (vládní návrh z ledna vs. údaj citovaný později), a protože to z dokumentu zjistit nelze, tvrzení se nemění a rozdíl je zaznamenán v [GAP-04](@/dossiers/jaromir-zuna/gaps/gap-04.md).

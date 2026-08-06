@@ -9,12 +9,15 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
   },
-  "text": "Přestože Zůna na jednání vlády 18. května 2026 pro Hlaváčovo jmenování nehlasoval, na sněmovním výboru pro obranu jej podpořil slovy, že „generálporučík Miroslav Hlaváč patří k nejzkušenějším důstojníkům Armády České republiky“.",
+  "text": "Přestože Zůna na jednání vlády 18. května 2026 hlasoval proti Hlaváčovu jmenování — jako jediný člen vlády, jak téhož dne potvrdil premiér Babiš — na sněmovním výboru pro obranu jej podpořil slovy, že „generálporučík Miroslav Hlaváč patří k nejzkušenějším důstojníkům Armády České republiky“.",
   "status": "status-quote",
   "statusLabel": "CITACE",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-25"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-39"
     }
   ],
   "subjects": [

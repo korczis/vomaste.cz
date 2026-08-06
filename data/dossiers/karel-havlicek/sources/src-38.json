@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-38",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-38",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "title": "SRC-38 — Registr lobbování, veřejná stránka lobbovaného Karla Havlíčka",
+  "description": "Veřejný záznam osoby v Registru lobbování (RELOB): evidenční číslo, datum zápisu, obě evidované veřejné funkce a seznam vykázaných kontaktů po vykazovacích obdobích.",
+  "outlet": "Registr lobbování (RELOB)",
+  "sourceType": "primární registr / veřejný rejstřík",
+  "url": "https://relob.gov.cz/person/detail/04445410-2b54-fa69-dff8-3a1ae199274a",
+  "retrieved": "2026-08-05",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-51"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-52"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Primární veřejný registr vedený podle zákona č. 168/2025 Sb.,\no regulaci lobbování — ne rešerše přes žurnalistiku. Registr je živý\nsystém bez data vydání; uvedené „ověřeno“ je datum dotazu, ne datum\nplatnosti údajů.\n\n**Co dokládá.** Karel Havlíček je v registru veden jako **lobbovaný**\npod evidenčním číslem **RL5830385158**, se zápisem role lobbovaného\nod **3. 7. 2025**. Registr u něj eviduje dvě veřejné funkce zároveň —\nposlanec (Kancelář Poslanecké sněmovny) a ministr průmyslu a obchodu\n(Ministerstvo průmyslu a obchodu) — a vede u něj jediný seznam\nvykázaných kontaktů, rozdělený jen podle pololetních vykazovacích\nobdobí: 36 kontaktů za období 2025-2 a 53 za období 2026-1 (stav\nk dotazu 5. 8. 2026). U probíhajícího období 2026-2 nebyl k témuž datu\nvykázán žádný kontakt.\n\n**Ověřitelnost.** Stránka je veřejně přístupná bez přihlášení; totéž\nvrací i veřejné rozhraní registru na `/api/app/person/{id}/detail`.\nIdentifikátor osoby v URL je bezvýznamový identifikátor registru.\n\n**Limity — co tento zdroj nedokládá.** Registr obsahuje jen kontakty,\nkteré lobbista sám ohlásil, a jen za období od účinnosti zákona\n(1. 7. 2025). Neříká nic o obsahu jednání, o tom, zda kontakt cokoli\novlivnil, ani o tom, zda byl v čemkoli nepatřičný. Registr se navíc\nv čase mění: při dotazu 5. 8. 2026 vracelo hromadné vyhledávání\nkontaktů ([SRC-39](@/dossiers/karel-havlicek/sources/src-39.md)) o jeden\nkontakt více (90, z toho 54 za období 2026-1) než stránka osoby později\ntéhož dne (89, z toho 53). Rozdíl se týkal jediného záznamu a nedotkl se\nžádného z odvozených údajů této kauzy. Plný výčet omezení registru je\nv [GAP-12](@/dossiers/karel-havlicek/gaps/gap-12.md).\n\nRegistr u fyzických osob zveřejňuje jméno, roli a evidenční číslo.\nŽádné další osobní údaje se odsud do tohoto dossieru nepřebírají."
+    }
+  ],
+  "order": 38
+}

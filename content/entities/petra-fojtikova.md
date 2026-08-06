@@ -3,7 +3,7 @@
 title = "Petra Fojtíková"
 template = "entity.html"
 weight = 343
-description = "Kontextová entita — Vedoucí Úřadu vlády 1. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+description = "Kontextová entita — Vedoucí Úřadu vlády 1. 11. 2025 – 15. 12. 2025 dle úředního přehledu; okrajová kontextová zmínka."
 
 [extra]
 generated = true

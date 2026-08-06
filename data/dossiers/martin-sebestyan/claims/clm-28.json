@@ -9,12 +9,15 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
   },
-  "text": "Generální ředitelství Evropské komise pro zemědělství (DG Agri) podle SZIF na začátku června 2026 potvrdilo, že postup dohodnutý se SZIF zůstává v platnosti, včetně režimu vykazování plateb firmám z Agrofertu.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "text": "Generální ředitelství Evropské komise pro zemědělství (DG Agri) podle SZIF na začátku června 2026 potvrdilo, že postup dohodnutý se SZIF zůstává v platnosti, včetně režimu vykazování plateb firmám z Agrofertu. Ministr Šebestyán tuto reakci DG AGRI ve Sněmovně 11. 6. 2026 datoval na 4. června 2026 a doplnil, že 5. června 2026 Komise potvrdila správnost postupu SZIF a zároveň upozornila, že do prošetření souladu RSVP Trustu s evropským právem dotace proplácet nebude — označil to za tzv. neformální pozastavení.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-44"
     }
   ],
   "subjects": [

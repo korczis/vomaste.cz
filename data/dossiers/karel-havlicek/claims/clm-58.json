@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-58",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-58",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "text": "Jeden „kontakt“ v registru neznamená nutně samostatné jednání s Karlem Havlíčkem: u 31 z jeho 90 kontaktů uvádí lobbista jako lobbované více než sto osob najednou (nejvíce 372), u 19 kontaktů je Havlíček uveden jako jediná lobbovaná osoba a medián počtu lobbovaných osob připadajících na jeden kontakt je 8,5.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-39"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "order": 58,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Registr umožňuje vykázat jeden kontakt vůči libovolnému počtu\nlobbovaných osob — například celému plénu Poslanecké sněmovny. Takový\nhromadný záznam se v součtu u každé z uvedených osob objeví jednou,\nstejně jako záznam o schůzce s jedinou osobou.\n\nTohle je čtenářský klíč k číslům v\n[CLM-52](@/dossiers/karel-havlicek/claims/clm-52.md) a\n[CLM-57](@/dossiers/karel-havlicek/claims/clm-57.md): počet kontaktů je\npočet záznamů v registru, ne počet jednání. Rozlišit v registru, které\nzáznamy popisují individuální jednání, nelze — viz\n[GAP-12](@/dossiers/karel-havlicek/gaps/gap-12.md)."
+    }
+  ]
+}

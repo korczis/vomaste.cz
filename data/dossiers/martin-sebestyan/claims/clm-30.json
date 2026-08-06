@@ -9,12 +9,15 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
   },
-  "text": "Mimořádnou schůzi Sněmovny k dotacím Agrofertu svolanou pěticí opozičních stran Sněmovna 11. června 2026 fakticky zablokovala: program schůze podpořilo 66 poslanců ODS, STAN, Pirátů, KDU-ČSL a TOP 09 ze 151 přítomných, proti bylo 85 poslanců koaličních ANO, SPD a Motoristů. Ministr Šebestyán na schůzi uvedl, že resort postupuje správně a transparentně.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "text": "Mimořádnou schůzi Sněmovny k dotacím Agrofertu (jediný bod „Ochrana českých občanů před placením rizikových dotací Agrofertu“) Sněmovna 11. června 2026 fakticky zablokovala: v hlasování č. 2 bylo přihlášeno 151 poslanců, pro pořad schůze 66, proti 85, návrh nebyl přijat. Zpravodajství schůzi popsalo jako svolanou pěticí opozičních stran (ODS, STAN, Piráti, KDU-ČSL a TOP 09); stenozáznam uvádí, že ji předseda Sněmovny svolal podle § 51 odst. 4 jednacího řádu na základě žádosti 90 poslanců. Ministr Šebestyán na schůzi uvedl, že rezort „postupuje řádně a transparentně“.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-14"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-44"
     }
   ],
   "subjects": [

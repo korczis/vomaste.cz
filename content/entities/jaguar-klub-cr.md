@@ -3,7 +3,7 @@
 title = "Jaguar klub ČR, z.s."
 template = "entity.html"
 weight = 158
-description = "Kontextová entita — IČO 26557975; Turek členem statutárního orgánu od 3. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+description = "Kontextová entita — IČO 26557975; Turek členem statutárního orgánu od 3. 3. 2023 (rejstříková vazba)."
 
 [extra]
 generated = true

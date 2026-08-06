@@ -31,6 +31,28 @@ entry; it does not replace reading and applying the rule.
   and not an imported agent framework. For the commit itself, `commit`
   (`.claude/skills/commit/`) — message format, which gate actually
   applies, and the right coop-bus report.
+- **Prismatic Platform integration (2026-08-06, partial)**:
+  `~/dev/prismatic-platform` is authorized as a local upstream
+  research/enrichment capability provider (`AUTH-2026-08-05-PLATFORM-SCOPE`
+  in `AGENTS.md`, "Standing scope authorization and publication gates";
+  architecture in `docs/adr/prismatic-platform-integration.md`). Real and
+  tested: `scripts/prismatic/lib/config.mjs` (path resolution + Git
+  validation), `scripts/prismatic/lib/contract.mjs` +
+  `schemas/prismatic/export-contract.schema.json` (NDJSON parse/validate,
+  unknown-major-version rejection), and `prismatic:status`/`prismatic:probe`/
+  `prismatic:plan` (the last narrowly scoped to one audited "reuse
+  directly" capability — ARES lookups for entities missing
+  `externalIds.ico`; do not add a new job type there without checking
+  `docs/audits/2026-08-05-prismatic-capability-map.md` first). Still
+  stubs: `run`/`import`/`diff`/`review-report`/`promote`/`verify`/`drift`/
+  `enrich-all` — Prismatic has no matching exporter to call yet. Read each
+  skill's own `SKILL.md` before invoking it — do not report
+  Prismatic-sourced research as done unless you actually built and ran the
+  missing pipeline first. Full build plan and per-sub-phase status:
+  `docs/missions/2026-08-05-prismatic-platform-integration-master-prompt.md`
+  + its companion checklist in the same directory. The public Zola build
+  has no dependency on any of this and must keep working with the
+  sibling repo entirely absent.
 - `git commit` runs `.githooks/pre-commit` (installed automatically by
   `npm ci`/`npm install` via `scripts/setup/install-git-hooks.mjs`, or
   manually: `npm run hooks:install`) — a fast, pure-data validator subset.
@@ -44,6 +66,24 @@ entry; it does not replace reading and applying the rule.
   this specific cleanup has no open tracking task right now; run
   `npm run lint:historical-coupling` yourself to see current occurrences
   before assuming it's clean).
+- **On `master`, a commit auto-pushes.** `.githooks/post-commit`
+  (installed the same way as pre-commit, since 2026-08-05) runs fetch →
+  rebase onto `origin/master` → the **full** `npm run build` → `git push
+  origin master` automatically after every commit made directly on
+  `master` — push to `master` is the live GitHub Pages deploy, so this
+  means committing on `master` now typically deploys within seconds,
+  not "commit now, push later after a review pause." It aborts cleanly
+  (commit stays local, nothing pushed) on a rebase conflict or a red
+  full build; see `docs/coop/PROTOCOL.md`, "Automatický push po
+  commitu" for the exact bail-out conditions and the recipe for the
+  generated-file conflicts (golden test snapshot, discovery log,
+  reports) that commonly cause the rebase step to need manual
+  resolution when several instances are active. Consequence for your
+  own workflow: get confirmation *before* committing directly on
+  `master` for anything that should be reviewed first — there is no
+  longer a safe pause between `git commit` and the push actually going
+  out. `COOP_NO_AUTOPUSH=1 git commit …` opts a single commit out (the
+  hook is a no-op in worker worktrees on `task/T-###` branches anyway).
 - Treat the "Content about real parties" log in `AGENTS.md` as append-only
   and load-bearing: never edit or remove an existing entry, even to "clean
   up" wording or fix a typo. A new scope extension is always a brand-new
@@ -194,20 +234,26 @@ entry; it does not replace reading and applying the rule.
   edits `docs/coop/TASKS.md`, merges, and pushes. Workers live in
   `~/dev/vomaste-worktrees/T-###` on `task/T-###` branches, one task per
   instance, and merge-request only with a clean `npm run build`.
-- **Why 5 skills and not a large agent/command ecosystem**: this repo's
+- **Why 9 skills and not a large agent/command ecosystem**: this repo's
   Claude Code tooling (`.githooks/pre-commit`, `scripts/setup/`, the 5
-  skills above) is deliberately scaled to what a small, single-purpose
-  Zola static site actually needs — not a port of a large platform's
-  agent/command registry. That would be exactly the "doctrine/agent
-  sprawl" the constitution's operational-discipline invariants warn
-  against (`docs/constitution/OPEN_INTELLIGENCE_COMMONS.md`), adding
-  maintenance surface with no measured need. If a genuine new need shows
-  up, add the smallest thing that addresses it (another skill, another
-  validator) — not a framework in anticipation of needs this repo
-  doesn't have yet. `investigate` is the worked example: a 2026-07-30
-  request to import Prismatic's AIAD framework (549 agents, 234
-  commands, 1,636 files — see `docs/adr/aiad-and-agent-tooling-import.md`
-  for the measured comparison) was evaluated and declined on exactly this
-  reasoning, and the smallest thing that addressed the actual need — one
-  more skill — was added instead. Same reasoning `adr` asks you to apply
-  to a dependency, applied to this repo's own tooling.
+  core skills plus the 4 `prismatic-*` scaffolds) is deliberately scaled
+  to what a small, single-purpose Zola static site actually needs — not a
+  port of a large platform's agent/command registry. That would be
+  exactly the "doctrine/agent sprawl" the constitution's
+  operational-discipline invariants warn against
+  (`docs/constitution/OPEN_INTELLIGENCE_COMMONS.md`), adding maintenance
+  surface with no measured need. If a genuine new need shows up, add the
+  smallest thing that addresses it (another skill, another validator) —
+  not a framework in anticipation of needs this repo doesn't have yet.
+  `investigate` is the worked example: a 2026-07-30 request to import
+  Prismatic's AIAD framework (549 agents, 234 commands, 1,636 files — see
+  `docs/adr/aiad-and-agent-tooling-import.md` for the measured
+  comparison) was evaluated and declined on exactly this reasoning, and
+  the smallest thing that addressed the actual need — one more skill —
+  was added instead. The 4 `prismatic-*` skills added 2026-08-05 are the
+  same reasoning applied a second time, after the owner explicitly lifted
+  the earlier ban on using the platform itself (not on copying its
+  tooling tree): four thin, repository-specific skills that call a
+  versioned export contract, not the AIAD framework this ADR still
+  declines. Same reasoning `adr` asks you to apply to a dependency,
+  applied to this repo's own tooling.

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-79",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-79",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-79 — Seznam Zprávy: Zproštěn obžaloby. Soudce osvobodil Babiše v kauze Čapí hnízdo",
+  "description": "Vlastní zpravodajství Seznam Zpráv (Radek Nohl) z 9. 1. 2023 přímo od soudu: Městský soud v Praze zprostil Andreje Babiše i Janu Nagyovou obžaloby, soudce Jan Šott odůvodnil verdikt větou, že skutek popsaný v obžalobě není trestným činem; žalobce Šaroch si ponechal lhůtu k odvolání.",
+  "outlet": "Seznam Zprávy",
+  "sourceFamily": "seznam-zpravy",
+  "sourceType": "zpravodajství / reportáž",
+  "url": "https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-rozsudek-nad-babisem-zalobce-navrhuje-nejtvrdsi-podminku-222737",
+  "published": "2023-01-09",
+  "retrieved": "2026-08-05",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-50"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Vlastní zpravodajství jiné redakce, ne agenturní přetisk.** Průběžná reportáž\nSeznam Zpráv z jednací síně, podepsaná redaktorem **Radkem Nohlem**\n(`datePublished` 2023-01-09). Otevřeno a přečteno celé 2026-08-05.\n\n**Co dokládá doslovně.** „Kandidáta na prezidenta Andreje Babiše pět dní před prvním\nkolem voleb soudce Jan Šott **zprostil obžaloby v kauze Čapí hnízdo**. […] Stejně\ntak soudce zprostil obžaloby bývalou manažerku Agrofertu Janu Nagyovou.\" Odůvodnění\nverdiktu: „**Skutek popsaný v obžalobě není trestným činem**,\" uvedl na konci\nvynesení rozsudku soudce Šott. A k dalšímu postupu: „Advokáti obou obviněných\nuvedli, že se nejspíše odvolávat nebudou. **Žalobce Jaroslav Šaroch si pak ponechal\nlhůtu pro to, zda odvolání podá.**\"\n\n**Nezávislost:** dosavadní zdroje CLM-50 —\n[SRC-23](@/dossiers/andrej-babis/sources/src-23.md) (Deník.cz) a\n[SRC-32](@/dossiers/andrej-babis/sources/src-32.md) (ČeskéNoviny.cz) — nesou oba\nrodinu `ctk` a jsou tedy jedním hlasem. Tento záznam je vlastní reportáž jiné\nredakce (rodina `seznam-zpravy`, jiný vydavatel i doména), takže vzniká nezávislá\ndvojice a CLM-50 přechází na `CORROBORATED`.\n\n**Poznámka k přesnosti a limitům.** Jde o **nepravomocný rozsudek soudu prvního\nstupně** — zproštění obžaloby není zjištění, že se skutek nestal, a v této věci bylo\npozději dvakrát zrušeno odvolacím soudem (viz\n[CLM-51](@/dossiers/andrej-babis/claims/clm-51.md) a\n[CLM-01](@/dossiers/andrej-babis/claims/clm-01.md)). Nepravomocnost sama článek\nnepojmenovává explicitně; dokládá ji nepřímo tím, že si státní zástupce ponechal\nlhůtu k odvolání. Text je **reportáž z jednání**, ne písemné vyhotovení rozsudku —\nto veřejné není a dossier ho nemá. Vyjádření obžalovaných a jejich obhájců jsou\ncitována jako stanoviska stran, ne jako zjištění soudu."
+    }
+  ],
+  "order": 79
+}

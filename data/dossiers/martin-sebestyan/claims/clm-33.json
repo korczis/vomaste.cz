@@ -9,12 +9,15 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
   },
-  "text": "Server Demagog.cz ověřil výrok Martina Šebestyána z 13. května 2026, že investiční dotace pro Agrofert zastavil on v rámci SZIF po dohodě s Evropskou komisí, a vyhodnotil jej jako pravdivý: SZIF pod jeho vedením pozastavil firmám z Agrofertu 28 investičních projektů za více než půl miliardy korun a ve všech 28 soudních sporech uspěl fond.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "text": "Server Demagog.cz ověřil výrok Martina Šebestyána z 13. května 2026, že investiční dotace pro Agrofert zastavil on v rámci SZIF po dohodě s Evropskou komisí, a vyhodnotil jej jako pravdivý s výhradou: dotčené firmy se podle něj domáhaly zrušení rozhodnutí SZIF ve 28 případech a fond podle mluvčí Evy Češpivy ve všech sporech uspěl. Počty projektů se ale mezi dokumenty rozcházejí — Demagog uvádí 21 projektů zastavených před podpisem dohody a dalších 7 před vyplacením (celkem 28), zatímco vlastní dokumentace SZIF z 1. 8. 2022 uvádí 21 projektů ve fázi před podpisem dohody a 8 projektů s pozastavenou administrací po podepsání žádosti (celkem 29), plus tři projekty, které z administrace vypadly jiným způsobem. Rozdíl žádný z obou dokumentů nevysvětluje.",
+  "status": "status-disputed",
+  "statusLabel": "SPORNÉ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-16"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-42"
     }
   ],
   "subjects": [
@@ -25,6 +28,10 @@
     {
       "type": "markdown",
       "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/martin-sebestyan/_index.md#registr-tvrzeni)."
+    },
+    {
+      "type": "markdown",
+      "value": "**Oprava proti dokumentům (6. 8. 2026)**: dřívější znění tvrzení uvádělo „28 investičních projektů za více než půl miliardy korun“. Údaj o objemu „více než půl miliardy korun“ se v citovaném ověření [Demagog.cz](@/dossiers/martin-sebestyan/sources/src-16.md) nenachází a nepodařilo se jej doložit ani z primární dokumentace fondu ([SRC-42](@/dossiers/martin-sebestyan/sources/src-42.md)); byl proto z tvrzení odstraněn. Rozdíl 28 vs. 29 projektů je zaznamenán jako rozpor mezi dvěma dokumenty, nikoli sjednocen."
     }
   ]
 }

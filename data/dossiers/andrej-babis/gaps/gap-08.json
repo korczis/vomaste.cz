@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/gaps/GAP-08",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-08",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "GAP-08 — Žaloba Seznam.cz na premiéra Babiše: druhý nezávislý hlas nedohledán",
+  "description": "K podání žaloby Seznam.cz z 3. 3. 2026 existuje jediný redakční hlas — zpráva ČTK. Všechny otevřené přetisky nesou kredit ČTK a redakce vlastněné žalobcem nejsou k jeho vlastní žalobě nezávislým doložením.",
+  "priority": "střední",
+  "checked": "2026-08-05",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-86"
+    }
+  ],
+  "subjects": [],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Co je doloženo.** Podání žaloby na ochranu dobré pověsti, její důvod\ni požadovaný petit (smazání příspěvků, zákaz dalšího šíření, omluva) dokládá\n[CLM-86](@/dossiers/andrej-babis/claims/clm-86.md) ze dvou záznamů —\n[SRC-62](@/dossiers/andrej-babis/sources/src-62.md) (ČeskéNoviny.cz) a\n[SRC-63](@/dossiers/andrej-babis/sources/src-63.md) (ČT24). Oba nesou rodinu\n`ctk`, jde tedy o **jeden** nezávislý hlas a tvrzení zůstává `1 ZDROJ`.\n\n**Co doloženo není.** Druhý, skutečně nezávislý vydavatel. Kolo hledání 2026-08-05\notevřelo a přečetlo tyto kandidáty a všechny je muselo odmítnout:\n\n1. **FORUM 24** („Seznam.cz podal žalobu na premiéra Babiše…\") — článek je\n   v JSON-LD podepsán autorem „ČTK\" (`/autor/ctk`), jde o týž agenturní text.\n2. **Deník N**, Minuta N z 3. 3. 2026 — položka je explicitně kreditována\n   „(ČTK, Médium.cz)\".\n3. **Radio Prague International** (cesky.radio.cz) — text je přetisk téže zprávy\n   ČTK („sdělil dnes Babiš ČTK\").\n4. **Seznam Zprávy**, **Novinky.cz**, **Médium.cz** — redakce a platformy\n   vlastněné žalobcem Seznam.cz; k jeho vlastní žalobě nemohou být nezávislým\n   doložením, i kdyby formálně prošly testem rodiny a vydavatele.\n5. **Primární dokument** — podaná civilní žaloba ani spis Krajského soudu v Praze\n   nejsou veřejné; portál InfoSoud vyžaduje spisovou značku, kterou žádný\n   z otevřených zdrojů neuvádí.\n\n**Jak se mezera uzavře.** Vlastní zpravodajstvím redakce nezávislé na ČTK\ni na Seznam.cz (např. reportáž z jednání nařízeného na 24. 9. 2026), nebo\nzveřejněním rozhodnutí soudu se spisovou značkou, přes kterou půjde věc dohledat\nv úředních databázích."
+    }
+  ],
+  "order": 8
+}

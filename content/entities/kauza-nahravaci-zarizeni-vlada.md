@@ -3,7 +3,7 @@
 title = "Kauza nahrávacího zařízení v jednacím sále vlády"
 template = "entity.html"
 weight = 206
-description = "Kontextová entita — Nález AI rekordéru Plaud ve Strakově akademii (22. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+description = "Kontextová entita — Nález AI rekordéru Plaud ve Strakově akademii (22. 1. 2026), přihlášení se Šťastného, nenahlášení bezpečnostním složkám a politické reakce."
 
 [extra]
 generated = true
