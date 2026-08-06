@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-39",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-39",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "title": "SRC-39 — ODS: ODS odmítá plošný zákaz mobilů ve školách. Místo toho navrhuje zavést školní zařízení (20. 7. 2026)",
+  "description": "Vlastní tisková zpráva Občanské demokratické strany k vládou podpořenému návrhu na plošný zákaz mobilních telefonů ve školách, s přímými citacemi předsedy strany Martina Kupky a stínové ministryně školství Renáty Zajíčkové.",
+  "outlet": "ODS (Občanská demokratická strana)",
+  "sourceType": "stanovisko organizace",
+  "url": "https://www.ods.cz/clanek/28617-ods-odmita-plosny-zakaz-mobilu-ve-skolach-misto-toho-navrhuje-zavest-skolni-zarizeni",
+  "published": "2026-07-20",
+  "retrieved": "2026-08-06",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-42"
+    }
+  ],
+  "subjects": [
+    "plaga"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Vlastní publikované stanovisko strany, jejíž postoj tvrzení popisuje** —\ntisková zpráva na webu ODS datovaná 20. července 2026, tedy dnem, kdy vláda\nnávrh podpořila. Otevřena a přečtena celá 2026-08-06.\n\n**Co dokládá doslovně:** že „**Občanská demokratická strana odmítá vládní návrh\nna plošný zákaz mobilních telefonů ve školách**\"; přímou řeč předsedy strany\nMartina Kupky „**Namísto toho chce vláda přenést odpovědnost na školy a učitele,\nkteří by se měli stát kontrolory mobilních telefonů. Plošný zákaz udělá\nz kantorů kontrolory batohů**\"; a alternativu, kterou strana předkládá:\n„**hračka do skříňky, pracovní nástroj na lavici. Soukromé mobilní telefony do\nvýuky nepatří. Ve škole by děti měly využívat školní tablety nebo notebooky pod\nsprávou školy, určené výhradně pro vzdělávání a bezpečnou komunikaci**\"\n(Renáta Zajíčková), včetně zásady, že zařízení budou „bez přístupu k TikToku\na dalším sociálním sítím\".\n\n**Nezávislost:** jde o vlastní publikaci ODS, ne o zprávu média. Dosavadní zdroje\nCLM-42 — [SRC-16](@/dossiers/robert-plaga/sources/src-16.md),\n[SRC-19](@/dossiers/robert-plaga/sources/src-19.md) a\n[SRC-30](@/dossiers/robert-plaga/sources/src-30.md) — nesou všechny rodinu\n`ctk`, tedy jeden hlas.\n\n**Poznámka k přesnosti a limitům**: tisková zpráva slovo **„populistický\"\nneobsahuje**; návrh v ní ODS označuje za „další marketingový krok hnutí ANO\".\nOznačení „líbivé populistické opatření\" pochází z agenturního zpravodajství\n(SRC-16/SRC-19/SRC-30), které je přisuzuje **straně jako celku**, nikoli osobně\nMartinu Kupkovi — tvrzení bylo v tomto kole podle dokumentů opraveno. Ani\ncitovaná Kupkova věta „plošné zákazy nevedou k tomu, aby děti byly odolnější\nvůči škodlivým algoritmům sociálních sítí\" **v tiskové zprávě není**; padla\ntéhož dne mimo ni a doložena je zatím jen rodinou `ctk`. Zdroj tedy dokládá\npostoj strany, varování před proměnou učitelů v kontrolory a navrhovanou\nalternativu se školními zařízeními — ne doslovné znění onoho výroku. Jde\no **stranický materiál**, tedy o doklad toho, co ODS sama uvedla; dossier z něj\nnevyvozuje, zda jsou její argumenty věcně správné."
+    }
+  ],
+  "order": 39
+}

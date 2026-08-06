@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/updates/2026-08-06",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-08-06",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "date": "2026-08-06",
+  "summary": "T-079 — dořešení zbylých tvrzení třídy „≥2 citace, jedna rodina“ (E1+). Prověřeno všech šest: CLM-06, CLM-08, CLM-30, CLM-31 a CLM-32 povýšeno na CORROBORATED, CLM-28 nikoli. Nové doklady: tisková zpráva Policie ČR, KŘP Olomouckého kraje z 10. 2. 2026 (SRC-46 — primární dokument, který T-070 nenašla), vlastní zpravodajství Seznam Zpráv z 11. 2., 20. 4. a 14. 5. 2026 (SRC-47, SRC-48, SRC-49) a text Zdravých zpráv z 3. 8. 2026 (SRC-50). Proti dokumentům opraveno: CLM-06 a CLM-30 (právní kvalifikace je trojí — zvlášť závažné zločiny těžkého ublížení na zdraví a podvodu a přečin ublížení na zdraví, ne jen dva), CLM-08 (pokyn dostal ředitel nemocnice 11. 2. 2026; „stav interní revize“ nese jen agenturní verze), CLM-31 (VZP nemluví o „plánu kontrol“, ale o vyžádání dokumentace; termíny závěrů se mezi dubnem a květnem 2026 rozcházejí a tvrzení je nyní uvádí s daty), CLM-32 (policie mluví o úkonech trestního řízení, ne o zásahu; proběhly v úterý 12. 5. 2026; nárůst implantací 131 procent, ze 157 na 363). CLM-28 zůstává na stavu 1 ZDROJ — červencové vyjádření prof. Táborského padlo výhradně jako citace pro ČTK a všechna jeho vydání jsou týž hlas; důvod je zaznamenán v GAP-14. Potvrzeny dvě dříve zamítnuté cesty: ministerstvo zdravotnictví k únoru 2026 žádnou tiskovou zprávu ke kauze nevydalo (ověřeno úplným výpisem tiskového centra za 26. 1. – 4. 3. 2026) a VZP k věci vlastní sdělení nepublikuje. GAP-14 zúžena na CLM-28, GAP-15 aktualizována (web Krajské zdravotní i k dnešku uvádí prof. Táborského jako přednostu).",
+  "addedClaims": [],
+  "updatedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-30"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-31"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-32"
+    }
+  ],
+  "addedGaps": [],
+  "closedGaps": [],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-46"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-47"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-48"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-49"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-50"
+    }
+  ]
+}

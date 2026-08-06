@@ -22,10 +22,26 @@
     - breadcrumbs come from the page's/section's own `ancestors` chain. -#}
 {%- import "macros/jsonld.html" as jsonld -%}
 
-{%- set ld_lang = page.extra.lang | default(value=section.extra.lang | default(value=config.extra.lang | default(value="en"))) -%}
-{%- set ld_title = page.title | default(value=section.title | default(value=config.title)) -%}
-{%- set ld_description = page.description | default(value=section.description | default(value=config.description)) -%}
-{%- set ld_seo_type = page.extra.seo_type | default(value=section.extra.seo_type | default(value=config.extra.seo_type | default(value="WebPage"))) -%}
+{#- T-076: prezentační pole stránkového uzlu se NEODVOZUJÍ znovu. Berou se
+    z `meta_*` proměnných, které rozložila `templates/base.html` a ze
+    kterých se vykreslily `og:*` a `twitter:*` (Tera `include` sdílí
+    kontext parenta). Dokud tenhle partial zahrnuje jedině base.html,
+    je shoda OG ↔ JSON-LD daná konstrukcí, ne dohodou; `verify-og.mjs`
+    ji navíc po každém buildu ověřuje nad vydaným HTML.
+
+    Do T-076 si tenhle soubor titulek i popis počítal sám ze syrového
+    front matter — bez disambiguace dossierem a bez ořezu — takže
+    `og:title` a `name` stránkového uzlu tvrdily o téže stránce dvě různé
+    věci na 2 246 stránkách („CLM-01" vs. „CLM-01 — Adam Vojtěch")
+    a `og:description` vs. `description` na 463 stránkách.
+
+    `meta_page_title` (syrový titulek stránky, bez dossieru a bez ořezu)
+    zůstává tam, kde je krátký název správně: poslední článek drobečkové
+    navigace a jméno citovaného záznamu. -#}
+{%- set ld_lang = meta_lang -%}
+{%- set ld_title = meta_title -%}
+{%- set ld_description = meta_description -%}
+{%- set ld_seo_type = meta_seo_type -%}
 {%- set ld_record_type = page.extra.record_type | default(value=section.extra.record_type | default(value="")) -%}
 {%- set ld_dossier = page.extra.dossier | default(value=section.extra.dossier | default(value="")) -%}
 {%- set ld_dossier_type = page.extra.dossier_type | default(value=section.extra.dossier_type | default(value="")) -%}
@@ -108,7 +124,7 @@
 {"@type":"ListItem","position":{{ loop.index }},"name":{{ ld_s.title | default(value=config.title) | json_encode | safe }},"item":{{ ld_s.permalink | json_encode | safe }}},
 {%- endfor -%}
 {%- set ld_pos = ld_ancestors | length -%}
-{"@type":"ListItem","position":{{ ld_pos + 1 }},"name":{{ ld_title | json_encode | safe }}{% if current_url %},"item":{{ current_url | json_encode | safe }}{% endif %}}]}
+{"@type":"ListItem","position":{{ ld_pos + 1 }},"name":{{ meta_page_title | json_encode | safe }}{% if current_url %},"item":{{ current_url | json_encode | safe }}{% endif %}}]}
 {%- endif -%}
 {%- if ld_record_type == "claim" and ld_view -%}
 ,{"@type":"Claim","name":{{ ld_view.record.identifier | json_encode | safe }},"text":{{ ld_view.record.text | json_encode | safe }},"inLanguage":{{ ld_lang | json_encode | safe }}{% if current_url %},"url":{{ current_url | json_encode | safe }}{% endif %}{% if ld_claim_sources | length > 0 %},"appearance":[{% for ld_s in ld_claim_sources %}{{ jsonld::ld_source_record(s=ld_s) }}{% if not loop.last %},{% endif %}{% endfor %}]{% endif %}}
@@ -119,7 +135,7 @@
   {%- set ld_fp_key = ld_dossier ~ "/" ~ ld_view.record.identifier -%}
   {%- set ld_fp = ld_fps[ld_fp_key] | default(value="") -%}
 {%- endif -%}
-,{{ jsonld::ld_source_canonical(record=ld_view.record, name=ld_title, fp=ld_fp) }}
+,{{ jsonld::ld_source_canonical(record=ld_view.record, name=meta_page_title, fp=ld_fp) }}
 {%- endif -%}
 {#- Source catalogue. A registry is a Dataset with a provider and, where one
     exists, a machine-readable distribution — which is exactly what an agent

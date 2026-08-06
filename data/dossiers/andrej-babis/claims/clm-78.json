@@ -9,12 +9,18 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
   },
-  "text": "Státní zástupce Jaroslav Šaroch v září 2019 stíhání zastavil s odůvodněním, že „skutek není trestným činem“ — mimo jiné se podle usnesení nepodařilo prokázat, že Babiš byl skutečným vlastníkem akcií Farmy Čapí hnízdo; totéž usnesení současně konstatovalo „Babišův enormní zájem na výstavbě areálu“ a „zcela nadstandardní vztahy“ mezi farmou a skupinou Agrofert. Zastavení stíhání je procesní rozhodnutí podléhající přezkumu, ne zproštění soudem",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "text": "Dozorový státní zástupce Jaroslav Šaroch zastavil trestní stíhání usnesením ze dne 30. srpna 2019; Městské státní zastupitelství v Praze je rozeslalo oprávněným osobám v polovině září 2019 a právní moci nabylo 17. září 2019. Jako důvod státní zastupitelství uvedlo výklad pojmu malý a střední podnik: „Provedeným dokazováním se však nepodařilo prokázat, že by toto tvrzení bylo nepravdivé“ — tedy tvrzení žadatele, že je malým nebo středním podnikem; propojení Farmy Čapí hnízdo s koncernem Agrofert přes rodinné příslušníky podle státního zastupitelství „nehrálo při posouzení roli“. Formulaci „skutek není trestným činem“, závěr o neprokázaném skutečném vlastnictví akcií Farmy Čapí hnízdo ani citace o „Babišově enormním zájmu na výstavbě areálu“ a „zcela nadstandardních vztazích“ zveřejněné dokumenty státního zastupitelství neobsahují — tyto části stojí jen na citovaném zpravodajství. Zastavení stíhání je procesní rozhodnutí podléhající přezkumu, ne zproštění soudem",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-55"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-82"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-84"
     }
   ],
   "subjects": [],
@@ -22,7 +28,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni).\n\n**Opraveno a povýšeno 2026-08-06 (kolo CASE-05, T-078).** Připojeny dvě tiskové\nzprávy Městského státního zastupitelství v Praze — z 15. 9. 2019\n([SRC-82](@/dossiers/andrej-babis/sources/src-82.md)) a z 19. 9. 2019\n([SRC-84](@/dossiers/andrej-babis/sources/src-84.md)). Jde o **jeden nezávislý\nhlas** (týž vydavatel), který ale stojí proti agenturně založenému textu Echo24\n([SRC-55](@/dossiers/andrej-babis/sources/src-55.md)).\n\nTři rozdíly mezi dokumentem a dosavadním zněním, které vycházelo ze\nzpravodajství:\n\n- **„v září 2019 stíhání zastavil“ → usnesení ze dne 30. 8. 2019.** Nejvyšší\n  státní zastupitelství ([SRC-85](@/dossiers/andrej-babis/sources/src-85.md))\n  usnesení datuje **30. 8. 2019** a uvádí, že **nabylo právní moci 17. 9. 2019**;\n  MSZ je „dnešního dne“ (15. 9. 2019) teprve rozeslalo oprávněným osobám. Září\n  2019 je tedy měsíc rozeslání a nabytí právní moci, ne vydání.\n- **Uvedený důvod je jiný, než tvrzení uvádělo.** Zpravodajství uvádí, že se\n  „nepodařilo prokázat, že Babiš byl skutečným vlastníkem akcií Farmy Čapí\n  hnízdo“. Zveřejněné dokumenty státního zastupitelství staví důvod jinam: na\n  **výklad pojmu malý a střední podnik** — „nepodařilo prokázat, že by toto\n  tvrzení bylo nepravdivé“, přičemž „propojení prostřednictvím řady akcionářů na\n  úrovni rodinných příslušníků s koncernem Agrofert **nehrálo při posouzení\n  roli**“. Otázka vlastnictví akcií se v otevřených dokumentech nevyskytuje.\n- **Formulace „skutek není trestným činem“ v dokumentech chybí.** Ani jedna\n  z obou tiskových zpráv ji neobsahuje a neuvádí ani zákonné ustanovení, podle\n  nějž bylo stíhání zastaveno. Ponechána je proto s výslovným přiřazením\n  zpravodajství.\n\n**Limit:** MSZ samo přiznává, že usnesení bylo zveřejněno podle zákona\nč. 106/1999 Sb. jen „v rozsahu omezeném převážně na právní závěry“; citace\no „enormním zájmu“ a „zcela nadstandardních vztazích“ mohou pocházet z části,\nkterá zveřejněna nebyla. Dossier je proto nemaže, ale drží u zdroje, který je\nuvádí."
     }
   ]
 }

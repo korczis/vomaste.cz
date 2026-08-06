@@ -48,6 +48,10 @@ Profil sponzoringu na Hlídači státu přebírá položky z výroční finančn
 
 Ve zprávě za rok 2024 jsou u hnutí Motoristé sobě vedeny dva peněžité dary po 50 000 Kč od dárce „Chlad, Richard 27.05.1992", zatímco pětice bezúplatných plnění ve zprávě za rok 2025 patří Ing. Richardu Chladovi s ročníkem 1962. Bez porovnání data narození by se dvě různé osoby slily do jedné a součet by vznikl napříč nimi. Doloženo v `richard-chlad/SRC-06`.
 
+### Rok zprávy není rok děje
+
+Výroční finanční zpráva za rok N se zveřejňuje až v roce N+1 a opravy k ní přibývají později. Datum stažení proto tvrzení nedatuje — cituj rok, ke kterému se zpráva vztahuje, jinak se dar z roku 2023 čte jako dar z roku, kdy byl výpis pořízen.
+
 ## Jak v něm hledat {#jak-hledat}
 
 Adresace je per subjekt a rok: `/zpravy/vfz<rok>` je přehled všech podaných výročních zpráv, `/zprava/vfz<rok>/<slug-subjektu>` konkrétní zpráva, `/zprava/ps<rok>/<slug-subjektu>` zpráva o financování volební kampaně, `/sankce` registr sankcí. Přehledy nabízejí i strojová data (CSV / XLS / JSON). U jmenovaného dárce vždy porovnej datum narození, ne jen jméno; u částky vždy uveď, ze které části zprávy pochází.

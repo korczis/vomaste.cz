@@ -23,3 +23,5 @@ Agenturní zpracování kauzy s doslovnými citacemi obou stran. Obsahuje nejúp
 **Nezávislost (oprava 2026-08-03)**: článek výslovně uvádí, že o kauze „dnes informoval server Seznam Zprávy“ — jde o převzetí téže původní reportáže ([SRC-02](@/dossiers/lubomir-metnar/sources/src-02.md)), ne o nezávislé potvrzení. Proto stejná `sourceFamily` jako SRC-02.
 
 Zdroj otevřen a přečten 2026-07-30, doplňkově znovu 2026-08-03. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji.
+
+**Dvojí původ — pozor při párování.** Článek je podepsán „Autor: ČTK" a v patičce nese „Zdroj: ČTK / Blesk Zprávy", zároveň ale přejímá zjištění Seznam Zpráv. Má tedy dvě linie původu, které pole `sourceFamily` neumí zachytit současně. Hodnota je nastavena na `seznam-zpravy`, protože to je původ zjištění; z toho ale neplyne, že by byl nezávislý na ČTK — **nesmí se párovat ani se zdrojem rodiny `ctk`, ani se Seznam Zprávami** jako druhý nezávislý hlas. Ověřeno otevřením článku 2026-08-06.

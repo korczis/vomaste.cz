@@ -56,36 +56,36 @@ veškeré nedodělané zdrojovací práce.
 | Metrika | Hodnota |
 |---|---|
 | Dossierů | 26 |
-| Tvrzení | 967 |
-| — z toho `E0` / `E1` / `E1+` / `E2` | 0 / 558 / 109 / 300 |
-| Zdrojů (z toho s vyplněnou `sourceFamily`) | 680 (381) |
+| Tvrzení | 970 |
+| — z toho `E0` / `E1` / `E1+` / `E2` | 0 / 556 / 94 / 320 |
+| Zdrojů (z toho s vyplněnou `sourceFamily`) | 702 (389) |
 | Kauz | 94 |
 | Mezer celkem / otevřených / zastaralých | 204 / 202 / 0 |
 | Vztahů | 334 |
-| Bodů rizika celkem | 1452 |
+| Bodů rizika celkem | 1433 |
 
 ## Pořadí dossierů
 
 | # | Dossier | Priorita | Body | Podíl | Kumul. | Tvrzení | `E0`/`E1`/`E1+`/`E2` | Otevřené mezery | Zdroje bez rodiny | Aktualizováno |
 |---:|---|---|---:|---:|---:|---:|---|---:|---:|---|
-| 1 | [Andrej Babiš](../data/dossiers/andrej-babis/) `andrej-babis` | **vysoká** | 164 | 11.3 % | 11.3 % | 105 | 0/75/1/29 | 8 | 20 | 2026-08-05 |
-| 2 | [Karel Havlíček](../data/dossiers/karel-havlicek/) `karel-havlicek` | **vysoká** | 100 | 6.9 % | 18.2 % | 58 | 0/39/9/10 | 12 | 25 | 2026-08-05 |
-| 3 | [Jaromír Zůna](../data/dossiers/jaromir-zuna/) `jaromir-zuna` | **vysoká** | 88 | 6.1 % | 24.2 % | 57 | 0/38/3/16 | 9 | 18 | 2026-08-06 |
-| 4 | [Adam Vojtěch](../data/dossiers/adam-vojtech/) `adam-vojtech` | **vysoká** | 83 | 5.7 % | 30.0 % | 55 | 0/31/6/18 | 15 | 19 | 2026-08-05 |
-| 5 | [Martin Šebestyán](../data/dossiers/martin-sebestyan/) `martin-sebestyan` | **vysoká** | 80 | 5.5 % | 35.5 % | 55 | 0/33/0/22 | 14 | 20 | 2026-08-06 |
-| 6 | [Oto Klempíř](../data/dossiers/oto-klempir/) `oto-klempir` | **vysoká** | 80 | 5.5 % | 41.0 % | 45 | 0/34/5/6 | 7 | 12 | 2026-07-30 |
-| 7 | [Ivan Bednárik](../data/dossiers/ivan-bednarik/) `ivan-bednarik` | **vysoká** | 79 | 5.4 % | 46.4 % | 48 | 0/34/1/13 | 9 | 26 | 2026-07-30 |
-| 8 | [Robert Plaga](../data/dossiers/robert-plaga/) `robert-plaga` | **vysoká** | 79 | 5.4 % | 51.9 % | 55 | 0/29/9/17 | 12 | 14 | 2026-07-30 |
-| 9 | [Zuzana Mrázová](../data/dossiers/zuzana-mrazova/) `zuzana-mrazova` | **střední** | 78 | 5.4 % | 57.2 % | 60 | 0/28/6/26 | 16 | 15 | 2026-08-05 |
-| 10 | [Aleš Juchelka](../data/dossiers/ales-juchelka/) `ales-juchelka` | **střední** | 75 | 5.2 % | 62.4 % | 47 | 0/27/8/12 | 13 | 6 | 2026-07-30 |
-| 11 | [Igor Červený](../data/dossiers/igor-cerveny/) `igor-cerveny` | **střední** | 75 | 5.2 % | 67.6 % | 59 | 0/26/9/24 | 14 | 14 | 2026-07-30 |
-| 12 | [Alena Schillerová](../data/dossiers/alena-schillerova/) `alena-schillerova` | **střední** | 70 | 4.8 % | 72.4 % | 41 | 0/28/4/9 | 8 | 15 | 2026-08-05 |
-| 13 | [Petr Macinka a Filip Turek](../data/dossiers/macinka-turek/) `macinka-turek` | **střední** | 69 | 4.8 % | 77.1 % | 55 | 0/28/2/25 | 7 | 20 | 2026-07-29 |
-| 14 | [Boris Šťastný](../data/dossiers/boris-stastny/) `boris-stastny` | **střední** | 64 | 4.4 % | 81.5 % | 42 | 0/21/11/10 | 10 | 8 | 2026-07-30 |
-| 15 | [Jeroným Tejc](../data/dossiers/jeronym-tejc/) `jeronym-tejc` | **nízká** | 62 | 4.3 % | 85.8 % | 52 | 0/22/8/22 | 10 | 16 | 2026-08-06 |
-| 16 | [Lubomír Metnar](../data/dossiers/lubomir-metnar/) `lubomir-metnar` | **nízká** | 47 | 3.2 % | 89.0 % | 31 | 0/13/6/12 | 15 | 5 | 2026-08-05 |
-| 17 | [Tomio Okamura](../data/dossiers/tomio-okamura/) `tomio-okamura` | **nízká** | 43 | 3.0 % | 92.0 % | 36 | 0/9/15/12 | 8 | 10 | 2026-08-05 |
-| 18 | [James Quick](../data/dossiers/james-quick/) `james-quick` | **nízká** | 37 | 2.5 % | 94.6 % | 16 | 0/15/1/0 | 3 | 16 | 2026-08-05 |
+| 1 | [Andrej Babiš](../data/dossiers/andrej-babis/) `andrej-babis` | **vysoká** | 154 | 10.7 % | 10.7 % | 105 | 0/70/1/34 | 8 | 21 | 2026-08-06 |
+| 2 | [Karel Havlíček](../data/dossiers/karel-havlicek/) `karel-havlicek` | **vysoká** | 100 | 7.0 % | 17.7 % | 58 | 0/39/9/10 | 12 | 25 | 2026-08-05 |
+| 3 | [Jaromír Zůna](../data/dossiers/jaromir-zuna/) `jaromir-zuna` | **vysoká** | 88 | 6.1 % | 23.9 % | 57 | 0/38/3/16 | 9 | 18 | 2026-08-06 |
+| 4 | [Martin Šebestyán](../data/dossiers/martin-sebestyan/) `martin-sebestyan` | **vysoká** | 80 | 5.6 % | 29.4 % | 55 | 0/33/0/22 | 14 | 20 | 2026-08-06 |
+| 5 | [Ivan Bednárik](../data/dossiers/ivan-bednarik/) `ivan-bednarik` | **vysoká** | 79 | 5.5 % | 35.0 % | 48 | 0/34/1/13 | 9 | 26 | 2026-07-30 |
+| 6 | [Adam Vojtěch](../data/dossiers/adam-vojtech/) `adam-vojtech` | **vysoká** | 78 | 5.4 % | 40.4 % | 55 | 0/31/1/23 | 15 | 21 | 2026-08-06 |
+| 7 | [Zuzana Mrázová](../data/dossiers/zuzana-mrazova/) `zuzana-mrazova` | **vysoká** | 78 | 5.4 % | 45.8 % | 60 | 0/28/6/26 | 16 | 15 | 2026-08-05 |
+| 8 | [Aleš Juchelka](../data/dossiers/ales-juchelka/) `ales-juchelka` | **vysoká** | 75 | 5.2 % | 51.1 % | 47 | 0/27/8/12 | 13 | 6 | 2026-07-30 |
+| 9 | [Igor Červený](../data/dossiers/igor-cerveny/) `igor-cerveny` | **střední** | 75 | 5.2 % | 56.3 % | 59 | 0/26/9/24 | 14 | 14 | 2026-07-30 |
+| 10 | [Oto Klempíř](../data/dossiers/oto-klempir/) `oto-klempir` | **střední** | 75 | 5.2 % | 61.5 % | 45 | 0/34/0/11 | 7 | 16 | 2026-08-06 |
+| 11 | [Robert Plaga](../data/dossiers/robert-plaga/) `robert-plaga` | **střední** | 74 | 5.2 % | 66.7 % | 55 | 0/29/4/22 | 12 | 18 | 2026-08-06 |
+| 12 | [Alena Schillerová](../data/dossiers/alena-schillerova/) `alena-schillerova` | **střední** | 70 | 4.9 % | 71.6 % | 41 | 0/28/4/9 | 8 | 15 | 2026-08-05 |
+| 13 | [Petr Macinka a Filip Turek](../data/dossiers/macinka-turek/) `macinka-turek` | **střední** | 69 | 4.8 % | 76.4 % | 55 | 0/28/2/25 | 7 | 20 | 2026-07-29 |
+| 14 | [Boris Šťastný](../data/dossiers/boris-stastny/) `boris-stastny` | **střední** | 64 | 4.5 % | 80.9 % | 42 | 0/21/11/10 | 10 | 8 | 2026-07-30 |
+| 15 | [Jeroným Tejc](../data/dossiers/jeronym-tejc/) `jeronym-tejc` | **nízká** | 62 | 4.3 % | 85.2 % | 52 | 0/22/8/22 | 10 | 16 | 2026-08-06 |
+| 16 | [Lubomír Metnar](../data/dossiers/lubomir-metnar/) `lubomir-metnar` | **nízká** | 47 | 3.3 % | 88.5 % | 31 | 0/13/6/12 | 15 | 5 | 2026-08-05 |
+| 17 | [James Quick](../data/dossiers/james-quick/) `james-quick` | **nízká** | 43 | 3.0 % | 91.5 % | 19 | 0/18/1/0 | 3 | 19 | 2026-08-05 |
+| 18 | [Tomio Okamura](../data/dossiers/tomio-okamura/) `tomio-okamura` | **nízká** | 43 | 3.0 % | 94.5 % | 36 | 0/9/15/12 | 8 | 10 | 2026-08-05 |
 | 19 | [Richard Chlad](../data/dossiers/richard-chlad/) `richard-chlad` | **nízká** | 27 | 1.9 % | 96.4 % | 11 | 0/10/1/0 | 3 | 1 | 2026-08-05 |
 | 20 | [Tünde Bartha](../data/dossiers/tunde-bartha/) `tunde-bartha` | **nízká** | 17 | 1.2 % | 97.6 % | 13 | 0/6/0/7 | 4 | 8 | 2026-08-01 |
 | 21 | [Jaroslav Faltýnek](../data/dossiers/jaroslav-faltynek/) `jaroslav-faltynek` | **nízká** | 16 | 1.1 % | 98.7 % | 13 | 0/6/1/6 | 2 | 9 | 2026-08-05 |
@@ -99,25 +99,25 @@ veškeré nedodělané zdrojovací práce.
 
 ### 1. Andrej Babiš — `andrej-babis`
 
-**Priorita vysoká** · 164 bodů (11.3 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-05`, revidováno `2026-08-05`
+**Priorita vysoká** · 154 bodů (10.7 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-06`, revidováno `2026-08-05`
 
 | Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
 |---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 105 | 0 | 75 | 1 | 29 | 81 | 61 | 20 | 8 (8) | 42 |
+| 105 | 0 | 70 | 1 | 34 | 86 | 65 | 20 | 8 (8) | 42 |
 
-Deklarované stavy: CORROBORATED 28 · 1 ZDROJ 53 · CITACE 24
+Deklarované stavy: CORROBORATED 33 · 1 ZDROJ 48 · CITACE 24
 
 Další krok:
 
-- 75 tvrzení stojí na jediném zdroji (např. CLM-04, CLM-05, CLM-06) → dohledat druhého, nezávislého vydavatele
+- 70 tvrzení stojí na jediném zdroji (např. CLM-04, CLM-05, CLM-06) → dohledat druhého, nezávislého vydavatele
 - 5 otevřených mezer s prioritou „vysoká" → projít je jako první, u každé zaznamenat výsledek kontroly
 - 3 dalších otevřených mezer → ověřit, jestli je nový zdroj neuzavírá
 - 1 tvrzení má ≥2 zdroje, ale všechny z jedné rodiny / od jednoho vydavatele (např. CLM-86) → dohledat jeden nezávislý doklad; tím se dostanou na CORROBORATED
-- 20 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
+- 21 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
 
 ### 2. Karel Havlíček — `karel-havlicek`
 
-**Priorita vysoká** · 100 bodů (6.9 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-05`, revidováno `2026-07-30`
+**Priorita vysoká** · 100 bodů (7.0 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-05`, revidováno `2026-07-30`
 
 | Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
 |---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -150,26 +150,9 @@ Další krok:
 - 3 tvrzení má ≥2 zdroje, ale všechny z jedné rodiny / od jednoho vydavatele (např. CLM-21, CLM-28, CLM-29) → dohledat jeden nezávislý doklad; tím se dostanou na CORROBORATED
 - 18 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
 
-### 4. Adam Vojtěch — `adam-vojtech`
+### 4. Martin Šebestyán — `martin-sebestyan`
 
-**Priorita vysoká** · 83 bodů (5.7 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-05`, revidováno `2026-08-05`
-
-| Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
-|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 55 | 0 | 31 | 6 | 18 | 42 | 23 | 3 | 15 (15) | 6 |
-
-Deklarované stavy: CORROBORATED 17 · 1 ZDROJ 29 · CITACE 9
-
-Další krok:
-
-- 31 tvrzení stojí na jediném zdroji (např. CLM-07, CLM-09, CLM-10) → dohledat druhého, nezávislého vydavatele
-- 15 dalších otevřených mezer → ověřit, jestli je nový zdroj neuzavírá
-- 6 tvrzení má ≥2 zdroje, ale všechny z jedné rodiny / od jednoho vydavatele (např. CLM-06, CLM-08, CLM-28) → dohledat jeden nezávislý doklad; tím se dostanou na CORROBORATED
-- 19 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
-
-### 5. Martin Šebestyán — `martin-sebestyan`
-
-**Priorita vysoká** · 80 bodů (5.5 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-06`, revidováno `2026-08-06`
+**Priorita vysoká** · 80 bodů (5.6 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-06`, revidováno `2026-08-06`
 
 | Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
 |---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -183,26 +166,9 @@ Další krok:
 - 14 dalších otevřených mezer → ověřit, jestli je nový zdroj neuzavírá
 - 20 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
 
-### 6. Oto Klempíř — `oto-klempir`
+### 5. Ivan Bednárik — `ivan-bednarik`
 
-**Priorita vysoká** · 80 bodů (5.5 % celkového objemu práce) · typ `entity` · aktualizováno `2026-07-30`, revidováno `2026-07-30`
-
-| Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
-|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 45 | 0 | 34 | 5 | 6 | 30 | 18 | 5 | 7 (7) | 11 |
-
-Deklarované stavy: CORROBORATED 6 · 1 ZDROJ 22 · CITACE 17
-
-Další krok:
-
-- 34 tvrzení stojí na jediném zdroji (např. CLM-02, CLM-03, CLM-06) → dohledat druhého, nezávislého vydavatele
-- 7 dalších otevřených mezer → ověřit, jestli je nový zdroj neuzavírá
-- 5 tvrzení má ≥2 zdroje, ale všechny z jedné rodiny / od jednoho vydavatele (např. CLM-18, CLM-19, CLM-22) → dohledat jeden nezávislý doklad; tím se dostanou na CORROBORATED
-- 12 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
-
-### 7. Ivan Bednárik — `ivan-bednarik`
-
-**Priorita vysoká** · 79 bodů (5.4 % celkového objemu práce) · typ `entity` · aktualizováno `2026-07-30`, revidováno `2026-07-30`
+**Priorita vysoká** · 79 bodů (5.5 % celkového objemu práce) · typ `entity` · aktualizováno `2026-07-30`, revidováno `2026-07-30`
 
 | Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
 |---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -218,26 +184,26 @@ Další krok:
 - 1 tvrzení má ≥2 zdroje, ale všechny z jedné rodiny / od jednoho vydavatele (např. CLM-29) → dohledat jeden nezávislý doklad; tím se dostanou na CORROBORATED
 - 26 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
 
-### 8. Robert Plaga — `robert-plaga`
+### 6. Adam Vojtěch — `adam-vojtech`
 
-**Priorita vysoká** · 79 bodů (5.4 % celkového objemu práce) · typ `entity` · aktualizováno `2026-07-30`, revidováno `2026-07-30`
+**Priorita vysoká** · 78 bodů (5.4 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-06`, revidováno `2026-08-06`
 
 | Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
 |---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 55 | 0 | 29 | 9 | 17 | 33 | 19 | 3 | 12 (12) | 7 |
+| 55 | 0 | 31 | 1 | 23 | 47 | 26 | 3 | 15 (15) | 6 |
 
-Deklarované stavy: CORROBORATED 16 · 1 ZDROJ 27 · CITACE 12
+Deklarované stavy: CORROBORATED 22 · 1 ZDROJ 24 · CITACE 9
 
 Další krok:
 
-- 29 tvrzení stojí na jediném zdroji (např. CLM-07, CLM-09, CLM-10) → dohledat druhého, nezávislého vydavatele
-- 12 dalších otevřených mezer → ověřit, jestli je nový zdroj neuzavírá
-- 9 tvrzení má ≥2 zdroje, ale všechny z jedné rodiny / od jednoho vydavatele (např. CLM-06, CLM-22, CLM-23) → dohledat jeden nezávislý doklad; tím se dostanou na CORROBORATED
-- 14 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
+- 31 tvrzení stojí na jediném zdroji (např. CLM-07, CLM-09, CLM-10) → dohledat druhého, nezávislého vydavatele
+- 15 dalších otevřených mezer → ověřit, jestli je nový zdroj neuzavírá
+- 1 tvrzení má ≥2 zdroje, ale všechny z jedné rodiny / od jednoho vydavatele (např. CLM-28) → dohledat jeden nezávislý doklad; tím se dostanou na CORROBORATED
+- 21 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
 
-### 9. Zuzana Mrázová — `zuzana-mrazova`
+### 7. Zuzana Mrázová — `zuzana-mrazova`
 
-**Priorita střední** · 78 bodů (5.4 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-05`, revidováno `2026-08-05`
+**Priorita vysoká** · 78 bodů (5.4 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-05`, revidováno `2026-08-05`
 
 | Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
 |---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -252,9 +218,9 @@ Další krok:
 - 6 tvrzení má ≥2 zdroje, ale všechny z jedné rodiny / od jednoho vydavatele (např. CLM-20, CLM-27, CLM-28) → dohledat jeden nezávislý doklad; tím se dostanou na CORROBORATED
 - 15 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
 
-### 10. Aleš Juchelka — `ales-juchelka`
+### 8. Aleš Juchelka — `ales-juchelka`
 
-**Priorita střední** · 75 bodů (5.2 % celkového objemu práce) · typ `entity` · aktualizováno `2026-07-30`, revidováno `2026-07-30`
+**Priorita vysoká** · 75 bodů (5.2 % celkového objemu práce) · typ `entity` · aktualizováno `2026-07-30`, revidováno `2026-07-30`
 
 | Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
 |---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -269,7 +235,7 @@ Další krok:
 - 8 tvrzení má ≥2 zdroje, ale všechny z jedné rodiny / od jednoho vydavatele (např. CLM-10, CLM-17, CLM-23) → dohledat jeden nezávislý doklad; tím se dostanou na CORROBORATED
 - 6 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
 
-### 11. Igor Červený — `igor-cerveny`
+### 9. Igor Červený — `igor-cerveny`
 
 **Priorita střední** · 75 bodů (5.2 % celkového objemu práce) · typ `entity` · aktualizováno `2026-07-30`, revidováno `2026-07-30`
 
@@ -286,9 +252,42 @@ Další krok:
 - 9 tvrzení má ≥2 zdroje, ale všechny z jedné rodiny / od jednoho vydavatele (např. CLM-08, CLM-12, CLM-13) → dohledat jeden nezávislý doklad; tím se dostanou na CORROBORATED
 - 14 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
 
+### 10. Oto Klempíř — `oto-klempir`
+
+**Priorita střední** · 75 bodů (5.2 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-06`, revidováno `2026-08-06`
+
+| Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
+|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 45 | 0 | 34 | 0 | 11 | 35 | 19 | 5 | 7 (7) | 11 |
+
+Deklarované stavy: CORROBORATED 10 · 1 ZDROJ 18 · CITACE 17
+
+Další krok:
+
+- 34 tvrzení stojí na jediném zdroji (např. CLM-02, CLM-03, CLM-06) → dohledat druhého, nezávislého vydavatele
+- 7 dalších otevřených mezer → ověřit, jestli je nový zdroj neuzavírá
+- 16 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
+
+### 11. Robert Plaga — `robert-plaga`
+
+**Priorita střední** · 74 bodů (5.2 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-06`, revidováno `2026-08-06`
+
+| Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
+|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 55 | 0 | 29 | 4 | 22 | 37 | 19 | 3 | 12 (12) | 7 |
+
+Deklarované stavy: CORROBORATED 20 · 1 ZDROJ 22 · CITACE 12 · SPORNÉ 1
+
+Další krok:
+
+- 29 tvrzení stojí na jediném zdroji (např. CLM-07, CLM-09, CLM-10) → dohledat druhého, nezávislého vydavatele
+- 12 dalších otevřených mezer → ověřit, jestli je nový zdroj neuzavírá
+- 4 tvrzení má ≥2 zdroje, ale všechny z jedné rodiny / od jednoho vydavatele (např. CLM-22, CLM-23, CLM-25) → dohledat jeden nezávislý doklad; tím se dostanou na CORROBORATED
+- 18 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
+
 ### 12. Alena Schillerová — `alena-schillerova`
 
-**Priorita střední** · 70 bodů (4.8 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-05`, revidováno `2026-08-05`
+**Priorita střední** · 70 bodů (4.9 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-05`, revidováno `2026-08-05`
 
 | Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
 |---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -324,7 +323,7 @@ Další krok:
 
 ### 14. Boris Šťastný — `boris-stastny`
 
-**Priorita střední** · 64 bodů (4.4 % celkového objemu práce) · typ `entity` · aktualizováno `2026-07-30`, revidováno `2026-07-30`
+**Priorita střední** · 64 bodů (4.5 % celkového objemu práce) · typ `entity` · aktualizováno `2026-07-30`, revidováno `2026-07-30`
 
 | Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
 |---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -359,7 +358,7 @@ Další krok:
 
 ### 16. Lubomír Metnar — `lubomir-metnar`
 
-**Priorita nízká** · 47 bodů (3.2 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-05`, revidováno `2026-08-05`
+**Priorita nízká** · 47 bodů (3.3 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-05`, revidováno `2026-08-05`
 
 | Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
 |---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -374,7 +373,24 @@ Další krok:
 - 6 tvrzení má ≥2 zdroje, ale všechny z jedné rodiny / od jednoho vydavatele (např. CLM-05, CLM-14, CLM-18) → dohledat jeden nezávislý doklad; tím se dostanou na CORROBORATED
 - 5 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
 
-### 17. Tomio Okamura — `tomio-okamura`
+### 17. James Quick — `james-quick`
+
+**Priorita nízká** · 43 bodů (3.0 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-05`, revidováno `2026-08-05`
+
+| Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
+|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 19 | 0 | 18 | 1 | 0 | 20 | 1 | 4 | 3 (3) | 10 |
+
+Deklarované stavy: 1 ZDROJ 18 · CITACE 1
+
+Další krok:
+
+- 18 tvrzení stojí na jediném zdroji (např. CLM-01, CLM-03, CLM-04) → dohledat druhého, nezávislého vydavatele
+- 3 otevřených mezer s prioritou „vysoká" → projít je jako první, u každé zaznamenat výsledek kontroly
+- 1 tvrzení má ≥2 zdroje, ale všechny z jedné rodiny / od jednoho vydavatele (např. CLM-02) → dohledat jeden nezávislý doklad; tím se dostanou na CORROBORATED
+- 19 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
+
+### 18. Tomio Okamura — `tomio-okamura`
 
 **Priorita nízká** · 43 bodů (3.0 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-05`, revidováno `2026-08-05`
 
@@ -391,23 +407,6 @@ Další krok:
 - 6 dalších otevřených mezer → ověřit, jestli je nový zdroj neuzavírá
 - 2 otevřených mezer s prioritou „vysoká" → projít je jako první, u každé zaznamenat výsledek kontroly
 - 10 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
-
-### 18. James Quick — `james-quick`
-
-**Priorita nízká** · 37 bodů (2.5 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-05`, revidováno `2026-08-05`
-
-| Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
-|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 16 | 0 | 15 | 1 | 0 | 17 | 1 | 4 | 3 (3) | 10 |
-
-Deklarované stavy: 1 ZDROJ 15 · CITACE 1
-
-Další krok:
-
-- 15 tvrzení stojí na jediném zdroji (např. CLM-01, CLM-03, CLM-04) → dohledat druhého, nezávislého vydavatele
-- 3 otevřených mezer s prioritou „vysoká" → projít je jako první, u každé zaznamenat výsledek kontroly
-- 1 tvrzení má ≥2 zdroje, ale všechny z jedné rodiny / od jednoho vydavatele (např. CLM-02) → dohledat jeden nezávislý doklad; tím se dostanou na CORROBORATED
-- 16 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
 
 ### 19. Richard Chlad — `richard-chlad`
 

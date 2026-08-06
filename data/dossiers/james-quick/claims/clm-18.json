@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-18",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-18",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/james-quick"
+  },
+  "text": "ČT24 27. září 2016 uvedla, že soud uznal Vladimíra Růžičku vinným ze zpronevěry půl milionu korun určeného pro pražskou Slavii a uložil mu peněžitý trest 400 tisíc korun s náhradním trestem 16 měsíců odnětí svobody; rozsudek podle zprávy v době vydání nebyl pravomocný, obě strany si ponechaly lhůtu na odvolání.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-19"
+    }
+  ],
+  "subjects": [
+    "james-quick"
+  ],
+  "order": 18,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Prvoinstanční rozsudek — tvrzení výslovně uvádí, že v době publikace nebyl pravomocný, aby procesní stav nebyl čtenáři podán jako konečný. Dokládá výsledek řízení zahájeného oznámením z CLM-08 a obžalobou z CLM-17, nikoli nový nezávislý fakt o Jehličkovi."
+    }
+  ]
+}
