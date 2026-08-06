@@ -3,7 +3,7 @@
 title = "Fio banka"
 template = "entity.html"
 weight = 130
-description = "Kontextová entita — Vede transparentní účet volební kampaně Motoristů sobě (č. 2803201251/2010)."
+description = "Fio banka — Kontextová entita — Vede transparentní účet volební kampaně Motoristů sobě (č. 2803201251/2010)."
 
 [extra]
 generated = true

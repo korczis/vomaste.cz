@@ -3,7 +3,7 @@
 title = "Organizace spojených národů (OSN)"
 template = "entity.html"
 weight = 322
-description = "Kontextová entita — Pořadatel High-Level Political Forum v New Yorku, na němž Červený vystoupil."
+description = "Organizace spojených národů (OSN) — Kontextová entita — Pořadatel High-Level Political Forum v New Yorku, na němž Červený vystoupil."
 
 [extra]
 generated = true

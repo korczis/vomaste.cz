@@ -3,7 +3,7 @@
 title = "Finanční správa ČR"
 template = "entity.html"
 weight = 129
-description = "Kontextová entita — Kariérní působiště Schillerové od 1991; biografická zmínka. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+description = "Finanční správa ČR — Kontextová entita — Kariérní působiště Schillerové od 1991; biografická zmínka."
 
 [extra]
 generated = true

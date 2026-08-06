@@ -3,7 +3,7 @@
 title = "Trestní kauza předvolebních plakátů SPD"
 template = "entity.html"
 weight = 210
-description = "Kontextová entita — Nepravomocný rozsudek nad SPD (3 mil. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+description = "Trestní kauza předvolebních plakátů SPD — Kontextová entita — Nepravomocný rozsudek nad SPD (3 mil."
 
 [extra]
 generated = true

@@ -3,7 +3,7 @@
 title = "Poslanecká sněmovna"
 template = "entity.html"
 weight = 349
-description = "Kontextová entita — Vydala Babiše i Faltýnka ke stíhání (2017), počátkem března 2026 Babiše nevydala; primární zdroj profilu Faltýnka."
+description = "Poslanecká sněmovna — Kontextová entita — Vydala Babiše i Faltýnka ke stíhání (2017), počátkem března 2026 Babiše nevydala; primární zdroj profilu Faltýnka."
 
 [extra]
 generated = true

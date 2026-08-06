@@ -4,7 +4,7 @@ title = "Igor Červený"
 template = "entity.html"
 weight = 17
 aliases = ["/dossiers/macinka-turek/entities/cerveny/", "/dossiers/igor-cerveny/entities/cerveny/"]
-description = "Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu."
+description = "Igor Červený — Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu."
 
 [extra]
 generated = true

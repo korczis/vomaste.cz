@@ -3,7 +3,7 @@
 title = "VŠB — Technická univerzita Ostrava"
 template = "entity.html"
 weight = 443
-description = "Kontextová entita — Juchelkovo vzdělání (Ekonomická fakulta 1998–2003); čistě biografická zmínka."
+description = "VŠB — Technická univerzita Ostrava — Kontextová entita — Juchelkovo vzdělání (Ekonomická fakulta 1998–2003); čistě biografická zmínka."
 
 [extra]
 generated = true

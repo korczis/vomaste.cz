@@ -3,7 +3,7 @@
 title = "Spor o volbu náčelníka Generálního štábu (2026)"
 template = "entity.html"
 weight = 387
-description = "Kontextová entita — Zůna jako jediný člen vlády hlasoval proti Hlaváčovi; Vondra vyzval k rezignaci, Okamura ministra hájil; Pavel Hlaváče jmenoval."
+description = "Spor o volbu náčelníka Generálního štábu (2026) — Kontextová entita — Zůna jako jediný člen vlády hlasoval proti Hlaváčovi; Vondra vyzval k rezignaci, Okamura ministra hájil; Pavel Hlaváče…"
 
 [extra]
 generated = true

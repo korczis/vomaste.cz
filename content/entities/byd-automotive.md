@@ -3,7 +3,7 @@
 title = "BYD Automotive"
 template = "entity.html"
 weight = 83
-description = "Kontextová entita — Účastník konference Forum Elektromobilita 2026. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+description = "BYD Automotive — Kontextová entita — Účastník konference Forum Elektromobilita 2026. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

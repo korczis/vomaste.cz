@@ -3,7 +3,7 @@
 title = "Státní fond dopravní infrastruktury (SFDI)"
 template = "entity.html"
 weight = 377
-description = "Kontextová entita — Klíčová instituce dossieru: rozpočet 169,3 mld. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+description = "Státní fond dopravní infrastruktury (SFDI) — Kontextová entita — Klíčová instituce dossieru: rozpočet 169,3 mld."
 
 [extra]
 generated = true

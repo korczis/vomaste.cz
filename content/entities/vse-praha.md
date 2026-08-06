@@ -3,7 +3,7 @@
 title = "Vysoká škola ekonomická v Praze (VŠE)"
 template = "entity.html"
 weight = 444
-description = "Kontextová entita — Univerzita; uvedena v oficiálním kariérním profilu Karla Havlíčka (Ph.D. 2004)."
+description = "Vysoká škola ekonomická v Praze (VŠE) — Kontextová entita — Univerzita; uvedena v oficiálním kariérním profilu Karla Havlíčka (Ph.D. 2004)."
 
 [extra]
 generated = true

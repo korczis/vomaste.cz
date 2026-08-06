@@ -4,7 +4,7 @@ title = "Policie ČR"
 template = "entity.html"
 weight = 18
 aliases = ["/dossiers/macinka-turek/entities/policie/"]
-description = "Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu."
+description = "Policie ČR — Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu."
 
 [extra]
 generated = true

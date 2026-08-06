@@ -3,7 +3,7 @@
 title = "Asociace malých a středních podniků a živnostníků ČR"
 template = "entity.html"
 weight = 65
-description = "Kontextová entita — Proti Vojtěchovu benefitovému návrhu (byrokracie). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+description = "Asociace malých a středních podniků a živnostníků ČR — Kontextová entita — Proti Vojtěchovu benefitovému návrhu (byrokracie)."
 
 [extra]
 generated = true

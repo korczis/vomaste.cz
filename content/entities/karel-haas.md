@@ -3,7 +3,7 @@
 title = "Karel Haas"
 template = "entity.html"
 weight = 188
-description = "Kontextová entita — Poslanec ODS; poukázal, že 800stránkový návrh stavebního zákona byl měněn pozměňovacím návrhem o 1070 stranách."
+description = "Karel Haas — Kontextová entita — Poslanec ODS; poukázal, že 800stránkový návrh stavebního zákona byl měněn pozměňovacím návrhem o 1070 stranách."
 
 [extra]
 generated = true

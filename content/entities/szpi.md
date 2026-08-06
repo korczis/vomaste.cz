@@ -4,7 +4,7 @@ title = "SZPI"
 template = "entity.html"
 weight = 21
 aliases = ["/dossiers/macinka-turek/entities/szpi/"]
-description = "Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu."
+description = "SZPI — Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu."
 
 [extra]
 generated = true

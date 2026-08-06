@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-03 — ČeskéNoviny.cz (ČTK)"
-description = "Soud uložil SPD třímilionový peněžitý trest za nenávistné předvolební plakáty"
+description = "Soud uložil SPD třímilionový peněžitý trest za nenávistné předvolební plakáty Zdroj: ČeskéNoviny.cz (ČTK), dossier Tomio Okamura."
 template = "dossier-source.html"
 weight = 3
 

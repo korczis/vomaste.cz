@@ -3,7 +3,7 @@
 title = "Adam Batuna"
 template = "entity.html"
 weight = 52
-description = "Kontextová entita — Obhájce hnutí SPD v kauze plakátů; soukromý advokát jmenovaný obsahem. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+description = "Adam Batuna — Kontextová entita — Obhájce hnutí SPD v kauze plakátů; soukromý advokát jmenovaný obsahem."
 
 [extra]
 generated = true

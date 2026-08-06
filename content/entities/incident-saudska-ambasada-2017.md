@@ -3,7 +3,7 @@
 title = "Incident u saúdskoarabské ambasády (2017)"
 template = "entity.html"
 weight = 151
-description = "Kontextová entita — Kresba oprátky a lovecká nábojnice na autě zaměstnance ambasády (zaměstnanec záměrně nejmenován — nezakládat pro něj entitu); policie uzavřela jako pravděpodobnou záměnu…"
+description = "Incident u saúdskoarabské ambasády (2017) — Kontextová entita — Kresba oprátky a lovecká nábojnice na autě zaměstnance ambasády (zaměstnanec záměrně nejmenován — nezakládat pro něj entitu)…"
 
 [extra]
 generated = true

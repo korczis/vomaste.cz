@@ -3,7 +3,7 @@
 title = "Stavební úřad Prahy 15"
 template = "entity.html"
 weight = 393
-description = "Kontextová entita — Udělil Turkovi pokuty 80 000 + 120 000 Kč za nepovolené stavby v Praze-Dubči (pravomocné 3. 7. 2026)."
+description = "Stavební úřad Prahy 15 — Kontextová entita — Udělil Turkovi pokuty 80 000 + 120 000 Kč za nepovolené stavby v Praze-Dubči (pravomocné 3. 7. 2026)."
 
 [extra]
 generated = true

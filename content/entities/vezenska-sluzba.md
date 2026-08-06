@@ -3,7 +3,7 @@
 title = "Vězeňská služba ČR"
 template = "entity.html"
 weight = 432
-description = "Kontextová entita — Instituce z oficiálního kariérního profilu Tejce (náměstek generálního ředitele 2022–2025)."
+description = "Vězeňská služba ČR — Kontextová entita — Instituce z oficiálního kariérního profilu Tejce (náměstek generálního ředitele 2022–2025)."
 
 [extra]
 generated = true

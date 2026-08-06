@@ -3,7 +3,7 @@
 title = "Česká obchodní inspekce"
 template = "entity.html"
 weight = 521
-description = "Kontextová veřejná instituce: v roce 2018 zveřejnila spotřebitelské varování před službami CERD. Entita označuje původ úředního stanoviska, nikoli tvrzení o osobním vztahu k Jamesi Quickovi."
+description = "Česká obchodní inspekce — Kontextová veřejná instituce: v roce 2018 zveřejnila spotřebitelské varování před službami CERD."
 
 [extra]
 generated = true

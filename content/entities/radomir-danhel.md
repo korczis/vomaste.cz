@@ -3,7 +3,7 @@
 title = "Radomír Daňhel"
 template = "entity.html"
 weight = 361
-description = "Kontextová entita — Bývalý náměstek ministra spravedlnosti; obviněný v bitcoinové kauze (presumpce neviny)."
+description = "Radomír Daňhel — Kontextová entita — Bývalý náměstek ministra spravedlnosti; obviněný v bitcoinové kauze (presumpce neviny)."
 
 [extra]
 generated = true

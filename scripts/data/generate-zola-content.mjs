@@ -378,6 +378,49 @@ export function buildStubs(compiled, { contentRoot = REPO_ROOT } = {}) {
   // kterých dossierech vystupuje a že to není obvinění. Subjektová entita
   // fallback nedostane — u té je popis redakční věc a prázdno je signál, že
   // ji někdo má dopsat, ne že ji má zalepit generátor.
+  // Které redakční popisy zdrojů se v datasetu opakují. Počítá se přes celý
+  // compiled model předem, protože jeden záznam o sobě nepozná, že má dvojče
+  // v jiném dossieru.
+  // Počítá se `description` i `text`: u tvrzení je popisem stránky jeho
+  // text, a právě tvrzení se mezi dossiery legitimně opakují — autorizace
+  // Petra Pavla i Petra Vencálka výslovně říkají, že už doložené vlákno se
+  // do nového dossieru PŘENÁŠÍ, nezkoumá znovu. Stejný text na dvou
+  // stránkách je tedy záměr; stejný popis bez rozlišení dossieru vada.
+  const descriptionUses = new Map();
+  const bump = (d) => {
+    if (typeof d === "string" && d) descriptionUses.set(d, (descriptionUses.get(d) ?? 0) + 1);
+  };
+  for (const w of compiled.records) {
+    bump(w.record?.description);
+    bump(w.record?.text);
+  }
+  const duplicateDescriptions = new Set([...descriptionUses].filter(([, n]) => n > 1).map(([d]) => d));
+  // Doplní dossier k popisu, který v datasetu není jedinečný. Jedinečný text
+  // zůstává beze změny — cílem je rozlišit stránky, ne olepit všechny.
+  //
+  // Rozpočet se rozdává PŘED spojením, ne po něm: text tvrzení mívá kolem
+  // 190 znaků, šablona popis ořezává na 200, takže přípona připojená naivně
+  // padne pod nůž a obě stránky zůstanou nerozlišené — přesně ta chyba, na
+  // kterou jsem narazil u doložky u vztahů.
+  const disambiguated = (text, by) => {
+    if (!duplicateDescriptions.has(text)) return text;
+    const suffix = ` ${by}`;
+    return `${summarize(text, Math.max(60, 195 - suffix.length))}${suffix}`;
+  };
+
+  // Kontextový odstavec entity je u desítek záznamů psaný jednou formulí
+  // („Kontextová entita — uvedena, protože se přímo objevuje v citovaném
+  // zpravodajství…") a jméno entity v něm není. Popis pak měly desítky
+  // stránek doslova shodný — pro vyhledávač i pro sdílený odkaz jsou
+  // nerozlišitelné. Název se proto předsadí, když ho vlastní text
+  // neobsahuje; kde ho obsahuje, se nic nepřidává, aby nevzniklo
+  // „Agrofert — Agrofert je…".
+  const namedEntityDescription = (r) => {
+    const summary = summarizeRecord(mdBody(r.content));
+    if (!summary || summary.includes(r.title)) return summary;
+    return `${summarize(r.title, 60)} — ${summarizeRecord(mdBody(r.content), 195 - Math.min(r.title.length, 60) - 3)}`;
+  };
+
   const contextEntityFallback = (r) => {
     if (r.publicationRole !== "context") return null;
     // Tituly dossierů se ZÁMĚRNĚ nespojují spojkou: agregátní pohled se sám
@@ -429,10 +472,32 @@ export function buildStubs(compiled, { contentRoot = REPO_ROOT } = {}) {
     let description = null;
     if (r.recordType === "claim") {
       title = tomlString(r.identifier);
-      description = existingDescription ?? tomlString(r.text);
+      // Passthrough starého popisu má jinak přednost (legacy scaffold, fáze
+      // H), ale u textu sdíleného dvěma dossiery by přenesl přesně tu
+      // nerozlišenou verzi, kvůli které tu disambiguace je. Přenesené vlákno
+      // je záměr autorizace, dvě stránky se stejným popisem už ne.
+      description = duplicateDescriptions.has(r.text)
+        ? tomlString(disambiguated(r.text, `Dossier: ${dossierTitles.get(slug) ?? slug}.`))
+        : (existingDescription ?? tomlString(r.text));
     } else if (r.recordType === "source") {
       title = tomlString(r.title);
-      description = r.description !== undefined ? tomlString(r.description) : null;
+      // Dvě různé situace se stejným příznakem. (1) Týž zdroj — oficiální web
+      // vlády, profil poslance — cituje osm dossierů a každý má vlastní SRC
+      // záznam s doslova stejným popisem. (2) Dvě RŮZNÉ redakce přetiskly
+      // tutéž zprávu ČTK a autor jim napsal shodnou poznámku; to nejsou
+      // duplicitní záznamy (jiná URL, jiné claimy, obě správně s rodinou
+      // `ctk`), jen shodný text. V obou případech rozliší vydavatel — u (2)
+      // je to i jediné, co je odlišuje, protože jsou v témž dossieru.
+      // Rozlišit musí OBOJÍ: outlet sám nestačí u osmi záznamů „oficiální web
+      // vlády" (týž vydavatel v osmi dossierech), dossier sám nestačí u dvou
+      // přetisků ČTK v jednom dossieru. Dohromady je pár (vydavatel, dossier)
+      // jedinečný v každém dosud nalezeném případě.
+      description =
+        r.description === undefined
+          ? null
+          : tomlString(
+              disambiguated(r.description, `Zdroj: ${r.outlet}, dossier ${dossierTitles.get(slug) ?? slug}.`),
+            );
     } else if (r.recordType === "case") {
       title = tomlString(r.title);
       description = existingDescription ?? tomlString(r.summary);
@@ -518,7 +583,7 @@ export function buildStubs(compiled, { contentRoot = REPO_ROOT } = {}) {
           r.description !== undefined
             ? tomlString(r.description)
             : (summarizeRecord(mdBody(r.content))
-                ? tomlString(summarizeRecord(mdBody(r.content)))
+                ? tomlString(namedEntityDescription(r))
                 : contextEntityFallback(r)),
         ],
       ],

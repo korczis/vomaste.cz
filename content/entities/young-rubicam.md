@@ -3,7 +3,7 @@
 title = "Young & Rubicam"
 template = "entity.html"
 weight = 452
-description = "Kontextová entita — Mezinárodní reklamní agentura z oficiálního životopisu Klempíře; jen biografický kontext."
+description = "Young & Rubicam — Kontextová entita — Mezinárodní reklamní agentura z oficiálního životopisu Klempíře; jen biografický kontext."
 
 [extra]
 generated = true

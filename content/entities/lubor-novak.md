@@ -3,7 +3,7 @@
 title = "Lubor Novák"
 template = "entity.html"
 weight = 234
-description = "Kontextová entita — Předseda jihomoravských Motoristů, sponzor strany, poslanecký asistent Červeného; koupil jeho podíl v Extreme BFG Cast, člen představenstva Hemmont."
+description = "Lubor Novák — Kontextová entita — Předseda jihomoravských Motoristů, sponzor strany, poslanecký asistent Červeného; koupil jeho podíl v Extreme BFG Cast, člen představenstva Hemmont."
 
 [extra]
 generated = true

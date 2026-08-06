@@ -3,7 +3,7 @@
 title = "Novela občanského zákoníku o rodičovské odpovědnosti (Tejc, 2026)"
 template = "entity.html"
 weight = 303
-description = "Kontextová entita — Povinné posuzování zbavení rodičovské odpovědnosti u násilných rodičů; kritika Marvanové."
+description = "Novela občanského zákoníku o rodičovské odpovědnosti (Tejc… — Kontextová entita — Povinné posuzování zbavení rodičovské odpovědnosti u násilných rodičů; kritika Marvanové."
 
 [extra]
 generated = true

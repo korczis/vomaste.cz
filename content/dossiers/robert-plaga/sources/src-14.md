@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-14 — Učitelské noviny"
-description = "Plaga zastavil testování na ZŠ kvůli špatné komunikaci a technickým potížím"
+description = "Plaga zastavil testování na ZŠ kvůli špatné komunikaci a technickým potížím Zdroj: Učitelské noviny, dossier Robert Plaga."
 template = "dossier-source.html"
 weight = 14
 

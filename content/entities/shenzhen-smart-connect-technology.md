@@ -3,7 +3,7 @@
 title = "Shenzhen Smart Connect Technology"
 template = "entity.html"
 weight = 378
-description = "Kontextová entita — Čínská společnost — skutečný výrobce zařízení Plaud podle zjištění Seznam Zpráv citovaných Bleskem."
+description = "Shenzhen Smart Connect Technology — Kontextová entita — Čínská společnost — skutečný výrobce zařízení Plaud podle zjištění Seznam Zpráv citovaných Bleskem."
 
 [extra]
 generated = true

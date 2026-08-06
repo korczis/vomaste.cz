@@ -3,7 +3,7 @@
 title = "Městský úřad Nymburk"
 template = "entity.html"
 weight = 259
-description = "Kontextová entita — Přestupkový orgán řešící majetkové přiznání ministra Červeného. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+description = "Městský úřad Nymburk — Kontextová entita — Přestupkový orgán řešící majetkové přiznání ministra Červeného."
 
 [extra]
 generated = true

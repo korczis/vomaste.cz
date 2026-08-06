@@ -3,7 +3,7 @@
 title = "Penam"
 template = "entity.html"
 weight = 334
-description = "Kontextová entita — Pekárenská firma holdingu Agrofert; „toustová“ dotační linka. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+description = "Penam — Kontextová entita — Pekárenská firma holdingu Agrofert; „toustová“ dotační linka. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

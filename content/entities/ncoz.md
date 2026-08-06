@@ -4,7 +4,7 @@ title = "Národní centrála proti organizovanému zločinu"
 template = "entity.html"
 weight = 12
 aliases = ["/dossiers/andrej-babis/entities/ncoz/"]
-description = "Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext."
+description = "Národní centrála proti organizovanému zločinu — Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu."
 
 [extra]
 generated = true

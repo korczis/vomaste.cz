@@ -3,7 +3,7 @@
 title = "Magda Kopczyńska"
 template = "entity.html"
 weight = 239
-description = "Kontextová entita — Šéfka generálního ředitelství Evropské komise DG MOVE; jednala s Bednárikem v Bruselu o spolufinancování VRT a sítě TEN-T."
+description = "Magda Kopczyńska — Kontextová entita — Šéfka generálního ředitelství Evropské komise DG MOVE; jednala s Bednárikem v Bruselu o spolufinancování VRT a sítě TEN-T."
 
 [extra]
 generated = true

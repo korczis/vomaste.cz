@@ -4,7 +4,7 @@ title = "Petr Pavel (prezident)"
 template = "entity.html"
 weight = 8
 aliases = ["/dossiers/macinka-turek/entities/pavel/"]
-description = "Hlavní subjekt autorizovaného dossieru. Viz plné znění a kontext v hlavním přehledu."
+description = "Petr Pavel (prezident) — Hlavní subjekt autorizovaného dossieru. Viz plné znění a kontext v hlavním přehledu."
 
 [extra]
 generated = true

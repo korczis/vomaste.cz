@@ -3,7 +3,7 @@
 title = "Zdravá firma (program VZP)"
 template = "entity.html"
 weight = 460
-description = "Kontextová entita — Bonusový program VZP za proočkovanost zaměstnanců; Okamura mluvil o „uplácení zaměstnavatelů“."
+description = "Zdravá firma (program VZP) — Kontextová entita — Bonusový program VZP za proočkovanost zaměstnanců; Okamura mluvil o „uplácení zaměstnavatelů“."
 
 [extra]
 generated = true

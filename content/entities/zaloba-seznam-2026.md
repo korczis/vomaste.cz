@@ -4,7 +4,7 @@ title = "Žaloba Seznam.cz na ochranu pověsti (2026)"
 template = "entity.html"
 weight = 30
 aliases = ["/dossiers/andrej-babis/entities/zaloba-seznam-2026/"]
-description = "Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext."
+description = "Žaloba Seznam.cz na ochranu pověsti (2026) — Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu."
 
 [extra]
 generated = true

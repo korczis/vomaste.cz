@@ -4,7 +4,7 @@ title = "Evropská komise"
 template = "entity.html"
 weight = 10
 aliases = ["/dossiers/andrej-babis/entities/evropska-komise/"]
-description = "Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext."
+description = "Evropská komise — Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext."
 
 [extra]
 generated = true

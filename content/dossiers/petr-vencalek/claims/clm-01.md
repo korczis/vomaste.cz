@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-01"
-description = "Jediným společníkem (podíl 100 %, vklad 200 000 Kč) a jednatelem GMR GAS s.r.o. je Petr Vencálek, jednatelem od prosince 2014"
+description = "Jediným společníkem (podíl 100 %, vklad 200 000 Kč) a jednatelem GMR GAS s.r.o. je Petr Vencálek, jednatelem od prosince 2014 Dossier: Petr Vencálek."
 template = "dossier-claim.html"
 weight = 1
 

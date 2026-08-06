@@ -3,7 +3,7 @@
 title = "Eva Švíglerová"
 template = "entity.html"
 weight = 121
-description = "Kontextová entita — Místopředsedkyně Obvodního soudu pro Prahu 1; informovala o přerušení Okamurova stíhání."
+description = "Eva Švíglerová — Kontextová entita — Místopředsedkyně Obvodního soudu pro Prahu 1; informovala o přerušení Okamurova stíhání."
 
 [extra]
 generated = true
