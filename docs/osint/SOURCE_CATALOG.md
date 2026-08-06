@@ -100,13 +100,13 @@ Odpovídá na otázku „kam se podívat a čemu z toho věřit". Publikovaná p
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 680 záznamů v 114 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 685 záznamů v 115 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
 | ctk | 290 | 21 | [ano](/zdroje/ctk/) |
 | seznam-zpravy | 35 | 13 | [ano](/zdroje/seznam-zpravy/) |
-| Poslanecká sněmovna Parlamentu ČR | 32 | 15 | [ano](/zdroje/psp-cz/) |
+| Poslanecká sněmovna Parlamentu ČR | 33 | 15 | [ano](/zdroje/psp-cz/) |
 | Vláda České republiky (vlada.gov.cz) | 28 | 17 | [ano](/zdroje/vlada-cz/) |
 | FORUM 24 | 19 | 9 | [ano](/zdroje/forum24/) |
 | denik-n | 16 | 9 | [ano](/zdroje/denik-n/) |
@@ -129,6 +129,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 680 záznamů v 114 rodinách/out
 | Respekt | 4 | 3 | — |
 | Státní zemědělský intervenční fond | 4 | 1 | — |
 | Zdravé zprávy | 4 | 2 | — |
+| verejnazaloba | 4 | 1 | — |
 | CNN Prima News | 3 | 3 | — |
 | Investigace.cz | 3 | 3 | — |
 | Ministerstvo financí ČR | 3 | 1 | — |

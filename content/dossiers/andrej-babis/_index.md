@@ -13,7 +13,7 @@ record_type = "dossier"
 dossier_type = "entity"
 lang = "cs"
 seo_type = "ProfilePage"
-updated = "2026-08-05"
+updated = "2026-08-06"
 reviewed_at = "2026-08-05"
 +++
 Andrej Babiš je předsedou vlády České republiky. Tento dossier pokrývá
@@ -254,7 +254,7 @@ platí pouze pro tento jeden dotační spor.
 |---|---|---|---|
 | <a id="clm-47"></a>[CLM-47](@/dossiers/andrej-babis/claims/clm-47.md) | Ústavní soud dne 1. dubna 2026 odmítl ústavní stížnost Kosteleckých uzenin jako zjevně neopodstatněnou; podle odůvodnění Babiš v době výkonu funkce premiéra v letech 2017–2021 naplňoval znaky ovládající osoby Agrofertu majetkovým podílem i faktickým vlivem přes svěřenské fondy, a námitku podjatosti soud odmítl. Jde o rozhodnutí o nároku na dotaci ve správním soudnictví, ne o trestní odpovědnosti | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-21](@/dossiers/andrej-babis/sources/src-21.md), [SRC-30](@/dossiers/andrej-babis/sources/src-30.md) |
 | <a id="clm-48"></a>[CLM-48](@/dossiers/andrej-babis/claims/clm-48.md) | Spornou podporou byla dotace z Programu rozvoje venkova z roku 2018 na inovaci technologie výroby masných výrobků, kterou nejprve schválil Státní zemědělský intervenční fond a následně ji zrušilo Ministerstvo zemědělství s odkazem na střet zájmů tehdejšího premiéra; podle citovaného zdroje se tento případ liší od jiných sporů skupiny, kde se firmy domáhaly zadržených dotací | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-22](@/dossiers/andrej-babis/sources/src-22.md) |
-| <a id="clm-49"></a>[CLM-49](@/dossiers/andrej-babis/claims/clm-49.md) | Předmětem kauzy Čapí hnízdo je dotace 50 milionů korun na výstavbu areálu z let 2007–2008, kterou čerpala Farma Čapí hnízdo poté, co byla vyvedena ze skupiny Agrofert; sporné bylo, zda šlo o účelové vyvedení kvůli podmínce podpory pro malé a střední podniky | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-23](@/dossiers/andrej-babis/sources/src-23.md) |
+| <a id="clm-49"></a>[CLM-49](@/dossiers/andrej-babis/claims/clm-49.md) | Předmětem kauzy Čapí hnízdo je dotace ve výši téměř 50 milionů korun na výstavbu areálu, o kterou Farma Čapí hnízdo požádala v roce 2008; žadatel se v čestném prohlášení deklaroval jako malý a střední podnik a spor se vede právě o to, zda toto zařazení odpovídalo skutečnosti. Městské státní zastupitelství v Praze v roce 2019 uzavřelo, že Farma Čapí hnízdo definici malého a středního podniku splňovala a propojení s koncernem Agrofert přes rodinné příslušníky „nehrálo při posouzení roli“; Vrchní soud v Praze v roce 2025 naopak dospěl k závaznému závěru, že společnost kritéria malého podniku nesplňovala a byla „personálně i finančně zcela závislá na holdingu Agrofert“. Ani jedno z toho není pravomocné rozhodnutí o vině. Že Farma Čapí hnízdo byla před čerpáním vyvedena ze skupiny Agrofert, uvádí citované zpravodajství — primární dokumenty tento krok nepopisují | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-23](@/dossiers/andrej-babis/sources/src-23.md), [SRC-82](@/dossiers/andrej-babis/sources/src-82.md), [SRC-75](@/dossiers/andrej-babis/sources/src-75.md) |
 | <a id="clm-50"></a>[CLM-50](@/dossiers/andrej-babis/claims/clm-50.md) | Městský soud v Praze dne 9. ledna 2023 zprostil Andreje Babiše i Janu Nagyovou obžaloby s odůvodněním, že skutek popsaný v obžalobě není trestným činem; rozsudek nebyl pravomocný a státní zástupce si ponechal lhůtu k odvolání | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-23](@/dossiers/andrej-babis/sources/src-23.md), [SRC-32](@/dossiers/andrej-babis/sources/src-32.md), [SRC-79](@/dossiers/andrej-babis/sources/src-79.md) |
 | <a id="clm-51"></a>[CLM-51](@/dossiers/andrej-babis/claims/clm-51.md) | Týž soud dne 14. února 2024 oba obžalované zprostil znovu; podle odůvodnění netvořily nepřímé důkazy ucelený řetězec vyvracející obhajobu. Ani tento rozsudek nebyl pravomocný a státní zastupitelství avizovalo odvolání | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-24](@/dossiers/andrej-babis/sources/src-24.md), [SRC-33](@/dossiers/andrej-babis/sources/src-33.md), [SRC-75](@/dossiers/andrej-babis/sources/src-75.md) |
 | <a id="clm-52"></a>[CLM-52](@/dossiers/andrej-babis/claims/clm-52.md) | Spornou dotaci 50 milionů korun firma podle citovaného zpravodajství vrátila již v roce 2018; jde o skutečnost o osudu peněz, nikoli o přiznání viny ani o vyvrácení obžaloby | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-24](@/dossiers/andrej-babis/sources/src-24.md) [SRC-51](@/dossiers/andrej-babis/sources/src-51.md) |
@@ -388,12 +388,19 @@ tvrzením o něm.
 
 ## Čapí hnízdo — dotační kauza {#kauza-capi-hnizdo}
 
-**O co v kauze jde.** O dotaci **50 milionů korun** na výstavbu areálu
-Čapí hnízdo z let 2007–2008, kterou čerpala Farma Čapí hnízdo poté, co
-byla vyvedena ze skupiny Agrofert. Sporné je, zda šlo o účelové vyvedení
-kvůli podmínce podpory pro malé a střední podniky
+**O co v kauze jde.** O dotaci ve výši **téměř 50 milionů korun** na
+výstavbu areálu Čapí hnízdo, o kterou Farma Čapí hnízdo požádala **v roce
+2008**. Žadatel se čestným prohlášením deklaroval jako **malý a střední
+podnik** a spor se vede právě o to, zda to odpovídalo skutečnosti:
+Městské státní zastupitelství v roce 2019 uzavřelo, že podmínky
+splňovala, Vrchní soud v Praze v roce 2025 dospěl k opačnému závaznému
+závěru. Že firma byla před čerpáním vyvedena ze skupiny Agrofert, uvádí
+citované zpravodajství — primární dokumenty popisují **závislost** na
+holdingu, ne převod vlastnictví
 ([CLM-49](@/dossiers/andrej-babis/claims/clm-49.md),
-[SRC-23](@/dossiers/andrej-babis/sources/src-23.md)). Samotnou dotaci
+[SRC-23](@/dossiers/andrej-babis/sources/src-23.md),
+[SRC-82](@/dossiers/andrej-babis/sources/src-82.md),
+[SRC-75](@/dossiers/andrej-babis/sources/src-75.md)). Samotnou dotaci
 firma podle citovaného zpravodajství **vrátila už v roce 2018**
 ([CLM-52](@/dossiers/andrej-babis/claims/clm-52.md)) — to je skutečnost
 o osudu peněz, ne přiznání viny ani vyvrácení obžaloby.
@@ -403,10 +410,10 @@ o osudu peněz, ne přiznání viny ani vyvrácení obžaloby.
 | <a id="clm-69"></a>[CLM-69](@/dossiers/andrej-babis/claims/clm-69.md) | Policie prověřovala platby více než deseti firem z Agrofertu za reklamu na Čapím hnízdě za více než 270 milionů korun z let 2010 až 2013 — mimo jiné podezření, že peníze ve skutečnosti nešly na reklamu; věc dvakrát odložila s tím, že trestný čin nezjistila, a státní zástupce odložení v červenci 2022 potvrdil | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-48](@/dossiers/andrej-babis/sources/src-48.md), [SRC-49](@/dossiers/andrej-babis/sources/src-49.md) |
 | <a id="clm-70"></a>[CLM-70](@/dossiers/andrej-babis/claims/clm-70.md) | Podle vyjádření státního zastupitelství citovaného ve zpravodajství se ani na základě pěti znaleckých posudků nepodařilo objasnit rozsah zadané reklamy ani její obvyklou cenu a prověřování nepřineslo poznatky dokládající důvodné podezření; odložení není potvrzením ekonomické přiměřenosti plateb ani zjištěním podvodu | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-49](@/dossiers/andrej-babis/sources/src-49.md) |
 | <a id="clm-71"></a>[CLM-71](@/dossiers/andrej-babis/claims/clm-71.md) | Nejvyšší státní zastupitelství přezkoumalo rozhodnutí o odložení reklamní větve a nejvyšší státní zástupce Igor Stříž v červenci 2024 nevyužil oprávnění nařídit mimořádnou kontrolu, čímž věc zůstala definitivně odložena; finanční správa podle téhož zpravodajství (s odkazem na Deník N) dříve pravomocně nařídila Agrofertu doplatit daň 1,2 milionu korun — doměření daně je správní krok, ne trestní zjištění | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-48](@/dossiers/andrej-babis/sources/src-48.md) |
-| <a id="clm-77"></a>[CLM-77](@/dossiers/andrej-babis/claims/clm-77.md) | Policie 9. října 2017 obvinila Andreje Babiše a Jaroslava Faltýnka v souvislosti s padesátimilionovou dotací na stavbu Farmy Čapí hnízdo; podezření se týkala dotačního podvodu a poškození finančních zájmů EU a oba předtím vydala ke stíhání Poslanecká sněmovna. Babiš proti usnesení ihned podal opravný prostředek a věc označil za „pseudokauzu“ — obvinění je procesní krok, ne rozhodnutí o vině | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-54](@/dossiers/andrej-babis/sources/src-54.md) |
-| <a id="clm-78"></a>[CLM-78](@/dossiers/andrej-babis/claims/clm-78.md) | Státní zástupce Jaroslav Šaroch v září 2019 stíhání zastavil s odůvodněním, že „skutek není trestným činem“ — mimo jiné se podle usnesení nepodařilo prokázat, že Babiš byl skutečným vlastníkem akcií Farmy Čapí hnízdo; totéž usnesení současně konstatovalo „Babišův enormní zájem na výstavbě areálu“ a „zcela nadstandardní vztahy“ mezi farmou a skupinou Agrofert. Zastavení stíhání je procesní rozhodnutí podléhající přezkumu, ne zproštění soudem | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-55](@/dossiers/andrej-babis/sources/src-55.md) |
-| <a id="clm-79"></a>[CLM-79](@/dossiers/andrej-babis/claims/clm-79.md) | Nejvyšší státní zástupce Pavel Zeman 4. prosince 2019 zrušil zastavení stíhání Babiše a Jany Mayerové „jako nezákonné a předčasné“; u dalších čtyř obviněných důvody pro zrušení neshledal a jejich stíhání zůstalo zastaveno. Obnovení stíhání není rozhodnutí o vině — vyšetřování jím pokračovalo | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-56](@/dossiers/andrej-babis/sources/src-56.md) |
-| <a id="clm-80"></a>[CLM-80](@/dossiers/andrej-babis/claims/clm-80.md) | Dne 21. března 2022 byla k Městskému soudu v Praze podána obžaloba: na Babiše pro pomoc ke zločinu dotačního podvodu a na Janu Nagyovou pro dotační podvod a poškození finančních zájmů EU; oběma hrozilo až deset let vězení. Obžaloba je předání věci soudu, ne rozhodnutí o vině | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-57](@/dossiers/andrej-babis/sources/src-57.md) |
+| <a id="clm-77"></a>[CLM-77](@/dossiers/andrej-babis/claims/clm-77.md) | Poslanecká sněmovna 6. září 2017 vyslovila souhlas s trestním stíháním poslanců Andreje Babiše (hlasování č. 28: přihlášeno 134, pro 123, proti 4) a Jaroslava Faltýnka (hlasování č. 29: přihlášeno 133, pro 120, proti 5); přijatá usnesení č. 214 a 215 užívají zákonnou dikci „vyslovuje souhlas s trestním stíháním“, nikoli novinářské „vydání ke stíhání“. Policie oba podle citovaného zpravodajství obvinila 9. října 2017 v souvislosti s padesátimilionovou dotací na stavbu Farmy Čapí hnízdo; podezření se týkala dotačního podvodu a poškození finančních zájmů EU. Babiš proti usnesení ihned podal opravný prostředek a věc označil za „pseudokauzu“ — obvinění je procesní krok, ne rozhodnutí o vině | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-54](@/dossiers/andrej-babis/sources/src-54.md), [SRC-83](@/dossiers/andrej-babis/sources/src-83.md) |
+| <a id="clm-78"></a>[CLM-78](@/dossiers/andrej-babis/claims/clm-78.md) | Dozorový státní zástupce Jaroslav Šaroch zastavil trestní stíhání usnesením ze dne 30. srpna 2019; Městské státní zastupitelství v Praze je rozeslalo oprávněným osobám v polovině září 2019 a právní moci nabylo 17. září 2019. Jako důvod státní zastupitelství uvedlo výklad pojmu malý a střední podnik: „Provedeným dokazováním se však nepodařilo prokázat, že by toto tvrzení bylo nepravdivé“ — tedy tvrzení žadatele, že je malým nebo středním podnikem; propojení Farmy Čapí hnízdo s koncernem Agrofert přes rodinné příslušníky podle státního zastupitelství „nehrálo při posouzení roli“. Formulaci „skutek není trestným činem“, závěr o neprokázaném skutečném vlastnictví akcií Farmy Čapí hnízdo ani citace o „Babišově enormním zájmu na výstavbě areálu“ a „zcela nadstandardních vztazích“ zveřejněné dokumenty státního zastupitelství neobsahují — tyto části stojí jen na citovaném zpravodajství. Zastavení stíhání je procesní rozhodnutí podléhající přezkumu, ne zproštění soudem | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-55](@/dossiers/andrej-babis/sources/src-55.md), [SRC-82](@/dossiers/andrej-babis/sources/src-82.md), [SRC-84](@/dossiers/andrej-babis/sources/src-84.md) |
+| <a id="clm-79"></a>[CLM-79](@/dossiers/andrej-babis/claims/clm-79.md) | Nejvyšší státní zástupce 4. prosince 2019 ukončil přezkum usnesení Městského státního zastupitelství v Praze ze dne 30. srpna 2019 o zastavení trestního stíhání šesti fyzických osob: u čtyř z nich shledal zastavení „zákonné a důvodné“, u dvou je označil za „nezákonné a předčasné“ a postupem podle § 174a odst. 1 trestního řádu je ve vymezené části zrušil; věc se u nich vrátila do stadia přípravného řízení. Že šlo o Andreje Babiše a Janu Mayerovou, uvádí citované zpravodajství — tisková zpráva Nejvyššího státního zastupitelství jména neuvádí. Závěry oznámil nejvyšší státní zástupce Pavel Zeman a NSZ výslovně dodalo, že rozhodnutí „nijak nepředjímá konečný výsledek přípravného řízení ani způsob jeho meritorního skončení“ — obnovení stíhání není rozhodnutí o vině | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-56](@/dossiers/andrej-babis/sources/src-56.md), [SRC-85](@/dossiers/andrej-babis/sources/src-85.md) |
+| <a id="clm-80"></a>[CLM-80](@/dossiers/andrej-babis/claims/clm-80.md) | Dne 21. března 2022 podal státní zástupce Městského státního zastupitelství v Praze obžalobu na dvě fyzické osoby k Městskému soudu v Praze: jedné je kladeno za vinu, že naplnila skutkovou podstatu zločinu dotačního podvodu a poškození finančních zájmů Evropské unie, jednání druhé je kvalifikováno jako pomoc ke zločinu dotačního podvodu. Podle tiskové zprávy Vrchního soudu v Praze k věci sp. zn. 3 To 34/2024 šlo o Janu Nagyovou (dotační podvod a poškození finančních zájmů EU) a Andreje Babiše (pomoc ke zločinu dotačního podvodu); údaj, že oběma hrozilo až deset let vězení, uvádí jen citované zpravodajství. Obžaloba je předání věci soudu, ne rozhodnutí o vině | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-57](@/dossiers/andrej-babis/sources/src-57.md), [SRC-86](@/dossiers/andrej-babis/sources/src-86.md), [SRC-75](@/dossiers/andrej-babis/sources/src-75.md) |
 | <a id="clm-81"></a>[CLM-81](@/dossiers/andrej-babis/claims/clm-81.md) | Babiš obžalobu komentoval slovy: „Dneškem se jen potvrdilo, že jde o vykonstruovaný politický proces proti mé osobě.“ a „Nebýt v politice nikdo by se tím nikdy nezabýval, protože se nic nestalo.“ — doloženo je, že to řekl, ne že jeho popis odpovídá skutečnosti | <span class="status-badge status-quote">CITACE</span> | [SRC-57](@/dossiers/andrej-babis/sources/src-57.md) |
 
 ### Procesní historie, celá
@@ -415,20 +422,35 @@ Kdo do kauzy vstoupí v roce 2025, snadno si zrušení zprošťujícího
 rozsudku splete s prvním rozhodnutím ve věci. Není. Posloupnost začíná
 už v roce 2017:
 
-1. **9. října 2017** policie obvinila Babiše a Faltýnka poté, co je
-   Sněmovna vydala ke stíhání; Babiš podal stížnost a věc označil za
-   „pseudokauzu“ ([CLM-77](@/dossiers/andrej-babis/claims/clm-77.md)).
-2. **V září 2019** státní zástupce Jaroslav Šaroch stíhání **zastavil**
-   („skutek není trestným činem“); usnesení současně konstatovalo
-   „enormní zájem“ i „zcela nadstandardní vztahy“ — obě polohy patří
-   vedle sebe ([CLM-78](@/dossiers/andrej-babis/claims/clm-78.md)).
-3. **4. prosince 2019** nejvyšší státní zástupce Pavel Zeman zastavení
-   u Babiše a Mayerové **zrušil** „jako nezákonné a předčasné“; u
-   dalších čtyř obviněných zůstalo zastavení v platnosti
-   ([CLM-79](@/dossiers/andrej-babis/claims/clm-79.md)).
-4. **21. března 2022** byla podána **obžaloba** k Městskému soudu
-   v Praze ([CLM-80](@/dossiers/andrej-babis/claims/clm-80.md)); Babiš
-   ji označil za vykonstruovaný politický proces
+1. **6. září 2017** Poslanecká sněmovna vyslovila souhlas s trestním
+   stíháním poslanců Babiše (123 : 4) a Faltýnka (120 : 5); **9. října
+   2017** je podle citovaného zpravodajství policie obvinila. Babiš podal
+   stížnost a věc označil za „pseudokauzu“
+   ([CLM-77](@/dossiers/andrej-babis/claims/clm-77.md),
+   [SRC-83](@/dossiers/andrej-babis/sources/src-83.md)).
+2. **Usnesením z 30. srpna 2019**, rozeslaným v polovině září a
+   pravomocným 17. září 2019, dozorový státní zástupce Jaroslav Šaroch
+   stíhání **zastavil**. Jako důvod státní zastupitelství uvedlo, že se
+   nepodařilo prokázat nepravdivost deklarace o malém a středním podniku;
+   formulaci „skutek není trestným činem“ a citace o „enormním zájmu“
+   a „zcela nadstandardních vztazích“ uvádí jen zpravodajství
+   ([CLM-78](@/dossiers/andrej-babis/claims/clm-78.md),
+   [SRC-82](@/dossiers/andrej-babis/sources/src-82.md)).
+3. **4. prosince 2019** nejvyšší státní zástupce Pavel Zeman ukončil
+   přezkum: u čtyř z šesti obviněných shledal zastavení „zákonné
+   a důvodné“, u dvou je označil za „nezákonné a předčasné“ a ve vymezené
+   části **zrušil** podle § 174a odst. 1 trestního řádu; věc se u nich
+   vrátila do přípravného řízení. Jména tisková zpráva neuvádí — že jde
+   o Babiše a Mayerovou, plyne ze zpravodajství
+   ([CLM-79](@/dossiers/andrej-babis/claims/clm-79.md),
+   [SRC-85](@/dossiers/andrej-babis/sources/src-85.md)).
+4. **21. března 2022** podal státní zástupce Městského státního
+   zastupitelství v Praze **obžalobu** na dvě osoby k Městskému soudu
+   v Praze — na Janu Nagyovou pro dotační podvod a poškození finančních
+   zájmů EU, na Andreje Babiše pro pomoc ke zločinu dotačního podvodu
+   ([CLM-80](@/dossiers/andrej-babis/claims/clm-80.md),
+   [SRC-86](@/dossiers/andrej-babis/sources/src-86.md)); Babiš ji označil
+   za vykonstruovaný politický proces
    ([CLM-81](@/dossiers/andrej-babis/claims/clm-81.md)).
 5. **9. ledna 2023** Městský soud v Praze oba obžalované zprostil
    s odůvodněním, že skutek popsaný v obžalobě není trestným činem;
