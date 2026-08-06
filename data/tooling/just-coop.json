@@ -1,0 +1,17 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/just-coop",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "just-coop",
+  "kind": "just",
+  "name": "coop",
+  "title": "Stav víceagentní spolupráce",
+  "category": "provoz",
+  "summary": "Vypíše stav co-op: board úkolů, worktrees a poslední zprávy na sběrnici.",
+  "whenToRun": "Na začátku session a před sáhnutím na soubor, který může držet jiný úkol.",
+  "sourceFile": "scripts/coop/coop.sh",
+  "describedFrom": "code"
+}

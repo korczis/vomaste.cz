@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/build-jsonld-exports",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "build-jsonld-exports",
+  "kind": "npm",
+  "name": "build:jsonld-exports",
+  "title": "Veřejné JSON-LD exporty",
+  "category": "generovani",
+  "summary": "Emituje plnohloubkový @graph pro každý dossier, sjednocený graf celého webu a manifest {routa, sha256, bajty}, aby stažená kopie šla ověřit offline.",
+  "whenToRun": "V build i dev pipeline po grafových projekcích a před data:metrics, které exporty čtou.",
+  "inputs": [
+    "data/dossiers/** (compiled model)",
+    "kurátorovaná grafová vrstva dossier.json `graph`"
+  ],
+  "outputs": [
+    "static/data/dossiers/<slug>.jsonld",
+    "static/data/graph.jsonld",
+    "static/data/jsonld-manifest.json",
+    "data/generated/source-fingerprints.json",
+    "data/generated/claim-sources.json"
+  ],
+  "sourceFile": "scripts/dossier/build-jsonld-exports.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Redakční omezení, která export dodržuje a verify:export je znovu kontroluje: žádný ClaimReview ani rating, žádná číselná jistota, schema.org Person jen pro autorizované subjekty dossieru.",
+    "Slovník vomaste:* je záměrně minimální a obsahuje jen termíny, které se skutečně emitují. `supersedes`/`supersededBy` jsou rezervované, ale NEemitují se — deklarovat nepoužitou schopnost by bylo tvrzení bez krytí."
+  ]
+}

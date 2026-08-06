@@ -1,0 +1,20 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/prismatic-diff",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "prismatic-diff",
+  "kind": "npm",
+  "name": "prismatic:diff",
+  "title": "Diff proti kanonickým datům — nehotové",
+  "category": "reserse",
+  "summary": "Stub. Vypíše odkaz na architektonické rozhodnutí a skončí nenulově.",
+  "whenToRun": "Nespouštět.",
+  "sourceFile": "scripts/prismatic/diff.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Stejný fail-loud stub jako ostatní nehotové prismatic příkazy."
+  ]
+}

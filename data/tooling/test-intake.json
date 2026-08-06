@@ -1,0 +1,22 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/test-intake",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "test-intake",
+  "kind": "npm",
+  "name": "test:intake",
+  "title": "Testy intake pipeline",
+  "category": "kontrola",
+  "summary": "node:test nad scripts/intake/*.test.mjs a podadresáři matching, risk, preflight, adapters a github.",
+  "enforces": [
+    "Padlý test kdekoli v intake pipeline."
+  ],
+  "whenToRun": "Při práci na intake; celá sada je podmnožinou toho, co pokrývá `npm test`.",
+  "inputs": [
+    "scripts/intake/**/*.test.mjs"
+  ],
+  "describedFrom": "command"
+}

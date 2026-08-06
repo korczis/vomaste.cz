@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/intake-validate-workflow",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "intake-validate-workflow",
+  "kind": "npm",
+  "name": "intake:validate-workflow",
+  "title": "Bezpečnostní kontrola intake workflow",
+  "category": "validace",
+  "summary": "Statický bezpečnostní validátor .github/workflows/dossier-intake.yml. Parsuje skutečný YAML, nikdy jen grep — na to varuje sama mise, ze které pravidla pocházejí.",
+  "enforces": [
+    "Porušení kterékoli bezpečnostní invarianty, které intake workflow musí splňovat (oddělení oprávnění, tvar kroků)."
+  ],
+  "whenToRun": "Po editaci intake workflow. Do `npm test` je zapojený přes vlastní test soubor.",
+  "inputs": [
+    ".github/workflows/dossier-intake.yml"
+  ],
+  "sourceFile": "scripts/ci/validate-intake-workflow.mjs",
+  "describedFrom": "header"
+}

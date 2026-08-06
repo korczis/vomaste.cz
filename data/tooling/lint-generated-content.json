@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/lint-generated-content",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "lint-generated-content",
+  "kind": "npm",
+  "name": "lint:generated-content",
+  "title": "Lint generovaných content adaptérů",
+  "category": "kontrola",
+  "summary": "Hlídá, že content/** v pokrytém scope zůstává generovaným routing adaptérem kanonických dat a nikdo do něj nepropašoval doménová data ani ručně psanou stránku.",
+  "enforces": [
+    "L1 — soubor v generovaném scope bez `generated = true` v [extra] (ručně vytvořená stránka).",
+    "L2 — front matter klíč mimo povolenou obálku; doménová pole (status, sources, subjects, depth…) žijí výhradně v kanonických datech a view modelech.",
+    "L3 — chybějící povinná obálková pole (generated, view_model), bez kterých šablona nemá datový vstup."
+  ],
+  "whenToRun": "V build pipeline po sync content.",
+  "inputs": [
+    "content/dossiers/**",
+    "content/entities/*.md"
+  ],
+  "sourceFile": "scripts/lint/lint-generated-content.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Mimo pokrytý scope (dokumentace, koncepty, kořenové _index.md, mapa, sekce typů entit, aux stránky dossierů) lint neběží — ty hlídají jiné brány."
+  ]
+}

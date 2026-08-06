@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/intake-index",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "intake-index",
+  "kind": "npm",
+  "name": "intake:index",
+  "title": "Index pro párování entit",
+  "category": "generovani",
+  "summary": "Odvozuje jeden plochý, deterministicky seřazený seznam ze dvou kanonických zdrojů — entitních dossierů a sdílených registrových entit — a do žádného z nich nic nezapisuje.",
+  "whenToRun": "Před párováním entit v intake pipeline nebo při jeho ladění.",
+  "inputs": [
+    "data/dossiers/*/dossier.json (dossierType: entity)",
+    "data/dossiers/_shared/entities/*.json"
+  ],
+  "outputs": [
+    "index pro párování entit"
+  ],
+  "sourceFile": "scripts/intake/build-matching-index.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Jen pole relevantní pro párování: žádný text tvrzení, žádné tělo zdroje, žádný narativní obsah."
+  ]
+}

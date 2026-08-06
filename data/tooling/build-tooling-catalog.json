@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/build-tooling-catalog",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "build-tooling-catalog",
+  "kind": "npm",
+  "name": "build:tooling-catalog",
+  "title": "Generátor katalogu toolingu",
+  "category": "generovani",
+  "summary": "Staví katalog příkazů ze dvou záměrně oddělených vstupů: ručně psaných záznamů v data/tooling/*.json (co příkaz dělá, co vynucuje, kdy ho spustit) a SKUTEČNOSTI dopočítané z package.json, scripts/build/pipeline.mjs, .githooks/pre-commit, justfile a .claude/skills/**/SKILL.md.",
+  "enforces": [
+    "G1–G6 stejně jako verify:tooling-catalog — audit běží v obou režimech, takže ani generátor nedoběhne nad katalogem, který neodpovídá repozitáři.",
+    "Záznam v data/tooling/, který neodpovídá schematu tooling-command, nebo jehož identifier se liší od názvu souboru."
+  ],
+  "whenToRun": "Po přidání nebo přejmenování jakéhokoli npm skriptu, just receptu či skillu — a po každé editaci záznamu v data/tooling/.",
+  "inputs": [
+    "data/tooling/*.json",
+    "package.json",
+    "justfile",
+    ".claude/skills/*/SKILL.md",
+    "scripts/build/pipeline.mjs",
+    ".githooks/pre-commit",
+    "schemas/canonical/tooling-command.schema.json"
+  ],
+  "outputs": [
+    "data/generated/tooling-catalog.json",
+    "content/dokumentace/prikazy/_index.md",
+    "content/dokumentace/prikazy/<id>.md",
+    "docs/TOOLING.md"
+  ],
+  "sourceFile": "scripts/build/build-tooling-catalog.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Ručně se píše jen to, co se ze zdrojů odvodit nedá. Příkazová řádka, zařazení do pipeline, členství v pre-commitu, cíl just receptu ani frontmatter skillu se do dat nezapisují — dopočítávají se, aby katalog nemohl tvrdit něco jiného, než co repozitář spouští.",
+    "Zápis je idempotentní: soubor se přepíše, jen když se jeho obsah liší."
+  ]
+}

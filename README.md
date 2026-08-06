@@ -392,6 +392,15 @@ Instalace `just`: <https://github.com/casey/just#installation>.
 
 ## Referenční příkazy
 
+Tahle tabulka je **výběr toho nejpoužívanějšího**. Úplný katalog — každý npm
+skript, každý `just` recept i každá Claude skill na vlastní stránce, s tím, co
+příkaz vynucuje, kdy ho spustit a co čte a zapisuje — je v
+[`docs/TOOLING.md`](docs/TOOLING.md) a na webu v
+[dokumentaci příkazů](https://vomaste.cz/dokumentace/prikazy/). Generuje se
+z repozitáře (`npm run build:tooling-catalog`) a brána `verify:tooling-catalog`
+shodí build, když se objeví příkaz bez záznamu — proto katalog nemůže zastarat,
+zatímco tenhle výběr je ruční a záměrně neúplný.
+
 | Příkaz | K čemu |
 |---|---|
 | `npm run build` | celá kvalitní brána (`scripts/build/pipeline.mjs build`): kanonická validace → view modely + adaptéry → validátory → generátory → CSS/JS → `zola build` → post-build kontroly |

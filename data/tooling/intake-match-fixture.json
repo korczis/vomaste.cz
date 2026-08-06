@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/intake-match-fixture",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "intake-match-fixture",
+  "kind": "npm",
+  "name": "intake:match-fixture",
+  "title": "Fixture pro ladění párování",
+  "category": "kontrola",
+  "summary": "Předvyplněné volání intake:process nad fixture tests/fixtures/intake/valid-new-dossier.json s pevným časem, pevným commitem a --overwrite do .tmp/intake/match-fixture.",
+  "whenToRun": "Při ladění párování entit, kdy chceš opakovaně stejný deterministický vstup.",
+  "inputs": [
+    "tests/fixtures/intake/valid-new-dossier.json"
+  ],
+  "outputs": [
+    ".tmp/intake/match-fixture (gitignorováno)"
+  ],
+  "sourceFile": "scripts/intake/process-issue.mjs",
+  "describedFrom": "header"
+}

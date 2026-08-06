@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/screening-public-money",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "screening-public-money",
+  "kind": "npm",
+  "name": "screening:public-money",
+  "title": "Screening toku veřejných prostředků",
+  "category": "reserse",
+  "summary": "Pro zadaná IČO spočítá z registru smluv (ISRS, zákon č. 340/2015 Sb.), kolik smluv se subjektem uzavřely veřejné instituce v pokrytém období, jaký je jejich deklarovaný objem a kdo jsou objednatelé.",
+  "whenToRun": "Ručně, při rešerši k firmě. `--ico=…` (i více oddělených čárkou) nebo `--from-external-ids`, volitelně `--from=`/`--to=`/`--json`/`--no-cache`.",
+  "inputs": [
+    "https://data.smlouvy.gov.cz/dump_<RRRR>_<MM>.xml",
+    "cache v .tmp/public-money/"
+  ],
+  "outputs": [
+    "data/generated/**",
+    "reports/** (interní, nikdy se neroutuje na web)"
+  ],
+  "sourceFile": "scripts/osint/screen-public-money.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "DOKLÁDÁ: že v registru existují zveřejněné smlouvy, kde subjekt vystupuje jako smluvní strana, s uvedeným objednatelem, datem a (je-li vyplněna) hodnotou.",
+    "NEDOKLÁDÁ pochybení. Uzavřená veřejná smlouva je běžný, zákonem předpokládaný a povinně zveřejňovaný jev; vysoký objem je jen objem.",
+    "NEDOKLÁDÁ ÚPLNOST: registr obsahuje smlouvy nad 50 000 Kč od 1. 7. 2016 se zákonnými výjimkami. Chybějící záznam neznamená „subjekt nedostal veřejné peníze“.",
+    "PŘIZNANÁ NEOVĚŘENOST: mapování XML elementů je napsané podle dokumentované struktury dumpu, NE proti živé odpovědi — v prostředí, kde skript vznikl, byl registr nedostupný (TLS handshake reset ze všech klientů i z nezávislé síťové cesty). Než výstup použiješ, spusť ho jednou na síti, kde registr odpovídá, a ověř, že počty nejsou nulové kvůli posunu schématu.",
+    "Dump, ze kterého nevypadne ani jeden záznam, je tvrdá chyba, ne prázdný výsledek — ticho se nikdy nesmí tvářit jako „nic nenalezeno“.",
+    "Čte se výhradně oficiální měsíční otevřený dump. Lidské rozhraní smlouvy.gov.cz/vyhledavani není kontrakt a rozpadlo by se při první změně šablony, proto ho skript záměrně nečte."
+  ]
+}

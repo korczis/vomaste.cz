@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/validate-directory-index",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "validate-directory-index",
+  "kind": "npm",
+  "name": "validate:directory-index",
+  "title": "Kontrola prezentačního indexu adresáře",
+  "category": "kontrola",
+  "summary": "Ověřuje, že index adresáře nese vše, co adresář potřebuje, že jeho počty pocházejí z kanonických dat a že routy registrů se čtou z navigačního manifestu místo skládání z řetězců.",
+  "enforces": [
+    "Prázdné pole navíc v indexu (index tvrdí víc, než má obsah).",
+    "Počet, který se neshoduje s compiled kanonickým modelem — tedy ručně dopsané číslo.",
+    "Routa registru, která se neshoduje s navigačním manifestem."
+  ],
+  "whenToRun": "Až po generátorech, ne v `npm test`: potřebuje static/data/dossiers.json a data/generated/navigation.json, které v čerstvém checkoutu před generátory neexistují. Přesně tenhle rozdíl mezi vývojářským a CI prostředím už dvakrát shodil CI.",
+  "inputs": [
+    "static/data/dossiers.json",
+    "data/generated/navigation.json",
+    "data/dossiers/** (compiled model)"
+  ],
+  "sourceFile": "scripts/dossier/validate-directory-index.mjs",
+  "describedFrom": "header"
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/generate-candidates",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "generate-candidates",
+  "kind": "npm",
+  "name": "generate:candidates",
+  "title": "Přehled kontextových entit k posouzení",
+  "category": "generovani",
+  "summary": "Generuje přehled každé kontextové entity v systému — tedy entity objevené proto, že ji pojmenoval zdroj nebo tvrzení, ale která nemá vlastní autorizovaný dossier. NENÍ to autorizace.",
+  "whenToRun": "V build i dev pipeline; výstup čte vlastník webu, ne návštěvník.",
+  "inputs": [
+    "data/dossiers/** (compiled model)"
+  ],
+  "outputs": [
+    "data/generated/authorization-candidates.json",
+    "reports/authorization-candidates.md"
+  ],
+  "sourceFile": "scripts/dossier/generate-authorization-candidates.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Nikdy nezapisuje do AGENTS.md, nikdy nenastavuje autorizovaný status a není to veřejná routa — publikovat „koho bychom mohli prošetřit příště“ by byl přesně ten redakční přesah, kterému pravidla webu brání.",
+    "Uvádí jen fakta už doložená uvnitř současného autorizovaného dossieru; nespekuluje o tom, co by hypotetický budoucí dossier pokrýval."
+  ]
+}

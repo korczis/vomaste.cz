@@ -1,0 +1,19 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/generate-all",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "generate-all",
+  "kind": "npm",
+  "name": "generate:all",
+  "title": "Všechny generátory bez validace",
+  "category": "provoz",
+  "summary": "Řetěz samotných generátorů: sekce typů entit, routy, navigace, sekundární providery, exporty, grafové projekce, JSON-LD, metriky, index vyhledávání, kandidáti, log objevení, CSS a JS.",
+  "whenToRun": "Jako záchrana po klonu nebo po `git pull`, kdy data/generated/** neexistuje. Volá ho `npm run serve`, když preflight ohlásí chybějící vstupy.",
+  "describedFrom": "command",
+  "notes": [
+    "Neobsahuje validátory ani post-build brány — není náhradou `npm run build`."
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/test-e2e",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "test-e2e",
+  "kind": "npm",
+  "name": "test:e2e",
+  "title": "Playwright end-to-end testy",
+  "category": "kontrola",
+  "summary": "Spustí Playwright testy podle playwright.config.mjs nad všemi nakonfigurovanými projekty.",
+  "whenToRun": "Ručně, nad postaveným webem. Není součástí `npm run build`.",
+  "inputs": [
+    "tests/e2e/**",
+    "playwright.config.mjs"
+  ],
+  "describedFrom": "command"
+}

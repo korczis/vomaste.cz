@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/validate-graph-projections",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "validate-graph-projections",
+  "kind": "npm",
+  "name": "validate:graph-projections",
+  "title": "Brána grafového kontraktu",
+  "category": "kontrola",
+  "summary": "Vlastní mezisouborovou SÉMANTIKU grafových projekcí, kterou nelze vyjádřit schématem: referenční integritu, paritu manifestu se soubory, integritu hashů a pokrytí registrové vrstvy.",
+  "enforces": [
+    "Payload, který v manifestu chybí, nebo záznam manifestu bez souboru.",
+    "Nesouhlasící hash payloadu.",
+    "Referenční nekonzistence uvnitř projekcí a nepokrytí registrové vrstvy."
+  ],
+  "whenToRun": "Hned po build:graph-projections, před zola build.",
+  "inputs": [
+    "static/data/graph/**",
+    "schemas/graph-manifest.schema.json",
+    "schemas/graph-payload.schema.json"
+  ],
+  "sourceFile": "scripts/dossier/validate-graph-projections.mjs",
+  "describedFrom": "header"
+}

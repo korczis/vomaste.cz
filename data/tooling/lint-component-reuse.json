@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/lint-component-reuse",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "lint-component-reuse",
+  "kind": "npm",
+  "name": "lint:component-reuse",
+  "title": "Znovupoužití UI komponent",
+  "category": "validace",
+  "summary": "Vynucuje vlastní konvenci webu: obsahová šablona nesmí ručně psát markup, pro který už existuje sdílená komponenta.",
+  "enforces": [
+    "Obsahová top-level šablona, která neimportuje a nepoužívá macros/ui.html (page_header, breadcrumb, stat_tile, registry-card, empty_state, back_link_footer…).",
+    "Šablona s vlastním <table> mimo macros/table.html, která neimportuje macros/table.html a nepoužívá table::advanced_table."
+  ],
+  "whenToRun": "Po každé nové nebo přepsané šabloně.",
+  "inputs": [
+    "templates/*.html"
+  ],
+  "sourceFile": "scripts/lint/lint-component-reuse.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Není to kontrola proti externí specifikaci. Odkazovaná dokumentace Flowbite byla přečtena přímo a neobsahuje žádná konkrétní strojově kontrolovatelná pravidla — je to rozcestník, ne conformance checklist. Skript proto vynucuje konvenci tohohle repozitáře a jmenuje se podle toho, co skutečně kontroluje.",
+    "Výjimky jsou vždy per-soubor s napsaným odůvodněním, nikdy plošné."
+  ]
+}

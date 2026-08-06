@@ -1,0 +1,20 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/prismatic-enrich-all",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "prismatic-enrich-all",
+  "kind": "npm",
+  "name": "prismatic:enrich-all",
+  "title": "Hromadné obohacení — nehotové",
+  "category": "reserse",
+  "summary": "Stub. Vypíše odkaz na architektonické rozhodnutí a skončí nenulově.",
+  "whenToRun": "Nespouštět. Reálnou částí téhle vrstvy je dnes jen prismatic:plan.",
+  "sourceFile": "scripts/prismatic/enrich-all.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Stejný fail-loud stub jako ostatní nehotové prismatic příkazy."
+  ]
+}

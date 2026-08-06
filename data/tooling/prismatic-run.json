@@ -1,0 +1,20 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/prismatic-run",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "prismatic-run",
+  "kind": "npm",
+  "name": "prismatic:run",
+  "title": "Spuštění úloh Prismatic — nehotové",
+  "category": "reserse",
+  "summary": "Stub. Vypíše odkaz na architektonické rozhodnutí a skončí nenulově. Exekutor úloh neexistuje a Prismatic sám zatím nemá odpovídající exportér, který by šlo volat.",
+  "whenToRun": "Nespouštět. Až bude postavený — plán je ve Fázi 2 mise integrace.",
+  "sourceFile": "scripts/prismatic/run.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Selhává hlasitě a schválně: podle konstituce se politika, kterou nic nevynucuje, nepočítá za implementovanou, takže příkaz nesmí projít jako tiše úspěšný krok skriptu ani CI úlohy."
+  ]
+}

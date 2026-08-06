@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/validate-entity-types",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "validate-entity-types",
+  "kind": "npm",
+  "name": "validate:entity-types",
+  "title": "Kontrola typů entit",
+  "category": "validace",
+  "summary": "Ověřuje kanonické záznamy entit proti slovníku data/entity-types.toml, a to oběma směry.",
+  "enforces": [
+    "Typ entity použitý v datech, který ve slovníku nemá záznam — jinak by skupina v registru entit nesla syrovou hodnotu místo názvu.",
+    "Záznam ve slovníku, který v datech nikdo nepoužívá (mrtvý překlad)."
+  ],
+  "whenToRun": "V build pipeline; po zavedení nového typu entity.",
+  "inputs": [
+    "data/dossiers/_shared/entities/*.json",
+    "data/entity-types.toml"
+  ],
+  "sourceFile": "scripts/dossier/validate-entity-types.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Slovník je jen popiskovač; zdrojem pravdy o existujících typech zůstávají kanonické záznamy entit."
+  ]
+}
