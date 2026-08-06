@@ -350,6 +350,9 @@ Stejná pravidla musí platit pro politického spojence, odpůrce, známou osobu
 
 Metodologie, která funguje pouze proti lidem, které nemáme rádi, není metodologie. Je to zbraň s dokumentací.
 
+Test, který metodologie musí projít, a kde to jde na webu vidět v praxi:
+[Metodologie přežije kauzy](@/koncepty/metodologie-prezije-kauzy.md).
+
 ---
 
 ## Závazek {#zavazek}
