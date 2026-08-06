@@ -33,7 +33,9 @@ u žádné služby. Nasazení jde přes GitHub Actions do Pages přes OIDC token
 workflow — ani deploy tedy nepotřebuje osobní token, který by fork nemohl
 mít. Všechna data, která web zobrazuje, jsou v repozitáři jako verzované
 soubory; [strojově čitelná data](@/koncepty/strojove-citelna-data.md) se
-z nich generují při buildu, ne z nějaké databáze vedle.
+z nich generují při buildu, ne z nějaké databáze vedle. Proč statická
+architektura sama o sobě snižuje riziko, ne jen náklady:
+[Serverless jako vlastnost](@/koncepty/serverless.md).
 
 ## Jeden vstupní bod
 

@@ -238,6 +238,9 @@ Tím se snižuje provozní složitost, náklady i prostor pro tiché zásahy do 
 
 Serverless zde neznamená, že servery magicky přestaly existovat. Znamená, že existence veřejného výstupu není připoutána k jednomu trvale běžícímu privilegovanému systému.
 
+Technicky, co to přesně znamená a co to nedává zadarmo:
+[Serverless jako vlastnost](@/koncepty/serverless.md).
+
 ---
 
 ## 13. Autonomní neznamená bez odpovědnosti {#bod-13}
