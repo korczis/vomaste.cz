@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 501 context entities across 27 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 500 context entities across 28 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -3750,18 +3750,6 @@ Generated from 501 context entities across 27 dossier(s). Regenerate with `npm r
 - Claims: CLM-17, CLM-21
 - Sources: SRC-08, SRC-09, SRC-10, SRC-11 (1 independent source family)
 - Relations: none
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Petr Fiala (`petr-fiala`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: boris-stastny, karel-havlicek, oto-klempir
-- Claims: CLM-29, CLM-31
-- Sources: SRC-11, SRC-14 (3 independent source families)
-- Relations:
-  - edge-petr-fiala-ods (petr-fiala -> ods, "bývalý premiér, předseda ODS", dossier: boris-stastny)
-  - edge-petr-fiala-stastny (petr-fiala -> stastny, "po odvolání Šebka označil jeho práci v čele Národní sportovní agentury za skvělou a profesionální", dossier: boris-stastny)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Petr Hladík (`petr-hladik`)

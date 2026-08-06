@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/petr-fiala",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "petr-fiala",
+  "slug": "petr-fiala",
+  "title": "Petr Fiala",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení Petra Fialy.",
+  "dossierType": "entity",
+  "canonicalDossier": "petr-fiala",
+  "subject": "petr-fiala",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-06",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-06-PETR-FIALA"
+    ]
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nPetr Fiala je poslanec Poslanecké sněmovny PČR, bývalý předseda ODS\n(2014–2026) a bývalý předseda vlády ČR (2021–2025). Jako veřejný\nfunkcionář spadá do standing scope autorizace\n(`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro tento dossier\nje `AUTH-2026-08-06-PETR-FIALA`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam — dokládá pouze jeho aktuální poslanecký mandát a roli řadového\nposlance po odchodu z čela ODS, nikoli hloubkovou investigativní\nrešerši jeho premiérského období nebo jiných kauz. Rozšíření rozsahu\nvyžaduje samostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/petr-fiala/claims/clm-01.md) | Petr Fiala je podle profilu na webu Poslanecké sněmovny PČR poslancem zvoleným za ODS (mandát od 4. 10. 2025) a od 17. 1. 2026, po zvolení Martina Kupky předsedou ODS, řadovým poslancem — dříve dvanáct let předsedou ODS a čtyři roky (2021–2025) předsedou vlády ČR, jak nezávisle informovaly Hospodářské noviny (HN.cz) | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/petr-fiala/sources/src-01.md), [SRC-02](@/dossiers/petr-fiala/sources/src-02.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedeného mandátu a dřívějších funkcí nic dalšího;\nnejde o hodnocení jeho politického působení ani o investigativní\nrešerši jeho premiérského období."
+    }
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "entity": "petr-fiala",
+        "label": "Petr Fiala",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": []
+  }
+}

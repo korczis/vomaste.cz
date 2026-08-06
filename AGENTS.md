@@ -1726,3 +1726,17 @@ status (governance adopted; CLI pipeline scaffolded, not yet functional).
 Authorized by the site owner, explicitly and on the record, 2026-08-06:
 
 Standing scope authorization (AUTH-2026-08-05-PLATFORM-SCOPE): Martin Kupka je veřejný funkcionář — poslanec Poslanecké sněmovny PČR zvolený za ODS a od ledna 2026 předseda ODS, opoziční parlamentní strany. Autorizace pokrývá výhradně jeho základní veřejné politicko-kariérní fakty (poslanecký mandát, funkce předsedy strany) doložené přímo otevřenými zdroji (psp.cz, Deník.cz). Nejde o hlubší investigativní rešerši kauz ani o žádné další téma — to by vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-06: Petr Fiala
+
+Authorized by the site owner, explicitly and on the record, 2026-08-06:
+
+Standing scope autorizace (AUTH-2026-08-05-PLATFORM-SCOPE): Petr Fiala je
+veřejný funkcionář — poslanec Poslanecké sněmovny PČR za ODS, bývalý
+předseda ODS (2014–2026) a bývalý předseda vlády ČR (2021–2025).
+Rozsah tohoto dossieru je omezen na jeho základní, přímo doložený
+politický profil: aktuální poslanecký mandát a roli řadového poslance po
+odchodu z čela ODS (nástupem Martina Kupky v lednu 2026), doloženo
+oficiálním profilem na webu Poslanecké sněmovny a nezávislým
+zpravodajstvím. Hlubší investigativní rešerše jeho premiérského období
+nebo jiných kauz vyžaduje samostatnou budoucí autorizaci.
