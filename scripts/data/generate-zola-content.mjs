@@ -372,6 +372,35 @@ export function buildStubs(compiled, { contentRoot = REPO_ROOT } = {}) {
   // --- záznamy -----------------------------------------------------------
   const entityTitle = (iri) => byId[iri]?.record.title ?? localPart(iri);
   const dossierTitles = new Map(dossierWrappers.map((w) => [w.dossier, w.record.title]));
+
+  // Poslední záchrana pro kontextovou entitu bez jakéhokoli redakčního textu.
+  // Neříká nic, co by v záznamu nebylo: jen že jde o kontextový záznam, ve
+  // kterých dossierech vystupuje a že to není obvinění. Subjektová entita
+  // fallback nedostane — u té je popis redakční věc a prázdno je signál, že
+  // ji někdo má dopsat, ne že ji má zalepit generátor.
+  const contextEntityFallback = (r) => {
+    if (r.publicationRole !== "context") return null;
+    // Tituly dossierů se ZÁMĚRNĚ nespojují spojkou: agregátní pohled se sám
+    // jmenuje „Petr Macinka a Filip Turek", takže „dossieru X a Y" z něj
+    // vyrobí „Petr Macinka a Filip Turek a Filip Turek". Jmenuje se proto
+    // vždy jen jeden a zbytek se počítá.
+    const named = (r.dossiers ?? []).map((s) => dossierTitles.get(s)).filter(Boolean);
+    // Počet se do věty nepíše číslicí: „v 2 dossierech" je špatně česky
+    // (vokalizované „ve" před dvojkou) a ohýbat předložku podle číslovky by
+    // sem přitáhlo pravidlo, které s generováním stránek nesouvisí.
+    const where =
+      named.length === 0
+        ? ""
+        : named.length === 1
+          ? ` Vystupuje v dossieru ${named[0]}.`
+          : ` Vystupuje v dossieru ${named[0]} a dalších.`;
+    // Titul končící tečkou („Zapper-Club s.r.o.") by jinak dal „s.r.o..".
+    const titled = summarize(r.title, 60).replace(/\.+$/, "");
+    return tomlString(
+      `Kontextový záznam na vomaste.cz: ${titled}.${where}` +
+        " Uveden, protože ho jmenuje citovaný obsah, ne jako tvrzení o pochybení.",
+    );
+  };
   const graphLabelMaps = new Map(
     dossierWrappers
       .filter((w) => w.record.graph)
@@ -477,11 +506,20 @@ export function buildStubs(compiled, { contentRoot = REPO_ROOT } = {}) {
         // ručně psaný kontextový odstavec („Kontextová entita — … nezakládá
         // žádné tvrzení o pochybení."), a ten je pro popis stránky přesnější
         // než cokoli odvozeného z typu a rolí.
+        //
+        // Nejstarší uzly grafu (macinka-turek) vznikly ještě před tou
+        // konvencí a tělo nemají vůbec — bez fallbacku spadne jejich popis
+        // na popis celého webu a stránka se v hledání nedá odlišit. Fallback
+        // proto neopakuje typ ani role (množná čísla z entity-types.toml by
+        // se do věty nedala ohnout a druhý slovník tu nechci), ale drží se
+        // toho, co záznam sám deklaruje: že je kontextový a odkud pochází.
         [
           "description",
           r.description !== undefined
             ? tomlString(r.description)
-            : (summarizeRecord(mdBody(r.content)) ? tomlString(summarizeRecord(mdBody(r.content))) : null),
+            : (summarizeRecord(mdBody(r.content))
+                ? tomlString(summarizeRecord(mdBody(r.content)))
+                : contextEntityFallback(r)),
         ],
       ],
       extraDerived: [

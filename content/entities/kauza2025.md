@@ -4,6 +4,7 @@ title = "Kauza 2025: smazané příspěvky"
 template = "entity.html"
 weight = 10
 aliases = ["/dossiers/macinka-turek/entities/kauza2025/"]
+description = "Kontextový záznam na vomaste.cz: Kauza 2025: smazané příspěvky. Vystupuje v dossieru Petr Macinka a Filip Turek a dalších. Uveden, protože ho jmenuje citovaný obsah, ne jako tvrzení o pochybení."
 
 [extra]
 generated = true
