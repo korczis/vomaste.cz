@@ -197,7 +197,7 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 705 záznamů v 123 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 706 záznamů v 123 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
@@ -205,7 +205,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 705 záznamů v 123 rodinách/out
 | seznam-zpravy | 38 | 13 | [ano](/zdroje/seznam-zpravy/) |
 | Poslanecká sněmovna Parlamentu ČR | 34 | 15 | [ano](/zdroje/psp-cz/) |
 | Vláda České republiky (vlada.gov.cz) | 28 | 17 | [ano](/zdroje/vlada-cz/) |
-| FORUM 24 | 19 | 9 | [ano](/zdroje/forum24/) |
+| FORUM 24 | 20 | 10 | [ano](/zdroje/forum24/) |
 | denik-n | 17 | 9 | [ano](/zdroje/denik-n/) |
 | ČT24 (Česká televize) | 15 | 7 | [ano](/zdroje/ceska-televize/) |
 | Echo24 | 13 | 9 | [ano](/zdroje/echo24/) |

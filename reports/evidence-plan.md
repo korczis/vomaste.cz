@@ -57,12 +57,12 @@ veškeré nedodělané zdrojovací práce.
 |---|---|
 | Dossierů | 26 |
 | Tvrzení | 971 |
-| — z toho `E0` / `E1` / `E1+` / `E2` | 0 / 556 / 93 / 322 |
-| Zdrojů (z toho s vyplněnou `sourceFamily`) | 705 (389) |
+| — z toho `E0` / `E1` / `E1+` / `E2` | 0 / 556 / 92 / 323 |
+| Zdrojů (z toho s vyplněnou `sourceFamily`) | 706 (389) |
 | Kauz | 94 |
 | Mezer celkem / otevřených / zastaralých | 204 / 202 / 0 |
 | Vztahů | 334 |
-| Bodů rizika celkem | 1432 |
+| Bodů rizika celkem | 1431 |
 
 ## Pořadí dossierů
 
@@ -70,11 +70,11 @@ veškeré nedodělané zdrojovací práce.
 |---:|---|---|---:|---:|---:|---:|---|---:|---:|---|
 | 1 | [Andrej Babiš](../data/dossiers/andrej-babis/) `andrej-babis` | **vysoká** | 154 | 10.8 % | 10.8 % | 105 | 0/70/1/34 | 8 | 21 | 2026-08-06 |
 | 2 | [Karel Havlíček](../data/dossiers/karel-havlicek/) `karel-havlicek` | **vysoká** | 99 | 6.9 % | 17.7 % | 58 | 0/39/8/11 | 12 | 26 | 2026-08-05 |
-| 3 | [Jaromír Zůna](../data/dossiers/jaromir-zuna/) `jaromir-zuna` | **vysoká** | 88 | 6.1 % | 23.8 % | 58 | 0/38/3/17 | 9 | 20 | 2026-08-06 |
+| 3 | [Jaromír Zůna](../data/dossiers/jaromir-zuna/) `jaromir-zuna` | **vysoká** | 87 | 6.1 % | 23.8 % | 58 | 0/38/2/18 | 9 | 21 | 2026-08-06 |
 | 4 | [Martin Šebestyán](../data/dossiers/martin-sebestyan/) `martin-sebestyan` | **vysoká** | 80 | 5.6 % | 29.4 % | 55 | 0/33/0/22 | 14 | 20 | 2026-08-06 |
 | 5 | [Ivan Bednárik](../data/dossiers/ivan-bednarik/) `ivan-bednarik` | **vysoká** | 79 | 5.5 % | 34.9 % | 48 | 0/34/1/13 | 9 | 26 | 2026-07-30 |
-| 6 | [Adam Vojtěch](../data/dossiers/adam-vojtech/) `adam-vojtech` | **vysoká** | 78 | 5.4 % | 40.4 % | 55 | 0/31/1/23 | 15 | 21 | 2026-08-06 |
-| 7 | [Zuzana Mrázová](../data/dossiers/zuzana-mrazova/) `zuzana-mrazova` | **vysoká** | 78 | 5.4 % | 45.8 % | 60 | 0/28/6/26 | 16 | 15 | 2026-08-05 |
+| 6 | [Adam Vojtěch](../data/dossiers/adam-vojtech/) `adam-vojtech` | **vysoká** | 78 | 5.5 % | 40.3 % | 55 | 0/31/1/23 | 15 | 21 | 2026-08-06 |
+| 7 | [Zuzana Mrázová](../data/dossiers/zuzana-mrazova/) `zuzana-mrazova` | **vysoká** | 78 | 5.5 % | 45.8 % | 60 | 0/28/6/26 | 16 | 15 | 2026-08-05 |
 | 8 | [Aleš Juchelka](../data/dossiers/ales-juchelka/) `ales-juchelka` | **vysoká** | 75 | 5.2 % | 51.0 % | 47 | 0/27/8/12 | 13 | 6 | 2026-07-30 |
 | 9 | [Igor Červený](../data/dossiers/igor-cerveny/) `igor-cerveny` | **střední** | 75 | 5.2 % | 56.3 % | 59 | 0/26/9/24 | 14 | 14 | 2026-07-30 |
 | 10 | [Oto Klempíř](../data/dossiers/oto-klempir/) `oto-klempir` | **střední** | 75 | 5.2 % | 61.5 % | 45 | 0/34/0/11 | 7 | 16 | 2026-08-06 |
@@ -135,20 +135,20 @@ Další krok:
 
 ### 3. Jaromír Zůna — `jaromir-zuna`
 
-**Priorita vysoká** · 88 bodů (6.1 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-06`, revidováno `2026-08-06`
+**Priorita vysoká** · 87 bodů (6.1 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-06`, revidováno `2026-08-06`
 
 | Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
 |---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 58 | 0 | 38 | 3 | 17 | 41 | 21 | 4 | 11 (9) | 26 |
+| 58 | 0 | 38 | 2 | 18 | 42 | 21 | 4 | 11 (9) | 26 |
 
-Deklarované stavy: CORROBORATED 14 · 1 ZDROJ 17 · CITACE 27
+Deklarované stavy: CORROBORATED 15 · 1 ZDROJ 16 · CITACE 27
 
 Další krok:
 
 - 38 tvrzení stojí na jediném zdroji (např. CLM-04, CLM-05, CLM-06) → dohledat druhého, nezávislého vydavatele
 - 9 dalších otevřených mezer → ověřit, jestli je nový zdroj neuzavírá
-- 3 tvrzení má ≥2 zdroje, ale všechny z jedné rodiny / od jednoho vydavatele (např. CLM-21, CLM-28, CLM-29) → dohledat jeden nezávislý doklad; tím se dostanou na CORROBORATED
-- 20 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
+- 2 tvrzení má ≥2 zdroje, ale všechny z jedné rodiny / od jednoho vydavatele (např. CLM-21, CLM-29) → dohledat jeden nezávislý doklad; tím se dostanou na CORROBORATED
+- 21 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
 
 ### 4. Martin Šebestyán — `martin-sebestyan`
 
@@ -186,7 +186,7 @@ Další krok:
 
 ### 6. Adam Vojtěch — `adam-vojtech`
 
-**Priorita vysoká** · 78 bodů (5.4 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-06`, revidováno `2026-08-06`
+**Priorita vysoká** · 78 bodů (5.5 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-06`, revidováno `2026-08-06`
 
 | Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
 |---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -203,7 +203,7 @@ Další krok:
 
 ### 7. Zuzana Mrázová — `zuzana-mrazova`
 
-**Priorita vysoká** · 78 bodů (5.4 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-05`, revidováno `2026-08-05`
+**Priorita vysoká** · 78 bodů (5.5 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-05`, revidováno `2026-08-05`
 
 | Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
 |---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
