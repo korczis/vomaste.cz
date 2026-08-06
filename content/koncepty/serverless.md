@@ -62,4 +62,5 @@ Statický build neznamená žádnou logiku vůbec — validátory, generátory a
 kontrolní skripty jsou reálný kód, který reálně běží, jen ne za běhu
 prohlížené stránky, nýbrž při buildu. A neznamená to ani odolnost proti
 tomu, kdo má přístup k repozitáři samotnému — to řeší jiná vrstva,
-[verzováno v Gitu](@/koncepty/verzovano-v-gitu.md).
+[verzováno v Gitu](@/koncepty/verzovano-v-gitu.md) a
+[nezastavitelnost](@/koncepty/nezastavitelnost.md).
