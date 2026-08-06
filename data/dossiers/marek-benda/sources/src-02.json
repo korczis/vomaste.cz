@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/marek-benda/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/marek-benda"
+  },
+  "title": "SRC-02 — Echo24.cz: Šéfem poslanců ODS zůstává Marek Benda",
+  "description": "Zpravodajský článek o zvolení Marka Bendy předsedou poslaneckého klubu ODS pro nové volební období.",
+  "outlet": "Echo24",
+  "sourceType": "zpravodajství",
+  "url": "https://www.echo24.cz/a/Hhwfz/zpravy-domov-volby-ods-poslanecky-klub-snemovna-praha-marek-benda",
+  "retrieved": "2026-08-06",
+  "published": "2025-10-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/marek-benda/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "marek-benda"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpravodajský článek Echo24.cz z 8. 10. 2025, otevřen a přečten 2026-08-06.\nInformuje, že předsedou poslanců ODS zůstává i pro nové volební období Marek Benda, zvolený jednomyslně poslanci klubu — již počtvrté v řadě od nástupu do této funkce po Zbyňku Stanjurovi.\n\nPoznámka k typu zdroje a jeho limitům: nezávislé, redakčně zpracované zpravodajství soukromého vydavatele — jiný vydavatel i jiná doména než SRC-01 (státní instituce), takže spolu tvoří nezávislou dvojici pro účely korporace tvrzení. Článek se věnuje ustavující schůzi poslaneckého klubu ODS po volbách 2025 a nedokládá formální datum vzniku mandátu — to dokládá SRC-01."
+    }
+  ],
+  "order": 2
+}
