@@ -42,5 +42,11 @@
       "type": "markdown",
       "value": "Primární pramen pro exekutivní rozhodnutí. Hodí se dvojí opatrnost: dokládá autenticky, co vláda rozhodla a řekla, ale u sporných témat je zároveň stranou sporu."
     }
+  ],
+  "answers": [
+    {
+      "question": "Co vláda rozhodla a kdy?",
+      "note": "Cituj usnesení s číslem a datem, ne tiskovou zprávu o něm."
+    }
   ]
 }

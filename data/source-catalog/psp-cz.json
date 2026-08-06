@@ -42,5 +42,14 @@
       "type": "markdown",
       "value": "Primární pramen tam, kde média citují politika. Kde je k dispozici stenozáznam nebo hlasování, cituje se on — ne článek, který ho převyprávěl."
     }
+  ],
+  "answers": [
+    {
+      "question": "Jak poslanec hlasoval?"
+    },
+    {
+      "question": "Co přesně řekl ve sněmovně?",
+      "note": "Stenozáznam, ne novinová parafráze."
+    }
   ]
 }

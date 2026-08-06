@@ -199,6 +199,29 @@
         }
       }
     },
+    "answers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "question"
+        ],
+        "properties": {
+          "question": {
+            "type": "string",
+            "minLength": 1,
+            "$comment": "Otázka tak, jak si ji rešerše doopravdy klade — ne název pole v API."
+          },
+          "note": {
+            "type": "string",
+            "minLength": 1,
+            "$comment": "Čím je odpověď z tohoto pramene omezená, pokud to není zřejmé z doesNotProve."
+          }
+        }
+      },
+      "$comment": "Na které otázky tenhle pramen odpovídá. Katalog bez tohohle popisuje zdroje, ale nemapuje na ně otázky — a rešerše začíná otázkou, ne názvem registru. Generátor z toho staví směrovací tabulku, v níž primární prameny stojí před agregátory a médii."
+    },
     "publisherGroup": {
       "type": "string",
       "minLength": 1,

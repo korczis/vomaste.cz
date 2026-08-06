@@ -103,5 +103,23 @@
   "outlets": [
     "ARES (Ministerstvo financí ČR)",
     "ARES — Administrativní registr ekonomických subjektů (Ministerstvo financí ČR)"
+  ],
+  "answers": [
+    {
+      "question": "Kdo je jednatelem nebo členem statutárního orgánu firmy?"
+    },
+    {
+      "question": "Kdo drží v firmě obchodní podíl a jak velký?"
+    },
+    {
+      "question": "Existuje subjekt s tímhle IČO a co o něm rejstřík vede?"
+    },
+    {
+      "question": "V jakých rejstřících je subjekt vůbec zapsán?",
+      "note": "Pole `seznamRegistraci` odpoví předem a ušetří slepé dotazy."
+    },
+    {
+      "question": "Jaké má firma živnostenská oprávnění a předmět podnikání?"
+    }
   ]
 }
