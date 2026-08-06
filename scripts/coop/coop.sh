@@ -14,7 +14,7 @@ mkdir -p "$BUS_DIR"
 usage() {
   cat <<'EOF'
 usage: coop.sh <cmd>
-  status                     board + worktrees + poslední zprávy
+  status                     board + worktrees + build-lock stav + poslední zprávy
   send <to> <type> <task> [json-payload]
                              zapiš zprávu na sběrnici (payload musí být validní JSON objekt)
   inbox [n]                  zprávy adresované mně (COOP_AGENT_ID) a broadcasty (to:"*")
@@ -48,6 +48,22 @@ case "$cmd" in
   status)
     echo "== co-op status (agent: $AGENT) =="
     echo "-- worktrees --"; git worktree list
+    echo "-- build-lock (tento checkout: $ROOT) --"
+    if [ -f "$ROOT/.build-lock/owner.json" ]; then
+      node -e '
+        const o = JSON.parse(require("fs").readFileSync(process.argv[1], "utf8"));
+        let alive;
+        try { process.kill(o.pid, 0); alive = true; } catch (e) { alive = e.code === "EPERM"; }
+        const ageS = Math.round((Date.now() - o.startedAt) / 1000);
+        const cmd = Array.isArray(o.command) ? o.command.join(" ") : o.command;
+        console.log(
+          `drzi pid ${o.pid} (${alive ? "zivy" : "MRTVY — bude reklamovan dalsim acquireLock()"}), ` +
+          `${ageS}s, prikaz: ${cmd}`,
+        );
+      ' "$ROOT/.build-lock/owner.json" 2>/dev/null || echo "(owner.json nečitelný — sáhni si na .build-lock ručně)"
+    else
+      echo "volný"
+    fi
     echo "-- otevrene tasky (docs/coop/TASKS.md) --"
     grep -E '^\| T-' "$ROOT/docs/coop/TASKS.md" 2>/dev/null | grep -viE '\| *merged *\|' \
       || echo "(zadne)"
