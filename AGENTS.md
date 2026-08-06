@@ -1740,3 +1740,9 @@ odchodu z čela ODS (nástupem Martina Kupky v lednu 2026), doloženo
 oficiálním profilem na webu Poslanecké sněmovny a nezávislým
 zpravodajstvím. Hlubší investigativní rešerše jeho premiérského období
 nebo jiných kauz vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-06: Jana Černochová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-06:
+
+Jana Černochová je veřejná funkcionářka — bývalá ministryně obrany ČR a poslankyně Poslanecké sněmovny PČR za ODS, od 6. 3. 2026 předsedkyně sněmovního Výboru pro bezpečnost. Spadá do standing scope autorizace (AUTH-2026-08-05-PLATFORM-SCOPE) jako veřejná osoba působící ve veřejné funkci. Rozsah tohoto dossieru je omezen na základní, nekontroverzní fakta o jejím aktuálním politickém mandátu a funkci (poslanecký mandát, členství v poslaneckém klubu ODS, předsednictví bezpečnostního výboru), doložená přímo otevřenými veřejnými zdroji. Hlubší investigativní rešerše jejího ministerského působení nebo jiných témat vyžaduje samostatnou budoucí autorizaci.

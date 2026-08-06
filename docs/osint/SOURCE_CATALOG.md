@@ -197,13 +197,13 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 710 záznamů v 124 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 712 záznamů v 124 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
 | ctk | 291 | 21 | [ano](/zdroje/ctk/) |
 | seznam-zpravy | 38 | 13 | [ano](/zdroje/seznam-zpravy/) |
-| Poslanecká sněmovna Parlamentu ČR | 36 | 17 | [ano](/zdroje/psp-cz/) |
+| Poslanecká sněmovna Parlamentu ČR | 37 | 18 | [ano](/zdroje/psp-cz/) |
 | Vláda České republiky (vlada.gov.cz) | 28 | 17 | [ano](/zdroje/vlada-cz/) |
 | FORUM 24 | 20 | 10 | [ano](/zdroje/forum24/) |
 | denik-n | 17 | 9 | [ano](/zdroje/denik-n/) |
@@ -212,8 +212,8 @@ Dopočítáno z `data/dossiers/**/sources/**`, 710 záznamů v 124 rodinách/out
 | denik-cz | 11 | 6 | [ano](/zdroje/denik-cz/) |
 | Aktuálně.cz | 11 | 6 | [ano](/zdroje/aktualne-cz/) |
 | Česká justice | 11 | 6 | [ano](/zdroje/ceska-justice/) |
+| Novinky.cz | 10 | 9 | [ano](/zdroje/novinky-cz/) |
 | Ekonomický deník | 9 | 5 | [ano](/zdroje/ekonomicky-denik/) |
-| Novinky.cz | 9 | 8 | [ano](/zdroje/novinky-cz/) |
 | irozhlas | 8 | 6 | [ano](/zdroje/irozhlas/) |
 | hlidac-statu | 7 | 2 | [ano](/zdroje/hlidac-statu/) |
 | udhpsh | 6 | 1 | [ano](/zdroje/udhpsh/) |

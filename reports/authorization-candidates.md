@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 500 context entities across 28 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 499 context entities across 29 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -1538,17 +1538,6 @@ Generated from 500 context entities across 28 dossier(s). Regenerate with `npm r
 - Sources: SRC-21 (1 independent source family)
 - Relations:
   - edge-wintr-kompetencni-spor (jan-wintr -> kompetencni-spor-pl-us-16-26, "uplatnil odlišné stanovisko k rozhodnutí o předběžném opatření v kompetenčním sporu", dossier: jeronym-tejc)
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Jana Černochová (`jana-cernochova`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: jaromir-zuna
-- Claims: CLM-39
-- Sources: SRC-19, SRC-24, SRC-32 (3 independent source families)
-- Relations:
-  - edge-zuna-jana-cernochova (zuna -> jana-cernochova, "kritizoval nedostatečné povědomí předchůdkyně o obranném plánování a její souhlas s navýšením závazků vůči NATO o 200 procent", dossier: jaromir-zuna)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Jana Kotalíková (`jana-kotalikova`)

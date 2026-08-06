@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jana-cernochova/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jana-cernochova"
+  },
+  "title": "SRC-01 — Poslanecká sněmovna PČR (oficiální profil poslankyně)",
+  "description": "Oficiální profil poslankyně na webu Poslanecké sněmovny: mandát, klub, výbory.",
+  "outlet": "Poslanecká sněmovna Parlamentu ČR",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://www.psp.cz/sqw/detail.sqw?id=5903",
+  "retrieved": "2026-08-06",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jana-cernochova/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "jana-cernochova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil poslankyně na webu Poslanecké sněmovny PČR, otevřen a přečten 2026-08-06.\nUvádí mandát poslankyně od 4. 10. 2025, členství v Poslaneckém klubu ODS od 8. 10. 2025, členství ve Výboru pro obranu a ve Výboru pro bezpečnost (oba od 16. 1. 2026) a předsednictví Výboru pro bezpečnost od 6. 3. 2026. Dále uvádí členství v Podvýboru pro válečné veterány (od 4. 2. 2026) a ve Stálé komisi pro kontrolu činnosti Vojenského zpravodajství (od 16. 1. 2026).\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** — dokládá existenci a formulaci úředního údaje (mandát, klub, výbor, funkce), nikoli nezávislé redakční posouzení volby do funkce. Pro potvrzení okolností volby do čela výboru je nutný druhý, nezávislý zdroj (viz SRC-02)."
+    }
+  ],
+  "order": 1
+}
