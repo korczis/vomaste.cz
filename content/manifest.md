@@ -48,6 +48,9 @@ Každá položka musí být označena podle toho, čím skutečně je:
 
 Síla systému nespočívá v tom, že předstírá jistotu. Spočívá v tom, že přesně ukazuje, kde jistota existuje, kde neexistuje a z čeho závěr vychází.
 
+Co dossier na této úrovni skutečně je a co ne, rozvádí
+[Co je dossier?](@/koncepty/co-je-dossier.md).
+
 ---
 
 ## 2. Žádné tvrzení bez zdroje {#bod-2}
@@ -62,6 +65,9 @@ Počet článků rovněž nemusí znamenat počet nezávislých potvrzení. Text
 
 Kde zdroj chybí, tvrzení se odstraní nebo přesune mezi otevřené otázky.
 
+Přesná pravidla, co je „jmenovaný zdroj" a proč nestačí početní shoda
+přetištěných článků: [Zdrojováno](@/koncepty/zdrojovano.md).
+
 ---
 
 ## 3. Citace zůstává citací {#bod-3}
@@ -73,6 +79,9 @@ Citaci nezjemňujeme, nezostřujeme ani nepřepisujeme tak, aby lépe zapadala d
 Stejně tak odmítnutí obvinění není důkazem neviny a samotné obvinění není důkazem viny.
 
 Úkolem dossieru není tuto vzdálenost rétoricky překlenout. Úkolem je zachovat ji viditelnou.
+
+Jak se citace odlišuje od doloženého faktu a od parafráze:
+[Stav: citace](@/koncepty/stav-citace.md).
 
 ---
 
@@ -106,6 +115,8 @@ Registr mezer není vedlejší poznámka ani přiznání porážky. Je součást
 
 Poctivé „nevíme“ má větší hodnotu než sebevědomá spekulace. Veřejný prostor má sebevědomých spekulací dostatek i bez naší pomoci.
 
+Jak mezera vzniká a co (ne)znamená: [Registr mezer](@/koncepty/registr-mezer.md).
+
 ---
 
 ## 6. Rozlišujeme fakta, spory a názory {#bod-6}
@@ -117,6 +128,9 @@ Názor může být legitimní součástí veřejné diskuse, ale nesmí se přev
 Stejný princip platí pro sporná tvrzení. Pokud jsou zdroje v rozporu, rozpor se nesmí redakčně vyřešit pouhou volbou pohodlnější varianty.
 
 Systém musí zachovat nesoulad, ne jej zamést pod hladký odstavec.
+
+Tři stavy, tři různé významy: [Fakt odděleně od názoru](@/koncepty/fakt-oddelene-od-nazoru.md),
+[Stav: sporné](@/koncepty/stav-sporne.md), [Stav: názor](@/koncepty/stav-nazor.md).
 
 ---
 
@@ -161,6 +175,9 @@ Validace není kosmetická kontrola před nasazením. Je součástí redakční 
 
 Build, který projde, nedokazuje pravdivost světa. Dokazuje alespoň to, že zveřejněná struktura odpovídá vlastním pravidlům a neupadla do obvyklého lidského režimu „nějak to tam dej, později to opravíme“.
 
+Co konkrétně je strojově ověřitelné a co (zatím) není:
+[Strojově čitelná data](@/koncepty/strojove-citelna-data.md).
+
 ---
 
 ## 10. Změny musí mít historii {#bod-10}
@@ -181,6 +198,9 @@ Oprava není slabost systému. Neviditelná oprava je slabost systému.
 
 Důvěryhodnost nevzniká tvrzením, že se nikdy nemýlíme. Vzniká tím, že chybu lze zjistit, opravit a zpětně dohledat.
 
+Jak přesně to funguje na úrovni commitu a append-only historie:
+[Verzováno v Gitu](@/koncepty/verzovano-v-gitu.md).
+
 ---
 
 ## 11. Projekt musí být přenositelný {#bod-11}
@@ -196,6 +216,9 @@ Hosting je distribuční kanál, ne jediný nositel existence.
 Konkrétní repozitář je výchozí bod, ne ústřední chrám s právem určovat realitu.
 
 Fork není útok proti projektu. Je to jedna z jeho pojistek.
+
+Co přesně adopce/fork znamená v praxi — jeden vstupní bod, co se nastavuje
+a co si fork musí vyřešit sám: [Forkovatelnost a adopce](@/koncepty/forkovatelnost.md).
 
 ---
 
