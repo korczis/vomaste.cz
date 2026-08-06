@@ -10,6 +10,39 @@ Stavy: `todo → claimed → in-progress → review → merged`, kdykoliv
 nese štítek `[scope-check]` a před startem se ověřuje proti
 autorizačnímu logu v `AGENTS.md`.
 
+## Aktivní zadání: manifest deep-dive + docs onramp (2026-08-06)
+
+Zadání vlastníka: „výtazně rozšiř sekci a články — koncept, metodika,
+vše prolinkuj, rozděl práci na malé kroky a průběžně deploy" a
+navazující „důkladně rozviň manifesto, každý bod jedna stránka, více
+bodů, detailní popis, prolinkování, co bod to todo step, průběžně
+deploy". Čistě dokumentační/obsahová práce o systému samotném — žádný
+nový subjekt, žádná nová autorizace, autorizační log netknutý. Každý
+řádek níže je samostatný commit + build + merge + push cyklus, ověřený
+zeleně před deployem. (Poznámka: tenhle záznam byl jednou už zapsán a
+při souběžném řešení kolize tří misí na masteru se ztratil beze stopy v
+historii — zapsáno podruhé 2026-08-06.)
+
+| ID | Titul | Scope (soubory/sekce) | Branch | Owner | Stav | Závislosti | Akceptace |
+|----|-------|-----------------------|--------|-------|------|------------|-----------|
+| T-077 | Landing-page CTA "Jak přispět" mířila na raw GitHub markdown místo on-site renderované /dokumentace/prispivani.md; CONTRIBUTING.md nikdy nezmiňoval `npm run dev` (jediný příkaz na lokální preview bez forku/commitu) | `templates/index.html`, `CONTRIBUTING.md` | task/T-077-docs-onramp | ORCH | merged (7ecb84c7, fast-forward) | – | `npm run build` zelený (40/40, 183.8s) |
+| T-078 | Manifest §4 ("Procesní výsledek není věcný závěr") neměl vlastní koncept stránku — jen zmínku uvnitř registr-kauz.md | nová `content/koncepty/procesni-vysledek.md`, `manifest.md`, `registr-kauz.md`, `stav-sporne.md` (opravena nepřesná reference) | task/T-078-koncept-procesni-vysledek | ORCH | merged (0cf0fe44) | – | `npm run build` zelený (40/40, 602.7s) |
+| T-079 | Batch cross-link §1,2,3,5,6,9,10,11 na existující koncept stránky | `manifest.md` | task/T-079-manifest-crosslinks | ORCH | merged (1e77fe76) | – | `npm run build` zelený (40/40, 1376.5s — silná soutěž o build-lock); zjištěno a opraveno: §7 plánovaný odkaz na bezpecnostni-hranice.md byl špatná shoda (jiné téma), zaznamenáno jako nová stránka místo vynuceného špatného odkazu |
+| T-080 | Manifest §8 ("Rozsah musí být autorizovaný a dohledatelný") neměl vlastní koncept stránku | nová `content/koncepty/autorizace.md` (grounded v AGENTS.md "Standing scope authorization and publication gates"), `manifest.md` | task/T-080-koncept-autorizace | ORCH | merged (6a7c71f3) | – | `npm run build` zelený (41/41, 440.9s) |
+| T-081 | Manifest §7 ("Veřejný zájem není licence k bezbřehému sběru") — nová stránka místo T-079 chybného odhadu | nová `content/koncepty/tretiosoby.md` (grounded v AGENTS.md "Context entities are not coverage"), `manifest.md` | task/T-081-koncept-tretiosoby | ORCH | merged (f65f65e3, fast-forward) | – | `npm run build` zelený (41/41, 146.9s); vyřešen skutečný production incident na masteru (15 JSON-LD citation-integrity chyb v cizích dossierech adam-vojtech/oto-klempir/robert-plaga, nezpůsobeno tímto zadáním, opraveno jinou souběžnou session mezitím) |
+| T-082 | Manifest §12 ("Serverless není módní slovo") neměl vlastní koncept stránku | nová `content/koncepty/serverless.md`, `manifest.md`, `forkovatelnost.md` (reciproční odkaz) | task/T-082-koncept-serverless | ORCH | merged (d33c5340) | – | `npm run build` zelený (41/41, 213.5–224.6s) |
+| T-083 | Manifest §13 ("Autonomní neznamená bez odpovědnosti") neměl vlastní koncept stránku | nová `content/koncepty/autonomie-s-odpovednosti.md` (grounded v `docs/coop/PROTOCOL.md` single-writer pravidlu), `manifest.md` | task/T-083-koncept-autonomie | ORCH | merged (c01a011f, fast-forward) | – | `npm run build` zelený (41/41, 162.7–208.4s) |
+| T-085 | Manifest §14 ("Nezastavitelnost je vlastnost architektury") neměl vlastní koncept stránku; syntetizuje čtyři nezávislé body selhání (doména/hosting/provozovatel/repozitář) | nová `content/koncepty/nezastavitelnost.md`, `manifest.md`, `serverless.md` (dokončen odložený zpětný odkaz z T-082) | task/T-085-koncept-nezastavitelnost | ORCH | merged (027174d7) | – | `npm run build` zelený (41/41, 238.0–161.7s) |
+| T-086 | Manifest §15 ("Důvěru nemá vyžadovat značka") neměl vlastní koncept stránku — mapuje osm ověřovacích otázek z manifestu na konkrétní mechanismy jinde na webu | nová `content/koncepty/duvera-bez-znacky.md`, `manifest.md` | task/T-086-koncept-duvera | ORCH | merged (ebbf2bf5, fast-forward) | – | `npm run build` zelený (41/41, 159.1–162.7s); post-merge hook úspěšně auto-pushnul |
+| T-087 | Manifest §16 ("Otevřenost zahrnuje právo kritizovat i opravovat") neměl vlastní koncept stránku | nová `content/koncepty/pravo-opravit.md` (grounded v CONTRIBUTING.md), `manifest.md` | task/T-087-koncept-pravo-opravit | ORCH | merged (b1a54439, fast-forward) | – | `npm run build` zelený (41/41, 148.7–154.3s); nalezena a opravena TOML syntax chyba (neescapovaná uvozovka v description poli) |
+| T-088 | Manifest §17 ("Metodologie má přežít jednotlivé kauzy"), poslední číslovaný bod manifestu — dokončuje "každý bod = vlastní stránka, prolinkováno" napříč všemi 17 body (9 nových stránek §4,7,8,12,13,14,15,16,17; 8 bodů prolinkováno na existující stránky §1,2,3,5,6,9,10,11) | nová `content/koncepty/metodologie-prezije-kauzy.md`, `manifest.md` | task/T-088-koncept-metodologie-prezije | ORCH | merged (2649235e, fast-forward) | – | `npm run build` zelený (41/41, 147.3–150.8s); post-merge hook úspěšně auto-pushnul |
+| T-089 | Chybějící záznamy v katalogu toolingu (G1 brána): `dossier:next-id` a `verify:og` neměly odpovídající soubor v `data/tooling/` — objeveno jako červený build (nesouvisející se zbytkem tohohle zadání) při commitu tohoto řádku poprvé | nová `data/tooling/dossier-next-id.json`, `data/tooling/verify-og.json`, přegenerovaných 59 `content/dokumentace/prikazy/*.md` | – | ORCH | merged (895e9813, po srážce se souběžnou opravou) | – | `npm run verify:tooling-catalog` beze změny; `npm run build` zelený (41/43→43/43, 233.9s) |
+
+Všech 11 worktreů (T-077–T-088, mimo T-084 kvůli ID kolizi se souběžnou
+session) po mergi ověřeno jako ancestor `origin/master` a uklizeno
+(`git worktree remove` + `git branch -d`) — žádný cizí worktree jiné
+souběžné session nedotčen.
+
 ## Aktivní zadání: čtvrté kolo rešerší + provázání grafu (2026-08-02)
 
 Zadání vlastníka: „rozvin každý dossier, provaž" — prohloubit obsah
