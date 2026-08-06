@@ -85,6 +85,8 @@ Tento rozdíl musí být uveden pokaždé, kdy je příslušný výsledek zmín�
 vomaste.cz nebude vydávat procesní uzavření za očištění ani za potvrzení viny.
 
 Popíšeme, co instituce rozhodla, co neposuzovala a co zůstalo neuzavřené.
+Rozvedeno na vlastní stránce:
+[Procesní výsledek není věcný závěr](@/koncepty/procesni-vysledek.md).
 
 ---
 
