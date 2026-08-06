@@ -11,9 +11,9 @@
   },
   "title": "Veřejná trestní oznámení",
   "summary": "Dobové zpravodajství dokládá podání oznámení v několika veřejných kauzách. Samotné podání není důkazem viny dotčených osob ani osobního, obchodního či lobbistického vztahu.",
-  "period": "2008–2015",
-  "status": "status-single",
-  "statusLabel": "Doložena podání, nikoli vina třetích osob",
+  "period": "2008–2017",
+  "status": "status-corroborated",
+  "statusLabel": "Podání doložena, jedna kauza pravomocně skončila",
   "anchor": "kauza-verejna-trestni-oznameni",
   "claims": [
     {
@@ -21,6 +21,15 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-17"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-18"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-19"
     }
   ],
   "sources": [
@@ -29,6 +38,15 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-18"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-19"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-20"
     }
   ],
   "subjects": [

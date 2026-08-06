@@ -1,7 +1,61 @@
 {
-  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json", "schemaVersion": 1, "@context": "https://vomaste.cz/context/v1.jsonld",
-  "@id": "https://vomaste.cz/id/dossiers/james-quick/relations/edge-james-quick-vladimir-ruzicka", "@type": "vomaste:Relation", "recordType": "relation", "identifier": "edge-james-quick-vladimir-ruzicka", "relationId": "edge-james-quick-vladimir-ruzicka",
-  "dossier": { "@id": "https://vomaste.cz/id/dossiers/james-quick" }, "sourceEntity": { "@id": "https://vomaste.cz/id/entities/james-quick" }, "targetEntity": { "@id": "https://vomaste.cz/id/entities/vladimir-ruzicka" },
-  "relationType": "RESPONDED_TO", "label": "podal trestní oznámení v souvislosti s veřejnou kauzou", "status": "single", "claims": [{ "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-08" }], "sources": [{ "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-08" }], "subjects": ["james-quick"], "directed": true, "order": 6,
-  "content": [{ "type": "markdown", "value": "Veřejně doložená procesní reakce na sportovní kauzu. Hrana nevyjadřuje výsledek věci ani osobní či obchodní vztah mezi oběma osobami." }]
+ "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/dossiers/james-quick/relations/edge-james-quick-vladimir-ruzicka",
+ "@type": "vomaste:Relation",
+ "recordType": "relation",
+ "identifier": "edge-james-quick-vladimir-ruzicka",
+ "relationId": "edge-james-quick-vladimir-ruzicka",
+ "dossier": {
+  "@id": "https://vomaste.cz/id/dossiers/james-quick"
+ },
+ "sourceEntity": {
+  "@id": "https://vomaste.cz/id/entities/james-quick"
+ },
+ "targetEntity": {
+  "@id": "https://vomaste.cz/id/entities/vladimir-ruzicka"
+ },
+ "relationType": "RESPONDED_TO",
+ "label": "podal trestní oznámení; věc skončila pravomocným odsouzením za zpronevěru",
+ "status": "corroborated",
+ "claims": [
+  {
+   "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-08"
+  },
+  {
+   "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-17"
+  },
+  {
+   "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-18"
+  },
+  {
+   "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-19"
+  }
+ ],
+ "sources": [
+  {
+   "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-08"
+  },
+  {
+   "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-18"
+  },
+  {
+   "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-19"
+  },
+  {
+   "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-20"
+  }
+ ],
+ "subjects": [
+  "james-quick"
+ ],
+ "directed": true,
+ "order": 6,
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Veřejně doložená procesní reakce na sportovní kauzu, dovedená k pravomocnému výsledku: obžaloba, prvoinstanční rozsudek a zamítnuté odvolání. Hrana nevyjadřuje osobní ani obchodní vztah mezi oběma osobami — jen že oznámení vedlo k řízení, které skutečně proběhlo a skončilo."
+  }
+ ]
 }

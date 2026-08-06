@@ -100,7 +100,7 @@ Odpovídá na otázku „kam se podívat a čemu z toho věřit". Publikovaná p
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 680 záznamů v 114 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 683 záznamů v 115 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
@@ -110,7 +110,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 680 záznamů v 114 rodinách/out
 | Vláda České republiky (vlada.gov.cz) | 28 | 17 | [ano](/zdroje/vlada-cz/) |
 | FORUM 24 | 19 | 9 | [ano](/zdroje/forum24/) |
 | denik-n | 16 | 9 | [ano](/zdroje/denik-n/) |
-| ČT24 (Česká televize) | 14 | 7 | [ano](/zdroje/ceska-televize/) |
+| ČT24 (Česká televize) | 15 | 7 | [ano](/zdroje/ceska-televize/) |
 | Echo24 | 13 | 9 | [ano](/zdroje/echo24/) |
 | denik-cz | 11 | 6 | [ano](/zdroje/denik-cz/) |
 | Aktuálně.cz | 11 | 6 | [ano](/zdroje/aktualne-cz/) |
@@ -152,6 +152,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 680 záznamů v 114 rodinách/out
 | Olomoucký deník | 2 | 1 | — |
 | Pražský deník | 2 | 1 | — |
 | Registr lobbování (RELOB) | 2 | 1 | — |
+| Seznam Zprávy | 2 | 2 | [ano](/zdroje/seznam-zpravy/) |
 | Ústavní soud ČR | 2 | 2 | — |
 | Vrchní státní zastupitelství v Olomouci | 2 | 1 | — |
 | ct24 | 1 | 1 | [ano](/zdroje/ceska-televize/) |
@@ -184,6 +185,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 680 záznamů v 114 rodinách/out
 | Heroine.cz | 1 | 1 | — |
 | Info.cz | 1 | 1 | — |
 | iportal24.cz | 1 | 1 | — |
+| iSport.cz (Blesk) | 1 | 1 | — |
 | Jezdci.cz | 1 | 1 | — |
 | Kurzy.cz | 1 | 1 | — |
 | Lupa.cz | 1 | 1 | — |
@@ -203,7 +205,6 @@ Dopočítáno z `data/dossiers/**/sources/**`, 680 záznamů v 114 rodinách/out
 | Romea.cz | 1 | 1 | — |
 | Security magazín | 1 | 1 | — |
 | Senát Parlamentu České republiky | 1 | 1 | — |
-| Seznam Zprávy | 1 | 1 | [ano](/zdroje/seznam-zpravy/) |
 | silnice-zeleznice.cz | 1 | 1 | — |
 | Společnost pro obranu svobody projevu | 1 | 1 | — |
 | Taneční aktuality | 1 | 1 | — |
