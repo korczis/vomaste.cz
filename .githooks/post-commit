@@ -7,105 +7,21 @@
 # ze session 2026-08-05, kde ORCH stejnou sekvenci spouštěl ručně
 # opakovaně (viz docs/coop/PROTOCOL.md, „Automatický push po commitu").
 #
-# Bezpečnostní pojistky (v tomto pořadí, každá může tiše ukončit hook
-# bez chyby — post-commit nikdy nesmí commit samotný rozbít nebo
-# zablokovat):
-#   1. Nikdy uprostřed rebase/merge/cherry-pick/bisectu. post-commit se
-#      spouští i pro každý mezikrok "git rebase --continue" — bez tohohle
-#      by se hook snažil pushovat rozpracovaný, ještě neúplný rebase.
-#   2. Jen na branchi `master`. Workeři v task worktrees (task/T-###)
-#      nikdy nepushují přímo — single-writer pravidlo PROTOCOL.md.
-#   3. `COOP_NO_AUTOPUSH=1` — explicitní úniková cesta pro forky, ladění
-#      nebo vědomě rozpracovaný stav, který se ještě nemá dostat ven.
-#   4. Fetch/rebase na konfliktu se VZDÁ (rebase --abort) a nechá lokální
-#      commit nepushnutý — žádné automatické řešení konfliktů, to je
-#      vždy na člověku/agentovi (viz PROTOCOL.md pro recept na
-#      generované soubory: discovery-log.jsonl, reports/*, golden test).
-#   5. Před pushem musí projít CELÝ `npm run build` (ne jen rychlá
-#      pre-commit podmnožina) — červený build se nikdy nepushuje, protože
-#      push NA MASTER JE DEPLOY. Commit samotný zůstane lokálně beze
-#      ztráty práce, jen nepůjde ven automaticky.
-#   6. Push může prohrát závod s někým jiným — až 3 pokusy
-#      fetch+rebase+build+push, pak se hook vzdá se srozumitelnou hláškou.
+# Skutečná logika (guardy, fetch/rebase/build/push smyčka) žije ve
+# sdíleném .githooks/lib/auto-push-master.sh — od 2026-08-06 ji volá i
+# .githooks/post-merge, protože `git merge`/`git pull` spouští úplně
+# jiný pár hooků (pre-merge-commit/post-merge, ne pre-commit/post-commit)
+# a merge commity z workeřích větví jinak auto-push úplně obešly. Viz
+# tamní komentář pro celý dosavadní bezpečnostní kontrakt (rebase-guard,
+# jen master, COOP_NO_AUTOPUSH, nikdy nepushnout červený build, bounded
+# retry).
 #
 # Instalace: `git config core.hooksPath .githooks` (scripts/setup/
 # install-git-hooks.mjs, běží na `npm ci`/`npm install`, nebo ručně
 # `npm run hooks:install`) — stejný mechanismus jako .githooks/pre-commit.
 
 set -uo pipefail
-cd "$(git rev-parse --show-toplevel)"
-GIT_DIR="$(git rev-parse --git-dir)"
-
-if [ -d "$GIT_DIR/rebase-merge" ] || [ -d "$GIT_DIR/rebase-apply" ] \
-   || [ -f "$GIT_DIR/MERGE_HEAD" ] || [ -f "$GIT_DIR/CHERRY_PICK_HEAD" ] \
-   || [ -f "$GIT_DIR/BISECT_LOG" ]; then
-  exit 0
-fi
-
-branch="$(git symbolic-ref --quiet --short HEAD || true)"
-if [ "$branch" != "master" ]; then
-  exit 0
-fi
-
-if [ "${COOP_NO_AUTOPUSH:-}" = "1" ]; then
-  echo "post-commit: COOP_NO_AUTOPUSH=1 — auto-push přeskočen (commit zůstává lokální)." >&2
-  exit 0
-fi
-
-echo "post-commit: commit = push = deploy — fetch + rebase + npm run build + push origin/master…" >&2
-
-if ! git fetch origin master --quiet 2>/tmp/coop-post-commit.$$; then
-  echo "post-commit: 'git fetch origin master' selhal — pushni ručně, až bude síť/origin dostupný:" >&2
-  cat /tmp/coop-post-commit.$$ >&2 2>/dev/null || true
-  rm -f /tmp/coop-post-commit.$$
-  exit 0
-fi
-rm -f /tmp/coop-post-commit.$$
-
-max_attempts=3
-attempt=0
-while [ "$attempt" -lt "$max_attempts" ]; do
-  attempt=$((attempt + 1))
-
-  if ! git merge-base --is-ancestor origin/master HEAD 2>/dev/null; then
-    if ! GIT_EDITOR=true git rebase origin/master --quiet 2>/tmp/coop-post-commit.$$; then
-      git rebase --abort >/dev/null 2>&1 || true
-      echo "post-commit: rebase na origin/master narazil na konflikt — commit zůstává lokální." >&2
-      echo "  Vyřeš ručně (viz docs/coop/PROTOCOL.md, sekce Konflikty na generovaných souborech):" >&2
-      echo "    git fetch origin master && git rebase origin/master" >&2
-      cat /tmp/coop-post-commit.$$ >&2 2>/dev/null || true
-      rm -f /tmp/coop-post-commit.$$
-      exit 0
-    fi
-    rm -f /tmp/coop-post-commit.$$
-  fi
-
-  echo "post-commit: npm run build (plná brána, ne jen pre-commit podmnožina)…" >&2
-  npm run build 2>&1 | tee /tmp/coop-post-commit-build.$$ >&2
-  build_status="${PIPESTATUS[0]}"
-  if [ "$build_status" != "0" ]; then
-    echo "post-commit: 'npm run build' selhal PO rebase na aktuální origin/master." >&2
-    echo "  Push se NEPROVEDE — commit na masteru je červený a nesmí jít na deploy." >&2
-    echo "  Detail (znovu): tail -80 /tmp/coop-post-commit-build.$$" >&2
-    exit 0
-  fi
-  rm -f /tmp/coop-post-commit-build.$$
-
-  if git push origin master --quiet 2>/tmp/coop-post-commit-push.$$; then
-    rm -f /tmp/coop-post-commit-push.$$
-    echo "post-commit: pushnuto na origin/master — GitHub Pages CI (deploy.yml) se spouští automaticky." >&2
-    bash scripts/coop/coop.sh send "*" deploy "auto-push" \
-      "{\"note\":\"post-commit auto-push\",\"commit\":\"$(git rev-parse --short HEAD)\"}" \
-      2>/dev/null || true
-    exit 0
-  fi
-
-  echo "post-commit: push odmítnut (někdo mezitím pushnul) — pokus $attempt/$max_attempts, zkouším znovu…" >&2
-  cat /tmp/coop-post-commit-push.$$ >&2 2>/dev/null || true
-  rm -f /tmp/coop-post-commit-push.$$
-  git fetch origin master --quiet || true
-done
-
-echo "post-commit: push se nepodařil po $max_attempts pokusech (souběžné pushe) — pushni ručně:" >&2
-echo "  git fetch origin master && git rebase origin/master && npm run build && git push origin master" >&2
-exit 0
+HOOK_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# shellcheck source=lib/auto-push-master.sh
+source "$HOOK_DIR/lib/auto-push-master.sh"
+auto_push_master "post-commit"
