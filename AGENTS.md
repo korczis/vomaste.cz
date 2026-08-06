@@ -1760,3 +1760,16 @@ záměrně minimální: pouze základní, aktuální politicko-funkční fakta (
 klubová a výborová příslušnost, role stínového ministra), doložená přímo
 otevřenými zdroji. Nejde o investigativní rešerši jeho ministerského období
 ani jiných témat — hlubší témata vyžadují samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-06: Jan Skopeček
+
+Authorized by the site owner, explicitly and on the record, 2026-08-06:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jan Skopeček je veřejný
+funkcionář — poslanec Poslanecké sněmovny PČR za ODS, místopředseda
+Poslanecké sněmovny a stínový ministr financí ODS. Dossier je založen
+jako minimální, čistě biografický záznam pokrývající pouze jeho aktuální
+poslanecký mandát a tyto funkce, doložený přímo otevřenými zdroji
+(oficiální profil na psp.cz, nezávislé zpravodajství). Nejde o hloubkovou
+investigativní rešerši jiných témat; rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.

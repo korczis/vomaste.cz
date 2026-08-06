@@ -202,3 +202,10 @@ authorized_at = "2026-08-06"
 subjects = ["martin-baxa"]
 agents_md_section = "Scope extension, 2026-08-06: Martin Baxa"
 scope_summary = "Martin Baxa je veřejný funkcionář — bývalý ministr kultury ČR (2021–2025) a současný poslanec Poslanecké sněmovny PČR za ODS, člen sněmovního Výboru pro mediální záležitosti a předseda Podvýboru pro kulturu, v rámci stínové vlády ODS působící jako stínový ministr kultury. Spadá do standing scope autorizace (AUTH-2026-08-05-PLATFORM-SCOPE). Rozsah tohoto dossieru je záměrně minimální: pouze základní, aktuální politicko-funkční fakta (mandát, klubová a výborová příslušnost, role stínového ministra), doložená přímo otevřenými zdroji. Nejde o investigativní rešerši jeho ministerského období ani jiných témat — hlubší témata vyžadují samostatnou budoucí autorizaci."
+
+[[authorizations]]
+id = "AUTH-2026-08-06-JAN-SKOPECEK"
+authorized_at = "2026-08-06"
+subjects = ["jan-skopecek"]
+agents_md_section = "Scope extension, 2026-08-06: Jan Skopeček"
+scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jan Skopeček je veřejný funkcionář — poslanec Poslanecké sněmovny PČR za ODS, místopředseda Poslanecké sněmovny a stínový ministr financí ODS. Dossier je založen jako minimální, čistě biografický záznam pokrývající pouze jeho aktuální poslanecký mandát a tyto funkce, doložený přímo otevřenými zdroji (oficiální profil na psp.cz, nezávislé zpravodajství). Nejde o hloubkovou investigativní rešerši jiných témat; rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci."
