@@ -10,12 +10,36 @@
     "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
   },
   "title": "Dotace na toustový chléb (Penam/Agrofert)",
-  "summary": "Dotace na toustový chléb (Penam/Agrofert) — viz tvrzení CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07, CLM-08, CLM-09.",
+  "summary": "Dotace na toustový chléb (Penam/Agrofert) — Havlíčkovo dřívější odmítnutí závěrů auditu Evropské komise o Babišově střetu zájmů, jeho tvrzení o stovkách podobných sporů, odmítnutí komisí proplatit stomilionovou dotaci pekárně Penam, pozdější odnětí dotace ministerstvem, předběžný audit z roku 2019 a jeho vyřízení, i komentářová kritika FORUM 24 a europoslance Tomáše Zdechovského.",
   "period": "2026",
   "status": "status-single",
   "statusLabel": "Sledované téma",
   "anchor": "kauza-toustovy-chleb",
   "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-09"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-19"
     },
@@ -45,9 +69,30 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-28"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-47"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-49"
     }
   ],
   "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-06"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-11"
     },
@@ -61,13 +106,16 @@
       "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-14"
     },
     {
-      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-16"
-    },
-    {
       "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-15"
     },
     {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-16"
+    },
+    {
       "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-32"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-34"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-37"
