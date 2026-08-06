@@ -255,6 +255,10 @@ Odpovědnost za rozsah, zdroje a zveřejnění musí zůstat explicitní, dohled
 
 Systém bez ruční brzdy není autonomní epistemická infrastruktura. Je to jen velmi rychlý způsob, jak automatizovat cizí chyby.
 
+Kde přesně vede hranice mezi tím, co smí a nesmí automatizace rozhodnout,
+a jak to vypadá v praxi u tohoto repozitáře:
+[Autonomní neznamená bez odpovědnosti](@/koncepty/autonomie-s-odpovednosti.md).
+
 ---
 
 ## 14. Nezastavitelnost je vlastnost architektury {#bod-14}
