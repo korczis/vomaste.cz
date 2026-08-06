@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-cervicek/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-cervicek"
+  },
+  "title": "SRC-01 — Senát PČR: oficiální profil senátora Martina Červíčka",
+  "description": "Oficiální profilová stránka senátora na webu Senátu Parlamentu ČR s údaji o mandátu, obvodu a výborové příslušnosti.",
+  "outlet": "Senát Parlamentu České republiky",
+  "sourceType": "primární úřední záznam",
+  "url": "https://www.senat.cz/senatori/index.php?lng=cz&par_3=326",
+  "retrieved": "2026-08-06",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-cervicek/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "martin-cervicek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profilová stránka Martina Červíčka na webu Senátu Parlamentu ČR, otevřena a přečtena 2026-08-06.\nUvádí jeho příslušnost k ODS, volební obvod č. 47 (Náchod) a mandát 28. 9. 2024 – 28. 9. 2030, spolu s aktuální výborovou příslušností (místopředseda Výboru pro zahraniční věci, obranu a bezpečnost).\n\nPoznámka k typu zdroje a jeho limitům: primární úřední zdroj — zákonodárný sbor sám eviduje mandát a příslušnost svého člena, nejde o redakční zpravodajství. Nezávislé potvrzení senátorského mandátu a stranické příslušnosti viz SRC-02 (ČT24) a SRC-03 (Novinky.cz); roli stínového ministra vnitra dokládá SRC-03."
+    }
+  ],
+  "order": 1
+}

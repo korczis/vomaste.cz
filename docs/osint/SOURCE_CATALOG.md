@@ -197,7 +197,7 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 726 záznamů v 124 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 729 záznamů v 124 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
@@ -206,11 +206,11 @@ Dopočítáno z `data/dossiers/**/sources/**`, 726 záznamů v 124 rodinách/out
 | seznam-zpravy | 38 | 13 | [ano](/zdroje/seznam-zpravy/) |
 | Vláda České republiky (vlada.gov.cz) | 28 | 17 | [ano](/zdroje/vlada-cz/) |
 | FORUM 24 | 20 | 10 | [ano](/zdroje/forum24/) |
+| ČT24 (Česká televize) | 18 | 10 | [ano](/zdroje/ceska-televize/) |
 | denik-n | 17 | 9 | [ano](/zdroje/denik-n/) |
-| ČT24 (Česká televize) | 17 | 9 | [ano](/zdroje/ceska-televize/) |
 | Echo24 | 15 | 11 | [ano](/zdroje/echo24/) |
+| Novinky.cz | 13 | 12 | [ano](/zdroje/novinky-cz/) |
 | Aktuálně.cz | 12 | 7 | [ano](/zdroje/aktualne-cz/) |
-| Novinky.cz | 12 | 11 | [ano](/zdroje/novinky-cz/) |
 | denik-cz | 11 | 6 | [ano](/zdroje/denik-cz/) |
 | Česká justice | 11 | 6 | [ano](/zdroje/ceska-justice/) |
 | Ekonomický deník | 9 | 5 | [ano](/zdroje/ekonomicky-denik/) |
@@ -254,6 +254,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 726 záznamů v 124 rodinách/out
 | Olomoucký deník | 2 | 1 | — |
 | Pražský deník | 2 | 1 | — |
 | Registr lobbování (RELOB) | 2 | 1 | — |
+| Senát Parlamentu České republiky | 2 | 2 | — |
 | Seznam Zprávy | 2 | 2 | [ano](/zdroje/seznam-zpravy/) |
 | Ústavní soud ČR | 2 | 2 | — |
 | Vrchní státní zastupitelství v Olomouci | 2 | 1 | — |
@@ -310,7 +311,6 @@ Dopočítáno z `data/dossiers/**/sources/**`, 726 záznamů v 124 rodinách/out
 | Refresher.cz | 1 | 1 | — |
 | Romea.cz | 1 | 1 | — |
 | Security magazín | 1 | 1 | — |
-| Senát Parlamentu České republiky | 1 | 1 | — |
 | silnice-zeleznice.cz | 1 | 1 | — |
 | Společnost pro obranu svobody projevu | 1 | 1 | — |
 | Taneční aktuality | 1 | 1 | — |

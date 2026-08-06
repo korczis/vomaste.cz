@@ -1820,3 +1820,9 @@ průmyslu a obchodu), doloženo nezávislými zdroji (ČT24, Echo24) a
 vlastním profilem ODS. Nejde o investigativní rešerši žádné kauzy ani
 o rozšíření na jiná témata jeho veřejného působení — to by vyžadovalo
 samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-06: Martin Červíček
+
+Authorized by the site owner, explicitly and on the record, 2026-08-06:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Martin Červíček je veřejný funkcionář — senátor Parlamentu ČR za ODS (obvod č. 47 – Náchod, mandát 28. 9. 2024 – 28. 9. 2030), od ledna 2026 místopředseda ODS (zvolen na 32. kongresu ODS 18. 1. 2026) a od března 2026 stínový ministr vnitra ve stínové vládě ODS vedené Martinem Kupkou. Rozsah tohoto dossieru je záměrně minimální: pouze základní, aktuálně ověřený politický profil (senátorský mandát, funkce místopředsedy ODS a role stínového ministra vnitra), doložený přímo otevřenými zdroji (senat.cz, ČT24, Novinky.cz). Nejde o investigativní rešerši žádné kauzy ani jiného tématu z jeho dřívějšího policejního nebo krajského působení — to by vyžadovalo samostatnou budoucí autorizaci.
