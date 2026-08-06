@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 498 context entities across 31 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 497 context entities across 32 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -915,17 +915,6 @@ Generated from 498 context entities across 31 dossier(s). Regenerate with `npm r
 - Claims: CLM-30, CLM-44
 - Sources: SRC-25 (2 independent source families)
 - Relations: none
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Eva Decroix (`eva-decroix`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: jeronym-tejc
-- Claims: CLM-07, CLM-30, CLM-31, CLM-32
-- Sources: SRC-02, SRC-03, SRC-04, SRC-15, SRC-16 (2 independent source families)
-- Relations:
-  - edge-decroix-tejc (eva-decroix -> tejc, "Decroix veřejně reagovala na Tejcovo trestní oznámení v bitcoinové kauze", dossier: jeronym-tejc)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Eva Kropáčová (`eva-kropacova`)

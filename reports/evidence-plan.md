@@ -55,10 +55,10 @@ veškeré nedodělané zdrojovací práce.
 
 | Metrika | Hodnota |
 |---|---|
-| Dossierů | 31 |
-| Tvrzení | 976 |
-| — z toho `E0` / `E1` / `E1+` / `E2` | 0 / 556 / 92 / 328 |
-| Zdrojů (z toho s vyplněnou `sourceFamily`) | 716 (391) |
+| Dossierů | 32 |
+| Tvrzení | 977 |
+| — z toho `E0` / `E1` / `E1+` / `E2` | 0 / 556 / 92 / 329 |
+| Zdrojů (z toho s vyplněnou `sourceFamily`) | 718 (391) |
 | Kauz | 94 |
 | Mezer celkem / otevřených / zastaralých | 204 / 202 / 0 |
 | Vztahů | 334 |
@@ -92,13 +92,14 @@ veškeré nedodělané zdrojovací práce.
 | 22 | [Martin Pavlík](../data/dossiers/martin-pavlik/) `martin-pavlik` | **nízká** | 14 | 1.0 % | 99.7 % | 7 | 0/4/3/0 | 2 | 0 | 2026-08-05 |
 | 23 | [Petr Vencálek](../data/dossiers/petr-vencalek/) `petr-vencalek` | **nízká** | 3 | 0.2 % | 99.9 % | 3 | 0/1/0/2 | 1 | 2 | 2026-08-01 |
 | 24 | [Petr Pavel](../data/dossiers/petr-pavel/) `petr-pavel` | **nízká** | 2 | 0.1 % | 100.0 % | 3 | 0/1/0/2 | 0 | 0 | 2026-08-01 |
-| 25 | [Filip Turek](../data/dossiers/filip-turek/) `filip-turek` *(view)* | **žádná** | 0 | 0.0 % | 100.0 % | 0 | 0/0/0/0 | 0 | 0 | 2026-07-29 |
-| 26 | [Jan Skopeček](../data/dossiers/jan-skopecek/) `jan-skopecek` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 2 | 2026-08-06 |
-| 27 | [Jana Černochová](../data/dossiers/jana-cernochova/) `jana-cernochova` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 2 | 2026-08-06 |
-| 28 | [Martin Baxa](../data/dossiers/martin-baxa/) `martin-baxa` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 2 | 2026-08-06 |
-| 29 | [Martin Kupka](../data/dossiers/martin-kupka/) `martin-kupka` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 1 | 2026-08-06 |
-| 30 | [Petr Fiala](../data/dossiers/petr-fiala/) `petr-fiala` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 2 | 2026-08-06 |
-| 31 | [Petr Macinka](../data/dossiers/petr-macinka/) `petr-macinka` *(view)* | **žádná** | 0 | 0.0 % | 100.0 % | 0 | 0/0/0/0 | 0 | 0 | 2026-07-29 |
+| 25 | [Eva Decroix](../data/dossiers/eva-decroix/) `eva-decroix` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 2 | 2026-08-06 |
+| 26 | [Filip Turek](../data/dossiers/filip-turek/) `filip-turek` *(view)* | **žádná** | 0 | 0.0 % | 100.0 % | 0 | 0/0/0/0 | 0 | 0 | 2026-07-29 |
+| 27 | [Jan Skopeček](../data/dossiers/jan-skopecek/) `jan-skopecek` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 2 | 2026-08-06 |
+| 28 | [Jana Černochová](../data/dossiers/jana-cernochova/) `jana-cernochova` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 2 | 2026-08-06 |
+| 29 | [Martin Baxa](../data/dossiers/martin-baxa/) `martin-baxa` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 2 | 2026-08-06 |
+| 30 | [Martin Kupka](../data/dossiers/martin-kupka/) `martin-kupka` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 1 | 2026-08-06 |
+| 31 | [Petr Fiala](../data/dossiers/petr-fiala/) `petr-fiala` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 2 | 2026-08-06 |
+| 32 | [Petr Macinka](../data/dossiers/petr-macinka/) `petr-macinka` *(view)* | **žádná** | 0 | 0.0 % | 100.0 % | 0 | 0/0/0/0 | 0 | 0 | 2026-07-29 |
 
 ## Plán per dossier
 
@@ -512,7 +513,21 @@ Další krok:
 
 - 1 tvrzení stojí na jediném zdroji (např. CLM-02) → dohledat druhého, nezávislého vydavatele
 
-### 25. Filip Turek — `filip-turek`
+### 25. Eva Decroix — `eva-decroix`
+
+**Priorita žádná** · 0 bodů (0.0 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-06`, revidováno `—`
+
+| Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
+|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 0 | 0 | 0 | 1 | 2 | 0 | 0 | 0 (0) | 0 |
+
+Deklarované stavy: CORROBORATED 1
+
+Další krok:
+
+- 2 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
+
+### 26. Filip Turek — `filip-turek`
 
 > Entity view kanonického dossieru `macinka-turek` — vlastní registry nemá,
 > jeho evidence se počítá tam a tady se nezdvojuje.
@@ -527,7 +542,7 @@ Další krok:
 
 - žádný odvozený krok — každé tvrzení má nezávislé doložení a žádná mezera není otevřená
 
-### 26. Jan Skopeček — `jan-skopecek`
+### 27. Jan Skopeček — `jan-skopecek`
 
 **Priorita žádná** · 0 bodů (0.0 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-06`, revidováno `—`
 
@@ -541,7 +556,7 @@ Další krok:
 
 - 2 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
 
-### 27. Jana Černochová — `jana-cernochova`
+### 28. Jana Černochová — `jana-cernochova`
 
 **Priorita žádná** · 0 bodů (0.0 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-06`, revidováno `—`
 
@@ -555,7 +570,7 @@ Další krok:
 
 - 2 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
 
-### 28. Martin Baxa — `martin-baxa`
+### 29. Martin Baxa — `martin-baxa`
 
 **Priorita žádná** · 0 bodů (0.0 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-06`, revidováno `—`
 
@@ -569,7 +584,7 @@ Další krok:
 
 - 2 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
 
-### 29. Martin Kupka — `martin-kupka`
+### 30. Martin Kupka — `martin-kupka`
 
 **Priorita žádná** · 0 bodů (0.0 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-06`, revidováno `—`
 
@@ -583,7 +598,7 @@ Další krok:
 
 - 1 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
 
-### 30. Petr Fiala — `petr-fiala`
+### 31. Petr Fiala — `petr-fiala`
 
 **Priorita žádná** · 0 bodů (0.0 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-06`, revidováno `—`
 
@@ -597,7 +612,7 @@ Další krok:
 
 - 2 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
 
-### 31. Petr Macinka — `petr-macinka`
+### 32. Petr Macinka — `petr-macinka`
 
 > Entity view kanonického dossieru `macinka-turek` — vlastní registry nemá,
 > jeho evidence se počítá tam a tady se nezdvojuje.

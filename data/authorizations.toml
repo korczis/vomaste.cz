@@ -209,3 +209,10 @@ authorized_at = "2026-08-06"
 subjects = ["jan-skopecek"]
 agents_md_section = "Scope extension, 2026-08-06: Jan Skopeček"
 scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jan Skopeček je veřejný funkcionář — poslanec Poslanecké sněmovny PČR za ODS, místopředseda Poslanecké sněmovny a stínový ministr financí ODS. Dossier je založen jako minimální, čistě biografický záznam pokrývající pouze jeho aktuální poslanecký mandát a tyto funkce, doložený přímo otevřenými zdroji (oficiální profil na psp.cz, nezávislé zpravodajství). Nejde o hloubkovou investigativní rešerši jiných témat; rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci."
+
+[[authorizations]]
+id = "AUTH-2026-08-06-EVA-DECROIX"
+authorized_at = "2026-08-06"
+subjects = ["eva-decroix"]
+agents_md_section = "Scope extension, 2026-08-06: Eva Decroix"
+scope_summary = "Eva Decroix je veřejná funkcionářka — bývalá ministryně spravedlnosti (10. 6. 2025 – 15. 12. 2025), nyní poslankyně Poslanecké sněmovny PČR za ODS a místopředsedkyně poslaneckého klubu ODS, v rámci stínové vlády ODS působící jako stínová ministryně spravedlnosti. Spadá do standing scope autorizace (AUTH-2026-08-05-PLATFORM-SCOPE) jako veřejná osoba působící ve veřejné funkci.  Rozsah tohoto dossieru je záměrně minimální: pouze základní, aktuálně ověřený politický profil (poslanecký mandát, členství a funkce v poslaneckém klubu ODS, role stínové ministryně spravedlnosti), doložený přímo otevřenými zdroji (psp.cz, nezávislé zpravodajství). Nejde o investigativní rešerši jejího ministerského působení ani žádné kauzy — to by vyžadovalo samostatnou budoucí autorizaci."

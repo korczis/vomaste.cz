@@ -1773,3 +1773,11 @@ poslanecký mandát a tyto funkce, doložený přímo otevřenými zdroji
 (oficiální profil na psp.cz, nezávislé zpravodajství). Nejde o hloubkovou
 investigativní rešerši jiných témat; rozšíření rozsahu vyžaduje
 samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-06: Eva Decroix
+
+Authorized by the site owner, explicitly and on the record, 2026-08-06:
+
+Eva Decroix je veřejná funkcionářka — bývalá ministryně spravedlnosti (10. 6. 2025 – 15. 12. 2025), nyní poslankyně Poslanecké sněmovny PČR za ODS a místopředsedkyně poslaneckého klubu ODS, v rámci stínové vlády ODS působící jako stínová ministryně spravedlnosti. Spadá do standing scope autorizace (AUTH-2026-08-05-PLATFORM-SCOPE) jako veřejná osoba působící ve veřejné funkci.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní, aktuálně ověřený politický profil (poslanecký mandát, členství a funkce v poslaneckém klubu ODS, role stínové ministryně spravedlnosti), doložený přímo otevřenými zdroji (psp.cz, nezávislé zpravodajství). Nejde o investigativní rešerši jejího ministerského působení ani žádné kauzy — to by vyžadovalo samostatnou budoucí autorizaci.
