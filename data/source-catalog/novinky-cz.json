@@ -8,6 +8,7 @@
   "identifier": "novinky-cz",
   "title": "Novinky.cz",
   "operator": "Seznam.cz, a.s. (obsah deníku Právo vydává Borgis a.s.)",
+  "publisherGroup": "seznam",
   "kind": "media",
   "jurisdiction": "CZ",
   "access": "open",
