@@ -1,0 +1,213 @@
+# Sociální a SEO metadata — deklarativní konfigurace.
+#
+# JEDINÝ zdroj pravdy o tom, co jde do `<meta property="og:*">`,
+# `<meta name="twitter:*">`, kanonického odkazu a do STRÁNKOVÉHO uzlu
+# JSON-LD (`@graph[0]`). Do 2026-08-06 byly tyhle hodnoty poskládané
+# z ~22 řádků vnořených `default(value=…)` řetězců přímo v
+# `templates/base.html`; jediné místo, kde se dalo zjistit, jaký `og:type`
+# dostane stránka tvrzení, byl `if` uprostřed šablony — a ten se rozešel
+# s daty (viz `rel_id` níže), aniž by to cokoli zachytilo.
+#
+# Kdo to čte:
+#   templates/base.html            — rozloží front matter na skaláry a zavolá makra
+#   templates/macros/meta.html     — vykreslí OG / Twitter / kanonický blok
+#   templates/partials/jsonld.html — stránkový uzel JSON-LD ze STEJNÝCH hodnot
+#   scripts/build/verify-og.mjs    — po `zola build` ověří výsledek proti tomuhle souboru
+#
+# Co NENÍ tady: `base_url`, `title`, `description`, `lang`, `author`,
+# `keywords`, `index` — ty vlastní `config.toml`, protože je čte i Zola
+# sama (routing, `get_url`, `<html lang>`, robots). Duplikovat je sem by
+# založilo druhý zdroj pravdy, což je přesně to, co tenhle soubor ruší.
+
+[site]
+# Musí být `language_TERRITORY` (cs_CZ), ne holý jazykový kód — Facebook
+# i LinkedIn holé "cs" ignorují. `lang` (cs) pro `<html lang>` zůstává
+# v config.toml, protože ho Zola používá i mimo metadata.
+locale = "cs_CZ"
+
+# Jednojazyčný web: žádné `og:locale:alternate` ani `<link rel="alternate"
+# hreflang>`. Prázdný seznam není opomenutí — je to tvrzení, že jiná
+# jazyková varianta neexistuje.
+#
+# Až vznikne, dostane každá položka klíče `locale` (do
+# `og:locale:alternate`), `hreflang` a `url`; makra `meta::open_graph`
+# a `meta::canonical` je začnou vydávat bez zásahu do šablon. Poctivá
+# poznámka: `scripts/build/seo-config.mjs` dnes umí jen pole řetězců,
+# takže strukturovaná položka si vyžádá i rozšíření parseru a jeho testu
+# — není to dnes hotová schopnost, jen připravené místo.
+alternate_locales = []
+
+# Twitter/X karta: `summary_large_image` má smysl jen když stránka
+# opravdu posílá obrázek; bez něj se karta degraduje na `summary`.
+twitter_card = "summary_large_image"
+twitter_card_without_image = "summary"
+
+# Výchozí náhledová karta webu (1200×630 JPEG, ne screenshot) — generuje
+# `scripts/og/build-og-images.mjs`. LinkedIn/Facebook SVG nevykreslují,
+# proto rastr. Cesta je relativní ke `static/`; `get_url()` z ní dělá
+# absolutní URL (relativní `og:image` sociální sítě nezobrazí, což
+# `verify-og.mjs` hlídá).
+og_image = "images/og/site.jpg"
+og_image_width = 1200
+og_image_height = 630
+og_image_type = "image/jpeg"
+og_image_alt = "vomaste.cz — Open Intelligence Commons. Nevěřte autorovi, zkontrolujte data, zdroje a historii změn."
+
+[title]
+# Oddělovač všech skládaných titulků (sociální i `<title>`).
+separator = " — "
+# Doplněk k `<title>` na úvodní stránce: samotné „vomaste.cz" ve výsledku
+# vyhledávání neřekne, co web je. Podstránky ho nepoužívají.
+tagline = "dohledatelné dossiery ve veřejném zájmu"
+# Disambiguace: bez ní má /dossiers/<A>/claims/ i /dossiers/<B>/claims/
+# doslova týž titulek („Registr tvrzení") a tvrzení „CLM-01" existuje
+# v každém dossieru — napříč webem tedy stovky stránek se shodným
+# titulkem. Doplňuje se jen tam, kde titulek jméno dossieru ještě nenese
+# (registrové sekce entity dossieru se jmenují už samy „Tvrzení — Filip
+# Turek", jinak by vzniklo „… — Filip Turek — Filip Turek").
+dossier_disambiguation = true
+# `og:site_name` a přípona `<title>` se berou z `config.title` — název
+# webu je jeden a Zola ho už zná.
+
+[description]
+# Doplněk k popisu registrových indexů: jejich `description` je generický
+# text sdílený všemi dossiery („Registr tvrzení dossieru — …"), takže
+# bez tohohle by měly stovky stránek shodný náhled. U záznamu je
+# `description` jeho vlastní text a doplňovat není co.
+dossier_suffix = "Dossier: {label}."
+
+[limits]
+# Meze v ZNACÍCH výsledné hodnoty (včetně případné výpustky „…", kterou
+# přidá zkrácení). Nejsou to doporučení — `templates/macros/meta.html`
+# na ně zkracuje a `scripts/build/verify-og.mjs` je po buildu vynucuje,
+# takže se nemůžou rozejít.
+#
+# Platformy ořezávají ještě dřív (FB/LinkedIn ukazují ~90 znaků titulku,
+# ~200 popisu); tyhle meze jsou horní strop, ne cílová délka. Titulek
+# 234 znaků (nejdelší vztahový záznam před T-076) je v náhledu k ničemu
+# a v `<title>` škodí.
+title_max = 120
+description_max = 201
+# Prázdný titulek nebo popis je vždy chyba — náhled bez nich je prázdná
+# karta s holou URL.
+title_min = 1
+description_min = 1
+
+[enforce]
+# Povinná sada značek na KAŽDÉ routované stránce. Vynucuje
+# `scripts/build/verify-og.mjs`; výjimku mají jen přesměrovací stuby
+# aliasů Zoly (stejná výjimka jako ve `verify-jsonld.mjs`).
+required_og = [
+  "og:title",
+  "og:description",
+  "og:type",
+  "og:url",
+  "og:image",
+  # Alt je součástí úplné sady, ne bonus: náhledová karta je pro čtečku
+  # obrazovky jinak neoznačený obrázek.
+  "og:image:alt",
+  "og:locale",
+  "og:site_name",
+]
+required_twitter = ["twitter:card"]
+
+# Stránky bez vlastní kanonické URL. `/404.html` není routovaný záznam —
+# Zola pro něj nemá `current_url`, a vydávat kanonický odkaz na chybovou
+# stránku by ji přihlásilo do indexu jako regulérní obsah. Zbytek povinné
+# sady (titulek, popis, obrázek, locale, karta) se u ní vynucuje normálně.
+without_canonical = ["404.html"]
+
+# ---------------------------------------------------------------------------
+# Typ stránky → og:type + výchozí schema.org typ
+# ---------------------------------------------------------------------------
+# Klíč je `record_type` z front matter (u dossieru zpřesněný o
+# `dossier_type`), sestavuje ho `templates/base.html`. Neznámý klíč padá
+# na `default` — a `verify-og.mjs` navíc kontroluje OBĚMA směry, že každý
+# `record_type` použitý v `content/**` má tady záznam a každý záznam tady
+# je v datech použitý (stejné pravidlo jako u `data/entity-types.toml`).
+# Mrtvý ani chybějící typ tedy neprojde buildem.
+#
+# `seo_type` je jen VÝCHOZÍ hodnota — front matter stránky/sekce má vždy
+# přednost (registrové indexy si drží `CollectionPage`, hlavní stránka
+# entity dossieru `ProfilePage`).
+#
+# Historie: do T-076 se `og:type` rozhodoval podle přítomnosti
+# `page.extra.clm_id|src_id|case_id|gap_id|relation_id`. Front matter
+# vztahů ale nese `rel_id`, ne `relation_id` — všech 334 stránek vztahů
+# tedy tiše dostávalo `website` místo `article`. Klíčem je proto
+# `record_type`, který generátor obsahu vyplňuje u každého záznamu.
+
+[page_types.default]
+og_type = "website"
+seo_type = "WebPage"
+
+[page_types.not_found]
+og_type = "website"
+seo_type = "WebPage"
+# Bez tohohle přebírá /404.html titulek i popis webu (`config.title`
+# fallback) a v náhledu na sociální síti se tváří jako úvodní stránka.
+title = "Stránka nenalezena"
+description = "Tahle stránka na vomaste.cz neexistuje — nebo ještě ne. Staré adresy záznamů přesměrováváme."
+
+# Záznamy registrů: samostatná stránka jednoho záznamu je článek, ne web.
+[page_types.claim]
+og_type = "article"
+seo_type = "WebPage"
+
+[page_types.source]
+og_type = "article"
+seo_type = "WebPage"
+
+[page_types.case]
+og_type = "article"
+seo_type = "WebPage"
+
+[page_types.gap]
+og_type = "article"
+seo_type = "WebPage"
+
+[page_types.relation]
+og_type = "article"
+seo_type = "WebPage"
+
+# Hlavní stránka dossieru. `profile` je v OG slovníku typ pro osobu —
+# proto ho dostává jen entity dossier o reálné osobě; agregátní pohled
+# osobou není a nikdy ji nepředstírá (stejná hranice, jakou drží
+# `Person` markup ve `partials/jsonld.html`).
+[page_types."dossier.entity"]
+og_type = "profile"
+seo_type = "ProfilePage"
+
+[page_types."dossier.aggregate"]
+og_type = "website"
+seo_type = "WebPage"
+
+# Globální registr entit: entita může být firma, událost i řízení, ne jen
+# osoba — `profile` by u nich lhal. Záměrně `website`.
+[page_types.entity]
+og_type = "website"
+seo_type = "WebPage"
+
+[page_types.sourceCatalogEntry]
+og_type = "website"
+seo_type = "WebPage"
+
+[page_types.sourceCatalogIndex]
+og_type = "website"
+seo_type = "WebPage"
+
+# ---------------------------------------------------------------------------
+# Náhledová karta dossieru
+# ---------------------------------------------------------------------------
+# Každá stránka uvnitř dossieru dostává kartu svého dossieru; zbytek webu
+# kartu webu (`site.og_image`). `{slug}` / `{label}` doplní makro.
+# Existenci souboru hlídá `validate-dossier-types.mjs` před buildem a
+# `verify-og.mjs` po něm (nad vydaným stromem, tj. i pro kartu webu).
+[dossier_image]
+path_template = "images/og/{slug}.jpg"
+# Alt musí popisovat OBRÁZEK, který stránka opravdu posílá. Do T-076 šel
+# na každou stránku alt karty webu, i když `og:image` byla karta
+# dossieru — čtečka obrazovky tedy v náhledu dostala popis něčeho jiného,
+# než co je vidět.
+alt_template = "Náhledová karta dossieru {label} na vomaste.cz: jméno subjektu a počty tvrzení, zdrojů, kauz a otevřených mezer."
+alt_fallback = "Náhledová karta dossieru na vomaste.cz: jméno subjektu a počty tvrzení, zdrojů, kauz a otevřených mezer."
