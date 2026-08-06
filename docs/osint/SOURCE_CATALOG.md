@@ -6,6 +6,102 @@ Odpovídá na otázku „kam se podívat a čemu z toho věřit". Publikovaná p
 
 **Pravidlo, které z katalogu plyne**: doklad je vždy primární registr. Agregátor je rozcestník — ukáže, kde hledat, ale cituje se ten registr, na který ukazuje.
 
+## Na co se ptáš
+
+Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé otázky seřazené tak, že první je ten, kterým se má začít — primární registry a listiny před agregátory a médii.
+
+**Bere tenhle subjekt peníze z veřejných rozpočtů?**
+
+- [Registr smluv (ISRS)](/zdroje/registr-smluv/) — primární registr
+
+**Byla zakázka zrušena, opravena, nebo zadána?**
+
+- [Věstník veřejných zakázek (VVZ)](/zdroje/vestnik-verejnych-zakazek/) — primární registr
+
+**Daroval tenhle člověk nebo firma politické straně?**
+
+- [ÚDHPSH — Úřad pro dohled nad hospodařením politických stran a politických hnutí](/zdroje/udhpsh/) — primární registr
+
+**Dostala strana od úřadu sankci?**
+
+- [ÚDHPSH — Úřad pro dohled nad hospodařením politických stran a politických hnutí](/zdroje/udhpsh/) — primární registr
+
+**Existuje subjekt s tímhle IČO a co o něm rejstřík vede?**
+
+- [ARES — Administrativní registr ekonomických subjektů](/zdroje/ares/) — primární registr
+
+**Jak probíhalo konkrétní zadávací řízení?**
+
+- [Věstník veřejných zakázek (VVZ)](/zdroje/vestnik-verejnych-zakazek/) — primární registr. Jen podle čísla zakázky nebo formuláře — filtr na dodavatele věstník neumí.
+
+**Jaké má firma živnostenská oprávnění a předmět podnikání?**
+
+- [ARES — Administrativní registr ekonomických subjektů](/zdroje/ares/) — primární registr
+
+**Kdo drží v firmě obchodní podíl a jak velký?**
+
+- [ARES — Administrativní registr ekonomických subjektů](/zdroje/ares/) — primární registr
+
+**Kdo financuje politickou stranu?**
+
+- [ÚDHPSH — Úřad pro dohled nad hospodařením politických stran a politických hnutí](/zdroje/udhpsh/) — primární registr
+
+**Kdo je jednatelem nebo členem statutárního orgánu firmy?**
+
+- [ARES — Administrativní registr ekonomických subjektů](/zdroje/ares/) — primární registr
+
+**Kolik smluv s veřejným zadavatelem má?**
+
+- [Registr smluv (ISRS)](/zdroje/registr-smluv/) — primární registr. Počet ano; souhrnnou částku formulář nedá, viz pasti.
+
+**Má subjekt datovou schránku?**
+
+- [Informační systém datových schránek (ISDS)](/zdroje/datove-schranky/) — primární registr. Zjistíš z výpisu ARES (ROS), ne dotazem na ISDS — zpětné vyhledání neexistuje.
+
+**S kterými úřady a státními podniky má uzavřené smlouvy?**
+
+- [Registr smluv (ISRS)](/zdroje/registr-smluv/) — primární registr
+
+**V jakých rejstřících je subjekt vůbec zapsán?**
+
+- [ARES — Administrativní registr ekonomických subjektů](/zdroje/ares/) — primární registr. Pole `seznamRegistraci` odpoví předem a ušetří slepé dotazy.
+
+**Vlastní tenhle člověk nemovitosti?**
+
+- [Katastr nemovitostí (ČÚZK)](/zdroje/katastr-nemovitosti/) — primární registr. Veřejně a bezplatně NELZE zjistit podle osoby. Odpověď na tuhle otázku tímhle pramenem nezískáš.
+
+**Co přesně řekl ve sněmovně?**
+
+- [Poslanecká sněmovna Parlamentu ČR](/zdroje/psp-cz/) — primární listina. Stenozáznam, ne novinová parafráze.
+
+**Co vláda rozhodla a kdy?**
+
+- [Vláda České republiky](/zdroje/vlada-cz/) — primární listina. Cituj usnesení s číslem a datem, ne tiskovou zprávu o něm.
+
+**Jak firma hospodařila?**
+
+- [Sbírka listin veřejného rejstříku](/zdroje/justice-sbirka-listin/) — primární listina. Účetní závěrka, pokud byla založena — část subjektů lhůty nedodržuje.
+
+**Jak poslanec hlasoval?**
+
+- [Poslanecká sněmovna Parlamentu ČR](/zdroje/psp-cz/) — primární listina
+
+**Jak zněla zakladatelská listina nebo smlouva o převodu podílu?**
+
+- [Sbírka listin veřejného rejstříku](/zdroje/justice-sbirka-listin/) — primární listina
+
+**Je tenhle Jan Novák tentýž člověk ve dvou firmách?**
+
+- [Sbírka listin veřejného rejstříku](/zdroje/justice-sbirka-listin/) — primární listina. Jediný veřejný pramen, který spolehlivě odliší jmenovce.
+
+**Jaké má osoba rejstříkové vazby?**
+
+- [Podnikatel.cz — rejstříkové profily](/zdroje/podnikatel-cz-rejstrik/) — agregátor. Rychlý přehled jako vstupní stopa; doložení pořiď znovu z ARES.
+
+**Kde vůbec začít hledat stopu subjektu?**
+
+- [Hlídač státu](/zdroje/hlidac-statu/) — agregátor. Rozcestník. Nalezené vždy dohledej v primárním registru a cituj ten.
+
 ## Registry a nástroje
 
 | Zdroj | Typ | Přístup | Kde |

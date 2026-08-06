@@ -41,5 +41,11 @@
   ],
   "outlets": [
     "Podnikatel.cz"
+  ],
+  "answers": [
+    {
+      "question": "Jaké má osoba rejstříkové vazby?",
+      "note": "Rychlý přehled jako vstupní stopa; doložení pořiď znovu z ARES."
+    }
   ]
 }

@@ -43,5 +43,14 @@
       "type": "markdown",
       "value": "Věstník je primární evidence zadávacích řízení. Jeho jednostránková aplikace stojí na veřejném, neautentizovaném JSON API, které lze číst přímo.\n\nTiché ignorování filtrů je nejnebezpečnější vlastnost tohoto zdroje: nevrací chybu, vrací data. Odpověď na otázku, kterou služba neumí zodpovědět, je proto nutné **odmítnout**, ne aproximovat — jinak se z nefiltrovaného výpisu stane „zjištění\"."
     }
+  ],
+  "answers": [
+    {
+      "question": "Jak probíhalo konkrétní zadávací řízení?",
+      "note": "Jen podle čísla zakázky nebo formuláře — filtr na dodavatele věstník neumí."
+    },
+    {
+      "question": "Byla zakázka zrušena, opravena, nebo zadána?"
+    }
   ]
 }

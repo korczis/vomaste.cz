@@ -54,5 +54,17 @@
   ],
   "outlets": [
     "Registr smluv (Ministerstvo vnitra ČR)"
+  ],
+  "answers": [
+    {
+      "question": "Bere tenhle subjekt peníze z veřejných rozpočtů?"
+    },
+    {
+      "question": "S kterými úřady a státními podniky má uzavřené smlouvy?"
+    },
+    {
+      "question": "Kolik smluv s veřejným zadavatelem má?",
+      "note": "Počet ano; souhrnnou částku formulář nedá, viz pasti."
+    }
   ]
 }
