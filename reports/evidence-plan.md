@@ -56,9 +56,9 @@ veškeré nedodělané zdrojovací práce.
 | Metrika | Hodnota |
 |---|---|
 | Dossierů | 26 |
-| Tvrzení | 970 |
-| — z toho `E0` / `E1` / `E1+` / `E2` | 0 / 556 / 94 / 320 |
-| Zdrojů (z toho s vyplněnou `sourceFamily`) | 702 (389) |
+| Tvrzení | 971 |
+| — z toho `E0` / `E1` / `E1+` / `E2` | 0 / 556 / 94 / 321 |
+| Zdrojů (z toho s vyplněnou `sourceFamily`) | 704 (389) |
 | Kauz | 94 |
 | Mezer celkem / otevřených / zastaralých | 204 / 202 / 0 |
 | Vztahů | 334 |
@@ -70,7 +70,7 @@ veškeré nedodělané zdrojovací práce.
 |---:|---|---|---:|---:|---:|---:|---|---:|---:|---|
 | 1 | [Andrej Babiš](../data/dossiers/andrej-babis/) `andrej-babis` | **vysoká** | 154 | 10.7 % | 10.7 % | 105 | 0/70/1/34 | 8 | 21 | 2026-08-06 |
 | 2 | [Karel Havlíček](../data/dossiers/karel-havlicek/) `karel-havlicek` | **vysoká** | 100 | 7.0 % | 17.7 % | 58 | 0/39/9/10 | 12 | 25 | 2026-08-05 |
-| 3 | [Jaromír Zůna](../data/dossiers/jaromir-zuna/) `jaromir-zuna` | **vysoká** | 88 | 6.1 % | 23.9 % | 57 | 0/38/3/16 | 9 | 18 | 2026-08-06 |
+| 3 | [Jaromír Zůna](../data/dossiers/jaromir-zuna/) `jaromir-zuna` | **vysoká** | 88 | 6.1 % | 23.9 % | 58 | 0/38/3/17 | 9 | 20 | 2026-08-06 |
 | 4 | [Martin Šebestyán](../data/dossiers/martin-sebestyan/) `martin-sebestyan` | **vysoká** | 80 | 5.6 % | 29.4 % | 55 | 0/33/0/22 | 14 | 20 | 2026-08-06 |
 | 5 | [Ivan Bednárik](../data/dossiers/ivan-bednarik/) `ivan-bednarik` | **vysoká** | 79 | 5.5 % | 35.0 % | 48 | 0/34/1/13 | 9 | 26 | 2026-07-30 |
 | 6 | [Adam Vojtěch](../data/dossiers/adam-vojtech/) `adam-vojtech` | **vysoká** | 78 | 5.4 % | 40.4 % | 55 | 0/31/1/23 | 15 | 21 | 2026-08-06 |
@@ -139,16 +139,16 @@ Další krok:
 
 | Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
 |---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 57 | 0 | 38 | 3 | 16 | 39 | 21 | 4 | 11 (9) | 26 |
+| 58 | 0 | 38 | 3 | 17 | 41 | 21 | 4 | 11 (9) | 26 |
 
-Deklarované stavy: CORROBORATED 13 · 1 ZDROJ 17 · CITACE 27
+Deklarované stavy: CORROBORATED 14 · 1 ZDROJ 17 · CITACE 27
 
 Další krok:
 
 - 38 tvrzení stojí na jediném zdroji (např. CLM-04, CLM-05, CLM-06) → dohledat druhého, nezávislého vydavatele
 - 9 dalších otevřených mezer → ověřit, jestli je nový zdroj neuzavírá
 - 3 tvrzení má ≥2 zdroje, ale všechny z jedné rodiny / od jednoho vydavatele (např. CLM-21, CLM-28, CLM-29) → dohledat jeden nezávislý doklad; tím se dostanou na CORROBORATED
-- 18 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
+- 20 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
 
 ### 4. Martin Šebestyán — `martin-sebestyan`
 

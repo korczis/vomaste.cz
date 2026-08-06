@@ -1,80 +1,89 @@
 {
-  "$schema": "https://vomaste.cz/schemas/canonical/case.schema.json",
-  "schemaVersion": 1,
-  "@context": "https://vomaste.cz/context/v1.jsonld",
-  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/cases/CASE-03",
-  "@type": "vomaste:Case",
-  "recordType": "case",
-  "identifier": "CASE-03",
-  "dossier": {
-    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
-  },
-  "title": "Spor o volbu náčelníka Generálního štábu",
-  "summary": "Spor o volbu náčelníka Generálního štábu — viz tvrzení CLM-13, CLM-14, CLM-15, CLM-16.",
-  "period": "2026",
-  "status": "status-single",
-  "statusLabel": "Sledované téma",
-  "anchor": "kauza-nacelnik-gs",
-  "claims": [
-    {
-      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-20"
+    "$schema": "https://vomaste.cz/schemas/canonical/case.schema.json",
+    "schemaVersion": 1,
+    "@context": "https://vomaste.cz/context/v1.jsonld",
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/cases/CASE-03",
+    "@type": "vomaste:Case",
+    "recordType": "case",
+    "identifier": "CASE-03",
+    "dossier": {
+        "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
     },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-21"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-22"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-23"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-24"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-25"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-26"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-27"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-28"
-    }
-  ],
-  "sources": [
-    {
-      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-14"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-21"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-28"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-27"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-25"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-38"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-39"
-    }
-  ],
-  "subjects": [
-    "zuna"
-  ],
-  "content": [
-    {
-      "type": "markdown",
-      "value": "Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu\ndossieru](@/dossiers/jaromir-zuna/_index.md#kauza-nacelnik-gs)."
-    }
-  ],
-  "order": 3
+    "title": "Spor o volbu náčelníka Generálního štábu",
+    "summary": "Spor o volbu náčelníka Generálního štábu — viz tvrzení CLM-13, CLM-14, CLM-15, CLM-16.",
+    "period": "2026",
+    "status": "status-single",
+    "statusLabel": "Sledované téma",
+    "anchor": "kauza-nacelnik-gs",
+    "claims": [
+        {
+            "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-20"
+        },
+        {
+            "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-21"
+        },
+        {
+            "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-22"
+        },
+        {
+            "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-23"
+        },
+        {
+            "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-24"
+        },
+        {
+            "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-25"
+        },
+        {
+            "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-26"
+        },
+        {
+            "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-27"
+        },
+        {
+            "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-28"
+        },
+        {
+            "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-58"
+        }
+    ],
+    "sources": [
+        {
+            "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-14"
+        },
+        {
+            "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-21"
+        },
+        {
+            "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-28"
+        },
+        {
+            "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-27"
+        },
+        {
+            "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-25"
+        },
+        {
+            "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-38"
+        },
+        {
+            "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-39"
+        },
+        {
+            "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-40"
+        },
+        {
+            "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-41"
+        }
+    ],
+    "subjects": [
+        "zuna"
+    ],
+    "content": [
+        {
+            "type": "markdown",
+            "value": "Plné znění, zdroje a kontext tohoto tématu jsou v [hlavním přehledu\ndossieru](@/dossiers/jaromir-zuna/_index.md#kauza-nacelnik-gs)."
+        }
+    ],
+    "order": 3
 }
