@@ -101,17 +101,13 @@ Téma v autorizovaném rozsahu — viz tvrzení [CLM-02](@/dossiers/jaromir-zuna
 
 Téma v autorizovaném rozsahu — viz tvrzení [CLM-08](@/dossiers/jaromir-zuna/claims/clm-08.md), [CLM-09](@/dossiers/jaromir-zuna/claims/clm-09.md), [CLM-10](@/dossiers/jaromir-zuna/claims/clm-10.md), [CLM-11](@/dossiers/jaromir-zuna/claims/clm-11.md), [CLM-12](@/dossiers/jaromir-zuna/claims/clm-12.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
 
-## Spor o volbu náčelníka Generálního štábu {#kauza-nacelnik-gs}
-
-Téma v autorizovaném rozsahu — viz tvrzení [CLM-13](@/dossiers/jaromir-zuna/claims/clm-13.md), [CLM-14](@/dossiers/jaromir-zuna/claims/clm-14.md), [CLM-15](@/dossiers/jaromir-zuna/claims/clm-15.md), [CLM-16](@/dossiers/jaromir-zuna/claims/clm-16.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
-
 ## Spor o koncepci armády {#kauza-koncepce-armady}
 
 Téma v autorizovaném rozsahu — viz tvrzení [CLM-17](@/dossiers/jaromir-zuna/claims/clm-17.md), [CLM-18](@/dossiers/jaromir-zuna/claims/clm-18.md), [CLM-19](@/dossiers/jaromir-zuna/claims/clm-19.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
 
 ## Spor o volbu náčelníka Generálního štábu {#kauza-nacelnik-gs}
 
-Téma v autorizovaném rozsahu — viz tvrzení [CLM-20](@/dossiers/jaromir-zuna/claims/clm-20.md), [CLM-21](@/dossiers/jaromir-zuna/claims/clm-21.md), [CLM-22](@/dossiers/jaromir-zuna/claims/clm-22.md), [CLM-23](@/dossiers/jaromir-zuna/claims/clm-23.md), [CLM-24](@/dossiers/jaromir-zuna/claims/clm-24.md), [CLM-25](@/dossiers/jaromir-zuna/claims/clm-25.md), [CLM-26](@/dossiers/jaromir-zuna/claims/clm-26.md), [CLM-27](@/dossiers/jaromir-zuna/claims/clm-27.md), [CLM-28](@/dossiers/jaromir-zuna/claims/clm-28.md), [CLM-58](@/dossiers/jaromir-zuna/claims/clm-58.md), [CLM-55](@/dossiers/jaromir-zuna/claims/clm-55.md), [CLM-56](@/dossiers/jaromir-zuna/claims/clm-56.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
+Téma v autorizovaném rozsahu — viz tvrzení [CLM-13](@/dossiers/jaromir-zuna/claims/clm-13.md), [CLM-14](@/dossiers/jaromir-zuna/claims/clm-14.md), [CLM-15](@/dossiers/jaromir-zuna/claims/clm-15.md), [CLM-16](@/dossiers/jaromir-zuna/claims/clm-16.md), [CLM-20](@/dossiers/jaromir-zuna/claims/clm-20.md), [CLM-21](@/dossiers/jaromir-zuna/claims/clm-21.md), [CLM-22](@/dossiers/jaromir-zuna/claims/clm-22.md), [CLM-23](@/dossiers/jaromir-zuna/claims/clm-23.md), [CLM-24](@/dossiers/jaromir-zuna/claims/clm-24.md), [CLM-25](@/dossiers/jaromir-zuna/claims/clm-25.md), [CLM-26](@/dossiers/jaromir-zuna/claims/clm-26.md), [CLM-27](@/dossiers/jaromir-zuna/claims/clm-27.md), [CLM-28](@/dossiers/jaromir-zuna/claims/clm-28.md), [CLM-58](@/dossiers/jaromir-zuna/claims/clm-58.md), [CLM-55](@/dossiers/jaromir-zuna/claims/clm-55.md), [CLM-56](@/dossiers/jaromir-zuna/claims/clm-56.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
 
 ## Neodvysílaný rozhovor s prezidentem Pavlem {#kauza-rozhovor-pavel}
 
