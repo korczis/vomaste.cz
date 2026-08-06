@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-40",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-40",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "title": "SRC-40 — Deník.cz (VLTAVA LABE MEDIA)",
+  "description": "Kauza Penam a dotace: Česko musí vrácení 100 milionů vymáhat na Agrofertu",
+  "outlet": "Deník.cz (VLTAVA LABE MEDIA)",
+  "sourceFamily": "",
+  "sourceType": "zpravodajství",
+  "url": "https://www.denik.cz/cesko-a-eu/penam-nemecko-dotace-toasty-babis-20201125.html",
+  "published": "2020-11-25",
+  "retrieved": "2026-08-06",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-05"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Kauza Penam a dotace: Česko musí vrácení 100 milionů vymáhat na Agrofertu**\n\nČlánek Luboše Palaty pro Deník.cz nezávisle na FORUM 24 potvrzuje totéž jádro tvrzení: Evropská komise trvá na tom, že projekt toustové linky Penamu (holding Agrofert) neměl být vybrán, protože nešlo o inovaci — auditoři EK podle citovaného auditu zjistili, že velmi podobný produkt vyráběla společnost Lieken (součást skupiny Agrofert) už v roce 2013. Přímo cituje závěr auditu: \"Inovativní produkt prezentovaný společností Pekárna Zelená Louka tak nemůže být považován za inovativní, když tento produkt už skupina Agrofert vyrábí.\"\n\nNezávislý vydavatel i redakce od FORUM 24 (SRC-02/SRC-04) — jiná doména, jiná redakce, jiný autor. Dokládá CLM-05 druhým, nezávislým hlasem; posouvá tvrzení z 1 ZDROJ na CORROBORATED.\n\nZdroj otevřen a přečten 2026-08-06. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení dalšími zdroji nad rámec zde uvedeného."
+    }
+  ],
+  "order": 40
+}

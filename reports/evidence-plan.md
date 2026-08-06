@@ -57,25 +57,25 @@ veškeré nedodělané zdrojovací práce.
 |---|---|
 | Dossierů | 26 |
 | Tvrzení | 971 |
-| — z toho `E0` / `E1` / `E1+` / `E2` | 0 / 556 / 94 / 321 |
-| Zdrojů (z toho s vyplněnou `sourceFamily`) | 704 (389) |
+| — z toho `E0` / `E1` / `E1+` / `E2` | 0 / 556 / 93 / 322 |
+| Zdrojů (z toho s vyplněnou `sourceFamily`) | 705 (389) |
 | Kauz | 94 |
 | Mezer celkem / otevřených / zastaralých | 204 / 202 / 0 |
 | Vztahů | 334 |
-| Bodů rizika celkem | 1433 |
+| Bodů rizika celkem | 1432 |
 
 ## Pořadí dossierů
 
 | # | Dossier | Priorita | Body | Podíl | Kumul. | Tvrzení | `E0`/`E1`/`E1+`/`E2` | Otevřené mezery | Zdroje bez rodiny | Aktualizováno |
 |---:|---|---|---:|---:|---:|---:|---|---:|---:|---|
-| 1 | [Andrej Babiš](../data/dossiers/andrej-babis/) `andrej-babis` | **vysoká** | 154 | 10.7 % | 10.7 % | 105 | 0/70/1/34 | 8 | 21 | 2026-08-06 |
-| 2 | [Karel Havlíček](../data/dossiers/karel-havlicek/) `karel-havlicek` | **vysoká** | 100 | 7.0 % | 17.7 % | 58 | 0/39/9/10 | 12 | 25 | 2026-08-05 |
-| 3 | [Jaromír Zůna](../data/dossiers/jaromir-zuna/) `jaromir-zuna` | **vysoká** | 88 | 6.1 % | 23.9 % | 58 | 0/38/3/17 | 9 | 20 | 2026-08-06 |
+| 1 | [Andrej Babiš](../data/dossiers/andrej-babis/) `andrej-babis` | **vysoká** | 154 | 10.8 % | 10.8 % | 105 | 0/70/1/34 | 8 | 21 | 2026-08-06 |
+| 2 | [Karel Havlíček](../data/dossiers/karel-havlicek/) `karel-havlicek` | **vysoká** | 99 | 6.9 % | 17.7 % | 58 | 0/39/8/11 | 12 | 26 | 2026-08-05 |
+| 3 | [Jaromír Zůna](../data/dossiers/jaromir-zuna/) `jaromir-zuna` | **vysoká** | 88 | 6.1 % | 23.8 % | 58 | 0/38/3/17 | 9 | 20 | 2026-08-06 |
 | 4 | [Martin Šebestyán](../data/dossiers/martin-sebestyan/) `martin-sebestyan` | **vysoká** | 80 | 5.6 % | 29.4 % | 55 | 0/33/0/22 | 14 | 20 | 2026-08-06 |
-| 5 | [Ivan Bednárik](../data/dossiers/ivan-bednarik/) `ivan-bednarik` | **vysoká** | 79 | 5.5 % | 35.0 % | 48 | 0/34/1/13 | 9 | 26 | 2026-07-30 |
+| 5 | [Ivan Bednárik](../data/dossiers/ivan-bednarik/) `ivan-bednarik` | **vysoká** | 79 | 5.5 % | 34.9 % | 48 | 0/34/1/13 | 9 | 26 | 2026-07-30 |
 | 6 | [Adam Vojtěch](../data/dossiers/adam-vojtech/) `adam-vojtech` | **vysoká** | 78 | 5.4 % | 40.4 % | 55 | 0/31/1/23 | 15 | 21 | 2026-08-06 |
 | 7 | [Zuzana Mrázová](../data/dossiers/zuzana-mrazova/) `zuzana-mrazova` | **vysoká** | 78 | 5.4 % | 45.8 % | 60 | 0/28/6/26 | 16 | 15 | 2026-08-05 |
-| 8 | [Aleš Juchelka](../data/dossiers/ales-juchelka/) `ales-juchelka` | **vysoká** | 75 | 5.2 % | 51.1 % | 47 | 0/27/8/12 | 13 | 6 | 2026-07-30 |
+| 8 | [Aleš Juchelka](../data/dossiers/ales-juchelka/) `ales-juchelka` | **vysoká** | 75 | 5.2 % | 51.0 % | 47 | 0/27/8/12 | 13 | 6 | 2026-07-30 |
 | 9 | [Igor Červený](../data/dossiers/igor-cerveny/) `igor-cerveny` | **střední** | 75 | 5.2 % | 56.3 % | 59 | 0/26/9/24 | 14 | 14 | 2026-07-30 |
 | 10 | [Oto Klempíř](../data/dossiers/oto-klempir/) `oto-klempir` | **střední** | 75 | 5.2 % | 61.5 % | 45 | 0/34/0/11 | 7 | 16 | 2026-08-06 |
 | 11 | [Robert Plaga](../data/dossiers/robert-plaga/) `robert-plaga` | **střední** | 74 | 5.2 % | 66.7 % | 55 | 0/29/4/22 | 12 | 18 | 2026-08-06 |
@@ -99,7 +99,7 @@ veškeré nedodělané zdrojovací práce.
 
 ### 1. Andrej Babiš — `andrej-babis`
 
-**Priorita vysoká** · 154 bodů (10.7 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-06`, revidováno `2026-08-05`
+**Priorita vysoká** · 154 bodů (10.8 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-06`, revidováno `2026-08-05`
 
 | Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
 |---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -117,21 +117,21 @@ Další krok:
 
 ### 2. Karel Havlíček — `karel-havlicek`
 
-**Priorita vysoká** · 100 bodů (7.0 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-05`, revidováno `2026-07-30`
+**Priorita vysoká** · 99 bodů (6.9 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-05`, revidováno `2026-07-30`
 
 | Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
 |---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 58 | 0 | 39 | 9 | 10 | 38 | 13 | 4 | 12 (12) | 22 |
+| 58 | 0 | 39 | 8 | 11 | 39 | 13 | 4 | 12 (12) | 22 |
 
-Deklarované stavy: CORROBORATED 8 · 1 ZDROJ 28 · CITACE 22
+Deklarované stavy: CORROBORATED 9 · 1 ZDROJ 27 · CITACE 22
 
 Další krok:
 
 - 39 tvrzení stojí na jediném zdroji (např. CLM-03, CLM-07, CLM-08) → dohledat druhého, nezávislého vydavatele
 - 11 dalších otevřených mezer → ověřit, jestli je nový zdroj neuzavírá
-- 9 tvrzení má ≥2 zdroje, ale všechny z jedné rodiny / od jednoho vydavatele (např. CLM-05, CLM-06, CLM-12) → dohledat jeden nezávislý doklad; tím se dostanou na CORROBORATED
+- 8 tvrzení má ≥2 zdroje, ale všechny z jedné rodiny / od jednoho vydavatele (např. CLM-06, CLM-12, CLM-13) → dohledat jeden nezávislý doklad; tím se dostanou na CORROBORATED
 - 1 otevřených mezer s prioritou „vysoká" → projít je jako první, u každé zaznamenat výsledek kontroly
-- 25 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
+- 26 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
 
 ### 3. Jaromír Zůna — `jaromir-zuna`
 

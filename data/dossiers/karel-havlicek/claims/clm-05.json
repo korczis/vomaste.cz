@@ -9,15 +9,18 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
   },
-  "text": "Podle FORUM 24 Evropská komise odmítla proplatit stomilionovou dotaci na linku na toustový chléb pekárny Penam (holding Agrofert) s odůvodněním, že projekt nebyl inovativní; auditoři EK uvedli, že velmi podobné tousty vyráběla německá společnost Lieken AG už v roce 2013.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "text": "Evropská komise odmítla proplatit stomilionovou dotaci na linku na toustový chléb pekárny Penam (holding Agrofert) s odůvodněním, že projekt nebyl inovativní; auditoři EK uvedli, že velmi podobné tousty vyráběla německá společnost Lieken AG už v roce 2013.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-02"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-40"
     }
   ],
   "subjects": [
