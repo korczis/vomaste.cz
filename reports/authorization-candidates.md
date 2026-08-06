@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 499 context entities across 29 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 498 context entities across 30 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -2511,17 +2511,6 @@ Generated from 499 context entities across 29 dossier(s). Regenerate with `npm r
 - Claims: CLM-37
 - Sources: SRC-27 (1 independent source family)
 - Relations: none
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Martin Baxa (`martin-baxa`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: oto-klempir
-- Claims: CLM-26, CLM-39
-- Sources: SRC-04, SRC-16 (2 independent source families)
-- Relations:
-  - edge-martinbaxa-klempir (martin-baxa -> klempir, "bývalý ministr kultury (ODS) kritizoval zrušení výběrového řízení na ředitele NGP", dossier: oto-klempir)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Martin Beneš (`martin-benes`)

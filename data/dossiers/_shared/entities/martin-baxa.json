@@ -9,12 +9,13 @@
   "entityId": "martin-baxa",
   "title": "Martin Baxa",
   "entityType": "person",
-  "publicationRole": "context",
-  "dossierEnabled": false,
-  "dossierStatus": "not_authorized",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
   "coverageState": "discovered",
   "dossiers": [
-    "oto-klempir"
+    "oto-klempir",
+    "martin-baxa"
   ],
   "order": 248,
   "provenance": {

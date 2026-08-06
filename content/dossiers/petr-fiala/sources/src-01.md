@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-01 — Poslanecká sněmovna PČR (oficiální profil poslance)"
-description = "Oficiální profil poslance na webu Poslanecké sněmovny: mandát, klub, výbory."
+description = "Oficiální profil poslance na webu Poslanecké sněmovny: mandát, klub, výbory. Zdroj: Poslanecká sněmovna Parlamentu ČR, dossier Petr Fiala."
 template = "dossier-source.html"
 weight = 1
 

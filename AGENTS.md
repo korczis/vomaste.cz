@@ -1746,3 +1746,17 @@ nebo jiných kauz vyžaduje samostatnou budoucí autorizaci.
 Authorized by the site owner, explicitly and on the record, 2026-08-06:
 
 Jana Černochová je veřejná funkcionářka — bývalá ministryně obrany ČR a poslankyně Poslanecké sněmovny PČR za ODS, od 6. 3. 2026 předsedkyně sněmovního Výboru pro bezpečnost. Spadá do standing scope autorizace (AUTH-2026-08-05-PLATFORM-SCOPE) jako veřejná osoba působící ve veřejné funkci. Rozsah tohoto dossieru je omezen na základní, nekontroverzní fakta o jejím aktuálním politickém mandátu a funkci (poslanecký mandát, členství v poslaneckém klubu ODS, předsednictví bezpečnostního výboru), doložená přímo otevřenými veřejnými zdroji. Hlubší investigativní rešerše jejího ministerského působení nebo jiných témat vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-06: Martin Baxa
+
+Authorized by the site owner, explicitly and on the record, 2026-08-06:
+
+Martin Baxa je veřejný funkcionář — bývalý ministr kultury ČR (2021–2025) a
+současný poslanec Poslanecké sněmovny PČR za ODS, člen sněmovního Výboru pro
+mediální záležitosti a předseda Podvýboru pro kulturu, v rámci stínové vlády
+ODS působící jako stínový ministr kultury. Spadá do standing scope
+autorizace (AUTH-2026-08-05-PLATFORM-SCOPE). Rozsah tohoto dossieru je
+záměrně minimální: pouze základní, aktuální politicko-funkční fakta (mandát,
+klubová a výborová příslušnost, role stínového ministra), doložená přímo
+otevřenými zdroji. Nejde o investigativní rešerši jeho ministerského období
+ani jiných témat — hlubší témata vyžadují samostatnou budoucí autorizaci.

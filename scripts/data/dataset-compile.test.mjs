@@ -138,12 +138,12 @@ test("check nad reálným data/dossiers projde (29 balíčků včetně jana-cern
   // data vytvořil, takže brána teď validuje reálný dataset. Sémantická
   // porušení zděděná z obsahu smí projít jen přes baseline allowlist
   // (_shared/semantics-baseline.json) — jako warningy, nikdy chyby.
-  // 29 = předchozích 28 + autorizovaný dossier jana-cernochova.
+  // 30 = předchozích 29 + autorizovaný dossier martin-baxa.
   const lines = [];
   const code = await runCheck({ root: RECORDS_ROOT, log: (l) => lines.push(l) });
   assert.equal(code, 0, lines.join("\n"));
   assert.ok(!lines.some((l) => l.includes("0 dossier packages")), lines.join("\n"));
-  assert.ok(lines.some((l) => l.includes("Načteno 29 dossier balíčků")), lines.join("\n"));
+  assert.ok(lines.some((l) => l.includes("Načteno 30 dossier balíčků")), lines.join("\n"));
   assert.ok(lines.at(-1) === "OK");
 });
 
