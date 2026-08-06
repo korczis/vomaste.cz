@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-haas",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "karel-haas",
+  "slug": "karel-haas",
+  "title": "Karel Haas",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení Karla Haase.",
+  "dossierType": "entity",
+  "canonicalDossier": "karel-haas",
+  "subject": "karel-haas",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-06",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-06-KAREL-HAAS"
+    ]
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nKarel Haas je poslanec Poslanecké sněmovny PČR za ODS, místopředseda ODS\na stínový ministr sportu, prevence a zdraví. Jako veřejný funkcionář\nspadá do standing scope autorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`);\nkonkrétní záznam pro tento dossier je `AUTH-2026-08-06-KAREL-HAAS`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam — dokládá pouze jeho aktuální poslanecký mandát, funkci\nmístopředsedy ODS a roli stínového ministra sportu, prevence a zdraví,\nnikoli hloubkovou investigativní rešerši jeho veřejného působení nebo\njiných témat. Rozšíření rozsahu vyžaduje samostatnou budoucí\nautorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/karel-haas/claims/clm-01.md) | Karel Haas je podle profilu na webu Poslanecké sněmovny PČR poslancem zvoleným za ODS (mandát od 4. 10. 2025 za Pardubický kraj, členem poslaneckého klubu ODS od 8. 10. 2025); od ledna 2026 je místopředsedou ODS — zvolen na 32. kongresu ODS 18. 1. 2026 s nejvyšším počtem hlasů ze všech kandidátů (383 z 502 platných hlasů), nezávisle informovala ČT24; a podle vlastního profilu na webu ODS zastává ve stínové vládě ODS vedené Martinem Kupkou roli stínového ministra sportu, prevence a zdraví. | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/karel-haas/sources/src-01.md), [SRC-02](@/dossiers/karel-haas/sources/src-02.md), [SRC-03](@/dossiers/karel-haas/sources/src-03.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedeného mandátu, funkce místopředsedy ODS a role\nstínového ministra nic dalšího; nejde o hodnocení jeho politického\npůsobení ani o investigativní rešerši jiných témat."
+    }
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "entity": "karel-haas",
+        "label": "Karel Haas",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02",
+          "SRC-03"
+        ]
+      }
+    ],
+    "edges": []
+  }
+}

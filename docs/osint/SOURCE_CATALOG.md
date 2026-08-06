@@ -197,17 +197,17 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 720 záznamů v 124 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 723 záznamů v 124 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
 | ctk | 291 | 21 | [ano](/zdroje/ctk/) |
-| Poslanecká sněmovna Parlamentu ČR | 41 | 22 | [ano](/zdroje/psp-cz/) |
+| Poslanecká sněmovna Parlamentu ČR | 42 | 23 | [ano](/zdroje/psp-cz/) |
 | seznam-zpravy | 38 | 13 | [ano](/zdroje/seznam-zpravy/) |
 | Vláda České republiky (vlada.gov.cz) | 28 | 17 | [ano](/zdroje/vlada-cz/) |
 | FORUM 24 | 20 | 10 | [ano](/zdroje/forum24/) |
 | denik-n | 17 | 9 | [ano](/zdroje/denik-n/) |
-| ČT24 (Česká televize) | 15 | 7 | [ano](/zdroje/ceska-televize/) |
+| ČT24 (Česká televize) | 16 | 8 | [ano](/zdroje/ceska-televize/) |
 | Echo24 | 14 | 10 | [ano](/zdroje/echo24/) |
 | Aktuálně.cz | 12 | 7 | [ano](/zdroje/aktualne-cz/) |
 | Novinky.cz | 12 | 11 | [ano](/zdroje/novinky-cz/) |
@@ -250,6 +250,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 720 záznamů v 124 rodinách/out
 | Ministerstvo životního prostředí ČR | 2 | 1 | — |
 | NašeTéma.cz | 2 | 2 | — |
 | Nejvyšší správní soud | 2 | 2 | — |
+| ODS (Občanská demokratická strana) | 2 | 2 | — |
 | Olomoucký deník | 2 | 1 | — |
 | Pražský deník | 2 | 1 | — |
 | Registr lobbování (RELOB) | 2 | 1 | — |
@@ -300,7 +301,6 @@ Dopočítáno z `data/dossiers/**/sources/**`, 720 záznamů v 124 rodinách/out
 | Motoristé sobě (motoristesobe.cz/udhpsh) | 1 | 1 | — |
 | Neovlivní.cz | 1 | 1 | — |
 | Novinky.cz / Právo | 1 | 1 | [ano](/zdroje/novinky-cz/) |
-| ODS (Občanská demokratická strana) | 1 | 1 | — |
 | ParlamentníListy.cz | 1 | 1 | — |
 | Podnikatel.cz | 1 | 1 | [ano](/zdroje/podnikatel-cz-rejstrik/) |
 | Podpůrný a garanční rolnický a lesnický fond (PGRLF) | 1 | 1 | — |

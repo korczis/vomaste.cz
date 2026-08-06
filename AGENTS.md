@@ -1787,3 +1787,18 @@ Rozsah tohoto dossieru je záměrně minimální: pouze základní, aktuálně o
 Authorized by the site owner, explicitly and on the record, 2026-08-06:
 
 Marek Benda je veřejný funkcionář — dlouholetý poslanec Poslanecké sněmovny PČR za ODS a předseda poslaneckého klubu ODS. Spadá do standing scope autorizace (AUTH-2026-08-05-PLATFORM-SCOPE) jako veřejný funkcionář v souvislosti s výkonem veřejné funkce. Rozsah tohoto dossieru je záměrně minimální: pouze jeho aktuální poslanecký mandát a role předsedy poslaneckého klubu ODS, doložené přímo otevřenými zdroji, bez hlubší investigativní rešerše dalších témat.
+
+### Scope extension, 2026-08-06: Karel Haas
+
+Authorized by the site owner, explicitly and on the record, 2026-08-06:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Karel Haas je veřejný
+funkcionář — poslanec Poslanecké sněmovny PČR za ODS (mandát od
+4. 10. 2025, Pardubický kraj), místopředseda ODS (od ledna 2026, zvolen
+na 32. kongresu ODS) a stínový ministr sportu, prevence a zdraví ve
+stínové vládě ODS. Rozsah tohoto dossieru je záměrně minimální: pouze
+základní, nekontroverzní tvrzení o jeho aktuálním poslaneckém mandátu
+a straně/klubu ODS, funkci místopředsedy ODS a roli stínového ministra
+sportu, prevence a zdraví — doloženo přímo otevřenými zdroji
+(Poslanecká sněmovna PČR, ČT24, ODS). Nejde o investigativní rešerši
+žádné kauzy ani sporu.

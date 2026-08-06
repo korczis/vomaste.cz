@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 497 context entities across 33 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 496 context entities across 34 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -1786,16 +1786,6 @@ Generated from 497 context entities across 33 dossier(s). Regenerate with `npm r
 - Sources: SRC-08 (1 independent source family)
 - Relations:
   - edge-tejc-dvorak (tejc -> karel-dvorak, "Tejc reagoval na interpelaci poslance Karla Dvořáka (STAN) k výrokům o Ústavním soudu", dossier: jeronym-tejc)
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Karel Haas (`karel-haas`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: karel-havlicek
-- Claims: none
-- Sources: SRC-19 (1 independent source family)
-- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Karel Kovář (`karel-kovar`)
