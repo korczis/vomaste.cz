@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run prismatic:plan — Plán obohacovacích úloh"
 template = "tooling-command.html"
-weight = 71
+weight = 73
 description = "Plán obohacovacích úloh: Staví deterministický, vysvětlitelný plán úloh proti vlastnímu compiled kanonickému modelu vomaste. npm skript, rešerše."
 
 [extra]

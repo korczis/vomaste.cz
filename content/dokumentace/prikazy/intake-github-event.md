@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run intake:github-event — Vstupní bod workflow"
 template = "tooling-command.html"
-weight = 91
+weight = 93
 description = "Vstupní bod workflow: JEDINÝ krok GitHub Actions workflow, který čte $GITHUB_EVENT_PATH — a nikdy nedostane GITHUB_TOKEN do prostředí. npm skript, provoz."
 
 [extra]

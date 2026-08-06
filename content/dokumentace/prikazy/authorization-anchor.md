@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run authorization:anchor — Ukotvení záznamu autorizačního logu"
 template = "tooling-command.html"
-weight = 80
+weight = 82
 description = "Ukotvení záznamu autorizačního logu: Jediná cesta, jak se záznam z autorizačního logu v AGENTS.md dostane do hash-kotvy. npm skript, provoz."
 
 [extra]

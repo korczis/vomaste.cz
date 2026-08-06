@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "just clean — Smazání build outputu"
 template = "tooling-command.html"
-weight = 112
+weight = 114
 description = "Smazání build outputu: Smaže public/. just recept, provoz."
 
 [extra]

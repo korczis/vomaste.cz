@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/dossier-next-id",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "dossier-next-id",
+  "kind": "npm",
+  "name": "dossier:next-id",
+  "title": "Další volné ID registru",
+  "category": "reserse",
+  "summary": "Spočítá další volné ID pro claim, source, case nebo gap v daném dossieru — a to jak z lokálního pracovního stromu, tak z `origin/master`. Když se obě čísla liší, ohlásí to.",
+  "enforces": [
+    "Nevynucuje nic; je to pomůcka před zápisem, ne brána."
+  ],
+  "whenToRun": "Před založením nového záznamu v registru, zejména když na dossieru pracuje víc session současně.",
+  "sourceFile": "scripts/dossier/next-id.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Vzniklo po kolizi 5. 8. 2026, kdy dvě souběžné session spočítaly totéž „další volné“ ID a přepsaly si zdroje navzájem."
+  ]
+}
