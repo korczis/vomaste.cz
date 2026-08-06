@@ -72,13 +72,15 @@ z toho tento README neinzeruje jako hotové.
 
 ```text
 kanonická data (data/dossiers/**/*.json — JSON Schema + JSON-LD context)
-→ data:validate (tvar · reference R1–R7 · sémantika S1–S10 · parita tabulky T1–T8 · JSON-LD expanze)
+→ data:validate (tvar · reference R1–R8 · sémantika S1–S10 · parita tabulky T1–T8 · JSON-LD expanze)
 → jednotný kompilátor (scripts/data/) → compiled model
 → view modely (data/generated/views/**) + generované content adaptéry (content/**)
-→ validátory a generátory (autorizace, navigace, route manifest, exporty, search index, graf)
+→ report:evidence-plan (evidenční plán práce) + npm test (regresní testy toolingu)
+→ validátory a generátory (autorizace, typy dossierů, navigace, route manifest,
+  parita content == staging, linty, katalog zdrojů, exporty, search index, graf)
 → Tailwind + esbuild (assets)
 → zola build (statické HTML; šablony čtou view modely přes load_data)
-→ verify:anchors / verify:jsonld / verify:og / verify:full-pages / verify:export
+→ verify:navigation-counts / verify:anchors / verify:jsonld / verify:og / verify:full-pages / verify:export
 → GitHub Actions → GitHub Pages
 ```
 
@@ -305,28 +307,40 @@ Rozhodnutí a jeho důsledky: [ADR](docs/adr/dossier-directory-multi-view.md).
 .
 ├── data/dossiers/          # KANONICKÁ DATA: <slug>/dossier.json + registry záznamů,
 │                           # _shared/ (entity, slovníky, JSON-LD context)
+├── data/source-catalog/    # KANONICKÁ DATA katalogu zdrojů (1 JSON na registr/nástroj/
+│                           # agregátor: proves, doesNotProve, traps, howToSearch)
 ├── schemas/canonical/      # JSON Schema kontrakt kanonických záznamů (AJV strict)
 ├── content/                # Zola routing: GENEROVANÉ adaptéry kanonických dat
 │                           # (ručně psané: kořenové indexy, koncepty, dokumentace,
-│                           #  mapa, /data/ a per-dossier evidence//entities/ indexy)
+│                           #  manifest, mapa, /data/ a per-dossier evidence//entities/ indexy)
 ├── templates/              # Tera šablony (čtou view modely přes load_data);
 │                           # macros/meta.html vydává og:*/twitter:*/canonical
 ├── data/                   # navigační skeleton, seo.toml (metadata), government
 │                           # roster, generovaná data
 ├── assets/js/              # zdrojové JS moduly (bundluje esbuild)
 ├── static/                 # statická aktiva + zkompilované CSS/JS + search index
-├── scripts/data/           # kanonický kompilátor, validátory, generátory adaptérů, scaffold
-├── scripts/build/          # pipeline.mjs — jediný orchestrační entrypoint buildu
-├── scripts/dossier/        # build/verify nástroje nad compiled modelem (exporty, navigace…)
+├── scripts/data/           # kanonický kompilátor, validátory, generátory adaptérů, scaffold,
+│                           # evidenční plán práce (report-evidence-plan.mjs)
+├── scripts/build/          # pipeline.mjs — jediný orchestrační entrypoint buildu + build lock
+├── scripts/dossier/        # build/verify nástroje nad compiled modelem (exporty, navigace,
+│                           # katalog zdrojů, autorizace…)
 ├── scripts/lint/           # linty (generated content, hardcoded records, komponenty…)
-├── scripts/osint/          # živé rejstříkové nástroje (ARES, registr smluv) — mimo build
+├── scripts/osint/          # živé rejstříkové nástroje (ARES, registr smluv, detekce
+│                           # zdrojových rodin) — mimo build
 ├── scripts/intake/         # veřejný intake: parser podnětu, matching, preflight (nikdy nezapisuje do dat)
+├── scripts/ci/             # parita workflow ↔ package.json, validace issue formulářů
+├── scripts/ui/             # regresní testy prohlížečové logiky (tabulky, hledání, nezávislost zdrojů)
+├── scripts/prismatic/      # volitelná integrace s ~/dev/prismatic-platform (zčásti stuby)
+├── scripts/migrations/     # archiv jednorázových migrátorů + sdílené čtecí knihovny
+├── scripts/og/             # generátor náhledových karet (playwright, mimo build)
 ├── scripts/coop/           # koordinace více instancí (bus, worktrees)
 ├── scripts/setup/          # instalace git hooks (postinstall)
+├── tests/e2e/              # Playwright scénáře (`npm run test:e2e`, mimo `npm run build`)
 ├── .githooks/              # pre-commit: rychlá podmnožina validátorů;
                             # post-commit: na masteru auto push+deploy
-├── .claude/skills/         # bootstrap, dossier-entry, investigate, adr, commit
-├── docs/                   # konstituce, datový kontrakt, audity, migrace, koop, ADR
+├── .claude/skills/         # 5 funkčních (bootstrap, dossier-entry, investigate, adr, commit)
+                            # + 4 scaffoldované prismatic-*
+├── docs/                   # konstituce, datový kontrakt, audity, migrace, koop, ADR, OSINT
 ├── reports/                # generované interní reporty (nepublikují se)
 └── .github/                # workflows/deploy.yml (validace + build + Pages),
                             # workflows/dossier-intake.yml + ISSUE_TEMPLATE/ (veřejný intake)
@@ -419,7 +433,7 @@ required fields, and contains no truth-rating markup.`
 
 ## Task runner (`just`)
 
-Repozitář má přes třicet npm skriptů a je snadné netrefit ten, na kterém
+Repozitář má přes devadesát npm skriptů a je snadné netrefit ten, na kterém
 záleží. `justfile` v rootu je tenký obal nad nimi — nic nepřepisuje, nic
 nepřidává; když se rozejde s `package.json`, vyhrává `package.json` a
 justfile je chyba.
@@ -446,6 +460,15 @@ Instalace `just`: <https://github.com/casey/just#installation>.
 
 ## Referenční příkazy
 
+Tahle tabulka je **výběr toho nejpoužívanějšího**. Úplný katalog — každý npm
+skript, každý `just` recept i každá Claude skill na vlastní stránce, s tím, co
+příkaz vynucuje, kdy ho spustit a co čte a zapisuje — je v
+[`docs/TOOLING.md`](docs/TOOLING.md) a na webu v
+[dokumentaci příkazů](https://vomaste.cz/dokumentace/prikazy/). Generuje se
+z repozitáře (`npm run build:tooling-catalog`) a brána `verify:tooling-catalog`
+shodí build, když se objeví příkaz bez záznamu — proto katalog nemůže zastarat,
+zatímco tenhle výběr je ruční a záměrně neúplný.
+
 | Příkaz | K čemu |
 |---|---|
 | `npm run build` | celá kvalitní brána (`scripts/build/pipeline.mjs build`): kanonická validace → view modely + adaptéry → validátory → generátory → CSS/JS → `zola build` → post-build kontroly |
@@ -454,7 +477,7 @@ Instalace `just`: <https://github.com/casey/just#installation>.
 | `npm run hooks:install` | nastaví `core.hooksPath` na `.githooks/` (jinak se spustí automaticky přes `npm ci`/`npm install`) |
 | `npm test` | regresní testy tooling skriptů (Node built-in test runner, žádná nová závislost) — součást `npm run build` |
 | `npm run test:update-golden` | přegeneruje `scripts/data/compiled-golden.snapshot.json` (počty záznamů/graf pro golden test) z aktuálního compiled modelu — jediný podporovaný způsob, jak ta čísla měnit; taky jediné, co potřebuješ po konfliktu v tomhle souboru |
-| `npm run data:validate` | kanonická brána: tvar (`schemas/canonical/`, AJV strict) → reference R1–R7 → sémantika S1–S10 → parita tabulky T1–T8 → JSON-LD expanze |
+| `npm run data:validate` | kanonická brána: tvar (`schemas/canonical/`, AJV strict) → reference R1–R8 → sémantika S1–S10 → parita tabulky T1–T8 → JSON-LD expanze |
 | `npm run data:validate -- --file <cesta>` | rychlá tvarová validace jediného kanonického souboru; chybové hlášky nesou cestu |
 | `npm run data:build` | kompilace datasetu + view modely + regenerace content adaptérů + parity brána content == staging |
 | `npm run dossier:scaffold -- --slug=… --title="…" --subject=… --authorization-record-id=AUTH-…` | založí minimální validní kanonický balíček nového dossieru; **odmítne** subjekt bez odpovídajícího záznamu v `data/authorizations.toml` |
@@ -467,6 +490,9 @@ Instalace `just`: <https://github.com/casey/just#installation>.
 | `npm run verify:og` | po buildu: úplnost `og:*`/`twitter:*`, `og:url` == kanonická URL, existující a absolutní `og:image`, meze délky z `data/seo.toml` a shoda titulku/popisu se stránkovým uzlem JSON-LD |
 | `npm run build:jsonld-exports` | vygeneruje `/data/dossiers/<slug>.jsonld`, `/data/graph.jsonld`, manifest s checksumy a citační otisky pro šablony — součást `npm run build` |
 | `npm run verify:export` | po buildu (i offline nad staženou kopií, `--dir <cesta>`): každý export sedí na manifest hash, parsuje, nenese truth ratingy a otisky se přepočítávají |
+| `npm run verify:full-pages` | po buildu: každá stránka tvrzení/zdroje má v hotovém HTML povinné sekce (full-page doktrína), kotvy `clm-##` leží uvnitř tabulky |
+| `npm run build:source-catalog` / `verify:source-catalog` | přegeneruje katalog zdrojů (`/zdroje/`, `docs/osint/SOURCE_CATALOG.md`, `data/generated/source-catalog.json`) z `data/source-catalog/*.json` / shodí, když se zacommitovaný výstup rozešel s daty — `verify` je součást pre-commit hooku, ne build pipeline (v pipeline běží hned za generátorem a nikdy by neselhal) |
+| `npm run report:evidence-plan` | vygeneruje `reports/evidence-plan.md` + `data/generated/evidence-plan.json`: per dossier počty tvrzení dle stavu a evidenční třídy, potenciál korroborace, mezery, datově odvozená priorita a konkrétní další krok — součást `npm run data:build` i `npm run build`, nikdy se needituje ručně. Viz [evidenční plán práce](#evidenční-plán-práce) |
 | `npm run lint:historical-coupling` | de-specializační brána: žádná jména subjektů ve strukturálním kódu |
 | `npm run lint:generated-content` | generované content adaptéry zůstávají minimální obálkou — ruční doménová pole neprojdou |
 | `npm run lint:component-reuse` | každá šablona (kromě `base.html`/`404.html`) používá `macros/ui.html`, a každá šablona s tabulkou používá `macros/table.html` (`table::advanced_table`) — žádný ručně psaný duplicitní markup místo sdílené komponenty |
@@ -494,7 +520,7 @@ npm run screening:public-money -- --from-external-ids
 | Volba | Význam |
 |---|---|
 | `--ico=<IČO>[,<IČO>…]` | ad-hoc screening zadaných IČO |
-| `--from-external-ids` | IČO z kanonických entit (`externalIds.ico`, resp. `ares`); dnes je nemá žádná z 504 entit, takže režim korektně ohlásí nula vstupů a na síť vůbec nesáhne |
+| `--from-external-ids` | IČO z kanonických entit (`externalIds.ico`, resp. `ares`, jen platný osmičíselný tvar). Kolik jich je, se nikam nepíše — plyne z dat; když je nula, režim to ohlásí a na síť vůbec nesáhne. Pole plní `expand-entity.mjs`, takže dávka roste s expanzí rejstříkového okolí |
 | `--from=RRRR-MM`, `--to=RRRR-MM` | období; výchozí je posledních **12 dokončených** měsíců (běžící měsíc má neúplný dump a tiše by objem podhodnotil) |
 | `--no-cache` | ignoruje staženou cache v `.tmp/public-money/` |
 | `--json` | strojový výstup na stdout |
@@ -795,7 +821,7 @@ tam vůbec nedostane, byl na plné bráně červený.
 |---|---|
 | `zola: command not found` / build padá na Zole | Zola není v PATH nebo je jiná řada než **0.22.x** (CI pinuje 0.22.1). Instalace: <https://www.getzola.org/documentation/getting-started/installation/>; ověření `zola --version`. |
 | `data:validate` hlásí T3 „řádka tabulky se neshoduje s kanonickým claimem" | Tabulka tvrzení v `dossier.json` a kanonický záznam `claims/clm-NN.json` se rozešly (text/stav/zdroje se porovnávají byte-verně). Uprav jedno či druhé tak, aby se shodovaly, a validaci zopakuj. |
-| `data:check-generated:content` hlásí drift | Ručně editovaný generovaný soubor pod `content/dossiers/**` nebo `content/entities/`. Vrať úpravu do kanonického JSON a spusť `npm run data:build`. |
+| `data:check-generated:content` hlásí drift | Ručně editovaný generovaný soubor pod `content/dossiers/**` nebo `content/entities/`. Vrať úpravu do kanonického JSON a spusť `npm run data:build`. **Pozor na pořadí**: uvnitř `npm run build` běží `data:sync-content` *před* touhle bránou, takže ruční úpravu těla stránky přepíše a build zůstane zelený — drift se ohlásí jen když bránu spustíš samostatně nad nesynchronizovaným stromem. Podezřelý diff v `content/` se kontroluje takhle: `npm run data:check-generated:content`. |
 | `npm run dev` „visí" | Nevisí — `zola serve` je server a sám neskončí. Čekej na řádek `Web server is available`, web běží na <http://127.0.0.1:1111>. |
 
 ## Licence

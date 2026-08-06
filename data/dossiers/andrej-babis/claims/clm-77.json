@@ -9,12 +9,15 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
   },
-  "text": "Policie 9. října 2017 obvinila Andreje Babiše a Jaroslava Faltýnka v souvislosti s padesátimilionovou dotací na stavbu Farmy Čapí hnízdo; podezření se týkala dotačního podvodu a poškození finančních zájmů EU a oba předtím vydala ke stíhání Poslanecká sněmovna. Babiš proti usnesení ihned podal opravný prostředek a věc označil za „pseudokauzu“ — obvinění je procesní krok, ne rozhodnutí o vině",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "text": "Poslanecká sněmovna 6. září 2017 vyslovila souhlas s trestním stíháním poslanců Andreje Babiše (hlasování č. 28: přihlášeno 134, pro 123, proti 4) a Jaroslava Faltýnka (hlasování č. 29: přihlášeno 133, pro 120, proti 5); přijatá usnesení č. 214 a 215 užívají zákonnou dikci „vyslovuje souhlas s trestním stíháním“, nikoli novinářské „vydání ke stíhání“. Policie oba podle citovaného zpravodajství obvinila 9. října 2017 v souvislosti s padesátimilionovou dotací na stavbu Farmy Čapí hnízdo; podezření se týkala dotačního podvodu a poškození finančních zájmů EU. Babiš proti usnesení ihned podal opravný prostředek a věc označil za „pseudokauzu“ — obvinění je procesní krok, ne rozhodnutí o vině",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-54"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-83"
     }
   ],
   "subjects": [],
@@ -22,7 +25,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni).\n\n**Opraveno a povýšeno 2026-08-06 (kolo CASE-05, T-078).** Připojen oficiální\nstenoprotokol 60. schůze Poslanecké sněmovny ze 6. 9. 2017\n([SRC-83](@/dossiers/andrej-babis/sources/src-83.md)), který doslovně dokládá\nobě hlasování, jejich výsledky i čísla přijatých usnesení.\n\n**Oprava proti dokumentu:** tvrzení dosud říkalo jen „oba předtím vydala ke\nstíhání Poslanecká sněmovna“, bez data. Stenoprotokol datum doplňuje\n(**6. 9. 2017**) a zároveň opravuje slovník: zpravodaj poslanec Jiří Dolejš\nvýslovně odmítl formulaci „vyslovuje souhlas **s vydáním k trestnímu stíhání**“\ns tím, že v písemných materiálech je „**přesná dikce zákona o jednacím řádu**“ —\ntedy „**vyslovuje souhlas s trestním stíháním**“. „Vydání ke stíhání“ je\nnovinářská zkratka, ne znění usnesení.\n\n**Limit, který zůstává:** stenoprotokol nedokládá **datum obvinění (9. 10. 2017)**,\nprávní kvalifikaci podezření, výši dotace ani reakci Andreje Babiše — tyto části\ntvrzení stojí dál jen na zpravodajství Aktuálně.cz\n([SRC-54](@/dossiers/andrej-babis/sources/src-54.md)), což text tvrzení nově\npřiznává formulací „podle citovaného zpravodajství“. Doložený souhlas navíc dala\n**Sněmovna zvolená v roce 2013**; po volbách v říjnu 2017 musela nově zvolená\nSněmovna rozhodovat znovu (19. 1. 2018), což tento dokument nepokrývá."
     }
   ]
 }

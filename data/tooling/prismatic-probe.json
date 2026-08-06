@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/prismatic-probe",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "prismatic-probe",
+  "kind": "npm",
+  "name": "prismatic:probe",
+  "title": "Drift kontrola proti auditu schopností",
+  "category": "reserse",
+  "summary": "Kontroluje, jestli konkrétní soubory, které audit schopností skutečně otevřel, jsou pořád tam, kde je našel — jen existence souborů, žádná síť, žádné volání Mixu ani Elixiru.",
+  "whenToRun": "Když chceš levně zjistit, jestli se od auditu něco nepohnulo. `-- --json` pro strojový výstup.",
+  "inputs": [
+    "docs/audits/2026-08-05-prismatic-capability-map.md",
+    "checkout prismatic-platform"
+  ],
+  "sourceFile": "scripts/prismatic/probe.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Chybějící soubor nutně neznamená „Prismatic se rozbil“ — může znamenat, že audit zastaral a potřebuje čerstvé přečtení. Tak či tak se to nahlásí; nikdy se mlčky nepředpokládá, že schopnost pořád vypadá, jak ji audit popsal.",
+    "Není to znovuspuštění auditu, jen levná kontrola driftu."
+  ]
+}

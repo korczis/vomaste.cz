@@ -1,7 +1,7 @@
 # Návrhy zdrojových rodin
 
 > **Generováno** `npm run sources:detect-family` — needitovat ručně.
-> Vygenerováno: 2026-08-05T22:14:33.077Z
+> Vygenerováno: 2026-08-06T00:17:55.212Z
 
 Tenhle report je **návrh, ne zápis**. Detekce sama nic do
 `data/dossiers/**` nezapisuje; rodinu vyplní až vědomý krok
@@ -21,8 +21,8 @@ a to **jen u verdiktu `ctk`**.
 
 | Verdikt | Počet |
 |---|---|
-| `own` | 14 |
-| `unknown` | 7 |
+| `unknown` | 13 |
+| `own` | 8 |
 | **celkem zpracováno** | **21** |
 
 ## Verdikt `ctk` (0)
@@ -33,33 +33,33 @@ _(žádný)_
 
 _(žádná)_
 
-## Verdikt `own` — vlastní zpravodajství, rodina se nevyplňuje (14)
+## Verdikt `own` — vlastní zpravodajství, rodina se nevyplňuje (8)
 
 | Dossier | ID | Outlet | Jistota | Evidence |
 |---|---|---|---|---|
-| andrej-babis | SRC-06 | Česká justice | high | <meta name="author" content="David Tramba" /> |
-| andrej-babis | SRC-13 | Investigace.cz | high | <meta name="author" content="Zuzana Šotová" /> |
-| andrej-babis | SRC-21 | ČT24 (Česká televize) | high | <meta name="author" content="Milan Gerčák" data-next-head=""/> |
-| andrej-babis | SRC-25 | Ekonom | high | <meta name="author" content="Martin Mařík"> |
-| andrej-babis | SRC-26 | FORUM 24 | high | JSON-LD author (@type Person): Adam Opatrný |
-| andrej-babis | SRC-30 | Novinky.cz | high | JSON-LD author (@type Person): Jaroslav Soukup |
-| andrej-babis | SRC-31 | Tiscali.cz | medium | odkaz na autorský rozcestník /lukas-jirovec/ |
-| andrej-babis | SRC-40 | Podpůrný a garanční rolnický a lesnický fond (PGRLF) | medium | odkaz na autorský rozcestník /senfeldovapgrlf-cz/ |
-| andrej-babis | SRC-44 | ČT24 (Česká televize) | high | <meta name="author" content="Milan Gerčák" data-next-head=""/> |
-| andrej-babis | SRC-49 | Aktuálně.cz | high | JSON-LD author (@type Person): Jan Horák |
-| andrej-babis | SRC-56 | Aktuálně.cz | high | JSON-LD author (@type Person): Jakub Heller |
-| andrej-babis | SRC-66 | FORUM 24 | high | JSON-LD author (@type Person): Johana Šafrová |
-| andrej-babis | SRC-68 | Echo24 | medium | podpis: „Jiří Peňás" |
-| andrej-babis | SRC-70 | Transparency International ČR | high | <meta name="author" content="David Kotora" /> |
+| adam-vojtech | SRC-06 | Aktuálně.cz | high | JSON-LD author (@type Person): Veronika Rodriguez |
+| adam-vojtech | SRC-10 | Reflex | high | JSON-LD author (@type Person): Jiří Sezemský |
+| adam-vojtech | SRC-12 | Echo24 | medium | podpis: „Jiří Peňás" |
+| adam-vojtech | SRC-17 | Olomoucký deník | high | JSON-LD author (@type Person): Daniela Tauberová |
+| adam-vojtech | SRC-24 | Podnikatel.cz | high | <meta name="author" content="Daniel Morávek"> |
+| adam-vojtech | SRC-27 | CNN Prima News | high | JSON-LD author (@type Person): Karolína Neubergerová |
+| adam-vojtech | SRC-35 | Olomoucký deník | high | JSON-LD author (@type Person): Daniela Tauberová |
+| adam-vojtech | SRC-39 | Aktuálně.cz | high | <meta content="Josef Veselka" name="author" /> |
 
-## Verdikt `unknown` — nezjištěno, rodina se nevyplňuje (7)
+## Verdikt `unknown` — nezjištěno, rodina se nevyplňuje (13)
 
 | Dossier | ID | Outlet | HTTP | Důvod |
 |---|---|---|---|---|
-| andrej-babis | SRC-14 | Vláda České republiky (vlada.gov.cz) | 200 | no-credit |
-| andrej-babis | SRC-18 | Evropský parlament | 202 | no-credit |
-| andrej-babis | SRC-36 | Ministerstvo průmyslu a obchodu (MPO) | 200 | no-credit |
-| andrej-babis | SRC-54 | Aktuálně.cz | 200 | credits-inconclusive |
-| andrej-babis | SRC-75 | Vrchní soud v Praze | 200 | no-credit |
-| andrej-babis | SRC-77 | Poslanecká sněmovna Parlamentu ČR | 200 | no-credit |
-| andrej-babis | SRC-78 | Nejvyšší správní soud | 400 | fetch-failed: HTTP 400 |
+| adam-vojtech | SRC-01 | Vláda České republiky (vlada.gov.cz) | 200 | no-credit |
+| adam-vojtech | SRC-15 | Hanácká Drbna | 200 | credits-inconclusive |
+| adam-vojtech | SRC-22 | Zdravé zprávy | 200 | credits-inconclusive |
+| adam-vojtech | SRC-23 | Zdravé zprávy | 404 | fetch-failed: HTTP 404 |
+| adam-vojtech | SRC-30 | Zdravé zprávy | 200 | credits-inconclusive |
+| adam-vojtech | SRC-34 | Poslanecká sněmovna Parlamentu ČR | 200 | no-credit |
+| adam-vojtech | SRC-41 | Fakultní nemocnice Olomouc (oficiální web) | 200 | credits-inconclusive |
+| adam-vojtech | SRC-42 | Fakultní nemocnice Olomouc (oficiální web) | 200 | credits-inconclusive |
+| adam-vojtech | SRC-43 | Poslanecká sněmovna Parlamentu ČR | 200 | no-credit |
+| adam-vojtech | SRC-44 | Poslanecká sněmovna Parlamentu ČR | 200 | no-credit |
+| adam-vojtech | SRC-45 | Ministerstvo zdravotnictví ČR | 200 | no-credit |
+| adam-vojtech | SRC-46 | Policie České republiky — Krajské ředitelství policie Olomouckého kraje | 200 | no-credit |
+| adam-vojtech | SRC-50 | Zdravé zprávy | 200 | credits-inconclusive |

@@ -11,6 +11,7 @@
   "access": "open",
   "title": "Seznam Zprávy",
   "operator": "Seznam.cz, a.s.",
+  "publisherGroup": "seznam",
   "authentication": "none",
   "url": "https://www.seznamzpravy.cz/",
   "order": 200,

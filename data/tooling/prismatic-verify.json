@@ -1,0 +1,20 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/prismatic-verify",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "prismatic-verify",
+  "kind": "npm",
+  "name": "prismatic:verify",
+  "title": "Ověření importu — nehotové",
+  "category": "reserse",
+  "summary": "Stub. Vypíše odkaz na architektonické rozhodnutí a skončí nenulově.",
+  "whenToRun": "Nespouštět.",
+  "sourceFile": "scripts/prismatic/verify.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Stejný fail-loud stub jako ostatní nehotové prismatic příkazy."
+  ]
+}

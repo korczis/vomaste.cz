@@ -23,8 +23,8 @@ set -euo pipefail
 cd "$(git rev-parse --show-toplevel)"
 
 # T-028 fáze H: validate:dossier a validate:graph zanikly — jejich
-# pravidla vlastní kanonická brána data:validate (shape + reference R1–R7
-# + sémantika S1–S8 + tabulková parita T1–T8 + JSON-LD expanze).
+# pravidla vlastní kanonická brána data:validate (shape + reference R1–R8
+# + sémantika S1–S10 + tabulková parita T1–T8 + JSON-LD expanze).
 FAST_CHECKS=(
   data:validate
   validate:authorization

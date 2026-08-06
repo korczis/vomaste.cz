@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/validate-navigation-metrics",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "validate-navigation-metrics",
+  "kind": "npm",
+  "name": "validate:navigation-metrics",
+  "title": "Kontrola manifestu metrik",
+  "category": "kontrola",
+  "summary": "Spočítá metriky znovu a porovná je s odevzdaným manifestem. Nic nezapisuje.",
+  "enforces": [
+    "Rozdíl mezi přepočítanými metrikami a data/generated/navigation-metrics.json — tedy zastaralý manifest."
+  ],
+  "whenToRun": "V pipeline hned po data:metrics; v CI jako předbuildová kontrola.",
+  "inputs": [
+    "data/generated/navigation-metrics.json",
+    "static/data/**"
+  ],
+  "sourceFile": "scripts/data/build-navigation-metrics.mjs",
+  "describedFrom": "header"
+}

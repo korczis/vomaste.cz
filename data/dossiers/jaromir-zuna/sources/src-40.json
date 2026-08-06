@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-40",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-40",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "title": "SRC-40 — Deník N: Řehka chce do Senátu s podporou Starostů, i Plzeň tak čeká střet opozičních kandidátů",
+  "description": "Zpráva Deníku N o formálním oznámení kandidatury Karla Řehky do Senátu v obvodu Plzeň-město s podporou hnutí STAN.",
+  "outlet": "Deník N",
+  "sourceType": "redakční zpravodajství",
+  "url": "https://denikn.cz/2141926/rehka-chce-do-senatu-s-podporou-starostu-i-plzen-tak-ceka-stret-opozicnich-kandidatu/",
+  "published": "2026-07-30",
+  "retrieved": "2026-08-06",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-58"
+    }
+  ],
+  "subjects": [
+    "zuna"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Přímo otevřený redakční zdroj nezávislý na ČTK, jejíž přetisky nesou ostatní zdroje v tomto dossieru k tématu Řehky (SRC-14/21/27/28). Jmenuje autora (Jan Tvrdoň), datum, obvod, stranu i protikandidáta — dostatečně konkrétní na to, aby šlo o vlastní redakční práci, ne jen převzatou zprávu."
+    }
+  ],
+  "order": 40
+}

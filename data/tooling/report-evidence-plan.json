@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/report-evidence-plan",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "report-evidence-plan",
+  "kind": "npm",
+  "name": "report:evidence-plan",
+  "title": "Evidenční plán práce",
+  "category": "generovani",
+  "summary": "Generovaný přehled stavu evidence per dossier: kde je zdrojování nejslabší a co ho konkrétně posílí. Čistá projekce kanonického modelu — nic si nepamatuje a nic nedopočítává mimo data.",
+  "whenToRun": "Automaticky v data:build i v build. Ručně, když chceš aktuální plán práce; `--json` vypíše na stdout a nic nezapíše.",
+  "inputs": [
+    "data/dossiers/** (compiled model)",
+    "scripts/data/lib/source-independence.mjs"
+  ],
+  "outputs": [
+    "reports/evidence-plan.md",
+    "data/generated/evidence-plan.json"
+  ],
+  "sourceFile": "scripts/data/report-evidence-plan.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Není hodnocení osob. Vysoké skóre znamená, že TENHLE web má u daného dossieru nejvíc nedodělané zdrojovací práce — je to metrika naší evidence, ne jednání subjektu.",
+    "Report neobsahuje čas běhu: stáří mezer se měří proti nejnovějšímu datu v datasetu, takže dva běhy nad stejnými daty dají bajt po bajtu stejný soubor. Horizont lze přepsat `--as-of=RRRR-MM-DD`.",
+    "Výstupy jdou do reports/ a data/generated/, nikdy do content/ — neroutují se a žádná stránka z nich nevzniká."
+  ]
+}

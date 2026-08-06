@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/build-source-catalog",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "build-source-catalog",
+  "kind": "npm",
+  "name": "build:source-catalog",
+  "title": "Generátor katalogu zdrojů",
+  "category": "generovani",
+  "summary": "Staví katalog zdrojů ze dvou záměrně oddělených vstupů: ručně psaných záznamů o registrech (co dokládají, co nedokládají, jaké mají pasti) a SKUTEČNĚ použitých zdrojů dopočítaných z datasetu.",
+  "whenToRun": "V build i dev pipeline; ručně po editaci data/source-catalog/*.json — jinak spadne verify:source-catalog.",
+  "inputs": [
+    "data/source-catalog/*.json",
+    "data/dossiers/*/sources/*.json",
+    "schemas/canonical/source-catalog-entry.schema.json"
+  ],
+  "outputs": [
+    "data/generated/source-catalog.json",
+    "content/zdroje/_index.md",
+    "content/zdroje/<slug>.md",
+    "docs/osint/SOURCE_CATALOG.md"
+  ],
+  "sourceFile": "scripts/dossier/build-source-catalog.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Seznam „co bylo kdy použito“ se nikdy nepíše ručně, aby nemohl zastarat proti datům.",
+    "Zápis je idempotentní: soubor se přepíše jen tehdy, když se jeho obsah liší."
+  ]
+}

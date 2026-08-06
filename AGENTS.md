@@ -41,9 +41,10 @@ adapters**, not sources: Zola needs a content file to create a route, so
 `npm run data:build` regenerates minimal stubs (`generated = true`, a
 pointer to the record's view model, the canonical markdown body).
 Templates read view models (`data/generated/views/**`, gitignored) via
-`load_data("data/" ~ extra.view_model)`. **Hand-editing a generated page
-is a build error, not a shortcut** — the canonical fix is always: edit
-`data/dossiers/**`, run `npm run data:build`. Two gates own that rule:
+`load_data("data/" ~ extra.view_model)`. **Hand-editing a generated page is
+never the fix** — the canonical one is always: edit `data/dossiers/**`, run
+`npm run data:build`. Two gates own that rule, and neither is as absolute as
+it sounds (see the ordering note below):
 
 - `npm run data:check-generated:content`
   (`scripts/data/check-generated.mjs --content`) — fails when a synced
@@ -52,12 +53,15 @@ is a build error, not a shortcut** — the canonical fix is always: edit
 - `npm run lint:generated-content` — fails when such a page loses
   `generated = true` / `view_model`, or grows a front-matter key outside
   the minimal envelope (domain fields belong in the canonical record).
+  Be precise about its reach: it inspects **front matter only** (rules
+  L1–L3). A hand edit to a page *body* passes this lint untouched.
 
 Know the ordering, because it decides what a hand edit costs you: inside
 `npm run build` the sync step runs *before* the parity gate, so a body
 edit is silently **overwritten** rather than reported — the build stays
-green and the edit is simply gone. It is reported as an error when the
-parity gate runs on an unsynced tree, i.e. `npm run
+green and the edit is simply gone. Nor does the pre-commit hook catch it:
+`data:check-generated:content` is not in its fast subset. It is reported as
+an error only when the parity gate runs on an unsynced tree, i.e. `npm run
 data:check-generated:content` on its own — that is how to check a
 suspicious `content/` diff.
 
@@ -97,7 +101,7 @@ One rule, one owner — the validators that guard the dataset (all run by
 | Layer | Owner |
 |---|---|
 | Shape (types, required fields, `@id`/ISO formats, closed enums) | `schemas/canonical/*.schema.json` via `scripts/data/validate-shape.mjs` |
-| Referential integrity R1–R7 (unique `@id`s, path ↔ `@id` consistency, same-dossier references, graph layer integrity) | `scripts/data/validate-references.mjs` |
+| Referential integrity R1–R8 (unique `@id`s, path ↔ `@id` consistency, same-dossier references, graph layer integrity R7, bidirectional claim ↔ source link R8) | `scripts/data/validate-references.mjs` |
 | Editorial semantics S1–S10 (single/corroborated source rules, authorization S5/S6, graph subject nodes S7, connectivity S8, entity provenance refs S9, one-publisher-is-one-voice S10) | `scripts/data/validate-semantics.mjs` |
 | Claims-table parity T1–T8 (table row ↔ canonical claim, byte-exact) | `scripts/data/validate-registry-table.mjs` |
 | JSON-LD expansion (local context only, no network) | `scripts/data/validate-jsonld.mjs` |
@@ -105,6 +109,7 @@ One rule, one owner — the validators that guard the dataset (all run by
 | content == generated staging | `npm run data:check-generated:content` + `lint:generated-content` |
 | JSON-LD on every published page (+ node shape, no truth ratings) | `scripts/dossier/verify-jsonld.mjs` (post-build, `npm run verify:jsonld`) |
 | Evidence work plan per dossier (generated, never hand-written) | `scripts/data/report-evidence-plan.mjs` (`npm run report:evidence-plan`) |
+| Source catalogue outputs match `data/source-catalog/**` | `npm run verify:source-catalog` (pre-commit only — inside the pipeline it runs right after the generator and could never fail) |
 
 The build has a single orchestration entrypoint,
 `scripts/build/pipeline.mjs` (`npm run build` / `dev` / `check`). Graph
@@ -257,14 +262,19 @@ records ever disagree — see "One canonical source" below.
   (must be byte-identical to the overview row's claim text), `sources`
   (`@id` refs to the `SRC-##` it cites), `subjects`. Statuses:
   - `status-corroborated` ("CORROBORATED") — independently confirmed by
-    multiple outlets. Rule S2 (`validate-semantics.mjs`) enforces ≥2
-    cited sources from ≥2 distinct source families for this status —
-    sources from one publisher family don't count as independent.
-  - `status-single` ("1 ZDROJ") — a factual claim supported by exactly
-    one cited source, honestly labeled as such instead of being
-    overstated as corroborated. Rule S1 enforces exactly one cited
-    source. Upgrading to CORROBORATED requires adding a second,
-    genuinely independent source — never just relabeling.
+    multiple outlets. Rule S2 (`validate-semantics.mjs`) enforces at least
+    one **independent pair** among the cited sources: two sources that
+    differ in source family *and* in publisher (rule S10 compares both
+    `outlet` and the registered domain of `url`). Two reprints of one
+    agency wire — or two pieces from the same newsroom — are one voice.
+  - `status-single` ("1 ZDROJ") — a factual claim whose cited sources do
+    not add up to a second independent voice, honestly labeled as such
+    instead of being overstated as corroborated. Rule S1 fails when an
+    independent pair *does* exist among them. It is **not** "exactly one
+    cited source": a claim may legitimately cite three URLs and stay
+    `1 ZDROJ` if they are reprints of the same wire or come from one
+    publisher. Upgrading to CORROBORATED requires adding a genuinely
+    independent source — never just relabeling.
   - `status-quote` ("CITACE") — a direct quote from the subject, presented
     as a quote, not this site's own assessment
   - `status-disputed` ("SPORNÉ") — open, unconfirmed, or contested claim
@@ -272,10 +282,16 @@ records ever disagree — see "One canonical source" below.
     separate from reporting
 - **Sources registry (`SRC-##`)** — one canonical record per source under
   `…/sources/src-NN.json`: `outlet`, `sourceType`, `url`, `retrieved`,
-  `published`, `claims` (the CLM-## it supports), `sourceFamily` (sources
-  sharing a publisher family — not independent corroboration — versus
-  genuinely independent outlets; the S2 rule counts families, not files),
-  and a mandatory editorial markdown body (rule T7, ≥ 150 chars).
+  `published`, `claims` (the CLM-## it supports), `sourceFamily` (named
+  after the **origin** of the material, not the publisher — a ČTK wire
+  reprinted by Blesk belongs to family `ctk`; sources sharing a family are
+  one voice, not independent corroboration) and a mandatory editorial
+  markdown body (rule T7, ≥ 150 chars). The field is optional and never
+  sufficient on its own: rule S10 collapses two sources with the same
+  `outlet` or the same registered domain into one voice whatever their
+  family says, so a family can only ever *remove* independence, never add
+  it. `claims` must agree with the claims' own `sources` in both
+  directions (rule R8).
 - **Cases registry (`CASE-##`)** — one canonical record per tracked case
   under `…/cases/case-NN.json` (`anchor`, `period`, `title`, `status`,
   `label`, `summary`, `subjects`). Detail pages deliberately do **not**
@@ -329,7 +345,10 @@ cards, timeline rendering, tile counts, navigation, exports and JSON-LD
 all come from one compiled model. There are no `migrate-*-to-pages.mjs`
 regeneration scripts anymore — after editing canonical JSON, run
 `npm run data:build` to regenerate view models and content adapters, and
-never edit a generated file by hand (`lint:generated-content` blocks it).
+never edit a generated file by hand. Do not expect a gate to stop you:
+`lint:generated-content` only inspects front matter, and inside `npm run
+build` the sync step overwrites a body edit before the parity gate ever
+sees it (see "Canonical data model: JSON-first" above).
 
 Every anchor/link is additionally enforced by two build-time checks:
 
@@ -481,7 +500,25 @@ carry**.
   `data/generated/source-catalog.json` (the view model both render from, and
   the JSON-LD `Dataset` node each page emits).
 - `npm run build:source-catalog` regenerates; `npm run verify:source-catalog`
-  fails if the committed output has drifted from the data.
+  fails if the committed output has drifted from the data. The latter is a
+  pre-commit check, not a pipeline step — inside the pipeline it runs right
+  after the generator and could never fail.
+
+Two live research tools sit next to the catalogue. Neither is part of
+`npm run build`, both hit the network, and both write **internal** output
+that is never routed:
+
+- `npm run sources:detect-family` — reads the pages of sources with an empty
+  `sourceFamily` and proposes an origin from the literal credit (machine
+  metadata, byline, `Zdroj:` footer). Output is a *proposal*
+  (`reports/source-family-proposals.md`); writing back is a separate
+  `--apply` step, only for the `ctk` verdict and only into an empty field.
+  It proves the origin credit on the page — never that two texts are
+  identical, never completeness.
+- `npm run screening:public-money -- --ico=…` — published contracts for a
+  company from the contracts register (ISRS) open data. It proves that
+  published contracts exist with a counterparty, date and value; it proves
+  no wrongdoing, no completeness, and it is not an authorization decision.
 
 Two rules follow from it and bind any research pass:
 
@@ -880,14 +917,18 @@ versioned). Binding constraints:
 - Merge to `master` only with a clean `npm run build` in the worktree
   **and** on `master` after the merge. Pushing `master` is the deploy
   (GitHub Pages CI); deploy continuously after each merged task.
-- Since 2026-08-05 that push is automatic: `.githooks/post-commit` runs
-  fetch → rebase → the full `npm run build` → `git push origin master`
-  after every commit made directly on `master`, and reports on the coop
-  bus (`type: "deploy"`). It never pushes a red build or a mid-rebase
-  state — see `docs/coop/PROTOCOL.md`, "Automatický push po commitu"
-  for the exact conditions and `COOP_NO_AUTOPUSH=1` to opt a commit out.
-  Same section also has the resolution recipe for the generated-file
-  conflicts (golden test snapshot, discovery log, reports) that this
+- Since 2026-08-05/06 that push is automatic: `.githooks/post-commit`
+  and `.githooks/post-merge` (git fires a different hook pair for merge/
+  pull than for commit, so both are needed to cover every path onto
+  `master`) share one routine that runs fetch → rebase → the full
+  `npm run build` → `git push origin master` after every commit or merge
+  made directly on `master`, and reports on the coop bus
+  (`type: "deploy"`). It never pushes a red build or a mid-rebase
+  state — see `docs/coop/PROTOCOL.md`, "Automatický push po commitu a
+  mergi" for the exact conditions and `COOP_NO_AUTOPUSH=1` to opt a
+  commit/merge out. Same section also has the resolution recipe for the
+  generated-file conflicts (golden test snapshot, discovery log, reports)
+  that this
   makes visible sooner when several instances are active on the same
   dossier.
 

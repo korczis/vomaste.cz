@@ -10,12 +10,24 @@
     "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
   },
   "title": "Varování Transparency International",
-  "summary": "Varování Transparency International — viz tvrzení CLM-12, CLM-13, CLM-14, CLM-15.",
+  "summary": "Varování Transparency International — TI ČR veřejně varovala před Šebestyánovou nominací na ministra zemědělství, ředitel TI Kotora tvrdil, že Šebestyán v roli šéfa SZIF selhal a měl k dispozici informace potvrzující dřívější střet zájmů, obhajoba předsedy SPD Tomia Okamury.",
   "period": "2026",
   "status": "status-single",
   "statusLabel": "Sledované téma",
   "anchor": "kauza-transparency",
   "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-14"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-15"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-31"
     },
@@ -24,6 +36,12 @@
     }
   ],
   "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-05"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-17"
     }

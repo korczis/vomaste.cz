@@ -9,15 +9,18 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
   },
-  "text": "V květnu 2026 kriminalisté zasahovali také v Masarykově nemocnici v Ústí nad Labem, kde rovněž stoupl počet implantací a kde kardiologickou kliniku v té době vedl profesor Miloš Táborský — tentýž lékař, který do února 2025 řídil obdobné pracoviště v Olomouci.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "text": "V úterý 12. května 2026 prováděli kriminalisté úkony trestního řízení také v Masarykově nemocnici v Ústí nad Labem, kde počet implantací defibrilátorů meziročně vzrostl o 131 procent (ze 157 na 363) a kde kardiologickou kliniku v té době vedl profesor Miloš Táborský — tentýž lékař, který do února 2025 řídil obdobné pracoviště v Olomouci.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-19"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-36"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-49"
     }
   ],
   "subjects": [

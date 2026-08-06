@@ -1,0 +1,16 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/just-default",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "just-default",
+  "kind": "just",
+  "name": "default",
+  "title": "Výpis receptů",
+  "category": "provoz",
+  "summary": "Vypíše všechny recepty. Spustí se i při holém `just` bez argumentu.",
+  "whenToRun": "Když si nepamatuješ název receptu.",
+  "describedFrom": "header"
+}

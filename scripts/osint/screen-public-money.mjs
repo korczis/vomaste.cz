@@ -169,11 +169,12 @@ export function parseIcoList(raw) {
   return [...new Set(list)];
 }
 
-/* Kanonické entity dnes externalIds nemají (0 z 504 k 2026-08-03), takže
-   tenhle režim korektně ohlásí nula vstupů. Čte se `ico` (tvar podle
-   datového kontraktu) i `ares` — to je klíč, který reálně zapisuje
-   expand-entity.mjs, takže režim začne fungovat sám, jakmile expanze
-   proběhne. */
+/* Čte se `ico` (tvar podle datového kontraktu) i `ares` — to je klíč, který
+   reálně zapisuje expand-entity.mjs, takže dávka roste sama s expanzí
+   rejstříkového okolí. Prázdný výsledek je legitimní stav (volající ho
+   ohlásí a na síť nesáhne), ne důvod k odhadu — kolik entit dnes externalIds
+   má, se sem záměrně nepíše: byla by to konstanta, kterou nikdo
+   nepřepočítává. */
 export function icosFromEntities(dir = ENTITIES_DIR) {
   if (!existsSync(dir)) return [];
   const found = [];

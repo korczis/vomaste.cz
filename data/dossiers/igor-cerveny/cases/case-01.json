@@ -10,12 +10,30 @@
     "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
   },
   "title": "Majetkové přiznání a chybějící dům",
-  "summary": "Majetkové přiznání a chybějící dům — viz tvrzení CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07.",
+  "summary": "Majetkové přiznání a chybějící dům — Červený neuvedl ve vstupním majetkovém přiznání spoluvlastnictví domu, měsíc po zvolení dům dohodou převedl na manželku s ponechaným doživotním užívacím právem, ministerstvo spravedlnosti postoupilo oznámení přestupkovému orgánu, Červený chybu nejprve popíral a později připustil, podal opravné oznámení a zaplatil pokutu 7 500 Kč.",
   "period": "2026",
   "status": "status-single",
   "statusLabel": "Sledované téma",
   "anchor": "kauza-majetkove-priznani",
   "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-07"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-20"
     },
@@ -40,10 +58,10 @@
   ],
   "sources": [
     {
-      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-14"
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-02"
     },
     {
-      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-13"
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-03"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-04"
@@ -52,10 +70,13 @@
       "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-12"
     },
     {
-      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-15"
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-13"
     },
     {
-      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-03"
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-14"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-15"
     }
   ],
   "subjects": [

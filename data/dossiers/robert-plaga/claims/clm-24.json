@@ -9,15 +9,18 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
   },
-  "text": "Česká školní inspekce podle zpráv z 25. a 26. května 2026 oznámila, že provede komplexní analýzu celého procesu testování včetně souladu s ochranou osobních údajů (GDPR).",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "text": "Česká školní inspekce ve sdělení z 26. května 2026 oznámila, že celou situaci důkladně vyhodnotí, a to jak z hlediska technického zajištění testování, tak komunikace a nastavení doprovodných šetření.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-14"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-23"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-36"
     }
   ],
   "subjects": [

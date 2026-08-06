@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/prismatic-status",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "prismatic-status",
+  "kind": "npm",
+  "name": "prismatic:status",
+  "title": "Stav integrace s Prismatic",
+  "category": "reserse",
+  "summary": "Reportuje, jestli je lokální checkout prismatic-platform dohledatelný a použitelný jako upstream poskytovatel schopností. Cestu řeší env → .prismatic-local.toml → verzovaný výchozí stav a ověřuje, že jde o skutečný Git repozitář.",
+  "whenToRun": "Před čímkoli, co se opírá o Prismatic. `-- --json` vypíše strojově čitelný výstup.",
+  "inputs": [
+    "PRISMATIC_PLATFORM_PATH",
+    ".prismatic-local.toml",
+    "sourozenecký checkout prismatic-platform"
+  ],
+  "sourceFile": "scripts/prismatic/status.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Nikdy neselže jen proto, že Prismatic chybí — to je normální, podporovaný stav a veřejný build na něm nezávisí. Exit je i v tom případě 0: report není kontrola."
+  ]
+}

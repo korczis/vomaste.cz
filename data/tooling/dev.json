@@ -1,0 +1,19 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/dev",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "dev",
+  "kind": "npm",
+  "name": "dev",
+  "title": "Vývojový server",
+  "category": "provoz",
+  "summary": "Řetěz validátorů a generátorů zakončený `zola serve`. Nepoužívá režim `dev` pipeline — je to samostatný řetěz `&&` v package.json.",
+  "whenToRun": "Při práci na šablonách a stylech. Dlouho běžící: sám od sebe neskončí.",
+  "describedFrom": "command",
+  "notes": [
+    "Režim build drží zámek po celý běh, `dev` ne: `zola serve` může běžet hodiny a zamykat by na tu dobu blokovalo každý jiný build ve stejném checkoutu."
+  ]
+}

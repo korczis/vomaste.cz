@@ -25,7 +25,7 @@ jako zdrojem pravdy. Vlastnictví každého pravidla přešlo jmenovitě:
 | Dřívější vlastník | Nový vlastník |
 |---|---|
 | `validate:schemas` (tvar řádků) | `schemas/canonical/` + `validate-shape.mjs` (tvar kanonických záznamů); tvar exportů: schema brána v `build:data-exports` |
-| `validate:dossier` (reference, parita tabulka ↔ stránky) | `validate-references.mjs` R1–R7 + `validate-registry-table.mjs` T1–T8; parita se stránkami je rozpuštěná konstrukcí (stránky se generují) |
+| `validate:dossier` (reference, parita tabulka ↔ stránky) | `validate-references.mjs` R1–R8 + `validate-registry-table.mjs` T1–T8; parita se stránkami je rozpuštěná konstrukcí (stránky se generují) |
 | `validate:graph` (graf) | R7 (integrita) + S7/S8 (`validate-semantics.mjs`) + `graph` v `dossier.schema.json`; hloubka se počítá BFS (`lib/graph-depth.mjs`), depth pravidla platí z definice |
 
 ## Dělba práce (jedno pravidlo, jeden vlastník)

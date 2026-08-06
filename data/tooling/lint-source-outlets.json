@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/lint-source-outlets",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "lint-source-outlets",
+  "kind": "npm",
+  "name": "lint:source-outlets",
+  "title": "Hygiena nezávislosti zdrojů",
+  "category": "validace",
+  "summary": "Status „doloženo dvěma nezávislými“ znamená jedno: dva NEZÁVISLÍ vydavatelé referovali totéž. Tenhle lint chytá dva mechanismy, které ten slib tiše ruší, protože oba vypadají jako „dva zdroje“.",
+  "enforces": [
+    "Aliasing outletu: týž vydavatel zapsaný dvěma způsoby (například „ČT24“ vs „ČT24 (Česká televize)“) — jinak by tvrzení citující obojí vypadalo jako dvě nezávislé rodiny."
+  ],
+  "whenToRun": "Po přidání zdrojů, dřív než se tvrzení opře o dva zdroje jako o nezávislé.",
+  "inputs": [
+    "data/dossiers/*/sources/*.json"
+  ],
+  "sourceFile": "scripts/lint/lint-source-outlets.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Dvojí započtení téhož outletu (dva články jednoho vydavatele) se hlásí, ale build neshodí — jako evidence je to legitimní, jen to nesmí číst jako nezávislé potvrzení.",
+    "Třetí riziko — přetištěná agenturní zpráva ve více médiích — se jen označí. Vyžaduje lidské přečtení každého článku, takže se mechanicky nevynucuje."
+  ]
+}

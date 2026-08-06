@@ -196,6 +196,16 @@ seo_type = "WebPage"
 og_type = "website"
 seo_type = "WebPage"
 
+# Katalog toolingu: popis příkazu je referenční dokumentace, ne článek ani
+# profil osoby — proto website/WebPage, stejně jako u katalogu zdrojů.
+[page_types.toolingCommand]
+og_type = "website"
+seo_type = "WebPage"
+
+[page_types.toolingCommandIndex]
+og_type = "website"
+seo_type = "WebPage"
+
 # ---------------------------------------------------------------------------
 # Náhledová karta dossieru
 # ---------------------------------------------------------------------------

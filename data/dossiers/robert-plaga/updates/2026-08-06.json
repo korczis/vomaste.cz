@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/updates/2026-08-06",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-08-06",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "date": "2026-08-06",
+  "summary": "Kolo evidenční třídy E1+ (T-079): devět tvrzení mělo dva a víc zdrojů, ale všechny z rodiny ctk, tedy jeden hlas. Čtyři byla uzavřena primárním dokumentem mimo tuto rodinu: CLM-37 sněmovním tiskem 232/0 včetně důvodové zprávy (SRC-37), který doslovně nese větu o zkušenostech Francie a Nizozemí i o konzultaci s NUDZ; CLM-38 vlastními připomínkami ochránce práv dětí č. j. KVOP-36255/2026/S z 8. 7. 2026 v eKLEP (SRC-38); CLM-42 vlastní tiskovou zprávou ODS z 20. 7. 2026 (SRC-39); CLM-24 vlastním sdělením České školní inspekce z 26. 5. 2026 (SRC-36). CLM-06 přechází na SPORNÉ: prohlášení ČŠI z 28. 5. 2026 (SRC-40) doslovně uvádí, že vyplnění všech dotazníkových otázek nebylo podmínkou uzavření zjišťování a že otázky bylo možné přeskočit — to je přímý rozpor s citovaným zpravodajstvím a dossier mezi verzemi nerozhoduje. Opravy proti dokumentům: CLM-24 zúženo na rozsah, který ČŠI sama oznámila (technické zajištění, komunikace, nastavení doprovodných šetření) — část o souladu s GDPR pronesl podle SRC-23 ministr Plaga, ne inspekce; CLM-42 přisuzuje označení „líbivé populistické opatření“ nově ODS jako straně, jak je uvádí citované zpravodajství, ne osobně Martinu Kupkovi, a doplňuje zkrácenou citaci na plné znění. Bez povýšení zůstávají CLM-22, CLM-23, CLM-25 a CLM-41: jsou to atribuované výroky Roberta Plagy, Tomáše Zatloukala a ministrova doporučení dětskému ombudsmanovi, a primární dokumenty úřadů sice dokládají jejich věcné jádro, ale citované osoby neuvádějí — atribuci primární dokument nahradit nemůže. Nálezy bez připojení jsou zaznamenány v redakčních poznámkách SRC-36, SRC-37, SRC-38, SRC-39 a SRC-40.",
+  "addedClaims": [],
+  "updatedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-24"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-37"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-38"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-42"
+    }
+  ],
+  "addedGaps": [],
+  "closedGaps": [],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-36"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-37"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-38"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-39"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-40"
+    }
+  ]
+}

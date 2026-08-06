@@ -78,9 +78,27 @@ tímto dokumentem přibývá druhá nezávislá rodina a CLM-51 přechází na s
 (že nepřímé důkazy netvořily ucelený řetězec) ani to, že šlo o opakované
 zproštění; tyto části stojí dál jen na zpravodajství.
 
-**Nález bez připojení — CLM-80:** dokument zaznamenává, že **obžaloba u Ing.
-Babiše vycházela z pomoci ke zločinu dotačního podvodu**, ale neuvádí datum
-podání obžaloby (21. 3. 2022), právní kvalifikaci u Jany Nagyové ani trestní
-sazbu. Doložil by tedy jediný ze čtyř prvků tvrzení; k
-[CLM-80](@/dossiers/andrej-babis/claims/clm-80.md) proto připojen není a
-tvrzení zůstává `1 ZDROJ`.
+**Doplněno 2026-08-06 (kolo CASE-05, T-078):** zdroj byl znovu otevřen a přečten
+(PDF, plný text) a je nově připojen k **CLM-49** a **CLM-80**.
+
+- **CLM-49** — dokládá doslovně výši dotace a povahu sporu: „obžalovaní účelově
+  prezentovali společnost Farma Čapí hnízdo v dotačním řízení jako **malý podnik**,
+  ač si byli vědomi toho, že tato společnost ve skutečnosti kritéria malého podniku
+  nesplňuje. Společnost Farma Čapí hnízdo byla totiž **personálně i finančně zcela
+  závislá na holdingu Agrofert**, netrpěla nevýhodami malého podniku a byla do
+  dotovaného projektu zapojena toliko formálně… Uvedeným jednáním dosáhli
+  obžalovaní neoprávněného přiznání dotace v rozsahu **téměř 50 milionů Kč**.“
+  **Limit:** dokument neuvádí rok podání žádosti ani to, že by Farma Čapí hnízdo
+  byla vyvedena ze skupiny Agrofert — popisuje **závislost**, ne převod vlastnictví;
+  a jde o závěr odvolacího soudu, ne o pravomocné rozhodnutí o vině.
+- **CLM-80** — **revize závěru předchozího kola.** To SRC-75 k CLM-80 nepřipojilo
+  s odůvodněním, že by doložil jediný ze čtyř prvků tvrzení. Po připojení tiskové
+  zprávy Městského státního zastupitelství v Praze z 21. 3. 2022
+  ([SRC-86](@/dossiers/andrej-babis/sources/src-86.md)), která nese datum, soud
+  i obě právní kvalifikace, ale **neuvádí jména**, je role tohoto dokumentu jiná:
+  jako jediný z otevřených primárních dokumentů **přiřazuje kvalifikace ke jménům**
+  — „zločin dotačního podvodu a zločin poškození finančních zájmů Evropské unie
+  (ve vztahu k obžalované Ing. Nagyové, Ph.D.) a pomoci ke zločinu dotačního
+  podvodu (ve vztahu k obžalovanému Ing. Babišovi)“. **Limit, který trvá:**
+  dokument neuvádí datum podání obžaloby ani trestní sazbu.
+

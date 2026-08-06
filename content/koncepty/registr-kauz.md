@@ -35,10 +35,13 @@ obvinění bylo pravdivé, ani že bylo vyvrácené. Rozvedeno na vlastní strá
 
 ## Co vynucuje tooling
 
-Karty kauz v hlavní stránce dossieru a vygenerované detailní stránky musí
-souhlasit 1:1; `validate:dossier` a `generate:stats` build shodí, když se
-počty nebo texty rozejdou. `verify:anchors` navíc kontroluje, že každá kotva,
-na kterou kauza odkazuje, v hotovém HTML skutečně existuje.
+Karty kauz na hlavní stránce dossieru i detailní stránky se vykreslují ze
+stejného kanonického záznamu (`data/dossiers/<slug>/cases/case-NN.json`) —
+rozejít se nemůžou, protože druhá kopie neexistuje. Buduje se to, ne hlídá.
+Co se hlídá: `npm run data:validate` shodí build, když kauza odkazuje na
+neexistující tvrzení nebo zdroj (pravidlo R4), a `npm run verify:anchors`
+kontroluje po buildu, že každá kotva, na kterou kauza odkazuje, v hotovém HTML
+skutečně existuje.
 
 ## Kauza není obvinění
 

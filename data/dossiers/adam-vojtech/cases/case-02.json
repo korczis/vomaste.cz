@@ -10,12 +10,27 @@
     "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
   },
   "title": "Daňové zvýhodnění benefitů a debata o střetu zájmů",
-  "summary": "Daňové zvýhodnění benefitů a debata o střetu zájmů — viz tvrzení CLM-13, CLM-14, CLM-15, CLM-16, CLM-17.",
+  "summary": "Daňové zvýhodnění benefitů a debata o střetu zájmů — Vojtěchův pozměňovací návrh spolu s ministryní Schillerovou, opoziční upozornění na Babišovy zdravotnické kliniky jako možné beneficienty, ministrova odpověď při interpelaci, komentářová kritika, to, že jde o poslanecký návrh mimo standardní legislativní proces, a doložené příjmy klinik FutureLife spojených s premiérem Babišem z veřejného zdravotního pojištění.",
   "period": "2026",
   "status": "status-single",
   "statusLabel": "Sledované téma",
   "anchor": "kauza-benefity-stret",
   "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-14"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-15"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-16"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-17"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-34"
     },
@@ -48,26 +63,44 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-44"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-52"
     }
   ],
   "sources": [
     {
-      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-26"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-23"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-25"
-    },
-    {
       "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-10"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-22"
     },
     {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-23"
+    },
+    {
       "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-24"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-25"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-26"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-38"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-43"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-44"
     }
   ],
   "subjects": [

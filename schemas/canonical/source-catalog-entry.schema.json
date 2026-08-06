@@ -221,6 +221,11 @@
         }
       },
       "$comment": "Na které otázky tenhle pramen odpovídá. Katalog bez tohohle popisuje zdroje, ale nemapuje na ně otázky — a rešerše začíná otázkou, ne názvem registru. Generátor z toho staví směrovací tabulku, v níž primární prameny stojí před agregátory a médii."
+    },
+    "publisherGroup": {
+      "type": "string",
+      "minLength": 1,
+      "$comment": "Vydavatelská skupina doložená v katalogu (týž provozovatel pod více značkami). Dva zdroje téže skupiny netvoří nezávislou dvojici — viz pravidlo S10 a scripts/data/lib/source-independence.mjs."
     }
   }
 }

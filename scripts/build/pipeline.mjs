@@ -18,8 +18,8 @@
  * vygenerují. Od fáze H (T-028) je kanonický dataset JEDINÝ zdroj
  * pravdy: dřívější validátory obsahové vrstvy (validate:dossier,
  * validate:schemas, validate:graph) zanikly — jejich pravidla vlastní
- * kanonické validátory (validate-references R1–R7, validate-semantics
- * S1–S8, validate-registry-table T1–T8, schemas/canonical/) a schema
+ * kanonické validátory (validate-references R1–R8, validate-semantics
+ * S1–S10, validate-registry-table T1–T8, schemas/canonical/) a schema
  * brána exportů žije přímo v build:data-exports.
  *
  * Kroky se spouštějí přes `npm run <script>`, aby definice příkazů
@@ -73,6 +73,16 @@ const BUILD_STEPS = [
   "lint:hardcoded-records",
   "lint:generated-content",
   "build:source-catalog",
+  // Katalog toolingu: brána běží PŘED generátorem schválně. `--check`
+  // porovnává commitnuté stránky a docs/TOOLING.md s tím, co by z dat
+  // vzniklo — kdyby běžela až za generátorem, porovnávala by výstup se
+  // sebou samým a nikdy by neselhala. Zároveň je to místo, kde build
+  // spadne na příkazu přidaném do package.json / justfile /
+  // .claude/skills bez záznamu v data/tooling/ (kontroly G1–G6 běží
+  // v obou režimech). Generátor za ní pak doplní gitignorovaný view
+  // model, který šablony čtou při `zola build`.
+  "verify:tooling-catalog",
+  "build:tooling-catalog",
   "build:data-exports",
   "build:graph-projections",
   "validate:graph-projections",
@@ -118,6 +128,7 @@ const DEV_STEPS = [
   "build:secondary-providers",
   "validate:navigation",
   "build:source-catalog",
+  "build:tooling-catalog",
   "build:data-exports",
   "build:graph-projections",
   "validate:graph-projections",

@@ -28,7 +28,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "ČeskéNoviny.cz (ČTK) dne 2. 7. 2026 potvrzuje zrušení výběrového řízení\nna generálního ředitele Národní galerie Praha, jmenuje tři postupující\nuchazeče (Marcel Fišer, Olga Kotková, Aleš Seifert) a uvádí, že Olga\nKotková nadále vede galerii jako pověřená ředitelka.\n\n**Nezávislost**: Revize zdrojových rodin (2026-08-05): článek na ČT24\n(SRC-04) je podepsán ČTK — obě citace stojí na jednom agenturním základu\n(rodina `ctk`). CLM-22 proto nese stav `1 ZDROJ`."
+      "value": "ČeskéNoviny.cz (ČTK) dne 2. 7. 2026 potvrzuje zrušení výběrového řízení\nna generálního ředitele Národní galerie Praha, jmenuje tři postupující\nuchazeče (Marcel Fišer, Olga Kotková, Aleš Seifert) a uvádí, že Olga\nKotková nadále vede galerii jako pověřená ředitelka.\n\n**Nezávislost**: Revize zdrojových rodin (2026-08-05): článek na ČT24\n(SRC-04) je podepsán ČTK — obě citace stojí na jednom agenturním základu\n(rodina `ctk`). CLM-22 proto do 2026-08-06 neslo stav `1 ZDROJ`;\nnezávislé doložení mu dodal až primární dokument Ministerstva kultury\n[SRC-31](@/dossiers/oto-klempir/sources/src-31.md)."
     }
   ],
   "order": 27

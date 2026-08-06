@@ -1,0 +1,22 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/skill-bootstrap",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "skill-bootstrap",
+  "kind": "skill",
+  "name": "bootstrap",
+  "title": "Nastartování session",
+  "category": "provoz",
+  "summary": "Rychlá opakovatelná cesta k tomu být bezpečně v obraze: potvrdit pracovní adresář a větev, přečíst závazná pravidla v daném pořadí (AGENTS.md, konstituce, co-op protokol, CLAUDE.md), ověřit prerekvizity, podívat se, co v repozitáři právě běží, a teprve pak zvolit roli — přímá práce v hlavním checkoutu, nebo worker ve worktree pro konkrétní úkol.",
+  "whenToRun": "Jako první věc v každé nové session, dřív než se cokoli edituje. Volitelný argument je id úkolu (T-###).",
+  "describedFrom": "header",
+  "notes": [
+    "Nenahrazuje zdrojové dokumenty — říká, které přečíst, v jakém pořadí a co ověřit před první editací.",
+    "Prerekvizity se ověřují, ne předpokládají. Chybějící prerekvizitu neobcházej přeskočením kontrol, které umožňuje — sežeň prerekvizitu.",
+    "Když strom úkolů ukazuje, že v repozitáři pracuje víc instancí, překryv rozsahu se hlásí na co-op sběrnici PŘED začátkem práce, ne až u konfliktu.",
+    "Cokoli pod content/, templates/ nebo scripts/dossier/ není „drobná infra práce“ a nepatří do přímých commitů na master."
+  ]
+}

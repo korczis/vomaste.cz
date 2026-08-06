@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/test-intake-github",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "test-intake-github",
+  "kind": "npm",
+  "name": "test:intake:github",
+  "title": "Testy GitHub adaptérů a publikace",
+  "category": "kontrola",
+  "summary": "node:test nad adaptéry, zpracováním události, publikací výsledku, moduly github/ a kontrolou bezpečnosti artefaktů.",
+  "enforces": [
+    "Padlý test v GitHub vrstvě intake pipeline."
+  ],
+  "whenToRun": "Při práci na integraci s GitHubem.",
+  "inputs": [
+    "scripts/intake/adapters/*.test.mjs",
+    "scripts/intake/github/*.test.mjs",
+    "scripts/intake/process-github-event.test.mjs",
+    "scripts/intake/publish-github-result.test.mjs",
+    "scripts/intake/validate-artifact-safety.test.mjs"
+  ],
+  "describedFrom": "command",
+  "notes": [
+    "Tři z těchhle testových souborů (process-github-event, publish-github-result, validate-artifact-safety) nemají hlavičkový komentář — co pokrývají, se dá zjistit jen ze jmen testů uvnitř."
+  ]
+}

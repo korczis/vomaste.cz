@@ -1,0 +1,19 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/test-e2e-benchmark",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "test-e2e-benchmark",
+  "kind": "npm",
+  "name": "test:e2e:benchmark",
+  "title": "Playwright — benchmark grafu",
+  "category": "kontrola",
+  "summary": "Spustí tests/e2e/graph-benchmark.spec.mjs v projektu desktop s proměnnou RUN_GRAPH_BENCHMARK=1, která test odemyká — bez ní se přeskakuje.",
+  "whenToRun": "Ručně, když měříš chování grafu v prohlížeči.",
+  "inputs": [
+    "tests/e2e/graph-benchmark.spec.mjs"
+  ],
+  "describedFrom": "command"
+}

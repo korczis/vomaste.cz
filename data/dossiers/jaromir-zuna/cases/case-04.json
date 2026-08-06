@@ -10,12 +10,21 @@
     "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
   },
   "title": "Spor o koncepci armády",
-  "summary": "Spor o koncepci armády — viz tvrzení CLM-17, CLM-18, CLM-19.",
+  "summary": "Spor o koncepci armády — Babišova kritika plánovaného počtu vojáků, Zůnova reakce a zvýšení náborového cíle, jednání Bezpečnostní rady státu, demografické zdůvodnění změny koncepce, spor s bývalou ministryní Černochovou i průběžná data o náboru a plnění cílů.",
   "period": "2026",
   "status": "status-single",
   "statusLabel": "Sledované téma",
   "anchor": "kauza-koncepce-armady",
   "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-17"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-18"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-19"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-32"
     },
@@ -57,38 +66,47 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-53"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-57"
     }
   ],
   "sources": [
     {
-      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-25"
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-12"
     },
     {
-      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-32"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-31"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-19"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-29"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-18"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-30"
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-13"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-15"
     },
     {
-      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-22"
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-18"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-19"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-20"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-22"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-25"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-29"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-30"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-31"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-32"
     }
   ],
   "subjects": [

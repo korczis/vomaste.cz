@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/authorize-entity",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "authorize-entity",
+  "kind": "npm",
+  "name": "authorize:entity",
+  "title": "Autorizace subjektu",
+  "category": "provoz",
+  "summary": "Jediná cesta, jak se dossierový status kontextové entity změní na „authorized“. Přidá datovaný append-only záznam do logu v AGENTS.md, odpovídající strukturovaný záznam do data/authorizations.toml a překlopí roli entity na subject.",
+  "whenToRun": "Před založením nového dossieru, po rozhodnutí vlastníka. Následuje authorization:anchor a teprve pak dossier:scaffold.",
+  "inputs": [
+    "interaktivní vstup nebo --owner-authorized-in-conversation + --scope-file"
+  ],
+  "outputs": [
+    "AGENTS.md (append)",
+    "data/authorizations.toml (append)",
+    "kanonický záznam entity"
+  ],
+  "sourceFile": "scripts/dossier/authorize-entity.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Normální cesta je interaktivní a vyžaduje, aby člověk napsal id entity, rozsah a potvrzovací frázi. Obecný CI/background režim --yes neexistuje.",
+    "Nescaffolduje obsah dossieru. Dělá entitu jen způsobilou; validate:authorization dál shodí build, pokud dossier existuje bez skutečných zdrojů a tvrzení."
+  ]
+}

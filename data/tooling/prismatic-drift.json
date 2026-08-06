@@ -1,0 +1,17 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/prismatic-drift",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "prismatic-drift",
+  "kind": "npm",
+  "name": "prismatic:drift",
+  "title": "Detektor driftu Prismatic — nehotové",
+  "category": "reserse",
+  "summary": "Stub. Vypíše odkaz na architektonické rozhodnutí a skončí nenulově. Není proti čemu drift měřit — dosud nic neprošlo touhle pipeline až do promoce, takže neexistuje přijatý baseline.",
+  "whenToRun": "Nespouštět.",
+  "sourceFile": "scripts/prismatic/drift.mjs",
+  "describedFrom": "header"
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/dossier-next-id",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "dossier-next-id",
+  "kind": "npm",
+  "name": "dossier:next-id",
+  "title": "Další volné ID záznamu, ověřené i proti originu",
+  "category": "reserse",
+  "summary": "Spočítá další volné ID pro claim/source/case/gap jednoho dossieru a kontroluje přitom nejen lokální strom, ale i origin/master — a hlásí, když se liší.",
+  "whenToRun": "Před založením každého nového kanonického záznamu v dossieru, na kterém může pracovat i někdo jiný.",
+  "inputs": [
+    "data/dossiers/<slug>/<registry>/",
+    "origin/master"
+  ],
+  "outputs": [
+    "výpis na stdout"
+  ],
+  "sourceFile": "scripts/dossier/next-id.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Vzniklo z reálné kolize: dvě souběžné instance spočítaly totéž „další volné\" ID ze svých lokálních kopií a výsledkem bylo ruční přečíslování sedmi záznamů.",
+    "`--no-fetch` přeskočí `git fetch` pro offline běh; tím ale mizí právě ta kontrola, kvůli které skript existuje."
+  ]
+}

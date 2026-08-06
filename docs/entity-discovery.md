@@ -76,6 +76,13 @@ A context entity must never have:
 enforce all of the above at build time — it is not just a convention, it
 is a build-failing invariant.
 
+Provenance is checked too: rule **S9** fails the build when a `CLM-##`/
+`SRC-##` in an entity's `provenance.claimRefs`/`sourceRefs` does not
+resolve in any dossier listed in that entity's own `dossiers` array. That
+is the failure mode content extraction actually produces — a reference
+frozen in place after the record it pointed at was merged, renumbered or
+deleted.
+
 ## The authorization-candidates report
 
 `scripts/dossier/generate-authorization-candidates.mjs` produces:
@@ -95,24 +102,34 @@ informed by real data rather than made from memory.
 ## Promoting a context entity to a subject
 
 The only way an entity's `dossier_status` becomes `"authorized"` is
-`scripts/dossier/authorize-entity.mjs`, run by the site owner, locally, at
-a real keyboard:
+`scripts/dossier/authorize-entity.mjs`, run locally on the site owner's
+explicit, on-the-record decision:
 
 ```
 node scripts/dossier/authorize-entity.mjs <entity-id>
 ```
 
-It refuses to run at all unless attached to an interactive TTY — no CI job,
-build step, or agent tool call can invoke it non-interactively, because
-there is no flag that skips the prompts. It requires the operator to type,
-in three separate steps: the exact entity id (confirming which entity),
-the authorized scope in their own words (appended verbatim to `AGENTS.md`
-— there is no default text and nothing is auto-generated), and the literal
-word `AUTHORIZE` as a final confirmation. Only after all three does it
-append the new dated entry to `AGENTS.md`'s log, add a matching record to
-`data/authorizations.toml`, and flip the entity's own canonical
+The interactive path requires the operator to type, in three separate
+steps: the exact entity id (confirming which entity), the authorized scope
+in their own words (appended verbatim to `AGENTS.md` — there is no default
+text and nothing is auto-generated), and the literal word `AUTHORIZE` as a
+final confirmation. Only after all three does it append the new dated entry
+to `AGENTS.md`'s log, add a matching record to `data/authorizations.toml`,
+and flip the entity's own canonical
 `publicationRole`/`dossierStatus`/`dossierEnabled` fields
 (`data/dossiers/_shared/entities/<id>.json`).
+
+**There is a second, non-interactive path, and this document used to deny
+it.** Without a TTY the script still runs if — and only if — it is given
+both `--owner-authorized-in-conversation` and `--scope-file=<path>`; the
+scope file is appended verbatim, exactly as typed text would be. That path
+exists so an agent can record a decision the site owner actually made in
+the current conversation (see `CLAUDE.md`). What the script blocks is a
+generic unattended mode: there is no `--yes`, and either flag without the
+other is refused. So the TTY is not the safeguard — the safeguard is that
+*something* has to assert an on-the-record owner decision, and that
+assertion is written into a permanent, append-only log where a false one is
+visible. CI and background automation still cannot invent owner intent.
 
 It deliberately does not write dossier content. Authoring what a new
 dossier actually says — the claims, the sources, the narrative — stays a
@@ -120,6 +137,7 @@ separate, later, still fully human and still fully sourced editorial act.
 This tool only ever unlocks eligibility; `validate-authorization.mjs`
 still fails the build if a dossier's subject wasn't authorized this way.
 
-No script performs this authorization step non-interactively. No prompt,
-however detailed, performs this step. It is the one part of this pipeline
-that stays entirely, mechanically, human.
+No prompt, however detailed, performs this step on its own: the decision it
+records has to have been made by the site owner, on the record, and the
+record of it is permanent. That is the part of this pipeline that stays
+human — not the keyboard, the decision.

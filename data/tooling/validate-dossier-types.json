@@ -1,0 +1,26 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/validate-dossier-types",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "validate-dossier-types",
+  "kind": "npm",
+  "name": "validate:dossier-types",
+  "title": "Entitní × agregátní dossier",
+  "category": "validace",
+  "summary": "Vynucuje rozdíl mezi entitním a agregátním dossierem: agregát je generovaný pohled, nikdy třetí rovnocenný dossier a nikdy místo, kde vznikají nové záznamy.",
+  "enforces": [
+    "Entitní dossier, který vlastní byť jediný fyzický per-record soubor — každý registr, který ukazuje, musí být filtrovaná projekce, nikdy duplikát."
+  ],
+  "whenToRun": "V build i dev pipeline; po každé změně dossierType nebo po přesunu záznamů mezi dossiery.",
+  "inputs": [
+    "data/dossiers/** (compiled model)"
+  ],
+  "sourceFile": "scripts/dossier/validate-dossier-types.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Kde kanonické soubory fyzicky leží, samo o sobě vada není — Zola dává každému souboru právě jednu URL a přesun by rozbil existující kanonické adresy a kotvy. Kontroluje se tedy invariant, který za téhle podmínky dává smysl: nic se nesmí duplikovat."
+  ]
+}

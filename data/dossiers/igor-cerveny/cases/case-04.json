@@ -10,12 +10,24 @@
     "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
   },
   "title": "Cesta do USA",
-  "summary": "Cesta do USA — viz tvrzení CLM-16, CLM-17, CLM-18, CLM-19.",
+  "summary": "Cesta do USA — desetidenní cesta po USA s návštěvou národních parků, Červeného odmítnutí sdělit podrobnosti jednání a složení delegace, zjištěné členství šéfa komunikace Motoristů Lukáše Koutníka v delegaci a Červeného kritika klimatické politiky EU a Green Dealu v rozhovoru pro Fox News.",
   "period": "2026",
   "status": "status-single",
   "statusLabel": "Sledované téma",
   "anchor": "kauza-cesta-usa",
   "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-16"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-17"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-18"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-19"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-49"
     },
@@ -46,16 +58,16 @@
   ],
   "sources": [
     {
-      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-18"
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-10"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-16"
     },
     {
-      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-19"
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-18"
     },
     {
-      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-10"
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-19"
     }
   ],
   "subjects": [

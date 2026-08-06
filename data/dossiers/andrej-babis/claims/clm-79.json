@@ -9,12 +9,15 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
   },
-  "text": "Nejvyšší státní zástupce Pavel Zeman 4. prosince 2019 zrušil zastavení stíhání Babiše a Jany Mayerové „jako nezákonné a předčasné“; u dalších čtyř obviněných důvody pro zrušení neshledal a jejich stíhání zůstalo zastaveno. Obnovení stíhání není rozhodnutí o vině — vyšetřování jím pokračovalo",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "text": "Nejvyšší státní zástupce 4. prosince 2019 ukončil přezkum usnesení Městského státního zastupitelství v Praze ze dne 30. srpna 2019 o zastavení trestního stíhání šesti fyzických osob: u čtyř z nich shledal zastavení „zákonné a důvodné“, u dvou je označil za „nezákonné a předčasné“ a postupem podle § 174a odst. 1 trestního řádu je ve vymezené části zrušil; věc se u nich vrátila do stadia přípravného řízení. Že šlo o Andreje Babiše a Janu Mayerovou, uvádí citované zpravodajství — tisková zpráva Nejvyššího státního zastupitelství jména neuvádí. Závěry oznámil nejvyšší státní zástupce Pavel Zeman a NSZ výslovně dodalo, že rozhodnutí „nijak nepředjímá konečný výsledek přípravného řízení ani způsob jeho meritorního skončení“ — obnovení stíhání není rozhodnutí o vině",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-56"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-85"
     }
   ],
   "subjects": [],
@@ -22,7 +25,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni).\n\n**Opraveno a povýšeno 2026-08-06 (kolo CASE-05, T-078).** Připojena tisková\nzpráva Nejvyššího státního zastupitelství „Nejvyšší státní zástupce ukončil\npřezkum v tzv. kauze Čapí hnízdo“ ze 4. 12. 2019\n([SRC-85](@/dossiers/andrej-babis/sources/src-85.md)) — primární dokument úřadu,\nkterý rozhodl.\n\nOpravy proti dokumentu:\n\n- **„u dalších čtyř obviněných důvody pro zrušení neshledal“ → „zastavení jejich\n  trestního stíhání bylo zákonné a důvodné“.** To není totéž: neshledání důvodů\n  je pasivní výsledek přezkumu, kdežto NSZ učinilo **pozitivní závěr** o zákonnosti\n  a důvodnosti zastavení u čtyř osob.\n- **Doplněna procesní přesnost, kterou zpravodajství neuvádí**: zrušeno bylo\n  usnesení **ze dne 30. 8. 2019** (pravomocné 17. 9. 2019), a to **jen „ve\n  vymezené části“** postupem podle **§ 174a odst. 1 trestního řádu**; věc se tím\n  vrací **do stadia přípravného řízení**, kde je státní zástupce vázán vysloveným\n  právním názorem (§ 174a odst. 3).\n- **Jména v dokumentu nejsou.** Tisková zpráva mluví o „dvou fyzických osobách“;\n  že jde o Andreje Babiše a Janu Mayerovou, plyne jen z citovaného zpravodajství\n  ([SRC-56](@/dossiers/andrej-babis/sources/src-56.md)). Tvrzení to nově přiznává.\n\n**Doplněno:** rámování „obnovení stíhání není rozhodnutí o vině“ má nyní přímou\noporu v dokumentu — NSZ samo uvádí, že rozhodnutí „nijak nepředjímá konečný\nvýsledek přípravného řízení ani způsob jeho meritorního skončení“."
     }
   ]
 }

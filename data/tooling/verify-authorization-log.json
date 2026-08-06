@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/verify-authorization-log",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "verify-authorization-log",
+  "kind": "npm",
+  "name": "verify:authorization-log",
+  "title": "Append-only autorizační log",
+  "category": "validace",
+  "summary": "Mechanicky vynucuje nejkritičtější pravidlo AGENTS.md: sekce „Content about real parties“ je append-only. Každý existující datovaný záznam musí přežít byte-verně; přidávat lze jen nové.",
+  "enforces": [
+    "Editace nebo smazání existujícího záznamu logu proti merge-base s origin/master (fallback origin/main, pak HEAD).",
+    "Ukotvený záznam, který v AGENTS.md už není byte-verně přítomen (hash-kotva data/authorizations-log-anchor.json).",
+    "Záznam v logu, který v kotvě není — nový záznam vyžaduje vědomé ukotvení přes authorization:anchor (fail-closed).",
+    "Neznámý tvar ### nadpisu v území logu (tiché ignorování je zakázané)."
+  ],
+  "whenToRun": "V build pipeline a v pre-commit. Po přidání nové autorizace nejdřív spusť authorization:anchor, jinak tahle brána build zastaví.",
+  "inputs": [
+    "AGENTS.md",
+    "data/authorizations-log-anchor.json",
+    "git merge-base s origin/master"
+  ],
+  "sourceFile": "scripts/dossier/verify-authorization-log-append-only.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "První verze porovnávala jen s `git show HEAD:AGENTS.md` — v CI to byl no-op a po jediném commitu se editace stala novým baseline. Proto dnes dva nezávislé mechanismy: git baseline a commitnutá hash-kotva."
+  ]
+}

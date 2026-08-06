@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/css-build",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "css-build",
+  "kind": "npm",
+  "name": "css:build",
+  "title": "Build CSS",
+  "category": "generovani",
+  "summary": "Přeloží static/css/input.css Tailwindem do minifikovaného static/css/main.css.",
+  "whenToRun": "V build, dev i generate:all. Ručně po změně tříd v šablonách nebo tailwind.config.js.",
+  "inputs": [
+    "static/css/input.css",
+    "tailwind.config.js",
+    "templates/**",
+    "assets/**"
+  ],
+  "outputs": [
+    "static/css/main.css (gitignorováno)"
+  ],
+  "describedFrom": "command"
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/check-workflow-parity",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "check-workflow-parity",
+  "kind": "npm",
+  "name": "check:workflow-parity",
+  "title": "Parita CI s lokálním buildem",
+  "category": "validace",
+  "summary": "Hlídá, že deploy workflow volá `npm run build`, a ne že si znovu vypisuje jednotlivé kroky pipeline.",
+  "enforces": [
+    "Workflow, který přestal volat `npm run build`.",
+    "Workflow, který začal znovu vyjmenovávat kroky pipeline jednotlivě."
+  ],
+  "whenToRun": "Po každé editaci .github/workflows/deploy.yml.",
+  "inputs": [
+    ".github/workflows/deploy.yml",
+    "package.json"
+  ],
+  "sourceFile": "scripts/ci/check-workflow-parity.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Vznikl z reálné škody: workflow si kroky vypisoval ručně, nové kroky se do něj nedostaly a produkce týdny neměla JSON-LD exporty, které lokální build vyráběl.",
+    "Záměrně NEporovnává seznamy kroků. Vyjmenovávání JE ta chyba; pravidlo zní „nevyjmenovávej“ a kontroluje se přesně to."
+  ]
+}

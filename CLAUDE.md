@@ -58,25 +58,34 @@ entry; it does not replace reading and applying the rule.
   manually: `npm run hooks:install`) — a fast, pure-data validator subset.
   This is a convenience, not the real gate: it does **not** replace the
   full `npm run build` requirement below, and does not include
-  `lint:historical-coupling` (still red — currently 58 residual
-  occurrences of seed-subject identifiers in structural code, e.g.
-  `templates/entity-dossier.html`, `scripts/data/build-view-models.mjs`
+  `lint:historical-coupling` (still red — residual occurrences of
+  seed-subject identifiers in structural code, e.g.
+  `templates/entity-dossier.html`, `scripts/data/build-view-models.mjs`,
+  `data/navigation.toml` and the archived migrators; the count is not
+  written down here on purpose, it drifts with every touch of those files
   — outside the build gate on purpose. The migration that was tracked as
   `docs/coop/TASKS.md` T-001 is done/superseded — see T-028 there — but
   this specific cleanup has no open tracking task right now; run
   `npm run lint:historical-coupling` yourself to see current occurrences
   before assuming it's clean).
-- **On `master`, a commit auto-pushes.** `.githooks/post-commit`
-  (installed the same way as pre-commit, since 2026-08-05) runs fetch →
-  rebase onto `origin/master` → the **full** `npm run build` → `git push
-  origin master` automatically after every commit made directly on
-  `master` — push to `master` is the live GitHub Pages deploy, so this
-  means committing on `master` now typically deploys within seconds,
-  not "commit now, push later after a review pause." It aborts cleanly
-  (commit stays local, nothing pushed) on a rebase conflict or a red
-  full build; see `docs/coop/PROTOCOL.md`, "Automatický push po
-  commitu" for the exact bail-out conditions and the recipe for the
-  generated-file conflicts (golden test snapshot, discovery log,
+- **On `master`, a commit OR a merge auto-pushes.**
+  `.githooks/post-commit` and `.githooks/post-merge` (installed the same
+  way as pre-commit, since 2026-08-05/06) share one routine
+  (`.githooks/lib/auto-push-master.sh`) that runs fetch → rebase onto
+  `origin/master` → the **full** `npm run build` → `git push origin
+  master` automatically after every commit AND every merge made
+  directly on `master` — push to `master` is the live GitHub Pages
+  deploy, so this means committing or merging on `master` now typically
+  deploys within seconds, not "commit now, push later after a review
+  pause." Both hooks exist because `git merge`/`git pull` fire a
+  different hook pair than `git commit` (`pre-merge-commit`/
+  `post-merge`, never `pre-commit`/`post-commit`) — discovered
+  2026-08-06 when the standard coop merge step (`git merge --no-ff
+  task/T-###`) turned out to skip auto-push entirely. It aborts cleanly
+  (commit/merge stays local, nothing pushed) on a rebase conflict or a
+  red full build; see `docs/coop/PROTOCOL.md`, "Automatický push po
+  commitu a mergi" for the exact bail-out conditions and the recipe for
+  the generated-file conflicts (golden test snapshot, discovery log,
   reports) that commonly cause the rebase step to need manual
   resolution when several instances are active. Consequence for your
   own workflow: get confirmation *before* committing directly on

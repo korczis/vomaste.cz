@@ -110,8 +110,12 @@ git commit && git push && # otevřít pull request
 kanonický JSON v `data/dossiers/**` (záznamy tvrzení/zdrojů/kauz/mezer/
 vztahů/updatů po souborech, `dossier.json` s tabulkou tvrzení a grafovou
 vrstvou, globální entity v `data/dossiers/_shared/entities/`). Markdown
-pod `content/dossiers/**` a `content/entities/` je **generovaný adaptér**
-— ruční úpravu zablokuje lint; regeneruje ji `npm run data:build`. Nový
+pod `content/dossiers/**` a `content/entities/` je **generovaný adaptér**;
+regeneruje ho `npm run data:build`. Nespoléhejte na to, že vás ruční úprava
+zastaví: `lint:generated-content` kontroluje jen front matter a uvnitř
+`npm run build` běží synchronizace *před* paritní bránou, takže úprava těla
+stránky se tiše přepíše a build zůstane zelený. Podezřelý diff v `content/`
+odhalí samostatné `npm run data:check-generated:content`. Nový
 dossier (po autorizaci) založí `npm run dossier:scaffold` — bez
 odpovídajícího záznamu v `data/authorizations.toml` odmítne běžet.
 Rychlá validace jednoho souboru:
@@ -151,6 +155,9 @@ prodlevy a bez nutnosti znovu objevovat pravidla z první konverzace:
      (vynucuje autorizační scope-gate jako krok 0 — bez záznamu v
      `AGENTS.md` se obsah o reálné osobě nepřidává, agent se má
      zeptat, ne hádat);
+   - celé autorizované šetření end-to-end (scope check → větev →
+     manifest → zdrojovaný výzkum → PR, nikdy autopublikace) → skill
+     **`investigate`**;
    - netriviální technické rozhodnutí (nová závislost, výměna
      komponenty) → skill **`adr`** (měřený současný stav, ne odhad —
      viz `docs/adr/graph-renderer.md` jako referenční příklad);

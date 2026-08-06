@@ -10,14 +10,17 @@
     "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
   },
   "text": "Klempíř v březnu 2026 odvolal generální ředitelku Národní galerie Praha Alicju Knastovou; vedením instituce byla pověřena Olga Kotková.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-04"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-32"
     }
   ],
   "subjects": [

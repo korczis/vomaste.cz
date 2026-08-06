@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% import "macros/ui.html" as ui %}
+{% import "macros/table.html" as table %}
+
+{#- Index katalogu toolingu.
+
+    Jedna tabulka nad data/generated/tooling-catalog.json — načteným jednou
+    za build, ne jednou za řádek. Žádný název příkazu, počet ani cesta tu
+    není napsaná: přidání příkazu do repozitáře se sem promítne samo. -#}
+
+{% block content %}
+{%- set catalog = load_data(path="data/generated/tooling-catalog.json") -%}
+
+<main class="mx-auto max-w-3xl px-6 py-12 text-white">
+  {{ ui::page_header(title=section.title, breadcrumb_items=[
+    "Domů::" ~ get_url(path="@/_index.md"),
+    "Dokumentace::" ~ get_url(path="@/dokumentace/_index.md"),
+    section.title,
+  ], description=section.description) }}
+
+  <article class="dossier-prose mb-10">
+    {{ section.content | safe }}
+  </article>
+
+  <p class="mb-8 flex flex-wrap items-center gap-2 text-xs">
+    <span class="rounded bg-white/5 px-2 py-1 font-mono text-[#f3e5c0]">{{ catalog.counts.total }} příkazů</span>
+    <span class="rounded border border-white/15 px-2 py-1 text-white/50">{{ catalog.counts.gates }} může shodit běh</span>
+    <span class="rounded border border-white/15 px-2 py-1 text-white/50">{{ catalog.counts.inBuild }} kroků buildu</span>
+    <span class="rounded border border-white/15 px-2 py-1 text-white/50">{{ catalog.counts.inPrecommit }} v pre-commitu</span>
+  </p>
+
+  <section aria-labelledby="prikazy-heading">
+    <h2 id="prikazy-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Všechny příkazy</h2>
+    <p class="mb-4 text-sm leading-relaxed text-white/55">
+      Sloupec „Vynucuje“ říká, jestli příkaz při porušení skončí nenulově a zastaví tím build. Sloupce „Pipeline“ a „Pre-commit“ se čtou
+      z <code class="font-mono">scripts/build/pipeline.mjs</code> a <code class="font-mono">.githooks/pre-commit</code>, ne z ručně psaného záznamu.
+    </p>
+    {{ table::advanced_table(
+      id="tooling-prikazy",
+      caption="Příkazy repozitáře",
+      record_type="toolingCommand",
+      columns=["Příkaz", "Vrstva", "Kategorie", "Vynucuje", "Pipeline", "Pre-commit"],
+      count=catalog.counts.total,
+      searchable=true,
+      sort_keys=["text", "text", "text", "text", "text", "text"],
+      export_name="tooling-prikazy") }}
+      {%- for e in catalog.entries %}
+      <tr class="border-t border-white/5">
+        <td class="p-3">
+          <a href="{{ get_url(path='@/dokumentace/prikazy/' ~ e.identifier ~ '.md') | safe }}" class="font-mono text-[#f3e5c0] underline decoration-white/30 underline-offset-2">{{ e.invocation }}</a>
+          <span class="mt-1 block text-xs text-white/60">{{ e.title }}</span>
+        </td>
+        <td class="p-3 text-white/70">{{ e.kindLabel }}</td>
+        <td class="p-3 text-white/70">{{ e.categoryLabel }}</td>
+        <td class="p-3">{% if e.enforces | length > 0 %}ano{% else %}<span class="text-white/60">—</span>{% endif %}</td>
+        <td class="p-3 text-white/70">{% if e.pipelines | length > 0 %}{{ e.pipelines | join(sep=", ") }}{% else %}<span class="text-white/60">—</span>{% endif %}</td>
+        <td class="p-3">{% if e.precommit %}ano{% else %}<span class="text-white/60">—</span>{% endif %}</td>
+      </tr>
+      {%- endfor %}
+    {{ table::advanced_table_end(
+      footer="Dopočítáno z package.json, justfile, .claude/skills/** a scripts/build/pipeline.mjs při každém buildu.",
+      empty_text="Filtru neodpovídá žádný příkaz.") }}
+  </section>
+
+  {{ ui::back_link_footer(url=get_url(path="@/dokumentace/_index.md"), label="Zpět na dokumentaci") }}
+</main>
+{% endblock content %}
