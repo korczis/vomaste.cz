@@ -201,7 +201,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 706 záznamů v 123 rodinách/out
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
-| ctk | 290 | 21 | [ano](/zdroje/ctk/) |
+| ctk | 291 | 21 | [ano](/zdroje/ctk/) |
 | seznam-zpravy | 38 | 13 | [ano](/zdroje/seznam-zpravy/) |
 | Poslanecká sněmovna Parlamentu ČR | 34 | 15 | [ano](/zdroje/psp-cz/) |
 | Vláda České republiky (vlada.gov.cz) | 28 | 17 | [ano](/zdroje/vlada-cz/) |
@@ -219,7 +219,6 @@ Dopočítáno z `data/dossiers/**/sources/**`, 706 záznamů v 123 rodinách/out
 | udhpsh | 6 | 1 | [ano](/zdroje/udhpsh/) |
 | Blesk.cz | 5 | 3 | [ano](/zdroje/blesk-cz/) |
 | Zdravé zprávy | 5 | 2 | — |
-| CNN Prima News | 4 | 3 | — |
 | e15.cz | 4 | 2 | — |
 | HlídacíPes.org | 4 | 4 | — |
 | Hospodářské noviny | 4 | 3 | — |
@@ -228,6 +227,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 706 záznamů v 123 rodinách/out
 | Respekt | 4 | 3 | — |
 | Státní zemědělský intervenční fond | 4 | 1 | — |
 | verejnazaloba | 4 | 1 | — |
+| CNN Prima News | 3 | 3 | — |
 | Investigace.cz | 3 | 3 | — |
 | Ministerstvo financí ČR | 3 | 1 | — |
 | Ministerstvo školství, mládeže a tělovýchovy ČR | 3 | 1 | — |
