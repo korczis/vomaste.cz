@@ -149,6 +149,9 @@ Historické autorizační záznamy se nemažou ani zpětně nepřepisují.
 
 Moc rozhodnout, koho systém začne sledovat, musí sama zanechávat stopu.
 
+Jak přesně tenhle log funguje, co se od 2026-08-05 změnilo a co zůstalo
+stejné: [Autorizace rozsahu](@/koncepty/autorizace.md).
+
 ---
 
 ## 9. Data mají být kontrolovatelná strojem i člověkem {#bod-9}
