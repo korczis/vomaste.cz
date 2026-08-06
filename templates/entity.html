@@ -15,6 +15,20 @@
     view.entityId,
   ]) }}
 
+  {#- Obrazová dokumentace: 1..N položek z kanonického `media`, každá s vlastní
+      licencí a odkazem na zdroj (ui::media_figure). Portrét stojí vedle
+      identifikačního řádku, ostatní jdou do galerie níž — a když entita žádné
+      médium nemá, nevykreslí se nic; prázdný rámeček by byl přesně ten
+      placeholder, který sem nepatří. -#}
+  {%- set portraits = view.media | default(value=[]) | filter(attribute="role", value="portrait") -%}
+  {%- set logos = view.media | default(value=[]) | filter(attribute="role", value="logo") -%}
+  {%- set lead_media = portraits | concat(with=logos) -%}
+  {%- if lead_media | length > 0 %}
+  <div class="mb-6 sm:float-right sm:ml-6 sm:w-56">
+    {{ ui::media_figure(item=lead_media | first, sizes="w-full", eager=true) }}
+  </div>
+  {%- endif %}
+
   <p class="mb-6 flex flex-wrap items-center gap-2">
     <span class="font-mono text-xs text-[#f3e5c0]">{{ view.entityId }}</span>
     <span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wide text-white/50">{{ view.entityType }}</span>
@@ -131,6 +145,11 @@
   </section>
   {% endif %}
   {% endfor %}
+
+  {#- Zbylá média (fotky z akcí apod.) — galerie se vykreslí jen když nějaká
+      jsou; portrét/logo už je v hlavičce, takže se tu neopakují. -#}
+  {%- set gallery = view.media | default(value=[]) | filter(attribute="role", value="photo") -%}
+  {{ ui::media_gallery(items=gallery, heading="Obrazová dokumentace") }}
 
   {{ ui::back_link_footer(url=get_url(path="@/entities/_index.md"), label="Zpět na registr entit") }}
 </main>

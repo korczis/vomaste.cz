@@ -38,7 +38,7 @@ const { loadDossierRegistry } = await import("../dossier/lib/dossier-registry.mj
 const { readDossierStats } = await import("../dossier/lib/record-tables.mjs");
 const requestedSlugs = new Set(process.argv.slice(2));
 const dossiers = loadDossierRegistry()
-  .map((d) => ({ slug: d.slug, title: d.title, type: d.dossierType }))
+  .map((d) => ({ slug: d.slug, title: d.title, type: d.dossierType, subject: d.subject ?? null }))
   .filter((d) => requestedSlugs.size === 0 || requestedSlugs.has(d.slug));
 
 if (requestedSlugs.size > 0 && dossiers.length !== requestedSlugs.size) {
@@ -52,12 +52,41 @@ const stats = (slug) => {
   return s ? { claims: s.claims, sources: s.sources, cases: s.cases, gaps: s.gaps } : null;
 };
 
+/*
+ * Portrait of the dossier subject, as data URI.
+ *
+ * The card is rendered in a headless browser with no network, and even with
+ * one, an og:image that depends on a third-party host at render time is a
+ * preview that breaks silently later. The bytes are already in this repo
+ * (scripts/media/fetch-media.mjs put them there together with their licence),
+ * so they are inlined straight from disk.
+ *
+ * No portrait means no portrait — the card falls back to the typographic
+ * layout with the subject`s name. A stock silhouette would be exactly the
+ * placeholder this site refuses to publish.
+ */
+function subjectPortrait(subjectEntityId) {
+  if (!subjectEntityId) return null;
+  const file = join(ROOT, "data/dossiers/_shared/entities", `${subjectEntityId}.json`);
+  if (!existsSync(file)) return null;
+  const record = JSON.parse(readFileSync(file, "utf8"));
+  const item = (record.media ?? []).find((m) => m.role === "portrait") ?? (record.media ?? [])[0];
+  if (!item) return null;
+  const abs = join(ROOT, "static", item.file);
+  if (!existsSync(abs)) return null;
+  const mime = item.file.endsWith(".png") ? "image/png" : item.file.endsWith(".webp") ? "image/webp" : "image/jpeg";
+  return {
+    dataUri: `data:${mime};base64,${readFileSync(abs).toString("base64")}`,
+    credit: `${item.author} · ${item.license}`,
+  };
+}
+
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
 /* One card template for everything: kicker, title, subtitle, optional chips,
    and a footer strip with the domain. No screenshot, no UI chrome, generous
    safe margins so LinkedIn's rounded crop never clips the text. */
-function cardHtml({ kicker, title, subtitle, chips = [], footer }) {
+function cardHtml({ kicker, title, subtitle, chips = [], footer, portrait = null }) {
   return `<!doctype html><html><head><meta charset="utf-8"><style>
   *{margin:0;padding:0;box-sizing:border-box}
   body{width:1200px;height:630px;background:#000;color:#fff;
@@ -85,8 +114,20 @@ function cardHtml({ kicker, title, subtitle, chips = [], footer }) {
          justify-content:space-between;align-items:center;font-size:23px;
          color:rgba(255,255,255,.55);border-top:1px solid rgba(255,255,255,.12);padding-top:24px;z-index:1}
   .domain{color:#f3e5c0;font-weight:800;letter-spacing:.01em}
-  </style></head><body>
+  /* S portrétem se textový sloupec zúží, aby ho fotka nikdy nepřekryla. */
+  body.has-portrait .inner{max-width:690px}
+  body.has-portrait p{max-width:650px}
+  body.has-portrait h1{font-size:${title.length > 22 ? 68 : 86}px}
+  .portrait{position:absolute;right:0;top:0;bottom:0;width:420px;z-index:0}
+  .portrait img{width:100%;height:100%;object-fit:cover;object-position:top center}
+  /* Přechod do černé drží text čitelný i u světlé fotografie. */
+  .portrait::after{content:"";position:absolute;inset:0;
+        background:linear-gradient(90deg,#000 0%,rgba(0,0,0,.75) 24%,rgba(0,0,0,.10) 66%,rgba(0,0,0,.30) 100%)}
+  .portrait-credit{position:absolute;right:16px;bottom:16px;z-index:2;font-size:15px;
+        color:rgba(255,255,255,.66);text-shadow:0 1px 3px rgba(0,0,0,.95)}
+  </style></head><body class="${portrait ? "has-portrait" : ""}">
   <div class="grid"></div><div class="glow"></div>
+  ${portrait ? `<div class="portrait"><img src="${portrait.dataUri}" alt=""><span class="portrait-credit">${esc(portrait.credit)}</span></div>` : ""}
   <div class="inner">
     <div class="kicker">${esc(kicker)}</div>
     <h1>${esc(title)}</h1>
@@ -123,8 +164,12 @@ if (requestedSlugs.size === 0) {
 for (const d of dossiers) {
   const s = stats(d.slug);
   const isEntity = d.type === "entity";
+  // Portrét jen u entity dossieru: agregát není osoba a fotka jedné z nich by
+  // z něj dělala něco, čím není.
+  const portrait = isEntity ? subjectPortrait(d.subject) : null;
   await render(
     cardHtml({
+      portrait,
       kicker: isEntity ? "Dossier" : "Generovaný společný pohled",
       title: d.title,
       subtitle: isEntity

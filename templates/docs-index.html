@@ -18,7 +18,13 @@
     <a href="{{ p.permalink | safe }}" class="registry-card">
       <span class="font-semibold text-white">{{ p.title }}</span>
       <span class="mt-1 block text-xs text-white/60">{{ p.description }}</span>
+      {#- Zrcadlené dokumenty ukazují svůj zdrojový soubor v repu; stránky
+          generované z dat žádný nemají a řádek se u nich nevykreslí. -#}
+      {%- if p.extra.source_file %}
       <span class="mt-2 block font-mono text-[0.7rem] text-white/55">{{ p.extra.source_file }}</span>
+      {%- else %}
+      <span class="mt-2 block font-mono text-[0.7rem] text-white/45">generováno z dat</span>
+      {%- endif %}
     </a>
     {% endfor %}
   </div>

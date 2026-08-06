@@ -102,5 +102,19 @@
       "type": "markdown",
       "value": "Hlavní subjekt autorizovaného dossieru. Viz plné znění a kontext v [hlavním přehledu](@/dossiers/tomio-okamura/_index.md#kdo)."
     }
+  ],
+  "media": [
+    {
+      "file": "images/people/okamura.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tomio_Okamura_portr%C3%A9t_(cropped).jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "Tomio Okamura",
+      "credit": "Own work",
+      "retrieved": "2026-08-05",
+      "width": 1200,
+      "height": 1596,
+      "role": "portrait"
+    }
   ]
 }

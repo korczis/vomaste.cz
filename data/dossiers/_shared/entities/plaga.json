@@ -125,5 +125,19 @@
       "type": "markdown",
       "value": "Hlavní subjekt autorizovaného dossieru (AUTH-2026-07-30-K), který se teprve plní — viz [hlavní přehled](@/dossiers/robert-plaga/_index.md). Veřejná funkce doložena oficiálním webem Úřadu vlády (viz `data/government.toml`)."
     }
+  ],
+  "media": [
+    {
+      "file": "images/people/plaga.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Plaga_Robert_(cropped).jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "RobPla",
+      "credit": "Own work",
+      "retrieved": "2026-08-05",
+      "width": 1200,
+      "height": 1601,
+      "role": "portrait"
+    }
   ]
 }

@@ -53,5 +53,19 @@
       "SRC-02"
     ],
     "depth": 0
-  }
+  },
+  "media": [
+    {
+      "file": "images/people/pavel.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Petr_Pavel.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "Jana Jabůrková, Jiří Turek (J3T)",
+      "credit": "Kancelář prezidenta republiky",
+      "retrieved": "2026-08-05",
+      "width": 1200,
+      "height": 1715,
+      "role": "portrait"
+    }
+  ]
 }

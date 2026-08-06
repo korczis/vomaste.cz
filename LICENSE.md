@@ -13,6 +13,16 @@ omezení, bez nutnosti uvádět původ.
   zůstávají duševním vlastnictvím původních vydavatelů a autorů; tento
   repozitář na ně odkazuje a cituje je v zákonném rozsahu, nerelicencuje
   je.
+- **Fotografie a loga** — obrázky v `static/images/{people,logos,media}/`
+  **nejsou** dílem projektu a Unlicense se na ně nevztahuje. Publikují se
+  výhradně pod svobodnou licencí, kterou uvádí jejich zdroj (CC0, public
+  domain, CC BY, CC BY-SA, Attribution), a **každý z nich si nese vlastní
+  licenci, autora a odkaz na zdroj** — u CC BY a CC BY-SA je uvedení autora
+  a licence podmínkou užití, ne zdvořilostí. Kdo obsah přebírá, přebírá tuhle
+  povinnost s ním. Úplný seznam: [`/dokumentace/licence-medii/`](https://vomaste.cz/dokumentace/licence-medii/).
+  Vynucuje `npm run validate:media` v build gate: obrázek bez doložené volné
+  licence, autora a zdroje neprojde, a nepřipsaný soubor nesmí v repozitáři
+  ani ležet.
 - **Ochranné známky a jména** — jména osob a organizací zmiňovaná
   v obsahu nejsou tímto nijak licencována.
 - **Odpovědnost za užití** — public domain neznamená zbavení

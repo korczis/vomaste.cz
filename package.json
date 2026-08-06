@@ -6,7 +6,7 @@
   "scripts": {
     "postinstall": "node scripts/setup/install-git-hooks.mjs",
     "hooks:install": "node scripts/setup/install-git-hooks.mjs",
-    "test": "node --test scripts/build/*.test.mjs scripts/dossier/*.test.mjs scripts/data/*.test.mjs scripts/migrations/*.test.mjs scripts/lint/*.test.mjs scripts/ui/*.test.mjs scripts/ci/*.test.mjs scripts/osint/*.test.mjs scripts/intake/*.test.mjs scripts/intake/matching/*.test.mjs scripts/intake/risk/*.test.mjs scripts/intake/preflight/*.test.mjs",
+    "test": "node --test scripts/build/*.test.mjs scripts/dossier/*.test.mjs scripts/data/*.test.mjs scripts/migrations/*.test.mjs scripts/lint/*.test.mjs scripts/media/*.test.mjs scripts/ui/*.test.mjs scripts/ci/*.test.mjs scripts/osint/*.test.mjs scripts/intake/*.test.mjs scripts/intake/matching/*.test.mjs scripts/intake/risk/*.test.mjs scripts/intake/preflight/*.test.mjs",
     "css:build": "tailwindcss -i ./static/css/input.css -o ./static/css/main.css --minify",
     "css:watch": "tailwindcss -i ./static/css/input.css -o ./static/css/main.css --watch",
     "js:build": "esbuild assets/js/app.js assets/js/graph-app.js --bundle --minify --target=es2020 --outdir=static/js",
@@ -29,6 +29,8 @@
     "validate:navigation": "node scripts/dossier/validate-navigation.mjs",
     "validate:concepts": "node scripts/dossier/validate-concepts.mjs",
     "validate:entity-types": "node scripts/dossier/validate-entity-types.mjs",
+    "validate:media": "node scripts/dossier/validate-media.mjs",
+    "media:fetch": "node scripts/media/fetch-media.mjs",
     "build:routes": "node scripts/dossier/build-route-manifest.mjs",
     "build:search-index": "node scripts/dossier/build-search-index.mjs",
     "build:data-exports": "node scripts/dossier/build-data-exports.mjs",

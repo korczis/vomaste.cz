@@ -4,50 +4,109 @@
   "title": "Kanonický záznam Entity (data/dossiers/_shared/entities/<id>.json) — globální, ne dossier-scoped",
   "type": "object",
   "additionalProperties": false,
-  "required": ["$schema", "schemaVersion", "@context", "@id", "@type", "recordType", "identifier", "entityId", "title", "entityType", "publicationRole", "dossierEnabled", "dossierStatus", "coverageState", "dossiers"],
+  "required": [
+    "$schema",
+    "schemaVersion",
+    "@context",
+    "@id",
+    "@type",
+    "recordType",
+    "identifier",
+    "entityId",
+    "title",
+    "entityType",
+    "publicationRole",
+    "dossierEnabled",
+    "dossierStatus",
+    "coverageState",
+    "dossiers"
+  ],
   "properties": {
-    "$schema": { "const": "https://vomaste.cz/schemas/canonical/entity.schema.json" },
-    "schemaVersion": { "const": 1 },
-    "@context": { "const": "https://vomaste.cz/context/v1.jsonld" },
-    "@id": { "$ref": "_defs.schema.json#/$defs/entityGlobalId" },
-    "@type": { "const": "vomaste:Entity" },
-    "recordType": { "const": "entity" },
+    "$schema": {
+      "const": "https://vomaste.cz/schemas/canonical/entity.schema.json"
+    },
+    "schemaVersion": {
+      "const": 1
+    },
+    "@context": {
+      "const": "https://vomaste.cz/context/v1.jsonld"
+    },
+    "@id": {
+      "$ref": "_defs.schema.json#/$defs/entityGlobalId"
+    },
+    "@type": {
+      "const": "vomaste:Entity"
+    },
+    "recordType": {
+      "const": "entity"
+    },
     "identifier": {
       "$ref": "_defs.schema.json#/$defs/entityId",
       "$comment": "Shodné s entityId — identifier je jednotná obálka všech záznamů, entityId explicitní doménové pole."
     },
-    "entityId": { "$ref": "_defs.schema.json#/$defs/entityId" },
-    "title": { "type": "string", "minLength": 1 },
+    "entityId": {
+      "$ref": "_defs.schema.json#/$defs/entityId"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
     "alternateNames": {
       "type": "array",
-      "items": { "type": "string", "minLength": 1 }
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
     },
-    "entityType": { "$ref": "_defs.schema.json#/$defs/entityType" },
-    "role": { "type": "string", "minLength": 1 },
+    "entityType": {
+      "$ref": "_defs.schema.json#/$defs/entityType"
+    },
+    "role": {
+      "type": "string",
+      "minLength": 1
+    },
     "publicationRole": {
       "type": "string",
-      "enum": ["subject", "context"],
+      "enum": [
+        "subject",
+        "context"
+      ],
       "$comment": "Skutečně použité hodnoty (21× subject, 63× context k 2026-08-01). Sémantická vazba na dossierStatus/coverageState (context nesmí být authorized/developing/full atd.) patří validátoru fáze C — dnes validate-authorization.mjs."
     },
-    "dossierEnabled": { "type": "boolean" },
+    "dossierEnabled": {
+      "type": "boolean"
+    },
     "dossierStatus": {
       "type": "string",
-      "enum": ["authorized", "not_authorized"]
+      "enum": [
+        "authorized",
+        "not_authorized"
+      ]
     },
-    "coverageState": { "$ref": "_defs.schema.json#/$defs/coverageState" },
+    "coverageState": {
+      "$ref": "_defs.schema.json#/$defs/coverageState"
+    },
     "dossiers": {
       "type": "array",
-      "items": { "$ref": "_defs.schema.json#/$defs/slug" },
+      "items": {
+        "$ref": "_defs.schema.json#/$defs/slug"
+      },
       "$comment": "Slugy dossierů, ve kterých entita vystupuje — prosté slugy, ne idRef: entita je globální a tohle je členství, ne vlastnictví (zadání fáze B: 'u entity místo dossier pole dossiers'). Kanonický záznam entity NEMÁ pole dossier — žádný dossier ji nevlastní."
     },
     "externalIds": {
       "type": "object",
-      "additionalProperties": { "type": "string", "minLength": 1 },
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 1
+      },
       "$comment": "Mapa registr → identifikátor (IČO apod.) — připraveno pro fázi C/D, dnešní front matter je zatím nemá."
     },
     "routeAliases": {
       "type": "array",
-      "items": { "type": "string", "pattern": "^/" },
+      "items": {
+        "type": "string",
+        "pattern": "^/"
+      },
       "$comment": "Dnešní top-level aliases stránky entity (staré routy /dossiers/<slug>/entities/…)."
     },
     "order": {
@@ -68,20 +127,29 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "discoveredAt": { "$ref": "_defs.schema.json#/$defs/isoDate" },
+        "discoveredAt": {
+          "$ref": "_defs.schema.json#/$defs/isoDate"
+        },
         "discoveredVia": {
           "type": "array",
-          "items": { "type": "string", "minLength": 1 },
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
           "$comment": "Kurátorovaná stopa objevení: id hran/vztahů (edge-*) NEBO syntetické značky procesu (government-roster-<datum>, ares-expansion-<ičo>-<datum>). Lokální id vztahů se interpretují v kontextu dossierů z pole `dossiers` této entity."
         },
         "claimRefs": {
           "type": "array",
-          "items": { "$ref": "_defs.schema.json#/$defs/clmId" },
+          "items": {
+            "$ref": "_defs.schema.json#/$defs/clmId"
+          },
           "$comment": "LOKÁLNÍ CLM-## id (composite-key inventář zachovaný věrně z front matter, fáze H): platí v kontextu dossierů z pole `dossiers` této entity — NENÍ to globální reference a NENÍ to unie vazeb z relations (ověřeno migrací: 30/63 kontextových entit se liší), je to ručně kurátorovaná stopa „přes co byla entita objevena“."
         },
         "sourceRefs": {
           "type": "array",
-          "items": { "$ref": "_defs.schema.json#/$defs/srcId" },
+          "items": {
+            "$ref": "_defs.schema.json#/$defs/srcId"
+          },
           "$comment": "LOKÁLNÍ SRC-## id — stejný composite-key tvar a stejná sémantika jako claimRefs."
         },
         "cluster": {
@@ -100,9 +168,92 @@
     },
     "subjectOf": {
       "type": "array",
-      "items": { "$ref": "_defs.schema.json#/$defs/dossierRef" },
+      "items": {
+        "$ref": "_defs.schema.json#/$defs/dossierRef"
+      },
       "$comment": "Jen pro publicationRole=subject: dossier(y), jejichž je entita autorizovaným subjektem. Soulad s AGENTS.md autorizačním logem vynucuje validátor fáze C."
     },
-    "content": { "$ref": "_defs.schema.json#/$defs/contentBlocks" }
+    "content": {
+      "$ref": "_defs.schema.json#/$defs/contentBlocks"
+    },
+    "media": {
+      "type": "array",
+      "$comment": "Licencovaná média entity (portréty, logo, fotky z akcí) — 1..N. Generické: šablona je vysází dynamicky, nic není napsané pro konkrétní subjekt. Licence, autor a zdrojová URL jsou povinné u KAŽDÉ položky: publikovat cizí fotografii bez doložené licence je porušení autorského práva, a tenhle web stojí na tom, že každý zveřejněný prvek má dohledatelný původ — u obrázku stejně jako u tvrzení.",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "file",
+          "sourceUrl",
+          "license",
+          "author",
+          "retrieved"
+        ],
+        "properties": {
+          "file": {
+            "type": "string",
+            "pattern": "^images/(people|logos|media)/[a-z0-9-]+(-[0-9]+)?\\.(jpg|png|svg|webp)$",
+            "$comment": "Cesta pod static/ — to, co get_url() vydá jako veřejnou URL. Bajty leží v repu, protože cizí odkaz může kdykoli zmizet."
+          },
+          "sourceUrl": {
+            "$ref": "_defs.schema.json#/$defs/httpUrl",
+            "$comment": "Stránka souboru u zdroje, ne přímý odkaz na bajty — čtenář musí dojít k licenčním údajům."
+          },
+          "license": {
+            "type": "string",
+            "minLength": 2
+          },
+          "licenseUrl": {
+            "$ref": "_defs.schema.json#/$defs/httpUrl"
+          },
+          "author": {
+            "type": "string",
+            "minLength": 1,
+            "$comment": "U CC BY/BY-SA je uvedení autora podmínkou licence."
+          },
+          "credit": {
+            "type": "string",
+            "minLength": 1
+          },
+          "retrieved": {
+            "$ref": "_defs.schema.json#/$defs/isoDate"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "$comment": "Popisek fotky (co je na ní), ne jméno subjektu."
+          },
+          "subtitle": {
+            "type": "string",
+            "minLength": 1,
+            "$comment": "Doplňující řádek — datum, místo, kontext."
+          },
+          "href": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^(https://|/)",
+            "$comment": "Volitelný proklik: absolutní https URL nebo interní cesta začínající /."
+          },
+          "role": {
+            "type": "string",
+            "enum": [
+              "portrait",
+              "logo",
+              "photo"
+            ],
+            "$comment": "K čemu se položka hodí. portrait/logo se použije v OG kartě a v hlavičce; photo je galerie."
+          },
+          "width": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "height": {
+            "type": "integer",
+            "minimum": 1
+          }
+        }
+      }
+    }
   }
 }

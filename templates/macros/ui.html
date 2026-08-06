@@ -198,3 +198,70 @@
   </div>
 </footer>
 {%- endmacro site_footer -%}
+
+{#- Licensed media, rendered as one unified figure everywhere it appears.
+
+    Why one macro and not "just an <img>": for the CC BY / BY-SA images this
+    site uses, naming the author and the licence is a CONDITION of the licence,
+    not decoration. A bare <img> somewhere would be a licence breach the moment
+    someone copied the pattern, so there is exactly one way to show a picture
+    here and it always carries its credit and a link to where the licence is
+    stated.
+
+    Generic on purpose: `item` is one element of an entity's `media` array, so
+    portraits, logos and event photos all go through the same path, and the
+    optional title / subtitle / href appear only when the data has them —
+    nothing is invented to fill a slot. Mobile-first: full width by default,
+    constrained from `sm:` upward. -#}
+{%- macro media_figure(item, sizes="w-full sm:w-64", eager=false) -%}
+<figure class="{{ sizes }} overflow-hidden rounded-lg border border-white/10 bg-white/5">
+  {%- set img_alt = item.title | default(value="") -%}
+  {%- if item.href %}<a href="{{ item.href | safe }}" class="block focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-300/70">{% endif -%}
+  <img
+    src="{{ get_url(path=item.file) | safe }}"
+    alt="{{ img_alt }}"
+    {%- if item.width %} width="{{ item.width }}"{% endif %}
+    {%- if item.height %} height="{{ item.height }}"{% endif %}
+    loading="{% if eager %}eager{% else %}lazy{% endif %}"
+    decoding="async"
+    class="aspect-[3/4] w-full bg-black/40 object-cover object-top">
+  {%- if item.href %}</a>{% endif %}
+  <figcaption class="space-y-1 border-t border-white/10 px-3 py-2 text-xs leading-snug">
+    {%- if item.title %}
+    <p class="font-semibold text-white/90">{{ item.title }}</p>
+    {%- endif %}
+    {%- if item.subtitle %}
+    <p class="text-white/60">{{ item.subtitle }}</p>
+    {%- endif %}
+    <p class="text-white/45">
+      <span class="sr-only">Licence obrázku: </span>
+      {{ item.author }} &middot;
+      {%- if item.licenseUrl %}
+      <a href="{{ item.licenseUrl | safe }}" rel="license noopener" target="_blank"
+         class="underline decoration-white/25 underline-offset-2 hover:text-white/70 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-300/70">{{ item.license }}</a>
+      {%- else %}{{ item.license }}{% endif %} &middot;
+      <a href="{{ item.sourceUrl | safe }}" rel="noopener" target="_blank"
+         class="underline decoration-white/25 underline-offset-2 hover:text-white/70 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-300/70">zdroj</a>
+    </p>
+  </figcaption>
+</figure>
+{%- endmacro media_figure -%}
+
+{#- 1..N media as a responsive gallery. One column on a phone, more as the
+    viewport allows; a single item stays a single figure rather than a
+    one-cell grid. Renders nothing at all when the entity has no media —
+    an empty frame would be the placeholder this site refuses to ship. -#}
+{%- macro media_gallery(items, heading="") -%}
+{%- if items and items | length > 0 -%}
+<section class="mt-6" aria-label="{{ heading | default(value='Obrazová dokumentace') }}">
+  {%- if heading %}
+  <h2 class="mb-3 text-sm font-semibold uppercase tracking-wide text-white/50">{{ heading }}</h2>
+  {%- endif %}
+  <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    {%- for item in items %}
+    {{ ui::media_figure(item=item, sizes="w-full", eager=loop.first) }}
+    {%- endfor %}
+  </div>
+</section>
+{%- endif -%}
+{%- endmacro media_gallery -%}
