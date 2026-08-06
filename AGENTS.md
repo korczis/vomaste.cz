@@ -917,14 +917,18 @@ versioned). Binding constraints:
 - Merge to `master` only with a clean `npm run build` in the worktree
   **and** on `master` after the merge. Pushing `master` is the deploy
   (GitHub Pages CI); deploy continuously after each merged task.
-- Since 2026-08-05 that push is automatic: `.githooks/post-commit` runs
-  fetch → rebase → the full `npm run build` → `git push origin master`
-  after every commit made directly on `master`, and reports on the coop
-  bus (`type: "deploy"`). It never pushes a red build or a mid-rebase
-  state — see `docs/coop/PROTOCOL.md`, "Automatický push po commitu"
-  for the exact conditions and `COOP_NO_AUTOPUSH=1` to opt a commit out.
-  Same section also has the resolution recipe for the generated-file
-  conflicts (golden test snapshot, discovery log, reports) that this
+- Since 2026-08-05/06 that push is automatic: `.githooks/post-commit`
+  and `.githooks/post-merge` (git fires a different hook pair for merge/
+  pull than for commit, so both are needed to cover every path onto
+  `master`) share one routine that runs fetch → rebase → the full
+  `npm run build` → `git push origin master` after every commit or merge
+  made directly on `master`, and reports on the coop bus
+  (`type: "deploy"`). It never pushes a red build or a mid-rebase
+  state — see `docs/coop/PROTOCOL.md`, "Automatický push po commitu a
+  mergi" for the exact conditions and `COOP_NO_AUTOPUSH=1` to opt a
+  commit/merge out. Same section also has the resolution recipe for the
+  generated-file conflicts (golden test snapshot, discovery log, reports)
+  that this
   makes visible sooner when several instances are active on the same
   dossier.
 

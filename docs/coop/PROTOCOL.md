@@ -150,12 +150,13 @@ Konflikty řeší vždy worker rebasem své větve na aktuální `master`
 (`git fetch && git rebase master`) — ORCH nikdy neřeší konflikt za něj
 při mergi.
 
-## Automatický push po commitu (post-commit hook)
+## Automatický push po commitu a mergi (post-commit + post-merge hooky)
 
-`.githooks/post-commit` (stejný instalační mechanismus jako
-`.githooks/pre-commit` — `core.hooksPath`, viz README „Rychlý start")
-od 2026-08-05 dělá na `master` po každém commitu automaticky přesně tu
-sekvenci, kterou by jinak ORCH spouštěl ručně:
+`.githooks/post-commit` a `.githooks/post-merge` (stejný instalační
+mechanismus jako `.githooks/pre-commit` — `core.hooksPath`, viz README
+„Rychlý start") od 2026-08-05 dělají na `master` automaticky přesně tu
+sekvenci, kterou by jinak ORCH spouštěl ručně, po každém commitu **i po
+každém mergi**:
 
 ```
 fetch origin master → rebase → npm run build (CELÝ, ne jen pre-commit
@@ -182,14 +183,25 @@ Bezpečnostní chování, které z toho dělá něco jiného než „vždy pushn
   ven automaticky; oprav a commitni znovu.
 - Až 3 pokusy fetch+rebase+build+push (řeší prohraný závod se
   souběžným pushem odjinud), pak se vzdá se srozumitelnou hláškou.
-- Únik: `COOP_NO_AUTOPUSH=1 git commit …` (např. vědomě rozpracovaný
-  stav, který se ještě nemá dostat ven) — pak platí stará ruční
-  sekvence z kroku 6 výše.
+- Únik: `COOP_NO_AUTOPUSH=1 git commit …` / `COOP_NO_AUTOPUSH=1 git merge …`
+  (např. vědomě rozpracovaný stav, který se ještě nemá dostat ven) —
+  pak platí stará ruční sekvence z kroku 6 výše.
 
 Tohle **nenahrazuje** krok 4/5 (worker → `review-request` →
 ORCH merguje `--no-ff` do masteru) — ten merge commit na masteru je to,
 co hook následně automaticky pushne. Automatizuje se jen „a teď to
 dostaň ven", ne rozhodnutí, jestli se má mergnout.
+
+**Proč dva hooky, ne jeden**: objeveno živě 2026-08-06 — `git merge`
+(a `git pull`, což je fetch+merge) spouští jiný pár hooků,
+`pre-merge-commit`/`post-merge`, NIKDY `pre-commit`/`post-commit`. Dokud
+existoval jen `.githooks/post-commit`, přesně krok 5 výš (`git merge
+--no-ff task/T-###`) auto-push úplně obcházel — každý coop merge se
+musel pushovat ručně, což je přesně ten manuální krok, který měl tenhle
+mechanismus odstranit. Sdílená logika (guardy, fetch/rebase/build/push
+smyčka) teď žije v `.githooks/lib/auto-push-master.sh`, které volají oba
+hooky se svým vlastním jménem (jen pro log prefix — chování je shodné).
+Regresní test: `scripts/build/git-hooks.test.mjs`.
 
 ## Konflikty na generovaných/derivovaných souborech
 
