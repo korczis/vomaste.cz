@@ -24,6 +24,7 @@ import { readFileSync, readdirSync, statSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadDossierRegistry } from "./lib/dossier-registry.mjs";
+import { loadSeoConfig } from "../build/seo-config.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const DOSSIERS_ROOT = join(ROOT, "content/dossiers");
@@ -131,18 +132,24 @@ for (const slug of physicalSlugs) {
   if (!bySlug.has(slug)) err(`content/dossiers/${slug}/ exists on disk but has no matching canonical dossier record (data/dossiers/<slug>/dossier.json).`);
 }
 
-// Every dossier needs its own Open Graph card: templates/base.html points
-// every page inside a dossier at static/images/og/<slug>.jpg, so a missing
-// file means a broken LinkedIn/Facebook/Slack preview — invisible in a
-// passing build. Regenerate with scripts/og/build-og-images.mjs.
+// Every dossier needs its own Open Graph card: každá stránka uvnitř
+// dossieru dostává static/<dossier_image.path_template>, takže chybějící
+// soubor znamená rozbitý náhled na LinkedInu/Facebooku/Slacku — v zeleném
+// buildu neviditelný. Cesty se NEPÍŠOU sem: čtou se z data/seo.toml,
+// tedy z téhož místa, ze kterého je bere šablona (jinak by se dvě
+// definice téže konvence mohly rozejít). Regeneruje
+// scripts/og/build-og-images.mjs; vydaný výsledek pak po buildu kontroluje
+// scripts/build/verify-og.mjs (og:image musí existovat ve public/).
+const seo = loadSeoConfig(ROOT);
+const cardPath = (slug) => seo.dossier_image.path_template.replace("{slug}", slug);
 for (const record of registry) {
-  const card = join(ROOT, "static/images/og", `${record.slug}.jpg`);
-  if (!existsSync(card)) {
-    err(`Dossier "${record.slug}" has no preview card at static/images/og/${record.slug}.jpg — run \`node scripts/og/build-og-images.mjs\` (see its header for the one-time playwright setup).`);
+  const rel = cardPath(record.slug);
+  if (!existsSync(join(ROOT, "static", rel))) {
+    err(`Dossier "${record.slug}" has no preview card at static/${rel} — run \`node scripts/og/build-og-images.mjs\` (see its header for the one-time playwright setup).`);
   }
 }
-if (!existsSync(join(ROOT, "static/images/og/site.jpg"))) {
-  err("Missing the site-wide preview card static/images/og/site.jpg (config.toml extra.og_image points at it).");
+if (!existsSync(join(ROOT, "static", seo.site.og_image))) {
+  err(`Missing the site-wide preview card static/${seo.site.og_image} (data/seo.toml site.og_image points at it).`);
 }
 
 // Navigation is no longer hand-written per dossier: the sidebar tree is
