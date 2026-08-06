@@ -7,12 +7,8 @@
     "entity": 527,
     "gap": 204,
     "relation": 334,
-<<<<<<< HEAD
-    "source": 685,
-=======
-    "source": 684,
->>>>>>> task/T-079-robert-plaga
-    "update": 82
+    "source": 699,
+    "update": 85
   },
   "countsDossiers": 26,
   "countsEntities": 527,
