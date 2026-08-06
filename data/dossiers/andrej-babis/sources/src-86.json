@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-86",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-86",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-86 — Městské státní zastupitelství v Praze: Tisková zpráva ze dne 21. března 2022 (podání obžaloby v kauze Čapí hnízdo)",
+  "description": "Tisková zpráva Městského státního zastupitelství v Praze o podání obžaloby na dvě fyzické osoby k Městskému soudu v Praze v kauze Čapí hnízdo, včetně právní kvalifikace obou jednání a vysvětlení změny právního posouzení oproti roku 2019.",
+  "outlet": "Městské státní zastupitelství v Praze",
+  "sourceFamily": "verejnazaloba",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://verejnazaloba.cz/ssz/tiskova-zprava-ze-dne-21-brezna-2022/",
+  "published": "2022-03-21",
+  "retrieved": "2026-08-06",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-80"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Primární dokument státního zastupitelství, které obžalobu podalo** —\ntisková zpráva Městského státního zastupitelství v Praze z 21. 3. 2022,\nzveřejněná na portálu `verejnazaloba.cz`. Otevřena a přečtena 2026-08-06.\n\nCo dokument uvádí doslovně:\n\n- „**Dne 21. března 2022 podal státní zástupce Městského státního zastupitelství\n  v Praze obžalobu na dvě fyzické osoby k Městskému soudu v Praze**, a to ve věci\n  v mediálním prostoru označované jako ‚kauza Čapí hnízdo‘.“\n- „**Jedné obviněné osobě je kladeno za vinu, že svým jednáním naplnila skutkovou\n  podstatu zločinu dotačního podvodu a poškození finančních zájmů Evropské unie.\n  Jednání druhé osoby je kvalifikováno jako pomoc ke zločinu dotačního podvodu.**“\n- Ke změně právního posouzení oproti zastavení stíhání v roce 2019: „v mezidobí\n  od vrácení věci zdejšímu státnímu zastupitelství Nejvyšším státním\n  zastupitelstvím v roce 2019 se objevila **též řada nových důkazů** … **změny\n  v provedených výpovědích svědků, či nově se objevivší tvrzení** vedly\n  k významné změně skutkového stavu“.\n- K povaze kroku: „Pro podání obžaloby trestní řád předpokládá, že z provedeného\n  vyšetřování vzešly takové výsledky, které **dostatečně odůvodňují postavení\n  obviněného před soud**. … **o věci jako celku již musí rozhodnout nezávislý\n  soud**.“ Do nařízení hlavního líčení „nadále přetrvává zásada neveřejnosti\n  přípravného řízení“, proto zpráva nepopisuje skutek ani důkazy.\n\n**Poznámka k přesnosti a limitům**: **obžaloba není rozhodnutí o vině** —\ndokument to sám formuluje tak, že o věci musí rozhodnout nezávislý soud.\nZpráva **neuvádí jména** obou obžalovaných ani **trestní sazbu**; že jde o Andreje\nBabiše (pomoc ke zločinu dotačního podvodu) a Janu Nagyovou (dotační podvod\na poškození finančních zájmů EU), dokládá tisková zpráva Vrchního soudu v Praze\n([SRC-75](@/dossiers/andrej-babis/sources/src-75.md)), údaj o hrozbě až deseti\nlet vězení stojí dál jen na citovaném zpravodajství\n([SRC-57](@/dossiers/andrej-babis/sources/src-57.md)). Zpráva rovněž neuvádí\nspisovou značku ani datum nařízení hlavního líčení. Vydavatel je týž jako\nu [SRC-82](@/dossiers/andrej-babis/sources/src-82.md) a\n[SRC-84](@/dossiers/andrej-babis/sources/src-84.md) — jeden nezávislý hlas\n(`sourceFamily = \"verejnazaloba\"`)."
+    }
+  ],
+  "order": 86
+}
