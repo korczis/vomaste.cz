@@ -197,18 +197,18 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 729 záznamů v 124 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 733 záznamů v 125 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
 | ctk | 291 | 21 | [ano](/zdroje/ctk/) |
-| Poslanecká sněmovna Parlamentu ČR | 42 | 23 | [ano](/zdroje/psp-cz/) |
+| Poslanecká sněmovna Parlamentu ČR | 43 | 24 | [ano](/zdroje/psp-cz/) |
 | seznam-zpravy | 38 | 13 | [ano](/zdroje/seznam-zpravy/) |
 | Vláda České republiky (vlada.gov.cz) | 28 | 17 | [ano](/zdroje/vlada-cz/) |
 | FORUM 24 | 20 | 10 | [ano](/zdroje/forum24/) |
 | ČT24 (Česká televize) | 18 | 10 | [ano](/zdroje/ceska-televize/) |
 | denik-n | 17 | 9 | [ano](/zdroje/denik-n/) |
-| Echo24 | 15 | 11 | [ano](/zdroje/echo24/) |
+| Echo24 | 16 | 12 | [ano](/zdroje/echo24/) |
 | Novinky.cz | 13 | 12 | [ano](/zdroje/novinky-cz/) |
 | Aktuálně.cz | 12 | 7 | [ano](/zdroje/aktualne-cz/) |
 | denik-cz | 11 | 6 | [ano](/zdroje/denik-cz/) |
@@ -216,9 +216,9 @@ Dopočítáno z `data/dossiers/**/sources/**`, 729 záznamů v 124 rodinách/out
 | Ekonomický deník | 9 | 5 | [ano](/zdroje/ekonomicky-denik/) |
 | irozhlas | 8 | 6 | [ano](/zdroje/irozhlas/) |
 | hlidac-statu | 7 | 2 | [ano](/zdroje/hlidac-statu/) |
+| Hospodářské noviny | 6 | 5 | — |
 | udhpsh | 6 | 1 | [ano](/zdroje/udhpsh/) |
 | Blesk.cz | 5 | 3 | [ano](/zdroje/blesk-cz/) |
-| Hospodářské noviny | 5 | 4 | — |
 | Zdravé zprávy | 5 | 2 | — |
 | e15.cz | 4 | 2 | — |
 | HlídacíPes.org | 4 | 4 | — |
@@ -285,6 +285,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 729 záznamů v 124 rodinách/out
 | Evropský parlament | 1 | 1 | — |
 | Extra.cz | 1 | 1 | — |
 | Finmag.cz — přepis obchodního rejstříku | 1 | 1 | — |
+| Forum24 | 1 | 1 | — |
 | Hanácká Drbna | 1 | 1 | — |
 | Heroine.cz | 1 | 1 | — |
 | Info.cz | 1 | 1 | — |
@@ -330,6 +331,6 @@ Dopočítáno z `data/dossiers/**/sources/**`, 729 záznamů v 124 rodinách/out
 
 Tyhle zdroje dataset používá aspoň pětkrát, ale katalog k nim nemá záznam s mezemi a pastmi:
 
-- Hospodářské noviny (5×)
+- Hospodářské noviny (6×)
 - Zdravé zprávy (5×)
 

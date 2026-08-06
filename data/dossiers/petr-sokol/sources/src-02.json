@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/petr-sokol/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/petr-sokol"
+  },
+  "title": "SRC-02 — Echo24: Sněmovní klub ODS dál povedou Benda s Decroix, doplní je pětice místopředsedů",
+  "description": "Zpravodajský článek o volbě nového vedení poslaneckého klubu ODS 4. 2. 2026, včetně pěti nově zvolených místopředsedů.",
+  "outlet": "Echo24",
+  "sourceType": "zpravodajství",
+  "url": "https://www.echo24.cz/a/HyYd8/zpravy-domov-zkusenosti-a-novy-pohled-poslanecky-klub-ods-povede-benda-a-decroix",
+  "published": "2026-02-04",
+  "retrieved": "2026-08-06",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-sokol/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "petr-sokol"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpravodajský článek Echo24 ze 4. 2. 2026, otevřen a přečten 2026-08-06.\nInformuje, že poslanecký klub ODS nadále povede předseda Marek Benda s první místopředsedkyní Evou Decroix a že je doplní nově zvolení místopředsedové Petr Sokol, Jiří Havránek, Štěpán Slovák, Lucie Bartošová a Pavel Žáček — volba proběhla na klubové schůzi navazující na lednový kongres ODS.\n\nPoznámka k typu zdroje a jeho limitům: nezávislé redakční zpravodajství — jiný vydavatel i jiná doména než SRC-03 (Hospodářské noviny), takže spolu s ním tvoří nezávislou dvojici pro účely korporace tvrzení o funkci místopředsedy poslaneckého klubu ODS. Netýká se role stínového poradce pro EU — tu dokládá SRC-04 (vznikla až v březnu 2026)."
+    }
+  ],
+  "order": 2
+}

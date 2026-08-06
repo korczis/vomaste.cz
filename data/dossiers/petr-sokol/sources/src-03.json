@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/petr-sokol/sources/SRC-03",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/petr-sokol"
+  },
+  "title": "SRC-03 — Hospodářské noviny: Poslance ODS dál povedou Benda s Decroix, doplní je pět místopředsedů",
+  "description": "Zpravodajský článek o volbě nového vedení poslaneckého klubu ODS 4. 2. 2026.",
+  "outlet": "Hospodářské noviny",
+  "sourceType": "zpravodajství",
+  "url": "https://domaci.hn.cz/c1-67841620-poslance-ods-dal-povedou-benda-s-decroix-doplni-je-pet-mistopredsedu",
+  "published": "2026-02-04",
+  "retrieved": "2026-08-06",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-sokol/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "petr-sokol"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpravodajský článek Hospodářských novin ze 4. 2. 2026, otevřen a přečten 2026-08-06.\nUvádí doslova, že vedení klubu \"nově doplní jako místopředsedové Petr Sokol, Jiří Havránek, Štěpán Slovák, Lucie Bartošová a Pavel Žáček\", ve shodě se stejného dne zveřejněnou zprávou Echo24.\n\nPoznámka k typu zdroje a jeho limitům: nezávislé redakční zpravodajství — jiný vydavatel i jiná doména než SRC-02 (Echo24), takže spolu s ním tvoří nezávislou dvojici potvrzující funkci místopředsedy poslaneckého klubu ODS. Netýká se role stínového poradce pro EU — tu dokládá SRC-04."
+    }
+  ],
+  "order": 3
+}

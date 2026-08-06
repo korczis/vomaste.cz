@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/petr-sokol/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/petr-sokol"
+  },
+  "text": "Petr Sokol je od 4. 10. 2025 poslancem Parlamentu ČR za ODS (kandidoval na kandidátce koalice SPOLU, volební obvod Olomoucký kraj); od 4. 2. 2026 je místopředsedou poslaneckého klubu ODS — nezávisle informovaly Echo24 i Hospodářské noviny — a od března 2026 zastává ve stínové vládě ODS vedené Martinem Kupkou roli stínového poradce pro EU.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-sokol/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-sokol/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-sokol/sources/SRC-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-sokol/sources/SRC-04"
+    }
+  ],
+  "subjects": [
+    "petr-sokol"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/petr-sokol/_index.md)."
+    }
+  ]
+}

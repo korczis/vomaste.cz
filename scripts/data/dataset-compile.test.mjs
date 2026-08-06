@@ -143,7 +143,7 @@ test("check nad reálným data/dossiers projde (35 balíčků včetně pavel-dro
   const code = await runCheck({ root: RECORDS_ROOT, log: (l) => lines.push(l) });
   assert.equal(code, 0, lines.join("\n"));
   assert.ok(!lines.some((l) => l.includes("0 dossier packages")), lines.join("\n"));
-  assert.ok(lines.some((l) => l.includes("Načteno 36 dossier balíčků")), lines.join("\n"));
+  assert.ok(lines.some((l) => l.includes("Načteno 37 dossier balíčků")), lines.join("\n"));
   assert.ok(lines.at(-1) === "OK");
 });
 

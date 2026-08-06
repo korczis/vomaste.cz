@@ -1826,3 +1826,19 @@ samostatnou budoucí autorizaci.
 Authorized by the site owner, explicitly and on the record, 2026-08-06:
 
 Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Martin Červíček je veřejný funkcionář — senátor Parlamentu ČR za ODS (obvod č. 47 – Náchod, mandát 28. 9. 2024 – 28. 9. 2030), od ledna 2026 místopředseda ODS (zvolen na 32. kongresu ODS 18. 1. 2026) a od března 2026 stínový ministr vnitra ve stínové vládě ODS vedené Martinem Kupkou. Rozsah tohoto dossieru je záměrně minimální: pouze základní, aktuálně ověřený politický profil (senátorský mandát, funkce místopředsedy ODS a role stínového ministra vnitra), doložený přímo otevřenými zdroji (senat.cz, ČT24, Novinky.cz). Nejde o investigativní rešerši žádné kauzy ani jiného tématu z jeho dřívějšího policejního nebo krajského působení — to by vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-06: Petr Sokol
+
+Authorized by the site owner, explicitly and on the record, 2026-08-06:
+
+Autorizuji entity dossier pro Petra Sokola v rámci standing scope
+(AUTH-2026-08-05-PLATFORM-SCOPE). Petr Sokol je veřejný funkcionář —
+poslanec Parlamentu ČR za ODS (mandát od 4. 10. 2025, psp.cz id 7045),
+místopředseda poslaneckého klubu ODS (od 4. 2. 2026) a stínový poradce
+pro EU ve stínové vládě ODS vedené Martinem Kupkou (od března 2026).
+Rozsah je záměrně minimální: jediné tvrzení o jeho aktuálním mandátu a
+straně funkcích, doložené přímo otevřenými zdroji (psp.cz, Echo24,
+Hospodářské noviny, Forum24.cz) — nejde o investigativní rešerši
+žádné kauzy. Ověřena totožnost proti oficiálnímu profilu na psp.cz
+(id 7045), aby nedošlo k záměně se jmenovcem — jde o tutéž osobu
+(politolog a publicista je stejný Petr Sokol, nikoli jmenovec).
