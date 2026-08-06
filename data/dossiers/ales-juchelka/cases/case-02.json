@@ -10,12 +10,27 @@
     "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
   },
   "title": "Kauza střetu zájmů bývalé poradkyně",
-  "summary": "Kauza střetu zájmů bývalé poradkyně — viz tvrzení CLM-06, CLM-07, CLM-08, CLM-10, CLM-16.",
+  "summary": "Kauza střetu zájmů bývalé poradkyně — Semancová jako poradkyně dohlížela na dotační výzvy, z nichž zároveň profitovala klientská firma Siptrade, Evropská komise si vyžádala vysvětlení, ministr oznámil její odchod z MPSV a nechal vypracovat externí právní posudek; MPSV rozhodlo o čtyřech nevykázaných projektech za 63,8 milionu korun.",
   "period": "2026",
   "status": "status-single",
   "statusLabel": "Sledované téma",
   "anchor": "kauza-poradkyne-stret",
   "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-16"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-23"
     },
@@ -28,6 +43,33 @@
   ],
   "sources": [
     {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-14"
+    },
+    {
       "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-15"
     },
     {
@@ -35,9 +77,6 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-25"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-05"
     }
   ],
   "subjects": [

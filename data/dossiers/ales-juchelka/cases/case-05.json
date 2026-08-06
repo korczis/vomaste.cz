@@ -10,12 +10,30 @@
     "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
   },
   "title": "Veřejná vyjádření a obhajoba ministra",
-  "summary": "Veřejná vyjádření a obhajoba ministra — viz tvrzení CLM-17, CLM-18, CLM-19, CLM-20, CLM-21, CLM-22.",
+  "summary": "Veřejná vyjádření a obhajoba ministra — Juchelkova opakovaná veřejná obhajoba poradkyně a odmítání odpovědnosti za hlídání střetů zájmů, kritika mediálního pokrytí jako kampaně, ostrá reakce na dotaz novinářky a opakované tvrzení, že Semancová nastoupila už za předchozího ministra Jurečky.",
   "period": "2026",
   "status": "status-single",
   "statusLabel": "Sledované téma",
   "anchor": "kauza-obhajoba",
   "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-17"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-18"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-19"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-20"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-21"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-22"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-25"
     },
@@ -37,22 +55,46 @@
   ],
   "sources": [
     {
-      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-19"
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-13"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-14"
     },
     {
-      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-25"
-    },
-    {
       "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-15"
     },
     {
-      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-28"
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-19"
     },
     {
-      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-09"
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-25"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-28"
     }
   ],
   "subjects": [
