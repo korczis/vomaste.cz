@@ -58,9 +58,11 @@ entry; it does not replace reading and applying the rule.
   manually: `npm run hooks:install`) — a fast, pure-data validator subset.
   This is a convenience, not the real gate: it does **not** replace the
   full `npm run build` requirement below, and does not include
-  `lint:historical-coupling` (still red — currently 58 residual
-  occurrences of seed-subject identifiers in structural code, e.g.
-  `templates/entity-dossier.html`, `scripts/data/build-view-models.mjs`
+  `lint:historical-coupling` (still red — residual occurrences of
+  seed-subject identifiers in structural code, e.g.
+  `templates/entity-dossier.html`, `scripts/data/build-view-models.mjs`,
+  `data/navigation.toml` and the archived migrators; the count is not
+  written down here on purpose, it drifts with every touch of those files
   — outside the build gate on purpose. The migration that was tracked as
   `docs/coop/TASKS.md` T-001 is done/superseded — see T-028 there — but
   this specific cleanup has no open tracking task right now; run

@@ -18,8 +18,8 @@
  * vygenerují. Od fáze H (T-028) je kanonický dataset JEDINÝ zdroj
  * pravdy: dřívější validátory obsahové vrstvy (validate:dossier,
  * validate:schemas, validate:graph) zanikly — jejich pravidla vlastní
- * kanonické validátory (validate-references R1–R7, validate-semantics
- * S1–S8, validate-registry-table T1–T8, schemas/canonical/) a schema
+ * kanonické validátory (validate-references R1–R8, validate-semantics
+ * S1–S10, validate-registry-table T1–T8, schemas/canonical/) a schema
  * brána exportů žije přímo v build:data-exports.
  *
  * Kroky se spouštějí přes `npm run <script>`, aby definice příkazů

@@ -351,9 +351,10 @@
       tlačítky — při dvou dossierech vitrína, při dvaadvaceti stěna, kterou
       musí člověk na mobilu odrolovat, aby zjistil, co web obsahuje.
 
-      Data jdou z /data/dossiers.json (staví record-tables.mjs z dossiers.toml,
-      stats.toml, front matter a navigačního manifestu), takže počty ani
-      routy nejsou psané v šabloně a nemůžou zastarat. -#}
+      Data jdou z /data/dossiers.json (staví record-tables.mjs jako projekci
+      compiled kanonického modelu + navigačního manifestu — dřívější
+      data/dossiers.toml i per-dossier stats.toml zanikly v T-028 fázi H),
+      takže počty ani routy nejsou psané v šabloně a nemůžou zastarat. -#}
   {%- set directory_items = load_data(path="static/data/dossiers.json") -%}
   {%- if directory_items | length > 0 %}
   <section class="landing-section py-12 sm:py-16 lg:py-20">
@@ -574,7 +575,7 @@
       </details>
       <details class="group rounded-xl border border-white/10 bg-white/[0.03] open:border-[#f3e5c0]/30">
         <summary class="flex cursor-pointer items-center justify-between gap-3 p-5 text-sm font-semibold text-white marker:content-none [&::-webkit-details-marker]:hidden">Počítá se pět článků o téže věci jako pět potvrzení?<span class="text-white/55 transition-transform group-open:rotate-90" aria-hidden="true">&rsaquo;</span></summary>
-        <p class="border-t border-white/10 p-5 text-sm leading-relaxed text-white/70">Ne. Zdroje, které přebírají tutéž agenturní zprávu nebo tentýž článek, patří do jedné <strong class="text-white">rodiny</strong> a počítají se jako <strong class="text-white">jedno</strong> nezávislé doložení. Bez toho by stačilo, aby jednu zprávu převzalo pět webů, a tvrzení by vypadalo pětinásobně doložené. Rodina je editorské určení, ne funkce vydavatele — dva různí vydavatelé mohou sdílet rodinu a jeden vydavatel může vydat dvě nezávislé reportáže. Celé pravidlo i to, co se stalo, když se podle něj revidoval už publikovaný obsah: <a href="{{ get_url(path='@/koncepty/nezavisle-dolozeni.md') | safe }}" class="underline decoration-white/30 underline-offset-2 hover:text-white">nezávislé doložení</a>.</p>
+        <p class="border-t border-white/10 p-5 text-sm leading-relaxed text-white/70">Ne. Zdroje, které přebírají tutéž agenturní zprávu nebo tentýž článek, patří do jedné <strong class="text-white">rodiny</strong> a počítají se jako <strong class="text-white">jedno</strong> nezávislé doložení. Bez toho by stačilo, aby jednu zprávu převzalo pět webů, a tvrzení by vypadalo pětinásobně doložené. Rodina je editorské určení podle původu materiálu, ne funkce vydavatele: dva různí vydavatelé mohou sdílet rodinu. Obráceně to ale neplatí — <strong class="text-white">dva texty téhož vydavatele nejsou nikdy dvě nezávislá doložení</strong>, ať mají rodinu vyplněnou jakkoli. Nezávislost je až dvojice zdrojů, která se liší rodinou i vydavatelem (porovnává se název média i registrovaná doména). Celé pravidlo i to, co se stalo, když se podle něj revidoval už publikovaný obsah: <a href="{{ get_url(path='@/koncepty/nezavisle-dolozeni.md') | safe }}" class="underline decoration-white/30 underline-offset-2 hover:text-white">nezávislé doložení</a>.</p>
       </details>
       <details class="group rounded-xl border border-white/10 bg-white/[0.03] open:border-[#f3e5c0]/30">
         <summary class="flex cursor-pointer items-center justify-between gap-3 p-5 text-sm font-semibold text-white marker:content-none [&::-webkit-details-marker]:hidden">Proč má u některých dossierů skoro každý registr jen pár záznamů?<span class="text-white/55 transition-transform group-open:rotate-90" aria-hidden="true">&rsaquo;</span></summary>
