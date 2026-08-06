@@ -10,12 +10,24 @@
         "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
     },
     "title": "Spor o volbu náčelníka Generálního štábu",
-    "summary": "Spor o volbu náčelníka Generálního štábu — viz tvrzení CLM-13, CLM-14, CLM-15, CLM-16.",
+    "summary": "Spor o volbu náčelníka Generálního štábu — vládní hlasování, ve kterém byl ministr Zůna jediný proti, jmenování Miroslava Hlaváče prezidentem Pavlem, reakce SPD a dalších politiků, a Řehkův odchod z funkce včetně jeho následné kandidatury do Senátu.",
     "period": "2026",
     "status": "status-single",
     "statusLabel": "Sledované téma",
     "anchor": "kauza-nacelnik-gs",
     "claims": [
+        {
+            "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-13"
+        },
+        {
+            "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-14"
+        },
+        {
+            "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-15"
+        },
+        {
+            "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-16"
+        },
         {
             "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-20"
         },
@@ -49,19 +61,28 @@
     ],
     "sources": [
         {
+            "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-09"
+        },
+        {
+            "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-10"
+        },
+        {
+            "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-11"
+        },
+        {
             "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-14"
         },
         {
             "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-21"
         },
         {
-            "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-28"
+            "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-25"
         },
         {
             "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-27"
         },
         {
-            "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-25"
+            "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-28"
         },
         {
             "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-38"
