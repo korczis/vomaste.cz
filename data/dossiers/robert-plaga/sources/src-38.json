@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-38",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-38",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
+  },
+  "title": "SRC-38 — Připomínky ochránce práv dětí k sněmovnímu tisku 232, č. j. KVOP-36255/2026/S (8. 7. 2026)",
+  "description": "Vlastní písemné stanovisko dětského ombudsmana Martina Beneše uplatněné v připomínkovém řízení k poslaneckému návrhu na zákaz mobilních telefonů ve školách, zveřejněné v elektronické knihovně eKLEP na portálu ODok.",
+  "outlet": "Kancelář veřejného ochránce práv a ochránce práv dětí",
+  "sourceType": "primární úřední záznam",
+  "url": "https://odok.gov.cz/portal/veklep/material/pripominky/ALBSDVB9VVIG/",
+  "published": "2026-07-08",
+  "retrieved": "2026-08-06",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-38"
+    }
+  ],
+  "subjects": [
+    "plaga"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Primární dokument autora citovaného stanoviska** — příloha „Připomínky\"\npřipomínkového místa **KVOP** k materiálu PID `ALBSDVB9VVIG` (čj. OVA 552/26,\nsněmovní tisk 232), č. j. KVOP-36255/2026/S, datovaná Brno 8. července 2026\na podepsaná „Mgr. Martin Beneš v. r., ochránce práv dětí\". Stažena z portálu\nODok (`https://odok.gov.cz/portal/services/download/attachment/KORNDVSQLYLL/`)\na přečtena celá 2026-08-06.\n\n**Co dokládá doslovně:** že dětský ombudsman v připomínkovém řízení napsal\n„**Zásadně pochybuji o tom, že je důvodné upravovat zákaz mobilních telefonů\ncelostátně.**\"; že „**Úplný zákaz mobilů ve školách může navíc mezi dětmi vyvolat\nzhoršení vztahu ke škole. Děti budou školu vnímat negativně, jako místo, kde nové\npravidlo, na jehož vytváření se nemohly podílet …, omezuje jejich svobodu.**\";\nže „**Na důvodnosti zákazu nepanuje odborná shoda. S předloženým návrhem proto\nnesouhlasím.**\"; a že „**Již 93 % škol upravuje užívání mobilních telefonů ve\nsvých školních řádech. … Zákonná regulace se proto jeví jako nadbytečná.**\"\nDokument uzavírá návrhem, aby vláda k tisku vydala **nesouhlasné stanovisko**.\n\n**Nezávislost:** jde o vlastní podání Kanceláře veřejného ochránce práv\na ochránce práv dětí uložené v eKLEP, ne o zprávu média. Dosavadní zdroje CLM-38\n— [SRC-16](@/dossiers/robert-plaga/sources/src-16.md) a\n[SRC-19](@/dossiers/robert-plaga/sources/src-19.md) — nesou oba rodinu `ctk`,\ntedy jeden hlas.\n\n**Poznámka k přesnosti a limitům**: citovaná věta v tvrzení („Nadále pochybuji\no tom, že je vhodné upravovat zákaz mobilních telefonů **ve školách**\ncelostátně\") **není** větou z tohoto stanoviska. Písemné stanovisko z 8. 7. 2026\nzní „**Zásadně** pochybuji o tom, že je **důvodné** upravovat zákaz mobilních\ntelefonů celostátně\" — bez slov „ve školách\". Znění s „Nadále … vhodné\" je\npozdější Benešova reakce **na dotaz ČTK z 20. 7. 2026**, tedy jiný výrok z jiného\ndne, doložený zatím jen rodinou `ctk`\n([SRC-16](@/dossiers/robert-plaga/sources/src-16.md)). Tento zdroj proto\ndokládá **postoj a jeho odůvodnění**, nikoli doslovné znění věty citované\nv tvrzení; druhá část tvrzení („obává se, že děti budou školu vnímat negativně\")\nje ve stanovisku doslovná. Jde o **vyjádření jedné strany připomínkového řízení\nk vlastnímu podání**, ne o nezávislé posouzení návrhu třetí stranou; dossier\nz něj nevyvozuje, zda je zákaz účelný.\n\n**Nálezy bez připojení:** stanovisko dále obsahuje výtku k neproběhlé participaci\ndětí, k volbě poslanecké iniciativy místo vládního návrhu a nabídku zapojení\nprávníků Kanceláře. Tato zjištění nejsou obsahem žádného tvrzení registru\na zdroj k nim připojen nebyl."
+    }
+  ],
+  "order": 38
+}

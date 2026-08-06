@@ -48,6 +48,9 @@ Každá položka musí být označena podle toho, čím skutečně je:
 
 Síla systému nespočívá v tom, že předstírá jistotu. Spočívá v tom, že přesně ukazuje, kde jistota existuje, kde neexistuje a z čeho závěr vychází.
 
+Co dossier na této úrovni skutečně je a co ne, rozvádí
+[Co je dossier?](@/koncepty/co-je-dossier.md).
+
 ---
 
 ## 2. Žádné tvrzení bez zdroje {#bod-2}
@@ -62,6 +65,9 @@ Počet článků rovněž nemusí znamenat počet nezávislých potvrzení. Text
 
 Kde zdroj chybí, tvrzení se odstraní nebo přesune mezi otevřené otázky.
 
+Přesná pravidla, co je „jmenovaný zdroj" a proč nestačí početní shoda
+přetištěných článků: [Zdrojováno](@/koncepty/zdrojovano.md).
+
 ---
 
 ## 3. Citace zůstává citací {#bod-3}
@@ -73,6 +79,9 @@ Citaci nezjemňujeme, nezostřujeme ani nepřepisujeme tak, aby lépe zapadala d
 Stejně tak odmítnutí obvinění není důkazem neviny a samotné obvinění není důkazem viny.
 
 Úkolem dossieru není tuto vzdálenost rétoricky překlenout. Úkolem je zachovat ji viditelnou.
+
+Jak se citace odlišuje od doloženého faktu a od parafráze:
+[Stav: citace](@/koncepty/stav-citace.md).
 
 ---
 
@@ -106,6 +115,8 @@ Registr mezer není vedlejší poznámka ani přiznání porážky. Je součást
 
 Poctivé „nevíme“ má větší hodnotu než sebevědomá spekulace. Veřejný prostor má sebevědomých spekulací dostatek i bez naší pomoci.
 
+Jak mezera vzniká a co (ne)znamená: [Registr mezer](@/koncepty/registr-mezer.md).
+
 ---
 
 ## 6. Rozlišujeme fakta, spory a názory {#bod-6}
@@ -118,6 +129,9 @@ Stejný princip platí pro sporná tvrzení. Pokud jsou zdroje v rozporu, rozpor
 
 Systém musí zachovat nesoulad, ne jej zamést pod hladký odstavec.
 
+Tři stavy, tři různé významy: [Fakt odděleně od názoru](@/koncepty/fakt-oddelene-od-nazoru.md),
+[Stav: sporné](@/koncepty/stav-sporne.md), [Stav: názor](@/koncepty/stav-nazor.md).
+
 ---
 
 ## 7. Veřejný zájem není licence k bezbřehému sběru {#bod-7}
@@ -129,6 +143,9 @@ Neznamená to, že kdokoliv spojený s veřejnou osobou automaticky ztrácí sou
 Neanonymizované třetí osoby nebudeme pojmenovávat, pokud je samy důvěryhodné citované zdroje neidentifikují a pokud jejich identifikace není pro doložený veřejný kontext nezbytná.
 
 Projekt nemá být stroj na výrobu vedlejších obětí.
+
+Kde přesně vede hranice mezi subjektem a jeho okolím a jak funguje
+kontextová entita: [Třetí osoby a proporcionalita](@/koncepty/tretiosoby.md).
 
 ---
 
@@ -149,6 +166,9 @@ Historické autorizační záznamy se nemažou ani zpětně nepřepisují.
 
 Moc rozhodnout, koho systém začne sledovat, musí sama zanechávat stopu.
 
+Jak přesně tenhle log funguje, co se od 2026-08-05 změnilo a co zůstalo
+stejné: [Autorizace rozsahu](@/koncepty/autorizace.md).
+
 ---
 
 ## 9. Data mají být kontrolovatelná strojem i člověkem {#bod-9}
@@ -160,6 +180,9 @@ Tvrzení, zdroje a otevřené mezery jsou propojené registry. Odkazy mezi nimi 
 Validace není kosmetická kontrola před nasazením. Je součástí redakční metodologie.
 
 Build, který projde, nedokazuje pravdivost světa. Dokazuje alespoň to, že zveřejněná struktura odpovídá vlastním pravidlům a neupadla do obvyklého lidského režimu „nějak to tam dej, později to opravíme“.
+
+Co konkrétně je strojově ověřitelné a co (zatím) není:
+[Strojově čitelná data](@/koncepty/strojove-citelna-data.md).
 
 ---
 
@@ -181,6 +204,9 @@ Oprava není slabost systému. Neviditelná oprava je slabost systému.
 
 Důvěryhodnost nevzniká tvrzením, že se nikdy nemýlíme. Vzniká tím, že chybu lze zjistit, opravit a zpětně dohledat.
 
+Jak přesně to funguje na úrovni commitu a append-only historie:
+[Verzováno v Gitu](@/koncepty/verzovano-v-gitu.md).
+
 ---
 
 ## 11. Projekt musí být přenositelný {#bod-11}
@@ -197,6 +223,9 @@ Konkrétní repozitář je výchozí bod, ne ústřední chrám s právem určov
 
 Fork není útok proti projektu. Je to jedna z jeho pojistek.
 
+Co přesně adopce/fork znamená v praxi — jeden vstupní bod, co se nastavuje
+a co si fork musí vyřešit sám: [Forkovatelnost a adopce](@/koncepty/forkovatelnost.md).
+
 ---
 
 ## 12. Serverless není módní slovo {#bod-12}
@@ -208,6 +237,9 @@ Publikovaný dossier nemá být závislý na živém aplikačním serveru, neve�
 Tím se snižuje provozní složitost, náklady i prostor pro tiché zásahy do publikovaného obsahu.
 
 Serverless zde neznamená, že servery magicky přestaly existovat. Znamená, že existence veřejného výstupu není připoutána k jednomu trvale běžícímu privilegovanému systému.
+
+Technicky, co to přesně znamená a co to nedává zadarmo:
+[Serverless jako vlastnost](@/koncepty/serverless.md).
 
 ---
 
@@ -222,6 +254,10 @@ Autonomní má být provoz a kontrola pravidel.
 Odpovědnost za rozsah, zdroje a zveřejnění musí zůstat explicitní, dohledatelná a přezkoumatelná.
 
 Systém bez ruční brzdy není autonomní epistemická infrastruktura. Je to jen velmi rychlý způsob, jak automatizovat cizí chyby.
+
+Kde přesně vede hranice mezi tím, co smí a nesmí automatizace rozhodnout,
+a jak to vypadá v praxi u tohoto repozitáře:
+[Autonomní neznamená bez odpovědnosti](@/koncepty/autonomie-s-odpovednosti.md).
 
 ---
 
@@ -247,6 +283,9 @@ Nejde o válečný slogan ani romantickou představu technologické nesmrtelnost
 
 Jde o odstranění zbytečných bodů selhání.
 
+Jak se tyhle čtyři nezávislé body selhání skládají do jednoho invariantu:
+[Nezastavitelnost je vlastnost architektury](@/koncepty/nezastavitelnost.md).
+
 ---
 
 ## 15. Důvěru nemá vyžadovat značka {#bod-15}
@@ -267,6 +306,9 @@ Chceme, aby mohli kontrolovat:
 Projekt je důvěryhodný pouze do té míry, do jaké umožňuje vlastní kontrolu.
 
 Autorita bez možnosti ověření je jen uhlazenější forma požadavku na poslušnost.
+
+Kde na webu jde každou z osmi otázek výše skutečně ověřit:
+[Důvěra nemá vyžadovat značku](@/koncepty/duvera-bez-znacky.md).
 
 ---
 
@@ -290,6 +332,10 @@ Stejně tak „všichni to vědí“ není zdroj.
 
 Oprava musí ukázat, co je chybně, proč je to chybně a o jaký dohledatelný podklad se opírá.
 
+Kde přesně opravu nahlásit a proč nemá redakční veto ani ta strana,
+která chce přidat, ani ta, která chce ubrat:
+[Právo kritizovat a opravovat](@/koncepty/pravo-opravit.md).
+
 ---
 
 ## 17. Metodologie má přežít jednotlivé kauzy {#bod-17}
@@ -303,6 +349,9 @@ Cílem je vybudovat obecný postup, podle kterého lze konzistentně evidovat ve
 Stejná pravidla musí platit pro politického spojence, odpůrce, známou osobu i někoho, o kom provozovatel projektu dosud nikdy neslyšel.
 
 Metodologie, která funguje pouze proti lidem, které nemáme rádi, není metodologie. Je to zbraň s dokumentací.
+
+Test, který metodologie musí projít, a kde to jde na webu vidět v praxi:
+[Metodologie přežije kauzy](@/koncepty/metodologie-prezije-kauzy.md).
 
 ---
 

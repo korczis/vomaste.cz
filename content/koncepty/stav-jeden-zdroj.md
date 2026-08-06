@@ -35,8 +35,15 @@ změna zůstává v [historii verzí](@/koncepty/verzovano-v-gitu.md).
 
 ## Co vynucuje tooling
 
-`validate:dossier` shodí build, pokud tvrzení s tímto stavem cituje jiný počet
-zdrojů než právě jeden.
+`npm run data:validate` (pravidlo S1) shodí build, pokud mezi citovanými
+zdroji **existuje nezávislá dvojice** — tedy dva zdroje, které se liší
+zdrojovou rodinou i vydavatelem. Tvrzení pak dokládá víc, než přiznává, a
+patří mu [ověřeno více zdroji](@/koncepty/stav-overeno-vice-zdroji.md).
+
+Neznamená to „právě jeden citovaný zdroj". Tvrzení může legitimně citovat tři
+odkazy a přesto být `1 ZDROJ` — když jsou to tři přetisky téže agenturní
+zprávy nebo tři texty téhož vydavatele. Počítá se počet nezávislých hlasů, ne
+počet citací; [jak přesně](@/koncepty/nezavisle-dolozeni.md).
 
 ## Proč jednozdrojové tvrzení vůbec zůstává
 

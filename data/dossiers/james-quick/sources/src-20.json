@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-20",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-20",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/james-quick"
+  },
+  "title": "SRC-20 — Seznam Zprávy: Hokejová legenda musí platit. Jinak čeká Vladimíra Růžičku vězení",
+  "description": "Zpráva Seznam Zpráv o zamítnutí odvolání Vladimíra Růžičky Městským soudem v Praze a nabytí právní moci rozsudku.",
+  "outlet": "Seznam Zprávy",
+  "sourceType": "redakční zpravodajství",
+  "url": "https://www.seznamzpravy.cz/clanek/hokejova-legenda-musi-platit-jinak-ceka-vladimira-ruzicku-vezeni-12016",
+  "published": "2017-01-11",
+  "retrieved": "2026-08-06",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-19"
+    }
+  ],
+  "subjects": [
+    "james-quick"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Přímo otevřený redakční zdroj, nezávislý na ČT24 a na ČTK, který dokládá výsledek odvolacího řízení a nabytí právní moci. Doslovně cituje soudkyni, aby odůvodnění rozsudku nebylo dossierem parafrázováno mimo kontext."
+    }
+  ],
+  "order": 20
+}

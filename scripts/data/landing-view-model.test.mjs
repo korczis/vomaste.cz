@@ -109,6 +109,23 @@ function writeDossier(root, { slug, order, navigationVisible = true, claims, sou
   });
 }
 
+/*
+ * Zapíše jeden update záznam dossieru. `identifier` výchozí = `date`
+ * (druhý zápis téhož dne v jednom fixture dossieru potřebuje vlastní
+ * sufix, viz updateGlobalId).
+ */
+function writeUpdate(root, { slug, date, identifier = date, summary, addedClaims = [] }) {
+  const did = `${ID_BASE}/dossiers/${slug}`;
+  put(root, `data/dossiers/${slug}/updates/${identifier}.json`, {
+    ...envelope("update", "Update", `${did}/updates/${identifier}`),
+    identifier,
+    dossier: { "@id": did },
+    date,
+    summary,
+    addedClaims: addedClaims.map((c) => ({ "@id": `${did}/claims/${c}` })),
+  });
+}
+
 const compiledOf = (root) => compileDataset(loadCanonicalTree(join(root, "data/dossiers")));
 const freshRoot = () => mkdtempSync(join(tmpdir(), "vomaste-landing-"));
 const landingOf = (root) => buildViewModels(compiledOf(root)).get("landing.json");
@@ -272,4 +289,69 @@ test("ukázky primárních dokumentů: jeden za druh, nejvíc doložených tvrze
   assert.equal(landing.evidence.institutionalSources, 2);
   // Ukázka nese instituci, ne titul záznamu — titulní strana nikoho nejmenuje.
   assert.ok(landing.primaryDocuments.every((d) => d.outlet && d.route && !("title" in d)));
+});
+
+// --- poslední aktualizace (site-wide, ne per-dossier) --------------------
+
+test("recentUpdates je řazený podle data napříč VŠEMI dossiery, ne podle pořadí registru", () => {
+  const root = freshRoot();
+  writeDossier(root, { slug: "aaa-stary", order: 1, claims: [["status-single", 1]] });
+  writeUpdate(root, { slug: "aaa-stary", date: "2026-01-01", summary: "Starý update." });
+  writeDossier(root, { slug: "zzz-novy", order: 2, claims: [["status-single", 1]] });
+  writeUpdate(root, { slug: "zzz-novy", date: "2026-08-05", summary: "Nový update." });
+  const landing = landingOf(root);
+  assert.equal(landing.recentUpdates.length, 2);
+  assert.equal(landing.recentUpdates[0].dossierSlug, "zzz-novy");
+  assert.equal(landing.recentUpdates[0].date, "2026-08-05");
+  assert.equal(landing.recentUpdates[1].dossierSlug, "aaa-stary");
+});
+
+test("recentUpdates carries dossierTitle so the mixed-dossier list stays attributable", () => {
+  const root = freshRoot();
+  writeDossier(root, { slug: "dossier", claims: [["status-single", 1]] });
+  writeUpdate(root, { slug: "dossier", date: "2026-08-01", summary: "Update." });
+  const landing = landingOf(root);
+  assert.equal(landing.recentUpdates[0].dossierTitle, "dossier");
+  assert.equal(landing.recentUpdates[0].dossierSlug, "dossier");
+});
+
+test("recentUpdates limits to the 8 most recent, not every update on the site", () => {
+  const root = freshRoot();
+  writeDossier(root, { slug: "hodne-updatu", claims: [["status-single", 1]] });
+  for (let i = 1; i <= 12; i++) {
+    const day = String(i).padStart(2, "0");
+    writeUpdate(root, { slug: "hodne-updatu", date: `2026-01-${day}`, summary: `Update ${i}.` });
+  }
+  const landing = landingOf(root);
+  assert.equal(landing.recentUpdates.length, 8);
+  assert.equal(landing.recentUpdates[0].date, "2026-01-12");
+  assert.equal(landing.recentUpdates[7].date, "2026-01-05");
+});
+
+test("two updates on the same date across different dossiers tie-break deterministically by dossier slug", () => {
+  const root = freshRoot();
+  writeDossier(root, { slug: "b-dossier", claims: [["status-single", 1]] });
+  writeUpdate(root, { slug: "b-dossier", date: "2026-08-01", summary: "B." });
+  writeDossier(root, { slug: "a-dossier", claims: [["status-single", 1]] });
+  writeUpdate(root, { slug: "a-dossier", date: "2026-08-01", summary: "A." });
+  const landing = landingOf(root);
+  assert.deepEqual(
+    landing.recentUpdates.map((u) => u.dossierSlug),
+    ["a-dossier", "b-dossier"],
+  );
+});
+
+test("recentUpdates carries addedClaims so the landing page can link straight to them", () => {
+  const root = freshRoot();
+  writeDossier(root, { slug: "dossier", claims: [["status-single", 1]] });
+  writeUpdate(root, { slug: "dossier", date: "2026-08-01", summary: "Update.", addedClaims: ["CLM-1"] });
+  const landing = landingOf(root);
+  assert.deepEqual(landing.recentUpdates[0].addedClaims, ["CLM-1"]);
+});
+
+test("a dossier with no updates at all contributes nothing to recentUpdates, not a crash", () => {
+  const root = freshRoot();
+  writeDossier(root, { slug: "bez-updatu", claims: [["status-single", 1]] });
+  const landing = landingOf(root);
+  assert.deepEqual(landing.recentUpdates, []);
 });

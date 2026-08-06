@@ -29,11 +29,12 @@ celek.
 ## Co vynucuje tooling
 
 Tvrzení žije dvakrát: jako řádek v přehledové tabulce dossieru (to edituje
-člověk) a jako vygenerovaná detailní stránka. `validate:dossier` shodí build,
-pokud se text, stav nebo seznam zdrojů liší byť o jediný znak, a taky pokud
-některé ID chybí, je duplicitní nebo odkazuje na neexistující zdroj. Stav
-`CORROBORATED` navíc vyžaduje nejméně dva různé citované zdroje, stav
-`1 ZDROJ` právě jeden.
+člověk) a jako vygenerovaná detailní stránka. `npm run data:validate` shodí
+build (parita tabulky T1–T8), pokud se text, stav nebo seznam zdrojů liší byť
+o jediný znak, a taky pokud některé ID chybí, je duplicitní nebo odkazuje na
+neexistující zdroj. Stav `CORROBORATED` navíc vyžaduje aspoň jednu
+[nezávislou dvojici](@/koncepty/nezavisle-dolozeni.md) zdrojů (S2), stav
+`1 ZDROJ` naopak žádnou (S1) — počítají se nezávislé hlasy, ne citace.
 
 Přehled všech stavů a co znamenají: [stavy tvrzení](../#stav).
 Tvrzení najdeš v registru každého [publikovaného dossieru](@/dossiers/_index.md).
@@ -55,7 +56,7 @@ web není.
 
 Tvrzení je vidět na dvou místech: jako řádek v přehledové tabulce dossieru
 a jako samostatná stránka s vlastní URL. Editor mění tabulku, stránky se
-z ní generují — a `validate:dossier` build shodí, když se rozejdou byť
+z ní generují — a `npm run data:validate` build shodí, když se rozejdou byť
 o jediný znak. Bez té brány by web postupem času tvrdil dvě různé věci
 podle toho, kam čtenář klikl.
 

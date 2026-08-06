@@ -62,6 +62,7 @@ Odpovídá na otázku „kam se podívat a čemu z toho věřit". Publikovaná p
 - **ÚDHPSH — Úřad pro dohled nad hospodařením politických stran a politických hnutí — „Úplná" není „zkontrolovaná"**: Přehled zpráv uvádí u každého subjektu řádek „výsledek kontroly: zpráva je úplná *". Slovo „kontrola" je v označení řádku, ale hvězdička odkazuje na vysvětlivku Úřadu na téže stránce: „Výroční finanční zpráva je dle zákona úplná, obsahuje-li všechny požadované náležitosti a je-li předložena na předepsaném formuláři s přílohami. **Nejedná se o výsledek kontroly správnosti údajů.**" Přečteno obráceně by z formální kompletnosti vzniklo doložení věcné správnosti, které úřad výslovně odmítá. Doloženo v `richard-chlad/SRC-07`.
 - **ÚDHPSH — Úřad pro dohled nad hospodařením politických stran a politických hnutí — Hlídač státu registr reprodukuje, nepotvrzuje ho**: Profil sponzoringu na Hlídači státu přebírá položky z výroční finanční zprávy včetně jejich vlastního znění („propůjčení vozů Bugatti na akci", „výroba a instalace Billboardu, pronájem rekl.plochy"). Registr a jeho zrcadlo proto nejsou dva nezávislé hlasy — právě proto nese `richard-chlad/SRC-01` rodinu `udhpsh`, přestože jeho outlet je Hlídač státu. Navíc agregátor zobrazuje obě kategorie pod nadpisem „Přehled jednotlivých darů", zatímco zpráva tytéž položky vede jako bezúplatná plnění. Citovat se má registr, ne zrcadlo.
 - **ÚDHPSH — Úřad pro dohled nad hospodařením politických stran a politických hnutí — Jmenovci se liší jen ročníkem narození**: Ve zprávě za rok 2024 jsou u hnutí Motoristé sobě vedeny dva peněžité dary po 50 000 Kč od dárce „Chlad, Richard 27.05.1992", zatímco pětice bezúplatných plnění ve zprávě za rok 2025 patří Ing. Richardu Chladovi s ročníkem 1962. Bez porovnání data narození by se dvě různé osoby slily do jedné a součet by vznikl napříč nimi. Doloženo v `richard-chlad/SRC-06`.
+- **ÚDHPSH — Úřad pro dohled nad hospodařením politických stran a politických hnutí — Rok zprávy není rok děje**: Výroční finanční zpráva za rok N se zveřejňuje až v roce N+1 a opravy k ní přibývají později. Datum stažení proto tvrzení nedatuje — cituj rok, ke kterému se zpráva vztahuje, jinak se dar z roku 2023 čte jako dar z roku, kdy byl výpis pořízen.
 - **ČTK — Česká tisková kancelář — Přebírání vypadá jako shoda**: Právě kvůli tomuhle existuje pole `sourceFamily`. Bez něj se pět vydání téže zprávy počítá jako pět nezávislých redakcí a tvrzení dostane CORROBORATED, které si nezaslouží. Revize T-056 takto musela srazit 55 tvrzení zpět na 1 ZDROJ.
 - **ČTK — Česká tisková kancelář — Kredit je jen v metadatech a patičce**: Zmínka „řekl ČTK" uprostřed textu je běžná i ve vlastním zpravodajství a původ nedokládá. Rozhoduje `<meta name="author">`, podpisový blok nebo patička „Zdroj: …".
 - **Poslanecká sněmovna Parlamentu ČR — Volební období mění čísla**: Tisky a hlasování jsou číslovány v rámci volebního období. URL bez období vede po volbách na jiný dokument.
@@ -100,17 +101,17 @@ Odpovídá na otázku „kam se podívat a čemu z toho věřit". Publikovaná p
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 680 záznamů v 114 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 704 záznamů v 122 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
 | ctk | 290 | 21 | [ano](/zdroje/ctk/) |
-| seznam-zpravy | 35 | 13 | [ano](/zdroje/seznam-zpravy/) |
-| Poslanecká sněmovna Parlamentu ČR | 32 | 15 | [ano](/zdroje/psp-cz/) |
+| seznam-zpravy | 38 | 13 | [ano](/zdroje/seznam-zpravy/) |
+| Poslanecká sněmovna Parlamentu ČR | 34 | 15 | [ano](/zdroje/psp-cz/) |
 | Vláda České republiky (vlada.gov.cz) | 28 | 17 | [ano](/zdroje/vlada-cz/) |
 | FORUM 24 | 19 | 9 | [ano](/zdroje/forum24/) |
-| denik-n | 16 | 9 | [ano](/zdroje/denik-n/) |
-| ČT24 (Česká televize) | 14 | 7 | [ano](/zdroje/ceska-televize/) |
+| denik-n | 17 | 9 | [ano](/zdroje/denik-n/) |
+| ČT24 (Česká televize) | 15 | 7 | [ano](/zdroje/ceska-televize/) |
 | Echo24 | 13 | 9 | [ano](/zdroje/echo24/) |
 | denik-cz | 11 | 6 | [ano](/zdroje/denik-cz/) |
 | Aktuálně.cz | 11 | 6 | [ano](/zdroje/aktualne-cz/) |
@@ -121,6 +122,8 @@ Dopočítáno z `data/dossiers/**/sources/**`, 680 záznamů v 114 rodinách/out
 | hlidac-statu | 7 | 2 | [ano](/zdroje/hlidac-statu/) |
 | udhpsh | 6 | 1 | [ano](/zdroje/udhpsh/) |
 | Blesk.cz | 5 | 3 | [ano](/zdroje/blesk-cz/) |
+| Zdravé zprávy | 5 | 2 | — |
+| CNN Prima News | 4 | 3 | — |
 | e15.cz | 4 | 2 | — |
 | HlídacíPes.org | 4 | 4 | — |
 | Hospodářské noviny | 4 | 3 | — |
@@ -128,8 +131,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 680 záznamů v 114 rodinách/out
 | Reflex | 4 | 4 | — |
 | Respekt | 4 | 3 | — |
 | Státní zemědělský intervenční fond | 4 | 1 | — |
-| Zdravé zprávy | 4 | 2 | — |
-| CNN Prima News | 3 | 3 | — |
+| verejnazaloba | 4 | 1 | — |
 | Investigace.cz | 3 | 3 | — |
 | Ministerstvo financí ČR | 3 | 1 | — |
 | Ministerstvo školství, mládeže a tělovýchovy ČR | 3 | 1 | — |
@@ -141,9 +143,12 @@ Dopočítáno z `data/dossiers/**/sources/**`, 680 záznamů v 114 rodinách/out
 | Úřad pro ochranu osobních údajů | 3 | 1 | — |
 | cz-verejny-rejstrik | 2 | 1 | [ano](/zdroje/ares/) |
 | ARES — Administrativní registr ekonomických subjektů (Ministerstvo financí ČR) | 2 | 2 | [ano](/zdroje/ares/) |
+| Česká školní inspekce | 2 | 1 | — |
 | CZDEFENCE | 2 | 1 | — |
+| Deník Alarm | 2 | 1 | — |
 | Fakultní nemocnice Olomouc (oficiální web) | 2 | 1 | — |
 | Médiář | 2 | 1 | — |
+| Ministerstvo kultury ČR | 2 | 1 | — |
 | Ministerstvo průmyslu a obchodu (MPO) | 2 | 2 | — |
 | Ministerstvo spravedlnosti ČR | 2 | 1 | — |
 | Ministerstvo životního prostředí ČR | 2 | 1 | — |
@@ -152,6 +157,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 680 záznamů v 114 rodinách/out
 | Olomoucký deník | 2 | 1 | — |
 | Pražský deník | 2 | 1 | — |
 | Registr lobbování (RELOB) | 2 | 1 | — |
+| Seznam Zprávy | 2 | 2 | [ano](/zdroje/seznam-zpravy/) |
 | Ústavní soud ČR | 2 | 2 | — |
 | Vrchní státní zastupitelství v Olomouci | 2 | 1 | — |
 | ct24 | 1 | 1 | [ano](/zdroje/ceska-televize/) |
@@ -164,11 +170,10 @@ Dopočítáno z `data/dossiers/**/sources/**`, 680 záznamů v 114 rodinách/out
 | Centrum veřejných financí (Univerzita Karlova) | 1 | 1 | — |
 | Česká infrastruktura | 1 | 1 | — |
 | Česká obchodní inspekce | 1 | 1 | — |
-| Česká školní inspekce | 1 | 1 | — |
 | ČKAIT (Česká komora autorizovaných inženýrů a techniků) | 1 | 1 | — |
 | CNCB / BRKI a NRKI | 1 | 1 | — |
 | Demagog.cz | 1 | 1 | — |
-| Deník Alarm | 1 | 1 | — |
+| Deník N | 1 | 1 | [ano](/zdroje/denik-n/) |
 | Deník Referendum | 1 | 1 | — |
 | Deník VEKTOR | 1 | 1 | — |
 | Dopravní noviny | 1 | 1 | — |
@@ -184,26 +189,30 @@ Dopočítáno z `data/dossiers/**/sources/**`, 680 záznamů v 114 rodinách/out
 | Heroine.cz | 1 | 1 | — |
 | Info.cz | 1 | 1 | — |
 | iportal24.cz | 1 | 1 | — |
+| iSport.cz (Blesk) | 1 | 1 | — |
 | Jezdci.cz | 1 | 1 | — |
+| Kancelář veřejného ochránce práv a ochránce práv dětí | 1 | 1 | — |
 | Kurzy.cz | 1 | 1 | — |
 | Lupa.cz | 1 | 1 | — |
 | Manipulátoři.cz | 1 | 1 | — |
 | Město Bílina (oficiální web) | 1 | 1 | — |
 | MHD86 | 1 | 1 | — |
+| Milion chvilek pro demokracii | 1 | 1 | — |
 | Ministerstvo zdravotnictví ČR | 1 | 1 | — |
 | Motoristé sobě (motoristesobe.cz/udhpsh) | 1 | 1 | — |
 | Neovlivní.cz | 1 | 1 | — |
 | Novinky.cz / Právo | 1 | 1 | [ano](/zdroje/novinky-cz/) |
+| ODS (Občanská demokratická strana) | 1 | 1 | — |
 | ParlamentníListy.cz | 1 | 1 | — |
 | Podnikatel.cz | 1 | 1 | [ano](/zdroje/podnikatel-cz-rejstrik/) |
 | Podpůrný a garanční rolnický a lesnický fond (PGRLF) | 1 | 1 | — |
+| Policie České republiky — Krajské ředitelství policie Olomouckého kraje | 1 | 1 | — |
 | Průmyslová automatizace | 1 | 1 | — |
 | RAILTARGET | 1 | 1 | — |
 | Refresher.cz | 1 | 1 | — |
 | Romea.cz | 1 | 1 | — |
 | Security magazín | 1 | 1 | — |
 | Senát Parlamentu České republiky | 1 | 1 | — |
-| Seznam Zprávy | 1 | 1 | [ano](/zdroje/seznam-zpravy/) |
 | silnice-zeleznice.cz | 1 | 1 | — |
 | Společnost pro obranu svobody projevu | 1 | 1 | — |
 | Taneční aktuality | 1 | 1 | — |
@@ -218,4 +227,10 @@ Dopočítáno z `data/dossiers/**/sources/**`, 680 záznamů v 114 rodinách/out
 | Život v Česku | 1 | 1 | — |
 | smlouvy-gov-cz | 1 | 1 | [ano](/zdroje/registr-smluv/) |
 | usoud | 1 | 1 | — |
+
+## Chybí popis
+
+Tyhle zdroje dataset používá aspoň pětkrát, ale katalog k nim nemá záznam s mezemi a pastmi:
+
+- Zdravé zprávy (5×)
 

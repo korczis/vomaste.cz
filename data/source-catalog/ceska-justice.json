@@ -8,6 +8,7 @@
   "identifier": "ceska-justice",
   "title": "Česká justice",
   "operator": "Media Network s.r.o.",
+  "publisherGroup": "media-network",
   "kind": "media",
   "jurisdiction": "CZ",
   "access": "open",

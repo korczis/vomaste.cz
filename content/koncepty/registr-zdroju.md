@@ -34,9 +34,10 @@ skutečně nezávislé — dvě URL téhož vydavatele nestačí.
 
 ## Co vynucuje tooling
 
-Vazba tvrzení ↔ zdroj je dvousměrná a `validate:dossier` shodí build, když
-odkaz vede na neexistující záznam nebo když seznam zdrojů u tvrzení
-neodpovídá tomu, co je na stránce zdroje. Zdroj bez jediného podporovaného
+Vazba tvrzení ↔ zdroj je dvousměrná a `npm run data:validate` shodí build,
+když odkaz vede na neexistující záznam (pravidlo R4) nebo když o vazbě ví jen
+jedna strana — cituje-li tvrzení zdroj, musí tentýž zdroj uvádět to tvrzení
+ve svém seznamu, a naopak (pravidlo R8). Zdroj bez jediného podporovaného
 tvrzení je taky chyba, ne dekorace.
 
 ## Typ zdroje mění jeho váhu

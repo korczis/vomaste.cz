@@ -53,11 +53,12 @@ Nemusíte tomu věřit — je to zkontrolovatelné ze tří stran:
 
 ## Co to vynucuje
 
-`validate:dossier` shodí build, když tvrzení odkazuje na neexistující
-`SRC-##`, když se seznam zdrojů u tvrzení a na stránce zdroje rozejde, nebo
-když počet zdrojů neodpovídá deklarovanému stavu
-([ověřeno více zdroji](@/koncepty/stav-overeno-vice-zdroji.md) vyžaduje
-nejméně dva, [1 zdroj](@/koncepty/stav-jeden-zdroj.md) právě jeden).
+`npm run data:validate` shodí build, když tvrzení odkazuje na neexistující
+`SRC-##` (R4/R6), když o vazbě tvrzení ↔ zdroj ví jen jedna strana (R8), nebo
+když doložení neodpovídá deklarovanému stavu
+([ověřeno více zdroji](@/koncepty/stav-overeno-vice-zdroji.md) vyžaduje aspoň
+jednu [nezávislou dvojici](@/koncepty/nezavisle-dolozeni.md) zdrojů,
+[1 zdroj](@/koncepty/stav-jeden-zdroj.md) naopak žádnou).
 `zola check` navíc kontroluje, že interní odkazy vedou někam, a
 `verify:anchors` že sedí i kotvy v hotovém HTML.
 

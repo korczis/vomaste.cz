@@ -4,6 +4,7 @@ title = "Klub motoristů, z.s."
 template = "entity.html"
 weight = 15
 aliases = ["/dossiers/macinka-turek/entities/klubmotoristu/"]
+description = "Kontextový záznam na vomaste.cz: Klub motoristů, z.s. Vystupuje v dossieru Petr Macinka a Filip Turek a dalších. Uveden, protože ho jmenuje citovaný obsah, ne jako tvrzení o pochybení."
 
 [extra]
 generated = true

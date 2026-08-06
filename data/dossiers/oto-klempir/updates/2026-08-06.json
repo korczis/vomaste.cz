@@ -1,0 +1,54 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/oto-klempir/updates/2026-08-06",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-08-06",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
+  },
+  "date": "2026-08-06",
+  "summary": "Ohraničené kolo nezávislosti zdrojů: vyřešeno všech 5 tvrzení evidenční třídy E1+ (≥2 citované zdroje, ale všechny z rodiny ctk). Ke každému dohledán a otevřen jeden doklad z jiné rodiny i od jiného vydavatele — 2× primární dokument Ministerstva kultury, 1× vlastní zpravodajství Deníku N, 1× vlastní ohlášení pořadatele akce, 1× vlastní text Deníku Alarm. CLM-18, CLM-22, CLM-25 a CLM-40 povýšeny na CORROBORATED; CLM-19 zůstává CITACE (stav popisuje povahu tvrzení, ne sílu doložení) a jen získává druhý nezávislý zdroj. Tvrzení se kvůli dokumentům nepřepisovala — zjištěné rozdíly jsou zapsané v poznámkách k přesnosti u SRC-31, SRC-32, SRC-33, SRC-34 a SRC-35. 34 jednozdrojových tvrzení a otevřené mezery zůstávají mimo rozsah tohoto kola.",
+  "updatedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-18"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-19"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-22"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-25"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-40"
+    }
+  ],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-31"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-32"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-33"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-34"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-35"
+    }
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "## Co se v tomto kole dělalo\n\nKolo bylo záměrně úzké. Evidenční report (`npm run report:evidence-plan`) rozlišuje\ntřídu **E1+**: tvrzení, které cituje dva a víc zdrojů, ale žádná jejich dvojice není\nnezávislá — všechny spadají do jedné zdrojové rodiny, k témuž vydavateli nebo na\ntutéž registrovanou doménu. U tohoto dossieru šlo o pět tvrzení a u všech pěti byla\npříčina táž: **shodná rodina `ctk`**, tedy jeden agenturní hlas přetištěný ve dvou\nmédiích. Vydavatel ani doména kolizi nezpůsobily v žádném z pěti případů.\n\n| Tvrzení | Dosavadní zdroje (rodina) | Nový doklad | Rodina |\n|---|---|---|---|\n| [CLM-18](@/dossiers/oto-klempir/claims/clm-18.md) | SRC-13, SRC-14 (`ctk`) | [SRC-33](@/dossiers/oto-klempir/sources/src-33.md), [SRC-34](@/dossiers/oto-klempir/sources/src-34.md) | `denik-n`, pořadatel |\n| [CLM-19](@/dossiers/oto-klempir/claims/clm-19.md) | SRC-13, SRC-14 (`ctk`) | [SRC-33](@/dossiers/oto-klempir/sources/src-33.md) | `denik-n` |\n| [CLM-22](@/dossiers/oto-klempir/claims/clm-22.md) | SRC-04, SRC-27 (`ctk`) | [SRC-31](@/dossiers/oto-klempir/sources/src-31.md) | Ministerstvo kultury |\n| [CLM-25](@/dossiers/oto-klempir/claims/clm-25.md) | SRC-04, SRC-08 (`ctk`) | [SRC-32](@/dossiers/oto-klempir/sources/src-32.md) | Ministerstvo kultury |\n| [CLM-40](@/dossiers/oto-klempir/claims/clm-40.md) | SRC-22, SRC-23 (`ctk`) | [SRC-35](@/dossiers/oto-klempir/sources/src-35.md) | Deník Alarm |\n\n## Rozdíly proti dokumentu, které se zapsaly a nezahladily\n\nPravidlo tohoto kola bylo, že přednost má dokument a tvrzení se neupravuje tak, aby\ndokumentu „sedělo“. Nalezené rozdíly proto zůstávají viditelné v poznámkách\nu jednotlivých zdrojů:\n\n- **CLM-22**: stanovisko Ministerstva kultury nese na webu datum **3. 7. 2026**,\n  zatímco tvrzení mluví o zveřejnění 2. července 2026 — to je datum agenturní\n  zprávy, kterou převzaly ČT24 i ČeskéNoviny.cz.\n- **CLM-25**: tisková zpráva ministerstva **nejmenuje v činném rodě**, kdo Alicju\n  Knast odvolal (píše „byla včera z funkce odvolána“); doloženo je datum odvolání\n  19. 3. 2026 a pověření Olgy Kotkové **dočasným** vedením.\n- **CLM-19**: Deník N uvádí Minářův výrok v **nepřímé řeči**; doslovné znění citace\n  stojí nadále jen na agenturních zdrojích.\n- **CLM-18**: ohlášení pořadatele je **předběžné** (avizuje 180 000 podpisů), nikoli\n  zpráva o předání; odhad účasti „více než deset tisíc“ ani číslo 184 000 nový\n  doklad nepotvrzuje.\n- **CLM-40**: Deník Alarm uvádí **250 signatářů k 16. říjnu 2025**, kdežto „zhruba\n  500“ je číslo agenturní zprávy o den až dva později — jde o dva okamžiky sběru\n  podpisů, ne o rozpor. Formulace v uvozovkách „snahy o politickou kontrolu umělecké\n  produkce“ je navíc shrnutí agentury; **doslovné znění dopisu** zní „…což vzbuzuje\n  obavy z politické kontroly produkce umění“.\n\n## Co se nedělalo\n\nZbývajících 34 tvrzení třídy `E1` (jediný citovaný zdroj) ani otevřené mezery nebyly\nv rozsahu tohoto kola. Kurátorská vrstva grafu (`dossier.graph`) a registr vztahů\n(`relations/`) se nepřepisovaly — nové zdroje do nich, stejně jako u SRC-29 a SRC-30\nv předchozím kole, zatím nevstupují. Autorizační rozsah dossieru se nerozšiřoval."
+    }
+  ]
+}

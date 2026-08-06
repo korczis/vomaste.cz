@@ -35,10 +35,12 @@ doložení, i když mají různá ID, různé domény a různé titulky. Typick�
 je zpráva tiskové agentury, kterou ve stejný den vydá pět redakcí: pět
 záznamů, jeden hlas.
 
-Rodina není totéž co vydavatel. Dva různí vydavatelé mohou sdílet rodinu
-(oba přetiskli tutéž zprávu) a jeden vydavatel může vydat dvě nezávislé
-reportáže. Proto je rodina samostatné pole, které určuje člověk podle původu
-materiálu — ne funkce názvu média.
+Rodina není totéž co vydavatel: dva různí vydavatelé mohou sdílet rodinu
+(oba přetiskli tutéž zprávu). Proto je rodina samostatné pole, které určuje
+člověk podle původu materiálu — ne funkce názvu média. Obráceně to ale
+neplatí: dva vlastní texty téhož vydavatele se pro doložení stejně počítají
+jako jeden hlas (viz níže), i když jsou na sobě redakčně nezávislé. Rodina
+tedy nezávislost může jen odebrat, nikdy přidat.
 
 ## Jedna redakce nepotvrzuje sama sebe
 
@@ -57,13 +59,14 @@ korroborace by zmizela.
 ## Vynucuje to build, ne dobrá vůle
 
 Pravidlo není redakční předsevzetí. Je to brána v `npm run data:validate`,
-kterou musí projít každý build:
+kterou musí projít každý build (sémantická pravidla S1, S2, S4 a S10):
 
 | pravidlo | co shodí build |
 |---|---|
-| tvrzení `CORROBORATED` | zdroje nedávají ani jednu nezávislou dvojici |
-| tvrzení `1 ZDROJ` | citované zdroje pocházejí z více rodin, tedy je doloženo víc, než přiznává |
-| hrana v grafu | vztah označený jako potvrzený nemá nezávislé doložení |
+| tvrzení `CORROBORATED` (S2) | zdroje nedávají ani jednu nezávislou dvojici |
+| tvrzení `1 ZDROJ` (S1) | mezi citovanými zdroji nezávislá dvojice **je**, tedy je doloženo víc, než přiznává |
+| hrana v grafu (S4) | vztah označený jako potvrzený nemá nezávislé doložení |
+| týž vydavatel (S10) | dva zdroje se shodným vydavatelem nebo registrovanou doménou se nikdy nepočítají jako dva hlasy |
 
 Odznak si tedy nelze „dát". Buď v datech existují dva nezávislí vydavatelé,
 nebo tvrzení nese slabší stav.

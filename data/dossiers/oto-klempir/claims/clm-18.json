@@ -10,14 +10,20 @@
     "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
   },
   "text": "Dne 24. května 2026 se v centru Prahy konala demonstrace spolku Milion chvilek pro demokracii proti Klempířovu návrhu; pořadatelé odhadli účast na více než deset tisíc lidí a předali Úřadu vlády petici se 180 až 184 tisíci podpisy požadující stažení zákona.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-13"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-14"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-33"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-34"
     }
   ],
   "subjects": [

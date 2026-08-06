@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-84",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-84",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-84 — Městské státní zastupitelství v Praze: Tisková zpráva ke kauze Čapí hnízdo ze dne 19.9.2019",
+  "description": "Odpovědi městského státního zástupce Mgr. Martina Erazíma na dotazy novinářů k usnesení o zastavení trestního stíhání v kauze Čapí hnízdo — uvádí důvod zastavení a rozsah, v jakém bylo usnesení zveřejněno podle zákona č. 106/1999 Sb.",
+  "outlet": "Městské státní zastupitelství v Praze",
+  "sourceFamily": "verejnazaloba",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://verejnazaloba.cz/msz-praha/tiskova-zprava-ke-kauze-capi-hnizdo-ze-dne-19-9-2019/",
+  "published": "2019-09-19",
+  "retrieved": "2026-08-06",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-78"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Primární dokument státního zastupitelství** — strukturované odpovědi\nměstského státního zástupce **Mgr. Martina Erazíma** na deset okruhů\nnovinářských dotazů, zveřejněné na portálu `verejnazaloba.cz` 19. 9. 2019.\nOtevřeno a přečteno 2026-08-06.\n\nCo dokument uvádí doslovně:\n\n- Důvod zastavení: „K naplnění skutkové podstaty trestného činu **dotačního\n  podvodu** je podstatné prokázat, že v době podání žádosti o dotaci uvedli\n  žadatelé poskytovatele dotace v omyl. Tento omyl měl spočívat v tvrzení, že\n  **žadatel je malým nebo středním podnikem**. **Provedeným dokazováním se však\n  nepodařilo prokázat, že by toto tvrzení bylo nepravdivé.** Naopak\n  poskytovatelům dotace byl poskytnut dostatek informací k charakteru\n  podnikání žadatele.“\n- Rozsah zveřejnění: „Rozhodnutí o zastavení trestního stíhání bylo poskytnuto\n  dle zákona č. 106/1999 Sb. o informacích **v rozsahu omezeném převážně na\n  právní závěry** vedoucí k zastavení trestního stíhání. … Zbylá část\n  rozhodnutí obsahuje **citace výpovědí obviněných, svědků** a shromážděných\n  listinných důvodů“, jejichž zveřejnění brání probíhající přezkum podle\n  § 174a trestního řádu.\n- K pojmu malý a střední podnik: „Tato otázka byla řešena na začátku celé kauzy\n  ovšem **s opačným výsledkem**. … Pro zahájení trestního stíhání postačuje\n  pouze vyšší míra pravděpodobnosti, že se skutek stal a je trestným činem.\n  Tato míra pravděpodobnosti se v dalším řízení buď potvrdí, nebo vyvrátí.\n  V tomto případě byla vyvrácena.“\n- Ke zprávě OLAF: „Zpráva OLAF hodnotila celý případ **z jiného pohledu**, než\n  jaký je možný pro posouzení otázky viny v trestním řízení. **Závěry zprávy\n  nejsou pro orgány činné v trestním řízení závazné.**“ Dozorový státní zástupce\n  se musel zabývat „otázkou podmínek pro posouzení pojmu malý a střední podnik\n  **k roku 2008**“.\n- K roli policie: policejní orgán navrhoval podat obžalobu; „je to státní\n  zástupce, který nakonec obžalobu podává“.\n\n**Poznámka k přesnosti a limitům**: dokument je **tiskovým vyjádřením vedoucího\nstátního zástupce**, ne textem usnesení, a sám přiznává, že plné znění\nrozhodnutí zveřejněno nebylo. Formulaci „**skutek není trestným činem**“,\nkterou k tomuto rozhodnutí uvádí zpravodajství, dokument **neobsahuje** —\nneuvádí ani zákonné ustanovení, podle nějž bylo stíhání zastaveno, ani datum\nusnesení, ani jména či počet obviněných. Neobsahuje ani citace o „enormním\nzájmu“ či „zcela nadstandardních vztazích“, které zpravodajství připisuje\nodůvodnění usnesení. Vydavatel je **týž jako u**\n[SRC-82](@/dossiers/andrej-babis/sources/src-82.md) — obě zprávy jsou **jedno\nnezávislé doložení**, ne dvě; proto sdílejí `sourceFamily = \"verejnazaloba\"`."
+    }
+  ],
+  "order": 84
+}

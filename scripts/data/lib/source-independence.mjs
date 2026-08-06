@@ -15,14 +15,26 @@
  *   rodina zdroje  = neprázdné `sourceFamily` → jinak neprázdný `outlet`
  *                    → jinak zdroj sám za sebe (jeho @id)
  *   nezávislá dvojice = dva zdroje, které se liší RODINOU (S1/S2)
- *                    A ZÁROVEŇ vydavatelem — `outlet`em i registrovanou
- *                    doménou `url` (S10)
+ *                    A ZÁROVEŇ vydavatelem — `outlet`em, registrovanou
+ *                    doménou `url` i SKUPINOU VYDAVATELŮ z katalogu
+ *                    zdrojů (S10)
  *
  * Párově, ne tranzitivně: sloučit zdroje přes „sdílí rodinu NEBO outlet"
  * by řetězilo přes rodinu ctk celý trh (vlastní reportáž Blesku by
  * splynula s ČT24 jen proto, že oba jinde přetiskují ČTK). Otázka
  * „existují dva skutečně nezávislí vydavatelé?" je párová.
+ *
+ * Skupina vydavatelů (T-083): outlet ani doména neuvidí vydavatele, který
+ * drží víc titulů na víc doménách. Katalog zdrojů to ale doloženě ví —
+ * Česká justice i Ekonomický deník mají `operator: "Media Network s.r.o."`
+ * a v pastech citovanou patičku „Vydavatelem … je Media Network s.r.o.".
+ * Dokud se skupina nepočítala, prošly by S10 jako dva nezávislí
+ * vydavatelé. Zdroj pravdy je proto `data/source-catalog/*.json`, ne
+ * druhý ručně psaný seznam v kódu.
  */
+import { existsSync, readFileSync, readdirSync } from "node:fs";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
 
 // Víceúrovňové veřejné sufixy: u nich je registrovaná doména až TŘETÍ
 // label od konce. Bez téhle výjimky by `edu.gov.cz` (MŠMT) a
@@ -52,12 +64,63 @@ export function registeredDomain(url) {
 }
 
 /*
- * createSourceIndependence(recordById) → sada dotazů nad konkrétním
- * modelem. `recordById(iri)` vrací kanonický záznam daného @id nebo
- * undefined (neexistenci hlásí validate-references, tady se jen
- * ignoruje — ne-source cíle do výpočtu nikdy nevstupují).
+ * Skupiny vydavatelů z katalogu zdrojů: outlet → identifikátor skupiny.
+ *
+ * Záznam katalogu vyjmenovává v `outlets` tituly, které pokrývá; volitelné
+ * `publisherGroup` říká, do které vydavatelské skupiny patří. Dva záznamy
+ * se shodným `publisherGroup` jsou tedy jeden vydavatel na víc doménách.
+ * Pole je VOLITELNÉ — chybí-li, zůstává identita vydavatele na outletu
+ * a doméně přesně jako dřív.
+ *
+ * Chybějící adresář i nečitelný/rozbitý záznam se přeskakují: tvar katalogu
+ * hlídá jeho vlastní brána (build:source-catalog), tenhle modul počítá
+ * nezávislost a nesmí kvůli cizí chybě shodit validaci datasetu.
  */
-export function createSourceIndependence(recordById) {
+export const SOURCE_CATALOG_DIR = join(
+  dirname(fileURLToPath(import.meta.url)),
+  "..",
+  "..",
+  "..",
+  "data/source-catalog",
+);
+
+export function loadPublisherGroups(dir = SOURCE_CATALOG_DIR) {
+  const byOutlet = new Map();
+  if (!existsSync(dir)) return byOutlet;
+  for (const file of readdirSync(dir).sort()) {
+    if (!file.endsWith(".json")) continue;
+    let entry;
+    try {
+      entry = JSON.parse(readFileSync(join(dir, file), "utf8"));
+    } catch {
+      continue;
+    }
+    const group = typeof entry?.publisherGroup === "string" ? entry.publisherGroup.trim() : "";
+    if (!group) continue;
+    for (const outlet of Array.isArray(entry.outlets) ? entry.outlets : []) {
+      if (typeof outlet === "string" && outlet.trim()) byOutlet.set(outlet.trim(), group);
+    }
+  }
+  return byOutlet;
+}
+
+// Katalog se čte jednou za proces: validace i evidenční report volají
+// createSourceIndependence v cyklu nad tisíci dvojicemi.
+let defaultPublisherGroups = null;
+
+/*
+ * createSourceIndependence(recordById, options) → sada dotazů nad
+ * konkrétním modelem. `recordById(iri)` vrací kanonický záznam daného @id
+ * nebo undefined (neexistenci hlásí validate-references, tady se jen
+ * ignoruje — ne-source cíle do výpočtu nikdy nevstupují).
+ *
+ * options.publisherGroups: Map(outlet → skupina). Výchozí je katalog
+ * zdrojů, aby brána i report viděly tutéž definici bez zapojování na
+ * dvou místech; testy si injektují syntetickou mapu.
+ */
+export function createSourceIndependence(recordById, options = {}) {
+  const publisherGroups =
+    options.publisherGroups ?? (defaultPublisherGroups ??= loadPublisherGroups());
   const familyOf = (sourceId) => {
     const source = recordById(sourceId);
     if (!source) return sourceId;
@@ -68,18 +131,28 @@ export function createSourceIndependence(recordById) {
     return sourceId;
   };
   const outletOf = (source) => (typeof source.outlet === "string" ? source.outlet.trim() : "");
+  // Skupina vydavatelů se identifikuje outletem zdroje: `url` vede na
+  // konkrétní doménu titulu, kdežto katalog páruje titul podle jména.
+  const publisherGroupOf = (source) => publisherGroups.get(outletOf(source)) ?? "";
   const existingSources = (ids) => ids.filter((id) => recordById(id)?.recordType === "source");
   const familiesOf = (ids) => new Set(existingSources(ids).map(familyOf));
   const sourceRecordsOf = (ids) => existingSources(ids).map((id) => recordById(id));
 
   // Proč dvojice zdrojů NENÍ nezávislá. Vrací null, když nezávislá je.
-  // Pořadí testů = pořadí pravidel: rodina (S1/S2) → outlet → doména.
+  // Pořadí testů = pořadí pravidel: rodina (S1/S2) → outlet → doména →
+  // skupina vydavatelů. Konkrétnější důvod první: hláška má čtenáři říct
+  // to nejbližší, co se dá ověřit na samotném záznamu, a teprve pak
+  // vlastnictví doložené katalogem.
   const collisionReason = (a, b) => {
     if (familyOf(a["@id"]) === familyOf(b["@id"])) return null; // řeší S1/S2, ne S10
     const outletA = outletOf(a);
     if (outletA && outletA === outletOf(b)) return `týž outlet "${outletA}"`;
     const domainA = registeredDomain(a.url);
     if (domainA && domainA === registeredDomain(b.url)) return `táž registrovaná doména ${domainA}`;
+    const groupA = publisherGroupOf(a);
+    if (groupA && groupA === publisherGroupOf(b)) {
+      return `táž skupina vydavatelů "${groupA}" (${outletA} + ${outletOf(b)})`;
+    }
     return null;
   };
 
@@ -115,6 +188,7 @@ export function createSourceIndependence(recordById) {
   return {
     familyOf,
     outletOf,
+    publisherGroupOf,
     existingSources,
     familiesOf,
     sourceRecordsOf,

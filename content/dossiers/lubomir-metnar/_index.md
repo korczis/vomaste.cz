@@ -22,8 +22,12 @@ dossier pokrývá **jedno téma** v rozsahu autorizačního záznamu v
 ochranu Nejvyššího kontrolního úřadu a reakci NKÚ.
 
 Jde o **spor o výkon veřejné funkce**, ne o obvinění z protiprávního
-jednání — a dossier to takto uvádí všude. K datu poslední kontroly nebylo
-o návrhu rozhodnuto.
+jednání — a dossier to takto uvádí všude. Vláda o návrhu rozhodla 27. července 2026 usnesením, které NKÚ ze
+seznamu střežených objektů vyřadilo a na jeho místo zařadilo sídlo
+České národní banky ([CLM-26](@/dossiers/lubomir-metnar/claims/clm-26.md),
+[CLM-29](@/dossiers/lubomir-metnar/claims/clm-29.md)); zákon, který s tím
+souvisí, prezident 22. července 2026 vrátil Sněmovně
+([CLM-30](@/dossiers/lubomir-metnar/claims/clm-30.md)).
 
 ## Kdo to je a čím je pokryt {#kdo}
 

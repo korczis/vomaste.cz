@@ -1,0 +1,54 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/updates/2026-08-06",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-08-06",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "date": "2026-08-06",
+  "summary": "Kolo CASE-05 (T-078): pět jednozdrojových tvrzení k rané procesní historii kauzy Čapí hnízdo (CLM-49, CLM-77, CLM-78, CLM-79, CLM-80) povýšeno na CORROBORATED proti primárním dokumentům soudů a státního zastupitelství — tiskové zprávy Městského státního zastupitelství v Praze z 15. 9. 2019 (SRC-82), 19. 9. 2019 (SRC-84) a 21. 3. 2022 (SRC-86), tisková zpráva Nejvyššího státního zastupitelství ze 4. 12. 2019 (SRC-85) a stenoprotokol 60. schůze Poslanecké sněmovny ze 6. 9. 2017 (SRC-83); SRC-75 (Vrchní soud v Praze, 3 To 34/2024) nově připojen k CLM-49 a — v revizi závěru předchozího kola — i k CLM-80. Opravy proti dokumentům: dotace je „téměř 50 milionů Kč“ a žádost byla podána v roce 2008 (roky 2007–2008 ani vyvedení Farmy Čapí hnízdo ze skupiny Agrofert primární dokumenty neuvádějí, popisují závislost na holdingu); Sněmovna 6. 9. 2017 „vyslovila souhlas s trestním stíháním“, nikoli „vydala ke stíhání“; usnesení o zastavení stíhání je datováno 30. 8. 2019 a nabylo právní moci 17. 9. 2019, přičemž zveřejněné dokumenty jako důvod uvádějí neprokázanou nepravdivost deklarace o malém a středním podniku, ne neprokázané skutečné vlastnictví akcií, a formulaci „skutek není trestným činem“ neobsahují; u čtyř ze šesti obviněných NSZ shledalo zastavení „zákonné a důvodné“ (ne pouze „neshledal důvody pro zrušení“) a jména obviněných tisková zpráva neuvádí. Limity ponechané u zdroje: datum obvinění 9. 10. 2017, citace o „enormním zájmu“ a „zcela nadstandardních vztazích“ a trestní sazba „až deset let“ stojí dál jen na citovaném zpravodajství.",
+  "addedClaims": [],
+  "updatedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-49"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-77"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-78"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-79"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-80"
+    }
+  ],
+  "addedGaps": [],
+  "closedGaps": [],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-75"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-82"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-83"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-84"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-85"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-86"
+    }
+  ]
+}

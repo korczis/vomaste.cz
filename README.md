@@ -72,13 +72,15 @@ z toho tento README neinzeruje jako hotové.
 
 ```text
 kanonická data (data/dossiers/**/*.json — JSON Schema + JSON-LD context)
-→ data:validate (tvar · reference R1–R7 · sémantika S1–S10 · parita tabulky T1–T8 · JSON-LD expanze)
+→ data:validate (tvar · reference R1–R8 · sémantika S1–S10 · parita tabulky T1–T8 · JSON-LD expanze)
 → jednotný kompilátor (scripts/data/) → compiled model
 → view modely (data/generated/views/**) + generované content adaptéry (content/**)
-→ validátory a generátory (autorizace, navigace, route manifest, exporty, search index, graf)
+→ report:evidence-plan (evidenční plán práce) + npm test (regresní testy toolingu)
+→ validátory a generátory (autorizace, typy dossierů, navigace, route manifest,
+  parita content == staging, linty, katalog zdrojů, exporty, search index, graf)
 → Tailwind + esbuild (assets)
 → zola build (statické HTML; šablony čtou view modely přes load_data)
-→ verify:anchors / verify:jsonld / verify:full-pages / verify:export
+→ verify:navigation-counts / verify:anchors / verify:jsonld / verify:og / verify:full-pages / verify:export
 → GitHub Actions → GitHub Pages
 ```
 
@@ -155,13 +157,65 @@ záznamem v `data/dossiers/_shared/semantics-baseline.json` (konkrétní
 Baseline je dnes prázdná — celá dnešní evidenční vrstva prochází bez
 výjimky. Plné znění pravidel: [`docs/data-contract.md`](docs/data-contract.md).
 
+## Sociální a SEO metadata
+
+Metadata pro náhledové karty a vyhledávače nejsou šablonová logika, ale
+**konfigurace**. Čtyři vrstvy, každá s jedním vlastníkem:
+
+| Vrstva | Soubor | Co vlastní |
+|---|---|---|
+| Konfigurace | [`data/seo.toml`](data/seo.toml) | locale, výchozí karta a rozměry, oddělovač/tagline titulku, meze délky, povinná sada značek, mapování typu stránky na `og:type` a výchozí schema.org typ |
+| Vykreslení | `templates/macros/meta.html` | `meta::open_graph`, `meta::twitter`, `meta::canonical` + čisté funkce pro titulek, popis, obrázek a alt |
+| Vstupy | `templates/base.html` | rozloží front matter stránky/sekce na `meta_*` skaláry a zavolá makra |
+| Vynucení | `scripts/build/verify-og.mjs` | `npm run verify:og`, součást `npm run build` |
+
+`og:type` a výchozí schema.org typ se **nerozhodují v šabloně**. Klíčem je
+`record_type` z front matter (u dossieru zpřesněný o `dossier_type`) a
+mapování žije v `[page_types.*]`. Nový typ záznamu bez záznamu v datech
+shodí build, stejně jako záznam, který v datech nikdo nepoužívá — tatáž
+obousměrná kontrola jako u `data/entity-types.toml`.
+
+**Stránka nesmí tvrdit dvě věci.** `og:title`/`og:description` a
+`name`/`description` stránkového uzlu JSON-LD (`@graph[0]`) jsou doslova
+tatáž hodnota: `partials/jsonld.html` čte tytéž `meta_*` proměnné, ze
+kterých se vykreslily `<meta>` tagy.
+
+`npm run verify:og` běží po `zola build` nad vydaným HTML a shodí build,
+když kterákoli routovaná stránka:
+
+- nemá úplnou sadu `og:title`, `og:description`, `og:type`, `og:url`,
+  `og:image`, `og:image:alt`, `og:locale`, `og:site_name` a `twitter:card`
+  (seznam je v `[enforce]`, ne v kódu);
+- má `og:url` jiné než svou kanonickou URL (nebo kanonickou URL nemá,
+  aniž by byla v `enforce.without_canonical` — dnes jediná: `/404.html`,
+  která kanonickou URL záměrně nemá);
+- má relativní `og:image` (sociální sítě ho nezobrazí) nebo `og:image`
+  ukazující na soubor, který ve vydaném stromu neexistuje;
+- má prázdný nebo přes limit dlouhý titulek či popis (`[limits]`);
+- má `og:title`/`og:description` odlišné od stránkového uzlu JSON-LD,
+  nebo `twitter:*` odlišné od `og:*`;
+- má `og:type` mimo slovník `[page_types.*]` nebo `og:locale` jinak než
+  ve tvaru `language_TERRITORY`.
+
+Výjimku mají jen přesměrovací stuby aliasů Zoly — táž výjimka, jakou
+používá `verify:jsonld`.
+
+Co brána **nekontroluje**, aby to nikdo nemusel odhadovat: nesahá na
+síť, takže neověřuje, jak kartu vykreslí konkrétní platforma, ani
+rozměry a formát obrázkového souboru (deklarované `og:image:width/height/
+type` se berou z konfigurace, ne z pixelů souboru). Meze délky jsou horní
+strop; Facebook i LinkedIn ořezávají dřív.
+
 ## Strukturovaná data (JSON-LD)
 
 Kanonické záznamy jsou JSON-LD už na vstupu (`@context`, `@id`, `@type`);
 každá stránka navíc vydává při buildu jeden blok `application/ld+json`
 (`@graph`), generovaný centrálně v `templates/base.html` z view modelů
 compiled kanonického datasetu — žádné jméno, slug ani URL nejsou v
-šablonách napevno:
+šablonách napevno. Prezentační pole stránkového uzlu (`name`,
+`description`, `inLanguage`, typ) jsou **tytéž hodnoty**, ze kterých se
+vykreslily `og:*` a `twitter:*` — viz [Sociální a SEO
+metadata](#sociální-a-seo-metadata):
 
 - **WebSite / WebPage / ProfilePage** + **BreadcrumbList** a navigace
   (`SiteNavigationElement`) na každé stránce;
@@ -253,26 +307,40 @@ Rozhodnutí a jeho důsledky: [ADR](docs/adr/dossier-directory-multi-view.md).
 .
 ├── data/dossiers/          # KANONICKÁ DATA: <slug>/dossier.json + registry záznamů,
 │                           # _shared/ (entity, slovníky, JSON-LD context)
+├── data/source-catalog/    # KANONICKÁ DATA katalogu zdrojů (1 JSON na registr/nástroj/
+│                           # agregátor: proves, doesNotProve, traps, howToSearch)
 ├── schemas/canonical/      # JSON Schema kontrakt kanonických záznamů (AJV strict)
 ├── content/                # Zola routing: GENEROVANÉ adaptéry kanonických dat
 │                           # (ručně psané: kořenové indexy, koncepty, dokumentace,
-│                           #  mapa, /data/ a per-dossier evidence//entities/ indexy)
-├── templates/              # Tera šablony (čtou view modely přes load_data)
-├── data/                   # navigační skeleton, government roster, generovaná data
+│                           #  manifest, mapa, /data/ a per-dossier evidence//entities/ indexy)
+├── templates/              # Tera šablony (čtou view modely přes load_data);
+│                           # macros/meta.html vydává og:*/twitter:*/canonical
+├── data/                   # navigační skeleton, seo.toml (metadata), government
+│                           # roster, generovaná data
 ├── assets/js/              # zdrojové JS moduly (bundluje esbuild)
 ├── static/                 # statická aktiva + zkompilované CSS/JS + search index
-├── scripts/data/           # kanonický kompilátor, validátory, generátory adaptérů, scaffold
-├── scripts/build/          # pipeline.mjs — jediný orchestrační entrypoint buildu
-├── scripts/dossier/        # build/verify nástroje nad compiled modelem (exporty, navigace…)
+├── scripts/data/           # kanonický kompilátor, validátory, generátory adaptérů, scaffold,
+│                           # evidenční plán práce (report-evidence-plan.mjs)
+├── scripts/build/          # pipeline.mjs — jediný orchestrační entrypoint buildu + build lock
+├── scripts/dossier/        # build/verify nástroje nad compiled modelem (exporty, navigace,
+│                           # katalog zdrojů, autorizace…)
 ├── scripts/lint/           # linty (generated content, hardcoded records, komponenty…)
-├── scripts/osint/          # živé rejstříkové nástroje (ARES, registr smluv) — mimo build
+├── scripts/osint/          # živé rejstříkové nástroje (ARES, registr smluv, detekce
+│                           # zdrojových rodin) — mimo build
 ├── scripts/intake/         # veřejný intake: parser podnětu, matching, preflight (nikdy nezapisuje do dat)
+├── scripts/ci/             # parita workflow ↔ package.json, validace issue formulářů
+├── scripts/ui/             # regresní testy prohlížečové logiky (tabulky, hledání, nezávislost zdrojů)
+├── scripts/prismatic/      # volitelná integrace s ~/dev/prismatic-platform (zčásti stuby)
+├── scripts/migrations/     # archiv jednorázových migrátorů + sdílené čtecí knihovny
+├── scripts/og/             # generátor náhledových karet (playwright, mimo build)
 ├── scripts/coop/           # koordinace více instancí (bus, worktrees)
 ├── scripts/setup/          # instalace git hooks (postinstall)
+├── tests/e2e/              # Playwright scénáře (`npm run test:e2e`, mimo `npm run build`)
 ├── .githooks/              # pre-commit: rychlá podmnožina validátorů;
                             # post-commit: na masteru auto push+deploy
-├── .claude/skills/         # bootstrap, dossier-entry, investigate, adr, commit
-├── docs/                   # konstituce, datový kontrakt, audity, migrace, koop, ADR
+├── .claude/skills/         # 5 funkčních (bootstrap, dossier-entry, investigate, adr, commit)
+                            # + 4 scaffoldované prismatic-*
+├── docs/                   # konstituce, datový kontrakt, audity, migrace, koop, ADR, OSINT
 ├── reports/                # generované interní reporty (nepublikují se)
 └── .github/                # workflows/deploy.yml (validace + build + Pages),
                             # workflows/dossier-intake.yml + ISSUE_TEMPLATE/ (veřejný intake)
@@ -365,7 +433,7 @@ required fields, and contains no truth-rating markup.`
 
 ## Task runner (`just`)
 
-Repozitář má přes třicet npm skriptů a je snadné netrefit ten, na kterém
+Repozitář má přes devadesát npm skriptů a je snadné netrefit ten, na kterém
 záleží. `justfile` v rootu je tenký obal nad nimi — nic nepřepisuje, nic
 nepřidává; když se rozejde s `package.json`, vyhrává `package.json` a
 justfile je chyba.
@@ -409,7 +477,7 @@ zatímco tenhle výběr je ruční a záměrně neúplný.
 | `npm run hooks:install` | nastaví `core.hooksPath` na `.githooks/` (jinak se spustí automaticky přes `npm ci`/`npm install`) |
 | `npm test` | regresní testy tooling skriptů (Node built-in test runner, žádná nová závislost) — součást `npm run build` |
 | `npm run test:update-golden` | přegeneruje `scripts/data/compiled-golden.snapshot.json` (počty záznamů/graf pro golden test) z aktuálního compiled modelu — jediný podporovaný způsob, jak ta čísla měnit; taky jediné, co potřebuješ po konfliktu v tomhle souboru |
-| `npm run data:validate` | kanonická brána: tvar (`schemas/canonical/`, AJV strict) → reference R1–R7 → sémantika S1–S10 → parita tabulky T1–T8 → JSON-LD expanze |
+| `npm run data:validate` | kanonická brána: tvar (`schemas/canonical/`, AJV strict) → reference R1–R8 → sémantika S1–S10 → parita tabulky T1–T8 → JSON-LD expanze |
 | `npm run data:validate -- --file <cesta>` | rychlá tvarová validace jediného kanonického souboru; chybové hlášky nesou cestu |
 | `npm run data:build` | kompilace datasetu + view modely + regenerace content adaptérů + parity brána content == staging |
 | `npm run dossier:scaffold -- --slug=… --title="…" --subject=… --authorization-record-id=AUTH-…` | založí minimální validní kanonický balíček nového dossieru; **odmítne** subjekt bez odpovídajícího záznamu v `data/authorizations.toml` |
@@ -419,8 +487,12 @@ zatímco tenhle výběr je ruční a záměrně neúplný.
 | `npm run validate:navigation` | navigace odpovídá kanonickému datasetu a existujícím routám |
 | `npm run verify:anchors` | po buildu: každá kotva ze zdrojů existuje v HTML |
 | `npm run verify:jsonld` | po buildu: validita, pokrytí a poctivost JSON-LD (žádné truth ratingy, citační otisky se přepočítávají) |
+| `npm run verify:og` | po buildu: úplnost `og:*`/`twitter:*`, `og:url` == kanonická URL, existující a absolutní `og:image`, meze délky z `data/seo.toml` a shoda titulku/popisu se stránkovým uzlem JSON-LD |
 | `npm run build:jsonld-exports` | vygeneruje `/data/dossiers/<slug>.jsonld`, `/data/graph.jsonld`, manifest s checksumy a citační otisky pro šablony — součást `npm run build` |
 | `npm run verify:export` | po buildu (i offline nad staženou kopií, `--dir <cesta>`): každý export sedí na manifest hash, parsuje, nenese truth ratingy a otisky se přepočítávají |
+| `npm run verify:full-pages` | po buildu: každá stránka tvrzení/zdroje má v hotovém HTML povinné sekce (full-page doktrína), kotvy `clm-##` leží uvnitř tabulky |
+| `npm run build:source-catalog` / `verify:source-catalog` | přegeneruje katalog zdrojů (`/zdroje/`, `docs/osint/SOURCE_CATALOG.md`, `data/generated/source-catalog.json`) z `data/source-catalog/*.json` / shodí, když se zacommitovaný výstup rozešel s daty — `verify` je součást pre-commit hooku, ne build pipeline (v pipeline běží hned za generátorem a nikdy by neselhal) |
+| `npm run report:evidence-plan` | vygeneruje `reports/evidence-plan.md` + `data/generated/evidence-plan.json`: per dossier počty tvrzení dle stavu a evidenční třídy, potenciál korroborace, mezery, datově odvozená priorita a konkrétní další krok — součást `npm run data:build` i `npm run build`, nikdy se needituje ručně. Viz [evidenční plán práce](#evidenční-plán-práce) |
 | `npm run lint:historical-coupling` | de-specializační brána: žádná jména subjektů ve strukturálním kódu |
 | `npm run lint:generated-content` | generované content adaptéry zůstávají minimální obálkou — ruční doménová pole neprojdou |
 | `npm run lint:component-reuse` | každá šablona (kromě `base.html`/`404.html`) používá `macros/ui.html`, a každá šablona s tabulkou používá `macros/table.html` (`table::advanced_table`) — žádný ručně psaný duplicitní markup místo sdílené komponenty |
@@ -448,7 +520,7 @@ npm run screening:public-money -- --from-external-ids
 | Volba | Význam |
 |---|---|
 | `--ico=<IČO>[,<IČO>…]` | ad-hoc screening zadaných IČO |
-| `--from-external-ids` | IČO z kanonických entit (`externalIds.ico`, resp. `ares`); dnes je nemá žádná z 504 entit, takže režim korektně ohlásí nula vstupů a na síť vůbec nesáhne |
+| `--from-external-ids` | IČO z kanonických entit (`externalIds.ico`, resp. `ares`, jen platný osmičíselný tvar). Kolik jich je, se nikam nepíše — plyne z dat; když je nula, režim to ohlásí a na síť vůbec nesáhne. Pole plní `expand-entity.mjs`, takže dávka roste s expanzí rejstříkového okolí |
 | `--from=RRRR-MM`, `--to=RRRR-MM` | období; výchozí je posledních **12 dokončených** měsíců (běžící měsíc má neúplný dump a tiše by objem podhodnotil) |
 | `--no-cache` | ignoruje staženou cache v `.tmp/public-money/` |
 | `--json` | strojový výstup na stdout |
@@ -749,7 +821,7 @@ tam vůbec nedostane, byl na plné bráně červený.
 |---|---|
 | `zola: command not found` / build padá na Zole | Zola není v PATH nebo je jiná řada než **0.22.x** (CI pinuje 0.22.1). Instalace: <https://www.getzola.org/documentation/getting-started/installation/>; ověření `zola --version`. |
 | `data:validate` hlásí T3 „řádka tabulky se neshoduje s kanonickým claimem" | Tabulka tvrzení v `dossier.json` a kanonický záznam `claims/clm-NN.json` se rozešly (text/stav/zdroje se porovnávají byte-verně). Uprav jedno či druhé tak, aby se shodovaly, a validaci zopakuj. |
-| `data:check-generated:content` hlásí drift | Ručně editovaný generovaný soubor pod `content/dossiers/**` nebo `content/entities/`. Vrať úpravu do kanonického JSON a spusť `npm run data:build`. |
+| `data:check-generated:content` hlásí drift | Ručně editovaný generovaný soubor pod `content/dossiers/**` nebo `content/entities/`. Vrať úpravu do kanonického JSON a spusť `npm run data:build`. **Pozor na pořadí**: uvnitř `npm run build` běží `data:sync-content` *před* touhle bránou, takže ruční úpravu těla stránky přepíše a build zůstane zelený — drift se ohlásí jen když bránu spustíš samostatně nad nesynchronizovaným stromem. Podezřelý diff v `content/` se kontroluje takhle: `npm run data:check-generated:content`. |
 | `npm run dev` „visí" | Nevisí — `zola serve` je server a sám neskončí. Čekej na řádek `Web server is available`, web běží na <http://127.0.0.1:1111>. |
 
 ## Licence

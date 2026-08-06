@@ -18,8 +18,8 @@
  * vygenerují. Od fáze H (T-028) je kanonický dataset JEDINÝ zdroj
  * pravdy: dřívější validátory obsahové vrstvy (validate:dossier,
  * validate:schemas, validate:graph) zanikly — jejich pravidla vlastní
- * kanonické validátory (validate-references R1–R7, validate-semantics
- * S1–S8, validate-registry-table T1–T8, schemas/canonical/) a schema
+ * kanonické validátory (validate-references R1–R8, validate-semantics
+ * S1–S10, validate-registry-table T1–T8, schemas/canonical/) a schema
  * brána exportů žije přímo v build:data-exports.
  *
  * Kroky se spouštějí přes `npm run <script>`, aby definice příkazů
@@ -103,6 +103,11 @@ const BUILD_STEPS = [
   "verify:navigation-counts",
   "verify:anchors",
   "verify:jsonld",
+  // Sociální a SEO metadata (T-076): úplnost og:*/twitter:*, shoda
+  // og:url s kanonickou URL, existence náhledového obrázku, meze délky
+  // z data/seo.toml a shoda titulku/popisu se stránkovým uzlem JSON-LD.
+  // Musí běžet po zola build — kontroluje vydané HTML, ne šablony.
+  "verify:og",
   "verify:full-pages",
   "verify:export",
 ];

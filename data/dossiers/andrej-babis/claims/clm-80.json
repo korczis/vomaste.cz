@@ -9,12 +9,18 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
   },
-  "text": "Dne 21. března 2022 byla k Městskému soudu v Praze podána obžaloba: na Babiše pro pomoc ke zločinu dotačního podvodu a na Janu Nagyovou pro dotační podvod a poškození finančních zájmů EU; oběma hrozilo až deset let vězení. Obžaloba je předání věci soudu, ne rozhodnutí o vině",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "text": "Dne 21. března 2022 podal státní zástupce Městského státního zastupitelství v Praze obžalobu na dvě fyzické osoby k Městskému soudu v Praze: jedné je kladeno za vinu, že naplnila skutkovou podstatu zločinu dotačního podvodu a poškození finančních zájmů Evropské unie, jednání druhé je kvalifikováno jako pomoc ke zločinu dotačního podvodu. Podle tiskové zprávy Vrchního soudu v Praze k věci sp. zn. 3 To 34/2024 šlo o Janu Nagyovou (dotační podvod a poškození finančních zájmů EU) a Andreje Babiše (pomoc ke zločinu dotačního podvodu); údaj, že oběma hrozilo až deset let vězení, uvádí jen citované zpravodajství. Obžaloba je předání věci soudu, ne rozhodnutí o vině",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-57"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-86"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-75"
     }
   ],
   "subjects": [],
@@ -22,7 +28,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni).\n\n**Povýšeno 2026-08-06 (kolo CASE-05, T-078).** Připojeny dva primární dokumenty:\n\n- **tisková zpráva Městského státního zastupitelství v Praze z 21. 3. 2022**\n  ([SRC-86](@/dossiers/andrej-babis/sources/src-86.md)), která doslovně dokládá\n  **datum podání, soud, počet obžalovaných i obě právní kvalifikace**;\n- **tisková zpráva Vrchního soudu v Praze k věci sp. zn. 3 To 34/2024**\n  ([SRC-75](@/dossiers/andrej-babis/sources/src-75.md)), která kvalifikace\n  **přiřazuje ke jménům**: „zločin dotačního podvodu a zločin poškození\n  finančních zájmů Evropské unie (ve vztahu k obžalované Ing. Nagyové, Ph.D.)\n  a pomoci ke zločinu dotačního podvodu (ve vztahu k obžalovanému Ing. Babišovi)“.\n\nPředchozí kolo (2026-08-05) SRC-75 k tomuto tvrzení nepřipojilo s tím, že by\ndoložil jediný ze čtyř prvků. S přibytím tiskové zprávy MSZ, která nese datum,\nsoud i obě kvalifikace, ale **neuvádí jména**, je role SRC-75 jiná: doplňuje\nprávě chybějící přiřazení jmen ke kvalifikacím. Připojen je proto nyní i k\nCLM-80.\n\n**Limit:** **trestní sazbu žádný z primárních dokumentů neuvádí** — údaj „oběma\nhrozilo až deset let vězení“ stojí dál jen na agenturní zprávě ČTK\n([SRC-57](@/dossiers/andrej-babis/sources/src-57.md)) a tvrzení to nově přiznává.\nAni jeden dokument neuvádí spisovou značku obžaloby."
     }
   ]
 }

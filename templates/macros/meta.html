@@ -1,0 +1,182 @@
+{#- Sociální a SEO metadata — VYKRESLOVACÍ vrstva.
+
+    Politika (jaký `og:type` pro jaký typ stránky, jaké limity, jaká
+    výchozí karta, jaký oddělovač titulků) žije v `data/seo.toml`.
+    Tenhle soubor ji jen aplikuje; `templates/base.html` sem posílá už
+    rozložený front matter jako skaláry, takže makra jsou čisté funkce
+    dat a nemusí znát objekty `page`/`section` (které na /404.html
+    vůbec neexistují).
+
+    Rozdělení odpovědnosti:
+      data/seo.toml              CO se má vydat (hodnoty, meze, mapování)
+      templates/macros/meta.html JAK se to vykreslí (tenhle soubor)
+      templates/base.html        ODKUD se berou vstupy (front matter → skaláry)
+      partials/jsonld.html       táž trojice `meta_*` proměnných → JSON-LD
+      scripts/build/verify-og.mjs  po buildu ověří výsledek proti seo.toml
+
+    Proč vůbec makra: do T-076 se OG i Twitter blok skládaly inline v
+    <head> z vnořených `default(value=…)` řetězců. Nešlo se jich zeptat,
+    nešlo je otestovat a nešlo je vydat dvakrát konzistentně — JSON-LD
+    tvrdil o téže stránce jiný titulek než `og:title` na 2 246 stránkách. -#}
+
+{#- Lidský název dossieru, do kterého stránka patří. Z generovaného
+    navigačního stromu (data/generated/navigation.json → items[]
+    .children[].label), tedy z téhož kanonického datasetu jako všechno
+    ostatní — žádný slug ani jméno tu není napevno. Prázdný řetězec
+    znamená „stránka není uvnitř dossieru". -#}
+{%- macro dossier_label(nav, slug) -%}
+{%- if slug -%}
+{%- for nav_item in nav.items -%}
+{%- for nav_child in nav_item.children -%}
+{%- if nav_child.id == slug %}{{ nav_child.label }}{% endif -%}
+{%- endfor -%}
+{%- endfor -%}
+{%- endif -%}
+{%- endmacro dossier_label -%}
+
+{#- Sociální titulek: nese dossier, ale NE název webu — ten scrapery
+    berou z `og:site_name` a vypisují zvlášť. Samotné „CLM-01" v náhledu
+    neřekne nic, „CLM-01 — Filip Turek" ano.
+
+    `add_dossier` rozhoduje base.html: doplňuje se jen tam, kde titulek
+    jméno dossieru ještě nenese. Zkrácení je na `limits.title_max`
+    ZNAKŮ VÝSLEDKU — Tera `truncate(length=N)` vrací N znaků + „…",
+    proto `- 1`. -#}
+{%- macro social_title(seo, title, label="", add_dossier=false) -%}
+{%- if add_dossier and label -%}
+{%- set full = title ~ seo.title.separator ~ label -%}
+{%- else -%}
+{%- set full = title -%}
+{%- endif -%}
+{%- set cut = seo.limits.title_max - 1 -%}
+{{ full | truncate(length=cut) }}
+{%- endmacro social_title -%}
+
+{#- Titulek dokumentu (<title>): sociální titulek + název webu. Úvodní
+    stránka je výjimka — „vomaste.cz — vomaste.cz" by nic neřeklo, takže
+    dostává tagline z `seo.title.tagline`. -#}
+{%- macro document_title(seo, social, site_title, is_home=false) -%}
+{%- if is_home -%}
+{{ site_title }}{{ seo.title.separator }}{{ seo.title.tagline }}
+{%- else -%}
+{{ social }}{{ seo.title.separator }}{{ site_title }}
+{%- endif -%}
+{%- endmacro document_title -%}
+
+{#- Popis pro `<meta name="description">`, `og:description`,
+    `twitter:description` i pro `description` stránkového uzlu JSON-LD —
+    jedna hodnota, čtyři místa.
+
+    Ořez na `limits.description_max`: delší text vyhledávače i sociální
+    sítě stejně useknou, a u záznamů registru je `description` plné znění
+    tvrzení. Na stránce samotné zůstává text úplný (a v exportech
+    /data/*.jsonld taky).
+
+    `add_dossier` doplňuje, o čí dossier jde, u registrových indexů:
+    jejich popis je generický text sdílený všemi dossiery, takže by jinak
+    měly stovky stránek shodný náhled. -#}
+{%- macro description(seo, text, label="", add_dossier=false) -%}
+{%- if add_dossier and label -%}
+{%- set suffix = seo.description.dossier_suffix | replace(from="{label}", to=label) -%}
+{%- set full = text ~ " " ~ suffix -%}
+{%- else -%}
+{%- set full = text -%}
+{%- endif -%}
+{%- set cut = seo.limits.description_max - 1 -%}
+{{ full | truncate(length=cut) }}
+{%- endmacro description -%}
+
+{#- Cesta k náhledové kartě (relativní ke `static/`; absolutní URL z ní
+    dělá `get_url()` v base.html). Pořadí: front matter → karta dossieru
+    → karta webu. Kartu dossieru generuje `scripts/og/build-og-images.mjs`
+    a její existenci hlídá `validate-dossier-types.mjs`. -#}
+{%- macro image_path(seo, override="", dossier="") -%}
+{%- if override -%}
+{{ override }}
+{%- elif dossier -%}
+{{ seo.dossier_image.path_template | replace(from="{slug}", to=dossier) }}
+{%- else -%}
+{{ seo.site.og_image }}
+{%- endif -%}
+{%- endmacro image_path -%}
+
+{#- Alt popisuje OBRÁZEK, který stránka opravdu posílá — ne stránku.
+    Do T-076 dostávala každá stránka alt karty webu, i když `og:image`
+    byla karta dossieru. -#}
+{%- macro image_alt(seo, override="", dossier="", label="") -%}
+{%- if override -%}
+{{ override }}
+{%- elif dossier and label -%}
+{{ seo.dossier_image.alt_template | replace(from="{label}", to=label) }}
+{%- elif dossier -%}
+{{ seo.dossier_image.alt_fallback }}
+{%- else -%}
+{{ seo.site.og_image_alt }}
+{%- endif -%}
+{%- endmacro image_alt -%}
+
+{#- Kanonická URL + jazykové alternativy. `url` je prázdné jen tam, kde
+    stránka žádnou kanonickou URL nemá (/404.html — viz
+    `seo.enforce.without_canonical`); pak se nevydá nic, protože kanonický
+    odkaz na chybovou stránku by ji přihlásil do indexu jako obsah.
+
+    `seo.site.alternate_locales` je dnes prázdný seznam: web je
+    jednojazyčný a hreflang alternativa neexistuje. Až vznikne, přibude
+    v datech a tenhle blok ji začne vydávat beze změny šablon. -#}
+{%- macro canonical(seo, url, lang="") -%}
+{%- if url %}
+  <link rel="canonical" href="{{ url | safe }}">
+{%- if seo.site.alternate_locales | length > 0 %}
+  <link rel="alternate" hreflang="{{ lang }}" href="{{ url | safe }}">
+{%- for alt in seo.site.alternate_locales %}
+  <link rel="alternate" hreflang="{{ alt.hreflang }}" href="{{ alt.url }}">
+{%- endfor %}
+{%- endif %}
+{%- endif -%}
+{%- endmacro canonical -%}
+
+{#- Open Graph blok. Všechny hodnoty přicházejí hotové — makro
+    nerozhoduje, jen vydává, aby se pořadí a úplnost daly číst na jednom
+    místě a porovnat s `seo.enforce.required_og`. -#}
+{%- macro open_graph(seo, site_name, title, description, og_type, url, image_url, image_alt, locale, updated="") -%}
+  <meta property="og:site_name" content="{{ site_name }}">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:type" content="{{ og_type }}">
+  <meta property="og:locale" content="{{ locale }}">
+{%- for alt in seo.site.alternate_locales %}
+  <meta property="og:locale:alternate" content="{{ alt.locale }}">
+{%- endfor %}
+{%- if url %}
+  <meta property="og:url" content="{{ url | safe }}">
+{%- endif %}
+{#- Datum revize je kalendářní den, ne okamžik — pevná zóna +02:00 byla
+    polovinu roku prostě špatně (SEČ je +01:00). Půlnoc UTC nepřeklápí den
+    v žádné evropské zóně, takže Z je jediný zápis, který nelže. -#}
+{%- if updated %}
+  <meta property="article:modified_time" content="{{ updated }}T00:00:00Z">
+{%- endif %}
+  <meta property="og:image" content="{{ image_url | safe }}">
+{#- secure_url je pro scrapery, které rozlišují http/https variantu obrázku
+    (LinkedIn a starší FB crawler); web je https-only, takže je to táž URL. -#}
+  <meta property="og:image:secure_url" content="{{ image_url | safe }}">
+  <meta property="og:image:width" content="{{ seo.site.og_image_width }}">
+  <meta property="og:image:height" content="{{ seo.site.og_image_height }}">
+  <meta property="og:image:type" content="{{ seo.site.og_image_type }}">
+  <meta property="og:image:alt" content="{{ image_alt }}">
+{%- endmacro open_graph -%}
+
+{#- Twitter/X blok. Titulek i popis jsou tytéž hodnoty jako v OG — jedna
+    stránka nesmí tvrdit dvě věci. Typ karty je z dat: bez obrázku nemá
+    `summary_large_image` co zvětšovat. -#}
+{%- macro twitter(seo, title, description, image_url="", image_alt="") -%}
+{%- if image_url %}
+  <meta name="twitter:card" content="{{ seo.site.twitter_card }}">
+  <meta name="twitter:image" content="{{ image_url | safe }}">
+  <meta name="twitter:image:alt" content="{{ image_alt }}">
+{%- else %}
+  <meta name="twitter:card" content="{{ seo.site.twitter_card_without_image }}">
+{%- endif %}
+  <meta name="twitter:title" content="{{ title }}">
+  <meta name="twitter:description" content="{{ description }}">
+{%- endmacro twitter -%}

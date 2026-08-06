@@ -2,7 +2,7 @@
 title = "ADR: renderer grafu vztahů"
 description = "Měřené rozhodnutí o rendereru grafu z 2026-07-29 — dnes částečně překonané (Sigma a DuckDB byly později přijaty), zbytek zamítnutého stacku platí dál."
 template = "docs-viewer.html"
-weight = 8
+weight = 11
 
 [extra]
 lang = "cs"
