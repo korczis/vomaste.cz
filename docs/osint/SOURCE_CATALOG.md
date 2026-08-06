@@ -100,7 +100,7 @@ Odpovídá na otázku „kam se podívat a čemu z toho věřit". Publikovaná p
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 680 záznamů v 114 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 685 záznamů v 116 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
@@ -109,7 +109,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 680 záznamů v 114 rodinách/out
 | Poslanecká sněmovna Parlamentu ČR | 32 | 15 | [ano](/zdroje/psp-cz/) |
 | Vláda České republiky (vlada.gov.cz) | 28 | 17 | [ano](/zdroje/vlada-cz/) |
 | FORUM 24 | 19 | 9 | [ano](/zdroje/forum24/) |
-| denik-n | 16 | 9 | [ano](/zdroje/denik-n/) |
+| denik-n | 17 | 9 | [ano](/zdroje/denik-n/) |
 | ČT24 (Česká televize) | 14 | 7 | [ano](/zdroje/ceska-televize/) |
 | Echo24 | 13 | 9 | [ano](/zdroje/echo24/) |
 | denik-cz | 11 | 6 | [ano](/zdroje/denik-cz/) |
@@ -142,8 +142,10 @@ Dopočítáno z `data/dossiers/**/sources/**`, 680 záznamů v 114 rodinách/out
 | cz-verejny-rejstrik | 2 | 1 | [ano](/zdroje/ares/) |
 | ARES — Administrativní registr ekonomických subjektů (Ministerstvo financí ČR) | 2 | 2 | [ano](/zdroje/ares/) |
 | CZDEFENCE | 2 | 1 | — |
+| Deník Alarm | 2 | 1 | — |
 | Fakultní nemocnice Olomouc (oficiální web) | 2 | 1 | — |
 | Médiář | 2 | 1 | — |
+| Ministerstvo kultury ČR | 2 | 1 | — |
 | Ministerstvo průmyslu a obchodu (MPO) | 2 | 2 | — |
 | Ministerstvo spravedlnosti ČR | 2 | 1 | — |
 | Ministerstvo životního prostředí ČR | 2 | 1 | — |
@@ -168,7 +170,6 @@ Dopočítáno z `data/dossiers/**/sources/**`, 680 záznamů v 114 rodinách/out
 | ČKAIT (Česká komora autorizovaných inženýrů a techniků) | 1 | 1 | — |
 | CNCB / BRKI a NRKI | 1 | 1 | — |
 | Demagog.cz | 1 | 1 | — |
-| Deník Alarm | 1 | 1 | — |
 | Deník Referendum | 1 | 1 | — |
 | Deník VEKTOR | 1 | 1 | — |
 | Dopravní noviny | 1 | 1 | — |
@@ -190,6 +191,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 680 záznamů v 114 rodinách/out
 | Manipulátoři.cz | 1 | 1 | — |
 | Město Bílina (oficiální web) | 1 | 1 | — |
 | MHD86 | 1 | 1 | — |
+| Milion chvilek pro demokracii | 1 | 1 | — |
 | Ministerstvo zdravotnictví ČR | 1 | 1 | — |
 | Motoristé sobě (motoristesobe.cz/udhpsh) | 1 | 1 | — |
 | Neovlivní.cz | 1 | 1 | — |

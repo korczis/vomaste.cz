@@ -3157,7 +3157,7 @@ Generated from 502 context entities across 26 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: ales-juchelka, igor-cerveny, oto-klempir
 - Claims: CLM-06, CLM-11, CLM-13, CLM-29, CLM-31, CLM-46, CLM-47
-- Sources: SRC-03, SRC-08, SRC-10, SRC-11, SRC-27, SRC-29, SRC-34 (6 independent source families)
+- Sources: SRC-03, SRC-08, SRC-10, SRC-11, SRC-27, SRC-29, SRC-34 (7 independent source families)
 - Relations:
   - edge-juchelka-npo (juchelka -> narodni-plan-obnovy, "vyřazené projekty za 63,8 mil. Kč z Národního plánu obnovy pod jeho resortem", dossier: ales-juchelka)
   - edge-ministerstvo-zivotniho-prostredi-narodni-plan-obnovy (ministerstvo-zivotniho-prostredi -> narodni-plan-obnovy, "při systemizaci k dubnu 2026 zaniklo oddělení financování Národního plánu obnovy", dossier: igor-cerveny)
