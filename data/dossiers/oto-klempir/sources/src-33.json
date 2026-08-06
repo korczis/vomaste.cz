@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-33",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-33",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
+  },
+  "title": "SRC-33 — Deník N (Minuta N), 24. 5. 2026: „Oto, zabal to.“ V Praze protestují tisíce lidí na podporu ČT a ČRo",
+  "description": "Vlastní zpravodajství Deníku N z místa demonstrace 24. 5. 2026 — datum, místo, pořadatel, směr pochodu a Minářovo vyjádření o ministrovi v nepřímé řeči.",
+  "outlet": "Deník N",
+  "sourceFamily": "denik-n",
+  "sourceType": "zpravodajství",
+  "url": "https://denikn.cz/minuta/2073446",
+  "published": "2026-05-24",
+  "retrieved": "2026-08-06",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-18"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-19"
+    }
+  ],
+  "subjects": [
+    "klempir"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Vlastní zpravodajství jiné redakce**, volně přístupná položka rubriky Minuta N,\ndatovaná 24. května 2026 16:48. Otevřeno a přečteno 2026-08-06.\n\n**Co dokládá doslovně.** Že „Tisíce lidí nyní v Praze míří k ministerstvu kultury\na Strakově akademii, žádají stažení návrhu zákona a demisi ministra kultury Oty\nKlempíře (za Motoristy)“ a že „Účastníci demonstrace se předtím setkali na pražském\nStaroměstském náměstí“. Akci vede spolek Milion chvilek; jeho předseda Mikuláš\nMinář v úvodu prohlásil, že „Celkový obraz návrhu zákona o médiích veřejné služby\nje zdrcující“ a že ministr by měl rezignovat. K vyjádření o kultuře pak text uvádí:\n„Poté, co účastníci pochodu došli k rezortu kultury, předseda spolku Milion chvilek\nMikuláš Minář … prohlásil, že ministr Oto Klempíř (za Motoristy) ve své roli selhal\na **kulturu opakovaně poškozuje**.“ Závěrem: „Pochod několika tisíců protestujících\nza nezávislá veřejnoprávní média se nyní v centru Prahy přesouvá k Úřadu vlády.“\n\n**Nezávislost.** Položka nese vlastní fotografii Deníku N (Jakub Plíhal) a na rozdíl\nod sousedních položek téhož feedu není označena „(ČTK)“. Dosavadní zdroje\n[CLM-18](@/dossiers/oto-klempir/claims/clm-18.md) a\n[CLM-19](@/dossiers/oto-klempir/claims/clm-19.md) —\n[SRC-13](@/dossiers/oto-klempir/sources/src-13.md) (FORUM 24) a\n[SRC-14](@/dossiers/oto-klempir/sources/src-14.md) (Aktuálně.cz) — nesou obě rodinu\n`ctk`, tedy jeden agenturní hlas.\n\n**Poznámka k přesnosti a limitům.** Deník N uvádí Minářova slova v **nepřímé řeči**\n(„…prohlásil, že … kulturu opakovaně poškozuje“), nikoli jako doslovnou citaci.\nDoslovné znění „Místo, aby českou kulturu chránil, ji opakovaně poškozuje“, které\ncituje CLM-19, stojí nadále jen na agenturních zdrojích SRC-13 a SRC-14 — tento\nzdroj dokládá **obsah** výroku a jeho autora, ne jeho přesnou formulaci.\nU CLM-18 dokládá datum, místo, pořadatele a směr pochodu k Úřadu vlády, ale\n**nedokládá odhad účasti „více než deset tisíc“ ani počet podpisů pod peticí**;\nv 16:48 mluví jen o „tisících“ a „několika tisících“ účastníků a pochod je teprve\nna cestě ke Strakově akademii — dorazil k ní podle další položky téhož feedu\n(denikn.cz/minuta/2073501) v 18:17. Reportáž Deníku N z téhož večera je za\npředplatným, a proto se tu necituje."
+    }
+  ],
+  "order": 33
+}

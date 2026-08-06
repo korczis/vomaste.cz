@@ -9,15 +9,18 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
   },
-  "text": "Všeobecná zdravotní pojišťovna zařadila kontrolu FN Olomouc do plánu kontrol a prověřuje stovky implantací defibrilátorů provedených u svých klientů v letech 2023–2025; mluvčí Viktorie Plívová uvedla, že předmětem kontroly je posouzení, zda k implantaci došlo na základě indikačních pravidel oprávněně. Předběžné výsledky pojišťovna očekávala na podzim 2026.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "text": "Všeobecná zdravotní pojišťovna si vyžádala zdravotnickou dokumentaci ke stovkám implantací defibrilátorů provedených u jejích klientů v letech 2023–2025 a prověřuje, zda k nim došlo v souladu s indikačními pravidly; mluvčí Viktorie Plívová uvedla, že tříleté období bylo zvoleno mimo jiné s ohledem na promlčecí lhůty a lepší dostupnost dokumentace. V dubnu 2026 pojišťovna očekávala předběžné závěry v první polovině roku a finální zprávu na podzim, květnové zpravodajství uvádělo předběžné výsledky až na podzim 2026.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-19"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-36"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-48"
     }
   ],
   "subjects": [

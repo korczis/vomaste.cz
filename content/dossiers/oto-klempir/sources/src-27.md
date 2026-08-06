@@ -21,4 +21,6 @@ Kotková nadále vede galerii jako pověřená ředitelka.
 
 **Nezávislost**: Revize zdrojových rodin (2026-08-05): článek na ČT24
 (SRC-04) je podepsán ČTK — obě citace stojí na jednom agenturním základu
-(rodina `ctk`). CLM-22 proto nese stav `1 ZDROJ`.
+(rodina `ctk`). CLM-22 proto do 2026-08-06 neslo stav `1 ZDROJ`;
+nezávislé doložení mu dodal až primární dokument Ministerstva kultury
+[SRC-31](@/dossiers/oto-klempir/sources/src-31.md).

@@ -9,9 +9,9 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
   },
-  "text": "Předseda ODS Martin Kupka označil opatření za populistické a uvedl, že „plošné zákazy nevedou k tomu, aby děti byly odolnější“; ODS varovala před proměnou učitelů v kontrolory a navrhovala místo toho tablety s aplikacemi jen pro výuku.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "text": "Podle ODS je plošný zákaz „líbivé populistické opatření“ namířené proti digitální gramotnosti dětí; předseda strany Martin Kupka uvedl, že „plošné zákazy nevedou k tomu, aby děti byly odolnější vůči škodlivým algoritmům sociálních sítí“, varoval před proměnou učitelů v kontrolory školních batohů a navrhoval místo toho školní zařízení typu tabletu s aplikacemi jen pro výuku.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-16"
@@ -21,6 +21,9 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-30"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-39"
     }
   ],
   "subjects": [
