@@ -10,12 +10,24 @@
     "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
   },
   "title": "Působení v čele SZIF (2013–2022)",
-  "summary": "Působení v čele SZIF (2013–2022) — viz tvrzení CLM-08, CLM-09, CLM-10, CLM-11.",
+  "summary": "Působení v čele SZIF (2013–2022) — Šebestyánovo vedení fondu, zastavení vyplácení investičních eurodotací firmám Agrofertu po auditu Evropské komise, výzva vedení SZIF vládě Petra Fialy k odblokování dotací, jeho zápis jako předseda zájmové iniciativy podle spolkového rejstříku, kontrolní závěr NKÚ a vlastní dokumentace SZIF k auditnímu procesu.",
   "period": "2026",
   "status": "status-single",
   "statusLabel": "Sledované téma",
   "anchor": "kauza-szif",
   "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-11"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-33"
     },
@@ -38,6 +50,9 @@
       "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-43"
     },
     {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-47"
+    },
+    {
       "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-53"
     },
     {
@@ -46,10 +61,10 @@
   ],
   "sources": [
     {
-      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-16"
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-04"
     },
     {
-      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-24"
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-16"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-19"
@@ -62,6 +77,15 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-22"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-24"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-26"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-31"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-38"
