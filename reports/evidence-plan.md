@@ -57,35 +57,35 @@ veškeré nedodělané zdrojovací práce.
 |---|---|
 | Dossierů | 26 |
 | Tvrzení | 970 |
-| — z toho `E0` / `E1` / `E1+` / `E2` | 0 / 561 / 109 / 300 |
-| Zdrojů (z toho s vyplněnou `sourceFamily`) | 683 (381) |
+| — z toho `E0` / `E1` / `E1+` / `E2` | 0 / 556 / 109 / 305 |
+| Zdrojů (z toho s vyplněnou `sourceFamily`) | 688 (385) |
 | Kauz | 94 |
 | Mezer celkem / otevřených / zastaralých | 204 / 202 / 0 |
 | Vztahů | 334 |
-| Bodů rizika celkem | 1458 |
+| Bodů rizika celkem | 1448 |
 
 ## Pořadí dossierů
 
 | # | Dossier | Priorita | Body | Podíl | Kumul. | Tvrzení | `E0`/`E1`/`E1+`/`E2` | Otevřené mezery | Zdroje bez rodiny | Aktualizováno |
 |---:|---|---|---:|---:|---:|---:|---|---:|---:|---|
-| 1 | [Andrej Babiš](../data/dossiers/andrej-babis/) `andrej-babis` | **vysoká** | 164 | 11.2 % | 11.2 % | 105 | 0/75/1/29 | 8 | 20 | 2026-08-05 |
-| 2 | [Karel Havlíček](../data/dossiers/karel-havlicek/) `karel-havlicek` | **vysoká** | 100 | 6.9 % | 18.1 % | 58 | 0/39/9/10 | 12 | 25 | 2026-08-05 |
-| 3 | [Jaromír Zůna](../data/dossiers/jaromir-zuna/) `jaromir-zuna` | **vysoká** | 88 | 6.0 % | 24.1 % | 57 | 0/38/3/16 | 9 | 18 | 2026-08-06 |
-| 4 | [Adam Vojtěch](../data/dossiers/adam-vojtech/) `adam-vojtech` | **vysoká** | 83 | 5.7 % | 29.8 % | 55 | 0/31/6/18 | 15 | 19 | 2026-08-05 |
-| 5 | [Martin Šebestyán](../data/dossiers/martin-sebestyan/) `martin-sebestyan` | **vysoká** | 80 | 5.5 % | 35.3 % | 55 | 0/33/0/22 | 14 | 20 | 2026-08-06 |
-| 6 | [Oto Klempíř](../data/dossiers/oto-klempir/) `oto-klempir` | **vysoká** | 80 | 5.5 % | 40.8 % | 45 | 0/34/5/6 | 7 | 12 | 2026-07-30 |
-| 7 | [Ivan Bednárik](../data/dossiers/ivan-bednarik/) `ivan-bednarik` | **vysoká** | 79 | 5.4 % | 46.2 % | 48 | 0/34/1/13 | 9 | 26 | 2026-07-30 |
-| 8 | [Robert Plaga](../data/dossiers/robert-plaga/) `robert-plaga` | **vysoká** | 79 | 5.4 % | 51.6 % | 55 | 0/29/9/17 | 12 | 14 | 2026-07-30 |
-| 9 | [Zuzana Mrázová](../data/dossiers/zuzana-mrazova/) `zuzana-mrazova` | **střední** | 78 | 5.3 % | 57.0 % | 60 | 0/28/6/26 | 16 | 15 | 2026-08-05 |
-| 10 | [Aleš Juchelka](../data/dossiers/ales-juchelka/) `ales-juchelka` | **střední** | 75 | 5.1 % | 62.1 % | 47 | 0/27/8/12 | 13 | 6 | 2026-07-30 |
-| 11 | [Igor Červený](../data/dossiers/igor-cerveny/) `igor-cerveny` | **střední** | 75 | 5.1 % | 67.3 % | 59 | 0/26/9/24 | 14 | 14 | 2026-07-30 |
-| 12 | [Alena Schillerová](../data/dossiers/alena-schillerova/) `alena-schillerova` | **střední** | 70 | 4.8 % | 72.1 % | 41 | 0/28/4/9 | 8 | 15 | 2026-08-05 |
-| 13 | [Petr Macinka a Filip Turek](../data/dossiers/macinka-turek/) `macinka-turek` | **střední** | 69 | 4.7 % | 76.8 % | 55 | 0/28/2/25 | 7 | 20 | 2026-07-29 |
-| 14 | [Boris Šťastný](../data/dossiers/boris-stastny/) `boris-stastny` | **střední** | 64 | 4.4 % | 81.2 % | 42 | 0/21/11/10 | 10 | 8 | 2026-07-30 |
-| 15 | [Jeroným Tejc](../data/dossiers/jeronym-tejc/) `jeronym-tejc` | **nízká** | 62 | 4.3 % | 85.5 % | 52 | 0/22/8/22 | 10 | 16 | 2026-08-06 |
-| 16 | [Lubomír Metnar](../data/dossiers/lubomir-metnar/) `lubomir-metnar` | **nízká** | 47 | 3.2 % | 88.7 % | 31 | 0/13/6/12 | 15 | 5 | 2026-08-05 |
-| 17 | [James Quick](../data/dossiers/james-quick/) `james-quick` | **nízká** | 43 | 2.9 % | 91.6 % | 19 | 0/18/1/0 | 3 | 19 | 2026-08-05 |
-| 18 | [Tomio Okamura](../data/dossiers/tomio-okamura/) `tomio-okamura` | **nízká** | 43 | 2.9 % | 94.6 % | 36 | 0/9/15/12 | 8 | 10 | 2026-08-05 |
+| 1 | [Andrej Babiš](../data/dossiers/andrej-babis/) `andrej-babis` | **vysoká** | 154 | 10.6 % | 10.6 % | 105 | 0/70/1/34 | 8 | 21 | 2026-08-06 |
+| 2 | [Karel Havlíček](../data/dossiers/karel-havlicek/) `karel-havlicek` | **vysoká** | 100 | 6.9 % | 17.5 % | 58 | 0/39/9/10 | 12 | 25 | 2026-08-05 |
+| 3 | [Jaromír Zůna](../data/dossiers/jaromir-zuna/) `jaromir-zuna` | **vysoká** | 88 | 6.1 % | 23.6 % | 57 | 0/38/3/16 | 9 | 18 | 2026-08-06 |
+| 4 | [Adam Vojtěch](../data/dossiers/adam-vojtech/) `adam-vojtech` | **vysoká** | 83 | 5.7 % | 29.4 % | 55 | 0/31/6/18 | 15 | 19 | 2026-08-05 |
+| 5 | [Martin Šebestyán](../data/dossiers/martin-sebestyan/) `martin-sebestyan` | **vysoká** | 80 | 5.5 % | 34.9 % | 55 | 0/33/0/22 | 14 | 20 | 2026-08-06 |
+| 6 | [Oto Klempíř](../data/dossiers/oto-klempir/) `oto-klempir` | **vysoká** | 80 | 5.5 % | 40.4 % | 45 | 0/34/5/6 | 7 | 12 | 2026-07-30 |
+| 7 | [Ivan Bednárik](../data/dossiers/ivan-bednarik/) `ivan-bednarik` | **vysoká** | 79 | 5.5 % | 45.9 % | 48 | 0/34/1/13 | 9 | 26 | 2026-07-30 |
+| 8 | [Robert Plaga](../data/dossiers/robert-plaga/) `robert-plaga` | **vysoká** | 79 | 5.5 % | 51.3 % | 55 | 0/29/9/17 | 12 | 14 | 2026-07-30 |
+| 9 | [Zuzana Mrázová](../data/dossiers/zuzana-mrazova/) `zuzana-mrazova` | **střední** | 78 | 5.4 % | 56.7 % | 60 | 0/28/6/26 | 16 | 15 | 2026-08-05 |
+| 10 | [Aleš Juchelka](../data/dossiers/ales-juchelka/) `ales-juchelka` | **střední** | 75 | 5.2 % | 61.9 % | 47 | 0/27/8/12 | 13 | 6 | 2026-07-30 |
+| 11 | [Igor Červený](../data/dossiers/igor-cerveny/) `igor-cerveny` | **střední** | 75 | 5.2 % | 67.1 % | 59 | 0/26/9/24 | 14 | 14 | 2026-07-30 |
+| 12 | [Alena Schillerová](../data/dossiers/alena-schillerova/) `alena-schillerova` | **střední** | 70 | 4.8 % | 71.9 % | 41 | 0/28/4/9 | 8 | 15 | 2026-08-05 |
+| 13 | [Petr Macinka a Filip Turek](../data/dossiers/macinka-turek/) `macinka-turek` | **střední** | 69 | 4.8 % | 76.7 % | 55 | 0/28/2/25 | 7 | 20 | 2026-07-29 |
+| 14 | [Boris Šťastný](../data/dossiers/boris-stastny/) `boris-stastny` | **střední** | 64 | 4.4 % | 81.1 % | 42 | 0/21/11/10 | 10 | 8 | 2026-07-30 |
+| 15 | [Jeroným Tejc](../data/dossiers/jeronym-tejc/) `jeronym-tejc` | **nízká** | 62 | 4.3 % | 85.4 % | 52 | 0/22/8/22 | 10 | 16 | 2026-08-06 |
+| 16 | [Lubomír Metnar](../data/dossiers/lubomir-metnar/) `lubomir-metnar` | **nízká** | 47 | 3.2 % | 88.6 % | 31 | 0/13/6/12 | 15 | 5 | 2026-08-05 |
+| 17 | [James Quick](../data/dossiers/james-quick/) `james-quick` | **nízká** | 43 | 3.0 % | 91.6 % | 19 | 0/18/1/0 | 3 | 19 | 2026-08-05 |
+| 18 | [Tomio Okamura](../data/dossiers/tomio-okamura/) `tomio-okamura` | **nízká** | 43 | 3.0 % | 94.5 % | 36 | 0/9/15/12 | 8 | 10 | 2026-08-05 |
 | 19 | [Richard Chlad](../data/dossiers/richard-chlad/) `richard-chlad` | **nízká** | 27 | 1.9 % | 96.4 % | 11 | 0/10/1/0 | 3 | 1 | 2026-08-05 |
 | 20 | [Tünde Bartha](../data/dossiers/tunde-bartha/) `tunde-bartha` | **nízká** | 17 | 1.2 % | 97.6 % | 13 | 0/6/0/7 | 4 | 8 | 2026-08-01 |
 | 21 | [Jaroslav Faltýnek](../data/dossiers/jaroslav-faltynek/) `jaroslav-faltynek` | **nízká** | 16 | 1.1 % | 98.7 % | 13 | 0/6/1/6 | 2 | 9 | 2026-08-05 |
@@ -99,21 +99,21 @@ veškeré nedodělané zdrojovací práce.
 
 ### 1. Andrej Babiš — `andrej-babis`
 
-**Priorita vysoká** · 164 bodů (11.2 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-05`, revidováno `2026-08-05`
+**Priorita vysoká** · 154 bodů (10.6 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-06`, revidováno `2026-08-05`
 
 | Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
 |---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 105 | 0 | 75 | 1 | 29 | 81 | 61 | 20 | 8 (8) | 42 |
+| 105 | 0 | 70 | 1 | 34 | 86 | 65 | 20 | 8 (8) | 42 |
 
-Deklarované stavy: CORROBORATED 28 · 1 ZDROJ 53 · CITACE 24
+Deklarované stavy: CORROBORATED 33 · 1 ZDROJ 48 · CITACE 24
 
 Další krok:
 
-- 75 tvrzení stojí na jediném zdroji (např. CLM-04, CLM-05, CLM-06) → dohledat druhého, nezávislého vydavatele
+- 70 tvrzení stojí na jediném zdroji (např. CLM-04, CLM-05, CLM-06) → dohledat druhého, nezávislého vydavatele
 - 5 otevřených mezer s prioritou „vysoká" → projít je jako první, u každé zaznamenat výsledek kontroly
 - 3 dalších otevřených mezer → ověřit, jestli je nový zdroj neuzavírá
 - 1 tvrzení má ≥2 zdroje, ale všechny z jedné rodiny / od jednoho vydavatele (např. CLM-86) → dohledat jeden nezávislý doklad; tím se dostanou na CORROBORATED
-- 20 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
+- 21 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
 
 ### 2. Karel Havlíček — `karel-havlicek`
 
@@ -135,7 +135,7 @@ Další krok:
 
 ### 3. Jaromír Zůna — `jaromir-zuna`
 
-**Priorita vysoká** · 88 bodů (6.0 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-06`, revidováno `2026-08-06`
+**Priorita vysoká** · 88 bodů (6.1 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-06`, revidováno `2026-08-06`
 
 | Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
 |---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -202,7 +202,7 @@ Další krok:
 
 ### 7. Ivan Bednárik — `ivan-bednarik`
 
-**Priorita vysoká** · 79 bodů (5.4 % celkového objemu práce) · typ `entity` · aktualizováno `2026-07-30`, revidováno `2026-07-30`
+**Priorita vysoká** · 79 bodů (5.5 % celkového objemu práce) · typ `entity` · aktualizováno `2026-07-30`, revidováno `2026-07-30`
 
 | Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
 |---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -220,7 +220,7 @@ Další krok:
 
 ### 8. Robert Plaga — `robert-plaga`
 
-**Priorita vysoká** · 79 bodů (5.4 % celkového objemu práce) · typ `entity` · aktualizováno `2026-07-30`, revidováno `2026-07-30`
+**Priorita vysoká** · 79 bodů (5.5 % celkového objemu práce) · typ `entity` · aktualizováno `2026-07-30`, revidováno `2026-07-30`
 
 | Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
 |---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -237,7 +237,7 @@ Další krok:
 
 ### 9. Zuzana Mrázová — `zuzana-mrazova`
 
-**Priorita střední** · 78 bodů (5.3 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-05`, revidováno `2026-08-05`
+**Priorita střední** · 78 bodů (5.4 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-05`, revidováno `2026-08-05`
 
 | Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
 |---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -254,7 +254,7 @@ Další krok:
 
 ### 10. Aleš Juchelka — `ales-juchelka`
 
-**Priorita střední** · 75 bodů (5.1 % celkového objemu práce) · typ `entity` · aktualizováno `2026-07-30`, revidováno `2026-07-30`
+**Priorita střední** · 75 bodů (5.2 % celkového objemu práce) · typ `entity` · aktualizováno `2026-07-30`, revidováno `2026-07-30`
 
 | Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
 |---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -271,7 +271,7 @@ Další krok:
 
 ### 11. Igor Červený — `igor-cerveny`
 
-**Priorita střední** · 75 bodů (5.1 % celkového objemu práce) · typ `entity` · aktualizováno `2026-07-30`, revidováno `2026-07-30`
+**Priorita střední** · 75 bodů (5.2 % celkového objemu práce) · typ `entity` · aktualizováno `2026-07-30`, revidováno `2026-07-30`
 
 | Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
 |---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -306,7 +306,7 @@ Další krok:
 
 ### 13. Petr Macinka a Filip Turek — `macinka-turek`
 
-**Priorita střední** · 69 bodů (4.7 % celkového objemu práce) · typ `aggregate` · aktualizováno `2026-07-29`, revidováno `2026-07-29`
+**Priorita střední** · 69 bodů (4.8 % celkového objemu práce) · typ `aggregate` · aktualizováno `2026-07-29`, revidováno `2026-07-29`
 
 | Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
 |---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -376,7 +376,7 @@ Další krok:
 
 ### 17. James Quick — `james-quick`
 
-**Priorita nízká** · 43 bodů (2.9 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-05`, revidováno `2026-08-05`
+**Priorita nízká** · 43 bodů (3.0 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-05`, revidováno `2026-08-05`
 
 | Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
 |---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -393,7 +393,7 @@ Další krok:
 
 ### 18. Tomio Okamura — `tomio-okamura`
 
-**Priorita nízká** · 43 bodů (2.9 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-05`, revidováno `2026-08-05`
+**Priorita nízká** · 43 bodů (3.0 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-05`, revidováno `2026-08-05`
 
 | Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
 |---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
