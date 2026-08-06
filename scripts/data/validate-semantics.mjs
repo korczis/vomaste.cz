@@ -45,8 +45,9 @@
 //       sémantika dle entity.schema.json) — jinak jde o zamrzlý odkaz
 //       po smazání/sloučení zdroje nebo o chybný zápis při extrakci
 //  S10  týž vydavatel nikdy nezakládá nezávislé doložení: dva zdroje se
-//       shodným `outlet`em (nebo shodnou registrovanou doménou `url`) se
-//       počítají jako JEDEN nezávislý hlas BEZ OHLEDU na `sourceFamily`
+//       shodným `outlet`em, shodnou registrovanou doménou `url` nebo
+//       shodnou SKUPINOU VYDAVATELŮ (`publisherGroup` v katalogu zdrojů)
+//       se počítají jako JEDEN nezávislý hlas BEZ OHLEDU na `sourceFamily`
 //       (ERROR u claims, WARNING u hran — zrcadlí severitu hostitelského
 //       pravidla S2/S4).
 //
@@ -58,10 +59,17 @@
 //       badge `CORROBORATED` znamená dva NEZÁVISLÉ vydavatele, ne dvě
 //       různé hodnoty jednoho pole.
 //
+//       Druhá díra (T-083): jeden vydavatel může držet víc titulů na víc
+//       doménách — Česká justice, Ekonomický deník a Zdravotnický deník
+//       vydává Media Network s.r.o., Novinky.cz a Seznam Zprávy provozuje
+//       Seznam.cz. Outlet ani doména to nevidí; katalog zdrojů ano, a
+//       proto je jeho `publisherGroup` třetí osou identity vydavatele.
+//
 //       Implementačně je S10 vlastnost společného primitivu
 //       `independentPair()`: nezávislé doložení je DVOJICE zdrojů, které
-//       se liší rodinou (S1/S2) A ZÁROVEŇ vydavatelem i registrovanou
-//       doménou (S10). Primitiv používají S1, S2 i S4 — pravidlo tedy
+//       se liší rodinou (S1/S2) A ZÁROVEŇ vydavatelem — outletem,
+//       registrovanou doménou i skupinou vydavatelů (S10). Primitiv
+//       používají S1, S2 i S4 — pravidlo tedy
 //       platí i pro grafové hrany. Párová (ne tranzitivní) formulace je
 //       záměrná: kdyby se zdroje slučovaly tranzitivně přes rodinu,
 //       vlastní reportáž Blesku by splynula s ČTK jen proto, že Blesk
@@ -179,7 +187,7 @@ export function collectSemanticsFindings(model, options = {}) {
         found(
           "S10",
           wrapper,
-          `${relPath}: status-corroborated cituje ${distinct.length} zdroje z ${families.size} source families, ale žádná dvojice nepochází od dvou různých vydavatelů — ${publisherCollisions(distinct).join("; ")}; týž outlet ani táž registrovaná doména nezakládají nezávislé potvrzení bez ohledu na sourceFamily`,
+          `${relPath}: status-corroborated cituje ${distinct.length} zdroje z ${families.size} source families, ale žádná dvojice nepochází od dvou různých vydavatelů — ${publisherCollisions(distinct).join("; ")}; týž outlet, táž registrovaná doména ani táž skupina vydavatelů nezakládají nezávislé potvrzení bez ohledu na sourceFamily`,
         );
       }
     }
