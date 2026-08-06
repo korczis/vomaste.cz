@@ -9,15 +9,21 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
   },
-  "text": "K datu zveřejnění závěrů komise (10.–11. července 2026) policie v kauze nikoho neobvinila; případ je nadále veden pro podezření z podvodu a těžkého ublížení na zdraví.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "text": "K datu zveřejnění závěrů komise (10.–11. července 2026) policie v kauze nikoho neobvinila; případ je nadále veden ve fázi prověřování pro podezření ze zvlášť závažných zločinů těžkého ublížení na zdraví a podvodu a přečinu ublížení na zdraví.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-13"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-18"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-46"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-50"
     }
   ],
   "subjects": [

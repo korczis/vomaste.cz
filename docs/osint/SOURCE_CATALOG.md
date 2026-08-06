@@ -100,12 +100,12 @@ Odpovídá na otázku „kam se podívat a čemu z toho věřit". Publikovaná p
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 680 záznamů v 114 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 685 záznamů v 115 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
 | ctk | 290 | 21 | [ano](/zdroje/ctk/) |
-| seznam-zpravy | 35 | 13 | [ano](/zdroje/seznam-zpravy/) |
+| seznam-zpravy | 38 | 13 | [ano](/zdroje/seznam-zpravy/) |
 | Poslanecká sněmovna Parlamentu ČR | 32 | 15 | [ano](/zdroje/psp-cz/) |
 | Vláda České republiky (vlada.gov.cz) | 28 | 17 | [ano](/zdroje/vlada-cz/) |
 | FORUM 24 | 19 | 9 | [ano](/zdroje/forum24/) |
@@ -121,6 +121,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 680 záznamů v 114 rodinách/out
 | hlidac-statu | 7 | 2 | [ano](/zdroje/hlidac-statu/) |
 | udhpsh | 6 | 1 | [ano](/zdroje/udhpsh/) |
 | Blesk.cz | 5 | 3 | [ano](/zdroje/blesk-cz/) |
+| Zdravé zprávy | 5 | 2 | — |
 | e15.cz | 4 | 2 | — |
 | HlídacíPes.org | 4 | 4 | — |
 | Hospodářské noviny | 4 | 3 | — |
@@ -128,7 +129,6 @@ Dopočítáno z `data/dossiers/**/sources/**`, 680 záznamů v 114 rodinách/out
 | Reflex | 4 | 4 | — |
 | Respekt | 4 | 3 | — |
 | Státní zemědělský intervenční fond | 4 | 1 | — |
-| Zdravé zprávy | 4 | 2 | — |
 | CNN Prima News | 3 | 3 | — |
 | Investigace.cz | 3 | 3 | — |
 | Ministerstvo financí ČR | 3 | 1 | — |
@@ -197,6 +197,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 680 záznamů v 114 rodinách/out
 | ParlamentníListy.cz | 1 | 1 | — |
 | Podnikatel.cz | 1 | 1 | [ano](/zdroje/podnikatel-cz-rejstrik/) |
 | Podpůrný a garanční rolnický a lesnický fond (PGRLF) | 1 | 1 | — |
+| Policie České republiky — Krajské ředitelství policie Olomouckého kraje | 1 | 1 | — |
 | Průmyslová automatizace | 1 | 1 | — |
 | RAILTARGET | 1 | 1 | — |
 | Refresher.cz | 1 | 1 | — |
@@ -218,4 +219,10 @@ Dopočítáno z `data/dossiers/**/sources/**`, 680 záznamů v 114 rodinách/out
 | Život v Česku | 1 | 1 | — |
 | smlouvy-gov-cz | 1 | 1 | [ano](/zdroje/registr-smluv/) |
 | usoud | 1 | 1 | — |
+
+## Chybí popis
+
+Tyhle zdroje dataset používá aspoň pětkrát, ale katalog k nim nemá záznam s mezemi a pastmi:
+
+- Zdravé zprávy (5×)
 
