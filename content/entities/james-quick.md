@@ -3,7 +3,7 @@
 title = "James Quick"
 template = "entity.html"
 weight = 475
-description = "Hlavní subjekt autorizovaného dossieru."
+description = "James Quick — Hlavní subjekt autorizovaného dossieru."
 
 [extra]
 generated = true

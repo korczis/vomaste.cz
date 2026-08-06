@@ -3,7 +3,7 @@
 title = "Kryštof Doležal"
 template = "entity.html"
 weight = 229
-description = "Kontextová entita — Právník Transparency International ČR; statut RSVP Trust označil za zástěrku."
+description = "Kryštof Doležal — Kontextová entita — Právník Transparency International ČR; statut RSVP Trust označil za zástěrku."
 
 [extra]
 generated = true

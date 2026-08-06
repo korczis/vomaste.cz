@@ -3,7 +3,7 @@
 title = "Otevřený dopis 500 umělců proti obsazení ministerstva kultury Motoristy (říjen 2025)"
 template = "entity.html"
 weight = 324
-description = "Kontextová entita — Výzva zhruba 500 umělců prezidentu Pavlovi a Babišovi, aby resort kultury nepřipadl Motoristům; Klempíř na ni veřejně reagoval."
+description = "Otevřený dopis 500 umělců proti obsazení ministerstva… — Kontextová entita — Výzva zhruba 500 umělců prezidentu Pavlovi a Babišovi, aby resort kultury nepřipadl Motoristům; Klempíř na ni…"
 
 [extra]
 generated = true

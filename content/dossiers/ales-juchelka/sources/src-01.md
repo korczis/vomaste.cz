@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-01 — Vláda ČR (oficiální profil)"
-description = "Oficiální profil člena vlády: funkce a údaje, které stránka sama uvádí."
+description = "Oficiální profil člena vlády: funkce a údaje, které stránka sama uvádí. Zdroj: Vláda České republiky (vlada.gov.cz), dossier Aleš Juchelka."
 template = "dossier-source.html"
 weight = 1
 

@@ -3,7 +3,7 @@
 title = "Ondřej Macura"
 template = "entity.html"
 weight = 318
-description = "Kontextová entita — Mluvčí MŠMT; komunikoval mazání dat z testování a zkrácení školního roku. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+description = "Ondřej Macura — Kontextová entita — Mluvčí MŠMT; komunikoval mazání dat z testování a zkrácení školního roku."
 
 [extra]
 generated = true

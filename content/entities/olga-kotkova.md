@@ -3,7 +3,7 @@
 title = "Olga Kotková"
 template = "entity.html"
 weight = 316
-description = "Kontextová entita — Pověřená ředitelka Národní galerie Praha po odvolání Knastové; zároveň uchazečka ve zrušeném výběrovém řízení."
+description = "Olga Kotková — Kontextová entita — Pověřená ředitelka Národní galerie Praha po odvolání Knastové; zároveň uchazečka ve zrušeném výběrovém řízení."
 
 [extra]
 generated = true

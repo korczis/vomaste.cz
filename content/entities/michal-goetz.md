@@ -3,7 +3,7 @@
 title = "Michal Goetz"
 template = "entity.html"
 weight = 263
-description = "Kontextová entita — Psychiatr; zákaz mobilů podle něj měl být přijat už dávno. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+description = "Michal Goetz — Kontextová entita — Psychiatr; zákaz mobilů podle něj měl být přijat už dávno. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

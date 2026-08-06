@@ -3,7 +3,7 @@
 title = "Výbor pro rozpočtové prognózy"
 template = "entity.html"
 weight = 446
-description = "Kontextová entita — MF mu přisoudilo výhradní roli arbitra makroekonomických prognóz v polemice s NRR."
+description = "Výbor pro rozpočtové prognózy — Kontextová entita — MF mu přisoudilo výhradní roli arbitra makroekonomických prognóz v polemice s NRR."
 
 [extra]
 generated = true

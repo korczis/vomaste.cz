@@ -3,7 +3,7 @@
 title = "DRILL COMPANY, s.r.o."
 template = "entity.html"
 weight = 114
-description = "Kontextová entita — IČO 04771664; Macinka členem statutárního orgánu 16. 8. 2017 – 8. 1. 2026; angažmá skončilo v období, kdy dodatečně opravoval majetkové přiznání (souběh dat, ne tvrzená…"
+description = "DRILL COMPANY, s.r.o. — Kontextová entita — IČO 04771664; Macinka členem statutárního orgánu 16. 8. 2017 – 8. 1. 2026; angažmá skončilo v období, kdy dodatečně opravoval majetkové přiznání…"
 
 [extra]
 generated = true

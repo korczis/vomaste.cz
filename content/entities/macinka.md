@@ -4,7 +4,7 @@ title = "Petr Macinka"
 template = "entity.html"
 weight = 1
 aliases = ["/dossiers/macinka-turek/entities/macinka/"]
-description = "Hlavní subjekt autorizovaného dossieru."
+description = "Petr Macinka — Hlavní subjekt autorizovaného dossieru."
 
 [extra]
 generated = true

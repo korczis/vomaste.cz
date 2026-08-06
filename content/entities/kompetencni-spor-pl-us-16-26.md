@@ -3,7 +3,7 @@
 title = "Kompetenční spor prezident vs. vláda (Pl. ÚS 16/26)"
 template = "entity.html"
 weight = 221
-description = "Kontextová entita — Kompetenční žaloba prezidenta Pavla, předběžné opatření ÚS k účasti na summitu NATO, vládní návrh na zamítnutí."
+description = "Kompetenční spor prezident vs. vláda (Pl. ÚS 16/26) — Kontextová entita — Kompetenční žaloba prezidenta Pavla, předběžné opatření ÚS k účasti na summitu NATO, vládní návrh na zamítnutí."
 
 [extra]
 generated = true

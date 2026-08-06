@@ -3,7 +3,7 @@
 title = "Česká komora autorizovaných inženýrů a techniků (ČKAIT)"
 template = "entity.html"
 weight = 97
-description = "Kontextová entita — Profesní komora (32 000 osob); kritik projednávání stavební novely. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+description = "Česká komora autorizovaných inženýrů a techniků (ČKAIT) — Kontextová entita — Profesní komora (32 000 osob); kritik projednávání stavební novely."
 
 [extra]
 generated = true

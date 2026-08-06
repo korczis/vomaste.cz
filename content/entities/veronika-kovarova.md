@@ -3,7 +3,7 @@
 title = "Veronika Kovářová"
 template = "entity.html"
 weight = 429
-description = "Kontextová entita — Poslankyně Pirátů; kritika stavební novely (legalizace černých staveb). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+description = "Veronika Kovářová — Kontextová entita — Poslankyně Pirátů; kritika stavební novely (legalizace černých staveb)."
 
 [extra]
 generated = true

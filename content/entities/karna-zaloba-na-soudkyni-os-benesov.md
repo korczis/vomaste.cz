@@ -3,7 +3,7 @@
 title = "Kárná žaloba na soudkyni Okresního soudu v Benešově (2026)"
 template = "entity.html"
 weight = 194
-description = "Kontextová entita — Tejcova kárná žaloba (návrh snížení platu o 30 %); rozhodne kárný senát. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+description = "Kárná žaloba na soudkyni Okresního soudu v Benešově (2026) — Kontextová entita — Tejcova kárná žaloba (návrh snížení platu o 30 %); rozhodne kárný senát."
 
 [extra]
 generated = true

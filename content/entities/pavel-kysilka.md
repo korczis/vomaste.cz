@@ -3,7 +3,7 @@
 title = "Pavel Kysilka"
 template = "entity.html"
 weight = 329
-description = "Kontextová entita — Bývalý předseda dozorčí rady ČD, rezignoval v prosinci 2021; nahrazen Zámečníkem."
+description = "Pavel Kysilka — Kontextová entita — Bývalý předseda dozorčí rady ČD, rezignoval v prosinci 2021; nahrazen Zámečníkem."
 
 [extra]
 generated = true

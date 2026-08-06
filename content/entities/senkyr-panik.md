@@ -3,7 +3,7 @@
 title = "Advokátní kancelář Šenkýř Pánik"
 template = "entity.html"
 weight = 374
-description = "Kontextová entita — Autorka právního stanoviska pro MČ Praha 3 — dosavadní důkazy pro výpověď z nájmu by u soudu nestačily."
+description = "Advokátní kancelář Šenkýř Pánik — Kontextová entita — Autorka právního stanoviska pro MČ Praha 3 — dosavadní důkazy pro výpověď z nájmu by u soudu nestačily."
 
 [extra]
 generated = true

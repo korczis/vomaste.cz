@@ -3,7 +3,7 @@
 title = "Bezpečnostní rada státu"
 template = "entity.html"
 weight = 79
-description = "Kontextová entita — Projednávala koncepci výstavby armády (17. 6. a 2. 7. 2026) za účasti prezidenta."
+description = "Bezpečnostní rada státu — Kontextová entita — Projednávala koncepci výstavby armády (17. 6. a 2. 7. 2026) za účasti prezidenta."
 
 [extra]
 generated = true

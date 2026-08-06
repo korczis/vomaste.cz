@@ -4,7 +4,7 @@ title = "Richard Chlad"
 template = "entity.html"
 weight = 16
 aliases = ["/dossiers/macinka-turek/entities/chlad/"]
-description = "Hlavní subjekt autorizovaného dossieru. Viz plné znění a kontext v hlavním přehledu."
+description = "Richard Chlad — Hlavní subjekt autorizovaného dossieru. Viz plné znění a kontext v hlavním přehledu."
 
 [extra]
 generated = true

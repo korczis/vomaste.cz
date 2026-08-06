@@ -3,7 +3,7 @@
 title = "Obvodní soud pro Prahu 1"
 template = "entity.html"
 weight = 308
-description = "Kontextová entita — Soud, který nepravomocně uznal SPD vinným z podněcování k nenávisti. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+description = "Obvodní soud pro Prahu 1 — Kontextová entita — Soud, který nepravomocně uznal SPD vinným z podněcování k nenávisti."
 
 [extra]
 generated = true

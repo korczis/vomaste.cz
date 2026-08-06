@@ -3,7 +3,7 @@
 title = "Alza.cz"
 template = "entity.html"
 weight = 63
-description = "Kontextová entita — E-shop, kde si Šťastný podle svého vyjádření AI rekordér koupil; jen okrajová zmínka v jeho obhajobě."
+description = "Alza.cz — Kontextová entita — E-shop, kde si Šťastný podle svého vyjádření AI rekordér koupil; jen okrajová zmínka v jeho obhajobě."
 
 [extra]
 generated = true

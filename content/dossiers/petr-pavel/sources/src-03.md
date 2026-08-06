@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-03 — Blesk.cz"
-description = "Turek oznamuje, že žalobu na ochranu osobnosti proti prezidentu Pavlovi nakonec nepodá."
+description = "Turek oznamuje, že žalobu na ochranu osobnosti proti prezidentu Pavlovi nakonec nepodá. Zdroj: Blesk.cz, dossier Petr Pavel."
 template = "dossier-source.html"
 weight = 3
 

@@ -3,7 +3,7 @@
 title = "Kia"
 template = "entity.html"
 weight = 218
-description = "Kontextová entita — Automobilka; uvedena (jako „Kii“ v genitivu) mezi řečníky konference Forum Elektromobilita 2026."
+description = "Kia — Kontextová entita — Automobilka; uvedena (jako „Kii“ v genitivu) mezi řečníky konference Forum Elektromobilita 2026."
 
 [extra]
 generated = true

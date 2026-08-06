@@ -3,7 +3,7 @@
 title = "Ondřej Šebek"
 template = "entity.html"
 weight = 319
-description = "Kontextová entita — Předseda Národní sportovní agentury odvolaný vládou 16. 12. 2025 na návrh Šťastného; kritiku odmítl jako účelovou."
+description = "Ondřej Šebek — Kontextová entita — Předseda Národní sportovní agentury odvolaný vládou 16. 12. 2025 na návrh Šťastného; kritiku odmítl jako účelovou."
 
 [extra]
 generated = true

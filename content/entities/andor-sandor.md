@@ -3,7 +3,7 @@
 title = "Andor Šándor"
 template = "entity.html"
 weight = 66
-description = "Kontextová entita — Bezpečnostní expert (bývalý šéf vojenské rozvědky) kritizující přítomnost nahrávacího zařízení v jednacím sále vlády."
+description = "Andor Šándor — Kontextová entita — Bezpečnostní expert (bývalý šéf vojenské rozvědky) kritizující přítomnost nahrávacího zařízení v jednacím sále vlády."
 
 [extra]
 generated = true

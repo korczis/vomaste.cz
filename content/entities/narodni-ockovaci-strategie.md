@@ -3,7 +3,7 @@
 title = "Národní očkovací strategie"
 template = "entity.html"
 weight = 292
-description = "Kontextová entita — Strategie doporučených dobrovolných očkování (covid, HPV, chřipka); koaliční SPD žádá revokaci."
+description = "Národní očkovací strategie — Kontextová entita — Strategie doporučených dobrovolných očkování (covid, HPV, chřipka); koaliční SPD žádá revokaci."
 
 [extra]
 generated = true

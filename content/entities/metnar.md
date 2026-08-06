@@ -4,7 +4,7 @@ title = "Lubomír Metnar"
 template = "entity.html"
 weight = 1
 aliases = ["/dossiers/lubomir-metnar/entities/metnar/"]
-description = "Hlavní subjekt autorizovaného dossieru. Viz plné znění a kontext v hlavním přehledu."
+description = "Lubomír Metnar — Hlavní subjekt autorizovaného dossieru. Viz plné znění a kontext v hlavním přehledu."
 
 [extra]
 generated = true

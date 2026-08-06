@@ -3,7 +3,7 @@
 title = "Jiří Paroubek"
 template = "entity.html"
 weight = 524
-description = "Kontextová veřejná osoba: Jiří Jehlička v roce 2006 organizoval demonstrace požadující Paroubkův odchod z politiky. Záznam popisuje veřejný politický protest, nikoli osobní či obchodní vztah."
+description = "Jiří Paroubek — Kontextová veřejná osoba: Jiří Jehlička v roce 2006 organizoval demonstrace požadující Paroubkův odchod z politiky."
 
 [extra]
 generated = true

@@ -4,7 +4,7 @@ title = "Navos Farm Technic"
 template = "entity.html"
 weight = 27
 aliases = ["/dossiers/andrej-babis/entities/navos-farm-technic/"]
-description = "Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext."
+description = "Navos Farm Technic — Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext."
 
 [extra]
 generated = true

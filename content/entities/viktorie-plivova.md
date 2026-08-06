@@ -3,7 +3,7 @@
 title = "Viktorie Plívová"
 template = "entity.html"
 weight = 433
-description = "Kontextová entita — Mluvčí VZP; potvrdila kontrolu implantací ve FN Olomouc. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+description = "Viktorie Plívová — Kontextová entita — Mluvčí VZP; potvrdila kontrolu implantací ve FN Olomouc. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

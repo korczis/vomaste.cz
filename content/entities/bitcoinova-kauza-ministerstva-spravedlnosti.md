@@ -3,7 +3,7 @@
 title = "Bitcoinová kauza resortu spravedlnosti"
 template = "entity.html"
 weight = 81
-description = "Kontextová entita — Dar 468 bitcoinů (prodej za 956,8 mil. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+description = "Bitcoinová kauza resortu spravedlnosti — Kontextová entita — Dar 468 bitcoinů (prodej za 956,8 mil."
 
 [extra]
 generated = true

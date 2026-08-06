@@ -3,7 +3,7 @@
 title = "František Fabičovic"
 template = "entity.html"
 weight = 132
-description = "Kontextová entita — Podnikatel, dárce 1 mil. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+description = "František Fabičovic — Kontextová entita — Podnikatel, dárce 1 mil. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

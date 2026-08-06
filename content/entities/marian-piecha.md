@@ -3,7 +3,7 @@
 title = "Marian Piecha"
 template = "entity.html"
 weight = 246
-description = "Kontextová entita — Náměstek MPO, oznámil odnětí dotace Pekárně Zelená louka a vedl vymáhání („Penam vymáháme“)."
+description = "Marian Piecha — Kontextová entita — Náměstek MPO, oznámil odnětí dotace Pekárně Zelená louka a vedl vymáhání („Penam vymáháme“)."
 
 [extra]
 generated = true

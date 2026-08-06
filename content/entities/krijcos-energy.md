@@ -3,7 +3,7 @@
 title = "Krijcos Energy"
 template = "entity.html"
 weight = 228
-description = "Kontextová entita — Chladova investice do solárních elektráren dle citovaného profilu. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+description = "Krijcos Energy — Kontextová entita — Chladova investice do solárních elektráren dle citovaného profilu."
 
 [extra]
 generated = true
