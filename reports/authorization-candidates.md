@@ -5076,7 +5076,7 @@ Generated from 502 context entities across 26 dossier(s). Regenerate with `npm r
 - Claims: CLM-08
 - Sources: SRC-08 (1 independent source family)
 - Relations:
-  - edge-james-quick-vladimir-ruzicka (james-quick -> vladimir-ruzicka, "podal trestní oznámení v souvislosti s veřejnou kauzou", dossier: james-quick)
+  - edge-james-quick-vladimir-ruzicka (james-quick -> vladimir-ruzicka, "podal trestní oznámení; věc skončila pravomocným odsouzením za zpronevěru", dossier: james-quick)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Vlastimil Válek (`vlastimil-valek`)
