@@ -419,11 +419,15 @@ only the routing envelope.
   v `data/entity-types.toml`; `scripts/dossier/validate-entity-types.mjs`
   (součást `npm run build`) shodí build, když typ použitý v datech nemá
   popisek nebo když popisek nemá v datech odpovídající entitu.
-- `templates/base.html` — shared layout; all `<meta>` (title, description,
-  canonical, Open Graph) is declared once in front matter and rendered
-  once here — do not hand-write `<meta>` tags elsewhere. It also carries the
-  site-wide footer (licence, "navrhnout opravu"); page-level footers must not
-  repeat those links.
+- `templates/base.html` — shared layout; rozloží front matter na `meta_*`
+  hodnoty a předá je makrům. Všechna `<meta>` (title, description,
+  canonical, Open Graph, Twitter) se deklarují jednou a vydávají jednou —
+  do jiných šablon `<meta>` tagy nepatří. Nese taky site-wide patičku
+  (licence, „navrhnout opravu"); patičky stránek ty odkazy neopakují.
+- `templates/macros/meta.html` — jednotná komponenta pro sociální a SEO
+  metadata (`meta::open_graph`, `meta::twitter`, `meta::canonical`).
+  Politiku čte z `data/seo.toml`, výsledek vynucuje
+  `npm run verify:og` po každém buildu. Viz sekci [Metadata](#metadata).
 - `templates/macros/table.html` — jednotná komponenta pro tabulární data
   (`table::advanced_table` / `table::advanced_table_end`; vlastní
   implementace podle vzoru Flowbite „Advanced Tables" nad volným
@@ -831,9 +835,29 @@ adoptér, který kontroly vypne, se nemůže hlásit k tomuto UI standardu.
 
 ## Metadata
 
-Metadata (title, description, canonical, Open Graph) is declared once in
-front matter and rendered once in `templates/base.html`. Do not hand-write
-`<meta>` tags in other templates.
+Sociální a SEO metadata jsou **data, ne šablonová logika**:
+
+| Vrstva | Soubor | Co vlastní |
+|---|---|---|
+| Konfigurace | `data/seo.toml` | locale, výchozí karta a její rozměry, oddělovač a tagline titulku, meze délky, povinná sada značek, mapování `record_type` → `og:type` + výchozí schema.org typ |
+| Vykreslení | `templates/macros/meta.html` | `meta::open_graph`, `meta::twitter`, `meta::canonical` + čisté funkce pro titulek, popis, obrázek a jeho alt |
+| Vstupy | `templates/base.html` | rozloží front matter stránky/sekce na `meta_*` skaláry a zavolá makra |
+| Strojová vrstva | `templates/partials/jsonld.html` | stránkový uzel `@graph[0]` čte **tytéž** `meta_*` proměnné |
+| Vynucení | `scripts/build/verify-og.mjs` | po `zola build` ověří výsledek proti `data/seo.toml` |
+
+Pravidla:
+
+- `<meta property="og:*">` ani `<meta name="twitter:*">` se **nepíšou
+  ručně** v žádné šabloně — vydává je jedině `macros/meta.html`.
+- Rozhodovací logika („jaký `og:type` má stránka tvrzení") patří do
+  `data/seo.toml`, ne do `if` v šabloně. Nový `record_type` bez záznamu
+  v `[page_types.*]` **shodí build** (a mrtvý záznam bez použití v datech
+  taky) — obousměrně, stejně jako `data/entity-types.toml`.
+- `og:title`/`og:description` a `name`/`description` stránkového uzlu
+  JSON-LD musí být **tatáž hodnota**. Nejsou to dva popisy téže stránky.
+- Sociální a SEO klíče nepatří do `config.toml`; ten drží jen to, co
+  potřebuje sama Zola (`base_url`, `title`, `description`, `lang`,
+  `author`, `keywords`, `index`).
 
 ## Multi-instance co-op protocol
 
