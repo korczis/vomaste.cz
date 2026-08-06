@@ -307,6 +307,9 @@ Projekt je důvěryhodný pouze do té míry, do jaké umožňuje vlastní kontr
 
 Autorita bez možnosti ověření je jen uhlazenější forma požadavku na poslušnost.
 
+Kde na webu jde každou z osmi otázek výše skutečně ověřit:
+[Důvěra nemá vyžadovat značku](@/koncepty/duvera-bez-znacky.md).
+
 ---
 
 ## 16. Otevřenost zahrnuje právo kritizovat i opravovat {#bod-16}
