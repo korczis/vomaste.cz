@@ -93,6 +93,11 @@ const BUILD_STEPS = [
   "verify:navigation-counts",
   "verify:anchors",
   "verify:jsonld",
+  // Sociální a SEO metadata (T-076): úplnost og:*/twitter:*, shoda
+  // og:url s kanonickou URL, existence náhledového obrázku, meze délky
+  // z data/seo.toml a shoda titulku/popisu se stránkovým uzlem JSON-LD.
+  // Musí běžet po zola build — kontroluje vydané HTML, ne šablony.
+  "verify:og",
   "verify:full-pages",
   "verify:export",
 ];

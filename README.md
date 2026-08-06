@@ -78,7 +78,7 @@ kanonická data (data/dossiers/**/*.json — JSON Schema + JSON-LD context)
 → validátory a generátory (autorizace, navigace, route manifest, exporty, search index, graf)
 → Tailwind + esbuild (assets)
 → zola build (statické HTML; šablony čtou view modely přes load_data)
-→ verify:anchors / verify:jsonld / verify:full-pages / verify:export
+→ verify:anchors / verify:jsonld / verify:og / verify:full-pages / verify:export
 → GitHub Actions → GitHub Pages
 ```
 
@@ -155,13 +155,65 @@ záznamem v `data/dossiers/_shared/semantics-baseline.json` (konkrétní
 Baseline je dnes prázdná — celá dnešní evidenční vrstva prochází bez
 výjimky. Plné znění pravidel: [`docs/data-contract.md`](docs/data-contract.md).
 
+## Sociální a SEO metadata
+
+Metadata pro náhledové karty a vyhledávače nejsou šablonová logika, ale
+**konfigurace**. Čtyři vrstvy, každá s jedním vlastníkem:
+
+| Vrstva | Soubor | Co vlastní |
+|---|---|---|
+| Konfigurace | [`data/seo.toml`](data/seo.toml) | locale, výchozí karta a rozměry, oddělovač/tagline titulku, meze délky, povinná sada značek, mapování typu stránky na `og:type` a výchozí schema.org typ |
+| Vykreslení | `templates/macros/meta.html` | `meta::open_graph`, `meta::twitter`, `meta::canonical` + čisté funkce pro titulek, popis, obrázek a alt |
+| Vstupy | `templates/base.html` | rozloží front matter stránky/sekce na `meta_*` skaláry a zavolá makra |
+| Vynucení | `scripts/build/verify-og.mjs` | `npm run verify:og`, součást `npm run build` |
+
+`og:type` a výchozí schema.org typ se **nerozhodují v šabloně**. Klíčem je
+`record_type` z front matter (u dossieru zpřesněný o `dossier_type`) a
+mapování žije v `[page_types.*]`. Nový typ záznamu bez záznamu v datech
+shodí build, stejně jako záznam, který v datech nikdo nepoužívá — tatáž
+obousměrná kontrola jako u `data/entity-types.toml`.
+
+**Stránka nesmí tvrdit dvě věci.** `og:title`/`og:description` a
+`name`/`description` stránkového uzlu JSON-LD (`@graph[0]`) jsou doslova
+tatáž hodnota: `partials/jsonld.html` čte tytéž `meta_*` proměnné, ze
+kterých se vykreslily `<meta>` tagy.
+
+`npm run verify:og` běží po `zola build` nad vydaným HTML a shodí build,
+když kterákoli routovaná stránka:
+
+- nemá úplnou sadu `og:title`, `og:description`, `og:type`, `og:url`,
+  `og:image`, `og:image:alt`, `og:locale`, `og:site_name` a `twitter:card`
+  (seznam je v `[enforce]`, ne v kódu);
+- má `og:url` jiné než svou kanonickou URL (nebo kanonickou URL nemá,
+  aniž by byla v `enforce.without_canonical` — dnes jediná: `/404.html`,
+  která kanonickou URL záměrně nemá);
+- má relativní `og:image` (sociální sítě ho nezobrazí) nebo `og:image`
+  ukazující na soubor, který ve vydaném stromu neexistuje;
+- má prázdný nebo přes limit dlouhý titulek či popis (`[limits]`);
+- má `og:title`/`og:description` odlišné od stránkového uzlu JSON-LD,
+  nebo `twitter:*` odlišné od `og:*`;
+- má `og:type` mimo slovník `[page_types.*]` nebo `og:locale` jinak než
+  ve tvaru `language_TERRITORY`.
+
+Výjimku mají jen přesměrovací stuby aliasů Zoly — táž výjimka, jakou
+používá `verify:jsonld`.
+
+Co brána **nekontroluje**, aby to nikdo nemusel odhadovat: nesahá na
+síť, takže neověřuje, jak kartu vykreslí konkrétní platforma, ani
+rozměry a formát obrázkového souboru (deklarované `og:image:width/height/
+type` se berou z konfigurace, ne z pixelů souboru). Meze délky jsou horní
+strop; Facebook i LinkedIn ořezávají dřív.
+
 ## Strukturovaná data (JSON-LD)
 
 Kanonické záznamy jsou JSON-LD už na vstupu (`@context`, `@id`, `@type`);
 každá stránka navíc vydává při buildu jeden blok `application/ld+json`
 (`@graph`), generovaný centrálně v `templates/base.html` z view modelů
 compiled kanonického datasetu — žádné jméno, slug ani URL nejsou v
-šablonách napevno:
+šablonách napevno. Prezentační pole stránkového uzlu (`name`,
+`description`, `inLanguage`, typ) jsou **tytéž hodnoty**, ze kterých se
+vykreslily `og:*` a `twitter:*` — viz [Sociální a SEO
+metadata](#sociální-a-seo-metadata):
 
 - **WebSite / WebPage / ProfilePage** + **BreadcrumbList** a navigace
   (`SiteNavigationElement`) na každé stránce;
@@ -257,8 +309,10 @@ Rozhodnutí a jeho důsledky: [ADR](docs/adr/dossier-directory-multi-view.md).
 ├── content/                # Zola routing: GENEROVANÉ adaptéry kanonických dat
 │                           # (ručně psané: kořenové indexy, koncepty, dokumentace,
 │                           #  mapa, /data/ a per-dossier evidence//entities/ indexy)
-├── templates/              # Tera šablony (čtou view modely přes load_data)
-├── data/                   # navigační skeleton, government roster, generovaná data
+├── templates/              # Tera šablony (čtou view modely přes load_data);
+│                           # macros/meta.html vydává og:*/twitter:*/canonical
+├── data/                   # navigační skeleton, seo.toml (metadata), government
+│                           # roster, generovaná data
 ├── assets/js/              # zdrojové JS moduly (bundluje esbuild)
 ├── static/                 # statická aktiva + zkompilované CSS/JS + search index
 ├── scripts/data/           # kanonický kompilátor, validátory, generátory adaptérů, scaffold
@@ -410,6 +464,7 @@ Instalace `just`: <https://github.com/casey/just#installation>.
 | `npm run validate:navigation` | navigace odpovídá kanonickému datasetu a existujícím routám |
 | `npm run verify:anchors` | po buildu: každá kotva ze zdrojů existuje v HTML |
 | `npm run verify:jsonld` | po buildu: validita, pokrytí a poctivost JSON-LD (žádné truth ratingy, citační otisky se přepočítávají) |
+| `npm run verify:og` | po buildu: úplnost `og:*`/`twitter:*`, `og:url` == kanonická URL, existující a absolutní `og:image`, meze délky z `data/seo.toml` a shoda titulku/popisu se stránkovým uzlem JSON-LD |
 | `npm run build:jsonld-exports` | vygeneruje `/data/dossiers/<slug>.jsonld`, `/data/graph.jsonld`, manifest s checksumy a citační otisky pro šablony — součást `npm run build` |
 | `npm run verify:export` | po buildu (i offline nad staženou kopií, `--dir <cesta>`): každý export sedí na manifest hash, parsuje, nenese truth ratingy a otisky se přepočítávají |
 | `npm run lint:historical-coupling` | de-specializační brána: žádná jména subjektů ve strukturálním kódu |
