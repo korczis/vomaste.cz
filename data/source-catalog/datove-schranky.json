@@ -36,5 +36,11 @@
       "type": "markdown",
       "value": "Záznam existuje hlavně proto, aby zabránil opakovanému hledání neexistující služby. Adaptér, který sliboval vyhledání schránky podle jména, mířil na API, které nikdy neexistovalo."
     }
+  ],
+  "answers": [
+    {
+      "question": "Má subjekt datovou schránku?",
+      "note": "Zjistíš z výpisu ARES (ROS), ne dotazem na ISDS — zpětné vyhledání neexistuje."
+    }
   ]
 }

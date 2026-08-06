@@ -32,6 +32,35 @@
     <span class="rounded border border-white/15 px-2 py-1 text-white/50">{{ catalog.counts.usedFamiliesOrOutlets }} rodin a outletů</span>
   </p>
 
+  {#- Otázka → pramen. Katalog bez tohohle popisuje zdroje, ale nemapuje na ně
+      otázky — a rešerše začíná otázkou, ne názvem registru. Pořadí uvnitř
+      otázky není abecední: primární registry a listiny stojí před agregátory
+      a médii, takže první v řadě je ten, kterým se má začít. Staví se
+      z `answers` u jednotlivých záznamů, ne ručně. -#}
+  {%- if catalog.routing | length > 0 %}
+  <section aria-labelledby="otazky-heading" class="mb-12">
+    <h2 id="otazky-heading" class="mb-2 text-xs font-semibold uppercase tracking-wide text-white/55">Na co se ptáš</h2>
+    <p class="mb-5 text-sm leading-relaxed text-white/60">
+      Rešerše nezačíná názvem registru, ale otázkou. U každé je první ten pramen, kterým se má začít.
+    </p>
+    <dl class="space-y-4">
+      {%- for r in catalog.routing %}
+      <div class="rounded-xl border border-white/10 bg-white/[0.03] p-4">
+        <dt class="text-sm font-semibold text-white">{{ r.question }}</dt>
+        <dd class="mt-2 space-y-1 text-sm">
+          {%- for x in r.sources %}
+          <div>
+            <a href="{{ config.base_url }}{{ x.route }}" class="text-[#f3e5c0] underline decoration-white/30 underline-offset-2">{{ x.title }}</a>
+            <span class="text-white/60">— {{ x.kind }}{% if x.note %}. {{ x.note }}{% endif %}</span>
+          </div>
+          {%- endfor %}
+        </dd>
+      </div>
+      {%- endfor %}
+    </dl>
+  </section>
+  {%- endif %}
+
   <section aria-labelledby="popsane-heading">
     <h2 id="popsane-heading" class="mb-4 text-xs font-semibold uppercase tracking-wide text-white/55">Popsané zdroje</h2>
     <ul class="space-y-3">

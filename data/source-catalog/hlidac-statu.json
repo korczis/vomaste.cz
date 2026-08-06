@@ -38,5 +38,11 @@
       "type": "markdown",
       "value": "Hlídač státu je v tomto katalogu veden jako **rozcestník, ne jako doklad**. Jeho hodnota je v tom, že rychle ukáže, ve kterých veřejných databázích má subjekt stopu; hodnota důkazní patří vždy až primárnímu registru."
     }
+  ],
+  "answers": [
+    {
+      "question": "Kde vůbec začít hledat stopu subjektu?",
+      "note": "Rozcestník. Nalezené vždy dohledej v primárním registru a cituj ten."
+    }
   ]
 }
