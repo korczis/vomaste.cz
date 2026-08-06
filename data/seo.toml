@@ -196,6 +196,17 @@ seo_type = "WebPage"
 og_type = "website"
 seo_type = "WebPage"
 
+# Stránky katalogu toolingu (jedna na příkaz + přehled). Generuje
+# build-tooling-catalog.mjs; bez záznamu by record_type tiše spadl na
+# "default" a stránky příkazů by v náhledu vypadaly jako běžná stránka.
+[page_types.toolingCommand]
+og_type = "article"
+seo_type = "TechArticle"
+
+[page_types.toolingCommandIndex]
+og_type = "website"
+seo_type = "CollectionPage"
+
 # ---------------------------------------------------------------------------
 # Náhledová karta dossieru
 # ---------------------------------------------------------------------------
