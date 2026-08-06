@@ -10,12 +10,24 @@
     "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
   },
   "title": "Výzvy k rezignaci a podnět resortu spravedlnosti",
-  "summary": "Výzvy k rezignaci a podnět resortu spravedlnosti — viz tvrzení CLM-16, CLM-17, CLM-18, CLM-19.",
+  "summary": "Výzvy k rezignaci a podnět resortu spravedlnosti — výzvy opozičních politiků napříč stranami k Mrázové rezignaci, premiér Babiš ji veřejně podpořil a odvolání vyloučil, podnět resortu spravedlnosti přestupkovému úřadu k prověření nesrovnalostí v majetkovém přiznání a Mrázové vlastní označení nesrovnalostí za administrativní pochybení.",
   "period": "2026",
   "status": "status-single",
   "statusLabel": "Sledované téma",
   "anchor": "kauza-rezignace-podnet",
   "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-16"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-17"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-18"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-19"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-24"
     },
@@ -40,7 +52,16 @@
   ],
   "sources": [
     {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-06"
+    },
+    {
       "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-12"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-19"
