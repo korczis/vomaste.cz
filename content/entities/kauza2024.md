@@ -4,6 +4,7 @@ title = "Kauza 2024: fotografie a svícny"
 template = "entity.html"
 weight = 9
 aliases = ["/dossiers/macinka-turek/entities/kauza2024/"]
+description = "Kontextový záznam na vomaste.cz: Kauza 2024: fotografie a svícny. Vystupuje v dossieru Petr Macinka a Filip Turek a dalších. Uveden, protože ho jmenuje citovaný obsah, ne jako tvrzení o pochybení."
 
 [extra]
 generated = true

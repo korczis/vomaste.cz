@@ -53,5 +53,11 @@
       "SRC-02"
     ],
     "depth": 0
-  }
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Hlavní subjekt autorizovaného dossieru. Viz plné znění a kontext v [hlavním přehledu](@/dossiers/petr-pavel/_index.md#kdo)."
+    }
+  ]
 }
