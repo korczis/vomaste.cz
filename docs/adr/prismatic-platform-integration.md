@@ -5,14 +5,23 @@
 in `AGENTS.md`). Supersedes the "do not use Prismatic directly" portion of
 [`aiad-and-agent-tooling-import.md`](aiad-and-agent-tooling-import.md);
 retains that ADR's rejection of a wholesale `.aiad/` and `.claude/` copy.
-**Implementation status: scaffolded, not functional.** This ADR records
-the accepted architecture and the skill/script skeleton that exists on
-disk (`.claude/skills/prismatic-*`, `scripts/prismatic/*`); the CLI
-pipeline itself — export contract, identity resolution, promotion,
-drift audit — is not yet implemented. Every `prismatic:*` npm script
-currently exits non-zero with a pointer back to this document instead of
-doing real work. Treat "implemented" claims anywhere else in the repo
-about this integration as a bug to report, not a feature to rely on.
+**Implementation status (2026-08-06): partial.** Real, tested: config
+resolution (`scripts/prismatic/lib/config.mjs` — `PRISMATIC_PLATFORM_PATH`
+→ `.prismatic-local.toml` → versioned default, Git-commit validation),
+the export contract (`scripts/prismatic/lib/contract.mjs` +
+[`schemas/prismatic/export-contract.schema.json`](../../schemas/prismatic/export-contract.schema.json)
+— NDJSON parsing, per-record schema validation, hard rejection of an
+unknown major version), `prismatic:status` and `prismatic:probe`
+(file-existence drift check against the Fáze 0 audit's verified paths,
+no network calls), and `prismatic:plan` (deterministic job plan against
+vomaste's own compiled model, scoped today to exactly one audited "reuse
+directly" capability: ARES lookups for company/organization entities
+missing `externalIds.ico`). Still stubs: `prismatic:run`, `import`,
+`diff`, `review-report`, `promote`, `verify`, `drift`, `enrich-all` — no
+actual invocation of Prismatic exists yet, because Prismatic itself has
+no matching exporter to call (see the capability map's "not yet
+implemented" rows). None of this is wired into `build`/`dev`/`check`;
+the public build still has zero dependency on any of it.
 
 ## Context
 

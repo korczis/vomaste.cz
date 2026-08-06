@@ -31,22 +31,24 @@ entry; it does not replace reading and applying the rule.
   and not an imported agent framework. For the commit itself, `commit`
   (`.claude/skills/commit/`) — message format, which gate actually
   applies, and the right coop-bus report.
-- **Prismatic Platform integration (2026-08-05, scaffolded, not
-  functional)**: `~/dev/prismatic-platform` is authorized as a local
-  upstream research/enrichment capability provider
-  (`AUTH-2026-08-05-PLATFORM-SCOPE` in `AGENTS.md`, "Standing scope
-  authorization and publication gates"; architecture in
-  `docs/adr/prismatic-platform-integration.md`). Four skills exist —
-  `prismatic-bootstrap`, `prismatic-enrich-all`, `prismatic-promote`,
-  `prismatic-drift-audit` (`.claude/skills/prismatic-*/`) — and eleven
-  `prismatic:*` npm scripts (`scripts/prismatic/*.mjs`), but every one of
-  them is currently a stub that prints "not implemented" and exits
-  non-zero: there is no export contract, no identity resolution, no
-  staging/review/promotion logic yet. Read each skill's own `SKILL.md`
-  before invoking it — do not report Prismatic-sourced research as done
-  unless you actually built and ran the missing pipeline first. Full
-  build plan (explicitly unstarted beyond the governance/ADR/scaffolding
-  landed so far):
+- **Prismatic Platform integration (2026-08-06, partial)**:
+  `~/dev/prismatic-platform` is authorized as a local upstream
+  research/enrichment capability provider (`AUTH-2026-08-05-PLATFORM-SCOPE`
+  in `AGENTS.md`, "Standing scope authorization and publication gates";
+  architecture in `docs/adr/prismatic-platform-integration.md`). Real and
+  tested: `scripts/prismatic/lib/config.mjs` (path resolution + Git
+  validation), `scripts/prismatic/lib/contract.mjs` +
+  `schemas/prismatic/export-contract.schema.json` (NDJSON parse/validate,
+  unknown-major-version rejection), and `prismatic:status`/`prismatic:probe`/
+  `prismatic:plan` (the last narrowly scoped to one audited "reuse
+  directly" capability — ARES lookups for entities missing
+  `externalIds.ico`; do not add a new job type there without checking
+  `docs/audits/2026-08-05-prismatic-capability-map.md` first). Still
+  stubs: `run`/`import`/`diff`/`review-report`/`promote`/`verify`/`drift`/
+  `enrich-all` — Prismatic has no matching exporter to call yet. Read each
+  skill's own `SKILL.md` before invoking it — do not report
+  Prismatic-sourced research as done unless you actually built and ran the
+  missing pipeline first. Full build plan and per-sub-phase status:
   `docs/missions/2026-08-05-prismatic-platform-integration-master-prompt.md`
   + its companion checklist in the same directory. The public Zola build
   has no dependency on any of this and must keep working with the
