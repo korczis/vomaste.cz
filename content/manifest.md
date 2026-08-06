@@ -283,6 +283,9 @@ Nejde o válečný slogan ani romantickou představu technologické nesmrtelnost
 
 Jde o odstranění zbytečných bodů selhání.
 
+Jak se tyhle čtyři nezávislé body selhání skládají do jednoho invariantu:
+[Nezastavitelnost je vlastnost architektury](@/koncepty/nezastavitelnost.md).
+
 ---
 
 ## 15. Důvěru nemá vyžadovat značka {#bod-15}
