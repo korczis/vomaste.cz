@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/dossier-next-id",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "dossier-next-id",
+  "kind": "npm",
+  "name": "dossier:next-id",
+  "title": "Další volné ID záznamu, ověřené i proti originu",
+  "category": "provoz",
+  "summary": "Vrátí další volné CLM/SRC/CASE/GAP číslo pro registr jednoho dossieru a hlásí, když se lokální working tree a origin/master neshodnou — ID kolize při souběžné práci tím přestává být otázkou toho, jestli si někdo vzpomněl fetchnout.",
+  "enforces": [
+    "Rozdíl mezi nejvyšším ID v lokálním working tree a na origin/master se ohlásí, ne přejde."
+  ],
+  "whenToRun": "Před založením nového kanonického záznamu, zvlášť když na dossieru pracuje víc instancí naráz.",
+  "inputs": [
+    "data/dossiers/<slug>/{claims,sources,cases,gaps}/*.json",
+    "origin/master (git fetch, pokud není --no-fetch)"
+  ],
+  "sourceFile": "scripts/dossier/next-id.mjs",
+  "describedFrom": "header"
+}

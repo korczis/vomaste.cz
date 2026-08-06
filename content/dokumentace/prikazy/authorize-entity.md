@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run authorize:entity — Autorizace subjektu"
 template = "tooling-command.html"
-weight = 81
+weight = 82
 description = "Autorizace subjektu: Jediná cesta, jak se dossierový status kontextové entity změní na „authorized“. npm skript, provoz."
 
 [extra]
