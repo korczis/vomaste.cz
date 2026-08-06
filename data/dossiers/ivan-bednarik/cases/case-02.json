@@ -10,12 +10,30 @@
     "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
   },
   "title": "Resortní pozice k výdajům na železnici",
-  "summary": "Resortní pozice k výdajům na železnici — viz tvrzení CLM-05, CLM-06, CLM-07, CLM-08, CLM-09, CLM-10.",
+  "summary": "Resortní pozice k výdajům na železnici — Bednárikova publikovaná stanoviska jako ministra dopravy k rozpočtu na železniční infrastrukturu a související výdaje resortu.",
   "period": "2026",
   "status": "status-single",
   "statusLabel": "Sledované téma",
   "anchor": "kauza-zeleznicni-vydaje",
   "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-10"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-11"
     },
@@ -102,26 +120,29 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-39"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-48"
     }
   ],
   "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-06"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-07"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-08"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-22"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-23"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-16"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-14"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-09"
@@ -130,16 +151,16 @@
       "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-10"
     },
     {
-      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-15"
-    },
-    {
       "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-11"
     },
     {
-      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-25"
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-14"
     },
     {
-      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-24"
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-15"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-16"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-17"
@@ -148,13 +169,25 @@
       "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-18"
     },
     {
-      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-06"
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-22"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-23"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-24"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-25"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-27"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-28"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-34"
     }
   ],
   "subjects": [
