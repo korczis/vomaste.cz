@@ -861,3 +861,4 @@
 {"logged_at":"2026-08-05","record_id":"edge-james-quick-radek-john","record_type":"relation","discovered_from":{"source_entity":"james-quick","target_entity":"radek-john","claims":["CLM-15"],"sources":["SRC-16"],"dossier":"james-quick"},"action":"created"}
 {"logged_at":"2026-08-06","record_id":"jan-skopecek","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["jan-skopecek"]},"action":"created"}
 {"logged_at":"2026-08-06","record_id":"marek-benda","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["marek-benda"]},"action":"created"}
+{"logged_at":"2026-08-06","record_id":"pavel-drobil","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["pavel-drobil"]},"action":"created"}

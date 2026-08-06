@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-02 — ČT24: Místopředsedy ODS se stali Haas, Drobil, Červíček a Vondra"
-description = "Zpravodajský článek o volbě čtyř řadových místopředsedů ODS na 32. kongresu strany v lednu 2026."
+description = "Zpravodajský článek o volbě čtyř řadových místopředsedů ODS na 32. kongresu strany v lednu 2026. Zdroj: ČT24 (Česká televize), dossier Karel Haas."
 template = "dossier-source.html"
 weight = 2
 

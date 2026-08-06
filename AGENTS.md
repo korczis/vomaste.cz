@@ -1802,3 +1802,21 @@ a straně/klubu ODS, funkci místopředsedy ODS a roli stínového ministra
 sportu, prevence a zdraví — doloženo přímo otevřenými zdroji
 (Poslanecká sněmovna PČR, ČT24, ODS). Nejde o investigativní rešerši
 žádné kauzy ani sporu.
+
+### Scope extension, 2026-08-06: Pavel Drobil
+
+Authorized by the site owner, explicitly and on the record, 2026-08-06:
+
+Autorizuji vznik minimálního entity dossieru pro Pavla Drobila v rámci
+standing scope (AUTH-2026-08-05-PLATFORM-SCOPE) — je veřejným
+funkcionářem: místopředseda ODS (zvolen na 32. kongresu ODS 18. 1. 2026)
+a stínový ministr průmyslu a obchodu ve stínové vládě ODS vedené
+Martinem Kupkou, dříve poslanec PSP ČR (2010–2013) a ministr životního
+prostředí (2010, vláda Petra Nečase).
+
+Rozsah je záměrně minimální: dokládá pouze jeho aktuální stranickou
+funkci (místopředseda ODS) a roli ve stínové vládě (stínový ministr
+průmyslu a obchodu), doloženo nezávislými zdroji (ČT24, Echo24) a
+vlastním profilem ODS. Nejde o investigativní rešerši žádné kauzy ani
+o rozšíření na jiná témata jeho veřejného působení — to by vyžadovalo
+samostatnou budoucí autorizaci.

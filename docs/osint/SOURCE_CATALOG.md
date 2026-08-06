@@ -197,7 +197,7 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 723 záznamů v 124 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 726 záznamů v 124 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
@@ -207,8 +207,8 @@ Dopočítáno z `data/dossiers/**/sources/**`, 723 záznamů v 124 rodinách/out
 | Vláda České republiky (vlada.gov.cz) | 28 | 17 | [ano](/zdroje/vlada-cz/) |
 | FORUM 24 | 20 | 10 | [ano](/zdroje/forum24/) |
 | denik-n | 17 | 9 | [ano](/zdroje/denik-n/) |
-| ČT24 (Česká televize) | 16 | 8 | [ano](/zdroje/ceska-televize/) |
-| Echo24 | 14 | 10 | [ano](/zdroje/echo24/) |
+| ČT24 (Česká televize) | 17 | 9 | [ano](/zdroje/ceska-televize/) |
+| Echo24 | 15 | 11 | [ano](/zdroje/echo24/) |
 | Aktuálně.cz | 12 | 7 | [ano](/zdroje/aktualne-cz/) |
 | Novinky.cz | 12 | 11 | [ano](/zdroje/novinky-cz/) |
 | denik-cz | 11 | 6 | [ano](/zdroje/denik-cz/) |
@@ -234,6 +234,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 723 záznamů v 124 rodinách/out
 | Ministerstvo zemědělství ČR | 3 | 1 | — |
 | Národní rozpočtová rada | 3 | 1 | — |
 | Nejvyšší kontrolní úřad (nku.cz) | 3 | 2 | — |
+| ODS (Občanská demokratická strana) | 3 | 3 | — |
 | Tiscali.cz | 3 | 3 | — |
 | Transparency International ČR | 3 | 2 | — |
 | Úřad pro ochranu osobních údajů | 3 | 1 | — |
@@ -250,7 +251,6 @@ Dopočítáno z `data/dossiers/**/sources/**`, 723 záznamů v 124 rodinách/out
 | Ministerstvo životního prostředí ČR | 2 | 1 | — |
 | NašeTéma.cz | 2 | 2 | — |
 | Nejvyšší správní soud | 2 | 2 | — |
-| ODS (Občanská demokratická strana) | 2 | 2 | — |
 | Olomoucký deník | 2 | 1 | — |
 | Pražský deník | 2 | 1 | — |
 | Registr lobbování (RELOB) | 2 | 1 | — |
