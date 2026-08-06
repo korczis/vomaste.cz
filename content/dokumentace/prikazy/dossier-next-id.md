@@ -2,8 +2,8 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run dossier:next-id — Další volné ID záznamu, ověřené i proti originu"
 template = "tooling-command.html"
-weight = 68
-description = "Další volné ID záznamu, ověřené i proti originu: Spočítá další volné ID pro claim/source/case/gap jednoho dossieru a kontroluje přitom nejen lokální strom, ale i origin/master — a hlásí, když se liší.. npm skript, rešerše."
+weight = 88
+description = "Další volné ID záznamu, ověřené i proti originu: Vrátí další volné CLM/SRC/CASE/GAP číslo pro registr jednoho dossieru a hlásí, když se lokální working tree a origin/master neshodnou — ID kolize při souběžné práci tím přestává být otázkou toho, jestli si někdo vzpomněl fetchnout.. npm skript, provoz."
 
 [extra]
 generated = true
@@ -15,18 +15,13 @@ tooling_command = "dossier-next-id"
 view_model = "generated/tooling-catalog.json"
 +++
 
-Spočítá další volné ID pro claim/source/case/gap jednoho dossieru a kontroluje přitom nejen lokální strom, ale i origin/master — a hlásí, když se liší.
+Vrátí další volné CLM/SRC/CASE/GAP číslo pro registr jednoho dossieru a hlásí, když se lokální working tree a origin/master neshodnou — ID kolize při souběžné práci tím přestává být otázkou toho, jestli si někdo vzpomněl fetchnout.
 
 ## Kdy ho spustit {#kdy}
 
-Před založením každého nového kanonického záznamu v dossieru, na kterém může pracovat i někdo jiný.
+Před založením nového kanonického záznamu, zvlášť když na dossieru pracuje víc instancí naráz.
 
-## Co vynucuje {#vynucuje}
+## Co shodí běh {#vynucuje}
 
-Nic — tenhle příkaz reportuje nebo generuje, ale sám o sobě nic neshazuje. Co selže při chybě, hlídají brány, které za ním v pipeline běží.
-
-## Co je potřeba vědět {#pozor}
-
-- Vzniklo z reálné kolize: dvě souběžné instance spočítaly totéž „další volné" ID ze svých lokálních kopií a výsledkem bylo ruční přečíslování sedmi záznamů.
-- `--no-fetch` přeskočí `git fetch` pro offline běh; tím ale mizí právě ta kontrola, kvůli které skript existuje.
+- Rozdíl mezi nejvyšším ID v lokálním working tree a na origin/master se ohlásí, ne přejde.
 

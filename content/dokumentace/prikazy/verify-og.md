@@ -1,9 +1,9 @@
 +++
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
-title = "npm run verify:og — Post-build brána sociálních a SEO metadat"
+title = "npm run verify:og — Sociální a SEO metadata ve vydaném HTML"
 template = "tooling-command.html"
 weight = 65
-description = "Post-build brána sociálních a SEO metadat: Nad vydaným public/ ověřuje og:* a twitter:* na každé stránce a jejich shodu s JSON-LD uzlem stránky.. npm skript, kontrola výstupů."
+description = "Sociální a SEO metadata ve vydaném HTML: Post-build brána nad každou vydanou stránkou: og:* a twitter:* jsou úplné, míří na existující absolutní obrázek, vejdou se do mezí z data/seo.toml a nesou doslova tytéž hodnoty jako stránkový uzel JSON-LD.. npm skript, kontrola výstupů."
 
 [extra]
 generated = true
@@ -15,18 +15,18 @@ tooling_command = "verify-og"
 view_model = "generated/tooling-catalog.json"
 +++
 
-Nad vydaným public/ ověřuje og:* a twitter:* na každé stránce a jejich shodu s JSON-LD uzlem stránky.
+Post-build brána nad každou vydanou stránkou: og:* a twitter:* jsou úplné, míří na existující absolutní obrázek, vejdou se do mezí z data/seo.toml a nesou doslova tytéž hodnoty jako stránkový uzel JSON-LD.
 
 ## Kdy ho spustit {#kdy}
 
-Automaticky po `zola build` jako součást `npm run build`; samostatně při ladění náhledů odkazů.
+Až po zola build, nad public/ — stejně jako verify:jsonld.
 
-## Co vynucuje {#vynucuje}
+## Co shodí běh {#vynucuje}
 
-Nic — tenhle příkaz reportuje nebo generuje, ale sám o sobě nic neshazuje. Co selže při chybě, hlídají brány, které za ním v pipeline běží.
-
-## Co je potřeba vědět {#pozor}
-
-- Zavedeno po zjištění, že 334 stránek vztahů mělo og:type=website místo article a že titulek v og a v JSON-LD tvrdil na 2 246 stránkách dvě různé věci.
-- Přesměrovací stuby aliasů Zoly jsou vyjmuty, stejně jako ve verify-jsonld.
+- Chybějící nebo prázdná značka z enforce.required_og / enforce.required_twitter v data/seo.toml.
+- og:url, které se neshoduje s <link rel="canonical"> — nebo kanonická URL na stránce, která ji podle enforce.without_canonical mít nemá.
+- Relativní og:image, obrázek chybějící ve vydaném stromu, a twitter:image nebo og:image:secure_url mířící jinam než og:image.
+- Titulek nebo popis mimo meze limits.* — včetně prázdného.
+- Rozchod og:title / og:description s name / description stránkového uzlu JSON-LD (do T-076 se lišily na 2 246, resp. 463 stránkách).
+- og:type mimo slovník seo.page_types, a nesoulad mezi record_type v content/** a klíči seo.page_types v OBOU směrech.
 

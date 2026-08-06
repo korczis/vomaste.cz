@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run data:build — Datový řetěz bez webu"
 template = "tooling-command.html"
-weight = 87
+weight = 86
 description = "Datový řetěz bez webu: Řetěz npm skriptů: validace, kompilace, view modely, content adaptéry, sync, parita content a evidenční plán. npm skript, provoz."
 
 [extra]
