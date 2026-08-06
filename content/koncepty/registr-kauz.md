@@ -30,7 +30,8 @@ Odložení, promlčení, nepravomocné rozhodnutí, zastavení řízení: to vš
 jsou procesní důsledky, ne zjištění, že se něco stalo nebo nestalo. Tenhle web
 je odlišuje **pokaždé**, když je zmíní — ne jednou v poznámce pod čarou.
 Promlčení znamená, že trestní stíhání už není právně možné; neznamená, že
-obvinění bylo pravdivé, ani že bylo vyvrácené.
+obvinění bylo pravdivé, ani že bylo vyvrácené. Rozvedeno na vlastní stránce:
+[Procesní výsledek není věcný závěr](@/koncepty/procesni-vysledek.md).
 
 ## Co vynucuje tooling
 

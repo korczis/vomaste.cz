@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vomaste.cz/schemas/prismatic/export-contract.schema.json",
+  "title": "Prismatic Platform export contract — one JSON Schema per NDJSON line",
+  "$comment": "docs/adr/prismatic-platform-integration.md, Fáze 2.2 of docs/missions/2026-08-05-prismatic-platform-integration-master-prompt.md. This schema validates ONE record (one line of the provider's NDJSON output), not the whole file — scripts/prismatic/lib/contract.mjs applies it per line. Major-version compatibility is enforced in code (unknown MAJOR is a hard rejection before this schema even runs), not expressible as a JSON Schema constraint. No field here is ever a truth/confidence score presented as a published fact — 'confidence' is explicitly internal-only, mirroring AGENTS.md's own no-truth-rating rule for vomaste's public JSON-LD.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["contract_version", "record_type", "record_id", "run_id", "generated_at"],
+  "properties": {
+    "contract_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+$",
+      "$comment": "MAJOR.MINOR. A consumer must reject an unknown MAJOR outright (contract.mjs), not via this pattern alone."
+    },
+    "record_type": {
+      "type": "string",
+      "enum": [
+        "run_manifest",
+        "entity_candidate",
+        "identity_assertion",
+        "source_candidate",
+        "claim_candidate",
+        "relation_candidate",
+        "case_candidate",
+        "event_candidate",
+        "gap_candidate",
+        "warning",
+        "error"
+      ]
+    },
+    "record_id": {
+      "type": "string",
+      "minLength": 1,
+      "$comment": "Stable within a run_id — used for idempotent import/dedup."
+    },
+    "run_id": { "type": "string", "minLength": 1 },
+    "generated_at": { "$ref": "#/$defs/isoDateOrDateTime" },
+    "prismatic_commit": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$",
+      "$comment": "Required in practice for any record_type except run_manifest's own bootstrap line, enforced in contract.mjs (JSON Schema alone can't express 'required unless record_type is X' cleanly here without duplicating the whole oneOf)."
+    },
+    "subject_ref": {
+      "type": "string",
+      "minLength": 1,
+      "$comment": "Local vomaste entity/dossier identifier this record is about, when applicable."
+    },
+    "capability": {
+      "type": "string",
+      "minLength": 1,
+      "$comment": "Which Prismatic capability produced this record, e.g. 'ares-lookup' — must correspond to a row in docs/audits/2026-08-05-prismatic-capability-map.md marked 'reuse directly', never an unaudited or rejected one."
+    },
+    "query": { "type": "string" },
+    "source_url": { "type": "string", "pattern": "^https?://" },
+    "source_title": { "type": "string" },
+    "source_outlet": { "type": "string" },
+    "source_published": { "$ref": "#/$defs/isoDateOrDateTime" },
+    "source_retrieved": { "$ref": "#/$defs/isoDateOrDateTime" },
+    "content_hash": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "provenance_chain": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "extract_span": { "type": "string" },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "$comment": "Internal metadata ONLY. AGENTS.md 'Prismatic Platform as an upstream capability provider': this may generate a candidate or point to evidence, but is never itself published as a factual finding or a truth score."
+    },
+    "warnings": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "identity_collisions": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "payload": {
+      "type": "object",
+      "$comment": "record_type-specific structured data (proposed entity fields, proposed claim text, etc.). Deliberately loose here — validated more specifically once a concrete first capability (ARES lookup) is wired in Fáze 2.4+, to avoid speculatively shaping fields for capabilities that were rejected/unverified in the Fáze 0 audit."
+    },
+    "message": {
+      "type": "string",
+      "$comment": "Required for warning/error record types."
+    }
+  },
+  "$defs": {
+    "isoDateOrDateTime": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}(T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?Z?)?$"
+    }
+  }
+}

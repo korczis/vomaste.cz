@@ -34,7 +34,7 @@ Popření se necituje zjemněně ani zesíleně a obvinění se nebagatelizuje.
 
 Sporné tvrzení se nepovyšuje samo tím, že zestárne. Mění se jen novým, jmenovaným
 zdrojem — a i pak se rozliší, jestli přišlo **meritorní** zjištění, nebo jen
-[procesní výsledek](@/koncepty/registr-kauz.md) typu odložení či promlčení.
+[procesní výsledek](@/koncepty/procesni-vysledek.md) typu odložení či promlčení.
 Otevřené otázky, které z toho zbydou, patří do
 [registru mezer](@/koncepty/registr-mezer.md).
 
