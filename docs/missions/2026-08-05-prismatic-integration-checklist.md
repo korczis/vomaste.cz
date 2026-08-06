@@ -2,9 +2,9 @@
 
 Companion to
 [the master prompt](2026-08-05-prismatic-platform-integration-master-prompt.md).
-Checked items are actually done and verified on disk as of 2026-08-05;
-everything else is open follow-up work, not a claim about a finished
-system.
+Checked items are actually done and verified on disk (last updated
+2026-08-06); everything else is open follow-up work, not a claim about a
+finished system.
 
 ## Governance
 
@@ -18,30 +18,33 @@ system.
 
 ## Audit
 
-- [ ] Zaznamenán branch/HEAD/status obou rep.
-- [ ] Měřená capability mapa Prismatic.
-- [ ] Měřená baseline Vomaste datasetu.
-- [ ] Ověřeny skutečné provider entry pointy a side effects.
-- [ ] Ověřeno, že žádný dokumentovaný příkaz není jen starý návrh.
+- [x] Zaznamenán branch/HEAD/status obou rep (v audit dokumentu).
+- [x] Měřená capability mapa Prismatic — [`docs/audits/2026-08-05-prismatic-capability-map.md`](../audits/2026-08-05-prismatic-capability-map.md), ~30 řádků, každý s ověřeným entry pointem nebo explicitním "not verified".
+- [x] Měřená baseline Vomaste datasetu — v témže dokumentu (26 dossierů, 955 claims, 658 sources, 93 cases, 202 gaps, 334 relations, 527 entit).
+- [x] Ověřeny skutečné provider entry pointy a side effects (per-row v audit dokumentu; síťové volání samotné NEbylo provedeno).
+- [x] Ověřeno, že žádný dokumentovaný příkaz není jen starý návrh — audit našel přesně tento vzor u tří `mix prismatic.osint.*` příkazů (synthetic demo CLI) a zdokumentoval ho jako "traps" sekci.
 
 ## Contract
 
-- [ ] Verze contractu.
-- [ ] JSON Schema.
-- [ ] Fixtures.
-- [ ] Unknown major rejection.
-- [ ] Provider stdout je čistý machine stream.
-- [ ] Logy jdou na stderr.
-- [ ] Underlying source locator a provenance jsou povinné podle record type.
-- [ ] Raw payload policy a redakce.
+- [x] Verze contractu — `contract_version` pole, MAJOR.MINOR, `config/prismatic-integration.toml` drží podporovanou verzi.
+- [x] JSON Schema — [`schemas/prismatic/export-contract.schema.json`](../../schemas/prismatic/export-contract.schema.json), Ajv 2020 strict.
+- [x] Fixtures — `scripts/prismatic/fixtures/{valid-run,malformed,unknown-major-version}.jsonl`.
+- [x] Unknown major rejection — `checkMajorVersion()` v `scripts/prismatic/lib/contract.mjs`, testováno.
+- [ ] Provider stdout je čistý machine stream (žádný provider ještě nic nevolá).
+- [ ] Logy jdou na stderr (totéž — čeká na `prismatic:run`).
+- [ ] Underlying source locator a provenance jsou povinné podle record type (schema má pole připravená — `source_url`, `provenance_chain` — ale ne per-record-type `required`, viz schema's `$comment`).
+- [ ] Raw payload policy a redakce (čeká na `prismatic:run`).
 
 ## Pipeline
 
-- [ ] Config/path resolution.
-- [ ] `status` (stub existuje, nefunkční).
-- [ ] `probe` (stub existuje, nefunkční).
-- [ ] `plan` (stub existuje, nefunkční).
-- [ ] `run` (stub existuje, nefunkční).
+- [x] Config/path resolution — `scripts/prismatic/lib/config.mjs`, testováno (env → local config → sibling default, Git validace).
+- [x] `status` — reálná implementace, resolvuje cestu, commit SHA, contract verzi, počet předchozích běhů.
+- [x] `probe` — reálná implementace, file-existence drift check proti auditovaným cestám, žádné síťové volání.
+- [x] `plan` — reálná implementace, ale záměrně úzce scoped: jen `entity-ares-lookup` (company/organization entity bez `externalIds.ico`) + informativní `gap-stale-high-priority`. Ostatní capability z auditu (property, sanctions, EU institutions) záměrně NEnaplánované — audit je označil jako fabricated/broken/unverified.
+- [ ] `run` (stub existuje, nefunkční — čeká na skutečný exportér na straně Prismatic).
+- [ ] `import` (stub existuje, nefunkční).
+- [ ] `diff` (stub existuje, nefunkční).
+- [ ] `review-report` (stub existuje, nefunkční).
 - [ ] `import` (stub existuje, nefunkční).
 - [ ] `diff` (stub existuje, nefunkční).
 - [ ] `review-report` (stub existuje, nefunkční).
@@ -78,9 +81,22 @@ system.
 - [ ] Idempotent promotion.
 - [ ] Dry-run no-write.
 - [ ] Rollback on failure.
-- [x] Build without sibling Prismatic repo (trivially true today — nothing calls it yet).
+- [x] Config errors (config.test.mjs: bad path, non-git dir, missing platform).
+- [x] Contract fixtures (contract.test.mjs, all 3 fixture files exercised).
+- [x] Malformed JSONL (contract.test.mjs, malformed.jsonl fixture).
+- [ ] Interrupted/resumed run.
+- [ ] Duplicate import.
+- [ ] Identity collision.
+- [ ] Same publisher false corroboration.
+- [ ] Missing underlying source.
+- [ ] Privacy rejection.
+- [ ] Procedural framing.
+- [ ] Idempotent promotion.
+- [ ] Dry-run no-write (plan.mjs is dry-run-only by construction today, but no `--dry-run` flag exists yet since there's nothing to write).
+- [ ] Rollback on failure.
+- [x] Build without sibling Prismatic repo (verified: status/probe/plan all handle "not available" as a normal state, exit 0).
 - [ ] Optional local integration smoke.
-- [ ] Full `npm run build` green with the new files present.
+- [x] Full `npm run build` green with the new files present.
 
 ## Documentation and DX
 

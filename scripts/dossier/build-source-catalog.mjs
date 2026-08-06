@@ -40,6 +40,7 @@
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { createValidators } from "../data/validate-shape.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const CATALOG_DIR = join(ROOT, "data/source-catalog");
@@ -71,8 +72,26 @@ const listJson = (dir) =>
 
 /* ---- 1) ručně psané záznamy ------------------------------------------ */
 
+// Tvar se ověřuje proti kanonickému schématu, ne jen čte. Bez toho by záznam
+// mohl deklarovat `$schema` a přitom nesplňovat nic — pole s překlepem v názvu
+// by tiše zmizelo z výstupu a stránka by mlčky tvrdila míň, než záznam říká.
+// Používá se sdílená AJV instance validátoru, aby existovalo jedno nastavení,
+// ne druhé ad hoc vedle.
+const CATALOG_SCHEMA_ID = "https://vomaste.cz/schemas/canonical/source-catalog-entry.schema.json";
+const validateEntry = createValidators().ajv.getSchema(CATALOG_SCHEMA_ID);
+if (!validateEntry) throw new Error(`schemas/canonical: chybí ${CATALOG_SCHEMA_ID}`);
+
 const entries = listJson(CATALOG_DIR)
-  .map((f) => readJson(join(CATALOG_DIR, f)))
+  .map((f) => {
+    const record = readJson(join(CATALOG_DIR, f));
+    if (!validateEntry(record)) {
+      const detail = validateEntry.errors
+        .map((e) => `    ${e.instancePath || "/"} ${e.message}`)
+        .join("\n");
+      throw new Error(`data/source-catalog/${f} neodpovídá schématu:\n${detail}`);
+    }
+    return record;
+  })
   .sort((a, b) => (a.order ?? 999) - (b.order ?? 999) || a.identifier.localeCompare(b.identifier));
 
 if (entries.length === 0) throw new Error("data/source-catalog/ je prázdný — katalog by byl lež.");

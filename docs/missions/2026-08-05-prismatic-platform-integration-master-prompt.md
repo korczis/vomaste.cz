@@ -145,9 +145,14 @@ Vytvoř `docs/adr/prismatic-platform-integration.md` podle přiloženého návrh
 
 ## Fáze 2: integrační architektura
 
-**Stav 2026-08-05: neimplementováno.** Skeleton `scripts/prismatic/*`
-a `.claude/skills/prismatic-*` existuje jako honest "not yet
-implemented" stub; nic z 2.1–2.8 níže reálně nefunguje.
+**Stav 2026-08-06: částečně implementováno.** 2.1 (config), 2.2
+(export contract + schema + fixtures) a 2.4/2.5 v úzkém rozsahu
+(`status`, `probe`, `plan` — poslední jen pro jednu auditem
+"reuse directly" ověřenou capability, ARES) jsou reálné a testované.
+2.3 (data zóny) existují jako adresáře s README. 2.6–2.8 (identity
+resolution, source families, promotion) zůstávají neimplementované —
+čekají na skutečný exportér na straně Prismatic, který zatím
+neexistuje (viz capability mapa).
 
 Implementuj následující hranice. Názvy uprav jen tehdy, když současná struktura repa jasně vyžaduje jiný konvenční název.
 
