@@ -197,7 +197,7 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 704 záznamů v 122 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 705 záznamů v 123 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
@@ -272,6 +272,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 704 záznamů v 122 rodinách/out
 | Deník N | 1 | 1 | [ano](/zdroje/denik-n/) |
 | Deník Referendum | 1 | 1 | — |
 | Deník VEKTOR | 1 | 1 | — |
+| Deník.cz (VLTAVA LABE MEDIA) | 1 | 1 | [ano](/zdroje/denik-cz/) |
 | Dopravní noviny | 1 | 1 | — |
 | e-Sbírka (Ministerstvo vnitra ČR) | 1 | 1 | — |
 | EDUin | 1 | 1 | — |
