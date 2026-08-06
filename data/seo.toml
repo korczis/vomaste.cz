@@ -196,9 +196,15 @@ seo_type = "WebPage"
 og_type = "website"
 seo_type = "WebPage"
 
-# Stránky katalogu toolingu (jedna na příkaz + přehled). Generuje
-# build-tooling-catalog.mjs; bez záznamu by record_type tiše spadl na
-# "default" a stránky příkazů by v náhledu vypadaly jako běžná stránka.
+# Katalog toolingu (T-085). Stránka příkazu je referenční dokumentace,
+# ne zpravodajský článek — `TechArticle` je pro ni v schema.org přesnější
+# typ než holá `WebPage` a nic dalšího si nevynucuje.
+#
+# Že tyhle dva typy chyběly, nenašel člověk: T-085 přidal stránky
+# s `record_type = "toolingCommand"`, T-076 nezávisle bránu, která pro
+# každý použitý `record_type` vyžaduje záznam tady, a build spadl při
+# prvním běhu, kdy se obě věci potkaly. Přesně na tohle ta obousměrná
+# kontrola je.
 [page_types.toolingCommand]
 og_type = "article"
 seo_type = "TechArticle"

@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run prismatic:enrich-all — Hromadné obohacení — nehotové"
 template = "tooling-command.html"
-weight = 71
+weight = 70
 description = "Hromadné obohacení — nehotové: Stub. npm skript, rešerše."
 
 [extra]
