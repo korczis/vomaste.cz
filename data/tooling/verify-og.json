@@ -25,5 +25,8 @@
     "data/seo.toml"
   ],
   "sourceFile": "scripts/build/verify-og.mjs",
-  "describedFrom": "header"
+  "describedFrom": "header",
+  "notes": [
+    "Nechodí na síť a neměří rozměry obrázku — kontroluje jen to, co je v postaveném HTML a na disku. Limity délky jsou horní strop, ne doporučení."
+  ]
 }

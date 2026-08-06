@@ -20,5 +20,8 @@
     "origin/master (git fetch, pokud není --no-fetch)"
   ],
   "sourceFile": "scripts/dossier/next-id.mjs",
-  "describedFrom": "header"
+  "describedFrom": "header",
+  "notes": [
+    "Vzniklo po kolizi 5. 8. 2026, kdy dvě souběžné session spočítaly totéž „další volné“ ID a přepsaly si zdroje navzájem."
+  ]
 }

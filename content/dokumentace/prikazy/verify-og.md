@@ -30,3 +30,7 @@ Až po zola build, nad public/ — stejně jako verify:jsonld.
 - Rozchod og:title / og:description s name / description stránkového uzlu JSON-LD (do T-076 se lišily na 2 246, resp. 463 stránkách).
 - og:type mimo slovník seo.page_types, a nesoulad mezi record_type v content/** a klíči seo.page_types v OBOU směrech.
 
+## Co je potřeba vědět {#pozor}
+
+- Nechodí na síť a neměří rozměry obrázku — kontroluje jen to, co je v postaveném HTML a na disku. Limity délky jsou horní strop, ne doporučení.
+

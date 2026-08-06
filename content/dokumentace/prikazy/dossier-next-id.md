@@ -25,3 +25,7 @@ Před založením nového kanonického záznamu, zvlášť když na dossieru pra
 
 - Rozdíl mezi nejvyšším ID v lokálním working tree a na origin/master se ohlásí, ne přejde.
 
+## Co je potřeba vědět {#pozor}
+
+- Vzniklo po kolizi 5. 8. 2026, kdy dvě souběžné session spočítaly totéž „další volné“ ID a přepsaly si zdroje navzájem.
+

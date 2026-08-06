@@ -79,7 +79,6 @@ Publikovaná podoba: [/dokumentace/prikazy/](https://vomaste.cz/dokumentace/prik
 | [`npm run verify:og`](/dokumentace/prikazy/verify-og/) | kontrola výstupů | ano | build | — |
 | [`npm run verify:source-catalog`](/dokumentace/prikazy/verify-source-catalog/) | kontrola výstupů | ano | — | ano |
 | [`npm run verify:tooling-catalog`](/dokumentace/prikazy/verify-tooling-catalog/) | kontrola výstupů | ano | build | — |
-| [`npm run dossier:next-id`](/dokumentace/prikazy/dossier-next-id/) | rešerše | ano | — | — |
 | [`npm run prismatic:diff`](/dokumentace/prikazy/prismatic-diff/) | rešerše | — | — | — |
 | [`npm run prismatic:drift`](/dokumentace/prikazy/prismatic-drift/) | rešerše | — | — | — |
 | [`npm run prismatic:enrich-all`](/dokumentace/prikazy/prismatic-enrich-all/) | rešerše | — | — | — |
@@ -367,10 +366,6 @@ Publikovaná podoba: [/dokumentace/prikazy/](https://vomaste.cz/dokumentace/prik
 - G5 — deklarovaný sourceFile, který neexistuje, nebo který příkazová řádka npm skriptu vůbec nevolá.
 - G6 — npm skript, který spouští soubor repozitáře jako svůj program, ale záznam sourceFile neuvádí.
 - G7 — rozdíl mezi commitnutými stránkami / docs/TOOLING.md a tím, co by z dat vzniklo. Náprava: `npm run build:tooling-catalog`.
-
-### `npm run dossier:next-id`
-
-- Nevynucuje nic; je to pomůcka před zápisem, ne brána.
 
 ### `npm run build`
 
