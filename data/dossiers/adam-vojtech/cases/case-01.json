@@ -10,12 +10,45 @@
     "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
   },
   "title": "Kauza defibrilátorů FN Olomouc",
-  "summary": "Kauza defibrilátorů FN Olomouc — viz tvrzení CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07, CLM-08, CLM-09, CLM-10, CLM-11, CLM-12.",
+  "summary": "Kauza defibrilátorů FN Olomouc — trestní oznámení ministerstva na FN Olomouc kvůli implantacím kardiostimulátorů/defibrilátorů, zahájení úkonů trestního řízení policií, ministrova reakce a zřízení informační linky, kritika opatrnosti ministra vůči vedení nemocnice, předběžné závěry odborné komise a konkrétní popsaný případ pacienta, dále výsledky interního auditu kardiocentra, komentář kardiologa Josefa Veselky, prvotní zveřejnění kauzy Seznam Zprávami a stav vedení nemocnice k srpnu 2026.",
   "period": "2026",
   "status": "status-single",
   "statusLabel": "Sledované téma",
   "anchor": "kauza-defibrilatory",
   "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-12"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-22"
     },
@@ -51,32 +84,77 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-33"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-51"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-53"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-54"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-55"
     }
   ],
   "sources": [
     {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-07"
+    },
+    {
       "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-13"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-16"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-18"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-14"
     },
     {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-15"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-16"
+    },
+    {
       "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-17"
     },
     {
-      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-15"
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-18"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-19"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-20"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-33"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-37"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-39"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-40"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-41"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-42"
@@ -86,6 +164,9 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-46"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-47"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-48"
