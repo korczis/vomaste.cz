@@ -101,13 +101,13 @@ Odpovídá na otázku „kam se podívat a čemu z toho věřit". Publikovaná p
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 695 záznamů v 118 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 699 záznamů v 120 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
 | ctk | 290 | 21 | [ano](/zdroje/ctk/) |
 | seznam-zpravy | 38 | 13 | [ano](/zdroje/seznam-zpravy/) |
-| Poslanecká sněmovna Parlamentu ČR | 33 | 15 | [ano](/zdroje/psp-cz/) |
+| Poslanecká sněmovna Parlamentu ČR | 34 | 15 | [ano](/zdroje/psp-cz/) |
 | Vláda České republiky (vlada.gov.cz) | 28 | 17 | [ano](/zdroje/vlada-cz/) |
 | FORUM 24 | 19 | 9 | [ano](/zdroje/forum24/) |
 | denik-n | 17 | 9 | [ano](/zdroje/denik-n/) |
@@ -143,6 +143,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 695 záznamů v 118 rodinách/out
 | Úřad pro ochranu osobních údajů | 3 | 1 | — |
 | cz-verejny-rejstrik | 2 | 1 | [ano](/zdroje/ares/) |
 | ARES — Administrativní registr ekonomických subjektů (Ministerstvo financí ČR) | 2 | 2 | [ano](/zdroje/ares/) |
+| Česká školní inspekce | 2 | 1 | — |
 | CZDEFENCE | 2 | 1 | — |
 | Deník Alarm | 2 | 1 | — |
 | Fakultní nemocnice Olomouc (oficiální web) | 2 | 1 | — |
@@ -168,7 +169,6 @@ Dopočítáno z `data/dossiers/**/sources/**`, 695 záznamů v 118 rodinách/out
 | Centrum veřejných financí (Univerzita Karlova) | 1 | 1 | — |
 | Česká infrastruktura | 1 | 1 | — |
 | Česká obchodní inspekce | 1 | 1 | — |
-| Česká školní inspekce | 1 | 1 | — |
 | ČKAIT (Česká komora autorizovaných inženýrů a techniků) | 1 | 1 | — |
 | CNCB / BRKI a NRKI | 1 | 1 | — |
 | Demagog.cz | 1 | 1 | — |
@@ -188,6 +188,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 695 záznamů v 118 rodinách/out
 | Info.cz | 1 | 1 | — |
 | iportal24.cz | 1 | 1 | — |
 | Jezdci.cz | 1 | 1 | — |
+| Kancelář veřejného ochránce práv a ochránce práv dětí | 1 | 1 | — |
 | Kurzy.cz | 1 | 1 | — |
 | Lupa.cz | 1 | 1 | — |
 | Manipulátoři.cz | 1 | 1 | — |
@@ -198,6 +199,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 695 záznamů v 118 rodinách/out
 | Motoristé sobě (motoristesobe.cz/udhpsh) | 1 | 1 | — |
 | Neovlivní.cz | 1 | 1 | — |
 | Novinky.cz / Právo | 1 | 1 | [ano](/zdroje/novinky-cz/) |
+| ODS (Občanská demokratická strana) | 1 | 1 | — |
 | ParlamentníListy.cz | 1 | 1 | — |
 | Podnikatel.cz | 1 | 1 | [ano](/zdroje/podnikatel-cz-rejstrik/) |
 | Podpůrný a garanční rolnický a lesnický fond (PGRLF) | 1 | 1 | — |
