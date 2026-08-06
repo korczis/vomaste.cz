@@ -261,7 +261,12 @@ pracovat i jiná instance:
 
 1. `git fetch origin master` a zkontroluj aktuální nejvyšší
    `CLM-##`/`SRC-##`/… v cílovém dossieru **na originu**, ne jen
-   lokálně — lokální stav může být starší.
+   lokálně — lokální stav může být starší. Od 2026-08-06 to dělá jeden
+   příkaz: `npm run dossier:next-id -- --dossier=<slug>
+   --registry=<claims|sources|cases|gaps>` — fetchne, zkontroluje oboje
+   a nahlas se rozkřičí, pokud se lokál s originem liší (viz
+   `scripts/dossier/next-id.mjs`, vzniklo přesně z tohohle bodu poté,
+   co „zapomněl jsem fetchnout" byla skutečná příčina kolize níž).
 2. Pokud i tak dojde ke kolizi (viděno 2026-08-05: dvě session obě
    sáhly po `CLM-09`/`SRC-09`/`SRC-10` ve stejném dossieru), neřeš to
    přepisem cizích záznamů. Přečísluj **svoje** nové záznamy tak, aby
