@@ -10,12 +10,27 @@
     "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
   },
   "title": "Novela stavebního zákona",
-  "summary": "Novela stavebního zákona — viz tvrzení CLM-10, CLM-11, CLM-12, CLM-13, CLM-14.",
+  "summary": "Novela stavebního zákona — Havlíčkův slib dokončení novely do července, vládní pozměňovací návrh o 1083 stranách formou poslaneckého návrhu, kritika poslanců Martina Kupky a Lukáše Vlčka i právníků citovaných Českou justicí, premiérovo vyjádření požadující vysvětlení výhod novely veřejnosti, a zvažovaná stížnost opozičních senátorů k Ústavnímu soudu.",
   "period": "2026",
   "status": "status-single",
   "statusLabel": "Sledované téma",
   "anchor": "kauza-stavebni-zakon",
   "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-14"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-29"
     },
@@ -48,14 +63,23 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-39"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-48"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-50"
     }
   ],
   "sources": [
     {
-      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-17"
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-07"
     },
     {
-      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-22"
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-17"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-18"
@@ -70,6 +94,9 @@
       "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-21"
     },
     {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-22"
+    },
+    {
       "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-23"
     },
     {
@@ -77,6 +104,12 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-25"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-35"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-36"
     }
   ],
   "subjects": [
