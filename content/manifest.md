@@ -332,6 +332,10 @@ Stejně tak „všichni to vědí“ není zdroj.
 
 Oprava musí ukázat, co je chybně, proč je to chybně a o jaký dohledatelný podklad se opírá.
 
+Kde přesně opravu nahlásit a proč nemá redakční veto ani ta strana,
+která chce přidat, ani ta, která chce ubrat:
+[Právo kritizovat a opravovat](@/koncepty/pravo-opravit.md).
+
 ---
 
 ## 17. Metodologie má přežít jednotlivé kauzy {#bod-17}
