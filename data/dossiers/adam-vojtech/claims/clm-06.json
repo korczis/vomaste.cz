@@ -9,15 +9,18 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
   },
-  "text": "Policie v kauze prověřuje podezření z podvodu a těžkého ublížení na zdraví; prověřování se týká několika stovek pacientů a implantací provedených v období od roku 2015 do února 2025.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "text": "Policie 9. února 2026 zahájila úkony trestního řízení pro podezření ze spáchání zvlášť závažných zločinů těžkého ublížení na zdraví a podvodu a přečinu ublížení na zdraví; podezření míří na dlouhodobé a systematické provádění neindikovaných implantací ICD u několika set pacientů v období od roku 2015 do února 2025.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-03"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-46"
     }
   ],
   "subjects": [
