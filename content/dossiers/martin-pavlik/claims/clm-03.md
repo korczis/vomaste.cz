@@ -17,3 +17,5 @@ clm_id = "CLM-03"
 Tvrzení reprodukuje pouze roli zobrazenou na určeném veřejném rejstříkovém profilu. Nevyjadřuje závěr o skutečném rozsahu činnosti společnosti, o rozhodování Martina Pavlíka ani o jakémkoli pochybení. Protože je zatím doloženo jediným rejstříkovým agregátorem, zůstává ve stavu 1 ZDROJ.
 
 Roli shodně uvádí primární registr ARES i agregátor Podnikatel.cz, ale nejde o nezávislé potvrzení: agregátor tato data z registru přebírá, takže mu nemůže odporovat. Je to jedno doložení citované dvakrát — proto 1 ZDROJ, byť opřený o primární registr, ne pouze o agregátor.
+
+**Upřesnění (2026-08-06, ze SRC-02):** aktuální zápis funkce jednatele vznikl 1. 10. 2015 (`vznikFunkce`), zapsán do rejstříku 21. 10. 2020. Podnikatel.cz eviduje i dřívější, formálně ukončené období (1. 10. 2015 – 22. 5. 2022) vedle tohoto aktuálního zápisu — jde o rejstříkovou historii záznamu, ne o odlišnou funkci.

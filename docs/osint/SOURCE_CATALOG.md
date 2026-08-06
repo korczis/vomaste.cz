@@ -197,18 +197,18 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 733 záznamů v 125 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 737 záznamů v 126 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
 | ctk | 291 | 21 | [ano](/zdroje/ctk/) |
-| Poslanecká sněmovna Parlamentu ČR | 43 | 24 | [ano](/zdroje/psp-cz/) |
+| Poslanecká sněmovna Parlamentu ČR | 44 | 25 | [ano](/zdroje/psp-cz/) |
 | seznam-zpravy | 38 | 13 | [ano](/zdroje/seznam-zpravy/) |
 | Vláda České republiky (vlada.gov.cz) | 28 | 17 | [ano](/zdroje/vlada-cz/) |
 | FORUM 24 | 20 | 10 | [ano](/zdroje/forum24/) |
 | ČT24 (Česká televize) | 18 | 10 | [ano](/zdroje/ceska-televize/) |
 | denik-n | 17 | 9 | [ano](/zdroje/denik-n/) |
-| Echo24 | 16 | 12 | [ano](/zdroje/echo24/) |
+| Echo24 | 17 | 13 | [ano](/zdroje/echo24/) |
 | Novinky.cz | 13 | 12 | [ano](/zdroje/novinky-cz/) |
 | Aktuálně.cz | 12 | 7 | [ano](/zdroje/aktualne-cz/) |
 | denik-cz | 11 | 6 | [ano](/zdroje/denik-cz/) |
@@ -258,6 +258,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 733 záznamů v 125 rodinách/out
 | Seznam Zprávy | 2 | 2 | [ano](/zdroje/seznam-zpravy/) |
 | Ústavní soud ČR | 2 | 2 | — |
 | Vrchní státní zastupitelství v Olomouci | 2 | 1 | — |
+| smlouvy-gov-cz | 2 | 1 | [ano](/zdroje/registr-smluv/) |
 | ct24 | 1 | 1 | [ano](/zdroje/ceska-televize/) |
 | denik | 1 | 1 | [ano](/zdroje/denik-cz/) |
 | eppo | 1 | 1 | — |
@@ -323,8 +324,8 @@ Dopočítáno z `data/dossiers/**/sources/**`, 733 záznamů v 125 rodinách/out
 | Vrchní soud v Praze | 1 | 1 | — |
 | YouControl | 1 | 1 | — |
 | Zdopravy.cz | 1 | 1 | — |
+| Zdravotnický deník | 1 | 1 | — |
 | Život v Česku | 1 | 1 | — |
-| smlouvy-gov-cz | 1 | 1 | [ano](/zdroje/registr-smluv/) |
 | usoud | 1 | 1 | — |
 
 ## Chybí popis

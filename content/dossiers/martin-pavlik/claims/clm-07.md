@@ -14,6 +14,6 @@ record_type = "claim"
 lang = "cs"
 clm_id = "CLM-07"
 +++
-Počet přebírá údaj, který registr sám uvádí u výsledku dotazu na IČO protistrany. Jmenované zveřejňující subjekty jsou odečteny přímo z výsledků; výčet **není úplný** a netvrdí, že jiní zadavatelé neexistují.
+Počet 119 uvádí jak vyhledávací formulář registru (SRC-03), tak nezávisle přepočet přes měsíční otevřená data (SRC-04) — obě cesty vedou ke stejnému primárnímu registru (sdílejí `sourceFamily: smlouvy-gov-cz`), takže shoda zvyšuje důvěru v číslo, ale nezakládá korporaci ve smyslu pravidla S2/S10. Souhrnná hodnota a plný výčet objednatelů jsou nyní doloženy — viz [CLM-08](@/dossiers/martin-pavlik/claims/clm-08.md); GAP-02 je tímto uzavřena.
 
-Předmětem smluv je podle jejich názvů zpracování projektové dokumentace ve vodním hospodářství, což odpovídá zapsanému předmětu podnikání. Dodávat státním podnikům je legální a běžná činnost; tvrzení nevyjadřuje podezření. Souhrnná hodnota smluv se neuvádí — viz GAP-02.
+Předmětem smluv je podle jejich názvů zpracování projektové dokumentace ve vodním hospodářství, což odpovídá zapsanému předmětu podnikání. Dodávat státním podnikům, úřadům a krajům je legální a běžná, zákonem vyžadovaná zveřejněná činnost; tvrzení nevyjadřuje podezření.

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/gaps/GAP-03",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-pavlik"
+  },
+  "title": "GAP-03 — Sbírka listin nedostupná automatizovaně",
+  "description": "Nezávislé (jiné než ARES/Podnikatel.cz) doložení rolí a podílů skrze listinné dokumenty ve Sbírce listin (or.justice.cz) nebylo v tomto kole technicky proveditelné.",
+  "priority": "nízká",
+  "checked": "2026-08-06",
+  "claims": [],
+  "subjects": [
+    "martin-pavlik"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Sbírka listin je jediný veřejný zdroj, který by mohl přinést doložení jiné povahy než sdílená rejstříková data ARES a Podnikatel.cz (viz `data/source-catalog/justice-sbirka-listin.json`) — zakladatelské listiny, smlouvy o převodu podílu nebo účetní závěrky. Vyhledávání na or.justice.cz je ale stavová formulářová aplikace bez přímo dotazovatelné URL podle IČO; dostupné nástroje tohoto kola (přímý HTTP fetch) narazily na chybové/vypršelé odkazy a nevrátily obsah.\n\nTato mezera není tvrzením o tom, co listiny obsahují nebo neobsahují — je to záznam, že pokus o silnější zdroj nebyl proveden, ne že by byl proveden a nic nenašel. Vyžaduje buď nástroj se skutečnou navigací formulářem (např. řízený prohlížeč), nebo jiný přístup k obsahu Sbírky listin, v budoucím kole."
+    }
+  ],
+  "order": 3
+}

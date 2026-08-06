@@ -5,7 +5,7 @@ system. This is provenance, not a publication decision — see
 `data/authorizations.toml` and `scripts/dossier/authorize-entity.mjs`
 for the only thing that actually authorizes a dossier.
 
-866 record(s) logged across 8 day(s). 1 new since last run.
+879 record(s) logged across 8 day(s). 13 new since last run.
 
 ## 2026-07-29
 
@@ -896,3 +896,16 @@ for the only thing that actually authorizes a dossier.
 - `pavel-drobil` (entity, created)
 - `martin-cervicek` (entity, created)
 - `petr-sokol` (entity, created)
+- `jihomoravsky-kraj` (entity, created)
+- `mesto-otrokovice` (entity, created)
+- `mesto-vsetin` (entity, created)
+- `statni-pozemkovy-urad` (entity, created)
+- `statutarni-mesto-olomouc` (entity, created)
+- `vyzkumny-ustav-veterinarniho-lekarstvi` (entity, created)
+- `edge-hydroprogress-jihomoravsky-kraj` (relation, created)
+- `edge-hydroprogress-mesto-otrokovice` (relation, created)
+- `edge-hydroprogress-mesto-vsetin` (relation, created)
+- `edge-hydroprogress-ministerstvo-obrany` (relation, created)
+- `edge-hydroprogress-statni-pozemkovy-urad` (relation, created)
+- `edge-hydroprogress-statutarni-mesto-olomouc` (relation, created)
+- `edge-hydroprogress-vyzkumny-ustav-veterinarniho-lekarstvi` (relation, created)

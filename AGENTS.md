@@ -1842,3 +1842,59 @@ Hospodářské noviny, Forum24.cz) — nejde o investigativní rešerši
 žádné kauzy. Ověřena totožnost proti oficiálnímu profilu na psp.cz
 (id 7045), aby nedošlo k záměně se jmenovcem — jde o tutéž osobu
 (politolog a publicista je stejný Petr Sokol, nikoli jmenovec).
+
+### Scope extension, 2026-08-06: Renáta Zajíčková
+
+Authorized by the site owner, explicitly and on the record, 2026-08-06:
+
+Autorizuji entity dossier pro Renátu Zajíčkovou (ODS) v rámci standing scope
+(AUTH-2026-08-05-PLATFORM-SCOPE) — veřejná funkcionářka, poslankyně
+Parlamentu ČR za ODS. Rozsah je záměrně minimální: pouze aktuální
+poslanecký mandát (od 4. 10. 2025), členství ve Výboru pro zdravotnictví
+a role stínové ministryně školství, mládeže a tělovýchovy ve stínové
+vládě ODS, doloženo přímo otevřenými zdroji (psp.cz, Zdravotnický deník,
+Echo24). Nejde o investigativní rešerši žádné kauzy ani sporného tématu.
+
+### Scope extension, 2026-08-06: Martin Pavlík — plný rozsah v mezích rejstříkové/veřejnoprávní stopy
+
+Authorized by the site owner, explicitly and on the record, 2026-08-06
+("rozšiř celý dossier" k `/dossiers/martin-pavlik/`, potvrzeno "full
+scope authorized"): ruší se dřívější omezení `AUTH-2026-08-05-MARTIN-PAVLIK`
+na výhradně čtyři jmenovitě uvedené subjekty a šest tvrzení. Dossier smí
+nadále pokrývat **jakoukoli veřejně doloženou rejstříkovou, spolkovou
+a veřejnoprávní/veřejnopeněžní stopu** osoby jednoznačně vymezené stejnou
+identitní kotvou jako dosud — veřejným rejstříkovým profilem
+`https://www.podnikatel.cz/rejstrik/osoby/martin-pavlik-1902710/`
+a navázanými záznamy ARES (větev VR) — včetně:
+
+- doplňkových rejstříkových záznamů/funkcí, pokud se u této konkrétní,
+  identitně ověřené osoby objeví (nové i historické/zaniklé zápisy);
+- řádně dopočítaného objemu a předmětu smluv v Registru smluv za všechny
+  čtyři již uvedené subjekty (HYDROPROGRESS, s.r.o.; MEDIA PROJECT CZ
+  s.r.o.; Bydlíme v Králově Poli, z.s.; Nadační fond FIDUCIA), nikoli jen
+  citovaného počtu nalezených záznamů;
+- veřejně publikovaných výročních zpráv/účetních závěrek ve Sbírce listin
+  těchto subjektů, pokud jsou založeny;
+- listinného dokladu (zakladatelská listina, smlouva o převodu podílu,
+  zápis z valné hromady) jako silnějšího, nezávislejšího zdroje pro
+  tvrzení dosud opřená jen o shodná rejstříková data (ARES + Podnikatel.cz
+  sdílejí `sourceFamily: cz-verejny-rejstrik`, a proto samy o sobě
+  nezakládají korporaci — viz zdůvodnění v SRC-02).
+
+**"Plný rozsah" mění šíři témat, ne standard péče.** Beze změny, protože
+to nikdy nebylo prostým tematickým omezením, nýbrž strukturálním
+pravidlem projektu (`docs/constitution/OPEN_INTELLIGENCE_COMMONS.md`
+§6–§7 a samo znění `AUTH-2026-08-05-MARTIN-PAVLIK`), platí i nadále a bez
+výjimky:
+
+- žádný IT profesní profil, schopnosti, jiné zaměstnání, přibližný věk,
+  datum narození ani adresa bydliště se do dossieru nepřebírají, i kdyby
+  se objevily ve stejném zdroji (rejstřík i listiny je běžně obsahují —
+  odstraňují se v souladu s dosavadní praxí, ne citují);
+- žádná jiná osoba stejného jména se s tímto subjektem neslučuje bez
+  listinného nebo jinak jednoznačného ověření identity; při nejasnosti
+  zůstává údaj mezerou (GAP), nikdy domněnkou;
+- zápis funkce, podílu nebo smluvního vztahu se nadále prezentuje jako
+  evidenční fakt, nikdy jako podezření nebo důkaz pochybení.
+
+Tato autorizace nerozšiřuje rozsah na žádný jiný subjekt.

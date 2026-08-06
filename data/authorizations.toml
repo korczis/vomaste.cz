@@ -251,3 +251,17 @@ authorized_at = "2026-08-06"
 subjects = ["petr-sokol"]
 agents_md_section = "Scope extension, 2026-08-06: Petr Sokol"
 scope_summary = "Autorizuji entity dossier pro Petra Sokola v rámci standing scope (AUTH-2026-08-05-PLATFORM-SCOPE). Petr Sokol je veřejný funkcionář — poslanec Parlamentu ČR za ODS (mandát od 4. 10. 2025, psp.cz id 7045), místopředseda poslaneckého klubu ODS (od 4. 2. 2026) a stínový poradce pro EU ve stínové vládě ODS vedené Martinem Kupkou (od března 2026). Rozsah je záměrně minimální: jediné tvrzení o jeho aktuálním mandátu a straně funkcích, doložené přímo otevřenými zdroji (psp.cz, Echo24, Hospodářské noviny, Forum24.cz) — nejde o investigativní rešerši žádné kauzy. Ověřena totožnost proti oficiálnímu profilu na psp.cz (id 7045), aby nedošlo k záměně se jmenovcem — jde o tutéž osobu (politolog a publicista je stejný Petr Sokol, nikoli jmenovec)."
+
+[[authorizations]]
+id = "AUTH-2026-08-06-RENATA-ZAJICKOVA"
+authorized_at = "2026-08-06"
+subjects = ["renata-zajickova"]
+agents_md_section = "Scope extension, 2026-08-06: Renáta Zajíčková"
+scope_summary = "Autorizuji entity dossier pro Renátu Zajíčkovou (ODS) v rámci standing scope (AUTH-2026-08-05-PLATFORM-SCOPE) — veřejná funkcionářka, poslankyně Parlamentu ČR za ODS. Rozsah je záměrně minimální: pouze aktuální poslanecký mandát (od 4. 10. 2025), členství ve Výboru pro zdravotnictví a role stínové ministryně školství, mládeže a tělovýchovy ve stínové vládě ODS, doloženo přímo otevřenými zdroji (psp.cz, Zdravotnický deník, Echo24). Nejde o investigativní rešerši žádné kauzy ani sporného tématu."
+
+[[authorizations]]
+id = "AUTH-2026-08-06-MARTIN-PAVLIK-FULLSCOPE"
+authorized_at = "2026-08-06"
+subjects = ["martin-pavlik"]
+agents_md_section = "Scope extension, 2026-08-06: Martin Pavlík — plný rozsah v mezích rejstříkové/veřejnoprávní stopy"
+scope_summary = "Ruší dřívější omezení AUTH-2026-08-05-MARTIN-PAVLIK na čtyři jmenovité subjekty a šest tvrzení. Dossier smí pokrývat jakoukoli veřejně doloženou rejstříkovou, spolkovou a veřejnopeněžní stopu osoby vymezené stejnou identitní kotvou (podnikatel.cz profil 1902710 + ARES VR): doplňkové rejstříkové zápisy, řádně dopočítaný objem smluv v Registru smluv za všechny čtyři subjekty, veřejně publikované účetní závěrky ve Sbírce listin, a listinné doklady jako silnější/nezávislejší zdroj oproti sdílené rodině ARES+Podnikatel.cz. Beze změny zůstávají strukturální pravidla projektu: žádný IT profesní profil, schopnosti, zaměstnání, věk, datum narození, adresa bydliště; žádné sloučení s jinou osobou stejného jména bez listinného ověření; funkce/podíl/smlouva zůstává evidenční fakt, nikdy podezření."

@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 496 context entities across 37 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 501 context entities across 38 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -1293,9 +1293,16 @@ Generated from 496 context entities across 37 dossier(s). Regenerate with `npm r
 - Claims: none
 - Sources: none (0 independent source families)
 - Relations:
+  - edge-hydroprogress-jihomoravsky-kraj (hydroprogress-s-r-o -> jihomoravsky-kraj, "Jihomoravský kraj zveřejnil v registru smluv smlouvy, jejichž protistranou je HYDROPROGRESS, s.r.o.", dossier: martin-pavlik)
   - edge-hydroprogress-lesy-ceske-republiky-sp (hydroprogress-s-r-o -> lesy-ceske-republiky-sp, "Lesy České republiky, s.p. zveřejnil v registru smluv smlouvy, jejichž protistranou je HYDROPROGRESS, s.r.o.", dossier: martin-pavlik)
+  - edge-hydroprogress-mesto-otrokovice (hydroprogress-s-r-o -> mesto-otrokovice, "Město Otrokovice zveřejnilo v registru smluv smlouvu, jejíž protistranou je HYDROPROGRESS, s.r.o.", dossier: martin-pavlik)
+  - edge-hydroprogress-mesto-vsetin (hydroprogress-s-r-o -> mesto-vsetin, "Město Vsetín zveřejnilo v registru smluv smlouvy, jejichž protistranou je HYDROPROGRESS, s.r.o.", dossier: martin-pavlik)
+  - edge-hydroprogress-ministerstvo-obrany (hydroprogress-s-r-o -> ministerstvo-obrany, "Ministerstvo obrany ČR zveřejnilo v registru smluv smlouvy, jejichž protistranou je HYDROPROGRESS, s.r.o.", dossier: martin-pavlik)
   - edge-hydroprogress-povodi-labe-sp (hydroprogress-s-r-o -> povodi-labe-sp, "Povodí Labe, s.p. zveřejnil v registru smluv smlouvy, jejichž protistranou je HYDROPROGRESS, s.r.o.", dossier: martin-pavlik)
   - edge-hydroprogress-povodi-odry-sp (hydroprogress-s-r-o -> povodi-odry-sp, "Povodí Odry, s.p. zveřejnil v registru smluv smlouvy, jejichž protistranou je HYDROPROGRESS, s.r.o.", dossier: martin-pavlik)
+  - edge-hydroprogress-statni-pozemkovy-urad (hydroprogress-s-r-o -> statni-pozemkovy-urad, "Státní pozemkový úřad zveřejnil v registru smluv 67 smluv, jejichž protistranou je HYDROPROGRESS, s.r.o.", dossier: martin-pavlik)
+  - edge-hydroprogress-statutarni-mesto-olomouc (hydroprogress-s-r-o -> statutarni-mesto-olomouc, "Statutární město Olomouc zveřejnilo v registru smluv smlouvu, jejíž protistranou je HYDROPROGRESS, s.r.o.", dossier: martin-pavlik)
+  - edge-hydroprogress-vyzkumny-ustav-veterinarniho-lekarstvi (hydroprogress-s-r-o -> vyzkumny-ustav-veterinarniho-lekarstvi, "Výzkumný ústav veterinárního lékařství, v. v. i. zveřejnil v registru smluv smlouvy, jejichž protistranou je HYDROPROGRESS, s.r.o.", dossier: martin-pavlik)
   - edge-pavlik-hydroprogress (martin-pavlik -> hydroprogress-s-r-o, "jednatel a společník s podílem 80 %", dossier: martin-pavlik)
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -1588,6 +1595,17 @@ Generated from 496 context entities across 37 dossier(s). Regenerate with `npm r
 - Claims: CLM-42
 - Sources: SRC-21 (1 independent source family)
 - Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Jihomoravský kraj (`jihomoravsky-kraj`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: martin-pavlik
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations:
+  - edge-hydroprogress-jihomoravsky-kraj (hydroprogress-s-r-o -> jihomoravsky-kraj, "Jihomoravský kraj zveřejnil v registru smluv smlouvy, jejichž protistranou je HYDROPROGRESS, s.r.o.", dossier: martin-pavlik)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Jindřich Fialka (`jindrich-fialka`)
@@ -2598,6 +2616,28 @@ Generated from 496 context entities across 37 dossier(s). Regenerate with `npm r
   - edge-mrazova-mestobilina (mrazova -> mesto-bilina, "před nástupem do vlády místostarostka a starostka Bíliny", dossier: zuzana-mrazova)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Město Otrokovice (`mesto-otrokovice`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: martin-pavlik
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations:
+  - edge-hydroprogress-mesto-otrokovice (hydroprogress-s-r-o -> mesto-otrokovice, "Město Otrokovice zveřejnilo v registru smluv smlouvu, jejíž protistranou je HYDROPROGRESS, s.r.o.", dossier: martin-pavlik)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Město Vsetín (`mesto-vsetin`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: martin-pavlik
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations:
+  - edge-hydroprogress-mesto-vsetin (hydroprogress-s-r-o -> mesto-vsetin, "Město Vsetín zveřejnilo v registru smluv smlouvy, jejichž protistranou je HYDROPROGRESS, s.r.o.", dossier: martin-pavlik)
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Městské státní zastupitelství v Praze (`mestske-statni-zastupitelstvi-praha`)
 
 - Type: public_institution
@@ -2825,11 +2865,12 @@ Generated from 496 context entities across 37 dossier(s). Regenerate with `npm r
 
 - Type: public_institution
 - Status: not_authorized
-- Appears in: alena-schillerova, jaromir-zuna
+- Appears in: alena-schillerova, jaromir-zuna, martin-pavlik
 - Claims: CLM-08, CLM-10, CLM-12, CLM-26, CLM-27, CLM-30, CLM-31, CLM-41, CLM-44, CLM-45
 - Sources: SRC-06, SRC-07, SRC-08, SRC-15, SRC-16, SRC-23, SRC-24, SRC-27 (10 independent source families)
 - Relations:
   - edge-zuna-ministerstvo-obrany (zuna -> ministerstvo-obrany, "Zůna stojí v čele Ministerstva obrany ČR", dossier: jaromir-zuna)
+  - edge-hydroprogress-ministerstvo-obrany (hydroprogress-s-r-o -> ministerstvo-obrany, "Ministerstvo obrany ČR zveřejnilo v registru smluv smlouvy, jejichž protistranou je HYDROPROGRESS, s.r.o.", dossier: martin-pavlik)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Ministerstvo práce a sociálních věcí ČR (`ministerstvo-prace-a-socialnich-veci`)
@@ -4066,18 +4107,6 @@ Generated from 496 context entities across 37 dossier(s). Regenerate with `npm r
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
-## Renáta Zajíčková (`renata-zajickova`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: boris-stastny, robert-plaga
-- Claims: CLM-05, CLM-21, CLM-54
-- Sources: SRC-02, SRC-09, SRC-21 (4 independent source families)
-- Relations:
-  - edge-renata-zajickova-ods (renata-zajickova -> ods, "poslankyně za ODS", dossier: boris-stastny)
-  - edge-renata-zajickova-stastny (renata-zajickova -> stastny, "označila jeho reakci na nález nahrávacího zařízení za bezpečnostní riziko a jeho krizovou komunikaci za pubertální", dossier: boris-stastny)
-- Missing: explicit owner authorization to promote this to its own dossier
-
 ## René Zavoral (`rene-zavoral`)
 
 - Type: person
@@ -4451,6 +4480,17 @@ Generated from 496 context entities across 37 dossier(s). Regenerate with `npm r
   - edge-stanislav-kazbunda-stastny (stanislav-kazbunda -> stastny, "označil situaci za potenciálně závažný bezpečnostní incident, který se měl hlásit bezpečnostním složkám", dossier: boris-stastny)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Státní pozemkový úřad (`statni-pozemkovy-urad`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: martin-pavlik
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations:
+  - edge-hydroprogress-statni-pozemkovy-urad (hydroprogress-s-r-o -> statni-pozemkovy-urad, "Státní pozemkový úřad zveřejnil v registru smluv 67 smluv, jejichž protistranou je HYDROPROGRESS, s.r.o.", dossier: martin-pavlik)
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Státní zastupitelství (`statni-zastupitelstvi`)
 
 - Type: public_institution
@@ -4460,6 +4500,17 @@ Generated from 496 context entities across 37 dossier(s). Regenerate with `npm r
 - Sources: SRC-31, SRC-54 (1 independent source family)
 - Relations:
   - edge-trestniozn-statnizastupitelstvi (trestniozn -> statni-zastupitelstvi, "OSZ pro Prahu 4 odložení oznámilo; o stížnosti ženy rozhoduje státní zástupkyně", dossier: macinka-turek)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Statutární město Olomouc (`statutarni-mesto-olomouc`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: martin-pavlik
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations:
+  - edge-hydroprogress-statutarni-mesto-olomouc (hydroprogress-s-r-o -> statutarni-mesto-olomouc, "Statutární město Olomouc zveřejnilo v registru smluv smlouvu, jejíž protistranou je HYDROPROGRESS, s.r.o.", dossier: martin-pavlik)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Stavební úřad Prahy 15 (`stavebni-urad-praha-15`)
@@ -5182,6 +5233,17 @@ Generated from 496 context entities across 37 dossier(s). Regenerate with `npm r
 - Claims: CLM-63, CLM-64, CLM-65
 - Sources: SRC-42, SRC-43, SRC-45 (1 independent source family)
 - Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Výzkumný ústav veterinárního lékařství, v. v. i. (`vyzkumny-ustav-veterinarniho-lekarstvi`)
+
+- Type: public_institution
+- Status: not_authorized
+- Appears in: martin-pavlik
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations:
+  - edge-hydroprogress-vyzkumny-ustav-veterinarniho-lekarstvi (hydroprogress-s-r-o -> vyzkumny-ustav-veterinarniho-lekarstvi, "Výzkumný ústav veterinárního lékařství, v. v. i. zveřejnil v registru smluv smlouvy, jejichž protistranou je HYDROPROGRESS, s.r.o.", dossier: martin-pavlik)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Všeobecná zdravotní pojišťovna (VZP) (`vzp`)

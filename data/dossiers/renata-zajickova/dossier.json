@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/renata-zajickova",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "renata-zajickova",
+  "slug": "renata-zajickova",
+  "title": "Renáta Zajíčková",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení Renáty Zajíčkové.",
+  "dossierType": "entity",
+  "canonicalDossier": "renata-zajickova",
+  "subject": "renata-zajickova",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-06",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-06-RENATA-ZAJICKOVA"
+    ]
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nRenáta Zajíčková je poslankyně Parlamentu ČR za ODS a stínová ministryně\nškolství, mládeže a tělovýchovy ve stínové vládě ODS. Jako veřejná\nfunkcionářka spadá do standing scope autorizace\n(`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro tento dossier\nje `AUTH-2026-08-06-RENATA-ZAJICKOVA`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam — dokládá pouze její aktuální poslanecký mandát, členství ve\nVýboru pro zdravotnictví, funkci místopředsedkyně Výboru pro vědu,\nvzdělávání, mládež a sport a roli stínové ministryně školství, mládeže\na tělovýchovy, nikoli hloubkovou investigativní rešerši jiných témat.\nTotožnost byla ověřena proti oficiálnímu profilu na psp.cz (id 6793).\nRozšíření rozsahu vyžaduje samostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/renata-zajickova/claims/clm-01.md) | Renáta Zajíčková je od 4. 10. 2025 poslankyní Parlamentu ČR za ODS (zvolena na kandidátce koalice SPOLU, volební kraj Hlavní město Praha); od 11. 11. 2025 je členkou Výboru pro zdravotnictví a od 13. 11. 2025 místopředsedkyní Výboru pro vědu, vzdělávání, mládež a sport, a od března 2026 zastává ve stínové vládě ODS vedené Martinem Kupkou roli stínové ministryně školství, mládeže a tělovýchovy — nezávisle informovaly Zdravotnický deník i Echo24. | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/renata-zajickova/sources/src-01.md), [SRC-02](@/dossiers/renata-zajickova/sources/src-02.md), [SRC-03](@/dossiers/renata-zajickova/sources/src-03.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedeného poslaneckého mandátu, výborové\npříslušnosti ani role stínové ministryně školství nic dalšího; nejde\no hodnocení jejího politického působení ani o investigativní rešerši\njiných témat."
+    }
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "entity": "renata-zajickova",
+        "label": "Renáta Zajíčková",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02",
+          "SRC-03"
+        ]
+      }
+    ],
+    "edges": []
+  }
+}
