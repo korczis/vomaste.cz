@@ -139,32 +139,16 @@ neznamená, že žádné neexistuje — znamená, že ho tento dossier nedoklád
 
 ## Kauza střetu zájmů bývalé poradkyně {#kauza-poradkyne-stret}
 
-Téma v autorizovaném rozsahu — viz tvrzení [CLM-06](@/dossiers/ales-juchelka/claims/clm-06.md), [CLM-07](@/dossiers/ales-juchelka/claims/clm-07.md), [CLM-08](@/dossiers/ales-juchelka/claims/clm-08.md), [CLM-10](@/dossiers/ales-juchelka/claims/clm-10.md), [CLM-16](@/dossiers/ales-juchelka/claims/clm-16.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
+Téma v autorizovaném rozsahu — viz tvrzení [CLM-06](@/dossiers/ales-juchelka/claims/clm-06.md), [CLM-07](@/dossiers/ales-juchelka/claims/clm-07.md), [CLM-08](@/dossiers/ales-juchelka/claims/clm-08.md), [CLM-10](@/dossiers/ales-juchelka/claims/clm-10.md), [CLM-16](@/dossiers/ales-juchelka/claims/clm-16.md), [CLM-23](@/dossiers/ales-juchelka/claims/clm-23.md), [CLM-24](@/dossiers/ales-juchelka/claims/clm-24.md), [CLM-45](@/dossiers/ales-juchelka/claims/clm-45.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
 
 ## Rozpočtový dopad kauzy {#kauza-rozpocet}
 
-Téma v autorizovaném rozsahu — viz tvrzení [CLM-09](@/dossiers/ales-juchelka/claims/clm-09.md), [CLM-11](@/dossiers/ales-juchelka/claims/clm-11.md), [CLM-12](@/dossiers/ales-juchelka/claims/clm-12.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
+Téma v autorizovaném rozsahu — viz tvrzení [CLM-09](@/dossiers/ales-juchelka/claims/clm-09.md), [CLM-11](@/dossiers/ales-juchelka/claims/clm-11.md), [CLM-12](@/dossiers/ales-juchelka/claims/clm-12.md), [CLM-31](@/dossiers/ales-juchelka/claims/clm-31.md), [CLM-32](@/dossiers/ales-juchelka/claims/clm-32.md), [CLM-33](@/dossiers/ales-juchelka/claims/clm-33.md), [CLM-34](@/dossiers/ales-juchelka/claims/clm-34.md), [CLM-35](@/dossiers/ales-juchelka/claims/clm-35.md), [CLM-36](@/dossiers/ales-juchelka/claims/clm-36.md), [CLM-37](@/dossiers/ales-juchelka/claims/clm-37.md), [CLM-43](@/dossiers/ales-juchelka/claims/clm-43.md), [CLM-46](@/dossiers/ales-juchelka/claims/clm-46.md), [CLM-47](@/dossiers/ales-juchelka/claims/clm-47.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
 
 ## Trestní oznámení a kontrola NKÚ {#kauza-trestni-oznameni}
 
-Téma v autorizovaném rozsahu — viz tvrzení [CLM-13](@/dossiers/ales-juchelka/claims/clm-13.md), [CLM-14](@/dossiers/ales-juchelka/claims/clm-14.md), [CLM-15](@/dossiers/ales-juchelka/claims/clm-15.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
+Téma v autorizovaném rozsahu — viz tvrzení [CLM-13](@/dossiers/ales-juchelka/claims/clm-13.md), [CLM-14](@/dossiers/ales-juchelka/claims/clm-14.md), [CLM-15](@/dossiers/ales-juchelka/claims/clm-15.md), [CLM-38](@/dossiers/ales-juchelka/claims/clm-38.md), [CLM-39](@/dossiers/ales-juchelka/claims/clm-39.md), [CLM-40](@/dossiers/ales-juchelka/claims/clm-40.md), [CLM-41](@/dossiers/ales-juchelka/claims/clm-41.md), [CLM-42](@/dossiers/ales-juchelka/claims/clm-42.md), [CLM-44](@/dossiers/ales-juchelka/claims/clm-44.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
 
 ## Veřejná vyjádření a obhajoba ministra {#kauza-obhajoba}
 
-Téma v autorizovaném rozsahu — viz tvrzení [CLM-17](@/dossiers/ales-juchelka/claims/clm-17.md), [CLM-18](@/dossiers/ales-juchelka/claims/clm-18.md), [CLM-19](@/dossiers/ales-juchelka/claims/clm-19.md), [CLM-20](@/dossiers/ales-juchelka/claims/clm-20.md), [CLM-21](@/dossiers/ales-juchelka/claims/clm-21.md), [CLM-22](@/dossiers/ales-juchelka/claims/clm-22.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
-
-## Kauza střetu zájmů bývalé poradkyně {#kauza-poradkyne-stret}
-
-Téma v autorizovaném rozsahu — viz tvrzení [CLM-23](@/dossiers/ales-juchelka/claims/clm-23.md), [CLM-24](@/dossiers/ales-juchelka/claims/clm-24.md), [CLM-45](@/dossiers/ales-juchelka/claims/clm-45.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
-
-## Veřejná vyjádření a obhajoba ministra {#kauza-obhajoba}
-
-Téma v autorizovaném rozsahu — viz tvrzení [CLM-25](@/dossiers/ales-juchelka/claims/clm-25.md), [CLM-26](@/dossiers/ales-juchelka/claims/clm-26.md), [CLM-27](@/dossiers/ales-juchelka/claims/clm-27.md), [CLM-28](@/dossiers/ales-juchelka/claims/clm-28.md), [CLM-29](@/dossiers/ales-juchelka/claims/clm-29.md), [CLM-30](@/dossiers/ales-juchelka/claims/clm-30.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
-
-## Rozpočtový dopad kauzy {#kauza-rozpocet}
-
-Téma v autorizovaném rozsahu — viz tvrzení [CLM-31](@/dossiers/ales-juchelka/claims/clm-31.md), [CLM-32](@/dossiers/ales-juchelka/claims/clm-32.md), [CLM-33](@/dossiers/ales-juchelka/claims/clm-33.md), [CLM-34](@/dossiers/ales-juchelka/claims/clm-34.md), [CLM-35](@/dossiers/ales-juchelka/claims/clm-35.md), [CLM-36](@/dossiers/ales-juchelka/claims/clm-36.md), [CLM-37](@/dossiers/ales-juchelka/claims/clm-37.md), [CLM-43](@/dossiers/ales-juchelka/claims/clm-43.md), [CLM-46](@/dossiers/ales-juchelka/claims/clm-46.md), [CLM-47](@/dossiers/ales-juchelka/claims/clm-47.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
-
-## Trestní oznámení a kontrola NKÚ {#kauza-trestni-oznameni}
-
-Téma v autorizovaném rozsahu — viz tvrzení [CLM-38](@/dossiers/ales-juchelka/claims/clm-38.md), [CLM-39](@/dossiers/ales-juchelka/claims/clm-39.md), [CLM-40](@/dossiers/ales-juchelka/claims/clm-40.md), [CLM-41](@/dossiers/ales-juchelka/claims/clm-41.md), [CLM-42](@/dossiers/ales-juchelka/claims/clm-42.md), [CLM-44](@/dossiers/ales-juchelka/claims/clm-44.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
+Téma v autorizovaném rozsahu — viz tvrzení [CLM-17](@/dossiers/ales-juchelka/claims/clm-17.md), [CLM-18](@/dossiers/ales-juchelka/claims/clm-18.md), [CLM-19](@/dossiers/ales-juchelka/claims/clm-19.md), [CLM-20](@/dossiers/ales-juchelka/claims/clm-20.md), [CLM-21](@/dossiers/ales-juchelka/claims/clm-21.md), [CLM-22](@/dossiers/ales-juchelka/claims/clm-22.md), [CLM-25](@/dossiers/ales-juchelka/claims/clm-25.md), [CLM-26](@/dossiers/ales-juchelka/claims/clm-26.md), [CLM-27](@/dossiers/ales-juchelka/claims/clm-27.md), [CLM-28](@/dossiers/ales-juchelka/claims/clm-28.md), [CLM-29](@/dossiers/ales-juchelka/claims/clm-29.md), [CLM-30](@/dossiers/ales-juchelka/claims/clm-30.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.

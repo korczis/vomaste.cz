@@ -10,12 +10,21 @@
     "@id": "https://vomaste.cz/id/dossiers/ales-juchelka"
   },
   "title": "Trestní oznámení a kontrola NKÚ",
-  "summary": "Trestní oznámení a kontrola NKÚ — viz tvrzení CLM-13, CLM-14, CLM-15.",
+  "summary": "Trestní oznámení a kontrola NKÚ — trestní oznámení hnutí STAN, zahrnutí kauzy do probíhající kontroly Nejvyššího kontrolního úřadu a vyjádření ministerstva i premiéra Babiše k dosavadní absenci trestního oznámení ze strany MPSV.",
   "period": "2026",
   "status": "status-single",
   "statusLabel": "Sledované téma",
   "anchor": "kauza-trestni-oznameni",
   "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-14"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-15"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/claims/CLM-38"
     },
@@ -37,16 +46,22 @@
   ],
   "sources": [
     {
-      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-11"
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-09"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-10"
     },
     {
-      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-15"
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-11"
     },
     {
-      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-09"
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-14"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-juchelka/sources/SRC-15"
     }
   ],
   "subjects": [
