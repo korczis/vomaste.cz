@@ -13,6 +13,7 @@
     "js:build": "esbuild assets/js/app.js assets/js/graph-app.js --bundle --minify --target=es2020 --outdir=static/js",
     "data:validate": "node scripts/data/validate.mjs",
     "dossier:scaffold": "node scripts/data/scaffold-dossier.mjs",
+    "dossier:next-id": "node scripts/dossier/next-id.mjs",
     "data:compile": "node scripts/data/check.mjs",
     "data:views": "node scripts/data/build-view-models.mjs",
     "data:generate-content": "node scripts/data/generate-zola-content.mjs",
