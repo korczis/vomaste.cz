@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 502 context entities across 26 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 501 context entities across 27 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -2565,23 +2565,6 @@ Generated from 502 context entities across 26 dossier(s). Regenerate with `npm r
 - Claims: none
 - Sources: none (0 independent source families)
 - Relations: none
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Martin Kupka (`martin-kupka`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: alena-schillerova, andrej-babis, ivan-bednarik, jaromir-zuna, karel-havlicek, robert-plaga, zuzana-mrazova
-- Claims: CLM-04, CLM-06, CLM-07, CLM-09, CLM-12, CLM-16, CLM-26, CLM-39, CLM-42
-- Sources: SRC-02, SRC-03, SRC-06, SRC-07, SRC-08, SRC-11, SRC-16, SRC-19, SRC-20, SRC-21, SRC-30 (26 independent source families)
-- Relations:
-  - edge-kupka-schillerova (martin-kupka -> schillerova, "Kupka (ODS) označil novelu za „ústavní převrat na splátky“ a po vetu varoval před oslabením Sněmovny", dossier: alena-schillerova)
-  - edge-martin-kupka-bednarik (martin-kupka -> bednarik, "jako tehdejší ministr dopravy reagoval na jeho rezignaci v Českých drahách a poděkoval mu za obnovu vozového parku (2022)", dossier: ivan-bednarik)
-  - edge-martin-kupka-ods (martin-kupka -> ods, "poslanec za ODS", dossier: jaromir-zuna)
-  - edge-martin-kupka-zuna (martin-kupka -> zuna, "nezveřejnění rozhovoru prezidenta Pavla označil za cenzuru v nejtvrdší podobě", dossier: jaromir-zuna)
-  - edge-kupka-havlicek (martin-kupka -> havlicek, "Kupka (ODS) kritizoval Havlíčkovu novelu stavebního zákona jako plnou „nášlapných min“", dossier: karel-havlicek)
-  - edge-plaga-kupka (plaga -> martin-kupka, "kritika ODS (Martin Kupka) k plošnému zákazu mobilů ve školách", dossier: robert-plaga)
-  - edge-mrazova-kupka (mrazova -> martin-kupka, "předseda ODS označil vyjádření Mrázové k jejím kauzám za pokrytectví", dossier: zuzana-mrazova)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Masarykova nemocnice v Ústí nad Labem (`masarykova-nemocnice-usti`)

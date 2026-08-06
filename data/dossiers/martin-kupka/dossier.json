@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-kupka",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "martin-kupka",
+  "slug": "martin-kupka",
+  "title": "Martin Kupka",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení Martina Kupky.",
+  "dossierType": "entity",
+  "canonicalDossier": "martin-kupka",
+  "subject": "martin-kupka",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-06",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-06-MARTIN-KUPKA"
+    ]
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nMartin Kupka je poslanec Poslanecké sněmovny PČR a od ledna 2026 předseda ODS, jedné z opozičních parlamentních stran. Jako veřejný funkcionář spadá do standing scope autorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro tento dossier je `AUTH-2026-08-06-MARTIN-KUPKA`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický záznam — dokládá pouze jeho aktuální poslanecký mandát a funkci předsedy ODS, nikoli hloubkovou investigativní rešerši případných kauz. Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/martin-kupka/claims/clm-01.md) | Martin Kupka je podle profilu na webu Poslanecké sněmovny PČR poslancem zvoleným za ODS (mandát od října 2025) a v lednu 2026 byl zvolen předsedou ODS, jak nezávisle informoval Deník.cz | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/martin-kupka/sources/src-01.md), [SRC-02](@/dossiers/martin-kupka/sources/src-02.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedeného mandátu a stranické funkce nic dalšího; nejde o hodnocení jeho politického působení ani o investigativní rešerši."
+    }
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "entity": "martin-kupka",
+        "label": "Martin Kupka",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": []
+  }
+}

@@ -197,13 +197,13 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 706 záznamů v 123 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 708 záznamů v 124 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
 | ctk | 291 | 21 | [ano](/zdroje/ctk/) |
 | seznam-zpravy | 38 | 13 | [ano](/zdroje/seznam-zpravy/) |
-| Poslanecká sněmovna Parlamentu ČR | 34 | 15 | [ano](/zdroje/psp-cz/) |
+| Poslanecká sněmovna Parlamentu ČR | 35 | 16 | [ano](/zdroje/psp-cz/) |
 | Vláda České republiky (vlada.gov.cz) | 28 | 17 | [ano](/zdroje/vlada-cz/) |
 | FORUM 24 | 20 | 10 | [ano](/zdroje/forum24/) |
 | denik-n | 17 | 9 | [ano](/zdroje/denik-n/) |
@@ -257,6 +257,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 706 záznamů v 123 rodinách/out
 | Ústavní soud ČR | 2 | 2 | — |
 | Vrchní státní zastupitelství v Olomouci | 2 | 1 | — |
 | ct24 | 1 | 1 | [ano](/zdroje/ceska-televize/) |
+| denik | 1 | 1 | [ano](/zdroje/denik-cz/) |
 | eppo | 1 | 1 | — |
 | idnes-dividenda-2026-07 | 1 | 1 | [ano](/zdroje/echo24/) |
 | nssoud | 1 | 1 | — |

@@ -174,3 +174,10 @@ authorized_at = "2026-08-05"
 subjects = ["martin-pavlik"]
 agents_md_section = "Scope extension, 2026-08-05: Martin Pavlík"
 scope_summary = "Samostatný entity dossier pro Martina Pavlíka, jednoznačně vymezeného veřejným rejstříkovým profilem https://www.podnikatel.cz/rejstrik/osoby/martin-pavlik-1902710/ a navázanými záznamy ARES. Rozsah zahrnuje pouze přímo doložené veřejné rejstříkové role a podíly u MEDIA PROJECT CZ s.r.o. (IČO 01529820), Bydlíme v Králově Poli, z.s. (IČO 02922703), HYDROPROGRESS, s.r.o. (IČO 04449461) a Nadačního fondu FIDUCIA (IČO 26228548). Dossier nesmí obsahovat ani odvozovat IT profesní profil, schopnosti, zaměstnání, přibližný věk, datum narození, adresu bydliště ani jiné osoby stejného jména. Každé publikované tvrzení musí být doloženo přímo otevřeným veřejným zdrojem; vlastní či profilové zdroje dokládají jen vlastní sebeprezentaci. Při jakékoli nejasnosti identity se údaj nezveřejní a zůstane jako mezera, nikoli jako domněnka. Samotná rejstříková funkce nebo podíl nesmějí být prezentovány jako podezření či pochybení."
+
+[[authorizations]]
+id = "AUTH-2026-08-06-MARTIN-KUPKA"
+authorized_at = "2026-08-06"
+subjects = ["martin-kupka"]
+agents_md_section = "Scope extension, 2026-08-06: Martin Kupka"
+scope_summary = "Standing scope authorization (AUTH-2026-08-05-PLATFORM-SCOPE): Martin Kupka je veřejný funkcionář — poslanec Poslanecké sněmovny PČR zvolený za ODS a od ledna 2026 předseda ODS, opoziční parlamentní strany. Autorizace pokrývá výhradně jeho základní veřejné politicko-kariérní fakty (poslanecký mandát, funkce předsedy strany) doložené přímo otevřenými zdroji (psp.cz, Deník.cz). Nejde o hlubší investigativní rešerši kauz ani o žádné další téma — to by vyžadovalo samostatnou budoucí autorizaci."

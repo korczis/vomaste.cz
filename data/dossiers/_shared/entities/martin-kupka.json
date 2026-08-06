@@ -9,9 +9,9 @@
   "entityId": "martin-kupka",
   "title": "Martin Kupka",
   "entityType": "person",
-  "publicationRole": "context",
-  "dossierEnabled": false,
-  "dossierStatus": "not_authorized",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
   "coverageState": "discovered",
   "dossiers": [
     "alena-schillerova",
@@ -19,6 +19,7 @@
     "ivan-bednarik",
     "jaromir-zuna",
     "karel-havlicek",
+    "martin-kupka",
     "robert-plaga",
     "zuzana-mrazova"
   ],
@@ -60,7 +61,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Kontextová entita — Předseda ODS; opakovaný kritik vládních návrhů (stavební zákon, kauza Kamufláž, Mrázová, zákaz mobilů). Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (alena-schillerova, andrej-babis, ivan-bednarik, jaromir-zuna, karel-havlicek, robert-plaga, zuzana-mrazova). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+      "value": "Subjekt vlastního dossieru (`martin-kupka`, AUTH-2026-08-06-MARTIN-KUPKA) — poslanec Poslanecké sněmovny PČR za ODS a od ledna 2026 předseda ODS. Zároveň se jmenovitě objevuje jako kontext v citovaném obsahu dalších autorizovaných dossierů (alena-schillerova, andrej-babis, ivan-bednarik, jaromir-zuna, karel-havlicek, robert-plaga, zuzana-mrazova) jako opakovaný kritik vládních návrhů (stavební zákon, kauza Kamufláž, Mrázová, zákaz mobilů) — tato tvrzení nejsou součástí jeho vlastního dossieru, který je záměrně minimální a nezahrnuje investigativní rešerši kauz."
     }
   ]
 }

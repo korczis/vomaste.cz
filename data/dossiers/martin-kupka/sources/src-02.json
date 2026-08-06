@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-kupka/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-kupka"
+  },
+  "title": "SRC-02 — Deník.cz: Martin Kupka je novým předsedou ODS",
+  "description": "Zpravodajský článek o volbě Martina Kupky předsedou ODS na 32. kongresu strany.",
+  "outlet": "Deník.cz (VLTAVA LABE MEDIA)",
+  "sourceFamily": "denik",
+  "sourceType": "zpravodajství",
+  "url": "https://www.denik.cz/z_domova/martin-kupka-predseda-ods-volba.html",
+  "retrieved": "2026-08-06",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-kupka/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "martin-kupka"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpravodajský článek Deník.cz, otevřen a přečten 2026-08-06.\nInformuje, že delegáti 32. kongresu ODS zvolili v lednu 2026 Martina Kupku novým předsedou strany tajnou volbou, čímž nahradil dosavadního předsedu Petra Fialu po 12 letech v čele. Kupka byl do té doby místopředsedou ODS, ministrem dopravy a stranickým mluvčím.\n\nPoznámka k typu zdroje a jeho limitům: nezávislé, redakčně zpracované zpravodajství soukromého vydavatele — jiná rodina zdroje i jiný vydavatel než SRC-01 (státní instituce), takže spolu tvoří nezávislou dvojici pro účely korporace tvrzení. Článek nedokládá aktuální poslanecký mandát ke dni čtení — tu dokládá SRC-01. Přesná čísla hlasování se mezi dostupnými přehledy volby mírně liší (různé zdroje uvádějí různý počet platných hlasů) a proto zde nejsou přebírána do tvrzení."
+    }
+  ],
+  "order": 2
+}

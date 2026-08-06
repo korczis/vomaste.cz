@@ -1,6 +1,6 @@
 {
   "$comment": "Hash-kotva append-only autorizačního logu v AGENTS.md (## Content about real parties). Generuje `npm run authorization:anchor`: interaktivně, nebo pro čistě nový záznam po výslovné autorizaci vlastníka v aktuální konverzaci. verify-authorization-log-append-only.mjs proti ní ověřuje byte-verní integritu každého záznamu; validate-authorization.mjs přes ni váže data/authorizations.toml na log. Needitovat ručně.",
-  "generatedAt": "2026-08-05",
+  "generatedAt": "2026-08-06",
   "algorithm": "sha256(normalized entry block: LF line endings, trailing whitespace trimmed)",
   "entries": [
     {
@@ -118,6 +118,10 @@
     {
       "heading": "### Governance and scope supersession, 2026-08-05: standing public-interest scope and Prismatic integration",
       "sha256": "87c75536ee8fa1c09a0ddc60adca32ced8f9095b159cd6fb4dbb859b38b63c13"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-06: Martin Kupka",
+      "sha256": "6ae9f24937f6313ddf70cfe1794c2e2be586d85b346a7a9388f5ecf726de3824"
     }
   ]
 }
