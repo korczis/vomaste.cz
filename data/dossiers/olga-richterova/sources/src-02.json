@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/olga-richterova/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/olga-richterova"
+  },
+  "title": "SRC-02 — Deník.cz (ČTK): Místopředsedy Pirátů se stali Šmíd, Stojanová, Hlavenka a Richterová",
+  "description": "Agenturní zpravodajství ČTK o zvolení místopředsednictva České pirátské strany na republikovém fóru v Prachaticích, včetně obhájení pozice Olgy Richterové.",
+  "outlet": "Deník.cz (VLTAVA LABE MEDIA)",
+  "sourceType": "zpravodajství",
+  "url": "https://www.denik.cz/z_domova/mistopredsedy-piratu-se-stali-smid-stojanova-hlavenka-a-richterova.html",
+  "published": "2026-01-17",
+  "retrieved": "2026-08-07",
+  "sourceFamily": "ctk",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/olga-richterova/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "olga-richterova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Agenturní zpráva ČTK z 17. 1. 2026, otevřena a přečtena 2026-08-07.\nInformuje o zvolení místopředsednictva České pirátské strany na republikovém fóru v Prachaticích — místopředsedy se stali Martin Šmída (434 hlasů), Kateřina Stojanová (419 hlasů), Jiří Hlavenka (366 hlasů) a Olga Richterová (322 hlasů) z 589 odevzdaných hlasů; uvádí, že Richterová svou pozici obhájila. Označuje ji jako předsedkyni poslaneckého klubu Pirátů.\n\nPoznámka k typu zdroje a jeho limitům: agenturní zpravodajství ČTK (`sourceFamily: ctk`) — jiný vydavatel i jiná doména než SRC-03 (CNN Prima News, vlastní redakční práce s bylinem, bez ČTK přebírky u tohoto textu), takže spolu s ním tvoří nezávislou dvojici pro účely korporace tvrzení o zvolení místopředsedkyní strany. Nedokládá podrobnosti sněmovního mandátu ani klubové příslušnosti — ty dokládá SRC-01 (psp.cz)."
+    }
+  ],
+  "order": 2
+}

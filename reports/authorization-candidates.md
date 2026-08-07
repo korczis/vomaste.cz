@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 498 context entities across 41 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 497 context entities across 42 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -3478,18 +3478,6 @@ Generated from 498 context entities across 41 dossier(s). Regenerate with `npm r
 - Claims: CLM-24, CLM-25
 - Sources: SRC-04, SRC-27 (1 independent source family)
 - Relations: none
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Olga Richterová (`olga-richterova`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: alena-schillerova, karel-havlicek, zuzana-mrazova
-- Claims: CLM-07, CLM-32, CLM-51, CLM-52, CLM-53, CLM-54
-- Sources: SRC-03, SRC-18, SRC-19, SRC-24 (7 independent source families)
-- Relations:
-  - edge-richterova-schillerova (olga-richterova -> schillerova, "Richterová (Piráti) uvedla, že novela může vést ke „kolapsu státu“", dossier: alena-schillerova)
-  - edge-richterova-havlicek (olga-richterova -> havlicek, "Richterová (Piráti) reagovala na Havlíčkovo vystoupení tvrzením, že „evidentně ztrácí nervy“", dossier: karel-havlicek)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Ondřej Macura (`ondrej-macura`)

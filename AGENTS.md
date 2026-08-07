@@ -1944,3 +1944,19 @@ přímo otevřenými zdroji (psp.cz, ČeskéNoviny.cz/ČTK, CNN Prima News).
 Nejde o investigativní rešerši jeho dřívějšího působení jako primátora
 hlavního města Prahy ani žádné jiné téma — to by vyžadovalo samostatnou
 budoucí autorizaci.
+
+### Scope extension, 2026-08-07: Olga Richterová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-07:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Olga Richterová je veřejná
+funkcionářka — poslankyně Poslanecké sněmovny Parlamentu ČR za Piráty
+(mandát od 4. 10. 2025, volební obvod hlavní město Praha), předsedkyně
+poslaneckého klubu Pirátů (od 5. 10. 2025) a od 17. 1. 2026 4. místopředsedkyně
+České pirátské strany (obhájila tuto pozici na republikovém fóru v
+Prachaticích). Rozsah tohoto dossieru je záměrně minimální: pouze základní,
+aktuálně ověřený politický profil (poslanecký mandát, vedení poslaneckého
+klubu Pirátů, funkce místopředsedkyně strany), doložený přímo otevřenými
+zdroji (psp.cz, Deník.cz/ČTK, CNN Prima News). Nejde o investigativní
+rešerši žádné kauzy ani jiného tématu — to by vyžadovalo samostatnou
+budoucí autorizaci.
