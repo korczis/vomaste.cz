@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 491 context entities across 49 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 490 context entities across 50 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -4957,16 +4957,6 @@ Generated from 491 context entities across 49 dossier(s). Regenerate with `npm r
 - Sources: SRC-08 (1 independent source family)
 - Relations:
   - edge-james-quick-vladimir-ruzicka (james-quick -> vladimir-ruzicka, "podal trestní oznámení; věc skončila pravomocným odsouzením za zpronevěru", dossier: james-quick)
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Vlastimil Válek (`vlastimil-valek`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: adam-vojtech
-- Claims: CLM-49
-- Sources: SRC-29 (1 independent source family)
-- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Vodňanská drůbež (`vodnanska-drubez`)

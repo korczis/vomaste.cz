@@ -197,14 +197,14 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 769 záznamů v 134 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 772 záznamů v 135 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
 | ctk | 298 | 28 | [ano](/zdroje/ctk/) |
-| Poslanecká sněmovna Parlamentu ČR | 54 | 35 | [ano](/zdroje/psp-cz/) |
+| Poslanecká sněmovna Parlamentu ČR | 55 | 36 | [ano](/zdroje/psp-cz/) |
 | seznam-zpravy | 38 | 13 | [ano](/zdroje/seznam-zpravy/) |
-| Vláda České republiky (vlada.gov.cz) | 28 | 17 | [ano](/zdroje/vlada-cz/) |
+| Vláda České republiky (vlada.gov.cz) | 29 | 18 | [ano](/zdroje/vlada-cz/) |
 | FORUM 24 | 20 | 10 | [ano](/zdroje/forum24/) |
 | ČT24 (Česká televize) | 19 | 11 | [ano](/zdroje/ceska-televize/) |
 | denik-n | 18 | 10 | [ano](/zdroje/denik-n/) |
@@ -330,6 +330,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 769 záznamů v 134 rodinách/out
 | Vrchní soud v Praze | 1 | 1 | — |
 | YouControl | 1 | 1 | — |
 | Zdopravy.cz | 1 | 1 | — |
+| zdravezpravy.cz | 1 | 1 | — |
 | Zdravotnický deník | 1 | 1 | — |
 | Život v Česku | 1 | 1 | — |
 | respekt | 1 | 1 | — |

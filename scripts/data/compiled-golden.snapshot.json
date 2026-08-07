@@ -3,14 +3,14 @@
   "countsPerType": {
     "case": 95,
     "claim": 1001,
-    "dossier": 49,
+    "dossier": 50,
     "entity": 539,
     "gap": 208,
     "relation": 341,
-    "source": 769,
-    "update": 90
+    "source": 772,
+    "update": 89
   },
-  "countsDossiers": 49,
+  "countsDossiers": 50,
   "countsEntities": 539,
   "graphNodes": 539,
   "graphEdges": 341

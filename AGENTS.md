@@ -2060,3 +2060,19 @@ jeho aktuálním poslaneckém mandátu a roli předsedy poslaneckého klubu
 TOP 09, doložené přímo otevřenými zdroji (Poslanecká sněmovna Parlamentu
 ČR, ČeskéNoviny.cz). Nejde o investigativní rešerši žádné kauzy ani
 sporného tématu.
+
+### Scope extension, 2026-08-07: Vlastimil Válek
+
+Authorized by the site owner, explicitly and on the record, 2026-08-07:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Vlastimil Válek je veřejný
+funkcionář — bývalý místopředseda vlády a ministr zdravotnictví (17. 12.
+2021 – 15. 12. 2025, TOP 09), nyní poslanec Poslanecké sněmovny Parlamentu
+ČR za TOP 09 (mandát od 4. 10. 2025) a od 20. 1. 2026 místopředseda
+sněmovního Výboru pro zdravotnictví. Rozsah tohoto dossieru je záměrně
+minimální: pouze základní, aktuálně ověřený politický profil (poslanecký
+mandát, klubová příslušnost TOP 09, funkce místopředsedy zdravotnického
+výboru, dřívější ministerská funkce s přesnými daty), doložený přímo
+otevřenými zdroji (psp.cz, vlada.gov.cz, zdravezpravy.cz). Nejde o
+investigativní rešerši jeho ministerského působení ani žádné kauzy — to
+by vyžadovalo samostatnou budoucí autorizaci.

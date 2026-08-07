@@ -55,10 +55,10 @@ veškeré nedodělané zdrojovací práce.
 
 | Metrika | Hodnota |
 |---|---|
-| Dossierů | 49 |
+| Dossierů | 50 |
 | Tvrzení | 1001 |
 | — z toho `E0` / `E1` / `E1+` / `E2` | 0 / 559 / 93 / 349 |
-| Zdrojů (z toho s vyplněnou `sourceFamily`) | 769 (406) |
+| Zdrojů (z toho s vyplněnou `sourceFamily`) | 772 (406) |
 | Kauz | 95 |
 | Mezer celkem / otevřených / zastaralých | 208 / 205 / 0 |
 | Vztahů | 341 |
@@ -84,7 +84,7 @@ veškeré nedodělané zdrojovací práce.
 | 14 | [Boris Šťastný](../data/dossiers/boris-stastny/) `boris-stastny` | **střední** | 64 | 4.4 % | 80.2 % | 42 | 0/21/11/10 | 10 | 8 | 2026-07-30 |
 | 15 | [Jeroným Tejc](../data/dossiers/jeronym-tejc/) `jeronym-tejc` | **nízká** | 62 | 4.3 % | 84.5 % | 52 | 0/22/8/22 | 10 | 16 | 2026-08-06 |
 | 16 | [Lubomír Metnar](../data/dossiers/lubomir-metnar/) `lubomir-metnar` | **nízká** | 47 | 3.3 % | 87.8 % | 31 | 0/13/6/12 | 15 | 5 | 2026-08-05 |
-| 17 | [James Quick](../data/dossiers/james-quick/) `james-quick` | **nízká** | 45 | 3.1 % | 90.9 % | 23 | 0/19/1/3 | 3 | 20 | 2026-08-05 |
+| 17 | [James Quick](../data/dossiers/james-quick/) `james-quick` | **nízká** | 45 | 3.1 % | 90.9 % | 22 | 0/19/1/2 | 3 | 20 | 2026-08-05 |
 | 18 | [Tomio Okamura](../data/dossiers/tomio-okamura/) `tomio-okamura` | **nízká** | 43 | 3.0 % | 93.9 % | 36 | 0/9/15/12 | 8 | 10 | 2026-08-05 |
 | 19 | [Richard Chlad](../data/dossiers/richard-chlad/) `richard-chlad` | **nízká** | 27 | 1.9 % | 95.8 % | 11 | 0/10/1/0 | 3 | 1 | 2026-08-05 |
 | 20 | [Tünde Bartha](../data/dossiers/tunde-bartha/) `tunde-bartha` | **nízká** | 17 | 1.2 % | 96.9 % | 13 | 0/6/0/7 | 4 | 8 | 2026-08-01 |
@@ -116,7 +116,8 @@ veškeré nedodělané zdrojovací práce.
 | 46 | [Petr Sokol](../data/dossiers/petr-sokol/) `petr-sokol` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 4 | 2026-08-06 |
 | 47 | [Renáta Zajíčková](../data/dossiers/renata-zajickova/) `renata-zajickova` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 3 | 2026-08-06 |
 | 48 | [Vít Rakušan](../data/dossiers/vit-rakusan/) `vit-rakusan` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 1 | 2026-08-07 |
-| 49 | [Zdeněk Hřib](../data/dossiers/zdenek-hrib/) `zdenek-hrib` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 2 | 2026-08-07 |
+| 49 | [Vlastimil Válek](../data/dossiers/vlastimil-valek/) `vlastimil-valek` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 3 | 2026-08-07 |
+| 50 | [Zdeněk Hřib](../data/dossiers/zdenek-hrib/) `zdenek-hrib` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 2 | 2026-08-07 |
 
 ## Plán per dossier
 
@@ -402,9 +403,9 @@ Další krok:
 
 | Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
 |---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 23 | 0 | 19 | 1 | 3 | 23 | 3 | 5 | 3 (3) | 10 |
+| 22 | 0 | 19 | 1 | 2 | 23 | 3 | 5 | 3 (3) | 10 |
 
-Deklarované stavy: CORROBORATED 3 · 1 ZDROJ 19 · CITACE 1
+Deklarované stavy: CORROBORATED 2 · 1 ZDROJ 19 · CITACE 1
 
 Další krok:
 
@@ -871,7 +872,21 @@ Další krok:
 
 - 1 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
 
-### 49. Zdeněk Hřib — `zdenek-hrib`
+### 49. Vlastimil Válek — `vlastimil-valek`
+
+**Priorita žádná** · 0 bodů (0.0 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-07`, revidováno `—`
+
+| Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
+|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 0 | 0 | 0 | 1 | 3 | 0 | 0 | 0 (0) | 0 |
+
+Deklarované stavy: CORROBORATED 1
+
+Další krok:
+
+- 3 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
+
+### 50. Zdeněk Hřib — `zdenek-hrib`
 
 **Priorita žádná** · 0 bodů (0.0 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-07`, revidováno `—`
 
