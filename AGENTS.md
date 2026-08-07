@@ -2025,3 +2025,24 @@ to by vyžadovalo samostatnou budoucí autorizaci.
 Authorized by the site owner, explicitly and on the record, 2026-08-07:
 
 Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Benjamin Činčila je veřejný funkcionář — poslanec Poslanecké sněmovny Parlamentu ČR za KDU-ČSL (mandát od 4. 10. 2025, volební kraj Vysočina), od 24. 4. 2026 první místopředseda KDU-ČSL (zvolen na sjezdu strany, podpořen 239 z 264 delegátů) a od 6. 5. 2026 místopředseda poslaneckého klubu KDU-ČSL. Rozsah tohoto dossieru je záměrně minimální: pouze základní, aktuálně ověřený politický profil (poslanecký mandát, stranická funkce prvního místopředsedy KDU-ČSL, klubová funkce místopředsedy poslaneckého klubu), doložený přímo otevřenými zdroji (psp.cz, ČT24/Česká televize). Nejde o investigativní rešerši žádné kauzy ani sporného tématu — to by vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-07: Petr Fiala — premiérské období
+
+Authorized by the site owner, explicitly and on the record, 2026-08-07:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): rozšíření AUTH-2026-08-06-PETR-FIALA. Petr Fiala byl v letech 2021–2025 předsedou vlády ČR — nejvyšší exekutivní funkce, veřejný zájem nesporný. Dřívější autorizace omezovala dossier na jeho poslanecký profil po odchodu z čela ODS a výslovně vylučovala hlubší rešerši premiérského období. Tato autorizace rozšiřuje rozsah na premiérské období samotné, v mezích níže uvedených témat, nalezených na úrovni search-výsledku a u dvou z nich již přímo otevřených a přečtených před sepsáním tohoto záznamu.
+
+Rozsah zahrnuje:
+
+1. Souhrnné veřejné hodnocení jeho čtyřletého mandátu — průzkum CVVM „Hodnocení vlády Petra Fialy" (zveřejněno 2025-08-21, otevřeno a přečteno přímo: nespokojenost převažuje ve všech zkoumaných oblastech, nejlépe hodnocen ohlášený program 30 % a osoba premiéra 28 %, nejhůře komunikace vlády s veřejností 18 %) a anketa RESPEKT „Jaký premiér byl Petr Fiala" (2025-09-12, otevřena a přečtena přímo: 15 jmenovaných přispěvatelů — Jindřich Šídlo, Apolena Rychlíková, Josef Středula, Zuzana Szabó Lenhartová, Petros Michopulos, Michal Stehlík, Petra Hůlová, Ivan Pilný, Ivan Gabal, Johana Nejedlová, Tomáš Halík, Otto Eibl, Jana Matesová, Martin Groman, Šárka Homfray), vedená striktně jako OPINION/NÁZOR, nikdy jako vlastní hodnocení webu.
+2. Organizační fakta o personálním složení jeho vlády — přehled ministerských rezignací a jejich oficiálně uváděných důvodů v průběhu mandátu (2021–2025), jako fakta o vládě, kterou vedl, nikoli jako rozvinutí vlastní kauzy jmenovaného ministra bez jeho samostatné autorizace; každý takto zmíněný ministr zůstává záznamem vazby v rozsahu už publikovaného zpravodajství.
+3. „Bitcoinová kauza" ministerstva spravedlnosti (přijetí daru v bitcoinech v hodnotě cca 1 miliardy Kč od odsouzeného drogového dealera, rezignace ministra spravedlnosti Pavla Blažka v květnu/červnu 2025, vyšetřování NCOZ) — výhradně z pohledu institucionální odpovědnosti a reakce vlády/premiéra, nikoli jako rozvinutí obvinění vůči Pavlu Blažkovi samotnému, který není a touto autorizací se nestává subjektem vlastního dossieru.
+4. Zásadní hospodářsko-politický rekord mandátu, jak je popisován nezávislým zpravodajstvím: energetická krize a snížení závislosti na ruských zdrojích, podpora Ukrajině (rozsah a forma vojenské a jiné pomoci), vývoj inflace a veřejného dluhu, důchodová reforma.
+
+Každý jednotlivý zdroj u bodů 2–4 musí být před napsáním jakéhokoli tvrzení přímo otevřen a přečten (nejde o přebírání z Wikipedie nebo z výtahu vyhledávače) u prvotního, jmenovaného, nezávislého zpravodajského zdroje. Status tvrzení (CORROBORATED/1 ZDROJ/CITACE/SPORNÉ/NÁZOR) se řídí stejnými validátorovými pravidly jako zbytek datasetu. Procesní stav (rezignace, vyšetřování, dosud nepravomocné závěry) musí být uveden při každé zmínce, nikoli jen jednou. Žádný jmenovaný ministr uvedený v bodě 2 ani Pavel Blažek v bodě 3 se touto autorizací nestává subjektem vlastního dossieru — objeví se výhradně jako záznam vazby v rozsahu už citovaného zpravodajství.
+
+### Scope extension, 2026-08-07: Matěj Ondřej Havel
+
+Authorized by the site owner, explicitly and on the record, 2026-08-07:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Matěj Ondřej Havel je veřejný funkcionář — poslanec Poslanecké sněmovny Parlamentu ČR za TOP 09 (mandát od 4. 10. 2025, volební kraj Královéhradecký), od 14. 11. 2025 předseda Výboru pro vědu, vzdělání, kulturu, mládež a tělovýchovu a od 8. 11. 2025 předseda TOP 09 (zvolen na sněmu strany, podpořen 120 ze 171 hlasujících delegátů, nahradil Markétu Pekarovou Adamovou). Rozsah tohoto dossieru je záměrně minimální: pouze základní, aktuálně ověřený politický profil (poslanecký mandát, výborová funkce předsedy školského výboru, stranická funkce předsedy TOP 09), doložený přímo otevřenými zdroji (psp.cz, Aktuálně.cz). Nejde o investigativní rešerši žádné kauzy ani sporného tématu — to by vyžadovalo samostatnou budoucí autorizaci.

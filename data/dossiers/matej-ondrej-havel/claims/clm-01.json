@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/matej-ondrej-havel/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/matej-ondrej-havel"
+  },
+  "text": "Matěj Ondřej Havel je od 4. 10. 2025 poslancem Poslanecké sněmovny Parlamentu ČR za TOP 09 (Královéhradecký kraj), od 14. 11. 2025 předsedou Výboru pro vědu, vzdělání, kulturu, mládež a tělovýchovu a od 8. 11. 2025 předsedou TOP 09 (zvolen na sněmu strany 120 hlasy ze 171 hlasujících delegátů, nahradil Markétu Pekarovou Adamovou) — doloženo oficiálním profilem na webu Poslanecké sněmovny (psp.cz) a nezávislým zpravodajstvím Aktuálně.cz.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/matej-ondrej-havel/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/matej-ondrej-havel/sources/SRC-02"
+    }
+  ],
+  "subjects": [
+    "matej-ondrej-havel"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/matej-ondrej-havel/_index.md)."
+    }
+  ]
+}

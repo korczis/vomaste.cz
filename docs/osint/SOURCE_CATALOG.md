@@ -197,20 +197,20 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 763 záznamů v 131 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 765 záznamů v 131 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
 | ctk | 298 | 28 | [ano](/zdroje/ctk/) |
-| Poslanecká sněmovna Parlamentu ČR | 52 | 33 | [ano](/zdroje/psp-cz/) |
+| Poslanecká sněmovna Parlamentu ČR | 53 | 34 | [ano](/zdroje/psp-cz/) |
 | seznam-zpravy | 38 | 13 | [ano](/zdroje/seznam-zpravy/) |
 | Vláda České republiky (vlada.gov.cz) | 28 | 17 | [ano](/zdroje/vlada-cz/) |
 | FORUM 24 | 20 | 10 | [ano](/zdroje/forum24/) |
 | ČT24 (Česká televize) | 19 | 11 | [ano](/zdroje/ceska-televize/) |
 | denik-n | 18 | 10 | [ano](/zdroje/denik-n/) |
 | Echo24 | 17 | 13 | [ano](/zdroje/echo24/) |
+| Aktuálně.cz | 13 | 8 | [ano](/zdroje/aktualne-cz/) |
 | Novinky.cz | 13 | 12 | [ano](/zdroje/novinky-cz/) |
-| Aktuálně.cz | 12 | 7 | [ano](/zdroje/aktualne-cz/) |
 | denik-cz | 11 | 6 | [ano](/zdroje/denik-cz/) |
 | Česká justice | 11 | 6 | [ano](/zdroje/ceska-justice/) |
 | irozhlas | 9 | 6 | [ano](/zdroje/irozhlas/) |

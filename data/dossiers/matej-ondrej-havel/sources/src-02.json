@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/matej-ondrej-havel/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/matej-ondrej-havel"
+  },
+  "title": "SRC-02 — Aktuálně.cz: TOP 09 nově povede východočeský poslanec Matěj Ondřej Havel. Protikandidáta neměl",
+  "description": "Zpravodajství Aktuálně.cz o sněmu TOP 09 8. 11. 2025, kde byl Matěj Ondřej Havel zvolen předsedou strany.",
+  "outlet": "Aktuálně.cz",
+  "sourceType": "redakční zpravodajství",
+  "url": "https://zpravy.aktualne.cz/domaci/novym-predsedou-top-09-se-stal-poslanec-matej-ondrej-havel/r~9ce517d4bc8d11f0ae9c0cc47ab5f122/",
+  "published": "2025-11-08",
+  "retrieved": "2026-08-07",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/matej-ondrej-havel/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "matej-ondrej-havel"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpráva Aktuálně.cz o sněmu TOP 09 konaném 8. 11. 2025, otevřena a přečtena 2026-08-07.\nInformuje, že poslanec Matěj Ondřej Havel byl zvolen předsedou strany bez protikandidáta, s podporou 120 ze 171 hlasujících delegátů (mírně přes 70 %), a nahradil dosavadní předsedkyni Markétu Pekarovou Adamovou, která z čela strany i sněmovny odstoupila ze zdravotních důvodů.\n\nPoznámka k typu zdroje a jeho limitům: redakční zpravodajství (Aktuálně.cz) — jiná doména i jiný vydavatel než SRC-01 (Poslanecká sněmovna Parlamentu ČR, primární úřední zdroj), takže spolu s ním tvoří nezávislou dvojici pro účely korporace tohoto tvrzení. Přesné datum poslaneckého mandátu (4. 10. 2025) a výborovou funkci předsedy dokládá SRC-01."
+    }
+  ],
+  "order": 2
+}

@@ -9,14 +9,15 @@
   "entityId": "matej-ondrej-havel",
   "title": "Matěj Ondřej Havel",
   "entityType": "person",
-  "publicationRole": "context",
-  "dossierEnabled": false,
-  "dossierStatus": "not_authorized",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
   "coverageState": "discovered",
   "dossiers": [
     "andrej-babis",
     "jaromir-zuna",
-    "zuzana-mrazova"
+    "zuzana-mrazova",
+    "matej-ondrej-havel"
   ],
   "order": 253,
   "provenance": {

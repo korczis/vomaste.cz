@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 493 context entities across 47 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 492 context entities across 48 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -2518,18 +2518,6 @@ Generated from 493 context entities across 47 dossier(s). Regenerate with `npm r
 - Claims: CLM-02, CLM-44
 - Sources: SRC-01, SRC-15, SRC-27 (6 independent source families)
 - Relations: none
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Matěj Ondřej Havel (`matej-ondrej-havel`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: andrej-babis, jaromir-zuna, zuzana-mrazova
-- Claims: CLM-06, CLM-09, CLM-16
-- Sources: SRC-02, SRC-06, SRC-11 (6 independent source families)
-- Relations:
-  - edge-matej-ondrej-havel-top09 (matej-ondrej-havel -> top-09, "poslanec za TOP 09", dossier: jaromir-zuna)
-  - edge-matej-ondrej-havel-zuna (matej-ondrej-havel -> zuna, "po nezveřejnění rozhovoru prezidenta Pavla žádal Zůnovu rezignaci", dossier: jaromir-zuna)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## MEAS Consulting s.r.o. v likvidaci (`meas-consulting`)
