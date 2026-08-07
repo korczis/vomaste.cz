@@ -14,7 +14,7 @@ autorizačnímu logu v `AGENTS.md`.
 
 | ID | Titul | Scope (soubory/sekce) | Branch | Owner | Stav | Závislosti | Akceptace |
 |----|-------|-----------------------|--------|-------|------|------------|-----------|
-| T-090 | `[scope-check]` James Quick: nezávislé doložení domén napodobujících státní instituce a plánovaného veřejného registru — pouze průnik tvrzení přímo doložený ČT24 + Peníze.cz, respektive ČT24 + iROZHLAS; napojení na existující entity, kauzy, graf a UI | `data/dossiers/james-quick/**`, odvozené adaptéry `content/dossiers/james-quick/**`, generované snapshoty/reporty | task/T-090-james-quick-corroboration | ORCH | in-progress | – | Výslovná autorizace vlastníka pro `jamesquick.cz`; žádná vlastní/přidružená stránka jako nezávislý hlas; R8/S10 a tabulka byte-exact; `npm run data:validate`, `npm run data:build` a plný `npm run build` zelené; commit, push a deploy |
+| T-090 | `[scope-check]` James Quick: nezávislé doložení domén napodobujících státní instituce a plánovaného veřejného registru — pouze průnik tvrzení přímo doložený ČT24 + Peníze.cz, respektive ČT24 + iROZHLAS; napojení na existující entity, kauzy, graf a UI | `data/dossiers/james-quick/**`, odvozené adaptéry `content/dossiers/james-quick/**`, generované snapshoty/reporty | task/T-090-james-quick-corroboration | ORCH | merged (17e10907, fast-forward) | – | CLM-20/21 + SRC-21/22; dvě nové CORROBORATED položky, R8/S10 a tabulková parita zelené; `npm run build` 43/43 zelený (1019 testů, 499,9 s); push a Pages deploy spuštěny |
 
 ## Aktivní zadání: manifest deep-dive + docs onramp (2026-08-06)
 
