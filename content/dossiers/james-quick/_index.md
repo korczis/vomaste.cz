@@ -92,3 +92,12 @@ Dále je třeba ověřit deklarovanou afiliaci „CIA“, širší firemní sí�
 ## Metodické omezení
 
 Oficiální web subjektu, CERD a otevřené blogovací platformy mohou doložit autorství nebo existenci veřejného výroku. Bez dalšího nezávislého zdroje ale nedokládají pravdivost tvrzení, která o sobě nebo jiných osobách publikují.
+
+## Doplnění registru tvrzení {#doplneni-registru}
+
+| ID | Tvrzení | Stav | Zdroje |
+|---|---|---|---|
+| <a id="clm-20"></a>[CLM-20](@/dossiers/james-quick/claims/clm-20.md) | ČT24 a Peníze.cz v dubnu 2011 nezávisle popsaly síť domén připomínajících názvy českých státních institucí, které návštěvníky přesměrovávaly nebo vedly k nabídce služeb CERD; oba zdroje uvádějí například domény odkazující názvem na ministerstvo financí či finanční úřady. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-05](@/dossiers/james-quick/sources/src-05.md), [SRC-21](@/dossiers/james-quick/sources/src-21.md) |
+| <a id="clm-21"></a>[CLM-21](@/dossiers/james-quick/claims/clm-21.md) | ČT24 a iROZHLAS 26. října 2010 nezávisle uvedly, že CERD plánoval veřejně zpřístupnit registr osob spojovaných se sexuálním násilím na dětech a umístit jej na zahraniční server; oba zdroje zároveň citovaly stanovisko ÚOOÚ, podle něhož by takový internetový seznam odporoval pravidlům ochrany osobních údajů. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-13](@/dossiers/james-quick/sources/src-13.md), [SRC-22](@/dossiers/james-quick/sources/src-22.md) |
+
+Nové záznamy oddělují nezávisle potvrzené společné jádro od detailů a citací, které jsou zatím doloženy pouze jedním zdrojem. Doménová praxe je napojena na kauzu CERD; oznámený registr je napojen na samostatnou kauzu včetně následného upuštění od projektu.

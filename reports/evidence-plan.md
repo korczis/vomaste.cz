@@ -14,7 +14,7 @@ vypovídá o tom, že **tenhle web** má u daného dossieru nejvíc nedodělané
 zdrojovací práce. Je to metrika naší evidence, ne jeho jednání. Report se
 neroutuje na web, nezakládá dossier a není autorizačním rozhodnutím.
 
-**Datový horizont**: `2026-08-06` — nejnovější datum v datasetu. Report neobsahuje čas
+**Datový horizont**: `2026-08-07` — nejnovější datum v datasetu. Report neobsahuje čas
 běhu: stáří mezer se měří proti nejnovějšímu datu v datech, takže dva běhy nad
 stejným stromem dají bajt po bajtu stejný soubor.
 
@@ -56,9 +56,9 @@ veškeré nedodělané zdrojovací práce.
 | Metrika | Hodnota |
 |---|---|
 | Dossierů | 38 |
-| Tvrzení | 984 |
-| — z toho `E0` / `E1` / `E1+` / `E2` | 0 / 556 / 93 / 335 |
-| Zdrojů (z toho s vyplněnou `sourceFamily`) | 737 (392) |
+| Tvrzení | 986 |
+| — z toho `E0` / `E1` / `E1+` / `E2` | 0 / 556 / 93 / 337 |
+| Zdrojů (z toho s vyplněnou `sourceFamily`) | 739 (393) |
 | Kauz | 94 |
 | Mezer celkem / otevřených / zastaralých | 205 / 202 / 0 |
 | Vztahů | 341 |
@@ -84,7 +84,7 @@ veškeré nedodělané zdrojovací práce.
 | 14 | [Boris Šťastný](../data/dossiers/boris-stastny/) `boris-stastny` | **střední** | 64 | 4.5 % | 80.8 % | 42 | 0/21/11/10 | 10 | 8 | 2026-07-30 |
 | 15 | [Jeroným Tejc](../data/dossiers/jeronym-tejc/) `jeronym-tejc` | **nízká** | 62 | 4.3 % | 85.1 % | 52 | 0/22/8/22 | 10 | 16 | 2026-08-06 |
 | 16 | [Lubomír Metnar](../data/dossiers/lubomir-metnar/) `lubomir-metnar` | **nízká** | 47 | 3.3 % | 88.4 % | 31 | 0/13/6/12 | 15 | 5 | 2026-08-05 |
-| 17 | [James Quick](../data/dossiers/james-quick/) `james-quick` | **nízká** | 43 | 3.0 % | 91.4 % | 19 | 0/18/1/0 | 3 | 19 | 2026-08-05 |
+| 17 | [James Quick](../data/dossiers/james-quick/) `james-quick` | **nízká** | 43 | 3.0 % | 91.4 % | 21 | 0/18/1/2 | 3 | 20 | 2026-08-05 |
 | 18 | [Tomio Okamura](../data/dossiers/tomio-okamura/) `tomio-okamura` | **nízká** | 43 | 3.0 % | 94.4 % | 36 | 0/9/15/12 | 8 | 10 | 2026-08-05 |
 | 19 | [Richard Chlad](../data/dossiers/richard-chlad/) `richard-chlad` | **nízká** | 27 | 1.9 % | 96.3 % | 11 | 0/10/1/0 | 3 | 1 | 2026-08-05 |
 | 20 | [Tünde Bartha](../data/dossiers/tunde-bartha/) `tunde-bartha` | **nízká** | 17 | 1.2 % | 97.5 % | 13 | 0/6/0/7 | 4 | 8 | 2026-08-01 |
@@ -391,16 +391,16 @@ Další krok:
 
 | Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
 |---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 19 | 0 | 18 | 1 | 0 | 20 | 1 | 4 | 3 (3) | 10 |
+| 21 | 0 | 18 | 1 | 2 | 22 | 2 | 4 | 3 (3) | 10 |
 
-Deklarované stavy: 1 ZDROJ 18 · CITACE 1
+Deklarované stavy: CORROBORATED 2 · 1 ZDROJ 18 · CITACE 1
 
 Další krok:
 
 - 18 tvrzení stojí na jediném zdroji (např. CLM-01, CLM-03, CLM-04) → dohledat druhého, nezávislého vydavatele
 - 3 otevřených mezer s prioritou „vysoká" → projít je jako první, u každé zaznamenat výsledek kontroly
 - 1 tvrzení má ≥2 zdroje, ale všechny z jedné rodiny / od jednoho vydavatele (např. CLM-02) → dohledat jeden nezávislý doklad; tím se dostanou na CORROBORATED
-- 19 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
+- 20 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
 
 ### 18. Tomio Okamura — `tomio-okamura`
 

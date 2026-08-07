@@ -197,7 +197,7 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 737 záznamů v 126 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 739 záznamů v 127 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
@@ -213,8 +213,8 @@ Dopočítáno z `data/dossiers/**/sources/**`, 737 záznamů v 126 rodinách/out
 | Aktuálně.cz | 12 | 7 | [ano](/zdroje/aktualne-cz/) |
 | denik-cz | 11 | 6 | [ano](/zdroje/denik-cz/) |
 | Česká justice | 11 | 6 | [ano](/zdroje/ceska-justice/) |
+| irozhlas | 9 | 6 | [ano](/zdroje/irozhlas/) |
 | Ekonomický deník | 9 | 5 | [ano](/zdroje/ekonomicky-denik/) |
-| irozhlas | 8 | 6 | [ano](/zdroje/irozhlas/) |
 | hlidac-statu | 7 | 2 | [ano](/zdroje/hlidac-statu/) |
 | Hospodářské noviny | 6 | 5 | — |
 | udhpsh | 6 | 1 | [ano](/zdroje/udhpsh/) |
@@ -305,6 +305,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 737 záznamů v 126 rodinách/out
 | Neovlivní.cz | 1 | 1 | — |
 | Novinky.cz / Právo | 1 | 1 | [ano](/zdroje/novinky-cz/) |
 | ParlamentníListy.cz | 1 | 1 | — |
+| Peníze.cz | 1 | 1 | — |
 | Podnikatel.cz | 1 | 1 | [ano](/zdroje/podnikatel-cz-rejstrik/) |
 | Podpůrný a garanční rolnický a lesnický fond (PGRLF) | 1 | 1 | — |
 | Policie České republiky — Krajské ředitelství policie Olomouckého kraje | 1 | 1 | — |

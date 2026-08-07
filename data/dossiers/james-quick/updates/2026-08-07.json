@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/updates/2026-08-07",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-08-07",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/james-quick"
+  },
+  "date": "2026-08-07",
+  "summary": "Doplněny dva nezávislé dobové zdroje a dvě úzce formulovaná tvrzení se stavem CORROBORATED: domény připomínající státní instituce (ČT24 + Peníze.cz) a společné jádro oznámeného veřejného registru včetně plánovaného zahraničního hostingu a stanoviska ÚOOÚ (ČT24 + iROZHLAS). Podrobnosti doložené pouze jedním médiem zůstaly odděleně jako 1 ZDROJ.",
+  "addedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-20"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-21"
+    }
+  ],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-21"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-22"
+    }
+  ]
+}
