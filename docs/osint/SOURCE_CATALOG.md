@@ -197,18 +197,18 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 772 záznamů v 135 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 775 záznamů v 135 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
 | ctk | 298 | 28 | [ano](/zdroje/ctk/) |
-| Poslanecká sněmovna Parlamentu ČR | 55 | 36 | [ano](/zdroje/psp-cz/) |
+| Poslanecká sněmovna Parlamentu ČR | 56 | 37 | [ano](/zdroje/psp-cz/) |
 | seznam-zpravy | 38 | 13 | [ano](/zdroje/seznam-zpravy/) |
 | Vláda České republiky (vlada.gov.cz) | 29 | 18 | [ano](/zdroje/vlada-cz/) |
 | FORUM 24 | 20 | 10 | [ano](/zdroje/forum24/) |
 | ČT24 (Česká televize) | 19 | 11 | [ano](/zdroje/ceska-televize/) |
 | denik-n | 18 | 10 | [ano](/zdroje/denik-n/) |
-| Echo24 | 17 | 13 | [ano](/zdroje/echo24/) |
+| Echo24 | 18 | 14 | [ano](/zdroje/echo24/) |
 | Aktuálně.cz | 13 | 8 | [ano](/zdroje/aktualne-cz/) |
 | Novinky.cz | 13 | 12 | [ano](/zdroje/novinky-cz/) |
 | denik-cz | 11 | 6 | [ano](/zdroje/denik-cz/) |
@@ -243,6 +243,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 772 záznamů v 135 rodinách/out
 | Česká školní inspekce | 2 | 1 | — |
 | CZDEFENCE | 2 | 1 | — |
 | Deník Alarm | 2 | 1 | — |
+| Deník N | 2 | 2 | [ano](/zdroje/denik-n/) |
 | Deník.cz (VLTAVA LABE MEDIA) | 2 | 2 | [ano](/zdroje/denik-cz/) |
 | Fakultní nemocnice Olomouc (oficiální web) | 2 | 1 | — |
 | Médiář | 2 | 1 | — |
@@ -278,7 +279,6 @@ Dopočítáno z `data/dossiers/**/sources/**`, 772 záznamů v 135 rodinách/out
 | ČKAIT (Česká komora autorizovaných inženýrů a techniků) | 1 | 1 | — |
 | CNCB / BRKI a NRKI | 1 | 1 | — |
 | Demagog.cz | 1 | 1 | — |
-| Deník N | 1 | 1 | [ano](/zdroje/denik-n/) |
 | Deník Referendum | 1 | 1 | — |
 | Deník VEKTOR | 1 | 1 | — |
 | Dopravní noviny | 1 | 1 | — |

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jiri-pospisil/sources/SRC-03",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jiri-pospisil"
+  },
+  "title": "SRC-03 — Echo24.cz: Pospíšil bude prvním místopředsedou TOP 09. Dosluhující ministr Válek ve volbě pohořel",
+  "description": "Zpravodajství Echo24.cz o zvolení Jiřího Pospíšila prvním místopředsedou TOP 09, včetně výsledku hlasování.",
+  "outlet": "Echo24",
+  "sourceType": "zpravodajství",
+  "url": "https://www.echo24.cz/a/HidVr/zpravy-domov-politika-snem-top-09-praha-prvni-mistopredseda-pospisil-valek-pohorel",
+  "published": "2025-11-08",
+  "retrieved": "2026-08-07",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jiri-pospisil/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "jiri-pospisil"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpráva Echo24.cz z 8. 11. 2025, otevřena a přečtena 2026-08-07.\nUvádí, že exministr spravedlnosti Jiří Pospíšil se na sněmu TOP 09 v Praze stal prvním místopředsedou strany se ziskem 110 hlasů delegátů, když porazil dosavadního statutárního místopředsedu Vlastimila Válka (63 hlasů).\n\nPoznámka k typu zdroje a jeho limitům: redakční zpravodajství, jiná doména i jiný vydavatel než SRC-01 (Poslanecká sněmovna Parlamentu ČR) i SRC-02 (Deník N) — tvoří s nimi nezávislou dvojici pro účely korporace tohoto tvrzení. Přesné datum a klubovou příslušnost mandátu dokládá SRC-01."
+    }
+  ],
+  "order": 3
+}

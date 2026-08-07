@@ -2076,3 +2076,9 @@ výboru, dřívější ministerská funkce s přesnými daty), doložený přím
 otevřenými zdroji (psp.cz, vlada.gov.cz, zdravezpravy.cz). Nejde o
 investigativní rešerši jeho ministerského působení ani žádné kauzy — to
 by vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-07: Jiří Pospíšil
+
+Authorized by the site owner, explicitly and on the record, 2026-08-07:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jiří Pospíšil je veřejný funkcionář — poslanec Poslanecké sněmovny Parlamentu ČR za TOP 09 (mandát od 4. 10. 2025, Praha) a od 8. 11. 2025 první místopředseda TOP 09 (dříve předseda TOP 09 2017–2019, ministr spravedlnosti 2006–2009 a 2010–2012). Rozsah tohoto dossieru je záměrně minimální: pouze základní, aktuálně ověřený politický profil (poslanecký mandát, klubová příslušnost TOP 09, funkce prvního místopředsedy strany), doložený přímo otevřenými zdroji (psp.cz, Deník N, Echo24.cz). Nejde o investigativní rešerši žádné kauzy ani sporného tématu.
