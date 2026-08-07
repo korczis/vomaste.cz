@@ -56,8 +56,8 @@ veškeré nedodělané zdrojovací práce.
 | Metrika | Hodnota |
 |---|---|
 | Dossierů | 49 |
-| Tvrzení | 1000 |
-| — z toho `E0` / `E1` / `E1+` / `E2` | 0 / 559 / 93 / 348 |
+| Tvrzení | 1001 |
+| — z toho `E0` / `E1` / `E1+` / `E2` | 0 / 559 / 93 / 349 |
 | Zdrojů (z toho s vyplněnou `sourceFamily`) | 769 (406) |
 | Kauz | 95 |
 | Mezer celkem / otevřených / zastaralých | 208 / 205 / 0 |
@@ -84,7 +84,7 @@ veškeré nedodělané zdrojovací práce.
 | 14 | [Boris Šťastný](../data/dossiers/boris-stastny/) `boris-stastny` | **střední** | 64 | 4.4 % | 80.2 % | 42 | 0/21/11/10 | 10 | 8 | 2026-07-30 |
 | 15 | [Jeroným Tejc](../data/dossiers/jeronym-tejc/) `jeronym-tejc` | **nízká** | 62 | 4.3 % | 84.5 % | 52 | 0/22/8/22 | 10 | 16 | 2026-08-06 |
 | 16 | [Lubomír Metnar](../data/dossiers/lubomir-metnar/) `lubomir-metnar` | **nízká** | 47 | 3.3 % | 87.8 % | 31 | 0/13/6/12 | 15 | 5 | 2026-08-05 |
-| 17 | [James Quick](../data/dossiers/james-quick/) `james-quick` | **nízká** | 45 | 3.1 % | 90.9 % | 22 | 0/19/1/2 | 3 | 20 | 2026-08-05 |
+| 17 | [James Quick](../data/dossiers/james-quick/) `james-quick` | **nízká** | 45 | 3.1 % | 90.9 % | 23 | 0/19/1/3 | 3 | 20 | 2026-08-05 |
 | 18 | [Tomio Okamura](../data/dossiers/tomio-okamura/) `tomio-okamura` | **nízká** | 43 | 3.0 % | 93.9 % | 36 | 0/9/15/12 | 8 | 10 | 2026-08-05 |
 | 19 | [Richard Chlad](../data/dossiers/richard-chlad/) `richard-chlad` | **nízká** | 27 | 1.9 % | 95.8 % | 11 | 0/10/1/0 | 3 | 1 | 2026-08-05 |
 | 20 | [Tünde Bartha](../data/dossiers/tunde-bartha/) `tunde-bartha` | **nízká** | 17 | 1.2 % | 96.9 % | 13 | 0/6/0/7 | 4 | 8 | 2026-08-01 |
@@ -402,9 +402,9 @@ Další krok:
 
 | Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
 |---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 22 | 0 | 19 | 1 | 2 | 23 | 3 | 5 | 3 (3) | 10 |
+| 23 | 0 | 19 | 1 | 3 | 23 | 3 | 5 | 3 (3) | 10 |
 
-Deklarované stavy: CORROBORATED 2 · 1 ZDROJ 19 · CITACE 1
+Deklarované stavy: CORROBORATED 3 · 1 ZDROJ 19 · CITACE 1
 
 Další krok:
 

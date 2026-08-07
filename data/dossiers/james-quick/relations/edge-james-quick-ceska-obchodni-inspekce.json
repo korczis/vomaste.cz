@@ -11,7 +11,7 @@
     "@id": "https://vomaste.cz/id/dossiers/james-quick"
   },
   "sourceEntity": {
-    "@id": "https://vomaste.cz/id/entities/james-quick"
+    "@id": "https://vomaste.cz/id/entities/cerd-system-llc"
   },
   "targetEntity": {
     "@id": "https://vomaste.cz/id/entities/ceska-obchodni-inspekce"
@@ -37,7 +37,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Institucionální vazba přes veřejné varování ČOI k CERD; nevyjadřuje soukromý vztah ani trestní rozhodnutí."
+      "value": "Institucionální vazba vede od CERD k veřejnému varování ČOI. Nevyjadřuje osobní vztah mezi inspekcí a Jamesem Quickem ani trestní rozhodnutí."
     }
   ]
 }

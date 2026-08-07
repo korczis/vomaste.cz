@@ -1,0 +1,19 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/updates/2026-08-07-3",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-08-07-3",
+  "dossier": { "@id": "https://vomaste.cz/id/dossiers/james-quick" },
+  "date": "2026-08-07",
+  "summary": "Doplněno společné jádro stanovisek ČOI a BRKI/NRKI k praktické relevanci potvrzení CERD. Současně byl opraven směr institucionálních grafových vazeb tak, aby vedly od CERD, nikoli automaticky od osoby Jamese Quicka.",
+  "addedClaims": [
+    { "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-23" }
+  ],
+  "reviewedSources": [
+    { "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-11" },
+    { "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-12" }
+  ]
+}

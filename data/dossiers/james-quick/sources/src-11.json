@@ -19,6 +19,9 @@
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-23"
     }
   ],
   "subjects": [

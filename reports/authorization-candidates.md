@@ -448,7 +448,7 @@ Generated from 491 context entities across 49 dossier(s). Regenerate with `npm r
 - Claims: CLM-11
 - Sources: SRC-12 (1 independent source family)
 - Relations:
-  - edge-james-quick-brki-nrki (james-quick -> brki-nrki, "BRKI a NRKI se od aktivit CERD veřejně distancovaly", dossier: james-quick)
+  - edge-james-quick-brki-nrki (cerd-system-llc -> brki-nrki, "BRKI a NRKI se od aktivit CERD veřejně distancovaly", dossier: james-quick)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Bronislav Houdek (`bronislav-houdek`)
@@ -556,7 +556,9 @@ Generated from 491 context entities across 49 dossier(s). Regenerate with `npm r
 - Claims: CLM-02, CLM-04
 - Sources: SRC-02, SRC-04 (2 independent source families)
 - Relations:
+  - edge-james-quick-brki-nrki (cerd-system-llc -> brki-nrki, "BRKI a NRKI se od aktivit CERD veřejně distancovaly", dossier: james-quick)
   - edge-james-quick-cerd-system (james-quick -> cerd-system-llc, "spojen se sítí právnických osob kolem systému CERD", dossier: james-quick)
+  - edge-james-quick-ceska-obchodni-inspekce (cerd-system-llc -> ceska-obchodni-inspekce, "ČOI zveřejnila spotřebitelské varování k CERD", dossier: james-quick)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Cerea (`cerea`)
@@ -597,7 +599,7 @@ Generated from 491 context entities across 49 dossier(s). Regenerate with `npm r
 - Claims: CLM-10
 - Sources: SRC-11 (1 independent source family)
 - Relations:
-  - edge-james-quick-ceska-obchodni-inspekce (james-quick -> ceska-obchodni-inspekce, "ČOI zveřejnila spotřebitelské varování k CERD", dossier: james-quick)
+  - edge-james-quick-ceska-obchodni-inspekce (cerd-system-llc -> ceska-obchodni-inspekce, "ČOI zveřejnila spotřebitelské varování k CERD", dossier: james-quick)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Česká školní inspekce (`ceska-skolni-inspekce`)
