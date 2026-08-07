@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 497 context entities across 42 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 496 context entities across 43 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -1387,17 +1387,6 @@ Generated from 497 context entities across 42 dossier(s). Regenerate with `npm r
 - Claims: CLM-14, CLM-47
 - Sources: SRC-17, SRC-18 (2 independent source families)
 - Relations: none
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Ivan Bartoš (`ivan-bartos`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: martin-sebestyan, zuzana-mrazova
-- Claims: CLM-05, CLM-23, CLM-51, CLM-56
-- Sources: SRC-07, SRC-09, SRC-19, SRC-26 (5 independent source families)
-- Relations:
-  - edge-mrazova-bartos (mrazova -> ivan-bartos, "bývalý ministr pro místní rozvoj (Piráti) veřejně kritizoval Mrázovou", dossier: zuzana-mrazova)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Ivana Tichá (`ivana-ticha`)

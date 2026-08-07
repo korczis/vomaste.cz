@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bartos/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bartos"
+  },
+  "title": "SRC-02 — ČeskéNoviny.cz (ČTK): Poslanecký klub Pirátů povede Richterová, místopředsedou bude Bartoš",
+  "description": "Agenturní zpravodajství ČTK o ustavení poslaneckého klubu Pirátů po volbách 2025 — předsedkyní se stala Olga Richterová, prvním místopředsedou Ivan Bartoš.",
+  "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceType": "zpravodajství",
+  "url": "https://www.ceskenoviny.cz/zpravy/poslanecky-klub-piratu-povede-richterova-mistopredsedou-bude-bartos/2730432",
+  "published": "2025-10-05",
+  "retrieved": "2026-08-07",
+  "sourceFamily": "ctk",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bartos/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "ivan-bartos"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Agenturní zpráva ČTK z 5. 10. 2025, otevřena a přečtena 2026-08-07.\nInformuje o ustavení poslaneckého klubu Pirátů po volbách 2025: předsedkyní se stala Olga Richterová, prvním místopředsedou Ivan Bartoš, dalšími dvěma místopředsedkyněmi Kateřina Stojanová a Lenka Martínková Španihelová. Doslovná citace: „Prvním místopředsedou poslanců Pirátů bude Ivan Bartoš.“\n\nPoznámka k typu zdroje a jeho limitům: agenturní zpravodajství ČTK (`sourceFamily: ctk`) — jiný vydavatel i jiná doména než SRC-01 (Poslanecká sněmovna, primární úřední zdroj bez redakční vydavatelské rodiny), takže spolu s ním tvoří nezávislou dvojici pro účely korporace tohoto tvrzení. Stejný agenturní text převzaly i další redakce (např. ČT24) — nejde o druhý nezávislý hlas, jde o jednu agenturní zprávu."
+    }
+  ],
+  "order": 2
+}
