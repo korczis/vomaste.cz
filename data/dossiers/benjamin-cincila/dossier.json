@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/benjamin-cincila",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "benjamin-cincila",
+  "slug": "benjamin-cincila",
+  "title": "Benjamin Činčila",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení Benjamina Činčily.",
+  "dossierType": "entity",
+  "canonicalDossier": "benjamin-cincila",
+  "subject": "benjamin-cincila",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-07",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-07-BENJAMIN-CINCILA"
+    ]
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nBenjamin Činčila je poslanec Poslanecké sněmovny Parlamentu ČR za\nKDU-ČSL, od 24. 4. 2026 první místopředseda KDU-ČSL a od 6. 5. 2026\nmístopředseda poslaneckého klubu KDU-ČSL. Jako veřejný funkcionář spadá\ndo standing scope autorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`);\nkonkrétní záznam pro tento dossier je `AUTH-2026-08-07-BENJAMIN-CINCILA`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam — dokládá pouze jeho aktuální poslanecký mandát a stranické/\nklubové funkce, nikoli žádnou hloubkovou investigativní rešerši jiných\ntémat. Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/benjamin-cincila/claims/clm-01.md) | Benjamin Činčila je od 4. 10. 2025 poslancem Poslanecké sněmovny Parlamentu ČR za KDU-ČSL (Kraj Vysočina), od 24. 4. 2026 prvním místopředsedou KDU-ČSL a od 6. 5. 2026 místopředsedou poslaneckého klubu KDU-ČSL — doloženo oficiálním profilem na webu Poslanecké sněmovny (psp.cz) a nezávislým zpravodajstvím ČT24 (Česká televize). | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/benjamin-cincila/sources/src-01.md), [SRC-02](@/dossiers/benjamin-cincila/sources/src-02.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedeného poslaneckého mandátu ani stranické funkce\nnic dalšího; nejde o hodnocení jeho politického působení ani o\ninvestigativní rešerši jiných témat."
+    }
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "entity": "benjamin-cincila",
+        "label": "Benjamin Činčila",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": []
+  }
+}

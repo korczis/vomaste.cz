@@ -2019,3 +2019,9 @@ politický profil (poslanecký mandát a role předsedy poslaneckého klubu
 KDU-ČSL), doložený přímo otevřenými zdroji (psp.cz, ČeskéNoviny.cz).
 Nejde o investigativní rešerši jeho ministerského období ani žádné kauzy —
 to by vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-07: Benjamin Činčila
+
+Authorized by the site owner, explicitly and on the record, 2026-08-07:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Benjamin Činčila je veřejný funkcionář — poslanec Poslanecké sněmovny Parlamentu ČR za KDU-ČSL (mandát od 4. 10. 2025, volební kraj Vysočina), od 24. 4. 2026 první místopředseda KDU-ČSL (zvolen na sjezdu strany, podpořen 239 z 264 delegátů) a od 6. 5. 2026 místopředseda poslaneckého klubu KDU-ČSL. Rozsah tohoto dossieru je záměrně minimální: pouze základní, aktuálně ověřený politický profil (poslanecký mandát, stranická funkce prvního místopředsedy KDU-ČSL, klubová funkce místopředsedy poslaneckého klubu), doložený přímo otevřenými zdroji (psp.cz, ČT24/Česká televize). Nejde o investigativní rešerši žádné kauzy ani sporného tématu — to by vyžadovalo samostatnou budoucí autorizaci.
