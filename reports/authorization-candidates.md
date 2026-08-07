@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 499 context entities across 40 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 498 context entities across 41 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -5305,18 +5305,6 @@ Generated from 499 context entities across 40 dossier(s). Regenerate with `npm r
 - Claims: none
 - Sources: none (0 independent source families)
 - Relations: none
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Zdeněk Hřib (`zdenek-hrib`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: alena-schillerova, andrej-babis, karel-havlicek, zuzana-mrazova
-- Claims: CLM-06, CLM-11, CLM-16, CLM-39
-- Sources: SRC-02, SRC-06, SRC-08, SRC-09, SRC-11, SRC-19 (7 independent source families)
-- Relations:
-  - edge-hrib-schillerova (zdenek-hrib -> schillerova, "Hřib (Piráti) po vetu mluvil o zaraženém vládním účetním podvodu", dossier: alena-schillerova)
-  - edge-mrazova-hrib (mrazova -> zdenek-hrib, "předseda Pirátů předal Mrázové klíčenku a vyzval k doplacení ušetřeného nájmu", dossier: zuzana-mrazova)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Zdeněk Kasal (`zdenek-kasal`)

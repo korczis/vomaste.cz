@@ -197,12 +197,12 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 746 záznamů v 129 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 749 záznamů v 129 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
-| ctk | 293 | 23 | [ano](/zdroje/ctk/) |
-| Poslanecká sněmovna Parlamentu ČR | 46 | 27 | [ano](/zdroje/psp-cz/) |
+| ctk | 294 | 24 | [ano](/zdroje/ctk/) |
+| Poslanecká sněmovna Parlamentu ČR | 47 | 28 | [ano](/zdroje/psp-cz/) |
 | seznam-zpravy | 38 | 13 | [ano](/zdroje/seznam-zpravy/) |
 | Vláda České republiky (vlada.gov.cz) | 28 | 17 | [ano](/zdroje/vlada-cz/) |
 | FORUM 24 | 20 | 10 | [ano](/zdroje/forum24/) |
@@ -220,6 +220,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 746 záznamů v 129 rodinách/out
 | udhpsh | 6 | 1 | [ano](/zdroje/udhpsh/) |
 | Blesk.cz | 5 | 3 | [ano](/zdroje/blesk-cz/) |
 | Zdravé zprávy | 5 | 2 | — |
+| CNN Prima News | 4 | 4 | — |
 | e15.cz | 4 | 2 | — |
 | HlídacíPes.org | 4 | 4 | — |
 | Ministerstvo dopravy ČR | 4 | 1 | — |
@@ -227,7 +228,6 @@ Dopočítáno z `data/dossiers/**/sources/**`, 746 záznamů v 129 rodinách/out
 | Respekt | 4 | 3 | — |
 | Státní zemědělský intervenční fond | 4 | 1 | — |
 | verejnazaloba | 4 | 1 | — |
-| CNN Prima News | 3 | 3 | — |
 | Investigace.cz | 3 | 3 | — |
 | Ministerstvo financí ČR | 3 | 1 | — |
 | Ministerstvo školství, mládeže a tělovýchovy ČR | 3 | 1 | — |

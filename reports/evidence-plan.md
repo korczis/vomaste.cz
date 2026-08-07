@@ -55,10 +55,10 @@ veškeré nedodělané zdrojovací práce.
 
 | Metrika | Hodnota |
 |---|---|
-| Dossierů | 40 |
-| Tvrzení | 989 |
-| — z toho `E0` / `E1` / `E1+` / `E2` | 0 / 557 / 93 / 339 |
-| Zdrojů (z toho s vyplněnou `sourceFamily`) | 746 (398) |
+| Dossierů | 41 |
+| Tvrzení | 990 |
+| — z toho `E0` / `E1` / `E1+` / `E2` | 0 / 557 / 93 / 340 |
+| Zdrojů (z toho s vyplněnou `sourceFamily`) | 749 (399) |
 | Kauz | 95 |
 | Mezer celkem / otevřených / zastaralých | 205 / 202 / 0 |
 | Vztahů | 341 |
@@ -108,6 +108,7 @@ veškeré nedodělané zdrojovací práce.
 | 38 | [Petr Sokol](../data/dossiers/petr-sokol/) `petr-sokol` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 4 | 2026-08-06 |
 | 39 | [Renáta Zajíčková](../data/dossiers/renata-zajickova/) `renata-zajickova` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 3 | 2026-08-06 |
 | 40 | [Vít Rakušan](../data/dossiers/vit-rakusan/) `vit-rakusan` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 1 | 2026-08-07 |
+| 41 | [Zdeněk Hřib](../data/dossiers/zdenek-hrib/) `zdenek-hrib` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 2 | 2026-08-07 |
 
 ## Plán per dossier
 
@@ -746,6 +747,20 @@ Deklarované stavy: CORROBORATED 1
 Další krok:
 
 - 1 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
+
+### 41. Zdeněk Hřib — `zdenek-hrib`
+
+**Priorita žádná** · 0 bodů (0.0 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-07`, revidováno `—`
+
+| Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
+|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 0 | 0 | 0 | 1 | 3 | 1 | 0 | 0 (0) | 0 |
+
+Deklarované stavy: CORROBORATED 1
+
+Další krok:
+
+- 2 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
 
 ---
 

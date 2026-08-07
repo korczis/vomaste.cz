@@ -1929,3 +1929,18 @@ předsedkyně poslaneckého klubu STAN, členství ve Výboru pro zdravotnictví
 a role místopředsedkyně hnutí STAN), doložený přímo otevřenými zdroji
 (psp.cz, Deník.cz, Deník N). Nejde o investigativní rešerši žádné kauzy
 ani sporného tématu — to by vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-07: Zdeněk Hřib
+
+Authorized by the site owner, explicitly and on the record, 2026-08-07:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Zdeněk Hřib je veřejný
+funkcionář — poslanec Poslanecké sněmovny Parlamentu ČR (mandát od
+4. 10. 2025, volební obvod Praha) a předseda České pirátské strany
+(zvolen 2024, znovuzvolen 17. 1. 2026 na republikovém fóru v Prachaticích).
+Rozsah tohoto dossieru je záměrně minimální: pouze jeho aktuální
+poslanecký mandát a strana (Piráti) a funkce předsedy strany, doloženo
+přímo otevřenými zdroji (psp.cz, ČeskéNoviny.cz/ČTK, CNN Prima News).
+Nejde o investigativní rešerši jeho dřívějšího působení jako primátora
+hlavního města Prahy ani žádné jiné téma — to by vyžadovalo samostatnou
+budoucí autorizaci.
