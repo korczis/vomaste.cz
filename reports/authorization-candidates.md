@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 500 context entities across 39 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 499 context entities across 40 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -2679,16 +2679,6 @@ Generated from 500 context entities across 39 dossier(s). Regenerate with `npm r
 - Sources: SRC-10, SRC-16, SRC-17, SRC-22 (7 independent source families)
 - Relations:
   - edge-cerveny-meta (cerveny -> meta, "jednal se zástupci společnosti Meta o využití umělé inteligence pro ochranu životního prostředí", dossier: igor-cerveny)
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Michaela Šebelová (`michaela-sebelova`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: adam-vojtech, zuzana-mrazova
-- Claims: CLM-14, CLM-41, CLM-49
-- Sources: SRC-08, SRC-18, SRC-22, SRC-29 (3 independent source families)
-- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Michal Dobiáš (`michal-dobias`)

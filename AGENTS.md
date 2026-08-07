@@ -1914,3 +1914,18 @@ profil (poslanecký mandát, funkce místopředsedy poslaneckého klubu STAN,
 doložený přímo otevřenými veřejnými zdroji (psp.cz, Blesk.cz, Tiscali.cz).
 Nejde o investigativní rešerši jeho ministerského působení ani žádné
 kauzy — to by vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-07: Michaela Šebelová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-07:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Michaela Šebelová je veřejná
+funkcionářka — poslankyně Poslanecké sněmovny Parlamentu ČR za hnutí STAN
+(mandát od 4. 10. 2025, volební obvod Moravskoslezský kraj), předsedkyně
+poslaneckého klubu STAN (od 10. 10. 2025) a místopředsedkyně hnutí
+Starostové a nezávislí. Rozsah tohoto dossieru je záměrně minimální: pouze
+základní, aktuálně ověřený politický profil (poslanecký mandát, funkce
+předsedkyně poslaneckého klubu STAN, členství ve Výboru pro zdravotnictví
+a role místopředsedkyně hnutí STAN), doložený přímo otevřenými zdroji
+(psp.cz, Deník.cz, Deník N). Nejde o investigativní rešerši žádné kauzy
+ani sporného tématu — to by vyžadovalo samostatnou budoucí autorizaci.
