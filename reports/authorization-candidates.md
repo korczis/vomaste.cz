@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 496 context entities across 43 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 495 context entities across 44 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -1881,16 +1881,6 @@ Generated from 496 context entities across 43 dossier(s). Regenerate with `npm r
 - Sources: SRC-04 (1 independent source family)
 - Relations:
   - edge-cerveny-pacikova (cerveny -> katerina-pacikova, "zástupkyně mluvčí MŽP informovala o podání opravného oznámení a úhradě pokuty ministra", dossier: igor-cerveny)
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Kateřina Stojanová (`katerina-stojanova`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: zuzana-mrazova
-- Claims: CLM-51
-- Sources: SRC-19 (1 independent source family)
-- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Kauppias s.r.o. (`kauppias`)

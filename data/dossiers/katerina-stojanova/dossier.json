@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/katerina-stojanova",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "katerina-stojanova",
+  "slug": "katerina-stojanova",
+  "title": "Kateřina Stojanová",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení Kateřiny Stojanové.",
+  "dossierType": "entity",
+  "canonicalDossier": "katerina-stojanova",
+  "subject": "katerina-stojanova",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-07",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-07-KATERINA-STOJANOVA"
+    ]
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nKateřina Stojanová je poslankyně Poslanecké sněmovny Parlamentu ČR za\nPiráty, místopředsedkyně poslaneckého klubu Piráti a místopředsedkyně\nČeské pirátské strany. Jako veřejná funkcionářka spadá do standing\nscope autorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam\npro tento dossier je `AUTH-2026-08-07-KATERINA-STOJANOVA`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam — dokládá pouze její aktuální poslanecký mandát a stranické/\nklubové funkce, nikoli žádnou hloubkovou investigativní rešerši jiných\ntémat. Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/katerina-stojanova/claims/clm-01.md) | Kateřina Stojanová je od 4. 10. 2025 poslankyní Poslanecké sněmovny Parlamentu ČR za Piráty (volební kraj Ústecký), od 5. 10. 2025 místopředsedkyní poslaneckého klubu Piráti a od 17. 1. 2026 místopředsedkyní České pirátské strany (zvolena na celostátním fóru v Prachaticích) — doloženo oficiálním profilem na webu Poslanecké sněmovny a nezávislou agenturní zprávou ČTK. | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/katerina-stojanova/sources/src-01.md), [SRC-02](@/dossiers/katerina-stojanova/sources/src-02.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedeného poslaneckého mandátu ani stranických/\nklubových funkcí nic dalšího; nejde o hodnocení jejího politického\npůsobení ani o investigativní rešerši jiných témat."
+    }
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "entity": "katerina-stojanova",
+        "label": "Kateřina Stojanová",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": []
+  }
+}

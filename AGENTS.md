@@ -1976,3 +1976,18 @@ mandát, strana/klub Piráti, role prvního místopředsedy poslaneckého
 klubu), doložený přímo otevřenými zdroji (psp.cz, ČeskéNoviny.cz/ČTK).
 Nejde o investigativní rešerši jeho ministerského působení ani žádné
 kauzy — to by vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-07: Kateřina Stojanová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-07:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Kateřina Stojanová je veřejná
+funkcionářka — poslankyně Poslanecké sněmovny Parlamentu ČR za Piráty (mandát
+od 4. 10. 2025, volební kraj Ústecký), místopředsedkyně poslaneckého klubu
+Piráti (od 5. 10. 2025) a místopředsedkyně České pirátské strany (zvolena na
+celostátním fóru v Prachaticích 17. 1. 2026). Rozsah tohoto dossieru je
+záměrně minimální: pouze základní, aktuálně ověřený politický profil
+(poslanecký mandát, klubová funkce, stranická funkce místopředsedkyně),
+doložený přímo otevřenými zdroji (psp.cz, Deník.cz/ČTK). Nejde o
+investigativní rešerši žádné kauzy ani sporného tématu — to by vyžadovalo
+samostatnou budoucí autorizaci.
