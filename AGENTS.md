@@ -2005,3 +2005,17 @@ o jeho aktuální krajské funkci (hejtman) a stranické funkci (předseda
 KDU-ČSL), doložené přímo otevřenými zdroji (oficiální profil na webu
 Jihomoravského kraje kr-jihomoravsky.cz, nezávislé zpravodajství
 Deník.cz). Nejde o investigativní rešerši žádné kauzy ani sporu.
+
+### Scope extension, 2026-08-07: Marian Jurečka
+
+Authorized by the site owner, explicitly and on the record, 2026-08-07:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Marian Jurečka je veřejný
+funkcionář — bývalý místopředseda vlády a ministr práce a sociálních věcí,
+poslanec Poslanecké sněmovny Parlamentu ČR za KDU-ČSL (mandát od 4. 10. 2025,
+Olomoucký kraj) a od 6. 5. 2026 předseda poslaneckého klubu KDU-ČSL. Rozsah
+tohoto dossieru je záměrně minimální: pouze základní, aktuálně ověřený
+politický profil (poslanecký mandát a role předsedy poslaneckého klubu
+KDU-ČSL), doložený přímo otevřenými zdroji (psp.cz, ČeskéNoviny.cz).
+Nejde o investigativní rešerši jeho ministerského období ani žádné kauzy —
+to by vyžadovalo samostatnou budoucí autorizaci.

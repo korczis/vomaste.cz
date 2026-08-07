@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 494 context entities across 45 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 493 context entities across 46 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -2445,17 +2445,6 @@ Generated from 494 context entities across 45 dossier(s). Regenerate with `npm r
 - Claims: CLM-03, CLM-16, CLM-32, CLM-44
 - Sources: SRC-05, SRC-07, SRC-18, SRC-25, SRC-27 (5 independent source families)
 - Relations: none
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Marian Jurečka (`marian-jurecka`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: ales-juchelka
-- Claims: CLM-22
-- Sources: SRC-14 (1 independent source family)
-- Relations:
-  - edge-jurecka-juchelka (marian-jurecka -> juchelka, "poradkyně nastoupila na ministerstvo ještě za předchozího ministra Jurečky, Juchelku vystřídal na resortu", dossier: ales-juchelka)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Marian Piecha (`marian-piecha`)
