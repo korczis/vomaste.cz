@@ -197,7 +197,7 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 767 záznamů v 132 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 769 záznamů v 134 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
@@ -262,6 +262,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 767 záznamů v 132 rodinách/out
 | smlouvy-gov-cz | 2 | 1 | [ano](/zdroje/registr-smluv/) |
 | blesk | 1 | 1 | [ano](/zdroje/blesk-cz/) |
 | ct24 | 1 | 1 | [ano](/zdroje/ceska-televize/) |
+| cvvm | 1 | 1 | — |
 | denik | 1 | 1 | [ano](/zdroje/denik-cz/) |
 | eppo | 1 | 1 | — |
 | idnes-dividenda-2026-07 | 1 | 1 | [ano](/zdroje/echo24/) |
@@ -331,6 +332,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 767 záznamů v 132 rodinách/out
 | Zdopravy.cz | 1 | 1 | — |
 | Zdravotnický deník | 1 | 1 | — |
 | Život v Česku | 1 | 1 | — |
+| respekt | 1 | 1 | — |
 | usoud | 1 | 1 | — |
 | vlm | 1 | 1 | — |
 

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/petr-fiala/claims/CLM-03",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/petr-fiala"
+  },
+  "text": "V anketě týdeníku RESPEKT „Jaký premiér byl Petr Fiala\" (12. 9. 2025) hodnotilo Fialovo čtyřleté premiérské období patnáct jmenovaných osobností s protichůdnými závěry — od ocenění podpory Ukrajině a stability vládnutí (např. Jindřich Šídlo, Tomáš Halík) po kritiku chybějícího sociálního dialogu, nenaplněných environmentálních a rovnostářských závazků nebo „promarněné příležitosti\" k reformám (např. Josef Středula, Zuzana Szabó Lenhartová, Ivan Pilný)",
+  "status": "status-opinion",
+  "statusLabel": "NÁZOR",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-fiala/sources/SRC-04"
+    }
+  ],
+  "subjects": [
+    "petr-fiala"
+  ],
+  "order": 3,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/petr-fiala/_index.md)."
+    }
+  ]
+}

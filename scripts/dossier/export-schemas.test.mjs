@@ -58,9 +58,9 @@ test("an unknown extra field is rejected (no field without a user)", () => {
   assert.equal(validateClaim({ ...VALID_CLAIM, confidence: 0.9 }), false);
 });
 
-test("the claim status enum is exactly the four sourcing states", () => {
+test("the claim status enum is exactly the five sourcing states", () => {
   assert.deepEqual(
     [...claimSchema.properties.status.enum].sort(),
-    ["status-corroborated", "status-disputed", "status-quote", "status-single"],
+    ["status-corroborated", "status-disputed", "status-opinion", "status-quote", "status-single"],
   );
 });

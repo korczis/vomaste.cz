@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-01 — Poslanecká sněmovna Parlamentu ČR: oficiální profil poslance Mariana Jurečky"
-description = "Oficiální profilová stránka poslance na webu Poslanecké sněmovny Parlamentu ČR s údaji o aktuálním mandátu, klubové a výborové příslušnosti."
+description = "Oficiální profilová stránka poslance na webu Poslanecké sněmovny Parlamentu ČR s údaji o aktuálním mandátu, klubové a výborové… Zdroj: Poslanecká sněmovna Parlamentu ČR, dossier Marian Jurečka."
 template = "dossier-source.html"
 weight = 1
 
