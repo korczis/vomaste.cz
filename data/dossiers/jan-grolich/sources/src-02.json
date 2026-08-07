@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jan-grolich/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jan-grolich"
+  },
+  "title": "SRC-02 — Deník.cz: Novým předsedou KDU-ČSL se stal jihomoravský hejtman Jan Grolich",
+  "description": "Zpravodajství Deník.cz o zvolení Jana Grolicha předsedou KDU-ČSL na stranickém sjezdu v Ostravě 24. 4. 2026, popisuje ho zároveň jako jihomoravského hejtmana.",
+  "outlet": "Deník.cz (VLTAVA LABE MEDIA)",
+  "sourceType": "zpravodajství",
+  "url": "https://www.denik.cz/z_domova/jan-grolich-novy-predseda-kdu-csl.html",
+  "published": "2026-04-24",
+  "retrieved": "2026-08-07",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jan-grolich/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "jan-grolich"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Článek Deník.cz z 24. 4. 2026, otevřen a přečten 2026-08-07.\nInformuje o zvolení Jana Grolicha předsedou KDU-ČSL na sjezdu strany v Ostravě — byl jediným kandidátem a získal podporu 233 z 266 přítomných delegátů. Popisuje ho jako „jihomoravského hejtmana“, čímž nezávisle potvrzuje i jeho aktuální krajskou funkci vedle nově získané stranické funkce.\n\nPoznámka k typu zdroje a jeho limitům: redakční zpravodajství Deník.cz — jiný vydavatel i jiná doména než SRC-01 (Jihomoravský kraj, primární úřední zdroj), takže spolu s ním tvoří nezávislou dvojici pro účely korporace tohoto tvrzení. Článek se soustředí na stranickou volbu; přesné datum obhajoby krajské funkce hejtmana (4. 11. 2024) je doloženo dalším nezávislým zpravodajstvím o krajských volbách 2024, na které se toto tvrzení rovněž opírá skrze SRC-01."
+    }
+  ],
+  "order": 2
+}

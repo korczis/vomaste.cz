@@ -197,7 +197,7 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 756 záznamů v 129 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 759 záznamů v 131 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
@@ -243,6 +243,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 756 záznamů v 129 rodinách/out
 | Česká školní inspekce | 2 | 1 | — |
 | CZDEFENCE | 2 | 1 | — |
 | Deník Alarm | 2 | 1 | — |
+| Deník.cz (VLTAVA LABE MEDIA) | 2 | 2 | [ano](/zdroje/denik-cz/) |
 | Fakultní nemocnice Olomouc (oficiální web) | 2 | 1 | — |
 | Médiář | 2 | 1 | — |
 | Ministerstvo kultury ČR | 2 | 1 | — |
@@ -278,7 +279,6 @@ Dopočítáno z `data/dossiers/**/sources/**`, 756 záznamů v 129 rodinách/out
 | Deník N | 1 | 1 | [ano](/zdroje/denik-n/) |
 | Deník Referendum | 1 | 1 | — |
 | Deník VEKTOR | 1 | 1 | — |
-| Deník.cz (VLTAVA LABE MEDIA) | 1 | 1 | [ano](/zdroje/denik-cz/) |
 | Dopravní noviny | 1 | 1 | — |
 | e-Sbírka (Ministerstvo vnitra ČR) | 1 | 1 | — |
 | EDUin | 1 | 1 | — |
@@ -295,6 +295,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 756 záznamů v 129 rodinách/out
 | iportal24.cz | 1 | 1 | — |
 | iSport.cz (Blesk) | 1 | 1 | — |
 | Jezdci.cz | 1 | 1 | — |
+| Jihomoravský kraj | 1 | 1 | — |
 | Kancelář veřejného ochránce práv a ochránce práv dětí | 1 | 1 | — |
 | Kurzy.cz | 1 | 1 | — |
 | Lupa.cz | 1 | 1 | — |
@@ -330,6 +331,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 756 záznamů v 129 rodinách/out
 | Zdravotnický deník | 1 | 1 | — |
 | Život v Česku | 1 | 1 | — |
 | usoud | 1 | 1 | — |
+| vlm | 1 | 1 | — |
 
 ## Chybí popis
 

@@ -1991,3 +1991,17 @@ záměrně minimální: pouze základní, aktuálně ověřený politický profi
 doložený přímo otevřenými zdroji (psp.cz, Deník.cz/ČTK). Nejde o
 investigativní rešerši žádné kauzy ani sporného tématu — to by vyžadovalo
 samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-07: Jan Grolich
+
+Authorized by the site owner, explicitly and on the record, 2026-08-07:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jan Grolich je veřejný
+funkcionář — hejtman Jihomoravského kraje za KDU-ČSL (mandát od
+4. 11. 2024, obhájeno) a od 24. 4. 2026 předseda KDU-ČSL (zvolen na
+sjezdu strany v Ostravě, podpořen 233 z 266 delegátů). Rozsah tohoto
+dossieru je záměrně minimální: pouze základní, nekontroverzní tvrzení
+o jeho aktuální krajské funkci (hejtman) a stranické funkci (předseda
+KDU-ČSL), doložené přímo otevřenými zdroji (oficiální profil na webu
+Jihomoravského kraje kr-jihomoravsky.cz, nezávislé zpravodajství
+Deník.cz). Nejde o investigativní rešerši žádné kauzy ani sporu.

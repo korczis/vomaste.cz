@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jan-grolich",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "jan-grolich",
+  "slug": "jan-grolich",
+  "title": "Jan Grolich",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení Jana Grolicha.",
+  "dossierType": "entity",
+  "canonicalDossier": "jan-grolich",
+  "subject": "jan-grolich",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-07",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-07-JAN-GROLICH"
+    ]
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nJan Grolich je hejtman Jihomoravského kraje za KDU-ČSL a od dubna 2026\ntaké předseda KDU-ČSL. Jako veřejný funkcionář spadá do standing scope\nautorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro\ntento dossier je `AUTH-2026-08-07-JAN-GROLICH`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam — dokládá pouze jeho aktuální krajskou funkci (hejtman) a\nstranickou funkci (předseda KDU-ČSL), nikoli žádnou hloubkovou\ninvestigativní rešerši jiných témat. Rozšíření rozsahu vyžaduje\nsamostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/jan-grolich/claims/clm-01.md) | Jan Grolich je od 4. 11. 2024 hejtmanem Jihomoravského kraje za KDU-ČSL (obhájený mandát z krajských voleb 2024) a od 24. 4. 2026 předsedou KDU-ČSL, zvoleným na sjezdu strany v Ostravě jako jediný kandidát s podporou 233 z 266 delegátů — doloženo oficiálním profilem na webu Jihomoravského kraje a nezávislým zpravodajstvím Deník.cz. | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/jan-grolich/sources/src-01.md), [SRC-02](@/dossiers/jan-grolich/sources/src-02.md), [SRC-03](@/dossiers/jan-grolich/sources/src-03.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedené krajské ani stranické funkce nic dalšího;\nnejde o hodnocení jeho politického působení ani o investigativní\nrešerši jiných témat."
+    }
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "entity": "jan-grolich",
+        "label": "Jan Grolich",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02",
+          "SRC-03"
+        ]
+      }
+    ],
+    "edges": []
+  }
+}
