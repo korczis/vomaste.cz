@@ -197,12 +197,12 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 739 záznamů v 127 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 742 záznamů v 128 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
-| ctk | 291 | 21 | [ano](/zdroje/ctk/) |
-| Poslanecká sněmovna Parlamentu ČR | 44 | 25 | [ano](/zdroje/psp-cz/) |
+| ctk | 292 | 22 | [ano](/zdroje/ctk/) |
+| Poslanecká sněmovna Parlamentu ČR | 45 | 26 | [ano](/zdroje/psp-cz/) |
 | seznam-zpravy | 38 | 13 | [ano](/zdroje/seznam-zpravy/) |
 | Vláda České republiky (vlada.gov.cz) | 28 | 17 | [ano](/zdroje/vlada-cz/) |
 | FORUM 24 | 20 | 10 | [ano](/zdroje/forum24/) |
@@ -259,6 +259,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 739 záznamů v 127 rodinách/out
 | Ústavní soud ČR | 2 | 2 | — |
 | Vrchní státní zastupitelství v Olomouci | 2 | 1 | — |
 | smlouvy-gov-cz | 2 | 1 | [ano](/zdroje/registr-smluv/) |
+| blesk | 1 | 1 | [ano](/zdroje/blesk-cz/) |
 | ct24 | 1 | 1 | [ano](/zdroje/ceska-televize/) |
 | denik | 1 | 1 | [ano](/zdroje/denik-cz/) |
 | eppo | 1 | 1 | — |

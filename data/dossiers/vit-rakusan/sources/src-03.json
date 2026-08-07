@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/vit-rakusan/sources/SRC-03",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/vit-rakusan"
+  },
+  "title": "SRC-03 — Tiscali.cz (ČTK): Pavel dnes na Pražském hradě přijme předsedu opozičního hnutí STAN Rakušana",
+  "description": "Agenturní zpravodajství ČTK přejaté Tiscali.cz o přijetí předsedy opozičního hnutí STAN Víta Rakušana prezidentem Pavlem.",
+  "outlet": "Tiscali.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://zpravy.tiscali.cz/pavel-dnes-na-prazskem-hrade-prijme-predsedu-opozicniho-hnuti-stan-rakusana-682823",
+  "published": "2026-06-18",
+  "retrieved": "2026-08-07",
+  "sourceFamily": "ctk",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/vit-rakusan/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "vit-rakusan"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Agenturní zpráva ČTK přejatá Tiscali.cz z 18. 6. 2026, otevřena a přečtena 2026-08-07.\nInformuje o přijetí „předsedu opozičních Starostů a nezávislých Víta Rakušana“ prezidentem Petrem Pavlem na Pražském hradě.\n\nPoznámka k typu zdroje a jeho limitům: agenturní zpravodajství ČTK (`sourceFamily: ctk`) — jiný vydavatel i jiná doména než SRC-02 (Blesk.cz, vlastní redakční práce), takže spolu s ním tvoří nezávislou dvojici pro účely korporace tvrzení o funkci předsedy hnutí STAN v opozici. Nedokládá podrobnosti mandátu ani klubové/výborové příslušnosti — ty dokládá SRC-01 (psp.cz)."
+    }
+  ],
+  "order": 3
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/vit-rakusan/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/vit-rakusan"
+  },
+  "text": "Vít Rakušan je od 4. 10. 2025 poslancem Poslanecké sněmovny Parlamentu ČR za hnutí STAN (volební obvod Středočeský kraj); od 24. 6. 2026 je členem Zahraničního výboru Poslanecké sněmovny a od 26. 6. 2026 místopředsedou poslaneckého klubu STAN. Zároveň nadále zastává funkci předsedy hnutí STAN, které je v aktuálním složení Poslanecké sněmovny opoziční stranou — nezávisle informovaly Blesk.cz i Tiscali.cz (ČTK).",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/vit-rakusan/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/vit-rakusan/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/vit-rakusan/sources/SRC-03"
+    }
+  ],
+  "subjects": [
+    "vit-rakusan"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/vit-rakusan/_index.md)."
+    }
+  ]
+}

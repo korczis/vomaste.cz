@@ -1,6 +1,6 @@
 {
   "$comment": "Hash-kotva append-only autorizačního logu v AGENTS.md (## Content about real parties). Generuje `npm run authorization:anchor`: interaktivně, nebo pro čistě nový záznam po výslovné autorizaci vlastníka v aktuální konverzaci. verify-authorization-log-append-only.mjs proti ní ověřuje byte-verní integritu každého záznamu; validate-authorization.mjs přes ni váže data/authorizations.toml na log. Needitovat ručně.",
-  "generatedAt": "2026-08-06",
+  "generatedAt": "2026-08-07",
   "algorithm": "sha256(normalized entry block: LF line endings, trailing whitespace trimmed)",
   "entries": [
     {
@@ -170,6 +170,10 @@
     {
       "heading": "### Scope extension, 2026-08-06: Martin Pavlík — plný rozsah v mezích rejstříkové/veřejnoprávní stopy",
       "sha256": "953fc5e3ecbc8e1865a3b582a9804425ea3240a75fa612695a5ae7286de9095a"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-07: Vít Rakušan",
+      "sha256": "9076187860cf5018e6ab034ce87f579f96d63038f202e7747435e3b6596d13de"
     }
   ]
 }

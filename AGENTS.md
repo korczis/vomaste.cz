@@ -1898,3 +1898,19 @@ výjimky:
   evidenční fakt, nikdy jako podezření nebo důkaz pochybení.
 
 Tato autorizace nerozšiřuje rozsah na žádný jiný subjekt.
+
+### Scope extension, 2026-08-07: Vít Rakušan
+
+Authorized by the site owner, explicitly and on the record, 2026-08-07:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Vít Rakušan je veřejný
+funkcionář — bývalý první místopředseda vlády a ministr vnitra ČR, nyní
+poslanec Poslanecké sněmovny Parlamentu ČR za hnutí STAN (mandát od
+4. 10. 2025, Středočeský kraj) a předseda hnutí STAN, které je
+v aktuálním složení Poslanecké sněmovny opoziční stranou. Rozsah tohoto
+dossieru je záměrně minimální: pouze základní, aktuálně ověřený politický
+profil (poslanecký mandát, funkce místopředsedy poslaneckého klubu STAN,
+členství ve Zahraničním výboru a role předsedy hnutí STAN v opozici),
+doložený přímo otevřenými veřejnými zdroji (psp.cz, Blesk.cz, Tiscali.cz).
+Nejde o investigativní rešerši jeho ministerského působení ani žádné
+kauzy — to by vyžadovalo samostatnou budoucí autorizaci.

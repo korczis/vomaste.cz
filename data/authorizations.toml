@@ -265,3 +265,10 @@ authorized_at = "2026-08-06"
 subjects = ["martin-pavlik"]
 agents_md_section = "Scope extension, 2026-08-06: Martin Pavlík — plný rozsah v mezích rejstříkové/veřejnoprávní stopy"
 scope_summary = "Ruší dřívější omezení AUTH-2026-08-05-MARTIN-PAVLIK na čtyři jmenovité subjekty a šest tvrzení. Dossier smí pokrývat jakoukoli veřejně doloženou rejstříkovou, spolkovou a veřejnopeněžní stopu osoby vymezené stejnou identitní kotvou (podnikatel.cz profil 1902710 + ARES VR): doplňkové rejstříkové zápisy, řádně dopočítaný objem smluv v Registru smluv za všechny čtyři subjekty, veřejně publikované účetní závěrky ve Sbírce listin, a listinné doklady jako silnější/nezávislejší zdroj oproti sdílené rodině ARES+Podnikatel.cz. Beze změny zůstávají strukturální pravidla projektu: žádný IT profesní profil, schopnosti, zaměstnání, věk, datum narození, adresa bydliště; žádné sloučení s jinou osobou stejného jména bez listinného ověření; funkce/podíl/smlouva zůstává evidenční fakt, nikdy podezření."
+
+[[authorizations]]
+id = "AUTH-2026-08-07-VIT-RAKUSAN"
+authorized_at = "2026-08-07"
+subjects = ["vit-rakusan"]
+agents_md_section = "Scope extension, 2026-08-07: Vít Rakušan"
+scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Vít Rakušan je veřejný funkcionář — bývalý první místopředseda vlády a ministr vnitra ČR, nyní poslanec Poslanecké sněmovny Parlamentu ČR za hnutí STAN (mandát od 4. 10. 2025, Středočeský kraj) a předseda hnutí STAN, které je v aktuálním složení Poslanecké sněmovny opoziční stranou. Rozsah tohoto dossieru je záměrně minimální: pouze základní, aktuálně ověřený politický profil (poslanecký mandát, funkce místopředsedy poslaneckého klubu STAN, členství ve Zahraničním výboru a role předsedy hnutí STAN v opozici), doložený přímo otevřenými veřejnými zdroji (psp.cz, Blesk.cz, Tiscali.cz). Nejde o investigativní rešerši jeho ministerského působení ani žádné kauzy — to by vyžadovalo samostatnou budoucí autorizaci."

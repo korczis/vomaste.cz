@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/vit-rakusan",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "vit-rakusan",
+  "slug": "vit-rakusan",
+  "title": "Vít Rakušan",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení Víta Rakušana.",
+  "dossierType": "entity",
+  "canonicalDossier": "vit-rakusan",
+  "subject": "vit-rakusan",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-07",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-07-VIT-RAKUSAN"
+    ]
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nVít Rakušan je bývalý první místopředseda vlády a ministr vnitra ČR,\nnyní poslanec Poslanecké sněmovny Parlamentu ČR za hnutí STAN a předseda\nhnutí STAN, které je v aktuálním složení Poslanecké sněmovny opoziční\nstranou. Jako veřejný funkcionář spadá do standing scope autorizace\n(`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro tento dossier\nje `AUTH-2026-08-07-VIT-RAKUSAN`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam — dokládá pouze jeho aktuální poslanecký mandát, funkci\nmístopředsedy poslaneckého klubu STAN, členství ve Zahraničním výboru\nPoslanecké sněmovny a roli předsedy hnutí STAN v opozici, nikoli\nhloubkovou investigativní rešerši jeho ministerského působení nebo\njiných témat. Rozšíření rozsahu vyžaduje samostatnou budoucí\nautorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/vit-rakusan/claims/clm-01.md) | Vít Rakušan je od 4. 10. 2025 poslancem Poslanecké sněmovny Parlamentu ČR za hnutí STAN (volební obvod Středočeský kraj); od 24. 6. 2026 je členem Zahraničního výboru Poslanecké sněmovny a od 26. 6. 2026 místopředsedou poslaneckého klubu STAN. Zároveň nadále zastává funkci předsedy hnutí STAN, které je v aktuálním složení Poslanecké sněmovny opoziční stranou — nezávisle informovaly Blesk.cz i Tiscali.cz (ČTK). | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/vit-rakusan/sources/src-01.md), [SRC-02](@/dossiers/vit-rakusan/sources/src-02.md), [SRC-03](@/dossiers/vit-rakusan/sources/src-03.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedeného poslaneckého mandátu, funkce místopředsedy\nklubu, členství ve výboru ani role předsedy hnutí STAN v opozici nic\ndalšího; nejde o hodnocení jeho politického působení (vč. dřívějšího\npůsobení ve vládě) ani o investigativní rešerši jiných témat."
+    }
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "entity": "vit-rakusan",
+        "label": "Vít Rakušan",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02",
+          "SRC-03"
+        ]
+      }
+    ],
+    "edges": []
+  }
+}

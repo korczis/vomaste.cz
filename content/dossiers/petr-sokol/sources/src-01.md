@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-01 — Poslanecká sněmovna: oficiální profil poslance Petra Sokola"
-description = "Oficiální profilová stránka poslance na webu Poslanecké sněmovny Parlamentu ČR s údaji o mandátu, straně, obvodu a klubové/výborové příslušnosti."
+description = "Oficiální profilová stránka poslance na webu Poslanecké sněmovny Parlamentu ČR s údaji o mandátu, straně, obvodu a klubové/výborové… Zdroj: Poslanecká sněmovna Parlamentu ČR, dossier Petr Sokol."
 template = "dossier-source.html"
 weight = 1
 

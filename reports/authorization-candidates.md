@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 501 context entities across 38 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 500 context entities across 39 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -5004,20 +5004,6 @@ Generated from 501 context entities across 38 dossier(s). Regenerate with `npm r
 - Claims: CLM-31
 - Sources: SRC-19 (1 independent source family)
 - Relations: none
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Vít Rakušan (`vit-rakusan`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: andrej-babis, boris-stastny, martin-sebestyan, oto-klempir, ales-juchelka, alena-schillerova
-- Claims: CLM-06, CLM-17, CLM-23, CLM-38
-- Sources: SRC-02, SRC-09, SRC-17, SRC-18 (9 independent source families)
-- Relations:
-  - edge-vit-rakusan-stan (vit-rakusan -> stan, "předseda STAN", dossier: boris-stastny)
-  - edge-vit-rakusan-stastny (vit-rakusan -> stastny, "na ministrovo vysvětlení reagoval, že lžím a podvodům se teď bude říkat stylizace", dossier: boris-stastny)
-  - edge-rakusan-trestnioznameni (vit-rakusan -> trestni-oznameni-stan-mpsv, "Rakušan (STAN) oznámil podání trestního oznámení kvůli střetu zájmů na MPSV", dossier: ales-juchelka)
-  - edge-rakusan-schillerova (vit-rakusan -> schillerova, "Rakušan (STAN) po vetu uvedl, že si vláda chtěla otevřít cestu k obcházení dluhových pravidel", dossier: alena-schillerova)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Vláda ČR (`vlada`)

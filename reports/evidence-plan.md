@@ -55,10 +55,10 @@ veškeré nedodělané zdrojovací práce.
 
 | Metrika | Hodnota |
 |---|---|
-| Dossierů | 38 |
-| Tvrzení | 986 |
-| — z toho `E0` / `E1` / `E1+` / `E2` | 0 / 556 / 93 / 337 |
-| Zdrojů (z toho s vyplněnou `sourceFamily`) | 739 (393) |
+| Dossierů | 39 |
+| Tvrzení | 987 |
+| — z toho `E0` / `E1` / `E1+` / `E2` | 0 / 556 / 93 / 338 |
+| Zdrojů (z toho s vyplněnou `sourceFamily`) | 742 (395) |
 | Kauz | 94 |
 | Mezer celkem / otevřených / zastaralých | 205 / 202 / 0 |
 | Vztahů | 341 |
@@ -106,6 +106,7 @@ veškeré nedodělané zdrojovací práce.
 | 36 | [Petr Macinka](../data/dossiers/petr-macinka/) `petr-macinka` *(view)* | **žádná** | 0 | 0.0 % | 100.0 % | 0 | 0/0/0/0 | 0 | 0 | 2026-07-29 |
 | 37 | [Petr Sokol](../data/dossiers/petr-sokol/) `petr-sokol` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 4 | 2026-08-06 |
 | 38 | [Renáta Zajíčková](../data/dossiers/renata-zajickova/) `renata-zajickova` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 3 | 2026-08-06 |
+| 39 | [Vít Rakušan](../data/dossiers/vit-rakusan/) `vit-rakusan` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 1 | 2026-08-07 |
 
 ## Plán per dossier
 
@@ -716,6 +717,20 @@ Deklarované stavy: CORROBORATED 1
 Další krok:
 
 - 3 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
+
+### 39. Vít Rakušan — `vit-rakusan`
+
+**Priorita žádná** · 0 bodů (0.0 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-07`, revidováno `—`
+
+| Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
+|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 0 | 0 | 0 | 1 | 3 | 2 | 0 | 0 (0) | 0 |
+
+Deklarované stavy: CORROBORATED 1
+
+Další krok:
+
+- 1 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
 
 ---
 
