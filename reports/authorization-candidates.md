@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 492 context entities across 48 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 491 context entities across 49 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -1450,17 +1450,6 @@ Generated from 492 context entities across 48 dossier(s). Regenerate with `npm r
 - Claims: CLM-43
 - Sources: SRC-22 (1 independent source family)
 - Relations: none
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Jan Jakob (`jan-jakob`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: alena-schillerova
-- Claims: CLM-39
-- Sources: SRC-08 (1 independent source family)
-- Relations:
-  - edge-jakob-schillerova (jan-jakob -> schillerova, "Jakob (TOP 09) po vetu oznámil přípravu ústavní stížnosti na novelu", dossier: alena-schillerova)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Jan Lelek (`jan-lelek`)

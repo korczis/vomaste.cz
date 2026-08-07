@@ -342,3 +342,10 @@ authorized_at = "2026-08-07"
 subjects = ["matej-ondrej-havel"]
 agents_md_section = "Scope extension, 2026-08-07: Matěj Ondřej Havel"
 scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Matěj Ondřej Havel je veřejný funkcionář — poslanec Poslanecké sněmovny Parlamentu ČR za TOP 09 (mandát od 4. 10. 2025, volební kraj Královéhradecký), od 14. 11. 2025 předseda Výboru pro vědu, vzdělání, kulturu, mládež a tělovýchovu a od 8. 11. 2025 předseda TOP 09 (zvolen na sněmu strany, podpořen 120 ze 171 hlasujících delegátů, nahradil Markétu Pekarovou Adamovou). Rozsah tohoto dossieru je záměrně minimální: pouze základní, aktuálně ověřený politický profil (poslanecký mandát, výborová funkce předsedy školského výboru, stranická funkce předsedy TOP 09), doložený přímo otevřenými zdroji (psp.cz, Aktuálně.cz). Nejde o investigativní rešerši žádné kauzy ani sporného tématu — to by vyžadovalo samostatnou budoucí autorizaci."
+
+[[authorizations]]
+id = "AUTH-2026-08-07-JAN-JAKOB"
+authorized_at = "2026-08-07"
+subjects = ["jan-jakob"]
+agents_md_section = "Scope extension, 2026-08-07: Jan Jakob"
+scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jan Jakob je veřejný funkcionář — poslanec Poslanecké sněmovny Parlamentu ČR za TOP 09 (mandát od 4. 10. 2025, Středočeský kraj) a předseda poslaneckého klubu TOP 09 (od 7. 10. 2025, zvolen opakovaně po volbách 2025). Rozsah tohoto dossieru je záměrně minimální: pouze základní, nekontroverzní tvrzení o jeho aktuálním poslaneckém mandátu a roli předsedy poslaneckého klubu TOP 09, doložené přímo otevřenými zdroji (Poslanecká sněmovna Parlamentu ČR, ČeskéNoviny.cz). Nejde o investigativní rešerši žádné kauzy ani sporného tématu."
