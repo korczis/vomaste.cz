@@ -10,6 +10,12 @@ Stavy: `todo → claimed → in-progress → review → merged`, kdykoliv
 nese štítek `[scope-check]` a před startem se ověřuje proti
 autorizačnímu logu v `AGENTS.md`.
 
+## Aktivní zadání: James Quick — pokračující doložení (2026-08-07)
+
+| ID | Titul | Scope (soubory/sekce) | Branch | Owner | Stav | Závislosti | Akceptace |
+|----|-------|-----------------------|--------|-------|------|------------|-----------|
+| T-090 | `[scope-check]` James Quick: nezávislé doložení domén napodobujících státní instituce a plánovaného veřejného registru — pouze průnik tvrzení přímo doložený ČT24 + Peníze.cz, respektive ČT24 + iROZHLAS; napojení na existující entity, kauzy, graf a UI | `data/dossiers/james-quick/**`, odvozené adaptéry `content/dossiers/james-quick/**`, generované snapshoty/reporty | task/T-090-james-quick-corroboration | ORCH | in-progress | – | Výslovná autorizace vlastníka pro `jamesquick.cz`; žádná vlastní/přidružená stránka jako nezávislý hlas; R8/S10 a tabulka byte-exact; `npm run data:validate`, `npm run data:build` a plný `npm run build` zelené; commit, push a deploy |
+
 ## Aktivní zadání: manifest deep-dive + docs onramp (2026-08-06)
 
 Zadání vlastníka: „výtazně rozšiř sekci a články — koncept, metodika,
