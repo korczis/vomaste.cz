@@ -1,48 +1,48 @@
 {
-  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
-  "schemaVersion": 1,
-  "@context": "https://vomaste.cz/context/v1.jsonld",
-  "@id": "https://vomaste.cz/id/entities/top-09",
-  "@type": "vomaste:Entity",
-  "recordType": "entity",
-  "identifier": "top-09",
-  "entityId": "top-09",
-  "title": "TOP 09",
-  "entityType": "political_party",
-  "publicationRole": "context",
-  "dossierEnabled": false,
-  "dossierStatus": "not_authorized",
-  "coverageState": "discovered",
-  "dossiers": [
-    "andrej-babis",
-    "boris-stastny",
-    "jaromir-zuna",
-    "karel-havlicek"
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/top-09",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "top-09",
+ "entityId": "top-09",
+ "title": "TOP 09",
+ "entityType": "political_party",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "andrej-babis",
+  "boris-stastny",
+  "jaromir-zuna",
+  "karel-havlicek"
+ ],
+ "order": 410,
+ "provenance": {
+  "discoveredAt": "2026-08-02",
+  "discoveredVia": [
+   "content-extraction-2026-08-02"
   ],
-  "order": 410,
-  "provenance": {
-    "discoveredAt": "2026-08-02",
-    "discoveredVia": [
-      "content-extraction-2026-08-02"
-    ],
-    "claimRefs": [
-      "CLM-09",
-      "CLM-32",
-      "CLM-39"
-    ],
-    "sourceRefs": [
-      "SRC-02",
-      "SRC-06",
-      "SRC-18"
-    ]
-  },
-  "content": [
-    {
-      "type": "markdown",
-      "value": "Kontextová entita — Zmíněna jen jako stranická afiliace citovaného Matěje Ondřeje Havla. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (andrej-babis, boris-stastny, jaromir-zuna, karel-havlicek). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
-    }
+  "claimRefs": [
+   "CLM-09",
+   "CLM-32",
+   "CLM-39"
   ],
-  "externalIds": {
-    "ico": "71339728"
+  "sourceRefs": [
+   "SRC-02",
+   "SRC-06",
+   "SRC-18"
+  ]
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (mj. jako stranická příslušnost více subjektů dossierů). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
   }
+ ],
+ "externalIds": {
+  "ico": "71339728"
+ }
 }
