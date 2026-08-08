@@ -3710,3 +3710,88 @@ na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
 doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
 dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
 autorizaci.
+
+### Scope extension, 2026-08-08: Martin Barták
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Martin Barták je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+místopředseda vlády a ministr obrany (8. 5. 2009 – 13. 7. 2010, od 25. 6. 2010 v demisi) (Fischerova úřednická vláda). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Petr Šimerka
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Petr Šimerka je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr práce a sociálních věcí (8. 5. 2009 – 13. 7. 2010, od 25. 6. 2010 v demisi) (Fischerova úřednická vláda). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Jakub Šebesta
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jakub Šebesta je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr zemědělství (8. 5. 2009 – 13. 7. 2010, od 25. 6. 2010 v demisi; 22. 3. – 15. 4. 2010 pověřen i řízením Ministerstva životního prostředí) (Fischerova úřednická vláda). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Dana Jurásková
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Dana Jurásková je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministryně zdravotnictví (8. 5. 2009 – 13. 7. 2010, od 25. 6. 2010 v demisi) (Fischerova úřednická vláda). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Miroslava Kopicová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Miroslava Kopicová je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministryně školství, mládeže a tělovýchovy (8. 5. 2009 – 13. 7. 2010, od 25. 6. 2010 v demisi) (Fischerova úřednická vláda). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
