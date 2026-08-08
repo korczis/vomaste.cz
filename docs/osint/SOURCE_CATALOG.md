@@ -197,39 +197,42 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 785 záznamů v 139 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 967 záznamů v 142 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
-| ctk | 300 | 28 | [ano](/zdroje/ctk/) |
-| Poslanecká sněmovna Parlamentu ČR | 56 | 37 | [ano](/zdroje/psp-cz/) |
+| ctk | 303 | 31 | [ano](/zdroje/ctk/) |
+| Vláda České republiky (vlada.gov.cz) | 171 | 157 | [ano](/zdroje/vlada-cz/) |
+| Poslanecká sněmovna Parlamentu ČR | 61 | 42 | [ano](/zdroje/psp-cz/) |
 | seznam-zpravy | 38 | 13 | [ano](/zdroje/seznam-zpravy/) |
-| Vláda České republiky (vlada.gov.cz) | 29 | 18 | [ano](/zdroje/vlada-cz/) |
+| ČT24 (Česká televize) | 26 | 18 | [ano](/zdroje/ceska-televize/) |
+| Aktuálně.cz | 20 | 15 | [ano](/zdroje/aktualne-cz/) |
 | FORUM 24 | 20 | 10 | [ano](/zdroje/forum24/) |
-| ČT24 (Česká televize) | 19 | 11 | [ano](/zdroje/ceska-televize/) |
+| Echo24 | 19 | 15 | [ano](/zdroje/echo24/) |
 | denik-n | 18 | 10 | [ano](/zdroje/denik-n/) |
-| Echo24 | 18 | 14 | [ano](/zdroje/echo24/) |
-| Aktuálně.cz | 13 | 8 | [ano](/zdroje/aktualne-cz/) |
 | Novinky.cz | 13 | 12 | [ano](/zdroje/novinky-cz/) |
 | denik-cz | 11 | 6 | [ano](/zdroje/denik-cz/) |
 | Česká justice | 11 | 6 | [ano](/zdroje/ceska-justice/) |
 | Ekonomický deník | 10 | 6 | [ano](/zdroje/ekonomicky-denik/) |
 | irozhlas | 9 | 6 | [ano](/zdroje/irozhlas/) |
 | hlidac-statu | 7 | 2 | [ano](/zdroje/hlidac-statu/) |
+| Blesk.cz | 7 | 5 | [ano](/zdroje/blesk-cz/) |
+| Hospodářské noviny | 7 | 6 | — |
 | udhpsh | 7 | 2 | [ano](/zdroje/udhpsh/) |
-| Hospodářské noviny | 6 | 5 | — |
-| Blesk.cz | 5 | 3 | [ano](/zdroje/blesk-cz/) |
-| CNN Prima News | 5 | 5 | — |
+| CNN Prima News | 6 | 6 | — |
+| Seznam Zprávy | 6 | 6 | [ano](/zdroje/seznam-zpravy/) |
+| e15.cz | 5 | 3 | — |
+| Respekt | 5 | 4 | — |
 | Zdravé zprávy | 5 | 2 | — |
-| e15.cz | 4 | 2 | — |
 | HlídacíPes.org | 4 | 4 | — |
 | Ministerstvo dopravy ČR | 4 | 1 | — |
 | Reflex | 4 | 4 | — |
-| Respekt | 4 | 3 | — |
 | Státní zemědělský intervenční fond | 4 | 1 | — |
 | verejnazaloba | 4 | 1 | — |
+| Forum24 | 3 | 3 | — |
 | Investigace.cz | 3 | 3 | — |
 | Ministerstvo financí ČR | 3 | 1 | — |
+| Ministerstvo školství, mládeže a tělovýchovy (msmt.gov.cz) | 3 | 3 | — |
 | Ministerstvo školství, mládeže a tělovýchovy ČR | 3 | 1 | — |
 | Ministerstvo zemědělství ČR | 3 | 1 | — |
 | Národní rozpočtová rada | 3 | 1 | — |
@@ -259,7 +262,6 @@ Dopočítáno z `data/dossiers/**/sources/**`, 785 záznamů v 139 rodinách/out
 | Pražský deník | 2 | 1 | — |
 | Registr lobbování (RELOB) | 2 | 1 | — |
 | Senát Parlamentu České republiky | 2 | 2 | — |
-| Seznam Zprávy | 2 | 2 | [ano](/zdroje/seznam-zpravy/) |
 | Ústavní soud ČR | 2 | 2 | — |
 | Vrchní státní zastupitelství v Olomouci | 2 | 1 | — |
 | blesk | 1 | 1 | [ano](/zdroje/blesk-cz/) |
@@ -291,10 +293,10 @@ Dopočítáno z `data/dossiers/**/sources/**`, 785 záznamů v 139 rodinách/out
 | Ekonews | 1 | 1 | — |
 | Ekonom | 1 | 1 | — |
 | EV Magazín | 1 | 1 | — |
+| Evropská komise (commission.europa.eu) | 1 | 1 | — |
 | Evropský parlament | 1 | 1 | — |
 | Extra.cz | 1 | 1 | — |
 | Finmag.cz — přepis obchodního rejstříku | 1 | 1 | — |
-| Forum24 | 1 | 1 | — |
 | Hanácká Drbna | 1 | 1 | — |
 | Heroine.cz | 1 | 1 | — |
 | Info.cz | 1 | 1 | — |
@@ -337,6 +339,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 785 záznamů v 139 rodinách/out
 | zdravezpravy.cz | 1 | 1 | — |
 | Zdravotnický deník | 1 | 1 | — |
 | Život v Česku | 1 | 1 | — |
+| Zprávy Tiscali (zpravy.tiscali.cz) | 1 | 1 | — |
 | respekt | 1 | 1 | — |
 | usoud | 1 | 1 | — |
 | vlm | 1 | 1 | — |
@@ -345,7 +348,9 @@ Dopočítáno z `data/dossiers/**/sources/**`, 785 záznamů v 139 rodinách/out
 
 Tyhle zdroje dataset používá aspoň pětkrát, ale katalog k nim nemá záznam s mezemi a pastmi:
 
-- Hospodářské noviny (6×)
-- CNN Prima News (5×)
+- Hospodářské noviny (7×)
+- CNN Prima News (6×)
+- e15.cz (5×)
+- Respekt (5×)
 - Zdravé zprávy (5×)
 

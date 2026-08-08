@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 490 context entities across 51 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 480 context entities across 192 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -266,16 +266,6 @@ Generated from 490 context entities across 51 dossier(s). Regenerate with `npm r
 - Appears in: adam-vojtech, andrej-babis, jaromir-zuna, jaroslav-faltynek, jeronym-tejc, karel-havlicek, macinka-turek, robert-plaga, tomio-okamura, tunde-bartha, zuzana-mrazova
 - Claims: CLM-01, CLM-02, CLM-03, CLM-17, CLM-19, CLM-26, CLM-29, CLM-35, CLM-38, CLM-41, CLM-85
 - Sources: SRC-01, SRC-02, SRC-03, SRC-04, SRC-06, SRC-11, SRC-13, SRC-14, SRC-17, SRC-18, SRC-19, SRC-20, SRC-25, SRC-27, SRC-28, SRC-61 (29 independent source families)
-- Relations: none
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Antonín Staněk (`antonin-stanek`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: macinka-turek
-- Claims: CLM-02
-- Sources: SRC-11, SRC-13 (2 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -1100,6 +1090,16 @@ Generated from 490 context entities across 51 dossier(s). Regenerate with `npm r
   - edge-stastny-frantisek-horak (stastny -> frantisek-horak, "na jeho návrh vláda odvolala i člena Rady Národní sportovní agentury Františka Horáka", dossier: boris-stastny)
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## František Pavlík (`frantisek-pavlik`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## František Talíř (`frantisek-talir`)
 
 - Type: person
@@ -1629,17 +1629,6 @@ Generated from 490 context entities across 51 dossier(s). Regenerate with `npm r
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
-## Jiří Paroubek (`jiri-paroubek`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: james-quick
-- Claims: CLM-16
-- Sources: SRC-17 (1 independent source family)
-- Relations:
-  - edge-james-quick-jiri-paroubek (james-quick -> jiri-paroubek, "organizoval demonstrace požadující Paroubkův odchod z politiky", dossier: james-quick)
-- Missing: explicit owner authorization to promote this to its own dossier
-
 ## Jiří Tvrdík (`jiri-tvrdik`)
 
 - Type: person
@@ -1699,16 +1688,6 @@ Generated from 490 context entities across 51 dossier(s). Regenerate with `npm r
 - Appears in: adam-vojtech
 - Claims: CLM-45
 - Sources: SRC-27 (1 independent source family)
-- Relations: none
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Jozef Síkela (`jozef-sikela`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: andrej-babis, karel-havlicek
-- Claims: none
-- Sources: SRC-11, SRC-36 (3 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -2355,17 +2334,6 @@ Generated from 490 context entities across 51 dossier(s). Regenerate with `npm r
   - edge-ministerstvo-zivotniho-prostredi-lukas-vaverka (ministerstvo-zivotniho-prostredi -> lukas-vaverka, "vedoucí nového oddělení klimatické politiky a Green Dealu (od 1. 4. 2026)", dossier: igor-cerveny)
 - Missing: explicit owner authorization to promote this to its own dossier
 
-## Lukáš Vlček (`lukas-vlcek`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: karel-havlicek, zuzana-mrazova
-- Claims: CLM-13, CLM-16
-- Sources: SRC-06, SRC-07, SRC-08, SRC-11 (6 independent source families)
-- Relations:
-  - edge-vlcek-havlicek (lukas-vlcek -> havlicek, "Vlček (STAN) označil Havlíčkův návrh stavebního zákona za „legislativní paskvil“", dossier: karel-havlicek)
-- Missing: explicit owner authorization to promote this to its own dossier
-
 ## Magda Kopczyńska (`magda-kopczynska`)
 
 - Type: person
@@ -2425,16 +2393,6 @@ Generated from 490 context entities across 51 dossier(s). Regenerate with `npm r
 - Appears in: —
 - Claims: none
 - Sources: none (0 independent source families)
-- Relations: none
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Marek Výborný (`marek-vyborny`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: karel-havlicek, martin-sebestyan
-- Claims: CLM-03, CLM-16, CLM-32, CLM-44
-- Sources: SRC-05, SRC-07, SRC-18, SRC-25, SRC-27 (5 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -3511,17 +3469,6 @@ Generated from 490 context entities across 51 dossier(s). Regenerate with `npm r
   - edge-bednarik-patrick-schneider (bednarik -> patrick-schneider, "jednal s německým spolkovým ministrem dopravy o Krušnohorském tunelu (2026)", dossier: ivan-bednarik)
 - Missing: explicit owner authorization to promote this to its own dossier
 
-## Pavel Blažek (`pavel-blazek`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: jeronym-tejc
-- Claims: CLM-07, CLM-19, CLM-24, CLM-29
-- Sources: SRC-02, SRC-03, SRC-04, SRC-11, SRC-12, SRC-13, SRC-14, SRC-15 (3 independent source families)
-- Relations:
-  - edge-blazek-tejc (pavel-blazek -> tejc, "Blažek se v bitcoinové kauze, kterou otevřelo Tejcovo trestní oznámení, cítí nevinný", dossier: jeronym-tejc)
-- Missing: explicit owner authorization to promote this to its own dossier
-
 ## Mgr. Pavel Hanus (`pavel-hanus`)
 
 - Type: person
@@ -3665,17 +3612,6 @@ Generated from 490 context entities across 51 dossier(s). Regenerate with `npm r
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
-## Petr Hladík (`petr-hladik`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: igor-cerveny
-- Claims: CLM-15
-- Sources: SRC-07 (1 independent source family)
-- Relations:
-  - edge-petr-hladik-cerveny (petr-hladik -> cerveny, "kritizoval rekonstrukci ministrovy kanceláře jako vyhazování veřejných peněz", dossier: igor-cerveny)
-- Missing: explicit owner authorization to promote this to its own dossier
-
 ## Petr Kowanda (`petr-kowanda`)
 
 - Type: person
@@ -3683,16 +3619,6 @@ Generated from 490 context entities across 51 dossier(s). Regenerate with `npm r
 - Appears in: robert-plaga
 - Claims: CLM-32
 - Sources: SRC-24 (1 independent source family)
-- Relations: none
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Petr Kulhánek (`petr-kulhanek`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: zuzana-mrazova
-- Claims: CLM-32
-- Sources: SRC-26 (1 independent source family)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -3950,17 +3876,6 @@ Generated from 490 context entities across 51 dossier(s). Regenerate with `npm r
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
-## Radek John (`radek-john`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: james-quick
-- Claims: CLM-15
-- Sources: SRC-16 (1 independent source family)
-- Relations:
-  - edge-james-quick-radek-john (james-quick -> radek-john, "CERD zastoupený Jehličkou podal oznámení ve veřejné kauze", dossier: james-quick)
-- Missing: explicit owner authorization to promote this to its own dossier
-
 ## Radek Mátl (`radek-matl`)
 
 - Type: person
@@ -4061,16 +3976,6 @@ Generated from 490 context entities across 51 dossier(s). Regenerate with `npm r
 - Appears in: adam-vojtech
 - Claims: CLM-09, CLM-33
 - Sources: SRC-02, SRC-20 (2 independent source families)
-- Relations: none
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Roman Prymula (`roman-prymula`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: adam-vojtech
-- Claims: CLM-46
-- Sources: SRC-11 (1 independent source family)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -5231,16 +5136,6 @@ Generated from 490 context entities across 51 dossier(s). Regenerate with `npm r
 - Sources: SRC-14 (1 independent source family)
 - Relations:
   - edge-tejc-kasal (tejc -> zdenek-kasal, "Kasal jako první náměstek nejvyššího státního zástupce zamítl stížnosti proti zahájení trestního stíhání v bitcoinové kauze resortu spravedlnosti", dossier: jeronym-tejc)
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Zdeněk Nekula (`zdenek-nekula`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: martin-sebestyan
-- Claims: CLM-04, CLM-08
-- Sources: SRC-04, SRC-06, SRC-26 (3 independent source families)
-- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Zdeněk Petzl (`zdenek-petzl`)
