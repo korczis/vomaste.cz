@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jiri-rusnok/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jiri-rusnok"
+  },
+  "title": "SRC-01 — Vláda ČR (oficiální přehled členů vlády Jiřího Rusnoka)",
+  "description": "Oficiální přehled členů vlády Jiřího Rusnoka: Rusnok předseda vlády 25. 6. 2013 – 29. 1. 2014 (od 13. 8. 2013 v demisi).",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vlada.gov.cz/cz/clenove-vlady/historie-minulych-vlad/prehled-vlad-cr/1993-2013-cr/jiri-rusnok/prehled-clenu-vlady-jiriho-rusnoka-13-07-2013---29-01-2014-115419/",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jiri-rusnok/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "jiri-rusnok"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální přehled členů vlády Jiřího Rusnoka na webu Vlády ČR, otevřen a přečten 2026-08-08.\nUvádí funkci předsedy vlády ČR od 25. 6. 2013 do 13. 8. 2013 a poté předsedy vlády v demisi od 13. 8. 2013 do 29. 1. 2014.\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** — jediný přímo otevřený zdroj tohoto dossieru; tvrzení proto nese stav 1 ZDROJ a pozdější působení (např. v ČNB) se bez otevřeného zdroje neuvádí."
+    }
+  ],
+  "order": 1
+}

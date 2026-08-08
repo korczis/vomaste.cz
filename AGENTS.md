@@ -3102,3 +3102,93 @@ vlada.gov.cz); povýšení na CORROBORATED vyžaduje otevření druhého,
 nezávislého zdroje. Okolnosti konce v úřadu ani pozdější veřejné funkce
 se zde bez přímo otevřeného zdroje neuvádějí. Rozšíření rozsahu
 vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Ivan Pilný
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Ivan Pilný je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr financí (24. 5. – 13. 12. 2017, vláda Bohuslava
+Sobotky, ANO, od 5. 12. 2017 v demisi), když ve funkci nahradil Andreje
+Babiše. Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED
+vyžaduje otevření druhého, nezávislého zdroje. Rozšíření rozsahu
+vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Antonín Prachař
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Antonín Prachař je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr dopravy (29. 1. 2014 – 13. 11. 2014, vláda Bohuslava
+Sobotky, ANO), kdy podle oficiálního přehledu podal rezignaci.
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci
+pokrýt vládní představitele postupně až do roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz — rezignace je uvedena jako fakt bez důvodů, které
+přehled neuvádí. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED
+vyžaduje otevření druhého, nezávislého zdroje. Rozšíření rozsahu
+vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Jan Chvojka
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jan Chvojka je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr pro lidská práva, rovné příležitosti a legislativu
+(30. 11. 2016 – 13. 12. 2017, vláda Bohuslava Sobotky, ČSSD, od
+5. 12. 2017 v demisi). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED
+vyžaduje otevření druhého, nezávislého zdroje. Rozšíření rozsahu
+vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Jiří Rusnok
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jiří Rusnok je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — předseda vlády ČR (25. 6. 2013 – 29. 1. 2014, úřednická
+vláda, od 13. 8. 2013 v demisi po neúspěšném hlasování o důvěře).
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci
+pokrýt vládní představitele postupně až do roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění pozdějšího působení (guvernér ČNB) vyžaduje otevření dalších
+zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Martin Pecina
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Martin Pecina je
+politicky exponovaná osoba v souvislosti s výkonem dřívějších veřejných
+funkcí — místopředseda vlády a ministr vnitra (10. 7. 2013 –
+29. 1. 2014, Rusnokova úřednická vláda, od 13. 8. 2013 v demisi);
+ministrem vnitra byl i ve vládě Jana Fischera (2009–2010). Autorizace
+navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt vládní
+představitele postupně až do roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívějších vládních funkcí doložený oficiálním přehledem členů
+vlády na vlada.gov.cz (Rusnokova vláda) — dřívější Fischerovo období se
+uvádí, jen pokud je doloží otevřený zdroj. Tvrzení nese stav 1 ZDROJ;
+povýšení na CORROBORATED vyžaduje otevření druhého, nezávislého zdroje.
+Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci.

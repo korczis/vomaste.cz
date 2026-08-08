@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jan-chvojka",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "jan-chvojka",
+  "slug": "jan-chvojka",
+  "title": "Jan Chvojka",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Jan Chvojka.",
+  "dossierType": "entity",
+  "canonicalDossier": "jan-chvojka",
+  "subject": "jan-chvojka",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-JAN-CHVOJKA"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "jan-chvojka",
+        "label": "Jan Chvojka",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nJan Chvojka je bývalý ministr pro lidská práva, rovné příležitosti a\nlegislativu (2016–2017, vláda Bohuslava Sobotky, ČSSD). Jako politicky\nexponovaná osoba v souvislosti s výkonem dřívější veřejné funkce spadá\ndo standing scope autorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`);\nkonkrétní záznam pro tento dossier je `AUTH-2026-08-08-JAN-CHVOJKA`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívější vládní funkce doložený oficiálním přehledem členů\nvlády. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED vyžaduje\notevření druhého, nezávislého zdroje. Rozšíření rozsahu vyžaduje\nsamostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/jan-chvojka/claims/clm-01.md) | Jan Chvojka byl podle oficiálního přehledu členů vlády Bohuslava Sobotky na webu Vlády ČR ministrem pro lidská práva, rovné příležitosti a legislativu od 30. 11. 2016 do 13. 12. 2017 (od 5. 12. 2017 v demisi), když ve funkci navázal na Jiřího Dienstbiera | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-01](@/dossiers/jan-chvojka/sources/src-01.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}
