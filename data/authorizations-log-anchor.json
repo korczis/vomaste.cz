@@ -682,6 +682,26 @@
     {
       "heading": "### Scope extension, 2026-08-08: Zdeněk Škromach",
       "sha256": "8ec3680e4da6f4d1ac85f49e05d46b20db4a21aeab515881a3e4661afab9cc56"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Pavel Němec",
+      "sha256": "eebd9c197143669f8a7a4831797d0df82289d822ebfd90a9a3cf9d13073849c9"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Milan Šimonovský",
+      "sha256": "406d42d05274216cdd745c8b62cb343111542b5c5760aef0d05e63c0d67eda13"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Martin Jahn",
+      "sha256": "d75b3c20efd1fb22b83a6581ed7383094d31397f80b28083073d3d1ea02af872"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: František Bublan",
+      "sha256": "91b2271f6459006c8ad44cbeed778d6d0dccac985772f0f4868d22aeea1d41f5"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Milan Urban",
+      "sha256": "93ac6b98d76128d339434c3d2d028b2d1ec3e7d5b4fbc7c1c6495c527478a285"
     }
   ]
 }

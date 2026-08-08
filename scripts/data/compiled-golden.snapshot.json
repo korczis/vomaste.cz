@@ -2,16 +2,16 @@
   "$comment": "Generováno scripts/data/update-golden-snapshot.mjs (npm run test:update-golden) — needituj ručně. Čte compiled-golden.test.mjs.",
   "countsPerType": {
     "case": 94,
-    "claim": 1112,
-    "dossier": 167,
-    "entity": 648,
+    "claim": 1117,
+    "dossier": 172,
+    "entity": 653,
     "gap": 204,
     "relation": 334,
-    "source": 904,
+    "source": 909,
     "update": 85
   },
-  "countsDossiers": 167,
-  "countsEntities": 648,
-  "graphNodes": 648,
+  "countsDossiers": 172,
+  "countsEntities": 653,
+  "graphNodes": 653,
   "graphEdges": 334
 }
