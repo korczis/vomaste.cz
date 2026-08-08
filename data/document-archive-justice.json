@@ -387,6 +387,27 @@
       "nonDigitizedCount": 0
     },
     {
+      "identifier": "justice-metadata-00266230",
+      "registry": "Sbírka listin – metadata",
+      "title": "Sbírka listin – Město Bílina (městský úřad a stavební úřad)",
+      "ico": "00266230",
+      "entity": "mesto-bilina",
+      "dossiers": [
+        "zuzana-mrazova"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
+      "file": "/documents/registry/justice/00266230.json",
+      "mediaType": "application/json",
+      "sha256": "42d9f8ff984ac6aefcd2b9f5d34295ae5f30bdf02969a552e079d054852d1080",
+      "found": false,
+      "filingCount": 0,
+      "documentCount": 0,
+      "pageCount": 0,
+      "documentBytes": 0,
+      "nonDigitizedCount": 0
+    },
+    {
       "identifier": "justice-metadata-00284301",
       "registry": "Sbírka listin – metadata",
       "title": "Sbírka listin – Město Otrokovice",
@@ -513,6 +534,27 @@
       "documentCount": 0,
       "pageCount": 0,
       "documentBytes": 0,
+      "nonDigitizedCount": 0
+    },
+    {
+      "identifier": "justice-metadata-00469548",
+      "registry": "Sbírka listin – metadata",
+      "title": "Sbírka listin – Česká unie sportu",
+      "ico": "00469548",
+      "entity": "ceska-unie-sportu",
+      "dossiers": [
+        "boris-stastny"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
+      "file": "/documents/registry/justice/00469548.json",
+      "mediaType": "application/json",
+      "sha256": "37f9b9f1f17870ce62d43ffb5859b9864b879cd879be1ca66399721ecc6e2963",
+      "found": true,
+      "filingCount": 31,
+      "documentCount": 31,
+      "pageCount": 671,
+      "documentBytes": 68497740,
       "nonDigitizedCount": 0
     },
     {
@@ -682,6 +724,27 @@
       "documentCount": 5,
       "pageCount": 14,
       "documentBytes": 4215115,
+      "nonDigitizedCount": 0
+    },
+    {
+      "identifier": "justice-metadata-04134940",
+      "registry": "Sbírka listin – metadata",
+      "title": "Sbírka listin – SPD",
+      "ico": "04134940",
+      "entity": "spd",
+      "dossiers": [
+        "tomio-okamura"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
+      "file": "/documents/registry/justice/04134940.json",
+      "mediaType": "application/json",
+      "sha256": "9a3efd2433bfe10586524953e427e15c606ffb549ccad5c019c802df75bee795",
+      "found": true,
+      "filingCount": 0,
+      "documentCount": 0,
+      "pageCount": 0,
+      "documentBytes": 0,
       "nonDigitizedCount": 0
     },
     {
@@ -1178,6 +1241,27 @@
       "documentCount": 5,
       "pageCount": 49,
       "documentBytes": 13970488,
+      "nonDigitizedCount": 0
+    },
+    {
+      "identifier": "justice-metadata-21030367",
+      "registry": "Sbírka listin – metadata",
+      "title": "Sbírka listin – Ředitelství silnic a dálnic (ŘSD)",
+      "ico": "21030367",
+      "entity": "rsd",
+      "dossiers": [
+        "ivan-bednarik"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
+      "file": "/documents/registry/justice/21030367.json",
+      "mediaType": "application/json",
+      "sha256": "42e73ad531493c11884f7d6d896f0f2e0af154ae815329f87c2ca4c35458c5d1",
+      "found": false,
+      "filingCount": 0,
+      "documentCount": 0,
+      "pageCount": 0,
+      "documentBytes": 0,
       "nonDigitizedCount": 0
     },
     {
@@ -1739,6 +1823,27 @@
       "documentCount": 86,
       "pageCount": 1106,
       "documentBytes": 104094449,
+      "nonDigitizedCount": 0
+    },
+    {
+      "identifier": "justice-metadata-41197518",
+      "registry": "Sbírka listin – metadata",
+      "title": "Sbírka listin – Všeobecná zdravotní pojišťovna (VZP)",
+      "ico": "41197518",
+      "entity": "vzp",
+      "dossiers": [
+        "adam-vojtech"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
+      "file": "/documents/registry/justice/41197518.json",
+      "mediaType": "application/json",
+      "sha256": "5884c8e72f078af3d1ac731854d98e75ffccc845d66c933b6ef756bc28f4d1be",
+      "found": false,
+      "filingCount": 0,
+      "documentCount": 0,
+      "pageCount": 0,
+      "documentBytes": 0,
       "nonDigitizedCount": 0
     },
     {

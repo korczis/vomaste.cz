@@ -1,0 +1,188 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "00266230"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "00266230",
+        "obchodniJmeno": "Město Bílina",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 60,
+          "nazevKraje": "Ústecký kraj",
+          "kodOkresu": 3509,
+          "nazevOkresu": "Teplice",
+          "kodObce": 567451,
+          "nazevObce": "Bílina",
+          "kodUlice": 583111,
+          "nazevUlice": "Břežánská",
+          "cisloDomovni": 50,
+          "kodCastiObce": 409251,
+          "cisloOrientacni": 4,
+          "nazevCastiObce": "Bílina",
+          "kodAdresnihoMista": 23796901,
+          "psc": 41801,
+          "textovaAdresa": "Břežánská 50/4, 41801 Bílina",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "801",
+        "pravniFormaRos": "801",
+        "financniUrad": "210",
+        "datumAktualizace": "2026-04-22",
+        "dic": "CZ00266230",
+        "icoId": "00266230",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Břežánská 50/4",
+          "radekAdresy2": "41801 Bílina"
+        },
+        "czNace2008": [
+          "84110"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "NEEXISTUJICI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "HISTORICKY",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "AKTIVNI",
+          "stavZdrojeMonitor": "AKTIVNI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Město Bílina",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 60,
+                  "nazevKraje": "Ústecký kraj",
+                  "kodOkresu": 3509,
+                  "nazevOkresu": "Teplice",
+                  "kodObce": 567451,
+                  "nazevObce": "Bílina",
+                  "kodUlice": 583111,
+                  "nazevUlice": "Břežánská",
+                  "cisloDomovni": 50,
+                  "kodCastiObce": 409251,
+                  "cisloOrientacni": 4,
+                  "nazevCastiObce": "Bílina",
+                  "kodAdresnihoMista": 23796901,
+                  "psc": 41801,
+                  "textovaAdresa": "Břežánská 50/4, 41801 Bílina",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "801",
+            "pravniFormaRos": "801",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Město Bílina",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 60,
+                  "nazevKraje": "Ústecký kraj",
+                  "kodOkresu": 3509,
+                  "nazevOkresu": "Teplice",
+                  "kodObce": 567451,
+                  "nazevObce": "Bílina",
+                  "kodUlice": 583111,
+                  "nazevUlice": "Břežánská",
+                  "cisloDomovni": 50,
+                  "kodCastiObce": 409251,
+                  "cisloOrientacni": 4,
+                  "nazevCastiObce": "Bílina",
+                  "kodAdresnihoMista": 23796901,
+                  "psc": 41801,
+                  "textovaAdresa": "Břežánská 50/4, 41801 Bílina",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "801",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Město Bílina",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 60,
+                  "nazevKraje": "Ústecký kraj",
+                  "kodOkresu": 3509,
+                  "nazevOkresu": "Teplice",
+                  "kodObce": 567451,
+                  "nazevObce": "Bílina",
+                  "kodUlice": 583111,
+                  "nazevUlice": "Břežánská",
+                  "cisloDomovni": 50,
+                  "kodCastiObce": 409251,
+                  "cisloOrientacni": 4,
+                  "nazevCastiObce": "Bílina",
+                  "kodAdresnihoMista": 23796901,
+                  "psc": 41801,
+                  "textovaAdresa": "Břežánská 50/4, 41801 Bílina",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "801",
+            "datovyZdroj": "rzp"
+          }
+        ],
+        "czNace": [
+          "84110"
+        ],
+        "subRegistrSzr": "szr"
+      }
+    ]
+  }
+}

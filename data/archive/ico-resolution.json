@@ -252,14 +252,10 @@
     {
       "entityId": "ceska-unie-sportu",
       "title": "Česká unie sportu",
-      "outcome": "ambiguous",
-      "detail": [
-        "00435449 Okresní sdružení Česká unie sportu Strakonice, z.s.",
-        "00469548 Česká unie sportu, z.s.",
-        "06840914 Česká unie handicapovaného sportu, z.s.",
-        "07148887 Česká unie svobodných sportů z.s.",
-        "17116856 Česká unie tanečního sportu, z.s."
-      ]
+      "outcome": "resolved_by_review",
+      "ico": "00469548",
+      "registeredName": "Česká unie sportu, z.s.",
+      "reviewNote": "exact-name match; the střešní sportovní organizace itself, not its regional chapters/handicap-sport/free-sport namesakes"
     },
     {
       "entityId": "ceske-drahy",
@@ -741,11 +737,10 @@
     {
       "entityId": "mesto-bilina",
       "title": "Město Bílina (městský úřad a stavební úřad)",
-      "outcome": "ambiguous",
-      "detail": [
-        "00266230 Město Bílina",
-        "26988143 Bílina - město s historií, z.s."
-      ]
+      "outcome": "resolved_by_review",
+      "ico": "00266230",
+      "registeredName": "Město Bílina",
+      "reviewNote": "the municipality itself, not the NGO \"Bílina - město s historií, z.s.\""
     },
     {
       "entityId": "mesto-otrokovice",
@@ -1165,14 +1160,10 @@
     {
       "entityId": "rsd",
       "title": "Ředitelství silnic a dálnic (ŘSD)",
-      "outcome": "ambiguous",
-      "detail": [
-        "21030367 Ředitelství silnic a dálnic s. p.",
-        "46749870 ZO OS pracovníků dopravy,silničního hospodářství a autoopravárenství Čech a Moravy Ředitelství silnic a dálnic ČR - správa LIBEREC",
-        "62534432 ZO OS Ředitelství silnic a dálnic ČR, správa České Budějovice",
-        "62936581 ZO OS PRACOVNÍKŮ DOPRAVY,SILNIČNÍHO HOSPODÁŘSTVÍ A AUTOOPRAVÁRENSTVÍ ČECH A MORAVY,ŘEDITELSTVÍ SILNIC A DÁLNIC ČR",
-        "65351894 ZO OS pracovníků dopravy, silničního hospodářství a autoopravárenství Čech a Moravy, Ředitelství silnic a dálnic ČR, závod Brno"
-      ]
+      "outcome": "resolved_by_review",
+      "ico": "21030367",
+      "registeredName": "Ředitelství silnic a dálnic s. p.",
+      "reviewNote": "the state enterprise itself, not its trade-union locals (ZO OS...)"
     },
     {
       "entityId": "rsvp-trust",
@@ -1261,13 +1252,10 @@
     {
       "entityId": "spd",
       "title": "SPD",
-      "outcome": "ambiguous",
-      "detail": [
-        "04134940 Svoboda a přímá demokracie (SPD)",
-        "25571877 SPD Kroměříž, a.s.",
-        "28630564 SPD Firmor s.r.o.",
-        "29359589 SPD services s.r.o."
-      ]
+      "outcome": "resolved_by_review",
+      "ico": "04134940",
+      "registeredName": "Svoboda a přímá demokracie (SPD)",
+      "reviewNote": "the political party, exact-name; the other hits are unrelated companies sharing the SPD abbreviation"
     },
     {
       "entityId": "spolecnost-pro-obranu-svobody-projevu",
@@ -1546,14 +1534,10 @@
     {
       "entityId": "vzp",
       "title": "Všeobecná zdravotní pojišťovna (VZP)",
-      "outcome": "ambiguous",
-      "detail": [
-        "41197518 VŠEOBECNÁ ZDRAVOTNÍ POJIŠŤOVNA ČESKÉ REPUBLIKY",
-        "65733151 ZO OS - VŠEOBECNÁ ZDRAVOTNÍ POJIŠŤOVNA",
-        "65733398 ZO OS pracovníků peněžnictví a pojišťovnictví Všeobecná zdravotní pojišťovna ČR",
-        "65733754 ZO OS pracovníků peněžnictví a pojišťovnictví Všeobecná zdravotní pojišťovna ČR",
-        "65734246 ZO OS pracovníků peněžnictví a pojišťovnictví - Všeobecná zdravotní pojišťovna - ústředí"
-      ]
+      "outcome": "resolved_by_review",
+      "ico": "41197518",
+      "registeredName": "VŠEOBECNÁ ZDRAVOTNÍ POJIŠŤOVNA ČESKÉ REPUBLIKY",
+      "reviewNote": "the insurer itself, not its trade-union locals (ZO OS...)"
     },
     {
       "entityId": "young-rubicam",

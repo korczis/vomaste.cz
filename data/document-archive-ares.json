@@ -297,6 +297,22 @@
       "found": true
     },
     {
+      "identifier": "ares-00266230",
+      "registry": "ARES",
+      "title": "Město Bílina (městský úřad a stavební úřad)",
+      "ico": "00266230",
+      "entity": "mesto-bilina",
+      "dossiers": [
+        "zuzana-mrazova"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/00266230.json",
+      "mediaType": "application/json",
+      "sha256": "a8e2f6d15a4b53e2f4d854b3c2f2b89ebc8b0f4134ab932e30f34542f9969ad7",
+      "found": true
+    },
+    {
       "identifier": "ares-00284301",
       "registry": "ARES",
       "title": "Město Otrokovice",
@@ -393,6 +409,22 @@
       "file": "/documents/registry/ares/00442704.json",
       "mediaType": "application/json",
       "sha256": "cb75872386c7b3e360f801d22ae1ca04e234dc33946ded2c7a440e9fec05de79",
+      "found": true
+    },
+    {
+      "identifier": "ares-00469548",
+      "registry": "ARES",
+      "title": "Česká unie sportu",
+      "ico": "00469548",
+      "entity": "ceska-unie-sportu",
+      "dossiers": [
+        "boris-stastny"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/00469548.json",
+      "mediaType": "application/json",
+      "sha256": "a1e6c4ef6ca0f85f2ba3153e830b5d2b91d2e45b4424d85f5dd7a039ec8a556f",
       "found": true
     },
     {
@@ -523,6 +555,22 @@
       "mediaType": "application/json",
       "sha256": "9c4ac082480ad058ad03a34d6fbfe14b8b5d4677c074112b43aeab03af7eed96",
       "found": false
+    },
+    {
+      "identifier": "ares-04134940",
+      "registry": "ARES",
+      "title": "SPD",
+      "ico": "04134940",
+      "entity": "spd",
+      "dossiers": [
+        "tomio-okamura"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/04134940.json",
+      "mediaType": "application/json",
+      "sha256": "3cf775b9ddb104eb7e9f2f02672b607d4417fe22d8581a9170c8cafaca89e722",
+      "found": true
     },
     {
       "identifier": "ares-04347803",
@@ -903,6 +951,22 @@
       "file": "/documents/registry/ares/17573866.json",
       "mediaType": "application/json",
       "sha256": "521ff953ed67862586be695808d138735a7cc5b993909ccb131dd15ffe0bc5f1",
+      "found": true
+    },
+    {
+      "identifier": "ares-21030367",
+      "registry": "ARES",
+      "title": "Ředitelství silnic a dálnic (ŘSD)",
+      "ico": "21030367",
+      "entity": "rsd",
+      "dossiers": [
+        "ivan-bednarik"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/21030367.json",
+      "mediaType": "application/json",
+      "sha256": "44d3d30cea849693d58e411492c59d5ed63fcfe421dbb4ce14dca52b96de2ea8",
       "found": true
     },
     {
@@ -1334,6 +1398,22 @@
       "file": "/documents/registry/ares/41035895.json",
       "mediaType": "application/json",
       "sha256": "352611711268968f4c460edb4a4a91d4ea304dee7fa613da1a2935c558ae5e32",
+      "found": true
+    },
+    {
+      "identifier": "ares-41197518",
+      "registry": "ARES",
+      "title": "Všeobecná zdravotní pojišťovna (VZP)",
+      "ico": "41197518",
+      "entity": "vzp",
+      "dossiers": [
+        "adam-vojtech"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/41197518.json",
+      "mediaType": "application/json",
+      "sha256": "247fa1351b21b651fad756a586da80c5218379bce9754b083cc35a6dca68b8eb",
       "found": true
     },
     {
@@ -2243,13 +2323,6 @@
       ]
     },
     {
-      "entity": "ceska-unie-sportu",
-      "title": "Česká unie sportu",
-      "dossiers": [
-        "boris-stastny"
-      ]
-    },
-    {
       "entity": "chemapol-bratislava",
       "title": "Chemapol Bratislava",
       "dossiers": [
@@ -2506,13 +2579,6 @@
       "title": "Medical Investments",
       "dossiers": [
         "macinka-turek"
-      ]
-    },
-    {
-      "entity": "mesto-bilina",
-      "title": "Město Bílina (městský úřad a stavební úřad)",
-      "dossiers": [
-        "zuzana-mrazova"
       ]
     },
     {
@@ -2784,13 +2850,6 @@
       ]
     },
     {
-      "entity": "rsd",
-      "title": "Ředitelství silnic a dálnic (ŘSD)",
-      "dossiers": [
-        "ivan-bednarik"
-      ]
-    },
-    {
       "entity": "scp-bigaud",
       "title": "SCP Bigaud (Monako)",
       "dossiers": [
@@ -2820,13 +2879,6 @@
       "title": "Soudcovská unie ČR",
       "dossiers": [
         "jeronym-tejc"
-      ]
-    },
-    {
-      "entity": "spd",
-      "title": "SPD",
-      "dossiers": [
-        "tomio-okamura"
       ]
     },
     {
@@ -2986,13 +3038,6 @@
     {
       "entity": "vybor-pro-zdravotnictvi-psp",
       "title": "Výbor pro zdravotnictví Poslanecké sněmovny",
-      "dossiers": [
-        "adam-vojtech"
-      ]
-    },
-    {
-      "entity": "vzp",
-      "title": "Všeobecná zdravotní pojišťovna (VZP)",
       "dossiers": [
         "adam-vojtech"
       ]

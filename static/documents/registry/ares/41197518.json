@@ -1,0 +1,205 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "41197518"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "41197518",
+        "obchodniJmeno": "VŠEOBECNÁ ZDRAVOTNÍ POJIŠŤOVNA ČESKÉ REPUBLIKY",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodOkresu": 3100,
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 35,
+          "nazevSpravnihoObvodu": "Praha 3",
+          "kodMestskehoObvodu": 35,
+          "nazevMestskehoObvodu": "Praha 3",
+          "kodMestskeCastiObvodu": 500097,
+          "kodUlice": 463221,
+          "nazevMestskeCastiObvodu": "Praha 3",
+          "nazevUlice": "Orlická",
+          "cisloDomovni": 2020,
+          "kodCastiObce": 490229,
+          "cisloOrientacni": 4,
+          "nazevCastiObce": "Vinohrady",
+          "kodAdresnihoMista": 22701362,
+          "psc": 13000,
+          "textovaAdresa": "Orlická 2020/4, Vinohrady, 13000 Praha 3",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "391",
+        "pravniFormaRos": "392",
+        "financniUrad": "003",
+        "datumAktualizace": "2026-07-10",
+        "dic": "CZ41197518",
+        "icoId": "41197518",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Orlická 2020/4",
+          "radekAdresy2": "Vinohrady",
+          "radekAdresy3": "13000 Praha 3"
+        },
+        "czNace2008": [
+          "84300"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "NEEXISTUJICI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "AKTIVNI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "VŠEOBECNÁ ZDRAVOTNÍ POJIŠŤOVNA ČESKÉ REPUBLIKY",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 35,
+                  "nazevSpravnihoObvodu": "Praha 3",
+                  "kodMestskehoObvodu": 35,
+                  "nazevMestskehoObvodu": "Praha 3",
+                  "kodMestskeCastiObvodu": 500097,
+                  "kodUlice": 463221,
+                  "nazevMestskeCastiObvodu": "Praha 3",
+                  "nazevUlice": "Orlická",
+                  "cisloDomovni": 2020,
+                  "kodCastiObce": 490229,
+                  "cisloOrientacni": 4,
+                  "nazevCastiObce": "Vinohrady",
+                  "kodAdresnihoMista": 22701362,
+                  "psc": 13000,
+                  "textovaAdresa": "Orlická 2020/4, Vinohrady, 13000 Praha 3",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "391",
+            "pravniFormaRos": "392",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "VŠEOBECNÁ ZDRAVOTNÍ POJIŠŤOVNA ČESKÉ REPUBLIKY",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodOkresu": 3100,
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 35,
+                  "nazevSpravnihoObvodu": "Praha 3",
+                  "kodMestskehoObvodu": 35,
+                  "nazevMestskehoObvodu": "Praha 3",
+                  "kodMestskeCastiObvodu": 500097,
+                  "kodUlice": 463221,
+                  "nazevMestskeCastiObvodu": "Praha 3",
+                  "nazevUlice": "Orlická",
+                  "cisloDomovni": 2020,
+                  "kodCastiObce": 490229,
+                  "cisloOrientacni": 4,
+                  "nazevCastiObce": "Vinohrady",
+                  "kodAdresnihoMista": 22701362,
+                  "psc": 13000,
+                  "textovaAdresa": "Orlická 2020/4, Vinohrady, 13000 Praha 3",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "392",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Všeobecná zdravotní pojišťovna České republiky",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 35,
+                  "nazevSpravnihoObvodu": "Praha 3",
+                  "kodMestskehoObvodu": 35,
+                  "nazevMestskehoObvodu": "Praha 3",
+                  "kodMestskeCastiObvodu": 500097,
+                  "kodUlice": 463221,
+                  "nazevMestskeCastiObvodu": "Praha 3",
+                  "nazevUlice": "Orlická",
+                  "cisloDomovni": 2020,
+                  "kodCastiObce": 490229,
+                  "cisloOrientacni": 4,
+                  "nazevCastiObce": "Vinohrady",
+                  "kodAdresnihoMista": 22701362,
+                  "psc": 13000,
+                  "textovaAdresa": "Orlická 2020/4, Vinohrady, 13000 Praha 3",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "392",
+            "datovyZdroj": "rzp"
+          }
+        ],
+        "czNace": [
+          "84300"
+        ],
+        "subRegistrSzr": "szr"
+      }
+    ]
+  }
+}
