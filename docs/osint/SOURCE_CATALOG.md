@@ -197,7 +197,7 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 776 záznamů v 135 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 777 záznamů v 135 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
@@ -216,8 +216,8 @@ Dopočítáno z `data/dossiers/**/sources/**`, 776 záznamů v 135 rodinách/out
 | irozhlas | 9 | 6 | [ano](/zdroje/irozhlas/) |
 | Ekonomický deník | 9 | 5 | [ano](/zdroje/ekonomicky-denik/) |
 | hlidac-statu | 7 | 2 | [ano](/zdroje/hlidac-statu/) |
+| udhpsh | 7 | 2 | [ano](/zdroje/udhpsh/) |
 | Hospodářské noviny | 6 | 5 | — |
-| udhpsh | 6 | 1 | [ano](/zdroje/udhpsh/) |
 | Blesk.cz | 5 | 3 | [ano](/zdroje/blesk-cz/) |
 | CNN Prima News | 5 | 5 | — |
 | Zdravé zprávy | 5 | 2 | — |

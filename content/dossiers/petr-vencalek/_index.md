@@ -13,8 +13,8 @@ record_type = "dossier"
 dossier_type = "entity"
 lang = "cs"
 seo_type = "ProfilePage"
-updated = "2026-08-01"
-reviewed_at = "2026-08-01"
+updated = "2026-08-08"
+reviewed_at = "2026-08-08"
 +++
 ## Kdo je Petr Vencálek {#kdo}
 
@@ -72,8 +72,12 @@ darů Vencálka Klubu motoristů, z.s. Veřejný rejstřík sponzoringu Hlídač
 státu byl 2026-08-01 aktivně prověřen
 ([SRC-03](@/dossiers/petr-vencalek/sources/src-03.md)): eviduje u
 Vencálka jeden dar 20 000 Kč, ale **jiné** politické straně — dar Klubu
-motoristů ani Motoristům sobě v něm doložen není. Absence záznamu v
-jednom registru sama o sobě nedokládá, že dar neexistuje (viz např.
+motoristů ani Motoristům sobě v něm doložen není. Protože Hlídač státu
+je jen zrcadlo primárního registru, byly 2026-08-08 přímo otevřeny i
+samotné výroční finanční zprávy hnutí Motoristé sobě za roky 2024 a
+2025 ([SRC-05](@/dossiers/petr-vencalek/sources/src-05.md)) — jméno
+Vencálek se v seznamu dárců ani bezúplatných plnění nenachází. Ani tak
+absence záznamu sama o sobě nedokládá, že dar neexistuje (viz např.
 nepeněžní plnění mimo evidenci u [Richarda
 Chlada](@/dossiers/richard-chlad/_index.md#kauza-financovani)) — proto
 zůstává otevřenou položkou, ne tvrzením v žádném směru, v
