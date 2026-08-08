@@ -197,7 +197,7 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 783 záznamů v 138 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 785 záznamů v 139 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
@@ -255,6 +255,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 783 záznamů v 138 rodinách/out
 | NašeTéma.cz | 2 | 2 | — |
 | Nejvyšší správní soud | 2 | 2 | — |
 | Olomoucký deník | 2 | 1 | — |
+| Podnikatel.cz | 2 | 2 | [ano](/zdroje/podnikatel-cz-rejstrik/) |
 | Pražský deník | 2 | 1 | — |
 | Registr lobbování (RELOB) | 2 | 1 | — |
 | Senát Parlamentu České republiky | 2 | 2 | — |
@@ -297,6 +298,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 783 záznamů v 138 rodinách/out
 | Hanácká Drbna | 1 | 1 | — |
 | Heroine.cz | 1 | 1 | — |
 | Info.cz | 1 | 1 | — |
+| InfoDnes.cz | 1 | 1 | — |
 | iportal24.cz | 1 | 1 | — |
 | iSport.cz (Blesk) | 1 | 1 | — |
 | Jezdci.cz | 1 | 1 | — |
@@ -314,7 +316,6 @@ Dopočítáno z `data/dossiers/**/sources/**`, 783 záznamů v 138 rodinách/out
 | Novinky.cz / Právo | 1 | 1 | [ano](/zdroje/novinky-cz/) |
 | ParlamentníListy.cz | 1 | 1 | — |
 | Peníze.cz | 1 | 1 | — |
-| Podnikatel.cz | 1 | 1 | [ano](/zdroje/podnikatel-cz-rejstrik/) |
 | Podpůrný a garanční rolnický a lesnický fond (PGRLF) | 1 | 1 | — |
 | Policie České republiky — Krajské ředitelství policie Olomouckého kraje | 1 | 1 | — |
 | Průmyslová automatizace | 1 | 1 | — |

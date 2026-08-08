@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/updates/2026-08-08",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-08-08",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "date": "2026-08-08",
+  "summary": "Korroborační kolo v rámci autorizovaného rozsahu AUTH-2026-07-30-M. CLM-19 (oznámení MPO z 21. 3. 2022 o odnětí stomilionové dotace Pekárně Zelená louka) povýšeno na CORROBORATED díky vlastnímu zpravodajství Podnikatel.cz z téhož dne (SRC-41, autor Daniel Morávek) — jiný vydavatel i doména než primární tisková zpráva MPO (SRC-11), nejde o převzatou zprávu ČTK, tedy nezávislý pár dle S2/S10. CLM-40 (Havlíček vedl 26. 2. 2026 českou delegaci na Radě EU pro konkurenceschopnost) povýšeno na CORROBORATED díky vlastnímu zpravodajství InfoDnes.cz z téhož dne (SRC-42) vedle úředního přehledu vlády (SRC-26). Nepovýšena tvrzení, kde nezávislý druhý hlas chybí: CLM-24/25/27 (kauza obžaloby z června 2026) — mainstreamové pokrytí je s výjimkou vlastního zpravodajství iROZHLAS (403 na automatické stažení) tvořeno reprinty jedné agenturní zprávy ČTK (ČT24, Blesk, Aktuálně.cz, CNN Prima News), tedy jediný hlas; CLM-21 (duben 2023, zamítnutí námitky podjatosti) — dostupné druhé zdroje (Blesk) jsou rovněž reprinty ČTK; CLM-44 (koalice zemí k cíli 2035) — nezávislé zdroje popisují společný dopis šesti zemí bez Německa, což se s formulací tvrzení o „sedmi zemích“ neshoduje, korroborace by zastřela rozpor. Bez rozšíření rozsahu.",
+  "addedClaims": [],
+  "updatedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-19"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-40"
+    }
+  ],
+  "addedGaps": [],
+  "closedGaps": [],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-41"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-42"
+    }
+  ]
+}
