@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/vera-jourova/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/vera-jourova"
+  },
+  "title": "SRC-01 — Vláda ČR (oficiální profil členky vlády)",
+  "description": "Oficiální vládní profil: ministryně pro místní rozvoj 29. 1. – 3. 10. 2014, poslankyně od 2013.",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vlada.gov.cz/cz/clenove-vlady/vera-jourova-115400/",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/vera-jourova/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "vera-jourova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil členky vlády na webu Vlády ČR, otevřen a přečten 2026-08-08.\nUvádí funkci ministryně pro místní rozvoj od 29. 1. do 3. 10. 2014, poslanecký mandát od října 2013 a dřívější působení ve veřejné správě včetně náměstkyně pro evropskou integraci na ministerstvu pro místní rozvoj.\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** — dokládá vládní funkci a její data; desetileté působení v Evropské komisi dokládá SRC-02."
+    }
+  ],
+  "order": 1
+}

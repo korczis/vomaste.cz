@@ -10,11 +10,12 @@
   "title": "Radek John",
   "entityType": "person",
   "role": "tehdejší ministr vnitra a předseda Věcí veřejných",
-  "publicationRole": "context",
-  "dossierEnabled": false,
-  "dossierStatus": "not_authorized",
-  "coverageState": "contextual",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "referenced",
   "dossiers": [
+    "radek-john",
     "james-quick"
   ],
   "order": 523,
@@ -35,7 +36,8 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Kontextová veřejná osoba: ČT24 popsala oznámení CERD zastoupeného Jiřím Jehličkou ve věci zakázek spojovaných s Radkem Johnem. Záznam nevyjadřuje vinu ani osobní, obchodní či lobbistický vztah."
+      "value": "Bývalý místopředseda vlády (13. 7. 2010 – 20. 5. 2011) a ministr vnitra\n(13. 7. 2010 – 21. 4. 2011, Nečasova vláda, Věci veřejné).\n\n**Subjekt autorizovaného dossieru** (minimální biografický záznam).\nV dossieru James Quick zůstává zároveň evidována dřívější kontextová\nvazba (CLM-15, SRC-16) — záznam vazby, žádné tvrzení o pochybení."
     }
-  ]
+  ],
+  "description": "Radek John — bývalý místopředseda vlády a ministr vnitra (2010–2011); subjekt minimálního biografického dossieru."
 }

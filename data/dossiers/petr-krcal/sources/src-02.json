@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/petr-krcal/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/petr-krcal"
+  },
+  "title": "SRC-02 — Hospodářské noviny: Ministr Krčál podal demisi",
+  "description": "HN o rezignaci Krčála (17. 7. 2018) po zjištěních Seznam Zpráv o shodách v bakalářské práci.",
+  "outlet": "Hospodářské noviny",
+  "sourceType": "zpravodajský článek",
+  "url": "https://domaci.hn.cz/c1-66194940-zive-skonci-dalsi-ministr-petr-krcal-mluvi-o-udajnem-opisovani-ve-sve-bakalarske-praci",
+  "retrieved": "2026-08-08",
+  "published": "2018-07-17",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-krcal/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "petr-krcal"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpravodajský článek Hospodářských novin ze 17. 7. 2018, otevřen a přečten 2026-08-08.\nUvádí, že Petr Krčál (ČSSD) po zhruba 20 dnech ve funkci rezignoval na post ministra práce a sociálních věcí v souvislosti se zjištěními Seznam Zpráv o shodách v jeho bakalářské práci (specializovaný program podle článku odhalil shody u 14 % textu); Krčál připustil, že „v jejím obsahu mohly být nedostatky“, zmínil zátěž pro vládu, stranu i rodinu a zdravotní ohledy. Nominována za nástupkyni byla Jana Maláčová.\n\nPoznámka k typu zdroje a jeho limitům: nezávislé redakční zpravodajství — dokládá rezignaci, mediálně popsaná zjištění a jeho vlastní vyjádření. **Nejde o soudní či akademický verdikt a nic dalšího se z toho nevyvozuje.**"
+    }
+  ],
+  "order": 2
+}

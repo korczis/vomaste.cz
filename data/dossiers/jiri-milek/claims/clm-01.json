@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jiri-milek/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jiri-milek"
+  },
+  "text": "Jiří Milek byl podle oficiálního profilu na webu Vlády ČR ministrem zemědělství od 13. 12. 2017 do 27. 6. 2018 (první vláda Andreje Babiše, od 24. 1. 2018 v demisi); dříve byl generálním ředitelem a předsedou představenstva ÚSOVSKO a.s. (2009–2017) a agronomem",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jiri-milek/sources/SRC-01"
+    }
+  ],
+  "subjects": [
+    "jiri-milek"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jiri-milek/_index.md)."
+    }
+  ]
+}

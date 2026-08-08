@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/lubomir-zaoralek/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/lubomir-zaoralek"
+  },
+  "title": "SRC-01 — Vláda ČR (oficiální profil člena vlády)",
+  "description": "Oficiální vládní profil: ministr kultury od 27. 8. 2019 (v demisi od 11. 11. 2021), ministr zahraničí od 2014, předseda PS 2002–2006.",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vlada.gov.cz/cz/clenove-vlady/lubomir-zaoralek-175713/",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-zaoralek/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "lubomir-zaoralek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil člena vlády na webu Vlády ČR, otevřen a přečten 2026-08-08.\nUvádí funkci ministra kultury od 27. 8. 2019, s obdobím v demisi od 11. 11. do 17. 12. 2021, funkci ministra zahraničních věcí od ledna 2014, předsednictví Poslanecké sněmovny 2002–2006, funkci 1. místopředsedy Sněmovny 2010–2013 a dlouholeté členství v ČSSD (od 1994) včetně místopředsednictví strany.\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** — dokládá výkon veřejných funkcí a jejich data; pozdější stranickou funkci dokládá SRC-02."
+    }
+  ],
+  "order": 1
+}

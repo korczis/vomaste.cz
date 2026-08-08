@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/anna-hubackova",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "anna-hubackova",
+  "slug": "anna-hubackova",
+  "title": "Anna Hubáčková",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Anna Hubáčková.",
+  "dossierType": "entity",
+  "canonicalDossier": "anna-hubackova",
+  "subject": "anna-hubackova",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-ANNA-HUBACKOVA"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "anna-hubackova",
+        "label": "Anna Hubáčková",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nAnna Hubáčková je bývalá ministryně životního prostředí (2021–2022,\nnominována KDU-ČSL) a bývalá senátorka (2016–2022). Jako politicky\nexponovaná osoba v souvislosti s výkonem dřívějších veřejných funkcí\nspadá do standing scope autorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`);\nkonkrétní záznam pro tento dossier je `AUTH-2026-08-08-ANNA-HUBACKOVA`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívějších veřejných funkcí a okolností rezignace tak, jak je\nsama veřejně uvedla (zdravotní důvody). Rezignace je osobní a politická\nudálost, nikoli pochybení, a tak je zde podána. Rozšíření rozsahu\nvyžaduje samostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/anna-hubackova/claims/clm-01.md) | Anna Hubáčková byla podle oficiálního profilu na webu Vlády ČR ministryní životního prostředí od 17. 12. 2021 do 31. 10. 2022 (nominována KDU-ČSL), senátorkou od 2016 a starostkou Ratíškovic (2014–2018); podle Aktuálně.cz oznámila 3. 10. 2022 rezignaci ze zdravotních důvodů — čekala ji operace a čtyři až šest měsíců rekonvalescence — a lidovci na její místo nominovali Petra Hladíka | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/anna-hubackova/sources/src-01.md), [SRC-02](@/dossiers/anna-hubackova/sources/src-02.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

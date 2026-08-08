@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ludmila-mullerova",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "ludmila-mullerova",
+  "slug": "ludmila-mullerova",
+  "title": "Ludmila Müllerová",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Ludmila Müllerová.",
+  "dossierType": "entity",
+  "canonicalDossier": "ludmila-mullerova",
+  "subject": "ludmila-mullerova",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-LUDMILA-MULLEROVA"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "ludmila-mullerova",
+        "label": "Ludmila Müllerová",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nLudmila Müllerová je bývalá ministryně práce a sociálních věcí (2012–2013, Nečasova vláda). Jako politicky exponovaná osoba\nv souvislosti s výkonem dřívější veřejné funkce spadá do standing scope\nautorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro\ntento dossier je `AUTH-2026-08-08-LUDMILA-MULLEROVA`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívější vládní funkce doložený oficiálním přehledem členů\nvlády Petra Nečase na webu Vlády ČR. Tvrzení nese stav 1 ZDROJ; povýšení na\nCORROBORATED i doplnění okolností konce v úřadu či dalších funkcí\nvyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje\nsamostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/ludmila-mullerova/claims/clm-01.md) | Ludmila Müllerová byla podle oficiálního přehledu členů vlády Petra Nečase na webu Vlády ČR ministryní práce a sociálních věcí od 16. 11. 2012 do 17. 6. 2013 a poté do 10. 7. 2013 vykonávala funkci v demisi | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-01](@/dossiers/ludmila-mullerova/sources/src-01.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

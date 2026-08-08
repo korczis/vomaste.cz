@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/petr-krcal",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "petr-krcal",
+  "slug": "petr-krcal",
+  "title": "Petr Krčál",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Petr Krčál.",
+  "dossierType": "entity",
+  "canonicalDossier": "petr-krcal",
+  "subject": "petr-krcal",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-PETR-KRCAL"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "petr-krcal",
+        "label": "Petr Krčál",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nPetr Krčál je bývalý ministr práce a sociálních věcí (27. 6. –\n18. 7. 2018, druhá vláda Andreje Babiše, ČSSD), dříve radní Kraje\nVysočina. Jako politicky exponovaná osoba v souvislosti s výkonem\ndřívější veřejné funkce spadá do standing scope autorizace\n(`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro tento dossier\nje `AUTH-2026-08-08-PETR-KRCAL`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívější vládní funkce a okolností rezignace tak, jak je popsaly\ncitované zdroje. **Povinné rámování při každé zmínce:** jde o mediálně\npopsaná zjištění o shodách v textu a jeho rezignaci s vlastním\nvyjádřením, nikoli o soudní či akademický verdikt doložený citovaným\nzdrojem. Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/petr-krcal/claims/clm-01.md) | Petr Krčál byl podle oficiálního profilu na webu Vlády ČR ministrem práce a sociálních věcí od 27. 6. do 18. 7. 2018 (ČSSD), dříve radním Kraje Vysočina (2008–2016) a náměstkem na Úřadu vlády; podle Hospodářských novin rezignoval po zhruba třech týdnech v souvislosti se zjištěními Seznam Zpráv o shodách v jeho bakalářské práci, připustil možné nedostatky v jejím obsahu, zmínil též zdravotní důvody a nahradila ho Jana Maláčová | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/petr-krcal/sources/src-01.md), [SRC-02](@/dossiers/petr-krcal/sources/src-02.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

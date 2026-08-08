@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ales-rebicek",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "ales-rebicek",
+  "slug": "ales-rebicek",
+  "title": "Aleš Řebíček",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Aleš Řebíček.",
+  "dossierType": "entity",
+  "canonicalDossier": "ales-rebicek",
+  "subject": "ales-rebicek",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-ALES-REBICEK"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "ales-rebicek",
+        "label": "Aleš Řebíček",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nAleš Řebíček je bývalý ministr dopravy (2007–2009, druhá vláda Mirka Topolánka). Jako politicky exponovaná osoba\nv souvislosti s výkonem dřívější veřejné funkce spadá do standing scope\nautorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro\ntento dossier je `AUTH-2026-08-08-ALES-REBICEK`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívější vládní funkce doložený oficiálním přehledem členů\ndruhé vlády Mirka Topolánka na webu Vlády ČR. Tvrzení nese stav 1 ZDROJ;\npovýšení na CORROBORATED i doplnění okolností konce v úřadu či dalších\nfunkcí vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje\nsamostatnou budoucí autorizaci.\n\nOdvolání z funkce je politický krok předsedy vlády, nikoli závěr o pochybení — a tak je zde uvedeno.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/ales-rebicek/claims/clm-01.md) | Aleš Řebíček byl podle oficiálního přehledu členů druhé vlády Mirka Topolánka na webu Vlády ČR ministrem dopravy od 9. 1. 2007 do 23. 1. 2009; přehled u konce jeho působení uvádí odvolání | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-01](@/dossiers/ales-rebicek/sources/src-01.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

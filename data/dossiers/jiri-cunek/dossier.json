@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jiri-cunek",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "jiri-cunek",
+  "slug": "jiri-cunek",
+  "title": "Jiří Čunek",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Jiří Čunek.",
+  "dossierType": "entity",
+  "canonicalDossier": "jiri-cunek",
+  "subject": "jiri-cunek",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-JIRI-CUNEK"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "jiri-cunek",
+        "label": "Jiří Čunek",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nJiří Čunek je bývalý 1. místopředseda vlády a ministr pro místní rozvoj (2007–2009, druhá vláda Mirka Topolánka). Jako politicky exponovaná osoba\nv souvislosti s výkonem dřívější veřejné funkce spadá do standing scope\nautorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro\ntento dossier je `AUTH-2026-08-08-JIRI-CUNEK`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívější vládní funkce doložený oficiálním přehledem členů\ndruhé vlády Mirka Topolánka na webu Vlády ČR. Tvrzení nese stav 1 ZDROJ;\npovýšení na CORROBORATED i doplnění okolností konce v úřadu či dalších\nfunkcí vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje\nsamostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/jiri-cunek/claims/clm-01.md) | Jiří Čunek byl podle oficiálního přehledu členů druhé vlády Mirka Topolánka na webu Vlády ČR 1. místopředsedou vlády a ministrem pro místní rozvoj od 9. 1. 2007 do 13. 11. 2007 a znovu od 2. 4. 2008 do 23. 1. 2009; přehled u obou období uvádí demisi | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-01](@/dossiers/jiri-cunek/sources/src-01.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

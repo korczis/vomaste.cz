@@ -10,11 +10,12 @@
   "title": "Jiří Paroubek",
   "entityType": "person",
   "role": "tehdejší premiér a předseda ČSSD",
-  "publicationRole": "context",
-  "dossierEnabled": false,
-  "dossierStatus": "not_authorized",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
   "coverageState": "contextual",
   "dossiers": [
+    "jiri-paroubek",
     "james-quick"
   ],
   "order": 524,
@@ -36,6 +37,10 @@
     {
       "type": "markdown",
       "value": "Kontextová veřejná osoba: Jiří Jehlička v roce 2006 organizoval demonstrace požadující Paroubkův odchod z politiky. Záznam popisuje veřejný politický protest, nikoli osobní či obchodní vztah."
+    },
+    {
+      "type": "markdown",
+      "value": "Bývalý předseda vlády České republiky (25. 4. 2005 – 16. 8. 2006); podle oficiálního přehledu vláda podala demisi 16. 8. 2006. Záznam veřejné funkce, ne profil ani tvrzení o pochybení."
     }
   ]
 }

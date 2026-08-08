@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/ludmila-mullerova",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "ludmila-mullerova",
+  "entityId": "ludmila-mullerova",
+  "title": "Ludmila Müllerová",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "referenced",
+  "dossiers": [
+    "ludmila-mullerova"
+  ],
+  "order": 612,
+  "description": "Ludmila Müllerová — bývalá ministryně práce a sociálních věcí (2012–2013).",
+  "provenance": {
+    "discoveredAt": "2026-08-08",
+    "discoveredVia": [
+      "government-roster-research-2026-08-08"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Bývalá ministryně práce a sociálních věcí (16. 11. 2012 – 10. 7. 2013,\nNečasova vláda, od 17. 6. 2013 v demisi, TOP 09).\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/petr-arenberger",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "petr-arenberger",
+  "slug": "petr-arenberger",
+  "title": "Petr Arenberger",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Petr Arenberger.",
+  "dossierType": "entity",
+  "canonicalDossier": "petr-arenberger",
+  "subject": "petr-arenberger",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-PETR-ARENBERGER"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "petr-arenberger",
+        "label": "Petr Arenberger",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nPetr Arenberger je bývalý ministr zdravotnictví (7. 4. – 25. 5. 2021,\ndruhá vláda Andreje Babiše), ředitel FN Královské Vinohrady a\npřednosta dermatovenerologické kliniky 3. LF UK. Jako politicky\nexponovaná osoba v souvislosti s výkonem dřívější veřejné funkce spadá\ndo standing scope autorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`);\nkonkrétní záznam pro tento dossier je `AUTH-2026-08-08-PETR-ARENBERGER`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívější vládní funkce a okolností rezignace tak, jak je popsaly\ncitované zdroje. **Povinné rámování při každé zmínce:** popsané\nnesrovnalosti v majetkových přiznáních jsou zjištění citované redakce a\njím přiznaná chyba ve vyplnění, nikoli soudní či správní verdikt; jeho\nobhajoba (poctivé daně, „mediální lynč“) se uvádí vždy. Rozšíření\nrozsahu vyžaduje samostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/petr-arenberger/claims/clm-01.md) | Petr Arenberger byl podle oficiálního profilu na webu Vlády ČR ministrem zdravotnictví od 7. 4. do 25. 5. 2021, ředitelem FN Královské Vinohrady (od října 2019) a přednostou dermatovenerologické kliniky 3. LF UK; podle Seznam Zpráv rezignoval po zjištěních redakce o nesrovnalostech v jeho majetkových přiznáních (nepřiznané nemovitosti a příjmy z klinických studií), sám uvedl, že přiznání vyplnil nesprávně, ale daně platí poctivě, dění označil za „mediální lynč“ a nahradil ho Adam Vojtěch | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/petr-arenberger/sources/src-01.md), [SRC-02](@/dossiers/petr-arenberger/sources/src-02.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

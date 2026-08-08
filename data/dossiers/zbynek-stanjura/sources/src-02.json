@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zbynek-stanjura/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zbynek-stanjura"
+  },
+  "title": "SRC-02 — Aktuálně.cz: Stanjurův propadák. Po 15 letech opouští sněmovnu",
+  "description": "Aktuálně.cz o neobhájení Stanjurova mandátu ve volbách 2025 (přeskočen preferenčními hlasy).",
+  "outlet": "Aktuálně.cz",
+  "sourceType": "zpravodajský článek",
+  "url": "https://zpravy.aktualne.cz/domaci/politika/sef-statni-kasy-zbynek-stanjura-volby/r~e57a6b38a13111f0bf960cc47ab5f122/",
+  "retrieved": "2026-08-08",
+  "published": "2025-10-04",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zbynek-stanjura/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "zbynek-stanjura"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpravodajský článek Aktuálně.cz ze 4. 10. 2025, otevřen a přečten 2026-08-08.\nUvádí, že Zbyněk Stanjura po patnácti letech ve Sněmovně mandát neobhájil: jako lídr kandidátky SPOLU v Moravskoslezském kraji byl podle propočtů ČTK přeskočen preferenčními hlasy jiných kandidátů koalice. Rekapituluje i jeho dřívější funkce (ministr financí od 2021, ministr dopravy 2012–2013, předseda poslaneckého klubu ODS).\n\nPoznámka k typu zdroje a jeho limitům: nezávislé redakční zpravodajství — dokládá volební výsledek a jeho okolnosti; neobhájení mandátu je volební výsledek, nikoli pochybení, a v tomto dossieru se z něj nic dalšího nevyvozuje."
+    }
+  ],
+  "order": 2
+}

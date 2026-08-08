@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/pavel-zarecky",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "pavel-zarecky",
+  "entityId": "pavel-zarecky",
+  "title": "Pavel Zářecký",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "referenced",
+  "dossiers": [
+    "pavel-zarecky"
+  ],
+  "order": 627,
+  "description": "Pavel Zářecký — bývalý ministr a předseda Legislativní rady vlády (2009–2010).",
+  "provenance": {
+    "discoveredAt": "2026-08-08",
+    "discoveredVia": [
+      "government-roster-research-2026-08-08"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Bývalý ministr a předseda Legislativní rady vlády (30. 11. 2009 – 25. 6. 2010, poté do 13. 7. 2010 v demisi, Fischerova úřednická vláda).\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
+    }
+  ]
+}

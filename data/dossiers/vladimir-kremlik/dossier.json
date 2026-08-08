@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/vladimir-kremlik",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "vladimir-kremlik",
+  "slug": "vladimir-kremlik",
+  "title": "Vladimír Kremlík",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Vladimír Kremlík.",
+  "dossierType": "entity",
+  "canonicalDossier": "vladimir-kremlik",
+  "subject": "vladimir-kremlik",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-VLADIMIR-KREMLIK"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "vladimir-kremlik",
+        "label": "Vladimír Kremlík",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nVladimír Kremlík je bývalý ministr dopravy (29. 4. 2019 –\n23. 1. 2020, druhá vláda Andreje Babiše), dříve náměstek Úřadu pro\nzastupování státu ve věcech majetkových a advokát. Jako politicky\nexponovaná osoba v souvislosti s výkonem dřívější veřejné funkce spadá\ndo standing scope autorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`);\nkonkrétní záznam pro tento dossier je `AUTH-2026-08-08-VLADIMIR-KREMLIK`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívější vládní funkce s daty z oficiálního profilu. Okolnosti\njeho odvolání (zakázka na e-shop dálničních známek) se zde bez přímo\notevřeného zdroje neuvádějí — jejich doplnění vyžaduje otevření zdroje\na případně samostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/vladimir-kremlik/claims/clm-01.md) | Vladimír Kremlík byl podle oficiálního profilu na webu Vlády ČR ministrem dopravy od 29. 4. 2019 do 23. 1. 2020, předtím působil jako náměstek pro právní služby a majetek Úřadu pro zastupování státu ve věcech majetkových (od 2015) a samostatný advokát; podle Seznam Zpráv ho premiér Babiš při ohlášení nominace v dubnu 2019 popsal jako profesionála a pracovitého člověka s bezpečnostní prověrkou na stupeň „tajné“ | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/vladimir-kremlik/sources/src-01.md), [SRC-02](@/dossiers/vladimir-kremlik/sources/src-02.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

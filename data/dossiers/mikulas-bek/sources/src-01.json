@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/mikulas-bek/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/mikulas-bek"
+  },
+  "title": "SRC-01 — Vláda ČR (oficiální profil člena vlády)",
+  "description": "Oficiální vládní profil: ministr pro evropské záležitosti 2021–2023, ministr školství 2023–2025, dříve senátor a rektor MU.",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vlada.gov.cz/cz/clenove-vlady/mikulas-bek-191707/",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/mikulas-bek/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "mikulas-bek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil člena vlády na webu Vlády ČR, otevřen a přečten 2026-08-08.\nUvádí funkci ministra pro evropské záležitosti od 17. 12. 2021 do 4. 5. 2023 a funkci ministra školství, mládeže a tělovýchovy od 4. 5. 2023 do 15. 12. 2025 (s obdobím v demisi od 6. 11. 2025), dřívější senátorský mandát (zvolen 2018, předseda senátního výboru pro záležitosti EU od 2020) a rektorství Masarykovy univerzity (2011–2019).\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** — dokládá výkon vládních funkcí a jejich data; období ve funkci ministra školství nezávisle potvrzuje SRC-02."
+    }
+  ],
+  "order": 1
+}

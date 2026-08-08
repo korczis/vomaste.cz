@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/richard-brabec/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/richard-brabec"
+  },
+  "text": "Richard Brabec byl podle oficiálního profilu na webu Vlády ČR ministrem životního prostředí v letech 2014–2017 a znovu od 27. 6. 2018 do 17. 12. 2021 (v demisi od 11. 11. 2021) a v letech 2017–2018 místopředsedou vlády; podle Forum24 byl 15. 11. 2024 zvolen hejtmanem Ústeckého kraje (46 hlasů z 54 přítomných zastupitelů, koalice ANO, ODS a Lepší Sever)",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-brabec/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-brabec/sources/SRC-02"
+    }
+  ],
+  "subjects": [
+    "richard-brabec"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/richard-brabec/_index.md)."
+    }
+  ]
+}

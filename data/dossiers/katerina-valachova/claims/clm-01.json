@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/katerina-valachova/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/katerina-valachova"
+  },
+  "text": "Kateřina Valachová byla ministryní školství, mládeže a tělovýchovy vlády Bohuslava Sobotky do 21. 6. 2017 (nominována za ČSSD) — oficiální přehled členů vlády na webu Vlády ČR uvádí začátek funkce 5. 6. 2015, zatímco její vládní profil byl publikován až 17. 6. 2015; předtím byla náměstkyní ministra pro lidská práva pro řízení sekce Legislativní rady vlády a vedoucí právního odboru Kanceláře veřejného ochránce práv (2002–2012)",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/katerina-valachova/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/katerina-valachova/sources/SRC-02"
+    }
+  ],
+  "subjects": [
+    "katerina-valachova"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/katerina-valachova/_index.md)."
+    }
+  ]
+}

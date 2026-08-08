@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-bartak",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "martin-bartak",
+  "slug": "martin-bartak",
+  "title": "Martin Barták",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Martin Barták.",
+  "dossierType": "entity",
+  "canonicalDossier": "martin-bartak",
+  "subject": "martin-bartak",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-MARTIN-BARTAK"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "martin-bartak",
+        "label": "Martin Barták",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nMartin Barták je bývalý místopředseda vlády a ministr obrany (2009–2010, Fischerova vláda). Jako politicky exponovaná osoba\nv souvislosti s výkonem dřívější veřejné funkce spadá do standing scope\nautorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro\ntento dossier je `AUTH-2026-08-08-MARTIN-BARTAK`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívější vládní funkce doložený oficiálním přehledem členů\nvlády Jana Fischera na webu Vlády ČR. Tvrzení nese stav 1 ZDROJ; povýšení na\nCORROBORATED i doplnění okolností konce v úřadu či dalších funkcí\nvyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje\nsamostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/martin-bartak/claims/clm-01.md) | Martin Barták byl podle oficiálního přehledu členů vlády Jana Fischera na webu Vlády ČR místopředsedou vlády a ministrem obrany od 8. 5. 2009 do 25. 6. 2010 a poté do 13. 7. 2010 vykonával funkci v demisi | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-01](@/dossiers/martin-bartak/sources/src-01.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/petr-gazdik/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/petr-gazdik"
+  },
+  "text": "Petr Gazdík byl podle oficiálního přehledu ministrů školství na webu MŠMT ministrem školství, mládeže a tělovýchovy od 17. 12. 2021 do 29. 6. 2022; podle Forum24 oznámil 19. 6. 2022 demisi ke 30. 6. poté, co média upozornila na jeho kontakty s podnikatelem Michalem Redlem obviněným v kauze Dozimetr, s vlastním vyjádřením, že se necítí ničím vinen a nechce rozkolísat vládu ani koalici na prahu předsednictví EU, a rezignoval i na funkci místopředsedy hnutí STAN",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-gazdik/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-gazdik/sources/SRC-02"
+    }
+  ],
+  "subjects": [
+    "petr-gazdik"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/petr-gazdik/_index.md)."
+    }
+  ]
+}

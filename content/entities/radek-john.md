@@ -3,7 +3,7 @@
 title = "Radek John"
 template = "entity.html"
 weight = 523
-description = "Radek John — Kontextová veřejná osoba: ČT24 popsala oznámení CERD zastoupeného Jiřím Jehličkou ve věci zakázek spojovaných s Radkem Johnem."
+description = "Radek John — bývalý místopředseda vlády a ministr vnitra (2010–2011); subjekt minimálního biografického dossieru."
 
 [extra]
 generated = true
@@ -12,4 +12,9 @@ view_model = "generated/views/entities/radek-john.json"
 record_type = "entity"
 entity_id = "radek-john"
 +++
-Kontextová veřejná osoba: ČT24 popsala oznámení CERD zastoupeného Jiřím Jehličkou ve věci zakázek spojovaných s Radkem Johnem. Záznam nevyjadřuje vinu ani osobní, obchodní či lobbistický vztah.
+Bývalý místopředseda vlády (13. 7. 2010 – 20. 5. 2011) a ministr vnitra
+(13. 7. 2010 – 21. 4. 2011, Nečasova vláda, Věci veřejné).
+
+**Subjekt autorizovaného dossieru** (minimální biografický záznam).
+V dossieru James Quick zůstává zároveň evidována dřívější kontextová
+vazba (CLM-15, SRC-16) — záznam vazby, žádné tvrzení o pochybení.

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/dzamila-stehlikova/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/dzamila-stehlikova"
+  },
+  "text": "Džamila Stehlíková byla podle oficiálního přehledu členů druhé vlády Mirka Topolánka na webu Vlády ČR ministryní vlády ČR pro lidská práva a národnostní menšiny od 9. 1. 2007 do 23. 1. 2009; přehled u konce jejího působení uvádí demisi",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/dzamila-stehlikova/sources/SRC-01"
+    }
+  ],
+  "subjects": [
+    "dzamila-stehlikova"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/dzamila-stehlikova/_index.md)."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jan-blatny/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jan-blatny"
+  },
+  "title": "SRC-01 — Vláda ČR (oficiální profil člena vlády)",
+  "description": "Oficiální vládní profil: ministr zdravotnictví 29. 10. 2020 – 7. 4. 2021, dětský hematolog FN Brno.",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vlada.gov.cz/cz/clenove-vlady/jan-blatny-184561/",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jan-blatny/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "jan-blatny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil člena vlády na webu Vlády ČR, otevřen a přečten 2026-08-08.\nUvádí funkci ministra zdravotnictví od 29. 10. 2020 do 7. 4. 2021 a dřívější působení ve FN Brno (primář oddělení dětské hematologie 2008–2020, náměstek pro zdravotní péči Dětské nemocnice 2020) a docenturu na Masarykově univerzitě.\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** — dokládá výkon funkce a její data, důvod konce neuvádí; okolnosti odvolání dokládá SRC-02."
+    }
+  ],
+  "order": 1
+}

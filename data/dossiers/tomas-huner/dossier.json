@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tomas-huner",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "tomas-huner",
+  "slug": "tomas-huner",
+  "title": "Tomáš Hüner",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Tomáš Hüner.",
+  "dossierType": "entity",
+  "canonicalDossier": "tomas-huner",
+  "subject": "tomas-huner",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-TOMAS-HUNER"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "tomas-huner",
+        "label": "Tomáš Hüner",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nTomáš Hüner je politicky exponovaná osoba v souvislosti s výkonem\ndřívější veřejné funkce — ministr průmyslu a obchodu (13. 12. 2017 –\n27. 6. 2018, první vláda Andreje Babiše, od 24. 1. 2018 v demisi),\ndříve náměstek ministra průmyslu a obchodu a energetický manažer.\nSpadá do standing scope autorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`);\nkonkrétní záznam pro tento dossier je `AUTH-2026-08-08-TOMAS-HUNER`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívější vládní funkce. Tvrzení nese stav 1 ZDROJ (jediný přímo\notevřený zdroj je oficiální profil na vlada.gov.cz); povýšení na\nCORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Rozšíření\nrozsahu vyžaduje samostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/tomas-huner/claims/clm-01.md) | Tomáš Hüner byl podle oficiálního profilu na webu Vlády ČR ministrem průmyslu a obchodu od 13. 12. 2017 do 27. 6. 2018 (první vláda Andreje Babiše, od 24. 1. 2018 v demisi); dříve byl náměstkem ministra průmyslu a obchodu (2006–2011), předsedou dozorčí rady ČEPS (2006–2014) a ředitelem divize Energy Management v Siemens (2015–2017) | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-01](@/dossiers/tomas-huner/sources/src-01.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

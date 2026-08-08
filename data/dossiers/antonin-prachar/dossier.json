@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/antonin-prachar",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "antonin-prachar",
+  "slug": "antonin-prachar",
+  "title": "Antonín Prachař",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Antonín Prachař.",
+  "dossierType": "entity",
+  "canonicalDossier": "antonin-prachar",
+  "subject": "antonin-prachar",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-ANTONIN-PRACHAR"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "antonin-prachar",
+        "label": "Antonín Prachař",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nAntonín Prachař je bývalý ministr dopravy (2014, vláda Bohuslava\nSobotky, ANO). Jako politicky exponovaná osoba v souvislosti s výkonem\ndřívější veřejné funkce spadá do standing scope autorizace\n(`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro tento dossier\nje `AUTH-2026-08-08-ANTONIN-PRACHAR`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívější vládní funkce doložený oficiálním přehledem členů\nvlády — rezignace je uvedena jako fakt bez důvodů, které přehled\nneuvádí. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED vyžaduje\notevření druhého, nezávislého zdroje. Rozšíření rozsahu vyžaduje\nsamostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/antonin-prachar/claims/clm-01.md) | Antonín Prachař byl podle oficiálního přehledu členů vlády Bohuslava Sobotky na webu Vlády ČR ministrem dopravy od 29. 1. 2014 do 13. 11. 2014, kdy podle téhož přehledu podal rezignaci | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-01](@/dossiers/antonin-prachar/sources/src-01.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

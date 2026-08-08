@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/michaela-marksova/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/michaela-marksova"
+  },
+  "title": "SRC-01 — Vláda ČR (oficiální profil členky vlády)",
+  "description": "Oficiální vládní profil: ministryně práce a sociálních věcí 29. 1. 2014 – 13. 12. 2017.",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vlada.gov.cz/cz/clenove-vlady/michaela-marksova-tominova-115395/",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/michaela-marksova/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "michaela-marksova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil členky vlády na webu Vlády ČR, otevřen a přečten 2026-08-08.\nUvádí funkci ministryně práce a sociálních věcí od 29. 1. 2014, s obdobím v demisi od 5. do 13. 12. 2017, nominaci za ČSSD, dočasné pověření řízením ministerstva školství (5.–17. 6. 2015) a dřívější působení v odboru rodinné politiky MPSV (2004–2006) a na ministerstvu školství (2009–2010).\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** — jediný přímo otevřený zdroj tohoto dossieru; tvrzení proto nese stav 1 ZDROJ."
+    }
+  ],
+  "order": 1
+}

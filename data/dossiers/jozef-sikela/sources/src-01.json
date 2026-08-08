@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jozef-sikela/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jozef-sikela"
+  },
+  "title": "SRC-01 — Evropská komise (oficiální profil komisaře)",
+  "description": "Oficiální profil: komisař pro mezinárodní partnerství 2024–2029, dříve ministr průmyslu a obchodu.",
+  "outlet": "Evropská komise (commission.europa.eu)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://commission.europa.eu/about/organisation/college-commissioners/jozef-sikela_en",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jozef-sikela/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "jozef-sikela"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil člena kolegia komisařů na webu Evropské komise, otevřen a přečten 2026-08-08.\nUvádí funkci komisaře pro mezinárodní partnerství (Commissioner for International Partnerships, funkční období 2024–2029) s odpovědností za program Global Gateway a dřívější funkce: ministr průmyslu a obchodu ČR (2021–2024), člen představenstva Erste Group Bank AG (2015–2020), CEO Slovenskej sporiteľne (2010–2014).\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** — dokládá výkon funkce a portfolio; okolnosti a datum oznámení nominace nese SRC-02."
+    }
+  ],
+  "order": 1
+}

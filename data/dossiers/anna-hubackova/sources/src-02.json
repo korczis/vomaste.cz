@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/anna-hubackova/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/anna-hubackova"
+  },
+  "title": "SRC-02 — Aktuálně.cz: Hubáčková končí jako ministryně životního prostředí",
+  "description": "Aktuálně.cz o rezignaci ze zdravotních důvodů (3. 10. 2022) a nominaci Petra Hladíka.",
+  "outlet": "Aktuálně.cz",
+  "sourceType": "zpravodajský článek",
+  "url": "https://zpravy.aktualne.cz/domaci/hubackova-konci-jako-ministryne-zivotniho-prostredi-lidovci/r~168a97aa433611ed8b4e0cc47ab5f122/",
+  "retrieved": "2026-08-08",
+  "published": "2022-10-03",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/anna-hubackova/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "anna-hubackova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpravodajský článek Aktuálně.cz z 3. 10. 2022, otevřen a přečten 2026-08-08.\nUvádí, že Anna Hubáčková oznámila rezignaci na funkci ministryně životního prostředí ze zdravotních důvodů — na tiskové konferenci uvedla, že ji čeká operace a po ní čtyři až šest měsíců rekonvalescence — a že vedení KDU-ČSL na její místo nominovalo místopředsedu strany Petra Hladíka.\n\nPoznámka k typu zdroje a jeho limitům: nezávislé redakční zpravodajství — dokládá okolnosti a zdůvodnění rezignace jejími vlastními slovy; jde o osobní a politickou událost, nikoli pochybení, a nic dalšího se z ní nevyvozuje."
+    }
+  ],
+  "order": 2
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jan-blatny/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jan-blatny"
+  },
+  "title": "SRC-02 — Zprávy Tiscali: Blatný končí, novým ministrem zdravotnictví bude Arenberger",
+  "description": "Tiscali o odvolání Blatného (7. 4. 2021): atribuované důvody (Zeman/Sputnik V), reakce Blatného, nástupce Arenberger.",
+  "outlet": "Zprávy Tiscali (zpravy.tiscali.cz)",
+  "sourceType": "zpravodajský článek",
+  "url": "https://zpravy.tiscali.cz/blatny-konci-novym-ministrem-zdravotnictvi-bude-arenberger-508569",
+  "retrieved": "2026-08-08",
+  "published": "2021-04-07",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jan-blatny/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "jan-blatny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpravodajský článek Zpráv Tiscali ze 7. 4. 2021, otevřen a přečten 2026-08-08.\nUvádí, že Jan Blatný skončil po zhruba pěti měsících jako ministr zdravotnictví a nahradil ho Petr Arenberger, ředitel FN Královské Vinohrady; odvolání dva týdny předem veřejně žádal prezident Zeman kvůli Blatného postoji k ruské vakcíně Sputnik V (Blatný trval na schválení EMA). Blatný odvolání označil za politické rozhodnutí, na které měl premiér právo, a uvedl: „Mám čisté svědomí, že jsem pracoval jen a jen na základě své odbornosti a rozhodoval na podkladě odborných dat a analýz.“\n\nPoznámka k typu zdroje a jeho limitům: nezávislé redakční zpravodajství — důvody odvolání jsou připsány tomu, kdo je vyslovil (prezident), a Blatného reakce se cituje jeho slovy; z odvolání se nevyvozuje žádné pochybení."
+    }
+  ],
+  "order": 2
+}

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jozef-sikela",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "jozef-sikela",
+  "slug": "jozef-sikela",
+  "title": "Jozef Síkela",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Jozef Síkela.",
+  "dossierType": "entity",
+  "canonicalDossier": "jozef-sikela",
+  "subject": "jozef-sikela",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-JOZEF-SIKELA"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "jozef-sikela",
+        "label": "Jozef Síkela",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nJozef Síkela je evropský komisař pro mezinárodní partnerství (Evropská\nkomise 2024–2029); dříve ministr průmyslu a obchodu ČR (2021–2024,\nnominován za STAN). Jako veřejný funkcionář spadá do standing scope\nautorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro\ntento dossier je `AUTH-2026-08-08-JOZEF-SIKELA`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam — dokládá pouze jeho aktuální funkci evropského komisaře a\ndřívější ministerskou funkci jako prostý biografický fakt. Rozšíření\nrozsahu (například na kauzy z ministerského či komisařského působení)\nvyžaduje samostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/jozef-sikela/claims/clm-01.md) | Jozef Síkela je podle oficiálního profilu Evropské komise evropským komisařem pro mezinárodní partnerství (funkční období 2024–2029) a předtím byl ministrem průmyslu a obchodu ČR (2021–2024); přidělení portfolia mezinárodních partnerství mu podle ČT24 oznámila předsedkyně Evropské komise Ursula von der Leyenová 17. 9. 2024 ve Štrasburku | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/jozef-sikela/sources/src-01.md), [SRC-02](@/dossiers/jozef-sikela/sources/src-02.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/marek-zenisek/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/marek-zenisek"
+  },
+  "title": "SRC-02 — Vláda ČR (oficiální profil člena vlády)",
+  "description": "Oficiální vládní profil: ministr pro vědu, výzkum a inovace od 16. 5. 2024 (v demisi od 6. 11. 2025).",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vlada.gov.cz/cz/clenove-vlady/pri-uradu-vlady/marek_zenisek/zivotopis/marek-zenisek-213497/",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/marek-zenisek/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "marek-zenisek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil člena vlády na webu Vlády ČR, otevřen a přečten 2026-08-08.\nUvádí funkci ministra pro vědu, výzkum a inovace od 16. 5. 2024, s obdobím v demisi od 6. 11. 2025 do 15. 12. 2025, poslanecké mandáty 2013–2017 a od 2021 (dva roky předsedal zahraničnímu výboru), dřívější funkce náměstka ministra spravedlnosti (2008–2011) a 1. náměstka ministra zdravotnictví (2012–2013) a dlouholeté místopředsednictví TOP 09.\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam jiné instituce než SRC-01** — dokládá výkon vládní funkce; aktuální parlamentní funkce nese SRC-01."
+    }
+  ],
+  "order": 2
+}

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-pelikan",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "robert-pelikan",
+  "slug": "robert-pelikan",
+  "title": "Robert Pelikán",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Robert Pelikán.",
+  "dossierType": "entity",
+  "canonicalDossier": "robert-pelikan",
+  "subject": "robert-pelikan",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-ROBERT-PELIKAN"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "robert-pelikan",
+        "label": "Robert Pelikán",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nRobert Pelikán je bývalý ministr spravedlnosti (2015–2018, vlády\nBohuslava Sobotky a první vláda Andreje Babiše, ANO), právník a\npedagog. Jako politicky exponovaná osoba v souvislosti s výkonem\ndřívější veřejné funkce spadá do standing scope autorizace\n(`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro tento dossier\nje `AUTH-2026-08-08-ROBERT-PELIKAN`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívější vládní funkce a ohlášeného odchodu z politiky s jeho\nvlastním zdůvodněním — názorové neshody jsou jeho charakteristikou,\nnikoli hodnocením tohoto webu. Rozšíření rozsahu vyžaduje samostatnou\nbudoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/robert-pelikan/claims/clm-01.md) | Robert Pelikán byl podle oficiálního profilu na webu Vlády ČR ministrem spravedlnosti od března 2015 do 27. 6. 2018 (vláda Bohuslava Sobotky a první vláda Andreje Babiše, od 24. 1. 2018 v demisi), předtím 1. náměstkem ministra spravedlnosti; podle ČT24 v dubnu 2018 oznámil odchod z politiky s tím, že jeho názory se mj. na SPD a lidská práva rozcházejí s částí kolegů z ANO, zmínil i kontext vydání Jevgenije Nikulina do USA a plánoval návrat k advokacii a výuce | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/robert-pelikan/sources/src-01.md), [SRC-02](@/dossiers/robert-pelikan/sources/src-02.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

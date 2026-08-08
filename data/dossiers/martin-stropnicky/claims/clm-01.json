@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-stropnicky/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-stropnicky"
+  },
+  "text": "Martin Stropnický byl podle oficiálního přehledu členů první vlády Andreje Babiše na webu Vlády ČR od 13. 12. 2017 místopředsedou vlády a ministrem zahraničních věcí (od 24. 1. 2018 do 27. 6. 2018 v demisi), předtím ministrem obrany (2014–2017) a diplomatem (velvyslanec v Portugalsku, Itálii a při Svatém stolci); podle Aktuálně.cz v roce 2018 skončil ve vysoké politice vlastním rozhodnutím a vláda schválila jeho vyslání jako velvyslance v Izraeli",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-stropnicky/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-stropnicky/sources/SRC-02"
+    }
+  ],
+  "subjects": [
+    "martin-stropnicky"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/martin-stropnicky/_index.md)."
+    }
+  ]
+}

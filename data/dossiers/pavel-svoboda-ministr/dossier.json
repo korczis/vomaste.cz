@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/pavel-svoboda-ministr",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "pavel-svoboda-ministr",
+  "slug": "pavel-svoboda-ministr",
+  "title": "Pavel Svoboda",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Pavel Svoboda.",
+  "dossierType": "entity",
+  "canonicalDossier": "pavel-svoboda-ministr",
+  "subject": "pavel-svoboda-ministr",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-PAVEL-SVOBODA-MINISTR"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "pavel-svoboda-ministr",
+        "label": "Pavel Svoboda",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nPavel Svoboda je bývalý ministr a předseda Legislativní rady vlády (2009, druhá vláda Mirka Topolánka). Jako politicky exponovaná osoba\nv souvislosti s výkonem dřívější veřejné funkce spadá do standing scope\nautorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro\ntento dossier je `AUTH-2026-08-08-PAVEL-SVOBODA-MINISTR`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívější vládní funkce doložený oficiálním přehledem členů\ndruhé vlády Mirka Topolánka na webu Vlády ČR. Tvrzení nese stav 1 ZDROJ;\npovýšení na CORROBORATED i doplnění okolností konce v úřadu či dalších\nfunkcí vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje\nsamostatnou budoucí autorizaci.\n\nPro odlišení od případných jmenovců je subjekt tohoto dossieru vymezen právě touto funkcí v oficiálním přehledu vlády.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/pavel-svoboda-ministr/claims/clm-01.md) | Pavel Svoboda byl podle oficiálního přehledu členů druhé vlády Mirka Topolánka na webu Vlády ČR ministrem vlády ČR a předsedou Legislativní rady vlády od 23. 1. 2009 do 26. 3. 2009 a poté do 8. 5. 2009 vykonával funkci v demisi | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-01](@/dossiers/pavel-svoboda-ministr/sources/src-01.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

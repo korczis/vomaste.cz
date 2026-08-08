@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jana-malacova/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jana-malacova"
+  },
+  "title": "SRC-01 — Vláda ČR (oficiální profil členky vlády)",
+  "description": "Oficiální vládní profil: ministryně práce a sociálních věcí od 30. 7. 2018 (v demisi od 11. 11. 2021).",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vlada.gov.cz/cz/clenove-vlady/jana-malacova-167812/",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jana-malacova/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "jana-malacova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil členky vlády na webu Vlády ČR, otevřen a přečten 2026-08-08.\nUvádí funkci ministryně práce a sociálních věcí od 30. 7. 2018, s obdobím v demisi od 11. 11. do 17. 12. 2021, a dřívější působení ředitelky odboru rodinné politiky a politiky stárnutí MPSV (od června 2015) a vedoucí oddělení institucionální komunikace EU na Úřadu vlády (2014–2015).\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** — dokládá výkon vládní funkce a její data; pozdější stranickou funkci dokládá SRC-02."
+    }
+  ],
+  "order": 1
+}

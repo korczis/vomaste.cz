@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/alexandr-vondra-ministr",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "alexandr-vondra-ministr",
+  "entityId": "alexandr-vondra-ministr",
+  "title": "Alexandr Vondra (ministr obrany)",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "referenced",
+  "dossiers": [
+    "alexandr-vondra-ministr"
+  ],
+  "order": 598,
+  "description": "Alexandr Vondra — bývalý ministr obrany (2010–2012).",
+  "provenance": {
+    "discoveredAt": "2026-08-08",
+    "discoveredVia": [
+      "government-roster-research-2026-08-08"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Bývalý ministr obrany (13. 7. 2010 – 7. 12. 2012, Nečasova vláda,\nODS).\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
+    }
+  ]
+}

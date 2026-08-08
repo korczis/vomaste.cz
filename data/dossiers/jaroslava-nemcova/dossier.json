@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaroslava-nemcova",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "jaroslava-nemcova",
+  "slug": "jaroslava-nemcova",
+  "title": "Jaroslava Němcová",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Jaroslava Němcová.",
+  "dossierType": "entity",
+  "canonicalDossier": "jaroslava-nemcova",
+  "subject": "jaroslava-nemcova",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-JAROSLAVA-NEMCOVA"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "jaroslava-nemcova",
+        "label": "Jaroslava Němcová",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nJaroslava Němcová je politicky exponovaná osoba v souvislosti\ns výkonem dřívější veřejné funkce — ministryně práce a sociálních věcí\n(13. 12. 2017 – 27. 6. 2018, první vláda Andreje Babiše, od\n24. 1. 2018 v demisi, ANO). Spadá do standing scope autorizace\n(`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro tento dossier\nje `AUTH-2026-08-08-JAROSLAVA-NEMCOVA`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívější vládní funkce. Tvrzení nese stav 1 ZDROJ (jediný přímo\notevřený zdroj je oficiální profil na vlada.gov.cz); povýšení na\nCORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Rozšíření\nrozsahu vyžaduje samostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/jaroslava-nemcova/claims/clm-01.md) | Jaroslava Němcová byla podle oficiálního profilu na webu Vlády ČR ministryní práce a sociálních věcí od 13. 12. 2017 do 27. 6. 2018 (první vláda Andreje Babiše, od 24. 1. 2018 v demisi); dříve působila jako radní Středočeského kraje pro zdravotnictví (2016–2017), náměstkyně ředitele nemocnice a ředitelka pobočky VZP (2011–2014) | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-01](@/dossiers/jaroslava-nemcova/sources/src-01.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

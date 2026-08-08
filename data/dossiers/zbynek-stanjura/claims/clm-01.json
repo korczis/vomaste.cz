@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zbynek-stanjura/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zbynek-stanjura"
+  },
+  "text": "Zbyněk Stanjura byl podle oficiálního profilu na webu Vlády ČR ministrem financí od 17. 12. 2021 (od 6. 11. 2025 do 15. 12. 2025 v demisi), dříve ministrem dopravy (prosinec 2012 – srpen 2013) a poslancem od roku 2010; ve sněmovních volbách v říjnu 2025 podle Aktuálně.cz mandát jako lídr kandidátky SPOLU v Moravskoslezském kraji neobhájil, když ho preferenčními hlasy přeskočili jiní kandidáti koalice",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zbynek-stanjura/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zbynek-stanjura/sources/SRC-02"
+    }
+  ],
+  "subjects": [
+    "zbynek-stanjura"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/zbynek-stanjura/_index.md)."
+    }
+  ]
+}

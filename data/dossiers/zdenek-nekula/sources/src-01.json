@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zdenek-nekula/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zdenek-nekula"
+  },
+  "title": "SRC-01 — Vláda ČR (oficiální profil člena vlády)",
+  "description": "Oficiální vládní profil: ministr zemědělství 3. 1. 2022 – 28. 6. 2023, dříve starosta Těšetic a šéf PGRLF.",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vlada.gov.cz/cz/clenove-vlady/zdenek-nekula-191699/",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zdenek-nekula/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "zdenek-nekula"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil člena vlády na webu Vlády ČR, otevřen a přečten 2026-08-08.\nUvádí funkci ministra zemědělství od 3. 1. 2022 do 28. 6. 2023, členství v KDU-ČSL od 2007, dlouholeté starostování obce Těšetice (2007–2014 a 2018–2021, po jmenování ministrem na post rezignoval), předsednictví představenstva PGRLF (2015–2018) a zastupitelstvo Jihomoravského kraje (2012–2016).\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** — dokládá výkon funkcí a jejich data; okolnosti konce v úřadu a jeho vlastní zdůvodnění dokládá SRC-02."
+    }
+  ],
+  "order": 1
+}

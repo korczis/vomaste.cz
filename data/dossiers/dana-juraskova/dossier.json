@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/dana-juraskova",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "dana-juraskova",
+  "slug": "dana-juraskova",
+  "title": "Dana Jurásková",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Dana Jurásková.",
+  "dossierType": "entity",
+  "canonicalDossier": "dana-juraskova",
+  "subject": "dana-juraskova",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-DANA-JURASKOVA"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "dana-juraskova",
+        "label": "Dana Jurásková",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nDana Jurásková je bývalá ministryně zdravotnictví (2009–2010, Fischerova vláda). Jako politicky exponovaná osoba\nv souvislosti s výkonem dřívější veřejné funkce spadá do standing scope\nautorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro\ntento dossier je `AUTH-2026-08-08-DANA-JURASKOVA`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívější vládní funkce doložený oficiálním přehledem členů\nvlády Jana Fischera na webu Vlády ČR. Tvrzení nese stav 1 ZDROJ; povýšení na\nCORROBORATED i doplnění okolností konce v úřadu či dalších funkcí\nvyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje\nsamostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/dana-juraskova/claims/clm-01.md) | Dana Jurásková byla podle oficiálního přehledu členů vlády Jana Fischera na webu Vlády ČR ministryní zdravotnictví od 8. 5. 2009 do 25. 6. 2010 a poté do 13. 7. 2010 vykonávala funkci v demisi | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-01](@/dossiers/dana-juraskova/sources/src-01.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/milena-vicenova/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/milena-vicenova"
+  },
+  "title": "SRC-01 — Vláda ČR (oficiální přehled členů první vlády Mirka Topolánka)",
+  "description": "Oficiální přehled členů první vlády Mirka Topolánka: Milena Vicenová — ministryně zemědělství.",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vlada.gov.cz/cz/clenove-vlady/historie-minulych-vlad/prehled-vlad-cr/1993-2007-cr/mirek-topolanek-1/prehled-ministru-24638/",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/milena-vicenova/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "milena-vicenova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální přehled členů první vlády Mirka Topolánka (4. 9. 2006 – 9. 1. 2007) na webu Vlády ČR, otevřen a přečten 2026-08-08.\nDokládá tvrzení CLM-01 v plném rozsahu — funkci, její data a případné období v demisi či způsob konce v úřadu tak, jak jej přehled uvádí.\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** — jediný přímo otevřený zdroj tohoto dossieru; tvrzení proto nese stav 1 ZDROJ a okolnosti konce v úřadu ani dřívější či pozdější funkce se bez otevřeného zdroje neuvádějí."
+    }
+  ],
+  "order": 1
+}

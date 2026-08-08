@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/petr-simerka/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/petr-simerka"
+  },
+  "title": "SRC-01 — Vláda ČR (oficiální přehled členů vlády Jana Fischera)",
+  "description": "Oficiální přehled členů vlády Jana Fischera: Petr Šimerka — ministr práce a sociálních věcí.",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vlada.gov.cz/scripts/detail.php?id=74281&tmplid=762",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-simerka/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "petr-simerka"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální přehled členů vlády Jana Fischera na webu Vlády ČR, otevřen a přečten 2026-08-08.\nDokládá tvrzení CLM-01 v plném rozsahu — funkci, její data a případné období v demisi.\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** — jediný přímo otevřený zdroj tohoto dossieru; tvrzení proto nese stav 1 ZDROJ a okolnosti konce v úřadu ani dřívější či pozdější funkce se bez otevřeného zdroje neuvádějí."
+    }
+  ],
+  "order": 1
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/leos-heger",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "leos-heger",
+  "entityId": "leos-heger",
+  "title": "Leoš Heger",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "referenced",
+  "dossiers": [
+    "leos-heger"
+  ],
+  "order": 600,
+  "description": "Leoš Heger — bývalý ministr zdravotnictví (2010–2013).",
+  "provenance": {
+    "discoveredAt": "2026-08-08",
+    "discoveredVia": [
+      "government-roster-research-2026-08-08"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Bývalý ministr zdravotnictví (13. 7. 2010 – 10. 7. 2013, Nečasova\nvláda, od 17. 6. 2013 v demisi, TOP 09).\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
+    }
+  ]
+}

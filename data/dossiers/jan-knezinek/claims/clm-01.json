@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jan-knezinek/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jan-knezinek"
+  },
+  "text": "Jan Kněžínek byl podle oficiálního profilu na webu Vlády ČR ministrem spravedlnosti od 10. 7. 2018 do 30. 4. 2019 a dlouhodobě působil v legislativě Úřadu vlády (2007–2018, naposledy jako náměstek pro řízení sekce Legislativní rady vlády); podle ČT24 podal v dubnu 2019 demisi s tím, že rozhodnutí oznámil premiérovi ústně a odejít mu přišlo logické spolu s dalšími ministry, nahradila ho Marie Benešová a hlasy opozice o souvislosti s posunem v kauze Čapí hnízdo zůstaly nepotvrzenou spekulací",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jan-knezinek/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jan-knezinek/sources/SRC-02"
+    }
+  ],
+  "subjects": [
+    "jan-knezinek"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jan-knezinek/_index.md)."
+    }
+  ]
+}

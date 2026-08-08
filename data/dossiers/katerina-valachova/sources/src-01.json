@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/katerina-valachova/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/katerina-valachova"
+  },
+  "title": "SRC-01 — Vláda ČR (oficiální profil členky vlády)",
+  "description": "Oficiální vládní profil (publikován 17. 6. 2015): ministryně školství, dříve náměstkyně LRV a KVOP.",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vlada.gov.cz/cz/clenove-vlady/katerina-valachova-131857/",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/katerina-valachova/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "katerina-valachova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil členky vlády na webu Vlády ČR, otevřen a přečten 2026-08-08 (stránka publikována 17. 6. 2015).\nUvádí nominaci za ČSSD a dřívější funkce: náměstkyně ministra pro lidská práva, rovné příležitosti a legislativu a místopředsedkyně Legislativní rady vlády (do června 2015), ředitelka legislativního odboru Kanceláře Senátu (2013–2014), vedoucí právního odboru Kanceláře veřejného ochránce práv (2002–2012).\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** — konec funkce a přesné datum začátku nese SRC-02 (týž vydavatel, proto stav 1 ZDROJ)."
+    }
+  ],
+  "order": 1
+}

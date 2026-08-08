@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ales-rebicek/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ales-rebicek"
+  },
+  "text": "Aleš Řebíček byl podle oficiálního přehledu členů druhé vlády Mirka Topolánka na webu Vlády ČR ministrem dopravy od 9. 1. 2007 do 23. 1. 2009; přehled u konce jeho působení uvádí odvolání",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ales-rebicek/sources/SRC-01"
+    }
+  ],
+  "subjects": [
+    "ales-rebicek"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/ales-rebicek/_index.md)."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tatana-mala/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tatana-mala"
+  },
+  "title": "SRC-01 — Vláda ČR (oficiální profil členky vlády)",
+  "description": "Oficiální vládní profil: ministryně spravedlnosti 27. 6. – 10. 7. 2018, poslankyně od 2017.",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vlada.gov.cz/cz/clenove-vlady/tatana-mala-167021/",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tatana-mala/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "tatana-mala"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil členky vlády na webu Vlády ČR, otevřen a přečten 2026-08-08.\nUvádí funkci ministryně spravedlnosti od 27. 6. do 10. 7. 2018, poslanecký mandát od října 2017 a funkci náměstkyně hejtmana Jihomoravského kraje od listopadu 2016.\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** — dokládá výkon funkce a její data, důvod konce neuvádí; okolnosti rezignace dokládá SRC-02."
+    }
+  ],
+  "order": 1
+}

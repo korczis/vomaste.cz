@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/lubomir-zaoralek",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "lubomir-zaoralek",
+  "slug": "lubomir-zaoralek",
+  "title": "Lubomír Zaorálek",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Lubomír Zaorálek.",
+  "dossierType": "entity",
+  "canonicalDossier": "lubomir-zaoralek",
+  "subject": "lubomir-zaoralek",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-LUBOMIR-ZAORALEK"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "lubomir-zaoralek",
+        "label": "Lubomír Zaorálek",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nLubomír Zaorálek je bývalý ministr kultury (2019–2021, druhá vláda\nAndreje Babiše), bývalý ministr zahraničních věcí (2014–2017) a bývalý\npředseda Poslanecké sněmovny (2002–2006); v říjnu 2024 byl zvolen\nstatutárním místopředsedou SOCDEM. Jako politicky exponovaná osoba\nv souvislosti s výkonem dřívějších veřejných funkcí spadá do standing\nscope autorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam\npro tento dossier je `AUTH-2026-08-08-LUBOMIR-ZAORALEK`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívějších veřejných a stranických funkcí. Rozšíření rozsahu\nvyžaduje samostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/lubomir-zaoralek/claims/clm-01.md) | Lubomír Zaorálek byl podle oficiálního profilu na webu Vlády ČR ministrem kultury od 27. 8. 2019 do 17. 12. 2021 (v demisi od 11. 11. 2021), ministrem zahraničních věcí od ledna 2014 a předsedou Poslanecké sněmovny v letech 2002–2006; podle ČT24 byl 5. 10. 2024 na sjezdu SOCDEM v Hradci Králové zvolen statutárním místopředsedou strany (100 ze 135 odevzdaných hlasů) | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/lubomir-zaoralek/sources/src-01.md), [SRC-02](@/dossiers/lubomir-zaoralek/sources/src-02.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

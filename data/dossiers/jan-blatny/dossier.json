@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jan-blatny",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "jan-blatny",
+  "slug": "jan-blatny",
+  "title": "Jan Blatný",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Jan Blatný.",
+  "dossierType": "entity",
+  "canonicalDossier": "jan-blatny",
+  "subject": "jan-blatny",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-JAN-BLATNY"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "jan-blatny",
+        "label": "Jan Blatný",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nJan Blatný je bývalý ministr zdravotnictví (29. 10. 2020 – 7. 4. 2021,\ndruhá vláda Andreje Babiše), dětský hematolog FN Brno a docent\nMasarykovy univerzity. Jako politicky exponovaná osoba v souvislosti\ns výkonem dřívější veřejné funkce spadá do standing scope autorizace\n(`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro tento dossier\nje `AUTH-2026-08-08-JAN-BLATNY`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívější vládní funkce a okolností odvolání tak, jak je popsaly\ncitované zdroje — odvolání je politický krok, důvody se připisují tomu,\nkdo je vyslovil (prezident Zeman k vakcíně Sputnik V), a Blatného\nreakce se cituje jeho slovy. Rozšíření rozsahu vyžaduje samostatnou\nbudoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/jan-blatny/claims/clm-01.md) | Jan Blatný byl podle oficiálního profilu na webu Vlády ČR ministrem zdravotnictví od 29. 10. 2020 do 7. 4. 2021, předtím primářem dětské hematologie a náměstkem FN Brno; podle Zpráv Tiscali jeho odvolání dva týdny předem veřejně žádal prezident Zeman kvůli Blatného postoji k vakcíně Sputnik V (trval na schválení Evropskou lékovou agenturou), nahradil ho Petr Arenberger a Blatný odvolání označil za politické rozhodnutí se slovy, že má čisté svědomí a rozhodoval na základě odborných dat | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/jan-blatny/sources/src-01.md), [SRC-02](@/dossiers/jan-blatny/sources/src-02.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

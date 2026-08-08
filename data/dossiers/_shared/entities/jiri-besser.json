@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/jiri-besser",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "jiri-besser",
+  "entityId": "jiri-besser",
+  "title": "Jiří Besser",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "referenced",
+  "dossiers": [
+    "jiri-besser"
+  ],
+  "order": 609,
+  "description": "Jiří Besser — bývalý ministr kultury (2010–2011).",
+  "provenance": {
+    "discoveredAt": "2026-08-08",
+    "discoveredVia": [
+      "government-roster-research-2026-08-08"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Bývalý ministr kultury (13. 7. 2010 – 16. 12. 2011, Nečasova vláda).\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
+    }
+  ]
+}

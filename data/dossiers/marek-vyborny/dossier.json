@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/marek-vyborny",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "marek-vyborny",
+  "slug": "marek-vyborny",
+  "title": "Marek Výborný",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Marek Výborný.",
+  "dossierType": "entity",
+  "canonicalDossier": "marek-vyborny",
+  "subject": "marek-vyborny",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-MAREK-VYBORNY"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "marek-vyborny",
+        "label": "Marek Výborný",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02",
+          "SRC-03"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nMarek Výborný je poslanec Poslanecké sněmovny PČR za KDU-ČSL a\nmístopředseda Výboru pro vědu, vzdělávání, mládež a sport; dříve\nministr zemědělství (2023–2025) a dvakrát předseda KDU-ČSL (2019–2020\na do dubna 2026). Jako veřejný funkcionář spadá do standing scope\nautorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro\ntento dossier je `AUTH-2026-08-08-MAREK-VYBORNY`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam — dokládá pouze jeho aktuální poslanecký mandát a výborové\nfunkce a dřívější vládní a stranické funkce jako prostý biografický\nfakt. Konec v čele strany je výsledek stranické volby, nikoli\npochybení, a tak je zde podán. Rozšíření rozsahu vyžaduje samostatnou\nbudoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/marek-vyborny/claims/clm-01.md) | Marek Výborný je podle profilu na webu Poslanecké sněmovny PČR poslancem zvoleným na kandidátce SPOLU za KDU-ČSL (mandát od 4. 10. 2025, Pardubický kraj) a místopředsedou Výboru pro vědu, vzdělávání, mládež a sport od 21. 1. 2026; podle oficiálního profilu na webu Vlády ČR byl ministrem zemědělství od 29. 6. 2023 (od 6. 11. 2025 do 15. 12. 2025 v demisi) a podle ČeskýchNovin ho v čele KDU-ČSL po dvou letech vystřídal 24. 4. 2026 Jan Grolich zvolený na sjezdu v Ostravě | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/marek-vyborny/sources/src-01.md), [SRC-02](@/dossiers/marek-vyborny/sources/src-02.md), [SRC-03](@/dossiers/marek-vyborny/sources/src-03.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}
