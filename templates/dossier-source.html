@@ -16,6 +16,9 @@
   {{ table::advanced_table(id="src-meta", caption="Metadata zdroje " ~ record.identifier, extra_class="mb-8") }}
       <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Typ</th><td class="p-3">{{ record.sourceType }}</td></tr>
       <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Odkaz</th><td class="p-3"><a href="{{ record.url }}" rel="external" class="break-all">{{ record.url }}</a></td></tr>
+      {% if record.localDocument %}
+      <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Archivovaný dokument</th><td class="p-3"><a href="{{ config.base_url }}/{{ record.localDocument.path }}" class="break-all font-semibold text-[#f3e5c0] no-underline hover:underline">Stáhnout kopii ({{ record.localDocument.retrievedAt }})</a><p class="mt-1 text-xs text-white/55">Uloženo proti zmizení z internetu. {{ record.localDocument.reviewNote }}</p></td></tr>
+      {% endif %}
       {% if record.published %}
       <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Publikováno</th><td class="p-3">{{ record.published }}</td></tr>
       {% else %}

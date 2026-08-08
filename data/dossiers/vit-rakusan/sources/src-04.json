@@ -17,6 +17,13 @@
   "url": "https://www.nku.cz/cz/pro-media/tiskove-zpravy/v-souvislosti-s-profesionalizaci-a-zvysovanim-kvality-statni-sluzby-vynalozilo-ministerstvo-vnitra-pres-870-mil--kc--pozadovaneho-efektu-ale-nedosahlo-id15460",
   "published": "2026-02-23",
   "retrieved": "2026-08-08",
+  "localDocument": {
+    "path": "documents/vit-rakusan/nku-kontrolni-zaver-24-28.pdf",
+    "originalUrl": "https://www.nku.cz/assets/kon-zavery/k24028.pdf",
+    "retrievedAt": "2026-08-08",
+    "sizeBytes": 549720,
+    "reviewNote": "Plné znění kontrolního závěru NKÚ č. 24/28 (26 stran), staženo a strojově prohledáno na osobní údaje 2026-08-08: žádná data narození, adresy ani jiné osobní údaje soukromých osob nenalezeny. Jediné jmenované fyzické osobě — členu NKÚ Ing. Stanislavu Kouckému, který kontrolní akci vedl a zprávu vypracoval — jde o autorský podpis úřední zprávy ve veřejné funkci, ne o soukromý údaj."
+  },
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/vit-rakusan/claims/CLM-02"

@@ -7,6 +7,8 @@
 // Fasáda nic nevlastní — jen skládá moduly, z nichž každý vlastní své
 // vrstvy pravidel (validate-shape tvar, validate-references integritu,
 // validate-semantics redakční pravidla, validate-jsonld expanzi).
+import { existsSync } from "node:fs";
+import { join } from "node:path";
 import { loadCanonicalTree } from "../load.mjs";
 import { createValidators, validateRecordObject, RECORDS_ROOT } from "../validate-shape.mjs";
 import { validateReferences } from "../validate-references.mjs";
@@ -60,6 +62,19 @@ export async function validateCanonicalDataset(model, options = {}) {
   const tables = validateRegistryTables(model);
   errors.push(...tables.errors);
   warnings.push(...tables.warnings);
+
+  // 3c) lokálně hostované dokumenty (SRC.localDocument) musí fyzicky
+  //     existovat pod static/ — jinak by publikovaná stránka nabízela
+  //     stažení souboru, který nikdy nebyl commitnut.
+  const staticRoot = join(RECORDS_ROOT, "..", "..", "static");
+  for (const w of model.records) {
+    const doc = w.record?.localDocument;
+    if (!doc) continue;
+    const abs = join(staticRoot, doc.path);
+    if (!existsSync(abs)) {
+      errors.push(`${w.relPath}: localDocument.path "${doc.path}" neexistuje ve static/ — soubor nebyl commitnut.`);
+    }
+  }
 
   // 4) JSON-LD expanze (lokální kontexty, safe mode)
   errors.push(...(await validateJsonLd(model)));

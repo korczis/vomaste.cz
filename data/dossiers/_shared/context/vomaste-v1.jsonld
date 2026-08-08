@@ -20,6 +20,7 @@
     "url": { "@id": "schema:url", "@type": "@id" },
     "archiveUrl": { "@id": "vomaste:archiveUrl", "@type": "@id" },
     "availability": "vomaste:availability",
+    "localDocument": { "@id": "vomaste:localDocument", "@type": "@json" },
 
     "published": { "@id": "schema:datePublished", "@type": "xsd:date" },
     "retrieved": { "@id": "vomaste:retrieved", "@type": "xsd:date" },
