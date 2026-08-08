@@ -4835,3 +4835,14 @@ na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
 doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
 dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
 autorizaci.
+
+
+### Scope extension, 2026-08-09: Vlastimil Válek — ministerské období (léková krize)
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): rozšíření AUTH-2026-08-07-VLASTIMIL-VALEK a AUTH-2026-08-08-VLASTIMIL-VALEK. Vlastimil Válek byl 2021–2025 místopředsedou vlády a ministrem zdravotnictví. Dřívější autorizace omezovaly dossier na jeho aktuální poslanecký profil a výslovně vylučovaly rešerši ministerského období. Tato autorizace rozšiřuje rozsah na jedno konkrétní, dokumentované téma jeho ministerského období, nalezené na úrovni search-výsledku a doložené dvěma přímo otevřenými a přečtenými zdroji před sepsáním tohoto záznamu.
+
+Rozsah zahrnuje: **krizi s výpadky léků (zejména penicilinových antibiotik) 2022–2023 a její politické a legislativní řešení** — trvající nedostatek antibiotik, antipyretik a onkologických léků; opoziční kritiku jeho postupu včetně publikovaných výzev k rezignaci (Schillerová) a výroků Babiše; jeho vlastní publikovaná vyjádření a sliby (dodávky penicilinu, aplikace pro dostupnost léků); a vládní novelu o léčivech (povinnost výrobců dodávat po nahlášení výpadku, měsíční zásoby distributorů, hlášení lékáren) s publikovanou opoziční kritikou její dostatečnosti (Farhan, Maříková). Přímo otevřené zdroje: Seznam Zprávy (10. 5. 2023) a ČT24 (29. 8. 2023).
+
+Povinné rámování: výpadky léků byly dle citovaného zpravodajství celoevropský jev s příčinami mimo ČR (výpadky výroby v Číně a Indii) — kritika opozice i obhajoba ministra a koalice se citují jako pozice, ne jako zjištění; žádný citovaný zdroj netvrdí protiprávní jednání ministra a nic takového nesmí být naznačeno. Každý další zdroj musí být před napsáním tvrzení přímo otevřen a přečten; status tvrzení dle validátorových pravidel. Tato autorizace nepokrývá žádné jiné téma jeho ministerského období (vč. zmíněného SÚKL či VZP) — to by vyžadovalo samostatnou budoucí autorizaci.
