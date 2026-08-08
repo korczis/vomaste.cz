@@ -897,6 +897,7 @@ export function buildViewModels(compiled, { governmentRoster = new Map() } = {})
     canonicalDossiers: canonicalOrdered.map((w) => ({
       slug: w.dossier,
       title: w.record.title,
+      updated: w.record.updated,
       updates: updatesOf(w.dossier),
     })),
   });
