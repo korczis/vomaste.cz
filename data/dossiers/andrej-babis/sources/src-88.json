@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-88",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-88",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-88 — Deník.cz (ČTK): Imoba vrátila dotaci 50 milionů korun na Čapí hnízdo, peníze půjdou státu (29. 6. 2018)",
+  "description": "Agenturní zpravodajství ČTK v titulu Deník.cz: společnost Imoba z koncernu Agrofert vrátila 29. 6. 2018 středočeskému dotačnímu úřadu (ROP Střední Čechy) padesátimilionovou dotaci na areál Čapí hnízdo; většina míří do státního rozpočtu, menší část Středočeskému kraji.",
+  "outlet": "Deník.cz (VLTAVA LABE MEDIA)",
+  "sourceType": "agenturní zpravodajství",
+  "sourceFamily": "ctk",
+  "url": "https://www.denik.cz/ekonomika/imoba-vratila-dotaci-50-milionu-korun-na-capi-hnizdo-20180629.html",
+  "published": "2018-06-29",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-73"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Deník.cz přebírá 29. 6. 2018 zprávu agentury ČTK, podle níž společnost\nImoba z koncernu Agrofert vrátila padesátimilionovou dotaci na výstavbu\nrekreačního a konferenčního areálu Čapí hnízdo na Benešovsku. Výbor\nRegionální rady regionu soudržnosti Střední Čechy schválil dohodu\no vrácení dotace; „většina peněz skončí ve státním rozpočtu, část dostane\nkraj\". Imoba podle svého mluvčího přistoupila k vrácení proto, že podle\nní nelze v dohledné době očekávat nezávislé a spravedlivé posouzení věci\nsoudem.\n\n**Poznámka k procesní přesnosti**: dobrovolné vrácení dotace nemá vliv\nna trestní stíhání a **není** rozhodnutím o vině ani nevině — dossier je\nvede jako fakt vrácení prostředků, ne jako přiznání.\n\n**Nezávislost vůči SRC-51 (Seznam Zprávy)**: SRC-51 je vlastní\nreportáž Seznam Zpráv (rodina `seznam-zpravy`, vydavatel Seznam.cz),\nkdežto tento text je agenturní zpravodajství ČTK (rodina `ctk`) v titulu\nDeník.cz (VLTAVA LABE MEDIA) — jiná source family, jiný vydavatel\ni registrovaná doména. Dvě nezávislé rodiny doloženě popisují tutéž\nskutečnost (vrácení dotace 29. 6. 2018, směřování většiny do státního\nrozpočtu), proto CLM-73 povýšeno na `CORROBORATED`. Přesný haléřový\nrozpis (46 213 236,80 Kč státu, 3 747 019,20 Kč kraji) drží SRC-51.\nOtevřeno a přečteno 2026-08-08."
+    }
+  ],
+  "order": 88
+}

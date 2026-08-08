@@ -197,11 +197,11 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 780 záznamů v 138 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 783 záznamů v 138 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
-| ctk | 298 | 28 | [ano](/zdroje/ctk/) |
+| ctk | 300 | 28 | [ano](/zdroje/ctk/) |
 | Poslanecká sněmovna Parlamentu ČR | 56 | 37 | [ano](/zdroje/psp-cz/) |
 | seznam-zpravy | 38 | 13 | [ano](/zdroje/seznam-zpravy/) |
 | Vláda České republiky (vlada.gov.cz) | 29 | 18 | [ano](/zdroje/vlada-cz/) |
@@ -213,8 +213,8 @@ Dopočítáno z `data/dossiers/**/sources/**`, 780 záznamů v 138 rodinách/out
 | Novinky.cz | 13 | 12 | [ano](/zdroje/novinky-cz/) |
 | denik-cz | 11 | 6 | [ano](/zdroje/denik-cz/) |
 | Česká justice | 11 | 6 | [ano](/zdroje/ceska-justice/) |
+| Ekonomický deník | 10 | 6 | [ano](/zdroje/ekonomicky-denik/) |
 | irozhlas | 9 | 6 | [ano](/zdroje/irozhlas/) |
-| Ekonomický deník | 9 | 5 | [ano](/zdroje/ekonomicky-denik/) |
 | hlidac-statu | 7 | 2 | [ano](/zdroje/hlidac-statu/) |
 | udhpsh | 7 | 2 | [ano](/zdroje/udhpsh/) |
 | Hospodářské noviny | 6 | 5 | — |

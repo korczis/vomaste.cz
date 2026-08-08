@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/updates/2026-08-08",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-08-08",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "date": "2026-08-08",
+  "summary": "Kolo rešerší (korroborace): tři jednozdrojová tvrzení povýšena na CORROBORATED přidáním druhého, skutečně nezávislého zdroje (jiná source family i vydavatel než dosavadní zdroj). CLM-54 (uzavření francouzského vyšetřování a předání PNF, květen 2026) doplněno o SRC-87 — agenturní zpravodajství ČTK v Hospodářských novinách (rodina ctk vs. dosavadní FORUM 24). CLM-73 (vrácení téměř padesátimilionové dotace společností Imoba, 29. 6. 2018) doplněno o SRC-88 — agenturní zpravodajství ČTK v Deník.cz (rodina ctk vs. dosavadní vlastní reportáž Seznam Zpráv); přesný haléřový rozpis drží dál SRC-51. CLM-85 (rozpis hlasování klubu ANO o daňové podpoře biopaliv 20. 5. 2015: 3 pro/25 proti/15 zdrželo) doplněno o SRC-89 — autorská analýza Petra Musila v Ekonomickém deníku (vydavatel Media Network s.r.o. vs. dosavadní Novinky.cz/ČTK). Procesní rámování ponecháno beze změny: uzavření policejního vyšetřování ani vrácení dotace není rozhodnutím o vině; upravena je pouze síla doložení, ne význam tvrzení. Prozkoumáno, ale ponecháno na 1 ZDROJ: CLM-24 (Nagyová se neúčastnila vyhlášení rozsudku a v závěrečné řeči odmítla vinu) — dostupné otevřené zdroje (ČT24, Echo24, CNN Prima, Deník N) čerpají tytéž dvě dílčí skutečnosti z agenturního textu ČTK, vlastní iROZHLAS vrací automatizovanému stažení 403; nezávislý druhý hlas mimo rodinu ctk se pro tyto konkrétní detaily nepodařilo přímo otevřít.",
+  "addedClaims": [],
+  "updatedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-54"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-73"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-85"
+    }
+  ],
+  "addedGaps": [],
+  "closedGaps": [],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-87"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-88"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-89"
+    }
+  ]
+}
