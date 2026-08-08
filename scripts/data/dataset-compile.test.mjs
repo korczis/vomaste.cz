@@ -153,7 +153,7 @@ test("lokální dokument bez souboru ve static/ je chyba — obě konvence", asy
   assert.ok(errors2.some((e) => e.includes('"/documents/neexistujici/jiny.pdf" nemá odpovídající soubor')), errors2.join("\n"));
 });
 
-test("check nad reálným data/dossiers projde (197 balíčků včetně pavla-rychetskeho)", async () => {
+test("check nad reálným data/dossiers projde (202 balíčků včetně milose-zemana)", async () => {
   // Do fáze D tady test přibíjel pre-migration hlášku (0 balíčků);
   // migrátor scripts/migrations/migrate-content-to-json.mjs kanonická
   // data vytvořil, takže brána teď validuje reálný dataset. Sémantická
@@ -164,7 +164,7 @@ test("check nad reálným data/dossiers projde (197 balíčků včetně pavla-ry
   const code = await runCheck({ root: RECORDS_ROOT, log: (l) => lines.push(l) });
   assert.equal(code, 0, lines.join("\n"));
   assert.ok(!lines.some((l) => l.includes("0 dossier packages")), lines.join("\n"));
-  assert.ok(lines.some((l) => l.includes("Načteno 197 dossier balíčků")), lines.join("\n"));
+  assert.ok(lines.some((l) => l.includes("Načteno 202 dossier balíčků")), lines.join("\n"));
   assert.ok(lines.at(-1) === "OK");
 });
 
