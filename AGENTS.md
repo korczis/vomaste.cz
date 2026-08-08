@@ -4220,3 +4220,88 @@ na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
 doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
 dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
 autorizaci.
+
+### Scope extension, 2026-08-08: Vlastimil Tlustý
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Vlastimil Tlustý je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr financí (4. 9. 2006 – 9. 1. 2007) (první vláda Mirka Topolánka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Milena Vicenová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Milena Vicenová je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministryně zemědělství (4. 9. 2006 – 9. 1. 2007) (první vláda Mirka Topolánka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Petr Kalaš
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Petr Kalaš je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr životního prostředí (4. 9. 2006 – 9. 1. 2007) (první vláda Mirka Topolánka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Jiří Paroubek
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jiří Paroubek je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+předseda vlády České republiky (25. 4. 2005 – 16. 8. 2006; vláda podle oficiálního přehledu podala demisi 16. 8. 2006). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Zdeněk Škromach
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Zdeněk Škromach je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+místopředseda vlády a ministr práce a sociálních věcí (25. 4. 2005 – 16. 8. 2006; 12. 10. – 4. 11. 2005 pověřen i řízením Ministerstva zdravotnictví) (vláda Jiřího Paroubka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
