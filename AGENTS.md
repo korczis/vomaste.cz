@@ -3455,3 +3455,88 @@ Petra Nečase na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
 CORROBORATED i doplnění okolností konce v úřadu či dalších funkcí
 vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje
 samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Josef Dobeš
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Josef Dobeš je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr školství (13. 7. 2010 – 31. 3. 2012, Věci veřejné) (vláda Petra Nečase). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Petra Nečase na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění okolností konce v úřadu či dalších funkcí
+vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Jiří Pospíšil
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jiří Pospíšil je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr spravedlnosti (13. 7. 2010 – 27. 6. 2012, ODS) (vláda Petra Nečase). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Petra Nečase na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění okolností konce v úřadu či dalších funkcí
+vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Kamil Jankovský
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Kamil Jankovský je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr pro místní rozvoj (13. 7. 2010 – 10. 7. 2013, od 17. 6. 2013 v demisi, VV) (vláda Petra Nečase). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Petra Nečase na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění okolností konce v úřadu či dalších funkcí
+vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Tomáš Chalupa
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Tomáš Chalupa je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr životního prostředí (17. 1. 2011 – 10. 7. 2013, od 17. 6. 2013 v demisi, ODS) (vláda Petra Nečase). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Petra Nečase na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění okolností konce v úřadu či dalších funkcí
+vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Jan Kubice
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jan Kubice je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr vnitra (22. 4. 2011 – 10. 7. 2013, od 17. 6. 2013 v demisi) (vláda Petra Nečase). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Petra Nečase na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění okolností konce v úřadu či dalších funkcí
+vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.

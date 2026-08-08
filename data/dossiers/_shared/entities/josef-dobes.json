@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/josef-dobes",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "josef-dobes",
+  "entityId": "josef-dobes",
+  "title": "Josef Dobeš",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "referenced",
+  "dossiers": [
+    "josef-dobes"
+  ],
+  "order": 601,
+  "description": "Josef Dobeš — bývalý ministr školství (2010–2012).",
+  "provenance": {
+    "discoveredAt": "2026-08-08",
+    "discoveredVia": [
+      "government-roster-research-2026-08-08"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Bývalý ministr školství (13. 7. 2010 – 31. 3. 2012, Nečasova vláda,\nVěci veřejné).\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
+    }
+  ]
+}
