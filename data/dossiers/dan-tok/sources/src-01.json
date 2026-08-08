@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/dan-tok/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/dan-tok"
+  },
+  "title": "SRC-01 — Vláda ČR (oficiální profil člena vlády)",
+  "description": "Oficiální vládní profil: ministr dopravy 12/2014 – 30. 4. 2019, dříve šéf Skanska.",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vlada.gov.cz/cz/clenove-vlady/dan-tok-167015/",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/dan-tok/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "dan-tok"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil člena vlády na webu Vlády ČR, otevřen a přečten 2026-08-08.\nUvádí funkci ministra dopravy od prosince 2014 ve vládě Bohuslava Sobotky, poté v první vládě Andreje Babiše (od prosince 2017) a ve druhé vládě (27. 6. 2018 – 30. 4. 2019), a dřívější funkci předsedy představenstva a generálního ředitele Skanska a.s. (2008–2014) i vedoucí pozice v ALSTOM a ABB.\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** — dokládá výkon funkcí a jejich data; okolnosti konce dokládá SRC-02."
+    }
+  ],
+  "order": 1
+}

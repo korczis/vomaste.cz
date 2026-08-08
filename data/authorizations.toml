@@ -489,3 +489,38 @@ authorized_at = "2026-08-08"
 subjects = ["antonin-stanek"]
 agents_md_section = "Scope extension, 2026-08-08: Antonín Staněk"
 scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Antonín Staněk je politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce — ministr kultury (27. 6. 2018 – 31. 7. 2019, druhá vláda Andreje Babiše, ČSSD), dříve primátor Olomouce (od 2014) a poslanec (od 2017). Jeho odvolání předcházel spor o odvolání ředitele Národní galerie Praha Jiřího Fajta a ředitele Muzea umění Olomouc, kritika odborné veřejnosti a žádost ČSSD o jeho konec; prezident Zeman jeho květnovou rezignaci nejprve nepřijal a odvolal ho k 31. 7. 2019 (Aktuálně.cz 2019-07-29). Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt vládní představitele posledních tří volebních období, po pěti postupně.  Rozsah tohoto dossieru je záměrně minimální: základní biografický záznam dřívější vládní funkce a okolností odvolání tak, jak je popsaly citované zdroje — kritika je připsána kritikům, prezidentova protichůdná interpretace (poděkování za „odhalení zneužívání veřejných prostředků\") jemu, a web žádnou stranu nepřijímá za svou. Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci."
+
+[[authorizations]]
+id = "AUTH-2026-08-08-DAN-TOK"
+authorized_at = "2026-08-08"
+subjects = ["dan-tok"]
+agents_md_section = "Scope extension, 2026-08-08: Dan Ťok"
+scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Dan Ťok je politicky exponovaná osoba v souvislosti s výkonem dřívějších veřejných funkcí — ministr dopravy nepřetržitě od prosince 2014 do 30. 4. 2019 (vlády Bohuslava Sobotky a obě vlády Andreje Babiše, nestraník za ANO), dříve předseda představenstva a generální ředitel Skanska a.s. Konec v úřadu oznámil v dubnu 2019 v rámci vládních změn, nahradil ho Vladimír Kremlík (Seznam Zprávy 2019-04-10). Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt vládní představitele posledních tří volebních období, po pěti postupně.  Rozsah tohoto dossieru je záměrně minimální: základní biografický záznam dřívějších veřejných funkcí, doložený přímo otevřenými zdroji (vlada.gov.cz, Seznam Zprávy). Nejde o investigativní rešerši žádné kauzy (vč. dálničních zakázek) — to by vyžadovalo samostatnou budoucí autorizaci."
+
+[[authorizations]]
+id = "AUTH-2026-08-08-VLADIMIR-KREMLIK"
+authorized_at = "2026-08-08"
+subjects = ["vladimir-kremlik"]
+agents_md_section = "Scope extension, 2026-08-08: Vladimír Kremlík"
+scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Vladimír Kremlík je politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce — ministr dopravy (29. 4. 2019 – 23. 1. 2020, druhá vláda Andreje Babiše), dříve náměstek Úřadu pro zastupování státu ve věcech majetkových a advokát. Při ohlášení nominace ho premiér Babiš popsal jako profesionála s bezpečnostní prověrkou na stupeň „tajné\" (Seznam Zprávy 2019-04-10). Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt vládní představitele posledních tří volebních období, po pěti postupně.  Rozsah tohoto dossieru je záměrně minimální: základní biografický záznam dřívější vládní funkce s daty z oficiálního profilu, doložený přímo otevřenými zdroji (vlada.gov.cz, Seznam Zprávy). Nejde o investigativní rešerši žádné kauzy (vč. okolností jeho odvolání kolem zakázky na e-shop dálničních známek — bez přímo otevřeného zdroje se zde neuvádí) — to by vyžadovalo samostatnou budoucí autorizaci."
+
+[[authorizations]]
+id = "AUTH-2026-08-08-MARTA-NOVAKOVA"
+authorized_at = "2026-08-08"
+subjects = ["marta-novakova"]
+agents_md_section = "Scope extension, 2026-08-08: Marta Nováková"
+scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Marta Nováková je politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce — ministryně průmyslu a obchodu (27. 6. 2018 – 30. 4. 2019, druhá vláda Andreje Babiše), dříve prezidentka Svazu obchodu a cestovního ruchu ČR a majitelka U&SLUNO a.s. Její konec v úřadu premiér Babiš doprovodil slovy, že přechod ze soukromého sektoru do veřejné správy není snadný, a výslovně odmítl, že by důvodem byl incident s tchajwanskou zástupkyní (Seznam Zprávy 2019-04-10); nahradil ji Karel Havlíček. Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt vládní představitele posledních tří volebních období, po pěti postupně.  Rozsah tohoto dossieru je záměrně minimální: základní biografický záznam dřívější vládní funkce a okolností konce v úřadu tak, jak je popsaly citované zdroje — důvody se připisují tomu, kdo je vyslovil. Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci."
+
+[[authorizations]]
+id = "AUTH-2026-08-08-MARTIN-STROPNICKY"
+authorized_at = "2026-08-08"
+subjects = ["martin-stropnicky"]
+agents_md_section = "Scope extension, 2026-08-08: Martin Stropnický"
+scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Martin Stropnický je politicky exponovaná osoba v souvislosti s výkonem dřívějších veřejných funkcí — místopředseda vlády a ministr zahraničních věcí (13. 12. 2017 – 27. 6. 2018, první vláda Andreje Babiše, od 24. 1. 2018 v demisi), ministr obrany (2014–2017, vláda Bohuslava Sobotky), ministr kultury (1998, Tošovského vláda), dlouholetý diplomat (velvyslanec v Portugalsku, Itálii a při Svatém stolci; od listopadu 2018 velvyslanec v Izraeli) a herec. Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt vládní představitele posledních tří volebních období, po pěti postupně.  Rozsah tohoto dossieru je záměrně minimální: základní biografický záznam dřívějších veřejných funkcí a odchodu z vysoké politiky do diplomacie (jeho vlastní rozhodnutí dle citovaných zdrojů), doloženo přímo otevřenými zdroji (vlada.gov.cz — profil i oficiální přehled členů první vlády, Aktuálně.cz). Nejde o investigativní rešerši žádné kauzy — to by vyžadovalo samostatnou budoucí autorizaci."
+
+[[authorizations]]
+id = "AUTH-2026-08-08-ROBERT-PELIKAN"
+authorized_at = "2026-08-08"
+subjects = ["robert-pelikan"]
+agents_md_section = "Scope extension, 2026-08-08: Robert Pelikán"
+scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Robert Pelikán je politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce — ministr spravedlnosti (březen 2015 – 27. 6. 2018, vlády Bohuslava Sobotky a první vláda Andreje Babiše, od 24. 1. 2018 v demisi, ANO), dříve 1. náměstek ministra spravedlnosti a právník. V dubnu 2018 oznámil odchod z politiky; jeho zdůvodnění (názorové neshody v ANO mj. ohledně SPD a lidských práv, kontext vydání Jevgenije Nikulina do USA) se cituje jeho slovy (ČT24 2018-04-07). Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt vládní představitele posledních tří volebních období, po pěti postupně.  Rozsah tohoto dossieru je záměrně minimální: základní biografický záznam dřívější vládní funkce a ohlášeného odchodu z politiky s jeho vlastním zdůvodněním, doloženo přímo otevřenými zdroji (vlada.gov.cz, ČT24). Nejde o investigativní rešerši žádné kauzy — to by vyžadovalo samostatnou budoucí autorizaci."

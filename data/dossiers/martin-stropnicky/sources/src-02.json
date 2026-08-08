@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-stropnicky/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-stropnicky"
+  },
+  "title": "SRC-02 — Aktuálně.cz: Stropnický skončí v politice, bude velvyslancem v Izraeli",
+  "description": "Aktuálně.cz o Stropnického odchodu z vysoké politiky a schváleném vyslání jako velvyslance v Izraeli (2018).",
+  "outlet": "Aktuálně.cz",
+  "sourceType": "zpravodajský článek",
+  "url": "https://zpravy.aktualne.cz/domaci/stropnicky-skonci-v-politice-bude-velvyslancem-v-izraeli-jeh/r~c5c292404fa711e8a44c0cc47ab5f122/",
+  "retrieved": "2026-08-08",
+  "published": "2018-05-04",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-stropnicky/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "martin-stropnicky"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpravodajský článek Aktuálně.cz ze 4. 5. 2018, otevřen a přečten 2026-08-08.\nUvádí, že Martin Stropnický končí ve vysoké politice a stane se velvyslancem v Izraeli; podle citovaného člena vlády šlo o jeho vlastní rozhodnutí („Rozhodl se sám, bylo to jeho rozhodnutí, že už nechce být ministrem“) a vládní schválení vyslání. Rekapituluje jeho funkce ministra obrany (2014–2017) a místopředsedy vlády a ministra zahraničí (prosinec 2017 – červen 2018).\n\nPoznámka k typu zdroje a jeho limitům: nezávislé redakční zpravodajství — dokládá odchod z politiky a jeho okolnosti; data výkonu funkcí nese SRC-01."
+    }
+  ],
+  "order": 2
+}

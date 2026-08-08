@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/dan-tok/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/dan-tok"
+  },
+  "title": "SRC-02 — Seznam Zprávy: Babiš oznámil změny ve vládě",
+  "description": "Seznam Zprávy o vládních změnách z dubna 2019: Kremlík za Ťoka na dopravu, Havlíček za Novákovou na průmysl.",
+  "outlet": "Seznam Zprávy",
+  "sourceType": "zpravodajský článek",
+  "url": "https://www.seznamzpravy.cz/clanek/marta-novakova-konci-ve-funkci-ministryne-prumyslu-a-obchodu-70052",
+  "retrieved": "2026-08-08",
+  "published": "2019-04-10",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/dan-tok/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "dan-tok"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpravodajský článek Seznam Zpráv z 10. 4. 2019, otevřen a přečten 2026-08-08.\nUvádí, že premiér Babiš po schůzce s prezidentem Zemanem oznámil vládní změny: na ministerstvo dopravy místo Dana Ťoka nastoupí Vladimír Kremlík a na průmysl místo Marty Novákové Karel Havlíček; prezident měl změny formálně provést po návratu z Číny k 30. 4. 2019.\n\nPoznámka k typu zdroje a jeho limitům: nezávislé redakční zpravodajství — dokládá ohlášení změny a její okolnosti; data výkonu funkce nese SRC-01."
+    }
+  ],
+  "order": 2
+}
