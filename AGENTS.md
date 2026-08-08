@@ -3282,3 +3282,91 @@ Jiřího Rusnoka na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
 CORROBORATED i doplnění dřívějších či pozdějších funkcí vyžaduje
 otevření dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
 autorizaci.
+
+### Scope extension, 2026-08-08: Dalibor Štys
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Dalibor Štys je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr školství, mládeže a tělovýchovy (10. 7. 2013 – 29. 1. 2014, Rusnokova úřednická vláda, od
+13. 8. 2013 v demisi). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Jiřího Rusnoka na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED vyžaduje otevření dalších zdrojů. Rozšíření rozsahu
+vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Zdeněk Žák
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Zdeněk Žák je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr dopravy (10. 7. 2013 – 29. 1. 2014, Rusnokova úřednická vláda, od
+13. 8. 2013 v demisi). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Jiřího Rusnoka na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED vyžaduje otevření dalších zdrojů. Rozšíření rozsahu
+vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Petr Nečas
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Petr Nečas je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+předseda vlády ČR (28. 6. 2010 – 10. 7. 2013, od 17. 6. 2013 v demisi, ODS) (vláda Petra Nečase, 2010–2013). Autorizace navazuje na výslovnou
+žádost vlastníka v této konverzaci pokrýt vládní představitele postupně
+až do roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Petra Nečase na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění dalších dřívějších či pozdějších funkcí
+vyžaduje otevření dalších zdrojů. Nejde o investigativní rešerši žádné
+kauzy (u P. Nečase vč. okolností demise 2013) — to by vyžadovalo
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Karel Schwarzenberg
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Karel Schwarzenberg je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+1. místopředseda vlády a ministr zahraničních věcí (13. 7. 2010 – 10. 7. 2013, TOP 09) (vláda Petra Nečase, 2010–2013). Autorizace navazuje na výslovnou
+žádost vlastníka v této konverzaci pokrýt vládní představitele postupně
+až do roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Petra Nečase na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění dalších dřívějších či pozdějších funkcí
+vyžaduje otevření dalších zdrojů. Nejde o investigativní rešerši žádné
+kauzy (u P. Nečase vč. okolností demise 2013) — to by vyžadovalo
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Miroslav Kalousek
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Miroslav Kalousek je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr financí (13. 7. 2010 – 10. 7. 2013, TOP 09) (vláda Petra Nečase, 2010–2013). Autorizace navazuje na výslovnou
+žádost vlastníka v této konverzaci pokrýt vládní představitele postupně
+až do roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Petra Nečase na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění dalších dřívějších či pozdějších funkcí
+vyžaduje otevření dalších zdrojů. Nejde o investigativní rešerši žádné
+kauzy (u P. Nečase vč. okolností demise 2013) — to by vyžadovalo
+samostatnou budoucí autorizaci.

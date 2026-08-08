@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/karel-schwarzenberg",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "karel-schwarzenberg",
+  "entityId": "karel-schwarzenberg",
+  "title": "Karel Schwarzenberg",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "referenced",
+  "dossiers": [
+    "karel-schwarzenberg"
+  ],
+  "order": 594,
+  "description": "Karel Schwarzenberg — bývalý 1. místopředseda vlády a ministr zahraničí (2010–2013).",
+  "provenance": {
+    "discoveredAt": "2026-08-08",
+    "discoveredVia": [
+      "government-roster-research-2026-08-08"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Bývalý 1. místopředseda vlády a ministr zahraničních věcí\n(13. 7. 2010 – 10. 7. 2013, Nečasova vláda, TOP 09).\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
+    }
+  ]
+}
