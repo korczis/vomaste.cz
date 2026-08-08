@@ -197,7 +197,7 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 785 záznamů v 139 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 787 záznamů v 139 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
@@ -209,7 +209,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 785 záznamů v 139 rodinách/out
 | ČT24 (Česká televize) | 19 | 11 | [ano](/zdroje/ceska-televize/) |
 | denik-n | 18 | 10 | [ano](/zdroje/denik-n/) |
 | Echo24 | 18 | 14 | [ano](/zdroje/echo24/) |
-| Aktuálně.cz | 13 | 8 | [ano](/zdroje/aktualne-cz/) |
+| Aktuálně.cz | 15 | 8 | [ano](/zdroje/aktualne-cz/) |
 | Novinky.cz | 13 | 12 | [ano](/zdroje/novinky-cz/) |
 | denik-cz | 11 | 6 | [ano](/zdroje/denik-cz/) |
 | Česká justice | 11 | 6 | [ano](/zdroje/ceska-justice/) |
