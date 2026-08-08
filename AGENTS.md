@@ -2911,3 +2911,101 @@ záznam dřívější vládní funkce. Tvrzení nese stav 1 ZDROJ (jediný pří
 otevřený zdroj je oficiální profil na vlada.gov.cz); povýšení na
 CORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Rozšíření
 rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Marcel Chládek
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Marcel Chládek je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr školství, mládeže a tělovýchovy (29. 1. 2014 –
+5. 6. 2015, vláda Bohuslava Sobotky, ČSSD), dříve senátor (od 2008) a
+náměstek hejtmana Středočeského kraje. Autorizace navazuje na výslovnou
+žádost vlastníka v této konverzaci pokrýt vládní představitele postupně
+až do roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívějších veřejných funkcí. Tvrzení nese stav 1 ZDROJ (jediný
+přímo otevřený zdroj je oficiální profil na vlada.gov.cz); povýšení na
+CORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Okolnosti
+konce v úřadu se zde bez přímo otevřeného zdroje neuvádějí. Rozšíření
+rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Kateřina Valachová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Kateřina Valachová je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministryně školství, mládeže a tělovýchovy (2015 –
+21. 6. 2017, vláda Bohuslava Sobotky, ČSSD; oficiální přehled členů
+vlády uvádí začátek 5. 6. 2015, její vládní profil byl publikován
+17. 6. 2015 — drobný rozpor úředních evidencí se uvádí otevřeně),
+dříve náměstkyně pro řízení sekce Legislativní rady vlády a vedoucí
+právního odboru Kanceláře veřejného ochránce práv. Autorizace navazuje
+na výslovnou žádost vlastníka v této konverzaci pokrýt vládní
+představitele postupně až do roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívějších veřejných funkcí. Tvrzení nese stav 1 ZDROJ (jediný
+přímo otevřený zdroj je vlada.gov.cz); povýšení na CORROBORATED
+vyžaduje otevření druhého, nezávislého zdroje. Okolnosti konce v úřadu
+se zde bez přímo otevřeného zdroje neuvádějí. Rozšíření rozsahu
+vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Daniel Herman
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Daniel Herman je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr kultury (29. 1. 2014 – 13. 12. 2017, vláda Bohuslava
+Sobotky, KDU-ČSL, od 5. 12. 2017 v demisi), dříve ředitel Ústavu pro
+studium totalitních režimů (2010–2013) a mluvčí České biskupské
+konference (1996–2005), poslanec od října 2013. Autorizace navazuje na
+výslovnou žádost vlastníka v této konverzaci pokrýt vládní
+představitele postupně až do roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívějších veřejných funkcí. Tvrzení nese stav 1 ZDROJ (jediný
+přímo otevřený zdroj je oficiální profil na vlada.gov.cz); povýšení na
+CORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Rozšíření
+rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Jan Mládek
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jan Mládek je
+politicky exponovaná osoba v souvislosti s výkonem dřívějších veřejných
+funkcí — ministr průmyslu a obchodu (29. 1. 2014 – 28. 2. 2017, vláda
+Bohuslava Sobotky, ČSSD), ministr zemědělství (2005–2006) a 1. náměstek
+ministra financí (1999–2001). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívějších veřejných funkcí. Tvrzení nese stav 1 ZDROJ (jediný
+přímo otevřený zdroj je oficiální profil na vlada.gov.cz); povýšení na
+CORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Okolnosti
+konce v úřadu (únor 2017) se zde bez přímo otevřeného zdroje neuvádějí.
+Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Svatopluk Němeček
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Svatopluk Němeček je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr zdravotnictví (29. 1. 2014 – 30. 11. 2016, vláda
+Bohuslava Sobotky), dříve ředitel Fakultní nemocnice Ostrava
+(2005–2014) a Městské nemocnice Bohumín (2002–2005). Autorizace
+navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt vládní
+představitele postupně až do roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívějších veřejných funkcí. Tvrzení nese stav 1 ZDROJ (jediný
+přímo otevřený zdroj je oficiální profil na vlada.gov.cz); povýšení na
+CORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Okolnosti
+konce v úřadu (listopad 2016) se zde bez přímo otevřeného zdroje
+neuvádějí. Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci.

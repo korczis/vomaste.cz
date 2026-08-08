@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/svatopluk-nemecek/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/svatopluk-nemecek"
+  },
+  "text": "Svatopluk Němeček byl podle oficiálního profilu na webu Vlády ČR ministrem zdravotnictví od 29. 1. 2014 do 30. 11. 2016 (vláda Bohuslava Sobotky), předtím byl ředitelem Fakultní nemocnice Ostrava (2005–2014) a Městské nemocnice Bohumín (2002–2005)",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/svatopluk-nemecek/sources/SRC-01"
+    }
+  ],
+  "subjects": [
+    "svatopluk-nemecek"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/svatopluk-nemecek/_index.md)."
+    }
+  ]
+}
