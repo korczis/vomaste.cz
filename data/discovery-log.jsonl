@@ -989,3 +989,8 @@
 {"logged_at":"2026-08-08","record_id":"libor-ambrozek","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["libor-ambrozek"]},"action":"created"}
 {"logged_at":"2026-08-08","record_id":"petr-zgarba","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["petr-zgarba"]},"action":"created"}
 {"logged_at":"2026-08-08","record_id":"petra-buzkova","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["petra-buzkova"]},"action":"created"}
+{"logged_at":"2026-08-08","record_id":"dana-berova","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["dana-berova"]},"action":"created"}
+{"logged_at":"2026-08-08","record_id":"jaroslav-palas","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["jaroslav-palas"]},"action":"created"}
+{"logged_at":"2026-08-08","record_id":"milada-emmerova","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["milada-emmerova"]},"action":"created"}
+{"logged_at":"2026-08-08","record_id":"radko-martinek","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["radko-martinek"]},"action":"created"}
+{"logged_at":"2026-08-08","record_id":"vitezslav-jandak","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["vitezslav-jandak"]},"action":"created"}
