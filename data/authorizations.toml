@@ -706,3 +706,38 @@ authorized_at = "2026-08-08"
 subjects = ["martin-pecina"]
 agents_md_section = "Scope extension, 2026-08-08: Martin Pecina"
 scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Martin Pecina je politicky exponovaná osoba v souvislosti s výkonem dřívějších veřejných funkcí — místopředseda vlády a ministr vnitra (10. 7. 2013 – 29. 1. 2014, Rusnokova úřednická vláda, od 13. 8. 2013 v demisi); ministrem vnitra byl i ve vládě Jana Fischera (2009–2010). Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt vládní představitele postupně až do roku 1989, po pěti.  Rozsah tohoto dossieru je záměrně minimální: základní biografický záznam dřívějších vládních funkcí doložený oficiálním přehledem členů vlády na vlada.gov.cz (Rusnokova vláda) — dřívější Fischerovo období se uvádí, jen pokud je doloží otevřený zdroj. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci."
+
+[[authorizations]]
+id = "AUTH-2026-08-08-JAN-FISCHER"
+authorized_at = "2026-08-08"
+subjects = ["jan-fischer"]
+agents_md_section = "Scope extension, 2026-08-08: Jan Fischer"
+scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jan Fischer je politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce — 1. místopředseda vlády a ministr financí; dříve předseda úřednické vlády (2009–2010), což se v dossieru uvede, až to doloží přímo otevřený zdroj (10. 7. 2013 – 29. 1. 2014, Rusnokova úřednická vláda, od 13. 8. 2013 v demisi). Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt vládní představitele postupně až do roku 1989, po pěti.  Rozsah tohoto dossieru je záměrně minimální: základní biografický záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády Jiřího Rusnoka na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i doplnění dřívějších či pozdějších funkcí vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci."
+
+[[authorizations]]
+id = "AUTH-2026-08-08-JAN-KOHOUT"
+authorized_at = "2026-08-08"
+subjects = ["jan-kohout"]
+agents_md_section = "Scope extension, 2026-08-08: Jan Kohout"
+scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jan Kohout je politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce — ministr zahraničních věcí (10. 7. 2013 – 29. 1. 2014, Rusnokova úřednická vláda, od 13. 8. 2013 v demisi). Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt vládní představitele postupně až do roku 1989, po pěti.  Rozsah tohoto dossieru je záměrně minimální: základní biografický záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády Jiřího Rusnoka na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i doplnění dřívějších či pozdějších funkcí vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci."
+
+[[authorizations]]
+id = "AUTH-2026-08-08-FRANTISEK-KONICEK"
+authorized_at = "2026-08-08"
+subjects = ["frantisek-konicek"]
+agents_md_section = "Scope extension, 2026-08-08: František Koníček"
+scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): František Koníček je politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce — ministr práce a sociálních věcí (10. 7. 2013 – 29. 1. 2014, Rusnokova úřednická vláda, od 13. 8. 2013 v demisi). Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt vládní představitele postupně až do roku 1989, po pěti.  Rozsah tohoto dossieru je záměrně minimální: základní biografický záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády Jiřího Rusnoka na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i doplnění dřívějších či pozdějších funkcí vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci."
+
+[[authorizations]]
+id = "AUTH-2026-08-08-MARTIN-HOLCAT"
+authorized_at = "2026-08-08"
+subjects = ["martin-holcat"]
+agents_md_section = "Scope extension, 2026-08-08: Martin Holcát"
+scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Martin Holcát je politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce — ministr zdravotnictví (10. 7. 2013 – 29. 1. 2014, Rusnokova úřednická vláda, od 13. 8. 2013 v demisi). Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt vládní představitele postupně až do roku 1989, po pěti.  Rozsah tohoto dossieru je záměrně minimální: základní biografický záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády Jiřího Rusnoka na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i doplnění dřívějších či pozdějších funkcí vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci."
+
+[[authorizations]]
+id = "AUTH-2026-08-08-JIRI-BALVIN"
+authorized_at = "2026-08-08"
+subjects = ["jiri-balvin"]
+agents_md_section = "Scope extension, 2026-08-08: Jiří Balvín"
+scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jiří Balvín je politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce — ministr kultury (10. 7. 2013 – 29. 1. 2014, Rusnokova úřednická vláda, od 13. 8. 2013 v demisi). Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt vládní představitele postupně až do roku 1989, po pěti.  Rozsah tohoto dossieru je záměrně minimální: základní biografický záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády Jiřího Rusnoka na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i doplnění dřívějších či pozdějších funkcí vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci."

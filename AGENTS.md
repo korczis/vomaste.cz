@@ -3192,3 +3192,93 @@ vlády na vlada.gov.cz (Rusnokova vláda) — dřívější Fischerovo období s
 uvádí, jen pokud je doloží otevřený zdroj. Tvrzení nese stav 1 ZDROJ;
 povýšení na CORROBORATED vyžaduje otevření druhého, nezávislého zdroje.
 Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Jan Fischer
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jan Fischer je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+1. místopředseda vlády a ministr financí; dříve předseda úřednické vlády (2009–2010), což se v dossieru uvede, až to doloží přímo otevřený zdroj (10. 7. 2013 – 29. 1. 2014, Rusnokova úřednická vláda, od
+13. 8. 2013 v demisi). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Jiřího Rusnoka na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění dřívějších či pozdějších funkcí vyžaduje
+otevření dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Jan Kohout
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jan Kohout je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr zahraničních věcí (10. 7. 2013 – 29. 1. 2014, Rusnokova úřednická vláda, od
+13. 8. 2013 v demisi). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Jiřího Rusnoka na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění dřívějších či pozdějších funkcí vyžaduje
+otevření dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: František Koníček
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): František Koníček je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr práce a sociálních věcí (10. 7. 2013 – 29. 1. 2014, Rusnokova úřednická vláda, od
+13. 8. 2013 v demisi). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Jiřího Rusnoka na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění dřívějších či pozdějších funkcí vyžaduje
+otevření dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Martin Holcát
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Martin Holcát je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr zdravotnictví (10. 7. 2013 – 29. 1. 2014, Rusnokova úřednická vláda, od
+13. 8. 2013 v demisi). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Jiřího Rusnoka na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění dřívějších či pozdějších funkcí vyžaduje
+otevření dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Jiří Balvín
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jiří Balvín je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr kultury (10. 7. 2013 – 29. 1. 2014, Rusnokova úřednická vláda, od
+13. 8. 2013 v demisi). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Jiřího Rusnoka na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění dřívějších či pozdějších funkcí vyžaduje
+otevření dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
