@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/petr-bendl-ministr",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "petr-bendl-ministr",
+  "slug": "petr-bendl-ministr",
+  "title": "Petr Bendl",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Petr Bendl.",
+  "dossierType": "entity",
+  "canonicalDossier": "petr-bendl-ministr",
+  "subject": "petr-bendl-ministr",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-PETR-BENDL-MINISTR"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "petr-bendl-ministr",
+        "label": "Petr Bendl",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nPetr Bendl je bývalý ministr zemědělství (2011–2013, Nečasova vláda,\nODS). Subjekt je pro odlišení od případných jmenovců vymezen právě\ntouto funkcí v oficiálním přehledu vlády. Jako politicky exponovaná osoba\nv souvislosti s výkonem dřívější veřejné funkce spadá do standing scope\nautorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro\ntento dossier je `AUTH-2026-08-08-PETR-BENDL-MINISTR`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívější vládní funkce doložený oficiálním přehledem členů vlády\nPetra Nečase. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i\ndoplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření\ndalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí\nautorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/petr-bendl-ministr/claims/clm-01.md) | Petr Bendl byl podle oficiálního přehledu členů vlády Petra Nečase na webu Vlády ČR ministrem zemědělství od 6. 10. 2011 do 17. 6. 2013 a poté do 10. 7. 2013 vykonával funkci v demisi | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-01](@/dossiers/petr-bendl-ministr/sources/src-01.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

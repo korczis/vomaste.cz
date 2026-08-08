@@ -3540,3 +3540,88 @@ Petra Nečase na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
 CORROBORATED i doplnění okolností konce v úřadu či dalších funkcí
 vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje
 samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Petr Bendl
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Petr Bendl je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr zemědělství (6. 10. 2011 – 10. 7. 2013, od 17. 6. 2013 v demisi, ODS); pro odlišení od jmenovců je subjekt vymezen touto funkcí v přehledu vlády (vláda Petra Nečase). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Petra Nečase na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění okolností konce v úřadu či dalších funkcí
+vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Martin Kuba
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Martin Kuba je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr průmyslu a obchodu (16. 11. 2011 – 10. 7. 2013, od 17. 6. 2013 v demisi, ODS) (vláda Petra Nečase). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Petra Nečase na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění okolností konce v úřadu či dalších funkcí
+vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Ivan Fuksa
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Ivan Fuksa je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr zemědělství (13. 7. 2010 – 4. 10. 2011, ODS) (vláda Petra Nečase). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Petra Nečase na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění okolností konce v úřadu či dalších funkcí
+vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Jiří Besser
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jiří Besser je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr kultury (13. 7. 2010 – 16. 12. 2011) (vláda Petra Nečase). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Petra Nečase na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění okolností konce v úřadu či dalších funkcí
+vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Alena Hanáková
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Alena Hanáková je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministryně kultury (20. 12. 2011 – 10. 7. 2013, od 17. 6. 2013 v demisi) (vláda Petra Nečase). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Petra Nečase na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění okolností konce v úřadu či dalších funkcí
+vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
