@@ -21,7 +21,7 @@ Report navíc pokrývá jen období **2016-07 až 2026-08** (122 měsíců).
 Chybějící záznam znamená „v pokrytém období nic zveřejněného“, nikdy
 „subjekt nedostal veřejné peníze“.
 
-Datum kontroly: **2026-08-06**. Zdroj: Registr smluv (ISRS) — měsíční otevřená data data.smlouvy.gov.cz.
+Datum kontroly: **2026-08-08**. Zdroj: Registr smluv (ISRS) — měsíční otevřená data data.smlouvy.gov.cz.
 Regenerace: `npm run screening:public-money -- --ico=…`.
 
 ## (název subjektu není v pokrytých záznamech) — IČO 01529820

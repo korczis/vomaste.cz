@@ -197,7 +197,7 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 775 záznamů v 135 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 776 záznamů v 135 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
@@ -238,6 +238,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 775 záznamů v 135 rodinách/out
 | Tiscali.cz | 3 | 3 | — |
 | Transparency International ČR | 3 | 2 | — |
 | Úřad pro ochranu osobních údajů | 3 | 1 | — |
+| smlouvy-gov-cz | 3 | 1 | [ano](/zdroje/registr-smluv/) |
 | cz-verejny-rejstrik | 2 | 1 | [ano](/zdroje/ares/) |
 | ARES — Administrativní registr ekonomických subjektů (Ministerstvo financí ČR) | 2 | 2 | [ano](/zdroje/ares/) |
 | Česká školní inspekce | 2 | 1 | — |
@@ -260,7 +261,6 @@ Dopočítáno z `data/dossiers/**/sources/**`, 775 záznamů v 135 rodinách/out
 | Seznam Zprávy | 2 | 2 | [ano](/zdroje/seznam-zpravy/) |
 | Ústavní soud ČR | 2 | 2 | — |
 | Vrchní státní zastupitelství v Olomouci | 2 | 1 | — |
-| smlouvy-gov-cz | 2 | 1 | [ano](/zdroje/registr-smluv/) |
 | blesk | 1 | 1 | [ano](/zdroje/blesk-cz/) |
 | ct24 | 1 | 1 | [ano](/zdroje/ceska-televize/) |
 | cvvm | 1 | 1 | — |

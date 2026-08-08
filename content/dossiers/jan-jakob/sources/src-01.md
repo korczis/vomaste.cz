@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-01 — Poslanecká sněmovna Parlamentu ČR: oficiální profil poslance Jana Jakoba"
-description = "Oficiální profilová stránka poslance na webu Poslanecké sněmovny Parlamentu ČR s údaji o aktuálním mandátu a klubové příslušnosti."
+description = "Oficiální profilová stránka poslance na webu Poslanecké sněmovny Parlamentu ČR s údaji o aktuálním mandátu a klubové příslušnosti. Zdroj: Poslanecká sněmovna Parlamentu ČR, dossier Jan Jakob."
 template = "dossier-source.html"
 weight = 1
 
