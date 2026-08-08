@@ -197,7 +197,7 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 787 záznamů v 139 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 788 záznamů v 139 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
@@ -247,6 +247,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 787 záznamů v 139 rodinách/out
 | Deník N | 2 | 2 | [ano](/zdroje/denik-n/) |
 | Deník.cz (VLTAVA LABE MEDIA) | 2 | 2 | [ano](/zdroje/denik-cz/) |
 | Fakultní nemocnice Olomouc (oficiální web) | 2 | 1 | — |
+| InfoDnes.cz | 2 | 2 | — |
 | Médiář | 2 | 1 | — |
 | Ministerstvo kultury ČR | 2 | 1 | — |
 | Ministerstvo průmyslu a obchodu (MPO) | 2 | 2 | — |
@@ -298,7 +299,6 @@ Dopočítáno z `data/dossiers/**/sources/**`, 787 záznamů v 139 rodinách/out
 | Hanácká Drbna | 1 | 1 | — |
 | Heroine.cz | 1 | 1 | — |
 | Info.cz | 1 | 1 | — |
-| InfoDnes.cz | 1 | 1 | — |
 | iportal24.cz | 1 | 1 | — |
 | iSport.cz (Blesk) | 1 | 1 | — |
 | Jezdci.cz | 1 | 1 | — |
