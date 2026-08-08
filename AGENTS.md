@@ -3370,3 +3370,88 @@ CORROBORATED i doplnění dalších dřívějších či pozdějších funkcí
 vyžaduje otevření dalších zdrojů. Nejde o investigativní rešerši žádné
 kauzy (u P. Nečase vč. okolností demise 2013) — to by vyžadovalo
 samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Karolína Peake
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Karolína Peake je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+místopředsedkyně vlády (1. 7. 2011 – 10. 7. 2013, od 17. 6. 2013 v demisi) (vláda Petra Nečase). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Petra Nečase na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění okolností konce v úřadu či dalších funkcí
+vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Radek John
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Radek John je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+místopředseda vlády (13. 7. 2010 – 20. 5. 2011) a ministr vnitra (13. 7. 2010 – 21. 4. 2011) (vláda Petra Nečase). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Petra Nečase na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění okolností konce v úřadu či dalších funkcí
+vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Alexandr Vondra (ministr obrany)
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Alexandr Vondra je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr obrany (13. 7. 2010 – 7. 12. 2012); pro odlišení od případných jmenovců je subjekt vymezen právě touto funkcí v přehledu vlády (vláda Petra Nečase). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Petra Nečase na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění okolností konce v úřadu či dalších funkcí
+vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Jaromír Drábek
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jaromír Drábek je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr práce a sociálních věcí (13. 7. 2010 – 31. 10. 2012) (vláda Petra Nečase). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Petra Nečase na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění okolností konce v úřadu či dalších funkcí
+vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Leoš Heger
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Leoš Heger je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr zdravotnictví (13. 7. 2010 – 10. 7. 2013, od 17. 6. 2013 v demisi) (vláda Petra Nečase). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Petra Nečase na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění okolností konce v úřadu či dalších funkcí
+vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.

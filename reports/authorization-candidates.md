@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 484 context entities across 112 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 483 context entities across 117 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -3907,17 +3907,6 @@ Generated from 484 context entities across 112 dossier(s). Regenerate with `npm 
 - Claims: CLM-03
 - Sources: SRC-02, SRC-04 (1 independent source family)
 - Relations: none
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Radek John (`radek-john`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: james-quick
-- Claims: CLM-15
-- Sources: SRC-16 (1 independent source family)
-- Relations:
-  - edge-james-quick-radek-john (james-quick -> radek-john, "CERD zastoupený Jehličkou podal oznámení ve veřejné kauze", dossier: james-quick)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Radek Mátl (`radek-matl`)
