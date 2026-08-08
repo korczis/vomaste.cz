@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jiri-havlicek/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jiri-havlicek"
+  },
+  "title": "SRC-01 — Vláda ČR (oficiální přehled členů vlády Bohuslava Sobotky)",
+  "description": "Oficiální přehled: J. Havlíček ministr průmyslu a obchodu 4. 4. – 13. 12. 2017.",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vlada.gov.cz/cz/clenove-vlady/historie-minulych-vlad/prehled-vlad-cr/1993-2013-cr/bohuslav_sobotka/prehled-clenu-vlady-bohuslava-sobotky-29-01-2014---trva-124534/",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jiri-havlicek/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "jiri-havlicek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální přehled členů vlády Bohuslava Sobotky na webu Vlády ČR, otevřen a přečten 2026-08-08.\nUvádí funkční období Jiřího Havlíčka jako ministra průmyslu a obchodu od 4. 4. 2017, s obdobím v demisi od 5. do 13. 12. 2017; jeho předchůdce Jan Mládek podle téhož přehledu skončil 28. 2. 2017.\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** — jediný přímo otevřený zdroj tohoto dossieru; tvrzení proto nese stav 1 ZDROJ a dřívější profesní dráha se bez otevřeného zdroje neuvádí."
+    }
+  ],
+  "order": 1
+}

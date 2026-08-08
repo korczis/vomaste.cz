@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jiri-havlicek/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jiri-havlicek"
+  },
+  "text": "Jiří Havlíček byl podle oficiálního přehledu členů vlády Bohuslava Sobotky na webu Vlády ČR ministrem průmyslu a obchodu od 4. 4. 2017 do 13. 12. 2017 (od 5. 12. 2017 v demisi), když ve funkci nahradil Jana Mládka",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jiri-havlicek/sources/SRC-01"
+    }
+  ],
+  "subjects": [
+    "jiri-havlicek"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jiri-havlicek/_index.md)."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jiri-havlicek",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "jiri-havlicek",
+  "slug": "jiri-havlicek",
+  "title": "Jiří Havlíček",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Jiří Havlíček.",
+  "dossierType": "entity",
+  "canonicalDossier": "jiri-havlicek",
+  "subject": "jiri-havlicek",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-JIRI-HAVLICEK"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "jiri-havlicek",
+        "label": "Jiří Havlíček",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nJiří Havlíček je bývalý ministr průmyslu a obchodu (2017, vláda\nBohuslava Sobotky, ČSSD). Jako politicky exponovaná osoba v souvislosti\ns výkonem dřívější veřejné funkce spadá do standing scope autorizace\n(`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro tento dossier\nje `AUTH-2026-08-08-JIRI-HAVLICEK`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívější vládní funkce, doložený oficiálním přehledem členů\nvlády. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED vyžaduje\notevření druhého, nezávislého zdroje. Rozšíření rozsahu vyžaduje\nsamostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/jiri-havlicek/claims/clm-01.md) | Jiří Havlíček byl podle oficiálního přehledu členů vlády Bohuslava Sobotky na webu Vlády ČR ministrem průmyslu a obchodu od 4. 4. 2017 do 13. 12. 2017 (od 5. 12. 2017 v demisi), když ve funkci nahradil Jana Mládka | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-01](@/dossiers/jiri-havlicek/sources/src-01.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

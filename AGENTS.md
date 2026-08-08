@@ -3009,3 +3009,96 @@ přímo otevřený zdroj je oficiální profil na vlada.gov.cz); povýšení na
 CORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Okolnosti
 konce v úřadu (listopad 2016) se zde bez přímo otevřeného zdroje
 neuvádějí. Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Miloslav Ludvík
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Miloslav Ludvík je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr zdravotnictví (30. 11. 2016 – 13. 12. 2017, vláda
+Bohuslava Sobotky, ČSSD, od 5. 12. 2017 v demisi), dříve dlouholetý
+ředitel Fakultní nemocnice v Motole (2000–2016). Autorizace navazuje na
+výslovnou žádost vlastníka v této konverzaci pokrýt vládní
+představitele postupně až do roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívějších veřejných funkcí. Tvrzení nese stav 1 ZDROJ (jediný
+přímo otevřený zdroj je oficiální profil na vlada.gov.cz); povýšení na
+CORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Rozšíření
+rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Jiří Havlíček
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jiří Havlíček je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr průmyslu a obchodu (4. 4. – 13. 12. 2017, vláda
+Bohuslava Sobotky, ČSSD, od 5. 12. 2017 v demisi). Autorizace navazuje
+na výslovnou žádost vlastníka v této konverzaci pokrýt vládní
+představitele postupně až do roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED
+vyžaduje otevření druhého, nezávislého zdroje. Rozšíření rozsahu
+vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Stanislav Štech
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Stanislav Štech je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr školství, mládeže a tělovýchovy (21. 6. – 13. 12.
+2017, vláda Bohuslava Sobotky, nominován za ČSSD, od 5. 12. 2017
+v demisi), dříve náměstek ministra školství (od 2015), profesor
+pedagogické psychologie a prorektor Univerzity Karlovy (2003–2015).
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci
+pokrýt vládní představitele postupně až do roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívějších veřejných funkcí. Tvrzení nese stav 1 ZDROJ (jediný
+přímo otevřený zdroj je oficiální profil na vlada.gov.cz); povýšení na
+CORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Rozšíření
+rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Jiří Dienstbier ml.
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jiří Dienstbier ml. je
+politicky exponovaná osoba v souvislosti s výkonem dřívějších veřejných
+funkcí — ministr pro lidská práva, rovné příležitosti a legislativu a
+předseda Legislativní rady vlády (29. 1. 2014 – 30. 11. 2016, vláda
+Bohuslava Sobotky, ČSSD), senátor a bývalý místopředseda ČSSD
+(2011–2013). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívějších veřejných funkcí. Tvrzení nese stav 1 ZDROJ (jediný
+přímo otevřený zdroj je oficiální profil na vlada.gov.cz); povýšení na
+CORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Okolnosti
+konce v úřadu se zde bez přímo otevřeného zdroje neuvádějí. Rozšíření
+rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Helena Válková
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Helena Válková je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministryně spravedlnosti (29. 1. 2014 – 1. 3. 2015, vláda
+Bohuslava Sobotky, ANO), profesorka trestního práva a kriminoložka.
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci
+pokrýt vládní představitele postupně až do roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce a akademické dráhy. Tvrzení nese stav
+1 ZDROJ (jediný přímo otevřený zdroj je oficiální profil na
+vlada.gov.cz); povýšení na CORROBORATED vyžaduje otevření druhého,
+nezávislého zdroje. Okolnosti konce v úřadu ani pozdější veřejné funkce
+se zde bez přímo otevřeného zdroje neuvádějí. Rozšíření rozsahu
+vyžaduje samostatnou budoucí autorizaci.
