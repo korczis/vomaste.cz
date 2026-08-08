@@ -2049,3 +2049,110 @@ pochybení, a tak musí být podán. Doloženo přímo otevřenými zdroji
 (oficiální profil na vlada.gov.cz, ČeskéNoviny.cz). Nejde o
 investigativní rešerši žádné kauzy z jeho ministerského působení — to by
 vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Mikuláš Bek
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Mikuláš Bek je
+politicky exponovaná osoba v souvislosti s výkonem dřívějších veřejných
+funkcí — ministr školství, mládeže a tělovýchovy (4. 5. 2023 –
+15. 12. 2025, od 6. 11. 2025 v demisi), předtím ministr pro evropské
+záležitosti (17. 12. 2021 – 4. 5. 2023), senátor (2018–2024) a rektor
+Masarykovy univerzity (2011–2019). Podle oficiálního profilu na psp.cz
+není v aktuálním volebním období členem žádného orgánu Sněmovny.
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci
+pokrýt vládní představitele posledních tří volebních období, po pěti
+postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní biografický
+záznam dřívějších veřejných funkcí, doložený přímo otevřenými zdroji
+(vlada.gov.cz, oficiální přehled ministrů na msmt.gov.cz). Nejde o
+investigativní rešerši žádné kauzy z jeho ministerského působení — to by
+vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Petr Gazdík
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Petr Gazdík je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr školství, mládeže a tělovýchovy (17. 12. 2021 –
+29. 6. 2022, vláda Petra Fialy, STAN). V červnu 2022 podal demisi poté,
+co média upozornila na jeho kontakty s podnikatelem Michalem Redlem,
+obviněným v kauze Dozimetr; sám uvedl, že se necítí ničím vinen a
+nechce rozkolísat vládu, a rezignoval i na funkci místopředsedy STAN
+(Forum24 2022-06-19). Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt vládní představitele posledních tří volebních
+období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní biografický
+záznam dřívější vládní funkce a okolností demise tak, jak je popsaly
+citované zdroje. Mandatory framing: Gazdík není v kauze Dozimetr
+obviněn; jeho demise je politický krok, jeho zdůvodnění se cituje jeho
+vlastními slovy a z kontaktů s obviněným se nevyvozuje žádné pochybení
+(gate 4 — no guilt by graph). Doloženo přímo otevřenými zdroji
+(oficiální přehled ministrů na msmt.gov.cz, Forum24). Hlubší rešerše
+(např. samotné kauzy Dozimetr) vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Vladimír Balaš
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Vladimír Balaš je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr školství, mládeže a tělovýchovy (od 1. 7. 2022 dle
+vlada.gov.cz, resp. od 29. 6. 2022 dle přehledu MŠMT, do 4. 5. 2023;
+vláda Petra Fialy, STAN), poslanec PSP ČR od října 2021 (volební období
+2021–2025), profesor mezinárodního práva a bývalý ředitel Ústavu státu
+a práva AV ČR. Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele posledních tří volebních období,
+po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní biografický
+záznam dřívějších veřejných funkcí, doložený přímo otevřenými zdroji
+(vlada.gov.cz, oficiální přehled ministrů na msmt.gov.cz). Nejde o
+investigativní rešerši žádné kauzy z jeho ministerského působení — to
+by vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Anna Hubáčková
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Anna Hubáčková je
+politicky exponovaná osoba v souvislosti s výkonem dřívějších veřejných
+funkcí — ministryně životního prostředí (17. 12. 2021 – 31. 10. 2022,
+vláda Petra Fialy, nominována KDU-ČSL), senátorka (2016–2022),
+starostka Ratíškovic (2014–2018) a vedoucí odboru životního prostředí
+Krajského úřadu Jihomoravského kraje (2001–2014). Autorizace navazuje
+na výslovnou žádost vlastníka v této konverzaci pokrýt vládní
+představitele posledních tří volebních období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní biografický
+záznam dřívějších veřejných funkcí, doložený přímo otevřenými zdroji
+(oficiální profil na vlada.gov.cz a nezávislé zpravodajství). Nejde o
+investigativní rešerši žádné kauzy z jejího ministerského působení — to
+by vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Lukáš Vlček
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Lukáš Vlček je veřejný
+funkcionář — poslanec Poslanecké sněmovny PČR zvolený za STAN (mandát
+od 4. 10. 2025, Vysočina), předseda sněmovního Výboru pro veřejnou
+správu a regionální rozvoj od 6. 3. 2026, 1. místopředseda hnutí STAN
+(od července 2022, funkci obhájil na celostátním sněmu v květnu 2025);
+bývalý ministr průmyslu a obchodu (od 8. 10. 2024, od 6. 11. 2025 do
+15. 12. 2025 v demisi) a dlouholetý starosta Pacova (2006–2021).
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci
+pokrýt vládní představitele posledních tří volebních období, po pěti
+postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní, aktuálně
+ověřený politický profil (poslanecký mandát, předsednictví výboru,
+stranická funkce, dřívější vládní funkce jako prostý biografický fakt),
+doložený přímo otevřenými zdroji (oficiální profil na psp.cz,
+vlada.gov.cz). Nejde o investigativní rešerši žádné kauzy z jeho
+ministerského působení — to by vyžadovalo samostatnou budoucí
+autorizaci.

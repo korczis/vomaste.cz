@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/mikulas-bek",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "mikulas-bek",
+  "slug": "mikulas-bek",
+  "title": "Mikuláš Bek",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Mikuláš Bek.",
+  "dossierType": "entity",
+  "canonicalDossier": "mikulas-bek",
+  "subject": "mikulas-bek",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-MIKULAS-BEK"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "mikulas-bek",
+        "label": "Mikuláš Bek",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nMikuláš Bek je bývalý ministr školství, mládeže a tělovýchovy\n(2023–2025) a bývalý ministr pro evropské záležitosti (2021–2023);\ndříve senátor (2018–2024) a rektor Masarykovy univerzity (2011–2019).\nJako politicky exponovaná osoba v souvislosti s výkonem dřívějších\nveřejných funkcí spadá do standing scope autorizace\n(`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro tento dossier\nje `AUTH-2026-08-08-MIKULAS-BEK`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívějších veřejných funkcí. Rozšíření rozsahu (například na\nkauzy z jeho ministerského působení) vyžaduje samostatnou budoucí\nautorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/mikulas-bek/claims/clm-01.md) | Mikuláš Bek byl podle oficiálního profilu na webu Vlády ČR ministrem pro evropské záležitosti od 17. 12. 2021 do 4. 5. 2023 a poté ministrem školství, mládeže a tělovýchovy — podle oficiálního přehledu ministrů školství na webu MŠMT od 4. 5. 2023 do 15. 12. 2025; dříve byl senátorem (zvolen 2018) a rektorem Masarykovy univerzity (2011–2019) | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/mikulas-bek/sources/src-01.md), [SRC-02](@/dossiers/mikulas-bek/sources/src-02.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

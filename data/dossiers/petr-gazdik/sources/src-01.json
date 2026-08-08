@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/petr-gazdik/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/petr-gazdik"
+  },
+  "title": "SRC-01 — MŠMT: Ministři školství od roku 1848 (oficiální přehled)",
+  "description": "Oficiální resortní přehled ministrů školství: Gazdík 17. 12. 2021 – 29. 6. 2022.",
+  "outlet": "Ministerstvo školství, mládeže a tělovýchovy (msmt.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://msmt.gov.cz/ministerstvo/ministri-skolstvi-od-roku-1848",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-gazdik/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "petr-gazdik"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální přehled ministrů školství na webu MŠMT, otevřen a přečten 2026-08-08.\nUvádí funkční období Petra Gazdíka jako ministra školství, mládeže a tělovýchovy od 17. 12. 2021 do 29. 6. 2022.\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** — dokládá funkční období; okolnosti a zdůvodnění demise dokládá SRC-02."
+    }
+  ],
+  "order": 1
+}

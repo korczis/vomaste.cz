@@ -866,3 +866,7 @@
 {"logged_at":"2026-08-08","record_id":"frantisek-pavlik","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
 {"logged_at":"2026-08-08","record_id":"jan-lipavsky","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["jan-lipavsky"]},"action":"created"}
 {"logged_at":"2026-08-08","record_id":"zbynek-stanjura","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["zbynek-stanjura"]},"action":"created"}
+{"logged_at":"2026-08-08","record_id":"anna-hubackova","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["anna-hubackova"]},"action":"created"}
+{"logged_at":"2026-08-08","record_id":"mikulas-bek","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["mikulas-bek"]},"action":"created"}
+{"logged_at":"2026-08-08","record_id":"petr-gazdik","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["petr-gazdik"]},"action":"created"}
+{"logged_at":"2026-08-08","record_id":"vladimir-balas","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["vladimir-balas"]},"action":"created"}

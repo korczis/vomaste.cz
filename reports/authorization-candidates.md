@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 489 context entities across 46 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 488 context entities across 51 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -2364,17 +2364,6 @@ Generated from 489 context entities across 46 dossier(s). Regenerate with `npm r
   - edge-lukas-vaverka-art-of-performance (lukas-vaverka -> art-of-performance, "od roku 2007 pracoval v autodílně Art of Performance", dossier: igor-cerveny)
   - edge-lukas-vaverka-turek (lukas-vaverka -> turek, "bývalý poradce Turka v Evropském parlamentu, člen jeho Jaguar klubu, dříve zaměstnanec jeho autodílny Art of Performance", dossier: igor-cerveny)
   - edge-ministerstvo-zivotniho-prostredi-lukas-vaverka (ministerstvo-zivotniho-prostredi -> lukas-vaverka, "vedoucí nového oddělení klimatické politiky a Green Dealu (od 1. 4. 2026)", dossier: igor-cerveny)
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Lukáš Vlček (`lukas-vlcek`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: karel-havlicek, zuzana-mrazova
-- Claims: CLM-13, CLM-16
-- Sources: SRC-06, SRC-07, SRC-08, SRC-11 (6 independent source families)
-- Relations:
-  - edge-vlcek-havlicek (lukas-vlcek -> havlicek, "Vlček (STAN) označil Havlíčkův návrh stavebního zákona za „legislativní paskvil“", dossier: karel-havlicek)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Magda Kopczyńska (`magda-kopczynska`)
