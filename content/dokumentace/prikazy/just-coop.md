@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "just coop — Stav víceagentní spolupráce"
 template = "tooling-command.html"
-weight = 115
+weight = 116
 description = "Stav víceagentní spolupráce: Vypíše stav co-op: board úkolů, worktrees a poslední zprávy na sběrnici.. just recept, provoz."
 
 [extra]

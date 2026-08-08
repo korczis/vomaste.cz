@@ -193,6 +193,52 @@
   /* Never break an identifier/reference token across lines (CLM-01, SRC-08);
      the cell still wraps between tokens at the spaces. */
   .dossier-prose td a { white-space: nowrap; }
+
+  /* CLAIMS TABLE, PHONE WIDTH: two-column card layout instead of horizontal
+     scroll. On a phone the registr tvrzení reads better as ID + status in a
+     left rail, the claim text beside it, and the sources as a footer row of
+     each entry — no sideways scrolling at all (owner-requested layout).
+     Scoped to tables that actually ARE a claims registry, recognized by the
+     `<a id="clm-NN">` anchors their rows are required to carry (rule T1,
+     validate-registry-table.mjs) — other markdown tables keep the generic
+     scroll behavior above. The <tr> becomes a 2×3 grid; the <thead> is
+     hidden visually but kept for screen readers (the cells' meaning is
+     also carried by position and the badge). Where :has() is unsupported,
+     the table simply keeps the scrollable layout — nothing breaks. */
+  @media (max-width: 639px) {
+    .dossier-prose table:has(a[id^="clm-"]) { overflow: visible; }
+    .dossier-prose table:has(a[id^="clm-"]) thead {
+      position: absolute; width: 1px; height: 1px; overflow: hidden;
+      clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap;
+    }
+    .dossier-prose table:has(a[id^="clm-"]) tbody { display: block; }
+    .dossier-prose table:has(a[id^="clm-"]) tr {
+      display: grid;
+      grid-template-columns: minmax(6rem, max-content) 1fr;
+      grid-template-rows: auto 1fr auto;
+      column-gap: 1rem;
+      row-gap: 0.5rem;
+      align-items: start;
+      padding: 0.75rem 0.875rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .dossier-prose table:has(a[id^="clm-"]) tr:last-child { border-bottom: 0; }
+    .dossier-prose table:has(a[id^="clm-"]) td {
+      border: 0; padding: 0; min-width: 0;
+    }
+    /* ID top-left, status under it, claim text fills the right column. */
+    .dossier-prose table:has(a[id^="clm-"]) td:nth-child(1) { grid-column: 1; grid-row: 1; font-weight: 600; }
+    .dossier-prose table:has(a[id^="clm-"]) td:nth-child(3) { grid-column: 1; grid-row: 2; }
+    .dossier-prose table:has(a[id^="clm-"]) td:nth-child(2) { grid-column: 2; grid-row: 1 / span 2; }
+    /* Sources as the entry's footer row, full width, wrapping freely. */
+    .dossier-prose table:has(a[id^="clm-"]) td:nth-child(4) {
+      grid-column: 1 / -1; grid-row: 3;
+      display: flex; flex-wrap: wrap; gap: 0.25rem 0.75rem;
+      font-size: 0.8125rem;
+      border-top: 1px dashed var(--border-strong);
+      padding-top: 0.5rem;
+    }
+  }
   .dossier-prose em { color: rgba(255,255,255,0.5); }
 
   /* Gap priority is not a claim status (CORROBORATED/CITACE/SPORNÉ/NÁZOR) —

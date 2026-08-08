@@ -109,6 +109,12 @@ const BUILD_STEPS = [
   // Musí běžet po zola build — kontroluje vydané HTML, ne šablony.
   "verify:og",
   "verify:full-pages",
+  // Každá vydaná <table> musí být ve scroll kontextu (.dossier-prose nebo
+  // overflow-x-auto obal z macros/table.html) — jinak by se na mobilu
+  // hroutila místo scrollování. Doplněk lint:component-reuse na úrovni
+  // hotového HTML: markdown tabulky šablonou neprojdou, vidí je až
+  // post-build průchod nad public/.
+  "verify:table-responsive",
   "verify:export",
 ];
 

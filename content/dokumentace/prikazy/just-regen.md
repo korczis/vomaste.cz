@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "just regen — Regenerace content adaptérů"
 template = "tooling-command.html"
-weight = 120
+weight = 121
 description = "Regenerace content adaptérů: Zkratka na datový řetěz, který přegeneruje content adaptéry z kanonických dat.. just recept, provoz."
 
 [extra]

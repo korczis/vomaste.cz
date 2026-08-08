@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "just inbox — Zprávy pro tohoto agenta"
 template = "tooling-command.html"
-weight = 119
+weight = 120
 description = "Zprávy pro tohoto agenta: Vypíše zprávy adresované tomuhle agentovi na co-op sběrnici.. just recept, provoz."
 
 [extra]
