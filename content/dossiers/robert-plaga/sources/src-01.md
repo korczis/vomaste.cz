@@ -15,7 +15,7 @@ lang = "cs"
 src_id = "SRC-01"
 +++
 Oficiální stránka na webu Úřadu vlády, otevřena a přečtena 2026-07-30.
-Uvádí funkci **ministr školství, mládeže a tělovýchovy** a doložený přehled kariéry: narozen 21. 7. 1978 v Ivančicích; Ing. (2002) a Ph.D. (2010) MENDELU; náměstek pro vysoké školství, vědu a výzkum (2015–2017); ministr školství (2017–2021); předseda Národního akreditačního úřadu (2022–2025).
+Uvádí funkci **ministr školství, mládeže a tělovýchovy** a doložený přehled kariéry: narozen 1978 v Ivančicích; Ing. (2002) a Ph.D. (2010) MENDELU; náměstek pro vysoké školství, vědu a výzkum (2015–2017); ministr školství (2017–2021); předseda Národního akreditačního úřadu (2022–2025).
 
 Poznámka k typu zdroje a jeho limitům: **primární úřední záznam** —
 dokládá existenci a formulaci úředního údaje, ne nezávislé redakční

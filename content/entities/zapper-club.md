@@ -4,7 +4,7 @@ title = "Zapper-Club s.r.o."
 template = "entity.html"
 weight = 22
 aliases = ["/dossiers/macinka-turek/entities/zapper-club/"]
-description = "Kontextový záznam na vomaste.cz: Zapper-Club s.r.o. Vystupuje v dossieru Petr Macinka a Filip Turek a dalších. Uveden, protože ho jmenuje citovaný obsah, ne jako tvrzení o pochybení."
+description = "Zapper-Club s.r.o. — Kontextová entita — Společnost prodávající přístroje zapper; kauzu (varování Ministerstva zdravotnictví, odebraný certifikát SZPI) vede dossier, ne tato stránka."
 
 [extra]
 generated = true
@@ -13,3 +13,4 @@ view_model = "generated/views/entities/zapper-club.json"
 record_type = "entity"
 entity_id = "zapper-club"
 +++
+Kontextová entita — Společnost prodávající přístroje zapper; kauzu (varování Ministerstva zdravotnictví, odebraný certifikát SZPI) vede dossier, ne tato stránka. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (macinka-turek). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení.

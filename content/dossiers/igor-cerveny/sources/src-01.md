@@ -15,7 +15,7 @@ lang = "cs"
 src_id = "SRC-01"
 +++
 Oficiální stránka na webu Úřadu vlády, otevřena a přečtena 2026-07-30.
-Uvádí funkci **ministr životního prostředí** a doložený přehled: narozen 13. 7. 1984; informační studia a knihovnictví (Bc. 2020) a informační věda (Mgr. 2024) na FF UK; kariéra v akademické sféře a technologickém transferu (UK, ČVUT, VŠCHT); poslanec za Motoristé sobě.
+Uvádí funkci **ministr životního prostředí** a doložený přehled: narozen 1984; informační studia a knihovnictví (Bc. 2020) a informační věda (Mgr. 2024) na FF UK; kariéra v akademické sféře a technologickém transferu (UK, ČVUT, VŠCHT); poslanec za Motoristé sobě.
 
 Poznámka k typu zdroje a jeho limitům: **primární úřední záznam** —
 dokládá existenci a formulaci úředního údaje, ne nezávislé redakční

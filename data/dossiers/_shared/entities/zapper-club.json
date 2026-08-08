@@ -1,45 +1,51 @@
 {
-  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
-  "schemaVersion": 1,
-  "@context": "https://vomaste.cz/context/v1.jsonld",
-  "@id": "https://vomaste.cz/id/entities/zapper-club",
-  "@type": "vomaste:Entity",
-  "recordType": "entity",
-  "identifier": "zapper-club",
-  "entityId": "zapper-club",
-  "title": "Zapper-Club s.r.o.",
-  "entityType": "company",
-  "publicationRole": "context",
-  "dossierEnabled": false,
-  "dossierStatus": "not_authorized",
-  "coverageState": "contextual",
-  "dossiers": [
-    "macinka-turek",
-    "filip-turek"
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/zapper-club",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "zapper-club",
+ "entityId": "zapper-club",
+ "title": "Zapper-Club s.r.o.",
+ "entityType": "company",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "contextual",
+ "dossiers": [
+  "macinka-turek",
+  "filip-turek"
+ ],
+ "routeAliases": [
+  "/dossiers/macinka-turek/entities/zapper-club/"
+ ],
+ "order": 22,
+ "provenance": {
+  "discoveredAt": "2026-07-29",
+  "discoveredVia": [
+   "edge-turek-zapperclub",
+   "edge-zapperclub-mzdrav",
+   "edge-zapperclub-szpi"
   ],
-  "routeAliases": [
-    "/dossiers/macinka-turek/entities/zapper-club/"
+  "claimRefs": [
+   "CLM-20",
+   "CLM-31"
   ],
-  "order": 22,
-  "provenance": {
-    "discoveredAt": "2026-07-29",
-    "discoveredVia": [
-      "edge-turek-zapperclub",
-      "edge-zapperclub-mzdrav",
-      "edge-zapperclub-szpi"
-    ],
-    "claimRefs": [
-      "CLM-20",
-      "CLM-31"
-    ],
-    "sourceRefs": [
-      "SRC-23",
-      "SRC-34"
-    ],
-    "cluster": "zapper-club",
-    "depth": 1
-  },
-  "externalIds": {
-    "ico": "05411394"
+  "sourceRefs": [
+   "SRC-23",
+   "SRC-34"
+  ],
+  "cluster": "zapper-club",
+  "depth": 1
+ },
+ "externalIds": {
+  "ico": "05411394"
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Společnost prodávající přístroje zapper; kauzu (varování Ministerstva zdravotnictví, odebraný certifikát SZPI) vede dossier, ne tato stránka. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (macinka-turek). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
   }
+ ]
 }

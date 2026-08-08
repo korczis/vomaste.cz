@@ -1,37 +1,43 @@
 {
-  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
-  "schemaVersion": 1,
-  "@context": "https://vomaste.cz/context/v1.jsonld",
-  "@id": "https://vomaste.cz/id/entities/ep",
-  "@type": "vomaste:Entity",
-  "recordType": "entity",
-  "identifier": "ep",
-  "entityId": "ep",
-  "title": "Evropský parlament",
-  "entityType": "public_institution",
-  "publicationRole": "context",
-  "dossierEnabled": false,
-  "dossierStatus": "not_authorized",
-  "coverageState": "discovered",
-  "dossiers": [
-    "macinka-turek",
-    "filip-turek"
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/ep",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "ep",
+ "entityId": "ep",
+ "title": "Evropský parlament",
+ "entityType": "public_institution",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "macinka-turek",
+  "filip-turek"
+ ],
+ "routeAliases": [
+  "/dossiers/macinka-turek/entities/ep/"
+ ],
+ "order": 5,
+ "provenance": {
+  "discoveredAt": "2026-07-29",
+  "discoveredVia": [
+   "edge-turek-ep"
   ],
-  "routeAliases": [
-    "/dossiers/macinka-turek/entities/ep/"
+  "claimRefs": [
+   "CLM-01"
   ],
-  "order": 5,
-  "provenance": {
-    "discoveredAt": "2026-07-29",
-    "discoveredVia": [
-      "edge-turek-ep"
-    ],
-    "claimRefs": [
-      "CLM-01"
-    ],
-    "sourceRefs": [
-      "SRC-11"
-    ],
-    "depth": 1
+  "sourceRefs": [
+   "SRC-11"
+  ],
+  "depth": 1
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Evropský parlament; zmíněn jako instituce, jejímž poslancem byl Filip Turek. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (macinka-turek). Tato stránka neobsahuje samostatný profil mimo tento kontext."
   }
+ ]
 }
