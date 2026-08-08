@@ -1,0 +1,43 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "04449461",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/04449461",
+  "nazev": "HYDROPROGRESS, s.r.o.",
+  "sidlo": "Sevastopolská 338/6, Starý Lískovec, 62500 Brno",
+  "spisovaZnacka": {
+    "soud": "KSBR",
+    "oddil": "C",
+    "vlozka": "89961"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "jednatel",
+      "since": "2022-05-19",
+      "kind": "person",
+      "name": "Ing. Marek Viskot"
+    },
+    {
+      "role": "jednatel",
+      "since": "2015-10-01",
+      "kind": "person",
+      "name": "Martin Pavlík"
+    }
+  ],
+  "spolecnici": [
+    {
+      "kind": "person",
+      "name": "Ing. Marek Viskot",
+      "podil": "20;00",
+      "vklad": "100000;00",
+      "splaceno": "100;00"
+    },
+    {
+      "kind": "person",
+      "name": "Martin Pavlík",
+      "podil": "80;00",
+      "vklad": "400000;00",
+      "splaceno": "100;00"
+    }
+  ]
+}

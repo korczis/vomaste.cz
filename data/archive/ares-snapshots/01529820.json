@@ -1,0 +1,56 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "01529820",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/01529820",
+  "nazev": "MEDIA PROJECT CZ s.r.o.",
+  "sidlo": "Sevastopolská 338/6, Starý Lískovec, 62500 Brno",
+  "spisovaZnacka": {
+    "soud": "KSBR",
+    "oddil": "C",
+    "vlozka": "78480"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "jednatel",
+      "since": "2023-07-11",
+      "kind": "person",
+      "name": "Michal Maixner"
+    },
+    {
+      "role": "jednatel",
+      "since": "2016-08-09",
+      "kind": "person",
+      "name": "Martin Pavlík"
+    },
+    {
+      "role": "jednatel",
+      "since": "2013-05-01",
+      "kind": "person",
+      "name": "Bronislav Houdek"
+    }
+  ],
+  "spolecnici": [
+    {
+      "kind": "person",
+      "name": "Michal Maixner",
+      "podil": "10;00",
+      "vklad": "20000;00",
+      "splaceno": "100;00"
+    },
+    {
+      "kind": "person",
+      "name": "Martin Pavlík",
+      "podil": "50;00",
+      "vklad": "100000;00",
+      "splaceno": "100;00"
+    },
+    {
+      "kind": "person",
+      "name": "Bronislav Houdek",
+      "podil": "40;00",
+      "vklad": "80000;00",
+      "splaceno": "100;00"
+    }
+  ]
+}

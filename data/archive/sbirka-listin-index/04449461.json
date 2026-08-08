@@ -1,0 +1,56 @@
+{
+  "schemaNote": "Preservation index — which Sbírka listin documents exist for this IČO and when we last confirmed it. Document CONTENT is archived locally, outside this repository, pending human review (see docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4, 'Doplnění 2026-08-08').",
+  "ico": "04449461",
+  "subjektId": "910655",
+  "retrievedAt": "2026-08-08",
+  "documents": [
+    {
+      "referenceLabel": "C 89961/SL11/KSBR",
+      "documentType": "účetní závěrka [2025]",
+      "downloaded": true,
+      "sha256": "8ca8c74880fe589e7c51a06ce5cf9ed6fc96a21f3c54cc132e3ff3f7fe830dc2"
+    },
+    {
+      "referenceLabel": "C 89961/SL10/KSBR",
+      "documentType": "účetní závěrka [2024]",
+      "downloaded": true,
+      "sha256": "73ad132c3df1b9a154413f537e0cf91a30e823e1a92a0a126b19be05599c9420"
+    },
+    {
+      "referenceLabel": "C 89961/SL8/KSBR",
+      "documentType": "účetní závěrka [2023]",
+      "downloaded": true,
+      "sha256": "7c7695c72b27b8d5a94eb2d53412e18baf81efbe32c91694fe99aa43a0ec053b"
+    },
+    {
+      "referenceLabel": "C 89961/SL6/KSBR",
+      "documentType": "účetní závěrka [2022]",
+      "downloaded": true,
+      "sha256": "4e7d226c237de3caceb44331bbf78d67440ed8f193c3fdf95df03340fc66f17c"
+    },
+    {
+      "referenceLabel": "C 89961/SL5/KSBR",
+      "documentType": "účetní závěrka [2021]",
+      "downloaded": true,
+      "sha256": "e4814265182fdff9e1e83101abcd5887e04b1077b30605c24c05f198060d65e7"
+    },
+    {
+      "referenceLabel": "C 89961/SL3/KSBR",
+      "documentType": "notářský zápis [NZ 647/2022, N 535/2022]",
+      "downloaded": true,
+      "sha256": "02579591761bac30f6253ae0dfc12c6206f76b936849a8bcf1728b9fc2741a7f"
+    },
+    {
+      "referenceLabel": "C 89961/SL2/KSBR",
+      "documentType": "notářský zápis [NZ 1005/2019, N 793/2019]",
+      "downloaded": true,
+      "sha256": "5a8a6f5f321b784b47b6441f37f544ba81e58b727d71050727251ff4e9c7eb8b"
+    },
+    {
+      "referenceLabel": "C 89961/SL1/KSBR",
+      "documentType": "notářský zápis [NZ 782/2015, N 874/2015]",
+      "downloaded": true,
+      "sha256": "9995730e6196022767653ebdcb3cc2afe2e26990f0e541377dca4a927e46ad2e"
+    }
+  ]
+}

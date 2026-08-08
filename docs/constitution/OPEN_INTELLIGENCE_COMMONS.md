@@ -84,6 +84,37 @@ ho vyšetřující považuje za podezřelý.
   custody, publikačního přezkumu, bezpečného mazání a incident
   response.
 
+**Doplnění, 2026-08-08 (na pokyn vlastníka webu, on the record): zdroj
+záznamu a bezpečnost jeho obsahu jsou dvě různé osy, ne jedna.** Že
+dokument pochází z veřejné státní instituce (ARES, veřejný rejstřík,
+soud) neznamená automaticky, že jeho obsah je publikačně bezpečný —
+veřejná dostupnost registru chrání právo dohledat zápis, ne právo
+kohokoli přetisknout cokoli, co registr obsahuje. Rozlišení:
+
+- **Strukturovaná registrová data** (např. ARES JSON výpis: zapsané
+  funkce, obchodní podíly, IČO, sídlo firmy) smí vstupovat do zóny A
+  automaticky, bez per-záznamové autorizace — je to týž typ dat, jaký
+  `scripts/osint/expand-entity.mjs` už dnes používá pro kontextové
+  entity, a nástroje v repozitáři už osobní údaje (rodné číslo, adresu
+  bydliště fyzické osoby) z něj strojově odstraňují
+  (`stripPersonalData()`), ne konvencí.
+- **Naskenované listiny a jiné nestrukturované dokumenty** (Sbírka
+  listin, notářské zápisy, soudní vývěsky a podobně) **nikdy
+  nevstupují do zóny A automaticky**, bez ohledu na to, že zdrojová
+  instituce je veřejná. Běžně jmenují třetí osoby (spoluspolečníky,
+  notáře, svědky) a nesou přesně ty osobní údaje, které bod 7 (test
+  veřejného zájmu) a AGENTS.md (datová minimalizace) zakazují
+  publikovat bez prokázaného veřejného zájmu u té konkrétní osoby.
+  Zjištěno v praxi 2026-08-06/07 na dossieru martin-pavlik: notářský
+  zápis z veřejného rejstříku, datovaný přesně na den zápisu
+  autorizovaného podílu, zaznamenal především vstup jiné, jmenované
+  fyzické osoby jako nového společníka — přesně to je záznam, který by
+  automatické „zdroj je stát, tedy bezpečné" pravidlo nechalo projít.
+  Takové dokumenty se smí stahovat a uchovávat (viz zóna B níže), ale
+  do veřejného Git repozitáře vstupují jen jako publikačně bezpečný
+  derivát po lidském přezkumu — stejné pravidlo, jaké tahle sekce už
+  žádá pro podněty od zdrojů.
+
 Koncepční intake pipeline: podnět → izolovaná karanténa → kontrola
 malwaru a typů souborů → analýza metadat → posouzení rizika pro zdroj →
 redakční pracoviště → záznam chain of custody → důkazní přezkum →
