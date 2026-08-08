@@ -15,3 +15,5 @@ lang = "cs"
 src_id = "SRC-23"
 +++
 Primární soudní dokument, nikoli rejstříkový agregátor. Obě obrazové strany byly při revizi 7. srpna 2026 renderovány a vizuálně přečteny. Zdroj dokládá konkrétní důvody rozhodnutí i jeho omezení: výrok míří na společnost a sám nestanoví osobní vinu jednatele.
+
+**Dokument ke stažení:** [Usnesení Městského soudu v Praze č. j. 85 Cm 1204/2023-7 (PDF, 2 strany)](/documents/james-quick/mestsky-soud-85-cm-1204-2023-7.pdf). SHA-256: `440dc5a21185f5f99a78eaaeb88c57f2defb6556bc5eb5b9b9615d2b158ec6cd`.
