@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/petr-krcal/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/petr-krcal"
+  },
+  "title": "SRC-01 — Vláda ČR (oficiální profil člena vlády)",
+  "description": "Oficiální vládní profil: ministr práce a sociálních věcí 27. 6. – 18. 7. 2018, dříve radní Kraje Vysočina.",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vlada.gov.cz/cz/clenove-vlady/petr-krcal--167022/",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-krcal/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "petr-krcal"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil člena vlády na webu Vlády ČR, otevřen a přečten 2026-08-08.\nUvádí funkci ministra práce a sociálních věcí od 27. 6. do 18. 7. 2018, dřívější členství v Radě Kraje Vysočina (2008–2016) a funkci náměstka pro lidská práva, rovné příležitosti a legislativu na Úřadu vlády (2017).\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** — dokládá výkon funkce a její data, důvod konce neuvádí; okolnosti rezignace dokládá SRC-02."
+    }
+  ],
+  "order": 1
+}

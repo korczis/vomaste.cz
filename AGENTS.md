@@ -2479,3 +2479,117 @@ záznam dřívějších veřejných funkcí, doložený přímo otevřenými zdr
 je zmíněno pouze jako citovaným zdrojem uvedený fakt s kritikou
 připsanou kritikům, nikoli jako vlastní hodnocení webu. Hlubší rešerše
 vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Taťána Malá
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Taťána Malá je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministryně spravedlnosti (27. 6. – 10. 7. 2018, druhá vláda
+Andreje Babiše, ANO), poslankyně od října 2017, dříve místopředsedkyně
+hejtmana Jihomoravského kraje. Po 13 dnech ve funkci rezignovala
+v souvislosti s mediálně popsaným podezřením z plagiátorství jejích
+diplomových prací; sama uvedla, že se ničeho nedopustila, a její
+vyjádření se cituje jejími slovy (Blesk 2018-07-09). Autorizace
+navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt vládní
+představitele posledních tří volebních období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce a okolností rezignace tak, jak je popsaly
+citované zdroje. **Povinné rámování při každé zmínce:** jde o mediálně
+popsané podezření, nikoli o soudní či akademický verdikt doložený
+citovaným zdrojem; její popření se uvádí vždy. Rozšíření rozsahu
+vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Jan Kněžínek
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jan Kněžínek je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr spravedlnosti (10. 7. 2018 – 30. 4. 2019, druhá vláda
+Andreje Babiše, nestraník), dlouholetý legislativec Úřadu vlády
+(2007–2018, náměstek pro řízení sekce Legislativní rady vlády). Demisi
+podal v dubnu 2019 bez bližšího zdůvodnění; opoziční spekulace
+o souvislosti s vývojem kauzy Čapí hnízdo jsou v citovaném zdroji
+připsány opozici a nic víc z nich neplyne (ČT24 2019-04-18). Nahradila
+ho Marie Benešová. Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt vládní představitele posledních tří volebních
+období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce a okolností demise tak, jak je popsaly
+citované zdroje — demise je jeho rozhodnutí, spekulace zůstávají
+připsané těm, kdo je vyslovili. Rozšíření rozsahu vyžaduje samostatnou
+budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Petr Krčál
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Petr Krčál je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr práce a sociálních věcí (27. 6. – 18. 7. 2018, druhá
+vláda Andreje Babiše, ČSSD), dříve radní Kraje Vysočina a náměstek na
+Úřadu vlády. Po zhruba třech týdnech rezignoval v souvislosti se
+zjištěními Seznam Zpráv o shodách v jeho bakalářské práci; jeho vlastní
+vyjádření (připustil možné nedostatky, zmínil i zdravotní důvody) se
+cituje jeho slovy (Hospodářské noviny 2018-07-17). Nahradila ho Jana
+Maláčová. Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele posledních tří volebních období,
+po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce a okolností rezignace tak, jak je popsaly
+citované zdroje. **Povinné rámování:** jde o mediálně popsaná zjištění
+a jeho rezignaci, nikoli o soudní či akademický verdikt doložený
+citovaným zdrojem. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Petr Arenberger
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Petr Arenberger je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr zdravotnictví (7. 4. – 25. 5. 2021, druhá vláda
+Andreje Babiše), ředitel FN Královské Vinohrady a přednosta
+dermatovenerologické kliniky 3. LF UK. Rezignoval poté, co Seznam
+Zprávy popsaly nesrovnalosti v jeho majetkových přiznáních (nepřiznané
+nemovitosti, příjmy z klinických studií); sám uvedl, že přiznání
+vyplnil nesprávně, ale daně platí poctivě, a dění označil za „mediální
+lynč" — obojí se cituje jeho slovy (Seznam Zprávy 2021-05-25).
+Nahradil ho Adam Vojtěch. Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele posledních tří
+volebních období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce a okolností rezignace tak, jak je popsaly
+citované zdroje. **Povinné rámování při každé zmínce:** popsané
+nesrovnalosti jsou zjištění citované redakce a jeho přiznaná chyba ve
+vyplnění, nikoli soudní či správní verdikt; jeho obhajoba se uvádí
+vždy. Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Antonín Staněk
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Antonín Staněk je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr kultury (27. 6. 2018 – 31. 7. 2019, druhá vláda
+Andreje Babiše, ČSSD), dříve primátor Olomouce (od 2014) a poslanec
+(od 2017). Jeho odvolání předcházel spor o odvolání ředitele Národní
+galerie Praha Jiřího Fajta a ředitele Muzea umění Olomouc, kritika
+odborné veřejnosti a žádost ČSSD o jeho konec; prezident Zeman jeho
+květnovou rezignaci nejprve nepřijal a odvolal ho k 31. 7. 2019
+(Aktuálně.cz 2019-07-29). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele posledních tří
+volebních období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce a okolností odvolání tak, jak je popsaly
+citované zdroje — kritika je připsána kritikům, prezidentova
+protichůdná interpretace (poděkování za „odhalení zneužívání veřejných
+prostředků") jemu, a web žádnou stranu nepřijímá za svou. Rozšíření
+rozsahu vyžaduje samostatnou budoucí autorizaci.

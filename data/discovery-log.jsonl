@@ -883,3 +883,7 @@
 {"logged_at":"2026-08-08","record_id":"jan-blatny","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["jan-blatny"]},"action":"created"}
 {"logged_at":"2026-08-08","record_id":"miroslav-toman","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["miroslav-toman"]},"action":"created"}
 {"logged_at":"2026-08-08","record_id":"tomas-petricek","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["tomas-petricek"]},"action":"created"}
+{"logged_at":"2026-08-08","record_id":"jan-knezinek","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["jan-knezinek"]},"action":"created"}
+{"logged_at":"2026-08-08","record_id":"petr-arenberger","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["petr-arenberger"]},"action":"created"}
+{"logged_at":"2026-08-08","record_id":"petr-krcal","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["petr-krcal"]},"action":"created"}
+{"logged_at":"2026-08-08","record_id":"tatana-mala","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["tatana-mala"]},"action":"created"}

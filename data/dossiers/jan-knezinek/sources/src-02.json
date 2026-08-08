@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jan-knezinek/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jan-knezinek"
+  },
+  "title": "SRC-02 — ČT24: Ministr spravedlnosti Kněžínek podal demisi",
+  "description": "ČT24 o demisi Kněžínka (duben 2019, účinnost 30. 4.) a nástupu Marie Benešové.",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "zpravodajský článek",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/ministr-spravedlnosti-knezinek-podal-demisi-nahradi-jej-marie-benesova-66734",
+  "retrieved": "2026-08-08",
+  "published": "2019-04-18",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jan-knezinek/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "jan-knezinek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpravodajský článek ČT24 z 18. 4. 2019, otevřen a přečten 2026-08-08.\nUvádí, že Jan Kněžínek podal demisi s účinností k 30. 4. 2019, rozhodnutí oznámil premiérovi 15. 4. a formálně podal 16. 4.; bližší důvody neuvedl („Rozhodl jsem se podat demisi… kterou jsem oznámil ústně premiérovi“) a plánoval návrat na pozici legislativce Úřadu vlády. Nahradila ho Marie Benešová. Hlasy opozice o souvislosti s posunem v kauze Čapí hnízdo článek uvádí jako jejich tvrzení, přímá souvislost v reportáži potvrzena není.\n\nPoznámka k typu zdroje a jeho limitům: nezávislé redakční zpravodajství veřejnoprávní televize — dokládá demisi a její okolnosti; spekulace zůstávají připsané těm, kdo je vyslovili."
+    }
+  ],
+  "order": 2
+}

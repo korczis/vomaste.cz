@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 486 context entities across 66 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 485 context entities across 71 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -266,16 +266,6 @@ Generated from 486 context entities across 66 dossier(s). Regenerate with `npm r
 - Appears in: adam-vojtech, andrej-babis, jaromir-zuna, jaroslav-faltynek, jeronym-tejc, karel-havlicek, macinka-turek, robert-plaga, tomio-okamura, tunde-bartha, zuzana-mrazova
 - Claims: CLM-01, CLM-02, CLM-03, CLM-17, CLM-19, CLM-26, CLM-29, CLM-35, CLM-38, CLM-41, CLM-85
 - Sources: SRC-01, SRC-02, SRC-03, SRC-04, SRC-06, SRC-11, SRC-13, SRC-14, SRC-17, SRC-18, SRC-19, SRC-20, SRC-25, SRC-27, SRC-28, SRC-61 (29 independent source families)
-- Relations: none
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Antonín Staněk (`antonin-stanek`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: macinka-turek
-- Claims: CLM-02
-- Sources: SRC-11, SRC-13 (2 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 

@@ -197,18 +197,18 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 788 záznamů v 129 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 798 záznamů v 129 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
 | ctk | 294 | 24 | [ano](/zdroje/ctk/) |
-| Vláda České republiky (vlada.gov.cz) | 53 | 42 | [ano](/zdroje/vlada-cz/) |
+| Vláda České republiky (vlada.gov.cz) | 58 | 47 | [ano](/zdroje/vlada-cz/) |
 | Poslanecká sněmovna Parlamentu ČR | 51 | 32 | [ano](/zdroje/psp-cz/) |
 | seznam-zpravy | 38 | 13 | [ano](/zdroje/seznam-zpravy/) |
-| ČT24 (Česká televize) | 24 | 16 | [ano](/zdroje/ceska-televize/) |
+| ČT24 (Česká televize) | 25 | 17 | [ano](/zdroje/ceska-televize/) |
 | FORUM 24 | 20 | 10 | [ano](/zdroje/forum24/) |
 | denik-n | 17 | 9 | [ano](/zdroje/denik-n/) |
-| Aktuálně.cz | 16 | 11 | [ano](/zdroje/aktualne-cz/) |
+| Aktuálně.cz | 17 | 12 | [ano](/zdroje/aktualne-cz/) |
 | Echo24 | 16 | 12 | [ano](/zdroje/echo24/) |
 | Novinky.cz | 13 | 12 | [ano](/zdroje/novinky-cz/) |
 | denik-cz | 11 | 6 | [ano](/zdroje/denik-cz/) |
@@ -216,10 +216,10 @@ Dopočítáno z `data/dossiers/**/sources/**`, 788 záznamů v 129 rodinách/out
 | Ekonomický deník | 9 | 5 | [ano](/zdroje/ekonomicky-denik/) |
 | irozhlas | 8 | 6 | [ano](/zdroje/irozhlas/) |
 | hlidac-statu | 7 | 2 | [ano](/zdroje/hlidac-statu/) |
-| Blesk.cz | 6 | 4 | [ano](/zdroje/blesk-cz/) |
+| Blesk.cz | 7 | 5 | [ano](/zdroje/blesk-cz/) |
+| Hospodářské noviny | 6 | 5 | — |
 | udhpsh | 6 | 1 | [ano](/zdroje/udhpsh/) |
 | e15.cz | 5 | 3 | — |
-| Hospodářské noviny | 5 | 4 | — |
 | Respekt | 5 | 4 | — |
 | Zdravé zprávy | 5 | 2 | — |
 | HlídacíPes.org | 4 | 4 | — |
@@ -236,6 +236,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 788 záznamů v 129 rodinách/out
 | Národní rozpočtová rada | 3 | 1 | — |
 | Nejvyšší kontrolní úřad (nku.cz) | 3 | 2 | — |
 | ODS (Občanská demokratická strana) | 3 | 3 | — |
+| Seznam Zprávy | 3 | 3 | [ano](/zdroje/seznam-zpravy/) |
 | Tiscali.cz | 3 | 3 | — |
 | Transparency International ČR | 3 | 2 | — |
 | Úřad pro ochranu osobních údajů | 3 | 1 | — |
@@ -257,7 +258,6 @@ Dopočítáno z `data/dossiers/**/sources/**`, 788 záznamů v 129 rodinách/out
 | Pražský deník | 2 | 1 | — |
 | Registr lobbování (RELOB) | 2 | 1 | — |
 | Senát Parlamentu České republiky | 2 | 2 | — |
-| Seznam Zprávy | 2 | 2 | [ano](/zdroje/seznam-zpravy/) |
 | Ústavní soud ČR | 2 | 2 | — |
 | Vrchní státní zastupitelství v Olomouci | 2 | 1 | — |
 | ct24 | 1 | 1 | [ano](/zdroje/ceska-televize/) |
@@ -335,8 +335,8 @@ Dopočítáno z `data/dossiers/**/sources/**`, 788 záznamů v 129 rodinách/out
 
 Tyhle zdroje dataset používá aspoň pětkrát, ale katalog k nim nemá záznam s mezemi a pastmi:
 
+- Hospodářské noviny (6×)
 - e15.cz (5×)
-- Hospodářské noviny (5×)
 - Respekt (5×)
 - Zdravé zprávy (5×)
 
