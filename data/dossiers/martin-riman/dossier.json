@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-riman",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "martin-riman",
+  "slug": "martin-riman",
+  "title": "Martin Říman",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Martin Říman.",
+  "dossierType": "entity",
+  "canonicalDossier": "martin-riman",
+  "subject": "martin-riman",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-MARTIN-RIMAN"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "martin-riman",
+        "label": "Martin Říman",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nMartin Říman je bývalý ministr průmyslu a obchodu (2007–2009, druhá vláda Mirka Topolánka). Jako politicky exponovaná osoba\nv souvislosti s výkonem dřívější veřejné funkce spadá do standing scope\nautorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro\ntento dossier je `AUTH-2026-08-08-MARTIN-RIMAN`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívější vládní funkce doložený oficiálním přehledem členů\ndruhé vlády Mirka Topolánka na webu Vlády ČR. Tvrzení nese stav 1 ZDROJ;\npovýšení na CORROBORATED i doplnění okolností konce v úřadu či dalších\nfunkcí vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje\nsamostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/martin-riman/claims/clm-01.md) | Martin Říman byl podle oficiálního přehledu členů druhé vlády Mirka Topolánka na webu Vlády ČR ministrem průmyslu a obchodu od 9. 1. 2007 do 26. 3. 2009 a poté do 8. 5. 2009 vykonával funkci v demisi | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-01](@/dossiers/martin-riman/sources/src-01.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

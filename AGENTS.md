@@ -3965,3 +3965,88 @@ na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
 doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
 dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
 autorizaci.
+
+### Scope extension, 2026-08-08: Jiří Čunek
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jiří Čunek je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+1. místopředseda vlády a ministr pro místní rozvoj (9. 1. 2007 – 13. 11. 2007 a znovu 2. 4. 2008 – 23. 1. 2009; přehled u obou období uvádí demisi) (druhá vláda Mirka Topolánka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Vlasta Parkanová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Vlasta Parkanová je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministryně obrany (9. 1. 2007 – 8. 5. 2009, od 26. 3. 2009 v demisi; od 23. 1. 2009 zároveň místopředsedkyně vlády) (druhá vláda Mirka Topolánka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Martin Říman
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Martin Říman je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr průmyslu a obchodu (9. 1. 2007 – 8. 5. 2009, od 26. 3. 2009 v demisi) (druhá vláda Mirka Topolánka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Tomáš Julínek
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Tomáš Julínek je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr zdravotnictví (9. 1. 2007 – 23. 1. 2009; přehled u konce působení uvádí odvolání — odvolání je politický krok, nikoli závěr o pochybení) (druhá vláda Mirka Topolánka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Daniela Filipiová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Daniela Filipiová je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministryně zdravotnictví (23. 1. 2009 – 8. 5. 2009, od 26. 3. 2009 v demisi) (druhá vláda Mirka Topolánka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
