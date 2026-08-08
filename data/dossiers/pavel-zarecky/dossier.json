@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/pavel-zarecky",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "pavel-zarecky",
+  "slug": "pavel-zarecky",
+  "title": "Pavel Zářecký",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Pavel Zářecký.",
+  "dossierType": "entity",
+  "canonicalDossier": "pavel-zarecky",
+  "subject": "pavel-zarecky",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-PAVEL-ZARECKY"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "pavel-zarecky",
+        "label": "Pavel Zářecký",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nPavel Zářecký je bývalý ministr a předseda Legislativní rady vlády (2009–2010, Fischerova vláda). Jako politicky exponovaná osoba\nv souvislosti s výkonem dřívější veřejné funkce spadá do standing scope\nautorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro\ntento dossier je `AUTH-2026-08-08-PAVEL-ZARECKY`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívější vládní funkce doložený oficiálním přehledem členů vlády\nna webu Vlády ČR. Tvrzení nese stav 1 ZDROJ; povýšení na\nCORROBORATED i doplnění okolností konce v úřadu či dalších funkcí\nvyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje\nsamostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/pavel-zarecky/claims/clm-01.md) | Pavel Zářecký byl podle oficiálního přehledu členů vlády Jana Fischera na webu Vlády ČR ministrem a předsedou Legislativní rady vlády od 30. 11. 2009 do 25. 6. 2010 a poté do 13. 7. 2010 vykonával funkci v demisi | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-01](@/dossiers/pavel-zarecky/sources/src-01.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}
