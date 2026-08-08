@@ -5,7 +5,7 @@ system. This is provenance, not a publication decision — see
 `data/authorizations.toml` and `scripts/dossier/authorize-entity.mjs`
 for the only thing that actually authorizes a dossier.
 
-1012 record(s) logged across 10 day(s). 0 new since last run.
+1017 record(s) logged across 10 day(s). 5 new since last run.
 
 ## 2026-07-29
 
@@ -1048,3 +1048,8 @@ for the only thing that actually authorizes a dossier.
 - `milada-emmerova` (entity, created)
 - `radko-martinek` (entity, created)
 - `vitezslav-jandak` (entity, created)
+- `jaroslav-bures` (entity, created)
+- `pavel-rychetsky` (entity, created)
+- `petr-mares` (entity, created)
+- `vladimir-mlynar` (entity, created)
+- `vladimir-spidla` (entity, created)
