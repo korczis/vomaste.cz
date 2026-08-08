@@ -197,15 +197,15 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 813 záznamů v 129 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 815 záznamů v 129 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
 | ctk | 294 | 24 | [ano](/zdroje/ctk/) |
-| Vláda České republiky (vlada.gov.cz) | 68 | 57 | [ano](/zdroje/vlada-cz/) |
+| Vláda České republiky (vlada.gov.cz) | 69 | 58 | [ano](/zdroje/vlada-cz/) |
 | Poslanecká sněmovna Parlamentu ČR | 51 | 32 | [ano](/zdroje/psp-cz/) |
 | seznam-zpravy | 38 | 13 | [ano](/zdroje/seznam-zpravy/) |
-| ČT24 (Česká televize) | 26 | 18 | [ano](/zdroje/ceska-televize/) |
+| ČT24 (Česká televize) | 27 | 19 | [ano](/zdroje/ceska-televize/) |
 | FORUM 24 | 20 | 10 | [ano](/zdroje/forum24/) |
 | Aktuálně.cz | 18 | 13 | [ano](/zdroje/aktualne-cz/) |
 | denik-n | 17 | 9 | [ano](/zdroje/denik-n/) |

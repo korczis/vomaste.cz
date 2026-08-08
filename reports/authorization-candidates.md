@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 485 context entities across 81 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 484 context entities across 82 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -3500,17 +3500,6 @@ Generated from 485 context entities across 81 dossier(s). Regenerate with `npm r
 - Sources: SRC-11 (1 independent source family)
 - Relations:
   - edge-bednarik-patrick-schneider (bednarik -> patrick-schneider, "jednal s německým spolkovým ministrem dopravy o Krušnohorském tunelu (2026)", dossier: ivan-bednarik)
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Pavel Blažek (`pavel-blazek`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: jeronym-tejc
-- Claims: CLM-07, CLM-19, CLM-24, CLM-29
-- Sources: SRC-02, SRC-03, SRC-04, SRC-11, SRC-12, SRC-13, SRC-14, SRC-15 (3 independent source families)
-- Relations:
-  - edge-blazek-tejc (pavel-blazek -> tejc, "Blažek se v bitcoinové kauze, kterou otevřelo Tejcovo trestní oznámení, cítí nevinný", dossier: jeronym-tejc)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Mgr. Pavel Hanus (`pavel-hanus`)
