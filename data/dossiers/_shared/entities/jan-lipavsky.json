@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/jan-lipavsky",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "jan-lipavsky",
+  "entityId": "jan-lipavsky",
+  "title": "Jan Lipavský",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "referenced",
+  "dossiers": [
+    "jan-lipavsky"
+  ],
+  "order": 531,
+  "description": "Jan Lipavský — poslanec PSP ČR, bývalý ministr zahraničních věcí ČR (2021–2025).",
+  "provenance": {
+    "discoveredAt": "2026-08-08",
+    "discoveredVia": [
+      "government-roster-research-2026-08-08"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Poslanec Poslanecké sněmovny PČR (mandát od 4. 10. 2025, zvolen na\nkandidátce SPOLU za ODS), bývalý ministr zahraničních věcí ČR\n(2021–2025, nominován za Piráty, od podzimu 2024 nestraník).\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
+    }
+  ]
+}

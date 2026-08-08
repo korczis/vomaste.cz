@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/vit-rakusan/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/vit-rakusan"
+  },
+  "text": "Vít Rakušan je podle profilu na webu Poslanecké sněmovny PČR poslancem zvoleným za hnutí STAN (mandát od 4. 10. 2025, Středočeský kraj), členem poslaneckého klubu STAN od 10. 10. 2025 a jeho místopředsedou od 26. 6. 2026; předsedou hnutí STAN je od roku 2019 a na celostátním sněmu v květnu 2025 funkci podle ČT24 obhájil se ziskem 282 z 286 hlasů",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/vit-rakusan/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/vit-rakusan/sources/SRC-02"
+    }
+  ],
+  "subjects": [
+    "vit-rakusan"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/vit-rakusan/_index.md)."
+    }
+  ]
+}

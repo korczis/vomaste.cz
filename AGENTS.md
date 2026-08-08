@@ -1826,3 +1826,114 @@ samostatnou budoucí autorizaci.
 Authorized by the site owner, explicitly and on the record, 2026-08-06:
 
 Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Martin Červíček je veřejný funkcionář — senátor Parlamentu ČR za ODS (obvod č. 47 – Náchod, mandát 28. 9. 2024 – 28. 9. 2030), od ledna 2026 místopředseda ODS (zvolen na 32. kongresu ODS 18. 1. 2026) a od března 2026 stínový ministr vnitra ve stínové vládě ODS vedené Martinem Kupkou. Rozsah tohoto dossieru je záměrně minimální: pouze základní, aktuálně ověřený politický profil (senátorský mandát, funkce místopředsedy ODS a role stínového ministra vnitra), doložený přímo otevřenými zdroji (senat.cz, ČT24, Novinky.cz). Nejde o investigativní rešerši žádné kauzy ani jiného tématu z jeho dřívějšího policejního nebo krajského působení — to by vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Vít Rakušan
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Vít Rakušan je veřejný
+funkcionář — poslanec Poslanecké sněmovny PČR zvolený za hnutí STAN
+(mandát od 4. 10. 2025, Středočeský kraj), místopředseda poslaneckého
+klubu STAN (od 26. 6. 2026), předseda hnutí STAN (od dubna 2019,
+naposledy znovuzvolen na celostátním sněmu 16. 5. 2025 — 282 z 286
+hlasů), bývalý 1. místopředseda vlády a ministr vnitra ČR (2021–2025).
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci
+pokrýt vládní představitele posledních tří volebních období, jednoho po
+druhém.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní, aktuálně
+ověřený politický profil (poslanecký mandát, funkce v poslaneckém klubu
+STAN, předsednictví hnutí STAN), doložený přímo otevřenými zdroji
+(oficiální profil na psp.cz, ČT24). Nejde o investigativní rešerši
+žádné kauzy — hlubší témata (například politická odpovědnost v kauze
+Dozimetr, kde sám obviněn není) vyžadují samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Marian Jurečka
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Marian Jurečka je veřejný
+funkcionář — poslanec Poslanecké sněmovny PČR zvolený na kandidátce SPOLU
+za KDU-ČSL (mandát od 4. 10. 2025, Olomoucký kraj), člen poslaneckého
+klubu KDU-ČSL od 7. 10. 2025 a předseda poslaneckého klubu KDU-ČSL od
+6. 5. 2026 (resp. 5. 5. 2026 dle ČT24 — datum zápisu na psp.cz je
+6. 5. 2026), člen Výboru pro sociální politiku; bývalý předseda KDU-ČSL
+a bývalý místopředseda vlády a ministr práce a sociálních věcí
+(2021–2025). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele posledních tří volebních období.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní, aktuálně
+ověřený politický profil (poslanecký mandát, předsednictví poslaneckého
+klubu KDU-ČSL, dřívější vládní a stranické funkce jako prostý
+biografický fakt), doložený přímo otevřenými zdroji (oficiální profil na
+psp.cz, ČT24). Nejde o investigativní rešerši žádné kauzy z jeho
+ministerského působení — to by vyžadovalo samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Vlastimil Válek
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Vlastimil Válek je
+veřejný funkcionář — poslanec Poslanecké sněmovny PČR zvolený na
+kandidátce SPOLU za TOP 09 (mandát od 4. 10. 2025, Jihomoravský kraj),
+člen poslaneckého klubu TOP 09 od 7. 10. 2025, místopředseda Výboru pro
+zdravotnictví od 20. 1. 2026 a člen Správní rady VZP; bývalý
+místopředseda vlády a ministr zdravotnictví (2021–2025). Autorizace
+navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt vládní
+představitele posledních tří volebních období.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní, aktuálně
+ověřený politický profil (poslanecký mandát, funkce ve Výboru pro
+zdravotnictví, dřívější vládní funkce jako prostý biografický fakt),
+doložený přímo otevřenými zdroji (oficiální profil na psp.cz,
+Zdravotnický deník). Nejde o investigativní rešerši žádné kauzy z jeho
+ministerského působení — to by vyžadovalo samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Zbyněk Stanjura
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Zbyněk Stanjura je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr financí ČR 2021–2025 (vláda Petra Fialy), předtím
+ministr dopravy (2012–2013), dlouholetý poslanec (2010–2025), předseda
+poslaneckého klubu ODS a 1. místopředseda ODS. Ve sněmovních volbách
+v říjnu 2025 jako lídr kandidátky SPOLU v Moravskoslezském kraji mandát
+neobhájil (přeskočen preferenčními hlasy) a po volbách odešel i z vedení
+ODS (Aktuálně.cz 2025-10-04, iROZHLAS). Autorizace navazuje na výslovnou
+žádost vlastníka v této konverzaci pokrýt vládní představitele
+posledních tří volebních období.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní biografický
+záznam dřívějších veřejných funkcí (ministr financí 2021–2025, ministr
+dopravy 2012–2013, poslanecký mandát 2010–2025, funkce v ODS) a fakt
+neobhájení mandátu v roce 2025, doložený přímo otevřenými zdroji
+(Aktuálně.cz; vlada.gov.cz). Neobhájení mandátu je volební výsledek,
+nikoli pochybení, a tak musí být podáno. Nejde o investigativní rešerši
+žádné kauzy z jeho ministerského působení (vč. zmiňované bitcoinové
+kauzy) — to by vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Jan Lipavský
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jan Lipavský je veřejný
+funkcionář — poslanec Poslanecké sněmovny PČR zvolený na kandidátce
+SPOLU za ODS (mandát od 4. 10. 2025), člen poslaneckého klubu ODS od
+8. 10. 2025, člen Zahraničního výboru a Výboru pro evropské záležitosti
+od 16. 1. 2026 a člen Stálé komise pro kontrolu činnosti BIS od
+16. 1. 2026; bývalý ministr zahraničních věcí ČR (2021–2025, nominován
+za Piráty, od podzimu 2024 nestraník). Autorizace navazuje na výslovnou
+žádost vlastníka v této konverzaci pokrýt vládní představitele
+posledních tří volebních období.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní, aktuálně
+ověřený politický profil (poslanecký mandát a výborové/komisní funkce,
+dřívější ministerská funkce a změna stranické příslušnosti jako prostý,
+zdroji doložený biografický fakt), doloženo přímo otevřenými zdroji
+(oficiální profil na psp.cz, nezávislé zpravodajství). Nejde o
+investigativní rešerši žádné kauzy z jeho ministerského působení — to by
+vyžadovalo samostatnou budoucí autorizaci.

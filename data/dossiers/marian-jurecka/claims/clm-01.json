@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/marian-jurecka/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/marian-jurecka"
+  },
+  "text": "Marian Jurečka je podle profilu na webu Poslanecké sněmovny PČR poslancem zvoleným na kandidátce SPOLU za KDU-ČSL (mandát od 4. 10. 2025, Olomoucký kraj), členem poslaneckého klubu KDU-ČSL od 7. 10. 2025 a jeho předsedou od 6. 5. 2026; ČT24 o jeho zvolení do čela klubu informovala 5. 5. 2026 s tím, že jde o bývalého předsedu lidovců a ministra práce a sociálních věcí",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/marian-jurecka/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/marian-jurecka/sources/SRC-02"
+    }
+  ],
+  "subjects": [
+    "marian-jurecka"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/marian-jurecka/_index.md)."
+    }
+  ]
+}

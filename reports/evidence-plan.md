@@ -55,10 +55,10 @@ veškeré nedodělané zdrojovací práce.
 
 | Metrika | Hodnota |
 |---|---|
-| Dossierů | 36 |
-| Tvrzení | 981 |
-| — z toho `E0` / `E1` / `E1+` / `E2` | 0 / 556 / 92 / 333 |
-| Zdrojů (z toho s vyplněnou `sourceFamily`) | 729 (391) |
+| Dossierů | 41 |
+| Tvrzení | 986 |
+| — z toho `E0` / `E1` / `E1+` / `E2` | 0 / 556 / 92 / 338 |
+| Zdrojů (z toho s vyplněnou `sourceFamily`) | 739 (391) |
 | Kauz | 94 |
 | Mezer celkem / otevřených / zastaralých | 204 / 202 / 0 |
 | Vztahů | 334 |
@@ -94,16 +94,21 @@ veškeré nedodělané zdrojovací práce.
 | 24 | [Petr Pavel](../data/dossiers/petr-pavel/) `petr-pavel` | **nízká** | 2 | 0.1 % | 100.0 % | 3 | 0/1/0/2 | 0 | 0 | 2026-08-01 |
 | 25 | [Eva Decroix](../data/dossiers/eva-decroix/) `eva-decroix` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 2 | 2026-08-06 |
 | 26 | [Filip Turek](../data/dossiers/filip-turek/) `filip-turek` *(view)* | **žádná** | 0 | 0.0 % | 100.0 % | 0 | 0/0/0/0 | 0 | 0 | 2026-07-29 |
-| 27 | [Jan Skopeček](../data/dossiers/jan-skopecek/) `jan-skopecek` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 2 | 2026-08-06 |
-| 28 | [Jana Černochová](../data/dossiers/jana-cernochova/) `jana-cernochova` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 2 | 2026-08-06 |
-| 29 | [Karel Haas](../data/dossiers/karel-haas/) `karel-haas` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 3 | 2026-08-06 |
-| 30 | [Marek Benda](../data/dossiers/marek-benda/) `marek-benda` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 2 | 2026-08-06 |
-| 31 | [Martin Baxa](../data/dossiers/martin-baxa/) `martin-baxa` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 2 | 2026-08-06 |
-| 32 | [Martin Červíček](../data/dossiers/martin-cervicek/) `martin-cervicek` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 3 | 2026-08-06 |
-| 33 | [Martin Kupka](../data/dossiers/martin-kupka/) `martin-kupka` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 1 | 2026-08-06 |
-| 34 | [Pavel Drobil](../data/dossiers/pavel-drobil/) `pavel-drobil` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 3 | 2026-08-06 |
-| 35 | [Petr Fiala](../data/dossiers/petr-fiala/) `petr-fiala` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 2 | 2026-08-06 |
-| 36 | [Petr Macinka](../data/dossiers/petr-macinka/) `petr-macinka` *(view)* | **žádná** | 0 | 0.0 % | 100.0 % | 0 | 0/0/0/0 | 0 | 0 | 2026-07-29 |
+| 27 | [Jan Lipavský](../data/dossiers/jan-lipavsky/) `jan-lipavsky` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 2 | 2026-08-08 |
+| 28 | [Jan Skopeček](../data/dossiers/jan-skopecek/) `jan-skopecek` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 2 | 2026-08-06 |
+| 29 | [Jana Černochová](../data/dossiers/jana-cernochova/) `jana-cernochova` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 2 | 2026-08-06 |
+| 30 | [Karel Haas](../data/dossiers/karel-haas/) `karel-haas` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 3 | 2026-08-06 |
+| 31 | [Marek Benda](../data/dossiers/marek-benda/) `marek-benda` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 2 | 2026-08-06 |
+| 32 | [Marian Jurečka](../data/dossiers/marian-jurecka/) `marian-jurecka` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 2 | 2026-08-08 |
+| 33 | [Martin Baxa](../data/dossiers/martin-baxa/) `martin-baxa` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 2 | 2026-08-06 |
+| 34 | [Martin Červíček](../data/dossiers/martin-cervicek/) `martin-cervicek` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 3 | 2026-08-06 |
+| 35 | [Martin Kupka](../data/dossiers/martin-kupka/) `martin-kupka` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 1 | 2026-08-06 |
+| 36 | [Pavel Drobil](../data/dossiers/pavel-drobil/) `pavel-drobil` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 3 | 2026-08-06 |
+| 37 | [Petr Fiala](../data/dossiers/petr-fiala/) `petr-fiala` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 2 | 2026-08-06 |
+| 38 | [Petr Macinka](../data/dossiers/petr-macinka/) `petr-macinka` *(view)* | **žádná** | 0 | 0.0 % | 100.0 % | 0 | 0/0/0/0 | 0 | 0 | 2026-07-29 |
+| 39 | [Vít Rakušan](../data/dossiers/vit-rakusan/) `vit-rakusan` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 2 | 2026-08-08 |
+| 40 | [Vlastimil Válek](../data/dossiers/vlastimil-valek/) `vlastimil-valek` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 2 | 2026-08-08 |
+| 41 | [Zbyněk Stanjura](../data/dossiers/zbynek-stanjura/) `zbynek-stanjura` | **žádná** | 0 | 0.0 % | 100.0 % | 1 | 0/0/0/1 | 0 | 2 | 2026-08-08 |
 
 ## Plán per dossier
 
@@ -546,7 +551,21 @@ Další krok:
 
 - žádný odvozený krok — každé tvrzení má nezávislé doložení a žádná mezera není otevřená
 
-### 27. Jan Skopeček — `jan-skopecek`
+### 27. Jan Lipavský — `jan-lipavsky`
+
+**Priorita žádná** · 0 bodů (0.0 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-08`, revidováno `—`
+
+| Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
+|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 0 | 0 | 0 | 1 | 2 | 0 | 0 | 0 (0) | 0 |
+
+Deklarované stavy: CORROBORATED 1
+
+Další krok:
+
+- 2 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
+
+### 28. Jan Skopeček — `jan-skopecek`
 
 **Priorita žádná** · 0 bodů (0.0 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-06`, revidováno `—`
 
@@ -560,7 +579,7 @@ Další krok:
 
 - 2 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
 
-### 28. Jana Černochová — `jana-cernochova`
+### 29. Jana Černochová — `jana-cernochova`
 
 **Priorita žádná** · 0 bodů (0.0 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-06`, revidováno `—`
 
@@ -574,7 +593,7 @@ Další krok:
 
 - 2 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
 
-### 29. Karel Haas — `karel-haas`
+### 30. Karel Haas — `karel-haas`
 
 **Priorita žádná** · 0 bodů (0.0 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-06`, revidováno `—`
 
@@ -588,7 +607,7 @@ Další krok:
 
 - 3 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
 
-### 30. Marek Benda — `marek-benda`
+### 31. Marek Benda — `marek-benda`
 
 **Priorita žádná** · 0 bodů (0.0 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-06`, revidováno `—`
 
@@ -602,7 +621,21 @@ Další krok:
 
 - 2 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
 
-### 31. Martin Baxa — `martin-baxa`
+### 32. Marian Jurečka — `marian-jurecka`
+
+**Priorita žádná** · 0 bodů (0.0 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-08`, revidováno `—`
+
+| Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
+|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 0 | 0 | 0 | 1 | 2 | 0 | 0 | 0 (0) | 0 |
+
+Deklarované stavy: CORROBORATED 1
+
+Další krok:
+
+- 2 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
+
+### 33. Martin Baxa — `martin-baxa`
 
 **Priorita žádná** · 0 bodů (0.0 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-06`, revidováno `—`
 
@@ -616,7 +649,7 @@ Další krok:
 
 - 2 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
 
-### 32. Martin Červíček — `martin-cervicek`
+### 34. Martin Červíček — `martin-cervicek`
 
 **Priorita žádná** · 0 bodů (0.0 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-06`, revidováno `—`
 
@@ -630,7 +663,7 @@ Další krok:
 
 - 3 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
 
-### 33. Martin Kupka — `martin-kupka`
+### 35. Martin Kupka — `martin-kupka`
 
 **Priorita žádná** · 0 bodů (0.0 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-06`, revidováno `—`
 
@@ -644,7 +677,7 @@ Další krok:
 
 - 1 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
 
-### 34. Pavel Drobil — `pavel-drobil`
+### 36. Pavel Drobil — `pavel-drobil`
 
 **Priorita žádná** · 0 bodů (0.0 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-06`, revidováno `—`
 
@@ -658,7 +691,7 @@ Další krok:
 
 - 3 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
 
-### 35. Petr Fiala — `petr-fiala`
+### 37. Petr Fiala — `petr-fiala`
 
 **Priorita žádná** · 0 bodů (0.0 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-06`, revidováno `—`
 
@@ -672,7 +705,7 @@ Další krok:
 
 - 2 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
 
-### 36. Petr Macinka — `petr-macinka`
+### 38. Petr Macinka — `petr-macinka`
 
 > Entity view kanonického dossieru `macinka-turek` — vlastní registry nemá,
 > jeho evidence se počítá tam a tady se nezdvojuje.
@@ -686,6 +719,48 @@ Další krok:
 Další krok:
 
 - žádný odvozený krok — každé tvrzení má nezávislé doložení a žádná mezera není otevřená
+
+### 39. Vít Rakušan — `vit-rakusan`
+
+**Priorita žádná** · 0 bodů (0.0 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-08`, revidováno `—`
+
+| Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
+|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 0 | 0 | 0 | 1 | 2 | 0 | 0 | 0 (0) | 0 |
+
+Deklarované stavy: CORROBORATED 1
+
+Další krok:
+
+- 2 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
+
+### 40. Vlastimil Válek — `vlastimil-valek`
+
+**Priorita žádná** · 0 bodů (0.0 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-08`, revidováno `—`
+
+| Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
+|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 0 | 0 | 0 | 1 | 2 | 0 | 0 | 0 (0) | 0 |
+
+Deklarované stavy: CORROBORATED 1
+
+Další krok:
+
+- 2 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
+
+### 41. Zbyněk Stanjura — `zbynek-stanjura`
+
+**Priorita žádná** · 0 bodů (0.0 % celkového objemu práce) · typ `entity` · aktualizováno `2026-08-08`, revidováno `—`
+
+| Tvrzení | `E0` | `E1` | `E1+` | `E2` | Zdroje | s rodinou | Kauzy | Mezery (otevřené) | Vztahy |
+|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 0 | 0 | 0 | 1 | 2 | 0 | 0 | 0 (0) | 0 |
+
+Deklarované stavy: CORROBORATED 1
+
+Další krok:
+
+- 2 zdrojů nemá vyplněnou `sourceFamily` → doplnit přes `npm run sources:detect-family`; bez ní se nezávislost počítá jen z outletu a přetisk agenturní zprávy může projít jako druhý hlas
 
 ---
 

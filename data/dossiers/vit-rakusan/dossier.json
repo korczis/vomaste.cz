@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/vit-rakusan",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "vit-rakusan",
+  "slug": "vit-rakusan",
+  "title": "Vít Rakušan",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Vít Rakušan.",
+  "dossierType": "entity",
+  "canonicalDossier": "vit-rakusan",
+  "subject": "vit-rakusan",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-VIT-RAKUSAN"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "vit-rakusan",
+        "label": "Vít Rakušan",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nVít Rakušan je poslanec Poslanecké sněmovny PČR za hnutí STAN,\nmístopředseda poslaneckého klubu STAN a předseda hnutí STAN. Jako\nveřejný funkcionář spadá do standing scope autorizace\n(`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro tento dossier\nje `AUTH-2026-08-08-VIT-RAKUSAN`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam — dokládá pouze jeho aktuální poslanecký mandát, funkci v klubu\nSTAN a předsednictví hnutí STAN, nikoli hloubkovou investigativní\nrešerši jiných témat (například politické odpovědnosti v kauze\nDozimetr, v níž sám obviněn není). Rozšíření rozsahu vyžaduje\nsamostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/vit-rakusan/claims/clm-01.md) | Vít Rakušan je podle profilu na webu Poslanecké sněmovny PČR poslancem zvoleným za hnutí STAN (mandát od 4. 10. 2025, Středočeský kraj), členem poslaneckého klubu STAN od 10. 10. 2025 a jeho místopředsedou od 26. 6. 2026; předsedou hnutí STAN je od roku 2019 a na celostátním sněmu v květnu 2025 funkci podle ČT24 obhájil se ziskem 282 z 286 hlasů | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/vit-rakusan/sources/src-01.md), [SRC-02](@/dossiers/vit-rakusan/sources/src-02.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

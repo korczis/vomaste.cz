@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/vit-rakusan/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/vit-rakusan"
+  },
+  "title": "SRC-02 — ČT24: Rakušan na celostátním sněmu obhájil post předsedy hnutí STAN",
+  "description": "ČT24 o celostátním sněmu STAN: Rakušan obhájil post předsedy se ziskem 282 z 286 hlasů.",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "zpravodajský článek",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/zacina-celostatni-snem-hnuti-stan-361063",
+  "retrieved": "2026-08-08",
+  "published": "2025-05-17",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/vit-rakusan/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "vit-rakusan"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpravodajský článek ČT24 z 17. 5. 2025, otevřen a přečten 2026-08-08.\nUvádí, že Vít Rakušan na celostátním sněmu hnutí STAN v Praze obhájil post předsedy se ziskem 282 z 286 odevzdaných hlasů, hnutí vede od roku 2019 a prvním místopředsedou byl zvolen Lukáš Vlček.\n\nPoznámka k typu zdroje a jeho limitům: nezávislé redakční zpravodajství veřejnoprávní televize — dokládá stranickou funkci a průběh sněmu; nedokládá aktuální parlamentní funkce (ty nese SRC-01). Článek předchází sněmovním volbám z října 2025."
+    }
+  ],
+  "order": 2
+}

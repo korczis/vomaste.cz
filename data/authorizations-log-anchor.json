@@ -1,6 +1,6 @@
 {
   "$comment": "Hash-kotva append-only autorizačního logu v AGENTS.md (## Content about real parties). Generuje `npm run authorization:anchor`: interaktivně, nebo pro čistě nový záznam po výslovné autorizaci vlastníka v aktuální konverzaci. verify-authorization-log-append-only.mjs proti ní ověřuje byte-verní integritu každého záznamu; validate-authorization.mjs přes ni váže data/authorizations.toml na log. Needitovat ručně.",
-  "generatedAt": "2026-08-06",
+  "generatedAt": "2026-08-08",
   "algorithm": "sha256(normalized entry block: LF line endings, trailing whitespace trimmed)",
   "entries": [
     {
@@ -158,6 +158,26 @@
     {
       "heading": "### Scope extension, 2026-08-06: Martin Červíček",
       "sha256": "dd8aad103be2d07b54d0352edffff6ae84003e7b8a1fea2eac3dd0c77709ec96"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Vít Rakušan",
+      "sha256": "c5eac4f5580dae73e8e2cbc1a923056d96cb622a81c507e81384ffd9de2d27f7"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Marian Jurečka",
+      "sha256": "99a7e4f4ea222656f589a99a5f7c51be994ee48b5391be1c9d2d22190451b8e8"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Vlastimil Válek",
+      "sha256": "1948b2f55ec32d9ecab5a6e7ec3006f128a5d9bccbcf5daac03008fc0f73a22b"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Zbyněk Stanjura",
+      "sha256": "ef006a6361d68aeef9a71b8d6ef3c51e7e231263a6212e63a274f5b1f45f10dd"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Jan Lipavský",
+      "sha256": "c3b0a8f1f1f26c7133eb0624dec089485ec17dac1c81f15588cffad08a406870"
     }
   ]
 }

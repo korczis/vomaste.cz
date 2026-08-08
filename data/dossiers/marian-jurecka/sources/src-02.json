@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/marian-jurecka/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/marian-jurecka"
+  },
+  "title": "SRC-02 — ČT24: Poslanecký klub KDU-ČSL povede Marian Jurečka",
+  "description": "ČT24 o zvolení Jurečky předsedou poslaneckého klubu KDU-ČSL 5. 5. 2026.",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "zpravodajský článek",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/poslanecky-klub-kdu-csl-povede-marian-jurecka-373122",
+  "retrieved": "2026-08-08",
+  "published": "2026-05-05",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/marian-jurecka/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "marian-jurecka"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpravodajský článek ČT24 z 5. 5. 2026, otevřen a přečten 2026-08-08.\nUvádí, že poslanci KDU-ČSL zvolili Mariana Jurečku předsedou poslaneckého klubu; místopředsedy byli zvoleni dosavadní šéf frakce Tom Philipp a Benjamin Činčila. Článek Jurečku popisuje jako bývalého předsedu lidovců a ministra práce a sociálních věcí a cituje předsedu strany Jana Grolicha k důvodům změny.\n\nPoznámka k typu zdroje a jeho limitům: nezávislé redakční zpravodajství veřejnoprávní televize — dokládá zvolení do čela klubu a charakteristiku dřívějších funkcí; přesné datum zápisu funkce v evidenci Sněmovny (6. 5. 2026) nese SRC-01."
+    }
+  ],
+  "order": 2
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/vlastimil-valek/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/vlastimil-valek"
+  },
+  "title": "SRC-02 — Zdravotnický deník: Sněmovní zdravotnický výbor si rozdělil vliv",
+  "description": "Zdravotnický deník o vedení sněmovního zdravotního výboru; Válek zvolen místopředsedou jako exministr.",
+  "outlet": "Zdravotnický deník",
+  "sourceType": "zpravodajský článek",
+  "url": "https://www.zdravotnickydenik.cz/2026/01/snemovni-zdravotnicky-vybor-klicove-podvybory/",
+  "retrieved": "2026-08-08",
+  "published": "2026-01-23",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/vlastimil-valek/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "vlastimil-valek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpravodajský článek Zdravotnického deníku z 23. 1. 2026, otevřen a přečten 2026-08-08.\nPopisuje rozdělení funkcí ve sněmovním Výboru pro zdravotnictví na výjezdním zasedání v Harrachově; Vlastimila Válka uvádí jako zvoleného místopředsedu výboru a označuje ho za exministra zdravotnictví. Článek vyjmenovává i předsedy podvýborů.\n\nPoznámka k typu zdroje a jeho limitům: nezávislé oborové zpravodajství — dokládá zvolení do vedení výboru a charakteristiku exministra; přesná data zápisu funkcí v evidenci Sněmovny nese SRC-01."
+    }
+  ],
+  "order": 2
+}

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/vlastimil-valek",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "vlastimil-valek",
+  "slug": "vlastimil-valek",
+  "title": "Vlastimil Válek",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Vlastimil Válek.",
+  "dossierType": "entity",
+  "canonicalDossier": "vlastimil-valek",
+  "subject": "vlastimil-valek",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-VLASTIMIL-VALEK"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "vlastimil-valek",
+        "label": "Vlastimil Válek",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nVlastimil Válek je poslanec Poslanecké sněmovny PČR za TOP 09 a\nmístopředseda sněmovního Výboru pro zdravotnictví; dříve místopředseda\nvlády a ministr zdravotnictví (2021–2025). Jako veřejný funkcionář\nspadá do standing scope autorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`);\nkonkrétní záznam pro tento dossier je `AUTH-2026-08-08-VLASTIMIL-VALEK`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam — dokládá pouze jeho aktuální poslanecký mandát, funkci ve\nVýboru pro zdravotnictví a dřívější vládní funkci jako prostý\nbiografický fakt. Rozšíření rozsahu (například na kauzy z jeho\nministerského působení) vyžaduje samostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/vlastimil-valek/claims/clm-01.md) | Vlastimil Válek je podle profilu na webu Poslanecké sněmovny PČR poslancem zvoleným na kandidátce SPOLU za TOP 09 (mandát od 4. 10. 2025), členem poslaneckého klubu TOP 09 od 7. 10. 2025 a místopředsedou Výboru pro zdravotnictví od 20. 1. 2026; Zdravotnický deník o jeho zvolení místopředsedou výboru informoval jako o exministrovi zdravotnictví | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/vlastimil-valek/sources/src-01.md), [SRC-02](@/dossiers/vlastimil-valek/sources/src-02.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

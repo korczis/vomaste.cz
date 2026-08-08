@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/vlastimil-valek/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/vlastimil-valek"
+  },
+  "title": "SRC-01 — Poslanecká sněmovna PČR (oficiální profil poslance)",
+  "description": "Oficiální profil poslance: mandát, klub, funkce místopředsedy Výboru pro zdravotnictví.",
+  "outlet": "Poslanecká sněmovna Parlamentu ČR",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://www.psp.cz/sqw/detail.sqw?id=6482",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/vlastimil-valek/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "vlastimil-valek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil poslance na webu Poslanecké sněmovny PČR, otevřen a přečten 2026-08-08 (aktuální volební období od 2025).\nUvádí mandát poslance od 4. 10. 2025 (zvolen na kandidátce SPOLU, navrhovatel TOP 09), členství v Poslaneckém klubu TOP 09 od 7. 10. 2025, členství ve Výboru pro zdravotnictví od 16. 1. 2026, funkci místopředsedy výboru od 20. 1. 2026 a členství ve Správní radě VZP.\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** — dokládá úřední parlamentní údaje; charakteristiku bývalého ministra zdravotnictví nezávisle nese SRC-02."
+    }
+  ],
+  "order": 1
+}

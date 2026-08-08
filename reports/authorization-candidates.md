@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 497 context entities across 36 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 494 context entities across 41 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -2468,17 +2468,6 @@ Generated from 497 context entities across 36 dossier(s). Regenerate with `npm r
 - Claims: CLM-03, CLM-16, CLM-32, CLM-44
 - Sources: SRC-05, SRC-07, SRC-18, SRC-25, SRC-27 (5 independent source families)
 - Relations: none
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Marian Jurečka (`marian-jurecka`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: ales-juchelka
-- Claims: CLM-22
-- Sources: SRC-14 (1 independent source family)
-- Relations:
-  - edge-jurecka-juchelka (marian-jurecka -> juchelka, "poradkyně nastoupila na ministerstvo ještě za předchozího ministra Jurečky, Juchelku vystřídal na resortu", dossier: ales-juchelka)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Marian Piecha (`marian-piecha`)
@@ -4965,20 +4954,6 @@ Generated from 497 context entities across 36 dossier(s). Regenerate with `npm r
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
-## Vít Rakušan (`vit-rakusan`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: andrej-babis, boris-stastny, martin-sebestyan, oto-klempir, ales-juchelka, alena-schillerova
-- Claims: CLM-06, CLM-17, CLM-23, CLM-38
-- Sources: SRC-02, SRC-09, SRC-17, SRC-18 (9 independent source families)
-- Relations:
-  - edge-vit-rakusan-stan (vit-rakusan -> stan, "předseda STAN", dossier: boris-stastny)
-  - edge-vit-rakusan-stastny (vit-rakusan -> stastny, "na ministrovo vysvětlení reagoval, že lžím a podvodům se teď bude říkat stylizace", dossier: boris-stastny)
-  - edge-rakusan-trestnioznameni (vit-rakusan -> trestni-oznameni-stan-mpsv, "Rakušan (STAN) oznámil podání trestního oznámení kvůli střetu zájmů na MPSV", dossier: ales-juchelka)
-  - edge-rakusan-schillerova (vit-rakusan -> schillerova, "Rakušan (STAN) po vetu uvedl, že si vláda chtěla otevřít cestu k obcházení dluhových pravidel", dossier: alena-schillerova)
-- Missing: explicit owner authorization to promote this to its own dossier
-
 ## Vláda ČR (`vlada`)
 
 - Type: public_institution
@@ -5015,16 +4990,6 @@ Generated from 497 context entities across 36 dossier(s). Regenerate with `npm r
 - Sources: SRC-08 (1 independent source family)
 - Relations:
   - edge-james-quick-vladimir-ruzicka (james-quick -> vladimir-ruzicka, "podal trestní oznámení; věc skončila pravomocným odsouzením za zpronevěru", dossier: james-quick)
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Vlastimil Válek (`vlastimil-valek`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: adam-vojtech
-- Claims: CLM-49
-- Sources: SRC-29 (1 independent source family)
-- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Vodňanská drůbež (`vodnanska-drubez`)

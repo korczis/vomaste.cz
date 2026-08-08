@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jan-lipavsky/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jan-lipavsky"
+  },
+  "title": "SRC-02 — Vláda ČR (oficiální profil člena vlády)",
+  "description": "Oficiální vládní profil: ministr zahraničních věcí 2021–2025 (v demisi od 6. 11. 2025), nominován za Piráty.",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vlada.gov.cz/cz/clenove-vlady/jan-lipavsky-191694/",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jan-lipavsky/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "jan-lipavsky"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil člena vlády na webu Vlády ČR, otevřen a přečten 2026-08-08.\nUvádí funkci ministra zahraničních věcí od 17. 12. 2021, s obdobím v demisi od 6. 11. 2025 do 15. 12. 2025, dřívější poslanecký mandát 2017–2021 (místopředseda zahraničního a obranného výboru) a působení v Pirátské straně od roku 2015.\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam jiné instituce než SRC-01** (Úřad vlády ČR vs. Kancelář Poslanecké sněmovny) — dokládá výkon vládní funkce a její data; aktuální parlamentní funkce nese SRC-01."
+    }
+  ],
+  "order": 2
+}
