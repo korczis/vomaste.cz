@@ -3,6 +3,7 @@
 {%- import "macros/nav.html" as nav -%}
 {%- import "macros/ui.html" as ui -%}
 {%- import "partials/app-shell/secondary-sidebar.html" as app_shell -%}
+{%- import "partials/app-shell/bottom-nav.html" as bottom_nav -%}
 {#- ===================== Sociální a SEO metadata =====================
 
     Politika (jaký `og:type` pro jaký typ stránky, jaké meze délky, jaká
@@ -401,7 +402,9 @@
   </nav>
 </noscript>
 
-<div id="main" class="pt-16{% if sidebar_docked %} md:ml-64{% endif %}{% if has_secondary_sidebar %} lg:ml-[32rem]{% endif %}">
+{{ bottom_nav::render(nav_items=nav_items, active_id=active_id) }}
+
+<div id="main" class="pb-16 pt-16 md:pb-0{% if sidebar_docked %} md:ml-64{% endif %}{% if has_secondary_sidebar %} lg:ml-[32rem]{% endif %}">
 {% block content %}{% endblock content %}
 {#- Resolve the content path ONCE (page or section, "" for neither, e.g.
     404) and let the macro render the footer. Previously the page and
