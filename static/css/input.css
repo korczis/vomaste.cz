@@ -136,17 +136,63 @@
   .dossier-prose blockquote { border-left: 2px solid rgba(243,229,192,0.4); padding-left: 1rem; margin: 1rem 0; font-style: italic; color: rgba(255,255,255,0.7); }
   .dossier-prose a { color: var(--accent); text-decoration: underline; text-decoration-color: rgba(243,229,192,0.4); }
   .dossier-prose a:hover { color: rgba(243,229,192,0.8); }
-  /* Zola's markdown output has no wrapper around <table> — without this,
-     wide registry tables (4+ columns of Czech prose) force the whole page
-     to scroll horizontally on mobile instead of just the table. */
   /* Dlouhý řádek v kódu (příkaz, JSON) roztahoval celou stránku — např.
      /dokumentace/koop-protokol/ přetékal při 1280 px. Blok scrolluje sám. */
   .dossier-prose pre { overflow-x: auto; max-width: 100%; -webkit-overflow-scrolling: touch; }
   .dossier-prose code { overflow-wrap: anywhere; }
   .dossier-prose pre code { overflow-wrap: normal; white-space: pre; }
-  .dossier-prose table { display: block; overflow-x: auto; max-width: 100%; width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.875rem; -webkit-overflow-scrolling: touch; }
-  .dossier-prose th, .dossier-prose td { border: 1px solid var(--border); padding: 0.5rem 0.75rem; text-align: left; }
-  .dossier-prose th { background: var(--surface-elevated-hover); font-weight: 600; }
+
+  /* Registry & prose tables. Zola's markdown emits a bare <table> with no
+     wrapper, so the table itself is the horizontal-scroll container
+     (display:block + overflow-x:auto). The trap the old rule fell into:
+     width:100% with no minimum content width let auto table-layout crush
+     every column to fit the viewport, wrapping Czech claim text one word per
+     line and breaking identifiers mid-token (SRC-08 split across two lines)
+     on a phone — the table never actually scrolled, it just collapsed.
+     Giving the prose
+     column a reading floor makes the table wider than a phone viewport, so
+     it scrolls as a unit (the Flowbite responsive-table pattern) while the
+     meta columns size to their own content. Visual language matches
+     macros/table.html: rounded container, header bar, horizontal dividers,
+     no vertical grid. Verified at 390 px in Chromium: page never scrolls
+     horizontally, the dense claims table scrolls internally, no mid-token
+     breaks. */
+  .dossier-prose table {
+    display: block;
+    overflow-x: auto;
+    max-width: 100%;
+    width: 100%;
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    border-collapse: collapse;
+    margin: 1.25rem 0;
+    font-size: 0.875rem;
+    line-height: 1.55;
+    -webkit-overflow-scrolling: touch;
+  }
+  .dossier-prose thead th { background: var(--surface-elevated-hover); }
+  .dossier-prose th, .dossier-prose td {
+    border-bottom: 1px solid var(--border);
+    padding: 0.625rem 0.875rem;
+    text-align: left;
+    vertical-align: top;
+    overflow-wrap: break-word;
+  }
+  .dossier-prose tbody tr:last-child th,
+  .dossier-prose tbody tr:last-child td { border-bottom: 0; }
+  .dossier-prose th { font-weight: 600; font-size: 0.8125rem; white-space: nowrap; }
+  /* Prose cells get a reading floor so the table gains real width; cells
+     that are only a link or a status badge size to their own content
+     instead of the floor (keeps IDs/status/source columns compact).
+     :has() is supported by the iOS/Android browsers this targets; where it
+     is not, every cell keeps the floor — wider, but still readable and
+     scrollable. */
+  .dossier-prose td { min-width: 14rem; }
+  .dossier-prose td:has(> a),
+  .dossier-prose td:has(> .status-badge) { min-width: 0; }
+  /* Never break an identifier/reference token across lines (CLM-01, SRC-08);
+     the cell still wraps between tokens at the spaces. */
+  .dossier-prose td a { white-space: nowrap; }
   .dossier-prose em { color: rgba(255,255,255,0.5); }
 
   /* Gap priority is not a claim status (CORROBORATED/CITACE/SPORNÉ/NÁZOR) —
