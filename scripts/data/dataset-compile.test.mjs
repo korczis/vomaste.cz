@@ -132,7 +132,7 @@ test("validateCanonicalDataset zahrnuje i tvarovou vrstvu", async () => {
   assert.ok(errors.some((e) => e.includes("must have required property 'text'")), errors.join("\n"));
 });
 
-test("check nad reálným data/dossiers projde (51 balíčků včetně lukas-vlcek)", async () => {
+test("check nad reálným data/dossiers projde (56 balíčků včetně martin-dvorak)", async () => {
   // Do fáze D tady test přibíjel pre-migration hlášku (0 balíčků);
   // migrátor scripts/migrations/migrate-content-to-json.mjs kanonická
   // data vytvořil, takže brána teď validuje reálný dataset. Sémantická
@@ -143,7 +143,7 @@ test("check nad reálným data/dossiers projde (51 balíčků včetně lukas-vlc
   const code = await runCheck({ root: RECORDS_ROOT, log: (l) => lines.push(l) });
   assert.equal(code, 0, lines.join("\n"));
   assert.ok(!lines.some((l) => l.includes("0 dossier packages")), lines.join("\n"));
-  assert.ok(lines.some((l) => l.includes("Načteno 51 dossier balíčků")), lines.join("\n"));
+  assert.ok(lines.some((l) => l.includes("Načteno 56 dossier balíčků")), lines.join("\n"));
   assert.ok(lines.at(-1) === "OK");
 });
 

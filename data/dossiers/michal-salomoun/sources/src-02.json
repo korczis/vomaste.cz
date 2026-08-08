@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/michal-salomoun/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/michal-salomoun"
+  },
+  "title": "SRC-02 — Aktuálně.cz: Pirátský ministr pro legislativu Šalomoun podal demisi",
+  "description": "Aktuálně.cz o demisi 1. 10. 2024 v souvislosti s odchodem Pirátů z vlády; post nebyl znovu obsazen.",
+  "outlet": "Aktuálně.cz",
+  "sourceType": "zpravodajský článek",
+  "url": "https://zpravy.aktualne.cz/domaci/piratsky-ministr-pro-legislativu-salomoun-podal-demisi-skonc/r~ecc1ee02800811ef95ee0cc47ab5f122/",
+  "retrieved": "2026-08-08",
+  "published": "2024-10-01",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/michal-salomoun/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "michal-salomoun"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpravodajský článek Aktuálně.cz z 1. 10. 2024, otevřen a přečten 2026-08-08.\nUvádí, že Michal Šalomoun podal 1. 10. 2024 demisi v souvislosti s odchodem Pirátů z vlády po odvolání předsedy strany Ivana Bartoše z funkce ministra pro místní rozvoj, ve funkci skončil 11. 10. 2024, a cituje jeho zdůvodnění, že jako nominant Pirátů ve vládě už nemá koho reprezentovat. Post ministra pro legislativu nebyl znovu obsazen a agendu převzalo ministerstvo spravedlnosti.\n\nPoznámka k typu zdroje a jeho limitům: nezávislé redakční zpravodajství — dokládá okolnosti demise jeho vlastními slovy; jde o politický krok navazující na rozhodnutí strany, nikoli o pochybení."
+    }
+  ],
+  "order": 2
+}

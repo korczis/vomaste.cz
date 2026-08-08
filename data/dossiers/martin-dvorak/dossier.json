@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-dvorak",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "martin-dvorak",
+  "slug": "martin-dvorak",
+  "title": "Martin Dvořák",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Martin Dvořák.",
+  "dossierType": "entity",
+  "canonicalDossier": "martin-dvorak",
+  "subject": "martin-dvorak",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-MARTIN-DVORAK"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "martin-dvorak",
+        "label": "Martin Dvořák",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nMartin Dvořák je bývalý ministr pro evropské záležitosti (2023–2025,\nnominován za STAN), dříve náměstek ministra zahraničních věcí,\ndiplomat a první polistopadový primátor Hradce Králové. Jako politicky\nexponovaná osoba v souvislosti s výkonem dřívější veřejné funkce spadá\ndo standing scope autorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`);\nkonkrétní záznam pro tento dossier je `AUTH-2026-08-08-MARTIN-DVORAK`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívějších veřejných funkcí. Tvrzení zatím nese stav 1 ZDROJ:\njediný přímo otevřený zdroj je oficiální vládní profil (nezávislé\nredakce iROZHLAS a Deník.cz vracejí automatizovanému přístupu 403);\npovýšení na CORROBORATED vyžaduje otevření druhého, nezávislého\nzdroje, nikdy pouhé přeznačení. Rozšíření rozsahu vyžaduje samostatnou\nbudoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/martin-dvorak/claims/clm-01.md) | Martin Dvořák byl podle oficiálního profilu na webu Vlády ČR ministrem pro evropské záležitosti od 4. 5. 2023 (od 6. 11. 2025 do 15. 12. 2025 v demisi); dříve byl náměstkem ministra zahraničních věcí (červen 2021 – květen 2023), generálním konzulem v New Yorku (2012–2017), velvyslancem v Kuvajtu a Kataru (2017–2021) a prvním polistopadovým primátorem Hradce Králové (do 1998) | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-01](@/dossiers/martin-dvorak/sources/src-01.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

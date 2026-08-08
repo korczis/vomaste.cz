@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/helena-langsadlova/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/helena-langsadlova"
+  },
+  "title": "SRC-01 — Vláda ČR (oficiální profil členky vlády)",
+  "description": "Oficiální vládní profil: ministryně pro vědu, výzkum a inovace 17. 12. 2021 – 5. 5. 2024, poslankyně od 2010.",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vlada.gov.cz/scripts/detail.php?id=191705&tmplid=50",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/helena-langsadlova/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "helena-langsadlova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil členky vlády na webu Vlády ČR, otevřen a přečten 2026-08-08.\nUvádí funkci ministryně pro vědu, výzkum a inovace od 17. 12. 2021 do 5. 5. 2024, poslanecký mandát od 2010, funkci místopředsedkyně TOP 09 (2011–2017) a starostování Černošic (1998–2006, poté místostarostka do 2010).\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** — dokládá výkon funkcí a jejich data; okolnosti konce v úřadu dokládá SRC-02."
+    }
+  ],
+  "order": 1
+}

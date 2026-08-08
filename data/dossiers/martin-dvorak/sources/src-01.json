@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-dvorak/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-dvorak"
+  },
+  "title": "SRC-01 — Vláda ČR (oficiální profil člena vlády)",
+  "description": "Oficiální vládní profil: ministr pro evropské záležitosti od 4. 5. 2023 (v demisi od 6. 11. 2025), diplomatická dráha.",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vlada.gov.cz/cz/clenove-vlady/martin-dvorak-205133/",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-dvorak/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "martin-dvorak"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil člena vlády na webu Vlády ČR, otevřen a přečten 2026-08-08.\nUvádí funkci ministra pro evropské záležitosti od 4. 5. 2023, s obdobím v demisi od 6. 11. 2025 do 15. 12. 2025, dřívější funkci náměstka ministra zahraničních věcí (červen 2021 – květen 2023), diplomatickou dráhu (mise OSN v Kosovu 1999–2002, ekonomický rada ve Washingtonu 2005–2007, generální konzul v New Yorku 2012–2017, velvyslanec v Kuvajtu a Kataru 2017–2021) a funkci prvního polistopadového primátora Hradce Králové (do 1998).\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam a zatím jediný přímo otevřený zdroj tohoto tvrzení** — proto stav 1 ZDROJ. Nezávislé zpravodajské zdroje k jeho jmenování (iROZHLAS, Deník.cz) vracejí automatizovanému přístupu HTTP 403; povýšení na CORROBORATED vyžaduje skutečné otevření druhého, nezávislého zdroje."
+    }
+  ],
+  "order": 1
+}

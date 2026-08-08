@@ -197,19 +197,19 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 760 záznamů v 128 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 769 záznamů v 128 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
-| ctk | 293 | 23 | [ano](/zdroje/ctk/) |
-| Poslanecká sněmovna Parlamentu ČR | 50 | 31 | [ano](/zdroje/psp-cz/) |
-| Vláda České republiky (vlada.gov.cz) | 38 | 27 | [ano](/zdroje/vlada-cz/) |
+| ctk | 294 | 24 | [ano](/zdroje/ctk/) |
+| Poslanecká sněmovna Parlamentu ČR | 51 | 32 | [ano](/zdroje/psp-cz/) |
+| Vláda České republiky (vlada.gov.cz) | 43 | 32 | [ano](/zdroje/vlada-cz/) |
 | seznam-zpravy | 38 | 13 | [ano](/zdroje/seznam-zpravy/) |
 | ČT24 (Česká televize) | 21 | 13 | [ano](/zdroje/ceska-televize/) |
 | FORUM 24 | 20 | 10 | [ano](/zdroje/forum24/) |
 | denik-n | 17 | 9 | [ano](/zdroje/denik-n/) |
-| Echo24 | 15 | 11 | [ano](/zdroje/echo24/) |
-| Aktuálně.cz | 14 | 9 | [ano](/zdroje/aktualne-cz/) |
+| Echo24 | 16 | 12 | [ano](/zdroje/echo24/) |
+| Aktuálně.cz | 15 | 10 | [ano](/zdroje/aktualne-cz/) |
 | Novinky.cz | 13 | 12 | [ano](/zdroje/novinky-cz/) |
 | denik-cz | 11 | 6 | [ano](/zdroje/denik-cz/) |
 | Česká justice | 11 | 6 | [ano](/zdroje/ceska-justice/) |

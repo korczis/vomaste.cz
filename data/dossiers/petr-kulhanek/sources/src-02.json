@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/petr-kulhanek/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/petr-kulhanek"
+  },
+  "title": "SRC-02 — ČeskéNoviny.cz: Pavel jmenoval nové ministry Kulhánka a Vlčka",
+  "description": "ČTK o jmenování Kulhánka (MMR) a Vlčka (MPO) prezidentem Pavlem 8. 10. 2024.",
+  "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceType": "zpravodajský článek",
+  "url": "https://www.ceskenoviny.cz/zpravy/2579520",
+  "retrieved": "2026-08-08",
+  "published": "2024-10-08",
+  "sourceFamily": "ctk",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-kulhanek/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "petr-kulhanek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpravodajský článek ČeskýchNovin (servis ČTK) z 8. 10. 2024, otevřen a přečten 2026-08-08.\nUvádí, že prezident Petr Pavel jmenoval 8. 10. 2024 Petra Kulhánka (STAN) ministrem pro místní rozvoj jako nástupce odvolaného Ivana Bartoše a Lukáše Vlčka (STAN) ministrem průmyslu a obchodu po odchodu Jozefa Síkely do Evropské komise; rekonstrukce vlády následovala po odchodu Pirátů z koalice.\n\nPoznámka k typu zdroje a jeho limitům: nezávislé agenturní zpravodajství (rodina ČTK) — dokládá akt jmenování a jeho okolnosti; data výkonu funkce nese SRC-01. Důvod odvolání Ivana Bartoše je v článku připsán premiérovi, ne přijat jako hodnocení tohoto webu."
+    }
+  ],
+  "order": 2
+}

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/helena-langsadlova",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "helena-langsadlova",
+  "slug": "helena-langsadlova",
+  "title": "Helena Langšádlová",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Helena Langšádlová.",
+  "dossierType": "entity",
+  "canonicalDossier": "helena-langsadlova",
+  "subject": "helena-langsadlova",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-HELENA-LANGSADLOVA"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "helena-langsadlova",
+        "label": "Helena Langšádlová",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nHelena Langšádlová je bývalá ministryně pro vědu, výzkum a inovace\n(2021–2024, TOP 09), dlouholetá poslankyně (od 2010) a bývalá starostka\nČernošic. Jako politicky exponovaná osoba v souvislosti s výkonem\ndřívějších veřejných funkcí spadá do standing scope autorizace\n(`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro tento dossier\nje `AUTH-2026-08-08-HELENA-LANGSADLOVA`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívějších veřejných funkcí a okolností konce v úřadu tak, jak\nje popsaly citované zdroje — konec v úřadu je politická událost, nikoli\npochybení, a důvody se připisují tomu, kdo je vyslovil. Rozšíření\nrozsahu vyžaduje samostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/helena-langsadlova/claims/clm-01.md) | Helena Langšádlová byla podle oficiálního profilu na webu Vlády ČR ministryní pro vědu, výzkum a inovace od 17. 12. 2021 do 5. 5. 2024 (TOP 09), poslankyní od 2010 a starostkou Černošic (1998–2006); podle Echo24 její konec v úřadu provázela nespokojenost vedení TOP 09 s prezentací výsledků resortu a sama na síti X uvedla, že mezi ní a stranou aktuálně není vzájemná důvěra | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/helena-langsadlova/sources/src-01.md), [SRC-02](@/dossiers/helena-langsadlova/sources/src-02.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/petr-kulhanek",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "petr-kulhanek",
+  "slug": "petr-kulhanek",
+  "title": "Petr Kulhánek",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Petr Kulhánek.",
+  "dossierType": "entity",
+  "canonicalDossier": "petr-kulhanek",
+  "subject": "petr-kulhanek",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-PETR-KULHANEK"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "petr-kulhanek",
+        "label": "Petr Kulhánek",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nPetr Kulhánek je bývalý ministr pro místní rozvoj (2024–2025,\nnominován za STAN), dříve hejtman Karlovarského kraje (2020–2024) a\nprimátor Karlových Varů (2010–2018). Jako politicky exponovaná osoba\nv souvislosti s výkonem dřívějších veřejných funkcí spadá do standing\nscope autorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam\npro tento dossier je `AUTH-2026-08-08-PETR-KULHANEK`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívějších veřejných funkcí. Rozšíření rozsahu (například na\nkauzy z jeho působení) vyžaduje samostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/petr-kulhanek/claims/clm-01.md) | Petr Kulhánek byl podle oficiálního profilu na webu Vlády ČR ministrem pro místní rozvoj od 8. 10. 2024 (od 6. 11. 2025 do 15. 12. 2025 v demisi), dříve hejtmanem Karlovarského kraje (od 2020) a primátorem Karlových Varů (2010–2018); podle ČeskýchNovin ho do funkce jmenoval prezident Petr Pavel 8. 10. 2024 jako nástupce odvolaného Ivana Bartoše (nominován za STAN) | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/petr-kulhanek/sources/src-01.md), [SRC-02](@/dossiers/petr-kulhanek/sources/src-02.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

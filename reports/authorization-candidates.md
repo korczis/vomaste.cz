@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 488 context entities across 51 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 487 context entities across 56 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -3673,16 +3673,6 @@ Generated from 488 context entities across 51 dossier(s). Regenerate with `npm r
 - Appears in: robert-plaga
 - Claims: CLM-32
 - Sources: SRC-24 (1 independent source family)
-- Relations: none
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Petr Kulhánek (`petr-kulhanek`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: zuzana-mrazova
-- Claims: CLM-32
-- Sources: SRC-26 (1 independent source family)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
