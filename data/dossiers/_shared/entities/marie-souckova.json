@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/marie-souckova",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "marie-souckova",
+  "entityId": "marie-souckova",
+  "title": "Marie Součková",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "referenced",
+  "dossiers": [
+    "marie-souckova"
+  ],
+  "order": 674,
+  "description": "Marie Součková — bývalá ministryně zdravotnictví (2002–2004).",
+  "provenance": {
+    "discoveredAt": "2026-08-08",
+    "discoveredVia": [
+      "government-roster-research-2026-08-08"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Bývalá ministryně zdravotnictví (15. 7. 2002 – 14. 4. 2004, vláda Vladimíra Špidly).\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
+    }
+  ]
+}

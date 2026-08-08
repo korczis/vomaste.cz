@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/jozef-kubinyi",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "jozef-kubinyi",
+  "entityId": "jozef-kubinyi",
+  "title": "Jozef Kubinyi",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "referenced",
+  "dossiers": [
+    "jozef-kubinyi"
+  ],
+  "order": 673,
+  "description": "Jozef Kubinyi — bývalý ministr zdravotnictví (2004).",
+  "provenance": {
+    "discoveredAt": "2026-08-08",
+    "discoveredVia": [
+      "government-roster-research-2026-08-08"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Bývalý ministr zdravotnictví (14. 4. 2004 – 4. 8. 2004, vláda Vladimíra Špidly).\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
+    }
+  ]
+}

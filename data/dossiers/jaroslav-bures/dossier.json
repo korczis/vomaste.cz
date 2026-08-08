@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaroslav-bures",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "jaroslav-bures",
+  "slug": "jaroslav-bures",
+  "title": "Jaroslav Bureš",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Jaroslav Bureš.",
+  "dossierType": "entity",
+  "canonicalDossier": "jaroslav-bures",
+  "subject": "jaroslav-bures",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-JAROSLAV-BURES"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "jaroslav-bures",
+        "label": "Jaroslav Bureš",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nJaroslav Bureš je bývalý ministr spravedlnosti (2001–2002, vláda Miloše Zemana) a ministr a předseda Legislativní rady vlády (2004–2005, vláda Stanislava Grosse). Jako politicky exponovaná osoba\nv souvislosti s výkonem dřívější veřejné funkce spadá do standing scope\nautorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro\ntento dossier je `AUTH-2026-08-08-JAROSLAV-BURES`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívější vládní funkce doložený oficiálním přehledem členů\npříslušných vlád na webu Vlády ČR. Tvrzení nese stav 1 ZDROJ;\npovýšení na CORROBORATED i doplnění okolností konce v úřadu či dalších\nfunkcí vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje\nsamostatnou budoucí autorizaci.\n\nOba citované přehledy vydává týž vydavatel (vlada.gov.cz) — dva záznamy jednoho vydavatele jsou jeden hlas, tvrzení proto poctivě zůstává 1 ZDROJ.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/jaroslav-bures/claims/clm-01.md) | Jaroslav Bureš byl podle oficiálních přehledů členů vlád na webu Vlády ČR ministrem spravedlnosti od 2. 2. 2001 do 12. 7. 2002 ve vládě Miloše Zemana a ministrem a předsedou Legislativní rady vlády od 4. 8. 2004 do 25. 4. 2005 ve vládě Stanislava Grosse | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-01](@/dossiers/jaroslav-bures/sources/src-01.md), [SRC-02](@/dossiers/jaroslav-bures/sources/src-02.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}
