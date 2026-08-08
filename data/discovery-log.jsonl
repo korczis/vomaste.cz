@@ -970,3 +970,8 @@
 {"logged_at":"2026-08-08","record_id":"ondrej-liska","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["ondrej-liska"]},"action":"created"}
 {"logged_at":"2026-08-08","record_id":"petr-gandalovic","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["petr-gandalovic"]},"action":"created"}
 {"logged_at":"2026-08-08","record_id":"vaclav-jehlicka","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["vaclav-jehlicka"]},"action":"created"}
+{"logged_at":"2026-08-08","record_id":"cyril-svoboda","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["cyril-svoboda"]},"action":"created"}
+{"logged_at":"2026-08-08","record_id":"dzamila-stehlikova","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["dzamila-stehlikova"]},"action":"created"}
+{"logged_at":"2026-08-08","record_id":"helena-trestikova","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["helena-trestikova"]},"action":"created"}
+{"logged_at":"2026-08-08","record_id":"jiri-sedivy-ministr","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["jiri-sedivy-ministr"]},"action":"created"}
+{"logged_at":"2026-08-08","record_id":"pavel-svoboda-ministr","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["pavel-svoboda-ministr"]},"action":"created"}
