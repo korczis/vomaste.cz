@@ -1,0 +1,266 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "28274318"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "28274318",
+        "obchodniJmeno": "GMR GAS s.r.o.",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 116,
+          "nazevKraje": "Jihomoravský kraj",
+          "kodOkresu": 3702,
+          "nazevOkresu": "Brno-město",
+          "kodObce": 582786,
+          "nazevObce": "Brno",
+          "kodMestskeCastiObvodu": 550973,
+          "kodUlice": 28037,
+          "nazevMestskeCastiObvodu": "Brno-střed",
+          "nazevUlice": "Mlýnská",
+          "cisloDomovni": 326,
+          "kodCastiObce": 490393,
+          "cisloOrientacni": 13,
+          "nazevCastiObce": "Trnitá",
+          "kodAdresnihoMista": 19208961,
+          "psc": 60200,
+          "textovaAdresa": "Mlýnská 326/13, Trnitá, 60200 Brno",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "112",
+        "pravniFormaRos": "112",
+        "financniUrad": "288",
+        "datumVzniku": "2008-02-25",
+        "datumAktualizace": "2025-10-06",
+        "dic": "CZ28274318",
+        "icoId": "28274318",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Mlýnská 326/13",
+          "radekAdresy2": "Trnitá",
+          "radekAdresy3": "60200 Brno"
+        },
+        "czNace2008": [
+          "00",
+          "016",
+          "02100",
+          "10",
+          "14",
+          "16",
+          "20",
+          "231",
+          "256",
+          "2562",
+          "28",
+          "432",
+          "461",
+          "477",
+          "49410",
+          "952"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "AKTIVNI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "AKTIVNI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "GMR GAS s.r.o.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 116,
+                  "nazevKraje": "Jihomoravský kraj",
+                  "kodOkresu": 3702,
+                  "nazevOkresu": "Brno-město",
+                  "kodObce": 582786,
+                  "nazevObce": "Brno",
+                  "kodMestskeCastiObvodu": 550973,
+                  "kodUlice": 28037,
+                  "nazevMestskeCastiObvodu": "Brno-střed",
+                  "nazevUlice": "Mlýnská",
+                  "cisloDomovni": 326,
+                  "kodCastiObce": 490393,
+                  "cisloOrientacni": 13,
+                  "nazevCastiObce": "Trnitá",
+                  "kodAdresnihoMista": 19208961,
+                  "psc": 60200,
+                  "textovaAdresa": "Mlýnská 326/13, Trnitá, 60200 Brno",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "112",
+            "pravniFormaRos": "112",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "GMR GAS s.r.o.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 116,
+                  "nazevKraje": "Jihomoravský kraj",
+                  "kodOkresu": 3702,
+                  "nazevOkresu": "Brno-město",
+                  "kodObce": 582786,
+                  "nazevObce": "Brno",
+                  "kodMestskeCastiObvodu": 550973,
+                  "kodUlice": 28037,
+                  "nazevMestskeCastiObvodu": "Brno-střed",
+                  "nazevUlice": "Mlýnská",
+                  "cisloDomovni": 326,
+                  "kodCastiObce": 490393,
+                  "cisloOrientacni": 13,
+                  "nazevCastiObce": "Trnitá",
+                  "kodAdresnihoMista": 19208961,
+                  "psc": 60200,
+                  "textovaAdresa": "Mlýnská 326/13, Trnitá, 60200 Brno",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "112",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "GMR GAS s.r.o.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 116,
+                  "nazevKraje": "Jihomoravský kraj",
+                  "kodOkresu": 3702,
+                  "nazevOkresu": "Brno-město",
+                  "kodObce": 582786,
+                  "nazevObce": "Brno",
+                  "kodMestskeCastiObvodu": 550973,
+                  "kodUlice": 28037,
+                  "nazevMestskeCastiObvodu": "Brno-střed",
+                  "nazevUlice": "Mlýnská",
+                  "cisloDomovni": 326,
+                  "kodCastiObce": 490393,
+                  "cisloOrientacni": 13,
+                  "nazevCastiObce": "Trnitá",
+                  "kodAdresnihoMista": 19208961,
+                  "psc": 60200,
+                  "textovaAdresa": "Mlýnská 326/13, Trnitá, 60200 Brno",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "112",
+            "datovyZdroj": "rzp"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "GMR GAS s.r.o.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 116,
+                  "nazevKraje": "Jihomoravský kraj",
+                  "kodOkresu": 3702,
+                  "nazevOkresu": "Brno-město",
+                  "kodObce": 582786,
+                  "nazevObce": "Brno",
+                  "kodMestskeCastiObvodu": 550973,
+                  "kodUlice": 28037,
+                  "nazevMestskeCastiObvodu": "Brno-střed",
+                  "nazevUlice": "Mlýnská",
+                  "cisloDomovni": 326,
+                  "kodCastiObce": 490393,
+                  "cisloOrientacni": 13,
+                  "nazevCastiObce": "Trnitá",
+                  "kodAdresnihoMista": 19208961,
+                  "psc": 60200,
+                  "textovaAdresa": "Mlýnská 326/13, Trnitá, 60200 Brno",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "112",
+            "spisovaZnacka": "C 57941/KSBR",
+            "datovyZdroj": "vr"
+          }
+        ],
+        "czNace": [
+          "14",
+          "20",
+          "477",
+          "952",
+          "016",
+          "255",
+          "00",
+          "10",
+          "28",
+          "432",
+          "16",
+          "02100",
+          "231",
+          "461",
+          "49410",
+          "25530"
+        ]
+      }
+    ]
+  }
+}

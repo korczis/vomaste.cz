@@ -1,0 +1,243 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "26311208"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "26311208",
+        "obchodniJmeno": "PREOL, a.s.",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 60,
+          "nazevKraje": "Ústecký kraj",
+          "kodOkresu": 3506,
+          "nazevOkresu": "Litoměřice",
+          "kodObce": 565229,
+          "nazevObce": "Lovosice",
+          "kodUlice": 266906,
+          "nazevUlice": "Terezínská",
+          "cisloDomovni": 1214,
+          "kodCastiObce": 409006,
+          "nazevCastiObce": "Lovosice",
+          "kodAdresnihoMista": 27888291,
+          "psc": 41002,
+          "textovaAdresa": "Terezínská 1214, 41002 Lovosice",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "121",
+        "pravniFormaRos": "121",
+        "financniUrad": "013",
+        "datumVzniku": "2003-01-23",
+        "datumAktualizace": "2026-08-07",
+        "dic": "CZ26311208",
+        "icoId": "26311208",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Terezínská 1214",
+          "radekAdresy2": "41002 Lovosice"
+        },
+        "czNace2008": [
+          "016",
+          "10410",
+          "10620",
+          "109",
+          "19200",
+          "20591",
+          "25720",
+          "27",
+          "461",
+          "46900",
+          "47300",
+          "7120"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "AKTIVNI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "ZANIKLY",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "AKTIVNI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "PREOL, a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 60,
+                  "nazevKraje": "Ústecký kraj",
+                  "kodOkresu": 3506,
+                  "nazevOkresu": "Litoměřice",
+                  "kodObce": 565229,
+                  "nazevObce": "Lovosice",
+                  "kodUlice": 266906,
+                  "nazevUlice": "Terezínská",
+                  "cisloDomovni": 1214,
+                  "kodCastiObce": 409006,
+                  "nazevCastiObce": "Lovosice",
+                  "kodAdresnihoMista": 27888291,
+                  "psc": 41002,
+                  "textovaAdresa": "Terezínská 1214, 41002 Lovosice",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "121",
+            "pravniFormaRos": "121",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "PREOL, a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 60,
+                  "nazevKraje": "Ústecký kraj",
+                  "kodOkresu": 3506,
+                  "nazevOkresu": "Litoměřice",
+                  "kodObce": 565229,
+                  "nazevObce": "Lovosice",
+                  "kodUlice": 266906,
+                  "nazevUlice": "Terezínská",
+                  "cisloDomovni": 1214,
+                  "kodCastiObce": 409006,
+                  "nazevCastiObce": "Lovosice",
+                  "kodAdresnihoMista": 27888291,
+                  "psc": 41002,
+                  "textovaAdresa": "Terezínská 1214, 41002 Lovosice",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "121",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "PREOL, a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 60,
+                  "nazevKraje": "Ústecký kraj",
+                  "kodOkresu": 3506,
+                  "nazevOkresu": "Litoměřice",
+                  "kodObce": 565229,
+                  "nazevObce": "Lovosice",
+                  "kodUlice": 266906,
+                  "nazevUlice": "Terezínská",
+                  "cisloDomovni": 1214,
+                  "kodCastiObce": 409006,
+                  "nazevCastiObce": "Lovosice",
+                  "kodAdresnihoMista": 27888291,
+                  "psc": 41002,
+                  "textovaAdresa": "Terezínská 1214, 41002 Lovosice",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "121",
+            "datovyZdroj": "rzp"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "PREOL, a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 60,
+                  "nazevKraje": "Ústecký kraj",
+                  "kodOkresu": 3506,
+                  "nazevOkresu": "Litoměřice",
+                  "kodObce": 565229,
+                  "nazevObce": "Lovosice",
+                  "kodUlice": 266906,
+                  "nazevUlice": "Terezínská",
+                  "cisloDomovni": 1214,
+                  "kodCastiObce": 409006,
+                  "nazevCastiObce": "Lovosice",
+                  "kodAdresnihoMista": 27888291,
+                  "psc": 41002,
+                  "textovaAdresa": "Terezínská 1214, 41002 Lovosice",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "121",
+            "spisovaZnacka": "B 1729/KSUL",
+            "datovyZdroj": "vr"
+          }
+        ],
+        "czNace": [
+          "016",
+          "10410",
+          "10620",
+          "27",
+          "47300",
+          "19200",
+          "25620",
+          "461",
+          "109",
+          "46900",
+          "71200",
+          "20510"
+        ],
+        "subRegistrSzr": "szr"
+      }
+    ]
+  }
+}

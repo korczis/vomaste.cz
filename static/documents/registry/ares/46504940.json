@@ -1,0 +1,321 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "46504940"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "46504940",
+        "obchodniJmeno": "Cerea, a.s.",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 94,
+          "nazevKraje": "Pardubický kraj",
+          "kodOkresu": 3606,
+          "nazevOkresu": "Pardubice",
+          "kodObce": 555134,
+          "nazevObce": "Pardubice",
+          "kodMestskeCastiObvodu": 555096,
+          "kodUlice": 667226,
+          "nazevMestskeCastiObvodu": "Pardubice IV",
+          "nazevUlice": "Dělnická",
+          "cisloDomovni": 384,
+          "kodCastiObce": 117820,
+          "nazevCastiObce": "Pardubičky",
+          "kodAdresnihoMista": 7727755,
+          "psc": 53003,
+          "textovaAdresa": "Dělnická 384, Pardubičky, 53003 Pardubice",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "121",
+        "pravniFormaRos": "121",
+        "financniUrad": "013",
+        "datumVzniku": "1992-05-04",
+        "datumAktualizace": "2026-08-05",
+        "dic": "CZ46504940",
+        "icoId": "46504940",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Dělnická 384",
+          "radekAdresy2": "Pardubičky",
+          "radekAdresy3": "53003 Pardubice"
+        },
+        "czNace2008": [
+          "00",
+          "014",
+          "01460",
+          "01500",
+          "016",
+          "01610",
+          "109",
+          "257",
+          "28",
+          "3317",
+          "38120",
+          "45200",
+          "46750",
+          "46900",
+          "471",
+          "47300",
+          "49410",
+          "52",
+          "55",
+          "64923",
+          "69200",
+          "71209",
+          "74902",
+          "77290",
+          "81290",
+          "82110",
+          "952"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "AKTIVNI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "AKTIVNI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "AKTIVNI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Cerea, a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 94,
+                  "nazevKraje": "Pardubický kraj",
+                  "kodOkresu": 3606,
+                  "nazevOkresu": "Pardubice",
+                  "kodObce": 555134,
+                  "nazevObce": "Pardubice",
+                  "kodMestskeCastiObvodu": 555096,
+                  "kodUlice": 667226,
+                  "nazevMestskeCastiObvodu": "Pardubice IV",
+                  "nazevUlice": "Dělnická",
+                  "cisloDomovni": 384,
+                  "kodCastiObce": 117820,
+                  "nazevCastiObce": "Pardubičky",
+                  "kodAdresnihoMista": 7727755,
+                  "psc": 53003,
+                  "textovaAdresa": "Dělnická 384, Pardubičky, 53003 Pardubice",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "121",
+            "pravniFormaRos": "121",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Cerea, a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 94,
+                  "nazevKraje": "Pardubický kraj",
+                  "kodOkresu": 3606,
+                  "nazevOkresu": "Pardubice",
+                  "kodObce": 555134,
+                  "nazevObce": "Pardubice",
+                  "kodMestskeCastiObvodu": 555096,
+                  "kodUlice": 667226,
+                  "nazevMestskeCastiObvodu": "Pardubice IV",
+                  "nazevUlice": "Dělnická",
+                  "cisloDomovni": 384,
+                  "kodCastiObce": 117820,
+                  "nazevCastiObce": "Pardubičky",
+                  "kodAdresnihoMista": 7727755,
+                  "psc": 53003,
+                  "textovaAdresa": "Dělnická 384, Pardubičky, 53003 Pardubice",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "121",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Cerea, a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 94,
+                  "nazevKraje": "Pardubický kraj",
+                  "kodOkresu": 3606,
+                  "nazevOkresu": "Pardubice",
+                  "kodObce": 555134,
+                  "nazevObce": "Pardubice",
+                  "kodMestskeCastiObvodu": 555096,
+                  "kodUlice": 667226,
+                  "nazevMestskeCastiObvodu": "Pardubice IV",
+                  "nazevUlice": "Dělnická",
+                  "cisloDomovni": 384,
+                  "kodCastiObce": 117820,
+                  "nazevCastiObce": "Pardubičky",
+                  "kodAdresnihoMista": 7727755,
+                  "psc": 53003,
+                  "textovaAdresa": "Dělnická 384, Pardubičky, 53003 Pardubice",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "121",
+            "datovyZdroj": "rzp"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Cerea, a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 94,
+                  "nazevKraje": "Pardubický kraj",
+                  "kodOkresu": 3606,
+                  "nazevOkresu": "Pardubice",
+                  "kodObce": 555134,
+                  "nazevObce": "Pardubice",
+                  "kodMestskeCastiObvodu": 555096,
+                  "kodUlice": 667226,
+                  "nazevMestskeCastiObvodu": "Pardubice IV",
+                  "nazevUlice": "Dělnická",
+                  "cisloDomovni": 384,
+                  "kodCastiObce": 117820,
+                  "nazevCastiObce": "Pardubičky",
+                  "kodAdresnihoMista": 7727755,
+                  "psc": 53003,
+                  "textovaAdresa": "Dělnická 384, Pardubičky, 53003 Pardubice",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "121",
+            "datovyZdroj": "szr"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Cerea, a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 94,
+                  "nazevKraje": "Pardubický kraj",
+                  "kodOkresu": 3606,
+                  "nazevOkresu": "Pardubice",
+                  "kodObce": 555134,
+                  "nazevObce": "Pardubice",
+                  "kodMestskeCastiObvodu": 555096,
+                  "kodUlice": 667226,
+                  "nazevMestskeCastiObvodu": "Pardubice IV",
+                  "nazevUlice": "Dělnická",
+                  "cisloDomovni": 384,
+                  "kodCastiObce": 117820,
+                  "nazevCastiObce": "Pardubičky",
+                  "kodAdresnihoMista": 7727755,
+                  "psc": 53003,
+                  "textovaAdresa": "Dělnická 384, Pardubičky, 53003 Pardubice",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "121",
+            "spisovaZnacka": "B 621/KSHK",
+            "datovyZdroj": "vr"
+          }
+        ],
+        "czNace": [
+          "49410",
+          "74990",
+          "82100",
+          "01460",
+          "00",
+          "28",
+          "95310",
+          "47300",
+          "52",
+          "71200",
+          "77220",
+          "952",
+          "46850",
+          "38120",
+          "69200",
+          "014",
+          "01500",
+          "01610",
+          "109",
+          "256",
+          "46900",
+          "016",
+          "3317",
+          "471",
+          "55",
+          "64923",
+          "81230"
+        ],
+        "subRegistrSzr": "ezp"
+      }
+    ]
+  }
+}

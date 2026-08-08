@@ -1,0 +1,150 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "64124584"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "64124584",
+        "obchodniJmeno": "Vrchní státní zastupitelství v Olomouci",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 124,
+          "nazevKraje": "Olomoucký kraj",
+          "kodOkresu": 3805,
+          "nazevOkresu": "Olomouc",
+          "kodObce": 500496,
+          "nazevObce": "Olomouc",
+          "kodUlice": 327034,
+          "nazevUlice": "17. listopadu",
+          "cisloDomovni": 909,
+          "kodCastiObce": 413836,
+          "cisloOrientacni": 44,
+          "nazevCastiObce": "Olomouc",
+          "kodAdresnihoMista": 25123793,
+          "psc": 77900,
+          "textovaAdresa": "17. listopadu 909/44, 77900 Olomouc",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "325",
+        "pravniFormaRos": "325",
+        "financniUrad": "379",
+        "datumAktualizace": "2026-03-12",
+        "icoId": "64124584",
+        "adresaDorucovaci": {
+          "radekAdresy1": "17. listopadu 909/44",
+          "radekAdresy2": "77900 Olomouc"
+        },
+        "czNace2008": [
+          "84230"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "NEEXISTUJICI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "NEEXISTUJICI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "NEEXISTUJICI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "NEEXISTUJICI",
+          "stavZdrojeMonitor": "AKTIVNI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Vrchní státní zastupitelství v Olomouci",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 124,
+                  "nazevKraje": "Olomoucký kraj",
+                  "kodOkresu": 3805,
+                  "nazevOkresu": "Olomouc",
+                  "kodObce": 500496,
+                  "nazevObce": "Olomouc",
+                  "kodUlice": 327034,
+                  "nazevUlice": "17. listopadu",
+                  "cisloDomovni": 909,
+                  "kodCastiObce": 413836,
+                  "cisloOrientacni": 44,
+                  "nazevCastiObce": "Olomouc",
+                  "kodAdresnihoMista": 25123793,
+                  "psc": 77900,
+                  "textovaAdresa": "17. listopadu 909/44, 77900 Olomouc",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "325",
+            "pravniFormaRos": "325",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Vrchní státní zastupitelství v Olomouci",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 124,
+                  "nazevKraje": "Olomoucký kraj",
+                  "kodOkresu": 3805,
+                  "nazevOkresu": "Olomouc",
+                  "kodObce": 500496,
+                  "nazevObce": "Olomouc",
+                  "kodUlice": 327034,
+                  "nazevUlice": "17. listopadu",
+                  "cisloDomovni": 909,
+                  "kodCastiObce": 413836,
+                  "cisloOrientacni": 44,
+                  "nazevCastiObce": "Olomouc",
+                  "kodAdresnihoMista": 25123793,
+                  "psc": 77900,
+                  "textovaAdresa": "17. listopadu 909/44, 77900 Olomouc",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "325",
+            "datovyZdroj": "ros"
+          }
+        ],
+        "czNace": [
+          "84230"
+        ]
+      }
+    ]
+  }
+}

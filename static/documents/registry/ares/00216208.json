@@ -1,0 +1,245 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "00216208"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "00216208",
+        "obchodniJmeno": "Univerzita Karlova",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 19,
+          "nazevSpravnihoObvodu": "Praha 1",
+          "kodMestskehoObvodu": 19,
+          "nazevMestskehoObvodu": "Praha 1",
+          "kodMestskeCastiObvodu": 500054,
+          "kodUlice": 463400,
+          "nazevMestskeCastiObvodu": "Praha 1",
+          "nazevUlice": "Ovocný trh",
+          "cisloDomovni": 560,
+          "kodCastiObce": 400017,
+          "cisloOrientacni": 5,
+          "nazevCastiObce": "Staré Město",
+          "kodAdresnihoMista": 21721653,
+          "psc": 11000,
+          "textovaAdresa": "Ovocný trh 560/5, Staré Město, 11000 Praha 1",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "601",
+        "pravniFormaRos": "601",
+        "financniUrad": "001",
+        "datumAktualizace": "2026-07-03",
+        "dic": "CZ00216208",
+        "icoId": "00216208",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Ovocný trh 560/5",
+          "radekAdresy2": "Staré Město",
+          "radekAdresy3": "11000 Praha 1"
+        },
+        "czNace2008": [
+          "721",
+          "722",
+          "85420"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "HISTORICKY",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "AKTIVNI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "AKTIVNI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Univerzita Karlova, Lékařská fakulta v Plzni",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 43,
+                  "nazevKraje": "Plzeňský kraj",
+                  "kodOkresu": 3405,
+                  "nazevOkresu": "Plzeň-město",
+                  "kodObce": 554791,
+                  "nazevObce": "Plzeň",
+                  "kodMestskeCastiObvodu": 545970,
+                  "kodUlice": 391875,
+                  "nazevMestskeCastiObvodu": "Plzeň 1",
+                  "nazevUlice": "alej Svobody",
+                  "cisloDomovni": 1655,
+                  "kodCastiObce": 406317,
+                  "cisloOrientacni": 76,
+                  "nazevCastiObce": "Severní Předměstí",
+                  "kodAdresnihoMista": 72835443,
+                  "psc": 32300,
+                  "textovaAdresa": "alej Svobody 1655/76, Severní Předměstí, 32300 Plzeň",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "736",
+            "datovyZdroj": "nrpzs"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Univerzita Karlova",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 19,
+                  "nazevSpravnihoObvodu": "Praha 1",
+                  "kodMestskehoObvodu": 19,
+                  "nazevMestskehoObvodu": "Praha 1",
+                  "kodMestskeCastiObvodu": 500054,
+                  "kodUlice": 463400,
+                  "nazevMestskeCastiObvodu": "Praha 1",
+                  "nazevUlice": "Ovocný trh",
+                  "cisloDomovni": 560,
+                  "kodCastiObce": 400017,
+                  "cisloOrientacni": 5,
+                  "nazevCastiObce": "Staré Město",
+                  "kodAdresnihoMista": 21721653,
+                  "psc": 11000,
+                  "textovaAdresa": "Ovocný trh 560/5, Staré Město, 11000 Praha 1",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "601",
+            "pravniFormaRos": "601",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Univerzita Karlova",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 19,
+                  "nazevSpravnihoObvodu": "Praha 1",
+                  "kodMestskehoObvodu": 19,
+                  "nazevMestskehoObvodu": "Praha 1",
+                  "kodMestskeCastiObvodu": 500054,
+                  "kodUlice": 463400,
+                  "nazevMestskeCastiObvodu": "Praha 1",
+                  "nazevUlice": "Ovocný trh",
+                  "cisloDomovni": 560,
+                  "kodCastiObce": 400017,
+                  "cisloOrientacni": 5,
+                  "nazevCastiObce": "Staré Město",
+                  "kodAdresnihoMista": 21721653,
+                  "psc": 11000,
+                  "textovaAdresa": "Ovocný trh 560/5, Staré Město, 11000 Praha 1",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "601",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Univerzita Karlova",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 19,
+                  "nazevSpravnihoObvodu": "Praha 1",
+                  "kodMestskehoObvodu": 19,
+                  "nazevMestskehoObvodu": "Praha 1",
+                  "kodMestskeCastiObvodu": 500054,
+                  "kodUlice": 463400,
+                  "nazevMestskeCastiObvodu": "Praha 1",
+                  "nazevUlice": "Ovocný trh",
+                  "cisloDomovni": 560,
+                  "kodCastiObce": 400017,
+                  "cisloOrientacni": 5,
+                  "nazevCastiObce": "Staré Město",
+                  "kodAdresnihoMista": 21721653,
+                  "psc": 11000,
+                  "textovaAdresa": "Ovocný trh 560/5, Staré Město, 11000 Praha 1",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "601",
+            "datovyZdroj": "rzp"
+          }
+        ],
+        "czNace": [
+          "85402",
+          "72100",
+          "72200"
+        ],
+        "subRegistrSzr": "szr"
+      }
+    ]
+  }
+}

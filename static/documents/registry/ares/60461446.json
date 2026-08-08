@@ -1,0 +1,204 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "60461446"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "60461446",
+        "obchodniJmeno": "Akademie výtvarných umění v Praze",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 78,
+          "nazevSpravnihoObvodu": "Praha 7",
+          "kodMestskehoObvodu": 78,
+          "nazevMestskehoObvodu": "Praha 7",
+          "kodMestskeCastiObvodu": 500186,
+          "kodUlice": 472867,
+          "nazevMestskeCastiObvodu": "Praha 7",
+          "nazevUlice": "U akademie",
+          "cisloDomovni": 172,
+          "kodCastiObce": 490024,
+          "cisloOrientacni": 4,
+          "nazevCastiObce": "Bubeneč",
+          "kodAdresnihoMista": 22293302,
+          "psc": 17000,
+          "textovaAdresa": "U akademie 172/4, Bubeneč, 17000 Praha 7",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "601",
+        "pravniFormaRos": "601",
+        "financniUrad": "007",
+        "datumAktualizace": "2026-06-14",
+        "dic": "CZ60461446",
+        "icoId": "60461446",
+        "adresaDorucovaci": {
+          "radekAdresy1": "U akademie 172/4",
+          "radekAdresy2": "Bubeneč",
+          "radekAdresy3": "17000 Praha 7"
+        },
+        "czNace2008": [
+          "85420"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "NEEXISTUJICI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "AKTIVNI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Akademie výtvarných umění v Praze",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 78,
+                  "nazevSpravnihoObvodu": "Praha 7",
+                  "kodMestskehoObvodu": 78,
+                  "nazevMestskehoObvodu": "Praha 7",
+                  "kodMestskeCastiObvodu": 500186,
+                  "kodUlice": 472867,
+                  "nazevMestskeCastiObvodu": "Praha 7",
+                  "nazevUlice": "U akademie",
+                  "cisloDomovni": 172,
+                  "kodCastiObce": 490024,
+                  "cisloOrientacni": 4,
+                  "nazevCastiObce": "Bubeneč",
+                  "kodAdresnihoMista": 22293302,
+                  "psc": 17000,
+                  "textovaAdresa": "U akademie 172/4, Bubeneč, 17000 Praha 7",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "601",
+            "pravniFormaRos": "601",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Akademie výtvarných umění v Praze",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 78,
+                  "nazevSpravnihoObvodu": "Praha 7",
+                  "kodMestskehoObvodu": 78,
+                  "nazevMestskehoObvodu": "Praha 7",
+                  "kodMestskeCastiObvodu": 500186,
+                  "kodUlice": 472867,
+                  "nazevMestskeCastiObvodu": "Praha 7",
+                  "nazevUlice": "U akademie",
+                  "cisloDomovni": 172,
+                  "kodCastiObce": 490024,
+                  "cisloOrientacni": 4,
+                  "nazevCastiObce": "Bubeneč",
+                  "kodAdresnihoMista": 22293302,
+                  "psc": 17000,
+                  "textovaAdresa": "U akademie 172/4, Bubeneč, 17000 Praha 7",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "601",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Akademie výtvarných umění v Praze",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 78,
+                  "nazevSpravnihoObvodu": "Praha 7",
+                  "kodMestskehoObvodu": 78,
+                  "nazevMestskehoObvodu": "Praha 7",
+                  "kodMestskeCastiObvodu": 500186,
+                  "kodUlice": 472867,
+                  "nazevMestskeCastiObvodu": "Praha 7",
+                  "nazevUlice": "U akademie",
+                  "cisloDomovni": 172,
+                  "kodCastiObce": 490024,
+                  "cisloOrientacni": 4,
+                  "nazevCastiObce": "Bubeneč",
+                  "kodAdresnihoMista": 22293302,
+                  "psc": 17000,
+                  "textovaAdresa": "U akademie 172/4, Bubeneč, 17000 Praha 7",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "601",
+            "datovyZdroj": "rzp"
+          }
+        ],
+        "czNace": [
+          "85401"
+        ]
+      }
+    ]
+  }
+}

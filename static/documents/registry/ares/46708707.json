@@ -1,0 +1,249 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "46708707"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "46708707",
+        "obchodniJmeno": "SETUZA a.s.",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 60,
+          "nazevKraje": "Ústecký kraj",
+          "kodOkresu": 3510,
+          "nazevOkresu": "Ústí nad Labem",
+          "kodObce": 554804,
+          "nazevObce": "Ústí nad Labem",
+          "kodMestskeCastiObvodu": 502316,
+          "kodUlice": 622354,
+          "nazevMestskeCastiObvodu": "Ústí nad Labem-Střekov",
+          "nazevUlice": "Žukovova",
+          "cisloDomovni": 100,
+          "kodCastiObce": 409448,
+          "cisloOrientacni": 27,
+          "nazevCastiObce": "Střekov",
+          "kodAdresnihoMista": 17900212,
+          "psc": 40003,
+          "textovaAdresa": "Žukovova 100/27, Střekov, 40003 Ústí nad Labem",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "121",
+        "pravniFormaRos": "121",
+        "financniUrad": "214",
+        "datumVzniku": "1992-05-07",
+        "datumAktualizace": "2025-08-23",
+        "dic": "CZ46708707",
+        "icoId": "46708707",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Žukovova 100/27",
+          "radekAdresy2": "Střekov",
+          "radekAdresy3": "40003 Ústí nad Labem"
+        },
+        "czNace2008": [
+          "10410",
+          "10890",
+          "109",
+          "201",
+          "461",
+          "46900",
+          "471"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "AKTIVNI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "HISTORICKY",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "ZANIKLY",
+          "stavZdrojeIr": "AKTIVNI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "NEEXISTUJICI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "SETUZA a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 60,
+                  "nazevKraje": "Ústecký kraj",
+                  "kodOkresu": 3510,
+                  "nazevOkresu": "Ústí nad Labem",
+                  "kodObce": 554804,
+                  "nazevObce": "Ústí nad Labem",
+                  "kodMestskeCastiObvodu": 502316,
+                  "kodUlice": 622354,
+                  "nazevMestskeCastiObvodu": "Ústí nad Labem-Střekov",
+                  "nazevUlice": "Žukovova",
+                  "cisloDomovni": 100,
+                  "kodCastiObce": 409448,
+                  "cisloOrientacni": 27,
+                  "nazevCastiObce": "Střekov",
+                  "kodAdresnihoMista": 17900212,
+                  "psc": 40003,
+                  "textovaAdresa": "Žukovova 100/27, Střekov, 40003 Ústí nad Labem",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "121",
+            "pravniFormaRos": "121",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "SETUZA a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 60,
+                  "nazevKraje": "Ústecký kraj",
+                  "kodOkresu": 3510,
+                  "nazevOkresu": "Ústí nad Labem",
+                  "kodObce": 554804,
+                  "nazevObce": "Ústí nad Labem",
+                  "kodMestskeCastiObvodu": 502316,
+                  "kodUlice": 622354,
+                  "nazevMestskeCastiObvodu": "Ústí nad Labem-Střekov",
+                  "nazevUlice": "Žukovova",
+                  "cisloDomovni": 100,
+                  "kodCastiObce": 409448,
+                  "cisloOrientacni": 27,
+                  "nazevCastiObce": "Střekov",
+                  "kodAdresnihoMista": 17900212,
+                  "psc": 40003,
+                  "textovaAdresa": "Žukovova 100/27, Střekov, 40003 Ústí nad Labem",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "121",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "SETUZA a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 60,
+                  "nazevKraje": "Ústecký kraj",
+                  "kodOkresu": 3510,
+                  "nazevOkresu": "Ústí nad Labem",
+                  "kodObce": 554804,
+                  "nazevObce": "Ústí nad Labem",
+                  "kodMestskeCastiObvodu": 502316,
+                  "kodUlice": 622354,
+                  "nazevMestskeCastiObvodu": "Ústí nad Labem-Střekov",
+                  "nazevUlice": "Žukovova",
+                  "cisloDomovni": 100,
+                  "kodCastiObce": 409448,
+                  "cisloOrientacni": 27,
+                  "nazevCastiObce": "Střekov",
+                  "kodAdresnihoMista": 17900212,
+                  "psc": 40003,
+                  "textovaAdresa": "Žukovova 100/27, Střekov, 40003 Ústí nad Labem",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "121",
+            "datovyZdroj": "rzp"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "SETUZA a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 60,
+                  "nazevKraje": "Ústecký kraj",
+                  "kodOkresu": 3510,
+                  "nazevOkresu": "Ústí nad Labem",
+                  "kodObce": 554804,
+                  "nazevObce": "Ústí nad Labem",
+                  "kodMestskeCastiObvodu": 502316,
+                  "kodUlice": 622354,
+                  "nazevMestskeCastiObvodu": "Ústí nad Labem-Střekov",
+                  "nazevUlice": "Žukovova",
+                  "cisloDomovni": 100,
+                  "kodCastiObce": 409448,
+                  "cisloOrientacni": 27,
+                  "nazevCastiObce": "Střekov",
+                  "kodAdresnihoMista": 17900212,
+                  "psc": 40003,
+                  "textovaAdresa": "Žukovova 100/27, Střekov, 40003 Ústí nad Labem",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "121",
+            "spisovaZnacka": "B 273/KSUL",
+            "datovyZdroj": "vr"
+          }
+        ],
+        "czNace": [
+          "461",
+          "109",
+          "46900",
+          "10410",
+          "10890",
+          "471",
+          "201"
+        ],
+        "subRegistrSzr": "szr"
+      }
+    ]
+  }
+}

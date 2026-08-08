@@ -1,0 +1,159 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "70888337"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "70888337",
+        "obchodniJmeno": "Jihomoravský kraj",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 116,
+          "nazevKraje": "Jihomoravský kraj",
+          "kodOkresu": 3702,
+          "nazevOkresu": "Brno-město",
+          "kodObce": 582786,
+          "nazevObce": "Brno",
+          "kodMestskeCastiObvodu": 550973,
+          "kodUlice": 35831,
+          "nazevMestskeCastiObvodu": "Brno-střed",
+          "nazevUlice": "Žerotínovo náměstí",
+          "cisloDomovni": 449,
+          "kodCastiObce": 411639,
+          "cisloOrientacni": 3,
+          "nazevCastiObce": "Veveří",
+          "kodAdresnihoMista": 19170424,
+          "psc": 60200,
+          "textovaAdresa": "Žerotínovo náměstí 449/3, Veveří, 60200 Brno",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "804",
+        "pravniFormaRos": "804",
+        "financniUrad": "288",
+        "datumAktualizace": "2026-05-23",
+        "dic": "CZ70888337",
+        "icoId": "70888337",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Žerotínovo náměstí 449/3",
+          "radekAdresy2": "Veveří",
+          "radekAdresy3": "60200 Brno"
+        },
+        "czNace2008": [
+          "84110"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "NEEXISTUJICI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "NEEXISTUJICI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "AKTIVNI",
+          "stavZdrojeMonitor": "AKTIVNI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Jihomoravský kraj",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 116,
+                  "nazevKraje": "Jihomoravský kraj",
+                  "kodOkresu": 3702,
+                  "nazevOkresu": "Brno-město",
+                  "kodObce": 582786,
+                  "nazevObce": "Brno",
+                  "kodMestskeCastiObvodu": 550973,
+                  "kodUlice": 35831,
+                  "nazevMestskeCastiObvodu": "Brno-střed",
+                  "nazevUlice": "Žerotínovo náměstí",
+                  "cisloDomovni": 449,
+                  "kodCastiObce": 411639,
+                  "cisloOrientacni": 3,
+                  "nazevCastiObce": "Veveří",
+                  "kodAdresnihoMista": 19170424,
+                  "psc": 60200,
+                  "textovaAdresa": "Žerotínovo náměstí 449/3, Veveří, 60200 Brno",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "804",
+            "pravniFormaRos": "804",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Jihomoravský kraj",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 116,
+                  "nazevKraje": "Jihomoravský kraj",
+                  "kodOkresu": 3702,
+                  "nazevOkresu": "Brno-město",
+                  "kodObce": 582786,
+                  "nazevObce": "Brno",
+                  "kodMestskeCastiObvodu": 550973,
+                  "kodUlice": 35831,
+                  "nazevMestskeCastiObvodu": "Brno-střed",
+                  "nazevUlice": "Žerotínovo náměstí",
+                  "cisloDomovni": 449,
+                  "kodCastiObce": 411639,
+                  "cisloOrientacni": 3,
+                  "nazevCastiObce": "Veveří",
+                  "kodAdresnihoMista": 19170424,
+                  "psc": 60200,
+                  "textovaAdresa": "Žerotínovo náměstí 449/3, Veveří, 60200 Brno",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "804",
+            "datovyZdroj": "ros"
+          }
+        ],
+        "czNace": [
+          "84110"
+        ],
+        "subRegistrSzr": "szr"
+      }
+    ]
+  }
+}

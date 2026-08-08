@@ -1,0 +1,184 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "00284301"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "00284301",
+        "obchodniJmeno": "město Otrokovice",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 141,
+          "nazevKraje": "Zlínský kraj",
+          "kodOkresu": 3705,
+          "nazevOkresu": "Zlín",
+          "kodObce": 585599,
+          "nazevObce": "Otrokovice",
+          "kodUlice": 641456,
+          "nazevUlice": "nám. 3. května",
+          "cisloDomovni": 1340,
+          "kodCastiObce": 412180,
+          "nazevCastiObce": "Otrokovice",
+          "kodAdresnihoMista": 4146531,
+          "psc": 76502,
+          "textovaAdresa": "nám. 3. května 1340, 76502 Otrokovice",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "801",
+        "pravniFormaRos": "801",
+        "financniUrad": "305",
+        "datumAktualizace": "2026-04-25",
+        "dic": "CZ00284301",
+        "icoId": "00284301",
+        "adresaDorucovaci": {
+          "radekAdresy1": "nám. 3. května 1340",
+          "radekAdresy2": "76502 Otrokovice"
+        },
+        "czNace2008": [
+          "84110"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "NEEXISTUJICI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "HISTORICKY",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "AKTIVNI",
+          "stavZdrojeMonitor": "AKTIVNI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "město Otrokovice",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 141,
+                  "nazevKraje": "Zlínský kraj",
+                  "kodOkresu": 3705,
+                  "nazevOkresu": "Zlín",
+                  "kodObce": 585599,
+                  "nazevObce": "Otrokovice",
+                  "kodUlice": 641456,
+                  "nazevUlice": "nám. 3. května",
+                  "cisloDomovni": 1340,
+                  "kodCastiObce": 412180,
+                  "nazevCastiObce": "Otrokovice",
+                  "kodAdresnihoMista": 4146531,
+                  "psc": 76502,
+                  "textovaAdresa": "nám. 3. května 1340, 76502 Otrokovice",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "801",
+            "pravniFormaRos": "801",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "město Otrokovice",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 141,
+                  "nazevKraje": "Zlínský kraj",
+                  "kodOkresu": 3705,
+                  "nazevOkresu": "Zlín",
+                  "kodObce": 585599,
+                  "nazevObce": "Otrokovice",
+                  "kodUlice": 641456,
+                  "nazevUlice": "nám. 3. května",
+                  "cisloDomovni": 1340,
+                  "kodCastiObce": 412180,
+                  "nazevCastiObce": "Otrokovice",
+                  "kodAdresnihoMista": 4146531,
+                  "psc": 76502,
+                  "textovaAdresa": "nám. 3. května 1340, 76502 Otrokovice",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "801",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Město Otrokovice",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 141,
+                  "nazevKraje": "Zlínský kraj",
+                  "kodOkresu": 3705,
+                  "nazevOkresu": "Zlín",
+                  "kodObce": 585599,
+                  "nazevObce": "Otrokovice",
+                  "kodUlice": 641456,
+                  "nazevUlice": "nám. 3. května",
+                  "cisloDomovni": 1340,
+                  "kodCastiObce": 412180,
+                  "nazevCastiObce": "Otrokovice",
+                  "kodAdresnihoMista": 4146531,
+                  "psc": 76502,
+                  "textovaAdresa": "nám. 3. května 1340, 76502 Otrokovice",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "801",
+            "datovyZdroj": "rzp"
+          }
+        ],
+        "czNace": [
+          "84110"
+        ],
+        "subRegistrSzr": "szr"
+      }
+    ]
+  }
+}

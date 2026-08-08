@@ -1,0 +1,203 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "71443339"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "71443339",
+        "obchodniJmeno": "ANO 2011",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 43,
+          "nazevSpravnihoObvodu": "Praha 4",
+          "kodMestskehoObvodu": 43,
+          "nazevMestskehoObvodu": "Praha 4",
+          "kodMestskeCastiObvodu": 547034,
+          "kodUlice": 769762,
+          "nazevMestskeCastiObvodu": "Praha 11",
+          "nazevUlice": "Babická",
+          "cisloDomovni": 2329,
+          "kodCastiObce": 400211,
+          "cisloOrientacni": 2,
+          "nazevCastiObce": "Chodov",
+          "kodAdresnihoMista": 26658313,
+          "psc": 14900,
+          "textovaAdresa": "Babická 2329/2, Chodov, 14900 Praha 4",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "711",
+        "pravniFormaRos": "711",
+        "financniUrad": "011",
+        "datumVzniku": "2012-05-11",
+        "datumAktualizace": "2026-07-11",
+        "icoId": "71443339",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Babická 2329/2",
+          "radekAdresy2": "Chodov",
+          "radekAdresy3": "14900 Praha 4"
+        },
+        "czNace2008": [
+          "94920"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "NEEXISTUJICI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "NEEXISTUJICI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "AKTIVNI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "NEEXISTUJICI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "NEEXISTUJICI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "ANO 2011",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 116,
+                  "nazevSpravnihoObvodu": "Praha 11",
+                  "kodMestskehoObvodu": 43,
+                  "nazevMestskehoObvodu": "Praha 4",
+                  "kodMestskeCastiObvodu": 547034,
+                  "kodUlice": 769762,
+                  "nazevMestskeCastiObvodu": "Praha 11",
+                  "nazevUlice": "Babická",
+                  "cisloDomovni": 2329,
+                  "kodCastiObce": 400211,
+                  "cisloOrientacni": 2,
+                  "nazevCastiObce": "Chodov",
+                  "kodAdresnihoMista": 26658313,
+                  "psc": 14900,
+                  "textovaAdresa": "Babická 2329/2, Chodov, 14900 Praha 4",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "711",
+            "pravniFormaRos": "711",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "ANO 2011",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 43,
+                  "nazevSpravnihoObvodu": "Praha 4",
+                  "kodMestskehoObvodu": 43,
+                  "nazevMestskehoObvodu": "Praha 4",
+                  "kodMestskeCastiObvodu": 547034,
+                  "kodUlice": 769762,
+                  "nazevMestskeCastiObvodu": "Praha 11",
+                  "nazevUlice": "Babická",
+                  "cisloDomovni": 2329,
+                  "kodCastiObce": 400211,
+                  "cisloOrientacni": 2,
+                  "nazevCastiObce": "Chodov",
+                  "kodAdresnihoMista": 26658313,
+                  "psc": 14900,
+                  "textovaAdresa": "Babická 2329/2, Chodov, 14900 Praha 4",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "711",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "ANO 2011",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 43,
+                  "nazevSpravnihoObvodu": "Praha 4",
+                  "kodMestskehoObvodu": 43,
+                  "nazevMestskehoObvodu": "Praha 4",
+                  "kodMestskeCastiObvodu": 547034,
+                  "kodUlice": 769762,
+                  "nazevMestskeCastiObvodu": "Praha 11",
+                  "nazevUlice": "Babická",
+                  "cisloDomovni": 2329,
+                  "kodCastiObce": 400211,
+                  "cisloOrientacni": 2,
+                  "nazevCastiObce": "Chodov",
+                  "kodAdresnihoMista": 26658313,
+                  "psc": 14900,
+                  "textovaAdresa": "Babická 2329/2, Chodov, 14900 Praha 4",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "711",
+            "datovyZdroj": "rpsh"
+          }
+        ],
+        "czNace": [
+          "94920"
+        ],
+        "subRegistrSzr": "szr"
+      }
+    ]
+  }
+}

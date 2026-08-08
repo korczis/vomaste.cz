@@ -1,0 +1,222 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "00023752"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "00023752",
+        "obchodniJmeno": "Národní ústav duševního zdraví",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 27,
+          "nazevKraje": "Středočeský kraj",
+          "kodOkresu": 3209,
+          "nazevOkresu": "Praha-východ",
+          "kodObce": 538311,
+          "nazevObce": "Klecany",
+          "kodUlice": 694118,
+          "nazevUlice": "Topolová",
+          "cisloDomovni": 748,
+          "kodCastiObce": 66036,
+          "nazevCastiObce": "Klecany",
+          "kodAdresnihoMista": 73426539,
+          "psc": 25067,
+          "textovaAdresa": "Topolová 748, 25067 Klecany",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "332",
+        "pravniFormaRos": "332",
+        "financniUrad": "057",
+        "datumVzniku": "1961-01-01",
+        "datumAktualizace": "2026-03-12",
+        "dic": "CZ00023752",
+        "icoId": "00023752",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Topolová 748",
+          "radekAdresy2": "25067 Klecany"
+        },
+        "czNace2008": [
+          "7219",
+          "8622"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "NEEXISTUJICI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "AKTIVNI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "AKTIVNI",
+          "stavZdrojeMonitor": "AKTIVNI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Národní ústav duševního zdraví",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 27,
+                  "nazevKraje": "Středočeský kraj",
+                  "kodOkresu": 3209,
+                  "nazevOkresu": "Praha-východ",
+                  "kodObce": 538311,
+                  "nazevObce": "Klecany",
+                  "kodUlice": 694118,
+                  "nazevUlice": "Topolová",
+                  "cisloDomovni": 748,
+                  "kodCastiObce": 66036,
+                  "nazevCastiObce": "Klecany",
+                  "kodAdresnihoMista": 73426539,
+                  "psc": 25067,
+                  "textovaAdresa": "Topolová 748, 25067 Klecany",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "331",
+            "datovyZdroj": "nrpzs"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Národní ústav duševního zdraví",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 27,
+                  "nazevKraje": "Středočeský kraj",
+                  "kodOkresu": 3209,
+                  "nazevOkresu": "Praha-východ",
+                  "kodObce": 538311,
+                  "nazevObce": "Klecany",
+                  "kodUlice": 694118,
+                  "nazevUlice": "Topolová",
+                  "cisloDomovni": 748,
+                  "kodCastiObce": 66036,
+                  "nazevCastiObce": "Klecany",
+                  "kodAdresnihoMista": 73426539,
+                  "psc": 25067,
+                  "textovaAdresa": "Topolová 748, 25067 Klecany",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "332",
+            "pravniFormaRos": "332",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Národní ústav duševního zdraví",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 27,
+                  "nazevKraje": "Středočeský kraj",
+                  "kodOkresu": 3209,
+                  "nazevOkresu": "Praha-východ",
+                  "kodObce": 538311,
+                  "nazevObce": "Klecany",
+                  "kodUlice": 694118,
+                  "nazevUlice": "Topolová",
+                  "cisloDomovni": 748,
+                  "kodCastiObce": 66036,
+                  "nazevCastiObce": "Klecany",
+                  "kodAdresnihoMista": 73426539,
+                  "psc": 25067,
+                  "textovaAdresa": "Topolová 748, 25067 Klecany",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "332",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Národní ústav duševního zdraví",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 27,
+                  "nazevKraje": "Středočeský kraj",
+                  "kodOkresu": 3209,
+                  "nazevOkresu": "Praha-východ",
+                  "kodObce": 538311,
+                  "nazevObce": "Klecany",
+                  "kodUlice": 694118,
+                  "nazevUlice": "Topolová",
+                  "cisloDomovni": 748,
+                  "kodCastiObce": 66036,
+                  "nazevCastiObce": "Klecany",
+                  "kodAdresnihoMista": 73426539,
+                  "psc": 25067,
+                  "textovaAdresa": "Topolová 748, 25067 Klecany",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "332",
+            "datovyZdroj": "rzp"
+          }
+        ],
+        "czNace": [
+          "72100",
+          "86220"
+        ],
+        "subRegistrSzr": "szr"
+      }
+    ]
+  }
+}

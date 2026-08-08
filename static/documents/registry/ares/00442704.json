@@ -1,0 +1,206 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "00442704"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "00442704",
+        "obchodniJmeno": "KDU-ČSL",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 27,
+          "nazevSpravnihoObvodu": "Praha 2",
+          "kodMestskehoObvodu": 27,
+          "nazevMestskehoObvodu": "Praha 2",
+          "kodMestskeCastiObvodu": 500089,
+          "kodUlice": 451517,
+          "nazevMestskeCastiObvodu": "Praha 2",
+          "nazevUlice": "Karlovo náměstí",
+          "cisloDomovni": 317,
+          "kodCastiObce": 490148,
+          "cisloOrientacni": 5,
+          "nazevCastiObce": "Nové Město",
+          "kodAdresnihoMista": 21728356,
+          "psc": 12000,
+          "textovaAdresa": "Karlovo náměstí 317/5, Nové Město, 12000 Praha 2",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "711",
+        "pravniFormaRos": "711",
+        "financniUrad": "002",
+        "datumVzniku": "1991-11-12",
+        "datumAktualizace": "2026-07-28",
+        "dic": "CZ00442704",
+        "icoId": "00442704",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Karlovo náměstí 317/5",
+          "radekAdresy2": "Nové Město",
+          "radekAdresy3": "12000 Praha 2"
+        },
+        "czNace2008": [
+          "94920"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "NEEXISTUJICI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "NEEXISTUJICI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "AKTIVNI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "AKTIVNI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "KDU-ČSL",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 27,
+                  "nazevSpravnihoObvodu": "Praha 2",
+                  "kodMestskehoObvodu": 27,
+                  "nazevMestskehoObvodu": "Praha 2",
+                  "kodMestskeCastiObvodu": 500089,
+                  "kodUlice": 451517,
+                  "nazevMestskeCastiObvodu": "Praha 2",
+                  "nazevUlice": "Karlovo náměstí",
+                  "cisloDomovni": 317,
+                  "kodCastiObce": 490148,
+                  "cisloOrientacni": 5,
+                  "nazevCastiObce": "Nové Město",
+                  "kodAdresnihoMista": 21728356,
+                  "psc": 12000,
+                  "textovaAdresa": "Karlovo náměstí 317/5, Nové Město, 12000 Praha 2",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "711",
+            "pravniFormaRos": "711",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "KDU-ČSL",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 27,
+                  "nazevSpravnihoObvodu": "Praha 2",
+                  "kodMestskehoObvodu": 27,
+                  "nazevMestskehoObvodu": "Praha 2",
+                  "kodMestskeCastiObvodu": 500089,
+                  "kodUlice": 451517,
+                  "nazevMestskeCastiObvodu": "Praha 2",
+                  "nazevUlice": "Karlovo náměstí",
+                  "cisloDomovni": 317,
+                  "kodCastiObce": 490148,
+                  "cisloOrientacni": 5,
+                  "nazevCastiObce": "Nové Město",
+                  "kodAdresnihoMista": 21728356,
+                  "psc": 12000,
+                  "textovaAdresa": "Karlovo náměstí 317/5, Nové Město, 12000 Praha 2",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "711",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "KDU-ČSL",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 27,
+                  "nazevSpravnihoObvodu": "Praha 2",
+                  "kodMestskehoObvodu": 27,
+                  "nazevMestskehoObvodu": "Praha 2",
+                  "kodMestskeCastiObvodu": 500089,
+                  "kodUlice": 451517,
+                  "nazevMestskeCastiObvodu": "Praha 2",
+                  "nazevUlice": "Karlovo náměstí",
+                  "cisloDomovni": 317,
+                  "kodCastiObce": 490148,
+                  "cisloOrientacni": 5,
+                  "nazevCastiObce": "Nové Město",
+                  "kodAdresnihoMista": 21728356,
+                  "psc": 12000,
+                  "textovaAdresa": "Karlovo náměstí 317/5, Nové Město, 12000 Praha 2",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "711",
+            "datovyZdroj": "rpsh"
+          }
+        ],
+        "czNace": [
+          "94920"
+        ],
+        "subRegistrSzr": "szr"
+      }
+    ]
+  }
+}

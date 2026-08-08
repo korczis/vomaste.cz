@@ -1,0 +1,248 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "04771664"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "04771664",
+        "obchodniJmeno": "DRILL COMPANY, s.r.o.",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 86,
+          "nazevSpravnihoObvodu": "Praha 8",
+          "kodMestskehoObvodu": 86,
+          "nazevMestskehoObvodu": "Praha 8",
+          "kodMestskeCastiObvodu": 500208,
+          "kodUlice": 506044,
+          "nazevMestskeCastiObvodu": "Praha 8",
+          "nazevUlice": "Na pískovně",
+          "cisloDomovni": 834,
+          "kodCastiObce": 400581,
+          "cisloOrientacni": 2,
+          "nazevCastiObce": "Bohnice",
+          "kodAdresnihoMista": 26292840,
+          "psc": 18100,
+          "textovaAdresa": "Na pískovně 834/2, Bohnice, 18100 Praha 8",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "112",
+        "pravniFormaRos": "112",
+        "financniUrad": "008",
+        "datumVzniku": "2016-02-12",
+        "datumAktualizace": "2026-06-20",
+        "dic": "CZ04771664",
+        "icoId": "04771664",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Na pískovně 834/2",
+          "radekAdresy2": "Bohnice",
+          "radekAdresy3": "18100 Praha 8"
+        },
+        "czNace2008": [
+          "00",
+          "74"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "AKTIVNI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "ZANIKLY",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "NEEXISTUJICI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "DRILL COMPANY, s.r.o.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 86,
+                  "nazevSpravnihoObvodu": "Praha 8",
+                  "kodMestskehoObvodu": 86,
+                  "nazevMestskehoObvodu": "Praha 8",
+                  "kodMestskeCastiObvodu": 500208,
+                  "kodUlice": 506044,
+                  "nazevMestskeCastiObvodu": "Praha 8",
+                  "nazevUlice": "Na pískovně",
+                  "cisloDomovni": 834,
+                  "kodCastiObce": 400581,
+                  "cisloOrientacni": 2,
+                  "nazevCastiObce": "Bohnice",
+                  "kodAdresnihoMista": 26292840,
+                  "psc": 18100,
+                  "textovaAdresa": "Na pískovně 834/2, Bohnice, 18100 Praha 8",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "112",
+            "pravniFormaRos": "112",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "DRILL COMPANY, s.r.o.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 86,
+                  "nazevSpravnihoObvodu": "Praha 8",
+                  "kodMestskehoObvodu": 86,
+                  "nazevMestskehoObvodu": "Praha 8",
+                  "kodMestskeCastiObvodu": 500208,
+                  "kodUlice": 506044,
+                  "nazevMestskeCastiObvodu": "Praha 8",
+                  "nazevUlice": "Na pískovně",
+                  "cisloDomovni": 834,
+                  "kodCastiObce": 400581,
+                  "cisloOrientacni": 2,
+                  "nazevCastiObce": "Bohnice",
+                  "kodAdresnihoMista": 26292840,
+                  "psc": 18100,
+                  "textovaAdresa": "Na pískovně 834/2, Bohnice, 18100 Praha 8",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "112",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "DRILL COMPANY, s.r.o.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 86,
+                  "nazevSpravnihoObvodu": "Praha 8",
+                  "kodMestskehoObvodu": 86,
+                  "nazevMestskehoObvodu": "Praha 8",
+                  "kodMestskeCastiObvodu": 500208,
+                  "kodUlice": 506044,
+                  "nazevMestskeCastiObvodu": "Praha 8",
+                  "nazevUlice": "Na pískovně",
+                  "cisloDomovni": 834,
+                  "kodCastiObce": 400581,
+                  "cisloOrientacni": 2,
+                  "nazevCastiObce": "Bohnice",
+                  "kodAdresnihoMista": 26292840,
+                  "psc": 18100,
+                  "textovaAdresa": "Na pískovně 834/2, Bohnice, 18100 Praha 8",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "112",
+            "datovyZdroj": "rzp"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "DRILL COMPANY, s.r.o.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 86,
+                  "nazevSpravnihoObvodu": "Praha 8",
+                  "kodMestskehoObvodu": 86,
+                  "nazevMestskehoObvodu": "Praha 8",
+                  "kodMestskeCastiObvodu": 500208,
+                  "kodUlice": 506044,
+                  "nazevMestskeCastiObvodu": "Praha 8",
+                  "nazevUlice": "Na pískovně",
+                  "cisloDomovni": 834,
+                  "kodCastiObce": 400581,
+                  "cisloOrientacni": 2,
+                  "nazevCastiObce": "Bohnice",
+                  "kodAdresnihoMista": 26292840,
+                  "psc": 18100,
+                  "textovaAdresa": "Na pískovně 834/2, Bohnice, 18100 Praha 8",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "112",
+            "spisovaZnacka": "C 253390/MSPH",
+            "datovyZdroj": "vr"
+          }
+        ],
+        "czNace": [
+          "74",
+          "00"
+        ]
+      }
+    ]
+  }
+}

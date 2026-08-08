@@ -1,0 +1,254 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "22461787"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "22461787",
+        "obchodniJmeno": "EXTREME BFG CAST, s.r.o.",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 116,
+          "nazevKraje": "Jihomoravský kraj",
+          "kodOkresu": 3702,
+          "nazevOkresu": "Brno-město",
+          "kodObce": 582786,
+          "nazevObce": "Brno",
+          "kodMestskeCastiObvodu": 550973,
+          "kodUlice": 36102,
+          "nazevMestskeCastiObvodu": "Brno-střed",
+          "nazevUlice": "Heršpická",
+          "cisloDomovni": 813,
+          "kodCastiObce": 411604,
+          "cisloOrientacni": 5,
+          "nazevCastiObce": "Štýřice",
+          "kodAdresnihoMista": 25099159,
+          "psc": 63900,
+          "textovaAdresa": "Heršpická 813/5, Štýřice, 63900 Brno",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "112",
+        "pravniFormaRos": "112",
+        "financniUrad": "288",
+        "datumVzniku": "2025-01-13",
+        "datumAktualizace": "2026-03-04",
+        "dic": "CZ22461787",
+        "icoId": "22461787",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Heršpická 813/5",
+          "radekAdresy2": "Štýřice",
+          "radekAdresy3": "63900 Brno"
+        },
+        "czNace2008": [
+          "74300",
+          "77290",
+          "855",
+          "6820",
+          "74200",
+          "74100",
+          "00",
+          "90020",
+          "73110",
+          "G"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "AKTIVNI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "NEEXISTUJICI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "EXTREME BFG CAST, s.r.o.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 116,
+                  "nazevKraje": "Jihomoravský kraj",
+                  "kodOkresu": 3702,
+                  "nazevOkresu": "Brno-město",
+                  "kodObce": 582786,
+                  "nazevObce": "Brno",
+                  "kodMestskeCastiObvodu": 550973,
+                  "kodUlice": 36102,
+                  "nazevMestskeCastiObvodu": "Brno-střed",
+                  "nazevUlice": "Heršpická",
+                  "cisloDomovni": 813,
+                  "kodCastiObce": 411604,
+                  "cisloOrientacni": 5,
+                  "nazevCastiObce": "Štýřice",
+                  "kodAdresnihoMista": 25099159,
+                  "psc": 63900,
+                  "textovaAdresa": "Heršpická 813/5, Štýřice, 63900 Brno",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "112",
+            "pravniFormaRos": "112",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "EXTREME BFG CAST, s.r.o.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 116,
+                  "nazevKraje": "Jihomoravský kraj",
+                  "kodOkresu": 3702,
+                  "nazevOkresu": "Brno-město",
+                  "kodObce": 582786,
+                  "nazevObce": "Brno",
+                  "kodMestskeCastiObvodu": 550973,
+                  "kodUlice": 36102,
+                  "nazevMestskeCastiObvodu": "Brno-střed",
+                  "nazevUlice": "Heršpická",
+                  "cisloDomovni": 813,
+                  "kodCastiObce": 411604,
+                  "cisloOrientacni": 5,
+                  "nazevCastiObce": "Štýřice",
+                  "kodAdresnihoMista": 25099159,
+                  "psc": 63900,
+                  "textovaAdresa": "Heršpická 813/5, Štýřice, 63900 Brno",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "112",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "EXTREME BFG CAST, s.r.o.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 116,
+                  "nazevKraje": "Jihomoravský kraj",
+                  "kodOkresu": 3702,
+                  "nazevOkresu": "Brno-město",
+                  "kodObce": 582786,
+                  "nazevObce": "Brno",
+                  "kodMestskeCastiObvodu": 550973,
+                  "kodUlice": 36102,
+                  "nazevMestskeCastiObvodu": "Brno-střed",
+                  "nazevUlice": "Heršpická",
+                  "cisloDomovni": 813,
+                  "kodCastiObce": 411604,
+                  "cisloOrientacni": 5,
+                  "nazevCastiObce": "Štýřice",
+                  "kodAdresnihoMista": 25099159,
+                  "psc": 63900,
+                  "textovaAdresa": "Heršpická 813/5, Štýřice, 63900 Brno",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "112",
+            "datovyZdroj": "rzp"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "EXTREME BFG CAST, s.r.o.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 116,
+                  "nazevKraje": "Jihomoravský kraj",
+                  "kodOkresu": 3702,
+                  "nazevOkresu": "Brno-město",
+                  "kodObce": 582786,
+                  "nazevObce": "Brno",
+                  "kodMestskeCastiObvodu": 550973,
+                  "kodUlice": 36102,
+                  "nazevMestskeCastiObvodu": "Brno-střed",
+                  "nazevUlice": "Heršpická",
+                  "cisloDomovni": 813,
+                  "kodCastiObce": 411604,
+                  "cisloOrientacni": 5,
+                  "nazevCastiObce": "Štýřice",
+                  "kodAdresnihoMista": 25099159,
+                  "psc": 63900,
+                  "textovaAdresa": "Heršpická 813/5, Štýřice, 63900 Brno",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "112",
+            "spisovaZnacka": "C 143133/KSBR",
+            "datovyZdroj": "vr"
+          }
+        ],
+        "czNace": [
+          "90390",
+          "74300",
+          "855",
+          "00",
+          "741",
+          "74200",
+          "77220",
+          "68200",
+          "G",
+          "73110"
+        ]
+      }
+    ]
+  }
+}

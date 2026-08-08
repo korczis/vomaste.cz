@@ -1,0 +1,294 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "28196678"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "28196678",
+        "obchodniJmeno": "ČD Cargo, a.s.",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 78,
+          "nazevSpravnihoObvodu": "Praha 7",
+          "kodMestskehoObvodu": 78,
+          "nazevMestskehoObvodu": "Praha 7",
+          "kodMestskeCastiObvodu": 500186,
+          "kodUlice": 449423,
+          "nazevMestskeCastiObvodu": "Praha 7",
+          "nazevUlice": "Jankovcova",
+          "cisloDomovni": 1569,
+          "kodCastiObce": 490067,
+          "cisloOrientacni": 2,
+          "cisloOrientacniPismeno": "c",
+          "nazevCastiObce": "Holešovice",
+          "kodAdresnihoMista": 26005905,
+          "psc": 17000,
+          "textovaAdresa": "Jankovcova 1569/2c, Holešovice, 17000 Praha 7",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "121",
+        "pravniFormaRos": "121",
+        "financniUrad": "013",
+        "datumVzniku": "2007-12-01",
+        "datumAktualizace": "2026-07-05",
+        "dic": "CZ28196678",
+        "icoId": "28196678",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Jankovcova 1569/2c",
+          "radekAdresy2": "Holešovice",
+          "radekAdresy3": "17000 Praha 7"
+        },
+        "czNace2008": [
+          "16230",
+          "25620",
+          "25720",
+          "27510",
+          "3317",
+          "38",
+          "43",
+          "43910",
+          "461",
+          "46900",
+          "49200",
+          "49410",
+          "52100",
+          "52290",
+          "581",
+          "63",
+          "6820",
+          "73120",
+          "772",
+          "96040",
+          "855",
+          "70220"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "AKTIVNI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "ZANIKLY",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "AKTIVNI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "ČD Cargo, a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 78,
+                  "nazevSpravnihoObvodu": "Praha 7",
+                  "kodMestskehoObvodu": 78,
+                  "nazevMestskehoObvodu": "Praha 7",
+                  "kodMestskeCastiObvodu": 500186,
+                  "kodUlice": 449423,
+                  "nazevMestskeCastiObvodu": "Praha 7",
+                  "nazevUlice": "Jankovcova",
+                  "cisloDomovni": 1569,
+                  "kodCastiObce": 490067,
+                  "cisloOrientacni": 2,
+                  "cisloOrientacniPismeno": "c",
+                  "nazevCastiObce": "Holešovice",
+                  "kodAdresnihoMista": 26005905,
+                  "psc": 17000,
+                  "textovaAdresa": "Jankovcova 1569/2c, Holešovice, 17000 Praha 7",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "121",
+            "pravniFormaRos": "121",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "ČD Cargo, a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 78,
+                  "nazevSpravnihoObvodu": "Praha 7",
+                  "kodMestskehoObvodu": 78,
+                  "nazevMestskehoObvodu": "Praha 7",
+                  "kodMestskeCastiObvodu": 500186,
+                  "kodUlice": 449423,
+                  "nazevMestskeCastiObvodu": "Praha 7",
+                  "nazevUlice": "Jankovcova",
+                  "cisloDomovni": 1569,
+                  "kodCastiObce": 490067,
+                  "cisloOrientacni": 2,
+                  "cisloOrientacniPismeno": "c",
+                  "nazevCastiObce": "Holešovice",
+                  "kodAdresnihoMista": 26005905,
+                  "psc": 17000,
+                  "textovaAdresa": "Jankovcova 1569/2c, Holešovice, 17000 Praha 7",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "121",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "ČD Cargo, a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 78,
+                  "nazevSpravnihoObvodu": "Praha 7",
+                  "kodMestskehoObvodu": 78,
+                  "nazevMestskehoObvodu": "Praha 7",
+                  "kodMestskeCastiObvodu": 500186,
+                  "kodUlice": 449423,
+                  "nazevMestskeCastiObvodu": "Praha 7",
+                  "nazevUlice": "Jankovcova",
+                  "cisloDomovni": 1569,
+                  "kodCastiObce": 490067,
+                  "cisloOrientacni": 2,
+                  "cisloOrientacniPismeno": "c",
+                  "nazevCastiObce": "Holešovice",
+                  "kodAdresnihoMista": 26005905,
+                  "psc": 17000,
+                  "textovaAdresa": "Jankovcova 1569/2c, Holešovice, 17000 Praha 7",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "121",
+            "datovyZdroj": "rzp"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "ČD Cargo, a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 78,
+                  "nazevSpravnihoObvodu": "Praha 7",
+                  "kodMestskehoObvodu": 78,
+                  "nazevMestskehoObvodu": "Praha 7",
+                  "kodMestskeCastiObvodu": 500186,
+                  "kodUlice": 449423,
+                  "nazevMestskeCastiObvodu": "Praha 7",
+                  "nazevUlice": "Jankovcova",
+                  "cisloDomovni": 1569,
+                  "kodCastiObce": 490067,
+                  "cisloOrientacni": 2,
+                  "cisloOrientacniPismeno": "c",
+                  "nazevCastiObce": "Holešovice",
+                  "kodAdresnihoMista": 26005905,
+                  "psc": 17000,
+                  "textovaAdresa": "Jankovcova 1569/2c, Holešovice, 17000 Praha 7",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "121",
+            "spisovaZnacka": "B 12844/MSPH",
+            "datovyZdroj": "vr"
+          }
+        ],
+        "czNace": [
+          "27510",
+          "52100",
+          "772",
+          "16230",
+          "25530",
+          "43410",
+          "3317",
+          "68200",
+          "38",
+          "73120",
+          "52260",
+          "70200",
+          "63",
+          "96230",
+          "43",
+          "46900",
+          "49200",
+          "581",
+          "855",
+          "25620",
+          "461",
+          "49410"
+        ],
+        "subRegistrSzr": "szr"
+      }
+    ]
+  }
+}

@@ -1,0 +1,226 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "05965527"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "05965527",
+        "obchodniJmeno": "Hlídač státu, z.ú.",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 27,
+          "nazevKraje": "Středočeský kraj",
+          "kodOkresu": 3209,
+          "nazevOkresu": "Praha-východ",
+          "kodObce": 538493,
+          "nazevObce": "Mnichovice",
+          "kodUlice": 415626,
+          "nazevUlice": "Velenovského",
+          "cisloDomovni": 648,
+          "kodCastiObce": 97543,
+          "nazevCastiObce": "Mnichovice",
+          "kodAdresnihoMista": 21306516,
+          "psc": 25164,
+          "textovaAdresa": "Velenovského 648, 25164 Mnichovice",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "161",
+        "pravniFormaRos": "161",
+        "financniUrad": "059",
+        "datumVzniku": "2017-04-14",
+        "datumAktualizace": "2026-04-19",
+        "icoId": "05965527",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Velenovského 648",
+          "radekAdresy2": "25164 Mnichovice"
+        },
+        "czNace2008": [
+          "181",
+          "62",
+          "8559",
+          "94999"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "AKTIVNI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "NEEXISTUJICI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "NEEXISTUJICI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Hlídač státu, z.ú.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 27,
+                  "nazevKraje": "Středočeský kraj",
+                  "kodOkresu": 3209,
+                  "nazevOkresu": "Praha-východ",
+                  "kodObce": 538493,
+                  "nazevObce": "Mnichovice",
+                  "kodUlice": 415626,
+                  "nazevUlice": "Velenovského",
+                  "cisloDomovni": 648,
+                  "kodCastiObce": 97543,
+                  "nazevCastiObce": "Mnichovice",
+                  "kodAdresnihoMista": 21306516,
+                  "psc": 25164,
+                  "textovaAdresa": "Velenovského 648, 25164 Mnichovice",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "161",
+            "pravniFormaRos": "161",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Hlídač státu, z.ú.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 27,
+                  "nazevKraje": "Středočeský kraj",
+                  "kodOkresu": 3209,
+                  "nazevOkresu": "Praha-východ",
+                  "kodObce": 538493,
+                  "nazevObce": "Mnichovice",
+                  "kodUlice": 415626,
+                  "nazevUlice": "Velenovského",
+                  "cisloDomovni": 648,
+                  "kodCastiObce": 97543,
+                  "nazevCastiObce": "Mnichovice",
+                  "kodAdresnihoMista": 21306516,
+                  "psc": 25164,
+                  "textovaAdresa": "Velenovského 648, 25164 Mnichovice",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "161",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Hlídač státu z.ú.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 27,
+                  "nazevKraje": "Středočeský kraj",
+                  "kodOkresu": 3209,
+                  "nazevOkresu": "Praha-východ",
+                  "kodObce": 538493,
+                  "nazevObce": "Mnichovice",
+                  "kodUlice": 415626,
+                  "nazevUlice": "Velenovského",
+                  "cisloDomovni": 648,
+                  "kodCastiObce": 97543,
+                  "nazevCastiObce": "Mnichovice",
+                  "kodAdresnihoMista": 21306516,
+                  "psc": 25164,
+                  "textovaAdresa": "Velenovského 648, 25164 Mnichovice",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "161",
+            "datovyZdroj": "rzp"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Hlídač státu, z.ú.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 27,
+                  "nazevKraje": "Středočeský kraj",
+                  "kodOkresu": 3209,
+                  "nazevOkresu": "Praha-východ",
+                  "kodObce": 538493,
+                  "nazevObce": "Mnichovice",
+                  "kodUlice": 415626,
+                  "nazevUlice": "Velenovského",
+                  "cisloDomovni": 648,
+                  "kodCastiObce": 97543,
+                  "nazevCastiObce": "Mnichovice",
+                  "kodAdresnihoMista": 21306516,
+                  "psc": 25164,
+                  "textovaAdresa": "Velenovského 648, 25164 Mnichovice",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "161",
+            "spisovaZnacka": "U 559/MSPH",
+            "datovyZdroj": "vr"
+          }
+        ],
+        "czNace": [
+          "8559",
+          "181",
+          "62",
+          "94999"
+        ],
+        "subRegistrSzr": "szr"
+      }
+    ]
+  }
+}

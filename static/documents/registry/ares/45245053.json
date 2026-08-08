@@ -1,0 +1,209 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "45245053"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "45245053",
+        "obchodniJmeno": "ČESKÝ ROZHLAS",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodOkresu": 3100,
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 27,
+          "nazevSpravnihoObvodu": "Praha 2",
+          "kodMestskehoObvodu": 27,
+          "nazevMestskehoObvodu": "Praha 2",
+          "kodMestskeCastiObvodu": 500089,
+          "kodUlice": 477869,
+          "nazevMestskeCastiObvodu": "Praha 2",
+          "nazevUlice": "Vinohradská",
+          "cisloDomovni": 1409,
+          "kodCastiObce": 490229,
+          "cisloOrientacni": 12,
+          "nazevCastiObce": "Vinohrady",
+          "kodAdresnihoMista": 21753431,
+          "psc": 12000,
+          "textovaAdresa": "Vinohradská 1409/12, Vinohrady, 12000 Praha 2",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "361",
+        "pravniFormaRos": "361",
+        "financniUrad": "002",
+        "datumAktualizace": "2026-07-03",
+        "dic": "CZ45245053",
+        "icoId": "45245053",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Vinohradská 1409/12",
+          "radekAdresy2": "Vinohrady",
+          "radekAdresy3": "12000 Praha 2"
+        },
+        "czNace2008": [
+          "60100",
+          "86210"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "NEEXISTUJICI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "HISTORICKY",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "AKTIVNI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "ČESKÝ ROZHLAS",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 27,
+                  "nazevSpravnihoObvodu": "Praha 2",
+                  "kodMestskehoObvodu": 27,
+                  "nazevMestskehoObvodu": "Praha 2",
+                  "kodMestskeCastiObvodu": 500089,
+                  "kodUlice": 477869,
+                  "nazevMestskeCastiObvodu": "Praha 2",
+                  "nazevUlice": "Vinohradská",
+                  "cisloDomovni": 1409,
+                  "kodCastiObce": 490229,
+                  "cisloOrientacni": 12,
+                  "nazevCastiObce": "Vinohrady",
+                  "kodAdresnihoMista": 21753431,
+                  "psc": 12000,
+                  "textovaAdresa": "Vinohradská 1409/12, Vinohrady, 12000 Praha 2",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "361",
+            "pravniFormaRos": "361",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "ČESKÝ ROZHLAS",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodOkresu": 3100,
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 27,
+                  "nazevSpravnihoObvodu": "Praha 2",
+                  "kodMestskehoObvodu": 27,
+                  "nazevMestskehoObvodu": "Praha 2",
+                  "kodMestskeCastiObvodu": 500089,
+                  "kodUlice": 477869,
+                  "nazevMestskeCastiObvodu": "Praha 2",
+                  "nazevUlice": "Vinohradská",
+                  "cisloDomovni": 1409,
+                  "kodCastiObce": 490229,
+                  "cisloOrientacni": 12,
+                  "nazevCastiObce": "Vinohrady",
+                  "kodAdresnihoMista": 21753431,
+                  "psc": 12000,
+                  "textovaAdresa": "Vinohradská 1409/12, Vinohrady, 12000 Praha 2",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "361",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "ČESKÝ ROZHLAS",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 27,
+                  "nazevSpravnihoObvodu": "Praha 2",
+                  "kodMestskehoObvodu": 27,
+                  "nazevMestskehoObvodu": "Praha 2",
+                  "kodMestskeCastiObvodu": 500089,
+                  "kodUlice": 477869,
+                  "nazevMestskeCastiObvodu": "Praha 2",
+                  "nazevUlice": "Vinohradská",
+                  "cisloDomovni": 1409,
+                  "kodCastiObce": 490229,
+                  "cisloOrientacni": 12,
+                  "nazevCastiObce": "Vinohrady",
+                  "kodAdresnihoMista": 21753431,
+                  "psc": 12000,
+                  "textovaAdresa": "Vinohradská 1409/12, Vinohrady, 12000 Praha 2",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "361",
+            "datovyZdroj": "rzp"
+          }
+        ],
+        "czNace": [
+          "6010",
+          "86210"
+        ],
+        "subRegistrSzr": "szr"
+      }
+    ]
+  }
+}

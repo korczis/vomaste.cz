@@ -1,0 +1,205 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "26673908"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "26673908",
+        "obchodniJmeno": "STAROSTOVÉ A NEZÁVISLÍ",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 19,
+          "nazevSpravnihoObvodu": "Praha 1",
+          "kodMestskehoObvodu": 19,
+          "nazevMestskehoObvodu": "Praha 1",
+          "kodMestskeCastiObvodu": 500054,
+          "kodUlice": 455610,
+          "nazevMestskeCastiObvodu": "Praha 1",
+          "nazevUlice": "Malostranské náměstí",
+          "cisloDomovni": 266,
+          "kodCastiObce": 490121,
+          "cisloOrientacni": 5,
+          "nazevCastiObce": "Malá Strana",
+          "kodAdresnihoMista": 21697027,
+          "psc": 11800,
+          "textovaAdresa": "Malostranské náměstí 266/5, Malá Strana, 11800 Praha 1",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "711",
+        "pravniFormaRos": "711",
+        "financniUrad": "001",
+        "datumVzniku": "2004-08-19",
+        "datumAktualizace": "2026-04-11",
+        "dic": "CZ26673908",
+        "icoId": "26673908",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Malostranské náměstí 266/5",
+          "radekAdresy2": "Malá Strana",
+          "radekAdresy3": "11800 Praha 1"
+        },
+        "czNace2008": [
+          "94920"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "NEEXISTUJICI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "NEEXISTUJICI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "AKTIVNI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "NEEXISTUJICI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "STAROSTOVÉ A NEZÁVISLÍ",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 19,
+                  "nazevSpravnihoObvodu": "Praha 1",
+                  "kodMestskehoObvodu": 19,
+                  "nazevMestskehoObvodu": "Praha 1",
+                  "kodMestskeCastiObvodu": 500054,
+                  "kodUlice": 455610,
+                  "nazevMestskeCastiObvodu": "Praha 1",
+                  "nazevUlice": "Malostranské náměstí",
+                  "cisloDomovni": 266,
+                  "kodCastiObce": 490121,
+                  "cisloOrientacni": 5,
+                  "nazevCastiObce": "Malá Strana",
+                  "kodAdresnihoMista": 21697027,
+                  "psc": 11800,
+                  "textovaAdresa": "Malostranské náměstí 266/5, Malá Strana, 11800 Praha 1",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "711",
+            "pravniFormaRos": "711",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "STAROSTOVÉ A NEZÁVISLÍ",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 19,
+                  "nazevSpravnihoObvodu": "Praha 1",
+                  "kodMestskehoObvodu": 19,
+                  "nazevMestskehoObvodu": "Praha 1",
+                  "kodMestskeCastiObvodu": 500054,
+                  "kodUlice": 455610,
+                  "nazevMestskeCastiObvodu": "Praha 1",
+                  "nazevUlice": "Malostranské náměstí",
+                  "cisloDomovni": 266,
+                  "kodCastiObce": 490121,
+                  "cisloOrientacni": 5,
+                  "nazevCastiObce": "Malá Strana",
+                  "kodAdresnihoMista": 21697027,
+                  "psc": 11800,
+                  "textovaAdresa": "Malostranské náměstí 266/5, Malá Strana, 11800 Praha 1",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "711",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "STAROSTOVÉ A NEZÁVISLÍ",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 19,
+                  "nazevSpravnihoObvodu": "Praha 1",
+                  "kodMestskehoObvodu": 19,
+                  "nazevMestskehoObvodu": "Praha 1",
+                  "kodMestskeCastiObvodu": 500054,
+                  "kodUlice": 455610,
+                  "nazevMestskeCastiObvodu": "Praha 1",
+                  "nazevUlice": "Malostranské náměstí",
+                  "cisloDomovni": 266,
+                  "kodCastiObce": 490121,
+                  "cisloOrientacni": 5,
+                  "nazevCastiObce": "Malá Strana",
+                  "kodAdresnihoMista": 21697027,
+                  "psc": 11800,
+                  "textovaAdresa": "Malostranské náměstí 266/5, Malá Strana, 11800 Praha 1",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "711",
+            "datovyZdroj": "rpsh"
+          }
+        ],
+        "czNace": [
+          "94920"
+        ]
+      }
+    ]
+  }
+}

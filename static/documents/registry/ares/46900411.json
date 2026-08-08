@@ -1,0 +1,271 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "46900411"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "46900411",
+        "obchodniJmeno": "Kostelecké uzeniny a.s.",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 108,
+          "nazevKraje": "Kraj Vysočina",
+          "kodOkresu": 3707,
+          "nazevOkresu": "Jihlava",
+          "kodObce": 587401,
+          "nazevObce": "Kostelec",
+          "cisloDomovni": 60,
+          "kodCastiObce": 70122,
+          "nazevCastiObce": "Kostelec",
+          "kodAdresnihoMista": 12293083,
+          "psc": 58861,
+          "textovaAdresa": "č.p. 60, 58861 Kostelec",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "121",
+        "pravniFormaRos": "121",
+        "financniUrad": "013",
+        "datumVzniku": "1992-04-30",
+        "datumAktualizace": "2026-07-15",
+        "dic": "CZ46900411",
+        "icoId": "46900411",
+        "adresaDorucovaci": {
+          "radekAdresy1": "č.p. 60",
+          "radekAdresy2": "58861 Kostelec"
+        },
+        "czNace2008": [
+          "00",
+          "01500",
+          "03220",
+          "10130",
+          "35110",
+          "45200",
+          "46320",
+          "47220",
+          "49410",
+          "52100",
+          "52240",
+          "56100",
+          "855",
+          "101",
+          "3511"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "AKTIVNI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "AKTIVNI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "AKTIVNI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Kostelecké uzeniny a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 108,
+                  "nazevKraje": "Kraj Vysočina",
+                  "kodOkresu": 3707,
+                  "nazevOkresu": "Jihlava",
+                  "kodObce": 587401,
+                  "nazevObce": "Kostelec",
+                  "cisloDomovni": 60,
+                  "kodCastiObce": 70122,
+                  "nazevCastiObce": "Kostelec",
+                  "kodAdresnihoMista": 12293083,
+                  "psc": 58861,
+                  "textovaAdresa": "č.p. 60, 58861 Kostelec",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "121",
+            "pravniFormaRos": "121",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Kostelecké uzeniny a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 108,
+                  "nazevKraje": "Kraj Vysočina",
+                  "kodOkresu": 3707,
+                  "nazevOkresu": "Jihlava",
+                  "kodObce": 587401,
+                  "nazevObce": "Kostelec",
+                  "cisloDomovni": 60,
+                  "kodCastiObce": 70122,
+                  "nazevCastiObce": "Kostelec",
+                  "kodAdresnihoMista": 12293083,
+                  "psc": 58861,
+                  "textovaAdresa": "č.p. 60, 58861 Kostelec",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "121",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Kostelecké uzeniny a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 108,
+                  "nazevKraje": "Kraj Vysočina",
+                  "kodOkresu": 3707,
+                  "nazevOkresu": "Jihlava",
+                  "kodObce": 587401,
+                  "nazevObce": "Kostelec",
+                  "cisloDomovni": 60,
+                  "kodCastiObce": 70122,
+                  "nazevCastiObce": "Kostelec",
+                  "kodAdresnihoMista": 12293083,
+                  "psc": 58861,
+                  "textovaAdresa": "č.p. 60, 58861 Kostelec",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "121",
+            "datovyZdroj": "rzp"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Kostelecké uzeniny a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 108,
+                  "nazevKraje": "Kraj Vysočina",
+                  "kodOkresu": 3707,
+                  "nazevOkresu": "Jihlava",
+                  "kodObce": 587401,
+                  "nazevObce": "Kostelec",
+                  "cisloDomovni": 60,
+                  "kodCastiObce": 70122,
+                  "nazevCastiObce": "Kostelec",
+                  "kodAdresnihoMista": 12293083,
+                  "psc": 58861,
+                  "textovaAdresa": "č.p. 60, 58861 Kostelec",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "121",
+            "datovyZdroj": "szr"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Kostelecké uzeniny a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 108,
+                  "nazevKraje": "Kraj Vysočina",
+                  "kodOkresu": 3707,
+                  "nazevOkresu": "Jihlava",
+                  "kodObce": 587401,
+                  "nazevObce": "Kostelec",
+                  "cisloDomovni": 60,
+                  "kodCastiObce": 70122,
+                  "nazevCastiObce": "Kostelec",
+                  "kodAdresnihoMista": 12293083,
+                  "psc": 58861,
+                  "textovaAdresa": "č.p. 60, 58861 Kostelec",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "121",
+            "spisovaZnacka": "B 835/KSBR",
+            "datovyZdroj": "vr"
+          }
+        ],
+        "czNace": [
+          "101",
+          "03220",
+          "10130",
+          "47220",
+          "01500",
+          "46320",
+          "855",
+          "56110",
+          "52100",
+          "95310",
+          "49410",
+          "52240",
+          "00",
+          "35120"
+        ],
+        "subRegistrSzr": "ezp"
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "records": [
+    {
+      "identifier": "justice-mestsky-soud-85-cm-1204-2023-7",
+      "registry": "Sbírka listin",
+      "title": "Usnesení Městského soudu v Praze 85 Cm 1204/2023-7",
+      "entity": "csr-protikorupcnilinka",
+      "dossiers": ["james-quick"],
+      "retrieved": "2026-08-07",
+      "sourceUrl": "https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=82250971&subjektId=891728&spis=977094",
+      "file": "/documents/james-quick/mestsky-soud-85-cm-1204-2023-7.pdf",
+      "mediaType": "application/pdf",
+      "sha256": "440dc5a21185f5f99a78eaaeb88c57f2defb6556bc5eb5b9b9615d2b158ec6cd",
+      "found": true
+    },
+    {
+      "identifier": "uoou-protokol-uoou-09488-14-74",
+      "registry": "ÚOOÚ",
+      "title": "Protokol o kontrole UOOU-09488/14-74",
+      "entity": "csr-protikorupcnilinka",
+      "dossiers": ["james-quick"],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://uoou.gov.cz/media/poskytnute-informace/2019/2162019/priloha-k-poskytnuti-informace-protokol-o-kontrole.pdf",
+      "file": "/documents/james-quick/uoou-protokol-uoou-09488-14-74.pdf",
+      "mediaType": "application/pdf",
+      "sha256": "aa700d93f468636c2b0fe83efdc4e4b14e409ef6fc1de94b75482b8135d58a0f",
+      "found": true
+    },
+    {
+      "identifier": "nku-kontrolni-zaver-24-28",
+      "registry": "NKÚ",
+      "title": "Kontrolní závěr NKÚ č. 24/28",
+      "entity": "nku",
+      "dossiers": ["vit-rakusan"],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://www.nku.cz/assets/kon-zavery/k24028.pdf",
+      "file": "/documents/vit-rakusan/nku-kontrolni-zaver-24-28.pdf",
+      "mediaType": "application/pdf",
+      "sha256": "2ceb2587a9dac316e78ac340eb37722fa954ee45a925f067d310b28993c91ea7",
+      "found": true
+    }
+  ]
+}

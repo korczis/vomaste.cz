@@ -1,0 +1,283 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "46967851"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "46967851",
+        "obchodniJmeno": "PENAM, a.s.",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 116,
+          "nazevKraje": "Jihomoravský kraj",
+          "kodOkresu": 3702,
+          "nazevOkresu": "Brno-město",
+          "kodObce": 582786,
+          "nazevObce": "Brno",
+          "kodMestskeCastiObvodu": 550973,
+          "kodUlice": 22063,
+          "nazevMestskeCastiObvodu": "Brno-střed",
+          "nazevUlice": "Cejl",
+          "cisloDomovni": 504,
+          "kodCastiObce": 490407,
+          "cisloOrientacni": 38,
+          "nazevCastiObce": "Zábrdovice",
+          "kodAdresnihoMista": 19187645,
+          "psc": 60200,
+          "textovaAdresa": "Cejl 504/38, Zábrdovice, 60200 Brno",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "121",
+        "pravniFormaRos": "121",
+        "financniUrad": "013",
+        "datumVzniku": "1992-08-11",
+        "datumAktualizace": "2026-06-15",
+        "dic": "CZ46967851",
+        "icoId": "46967851",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Cejl 504/38",
+          "radekAdresy2": "Zábrdovice",
+          "radekAdresy3": "60200 Brno"
+        },
+        "czNace2008": [
+          "10610",
+          "10710",
+          "10730",
+          "109",
+          "11010",
+          "28930",
+          "35",
+          "35110",
+          "45200",
+          "461",
+          "462",
+          "463",
+          "471",
+          "49410",
+          "52220",
+          "56100",
+          "62",
+          "6920",
+          "702",
+          "7120",
+          "73200",
+          "74",
+          "8211",
+          "47250"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "AKTIVNI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "AKTIVNI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "PENAM, a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 116,
+                  "nazevKraje": "Jihomoravský kraj",
+                  "kodOkresu": 3702,
+                  "nazevOkresu": "Brno-město",
+                  "kodObce": 582786,
+                  "nazevObce": "Brno",
+                  "kodMestskeCastiObvodu": 550973,
+                  "kodUlice": 22063,
+                  "nazevMestskeCastiObvodu": "Brno-střed",
+                  "nazevUlice": "Cejl",
+                  "cisloDomovni": 504,
+                  "kodCastiObce": 490407,
+                  "cisloOrientacni": 38,
+                  "nazevCastiObce": "Zábrdovice",
+                  "kodAdresnihoMista": 19187645,
+                  "psc": 60200,
+                  "textovaAdresa": "Cejl 504/38, Zábrdovice, 60200 Brno",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "121",
+            "pravniFormaRos": "121",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "PENAM, a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 116,
+                  "nazevKraje": "Jihomoravský kraj",
+                  "kodOkresu": 3702,
+                  "nazevOkresu": "Brno-město",
+                  "kodObce": 582786,
+                  "nazevObce": "Brno",
+                  "kodMestskeCastiObvodu": 550973,
+                  "kodUlice": 22063,
+                  "nazevMestskeCastiObvodu": "Brno-střed",
+                  "nazevUlice": "Cejl",
+                  "cisloDomovni": 504,
+                  "kodCastiObce": 490407,
+                  "cisloOrientacni": 38,
+                  "nazevCastiObce": "Zábrdovice",
+                  "kodAdresnihoMista": 19187645,
+                  "psc": 60200,
+                  "textovaAdresa": "Cejl 504/38, Zábrdovice, 60200 Brno",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "121",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "PENAM, a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 116,
+                  "nazevKraje": "Jihomoravský kraj",
+                  "kodOkresu": 3702,
+                  "nazevOkresu": "Brno-město",
+                  "kodObce": 582786,
+                  "nazevObce": "Brno",
+                  "kodMestskeCastiObvodu": 550973,
+                  "kodUlice": 22063,
+                  "nazevMestskeCastiObvodu": "Brno-střed",
+                  "nazevUlice": "Cejl",
+                  "cisloDomovni": 504,
+                  "kodCastiObce": 490407,
+                  "cisloOrientacni": 38,
+                  "nazevCastiObce": "Zábrdovice",
+                  "kodAdresnihoMista": 19187645,
+                  "psc": 60200,
+                  "textovaAdresa": "Cejl 504/38, Zábrdovice, 60200 Brno",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "121",
+            "datovyZdroj": "rzp"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "PENAM, a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 116,
+                  "nazevKraje": "Jihomoravský kraj",
+                  "kodOkresu": 3702,
+                  "nazevOkresu": "Brno-město",
+                  "kodObce": 582786,
+                  "nazevObce": "Brno",
+                  "kodMestskeCastiObvodu": 550973,
+                  "kodUlice": 22063,
+                  "nazevMestskeCastiObvodu": "Brno-střed",
+                  "nazevUlice": "Cejl",
+                  "cisloDomovni": 504,
+                  "kodCastiObce": 490407,
+                  "cisloOrientacni": 38,
+                  "nazevCastiObce": "Zábrdovice",
+                  "kodAdresnihoMista": 19187645,
+                  "psc": 60200,
+                  "textovaAdresa": "Cejl 504/38, Zábrdovice, 60200 Brno",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "121",
+            "spisovaZnacka": "B 4346/KSBR",
+            "datovyZdroj": "vr"
+          }
+        ],
+        "czNace": [
+          "52220",
+          "462",
+          "69200",
+          "74",
+          "95310",
+          "11010",
+          "62",
+          "471",
+          "56110",
+          "10610",
+          "109",
+          "463",
+          "71200",
+          "49410",
+          "70200",
+          "73200",
+          "82100",
+          "35120",
+          "10710",
+          "10730",
+          "28930",
+          "35",
+          "461",
+          "47250"
+        ],
+        "subRegistrSzr": "szr"
+      }
+    ]
+  }
+}

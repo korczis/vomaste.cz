@@ -1,0 +1,287 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "70890021"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "70890021",
+        "obchodniJmeno": "Povodí Odry, státní podnik",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 132,
+          "nazevKraje": "Moravskoslezský kraj",
+          "kodOkresu": 3807,
+          "nazevOkresu": "Ostrava-město",
+          "kodObce": 554821,
+          "nazevObce": "Ostrava",
+          "kodMestskeCastiObvodu": 545911,
+          "kodUlice": 367087,
+          "nazevMestskeCastiObvodu": "Moravská Ostrava a Přívoz",
+          "nazevUlice": "Varenská",
+          "cisloDomovni": 3101,
+          "kodCastiObce": 413950,
+          "cisloOrientacni": 49,
+          "nazevCastiObce": "Moravská Ostrava",
+          "kodAdresnihoMista": 25321765,
+          "psc": 70200,
+          "textovaAdresa": "Varenská 3101/49, Moravská Ostrava, 70200 Ostrava",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "301",
+        "pravniFormaRos": "301",
+        "financniUrad": "388",
+        "datumVzniku": "2001-03-26",
+        "datumAktualizace": "2026-07-05",
+        "dic": "CZ70890021",
+        "icoId": "70890021",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Varenská 3101/49",
+          "radekAdresy2": "Moravská Ostrava",
+          "radekAdresy3": "70200 Ostrava"
+        },
+        "czNace2008": [
+          "00",
+          "03220",
+          "36000",
+          "4120",
+          "49410",
+          "56100",
+          "711"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "AKTIVNI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "AKTIVNI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "AKTIVNI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Povodí Odry, státní podnik",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 132,
+                  "nazevKraje": "Moravskoslezský kraj",
+                  "kodOkresu": 3807,
+                  "nazevOkresu": "Ostrava-město",
+                  "kodObce": 554821,
+                  "nazevObce": "Ostrava",
+                  "kodMestskeCastiObvodu": 545911,
+                  "kodUlice": 367087,
+                  "nazevMestskeCastiObvodu": "Moravská Ostrava a Přívoz",
+                  "nazevUlice": "Varenská",
+                  "cisloDomovni": 3101,
+                  "kodCastiObce": 413950,
+                  "cisloOrientacni": 49,
+                  "nazevCastiObce": "Moravská Ostrava",
+                  "kodAdresnihoMista": 25321765,
+                  "psc": 70200,
+                  "textovaAdresa": "Varenská 3101/49, Moravská Ostrava, 70200 Ostrava",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "301",
+            "pravniFormaRos": "301",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Povodí Odry, státní podnik",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 132,
+                  "nazevKraje": "Moravskoslezský kraj",
+                  "kodOkresu": 3807,
+                  "nazevOkresu": "Ostrava-město",
+                  "kodObce": 554821,
+                  "nazevObce": "Ostrava",
+                  "kodMestskeCastiObvodu": 545911,
+                  "kodUlice": 367087,
+                  "nazevMestskeCastiObvodu": "Moravská Ostrava a Přívoz",
+                  "nazevUlice": "Varenská",
+                  "cisloDomovni": 3101,
+                  "kodCastiObce": 413950,
+                  "cisloOrientacni": 49,
+                  "nazevCastiObce": "Moravská Ostrava",
+                  "kodAdresnihoMista": 25321765,
+                  "psc": 70200,
+                  "textovaAdresa": "Varenská 3101/49, Moravská Ostrava, 70200 Ostrava",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "301",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Povodí Odry, státní podnik",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 132,
+                  "nazevKraje": "Moravskoslezský kraj",
+                  "kodOkresu": 3807,
+                  "nazevOkresu": "Ostrava-město",
+                  "kodObce": 554821,
+                  "nazevObce": "Ostrava",
+                  "kodMestskeCastiObvodu": 545911,
+                  "kodUlice": 367087,
+                  "nazevMestskeCastiObvodu": "Moravská Ostrava a Přívoz",
+                  "nazevUlice": "Varenská",
+                  "cisloDomovni": 3101,
+                  "kodCastiObce": 413950,
+                  "cisloOrientacni": 49,
+                  "nazevCastiObce": "Moravská Ostrava",
+                  "kodAdresnihoMista": 25321765,
+                  "psc": 70200,
+                  "textovaAdresa": "Varenská 3101/49, Moravská Ostrava, 70200 Ostrava",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "301",
+            "datovyZdroj": "rzp"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Povodí Odry, státní podnik",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 132,
+                  "nazevKraje": "Moravskoslezský kraj",
+                  "kodOkresu": 3807,
+                  "nazevOkresu": "Ostrava-město",
+                  "kodObce": 554821,
+                  "nazevObce": "Ostrava",
+                  "kodMestskeCastiObvodu": 545911,
+                  "kodUlice": 367087,
+                  "nazevMestskeCastiObvodu": "Moravská Ostrava a Přívoz",
+                  "nazevUlice": "Varenská",
+                  "cisloDomovni": 3101,
+                  "kodCastiObce": 413950,
+                  "cisloOrientacni": 49,
+                  "nazevCastiObce": "Moravská Ostrava",
+                  "kodAdresnihoMista": 25321765,
+                  "psc": 70200,
+                  "textovaAdresa": "Varenská 3101/49, Moravská Ostrava, 70200 Ostrava",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "301",
+            "datovyZdroj": "szr"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Povodí Odry, státní podnik",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 132,
+                  "nazevKraje": "Moravskoslezský kraj",
+                  "kodOkresu": 3807,
+                  "nazevOkresu": "Ostrava-město",
+                  "kodObce": 554821,
+                  "nazevObce": "Ostrava",
+                  "kodMestskeCastiObvodu": 545911,
+                  "kodUlice": 367087,
+                  "nazevMestskeCastiObvodu": "Moravská Ostrava a Přívoz",
+                  "nazevUlice": "Varenská",
+                  "cisloDomovni": 3101,
+                  "kodCastiObce": 413950,
+                  "cisloOrientacni": 49,
+                  "nazevCastiObce": "Moravská Ostrava",
+                  "kodAdresnihoMista": 25321765,
+                  "psc": 70200,
+                  "textovaAdresa": "Varenská 3101/49, Moravská Ostrava, 70200 Ostrava",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "301",
+            "spisovaZnacka": "AXIV 584/KSOS",
+            "datovyZdroj": "vr"
+          }
+        ],
+        "czNace": [
+          "49410",
+          "711",
+          "00",
+          "03220",
+          "56110",
+          "41000",
+          "36000"
+        ],
+        "subRegistrSzr": "ezp"
+      }
+    ]
+  }
+}

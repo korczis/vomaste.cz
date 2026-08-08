@@ -1,0 +1,163 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "47609109"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "47609109",
+        "obchodniJmeno": "Ministerstvo průmyslu a obchodu",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 19,
+          "nazevSpravnihoObvodu": "Praha 1",
+          "kodMestskehoObvodu": 19,
+          "nazevMestskehoObvodu": "Praha 1",
+          "kodMestskeCastiObvodu": 500054,
+          "kodUlice": 457442,
+          "nazevMestskeCastiObvodu": "Praha 1",
+          "nazevUlice": "Na Františku",
+          "cisloDomovni": 1039,
+          "kodCastiObce": 400017,
+          "cisloOrientacni": 32,
+          "nazevCastiObce": "Staré Město",
+          "kodAdresnihoMista": 21726779,
+          "psc": 11000,
+          "textovaAdresa": "Na Františku 1039/32, Staré Město, 11000 Praha 1",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "325",
+        "pravniFormaRos": "325",
+        "financniUrad": "001",
+        "datumAktualizace": "2026-03-12",
+        "dic": "CZ47609109",
+        "icoId": "47609109",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Na Františku 1039/32",
+          "radekAdresy2": "Staré Město",
+          "radekAdresy3": "11000 Praha 1"
+        },
+        "czNace2008": [
+          "84110"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "NEEXISTUJICI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "NEEXISTUJICI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "NEEXISTUJICI",
+          "stavZdrojeMonitor": "AKTIVNI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Ministerstvo průmyslu a obchodu",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 19,
+                  "nazevSpravnihoObvodu": "Praha 1",
+                  "kodMestskehoObvodu": 19,
+                  "nazevMestskehoObvodu": "Praha 1",
+                  "kodMestskeCastiObvodu": 500054,
+                  "kodUlice": 457442,
+                  "nazevMestskeCastiObvodu": "Praha 1",
+                  "nazevUlice": "Na Františku",
+                  "cisloDomovni": 1039,
+                  "kodCastiObce": 400017,
+                  "cisloOrientacni": 32,
+                  "nazevCastiObce": "Staré Město",
+                  "kodAdresnihoMista": 21726779,
+                  "psc": 11000,
+                  "textovaAdresa": "Na Františku 1039/32, Staré Město, 11000 Praha 1",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "325",
+            "pravniFormaRos": "325",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Ministerstvo průmyslu a obchodu",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 19,
+                  "nazevSpravnihoObvodu": "Praha 1",
+                  "kodMestskehoObvodu": 19,
+                  "nazevMestskehoObvodu": "Praha 1",
+                  "kodMestskeCastiObvodu": 500054,
+                  "kodUlice": 457442,
+                  "nazevMestskeCastiObvodu": "Praha 1",
+                  "nazevUlice": "Na Františku",
+                  "cisloDomovni": 1039,
+                  "kodCastiObce": 400017,
+                  "cisloOrientacni": 32,
+                  "nazevCastiObce": "Staré Město",
+                  "kodAdresnihoMista": 21726779,
+                  "psc": 11000,
+                  "textovaAdresa": "Na Františku 1039/32, Staré Město, 11000 Praha 1",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "325",
+            "datovyZdroj": "ros"
+          }
+        ],
+        "czNace": [
+          "84110"
+        ],
+        "subRegistrSzr": "szr"
+      }
+    ]
+  }
+}

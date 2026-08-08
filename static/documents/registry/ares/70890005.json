@@ -1,0 +1,277 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "70890005"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "70890005",
+        "obchodniJmeno": "Povodí Labe, státní podnik",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 86,
+          "nazevKraje": "Královéhradecký kraj",
+          "kodOkresu": 3602,
+          "nazevOkresu": "Hradec Králové",
+          "kodObce": 569810,
+          "nazevObce": "Hradec Králové",
+          "kodUlice": 131512,
+          "nazevUlice": "Víta Nejedlého",
+          "cisloDomovni": 951,
+          "kodCastiObce": 409839,
+          "cisloOrientacni": 8,
+          "nazevCastiObce": "Slezské Předměstí",
+          "kodAdresnihoMista": 23911417,
+          "psc": 50003,
+          "textovaAdresa": "Víta Nejedlého 951/8, Slezské Předměstí, 50003 Hradec Králové",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "301",
+        "pravniFormaRos": "301",
+        "financniUrad": "228",
+        "datumVzniku": "2001-01-23",
+        "datumAktualizace": "2026-08-03",
+        "dic": "CZ70890005",
+        "icoId": "70890005",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Víta Nejedlého 951/8",
+          "radekAdresy2": "Slezské Předměstí",
+          "radekAdresy3": "50003 Hradec Králové"
+        },
+        "czNace2008": [
+          "71209",
+          "7490",
+          "77290",
+          "82110",
+          "855",
+          "952",
+          "56100",
+          "58",
+          "620",
+          "683",
+          "71110",
+          "71122",
+          "43320",
+          "45200",
+          "46900",
+          "49410",
+          "50300",
+          "55",
+          "257",
+          "35110",
+          "36000",
+          "38110",
+          "4120",
+          "431",
+          "016",
+          "25620"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "AKTIVNI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "AKTIVNI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Povodí Labe, státní podnik",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 86,
+                  "nazevKraje": "Královéhradecký kraj",
+                  "kodOkresu": 3602,
+                  "nazevOkresu": "Hradec Králové",
+                  "kodObce": 569810,
+                  "nazevObce": "Hradec Králové",
+                  "kodUlice": 131512,
+                  "nazevUlice": "Víta Nejedlého",
+                  "cisloDomovni": 951,
+                  "kodCastiObce": 409839,
+                  "cisloOrientacni": 8,
+                  "nazevCastiObce": "Slezské Předměstí",
+                  "kodAdresnihoMista": 23911417,
+                  "psc": 50003,
+                  "textovaAdresa": "Víta Nejedlého 951/8, Slezské Předměstí, 50003 Hradec Králové",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "301",
+            "pravniFormaRos": "301",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Povodí Labe, státní podnik",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 86,
+                  "nazevKraje": "Královéhradecký kraj",
+                  "kodOkresu": 3602,
+                  "nazevOkresu": "Hradec Králové",
+                  "kodObce": 569810,
+                  "nazevObce": "Hradec Králové",
+                  "kodUlice": 131512,
+                  "nazevUlice": "Víta Nejedlého",
+                  "cisloDomovni": 951,
+                  "kodCastiObce": 409839,
+                  "cisloOrientacni": 8,
+                  "nazevCastiObce": "Slezské Předměstí",
+                  "kodAdresnihoMista": 23911417,
+                  "psc": 50003,
+                  "textovaAdresa": "Víta Nejedlého 951/8, Slezské Předměstí, 50003 Hradec Králové",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "301",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Povodí Labe, státní podnik",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 86,
+                  "nazevKraje": "Královéhradecký kraj",
+                  "kodOkresu": 3602,
+                  "nazevOkresu": "Hradec Králové",
+                  "kodObce": 569810,
+                  "nazevObce": "Hradec Králové",
+                  "kodUlice": 131512,
+                  "nazevUlice": "Víta Nejedlého",
+                  "cisloDomovni": 951,
+                  "kodCastiObce": 409839,
+                  "cisloOrientacni": 8,
+                  "nazevCastiObce": "Slezské Předměstí",
+                  "kodAdresnihoMista": 23911417,
+                  "psc": 50003,
+                  "textovaAdresa": "Víta Nejedlého 951/8, Slezské Předměstí, 50003 Hradec Králové",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "301",
+            "datovyZdroj": "rzp"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Povodí Labe, státní podnik",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 86,
+                  "nazevKraje": "Královéhradecký kraj",
+                  "kodOkresu": 3602,
+                  "nazevOkresu": "Hradec Králové",
+                  "kodObce": 569810,
+                  "nazevObce": "Hradec Králové",
+                  "kodUlice": 131512,
+                  "nazevUlice": "Víta Nejedlého",
+                  "cisloDomovni": 951,
+                  "kodCastiObce": 409839,
+                  "cisloOrientacni": 8,
+                  "nazevCastiObce": "Slezské Předměstí",
+                  "kodAdresnihoMista": 23911417,
+                  "psc": 50003,
+                  "textovaAdresa": "Víta Nejedlého 951/8, Slezské Předměstí, 50003 Hradec Králové",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "301",
+            "spisovaZnacka": "A 9473/KSHK",
+            "datovyZdroj": "vr"
+          }
+        ],
+        "czNace": [
+          "49410",
+          "58",
+          "71110",
+          "71120",
+          "74990",
+          "82100",
+          "56110",
+          "25530",
+          "36000",
+          "62",
+          "683",
+          "855",
+          "77220",
+          "952",
+          "35120",
+          "016",
+          "43320",
+          "55",
+          "95310",
+          "256",
+          "41000",
+          "46900",
+          "50300",
+          "71200",
+          "38110",
+          "431"
+        ],
+        "subRegistrSzr": "szr"
+      }
+    ]
+  }
+}

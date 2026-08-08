@@ -1,0 +1,168 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "70891095"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "70891095",
+        "obchodniJmeno": "Středočeský kraj",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodOkresu": 3100,
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 51,
+          "nazevSpravnihoObvodu": "Praha 5",
+          "kodMestskehoObvodu": 51,
+          "nazevMestskehoObvodu": "Praha 5",
+          "kodMestskeCastiObvodu": 500143,
+          "kodUlice": 479756,
+          "nazevMestskeCastiObvodu": "Praha 5",
+          "nazevUlice": "Zborovská",
+          "cisloDomovni": 81,
+          "kodCastiObce": 400301,
+          "cisloOrientacni": 11,
+          "nazevCastiObce": "Smíchov",
+          "kodAdresnihoMista": 22075208,
+          "psc": 15000,
+          "textovaAdresa": "Zborovská 81/11, Smíchov, 15000 Praha 5",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "804",
+        "pravniFormaRos": "804",
+        "financniUrad": "005",
+        "datumVzniku": "2001-01-01",
+        "datumAktualizace": "2026-06-05",
+        "dic": "CZ70891095",
+        "icoId": "70891095",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Zborovská 81/11",
+          "radekAdresy2": "Smíchov",
+          "radekAdresy3": "15000 Praha 5"
+        },
+        "czNace2008": [
+          "84110"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "NEEXISTUJICI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "NEEXISTUJICI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "AKTIVNI",
+          "stavZdrojeMonitor": "AKTIVNI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Středočeský kraj",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 51,
+                  "nazevSpravnihoObvodu": "Praha 5",
+                  "kodMestskehoObvodu": 51,
+                  "nazevMestskehoObvodu": "Praha 5",
+                  "kodMestskeCastiObvodu": 500143,
+                  "kodUlice": 479756,
+                  "nazevMestskeCastiObvodu": "Praha 5",
+                  "nazevUlice": "Zborovská",
+                  "cisloDomovni": 81,
+                  "kodCastiObce": 400301,
+                  "cisloOrientacni": 11,
+                  "nazevCastiObce": "Smíchov",
+                  "kodAdresnihoMista": 22075208,
+                  "psc": 15000,
+                  "textovaAdresa": "Zborovská 81/11, Smíchov, 15000 Praha 5",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "804",
+            "pravniFormaRos": "804",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Středočeský kraj",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodOkresu": 3100,
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 51,
+                  "nazevSpravnihoObvodu": "Praha 5",
+                  "kodMestskehoObvodu": 51,
+                  "nazevMestskehoObvodu": "Praha 5",
+                  "kodMestskeCastiObvodu": 500143,
+                  "kodUlice": 479756,
+                  "nazevMestskeCastiObvodu": "Praha 5",
+                  "nazevUlice": "Zborovská",
+                  "cisloDomovni": 81,
+                  "kodCastiObce": 400301,
+                  "cisloOrientacni": 11,
+                  "nazevCastiObce": "Smíchov",
+                  "kodAdresnihoMista": 22075208,
+                  "psc": 15000,
+                  "textovaAdresa": "Zborovská 81/11, Smíchov, 15000 Praha 5",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "804",
+            "datovyZdroj": "ros"
+          }
+        ],
+        "czNace": [
+          "84110"
+        ],
+        "subRegistrSzr": "szr"
+      }
+    ]
+  }
+}

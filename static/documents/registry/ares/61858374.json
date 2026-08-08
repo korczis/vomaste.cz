@@ -1,0 +1,207 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "61858374"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "61858374",
+        "obchodniJmeno": "Fio banka, a.s.",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 19,
+          "nazevSpravnihoObvodu": "Praha 1",
+          "kodMestskehoObvodu": 19,
+          "nazevMestskehoObvodu": "Praha 1",
+          "kodMestskeCastiObvodu": 500054,
+          "kodUlice": 457418,
+          "nazevMestskeCastiObvodu": "Praha 1",
+          "nazevUlice": "Na Florenci",
+          "cisloDomovni": 2139,
+          "kodCastiObce": 490148,
+          "cisloOrientacni": 2,
+          "nazevCastiObce": "Nové Město",
+          "kodAdresnihoMista": 85426768,
+          "psc": 11000,
+          "textovaAdresa": "Na Florenci 2139/2, Nové Město, 11000 Praha 1",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "121",
+        "pravniFormaRos": "121",
+        "financniUrad": "013",
+        "datumVzniku": "1994-08-31",
+        "datumAktualizace": "2026-02-05",
+        "icoId": "61858374",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Na Florenci 2139/2",
+          "radekAdresy2": "Nové Město",
+          "radekAdresy3": "11000 Praha 1"
+        },
+        "czNace2008": [
+          "64190"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "AKTIVNI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "NEEXISTUJICI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "NEEXISTUJICI",
+          "stavZdrojeSkDph": "AKTIVNI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "AKTIVNI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Fio banka, a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 19,
+                  "nazevSpravnihoObvodu": "Praha 1",
+                  "kodMestskehoObvodu": 19,
+                  "nazevMestskehoObvodu": "Praha 1",
+                  "kodMestskeCastiObvodu": 500054,
+                  "kodUlice": 457418,
+                  "nazevMestskeCastiObvodu": "Praha 1",
+                  "nazevUlice": "Na Florenci",
+                  "cisloDomovni": 2139,
+                  "kodCastiObce": 490148,
+                  "cisloOrientacni": 2,
+                  "nazevCastiObce": "Nové Město",
+                  "kodAdresnihoMista": 85426768,
+                  "psc": 11000,
+                  "textovaAdresa": "Na Florenci 2139/2, Nové Město, 11000 Praha 1",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "121",
+            "pravniFormaRos": "121",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Fio banka, a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 19,
+                  "nazevSpravnihoObvodu": "Praha 1",
+                  "kodMestskehoObvodu": 19,
+                  "nazevMestskehoObvodu": "Praha 1",
+                  "kodMestskeCastiObvodu": 500054,
+                  "kodUlice": 457418,
+                  "nazevMestskeCastiObvodu": "Praha 1",
+                  "nazevUlice": "Na Florenci",
+                  "cisloDomovni": 2139,
+                  "kodCastiObce": 490148,
+                  "cisloOrientacni": 2,
+                  "nazevCastiObce": "Nové Město",
+                  "kodAdresnihoMista": 85426768,
+                  "psc": 11000,
+                  "textovaAdresa": "Na Florenci 2139/2, Nové Město, 11000 Praha 1",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "121",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Fio banka, a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 19,
+                  "nazevSpravnihoObvodu": "Praha 1",
+                  "kodMestskehoObvodu": 19,
+                  "nazevMestskehoObvodu": "Praha 1",
+                  "kodMestskeCastiObvodu": 500054,
+                  "kodUlice": 457418,
+                  "nazevMestskeCastiObvodu": "Praha 1",
+                  "nazevUlice": "Na Florenci",
+                  "cisloDomovni": 2139,
+                  "kodCastiObce": 490148,
+                  "cisloOrientacni": 2,
+                  "nazevCastiObce": "Nové Město",
+                  "kodAdresnihoMista": 85426768,
+                  "psc": 11000,
+                  "textovaAdresa": "Na Florenci 2139/2, Nové Město, 11000 Praha 1",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "121",
+            "spisovaZnacka": "B 2704/MSPH",
+            "datovyZdroj": "vr"
+          }
+        ],
+        "czNace": [
+          "64190"
+        ],
+        "subRegistrSzr": "szr",
+        "dicSkDph": "CZ699001133"
+      }
+    ]
+  }
+}

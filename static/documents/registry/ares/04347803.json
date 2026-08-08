@@ -1,0 +1,249 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "04347803"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "04347803",
+        "obchodniJmeno": "MEAS Consulting s.r.o. v likvidaci",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 27,
+          "nazevSpravnihoObvodu": "Praha 2",
+          "kodMestskehoObvodu": 27,
+          "nazevMestskehoObvodu": "Praha 2",
+          "kodMestskeCastiObvodu": 500089,
+          "kodUlice": 443301,
+          "nazevMestskeCastiObvodu": "Praha 2",
+          "nazevUlice": "Bělehradská",
+          "cisloDomovni": 858,
+          "kodCastiObce": 490229,
+          "cisloOrientacni": 23,
+          "nazevCastiObce": "Vinohrady",
+          "kodAdresnihoMista": 21748241,
+          "psc": 12000,
+          "textovaAdresa": "Bělehradská 858/23, Vinohrady, 12000 Praha 2",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "112",
+        "pravniFormaRos": "112",
+        "financniUrad": "002",
+        "datumVzniku": "2015-08-26",
+        "datumAktualizace": "2026-01-23",
+        "icoId": "04347803",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Bělehradská 858/23",
+          "radekAdresy2": "Vinohrady",
+          "radekAdresy3": "12000 Praha 2"
+        },
+        "czNace2008": [
+          "461",
+          "731",
+          "855"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "AKTIVNI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "NEEXISTUJICI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "NEEXISTUJICI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "MEAS Consulting s.r.o. v likvidaci",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 27,
+                  "nazevSpravnihoObvodu": "Praha 2",
+                  "kodMestskehoObvodu": 27,
+                  "nazevMestskehoObvodu": "Praha 2",
+                  "kodMestskeCastiObvodu": 500089,
+                  "kodUlice": 443301,
+                  "nazevMestskeCastiObvodu": "Praha 2",
+                  "nazevUlice": "Bělehradská",
+                  "cisloDomovni": 858,
+                  "kodCastiObce": 490229,
+                  "cisloOrientacni": 23,
+                  "nazevCastiObce": "Vinohrady",
+                  "kodAdresnihoMista": 21748241,
+                  "psc": 12000,
+                  "textovaAdresa": "Bělehradská 858/23, Vinohrady, 12000 Praha 2",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "112",
+            "pravniFormaRos": "112",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "MEAS Consulting s.r.o. v likvidaci",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 27,
+                  "nazevSpravnihoObvodu": "Praha 2",
+                  "kodMestskehoObvodu": 27,
+                  "nazevMestskehoObvodu": "Praha 2",
+                  "kodMestskeCastiObvodu": 500089,
+                  "kodUlice": 443301,
+                  "nazevMestskeCastiObvodu": "Praha 2",
+                  "nazevUlice": "Bělehradská",
+                  "cisloDomovni": 858,
+                  "kodCastiObce": 490229,
+                  "cisloOrientacni": 23,
+                  "nazevCastiObce": "Vinohrady",
+                  "kodAdresnihoMista": 21748241,
+                  "psc": 12000,
+                  "textovaAdresa": "Bělehradská 858/23, Vinohrady, 12000 Praha 2",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "112",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "MEAS Consulting s.r.o. v likvidaci",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 27,
+                  "nazevSpravnihoObvodu": "Praha 2",
+                  "kodMestskehoObvodu": 27,
+                  "nazevMestskehoObvodu": "Praha 2",
+                  "kodMestskeCastiObvodu": 500089,
+                  "kodUlice": 443301,
+                  "nazevMestskeCastiObvodu": "Praha 2",
+                  "nazevUlice": "Bělehradská",
+                  "cisloDomovni": 858,
+                  "kodCastiObce": 490229,
+                  "cisloOrientacni": 23,
+                  "nazevCastiObce": "Vinohrady",
+                  "kodAdresnihoMista": 21748241,
+                  "psc": 12000,
+                  "textovaAdresa": "Bělehradská 858/23, Vinohrady, 12000 Praha 2",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "112",
+            "datovyZdroj": "rzp"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "MEAS Consulting s.r.o. v likvidaci",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 27,
+                  "nazevSpravnihoObvodu": "Praha 2",
+                  "kodMestskehoObvodu": 27,
+                  "nazevMestskehoObvodu": "Praha 2",
+                  "kodMestskeCastiObvodu": 500089,
+                  "kodUlice": 443301,
+                  "nazevMestskeCastiObvodu": "Praha 2",
+                  "nazevUlice": "Bělehradská",
+                  "cisloDomovni": 858,
+                  "kodCastiObce": 490229,
+                  "cisloOrientacni": 23,
+                  "nazevCastiObce": "Vinohrady",
+                  "kodAdresnihoMista": 21748241,
+                  "psc": 12000,
+                  "textovaAdresa": "Bělehradská 858/23, Vinohrady, 12000 Praha 2",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "112",
+            "spisovaZnacka": "C 246247/MSPH",
+            "datovyZdroj": "vr"
+          }
+        ],
+        "czNace": [
+          "461",
+          "731",
+          "855"
+        ]
+      }
+    ]
+  }
+}

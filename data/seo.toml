@@ -196,6 +196,12 @@ seo_type = "WebPage"
 og_type = "website"
 seo_type = "WebPage"
 
+# Veřejný archiv uchovává samostatné úřední dokumenty a jejich metadata;
+# index je proto kolekce, ne jeden zpravodajský článek.
+[page_types.documentArchive]
+og_type = "website"
+seo_type = "CollectionPage"
+
 # Katalog toolingu (T-085). Stránka příkazu je referenční dokumentace,
 # ne zpravodajský článek — `TechArticle` je pro ni v schema.org přesnější
 # typ než holá `WebPage` a nic dalšího si nevynucuje.

@@ -1,0 +1,250 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "26102463"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "26102463",
+        "obchodniJmeno": "Výkrm Tagrea, s.r.o.",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 27,
+          "nazevKraje": "Středočeský kraj",
+          "kodOkresu": 3205,
+          "nazevOkresu": "Kutná Hora",
+          "kodObce": 533955,
+          "nazevObce": "Kutná Hora",
+          "cisloDomovni": 196,
+          "kodCastiObce": 77801,
+          "nazevCastiObce": "Karlov",
+          "kodAdresnihoMista": 26733463,
+          "psc": 28401,
+          "textovaAdresa": "Karlov 196, 28401 Kutná Hora",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "112",
+        "pravniFormaRos": "112",
+        "financniUrad": "038",
+        "datumVzniku": "2006-04-06",
+        "datumAktualizace": "2026-04-19",
+        "dic": "CZ26102463",
+        "icoId": "26102463",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Karlov 196",
+          "radekAdresy2": "28401 Kutná Hora"
+        },
+        "czNace2008": [
+          "01",
+          "014",
+          "469",
+          "471"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "AKTIVNI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "AKTIVNI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "AKTIVNI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Výkrm Tagrea, s.r.o.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 27,
+                  "nazevKraje": "Středočeský kraj",
+                  "kodOkresu": 3205,
+                  "nazevOkresu": "Kutná Hora",
+                  "kodObce": 533955,
+                  "nazevObce": "Kutná Hora",
+                  "cisloDomovni": 196,
+                  "kodCastiObce": 77801,
+                  "nazevCastiObce": "Karlov",
+                  "kodAdresnihoMista": 26733463,
+                  "psc": 28401,
+                  "textovaAdresa": "Karlov 196, 28401 Kutná Hora",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "112",
+            "pravniFormaRos": "112",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Výkrm Tagrea, s.r.o.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 27,
+                  "nazevKraje": "Středočeský kraj",
+                  "kodOkresu": 3205,
+                  "nazevOkresu": "Kutná Hora",
+                  "kodObce": 533955,
+                  "nazevObce": "Kutná Hora",
+                  "cisloDomovni": 196,
+                  "kodCastiObce": 77801,
+                  "nazevCastiObce": "Karlov",
+                  "kodAdresnihoMista": 26733463,
+                  "psc": 28401,
+                  "textovaAdresa": "Karlov 196, 28401 Kutná Hora",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "112",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Výkrm Tagrea, s.r.o.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 27,
+                  "nazevKraje": "Středočeský kraj",
+                  "kodOkresu": 3205,
+                  "nazevOkresu": "Kutná Hora",
+                  "kodObce": 533955,
+                  "nazevObce": "Kutná Hora",
+                  "cisloDomovni": 196,
+                  "kodCastiObce": 77801,
+                  "nazevCastiObce": "Karlov",
+                  "kodAdresnihoMista": 26733463,
+                  "psc": 28401,
+                  "textovaAdresa": "Karlov 196, 28401 Kutná Hora",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "112",
+            "datovyZdroj": "rzp"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Výkrm Tagrea, s.r.o.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 27,
+                  "nazevKraje": "Středočeský kraj",
+                  "kodOkresu": 3205,
+                  "nazevOkresu": "Kutná Hora",
+                  "kodObce": 533955,
+                  "nazevObce": "Kutná Hora",
+                  "cisloDomovni": 196,
+                  "kodCastiObce": 77801,
+                  "nazevCastiObce": "Karlov",
+                  "kodAdresnihoMista": 26733463,
+                  "psc": 28401,
+                  "textovaAdresa": "Karlov 196, 28401 Kutná Hora",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "112",
+            "datovyZdroj": "szr"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Výkrm Tagrea, s.r.o.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 27,
+                  "nazevKraje": "Středočeský kraj",
+                  "kodOkresu": 3205,
+                  "nazevOkresu": "Kutná Hora",
+                  "kodObce": 533955,
+                  "nazevObce": "Kutná Hora",
+                  "cisloDomovni": 196,
+                  "kodCastiObce": 77801,
+                  "nazevCastiObce": "Karlov",
+                  "kodAdresnihoMista": 26733463,
+                  "psc": 28401,
+                  "textovaAdresa": "Karlov 196, 28401 Kutná Hora",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "112",
+            "spisovaZnacka": "C 213477/MSPH",
+            "datovyZdroj": "vr"
+          }
+        ],
+        "czNace": [
+          "014",
+          "471",
+          "46900",
+          "01"
+        ],
+        "subRegistrSzr": "ezp"
+      }
+    ]
+  }
+}

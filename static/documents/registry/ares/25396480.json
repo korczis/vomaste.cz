@@ -1,0 +1,248 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "25396480"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "25396480",
+        "obchodniJmeno": "Vodňanská drůbež, a.s.",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 35,
+          "nazevKraje": "Jihočeský kraj",
+          "kodOkresu": 3307,
+          "nazevOkresu": "Strakonice",
+          "kodObce": 551953,
+          "nazevObce": "Vodňany",
+          "kodUlice": 558621,
+          "nazevUlice": "Radomilická",
+          "cisloDomovni": 886,
+          "kodCastiObce": 405035,
+          "nazevCastiObce": "Vodňany II",
+          "kodAdresnihoMista": 9016406,
+          "psc": 38901,
+          "textovaAdresa": "Radomilická 886, Vodňany II, 38901 Vodňany",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "121",
+        "pravniFormaRos": "121",
+        "financniUrad": "013",
+        "datumVzniku": "1998-04-15",
+        "datumAktualizace": "2026-05-27",
+        "dic": "CZ25396480",
+        "icoId": "25396480",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Radomilická 886",
+          "radekAdresy2": "Vodňany II",
+          "radekAdresy3": "38901 Vodňany"
+        },
+        "czNace2008": [
+          "00",
+          "77290",
+          "G",
+          "55",
+          "36",
+          "49410",
+          "10",
+          "32500",
+          "82110",
+          "52",
+          "6820",
+          "5610",
+          "10710",
+          "10120"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "AKTIVNI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "AKTIVNI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Vodňanská drůbež, a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 35,
+                  "nazevKraje": "Jihočeský kraj",
+                  "kodOkresu": 3307,
+                  "nazevOkresu": "Strakonice",
+                  "kodObce": 551953,
+                  "nazevObce": "Vodňany",
+                  "kodUlice": 558621,
+                  "nazevUlice": "Radomilická",
+                  "cisloDomovni": 886,
+                  "kodCastiObce": 405035,
+                  "nazevCastiObce": "Vodňany II",
+                  "kodAdresnihoMista": 9016406,
+                  "psc": 38901,
+                  "textovaAdresa": "Radomilická 886, Vodňany II, 38901 Vodňany",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "121",
+            "pravniFormaRos": "121",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Vodňanská drůbež, a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 35,
+                  "nazevKraje": "Jihočeský kraj",
+                  "kodOkresu": 3307,
+                  "nazevOkresu": "Strakonice",
+                  "kodObce": 551953,
+                  "nazevObce": "Vodňany",
+                  "kodUlice": 558621,
+                  "nazevUlice": "Radomilická",
+                  "cisloDomovni": 886,
+                  "kodCastiObce": 405035,
+                  "nazevCastiObce": "Vodňany II",
+                  "kodAdresnihoMista": 9016406,
+                  "psc": 38901,
+                  "textovaAdresa": "Radomilická 886, Vodňany II, 38901 Vodňany",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "121",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Vodňanská drůbež, a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 35,
+                  "nazevKraje": "Jihočeský kraj",
+                  "kodOkresu": 3307,
+                  "nazevOkresu": "Strakonice",
+                  "kodObce": 551953,
+                  "nazevObce": "Vodňany",
+                  "kodUlice": 558621,
+                  "nazevUlice": "Radomilická",
+                  "cisloDomovni": 886,
+                  "kodCastiObce": 405035,
+                  "nazevCastiObce": "Vodňany II",
+                  "kodAdresnihoMista": 9016406,
+                  "psc": 38901,
+                  "textovaAdresa": "Radomilická 886, Vodňany II, 38901 Vodňany",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "121",
+            "datovyZdroj": "rzp"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Vodňanská drůbež, a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 35,
+                  "nazevKraje": "Jihočeský kraj",
+                  "kodOkresu": 3307,
+                  "nazevOkresu": "Strakonice",
+                  "kodObce": 551953,
+                  "nazevObce": "Vodňany",
+                  "kodUlice": 558621,
+                  "nazevUlice": "Radomilická",
+                  "cisloDomovni": 886,
+                  "kodCastiObce": 405035,
+                  "nazevCastiObce": "Vodňany II",
+                  "kodAdresnihoMista": 9016406,
+                  "psc": 38901,
+                  "textovaAdresa": "Radomilická 886, Vodňany II, 38901 Vodňany",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "121",
+            "spisovaZnacka": "B 1953/KSCB",
+            "datovyZdroj": "vr"
+          }
+        ],
+        "czNace": [
+          "49410",
+          "82100",
+          "00",
+          "10",
+          "32500",
+          "52",
+          "G",
+          "36000",
+          "10120",
+          "77220",
+          "10710",
+          "55",
+          "56110",
+          "68200"
+        ],
+        "subRegistrSzr": "szr"
+      }
+    ]
+  }
+}

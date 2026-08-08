@@ -1,0 +1,250 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "25542125"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "25542125",
+        "obchodniJmeno": "PG Contract, spol.s.r.o.",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodOkresu": 3100,
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 27,
+          "nazevSpravnihoObvodu": "Praha 2",
+          "kodMestskehoObvodu": 27,
+          "nazevMestskehoObvodu": "Praha 2",
+          "kodMestskeCastiObvodu": 500089,
+          "kodUlice": 454877,
+          "nazevMestskeCastiObvodu": "Praha 2",
+          "nazevUlice": "Londýnská",
+          "cisloDomovni": 166,
+          "kodCastiObce": 490229,
+          "cisloOrientacni": 1,
+          "nazevCastiObce": "Vinohrady",
+          "kodAdresnihoMista": 21740917,
+          "psc": 12000,
+          "textovaAdresa": "Londýnská 166/1, Vinohrady, 12000 Praha 2",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "112",
+        "pravniFormaRos": "112",
+        "financniUrad": "002",
+        "datumVzniku": "1998-10-16",
+        "datumAktualizace": "2026-03-29",
+        "dic": "CZ25542125",
+        "icoId": "25542125",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Londýnská 166/1",
+          "radekAdresy2": "Vinohrady",
+          "radekAdresy3": "12000 Praha 2"
+        },
+        "czNace2008": [
+          "46900",
+          "702"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "AKTIVNI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "NEEXISTUJICI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "PG Contract, spol.s.r.o.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 27,
+                  "nazevSpravnihoObvodu": "Praha 2",
+                  "kodMestskehoObvodu": 27,
+                  "nazevMestskehoObvodu": "Praha 2",
+                  "kodMestskeCastiObvodu": 500089,
+                  "kodUlice": 454877,
+                  "nazevMestskeCastiObvodu": "Praha 2",
+                  "nazevUlice": "Londýnská",
+                  "cisloDomovni": 166,
+                  "kodCastiObce": 490229,
+                  "cisloOrientacni": 1,
+                  "nazevCastiObce": "Vinohrady",
+                  "kodAdresnihoMista": 21740917,
+                  "psc": 12000,
+                  "textovaAdresa": "Londýnská 166/1, Vinohrady, 12000 Praha 2",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "112",
+            "pravniFormaRos": "112",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "PG Contract, spol.s.r.o.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodOkresu": 3100,
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 27,
+                  "nazevSpravnihoObvodu": "Praha 2",
+                  "kodMestskehoObvodu": 27,
+                  "nazevMestskehoObvodu": "Praha 2",
+                  "kodMestskeCastiObvodu": 500089,
+                  "kodUlice": 454877,
+                  "nazevMestskeCastiObvodu": "Praha 2",
+                  "nazevUlice": "Londýnská",
+                  "cisloDomovni": 166,
+                  "kodCastiObce": 490229,
+                  "cisloOrientacni": 1,
+                  "nazevCastiObce": "Vinohrady",
+                  "kodAdresnihoMista": 21740917,
+                  "psc": 12000,
+                  "textovaAdresa": "Londýnská 166/1, Vinohrady, 12000 Praha 2",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "112",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "PG Contract, spol.s.r.o.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 27,
+                  "nazevSpravnihoObvodu": "Praha 2",
+                  "kodMestskehoObvodu": 27,
+                  "nazevMestskehoObvodu": "Praha 2",
+                  "kodMestskeCastiObvodu": 500089,
+                  "kodUlice": 454877,
+                  "nazevMestskeCastiObvodu": "Praha 2",
+                  "nazevUlice": "Londýnská",
+                  "cisloDomovni": 166,
+                  "kodCastiObce": 490229,
+                  "cisloOrientacni": 1,
+                  "nazevCastiObce": "Vinohrady",
+                  "kodAdresnihoMista": 21740917,
+                  "psc": 12000,
+                  "textovaAdresa": "Londýnská 166/1, Vinohrady, 12000 Praha 2",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "112",
+            "datovyZdroj": "rzp"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "PG Contract, spol.s.r.o.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodOkresu": 3100,
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodMestskehoObvodu": 27,
+                  "nazevMestskehoObvodu": "Praha 2",
+                  "kodMestskeCastiObvodu": 500089,
+                  "kodUlice": 454877,
+                  "nazevMestskeCastiObvodu": "Praha 2",
+                  "nazevUlice": "Londýnská",
+                  "cisloDomovni": 166,
+                  "kodCastiObce": 490229,
+                  "cisloOrientacni": 1,
+                  "nazevCastiObce": "Vinohrady",
+                  "kodAdresnihoMista": 21740917,
+                  "psc": 12000,
+                  "textovaAdresa": "Londýnská 166/1, Vinohrady, 12000 Praha 2",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "112",
+            "spisovaZnacka": "C 106851/MSPH",
+            "datovyZdroj": "vr"
+          }
+        ],
+        "czNace": [
+          "70200",
+          "46900"
+        ],
+        "subRegistrSzr": "szr"
+      }
+    ]
+  }
+}
