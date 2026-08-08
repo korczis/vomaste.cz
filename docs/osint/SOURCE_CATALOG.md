@@ -197,13 +197,13 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 788 záznamů v 139 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 790 záznamů v 139 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
 | ctk | 300 | 28 | [ano](/zdroje/ctk/) |
 | Poslanecká sněmovna Parlamentu ČR | 56 | 37 | [ano](/zdroje/psp-cz/) |
-| seznam-zpravy | 38 | 13 | [ano](/zdroje/seznam-zpravy/) |
+| seznam-zpravy | 39 | 13 | [ano](/zdroje/seznam-zpravy/) |
 | Vláda České republiky (vlada.gov.cz) | 29 | 18 | [ano](/zdroje/vlada-cz/) |
 | FORUM 24 | 20 | 10 | [ano](/zdroje/forum24/) |
 | ČT24 (Česká televize) | 19 | 11 | [ano](/zdroje/ceska-televize/) |
@@ -218,9 +218,9 @@ Dopočítáno z `data/dossiers/**/sources/**`, 788 záznamů v 139 rodinách/out
 | hlidac-statu | 7 | 2 | [ano](/zdroje/hlidac-statu/) |
 | udhpsh | 7 | 2 | [ano](/zdroje/udhpsh/) |
 | Hospodářské noviny | 6 | 5 | — |
+| Zdravé zprávy | 6 | 2 | — |
 | Blesk.cz | 5 | 3 | [ano](/zdroje/blesk-cz/) |
 | CNN Prima News | 5 | 5 | — |
-| Zdravé zprávy | 5 | 2 | — |
 | e15.cz | 4 | 2 | — |
 | HlídacíPes.org | 4 | 4 | — |
 | Ministerstvo dopravy ČR | 4 | 1 | — |
@@ -346,6 +346,6 @@ Dopočítáno z `data/dossiers/**/sources/**`, 788 záznamů v 139 rodinách/out
 Tyhle zdroje dataset používá aspoň pětkrát, ale katalog k nim nemá záznam s mezemi a pastmi:
 
 - Hospodářské noviny (6×)
+- Zdravé zprávy (6×)
 - CNN Prima News (5×)
-- Zdravé zprávy (5×)
 

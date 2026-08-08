@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-51",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-51",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "title": "SRC-51 — Seznam Zprávy, 16. 3. 2026",
+  "description": "Kauza defibrilátory: u většiny pacientů z klinické studie se studijní dokumentace neshodovala s daty a kritérii.",
+  "outlet": "Seznam Zprávy",
+  "sourceFamily": "seznam-zpravy",
+  "sourceType": "zpravodajství",
+  "url": "https://www.seznamzpravy.cz/clanek/domaci-kauzy-kauza-defibrilatory-u-vetsiny-pacientu-z-klinicke-studie-zfalsovali-chorobopisy-301338",
+  "published": "2026-03-16",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-07"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Co dokládá.** Redakční reportáž Seznam Zpráv (autoři Jiří Pšenička a Radek Kedroň) potvrzuje týž skutkový základ jako CLM-07: FN Olomouc byla zapojena do mezinárodní klinické studie PROFID EHRA a na přelomu ledna/února 2025 z ní vystoupila poté, co interní audit odhalil nesrovnalosti; ze sedmi desítek zařazených olomouckých kardiaků se studijní (papírová) dokumentace plně shodovala s kritérii studie a s daty nemocničního systému jen u dvou. Závěry auditu obdrželo vedení nemocnice 17. února 2025 v excelové tabulce.\n\n**Nezávislost.** Nezávislý zdroj vůči SRC-04 (Zdravotnický deník, rodina `ctk`): jiný vydavatel (seznamzpravy.cz) i jiná zdrojová rodina (`seznam-zpravy`) — jde o vlastní investigativní redakci Seznam Zpráv, nikoli o převzatou agenturní zprávu ČTK. Tvoří tak nezávislý pár dle pravidla S2/S10 pro faktické jádro tvrzení (účast ve studii, vystoupení v únoru 2025, nesrovnalosti v dokumentaci). Dokládá znění citovaného zpravodajství k datu otevření (2026-08-08), ne procesní výsledek policejního šetření."
+    }
+  ],
+  "order": 51
+}
