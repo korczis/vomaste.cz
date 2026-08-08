@@ -75,6 +75,45 @@ Postup: každou položku ověřit proti primárnímu záznamu (psp.cz, NSS,
 oficiální oznámení) a buď opravit znění tvrzení (redakční akt, nový
 update záznam), nebo doplnit kaveát, pokud je rozpor v samotné realitě.
 
+**Přezkum proveden 2026-08-09 — všechny čtyři položky prošly, žádné
+tvrzení nebylo chybné vůči svému citovanému zdroji.** Klíčový nález:
+„nesrovnalosti", které rešeršní kola nahlásila, byly ve všech čtyřech
+případech rozdíly mezi zdrojem tvrzení a JINÝM zdrojem dohledaným při
+hledání korroborace — přesně proto ta kola daná tvrzení správně
+nekorroborovala. Nešlo o chyby v tvrzeních. Výsledky:
+
+1. **CLM-38 (adam-vojtech) — VYŘEŠENO, tvrzení věrné zdroji.** Citovaný
+   zdroj (SRC-25, ČTK přes ČeskéNoviny) i shodně řada dalších výstupů
+   uvádějí přesně 84/50/159 — ověřeno otevřením zdroje. Údaj „85 Ano /
+   49 Ne" se z přímo otevřitelné psp.cz stránky nepodařilo potvrdit ani
+   vyvrátit; nejpravděpodobněji jde o rozdíl mezi rámcem
+   koaliční/opoziční (ČTK) a syrovým Ano/Ne roll-callem (jeden přeběhlý
+   hlas by rozdíl vysvětlil). Tvrzení věrně reprodukuje svůj zdroj —
+   NEMĚNIT bez přímého psp.cz roll-callu; pokud se otevře a bude
+   85/49, doplnit kaveát, ne přepsat citovaný údaj.
+2. **CLM-52 (martin-sebestyan) — VYŘEŠENO, tvrzení přesné vůči
+   primárnímu zdroji.** Ověřeno přímo proti oficiální stránce Sbírky
+   rozhodnutí NSS (sbírka.nssoud.cz, kterou tvrzení cituje jako SRC-43):
+   spis. zn. **1 Afs 59/2025-98**, datum **12. 9. 2025**, Sbírka
+   **4707/2025**, předmět **dotace podle zákona o SZIF + střet zájmů**,
+   účastník **Vodňanská drůbež (Agrofert)** — vše přesně sedí. Rozpor
+   pocházel ze sekundárního agregátoru (Podnikatel.cz), který popisoval
+   JINÝ spis („-108", veřejná zakázka). Tvrzení je správné, beze změny.
+3. **CLM-27 (ivan-bednarik) — VYŘEŠENO, tvrzení přesné vůči primárnímu
+   zdroji.** Ověřeno přímo proti citovanému zdroji (SRC-11, Česká
+   infrastruktura): tunel ~30 km, 12 km na území ČR, zahájení stavby
+   2030, provoz 2042 — vše přesně sedí. Odlišné roky u Echo24 / německého
+   parlamentu jsou jiné výstupy k vyvíjejícímu se megaprojektu, ne chyba
+   tvrzení. Beze změny (SRC-11 je autoritativní zdroj tohoto konkrétního
+   březnového jednání).
+4. **CLM-44 (karel-havlicek) — VYŘEŠENO, doplněn kaveát.** Ověřeno proti
+   citovanému zdroji (SRC-30, EV Magazín): uvádí sedm zemí včetně
+   Německa, tvrzení je věrné. Postoj Německa k cíli 2035 se ale v čase
+   měnil a jiné zpravodajství uvádí šest zemí bez Německa — do těla
+   CLM-44 doplněn kaveát, který tuto divergenci zpravodajství přiznává;
+   tvrzení zůstává 1 ZDROJ (přidání zdroje s jiným počtem by byl rozpor,
+   ne korroborace). Deployováno.
+
 ## Inženýrské — otevřené
 
 7. **[P2]** `published_state = "living-page"` pro src-23..27, 40, 41 +

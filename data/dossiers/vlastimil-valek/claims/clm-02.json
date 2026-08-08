@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/vlastimil-valek/claims/CLM-02",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/vlastimil-valek"
+  },
+  "text": "Během krize s výpadky léků (od podzimu 2022, zejména penicilinová antibiotika) čelil ministr zdravotnictví Válek sněmovní kritice opozice za postup vůči výrobcům a rozpor mezi slíbenými a dodanými objemy; hájil se celoevropským rozměrem problému s příčinami ve výpadcích výroby v Číně a Indii a v srpnu 2023 předložil vládní novelu o léčivech (povinné dodávky po nahlášení výpadku, zásoby distributorů, hlášení lékáren), kterou označil za „komplexní a vyvážené řešení“ a kterou opozice kritizovala jako nedostatečnou — nezávisle informovaly Seznam Zprávy a ČT24; žádný citovaný zdroj netvrdí protiprávní jednání ministra",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/vlastimil-valek/sources/SRC-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/vlastimil-valek/sources/SRC-05"
+    }
+  ],
+  "subjects": [
+    "vlastimil-valek"
+  ],
+  "order": 2,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/vlastimil-valek/_index.md)."
+    }
+  ]
+}

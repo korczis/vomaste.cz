@@ -197,14 +197,14 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 985 záznamů v 142 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 987 záznamů v 142 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
 | ctk | 303 | 31 | [ano](/zdroje/ctk/) |
 | Vláda České republiky (vlada.gov.cz) | 184 | 167 | [ano](/zdroje/vlada-cz/) |
 | Poslanecká sněmovna Parlamentu ČR | 61 | 42 | [ano](/zdroje/psp-cz/) |
-| seznam-zpravy | 39 | 13 | [ano](/zdroje/seznam-zpravy/) |
+| seznam-zpravy | 40 | 14 | [ano](/zdroje/seznam-zpravy/) |
 | ČT24 (Česká televize) | 26 | 18 | [ano](/zdroje/ceska-televize/) |
 | Aktuálně.cz | 22 | 15 | [ano](/zdroje/aktualne-cz/) |
 | FORUM 24 | 20 | 10 | [ano](/zdroje/forum24/) |
@@ -242,6 +242,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 985 záznamů v 142 rodinách/out
 | Transparency International ČR | 3 | 2 | — |
 | Úřad pro ochranu osobních údajů | 3 | 1 | — |
 | smlouvy-gov-cz | 3 | 1 | [ano](/zdroje/registr-smluv/) |
+| ct24 | 2 | 2 | [ano](/zdroje/ceska-televize/) |
 | cz-verejny-rejstrik | 2 | 1 | [ano](/zdroje/ares/) |
 | ARES — Administrativní registr ekonomických subjektů (Ministerstvo financí ČR) | 2 | 2 | [ano](/zdroje/ares/) |
 | Česká školní inspekce | 2 | 1 | — |
@@ -266,7 +267,6 @@ Dopočítáno z `data/dossiers/**/sources/**`, 985 záznamů v 142 rodinách/out
 | Ústavní soud ČR | 2 | 2 | — |
 | Vrchní státní zastupitelství v Olomouci | 2 | 1 | — |
 | blesk | 1 | 1 | [ano](/zdroje/blesk-cz/) |
-| ct24 | 1 | 1 | [ano](/zdroje/ceska-televize/) |
 | cvvm | 1 | 1 | — |
 | denik | 1 | 1 | [ano](/zdroje/denik-cz/) |
 | echo24 | 1 | 1 | [ano](/zdroje/echo24/) |
