@@ -4050,3 +4050,88 @@ na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
 doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
 dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
 autorizaci.
+
+### Scope extension, 2026-08-08: Dana Kuchtová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Dana Kuchtová je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministryně školství, mládeže a tělovýchovy (9. 1. 2007 – 4. 10. 2007; přehled u konce působení uvádí demisi) (druhá vláda Mirka Topolánka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Ondřej Liška
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Ondřej Liška je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr školství, mládeže a tělovýchovy (4. 12. 2007 – 8. 5. 2009, od 26. 3. 2009 v demisi) (druhá vláda Mirka Topolánka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Aleš Řebíček
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Aleš Řebíček je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr dopravy (9. 1. 2007 – 23. 1. 2009; přehled u konce působení uvádí odvolání — odvolání je politický krok, nikoli závěr o pochybení) (druhá vláda Mirka Topolánka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Petr Gandalovič
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Petr Gandalovič je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr zemědělství (9. 1. 2007 – 8. 5. 2009, od 26. 3. 2009 v demisi) (druhá vláda Mirka Topolánka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Václav Jehlička
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Václav Jehlička je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr kultury (26. 1. 2007 – 8. 5. 2009, od 26. 3. 2009 v demisi) (druhá vláda Mirka Topolánka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.

@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ondrej-liska",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "ondrej-liska",
+  "slug": "ondrej-liska",
+  "title": "Ondřej Liška",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Ondřej Liška.",
+  "dossierType": "entity",
+  "canonicalDossier": "ondrej-liska",
+  "subject": "ondrej-liska",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-ONDREJ-LISKA"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "ondrej-liska",
+        "label": "Ondřej Liška",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nOndřej Liška je bývalý ministr školství, mládeže a tělovýchovy (2007–2009, druhá vláda Mirka Topolánka). Jako politicky exponovaná osoba\nv souvislosti s výkonem dřívější veřejné funkce spadá do standing scope\nautorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro\ntento dossier je `AUTH-2026-08-08-ONDREJ-LISKA`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívější vládní funkce doložený oficiálním přehledem členů\ndruhé vlády Mirka Topolánka na webu Vlády ČR. Tvrzení nese stav 1 ZDROJ;\npovýšení na CORROBORATED i doplnění okolností konce v úřadu či dalších\nfunkcí vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje\nsamostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/ondrej-liska/claims/clm-01.md) | Ondřej Liška byl podle oficiálního přehledu členů druhé vlády Mirka Topolánka na webu Vlády ČR ministrem školství, mládeže a tělovýchovy od 4. 12. 2007 do 26. 3. 2009 a poté do 8. 5. 2009 vykonával funkci v demisi | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-01](@/dossiers/ondrej-liska/sources/src-01.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}
