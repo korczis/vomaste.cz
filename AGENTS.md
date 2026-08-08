@@ -4390,3 +4390,88 @@ na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
 doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
 dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
 autorizaci.
+
+### Scope extension, 2026-08-08: Karel Kühnl
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Karel Kühnl je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr obrany (25. 4. 2005 – 16. 8. 2006) (vláda Jiřího Paroubka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Petr Zgarba
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Petr Zgarba je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr zemědělství (25. 4. 2005 – 10. 11. 2005) (vláda Jiřího Paroubka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: David Rath
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): David Rath je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr zdravotnictví (4. 11. 2005 – 16. 8. 2006); rozsah je výhradně tato vládní funkce — pozdější trestní kauza z doby hejtmanství není tímto záznamem autorizována a vyžadovala by samostatnou autorizaci (vláda Jiřího Paroubka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Petra Buzková
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Petra Buzková je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministryně školství, mládeže a tělovýchovy (25. 4. 2005 – 16. 8. 2006) (vláda Jiřího Paroubka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Libor Ambrozek
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Libor Ambrozek je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr životního prostředí (25. 4. 2005 – 16. 8. 2006) (vláda Jiřího Paroubka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
