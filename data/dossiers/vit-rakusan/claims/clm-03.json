@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/vit-rakusan/claims/CLM-03",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/vit-rakusan"
+  },
+  "text": "Vít Rakušan podle Echo24 (22. 4. 2026) k vlastnímu používání telefonu se šifrovací aplikací CryptoCult — stejnou, jakou používali i obvinění v kauze Dozimetr — uvedl: telefon měl „od podzimu 2021, kdy ještě žádná kauza Dozimetr nebyla“ do „ledna, února 2022“, zavolal z něj „tak třikrát čtyřikrát v životě“ a nikdy s nikým z obviněných v kauze Dozimetr; z obviněných osobně znal jen Petra Hlubučka. Rakušan nebyl v kauze Dozimetr obviněn ani stíhán",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/vit-rakusan/sources/SRC-06"
+    }
+  ],
+  "subjects": [
+    "vit-rakusan"
+  ],
+  "order": 3,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/vit-rakusan/_index.md)."
+    }
+  ]
+}

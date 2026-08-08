@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/vit-rakusan/sources/SRC-04",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-04",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/vit-rakusan"
+  },
+  "title": "SRC-04 — NKÚ: tisková zpráva ke kontrolní akci č. 24/28 (profesionalizace státní služby na ministerstvu vnitra)",
+  "description": "Primární tisková zpráva Nejvyššího kontrolního úřadu ke kontrolní akci prověřující výdaje ministerstva vnitra na profesionalizaci a zvyšování kvality státní služby.",
+  "outlet": "Nejvyšší kontrolní úřad (nku.cz)",
+  "sourceFamily": "nku",
+  "sourceType": "primární úřední kontrolní zpráva",
+  "url": "https://www.nku.cz/cz/pro-media/tiskove-zpravy/v-souvislosti-s-profesionalizaci-a-zvysovanim-kvality-statni-sluzby-vynalozilo-ministerstvo-vnitra-pres-870-mil--kc--pozadovaneho-efektu-ale-nedosahlo-id15460",
+  "published": "2026-02-23",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/vit-rakusan/claims/CLM-02"
+    }
+  ],
+  "subjects": [
+    "vit-rakusan"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Primární tisková zpráva NKÚ, otevřena a přečtena 2026-08-08. Kontrolní akce č. 24/28 prověřila výdaje ministerstva vnitra na profesionalizaci a zvyšování kvality státní služby v období 2015–2024 (přes 873 milionů Kč). Zjištění: 51 z 84 služebních úřadů nesplnilo do roku 2022 minimální standard kvality řízení, ministerstvo samo skončilo mezi třemi nejhoršími (5 z požadovaných 18 bodů); plánovaný centralizovaný e-learningový vzdělávací portál od února 2022 nikdy nevznikl; aplikace eZkouška (nasazena září 2019, zrušena listopad 2023 po 22+ milionech Kč) byla vyhodnocena jako neekonomická, návrat k papírovým testům; Informační systém o státní službě (640 milionů Kč, 2015–2024) neposkytuje data potřebná k hodnocení stavu státní služby. Od roku 2020 ministerstvo přestalo měřit výkon veřejné správy, koordinace byla mezitím převedena na Úřad vlády.\n\n**Co to dokládá a co ne**: dokládá, co NKÚ jako nezávislý kontrolní orgán zjistil a zveřejnil. Nedokládá osobní odpovědnost konkrétního ministra — kontrolované období (2015–2024) zdaleka přesahuje Rakušanův nástup (prosinec 2021) a zahrnuje i předchozí ministry. Tisková zpráva sama vyjádření ministerstva necituje."
+    }
+  ],
+  "order": 4
+}

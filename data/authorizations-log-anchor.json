@@ -1,6 +1,6 @@
 {
   "$comment": "Hash-kotva append-only autorizačního logu v AGENTS.md (## Content about real parties). Generuje `npm run authorization:anchor`: interaktivně, nebo pro čistě nový záznam po výslovné autorizaci vlastníka v aktuální konverzaci. verify-authorization-log-append-only.mjs proti ní ověřuje byte-verní integritu každého záznamu; validate-authorization.mjs přes ni váže data/authorizations.toml na log. Needitovat ručně.",
-  "generatedAt": "2026-08-07",
+  "generatedAt": "2026-08-08",
   "algorithm": "sha256(normalized entry block: LF line endings, trailing whitespace trimmed)",
   "entries": [
     {
@@ -226,6 +226,10 @@
     {
       "heading": "### Scope extension, 2026-08-07: Jiří Pospíšil",
       "sha256": "8e9e446deb81ea4f93b2eecb37afd429e6a7fc983fca592a3ebf6a258a0a2896"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Vít Rakušan — ministerské období",
+      "sha256": "c4db8eb880c53d13caabe1e607d1699900d2e14243d03d63d2c197ce4076ddbd"
     }
   ]
 }

@@ -197,7 +197,7 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 777 záznamů v 135 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 780 záznamů v 138 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
@@ -265,9 +265,12 @@ Dopočítáno z `data/dossiers/**/sources/**`, 777 záznamů v 135 rodinách/out
 | ct24 | 1 | 1 | [ano](/zdroje/ceska-televize/) |
 | cvvm | 1 | 1 | — |
 | denik | 1 | 1 | [ano](/zdroje/denik-cz/) |
+| echo24 | 1 | 1 | [ano](/zdroje/echo24/) |
+| ekonomicky-denik | 1 | 1 | [ano](/zdroje/ekonomicky-denik/) |
 | eppo | 1 | 1 | — |
 | idnes-dividenda-2026-07 | 1 | 1 | [ano](/zdroje/echo24/) |
 | mestsky-soud-praha | 1 | 1 | — |
+| nku | 1 | 1 | — |
 | nssoud | 1 | 1 | — |
 | ACRI — Asociace podniků českého železničního průmyslu | 1 | 1 | — |
 | Agrofert (agrofert.cz) | 1 | 1 | — |

@@ -363,3 +363,10 @@ authorized_at = "2026-08-07"
 subjects = ["jiri-pospisil"]
 agents_md_section = "Scope extension, 2026-08-07: Jiří Pospíšil"
 scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jiří Pospíšil je veřejný funkcionář — poslanec Poslanecké sněmovny Parlamentu ČR za TOP 09 (mandát od 4. 10. 2025, Praha) a od 8. 11. 2025 první místopředseda TOP 09 (dříve předseda TOP 09 2017–2019, ministr spravedlnosti 2006–2009 a 2010–2012). Rozsah tohoto dossieru je záměrně minimální: pouze základní, aktuálně ověřený politický profil (poslanecký mandát, klubová příslušnost TOP 09, funkce prvního místopředsedy strany), doložený přímo otevřenými zdroji (psp.cz, Deník N, Echo24.cz). Nejde o investigativní rešerši žádné kauzy ani sporného tématu."
+
+[[authorizations]]
+id = "AUTH-2026-08-08-VIT-RAKUSAN-MINISTERSTVO"
+authorized_at = "2026-08-08"
+subjects = ["vit-rakusan"]
+agents_md_section = "Scope extension, 2026-08-08: Vít Rakušan — ministerské období"
+scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): rozšíření AUTH-2026-08-07-VIT-RAKUSAN na ministerské období (2021-2025): kontrolní nález NKÚ o 870 mil. Kč vynaložených na profesionalizaci státní služby 2016-2023 bez očekávaného efektu (Ekonomický deník, únor 2026), a kauza šifrovaného telefonu s aplikací CryptoCult a jeho souvislost s kauzou Dozimetr — Rakušan sám nikdy nebyl v kauze Dozimetr obviněn ani stíhán, použití stejné aplikace není samo o sobě spojením s trestnou činností (Echo24, 22. 4. 2026). Každý zdroj musí být přímo otevřen a přečten před citací; procesní stav (nikdy neobviněn) uveden při každé zmínce."
