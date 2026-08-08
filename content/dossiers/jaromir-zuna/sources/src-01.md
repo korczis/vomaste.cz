@@ -15,7 +15,7 @@ lang = "cs"
 src_id = "SRC-01"
 +++
 Oficiální stránka na webu Úřadu vlády, otevřena a přečtena 2026-07-30.
-Uvádí funkci **místopředseda vlády a ministr obrany** a doložený přehled kariéry: narozen 26. 11. 1960; voják z povolání od 1980, generálporučík; 1. zástupce náčelníka Generálního štábu AČR (2019–2022); přidělenec obrany v Číně, Mongolsku a KLDR (2022–2024); National War College (Washington).
+Uvádí funkci **místopředseda vlády a ministr obrany** a doložený přehled kariéry: narozen 1960; voják z povolání od 1980, generálporučík; 1. zástupce náčelníka Generálního štábu AČR (2019–2022); přidělenec obrany v Číně, Mongolsku a KLDR (2022–2024); National War College (Washington).
 
 Poznámka k typu zdroje a jeho limitům: **primární úřední záznam** —
 dokládá existenci a formulaci úředního údaje, ne nezávislé redakční

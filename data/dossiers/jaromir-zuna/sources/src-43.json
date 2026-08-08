@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-43",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-43",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "title": "SRC-43 — Aktuálně.cz",
+  "description": "Tečka za „zakázaným“ interview s prezidentem Pavlem. Inspekce ukázala na viníky",
+  "outlet": "Aktuálně.cz",
+  "sourceType": "redakční reportáž",
+  "url": "https://zpravy.aktualne.cz/domaci/zakazany-rozhovor-s-prezidentem-zunova-inspekce-ukazala-na-dva-viniky/r~aaa29a7155317144a7c87a79e31c2aff/",
+  "published": "2026-06-12",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-12"
+    }
+  ],
+  "subjects": [
+    "zuna"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Tečka za „zakázaným“ interview s prezidentem Pavlem. Inspekce ukázala na viníky**\n\nVlastní reportáž Aktuálně.cz (autor Ondřej Stratilík) k výsledku inspekce ministerstva obrany z června 2026. Dokládá, že inspekce neshledala formální zákaz zveřejnění natočeného rozhovoru s prezidentem ani cílenou cenzuru a že pochybení konstatovala na obou stranách — u vedoucího komunikace generálního štábu (nový kanál mimo pokyny) i u kabinetu ministra Zůny (šéf kabinetu se neseznámil s platnými pokyny). Slouží jako nezávislé potvrzení k CLM-12: jde o samostatnou redakční práci vydavatele Economia, odlišný vydavatel i zdrojová rodina než veřejnoprávní ČT24 přebírající ČTK (SRC-08) — jiná redakce, jiná doména, žádná sdílená agenturní depeše. Zdroj otevřen a přečten 2026-08-08."
+    }
+  ],
+  "order": 43
+}

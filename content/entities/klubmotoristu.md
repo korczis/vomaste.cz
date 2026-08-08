@@ -4,7 +4,7 @@ title = "Klub motoristů, z.s."
 template = "entity.html"
 weight = 15
 aliases = ["/dossiers/macinka-turek/entities/klubmotoristu/"]
-description = "Kontextový záznam na vomaste.cz: Klub motoristů, z.s. Vystupuje v dossieru Petr Macinka a Filip Turek a dalších. Uveden, protože ho jmenuje citovaný obsah, ne jako tvrzení o pochybení."
+description = "Kontextová entita — Spolek Klub motoristů, z.s., dárce politické strany dle citovaného zpravodajství a rejstříku."
 
 [extra]
 generated = true
@@ -13,3 +13,4 @@ view_model = "generated/views/entities/klubmotoristu.json"
 record_type = "entity"
 entity_id = "klubmotoristu"
 +++
+Kontextová entita — Spolek Klub motoristů, z.s., dárce politické strany dle citovaného zpravodajství a rejstříku. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (macinka-turek). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení.

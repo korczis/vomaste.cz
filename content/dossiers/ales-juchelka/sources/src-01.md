@@ -15,7 +15,7 @@ lang = "cs"
 src_id = "SRC-01"
 +++
 Oficiální profil na webu Úřadu vlády, otevřen a přečten 2026-07-30.
-Uvádí funkci **ministr práce a sociálních věcí** a doložený přehled kariéry: narozen 18. 4. 1976 v Ostravě; Ekonomická fakulta VŠB-TU Ostrava (1998–2003); moderátor České televize do roku 2012; zastupitel Ostravy od 2010; poslanec od 2017 se zaměřením na sociální oblast a média; místopředseda Poslanecké sněmovny (2024–2025).
+Uvádí funkci **ministr práce a sociálních věcí** a doložený přehled kariéry: narozen 1976 v Ostravě; Ekonomická fakulta VŠB-TU Ostrava (1998–2003); moderátor České televize do roku 2012; zastupitel Ostravy od 2010; poslanec od 2017 se zaměřením na sociální oblast a média; místopředseda Poslanecké sněmovny (2024–2025).
 
 Poznámka k typu zdroje a jeho limitům: **primární úřední záznam** —
 dokládá existenci a formulaci úředního údaje, ne nezávislé redakční
