@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/bohuslav-sobotka/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/bohuslav-sobotka"
+  },
+  "text": "Bohuslav Sobotka byl podle oficiálního profilu na webu Vlády ČR předsedou vlády ČR od 29. 1. 2014 do 13. 12. 2017 (od 5. 12. 2017 v demisi), v letech 2002–2006 ministrem financí a místopředsedou vlády, od března 2011 do června 2017 předsedou ČSSD a poslancem byl poprvé zvolen v roce 1996; podle CNN Prima News po odchodu z politiky působí jako manažer ve firmě z oboru zdravotnické techniky a z veřejného života se stáhl",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/bohuslav-sobotka/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/bohuslav-sobotka/sources/SRC-02"
+    }
+  ],
+  "subjects": [
+    "bohuslav-sobotka"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/bohuslav-sobotka/_index.md)."
+    }
+  ]
+}

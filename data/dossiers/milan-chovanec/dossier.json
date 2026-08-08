@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/milan-chovanec",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "milan-chovanec",
+  "slug": "milan-chovanec",
+  "title": "Milan Chovanec",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Milan Chovanec.",
+  "dossierType": "entity",
+  "canonicalDossier": "milan-chovanec",
+  "subject": "milan-chovanec",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-MILAN-CHOVANEC"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "milan-chovanec",
+        "label": "Milan Chovanec",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nMilan Chovanec je bývalý ministr vnitra (2014–2017, vláda Bohuslava\nSobotky, ČSSD), dříve hejtman Plzeňského kraje. Jako politicky\nexponovaná osoba v souvislosti s výkonem dřívější veřejné funkce spadá\ndo standing scope autorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`);\nkonkrétní záznam pro tento dossier je `AUTH-2026-08-08-MILAN-CHOVANEC`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívějších veřejných funkcí. Tvrzení nese stav 1 ZDROJ (jediný\npřímo otevřený zdroj je oficiální profil na vlada.gov.cz); povýšení na\nCORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Rozšíření\nrozsahu vyžaduje samostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/milan-chovanec/claims/clm-01.md) | Milan Chovanec byl podle oficiálního profilu na webu Vlády ČR ministrem vnitra od 29. 1. 2014 do 13. 12. 2017 (vláda Bohuslava Sobotky, nominován za ČSSD, od 5. 12. 2017 v demisi), předtím hejtmanem Plzeňského kraje (od 2010) a členem ČSSD byl od roku 1997 | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-01](@/dossiers/milan-chovanec/sources/src-01.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

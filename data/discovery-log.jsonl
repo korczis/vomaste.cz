@@ -897,3 +897,8 @@
 {"logged_at":"2026-08-08","record_id":"jiri-milek","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["jiri-milek"]},"action":"created"}
 {"logged_at":"2026-08-08","record_id":"karla-slechtova","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["karla-slechtova"]},"action":"created"}
 {"logged_at":"2026-08-08","record_id":"tomas-huner","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["tomas-huner"]},"action":"created"}
+{"logged_at":"2026-08-08","record_id":"bohuslav-sobotka","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["bohuslav-sobotka"]},"action":"created"}
+{"logged_at":"2026-08-08","record_id":"michaela-marksova","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["michaela-marksova"]},"action":"created"}
+{"logged_at":"2026-08-08","record_id":"milan-chovanec","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["milan-chovanec"]},"action":"created"}
+{"logged_at":"2026-08-08","record_id":"pavel-belobradek","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["pavel-belobradek"]},"action":"created"}
+{"logged_at":"2026-08-08","record_id":"vera-jourova","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["vera-jourova"]},"action":"created"}

@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/michaela-marksova",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "michaela-marksova",
+  "slug": "michaela-marksova",
+  "title": "Michaela Marksová",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Michaela Marksová.",
+  "dossierType": "entity",
+  "canonicalDossier": "michaela-marksova",
+  "subject": "michaela-marksova",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-MICHAELA-MARKSOVA"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "michaela-marksova",
+        "label": "Michaela Marksová",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nMichaela Marksová je bývalá ministryně práce a sociálních věcí\n(2014–2017, vláda Bohuslava Sobotky, ČSSD). Jako politicky exponovaná\nosoba v souvislosti s výkonem dřívější veřejné funkce spadá do standing\nscope autorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam\npro tento dossier je `AUTH-2026-08-08-MICHAELA-MARKSOVA`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívější vládní funkce. Tvrzení nese stav 1 ZDROJ (jediný přímo\notevřený zdroj je oficiální profil na vlada.gov.cz); povýšení na\nCORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Rozšíření\nrozsahu vyžaduje samostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/michaela-marksova/claims/clm-01.md) | Michaela Marksová byla podle oficiálního profilu na webu Vlády ČR ministryní práce a sociálních věcí od 29. 1. 2014 do 13. 12. 2017 (vláda Bohuslava Sobotky, nominována za ČSSD, od 5. 12. 2017 v demisi) a v červnu 2015 byla krátce pověřena i řízením ministerstva školství; dříve vedla odbor rodinné politiky na MPSV (2004–2006) | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-01](@/dossiers/michaela-marksova/sources/src-01.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

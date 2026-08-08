@@ -197,17 +197,17 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 815 záznamů v 129 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 822 záznamů v 129 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
 | ctk | 294 | 24 | [ano](/zdroje/ctk/) |
-| Vláda České republiky (vlada.gov.cz) | 69 | 58 | [ano](/zdroje/vlada-cz/) |
+| Vláda České republiky (vlada.gov.cz) | 74 | 63 | [ano](/zdroje/vlada-cz/) |
 | Poslanecká sněmovna Parlamentu ČR | 51 | 32 | [ano](/zdroje/psp-cz/) |
 | seznam-zpravy | 38 | 13 | [ano](/zdroje/seznam-zpravy/) |
 | ČT24 (Česká televize) | 27 | 19 | [ano](/zdroje/ceska-televize/) |
 | FORUM 24 | 20 | 10 | [ano](/zdroje/forum24/) |
-| Aktuálně.cz | 18 | 13 | [ano](/zdroje/aktualne-cz/) |
+| Aktuálně.cz | 19 | 14 | [ano](/zdroje/aktualne-cz/) |
 | denik-n | 17 | 9 | [ano](/zdroje/denik-n/) |
 | Echo24 | 16 | 12 | [ano](/zdroje/echo24/) |
 | Novinky.cz | 13 | 12 | [ano](/zdroje/novinky-cz/) |
@@ -223,12 +223,12 @@ Dopočítáno z `data/dossiers/**/sources/**`, 815 záznamů v 129 rodinách/out
 | e15.cz | 5 | 3 | — |
 | Respekt | 5 | 4 | — |
 | Zdravé zprávy | 5 | 2 | — |
+| CNN Prima News | 4 | 4 | — |
 | HlídacíPes.org | 4 | 4 | — |
 | Ministerstvo dopravy ČR | 4 | 1 | — |
 | Reflex | 4 | 4 | — |
 | Státní zemědělský intervenční fond | 4 | 1 | — |
 | verejnazaloba | 4 | 1 | — |
-| CNN Prima News | 3 | 3 | — |
 | Investigace.cz | 3 | 3 | — |
 | Ministerstvo financí ČR | 3 | 1 | — |
 | Ministerstvo školství, mládeže a tělovýchovy (msmt.gov.cz) | 3 | 3 | — |

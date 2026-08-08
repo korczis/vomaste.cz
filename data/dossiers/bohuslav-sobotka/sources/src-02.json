@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/bohuslav-sobotka/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/bohuslav-sobotka"
+  },
+  "title": "SRC-02 — CNN Prima News: Co dnes dělá expremiér Sobotka",
+  "description": "CNN Prima News o Sobotkově působení po odchodu z politiky (manažer, zdravotnická technika).",
+  "outlet": "CNN Prima News",
+  "sourceType": "zpravodajský článek",
+  "url": "https://cnn.iprima.cz/domaci/co-dnes-dela-expremier-sobotka-politika-mu-rozbila-manzelstvi-pro-babise-pochopeni-nema-435789",
+  "retrieved": "2026-08-08",
+  "published": "2024-05-12",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/bohuslav-sobotka/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "bohuslav-sobotka"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpravodajský článek CNN Prima News z 12. 5. 2024, otevřen a přečten 2026-08-08.\nUvádí, že Bohuslav Sobotka po odchodu z politiky (kolem roku 2018) působí jako manažer se zaměřením na finance ve firmě z oboru zdravotnické techniky, z veřejného života se stáhl a členem ČSSD už není; jeho vlastní hodnocení dopadů politiky na soukromý život se cituje jeho slovy.\n\nPoznámka k typu zdroje a jeho limitům: nezávislé redakční zpravodajství — dokládá současné soukromé působení jako prostý biografický fakt; data výkonu veřejných funkcí nese SRC-01."
+    }
+  ],
+  "order": 2
+}

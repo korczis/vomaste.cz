@@ -2817,3 +2817,97 @@ je politický krok, Blažek podle citovaných zdrojů není obviněn, jeho
 vyjádření se uvádí vždy; samotná bitcoinová kauza je v tomto repozitáři
 pokryta samostatně (dossier Jeronýma Tejce) a tento dossier ji
 nerozšiřuje. Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Bohuslav Sobotka
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Bohuslav Sobotka je
+politicky exponovaná osoba v souvislosti s výkonem dřívějších veřejných
+funkcí — předseda vlády ČR (29. 1. 2014 – 13. 12. 2017, od 5. 12. 2017
+v demisi), ministr financí a místopředseda vlády (2002–2006), předseda
+ČSSD (2011–2017), poslanec od 1996. Podle CNN Prima News po odchodu
+z politiky působí jako manažer ve firmě z oboru zdravotnické techniky a
+z veřejného života se stáhl. Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívějších veřejných funkcí a doloženého současného soukromého
+působení (prostý fakt, bez hodnocení), doloženo přímo otevřenými zdroji
+(vlada.gov.cz, CNN Prima News). Nejde o investigativní rešerši žádné
+kauzy z jeho premiérského působení — to by vyžadovalo samostatnou
+budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Milan Chovanec
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Milan Chovanec je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr vnitra (29. 1. 2014 – 13. 12. 2017, vláda Bohuslava
+Sobotky, ČSSD, od 5. 12. 2017 v demisi), dříve hejtman Plzeňského
+kraje (od 2010). Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt vládní představitele postupně až do roku 1989,
+po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívějších veřejných funkcí. Tvrzení nese stav 1 ZDROJ (jediný
+přímo otevřený zdroj je oficiální profil na vlada.gov.cz); povýšení na
+CORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Rozšíření
+rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Pavel Bělobrádek
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Pavel Bělobrádek je
+politicky exponovaná osoba v souvislosti s výkonem dřívějších veřejných
+funkcí — místopředseda vlády pro vědu, výzkum a inovace (29. 1. 2014 –
+13. 12. 2017, vláda Bohuslava Sobotky, od 5. 12. 2017 v demisi),
+předseda KDU-ČSL od 2010, poslanec od 2013. Autorizace navazuje na
+výslovnou žádost vlastníka v této konverzaci pokrýt vládní
+představitele postupně až do roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívějších veřejných funkcí. Tvrzení nese stav 1 ZDROJ (jediný
+přímo otevřený zdroj je oficiální profil na vlada.gov.cz); povýšení na
+CORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Rozšíření
+rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Věra Jourová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Věra Jourová je
+politicky exponovaná osoba v souvislosti s výkonem dřívějších veřejných
+funkcí — místopředsedkyně Evropské komise pro hodnoty a transparentnost
+(2019 – 30. 11. 2024), eurokomisařka pro spravedlnost, ochranu
+spotřebitelů a rovnost žen a mužů (2014–2019), ministryně pro místní
+rozvoj ČR (29. 1. – 3. 10. 2014, vláda Bohuslava Sobotky, ANO),
+poslankyně od října 2013. Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívějších veřejných funkcí, doložený přímo otevřenými zdroji
+(vlada.gov.cz, Aktuálně.cz). Nejde o investigativní rešerši žádné kauzy
+— to by vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Michaela Marksová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Michaela Marksová je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministryně práce a sociálních věcí (29. 1. 2014 –
+13. 12. 2017, vláda Bohuslava Sobotky, ČSSD, od 5. 12. 2017 v demisi;
+v červnu 2015 krátce pověřena i řízením ministerstva školství).
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci
+pokrýt vládní představitele postupně až do roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce. Tvrzení nese stav 1 ZDROJ (jediný přímo
+otevřený zdroj je oficiální profil na vlada.gov.cz); povýšení na
+CORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Rozšíření
+rozsahu vyžaduje samostatnou budoucí autorizaci.
