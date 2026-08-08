@@ -197,6 +197,7 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
+<<<<<<< HEAD
 Dopočítáno z `data/dossiers/**/sources/**`, 970 záznamů v 142 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
@@ -207,6 +208,16 @@ Dopočítáno z `data/dossiers/**/sources/**`, 970 záznamů v 142 rodinách/out
 | seznam-zpravy | 38 | 13 | [ano](/zdroje/seznam-zpravy/) |
 | ČT24 (Česká televize) | 26 | 18 | [ano](/zdroje/ceska-televize/) |
 | Aktuálně.cz | 22 | 15 | [ano](/zdroje/aktualne-cz/) |
+=======
+Dopočítáno z `data/dossiers/**/sources/**`, 790 záznamů v 139 rodinách/outletech.
+
+| Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
+|---|---:|---:|---|
+| ctk | 300 | 28 | [ano](/zdroje/ctk/) |
+| Poslanecká sněmovna Parlamentu ČR | 56 | 37 | [ano](/zdroje/psp-cz/) |
+| seznam-zpravy | 39 | 13 | [ano](/zdroje/seznam-zpravy/) |
+| Vláda České republiky (vlada.gov.cz) | 29 | 18 | [ano](/zdroje/vlada-cz/) |
+>>>>>>> origin/master
 | FORUM 24 | 20 | 10 | [ano](/zdroje/forum24/) |
 | Echo24 | 19 | 15 | [ano](/zdroje/echo24/) |
 | denik-n | 18 | 10 | [ano](/zdroje/denik-n/) |
@@ -219,11 +230,19 @@ Dopočítáno z `data/dossiers/**/sources/**`, 970 záznamů v 142 rodinách/out
 | Blesk.cz | 7 | 5 | [ano](/zdroje/blesk-cz/) |
 | Hospodářské noviny | 7 | 6 | — |
 | udhpsh | 7 | 2 | [ano](/zdroje/udhpsh/) |
+<<<<<<< HEAD
 | CNN Prima News | 6 | 6 | — |
 | Seznam Zprávy | 6 | 6 | [ano](/zdroje/seznam-zpravy/) |
 | e15.cz | 5 | 3 | — |
 | Respekt | 5 | 4 | — |
 | Zdravé zprávy | 5 | 2 | — |
+=======
+| Hospodářské noviny | 6 | 5 | — |
+| Zdravé zprávy | 6 | 2 | — |
+| Blesk.cz | 5 | 3 | [ano](/zdroje/blesk-cz/) |
+| CNN Prima News | 5 | 5 | — |
+| e15.cz | 4 | 2 | — |
+>>>>>>> origin/master
 | HlídacíPes.org | 4 | 4 | — |
 | Ministerstvo dopravy ČR | 4 | 1 | — |
 | Reflex | 4 | 4 | — |
@@ -348,9 +367,15 @@ Dopočítáno z `data/dossiers/**/sources/**`, 970 záznamů v 142 rodinách/out
 
 Tyhle zdroje dataset používá aspoň pětkrát, ale katalog k nim nemá záznam s mezemi a pastmi:
 
+<<<<<<< HEAD
 - Hospodářské noviny (7×)
 - CNN Prima News (6×)
 - e15.cz (5×)
 - Respekt (5×)
 - Zdravé zprávy (5×)
+=======
+- Hospodářské noviny (6×)
+- Zdravé zprávy (6×)
+- CNN Prima News (5×)
+>>>>>>> origin/master
 

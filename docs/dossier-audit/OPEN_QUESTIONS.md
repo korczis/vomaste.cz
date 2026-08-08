@@ -35,6 +35,46 @@ mezitím přesunuty dolů do „Vyřešeno“, ať je vidět skutečná fronta.
    rodina na hranu, nebo grafová obdoba stavu „1 ZDROJ“. Rozhodnout při
    de-specializaci.
 
+## Faktické nesrovnalosti k redakčnímu přezkumu (nález rešeršních kol 2026-08-08)
+
+Během kola korroboračních rešerší (evidence-plan priority 1–6:
+andrej-babis, karel-havlicek, jaromir-zuna, martin-sebestyan,
+ivan-bednarik, adam-vojtech) narazily rešeršní agenti na faktické
+nesrovnalosti mezi zněním existujícího tvrzení a nezávislými zdroji.
+**Žádná z nich nebyla „opravena" pod zdrojovým mandátem** — úprava
+podstaty tvrzení je redakční akt, ne korroborace. Vyžadují rozhodnutí
+vlastníka / redakční přezkum:
+
+1. **[P1] adam-vojtech CLM-38 — počet hlasů.** Tvrzení uvádí „84
+   koaličních … proti 50 opozičních ze 159 přítomných"; oficiální
+   psp.cz hlasování k EET 2.0 (3. čtení 15. 7. 2026) dává 85 Ano / 49 Ne
+   / 159 přítomno. „159 přítomných" sedí, rozchází se jen poměr pro/proti
+   (84/50 vs 85/49). Poprvé zaznamenáno v T-050, potvrzeno 2026-08-08.
+   Přesný rozpad z přímo otevřitelné psp.cz stránky se zatím nepodařilo
+   stáhnout — ověřit proti primárnímu hlasovacímu záznamu a opravit
+   znění, pokud je chybné.
+2. **[P2] martin-sebestyan CLM-52 — spisová značka a předmět rozsudku.**
+   Tvrzení cituje rozsudek NSS „1 Afs 59/2025-**98**"; nezávislé
+   pokrytí (Podnikatel.cz) popisuje spis „-**108**" o **veřejné
+   zakázce**, ne o dotacích SZIF, a ČeskéNoviny odkazují **lednový 2025**
+   rozsudek. Možná záměna spisu/předmětu — ověřit proti NSS.
+3. **[P2] ivan-bednarik CLM-27 — časová osa Krušnohorského tunelu.**
+   Tvrzení (ze SRC-11, březnové jednání) uvádí zahájení stavby **2030**,
+   provoz **2042**. Nezávislé zdroje se rozcházejí: Echo24/ČTK
+   (27. 2. 2026) provoz 2039, celá trať 2045; zprávy o schválení německým
+   parlamentem start 2032, dokončení 2044. Tvrzení věrně reprodukuje
+   SRC-11, ale veřejné reportáže se v datech neshodují — zvážit kaveát
+   nebo aktualizaci.
+4. **[P2] karel-havlicek CLM-44 — počet zemí koalice k cíli 2035.**
+   Tvrzení uvádí „sedm zemí včetně Německa"; nezávislé zdroje popisují
+   **šest zemí bez Německa** (společný dopis). Rozpor v samém obsahu —
+   nekorroborováno záměrně, aby se rozpor nezakryl. Ověřit správný počet
+   a účast Německa.
+
+Postup: každou položku ověřit proti primárnímu záznamu (psp.cz, NSS,
+oficiální oznámení) a buď opravit znění tvrzení (redakční akt, nový
+update záznam), nebo doplnit kaveát, pokud je rozpor v samotné realitě.
+
 ## Inženýrské — otevřené
 
 7. **[P2]** `published_state = "living-page"` pro src-23..27, 40, 41 +
