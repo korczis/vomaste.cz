@@ -72,7 +72,7 @@ schématu), `schemaVersion` (const `1`), `@context`
 |---|---|---|
 | `dossier` | `dossier.json` | `slug`, `title`, `description`, `dossierType`, `language`, `navigationVisible`, `updated`; entity dossier navíc `canonicalDossier`, `subject`, `authorization.records` |
 | `claim` | `claims/clm-NN.json` | `text`, `status`, `statusLabel`, `sources` (mimo `status-opinion` ≥ 1), `subjects`, `order`, `content` |
-| `source` | `sources/src-NN.json` | `title`, `outlet`, `sourceType`, `url`, `retrieved`, `claims`, `subjects`, `content` (redakční poznámka, T7 ≥ 150 znaků), `order`; `sourceFamily`/`published` dle zdroje |
+| `source` | `sources/src-NN.json` | `title`, `outlet`, `sourceType`, `url`, `retrieved`, `claims`, `subjects`, `content` (redakční poznámka, T7 ≥ 150 znaků), `order`; `sourceFamily`/`published` dle zdroje; volitelně `localDocument` (viz níže) |
 | `case` | `cases/case-NN.json` | `title`, `summary`, `period`, `status`, `statusLabel`, `anchor`, `claims`, `sources`, `subjects`, `content`, `order` |
 | `gap` | `gaps/gap-NN.json` | `title`, `description`, `priority` (`vysoká`/`nízká`), `checked`, `claims`, `subjects`, `content`, `order` |
 | `relation` | `relations/edge-*.json` | `relationId`, `sourceEntity`, `targetEntity`, `relationType`, `label`, `status`, `claims`, `sources`, `subjects`; ne-kontextová hrana ≥ 1 claim i zdroj (S3) |
@@ -82,6 +82,34 @@ schématu), `schemaVersion` (const `1`), `@context`
 Interní reference jsou vždy objekty `{ "@id": "…" }` (typované
 `claimRef`/`sourceRef`/… v `_defs.schema.json`); `subjects` jsou prosté
 subject slugy (`"babis"`).
+
+### Lokálně hostované dokumenty (`localDocument`, `static/documents/`)
+
+Zdroj může nést kopii svého primárního dokumentu proti zmizení z
+internetu — **jen po individuální ruční kontrole osobních údajů**, nikdy
+jako hromadný dump (AGENTS.md, publication gate 6 a 8; ústavní dodatek
+2026-08-08 v `docs/constitution/OPEN_INTELLIGENCE_COMMONS.md` §4 —
+skenované listiny ze Sbírky listin se nehostují nikdy). Dvě rovnocenné
+konvence:
+
+- **strukturovaná** — pole `localDocument` na source záznamu
+  (`path` relativní ke `static/`, `originalUrl`, `retrievedAt`,
+  volitelně `sizeBytes`, povinná `reviewNote` ≥ 30 znaků dokumentující,
+  co bylo před publikací prověřeno); šablona `dossier-source.html` z ní
+  renderuje řádek „Archivovaný dokument" s odkazem ke stažení
+  (pilot: `vit-rakusan/SRC-04`);
+- **markdown odkaz** — `[…](/documents/<slug>/<soubor>)` přímo v
+  `content` bloku záznamu, se SHA-256 v textu
+  (pilot: `james-quick/SRC-02`, `SRC-23`).
+
+Obě konvence hlídá tatáž brána ve
+`scripts/data/lib/dataset.mjs` (krok 3c `validateCanonicalDataset`,
+test v `dataset-compile.test.mjs`): odkázaný soubor musí fyzicky
+existovat pod `static/`, jinak validace selže — publikovaná stránka
+nikdy nenabídne stažení souboru, který nebyl commitnut. ARES snapshoty
+ve `static/documents/registry/ares/` píše
+`scripts/osint/archive-ares-entities.mjs` (strukturovaná registrová
+data, bez osobních údajů — viz tentýž ústavní dodatek).
 
 ## Identifikátory: globální `@id`, lokální `identifier`
 

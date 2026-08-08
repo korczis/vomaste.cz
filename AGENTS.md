@@ -291,7 +291,13 @@ records ever disagree — see "One canonical source" below.
   `outlet` or the same registered domain into one voice whatever their
   family says, so a family can only ever *remove* independence, never add
   it. `claims` must agree with the claims' own `sources` in both
-  directions (rule R8).
+  directions (rule R8). A source may additionally carry a locally-hosted
+  copy of its primary document (`localDocument` field, or a markdown
+  link to `/documents/<slug>/…`) — only after an individual personal-data
+  review, never as a bulk harvest; the file must exist under `static/`
+  (enforced in `validateCanonicalDataset`, step 3c). Full mechanism and
+  policy pointers: `docs/data-contract.md`, "Lokálně hostované
+  dokumenty".
 - **Cases registry (`CASE-##`)** — one canonical record per tracked case
   under `…/cases/case-NN.json` (`anchor`, `period`, `title`, `status`,
   `label`, `summary`, `subjects`). Detail pages deliberately do **not**

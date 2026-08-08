@@ -132,6 +132,27 @@ test("validateCanonicalDataset zahrnuje i tvarovou vrstvu", async () => {
   assert.ok(errors.some((e) => e.includes("must have required property 'text'")), errors.join("\n"));
 });
 
+test("lokální dokument bez souboru ve static/ je chyba — obě konvence", async () => {
+  // Strukturované pole localDocument (vit-rakusan vzor):
+  const model = await loadCanonicalDataset(FIXTURE);
+  const src = model.records.find((w) => w.registry === "sources");
+  src.record.localDocument = {
+    path: "documents/neexistujici/soubor.pdf",
+    originalUrl: "https://example.org/x.pdf",
+    retrievedAt: "2026-08-08",
+    reviewNote: "Testovací poznámka o ruční kontrole osobních údajů před publikací.",
+  };
+  const { errors } = await validateCanonicalDataset(model, { authorizations: AUTHS });
+  assert.ok(errors.some((e) => e.includes('localDocument.path "documents/neexistujici/soubor.pdf" neexistuje')), errors.join("\n"));
+
+  // Markdown odkaz /documents/... v content bloku (james-quick vzor):
+  const model2 = await loadCanonicalDataset(FIXTURE);
+  const src2 = model2.records.find((w) => w.registry === "sources");
+  src2.record.content.push({ type: "markdown", value: "Ke stažení: [PDF](/documents/neexistujici/jiny.pdf)." });
+  const { errors: errors2 } = await validateCanonicalDataset(model2, { authorizations: AUTHS });
+  assert.ok(errors2.some((e) => e.includes('"/documents/neexistujici/jiny.pdf" nemá odpovídající soubor')), errors2.join("\n"));
+});
+
 test("check nad reálným data/dossiers projde (51 balíčků, jiri-pospisil přidán)", async () => {
   // Do fáze D tady test přibíjel pre-migration hlášku (0 balíčků);
   // migrátor scripts/migrations/migrate-content-to-json.mjs kanonická
