@@ -197,15 +197,15 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 739 záznamů v 125 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 750 záznamů v 126 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
-| ctk | 291 | 21 | [ano](/zdroje/ctk/) |
-| Poslanecká sněmovna Parlamentu ČR | 46 | 27 | [ano](/zdroje/psp-cz/) |
+| ctk | 293 | 23 | [ano](/zdroje/ctk/) |
+| Poslanecká sněmovna Parlamentu ČR | 49 | 30 | [ano](/zdroje/psp-cz/) |
 | seznam-zpravy | 38 | 13 | [ano](/zdroje/seznam-zpravy/) |
-| Vláda České republiky (vlada.gov.cz) | 30 | 19 | [ano](/zdroje/vlada-cz/) |
-| ČT24 (Česká televize) | 20 | 12 | [ano](/zdroje/ceska-televize/) |
+| Vláda České republiky (vlada.gov.cz) | 34 | 23 | [ano](/zdroje/vlada-cz/) |
+| ČT24 (Česká televize) | 21 | 13 | [ano](/zdroje/ceska-televize/) |
 | FORUM 24 | 20 | 10 | [ano](/zdroje/forum24/) |
 | denik-n | 17 | 9 | [ano](/zdroje/denik-n/) |
 | Echo24 | 15 | 11 | [ano](/zdroje/echo24/) |
@@ -282,6 +282,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 739 záznamů v 125 rodinách/out
 | Ekonews | 1 | 1 | — |
 | Ekonom | 1 | 1 | — |
 | EV Magazín | 1 | 1 | — |
+| Evropská komise (commission.europa.eu) | 1 | 1 | — |
 | Evropský parlament | 1 | 1 | — |
 | Extra.cz | 1 | 1 | — |
 | Finmag.cz — přepis obchodního rejstříku | 1 | 1 | — |

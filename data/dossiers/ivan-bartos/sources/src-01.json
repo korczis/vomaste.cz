@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bartos/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bartos"
+  },
+  "title": "SRC-01 — Poslanecká sněmovna PČR (oficiální profil poslance)",
+  "description": "Oficiální profil poslance: mandát, klub Pirátů, Výbor pro obranu, kontrolní komise.",
+  "outlet": "Poslanecká sněmovna Parlamentu ČR",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://www.psp.cz/sqw/detail.sqw?id=6433",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bartos/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "ivan-bartos"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil poslance na webu Poslanecké sněmovny PČR, otevřen a přečten 2026-08-08 (aktuální volební období od 2025).\nUvádí mandát poslance od 4. 10. 2025 (zvolen na kandidátce Pirátů, Středočeský kraj), členství a funkci místopředsedy Poslaneckého klubu Piráti od 5. 10. 2025, členství ve Výboru pro obranu od 11. 11. 2025 a členství ve stálých komisích pro kontrolu činnosti NÚKIB a Vojenského zpravodajství od 14. 11. 2025.\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** — dokládá úřední parlamentní údaje; dřívější vládní funkci dokládá SRC-02."
+    }
+  ],
+  "order": 1
+}

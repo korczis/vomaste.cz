@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 494 context entities across 41 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 489 context entities across 46 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -1392,17 +1392,6 @@ Generated from 494 context entities across 41 dossier(s). Regenerate with `npm r
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
-## Ivan Bartoš (`ivan-bartos`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: martin-sebestyan, zuzana-mrazova
-- Claims: CLM-05, CLM-23, CLM-51, CLM-56
-- Sources: SRC-07, SRC-09, SRC-19, SRC-26 (5 independent source families)
-- Relations:
-  - edge-mrazova-bartos (mrazova -> ivan-bartos, "bývalý ministr pro místní rozvoj (Piráti) veřejně kritizoval Mrázovou", dossier: zuzana-mrazova)
-- Missing: explicit owner authorization to promote this to its own dossier
-
 ## Ivana Tichá (`ivana-ticha`)
 
 - Type: person
@@ -1721,16 +1710,6 @@ Generated from 494 context entities across 41 dossier(s). Regenerate with `npm r
 - Appears in: adam-vojtech
 - Claims: CLM-45
 - Sources: SRC-27 (1 independent source family)
-- Relations: none
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Jozef Síkela (`jozef-sikela`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: andrej-babis, karel-havlicek
-- Claims: none
-- Sources: SRC-11, SRC-36 (3 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -2457,16 +2436,6 @@ Generated from 494 context entities across 41 dossier(s). Regenerate with `npm r
 - Appears in: —
 - Claims: none
 - Sources: none (0 independent source families)
-- Relations: none
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Marek Výborný (`marek-vyborny`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: karel-havlicek, martin-sebestyan
-- Claims: CLM-03, CLM-16, CLM-32, CLM-44
-- Sources: SRC-05, SRC-07, SRC-18, SRC-25, SRC-27 (5 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -3706,17 +3675,6 @@ Generated from 494 context entities across 41 dossier(s). Regenerate with `npm r
 - Claims: CLM-17, CLM-21
 - Sources: SRC-08, SRC-09, SRC-10, SRC-11 (1 independent source family)
 - Relations: none
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Petr Hladík (`petr-hladik`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: igor-cerveny
-- Claims: CLM-15
-- Sources: SRC-07 (1 independent source family)
-- Relations:
-  - edge-petr-hladik-cerveny (petr-hladik -> cerveny, "kritizoval rekonstrukci ministrovy kanceláře jako vyhazování veřejných peněz", dossier: igor-cerveny)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Petr Kowanda (`petr-kowanda`)
@@ -5265,16 +5223,6 @@ Generated from 494 context entities across 41 dossier(s). Regenerate with `npm r
 - Sources: SRC-14 (1 independent source family)
 - Relations:
   - edge-tejc-kasal (tejc -> zdenek-kasal, "Kasal jako první náměstek nejvyššího státního zástupce zamítl stížnosti proti zahájení trestního stíhání v bitcoinové kauze resortu spravedlnosti", dossier: jeronym-tejc)
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Zdeněk Nekula (`zdenek-nekula`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: martin-sebestyan
-- Claims: CLM-04, CLM-08
-- Sources: SRC-04, SRC-06, SRC-26 (3 independent source families)
-- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Zdeněk Petzl (`zdenek-petzl`)

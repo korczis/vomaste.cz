@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bartos",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "ivan-bartos",
+  "slug": "ivan-bartos",
+  "title": "Ivan Bartoš",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Ivan Bartoš.",
+  "dossierType": "entity",
+  "canonicalDossier": "ivan-bartos",
+  "subject": "ivan-bartos",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-IVAN-BARTOS"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "ivan-bartos",
+        "label": "Ivan Bartoš",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nIvan Bartoš je poslanec Poslanecké sněmovny PČR za Piráty a\nmístopředseda poslaneckého klubu Pirátů; dříve místopředseda vlády pro\ndigitalizaci a ministr pro místní rozvoj (2021–2024) a dlouholetý\npředseda České pirátské strany. Jako veřejný funkcionář spadá do\nstanding scope autorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní\nzáznam pro tento dossier je `AUTH-2026-08-08-IVAN-BARTOS`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam — dokládá pouze jeho aktuální poslanecký mandát, funkce v klubu\na výborech a dřívější vládní funkci jako prostý biografický fakt.\nRozšíření rozsahu (například na okolnosti jeho odvolání z vlády nebo\ndigitalizaci stavebního řízení) vyžaduje samostatnou budoucí\nautorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/ivan-bartos/claims/clm-01.md) | Ivan Bartoš je podle profilu na webu Poslanecké sněmovny PČR poslancem zvoleným za Piráty (mandát od 4. 10. 2025, Středočeský kraj), místopředsedou poslaneckého klubu Pirátů od 5. 10. 2025 a členem Výboru pro obranu od 11. 11. 2025; podle oficiálního profilu na webu Vlády ČR byl místopředsedou vlády pro digitalizaci a ministrem pro místní rozvoj od 17. 12. 2021 do 30. 9. 2024 | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/ivan-bartos/sources/src-01.md), [SRC-02](@/dossiers/ivan-bartos/sources/src-02.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

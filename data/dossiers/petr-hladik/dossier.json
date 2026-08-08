@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/petr-hladik",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "petr-hladik",
+  "slug": "petr-hladik",
+  "title": "Petr Hladík",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Petr Hladík.",
+  "dossierType": "entity",
+  "canonicalDossier": "petr-hladik",
+  "subject": "petr-hladik",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-PETR-HLADIK"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "petr-hladik",
+        "label": "Petr Hladík",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nPetr Hladík je poslanec Poslanecké sněmovny PČR za KDU-ČSL,\nmístopředseda poslaneckého klubu KDU-ČSL a předseda Stálé komise pro\nkontrolu činnosti Finančního analytického úřadu; dříve ministr\nživotního prostředí (2023–2025). Jako veřejný funkcionář spadá do\nstanding scope autorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní\nzáznam pro tento dossier je `AUTH-2026-08-08-PETR-HLADIK`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam — dokládá pouze jeho aktuální poslanecký mandát, funkce v klubu,\nvýborech a komisi a dřívější ministerskou funkci jako prostý\nbiografický fakt. Rozšíření rozsahu (například na kauzy z jeho\nministerského působení) vyžaduje samostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/petr-hladik/claims/clm-01.md) | Petr Hladík je podle profilu na webu Poslanecké sněmovny PČR poslancem zvoleným na kandidátce SPOLU za KDU-ČSL (mandát od 4. 10. 2025), místopředsedou poslaneckého klubu KDU-ČSL od 4. 3. 2026, členem Výboru pro životní prostředí od 16. 1. 2026 a předsedou Stálé komise pro kontrolu činnosti Finančního analytického úřadu od 25. 3. 2026; podle oficiálního profilu na webu Vlády ČR byl ministrem životního prostředí od 10. 3. 2023 (od 6. 11. 2025 do 15. 12. 2025 v demisi) | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/petr-hladik/sources/src-01.md), [SRC-02](@/dossiers/petr-hladik/sources/src-02.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}
