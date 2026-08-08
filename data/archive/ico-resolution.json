@@ -1,0 +1,1589 @@
+{
+  "schemaNote": "IČO resolution outcomes for the entity registry — resolved only on an unambiguous single ARES hit; not_found is typically a foreign entity or an unregistered organizational unit, ambiguous is a name shared by several registered subjects. Never guessed. rejected_mismatch = an exactly-one ARES hit that human review found to be a different subject than the entity (lookalike name) — the single-hit rule alone is not sufficient, review of the registered name against the entity's meaning is part of the pipeline.",
+  "generatedAt": "2026-08-08",
+  "outcomes": [
+    {
+      "entityId": "ab-private-trusts",
+      "title": "AB private trust I a II",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "acri",
+      "title": "ACRI — Asociace podniků českého železničního průmyslu",
+      "outcome": "resolved",
+      "ico": "63832721",
+      "registeredName": "ACRI - Asociace podniků českého železničního průmyslu"
+    },
+    {
+      "entityId": "agrarni-komora",
+      "title": "Agrární komora ČR",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "agro-jevisovice",
+      "title": "Agro Jevišovice",
+      "outcome": "already_recorded",
+      "ico": "49455958"
+    },
+    {
+      "entityId": "agrofert-hungaria",
+      "title": "AGROFERT Hungária",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "agrofert",
+      "title": "Agrofert",
+      "outcome": "already_recorded",
+      "ico": "26185610"
+    },
+    {
+      "entityId": "ak-portos",
+      "title": "Advokátní kancelář Portos (dříve Češka a Smutný)",
+      "outcome": "resolved",
+      "ico": "48118753",
+      "registeredName": "PORTOS, advokátní kancelář s.r.o."
+    },
+    {
+      "entityId": "akademie-vytvarnych-umeni",
+      "title": "Akademie výtvarných umění v Praze",
+      "outcome": "already_recorded",
+      "ico": "60461446"
+    },
+    {
+      "entityId": "alcogal",
+      "title": "ALCOGAL",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "alza",
+      "title": "Alza.cz",
+      "outcome": "already_recorded",
+      "ico": "27082440"
+    },
+    {
+      "entityId": "alzheimer-home",
+      "title": "Alzheimer Home",
+      "outcome": "ambiguous",
+      "detail": [
+        "03299244 ALZHEIMER HOME SPV 2 s.r.o.",
+        "03310256 ALZHEIMER HOME SPV 1 s.r.o.",
+        "03312461 ALZHEIMER HOME SPV 3 s.r.o.",
+        "03555810 ALZHEIMER HOME GROUP s.r.o.",
+        "03593207 ALZHEIMER HOME z.ú."
+      ]
+    },
+    {
+      "entityId": "amsp-cr",
+      "title": "Asociace malých a středních podniků a živnostníků ČR",
+      "outcome": "already_recorded",
+      "ico": "26547783"
+    },
+    {
+      "entityId": "ano",
+      "title": "ANO 2011",
+      "outcome": "already_recorded",
+      "ico": "71443339"
+    },
+    {
+      "entityId": "armada-cr",
+      "title": "Armáda České republiky",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "art-of-performance",
+      "title": "Art of Performance",
+      "outcome": "already_recorded",
+      "ico": "05411408"
+    },
+    {
+      "entityId": "asociace-orchestru",
+      "title": "Asociace orchestrů",
+      "outcome": "ambiguous",
+      "detail": [
+        "22740996 Asociace symfonických orchestrů a pěveckých sborů České republiky",
+        "65351398 Asociace ředitelů symfonických orchestrů České republiky"
+      ]
+    },
+    {
+      "entityId": "asociace-reditelu-zs",
+      "title": "Asociace ředitelů základních škol",
+      "outcome": "resolved",
+      "ico": "60449101",
+      "registeredName": "Asociace ředitelů základních škol České republiky, z.s."
+    },
+    {
+      "entityId": "asociace-soukromeho-zemedelstvi",
+      "title": "Asociace soukromého zemědělství ČR",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "aston-martin-klub-cr",
+      "title": "Aston Martin klub ČR, z.s.",
+      "outcome": "already_recorded",
+      "ico": "01818899"
+    },
+    {
+      "entityId": "autosap",
+      "title": "Sdružení automobilového průmyslu (AutoSAP)",
+      "outcome": "resolved",
+      "ico": "17048826",
+      "registeredName": "Sdružení automobilového průmyslu"
+    },
+    {
+      "entityId": "bezpecnostni-rada-statu",
+      "title": "Bezpečnostní rada státu",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "bis",
+      "title": "BIS (Bezpečnostní informační služba)",
+      "outcome": "ambiguous",
+      "detail": [
+        "01273086 Ing. Ladislav Bis",
+        "02456150 BIS GYN s.r.o.",
+        "03271358 Jaroslav Bis",
+        "03632776 MUDr. Dalibor Bis",
+        "04641868 Jaroslav Bis"
+      ]
+    },
+    {
+      "entityId": "blakey-finance",
+      "title": "BLAKEY FINANCE LIMITED (BVI)",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "boyne-holding",
+      "title": "BOYNE HOLDING LLC (Washington, D.C.)",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "brki-nrki",
+      "title": "BRKI a NRKI",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "byd-automotive",
+      "title": "BYD Automotive",
+      "outcome": "resolved",
+      "ico": "22419519",
+      "registeredName": "BYD Automotive Czech s.r.o."
+    },
+    {
+      "entityId": "bydlime-v-kralove-poli-z-s",
+      "title": "Bydlíme v Králově Poli, z.s.",
+      "outcome": "already_recorded",
+      "ico": "02922703"
+    },
+    {
+      "entityId": "cd-cargo",
+      "title": "ČD Cargo",
+      "outcome": "already_recorded",
+      "ico": "28196678"
+    },
+    {
+      "entityId": "central-group",
+      "title": "Central Group",
+      "outcome": "ambiguous",
+      "detail": [
+        "01769511 CENTRAL GROUP 74. investiční a.s.",
+        "01969714 Central Automotive Group s.r.o.",
+        "01987160 CENTRAL GROUP Jankovcova a.s.",
+        "03639878 CENTRAL GROUP 36. investiční s.r.o.",
+        "03650669 CENTRAL GROUP 37. investiční s.r.o."
+      ]
+    },
+    {
+      "entityId": "centrum-pro-vyzkum-terorismu",
+      "title": "Centrum pro výzkum terorismu, z.s.",
+      "outcome": "already_recorded",
+      "ico": "11823461"
+    },
+    {
+      "entityId": "centrum-verejnych-financi",
+      "title": "Centrum veřejných financí (Univerzita Karlova)",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "cer-asociace",
+      "title": "CER (Community of European Railway and Infrastructure Companies)",
+      "outcome": "ambiguous",
+      "detail": [
+        "02618087 Tomáš Čer",
+        "06920381 CER Slovakia a.s., odštěpný závod",
+        "07193751 CER INVEST, s.r.o.",
+        "10688781 CER PROPERTY s.r.o.",
+        "24791385 ZÁMKY CER s.r.o."
+      ]
+    },
+    {
+      "entityId": "cerd-system-llc",
+      "title": "CERD SYSTEM LLC",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "cerea",
+      "title": "Cerea",
+      "outcome": "already_recorded",
+      "ico": "46504940"
+    },
+    {
+      "entityId": "ceska-asociace-pro-srdecni-rytmus",
+      "title": "Česká asociace pro srdeční rytmus",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "ceska-obchodni-inspekce",
+      "title": "Česká obchodní inspekce",
+      "outcome": "already_recorded",
+      "ico": "00020869"
+    },
+    {
+      "entityId": "ceska-skolni-inspekce",
+      "title": "Česká školní inspekce",
+      "outcome": "already_recorded",
+      "ico": "00638994"
+    },
+    {
+      "entityId": "ceska-televize",
+      "title": "Česká televize",
+      "outcome": "already_recorded",
+      "ico": "00027383"
+    },
+    {
+      "entityId": "ceska-unie-sportu",
+      "title": "Česká unie sportu",
+      "outcome": "ambiguous",
+      "detail": [
+        "00435449 Okresní sdružení Česká unie sportu Strakonice, z.s.",
+        "00469548 Česká unie sportu, z.s.",
+        "06840914 Česká unie handicapovaného sportu, z.s.",
+        "07148887 Česká unie svobodných sportů z.s.",
+        "17116856 Česká unie tanečního sportu, z.s."
+      ]
+    },
+    {
+      "entityId": "ceske-drahy",
+      "title": "České dráhy",
+      "outcome": "already_recorded",
+      "ico": "70994226"
+    },
+    {
+      "entityId": "cesky-rozhlas",
+      "title": "Český rozhlas",
+      "outcome": "already_recorded",
+      "ico": "45245053"
+    },
+    {
+      "entityId": "chemapol-bratislava",
+      "title": "Chemapol Bratislava",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "ckait",
+      "title": "Česká komora autorizovaných inženýrů a techniků (ČKAIT)",
+      "outcome": "resolved",
+      "ico": "45770743",
+      "registeredName": "Česká komora autorizovaných inženýrů a techniků činných ve výstavbě"
+    },
+    {
+      "entityId": "cnb",
+      "title": "Česká národní banka",
+      "outcome": "already_recorded",
+      "ico": "48136450"
+    },
+    {
+      "entityId": "csr-protikorupcnilinka",
+      "title": "CSR & Protikorupcnilinka.cz s.r.o.",
+      "outcome": "already_recorded",
+      "ico": "03877248"
+    },
+    {
+      "entityId": "cssd",
+      "title": "ČSSD",
+      "outcome": "already_recorded",
+      "ico": "00409171"
+    },
+    {
+      "entityId": "cvut",
+      "title": "České vysoké učení technické v Praze (ČVUT)",
+      "outcome": "resolved",
+      "ico": "68407700",
+      "registeredName": "České vysoké učení technické v Praze"
+    },
+    {
+      "entityId": "demagog-cz",
+      "title": "Demagog.cz",
+      "outcome": "resolved",
+      "ico": "05140544",
+      "registeredName": "Demagog.cz, z.s."
+    },
+    {
+      "entityId": "denik-n",
+      "title": "Deník N",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "dg-agri",
+      "title": "Generální ředitelství Evropské komise pro zemědělství (DG AGRI)",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "dg-budget",
+      "title": "Generální ředitelství Evropské komise pro rozpočet (DG BUDGET)",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "dg-just",
+      "title": "Generální ředitelství Evropské komise pro spravedlnost (DG JUST)",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "dg-move",
+      "title": "DG MOVE (Generální ředitelství EK pro mobilitu a dopravu)",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "drill-company",
+      "title": "DRILL COMPANY, s.r.o.",
+      "outcome": "already_recorded",
+      "ico": "04771664"
+    },
+    {
+      "entityId": "eduin",
+      "title": "EDUin",
+      "outcome": "resolved",
+      "ico": "24706370",
+      "registeredName": "EDUin, o.p.s."
+    },
+    {
+      "entityId": "ep",
+      "title": "Evropský parlament",
+      "outcome": "rejected_mismatch",
+      "registeredName": "Evropský parlament mládeže v ČR, z.s.",
+      "rejectionReason": "Evropský parlament (EU institution) matched a Czech youth NGO — wrong subject",
+      "rejectedIco": "69056765"
+    },
+    {
+      "entityId": "eppo",
+      "title": "Úřad evropského veřejného žalobce (EPPO)",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "evropska-komise",
+      "title": "Evropská komise",
+      "outcome": "rejected_mismatch",
+      "registeredName": "EVROPSKÁ KOMISE PRO MIGRACI,AZYL,INTEGRACI,OCHRANU PRÁV CIZINCŮ A NÁRODNOSTNÍCH MENŠIN,o.s. v likvidaci",
+      "rejectionReason": "Evropská komise (EU institution) matched a defunct Czech NGO in liquidation — wrong subject",
+      "rejectedIco": "27001580"
+    },
+    {
+      "entityId": "evropska-unie",
+      "title": "Evropská unie",
+      "outcome": "ambiguous",
+      "detail": [
+        "02136091 Evropská unie bojových sportů",
+        "02458802 Evropská unie z.s.",
+        "03150372 Evropská unie žen, česká sekce, z.s.",
+        "06298869 EUZPP - Evropská unie zrakově postižených pacientů z.s.",
+        "26574187 Evropská unie námořního jachtingu"
+      ]
+    },
+    {
+      "entityId": "evropsky-fond-pro-konkurenceschopnost",
+      "title": "Evropský fond pro konkurenceschopnost",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "evropsky-ucetni-dvur",
+      "title": "Evropský účetní dvůr",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "extreme-bfg-cast",
+      "title": "Extreme BFG Cast s.r.o.",
+      "outcome": "already_recorded",
+      "ico": "22461787"
+    },
+    {
+      "entityId": "farma-capi-hnizdo",
+      "title": "Farma Čapí hnízdo",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "fastned",
+      "title": "Fastned",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "financni-sprava",
+      "title": "Finanční správa ČR",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "fio-banka",
+      "title": "Fio banka",
+      "outcome": "already_recorded",
+      "ico": "61858374"
+    },
+    {
+      "entityId": "fn-olomouc",
+      "title": "Fakultní nemocnice Olomouc",
+      "outcome": "already_recorded",
+      "ico": "00098892"
+    },
+    {
+      "entityId": "ftvs-uk",
+      "title": "FTVS UK (Fakulta tělesné výchovy a sportu Univerzity Karlovy)",
+      "outcome": "ambiguous",
+      "detail": [
+        "00639389 MANAŽERSKÉ CENTRUM FTVS - UK",
+        "04876521 ZO FVZ UK FTVS",
+        "75044315 Vysokoškolský odborový svaz- Základní odborová organizace 1151 FTVS UK Praha"
+      ]
+    },
+    {
+      "entityId": "gen-digital",
+      "title": "Gen Digital",
+      "outcome": "rejected_mismatch",
+      "registeredName": "Gen Digital Americas s.r.o.",
+      "rejectionReason": "Entity refers to the Gen Digital group (Avast/Norton parent); the single hit is one specific subsidiary (Gen Digital Americas s.r.o.) — identity not established, per project rule uncertainty stays a gap",
+      "rejectedIco": "19183739"
+    },
+    {
+      "entityId": "generalni-financni-reditelstvi",
+      "title": "Generální finanční ředitelství",
+      "outcome": "already_recorded",
+      "ico": "72080043"
+    },
+    {
+      "entityId": "generalni-stab-acr",
+      "title": "Generální štáb Armády ČR",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "gmrgas-cz",
+      "title": "GMR GAS s.r.o. (Brno)",
+      "outcome": "already_recorded",
+      "ico": "28274318"
+    },
+    {
+      "entityId": "gmrgas",
+      "title": "GMR GAS UA LLC (Kyjev)",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "gymnazium-jana-keplera",
+      "title": "Gymnázium Jana Keplera",
+      "outcome": "resolved",
+      "ico": "61388246",
+      "registeredName": "Gymnázium Jana Keplera, Praha 6, Parléřova 2"
+    },
+    {
+      "entityId": "hammerton-capital",
+      "title": "Hammerton Capital Co. Limited",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "hartenberg",
+      "title": "Hartenberg Holding",
+      "outcome": "already_recorded",
+      "ico": "01801261"
+    },
+    {
+      "entityId": "hemmont",
+      "title": "Hemmont",
+      "outcome": "resolved",
+      "ico": "04472586",
+      "registeredName": "HEMMONT, a.s."
+    },
+    {
+      "entityId": "hlidac-statu",
+      "title": "Hlídač státu",
+      "outcome": "already_recorded",
+      "ico": "05965527"
+    },
+    {
+      "entityId": "hrebcin-napajedla",
+      "title": "Hřebčín Napajedla",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "hydroprogress-s-r-o",
+      "title": "HYDROPROGRESS, s.r.o.",
+      "outcome": "already_recorded",
+      "ico": "04449461"
+    },
+    {
+      "entityId": "hyundai",
+      "title": "Hyundai",
+      "outcome": "ambiguous",
+      "detail": [
+        "01718053 Hyundai Praha Domanský s.r.o.",
+        "01741861 HYUNDAI ENGINEERING CZECH s.r.o.",
+        "03506274 Hyundai Centrum Hlaváček s.r.o.",
+        "04058968 Hyundai Centrum Valoušek s.r.o.",
+        "05054559 HYUNDAI LXM motors s.r.o."
+      ]
+    },
+    {
+      "entityId": "icomos",
+      "title": "ICOMOS",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "imoba",
+      "title": "Imoba",
+      "outcome": "already_recorded",
+      "ico": "26124459"
+    },
+    {
+      "entityId": "imodim",
+      "title": "I.M.O.D.I.M.",
+      "outcome": "ambiguous",
+      "detail": [
+        "00536491 I N F O R U M   V I D E O, družstvo",
+        "03654991 I.D.M. TAXAKONT s.r.o.",
+        "03914569 M.I.D.S Auto s.r.o.",
+        "06368760 M.D.I.S. Advisory & Publishing s.r.o.",
+        "06685137 K.M.I.D. group s.r.o."
+      ]
+    },
+    {
+      "entityId": "institut-vaclava-klause",
+      "title": "Institut Václava Klause",
+      "outcome": "resolved",
+      "ico": "24220345",
+      "registeredName": "Institut Václava Klause, o.p.s."
+    },
+    {
+      "entityId": "investigace-cz",
+      "title": "Investigace.cz",
+      "outcome": "already_recorded",
+      "ico": "01680081"
+    },
+    {
+      "entityId": "jaguar-klub-cr",
+      "title": "Jaguar klub ČR, z.s.",
+      "outcome": "already_recorded",
+      "ico": "26557975"
+    },
+    {
+      "entityId": "jar-kapela",
+      "title": "J.A.R.",
+      "outcome": "ambiguous",
+      "detail": [
+        "undefined J.A.S. Trade spol. s r.o.",
+        "undefined M a J  spol. s r.o.",
+        "undefined K a J TRANS-SERVIS, s.r.o.",
+        "00484016 J. SEIDL a spol., s.r.o.",
+        "00578894 J. Pišta a spol., společnost s r.o."
+      ]
+    },
+    {
+      "entityId": "jihomoravsky-kraj",
+      "title": "Jihomoravský kraj",
+      "outcome": "already_recorded",
+      "ico": "70888337"
+    },
+    {
+      "entityId": "jwt",
+      "title": "JWT (J. Walter Thompson)",
+      "outcome": "resolved",
+      "ico": "49282778",
+      "registeredName": "JWT, s.r.o."
+    },
+    {
+      "entityId": "kamuflaz-podcast",
+      "title": "Kamufláž (armádní podcast)",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "kancelar-prezidenta-republiky",
+      "title": "Kancelář prezidenta republiky",
+      "outcome": "already_recorded",
+      "ico": "48136000"
+    },
+    {
+      "entityId": "kauppias",
+      "title": "Kauppias s.r.o.",
+      "outcome": "already_recorded",
+      "ico": "05015502"
+    },
+    {
+      "entityId": "kdu-csl",
+      "title": "KDU-ČSL",
+      "outcome": "already_recorded",
+      "ico": "00442704"
+    },
+    {
+      "entityId": "kia",
+      "title": "Kia",
+      "outcome": "ambiguous",
+      "detail": [
+        "49703188 Kia Czech s.r.o.",
+        "62360761 SAS and KIA trade s. r. o."
+      ]
+    },
+    {
+      "entityId": "klubmotoristu",
+      "title": "Klub motoristů, z.s.",
+      "outcome": "already_recorded",
+      "ico": "17353882"
+    },
+    {
+      "entityId": "komise-pro-prezkum-neprirozenych-umrti-deti",
+      "title": "Komise pro přezkum nepřirozených úmrtí dětí",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "komora-danovych-poradcu",
+      "title": "Komora daňových poradců ČR",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "kostelecke-uzeniny",
+      "title": "Kostelecké uzeniny",
+      "outcome": "already_recorded",
+      "ico": "46900411"
+    },
+    {
+      "entityId": "krajsky-soud-brno",
+      "title": "Krajský soud v Brně",
+      "outcome": "already_recorded",
+      "ico": "00215724"
+    },
+    {
+      "entityId": "krajsky-soud-praha",
+      "title": "Krajský soud v Praze",
+      "outcome": "already_recorded",
+      "ico": "00215678"
+    },
+    {
+      "entityId": "krajsky-urad-usteckeho-kraje",
+      "title": "Krajský úřad Ústeckého kraje",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "krijcos-energy",
+      "title": "Krijcos Energy",
+      "outcome": "already_recorded",
+      "ico": "23177586"
+    },
+    {
+      "entityId": "krijcos",
+      "title": "Krijcos",
+      "outcome": "ambiguous",
+      "detail": [
+        "07754477 Krijcos Domaslavice a.s.",
+        "07754507 Krijcos Reality s.r.o.",
+        "23177586 Krijcos Energy s.r.o.",
+        "24169919 TAU EPSILON Krijcos, spol. s r.o.",
+        "24169927 TAU ZETA Krijcos, spol. s r.o."
+      ]
+    },
+    {
+      "entityId": "lesy-ceske-republiky-sp",
+      "title": "Lesy České republiky, s.p.",
+      "outcome": "already_recorded",
+      "ico": "42196451"
+    },
+    {
+      "entityId": "lieken-ag",
+      "title": "Lieken AG",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "magistrat-mesta-most",
+      "title": "Magistrát města Most",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "mandatovy-a-imunitni-vybor-psp",
+      "title": "Mandátový a imunitní výbor Poslanecké sněmovny",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "masarykova-nemocnice-usti",
+      "title": "Masarykova nemocnice v Ústí nad Labem",
+      "outcome": "rejected_mismatch",
+      "registeredName": "Základní organizace Odborového svazu zdravotnictví a sociální péče České republiky Krajská zdravotní - Masarykova nemocnice v Ústí nad Labem, o.z.,",
+      "rejectionReason": "Hospital matched its trade-union local, not the hospital (which is part of Krajská zdravotní, a.s.)",
+      "rejectedIco": "40229084"
+    },
+    {
+      "entityId": "masarykova-univerzita",
+      "title": "Masarykova univerzita",
+      "outcome": "already_recorded",
+      "ico": "00216224"
+    },
+    {
+      "entityId": "meas-consulting",
+      "title": "MEAS Consulting s.r.o. v likvidaci",
+      "outcome": "already_recorded",
+      "ico": "04347803"
+    },
+    {
+      "entityId": "media-project-cz-s-r-o",
+      "title": "MEDIA PROJECT CZ s.r.o.",
+      "outcome": "already_recorded",
+      "ico": "01529820"
+    },
+    {
+      "entityId": "medical-investments",
+      "title": "Medical Investments",
+      "outcome": "ambiguous",
+      "detail": [
+        "02653877 MEDICAL INVESTMENTS a.s.",
+        "08302774 MEDICAL INVESTMENTS PROPERTIES s.r.o.",
+        "17868416 MEDICAL INVESTMENTS BETA s.r.o."
+      ]
+    },
+    {
+      "entityId": "mesto-bilina",
+      "title": "Město Bílina (městský úřad a stavební úřad)",
+      "outcome": "ambiguous",
+      "detail": [
+        "00266230 Město Bílina",
+        "26988143 Bílina - město s historií, z.s."
+      ]
+    },
+    {
+      "entityId": "mesto-otrokovice",
+      "title": "Město Otrokovice",
+      "outcome": "already_recorded",
+      "ico": "00284301"
+    },
+    {
+      "entityId": "mesto-vsetin",
+      "title": "Město Vsetín",
+      "outcome": "already_recorded",
+      "ico": "00304450"
+    },
+    {
+      "entityId": "mestske-statni-zastupitelstvi-praha",
+      "title": "Městské státní zastupitelství v Praze",
+      "outcome": "already_recorded",
+      "ico": "00026000"
+    },
+    {
+      "entityId": "mestsky-soud-praha",
+      "title": "Městský soud v Praze",
+      "outcome": "already_recorded",
+      "ico": "00215660"
+    },
+    {
+      "entityId": "mestsky-urad-nymburk",
+      "title": "Městský úřad Nymburk",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "meta",
+      "title": "Meta",
+      "outcome": "ambiguous",
+      "detail": [
+        "02927144 Meta Ventures s.r.o.",
+        "03230945 META architekti s.r.o.",
+        "03632849 Základní organizace OS KOVO META PLZEŇ",
+        "04329431 META Trend s.r.o.",
+        "06077501 Meta wizards s.r.o."
+      ]
+    },
+    {
+      "entityId": "milion-chvilek",
+      "title": "Milion chvilek pro demokracii",
+      "outcome": "already_recorded",
+      "ico": "06760538"
+    },
+    {
+      "entityId": "ministerstvo-dopravy",
+      "title": "Ministerstvo dopravy ČR",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "ministerstvo-financi",
+      "title": "Ministerstvo financí ČR",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "ministerstvo-kultury",
+      "title": "Ministerstvo kultury ČR",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "ministerstvo-obrany",
+      "title": "Ministerstvo obrany ČR",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "ministerstvo-prace-a-socialnich-veci",
+      "title": "Ministerstvo práce a sociálních věcí ČR",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "ministerstvo-pro-mistni-rozvoj",
+      "title": "Ministerstvo pro místní rozvoj ČR",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "ministerstvo-spravedlnosti",
+      "title": "Ministerstvo spravedlnosti ČR",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "ministerstvo-vnitra",
+      "title": "Ministerstvo vnitra ČR",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "ministerstvo-zemedelstvi",
+      "title": "Ministerstvo zemědělství ČR",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "ministerstvo-zivotniho-prostredi",
+      "title": "Ministerstvo životního prostředí ČR",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "mlekarna-hlinsko",
+      "title": "Mlékárna Hlinsko",
+      "outcome": "already_recorded",
+      "ico": "48169188"
+    },
+    {
+      "entityId": "moravia-green-hydrogen",
+      "title": "Moravia Green Hydrogen",
+      "outcome": "already_recorded",
+      "ico": "17573866"
+    },
+    {
+      "entityId": "moravskoslezsky-kraj",
+      "title": "Moravskoslezský kraj",
+      "outcome": "already_recorded",
+      "ico": "70890692"
+    },
+    {
+      "entityId": "motoriste-praha",
+      "title": "Motoristé Praha s.r.o.",
+      "outcome": "already_recorded",
+      "ico": "14076705"
+    },
+    {
+      "entityId": "motoriste",
+      "title": "Motoristé sobě",
+      "outcome": "already_recorded",
+      "ico": "05989175"
+    },
+    {
+      "entityId": "mpo",
+      "title": "Ministerstvo průmyslu a obchodu",
+      "outcome": "already_recorded",
+      "ico": "47609109"
+    },
+    {
+      "entityId": "msmt",
+      "title": "Ministerstvo školství, mládeže a tělovýchovy ČR",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "mzdrav",
+      "title": "Ministerstvo zdravotnictví",
+      "outcome": "already_recorded",
+      "ico": "00024341"
+    },
+    {
+      "entityId": "nadacni-fond-fiducia",
+      "title": "\"Nadační fond FIDUCIA\"",
+      "outcome": "already_recorded",
+      "ico": "26228548"
+    },
+    {
+      "entityId": "narodni-galerie-praha",
+      "title": "Národní galerie Praha",
+      "outcome": "rejected_mismatch",
+      "registeredName": "Společenství vlastníků jednotek U Národní galerie 469, Zbraslav, 156 00 Praha 5",
+      "rejectionReason": "National Gallery matched a condo association whose street is named after it — wrong subject",
+      "rejectedIco": "21104654"
+    },
+    {
+      "entityId": "narodni-pamatkovy-ustav",
+      "title": "Národní památkový ústav",
+      "outcome": "already_recorded",
+      "ico": "75032333"
+    },
+    {
+      "entityId": "narodni-sportovni-agentura",
+      "title": "Národní sportovní agentura (NSA)",
+      "outcome": "resolved",
+      "ico": "07460121",
+      "registeredName": "Národní sportovní agentura"
+    },
+    {
+      "entityId": "narodni-ustav-dusevniho-zdravi",
+      "title": "Národní ústav duševního zdraví",
+      "outcome": "already_recorded",
+      "ico": "00023752"
+    },
+    {
+      "entityId": "national-war-college",
+      "title": "National War College (Washington)",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "nato",
+      "title": "NATO (Severoatlantická aliance)",
+      "outcome": "ambiguous",
+      "detail": [
+        "21687404 Müsli.Nato s.r.o.",
+        "24626031 Nato Gelashvili",
+        "25049933 NATO International s.r.o.",
+        "25076469 NATO - PRAHA 5, spol. s r.o.",
+        "66364086 Česká republika do NATO"
+      ]
+    },
+    {
+      "entityId": "navos-farm-technic",
+      "title": "Navos Farm Technic",
+      "outcome": "already_recorded",
+      "ico": "63489911"
+    },
+    {
+      "entityId": "ncoz",
+      "title": "Národní centrála proti organizovanému zločinu",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "nejvyssi-statni-zastupitelstvi",
+      "title": "Nejvyšší státní zastupitelství",
+      "outcome": "already_recorded",
+      "ico": "49467352"
+    },
+    {
+      "entityId": "nemocnice-homolce",
+      "title": "Nemocnice Na Homolce",
+      "outcome": "rejected_mismatch",
+      "registeredName": "Základní organizace Odborového svazu zdravotnictví a sociální péče ČR, NEMOCNICE NA HOMOLCE",
+      "rejectionReason": "Hospital matched its trade-union local, not the hospital itself",
+      "rejectedIco": "41187776"
+    },
+    {
+      "entityId": "nku",
+      "title": "Nejvyšší kontrolní úřad",
+      "outcome": "already_recorded",
+      "ico": "49370227"
+    },
+    {
+      "entityId": "nrr",
+      "title": "Národní rozpočtová rada",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "nss",
+      "title": "Nejvyšší správní soud",
+      "outcome": "already_recorded",
+      "ico": "75003716"
+    },
+    {
+      "entityId": "nukib",
+      "title": "NÚKIB",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "obvodni-soud-praha-1",
+      "title": "Obvodní soud pro Prahu 1",
+      "outcome": "already_recorded",
+      "ico": "00024384"
+    },
+    {
+      "entityId": "obvodni-statni-zastupitelstvi-praha-1",
+      "title": "Obvodní státní zastupitelství pro Prahu 1",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "odbory-ngp",
+      "title": "Základní odborová organizace Národní galerie Praha",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "ods",
+      "title": "ODS",
+      "outcome": "already_recorded",
+      "ico": "16192656"
+    },
+    {
+      "entityId": "ogilvy",
+      "title": "Ogilvy",
+      "outcome": "ambiguous",
+      "detail": [
+        "25120158 Ogilvy, s.r.o.",
+        "26450551 Ogilvy (Performance Marketing), s.r.o."
+      ]
+    },
+    {
+      "entityId": "okresni-soud-benesov",
+      "title": "Okresní soud v Benešově",
+      "outcome": "already_recorded",
+      "ico": "00024490"
+    },
+    {
+      "entityId": "olaf",
+      "title": "Evropský úřad pro boj proti podvodům (OLAF)",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "orlen",
+      "title": "Orlen",
+      "outcome": "ambiguous",
+      "detail": [
+        "01865072 ORLEN Energy Trading GmbH, organizační složka",
+        "05661544 Nadace ORLEN Unipetrol",
+        "08759481 ORLEN Service Česká republika s.r.o.",
+        "09780718 Základní Odborová organizace ECHO ORLEN Service Česká republika s.r.o.",
+        "09899332 ORLEN SPÓŁKA AKCYJNA, odštěpný závod"
+      ]
+    },
+    {
+      "entityId": "osn",
+      "title": "Organizace spojených národů (OSN)",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "osz-praha-4",
+      "title": "Obvodní státní zastupitelství pro Prahu 4",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "penam-zelena-louka",
+      "title": "Pekárna Zelená louka (skupina Agrofert)",
+      "outcome": "already_recorded",
+      "ico": "41035895"
+    },
+    {
+      "entityId": "penam",
+      "title": "Penam",
+      "outcome": "already_recorded",
+      "ico": "46967851"
+    },
+    {
+      "entityId": "petrimex",
+      "title": "Petrimex",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "pg-contract",
+      "title": "PG Contract, spol. s r.o.",
+      "outcome": "already_recorded",
+      "ico": "25542125"
+    },
+    {
+      "entityId": "pgrlf",
+      "title": "Podpůrný a garanční rolnický a lesnický fond (PGRLF)",
+      "outcome": "resolved",
+      "ico": "49241494",
+      "registeredName": "Podpůrný a garanční rolnický a lesnický fond, a.s."
+    },
+    {
+      "entityId": "pirati",
+      "title": "Piráti (Česká pirátská strana)",
+      "outcome": "already_recorded",
+      "ico": "71339698"
+    },
+    {
+      "entityId": "plaud",
+      "title": "Plaud",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "pnf",
+      "title": "Národní finanční prokuratura (PNF, Francie)",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "policie",
+      "title": "Policie ČR",
+      "outcome": "ambiguous",
+      "detail": [
+        "01204629 Nezávislý odborový svaz Policie ČR, Základní organizace při Věznici Bělušice",
+        "01671065 Koordinační výbor zákl.odb.org. občanských zaměstnanců Policie ČR, Odborového svazu státních orgánů a organizací",
+        "04613082 Odborová organizace Odborového svazu státních orgánů a organizací při Muzeu Policie ČR",
+        "06276792 Nezavislý odborový svaz Policie ČR, Základní organizace při NCOZ",
+        "07941455 Nezávislý odborový svaz Policie ČR, základní organizace při Akademii Vězeňské služby České republiky"
+      ]
+    },
+    {
+      "entityId": "poslanecka-snemovna",
+      "title": "Poslanecká sněmovna",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "povodi-labe-sp",
+      "title": "Povodí Labe, státní podnik",
+      "outcome": "already_recorded",
+      "ico": "70890005"
+    },
+    {
+      "entityId": "povodi-odry-sp",
+      "title": "Povodí Odry, státní podnik",
+      "outcome": "already_recorded",
+      "ico": "70890021"
+    },
+    {
+      "entityId": "praha3",
+      "title": "Městská část Praha 3",
+      "outcome": "already_recorded",
+      "ico": "00063517"
+    },
+    {
+      "entityId": "preol",
+      "title": "Preol",
+      "outcome": "already_recorded",
+      "ico": "26311208"
+    },
+    {
+      "entityId": "prisaha",
+      "title": "Přísaha",
+      "outcome": "already_recorded",
+      "ico": "10742409"
+    },
+    {
+      "entityId": "rada-eu-pro-konkurenceschopnost",
+      "title": "Rada EU pro konkurenceschopnost (COMPET)",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "reditelstvi-vodnich-cest",
+      "title": "Ředitelství vodních cest",
+      "outcome": "resolved",
+      "ico": "67981801",
+      "registeredName": "Ředitelství vodních cest ČR"
+    },
+    {
+      "entityId": "rozpoctovy-vybor-psp",
+      "title": "Rozpočtový výbor Poslanecké sněmovny",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "rsd",
+      "title": "Ředitelství silnic a dálnic (ŘSD)",
+      "outcome": "ambiguous",
+      "detail": [
+        "21030367 Ředitelství silnic a dálnic s. p.",
+        "46749870 ZO OS pracovníků dopravy,silničního hospodářství a autoopravárenství Čech a Moravy Ředitelství silnic a dálnic ČR - správa LIBEREC",
+        "62534432 ZO OS Ředitelství silnic a dálnic ČR, správa České Budějovice",
+        "62936581 ZO OS PRACOVNÍKŮ DOPRAVY,SILNIČNÍHO HOSPODÁŘSTVÍ A AUTOOPRAVÁRENSTVÍ ČECH A MORAVY,ŘEDITELSTVÍ SILNIC A DÁLNIC ČR",
+        "65351894 ZO OS pracovníků dopravy, silničního hospodářství a autoopravárenství Čech a Moravy, Ředitelství silnic a dálnic ČR, závod Brno"
+      ]
+    },
+    {
+      "entityId": "rsvp-trust",
+      "title": "RSVP Trust",
+      "outcome": "resolved",
+      "ico": "24099333",
+      "registeredName": "RSVP TRUST, soukromý svěřenský fond"
+    },
+    {
+      "entityId": "sady-cz",
+      "title": "Sady CZ",
+      "outcome": "already_recorded",
+      "ico": "27699293"
+    },
+    {
+      "entityId": "schrom-farms",
+      "title": "Schrom Farms",
+      "outcome": "already_recorded",
+      "ico": "62301659"
+    },
+    {
+      "entityId": "scp-bigaud",
+      "title": "SCP Bigaud (Monako)",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "senat-pcr",
+      "title": "Senát Parlamentu ČR",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "senkyr-panik",
+      "title": "Advokátní kancelář Šenkýř Pánik",
+      "outcome": "resolved",
+      "ico": "24722197",
+      "registeredName": "ŠENKÝŘ PÁNIK, advokátní kancelář s.r.o."
+    },
+    {
+      "entityId": "setuza",
+      "title": "Setuza",
+      "outcome": "already_recorded",
+      "ico": "46708707"
+    },
+    {
+      "entityId": "seznam-cz",
+      "title": "Seznam.cz",
+      "outcome": "already_recorded",
+      "ico": "26168685"
+    },
+    {
+      "entityId": "sfdi",
+      "title": "Státní fond dopravní infrastruktury (SFDI)",
+      "outcome": "resolved",
+      "ico": "70856508",
+      "registeredName": "Státní fond dopravní infrastruktury"
+    },
+    {
+      "entityId": "shenzhen-smart-connect-technology",
+      "title": "Shenzhen Smart Connect Technology",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "sindat",
+      "title": "Skupina Sindat",
+      "outcome": "already_recorded",
+      "ico": "00255092"
+    },
+    {
+      "entityId": "skoda-auto",
+      "title": "Škoda Auto",
+      "outcome": "already_recorded",
+      "ico": "00177041"
+    },
+    {
+      "entityId": "soudcovska-unie",
+      "title": "Soudcovská unie ČR",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "space-plan",
+      "title": "Space Plan",
+      "outcome": "resolved",
+      "ico": "61505463",
+      "registeredName": "SPACE PLAN, spol. s r.o."
+    },
+    {
+      "entityId": "spd",
+      "title": "SPD",
+      "outcome": "ambiguous",
+      "detail": [
+        "04134940 Svoboda a přímá demokracie (SPD)",
+        "25571877 SPD Kroměříž, a.s.",
+        "28630564 SPD Firmor s.r.o.",
+        "29359589 SPD services s.r.o."
+      ]
+    },
+    {
+      "entityId": "spolecnost-pro-obranu-svobody-projevu",
+      "title": "Společnost pro obranu svobody projevu",
+      "outcome": "resolved",
+      "ico": "09871713",
+      "registeredName": "Společnost pro obranu svobody projevu, z.ú."
+    },
+    {
+      "entityId": "sprava-zeleznic",
+      "title": "Správa železnic",
+      "outcome": "already_recorded",
+      "ico": "70994234"
+    },
+    {
+      "entityId": "spv-pelhrimov",
+      "title": "SPV Pelhřimov",
+      "outcome": "already_recorded",
+      "ico": "25157507"
+    },
+    {
+      "entityId": "stan",
+      "title": "STAN",
+      "outcome": "already_recorded",
+      "ico": "26673908"
+    },
+    {
+      "entityId": "statni-pozemkovy-urad",
+      "title": "Státní pozemkový úřad",
+      "outcome": "already_recorded",
+      "ico": "01312774"
+    },
+    {
+      "entityId": "statni-zastupitelstvi",
+      "title": "Státní zastupitelství",
+      "outcome": "ambiguous",
+      "detail": [
+        "00026000 Městské státní zastupitelství v Praze",
+        "00026018 Krajské státní zastupitelství v Praze",
+        "00026026 Krajské státní zastupitelství v Českých Budějovicích",
+        "00026034 Krajské státní zastupitelství v Plzni",
+        "00026042 Krajské státní zastupitelství Ústí nad Labem"
+      ]
+    },
+    {
+      "entityId": "statutarni-mesto-olomouc",
+      "title": "Statutární město Olomouc",
+      "outcome": "already_recorded",
+      "ico": "00299308"
+    },
+    {
+      "entityId": "stavebni-urad-praha-15",
+      "title": "Stavební úřad Prahy 15",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "strana-pro",
+      "title": "PRO (Právo Respekt Odbornost)",
+      "outcome": "search_error",
+      "detail": "HTTP 400"
+    },
+    {
+      "entityId": "stredocesky-kraj",
+      "title": "Středočeský kraj",
+      "outcome": "already_recorded",
+      "ico": "70891095"
+    },
+    {
+      "entityId": "svaz-obchodu-a-cestovniho-ruchu",
+      "title": "Svaz obchodu a cestovního ruchu ČR",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "svaz-prumyslu-a-dopravy",
+      "title": "Svaz průmyslu a dopravy ČR",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "synbiol",
+      "title": "SynBiol",
+      "outcome": "already_recorded",
+      "ico": "26014343"
+    },
+    {
+      "entityId": "szif",
+      "title": "Státní zemědělský intervenční fond",
+      "outcome": "already_recorded",
+      "ico": "48133981"
+    },
+    {
+      "entityId": "szpi",
+      "title": "SZPI",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "top-09",
+      "title": "TOP 09",
+      "outcome": "already_recorded",
+      "ico": "71339728"
+    },
+    {
+      "entityId": "transgas-sro",
+      "title": "Transgas s.r.o.",
+      "outcome": "already_recorded",
+      "ico": "06230113"
+    },
+    {
+      "entityId": "transparency-international",
+      "title": "Transparency International ČR",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "transport-environment",
+      "title": "Transport & Environment",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "ucitelska-platforma",
+      "title": "Učitelská platforma",
+      "outcome": "resolved",
+      "ico": "06616275",
+      "registeredName": "Učitelská platforma, z.s."
+    },
+    {
+      "entityId": "udhpsh",
+      "title": "Úřad pro dohled nad hospodařením politických stran a politických hnutí (ÚDHPSH)",
+      "outcome": "resolved",
+      "ico": "05553466",
+      "registeredName": "Úřad pro dohled nad hospodařením politických stran a politických hnutí"
+    },
+    {
+      "entityId": "umeleckohistoricka-spolecnost",
+      "title": "Uměleckohistorická společnost (UHS)",
+      "outcome": "resolved",
+      "ico": "00418005",
+      "registeredName": "Uměleckohistorická společnost, z. s."
+    },
+    {
+      "entityId": "unie-rodicu",
+      "title": "Unie rodičů",
+      "outcome": "ambiguous",
+      "detail": [
+        "01734351 Unie rodičů z Pětky z.s.",
+        "02273101 Spolek Unie rodičů při ZŠ Nové Dvory",
+        "02337690 Unie rodičů při ZŠ Pohůrecká 16/382",
+        "02988135 Unie rodičů při ZŠ a MŠ Tichá, z.s.",
+        "04104374 Unie rodičů při ZŠ a MŠ Ostrava-Nová Bělá, z. s."
+      ]
+    },
+    {
+      "entityId": "unie-statnich-zastupcu",
+      "title": "Unie státních zástupců",
+      "outcome": "resolved",
+      "ico": "63833239",
+      "registeredName": "Unie státních zástupců České republiky"
+    },
+    {
+      "entityId": "univerzita-karlova",
+      "title": "Univerzita Karlova",
+      "outcome": "already_recorded",
+      "ico": "00216208"
+    },
+    {
+      "entityId": "urad-pro-rozvoj-uzemi",
+      "title": "Úřad pro rozvoj území",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "urad-vlady",
+      "title": "Úřad vlády ČR",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "ustavni-soud",
+      "title": "Ústavní soud",
+      "outcome": "already_recorded",
+      "ico": "48513687"
+    },
+    {
+      "entityId": "vezenska-sluzba",
+      "title": "Vězeňská služba ČR",
+      "outcome": "rejected_mismatch",
+      "registeredName": "Základní organizace Nezávislého odborového svazu Policie ČR, Střední odborné učiliště, Vězeňská služba ČR",
+      "rejectionReason": "Prison service matched a police trade-union local at a vocational school — wrong subject",
+      "rejectedIco": "22742565"
+    },
+    {
+      "entityId": "vlada",
+      "title": "Vláda ČR",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "vodnanska-drubez",
+      "title": "Vodňanská drůbež",
+      "outcome": "already_recorded",
+      "ico": "25396480"
+    },
+    {
+      "entityId": "volkswagen",
+      "title": "Volkswagen",
+      "outcome": "ambiguous",
+      "detail": [
+        "undefined VOLKSWAGEN GROUP SERVICES, s.r.o.",
+        "07841931 Volkswagen Group Real Estate Czech Republic (VGRE CZ) s.r.o.",
+        "07959184 Volkswagen Group Charging CZ s.r.o.",
+        "21716323 Volkswagen Group Digital Solutions Private Limited, odštěpný závod",
+        "44962223 Volkswagen klub Brno"
+      ]
+    },
+    {
+      "entityId": "vrchni-soud-praha",
+      "title": "Vrchní soud v Praze",
+      "outcome": "already_recorded",
+      "ico": "00215651"
+    },
+    {
+      "entityId": "vrchni-statni-zastupitelstvi-olomouc",
+      "title": "Vrchní státní zastupitelství v Olomouci",
+      "outcome": "already_recorded",
+      "ico": "64124584"
+    },
+    {
+      "entityId": "vrchni-statni-zastupitelstvi-praha",
+      "title": "Vrchní státní zastupitelství v Praze",
+      "outcome": "already_recorded",
+      "ico": "49625586"
+    },
+    {
+      "entityId": "vsb-tu-ostrava",
+      "title": "VŠB — Technická univerzita Ostrava",
+      "outcome": "ambiguous",
+      "detail": [
+        "05636230 ZO VOS Fakulta materiálově-technologická, VŠB - Technická univerzita Ostrava",
+        "44938829 Vysokoškolský sportovní klub VŠB - Technická univerzita Ostrava z.s."
+      ]
+    },
+    {
+      "entityId": "vse-praha",
+      "title": "Vysoká škola ekonomická v Praze (VŠE)",
+      "outcome": "resolved",
+      "ico": "61384399",
+      "registeredName": "Vysoká škola ekonomická v Praze"
+    },
+    {
+      "entityId": "vybor-pro-obranu-psp",
+      "title": "Výbor pro obranu Poslanecké sněmovny",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "vybor-pro-rozpoctove-prognozy",
+      "title": "Výbor pro rozpočtové prognózy",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "vybor-pro-vedu-vzdelavani-psp",
+      "title": "Výbor pro vědu, vzdělávání, mládež a sport Poslanecké sněmovny",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "vybor-pro-zdravotnictvi-psp",
+      "title": "Výbor pro zdravotnictví Poslanecké sněmovny",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "vykrm-tagrea",
+      "title": "Výkrm Tagrea",
+      "outcome": "already_recorded",
+      "ico": "26102463"
+    },
+    {
+      "entityId": "vyzkumny-ustav-veterinarniho-lekarstvi",
+      "title": "Výzkumný ústav veterinárního lékařství, v. v. i.",
+      "outcome": "already_recorded",
+      "ico": "00027162"
+    },
+    {
+      "entityId": "vzp",
+      "title": "Všeobecná zdravotní pojišťovna (VZP)",
+      "outcome": "ambiguous",
+      "detail": [
+        "41197518 VŠEOBECNÁ ZDRAVOTNÍ POJIŠŤOVNA ČESKÉ REPUBLIKY",
+        "65733151 ZO OS - VŠEOBECNÁ ZDRAVOTNÍ POJIŠŤOVNA",
+        "65733398 ZO OS pracovníků peněžnictví a pojišťovnictví Všeobecná zdravotní pojišťovna ČR",
+        "65733754 ZO OS pracovníků peněžnictví a pojišťovnictví Všeobecná zdravotní pojišťovna ČR",
+        "65734246 ZO OS pracovníků peněžnictví a pojišťovnictví - Všeobecná zdravotní pojišťovna - ústředí"
+      ]
+    },
+    {
+      "entityId": "young-rubicam",
+      "title": "Young & Rubicam",
+      "outcome": "resolved",
+      "ico": "26417171",
+      "registeredName": "YOUNG & RUBICAM CZ s.r.o., člen koncernu YOUNG & RUBICAM"
+    },
+    {
+      "entityId": "zapper-club",
+      "title": "Zapper-Club s.r.o.",
+      "outcome": "already_recorded",
+      "ico": "05411394"
+    },
+    {
+      "entityId": "zeleznice-slovenskej-republiky",
+      "title": "Železnice Slovenskej republiky (ŽSR)",
+      "outcome": "not_found"
+    },
+    {
+      "entityId": "zemedelsky-svaz",
+      "title": "Zemědělský svaz ČR",
+      "outcome": "ambiguous",
+      "detail": [
+        "00105457 Zemědělský svaz ČR, územní organizace Mladá Boleslav",
+        "00106348 Zemědělský svaz ČR územní organizace Louny a Žatec",
+        "00107930 Zemědělský svaz ČR, územní organizace se sídlem v Hodoníně",
+        "00108103 Zemědělský svaz ČR, územní organizace Kroměříž",
+        "00108227 Zemědělský svaz ČR, územní organizace Uherské Hradiště"
+      ]
+    }
+  ]
+}

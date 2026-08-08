@@ -1,0 +1,53 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "46967851",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/46967851",
+  "nazev": "PENAM, a.s.",
+  "sidlo": "Cejl 504/38, Zábrdovice, 60200 Brno",
+  "spisovaZnacka": {
+    "soud": "KSBR",
+    "oddil": "C",
+    "vlozka": "6953"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "člen představenstva",
+      "since": "2024-05-03",
+      "kind": "company",
+      "name": "AGROFERT, a.s.",
+      "ico": "26185610"
+    },
+    {
+      "role": "člen představenstva",
+      "since": "2024-08-02",
+      "kind": "person",
+      "name": "Ing. Jan Stoklasa"
+    },
+    {
+      "role": "místopředseda představenstva",
+      "since": "2025-02-03",
+      "kind": "person",
+      "name": "Mgr. Georgios Koulisianis"
+    },
+    {
+      "role": "člen představenstva",
+      "since": "2025-03-06",
+      "kind": "person",
+      "name": "Ing. Josef Láska"
+    },
+    {
+      "role": "předseda představenstva",
+      "since": "2025-08-27",
+      "kind": "person",
+      "name": "Ing. Jaroslav Kurčík"
+    },
+    {
+      "role": "člen představenstva",
+      "since": "2026-02-03",
+      "kind": "person",
+      "name": "Ing. Stanislav Alt"
+    }
+  ],
+  "spolecnici": []
+}

@@ -1,0 +1,58 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "61858374",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/61858374",
+  "nazev": "Fio banka, a.s.",
+  "sidlo": "Na Florenci 2139/2, Nové Město, 11000 Praha 1",
+  "spisovaZnacka": {
+    "soud": "MSPH",
+    "oddil": "B",
+    "vlozka": "2704"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "člen představenstva",
+      "since": "2022-07-14",
+      "kind": "person",
+      "name": "Daniel Ditrich"
+    },
+    {
+      "role": "člen představenstva",
+      "since": "2022-07-14",
+      "kind": "person",
+      "name": "Ing. Jakub Schmid"
+    },
+    {
+      "role": "člen představenstva",
+      "since": "2023-11-11",
+      "kind": "person",
+      "name": "Mgr. Filip Novotný"
+    },
+    {
+      "role": "člen představenstva",
+      "since": "2025-04-11",
+      "kind": "person",
+      "name": "Ing. Jan Bláha"
+    },
+    {
+      "role": "člen představenstva",
+      "since": "2025-04-11",
+      "kind": "person",
+      "name": "Ing. Roman Vítek"
+    },
+    {
+      "role": "předseda představenstva",
+      "since": "2025-04-30",
+      "kind": "person",
+      "name": "Mgr. Jan Sochor"
+    },
+    {
+      "role": "člen představenstva",
+      "since": "2025-05-23",
+      "kind": "person",
+      "name": "Mgr. Josef Valter"
+    }
+  ],
+  "spolecnici": []
+}

@@ -1,0 +1,240 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "09871713"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "09871713",
+        "obchodniJmeno": "Společnost pro obranu svobody projevu, z.ú.",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 116,
+          "nazevKraje": "Jihomoravský kraj",
+          "kodOkresu": 3702,
+          "nazevOkresu": "Brno-město",
+          "kodObce": 582786,
+          "nazevObce": "Brno",
+          "kodMestskeCastiObvodu": 550990,
+          "kodUlice": 26328,
+          "nazevMestskeCastiObvodu": "Brno-Žabovřesky",
+          "nazevUlice": "Králova",
+          "cisloDomovni": 3213,
+          "kodCastiObce": 411922,
+          "cisloOrientacni": 1,
+          "cisloOrientacniPismeno": "a",
+          "nazevCastiObce": "Žabovřesky",
+          "kodAdresnihoMista": 42330530,
+          "psc": 61600,
+          "textovaAdresa": "Králova 3213/1a, Žabovřesky, 61600 Brno",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "161",
+        "pravniFormaRos": "161",
+        "financniUrad": "291",
+        "datumVzniku": "2021-01-28",
+        "datumAktualizace": "2026-06-30",
+        "icoId": "09871713",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Králova 3213/1a",
+          "radekAdresy2": "Žabovřesky",
+          "radekAdresy3": "61600 Brno"
+        },
+        "czNace2008": [
+          "9499"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "AKTIVNI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "NEEXISTUJICI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "NEEXISTUJICI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Společnost pro obranu svobody projevu, z.ú.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 116,
+                  "nazevKraje": "Jihomoravský kraj",
+                  "kodOkresu": 3702,
+                  "nazevOkresu": "Brno-město",
+                  "kodObce": 582786,
+                  "nazevObce": "Brno",
+                  "kodMestskeCastiObvodu": 550990,
+                  "kodUlice": 26328,
+                  "nazevMestskeCastiObvodu": "Brno-Žabovřesky",
+                  "nazevUlice": "Králova",
+                  "cisloDomovni": 3213,
+                  "kodCastiObce": 411922,
+                  "cisloOrientacni": 1,
+                  "cisloOrientacniPismeno": "a",
+                  "nazevCastiObce": "Žabovřesky",
+                  "kodAdresnihoMista": 42330530,
+                  "psc": 61600,
+                  "textovaAdresa": "Králova 3213/1a, Žabovřesky, 61600 Brno",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "161",
+            "pravniFormaRos": "161",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Společnost pro obranu svobody projevu, z.ú.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 116,
+                  "nazevKraje": "Jihomoravský kraj",
+                  "kodOkresu": 3702,
+                  "nazevOkresu": "Brno-město",
+                  "kodObce": 582786,
+                  "nazevObce": "Brno",
+                  "kodMestskeCastiObvodu": 550990,
+                  "kodUlice": 26328,
+                  "nazevMestskeCastiObvodu": "Brno-Žabovřesky",
+                  "nazevUlice": "Králova",
+                  "cisloDomovni": 3213,
+                  "kodCastiObce": 411922,
+                  "cisloOrientacni": 1,
+                  "cisloOrientacniPismeno": "a",
+                  "nazevCastiObce": "Žabovřesky",
+                  "kodAdresnihoMista": 42330530,
+                  "psc": 61600,
+                  "textovaAdresa": "Králova 3213/1a, Žabovřesky, 61600 Brno",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "161",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Společnost pro obranu svobody projevu, z.ú.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 116,
+                  "nazevKraje": "Jihomoravský kraj",
+                  "kodOkresu": 3702,
+                  "nazevOkresu": "Brno-město",
+                  "kodObce": 582786,
+                  "nazevObce": "Brno",
+                  "kodMestskeCastiObvodu": 550990,
+                  "kodUlice": 26328,
+                  "nazevMestskeCastiObvodu": "Brno-Žabovřesky",
+                  "nazevUlice": "Králova",
+                  "cisloDomovni": 3213,
+                  "kodCastiObce": 411922,
+                  "cisloOrientacni": 1,
+                  "cisloOrientacniPismeno": "a",
+                  "nazevCastiObce": "Žabovřesky",
+                  "kodAdresnihoMista": 42330530,
+                  "psc": 61600,
+                  "textovaAdresa": "Králova 3213/1a, Žabovřesky, 61600 Brno",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "161",
+            "datovyZdroj": "rzp"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Společnost pro obranu svobody projevu, z.ú.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 116,
+                  "nazevKraje": "Jihomoravský kraj",
+                  "kodOkresu": 3702,
+                  "nazevOkresu": "Brno-město",
+                  "kodObce": 582786,
+                  "nazevObce": "Brno",
+                  "kodMestskeCastiObvodu": 550990,
+                  "kodUlice": 26328,
+                  "nazevMestskeCastiObvodu": "Brno-Žabovřesky",
+                  "nazevUlice": "Králova",
+                  "cisloDomovni": 3213,
+                  "kodCastiObce": 411922,
+                  "cisloOrientacni": 1,
+                  "cisloOrientacniPismeno": "a",
+                  "nazevCastiObce": "Žabovřesky",
+                  "kodAdresnihoMista": 42330530,
+                  "psc": 61600,
+                  "textovaAdresa": "Králova 3213/1a, Žabovřesky, 61600 Brno",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "161",
+            "spisovaZnacka": "U 304/KSBR",
+            "datovyZdroj": "vr"
+          }
+        ],
+        "czNace": [
+          "9499"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,335 @@
+{
+  "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
+  "retrieved": "2026-08-08",
+  "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/05140544",
+  "status": "OK",
+  "subject": {
+    "ico": "05140544",
+    "businessName": "Demagog.cz, z.s.",
+    "registerReference": "L 71087/MSPH"
+  },
+  "filings": [
+    {
+      "referenceLabel": "L 21775/SL1/KSBR",
+      "documentType": "stanovy společnosti",
+      "createdAt": "02-05-2016",
+      "receivedByCourtAt": "27-05-2016",
+      "filedAt": "07-07-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 90324
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 21775/SL2/KSBR",
+      "documentType": "ostatní zápis z ustavující schůze",
+      "createdAt": "02-05-2016",
+      "receivedByCourtAt": "27-05-2016",
+      "filedAt": "07-07-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 70108
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 21775/SL3/KSBR",
+      "documentType": "ostatní zápis z mimořádné schůze Rady",
+      "createdAt": "02-09-2018",
+      "receivedByCourtAt": "10-09-2018",
+      "filedAt": "18-10-2018",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 54231
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 21775/SL4/KSBR",
+      "documentType": "stanovy společnosti",
+      "createdAt": "07-09-2018",
+      "receivedByCourtAt": "10-09-2018",
+      "filedAt": "18-10-2018",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 106011
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 71087/SL5/MSPH",
+      "documentType": "stanovy společnosti",
+      "createdAt": "31-01-2019",
+      "receivedByCourtAt": "09-04-2019",
+      "filedAt": "01-07-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 106582
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 71087/SL6/MSPH",
+      "documentType": "ostatní zápis z čl. schůze",
+      "createdAt": "23-01-2020",
+      "receivedByCourtAt": "06-05-2020",
+      "filedAt": "22-05-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 1667624
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 71087/SL7/MSPH",
+      "documentType": "ostatní zápis z členské schůze",
+      "createdAt": "27-02-2023",
+      "receivedByCourtAt": "25-08-2024",
+      "filedAt": "16-09-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 1952290
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 71087/SL8/MSPH",
+      "documentType": "účetní závěrka [2023] VZaZ",
+      "createdAt": "31-12-2023",
+      "receivedByCourtAt": "12-12-2024",
+      "filedAt": "16-12-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 22178
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 71087/SL9/MSPH",
+      "documentType": "výroční zpráva [2017]",
+      "createdAt": "31-12-2017",
+      "receivedByCourtAt": "12-12-2024",
+      "filedAt": "16-12-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 9,
+          "sizeBytes": 773909
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 71087/SL10/MSPH",
+      "documentType": "výroční zpráva [2016]",
+      "createdAt": "31-12-2016",
+      "receivedByCourtAt": "12-12-2024",
+      "filedAt": "16-12-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 8,
+          "sizeBytes": 427837
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 71087/SL11/MSPH",
+      "documentType": "účetní závěrka [2022] příloha",
+      "createdAt": "31-12-2022",
+      "receivedByCourtAt": "12-12-2024",
+      "filedAt": "16-12-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 143734
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 71087/SL12/MSPH",
+      "documentType": "účetní závěrka [2022] rozvaha",
+      "createdAt": "31-12-2022",
+      "receivedByCourtAt": "12-12-2024",
+      "filedAt": "16-12-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 194311
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 71087/SL13/MSPH",
+      "documentType": "účetní závěrka [2023] příloha",
+      "createdAt": "31-12-2023",
+      "receivedByCourtAt": "12-12-2024",
+      "filedAt": "16-12-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 157476
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 71087/SL14/MSPH",
+      "documentType": "výroční zpráva [2019]",
+      "createdAt": "31-12-2019",
+      "receivedByCourtAt": "12-12-2024",
+      "filedAt": "16-12-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 10,
+          "sizeBytes": 4177484
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 71087/SL15/MSPH",
+      "documentType": "účetní závěrka [2022] VZaZ",
+      "createdAt": "31-12-2022",
+      "receivedByCourtAt": "12-12-2024",
+      "filedAt": "16-12-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 197241
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 71087/SL16/MSPH",
+      "documentType": "účetní závěrka [2023] rozvaha",
+      "createdAt": "31-12-2023",
+      "receivedByCourtAt": "12-12-2024",
+      "filedAt": "16-12-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 21577
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 71087/SL17/MSPH",
+      "documentType": "výroční zpráva [2021]",
+      "createdAt": "31-12-2021",
+      "receivedByCourtAt": "12-12-2024",
+      "filedAt": "16-12-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 11,
+          "sizeBytes": 7352847
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 71087/SL18/MSPH",
+      "documentType": "výroční zpráva [2022]",
+      "createdAt": "31-12-2022",
+      "receivedByCourtAt": "12-12-2024",
+      "filedAt": "16-12-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 10,
+          "sizeBytes": 777109
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 71087/SL19/MSPH",
+      "documentType": "výroční zpráva [2020]",
+      "createdAt": "31-12-2020",
+      "receivedByCourtAt": "12-12-2024",
+      "filedAt": "16-12-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 12,
+          "sizeBytes": 1172069
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 71087/SL20/MSPH",
+      "documentType": "výroční zpráva [2018]",
+      "createdAt": "31-12-2018",
+      "receivedByCourtAt": "12-12-2024",
+      "filedAt": "16-12-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 8,
+          "sizeBytes": 5223255
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 71087/SL21/MSPH",
+      "documentType": "výroční zpráva [2023]",
+      "createdAt": "31-12-2023",
+      "receivedByCourtAt": "04-02-2025",
+      "filedAt": "05-02-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 11,
+          "sizeBytes": 1038664
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 71087/SL22/MSPH",
+      "documentType": "účetní závěrka [2024]",
+      "createdAt": "31-12-2024",
+      "receivedByCourtAt": "21-07-2025",
+      "filedAt": "31-07-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 329317
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 71087/SL23/MSPH",
+      "documentType": "výroční zpráva [2024]",
+      "createdAt": "31-12-2024",
+      "receivedByCourtAt": "22-01-2026",
+      "filedAt": "23-01-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 15,
+          "sizeBytes": 2262741
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "61384399"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "61384399",
+        "obchodniJmeno": "Vysoká škola ekonomická v Praze",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 35,
+          "nazevSpravnihoObvodu": "Praha 3",
+          "kodMestskehoObvodu": 35,
+          "nazevMestskehoObvodu": "Praha 3",
+          "kodMestskeCastiObvodu": 500097,
+          "kodUlice": 480649,
+          "nazevMestskeCastiObvodu": "Praha 3",
+          "nazevUlice": "náměstí Winstona Churchilla",
+          "cisloDomovni": 1938,
+          "kodCastiObce": 490261,
+          "cisloOrientacni": 4,
+          "nazevCastiObce": "Žižkov",
+          "kodAdresnihoMista": 21788561,
+          "psc": 13000,
+          "textovaAdresa": "náměstí Winstona Churchilla 1938/4, Žižkov, 13000 Praha 3",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "601",
+        "pravniFormaRos": "601",
+        "financniUrad": "003",
+        "datumAktualizace": "2026-07-03",
+        "dic": "CZ61384399",
+        "icoId": "61384399",
+        "adresaDorucovaci": {
+          "radekAdresy1": "náměstí Winstona Churchilla 1938/4",
+          "radekAdresy2": "Žižkov",
+          "radekAdresy3": "13000 Praha 3"
+        },
+        "czNace2008": [
+          "85420"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "NEEXISTUJICI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "AKTIVNI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Vysoká škola ekonomická v Praze",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 35,
+                  "nazevSpravnihoObvodu": "Praha 3",
+                  "kodMestskehoObvodu": 35,
+                  "nazevMestskehoObvodu": "Praha 3",
+                  "kodMestskeCastiObvodu": 500097,
+                  "kodUlice": 480649,
+                  "nazevMestskeCastiObvodu": "Praha 3",
+                  "nazevUlice": "náměstí Winstona Churchilla",
+                  "cisloDomovni": 1938,
+                  "kodCastiObce": 490261,
+                  "cisloOrientacni": 4,
+                  "nazevCastiObce": "Žižkov",
+                  "kodAdresnihoMista": 21788561,
+                  "psc": 13000,
+                  "textovaAdresa": "náměstí Winstona Churchilla 1938/4, Žižkov, 13000 Praha 3",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "601",
+            "pravniFormaRos": "601",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Vysoká škola ekonomická v Praze",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 35,
+                  "nazevSpravnihoObvodu": "Praha 3",
+                  "kodMestskehoObvodu": 35,
+                  "nazevMestskehoObvodu": "Praha 3",
+                  "kodMestskeCastiObvodu": 500097,
+                  "kodUlice": 480649,
+                  "nazevMestskeCastiObvodu": "Praha 3",
+                  "nazevUlice": "náměstí Winstona Churchilla",
+                  "cisloDomovni": 1938,
+                  "kodCastiObce": 490261,
+                  "cisloOrientacni": 4,
+                  "nazevCastiObce": "Žižkov",
+                  "kodAdresnihoMista": 21788561,
+                  "psc": 13000,
+                  "textovaAdresa": "náměstí Winstona Churchilla 1938/4, Žižkov, 13000 Praha 3",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "601",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Vysoká škola ekonomická v Praze",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 35,
+                  "nazevSpravnihoObvodu": "Praha 3",
+                  "kodMestskehoObvodu": 35,
+                  "nazevMestskehoObvodu": "Praha 3",
+                  "kodMestskeCastiObvodu": 500097,
+                  "kodUlice": 480649,
+                  "nazevMestskeCastiObvodu": "Praha 3",
+                  "nazevUlice": "náměstí Winstona Churchilla",
+                  "cisloDomovni": 1938,
+                  "kodCastiObce": 490261,
+                  "cisloOrientacni": 4,
+                  "nazevCastiObce": "Žižkov",
+                  "kodAdresnihoMista": 21788561,
+                  "psc": 13000,
+                  "textovaAdresa": "náměstí Winstona Churchilla 1938/4, Žižkov, 13000 Praha 3",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "601",
+            "datovyZdroj": "rzp"
+          }
+        ],
+        "czNace": [
+          "85402"
+        ],
+        "subRegistrSzr": "szr"
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "05965527",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/05965527",
+  "nazev": "Hlídač státu, z.ú.",
+  "sidlo": "Velenovského 648, 25164 Mnichovice",
+  "spisovaZnacka": {
+    "soud": "MSPH",
+    "oddil": "U",
+    "vlozka": "559"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "ředitel",
+      "since": "2026-04-01",
+      "kind": "person",
+      "name": "Michal Bláha"
+    }
+  ],
+  "spolecnici": [
+    {
+      "kind": "person",
+      "name": "Michal Bláha",
+      "podil": null,
+      "vklad": null,
+      "splaceno": null
+    }
+  ]
+}

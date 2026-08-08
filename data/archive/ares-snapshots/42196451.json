@@ -1,0 +1,55 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "42196451",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/42196451",
+  "nazev": "Lesy České republiky, s.p.",
+  "sidlo": "Přemyslova 1106/19, Nový Hradec Králové, 50008 Hradec Králové",
+  "spisovaZnacka": {
+    "soud": "KSHK",
+    "oddil": "AXII",
+    "vlozka": "540"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "Generální ředitel",
+      "since": "2026-02-20",
+      "kind": "person",
+      "name": "Ing. Josef Vojáček"
+    },
+    {
+      "role": "Správní ředitel",
+      "since": "2026-03-11",
+      "kind": "person",
+      "name": "JUDr. Pavel Krpata"
+    },
+    {
+      "role": "Ředitel vnějších vztahů a komunikace",
+      "since": "2026-03-11",
+      "kind": "person",
+      "name": "Mgr. Martin Zajíček"
+    },
+    {
+      "role": "Výrobně-technický ředitel",
+      "since": "2026-02-20",
+      "kind": "person",
+      "name": "Ing. Libor Strakoš"
+    },
+    {
+      "role": "Ekonomický ředitel",
+      "since": "2026-05-01",
+      "kind": "person",
+      "name": "Mgr. Jan Sixta"
+    }
+  ],
+  "spolecnici": [
+    {
+      "kind": "company",
+      "name": "Ministerstvo zemědělství",
+      "ico": "00020478",
+      "podil": null,
+      "vklad": null,
+      "splaceno": null
+    }
+  ]
+}

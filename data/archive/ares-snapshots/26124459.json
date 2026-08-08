@@ -1,0 +1,34 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "26124459",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/26124459",
+  "nazev": "IMOBA, a.s.",
+  "sidlo": "Pyšelská 2327/2, Chodov, 14900 Praha 4",
+  "spisovaZnacka": {
+    "soud": "MSPH",
+    "oddil": "B",
+    "vlozka": "6203"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "předseda představenstva",
+      "since": "2026-02-16",
+      "kind": "person",
+      "name": "Mgr. Václav Knotek"
+    },
+    {
+      "role": "místopředseda představenstva",
+      "since": "2026-02-16",
+      "kind": "person",
+      "name": "František Šlingr"
+    },
+    {
+      "role": "člen představenstva",
+      "since": "2026-02-16",
+      "kind": "person",
+      "name": "Ing. Jindřich Archalous"
+    }
+  ],
+  "spolecnici": []
+}

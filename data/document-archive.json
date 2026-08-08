@@ -3,16 +3,16 @@
   "generatedAt": "2026-08-08",
   "policy": "Public business-registry identity and filing metadata only. Person birth dates, home addresses and personal identifiers are refused; document PDFs are published only after individual review.",
   "counts": {
-    "records": 217,
-    "aresSnapshots": 101,
-    "justiceMetadataSnapshots": 101,
-    "justiceDocuments": 4287,
-    "justiceDocumentBytes": 7446029430,
-    "justiceDocumentGigabytes": 6.93,
+    "records": 271,
+    "aresSnapshots": 128,
+    "justiceMetadataSnapshots": 128,
+    "justiceDocuments": 4978,
+    "justiceDocumentBytes": 8249740753,
+    "justiceDocumentGigabytes": 7.68,
     "courtBoardChecks": 6,
-    "found": 173,
-    "notFound": 44,
-    "entitiesWithoutIco": 145
+    "found": 219,
+    "notFound": 52,
+    "entitiesWithoutIco": 118
   },
   "records": [
     {
@@ -29,6 +29,54 @@
       "file": "/documents/registry/ares/26228548.json",
       "mediaType": "application/json",
       "sha256": "1c59df36cf2eb8fe226d619567d3c102f542896f85a92bdeb73896d6f56ddfe0",
+      "found": true
+    },
+    {
+      "identifier": "ares-63832721",
+      "registry": "ARES",
+      "title": "ACRI — Asociace podniků českého železničního průmyslu",
+      "ico": "63832721",
+      "entity": "acri",
+      "dossiers": [
+        "ivan-bednarik"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/63832721.json",
+      "mediaType": "application/json",
+      "sha256": "9c0b25403523e20274a5cef19b26b644a652b5407a78175c4f660e934e949e08",
+      "found": true
+    },
+    {
+      "identifier": "ares-48118753",
+      "registry": "ARES",
+      "title": "Advokátní kancelář Portos (dříve Češka a Smutný)",
+      "ico": "48118753",
+      "entity": "ak-portos",
+      "dossiers": [
+        "martin-sebestyan"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/48118753.json",
+      "mediaType": "application/json",
+      "sha256": "b1e67da29ab02e7dd257fde1c6888867b95a996b605f920c4b10473b93131f67",
+      "found": true
+    },
+    {
+      "identifier": "ares-24722197",
+      "registry": "ARES",
+      "title": "Advokátní kancelář Šenkýř Pánik",
+      "ico": "24722197",
+      "entity": "senkyr-panik",
+      "dossiers": [
+        "tunde-bartha"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/24722197.json",
+      "mediaType": "application/json",
+      "sha256": "404d335a587fa42879d82c0bfa947b9491b26544148c017a4d3afebd9e45b88f",
       "found": true
     },
     {
@@ -159,6 +207,22 @@
       "found": true
     },
     {
+      "identifier": "ares-60449101",
+      "registry": "ARES",
+      "title": "Asociace ředitelů základních škol",
+      "ico": "60449101",
+      "entity": "asociace-reditelu-zs",
+      "dossiers": [
+        "robert-plaga"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/60449101.json",
+      "mediaType": "application/json",
+      "sha256": "48cb6616eb79eb3251734cb23e272cf8453502a00f4d3ad20f0194ef3d0e4572",
+      "found": true
+    },
+    {
       "identifier": "ares-01818899",
       "registry": "ARES",
       "title": "Aston Martin klub ČR, z.s.",
@@ -172,6 +236,22 @@
       "file": "/documents/registry/ares/01818899.json",
       "mediaType": "application/json",
       "sha256": "69d9e333ef7a41ee90764167fe648a0de0948bb55fbdd8a2c44350ae890182dd",
+      "found": true
+    },
+    {
+      "identifier": "ares-22419519",
+      "registry": "ARES",
+      "title": "BYD Automotive",
+      "ico": "22419519",
+      "entity": "byd-automotive",
+      "dossiers": [
+        "karel-havlicek"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/22419519.json",
+      "mediaType": "application/json",
+      "sha256": "1a5a743c37b2d63c67e74f3ead94994a1e02832e656e259b400fe331824b63a5",
       "found": true
     },
     {
@@ -252,6 +332,22 @@
       "file": "/documents/registry/ares/28196678.json",
       "mediaType": "application/json",
       "sha256": "3e268e4cd257c9716612785642a724436c01795466a14f236311c9eadce38d6e",
+      "found": true
+    },
+    {
+      "identifier": "ares-45770743",
+      "registry": "ARES",
+      "title": "Česká komora autorizovaných inženýrů a techniků (ČKAIT)",
+      "ico": "45770743",
+      "entity": "ckait",
+      "dossiers": [
+        "karel-havlicek"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/45770743.json",
+      "mediaType": "application/json",
+      "sha256": "56bd69aaa623be00f78e43486944b39ebc106bac2f549bbed73cc4c7e07c8515",
       "found": true
     },
     {
@@ -337,6 +433,22 @@
       "found": true
     },
     {
+      "identifier": "ares-68407700",
+      "registry": "ARES",
+      "title": "České vysoké učení technické v Praze (ČVUT)",
+      "ico": "68407700",
+      "entity": "cvut",
+      "dossiers": [
+        "karel-havlicek"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/68407700.json",
+      "mediaType": "application/json",
+      "sha256": "092c0f3b1743ef019a53be26cb44033ccb6d3770c86fa446179ce1aec326c440",
+      "found": true
+    },
+    {
       "identifier": "ares-45245053",
       "registry": "ARES",
       "title": "Český rozhlas",
@@ -369,6 +481,22 @@
       "found": true
     },
     {
+      "identifier": "ares-05140544",
+      "registry": "ARES",
+      "title": "Demagog.cz",
+      "ico": "05140544",
+      "entity": "demagog-cz",
+      "dossiers": [
+        "martin-sebestyan"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/05140544.json",
+      "mediaType": "application/json",
+      "sha256": "556b2e54760e3084aadb15c5c5a0ae8db7388839a928d281dfeeb8d3002ed093",
+      "found": true
+    },
+    {
       "identifier": "ares-04771664",
       "registry": "ARES",
       "title": "DRILL COMPANY, s.r.o.",
@@ -382,6 +510,22 @@
       "file": "/documents/registry/ares/04771664.json",
       "mediaType": "application/json",
       "sha256": "29f8d6a39b833b323d67c9b392187903edc5d72f08ece93b314173a3737f9ce7",
+      "found": true
+    },
+    {
+      "identifier": "ares-24706370",
+      "registry": "ARES",
+      "title": "EDUin",
+      "ico": "24706370",
+      "entity": "eduin",
+      "dossiers": [
+        "robert-plaga"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/24706370.json",
+      "mediaType": "application/json",
+      "sha256": "e870efae96bd6ca86112a49090793b1dfc4e7e3d5129108322571f51a1bf183c",
       "found": true
     },
     {
@@ -467,6 +611,22 @@
       "found": true
     },
     {
+      "identifier": "ares-61388246",
+      "registry": "ARES",
+      "title": "Gymnázium Jana Keplera",
+      "ico": "61388246",
+      "entity": "gymnazium-jana-keplera",
+      "dossiers": [
+        "robert-plaga"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/61388246.json",
+      "mediaType": "application/json",
+      "sha256": "fd4aa34a8f61ed92a0900c3a0e9ebd652650926e5b9575a6aed594db231be2c4",
+      "found": true
+    },
+    {
       "identifier": "ares-01801261",
       "registry": "ARES",
       "title": "Hartenberg Holding",
@@ -480,6 +640,22 @@
       "file": "/documents/registry/ares/01801261.json",
       "mediaType": "application/json",
       "sha256": "900a4183eccef27b91e30506414735b98ad32448cb8a87e1e7889e6440e5271b",
+      "found": true
+    },
+    {
+      "identifier": "ares-04472586",
+      "registry": "ARES",
+      "title": "Hemmont",
+      "ico": "04472586",
+      "entity": "hemmont",
+      "dossiers": [
+        "igor-cerveny"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/04472586.json",
+      "mediaType": "application/json",
+      "sha256": "253a7735aeb00854ff59b9c2abbd92e46ccb3c58baee81770f2a1be7c07a379a",
       "found": true
     },
     {
@@ -532,6 +708,22 @@
       "found": true
     },
     {
+      "identifier": "ares-24220345",
+      "registry": "ARES",
+      "title": "Institut Václava Klause",
+      "ico": "24220345",
+      "entity": "institut-vaclava-klause",
+      "dossiers": [
+        "macinka-turek"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/24220345.json",
+      "mediaType": "application/json",
+      "sha256": "5012b75ae18fb208c7742cfc481034858a5c9e485e77a0bab286da8400962a80",
+      "found": true
+    },
+    {
       "identifier": "ares-01680081",
       "registry": "ARES",
       "title": "Investigace.cz",
@@ -577,6 +769,22 @@
       "file": "/documents/registry/ares/70888337.json",
       "mediaType": "application/json",
       "sha256": "5911661ff7a0ae888e0075ef16f990fbf34f6bfe8850b1e4e6bb5d6e1210bc4d",
+      "found": true
+    },
+    {
+      "identifier": "ares-49282778",
+      "registry": "ARES",
+      "title": "JWT (J. Walter Thompson)",
+      "ico": "49282778",
+      "entity": "jwt",
+      "dossiers": [
+        "oto-klempir"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/49282778.json",
+      "mediaType": "application/json",
+      "sha256": "edcd7afef6a65695f14d0f48de7658ea5e8a8900e173087d1124caea966f103e",
       "found": true
     },
     {
@@ -1013,6 +1221,22 @@
       "found": true
     },
     {
+      "identifier": "ares-07460121",
+      "registry": "ARES",
+      "title": "Národní sportovní agentura (NSA)",
+      "ico": "07460121",
+      "entity": "narodni-sportovni-agentura",
+      "dossiers": [
+        "boris-stastny"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/07460121.json",
+      "mediaType": "application/json",
+      "sha256": "cffbed3827b31db499e9574bfdfe99bb0844d4456277857e5a49af47225e2f77",
+      "found": true
+    },
+    {
       "identifier": "ares-00023752",
       "registry": "ARES",
       "title": "Národní ústav duševního zdraví",
@@ -1218,6 +1442,22 @@
       "found": true
     },
     {
+      "identifier": "ares-49241494",
+      "registry": "ARES",
+      "title": "Podpůrný a garanční rolnický a lesnický fond (PGRLF)",
+      "ico": "49241494",
+      "entity": "pgrlf",
+      "dossiers": [
+        "andrej-babis"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/49241494.json",
+      "mediaType": "application/json",
+      "sha256": "736195df088316d8b003892aecf55a6856d0f63c3a8772e0df30fff6df3584dd",
+      "found": true
+    },
+    {
       "identifier": "ares-70890005",
       "registry": "ARES",
       "title": "Povodí Labe, státní podnik",
@@ -1282,6 +1522,38 @@
       "found": true
     },
     {
+      "identifier": "ares-24099333",
+      "registry": "ARES",
+      "title": "RSVP Trust",
+      "ico": "24099333",
+      "entity": "rsvp-trust",
+      "dossiers": [
+        "andrej-babis"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/24099333.json",
+      "mediaType": "application/json",
+      "sha256": "fda0ed21d2eb22777b3c17823f7dc51c732b00f30ade2638465597be2af5b861",
+      "found": true
+    },
+    {
+      "identifier": "ares-67981801",
+      "registry": "ARES",
+      "title": "Ředitelství vodních cest",
+      "ico": "67981801",
+      "entity": "reditelstvi-vodnich-cest",
+      "dossiers": [
+        "ivan-bednarik"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/67981801.json",
+      "mediaType": "application/json",
+      "sha256": "34741b012c24b8e3fffb32427e86a02cc7c827ec5a379c265cecbc6c88f03a4f",
+      "found": true
+    },
+    {
       "identifier": "ares-27699293",
       "registry": "ARES",
       "title": "Sady CZ",
@@ -1295,6 +1567,22 @@
       "file": "/documents/registry/ares/27699293.json",
       "mediaType": "application/json",
       "sha256": "3dfdd9210d66d3bae9c3a8343c2ae053ad9665110c93c675dc262ea8e88f591a",
+      "found": true
+    },
+    {
+      "identifier": "ares-17048826",
+      "registry": "ARES",
+      "title": "Sdružení automobilového průmyslu (AutoSAP)",
+      "ico": "17048826",
+      "entity": "autosap",
+      "dossiers": [
+        "karel-havlicek"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/17048826.json",
+      "mediaType": "application/json",
+      "sha256": "1602b43e9b10b7f2fe5a966a6212e0aec45aecc780366b61c160e5880ba2c6a4",
       "found": true
     },
     {
@@ -1362,6 +1650,38 @@
       "found": true
     },
     {
+      "identifier": "ares-61505463",
+      "registry": "ARES",
+      "title": "Space Plan",
+      "ico": "61505463",
+      "entity": "space-plan",
+      "dossiers": [
+        "igor-cerveny"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/61505463.json",
+      "mediaType": "application/json",
+      "sha256": "747b8f8e597284d9f760f9dd4b3f5ab9ba91a0224ea369cbde849b5852d9bfc8",
+      "found": true
+    },
+    {
+      "identifier": "ares-09871713",
+      "registry": "ARES",
+      "title": "Společnost pro obranu svobody projevu",
+      "ico": "09871713",
+      "entity": "spolecnost-pro-obranu-svobody-projevu",
+      "dossiers": [
+        "tomio-okamura"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/09871713.json",
+      "mediaType": "application/json",
+      "sha256": "895e44c04b5bc450be61de39e87d80a717fcffa3d2265f184fc1e9dda2bae559",
+      "found": true
+    },
+    {
       "identifier": "ares-70994234",
       "registry": "ARES",
       "title": "Správa železnic",
@@ -1412,6 +1732,22 @@
       "file": "/documents/registry/ares/26673908.json",
       "mediaType": "application/json",
       "sha256": "47c3a95b303da0673b0d309e57ba375127f586b572734484168d226683d44265",
+      "found": true
+    },
+    {
+      "identifier": "ares-70856508",
+      "registry": "ARES",
+      "title": "Státní fond dopravní infrastruktury (SFDI)",
+      "ico": "70856508",
+      "entity": "sfdi",
+      "dossiers": [
+        "ivan-bednarik"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/70856508.json",
+      "mediaType": "application/json",
+      "sha256": "055b8a17b70bd83987073831e93dc60bc3c7e7227d681f6a2e13fe2f5483854b",
       "found": true
     },
     {
@@ -1548,6 +1884,54 @@
       "found": true
     },
     {
+      "identifier": "ares-06616275",
+      "registry": "ARES",
+      "title": "Učitelská platforma",
+      "ico": "06616275",
+      "entity": "ucitelska-platforma",
+      "dossiers": [
+        "robert-plaga"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/06616275.json",
+      "mediaType": "application/json",
+      "sha256": "2b512032cc022203e88127072a5dc281e603d6d2775d3cb554b26bb3c8709f6d",
+      "found": true
+    },
+    {
+      "identifier": "ares-00418005",
+      "registry": "ARES",
+      "title": "Uměleckohistorická společnost (UHS)",
+      "ico": "00418005",
+      "entity": "umeleckohistoricka-spolecnost",
+      "dossiers": [
+        "oto-klempir"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/00418005.json",
+      "mediaType": "application/json",
+      "sha256": "27093146373bb530ed6e76366baeeac152bce339a447550bd033d1ad1e6d8628",
+      "found": true
+    },
+    {
+      "identifier": "ares-63833239",
+      "registry": "ARES",
+      "title": "Unie státních zástupců",
+      "ico": "63833239",
+      "entity": "unie-statnich-zastupcu",
+      "dossiers": [
+        "tomio-okamura"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/63833239.json",
+      "mediaType": "application/json",
+      "sha256": "ac268474c8cf0457fb90b1edcb0bba27666f5415fd005b184cd0499cd044c958",
+      "found": true
+    },
+    {
       "identifier": "ares-00216208",
       "registry": "ARES",
       "title": "Univerzita Karlova",
@@ -1561,6 +1945,22 @@
       "file": "/documents/registry/ares/00216208.json",
       "mediaType": "application/json",
       "sha256": "f34d7ff80587dbd10e4423b5097b8ab5aa746ddca063b74b2a7506ac2efd11df",
+      "found": true
+    },
+    {
+      "identifier": "ares-05553466",
+      "registry": "ARES",
+      "title": "Úřad pro dohled nad hospodařením politických stran a politických hnutí (ÚDHPSH)",
+      "ico": "05553466",
+      "entity": "udhpsh",
+      "dossiers": [
+        "macinka-turek"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/05553466.json",
+      "mediaType": "application/json",
+      "sha256": "810d86b1c51a097013dca07a13cdc5a59fa5c994ce0232cddb598170847f4a6a",
       "found": true
     },
     {
@@ -1663,6 +2063,22 @@
       "found": true
     },
     {
+      "identifier": "ares-61384399",
+      "registry": "ARES",
+      "title": "Vysoká škola ekonomická v Praze (VŠE)",
+      "ico": "61384399",
+      "entity": "vse-praha",
+      "dossiers": [
+        "karel-havlicek"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/61384399.json",
+      "mediaType": "application/json",
+      "sha256": "5ad8905100cadaebc301480a835e67a067c353cb4a3733b99f4a7f5b77e3df66",
+      "found": true
+    },
+    {
       "identifier": "ares-00027162",
       "registry": "ARES",
       "title": "Výzkumný ústav veterinárního lékařství, v. v. i.",
@@ -1676,6 +2092,22 @@
       "file": "/documents/registry/ares/00027162.json",
       "mediaType": "application/json",
       "sha256": "6b9349a8acbf6a1a599bb407fce02f1e2caf4941a2014efc3af9029865f8c588",
+      "found": true
+    },
+    {
+      "identifier": "ares-26417171",
+      "registry": "ARES",
+      "title": "Young & Rubicam",
+      "ico": "26417171",
+      "entity": "young-rubicam",
+      "dossiers": [
+        "oto-klempir"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/26417171.json",
+      "mediaType": "application/json",
+      "sha256": "2f3b365051090918929b9eca13476b2a607292a5f5fdd6156f335d64deffc1d0",
       "found": true
     },
     {
@@ -1789,6 +2221,69 @@
       "documentCount": 0,
       "pageCount": 0,
       "documentBytes": 0,
+      "nonDigitizedCount": 0
+    },
+    {
+      "identifier": "justice-metadata-63832721",
+      "registry": "Sbírka listin – metadata",
+      "title": "Sbírka listin – ACRI — Asociace podniků českého železničního průmyslu",
+      "ico": "63832721",
+      "entity": "acri",
+      "dossiers": [
+        "ivan-bednarik"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
+      "file": "/documents/registry/justice/63832721.json",
+      "mediaType": "application/json",
+      "sha256": "c4b9d25d6ffb2e75647bebbbfc760086d57b2af79c79b7a996de17efdedd9ac8",
+      "found": true,
+      "filingCount": 27,
+      "documentCount": 27,
+      "pageCount": 60,
+      "documentBytes": 17739924,
+      "nonDigitizedCount": 0
+    },
+    {
+      "identifier": "justice-metadata-48118753",
+      "registry": "Sbírka listin – metadata",
+      "title": "Sbírka listin – Advokátní kancelář Portos (dříve Češka a Smutný)",
+      "ico": "48118753",
+      "entity": "ak-portos",
+      "dossiers": [
+        "martin-sebestyan"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
+      "file": "/documents/registry/justice/48118753.json",
+      "mediaType": "application/json",
+      "sha256": "aa9879ad457876229ae56402bda379b65e564d640669ba4e1a0f31e304166887",
+      "found": true,
+      "filingCount": 40,
+      "documentCount": 40,
+      "pageCount": 694,
+      "documentBytes": 120775642,
+      "nonDigitizedCount": 0
+    },
+    {
+      "identifier": "justice-metadata-24722197",
+      "registry": "Sbírka listin – metadata",
+      "title": "Sbírka listin – Advokátní kancelář Šenkýř Pánik",
+      "ico": "24722197",
+      "entity": "senkyr-panik",
+      "dossiers": [
+        "tunde-bartha"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
+      "file": "/documents/registry/justice/24722197.json",
+      "mediaType": "application/json",
+      "sha256": "e326c572d3b1ab160f7a4d02238aacd7879090f0776725101468e9c4207071eb",
+      "found": true,
+      "filingCount": 44,
+      "documentCount": 46,
+      "pageCount": 116,
+      "documentBytes": 8043810,
       "nonDigitizedCount": 0
     },
     {
@@ -1954,6 +2449,27 @@
       "nonDigitizedCount": 0
     },
     {
+      "identifier": "justice-metadata-60449101",
+      "registry": "Sbírka listin – metadata",
+      "title": "Sbírka listin – Asociace ředitelů základních škol",
+      "ico": "60449101",
+      "entity": "asociace-reditelu-zs",
+      "dossiers": [
+        "robert-plaga"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
+      "file": "/documents/registry/justice/60449101.json",
+      "mediaType": "application/json",
+      "sha256": "c18322ed90645c9c226a8f7dfb072b9c49dd37c4e3e86fe47c46c07dde5cec68",
+      "found": true,
+      "filingCount": 14,
+      "documentCount": 14,
+      "pageCount": 50,
+      "documentBytes": 21721516,
+      "nonDigitizedCount": 0
+    },
+    {
       "identifier": "justice-metadata-01818899",
       "registry": "Sbírka listin – metadata",
       "title": "Sbírka listin – Aston Martin klub ČR, z.s.",
@@ -1972,6 +2488,27 @@
       "documentCount": 1,
       "pageCount": 4,
       "documentBytes": 141373,
+      "nonDigitizedCount": 0
+    },
+    {
+      "identifier": "justice-metadata-22419519",
+      "registry": "Sbírka listin – metadata",
+      "title": "Sbírka listin – BYD Automotive",
+      "ico": "22419519",
+      "entity": "byd-automotive",
+      "dossiers": [
+        "karel-havlicek"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
+      "file": "/documents/registry/justice/22419519.json",
+      "mediaType": "application/json",
+      "sha256": "fc53dcb63fb464e94aa5850da6424db1b75ec45fac935372e27b3eef537979a1",
+      "found": true,
+      "filingCount": 1,
+      "documentCount": 1,
+      "pageCount": 14,
+      "documentBytes": 3917337,
       "nonDigitizedCount": 0
     },
     {
@@ -2077,6 +2614,27 @@
       "documentCount": 150,
       "pageCount": 9407,
       "documentBytes": 506037313,
+      "nonDigitizedCount": 0
+    },
+    {
+      "identifier": "justice-metadata-45770743",
+      "registry": "Sbírka listin – metadata",
+      "title": "Sbírka listin – Česká komora autorizovaných inženýrů a techniků (ČKAIT)",
+      "ico": "45770743",
+      "entity": "ckait",
+      "dossiers": [
+        "karel-havlicek"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
+      "file": "/documents/registry/justice/45770743.json",
+      "mediaType": "application/json",
+      "sha256": "cb73e2275baa4577bfab44932a5c898ec7803f7b47ee5a2e0681ca597b3288e8",
+      "found": false,
+      "filingCount": 0,
+      "documentCount": 0,
+      "pageCount": 0,
+      "documentBytes": 0,
       "nonDigitizedCount": 0
     },
     {
@@ -2187,6 +2745,27 @@
       "nonDigitizedCount": 0
     },
     {
+      "identifier": "justice-metadata-68407700",
+      "registry": "Sbírka listin – metadata",
+      "title": "Sbírka listin – České vysoké učení technické v Praze (ČVUT)",
+      "ico": "68407700",
+      "entity": "cvut",
+      "dossiers": [
+        "karel-havlicek"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
+      "file": "/documents/registry/justice/68407700.json",
+      "mediaType": "application/json",
+      "sha256": "05015bd419157901d655b54e3fcb823957ffe67d7c0f51f104d1f86eb082f22a",
+      "found": false,
+      "filingCount": 0,
+      "documentCount": 0,
+      "pageCount": 0,
+      "documentBytes": 0,
+      "nonDigitizedCount": 0
+    },
+    {
       "identifier": "justice-metadata-45245053",
       "registry": "Sbírka listin – metadata",
       "title": "Sbírka listin – Český rozhlas",
@@ -2229,6 +2808,27 @@
       "nonDigitizedCount": 0
     },
     {
+      "identifier": "justice-metadata-05140544",
+      "registry": "Sbírka listin – metadata",
+      "title": "Sbírka listin – Demagog.cz",
+      "ico": "05140544",
+      "entity": "demagog-cz",
+      "dossiers": [
+        "martin-sebestyan"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
+      "file": "/documents/registry/justice/05140544.json",
+      "mediaType": "application/json",
+      "sha256": "1468d10ca2a288bc6683c7b1538c959a69f4bdcb4c38be8f0e01868035622ce0",
+      "found": true,
+      "filingCount": 23,
+      "documentCount": 23,
+      "pageCount": 125,
+      "documentBytes": 28318919,
+      "nonDigitizedCount": 0
+    },
+    {
       "identifier": "justice-metadata-04771664",
       "registry": "Sbírka listin – metadata",
       "title": "Sbírka listin – DRILL COMPANY, s.r.o.",
@@ -2247,6 +2847,27 @@
       "documentCount": 21,
       "pageCount": 118,
       "documentBytes": 6902937,
+      "nonDigitizedCount": 0
+    },
+    {
+      "identifier": "justice-metadata-24706370",
+      "registry": "Sbírka listin – metadata",
+      "title": "Sbírka listin – EDUin",
+      "ico": "24706370",
+      "entity": "eduin",
+      "dossiers": [
+        "robert-plaga"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
+      "file": "/documents/registry/justice/24706370.json",
+      "mediaType": "application/json",
+      "sha256": "78f4313eb548c9bf63fc0d783fc8384074dca7ccfb3461e8006d51469e8dbe8e",
+      "found": true,
+      "filingCount": 72,
+      "documentCount": 72,
+      "pageCount": 862,
+      "documentBytes": 136776096,
       "nonDigitizedCount": 0
     },
     {
@@ -2357,6 +2978,27 @@
       "nonDigitizedCount": 0
     },
     {
+      "identifier": "justice-metadata-61388246",
+      "registry": "Sbírka listin – metadata",
+      "title": "Sbírka listin – Gymnázium Jana Keplera",
+      "ico": "61388246",
+      "entity": "gymnazium-jana-keplera",
+      "dossiers": [
+        "robert-plaga"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
+      "file": "/documents/registry/justice/61388246.json",
+      "mediaType": "application/json",
+      "sha256": "4cc45ea7141cba5e61ac726252942c9380edb4268670e6e3f737a261135cb393",
+      "found": false,
+      "filingCount": 0,
+      "documentCount": 0,
+      "pageCount": 0,
+      "documentBytes": 0,
+      "nonDigitizedCount": 0
+    },
+    {
       "identifier": "justice-metadata-01801261",
       "registry": "Sbírka listin – metadata",
       "title": "Sbírka listin – Hartenberg Holding",
@@ -2375,6 +3017,27 @@
       "documentCount": 42,
       "pageCount": 738,
       "documentBytes": 58002878,
+      "nonDigitizedCount": 0
+    },
+    {
+      "identifier": "justice-metadata-04472586",
+      "registry": "Sbírka listin – metadata",
+      "title": "Sbírka listin – Hemmont",
+      "ico": "04472586",
+      "entity": "hemmont",
+      "dossiers": [
+        "igor-cerveny"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
+      "file": "/documents/registry/justice/04472586.json",
+      "mediaType": "application/json",
+      "sha256": "c82f1f5c9035bdbd1bbb42bd079cd994772bcd68d8a2f1484fa7168d8fa89091",
+      "found": true,
+      "filingCount": 18,
+      "documentCount": 27,
+      "pageCount": 82,
+      "documentBytes": 11910638,
       "nonDigitizedCount": 0
     },
     {
@@ -2442,6 +3105,27 @@
       "nonDigitizedCount": 0
     },
     {
+      "identifier": "justice-metadata-24220345",
+      "registry": "Sbírka listin – metadata",
+      "title": "Sbírka listin – Institut Václava Klause",
+      "ico": "24220345",
+      "entity": "institut-vaclava-klause",
+      "dossiers": [
+        "macinka-turek"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
+      "file": "/documents/registry/justice/24220345.json",
+      "mediaType": "application/json",
+      "sha256": "199eb38f9fef75ed43e240ecd5a7e893a93a86bb838178f4066ab6acdcc83133",
+      "found": true,
+      "filingCount": 18,
+      "documentCount": 18,
+      "pageCount": 617,
+      "documentBytes": 50631816,
+      "nonDigitizedCount": 0
+    },
+    {
       "identifier": "justice-metadata-01680081",
       "registry": "Sbírka listin – metadata",
       "title": "Sbírka listin – Investigace.cz",
@@ -2502,6 +3186,27 @@
       "documentCount": 0,
       "pageCount": 0,
       "documentBytes": 0,
+      "nonDigitizedCount": 0
+    },
+    {
+      "identifier": "justice-metadata-49282778",
+      "registry": "Sbírka listin – metadata",
+      "title": "Sbírka listin – JWT (J. Walter Thompson)",
+      "ico": "49282778",
+      "entity": "jwt",
+      "dossiers": [
+        "oto-klempir"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
+      "file": "/documents/registry/justice/49282778.json",
+      "mediaType": "application/json",
+      "sha256": "3f261cfd8706a3e29190c87541c4cc031761a05e2660613b18ae2194b375e383",
+      "found": true,
+      "filingCount": 34,
+      "documentCount": 42,
+      "pageCount": 174,
+      "documentBytes": 6867054,
       "nonDigitizedCount": 0
     },
     {
@@ -3068,6 +3773,27 @@
       "nonDigitizedCount": 0
     },
     {
+      "identifier": "justice-metadata-07460121",
+      "registry": "Sbírka listin – metadata",
+      "title": "Sbírka listin – Národní sportovní agentura (NSA)",
+      "ico": "07460121",
+      "entity": "narodni-sportovni-agentura",
+      "dossiers": [
+        "boris-stastny"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
+      "file": "/documents/registry/justice/07460121.json",
+      "mediaType": "application/json",
+      "sha256": "ca4faab39e5c8c60e82914bb9cbdc59c3574929b41cfe2fc76021f35f99461c1",
+      "found": false,
+      "filingCount": 0,
+      "documentCount": 0,
+      "pageCount": 0,
+      "documentBytes": 0,
+      "nonDigitizedCount": 0
+    },
+    {
       "identifier": "justice-metadata-00023752",
       "registry": "Sbírka listin – metadata",
       "title": "Sbírka listin – Národní ústav duševního zdraví",
@@ -3333,6 +4059,27 @@
       "nonDigitizedCount": 0
     },
     {
+      "identifier": "justice-metadata-49241494",
+      "registry": "Sbírka listin – metadata",
+      "title": "Sbírka listin – Podpůrný a garanční rolnický a lesnický fond (PGRLF)",
+      "ico": "49241494",
+      "entity": "pgrlf",
+      "dossiers": [
+        "andrej-babis"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
+      "file": "/documents/registry/justice/49241494.json",
+      "mediaType": "application/json",
+      "sha256": "8e4e4b00e30c4d0cfce89ed4fb40ca09185710d524fa21b0479cee3444a4b83b",
+      "found": true,
+      "filingCount": 174,
+      "documentCount": 174,
+      "pageCount": 3202,
+      "documentBytes": 209685565,
+      "nonDigitizedCount": 0
+    },
+    {
       "identifier": "justice-metadata-70890005",
       "registry": "Sbírka listin – metadata",
       "title": "Sbírka listin – Povodí Labe, státní podnik",
@@ -3417,6 +4164,48 @@
       "nonDigitizedCount": 0
     },
     {
+      "identifier": "justice-metadata-24099333",
+      "registry": "Sbírka listin – metadata",
+      "title": "Sbírka listin – RSVP Trust",
+      "ico": "24099333",
+      "entity": "rsvp-trust",
+      "dossiers": [
+        "andrej-babis"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
+      "file": "/documents/registry/justice/24099333.json",
+      "mediaType": "application/json",
+      "sha256": "aac08ef08ef2a535972523547fd6c7d458cf6eead03685f25ae0a9549723a028",
+      "found": true,
+      "filingCount": 4,
+      "documentCount": 3,
+      "pageCount": 7,
+      "documentBytes": 216683,
+      "nonDigitizedCount": 0
+    },
+    {
+      "identifier": "justice-metadata-67981801",
+      "registry": "Sbírka listin – metadata",
+      "title": "Sbírka listin – Ředitelství vodních cest",
+      "ico": "67981801",
+      "entity": "reditelstvi-vodnich-cest",
+      "dossiers": [
+        "ivan-bednarik"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
+      "file": "/documents/registry/justice/67981801.json",
+      "mediaType": "application/json",
+      "sha256": "20550ce605ba1779b7ad86b4fe2e745e13d1aa74f7d950ce743008e96da2623d",
+      "found": false,
+      "filingCount": 0,
+      "documentCount": 0,
+      "pageCount": 0,
+      "documentBytes": 0,
+      "nonDigitizedCount": 0
+    },
+    {
       "identifier": "justice-metadata-27699293",
       "registry": "Sbírka listin – metadata",
       "title": "Sbírka listin – Sady CZ",
@@ -3435,6 +4224,27 @@
       "documentCount": 93,
       "pageCount": 1275,
       "documentBytes": 96502634,
+      "nonDigitizedCount": 0
+    },
+    {
+      "identifier": "justice-metadata-17048826",
+      "registry": "Sbírka listin – metadata",
+      "title": "Sbírka listin – Sdružení automobilového průmyslu (AutoSAP)",
+      "ico": "17048826",
+      "entity": "autosap",
+      "dossiers": [
+        "karel-havlicek"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
+      "file": "/documents/registry/justice/17048826.json",
+      "mediaType": "application/json",
+      "sha256": "d854c5bbccf290c7f98ce72a2e1d8c94ba3243ecf09a007c32695d49758d2ccb",
+      "found": true,
+      "filingCount": 36,
+      "documentCount": 36,
+      "pageCount": 196,
+      "documentBytes": 73746129,
       "nonDigitizedCount": 0
     },
     {
@@ -3522,6 +4332,48 @@
       "nonDigitizedCount": 0
     },
     {
+      "identifier": "justice-metadata-61505463",
+      "registry": "Sbírka listin – metadata",
+      "title": "Sbírka listin – Space Plan",
+      "ico": "61505463",
+      "entity": "space-plan",
+      "dossiers": [
+        "igor-cerveny"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
+      "file": "/documents/registry/justice/61505463.json",
+      "mediaType": "application/json",
+      "sha256": "355209ceeec8f0c658c18dd64e94896bbaee68b91053042e92946eb48bb6edb9",
+      "found": true,
+      "filingCount": 40,
+      "documentCount": 50,
+      "pageCount": 249,
+      "documentBytes": 11064147,
+      "nonDigitizedCount": 0
+    },
+    {
+      "identifier": "justice-metadata-09871713",
+      "registry": "Sbírka listin – metadata",
+      "title": "Sbírka listin – Společnost pro obranu svobody projevu",
+      "ico": "09871713",
+      "entity": "spolecnost-pro-obranu-svobody-projevu",
+      "dossiers": [
+        "tomio-okamura"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
+      "file": "/documents/registry/justice/09871713.json",
+      "mediaType": "application/json",
+      "sha256": "58361ca047c86d74da940eb14c9e24799c8da332459c956b5a30fdb6e60b079c",
+      "found": true,
+      "filingCount": 9,
+      "documentCount": 9,
+      "pageCount": 93,
+      "documentBytes": 44064568,
+      "nonDigitizedCount": 0
+    },
+    {
       "identifier": "justice-metadata-70994234",
       "registry": "Sbírka listin – metadata",
       "title": "Sbírka listin – Správa železnic",
@@ -3583,6 +4435,27 @@
       "mediaType": "application/json",
       "sha256": "2bfe9b1aaa5225a9b7ab09c680e12adf1750625d3b19259e1de148d6550dc95d",
       "found": true,
+      "filingCount": 0,
+      "documentCount": 0,
+      "pageCount": 0,
+      "documentBytes": 0,
+      "nonDigitizedCount": 0
+    },
+    {
+      "identifier": "justice-metadata-70856508",
+      "registry": "Sbírka listin – metadata",
+      "title": "Sbírka listin – Státní fond dopravní infrastruktury (SFDI)",
+      "ico": "70856508",
+      "entity": "sfdi",
+      "dossiers": [
+        "ivan-bednarik"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
+      "file": "/documents/registry/justice/70856508.json",
+      "mediaType": "application/json",
+      "sha256": "973f7a216ecd94833e6152cdea415b78706cf57a65690aa41adef06195b0e620",
+      "found": false,
       "filingCount": 0,
       "documentCount": 0,
       "pageCount": 0,
@@ -3763,6 +4636,69 @@
       "nonDigitizedCount": 0
     },
     {
+      "identifier": "justice-metadata-06616275",
+      "registry": "Sbírka listin – metadata",
+      "title": "Sbírka listin – Učitelská platforma",
+      "ico": "06616275",
+      "entity": "ucitelska-platforma",
+      "dossiers": [
+        "robert-plaga"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
+      "file": "/documents/registry/justice/06616275.json",
+      "mediaType": "application/json",
+      "sha256": "7f38e685e86e475baa2bccfc172a321c25d1ffe6446a42925b9433e0e72bdf5e",
+      "found": true,
+      "filingCount": 20,
+      "documentCount": 20,
+      "pageCount": 78,
+      "documentBytes": 7558096,
+      "nonDigitizedCount": 0
+    },
+    {
+      "identifier": "justice-metadata-00418005",
+      "registry": "Sbírka listin – metadata",
+      "title": "Sbírka listin – Uměleckohistorická společnost (UHS)",
+      "ico": "00418005",
+      "entity": "umeleckohistoricka-spolecnost",
+      "dossiers": [
+        "oto-klempir"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
+      "file": "/documents/registry/justice/00418005.json",
+      "mediaType": "application/json",
+      "sha256": "1439b066508ad19fe8b8836e7d55377bb34a4d343d6480bae43f3c4e4167c6e2",
+      "found": true,
+      "filingCount": 19,
+      "documentCount": 19,
+      "pageCount": 32,
+      "documentBytes": 6542929,
+      "nonDigitizedCount": 0
+    },
+    {
+      "identifier": "justice-metadata-63833239",
+      "registry": "Sbírka listin – metadata",
+      "title": "Sbírka listin – Unie státních zástupců",
+      "ico": "63833239",
+      "entity": "unie-statnich-zastupcu",
+      "dossiers": [
+        "tomio-okamura"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
+      "file": "/documents/registry/justice/63833239.json",
+      "mediaType": "application/json",
+      "sha256": "2b5946ba23c0dd965024a792eea518d9ace47fb9d897561469d34529d2afa9df",
+      "found": true,
+      "filingCount": 12,
+      "documentCount": 12,
+      "pageCount": 36,
+      "documentBytes": 4738242,
+      "nonDigitizedCount": 0
+    },
+    {
       "identifier": "justice-metadata-00216208",
       "registry": "Sbírka listin – metadata",
       "title": "Sbírka listin – Univerzita Karlova",
@@ -3777,6 +4713,27 @@
       "mediaType": "application/json",
       "sha256": "f945bfb567e66e5074d3839af97011fd220e8e3379a4ec432d86657d2f3af70b",
       "found": true,
+      "filingCount": 0,
+      "documentCount": 0,
+      "pageCount": 0,
+      "documentBytes": 0,
+      "nonDigitizedCount": 0
+    },
+    {
+      "identifier": "justice-metadata-05553466",
+      "registry": "Sbírka listin – metadata",
+      "title": "Sbírka listin – Úřad pro dohled nad hospodařením politických stran a politických hnutí (ÚDHPSH)",
+      "ico": "05553466",
+      "entity": "udhpsh",
+      "dossiers": [
+        "macinka-turek"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
+      "file": "/documents/registry/justice/05553466.json",
+      "mediaType": "application/json",
+      "sha256": "35ef010c0ed1fe81e01bc8df44b3225276bb037e40e81b19996b7ebd8f45ed6b",
+      "found": false,
       "filingCount": 0,
       "documentCount": 0,
       "pageCount": 0,
@@ -3913,6 +4870,27 @@
       "nonDigitizedCount": 0
     },
     {
+      "identifier": "justice-metadata-61384399",
+      "registry": "Sbírka listin – metadata",
+      "title": "Sbírka listin – Vysoká škola ekonomická v Praze (VŠE)",
+      "ico": "61384399",
+      "entity": "vse-praha",
+      "dossiers": [
+        "karel-havlicek"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
+      "file": "/documents/registry/justice/61384399.json",
+      "mediaType": "application/json",
+      "sha256": "8251c40ae568e79d4649e6764e7c55dfa195f0bb6a67aad6ed6de0281d15788a",
+      "found": false,
+      "filingCount": 0,
+      "documentCount": 0,
+      "pageCount": 0,
+      "documentBytes": 0,
+      "nonDigitizedCount": 0
+    },
+    {
       "identifier": "justice-metadata-00027162",
       "registry": "Sbírka listin – metadata",
       "title": "Sbírka listin – Výzkumný ústav veterinárního lékařství, v. v. i.",
@@ -3931,6 +4909,27 @@
       "documentCount": 0,
       "pageCount": 0,
       "documentBytes": 0,
+      "nonDigitizedCount": 0
+    },
+    {
+      "identifier": "justice-metadata-26417171",
+      "registry": "Sbírka listin – metadata",
+      "title": "Sbírka listin – Young & Rubicam",
+      "ico": "26417171",
+      "entity": "young-rubicam",
+      "dossiers": [
+        "oto-klempir"
+      ],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
+      "file": "/documents/registry/justice/26417171.json",
+      "mediaType": "application/json",
+      "sha256": "92df58b3f8e904ae0c6f2438bdefe70f4014f44b0a45254ecc33cf83c7d9478c",
+      "found": true,
+      "filingCount": 58,
+      "documentCount": 58,
+      "pageCount": 504,
+      "documentBytes": 39392212,
       "nonDigitizedCount": 0
     },
     {
@@ -4127,13 +5126,6 @@
       ]
     },
     {
-      "entity": "acri",
-      "title": "ACRI — Asociace podniků českého železničního průmyslu",
-      "dossiers": [
-        "ivan-bednarik"
-      ]
-    },
-    {
       "entity": "agrarni-komora",
       "title": "Agrární komora ČR",
       "dossiers": [
@@ -4145,13 +5137,6 @@
       "title": "AGROFERT Hungária",
       "dossiers": [
         "tunde-bartha"
-      ]
-    },
-    {
-      "entity": "ak-portos",
-      "title": "Advokátní kancelář Portos (dříve Češka a Smutný)",
-      "dossiers": [
-        "martin-sebestyan"
       ]
     },
     {
@@ -4183,24 +5168,10 @@
       ]
     },
     {
-      "entity": "asociace-reditelu-zs",
-      "title": "Asociace ředitelů základních škol",
-      "dossiers": [
-        "robert-plaga"
-      ]
-    },
-    {
       "entity": "asociace-soukromeho-zemedelstvi",
       "title": "Asociace soukromého zemědělství ČR",
       "dossiers": [
         "martin-sebestyan"
-      ]
-    },
-    {
-      "entity": "autosap",
-      "title": "Sdružení automobilového průmyslu (AutoSAP)",
-      "dossiers": [
-        "karel-havlicek"
       ]
     },
     {
@@ -4236,13 +5207,6 @@
       "title": "BRKI a NRKI",
       "dossiers": [
         "james-quick"
-      ]
-    },
-    {
-      "entity": "byd-automotive",
-      "title": "BYD Automotive",
-      "dossiers": [
-        "karel-havlicek"
       ]
     },
     {
@@ -4295,27 +5259,6 @@
       ]
     },
     {
-      "entity": "ckait",
-      "title": "Česká komora autorizovaných inženýrů a techniků (ČKAIT)",
-      "dossiers": [
-        "karel-havlicek"
-      ]
-    },
-    {
-      "entity": "cvut",
-      "title": "České vysoké učení technické v Praze (ČVUT)",
-      "dossiers": [
-        "karel-havlicek"
-      ]
-    },
-    {
-      "entity": "demagog-cz",
-      "title": "Demagog.cz",
-      "dossiers": [
-        "martin-sebestyan"
-      ]
-    },
-    {
       "entity": "denik-n",
       "title": "Deník N",
       "dossiers": [
@@ -4348,13 +5291,6 @@
       "title": "DG MOVE (Generální ředitelství EK pro mobilitu a dopravu)",
       "dossiers": [
         "ivan-bednarik"
-      ]
-    },
-    {
-      "entity": "eduin",
-      "title": "EDUin",
-      "dossiers": [
-        "robert-plaga"
       ]
     },
     {
@@ -4455,22 +5391,8 @@
       ]
     },
     {
-      "entity": "gymnazium-jana-keplera",
-      "title": "Gymnázium Jana Keplera",
-      "dossiers": [
-        "robert-plaga"
-      ]
-    },
-    {
       "entity": "hammerton-capital",
       "title": "Hammerton Capital Co. Limited",
-      "dossiers": [
-        "igor-cerveny"
-      ]
-    },
-    {
-      "entity": "hemmont",
-      "title": "Hemmont",
       "dossiers": [
         "igor-cerveny"
       ]
@@ -4504,22 +5426,8 @@
       ]
     },
     {
-      "entity": "institut-vaclava-klause",
-      "title": "Institut Václava Klause",
-      "dossiers": [
-        "macinka-turek"
-      ]
-    },
-    {
       "entity": "jar-kapela",
       "title": "J.A.R.",
-      "dossiers": [
-        "oto-klempir"
-      ]
-    },
-    {
-      "entity": "jwt",
-      "title": "JWT (J. Walter Thompson)",
       "dossiers": [
         "oto-klempir"
       ]
@@ -4725,13 +5633,6 @@
       ]
     },
     {
-      "entity": "narodni-sportovni-agentura",
-      "title": "Národní sportovní agentura (NSA)",
-      "dossiers": [
-        "boris-stastny"
-      ]
-    },
-    {
       "entity": "national-war-college",
       "title": "National War College (Washington)",
       "dossiers": [
@@ -4835,13 +5736,6 @@
       ]
     },
     {
-      "entity": "pgrlf",
-      "title": "Podpůrný a garanční rolnický a lesnický fond (PGRLF)",
-      "dossiers": [
-        "andrej-babis"
-      ]
-    },
-    {
       "entity": "plaud",
       "title": "Plaud",
       "dossiers": [
@@ -4885,13 +5779,6 @@
       ]
     },
     {
-      "entity": "reditelstvi-vodnich-cest",
-      "title": "Ředitelství vodních cest",
-      "dossiers": [
-        "ivan-bednarik"
-      ]
-    },
-    {
       "entity": "rozpoctovy-vybor-psp",
       "title": "Rozpočtový výbor Poslanecké sněmovny",
       "dossiers": [
@@ -4903,13 +5790,6 @@
       "title": "Ředitelství silnic a dálnic (ŘSD)",
       "dossiers": [
         "ivan-bednarik"
-      ]
-    },
-    {
-      "entity": "rsvp-trust",
-      "title": "RSVP Trust",
-      "dossiers": [
-        "andrej-babis"
       ]
     },
     {
@@ -4931,20 +5811,6 @@
       ]
     },
     {
-      "entity": "senkyr-panik",
-      "title": "Advokátní kancelář Šenkýř Pánik",
-      "dossiers": [
-        "tunde-bartha"
-      ]
-    },
-    {
-      "entity": "sfdi",
-      "title": "Státní fond dopravní infrastruktury (SFDI)",
-      "dossiers": [
-        "ivan-bednarik"
-      ]
-    },
-    {
       "entity": "shenzhen-smart-connect-technology",
       "title": "Shenzhen Smart Connect Technology",
       "dossiers": [
@@ -4959,22 +5825,8 @@
       ]
     },
     {
-      "entity": "space-plan",
-      "title": "Space Plan",
-      "dossiers": [
-        "igor-cerveny"
-      ]
-    },
-    {
       "entity": "spd",
       "title": "SPD",
-      "dossiers": [
-        "tomio-okamura"
-      ]
-    },
-    {
-      "entity": "spolecnost-pro-obranu-svobody-projevu",
-      "title": "Společnost pro obranu svobody projevu",
       "dossiers": [
         "tomio-okamura"
       ]
@@ -5040,38 +5892,10 @@
       ]
     },
     {
-      "entity": "ucitelska-platforma",
-      "title": "Učitelská platforma",
-      "dossiers": [
-        "robert-plaga"
-      ]
-    },
-    {
-      "entity": "udhpsh",
-      "title": "Úřad pro dohled nad hospodařením politických stran a politických hnutí (ÚDHPSH)",
-      "dossiers": [
-        "macinka-turek"
-      ]
-    },
-    {
-      "entity": "umeleckohistoricka-spolecnost",
-      "title": "Uměleckohistorická společnost (UHS)",
-      "dossiers": [
-        "oto-klempir"
-      ]
-    },
-    {
       "entity": "unie-rodicu",
       "title": "Unie rodičů",
       "dossiers": [
         "robert-plaga"
-      ]
-    },
-    {
-      "entity": "unie-statnich-zastupcu",
-      "title": "Unie státních zástupců",
-      "dossiers": [
-        "tomio-okamura"
       ]
     },
     {
@@ -5141,13 +5965,6 @@
       ]
     },
     {
-      "entity": "vse-praha",
-      "title": "Vysoká škola ekonomická v Praze (VŠE)",
-      "dossiers": [
-        "karel-havlicek"
-      ]
-    },
-    {
       "entity": "vybor-pro-obranu-psp",
       "title": "Výbor pro obranu Poslanecké sněmovny",
       "dossiers": [
@@ -5180,13 +5997,6 @@
       "title": "Všeobecná zdravotní pojišťovna (VZP)",
       "dossiers": [
         "adam-vojtech"
-      ]
-    },
-    {
-      "entity": "young-rubicam",
-      "title": "Young & Rubicam",
-      "dossiers": [
-        "oto-klempir"
       ]
     },
     {

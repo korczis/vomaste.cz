@@ -1,0 +1,254 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "17048826"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "17048826",
+        "obchodniJmeno": "Sdružení automobilového průmyslu",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 43,
+          "nazevSpravnihoObvodu": "Praha 4",
+          "kodMestskehoObvodu": 43,
+          "nazevMestskehoObvodu": "Praha 4",
+          "kodMestskeCastiObvodu": 500119,
+          "kodUlice": 444375,
+          "nazevMestskeCastiObvodu": "Praha 4",
+          "nazevUlice": "Budějovická",
+          "cisloDomovni": 1550,
+          "kodCastiObce": 490130,
+          "cisloOrientacni": 15,
+          "cisloOrientacniPismeno": "a",
+          "nazevCastiObce": "Michle",
+          "kodAdresnihoMista": 42406901,
+          "psc": 14000,
+          "textovaAdresa": "Budějovická 1550/15a, Michle, 14000 Praha 4",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "706",
+        "pravniFormaRos": "706",
+        "financniUrad": "004",
+        "datumVzniku": "1992-06-01",
+        "datumAktualizace": "2026-07-14",
+        "dic": "CZ17048826",
+        "icoId": "17048826",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Budějovická 1550/15a",
+          "radekAdresy2": "Michle",
+          "radekAdresy3": "14000 Praha 4"
+        },
+        "czNace2008": [
+          "8230",
+          "9499"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "AKTIVNI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "AKTIVNI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Sdružení automobilového průmyslu",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 43,
+                  "nazevSpravnihoObvodu": "Praha 4",
+                  "kodMestskehoObvodu": 43,
+                  "nazevMestskehoObvodu": "Praha 4",
+                  "kodMestskeCastiObvodu": 500119,
+                  "kodUlice": 444375,
+                  "nazevMestskeCastiObvodu": "Praha 4",
+                  "nazevUlice": "Budějovická",
+                  "cisloDomovni": 1550,
+                  "kodCastiObce": 490130,
+                  "cisloOrientacni": 15,
+                  "cisloOrientacniPismeno": "a",
+                  "nazevCastiObce": "Michle",
+                  "kodAdresnihoMista": 42406901,
+                  "psc": 14000,
+                  "textovaAdresa": "Budějovická 1550/15a, Michle, 14000 Praha 4",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "706",
+            "pravniFormaRos": "706",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Sdružení automobilového průmyslu",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 43,
+                  "nazevSpravnihoObvodu": "Praha 4",
+                  "kodMestskehoObvodu": 43,
+                  "nazevMestskehoObvodu": "Praha 4",
+                  "kodMestskeCastiObvodu": 500119,
+                  "kodUlice": 444375,
+                  "nazevMestskeCastiObvodu": "Praha 4",
+                  "nazevUlice": "Budějovická",
+                  "cisloDomovni": 1550,
+                  "kodCastiObce": 490130,
+                  "cisloOrientacni": 15,
+                  "cisloOrientacniPismeno": "a",
+                  "nazevCastiObce": "Michle",
+                  "kodAdresnihoMista": 42406901,
+                  "psc": 14000,
+                  "textovaAdresa": "Budějovická 1550/15a, Michle, 14000 Praha 4",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "706",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Sdružení automobilového průmyslu",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 43,
+                  "nazevSpravnihoObvodu": "Praha 4",
+                  "kodMestskehoObvodu": 43,
+                  "nazevMestskehoObvodu": "Praha 4",
+                  "kodMestskeCastiObvodu": 500119,
+                  "kodUlice": 444375,
+                  "nazevMestskeCastiObvodu": "Praha 4",
+                  "nazevUlice": "Budějovická",
+                  "cisloDomovni": 1550,
+                  "kodCastiObce": 490130,
+                  "cisloOrientacni": 15,
+                  "cisloOrientacniPismeno": "a",
+                  "nazevCastiObce": "Michle",
+                  "kodAdresnihoMista": 42406901,
+                  "psc": 14000,
+                  "textovaAdresa": "Budějovická 1550/15a, Michle, 14000 Praha 4",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "706",
+            "datovyZdroj": "rzp"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Sdružení automobilového průmyslu",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 43,
+                  "nazevSpravnihoObvodu": "Praha 4",
+                  "kodMestskehoObvodu": 43,
+                  "nazevMestskehoObvodu": "Praha 4",
+                  "kodMestskeCastiObvodu": 500119,
+                  "kodUlice": 444375,
+                  "nazevMestskeCastiObvodu": "Praha 4",
+                  "nazevUlice": "Budějovická",
+                  "cisloDomovni": 1550,
+                  "kodCastiObce": 490130,
+                  "cisloOrientacni": 15,
+                  "cisloOrientacniPismeno": "a",
+                  "nazevCastiObce": "Michle",
+                  "kodAdresnihoMista": 42406901,
+                  "psc": 14000,
+                  "textovaAdresa": "Budějovická 1550/15a, Michle, 14000 Praha 4",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "706",
+            "spisovaZnacka": "L 67474/MSPH",
+            "datovyZdroj": "vr"
+          }
+        ],
+        "czNace": [
+          "9499",
+          "82300"
+        ],
+        "subRegistrSzr": "szr"
+      }
+    ]
+  }
+}

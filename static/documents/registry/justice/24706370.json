@@ -1,0 +1,1016 @@
+{
+  "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
+  "retrieved": "2026-08-08",
+  "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/24706370",
+  "status": "OK",
+  "subject": {
+    "ico": "24706370",
+    "businessName": "EDUin, o.p.s.",
+    "registerReference": "O 738/MSPH"
+  },
+  "filings": [
+    {
+      "referenceLabel": "O 738/SL1/MSPH",
+      "documentType": "zakladatelské dokumenty",
+      "createdAt": "17-05-2010",
+      "filedAt": "06-08-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 92606
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL2/MSPH",
+      "documentType": "podpisové vzory",
+      "createdAt": "23-06-2010",
+      "filedAt": "06-08-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 13759
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL3/MSPH",
+      "documentType": "podpisové vzory 4x",
+      "createdAt": "24-06-2010",
+      "filedAt": "06-08-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 48384
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL4/MSPH",
+      "documentType": "podpisové vzory",
+      "createdAt": "25-06-2010",
+      "filedAt": "06-08-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 11298
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL5/MSPH",
+      "documentType": "zakladatelské dokumenty",
+      "createdAt": "20-06-2011",
+      "receivedByCourtAt": "29-07-2013",
+      "filedAt": "20-08-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 60740
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL6/MSPH",
+      "documentType": "zakladatelské dokumenty",
+      "createdAt": "17-05-2010",
+      "receivedByCourtAt": "29-07-2013",
+      "filedAt": "20-08-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 56969
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL7/MSPH",
+      "documentType": "ostatní jmenování do funkce ",
+      "createdAt": "15-09-2010",
+      "receivedByCourtAt": "14-10-2013",
+      "filedAt": "05-12-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 20429
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL8/MSPH",
+      "documentType": "ostatní rozhodnutí",
+      "createdAt": "25-05-2014",
+      "receivedByCourtAt": "16-06-2015",
+      "filedAt": "01-09-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 129188
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL9/MSPH",
+      "documentType": "účetní závěrka [2014] rozvaha",
+      "createdAt": "31-12-2014",
+      "receivedByCourtAt": "13-05-2016",
+      "filedAt": "19-05-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 292807
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL10/MSPH",
+      "documentType": "účetní závěrka [2014] VZaZ",
+      "createdAt": "31-12-2014",
+      "receivedByCourtAt": "13-05-2016",
+      "filedAt": "19-05-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 288124
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL11/MSPH",
+      "documentType": "účetní závěrka [2010], výroční zpráva [2010]",
+      "createdAt": "31-12-2010",
+      "receivedByCourtAt": "23-05-2016",
+      "filedAt": "01-06-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 17,
+          "sizeBytes": 549298
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL12/MSPH",
+      "documentType": "účetní závěrka [2013], výroční zpráva [2013]",
+      "createdAt": "31-12-2013",
+      "receivedByCourtAt": "23-05-2016",
+      "filedAt": "01-06-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 18,
+          "sizeBytes": 3277862
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL13/MSPH",
+      "documentType": "účetní závěrka [2014], výroční zpráva [2014]",
+      "createdAt": "31-12-2014",
+      "receivedByCourtAt": "23-05-2016",
+      "filedAt": "01-06-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 17,
+          "sizeBytes": 2616352
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL14/MSPH",
+      "documentType": "účetní závěrka [2012], výroční zpráva [2012]",
+      "createdAt": "31-12-2012",
+      "receivedByCourtAt": "23-05-2016",
+      "filedAt": "01-06-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 14,
+          "sizeBytes": 1957192
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL15/MSPH",
+      "documentType": "účetní závěrka [2011], výroční zpráva [2011]",
+      "createdAt": "31-12-2011",
+      "receivedByCourtAt": "23-05-2016",
+      "filedAt": "01-06-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 13,
+          "sizeBytes": 4270214
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL16/MSPH",
+      "documentType": "účetní závěrka [2015], výroční zpráva [2015], zpráva auditora [2015]",
+      "createdAt": "31-12-2015",
+      "receivedByCourtAt": "02-08-2016",
+      "filedAt": "05-08-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 32,
+          "sizeBytes": 5969198
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL17/MSPH",
+      "documentType": "ostatní rozhodnutí o odvolání a jmenování SR",
+      "createdAt": "16-05-2011",
+      "receivedByCourtAt": "24-08-2016",
+      "filedAt": "17-10-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 48079
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL18/MSPH",
+      "documentType": "ostatní rozhodnutí o odvolání a jmenování SR a DR",
+      "createdAt": "03-08-2013",
+      "receivedByCourtAt": "24-08-2016",
+      "filedAt": "17-10-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 104267
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL19/MSPH",
+      "documentType": "ostatní rozhodnutí o odvolání a jmenování SR",
+      "createdAt": "16-05-2014",
+      "receivedByCourtAt": "24-08-2016",
+      "filedAt": "17-10-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 48588
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL20/MSPH",
+      "documentType": "ostatní rozhodnutí o odvolání a jmenování DR",
+      "createdAt": "27-08-2015",
+      "receivedByCourtAt": "24-08-2016",
+      "filedAt": "17-10-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 49976
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL21/MSPH",
+      "documentType": "ostatní rozhodnutí o odvolání a jmenování SR a DR",
+      "createdAt": "20-06-2016",
+      "receivedByCourtAt": "24-08-2016",
+      "filedAt": "17-10-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 104200
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL22/MSPH",
+      "documentType": "účetní závěrka [2016], výroční zpráva [2016], zpráva auditora [2016]",
+      "createdAt": "31-12-2016",
+      "receivedByCourtAt": "07-07-2017",
+      "filedAt": "01-08-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 43,
+          "sizeBytes": 9773740
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL23/MSPH",
+      "documentType": "účetní závěrka [2016], zpráva auditora [2016]",
+      "createdAt": "31-12-2016",
+      "receivedByCourtAt": "07-07-2017",
+      "filedAt": "01-08-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 34,
+          "sizeBytes": 13637590
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL24/MSPH",
+      "documentType": "účetní závěrka [2016] rozvaha",
+      "createdAt": "31-12-2016",
+      "receivedByCourtAt": "14-07-2017",
+      "filedAt": "11-08-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 291411
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL25/MSPH",
+      "documentType": "účetní závěrka [2016] příloha",
+      "createdAt": "31-12-2016",
+      "receivedByCourtAt": "14-07-2017",
+      "filedAt": "11-08-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 725521
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL26/MSPH",
+      "documentType": "ostatní usnesení správní rady",
+      "createdAt": "14-12-2017",
+      "receivedByCourtAt": "02-01-2018",
+      "filedAt": "09-02-2018",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 459454
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL27/MSPH",
+      "documentType": "účetní závěrka [2017] rozvaha",
+      "createdAt": "31-12-2017",
+      "receivedByCourtAt": "12-07-2018",
+      "filedAt": "25-07-2018",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 291369
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL28/MSPH",
+      "documentType": "účetní závěrka [2017] vzz",
+      "createdAt": "31-12-2017",
+      "receivedByCourtAt": "12-07-2018",
+      "filedAt": "25-07-2018",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 284275
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL29/MSPH",
+      "documentType": "účetní závěrka [2017] příloha",
+      "createdAt": "31-12-2017",
+      "receivedByCourtAt": "24-07-2018",
+      "filedAt": "01-08-2018",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 437826
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL30/MSPH",
+      "documentType": "rozhod. o statut. orgánu zápis ze zasedání správní rady",
+      "createdAt": "29-11-2018",
+      "receivedByCourtAt": "09-01-2019",
+      "filedAt": "08-02-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 47692
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL31/MSPH",
+      "documentType": "účetní závěrka [2017], výroční zpráva [2017], zpráva auditora [2017]",
+      "createdAt": "31-12-2017",
+      "receivedByCourtAt": "01-08-2019",
+      "filedAt": "14-08-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 44,
+          "sizeBytes": 5655659
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL32/MSPH",
+      "documentType": "účetní závěrka [2018], výroční zpráva [2018], zpráva auditora [2018]",
+      "createdAt": "31-12-2018",
+      "receivedByCourtAt": "01-08-2019",
+      "filedAt": "14-08-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 54,
+          "sizeBytes": 6556645
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL34/MSPH",
+      "documentType": "účetní závěrka [2018] rozvaha",
+      "createdAt": "31-12-2018",
+      "receivedByCourtAt": "06-08-2019",
+      "filedAt": "19-08-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 291550
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL35/MSPH",
+      "documentType": "ostatní jmenovací dekret 4x",
+      "receivedByCourtAt": "04-10-2019",
+      "filedAt": "30-10-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 43680
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL36/MSPH",
+      "documentType": "ostatní jmenování do funkce",
+      "createdAt": "20-06-2019",
+      "receivedByCourtAt": "23-10-2019",
+      "filedAt": "29-11-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 171179
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL37/MSPH",
+      "documentType": "zakladatelské dokumenty",
+      "createdAt": "06-12-2019",
+      "receivedByCourtAt": "16-12-2019",
+      "filedAt": "18-12-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 8,
+          "sizeBytes": 425115
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL38/MSPH",
+      "documentType": "ostatní rozhodnutí SR",
+      "createdAt": "17-12-2019",
+      "receivedByCourtAt": "14-01-2020",
+      "filedAt": "05-02-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 19855
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL39/MSPH",
+      "documentType": "zakladatelské dokumenty zakládací listina",
+      "createdAt": "30-01-2020",
+      "receivedByCourtAt": "15-02-2020",
+      "filedAt": "18-02-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 8,
+          "sizeBytes": 8950292
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL40/MSPH",
+      "documentType": "účetní závěrka [2019] VZaZ",
+      "createdAt": "31-12-2019",
+      "receivedByCourtAt": "27-07-2020",
+      "filedAt": "31-07-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 507719
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL41/MSPH",
+      "documentType": "účetní závěrka [2019] rozvaha",
+      "createdAt": "31-12-2019",
+      "receivedByCourtAt": "27-07-2020",
+      "filedAt": "31-07-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 515988
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL43/MSPH",
+      "documentType": "účetní závěrka [2019] rozvaha",
+      "createdAt": "31-12-2019",
+      "receivedByCourtAt": "17-08-2020",
+      "filedAt": "26-08-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 291439
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL45/MSPH",
+      "documentType": "účetní závěrka [2018] příloha, výměna SL 33",
+      "createdAt": "31-12-2018",
+      "receivedByCourtAt": "13-08-2021",
+      "filedAt": "16-09-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 374483
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL46/MSPH",
+      "documentType": "účetní závěrka [2019] příloha, výměna SL 42, 44",
+      "createdAt": "31-12-2019",
+      "receivedByCourtAt": "13-08-2021",
+      "filedAt": "16-09-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 392009
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL47/MSPH",
+      "documentType": "účetní závěrka [2020] příloha",
+      "createdAt": "31-12-2020",
+      "receivedByCourtAt": "13-08-2021",
+      "filedAt": "16-09-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 501078
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL48/MSPH",
+      "documentType": "účetní závěrka [2020], výroční zpráva [2020]",
+      "createdAt": "31-12-2020",
+      "receivedByCourtAt": "13-08-2021",
+      "filedAt": "16-09-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 68,
+          "sizeBytes": 6776016
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL49/MSPH",
+      "documentType": "účetní závěrka [2019], výroční zpráva [2019], zpráva auditora [2019]",
+      "createdAt": "31-12-2019",
+      "receivedByCourtAt": "13-08-2021",
+      "filedAt": "16-09-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 55,
+          "sizeBytes": 763896
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL50/MSPH",
+      "documentType": "účetní závěrka [2021], výroční zpráva [2021], zpráva auditora [2021]",
+      "createdAt": "31-12-2021",
+      "receivedByCourtAt": "20-07-2022",
+      "filedAt": "21-07-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 68,
+          "sizeBytes": 5997914
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL51/MSPH",
+      "documentType": "ostatní zápis z jednání správní rady",
+      "createdAt": "28-02-2023",
+      "receivedByCourtAt": "20-03-2023",
+      "filedAt": "19-04-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 12602
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL52/MSPH",
+      "documentType": "účetní závěrka [2022], výroční zpráva [2022], zpráva auditora [2022]",
+      "createdAt": "31-12-2022",
+      "receivedByCourtAt": "29-08-2023",
+      "filedAt": "08-09-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 77,
+          "sizeBytes": 3685697
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL53/MSPH",
+      "documentType": "ostatní Zápis z jednání správní rady",
+      "createdAt": "18-12-2023",
+      "receivedByCourtAt": "13-03-2024",
+      "filedAt": "05-04-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 637247
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL54/MSPH",
+      "documentType": "ostatní",
+      "createdAt": "05-04-2024",
+      "receivedByCourtAt": "29-04-2024",
+      "filedAt": "28-05-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 218913
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL55/MSPH",
+      "documentType": "ostatní",
+      "createdAt": "09-04-2024",
+      "receivedByCourtAt": "29-04-2024",
+      "filedAt": "28-05-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 259937
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL56/MSPH",
+      "documentType": "ostatní",
+      "createdAt": "21-03-2024",
+      "receivedByCourtAt": "29-04-2024",
+      "filedAt": "28-05-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 228154
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL57/MSPH",
+      "documentType": "rozhod. o statut. orgánu",
+      "createdAt": "25-03-2024",
+      "receivedByCourtAt": "29-04-2024",
+      "filedAt": "28-05-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 300217
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL58/MSPH",
+      "documentType": "účetní závěrka [2023] VZaZ",
+      "createdAt": "31-12-2023",
+      "receivedByCourtAt": "08-08-2024",
+      "filedAt": "12-08-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 404669
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL59/MSPH",
+      "documentType": "účetní závěrka [2023], výroční zpráva [2023], zpráva auditora [2023]",
+      "createdAt": "31-12-2023",
+      "receivedByCourtAt": "08-08-2024",
+      "filedAt": "12-08-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 67,
+          "sizeBytes": 21091398
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL60/MSPH",
+      "documentType": "účetní závěrka [2023] příloha",
+      "createdAt": "31-12-2023",
+      "receivedByCourtAt": "08-08-2024",
+      "filedAt": "12-08-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 8,
+          "sizeBytes": 195193
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL61/MSPH",
+      "documentType": "účetní závěrka [2023] Rozvaha",
+      "createdAt": "31-12-2023",
+      "receivedByCourtAt": "08-08-2024",
+      "filedAt": "12-08-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 407255
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL62/MSPH",
+      "documentType": "ostatní zápis správní rady",
+      "createdAt": "20-06-2024",
+      "receivedByCourtAt": "18-07-2024",
+      "filedAt": "21-08-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 786750
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL63/MSPH",
+      "documentType": "ostatní Zápis jednání správní rady",
+      "createdAt": "11-12-2024",
+      "receivedByCourtAt": "18-12-2024",
+      "filedAt": "07-01-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 82663
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL64/MSPH",
+      "documentType": "ostatní Zápis jednání správní rady",
+      "createdAt": "08-10-2024",
+      "receivedByCourtAt": "18-12-2024",
+      "filedAt": "07-01-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 54094
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL65/MSPH",
+      "documentType": "ostatní zápis z usnesení",
+      "createdAt": "24-01-2025",
+      "receivedByCourtAt": "26-02-2025",
+      "filedAt": "26-02-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 56294
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL66/MSPH",
+      "documentType": "ostatní Zápis z jednání",
+      "createdAt": "15-04-2025",
+      "receivedByCourtAt": "06-06-2025",
+      "filedAt": "09-06-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 63758
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL67/MSPH",
+      "documentType": "ostatní Hlasovaní správní rady",
+      "createdAt": "09-06-2025",
+      "receivedByCourtAt": "27-06-2025",
+      "filedAt": "09-07-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 30820
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL68/MSPH",
+      "documentType": "účetní závěrka [2024], výroční zpráva [2024], zpráva auditora [2024]",
+      "createdAt": "31-12-2024",
+      "receivedByCourtAt": "15-07-2025",
+      "filedAt": "18-07-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 46,
+          "sizeBytes": 10098877
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL69/MSPH",
+      "documentType": "účetní závěrka [2024] Rozvaha",
+      "createdAt": "31-12-2024",
+      "receivedByCourtAt": "15-07-2025",
+      "filedAt": "18-07-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 302739
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL70/MSPH",
+      "documentType": "účetní závěrka [2024]",
+      "createdAt": "31-12-2024",
+      "receivedByCourtAt": "15-07-2025",
+      "filedAt": "18-07-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 298615
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL71/MSPH",
+      "documentType": "účetní závěrka [2024], zpráva auditora [2024]",
+      "createdAt": "31-12-2024",
+      "receivedByCourtAt": "15-07-2025",
+      "filedAt": "18-07-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 16,
+          "sizeBytes": 4720122
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL72/MSPH",
+      "documentType": "účetní závěrka [2024] Příloha",
+      "createdAt": "31-12-2024",
+      "receivedByCourtAt": "15-07-2025",
+      "filedAt": "18-07-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 8,
+          "sizeBytes": 177064
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL73/MSPH",
+      "documentType": "ostatní Zápis jednání právní rady",
+      "createdAt": "05-02-2026",
+      "receivedByCourtAt": "12-02-2026",
+      "filedAt": "13-02-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 188876
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL74/MSPH",
+      "documentType": "ostatní",
+      "createdAt": "09-06-2026",
+      "receivedByCourtAt": "23-06-2026",
+      "filedAt": "08-07-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 155784
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 738/SL75/MSPH",
+      "documentType": "výroční zpráva [2025]",
+      "createdAt": "31-12-2025",
+      "receivedByCourtAt": "23-06-2026",
+      "filedAt": "08-07-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 16,
+          "sizeBytes": 8125433
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,279 @@
+{
+  "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
+  "retrieved": "2026-08-08",
+  "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/00418005",
+  "status": "OK",
+  "subject": {
+    "ico": "00418005",
+    "businessName": "Uměleckohistorická společnost, z. s.",
+    "registerReference": "L 5757/MSPH"
+  },
+  "filings": [
+    {
+      "referenceLabel": "L 5757/SL1/MSPH",
+      "documentType": "stanovy společnosti",
+      "createdAt": "16-11-2016",
+      "receivedByCourtAt": "25-11-2016",
+      "filedAt": "27-12-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 3835008
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 5757/SL2/MSPH",
+      "documentType": "ostatní zápis z hlasování",
+      "createdAt": "16-11-2016",
+      "receivedByCourtAt": "25-11-2016",
+      "filedAt": "27-12-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 476793
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 5757/SL3/MSPH",
+      "documentType": "ostatní zápis o volbě předsedy výboru",
+      "createdAt": "02-06-2017",
+      "receivedByCourtAt": "23-10-2017",
+      "filedAt": "22-11-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 32687
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 5757/SL4/MSPH",
+      "documentType": "ostatní zápis o volbě předsedy výboru",
+      "createdAt": "11-09-2020",
+      "receivedByCourtAt": "28-12-2020",
+      "filedAt": "04-02-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 434736
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 5757/SL5/MSPH",
+      "documentType": "účetní závěrka [2022] rozvaha",
+      "createdAt": "31-12-2022",
+      "receivedByCourtAt": "16-05-2023",
+      "filedAt": "01-06-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 72437
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 5757/SL6/MSPH",
+      "documentType": "účetní závěrka [2022] VZaZ",
+      "createdAt": "31-12-2022",
+      "receivedByCourtAt": "16-05-2023",
+      "filedAt": "01-06-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 68993
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 5757/SL7/MSPH",
+      "documentType": "účetní závěrka [2022] přiloha",
+      "createdAt": "31-12-2022",
+      "receivedByCourtAt": "16-05-2023",
+      "filedAt": "01-06-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 64545
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 5757/SL8/MSPH",
+      "documentType": "ostatní zápis z jednání výboru",
+      "createdAt": "26-05-2023",
+      "receivedByCourtAt": "13-12-2023",
+      "filedAt": "16-01-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 14467
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 5757/SL9/MSPH",
+      "documentType": "ostatní zápis z VH",
+      "createdAt": "23-05-2023",
+      "receivedByCourtAt": "13-12-2023",
+      "filedAt": "16-01-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 110670
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 5757/SL10/MSPH",
+      "documentType": "účetní závěrka [2023] Příloha",
+      "createdAt": "31-12-2023",
+      "receivedByCourtAt": "01-02-2024",
+      "filedAt": "09-02-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 70780
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 5757/SL11/MSPH",
+      "documentType": "účetní závěrka [2023] rozvaha",
+      "createdAt": "31-12-2023",
+      "receivedByCourtAt": "01-02-2024",
+      "filedAt": "09-02-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 55499
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 5757/SL12/MSPH",
+      "documentType": "účetní závěrka [2023] VZZ",
+      "createdAt": "31-12-2023",
+      "receivedByCourtAt": "01-02-2024",
+      "filedAt": "09-02-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 55593
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 5757/SL13/MSPH",
+      "documentType": "účetní závěrka [2024] Příloha",
+      "createdAt": "31-12-2024",
+      "receivedByCourtAt": "09-02-2025",
+      "filedAt": "10-02-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 63468
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 5757/SL14/MSPH",
+      "documentType": "účetní závěrka [2024] VZZ",
+      "createdAt": "31-12-2024",
+      "receivedByCourtAt": "09-02-2025",
+      "filedAt": "10-02-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 74352
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 5757/SL15/MSPH",
+      "documentType": "účetní závěrka [2024] Rozvaha",
+      "createdAt": "31-12-2024",
+      "receivedByCourtAt": "09-02-2025",
+      "filedAt": "10-02-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 73626
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 5757/SL16/MSPH",
+      "documentType": "účetní závěrka [2025] VZaZ",
+      "createdAt": "31-12-2025",
+      "receivedByCourtAt": "07-02-2026",
+      "filedAt": "11-02-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 73161
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 5757/SL17/MSPH",
+      "documentType": "účetní závěrka [2025] příloha",
+      "createdAt": "31-12-2025",
+      "receivedByCourtAt": "07-02-2026",
+      "filedAt": "11-02-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 62770
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 5757/SL18/MSPH",
+      "documentType": "účetní závěrka [2025] rozvaha",
+      "createdAt": "31-12-2025",
+      "receivedByCourtAt": "07-02-2026",
+      "filedAt": "11-02-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 73470
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 5757/SL19/MSPH",
+      "documentType": "ostatní VH - zvolení nového předsedy",
+      "createdAt": "29-05-2026",
+      "receivedByCourtAt": "10-06-2026",
+      "filedAt": "16-07-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 829874
+        }
+      ]
+    }
+  ]
+}

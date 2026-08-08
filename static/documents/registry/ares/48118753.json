@@ -1,0 +1,211 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "48118753"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "48118753",
+        "obchodniJmeno": "PORTOS, advokátní kancelář s.r.o.",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 43,
+          "nazevSpravnihoObvodu": "Praha 4",
+          "kodMestskehoObvodu": 43,
+          "nazevMestskehoObvodu": "Praha 4",
+          "kodMestskeCastiObvodu": 500119,
+          "kodUlice": 448729,
+          "nazevMestskeCastiObvodu": "Praha 4",
+          "nazevUlice": "Hvězdova",
+          "cisloDomovni": 1716,
+          "kodCastiObce": 490156,
+          "cisloOrientacni": 2,
+          "cisloOrientacniPismeno": "b",
+          "nazevCastiObce": "Nusle",
+          "kodAdresnihoMista": 27382800,
+          "psc": 14000,
+          "textovaAdresa": "Hvězdova 1716/2b, Nusle, 14000 Praha 4",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "112",
+        "pravniFormaRos": "112",
+        "financniUrad": "004",
+        "datumVzniku": "1993-03-01",
+        "datumAktualizace": "2026-06-18",
+        "dic": "CZ48118753",
+        "icoId": "48118753",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Hvězdova 1716/2b",
+          "radekAdresy2": "Nusle",
+          "radekAdresy3": "14000 Praha 4"
+        },
+        "czNace2008": [
+          "69100"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "AKTIVNI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "NEEXISTUJICI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "NEEXISTUJICI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "PORTOS, advokátní kancelář s.r.o.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 43,
+                  "nazevSpravnihoObvodu": "Praha 4",
+                  "kodMestskehoObvodu": 43,
+                  "nazevMestskehoObvodu": "Praha 4",
+                  "kodMestskeCastiObvodu": 500119,
+                  "kodUlice": 448729,
+                  "nazevMestskeCastiObvodu": "Praha 4",
+                  "nazevUlice": "Hvězdova",
+                  "cisloDomovni": 1716,
+                  "kodCastiObce": 490156,
+                  "cisloOrientacni": 2,
+                  "cisloOrientacniPismeno": "b",
+                  "nazevCastiObce": "Nusle",
+                  "kodAdresnihoMista": 27382800,
+                  "psc": 14000,
+                  "textovaAdresa": "Hvězdova 1716/2b, Nusle, 14000 Praha 4",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "112",
+            "pravniFormaRos": "112",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "PORTOS, advokátní kancelář s.r.o.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 43,
+                  "nazevSpravnihoObvodu": "Praha 4",
+                  "kodMestskehoObvodu": 43,
+                  "nazevMestskehoObvodu": "Praha 4",
+                  "kodMestskeCastiObvodu": 500119,
+                  "kodUlice": 448729,
+                  "nazevMestskeCastiObvodu": "Praha 4",
+                  "nazevUlice": "Hvězdova",
+                  "cisloDomovni": 1716,
+                  "kodCastiObce": 490156,
+                  "cisloOrientacni": 2,
+                  "cisloOrientacniPismeno": "b",
+                  "nazevCastiObce": "Nusle",
+                  "kodAdresnihoMista": 27382800,
+                  "psc": 14000,
+                  "textovaAdresa": "Hvězdova 1716/2b, Nusle, 14000 Praha 4",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "112",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "PORTOS, advokátní kancelář s.r.o.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 43,
+                  "nazevSpravnihoObvodu": "Praha 4",
+                  "kodMestskehoObvodu": 43,
+                  "nazevMestskehoObvodu": "Praha 4",
+                  "kodMestskeCastiObvodu": 500119,
+                  "kodUlice": 448729,
+                  "nazevMestskeCastiObvodu": "Praha 4",
+                  "nazevUlice": "Hvězdova",
+                  "cisloDomovni": 1716,
+                  "kodCastiObce": 490156,
+                  "cisloOrientacni": 2,
+                  "cisloOrientacniPismeno": "b",
+                  "nazevCastiObce": "Nusle",
+                  "kodAdresnihoMista": 27382800,
+                  "psc": 14000,
+                  "textovaAdresa": "Hvězdova 1716/2b, Nusle, 14000 Praha 4",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "112",
+            "spisovaZnacka": "C 212268/MSPH",
+            "datovyZdroj": "vr"
+          }
+        ],
+        "czNace": [
+          "69100"
+        ],
+        "subRegistrSzr": "szr"
+      }
+    ]
+  }
+}

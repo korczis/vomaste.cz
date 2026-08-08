@@ -1,0 +1,300 @@
+{
+  "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
+  "retrieved": "2026-08-08",
+  "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/04472586",
+  "status": "OK",
+  "subject": {
+    "ico": "04472586",
+    "businessName": "HEMMONT, a.s.",
+    "registerReference": "B 20998/MSPH"
+  },
+  "filings": [
+    {
+      "referenceLabel": "B 20998/SL1/MSPH",
+      "documentType": "zakladatelské dokumenty, notářský zápis [NZ 859/2015], stanovy společnosti",
+      "createdAt": "21-09-2015",
+      "receivedByCourtAt": "07-10-2015",
+      "filedAt": "13-10-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 16,
+          "sizeBytes": 6096991
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 20998/SL2/MSPH",
+      "documentType": "ostatní zápis z VH",
+      "createdAt": "30-11-2015",
+      "receivedByCourtAt": "29-12-2015",
+      "filedAt": "10-03-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 2484089
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 20998/SL3/MSPH",
+      "documentType": "ostatní rozhodnutí jediného akcionáře",
+      "createdAt": "22-11-2016",
+      "receivedByCourtAt": "10-02-2017",
+      "filedAt": "23-03-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 62582
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 20998/SL4/MSPH",
+      "documentType": "notářský zápis [NZ 772/2017]",
+      "createdAt": "07-12-2017",
+      "receivedByCourtAt": "04-01-2018",
+      "filedAt": "17-01-2018",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 14,
+          "sizeBytes": 369278
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 20998/SL5/MSPH",
+      "documentType": "účetní závěrka [2017]",
+      "createdAt": "31-12-2017",
+      "receivedByCourtAt": "31-03-2020",
+      "filedAt": "15-04-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 308894
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 20998/SL6/MSPH",
+      "documentType": "účetní závěrka [2018] VZZ",
+      "createdAt": "31-12-2018",
+      "receivedByCourtAt": "31-03-2020",
+      "filedAt": "16-04-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 317145
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 20998/SL7/MSPH",
+      "documentType": "účetní závěrka [2019] Příloha",
+      "createdAt": "31-12-2019",
+      "receivedByCourtAt": "06-05-2020",
+      "filedAt": "06-05-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 169718
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 20998/SL8/MSPH",
+      "documentType": "účetní závěrka [2019] VZaZ",
+      "createdAt": "31-12-2019",
+      "receivedByCourtAt": "06-05-2020",
+      "filedAt": "06-05-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 54008
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 20998/SL9/MSPH",
+      "documentType": "účetní závěrka [2019] rozvaha",
+      "createdAt": "31-12-2019",
+      "receivedByCourtAt": "06-05-2020",
+      "filedAt": "06-05-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 47207
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 20998/SL10/MSPH",
+      "documentType": "notářský zápis [NZ 879/2020]",
+      "createdAt": "16-07-2020",
+      "filedAt": "20-07-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 8,
+          "sizeBytes": 355265
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 20998/SL11/MSPH",
+      "documentType": "účetní závěrka [2020] VZZ",
+      "createdAt": "31-12-2020",
+      "receivedByCourtAt": "28-04-2021",
+      "filedAt": "14-05-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 58197
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 20998/SL12/MSPH",
+      "documentType": "účetní závěrka [2020] rozvaha",
+      "createdAt": "31-12-2020",
+      "receivedByCourtAt": "28-04-2021",
+      "filedAt": "14-05-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 51236
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 20998/SL13/MSPH",
+      "documentType": "účetní závěrka [2020] příloha",
+      "createdAt": "31-12-2020",
+      "receivedByCourtAt": "28-04-2021",
+      "filedAt": "14-05-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 169761
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 20998/SL14/MSPH",
+      "documentType": "účetní závěrka [2021] - předána prostřednictvím správce daně z příjmů k 09.04.2022",
+      "createdAt": "09-04-2022",
+      "receivedByCourtAt": "03-09-2022",
+      "filedAt": "15-12-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 0,
+          "sizeBytes": 1281
+        },
+        {
+          "pageCount": 0,
+          "sizeBytes": 23159
+        },
+        {
+          "pageCount": 3,
+          "sizeBytes": 121997
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 20998/SL15/MSPH",
+      "documentType": "účetní závěrka [2022] - předána prostřednictvím správce daně z příjmů k 15.05.2023",
+      "createdAt": "15-05-2023",
+      "receivedByCourtAt": "23-05-2023",
+      "filedAt": "01-06-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 0,
+          "sizeBytes": 1042
+        },
+        {
+          "pageCount": 3,
+          "sizeBytes": 113128
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 20998/SL16/MSPH",
+      "documentType": "účetní závěrka [2023] - předána prostřednictvím správce daně z příjmů k 07.05.2024",
+      "createdAt": "07-05-2024",
+      "receivedByCourtAt": "07-05-2024",
+      "filedAt": "10-05-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 0,
+          "sizeBytes": 1198
+        },
+        {
+          "pageCount": 2,
+          "sizeBytes": 214444
+        },
+        {
+          "pageCount": 3,
+          "sizeBytes": 117844
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 20998/SL17/MSPH",
+      "documentType": "účetní závěrka [2024] - předána prostřednictvím správce daně z příjmů k 15.07.2025",
+      "createdAt": "15-07-2025",
+      "receivedByCourtAt": "15-07-2025",
+      "filedAt": "21-07-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 213775
+        },
+        {
+          "pageCount": 0,
+          "sizeBytes": 1320
+        },
+        {
+          "pageCount": 3,
+          "sizeBytes": 122429
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 20998/SL18/MSPH",
+      "documentType": "účetní závěrka [2025] - předána prostřednictvím správce daně z příjmů k 04.07.2026",
+      "createdAt": "04-07-2026",
+      "receivedByCourtAt": "04-07-2026",
+      "filedAt": "04-07-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 310929
+        },
+        {
+          "pageCount": 0,
+          "sizeBytes": 1315
+        },
+        {
+          "pageCount": 3,
+          "sizeBytes": 122406
+        }
+      ]
+    }
+  ]
+}

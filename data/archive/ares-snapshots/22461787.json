@@ -1,0 +1,37 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "22461787",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/22461787",
+  "nazev": "EXTREME BFG CAST, s.r.o.",
+  "sidlo": "Heršpická 813/5, Štýřice, 63900 Brno",
+  "spisovaZnacka": {
+    "soud": "KSBR",
+    "oddil": "C",
+    "vlozka": "143133"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "Jednatel",
+      "since": "2025-01-13",
+      "kind": "person",
+      "name": "Lubor Novák"
+    }
+  ],
+  "spolecnici": [
+    {
+      "kind": "person",
+      "name": "Lubor Novák",
+      "podil": "85;00",
+      "vklad": "255000;00",
+      "splaceno": "100;00"
+    },
+    {
+      "kind": "person",
+      "name": "Jaromír Kučera",
+      "podil": "15;00",
+      "vklad": "45000;00",
+      "splaceno": "100;00"
+    }
+  ]
+}

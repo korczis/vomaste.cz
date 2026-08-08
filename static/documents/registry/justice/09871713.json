@@ -1,0 +1,134 @@
+{
+  "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
+  "retrieved": "2026-08-08",
+  "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/09871713",
+  "status": "OK",
+  "subject": {
+    "ico": "09871713",
+    "businessName": "Společnost pro obranu svobody projevu, z.ú.",
+    "registerReference": "U 304/KSBR"
+  },
+  "filings": [
+    {
+      "referenceLabel": "U 304/SL1/KSBR",
+      "documentType": "notářský zápis [NZ 28/2021]",
+      "createdAt": "21-01-2021",
+      "filedAt": "28-01-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 12,
+          "sizeBytes": 3085936
+        }
+      ]
+    },
+    {
+      "referenceLabel": "U 304/SL2/KSBR",
+      "documentType": "výroční zpráva [2021]",
+      "receivedByCourtAt": "16-01-2023",
+      "filedAt": "31-01-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 15,
+          "sizeBytes": 9779435
+        }
+      ]
+    },
+    {
+      "referenceLabel": "U 304/SL3/KSBR",
+      "documentType": "ostatní zápis z jednání správní rady",
+      "createdAt": "21-06-2022",
+      "receivedByCourtAt": "28-02-2023",
+      "filedAt": "07-03-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 47630
+        }
+      ]
+    },
+    {
+      "referenceLabel": "U 304/SL4/KSBR",
+      "documentType": "ostatní jmenování člena správní rady",
+      "createdAt": "22-02-2023",
+      "receivedByCourtAt": "28-02-2023",
+      "filedAt": "07-03-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 32501
+        }
+      ]
+    },
+    {
+      "referenceLabel": "U 304/SL5/KSBR",
+      "documentType": "výroční zpráva [2022]",
+      "receivedByCourtAt": "30-12-2023",
+      "filedAt": "02-02-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 17,
+          "sizeBytes": 11580941
+        }
+      ]
+    },
+    {
+      "referenceLabel": "U 304/SL6/KSBR",
+      "documentType": "výroční zpráva [2023]",
+      "receivedByCourtAt": "30-12-2024",
+      "filedAt": "15-01-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 20,
+          "sizeBytes": 11700048
+        }
+      ]
+    },
+    {
+      "referenceLabel": "U 304/SL7/KSBR",
+      "documentType": "výroční zpráva [2024]",
+      "receivedByCourtAt": "29-12-2025",
+      "filedAt": "16-01-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 21,
+          "sizeBytes": 6009288
+        }
+      ]
+    },
+    {
+      "referenceLabel": "U 304/SL8/KSBR",
+      "documentType": "ostatní zápis z jednání SR",
+      "createdAt": "25-01-2024",
+      "receivedByCourtAt": "09-05-2026",
+      "filedAt": "01-07-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 902738
+        }
+      ]
+    },
+    {
+      "referenceLabel": "U 304/SL9/KSBR",
+      "documentType": "ostatní zápis z jednání zakladatelů",
+      "createdAt": "20-12-2023",
+      "receivedByCourtAt": "09-05-2026",
+      "filedAt": "01-07-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 926051
+        }
+      ]
+    }
+  ]
+}

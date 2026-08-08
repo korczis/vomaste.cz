@@ -1,0 +1,51 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "24220345",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24220345",
+  "nazev": "Institut Václava Klause, o.p.s.",
+  "sidlo": "Šárecká 15/29, Dejvice, 16000 Praha 6",
+  "spisovaZnacka": {
+    "soud": "MSPH",
+    "oddil": "O",
+    "vlozka": "882"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "Člen statutárního orgánu",
+      "since": "2015-11-04",
+      "kind": "person",
+      "name": "PhDr. Ing. Jiří Weigl"
+    }
+  ],
+  "spolecnici": [
+    {
+      "kind": "person",
+      "name": "Ing. Jan Klaus",
+      "podil": null,
+      "vklad": null,
+      "splaceno": null
+    },
+    {
+      "kind": "person",
+      "name": "prof. Ing. Václav Klaus",
+      "podil": null,
+      "vklad": null,
+      "splaceno": null
+    },
+    {
+      "kind": "person",
+      "name": "PhDr. Ing. Jiří Weigl",
+      "podil": null,
+      "vklad": null,
+      "splaceno": null
+    },
+    {
+      "kind": "person",
+      "name": "Václav Klaus",
+      "podil": null,
+      "vklad": null,
+      "splaceno": null
+    }
+  ]
+}

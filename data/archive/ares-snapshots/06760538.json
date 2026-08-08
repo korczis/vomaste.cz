@@ -1,0 +1,15 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "06760538",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06760538",
+  "nazev": "Milion Chvilek, z. s.",
+  "sidlo": "Husinecká 808/5, Žižkov, 13000 Praha 3",
+  "spisovaZnacka": {
+    "soud": "MSPH",
+    "oddil": "L",
+    "vlozka": "69778"
+  },
+  "statutarniOrgan": [],
+  "spolecnici": []
+}

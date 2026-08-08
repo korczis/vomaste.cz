@@ -1,0 +1,43 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "70890021",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/70890021",
+  "nazev": "Povodí Odry, státní podnik",
+  "sidlo": "Varenská 3101/49, Moravská Ostrava, 70200 Ostrava",
+  "spisovaZnacka": {
+    "soud": "KSOS",
+    "oddil": "AXIV",
+    "vlozka": "584"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "2. zástupce",
+      "since": "2021-07-01",
+      "kind": "person",
+      "name": "Ing. Michaela Bachoríková"
+    },
+    {
+      "role": "1. zástupce",
+      "since": "2025-03-03",
+      "kind": "person",
+      "name": "Ing. Tomáš Skokan"
+    },
+    {
+      "role": "generální ředitel",
+      "since": "2026-05-01",
+      "kind": "person",
+      "name": "Mgr. Miroslav Janoviak"
+    }
+  ],
+  "spolecnici": [
+    {
+      "kind": "company",
+      "name": "Ministerstvo zemědělství",
+      "ico": "00020478",
+      "podil": null,
+      "vklad": null,
+      "splaceno": null
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "05411394",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/05411394",
+  "nazev": "Zapper-Club s.r.o.",
+  "sidlo": "Petrská 1136/12, Nové Město, 11000 Praha 1",
+  "spisovaZnacka": {
+    "soud": "MSPH",
+    "oddil": "C",
+    "vlozka": "263258"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "jednatel",
+      "since": "2017-04-24",
+      "kind": "person",
+      "name": "Tereza Turková"
+    }
+  ],
+  "spolecnici": [
+    {
+      "kind": "person",
+      "name": "Tereza Turková",
+      "podil": "100",
+      "vklad": "1000",
+      "splaceno": "100"
+    }
+  ]
+}

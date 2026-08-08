@@ -1,0 +1,47 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "46504940",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/46504940",
+  "nazev": "Cerea, a.s.",
+  "sidlo": "Dělnická 384, Pardubičky, 53003 Pardubice",
+  "spisovaZnacka": {
+    "soud": "KSHK",
+    "oddil": "B",
+    "vlozka": "621"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "člen představenstva",
+      "since": "2024-03-29",
+      "kind": "person",
+      "name": "Ing. Petr Hájek"
+    },
+    {
+      "role": "Místopředseda představenstva",
+      "since": "2024-05-03",
+      "kind": "company",
+      "name": "AGROFERT, a.s.",
+      "ico": "26185610"
+    },
+    {
+      "role": "Člen představenstva",
+      "since": "2025-08-09",
+      "kind": "person",
+      "name": "Ing. Milan Fiedler"
+    },
+    {
+      "role": "Předseda představenstva",
+      "since": "2026-05-09",
+      "kind": "person",
+      "name": "Ing. František Turek"
+    },
+    {
+      "role": "člen představenstva",
+      "since": "2026-07-01",
+      "kind": "person",
+      "name": "Ing. Jan Otčenášek"
+    }
+  ],
+  "spolecnici": []
+}

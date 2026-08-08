@@ -1,0 +1,31 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "22419519",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/22419519",
+  "nazev": "BYD Automotive Czech s.r.o.",
+  "sidlo": "Rohanské nábřeží 693/10, Karlín, 18600 Praha 8",
+  "spisovaZnacka": {
+    "soud": "MSPH",
+    "oddil": "C",
+    "vlozka": "416418"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "Jednatel",
+      "since": "2025-01-03",
+      "kind": "person",
+      "name": "Ke Li"
+    }
+  ],
+  "spolecnici": [
+    {
+      "kind": "company",
+      "name": "BYD Europe Holding Kft.",
+      "ico": null,
+      "podil": "100",
+      "vklad": "250000",
+      "splaceno": "100"
+    }
+  ]
+}

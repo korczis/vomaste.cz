@@ -1,0 +1,31 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "24706370",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24706370",
+  "nazev": "EDUin, o.p.s.",
+  "sidlo": "Bucharova 2928/14a, Stodůlky, 15800 Praha 5",
+  "spisovaZnacka": {
+    "soud": "MSPH",
+    "oddil": "O",
+    "vlozka": "738"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "Člen statutárního orgánu",
+      "since": "2024-04-01",
+      "kind": "person",
+      "name": "Martina Chvátalová"
+    }
+  ],
+  "spolecnici": [
+    {
+      "kind": "company",
+      "name": "Nadace Livesport",
+      "ico": "21066001",
+      "podil": null,
+      "vklad": null,
+      "splaceno": null
+    }
+  ]
+}

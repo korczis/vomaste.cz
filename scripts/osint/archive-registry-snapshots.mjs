@@ -39,8 +39,27 @@
  * Usage:
  *   node scripts/osint/archive-registry-snapshots.mjs --ico=04449461
  *   node scripts/osint/archive-registry-snapshots.mjs --ico=04449461,01529820,02922703,26228548,28274318
+ *   node scripts/osint/archive-registry-snapshots.mjs --from-entities [--enrich] [--skip-existing]
+ *
+ * --from-entities walks every canonical entity of an IČO-bearing type
+ * (company, organization, public_institution, political_party):
+ *   - entities that already carry externalIds.ico/ares are archived
+ *     directly;
+ *   - entities without one get an ARES name-search resolution attempt,
+ *     accepted ONLY on an unambiguous single hit (pocetCelkem === 1) —
+ *     anything else (0 hits: typically foreign entities; >1 hits:
+ *     ambiguous name) is recorded as unresolved in
+ *     data/archive/ico-resolution.json, never guessed. Name→IČO by
+ *     fuzzy pick would be exactly the namesake-conflation mistake the
+ *     dossiers' own identity rules exist to prevent.
+ *   - --enrich writes an unambiguously resolved IČO back into the
+ *     entity record's externalIds.ico (a registry identifier on a
+ *     context entity — same class of data expand-entity.mjs already
+ *     maintains; no claim, no coverage change).
+ *   - --skip-existing skips IČOs already present in
+ *     data/archive/ares-snapshots/ (resumable batch).
  */
-import { writeFileSync, mkdirSync, existsSync } from "node:fs";
+import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { homedir } from "node:os";
@@ -318,11 +337,106 @@ async function archiveIco(ico) {
   console.log(`  Raw PDFs (NOT in this repo) -> ${localDir}`);
 }
 
+// --- batch mode over canonical entities -----------------------------------
+
+const ENTITIES_DIR = join(ROOT, "data", "dossiers", "_shared", "entities");
+const RESOLUTION_REPORT = join(ROOT, "data", "archive", "ico-resolution.json");
+const ICO_TYPES = new Set(["company", "organization", "public_institution", "political_party"]);
+const SEARCH_ENDPOINT = "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat";
+
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+async function resolveIcoByName(title) {
+  // Strip parenthetical disambiguators ("(UHS)", "(Washington)") — they
+  // are this dataset's labels, not part of the registered name.
+  const name = title.replace(/\s*\([^)]*\)\s*/g, " ").trim();
+  const res = await fetch(SEARCH_ENDPOINT, {
+    method: "POST",
+    headers: { "content-type": "application/json", accept: "application/json" },
+    body: JSON.stringify({ obchodniJmeno: name, pocet: 5 }),
+  });
+  if (!res.ok) return { outcome: "search_error", detail: `HTTP ${res.status}` };
+  const d = await res.json();
+  const total = d.pocetCelkem ?? 0;
+  if (total === 0) return { outcome: "not_found" };
+  if (total > 1) {
+    return {
+      outcome: "ambiguous",
+      detail: (d.ekonomickeSubjekty ?? []).slice(0, 5).map((s) => `${s.ico} ${s.obchodniJmeno}`),
+    };
+  }
+  const hit = d.ekonomickeSubjekty?.[0];
+  return { outcome: "resolved", ico: hit.ico, registeredName: hit.obchodniJmeno };
+}
+
+async function fromEntities({ enrich, skipExisting }) {
+  const existing = new Set(
+    existsSync(ARES_SNAPSHOT_DIR) ? readdirSync(ARES_SNAPSHOT_DIR).map((f) => f.replace(/\.json$/, "")) : [],
+  );
+  const resolution = [];
+  const toArchive = [];
+
+  for (const file of readdirSync(ENTITIES_DIR).filter((f) => f.endsWith(".json")).sort()) {
+    const path = join(ENTITIES_DIR, file);
+    const entity = JSON.parse(readFileSync(path, "utf8"));
+    if (!ICO_TYPES.has(entity.entityType)) continue;
+    const known = entity.externalIds?.ico ?? entity.externalIds?.ares;
+    if (known) {
+      resolution.push({ entityId: entity.entityId, title: entity.title, outcome: "already_recorded", ico: known });
+      toArchive.push(known);
+      continue;
+    }
+    const r = await resolveIcoByName(entity.title);
+    resolution.push({ entityId: entity.entityId, title: entity.title, ...r });
+    console.log(`resolve ${entity.entityId}: ${r.outcome}${r.ico ? ` (${r.ico} ${r.registeredName})` : ""}`);
+    if (r.outcome === "resolved") {
+      toArchive.push(r.ico);
+      if (enrich) {
+        entity.externalIds = { ...entity.externalIds, ico: r.ico };
+        writeFileSync(path, JSON.stringify(entity, null, 2) + "\n");
+      }
+    }
+    await sleep(300);
+  }
+
+  mkdirSync(dirname(RESOLUTION_REPORT), { recursive: true });
+  writeFileSync(
+    RESOLUTION_REPORT,
+    JSON.stringify(
+      {
+        schemaNote:
+          "IČO resolution outcomes for the entity registry — resolved only on an unambiguous single ARES hit; not_found is typically a foreign entity or an unregistered organizational unit, ambiguous is a name shared by several registered subjects. Never guessed.",
+        generatedAt: today(),
+        outcomes: resolution,
+      },
+      null,
+      2,
+    ) + "\n",
+  );
+  const counts = resolution.reduce((a, r) => ((a[r.outcome] = (a[r.outcome] ?? 0) + 1), a), {});
+  console.log(`\nResolution: ${JSON.stringify(counts)} -> data/archive/ico-resolution.json`);
+
+  const unique = [...new Set(toArchive)].filter((ico) => !skipExisting || !existing.has(ico));
+  console.log(`Archiving ${unique.length} IČO(s)${skipExisting ? " (skip-existing on)" : ""}...`);
+  for (const ico of unique) {
+    await archiveIco(ico);
+    await sleep(500);
+  }
+  return unique.length;
+}
+
 async function main() {
   const args = parseArgs(process.argv.slice(2));
+  if (args["from-entities"]) {
+    const n = await fromEntities({ enrich: !!args.enrich, skipExisting: !!args["skip-existing"] });
+    console.log(`\nDone. ${n} IČO(s) archived from entity registry.`);
+    return;
+  }
   const icos = String(args.ico ?? "").split(",").map((s) => s.trim()).filter(Boolean);
   if (!icos.length) {
-    console.error("Usage: node scripts/osint/archive-registry-snapshots.mjs --ico=<ico>[,<ico>...]");
+    console.error(
+      "Usage: node scripts/osint/archive-registry-snapshots.mjs --ico=<ico>[,<ico>...] | --from-entities [--enrich] [--skip-existing]",
+    );
     process.exit(1);
   }
   for (const ico of icos) {

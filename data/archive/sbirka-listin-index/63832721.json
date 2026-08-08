@@ -1,0 +1,170 @@
+{
+  "schemaNote": "Preservation index — which Sbírka listin documents exist for this IČO and when we last confirmed it. Document CONTENT is archived locally, outside this repository, pending human review (see docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4, 'Doplnění 2026-08-08').",
+  "ico": "63832721",
+  "subjektId": "859448",
+  "retrievedAt": "2026-08-08",
+  "documents": [
+    {
+      "referenceLabel": "L 58884/SL27/MSPH",
+      "documentType": "účetní závěrka [2024]",
+      "downloaded": true,
+      "sha256": "84b44cf84f16f898ba36b20b82e73c5dca376accdba8a1640667e6ecc95db2a6"
+    },
+    {
+      "referenceLabel": "L 58884/SL26/MSPH",
+      "documentType": "účetní závěrka [2024]",
+      "downloaded": true,
+      "sha256": "b0dcd5119c687702acf2b90550de1d61a08ab8d72735674aefad7e27b062d3ad"
+    },
+    {
+      "referenceLabel": "L 58884/SL25/MSPH",
+      "documentType": "stanovy společnosti",
+      "downloaded": true,
+      "sha256": "eeefbf9b116c2e25f0ae8adb39653838eacd5cf445c3d912330b365f7602df03"
+    },
+    {
+      "referenceLabel": "L 58884/SL24/MSPH",
+      "documentType": "ostatní",
+      "downloaded": true,
+      "sha256": "22f888146b29680a08582a43d7be5ae21090183ecb79fcd0a30f8ccddf4eb014"
+    },
+    {
+      "referenceLabel": "L 58884/SL23/MSPH",
+      "documentType": "účetní závěrka [2023]",
+      "downloaded": true,
+      "sha256": "bf7b2d61fc1ae78f27db55e0bd1d75798e9126a0f07a5427c9e9c5cab0dbb793"
+    },
+    {
+      "referenceLabel": "L 58884/SL22/MSPH",
+      "documentType": "účetní závěrka [2023]",
+      "downloaded": true,
+      "sha256": "d35911783b5038a4ab6623499384eb672bcd5690a119b544602a9e530aef15d3"
+    },
+    {
+      "referenceLabel": "L 58884/SL21/MSPH",
+      "documentType": "účetní závěrka [2022]",
+      "downloaded": true,
+      "sha256": "a9dfcd97ae86f341cafd4b243a2cebd9512a7ad9ac09d4a4c4a9875fa4409c8e"
+    },
+    {
+      "referenceLabel": "L 58884/SL20/MSPH",
+      "documentType": "účetní závěrka [2022]",
+      "downloaded": true,
+      "sha256": "706f74f18bb6334e5af7faaa1978d2a3ca4c87cc77e1907137798cc0f62bc1b3"
+    },
+    {
+      "referenceLabel": "L 58884/SL19/MSPH",
+      "documentType": "účetní závěrka [2021]",
+      "downloaded": true,
+      "sha256": "d3127800e2d182f1654e24a11f9b81372cfc4701fc3b590c11da07364c04d39f"
+    },
+    {
+      "referenceLabel": "L 58884/SL18/MSPH",
+      "documentType": "účetní závěrka [2021]",
+      "downloaded": true,
+      "sha256": "65eb539f8a9bae904e6aaae113c99405d41fe371f10da5363a3049bcd35ddb26"
+    },
+    {
+      "referenceLabel": "L 58884/SL17/MSPH",
+      "documentType": "účetní závěrka [2020]",
+      "downloaded": true,
+      "sha256": "4bf715b67db64108a3078e6e137c0d6547e8893e84ec19d715eed338924f7a9e"
+    },
+    {
+      "referenceLabel": "L 58884/SL16/MSPH",
+      "documentType": "účetní závěrka [2020]",
+      "downloaded": true,
+      "sha256": "e184944b42ff74ebd09d40a2e0fc1d9166d801d71867a6036078931ba7fbe0a8"
+    },
+    {
+      "referenceLabel": "L 58884/SL15/MSPH",
+      "documentType": "stanovy společnosti",
+      "downloaded": true,
+      "sha256": "087f2915e645a7dad08eeabe08cc8b6cde1afe902bace52f852460cc9ddb9225"
+    },
+    {
+      "referenceLabel": "L 58884/SL14/MSPH",
+      "documentType": "účetní závěrka [2019]",
+      "downloaded": true,
+      "sha256": "1920cd7aec5b505027d2ed157d522b9463d99c48ab629d5ed15086797960328f"
+    },
+    {
+      "referenceLabel": "L 58884/SL13/MSPH",
+      "documentType": "účetní závěrka [2019]",
+      "downloaded": true,
+      "sha256": "40c48c5439c92074ca75696a05d709251f9c9d93ee31a87f72091388f04d1fbd"
+    },
+    {
+      "referenceLabel": "L 58884/SL12/MSPH",
+      "documentType": "účetní závěrka [2018]",
+      "downloaded": true,
+      "sha256": "a54915c6a1e7a37a9d6c774a5381d8e9478f38cef92c726d45973d93ccee9746"
+    },
+    {
+      "referenceLabel": "L 58884/SL11/MSPH",
+      "documentType": "účetní závěrka [2018]",
+      "downloaded": true,
+      "sha256": "5d32af0c0d346c77ada9030923c5132fa81779c74d365287d309eb3b4187350c"
+    },
+    {
+      "referenceLabel": "L 58884/SL10/MSPH",
+      "documentType": "stanovy společnosti",
+      "downloaded": true,
+      "sha256": "20d1cbb2edc1607fde218afbc43f5b5771d41aec01876e4154391b8bc8c013b0"
+    },
+    {
+      "referenceLabel": "L 58884/SL9/MSPH",
+      "documentType": "stanovy společnosti",
+      "downloaded": true,
+      "sha256": "78816a1d37b619b260a7e83efcc0b25768704b376a66ce74a5edd3bd8d27ca9a"
+    },
+    {
+      "referenceLabel": "L 58884/SL8/MSPH",
+      "documentType": "účetní závěrka [2016]",
+      "downloaded": true,
+      "sha256": "08fd80fee8831fc54c40d97a0362e967749bf54dec9238c57fec6863ba5e5d32"
+    },
+    {
+      "referenceLabel": "L 58884/SL7/MSPH",
+      "documentType": "účetní závěrka [2016]",
+      "downloaded": true,
+      "sha256": "00ed5e2c1b3a0474be469c58791f035f8a21f68dfcf640d947a0da95bd45b4f9"
+    },
+    {
+      "referenceLabel": "L 58884/SL6/MSPH",
+      "documentType": "účetní závěrka [2017]",
+      "downloaded": true,
+      "sha256": "f2830ef339934dadccbd4296a50397746170ac8a2bb1748014920d9a12108ebe"
+    },
+    {
+      "referenceLabel": "L 58884/SL5/MSPH",
+      "documentType": "účetní závěrka [2017]",
+      "downloaded": true,
+      "sha256": "8fc6b277cea327d3ad82dcd765a4bd02e2552e249f799fae8777a69b0f30a0a4"
+    },
+    {
+      "referenceLabel": "L 58884/SL4/MSPH",
+      "documentType": "účetní závěrka [2015]",
+      "downloaded": true,
+      "sha256": "79f6cd29949e7e36f63d2d86fe2d6b392a888a0350806c4328fcfc5a2cd18f59"
+    },
+    {
+      "referenceLabel": "L 58884/SL3/MSPH",
+      "documentType": "účetní závěrka [2015]",
+      "downloaded": true,
+      "sha256": "9f29b9bdbfdc5d5f63d6ee4ebfce922da92a4e61e73f91e48b8649c2398ede25"
+    },
+    {
+      "referenceLabel": "L 58884/SL2/MSPH",
+      "documentType": "účetní závěrka [2014]",
+      "downloaded": true,
+      "sha256": "d70c67d1f78012440d951c5a182d9778fbf9e3f78c0284ca851a56026be231b5"
+    },
+    {
+      "referenceLabel": "L 58884/SL1/MSPH",
+      "documentType": "účetní závěrka [2014]",
+      "downloaded": true,
+      "sha256": "f5fceea4e909f9b0ce18652ea54794fd19bc5c01a62a5d37dbfc794e854a7f6e"
+    }
+  ]
+}

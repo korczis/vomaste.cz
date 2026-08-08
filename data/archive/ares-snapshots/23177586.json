@@ -1,0 +1,37 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "23177586",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23177586",
+  "nazev": "Krijcos Energy s.r.o.",
+  "sidlo": "Květoslava Mašity 409, 25231 Všenory",
+  "spisovaZnacka": {
+    "soud": "MSPH",
+    "oddil": "C",
+    "vlozka": "422694"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "Jednatel",
+      "since": "2025-04-11",
+      "kind": "person",
+      "name": "Ing. Richard Chlad"
+    },
+    {
+      "role": "Jednatel",
+      "since": "2025-04-11",
+      "kind": "person",
+      "name": "Mgr. Richard Chlad"
+    }
+  ],
+  "spolecnici": [
+    {
+      "kind": "company",
+      "name": "Krijcos CS, a.s.",
+      "ico": "49824210",
+      "podil": "100;00",
+      "vklad": "200000;00",
+      "splaceno": "100;00"
+    }
+  ]
+}

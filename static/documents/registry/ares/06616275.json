@@ -1,0 +1,206 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "06616275"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "06616275",
+        "obchodniJmeno": "Učitelská platforma, z.s.",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 51,
+          "nazevSpravnihoObvodu": "Praha 5",
+          "kodMestskehoObvodu": 51,
+          "nazevMestskehoObvodu": "Praha 5",
+          "kodMestskeCastiObvodu": 539694,
+          "kodUlice": 503606,
+          "nazevMestskeCastiObvodu": "Praha 13",
+          "nazevUlice": "Husníkova",
+          "cisloDomovni": 2087,
+          "kodCastiObce": 490172,
+          "cisloOrientacni": 24,
+          "nazevCastiObce": "Stodůlky",
+          "kodAdresnihoMista": 22124179,
+          "psc": 15800,
+          "textovaAdresa": "Husníkova 2087/24, Stodůlky, 15800 Praha 5",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "706",
+        "pravniFormaRos": "706",
+        "financniUrad": "005",
+        "datumVzniku": "2017-12-08",
+        "datumAktualizace": "2026-07-23",
+        "dic": "CZ06616275",
+        "icoId": "06616275",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Husníkova 2087/24",
+          "radekAdresy2": "Stodůlky",
+          "radekAdresy3": "15800 Praha 5"
+        },
+        "czNace2008": [
+          "9412"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "AKTIVNI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "NEEXISTUJICI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "AKTIVNI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Učitelská platforma, z.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 132,
+                  "nazevSpravnihoObvodu": "Praha 13",
+                  "kodMestskehoObvodu": 51,
+                  "nazevMestskehoObvodu": "Praha 5",
+                  "kodMestskeCastiObvodu": 539694,
+                  "kodUlice": 503606,
+                  "nazevMestskeCastiObvodu": "Praha 13",
+                  "nazevUlice": "Husníkova",
+                  "cisloDomovni": 2087,
+                  "kodCastiObce": 490172,
+                  "cisloOrientacni": 24,
+                  "nazevCastiObce": "Stodůlky",
+                  "kodAdresnihoMista": 22124179,
+                  "psc": 15800,
+                  "textovaAdresa": "Husníkova 2087/24, Stodůlky, 15800 Praha 5",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "706",
+            "pravniFormaRos": "706",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Učitelská platforma, z.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 51,
+                  "nazevSpravnihoObvodu": "Praha 5",
+                  "kodMestskehoObvodu": 51,
+                  "nazevMestskehoObvodu": "Praha 5",
+                  "kodMestskeCastiObvodu": 539694,
+                  "kodUlice": 503606,
+                  "nazevMestskeCastiObvodu": "Praha 13",
+                  "nazevUlice": "Husníkova",
+                  "cisloDomovni": 2087,
+                  "kodCastiObce": 490172,
+                  "cisloOrientacni": 24,
+                  "nazevCastiObce": "Stodůlky",
+                  "kodAdresnihoMista": 22124179,
+                  "psc": 15800,
+                  "textovaAdresa": "Husníkova 2087/24, Stodůlky, 15800 Praha 5",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "706",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Učitelská platforma, z.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 51,
+                  "nazevSpravnihoObvodu": "Praha 5",
+                  "kodMestskehoObvodu": 51,
+                  "nazevMestskehoObvodu": "Praha 5",
+                  "kodMestskeCastiObvodu": 539694,
+                  "kodUlice": 503606,
+                  "nazevMestskeCastiObvodu": "Praha 13",
+                  "nazevUlice": "Husníkova",
+                  "cisloDomovni": 2087,
+                  "kodCastiObce": 490172,
+                  "cisloOrientacni": 24,
+                  "nazevCastiObce": "Stodůlky",
+                  "kodAdresnihoMista": 22124179,
+                  "psc": 15800,
+                  "textovaAdresa": "Husníkova 2087/24, Stodůlky, 15800 Praha 5",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "706",
+            "spisovaZnacka": "L 69402/MSPH",
+            "datovyZdroj": "vr"
+          }
+        ],
+        "czNace": [
+          "94120"
+        ]
+      }
+    ]
+  }
+}

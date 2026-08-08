@@ -1,0 +1,15 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "26168685",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/26168685",
+  "nazev": "Seznam.cz, a.s.",
+  "sidlo": "Radlická 3294/10, Smíchov, 15000 Praha 5",
+  "spisovaZnacka": {
+    "soud": "MSPH",
+    "oddil": "B",
+    "vlozka": "6493"
+  },
+  "statutarniOrgan": [],
+  "spolecnici": []
+}

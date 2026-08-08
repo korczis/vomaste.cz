@@ -1,0 +1,15 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "70994226",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/70994226",
+  "nazev": "České dráhy, a.s.",
+  "sidlo": "nábřeží Ludvíka Svobody 1222/12, Nové Město, 11000 Praha 1",
+  "spisovaZnacka": {
+    "soud": "MSPH",
+    "oddil": "B",
+    "vlozka": "8039"
+  },
+  "statutarniOrgan": [],
+  "spolecnici": []
+}

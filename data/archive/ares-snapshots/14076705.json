@@ -1,0 +1,30 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "14076705",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14076705",
+  "nazev": "Motoristé Praha s.r.o.",
+  "sidlo": "Revoluční 1082/8, Nové Město, 11000 Praha 1",
+  "spisovaZnacka": {
+    "soud": "MSPH",
+    "oddil": "C",
+    "vlozka": "360122"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "jednatel",
+      "since": "2022-05-31",
+      "kind": "person",
+      "name": "Mgr. Viktor Janeček"
+    }
+  ],
+  "spolecnici": [
+    {
+      "kind": "person",
+      "name": "Mgr. Viktor Janeček",
+      "podil": "100",
+      "vklad": "200000",
+      "splaceno": "100"
+    }
+  ]
+}

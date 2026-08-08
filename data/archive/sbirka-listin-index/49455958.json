@@ -1,0 +1,834 @@
+{
+  "schemaNote": "Preservation index — which Sbírka listin documents exist for this IČO and when we last confirmed it. Document CONTENT is archived locally, outside this repository, pending human review (see docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4, 'Doplnění 2026-08-08').",
+  "ico": "49455958",
+  "subjektId": "715436",
+  "retrievedAt": "2026-08-08",
+  "documents": [
+    {
+      "referenceLabel": "B 6130/SL159/KSBR",
+      "documentType": "výroční zpráva [2025]",
+      "downloaded": true,
+      "sha256": "489efbc9ee95a14c7df8b80a8434719ac671bcc0e8affe3b782e5c09bc9b4e9e"
+    },
+    {
+      "referenceLabel": "B 6130/SL158/KSBR",
+      "documentType": "ostatní",
+      "downloaded": true,
+      "sha256": "1945794935e493ff9593b3b7f150af76c0a6906a6cb182b3d6bc65a0814c94fe"
+    },
+    {
+      "referenceLabel": "B 6130/SL157/KSBR",
+      "documentType": "ostatní",
+      "downloaded": true,
+      "sha256": "7636fb8a21ff8575404f2bf6bfe621b25fd1d6a6608bbfff9b44168de8220bda"
+    },
+    {
+      "referenceLabel": "B 6130/SL156/KSBR",
+      "documentType": "zpráva auditora",
+      "downloaded": true,
+      "sha256": "7c2f18ce91eb5ea6b62cb227c2b51ece948829c6db5ea5a703e33e53c02bb986"
+    },
+    {
+      "referenceLabel": "B 6130/SL155/KSBR",
+      "documentType": "účetní závěrka [2024]",
+      "downloaded": true,
+      "sha256": "4327a4b781a288b5975f417264e939f3eb9fa1a5791f1fe94e11993a2dd625f9"
+    },
+    {
+      "referenceLabel": "B 6130/SL154/KSBR",
+      "documentType": "výroční zpráva [2024]",
+      "downloaded": true,
+      "sha256": "1d1105507cc1fd1eae90be2d9e92aff6121bf248c15506e66cb2252e9323d6e2"
+    },
+    {
+      "referenceLabel": "B 6130/SL153/KSBR",
+      "documentType": "notářský zápis [NZ 104/2024]",
+      "downloaded": true,
+      "sha256": "e091d1a3b627a704a47866e523e3dccf41db4bc3e77c65cfd75b529207d077fd"
+    },
+    {
+      "referenceLabel": "B 6130/SL152/KSBR",
+      "documentType": "výroční zpráva [2023]",
+      "downloaded": true,
+      "sha256": "451efce774866036058ab0306d1a4bacee2d79075712503dbf1f995406213495"
+    },
+    {
+      "referenceLabel": "B 6130/SL151/KSBR",
+      "documentType": "účetní závěrka [2023]",
+      "downloaded": true,
+      "sha256": "3880b28a76226fac4fef26c4643b513166772be7410c1f6ba42d2af1c9628efe"
+    },
+    {
+      "referenceLabel": "B 6130/SL150/KSBR",
+      "documentType": "výroční zpráva [2023]",
+      "downloaded": true,
+      "sha256": "a9823daa77aba2e1df9e6503756fc2828b20dfa6e9bbffcb37586a9841e615fc"
+    },
+    {
+      "referenceLabel": "B 6130/SL149/KSBR",
+      "documentType": "ostatní",
+      "downloaded": true,
+      "sha256": "fa3df51f91dbc64f5607d51b87b266c79fa584cc04b8647970f6f88d87ef6495"
+    },
+    {
+      "referenceLabel": "B 6130/SL148/KSBR",
+      "documentType": "ostatní",
+      "downloaded": true,
+      "sha256": "c38a22356573772c81e4700dea80a451a27f5f40ae50aafa1d53f97e0ea43a92"
+    },
+    {
+      "referenceLabel": "B 6130/SL147/KSBR",
+      "documentType": "ostatní",
+      "downloaded": true,
+      "sha256": "deb07da221f92b20a2e075dd10abd2cc97b7d7f39118cd57b5af0c33d6d35084"
+    },
+    {
+      "referenceLabel": "B 6130/SL146/KSBR",
+      "documentType": "notářský zápis [NZ 132/2023]",
+      "downloaded": true,
+      "sha256": "29307f1e7bda7b034238b306229021f3a590351c0ea3b1e79f63f715bfd2fc5a"
+    },
+    {
+      "referenceLabel": "B 6130/SL145/KSBR",
+      "documentType": "projekt přeměny - rozdělení odštěpením, sloučením",
+      "downloaded": true,
+      "sha256": "4750b227e11f6932990417c3cf9d86955a0cff1b2457b505cdd5972dd249f693"
+    },
+    {
+      "referenceLabel": "B 6130/SL144/KSBR",
+      "documentType": "účetní závěrka [2022]",
+      "downloaded": true,
+      "sha256": "f2ef9904f84808c92a6a7aefee1e23dd9a852abdf4881b799b2c5a9e579029cb"
+    },
+    {
+      "referenceLabel": "B 6130/SL143/KSBR",
+      "documentType": "účetní závěrka [2022]",
+      "downloaded": true,
+      "sha256": "792299c6bd67cf4b838d26f4cf247ad5f5539a4df6c40e1c729a3088616c4904"
+    },
+    {
+      "referenceLabel": "B 6130/SL142/KSBR",
+      "documentType": "výroční zpráva [2022]",
+      "downloaded": true,
+      "sha256": "3642f757be28b941cf469494cfb894b75013b6535d7c36943c6daae11809fd40"
+    },
+    {
+      "referenceLabel": "B 6130/SL141/KSBR",
+      "documentType": "ostatní",
+      "downloaded": true,
+      "sha256": "7c6f6a45a5b33053e579e0828ad75c037f9b3b9d0b5e9d0ab6b908b24adf24d5"
+    },
+    {
+      "referenceLabel": "B 6130/SL140/KSBR",
+      "documentType": "ostatní",
+      "downloaded": true,
+      "sha256": "d187bad5920f8e827aa80c4740796b94729f05f4f4ca20ab29f4188a1065dce4"
+    },
+    {
+      "referenceLabel": "B 6130/SL139/KSBR",
+      "documentType": "výroční zpráva [2021]",
+      "downloaded": true,
+      "sha256": "2a1c2a1d493c6f865543bbd1288a414ef74dd98c77f26507d023ca65db662ed7"
+    },
+    {
+      "referenceLabel": "B 6130/SL138/KSBR",
+      "documentType": "účetní závěrka [2021]",
+      "downloaded": true,
+      "sha256": "408e707d3aa89a59d89cc064877495b7fc764405d12b067518b2bc98aa47aca1"
+    },
+    {
+      "referenceLabel": "B 6130/SL137/KSBR",
+      "documentType": "výroční zpráva [2020]",
+      "downloaded": true,
+      "sha256": "1c39574585a13bbc783f280666a4426c0f80deb5dd3ba73fc06e3043fa4e5aa3"
+    },
+    {
+      "referenceLabel": "B 6130/SL136/KSBR",
+      "documentType": "ostatní",
+      "downloaded": true,
+      "sha256": "a8e0fc3d7dd60032daaf12c13bd36e6bac45a8f009ac85a10457b9ea607a4719"
+    },
+    {
+      "referenceLabel": "B 6130/SL135/KSBR",
+      "documentType": "notářský zápis [NZ 190/2021]",
+      "downloaded": true,
+      "sha256": "9965ade7d97e878e88d96c7323f249107a82b445c918aaca7c33aad5f9650316"
+    },
+    {
+      "referenceLabel": "B 6130/SL134/KSBR",
+      "documentType": "ostatní",
+      "downloaded": true,
+      "sha256": "bf0a8e6e2f79f25eba6adb1e3714907d981945fa12bea8ef59700eb13a2f480b"
+    },
+    {
+      "referenceLabel": "B 6130/SL133/KSBR",
+      "documentType": "výroční zpráva [2019]",
+      "downloaded": true,
+      "sha256": "833fb60ae31aad92695b10575e4e6ae0dfc642747c3c31ea5550caad3a8deebb"
+    },
+    {
+      "referenceLabel": "B 6130/SL132/KSBR",
+      "documentType": "ostatní",
+      "downloaded": true,
+      "sha256": "7e0bc9249c08b6380c274a9b2f68798433685cc3211a2fc96338d5998202a1ab"
+    },
+    {
+      "referenceLabel": "B 6130/SL131/KSBR",
+      "documentType": "účetní závěrka [2018]",
+      "downloaded": true,
+      "sha256": "1c7bbc0ba9c6714d39eadf3bd926d8f9aa58c2054c8e347905e48381e83b1d19"
+    },
+    {
+      "referenceLabel": "B 6130/SL130/KSBR",
+      "documentType": "ostatní",
+      "downloaded": true,
+      "sha256": "3afd088c18cc37b091c9f86b0e9f6b4b6ded1e8c6bee0615446f8f0f6130d42a"
+    },
+    {
+      "referenceLabel": "B 6130/SL129/KSBR",
+      "documentType": "výroční zpráva [2018]",
+      "downloaded": true,
+      "sha256": "3ed4feca6cb70a82c98d99240e0127f7a5281d523d2c10c63efb684e69197e18"
+    },
+    {
+      "referenceLabel": "B 6130/SL128/KSBR",
+      "documentType": "účetní závěrka [2017]",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL127/KSBR",
+      "documentType": "výroční zpráva [2017]",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL126/KSBR",
+      "documentType": "ostatní",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL125/KSBR",
+      "documentType": "ostatní",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL124/KSBR",
+      "documentType": "stanovy společnosti",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL123/KSBR",
+      "documentType": "notářský zápis [NZ 79/2017]",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL122/KSBR",
+      "documentType": "notářský zápis [NZ 79/2017]",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL121/KSBR",
+      "documentType": "výroční zpráva [2016]",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL120/KSBR",
+      "documentType": "notářský zápis [NZ 18/2017]",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL119/KSBR",
+      "documentType": "ostatní",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL118/KSBR",
+      "documentType": "výroční zpráva [205]",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL117/KSBR",
+      "documentType": "výroční zpráva [2014]",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL116/KSBR",
+      "documentType": "výroční zpráva [2013]",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL115/KSBR",
+      "documentType": "účetní závěrka [2014]",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL114/KSBR",
+      "documentType": "účetní závěrka [2013]",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL113/KSBR",
+      "documentType": "ostatní",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL112/KSBR",
+      "documentType": "ostatní",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL111/KSBR",
+      "documentType": "ostatní",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL110/KSBR",
+      "documentType": "ostatní",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL109/KSBR",
+      "documentType": "ostatní",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL108/KSBR",
+      "documentType": "ostatní",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL107/KSBR",
+      "documentType": "výroční zpráva [2014]",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL106/KSBR",
+      "documentType": "notářský zápis",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL105/KSBR",
+      "documentType": "ostatní",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL104/KSBR",
+      "documentType": "výroční zpráva [2013]",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL103/KSBR",
+      "documentType": "ostatní",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL102/KSBR",
+      "documentType": "stanovy společnosti",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL101/KSBR",
+      "documentType": "notářský zápis",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL100/KSBR",
+      "documentType": "notářský zápis",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL99/KSBR",
+      "documentType": "notářský zápis",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL98/KSBR",
+      "documentType": "posudek znalce",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL97/KSBR",
+      "documentType": "zpráva auditora",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL96/KSBR",
+      "documentType": "zpráva auditora",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL95/KSBR",
+      "documentType": "zpráva auditora",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL94/KSBR",
+      "documentType": "výroční zpráva",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL93/KSBR",
+      "documentType": "ostatní",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL92/KSBR",
+      "documentType": "ostatní",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL91/KSBR",
+      "documentType": "zpráva auditora",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL90/KSBR",
+      "documentType": "posudek znalce",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL89/KSBR",
+      "documentType": "ostatní",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL88/KSBR",
+      "documentType": "stanovy společnosti",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL87/KSBR",
+      "documentType": "notářský zápis",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL86/KSBR",
+      "documentType": "stanovy společnosti",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL85/KSBR",
+      "documentType": "výroční zpráva",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL84/KSBR",
+      "documentType": "notářský zápis",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL83/KSBR",
+      "documentType": "posudek znalce",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL82/KSBR",
+      "documentType": "stanovy společnosti",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL81/KSBR",
+      "documentType": "notářský zápis",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL80/KSBR",
+      "documentType": "stanovy společnosti",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL79/KSBR",
+      "documentType": "zpráva auditora",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL78/KSBR",
+      "documentType": "notářský zápis",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL77/KSBR",
+      "documentType": "stanovy společnosti",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL76/KSBR",
+      "documentType": "notářský zápis",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL75/KSBR",
+      "documentType": "výroční zpráva",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL74/KSBR",
+      "documentType": "výroční zpráva",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL73/KSBR",
+      "documentType": "zpráva auditora",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL72/KSBR",
+      "documentType": "zpráva auditora",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL71/KSBR",
+      "documentType": "výroční zpráva",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL70/KSBR",
+      "documentType": "zpráva auditora",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL69/KSBR",
+      "documentType": "stanovy společnosti",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL68/KSBR",
+      "documentType": "notářský zápis",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL67/KSBR",
+      "documentType": "notářský zápis",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL66/KSBR",
+      "documentType": "zpráva auditora",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL65/KSBR",
+      "documentType": "podpisové vzory",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL64/KSBR",
+      "documentType": "ostatní",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL63/KSBR",
+      "documentType": "podpisové vzory",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL62/KSBR",
+      "documentType": "notářský zápis",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL61/KSBR",
+      "documentType": "ostatní",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL60/KSBR",
+      "documentType": "ostatní",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL59/KSBR",
+      "documentType": "ostatní",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL58/KSBR",
+      "documentType": "insolvenční rozhodnutí",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL57/KSBR",
+      "documentType": "ostatní",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL56/KSBR",
+      "documentType": "ostatní",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL55/KSBR",
+      "documentType": "podpisové vzory",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL54/KSBR",
+      "documentType": "insolvenční rozhodnutí",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL53/KSBR",
+      "documentType": "účetní závěrka",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL52/KSBR",
+      "documentType": "notářský zápis",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL51/KSBR",
+      "documentType": "ostatní",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL50/KSBR",
+      "documentType": "ostatní",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL49/KSBR",
+      "documentType": "ostatní",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL48/KSBR",
+      "documentType": "podpisové vzory",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL47/KSBR",
+      "documentType": "podpisové vzory",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL46/KSBR",
+      "documentType": "podpisové vzory",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL45/KSBR",
+      "documentType": "podpisové vzory",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL44/KSBR",
+      "documentType": "podpisové vzory",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL43/KSBR",
+      "documentType": "účetní závěrka",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL42/KSBR",
+      "documentType": "zpráva auditora",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL41/KSBR",
+      "documentType": "posudek znalce",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL40/KSBR",
+      "documentType": "posudek znalce",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL39/KSBR",
+      "documentType": "notářský zápis",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL38/KSBR",
+      "documentType": "insolvenční rozhodnutí",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL37/KSBR",
+      "documentType": "insolvenční rozhodnutí",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL36/KSBR",
+      "documentType": "účetní závěrka",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL35/KSBR",
+      "documentType": "změna právní formy, fúze",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL34/KSBR",
+      "documentType": "podpisové vzory",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL33/KSBR",
+      "documentType": "ostatní",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL32/KSBR",
+      "documentType": "stanovy společnosti",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL31/KSBR",
+      "documentType": "notářský zápis",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL30/KSBR",
+      "documentType": "zpráva auditora",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL29/KSBR",
+      "documentType": "účetní závěrka",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL28/KSBR",
+      "documentType": "zpráva auditora",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL27/KSBR",
+      "documentType": "výroční zpráva",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL26/KSBR",
+      "documentType": "účetní závěrka",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL25/KSBR",
+      "documentType": "ostatní",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL24/KSBR",
+      "documentType": "podpisové vzory",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL23/KSBR",
+      "documentType": "stanovy společnosti",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL22/KSBR",
+      "documentType": "notářský zápis",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL21/KSBR",
+      "documentType": "výroční zpráva",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL20/KSBR",
+      "documentType": "ostatní",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL19/KSBR",
+      "documentType": "ostatní",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL18/KSBR",
+      "documentType": "podpisové vzory",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL17/KSBR",
+      "documentType": "ostatní",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL16/KSBR",
+      "documentType": "účetní závěrka",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL15/KSBR",
+      "documentType": "podpisové vzory",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL14/KSBR",
+      "documentType": "ostatní",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL13/KSBR",
+      "documentType": "stanovy společnosti",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL12/KSBR",
+      "documentType": "notářský zápis",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL11/KSBR",
+      "documentType": "ostatní",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL10/KSBR",
+      "documentType": "ostatní",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL9/KSBR",
+      "documentType": "ostatní",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL8/KSBR",
+      "documentType": "stanovy společnosti",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL7/KSBR",
+      "documentType": "ostatní",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL6/KSBR",
+      "documentType": "stanovy společnosti",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL5/KSBR",
+      "documentType": "stanovy společnosti",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL4/KSBR",
+      "documentType": "stanovy společnosti",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL3/KSBR",
+      "documentType": "účetní závěrka",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL2/KSBR",
+      "documentType": "účetní závěrka",
+      "downloaded": false
+    },
+    {
+      "referenceLabel": "B 6130/SL1/KSBR",
+      "documentType": "stanovy společnosti",
+      "downloaded": false
+    }
+  ]
+}

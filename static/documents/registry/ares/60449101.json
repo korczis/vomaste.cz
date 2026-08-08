@@ -1,0 +1,205 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "60449101"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "60449101",
+        "obchodniJmeno": "Asociace ředitelů základních škol České republiky, z.s.",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 19,
+          "nazevSpravnihoObvodu": "Praha 1",
+          "kodMestskehoObvodu": 19,
+          "nazevMestskehoObvodu": "Praha 1",
+          "kodMestskeCastiObvodu": 500054,
+          "kodUlice": 480606,
+          "nazevMestskeCastiObvodu": "Praha 1",
+          "nazevUlice": "Senovážné náměstí",
+          "cisloDomovni": 977,
+          "kodCastiObce": 490148,
+          "cisloOrientacni": 24,
+          "nazevCastiObce": "Nové Město",
+          "kodAdresnihoMista": 21707944,
+          "psc": 11000,
+          "textovaAdresa": "Senovážné náměstí 977/24, Nové Město, 11000 Praha 1",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "706",
+        "pravniFormaRos": "706",
+        "financniUrad": "001",
+        "datumVzniku": "1994-07-07",
+        "datumAktualizace": "2026-02-04",
+        "icoId": "60449101",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Senovážné náměstí 977/24",
+          "radekAdresy2": "Nové Město",
+          "radekAdresy3": "11000 Praha 1"
+        },
+        "czNace2008": [
+          "94120"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "AKTIVNI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "NEEXISTUJICI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "NEEXISTUJICI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "NEEXISTUJICI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Asociace ředitelů základních škol České republiky, z.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 19,
+                  "nazevSpravnihoObvodu": "Praha 1",
+                  "kodMestskehoObvodu": 19,
+                  "nazevMestskehoObvodu": "Praha 1",
+                  "kodMestskeCastiObvodu": 500054,
+                  "kodUlice": 480606,
+                  "nazevMestskeCastiObvodu": "Praha 1",
+                  "nazevUlice": "Senovážné náměstí",
+                  "cisloDomovni": 977,
+                  "kodCastiObce": 490148,
+                  "cisloOrientacni": 24,
+                  "nazevCastiObce": "Nové Město",
+                  "kodAdresnihoMista": 21707944,
+                  "psc": 11000,
+                  "textovaAdresa": "Senovážné náměstí 977/24, Nové Město, 11000 Praha 1",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "706",
+            "pravniFormaRos": "706",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Asociace ředitelů základních škol České republiky, z.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 19,
+                  "nazevSpravnihoObvodu": "Praha 1",
+                  "kodMestskehoObvodu": 19,
+                  "nazevMestskehoObvodu": "Praha 1",
+                  "kodMestskeCastiObvodu": 500054,
+                  "kodUlice": 480606,
+                  "nazevMestskeCastiObvodu": "Praha 1",
+                  "nazevUlice": "Senovážné náměstí",
+                  "cisloDomovni": 977,
+                  "kodCastiObce": 490148,
+                  "cisloOrientacni": 24,
+                  "nazevCastiObce": "Nové Město",
+                  "kodAdresnihoMista": 21707944,
+                  "psc": 11000,
+                  "textovaAdresa": "Senovážné náměstí 977/24, Nové Město, 11000 Praha 1",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "706",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Asociace ředitelů základních škol České republiky, z.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 19,
+                  "nazevSpravnihoObvodu": "Praha 1",
+                  "kodMestskehoObvodu": 19,
+                  "nazevMestskehoObvodu": "Praha 1",
+                  "kodMestskeCastiObvodu": 500054,
+                  "kodUlice": 480606,
+                  "nazevMestskeCastiObvodu": "Praha 1",
+                  "nazevUlice": "Senovážné náměstí",
+                  "cisloDomovni": 977,
+                  "kodCastiObce": 490148,
+                  "cisloOrientacni": 24,
+                  "nazevCastiObce": "Nové Město",
+                  "kodAdresnihoMista": 21707944,
+                  "psc": 11000,
+                  "textovaAdresa": "Senovážné náměstí 977/24, Nové Město, 11000 Praha 1",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "706",
+            "spisovaZnacka": "L 74455/MSPH",
+            "datovyZdroj": "vr"
+          }
+        ],
+        "czNace": [
+          "94120"
+        ]
+      }
+    ]
+  }
+}

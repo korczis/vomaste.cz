@@ -1,0 +1,46 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "06616275",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06616275",
+  "nazev": "Učitelská platforma, z.s.",
+  "sidlo": "Husníkova 2087/24, Stodůlky, 15800 Praha 5",
+  "spisovaZnacka": {
+    "soud": "MSPH",
+    "oddil": "L",
+    "vlozka": "69402"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "člen výkonného výboru",
+      "since": "2025-04-05",
+      "kind": "person",
+      "name": "Petra Mazancová"
+    },
+    {
+      "role": "člen výkonného výboru",
+      "since": "2025-04-05",
+      "kind": "person",
+      "name": "Jan Kuzebauch"
+    },
+    {
+      "role": "člen výkonného výboru",
+      "since": "2025-10-04",
+      "kind": "person",
+      "name": "Josef Halama"
+    },
+    {
+      "role": "člen",
+      "since": "2025-10-04",
+      "kind": "person",
+      "name": "Petra Rakoušová"
+    },
+    {
+      "role": "člen",
+      "since": "2025-10-04",
+      "kind": "person",
+      "name": "Dana Ticháčková"
+    }
+  ],
+  "spolecnici": []
+}

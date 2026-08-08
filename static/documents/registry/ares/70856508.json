@@ -1,0 +1,166 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "70856508"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "70856508",
+        "obchodniJmeno": "Státní fond dopravní infrastruktury",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodOkresu": 3100,
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 94,
+          "nazevSpravnihoObvodu": "Praha 9",
+          "kodMestskehoObvodu": 94,
+          "nazevMestskehoObvodu": "Praha 9",
+          "kodMestskeCastiObvodu": 500216,
+          "kodUlice": 469718,
+          "nazevMestskeCastiObvodu": "Praha 9",
+          "nazevUlice": "Sokolovská",
+          "cisloDomovni": 1955,
+          "kodCastiObce": 490105,
+          "cisloOrientacni": 278,
+          "nazevCastiObce": "Libeň",
+          "kodAdresnihoMista": 22500391,
+          "psc": 19000,
+          "textovaAdresa": "Sokolovská 1955/278, Libeň, 19000 Praha 9",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "381",
+        "pravniFormaRos": "382",
+        "financniUrad": "009",
+        "datumVzniku": "2000-07-01",
+        "datumAktualizace": "2026-05-23",
+        "dic": "CZ70856508",
+        "icoId": "70856508",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Sokolovská 1955/278",
+          "radekAdresy2": "Libeň",
+          "radekAdresy3": "19000 Praha 9"
+        },
+        "czNace2008": [
+          "84130"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "NEEXISTUJICI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "NEEXISTUJICI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "AKTIVNI",
+          "stavZdrojeMonitor": "AKTIVNI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Státní fond dopravní infrastruktury",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 94,
+                  "nazevSpravnihoObvodu": "Praha 9",
+                  "kodMestskehoObvodu": 94,
+                  "nazevMestskehoObvodu": "Praha 9",
+                  "kodMestskeCastiObvodu": 500216,
+                  "kodUlice": 469718,
+                  "nazevMestskeCastiObvodu": "Praha 9",
+                  "nazevUlice": "Sokolovská",
+                  "cisloDomovni": 1955,
+                  "kodCastiObce": 490105,
+                  "cisloOrientacni": 278,
+                  "nazevCastiObce": "Libeň",
+                  "kodAdresnihoMista": 22500391,
+                  "psc": 19000,
+                  "textovaAdresa": "Sokolovská 1955/278, Libeň, 19000 Praha 9",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "381",
+            "pravniFormaRos": "382",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Státní fond dopravní infrastruktury",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodOkresu": 3100,
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 94,
+                  "nazevSpravnihoObvodu": "Praha 9",
+                  "kodMestskehoObvodu": 94,
+                  "nazevMestskehoObvodu": "Praha 9",
+                  "kodMestskeCastiObvodu": 500216,
+                  "kodUlice": 469718,
+                  "nazevMestskeCastiObvodu": "Praha 9",
+                  "nazevUlice": "Sokolovská",
+                  "cisloDomovni": 1955,
+                  "kodCastiObce": 490105,
+                  "cisloOrientacni": 278,
+                  "nazevCastiObce": "Libeň",
+                  "kodAdresnihoMista": 22500391,
+                  "psc": 19000,
+                  "textovaAdresa": "Sokolovská 1955/278, Libeň, 19000 Praha 9",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "382",
+            "datovyZdroj": "ros"
+          }
+        ],
+        "czNace": [
+          "84130"
+        ],
+        "subRegistrSzr": "szr"
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "04347803",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/04347803",
+  "nazev": "MEAS Consulting s.r.o. v likvidaci",
+  "sidlo": "Bělehradská 858/23, Vinohrady, 12000 Praha 2",
+  "spisovaZnacka": {
+    "soud": "MSPH",
+    "oddil": "C",
+    "vlozka": "246247"
+  },
+  "statutarniOrgan": [],
+  "spolecnici": [
+    {
+      "kind": "person",
+      "name": "Mgr. Petr Macinka",
+      "podil": "1/1",
+      "vklad": "20000;00",
+      "splaceno": "100;00"
+    }
+  ]
+}

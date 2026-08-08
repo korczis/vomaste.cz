@@ -1,0 +1,94 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "26547783",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/26547783",
+  "nazev": "Asociace malých a středních podniků a živnostníků ČR",
+  "sidlo": "Sokolovská 100/94, Karlín, 18600 Praha 8",
+  "spisovaZnacka": {
+    "soud": "MSPH",
+    "oddil": "L",
+    "vlozka": "12282"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "Předseda představenstva",
+      "since": "2025-11-13",
+      "kind": "person",
+      "name": "Th.Dr. Ing Josef Jaroš"
+    },
+    {
+      "role": "Místopředseda představenstva",
+      "since": "2025-11-13",
+      "kind": "person",
+      "name": "Ing. Karel Dobeš"
+    },
+    {
+      "role": "Místopředseda představenstva",
+      "since": "2025-11-13",
+      "kind": "person",
+      "name": "Ing. Pavla Břečková"
+    },
+    {
+      "role": "Místopředseda představenstva",
+      "since": "2025-11-13",
+      "kind": "person",
+      "name": "Ing. Šárka Ošťádalová"
+    },
+    {
+      "role": "Místopředseda představenstva",
+      "since": "2025-11-13",
+      "kind": "person",
+      "name": "Ing. Pavel Vokáč"
+    },
+    {
+      "role": "Místopředseda představenstva",
+      "since": "2025-11-13",
+      "kind": "person",
+      "name": "Gabriela Hrbáčková Kedová"
+    },
+    {
+      "role": "Člen představenstva",
+      "since": "2026-01-19",
+      "kind": "person",
+      "name": "Eva Svobodová"
+    },
+    {
+      "role": "Člen představenstva",
+      "since": "2026-01-19",
+      "kind": "person",
+      "name": "Ing. Michaela Luňáčková"
+    },
+    {
+      "role": "Člen přdstavenstva",
+      "since": "2026-01-19",
+      "kind": "person",
+      "name": "Ing. Ladislav Profota"
+    },
+    {
+      "role": "Člen představenstva",
+      "since": "2026-01-19",
+      "kind": "person",
+      "name": "Petr Milata"
+    },
+    {
+      "role": "Člen představenstva",
+      "since": "2026-01-19",
+      "kind": "person",
+      "name": "Ing. Luboš Kastner"
+    },
+    {
+      "role": "Člen představenstva",
+      "since": "2026-01-19",
+      "kind": "person",
+      "name": "JUDr. Marek Dlouhý"
+    },
+    {
+      "role": "Člen představenstva",
+      "since": "2026-01-19",
+      "kind": "person",
+      "name": "Tomáš Nidetzký"
+    }
+  ],
+  "spolecnici": []
+}

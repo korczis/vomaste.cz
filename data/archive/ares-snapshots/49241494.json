@@ -1,0 +1,34 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "49241494",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/49241494",
+  "nazev": "Podpůrný a garanční rolnický a lesnický fond, a.s.",
+  "sidlo": "Sokolovská 394/17, Karlín, 18600 Praha 8",
+  "spisovaZnacka": {
+    "soud": "MSPH",
+    "oddil": "B",
+    "vlozka": "2130"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "Předseda představenstva",
+      "since": "2022-06-22",
+      "kind": "person",
+      "name": "doc. Dr. Ing. Josef Kučera"
+    },
+    {
+      "role": "Místopředseda představenstva",
+      "since": "2022-03-03",
+      "kind": "person",
+      "name": "Mgr. Ondřej Mareček"
+    },
+    {
+      "role": "člen představenstva",
+      "since": "2023-07-26",
+      "kind": "person",
+      "name": "Dr. Ing. Radovan Martínek"
+    }
+  ],
+  "spolecnici": []
+}

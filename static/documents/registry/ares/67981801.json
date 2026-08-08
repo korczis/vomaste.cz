@@ -1,0 +1,166 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "67981801"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "67981801",
+        "obchodniJmeno": "Ředitelství vodních cest ČR",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodOkresu": 3100,
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 19,
+          "nazevSpravnihoObvodu": "Praha 1",
+          "kodMestskehoObvodu": 19,
+          "nazevMestskehoObvodu": "Praha 1",
+          "kodMestskeCastiObvodu": 500054,
+          "kodUlice": 480525,
+          "nazevMestskeCastiObvodu": "Praha 1",
+          "nazevUlice": "nábřeží Ludvíka Svobody",
+          "cisloDomovni": 1222,
+          "kodCastiObce": 490148,
+          "cisloOrientacni": 12,
+          "nazevCastiObce": "Nové Město",
+          "kodAdresnihoMista": 21710635,
+          "psc": 11000,
+          "textovaAdresa": "nábřeží Ludvíka Svobody 1222/12, Nové Město, 11000 Praha 1",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "325",
+        "pravniFormaRos": "325",
+        "financniUrad": "001",
+        "datumVzniku": "1998-04-01",
+        "datumAktualizace": "2026-03-12",
+        "dic": "CZ67981801",
+        "icoId": "67981801",
+        "adresaDorucovaci": {
+          "radekAdresy1": "nábřeží Ludvíka Svobody 1222/12",
+          "radekAdresy2": "Nové Město",
+          "radekAdresy3": "11000 Praha 1"
+        },
+        "czNace2008": [
+          "52220"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "NEEXISTUJICI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "NEEXISTUJICI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "NEEXISTUJICI",
+          "stavZdrojeMonitor": "AKTIVNI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Ředitelství vodních cest ČR",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 19,
+                  "nazevSpravnihoObvodu": "Praha 1",
+                  "kodMestskehoObvodu": 19,
+                  "nazevMestskehoObvodu": "Praha 1",
+                  "kodMestskeCastiObvodu": 500054,
+                  "kodUlice": 480525,
+                  "nazevMestskeCastiObvodu": "Praha 1",
+                  "nazevUlice": "nábřeží Ludvíka Svobody",
+                  "cisloDomovni": 1222,
+                  "kodCastiObce": 490148,
+                  "cisloOrientacni": 12,
+                  "nazevCastiObce": "Nové Město",
+                  "kodAdresnihoMista": 21710635,
+                  "psc": 11000,
+                  "textovaAdresa": "nábřeží Ludvíka Svobody 1222/12, Nové Město, 11000 Praha 1",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "325",
+            "pravniFormaRos": "325",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Ředitelství vodních cest ČR",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodOkresu": 3100,
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 19,
+                  "nazevSpravnihoObvodu": "Praha 1",
+                  "kodMestskehoObvodu": 19,
+                  "nazevMestskehoObvodu": "Praha 1",
+                  "kodMestskeCastiObvodu": 500054,
+                  "kodUlice": 480525,
+                  "nazevMestskeCastiObvodu": "Praha 1",
+                  "nazevUlice": "nábřeží Ludvíka Svobody",
+                  "cisloDomovni": 1222,
+                  "kodCastiObce": 490148,
+                  "cisloOrientacni": 12,
+                  "nazevCastiObce": "Nové Město",
+                  "kodAdresnihoMista": 21710635,
+                  "psc": 11000,
+                  "textovaAdresa": "nábřeží Ludvíka Svobody 1222/12, Nové Město, 11000 Praha 1",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "325",
+            "datovyZdroj": "ros"
+          }
+        ],
+        "czNace": [
+          "52220"
+        ],
+        "subRegistrSzr": "szr"
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "48169188",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/48169188",
+  "nazev": "Mlékárna Hlinsko, a.s.",
+  "sidlo": "Kouty 53, 53901 Hlinsko",
+  "spisovaZnacka": {
+    "soud": "KSHK",
+    "oddil": "C",
+    "vlozka": "4080"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "Předseda představenstva",
+      "since": "2021-06-01",
+      "kind": "person",
+      "name": "Jiří Tvrdík"
+    },
+    {
+      "role": "Členka představenstva",
+      "since": "2024-06-07",
+      "kind": "person",
+      "name": "Ing. Lada Hájková"
+    },
+    {
+      "role": "místopředseda představenstva",
+      "since": "2024-05-04",
+      "kind": "company",
+      "name": "AGROFERT, a.s.",
+      "ico": "26185610"
+    },
+    {
+      "role": "Člen představenstva",
+      "since": "2025-03-07",
+      "kind": "person",
+      "name": "Ing. Martin Krystián"
+    }
+  ],
+  "spolecnici": []
+}

@@ -1,0 +1,254 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "22419519"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "22419519",
+        "obchodniJmeno": "BYD Automotive Czech s.r.o.",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 86,
+          "nazevSpravnihoObvodu": "Praha 8",
+          "kodMestskehoObvodu": 86,
+          "nazevMestskehoObvodu": "Praha 8",
+          "kodMestskeCastiObvodu": 500208,
+          "kodUlice": 507351,
+          "nazevMestskeCastiObvodu": "Praha 8",
+          "nazevUlice": "Rohanské nábřeží",
+          "cisloDomovni": 693,
+          "kodCastiObce": 400637,
+          "cisloOrientacni": 10,
+          "nazevCastiObce": "Karlín",
+          "kodAdresnihoMista": 78354277,
+          "psc": 18600,
+          "textovaAdresa": "Rohanské nábřeží 693/10, Karlín, 18600 Praha 8",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "112",
+        "pravniFormaRos": "112",
+        "financniUrad": "008",
+        "datumVzniku": "2025-01-03",
+        "datumAktualizace": "2026-08-02",
+        "dic": "CZ22419519",
+        "icoId": "22419519",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Rohanské nábřeží 693/10",
+          "radekAdresy2": "Karlín",
+          "radekAdresy3": "18600 Praha 8"
+        },
+        "czNace2008": [
+          "45110",
+          "47",
+          "52",
+          "46",
+          "00"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "AKTIVNI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "NEEXISTUJICI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "BYD Automotive Czech s.r.o.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 86,
+                  "nazevSpravnihoObvodu": "Praha 8",
+                  "kodMestskehoObvodu": 86,
+                  "nazevMestskehoObvodu": "Praha 8",
+                  "kodMestskeCastiObvodu": 500208,
+                  "kodUlice": 507351,
+                  "nazevMestskeCastiObvodu": "Praha 8",
+                  "nazevUlice": "Rohanské nábřeží",
+                  "cisloDomovni": 693,
+                  "kodCastiObce": 400637,
+                  "cisloOrientacni": 10,
+                  "nazevCastiObce": "Karlín",
+                  "kodAdresnihoMista": 78354277,
+                  "psc": 18600,
+                  "textovaAdresa": "Rohanské nábřeží 693/10, Karlín, 18600 Praha 8",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "112",
+            "pravniFormaRos": "112",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "BYD Automotive Czech s.r.o.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 86,
+                  "nazevSpravnihoObvodu": "Praha 8",
+                  "kodMestskehoObvodu": 86,
+                  "nazevMestskehoObvodu": "Praha 8",
+                  "kodMestskeCastiObvodu": 500208,
+                  "kodUlice": 507351,
+                  "nazevMestskeCastiObvodu": "Praha 8",
+                  "nazevUlice": "Rohanské nábřeží",
+                  "cisloDomovni": 693,
+                  "kodCastiObce": 400637,
+                  "cisloOrientacni": 10,
+                  "nazevCastiObce": "Karlín",
+                  "kodAdresnihoMista": 78354277,
+                  "psc": 18600,
+                  "textovaAdresa": "Rohanské nábřeží 693/10, Karlín, 18600 Praha 8",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "112",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "BYD Automotive Czech s.r.o.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 86,
+                  "nazevSpravnihoObvodu": "Praha 8",
+                  "kodMestskehoObvodu": 86,
+                  "nazevMestskehoObvodu": "Praha 8",
+                  "kodMestskeCastiObvodu": 500208,
+                  "kodUlice": 507351,
+                  "nazevMestskeCastiObvodu": "Praha 8",
+                  "nazevUlice": "Rohanské nábřeží",
+                  "cisloDomovni": 693,
+                  "kodCastiObce": 400637,
+                  "cisloOrientacni": 10,
+                  "nazevCastiObce": "Karlín",
+                  "kodAdresnihoMista": 78354277,
+                  "psc": 18600,
+                  "textovaAdresa": "Rohanské nábřeží 693/10, Karlín, 18600 Praha 8",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "112",
+            "datovyZdroj": "rzp"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "BYD Automotive Czech s.r.o.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 86,
+                  "nazevSpravnihoObvodu": "Praha 8",
+                  "kodMestskehoObvodu": 86,
+                  "nazevMestskehoObvodu": "Praha 8",
+                  "kodMestskeCastiObvodu": 500208,
+                  "kodUlice": 507351,
+                  "nazevMestskeCastiObvodu": "Praha 8",
+                  "nazevUlice": "Rohanské nábřeží",
+                  "cisloDomovni": 693,
+                  "kodCastiObce": 400637,
+                  "cisloOrientacni": 10,
+                  "nazevCastiObce": "Karlín",
+                  "kodAdresnihoMista": 78354277,
+                  "psc": 18600,
+                  "textovaAdresa": "Rohanské nábřeží 693/10, Karlín, 18600 Praha 8",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "112",
+            "spisovaZnacka": "C 416418/MSPH",
+            "datovyZdroj": "vr"
+          }
+        ],
+        "czNace": [
+          "46710",
+          "00",
+          "46",
+          "52",
+          "47"
+        ]
+      }
+    ]
+  }
+}
