@@ -4,14 +4,14 @@
     "case": 94,
     "claim": 981,
     "dossier": 36,
-    "entity": 531,
+    "entity": 532,
     "gap": 204,
     "relation": 334,
     "source": 729,
     "update": 85
   },
   "countsDossiers": 36,
-  "countsEntities": 531,
-  "graphNodes": 531,
+  "countsEntities": 532,
+  "graphNodes": 532,
   "graphEdges": 334
 }

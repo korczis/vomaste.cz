@@ -14,7 +14,7 @@ vypovídá o tom, že **tenhle web** má u daného dossieru nejvíc nedodělané
 zdrojovací práce. Je to metrika naší evidence, ne jeho jednání. Report se
 neroutuje na web, nezakládá dossier a není autorizačním rozhodnutím.
 
-**Datový horizont**: `2026-08-06` — nejnovější datum v datasetu. Report neobsahuje čas
+**Datový horizont**: `2026-08-08` — nejnovější datum v datasetu. Report neobsahuje čas
 běhu: stáří mezer se měří proti nejnovějšímu datu v datech, takže dva běhy nad
 stejným stromem dají bajt po bajtu stejný soubor.
 

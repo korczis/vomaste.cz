@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 496 context entities across 36 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 497 context entities across 36 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -1096,6 +1096,16 @@ Generated from 496 context entities across 36 dossier(s). Regenerate with `npm r
 - Sources: SRC-11, SRC-13 (1 independent source family)
 - Relations:
   - edge-stastny-frantisek-horak (stastny -> frantisek-horak, "na jeho návrh vláda odvolala i člena Rady Národní sportovní agentury Františka Horáka", dossier: boris-stastny)
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## František Pavlík (`frantisek-pavlik`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## František Talíř (`frantisek-talir`)
