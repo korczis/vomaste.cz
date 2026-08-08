@@ -1,0 +1,74 @@
+{
+  "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
+  "retrieved": "2026-08-08",
+  "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/22461787",
+  "status": "OK",
+  "subject": {
+    "ico": "22461787",
+    "businessName": "EXTREME BFG CAST, s.r.o.",
+    "registerReference": "C 143133/KSBR"
+  },
+  "filings": [
+    {
+      "referenceLabel": "C 143133/SL1/KSBR",
+      "documentType": "notářský zápis [NZ 22/2025, N 23/2025]",
+      "createdAt": "09-01-2025",
+      "filedAt": "13-01-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 141132
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 143133/SL2/KSBR",
+      "documentType": "notářský zápis [NZ 587/2025, N 470/2025]",
+      "createdAt": "23-05-2025",
+      "filedAt": "27-05-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 129308
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 143133/SL3/KSBR",
+      "documentType": "notářský zápis [NZ 243/2026, N 221/2026]",
+      "createdAt": "27-02-2026",
+      "filedAt": "27-02-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 8,
+          "sizeBytes": 125542
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 143133/SL5/KSBR",
+      "documentType": "účetní závěrka [2025] - předána prostřednictvím správce daně z příjmů k 04.07.2026",
+      "createdAt": "04-07-2026",
+      "receivedByCourtAt": "05-07-2026",
+      "filedAt": "05-07-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 314165
+        },
+        {
+          "pageCount": 0,
+          "sizeBytes": 1241
+        },
+        {
+          "pageCount": 3,
+          "sizeBytes": 121442
+        }
+      ]
+    }
+  ]
+}

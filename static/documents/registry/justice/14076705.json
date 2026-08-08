@@ -1,0 +1,53 @@
+{
+  "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
+  "retrieved": "2026-08-08",
+  "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/14076705",
+  "status": "OK",
+  "subject": {
+    "ico": "14076705",
+    "businessName": "Motoristé Praha s.r.o.",
+    "registerReference": "C 360122/MSPH"
+  },
+  "filings": [
+    {
+      "referenceLabel": "C 360122/SL1/MSPH",
+      "documentType": "notářský zápis [1620/2021]",
+      "createdAt": "11-11-2021",
+      "filedAt": "20-12-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 353792
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 360122/SL2/MSPH",
+      "documentType": "notářský zápis [NZ 570/2022]",
+      "createdAt": "31-05-2022",
+      "filedAt": "01-06-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 8,
+          "sizeBytes": 292183
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 360122/SL3/MSPH",
+      "documentType": "ostatní rozhodnutí jediného společníka",
+      "createdAt": "19-12-2025",
+      "receivedByCourtAt": "19-12-2025",
+      "filedAt": "16-01-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 235934
+        }
+      ]
+    }
+  ]
+}

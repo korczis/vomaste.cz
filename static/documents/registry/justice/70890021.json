@@ -1,0 +1,1918 @@
+{
+  "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
+  "retrieved": "2026-08-08",
+  "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/70890021",
+  "status": "OK",
+  "subject": {
+    "ico": "70890021",
+    "businessName": "Povodí Odry, státní podnik",
+    "registerReference": "AXIV 584/KSOS"
+  },
+  "filings": [
+    {
+      "referenceLabel": "AXIV 584/SL1/KSOS",
+      "documentType": "ostatní zápis z jednání DR 1/2001",
+      "createdAt": "07-03-2001",
+      "receivedByCourtAt": "26-03-2001",
+      "filedAt": "24-04-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 91330
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL2/KSOS",
+      "documentType": "zakladatelské dokumenty zakladatelská listina",
+      "createdAt": "29-03-2002",
+      "filedAt": "29-08-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 138769
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL4/KSOS",
+      "documentType": "ostatní jmenování do funkce",
+      "createdAt": "18-01-2001",
+      "receivedByCourtAt": "02-04-2001",
+      "filedAt": "24-04-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 23926
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL5/KSOS",
+      "documentType": "účetní závěrka r. 2001(pouze zpráva auditora)",
+      "filedAt": "29-08-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 30946
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL6/KSOS",
+      "documentType": "výroční zpráva r. 2001 vč.účet.závěrky",
+      "receivedByCourtAt": "29-10-2002",
+      "filedAt": "31-10-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 30,
+          "sizeBytes": 1388791
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL7/KSOS",
+      "documentType": "výroční zpráva r. 2002 vč. účet. závěrky",
+      "receivedByCourtAt": "06-10-2003",
+      "filedAt": "08-10-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 52,
+          "sizeBytes": 1441566
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL9/KSOS",
+      "documentType": "výroční zpráva r. 2003",
+      "receivedByCourtAt": "24-06-2004",
+      "filedAt": "28-06-2004",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 63,
+          "sizeBytes": 2847536
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL10/KSOS",
+      "documentType": "účetní závěrka r. 2003",
+      "createdAt": "31-12-2003",
+      "receivedByCourtAt": "24-06-2004",
+      "filedAt": "28-06-2004",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 24,
+          "sizeBytes": 2018277
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL11/KSOS",
+      "documentType": "zakladatelské dokumenty Zakl.listina - Statut",
+      "createdAt": "25-05-2004",
+      "receivedByCourtAt": "24-06-2004",
+      "filedAt": "28-06-2004",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 8,
+          "sizeBytes": 223252
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL12/KSOS",
+      "documentType": "výroční zpráva r. 2004",
+      "receivedByCourtAt": "22-06-2005",
+      "filedAt": "28-06-2005",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 26,
+          "sizeBytes": 1921055
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL13/KSOS",
+      "documentType": "zakladatelské dokumenty zaklád.list.",
+      "createdAt": "29-03-2005",
+      "receivedByCourtAt": "22-06-2005",
+      "filedAt": "28-06-2005",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 137098
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL14/KSOS",
+      "documentType": "výroční zpráva r. 2005 vč.úč.záv.",
+      "receivedByCourtAt": "27-07-2006",
+      "filedAt": "16-08-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 67,
+          "sizeBytes": 2362034
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL15/KSOS",
+      "documentType": "zakladatelské dokumenty zakládací listina",
+      "createdAt": "26-04-2006",
+      "receivedByCourtAt": "27-07-2006",
+      "filedAt": "16-08-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 158211
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL16/KSOS",
+      "documentType": "zakladatelské dokumenty zakl.list.",
+      "createdAt": "16-11-2006",
+      "receivedByCourtAt": "03-01-2007",
+      "filedAt": "08-01-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 145162
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL17/KSOS",
+      "documentType": "výroční zpráva r. 2006 úč.z.,zpr.aud.",
+      "receivedByCourtAt": "22-06-2007",
+      "filedAt": "19-07-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 66,
+          "sizeBytes": 4453000
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL18/KSOS",
+      "documentType": "ostatní rozh. DR-schv.ú.z.r.06",
+      "createdAt": "20-03-2007",
+      "receivedByCourtAt": "22-06-2006",
+      "filedAt": "19-07-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 171725
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL19/KSOS",
+      "documentType": "zakladatelské dokumenty Zakladatelská listina",
+      "createdAt": "25-04-2007",
+      "receivedByCourtAt": "18-07-2007",
+      "filedAt": "13-08-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 148859
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL21/KSOS",
+      "documentType": "zakladatelské dokumenty zakl.list.",
+      "createdAt": "02-10-2007",
+      "receivedByCourtAt": "25-10-2007",
+      "filedAt": "06-11-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 451477
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL23/KSOS",
+      "documentType": "výroční zpráva r. 2007vč.úč.záv,zpr.audit.",
+      "receivedByCourtAt": "08-07-2008",
+      "filedAt": "10-07-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 33,
+          "sizeBytes": 4884208
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL24/KSOS",
+      "documentType": "ostatní rozdělení zisku r. 2007",
+      "createdAt": "30-06-2008",
+      "receivedByCourtAt": "08-07-2008",
+      "filedAt": "10-07-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 272422
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL25/KSOS",
+      "documentType": "zakladatelské dokumenty -č.j.37252/2008-13220",
+      "createdAt": "30-09-2008",
+      "receivedByCourtAt": "22-10-2008",
+      "filedAt": "23-10-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 324837
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL27/KSOS",
+      "documentType": "rozhod. o statut. orgánu -jmen.člen.DR-Birklen,Hlaváč",
+      "receivedByCourtAt": "08-01-2009",
+      "filedAt": "22-01-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 25684
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL28/KSOS",
+      "documentType": "ostatní -výsled.voleb čl.DR",
+      "createdAt": "16-09-2008",
+      "receivedByCourtAt": "08-01-2009",
+      "filedAt": "22-01-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 35834
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL29/KSOS",
+      "documentType": "zakladatelské dokumenty -zak.lis.č.j.43704/2008-13220",
+      "createdAt": "28-11-2008",
+      "receivedByCourtAt": "08-01-2009",
+      "filedAt": "22-01-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 147215
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL30/KSOS",
+      "documentType": "zakladatelské dokumenty -ZL č.859/2009-13220",
+      "createdAt": "09-01-2009",
+      "receivedByCourtAt": "21-01-2009",
+      "filedAt": "09-02-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 325445
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL31/KSOS",
+      "documentType": "rozhod. o statut. orgánu -odvol.z fce Ing.Schneider",
+      "createdAt": "02-01-2009",
+      "receivedByCourtAt": "27-01-2009",
+      "filedAt": "09-02-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 15915
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL32/KSOS",
+      "documentType": "rozhod. o statut. orgánu -jmenov. do fce Ing.Pospíšil",
+      "createdAt": "22-12-2008",
+      "receivedByCourtAt": "27-01-2009",
+      "filedAt": "09-02-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 19767
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL34/KSOS",
+      "documentType": "zakladatelské dokumenty -zakládací listina",
+      "receivedByCourtAt": "16-02-2009",
+      "filedAt": "06-03-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 296817
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL35/KSOS",
+      "documentType": "zakladatelské dokumenty -zakl.lis.16455/09-13220",
+      "createdAt": "11-05-2009",
+      "receivedByCourtAt": "25-05-2009",
+      "filedAt": "04-06-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 302053
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL36/KSOS",
+      "documentType": "výroční zpráva r.2008 s úč.záv.,zpr.aud.",
+      "receivedByCourtAt": "24-06-2009",
+      "filedAt": "03-07-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 40,
+          "sizeBytes": 5398758
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL37/KSOS",
+      "documentType": "účetní závěrka r.2008-jen rozvaha",
+      "receivedByCourtAt": "24-06-2009",
+      "filedAt": "03-07-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 263059
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL38/KSOS",
+      "documentType": "ostatní -rozděl.zisku r.2008",
+      "receivedByCourtAt": "24-06-2009",
+      "filedAt": "03-07-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 79868
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL39/KSOS",
+      "documentType": "zakladatelské dokumenty -Zakládací listina",
+      "createdAt": "01-12-2009",
+      "receivedByCourtAt": "28-12-2009",
+      "filedAt": "06-01-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 301775
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL40/KSOS",
+      "documentType": "zakladatelské dokumenty - Zaklád.list.- ÚZ z 1.2.2010",
+      "receivedByCourtAt": "22-02-2010",
+      "filedAt": "24-02-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 305219
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL41/KSOS",
+      "documentType": "zakladatelské dokumenty - Zaklád.list.- ÚZ k 26.4.2010",
+      "receivedByCourtAt": "05-05-2010",
+      "filedAt": "14-05-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 289259
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL42/KSOS",
+      "documentType": "účetní závěrka r. 2009 vč.příl.,audit",
+      "receivedByCourtAt": "17-05-2010",
+      "filedAt": "19-05-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 20,
+          "sizeBytes": 642398
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL43/KSOS",
+      "documentType": "zakladatelské dokumenty -ÚZ Zakládací list.k 14.5.2010",
+      "createdAt": "14-05-2010",
+      "receivedByCourtAt": "08-06-2010",
+      "filedAt": "21-06-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 318595
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL44/KSOS",
+      "documentType": "výroční zpráva r. 2009 vč.úč.záv.,příl.,audit",
+      "receivedByCourtAt": "08-07-2010",
+      "filedAt": "13-07-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 50,
+          "sizeBytes": 3545346
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL45/KSOS",
+      "documentType": "zakladatelské dokumenty - Zaklád.list.- ÚZ k 13.8.2010",
+      "receivedByCourtAt": "25-08-2010",
+      "filedAt": "01-09-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 611396
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL46/KSOS",
+      "documentType": "výroční zpráva r. 2010,úč.z.,příl.,zpr.aud.",
+      "receivedByCourtAt": "27-06-2011",
+      "filedAt": "01-07-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 46,
+          "sizeBytes": 4695855
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL47/KSOS",
+      "documentType": "účetní závěrka rozv. r. 2010+rozděl.zisku",
+      "receivedByCourtAt": "27-06-2011",
+      "filedAt": "01-07-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 698110
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL48/KSOS",
+      "documentType": "zakladatelské dokumenty -ÚZ zakl. list. k 12.12.2011",
+      "receivedByCourtAt": "02-01-2012",
+      "filedAt": "23-01-2012",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 311612
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL49/KSOS",
+      "documentType": "zakladatelské dokumenty - ÚZ zakl.list. k 10.4.2012",
+      "receivedByCourtAt": "11-05-2012",
+      "filedAt": "04-06-2012",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 0
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL50/KSOS",
+      "documentType": "ostatní - schvál. ÚZ r.2011",
+      "receivedByCourtAt": "14-06-2012",
+      "filedAt": "30-07-2012",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 0
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL51/KSOS",
+      "documentType": "účetní závěrka r. 2011 - Rozvaha",
+      "receivedByCourtAt": "14-06-2012",
+      "filedAt": "30-07-2012",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 0
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL52/KSOS",
+      "documentType": "zakladatelské dokumenty - ÚZ zakl.list. k 4.6.2012",
+      "receivedByCourtAt": "24-07-2012",
+      "filedAt": "01-10-2012",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 0
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL53/KSOS",
+      "documentType": "zakladatelské dokumenty ÚZ zakl.listiny",
+      "createdAt": "22-04-2013",
+      "receivedByCourtAt": "07-05-2013",
+      "filedAt": "20-05-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 323921
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL54/KSOS",
+      "documentType": "zakladatelské dokumenty ÚZ zakl.listiny",
+      "createdAt": "22-04-2013",
+      "receivedByCourtAt": "21-05-2013",
+      "filedAt": "23-05-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 1211660
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL55/KSOS",
+      "documentType": "výroční zpráva [2012]",
+      "receivedByCourtAt": "18-06-2013",
+      "filedAt": "18-06-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 25,
+          "sizeBytes": 14805280
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL56/KSOS",
+      "documentType": "účetní závěrka [2012] Rozvaha",
+      "receivedByCourtAt": "18-06-2013",
+      "filedAt": "18-06-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 575444
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL57/KSOS",
+      "documentType": "ostatní schválení rozděl.zisku r.2012",
+      "receivedByCourtAt": "18-06-2013",
+      "filedAt": "18-06-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 184582
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL58/KSOS",
+      "documentType": "účetní závěrka [2011], výroční zpráva [2011], zpráva auditora [2011] s příl.",
+      "receivedByCourtAt": "27-09-2013",
+      "filedAt": "30-09-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 26,
+          "sizeBytes": 16706136
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL59/KSOS",
+      "documentType": "zakladatelské dokumenty Zakládací listina",
+      "createdAt": "27-08-2013",
+      "receivedByCourtAt": "27-09-2013",
+      "filedAt": "01-10-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 3210982
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL60/KSOS",
+      "documentType": "zakladatelské dokumenty Zakládací listina",
+      "createdAt": "20-01-2014",
+      "receivedByCourtAt": "12-02-2014",
+      "filedAt": "14-02-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 2633395
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL61/KSOS",
+      "documentType": "zakladatelské dokumenty ÚZ zakl.l.",
+      "createdAt": "31-03-2014",
+      "receivedByCourtAt": "15-04-2014",
+      "filedAt": "29-04-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 1965859
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL62/KSOS",
+      "documentType": "ostatní schválení ÚZ r.2013",
+      "receivedByCourtAt": "13-06-2014",
+      "filedAt": "16-06-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 521112
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL63/KSOS",
+      "documentType": "výroční zpráva [2013]",
+      "receivedByCourtAt": "13-06-2014",
+      "filedAt": "16-06-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 27,
+          "sizeBytes": 14546600
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL64/KSOS",
+      "documentType": "výroční zpráva [2013] angl. verze",
+      "receivedByCourtAt": "13-06-2014",
+      "filedAt": "16-06-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 27,
+          "sizeBytes": 14171450
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL65/KSOS",
+      "documentType": "zakladatelské dokumenty Zakládací listina úplné znění",
+      "createdAt": "01-10-2014",
+      "receivedByCourtAt": "09-10-2014",
+      "filedAt": "07-11-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 77756
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL66/KSOS",
+      "documentType": "zakladatelské dokumenty Zakládací listian - úplné znění",
+      "createdAt": "01-10-2014",
+      "receivedByCourtAt": "07-11-2014",
+      "filedAt": "13-11-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 2893799
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL67/KSOS",
+      "documentType": "zakladatelské dokumenty ÚZ zakl. listiny",
+      "createdAt": "10-10-2014",
+      "receivedByCourtAt": "07-11-2014",
+      "filedAt": "19-11-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 69396
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL68/KSOS",
+      "documentType": "zakladatelské dokumenty Zakládací listina - úplné znění",
+      "createdAt": "10-10-2014",
+      "receivedByCourtAt": "20-11-2014",
+      "filedAt": "24-11-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 2886549
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL69/KSOS",
+      "documentType": "zakladatelské dokumenty Zakládací listina - úplné znění ze dne 20.11.2014",
+      "receivedByCourtAt": "28-11-2014",
+      "filedAt": "02-12-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 8,
+          "sizeBytes": 86316
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL70/KSOS",
+      "documentType": "zakladatelské dokumenty Zakládací listina - úplné znění",
+      "createdAt": "20-11-2014",
+      "receivedByCourtAt": "08-12-2014",
+      "filedAt": "10-12-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 3028042
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL71/KSOS",
+      "documentType": "zakladatelské dokumenty Zakládací listina",
+      "createdAt": "21-01-2015",
+      "receivedByCourtAt": "19-02-2015",
+      "filedAt": "20-02-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 2962596
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL72/KSOS",
+      "documentType": "výroční zpráva [2014] úč. záv. vč. přílohy",
+      "receivedByCourtAt": "16-06-2015",
+      "filedAt": "16-06-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 26,
+          "sizeBytes": 15599802
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL73/KSOS",
+      "documentType": "ostatní r. 2014 schválení rozdělení zisku",
+      "receivedByCourtAt": "16-06-2015",
+      "filedAt": "16-06-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 184856
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL74/KSOS",
+      "documentType": "zakladatelské dokumenty zakládací listina",
+      "createdAt": "28-05-2015",
+      "receivedByCourtAt": "15-06-2015",
+      "filedAt": "25-06-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 3154064
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL75/KSOS",
+      "documentType": "zakladatelské dokumenty zakládací listina",
+      "createdAt": "14-07-2015",
+      "receivedByCourtAt": "24-07-2015",
+      "filedAt": "29-07-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 3136838
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL76/KSOS",
+      "documentType": "ostatní základací llistina",
+      "createdAt": "11-02-2016",
+      "receivedByCourtAt": "19-02-2016",
+      "filedAt": "02-03-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 73729
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL77/KSOS",
+      "documentType": "rozhod. o statut. orgánu rozhodnutí",
+      "createdAt": "01-01-2016",
+      "receivedByCourtAt": "19-02-2016",
+      "filedAt": "02-03-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 40656
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL78/KSOS",
+      "documentType": "ostatní Souhrnný protokol",
+      "createdAt": "01-12-2015",
+      "receivedByCourtAt": "19-02-2016",
+      "filedAt": "02-03-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 59733
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL79/KSOS",
+      "documentType": "zakladatelské dokumenty Zakladací listina",
+      "createdAt": "16-06-2016",
+      "receivedByCourtAt": "11-07-2016",
+      "filedAt": "15-07-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 72349
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL80/KSOS",
+      "documentType": "ostatní odvolání z funkce čl.",
+      "createdAt": "19-05-2016",
+      "receivedByCourtAt": "11-07-2016",
+      "filedAt": "15-07-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 18158
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL81/KSOS",
+      "documentType": "ostatní jmenování čena DR",
+      "createdAt": "20-05-2016",
+      "receivedByCourtAt": "11-07-2016",
+      "filedAt": "15-07-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 18721
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL82/KSOS",
+      "documentType": "výroční zpráva [2015] úč. záv. vč. přílohy, zpráva auditora",
+      "receivedByCourtAt": "19-07-2016",
+      "filedAt": "21-07-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 42,
+          "sizeBytes": 4402960
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL83/KSOS",
+      "documentType": "ostatní schválení rozdělení zisku",
+      "createdAt": "09-06-2016",
+      "receivedByCourtAt": "19-07-2016",
+      "filedAt": "21-07-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 466029
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL84/KSOS",
+      "documentType": "zakladatelské dokumenty Zakládací listina",
+      "createdAt": "16-06-2016",
+      "receivedByCourtAt": "20-07-2016",
+      "filedAt": "26-07-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 3001236
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL85/KSOS",
+      "documentType": "ostatní jmenování do funkce",
+      "receivedByCourtAt": "28-02-2017",
+      "filedAt": "23-03-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 36451
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL86/KSOS",
+      "documentType": "ostatní odvolání z funkce",
+      "receivedByCourtAt": "28-02-2017",
+      "filedAt": "23-03-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 33844
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL87/KSOS",
+      "documentType": "ostatní jednací řád",
+      "receivedByCourtAt": "28-02-2017",
+      "filedAt": "23-03-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 12,
+          "sizeBytes": 167155
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL88/KSOS",
+      "documentType": "zakladatelské dokumenty zakládací listina",
+      "createdAt": "13-02-2017",
+      "receivedByCourtAt": "28-02-2017",
+      "filedAt": "23-03-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 66437
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL90/KSOS",
+      "documentType": "zakladatelské dokumenty Zakládací listina",
+      "createdAt": "07-06-2017",
+      "receivedByCourtAt": "20-06-2017",
+      "filedAt": "04-07-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 72300
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL91/KSOS",
+      "documentType": "výroční zpráva [2016], zpráva auditora [2016] vč. účetní závěrky s příl.",
+      "receivedByCourtAt": "20-07-2017",
+      "filedAt": "25-07-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 45,
+          "sizeBytes": 3129888
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL92/KSOS",
+      "documentType": "ostatní Jmenovací dekret člena dozorčí rady",
+      "createdAt": "27-06-2017",
+      "receivedByCourtAt": "29-08-2017",
+      "filedAt": "19-09-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 32048
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL93/KSOS",
+      "documentType": "zakladatelské dokumenty Zakladatelská listina",
+      "createdAt": "31-07-2017",
+      "receivedByCourtAt": "18-09-2017",
+      "filedAt": "12-10-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 3677123
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL94/KSOS",
+      "documentType": "zakladatelské dokumenty zakl. listina",
+      "createdAt": "06-02-2018",
+      "receivedByCourtAt": "26-04-2018",
+      "filedAt": "16-05-2018",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 67332
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL95/KSOS",
+      "documentType": "výroční zpráva [2017] vč. účetní závěrky s příl., zpráva auditora",
+      "receivedByCourtAt": "12-06-2018",
+      "filedAt": "21-06-2018",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 43,
+          "sizeBytes": 1029419
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL96/KSOS",
+      "documentType": "zakladatelské dokumenty Zakládací listina",
+      "createdAt": "03-10-2018",
+      "receivedByCourtAt": "22-10-2018",
+      "filedAt": "09-11-2018",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 68632
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL97/KSOS",
+      "documentType": "zakladatelské dokumenty Zakládací listina",
+      "createdAt": "27-11-2018",
+      "receivedByCourtAt": "05-02-2019",
+      "filedAt": "22-02-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 65792
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL98/KSOS",
+      "documentType": "rozhod. o statut. orgánu Souhrnný protokol o výsledku voleb členů DR",
+      "createdAt": "11-10-2018",
+      "receivedByCourtAt": "05-02-2019",
+      "filedAt": "22-02-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 45273
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL99/KSOS",
+      "documentType": "ostatní Osvědčení",
+      "createdAt": "11-10-2018",
+      "receivedByCourtAt": "05-02-2019",
+      "filedAt": "22-02-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 44918
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL100/KSOS",
+      "documentType": "zakladatelské dokumenty Zakládací listina",
+      "createdAt": "01-04-2019",
+      "receivedByCourtAt": "16-04-2019",
+      "filedAt": "03-05-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 65391
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL101/KSOS",
+      "documentType": "ostatní Jmenování do funkce člena DR",
+      "createdAt": "22-03-2019",
+      "receivedByCourtAt": "24-05-2019",
+      "filedAt": "13-06-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 22848
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL102/KSOS",
+      "documentType": "zakladatelské dokumenty Zakládací listina",
+      "createdAt": "21-05-2019",
+      "receivedByCourtAt": "24-05-2019",
+      "filedAt": "13-06-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 64400
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL103/KSOS",
+      "documentType": "ostatní Rezignace na funkci",
+      "createdAt": "23-04-2019",
+      "receivedByCourtAt": "24-05-2019",
+      "filedAt": "13-06-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 26081
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL104/KSOS",
+      "documentType": "ostatní Jmenování do funkce",
+      "createdAt": "17-04-2019",
+      "receivedByCourtAt": "24-05-2019",
+      "filedAt": "13-06-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 61885
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL105/KSOS",
+      "documentType": "výroční zpráva [2018] vč. účetní závěrky s příl., zpráva auditora",
+      "receivedByCourtAt": "21-06-2019",
+      "filedAt": "23-07-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 45,
+          "sizeBytes": 2393385
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL106/KSOS",
+      "documentType": "zakladatelské dokumenty Zakládací listina",
+      "createdAt": "09-07-2019",
+      "receivedByCourtAt": "15-07-2019",
+      "filedAt": "01-08-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 64443
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL107/KSOS",
+      "documentType": "ostatní Odvolání z funkce",
+      "createdAt": "27-05-2019",
+      "receivedByCourtAt": "15-07-2019",
+      "filedAt": "01-08-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 55383
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL108/KSOS",
+      "documentType": "ostatní Jmenování do funkce",
+      "createdAt": "13-06-2019",
+      "receivedByCourtAt": "15-07-2019",
+      "filedAt": "01-08-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 28347
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL109/KSOS",
+      "documentType": "ostatní Jmenování do funkce člena DR",
+      "createdAt": "29-07-2019",
+      "receivedByCourtAt": "24-09-2019",
+      "filedAt": "11-10-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 26236
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL110/KSOS",
+      "documentType": "zakladatelské dokumenty Zakládací listina",
+      "createdAt": "17-09-2019",
+      "receivedByCourtAt": "24-09-2019",
+      "filedAt": "11-10-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 67902
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL111/KSOS",
+      "documentType": "zakladatelské dokumenty Zakládací listina",
+      "createdAt": "17-09-2019",
+      "receivedByCourtAt": "27-09-2019",
+      "filedAt": "22-10-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 65599
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL112/KSOS",
+      "documentType": "ostatní Jmenování do funkce",
+      "createdAt": "29-08-2019",
+      "receivedByCourtAt": "27-09-2019",
+      "filedAt": "22-10-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 27448
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL113/KSOS",
+      "documentType": "zakladatelské dokumenty Zakl. litina",
+      "createdAt": "11-12-2019",
+      "receivedByCourtAt": "03-01-2020",
+      "filedAt": "23-01-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 67087
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL114/KSOS",
+      "documentType": "ostatní Jmenování do funkce",
+      "receivedByCourtAt": "03-01-2020",
+      "filedAt": "23-01-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 46527
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL115/KSOS",
+      "documentType": "účetní závěrka [2019], výroční zpráva [2019], zpráva auditora [2019]",
+      "receivedByCourtAt": "15-07-2020",
+      "filedAt": "17-07-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 44,
+          "sizeBytes": 1234756
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL116/KSOS",
+      "documentType": "ostatní Odvolání z funkce",
+      "createdAt": "11-06-2020",
+      "receivedByCourtAt": "06-08-2020",
+      "filedAt": "25-08-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 56153
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL117/KSOS",
+      "documentType": "ostatní Osvědčení volení komise",
+      "createdAt": "01-12-2020",
+      "receivedByCourtAt": "17-02-2021",
+      "filedAt": "08-03-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 114232
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL118/KSOS",
+      "documentType": "ostatní Odvolání z funkce",
+      "createdAt": "11-03-2021",
+      "receivedByCourtAt": "06-05-2021",
+      "filedAt": "31-05-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 45517
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL119/KSOS",
+      "documentType": "zakladatelské dokumenty Zakl. listina",
+      "createdAt": "27-04-2021",
+      "receivedByCourtAt": "06-05-2021",
+      "filedAt": "31-05-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 62170
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL120/KSOS",
+      "documentType": "účetní závěrka [2020], výroční zpráva [2020], zpráva auditora [2020]",
+      "receivedByCourtAt": "03-06-2021",
+      "filedAt": "08-06-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 44,
+          "sizeBytes": 2638686
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL121/KSOS",
+      "documentType": "ostatní Jmenování",
+      "createdAt": "01-07-2021",
+      "receivedByCourtAt": "16-07-2021",
+      "filedAt": "16-08-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 39265
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL122/KSOS",
+      "documentType": "rozhod. o statut. orgánu Zakl. listina",
+      "createdAt": "13-07-2021",
+      "receivedByCourtAt": "16-07-2021",
+      "filedAt": "16-08-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 63371
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL123/KSOS",
+      "documentType": "účetní závěrka [2021], výroční zpráva [2021], zpráva auditora [2021]",
+      "receivedByCourtAt": "02-06-2022",
+      "filedAt": "07-06-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 47,
+          "sizeBytes": 2732254
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL124/KSOS",
+      "documentType": "zakladatelské dokumenty Zakládací listina",
+      "createdAt": "11-10-2022",
+      "receivedByCourtAt": "14-10-2022",
+      "filedAt": "08-11-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 974372
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL125/KSOS",
+      "documentType": "ostatní Odvolání z funkce",
+      "createdAt": "28-07-2022",
+      "receivedByCourtAt": "14-10-2022",
+      "filedAt": "08-11-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 27169
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL126/KSOS",
+      "documentType": "ostatní Jmenování do funkce",
+      "createdAt": "07-09-2022",
+      "receivedByCourtAt": "14-10-2022",
+      "filedAt": "08-11-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 31311
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL127/KSOS",
+      "documentType": "účetní závěrka [2022], výroční zpráva [2022], zpráva auditora [2022]",
+      "receivedByCourtAt": "27-06-2023",
+      "filedAt": "04-07-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 50,
+          "sizeBytes": 2526891
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL128/KSOS",
+      "documentType": "zakladatelské dokumenty zakládací listina",
+      "receivedByCourtAt": "05-04-2024",
+      "filedAt": "03-05-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 971010
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL129/KSOS",
+      "documentType": "ostatní osvědčení Ing. Pekař Radek",
+      "createdAt": "13-10-2023",
+      "receivedByCourtAt": "05-04-2024",
+      "filedAt": "03-05-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 135294
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL130/KSOS",
+      "documentType": "ostatní korespondence na Ministerstvo zemědělství",
+      "createdAt": "02-02-2024",
+      "receivedByCourtAt": "05-04-2024",
+      "filedAt": "03-05-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 167112
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL131/KSOS",
+      "documentType": "účetní závěrka [2023], výroční zpráva [2023], zpráva auditora [2023]",
+      "receivedByCourtAt": "17-06-2024",
+      "filedAt": "21-06-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 48,
+          "sizeBytes": 2164057
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL132/KSOS",
+      "documentType": "ostatní jmenovací listina",
+      "createdAt": "30-07-2024",
+      "receivedByCourtAt": "16-10-2024",
+      "filedAt": "19-11-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 118681
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL133/KSOS",
+      "documentType": "ostatní jmenovací listina",
+      "createdAt": "01-08-2024",
+      "receivedByCourtAt": "16-10-2024",
+      "filedAt": "19-11-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 112257
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL134/KSOS",
+      "documentType": "zakladatelské dokumenty zakládací listina",
+      "createdAt": "09-10-2024",
+      "receivedByCourtAt": "16-10-2024",
+      "filedAt": "19-11-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 915835
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL135/KSOS",
+      "documentType": "zakladatelské dokumenty zakládací listina",
+      "createdAt": "17-04-2025",
+      "receivedByCourtAt": "29-04-2025",
+      "filedAt": "05-06-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 989261
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL136/KSOS",
+      "documentType": "ostatní odstoupení z funkce",
+      "createdAt": "19-02-2025",
+      "receivedByCourtAt": "29-04-2025",
+      "filedAt": "05-06-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 133589
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL137/KSOS",
+      "documentType": "ostatní odvolání",
+      "createdAt": "31-10-2024",
+      "receivedByCourtAt": "29-04-2025",
+      "filedAt": "05-06-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 106031
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL138/KSOS",
+      "documentType": "ostatní odstoupení z funkce",
+      "createdAt": "24-02-2025",
+      "receivedByCourtAt": "29-04-2025",
+      "filedAt": "05-06-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 122598
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL139/KSOS",
+      "documentType": "ostatní jmenování",
+      "createdAt": "25-02-2025",
+      "receivedByCourtAt": "29-04-2025",
+      "filedAt": "05-06-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 96329
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL140/KSOS",
+      "documentType": "ostatní jmenování",
+      "createdAt": "05-03-2025",
+      "receivedByCourtAt": "29-04-2025",
+      "filedAt": "05-06-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 96277
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL141/KSOS",
+      "documentType": "ostatní jmenování",
+      "createdAt": "03-03-2025",
+      "receivedByCourtAt": "29-04-2025",
+      "filedAt": "05-06-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 118965
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL142/KSOS",
+      "documentType": "účetní závěrka [2024], výroční zpráva [2024], zpráva auditora [2024]",
+      "receivedByCourtAt": "19-06-2025",
+      "filedAt": "23-06-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 48,
+          "sizeBytes": 2266406
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL143/KSOS",
+      "documentType": "účetní závěrka [2025], výroční zpráva [2025], zpráva auditora [2025]",
+      "receivedByCourtAt": "04-06-2026",
+      "filedAt": "09-06-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 52,
+          "sizeBytes": 9367303
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL144/KSOS",
+      "documentType": "ostatní jmenování - 5x",
+      "receivedByCourtAt": "26-05-2026",
+      "filedAt": "01-07-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 638054
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL145/KSOS",
+      "documentType": "ostatní odvolání - 5x",
+      "receivedByCourtAt": "26-05-2026",
+      "filedAt": "01-07-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 625931
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL146/KSOS",
+      "documentType": "zakladatelské dokumenty zakládací listina",
+      "createdAt": "19-05-2026",
+      "receivedByCourtAt": "26-05-2026",
+      "filedAt": "01-07-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 1325395
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXIV 584/SL147/KSOS",
+      "documentType": "ostatní osvědčení volební komise",
+      "createdAt": "19-11-2025",
+      "receivedByCourtAt": "26-05-2026",
+      "filedAt": "01-07-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 427949
+        }
+      ]
+    }
+  ]
+}

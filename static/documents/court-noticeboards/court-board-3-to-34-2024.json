@@ -1,0 +1,13 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://infodeska.gov.cz/eudpub/api/v1/vyveseni/vyhledej",
+  "docket": "3 To 34/2024",
+  "request": {
+    "kodSubjektu": "221000",
+    "cisloSenat": 3,
+    "rejstrik": "To",
+    "cisloBezne": 34,
+    "rocnik": 2024
+  },
+  "response": []
+}

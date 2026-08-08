@@ -1,0 +1,205 @@
+{
+  "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
+  "retrieved": "2026-08-08",
+  "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/01529820",
+  "status": "OK",
+  "subject": {
+    "ico": "01529820",
+    "businessName": "MEDIA PROJECT CZ s.r.o.",
+    "registerReference": "C 78480/KSBR"
+  },
+  "filings": [
+    {
+      "referenceLabel": "C 78480/SL1/KSBR",
+      "documentType": "notářský zápis spol. smlouva, NZ 153/2013",
+      "createdAt": "28-02-2013",
+      "receivedByCourtAt": "20-03-2013",
+      "filedAt": "09-05-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 303232
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 78480/SL2/KSBR",
+      "documentType": "notářský zápis spol. smlouva, NZ 945/2013",
+      "createdAt": "13-11-2013",
+      "receivedByCourtAt": "18-11-2013",
+      "filedAt": "29-11-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 9,
+          "sizeBytes": 505320
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 78480/SL3/KSBR",
+      "documentType": "smlouvy o převodu obchod. podílu 2 x",
+      "createdAt": "13-11-2013",
+      "receivedByCourtAt": "18-11-2013",
+      "filedAt": "29-11-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 256136
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 78480/SL4/KSBR",
+      "documentType": "notářský zápis [NZ 1111/2015, N 1231/2015]",
+      "createdAt": "10-12-2015",
+      "filedAt": "28-12-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 11,
+          "sizeBytes": 4521197
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 78480/SL5/KSBR",
+      "documentType": "notářský zápis [NZ 808/2016] rozhodnutí VH, společenská smlouva",
+      "createdAt": "09-08-2016",
+      "receivedByCourtAt": "11-08-2016",
+      "filedAt": "15-08-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 12,
+          "sizeBytes": 597915
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 78480/SL7/KSBR",
+      "documentType": "účetní závěrka [2021] - předána prostřednictvím správce daně z příjmů k 09.05.2022",
+      "createdAt": "09-05-2022",
+      "receivedByCourtAt": "03-08-2022",
+      "filedAt": "18-01-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 0,
+          "sizeBytes": 27648
+        },
+        {
+          "pageCount": 0,
+          "sizeBytes": 706
+        },
+        {
+          "pageCount": 2,
+          "sizeBytes": 86424
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 78480/SL9/KSBR",
+      "documentType": "účetní závěrka [2022] - předána prostřednictvím správce daně z příjmů k 08.04.2023",
+      "createdAt": "08-04-2023",
+      "receivedByCourtAt": "18-05-2023",
+      "filedAt": "18-05-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 0,
+          "sizeBytes": 15975
+        },
+        {
+          "pageCount": 0,
+          "sizeBytes": 759
+        },
+        {
+          "pageCount": 2,
+          "sizeBytes": 88335
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 78480/SL10/KSBR",
+      "documentType": "notářský zápis [NZ 775/2023, N 647/2023]",
+      "createdAt": "11-07-2023",
+      "filedAt": "13-07-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 10,
+          "sizeBytes": 130733
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 78480/SL12/KSBR",
+      "documentType": "účetní závěrka [2023] - předána prostřednictvím správce daně z příjmů k 07.05.2024",
+      "createdAt": "07-05-2024",
+      "receivedByCourtAt": "08-05-2024",
+      "filedAt": "08-05-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 0,
+          "sizeBytes": 17124
+        },
+        {
+          "pageCount": 0,
+          "sizeBytes": 770
+        },
+        {
+          "pageCount": 2,
+          "sizeBytes": 88654
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 78480/SL13/KSBR",
+      "documentType": "účetní závěrka [2024] - předána prostřednictvím správce daně z příjmů k 09.04.2025",
+      "createdAt": "09-04-2025",
+      "receivedByCourtAt": "10-04-2025",
+      "filedAt": "19-04-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 0,
+          "sizeBytes": 17221
+        },
+        {
+          "pageCount": 0,
+          "sizeBytes": 786
+        },
+        {
+          "pageCount": 2,
+          "sizeBytes": 88665
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 78480/SL14/KSBR",
+      "documentType": "účetní závěrka [2025] - předána prostřednictvím správce daně z příjmů k 16.05.2026",
+      "createdAt": "16-05-2026",
+      "receivedByCourtAt": "17-05-2026",
+      "filedAt": "26-05-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 0,
+          "sizeBytes": 17173
+        },
+        {
+          "pageCount": 0,
+          "sizeBytes": 745
+        },
+        {
+          "pageCount": 2,
+          "sizeBytes": 87065
+        }
+      ]
+    }
+  ]
+}

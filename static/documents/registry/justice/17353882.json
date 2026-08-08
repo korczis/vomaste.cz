@@ -1,0 +1,68 @@
+{
+  "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
+  "retrieved": "2026-08-08",
+  "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/17353882",
+  "status": "OK",
+  "subject": {
+    "ico": "17353882",
+    "businessName": "Klub motoristů, z.s.",
+    "registerReference": "L 76490/MSPH"
+  },
+  "filings": [
+    {
+      "referenceLabel": "L 76490/SL1/MSPH",
+      "documentType": "notářský zápis [NZ 493/2022]",
+      "createdAt": "29-06-2022",
+      "filedAt": "22-07-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 242926
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 76490/SL2/MSPH",
+      "documentType": "stanovy společnosti",
+      "createdAt": "30-04-2023",
+      "receivedByCourtAt": "16-07-2023",
+      "filedAt": "14-08-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 1540489
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 76490/SL3/MSPH",
+      "documentType": "ostatní zápis z valné hromady",
+      "createdAt": "30-04-2023",
+      "receivedByCourtAt": "16-07-2023",
+      "filedAt": "14-08-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 628479
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 76490/SL4/MSPH",
+      "documentType": "ostatní zápis z valné hromady - doplnění",
+      "createdAt": "30-04-2023",
+      "receivedByCourtAt": "16-07-2023",
+      "filedAt": "14-08-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 110243
+        }
+      ]
+    }
+  ]
+}

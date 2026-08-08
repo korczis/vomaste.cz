@@ -1,0 +1,13 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://infodeska.gov.cz/eudpub/api/v1/vyveseni/vyhledej",
+  "docket": "2 VZV 11/2025",
+  "request": {
+    "kodSubjektu": "320000",
+    "cisloSenat": 2,
+    "rejstrik": "VZV",
+    "cisloBezne": 11,
+    "rocnik": 2025
+  },
+  "response": []
+}

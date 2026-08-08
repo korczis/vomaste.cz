@@ -1,0 +1,82 @@
+{
+  "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
+  "retrieved": "2026-08-08",
+  "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/17573866",
+  "status": "OK",
+  "subject": {
+    "ico": "17573866",
+    "businessName": "Moravia Green Hydrogen s.r.o.",
+    "registerReference": "C 373368/MSPH"
+  },
+  "filings": [
+    {
+      "referenceLabel": "C 373368/SL1/MSPH",
+      "documentType": "zakladatelské dokumenty, notářský zápis [NZ 363/2022]",
+      "createdAt": "01-09-2022",
+      "filedAt": "26-09-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 120536
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 373368/SL2/MSPH",
+      "documentType": "účetní závěrka [2022]",
+      "createdAt": "31-12-2022",
+      "receivedByCourtAt": "21-11-2023",
+      "filedAt": "23-11-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 11,
+          "sizeBytes": 3310774
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 373368/SL3/MSPH",
+      "documentType": "účetní závěrka [2022]",
+      "createdAt": "31-12-2022",
+      "receivedByCourtAt": "28-11-2024",
+      "filedAt": "04-12-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 11,
+          "sizeBytes": 3310774
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 373368/SL4/MSPH",
+      "documentType": "účetní závěrka [2023]",
+      "createdAt": "31-12-2023",
+      "receivedByCourtAt": "22-01-2025",
+      "filedAt": "23-01-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 10,
+          "sizeBytes": 3866474
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 373368/SL5/MSPH",
+      "documentType": "účetní závěrka [2024]",
+      "createdAt": "31-12-2024",
+      "receivedByCourtAt": "19-08-2025",
+      "filedAt": "20-08-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 11,
+          "sizeBytes": 3361930
+        }
+      ]
+    }
+  ]
+}

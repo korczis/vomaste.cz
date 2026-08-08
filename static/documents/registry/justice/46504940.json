@@ -1,0 +1,2454 @@
+{
+  "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
+  "retrieved": "2026-08-08",
+  "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/46504940",
+  "status": "OK",
+  "subject": {
+    "ico": "46504940",
+    "businessName": "Cerea, a.s.",
+    "registerReference": "B 621/KSHK"
+  },
+  "filings": [
+    {
+      "referenceLabel": "B 621/SL1/KSHK",
+      "documentType": "ostatní - roční zpráva za rok 1996",
+      "createdAt": "17-03-1997",
+      "receivedByCourtAt": "07-05-1997",
+      "filedAt": "07-05-1997",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 43,
+          "sizeBytes": 1067583
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL2/KSHK",
+      "documentType": "notářský zápis - NZ 104/97",
+      "createdAt": "06-05-1997",
+      "receivedByCourtAt": "03-06-1997",
+      "filedAt": "03-06-1997",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 23,
+          "sizeBytes": 637208
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL3/KSHK",
+      "documentType": "ostatní - zápis ze zased. dozorčí rady",
+      "createdAt": "06-05-1997",
+      "receivedByCourtAt": "03-06-1997",
+      "filedAt": "03-06-1997",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 63443
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL4/KSHK",
+      "documentType": "ostatní - zápis z jednání představ.",
+      "createdAt": "06-05-1997",
+      "receivedByCourtAt": "03-06-1997",
+      "filedAt": "03-06-1997",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 46950
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL5/KSHK",
+      "documentType": "notářský zápis - NZ 91/98",
+      "createdAt": "26-05-1998",
+      "receivedByCourtAt": "01-07-1998",
+      "filedAt": "01-07-1998",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 184411
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL6/KSHK",
+      "documentType": "stanovy společnosti",
+      "createdAt": "26-05-1998",
+      "receivedByCourtAt": "01-07-1998",
+      "filedAt": "01-07-1998",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 17,
+          "sizeBytes": 451242
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL7/KSHK",
+      "documentType": "rozhod. o statut. orgánu - výpis ze zápisu zased. DR",
+      "createdAt": "26-05-1998",
+      "receivedByCourtAt": "01-07-1998",
+      "filedAt": "01-07-1998",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 31963
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL8/KSHK",
+      "documentType": "rozhod. o statut. orgánu - zápis ze zased. dozorčí rady",
+      "createdAt": "16-06-1998",
+      "receivedByCourtAt": "01-07-1998",
+      "filedAt": "01-07-1998",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 110320
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL9/KSHK",
+      "documentType": "rozhod. o statut. orgánu - zápis ze zasedání představ.",
+      "createdAt": "17-06-1998",
+      "receivedByCourtAt": "01-07-1998",
+      "filedAt": "01-07-1998",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 20979
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL10/KSHK",
+      "documentType": "rozhod. o statut. orgánu - zápisy ze zased.předst.a DR",
+      "createdAt": "12-08-1998",
+      "receivedByCourtAt": "16-09-1998",
+      "filedAt": "16-09-1998",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 91794
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL11/KSHK",
+      "documentType": "notářský zápis - NZ 146/98 + stanovy",
+      "createdAt": "30-09-1998",
+      "receivedByCourtAt": "21-10-1998",
+      "filedAt": "21-10-1998",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 14,
+          "sizeBytes": 428545
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL12/KSHK",
+      "documentType": "notářský zápis - NZ 226/98",
+      "createdAt": "15-12-1998",
+      "receivedByCourtAt": "21-12-1998",
+      "filedAt": "21-12-1998",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 78108
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL13/KSHK",
+      "documentType": "notářský zápis - NZ 225/98 + stanovy",
+      "createdAt": "15-12-1998",
+      "receivedByCourtAt": "21-12-1998",
+      "filedAt": "21-12-1998",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 22,
+          "sizeBytes": 645646
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL14/KSHK",
+      "documentType": "ostatní - výroční zpráva za rok 1998",
+      "createdAt": "12-03-1999",
+      "receivedByCourtAt": "01-04-1999",
+      "filedAt": "01-04-1999",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 10,
+          "sizeBytes": 219944
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL15/KSHK",
+      "documentType": "notářský zápis - NZ 128/99",
+      "createdAt": "26-05-1999",
+      "receivedByCourtAt": "15-06-1999",
+      "filedAt": "15-06-1999",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 183340
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL16/KSHK",
+      "documentType": "výroční zpráva - za r. 1999",
+      "createdAt": "21-03-2000",
+      "receivedByCourtAt": "31-03-2000",
+      "filedAt": "31-03-2000",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 11,
+          "sizeBytes": 235893
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL17/KSHK",
+      "documentType": "rozhod. o statut. orgánu - mimoř. zased. představ. a DR",
+      "createdAt": "12-06-2000",
+      "receivedByCourtAt": "22-06-2000",
+      "filedAt": "22-06-2000",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 110607
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL18/KSHK",
+      "documentType": "notářský zápis - NZ 122/2000",
+      "createdAt": "29-05-2000",
+      "receivedByCourtAt": "22-06-2000",
+      "filedAt": "22-06-2000",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 8,
+          "sizeBytes": 236262
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL19/KSHK",
+      "documentType": "výroční zpráva - za r. 2000",
+      "createdAt": "24-04-2001",
+      "receivedByCourtAt": "18-09-2001",
+      "filedAt": "18-09-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 22,
+          "sizeBytes": 435130
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL20/KSHK",
+      "documentType": "účetní závěrka - za r. 2000",
+      "createdAt": "03-04-2001",
+      "receivedByCourtAt": "18-09-2001",
+      "filedAt": "18-09-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 60530
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL21/KSHK",
+      "documentType": "výroční zpráva - za r. 2000",
+      "createdAt": "30-03-2001",
+      "receivedByCourtAt": "18-09-2001",
+      "filedAt": "18-09-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 10,
+          "sizeBytes": 170424
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL22/KSHK",
+      "documentType": "notářský zápis, rozhod. o statut. orgánu, podpisové vzory - NZ 84/2000",
+      "createdAt": "19-10-2000",
+      "receivedByCourtAt": "29-01-2001",
+      "filedAt": "29-01-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 9,
+          "sizeBytes": 196871
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL23/KSHK",
+      "documentType": "notářský zápis, stanovy společnosti, rozhod. o statut. orgánu, podpisové vzory NZ 302/2001",
+      "createdAt": "28-11-2001",
+      "receivedByCourtAt": "05-12-2001",
+      "filedAt": "05-12-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 28,
+          "sizeBytes": 776149
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL24/KSHK",
+      "documentType": "převod, zastav.obch.podíl",
+      "createdAt": "28-03-2002",
+      "receivedByCourtAt": "29-03-2002",
+      "filedAt": "29-03-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 10,
+          "sizeBytes": 221876
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL25/KSHK",
+      "documentType": "notářský zápis, stanovy společnosti, ostatní, podpisové vzory - NZ 97/2002",
+      "createdAt": "28-06-2002",
+      "receivedByCourtAt": "12-09-2002",
+      "filedAt": "12-09-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 90,
+          "sizeBytes": 2984179
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL26/KSHK",
+      "documentType": "notářský zápis, rozhod. o statut. orgánu, výroční zpráva, podpisové vzory - NZ 51/2002, zápis z VH, ....",
+      "createdAt": "27-06-2002",
+      "receivedByCourtAt": "15-10-2002",
+      "filedAt": "15-10-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 92,
+          "sizeBytes": 2354211
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL27/KSHK",
+      "documentType": "ostatní -zpráva o vzt. mezi prop. osob",
+      "createdAt": "25-03-2003",
+      "receivedByCourtAt": "30-04-2003",
+      "filedAt": "30-04-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 20,
+          "sizeBytes": 570982
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL28/KSHK",
+      "documentType": "účetní závěrka - za rok 2002",
+      "createdAt": "17-03-2003",
+      "receivedByCourtAt": "19-06-2003",
+      "filedAt": "19-06-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 38,
+          "sizeBytes": 989857
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL29/KSHK",
+      "documentType": "rozhod. o statut. orgánu, podpisové vzory",
+      "createdAt": "28-11-2003",
+      "receivedByCourtAt": "03-02-2004",
+      "filedAt": "03-02-2004",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 188886
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL30/KSHK",
+      "documentType": "ostatní",
+      "createdAt": "27-03-2004",
+      "receivedByCourtAt": "29-03-2004",
+      "filedAt": "29-03-2004",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 22,
+          "sizeBytes": 638097
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL31/KSHK",
+      "documentType": "ostatní - smlouva o sloučení",
+      "createdAt": "24-05-2004",
+      "receivedByCourtAt": "24-05-2004",
+      "filedAt": "26-05-2004",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 16,
+          "sizeBytes": 437128
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL32/KSHK",
+      "documentType": "výroční zpráva - za rok 2003",
+      "createdAt": "07-05-2004",
+      "receivedByCourtAt": "09-07-2004",
+      "filedAt": "09-07-2004",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 40,
+          "sizeBytes": 1055543
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL33/KSHK",
+      "documentType": "zakladatelské dokumenty, notářský zápis, rozhod. o statut. orgánu, účetní závěrka, změna právní formy, fúze, ostatní, výroční zpráva, podpisové vzory -NZ 97/2002,296-299/04,r.03",
+      "createdAt": "29-06-2004",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 269,
+          "sizeBytes": 7706016
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL34/KSHK",
+      "documentType": "účetní závěrka, výroční zpráva - za rok 2004",
+      "createdAt": "25-03-2005",
+      "receivedByCourtAt": "19-07-2005",
+      "filedAt": "19-07-2005",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 49,
+          "sizeBytes": 1204465
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL35/KSHK",
+      "documentType": "notářský zápis, stanovy společnosti, rozhod. o statut. orgánu - NZ 237/2005",
+      "createdAt": "17-06-2005",
+      "receivedByCourtAt": "19-07-2005",
+      "filedAt": "19-07-2005",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 29,
+          "sizeBytes": 890232
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL36/KSHK",
+      "documentType": "ostatní - zpráva o vztazích",
+      "createdAt": "07-03-2006",
+      "receivedByCourtAt": "31-03-2006",
+      "filedAt": "31-03-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 131412
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL37/KSHK",
+      "documentType": "notářský zápis - NZ 165/2006",
+      "createdAt": "23-05-2006",
+      "receivedByCourtAt": "23-06-2006",
+      "filedAt": "23-06-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 168573
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL38/KSHK",
+      "documentType": "rozhod. o statut. orgánu, podpisové vzory",
+      "createdAt": "28-06-2006",
+      "receivedByCourtAt": "17-07-2006",
+      "filedAt": "17-07-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 146039
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL39/KSHK",
+      "documentType": "výroční zpráva - za rok 2005",
+      "createdAt": "23-03-2006",
+      "receivedByCourtAt": "27-07-2006",
+      "filedAt": "27-07-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 38,
+          "sizeBytes": 875826
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL40/KSHK",
+      "documentType": "ostatní",
+      "createdAt": "20-06-2006",
+      "receivedByCourtAt": "16-08-2006",
+      "filedAt": "16-08-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 55047
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL41/KSHK",
+      "documentType": "zpráva o vztazích",
+      "createdAt": "28-02-2007",
+      "receivedByCourtAt": "12-03-2007",
+      "filedAt": "12-03-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 10,
+          "sizeBytes": 175996
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL42/KSHK",
+      "documentType": "výroční zpráva - za rok 2006",
+      "createdAt": "29-03-2007",
+      "receivedByCourtAt": "20-07-2007",
+      "filedAt": "20-07-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 36,
+          "sizeBytes": 7015359
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL43/KSHK",
+      "documentType": "notářský zápis, stanovy společnosti - NZ 226/2007",
+      "createdAt": "27-06-2007",
+      "receivedByCourtAt": "20-07-2007",
+      "filedAt": "20-07-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 22,
+          "sizeBytes": 767096
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL44/KSHK",
+      "documentType": "výroční zpráva - rok 2005",
+      "receivedByCourtAt": "05-09-2007",
+      "filedAt": "05-09-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 96,
+          "sizeBytes": 8063211
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL45/KSHK",
+      "documentType": "výroční zpráva - za rok 2006",
+      "receivedByCourtAt": "05-09-2007",
+      "filedAt": "05-09-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 118,
+          "sizeBytes": 8934432
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL46/KSHK",
+      "documentType": "zpráva o vztazích",
+      "receivedByCourtAt": "21-04-2008",
+      "filedAt": "21-04-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 14,
+          "sizeBytes": 1973361
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL47/KSHK",
+      "documentType": "výroční zpráva 2007",
+      "receivedByCourtAt": "10-07-2008",
+      "filedAt": "10-07-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 42,
+          "sizeBytes": 6176755
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL48/KSHK",
+      "documentType": "rozhod. o statut. orgánu",
+      "receivedByCourtAt": "30-07-2008",
+      "filedAt": "30-07-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 82361
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL49/KSHK",
+      "documentType": "výroční zpráva - rok 2007",
+      "createdAt": "09-06-2008",
+      "receivedByCourtAt": "27-08-2008",
+      "filedAt": "08-09-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 120,
+          "sizeBytes": 1233683
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL50/KSHK",
+      "documentType": "notářský zápis, ostatní - NZ 310,418/2008",
+      "createdAt": "28-08-2008",
+      "receivedByCourtAt": "22-10-2008",
+      "filedAt": "22-10-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 12,
+          "sizeBytes": 399093
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL51/KSHK",
+      "documentType": "stanovy společnosti",
+      "createdAt": "11-12-2008",
+      "receivedByCourtAt": "11-12-2008",
+      "filedAt": "12-12-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 20,
+          "sizeBytes": 236675
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL52/KSHK",
+      "documentType": "rozhod. o statut. orgánu, podpisové vzory",
+      "createdAt": "06-11-2008",
+      "receivedByCourtAt": "11-12-2008",
+      "filedAt": "11-12-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 10,
+          "sizeBytes": 170187
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL53/KSHK",
+      "documentType": "notářský zápis 479/2008",
+      "createdAt": "19-12-2008",
+      "receivedByCourtAt": "12-01-2009",
+      "filedAt": "12-01-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 61359
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL54/KSHK",
+      "documentType": "ostatní zpráva o vztazích",
+      "receivedByCourtAt": "25-03-2009",
+      "filedAt": "25-03-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 19,
+          "sizeBytes": 241034
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL55/KSHK",
+      "documentType": "ostatní vnitrostátní fúze",
+      "receivedByCourtAt": "22-05-2009",
+      "filedAt": "22-05-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 106027
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL56/KSHK",
+      "documentType": "ostatní projekt jmění",
+      "receivedByCourtAt": "27-05-2009",
+      "filedAt": "27-05-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 173596
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL57/KSHK",
+      "documentType": "ostatní zpráva představendstva",
+      "receivedByCourtAt": "27-05-2009",
+      "filedAt": "27-05-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 202384
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL58/KSHK",
+      "documentType": "výroční zpráva 2008, el.",
+      "receivedByCourtAt": "22-06-2009",
+      "filedAt": "22-06-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 206468
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL59/KSHK",
+      "documentType": "notářský zápis, stanovy společnosti NZ 173/2009",
+      "createdAt": "29-04-2009",
+      "receivedByCourtAt": "14-07-2009",
+      "filedAt": "14-07-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 23,
+          "sizeBytes": 739726
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL60/KSHK",
+      "documentType": "notářský zápis NZ 292,296/2009",
+      "createdAt": "30-06-2009",
+      "receivedByCourtAt": "14-07-2009",
+      "filedAt": "14-07-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 34,
+          "sizeBytes": 948911
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL61/KSHK",
+      "documentType": "ostatní zápis ze zasedání",
+      "createdAt": "30-06-2009",
+      "receivedByCourtAt": "14-07-2009",
+      "filedAt": "14-07-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 91546
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL62/KSHK",
+      "documentType": "posudek znalce č. 147/30/2009",
+      "createdAt": "22-05-2009",
+      "receivedByCourtAt": "14-07-2009",
+      "filedAt": "14-07-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 15,
+          "sizeBytes": 370070
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL63/KSHK",
+      "documentType": "účetní závěrka, zpráva auditora - ověření  ÚZ  k 31.12.2008,el",
+      "createdAt": "24-03-2009",
+      "receivedByCourtAt": "31-07-2009",
+      "filedAt": "31-07-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 18,
+          "sizeBytes": 741653
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL64/KSHK",
+      "documentType": "ostatní zpráva představenstva",
+      "createdAt": "21-05-2009",
+      "receivedByCourtAt": "14-07-2009",
+      "filedAt": "14-07-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 124897
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL65/KSHK",
+      "documentType": "účetní závěrka, zpráva auditora k zahaj. rozvaze 1.12009, cd",
+      "createdAt": "13-05-2009",
+      "receivedByCourtAt": "14-07-2009",
+      "filedAt": "14-07-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 13,
+          "sizeBytes": 426711
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL66/KSHK",
+      "documentType": "notářský zápis NZ 304/2009",
+      "createdAt": "07-07-2009",
+      "receivedByCourtAt": "14-07-2009",
+      "filedAt": "14-07-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 9,
+          "sizeBytes": 240441
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL67/KSHK",
+      "documentType": "notářský zápis NZ 305/2009",
+      "createdAt": "07-07-2009",
+      "receivedByCourtAt": "14-07-2009",
+      "filedAt": "14-07-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 9,
+          "sizeBytes": 249849
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL68/KSHK",
+      "documentType": "výroční zpráva 2008,el.",
+      "receivedByCourtAt": "11-08-2009",
+      "filedAt": "11-08-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 107,
+          "sizeBytes": 1689826
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL69/KSHK",
+      "documentType": "posudek znalce 124/25/2009, CD",
+      "createdAt": "06-05-2009",
+      "receivedByCourtAt": "22-05-2009",
+      "filedAt": "22-05-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 122,
+          "sizeBytes": 4879888
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL70/KSHK",
+      "documentType": "notářský zápis NZ 276/2009",
+      "createdAt": "24-06-2009",
+      "receivedByCourtAt": "12-08-2009",
+      "filedAt": "12-08-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 67210
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL71/KSHK",
+      "documentType": "ostatní - projekt rozdělení, cd",
+      "createdAt": "02-04-2010",
+      "receivedByCourtAt": "06-04-2010",
+      "filedAt": "06-04-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 22,
+          "sizeBytes": 1312984
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL72/KSHK",
+      "documentType": "zpráva o vztazích",
+      "receivedByCourtAt": "01-04-2010",
+      "filedAt": "01-04-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 35,
+          "sizeBytes": 873035
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL73/KSHK",
+      "documentType": "notářský zápis NZ 185/2010, projekt rozdělení",
+      "createdAt": "10-05-2010",
+      "receivedByCourtAt": "10-05-2010",
+      "filedAt": "10-05-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 26,
+          "sizeBytes": 959187
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL74/KSHK",
+      "documentType": "zpráva auditora ke 31.12.2009",
+      "createdAt": "02-04-2010",
+      "receivedByCourtAt": "10-05-2010",
+      "filedAt": "10-05-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 18,
+          "sizeBytes": 470665
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL75/KSHK",
+      "documentType": "zpráva auditora K 1.1.2010",
+      "createdAt": "02-04-2010",
+      "receivedByCourtAt": "10-05-2010",
+      "filedAt": "10-05-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 172164
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL76/KSHK",
+      "documentType": "stanovy společnosti",
+      "createdAt": "31-03-2010",
+      "receivedByCourtAt": "10-05-2010",
+      "filedAt": "10-05-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 20,
+          "sizeBytes": 621102
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL77/KSHK",
+      "documentType": "rozhod. o statut. orgánu, podpisové vzory ,(zápisy,rozhodnutí akcionáře)",
+      "createdAt": "25-06-2010",
+      "receivedByCourtAt": "30-06-2010",
+      "filedAt": "30-06-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 105974
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL78/KSHK",
+      "documentType": "výroční zpráva 2009, el.",
+      "createdAt": "18-06-2010",
+      "receivedByCourtAt": "02-08-2010",
+      "filedAt": "14-09-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 140,
+          "sizeBytes": 887537
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL79/KSHK",
+      "documentType": "zpráva auditora 2009, email",
+      "createdAt": "23-02-2010",
+      "receivedByCourtAt": "04-08-2010",
+      "filedAt": "04-08-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 18,
+          "sizeBytes": 965520
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL80/KSHK",
+      "documentType": "výroční zpráva 2009, email",
+      "receivedByCourtAt": "11-10-2010",
+      "filedAt": "11-10-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 64,
+          "sizeBytes": 1738283
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL81/KSHK",
+      "documentType": "notářský zápis, rozhod. o statut. orgánu, podpisové vzory , (NZ 538/2010,výpis,zápis)",
+      "createdAt": "15-11-2010",
+      "receivedByCourtAt": "19-11-2010",
+      "filedAt": "19-11-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 28,
+          "sizeBytes": 786727
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL82/KSHK",
+      "documentType": "notářský zápis NZ 609/2010, cd",
+      "createdAt": "10-12-2010",
+      "receivedByCourtAt": "15-12-2010",
+      "filedAt": "15-12-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 13,
+          "sizeBytes": 152749
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL83/KSHK",
+      "documentType": "posudek znalce , cd",
+      "createdAt": "03-12-2010",
+      "receivedByCourtAt": "15-12-2010",
+      "filedAt": "15-12-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 47,
+          "sizeBytes": 2338998
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL84/KSHK",
+      "documentType": "rozhod. o statut. orgánu , (zápis z DR,..)",
+      "createdAt": "24-11-2010",
+      "receivedByCourtAt": "10-01-2011",
+      "filedAt": "10-01-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 39452
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL85/KSHK",
+      "documentType": "rozhod. o statut. orgánu",
+      "createdAt": "17-12-2010",
+      "receivedByCourtAt": "13-01-2011",
+      "filedAt": "13-01-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 23356
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL86/KSHK",
+      "documentType": "zpráva o vztazích 2010,el.",
+      "createdAt": "22-03-2011",
+      "receivedByCourtAt": "01-04-2011",
+      "filedAt": "05-04-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 32,
+          "sizeBytes": 743080
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL87/KSHK",
+      "documentType": "změna právní formy, fúze , cd",
+      "createdAt": "19-04-2011",
+      "receivedByCourtAt": "26-04-2011",
+      "filedAt": "28-04-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 216545
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL88/KSHK",
+      "documentType": "rozhod. o statut. orgánu, podpisové vzory , (zápis č.3 z představenstva)",
+      "receivedByCourtAt": "25-05-2011",
+      "filedAt": "27-05-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 71840
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL89/KSHK",
+      "documentType": "účetní závěrka, zpráva auditora 2010,el.",
+      "createdAt": "11-02-2011",
+      "receivedByCourtAt": "14-06-2011",
+      "filedAt": "17-06-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 18,
+          "sizeBytes": 974598
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL90/KSHK",
+      "documentType": "zpráva auditora + rozvaha k 31.12.2010, cd",
+      "receivedByCourtAt": "08-06-2011",
+      "filedAt": "16-06-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 16,
+          "sizeBytes": 1052402
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL91/KSHK",
+      "documentType": "zpráva auditora + závěrka k 31.12.2010, cd",
+      "receivedByCourtAt": "08-06-2011",
+      "filedAt": "16-06-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 19,
+          "sizeBytes": 1272225
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL92/KSHK",
+      "documentType": "notářský zápis NZ 199/2011, cd",
+      "createdAt": "01-06-2011",
+      "receivedByCourtAt": "08-06-2011",
+      "filedAt": "16-06-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 11,
+          "sizeBytes": 548248
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL93/KSHK",
+      "documentType": "notářský zápis NZ 200/2011, cd",
+      "createdAt": "01-06-2011",
+      "receivedByCourtAt": "08-06-2011",
+      "filedAt": "16-06-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 11,
+          "sizeBytes": 626280
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL94/KSHK",
+      "documentType": "zpráva auditora k 1.1.2011",
+      "receivedByCourtAt": "08-06-2011",
+      "filedAt": "16-06-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 15,
+          "sizeBytes": 340611
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL95/KSHK",
+      "documentType": "zakladatelské dokumenty, rozhod. o statut. orgánu, podpisové vzory zápisy,NZ 263/2011",
+      "createdAt": "30-06-2011",
+      "receivedByCourtAt": "19-07-2011",
+      "filedAt": "21-07-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 32,
+          "sizeBytes": 764391
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL96/KSHK",
+      "documentType": "výroční zpráva 2010, email - ARGROFERT",
+      "receivedByCourtAt": "28-07-2011",
+      "filedAt": "29-07-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 140,
+          "sizeBytes": 5577220
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL97/KSHK",
+      "documentType": "notářský zápis NZ 446/2011",
+      "createdAt": "01-11-2011",
+      "receivedByCourtAt": "10-11-2011",
+      "filedAt": "11-11-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 53426
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL98/KSHK",
+      "documentType": "zpráva o vztazích 2011,ds",
+      "createdAt": "05-03-2012",
+      "receivedByCourtAt": "30-03-2012",
+      "filedAt": "02-04-2012",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 8,
+          "sizeBytes": 0
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL99/KSHK",
+      "documentType": "ostatní projekt rozdělení, cd",
+      "createdAt": "04-05-2012",
+      "receivedByCourtAt": "09-05-2012",
+      "filedAt": "09-05-2012",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 9,
+          "sizeBytes": 0
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL100/KSHK",
+      "documentType": "notářský zápis",
+      "receivedByCourtAt": "11-06-2012",
+      "filedAt": "13-07-2012",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 18,
+          "sizeBytes": 0
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL101/KSHK",
+      "documentType": "účetní závěrka 2011",
+      "receivedByCourtAt": "11-06-2012",
+      "filedAt": "13-07-2012",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 17,
+          "sizeBytes": 0
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL102/KSHK",
+      "documentType": "účetní závěrka zahaj.rozvaha k 1.1.2012",
+      "receivedByCourtAt": "11-06-2012",
+      "filedAt": "13-07-2012",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 13,
+          "sizeBytes": 0
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL103/KSHK",
+      "documentType": "výroční zpráva 2011,el.",
+      "createdAt": "18-06-2012",
+      "receivedByCourtAt": "04-09-2012",
+      "filedAt": "04-09-2012",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 42,
+          "sizeBytes": 0
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL104/KSHK",
+      "documentType": "rozhod. o statut. orgánu rozh.jed.akc.",
+      "createdAt": "31-01-2013",
+      "receivedByCourtAt": "14-02-2013",
+      "filedAt": "25-02-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 36672
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL105/KSHK",
+      "documentType": "zpráva o vztazích 2012,el.",
+      "createdAt": "15-03-2013",
+      "receivedByCourtAt": "06-05-2013",
+      "filedAt": "07-05-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 8,
+          "sizeBytes": 591330
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL106/KSHK",
+      "documentType": "ostatní projekt rozštěpení,cd",
+      "createdAt": "06-06-2013",
+      "receivedByCourtAt": "06-06-2013",
+      "filedAt": "06-06-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 17,
+          "sizeBytes": 1276116
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL107/KSHK",
+      "documentType": "účetní závěrka [2012], zpráva auditora [2012] ds",
+      "createdAt": "21-02-2013",
+      "receivedByCourtAt": "09-07-2013",
+      "filedAt": "16-07-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 18,
+          "sizeBytes": 1983533
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL108/KSHK",
+      "documentType": "výroční zpráva [2012] ds",
+      "createdAt": "29-04-2013",
+      "receivedByCourtAt": "26-07-2013",
+      "filedAt": "29-07-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 41,
+          "sizeBytes": 2829120
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL109/KSHK",
+      "documentType": "notářský zápis, změna právní formy, fúze, ostatní NZ 248,249/2013,cd",
+      "createdAt": "08-07-2013",
+      "receivedByCourtAt": "09-07-2013",
+      "filedAt": "14-08-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 130,
+          "sizeBytes": 11329335
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL110/KSHK",
+      "documentType": "posudek znalce cd",
+      "receivedByCourtAt": "09-07-2013",
+      "filedAt": "14-08-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 122,
+          "sizeBytes": 8791857
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL111/KSHK",
+      "documentType": "výroční zpráva [2012], zpráva auditora [2012] ds",
+      "createdAt": "21-05-2013",
+      "receivedByCourtAt": "14-08-2013",
+      "filedAt": "16-08-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 110,
+          "sizeBytes": 1403191
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL112/KSHK",
+      "documentType": "notářský zápis NZ 284/2013,cd",
+      "createdAt": "07-08-2013",
+      "receivedByCourtAt": "09-08-2013",
+      "filedAt": "21-08-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 372855
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL113/KSHK",
+      "documentType": "stanovy společnosti ds",
+      "createdAt": "27-08-2013",
+      "receivedByCourtAt": "03-09-2013",
+      "filedAt": "04-09-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 22,
+          "sizeBytes": 265002
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL114/KSHK",
+      "documentType": "notářský zápis NZ 360/2013",
+      "createdAt": "08-10-2013",
+      "receivedByCourtAt": "03-03-2014",
+      "filedAt": "20-03-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 130323
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL115/KSHK",
+      "documentType": "notářský zápis NZ 536/2013",
+      "createdAt": "20-12-2013",
+      "receivedByCourtAt": "03-03-2014",
+      "filedAt": "20-03-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 20,
+          "sizeBytes": 1395738
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL116/KSHK",
+      "documentType": "ostatní zápis,RJA",
+      "receivedByCourtAt": "03-03-2014",
+      "filedAt": "20-03-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 140869
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL117/KSHK",
+      "documentType": "změna právní formy, fúze NZ 121/2014,projekt přeměny",
+      "createdAt": "23-04-2014",
+      "receivedByCourtAt": "25-04-2014",
+      "filedAt": "25-04-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 311733
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL118/KSHK",
+      "documentType": "rozhod. o statut. orgánu, ostatní RJA,zápis předst.",
+      "receivedByCourtAt": "05-05-2014",
+      "filedAt": "30-05-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 34122
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL119/KSHK",
+      "documentType": "výroční zpráva [2013] ds",
+      "createdAt": "23-04-2014",
+      "receivedByCourtAt": "27-06-2014",
+      "filedAt": "01-07-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 40,
+          "sizeBytes": 5052080
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL120/KSHK",
+      "documentType": "notářský zápis, ostatní, zpráva auditora NZ 135/2014,prohl.jednatelů+předst.",
+      "receivedByCourtAt": "04-06-2014",
+      "filedAt": "04-07-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 93,
+          "sizeBytes": 1743319
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL121/KSHK",
+      "documentType": "výroční zpráva [2014] ds",
+      "createdAt": "19-05-2015",
+      "receivedByCourtAt": "08-07-2015",
+      "filedAt": "10-07-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 50,
+          "sizeBytes": 5403655
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL122/KSHK",
+      "documentType": "notářský zápis [NZ 324/2015]",
+      "createdAt": "15-10-2015",
+      "filedAt": "16-10-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 95702
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL123/KSHK",
+      "documentType": "ostatní úplné znění stanov",
+      "createdAt": "15-10-2015",
+      "filedAt": "16-10-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 16,
+          "sizeBytes": 1038737
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL124/KSHK",
+      "documentType": "výroční zpráva [2014] ds",
+      "createdAt": "30-04-2015",
+      "receivedByCourtAt": "06-11-2015",
+      "filedAt": "10-11-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 111,
+          "sizeBytes": 1121092
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL125/KSHK",
+      "documentType": "výroční zpráva [2013] ds",
+      "createdAt": "01-05-2014",
+      "receivedByCourtAt": "06-11-2015",
+      "filedAt": "10-11-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 109,
+          "sizeBytes": 2068391
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL126/KSHK",
+      "documentType": "notářský zápis [NZ 367/2015], změna právní formy, fúze ds",
+      "receivedByCourtAt": "13-11-2015",
+      "filedAt": "13-11-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 318165
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL127/KSHK",
+      "documentType": "rozhod. o statut. orgánu RJA",
+      "createdAt": "25-09-2015",
+      "receivedByCourtAt": "06-11-2015",
+      "filedAt": "08-12-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 28413
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL128/KSHK",
+      "documentType": "notářský zápis [NZ 302/2015]",
+      "createdAt": "29-09-2015",
+      "receivedByCourtAt": "06-11-2015",
+      "filedAt": "08-12-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 150430
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL129/KSHK",
+      "documentType": "stanovy společnosti",
+      "receivedByCourtAt": "06-11-2015",
+      "filedAt": "08-12-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 18,
+          "sizeBytes": 524350
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL130/KSHK",
+      "documentType": "notářský zápis [NZ 367/2015]",
+      "createdAt": "13-11-2015",
+      "filedAt": "17-12-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 110419
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL131/KSHK",
+      "documentType": "účetní závěrka [2015], výroční zpráva [2015], zpráva o vztazích [2015], zpráva auditora [2015] DZ",
+      "createdAt": "29-02-2016",
+      "receivedByCourtAt": "13-07-2016",
+      "filedAt": "19-07-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 77,
+          "sizeBytes": 4874629
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL132/KSHK",
+      "documentType": "notářský zápis [NZ 318/2016]",
+      "createdAt": "17-08-2016",
+      "filedAt": "17-08-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 92490
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL133/KSHK",
+      "documentType": "stanovy společnosti",
+      "createdAt": "17-08-2016",
+      "filedAt": "17-08-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 13,
+          "sizeBytes": 936332
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL134/KSHK",
+      "documentType": "notářský zápis [NZ 463/2016], projekt přeměny - rozdělení odštěpením, sloučením ds",
+      "createdAt": "15-11-2016",
+      "receivedByCourtAt": "16-11-2016",
+      "filedAt": "18-11-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 356638
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL135/KSHK",
+      "documentType": "notářský zápis [NZ 463/2016]",
+      "createdAt": "15-11-2016",
+      "filedAt": "20-12-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 108911
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL136/KSHK",
+      "documentType": "výroční zpráva [2015] ds",
+      "createdAt": "23-05-2016",
+      "receivedByCourtAt": "14-12-2016",
+      "filedAt": "21-12-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 126,
+          "sizeBytes": 779317
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL137/KSHK",
+      "documentType": "rozhod. o statut. orgánu Rozhodnutí jediného akcionáře",
+      "createdAt": "03-04-2016",
+      "receivedByCourtAt": "18-01-2017",
+      "filedAt": "23-02-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 67086
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL138/KSHK",
+      "documentType": "rozhod. o statut. orgánu Rozhodnutí jediného akcionáře",
+      "createdAt": "24-06-2016",
+      "receivedByCourtAt": "18-01-2017",
+      "filedAt": "23-02-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 48796
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL140/KSHK",
+      "documentType": "výroční zpráva [2016] DZ",
+      "receivedByCourtAt": "07-08-2017",
+      "filedAt": "08-08-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 105,
+          "sizeBytes": 8068194
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL141/KSHK",
+      "documentType": "notářský zápis [NZ 509/2016]",
+      "createdAt": "24-11-2016",
+      "receivedByCourtAt": "11-08-2017",
+      "filedAt": "07-09-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 18,
+          "sizeBytes": 1359208
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL142/KSHK",
+      "documentType": "rozhod. o statut. orgánu, ostatní Zápis z mimořádného zasedání DR",
+      "createdAt": "31-01-2017",
+      "receivedByCourtAt": "11-08-2017",
+      "filedAt": "07-09-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 41109
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL143/KSHK",
+      "documentType": "účetní závěrka [2016], ostatní, výroční zpráva [2016], zpráva auditora [2016] Zpráva představenstva/ DZ",
+      "createdAt": "12-05-2017",
+      "receivedByCourtAt": "03-10-2017",
+      "filedAt": "04-10-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 64,
+          "sizeBytes": 6739861
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL144/KSHK",
+      "documentType": "účetní závěrka [2017], ostatní, výroční zpráva [2017], zpráva o vztazích [2017], zpráva auditora [2017] Zpráva představenstva / DZ",
+      "receivedByCourtAt": "17-07-2018",
+      "filedAt": "17-07-2018",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 55,
+          "sizeBytes": 2856827
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL145/KSHK",
+      "documentType": "výroční zpráva [2017] Výroční zpráva konsolidovaná 2017",
+      "receivedByCourtAt": "17-07-2018",
+      "filedAt": "17-07-2018",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 65,
+          "sizeBytes": 608186
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL146/KSHK",
+      "documentType": "rozhod. o statut. orgánu Rozhodnutí jedin.akcionaře",
+      "createdAt": "26-10-2018",
+      "receivedByCourtAt": "21-12-2018",
+      "filedAt": "05-02-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 48050
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL147/KSHK",
+      "documentType": "rozhod. o statut. orgánu 2x Rozhodnutí jediného akcionáře",
+      "receivedByCourtAt": "24-04-2019",
+      "filedAt": "15-05-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 150961
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL148/KSHK",
+      "documentType": "účetní závěrka [2018], výroční zpráva [2018], zpráva o vztazích [2018], zpráva auditora [2018] DZ",
+      "receivedByCourtAt": "05-08-2019",
+      "filedAt": "06-08-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 56,
+          "sizeBytes": 2666761
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL149/KSHK",
+      "documentType": "účetní závěrka [2018], výroční zpráva [2018], zpráva auditora [2018] dz",
+      "receivedByCourtAt": "20-09-2019",
+      "filedAt": "24-09-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 115,
+          "sizeBytes": 8434038
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL150/KSHK",
+      "documentType": "účetní závěrka [2019], výroční zpráva [2019], zpráva auditora [2019] Konsolidovaná výroční zpráva / DZ",
+      "receivedByCourtAt": "15-07-2020",
+      "filedAt": "16-07-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 118,
+          "sizeBytes": 5246764
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL151/KSHK",
+      "documentType": "účetní závěrka [2019], výroční zpráva [2019], zpráva o vztazích [2019], zpráva auditora [2019] DZ",
+      "receivedByCourtAt": "15-07-2020",
+      "filedAt": "16-07-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 54,
+          "sizeBytes": 3052538
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL152/KSHK",
+      "documentType": "rozhod. o statut. orgánu Rozhodnutí jediného akcionáře",
+      "createdAt": "05-08-2020",
+      "receivedByCourtAt": "11-08-2020",
+      "filedAt": "20-08-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 46226
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL153/KSHK",
+      "documentType": "rozhod. o statut. orgánu Rozhodnutí jed.akcionáře",
+      "createdAt": "08-09-2020",
+      "receivedByCourtAt": "13-10-2020",
+      "filedAt": "21-10-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 432408
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL154/KSHK",
+      "documentType": "notářský zápis [NZ 206/2020], stanovy společnosti",
+      "createdAt": "08-10-2020",
+      "receivedByCourtAt": "02-12-2020",
+      "filedAt": "15-12-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 16,
+          "sizeBytes": 244640
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL155/KSHK",
+      "documentType": "notářský zápis [NZ 206/2020]",
+      "createdAt": "08-10-2020",
+      "receivedByCourtAt": "03-11-2020",
+      "filedAt": "08-01-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 16,
+          "sizeBytes": 244640
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL156/KSHK",
+      "documentType": "notářský zápis [NZ 13/2021]",
+      "createdAt": "12-01-2021",
+      "receivedByCourtAt": "21-01-2021",
+      "filedAt": "12-02-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 17,
+          "sizeBytes": 7716869
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL157/KSHK",
+      "documentType": "výroční zpráva [2020] DZ",
+      "receivedByCourtAt": "22-03-2021",
+      "filedAt": "24-03-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 51,
+          "sizeBytes": 7773881
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL158/KSHK",
+      "documentType": "rozhod. o statut. orgánu Rozhodnutí jediného akcionáře",
+      "createdAt": "08-04-2021",
+      "receivedByCourtAt": "03-05-2021",
+      "filedAt": "13-05-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 317715
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL159/KSHK",
+      "documentType": "rozhod. o statut. orgánu Zápis ze zasedání představenstva",
+      "createdAt": "30-04-2021",
+      "receivedByCourtAt": "03-05-2021",
+      "filedAt": "13-05-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 151047
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL160/KSHK",
+      "documentType": "rozhod. o statut. orgánu Rozhodnutí jediného akcionáře",
+      "createdAt": "25-05-2021",
+      "receivedByCourtAt": "23-06-2021",
+      "filedAt": "30-06-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 380256
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL161/KSHK",
+      "documentType": "rozhod. o statut. orgánu Zápis z mimořádného zasedání dozorčí rady",
+      "createdAt": "18-06-2021",
+      "receivedByCourtAt": "23-06-2021",
+      "filedAt": "30-06-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 326389
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL162/KSHK",
+      "documentType": "rozhod. o statut. orgánu Rozhodnutí jediného akcionáře",
+      "createdAt": "27-01-2022",
+      "receivedByCourtAt": "09-02-2022",
+      "filedAt": "08-03-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 224673
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL163/KSHK",
+      "documentType": "účetní závěrka [2021], výroční zpráva [2021], zpráva o vztazích [2021], zpráva auditora [2021] DZ",
+      "createdAt": "25-02-2022",
+      "receivedByCourtAt": "11-07-2022",
+      "filedAt": "12-07-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 48,
+          "sizeBytes": 5713919
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL164/KSHK",
+      "documentType": "účetní závěrka [2021], výroční zpráva [2021], zpráva o vztazích [2021] Konsolidovaná výroční zpráva 2021 / DZ",
+      "createdAt": "14-07-2022",
+      "receivedByCourtAt": "14-07-2022",
+      "filedAt": "15-07-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 136,
+          "sizeBytes": 14871654
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL165/KSHK",
+      "documentType": "rozhod. o statut. orgánu Rozhodnutí JA",
+      "createdAt": "16-12-2022",
+      "receivedByCourtAt": "21-12-2022",
+      "filedAt": "27-01-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 244956
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL166/KSHK",
+      "documentType": "účetní závěrka [2022], výroční zpráva [2022], zpráva o vztazích [2022], zpráva auditora [2022]",
+      "receivedByCourtAt": "17-07-2023",
+      "filedAt": "24-07-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 51,
+          "sizeBytes": 2745354
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL167/KSHK",
+      "documentType": "účetní závěrka [2022], výroční zpráva [2022], zpráva auditora [2022] Konsolidovaná výroční zpráva 2022",
+      "receivedByCourtAt": "02-08-2023",
+      "filedAt": "04-08-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 140,
+          "sizeBytes": 19399487
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL168/KSHK",
+      "documentType": "rozhod. o statut. orgánu Rozhodnutí JA",
+      "createdAt": "26-10-2023",
+      "receivedByCourtAt": "10-11-2023",
+      "filedAt": "13-12-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 220852
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL169/KSHK",
+      "documentType": "rozhod. o statut. orgánu Rozhodnutí JA",
+      "createdAt": "15-12-2023",
+      "receivedByCourtAt": "05-01-2024",
+      "filedAt": "13-02-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 224190
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL170/KSHK",
+      "documentType": "účetní závěrka [2023], výroční zpráva [2023], zpráva o vztazích [2023], zpráva auditora [2023]",
+      "receivedByCourtAt": "07-05-2024",
+      "filedAt": "09-05-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 53,
+          "sizeBytes": 10916336
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL171/KSHK",
+      "documentType": "rozhod. o statut. orgánu Rozhodnutí JA",
+      "createdAt": "24-04-2024",
+      "receivedByCourtAt": "07-05-2024",
+      "filedAt": "22-05-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 298049
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL172/KSHK",
+      "documentType": "rozhod. o statut. orgánu Zápis z mimořádného zasedání představenstva",
+      "createdAt": "24-04-2024",
+      "receivedByCourtAt": "07-05-2024",
+      "filedAt": "22-05-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 383863
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL173/KSHK",
+      "documentType": "účetní závěrka [2023], výroční zpráva [2023], zpráva auditora [2023] konsolidovaná",
+      "receivedByCourtAt": "05-08-2024",
+      "filedAt": "06-08-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 136,
+          "sizeBytes": 6469986
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL174/KSHK",
+      "documentType": "účetní závěrka [2024], výroční zpráva [2024], zpráva o vztazích [2024], zpráva auditora [2024]",
+      "receivedByCourtAt": "22-05-2025",
+      "filedAt": "23-05-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 54,
+          "sizeBytes": 2277614
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL175/KSHK",
+      "documentType": "účetní závěrka [2024], výroční zpráva [2024], zpráva auditora [2024] konsolidovaná",
+      "receivedByCourtAt": "09-07-2025",
+      "filedAt": "09-07-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 132,
+          "sizeBytes": 10195472
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL176/KSHK",
+      "documentType": "rozhod. o statut. orgánu Rozhodnutí JA",
+      "createdAt": "26-06-2025",
+      "receivedByCourtAt": "21-07-2025",
+      "filedAt": "12-08-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 230185
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL177/KSHK",
+      "documentType": "účetní závěrka [2025], výroční zpráva [2025], zpráva o vztazích [2025], zpráva auditora [2025]",
+      "receivedByCourtAt": "12-05-2026",
+      "filedAt": "12-05-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 56,
+          "sizeBytes": 3862941
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL178/KSHK",
+      "documentType": "rozhod. o statut. orgánu Rozhodnutí JA",
+      "createdAt": "29-04-2026",
+      "receivedByCourtAt": "18-05-2026",
+      "filedAt": "25-05-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 230204
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 621/SL179/KSHK",
+      "documentType": "rozhod. o statut. orgánu Zápis ze zasedání představenstva",
+      "createdAt": "04-05-2026",
+      "receivedByCourtAt": "18-05-2026",
+      "filedAt": "25-05-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 405017
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
+  "retrieved": "2026-08-08",
+  "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/05965527",
+  "status": "OK",
+  "subject": {
+    "ico": "05965527",
+    "businessName": "Hlídač státu, z.ú.",
+    "registerReference": "U 559/MSPH"
+  },
+  "filings": [
+    {
+      "referenceLabel": "U 559/SL1/MSPH",
+      "documentType": "zakladatelské dokumenty",
+      "createdAt": "23-03-2017",
+      "receivedByCourtAt": "24-03-2017",
+      "filedAt": "27-04-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 2991112
+        }
+      ]
+    },
+    {
+      "referenceLabel": "U 559/SL2/MSPH",
+      "documentType": "účetní závěrka [2018], výroční zpráva [2018]",
+      "createdAt": "31-12-2018",
+      "receivedByCourtAt": "03-12-2019",
+      "filedAt": "04-12-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 16,
+          "sizeBytes": 1618812
+        }
+      ]
+    },
+    {
+      "referenceLabel": "U 559/SL3/MSPH",
+      "documentType": "účetní závěrka [2017], výroční zpráva [2017]",
+      "createdAt": "31-12-2017",
+      "receivedByCourtAt": "03-12-2019",
+      "filedAt": "04-12-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 11,
+          "sizeBytes": 1261658
+        }
+      ]
+    },
+    {
+      "referenceLabel": "U 559/SL4/MSPH",
+      "documentType": "účetní závěrka [2019], výroční zpráva [2019]",
+      "createdAt": "31-12-2019",
+      "receivedByCourtAt": "11-10-2022",
+      "filedAt": "13-10-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 535262
+        }
+      ]
+    },
+    {
+      "referenceLabel": "U 559/SL5/MSPH",
+      "documentType": "účetní závěrka [2021], výroční zpráva [2021]",
+      "createdAt": "31-12-2021",
+      "receivedByCourtAt": "11-10-2022",
+      "filedAt": "13-10-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 546744
+        }
+      ]
+    },
+    {
+      "referenceLabel": "U 559/SL6/MSPH",
+      "documentType": "účetní závěrka [2020], výroční zpráva [2020]",
+      "createdAt": "31-12-2020",
+      "receivedByCourtAt": "11-10-2022",
+      "filedAt": "13-10-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 936079
+        }
+      ]
+    },
+    {
+      "referenceLabel": "U 559/SL7/MSPH",
+      "documentType": "účetní závěrka [2022], výroční zpráva [2022]",
+      "createdAt": "31-12-2022",
+      "receivedByCourtAt": "18-10-2023",
+      "filedAt": "19-10-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 16,
+          "sizeBytes": 2218550
+        }
+      ]
+    },
+    {
+      "referenceLabel": "U 559/SL8/MSPH",
+      "documentType": "účetní závěrka [2023], výroční zpráva [2023]",
+      "createdAt": "31-12-2023",
+      "receivedByCourtAt": "16-12-2024",
+      "filedAt": "18-12-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 13,
+          "sizeBytes": 881043
+        }
+      ]
+    },
+    {
+      "referenceLabel": "U 559/SL9/MSPH",
+      "documentType": "zakladatelské dokumenty rozhodnutí zakladatele ústavu",
+      "createdAt": "11-12-2024",
+      "receivedByCourtAt": "13-12-2024",
+      "filedAt": "29-01-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 17329
+        }
+      ]
+    },
+    {
+      "referenceLabel": "U 559/SL10/MSPH",
+      "documentType": "zakladatelské dokumenty prohlášení zakladatele ústavu",
+      "createdAt": "11-12-2024",
+      "receivedByCourtAt": "13-12-2024",
+      "filedAt": "29-01-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 18804
+        }
+      ]
+    },
+    {
+      "referenceLabel": "U 559/SL11/MSPH",
+      "documentType": "ostatní zápis ze zasedání správní rady",
+      "createdAt": "11-12-2024",
+      "receivedByCourtAt": "13-12-2024",
+      "filedAt": "29-01-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 82501
+        }
+      ]
+    },
+    {
+      "referenceLabel": "U 559/SL12/MSPH",
+      "documentType": "účetní závěrka [2024], výroční zpráva [2024]",
+      "createdAt": "31-12-2024",
+      "receivedByCourtAt": "26-08-2025",
+      "filedAt": "27-08-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 30,
+          "sizeBytes": 4412029
+        }
+      ]
+    },
+    {
+      "referenceLabel": "U 559/SL13/MSPH",
+      "documentType": "ostatní zápis ze zasedání schůze",
+      "createdAt": "10-03-2026",
+      "receivedByCourtAt": "19-03-2026",
+      "filedAt": "13-04-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 78682
+        }
+      ]
+    },
+    {
+      "referenceLabel": "U 559/SL14/MSPH",
+      "documentType": "ostatní zápis ze zasedání správní rady",
+      "createdAt": "10-03-2026",
+      "receivedByCourtAt": "19-03-2026",
+      "filedAt": "13-04-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 30093
+        }
+      ]
+    },
+    {
+      "referenceLabel": "U 559/SL15/MSPH",
+      "documentType": "účetní závěrka [2025] Rozvaha",
+      "createdAt": "25-04-2026",
+      "receivedByCourtAt": "18-05-2026",
+      "filedAt": "19-05-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 96380
+        }
+      ]
+    },
+    {
+      "referenceLabel": "U 559/SL16/MSPH",
+      "documentType": "účetní závěrka [2025], výroční zpráva [2025]",
+      "createdAt": "25-04-2026",
+      "receivedByCourtAt": "18-05-2026",
+      "filedAt": "19-05-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 26,
+          "sizeBytes": 2210647
+        }
+      ]
+    }
+  ]
+}

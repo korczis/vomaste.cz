@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "policy": "Queries use only docket numbers already present in canonical dossier records. Person-name and birth-data searches are prohibited.",
+  "queries": [
+    {
+      "identifier": "court-board-1-t-95-2025",
+      "docket": "1 T 95/2025",
+      "subject": "Obvodní soud pro Prahu 1",
+      "entity": "obvodni-soud-praha-1",
+      "dossiers": ["tomio-okamura"],
+      "request": { "kodSubjektu": "201010", "cisloSenat": 1, "rejstrik": "T", "cisloBezne": 95, "rocnik": 2025 }
+    },
+    {
+      "identifier": "court-board-3-to-34-2024",
+      "docket": "3 To 34/2024",
+      "subject": "Vrchní soud v Praze",
+      "entity": "vrchni-soud-praha",
+      "dossiers": ["andrej-babis"],
+      "request": { "kodSubjektu": "221000", "cisloSenat": 3, "rejstrik": "To", "cisloBezne": 34, "rocnik": 2024 }
+    },
+    {
+      "identifier": "court-board-56-t-7-2022",
+      "docket": "56 T 7/2022",
+      "subject": "Městský soud v Praze",
+      "entity": "mestsky-soud-praha",
+      "dossiers": ["andrej-babis"],
+      "request": { "kodSubjektu": "201000", "cisloSenat": 56, "rejstrik": "T", "cisloBezne": 7, "rocnik": 2022 }
+    },
+    {
+      "identifier": "court-board-10-a-92-2024",
+      "docket": "10 A 92/2024",
+      "subject": "Městský soud v Praze",
+      "entity": "mestsky-soud-praha",
+      "dossiers": ["andrej-babis"],
+      "request": { "kodSubjektu": "201000", "cisloSenat": 10, "rejstrik": "A", "cisloBezne": 92, "rocnik": 2024 }
+    },
+    {
+      "identifier": "court-board-85-cm-1204-2023",
+      "docket": "85 Cm 1204/2023",
+      "subject": "Městský soud v Praze",
+      "entity": "mestsky-soud-praha",
+      "dossiers": ["james-quick"],
+      "request": { "kodSubjektu": "201000", "cisloSenat": 85, "rejstrik": "Cm", "cisloBezne": 1204, "rocnik": 2023 }
+    },
+    {
+      "identifier": "court-board-2-vzv-11-2025",
+      "docket": "2 VZV 11/2025",
+      "subject": "Vrchní státní zastupitelství v Olomouci",
+      "entity": "vrchni-statni-zastupitelstvi-olomouc",
+      "dossiers": ["jeronym-tejc"],
+      "request": { "kodSubjektu": "320000", "cisloSenat": 2, "rejstrik": "VZV", "cisloBezne": 11, "rocnik": 2025 }
+    }
+  ]
+}

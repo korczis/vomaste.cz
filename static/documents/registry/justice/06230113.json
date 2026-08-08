@@ -1,0 +1,360 @@
+{
+  "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
+  "retrieved": "2026-08-08",
+  "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/06230113",
+  "status": "OK",
+  "subject": {
+    "ico": "06230113",
+    "businessName": "Transgas s.r.o.",
+    "registerReference": "C 276898/MSPH"
+  },
+  "filings": [
+    {
+      "referenceLabel": "C 276898/SL1/MSPH",
+      "documentType": "notářský zápis [NZ 327/2017]",
+      "createdAt": "19-05-2017",
+      "receivedByCourtAt": "27-06-2017",
+      "filedAt": "29-06-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 8,
+          "sizeBytes": 2713351
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 276898/SL2/MSPH",
+      "documentType": "účetní závěrka [2018] rozvaha",
+      "createdAt": "31-12-2018",
+      "receivedByCourtAt": "24-03-2019",
+      "filedAt": "29-03-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 36677
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 276898/SL3/MSPH",
+      "documentType": "účetní závěrka [2018] VZZ",
+      "createdAt": "31-12-2018",
+      "receivedByCourtAt": "24-03-2019",
+      "filedAt": "29-03-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 18671
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 276898/SL4/MSPH",
+      "documentType": "zpráva o vztazích r. 2018",
+      "createdAt": "31-12-2018",
+      "receivedByCourtAt": "24-03-2019",
+      "filedAt": "29-03-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 400303
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 276898/SL5/MSPH",
+      "documentType": "notářský zápis [N 97/2019, NZ 153/2019]",
+      "createdAt": "11-03-2019",
+      "filedAt": "07-06-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 208710
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 276898/SL6/MSPH",
+      "documentType": "zakladatelské dokumenty",
+      "createdAt": "11-03-2019",
+      "filedAt": "07-06-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 744781
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 276898/SL7/MSPH",
+      "documentType": "účetní závěrka [2019] rozvaha",
+      "createdAt": "31-12-2019",
+      "receivedByCourtAt": "18-03-2020",
+      "filedAt": "27-03-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 238148
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 276898/SL8/MSPH",
+      "documentType": "zpráva o vztazích [2019]",
+      "createdAt": "31-12-2019",
+      "receivedByCourtAt": "18-03-2020",
+      "filedAt": "27-03-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 407561
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 276898/SL9/MSPH",
+      "documentType": "účetní závěrka [2019] vzz",
+      "createdAt": "31-12-2019",
+      "receivedByCourtAt": "18-03-2020",
+      "filedAt": "27-03-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 220447
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 276898/SL10/MSPH",
+      "documentType": "zpráva o vztazích [2020]",
+      "createdAt": "31-12-2020",
+      "receivedByCourtAt": "27-03-2021",
+      "filedAt": "06-04-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 95868
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 276898/SL11/MSPH",
+      "documentType": "účetní závěrka [2020] rozvaha",
+      "createdAt": "31-12-2020",
+      "receivedByCourtAt": "27-03-2021",
+      "filedAt": "06-04-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 238089
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 276898/SL12/MSPH",
+      "documentType": "účetní závěrka [2020] VZZ",
+      "createdAt": "31-12-2020",
+      "receivedByCourtAt": "27-03-2021",
+      "filedAt": "06-04-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 220401
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 276898/SL13/MSPH",
+      "documentType": "účetní závěrka [2021] rozvaha",
+      "createdAt": "31-12-2021",
+      "receivedByCourtAt": "26-02-2022",
+      "filedAt": "03-03-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 237165
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 276898/SL14/MSPH",
+      "documentType": "účetní závěrka [2021] VZaZ",
+      "createdAt": "31-12-2021",
+      "receivedByCourtAt": "26-02-2022",
+      "filedAt": "03-03-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 220056
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 276898/SL15/MSPH",
+      "documentType": "zpráva o vztazích [2021]",
+      "createdAt": "31-12-2021",
+      "receivedByCourtAt": "26-02-2022",
+      "filedAt": "03-03-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 93695
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 276898/SL16/MSPH",
+      "documentType": "účetní závěrka [2022] rozvaha",
+      "createdAt": "31-12-2022",
+      "receivedByCourtAt": "01-04-2023",
+      "filedAt": "26-04-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 237120
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 276898/SL17/MSPH",
+      "documentType": "zpráva o vztazích [2022]",
+      "createdAt": "31-12-2022",
+      "receivedByCourtAt": "01-04-2023",
+      "filedAt": "26-04-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 95655
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 276898/SL18/MSPH",
+      "documentType": "účetní závěrka [2022] VZaZ",
+      "createdAt": "31-12-2022",
+      "receivedByCourtAt": "01-04-2023",
+      "filedAt": "26-04-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 220065
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 276898/SL19/MSPH",
+      "documentType": "notářský zápis [N 97/2024, NZ 96/2024] úplné znění zakladatelské listiny",
+      "createdAt": "29-02-2024",
+      "filedAt": "04-03-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 10,
+          "sizeBytes": 358536
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 276898/SL20/MSPH",
+      "documentType": "účetní závěrka [2023] Rozvaha",
+      "createdAt": "31-12-2023",
+      "receivedByCourtAt": "27-03-2024",
+      "filedAt": "09-04-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 237153
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 276898/SL21/MSPH",
+      "documentType": "účetní závěrka [2023] VZaZ",
+      "createdAt": "31-12-2023",
+      "receivedByCourtAt": "27-03-2024",
+      "filedAt": "09-04-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 219579
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 276898/SL22/MSPH",
+      "documentType": "zpráva o vztazích [2023]",
+      "createdAt": "31-12-2023",
+      "receivedByCourtAt": "27-03-2024",
+      "filedAt": "09-04-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 35488
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 276898/SL23/MSPH",
+      "documentType": "účetní závěrka [2024] Rozvaha",
+      "createdAt": "31-12-2024",
+      "receivedByCourtAt": "26-04-2025",
+      "filedAt": "29-04-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 237507
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 276898/SL24/MSPH",
+      "documentType": "účetní závěrka [2024] VZaZ",
+      "createdAt": "31-12-2024",
+      "receivedByCourtAt": "26-04-2025",
+      "filedAt": "29-04-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 219676
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 276898/SL25/MSPH",
+      "documentType": "zpráva o vztazích [2024]",
+      "createdAt": "31-12-2024",
+      "receivedByCourtAt": "26-04-2025",
+      "filedAt": "29-04-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 35892
+        }
+      ]
+    }
+  ]
+}

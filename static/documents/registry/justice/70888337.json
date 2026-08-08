@@ -1,0 +1,10 @@
+{
+  "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
+  "retrieved": "2026-08-08",
+  "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/70888337",
+  "status": "CHYBA",
+  "subject": {
+    "ico": "70888337"
+  },
+  "filings": []
+}

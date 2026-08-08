@@ -1,0 +1,13 @@
+{
+  "retrieved": "2026-08-08",
+  "endpoint": "https://infodeska.gov.cz/eudpub/api/v1/vyveseni/vyhledej",
+  "docket": "85 Cm 1204/2023",
+  "request": {
+    "kodSubjektu": "201000",
+    "cisloSenat": 85,
+    "rejstrik": "Cm",
+    "cisloBezne": 1204,
+    "rocnik": 2023
+  },
+  "response": []
+}

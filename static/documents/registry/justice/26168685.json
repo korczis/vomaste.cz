@@ -1,0 +1,2186 @@
+{
+  "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
+  "retrieved": "2026-08-08",
+  "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/26168685",
+  "status": "OK",
+  "subject": {
+    "ico": "26168685",
+    "businessName": "Seznam.cz, a.s.",
+    "registerReference": "B 6493/MSPH"
+  },
+  "filings": [
+    {
+      "referenceLabel": "B 6493/SL1/MSPH",
+      "documentType": "notářský zápis, stanovy společnosti NZ 72/2000",
+      "createdAt": "24-02-2000",
+      "filedAt": "05-04-2000",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 52,
+          "sizeBytes": 23917399
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL2/MSPH",
+      "documentType": "notářský zápis, stanovy společnosti NZ 143/2000",
+      "createdAt": "07-04-2000",
+      "filedAt": "15-05-2000",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 34,
+          "sizeBytes": 14392787
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL3/MSPH",
+      "documentType": "notářský zápis NZ 202/2000",
+      "createdAt": "18-05-2000",
+      "filedAt": "25-09-2000",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 9,
+          "sizeBytes": 3411016
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL4/MSPH",
+      "documentType": "ostatní rezignace na funkci",
+      "createdAt": "27-10-2000",
+      "filedAt": "27-04-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 553569
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL5/MSPH",
+      "documentType": "ostatní -jmenování do funkce",
+      "createdAt": "08-01-2001",
+      "filedAt": "27-04-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 921315
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL6/MSPH",
+      "documentType": "stanovy společnosti",
+      "createdAt": "10-10-2001",
+      "filedAt": "20-12-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 42,
+          "sizeBytes": 23500599
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL7/MSPH",
+      "documentType": "notářský zápis, stanovy společnosti NZ 557/2001",
+      "createdAt": "10-10-2001",
+      "filedAt": "20-12-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 16,
+          "sizeBytes": 8836498
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL8/MSPH",
+      "documentType": "ostatní - zápis ze schůze DR (představenstvo)",
+      "createdAt": "10-01-2001",
+      "filedAt": "20-12-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 2877317
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL10/MSPH",
+      "documentType": "účetní závěrka za r.2000 + přílohy",
+      "filedAt": "20-12-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 54,
+          "sizeBytes": 1332467
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL11/MSPH",
+      "documentType": "ostatní zápis zasedání představenstva",
+      "createdAt": "28-06-2002",
+      "filedAt": "31-07-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 2122610
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL12/MSPH",
+      "documentType": "ostatní - zápis z VH",
+      "createdAt": "28-06-2002",
+      "filedAt": "31-07-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 8,
+          "sizeBytes": 4265076
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL13/MSPH",
+      "documentType": "ostatní - zápis z jednání představenstva",
+      "createdAt": "13-06-2002",
+      "filedAt": "31-07-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 459893
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL14/MSPH",
+      "documentType": "ostatní oznámení rezignace na funkci",
+      "createdAt": "12-06-2002",
+      "filedAt": "31-07-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 500663
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL15/MSPH",
+      "documentType": "ostatní - zápis mimořádné VH",
+      "createdAt": "30-07-2001",
+      "filedAt": "31-07-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 1421615
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL17/MSPH",
+      "documentType": "zpráva o vztazích r. 2001",
+      "createdAt": "28-06-2002",
+      "filedAt": "31-07-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 484192
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL18/MSPH",
+      "documentType": "výroční zpráva za rok 2001 2x ",
+      "receivedByCourtAt": "20-03-2003",
+      "filedAt": "24-04-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 19,
+          "sizeBytes": 311495
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL19/MSPH",
+      "documentType": "notářský zápis NZ168/2003",
+      "createdAt": "15-04-2003",
+      "filedAt": "09-06-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 10,
+          "sizeBytes": 4232092
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL20/MSPH",
+      "documentType": "stanovy společnosti + zápis představenstva",
+      "createdAt": "28-07-2003",
+      "filedAt": "03-09-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 12,
+          "sizeBytes": 6919079
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL21/MSPH",
+      "documentType": "notářský zápis NZ 260/2003",
+      "createdAt": "27-10-2003",
+      "filedAt": "25-11-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 11,
+          "sizeBytes": 4285874
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL22/MSPH",
+      "documentType": "účetní závěrka, výroční zpráva +audit r.2002+zpr.o vztazích",
+      "createdAt": "31-12-2002",
+      "filedAt": "25-11-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 21,
+          "sizeBytes": 358048
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL23/MSPH",
+      "documentType": "stanovy společnosti",
+      "createdAt": "27-10-2003",
+      "receivedByCourtAt": "10-02-2004",
+      "filedAt": "18-02-2004",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 20,
+          "sizeBytes": 11431021
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL24/MSPH",
+      "documentType": "ostatní -zápis z VH",
+      "createdAt": "15-07-2004",
+      "filedAt": "29-10-2004",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 9,
+          "sizeBytes": 254289
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL25/MSPH",
+      "documentType": "účetní závěrka, výroční zpráva r.2003+audit+o vztazích+př.",
+      "createdAt": "31-12-2003",
+      "filedAt": "29-10-2004",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 24,
+          "sizeBytes": 746422
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL26/MSPH",
+      "documentType": "ostatní - zápis volební komise",
+      "createdAt": "18-06-2004",
+      "filedAt": "29-10-2004",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 945442
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL27/MSPH",
+      "documentType": "notářský zápis NZ 123/2005",
+      "createdAt": "11-03-2005",
+      "receivedByCourtAt": "30-03-2005",
+      "filedAt": "06-04-2005",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 13,
+          "sizeBytes": 6061343
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL28/MSPH",
+      "documentType": "stanovy společnosti",
+      "createdAt": "15-06-2005",
+      "filedAt": "21-09-2005",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 10,
+          "sizeBytes": 5740097
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL29/MSPH",
+      "documentType": "notářský zápis NZ 278/2005",
+      "createdAt": "15-06-2005",
+      "filedAt": "21-09-2005",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 31,
+          "sizeBytes": 12771632
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL30/MSPH",
+      "documentType": "ostatní zápis VH",
+      "createdAt": "15-06-2005",
+      "filedAt": "21-09-2005",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 15,
+          "sizeBytes": 8266990
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL31/MSPH",
+      "documentType": "ostatní zápis zasedání představenstva",
+      "createdAt": "16-06-2005",
+      "filedAt": "21-09-2005",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 11,
+          "sizeBytes": 6538222
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL32/MSPH",
+      "documentType": "notářský zápis NZ 569/2005",
+      "createdAt": "08-12-2005",
+      "filedAt": "13-01-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 14,
+          "sizeBytes": 7088982
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL33/MSPH",
+      "documentType": "stanovy společnosti",
+      "createdAt": "08-12-2005",
+      "filedAt": "13-01-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 10,
+          "sizeBytes": 5767730
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL34/MSPH",
+      "documentType": "ostatní - zápis mimořádné VH",
+      "createdAt": "22-12-2005",
+      "filedAt": "03-03-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 9,
+          "sizeBytes": 4014824
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL37/MSPH",
+      "documentType": "účetní závěrka, výroční zpráva r.2004+audit+zpr.o vztazích",
+      "createdAt": "31-12-2004",
+      "receivedByCourtAt": "03-03-2006",
+      "filedAt": "08-03-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 42,
+          "sizeBytes": 799817
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL38/MSPH",
+      "documentType": "ostatní zápis volební komise",
+      "createdAt": "15-02-2006",
+      "filedAt": "12-09-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 907484
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL39/MSPH",
+      "documentType": "ostatní - zápis z VH",
+      "createdAt": "05-04-2006",
+      "filedAt": "12-09-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 10,
+          "sizeBytes": 4294423
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL41/MSPH",
+      "documentType": "notářský zápis NZ 354/2006",
+      "createdAt": "26-09-2006",
+      "filedAt": "04-01-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 26,
+          "sizeBytes": 10513821
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL42/MSPH",
+      "documentType": "ostatní - zápis volební komise",
+      "createdAt": "31-08-2006",
+      "filedAt": "04-01-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 1332630
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL43/MSPH",
+      "documentType": "ostatní odstoupení z funkce",
+      "createdAt": "31-07-2006",
+      "filedAt": "04-01-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 300385
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL44/MSPH",
+      "documentType": "účetní závěrka, výroční zpráva, zpráva o vztazích, zpráva auditora r.2005",
+      "createdAt": "31-12-2005",
+      "filedAt": "18-09-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 21,
+          "sizeBytes": 4709970
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL45/MSPH",
+      "documentType": "účetní závěrka, výroční zpráva, zpráva o vztazích, zpráva auditora r.2006",
+      "createdAt": "31-12-2006",
+      "filedAt": "18-09-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 19,
+          "sizeBytes": 4979407
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL46/MSPH",
+      "documentType": "stanovy společnosti",
+      "createdAt": "28-06-2007",
+      "filedAt": "18-09-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 10,
+          "sizeBytes": 3373640
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL47/MSPH",
+      "documentType": "notářský zápis NZ 153/2007",
+      "createdAt": "28-06-2007",
+      "filedAt": "18-09-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 8,
+          "sizeBytes": 191277
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL48/MSPH",
+      "documentType": "notářský zápis, stanovy společnosti -NZ333/08",
+      "createdAt": "26-06-2008",
+      "filedAt": "05-11-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 57,
+          "sizeBytes": 1230085
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL49/MSPH",
+      "documentType": "stanovy společnosti",
+      "createdAt": "26-06-2008",
+      "filedAt": "05-11-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 10,
+          "sizeBytes": 286124
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL50/MSPH",
+      "documentType": "notářský zápis NZ 315/2009",
+      "createdAt": "30-06-2009",
+      "filedAt": "27-07-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 42,
+          "sizeBytes": 738761
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL51/MSPH",
+      "documentType": "stanovy společnosti",
+      "createdAt": "30-06-2009",
+      "filedAt": "27-07-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 10,
+          "sizeBytes": 266921
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL52/MSPH",
+      "documentType": "ostatní -zápis z jed. představ.",
+      "createdAt": "30-06-2009",
+      "filedAt": "27-07-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 17343
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL53/MSPH",
+      "documentType": "účetní závěrka r.2007",
+      "createdAt": "31-12-2007",
+      "filedAt": "16-03-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 28,
+          "sizeBytes": 1484071
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL54/MSPH",
+      "documentType": "účetní závěrka r.2008",
+      "createdAt": "31-12-2008",
+      "filedAt": "16-03-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 27,
+          "sizeBytes": 1420136
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL55/MSPH",
+      "documentType": "ostatní -zápis ze zased.předst.",
+      "createdAt": "23-03-2010",
+      "filedAt": "20-05-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 424591
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL56/MSPH",
+      "documentType": "ostatní -zápis z VH",
+      "createdAt": "23-03-2010",
+      "filedAt": "20-05-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 202819
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL57/MSPH",
+      "documentType": "ostatní -projekt fúze",
+      "createdAt": "18-06-2010",
+      "receivedByCourtAt": "28-06-2010",
+      "filedAt": "29-06-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 11,
+          "sizeBytes": 934558
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL58/MSPH",
+      "documentType": "stanovy společnosti",
+      "createdAt": "29-06-2010",
+      "receivedByCourtAt": "30-06-2010",
+      "filedAt": "02-07-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 10,
+          "sizeBytes": 2777949
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL59/MSPH",
+      "documentType": "notářský zápis -NZ257/10-fúze+ÚZr.09+zah.roz.",
+      "createdAt": "05-08-2010",
+      "filedAt": "07-10-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 72,
+          "sizeBytes": 10116310
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL60/MSPH",
+      "documentType": "notářský zápis -NZ256/10-fúze",
+      "createdAt": "05-08-2010",
+      "filedAt": "07-10-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 43,
+          "sizeBytes": 5796060
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL61/MSPH",
+      "documentType": "ostatní -prohl.představenstva",
+      "createdAt": "31-08-2010",
+      "filedAt": "07-10-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 16026
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL62/MSPH",
+      "documentType": "ostatní - zápis mimoř. VH",
+      "createdAt": "06-12-2010",
+      "filedAt": "24-01-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 10,
+          "sizeBytes": 2000260
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL63/MSPH",
+      "documentType": "podpisové vzory",
+      "createdAt": "29-11-2010",
+      "filedAt": "24-01-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 37798
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL64/MSPH",
+      "documentType": "ostatní -projekt fúze",
+      "createdAt": "20-06-2011",
+      "receivedByCourtAt": "21-06-2011",
+      "filedAt": "21-06-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 14,
+          "sizeBytes": 2315655
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL65/MSPH",
+      "documentType": "ostatní projekt fúze",
+      "createdAt": "20-06-2011",
+      "receivedByCourtAt": "22-06-2011",
+      "filedAt": "22-06-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 14,
+          "sizeBytes": 2315655
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL66/MSPH",
+      "documentType": "notářský zápis NZ 468/11",
+      "createdAt": "19-08-2011",
+      "receivedByCourtAt": "05-09-2011",
+      "filedAt": "06-10-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 35,
+          "sizeBytes": 3795942
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL67/MSPH",
+      "documentType": "notářský zápis NZ 223/11- projekt fúze",
+      "createdAt": "10-08-2011",
+      "filedAt": "16-12-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 81,
+          "sizeBytes": 12259083
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL68/MSPH",
+      "documentType": "stanovy společnosti",
+      "createdAt": "16-08-2012",
+      "receivedByCourtAt": "10-10-2012",
+      "filedAt": "17-01-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 12,
+          "sizeBytes": 1042457
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL69/MSPH",
+      "documentType": "notářský zápis NZ 141/2013",
+      "createdAt": "15-08-2012",
+      "receivedByCourtAt": "10-10-2012",
+      "filedAt": "17-01-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 33,
+          "sizeBytes": 4611536
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL70/MSPH",
+      "documentType": "účetní závěrka, zpráva auditora za rok 2010",
+      "createdAt": "31-12-2010",
+      "receivedByCourtAt": "05-04-2013",
+      "filedAt": "10-04-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 2606843
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL71/MSPH",
+      "documentType": "účetní závěrka, zpráva auditora za rok 2011",
+      "createdAt": "31-12-2011",
+      "receivedByCourtAt": "05-04-2013",
+      "filedAt": "10-04-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 2132204
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL72/MSPH",
+      "documentType": "účetní závěrka, zpráva auditora za rok 2009",
+      "createdAt": "31-12-2009",
+      "receivedByCourtAt": "05-04-2013",
+      "filedAt": "10-04-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 2473490
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL73/MSPH",
+      "documentType": "notářský zápis NZ 14/2013",
+      "createdAt": "23-01-2013",
+      "receivedByCourtAt": "28-03-2013",
+      "filedAt": "23-04-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 70,
+          "sizeBytes": 12162989
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL74/MSPH",
+      "documentType": "stanovy společnosti",
+      "createdAt": "23-01-2013",
+      "receivedByCourtAt": "28-03-2013",
+      "filedAt": "23-04-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 11,
+          "sizeBytes": 1022651
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL75/MSPH",
+      "documentType": "notářský zápis NZ 171/2013-projekt fúze",
+      "createdAt": "28-06-2013",
+      "receivedByCourtAt": "28-06-2013",
+      "filedAt": "01-07-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 16,
+          "sizeBytes": 817676
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL77/MSPH",
+      "documentType": "notářský zápis NZ 171/2013- projekt fúze",
+      "createdAt": "28-06-2013",
+      "receivedByCourtAt": "10-07-2013",
+      "filedAt": "11-07-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 16,
+          "sizeBytes": 1608450
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL78/MSPH",
+      "documentType": "ostatní, zpráva auditora k 1.1.2013 zahajovací rozvaha",
+      "createdAt": "01-01-2013",
+      "receivedByCourtAt": "10-07-2013",
+      "filedAt": "11-07-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 19,
+          "sizeBytes": 4255960
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL79/MSPH",
+      "documentType": "účetní závěrka [2012], zpráva auditora [2012]",
+      "createdAt": "31-12-2012",
+      "receivedByCourtAt": "16-09-2013",
+      "filedAt": "30-09-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 34,
+          "sizeBytes": 7544933
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL80/MSPH",
+      "documentType": "ostatní zápis z VH",
+      "createdAt": "20-06-2014",
+      "receivedByCourtAt": "16-07-2014",
+      "filedAt": "01-10-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 9,
+          "sizeBytes": 532336
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL81/MSPH",
+      "documentType": "ostatní zápis z jednání představenstva",
+      "createdAt": "20-06-2014",
+      "receivedByCourtAt": "16-07-2014",
+      "filedAt": "01-10-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 136137
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL82/MSPH",
+      "documentType": "notářský zápis [NZ 496/2014], stanovy společnosti",
+      "createdAt": "20-06-2014",
+      "receivedByCourtAt": "16-07-2014",
+      "filedAt": "03-02-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 93,
+          "sizeBytes": 13929212
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL83/MSPH",
+      "documentType": "ostatní zápis z VH",
+      "createdAt": "13-03-2015",
+      "receivedByCourtAt": "15-04-2015",
+      "filedAt": "20-05-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 851061
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL84/MSPH",
+      "documentType": "ostatní zápis z jednání představenstva",
+      "createdAt": "13-03-2015",
+      "receivedByCourtAt": "15-04-2015",
+      "filedAt": "20-05-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 1043828
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL85/MSPH",
+      "documentType": "ostatní zápis z VH",
+      "createdAt": "26-06-2015",
+      "receivedByCourtAt": "01-07-2015",
+      "filedAt": "07-07-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 8,
+          "sizeBytes": 1895882
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL86/MSPH",
+      "documentType": "ostatní zápis z jednání představenstva",
+      "createdAt": "26-06-2015",
+      "receivedByCourtAt": "01-07-2015",
+      "filedAt": "07-07-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 679676
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL87/MSPH",
+      "documentType": "notářský zápis [305/2015]",
+      "createdAt": "26-06-2015",
+      "receivedByCourtAt": "01-07-2015",
+      "filedAt": "07-07-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 75,
+          "sizeBytes": 12125472
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL88/MSPH",
+      "documentType": "stanovy společnosti bez data",
+      "receivedByCourtAt": "01-07-2015",
+      "filedAt": "07-07-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 9,
+          "sizeBytes": 2437450
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL89/MSPH",
+      "documentType": "notářský zápis [NZ 168/2015], stanovy společnosti",
+      "createdAt": "17-09-2015",
+      "receivedByCourtAt": "24-09-2015",
+      "filedAt": "29-09-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 75,
+          "sizeBytes": 10895006
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL90/MSPH",
+      "documentType": "účetní závěrka [2015], zpráva auditora [2015]",
+      "createdAt": "31-12-2013",
+      "receivedByCourtAt": "20-07-2016",
+      "filedAt": "21-07-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 31,
+          "sizeBytes": 10636426
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL91/MSPH",
+      "documentType": "účetní závěrka [2014], zpráva auditora [2014]",
+      "createdAt": "31-12-2014",
+      "receivedByCourtAt": "20-07-2016",
+      "filedAt": "21-07-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 16,
+          "sizeBytes": 708676
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL92/MSPH",
+      "documentType": "ostatní zápis z VH",
+      "createdAt": "24-06-2016",
+      "receivedByCourtAt": "01-07-2016",
+      "filedAt": "02-08-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 13,
+          "sizeBytes": 4855331
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL93/MSPH",
+      "documentType": "notářský zápis [NZ 155/2016]",
+      "createdAt": "24-06-2016",
+      "receivedByCourtAt": "01-07-2016",
+      "filedAt": "02-08-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 46,
+          "sizeBytes": 19401403
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL94/MSPH",
+      "documentType": "ostatní",
+      "createdAt": "30-11-2016",
+      "receivedByCourtAt": "08-12-2016",
+      "filedAt": "11-01-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 9,
+          "sizeBytes": 1716706
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL95/MSPH",
+      "documentType": "účetní závěrka [2008], výroční zpráva [2008], zpráva o vztazích [2008], zpráva auditora [2008]",
+      "createdAt": "31-12-2008",
+      "receivedByCourtAt": "27-12-2016",
+      "filedAt": "07-02-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 43,
+          "sizeBytes": 1596555
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL96/MSPH",
+      "documentType": "účetní závěrka [2011], výroční zpráva [2011], zpráva o vztazích [2011], zpráva auditora [2011]",
+      "createdAt": "31-12-2011",
+      "receivedByCourtAt": "27-12-2016",
+      "filedAt": "07-02-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 45,
+          "sizeBytes": 1839117
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL97/MSPH",
+      "documentType": "účetní závěrka [2013], výroční zpráva [2013], zpráva o vztazích [2013], zpráva auditora [2013]",
+      "createdAt": "31-12-2013",
+      "receivedByCourtAt": "27-12-2016",
+      "filedAt": "07-02-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 45,
+          "sizeBytes": 1877340
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL98/MSPH",
+      "documentType": "účetní závěrka [2010], výroční zpráva [2010], zpráva o vztazích [2010], zpráva auditora [2010]",
+      "createdAt": "31-12-2010",
+      "receivedByCourtAt": "27-12-2016",
+      "filedAt": "07-02-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 47,
+          "sizeBytes": 2036918
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL99/MSPH",
+      "documentType": "účetní závěrka [2009], výroční zpráva [2009], zpráva o vztazích [2009], zpráva auditora [2009]",
+      "createdAt": "31-12-2009",
+      "receivedByCourtAt": "27-12-2016",
+      "filedAt": "07-02-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 41,
+          "sizeBytes": 1541747
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL100/MSPH",
+      "documentType": "účetní závěrka [2012], výroční zpráva [2012], zpráva o vztazích [2012], zpráva auditora [2012]",
+      "createdAt": "31-12-2012",
+      "receivedByCourtAt": "27-12-2016",
+      "filedAt": "07-02-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 44,
+          "sizeBytes": 1679617
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL101/MSPH",
+      "documentType": "účetní závěrka [2007], výroční zpráva [2007], zpráva o vztazích [2007], zpráva auditora [2007]",
+      "createdAt": "31-12-2007",
+      "receivedByCourtAt": "27-12-2016",
+      "filedAt": "07-02-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 47,
+          "sizeBytes": 5203529
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL102/MSPH",
+      "documentType": "účetní závěrka [2015], výroční zpráva [2015], zpráva o vztazích [2015], zpráva auditora [2015]",
+      "createdAt": "31-12-2015",
+      "receivedByCourtAt": "02-02-2017",
+      "filedAt": "14-02-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 33,
+          "sizeBytes": 9997276
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL103/MSPH",
+      "documentType": "účetní závěrka [2014], výroční zpráva [2014], zpráva o vztazích [2014], zpráva auditora [2014]",
+      "createdAt": "31-12-2014",
+      "receivedByCourtAt": "02-02-2017",
+      "filedAt": "14-02-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 33,
+          "sizeBytes": 9346993
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL104/MSPH",
+      "documentType": "notářský zápis [NZ 48/2017]",
+      "createdAt": "27-04-2017",
+      "receivedByCourtAt": "16-05-2017",
+      "filedAt": "22-05-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 47,
+          "sizeBytes": 9740441
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL105/MSPH",
+      "documentType": "ostatní zápis z valné hromady",
+      "createdAt": "27-04-2017",
+      "receivedByCourtAt": "16-05-2017",
+      "filedAt": "22-05-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 8,
+          "sizeBytes": 996442
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL106/MSPH",
+      "documentType": "stanovy společnosti bez data",
+      "receivedByCourtAt": "16-05-2017",
+      "filedAt": "22-05-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 9,
+          "sizeBytes": 959779
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL107/MSPH",
+      "documentType": "notářský zápis [Nz 313/2017, N 431/2017]",
+      "createdAt": "21-06-2017",
+      "filedAt": "27-06-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 56,
+          "sizeBytes": 3214340
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL108/MSPH",
+      "documentType": "účetní závěrka [2016], výroční zpráva [2016], zpráva o vztazích [2016], zpráva auditora [2016]",
+      "createdAt": "31-12-2016",
+      "receivedByCourtAt": "26-09-2017",
+      "filedAt": "16-10-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 35,
+          "sizeBytes": 4746958
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL109/MSPH",
+      "documentType": "notářský zápis [NZ 949/2017]",
+      "createdAt": "08-11-2017",
+      "filedAt": "13-11-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 450917
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL110/MSPH",
+      "documentType": "ostatní záp. z jed.představenstva",
+      "createdAt": "13-11-2017",
+      "receivedByCourtAt": "29-11-2017",
+      "filedAt": "21-12-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 68612
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL111/MSPH",
+      "documentType": "stanovy společnosti bez data",
+      "receivedByCourtAt": "29-11-2017",
+      "filedAt": "21-12-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 9,
+          "sizeBytes": 325754
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL112/MSPH",
+      "documentType": "účetní závěrka [2017], výroční zpráva [2017], zpráva o vztazích [2017], zpráva auditora [2017]",
+      "createdAt": "31-12-2017",
+      "receivedByCourtAt": "24-09-2018",
+      "filedAt": "26-09-2018",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 35,
+          "sizeBytes": 11620344
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL113/MSPH",
+      "documentType": "notářský zápis [NZ 133/2019, N 143/2019], stanovy společnosti",
+      "createdAt": "18-02-2019",
+      "filedAt": "18-02-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 44,
+          "sizeBytes": 11095210
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL114/MSPH",
+      "documentType": "notářský zápis [NZ 135/2017], stanovy společnosti",
+      "createdAt": "18-02-2019",
+      "receivedByCourtAt": "19-02-2019",
+      "filedAt": "25-02-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 53,
+          "sizeBytes": 1941199
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL115/MSPH",
+      "documentType": "ostatní rozhodnutí jediného akcionáře",
+      "createdAt": "24-05-2019",
+      "receivedByCourtAt": "24-06-2019",
+      "filedAt": "09-07-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 374893
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL116/MSPH",
+      "documentType": "účetní závěrka [2018], výroční zpráva [2018], zpráva o vztazích [2018], zpráva auditora [2018]",
+      "createdAt": "31-12-2018",
+      "receivedByCourtAt": "02-09-2019",
+      "filedAt": "10-09-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 36,
+          "sizeBytes": 11423158
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL117/MSPH",
+      "documentType": "ostatní zápis z jednání představenstva",
+      "createdAt": "03-02-2020",
+      "receivedByCourtAt": "12-02-2020",
+      "filedAt": "26-02-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 688200
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL118/MSPH",
+      "documentType": "notářský zápis [NZ 532/2020], projekt fúze",
+      "createdAt": "16-06-2020",
+      "receivedByCourtAt": "17-06-2020",
+      "filedAt": "17-06-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 17,
+          "sizeBytes": 15021785
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL119/MSPH",
+      "documentType": "notářský zápis [NZ 532/2020]",
+      "createdAt": "16-06-2020",
+      "filedAt": "03-08-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 16,
+          "sizeBytes": 2346603
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL120/MSPH",
+      "documentType": "výroční zpráva [2019] Seznam.cz as",
+      "filedAt": "03-08-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 35,
+          "sizeBytes": 11618716
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL121/MSPH",
+      "documentType": "ostatní zahajovací rozvaha Seznam.cz as",
+      "filedAt": "03-08-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 13,
+          "sizeBytes": 5005843
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL122/MSPH",
+      "documentType": "účetní závěrka [2019] Voice od Prague, sro",
+      "filedAt": "03-08-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 18,
+          "sizeBytes": 6266293
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL123/MSPH",
+      "documentType": "ostatní rozhodnutí jediného akcionáře",
+      "createdAt": "26-06-2020",
+      "receivedByCourtAt": "27-07-2020",
+      "filedAt": "05-08-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 411736
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL124/MSPH",
+      "documentType": "ostatní zápis z jednání představenstva",
+      "createdAt": "26-06-2020",
+      "receivedByCourtAt": "27-07-2020",
+      "filedAt": "05-08-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 663463
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL125/MSPH",
+      "documentType": "ostatní záp.z jednání představenstva",
+      "createdAt": "06-10-2020",
+      "receivedByCourtAt": "12-10-2020",
+      "filedAt": "03-11-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 77102
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL126/MSPH",
+      "documentType": "účetní závěrka [2019], výroční zpráva [2019], zpráva o vztazích [2019], zpráva auditora [2019]",
+      "createdAt": "31-12-2019",
+      "receivedByCourtAt": "29-10-2020",
+      "filedAt": "03-11-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 35,
+          "sizeBytes": 11618716
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL127/MSPH",
+      "documentType": "účetní závěrka [2017], výroční zpráva [2017], zpráva auditora [2017] (konsolidovaná)",
+      "createdAt": "31-12-2017",
+      "receivedByCourtAt": "30-11-2020",
+      "filedAt": "02-12-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 45,
+          "sizeBytes": 16702247
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL128/MSPH",
+      "documentType": "účetní závěrka [2019], výroční zpráva [2019], zpráva auditora [2019] konsolidovaná",
+      "createdAt": "31-12-2019",
+      "receivedByCourtAt": "30-11-2020",
+      "filedAt": "02-12-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 48,
+          "sizeBytes": 17926271
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL129/MSPH",
+      "documentType": "účetní závěrka [2018], výroční zpráva [2018], zpráva auditora [2018] konsolidovaná",
+      "createdAt": "31-12-2018",
+      "receivedByCourtAt": "30-11-2020",
+      "filedAt": "02-12-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 50,
+          "sizeBytes": 18033758
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL130/MSPH",
+      "documentType": "ostatní zápis z jednání představenstva",
+      "createdAt": "08-02-2021",
+      "receivedByCourtAt": "22-02-2021",
+      "filedAt": "03-03-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 1077278
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL131/MSPH",
+      "documentType": "ostatní zápis z jednání představensva",
+      "createdAt": "07-06-2021",
+      "receivedByCourtAt": "15-06-2021",
+      "filedAt": "30-06-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 669659
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL132/MSPH",
+      "documentType": "účetní závěrka [2020], výroční zpráva [2020], zpráva auditora [2020] konsolidovaná",
+      "createdAt": "31-12-2020",
+      "receivedByCourtAt": "06-09-2021",
+      "filedAt": "23-09-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 48,
+          "sizeBytes": 2996060
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL133/MSPH",
+      "documentType": "účetní závěrka [2020], výroční zpráva [2020], zpráva o vztazích [2020], zpráva auditora [2020]",
+      "createdAt": "31-12-2020",
+      "receivedByCourtAt": "06-09-2021",
+      "filedAt": "23-09-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 37,
+          "sizeBytes": 12257652
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL134/MSPH",
+      "documentType": "ostatní zápis z jednání představenstva",
+      "createdAt": "03-11-2021",
+      "receivedByCourtAt": "02-12-2021",
+      "filedAt": "21-12-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 1169148
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL135/MSPH",
+      "documentType": "notářský zápis [NZ 1789/2021]",
+      "createdAt": "29-11-2021",
+      "receivedByCourtAt": "02-12-2021",
+      "filedAt": "21-12-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 27,
+          "sizeBytes": 5784376
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL136/MSPH",
+      "documentType": "ostatní zápis z jednání představenstva",
+      "createdAt": "07-03-2022",
+      "receivedByCourtAt": "23-03-2022",
+      "filedAt": "31-03-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 1081209
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL137/MSPH",
+      "documentType": "projekt přeměny - rozdělení odštěpením, sloučením",
+      "createdAt": "14-06-2022",
+      "receivedByCourtAt": "14-06-2022",
+      "filedAt": "14-06-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 21,
+          "sizeBytes": 6312972
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL138/MSPH",
+      "documentType": "notářský zápis [NZ 875/2022]",
+      "createdAt": "16-06-2022",
+      "filedAt": "01-07-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 29,
+          "sizeBytes": 844473
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL139/MSPH",
+      "documentType": "notářský zápis [NZ 675/2022]",
+      "createdAt": "22-07-2022",
+      "filedAt": "01-08-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 31,
+          "sizeBytes": 7956670
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL140/MSPH",
+      "documentType": "notářský zápis [NZ 676/2022]",
+      "createdAt": "22-07-2022",
+      "filedAt": "01-08-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 27,
+          "sizeBytes": 6418498
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL141/MSPH",
+      "documentType": "ostatní rozvaha - Seznam Zprávy as",
+      "filedAt": "01-08-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 11,
+          "sizeBytes": 3661947
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL142/MSPH",
+      "documentType": "účetní závěrka [2021] Seznam Zprávy as",
+      "filedAt": "01-08-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 10,
+          "sizeBytes": 2942946
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL143/MSPH",
+      "documentType": "ostatní rozvaha - Seznam.cz as",
+      "filedAt": "01-08-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 12,
+          "sizeBytes": 4712434
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL144/MSPH",
+      "documentType": "výroční zpráva [2021] Seznam.cz as",
+      "filedAt": "01-08-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 37,
+          "sizeBytes": 11707639
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL145/MSPH",
+      "documentType": "notářský zápis [NZ 958/2022]",
+      "createdAt": "29-06-2022",
+      "receivedByCourtAt": "22-07-2022",
+      "filedAt": "28-07-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 25,
+          "sizeBytes": 738545
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL146/MSPH",
+      "documentType": "stanovy společnosti",
+      "createdAt": "01-07-2022",
+      "receivedByCourtAt": "22-07-2022",
+      "filedAt": "28-07-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 9,
+          "sizeBytes": 2513881
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL147/MSPH",
+      "documentType": "účetní závěrka [2021], výroční zpráva [2021], zpráva o vztazích [2021], zpráva auditora [2021]",
+      "createdAt": "31-12-2021",
+      "receivedByCourtAt": "01-09-2022",
+      "filedAt": "09-09-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 37,
+          "sizeBytes": 11707639
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL148/MSPH",
+      "documentType": "ostatní zápis z jednání představenstva",
+      "createdAt": "18-07-2022",
+      "receivedByCourtAt": "26-07-2022",
+      "filedAt": "21-09-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 121161
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL149/MSPH",
+      "documentType": "notářský zápis [NZ 1430/2022]",
+      "createdAt": "27-10-2022",
+      "filedAt": "10-11-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 34,
+          "sizeBytes": 752281
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL150/MSPH",
+      "documentType": "účetní závěrka [2021], výroční zpráva [2021], zpráva auditora [2021] konsolidovaná",
+      "createdAt": "31-12-2021",
+      "receivedByCourtAt": "14-12-2022",
+      "filedAt": "22-12-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 44,
+          "sizeBytes": 16414430
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL151/MSPH",
+      "documentType": "ostatní Zápis z jednání představenstva",
+      "createdAt": "09-01-2023",
+      "receivedByCourtAt": "18-01-2023",
+      "filedAt": "03-02-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 118620
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL152/MSPH",
+      "documentType": "ostatní Zápis z jednání představenstva",
+      "createdAt": "17-04-2023",
+      "receivedByCourtAt": "24-04-2023",
+      "filedAt": "05-05-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 119926
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL153/MSPH",
+      "documentType": "ostatní Rozhodnutí jediného akcionáře",
+      "createdAt": "24-03-2023",
+      "receivedByCourtAt": "25-04-2023",
+      "filedAt": "22-05-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 59506
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL154/MSPH",
+      "documentType": "ostatní zápis z jednání představenstva",
+      "createdAt": "10-07-2023",
+      "receivedByCourtAt": "20-07-2023",
+      "filedAt": "15-08-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 1694619
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL155/MSPH",
+      "documentType": "účetní závěrka [2022], výroční zpráva [2022], zpráva o vztazích [2022], zpráva auditora [2022]",
+      "createdAt": "31-12-2022",
+      "receivedByCourtAt": "11-09-2023",
+      "filedAt": "18-09-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 40,
+          "sizeBytes": 11416962
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL156/MSPH",
+      "documentType": "ostatní zápis z jednání představenstva",
+      "createdAt": "15-01-2024",
+      "receivedByCourtAt": "24-01-2024",
+      "filedAt": "02-02-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 123023
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL157/MSPH",
+      "documentType": "ostatní zápis z jednání představenstva",
+      "createdAt": "15-04-2024",
+      "receivedByCourtAt": "23-04-2024",
+      "filedAt": "28-05-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 89846
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL158/MSPH",
+      "documentType": "rozhod. o statut. orgánu rozhodnutí jediného akcionáře",
+      "createdAt": "29-05-2024",
+      "receivedByCourtAt": "21-06-2024",
+      "filedAt": "17-07-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 80826
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL159/MSPH",
+      "documentType": "ostatní zápis z jednání představenstva",
+      "createdAt": "19-08-2024",
+      "receivedByCourtAt": "22-08-2024",
+      "filedAt": "02-09-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 456184
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL160/MSPH",
+      "documentType": "účetní závěrka [2023], výroční zpráva [2023], zpráva o vztazích [2023], zpráva auditora [2023]",
+      "createdAt": "31-12-2023",
+      "receivedByCourtAt": "24-09-2024",
+      "filedAt": "02-10-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 39,
+          "sizeBytes": 12819477
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL161/MSPH",
+      "documentType": "rozhod. o statut. orgánu, ostatní rozhodnutí jediného akcionáře, zápis z jednání představenstva",
+      "createdAt": "16-04-2025",
+      "receivedByCourtAt": "29-04-2025",
+      "filedAt": "03-06-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 918490
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL162/MSPH",
+      "documentType": "účetní závěrka [2024], výroční zpráva [2024], zpráva o vztazích [2024], zpráva auditora [2024]",
+      "createdAt": "31-12-2024",
+      "receivedByCourtAt": "22-01-2026",
+      "filedAt": "23-01-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 40,
+          "sizeBytes": 13049215
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL163/MSPH",
+      "documentType": "ostatní zápis z jednání představenstva",
+      "createdAt": "01-12-2025",
+      "receivedByCourtAt": "10-12-2025",
+      "filedAt": "04-03-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 477758
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL164/MSPH",
+      "documentType": "notářský zápis [NZ 1623/2026]",
+      "createdAt": "22-12-2025",
+      "filedAt": "11-03-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 25,
+          "sizeBytes": 707165
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL165/MSPH",
+      "documentType": "ostatní zápis z jednání",
+      "createdAt": "13-04-2026",
+      "receivedByCourtAt": "21-04-2026",
+      "filedAt": "14-05-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 597567
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL166/MSPH",
+      "documentType": "účetní závěrka [2022], výroční zpráva [2022], zpráva o vztazích [2022], zpráva auditora [2022] konsolidovaná",
+      "createdAt": "31-12-2022",
+      "receivedByCourtAt": "30-06-2026",
+      "filedAt": "23-07-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 47,
+          "sizeBytes": 16610732
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 6493/SL167/MSPH",
+      "documentType": "účetní závěrka [2023], výroční zpráva [2023], zpráva o vztazích [2023], zpráva auditora [2023] konsolidovaná",
+      "createdAt": "31-12-2023",
+      "receivedByCourtAt": "30-06-2026",
+      "filedAt": "23-07-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 45,
+          "sizeBytes": 15165081
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
+  "retrieved": "2026-08-08",
+  "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/04449461",
+  "status": "OK",
+  "subject": {
+    "ico": "04449461",
+    "businessName": "HYDROPROGRESS, s.r.o.",
+    "registerReference": "C 89961/KSBR"
+  },
+  "filings": [
+    {
+      "referenceLabel": "C 89961/SL1/KSBR",
+      "documentType": "notářský zápis [NZ 782/2015, N 874/2015]",
+      "createdAt": "22-09-2015",
+      "filedAt": "01-10-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 1549273
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 89961/SL2/KSBR",
+      "documentType": "notářský zápis [NZ 1005/2019, N 793/2019]",
+      "createdAt": "05-11-2019",
+      "filedAt": "17-06-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 310028
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 89961/SL3/KSBR",
+      "documentType": "notářský zápis [NZ 647/2022, N 535/2022]",
+      "createdAt": "19-05-2022",
+      "filedAt": "22-05-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 8,
+          "sizeBytes": 1902559
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 89961/SL5/KSBR",
+      "documentType": "účetní závěrka [2021] - předána prostřednictvím správce daně z příjmů k 06.07.2022",
+      "createdAt": "06-07-2022",
+      "receivedByCourtAt": "03-08-2022",
+      "filedAt": "18-01-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 568296
+        },
+        {
+          "pageCount": 0,
+          "sizeBytes": 744
+        },
+        {
+          "pageCount": 2,
+          "sizeBytes": 88330
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 89961/SL6/KSBR",
+      "documentType": "účetní závěrka [2022] - předána prostřednictvím správce daně z příjmů k 08.07.2023",
+      "createdAt": "08-07-2023",
+      "receivedByCourtAt": "15-07-2023",
+      "filedAt": "17-07-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 568274
+        },
+        {
+          "pageCount": 0,
+          "sizeBytes": 775
+        },
+        {
+          "pageCount": 2,
+          "sizeBytes": 88772
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 89961/SL8/KSBR",
+      "documentType": "účetní závěrka [2023] - předána prostřednictvím správce daně z příjmů k 06.07.2024",
+      "createdAt": "06-07-2024",
+      "receivedByCourtAt": "07-07-2024",
+      "filedAt": "07-07-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 0,
+          "sizeBytes": 16773
+        },
+        {
+          "pageCount": 0,
+          "sizeBytes": 777
+        },
+        {
+          "pageCount": 2,
+          "sizeBytes": 88668
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 89961/SL10/KSBR",
+      "documentType": "účetní závěrka [2024] - předána prostřednictvím správce daně z příjmů k 06.07.2025",
+      "createdAt": "06-07-2025",
+      "receivedByCourtAt": "15-07-2025",
+      "filedAt": "27-07-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 0,
+          "sizeBytes": 16890
+        },
+        {
+          "pageCount": 0,
+          "sizeBytes": 792
+        },
+        {
+          "pageCount": 2,
+          "sizeBytes": 88680
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 89961/SL11/KSBR",
+      "documentType": "účetní závěrka [2025] - předána prostřednictvím správce daně z příjmů k 16.05.2026",
+      "createdAt": "16-05-2026",
+      "receivedByCourtAt": "17-05-2026",
+      "filedAt": "26-05-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 0,
+          "sizeBytes": 16933
+        },
+        {
+          "pageCount": 0,
+          "sizeBytes": 792
+        },
+        {
+          "pageCount": 2,
+          "sizeBytes": 88985
+        }
+      ]
+    }
+  ]
+}

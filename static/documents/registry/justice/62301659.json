@@ -1,0 +1,641 @@
+{
+  "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
+  "retrieved": "2026-08-08",
+  "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/62301659",
+  "status": "OK",
+  "subject": {
+    "ico": "62301659",
+    "businessName": "SCHROM FARMS spol. s r.o.",
+    "registerReference": "C 12600/KSOS"
+  },
+  "filings": [
+    {
+      "referenceLabel": "C 12600/SL1/KSOS",
+      "documentType": "notářský zápis [NZ 149/94] -zakl.listina",
+      "createdAt": "10-10-1994",
+      "filedAt": "10-08-2004",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 55220
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL2/KSOS",
+      "documentType": "smlouvy o převodu obchod. podílu",
+      "createdAt": "28-04-2008",
+      "receivedByCourtAt": "13-05-2008",
+      "filedAt": "28-05-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 268191
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL3/KSOS",
+      "documentType": "notářský zápis [NZ 183/2008] - Rozh.jed.spol./1",
+      "createdAt": "24-04-2008",
+      "receivedByCourtAt": "28-05-2008",
+      "filedAt": "29-05-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 171789
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL4/KSOS",
+      "documentType": "notářský zápis [NZ 183/2008] / 2.str.",
+      "createdAt": "24-04-2008",
+      "receivedByCourtAt": "28-05-2008",
+      "filedAt": "29-05-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 357211
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL5/KSOS",
+      "documentType": "notářský zápis [NZ 173/2008] - zm. zakl. list.",
+      "createdAt": "14-05-2008",
+      "receivedByCourtAt": "13-06-2008",
+      "filedAt": "17-06-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 348970
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL6/KSOS",
+      "documentType": "rozhod. o statut. orgánu - Rozh. jed. společníka - VH",
+      "createdAt": "14-05-2008",
+      "receivedByCourtAt": "13-06-2008",
+      "filedAt": "17-06-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 121019
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL9/KSOS",
+      "documentType": "výroční zpráva r.2007,úč.záv.,§66a/9,zpr.aud.",
+      "receivedByCourtAt": "23-07-2008",
+      "filedAt": "24-07-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 23,
+          "sizeBytes": 1762573
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL10/KSOS",
+      "documentType": "rozhod. o statut. orgánu - Rozh. jediného společníka",
+      "createdAt": "16-07-2008",
+      "receivedByCourtAt": "23-07-2008",
+      "filedAt": "25-07-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 110069
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL12/KSOS",
+      "documentType": "výroční zpráva r.2008,úč.záv.,§66a/9,zpr.aud.",
+      "receivedByCourtAt": "09-07-2009",
+      "filedAt": "12-08-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 28,
+          "sizeBytes": 3124300
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL13/KSOS",
+      "documentType": "rozhod. o statut. orgánu - Rozh. jediného společníka",
+      "createdAt": "18-12-2009",
+      "receivedByCourtAt": "18-02-2010",
+      "filedAt": "19-02-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 80745
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL14/KSOS",
+      "documentType": "ostatní - odstoup.z fce - A.Kotzianová",
+      "createdAt": "14-12-2009",
+      "receivedByCourtAt": "18-02-2010",
+      "filedAt": "19-02-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 58682
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL16/KSOS",
+      "documentType": "výroční zpráva r. 2009+úč.záv.vč. přílohy",
+      "receivedByCourtAt": "29-07-2010",
+      "filedAt": "03-08-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 17,
+          "sizeBytes": 1671294
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL17/KSOS",
+      "documentType": "notářský zápis [NZ 15/2011] RVH vč.ÚPZ ZL",
+      "createdAt": "24-01-2011",
+      "receivedByCourtAt": "14-02-2011",
+      "filedAt": "21-02-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 101000
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL19/KSOS",
+      "documentType": "notářský zápis [NZ 264/2011] Rozh.jed.společníka",
+      "createdAt": "30-06-2011",
+      "receivedByCourtAt": "21-07-2011",
+      "filedAt": "02-08-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 69743
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL20/KSOS",
+      "documentType": "výroční zpráva r.2010",
+      "receivedByCourtAt": "04-08-2011",
+      "filedAt": "07-09-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 140,
+          "sizeBytes": 2266345
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL21/KSOS",
+      "documentType": "zpráva auditora vč.úz. r.2010,§66a/9",
+      "receivedByCourtAt": "04-08-2011",
+      "filedAt": "07-09-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 28,
+          "sizeBytes": 1304314
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL22/KSOS",
+      "documentType": "výroční zpráva r. 2011 vč. úč.záv.,příl.,audit,§66a/9",
+      "receivedByCourtAt": "30-08-2012",
+      "filedAt": "03-01-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 28,
+          "sizeBytes": 1531221
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL23/KSOS",
+      "documentType": "výroční zpráva r. 2011 vč.konsolidované úč.záv.",
+      "receivedByCourtAt": "30-08-2012",
+      "filedAt": "03-01-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 140,
+          "sizeBytes": 3006843
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL24/KSOS",
+      "documentType": "ostatní projekt rozdělení odštěpením sloušením",
+      "createdAt": "03-04-2013",
+      "receivedByCourtAt": "04-04-2013",
+      "filedAt": "04-04-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 2354446
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL25/KSOS",
+      "documentType": "zpráva auditora [2012] vč.výr.zpr.,§66a/9,úč.záv. s příl.",
+      "receivedByCourtAt": "27-08-2013",
+      "filedAt": "28-08-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 30,
+          "sizeBytes": 1295808
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL26/KSOS",
+      "documentType": "notářský zápis [NZ 75/2014] RJS o změně Zakl.list.",
+      "createdAt": "31-03-2014",
+      "receivedByCourtAt": "24-04-2014",
+      "filedAt": "29-04-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 251224
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL27/KSOS",
+      "documentType": "výroční zpráva [2013], zpráva o vztazích [2013], zpráva auditora [2013] s příl.",
+      "receivedByCourtAt": "10-10-2014",
+      "filedAt": "20-10-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 30,
+          "sizeBytes": 0
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL28/KSOS",
+      "documentType": "výroční zpráva [2014] úč. záv. vč. přílohy, zpráva auditora",
+      "receivedByCourtAt": "20-08-2015",
+      "filedAt": "24-08-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 32,
+          "sizeBytes": 1391336
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL29/KSOS",
+      "documentType": "rozhod. o statut. orgánu Rozhodnutí jediného společníka",
+      "createdAt": "26-02-2016",
+      "receivedByCourtAt": "17-03-2016",
+      "filedAt": "11-04-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 249826
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL30/KSOS",
+      "documentType": "rozhod. o statut. orgánu rozhodnutí jediného společníka",
+      "createdAt": "27-04-2016",
+      "receivedByCourtAt": "05-05-2016",
+      "filedAt": "25-05-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 285166
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL31/KSOS",
+      "documentType": "účetní závěrka [2015], výroční zpráva [2015], zpráva o vztazích [2015], zpráva auditora [2015] vč. přílohy",
+      "receivedByCourtAt": "29-07-2016",
+      "filedAt": "05-08-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 40,
+          "sizeBytes": 5613696
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL32/KSOS",
+      "documentType": "notářský zápis [NZ 160/2017] RJS o změně zakl.list.",
+      "createdAt": "03-03-2017",
+      "receivedByCourtAt": "07-03-2017",
+      "filedAt": "15-03-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 422907
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL33/KSOS",
+      "documentType": "výroční zpráva [2016] vč.úč.z. s příl.,zpr. o vzt.,zpr.aud.",
+      "receivedByCourtAt": "10-08-2017",
+      "filedAt": "06-09-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 40,
+          "sizeBytes": 2521563
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL34/KSOS",
+      "documentType": "výroční zpráva [2015] konsolidovaná-společník",
+      "receivedByCourtAt": "19-10-2017",
+      "filedAt": "30-10-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 126,
+          "sizeBytes": 804663
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL35/KSOS",
+      "documentType": "výroční zpráva [2016] konsolidovaná-společník",
+      "receivedByCourtAt": "19-10-2017",
+      "filedAt": "30-10-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 64,
+          "sizeBytes": 6739862
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL36/KSOS",
+      "documentType": "notářský zápis [NZ 97/2017] Rozhodnutí JS",
+      "createdAt": "14-12-2017",
+      "filedAt": "19-12-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 116190
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL37/KSOS",
+      "documentType": "zakladatelské dokumenty úplné znění zakladatelské listiny k 19.12.2017",
+      "createdAt": "19-12-2017",
+      "filedAt": "19-12-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 290115
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL38/KSOS",
+      "documentType": "výroční zpráva [2017] vč. účetní závěrky s příl., zpráva auditora, zpráva o vztazích",
+      "receivedByCourtAt": "09-07-2018",
+      "filedAt": "13-08-2018",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 40,
+          "sizeBytes": 2392748
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL39/KSOS",
+      "documentType": "účetní závěrka [2018], výroční zpráva [2018], zpráva o vztazích [2018], zpráva auditora [2018] úč. záv. vč. příl.",
+      "receivedByCourtAt": "28-06-2019",
+      "filedAt": "06-08-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 33,
+          "sizeBytes": 2310931
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL40/KSOS",
+      "documentType": "účetní závěrka [2019], výroční zpráva [2019], zpráva o vztazích [2019], zpráva auditora [2019]",
+      "receivedByCourtAt": "17-07-2020",
+      "filedAt": "11-08-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 34,
+          "sizeBytes": 2178085
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL41/KSOS",
+      "documentType": "zakladatelské dokumenty, notářský zápis [NZ 122/2021]",
+      "createdAt": "29-03-2021",
+      "filedAt": "30-03-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 177399
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL42/KSOS",
+      "documentType": "účetní závěrka [2020], výroční zpráva [2020], zpráva o vztazích [2020], zpráva auditora [2020]",
+      "receivedByCourtAt": "09-06-2021",
+      "filedAt": "09-06-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 33,
+          "sizeBytes": 2106650
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL43/KSOS",
+      "documentType": "účetní závěrka [2021], výroční zpráva [2021], zpráva o vztazích [2021], zpráva auditora [2021]",
+      "receivedByCourtAt": "01-07-2022",
+      "filedAt": "01-07-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 33,
+          "sizeBytes": 2017650
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL44/KSOS",
+      "documentType": "účetní závěrka [2022], výroční zpráva [2022], zpráva o vztazích [2022], zpráva auditora [2022]",
+      "receivedByCourtAt": "19-06-2023",
+      "filedAt": "20-06-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 34,
+          "sizeBytes": 2021370
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL45/KSOS",
+      "documentType": "notářský zápis [NZ 25/2024]",
+      "createdAt": "26-03-2024",
+      "receivedByCourtAt": "19-03-2024",
+      "filedAt": "08-04-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 68793
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL46/KSOS",
+      "documentType": "účetní závěrka [2023], výroční zpráva [2023], zpráva o vztazích [2023], zpráva auditora [2023]",
+      "receivedByCourtAt": "16-07-2024",
+      "filedAt": "08-08-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 34,
+          "sizeBytes": 2083049
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL47/KSOS",
+      "documentType": "rozhod. o statut. orgánu RJS",
+      "createdAt": "06-03-2025",
+      "receivedByCourtAt": "17-03-2025",
+      "filedAt": "21-03-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 54109
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL48/KSOS",
+      "documentType": "účetní závěrka [2024], výroční zpráva [2024], zpráva o vztazích [2024], zpráva auditora [2024]",
+      "receivedByCourtAt": "26-06-2025",
+      "filedAt": "30-06-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 35,
+          "sizeBytes": 2134576
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL49/KSOS",
+      "documentType": "notářský zápis [N 495/2025, NZ 476/2025]",
+      "createdAt": "19-12-2025",
+      "filedAt": "01-01-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 184909
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL50/KSOS",
+      "documentType": "zakladatelské dokumenty",
+      "createdAt": "19-12-2025",
+      "filedAt": "01-01-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 706329
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL51/KSOS",
+      "documentType": "notářský zápis [NZ 54/2026]",
+      "createdAt": "29-04-2026",
+      "filedAt": "29-04-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 153388
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 12600/SL52/KSOS",
+      "documentType": "účetní závěrka [2025], výroční zpráva [2025], zpráva o vztazích [2025], zpráva auditora [2025]",
+      "receivedByCourtAt": "12-06-2026",
+      "filedAt": "16-06-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 35,
+          "sizeBytes": 3106609
+        }
+      ]
+    }
+  ]
+}

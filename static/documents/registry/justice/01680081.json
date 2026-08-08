@@ -1,0 +1,391 @@
+{
+  "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
+  "retrieved": "2026-08-08",
+  "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/01680081",
+  "status": "OK",
+  "subject": {
+    "ico": "01680081",
+    "businessName": "České centrum pro investigativní žurnalistiku, o.p.s.",
+    "registerReference": "O 1135/MSPH"
+  },
+  "filings": [
+    {
+      "referenceLabel": "O 1135/SL1/MSPH",
+      "documentType": "zakladatelské dokumenty, notářský zápis NZ 102/2013",
+      "createdAt": "02-04-2013",
+      "receivedByCourtAt": "03-04-2013",
+      "filedAt": "02-07-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 12,
+          "sizeBytes": 375214
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 1135/SL2/MSPH",
+      "documentType": "ostatní statut",
+      "createdAt": "19-08-2013",
+      "receivedByCourtAt": "09-01-2014",
+      "filedAt": "17-01-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 1518632
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 1135/SL3/MSPH",
+      "documentType": "ostatní zápís ze zasedání správní a DR",
+      "createdAt": "12-07-2013",
+      "receivedByCourtAt": "09-01-2014",
+      "filedAt": "17-01-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 262147
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 1135/SL4/MSPH",
+      "documentType": "účetní závěrka [2013], výroční zpráva [2013] 27.6.2013 - 31.12.2013",
+      "createdAt": "31-12-2013",
+      "receivedByCourtAt": "15-08-2014",
+      "filedAt": "14-10-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 13,
+          "sizeBytes": 19949405
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 1135/SL5/MSPH",
+      "documentType": "účetní závěrka [2014], výroční zpráva [2014]",
+      "createdAt": "31-12-2014",
+      "receivedByCourtAt": "23-10-2015",
+      "filedAt": "26-10-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 24,
+          "sizeBytes": 3322400
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 1135/SL6/MSPH",
+      "documentType": "ostatní zápis ze zasedání správní rady",
+      "createdAt": "06-08-2015",
+      "receivedByCourtAt": "23-10-2015",
+      "filedAt": "26-10-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 147415
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 1135/SL7/MSPH",
+      "documentType": "notářský zápis [NZ584/2016]",
+      "createdAt": "15-11-2016",
+      "receivedByCourtAt": "04-11-2016",
+      "filedAt": "09-12-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 8,
+          "sizeBytes": 3067255
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 1135/SL8/MSPH",
+      "documentType": "ostatní rozhodnutí zakladatele",
+      "createdAt": "24-06-2016",
+      "receivedByCourtAt": "29-06-2016",
+      "filedAt": "11-01-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 50487
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 1135/SL9/MSPH",
+      "documentType": "účetní závěrka [2016], výroční zpráva [2016]",
+      "createdAt": "31-12-2016",
+      "receivedByCourtAt": "29-06-2017",
+      "filedAt": "24-07-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 27,
+          "sizeBytes": 2051927
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 1135/SL10/MSPH",
+      "documentType": "ostatní zápis ze zasedání spr. rady",
+      "createdAt": "21-06-2017",
+      "receivedByCourtAt": "29-06-2017",
+      "filedAt": "24-07-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 402318
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 1135/SL11/MSPH",
+      "documentType": "účetní závěrka [2015], výroční zpráva [2015] + zápis ze zasedání spr. rady",
+      "createdAt": "31-12-2015",
+      "receivedByCourtAt": "29-06-2017",
+      "filedAt": "24-07-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 32,
+          "sizeBytes": 6333675
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 1135/SL12/MSPH",
+      "documentType": "ostatní zápis z DR",
+      "createdAt": "27-06-2018",
+      "receivedByCourtAt": "02-07-2018",
+      "filedAt": "09-07-2018",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 342808
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 1135/SL13/MSPH",
+      "documentType": "účetní závěrka [2017], výroční zpráva [2017]",
+      "createdAt": "31-12-2017",
+      "receivedByCourtAt": "02-07-2018",
+      "filedAt": "09-07-2018",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 17,
+          "sizeBytes": 1646113
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 1135/SL14/MSPH",
+      "documentType": "ostatní rozhodnutí jedniného společníka",
+      "createdAt": "24-09-2018",
+      "receivedByCourtAt": "06-12-2018",
+      "filedAt": "07-02-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 500566
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 1135/SL15/MSPH",
+      "documentType": "ostatní zápis ze zasedání",
+      "createdAt": "06-09-2018",
+      "receivedByCourtAt": "06-12-2018",
+      "filedAt": "07-02-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 776966
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 1135/SL16/MSPH",
+      "documentType": "účetní závěrka [2018], výroční zpráva [2018]",
+      "createdAt": "31-12-2018",
+      "receivedByCourtAt": "01-08-2019",
+      "filedAt": "08-08-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 11,
+          "sizeBytes": 1287934
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 1135/SL17/MSPH",
+      "documentType": "ostatní Zápis se zasedání správní a dozorčí rady",
+      "createdAt": "27-06-2019",
+      "receivedByCourtAt": "01-08-2019",
+      "filedAt": "08-08-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 420707
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 1135/SL18/MSPH",
+      "documentType": "účetní závěrka [2019]",
+      "createdAt": "31-12-2019",
+      "receivedByCourtAt": "26-08-2020",
+      "filedAt": "02-09-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 198084
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 1135/SL19/MSPH",
+      "documentType": "ostatní Zápis ze zasedání správní a dozorčí rady 2020",
+      "createdAt": "28-07-2020",
+      "receivedByCourtAt": "26-08-2020",
+      "filedAt": "02-09-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 265158
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 1135/SL20/MSPH",
+      "documentType": "výroční zpráva [2019]",
+      "createdAt": "31-12-2019",
+      "receivedByCourtAt": "26-08-2020",
+      "filedAt": "02-09-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 16,
+          "sizeBytes": 1846878
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 1135/SL21/MSPH",
+      "documentType": "účetní závěrka [2020]",
+      "createdAt": "30-08-2021",
+      "receivedByCourtAt": "01-10-2021",
+      "filedAt": "06-10-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 199276
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 1135/SL22/MSPH",
+      "documentType": "účetní závěrka [2020]",
+      "createdAt": "31-12-2020",
+      "receivedByCourtAt": "01-10-2021",
+      "filedAt": "06-10-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 17,
+          "sizeBytes": 2318341
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 1135/SL23/MSPH",
+      "documentType": "ostatní rozhodnutí zakladatele",
+      "createdAt": "03-06-2021",
+      "receivedByCourtAt": "01-10-2021",
+      "filedAt": "25-10-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 221151
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 1135/SL24/MSPH",
+      "documentType": "rozhod. o statut. orgánu",
+      "createdAt": "29-07-2024",
+      "receivedByCourtAt": "03-06-2024",
+      "filedAt": "02-08-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 481228
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 1135/SL25/MSPH",
+      "documentType": "účetní závěrka [2021]",
+      "createdAt": "31-12-2021",
+      "receivedByCourtAt": "15-10-2024",
+      "filedAt": "25-10-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 195920
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 1135/SL26/MSPH",
+      "documentType": "účetní závěrka [2022]",
+      "createdAt": "31-12-2022",
+      "receivedByCourtAt": "15-10-2024",
+      "filedAt": "25-10-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 195858
+        }
+      ]
+    },
+    {
+      "referenceLabel": "O 1135/SL27/MSPH",
+      "documentType": "účetní závěrka [2023]",
+      "createdAt": "31-12-2023",
+      "receivedByCourtAt": "13-02-2025",
+      "filedAt": "14-02-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 196501
+        }
+      ]
+    }
+  ]
+}

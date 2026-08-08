@@ -1,0 +1,237 @@
+{
+  "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
+  "retrieved": "2026-08-08",
+  "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/04347803",
+  "status": "OK",
+  "subject": {
+    "ico": "04347803",
+    "businessName": "MEAS Consulting s.r.o. v likvidaci",
+    "registerReference": "C 246247/MSPH"
+  },
+  "filings": [
+    {
+      "referenceLabel": "C 246247/SL1/MSPH",
+      "documentType": "zakladatelské dokumenty, notářský zápis [NZ 1219/2015]",
+      "createdAt": "21-08-2015",
+      "filedAt": "26-08-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 10,
+          "sizeBytes": 686484
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 246247/SL2/MSPH",
+      "documentType": "notářský zápis [NZ 26/2026]",
+      "createdAt": "08-01-2026",
+      "filedAt": "08-01-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 266602
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 246247/SL3/MSPH",
+      "documentType": "účetní závěrka [2023]",
+      "createdAt": "31-12-2023",
+      "receivedByCourtAt": "06-02-2026",
+      "filedAt": "10-02-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 388995
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 246247/SL4/MSPH",
+      "documentType": "účetní závěrka [2022]",
+      "createdAt": "31-12-2022",
+      "receivedByCourtAt": "06-02-2026",
+      "filedAt": "10-02-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 378155
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 246247/SL5/MSPH",
+      "documentType": "účetní závěrka [2024]",
+      "createdAt": "31-12-2024",
+      "receivedByCourtAt": "06-02-2026",
+      "filedAt": "10-02-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 389860
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 246247/SL6/MSPH",
+      "documentType": "účetní závěrka [2021]",
+      "createdAt": "31-12-2021",
+      "receivedByCourtAt": "06-02-2026",
+      "filedAt": "10-02-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 8,
+          "sizeBytes": 382743
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 246247/SL7/MSPH",
+      "documentType": "účetní závěrka [2026] - předána prostřednictvím správce daně z příjmů k 14.02.2026",
+      "createdAt": "14-02-2026",
+      "receivedByCourtAt": "14-02-2026",
+      "filedAt": "14-02-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 108780
+        },
+        {
+          "pageCount": 0,
+          "sizeBytes": 82944
+        },
+        {
+          "pageCount": 0,
+          "sizeBytes": 954
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 246247/SL8/MSPH",
+      "documentType": "účetní závěrka [2025]",
+      "createdAt": "31-12-2025",
+      "receivedByCourtAt": "30-03-2026",
+      "filedAt": "31-03-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 289428
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 246247/SL9/MSPH",
+      "documentType": "účetní závěrka [2018] příloha",
+      "createdAt": "31-12-2018",
+      "receivedByCourtAt": "30-03-2026",
+      "filedAt": "31-03-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 202672
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 246247/SL10/MSPH",
+      "documentType": "účetní závěrka [2020]",
+      "createdAt": "31-12-2020",
+      "receivedByCourtAt": "30-03-2026",
+      "filedAt": "31-03-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 8,
+          "sizeBytes": 315397
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 246247/SL11/MSPH",
+      "documentType": "účetní závěrka [2015]",
+      "createdAt": "31-12-2015",
+      "receivedByCourtAt": "30-03-2026",
+      "filedAt": "31-03-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 8,
+          "sizeBytes": 3177403
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 246247/SL12/MSPH",
+      "documentType": "účetní závěrka [2019]",
+      "createdAt": "31-12-2019",
+      "receivedByCourtAt": "30-03-2026",
+      "filedAt": "31-03-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 276780
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 246247/SL13/MSPH",
+      "documentType": "účetní závěrka [2016]",
+      "createdAt": "31-12-2016",
+      "receivedByCourtAt": "30-03-2026",
+      "filedAt": "31-03-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 300548
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 246247/SL14/MSPH",
+      "documentType": "účetní závěrka [2017]",
+      "createdAt": "31-12-2017",
+      "receivedByCourtAt": "30-03-2026",
+      "filedAt": "31-03-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 207439
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 246247/SL15/MSPH",
+      "documentType": "účetní závěrka [2025] - předána prostřednictvím správce daně z příjmů k 06.04.2026",
+      "createdAt": "06-04-2026",
+      "receivedByCourtAt": "06-04-2026",
+      "filedAt": "10-04-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 0,
+          "sizeBytes": 83968
+        },
+        {
+          "pageCount": 0,
+          "sizeBytes": 983
+        },
+        {
+          "pageCount": 3,
+          "sizeBytes": 109515
+        }
+      ]
+    }
+  ]
+}

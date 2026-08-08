@@ -1,0 +1,1959 @@
+{
+  "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
+  "retrieved": "2026-08-08",
+  "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/00255092",
+  "status": "OK",
+  "subject": {
+    "ico": "00255092",
+    "businessName": "SINDAT spol. s r.o.",
+    "registerReference": "C 720/MSPH"
+  },
+  "filings": [
+    {
+      "referenceLabel": "C 720/SL1/MSPH",
+      "documentType": "zakladatelské dokumenty",
+      "createdAt": "09-12-1996",
+      "filedAt": "02-12-1997",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 10,
+          "sizeBytes": 1863132
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL2/MSPH",
+      "documentType": "účetní závěrka, zpráva auditora za rok 1997",
+      "createdAt": "31-12-1997",
+      "receivedByCourtAt": "25-08-1998",
+      "filedAt": "16-09-1998",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 16,
+          "sizeBytes": 3040303
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL3/MSPH",
+      "documentType": "notářský zápis [NZ 632/99]",
+      "createdAt": "25-11-1999",
+      "filedAt": "29-03-2000",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 810462
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL4/MSPH",
+      "documentType": "zakladatelské dokumenty",
+      "createdAt": "25-11-1999",
+      "filedAt": "29-03-2000",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 9,
+          "sizeBytes": 1707041
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL5/MSPH",
+      "documentType": "zakladatelské dokumenty - dodatek č.1",
+      "createdAt": "25-11-1999",
+      "filedAt": "29-03-2000",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 143567
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL7/MSPH",
+      "documentType": "notářský zápis [NZ 1000/2000]",
+      "createdAt": "18-12-2000",
+      "filedAt": "19-10-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 13,
+          "sizeBytes": 1913008
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL8/MSPH",
+      "documentType": "zakladatelské dokumenty, notářský zápis [NZ 165/97]",
+      "createdAt": "25-07-1997",
+      "filedAt": "19-10-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 18,
+          "sizeBytes": 3398631
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL9/MSPH",
+      "documentType": "notářský zápis [NZ 73/2001] + spol. sml. + zápis VH",
+      "createdAt": "24-04-2001",
+      "filedAt": "08-04-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 16,
+          "sizeBytes": 3331544
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL10/MSPH",
+      "documentType": "účetní závěrka, zpráva auditora r.2000",
+      "createdAt": "31-12-2000",
+      "filedAt": "08-04-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 14,
+          "sizeBytes": 2480198
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL11/MSPH",
+      "documentType": "notářský zápis [NZ 98/2002]",
+      "createdAt": "18-04-2002",
+      "filedAt": "30-08-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 1224121
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL12/MSPH",
+      "documentType": "účetní závěrka, výroční zpráva za rok 2001",
+      "createdAt": "31-12-2001",
+      "filedAt": "30-08-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 22,
+          "sizeBytes": 3439249
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL13/MSPH",
+      "documentType": "ostatní + zápis z VH",
+      "createdAt": "29-10-2002",
+      "receivedByCourtAt": "25-02-2003",
+      "filedAt": "27-02-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 149707
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL14/MSPH",
+      "documentType": "účetní závěrka, výroční zpráva, zpráva o vztazích, zpráva auditora r.2002",
+      "createdAt": "31-12-2002",
+      "receivedByCourtAt": "22-08-2003",
+      "filedAt": "24-10-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 25,
+          "sizeBytes": 3977960
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL17/MSPH",
+      "documentType": "zakladatelské dokumenty -spol.smlouva",
+      "createdAt": "01-01-2004",
+      "filedAt": "13-04-2004",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 8,
+          "sizeBytes": 1538285
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL18/MSPH",
+      "documentType": "notářský zápis [NZ 171/2003]",
+      "createdAt": "25-06-2003",
+      "filedAt": "20-11-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 11,
+          "sizeBytes": 1856422
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL20/MSPH",
+      "documentType": "ostatní zápis z VH",
+      "createdAt": "09-03-2004",
+      "receivedByCourtAt": "02-04-2004",
+      "filedAt": "22-04-2004",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 783431
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL21/MSPH",
+      "documentType": "ostatní ovládací smlouva",
+      "createdAt": "09-03-2004",
+      "receivedByCourtAt": "02-04-2004",
+      "filedAt": "22-04-2004",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 1008314
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL23/MSPH",
+      "documentType": "účetní závěrka, výroční zpráva 2003+audit+zpr.o vzt.",
+      "createdAt": "31-12-2003",
+      "receivedByCourtAt": "13-07-2004",
+      "filedAt": "15-07-2004",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 34,
+          "sizeBytes": 610023
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL24/MSPH",
+      "documentType": "účetní závěrka, výroční zpráva r.2003+audit,konsolidovaná",
+      "createdAt": "31-12-2003",
+      "receivedByCourtAt": "06-12-2004",
+      "filedAt": "07-12-2004",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 16,
+          "sizeBytes": 302628
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL25/MSPH",
+      "documentType": "notářský zápis [NZ 247/2004]",
+      "createdAt": "09-03-2004",
+      "filedAt": "16-08-2004",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 1345764
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL26/MSPH",
+      "documentType": "účetní závěrka, výroční zpráva, zpráva o vztazích, zpráva auditora 2004",
+      "createdAt": "31-12-2004",
+      "receivedByCourtAt": "11-04-2005",
+      "filedAt": "03-05-2005",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 35,
+          "sizeBytes": 5365359
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL27/MSPH",
+      "documentType": "účetní závěrka, zpráva auditora",
+      "createdAt": "31-12-1996",
+      "filedAt": "20-02-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 13,
+          "sizeBytes": 2648864
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL28/MSPH",
+      "documentType": "notářský zápis [NZ 352/2004]",
+      "createdAt": "22-09-2004",
+      "filedAt": "20-02-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 13,
+          "sizeBytes": 2789542
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL29/MSPH",
+      "documentType": "účetní závěrka r.2005+audit+zpr.o vzt.",
+      "createdAt": "31-12-2005",
+      "receivedByCourtAt": "21-06-2006",
+      "filedAt": "23-06-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 24,
+          "sizeBytes": 483257
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL30/MSPH",
+      "documentType": "účetní závěrka - r.1998+audit",
+      "createdAt": "31-12-1998",
+      "receivedByCourtAt": "21-06-2006",
+      "filedAt": "23-06-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 14,
+          "sizeBytes": 543405
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL31/MSPH",
+      "documentType": "účetní závěrka - r.1999+audit",
+      "createdAt": "31-12-1999",
+      "receivedByCourtAt": "21-06-2006",
+      "filedAt": "23-06-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 14,
+          "sizeBytes": 281551
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL32/MSPH",
+      "documentType": "účetní závěrka 2001+audit-konsolidovaná",
+      "createdAt": "31-12-2004",
+      "receivedByCourtAt": "27-06-2006",
+      "filedAt": "28-06-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 28,
+          "sizeBytes": 598536
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL33/MSPH",
+      "documentType": "účetní závěrka 2002+audit-konsolidovaná",
+      "createdAt": "31-12-2002",
+      "receivedByCourtAt": "27-06-2006",
+      "filedAt": "28-06-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 27,
+          "sizeBytes": 538888
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL34/MSPH",
+      "documentType": "účetní závěrka 2004+audit-konsolidovaná",
+      "createdAt": "31-12-2004",
+      "receivedByCourtAt": "27-06-2006",
+      "filedAt": "28-06-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 27,
+          "sizeBytes": 479380
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL35/MSPH",
+      "documentType": "účetní závěrka 2005+audit-konsolidovaná",
+      "createdAt": "31-12-2005",
+      "receivedByCourtAt": "27-06-2006",
+      "filedAt": "28-06-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 29,
+          "sizeBytes": 510700
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL36/MSPH",
+      "documentType": "výroční zpráva 2005",
+      "createdAt": "31-12-2005",
+      "receivedByCourtAt": "27-06-2006",
+      "filedAt": "28-06-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 12,
+          "sizeBytes": 164862
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL37/MSPH",
+      "documentType": "účetní závěrka r.2006",
+      "createdAt": "31-12-2006",
+      "receivedByCourtAt": "25-05-2007",
+      "filedAt": "28-05-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 0,
+          "sizeBytes": 2480691
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL38/MSPH",
+      "documentType": "výroční zpráva r.2006",
+      "createdAt": "31-12-2006",
+      "receivedByCourtAt": "25-05-2007",
+      "filedAt": "28-05-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 0,
+          "sizeBytes": 772864
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL39/MSPH",
+      "documentType": "zpráva auditora r.2006",
+      "createdAt": "31-12-2006",
+      "receivedByCourtAt": "25-05-2007",
+      "filedAt": "28-05-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 0,
+          "sizeBytes": 401243
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL40/MSPH",
+      "documentType": "zpráva o vztazích -r.2006",
+      "createdAt": "31-12-2006",
+      "receivedByCourtAt": "25-05-2007",
+      "filedAt": "28-05-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 0,
+          "sizeBytes": 150677
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL41/MSPH",
+      "documentType": "ostatní -zápis z jed.V.H.",
+      "createdAt": "01-11-2007",
+      "filedAt": "16-11-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 53864
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL42/MSPH",
+      "documentType": "podpisové vzory +čest.prohl.",
+      "createdAt": "05-11-2007",
+      "filedAt": "16-11-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 42956
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL43/MSPH",
+      "documentType": "účetní závěrka - rozvaha r.2007",
+      "createdAt": "31-12-2007",
+      "receivedByCourtAt": "21-07-2008",
+      "filedAt": "21-07-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 661462
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL44/MSPH",
+      "documentType": "účetní závěrka - výkaz zisků r.2007",
+      "createdAt": "31-12-2007",
+      "receivedByCourtAt": "21-07-2008",
+      "filedAt": "21-07-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 450857
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL45/MSPH",
+      "documentType": "účetní závěrka - příloha r.2007",
+      "createdAt": "31-12-2007",
+      "receivedByCourtAt": "21-07-2008",
+      "filedAt": "21-07-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 10,
+          "sizeBytes": 1208249
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL46/MSPH",
+      "documentType": "účetní závěrka - cash flow r.2007",
+      "createdAt": "31-12-2007",
+      "receivedByCourtAt": "21-07-2008",
+      "filedAt": "21-07-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 224082
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL47/MSPH",
+      "documentType": "výroční zpráva - r.2007",
+      "createdAt": "31-12-2007",
+      "receivedByCourtAt": "21-07-2008",
+      "filedAt": "21-07-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 14,
+          "sizeBytes": 956097
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL48/MSPH",
+      "documentType": "zpráva o vztazích - r.2007",
+      "createdAt": "31-12-2007",
+      "receivedByCourtAt": "21-07-2008",
+      "filedAt": "21-07-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 152969
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL49/MSPH",
+      "documentType": "zpráva auditora - r. 2007",
+      "createdAt": "04-03-2008",
+      "receivedByCourtAt": "21-07-2008",
+      "filedAt": "21-07-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 302832
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL50/MSPH",
+      "documentType": "zpráva auditora - r.2007",
+      "createdAt": "20-03-2008",
+      "receivedByCourtAt": "21-07-2008",
+      "filedAt": "21-07-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 142053
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL51/MSPH",
+      "documentType": "účetní závěrka, výroční zpráva r.2007-konsolidovaná",
+      "createdAt": "31-12-2007",
+      "receivedByCourtAt": "31-07-2008",
+      "filedAt": "03-08-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 24,
+          "sizeBytes": 2881073
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL52/MSPH",
+      "documentType": "zpráva auditora za rok 2007",
+      "createdAt": "31-12-2007",
+      "receivedByCourtAt": "31-07-2008",
+      "filedAt": "03-08-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 214793
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL53/MSPH",
+      "documentType": "účetní závěrka r.2008 rozvaha",
+      "createdAt": "31-12-2008",
+      "receivedByCourtAt": "06-10-2009",
+      "filedAt": "07-10-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 609483
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL54/MSPH",
+      "documentType": "účetní závěrka r.2008 VZ a Z",
+      "createdAt": "31-12-2008",
+      "receivedByCourtAt": "06-10-2009",
+      "filedAt": "07-10-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 392132
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL55/MSPH",
+      "documentType": "účetní závěrka r.2008 příloha",
+      "createdAt": "31-12-2008",
+      "receivedByCourtAt": "06-10-2009",
+      "filedAt": "07-10-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 13,
+          "sizeBytes": 1401256
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL56/MSPH",
+      "documentType": "zpráva o vztazích r.2008",
+      "createdAt": "31-12-2008",
+      "receivedByCourtAt": "06-10-2009",
+      "filedAt": "07-10-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 157150
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL57/MSPH",
+      "documentType": "zpráva auditora r.2008",
+      "createdAt": "31-12-2008",
+      "receivedByCourtAt": "06-10-2009",
+      "filedAt": "07-10-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 342001
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL58/MSPH",
+      "documentType": "notářský zápis NZ 686/2009",
+      "createdAt": "30-09-2009",
+      "receivedByCourtAt": "06-11-2009",
+      "filedAt": "01-12-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 8,
+          "sizeBytes": 3068432
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL59/MSPH",
+      "documentType": "smlouvy o převodu obchod. podílu",
+      "createdAt": "30-09-2009",
+      "receivedByCourtAt": "06-11-2009",
+      "filedAt": "01-12-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 1468192
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL60/MSPH",
+      "documentType": "smlouvy o převodu obchod. podílu",
+      "createdAt": "30-09-2009",
+      "receivedByCourtAt": "06-11-2009",
+      "filedAt": "01-12-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 1379508
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL61/MSPH",
+      "documentType": "ostatní -sml. o prodeji části podniku",
+      "createdAt": "31-03-2010",
+      "receivedByCourtAt": "04-05-2010",
+      "filedAt": "17-05-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 14,
+          "sizeBytes": 490862
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL62/MSPH",
+      "documentType": "účetní závěrka, zpráva auditora r. 2009",
+      "createdAt": "31-12-2009",
+      "receivedByCourtAt": "02-08-2010",
+      "filedAt": "04-08-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 9,
+          "sizeBytes": 1311441
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL63/MSPH",
+      "documentType": "účetní závěrka 2009 - příloha",
+      "createdAt": "31-12-2009",
+      "receivedByCourtAt": "02-08-2010",
+      "filedAt": "04-08-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 9,
+          "sizeBytes": 1084531
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL64/MSPH",
+      "documentType": "zpráva o vztazích r. 2009",
+      "receivedByCourtAt": "02-08-2010",
+      "filedAt": "04-08-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 220198
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL65/MSPH",
+      "documentType": "ostatní -projekt rozdělení",
+      "createdAt": "12-10-2010",
+      "receivedByCourtAt": "12-10-2010",
+      "filedAt": "13-10-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 9,
+          "sizeBytes": 256314
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL66/MSPH",
+      "documentType": "ostatní - plná moc",
+      "createdAt": "08-09-2010",
+      "receivedByCourtAt": "12-10-2010",
+      "filedAt": "13-10-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 54197
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL67/MSPH",
+      "documentType": "notářský zápis NZ 999/10 - projekt rozdělení",
+      "createdAt": "15-11-2010",
+      "receivedByCourtAt": "23-11-2010",
+      "filedAt": "22-12-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 20,
+          "sizeBytes": 1863146
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL68/MSPH",
+      "documentType": "posudek znalce č. 272-8/2010",
+      "createdAt": "25-09-2010",
+      "receivedByCourtAt": "23-11-2010",
+      "filedAt": "22-12-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 44,
+          "sizeBytes": 4702831
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL69/MSPH",
+      "documentType": "účetní závěrka, zpráva auditora k 30.6.2010",
+      "createdAt": "30-06-2010",
+      "receivedByCourtAt": "23-11-2010",
+      "filedAt": "22-12-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 18,
+          "sizeBytes": 1376423
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL70/MSPH",
+      "documentType": "zpráva auditora +zahaj. rozvaha k 1.7.2010",
+      "createdAt": "01-07-2010",
+      "receivedByCourtAt": "23-11-2010",
+      "filedAt": "22-12-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 10,
+          "sizeBytes": 600555
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL71/MSPH",
+      "documentType": "účetní závěrka -2011",
+      "createdAt": "31-12-2011",
+      "receivedByCourtAt": "13-06-2012",
+      "filedAt": "26-06-2012",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 2764875
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL72/MSPH",
+      "documentType": "zpráva auditora -2011",
+      "createdAt": "31-12-2011",
+      "receivedByCourtAt": "13-06-2012",
+      "filedAt": "26-06-2012",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 727524
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL73/MSPH",
+      "documentType": "účetní závěrka -2011-příloha",
+      "createdAt": "31-12-2011",
+      "receivedByCourtAt": "13-06-2012",
+      "filedAt": "26-06-2012",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 9,
+          "sizeBytes": 3020422
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL74/MSPH",
+      "documentType": "zpráva o vztazích -2011",
+      "createdAt": "31-12-2011",
+      "receivedByCourtAt": "13-06-2012",
+      "filedAt": "26-06-2012",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 519228
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL75/MSPH",
+      "documentType": "zpráva o vztazích -2010",
+      "createdAt": "31-12-2010",
+      "receivedByCourtAt": "13-06-2012",
+      "filedAt": "26-06-2012",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 496972
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL76/MSPH",
+      "documentType": "účetní závěrka -2010",
+      "createdAt": "31-12-2010",
+      "receivedByCourtAt": "13-06-2012",
+      "filedAt": "26-06-2012",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 864314
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL77/MSPH",
+      "documentType": "účetní závěrka -2010-příloha",
+      "createdAt": "31-12-2010",
+      "receivedByCourtAt": "13-06-2012",
+      "filedAt": "26-06-2012",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 9,
+          "sizeBytes": 1060241
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL78/MSPH",
+      "documentType": "zpráva auditora -2010",
+      "createdAt": "31-12-2010",
+      "receivedByCourtAt": "13-06-2012",
+      "filedAt": "26-06-2012",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 275201
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL79/MSPH",
+      "documentType": "ostatní rozhodnutí jed. společníka",
+      "createdAt": "12-07-2012",
+      "receivedByCourtAt": "23-07-2012",
+      "filedAt": "10-08-2012",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 42414
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL80/MSPH",
+      "documentType": "účetní závěrka, zpráva auditora r.2008 /konsolid./",
+      "createdAt": "31-12-2008",
+      "receivedByCourtAt": "16-07-2012",
+      "filedAt": "15-08-2012",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 28,
+          "sizeBytes": 2908712
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL81/MSPH",
+      "documentType": "účetní závěrka, zpráva auditora r.2009 /konsolid./",
+      "createdAt": "31-12-2009",
+      "receivedByCourtAt": "16-07-2012",
+      "filedAt": "15-08-2012",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 10,
+          "sizeBytes": 4364160
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL82/MSPH",
+      "documentType": "výroční zpráva, zpráva auditora r.2008",
+      "createdAt": "31-12-2008",
+      "receivedByCourtAt": "16-07-2012",
+      "filedAt": "15-08-2012",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 15,
+          "sizeBytes": 656768
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL83/MSPH",
+      "documentType": "výroční zpráva, zpráva auditora r.2010",
+      "createdAt": "31-12-2010",
+      "receivedByCourtAt": "16-07-2012",
+      "filedAt": "15-08-2012",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 10,
+          "sizeBytes": 2506664
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL84/MSPH",
+      "documentType": "výroční zpráva, zpráva auditora r.2011",
+      "createdAt": "31-12-2011",
+      "receivedByCourtAt": "16-07-2012",
+      "filedAt": "15-08-2012",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 10,
+          "sizeBytes": 2531902
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL85/MSPH",
+      "documentType": "notářský zápis NZ 157/2013+projekt rozdělení",
+      "createdAt": "10-05-2013",
+      "receivedByCourtAt": "13-05-2013",
+      "filedAt": "14-05-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 14,
+          "sizeBytes": 999031
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL86/MSPH",
+      "documentType": "ostatní plná moc",
+      "createdAt": "07-05-2013",
+      "receivedByCourtAt": "13-05-2013",
+      "filedAt": "14-05-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 396249
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL87/MSPH",
+      "documentType": "účetní závěrka [2012] příloha",
+      "createdAt": "31-12-2012",
+      "receivedByCourtAt": "27-05-2013",
+      "filedAt": "30-05-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 9,
+          "sizeBytes": 2975577
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL88/MSPH",
+      "documentType": "zpráva auditora [2012]",
+      "createdAt": "31-12-2012",
+      "receivedByCourtAt": "27-05-2013",
+      "filedAt": "30-05-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 1179140
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL89/MSPH",
+      "documentType": "účetní závěrka [2012]",
+      "createdAt": "31-12-2012",
+      "receivedByCourtAt": "27-05-2013",
+      "filedAt": "30-05-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 2667206
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL90/MSPH",
+      "documentType": "zpráva o vztazích [2012]",
+      "createdAt": "31-12-2012",
+      "receivedByCourtAt": "27-05-2013",
+      "filedAt": "30-05-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 1010427
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL91/MSPH",
+      "documentType": "účetní závěrka [2012], zpráva auditora [2012]",
+      "createdAt": "31-12-2012",
+      "receivedByCourtAt": "21-06-2013",
+      "filedAt": "03-07-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 19,
+          "sizeBytes": 1559472
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL92/MSPH",
+      "documentType": "zpráva auditora +zahaj.rozvaha k 1.1.2013",
+      "createdAt": "01-01-2013",
+      "receivedByCourtAt": "21-06-2013",
+      "filedAt": "03-07-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 14,
+          "sizeBytes": 954999
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL93/MSPH",
+      "documentType": "posudek znalce",
+      "createdAt": "06-05-2013",
+      "receivedByCourtAt": "21-06-2013",
+      "filedAt": "03-07-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 77,
+          "sizeBytes": 14896782
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL94/MSPH",
+      "documentType": "zpráva auditora r. 2013",
+      "createdAt": "31-12-2013",
+      "receivedByCourtAt": "10-06-2014",
+      "filedAt": "26-06-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 593795
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL95/MSPH",
+      "documentType": "účetní závěrka [2013] r. 2013",
+      "createdAt": "31-12-2013",
+      "receivedByCourtAt": "10-06-2014",
+      "filedAt": "26-06-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 393979
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL96/MSPH",
+      "documentType": "účetní závěrka [2013] příloha",
+      "createdAt": "31-12-2013",
+      "receivedByCourtAt": "10-06-2014",
+      "filedAt": "26-06-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 1853451
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL97/MSPH",
+      "documentType": "účetní závěrka [2013]",
+      "createdAt": "31-12-2013",
+      "receivedByCourtAt": "10-06-2014",
+      "filedAt": "26-06-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 2008666
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL98/MSPH",
+      "documentType": "účetní závěrka [2013], výroční zpráva [2013], zpráva auditora [2013]",
+      "createdAt": "31-12-2013",
+      "receivedByCourtAt": "10-06-2014",
+      "filedAt": "26-06-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 10,
+          "sizeBytes": 2122345
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL99/MSPH",
+      "documentType": "účetní závěrka [2012], výroční zpráva [2012], zpráva auditora [2012]",
+      "createdAt": "31-12-2012",
+      "receivedByCourtAt": "10-06-2014",
+      "filedAt": "26-06-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 10,
+          "sizeBytes": 1997651
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL100/MSPH",
+      "documentType": "zakladatelské dokumenty, notářský zápis NZ 424/2014",
+      "createdAt": "08-07-2014",
+      "receivedByCourtAt": "18-09-2014",
+      "filedAt": "17-10-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 19,
+          "sizeBytes": 547372
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL101/MSPH",
+      "documentType": "účetní závěrka [2014], výroční zpráva [2014], zpráva o vztazích [2014], zpráva auditora [2014]",
+      "createdAt": "31-12-2014",
+      "receivedByCourtAt": "28-07-2015",
+      "filedAt": "05-08-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 25,
+          "sizeBytes": 8370731
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL102/MSPH",
+      "documentType": "účetní závěrka [2014] příloha",
+      "createdAt": "31-12-2014",
+      "receivedByCourtAt": "28-07-2015",
+      "filedAt": "05-08-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 2059359
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL103/MSPH",
+      "documentType": "účetní závěrka [2014]",
+      "createdAt": "31-12-2014",
+      "receivedByCourtAt": "28-07-2015",
+      "filedAt": "05-08-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 2364362
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL104/MSPH",
+      "documentType": "zpráva o vztazích r. 2014",
+      "createdAt": "31-12-2014",
+      "receivedByCourtAt": "28-07-2015",
+      "filedAt": "05-08-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 483877
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL105/MSPH",
+      "documentType": "zpráva auditora r. 2014",
+      "createdAt": "31-12-2014",
+      "receivedByCourtAt": "28-07-2015",
+      "filedAt": "05-08-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 872080
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL106/MSPH",
+      "documentType": "účetní závěrka [2015] příloha",
+      "createdAt": "31-12-2015",
+      "receivedByCourtAt": "14-07-2016",
+      "filedAt": "25-07-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 2069868
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL107/MSPH",
+      "documentType": "zpráva o vztazích",
+      "createdAt": "31-12-2015",
+      "receivedByCourtAt": "14-07-2016",
+      "filedAt": "25-07-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 445942
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL108/MSPH",
+      "documentType": "zpráva auditora",
+      "createdAt": "31-12-2015",
+      "receivedByCourtAt": "14-07-2016",
+      "filedAt": "25-07-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 793936
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL109/MSPH",
+      "documentType": "účetní závěrka [2015]",
+      "createdAt": "31-12-2015",
+      "receivedByCourtAt": "14-07-2016",
+      "filedAt": "25-07-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 2459750
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL110/MSPH",
+      "documentType": "účetní závěrka [2015], výroční zpráva [2015], zpráva o vztazích [2015], zpráva auditora [2015]",
+      "createdAt": "31-12-2015",
+      "receivedByCourtAt": "14-07-2016",
+      "filedAt": "25-07-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 26,
+          "sizeBytes": 8111186
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL111/MSPH",
+      "documentType": "ostatní rozhod.jedin. společníka",
+      "createdAt": "30-05-2017",
+      "receivedByCourtAt": "31-05-2017",
+      "filedAt": "14-07-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 1220022
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL112/MSPH",
+      "documentType": "výroční zpráva [2016], zpráva o vztazích [2016]",
+      "createdAt": "31-12-2016",
+      "receivedByCourtAt": "30-08-2017",
+      "filedAt": "20-09-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 1265901
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL113/MSPH",
+      "documentType": "účetní závěrka [2016], zpráva auditora [2016]",
+      "createdAt": "31-12-2016",
+      "receivedByCourtAt": "30-08-2017",
+      "filedAt": "20-09-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 13,
+          "sizeBytes": 5220228
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL114/MSPH",
+      "documentType": "účetní závěrka [2017], zpráva auditora [2017]",
+      "createdAt": "31-12-2017",
+      "receivedByCourtAt": "11-09-2018",
+      "filedAt": "27-09-2018",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 18,
+          "sizeBytes": 7122427
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL115/MSPH",
+      "documentType": "výroční zpráva [2017]",
+      "createdAt": "31-12-2017",
+      "receivedByCourtAt": "11-09-2018",
+      "filedAt": "27-09-2018",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 1513270
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL116/MSPH",
+      "documentType": "notářský zápis [NZ 188/2019]",
+      "createdAt": "21-03-2019",
+      "filedAt": "21-03-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 75547
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL117/MSPH",
+      "documentType": "účetní závěrka [2018], zpráva auditora [2018]",
+      "createdAt": "31-12-2018",
+      "receivedByCourtAt": "21-10-2019",
+      "filedAt": "22-10-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 15,
+          "sizeBytes": 5891290
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL118/MSPH",
+      "documentType": "výroční zpráva [2018], zpráva o vztazích [2018] 1.1.2018- 31.12.2018",
+      "createdAt": "31-12-2018",
+      "receivedByCourtAt": "21-10-2019",
+      "filedAt": "22-10-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 9,
+          "sizeBytes": 2351518
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL119/MSPH",
+      "documentType": "notářský zápis [NZ 165/2020], projekt fúze",
+      "createdAt": "27-04-2020",
+      "receivedByCourtAt": "27-04-2020",
+      "filedAt": "28-04-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 11,
+          "sizeBytes": 1559468
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL120/MSPH",
+      "documentType": "notářský zápis [NZ 165/2020]",
+      "createdAt": "27-04-2020",
+      "filedAt": "30-05-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 11,
+          "sizeBytes": 1559468
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL121/MSPH",
+      "documentType": "účetní závěrka [2019]",
+      "filedAt": "30-05-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 11,
+          "sizeBytes": 4110211
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL122/MSPH",
+      "documentType": "ostatní rozhod. jedin. společníka",
+      "createdAt": "28-07-2020",
+      "receivedByCourtAt": "03-08-2020",
+      "filedAt": "20-08-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 1302181
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL123/MSPH",
+      "documentType": "účetní závěrka [2019] příloha",
+      "createdAt": "31-12-2019",
+      "receivedByCourtAt": "26-02-2021",
+      "filedAt": "02-03-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 12,
+          "sizeBytes": 4421804
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL124/MSPH",
+      "documentType": "výroční zpráva [2019], zpráva o vztazích [2019]",
+      "createdAt": "31-12-2019",
+      "receivedByCourtAt": "26-02-2021",
+      "filedAt": "02-03-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 9,
+          "sizeBytes": 2292384
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL125/MSPH",
+      "documentType": "účetní závěrka [2018] přehled o peněžních tocích",
+      "createdAt": "31-12-2018",
+      "receivedByCourtAt": "26-02-2021",
+      "filedAt": "02-03-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 1492226
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL126/MSPH",
+      "documentType": "výroční zpráva [2020]",
+      "createdAt": "31-12-2020",
+      "receivedByCourtAt": "05-08-2021",
+      "filedAt": "09-09-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 1676102
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL127/MSPH",
+      "documentType": "zpráva o vztazích [2020]",
+      "createdAt": "31-12-2020",
+      "receivedByCourtAt": "05-08-2021",
+      "filedAt": "09-09-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 755567
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL128/MSPH",
+      "documentType": "účetní závěrka [2020], zpráva auditora [2020]",
+      "createdAt": "31-12-2020",
+      "receivedByCourtAt": "05-08-2021",
+      "filedAt": "09-09-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 16,
+          "sizeBytes": 6427598
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL129/MSPH",
+      "documentType": "projekt přeměny - rozdělení odštěpením, sloučením",
+      "createdAt": "08-11-2021",
+      "receivedByCourtAt": "08-11-2021",
+      "filedAt": "09-11-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 13,
+          "sizeBytes": 834006
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL130/MSPH",
+      "documentType": "notářský zápis [NZ 778/2021], projekt přeměny - rozdělení odštěpením, sloučením",
+      "createdAt": "22-12-2021",
+      "filedAt": "22-12-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 22,
+          "sizeBytes": 749321
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL131/MSPH",
+      "documentType": "zakladatelské dokumenty",
+      "createdAt": "01-01-2022",
+      "receivedByCourtAt": "05-01-2022",
+      "filedAt": "10-01-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 8,
+          "sizeBytes": 210893
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL132/MSPH",
+      "documentType": "notářský zápis [NZ 300/2022]",
+      "createdAt": "09-05-2022",
+      "filedAt": "09-05-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 205483
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL133/MSPH",
+      "documentType": "rozhod. o statut. orgánu společenská smlouva",
+      "createdAt": "07-05-2022",
+      "receivedByCourtAt": "16-05-2022",
+      "filedAt": "20-05-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 9,
+          "sizeBytes": 189607
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL134/MSPH",
+      "documentType": "účetní závěrka [2021] Příloha",
+      "createdAt": "31-12-2021",
+      "receivedByCourtAt": "02-06-2022",
+      "filedAt": "07-06-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 10,
+          "sizeBytes": 3680221
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL135/MSPH",
+      "documentType": "zpráva o vztazích [2021]",
+      "createdAt": "31-12-2021",
+      "receivedByCourtAt": "02-06-2022",
+      "filedAt": "07-06-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 716488
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL136/MSPH",
+      "documentType": "účetní závěrka [2022], zpráva auditora [2022]",
+      "createdAt": "01-01-2022",
+      "receivedByCourtAt": "02-06-2022",
+      "filedAt": "07-06-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 15,
+          "sizeBytes": 4908373
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL137/MSPH",
+      "documentType": "účetní závěrka [2021], zpráva auditora [2021]",
+      "createdAt": "31-12-2021",
+      "receivedByCourtAt": "02-06-2022",
+      "filedAt": "07-06-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 2579051
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL138/MSPH",
+      "documentType": "výroční zpráva [2021]",
+      "createdAt": "31-12-2021",
+      "receivedByCourtAt": "02-06-2022",
+      "filedAt": "07-06-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 1773917
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL139/MSPH",
+      "documentType": "účetní závěrka [2022] Příloha",
+      "createdAt": "31-12-2022",
+      "receivedByCourtAt": "28-07-2023",
+      "filedAt": "02-08-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 9,
+          "sizeBytes": 2939719
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL140/MSPH",
+      "documentType": "výroční zpráva [2022]",
+      "createdAt": "31-12-2022",
+      "receivedByCourtAt": "28-07-2023",
+      "filedAt": "02-08-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 1667830
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL141/MSPH",
+      "documentType": "účetní závěrka [2022], zpráva auditora [2022]",
+      "createdAt": "31-12-2022",
+      "receivedByCourtAt": "28-07-2023",
+      "filedAt": "02-08-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 2489394
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL142/MSPH",
+      "documentType": "účetní závěrka [2023] - předána prostřednictvím správce daně z příjmů k 10.09.2024",
+      "createdAt": "10-09-2024",
+      "receivedByCourtAt": "10-09-2024",
+      "filedAt": "10-09-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 9,
+          "sizeBytes": 600032
+        },
+        {
+          "pageCount": 0,
+          "sizeBytes": 5512
+        },
+        {
+          "pageCount": 3,
+          "sizeBytes": 254978
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL143/MSPH",
+      "documentType": "účetní závěrka [2024] - předána prostřednictvím správce daně z příjmů k 09.08.2025",
+      "createdAt": "09-08-2025",
+      "receivedByCourtAt": "09-08-2025",
+      "filedAt": "09-08-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 9,
+          "sizeBytes": 125648
+        },
+        {
+          "pageCount": 0,
+          "sizeBytes": 5448
+        },
+        {
+          "pageCount": 3,
+          "sizeBytes": 254023
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 720/SL144/MSPH",
+      "documentType": "účetní závěrka [2025] - předána prostřednictvím správce daně z příjmů k 18.05.2026",
+      "createdAt": "18-05-2026",
+      "receivedByCourtAt": "18-05-2026",
+      "filedAt": "31-05-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 0,
+          "sizeBytes": 1890
+        },
+        {
+          "pageCount": 7,
+          "sizeBytes": 251971
+        },
+        {
+          "pageCount": 2,
+          "sizeBytes": 126996
+        }
+      ]
+    }
+  ]
+}

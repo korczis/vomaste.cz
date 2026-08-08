@@ -1,0 +1,736 @@
+{
+  "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
+  "retrieved": "2026-08-08",
+  "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/63489911",
+  "status": "OK",
+  "subject": {
+    "ico": "63489911",
+    "businessName": "NAVOS FARM TECHNIC  s.r.o.",
+    "registerReference": "C 21693/KSBR"
+  },
+  "filings": [
+    {
+      "referenceLabel": "C 21693/SL1/KSBR",
+      "documentType": "notářský zápis - VH",
+      "createdAt": "19-09-1996",
+      "filedAt": "03-08-1998",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 62313
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL2/KSBR",
+      "documentType": "notářský zápis - zakl.list.",
+      "createdAt": "17-01-2001",
+      "filedAt": "22-03-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 13,
+          "sizeBytes": 272398
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL3/KSBR",
+      "documentType": "ostatní - podpis.vzor jednatele",
+      "createdAt": "08-02-2000",
+      "filedAt": "22-03-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 20502
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL4/KSBR",
+      "documentType": "notářský zápis -spol. smlouva, NZ 37/07",
+      "createdAt": "28-02-2007",
+      "filedAt": "13-03-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 8,
+          "sizeBytes": 203742
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL5/KSBR",
+      "documentType": "smlouvy o převodu obchod. podílu",
+      "createdAt": "28-02-2007",
+      "filedAt": "13-03-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 121072
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL6/KSBR",
+      "documentType": "podpisové vzory +ČP",
+      "createdAt": "23-02-2007",
+      "filedAt": "13-03-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 75328
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL7/KSBR",
+      "documentType": "notářský zápis -spol. smlouva, NZ 57/07",
+      "createdAt": "16-03-2007",
+      "filedAt": "03-04-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 182879
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL8/KSBR",
+      "documentType": "ostatní - rozh. jediného společníka",
+      "createdAt": "04-11-2009",
+      "filedAt": "13-05-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 24126
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL9/KSBR",
+      "documentType": "podpisové vzory + ČP",
+      "createdAt": "23-11-2009",
+      "filedAt": "13-05-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 34478
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL10/KSBR",
+      "documentType": "účetní závěrka 2007",
+      "createdAt": "25-04-2008",
+      "filedAt": "12-10-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 13,
+          "sizeBytes": 443368
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL11/KSBR",
+      "documentType": "účetní závěrka 2008",
+      "createdAt": "27-03-2009",
+      "filedAt": "12-10-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 22,
+          "sizeBytes": 596459
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL12/KSBR",
+      "documentType": "účetní závěrka 2009",
+      "createdAt": "29-03-2010",
+      "filedAt": "12-10-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 24,
+          "sizeBytes": 741810
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL13/KSBR",
+      "documentType": "ostatní -odstoupení z funkce jednatele",
+      "createdAt": "24-02-2011",
+      "filedAt": "06-04-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 26554
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL14/KSBR",
+      "documentType": "ostatní -výp.ze záp.ze zased.předst.",
+      "createdAt": "03-03-2011",
+      "filedAt": "06-04-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 33915
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL15/KSBR",
+      "documentType": "podpisové vzory + ČP",
+      "createdAt": "21-03-2011",
+      "filedAt": "06-04-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 46221
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL16/KSBR",
+      "documentType": "ostatní - výp.ze záp.ze zased.předst.",
+      "createdAt": "27-04-2011",
+      "filedAt": "29-07-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 35648
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL17/KSBR",
+      "documentType": "podpisové vzory + ČP",
+      "createdAt": "27-04-2011",
+      "filedAt": "29-07-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 53454
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL18/KSBR",
+      "documentType": "výroční zpráva 2010",
+      "createdAt": "09-03-2011",
+      "filedAt": "18-08-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 44,
+          "sizeBytes": 1300824
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL19/KSBR",
+      "documentType": "výroční zpráva 2011",
+      "createdAt": "29-02-2012",
+      "receivedByCourtAt": "30-08-2012",
+      "filedAt": "17-09-2012",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 31,
+          "sizeBytes": 1160503
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL20/KSBR",
+      "documentType": "ostatní výpis ze zápisu z řádného zasedání představenstva č. 1/2013",
+      "createdAt": "22-02-2013",
+      "receivedByCourtAt": "09-04-2013",
+      "filedAt": "15-04-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 69174
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL21/KSBR",
+      "documentType": "výroční zpráva 2012",
+      "createdAt": "28-02-2013",
+      "receivedByCourtAt": "21-05-2013",
+      "filedAt": "22-05-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 31,
+          "sizeBytes": 873168
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL22/KSBR",
+      "documentType": "ostatní projekt rozštěpení sloučením",
+      "createdAt": "27-06-2013",
+      "receivedByCourtAt": "28-06-2013",
+      "filedAt": "02-07-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 408774
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL23/KSBR",
+      "documentType": "zpráva auditora [2012] NAVOS, a.s.",
+      "createdAt": "04-03-2013",
+      "receivedByCourtAt": "05-09-2013",
+      "filedAt": "13-09-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 22,
+          "sizeBytes": 867581
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL24/KSBR",
+      "documentType": "zpráva auditora [2012] Zemědělské zásobování a nákup Nový Jičín, a.s.",
+      "createdAt": "28-02-2013",
+      "receivedByCourtAt": "05-09-2013",
+      "filedAt": "13-09-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 23,
+          "sizeBytes": 1158816
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL25/KSBR",
+      "documentType": "výroční zpráva [2012]",
+      "createdAt": "28-02-2013",
+      "receivedByCourtAt": "05-09-2013",
+      "filedAt": "13-09-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 31,
+          "sizeBytes": 1166697
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL26/KSBR",
+      "documentType": "zpráva auditora [2013] ověření zahajovací rozvahy k 1.1.2013",
+      "createdAt": "27-06-2013",
+      "receivedByCourtAt": "05-09-2013",
+      "filedAt": "13-09-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 17,
+          "sizeBytes": 1256947
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL27/KSBR",
+      "documentType": "zpráva auditora [2013] pro-forma zahajovací rozvaha k 1.1.2013 NAVOS, a.s.",
+      "createdAt": "27-06-2013",
+      "receivedByCourtAt": "05-09-2013",
+      "filedAt": "13-09-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 20,
+          "sizeBytes": 889549
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL28/KSBR",
+      "documentType": "notářský zápis projekt rozštěpení sloučením, NZ 275/2013",
+      "createdAt": "29-07-2013",
+      "receivedByCourtAt": "05-09-2013",
+      "filedAt": "13-09-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 15,
+          "sizeBytes": 640752
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL29/KSBR",
+      "documentType": "notářský zápis projekt rozštěpení sloučením, NZ 276/2013",
+      "createdAt": "29-07-2013",
+      "receivedByCourtAt": "05-09-2013",
+      "filedAt": "13-09-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 15,
+          "sizeBytes": 639505
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL30/KSBR",
+      "documentType": "notářský zápis projekt rozštěpení sloučením, NZ 277/2013",
+      "createdAt": "29-07-2013",
+      "receivedByCourtAt": "05-09-2013",
+      "filedAt": "13-09-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 14,
+          "sizeBytes": 643894
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL31/KSBR",
+      "documentType": "notářský zápis rozhodnutí jediného společníka, Nz 2746/2013",
+      "createdAt": "31-10-2013",
+      "receivedByCourtAt": "28-11-2013",
+      "filedAt": "19-12-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 36,
+          "sizeBytes": 1212283
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL32/KSBR",
+      "documentType": "posudek znalce č. 3258/124/2013",
+      "createdAt": "11-09-2013",
+      "receivedByCourtAt": "28-11-2013",
+      "filedAt": "19-12-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 29,
+          "sizeBytes": 1058788
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL33/KSBR",
+      "documentType": "notářský zápis zakl. listina, NZ 59/2014",
+      "createdAt": "28-04-2014",
+      "receivedByCourtAt": "26-05-2014",
+      "filedAt": "28-05-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 18,
+          "sizeBytes": 589110
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL34/KSBR",
+      "documentType": "notářský zápis [NZ 293/2015] rozhodnutí jediného společníka",
+      "createdAt": "24-09-2015",
+      "receivedByCourtAt": "30-10-2015",
+      "filedAt": "04-11-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 227005
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL35/KSBR",
+      "documentType": "zakladatelské dokumenty",
+      "createdAt": "01-10-2015",
+      "receivedByCourtAt": "30-10-2015",
+      "filedAt": "04-11-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 98033
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL36/KSBR",
+      "documentType": "účetní závěrka [2004]",
+      "createdAt": "17-06-2005",
+      "receivedByCourtAt": "16-09-2015",
+      "filedAt": "20-11-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 1821879
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL37/KSBR",
+      "documentType": "účetní závěrka [2005]",
+      "createdAt": "29-06-2006",
+      "receivedByCourtAt": "16-09-2015",
+      "filedAt": "20-11-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 2199815
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL38/KSBR",
+      "documentType": "účetní závěrka [2006]",
+      "createdAt": "02-04-2007",
+      "receivedByCourtAt": "16-09-2015",
+      "filedAt": "20-11-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 1605044
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL39/KSBR",
+      "documentType": "účetní závěrka [2013]",
+      "createdAt": "28-02-2014",
+      "receivedByCourtAt": "16-09-2015",
+      "filedAt": "20-11-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 20,
+          "sizeBytes": 2224251
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL40/KSBR",
+      "documentType": "účetní závěrka [2014]",
+      "createdAt": "03-03-2015",
+      "receivedByCourtAt": "16-09-2015",
+      "filedAt": "20-11-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 22,
+          "sizeBytes": 9651378
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL41/KSBR",
+      "documentType": "výroční zpráva [2015]",
+      "createdAt": "22-02-2016",
+      "receivedByCourtAt": "12-09-2016",
+      "filedAt": "14-09-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 41,
+          "sizeBytes": 2424897
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL42/KSBR",
+      "documentType": "notářský zápis [NZ 5/2017] zakl. listina",
+      "createdAt": "11-04-2017",
+      "receivedByCourtAt": "23-05-2017",
+      "filedAt": "25-05-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 20,
+          "sizeBytes": 768426
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL43/KSBR",
+      "documentType": "výroční zpráva [2016]",
+      "createdAt": "28-02-2017",
+      "receivedByCourtAt": "18-09-2017",
+      "filedAt": "12-10-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 42,
+          "sizeBytes": 2631324
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL44/KSBR",
+      "documentType": "výroční zpráva [2017]",
+      "createdAt": "09-03-2018",
+      "receivedByCourtAt": "25-07-2018",
+      "filedAt": "13-08-2018",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 47,
+          "sizeBytes": 2681469
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL45/KSBR",
+      "documentType": "ostatní rozhodnutí jediného společníka",
+      "createdAt": "26-04-2019",
+      "receivedByCourtAt": "13-06-2019",
+      "filedAt": "18-06-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 29719
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL46/KSBR",
+      "documentType": "výroční zpráva [2018]",
+      "createdAt": "19-03-2019",
+      "receivedByCourtAt": "11-09-2019",
+      "filedAt": "07-10-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 42,
+          "sizeBytes": 2300844
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL47/KSBR",
+      "documentType": "výroční zpráva [2019]",
+      "createdAt": "19-03-2020",
+      "receivedByCourtAt": "29-09-2020",
+      "filedAt": "13-10-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 40,
+          "sizeBytes": 2205317
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL48/KSBR",
+      "documentType": "zakladatelské dokumenty, notářský zápis [NZ 176/2021]",
+      "createdAt": "27-04-2021",
+      "filedAt": "02-05-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 180646
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL49/KSBR",
+      "documentType": "výroční zpráva [2020]",
+      "createdAt": "01-06-2021",
+      "receivedByCourtAt": "05-10-2021",
+      "filedAt": "25-10-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 40,
+          "sizeBytes": 2268668
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL50/KSBR",
+      "documentType": "výroční zpráva [2021]",
+      "createdAt": "10-03-2022",
+      "receivedByCourtAt": "07-03-2023",
+      "filedAt": "24-03-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 37,
+          "sizeBytes": 2130767
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL51/KSBR",
+      "documentType": "výroční zpráva [2022]",
+      "createdAt": "28-02-2023",
+      "receivedByCourtAt": "01-03-2024",
+      "filedAt": "08-03-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 38,
+          "sizeBytes": 2205052
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL52/KSBR",
+      "documentType": "výroční zpráva [2023]",
+      "createdAt": "08-03-2024",
+      "receivedByCourtAt": "29-07-2024",
+      "filedAt": "30-08-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 39,
+          "sizeBytes": 2153085
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 21693/SL53/KSBR",
+      "documentType": "výroční zpráva [2024]",
+      "createdAt": "02-04-2025",
+      "receivedByCourtAt": "23-09-2025",
+      "filedAt": "03-10-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 40,
+          "sizeBytes": 5438713
+        }
+      ]
+    }
+  ]
+}

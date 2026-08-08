@@ -1,0 +1,26 @@
+{
+  "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
+  "retrieved": "2026-08-08",
+  "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/23177586",
+  "status": "OK",
+  "subject": {
+    "ico": "23177586",
+    "businessName": "Krijcos Energy s.r.o.",
+    "registerReference": "C 422694/MSPH"
+  },
+  "filings": [
+    {
+      "referenceLabel": "C 422694/SL1/MSPH",
+      "documentType": "zakladatelské dokumenty, notářský zápis [NZ 118/2025]",
+      "createdAt": "03-04-2025",
+      "filedAt": "11-04-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 154638
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,518 @@
+<!doctype html>
+<html class="page" lang="cs-CZ">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Webový portál soustavy státního zastupitelství ČR">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- FAVICON -->
+<link rel="apple-touch-icon" sizes="57x57" href="https://verejnazaloba.cz/wp-content/themes/iq-theme/dist/images/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://verejnazaloba.cz/wp-content/themes/iq-theme/dist/images/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://verejnazaloba.cz/wp-content/themes/iq-theme/dist/images/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://verejnazaloba.cz/wp-content/themes/iq-theme/dist/images/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://verejnazaloba.cz/wp-content/themes/iq-theme/dist/images/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://verejnazaloba.cz/wp-content/themes/iq-theme/dist/images/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://verejnazaloba.cz/wp-content/themes/iq-theme/dist/images/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://verejnazaloba.cz/wp-content/themes/iq-theme/dist/images/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://verejnazaloba.cz/wp-content/themes/iq-theme/dist/images/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="https://verejnazaloba.cz/wp-content/themes/iq-theme/dist/images/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://verejnazaloba.cz/wp-content/themes/iq-theme/dist/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://verejnazaloba.cz/wp-content/themes/iq-theme/dist/images/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://verejnazaloba.cz/wp-content/themes/iq-theme/dist/images/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="https://verejnazaloba.cz/wp-content/themes/iq-theme/dist/images/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!-- This site is optimized with the Yoast SEO plugin v14.6.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<title>Tisková zpráva ze dne 4. 5. 2026 v trestní věci související s darováním bitcoinů Ministerstvu spravedlnosti - Soustava státního zastupitelství ČR</title>
+<meta name="robots" content="index, follow" />
+<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<link rel="canonical" href="https://verejnazaloba.cz/vsz-olomouc/tiskova-zprava-ze-dne-4-5-2026-v-trestni-veci-souvisejici-s-darovanim-bitcoinu-ministerstvu-spravedlnosti/" />
+<meta property="og:locale" content="cs_CZ" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Tisková zpráva ze dne 4. 5. 2026 v trestní věci související s darováním bitcoinů Ministerstvu spravedlnosti - Soustava státního zastupitelství ČR" />
+<meta property="og:description" content="Policejní orgán Policie České republiky, Národní centrála proti organizovanému zločinu služby kriminální policie a&nbsp;vyšetřování, rozhodl dne 4.&nbsp;května 2026 o&nbsp;zahájení trestního stíhání dalších tří osob v&nbsp;trestní věci související s&nbsp;darováním bitcoinů Ministerstvu spravedlnosti. Usnesení policejní orgán vydal se souhlasem dozorové státní zástupkyně Vrchního státního zastupitelství v&nbsp;Olomouci, u&nbsp;něhož je věc vedena pod sp. zn. 2 VZV 11/2025. V&nbsp;jednání [&hellip;]" />
+<meta property="og:url" content="https://verejnazaloba.cz/vsz-olomouc/tiskova-zprava-ze-dne-4-5-2026-v-trestni-veci-souvisejici-s-darovanim-bitcoinu-ministerstvu-spravedlnosti/" />
+<meta property="og:site_name" content="Soustava státního zastupitelství ČR" />
+<meta property="article:published_time" content="2026-05-04T11:24:58+00:00" />
+<meta property="og:image" content="https://verejnazaloba.cz/wp-content/uploads/2025/09/IMG_2849.jpeg" />
+<meta property="og:image:width" content="2048" />
+<meta property="og:image:height" content="2048" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://verejnazaloba.cz/#website","url":"https://verejnazaloba.cz/","name":"Soustava st\u00e1tn\u00edho zastupitelstv\u00ed \u010cR","description":"Webov\u00fd port\u00e1l soustavy st\u00e1tn\u00edho zastupitelstv\u00ed \u010cR","potentialAction":[{"@type":"SearchAction","target":"https://verejnazaloba.cz/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"cs-CZ"},{"@type":"ImageObject","@id":"https://verejnazaloba.cz/vsz-olomouc/tiskova-zprava-ze-dne-4-5-2026-v-trestni-veci-souvisejici-s-darovanim-bitcoinu-ministerstvu-spravedlnosti/#primaryimage","inLanguage":"cs-CZ","url":"https://verejnazaloba.cz/wp-content/uploads/2025/09/IMG_2849.jpeg","width":2048,"height":2048},{"@type":"WebPage","@id":"https://verejnazaloba.cz/vsz-olomouc/tiskova-zprava-ze-dne-4-5-2026-v-trestni-veci-souvisejici-s-darovanim-bitcoinu-ministerstvu-spravedlnosti/#webpage","url":"https://verejnazaloba.cz/vsz-olomouc/tiskova-zprava-ze-dne-4-5-2026-v-trestni-veci-souvisejici-s-darovanim-bitcoinu-ministerstvu-spravedlnosti/","name":"Tiskov\u00e1 zpr\u00e1va ze dne 4. 5. 2026 v trestn\u00ed v\u011bci souvisej\u00edc\u00ed s darov\u00e1n\u00edm bitcoin\u016f Ministerstvu spravedlnosti - Soustava st\u00e1tn\u00edho zastupitelstv\u00ed \u010cR","isPartOf":{"@id":"https://verejnazaloba.cz/#website"},"primaryImageOfPage":{"@id":"https://verejnazaloba.cz/vsz-olomouc/tiskova-zprava-ze-dne-4-5-2026-v-trestni-veci-souvisejici-s-darovanim-bitcoinu-ministerstvu-spravedlnosti/#primaryimage"},"datePublished":"2026-05-04T11:24:58+00:00","dateModified":"2026-05-04T11:24:58+00:00","author":{"@id":"https://verejnazaloba.cz/#/schema/person/e96e2ff21731fe1e68f58dc2c2400e0c"},"inLanguage":"cs-CZ","potentialAction":[{"@type":"ReadAction","target":["https://verejnazaloba.cz/vsz-olomouc/tiskova-zprava-ze-dne-4-5-2026-v-trestni-veci-souvisejici-s-darovanim-bitcoinu-ministerstvu-spravedlnosti/"]}]},{"@type":["Person"],"@id":"https://verejnazaloba.cz/#/schema/person/e96e2ff21731fe1e68f58dc2c2400e0c","name":"Pavel Fr\u0148ka","image":{"@type":"ImageObject","@id":"https://verejnazaloba.cz/#personlogo","inLanguage":"cs-CZ","url":"https://secure.gravatar.com/avatar/16e1f169cee53cf47d31a08e269c7dc7?s=96&d=mm&r=g","caption":"Pavel Fr\u0148ka"}}]}</script>
+<!-- / Yoast SEO plugin. -->
+<!-- <link rel='stylesheet' id='wp-block-library-css'  href='https://verejnazaloba.cz/wp-includes/css/dist/block-library/style.min.css?ver=5.3' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='simple-sitemap-css-css'  href='https://verejnazaloba.cz/wp-content/plugins/simple-sitemap/lib/assets/css/simple-sitemap.css?ver=5.3' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='css_main-css'  href='https://verejnazaloba.cz/wp-content/themes/iq-theme/dist/css/bundle-e15f3c895b.css?ver=5.3' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="//verejnazaloba.cz/wp-content/cache/verejnazaloba.cz/wpfc-minified/6jyi1acr/dtfqj.css" media="all"/>
+<link rel='https://api.w.org/' href='https://verejnazaloba.cz/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://verejnazaloba.cz/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://verejnazaloba.cz/wp-includes/wlwmanifest.xml" />
+<link rel='shortlink' href='https://verejnazaloba.cz/?p=37444' />
+<link rel="alternate" type="application/json+oembed" href="https://verejnazaloba.cz/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fverejnazaloba.cz%2Fvsz-olomouc%2Ftiskova-zprava-ze-dne-4-5-2026-v-trestni-veci-souvisejici-s-darovanim-bitcoinu-ministerstvu-spravedlnosti%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://verejnazaloba.cz/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fverejnazaloba.cz%2Fvsz-olomouc%2Ftiskova-zprava-ze-dne-4-5-2026-v-trestni-veci-souvisejici-s-darovanim-bitcoinu-ministerstvu-spravedlnosti%2F&#038;format=xml" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174239307-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){ dataLayer.push(arguments); }
+gtag('consent', 'default', {
+'ad_storage': 'denied',
+'analytics_storage': 'denied',
+'personalization_storage': 'denied'
+});
+gtag('js', new Date());
+gtag('config', 'UA-174239307-1');
+</script>
+</head>
+<body class="page__body">
+<div class="page__wrapper">
+<div class="header">
+<div class="header__container">
+<div class="header__top">
+<div class="header__location">
+<a href="https://verejnazaloba.cz/" title="Soustava státního zastupitelství" class="fas fa-home"></a>
+&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="https://verejnazaloba.cz/vsz-olomouc/" class="header__title">
+Vrchní státní zastupitelství v&nbsp;Olomouci
+</a>
+</div>
+<div class="header__buttons">
+<a class="header__lang" href="https://verejnazaloba.cz/en/">en</a>
+<div class="header__menu" tabindex="0">
+<div class="header__menu-text">MENU</div>
+</div>
+</div>
+</div>
+<div class="header__bottom">
+<div class="header__page-title">
+Aktualita
+</div>
+<a class="header__logo" href="https://verejnazaloba.cz/vsz-olomouc/"><img class="header__logo-img" src="https://verejnazaloba.cz/wp-content/uploads/2019/10/VSZ_OLC.svg" alt="Logo"></a>
+</div>
+</div>
+</div>
+<noscript class="navigation__nojs">
+<form action="/" class="navigation__search" method="GET" action="https://verejnazaloba.cz/">
+<input class="navigation__search-input" name="s" type="text" placeholder="Vyhledávání" aria-label="Vyhledávání">
+<button class="navigation__search-submit" type="submit" aria-label="Vyhledat">
+<div class="navigation__search-icon fas fa-search"></div>
+</button>
+</form>
+<ul class="navigation__menu">
+<li class="navigation__item">
+<div class="navigation__item-head">
+<a class="navigation__link" href="https://verejnazaloba.cz/vsz-olomouc/vedeni/">Vedení</a>
+</div>
+</li>
+<li class="navigation__item">
+<div class="navigation__item-head">
+<a class="navigation__link" href="https://verejnazaloba.cz/vsz-olomouc/struktura/organizacni-schema/">Organizační schéma</a>
+</div>
+</li>
+<li class="navigation__item">
+<div class="navigation__item-head">
+<a class="navigation__link" href="https://verejnazaloba.cz/vsz-olomouc/struktura/odbory-vsz/">Odbory VSZ</a>
+</div>
+</li>
+<li class="navigation__item">
+<div class="navigation__item-head">
+<a class="navigation__link" href="https://verejnazaloba.cz/vsz-olomouc/struktura/statni-zastupci/">Státní zástupci</a>
+</div>
+</li>
+<li class="navigation__item">
+<div class="navigation__item-head">
+<a class="navigation__link" href="https://verejnazaloba.cz/vsz-olomouc/kontakty/">Kontakty</a>
+</div>
+</li>
+<li class="navigation__item">
+<div class="navigation__item-head">
+<a class="navigation__link" href="https://verejnazaloba.cz/vsz-olomouc/aktuality/">Aktuality</a>
+</div>
+</li>
+<li class="navigation__item">
+<div class="navigation__item-head">
+<a class="navigation__link" href="https://verejnazaloba.cz/vsz-olomouc/pracovni-nabidky/">Pracovní nabídky</a>
+</div>
+</li>
+<li class="navigation__item">
+<div class="navigation__item-head">
+<a class="navigation__link" href="https://verejnazaloba.cz/vsz-olomouc/nizsi-statni-zastupitelstvi-v-pusobnosti/">Nižší státní zastupitelství v působnosti</a>
+</div>
+</li>
+</ul>
+<div class="heading">Další odkazy</div>
+<ul class="navigation__menu">
+<li class="navigation__item">
+<div class="navigation__item-head">
+<a class="navigation__link" href="https://verejnazaloba.cz/">
+<div class="navigation__icon fas fa-angle-double-right"></div>Soustava státního zastupitelství
+</a>
+</div>
+<ul class="navigation__sublist">
+<li class="navigation__subitem">
+<a class="navigation__sublink" href="https://verejnazaloba.cz/nsz/">Nejvyšší státní zastupitelství</a>
+</li>
+<li class="navigation__subitem">
+<a class="navigation__sublink" href="https://verejnazaloba.cz/vsz-praha/">Vrchní státní zastupitelství v Praze</a>
+</li>
+<li class="navigation__subitem">
+<a class="navigation__sublink" href="https://verejnazaloba.cz/prehled-statnich-zastupitelstvi/">Přehled státních zastupitelství</a>
+</li>
+<li class="navigation__subitem">
+<a class="navigation__sublink" href="https://verejnazaloba.cz/seznam-statnich-zastupcu/">Seznam státních zástupců</a>
+</li>
+</ul>
+</li>
+<li class="navigation__item">
+<div class="navigation__item-head">
+<a class="navigation__link" href="https://verejnazaloba.cz/vice-o-sz/">
+<div class="navigation__icon fas fa-angle-double-right"></div>Více o státním zastupitelství
+</a>
+</div>
+</li>
+<li class="navigation__item">
+<div class="navigation__item-head">
+<a class="navigation__link" href="https://www.justice.cz" target="_blank">
+<div class="navigation__icon fas fa-angle-double-right"></div>Justice.cz
+</a>
+</div>
+</li>
+<li class="navigation__item">
+<div class="navigation__item-head">
+<a class="navigation__link" href="https://www.uniesz.cz" target="_blank">
+<div class="navigation__icon fas fa-angle-double-right"></div>Unie státních zástupců ČR
+</a>
+</div>
+</li>
+</ul>
+</noscript>
+<div class="navigation">
+<div class="navigation__container">
+<div class="navigation__close" tabindex="0"></div>
+<div class="navigation__wrapper">
+<form action="/" class="navigation__search" method="GET" action="https://verejnazaloba.cz/">
+<input class="navigation__search-input" name="s" type="text" placeholder="Vyhledávání" aria-label="Vyhledávání">
+<button class="navigation__search-submit" type="submit" aria-label="Vyhledat">
+<div class="navigation__search-icon fas fa-search"></div>
+</button>
+</form>
+<ul class="navigation__menu">
+<li class="navigation__item">
+<div class="navigation__item-head">
+<a class="navigation__link" href="https://verejnazaloba.cz/vsz-olomouc/vedeni/">Vedení</a>
+</div>
+</li>
+<li class="navigation__item">
+<div class="navigation__item-head">
+<a class="navigation__link" href="https://verejnazaloba.cz/vsz-olomouc/struktura/organizacni-schema/">Organizační schéma</a>
+</div>
+</li>
+<li class="navigation__item">
+<div class="navigation__item-head">
+<a class="navigation__link" href="https://verejnazaloba.cz/vsz-olomouc/struktura/odbory-vsz/">Odbory VSZ</a>
+</div>
+</li>
+<li class="navigation__item">
+<div class="navigation__item-head">
+<a class="navigation__link" href="https://verejnazaloba.cz/vsz-olomouc/struktura/statni-zastupci/">Státní zástupci</a>
+</div>
+</li>
+<li class="navigation__item">
+<div class="navigation__item-head">
+<a class="navigation__link" href="https://verejnazaloba.cz/vsz-olomouc/kontakty/">Kontakty</a>
+</div>
+</li>
+<li class="navigation__item">
+<div class="navigation__item-head">
+<a class="navigation__link" href="https://verejnazaloba.cz/vsz-olomouc/aktuality/">Aktuality</a>
+</div>
+</li>
+<li class="navigation__item">
+<div class="navigation__item-head">
+<a class="navigation__link" href="https://verejnazaloba.cz/vsz-olomouc/pracovni-nabidky/">Pracovní nabídky</a>
+</div>
+</li>
+<li class="navigation__item">
+<div class="navigation__item-head">
+<a class="navigation__link" href="https://verejnazaloba.cz/vsz-olomouc/nizsi-statni-zastupitelstvi-v-pusobnosti/">Nižší státní zastupitelství v působnosti</a>
+</div>
+</li>
+</ul>
+<div class="heading">Další odkazy</div>
+<ul class="navigation__menu">
+<li class="navigation__item">
+<div class="navigation__item-head">
+<a class="navigation__link" href="https://verejnazaloba.cz/">
+<div class="navigation__icon fas fa-angle-double-right"></div>Soustava státního zastupitelství
+</a>
+<div class="navigation__dropdown-toggle"></div>
+</div>
+<div class="navigation__dropdown">
+<ul class="navigation__sublist">
+<li class="navigation__subitem">
+<a class="navigation__sublink" href="https://verejnazaloba.cz/nsz/">Nejvyšší státní zastupitelství</a>
+</li>
+<li class="navigation__subitem">
+<a class="navigation__sublink" href="https://verejnazaloba.cz/vsz-praha/">Vrchní státní zastupitelství v Praze</a>
+</li>
+<li class="navigation__subitem">
+<a class="navigation__sublink" href="https://verejnazaloba.cz/prehled-statnich-zastupitelstvi/">Přehled státních zastupitelství</a>
+</li>
+<li class="navigation__subitem">
+<a class="navigation__sublink" href="https://verejnazaloba.cz/seznam-statnich-zastupcu/">Seznam státních zástupců</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="navigation__item">
+<div class="navigation__item-head">
+<a class="navigation__link" href="https://verejnazaloba.cz/vice-o-sz/">
+<div class="navigation__icon fas fa-angle-double-right"></div>Více o státním zastupitelství
+</a>
+</div>
+</li>
+<li class="navigation__item">
+<div class="navigation__item-head">
+<a class="navigation__link" href="https://www.justice.cz" target="_blank">
+<div class="navigation__icon fas fa-angle-double-right"></div>Justice.cz
+</a>
+</div>
+</li>
+<li class="navigation__item">
+<div class="navigation__item-head">
+<a class="navigation__link" href="https://www.uniesz.cz" target="_blank">
+<div class="navigation__icon fas fa-angle-double-right"></div>Unie státních zástupců ČR
+</a>
+</div>
+</li>
+</ul>
+<div class="navigation__menu-end" tabindex="0"></div>
+</div>
+</div>
+</div>
+<div class="main">
+<div class="main__container main__container_narrow">
+<h1>Tisková zpráva ze dne 4.&nbsp;5.&nbsp;2026 v&nbsp;trestní věci související s&nbsp;darováním bitcoinů Ministerstvu spravedlnosti</h1>
+4. 5. 2026<br><br>
+<p>Policejní orgán
+Policie České republiky, Národní centrála proti organizovanému zločinu služby
+kriminální policie a&nbsp;vyšetřování, rozhodl dne 4.&nbsp;května 2026 o&nbsp;zahájení
+trestního stíhání dalších tří osob v&nbsp;trestní věci související
+s&nbsp;darováním bitcoinů Ministerstvu spravedlnosti. Usnesení policejní orgán
+vydal se souhlasem dozorové státní zástupkyně Vrchního státního zastupitelství
+v&nbsp;Olomouci, u&nbsp;něhož je věc vedena pod sp. zn. 2 VZV 11/2025.</p>
+<p>V&nbsp;jednání
+obviněných jsou spatřovány tři zvlášť závažné zločiny:</p>
+<ol><li>zneužití
+pravomoci úřední osoby podle § 329 odst. 1 písm. a), odst. 3 písm. a) trestního
+zákoníku dílem dokonaný, dílem ve stádiu pokusu podle § 21 odst. 1 trestního
+zákoníku (u&nbsp;dvou obviněných pachatelství a&nbsp;u&nbsp;jednoho obviněného účastenství na
+tomto trestném činu ve formě organizátorství), </li><li>legalizace
+výnosů z&nbsp;trestné činnosti podle § 216 odst. 1 alinea prvá, odst. 4 písm. b),
+e), odst. 5 písm. b), c) trestního zákoníku (u&nbsp;dvou obviněných pachatelství a&nbsp;u
+jednoho obviněného účastenství na tomto trestném činu ve formě organizátorství),</li><li>legalizace
+výnosů z&nbsp;trestné činnosti podle § 216 odst. 2 alinea prvá, odst. 4 písm. b),
+e), odst. 5 písm. b), c) trestního zákoníku, dílem dokonaný, dílem ve stádiu
+pokusu podle § 21 odst. 1 trestního zákoníku (u&nbsp;všech obviněných shodně
+spolupachatelství).</li></ol>
+<p>Stíhaný skutek
+bezprostředně souvisí s&nbsp;darováním bitcoinů Ministerstvu spravedlnosti. Trestný
+čin zneužití pravomoci úřední osoby spočívá ve výkonu pravomoci úřední osoby
+způsobem odporujícím jinému právnímu předpisu v&nbsp;úmyslu opatřit jinému
+neoprávněný prospěch. Jeden trestný čin legalizace výnosů z&nbsp;trestné
+činnosti spočívá v&nbsp;převedení věci, která je výnosem z&nbsp;trestné
+činnosti jiné osoby, na jiného. Druhý trestný čin legalizace výnosů
+z&nbsp;trestné činnosti pak spočívá v&nbsp;usilování o&nbsp;to, aby bylo podstatně
+ztíženo zjištění původu věci, která je výnosem z&nbsp;trestné činnosti.</p>
+<p>V&nbsp;případě
+odsouzení hrozí obviněným uložení úhrnného trestu odnětí svobody na 5 až 12 let.
+</p>
+<p>Trestní stíhání těchto
+obviněných je vedeno na svobodě.</p>
+<p class="has-text-align-right">JUDr. Bc. Radim Dragoun, Ph.D.<br>vrchní státní zástupce</p>
+</div>
+</div>
+<div class="footer">
+<div class="footer__container">
+<div class="footer__to-top"></div>
+<div class="footer__widgets">
+<div class="footer__widget">
+<div class="footer__info">
+<p>Vrchní státní zastupitelství v&nbsp;Olomouci<br>17.&nbsp;listopadu 909/44<br>779&nbsp;00 Olomouc</p>
+<p>Tel.: +420&nbsp;585&nbsp;202&nbsp;111 <br>Fax: +420 585 202&nbsp;198  </p>
+<p>ID datové schránky/Data Mailbox ID:  ryhaa8a <br>E-mail: <a rel="noreferrer noopener" aria-label=" (otevře se na nové záložce)" href="mailto:podatelna@vsz.olc.justice.cz" target="_blank">podatelna@vsz.olc.justice.cz</a></p>
+</div>
+</div>
+<div class="footer__widget">
+<ul class="footer__menu">
+<li class="footer__item">
+<a class="footer__link footer__search">
+<div class="footer__icon fas fa-search"></div>Vyhledávání
+</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="https://verejnazaloba.cz/vice-o-sz/">
+<div class="footer__icon fas fa-angle-double-right"></div>Více o státním zastupitelství
+</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="https://verejnazaloba.cz/prohlaseni-o-pristupnosti/">
+<div class="footer__icon fas fa-angle-double-right"></div>Prohlášení o přístupnosti
+</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" data-remodal-target="cookies-modal">
+<div class="footer__icon fas fa-angle-double-right"></div>Nastavení cookies
+</a>
+</li>
+</ul>
+</div>
+<div class="footer__widget">
+<ul class="footer__menu">
+<li class="footer__item">
+<a class="footer__link" href="https://twitter.com/NSZ_info" target="_blank">
+<div class="footer__icon fab fa-twitter "></div>Nejvyšší státní zastupitelství
+</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="https://www.linkedin.com/company/nejvy%C5%A1%C5%A1%C3%AD-st%C3%A1tn%C3%AD-zastupitelstv%C3%AD/">
+<div class="footer__icon fab fa-linkedin-in "></div>Nejvyšší státní zastupitelství
+</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="https://twitter.com/vsz_praha" target="_blank">
+<div class="footer__icon fab fa-twitter "></div>Vrchní státní zastupitelství v Praze
+</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="https://twitter.com/vsz_olomouc">
+<div class="footer__icon fab fa-twitter "></div>Vrchní státní zastupitelství v Olomouci
+</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="https://x.com/MSZ_Praha">
+<div class="footer__icon fab fa-twitter "></div>Městské státní zastupitelství v Praze
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="footer__copyright">
+&copy; 2026 Nejvyšší státní zastupitelství
+</div>
+</div>
+</div>
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+<!-- Background of PhotoSwipe.
+It's a separate element as animating opacity is faster than rgba(). -->
+<div class="pswp__bg"></div>
+<!-- Slides wrapper with overflow:hidden. -->
+<div class="pswp__scroll-wrap">
+<!-- Container that holds slides.
+PhotoSwipe keeps only 3 of them in the DOM to save memory.
+Don't modify these 3 pswp__item elements, data is added later on. -->
+<div class="pswp__container">
+<div class="pswp__item"></div>
+<div class="pswp__item"></div>
+<div class="pswp__item"></div>
+</div>
+<!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+<div class="pswp__ui pswp__ui--hidden">
+<div class="pswp__top-bar">
+<!--  Controls are self-explanatory. Order can be changed. -->
+<div class="pswp__counter"></div>
+<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title="Share"></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+<div class="pswp__preloader">
+<div class="pswp__preloader__icn">
+<div class="pswp__preloader__cut">
+<div class="pswp__preloader__donut"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+<div class="pswp__share-tooltip"></div>
+</div>
+<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+</button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+</button>
+<div class="pswp__caption">
+<div class="pswp__caption__center"></div>
+</div>
+</div>
+</div>
+</div>
+<script type='text/javascript' src='https://verejnazaloba.cz/wp-content/themes/iq-theme/dist/js/bundle-283cab2cb9.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://verejnazaloba.cz/wp-includes/js/wp-embed.min.js?ver=5.3'></script>
+<script type="text/javascript">(function() {
+var expirationDate = new Date();
+expirationDate.setTime( expirationDate.getTime() + 31536000 * 1000 );
+document.cookie = "pll_language=cz; expires=" + expirationDate.toUTCString() + "; path=/";
+}());</script>        </div>
+<div class="cookies">
+<div id="cookie-bar" class="cookies__bar">
+<div class="cookies__container">
+<div class="cookies__bar--content">
+K provozování webu a analýze návštěvnosti používáme soubory cookies.
+</div>
+<a class="cookies__button cookies-accept">Povolit vše</a>
+<a class="cookies__button cookies-reject">Odmítnout</a>
+<a class="cookies__detail" data-remodal-target="cookies-modal">Upravit</a>
+</div>
+</div>
+<div class="remodal" data-remodal-id="cookies-modal" data-remodal-options="hashTracking: false">
+<div class="cookies__modal">
+<button class="remodal-close" data-remodal-action="close"></button>
+<h2>Souhlas s používáním cookies</h2>
+<p>Cookies jsou malé soubory, do kterých webové stránky mohou ukládat informace o Vaší aktivitě a preferencích. Používají se například k tomu, aby si prohlížeč zapamatoval Vaše přihlášení nebo k zapamatování Vašich aktivit v otevřených oknech s prezentací portálu <a href="https://verejnazaloba.cz">verejnazaloba.cz</a>.</p><p class="cookies__law">Více informací o cookies viz <a href="https://cs.wikipedia.org/wiki/HTTP_cookie" target="_blank">https://cs.wikipedia.org/wiki/HTTP_cookie</a>.</p>
+<div class="cookies__category">
+<div class="cookies__category-top">
+<div class="cookies__category-heading">
+Technické cookies
+</div>
+<label class="checkbox-switch">
+<input type="checkbox" class="checkbox-switch__input" checked disabled data-category="required">
+<span class="checkbox-switch__slider" aria-label="povolit technické cookies"></span>
+</label>
+</div>
+<p>Technické cookies umožňují provoz základních funkcí webu, jako je navigace na stránce a přístup k zabezpečeným oblastem webové stránky.</p><p class="cookies__law">K ukládání technických cookies zajišťujících správnou funkci portálu <a href="https://verejnazaloba.cz">verejnazaloba.cz</a> do koncového zařízení jeho návštěvníků není ve smyslu ustanovení § 89 odst. 3 zákona č. 127/2005 Sb., o elektronických komunikacích a o změně některých souvisejících zákonů (zákon o elektronických komunikacích), třeba souhlas subjektu údajů, resp. „účastníka“ ve smyslu uvedeného zákona.</p>
+</div>
+<div class="cookies__category">
+<div class="cookies__category-top">
+<div class="cookies__category-heading">
+Analytické cookies
+</div>
+<label class="checkbox-switch">
+<input type="checkbox" class="checkbox-switch__input" data-category="analytics">
+<span class="checkbox-switch__slider" aria-label="povolit analytické cookies"></span>
+</label>
+</div>
+<p>
+Analytické cookies pomáhají provozovateli stránek pochopit, jak návštěvníci stránek stránku používají, aby mohl stránky optimalizovat a nabídnout jim lepší zkušenost. Veškerá data se sbírají anonymně a není možné je spojit s konkrétní osobou.
+</p>
+</div>
+<div class="cookies__buttons">
+<a class="cookies__button cookies-save" data-remodal-action="close">Uložit nastavení</a>
+<a class="cookies__button cookies-accept" data-remodal-action="close">Přijmout vše</a>
+</div>
+</div>
+</div>
+</div>
+<div class="overlay">
+<div class="overlay__content">
+<div class="loadingio-spinner-bars-ozyy6tuaft">
+<div class="ldio-olf1coik1xp">
+<div></div><div></div><div></div><div></div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html><!-- WP Fastest Cache file was created in 0.10992693901062 seconds, on 07-08-26 20:35:14 --><!-- via php -->

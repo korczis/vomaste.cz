@@ -1,0 +1,245 @@
+{
+  "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
+  "retrieved": "2026-08-08",
+  "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/25542125",
+  "status": "OK",
+  "subject": {
+    "ico": "25542125",
+    "businessName": "PG Contract, spol.s.r.o.",
+    "registerReference": "C 106851/MSPH"
+  },
+  "filings": [
+    {
+      "referenceLabel": "C 106851/SL1/MSPH",
+      "documentType": "zakladatelské dokumenty, notářský zápis NZ 528/1998",
+      "createdAt": "17-09-1998",
+      "filedAt": "24-11-1998",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 96173
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 106851/SL2/MSPH",
+      "documentType": "notářský zápis NZ 585/1998",
+      "createdAt": "26-10-1998",
+      "filedAt": "15-04-1999",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 57114
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 106851/SL3/MSPH",
+      "documentType": "zakladatelské dokumenty, notářský zápis NZ 586/1998",
+      "createdAt": "26-10-1998",
+      "filedAt": "15-04-1999",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 98625
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 106851/SL4/MSPH",
+      "documentType": "notářský zápis NZ 12/2005",
+      "createdAt": "20-01-2005",
+      "filedAt": "03-05-2005",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 204737
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 106851/SL6/MSPH",
+      "documentType": "smlouvy o převodu obchod. podílu",
+      "createdAt": "20-01-2005",
+      "filedAt": "03-05-2005",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 138206
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 106851/SL7/MSPH",
+      "documentType": "smlouvy o převodu obchod. podílu",
+      "createdAt": "20-01-2005",
+      "filedAt": "03-05-2005",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 135608
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 106851/SL8/MSPH",
+      "documentType": "podpisové vzory + čest. prohl.",
+      "createdAt": "29-05-2009",
+      "filedAt": "04-06-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 38513
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 106851/SL9/MSPH",
+      "documentType": "notářský zápis NZ 78/2009",
+      "createdAt": "29-05-2009",
+      "filedAt": "04-06-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 9,
+          "sizeBytes": 195501
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 106851/SL10/MSPH",
+      "documentType": "notářský zápis, smlouvy o převodu obchod. podílu NZ 79/2009",
+      "createdAt": "29-05-2009",
+      "filedAt": "04-06-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 107348
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 106851/SL11/MSPH",
+      "documentType": "zakladatelské dokumenty, notářský zápis NZ 80/2009",
+      "createdAt": "29-05-2009",
+      "filedAt": "04-06-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 95804
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 106851/SL12/MSPH",
+      "documentType": "ostatní exekuční příkaz",
+      "createdAt": "06-08-2014",
+      "receivedByCourtAt": "06-08-2014",
+      "filedAt": "25-03-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 133785
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 106851/SL13/MSPH",
+      "documentType": "účetní závěrka [2022] - předána prostřednictvím správce daně z příjmů k 14.05.2023",
+      "createdAt": "14-05-2023",
+      "receivedByCourtAt": "31-05-2023",
+      "filedAt": "12-06-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 37353
+        },
+        {
+          "pageCount": 0,
+          "sizeBytes": 493
+        },
+        {
+          "pageCount": 2,
+          "sizeBytes": 76203
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 106851/SL14/MSPH",
+      "documentType": "účetní závěrka [2023] - předána prostřednictvím správce daně z příjmů k 14.05.2024",
+      "createdAt": "14-05-2024",
+      "receivedByCourtAt": "16-05-2024",
+      "filedAt": "16-05-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 37277
+        },
+        {
+          "pageCount": 0,
+          "sizeBytes": 286
+        },
+        {
+          "pageCount": 2,
+          "sizeBytes": 62758
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 106851/SL15/MSPH",
+      "documentType": "účetní závěrka [2024] - předána prostřednictvím správce daně z příjmů k 07.05.2025",
+      "createdAt": "07-05-2025",
+      "receivedByCourtAt": "07-05-2025",
+      "filedAt": "14-05-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 37277
+        },
+        {
+          "pageCount": 0,
+          "sizeBytes": 300
+        },
+        {
+          "pageCount": 2,
+          "sizeBytes": 62758
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 106851/SL16/MSPH",
+      "documentType": "účetní závěrka [2025] - předána prostřednictvím správce daně z příjmů k 09.05.2026",
+      "createdAt": "09-05-2026",
+      "receivedByCourtAt": "10-05-2026",
+      "filedAt": "20-05-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 37280
+        },
+        {
+          "pageCount": 0,
+          "sizeBytes": 300
+        },
+        {
+          "pageCount": 2,
+          "sizeBytes": 63069
+        }
+      ]
+    }
+  ]
+}

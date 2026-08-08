@@ -1,0 +1,1622 @@
+{
+  "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
+  "retrieved": "2026-08-08",
+  "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/25157507",
+  "status": "OK",
+  "subject": {
+    "ico": "25157507",
+    "businessName": "SPV Pelhřimov, a.s.",
+    "registerReference": "B 824/KSCB"
+  },
+  "filings": [
+    {
+      "referenceLabel": "B 824/SL1/KSCB",
+      "documentType": "notářský zápis NZ 303/96 + stanovy",
+      "createdAt": "09-12-1996",
+      "filedAt": "09-12-1998",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 35,
+          "sizeBytes": 950518
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL2/KSCB",
+      "documentType": "notářský zápis NZ 304/96",
+      "createdAt": "09-12-1996",
+      "filedAt": "09-12-1998",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 76058
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL3/KSCB",
+      "documentType": "posudek znalce č.2829/14/98",
+      "createdAt": "03-02-1998",
+      "filedAt": "09-12-1998",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 69288
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL4/KSCB",
+      "documentType": "posudek znalce č.29/97",
+      "createdAt": "22-12-1997",
+      "filedAt": "09-12-1998",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 26,
+          "sizeBytes": 520609
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL5/KSCB",
+      "documentType": "posudek znalce č. 1275-240/97",
+      "createdAt": "15-12-1997",
+      "filedAt": "09-12-1998",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 27,
+          "sizeBytes": 560459
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL6/KSCB",
+      "documentType": "notářský zápis 37/98",
+      "createdAt": "06-03-1998",
+      "filedAt": "09-12-1998",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 77969
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL7/KSCB",
+      "documentType": "stanovy společnosti",
+      "createdAt": "04-06-1998",
+      "filedAt": "09-12-1998",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 33,
+          "sizeBytes": 952744
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL8/KSCB",
+      "documentType": "notářský zápis 126/98",
+      "createdAt": "04-06-1998",
+      "filedAt": "09-12-1998",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 61500
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL9/KSCB",
+      "documentType": "účetní závěrka za rok 1997",
+      "filedAt": "31-10-2000",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 17,
+          "sizeBytes": 305408
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL10/KSCB",
+      "documentType": "notářský zápis 163/2000",
+      "createdAt": "01-09-2000",
+      "filedAt": "01-11-2000",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 168641
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL11/KSCB",
+      "documentType": "účetní závěrka za rok 1999",
+      "filedAt": "01-11-2000",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 26,
+          "sizeBytes": 394309
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL12/KSCB",
+      "documentType": "ostatní -Zápis o VH",
+      "createdAt": "01-09-2000",
+      "filedAt": "01-11-2000",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 10,
+          "sizeBytes": 183277
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL13/KSCB",
+      "documentType": "stanovy společnosti",
+      "createdAt": "01-09-2000",
+      "filedAt": "23-01-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 33,
+          "sizeBytes": 961983
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL14/KSCB",
+      "documentType": "výroční zpráva + Účet.uzávěrky za rok 2000",
+      "filedAt": "09-10-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 27,
+          "sizeBytes": 399949
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL15/KSCB",
+      "documentType": "ostatní - Zápis z řádné VH",
+      "createdAt": "08-06-2001",
+      "filedAt": "09-10-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 67387
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL16/KSCB",
+      "documentType": "stanovy společnosti",
+      "createdAt": "08-06-2001",
+      "filedAt": "09-10-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 22,
+          "sizeBytes": 722186
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL17/KSCB",
+      "documentType": "notářský zápis 91/2001",
+      "createdAt": "08-06-2001",
+      "filedAt": "09-10-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 31,
+          "sizeBytes": 1128853
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL18/KSCB",
+      "documentType": "ostatní - Zápis z řádné VH",
+      "createdAt": "26-07-2002",
+      "filedAt": "16-09-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 123479
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL19/KSCB",
+      "documentType": "ostatní - Zápis z dozorčí rady",
+      "createdAt": "19-08-2002",
+      "filedAt": "16-09-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 10858
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL20/KSCB",
+      "documentType": "účetní závěrka -r.2001",
+      "filedAt": "16-09-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 17,
+          "sizeBytes": 319360
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL21/KSCB",
+      "documentType": "výroční zpráva -r.2001",
+      "filedAt": "16-09-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 11,
+          "sizeBytes": 87293
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL22/KSCB",
+      "documentType": "stanovy společnosti",
+      "filedAt": "09-01-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 22,
+          "sizeBytes": 749622
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL23/KSCB",
+      "documentType": "výroční zpráva + Účet.uzávěrky -r.2002",
+      "filedAt": "16-10-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 24,
+          "sizeBytes": 285605
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL24/KSCB",
+      "documentType": "podpisové vzory",
+      "filedAt": "16-10-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 84221
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL25/KSCB",
+      "documentType": "účetní závěrka - r. 2003, zpráva auditora",
+      "filedAt": "19-08-2004",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 20,
+          "sizeBytes": 263897
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL26/KSCB",
+      "documentType": "ostatní - zápis o VH",
+      "createdAt": "28-05-2004",
+      "filedAt": "19-08-2004",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 122179
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL27/KSCB",
+      "documentType": "účetní závěrka za rok 2003",
+      "filedAt": "19-08-2004",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 14,
+          "sizeBytes": 222269
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL28/KSCB",
+      "documentType": "účetní závěrka r. 2004, zpráva auditora",
+      "createdAt": "29-03-2005",
+      "filedAt": "28-07-2005",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 18,
+          "sizeBytes": 329652
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL29/KSCB",
+      "documentType": "výroční zpráva r. 2004, audit. ověření",
+      "createdAt": "13-06-2005",
+      "filedAt": "28-07-2005",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 11,
+          "sizeBytes": 147375
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL30/KSCB",
+      "documentType": "ostatní - audit. ověření zprávy",
+      "createdAt": "13-06-2005",
+      "filedAt": "28-07-2005",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 87239
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL31/KSCB",
+      "documentType": "ostatní - usnesení řádné VH",
+      "createdAt": "24-06-2005",
+      "filedAt": "28-07-2005",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 7505
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL32/KSCB",
+      "documentType": "notářský zápis 81/2006",
+      "createdAt": "07-04-2006",
+      "filedAt": "18-08-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 219664
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL33/KSCB",
+      "documentType": "podpisové vzory",
+      "filedAt": "18-08-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 39353
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL34/KSCB",
+      "documentType": "stanovy společnosti",
+      "createdAt": "07-04-2006",
+      "filedAt": "18-08-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 20,
+          "sizeBytes": 669904
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL35/KSCB",
+      "documentType": "účetní závěrka -r.2005",
+      "filedAt": "05-09-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 37,
+          "sizeBytes": 589874
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL36/KSCB",
+      "documentType": "ostatní -Sml.o nájmu části podniku",
+      "createdAt": "01-01-2006",
+      "filedAt": "17-10-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 23,
+          "sizeBytes": 521682
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL37/KSCB",
+      "documentType": "ostatní - Zápis o VH",
+      "createdAt": "07-04-2006",
+      "filedAt": "17-10-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 99356
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL38/KSCB",
+      "documentType": "účetní závěrka + zpráva auditora-r.2006",
+      "filedAt": "23-07-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 27,
+          "sizeBytes": 1676444
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL39/KSCB",
+      "documentType": "ostatní - Zápis o VH",
+      "createdAt": "30-06-2008",
+      "filedAt": "03-12-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 94095
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL40/KSCB",
+      "documentType": "ostatní - Zápis o VH",
+      "createdAt": "30-06-2009",
+      "filedAt": "15-09-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 101147
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL41/KSCB",
+      "documentType": "ostatní - Zápis z jedn.doz.rady+předst",
+      "createdAt": "23-07-2009",
+      "filedAt": "15-09-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 13781
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL42/KSCB",
+      "documentType": "podpisové vzory",
+      "filedAt": "15-09-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 81893
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL43/KSCB",
+      "documentType": "účetní závěrka, výroční zpráva, zpráva o vztazích -r.2008",
+      "filedAt": "16-09-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 21,
+          "sizeBytes": 658464
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL44/KSCB",
+      "documentType": "notářský zápis 110/2009",
+      "createdAt": "06-11-2009",
+      "filedAt": "24-11-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 96152
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL45/KSCB",
+      "documentType": "účetní závěrka r. 2009",
+      "filedAt": "24-09-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 20,
+          "sizeBytes": 597663
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL46/KSCB",
+      "documentType": "změna právní formy, fúze - Projekt vnitrostátní fúze",
+      "createdAt": "12-04-2011",
+      "filedAt": "20-04-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 28,
+          "sizeBytes": 1409705
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL47/KSCB",
+      "documentType": "ostatní - zápis z VH",
+      "filedAt": "13-06-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 15,
+          "sizeBytes": 443620
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL48/KSCB",
+      "documentType": "notářský zápis 187/2011",
+      "createdAt": "23-05-2011",
+      "filedAt": "30-06-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 60,
+          "sizeBytes": 4950523
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL49/KSCB",
+      "documentType": "účetní závěrka -r.2010",
+      "filedAt": "30-06-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 17,
+          "sizeBytes": 972978
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL50/KSCB",
+      "documentType": "účetní závěrka - Zahaj.rozvaha k 1.1.2011",
+      "filedAt": "30-06-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 12,
+          "sizeBytes": 1249942
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL51/KSCB",
+      "documentType": "ostatní - Zápis ze zasedání představ.",
+      "createdAt": "30-06-2011",
+      "filedAt": "01-08-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 98893
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL52/KSCB",
+      "documentType": "podpisové vzory",
+      "filedAt": "01-08-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 122187
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL53/KSCB",
+      "documentType": "notářský zápis 349/2011",
+      "createdAt": "01-09-2011",
+      "filedAt": "29-11-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 62490
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL54/KSCB",
+      "documentType": "podpisové vzory",
+      "createdAt": "12-08-2011",
+      "filedAt": "29-11-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 36596
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL55/KSCB",
+      "documentType": "ostatní - protokol o výsledku voleb DR",
+      "createdAt": "05-08-2011",
+      "filedAt": "29-11-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 22866
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL56/KSCB",
+      "documentType": "ostatní - zápis ze zased.doz.rady",
+      "createdAt": "09-09-2011",
+      "filedAt": "29-11-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 25638
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL57/KSCB",
+      "documentType": "ostatní Rozhodnutí jed. akcionáře",
+      "createdAt": "01-03-2012",
+      "filedAt": "16-04-2012",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 60277
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL58/KSCB",
+      "documentType": "výroční zpráva -r.2011",
+      "filedAt": "27-08-2012",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 15,
+          "sizeBytes": 0
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL59/KSCB",
+      "documentType": "účetní závěrka -r.2011",
+      "filedAt": "27-08-2012",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 19,
+          "sizeBytes": 0
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL60/KSCB",
+      "documentType": "ostatní Výpis ze zápisu ze zasedání představenstva - 2x",
+      "createdAt": "28-02-2013",
+      "receivedByCourtAt": "06-03-2013",
+      "filedAt": "11-03-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 86007
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL61/KSCB",
+      "documentType": "ostatní Výpis ze zápisu ze zasedání dozorčí rady",
+      "createdAt": "28-02-2013",
+      "receivedByCourtAt": "06-03-2013",
+      "filedAt": "11-03-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 36440
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL62/KSCB",
+      "documentType": "ostatní Výpis ze zápisu ze zasedání dozorčí rady",
+      "createdAt": "01-03-2013",
+      "receivedByCourtAt": "06-03-2013",
+      "filedAt": "11-03-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 85692
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL63/KSCB",
+      "documentType": "ostatní Rozhodnutí jediného akcionáře",
+      "createdAt": "21-03-2013",
+      "receivedByCourtAt": "07-05-2013",
+      "filedAt": "10-05-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 37003
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL64/KSCB",
+      "documentType": "zpráva auditora [2012]",
+      "receivedByCourtAt": "10-07-2013",
+      "filedAt": "11-07-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 19,
+          "sizeBytes": 3802042
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL65/KSCB",
+      "documentType": "zpráva auditora [2012]",
+      "receivedByCourtAt": "10-07-2013",
+      "filedAt": "11-07-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 13,
+          "sizeBytes": 1979788
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL66/KSCB",
+      "documentType": "ostatní Rozhodnutí jediného akcionáře",
+      "receivedByCourtAt": "10-07-2013",
+      "filedAt": "11-07-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 228501
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL67/KSCB",
+      "documentType": "notářský zápis 529/2014",
+      "createdAt": "20-12-2013",
+      "receivedByCourtAt": "27-02-2014",
+      "filedAt": "24-03-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 20,
+          "sizeBytes": 725018
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL68/KSCB",
+      "documentType": "ostatní",
+      "receivedByCourtAt": "10-07-2014",
+      "filedAt": "15-07-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 344279
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL69/KSCB",
+      "documentType": "výroční zpráva [2013]",
+      "receivedByCourtAt": "10-07-2014",
+      "filedAt": "15-07-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 31,
+          "sizeBytes": 3696112
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL70/KSCB",
+      "documentType": "ostatní Rozhodnutí jediného akcionáře ze dne 2.4.2014 a zápis ze schůze představenstva ze dne 2.5.2014",
+      "receivedByCourtAt": "11-06-2014",
+      "filedAt": "17-07-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 899684
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL71/KSCB",
+      "documentType": "změna právní formy, fúze Projekt rozdělení odštěpením sloučením",
+      "createdAt": "20-10-2014",
+      "receivedByCourtAt": "21-10-2014",
+      "filedAt": "21-10-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 10,
+          "sizeBytes": 0
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL72/KSCB",
+      "documentType": "notářský zápis [622/2014]",
+      "createdAt": "24-11-2014",
+      "receivedByCourtAt": "08-12-2014",
+      "filedAt": "08-12-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 16,
+          "sizeBytes": 798819
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL73/KSCB",
+      "documentType": "ostatní Rozhodnutí jediného akcionáře",
+      "createdAt": "24-01-2015",
+      "receivedByCourtAt": "03-02-2015",
+      "filedAt": "23-02-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 27719
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL74/KSCB",
+      "documentType": "ostatní Výpis ze zápisu ze zasedání dozorčí rady",
+      "createdAt": "26-01-2015",
+      "receivedByCourtAt": "03-02-2015",
+      "filedAt": "23-02-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 13380
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL75/KSCB",
+      "documentType": "výroční zpráva [2014] 2014",
+      "receivedByCourtAt": "08-07-2015",
+      "filedAt": "09-07-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 31,
+          "sizeBytes": 9892184
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL76/KSCB",
+      "documentType": "změna právní formy, fúze Projekt fúze sloučením",
+      "createdAt": "23-10-2015",
+      "receivedByCourtAt": "23-10-2015",
+      "filedAt": "23-10-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 155098
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL77/KSCB",
+      "documentType": "notářský zápis [NZ 402/2015]",
+      "createdAt": "03-12-2015",
+      "filedAt": "04-12-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 12,
+          "sizeBytes": 548490
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL78/KSCB",
+      "documentType": "ostatní úplné znění stanov k 1. 1. 2016",
+      "createdAt": "03-12-2015",
+      "filedAt": "04-12-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 17,
+          "sizeBytes": 1159019
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL79/KSCB",
+      "documentType": "ostatní Výpis ze zápisu ze zasedání představenstva",
+      "createdAt": "04-01-2016",
+      "receivedByCourtAt": "13-01-2016",
+      "filedAt": "01-02-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 25003
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL80/KSCB",
+      "documentType": "ostatní Výpis ze zápisu ze zasedání dozorčí rady",
+      "createdAt": "04-01-2016",
+      "receivedByCourtAt": "13-01-2016",
+      "filedAt": "01-02-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 15022
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL81/KSCB",
+      "documentType": "výroční zpráva [2015] 2015",
+      "receivedByCourtAt": "27-06-2016",
+      "filedAt": "30-06-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 77,
+          "sizeBytes": 23405687
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL82/KSCB",
+      "documentType": "ostatní Rozhodnutí jediného akcionáře",
+      "createdAt": "24-06-2016",
+      "receivedByCourtAt": "21-07-2016",
+      "filedAt": "09-08-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 20044
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL83/KSCB",
+      "documentType": "výroční zpráva [2015] 2015 - konsolidovaná",
+      "receivedByCourtAt": "12-09-2016",
+      "filedAt": "12-09-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 126,
+          "sizeBytes": 779345
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL84/KSCB",
+      "documentType": "notářský zápis [517/2016], stanovy společnosti",
+      "createdAt": "24-11-2016",
+      "receivedByCourtAt": "10-02-2017",
+      "filedAt": "06-03-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 17,
+          "sizeBytes": 505500
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL85/KSCB",
+      "documentType": "ostatní Rozhodnutí jediného akcionáře",
+      "createdAt": "20-12-2016",
+      "receivedByCourtAt": "10-02-2017",
+      "filedAt": "06-03-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 35177
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL86/KSCB",
+      "documentType": "ostatní Zápis ze zasedání dozorčí rady",
+      "createdAt": "02-01-2017",
+      "receivedByCourtAt": "10-02-2017",
+      "filedAt": "06-03-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 12800
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL87/KSCB",
+      "documentType": "účetní závěrka [2016], výroční zpráva [2016], zpráva o vztazích [2016], zpráva auditora [2016]",
+      "receivedByCourtAt": "18-07-2017",
+      "filedAt": "18-07-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 47,
+          "sizeBytes": 14057474
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL88/KSCB",
+      "documentType": "ostatní Rozhodnutí jediného akcionáře",
+      "createdAt": "19-07-2017",
+      "receivedByCourtAt": "18-09-2017",
+      "filedAt": "06-10-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 24624
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL89/KSCB",
+      "documentType": "ostatní Zápis ze zasedání dozorčí rady",
+      "createdAt": "04-09-2017",
+      "receivedByCourtAt": "18-09-2017",
+      "filedAt": "06-10-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 13966
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL90/KSCB",
+      "documentType": "notářský zápis [NZ 67/2018]",
+      "createdAt": "28-05-2018",
+      "filedAt": "29-05-2018",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 259836
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL91/KSCB",
+      "documentType": "stanovy společnosti úplné znění k 29.5.2018",
+      "createdAt": "28-05-2018",
+      "filedAt": "29-05-2018",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 12,
+          "sizeBytes": 976693
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL92/KSCB",
+      "documentType": "účetní závěrka [2017], výroční zpráva [2017] účetní závěrka 2017",
+      "receivedByCourtAt": "03-08-2018",
+      "filedAt": "03-08-2018",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 47,
+          "sizeBytes": 2574458
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL93/KSCB",
+      "documentType": "ostatní rozhodnitá jed akcionáře 4x",
+      "receivedByCourtAt": "17-01-2019",
+      "filedAt": "07-02-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 1522914
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL94/KSCB",
+      "documentType": "ostatní zápis ze schůze DR",
+      "receivedByCourtAt": "17-01-2019",
+      "filedAt": "07-02-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 321696
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL95/KSCB",
+      "documentType": "ostatní Rozhodnutí jediného akcionáře",
+      "createdAt": "05-03-2019",
+      "receivedByCourtAt": "29-05-2019",
+      "filedAt": "05-06-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 33321
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL96/KSCB",
+      "documentType": "ostatní Zápis ze zasedání představenstva",
+      "createdAt": "03-05-2019",
+      "receivedByCourtAt": "29-05-2019",
+      "filedAt": "05-06-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 21454
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL97/KSCB",
+      "documentType": "účetní závěrka [2018], výroční zpráva [2018], zpráva o vztazích [2018], zpráva auditora [2018]",
+      "receivedByCourtAt": "08-07-2019",
+      "filedAt": "08-07-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 48,
+          "sizeBytes": 2671436
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL98/KSCB",
+      "documentType": "účetní závěrka [2019], výroční zpráva [2019], zpráva auditora [2019]",
+      "receivedByCourtAt": "21-07-2020",
+      "filedAt": "21-07-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 45,
+          "sizeBytes": 2618150
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL99/KSCB",
+      "documentType": "ostatní Rozhodnutí jediného akcionáře",
+      "createdAt": "17-12-2020",
+      "receivedByCourtAt": "26-01-2021",
+      "filedAt": "17-02-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 25860
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL100/KSCB",
+      "documentType": "ostatní Rozhodnutí jediného akcionáře",
+      "createdAt": "17-12-2020",
+      "receivedByCourtAt": "26-01-2021",
+      "filedAt": "17-02-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 25319
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL101/KSCB",
+      "documentType": "ostatní Zápis ze zasedání představenstva",
+      "createdAt": "04-01-2021",
+      "receivedByCourtAt": "26-01-2021",
+      "filedAt": "17-02-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 27992
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL102/KSCB",
+      "documentType": "notářský zápis [61/2021], stanovy společnosti",
+      "createdAt": "03-03-2021",
+      "receivedByCourtAt": "29-04-2021",
+      "filedAt": "30-04-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 18,
+          "sizeBytes": 7979825
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL103/KSCB",
+      "documentType": "účetní závěrka [2020], výroční zpráva [2020]",
+      "receivedByCourtAt": "16-06-2021",
+      "filedAt": "16-06-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 44,
+          "sizeBytes": 2632991
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL104/KSCB",
+      "documentType": "ostatní Rozhodnutí jediného akcionáře",
+      "createdAt": "25-05-2021",
+      "receivedByCourtAt": "27-12-2021",
+      "filedAt": "19-01-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 16810
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL105/KSCB",
+      "documentType": "výroční zpráva [2021]",
+      "receivedByCourtAt": "01-08-2022",
+      "filedAt": "02-08-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 43,
+          "sizeBytes": 2649075
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL106/KSCB",
+      "documentType": "ostatní rozhodnutí jediného akcionáře",
+      "createdAt": "24-11-2022",
+      "receivedByCourtAt": "24-01-2023",
+      "filedAt": "10-02-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 42865
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL107/KSCB",
+      "documentType": "ostatní zápis ze zasedání dozorčí rady",
+      "createdAt": "05-12-2022",
+      "receivedByCourtAt": "24-01-2023",
+      "filedAt": "10-02-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 32548
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL108/KSCB",
+      "documentType": "výroční zpráva [2022]",
+      "receivedByCourtAt": "31-07-2023",
+      "filedAt": "31-07-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 46,
+          "sizeBytes": 2843680
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL110/KSCB",
+      "documentType": "výroční zpráva [2022] konsolidovaná",
+      "receivedByCourtAt": "14-08-2023",
+      "filedAt": "15-08-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 140,
+          "sizeBytes": 19399487
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL111/KSCB",
+      "documentType": "ostatní rozhodnutí jediného akcionáře",
+      "createdAt": "27-07-2023",
+      "receivedByCourtAt": "23-08-2023",
+      "filedAt": "31-08-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 29733
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL112/KSCB",
+      "documentType": "ostatní rozhodnutí jediného akcionáře",
+      "createdAt": "15-12-2023",
+      "receivedByCourtAt": "31-01-2024",
+      "filedAt": "05-02-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 28226
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL113/KSCB",
+      "documentType": "výroční zpráva [2023]",
+      "receivedByCourtAt": "05-08-2024",
+      "filedAt": "05-08-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 47,
+          "sizeBytes": 2773977
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL114/KSCB",
+      "documentType": "výroční zpráva [2023] konsolidovaná AGROFERT a.s.",
+      "receivedByCourtAt": "05-08-2024",
+      "filedAt": "05-08-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 136,
+          "sizeBytes": 6443578
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL115/KSCB",
+      "documentType": "ostatní rozhodnutí jediného akcionáře",
+      "createdAt": "24-04-2024",
+      "receivedByCourtAt": "26-07-2024",
+      "filedAt": "12-08-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 39620
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL116/KSCB",
+      "documentType": "ostatní zápis ze zasedání představenstva",
+      "createdAt": "26-04-2024",
+      "receivedByCourtAt": "26-07-2024",
+      "filedAt": "12-08-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 55126
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL117/KSCB",
+      "documentType": "ostatní zápis ze zasedání představenstva",
+      "createdAt": "07-03-2025",
+      "receivedByCourtAt": "24-03-2025",
+      "filedAt": "28-03-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 66199
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL118/KSCB",
+      "documentType": "ostatní Zápis ze zasedání dozorčí rady",
+      "receivedByCourtAt": "08-07-2025",
+      "filedAt": "14-07-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 1554562
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL119/KSCB",
+      "documentType": "ostatní Rozhodnutí jediného akcionáře",
+      "receivedByCourtAt": "08-07-2025",
+      "filedAt": "14-07-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 284783
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL120/KSCB",
+      "documentType": "účetní závěrka [2024], výroční zpráva [2024], zpráva o vztazích [2024], zpráva auditora [2024]",
+      "receivedByCourtAt": "30-07-2025",
+      "filedAt": "05-08-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 47,
+          "sizeBytes": 2964975
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL121/KSCB",
+      "documentType": "ostatní Zápis ze zasedání představenstva",
+      "receivedByCourtAt": "11-03-2026",
+      "filedAt": "19-03-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 49615
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL122/KSCB",
+      "documentType": "ostatní Rozhodnutí jediného akcionáře",
+      "receivedByCourtAt": "11-03-2026",
+      "filedAt": "19-03-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 48046
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL123/KSCB",
+      "documentType": "notářský zápis [NZ 34/2026]",
+      "createdAt": "09-04-2026",
+      "filedAt": "10-04-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 154170
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL124/KSCB",
+      "documentType": "stanovy společnosti úplné znění stanov k 9. 4. 2026",
+      "createdAt": "09-04-2026",
+      "filedAt": "10-04-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 14,
+          "sizeBytes": 327721
+        }
+      ]
+    }
+  ]
+}

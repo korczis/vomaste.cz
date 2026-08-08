@@ -1,0 +1,12 @@
+{
+  "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
+  "retrieved": "2026-08-08",
+  "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/00216208",
+  "status": "OK",
+  "subject": {
+    "ico": "00216208",
+    "businessName": "Univerzita Karlova",
+    "registerReference": "B 956/MSPH"
+  },
+  "filings": []
+}

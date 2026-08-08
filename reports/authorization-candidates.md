@@ -4727,7 +4727,7 @@ Generated from 490 context entities across 51 dossier(s). Regenerate with `npm r
 - Type: legal_or_administrative_process
 - Status: not_authorized
 - Appears in: jeronym-tejc
-- Claims: CLM-19, CLM-20, CLM-21, CLM-22, CLM-24, CLM-25, CLM-29
+- Claims: CLM-19, CLM-20, CLM-21, CLM-22, CLM-24, CLM-25, CLM-29, CLM-52
 - Sources: SRC-11, SRC-12, SRC-13, SRC-14 (2 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
