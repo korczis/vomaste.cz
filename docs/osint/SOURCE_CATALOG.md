@@ -197,11 +197,7 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-<<<<<<< HEAD
-Dopočítáno z `data/dossiers/**/sources/**`, 969 záznamů v 142 rodinách/outletech.
-=======
-Dopočítáno z `data/dossiers/**/sources/**`, 788 záznamů v 139 rodinách/outletech.
->>>>>>> origin/master
+Dopočítáno z `data/dossiers/**/sources/**`, 970 záznamů v 142 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
