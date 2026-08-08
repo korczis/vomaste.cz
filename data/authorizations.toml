@@ -384,3 +384,38 @@ authorized_at = "2026-08-08"
 subjects = ["martin-dvorak"]
 agents_md_section = "Scope extension, 2026-08-08: Martin Dvořák"
 scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Martin Dvořák je politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce — ministr pro evropské záležitosti (4. 5. 2023 – 15. 12. 2025, od 6. 11. 2025 v demisi, nominován za STAN); dříve náměstek ministra zahraničních věcí (2021–2023), diplomat (mj. generální konzul v New Yorku 2012–2017, velvyslanec v Kuvajtu a Kataru 2017–2021) a první polistopadový primátor Hradce Králové (do 1998). Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt vládní představitele posledních tří volebních období, po pěti postupně.  Rozsah tohoto dossieru je záměrně minimální: pouze základní biografický záznam dřívějších veřejných funkcí, doložený přímo otevřeným oficiálním profilem na vlada.gov.cz; dokud není otevřen druhý nezávislý zdroj, tvrzení nese poctivě stav 1 ZDROJ (iROZHLAS i Deník.cz vracejí automatizovanému přístupu 403). Nejde o investigativní rešerši žádné kauzy — to by vyžadovalo samostatnou budoucí autorizaci."
+
+[[authorizations]]
+id = "AUTH-2026-08-08-JAN-HAMACEK"
+authorized_at = "2026-08-08"
+subjects = ["jan-hamacek"]
+agents_md_section = "Scope extension, 2026-08-08: Jan Hamáček"
+scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jan Hamáček je politicky exponovaná osoba v souvislosti s výkonem dřívějších veřejných funkcí — 1. místopředseda vlády a ministr vnitra (27. 6. 2018 – 17. 12. 2021, druhá vláda Andreje Babiše), dvakrát pověřen řízením ministerstva zahraničních věcí (2018, 2021), předseda ČSSD (2018–2021), předseda Poslanecké sněmovny (2013–2017). Podle e15 (2024-02-15) po odchodu z politiky působí jako ředitel pro vnější vztahy skupiny Czechoslovak Group; podle iROZHLAS v červnu 2024 vystoupil ze SOCDEM. Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt vládní představitele posledních tří volebních období, po pěti postupně.  Rozsah tohoto dossieru je záměrně minimální: pouze základní biografický záznam dřívějších veřejných funkcí a doloženého současného soukromého působení (jako prostý fakt zaměstnání, bez jakéhokoli hodnocení), doložený přímo otevřenými zdroji (vlada.gov.cz, e15.cz). Nejde o investigativní rešerši žádné kauzy z jeho ministerského působení — to by vyžadovalo samostatnou budoucí autorizaci."
+
+[[authorizations]]
+id = "AUTH-2026-08-08-RICHARD-BRABEC"
+authorized_at = "2026-08-08"
+subjects = ["richard-brabec"]
+agents_md_section = "Scope extension, 2026-08-08: Richard Brabec"
+scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Richard Brabec je veřejný funkcionář — hejtman Ústeckého kraje (zvolen 15. 11. 2024, koalice ANO, ODS a Lepší Sever), bývalý ministr životního prostředí (leden 2014 – prosinec 2017 a 27. 6. 2018 – 17. 12. 2021, v demisi od 11. 11. 2021) a bývalý místopředseda vlády (2017–2018), dlouholetý poslanec za ANO. Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt vládní představitele posledních tří volebních období, po pěti postupně.  Rozsah tohoto dossieru je záměrně minimální: pouze základní, aktuálně ověřený politický profil (hejtmanství, dřívější vládní funkce jako prostý biografický fakt), doložený přímo otevřenými zdroji (vlada.gov.cz, Forum24). Nejde o investigativní rešerši žádné kauzy z jeho ministerského působení — to by vyžadovalo samostatnou budoucí autorizaci."
+
+[[authorizations]]
+id = "AUTH-2026-08-08-JANA-MALACOVA"
+authorized_at = "2026-08-08"
+subjects = ["jana-malacova"]
+agents_md_section = "Scope extension, 2026-08-08: Jana Maláčová"
+scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jana Maláčová je politicky exponovaná osoba v souvislosti s výkonem dřívějších veřejných funkcí — ministryně práce a sociálních věcí (30. 7. 2018 – 17. 12. 2021, druhá vláda Andreje Babiše, ČSSD) a předsedkyně SOCDEM (zvolena 5. 10. 2024 na sjezdu v Hradci Králové 101 ze 139 hlasů, nahradila Michala Šmardu; v listopadu 2025 z čela strany i vrcholné politiky odešla). Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt vládní představitele posledních tří volebních období, po pěti postupně.  Rozsah tohoto dossieru je záměrně minimální: pouze základní biografický záznam dřívějších veřejných a stranických funkcí — konec v čele strany je výsledek jejího vlastního rozhodnutí a stranické volby, nikoli pochybení, a tak musí být podán. Doloženo přímo otevřenými zdroji (vlada.gov.cz, ČT24). Nejde o investigativní rešerši žádné kauzy — to by vyžadovalo samostatnou budoucí autorizaci."
+
+[[authorizations]]
+id = "AUTH-2026-08-08-KLARA-DOSTALOVA"
+authorized_at = "2026-08-08"
+subjects = ["klara-dostalova"]
+agents_md_section = "Scope extension, 2026-08-08: Klára Dostálová"
+scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Klára Dostálová je veřejná funkcionářka — poslankyně Evropského parlamentu (zvolena v eurovolbách 2024 jako lídryně kandidátky ANO), bývalá ministryně pro místní rozvoj (prosinec 2017 – 17. 12. 2021, obě vlády Andreje Babiše, v demisi od 11. 11. 2021), poslankyně PSP ČR 2017–2024, předtím náměstkyně na MMR (2014–2017). Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt vládní představitele posledních tří volebních období, po pěti postupně.  Rozsah tohoto dossieru je záměrně minimální: pouze základní, aktuálně ověřený politický profil (mandát europoslankyně, dřívější vládní a poslanecké funkce jako prostý biografický fakt), doložený přímo otevřenými zdroji (vlada.gov.cz, ČT24). Nejde o investigativní rešerši žádné kauzy z jejího ministerského působení — to by vyžadovalo samostatnou budoucí autorizaci."
+
+[[authorizations]]
+id = "AUTH-2026-08-08-LUBOMIR-ZAORALEK"
+authorized_at = "2026-08-08"
+subjects = ["lubomir-zaoralek"]
+agents_md_section = "Scope extension, 2026-08-08: Lubomír Zaorálek"
+scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Lubomír Zaorálek je politicky exponovaná osoba v souvislosti s výkonem dřívějších veřejných funkcí — ministr kultury (27. 8. 2019 – 17. 12. 2021, druhá vláda Andreje Babiše, v demisi od 11. 11. 2021), ministr zahraničních věcí (2014–2017), předseda Poslanecké sněmovny (2002–2006), dlouholetý poslanec a místopředseda ČSSD; podle ČT24 byl 5. 10. 2024 zvolen statutárním místopředsedou SOCDEM (100 ze 135 hlasů). Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt vládní představitele posledních tří volebních období, po pěti postupně.  Rozsah tohoto dossieru je záměrně minimální: pouze základní biografický záznam dřívějších veřejných a stranických funkcí, doložený přímo otevřenými zdroji (vlada.gov.cz, ČT24). Nejde o investigativní rešerši žádné kauzy z jeho ministerského působení — to by vyžadovalo samostatnou budoucí autorizaci."

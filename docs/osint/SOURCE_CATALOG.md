@@ -197,15 +197,15 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 769 záznamů v 128 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 779 záznamů v 128 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
 | ctk | 294 | 24 | [ano](/zdroje/ctk/) |
 | Poslanecká sněmovna Parlamentu ČR | 51 | 32 | [ano](/zdroje/psp-cz/) |
-| Vláda České republiky (vlada.gov.cz) | 43 | 32 | [ano](/zdroje/vlada-cz/) |
+| Vláda České republiky (vlada.gov.cz) | 48 | 37 | [ano](/zdroje/vlada-cz/) |
 | seznam-zpravy | 38 | 13 | [ano](/zdroje/seznam-zpravy/) |
-| ČT24 (Česká televize) | 21 | 13 | [ano](/zdroje/ceska-televize/) |
+| ČT24 (Česká televize) | 24 | 16 | [ano](/zdroje/ceska-televize/) |
 | FORUM 24 | 20 | 10 | [ano](/zdroje/forum24/) |
 | denik-n | 17 | 9 | [ano](/zdroje/denik-n/) |
 | Echo24 | 16 | 12 | [ano](/zdroje/echo24/) |
@@ -218,9 +218,9 @@ Dopočítáno z `data/dossiers/**/sources/**`, 769 záznamů v 128 rodinách/out
 | hlidac-statu | 7 | 2 | [ano](/zdroje/hlidac-statu/) |
 | udhpsh | 6 | 1 | [ano](/zdroje/udhpsh/) |
 | Blesk.cz | 5 | 3 | [ano](/zdroje/blesk-cz/) |
+| e15.cz | 5 | 3 | — |
 | Hospodářské noviny | 5 | 4 | — |
 | Zdravé zprávy | 5 | 2 | — |
-| e15.cz | 4 | 2 | — |
 | HlídacíPes.org | 4 | 4 | — |
 | Ministerstvo dopravy ČR | 4 | 1 | — |
 | Reflex | 4 | 4 | — |
@@ -245,6 +245,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 769 záznamů v 128 rodinách/out
 | CZDEFENCE | 2 | 1 | — |
 | Deník Alarm | 2 | 1 | — |
 | Fakultní nemocnice Olomouc (oficiální web) | 2 | 1 | — |
+| Forum24 | 2 | 2 | — |
 | Médiář | 2 | 1 | — |
 | Ministerstvo kultury ČR | 2 | 1 | — |
 | Ministerstvo průmyslu a obchodu (MPO) | 2 | 2 | — |
@@ -287,7 +288,6 @@ Dopočítáno z `data/dossiers/**/sources/**`, 769 záznamů v 128 rodinách/out
 | Evropský parlament | 1 | 1 | — |
 | Extra.cz | 1 | 1 | — |
 | Finmag.cz — přepis obchodního rejstříku | 1 | 1 | — |
-| Forum24 | 1 | 1 | — |
 | Hanácká Drbna | 1 | 1 | — |
 | Heroine.cz | 1 | 1 | — |
 | Info.cz | 1 | 1 | — |
@@ -334,6 +334,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 769 záznamů v 128 rodinách/out
 
 Tyhle zdroje dataset používá aspoň pětkrát, ale katalog k nim nemá záznam s mezemi a pastmi:
 
+- e15.cz (5×)
 - Hospodářské noviny (5×)
 - Zdravé zprávy (5×)
 

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/richard-brabec/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/richard-brabec"
+  },
+  "title": "SRC-02 — Forum24: Hejtmanem Ústeckého kraje se stal Richard Brabec",
+  "description": "Forum24 o zvolení Brabce hejtmanem Ústeckého kraje 15. 11. 2024 (46/54 hlasů).",
+  "outlet": "Forum24",
+  "sourceType": "zpravodajský článek",
+  "url": "https://www.forum24.cz/hejtmanem-usteckeho-kraje-se-stal-richard-brabec-z-ano-poslancem-zustane",
+  "retrieved": "2026-08-08",
+  "published": "2024-11-15",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-brabec/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "richard-brabec"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpravodajský článek Forum24 z 15. 11. 2024, otevřen a přečten 2026-08-08.\nUvádí, že Richard Brabec (ANO) byl 15. 11. 2024 zvolen hejtmanem Ústeckého kraje se 46 hlasy od 54 přítomných zastupitelů, bez protikandidáta; krajskou koalici tvoří ANO, ODS a Lepší Sever s 37 z 55 mandátů.\n\nPoznámka k typu zdroje a jeho limitům: nezávislé redakční zpravodajství — dokládá zvolení hejtmanem a složení koalice; dřívější vládní funkce nese SRC-01."
+    }
+  ],
+  "order": 2
+}

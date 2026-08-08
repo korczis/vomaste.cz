@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/klara-dostalova",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "klara-dostalova",
+  "slug": "klara-dostalova",
+  "title": "Klára Dostálová",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Klára Dostálová.",
+  "dossierType": "entity",
+  "canonicalDossier": "klara-dostalova",
+  "subject": "klara-dostalova",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-KLARA-DOSTALOVA"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "klara-dostalova",
+        "label": "Klára Dostálová",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nKlára Dostálová je poslankyně Evropského parlamentu zvolená za ANO;\ndříve ministryně pro místní rozvoj (2017–2021, obě vlády Andreje\nBabiše) a poslankyně PSP ČR (2017–2024). Jako veřejná funkcionářka\nspadá do standing scope autorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`);\nkonkrétní záznam pro tento dossier je `AUTH-2026-08-08-KLARA-DOSTALOVA`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam — dokládá pouze její mandát europoslankyně a dřívější vládní a\nposlanecké funkce jako prostý biografický fakt. Rozšíření rozsahu\n(například na kauzy z jejího ministerského působení) vyžaduje\nsamostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/klara-dostalova/claims/clm-01.md) | Klára Dostálová byla podle oficiálního profilu na webu Vlády ČR ministryní pro místní rozvoj od prosince 2017 do 17. 12. 2021 (obě vlády Andreje Babiše, v demisi od 11. 11. 2021), předtím náměstkyní na MMR (2014–2017); podle profilu ČT24 byla v eurovolbách 2024 zvolena poslankyní Evropského parlamentu jako lídryně kandidátky ANO a poslankyní PSP ČR byla v letech 2017–2024 | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/klara-dostalova/sources/src-01.md), [SRC-02](@/dossiers/klara-dostalova/sources/src-02.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

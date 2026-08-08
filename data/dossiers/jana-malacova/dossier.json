@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jana-malacova",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "jana-malacova",
+  "slug": "jana-malacova",
+  "title": "Jana Maláčová",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Jana Maláčová.",
+  "dossierType": "entity",
+  "canonicalDossier": "jana-malacova",
+  "subject": "jana-malacova",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-JANA-MALACOVA"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "jana-malacova",
+        "label": "Jana Maláčová",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nJana Maláčová je bývalá ministryně práce a sociálních věcí (2018–2021,\ndruhá vláda Andreje Babiše, ČSSD) a bývalá předsedkyně SOCDEM\n(2024–2025). Jako politicky exponovaná osoba v souvislosti s výkonem\ndřívějších veřejných funkcí spadá do standing scope autorizace\n(`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro tento dossier\nje `AUTH-2026-08-08-JANA-MALACOVA`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívějších veřejných a stranických funkcí — konec v čele strany\nje výsledek jejího vlastního rozhodnutí a stranické volby, nikoli\npochybení, a tak je zde podán. Rozšíření rozsahu vyžaduje samostatnou\nbudoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/jana-malacova/claims/clm-01.md) | Jana Maláčová byla podle oficiálního profilu na webu Vlády ČR ministryní práce a sociálních věcí od 30. 7. 2018 do 17. 12. 2021 (v demisi od 11. 11. 2021, nominována za ČSSD); podle ČT24 byla 5. 10. 2024 na sjezdu v Hradci Králové zvolena předsedkyní SOCDEM (101 ze 139 odevzdaných hlasů), když nahradila Michala Šmardu | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/jana-malacova/sources/src-01.md), [SRC-02](@/dossiers/jana-malacova/sources/src-02.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}
